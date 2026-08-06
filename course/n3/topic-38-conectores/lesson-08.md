@@ -46,7 +46,7 @@ Cuidado: 優秀 (ゆうしゅう, excelente) e 優勝 (ゆうしょう, conquist
 ユーモアのある人と話すのは愉快だ (Conversar com gente bem-humorada é divertido.)
 
 > **[tip]**
-Dica: ユーモア (humor, graça) tem três batidas, ユ-ー-モ-ア, com a vogal ー bem longa. Não confunda com a ideia de 'estar de bom humor', que em japonês fica mais para 機嫌がいい.
+Dica: ユーモア (humor, graça) tem quatro batidas: ユ-ー-モ-ア, e o ー alonga a vogal anterior, contando como uma batida inteira. Não confunda com a ideia de 'estar de bom humor', que em japonês fica mais para 機嫌がいい.
 
 #### Hora de praticar
 

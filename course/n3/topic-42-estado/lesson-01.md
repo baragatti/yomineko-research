@@ -45,7 +45,7 @@ No outro extremo da linha do tempo está n3-tate: a ação ACABOU de terminar e 
 > **[example]**
 Repare na palma das moras em やきたて: ya-ki-ta-te, quatro batidas iguais. Não martele nenhuma; o brasileiro tende a esticar a tônica, mas no japonês todas as moras têm o mesmo tamanho.
 
-#### Vocabulário do dia(em kana)
+#### Vocabulário do dia (em kana)
 - 価格(かかく) = "preço, valor".
 - 掛かる(かかる) = "levar (tempo, dinheiro), custar". Cuidado: dobre o っ ao ouvir, mas aqui não há っ; são duas moras ka-ka-ru.
 - 係(かかり) = "encarregado, atendente, responsável".
@@ -85,12 +85,12 @@ O kanji 局 significa "repartição, escritório, setor". Aparece em 郵便局 (
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Na frase 窓が開いている (a janela), qual é o sentido de ～ている aqui?'}
+### 1. (recognition) {'pt-BR': 'Na frase 窓が開いている, qual é o sentido de ～ている aqui?'}
 - **Resposta:** `{"choices": ["Alguém está abrindo a janela neste exato momento", "A janela está aberta: é o estado que ficou depois de alguém abrir", "A janela vai ser aberta amanhã", "A janela nunca foi aberta"], "correct": "A janela está aberta: é o estado que ficou depois de alguém abrir"}`
-- {'pt-BR': "Com verbos de mudança/resultado como 開く, ～ている marca o ESTADO resultante, não a ação em curso. 窓が開いている = a janela está (e continua) aberta. Para 'estou abrindo agora' o foco mudaria de contexto."}
+- {'pt-BR': "Com verbos de mudança/resultado como 開く, ～ている marca o ESTADO resultante, não a ação em curso. 窓が開いている = a janela está (e continua) aberta. Para 'alguém está abrindo a janela agora' usa-se o transitivo: 窓を開けている."}
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete: 机の上に読み＿＿の本がある (tem um livro começado em cima da mesa). Qual partícula liga 読みかけ ao 本?'}
+### 2. (particle_choice) {'pt-BR': 'Complete: 机の上に読みかけ＿＿本がある (tem um livro começado em cima da mesa). Qual partícula liga 読みかけ ao 本?'}
 - **Resposta:** `{"choices": ["の", "を", "で", "に"], "correct": "の"}`
 - {'pt-BR': "～かけ funciona como substantivo, então liga ao substantivo seguinte com の: 読みかけの本 = 'um livro começado/pela metade'."}
 

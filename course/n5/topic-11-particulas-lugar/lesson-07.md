@@ -82,7 +82,7 @@ Antes de praticar, guarde dois itens que vão aparecer em textos mais à frente.
 - {'pt-BR': "Com あげる, a partícula に marca quem RECEBE (o destino): 友だちに = 'para o amigo'. を já marca a coisa dada (本を)."}
 
 
-### 4. (cloze) {'pt-BR': 'Complete com o verbo de RECEBER (forma educada): 私は先生に本を＿。 (Eu recebi um livro do professor.)'}
+### 4. (cloze) {'pt-BR': 'Complete com o verbo de RECEBER (forma educada): 私は先生に本を＿。 (Eu recebo um livro do professor.)'}
 - **Resposta:** `{"text": "もらいます", "full": "私は先生に本をもらいます"}`
 - {'pt-BR': "もらう (educado: もらいます) é 'receber/ganhar', visto pelo lado de quem ganha. Aqui に marca a ORIGEM: 先生に = 'do professor'."}
 

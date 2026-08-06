@@ -92,7 +92,7 @@ Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか)
 - {'pt-BR': "か fecha a pergunta embutida (いつ始まるか = 'quando começa') antes do verbo principal 分かります. É o mesmo か das perguntas, agora dentro da frase."}
 - frases: `sent:gen-1fc62e559711`
 
-### 3. (recognition) {'pt-BR': 'Numa placa diz 18歳以上. Quem com exatamente 18 anos pode entrar?'}
+### 3. (recognition) {'pt-BR': 'Uma placa diz 18歳以上. Quem tem exatamente 18 anos pode entrar?'}
 - **Resposta:** `{"choices": ["Sim: 以上 significa '18 ou mais' e inclui o próprio 18", "Não: 以上 significa 'acima de 18', então exclui o 18", "Não: 以上 significa '18 ou menos'"], "correct": "Sim: 以上 significa '18 ou mais' e inclui o próprio 18"}`
 - {'pt-BR': "以上 (いじょう) = 'X ou mais', INCLUINDO X. 以 ('a partir de') faz o próprio valor entrar na conta. Para excluir o limite, o japonês usa 未満."}
 

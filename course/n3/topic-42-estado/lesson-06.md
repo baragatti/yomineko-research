@@ -35,7 +35,7 @@ Agora um grupo prático sobre lugares, estradas e o ato de chegar ou deixar pass
 その道路は高い塔の前を通る (Aquela estrada passa em frente a uma torre alta.)
 
 #### Igual, idêntico, ao mesmo tempo
-Estes três se parecem na escrita e na ideia de "igualdade", mas têm usos distintos.
+Estas palavras se parecem na escrita e na ideia de "igualdade", mas têm usos distintos.
 - 同一 (どういつ) - idêntico, exatamente o mesmo.
 - 同時 (どうじ) - mesmo tempo, simultaneidade.
 - 同様 (どうよう) - igual, do mesmo jeito, semelhante.

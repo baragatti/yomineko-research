@@ -97,7 +97,7 @@ Use って感じ só no casual. Para soar mais neutro, dá para dizer という�
 - {'pt-BR': "いつも (sempre) + 言ってる (estar dizendo, casual) + じゃないか (constatação com leve protesto: 'ué!'). A expressão fecha a frase."}
 - frases: `sent:tatoeba-228724`
 
-### 5. (production) {'pt-BR': "Você reconhece o Tom de longe e quer soltar, em tom casual de descoberta, 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação."}
+### 5. (production) {'pt-BR': "Você reconhece o Tom de longe e quer soltar 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação (ではないか)."}
 - **Resposta:** `{"text": "トムではないか。", "accept": ["トムではないか", "トムではないか。", "トムじゃないか", "トムじゃないか。"]}`
 - {'pt-BR': "トム + ではないか marca a descoberta ('ora, não é o Tom?!'). A versão ainda mais casual seria トムじゃないか; a mesma ideia, só mais coloquial."}
 - frases: `sent:tatoeba-200192`

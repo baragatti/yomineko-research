@@ -69,7 +69,7 @@ O kanji 杯 significa "taça, copo" e também é o CONTADOR de copos cheios (一
 O kanji 皆 significa "todos, tudo". Aparece em 皆さん ("pessoal, todo mundo"), uma palavra que você usa para começar a falar com um grupo.
 
 > **[culture]**
-O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯 (にはい), 三杯 (さんばい). Esse vai-e-vem de は/ば/ぱ é típico dos contadores japoneses.
+O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯 (にはい), 三杯 (さんばい). Esse vaivém de は/ば/ぱ é típico dos contadores japoneses.
 
 #### Exemplos do banco
 > 🗣 彼のことを知らない。 — Não conheço ele.
@@ -96,7 +96,7 @@ O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯
 - {'pt-BR': "O の só marca que há uma relação entre 日本語 e 本; o contexto decide qual. Aqui a relação é de idioma, então a tradução natural é 'livro em japonês'. 'Livro de japonês' sugeriria um material didático, que seria 日本語の教科書."}
 
 
-### 3. (cloze) {'pt-BR': "Complete 'o autógrafo da atriz' ligando os dois substantivos: 女優＿署名"}
+### 3. (cloze) {'pt-BR': 'prompt: "Complete \'a assinatura da atriz\' ligando os dois substantivos: 女優＿署名"; explanation: replace \'署名 (autógrafo, o possuído)\' with \'署名 (assinatura, o possuído)\'.'}
 - **Resposta:** `{"text": "の", "full": "女優の署名"}`
 - {'pt-BR': 'の liga 女優 (atriz, a possuidora) ao 署名 (autógrafo, o possuído). A ordem é possuidor の possuído, então a atriz vem antes.'}
 

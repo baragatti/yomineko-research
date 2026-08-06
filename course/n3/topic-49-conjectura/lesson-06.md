@@ -60,7 +60,7 @@ Repare como muitas dessas palavras começam com o som はい: 灰 (はい, cinza
 #### Hora de praticar
 
 #### Leitura
-> 📖 靴が小さいのは足がむくんだせいですね。それより他の靴をはいてみたいのですが。たいそうご無理をお願いしてすみません。一人一人がしっかりと社会のルールを守る３６人が１８日と１９日の会議に出席する私たちが出かけたとたん雨が降り始めた。 — O sapato estar apertado é por causa de o pé estar inchado, né. Eu gostaria de experimentar outros sapatos diferentes desses. Desculpe por lhe pedir um favor tão grande e trabalhoso. Cada um respeita direitinho as regras da sociedade. Trinta e seis pessoas vão participar da reunião nos dias 18 e 19. Assim que saímos, começou a chover.
+> 📖 靴が小さいのは足がむくんだせいですね。それより他の靴をはいてみたいのですが。たいそうご無理をお願いしてすみません。一人一人がしっかりと社会のルールを守る３６人が１８日と１９日の会議に出席する私たちが出かけたとたん雨が降り始めた。 — O sapato está apertado porque o seu pé está inchado, né. Eu gostaria de experimentar outros sapatos diferentes desses. Desculpe por lhe pedir um favor tão grande e trabalhoso. Cada um respeita direitinho as regras da sociedade. Trinta e seis pessoas vão participar da reunião nos dias 18 e 19. Assim que saímos, começou a chover.
 > 📖 私はアメリカで医学を学ぶつもりでした。今回はテストを受けてみようと思うんだ。食べ過ぎてはいけないと医者に言われた。もしもし、何か手伝うことがありますか。どんなに遅くなっても起こしてください。このテレビがすべてのうちで一番よい。 — Eu pretendia estudar medicina nos Estados Unidos. Desta vez estou pensando em fazer a prova. O médico me disse que eu não posso comer demais. Alô, precisa de alguma ajuda? Por mais tarde que fique, me acorde, por favor. Esta TV é a melhor de todas.
 - Sei usar palavras sobre desejo, esperança e o ato de declarar.
 - Uso verbos como esticar, deixar crescer e afirmar.

@@ -70,7 +70,7 @@ O 梅雨 (つゆ) é uma estação bem marcada no calendário japonês: chove qu
 Falta apresentar uma palavra-ferramenta e fechar o vocabulário da lição.
 - で (で) - em, no, na (marca o lugar onde uma ação acontece).
 海で釣りをするのが好きだ (Gosto de pescar no mar.)
-Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa 釣り, a pescaria. Com isso, você já viu as dezoito palavras desta lição em contexto.
+Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa 釣り, a pescaria. Com isso, É um período tão úmido que tudo parece encharcado; já 積もる se usa mesmo para o que se empilha, como neve, poeira e trabalho..
 
 #### Hora de praticar
 
@@ -92,7 +92,7 @@ Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa �
 
 ### 2. (matching) {'pt-BR': 'Associe cada palavra japonesa ao seu significado em português.'}
 - **Resposta:** `{"pairs": [["提案", "proposta, sugestão"], ["提出", "entrega de documentos"], ["定期", "período fixo, prazo determinado"], ["程度", "grau, nível"]]}`
-- {'pt-BR': '提案 (ていあん) é o que você propõe; 提出 (ていしゅつ) é o que você entrega; 定期 (ていき) é o prazo ou período fixo; e 程度 (ていど) é o grau ou nível de algo. As três primeiras começam com o som てい, então vale memorizá-las juntas.'}
+- {'pt-BR': '提案 (ていあん) é o que você propõe; 提出 (ていしゅつ) é o que você entrega; 定期 (ていき) é o prazo ou período fixo; e 程度 (ていど) é o grau ou nível de algo. As quatro começam com o som てい, então vale memorizá-las juntas.'}
 
 
 ### 3. (cloze) {'pt-BR': 'Complete: この本は子供に＿＿している。 (Este livro é adequado para crianças.)'}

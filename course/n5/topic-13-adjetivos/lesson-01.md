@@ -84,7 +84,7 @@ Aqui おいしい ("gostoso") é outro adjetivo-い, e a frase nem usa です ne
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual destas palavras é um adjetivo-い (termina em い na forma de dicionário)?'}
+### 1. (recognition) {'pt-BR': 'Qual destas palavras é um adjetivo-い de verdade (e não só termina no som い)?'}
 - **Resposta:** `{"choices": ["きれい", "おおきい", "しずか"], "correct": "おおきい"}`
 - {'pt-BR': "おおきい (大きい, 'grande') termina em い de verdade: é adjetivo-い. Cuidado com きれい: ela tem o som 'i' no fim, mas é adjetivo-な disfarçado. しずか é claramente adjetivo-な."}
 

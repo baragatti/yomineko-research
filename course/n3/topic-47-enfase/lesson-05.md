@@ -14,7 +14,7 @@
 ---
 
 ### Líderes, maioria e o mundo
-Neste lote você ganha palavras para falar de quem representa e lidera, de quanto é a maioria de algo, e do mundo natural em grande escala (o sol, os continentes). Também entram dois conectivos de contraste bem úteis na fala.
+Neste lote você ganha palavras para falar de quem representa e lidera, de quanto é a maioria de algo, e do mundo natural em grande escala (o sol, os continentes). Também entra um conectivo de contraste bem útil, de tom mais firme e típico da escrita.
 
 #### Representação e liderança
 Palavras sobre quem fala ou age por outros.

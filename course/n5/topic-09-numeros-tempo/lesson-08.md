@@ -3,7 +3,7 @@
 > Lição `les:n5-numeros-tempo-08` · tópico `top:n5-numeros-tempo` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
-- Nomear peças de roupa do dia a dia(camiseta, saia, calça, suéter)
+- Nomear peças de roupa do dia a dia (camiseta, saia, calça, suéter)
 - Falar de itens de higiene e banho (chuveiro, sabonete)
 - Reconhecer que a maioria dessas palavras é empréstimo escrito em katakana
 
@@ -21,7 +21,7 @@ Muitas dessas palavras vieram do inglês e chegam ao seu ouvido quase prontas.�
 
 #### Roupas do dia a dia
 Estas são as peças mais comuns. Repare que todas as quatro se escrevem em katakana, sinal de que entraram no japonês de fora.
-- シャツ= camiseta (em especial a de baixo, a regata). Vem do inglês "shirt".
+- シャツ= camiseta (sozinha, costuma ser a de baixo, a interna). Vem do inglês "shirt".
 - スカート= saia. Do inglês "skirt".
 - 洋袴= calça (ou calças). Curiosamente, esta não vem do inglês: tem origem no francês "jupon".
 - セーター= suéter, blusa de lã. Do inglês "sweater". A barrinha ー estica a vogal: seetaa.
@@ -65,7 +65,7 @@ Repare na diferença entre katakana e kanji nestas palavras:シャツ・スカ�
 
 ### 2. (recognition) {'pt-BR': 'Você está no banheiro e quer tomar banho. Qual palavra se refere ao chuveiro?'}
 - **Resposta:** `{"choices": ["シャワー", "せっけん", "さいふ"], "correct": "シャワー"}`
-- {'pt-BR': "シャワー é o chuveiro (do inglês 'shower'). せっけん é sabonete e さいふ é a carteira. Não confunda シャワー (chuveiro) com シャツ (camiseta): mudam só por uma letra."}
+- {'pt-BR': "シャワー é o chuveiro (do inglês 'shower'). せっけん é sabonete e さいふ é a carteira. Não confunda シャワー (chuveiro) com シャツ (camiseta): as duas começam com シャ, mas terminam diferente."}
 
 
 ### 3. (cloze) {'pt-BR': "Complete com a palavra para 'calça': これは＿です。 (Isto é uma calça.)"}

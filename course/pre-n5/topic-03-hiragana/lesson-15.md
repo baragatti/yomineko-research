@@ -31,7 +31,7 @@ Lembrete do padrão: pegamos a coluna do i (み・り・ぎ・じ・び・ぴ) e
 Vantagem PT: a sequência じゃ・じゅ・じょ usa o som de "dj" do nosso "dia", "gente" (e não o "j" de "já", "jogo"). A maioria dos brasileiros já faz esse som sem perceber, então é um dos contraídos mais fáceis.
 
 > **[l1-pitfall]**
-Armadilha PT: cuidado para não engolir o り dos contraídos りゃ・りゅ・りょ. Não é um rr forte de "carro"; é o r leve e batidinho de "cara". Diga りょ como o começo de "rio", bem suave.
+Armadilha PT: cuidado para não engolir o り dos contraídos りゃ・りゅ・りょ. Não é um rr forte de "carro"; é o r leve e batidinho de "cara". Diga りょ como o "rio" de "Mário", "diário", bem suave.
 
 #### O っ pequeno (sokuon)
 O っ é um つ escrito pequeno, mas não tem som próprio. Ele aparece antes de uma consoante e a dobra, criando uma pequena pausa que dura uma mora. É como segurar a respiração por um instante antes de soltar a consoante.
@@ -59,9 +59,9 @@ Tente ler em voz alta, juntando o que você já sabe:りょこう(ryokou, "viage
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual contraído representa o som 'ja' (como em 'já')?"}
+### 1. (recognition) {'pt-BR': "Qual contraído representa o som 'ja' (o 'dj' de 'dia')?"}
 - **Resposta:** `{"choices": ["じゃ", "ぎゃ", "びゃ"], "correct": "じゃ"}`
-- {'pt-BR': "じゃ = ja (じ + ゃ pequeno), o som de 'já' em português."}
+- {'pt-BR': "じゃ = ja (じ + ゃ pequeno), o 'dj' de 'dia'"}
 
 
 ### 2. (recognition) {'pt-BR': 'O que o っ pequeno faz numa palavra como きって?'}

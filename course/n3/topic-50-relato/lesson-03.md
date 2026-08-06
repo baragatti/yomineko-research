@@ -52,7 +52,7 @@ Armadilha PT: este って NÃO é o "que" relativo do português. É a marca de 
 A entonação muda tudo: descendo no fim, é relato ("ouvi dizer que..."); subindo, é pergunta ("é verdade que...?"). Cuidado para não martelar uma sílaba; em japonês a diferença é a melodia (pitch), com as moras mantendo a mesma duração.
 
 #### Vocabulário desta lição
-Coisas que a gente costuma comentar de ouvido falar:
+Coisas que a gente costuma comentar de ouvir falar:
 - 渋滞 (じゅうたい) = "congestionamento, engarrafamento". 高速が渋滞らしい = "parece que a rodovia está engarrafada".
 - 収穫 (しゅうかく) = "colheita, safra".
 - 修理 (しゅうり) = "conserto, reparo".

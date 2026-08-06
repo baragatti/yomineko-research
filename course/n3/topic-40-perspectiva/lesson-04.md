@@ -17,7 +17,7 @@
 Esta lição reúne palavras que começam com す: alguns verbos úteis do dia a dia, substantivos sobre números e aparência, e vários empréstimos do esporte. Sem gramática nova; aproveite para reencontrar padrões como ～について e ～にとって nos exemplos.
 
 #### Verbos do cotidiano
-Quatro verbos práticos, dois deles homófonos perigosos.
+Cinco verbos práticos, dois deles homófonos perigosos.
 - 過ごす (すごす) - passar (o tempo), levar (a vida). Como em 'passar as férias'.
 - 救う (すくう) - resgatar, salvar, socorrer (alguém de um perigo).
 - 進める (すすめる) - avançar, adiantar (um relógio, um projeto).

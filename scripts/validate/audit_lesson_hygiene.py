@@ -71,9 +71,21 @@ def check(d: dict, stem: str) -> list[str]:
         out.append("empty inline tag")
     for mm in BOUNDARY.finditer(body):
         a, nx = mm.group(1), mm.group(4)
-        if (_latin(a) or _latin(nx)) and a not in OPEN_PUNCT and nx not in CLOSE_PUNCT:
-            out.append("run-together boundary")
-            break
+        if not ((_latin(a) or _latin(nx)) and a not in OPEN_PUNCT and nx not in CLOSE_PUNCT):
+            continue
+        # INTRA-WORD EMPHASIS is not a lost space. The kana lessons bold the first letter of a mnemonic
+        # word ("Imagine um <b>a</b>nzol", "<b>ne</b>ne"), which necessarily joins two latin runs with no
+        # space. The defect this check exists for is a space lost BETWEEN words; a styling tag that opens
+        # or closes mid-word is the intended rendering, and the pre-fix alternative rendered "um a nzol".
+        # the styling marker sits on the tag that OPENED this run, i.e. behind mm.start()
+        before = body[:mm.start()]
+        last_open = max(before.rfind("<text"), before.rfind("<emphasis"))
+        open_tag = before[last_open:before.find(">", last_open) + 1] if last_open >= 0 else ""
+        styled = 'weight="bold"' in open_tag or open_tag.startswith("<emphasis")             or 'weight="bold"' in mm.group(3) or mm.group(3).startswith("<emphasis")
+        if styled and _latin(a) and _latin(nx):
+            continue
+        out.append("run-together boundary")
+        break
     for fld in ("title", "description", "body"):
         if META.search(str(d.get(fld, ""))):
             out.append(f"meta-leak in {fld}")

@@ -23,7 +23,7 @@ O segredo aqui não é decorar a tradução, e sim lembrar de onde vem a sua cer
 Do lado da probabilidade:〜かもしれない é "talvez", baixa certeza;〜でしょう é uma previsão mais firme ("deve ser / provavelmente"); e 〜はず é a expectativa lógica baseada num motivo:もう着くはずだ("já era pra ter chegado").
 
 > **[l1-pitfall]**
-Não confunda o 〜そう de aparência com o 〜そうだ de boato.おいしそう(raiz do adjetivo) é "tem cara de gostoso";おいしいそうだ(forma completa + そうだ) é "dizem que é gostoso". A diferença mora em coladinho na raiz ou depois da forma inteira.
+Não confunda o 〜そう de aparência com o 〜そうだ de boato.おいしそう(raiz do adjetivo) é "tem cara de gostoso";おいしいそうだ(forma completa + そうだ) é "dizem que é gostoso". A diferença está em vir coladinho na raiz ou depois da forma inteira.
 
 #### Voz passiva 〜られる
 A passiva coloca quem sofre a ação como tópico, e quem faz vira o agente marcado por に. Verbos do grupo 1 mudam a última sílaba do verbo para a coluna あ e ganham れる (読む para 読まれる) e os do grupo 2 trocam る por られる(食べる para 食べられる). Exemplo neutro:この本は多くの人に読まれている("este livro é lido por muita gente").

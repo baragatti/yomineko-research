@@ -41,7 +41,7 @@ Mesma estrutura, com 少し("um pouco") e お金("dinheiro"). A negativa interro
 Em português a gente também pede assim na negativa: "Não dava pra me ajudar?", "Você não poderia me esperar?". O japonês segue exatamente essa lógica, então o instinto que você já tem ajuda aqui.
 
 > **[warning]**
-O subir de educação vem da forma escolhida:てくれない？ é casual;てくれませんか e てもらえませんか são as versões formais. Quanto mais "longe" do imperativo, mais polido o pedido.
+O nível de cortesia depende da forma escolhida:てくれない？ é casual;てくれませんか e てもらえませんか são as versões formais. Quanto mais "longe" do imperativo, mais polido o pedido.
 
 #### Os kanji: 空 e 港
 空 significa "vazio, céu, vácuo". Em cima está o radical de "buraco/teto" e embaixo 工("ofício"): pense num galpão vazio com o céu aberto por cima. Ele aparece em 空気("ar, atmosfera", a coisa que enche o espaço vazio) e em 空港("aeroporto", literalmente "porto do céu").

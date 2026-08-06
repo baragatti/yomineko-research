@@ -1,10 +1,10 @@
-# Estados, materiais e ações: o batch fu continua
+# Estados, materiais e ações: o grupo fu continua
 
 > Lição `les:n3-estado-07` · tópico `top:n3-estado` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
 - Reconhecer e usar substantivos de estado e quantidade como 不足, 物価 e 部分
-- Empregar termos de ciência e matéria como 物質, 物理 e 不正
+- Empregar termos de ciência e matéria como 物質 e 物理 (fix the parallel <check> in the body checklist too)
 - Identificar palavras de pessoas e ações como 夫人, 双子 e 防ぐ
 
 **Introduz:** gramática [—] · vocabulário [打つ, 不図, 不平, 不正, 不足, 再び, 双子, 夫人, 婦人, 普段, 物価, 物理, 物質, 筆, 縁, 舞台, 部分, 防ぐ] · kanji [—] · kana [—]

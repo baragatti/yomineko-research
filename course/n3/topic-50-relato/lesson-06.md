@@ -56,7 +56,7 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 #### Hora de praticar
 
 #### Leitura
-> 📖 きのうデパートで白い靴を買いました。カメラにフィルムを入れるのを忘れた。カメラにフィルムを入れ忘れちゃった。月曜日から金曜日まで雪だったんだよ。あなたは絵を書くのがじょうずですね。とても寒かったけれども私は外出した。 — Ontem comprei sapatos brancos em uma loja de departamentos. Esqueci de colocar o filme na câmera. Esqueci de colocar o filme na câmera. Nevou de segunda a sexta-feira, viu. Você desenha muito bem, né? Embora estivesse muito frio, eu saí.
+> 📖 きのうデパートで白い靴を買いました。カメラにフィルムを入れるのを忘れた。カメラにフィルムを入れ忘れちゃった。月曜日から金曜日まで雪だったんだよ。あなたは絵を書くのがじょうずですね。とても寒かったけれども私は外出した。 — Ontem comprei sapatos brancos em uma loja de departamentos. Esqueci de colocar o filme na câmera. Acabei esquecendo de colocar o filme na câmera. Nevou de segunda a sexta-feira, viu. Você desenha muito bem, né? Embora estivesse muito frio, eu saí.
 > 📖 あっという間に４０度近くまで熱が出た二人の生徒が１台のコンピュータを使う話してる最中に割り込んでこないでよ。この問題に関して、３つの問題がある。問題は彼が文無しであるということだ。百歳以上生きる人はほとんどいない。 — Num piscar de olhos, a febre subiu para quase 40 graus. Dois alunos usam um computador. Não fica me interrompendo enquanto eu estou falando! A respeito dessa questão, há três problemas. O problema é que ele está sem um tostão. Quase ninguém vive mais de cem anos.
 - Consigo ler e reconhecer as 18 palavras novas desta lição com suas leituras corretas.
 - Sei usar o vocabulário em frases de relato, citação e definição apoiado na gramática já estudada.
@@ -70,7 +70,7 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 - {'pt-BR': '博物館 (はくぶつかん) significa museu. As outras opções são leituras de palavras diferentes desta mesma lição.'}
 
 
-### 2. (recognition) {'pt-BR': 'Os dois verbos abaixo têm a leitura はく. Qual deles significa vomitar?'}
+### 2. (recognition) {'pt-BR': 'Qual destes verbos se lê はく e significa vomitar? (mesma correção na cópia course/n3/topic-48-relato/lesson-06.json)'}
 - **Resposta:** `{"choices": ["吐く", "履く", "計る", "外す"], "correct": "吐く"}`
 - {'pt-BR': '吐く (はく) é vomitar ou botar para fora, enquanto 履く (はく) é vestir da cintura para baixo ou calçar. A leitura é igual, mas o kanji muda tudo.'}
 

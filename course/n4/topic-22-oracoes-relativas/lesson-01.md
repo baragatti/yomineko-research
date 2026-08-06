@@ -25,7 +25,7 @@ Veja o molde em ação numa frase que usa esse bloco como sujeito do que se gost
 Repare: 本を読むこと ("o ato de ler livros") inteiro funciona como uma só coisa, e o が marca esse bloco como aquilo de que se gosta. Sem o こと, o verbo 読む não poderia receber が好きです diretamente.
 
 > **[l1-advantage]**
-Em português você nominaliza com o infinitivo ("ler é bom") ou com "-ção" ("a leitura"). O japonês resolve quase tudo com uma só ferramenta: gruda こと e pronto. Não há conjugação nova para decorar.
+Em português você nominaliza com o infinitivo ("ler é bom") é a mesma coisa, e você pode escolher a que for mais confortável de ler ou escrever. O japonês resolve quase tudo com uma só ferramenta: gruda こと e pronto. Não há conjugação nova para decorar.
 
 > **[tip]**
 O bloco também combina bem com adjetivos de juízo. A ideia é sempre a mesma: primeiro o bloco …こと, depois o que você acha dele. Por exemplo, 早く起きること ("acordar cedo") seguido de um destes:
@@ -34,7 +34,7 @@ O bloco também combina bem com adjetivos de juízo. A ideia é sempre a mesma: 
 - 厳しい: duro, severo ("é duro")
 
 #### の中で／のなかで: dentro de um conjunto
-A estrutura no-naka-de (de 中 = "dentro, meio") marca o conjunto dentro do qual algo se destaca ou é escolhido: "entre", "dentre", "de todos". É a forma clássica de fazer comparações e superlativos. Pode aparecer em kanji (の中で) ou só em kana (のなかで); é a mesma coisa, e você pode escolher a que ler ou escrever for mais confortável.
+A estrutura no-naka-de (de 中 = "dentro, meio") marca o conjunto dentro do qual algo se destaca ou é escolhido: "entre", "dentre", "de todos". É a forma clássica de fazer comparações e superlativos. Pode aparecer em kanji (の中で) ou só em kana (のなかで); é a mesma coisa, e é a mesma coisa, e você pode escolher a que for mais confortável de ler ou escrever.
 > 🗣 果物のなかでりんごが好きです — Entre as frutas, eu gosto de maçã.
 Aqui 果物のなかで ("dentre as frutas") define o universo da escolha, e o resto da frase diz qual item se destaca. O mesmo の中で também tem o sentido físico de "no meio de / dentro de" um espaço:
 > 🗣 私は人ごみのなかで彼女を見つけた。 — Eu a avistei no meio da multidão.

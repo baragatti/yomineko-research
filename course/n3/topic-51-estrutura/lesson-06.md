@@ -58,7 +58,7 @@ Três palavras parecidas no som, mas com sentidos distintos:
 来月会社を辞めるつもりだ (Pretendo me demitir da empresa no mês que vem.)
 
 > **[l1-pitfall]**
-Não troque 辞める (やめる, "demitir-se, largar o emprego") por 止める (やめる, "parar de fazer algo"). Soam idênticos, mas 辞める é sair de um cargo e 破る (やぶる) é "romper/rasgar", outro verbo. O contexto decide.
+Não troque 辞める (やめる, "demitir-se, largar o emprego") por 止める (やめる, "parar de fazer algo"). Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa (たばこをやめる, "parar de fumar"). Já 破る (やぶる) é outro verbo, "romper/rasgar". O contexto decide.
 
 #### Hora de praticar
 

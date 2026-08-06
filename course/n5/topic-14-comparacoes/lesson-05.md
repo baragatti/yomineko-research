@@ -73,7 +73,7 @@ Cuidado com os pares parecidos. 並ぶ é você entrar na fila (a fila se forma 
 - {'pt-BR': "A receita de ～たい é mecânica: pegue a raiz ます (寝ます → 寝) e troque o ます por たい, formando 寝たい ('quero dormir'). がほしい é para querer uma COISA; para querer uma AÇÃO usa-se sempre ～たい."}
 
 
-### 2. (cloze) {'pt-BR': 'Complete com a forma de desejo de 上る (subir): 山に 上り＿。 (Quero subir a montanha.)'}
+### 2. (cloze) {'pt-BR': 'prompt: "Complete com a forma de desejo de 上る (subir): 階段（かいだん）を 上り＿。 (Quero subir a escada.)" AND answer.full: "階段を 上りたい" (answer.text stays "たい"; explanation needs no change, it never mentions 山). Alternative if 階段 is unwanted vocab: 坂（さか）を 上り＿ / "Quero subir a ladeira." Do not switch the verb to 登る: the lesson\'s vocab ref and body all display 上る.'}
 - **Resposta:** `{"text": "たい", "full": "山に 上りたい"}`
 - {'pt-BR': "上る na raiz ます é 上り; trocando o ます por たい, temos 上りたい ('quero subir'). Note que a raiz 上り não muda nunca: só a terminação vira たい."}
 

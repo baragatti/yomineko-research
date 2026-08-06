@@ -90,7 +90,7 @@ Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei 
 - {'pt-BR': "O ônibus foi embora e não dá mais para pegá-lo: é o sentido de arrependimento/acidente de 〜てしまう, aquele 'que pena' embutido. O outro sentido (conclusão total) aparece em coisas como 宿題をしてしまった."}
 - frases: `sent:tatoeba-234345`
 
-### 3. (cloze) {'pt-BR': 'Complete com a CONTRAÇÃO coloquial de 飲んでしまう: ぜんぶ＿。 (Acabei bebendo tudo.)'}
+### 3. (cloze) {'pt-BR': 'Complete com a CONTRAÇÃO coloquial de 飲んでしまった: ぜんぶ＿。 (Acabei bebendo tudo.)'}
 - **Resposta:** `{"text": "飲んじゃった", "full": "ぜんぶ飲んじゃった"}`
 - {'pt-BR': 'でしまう vira じゃう, então 飲んでしまった encolhe para 飲んじゃった na fala casual. Verbos cuja forma て é て usam ちゃう (食べちゃう); os de で usam じゃう.'}
 

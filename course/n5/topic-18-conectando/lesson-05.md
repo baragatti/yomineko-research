@@ -95,7 +95,7 @@ Os dois compartilham o "telhado" de mão lá em cima, mudando só a base (口 à
 
 ### 3. (particle_choice) {'pt-BR': "Para puxar o assunto de forma coloquial em 'O que é (esse tal) sushi?', complete: すし＿何ですか。"}
 - **Resposta:** `{"choices": ["って", "でも", "から"], "correct": "って"}`
-- {'pt-BR': "って introduz um tópico de modo casual ('falando de sushi...'), funcionando como は/というのは. É linguagem falada e informal; no formal usaríamos と ou という."}
+- {'pt-BR': "って introduz um tópico de modo casual ('falando de sushi...'), funcionando como は/というのは. É linguagem falada e informal; no formal usaríamos とは ou というのは."}
 - frases: `sent:tatoeba-4888`
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'É melhor ir dormir agora mesmo.' com as peças: [ほうがいい] [すぐに] [寝た]"}

@@ -75,7 +75,7 @@ Um kanji, perfeito para falar do tempo com でしょう.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é a diferença entre 人気がありますか and 人気があるんですか?'}
+### 1. (recognition) {'pt-BR': 'Qual é a diferença entre 人気がありますか e 人気があるんですか?'}
 - **Resposta:** `{"choices": ["O 2º acrescenta o tom de 'é que...', pedindo/dando contexto", "O 2º é mais educado, mas o sentido é idêntico", "O 2º está no passado"], "correct": "O 2º acrescenta o tom de 'é que...', pedindo/dando contexto"}`
 - {'pt-BR': "〜んです não muda o fato (em ambos: 'é popular?'). Ele só acrescenta a nuance de quem reage a algo e quer entender o porquê: 'é que é popular?'. A primeira frase apenas relata."}
 - frases: `sent:tatoeba-144227`

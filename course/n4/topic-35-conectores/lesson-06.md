@@ -68,7 +68,7 @@ As quatro peças em uma vista só:休みなのに働く("trabalha embora seja fo
 - {'pt-BR': 'のに liga duas orações em que a segunda contraria o que a primeira faria esperar, quase sempre com surpresa ou frustração. ～ながら marca ações simultâneas e まま indica um estado que continua igual.'}
 
 
-### 2. (cloze) {'pt-BR': "Complete com a concessão 'mesmo que' a partir de 高い (caro): この服は＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)"}
+### 2. (cloze) {'pt-BR': 'Complete com a concessão \'mesmo que\' a partir de 高い (caro): Align the frame with the featured sentence instead of adding a topic: "Complete com a concessão \'mesmo que\' a partir de 高い (caro): ＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)"; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)'}
 - **Resposta:** `{"text": "高くても", "full": "高くてもこの服を買います"}`
 - {'pt-BR': "O adjetivo-i 高い perde o い e ganha くても: 高くても = 'mesmo que seja caro'. O resultado (買います) se mantém apesar da condição."}
 - frases: `sent:gen-fd723f8599f2`

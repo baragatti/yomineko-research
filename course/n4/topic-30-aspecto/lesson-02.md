@@ -36,7 +36,7 @@ Não traduza ていく sempre como "ir" no sentido físico. Em だんだん明�
 
 #### 〜ていた: estava fazendo (passado contínuo)
 A forma te-ita é simplesmente o passado de 〜ている. Ela diz que uma ação estava em andamento no passado, ou que um estado perdurava. É o nosso "estava fazendo".
-> 🗣 朝から雨が降っていた — Estava chovendo desde a manhã
+> 🗣 朝から雨が降っていた — Estava chovendo desde a manhã.
 Repare em 降っていた: a chuva não caiu num instante, ela estava caindo ao longo da manhã. O 朝から ("desde de manhã") reforça a duração. Compare: 降った = "choveu" (fato pontual); 降っていた = "estava chovendo" (cena em curso).
 
 > **[example]**
@@ -81,7 +81,7 @@ O 週 de 週末 (fim de semana) carrega aquele radical de caminho ⻌: a ideia j
 - {'pt-BR': "〜ていた é o passado de 〜ている: marca uma ação em andamento no passado. 降った seria 'choveu' (pontual); 降っていた é 'estava chovendo' (duração)."}
 - frases: `sent:gen-fd3b6a8cb10e`
 
-### 3. (cloze) {'pt-BR': 'Complete para dizer "vou continuar tentando": 試し＿。 (radical de 試す + \'ir fazendo\')'}
+### 3. (cloze) {'pt-BR': 'Complete para dizer "vou continuar tentando": 試し＿。 (forma て de 試す + いく, \'ir fazendo\')'}
 - **Resposta:** `{"text": "ていく", "full": "試していく"}`
 - {'pt-BR': "試して (forma て de 試す) + いく = 試していく, 'vou continuar tentando'. Aqui 〜ていく marca uma ação que segue avançando rumo ao futuro."}
 - frases: `sent:tatoeba-12642529`

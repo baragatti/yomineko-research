@@ -90,7 +90,7 @@ Hoje você ganha quatro kanji. Para cada um, a forma e um truque para fixar:
 - {'pt-BR': "A pessoa de quem você deseja a ação leva に em ～てほしい: 友だちに来てほしい. Pense em に como 'apontar' para quem você quer que aja."}
 - frases: `sent:gen-19bb4adab2c3`
 
-### 3. (cloze) {'pt-BR': "Complete com a て-forma + ほしい para 'não quero que você vá': 行か＿＿ほしい。"}
+### 3. (cloze) {'pt-BR': "Complete com a forma negativa de ～てほしい para 'não quero que você vá': 行か＿＿ほしい。"}
 - **Resposta:** `{"text": "ないで", "full": "行かないでほしい"}`
 - {'pt-BR': "Para pedir que alguém NÃO faça algo, usa-se ～ないでほしい: 行かないでほしい = 'não quero que você vá'. É a versão negativa de ～てほしい."}
 

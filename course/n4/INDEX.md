@@ -1,6 +1,6 @@
 # Curso — Módulo N4 (n4)
 
-_Gerado 2026-07-05. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
+_Gerado 2026-08-05. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|

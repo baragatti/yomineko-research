@@ -37,7 +37,7 @@ Ao pé da letra é "o almoço, ir para comer". Em pt-BR fica naturalíssimo: "vo
 
 > **[example]**
 Agora com um substantivo de ação. ハイキング ("trilha") gruda direto em に行く:
-> 🗣 天気がよければハイキングに行くのだが。 — Se o tempo estiver bom, a gente iria fazer uma trilha...
+> 🗣 天気がよければハイキングに行くのだが。 — Se o tempo estivesse bom, a gente iria fazer uma trilha...
 O começo, 天気がよければ, é "se o tempo estiver bom" (uma condição que você verá adiante). O coração da frase é ハイキングに行く: ir com o objetivo de fazer trilha.
 
 #### Também com 来る e 帰る

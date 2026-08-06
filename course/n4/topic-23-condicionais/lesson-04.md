@@ -5,7 +5,7 @@
 **Objetivos:**
 - Usar o advérbio もし para anunciar uma hipótese no começo da frase, combinado com 〜たら/〜ば
 - Expressar arrependimento sobre o passado com 〜ばよかった ('eu deveria ter...')
-- Reconhecer o tom emocional de もし...ばよかった のに ('você devia ter...') ao reclamar gentilmente
+- Reconhecer o tom emocional de 〜ばよかったのに ('você devia ter...') ao reclamar gentilmente
 
 **Introduz:** gramática [gp-120, gp-138] · vocabulário [丁寧, 嘘, 恥ずかしい, 申し上げる] · kanji [不 意] · kana [—]
 
@@ -68,7 +68,7 @@ O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente espera
 - {'pt-BR': "もし é só um aviso de hipótese; quem faz o trabalho gramatical de 'se' é a terminação (〜なら, 〜たら, 〜ば). Por isso もし é opcional: 雨なら行きません também está certo."}
 - frases: `sent:tatoeba-193408`
 
-### 2. (cloze) {'pt-BR': "Complete o arrependimento 'eu devia ter trazido um casaco': コート着てくれ＿よかった。"}
+### 2. (cloze) {'pt-BR': "Complete o arrependimento 'eu devia ter vindo de casaco': コート着てくれ＿よかった。"}
 - **Resposta:** `{"text": "ば", "full": "コート着てくればよかった"}`
 - {'pt-BR': "〜ばよかった = 'eu devia ter...'. O verbo 来る vira 来れば (forma condicional 〜ば) e recebe よかった (passado de いい, 'bom'). Literalmente: 'teria sido bom se eu tivesse vindo (com casaco)'."}
 - frases: `sent:tatoeba-3179644`

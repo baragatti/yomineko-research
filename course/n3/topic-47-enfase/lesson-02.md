@@ -40,7 +40,7 @@ Esse padrão é muito comum em propaganda e elogios, com tom levemente formal. P
 Armadilha PT: cuidado para não soar como ironia. O もちろん aqui é genuíno ("naturalmente"), reforçando que o primeiro item é dado como certo, e não um sarcasmo. É próximo de だけでなく, mas はもちろん soa mais natural e menos "escrito" em elogios cotidianos.
 
 #### Vocabulário: estudo, esporte e clima
-Note os estrangeirismos (gairaigo): mesmo parecendo o português ou o inglês, eles têm pronúncia de moras completas. Observe o kana:
+Observe o kana destas palavras. Nos estrangeirismos (コーチ, ゴール, コード), mesmo parecendo o português ou o inglês, a pronúncia tem moras completas.
 - 語学 (ごがく) = "estudo de idiomas estrangeiros".
 - 国語 (こくご) = "língua nacional" (a matéria de japonês na escola, p. ex.).
 - 黒板 (こくばん) = "quadro-negro, lousa".

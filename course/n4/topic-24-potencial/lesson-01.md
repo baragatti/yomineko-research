@@ -95,7 +95,7 @@ Três kanji do campo da mente e do juízo, úteis para falar de capacidade.
 
 ### 5. (recognition) {'pt-BR': 'Em チーズが作られる, qual é o sentido de 作られる?'}
 - **Resposta:** `{"choices": ["Passiva: 'o queijo é feito'", "Potencial: 'o queijo consegue fazer'", "Respeitosa: 'fazer (educado)'"], "correct": "Passiva: 'o queijo é feito'"}`
-- {'pt-BR': "〜られる serve tanto para potencial quanto para passiva. Como queijo é coisa e não tem capacidade de agir, só faz sentido a passiva: 'o queijo é feito (de leite)'. Com pessoas, costuma ser potencial."}
+- {'pt-BR': "作る é godan: a potencial é 作れる. Logo 作られる só pode ser passiva ('o queijo é feito'). O duplo sentido de 〜られる ocorre nos ichidan, como 見られる.: 'o queijo é feito (de leite)'. Com pessoas, costuma ser potencial."}
 - frases: `sent:tatoeba-195054`
 
 ### 6. (production) {'pt-BR': "Diga em japonês 'Daqui dá para ver o mar.' usando ここから (daqui), 海 (mar) com が e a potencial educada de 見る."}

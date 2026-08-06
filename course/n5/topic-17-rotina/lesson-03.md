@@ -84,7 +84,7 @@ Em お母さん, o かあ é uma vogal longa: segure por DOIS tempos (duas palma
 - {'pt-BR': '〜てから (forma て + から) marca que algo acontece DEPOIS de outra ação terminar. 〜まえに é o oposto: "antes de".'}
 
 
-### 2. (cloze) {'pt-BR': 'Complete com a partícula que forma "antes de dormir": 寝る＿に歯を磨きます。 (Antes de dormir, escovo os dentes.)'}
+### 2. (cloze) {'pt-BR': 'Complete com a palavra que forma "antes de dormir": 寝る＿に歯を磨きます。 (Antes de dormir, escovo os dentes.)'}
 - **Resposta:** `{"text": "まえ", "full": "寝るまえに歯を磨きます"}`
 - {'pt-BR': 'O verbo 寝る fica no dicionário e recebe まえに = "antes de dormir". O verbo antes de まえに nunca muda de tempo.'}
 - frases: `sent:gen-1ae4a3cf896d`

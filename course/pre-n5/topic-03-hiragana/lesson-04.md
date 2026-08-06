@@ -4,7 +4,7 @@
 
 **Objetivos:**
 - Reconhecer e ler た, ち, つ, て, と
-- Pronunciar corretamente os sons chi (ち) e tsu (つ), que não existem em português
+- Pronunciar corretamente ち (chi, como o "ti" de "tia") e つ (tsu), som que não existe em português
 - Escrever cada kana na ordem correta dos traços
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [kana:hiragana-ta]

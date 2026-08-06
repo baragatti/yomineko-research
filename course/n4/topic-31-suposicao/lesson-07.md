@@ -75,7 +75,7 @@ Com o mesmo radical がり, mas agora como substantivo, você descreve um traço
 
 ### 3. (recognition) {'pt-BR': 'Como se diz "minha irmã mais nova é medrosa (sente medo com facilidade)", descrevendo um TRAÇO de personalidade?'}
 - **Resposta:** `{"choices": ["妹は怖がる", "妹は怖がっている", "妹は怖がりだ", "妹は怖いだ"], "correct": "妹は怖がりだ"}`
-- {'pt-BR': 'Para um traço habitual de personalidade usa-se o substantivo 〜がり (怖がり = "medroso"), que se comporta como na-adjetivo: 怖がりだ. 怖がる/怖がっている descreveriam o medo num momento específico, não a tendência geral.'}
+- {'pt-BR': 'Para um traço habitual de personalidade usa-se o substantivo 〜がり (怖がり = "medroso"), que se comporta como na-adjetivo: 怖がりだ. 怖がっている descreve o medo num momento específico e 怖がる descreve o comportamento de demonstrar medo; para nomear o traço fixo da pessoa, o japonês usa o substantivo 怖がり.'}
 
 
 ### 4. (sentence_build) {'pt-BR': 'Ordene para formar "A criança está querendo comer sorvete": [子供 / アイス / が / を / 食べたがっている]'}

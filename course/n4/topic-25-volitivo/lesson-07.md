@@ -16,7 +16,7 @@
 ---
 
 ### Camadas finais de nuance
-Você já sabe propor, decidir e planejar. Agora vamos polir tudo isso com quatro recursos que dão tom e intensidade: dois advérbios que reforçam pedidos e desejos zehi e gp-71, e dois usos mais avançados,gp-83, que cobrem recusa firme (〜まい) e comparação (〜のように).
+Você já sabe propor, decidir e planejar. Agora vamos polir tudo isso com quatro recursos que dão tom e intensidade: dois advérbios que ajustam o tom de pedidos e desejos (um reforça, o outro suaviza) zehi e gp-71, e dois usos mais avançados,gp-83, que cobrem recusa firme (〜まい) e comparação (〜のように).
 
 #### ぜひ: "sem falta", "de todo jeito"
 O advérbio ぜひ reforça um convite, um pedido ou um desejo seu. Dá a ideia de "venha mesmo", "faça questão", "não deixe de". Ele combina muito com a forma volitiva e com てください.

@@ -15,7 +15,7 @@
 ---
 
 ### Mudanças graduais: passar a fazer e ritmo da mudança
-Na lição anterior você falou de experiências e de mudanças de estado. Agora vamos olhar para a mudança ao longo do tempo: como dizer que você passou a fazer algo que antes não fazia, e como descrever se essa mudança foi devagar ou bem rápida. Para isso você ganha três peças: a estrutura you-ni-naru e os advérbios gp-58 e gp-59.
+Na lição anterior você falou de mudanças de estado. Agora vamos olhar para a mudança ao longo do tempo: como dizer que você passou a fazer algo que antes não fazia, e como descrever se essa mudança foi devagar ou bem rápida. Para isso você ganha três peças: a estrutura you-ni-naru e os advérbios gp-58 e gp-59.
 
 #### 〜ようになる: passar a fazer / chegar a conseguir
 A estrutura you-ni-naru descreve uma mudança gradual: algo que antes não acontecia (ou não se conseguia) passou a acontecer. Você prende ようになる ao verbo na forma de dicionário (ou no potencial, para "passar a conseguir"). No passado, ようになった quer dizer "acabei conseguindo / passei a".

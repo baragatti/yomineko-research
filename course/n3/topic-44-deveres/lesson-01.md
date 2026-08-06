@@ -65,7 +65,7 @@ Palavras úteis para falar de rotina, trabalho e tentativas (mostradas em kana):
 - 吸収 (きゅうしゅう) = 'absorção'. Ex.: 'as crianças absorvem língua rápido'.
 
 > **[warning]**
-Os katakana キャンプ e キャプテン vêm do inglês, mas leem-se por mora cheia: ca-n-pu, kya-pu-te-n. Não engula vogais como no português.
+Os katakana キャンプ e キャプテン vêm do inglês, mas leem-se por mora cheia: kya-n-pu, kya-pu-te-n. Não engula vogais como no português.
 
 #### Kanji novos
 O kanji 働 ('trabalhar') junta a pessoa (イ) com 'mover' (動): a pessoa que se move é a que trabalha. Aparece em 働く ('trabalhar').

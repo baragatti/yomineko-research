@@ -18,7 +18,7 @@ No N3 você começa a dar relevo a palavras específicas dentro da frase. Esta l
 
 #### こそ: "esse sim, justamente esse"
 A partícula n3-koso realça a palavra que vem antes dela e a marca como a mais certa, a mais importante ou a verdadeira no contexto. É como dizer "esse sim", "justamente", "é precisamente". Implicitamente, ela descarta as outras possibilidades: ao dizer 今日こそ, você sugere "hoje (e não os outros dias) é que vai".
-Ela liga-se sobretudo a substantivos e pronomes. Veja:
+Ela se liga sobretudo a substantivos e pronomes. Veja:
 - 今日こそ勉強する = "hoje sim eu vou estudar" (depois de adiar vários dias).
 - あなたこそ = "você é que" (devolvendo um elogio ou uma cobrança).
 Uma resposta clássica é こちらこそ: quando alguém agradece, você devolve a gentileza com "eu é que agradeço". A palavra こちら ("deste lado, eu") recebe o holofote do こそ.

@@ -17,7 +17,7 @@
 Até agora você sugeriu ("vamos!"), contou intenções ("pretendo...") e pediu com jeitinho (nasai ainda não, calma). Falta o lado mais direto: a ordem. O japonês tem dois jeitos principais de mandar, e a diferença entre eles é quase toda de registro: o quanto a frase soa brusca e quem pode dizê-la a quem.
 
 #### 命令形: a ordem crua
-O gp-127 (めいれいけい) é o imperativo "pelado", sem nenhuma camada de polidez. É o "faça!", "corra!", "para!" mais seco que existe. Por ser tão direto, na fala do dia a dia ele aparece pouco: em brigas, em emergências, em ordens militares, em torcidas de futebol, em placas e em fala masculina bem ruda.
+O gp-127 (めいれいけい) é o imperativo "pelado", sem nenhuma camada de polidez. É o "faça!", "corra!", "para!" mais seco que existe. Por ser tão direto, na fala do dia a dia ele aparece pouco: em brigas, em emergências, em ordens militares, em torcidas de futebol, em placas e em fala masculina bem rude.
 Como se forma:
 - Grupo 1 (godan): a última sílaba vai para a fileira -e. 行く vira 行け, 急ぐ vira 急げ, 待つ vira 待て.
 - Grupo 2 (ichidan): troca o る final por ろ. 食べる vira 食べろ, 起きる vira 起きろ.

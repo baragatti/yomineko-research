@@ -66,7 +66,7 @@ Guarde o molde: [A] は [B] です. Troque só o A e o B e você já fala dezena
 - {'pt-BR': "O kana は sozinho seria 'ha', mas como partícula de tópico lê-se 'wa'. É a única exceção desse kana."}
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete o tópico: 私＿英語です。 (Falando de mim, é inglês / Eu falo inglês.)'}
+### 2. (particle_choice) {'pt-BR': 'Complete o tópico: 私＿英語です。 (Falando de mim, é inglês'}
 - **Resposta:** `{"choices": ["は", "です", "だ"], "correct": "は"}`
 - {'pt-BR': 'は marca o tópico (私 = eu); a cópula です já está no fim. A partícula vem DEPOIS da palavra que ela marca.'}
 

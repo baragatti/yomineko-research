@@ -17,7 +17,7 @@
 Você já tem たら e ば na bagagem. Agora fechamos o quadro dos quatro condicionais com os dois que faltam: と (aqui na expressão de desejo 〜といいです, "tomara que") e nara ("se for o caso de…"). Cada condicional tem uma personalidade própria; o que muda de um para o outro é o tipo de relação entre a condição e o resultado.
 
 #### 〜といいです: "tomara que"
-A base do と é o resultado automático e inevitável: "se A, então B sempre acontece". Dessa lógica nasce uma expressão muito útil no dia a dia. gp-82 junta と ("se/quando") com いい ("bom"): ao pé da letra, "se algo bom acontecer, é bom". Na prática, é o nosso "tomara que" ou "espero que".
+A base do と é o resultado automático e inevitável: "se A, então B sempre acontece". Dessa lógica nasce uma expressão muito útil no dia a dia. gp-82 junta と ("se/quando") com いい ("bom"): ao pé da letra, "se ~ acontecer, é bom". Na prática, é o nosso "tomara que" ou "espero que".
 A forma é simples: [verbo na forma de dicionário] といいです. Muitas vezes vem com ね no fim, quando você torce por algo junto com a pessoa, como quem diz "né?".
 > 🗣 明日晴れるといいです — Tomara que faça sol amanhã.
 Aqui 晴れる ("fazer sol") está na forma de dicionário e ganha といいです: "tomara que faça sol amanhã". Você não controla o tempo, só pode torcer, e é exatamente esse o tom de といいです.
@@ -59,7 +59,7 @@ A grande diferença de なら: nas outras três, a condição costuma vir antes 
 #### Hora de praticar
 
 #### Leitura
-> 📖 お会いできるといいですね。また会えるといいですね。明日雨ならば行きません。明日ならどうですか。 — Tomara que eu possa vê-lo (de novo), né? Tomara que a gente possa se ver de novo, né? Se chover amanhã, eu não vou. E amanhã, que tal?
+> 📖 お会いできるといいですね。また会えるといいですね。明日雨ならば行きません。明日ならどうですか。 — "Tomara que eu possa vê-lo, né?" Tomara que a gente possa se ver de novo, né? Se chover amanhã, eu não vou. E amanhã, que tal?
 - Sei torcer por algo com 〜といいです ("tomara que").
 - Uso なら para reagir a um tema que surgiu na conversa.
 - Distingo と・なら de たら・ば pelo tipo de relação entre condição e resultado.

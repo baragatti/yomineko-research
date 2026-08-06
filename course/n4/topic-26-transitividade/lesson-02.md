@@ -58,7 +58,7 @@ O adjetivo 細かい (pequeno, miúdo) aparece bastante em casa: para falar de �
 
 #### Leitura
 > 📖 その先生は大学を出たばかりだ。火にあたりながらすわっていた。私にとってのるかそるかだった。私が持ち上げるには重すぎるよ。 — Esse professor acabou de se formar na faculdade. Ficávamos sentados nos aquecendo perto do fogo. Para mim, era tudo ou nada. É pesado demais para eu levantar.
-- Reconheço objetos comuns da casa em kana (火, 鏡, ジャム, 石…).
+- Reconheço objetos comuns da casa (火, 鏡, ジャム, 石…).
 - Sei dizer a mesma cena pelos dois lados: 火を消す (eu apago) × 火が消える (apaga sozinho).
 - Escolho を para o transitivo e が para o intransitivo sem trocar.
 - Reconheço o kanji 品 (mercadoria) em 食料品.

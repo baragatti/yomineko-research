@@ -80,7 +80,7 @@ Palavras que combinam com cenas que a gente observa e interpreta:
 
 ### 3. (cloze) {'pt-BR': 'Complete com a forma de APARÊNCIA antes do substantivo: おいし＿ケーキだ。 (Um bolo com cara de gostoso.)'}
 - **Resposta:** `{"text": "そうな", "full": "おいしそうなケーキだ"}`
-- {'pt-BR': "そうな (não そうに) qualifica um substantivo: おいしそうなケーキ = 'um bolo que parece gostoso'. O radical おいし- recebe そう direto, sem だ ('dizem que') e sem い."}
+- {'pt-BR': "そうな (não そうに) qualifica um substantivo: おいしそうなケーキ = 'um bolo que parece gostoso'. O radical おいし- recebe そう direto, sem o い: おいしいそうだ (com い) é que seria 'dizem que é gostoso'. Antes de substantivo, そう vira そうな."}
 
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'Ela riu com cara de feliz.' com as peças: [笑いました] [うれし] [彼女] [そうに] [は]"}

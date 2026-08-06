@@ -41,7 +41,7 @@ Pense assim: 見る é "olhar" (você dirige os olhos); 見える é "estar vis�
 #### が, e não を
 Como esses verbos descrevem algo que acontece sozinho, o que é ouvido ou visto é tratado como sujeito da percepção, marcado por が. Não use を aqui. Pense que a coisa não é alvo de uma ação sua: ela é quem aparece ou soa.
 - Certo: 葡萄が見える (dá para ver as uvas, 葡萄).
-- Quem fala pode ser qualquer pessoa: パパも聞こえる？ ("o パパ também está ouvindo?"), 夫には見える ("para o 夫 dá para ver").
+- Quem percebe pode ser outra pessoa: パパも聞こえる？ ("o パパ também está ouvindo?"), 夫には見える ("para o 夫 dá para ver").
 
 #### Kanji da lição
 Três kanji que aparecem em palavras de paisagem e do dia a dia.

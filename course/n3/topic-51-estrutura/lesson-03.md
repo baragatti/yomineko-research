@@ -72,7 +72,7 @@ A passiva sofrida combina muito com notícias de acidentes e problemas. Veja:
 
 > **[l1-pitfall]**
 食料 e 食糧 leem-se igual (しょくりょう), mas 食料 é alimento em geral e 食糧 são provisões essenciais (arroz, trigo). Quando ouvir しょくりょう, o contexto decide; ao escrever, escolha o kanji conforme o sentido.
-Exemplo com a passiva: 食品が信号の近くで盗られた usa の (da lição 1) e a passiva juntos: "o alimento foi roubado perto do semáforo".
+Exemplo com a passiva: 食品が信号の近くで盗まれた usa の (da lição 1) e a passiva juntos: "o alimento foi roubado perto do semáforo".
 
 #### Cinco kanji das emoções e do corpo
 O kanji 怒 significa "raiva, irritar-se". Mnemônico de forma: embaixo o radical de "coração" (心); a raiva é o que ferve no coração.

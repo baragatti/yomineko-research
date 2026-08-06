@@ -35,7 +35,7 @@ Fechando o grupo, três substantivos de ação. Eles nomeiam a atividade em si e
 - 仕事: trabalho
 
 > **[tip]**
-Cuidado com uma pegadinha de grupo:帰る e 走る terminam em る, mas são verbos do grupo 1 (godan), não do grupo 2. Por isso o polido é 帰ります e 走ります, e não "かえます". Cuidado: justamente por terem 'e' (かえる) e 'i' (はしる) antes do る, elas parecem do grupo 2, mas não são. São godan que se disfarçam, então vale memorizá-las uma a uma.
+Cuidado com uma pegadinha de grupo:帰る e 走る terminam em る, mas são verbos do grupo 1 (godan), não do grupo 2. Por isso o polido é 帰ります e 走ります, e não "かえます". Cuidado: justamente por terem 'e' (かえる) e 'i' (はしる) antes do る, eles parecem do grupo 2, mas não são. São godan que se disfarçam, então vale memorizá-los um a um.
 
 #### くる: vir, e o segundo verbo irregular
 O japonês inteiro tem só dois verbos irregulares. Um é する("fazer"); o outro é gp-20, "vir". Vale memorizá-lo sozinho, porque ele não segue o padrão de nenhum grupo: o radical troca de som conforme a forma.

@@ -1,4 +1,4 @@
-# Explicando o porque: ですから e なぜなら
+# Title: 'Explicando o porquê: ですから e なぜなら'. Também no body, o H2: 'Explicando o porquê: justificar com clareza e cortesia'.
 
 > Lição `les:n3-conectores-03` · tópico `top:n3-conectores` · **needs_review** (Layer C, aguarda professor).
 
@@ -78,12 +78,12 @@ O kanji 首 significa "pescoco, cabeca". E um pictograma de uma cabeca com cabel
 
 ### 2. (recognition) {'pt-BR': 'Na estrutura なぜなら, o que NUNCA pode faltar para amarrar a explicação?'}
 - **Resposta:** `{"choices": ["o から (ou からだ) no fim do motivo", "um そして no meio", "um ところで antes", "a partícula を"], "correct": "o から (ou からだ) no fim do motivo"}`
-- {'pt-BR': 'Em japonês a causa fica abracada entre なぜなら (na frente) e から/からだ (no fim). Mesmo com なぜなら ja dito, esquecer o から deixa a frase incompleta.'}
+- {'pt-BR': 'Em japonês a causa fica abraçada entre なぜなら (na frente) e から/からだ (no fim). Mesmo com なぜなら já dito, esquecer o から deixa a frase incompleta. Mesmo com なぜなら ja dito, esquecer o から deixa a frase incompleta.'}
 
 
 ### 3. (particle_choice) {'pt-BR': 'Você vai abrir uma frase inteira so para justificar, num texto escrito formal. Qual conector usar? 今日は行かない。___、雨が降っているからだ。'}
 - **Resposta:** `{"choices": ["なぜなら", "ですから", "それとも", "つまり"], "correct": "なぜなら"}`
-- {'pt-BR': 'なぜなら abre uma frase dedicada a justificar a anterior, com tom estruturado/escrito, e fecha com からだ. ですから também da causa, mas e mais conversacional e não exige から no fim de uma frase separada.'}
+- {'pt-BR': "なぜなら abre uma frase dedicada a justificar a anterior, com tom estruturado/escrito, e fecha com からだ. ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo"}
 
 
 ### 4. (matching) {'pt-BR': 'Ligue cada elemento ao seu sentido.'}

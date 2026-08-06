@@ -47,7 +47,7 @@ Um belo par de verbos com seus substantivos derivados.
 - トンネル (トンネル) - túnel.
 - とんでも無い (とんでもない) - absurdo, inconcebível; também "imagina!".
 - どんなに (どんなに) - quão, o quanto, até que ponto.
-ドレスに泥が付いて取れない (Sujou lama no vestido e não sai.)
+ドレスに泥が付いて取れない (A lama grudou no vestido e não sai.)
 どんなに努力してもとんでもない結果になった (Por mais que eu me esforçasse, o resultado foi absurdo.)
 
 > **[tip]**

@@ -91,9 +91,9 @@ O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de
 - {'pt-BR': "わけではない nega parcialmente, amaciando uma conclusão exagerada: 'não é bem que eu deteste'. Com adjetivo な, entra o な antes (嫌いなわけではない). Para negar de vez seria わけがない."}
 
 
-### 4. (particle_choice) {'pt-BR': "Qual estrutura nega por RACIOCÍNIO LÓGICO ('é absurdo pensar isso'), em contraste com はずがない (expectativa frustrada)?"}
+### 4. (particle_choice) {'pt-BR': "Qual estrutura nega por RACIOCÍNIO LÓGICO ('é absurdo pensar isso'), em contraste com はずがない (negação apoiada numa razão concreta: 'não tem como ser')?"}
 - **Resposta:** `{"choices": ["わけがない", "わけではない", "ないわけではない", "はずだ"], "correct": "わけがない"}`
-- {'pt-BR': "わけがない = negação total por lógica ('é impossível, é absurdo'). はずがない nega uma expectativa ('não era para ser assim'). わけではない relativiza, e ないわけではない é dupla negação suave."}
+- {'pt-BR': "わけがない = negação total por lógica ('é impossível, é absurdo'). はずがない também nega a possibilidade ('não tem como ser'), mas com base numa expectativa/razão e em tom menos enfático que わけがない. わけではない relativiza, e ないわけではない é dupla negação suave."}
 
 
 ### 5. (matching) {'pt-BR': 'Ligue cada palavra de escritório/finanças à sua tradução.'}

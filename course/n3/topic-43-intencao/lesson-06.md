@@ -81,7 +81,7 @@ Não confunda ところが com ところで. ところが introduz um contraste 
 - {'pt-BR': "解ける é o intransitivo ('ser resolvido'): radical 解け + た. 解いた seria 'eu resolvi'."}
 
 
-### 4. (particle_choice) {'pt-BR': "Escolha o conector: 'A propósito, faz tempo, não?' ＿＿、年月が経つのは早いね。"}
+### 4. (particle_choice) {'pt-BR': "Escolha o conector: 'A propósito, o tempo passa rápido, né?' ＿＿、年月が経つのは早いね。"}
 - **Resposta:** `{"choices": ["ところで", "ところが", "どこか"], "correct": "ところで"}`
 - {'pt-BR': "ところで muda de assunto ('a propósito'). ところが marcaria contraste surpreso."}
 

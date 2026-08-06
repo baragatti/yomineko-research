@@ -41,7 +41,7 @@ As duas reclamações puxam para o mesmo lado, que é exatamente o que それに
 Não use それに para contrastar. Ele NÃO é "mas". "É caro, mas vou comprar" pede um conector adversativo, não それに. Reserve o それに para quando a segunda informação anda no mesmo sentido da primeira.
 
 #### Vocabulário para somar ideias
-Estas palavras combinam bem com conectores aditivos quando você descreve gostos, pessoas ou rotinas. Comece pelos substantivos do dia a dia:
+Estas palavras combinam bem com conectores aditivos quando você descreve gostos, pessoas ou rotinas. Comece por estas palavras do dia a dia:
 - 趣味: hobby, passatempo
 - 楽しみ: diversão, prazer
 - 関係: relação, conexão

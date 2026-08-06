@@ -19,14 +19,14 @@ Boa parte das palavras desta lição compartilha o som inicial しん, o que aju
 #### Confiança, pessoas e relações
 Um conjunto de palavras girando em torno de confiar e de gente.
 - 信頼 (しんらい) - confiança, fé (em alguém). É a confiança profunda, de longo prazo.
-- 信用 (しんよう) - confiança, crédito, reputação. Mais ligada a crédito e fiabilidade prática.
+- 信用 (しんよう) - confiança, crédito, reputação. Mais ligada a crédito e confiabilidade prática. (e, na nota: 'crédito, confiabilidade')
 - 親友 (しんゆう) - amigo íntimo, melhor amigo.
 - 人物 (じんぶつ) - pessoa, personagem, figura (de destaque).
 - 人類 (じんるい) - humanidade, gênero humano.
 彼は親友だから心から信頼している (Ele é meu amigo íntimo, então confio nele de coração.)
 
 > **[l1-pitfall]**
-信頼 e 信用 traduzem-se ambos por 'confiança', mas não são intercambiáveis. 信頼 é a confiança emocional que se deposita numa pessoa; 信用 é mais 'crédito, fiabilidade' (um banco avalia o seu 信用, não o seu 信頼). Na dúvida sobre relações pessoais, prefira 信頼.
+信頼 e 信用 traduzem-se ambos por 'confiança', mas não são intercambiáveis. 信頼 é a confiança emocional que se deposita numa pessoa; 信用 é mais 'crédito, confiabilidade' (um banco avalia o seu 信用, não o seu 信頼). Na dúvida sobre relações pessoais, prefira 信頼.
 
 #### Corpo, mente e atitude
 Aqui moram alguns homófonos perigosos: しんちょう aparece duas vezes com sentidos diferentes.

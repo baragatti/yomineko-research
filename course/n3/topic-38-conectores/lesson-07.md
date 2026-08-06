@@ -1,4 +1,4 @@
-# Conectores e organização do discurso
+# Retitle to the actual content, e.g. 'Pessoas, crime e medida: vocabulário da linha は', and update the matching <heading level="2"> at the top of body, which repeats the old title.
 
 > Lição `les:n3-conectores-07` · tópico `top:n3-conectores` · **needs_review** (Layer C, aguarda professor).
 

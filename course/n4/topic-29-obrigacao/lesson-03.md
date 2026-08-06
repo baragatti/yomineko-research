@@ -55,7 +55,7 @@ Verbos e adjetivos úteis para montar suas próprias obrigações. Leia tudo em 
 親(おや / しん): pai/mãe, parente, intimidade. Imagine ficar "de pé" (立) ao lado de uma "árvore" (木) "vendo" (見) seu filho de longe: é o que um pai protetor faz. Aparece em 親 (おや, os pais).
 族(ぞく): tribo, família. Pense numa "bandeira" (方) sob a qual o clã se reúne com suas "flechas" (矢): a família como um grupo unido. Aparece em 家族 (かぞく, família).
 医(い): médico, medicina. Uma "flecha" (矢) guardada dentro de uma "caixa" (匚): o médico que tira o que machuca de dentro do corpo. Aparece em 医者 (いしゃ, médico).
-去(きょ / さる): partir, ir embora, o passado. A "terra" (土) embaixo de uma marca: alguém que pisou o chão e foi embora. Aparece em 去年 (きょねん, ano passado).
+去(きょ / さる): partir, ir embora, o passado. A "terra" (土) em cima de uma marca (厶): alguém que pisou o chão e foi embora. Aparece em 去年 (きょねん, ano passado).
 
 #### Resumo
 - Forma negativa sem o い + ければ + ならない／いけない = "tenho que fazer".

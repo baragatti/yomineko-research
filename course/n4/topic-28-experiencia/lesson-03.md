@@ -50,7 +50,7 @@ Estas são pessoas que costumam aparecer nas suas histórias:
 - 男性: homem
 - 女性: mulher
 - 彼ら: eles/elas
-- 部長: chefe de seção
+- 部長: chefe de departamento, gerente
 E estas palavras dão o tom ou o tema à experiência:
 - ちゃん: sufixo afetuoso (como em Ana-chan)
 - あんな: "aquele tipo de"

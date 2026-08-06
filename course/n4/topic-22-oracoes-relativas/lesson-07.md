@@ -59,7 +59,7 @@ Repare como os dois recursos descrevem por ângulos diferentes:ように compara
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual forma de よう vem ANTES de um substantivo, como em 夢＿話 ('uma história de sonho')?"}
+### 1. (recognition) {'pt-BR': "Qual forma de よう vem ANTES de um substantivo, como em 夢の＿話 ('uma história de sonho')?"}
 - **Resposta:** `{"choices": ["ような", "ように", "ようだ"], "correct": "ような"}`
 - {'pt-BR': 'Antes de substantivo usa-se ような, porque ele funciona como adjetivo (descreve a coisa). Antes de verbo seria ように (advérbio).'}
 
@@ -74,7 +74,7 @@ Repare como os dois recursos descrevem por ângulos diferentes:ように compara
 - {'pt-BR': "ように depois de um verbo na forma de dicionário (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. Nunca se usa a forma -ます antes dele."}
 - frases: `sent:tatoeba-78536`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Tem banheiro em cada andar.' com as pecas: [あります] [トイレ] [各階] [が] [に]"}
+### 4. (sentence_build) {'pt-BR': "Monte 'Tem banheiro em cada andar.' com as peças: [あります] [トイレ] [各階] [が] [に]"}
 - **Resposta:** `{"order": ["各階", "に", "トイレ", "が", "あります"], "text": "各階にトイレがあります。"}`
 - {'pt-BR': "各 cola direto em 階 (andar) formando 各階 ('cada andar'), sem partícula entre eles. Depois に marca o lugar, トイレが o sujeito e あります o verbo de existência."}
 - frases: `sent:gen-71eeebb22ba7`

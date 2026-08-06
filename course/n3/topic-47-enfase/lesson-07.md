@@ -4,7 +4,7 @@
 
 **Objetivos:**
 - Reconhecer e usar substantivos do cotidiano como 祭り, 真似, 豆 e 丸.
-- Empregar advérbios de intensidade total como 全く, 益々, 真っ赤 e 丸で.
+- Empregar palavras de intensidade total: os advérbios 全く, 益々 e 丸で e o adjetivo な 真っ赤.
 - Diferenciar verbos parecidos como 守る, 招く, 学ぶ e 回す.
 
 **Introduz:** gramática [—] · vocabulário [ママ, 万一, 丸, 丸で, 全く, 回す, 回り, 学ぶ, 守る, 招く, 松, 満足, 益々, 真っ赤, 真似, 祭り, 豆, 間違い] · kanji [—] · kana [—]

@@ -55,7 +55,7 @@ Repare na construção:悪い("ruim") vira 悪く, entra o は, e fecha com な�
 O は entra no meio, entre o 〜く e o ない. Veja o molde, com as peças separadas: 高くはない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
 
 > **[example]**
-Juntando tudo num miniretrato de mudança:最近ずっと勉強して、日本語はだいたい分かるようになった とうとうあきらめなかった= "Estudei o tempo todo ultimamente e passei a entender japonês mais ou menos. No fim, não desisti".
+Juntando tudo num minirretrato de mudança:最近ずっと勉強して、日本語はだいたい分かるようになった とうとうあきらめなかった= "Estudei o tempo todo ultimamente e passei a entender japonês mais ou menos. No fim, não desisti".
 
 #### Hora de praticar
 
@@ -81,7 +81,7 @@ Juntando tudo num miniretrato de mudança:最近ずっと勉強して、日本�
 - {'pt-BR': "だいたい significa 'mais ou menos / aproximadamente'. Você o usa quando não quer dar um número cravado, como na hora estimada."}
 - frases: `sent:tatoeba-203977`
 
-### 3. (particle_choice) {'pt-BR': "Para suavizar a negação 'não é tão ruim assim' (そう悪＿ない), qual partícula entra entre 悪く e ない?"}
+### 3. (particle_choice) {'pt-BR': "Para suavizar a negação 'não é tão ruim assim' (そう悪く＿ない), qual partícula entra entre 悪く e ない?"}
 - **Resposta:** `{"choices": ["は", "が", "を"], "correct": "は"}`
 - {'pt-BR': "A negação branda 〜くはない insere o は de contraste entre a forma adverbial 〜く e ない: 悪く + は + ない. Fica 'ruim, propriamente, não é'."}
 - frases: `sent:tatoeba-3506554`

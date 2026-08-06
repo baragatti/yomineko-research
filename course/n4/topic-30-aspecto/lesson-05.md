@@ -28,9 +28,9 @@ Quase sempre vem um advérbio de "timing" junto:ちょうど("bem na hora", "jus
 #### Prestes a fazer: 〜るところだ
 Com o verbo na forma do dicionário,gp-72 diz que a ação está a um passo de acontecer: você ainda NÃO começou, está no ponto de começar. Em português é o nosso "estar prestes a" ou "estar na hora de".
 Molde: [verbo na forma do dicionário] ところだ
-> 🗣 ちょうど出かけるところだ。 — Estou bem na hora de sair (já vou).
+> 🗣 ちょうど出かけるところだ。 — Estou de saída agora mesmo.
 Aqui ちょうど("bem na hora") com 出かける(sair) na forma do dicionário e ところだ: ninguém saiu ainda, a pessoa está com a mão na maçaneta. Compare com a versão gerada, que diz o mesmo com 今から("a partir de agora"):
-> 🗣 今から出かけるところだ — Estou bem na hora de sair agora mesmo.
+> 🗣 今から出かけるところだ — Estou de saída agora mesmo.
 
 > **[l1-pitfall]**
 Não confunda com o futuro simples.出かけます é só "vou sair" (qualquer hora).出かけるところです é "estou bem na hora de sair", apontando para este instante. É a diferença entre dizer que vai viajar e estar já no 駐車場 ligando o carro.
@@ -74,7 +74,7 @@ Encadeando as três fases num dia de viagem:特急に乗るところです(estou
 #### Hora de praticar
 
 #### Leitura
-> 📖 上着を今着ているところだ。ちょうど出かけるところだ。今ここに来たところだ。今始めたところです。 — Ele está vestindo o casaco agora mesmo. Estou bem na hora de sair (já vou). Acabei de chegar aqui agora. Acabei de começar agora.
+> 📖 上着を今着ているところだ。ちょうど出かけるところだ。今ここに来たところだ。今始めたところです。 — Ele está vestindo o casaco agora mesmo. "Já estou de saída." (or "Estou saindo agora mesmo."). 'Estou justamente de saída' is stiff, and the first sentence of this same reading already uses 'agora mesmo'. Acabei de chegar aqui agora. Acabei de começar agora.
 - Entendo que ところ marca o estágio da ação no tempo (prestes a, no meio, acabou de).
 - Uso forma do dicionário + ところだ para "estar prestes a fazer".
 - Uso 〜ているところ para "estar bem no meio de fazer".

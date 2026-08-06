@@ -43,7 +43,7 @@ Os kanji de hoje carregam ideias de existir, faltar e remover:
 - 存 existir, supor: 存在, 'existência'.
 - 除 excluir, remover: 掃除, 'limpeza'.
 - 完 perfeito, completo: 完成, 'conclusão'.
-- 単 simples, mero (revisão): 単純, 'simplório'.
+- 単 simples, mero (revisão): 単純, 'simplicidade, simples'.
 - 危 perigo, receio: 危険, 'perigo'.
 - 苦 sofrimento, dificuldade: 苦労, 'trabalho árduo'.
 - 因 causa, fator: 原因, 'causa'.
@@ -93,7 +93,7 @@ Resolva os exercícios e leia a explicação de cada resposta.
 
 ### 2. (recognition) {'pt-BR': "Qual frase tem tom de CRÍTICA ao excesso ('vive só fazendo isso')?"}
 - **Resposta:** `{"choices": ["弟はゲームばかりしている", "弟はゲームしかしない", "弟はゲームだけしかしない", "弟はゲームをするしかない"], "correct": "弟はゲームばかりしている"}`
-- {'pt-BR': "ばかり (com a forma て do verbo: している) sugere repetição incômoda e reprovação: 'vive só jogando'. As outras enfatizam escassez ou falta de opção, não excesso."}
+- {'pt-BR': "ばかり ligado direto ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação: 'vive só jogando'. As outras enfatizam escassez ou falta de opção, não excesso."}
 
 
 ### 3. (cloze) {'pt-BR': 'Complete pondo o verbo na NEGATIVA: 一時間だけしか勉強___。(Só consegui estudar uma horinha.)'}

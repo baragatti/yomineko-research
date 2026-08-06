@@ -18,7 +18,7 @@ Para dizer "este livro", "essa bolsa", "aquela escola", o japonês usa três pal
 
 #### A regra da distância
 - この = este/esta: a coisa está perto de quem fala (perto de mim).
-- その = esse/essa: a coisa está perto de quem ouve (perto de você), ou foi acabada de mencionar.
+- その = esse/essa: a coisa está perto de quem ouve (perto de você), ou acabou de ser mencionada.
 - あの = aquele/aquela: a coisa está longe dos dois, ou é algo que os dois conhecem em comum.
 
 > **[l1-advantage]**

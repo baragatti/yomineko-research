@@ -17,14 +17,14 @@
 Chegamos à linha do N, a "Família do NA". São cinco sílabas que juntam a consoante n às cinco vogais que você já conhece:な= na,に= ni,ぬ= nu,ね= ne,の= no.
 
 > **[l1-advantage]**
-Boa notícia para quem fala português: o som n japonês é praticamente igual ao nosso.な soa como o início de "nada",に como "níquel",ぬ como "nu",ね como "neve" e の como "nó". Nenhum som novo para aprender aqui.
+Boa notícia para quem fala português: o som n japonês é praticamente igual ao nosso.な soa como o início de "nada",に como "níquel",ぬ como "nu",ね como "neve" e の como o "no" de "nosso" (com ô fechado). Nenhum som novo para aprender aqui.
 
 #### As cinco sílabas
 - な(na): como o na de "nada". Para a forma, imagine uma pessoa de joelhos rezando ("na-mastê").
 - に(ni): como o ni de "níquel". Uma barra à esquerda e duas marquinhas, como o número "2" (ni também é "dois" em japonês).
-- ぬ(nu): como o nu de "nuvem". Tem um lacinho no final; cuidado para não confundir com め(me), que não terá esse laço.
+- ぬ(nu): como o nu de "nuvem". Tem um lacinho no final; cuidado para não confundir com め(me), que não tem esse laço.
 - ね(ne): como o ne de "neve". Também tem um lacinho, parecido com um gato enroscando o rabo (neko = gato).
-- の(no): como o no de "nó". É uma espiral única, um dos kana mais fáceis de reconhecer e escrever.
+- の(no): como o no de "novo" (com ô fechado, nunca o "ó" de "nó"). É uma espiral única, um dos kana mais fáceis de reconhecer e escrever.
 
 > **[l1-pitfall]**
 Em português, o n costuma nasalizar a vogal anterior (em "fim", "bom" o n"some" no nariz). No japonês isso não acontece dentro destas sílabas: pronuncie o n limpo e em seguida a vogal cheia.の é "no" (com o fechado, o "ô" de "avô", nunca o "ó" de "avó"), e jamais um "nõ" nasalado.
@@ -49,7 +49,7 @@ Junte com o que você já aprendeu e leia em voz alta:なか(naka, "dentro"),ね
 ## Exercícios
 ### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'no'?"}
 - **Resposta:** `{"choices": ["の", "ぬ", "ね"], "correct": "の"}`
-- {'pt-BR': "の = no (uma espiral única, como o 'no' de 'nó')."}
+- {'pt-BR': "の = no (uma espiral única; o 'no' de 'novo', com ô fechado)."}
 
 
 ### 2. (recognition) {'pt-BR': 'Que som tem に?'}

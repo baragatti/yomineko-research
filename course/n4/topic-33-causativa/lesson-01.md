@@ -81,12 +81,12 @@ Os exemplos de obrigação usam muito a família. Aproveite para fixar os quatro
 
 ### 3. (cloze) {'pt-BR': 'Complete o causativo de 食べる (comer). 母は弟に野菜を食べ＿。 (A mãe fez o irmão mais novo comer verduras.)'}
 - **Resposta:** `{"text": "させた", "full": "母は弟に野菜を食べさせた"}`
-- {'pt-BR': "食べる é grupo 2: tira-se o る e entra させる → 食べさせる; no passado, 食べさせた. A pessoa obrigada (弟) vem marcada por に, o que aponta para o sentido de obrigação ('fez comer')."}
+- {'pt-BR': '食べる é grupo 2: tira-se o る e entra させる → 食べさせる; no passado, 食べさせた. Como 食べる já tem seu objeto com を (野菜), a pessoa obrigada só pode vir com に; quem indica a obrigação aqui é o contexto, não a partícula.'}
 
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'A mãe deixou a criança brincar livremente.' com as peças: [遊ばせた] [子供を] [母は] [自由に]"}
 - **Resposta:** `{"order": ["母は", "子供を", "自由に", "遊ばせた"], "text": "母は子供を自由に遊ばせた。"}`
-- {'pt-BR': "Ordem japonesa: sujeito (母は) → quem foi autorizado (子供を) → como (自由に, livremente) → verbo causativo no fim (遊ばせた). Aqui を + verbo de ação livre + 自由に empurram o sentido para 'deixar/permitir', não 'obrigar'."}
+- {'pt-BR': "Ordem japonesa: sujeito (母は) → quem foi autorizado (子供を) → como (自由に, livremente) → verbo causativo no fim (遊ばせた). Aqui é o 自由に (livremente) que empurra o sentido para 'deixar/permitir'; a partícula を sozinha não garante a leitura de permissão."}
 
 
 ### 5. (production) {'pt-BR': "Diga em japonês 'Deixe-me pensar.' usando o causativo de 考える (pensar) na forma 〜てください (deixe-me...)."}

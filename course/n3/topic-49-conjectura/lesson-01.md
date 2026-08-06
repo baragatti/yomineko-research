@@ -79,7 +79,7 @@ O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o 
 - {'pt-BR': 'Com substantivo, o だ cai antes de かなあ no uso natural: 学生かなあ, e não 学生だかなあ. A mesma regra vale para adjetivo な (静かかなあ).'}
 
 
-### 3. (particle_choice) {'pt-BR': "Para anunciar e fechar uma suposição ('talvez chova'), qual par completa もし＿＿＿雨が降る＿＿＿?"}
+### 3. (particle_choice) {'pt-BR': "Para anunciar e fechar uma suposição ('talvez chova'), qual par completa ＿＿＿＿＿雨が降る＿＿＿＿＿?"}
 - **Resposta:** `{"choices": ["もし...だろう", "もしかすると...かもしれない", "もしかすると...にちがいない", "もしも...はずだ"], "correct": "もしかすると...かもしれない"}`
 - {'pt-BR': 'O sanduíche é もしかすると no começo (avisa que vem suposição) e かもしれない no fim (reforça a dúvida): もしかすると雨が降るかもしれない. As outras combinações mudam o sentido ou não fecham o par.'}
 
@@ -89,7 +89,7 @@ O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o 
 - {'pt-BR': '事実 (じじつ) = fato; 事情 (じじょう) = circunstâncias/motivos; 失望 (しつぼう) = decepção; 幸せ (しあわせ) = felicidade. Note que 事 (assunto/coisa) aparece em 事実 e 事情.'}
 
 
-### 5. (production) {'pt-BR': "Diga 'tomara que eu seja feliz' como um desejo pensado em voz alta, usando 幸せ (felicidade) + になる + ～かなあ."}
+### 5. (production) {'pt-BR': "Diga 'tomara que eu seja feliz' como um desejo pensado em voz alta, usando 幸せ (felicidade) + になる + ～といい + ～かなあ."}
 - **Resposta:** `{"text": "幸せになるといいかなあ", "accept": ["幸せになるといいかなあ", "しあわせになるといいかなあ", "幸せになれるといいかなあ", "幸せになりたいなあ"]}`
 - {'pt-BR': "～といいかなあ é o jeito natural de soltar um desejo brando: 'tomara que dê certo de eu ficar feliz'. O かなあ alongado dá o tom de quem fala consigo mesmo. Mantenha o registro informal."}
 

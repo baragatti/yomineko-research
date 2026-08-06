@@ -19,8 +19,8 @@ Lembre-se: o katakana tem os mesmos sons do hiragana. Aqui são apenas formas no
 #### Os cinco kana
 - ナ(na): como o na de "nada". Parece um sinal de mais com um rabinho; lembra o hiragana な simplificado.
 - ニ(ni): como o ni de "ninho". São só dois risquinhos deitados, como um sinal de igual (=).
-- ヌ(nu): como o nu de "nu". Imagine um a nzol com um corte por dentro.
-- ネ(ne): como o ne de "neve". Tem uma perninha que termina num lacinho, como um ne nê balançando.
+- ヌ(nu): como o nu de "nu". Imagine um anzol com um corte por dentro.
+- ネ(ne): como o ne de "neve". Tem uma perninha que termina num lacinho, como um nenê balançando.
 - ノ(no): como o no de "nó". É um traço só, uma diagonal descendo da direita para a esquerda.
 
 > **[l1-pitfall]**

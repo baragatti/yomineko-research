@@ -47,7 +47,7 @@ Aproveite para fixar palavras que aparecem o tempo todo quando falamos de obriga
 - 一月(ひとつき) = um mês;一人(ひとり) = uma pessoa.
 
 > **[culture]**
-はたち (20 anos) tem peso: no Japão é a idade tradicional da maioridade. Por isso ganhou leitura própria, em vez do esperado にじゅっさい.
+はたち (20 anos) tem peso: はたち (20 anos) tem peso: no Japão é a idade tradicional da maioridade. A leitura, porém, não vem daí: はたち é a contagem japonesa antiga (はた = vinte), a mesma raiz de はつか (dia 20)
 
 #### O hiragana como sistema
 Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana é o sistema que carrega justamente as terminações gramaticais como なくちゃ e なきゃ. Sem dominar o hiragana, essas formas faladas passam despercebidas.

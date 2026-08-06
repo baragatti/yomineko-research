@@ -4,7 +4,7 @@
 
 **Objetivos:**
 - Reconhecer e usar palavras N3 da família ひ ligadas a comparação, corpo e ação
-- Distinguir homófonos como 額 (ひたい, testa) e o som ひく de 轢く (atropelar)
+- Distinguir palavras parecidas: 額 (ひたい, testa; がく, quantia) e os verbos que soam ひく, como 轢く (atropelar). Aplicar a mesma correção ao item idêntico do <checklist> no body e ao 'com atenção aos homófonos' da description, para a lição não voltar a usar o termo errado.
 - Empregar corretamente palavras do cotidiano como 日付, ぴったり e 一言
 
 **Introduz:** gramática [—] · vocabulário [額, ぴったり, ビデオ, ピクニック, 一言, 人ごみ, 否定, 引っ張る, 必死, 悲劇, 日付, 比較, 等しい, 美人, 膝, 轢く, 非常, 額, 飛行] · kanji [—] · kana [—]
@@ -26,7 +26,7 @@ Comecemos por um conjunto ligado a julgar e avaliar.
 彼は一言も言わずに部屋を出ていった (Ele saiu do quarto sem dizer uma única palavra.)
 
 > **[l1-pitfall]**
-Cuidado com os homófonos em ひ. 否定 (ひてい, negação) não tem nada a ver com 比較 (ひかく, comparação), embora os dois comecem igual. E o verbo 轢く (ひく, atropelar) soa idêntico a outros verbos do dia a dia; é o contexto, e não o som, que diz qual é qual. Na dúvida, ancore-se no kanji e no sentido da frase, nunca só na leitura.
+Cuidado com as palavras parecidas em ひ. 否定 (ひてい, negação) não tem nada a ver com 比較 (ひかく, comparação), embora as duas comecem igual. E o verbo 轢く (ひく, atropelar) soa idêntico a outros verbos do dia a dia; é o contexto, e não o som, que diz qual é qual. Na dúvida, ancore-se no kanji e no sentido da frase, nunca só na leitura.
 
 #### O corpo e as pessoas
 Um grupo de substantivos que descrevem partes do corpo e tipos de pessoa.

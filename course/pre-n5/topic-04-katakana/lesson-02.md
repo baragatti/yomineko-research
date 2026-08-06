@@ -37,7 +37,7 @@ No ク (ku), cuidado com os lábios: o "u" japonês NÃO empurra os lábios pra 
 No コ, mantenha a vogal cheia: é ko, não ku. O português tende a fechar o "o" final em "u", mas o japonês não faz isso.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O コ é o mais fácil: só dois traços, o de cima indo para a direita e o da direita descendo. Repita cada kana em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O コ é o mais fácil: só dois traços: o primeiro vai para a direita e já dobra descendo; o segundo fecha embaixo, da esquerda para a direita. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
 Usando as vogais e a Família do KA, leia estas combinações em voz alta:カキ(kaki, caqui),エコ(eko, eco),イカ(ika, lula) e ケア(kea, cuidado, do inglês "care").

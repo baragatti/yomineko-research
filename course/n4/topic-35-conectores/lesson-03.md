@@ -72,7 +72,7 @@ Repare que 神社 (じんじゃ) é o santuário do xintoísmo, diferente do tem
 - とか～とか: enumeração solta e coloquial, "tipo X e Y".
 
 #### Leitura
-> 📖 一日または二日ください。お茶などいかがでしょう。むずかしいことばがあります たとえばこの漢字スポーツをします たとえばサッカーやテニス — Me dê um ou dois dias, por favor. Que tal um chá ou algo assim? Tem palavras difíceis, por exemplo este kanji. Eu prático esportes, por exemplo futebol e tênis.
+> 📖 一日または二日ください。お茶などいかがでしょう。むずかしいことばがあります たとえばこの漢字スポーツをします たとえばサッカーやテニス — Me dê um ou dois dias, por favor. Que tal um chá ou algo assim? Tem palavras difíceis, por exemplo este kanji. Eu pratico esportes, por exemplo futebol e tênis.
 - Sei escolher entre alternativas com または.
 - Consigo abrir um exemplo concreto com たとえば depois de uma ideia geral.
 - Uso など no fim de uma lista para dizer "etc., coisas como".
@@ -99,7 +99,7 @@ Repare que 神社 (じんじゃ) é o santuário do xintoísmo, diferente do tem
 
 ### 4. (particle_choice) {'pt-BR': 'Conversando com um amigo sobre o que costuma comprar, você quer um tom bem coloquial: "compro coisas tipo maçã e banana". Qual opção preenche りんご___バナナ___をよく買う?'}
 - **Resposta:** `{"choices": ["とか…とか", "または…または", "など…など", "や…や"], "correct": "とか…とか", "text": "りんごとかバナナとかをよく買う"}`
-- {'pt-BR': 'とか～とか é a enumeração solta e coloquial: cada item recebe とか e fica subentendido que há outros. など caberia, mas soa um pouco mais arrumado; とか é o que se ouve entre amigos.'}
+- {'pt-BR': 'とか～とか é a enumeração solta e coloquial: cada item recebe とか e fica subentendido que há outros. Numa versão como りんごやバナナなど, など caberia (soa mais arrumado), mas repetir など depois de cada item não funciona; とか é o que se ouve entre amigos.'}
 - frases: `sent:gen-bc3eaa8d9f8b`
 
 ### 5. (sentence_build) {'pt-BR': 'Monte a frase "Vou entrar em contato por telefone ou e-mail" (registro neutro): use os blocos abaixo.'}

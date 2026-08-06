@@ -35,7 +35,7 @@ Em português a gente costuma usar "para": "falei para ele vir". O japonês não
 
 #### ～ように祈る: torcer e rezar
 Troque 言う por 祈る ("orar, torcer") e você tem gp-125: expressar um desejo, uma torcida ou uma oração de que algo aconteça, em geral algo fora do seu controle. É a fórmula típica de votos e bênçãos.
-> 🗣 明日晴れるように祈っています — Tô torcendo pra fazer sol amanhã.
+> 🗣 明日晴れるように祈っています — Estou torcendo para fazer sol amanhã.
 Aqui 晴れる é "abrir o tempo / fazer sol" e 祈っています é "estou torcendo". Note como combina perfeitamente com o ように de desejo que vimos no começo: você torce para que um estado se realize. Use para "que você sare logo", "que dê tudo certo na prova".
 
 #### と言ってもいい: afirmar com cautela

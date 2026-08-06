@@ -63,7 +63,7 @@ Tente ler em voz alta, juntando o que você já sabe:ジュース(juusu, "suco")
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual contraído de katakana representa o som 'ja' (como em 'já')?"}
+### 1. (recognition) {'pt-BR': "Qual contraído de katakana representa o som 'ja' (o 'dj' de 'dia')?"}
 - **Resposta:** `{"choices": ["ジャ", "ギャ", "ビャ"], "correct": "ジャ"}`
 - {'pt-BR': "ジャ = ja (ジ + ャ pequeno). O som é o do 'di' de 'dia' (aquele 'dj'), não o 'j' puxado de 'já'."}
 

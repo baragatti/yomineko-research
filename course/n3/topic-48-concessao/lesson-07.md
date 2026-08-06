@@ -44,7 +44,7 @@ No Japão, dar お土産 (おみやげ) ao voltar de uma viagem é quase obrigat
 魅力 (みりょく) é o "charme/atrativo" de uma pessoa ou coisa; não confunda com 魅力的 (みりょくてき), que é o adjetivo "charmoso". E ミス (erro) não tem nada a ver com 妙 (みょう, "estranho"): a primeira vem do inglês, a segunda é palavra japonesa de origem chinesa.
 
 #### Verbos de direção e percepção
-Quatro verbos que mostram para onde algo se volta ou como percebemos algo:
+Quatro verbos que mostram para onde algo se volta ou como percebemos algo (mais o substantivo 向い):
 - 向く (むく) - virar-se para, olhar (para cima, para baixo); é intransitivo.
 - 向ける (むける) - voltar para, apontar, direcionar (algo); é transitivo.
 - 向い (むかい) - em frente, do lado oposto, do outro lado.

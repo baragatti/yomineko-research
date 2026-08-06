@@ -38,7 +38,7 @@ Um grupo variado sobre sensações, tempo e advérbios.
 - 全て (すべて) - tudo, todo, o conjunto inteiro.
 - 世紀 (せいき) - século.
 - 鋭い (するどい) - afiado, pontiagudo; também 'perspicaz' (um olhar afiado).
-朝からずっと頭痛がする (Estou com dor de cabeça desde de manhã, sem parar.)
+朝からずっと頭痛がする (Estou com dor de cabeça desde a manhã, sem parar.)
 
 #### Conectores e o mundo do dinheiro
 Marcadores de discurso e palavras de transação.
@@ -86,7 +86,7 @@ Marcadores de discurso e palavras de transação.
 - {'pt-BR': '税金 (ぜいきん) é imposto. A frase fala em conversar sobre impostos.'}
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Estou com dor de cabeça desde de manhã' usando 頭痛 e ずっと."}
+### 5. (production) {'pt-BR': 'prompt: "Diga em japonês \'Estou com dor de cabeça desde a manhã\' usando 頭痛 e ずっと."'}
 - **Resposta:** `{"text": "朝からずっと頭痛がする", "accept": ["朝からずっと頭痛がする", "あさからずっとずつうがする", "朝からずっと頭痛がします", "朝からずっと頭痛だ"]}`
 - {'pt-BR': '朝から (desde de manhã) + ずっと (sem parar) + 頭痛がする (estar com dor de cabeça).'}
 

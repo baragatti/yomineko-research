@@ -3,7 +3,7 @@
 > Lição `les:n3-conectores-01` · tópico `top:n3-conectores` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
-- Usar その上 para somar um segundo ponto que reforca o primeiro (na mesma direção)
+- Usar その上 para somar um segundo ponto que reforça o primeiro (na mesma direção)
 - Acrescentar mais um item ou tarefa com それと em tom de conversa
 - Distinguir それと (soma, 'e também') de それとも (alternativa, 'ou então')
 
@@ -19,7 +19,7 @@ No N3 você começa a costurar frases em paragrafos de verdade. Esta lição reu
 #### その上: e ainda por cima
 O conector n3-sono-ue liga duas afirmações que puxam para o MESMO lado: dois elogios, duas vantagens, ou dois problemas. Equivale a "além disso", "e ainda por cima", "e mais". A imagem literal e boa: 上 e "em cima", então e como empilhar um segundo ponto por cima do primeiro.
 Exemplo (duas qualidades somadas):
-この店は安い。その上、料理もおいしい = "Este restaurante e barato. E ainda por cima a comida e gostosa."
+この店は安い。その上、料理もおいしい = "Este restaurante é barato. E ainda por cima a comida é gostosa."
 Repare que その上 vem depois de uma frase completa e abre a frase seguinte. Ele não exige nenhuma forma especial do verbo ou adjetivo antes dele.
 
 > **[l1-pitfall]**
@@ -78,7 +78,7 @@ O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "
 - {'pt-BR': 'その上 soma um segundo ponto na MESMA direção (dois elogios). それとも abriria uma escolha; ところで mudaria de assunto; なぜなら daria uma causa.'}
 
 
-### 2. (particle_choice) {'pt-BR': "Você esta perguntando 'Vai tomar cafe ou cha?'. Complete: コーヒーを飲む？___ 紅茶を飲む？"}
+### 2. (particle_choice) {'pt-BR': "Você está perguntando 'Vai tomar café ou chá?'. Complete: コーヒーを飲む？___ 紅茶を飲む？"}
 - **Resposta:** `{"choices": ["それとも", "それと", "その上", "つまり"], "correct": "それとも"}`
 - {'pt-BR': "Como são duas alternativas em perguntas, usa-se それとも ('ou então'). それと seria soma ('e também'), o que não faz sentido aqui."}
 

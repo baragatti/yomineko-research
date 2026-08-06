@@ -56,7 +56,7 @@ Repare em 雰囲気, uma palavra muito comum, e em 震える para sensações f�
 
 #### Leitura
 > 📖 朝ごはんはいつもパンを食べます。「いつ起きるの？」「朝八時だよ」長いスカートが大変流行している。いとこに千円貸してもらったんだ。近くでバスケットが作られている。来週土曜日にバスツアーをしない？ — No café da manhã eu sempre como pão. "Quando você acorda?" "Às oito da manhã." Saias longas estão muito na moda. Peguei mil ienes emprestados com meu primo. Estão fazendo cestos ali perto. Que tal a gente fazer um passeio de ônibus no próximo sábado?
-> 📖 ああ、早く夏休みにならないかな。部屋にはいろいろなものがあった。道が悪いのでスピードを出せない。父は来月のはじめに帰ってきます。どいつもこいつもばかばっかりだ。その犬はかみついたりしませんよ。 — Ah, mal posso esperar para as férias de verão chegarem logo. No quarto havia várias coisas. Como a estrada esta ruim, não da para acelerar. Meu pai volta no começo do mês que vem. Não tem um que preste, é tudo idiota. Esse cachorro não morde nem nada, viu.
+> 📖 ああ、早く夏休みにならないかな。部屋にはいろいろなものがあった。道が悪いのでスピードを出せない。父は来月のはじめに帰ってきます。どいつもこいつもばかばっかりだ。その犬はかみついたりしませんよ。 — Ah, mal posso esperar para as férias de verão chegarem logo. No quarto havia várias coisas. Como a estrada está ruim, não dá para acelerar. Meu pai volta no começo do mês que vem. Não tem um que preste, é tudo idiota. Esse cachorro não morde nem nada, viu.
 - Reconheço e uso palavras de estudo e análise como 分析, 分野 e 文明.
 - Emprego empréstimos do inglês como プラス, プラン e ブレーキ.
 - Descrevo ambiente e estado com 雰囲気, 平和 e 平均.

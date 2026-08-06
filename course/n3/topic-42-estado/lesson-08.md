@@ -14,7 +14,7 @@
 ---
 
 ### Debater, dividir e os modos de cada um
-Fechamos a série com um bloco bem variado: palavras de debate e escrita acadêmica (todas com 論, 'argumentar'), verbos de dividir e separar, e um punhado de atitudes e expressões do dia a dia. Vamos por grupos.
+Fechamos a série com um bloco bem variado: palavras de debate e escrita acadêmica (quase todas com 論, 'argumentar'), verbos de dividir e separar, e um punhado de atitudes e expressões do dia a dia. Vamos por grupos.
 
 #### Debater e escrever
 - 論じる (ろんじる) - discutir, abordar, tratar de (um tema).

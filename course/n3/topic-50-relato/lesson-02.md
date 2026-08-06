@@ -101,7 +101,7 @@ Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar 
 
 ### 2. (recognition) {'pt-BR': "Qual frase significa 'Me pediram para ajudar' (citando o pedido com てくれと)?"}
 - **Resposta:** `{"choices": ["手伝ってくれと頼まれました", "手伝うように頼まれました", "手伝ったということです", "手伝うというと頼みました"], "correct": "手伝ってくれと頼まれました"}`
-- {'pt-BR': "～てくれと cita o pedido direto: 手伝って (forma て) + くれ (imperativo casual) + と (aspas) + 頼まれました ('fui pedido'). A segunda opção (手伝うように頼まれました) também é correta em japonês, mas usa o discurso INDIRETO ように, não a citação てくれと que o enunciado pede."}
+- {'pt-BR': "～てくれと cita o pedido direto: 手伝って (forma て) + くれ (imperativo casual) + と (aspas) + 頼まれました ('me pediram'). A segunda opção (手伝うように頼まれました) também é correta em japonês, mas usa o discurso INDIRETO ように, não a citação てくれと que o enunciado pede."}
 
 
 ### 3. (particle_choice) {'pt-BR': "Escolha o fecho para relatar um boato lido no jornal: 部長は来月退職する___。('Pelo que dizem, o gerente vai se aposentar mês que vem.')"}
@@ -116,6 +116,6 @@ Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar 
 
 ### 5. (production) {'pt-BR': "Diga 'O chefe me pediu para vir mais cedo' citando o pedido com てくれと. (上司 = chefe, 早く来る = vir cedo, 頼まれた = me pediram)"}
 - **Resposta:** `{"text": "上司に早く来てくれと頼まれた", "accept": ["上司に早く来てくれと頼まれた", "じょうしにはやくきてくれとたのまれた", "上司に早く来てくれと頼まれました", "上司に早く来てくれと言われた"]}`
-- {'pt-BR': "早く来る vira 来てくれ (forma て + くれ, imperativo casual) + と (aspas) + 頼まれた ('fui pedido'). O くれ preserva o tom direto do pedido original, mesmo com o verbo final educado. A pessoa que pediu leva に (上司に)."}
+- {'pt-BR': "早く来る vira 来てくれ (forma て + くれ, imperativo casual) + と (aspas) + 頼まれた ('me pediram'). O くれ preserva o tom direto do pedido original, mesmo com o verbo final educado. A pessoa que pediu leva に (上司に)."}
 
 

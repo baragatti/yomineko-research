@@ -46,7 +46,7 @@ No Japão, o 一階 é o nível da rua (o nosso "térreo"), e 二階 é o primei
 Para dizer a idade, anexe 歳 ao número:五歳(cinco anos),十歳(dez anos). As exceções comuns são 一歳,八歳 e 十歳.
 
 > **[culture]**
-"Vinte anos" tem uma leitura própria e tradicional,二十歳, em vez do esperado "nijuussai". É a idade da maioridade no Japão, então essa palavra aparece muito.
+"Vinte anos" tem uma leitura própria e tradicional,二十歳, em vez do esperado "nijuussai". É a idade em que se pode beber e fumar no Japão (a maioridade legal passou a ser 18 anos em 2022), então essa palavra aparece muito.
 
 #### 大 e 中: grande e médio
 Ao contar e descrever coisas, dois tamanhos aparecem o tempo todo no comércio:大(grande) e 中(médio). Num cardápio ou numa loja você vê 大 para a porção grande e 中 para a média.

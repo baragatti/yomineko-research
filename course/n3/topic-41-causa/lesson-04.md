@@ -66,7 +66,7 @@ Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pod
 
 ### 2. (particle_choice) {'pt-BR': 'Complete a justificativa manhosa: だって知らなかった＿＿＿＿。 (É que eu não sabia, oras!)'}
 - **Resposta:** `{"choices": ["んだもん", "によって", "その結果"], "correct": "んだもん"}`
-- {'pt-BR': "～んDだもん dá uma justificativa emotiva e infantilizada; combina com o だって inicial ('é que...'). によって e その結果 são conectores formais."}
+- {'pt-BR': "～んだもん dá uma justificativa emotiva e infantilizada; combina com o だって inicial ('é que...'). によって e その結果 são conectores formais."}
 
 
 ### 3. (cloze) {'pt-BR': 'Complete com a forma com ん: もう帰りたい。疲れた＿＿＿＿＿。 (Já quero ir embora. É que estou cansado, sabe.)'}

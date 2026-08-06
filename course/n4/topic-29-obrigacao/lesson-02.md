@@ -79,7 +79,7 @@ Palavras que combinam direto com este padrão, porque planejar e preparar é jus
 
 ## Exercícios
 ### 1. (recognition) {'pt-BR': 'Em qual forma fica o verbo logo ANTES de 必要がある? (ex.: 勉強する必要がある)'}
-- **Resposta:** `{"choices": ["forma de dicionário (勉強する)", "forma です (勉強します)", "forma negativa (勉強しない)"], "correct": "forma de dicionário (勉強する)"}`
+- **Resposta:** `{"choices": ["forma de dicionário (勉強する)", "forma ます (勉強します)", "forma negativa (勉強しない)"], "correct": "forma de dicionário (勉強する)"}`
 - {'pt-BR': "O verbo entra inteiro, na forma de dicionário, e 必要がある cola logo depois: 勉強する必要がある = 'preciso estudar'. Nada de mudar o verbo."}
 
 

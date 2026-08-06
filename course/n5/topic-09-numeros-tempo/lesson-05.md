@@ -35,7 +35,7 @@ Para dizer "e tantos minutos passados", o japonês usa 過ぎ, que significa "pa
 - じゅうじすぎ = "passou das dez".
 
 > **[l1-advantage]**
-É a mesma ideia do nosso "passei das três", mas numa palavra só, sempre colada no fim. Onde o português precisa de um verbo ("já passou"), o japonês resolve com o sufixo 過ぎ. O molde é simples:
+É a mesma ideia do nosso "passou das três", mas numa palavra só, sempre colada no fim. Onde o português precisa de um verbo ("já passou"), o japonês resolve com o sufixo 過ぎ. O molde é simples:
 Molde: [hora] すぎ
 
 #### Datas do mês: o dia 9 e o kanji 日
@@ -98,6 +98,6 @@ Na fala rápida, じゃあ encurta para じゃ. É super comum na despedida: じ
 
 ### 5. (production) {'pt-BR': "Diga em japonês 'uma semana' usando o contador de semana (número 'um' + 週間)."}
 - **Resposta:** `{"text": "いっしゅうかん", "accept": ["いっしゅうかん", "一週間", "１週間"]}`
-- {'pt-BR': "週間 (しゅうかん) é o contador de semanas. 'Um' + 週間 = いっしゅうかん ('uma semana'), com o い de いち virando っ antes de し."}
+- {'pt-BR': "週間 (しゅうかん) é o contador de semanas. 'Um' + 週間 = いっしゅうかん ('uma semana'), com o ち de いち virando っ antes de し."}
 
 

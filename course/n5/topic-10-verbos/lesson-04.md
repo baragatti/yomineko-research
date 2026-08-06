@@ -100,7 +100,7 @@ Mnemônico de forma: 時 junta 日 (sol/dia) à esquerda com 寺 (templo) à dir
 
 ### 3. (particle_choice) {'pt-BR': 'No sentido de CUSTAR, complete: このかばんは1万円＿する。 (Esta bolsa custa 10 mil ienes.)'}
 - **Resposta:** `{"choices": ["（nada）", "を", "が"], "correct": "（nada）"}`
-- {'pt-BR': "No uso 'custar', する é intransitiva e NÃO leva を: diz-se 1万円する, nunca 1万円をする. Por isso a lacuna fica vazia."}
+- {'pt-BR': "No uso 'custar', する é intransitivo e NÃO leva を: diz-se 1万円する, nunca 1万円をする. Por isso a lacuna fica vazia."}
 
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'Tiro uma cópia.' (educado) com as peças: [します] [を] [コピー]"}

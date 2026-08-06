@@ -3,7 +3,7 @@
 > Lição `les:n3-conectores-02` · tópico `top:n3-conectores` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
-- Marcar contraste entre duas ideias com だけど / けど ('mas', 'so que')
+- Marcar contraste entre duas ideias com だけど / けど ('mas', 'só que')
 - Reformular ou resumir o que foi dito com つまり ('ou seja')
 - Trocar de assunto educadamente com ところで ('a propósito')
 

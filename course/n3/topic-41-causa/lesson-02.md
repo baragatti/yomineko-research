@@ -34,7 +34,7 @@ O n3-sono-tame-ni também conecta duas frases, mas marca finalidade: a primeira 
 健康に暮らしたい。そのためにジムに通う significa "quero levar uma vida saudável. Para isso, vou à academia".
 
 > **[l1-pitfall]**
-Armadilha PT: não confunda その結果 com そのために. その結果 apenas constata o que aconteceu (resultado factual); そのために carrega intenção deliberada, algo feito de propósito para chegar a um objetivo. Em português "para isso" pode soar como simples consequência, mas ために sempre traz a ideia de finalidade.
+Armadilha PT: não confunda その結果 com そのために. その結果 apenas constata o que aconteceu (resultado factual); そのために carrega intenção deliberada, algo feito de propósito para chegar a um objetivo. Em português "para isso" pode soar como simples consequência, mas そのために carrega finalidade. (Atenção: ため(に) não é só finalidade.
 
 #### Vocabulário desta lição
 - 及ぼす: exercer (influência), causar, provocar. Muito usado com causa e efeito.

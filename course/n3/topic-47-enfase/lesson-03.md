@@ -112,7 +112,7 @@ O kanji 妻 tem o radical da mulher (女) embaixo e significa "esposa". O kanji 
 
 ### 5. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em pt-BR.'}
 - **Resposta:** `{"pairs": [["国境", "fronteira entre países"], ["断る", "recusar, declinar"], ["諺", "provérbio, ditado"], ["骨折", "fratura óssea"], ["異なる", "diferir, ser diferente"]]}`
-- {'pt-BR': '国境 (こっきょう) = fronteira; 断る (ことわる) = recusar; 諺 (ことわざ) = provérbio; 骨折 (こっせつ) = fratura; 異なる (ことなる) = diferir. Cuidado para não confundir 断る (recusar) com 異なる (diferir): kana e sentido são bem diferentes.'}
+- {'pt-BR': '国境 (こっきょう) = fronteira; 断る (ことわる) = recusar; 諺 (ことわざ) = provérbio; 骨折 (こっせつ) = fratura; 異なる (ことなる) = diferir. Cuidado para não confundir 断る (ことわる, recusar) com 異なる (ことなる, diferir): o kana muda em uma só sílaba (わ/な), mas o sentido é totalmente outro.'}
 
 
 ### 6. (production) {'pt-BR': "Faça uma promessa firme: 'Jamais vou me atrasar.' usando 決して e o verbo 遅刻する (atrasar-se)."}

@@ -23,7 +23,7 @@ Molde: [pessoa] にかわって [ação]
 彼にかわって会議に出席します = Vou à reunião no lugar dele. Antes de um substantivo, usa-se にかわる; em texto formal aparece に代わり.
 
 > **[warning]**
-Existe um に変わって parecido na pronúncia (do verbo 変わる, mudar) que significa transformar-se em, sentido totalmente diferente de em vez de. Repare que a diferença está só no kanji: にかわって (no lugar de) costuma vir em hiragana, enquanto に変わって (transformar-se em) traz o kanji 変. Para troca de algo material (em troca de), prefira と引き換えに.
+Existe um に変わって parecido na pronúncia (do verbo 変わる, mudar) que significa transformar-se em, sentido totalmente diferente de em vez de. Repare que a diferença está só no kanji: にかわって (no lugar de) escreve-se に代わって, com o kanji 代, enquanto に変わって (transformar-se em) traz o kanji 変. Para troca de algo material (em troca de), prefira と引き換えに.
 
 #### に比べて: comparado com / em comparação a
 A expressão n3-ni-kurabete compara duas situações destacando a diferença. O termo que recebe に比べて é o ponto de referência da comparação; o resto da frase diz como o outro elemento difere dele. Registro neutro a levemente formal; na fala bem casual prefira より.
@@ -54,7 +54,7 @@ Comece pelas palavras de palco, ação e realeza. Repare que vários nomes come�
 - 王: rei
 - 王様: rei (forma com tratamento honorífico)
 - 王子: príncipe
-- 大家: senhorio
+- 大家: locador, dono do imóvel
 Em seguida, alguns verbos e substantivos do cotidiano. Muitos também começam com o som お, o que ajuda a guardá-los em bloco.
 - 追う: perseguir
 - 追いつく: alcançar
@@ -85,7 +85,7 @@ Combine substituição e comparação:王にかわって王子が演説をする
 ## Exercícios
 ### 1. (recognition) {'pt-BR': '"No lugar dele, eu vou à reunião." Qual frase expressa a substituição de quem realiza a ação?'}
 - **Resposta:** `{"choices": ["彼にかわって会議に出席します", "彼に変わって会議に出席します", "彼に比べて会議に出席します"], "correct": "彼にかわって会議に出席します"}`
-- {'pt-BR': 'にかわって significa agir no lugar de alguém. に変わって (do verbo 変わる) significaria transformar-se nele, e に比べて é comparação. A pronúncia de にかわって e に変わって é parecida, mas o sentido é oposto.'}
+- {'pt-BR': 'にかわって significa agir no lugar de alguém. に変わって (do verbo 変わる) significaria transformar-se nele, e に比べて é comparação. A pronúncia de にかわって e に変わって é idêntica; só o kanji distingue os dois sentidos, que são bem diferentes.'}
 
 
 ### 2. (particle_choice) {'pt-BR': '"Comparado com o verão, o inverno é frio": 夏＿＿＿＿冬は寒い. Qual completa a comparação, marcando o verão como referência?'}

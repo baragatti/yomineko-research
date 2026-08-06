@@ -1,4 +1,4 @@
-# Do fosso ao microfone: o cotidiano em は a ま
+# Do fosso ao microfone: o cotidiano em ほ e ま
 
 > Lição `les:n3-limites-07` · tópico `top:n3-limites` · **needs_review** (Layer C, aguarda professor).
 
@@ -53,10 +53,10 @@ Cuidado para não trocar 本人 (a pessoa em si) por 本物 (a coisa verdadeira)
 - ぼんやり (ぼんやり) - vagamente, de forma indistinta; também distraído, no mundo da lua.
 - まあ (まあ) - calma, ora vamos; ou um "ah!" de leve surpresa.
 正にその通りです (É exatamente isso mesmo.)
-真逆彼が負けるとは思わなかった (Eu nunca imaginei que ele fosse perder.)
+まさか彼が負けるとは思わなかった (Eu nunca imaginei que ele fosse perder.)
 
 > **[tip]**
-Repare no contraste sonoro entre 正に (まさに, "exatamente") e 真逆 (まさか, "não acredito!"). Só muda uma sílaba (に / か), mas o sentido vira do avesso. Em 真逆 (まさか) a leitura é irregular: não se lê "まぎゃく".
+Repare no contraste sonoro entre 正に (まさに, "exatamente") e 真逆 (まさか, "não acredito!"). Só muda uma sílaba (に / か), mas o sentido vira do avesso. Aqui 真逆 é lido まさか (leitura irregular); esses mesmos kanji também se leem まぎゃく, com o sentido de "exatamente o oposto".
 
 #### Hora de praticar
 

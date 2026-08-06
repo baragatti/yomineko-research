@@ -44,7 +44,7 @@ Aqui ficam as palavras de crescimento e de partida, além de um substantivo deri
 ルールを破った人は罰せられた (A pessoa que quebrou a regra foi punida.)
 
 #### O corpo, e dois pares traiçoeiros
-Por fim, palavras ligadas ao corpo e à natureza, mais dois pares que se leem igual mas significam coisas diferentes. 離す e 放す são ambos はなす; 離れる acompanha 離す. Preste atenção no sentido, não só no som.
+Por fim, palavras ligadas ao corpo e à natureza, mais dois pares traiçoeiros: 離す e 放す, que se leem igual (はなす) mas significam coisas diferentes, e 離す / 離れる (はなれる), do mesmo kanji Preste atenção no sentido, não só no som.
 - 肌 (はだ) - pele.
 - 裸 (はだか) - nudez, nu (sem roupa).
 - 羽 (はね) - pena, pluma, penugem (e também asa).

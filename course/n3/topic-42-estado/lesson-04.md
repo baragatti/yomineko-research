@@ -43,7 +43,7 @@ A n3-toori indica que algo é feito exatamente como foi dito, mostrado ou planej
 > **[tip]**
 O に entra quando funciona como advérbio:とおりに / どおりに. Detalhe sonoro:とおり tem o お longo (to-o-ri, três moras); segure os dois tempos, não fale mais forte.
 
-#### Vocabulário do dia(em kana)
+#### Vocabulário do dia (em kana)
 - 価値(かち) = "valor, mérito".
 - 勝ち(かち) = "vitória, triunfo". Mesma leitura de 価値, sentido bem diferente: ouça o contexto.
 - 活気(かっき) = "energia, vivacidade, animação".
@@ -71,7 +71,7 @@ O kanji 断 significa "cortar, recusar, decisão". À direita o machado (斤): C
 
 #### Exemplos do banco
 > 🗣 くしゃみしっぱなし。 — Não paro de espirrar.
-> 🗣 車がいっぱいでした。 — Estava cheio de carros.
+> 🗣 車がいっぱいでした。 — Havia um monte de carros.
 
 #### Hora de praticar
 

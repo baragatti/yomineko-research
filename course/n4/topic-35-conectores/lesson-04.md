@@ -37,7 +37,7 @@ Quando você quer empilhar duas ou mais razões, repete:gp-121. Cada item ganha 
 > 🗣 時間もないしお金もない — Não tenho tempo e ainda por cima não tenho dinheiro.
 Note o も("também") reforçando cada parte: "não tenho tempo, e ainda por cima não tenho dinheiro". É bem comum juntar も com し para o efeito acumulado.
 > 🗣 この部屋は広いし明るい — Este quarto é espaçoso e ainda por cima claro.
-Esta lista qualidades boas:広い("espaçoso")し...明るい("claro"). Dá para parar em dois itens ou continuar somando mais.
+Esta frase lista qualidades boas:広い("espaçoso")し...明るい("claro"). Dá para parar em dois itens ou continuar somando mais.
 
 > **[l1-pitfall]**
 Não confunda o conectivo し com a palavra 尤も("mas então / embora"), que contrasta em vez de somar.し empilha argumentos no mesmo sentido;もっとも introduz uma ressalva.

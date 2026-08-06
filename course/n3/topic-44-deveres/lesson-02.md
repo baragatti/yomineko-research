@@ -97,7 +97,7 @@ O kanji 落 ('cair, queda') tem o radical de planta (艹) no topo, como folha qu
 
 ### 2. (particle_choice) {'pt-BR': "Complete 'não precisa se preocupar tanto': そんなに心配する＿。"}
 - **Resposta:** `{"choices": ["ことはない", "ことがない", "べきだ", "ことだ"], "correct": "ことはない"}`
-- {'pt-BR': "～ことはない = 'não precisa, não há por que'. ことがない seria 'nunca me preocupei', べきだ seria 'deveria se preocupar' e ことだ seria o conselho 'o ideal é se preocupar'."}
+- {'pt-BR': "～ことはない = 'não precisa, não há por que'. 心配することがない daria 'não costumo me preocupar'; 'nunca me preocupei' exige a forma た: 心配したことがない, べきだ seria 'deveria se preocupar' e ことだ seria o conselho 'o ideal é se preocupar'."}
 
 
 ### 3. (recognition) {'pt-BR': "Qual frase usa o 'deve' de OBRIGAÇÃO MORAL ('a gente deveria cumprir as promessas')?"}

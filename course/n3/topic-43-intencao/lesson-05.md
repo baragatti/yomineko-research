@@ -26,7 +26,7 @@ Esta lição agrupa palavras que começam com せき, せつ e ぜん, muitas de
 この動物は絶滅の危険がある (Este animal corre risco de extinção.)
 
 #### Responsabilidade e julgamento
-Cuidado com o par 責任 e 責める, que partilham o kanji 責.
+Quem foge da 責任 acaba sendo culpado (責められる) por todos.
 - 責任 (せきにん) - responsabilidade, dever.
 - 責める (せめる) - culpar, repreender, criticar.
 - 世間 (せけん) - mundo, sociedade, o público (o que 'os outros' pensam).
@@ -34,7 +34,7 @@ Cuidado com o par 責任 e 責める, que partilham o kanji 責.
 彼を責めずに自分の責任を考えた (Sem culpar ele, refleti sobre a minha responsabilidade.)
 
 > **[l1-pitfall]**
-責任 (せきにん, 'responsabilidade') e 責める (せめる, 'culpar') vêm do mesmo kanji 責, mas têm papéis diferentes na frase: 責任 é um substantivo (você 'assume' ou 'tem' 責任), enquanto 責める é um verbo (você 'culpa' alguém). Quem foge da 責任 acaba sendo 責められた por todos.
+責任 (せきにん, 'responsabilidade') e 責める (せめる, 'culpar') vêm do mesmo kanji 責, mas têm papéis diferentes na frase: 責任 é um substantivo (você 'assume' ou 'tem' 責任), enquanto 責める é um verbo (você 'culpa' alguém). Quem foge da 責任 acaba sendo culpado (責められる) por todos.
 
 #### Atitude, planejamento e ênfase
 - 積極的 (せっきょくてき) - proativo, assertivo, ativo.

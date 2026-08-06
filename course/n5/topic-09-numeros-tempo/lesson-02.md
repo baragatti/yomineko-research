@@ -23,7 +23,7 @@ Esses números têm leitura própria (vêm do japonês antigo) e quase todos ter
 - 9 九つ (ここのつ), e 10 とお (este foge da regra: sem o つ).
 
 > **[tip]**
-Repare que 五つ (いつつ, cinco) e 九つ (ここのつ, nove) escrevem o número em kanji (五, 九) e fecham com つ. O kanji é o mesmo dos números soltos ご (5) e きゅう (9), mas a leitura muda na série つ. Por isso aqui o aluno lê pela kana.
+Repare que 五つ (いつつ, cinco) e 九つ (ここのつ, nove) escrevem o número em kanji (五, 九) e fecham com つ. O kanji é o mesmo dos números soltos ご (5) e きゅう (9), mas a leitura muda na série つ. Por isso, aqui você se guia pelo kana.
 
 > **[l1-advantage]**
 Para o brasileiro isso é um alívio: em vez de decorar dezenas de contadores antes de pedir qualquer coisa, você já consegue contar quase tudo com a série つ. "Me vê ふたつ" (dois) resolve no restaurante, na loja, em casa.

@@ -21,7 +21,7 @@ Boa notícia: você ganha um kana quase de graça. O ヘ(he) do katakana é prat
 
 #### Os cinco kana
 - ハ(ha): como o ha de "harpa". São dois traços abertos, como duas pernas dando um passo largo.
-- ヒ(hi): como o hi de "hiena". Parece um anzol de cabo de boca para cima.
+- ヒ(hi): como o hi de "hiena". Parece um anzol com a boca virada para cima.
 - フ(fu): som entre "fu" e "hu", bem suave. Um só traço, como uma vela de barco curvando ao vento.
 - ヘ(he): como o he de "hélice". É o "chapeuzinho" inclinado, igual ao へ do hiragana.
 - ホ(ho): como o ho de "hotel". Tem uma cruz com dois pingos embaixo, lembrando uma pessoinha de braços e pernas abertos.

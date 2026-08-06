@@ -17,7 +17,7 @@
 Boa parte da conversa real não é afirmar do nada: é AJUSTAR. A gente escolhe melhor a palavra, freia um exagero, ou avisa que o desfecho foi surpreendente. Esta lição dá os três recursos para isso.
 
 #### 〜というより: mais do que X, é Y
-A estrutura n3-to-iu-yori compara dois ROTULOS e diz que o segundo descreve melhor a mesma coisa. Em pt-BR: 'mais do que (dizer) X, é Y', 'mais para Y'. Liga-se à forma simples: verbo, adjetivo-い, e com adjetivo-な ou substantivo o だ costuma cair na fala.
+A estrutura n3-to-iu-yori compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa. Em pt-BR: 'mais do que (dizer) X, é Y', 'mais para Y'. Liga-se à forma simples: verbo, adjetivo-い, e com adjetivo-な ou substantivo o だ costuma cair na fala.
 - 彼は優しいというより弱い = 'Mais do que gentil, ele é fraco.'
 - これは青というより緑だ = 'Isto, mais do que azul, é verde.'
 

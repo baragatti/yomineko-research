@@ -36,7 +36,7 @@ O passado da cópula serve tanto para substantivos quanto para adjetivos-な. É
 - Adjetivo-な: 静かだった = "estava silencioso".
 
 > **[l1-pitfall]**
-Cuidado com a armadilha clássica: NÃO use でした com adjetivo-い. Por analogia com "era caro", o brasileiro tende a dizer ×高いでした, mas isso está errado. O adjetivo-い tem passado próprio (você vê isso noutra lição). Aqui o padrão でした／だった vale só para substantivo e adjetivo-な.
+Cuidado com a armadilha clássica: NÃO use でした com adjetivo-い. Por analogia com "era caro", o brasileiro tende a dizer ×高いでした, mas isso está errado. O adjetivo-い tem passado próprio (você vê isso em outra lição). Aqui o padrão でした／だった vale só para substantivo e adjetivo-な.
 
 > **[warning]**
 O passado da cópula liga estados (o que algo era), não ações. "Eu fui ao mercado", por exemplo, é um verbo de ação e tem outro passado. Por enquanto, pense em でした／だった sempre como "era / foi assim".

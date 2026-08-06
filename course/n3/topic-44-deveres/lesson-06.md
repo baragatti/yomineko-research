@@ -39,7 +39,7 @@ Agora palavras mais abstratas, úteis em qualquer texto.
 > **[l1-pitfall]**
 減らす (へらす) é transitivo (eu reduzo algo) e 減る (へる) é intransitivo (algo diminui por si). 体重を減らす é eu reduzo o peso; 体重が減る é o peso diminui.
 Veja 方法 e 報告 numa frase de trabalho.
-いい方法が見つかったので、部長に報告した (Como encontrei um bom método, fiz o relatório ao chefe de seção.)
+いい方法が見つかったので、部長に報告した (Como encontrei um bom método, fiz o relatório ao chefe de departamento.)
 天気の変化が激しい季節だ (É uma estação em que a mudança do tempo é intensa.)
 
 #### Objetos do dia a dia
@@ -79,7 +79,7 @@ Repare em 弁当, parte essencial do dia japonês, e em 冒険 para histórias.
 
 ### 3. (cloze) {'pt-BR': 'Complete a frase: <jp>体重を＿＿たい</jp> (Quero reduzir o peso.)'}
 - **Resposta:** `{"text": "減らし", "full": "体重を減らしたい。"}`
-- {'pt-BR': '減らす (へらす) é o verbo transitivo reduzir algo; com たい indica desejo,减らしたい.'}
+- {'pt-BR': '減らす (へらす) é o verbo transitivo reduzir algo; com たい indica desejo: 減らしたい.'}
 
 
 ### 4. (production) {'pt-BR': 'Escreva uma frase em japonês dizendo que você comeu a marmita (弁当) no banco (ベンチ) do parque.'}

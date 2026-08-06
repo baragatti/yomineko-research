@@ -69,10 +69,10 @@ A forma é a mnemônica perfeita: 三 são literalmente três tracinhos horizont
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 ポーチにスカンクがいます。 — Tem um gambá na varanda.
+> 🗣 ポーチにスカンクがいます。 — Tem um cangambá na varanda. (and lit: "Na varanda, cangambá (sujeito) existe/está.")
 
 #### Leitura
-> 📖 クリップってある？クソっ。かかれ！ — Tem clipe (de papel)? Droga! Ataquem!
+> 📖 クリップってある？クソっ。かかれ！ — Tem clipe (de papel)? "Droga! Vai logo!"
 - Sei marcar o sujeito com が, sobretudo quando a informação é nova.
 - Uso ある (あります) para dizer que coisas inanimadas existem.
 - Uso いる (います) para dizer que seres animados existem.
