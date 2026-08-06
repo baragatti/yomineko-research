@@ -1,0 +1,245 @@
+{
+  "batch": 20,
+  "fixes": [
+    {
+      "slug": "les:pre-n5-katakana-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<romaji>nooto</romaji>",
+      "fix": "<romaji>nōto</romaji>",
+      "why": "Real inconsistency. The identical word ノート is romanized nōto in the adjacent pre-n5-katakana-06, and pre-n5-katakana-04 already taught the ー as a macron (kōto, sūtsu, takushī); design/phonetics_pt_ja.md fixes Hepburn as the learner-facing system. Same word, neighbouring lessons, so this is not a style preference. Single leaf inside <romaji>, no markup touched. The original anchor missed because the stored text splits the parenthesis into <text> nodes."
+    },
+    {
+      "slug": "les:pre-n5-katakana-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "São três risquinhos empilhados, como os três traços do ",
+      "fix": "São três risquinhos empilhados; é o mesmo som do ",
+      "why": "Complaint is real: hiragana み is written in 2 strokes, not 3, and this lesson uses traços strictly as stroke count (objectives and the numbered stroke diagram), so it reads as a teachable false fact. Replacement keeps the shape comparison for ミ and swaps the false stroke claim for the true statement (same sound). Pure text inside one <text> node, so the <term>hiragana</term> and <jp>み</jp> that follow are untouched; the sentence now reads 'São três risquinhos empilhados; é o mesmo som do hiragana み.' The original anchor missed because of the <term> markup in the middle."
+    },
+    {
+      "slug": "les:pre-n5-katakana-08",
+      "field": "body",
+      "verdict": "fix",
+      "current": "faz primeiro o traço horizontal de baixo e depois fecha por cima",
+      "fix": "começa pelo traço de cima, que vira e desce para a esquerda, e termina na linha horizontal de baixo",
+      "why": "Complaint is real: ユ has 2 strokes and the top フ-shaped stroke comes first, the long bottom horizontal last (same order as コ). The stored text reverses it, inside a tip whose own rule is 'de cima para baixo', and contradicts the lesson objective on correct stroke order. Pure text inside one <text> node. Original anchor missed because 'o ユ' is stored as text plus a <jp> element."
+    },
+    {
+      "slug": "les:pre-n5-katakana-08",
+      "field": "body",
+      "verdict": "fix",
+      "current": "sem a barra de cima ou um pente com três dentes",
+      "fix": "espelhado, com as três barras viradas para a esquerda, ou um pente com três dentes",
+      "why": "Complaint is real: ヨ keeps all three horizontal bars on a right-side spine (a mirrored E). 'E sem a barra de cima' implies two bars, clashes with 'um pente com três dentes' in the same sentence and with the warning note below ('o ヨ tem três barras horizontais bem retas'). Rewritten as pure text inside the existing <text> node, so the <jp>ヨ</jp> and <romaji>yo</romaji> chips are untouched (the reviewer's own version would have dropped them)."
+    },
+    {
+      "slug": "les:pre-n5-katakana-08",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<emphasis>yu</emphasis><text> é como o \"iu\" de \"v</text><text weight=\"bold\"> iu</text><text>\", e </text>",
+      "fix": "<emphasis>yu</emphasis><text> é como o \"iu\" de \"</text><text weight=\"bold\">Iu</text><text>goslávia\", e </text>",
+      "why": "Complaint is real: 'viu' ends in the falling glide [iw], the mirror image of ゆ [ju], while the two anchors beside it (iate, iogurte) are word-initial rising glides. Iugoslávia is the standard pt-BR word with an initial [ju] and keeps the bolded-onset pattern of its neighbours. Chose Iugoslávia over the reviewer's 'Yuri' because a y-spelled name would teach the sound with the very letter under discussion. Tag multiset is identical (emphasis pair, plain <text> x2, bold <text> x1, three </text>); the leading space that was breaking the bold word is dropped, matching the fix already applied to pre-n5-katakana-05."
+    },
+    {
+      "slug": "les:pre-n5-katakana-10",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Repare como o </text><jp>ワ</jp><text> abre cada uma delas.</text>",
+      "fix": "Repare onde o </text><jp>ワ</jp><text> aparece em cada palavra: ele abre a primeira e a terceira, fica no meio da segunda e não aparece na última, onde o kana é o ウ.</text>",
+      "why": "Complaint is factually right: of ワイン, ハワイ, ワイシャツ, キウイ the ワ opens only the first and third, is medial in ハワイ and absent from キウイ (キ-ウ-イ). Leaving 'abre cada uma delas' invites exactly the ワ/ウ misreading this lesson's own warning note is about, so the replacement turns the false claim into the observation the reviewer asked for. Tag multiset unchanged (</text>, <jp>, </jp>, <text>, </text>); kana inside <text> follows this same file's checklist convention."
+    },
+    {
+      "slug": "les:pre-n5-katakana-10",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Boa notícia: com esta família, você fechou os 46 sons básicos do katakana. Agora consegue ler qualquer palavra escrita só com kana simples.",
+      "fix": "Boa notícia: com esta família, você já viu 45 dos 46 kana básicos do katakana. Falta só o ン, que vem na próxima lição (ele é o último som de ワイン, logo abaixo).",
+      "why": "Complaint is real: the 46 basic kana are 45 gojūon plus ン, and ン is taught in pre-n5-katakana-11, which opens with 'Chegamos ao último kana solto do katakana: ン'. So after ワ・ヲ the learner has 45, and 'consegue ler qualquer palavra escrita só com kana simples' overclaims. The replacement also absorbs the second half of the reviewer's note: the reading-practice list right below is introduced as 'o katakana que você já aprendeu' but starts with ワイン, so the parenthesis turns that ン into an announced preview instead of an unexplained kana. Pure text inside one <text> node."
+    },
+    {
+      "slug": "les:pre-n5-katakana-13",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp>ドア</jp><text> termina num \"o\" aberto e claro.",
+      "fix": "<jp>ピアノ</jp><text> termina num \"o\" aberto e claro (nunca \"pianu\").",
+      "why": "Complaint is real: ドア is do-a and its final mora is ア, so it cannot illustrate 'do not raise a final o to u'. ピアノ is already in this lesson's reading list and is the word a Brazilian actually raises ('pianu'), so it is the correct example. Only the content of the <jp> chip and the trailing text change; tag multiset identical (<jp>, </jp>, <text>). ドア stays in the practice list above, untouched. Original anchor missed because the sentence is split across <jp> and <text> nodes."
+    },
+    {
+      "slug": "les:pre-n5-katakana-15",
+      "field": "body",
+      "verdict": "fix",
+      "current": "usa o mesmo som do </text><emphasis>di</emphasis><text> de \"dia\" ou do </text><emphasis>g</emphasis><text> de \"gente\" (aquele \"dj\"). Cuidado: NÃO é o \"j\" puxado de \"já\"/\"jogo\".",
+      "fix": "usa o som do </text><emphasis>di</emphasis><text> de \"dia\" (aquele \"dj\"). Cuidado: NÃO é o \"j\" puxado de \"já\"/\"jogo\", que em português é o mesmo som do </text><emphasis>g</emphasis><text> de \"gente\".",
+      "why": "Complaint is real and self-evident inside pt-BR: the g of 'gente' and the j of 'já' are the same phoneme, so offering one as the model and excluding the other is contradictory, and it also clashes with the ジャ bullet above ('não o j de jeito'). The rewrite keeps 'dia' as the model (matching design/phonetics_pt_ja.md, which maps ja/ji/jo to the affricate of 'dia') and demotes 'gente' to the counter-example where it belongs. Tag multiset and tag order are identical: </text>, <emphasis>di</emphasis>, <text>, </text>, <emphasis>g</emphasis>, <text>."
+    },
+    {
+      "slug": "les:pre-n5-katakana-15",
+      "field": "body",
+      "verdict": "fix",
+      "current": "No hiragana, a vogal longa se escreve repetindo a vogal; no katakana, basta a barrinha.",
+      "fix": "No hiragana, a vogal longa se escreve acrescentando um segundo kana; no katakana, basta a barrinha.",
+      "why": "Complaint is real: long o is written おう (おとうさん, がっこう) and long e is written えい (せんせい); only the a/i/u rows repeat the vowel. As stored, this is the learner's only statement about hiragana long vowels and it teaches the classic おとおさん spelling error. Kept the reviewer's neutral wording and deliberately left out the raw-kana examples, since kana in this schema belongs in <jp> and adding <jp> nodes would change the tag balance. Pure text inside one <text> node."
+    },
+    {
+      "slug": "les:pre-n5-pronuncia-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<romaji>o-ba-a-san</romaji><text> são quatro moras, não três.",
+      "fix": "<romaji>o-ba-a-sa-n</romaji><text> são cinco moras, não quatro (o \"n\" do fim também vale um tempo, como você vai ver na próxima lição).",
+      "why": "Complaint is real and critical: おばあさん is o-ba-a-sa-n, five moras, and おばさん is four, because ん is a mora of its own. The very next lesson, pre-n5-pronuncia-02 ('O ん como uma mora própria'), teaches exactly that with ほん = 2 and にほん = 3, so the current text contradicts its sibling inside the lesson that teaches mora counting. The parenthesis flags the ん forward reference so the count is not a bare assertion. Tag multiset identical (<romaji>, </romaji>, <text>); no em dash used."
+    },
+    {
+      "slug": "les:pre-n5-pronuncia-03",
+      "field": "title",
+      "verdict": "fix",
+      "current": "Devozeamento:",
+      "fix": "Desvozeamento:",
+      "why": "Complaint is real: pt-BR phonetics uses 'desvozeamento / desvozeado' (also 'ensurdecimento', 'dessonorização'). 'Devozeamento' is an unattested de- calque from English 'devoicing', and Portuguese forms privatives with des-. It is the term a learner would type into a search box, so the coinage is worth correcting. Anchor is the capitalized form with its colon, which occurs only in the title."
+    },
+    {
+      "slug": "les:pre-n5-pronuncia-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text>Devozeamento: ",
+      "fix": "<text>Desvozeamento: ",
+      "why": "Companion to the title fix: the body's own <heading level=\"2\"> repeats the title verbatim, so renaming only the title record would leave the rendered H2 still reading 'Devozeamento'. Only the word changes inside the existing <text> node; tag multiset identical."
+    },
+    {
+      "slug": "les:pre-n5-pronuncia-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "devozeadas",
+      "fix": "desvozeadas",
+      "why": "Second occurrence of the same coinage in this field: it is the glossed <term> in the opening paragraph ('as vogais i e u muitas vezes ficam devozeadas'), which is where the learner meets the word for the first time. Single word inside the <term> element's text; no markup touched. Occurs once in body."
+    },
+    {
+      "slug": "les:pre-n5-pronuncia-03",
+      "field": "objectives[0]",
+      "verdict": "fix",
+      "current": "devozeados",
+      "fix": "desvozeados",
+      "why": "Same terminology fix in the leaf objectives[0] ('Entender que o i e o u ficam devozeados (quase mudos) entre consoantes surdas ou no fim da palavra'). Only the single list item is touched, never the list container."
+    },
+    {
+      "slug": "les:pre-n5-pronuncia-03",
+      "field": "exercises[0].explanation",
+      "verdict": "fix",
+      "current": "devozeado",
+      "fix": "desvozeado",
+      "why": "Same terminology fix in the explanation of ex:pre-n5-pronuncia-03-1 ('O u de です fica devozeado (quase mudo)'). Leaf string only; the answer object is untouched."
+    },
+    {
+      "slug": "les:pre-n5-pronuncia-03",
+      "field": "exercises[2].prompt",
+      "verdict": "fix",
+      "current": "devozeada",
+      "fix": "desvozeada",
+      "why": "Last occurrence of the coinage, in the prompt of ex:pre-n5-pronuncia-03-3 ('Ligue cada palavra ao som correto (com a vogal devozeada)'). The description and the checklist say 'quase mudos' and contain no form of the term, so they are deliberately left alone."
+    },
+    {
+      "slug": "les:pre-n5-saudacoes-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": ", geralmente seguido de um </text><jp>ください</jp><text>.",
+      "fix": ", geralmente seguido de </text><jp>おねがいします</jp><text> (\"por favor\").",
+      "why": "Complaint is real: ください on its own means 'give me', so もういちどください reads as 'one more, please give me' and is not the repeat-request collocation. The standard requests are もういちどおねがいします and もういちどいってください. Since the text explicitly tells the learner to build the phrase, it teaches the wrong one. おねがいします is glossed inline so a pre-N5 reader is not left with an unexplained word. Tag multiset identical (</text>, <jp>, </jp>, <text>); only the kana inside the <jp> chip and the surrounding text change."
+    },
+    {
+      "slug": "les:pre-n5-saudacoes-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "tem dois traços iguais",
+      "fix": "tem dois kana iguais",
+      "why": "Complaint is real: the tip is explicitly about writing ('são fáceis de confundir na escrita'), where traço means stroke, and え alone takes 2 strokes, so 'dois traços iguais' is a false count. The parallel clause in the same sentence counts kana ('começa com dois い mais um え'), which confirms kana is the intended unit. Pure text inside one <text> node; anchor occurs once."
+    },
+    {
+      "slug": "les:pre-n5-saudacoes-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": ", o </text><jp>おう</jp><text> é uma vogal longa: segure o \"o\" por dois tempos",
+      "fix": ", o </text><jp>う</jp><text> alonga o \"o\" anterior: segure o \"o\" por dois tempos",
+      "why": "Complaint is real: どうして is ど+う+し+て, so there is no お in it, and a learner who has just finished kana is being told to look for a kana that is not there. The replacement points at the う that actually does the lengthening. The following sentence ('esse \"o\" comprido quase sempre se escreve おう, e não おお') states the general spelling pattern and stays valid and untouched. Tag multiset identical (</text>, <jp>, </jp>, <text>); avoided calling どう 'uma vogal longa', since どう is a mora sequence."
+    },
+    {
+      "slug": "les:pre-n5-saudacoes-03",
+      "field": "exercises[3].answer.accept[1]",
+      "verdict": "fix",
+      "current": "ついて",
+      "fix": "について",
+      "why": "Complaint is real: the prompt is the mould X____, so accepting bare ついて grades the ungrammatical Xついて as correct; the に is obligatory in the Xについて pattern and the exercise's own explanation states the formula as Xについて. A mechanical value replacement cannot delete a list element, so the bad variant is rewritten to the canonical string. The resulting accept list is [\"について\", \"について\"]: the duplicate is inert for a membership test and is strictly safer than leaving a wrong answer accepted. The container object and answer.text are untouched."
+    },
+    {
+      "slug": "les:pre-n5-saudacoes-03",
+      "field": "exercises[3].answer",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The assigned finding targets this object, but answer here is {text, accept} and answer.text is already the correct について. The defect lives in one leaf of the accept list and is repaired by the exercises[3].answer.accept[1] entry in this batch; the container needs no edit."
+    },
+    {
+      "slug": "les:pre-n5-saudacoes-03",
+      "field": "exercises[3].prompt",
+      "verdict": "fix",
+      "current": "Escreva em kana a palavra que falta.",
+      "fix": "Escreva em kana o que falta na lacuna.",
+      "why": "Companion to the accept-list fix, and the second half of what the reviewer asked for. This lesson's headword is ついて (the bullet reads 'ついて = sobre; a respeito de'), so 'a palavra que falta' actively invites ついて and makes the tightened key look unfair. 'o que falta na lacuna' asks for the whole missing fragment, which is について. Leaf string only."
+    },
+    {
+      "slug": "les:pre-n5-sons-01",
+      "field": "exercises[2].answer.pairs[2][1]",
+      "verdict": "fix",
+      "current": "'u' seco, como em 'uva' (lábios relaxados)",
+      "fix": "'u' seco, de lábios neutros (não é o 'u' arredondado de 'uva')",
+      "why": "Complaint is real: the lesson body says the pt 'u' of 'uva' rounds the lips 'como se você fosse dar um beijo' and that the Japanese u is precisely not that, and ex:pre-n5-sons-01-1's explanation repeats it. Pairing u with 'como em uva' under a matching prompt therefore keys the exact error the lesson warns against. Only the description leaf of the third pair is rewritten; the pair structure, the 'u' key and the other four pairs stay as they are."
+    },
+    {
+      "slug": "les:pre-n5-sons-01",
+      "field": "exercises[2].answer",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The assigned finding targets this object, but the answer is {pairs}, not {choices, correct}, which is why the applier could not anchor it. The defect is one string inside one pair and is repaired by the exercises[2].answer.pairs[2][1] entry in this batch; the container needs no edit."
+    },
+    {
+      "slug": "les:pre-n5-sons-01",
+      "field": "exercises[2].prompt",
+      "verdict": "fix",
+      "current": "ao exemplo em português que tem o mesmo som.",
+      "fix": "à descrição correta do seu som.",
+      "why": "Companion to the pairs fix, and the second half of what the reviewer asked for. Once the u pair correctly says it is not the 'u' of 'uva', a prompt promising 'o exemplo em português que tem o mesmo som' no longer holds for all five items, since the whole point of the lesson is that the Japanese u has no exact pt equivalent. Leaf string only."
+    },
+    {
+      "slug": "les:pre-n5-sons-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<romaji>CA-fe</romaji><text> apertando o \"ca\"",
+      "fix": "<romaji>ca-FÉ</romaji><text> apertando o \"fé\"",
+      "why": "Complaint is real and critical: 'café' is an oxytone, stressed on the last syllable, so the example that anchors the entire stress-versus-pitch contrast marks the wrong syllable. Tag multiset identical (<romaji>, </romaji>, <text>). Kept the Portuguese inside the existing <romaji> chip rather than retagging it, since changing the element would alter the tag balance; the stored text already used that chip for the pt example."
+    },
+    {
+      "slug": "les:pre-n5-sons-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": ", palito) ou ",
+      "fix": ", pauzinhos de comer) ou ",
+      "why": "Complaint is real: 箸 is chopsticks, while pt-BR 'palito' reads as toothpick or matchstick. The Brazilian terms are 'hashi' and 'pauzinhos', and 'hashi' would be circular here because it is the reading being contrasted. Pure text inside one <text> node, so <jp>箸</jp> and <romaji>hashi</romaji> are untouched."
+    },
+    {
+      "slug": "les:pre-n5-sons-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "pode ser palito ou ponte",
+      "fix": "pode ser pauzinhos ou ponte",
+      "why": "Second occurrence of the same wrong gloss in this field, in the closing <checklist> ('Sei que \"hashi\" pode ser palito ou ponte conforme a altura'). Fixing only the example note would leave the same page contradicting itself two screens later. Pure text inside one <text> node; anchor does not overlap the note fix above."
+    },
+    {
+      "slug": "les:pre-n5-sons-03",
+      "field": "objectives[1]",
+      "verdict": "fix",
+      "current": "pode ser palito ou ponte",
+      "fix": "pode ser pauzinhos ou ponte",
+      "why": "Third occurrence of the same gloss, in the leaf objectives[1]. Only the single list item is touched, never the list container. The lesson description does not use the word, so it is left alone."
+    }
+  ]
+}

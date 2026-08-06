@@ -1,0 +1,173 @@
+{
+  "batch": 2,
+  "fixes": [
+    {
+      "slug": "les:n3-concessao-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "このちいきのうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
+      "fix": "このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる",
+      "why": "Duplicate finding, but the defect is still present on disk: the furigana attribute for この地域の農民は reads このちいきのうみん, so 農民 would be read うみん. 地域 + の + 農民 needs the second の. Attribute value only, markup untouched."
+    },
+    {
+      "slug": "les:n3-concessao-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"ねったいではいちねんかんあめがふるが、すずしいきせつもないわけではない\">熱帯では一年間雨が降るが、涼しい季節もないわけではない</jp>",
+      "fix": "<jp reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\">熱帯では一年中雨が降るが、涼しい季節もないわけではない</jp>",
+      "why": "Real and still on disk. 一年間 marks a bounded one-year span, which contradicts both the pt-BR gloss 'chove o ano inteiro' and this lesson's own note that 年中 is 'o ano inteiro, sem parar'. Text and reading changed together; tag multiset identical. Side effect to flag: the vocab item 年間 loses its example sentence (it keeps its gloss in the list and its explanation in the l1-pitfall note); adding a correct 年間 interval example is an authoring task, not a mechanical one."
+    },
+    {
+      "slug": "les:n3-conectores-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Palavras frequentes que começam com o som </text><jp>あ</jp><text> (mostradas em kana):",
+      "fix": "Palavras frequentes que começam com os sons da linha </text><jp>あ</jp><text> (mostradas em kana):",
+      "why": "Complaint is real: the heading promises あ-initial words but the list contains 意外 (いがい) and 委員 (いいん). Reworded to 'os sons da linha あ' (あ行 covers あ and い), which is the same wording the project already uses in n3-conectores-07 ('palavras N3 da linha は'). The original quote was tag-free, so the anchor spans the <jp> element; tag multiset is unchanged and no prose was injected into a tag."
+    },
+    {
+      "slug": "les:n3-conectores-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Lidere pelo radical da esquerda, a arvore (</text><jp>木</jp><text>), e a direita o olho (</text><jp>目</jp><text>): \"o olho que observa a arvore\".",
+      "fix": "Junte o componente da esquerda, a árvore (</text><jp>木</jp><text>), com o olho da direita (</text><jp>目</jp><text>): \"o olho que observa a árvore\". O radical oficial deste kanji é o olho.",
+      "why": "Two real defects in one sentence: 'Lidere pelo radical' is a literal calque of English 'lead with' and is not pt-BR, and 木 is only the left component of 相 (Kangxi radical 109 is 目). Rewritten as a component description that states the official radical, with the missing accents on 'árvore' restored. Anchor spans two <jp> elements; tag multiset identical."
+    },
+    {
+      "slug": "les:n3-conectores-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 相 radical finding, which this batch already fixes with the anchor starting 'Lidere pelo radical da esquerda'. Emitting the same replacement twice would leave the second copy unmatched, so no second edit is issued."
+    },
+    {
+      "slug": "les:n3-conectores-01",
+      "field": "objectives[0]",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already correct on disk: objectives[0] reads 'Usar その上 para somar um segundo ponto que reforça o primeiro (na mesma direção)'. The earlier copy of this finding was applied; this duplicate has nothing left to fix."
+    },
+    {
+      "slug": "les:n3-conectores-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "No N3 você começa a costurar frases em paragrafos de verdade. Esta lição reune três palavrinhas que aparecem no inicio da segunda frase e dizem ao ouvinte para onde o raciocinio vai: </text><grammar ref=\"gram:n3-sono-ue\"/><text> (somar reforcando), ",
+      "fix": "No N3 você começa a costurar frases em parágrafos de verdade. Esta lição reúne três palavrinhas que aparecem no início da segunda frase e dizem ao ouvinte para onde o raciocínio vai: </text><grammar ref=\"gram:n3-sono-ue\"/><text> (somar reforçando), ",
+      "why": "The instance this finding quoted ('Este restaurante é barato...') is already accented on disk, but the underlying complaint (systematic stripped diacritics in this body) is real, so the fix targets a still-broken representative span: paragrafos, reune, inicio, raciocinio, reforcando. Anchor crosses a self-closing <grammar> ref; tag multiset identical. Residual, not reachable from this anchor: mutuo, memorizacao, mao, comissao, album, mantem, ate, obvio, esta, cafe, cha, identicos, espontaneo, ja, so, and many copulas written 'e' for 'é'. Those need a dedicated diacritic pass."
+    },
+    {
+      "slug": "les:n3-conectores-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the あ/い heading finding, already fixed in this batch by the 'Palavras frequentes que começam com o som' anchor."
+    },
+    {
+      "slug": "les:n3-conectores-02",
+      "field": "objectives[0]",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already correct on disk: objectives[0] reads \"Marcar contraste entre duas ideias com だけど / けど ('mas', 'só que')\". The earlier copy of this finding was applied."
+    },
+    {
+      "slug": "les:n3-conectores-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "significa \"pescoco, cabeca\". E um pictograma de uma cabeca com cabelo em cima. Aparece em </text><jp reading=\"しゅしょう\">首相</jp><text> (\"primeiro-ministro\", a \"cabeca mutua\" do governo, com o </text><kanji ref=\"kanji:相\"/><text> que você ja viu).",
+      "fix": "significa \"pescoço, cabeça\". É um pictograma de uma cabeça com cabelo em cima. Aparece em </text><jp reading=\"しゅしょう\">首相</jp><text> (\"primeiro-ministro\", a \"cabeça mútua\" do governo, com o </text><kanji ref=\"kanji:相\"/><text> que você já viu).",
+      "why": "Real: the 首 paragraph is missing cedillas and accents (pescoco, cabeca, E for É, mutua, ja). The stored fix was written as an instruction, which is why it was skipped. The anchor covers the whole paragraph including the sentence the original fix only described in prose; it crosses a <jp> element and a self-closing <kanji> ref with an identical tag multiset."
+    },
+    {
+      "slug": "les:n3-conectores-03",
+      "field": "exercises[2].explanation",
+      "verdict": "fix",
+      "current": "ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo",
+      "fix": "ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo, e por isso não cabe aqui, onde a segunda frase é a justificativa.",
+      "why": "The quoted 'ですから também da causa...' no longer exists because the sibling finding was applied, but the applied text landed truncated: the explanation now ends at 'não o motivo', with no closing clause and no final period (the original replacement used an em dash, which is banned, and everything after it was lost). This completes the sentence without an em dash."
+    },
+    {
+      "slug": "les:n3-conectores-03",
+      "field": "title",
+      "verdict": "fix",
+      "current": "Title: 'Explicando o porquê: ですから e なぜなら'. Também no body, o H2: 'Explicando o porquê: justificar com clareza e cortesia'.",
+      "fix": "Explicando o porquê: ですから e なぜなら",
+      "why": "Corruption, not a style issue: the stored title is the reviewer's instruction text, which a previous applier wrote into the field as a value. Restored to the title that instruction names. Separately (not fixed here, no body slot left in this batch): the body's <heading level=\"2\"> still reads 'Explicando o porque: justificar com clareza e cortesia' and needs the same circumflex."
+    },
+    {
+      "slug": "les:n3-conectores-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(coloquial, e as vezes depreciativo). Os dois dizem \"esses são so alguns exemplos entre muitos\".",
+      "fix": "(coloquial, e às vezes depreciativo). Os dois dizem \"esses são só alguns exemplos entre muitos\".",
+      "why": "Real; the stored fix was a five-part instruction list, which is why it was skipped. This anchor restores the crase in 'às vezes' and the accent in 'só' in one tag-free span. Still broken in this body and not reachable from a single anchor: 'seguranca' in the 安全 gloss, 'compaixao' in the 哀れ item, 'otimo' in the 最高 gloss, and 'Otima para o sentido oposto' in the 凡ゆる item."
+    },
+    {
+      "slug": "les:n3-conectores-04",
+      "field": "description",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already correct on disk: the description ends '...e a captar o tom de desdém.' The earlier copy of this finding was applied."
+    },
+    {
+      "slug": "les:n3-conectores-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "A saudação clássica, escrita com kanji em textos mais formais.",
+      "fix": "É a saudação clássica e escreve-se quase sempre em hiragana; a grafia 今日は é rara e se confunde com きょうは.",
+      "why": "Real: JMdict marks 今日は as usually written in kana, and in an ordinary sentence 今日は reads きょうは. Telling a learner that formal texts use the kanji spelling is false. Only the claim sentence is replaced, so the <vocab ref=\"vocab:今日は\"/> cross-reference and the surrounding <item>/<text> markup are untouched (this file already writes bare Japanese inside <text>, so the inline 今日は and きょうは follow the file's own convention)."
+    },
+    {
+      "slug": "les:n3-conectores-05",
+      "field": "body",
+      "verdict": "needs-human",
+      "current": "",
+      "fix": "",
+      "why": "The complaint is fair (この川の上に defaults to うえ, and modern Japanese says 川上 or 川の上流 for 'curso superior'), but it cannot be fixed as one mechanical leaf edit. The same sentence is drilled in ex:n3-conectores-05-4, whose prompt, answer.text, answer.full and explanation all encode この川の＿＿には with the answer かみ, and objectives[1] explicitly teaches 上=かみ. Changing the example requires a coordinated decision across body, exercise and objective."
+    },
+    {
+      "slug": "les:n3-conectores-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "から (esta lição) é o adjetivo 'vazio'. O contexto resolve quase sempre, mas vale guardar que から quase nunca aparece sozinho no meio de uma frase como verbo, e sim descrevendo algo que está oco.",
+      "fix": "から (esta lição) é o substantivo 'vazio', como em このグラスは空だ e 空の箱. O contexto resolve quase sempre, mas guarde que から nunca funciona como verbo: ele sempre descreve algo que ficou oco.",
+      "why": "Real POS error: 空 read から is a noun (空だ, 空の箱), not an adjective, and the clause about it 'quase nunca aparecer como verbo' is both confusing and contradicted by the lesson's own example このグラスは空だ. Tag-free span inside the l1-pitfall note. Flag for another batch: ex:n3-conectores-05-2's explanation repeats the same 'adjetivo' mislabel and is not in this batch's scope."
+    },
+    {
+      "slug": "les:n3-conectores-05",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the こんにちは orthography finding, already fixed in this batch by the 'A saudação clássica, escrita com kanji em textos mais formais.' anchor."
+    },
+    {
+      "slug": "les:n3-conectores-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(こんにちは) - olá, bom dia, boa tarde.",
+      "fix": "(こんにちは) - olá, boa tarde (de manhã use おはよう / おはようございます).",
+      "why": "Real: in pt-BR 'bom dia' is the morning greeting, which in Japanese is おはよう/おはようございます; the corpus gloss for 今日は is 'olá, boa tarde'. Leaving 'bom dia' teaches the classic Brazilian learner mistake of greeting with こんにちは in the morning. This anchor is disjoint from the orthography fix in the same <item>, so both apply cleanly and in any order."
+    },
+    {
+      "slug": "les:n3-conectores-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "reading=\"このじけんのひがいはおおきい。その上、はんにんはまだつかまっていない\"",
+      "fix": "reading=\"このじけんのひがいはおおきい。そのうえ、はんにんはまだつかまっていない\"",
+      "why": "Real: a furigana attribute must be all kana, and this one keeps 上 in kanji, so その上 has no reading. The stored fix belonged to a different finding (an instruction about the crime note), which is why it was skipped. Attribute value only; markup untouched."
+    },
+    {
+      "slug": "les:n3-conectores-07",
+      "field": "title",
+      "verdict": "fix",
+      "current": "Retitle to the actual content, e.g. 'Pessoas, crime e medida: vocabulário da linha は', and update the matching <heading level=\"2\"> at the top of body, which repeats the old title.",
+      "fix": "Pessoas, crime e medida: vocabulário da linha は",
+      "why": "EXTRA entry, outside the assigned 20: this finding is not in the skipped list because the applier treated its instruction text as a value and wrote it into the title, so no batch is scheduled to catch it. The stored title is currently English instruction prose shown to learners. Restored to the title that instruction names, which also matches the description and the four thematic H3 sections (pessoas e corpo, crime e julgamento, comércio, medida). Still open, not fixed here: the body's <heading level=\"2\"> reads 'Conectores e organização do discurso', the old topic-level title, and should mirror the new one."
+    }
+  ]
+}

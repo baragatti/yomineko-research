@@ -1,0 +1,173 @@
+{
+ "batch": 1,
+ "fixes": [
+  {
+   "slug": "les:n3-causa-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "mantenha o </text><emphasis>o</emphasis><text> final limpo. O brasileiro tende a levantar o \"o\" para \"u\" sem perceber (como em \"gato\" virando \"gatu\"). Aqui é \"de\" com \"e\" limpo, nunca \"di\".",
+   "fix": "mantenha o </text><emphasis>e</emphasis><text> final limpo. O brasileiro tende a levantar o \"e\" final para \"i\" sem perceber (como em \"leite\" virando \"leiti\"). Aqui é \"de\", nunca \"di\".",
+   "why": "Complaint is real. せいで and おかげで end in で, so the vowel at risk is the final \"e\", not \"o\"; the note contradicted itself one clause later (\"Aqui e de com e limpo, nunca di\"). Rewritten to teach the real pt-BR interference (final \"e\" raised to \"i\"), keeping the <emphasis> slot and the exact same tag multiset."
+  },
+  {
+   "slug": "les:n3-causa-01",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the preceding finding on the same span of the l1-pitfall note; one replacement covers it. Applying the same edit twice would corrupt the note."
+  },
+  {
+   "slug": "les:n3-causa-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<p><text>É comum fechar com </text><jp>から</jp><text> para reforçar: </text><jp>んだものだから</jp><text> (\"porque... afinal\").</text></p>",
+   "fix": "<p><text>Para dar o motivo no meio da frase, use a forma simples + </text><jp>ものだから</jp><text> (na fala, </text><jp>もんだから</jp><text>). Ex.: 疲れていたものだから、先に帰った (\"é que eu estava cansado, então fui embora antes\"). Repare que んだもの fecha a frase e não recebe から.</text></p>",
+   "why": "Complaint is real. んだもの is sentence-final and does not take から; the subordinate reason connector is plain form + ものだから / もんだから. The invented form んだものだから was being taught as a rule. Replacement keeps the identical tag multiset (1 <p>, 3 <text>, 2 <jp>)."
+  },
+  {
+   "slug": "les:n3-causa-04",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the preceding んだものだから finding on the same paragraph; one replacement covers it."
+  },
+  {
+   "slug": "les:n3-causa-04",
+   "field": "exercises[1].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already corrected in the stored lesson: the explanation now reads \"～んだもん dá uma justificativa emotiva e infantilizada\", with no stray Latin \"D\". The sibling finding of this duplicate pair was applied."
+  },
+  {
+   "slug": "les:n3-causa-05",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already corrected in the stored body: the gloss now reads \"(Estou com dor de cabeça desde a manhã, sem parar.)\". The sibling finding of this duplicate pair was applied."
+  },
+  {
+   "slug": "les:n3-causa-05",
+   "field": "exercises[4].prompt",
+   "verdict": "fix",
+   "current": "prompt: \"Diga em japonês 'Estou com dor de cabeça desde a manhã' usando 頭痛 e ずっと.\"",
+   "fix": "Diga em japonês 'Estou com dor de cabeça desde a manhã' usando 頭痛 e ずっと.",
+   "why": "The \"desde de manha\" complaint was already applied, but the instruction-shaped fix leaked its wrapper into the data: the stored prompt now literally begins with the field name and an opening quote (prompt: \"...\"). Stripping the wrapper restores the intended learner-facing prompt."
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Guarde o casal junto: </text><jp>あ・ます</jp><text> é o que você faz no outro, </text><jp>あ・める</jp><text> é o que acontece com você.",
+   "fix": "Guarde o casal junto: </text><jp>さ・ます</jp><text> é o que você faz no outro, </text><jp>さ・める</jp><text> é o que acontece com você.",
+   "why": "Complaint is real and still present. 覚ます/覚める read さます/さめる; the mnemonic taught the stem as あ, contradicting the same note two lines above. Only the kana inside the two <jp> chips changes, so the tag multiset is untouched."
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "exercises[4].answer.accept[2]",
+   "verdict": "fix",
+   "current": "出かけようとしたが、ところが雨が降ってきた",
+   "fix": "出かけようとしました。ところが雨が降ってきました",
+   "why": "Complaint is real: this accepted variant glues ところが to a が-clause, exactly what the lesson warning note and this exercise own explanation forbid, and が plus ところが is redundant. This answer object is {text, accept}, not {choices, correct}, which is why the applier could not find the anchor. A mechanical applier cannot delete a list element safely, so the bad leaf is replaced in place by a legitimate polite-form variant of the same answer. The field path addresses the leaf string, never the answer object."
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already corrected in the stored body: it now reads \"compara dois RÓTULOS e diz que o segundo descreve melhor a mesma coisa\", with the accent. The sibling of this duplicate pair was applied."
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "exercises[4].answer",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the same accept-list finding; the single leaf replacement above covers it."
+  },
+  {
+   "slug": "les:n3-concessao-03",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate: the RÓTULOS accent is already fixed in the stored body and the 覚ます/覚める mnemonic is covered by the earlier entry in this batch."
+  },
+  {
+   "slug": "les:n3-concessao-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<item><jp reading=\"やすいにしてはおいしい\">安いにしては美味しい</jp><text> = 'Para algo barato, é gostoso.'</text></item>",
+   "fix": "<item><jp reading=\"こどもにしてはじがきれいだ\">子どもにしては字がきれいだ</jp><text> = 'Para uma criança, a letra é muito bonita.'</text></item>",
+   "why": "Complaint is real. にしては takes a noun or a plain-form verb, not an い-adjective, so 安いにしては is off-pattern; it also duplicated the meaning of the わりには example 値段の割にはおいしい that the same lesson uses later to contrast the two structures. Replaced by a concrete named base (子ども), which is what the lesson own rule demands. Same tag multiset."
+  },
+  {
+   "slug": "les:n3-concessao-04",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the preceding にしては finding on the same list item; one replacement covers it."
+  },
+  {
+   "slug": "les:n3-concessao-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"かんき\">寒気</jp><text> ('ar frio, calafrio').",
+   "fix": "<jp reading=\"かんき\">寒気</jp><text> ('ar frio, frio intenso'; com a leitura さむけ, 寒気 significa 'calafrio').",
+   "why": "Complaint is real and still present. 寒気 read かんき means cold air or severe cold; \"calafrio\" belongs to the さむけ reading. The gloss is corrected and the さむけ sense is kept as an explicit caveat instead of staying attached to the wrong reading."
+  },
+  {
+   "slug": "les:n3-concessao-05",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the preceding 寒気 gloss finding; one replacement covers it."
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "reading=\"あにはのうぎょうのちしきがあることはあるが、じっさいにはたけしごとはにがてだ\"",
+   "fix": "reading=\"あにはのうぎょうのちしきがあることはあるが、じっさいのはたけしごとはにがてだ\"",
+   "why": "Complaint is real and still present: the furigana did not match the text. The sentence has 実際の (particle の) but the reading said じっさいに. Only the attribute value changes; no tag is touched."
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "reading=\"このちいきのうみんは、たとえてんこうがわるくてもまいにちはたけにでる\"",
+   "fix": "reading=\"このちいきののうみんは、たとえてんこうがわるくてもまいにちはたけにでる\"",
+   "why": "Complaint is real and still present: the furigana dropped a mora. この地域の農民 needs ちいき plus の plus のうみん (double の), so 農民 was being read うみん. Only the attribute value changes."
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"ねったいではいちねんかんあめがふるが、すずしいきせつもないわけではない\">熱帯では一年間雨が降るが、涼しい季節もないわけではない</jp>",
+   "fix": "<jp reading=\"ねったいではいちねんじゅうあめがふるが、すずしいきせつもないわけではない\">熱帯では一年中雨が降るが、涼しい季節もないわけではない</jp>",
+   "why": "Complaint is real and still present. 一年間 marks a bounded one-year span, so it cannot mean \"chove o ano inteiro\" as the pt-BR gloss says, and it contradicts the l1-pitfall note two lines below that defines 年中 as \"o ano inteiro\". Sentence and reading switched to 一年中 / いちねんじゅう; the pt-BR gloss already matches and stays untouched, and 年間 keeps its own worked example inside the pitfall note."
+  },
+  {
+   "slug": "les:n3-concessao-06",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate: the three real defects in this body (実際の furigana, 地域の農民 furigana, 一年間 versus 一年中) are each covered exactly once by the preceding entries in this batch."
+  },
+  {
+   "slug": "les:n3-causa-05",
+   "field": "exercises[4].explanation",
+   "verdict": "fix",
+   "current": "朝から (desde de manhã)",
+   "fix": "朝から (desde a manhã)",
+   "why": "Outside the assigned 20, but the same finding explicitly flagged this field (\"a mesma construção reaparece em exercises[4].explanation\") and no skipped entry covers it, so the defect would otherwise survive: \"desde de manha\" stacks the preposition onto the adverbial locution. Standard pt-BR is \"desde a manha\"."
+  }
+ ]
+}

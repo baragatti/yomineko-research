@@ -1,0 +1,165 @@
+{
+ "batch": 3,
+ "fixes": [
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "exercises[4].explanation",
+   "verdict": "fix",
+   "current": "com o sentido de \"além disso, e ainda por cima\". Em japonês gerado, é comum deixar a vírgula 、 e dispensar o ponto final 。 no fim da frase.",
+   "fix": "com o sentido de \"além disso, e ainda por cima\".",
+   "why": "Real defect. The trailing sentence leaks pipeline jargon ('japonês gerado') and states a false fact: normal written Japanese does use the final 。. The correct action is deletion, so the anchor carries the preceding clause and the replacement is that clause alone, keeping the fix a value instead of a delete instruction. The その上 gloss already sits in the kept text, so nothing is lost."
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Em português, \"crime\" cobre tanto o ato quanto, às vezes, quem o cometeu.",
+   "fix": "Em português, \"crime\" é o ato e \"criminoso\" é quem o comete.",
+   "why": "Real defect. In pt-BR 'crime' never designates the perpetrator, so the l1-pitfall note was teaching a contrast against a non-existent L1 ambiguity. Only the first sentence changes; the following 'Em japonês essa separação é rígida: 犯罪 é sempre o ato, e a pessoa é 犯人.' still reads correctly and is not duplicated. Plain text inside a <text> element, no markup touched."
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "verdict": "fix",
+   "current": "(バン) - coque (penteado).",
+   "fix": "(バン) - van, furgão (veículo).",
+   "why": "Real defect, contradicts Layer A. corpus/vocab/n3.json vocab:1100090 (headword バン) glosses pt-BR ['van','furgão']; a hair bun is シニヨン or お団子, never バン. Text-only anchor between the tags, so the <vocab ref=\"vocab:バン\"/> chip and every tag span stay untouched."
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"このじけんのひがいはおおきい。その上、はんにんはまだつかまっていない\">",
+   "fix": "<jp reading=\"このじけんのひがいはおおきい。そのうえ、はんにんはまだつかまっていない\">",
+   "why": "Real defect. The reading attribute must be all kana but kept 上, so the furigana for その上 could not render. The lesson's own first paragraph already writes <jp reading=\"そのうえ\">その上</jp>. Only the attribute value changes; the anchor is the whole opening tag so the tag multiset is identical and no prose is injected into markup."
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "exercises[4].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate finding: same 'japonês gerado' sentence, same field, already handled by the earlier exercises[4].explanation entry in this batch. Applying it twice would either no-op or double-edit, so it is deliberately left alone."
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate finding: same バン gloss defect, already handled by the earlier body entry in this batch."
+  },
+  {
+   "slug": "les:n3-conectores-07",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate finding: same false 'crime' claim in the l1-pitfall note, already handled by the earlier body entry in this batch."
+  },
+  {
+   "slug": "les:n3-conectores-08",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source. The tip note now reads 'ユーモア (humor, graça) tem quatro batidas: ユ-ー-モ-ア, e o ー alonga a vogal anterior, contando como uma batida inteira.' The sibling finding landed; this one is stale and its quoted 'três batidas' text no longer exists."
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "O seed deste ponto sugere algo como",
+   "fix": "Dá vontade de dizer algo como",
+   "why": "Real defect. 'O seed deste ponto' is internal build jargon (the grammar-point seed record) and means nothing to a learner. The anchor is the plain-text run inside <text>, so the following <jp>静かだかなあ</jp> chip and all markup stay intact. The original applier missed it because the quoted sentence is split across <text>/<jp> elements."
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "exercises[4].answer.accept[3]",
+   "verdict": "fix",
+   "current": "幸せになりたいなあ",
+   "fix": "しあわせになれるといいかなあ",
+   "why": "Real defect. The prompt asks for 幸せ + になる + ～といい + ～かなあ, but the fourth accepted variant carries neither ～といい nor ～かなあ, so the learner can pass without producing the drilled pattern. Rewriting that one accept leaf (instead of deleting it) keeps the list shape, keeps a legitimate kana-only variant, and leaves no duplicate: the list becomes 幸せになるといいかなあ / しあわせになるといいかなあ / 幸せになれるといいかなあ / しあわせになれるといいかなあ. The field path points at the leaf string; answer.text and the container are untouched."
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate finding: same 'O seed deste ponto' leak, already handled by the earlier body entry in this batch."
+  },
+  {
+   "slug": "les:n3-conjectura-01",
+   "field": "exercises[4].prompt",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source. The prompt now reads 'usando 幸せ (felicidade) + になる + ～といい + ～かなあ', which is exactly what this finding asked for; the quoted three-block version no longer exists."
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "nega uma expectativa (\"não era para ser assim\").",
+   "fix": "nega a possibilidade com base no que se sabe (\"não tem como ser assim\").",
+   "why": "Real defect. はずがない denies that something can be the case, grounded in what the speaker knows; 'não era para ser assim' is はずだったのに / はずではなかった. The rewrite matches the wording already applied to exercises[3].prompt and explanation in this same lesson, so the lesson is now internally consistent. Plain text inside <text>; the <jp>はずがない</jp> chip before it is untouched."
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "de はずがない (expectativa frustrada)",
+   "fix": "de はずがない (não tem como ser, pelo que se sabe)",
+   "why": "Second location of the very same wrong gloss, explicitly called out by the critical sibling finding ('the same wrong gloss is repeated in the final checklist'). Without this the checklist would contradict the corrected note and exercises. Distinct anchor from the note fix, so both apply cleanly. Plain text inside a <check><text> element."
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "exercises[3].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source. The explanation now reads 'はずがない também nega a possibilidade (não tem como ser), mas com base numa expectativa/razão e em tom menos enfático que わけがない.' The quoted 'nega uma expectativa' wording is gone."
+  },
+  {
+   "slug": "les:n3-conjectura-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "e </text><jp reading=\"こく\">刻</jp><text>; o tempo",
+   "fix": "e no verbo </text><jp reading=\"きざむ\">刻む</jp><text> (\"entalhar, marcar\"); o tempo",
+   "why": "Real defect. The example listed 刻 as one of the words in which 刻 appears, with a bare on-reading, which teaches nothing. Layer A (corpus/kanji/n3.json kanji:刻) gives the kun reading きざ + む, so 刻む is the productive form. Tag multiset is identical before and after (</text>, <jp>, </jp>, <text>); only the reading attribute and the tag's Japanese content change, and the added Portuguese sits inside the <text> element, never inside a tag."
+  },
+  {
+   "slug": "les:n3-conjectura-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "De movimento (todos com o radical 辶):",
+   "fix": "De movimento (só 遠 e 逃 trazem o radical 辶; 戻 vem de 戸, porta, e 越 vem de 走, correr):",
+   "why": "Real defect, contradicts Layer A. corpus/kanji says 遠 and 逃 are radical 辵 (162), but 戻 is radical 戶 (63) and 越 is radical 走 (156). The corrected parenthesis keeps the grouping useful without the false claim. Plain text inside <text>; the four <kanji> chips that follow are untouched."
+  },
+  {
+   "slug": "les:n3-conjectura-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "je-(pausa)-tto.",
+   "fix": "je-(pausa)-to.",
+   "why": "Real defect, small but real. The note explains っ as a silent pause and then doubles the consonant, implying an extra beat on top of the pause. The sibling lesson n3-conjectura-03 writes じっと as 'ji-(pausa)-to', so this also restores consistency. Plain text inside <text>."
+  },
+  {
+   "slug": "les:n3-conjectura-04",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate finding: same false 辶 radical claim, already handled by the earlier body entry in this batch."
+  },
+  {
+   "slug": "les:n3-conjectura-04",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate finding: same je-(pausa)-tto romanization, already handled by the earlier body entry in this batch."
+  }
+ ]
+}

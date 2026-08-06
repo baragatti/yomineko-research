@@ -1,0 +1,46 @@
+{
+ "queue": "layer-a-pairing",
+ "checked_file": "research/derived/qa_queues/layer_a_pairing.json",
+ "check": "independent-adversarial-1",
+ "date": "2026-08-06",
+ "verdict": "accept",
+ "problems": [],
+ "evidence": {
+  "rows_checked": 54,
+  "fix_rows": 34,
+  "no_change_rows": 20,
+  "criterion_a_current_byte_exact": {
+   "method": "Loaded corpus/sentences/bank.json and compared each row's 'current' to the stored translation.en of the record with the matching slug.",
+   "result": "54/54 are full byte-exact equality with the stored translation.en. No paraphrase, no truncation, no near-miss."
+  },
+  "criterion_b_fix_is_value": {
+   "method": "Every fix string tested against the queue's own action_vocabulary and against instruction-shaped patterns (should be, replace, ->, instead of, embedded spaces).",
+   "result": "All 54 fixes are controlled-vocabulary tokens: none (20), flag-link-quality (16), unlink-en (12), relink-en:<digits> (6). No instruction phrasing, no arrow forms, no free text."
+  },
+  "criterion_c_locale_purity": {
+   "result": "The queue writes no field values at all, so no English can land in a pt-BR field and no pt-BR in a neutral enum. The action tokens are neutral English identifiers, matching the project's enum convention."
+  },
+  "criterion_d_no_authored_english": {
+   "method": "The only English strings the queue emits are in relink_candidates.proposed_en_verbatim_upstream and all_linked_en_ids. Each was compared byte-for-byte against research/datasets/tatoeba/eng_sentences.tsv.bz2.",
+   "result": "All 22 quoted English strings across the 7 relink_candidates blocks are byte-exact upstream Tatoeba rows. Zero authored English. No row qualifies for the critical-failure drop."
+  },
+  "criterion_e_fix_addresses_complaint": {
+   "result": "Each fix token matches the queue's stated criterion for its row. Re-link rows point at a target that genuinely renders the Japanese better than the currently stored row; unlink rows are all on Japanese ids with exactly one linked English (or, for sent:tatoeba-9454297, three linked English rows none of which carries the inferential auxiliary); flag rows are single-link pairings with one drifting element."
+  },
+  "layer_a_claims_independently_reverified": {
+   "tatoeba_links": "links.csv was streamed in full (28,193,526 rows) from research/datasets/tatoeba/links.tar.bz2. For all 47 tatoeba records the set of linked English ids matches what the queue reports, and every stated count (four for 11041763, three for 144418 / 188098 / 98198 / 9454297, two for 3506610 / 5046, seven for 373351) is exact.",
+   "single_link_assertions": "Every row whose rationale asserts a single upstream English link was confirmed to have exactly one linked English row. No unlink call was made where an unused better-fitting linked row existed.",
+   "jp_byte_exact": "All 47 stored jp strings equal the upstream jpn_sentences.tsv row for their id.",
+   "stored_en_is_a_real_link": "For all 47 tatoeba records the stored translation.en equals the text of one of the rows Tatoeba actually links to that Japanese id, confirming the headline that ingestion attached no wrong translation row.",
+   "jec": "All 7 jec records verified against raw_jec in db/corpus.sqlite: both ja and en are byte-exact, and raw_jec holds exactly one English per Japanese row, so the queue's one-to-one claim (re-linking structurally impossible) holds.",
+   "counts_block": "The declared counts (6 / 12 / 16 / 20, total 54) match the rows exactly. Ids are unique. verdict and fix agree on every row.",
+   "coverage": "The 137 dropped ops in the source queue phase3_layer_a_queue.json cover exactly 54 unique slugs; the output covers all 54 with no extras.",
+   "premise_rebuttal": "The source queue's premise was that these gen=false records have no translation.en. All 54 do have one, and each is byte-exact upstream, so the rebuttal in the headline is correct."
+  },
+  "judgment_calls_reviewed_and_accepted": [
+   "sent:tatoeba-170417 (The best is behind.) takes flag-link-quality rather than unlink-en even though the English reads as a temporal inversion. Accepted: flag-link-quality already de-trusts the pairing for pt validation, the stored pt-BR follows the Japanese, and the row states the risk plainly.",
+   "sent:tatoeba-169430 and sent:tatoeba-187580 take flag-link-quality where the drift is in the predicate or in added setting. Accepted as one-element drift under the queue's own criterion.",
+   "sent:jec-0453 takes flag-link-quality for a first-person versus third-person split while sent:tatoeba-227760 takes unlink-en for a similar person mismatch. Accepted: 227760 also inverts number and drops the humble register, so it is the stronger case."
+  ]
+ }
+}

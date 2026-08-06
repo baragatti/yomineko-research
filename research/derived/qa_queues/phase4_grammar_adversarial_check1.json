@@ -1,0 +1,87 @@
+{
+  "queue": "phase4-grammar",
+  "check": "adversarial independent check #1",
+  "checked_file": "research/derived/qa_queues/phase4_grammar.json",
+  "rows_total": 41,
+  "rows_verdict_fix": 33,
+  "rows_verdict_needs_human": 8,
+  "method": [
+    "Every row resolved against the real stored field in corpus/grammar/{n3,n4,n5}.json (slug -> record -> field).",
+    "Anchor test: `current` searched as a literal substring of the stored string; occurrence count recorded.",
+    "Partial anchors applied in-memory and the resulting field printed in full to check coherence.",
+    "Whole-field replacements diffed character-by-character against the stored value to catch collateral edits.",
+    "`fix` scanned for instruction-shaped language, em/en dashes, arrows, emoji, and tilde-codepoint drift.",
+    "Every factual claim in `why` cross-checked against the record's own label / formation / nuance and against the named sibling records.",
+    "Source findings and skip-list (research/derived/fable5_validation/phase4_grammar*.json) read to confirm each fix addresses the original complaint."
+  ],
+  "verdict": "accept",
+  "anchor_audit": {
+    "byte_exact_substring": 39,
+    "unique_occurrence": 39,
+    "documented_non_anchor": 2,
+    "note": "The two non-anchors are gram:gp-98#forms[0].en and #forms[0].pt, where forms[0].meaning is JSON null. Both are disclosed in the queue's own header note and in their `why` as set-value rows, not replacements. Verified: forms[0].meaning is literally null in corpus/grammar/n4.json."
+  },
+  "clean_checks": [
+    "No `fix` contains instruction language (no 'replace', 'should be', 'substituir', '->', '=>').",
+    "No em dash, en dash, arrow, or emoji in any `fix`.",
+    "No English prose written into a pt-BR field; no pt-BR written into a neutral-English enum. The three register rows write only values already in use in this registry (plain / casual / colloquial / written).",
+    "Tilde codepoints preserved per record: rows touching n3-* keep U+FF5E, rows touching the wave-dash records keep U+301C. No drift introduced.",
+    "Whole-field replacements (n3-te-hajimete x3, n3-te-hoshii x3, you-da formation/nuance x4) diff to exactly the intended changes and nothing else.",
+    "Check (d) does not apply: this is not the layer-a-pairing queue. Per YOMINEKO_CORPUS_BUILD_SPEC.md line 160 and line 335, grammar records are Layer C, so the structure_pattern / forms[].form rewrites are not Layer-A edits. Each Japanese string written is sourced from the record's own label, structure_pattern, or formation, never invented.",
+    "gram:ikou-kei-volitional-form (n4) exists and fully covers the volitional, so the gram:you-da deletions lose no coverage."
+  ],
+  "problems": [
+    {
+      "id": "gram:you-da#nuance_pt",
+      "severity": "major",
+      "issue": "The proposed value contains the clause 'e para impressao puramente visual, ~sou ou ~rashii'. It files rashii under visual impression. gram:rashii's own nuance.pt-BR in corpus/grammar/n4.json states the opposite: 'rashii passa a ideia de informacao de fora (ouvi dizer), enquanto you e mitai soam mais como impressao pessoal e sou (~souda de aparencia) e o palpite imediato pelo que se ve.' gram:sou-ni-sou-na is the visual-impression entry. As written the new nuance would contradict two sibling records and mis-teach rashii. The rest of the row (volitional contamination in nuance.pt-BR) is correct and verified.",
+      "action": "needs-human"
+    },
+    {
+      "id": "gram:you-da#nuance_en",
+      "severity": "major",
+      "issue": "Same defect on the en side: 'and for a purely visual impression, ~sou or ~rashii'. gram:rashii places rashii in the heard/external-information slot and gram:sou-ni-sou-na owns the visual slot. The volitional-contamination diagnosis for nuance.en is correct and verified; only this clause of the proposed value is wrong.",
+      "action": "needs-human"
+    },
+    {
+      "id": "gram:you-da#expl_pt",
+      "severity": "minor",
+      "issue": "Anchor boundary is off by one character relative to its en twin. The stored explanation.pt-BR has a space immediately before 'Ela expressa uma sugestao', and the anchor starts at 'Ela'. With the empty-string fix the field ends 'que e outra estrutura. ' with a trailing space in a learner-facing field. The en row anchored the same passage starting at its leading space (its `why` says so explicitly) and ends clean. Anchor itself is byte-exact and occurs once.",
+      "action": "needs-human"
+    },
+    {
+      "id": "gram:gp-115#forms[0].en",
+      "severity": "minor",
+      "issue": "Verdict is 'fix' but the row is coupled to gram:gp-115#forms[0].form, which the same queue marks 'needs-human'. Applied alone, forms[0] reads form 'reru' with meaning 'to be able to / can (godan potential: final -u becomes -eru, as in hanaseru, kakeru)' - the stored form string is a counter-example to its own gloss, and forms[1] still reads the old '(potential suffix, ichidan)' shape. The gloss content is correct and grounded in the record's own formation.en; only the sequencing is unsafe.",
+      "action": "needs-human"
+    },
+    {
+      "id": "gram:gp-115#forms[0].pt",
+      "severity": "minor",
+      "issue": "Same coupling as the en twin: verdict 'fix' while gram:gp-115#forms[0].form is 'needs-human', so applying it alone leaves form 'reru' glossed as 'o -u final vira -eru'. Content itself is correct and matches the record's own formation.pt-BR.",
+      "action": "needs-human"
+    },
+    {
+      "id": "gram:gp-152#forms[i].en",
+      "severity": "minor",
+      "issue": "The id carries the literal index token 'i' (also on the .pt twin), while the third row for the same record uses 'gram:gp-152#forms[0].form'. phase4_grammar_skipped.json shows these exact two fields were skipped last round with reason 'list-shaped or unmapped field', so the unresolved index is what blocked them. gram:gp-152 has exactly one form entry, and both anchors are byte-exact and unique against forms[0].meaning, so the target is unambiguous once the index is resolved. Content of both fixes is correct.",
+      "action": "keep"
+    }
+  ],
+  "no_change_confirmations": [
+    "gram:cha-ikenai-ja-ikenai#expl_pt: the stored field really does contain the stale sentence followed by the corrected one back to back; the anchor deletes only the stale one and the result reads cleanly.",
+    "gram:teiru-tokoro#expl_pt: confirmed the stored explanation.pt-BR literally ends with 'Substituir a frase final por: \"...\"', escaped backslashes included. The source finding's own `fix` was that instruction, so the corruption is traceable. The queue's replacement is a value.",
+    "gram:n3-shika-nai#label_pt: the source finding quoted the already-corrected text as `current`, which is why it was skipped for 'anchor text not found'. The queue re-anchored to the real stored 'nao resta outra senao / so da para (shikanai)' and it matches byte-exact.",
+    "gram:gp-33#forms[0].en: house-style claim verified - gp-32 forms[0].meaning.en is 'was / were (casual)' and gp-34 is 'was not / were not (casual)'.",
+    "gram:te-iku#forms[0].en/pt: verified gram:te-kuru's glosses end '(movement or change toward you)' and '(movimento ou mudanca em direcao a voce)', and that 'to come to' / 'passar a' are gram:you-ni-naru's glosses.",
+    "gram:n3-da-mono-da#register and #pattern: verified gram:n3-nda-mon is already tagged casual+colloquial and already owns structure_pattern '~ndamon', so excluding ~damon from this record's pattern avoids a duplicate. The source finding's note that n3-nda-mon is 'likewise tagged neutral' is stale; the queue correctly did not propagate it.",
+    "gram:n3-chatta#register: verified gram:te-shimau-chau is tagged plain+casual+colloquial.",
+    "gram:you-da: the volitional contamination is real across explanation, formation, nuance, forms and register. refs.also_known_as still contains 'Verb[you]', consistent with two grammar points having been merged during ingestion.",
+    "All eight pt-BR diacritic rows (n3-te-hajimete, n3-te-hoshii) diff to accent restorations only."
+  ],
+  "out_of_scope_observations": [
+    "gram:n3-te-kureto explanation.en reads 'Literally it is \"they told me do such-and-such\"' - missing 'to', the same defect the pt row fixes. No row covers the en side.",
+    "forms[0].meaning is JSON null on every n3-* record inspected (n3-da-mono-da, n3-nda-mon, n3-ppai, n3-chatta, n3-shika-nai, n3-te-hajimete, n3-te-hoshii, n3-te-kureto, n3-zu-ni). Only gp-98's null is queued, because the source findings only flagged the authored N4/N5 set.",
+    "Eleven `why` fields are written in pt-BR (gp-115#forms[0].pt, gp-152#forms[i].pt, te-iku#forms[0].pt, te-shimau-chau#forms[0].pt, you-da#forms[0].pt, you-da#nuance_pt, you-da#expl_pt, n3-shika-nai#label_pt, n3-te-hajimete#expl_pt, n3-te-hoshii#expl_pt, n3-zu-ni#label_pt). CLAUDE.md requires internal notes in English. No effect on corpus data."
+  ]
+}

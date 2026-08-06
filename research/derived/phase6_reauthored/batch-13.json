@@ -1,0 +1,165 @@
+{
+  "batch": 13,
+  "fixes": [
+    {
+      "slug": "les:n4-forma-simples-02",
+      "field": "exercises[4].prompt",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint was the register contradiction 'tom casual' vs 'expressao neutra'. The stored prompt already reads \"Voce reconhece o Tom de longe e quer soltar 'Ora, nao e o Tom?!'. Use o nome トム e a expressao neutra de constatacao (ではないか).\" The words 'em tom casual' are gone and the target form is named, so the contradiction no longer exists."
+    },
+    {
+      "slug": "les:n4-forma-simples-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"あたらしいかさはせんえんしかなかった\">新しい傘は千円しかなかった</jp><text> = \"o guarda-chuva novo custou só mil ienes\". Note o negativo no passado, </text><jp>なかった</jp>",
+      "fix": "<jp reading=\"あたらしいかさはせんえんしかしなかった\">新しい傘は千円しかしなかった</jp><text> = \"o guarda-chuva novo custou só mil ienes\". Aqui o verbo する tem o sentido de \"custar\". Note o negativo no passado, </text><jp>しなかった</jp>",
+      "why": "Real defect. With ある/ない, 千円しかなかった states existence/possession, and the same lesson teaches exactly that two blocks earlier ('千円しかない = so tenho mil ienes'), so glossing it as 'custou' contradicts the lesson itself. Price with しか needs する or かかる. Swapped to 千円しかしなかった with the matching reading, updated the stale pointer なかった to しなかった, and added the one-clause gloss that する here means 'custar'. Tag multiset unchanged (jp, text, jp)."
+    },
+    {
+      "slug": "les:n4-forma-simples-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the preceding entry for the same slug+field (identical 新しい傘は千円しかなかった complaint). Applying it twice would fail once the first replacement lands, so this one is deliberately empty."
+    },
+    {
+      "slug": "les:n4-forma-simples-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": " em poucas palavras antigas.",
+      "fix": " em um grupo fechado de palavras comuns: 真夏 (まなつ, pleno verão), 真上 (まうえ, bem em cima), 真面目 (まじめ, sério e aplicado).",
+      "why": "Real defect. The bare ま reading of 真 is not archaic: it is the reading in everyday words (真夏, 真冬, 真上, 真下, 真夜中, 真面目). Anchored inside the <text> node only, so no markup is touched and the sibling <jp>ま</jp> chip stays intact."
+    },
+    {
+      "slug": "les:n4-forma-simples-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"だい\">タクシー代</jp>",
+      "fix": "<jp reading=\"タクシーだい\">タクシー代</jp>",
+      "why": "Real defect. The reading attribute covers the whole enclosed span, so reading=\"だい\" over タクシー代 renders a wrong furigana for the whole word. Sibling items in the same list already use the full reading (電気代 read でんきだい and 電話代 read でんわだい). Attribute value only; tag multiset unchanged."
+    },
+    {
+      "slug": "les:n4-forma-simples-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"だい\">バス代</jp>",
+      "fix": "<jp reading=\"バスだい\">バス代</jp>",
+      "why": "Same defect as the タクシー代 item, second occurrence: reading=\"だい\" spans the whole word バス代, which reads バスだい. Attribute value only; tag multiset unchanged."
+    },
+    {
+      "slug": "les:n4-forma-simples-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Fourth duplicate entry for this slug+field. The two distinct complaints it carried (the 'palavras antigas' claim and the タクシー代/バス代 readings) are already covered by the three preceding entries; a fourth edit would have no anchor left."
+    },
+    {
+      "slug": "les:n4-forma-simples-07",
+      "field": "exercises[4].explanation",
+      "verdict": "fix",
+      "current": "Por ser casual, não leva です no fim: ",
+      "fix": "Por ser casual, o verbo fica na forma simples 悪くなった, e não na polida 悪くなりました: ",
+      "why": "Real defect. 悪くなった is a verb, so its polite counterpart is 悪くなりました; saying the casual form 'does not take です' implies the ungrammatical 悪くなったです. Rewritten around the ます/ました contrast. The glosses that follow ('de repente', 'o tempo', 'piorou', forma simples passada) are left untouched."
+    },
+    {
+      "slug": "les:n4-kanji-exame-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": ": oferenda de flores. Palavra do conjunto N4; toque para ver leituras e exemplos.",
+      "fix": ": oferenda de flores, usada em cerimônias de memorial. Palavra extra deste tópico, fora da lista básica do N4; toque para ver leituras e exemplos.",
+      "why": "Real defect. 献花 appears in no mainstream N4 list and its kanji 献 sits far above N4, so the learner-facing claim 'Palavra do conjunto N4' is false; the section heading right above already calls it 'Palavra extra'. Anchored inside the <text> node, so the <vocab ref=\"vocab:献花\"/> chip is preserved (the reviewer's own suggestion would have deleted it and left a dangling colon). Note for the human pass: corpus/vocab n4 entry 献花 carries level_agreement 1/1, below the >=3-list rule, and should be re-leveled upstream."
+    },
+    {
+      "slug": "les:n4-keigo-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "quer dizer \"por causar trabalho/transtorno\" (a parte </text><jp>かけて</jp><text> é a forma </text><jp>て</jp><text> do verbo \"causar\")",
+      "fix": "quer dizer \"por causar trabalho/transtorno\" (</text><jp>おかけして</jp><text> é a forma </text><jp>て</jp><text> de おかけする, a versão humilde de かける, \"causar\")",
+      "why": "Real defect. The quoted form is お手数をおかけして (お + かけ + して); the string かけて does not occur in it, and the て belongs to する, not to かける. The corpus dissection of sent:tatoeba-236843 segments it the same way, and exercise 3 of this same lesson already describes おかけして correctly, so the body contradicted its own material. Tag multiset preserved exactly (text, jp, text, jp, text)."
+    },
+    {
+      "slug": "les:n4-keigo-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the preceding entry (same かけて/おかけして segmentation complaint on the same field). Covered there."
+    },
+    {
+      "slug": "les:n4-keigo-03",
+      "field": "description",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint was the accent error 'quem prática a ação'. The stored description already reads 'a linguagem que eleva quem pratica a ação' with the correct verb form, so there is nothing left to fix."
+    },
+    {
+      "slug": "les:n4-keigo-04",
+      "field": "exercises[0].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint was 'quem PRÁTICA a ação'. The stored explanation already reads 'eleva e respeita quem PRATICA a ação (cliente, chefe, idoso, professor)', unaccented and correct."
+    },
+    {
+      "slug": "les:n4-keigo-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": ": internação. Depois de uma internação, você pode dizer a uma enfermeira </text><jp reading=\"ごあんないします\">ご案内します</jp><text> (\"eu acompanho\").",
+      "fix": ": internação. Na hora da internação, é a enfermeira que diz </text><jp reading=\"ごあんないします\">ご案内します</jp><text> (\"eu acompanho o senhor\") ao levar você até o quarto.",
+      "why": "Real defect. ご案内します is said by whoever guides, so a patient saying it to a nurse inverts the kenjougo direction the lesson itself teaches. The sibling bullets already narrate the service provider in third person (o organizador faz ご説明いたします, o guia oferece), so putting the nurse in the speaker seat matches the list. Tag multiset preserved (text, jp, text); the <vocab ref=\"vocab:入院\"/> chip is outside the anchor and untouched."
+    },
+    {
+      "slug": "les:n4-keigo-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": ") usam ",
+      "fix": ") costumam usar ",
+      "why": "Real defect. The culture note states the kango-suru takes-ご rule categorically, and the same lesson contradicts it two blocks later with お電話いたします, which it analyzes as 'お〜 + o verbo humilde いたします'. Unhedged, the rule licenses the ungrammatical ご電話いたします. Hedging the verb is a pure text-node edit; the <vocab ref=\"vocab:翻訳\"/> chip and every <jp> chip in the note are untouched."
+    },
+    {
+      "slug": "les:n4-keigo-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(\"eu acompanho/oriento\"). A ideia é a mesma; só muda o prefixo.",
+      "fix": "(\"eu acompanho/oriento\"). A ideia é a mesma; só muda o prefixo. Existem exceções que você decora uma a uma: 電話, por exemplo, pede お (お電話いたします).",
+      "why": "Second half of the same culture-note defect: after hedging 'costumam usar', the note still needs the concrete exception the lesson itself uses later. Appended inside the existing <text> node, so no tag is added and no Portuguese lands inside an attribute."
+    },
+    {
+      "slug": "les:n4-keigo-05",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Fourth duplicate entry for this slug+field. Its two distinct complaints (the reversed ご案内します scene and the categorical kango-takes-ご rule) are already handled by the three preceding entries."
+    },
+    {
+      "slug": "les:n4-obrigacao-01",
+      "field": "exercises[2].prompt",
+      "verdict": "fix",
+      "current": "'necessidade' (em kana): ",
+      "fix": "'necessidade': ",
+      "why": "Real defect. The cloze demands the answer 'em kana' while answer.text is the kanji 必要 with no accept list, so a learner who obeys the instruction and writes ひつよう is graded wrong. Dropping the kana demand aligns the prompt with the key; the Portuguese hint in parentheses at the end of the prompt is kept."
+    },
+    {
+      "slug": "les:n4-obrigacao-01",
+      "field": "exercises[2].explanation",
+      "verdict": "fix",
+      "current": "Aceita-se também escrever ひつよう em kana.",
+      "fix": "A leitura é ひつよう, mas escreva 必要 em kanji para a resposta ser aceita.",
+      "why": "Duplicate skipped entry for exercises[2].prompt; the prompt half is fixed by the preceding entry, so this one closes the other half of the same three-way inconsistency the reviewer flagged. answer is {text: 必要, full: 電灯が必要です} with no accept list, and grading in this bank is literal (sibling ex-5 carries an explicit accept array), so the explanation was promising an acceptance that does not exist. A mechanical string applier cannot create the missing accept key, so the honest fix is to stop promising it. Retargeted to exercises[2].explanation because that is where the false sentence lives."
+    },
+    {
+      "slug": "les:n4-obrigacao-01",
+      "field": "description",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint was the missing space in 'dia a dia(objetos'. The stored description already reads 'Vocabulário do dia a dia (objetos da casa e roupas) reforça o padrão.' with the space present."
+    }
+  ]
+}

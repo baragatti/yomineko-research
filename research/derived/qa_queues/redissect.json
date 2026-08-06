@@ -1,0 +1,279 @@
+{
+ "queue": "redissect",
+ "rows": [
+  {
+   "id": "sent:gen-0ef54fed8af5",
+   "verdict": "needs-human",
+   "current": "朝は味噌の汁を飲みます",
+   "fix": "",
+   "why": "The eight mode-C tokens are a faithful parse of the stored jp: no boundary, reading, lemma or gloss defect exists against it, and position 2 (味噌) carries vocab_id 971, which is this record's declared target word (tag 971). Only the pending jp change makes the array stale, and it cannot be re-run blind: the vocab registry has 味噌 (971) and 汁 (3551) as separate entries and no entry for the compound 味噌汁, so a merged token comes back with vocab_id null and the sentence loses its only link to its target word. Whether mode C even returns 味噌汁 as one morpheme is analyzer output. Note also that position 4 (汁) already carries vocab_id null although entry 3551 exists, so this record's links predate part of the registry."
+  },
+  {
+   "id": "sent:gen-138c8e26cf51",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 336",
+   "fix": "\"vocab_id\": 1338",
+   "why": "Wrong lemma link on position 0. The token 背 is read せ, but it points at entry 336, whose kana is せい; the entry whose kana is せ is 1338, which is also this record's declared target vocab (tag 1338). dissect.py resolves links through a form table keyed on the written form alone (_vocab_id in scripts/ingest/dissect.py), so the reading is never consulted and the first entry registered for 背 wins. 12 tokens read せ carry the 336 link corpus-wide. This applies to the array as it stands; if the 背中 re-author in the jp queue is accepted instead, position 0 is replaced and entry 1229 (背中) becomes the link."
+  },
+  {
+   "id": "sent:gen-138c8e26cf51",
+   "verdict": "needs-human",
+   "current": "背がいたいので病院に行く",
+   "fix": "",
+   "why": "Two defects that a re-run will not settle. First, particle mis-analysis: ので is held as two tokens, position 3 の tagged 準体助詞 and position 4 で lemmatised to the copula だ in the continuative, and both carry null role and null gloss, so the learner-facing breakdown shows an unexplained で and the record's own explanation apologises for the split. The correct unit is the single conjunctive particle ので, which is a mode-C boundary outcome. Second, gloss mismatch on position 0: the gloss reads back and costas, but both 背 entries in the registry (336 and 1338) gloss as height and stature, so the gloss matches neither the linked lemma nor the target. Accepting the queue's 背中 re-author removes target vocab 1338 from the sentence altogether, which is a content decision, not a parse decision."
+  },
+  {
+   "id": "sent:gen-67098aef1bd0",
+   "verdict": "needs-human",
+   "current": "お金をためて、然うして車を買った",
+   "fix": "",
+   "why": "Boundary error that breaks the target-vocab link. The declared target is entry 1340 (然うして, kana そうして), and the dissection never links it: mode C cut the conjunction into three tokens, position 5 然う as an adverb with vocab_id null, position 6 し, and position 7 て, so the record's own target word has no anchor. Two homophone mis-links ride along: position 6 し links entry 334 (刷る, to print) where the verb is する, entry 1358 (為る); and position 2 ため, lemma ためる, links entry 1089 (為, for the sake of) where the verb entry is 3725 (溜める, ためる). Restoring one 然うして token is analyzer output, and the orthography change proposed in the jp queue does not by itself force the merge, since 然うして and そうして are registered as two forms of the same entry. This record also carries mode-A subunits (お, 金) at array indices 0 and 1, so array index and position do not agree here."
+  },
+  {
+   "id": "sent:gen-68448be6940b",
+   "verdict": "no-change",
+   "current": "あの店は安くはないが おいしい",
+   "fix": "あの店は安くはないが おいしい",
+   "why": "The complaint is stale. Position 7 is the stray U+0020 and its reading and romaji are already blank, so no phantom きごう or kigou is present anywhere: kana is あのみせわやすくわないがおいしい and romaji is anomisewayasukuwanaigaoishii, and the concatenated C-token readings reproduce kana exactly. scripts/fable5_fix_whitespace_tokens.py already repaired this class corpus-wide and deliberately leaves jp alone, because deleting the space breaks the invariant that concatenated C-token surfaces equal jp, and because in other records the space separates two sentences. The queue's proposal to write a single space into this token's reading and romaji would reinsert that space into kana and undo the repair. If the space is nevertheless dropped from jp, the token has to be deleted in the same operation and おいしい renumbered from position 8 to position 7."
+  },
+  {
+   "id": "sent:gen-686faf1ec51d",
+   "verdict": "fix",
+   "current": "狭い駅で人がたくさんいる",
+   "fix": "狭い駅に人がたくさんいる",
+   "why": "Nothing in the array is wrong against the stored jp: readings, POS, the attributive label on 狭い and the terminal label on いる are all right, and で is correctly tagged 格助詞 for what is written. The pending particle correction touches exactly one slot, because で and に are both one-character 格助詞: position 2 takes surface, lemma and reading に with romaji ni, the C-token count stays at 7, no other position shifts, and no vocab link moves (particles are never linked). Re-running the dissector on this value reproduces the array with no further intervention."
+  },
+  {
+   "id": "sent:gen-7ca88b215555",
+   "verdict": "fix",
+   "current": "此処はとても静かだ",
+   "fix": "ここはとても静かだ",
+   "why": "Boundary-neutral orthography change confined to position 0. Its reading ここ, romaji koko, pronoun POS and vocab_id 246 already describe the kana form, and entry 246 is headword 此処 with kana ここ, so the link survives: dissect.py indexes vocab by kana as well as by headword and form. lemma is taken from dictionary_form, not normalized_form (scripts/ingest/dissect.py line 159), so the ateji does not creep back in through the lemma field. C-token count stays at 5."
+  },
+  {
+   "id": "sent:gen-7dbe2462fc9a",
+   "verdict": "fix",
+   "current": "\"surface\": \"え\",\n        \"lemma\": \"え\",\n        \"reading\": \"え\",\n        \"romaji\": \"e\",\n        \"pos\": \"interjection\",\n        \"pos_coarse\": \"感動詞\",\n        \"pos_fine\": \"フィラー\",",
+   "fix": "\"surface\": \"絵\",\n        \"lemma\": \"絵\",\n        \"reading\": \"え\",\n        \"romaji\": \"e\",\n        \"pos\": \"noun\",\n        \"pos_coarse\": \"名詞\",\n        \"pos_fine\": \"普通名詞\",",
+   "why": "POS mis-analysis caused by the kana spelling. Position 3 is the direct object of 描く, it carries vocab_id 85 (絵, picture, drawing), its role says direct object and its gloss spells the kanji out as drawing (絵) as a workaround, yet the analyzer tagged it 感動詞 フィラー, the filler interjection え. The vocab link already points at the right lexeme, so only the surface and the three POS fields disagree with it. This edit must be applied together with the jp value 厚い紙に絵を描いた from the jp queue, otherwise the concatenated C-token surfaces stop reproducing jp. Not a defect: the reading えがい on position 5 is a legitimate alternative to かい for 描いた, and kana and romaji are already consistent with it."
+  },
+  {
+   "id": "sent:gen-7dd5dc18aba8",
+   "verdict": "needs-human",
+   "current": "\"en\": \"back of the hand\"",
+   "fix": "",
+   "why": "Two defects that pull in opposite directions. Gloss does not match the token: 手の裏 is dictionary-defined as the palm, the same referent as 手のひら, while the back of the hand is 手の甲; both locales of this gloss say the opposite, and so do both translations. Target vocab unlinked: the declared target is entry 1088 (裏, うら) and no token links it, because 手の裏 was taken as a single 普通名詞 with vocab_id null, which also hides the internal の from the breakdown. Correcting the gloss alone leaves a sentence whose translations contradict it; taking the queue's 紙の裏 splits the single token into three and restores a 裏 link, but that is a re-parse plus a content decision about what the sentence teaches."
+  },
+  {
+   "id": "sent:gen-8cc2f196d1e9",
+   "verdict": "fix",
+   "current": "彼女の毛はとてもきれいだ",
+   "fix": "猫の毛はとてもきれいだ",
+   "why": "No token defect: position 2 (毛) carries vocab_id 1063, this record's target word, and its gloss already covers the fur sense, so nothing about 毛 needs redoing. The pending possessor change lands on position 0 alone: 猫 is a single 名詞 with registry entry 492, so the C-token count stays at 7, POS moves from pronoun to noun, and surface, lemma, reading ねこ, romaji neko and vocab_id follow. Any single-noun possessor produces the same one-slot delta."
+  },
+  {
+   "id": "sent:gen-9467d40879f4",
+   "verdict": "fix",
+   "current": "此処に座ってもいいですか",
+   "fix": "ここに座ってもいいですか",
+   "why": "Same one-slot delta as the other 此処 record: position 0 keeps reading ここ, romaji koko, pronoun POS and vocab_id 246 (headword 此処, kana ここ), so only surface and lemma change and the C-token count stays at 8. The rest of the array, including て + も + いい held as three separate tokens for the permission pattern, is correct as it stands."
+  },
+  {
+   "id": "sent:gen-a1650baf4ac0",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 196",
+   "fix": "\"vocab_id\": 257",
+   "why": "Wrong lemma link on position 0: この points at entry 196, which is 九 (nine). This is the documented この homophone mis-link and it is real in the data: 367 tokens spelled この carry the numeral link corpus-wide. The demonstrative entry is 257 (此の, kana この). The form-table lookup returns whichever entry was registered first for the form この and never checks POS."
+  },
+  {
+   "id": "sent:gen-a1650baf4ac0",
+   "verdict": "needs-human",
+   "current": "この問題が解けない学生はない",
+   "fix": "",
+   "why": "Nothing is wrong against the stored jp: the final ない is correctly analyzed as the non-independent 形容詞 existential with vocab_id 462 (無い), and 解け is correctly the irrealis of 解ける. The pending correction to 学生はいない is a boundary change rather than a value change: the single final token becomes two, い (the irrealis of the verb いる) followed by the auxiliary ない (助動詞-ナイ), taking the C-token count from 8 to 9. That renumbering matters, because the queue's own edits address tokens[7].note.en and tokens[7].note.pt-BR, and after the re-parse position 7 is い, not ない."
+  },
+  {
+   "id": "sent:gen-aef805c4840d",
+   "verdict": "fix",
+   "current": "妹はピアノを習いたい",
+   "fix": "私はピアノを習いたい",
+   "why": "The array is correct for the stored jp and the target vocab 476 (習う) sits on position 4, untouched by the change. Position 0 is the only affected slot: 私 is one morpheme, so the C-token count stays at 6, POS moves from noun to pronoun, vocab_id moves from 66 to 690, and the reading comes back わたし without ambiguity because dissect.py pins 私 to わたし in its COMMON_READING table."
+  },
+  {
+   "id": "sent:gen-b2ed6e8bb267",
+   "verdict": "fix",
+   "current": "車を外国に輸入する会社です",
+   "fix": "車を外国から輸入する会社です",
+   "why": "Boundary-neutral: に and から are both single 格助詞 tokens, so position 3 takes surface, lemma and reading から with romaji kara, the C-token count stays at 8, and no other position shifts. The rest of the array is right, including 輸入 as a 名詞 carrying the target vocab 1107 and する as its サ変 verb in the attributive. One Layer-B string rides along: position 2's role names に as a destination complement and is stale once the particle changes."
+  },
+  {
+   "id": "sent:gen-b2ed6e8bb267",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 334",
+   "fix": "\"vocab_id\": 1358",
+   "why": "Wrong lemma link on position 5: する points at entry 334, which is 刷る (to print). This is the documented homophone mis-link and it is the largest instance of the class, 716 tokens of する and し corpus-wide. The light-verb entry is 1358 (為る, する). Caution for whoever applies it corpus-wide: entry 334 is tagged n5 and 1358 is tagged n4, so repointing the class also moves those tokens across level buckets."
+  },
+  {
+   "id": "sent:gen-b7b28dfc0928",
+   "verdict": "fix",
+   "current": "このケーキは五百円いかです",
+   "fix": "このケーキは五百円以下です",
+   "why": "The homophone worry does not apply here: position 5 いか already carries vocab_id 932, which is 以下, not the squid entry, so the link is right and only the spelling is not. The change is boundary-neutral because 以下 is one morpheme like いか: reading いか and romaji ika are unchanged and the C-token count stays at 7. The token's role already cites 以下 in parentheses, the same workaround the kana spelling forced on the gloss of the え token in sent:gen-7dbe2462fc9a."
+  },
+  {
+   "id": "sent:gen-b7b28dfc0928",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 196",
+   "fix": "\"vocab_id\": 257",
+   "why": "Wrong lemma link on position 0, the same この to 九 mis-link as in sent:gen-a1650baf4ac0. The demonstrative entry is 257 (此の, kana この). Independent of the 以下 spelling change and safe to apply on its own."
+  },
+  {
+   "id": "sent:gen-cb6562f41e17",
+   "verdict": "fix",
+   "current": "私のお兄さんは背が高い",
+   "fix": "友達のお兄さんは背が高い",
+   "why": "Position 0 is the only affected slot: 友達 is one morpheme with registry entry 454, so the C-token count stays at 7, reading ともだち and romaji tomodachi follow the surface, POS moves from pronoun to noun, and the target vocab 122 (お兄さん) on position 2 is untouched. Position 4 (背, reading せ, vocab_id 336) is correct in this record, since here the word really is stature."
+  },
+  {
+   "id": "sent:gen-cb6562f41e17",
+   "verdict": "needs-human",
+   "current": "\"position\": 2,\n        \"split_mode\": \"A\",\n        \"surface\": \"お\",",
+   "fix": "",
+   "why": "This record's tokens array is not indexable by array position, and the queue's edits for it are mis-addressed. The two mode-A subunits of お兄さん (お and 兄さん, both carrying parent position 2) sit at array indices 0 and 1, ahead of every mode-C token, so array index 0 is the honorific prefix お while position 0 is 私. The queue proposes tokens[0].r, tokens[0].romaji, tokens[0].gloss.en and tokens[0].gloss.pt-BR for this sentence, which would write ともだち, tomodachi and the friend gloss onto the prefix お and leave 私 untouched. Any pass acting on this queue has to resolve token paths by the position field with split_mode C, not by array index. Of the 23 sentences in this queue only this one and sent:gen-67098aef1bd0 carry mode-A rows, and only this one has token-path edits proposed against them."
+  },
+  {
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "fix",
+   "current": "雨が降る様ですね",
+   "fix": "雨が降るようですね",
+   "why": "Boundary-neutral: position 3's reading よう, romaji you, na-adjective POS and 助動詞語幹 subtype already describe the kana form, so only surface and lemma change and the C-token count stays at 6. This is the token-side half the verifier found missing; without it the concatenated C-token surfaces stop reproducing jp."
+  },
+  {
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "fix",
+   "current": "main verb (within 様です)",
+   "fix": "main verb (within ようです)",
+   "why": "Stale cascade on position 2's role in en. The verifier flagged the pt-BR side of this same field; the en side carries the identical old spelling and was missed by both. Conditional on the jp value above being applied."
+  },
+  {
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "fix",
+   "current": "verbo principal (dentro do 様です)",
+   "fix": "verbo principal (dentro do ようです)",
+   "why": "The exact incomplete cascade the verifier rejected the earlier resolution over: position 2's role in pt-BR still names the 様です spelling while the rest of the record moves to ようです. Conditional on the jp value above being applied."
+  },
+  {
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 1176",
+   "fix": "\"vocab_id\": 1199",
+   "why": "Wrong lemma link on position 3, and it is a homograph split the registry already resolves. The token is read よう and heads ようです, but it points at entry 1176, which is 様 read さま, the honorific suffix. The entry read よう is 1199, which is also this record's declared target vocab (tag 1199), so as stored the sentence has no link to its own target word. 7 tokens read よう carry the さま link corpus-wide. Independent of the spelling change and safe to apply on its own."
+  },
+  {
+   "id": "sent:gen-960cef5443b3",
+   "verdict": "needs-human",
+   "current": "いちにちからあたらしいしごとがはじまる",
+   "fix": "",
+   "why": "The declared target is entry 401, １日 read ついたち, the first day of the month, and both translations say the 1st, but the dissection splits the date into position 0 (１, linked to entry 55, 一, read いち) and position 1 (日, linked to entry 484, 日, whose kana is ひ, stored here as にち), so kana and romaji spell いちにち, which is the duration word 一日, entry 56. The target is unlinked and the phonetic fields contradict the translations. ついたち is a fused reading of the whole unit and cannot be distributed over the two characters, which is why the earlier attempt to store つい on １ and たち on 日 was rejected: those are readings of neither character and would show as false furigana. The correct unit is one token spanning １日 with reading ついたち and vocab_id 401. That is a boundary merge, so it comes either from the analyzer or from the sanctioned manual route already used for this class, the verified reading overrides registered by scripts/fable5_register_reading_overrides.py (same shape as the 10年 and ５月 cases listed there)."
+  },
+  {
+   "id": "sent:gen-986d061ae368",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 1184",
+   "fix": "\"vocab_id\": 1356",
+   "why": "Wrong lemma link on position 4. The token 尤も is the concessive conjunction, entry 1356 (尤も, natural, reasonable, quite right), which is also this record's declared target vocab (tag 1356); it points instead at entry 1184, which is 最も (most, to the greatest degree). The two share the reading もっとも and the form table registered 尤も as an alternate spelling of 最も, so the first-registered entry won and the sentence has no link to its own target word. 3 tokens spelled 尤も carry the 最も link corpus-wide."
+  },
+  {
+   "id": "sent:gen-986d061ae368",
+   "verdict": "fix",
+   "current": "\"inflection\": \"attributive\"",
+   "fix": "\"inflection\": \"terminal\"",
+   "why": "Wrong inflection label on position 2. 正しい closes the first clause before the 読点 and is followed by the conjunction 尤も, so it modifies nothing; its own role says adjective (predicate) and its conjugation_note says dictionary form, both of which contradict the attributive label. 形容詞 終止形 and 連体形 are homographs and the analyzer defaulted to the attributive reading. Position 6 (厳しい), in the same syntactic slot at the end of the second clause, is labelled terminal. Separately, the 常体 and 敬体 mix that the upstream finding argued about is a question about the jp, not about any token: no token in this array is wrong on that count."
+  },
+  {
+   "id": "sent:gen-986d061ae368",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 41",
+   "fix": "\"vocab_id\": 758",
+   "why": "Wrong lemma link on position 0: the token is read かれ and glossed he, but it points at entry 41, which is 彼 read あれ, that person, distant from both speakers. The entry read かれ is 758. 297 tokens read かれ carry the あれ link corpus-wide. Caution for a corpus-wide pass: entry 41 is tagged n5 and 758 is tagged n4, so repointing the class also moves those tokens across level buckets."
+  },
+  {
+   "id": "sent:gen-bc13250dc26f",
+   "verdict": "no-change",
+   "current": "明日までに直します、承知しました",
+   "fix": "明日までに直します、承知しました",
+   "why": "Nothing in the array is wrong against the stored jp: the C-token surfaces reproduce jp, the readings reproduce kana, and 承知 as a 名詞 with vocab_id 1156 (the declared target) followed by し, まし and た is the right analysis. The pending change is a clause reorder, not a re-parse: the same ten tokens taken in the order 6, 7, 8, 9, 5, 0, 1, 2, 3, 4 and renumbered 0 through 9 reproduce 承知しました、明日までに直します without invoking the analyzer, after which kana and romaji rebuild from the reordered readings. The verifier is right that applying the reorder while leaving the array untouched puts every position at odds with the sentence. One judgement note, not a defect: position 0 (明日) is read あす while its linked entry 16 has kana あした; both readings are real and kana already commits to あす."
+  },
+  {
+   "id": "sent:gen-bc13250dc26f",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 334",
+   "fix": "\"vocab_id\": 1358",
+   "why": "Wrong lemma link on position 7: the し of 承知しました points at entry 334, which is 刷る (to print). The light-verb entry is 1358 (為る, する). Same class as sent:gen-b2ed6e8bb267 and sent:gen-67098aef1bd0, and independent of the clause reorder."
+  },
+  {
+   "id": "sent:gen-efb21932a32f",
+   "verdict": "fix",
+   "current": "彼は元気な様です",
+   "fix": "彼は元気なようです",
+   "why": "Boundary-neutral: position 4's reading よう, romaji you, na-adjective POS and 助動詞語幹 subtype already describe the kana form, so only surface and lemma change and the C-token count stays at 6. This is exactly the missing token edit the verifier flagged, without which the C-token surfaces no longer reproduce jp. Layer-B strings on the same record spell the old form and belong to the same cascade: the roles on positions 2 and 4 and the gloss on position 3 all name 様 or 様です."
+  },
+  {
+   "id": "sent:gen-efb21932a32f",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 1176",
+   "fix": "\"vocab_id\": 1199",
+   "why": "Wrong lemma link on position 4, same homograph split as sent:gen-6f1566f1c7de: the token is read よう but points at entry 1176 (様, さま, honorific suffix), while the entry read よう is 1199, which is also this record's declared target vocab (tag 1199). Independent of the spelling change and safe to apply on its own."
+  },
+  {
+   "id": "sent:gen-efb21932a32f",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 41",
+   "fix": "\"vocab_id\": 758",
+   "why": "Wrong lemma link on position 0: the token is read かれ and glossed he, but points at entry 41 (彼, あれ). The entry read かれ is 758. Same class and same n5 to n4 level caution as in sent:gen-986d061ae368."
+  },
+  {
+   "id": "sent:tatoeba-141147",
+   "verdict": "needs-human",
+   "current": "船はどんどん川を下って入った。",
+   "fix": "",
+   "why": "Layer A, so no token here may be rewritten to make the sentence read better. The dissection is faithful to the recorded surface: 入っ is correctly lemmatised to 入る and read はいっ, and kana, romaji, the literal and both explanations all agree with it. What does not agree is the paired English, which has no entering in it, and 川を下って入った is not idiomatic. That points at how the sentence or its pairing was recorded at ingest rather than at the token layer, so the check belongs upstream against Tatoeba 141147 and its linked translation. Until that is settled, leaving the array exactly as it is remains the only internally consistent state."
+  },
+  {
+   "id": "sent:tatoeba-141147",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 1178",
+   "fix": "\"vocab_id\": 4419",
+   "why": "Wrong lemma link on position 5, independent of the question above. The token 下っ has lemma 下る and reading くだっ, but points at entry 1178, which is 下がる (さがる). The entry for 下る (くだる) is 4419. The form table lists 下る among the written forms of 下がる, so the first-registered entry won. 2 tokens with lemma 下る carry the 下がる link corpus-wide."
+  },
+  {
+   "id": "sent:tatoeba-223377",
+   "verdict": "needs-human",
+   "current": "closing こ of はこ (箱, 'box') plus the genitive の",
+   "fix": "",
+   "why": "Token boundary error, papered over in Layer B. Mode C read このはこの as この + は + この, so position 2 spans the last mora of はこ plus the following の, and the corpus wrote the explanation of that error into the token's own gloss and role instead of correcting the cut. The correct analysis is この + はこ + の. Two pieces of corroborating damage sit on the affected span: position 1 had its reading hand-corrected to は while its romaji still holds wa from the particle override, so the concatenated token romaji reads konowa where the sentence romaji reads konoha; and position 2 links vocab_id 196 (九) as though it were the demonstrative. No re-run of mode C will produce the correct cut on this unspaced kana string, so this needs a manual token override of the kind already registered for readings, and the gloss and role text on position 2 have to go with it."
+  },
+  {
+   "id": "sent:tatoeba-223377",
+   "verdict": "fix",
+   "current": "\"romaji\": \"chuu\"",
+   "fix": "\"romaji\": \"naka\"",
+   "why": "Stale token romaji on position 8. The token 中 had its reading hand-corrected to なか, but its romaji still holds chuu, the romanization of the analyzer's original ちゅう; the stored sentence romaji already reads naka, so only the token field is wrong. This is one instance of a class: 336 of the 5,565 sentences in the bank have C-token romaji that no longer concatenates to the stored sentence romaji, while the kana concatenation still matches in all 5,565. That is the fingerprint of the verified-reading-override pass rebuilding readings and the sentence-level fields without recomputing token romaji, which dissect.py derives from the token reading (_tok_romaji, with the は, へ and を particle overrides preserved)."
+  },
+  {
+   "id": "sent:tatoeba-223377",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 79",
+   "fix": "\"vocab_id\": 464",
+   "why": "Wrong lemma link on position 8: the token 中 is read なか but points at entry 79, which is 内 (うち); the entry 中 read なか is 464. 57 tokens read なか carry the 内 link corpus-wide. Independent of the boundary question above, which affects positions 0 to 2 only."
+  },
+  {
+   "id": "sent:tatoeba-9240812",
+   "verdict": "fix",
+   "current": "\"surface\": \"家\",\n        \"lemma\": \"家\",\n        \"reading\": \"いえ\",\n        \"romaji\": \"ie\",\n        \"pos\": \"noun\",\n        \"pos_coarse\": \"名詞\",\n        \"pos_fine\": \"普通名詞\",\n        \"inflection\": null,\n        \"inflection_type\": null,\n        \"role\": null,",
+   "fix": "\"surface\": \"家\",\n        \"lemma\": \"家\",\n        \"reading\": \"いえ\",\n        \"romaji\": \"ie\",\n        \"pos\": \"noun\",\n        \"pos_coarse\": \"名詞\",\n        \"pos_fine\": \"普通名詞\",\n        \"inflection\": null,\n        \"inflection_type\": null,\n        \"role\": {\n          \"pt-BR\": \"objeto direto\",\n          \"en\": \"direct object\"\n        },",
+   "why": "Incomplete dissection rather than a wrong one: position 0 is the only content token in this sentence with no role, so the breakdown labels the verb, the copula and the auxiliaries but leaves the を-marked noun unlabelled. The verifier's objection to the earlier attempt stands and is met here: writing role.pt-BR alone would have produced the corpus's only role object missing a locale, so both locales are supplied, in the wording the corpus already uses elsewhere for a を-marked noun. Nothing else in the array needs redoing: んだって is correctly held as ん (準体助詞) + だ + って, and 買っ links vocab_id 144."
+  }
+ ],
+ "summary": "23 sentences, 39 rows: 28 fix, 2 no-change, 9 needs-human. Two of the queue's own complaints do not survive contact with the file. The whitespace record (sent:gen-68448be6940b) has no きごう leak left: reading and romaji on that token are already blank and kana and romaji are clean, and the proposed edit would reinsert a space into kana and undo the audited corpus-wide repair. The reorder record (sent:gen-bc13250dc26f) has no dissection defect at all; its ten tokens only need permuting, with no analyzer involved. The dominant real defect in this queue is not boundaries, it is wrong lemma links: 12 rows repoint a vocab_id, and in six records (67098aef1bd0, 6f1566f1c7de, efb21932a32f, 986d061ae368, 960cef5443b3, 7dd5dc18aba8) the sentence has no link at all to the very word it was generated to teach. Links are made by a form-table lookup in scripts/ingest/dissect.py that keys on the written form alone and keeps whichever entry was registered first, so reading and POS never enter the decision. Every mis-link found here has a correct entry already in the registry, and the classes run corpus-wide, far past this queue: する and し to 334 (刷る) 716 tokens, この to 196 (九) 367, かれ to 41 (彼 あれ) 297, なか to 79 (内) 57, せ to 336 (背 せい) 12, よう to 1176 (様 さま) 7, 尤も to 1184 (最も) 3, 下る to 1178 (下がる) 2, ためる to 1089 (為) 1. Repointing する and かれ crosses an n5/n4 boundary, so level coverage counts move with them. Second systematic finding: token romaji is stale in 336 of 5,565 sentences, where the concatenated C-token romaji no longer equals the stored sentence romaji, while kana still concatenates correctly in all 5,565. That is the residue of the verified-reading-override pass, which corrected readings and the sentence-level fields but never recomputed token romaji; sent:tatoeba-223377 is the instance inside this queue. Third, an addressing hazard the applying pass must handle before anything else: in records carrying mode-A subunits the tokens array is not indexable by position, because the A rows sit ahead of every C row. Two records here are affected, and for sent:gen-cb6562f41e17 the queue's four tokens[0] edits land on the honorific prefix お instead of 私. Token paths have to be resolved by the position field with split_mode C. The needs-human rows split into three kinds: boundary merges only the analyzer or a registered manual override can deliver (味噌汁, そうして, ので, 学生はいない, １日 as ついたち, このはこの); content decisions that change what a sentence teaches (背 against 背中, 手の裏 against 紙の裏); and one Layer-A integrity question (sent:tatoeba-141147, where the recorded jp and its paired English disagree and the check belongs upstream against Tatoeba, not in the token array). On sent:gen-960cef5443b3 the earlier rejection was right: ついたち is a fused reading and must never be stored as つい on １ and たち on 日."
+}

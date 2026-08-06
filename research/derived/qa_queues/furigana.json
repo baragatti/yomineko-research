@@ -1,0 +1,349 @@
+{
+ "queue": "furigana",
+ "rows": [
+  {
+   "id": "research/derived/lessons/n3-causa-03.json#body#jp-fail-01 (北だから寒いわけだ)",
+   "verdict": "fix",
+   "current": "<jp reading=\"きたからさむいわけだ\">北だから寒いわけだ</jp>",
+   "fix": "<jp reading=\"きただからさむいわけだ\">北だから寒いわけだ</jp>",
+   "why": "Layer-A text is 北だから (きた + だ + から); the reading jumped from きた straight to から and dropped the copula だ. Restored from vocab 北=きた, 寒い=さむい."
+  },
+  {
+   "id": "research/derived/lessons/n3-concessao-06.json#body#jp-fail-01 (兄は農業の知識があることはあるが、実際の畑仕事は苦手だ)",
+   "verdict": "fix",
+   "current": "<jp reading=\"あにはのうぎょうのちしきがあることはあるが、じっさいにはたけしごとはにがてだ\">兄は農業の知識があることはあるが、実際の畑仕事は苦手だ</jp>",
+   "fix": "<jp reading=\"あにはのうぎょうのちしきがあることはあるが、じっさいのはたけしごとはにがてだ\">兄は農業の知識があることはあるが、実際の畑仕事は苦手だ</jp>",
+   "why": "Layer-A text is 実際の畑仕事; the reading spells that stretch じっさいにはたけしごと, turning the particle の into に. Restored from vocab 実際=じっさい, 畑=はたけ, 仕事=しごと."
+  },
+  {
+   "id": "research/derived/lessons/n3-conectores-02.json#body#jp-fail-01 (つまり、会議は中止だ)",
+   "verdict": "fix",
+   "current": "<jp reading=\"つまりかいぎはちゅうし\">つまり、会議は中止だ</jp>",
+   "fix": "<jp reading=\"つまりかいぎはちゅうしだ\">つまり、会議は中止だ</jp>",
+   "why": "Reading stops at ちゅうし and drops the sentence-final copula だ that is present in the Layer-A text 中止だ. Vocab 中止=ちゅうし, 会議=かいぎ."
+  },
+  {
+   "id": "research/derived/lessons/n4-suposicao-06.json#body#jp-fail-01 (このカフェは和風で、静かでいい匂いがして、窓から庭が見られる)",
+   "verdict": "fix",
+   "current": "<jp reading=\"このカフェはわふうで、しずかでいいにおいがする、まどからにわがみられる\">このカフェは和風で、静かでいい匂いがして、窓から庭が見られる</jp>",
+   "fix": "<jp reading=\"このカフェはわふうで、しずかでいいにおいがして、まどからにわがみられる\">このカフェは和風で、静かでいい匂いがして、窓から庭が見られる</jp>",
+   "why": "Layer-A text is 匂いがして (te-form linking to the next clause); the reading spells がする、, so both the て and the clause link are lost. Only that stretch changes; 和風=わふう, 静か=しずか, 匂い=におい, 窓=まど, 庭=にわ, 見られる=みられる all already matched."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-03.json#body#jp-fail-01 (しまう)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">しまう</jp>",
+   "fix": "<jp>しまう</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-01 (やってみる)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">やってみる</jp>",
+   "fix": "<jp>やってみる</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-02 (食べてみて)",
+   "verdict": "fix",
+   "current": "<jp reading=\"た\">食べてみて</jp>",
+   "fix": "<jp reading=\"たべてみて\">食べてみて</jp>",
+   "why": "Reading covers only the kanji 食 and stops. Corpus convention is whole-span furigana, so the te-form tail must be spelled out. Vocab 食べる=たべる."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-03 (この)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">この</jp>",
+   "fix": "<jp>この</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-04 (使ってみる)",
+   "verdict": "fix",
+   "current": "<jp reading=\"つか\">使ってみる</jp>",
+   "fix": "<jp reading=\"つかってみる\">使ってみる</jp>",
+   "why": "Reading covers only the kanji 使 and stops. Vocab 使う=つかう gives the sokuon te-form つかって."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-05 (おく)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">おく</jp>",
+   "fix": "<jp>おく</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-06 (考えておく)",
+   "verdict": "fix",
+   "current": "<jp reading=\"かんが\">考えておく</jp>",
+   "fix": "<jp reading=\"かんがえておく\">考えておく</jp>",
+   "why": "Reading covers only the kanji 考 and stops. Vocab 考える=かんがえる."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-07 (考えとく)",
+   "verdict": "fix",
+   "current": "<jp reading=\"かんが\">考えとく</jp>",
+   "fix": "<jp reading=\"かんがえとく\">考えとく</jp>",
+   "why": "Reading covers only the kanji 考 and stops. Vocab 考える=かんがえる, plus the contracted とく the paragraph is teaching."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-08 (を)",
+   "verdict": "fix",
+   "current": ")</text><jp reading=\"\">を</jp>",
+   "fix": ")</text><jp>を</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-09 (読んでおく)",
+   "verdict": "fix",
+   "current": "<jp reading=\"よ\">読んでおく</jp>",
+   "fix": "<jp reading=\"よんでおく\">読んでおく</jp>",
+   "why": "Reading covers only the kanji 読 and stops. Vocab 読む=よむ gives the te-form よんで."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-10 (なおす)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">なおす</jp>",
+   "fix": "<jp>なおす</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-11 (書きなおす)",
+   "verdict": "fix",
+   "current": ".</text><jp reading=\"か\">書きなおす</jp>",
+   "fix": ".</text><jp reading=\"かきなおす\">書きなおす</jp>",
+   "why": "Reading covers only the kanji 書 and stops. Vocab 書く=かく gives the stem 書き=かき; なおす is already kana."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-12 (読みなおす)",
+   "verdict": "fix",
+   "current": "<jp reading=\"よ\">読みなおす</jp>",
+   "fix": "<jp reading=\"よみなおす\">読みなおす</jp>",
+   "why": "Reading covers only the kanji 読 and stops. Vocab 読む=よむ gives the stem 読み=よみ."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-13 (考えなおす)",
+   "verdict": "fix",
+   "current": "<jp reading=\"かんが\">考えなおす</jp>",
+   "fix": "<jp reading=\"かんがえなおす\">考えなおす</jp>",
+   "why": "Reading covers only the kanji 考 and stops. Vocab 考える=かんがえる gives the stem 考え=かんがえ."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-14 (間違えた)",
+   "verdict": "fix",
+   "current": "<jp reading=\"まちが\">間違えた</jp>",
+   "fix": "<jp reading=\"まちがえた\">間違えた</jp>",
+   "why": "Reading covers only the kanji 間違 and stops. Vocab 間違える=まちがえる gives the past form まちがえた."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-15 (書きなおす)",
+   "verdict": "fix",
+   "current": "+</text><jp reading=\"か\">書きなおす</jp>",
+   "fix": "+</text><jp reading=\"かきなおす\">書きなおす</jp>",
+   "why": "Reading covers only the kanji 書 and stops. Vocab 書く=かく gives the stem 書き=かき; なおす is already kana."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-16 (を)",
+   "verdict": "fix",
+   "current": "cab:髪\"/><jp reading=\"\">を</jp>",
+   "fix": "cab:髪\"/><jp>を</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-17 (直しておく)",
+   "verdict": "fix",
+   "current": "<jp reading=\"なお\">直しておく</jp>",
+   "fix": "<jp reading=\"なおしておく\">直しておく</jp>",
+   "why": "Reading covers only the kanji 直 and stops. Vocab 直す=なおす gives the stem 直し=なおし."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-18 (着てみる)",
+   "verdict": "fix",
+   "current": "<jp reading=\"き\">着てみる</jp>",
+   "fix": "<jp reading=\"きてみる\">着てみる</jp>",
+   "why": "Reading covers only the kanji 着 and stops. Vocab 着る=きる gives the te-form きて; without the tail the ruby also reads as the homograph stem alone."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-04.json#body#jp-fail-19 (書きなおす)",
+   "verdict": "fix",
+   "current": " </text><jp reading=\"か\">書きなおす</jp>",
+   "fix": " </text><jp reading=\"かきなおす\">書きなおす</jp>",
+   "why": "Reading covers only the kanji 書 and stops. Vocab 書く=かく gives the stem 書き=かき; なおす is already kana."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-01 (ます)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">ます</jp>",
+   "fix": "<jp>ます</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-02 (やすい)",
+   "verdict": "fix",
+   "current": " sufixos </text><jp reading=\"\">やすい</jp>",
+   "fix": " sufixos </text><jp>やすい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-03 (にくい)",
+   "verdict": "fix",
+   "current": "<text> / </text><jp reading=\"\">にくい</jp>",
+   "fix": "<text> / </text><jp>にくい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-04 (づらい)",
+   "verdict": "fix",
+   "current": "<text> / </text><jp reading=\"\">づらい</jp>",
+   "fix": "<text> / </text><jp>づらい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-05 (やすい)",
+   "verdict": "fix",
+   "current": "Adicione </text><jp reading=\"\">やすい</jp>",
+   "fix": "Adicione </text><jp>やすい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-06 (使い)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">使い</jp>",
+   "fix": "<jp reading=\"つかい\">使い</jp>",
+   "why": "Empty reading over a kanji span. The same paragraph reads 使う as つかう, so the ます-stem 使い is つかい."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-07 (やすい)",
+   "verdict": "fix",
+   "current": " colamos </text><jp reading=\"\">やすい</jp>",
+   "fix": " colamos </text><jp>やすい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-08 (やすい)",
+   "verdict": "fix",
+   "current": "t>Troque </text><jp reading=\"\">やすい</jp>",
+   "fix": "t>Troque </text><jp>やすい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-09 (にくい)",
+   "verdict": "fix",
+   "current": "ext> por </text><jp reading=\"\">にくい</jp>",
+   "fix": "ext> por </text><jp>にくい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-10 (な)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">な</jp>",
+   "fix": "<jp>な</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-11 (読みにくいな)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">読みにくいな</jp>",
+   "fix": "<jp reading=\"よみにくいな\">読みにくいな</jp>",
+   "why": "Empty reading over a kanji span. Vocab 読む=よむ gives the stem 読み=よみ; にくいな is already kana."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-12 (づらい)",
+   "verdict": "fix",
+   "current": "O sufixo </text><jp reading=\"\">づらい</jp>",
+   "fix": "O sufixo </text><jp>づらい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-13 (づらい)",
+   "verdict": "fix",
+   "current": " colamos </text><jp reading=\"\">づらい</jp>",
+   "fix": " colamos </text><jp>づらい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-14 (にくい)",
+   "verdict": "fix",
+   "current": "ontraste </text><jp reading=\"\">にくい</jp>",
+   "fix": "ontraste </text><jp>にくい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-15 (づらい)",
+   "verdict": "fix",
+   "current": "> versus </text><jp reading=\"\">づらい</jp>",
+   "fix": "> versus </text><jp>づらい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-16 (にくい)",
+   "verdict": "fix",
+   "current": "rtuguês. </text><jp reading=\"\">にくい</jp>",
+   "fix": "rtuguês. </text><jp>にくい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-17 (読みにくい字)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">読みにくい字</jp>",
+   "fix": "<jp reading=\"よみにくいじ\">読みにくい字</jp>",
+   "why": "Empty reading over a kanji span. Vocab 読む=よむ (stem よみ) and 字=じ, the reading this lesson itself uses in <jp reading=\"この じ\">この字</jp>, not the place-name reading あざ."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-18 (づらい)",
+   "verdict": "fix",
+   "current": "raçada). </text><jp reading=\"\">づらい</jp>",
+   "fix": "raçada). </text><jp>づらい</jp>",
+   "why": "Kana-only span: ruby over it carries no information, so the empty attribute is a stray rather than a missing reading. Corpus convention for kana-only spans is the bare <jp> tag (5,629 of them in the lesson bodies, vs 465 that repeat the kana). No Japanese text changes."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-19 (言いづらい)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">言いづらい</jp>",
+   "fix": "<jp reading=\"いいづらい\">言いづらい</jp>",
+   "why": "Empty reading over a kanji span. 言う=いう gives the ます-stem 言い=いい; づらい is already kana."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-20 (危険な)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">危険な</jp>",
+   "fix": "<jp reading=\"きけんな\">危険な</jp>",
+   "why": "Empty reading over a kanji span. Vocab 危険=きけん plus the na-adjective ending な."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-21 (使いにくい)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">使いにくい</jp>",
+   "fix": "<jp reading=\"つかいにくい\">使いにくい</jp>",
+   "why": "Empty reading over a kanji span. Vocab 使う=つかう gives the stem 使い=つかい; にくい is already kana."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-22 (使いやすい)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">使いやすい</jp>",
+   "fix": "<jp reading=\"つかいやすい\">使いやすい</jp>",
+   "why": "Empty reading over a kanji span. Confirmed inside the same lesson, which already carries <jp reading=\"つかいやすい\">使いやすい</jp> in the やすい example list."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-23 (説明しづらい)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">説明しづらい</jp>",
+   "fix": "<jp reading=\"せつめいしづらい\">説明しづらい</jp>",
+   "why": "Empty reading over a kanji span. Confirmed inside the same lesson, which already carries <jp reading=\"せつめいしづらい\">説明しづらい</jp> one paragraph earlier."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-24 (この放送は分かりやすい)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">この放送は分かりやすい</jp>",
+   "fix": "<jp reading=\"このほうそうはわかりやすい\">この放送は分かりやすい</jp>",
+   "why": "Empty reading over a kanji span. Vocab 放送=ほうそう and 分かる=わかる (stem 分かり=わかり); この and やすい are already kana."
+  },
+  {
+   "id": "research/derived/lessons/n4-aspecto-07.json#body#jp-fail-25 (専門の質問は答えにくい)",
+   "verdict": "fix",
+   "current": "<jp reading=\"\">専門の質問は答えにくい</jp>",
+   "fix": "<jp reading=\"せんもんのしつもんはこたえにくい\">専門の質問は答えにくい</jp>",
+   "why": "Empty reading over a kanji span. Vocab 専門=せんもん, 質問=しつもん, 答える=こたえる (stem 答え=こたえ); の, は and にくい are already kana."
+  }
+ ],
+ "summary": "All 49 validate_furigana failures are recoverable Layer-B defects in 7 lesson bodies; none needed a human and none required touching Layer-A Japanese (the visible text is byte-identical after every fix, and tag balance is preserved). Two shapes, as expected. (1) 32 spans with reading=\"\": 22 of them annotate kana-only text (しまう, やってみる, を, やすい, にくい, づらい ...), where ruby carries no information and the empty attribute is a stray - those become the bare <jp> tag, which is the corpus-wide convention (5,629 kana-only bare <jp> spans in the lesson bodies versus 465 that repeat the kana in a reading attribute); the other 10 contain kanji and get a real reading rebuilt from corpus/vocab (使い, 読みにくいな, 読みにくい字, 言いづらい, 危険な, 使いにくい, 使いやすい, 説明しづらい, この放送は分かりやすい, 専門の質問は答えにくい). (2) 17 truncated readings: 13 in n4-aspecto-04 stop after the kanji reading and drop the okurigana tail (reading=\"た\" over 食べてみて), and 4 are real transcription slips - 北だから lost its copula だ, 実際の畑仕事 was read じっさいに instead of じっさいの, 中止だ lost its だ, and 匂いがして was read がする. The durable source is research/derived/lessons/<slug>.json, not the DB: load_lessons.py re-authors every lesson from those files, so DB-only edits would be wiped. Every 'current' anchor is a byte-exact, unique substring of that file's body field (context prefixes added where the tag repeats, e.g. 書きなおす three times); applying all 49 and re-running the rule leaves 0 failures. Adjacent finding, out of this queue's scope because the rule only inspects spans containing hiragana: n4-aspecto-07 also carries <jp reading=\"\">専門</jp> and <jp reading=\"\">合</jp>, kanji-only spans whose ruby will never render. 専門 is せんもん; 合 standing alone as a component is ambiguous and would need an author."
+}

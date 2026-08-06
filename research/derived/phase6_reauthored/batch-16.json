@@ -1,0 +1,117 @@
+{
+ "batch": 16,
+ "fixes": [
+  {
+   "slug": "les:n4-suposicao-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>Não confunda os dois </text><jp>らしい</jp><text>. Depois de</text><text weight=\"bold\"> substantivo e o sentido é \"parece que\"</text><text> (雨らしい = \"parece que vai chover\") é inferência. Depois de</text><text weight=\"bold\"> só um substantivo qualificando algo</text><text> (春らしい天気 = \"tempo de primavera\") é \"típico de\". O truque: se dá pra trocar por \"pelo jeito\", é inferência; se dá pra trocar por \"bem a cara de\", é típico.</text>",
+   "fix": "<text>Não confunda os dois </text><jp>らしい</jp><text>. O de inferência entra</text><text weight=\"bold\"> no fim da afirmação (verbo, adjetivo ou substantivo na forma simples)</text><text> e fecha a frase: 雨らしい = \"pelo jeito vai chover\". O de \"típico de\" vem</text><text weight=\"bold\"> depois de um substantivo e qualifica outro substantivo logo em seguida</text><text> (春らしい天気 = \"um tempo bem de primavera\"). O truque: se dá pra trocar por \"pelo jeito\", é inferência; se dá pra trocar por \"bem a cara de\", é típico.</text>",
+   "why": "Complaint confirmed on disk: both halves of the pitfall start with \"Depois de ... substantivo\", so the note gives no usable test, and the first clause is ungrammatical pt-BR. Rewritten as a real structural contrast (predicative larashii closing the clause vs. attributive N-rashii-N). Tag multiset unchanged: 6 <text> (2 of them weight=\"bold\") + 1 <jp>. Did not use the reviewer wording \"quando fecha a frase = inferencia\" as the sole rule because harugashii/otokorashii also end sentences with the \"tipico de\" sense; the fix keeps the position test plus the existing truque."
+  },
+  {
+   "slug": "les:n4-suposicao-03",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"くろみたいなそら\">黒みたいな空</jp><text> = \"um céu que parece preto\".</text>",
+   "fix": "<jp reading=\"よるみたいにくろいそら\">夜みたいに黒い空</jp><text> = \"um céu preto igual à noite\".</text>",
+   "why": "Confirmed. 黒 is a color noun, so \"sky that resembles black\" collapses the comparison the lesson teaches (every other model compares B to a thing it is NOT). Replaced with a mitai-ni + i-adjective example that the same lesson already covers in its checklist. Tag multiset unchanged (<jp>/<text>); the reading attribute was updated to match the new base text."
+  },
+  {
+   "slug": "les:n4-suposicao-03",
+   "field": "title",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "The stored title already reads \"みたい: parecer e comparar no dia a dia (〜みたいだ・みたいな・みたいに)\" with the space before the parenthesis. The duplicate finding was skipped because the earlier copy of the same finding had already been applied. Nothing left to change."
+  },
+  {
+   "slug": "les:n4-suposicao-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"このカフェはわふうで、しずかでいいにおいがする、まどからにわがみられる\">このカフェは和風で、静かでいい匂いがして、窓から庭が見られる</jp><text> = \"Este café é em estilo japonês, é silencioso e tem um cheiro bom. Pela janela dá para ver o jardim\".</text>",
+   "fix": "<jp reading=\"このカフェはわふうで、しずかでいいにおいがして、はるにはまどからさくらがみられる\">このカフェは和風で、静かでいい匂いがして、春には窓から桜が見られる</jp><text> = \"Este café é em estilo japonês, é silencioso e tem um cheiro bom. Na primavera, dá para ver as cerejeiras pela janela\".</text>",
+   "why": "Two real defects in the flagship \"juntando os tres padroes\" sentence. (a) The te-form fix was applied to the base text but NOT to the reading attribute, which still read ...がする、..., so furigana and text disagree on disk. (b) A garden simply visible through a window takes 見える, not 見られる; the note must still showcase がみられる, so the object was changed to a seasonal sight (春には...桜が見られる), which is textbook が見られる and matches the tip above it. Translation updated to match. Tag multiset unchanged (<jp>/<text>)."
+  },
+  {
+   "slug": "les:n4-suposicao-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> cerejeiras\", \"do alto</text><text weight=\"bold\"> dá para ver</text><text> o mar\". É objetivo e impessoal, ótimo para descrições.</text>",
+   "fix": "<text> cerejeiras na primavera\", \"no zoológico</text><text weight=\"bold\"> dá para ver</text><text> pandas\". É objetivo e impessoal, ótimo para descrições. Para o que simplesmente está à vista de onde você está (o mar, lá do alto), o japonês usa 見える.</text>",
+   "why": "Confirmed. \"do alto da para ver o mar\" is exactly the から + が見える pattern the course teaches in gram:gp-85, so the tip was teaching the classic 見られる/見える error. Replaced the second example with an opportunity-type one and added the explicit contrast. Raw Japanese inside <text> is house practice in this same body (checklists, pitfall notes). Tag multiset unchanged: 3 <text>, 1 of them weight=\"bold\"."
+  },
+  {
+   "slug": "les:n4-suposicao-07",
+   "field": "exercises[2].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "The stored explanation already reads \"...怖がっている descreve o medo num momento específico e 怖がる descreve o comportamento de demonstrar medo; para nomear o traço fixo da pessoa, o japonês usa o substantivo 怖がり.\" The first copy of this finding was applied; the duplicate had nothing left to anchor to."
+  },
+  {
+   "slug": "les:n4-suposicao-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> (ônibus) passa agora, logo \"deve chegar logo\". Com substantivo ou adjetivo-na, entra o </text><jp>な</jp><text> antes de </text><jp>はず</jp><text>: </text><jp reading=\"しずか\">静か</jp><text> vira </text><jp reading=\"しずかなはずです\">静かなはずです</jp><text>.</text>",
+   "fix": "<text> (ônibus) passa agora, logo \"deve chegar logo\". Com adjetivo-na entra o </text><jp>な</jp><text> antes de </text><jp>はず</jp><text>: </text><jp reading=\"しずか\">静か</jp><text> vira </text><jp reading=\"しずかなはずです\">静かなはずです</jp><text>. Com substantivo, no lugar do な entra o の: 学生 vira 学生のはずです.</text>",
+   "why": "Confirmed and critical: the body groups nouns with na-adjectives under な, which produces the ungrammatical *学生なはずです. Nouns take の. The reviewer fixes were skipped as instructions/paraphrase; this one is a byte-exact span replacement. Tag multiset unchanged: 5 <text> + 4 <jp>."
+  },
+  {
+   "slug": "les:n4-transitividade-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": ", todos escritos em kana para você ler de primeira:",
+   "fix": ", uns escritos em katakana e outros em kanji:",
+   "why": "Confirmed: of the eight list items only ステーキ, ジャム and オーバー are kana; 食料品, 鏡, 石 and 火 are kanji and 消しゴム is mixed, and the same lesson later teaches 品 and 火 as kanji. The two reviewer fixes were skipped because both embedded bracketed commentary. Plain-text anchor inside a single <text>; no markup touched."
+  },
+  {
+   "slug": "les:n4-transitividade-02",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "The checklist already reads \"Reconheço objetos comuns da casa (火, 鏡, ジャム, 石…).\" on disk, with \"em kana\" removed. The duplicate finding had nothing left to anchor to."
+  },
+  {
+   "slug": "les:n4-volitivo-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Estes verbos são do grupo 2, então todos viram volitivo simplesmente somando ",
+   "fix": "Estes verbos são do grupo 2, então todos viram volitivo trocando o る por ",
+   "why": "Confirmed: taken literally, \"somando よう\" to 始める yields 始めるよう, the exact distractor exercise 6 calls \"nem é forma volitiva\", and it contradicts the rule stated earlier in the same lesson. The reviewer anchors failed because the stored text is split around <jp>よう</jp>; this anchor stops before the tag, so no markup is touched."
+  },
+  {
+   "slug": "les:n4-volitivo-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"かいぎはきんようびになることになりました\">会議は金曜日になることになりました</jp>",
+   "fix": "<jp reading=\"かいぎはきんようびにおこなうことになりました\">会議は金曜日に行うことになりました</jp>",
+   "why": "Confirmed: 金曜日になる already means \"be set for Friday\", so stacking ことになりました doubles なる and is unidiomatic, in the very lesson that contrasts する vs なる. 行う keeps the taught pattern [dictionary form] + ことになる and is standard business Japanese; the reading attribute carries the furigana, and the pt-BR gloss stays valid, so it is left untouched."
+  },
+  {
+   "slug": "les:n4-volitivo-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Uma boca (口) dentro de um cerco: cada ",
+   "fix": "Uma boca (口) em cima de uma concha (貝, o dinheiro da antiguidade): cada ",
+   "why": "Confirmed against our own Layer-A data: 員 is 口 over 貝 and has no 囗 enclosure, so the mnemonic described a shape the learner will never see. Anchor sits inside one <text> and stops before <emphasis>membro</emphasis>, so the sentence still ends \"cada membro contado dentro de um grupo.\" and no markup is touched."
+  },
+  {
+   "slug": "les:n4-volitivo-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Esta é o exemplo-modelo: o verbo ",
+   "fix": "Esta frase é o exemplo-modelo: o verbo ",
+   "why": "The discord is real (\"Esta\" + masculine \"o exemplo-modelo\"). Rather than \"Este\", which would break the anaphora to the featured <sentence> above (the next paragraph continues \"Nesta, ...\"), the elided noun is made explicit: \"Esta frase é o exemplo-modelo\". Plain-text anchor inside one <text>."
+  },
+  {
+   "slug": "les:n4-volitivo-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<heading level=\"3\"><text>Vocabulário de gentileza e cortesia</text></heading>\n<p><text>Estas palavras combinam bem com metas de comportamento (\"procuro ser gentil\", \"procuro agradecer\"). Leia o som em kana.</text></p>",
+   "fix": "<heading level=\"3\"><text>Vocabulário da lição</text></heading>\n<p><text>Várias destas palavras combinam bem com metas de comportamento (\"procuro ser gentil\", \"procuro agradecer\"). Leia o som em kana.</text></p>",
+   "why": "Confirmed overclaim: the list has eight items and 景色 (paisagem), 匂い (cheiro) and サラダ (salada) have nothing to do with courtesy, yet the heading and \"Estas palavras\" cover all of them. \"Vocabulário da lição\" matches the house heading style used in the sibling lessons. Tag multiset unchanged (<heading>, <text>, <p>, <text>)."
+  }
+ ]
+}

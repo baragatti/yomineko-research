@@ -1,0 +1,261 @@
+{
+ "batch": 19,
+ "fixes": [
+  {
+   "slug": "les:n5-te-form-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>; com o mesmíssimo sentido. Isso é a </text>",
+   "fix": "<text>, com o mesmíssimo sentido. Isso é a </text>",
+   "why": "Em pt-BR o ponto e virgula nao pode separar a oracao principal de um adjunto nao oracional; 'com o mesmissimo sentido' e um adjunto, entao pede virgula. Troca de um caractere, sem mexer na marcacao."
+  },
+  {
+   "slug": "les:n5-te-form-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "a partir da segunda mora",
+   "fix": "a partir da terceira mora",
+   "why": "はいざら (は-い-ざ-ら) e はいる (は-い-る) compartilham as duas primeiras moras e so divergem na terceira. A licao ensina contagem de moras, entao o erro de um passo confunde."
+  },
+  {
+   "slug": "les:n5-te-form-06",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Complaint says the で-group list must also mention ぐ (泳ぐ→泳いで). Rejected: the operative rule stated in the same item is general and correct ('se a forma て termina em で, troque por じゃ'), and ぐ→いで is not taught anywhere in the N5 arc (it first appears in n4-aspecto-02 / n3-tempo-06); n5-te-form-01 contains no ぐ at all. Adding it here would forward-reference an untaught conjugation."
+  },
+  {
+   "slug": "les:n5-te-form-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Aproveite para fixar palavras que soam parecido mas se escrevem diferente, todas lidas ",
+   "fix": "Aproveite para fixar palavras que carregam o mesmo som ",
+   "why": "A lista traz 晩, 晩御飯 e 番, mas 晩御飯 se le ばんごはん (nao ばん), e 晩 / 晩御飯 dividem o mesmo kanji, entao 'se escrevem diferente' tambem e falso. A nova frase diz apenas que as palavras carregam o som ばん, o que vale para as tres."
+  },
+  {
+   "slug": "les:n5-te-form-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<item><vocab ref=\"vocab:晩御飯\"/><text> = \"jantar\".</text></item>",
+   "fix": "<item><vocab ref=\"vocab:晩御飯\"/><text> (ばんごはん) = \"jantar\".</text></item>",
+   "why": "Sem a leitura entre parenteses o aluno assume que 晩御飯 se le ばん. O item irmao da secao anterior ja usa esse mesmo padrao (半分 (はんぶん) = 'metade'). Marcacao inalterada."
+  },
+  {
+   "slug": "les:n5-te-form-07",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>Nas lições casuais você já viu </text><jp>なくちゃ</jp><text> e </text><jp>なきゃ</jp><text>. Agora chega a versão completa, a que você escreve e usa fora do bate-papo entre amigos.",
+   "fix": "<text>Na próxima lição você vai ver as versões faladas </text><jp>なくちゃ</jp><text> e </text><jp>なきゃ</jp><text>. Aqui vem primeiro a versão completa, a que você escreve e usa fora do bate-papo entre amigos.",
+   "why": "Retro-referencia falsa: なくちゃ e なきゃ nao aparecem em nenhuma licao anterior (busca em todas as licoes: so n5-te-form-07, n5-te-form-08 e material N4/N3). A introducao formal e a licao seguinte, n5-te-form-08. Conjunto de tags identico antes e depois."
+  },
+  {
+   "slug": "les:n5-te-form-07",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Complaint says 'Existem três construções plenas' is falsely exhaustive because it omits なければならない. Rejected: the text says 'existem três', not 'apenas três'; the three named constructions are exactly the lesson's stated objectives, and the なければ branch is deliberately deferred (it shows up in n4-obrigacao). Pure hedging tweak, no factual error."
+  },
+  {
+   "slug": "les:n5-te-form-08",
+   "field": "exercises[2].prompt",
+   "verdict": "fix",
+   "current": "行かなくては＿＿＿けない → 行か＿＿＿いけない",
+   "fix": "行かなくてはいけない → 行か＿＿＿いけない",
+   "why": "A forma de partida mostrada estava quebrada: uma lacuna comeu o い de いけない, entao 行かなくては＿＿＿けない nao existe e nao tem resposta. A resposta cadastrada (なくちゃ) so serve para a segunda lacuna. Corrigido apenas o lado esquerdo da seta."
+  },
+  {
+   "slug": "les:n5-te-form-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>. Entre </text><vocab ref=\"vocab:一人\"/><text>(uma pessoa) e amigos,</text><jp>なきゃ</jp><text> é o som natural.</text>",
+   "fix": "<text>. Em casa, com amigos ou sozinho (</text><vocab ref=\"vocab:一人\"/><text>, ひとり), </text><jp>なきゃ</jp><text> é o som natural.</text>",
+   "why": "'Entre uma pessoa e amigos' nao quer dizer nada em pt-BR: a insercao do vocabulo 一人 quebrou a frase. A nova redacao mantem o mesmo conjunto de tags (o ref de 一人 continua no lugar, agora com sentido: sozinho, ひとり)."
+  },
+  {
+   "slug": "les:n5-te-form-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>はたち (20 anos) tem peso: はたち (20 anos) tem peso: no Japão é a idade tradicional da maioridade. A leitura, porém, não vem daí: はたち é a contagem japonesa antiga (はた = vinte), a mesma raiz de はつか (dia 20)</text>",
+   "fix": "<text>はたち (20 anos) tem peso: no Japão é a idade tradicional da maioridade. A leitura, porém, não vem daí: はたち é a contagem japonesa antiga (はた = vinte), a mesma raiz de はつか (dia 20). Por isso não se diz にじゅっさい.</text>",
+   "why": "O aplicador mecanico ja tinha trocado essa nota, mas duplicou a abertura ('はたち (20 anos) tem peso:' aparece duas vezes) e deixou a frase sem ponto final e sem o contraste com にじゅっさい. Aqui o texto volta a ficar inteiro e correto."
+  },
+  {
+   "slug": "les:n5-verbos-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Mnemônica de forma: embaixo há um ",
+   "fix": "Mnemônica de forma: em cima há um ",
+   "why": "Em 見 o 目 fica em CIMA, apoiado sobre as pernas 儿. Dizer 'embaixo ha um 目 apoiado sobre duas perninhas' e ao mesmo tempo errado e autocontraditorio."
+  },
+  {
+   "slug": "les:n5-verbos-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": " (terno), do tronco para baixo, pede outro verbo (",
+   "fix": " (terno), vestido no tronco, pede outro verbo (",
+   "why": "A nota apresenta uma regra por parte do corpo, entao 'do tronco para baixo pede 着る' autoriza ズボンを着る. 着る cobre o tronco / parte de cima; roupa da cintura para baixo (calca, saia, sapato) pede はく."
+  },
+  {
+   "slug": "les:n5-verbos-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp>ある</jp><text> e </text><jp>いる</jp><text> têm formas polidas irregulares no negativo, mas por enquanto fique com o positivo </text>",
+   "fix": "<jp>ある</jp><text> tem um negativo irregular fora do polido: </text><jp>ない</jp><text>, e não あらない. Por enquanto fique com o positivo </text>",
+   "why": "ありません e いません sao negativos polidos regulares, e いる e um ichidan regular. O unico irregular e o negativo simples de ある (ない, e nao あらない). Conjunto de tags identico (jp x2, text x2)."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Note que </text><jp>か</jp><text>,</text><jp>き</jp><text> e </text><jp>こ</jp><text> têm um traço solto à direita; faça-o por último. Repita cada símbolo em voz alta enquanto escreve.</text>",
+   "fix": "Note que </text><jp>か</jp><text> tem um tracinho solto no alto, à direita: faça esse por último. Já em </text><jp>き</jp><text> o último traço é a curva solta embaixo, à esquerda, e </text><jp>こ</jp><text> tem só dois traços horizontais. Repita cada símbolo em voz alta enquanto escreve.</text>",
+   "why": "So o か termina com um tracinho solto no alto a direita. O ultimo traco do き e a curva solta embaixo, a esquerda, e o こ tem apenas dois tracos horizontais (a propria licao diz 'こ sao duas linhas paralelas'). Conjunto de tags identico."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-02",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Complaint asks to drop the emphasised syllable 'cu' de 'cuca' as vulgar. Rejected: 'cu' really is the first syllable of 'cuca', the item mirrors the ca / qui / co pattern used for the other four kana in the same list, and the こ item right below already relies on the same syllable ('nunca vira cu'). Taste call, not a defect."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": ": é um traço único, feito de cima para a esquerda e depois curvando para a direita.",
+   "fix": ": é um traço único, começando no alto e indo para a direita, depois descendo numa curva larga para a esquerda, com a ponta afinando no fim.",
+   "why": "As direcoes estavam invertidas: o traco unico do つ comeca no alto indo para a DIREITA e so entao desce curvando para a ESQUERDA, terminando num traco que afina (harai), nao num gancho."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-07",
+   "field": "body",
+   "verdict": "fix",
+   "current": "O </text><jp>ま</jp><text> e o </text><jp>も</jp><text> começam pelos traços horizontais antes da curva vertical.",
+   "fix": "O </text><jp>ま</jp><text> começa pelos dois traços horizontais; já o </text><jp>も</jp><text> começa pela curva vertical com gancho e só depois recebe os dois traços horizontais.",
+   "why": "A ordem padrao do も e curva vertical com gancho primeiro, depois os dois tracos horizontais; so o ま comeca pelos horizontais. A propria licao descreve o も como 'anzol vertical atravessado por dois tracos horizontais'. Conjunto de tags identico."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-07",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> tem aquele lacinho extra à direita. Olhe sempre o detalhe final de cada um.</text>",
+   "fix": "<text> tem um risquinho extra no canto superior direito. Olhe sempre o detalhe final de cada um.</text>",
+   "why": "O す tambem termina em lacinho, entao 'lacinho extra' nao distingue nada. O que so o む tem e o terceiro traco, o risquinho curto no canto superior direito (que e mesmo o traco final, como diz a frase seguinte)."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> é o \"ia\" de \"Bahia\",</text>",
+   "fix": "<text> é o \"ia\" de \"iate\",</text>",
+   "why": "Em pt-BR 'Bahia' e ba-i-a: hiato com tonica no i, exatamente a separacao i-a que a licao proibe duas linhas depois. 'iate' e uma batida so e serve de modelo correto para や."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> de \"Bahia\". O desenho lembra um anzol com um corte por cima.</text>",
+   "fix": "<text> de \"iate\". O desenho lembra um anzol com um corte por cima.</text>",
+   "why": "Segunda ocorrencia do mesmo apoio errado, no item da lista do や. Mesma troca de 'Bahia' por 'iate' para manter a licao coerente."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> é o \"iu\" de \"viu\", e </text>",
+   "fix": "<text> é o \"iu\" de \"Iuri\", e </text>",
+   "why": "'viu' e [viw]: o i e o nucleo e o u e a semivogal, o espelho de ゆ [ju]. 'Iuri' tem o deslize no lado certo (ju-ri) e e nome comum no Brasil."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> de \"viu\". A forma parece um peixe com um lacinho na cauda.</text>",
+   "fix": "<text> de \"Iuri\". A forma parece um peixe com um lacinho na cauda.</text>",
+   "why": "Segunda ocorrencia do apoio errado, no item da lista do ゆ."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": "igual quando falamos \"viu\" ou \"ioiô\" sem pausa no meio.",
+   "fix": "igual quando falamos \"Iuri\" ou \"ioiô\" sem pausa no meio.",
+   "why": "Terceira ocorrencia: a nota de armadilha proibe o corte i-u e logo em seguida usa 'viu', que e justamente [viw]. Trocado por 'Iuri', que desliza de i para u no sentido certo."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-09",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> como em \"a </text><emphasis>ru</emphasis><text> ela\". Termina com uma</text>",
+   "fix": "<text> como em \"ba </text><emphasis>ru</emphasis><text> lho\". Termina com uma</text>",
+   "why": "'aruela' nao existe em portugues; a palavra real e 'arruela', cujo rr e justamente o R forte que esta licao manda evitar. 'barulho' e palavra comum, tem r batido entre vogais e a silaba alvo e a tonica, como nos apoios irmaos (caracol, arisco, careca, caro). Conjunto de tags identico."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-11",
+   "field": "body",
+   "verdict": "fix",
+   "current": " de \"hífen\" dito com calma. Cuidado só com um detalhe:",
+   "fix": " de \"nada\" ou \"cana\", segurado bem (nnn). Cuidado só com um detalhe:",
+   "why": "Em pt-BR o -en final de 'hifen' vira vogal nasalizada e o n desaparece, que e exatamente o apagamento denunciado na frase seguinte e na nota de armadilha. 'nada' e 'cana' dao um n consoante, que da para segurar e sentir como batida propria."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-11",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> final de \"hífen\".</text>",
+   "fix": "<text> de \"cana\" segurado (nnn).</text>",
+   "why": "Segunda ocorrencia do mesmo apoio, no item da lista do ん. O item ja diz que o som ocupa o tempo de uma silaba inteira, entao basta trocar a palavra de apoio."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-14",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text> pequeno não tem som próprio; ele apenas funde a vogal anterior, formando uma única batida.</text>",
+   "fix": "<text> pequeno não forma sílaba separada: ele toma o lugar da vogal i do kana anterior e traz a vogal nova, tudo numa única batida.</text>",
+   "why": "'Nao tem som proprio' e falso: o kana pequeno traz a semivogal e a vogal nova (きゃ, きゅ e きょ so se diferenciam por ele) e substitui o i, nao 'funde a vogal anterior'. A propria licao diz mais abaixo que 'o き perde a vogal i e cola no yo'."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-15",
+   "field": "body",
+   "verdict": "fix",
+   "current": " do romaji aqui é o \"dj\" de \"dia\", \"gente\", não o \"j\" de \"jeito\".",
+   "fix": " do romaji aqui é o \"dj\" de \"dia\", \"grande\", não o \"j\" de \"jeito\".",
+   "why": "'gente' comeca com o mesmo [zh] de 'jeito', que e justamente o som contrastado na frase. 'grande' termina em [dji], o som pretendido."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-15",
+   "field": "body",
+   "verdict": "fix",
+   "current": "usa o som de \"dj\" do nosso \"dia\", \"gente\" (e não o \"j\" de \"já\", \"jogo\")",
+   "fix": "usa o som de \"dj\" do nosso \"dia\", \"grande\" (e não o \"j\" de \"já\", \"jogo\")",
+   "why": "Segunda ocorrencia do mesmo exemplo errado, agora na nota Vantagem PT."
+  },
+  {
+   "slug": "les:pre-n5-hiragana-15",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<term define=\"a unidade de tempo do japonês; cada kana vale uma mora\">mora</term>",
+   "fix": "<term define=\"a unidade de tempo do japonês; cada kana vale uma mora, menos os pequenos ゃ・ゅ・ょ, que formam uma só mora junto com o kana anterior\">mora</term>",
+   "why": "A definicao vale para os kana de tamanho normal e para o っ, mas nao para ゃ・ゅ・ょ, ensinados nesta mesma licao (みゃ = 1 mora), o que contradiz o 'dois simbolos, uma so silaba' do proprio texto. A troca substitui o elemento <term> inteiro, mantendo o conteudo visivel ('mora'), o par de tags e as aspas do atributo intactos; o texto novo nao tem aspas."
+  },
+  {
+   "slug": "les:pre-n5-katakana-03",
+   "field": "body",
+   "verdict": "fix",
+   "current": "É o primo da hiragana ",
+   "fix": "É o primo do hiragana ",
+   "why": "'hiragana' e masculino em pt-BR e o resto do curso usa o masculino (a licao katakana-02 diz 'lembra o hiragana か')."
+  },
+  {
+   "slug": "les:pre-n5-katakana-03",
+   "field": "body",
+   "verdict": "fix",
+   "current": "parecido com a hiragana ",
+   "fix": "parecido com o hiragana ",
+   "why": "Segunda ocorrencia da mesma discordancia de genero, no item do セ."
+  }
+ ]
+}

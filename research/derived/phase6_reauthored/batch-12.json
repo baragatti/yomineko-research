@@ -1,0 +1,221 @@
+{
+  "batch": 12,
+  "fixes": [
+    {
+      "slug": "les:n4-conectores-07",
+      "field": "description",
+      "verdict": "fix",
+      "current": "mais a hedge と言ってもいい",
+      "fix": "mais o recurso de moderação と言ってもいい",
+      "why": "'hedge' is unglossed English jargon in a learner-facing pt-BR field; the lesson's own intro already calls it 'um recurso de moderação'. Text-only edit, no markup."
+    },
+    {
+      "slug": "les:n4-conectores-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Essa hedge é muito apreciada no japonês",
+      "fix": "Essa moderação é muito apreciada no japonês",
+      "why": "Second occurrence of the same anglicism, named by the finding itself (culture note). 'moderação' is the term the lesson already uses. Plain text, markup untouched."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"ともだちにてつだってあげる\">友だちに手伝ってあげる</jp><text> = \"ajudo meu amigo\".</text>",
+      "fix": "<jp reading=\"ともだちにほんをかしてあげる\">友だちに本を貸してあげる</jp><text> = \"empresto um livro para o meu amigo\".</text>",
+      "why": "手伝う marks the person helped with を (友だちを手伝う), so 友だちに手伝ってあげる does not license the beneficiary-に rule the sentence is teaching. Swapped in 貸す, which really takes に. Tag multiset identical (<jp> + </jp> + <text> + </text>)."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the same 友だちに手伝ってあげる complaint; covered by the body fix in this batch, which must be applied only once."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[2].prompt",
+      "verdict": "fix",
+      "current": "Complete: 友だち＿手伝ってあげる。 (Ajudo meu amigo.)",
+      "fix": "Complete: 友だち＿日本語を教えてあげる。 (Ensino japonês para o meu amigo.)",
+      "why": "The keyed answer に is only valid with a verb that marks the person with に. With 手伝う none of the choices (に/は/で) was correct. Retargeted the item to 教える, which takes に, so the existing key and choices become correct."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[2].explanation",
+      "verdict": "fix",
+      "current": "A pessoa beneficiada pelo favor (〜てあげる) é marcada com に: 友だちに手伝ってあげる = 'ajudo o meu amigo'.",
+      "fix": "A pessoa que recebe o favor de 〜てあげる costuma vir com に: 友だちに日本語を教えてあげる = 'ensino japonês para o meu amigo'. Atenção: a partícula vem do verbo de base, e 手伝う marca a pessoa com を (友だちを手伝ってあげる).",
+      "why": "The explanation repeated the ungrammatical example and stated the rule with no caveat. Follows the new prompt and records the 手伝う exception."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[2].answer",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "With the prompt retargeted to 教える, the keyed に and the choices [に, は, で] are correct as they stand; the answer object needs no edit."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[1].prompt",
+      "verdict": "fix",
+      "current": "Você vai regar a planta do seu quarto, fazendo um favor a ela. Qual forma combina melhor?",
+      "fix": "Você vai ler um livro para o seu irmão mais novo, fazendo um favor a ele. Qual forma combina melhor?",
+      "why": "The plant scenario forced the auxiliary 〜てやる to stack on やる itself (水をやる already means 'to water'), producing 水をやってやる, which is unidiomatic and collides with defiant やってやる. Moved to 弟に本を読んでやる, the scenario the lesson's own culture note uses. Prompt, choices and key change together."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[1].answer.choices[0]",
+      "verdict": "fix",
+      "current": "水をやってあげます",
+      "fix": "本を読んであげます",
+      "why": "Distractor carrying the same stacking (やってあげます on やる); follows the new little-brother scenario."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[1].answer.choices[1]",
+      "verdict": "fix",
+      "current": "水をやってやる",
+      "fix": "本を読んでやる",
+      "why": "This choice was the keyed answer: 水をやってやる stacks 〜てやる on やる and is not natural Japanese. Replaced by the matching form in the new scenario."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[1].answer.choices[2]",
+      "verdict": "fix",
+      "current": "水をくれる",
+      "fix": "本を読んでくれる",
+      "why": "Reverse-direction distractor, adapted to the new scenario."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[1].answer.correct",
+      "verdict": "fix",
+      "current": "水をやってやる",
+      "fix": "本を読んでやる",
+      "why": "The key taught an unidiomatic form (auxiliary 〜てやる stacked on the verb やる). The new key keeps 〜てやる as the target with a base verb that accepts it."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[1].explanation",
+      "verdict": "fix",
+      "current": "Para plantas, animais, crianças e iguais em tom informal usa-se 〜てやる. É a versão 'de cima para baixo' do mesmo favor.",
+      "fix": "Para irmãos mais novos, crianças, animais e plantas, em tom informal, usa-se 〜てやる: 弟に本を読んでやる. É a versão 'de cima para baixo' do mesmo favor. 本を読んであげます soa formal demais entre irmãos, e 本を読んでくれる inverteria a direção (alguém lendo para mim).",
+      "why": "Follows the new scenario and explains why each distractor fails."
+    },
+    {
+      "slug": "les:n4-dar-receber-01",
+      "field": "exercises[1].answer",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the same 水をやってやる complaint; covered by the exercises[1].answer.correct and .choices fixes in this batch."
+    },
+    {
+      "slug": "les:n4-dar-receber-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "\n <item><vocab ref=\"vocab:亡くなる\"/><text>: falecer</text></item>\n</list>\n<p><text>Agora os verbos e adjetivos do registro formal ou humilde, muito úteis em contexto de escola e cortesia:</text></p>\n<list ordered=\"false\">",
+      "fix": "\n</list>\n<p><text>Agora os verbos e adjetivos de registro formal, humilde ou delicado, úteis em situações de cortesia:</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:亡くなる\"/><text>: falecer (jeito delicado de dizer \"morrer\", no lugar de 死ぬ)</text></item>",
+      "why": "亡くなる is a verb (v5r, corpus vocab:1518540) and has nothing to do with school or study, yet it closed the list opened by 'Comece pelos substantivos ligados a escola e estudo'. The whole item moved into the second list (formal/humble/delicate register), whose lead-in was adjusted to fit it. No tag created or removed: the same <item>/<vocab>/<text> changed place."
+    },
+    {
+      "slug": "les:n4-dar-receber-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<vocab ref=\"vocab:チェック\"/><text>= xadrez (estampa), quadriculado.</text>",
+      "fix": "<vocab ref=\"vocab:チェック\"/><text>= verificação, checagem, conferência.</text>",
+      "why": "The gloss contradicts the Layer-A record it references (corpus vocab:1077550, single sense 'verificação/checagem/conferência') and omits the word's dominant meaning. Every sibling item in this list copies the corpus gloss. Markup preserved: <vocab/> + <text></text>."
+    },
+    {
+      "slug": "les:n4-dar-receber-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the same チェック gloss complaint; covered by the fix above."
+    },
+    {
+      "slug": "les:n4-dar-receber-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The complaint quoted 'O subir de educação vem da forma escolhida:', which is no longer in the file: the warning note already reads 'O nível de cortesia depende da forma escolhida:'. Already fixed, nothing to do."
+    },
+    {
+      "slug": "les:n4-experiencia-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already corrected in the file: the list reads '<vocab ref=\"vocab:部長\"/><text>: chefe de departamento, gerente</text>', aligned with corpus vocab:1499460. 'chefe de seção' (課長) is gone."
+    },
+    {
+      "slug": "les:n4-experiencia-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "É o mesmo </text><jp>米</jp><text> que aparece em </text>",
+      "fix": "É o mesmo </text><jp>米</jp><text> que dá origem ao </text>",
+      "why": "日本酒 is written 日+本+酒 and contains no 米; in the 'O kanji 米' section, and echoed by the next note ('também aparece, por leitura, em 米国'), 'aparece em' asserts the kanji is written in the word, so the claim is false as the learner will read it. 'dá origem ao' says what was actually meant (the raw material). No tag altered."
+    },
+    {
+      "slug": "les:n4-experiencia-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the same 米-in-日本酒 complaint; covered by the fix above."
+    },
+    {
+      "slug": "les:n4-experiencia-06",
+      "field": "exercises[2].prompt",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The blank already sits in the right place in the file: 'Para suavizar a negação \"não é tão ruim assim\" (そう悪く＿ない), qual partícula entra entre 悪く e ない?'. Already fixed."
+    },
+    {
+      "slug": "les:n4-experiencia-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"さいきんずっとべんきょうして、にほんごはだいたいわかるようになった とうとうあきらめなかった\">最近ずっと勉強して、日本語はだいたい分かるようになった とうとうあきらめなかった</jp><text>= \"Estudei o tempo todo ultimamente e passei a entender japonês mais ou menos. No fim, não desisti\".</text>",
+      "fix": "<jp reading=\"さいきんずっとべんきょうして、とうとうにほんごがだいたいわかるようになった\">最近ずっと勉強して、とうとう日本語がだいたい分かるようになった</jp><text>= \"Ultimamente estudei o tempo todo e, por fim, passei a entender japonês mais ou menos\".</text>",
+      "why": "とうとう + negative means the awaited thing never happened (a let-down), the opposite of the 'no fim, não desisti' the gloss claims, so とうとうあきらめなかった teaches the lesson's own item wrong. Rewritten as one affirmative sentence that keeps ずっと + とうとう + だいたい + ようになった, with no 。 (house rule for generated jp) and no two clauses joined by a space. Same tag multiset."
+    },
+    {
+      "slug": "les:n4-experiencia-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The spelling is already correct in the file ('Juntando tudo num minirretrato de mudança:'); 'miniretrato' is gone. Already fixed."
+    },
+    {
+      "slug": "les:n4-forma-simples-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Marca \"a pessoa que faz X\". Está em </text><vocab ref=\"vocab:大学生\"/><text>? Não, mas pense em 医者 (médico): é \"a pessoa da medicina\".",
+      "fix": "Marca \"a pessoa que faz X\". Pense em 医者 (médico): é \"a pessoa da medicina\". Já em </text><vocab ref=\"vocab:大学生\"/><text> quem marca a pessoa é 生, não 者.",
+      "why": "The rhetorical 'Está em 大学生? Não' teaches nothing and confuses. Kept the <vocab ref=\"vocab:大学生\"/> chip (the word's only anchor in the lesson body) and turned the negative into a useful observation: in 大学生 the person is marked by 生. Tag multiset identical (</text> + <vocab/> + <text>)."
+    },
+    {
+      "slug": "les:n4-forma-simples-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Pense numa \"boca\" (口) dentro de uma moldura: o membro registrado de um grupo.",
+      "fix": "Pense numa \"boca\" (口) em cima de uma concha (貝), que era moeda na China antiga: o membro registrado e contado de um grupo.",
+      "why": "員 is 口 over 貝; there is no frame at all and the main component (貝) was never mentioned, so the mnemonic gave the learner a wrong picture of the composition. Plain text inside <text>, no markup."
+    },
+    {
+      "slug": "les:n4-forma-simples-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(\"será que ela está preocupada?\")",
+      "fix": "(\"será que tem algum problema?\")",
+      "why": "心配かしら has no subject and 心配 is the predicate; 'ela' invents a third-person female subject in the very example teaching that かしら marks a female SPEAKER, risking the lesson that the particle signals a female subject. Neutral gloss, in line with 元気かしら in the grammar registry."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+ "queue": "redissect",
+ "checked_file": "research/derived/qa_queues/redissect.json",
+ "check": "independent-adversarial-1",
+ "date": "2026-08-06",
+ "verdict": "accept-with-drops",
+ "problems": [
+  {
+   "id": "sent:gen-7ca88b215555",
+   "row": "current 此処はとても静かだ / fix ここはとても静かだ",
+   "issue": "The row's safety claim is false. It states that after the orthography change 'the link survives: dissect.py indexes vocab by kana as well as by headword and form', i.e. that position 0 keeps vocab_id 246. It does not. dissect.py builds _vocab_by_form from vocab_form FIRST with setdefault, and entry 196 (九, きゅう) registers ここ among its written forms, so the form ここ resolves to 196 before 246 is ever reached. Verified two ways: db/corpus.sqlite replay of the exact _vocab_by_form construction returns 196 for the key ここ; and all 58 C-tokens in the bank whose surface is ここ carry lemma ここ and vocab_id 196, while only the 2 tokens spelled 此処 carry 246. The near-identical sibling sent:gen-21c1758ed897 (ここはとても静かな町です) is one of the 58. This record's tag is 246, so re-dissecting from the proposed jp destroys the sentence's only link to its declared target word, creating exactly the defect the queue's own summary condemns in six other records.",
+   "action": "needs-human"
+  },
+  {
+   "id": "sent:gen-9467d40879f4",
+   "row": "current 此処に座ってもいいですか / fix ここに座ってもいいですか",
+   "issue": "Same false claim as sent:gen-7ca88b215555. The row states position 0 'keeps reading ここ, romaji koko, pronoun POS and vocab_id 246 (headword 此処, kana ここ), so only surface and lemma change'. The form table resolves ここ to entry 196 (九), verified against db/corpus.sqlite and against the 58 existing ここ tokens in the bank, every one of which carries 196. This record's tag is also 246, so the change as justified unlinks the target word.",
+   "action": "needs-human"
+  },
+  {
+   "id": "sent:gen-6f1566f1c7de",
+   "row": "rows current 雨が降る様ですね / fix 雨が降るようですね AND current \"vocab_id\": 1176 / fix \"vocab_id\": 1199",
+   "issue": "Three defects. (1) The two rows are mutually destructive, contrary to the vocab_id row's claim 'Independent of the spelling change and safe to apply on its own': the form table resolves よう to entry 955 (用, よう), not 1199. All 119 C-tokens in the bank whose surface is よう with pos_fine 助動詞語幹 carry vocab_id 955. Re-dissecting from the new jp overwrites the repointed 1199 with 955, and the record loses its declared target 1199 again. (2) The jp row's why calls itself 'the token-side half the verifier found missing', but the value supplied is the sentence jp field, not a token surface or lemma. No row in the queue changes tokens[3].surface / tokens[3].lemma from 様 to よう, so applying the queue as written leaves concat(C surfaces) != jp, the very invariant the row cites. Contrast sent:gen-7dbe2462fc9a, where the queue does emit a real token block. (3) Incomplete cascade of the same class the queue itself is fixing here. The row current 'verbo principal (dentro do 様です)' asserts 'the rest of the record moves to ようです'. It does not: tokens[3].role.pt-BR ('núcleo do padrão 様です (conjectura por evidência)'), tokens[3].role.en ('head of the 様です pattern (conjecture from evidence)'), tokens[2].conjugation_note both locales, and both structure_explanation locales still spell 様/様です, and this record's earlier resolution was rejected in full so nothing else covers them.",
+   "action": "needs-human"
+  },
+  {
+   "id": "sent:gen-efb21932a32f",
+   "row": "rows current 彼は元気な様です / fix 彼は元気なようです AND current \"vocab_id\": 1176 / fix \"vocab_id\": 1199",
+   "issue": "Same two-row conflict as sent:gen-6f1566f1c7de (よう resolves to entry 955 through the form table, so re-dissection undoes the 1199 repoint and the record loses its declared target again), plus a worse cascade gap. The jp row's why says 'This is exactly the missing token edit the verifier flagged' while supplying the sentence jp field; no row changes tokens[4].surface / tokens[4].lemma from 様 to よう. The same why then names the stale Layer-B strings ('the roles on positions 2 and 4 and the gloss on position 3 all name 様 or 様です') and emits no fix for any of them, and also misses tokens[2].conjugation_note (both locales) and both structure_explanation locales. The parallel record sent:gen-6f1566f1c7de did get role rows, this one got none. This record's earlier resolution was rejected in full, so this queue is the only source of edits: applying just the jp value reproduces verbatim the 'half-applied jp re-author' state the verifier rejected.",
+   "action": "needs-human"
+  },
+  {
+   "id": "sent:tatoeba-9240812",
+   "row": "current the tokens[0] block ending \"role\": null / fix the same block with role pt-BR objeto direto, en direct object",
+   "issue": "The fix value itself is correct and well formed (家 is the を-marked direct object, both locales supplied, wording matches the corpus house form used on sent:gen-7dbe2462fc9a and sent:gen-b2ed6e8bb267, no language mixing). The problem is the claim 'The verifier's objection to the earlier attempt stands and is met here'. The recorded objection had two independent limbs: locale parity, which this row meets, and the ruling that the current state is defensible rather than defective ('31 C-mode tokens in the bank legitimately carry a gloss with no role at all... A missing optional annotation is not an error, so the hard rule (if the current value is defensible, choose refute and emit no edit) applies'). The second limb is not met and not mentioned; the row creates an annotation a prior pass explicitly ruled unnecessary.",
+   "action": "needs-human"
+  },
+  {
+   "id": "sent:gen-b2ed6e8bb267",
+   "row": "current \"vocab_id\": 334 / fix \"vocab_id\": 1358, and the same figure in the queue summary",
+   "issue": "The corpus-wide count is wrong. The row says 'it is the largest instance of the class, 716 tokens of する and し corpus-wide' and the summary repeats 'する and し to 334 (刷る) 716 tokens'. Measured on corpus/sentences/bank.json: 673 C-tokens whose surface is する or し carry vocab_id 334; 739 C-tokens in total carry it (surfaces し 503, する 170, さ 38, しよう 19, すれ 4, しろ 3, せ 2); 717 sentences contain at least one. No slicing yields 716. Every other count in the queue is exact (この 367, かれ 297, なか 57, せ 12, よう 7, 尤も 3, 下る 2, ためる 1, and 336 of 5,565 sentences with stale token romaji while kana concatenates in all 5,565), so this one figure is the outlier and it understates the scope of the repair. The vocab_id repoint itself is correct.",
+   "action": "keep"
+  },
+  {
+   "id": "sent:gen-cb6562f41e17",
+   "row": "current 私のお兄さんは背が高い / fix 友達のお兄さんは背が高い",
+   "issue": "The fix value is correct and matches the pending resolution. The why contains a carve-out that contradicts the queue's own criterion: 'Position 4 (背, reading せ, vocab_id 336) is correct in this record, since here the word really is stature.' The queue's row on sent:gen-138c8e26cf51 establishes the discriminator as the reading (entry 336 has kana せい, entry 1338 has kana せ) and counts '12 tokens read せ carry the 336 link corpus-wide'. This token reads せ and is one of those 12 (verified: exactly 12 C-tokens have vocab_id 336 with reading せ). Entry 1338 also glosses 'height (of a person); stature', so the sense argument does not separate them either. A corpus-wide repair pass reading both rows gets contradictory instructions about this token.",
+   "action": "keep"
+  }
+ ],
+ "evidence": {
+  "rows_checked": 39,
+  "fix_rows": 28,
+  "no_change_rows": 2,
+  "needs_human_rows": 9,
+  "criterion_a_current_byte_exact": {
+   "method": "Located each row's record in corpus/sentences/bank.json by slug, sliced the record's raw text out of the file, and tested containment of the row's 'current' string.",
+   "result": "28/28 fix-row anchors are present in their own record and unique within it (count == 1 in every case). 26 match the file bytes directly. The 2 multi-line block anchors (sent:gen-7dbe2462fc9a, sent:tatoeba-9240812) use \\n where the file on disk uses \\r\\n, so they match only after line-ending normalization; the field content and the 8-space indentation are otherwise exact. Not reported as a problem, but an applier doing raw byte replacement must normalize line endings."
+  },
+  "criterion_b_fix_is_value": {
+   "result": "All 28 fixes are values. No 'replace X with Y', no 'should be', no arrow forms, no instruction phrasing. The 2 multi-field blocks are literal JSON fragments in the file's own shape. The 10 jp-valued fixes were cross-checked against research/derived/fable5_validation/phase3_manual_resolutions.json: every one is byte-identical to the pending jp value for that slug (8 from the accepted set, 2 from the resolutions the verifier rejected), so none is an invented sentence."
+  },
+  "criterion_c_locale_purity": {
+   "result": "Clean. The only prose fixes are 'main verb (within ようです)' into role.en and 'verbo principal (dentro do ようです)' into role.pt-BR, correctly paired; the sent:tatoeba-9240812 block supplies 'direct object' to .en and 'objeto direto' to .pt-BR. Mechanical enums stay neutral English: pos noun, inflection terminal. pos_coarse/pos_fine stay Japanese (名詞 / 普通名詞), matching the stored convention on every other noun token. No emoji, no em dashes."
+  },
+  "criterion_d_layer_a_prose": {
+   "result": "Not applicable to this queue (rule d is scoped to layer-a-pairing). Checked anyway: the two Layer-A records with fix rows, sent:tatoeba-141147 and sent:tatoeba-223377, receive only a vocab_id repoint and a token romaji correction. No jp, kana, reading or translation on a gen=false record is touched by any fix row, and the Layer-A integrity question on sent:tatoeba-141147 is correctly held at needs-human."
+  },
+  "criterion_e_fix_addresses_complaint": {
+   "result": "22 of 28 fix rows verified sound against the stored data. The vocab repoints all check out against corpus/vocab/n*.json: 336(背/せい)->1338(背/せ), 196(九)->257(此の) twice, 334(刷る)->1358(為る) twice, 1176(様/さま)->1199(様/よう) twice, 1184(最も)->1356(尤も), 41(彼/あれ)->758(彼/かれ) twice, 1178(下がる)->4419(下る), 79(内)->464(中). The inflection fix on sent:gen-986d061ae368 is right: 正しい closes the first clause before the 読点 and 厳しい in the same slot is already labelled terminal. The romaji fix on sent:tatoeba-223377 position 8 is right: the stored sentence romaji already reads naka. The え->絵 block on sent:gen-7dbe2462fc9a is right and its pos_fine 普通名詞 matches the convention used by 紙 in the same sentence. The 6 problems above are the exceptions."
+  },
+  "cross_checks_run": {
+   "form_table_replay": "Rebuilt dissect.py's _vocab_by_form from db/corpus.sqlite in the same order the code uses (vocab_form, then headword, then kana, all setdefault). Lookups: ここ->196, 此処->246, よう->955, 様->1176, 以下->932, いか->932, 絵->85, え->85, 猫->492, 友達->454, 私->690, そうして->1340, 背中->1229, 味噌汁->None. This confirms the queue's claims for 以下, 絵, 猫, 友達, 私, そうして and 味噌汁, and refutes them for ここ and よう.",
+   "bank_wide_counts": "5,565 sentences. Token-romaji concatenation mismatches: 336. Kana concatenation mismatches: 0. Both figures match the queue exactly."
+  }
+ }
+}

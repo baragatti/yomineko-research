@@ -1,0 +1,181 @@
+{
+  "batch": 18,
+  "fixes": [
+    {
+      "slug": "les:n5-numeros-tempo-08",
+      "field": "body",
+      "verdict": "fix",
+      "current": ": parece \"esporte\" ou algo do tipo, mas significa",
+      "fix": ": o katakana engana, porque a palavra veio do francês, não do inglês, e significa",
+      "why": "Complaint is real: ズボン has no phonetic or semantic link to \"esporte\" (スポーツ), so the l1-pitfall warns about nothing. The list item right above already states the French origin (jupon), so the corrected pitfall now says something true and useful. Edit stays inside one <text> node; markup untouched (the bold ' calça' that follows is preserved)."
+    },
+    {
+      "slug": "les:n5-numeros-tempo-09",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Por virem do português, dá vontade de ler ",
+      "fix": "Por parecerem palavras que a gente já conhece (elas vêm do inglês \"sports\" e \"stove\"), dá vontade de ler ",
+      "why": "Factual error in learner-facing text: スポーツ comes from English \"sports\" and ストーブ from English \"stove\", not from Portuguese. The note's actual point is pronunciation, which the new wording keeps. Edit stays inside one <text> node; the following <jp>スポーツ</jp> and <jp>ストーブ</jp> spans are untouched."
+    },
+    {
+      "slug": "les:n5-particulas-lugar-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": ", \"isso / aquilo\")",
+      "fix": ", \"isso\", algo perto de quem ouve)",
+      "why": "それ is the medial demonstrative. The course teaches これ/それ/あれ = isto/isso/aquilo (topic-07 lesson-02) and corpus vocab:1006970 glosses それ as [isso, esse], so \"aquilo\" here belongs to あれ and breaks the mapping. Edit stays inside one <text> node."
+    },
+    {
+      "slug": "les:n5-particulas-lugar-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": ": por aí, naquela direção",
+      "fix": ": por aí, nessa direção (do lado de quem ouve)",
+      "why": "そちら is medial; corpus vocab:1006780 (其方) glosses it \"aí / esse lado / essa direção\". \"Naquela direção\" is the あちら gloss and contradicts the section's own framing (\"direção próxima\") and the sibling そこ item. Wording avoids repeating the previous item's exact parenthetical. Edit stays inside one <text> node."
+    },
+    {
+      "slug": "les:n5-particulas-lugar-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<vocab ref=\"vocab:出す\"/><text> (\"tirar, pôr para fora\"): </text><jp reading=\"いえでだす\">家で出す</jp><text> = \"tirar/pôr para fora em casa\".</text>",
+      "fix": "<vocab ref=\"vocab:出す\"/><text> (\"pôr para fora, enviar\"): </text><jp reading=\"ゆうびんきょくでだす\">郵便局で出す</jp><text> = \"postar uma carta no correio\".</text>",
+      "why": "出す is transitive; 家で出す with no object is a non-collocation and the gloss \"tirar/pôr para fora em casa\" is uninterpretable pt-BR. Sense 2 of corpus vocab:1338180 is \"enviar, mandar, entregar\" and vocab:1542430 (郵便局) is N5, so the replacement is Layer-A backed and keeps the list's [lugar]で[verbo] pattern (cf. 店で頼む, 駅で立つ). Tag multiset unchanged: vocab, text, jp, text."
+    },
+    {
+      "slug": "les:n5-particulas-lugar-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": " (午前, 午後, 今晩), outras são \"relativas\" e dispensam a partícula (朝, 今朝):",
+      "fix": " (午前, 午後), outras são \"relativas\" e dispensam a partícula (朝, 今朝, 今晩):",
+      "why": "今晩 is deictic like 今朝/今日 and does not take に (今晩に is unnatural). Listing it as \"fixa\" contradicts the lesson's own rule stated two paragraphs above (\"se a palavra só faz sentido em relação ao dia de hoje, deixe sem\"). Edit stays inside one <text> node; the checklist line listing all five words still holds."
+    },
+    {
+      "slug": "les:n5-particulas-lugar-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"あきにほんへかえります\">秋日本へ帰ります</jp>",
+      "fix": "<jp reading=\"あきににほんへかえります\">秋に日本へ帰ります</jp>",
+      "why": "Bare 秋日本へ帰ります garden-paths as the non-word 秋日本; the two sibling items use deictic 今年/再来年, which never take に, so the slot teaches a false analogy for a season noun. 秋に is the normal form. Only the <jp> content and its reading attribute change, so the tag multiset is identical and the trailing \"= No 秋 volto para o Japão.\" still reads correctly."
+    },
+    {
+      "slug": "les:n5-particulas-lugar-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "em compostos de mês ele soa </text><jp>げつ</jp><text>. Você já o vê em ",
+      "fix": "em compostos de mês ele costuma soar </text><jp>げつ</jp><text>, mas nos nomes dos meses soa がつ (一月 é いちがつ). O げつ você já vê em ",
+      "why": "The blanket claim is false for the commonest 〜月 compounds (一月 いちがつ, 四月 しがつ, which the course already introduces), and a learner would produce いちげつ. The correction keeps the 今月/先月 sentence that follows instead of duplicating it. Tag multiset unchanged (</text><jp>…</jp><text>); the added Japanese sits inside an existing <text> node, matching this file's and the sibling lesson-04's convention."
+    },
+    {
+      "slug": "les:n5-particulas-lugar-08",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"ほんやぺん\">本やペン</jp><text> usa </text><jp>や</jp><text> para citar \"livros\" e \"canetas\" como exemplos do que há sobre a mesa: o \"e coisas assim\" da tradução vem justamente do </text><jp>や</jp><text>.</text><jp reading=\"つくえのうえに\">机の上に</jp><text> diz o lugar (\"em cima da mesa\") e </text><jp>ある</jp><text> é o verbo \"existir\" para coisas, que você já viu.</text></p>\n<note type=\"l1-pitfall\"><p><text>Não troque </text><jp>と</jp><text> e </text><jp>や</jp><text> à toa:</text><jp reading=\"ほんとぺん\">本とペン</jp><text> diz que sobre a mesa há</text><text weight=\"bold\"> exatamente</text><text> livro e caneta, mais nada;</text><jp reading=\"ほんやぺん\">本やペン</jp><text> deixa a porta aberta para outros objetos. Escolher errado muda o sentido.</text></p></note>",
+      "fix": "<jp reading=\"ほんやペン\">本やペン</jp><text> usa </text><jp>や</jp><text> para citar \"livros\" e \"canetas\" como exemplos do que há sobre a mesa: o \"e coisas assim\" da tradução vem justamente do </text><jp>や</jp><text>.</text><jp reading=\"つくえのうえに\">机の上に</jp><text> diz o lugar (\"em cima da mesa\") e </text><jp>ある</jp><text> é o verbo \"existir\" para coisas, que você já viu.</text></p>\n<note type=\"l1-pitfall\"><p><text>Não troque </text><jp>と</jp><text> e </text><jp>や</jp><text> à toa:</text><jp reading=\"ほんとペン\">本とペン</jp><text> diz que sobre a mesa há</text><text weight=\"bold\"> exatamente</text><text> livro e caneta, mais nada;</text><jp reading=\"ほんやペン\">本やペン</jp><text> deixa a porta aberta para outros objetos. Escolher errado muda o sentido.</text></p></note>",
+      "why": "Orthographic furigana must keep the katakana of ペン; the same lesson already does it in reading=\"パンとたまご\". Three spans carry the hiraganized ぺん (one in the body paragraph, two in the l1-pitfall note), so the anchor covers all three at once. Only reading attribute values change; the tag multiset is byte-identical."
+    },
+    {
+      "slug": "les:n5-passado-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "O </text><emphasis>-katta</emphasis><text> no fim é a marca de passado, a mesma que aparece em ",
+      "fix": "O </text><emphasis>-katta</emphasis><text> no fim é o passado de ない (なかった); a marca de passado mesmo é o た, que também aparece em ",
+      "why": "だった is だ + た and contains no かった, so the claim that the -katta of じゃなかった is the same marker seen in だった is wrong and invites the parse だ + かった. かった is the i-adjective past ending that ない takes; only た is shared. Edit stays inside existing <text> nodes, with <emphasis>-katta</emphasis> and <jp>だった</jp> untouched."
+    },
+    {
+      "slug": "les:n5-passado-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"とおかでした\">１０日でした</jp>",
+      "fix": "<jp reading=\"とおかだった\">１０日だった</jp>",
+      "why": "The list explicitly shows \"afirmativo e negativo lado a lado\", but pairs polite でした with casual じゃなかった; the lesson itself teaches that the polite negative is じゃありませんでした, and the next bullet correctly pairs だった/じゃなかった. Only the <jp> content and its reading change, so the tag multiset is identical and the gloss \"era １０日\" still fits."
+    },
+    {
+      "slug": "les:n5-passado-04",
+      "field": "exercises[1].answer.choices[2]",
+      "verdict": "fix",
+      "current": "な",
+      "fix": "を",
+      "why": "動物が好きだな is fully natural and means exactly what the prompt asks, so な was a second correct answer (the lesson's own tip says なあ and な are the same particle and ex-5 accepts いいな), making the MCQ unanswerable. を can never close this sentence after だ, so it is a clean distractor. Leaf-only edit: the answer object and the correct value \"なあ\" are untouched."
+    },
+    {
+      "slug": "les:n5-perguntas-03",
+      "field": "exercises[0].prompt",
+      "verdict": "fix",
+      "current": "perguntar 'qual deles?' SEM dizer",
+      "fix": "perguntar 'qual delas?' SEM dizer",
+      "why": "The antecedent in this prompt is \"cinco câmeras\" (feminine), so pt-BR requires \"qual delas?\". The generic gloss \"qual deles?\" in the title, explanation and checklist has no antecedent and stays as is."
+    },
+    {
+      "slug": "les:n5-perguntas-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": " tem dois kanji:</text><jp>風</jp><text>(vento) é \"vento\";</text>",
+      "fix": " tem duas grafias em kanji: </text><jp>風</jp><text> é \"vento\"; </text>",
+      "why": "As stored, the note renders 風(vento) é \"vento\" (the same gloss twice in one clause), and \"tem dois kanji\" misreads as \"is written with two characters\" when the point is that かぜ has two kanji spellings (風 and 風邪, itself two characters). Tag multiset unchanged (</text><jp>…</jp><text>)."
+    },
+    {
+      "slug": "les:n5-perguntas-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Compare com a frase do café acima: ",
+      "fix": "Compare com a frase \"Quero comer alguma coisa\" lá do começo da lição: ",
+      "why": "Broken cross-reference: the only sentence above this paragraph is 何か食べたいです (sent:gen-54dd1d1ebf25, pt-BR \"Quero comer alguma coisa.\"); the coffee example (sent:gen-c737b9f8b9da) appears two sections later and contains no なにか. Referring to it by its pt-BR translation keeps the contrast working without adding any tag (the reviewer's version would have injected a new <jp> pair)."
+    },
+    {
+      "slug": "les:n5-revisao-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"っ\">っ</jp>",
+      "fix": "<jp reading=\"きって\">きって</jp>",
+      "why": "The sokuon sentence illustrates っ with っ itself, so it teaches nothing. きって (\"selo\") is already cited and glossed two clauses earlier in the same note, so it is the intended example. Only the <jp> content and reading change; the tag multiset is identical."
+    },
+    {
+      "slug": "les:n5-rotina-01",
+      "field": "title",
+      "verdict": "fix",
+      "current": "Advérbios de frequência: いつも e けっこう",
+      "fix": "Advérbios do dia a dia: いつも e けっこう",
+      "why": "けっこう is a degree adverb, not a frequency adverb: the lesson body itself says it \"mede o grau de algo\" and every example is about intensity (道は長い, 八百屋は遠い). Calling both words \"de frequência\" risks the learner using けっこう for frequency. The mirrored H2 in body is fixed by the paired entry below so title and heading stay in sync."
+    },
+    {
+      "slug": "les:n5-rotina-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Quer responder rápido em japonês? Para uma pergunta como \"já comeu?\", basta dizer </text><jp>もう</jp><text>(já) ou </text><jp>まだ</jp><text>(ainda não). Esses pares curtos fazem você soar fluente sem montar a frase inteira.",
+      "fix": "Quer responder rápido em japonês? Para uma pergunta como \"já comeu?\", o lado do \"ainda não\" se resolve com </text><jp>まだです</jp><text>. Já o lado do \"já\" pede o verbo junto: </text><jp reading=\"もうたべました\">もう食べました</jp><text> (já comi), porque a palavra sozinha soaria como a pergunta surpresa \"já?!\".",
+      "why": "まだ(です) works as a standalone reply, but a bare もう does not: it reads as 「もう？」 \"já?!\". Teaching it as a ready-made answer produces unnatural output and clashes with the lesson's own checklist (\"Uso まだです para 'ainda não'\") and with もう食べました in the body. Tag multiset unchanged (</text><jp>…</jp><text> twice)."
+    },
+    {
+      "slug": "les:n5-rotina-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": ": metro, unidade",
+      "fix": "(メートル): metro (unidade de comprimento)",
+      "why": "\"unidade\" is not a meaning of 米; the gloss was truncated. Corpus vocab:1132570 reads exactly \"metro (unidade de comprimento)\", and the ateji reading メートル also disambiguates it from vocab:1508750 (米 こめ, arroz). Sibling lesson n5-rotina-04 already writes \"(メートル) = metro (unidade de comprimento)\". Edit stays inside one <text> node."
+    },
+    {
+      "slug": "les:n5-te-form-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": ", de seres vivos) costuma ser \"está acontecendo / está num estado\"; </text><jp>〜てある</jp><text> (com </text><jp>ある</jp><text>, de coisas) é sempre \"foi preparado de propósito e está assim\".",
+      "fix": ") vale para qualquer sujeito, seja gente, bicho ou coisa, e diz \"está acontecendo\" ou \"está num estado\"; </text><jp>〜てある</jp><text> (com </text><jp>ある</jp><text>) é sempre \"alguém deixou assim de propósito e continua assim\", por isso pede um verbo com alguém agindo por trás.",
+      "why": "Animacy (\"de seres vivos\" / \"de coisas\") is the あります/います existence rule, not the ている/てある contrast, which is progressive/resultative vs transitive-plus-intentional. This same lesson uses 鼻がつまっています and 花がさいています with inanimate subjects, so the mnemonic contradicts its own examples. Tag multiset unchanged (</text><jp>…</jp><text> twice); avoids the untaught term \"transitivo\"."
+    },
+    {
+      "slug": "les:n5-rotina-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<heading level=\"2\"><text>Advérbios de frequência: いつも e けっこう</text></heading>",
+      "fix": "<heading level=\"2\"><text>Advérbios do dia a dia: いつも e けっこう</text></heading>",
+      "why": "Paired with the title fix above: the H2 mirrors the lesson title, and the QA finding explicitly required both to change together so they do not desync. Same reason (けっこう is a degree adverb, not a frequency adverb). Only text content changes; the tag multiset is identical."
+    },
+    {
+      "slug": "les:n5-passado-04",
+      "field": "exercises[1].explanation",
+      "verdict": "fix",
+      "current": "O か faria uma pergunta, e o な sozinho colado a verbo seria proibição.",
+      "fix": "O か depois de だ não forma pergunta (a pergunta seria 好きか) e o を é partícula de objeto, que nunca fecha a frase.",
+      "why": "Coherence follow-up to the choices[2] swap in the same exercise: the stored explanation justifies a distractor (な) that no longer exists. It was also wrong on its own terms, since 好きだか is ungrammatical rather than a question and prohibitive な only follows a dictionary-form verb. Leaf-only edit on the explanation string."
+    }
+  ]
+}

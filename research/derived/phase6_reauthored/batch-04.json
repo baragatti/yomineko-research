@@ -1,0 +1,173 @@
+{
+  "batch": 4,
+  "fixes": [
+    {
+      "slug": "les:n3-conjectura-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(Quando me complico, conto com os amigos.)",
+      "fix": "(Quando estou em apuros, conto com os amigos.)",
+      "why": "Real defect. 困った時は means being in trouble, not causing it; 'Quando me complico' shifts the agency and is unnatural pt-BR. Anchor exists verbatim in the body; the original skip was only because the author wrote prose into the fix field. Plain text, no markup touched."
+    },
+    {
+      "slug": "les:n3-conjectura-05",
+      "field": "exercises[4].prompt",
+      "verdict": "fix",
+      "current": "Escreva em japonês: 'Quando me complico, conto com os amigos.' (use 頼る)",
+      "fix": "Escreva em japonês: 'Quando estou em apuros, conto com os amigos.' (use 頼る)",
+      "why": "Companion edit required by the same finding: ex:n3-conjectura-05-5 reuses the identical string as the only cue for the expected answer 困った時は友達に頼る. Leaving it would desync prompt and body. Plain text, no markup."
+    },
+    {
+      "slug": "les:n3-conjectura-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<heading level=\"3\"><text>Advérbios úteis</text></heading>",
+      "fix": "<heading level=\"3\"><text>Mais palavras úteis</text></heading>",
+      "why": "Real defect: the list under this heading holds 夢中 (noun/na-adjective) and 結ぶ (godan verb) alongside the two actual adverbs 寧ろ and 滅多に, so the heading makes a false word-class claim. 'Mais palavras úteis' is the existing house heading (n4-obrigacao-04, n4-transitividade-05). Tag multiset unchanged; anchor occurs once."
+    },
+    {
+      "slug": "les:n3-conjectura-07",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate report of the same 'Advérbios úteis' heading defect already covered by the preceding entry in this batch. Applying a second edit would fail (anchor consumed) or double-edit the heading."
+    },
+    {
+      "slug": "les:n3-desejos-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text> respeitoso que vira </text><jp>さん</jp><text> formal (</text>",
+      "fix": "<text> respeitoso, a versão mais formal de </text><jp>さん</jp><text> (</text>",
+      "why": "Real defect: as written ('o 様 respeitoso que vira さん formal') the arrow points 様 to さん, inverting the honorific hierarchy; さま is the upgrade of さん. Reviewer quoted the flattened render, hence the missed anchor. Rewritten with the byte-exact markup slice: same tag multiset (text/jp/text), Portuguese stays inside <text>, さん stays inside <jp>."
+    },
+    {
+      "slug": "les:n3-desejos-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The body already reads <jp reading=\"これがほんとうだとしたら、だいもんだいだ\">これが本当だとしたら、大問題だ</jp>; the おおもんだい reading is not present."
+    },
+    {
+      "slug": "les:n3-desejos-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The opening paragraph already has the space: \"Já vimos a condicional do dia a dia ('quando/se acontecer').\""
+    },
+    {
+      "slug": "les:n3-desejos-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "E </text><kanji ref=\"kanji:達\"/><text> com 'alcançar o topo' combina bem com a ideia de chegar lá.</text>",
+      "fix": "Dá para juntar os dois numa imagem só: 登 é a subida e </text><kanji ref=\"kanji:達\"/><text> é a chegada.</text>",
+      "why": "Real defect: the closing sentence re-introduces 達 (already defined two clauses earlier) and says nothing coherent, so the intended 登 + 達 image never lands. Rewritten as an explicit mnemonic that does not suggest 登達 is a word. Byte-exact anchor, occurs once, identical tag multiset (the same <kanji ref=\"kanji:達\"/> element is kept, ref untouched)."
+    },
+    {
+      "slug": "les:n3-desejos-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate report of the same garbled 登/達 closing sentence, already covered by the preceding entry in this batch."
+    },
+    {
+      "slug": "les:n3-desejos-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"コーヒーにするそれともこうちゃにする\">コーヒーにする。それとも紅茶にする</jp>",
+      "fix": "<jp reading=\"コーヒーにするそれともこうちゃにする\">コーヒーにする？それとも紅茶にする？</jp>",
+      "why": "Real defect: それとも links two alternative questions, but with 。 the Japanese reads as two statements while the pt-BR gloss is a question. ？ kept inside the <jp> element (the majority convention in this corpus, 15 occurrences) so the tag multiset is untouched; reading attribute keeps punctuation stripped as everywhere else; the gloss stays as is."
+    },
+    {
+      "slug": "les:n3-desejos-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"やまのうえからのながめをながめた\">山の上からの眺めを眺めた</jp>",
+      "fix": "<jp reading=\"やまのうえからけしきをながめた\">山の上から景色を眺めた</jp>",
+      "why": "Real defect: 眺めを眺めた repeats the same lexeme as noun and verb in one clause, which no native writer produces. 景色を眺める is the natural collocation and keeps the taught verb 眺める; the existing gloss '(Contemplei a vista do alto da montanha.)' still matches, so no second edit is needed. Same tag multiset, anchor occurs once."
+    },
+    {
+      "slug": "les:n3-desejos-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The body already reads '(A lama grudou no vestido e não sai.)'; the ungrammatical 'Sujou lama no vestido' is not present."
+    },
+    {
+      "slug": "les:n3-desejos-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate report: the two remaining findings on this field restate the 眺めを眺めた and 'Sujou lama' defects already handled by the two preceding entries."
+    },
+    {
+      "slug": "les:n3-desejos-07",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The stored reading is already fully kana: <jp reading=\"このしょうひんにはいちねんのほしょうがついている\">この商品には一年の保証がついている</jp>. No Arabic digit in the attribute."
+    },
+    {
+      "slug": "les:n3-deveres-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The warning note already reads 'leem-se por mora cheia: kya-n-pu, kya-pu-te-n.'"
+    },
+    {
+      "slug": "les:n3-deveres-02",
+      "field": "exercises[1].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The explanation already carries the merged wording: 心配することがない daria 'não costumo me preocupar'; 'nunca me preocupei' exige a forma た: 心配したことがない."
+    },
+    {
+      "slug": "les:n3-deveres-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "; o que muda tudo é o </text><jp>ない</jp><text> antes do verbo.</text>",
+      "fix": "; o que muda tudo é o </text><jp>ない</jp><text> colado no fim do verbo, logo antes desse bloco.</text>",
+      "why": "Real defect: in ～ないことはない the ない is the verb's ない-form ending (直せ + ない + ことはない), so 'antes do verbo' teaches the wrong position in the very note meant to prevent that error, and it contradicts the correct rule stated one paragraph above. Byte-exact markup slice, occurs once, identical tag multiset; 'desse bloco' refers to the ことはない just named in the same sentence, so no Japanese is added inside <text> that is not already there."
+    },
+    {
+      "slug": "les:n3-deveres-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate report of the same ない-placement defect, already covered by the preceding entry in this batch."
+    },
+    {
+      "slug": "les:n3-deveres-06",
+      "field": "exercises[2].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The explanation already reads 'com たい indica desejo: 減らしたい.' and the file contains zero occurrences of the simplified glyph 减 (U+51CF)."
+    },
+    {
+      "slug": "les:n3-deveres-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint no longer applies. The gloss already reads '(Como encontrei um bom método, fiz o relatório ao chefe de departamento.)'"
+    },
+    {
+      "slug": "les:n3-enfase-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Neither complaint applies any more: the reading is already <jp reading=\"きみさえいれば、ぼくはこうふくだ\">君さえいれば、僕は幸福だ</jp>, and the clitic is already proclitic pt-BR ('Ela se liga sobretudo a substantivos e pronomes.')."
+    }
+  ]
+}

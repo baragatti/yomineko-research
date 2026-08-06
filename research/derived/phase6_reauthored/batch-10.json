@@ -1,0 +1,173 @@
+{
+  "batch": 10,
+  "fixes": [
+    {
+      "slug": "les:n3-tempo-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text> + うちに; adjetivo い + うちに; substantivo + の + うちに.</text>",
+      "fix": "<text> + うちに; verbo na forma ない + うちに; adjetivo い + うちに; substantivo + の + うちに.</text>",
+      "why": "Objective 2 and the checklist both teach ~ないうちに, but the formation line lists only ている / adjective い / noun + の, so the negative pattern has no stated formation. Swapping the example 降っていないうちに for 降らないうちに belongs to the sibling skipped entry on the same field (#178); this entry touches only the formation line so the two repairs cannot collide."
+    },
+    {
+      "slug": "les:n3-tempo-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"このうちにじっけんがおおきくしんぽした\">この内に実験が大きく進歩した</jp><text> (Nesse meio-tempo, o experimento progrediu bastante.)</text>",
+      "fix": "<jp reading=\"そのうちにじっけんがおおきくしんぽした\">そのうちに実験が大きく進歩した</jp><text> (Com o tempo, o experimento progrediu bastante.)</text>",
+      "why": "この内に is not a usable time adverbial and does not mean 'nesse meio-tempo'. そのうちに is the idiomatic form, written in kana, and it keeps the ～うちに pattern the lesson intro promises the examples will reuse. The pt-BR translation is adjusted to match the Japanese and the kana reading follows the swap."
+    },
+    {
+      "slug": "les:n3-tempo-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Mais ligada a crédito e confiabilidade prática. (e, na nota: 'crédito, confiabilidade')",
+      "fix": "Mais ligada a crédito e confiabilidade prática.",
+      "why": "The mechanical applier wrote the reviewer's editorial parenthetical into the lesson body. That is pipeline prose sitting inside learner-facing text. The fiabilidade to confiabilidade swap already landed; only the instruction needs to come out."
+    },
+    {
+      "slug": "les:n3-tempo-05",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate, already resolved: the second 'fiabilidade' occurrence, in the l1-pitfall note, already reads \"crédito, confiabilidade\" in the current file. Nothing to do."
+    },
+    {
+      "slug": "les:n3-tempo-06",
+      "field": "exercises[2].answer.text",
+      "verdict": "fix",
+      "current": "客が___に入ってくる",
+      "fix": "次々",
+      "why": "Malformed cloze: answer.text repeated the blanked prompt instead of holding the filler. The bank convention (ex:n3-tempo-07-4 stores ピクニック) is text = the missing fragment, so a learner answering 次々 is now graded correct. answer.full is left untouched."
+    },
+    {
+      "slug": "les:n3-tempo-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(びじん) - mulher bonita, beldade. Note que aqui ひ vira び por causa do dáku-ten.",
+      "fix": "(びじん) - mulher bonita, beldade. Atenção: o kanji 美 se lê び, nunca ひ; a palavra entra no grupo só pela semelhança sonora.",
+      "why": "False reading claim: the on'yomi of 美 is び (or み), never ひ. No ひ is being voiced by dakuten here, and the sentence teaches a sound change that does not exist, which can push learners to read 美 as ひ."
+    },
+    {
+      "slug": "les:n3-tempo-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Distingo homófonos como 額 (ひたい, testa) e o som ひく de 轢く (atropelar).",
+      "fix": "Distingo palavras parecidas como 額 (ひたい, testa; がく, quantia) e os verbos que soam ひく, como 轢く (atropelar).",
+      "why": "額 read ひたい and がく is a homograph, not a homophone, and 額 is not a homophone of ひく. The matching objective was already rewritten to 'palavras parecidas'; this checklist line was left behind and still uses the wrong term."
+    },
+    {
+      "slug": "les:n3-tempo-07",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate, already resolved: the l1-pitfall note already reads 'Cuidado com as palavras parecidas em ひ ... embora as duas comecem igual'. The word 'homofonos' is gone from it. Nothing to do."
+    },
+    {
+      "slug": "les:n3-tempo-07",
+      "field": "objectives[1]",
+      "verdict": "fix",
+      "current": "Distinguir palavras parecidas: 額 (ひたい, testa; がく, quantia) e os verbos que soam ひく, como 轢く (atropelar). Aplicar a mesma correção ao item idêntico do <checklist> no body e ao 'com atenção aos homófonos' da description, para a lição não voltar a usar o termo errado.",
+      "fix": "Distinguir palavras parecidas: 額 (ひたい, testa; がく, quantia) e os verbos que soam ひく, como 轢く (atropelar)",
+      "why": "Outside entries 180..199, but a live corruption found while opening the lesson: the applier wrote the editorial instruction into the objective shown to the learner. The instruction is removed and only the objective remains, with no trailing period, matching the other items in the list."
+    },
+    {
+      "slug": "les:n4-aspecto-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text>Para parar de fazer, o par de </text><jp>続ける</jp><text> é </text><jp reading=\"つづく\">続く</jp><text> (algo continua sozinho) e, do outro lado, os verbos de fim da lição anterior.",
+      "fix": "<text>O par intransitivo de </text><jp>続ける</jp><text> é </text><jp reading=\"つづく\">続く</jp><text> (algo continua sozinho); já para parar de fazer, use os verbos de fim da lição anterior.",
+      "why": "Opening the sentence with 'Para parar de fazer' presents 続く as a verb of cessation, when 続く is the intransitive counterpart of 続ける and means continuation (the same sentence glosses it 'algo continua sozinho'). The rewrite separates the two ideas. Tag multiset unchanged: 3 <text> and 2 <jp>."
+    },
+    {
+      "slug": "les:n4-aspecto-02",
+      "field": "exercises[2].prompt",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already fixed in the file: the prompt now reads '(forma て de 試す + いく, ...)'. The 'radical de 試す' hint the review objected to is gone, and the prompt now agrees with the exercise's own explanation."
+    },
+    {
+      "slug": "les:n4-aspecto-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The verifiers themselves marked this disputed. 'desde de manha' is current colloquial pt-BR and is the house usage: 141 occurrences across the repo against 86 of 'desde a manha'. Changing this one instance creates inconsistency without fixing a real error; changing the pattern would be a corpus-wide editorial decision."
+    },
+    {
+      "slug": "les:n4-aspecto-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Quer dizer que vai dar uma chance a um remédio duro de engolir?",
+      "fix": "Comprou um aparelho novo e quer testar?",
+      "why": "The question sets up a medicine scene, which would take 飲んでみる, and the example that follows is この道具 with 使ってみる. The question is never answered and primes the wrong verb. The new hook matches both the object and the verb of the example, and avoids repeating 'ferramenta', which already appears in the 道具 gloss."
+    },
+    {
+      "slug": "les:n4-aspecto-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the previous entry: both point at the same mismatch in the tip note. Applying it twice would corrupt the text, so the repair goes in one entry only."
+    },
+    {
+      "slug": "les:n4-aspecto-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text>Imagine ver pela janela do </text><vocab ref=\"vocab:特急\"/><text> uma </text><vocab ref=\"vocab:島\"/><text> passando:</text>",
+      "fix": "<text>Dentro do </text><vocab ref=\"vocab:特急\"/><text>, a caminho de uma </text><vocab ref=\"vocab:島\"/><text>:</text>",
+      "why": "The colon promises the sentence describes the scene just set up (an island passing the express-train window), but the sentence delivered is 天気予報を見ているところです. Scene and example contradict each other. The rewrite builds a setting compatible with watching the weather forecast and keeps both vocab chips. Tag multiset unchanged: 3 <text> and 2 <vocab/>."
+    },
+    {
+      "slug": "les:n4-aspecto-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Compare com a versão gerada, que diz o mesmo com",
+      "fix": "Compare com a frase abaixo, que diz o mesmo com",
+      "why": "'a versao gerada' is internal pipeline vocabulary: the learner has no referent for what was generated or by whom. The <sentence> block follows immediately, so 'a frase abaixo' points at the right thing."
+    },
+    {
+      "slug": "les:n4-aspecto-05",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the island-scene entry: same example note, same complaint. The repair already goes in one entry."
+    },
+    {
+      "slug": "les:n4-aspecto-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Em baixo está",
+      "fix": "Embaixo está",
+      "why": "In pt-BR the locative adverb is 'embaixo', written as one word; 'em baixo' is the European form. The rest of the course uses 'embaixo', including the sibling lesson in this same block, so this occurrence is an isolated outlier and breaks the project locale rule."
+    },
+    {
+      "slug": "les:n4-aspecto-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Sem nenhum verbo de tempo",
+      "fix": "Sem nenhum advérbio de tempo",
+      "why": "'verbo de tempo' is not a Portuguese grammatical category, and the sentence is self-contradictory because 仕上がった is itself a verb. What the example sentence lacks is a time adverb such as さっき / たった今, and lesson 05 in the same block already uses 'adverbio' in that sense."
+    },
+    {
+      "slug": "les:n4-aspecto-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already fixed in the file: the current reading is このまちはこうじょうばかりだ. The こういじょう the review flagged no longer exists in this lesson."
+    },
+    {
+      "slug": "les:n4-aspecto-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint is wrong and the verifiers rejected it: 決まりが決まる is attested, clear Japanese (compare 決まりを決める in school contexts). At worst it is stylistic repetition, and the suggested 規則 brings in the kanji 規 and 則, which are outside this lesson's N4 scope."
+    }
+  ]
+}

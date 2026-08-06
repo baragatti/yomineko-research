@@ -1,0 +1,165 @@
+{
+  "batch": 7,
+  "fixes": [
+    {
+      "slug": "les:n3-estrutura-05",
+      "field": "description",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint was the accent error 'os prática'. The stored description already reads 'e os pratica em frases'; a duplicate finding for the same field was applied earlier. Nothing left to change."
+    },
+    {
+      "slug": "les:n3-estrutura-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "reading=\"こどものうのうりょくはあそびのなかではったつする\"",
+      "fix": "reading=\"こどもののうののうりょくはあそびのなかではったつする\"",
+      "why": "Real defect: the furigana of 子供の脳の能力 swallows both の particles (こどものうのうりょく). Correct reading is こどもののうののうりょく. Attribute value only, no tag touched."
+    },
+    {
+      "slug": "les:n3-estrutura-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint was the 辞める / 止める homophone clause being resolved with 破る. The stored note already reads 'Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa (たばこをやめる, \"parar de fumar\"). Já 破る (やぶる) é outro verbo'. Already fixed."
+    },
+    {
+      "slug": "les:n3-intencao-02",
+      "field": "exercises[0].answer",
+      "verdict": "fix",
+      "current": "と",
+      "fix": "は",
+      "why": "Real defect: with the と distractor the item has two defensible answers, since 〜こととなっている is an attested formal variant of 〜ことになっている. は is unambiguously wrong (靴を脱ぐことはなっている is ungrammatical). Leaf choice only; the answer object and 'correct' stay untouched."
+    },
+    {
+      "slug": "les:n3-intencao-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "reading=\"ここでたばこをすわないことになっている\"",
+      "fix": "reading=\"ここでタバコをすわないことになっている\"",
+      "why": "Real defect: the reading attribute must mirror the surface kana, and the same lesson keeps コーヒー in katakana inside its reading attributes. Attribute value only, tag balance unchanged."
+    },
+    {
+      "slug": "les:n3-intencao-02",
+      "field": "exercises[0].answer",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the と-distractor finding already repaired in this same batch (entry for exercises[0].answer that swaps と for は). Applying it twice would either fail to anchor or corrupt a second choice."
+    },
+    {
+      "slug": "les:n3-intencao-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the タバコ reading finding already repaired in this same batch. No second defect to fix."
+    },
+    {
+      "slug": "les:n3-intencao-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(\"arte, técnica\"): no meio o radical de \"ir/caminho\"; a técnica como um caminho dominado.",
+      "fix": "(\"arte, técnica\"): ao redor, o radical de \"ir/caminho\" (行), com 朮 no meio; a técnica como um caminho dominado.",
+      "why": "Real defect: in 術 the 行 radical wraps the character (彳 on the left, 亍 on the right) and 朮 sits in the middle, so 'no meio o radical de ir/caminho' teaches a false decomposition. Plain text inside one <text> node; no markup touched."
+    },
+    {
+      "slug": "les:n3-intencao-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "usa-se a forma de dicionário ou o potencial, nunca a volitiva.",
+      "fix": "usa-se a forma de dicionário, o potencial ou a negativa ない (忘れないように), nunca a volitiva.",
+      "why": "Real defect: the rule is stated as exhaustive but omits the very common 〜ないように, which the next lesson of the same topic uses (しないように). Anchor sits inside one <text> node, after the <jp>ように</jp> chip, so no markup is touched."
+    },
+    {
+      "slug": "les:n3-intencao-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 術 decomposition finding already repaired in this same batch. No further defect in that bullet."
+    },
+    {
+      "slug": "les:n3-intencao-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(\"criar, educar, crescer\"): em baixo o radical de \"carne/corpo\"",
+      "fix": "(\"criar, educar, crescer\"): embaixo o radical de \"carne/corpo\"",
+      "why": "Real defect: in pt-BR the adverb is 'embaixo' (one word); 'em baixo' is the pt-PT form. The neighbouring 労 bullet in the same list already writes 'embaixo'."
+    },
+    {
+      "slug": "les:n3-intencao-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 'em baixo' spelling finding already repaired in this same batch."
+    },
+    {
+      "slug": "les:n3-intencao-05",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Both complaints on this field are already resolved in the stored body: it reads 'vêm do mesmo kanji 責' (no 'partilham') and 'acaba sendo culpado (責められる) por todos' (no past-passive clash)."
+    },
+    {
+      "slug": "les:n3-intencao-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Este lote reúne substantivos urbanos, verbos de \"desatar\" e dois conectores úteis. Use a gramática deste tópico, como </text><text weight=\"bold\">～ことにしている</text><text> (faço questão de) e </text><text weight=\"bold\">～つもりでした</text><text> (eu pretendia), nos seus exemplos.",
+      "fix": "Esta lição reúne substantivos urbanos, verbos de \"desatar\" e dois conectores úteis. Nos exemplos reaparece a gramática deste tópico: </text><text weight=\"bold\">～ことにしている</text><text> (faço questão de) e </text><text weight=\"bold\">～つもりでした</text><text> (eu pretendia).",
+      "why": "Real defect: 'Use a gramática ... nos seus exemplos' is an authoring instruction addressed to the content author, not the learner, and 'lote' is build jargon. The sibling lesson-05 already uses 'nos exemplos reaparecem'. The anchor spans two bold chips; open/close tag multiset is identical before and after and no prose is injected inside a tag."
+    },
+    {
+      "slug": "les:n3-intencao-06",
+      "field": "exercises[3].prompt",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Complaint was the gloss 'A propósito, faz tempo, não?'. The stored prompt already reads \"Escolha o conector: 'A propósito, o tempo passa rápido, né?'\", which matches the body's own translation. Already fixed."
+    },
+    {
+      "slug": "les:n3-intencao-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"かれのどくしょのとくちょうはどくとくだ\">彼の読書の特徴は独特だ</jp>",
+      "fix": "<jp reading=\"かれのどくしょのしかたにはどくとくなとくちょうがある\">彼の読書の仕方には独特な特徴がある</jp>",
+      "why": "Real defect: 読書の特徴は独特だ is circular ('the distinguishing trait is distinctive') and does not match the gloss 'O jeito dele de ler'. The replacement keeps all three target words (読書, 特徴, 独特), matches the existing pt-BR gloss exactly, and updates the reading in the same <jp> element. Tag multiset unchanged."
+    },
+    {
+      "slug": "les:n3-intencao-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 彼の読書の特徴は独特だ finding already repaired in this same batch."
+    },
+    {
+      "slug": "les:n3-intencao-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<item><vocab ref=\"vocab:不満\"/><text> (ふまん) - insatisfação, descontentamento, desgosto.</text></item></list><note type=\"l1-pitfall\"><p><text>分 e 文 têm a mesma leitura (ぶん) mas sentidos bem distintos: 分 é uma parte ou cota (a sua parte do bolo), enquanto 文 é uma frase escrita. O kanji deixa a diferença clara.</text></p></note><heading level=\"3\"><text>Empréstimos do inglês</text></heading><p><text>Estes katakana já fazem parte do japonês do dia a dia.</text></p><list ordered=\"false\"><item><vocab ref=\"vocab:プラス\"/><text> (プラス) - mais, adição, algo positivo.</text></item><item><vocab ref=\"vocab:プラン\"/><text> (プラン) - plano, esquema.</text></item><item><vocab ref=\"vocab:プロ\"/><text> (プロ) - profissional.</text></item><item><vocab ref=\"vocab:不利\"/><text> (ふり) - desvantagem, posição desfavorável.</text></item><item><vocab ref=\"vocab:ブレーキ\"/><text> (ブレーキ) - freio.</text></item></list>",
+      "fix": "<item><vocab ref=\"vocab:不満\"/><text> (ふまん) - insatisfação, descontentamento, desgosto.</text></item><item><vocab ref=\"vocab:不利\"/><text> (ふり) - desvantagem, posição desfavorável.</text></item></list><note type=\"l1-pitfall\"><p><text>分 e 文 têm a mesma leitura (ぶん) mas sentidos bem distintos: 分 é uma parte ou cota (a sua parte do bolo), enquanto 文 é uma frase escrita. O kanji deixa a diferença clara.</text></p></note><heading level=\"3\"><text>Empréstimos do inglês</text></heading><p><text>Estes katakana já fazem parte do japonês do dia a dia.</text></p><list ordered=\"false\"><item><vocab ref=\"vocab:プラス\"/><text> (プラス) - mais, adição, algo positivo.</text></item><item><vocab ref=\"vocab:プラン\"/><text> (プラン) - plano, esquema.</text></item><item><vocab ref=\"vocab:プロ\"/><text> (プロ) - profissional.</text></item><item><vocab ref=\"vocab:ブレーキ\"/><text> (ブレーキ) - freio.</text></item></list>",
+      "why": "Real defect: 不利 (ふり) is a Sino-Japanese word in kanji, yet it sat in the 'Empréstimos do inglês' list introduced by 'Estes katakana...', teaching a false lexical fact. The item is moved intact to the fu/bu list right after 不満, so the katakana list holds only プラス, プラン, プロ and ブレーキ (matching the objectives and the checklist). Done as one atomic span so the open/close tag multiset is identical before and after."
+    },
+    {
+      "slug": "les:n3-intencao-07",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 不利 misclassification already repaired in this same batch by the atomic move."
+    },
+    {
+      "slug": "les:n3-limites-01",
+      "field": "exercises[0].answer",
+      "verdict": "fix",
+      "current": "ほど",
+      "fix": "から",
+      "why": "Real defect: 10分ほど待てば is fully natural and means exactly 'uns dez minutos', so ほど is a second correct answer. から (10分から待てば) is unambiguously wrong. Leaf choice only. Note: ばかり is also arguably acceptable after a quantity and is covered by the sibling finding on the same field."
+    }
+  ]
+}

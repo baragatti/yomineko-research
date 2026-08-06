@@ -1,0 +1,495 @@
+{
+ "queue": "layer-a-pairing",
+ "generated": "2026-08-06",
+ "source_queue": "research/derived/fable5_validation/phase3_layer_a_queue.json",
+ "method": "Every one of the 54 records was checked against its own source dataset. For the 47 tatoeba records: jpn_sentences.tsv.bz2 confirmed the stored jp is byte-exact upstream; links.csv confirmed which English rows Tatoeba actually links to that Japanese id; eng_sentences.tsv.bz2 supplied those English rows. For the 7 jec records: raw_jec in db/corpus.sqlite supplied the paired manual English. No English was written or rewritten at any point in this analysis.",
+ "headline": "The queue's stated premise is false in all 54 cases. Every record does have translation.en, and every stored translation.en is byte-exact with a genuinely linked English row for that exact Japanese sentence id in its source dataset. Ingestion did not attach the wrong translation row to any of these records. Where the English still diverges from the Japanese, the defect is upstream translation quality inside Tatoeba or JEC, not a local linking error.",
+ "action_vocabulary": {
+  "relink-en:<id>": "Tatoeba links more than one English row to this Japanese id and a different one of those existing rows fits. Re-point the en link to that row id. No text is authored.",
+  "unlink-en": "The only linked English is not a translation of this Japanese. Drop the en anchor, keep jp and pt-BR, set needs_review. No replacement is authored.",
+  "flag-link-quality": "The link is the correct row but the source English drifts on one element. Keep the string verbatim and record the pairing as low fidelity so pt validation does not trust it.",
+  "none": "No defect, or the defect is an upstream typo that Layer A rules forbid us from touching."
+ },
+ "criterion": "unlink-en when the English states a different proposition, such that translating from it would produce a wrong pt-BR. flag-link-quality when the English is a translation of this Japanese but gets one element wrong or loses a nuance. none for upstream typos and for immaterial wording looseness.",
+ "counts": {
+  "relink-en": 6,
+  "unlink-en": 12,
+  "flag-link-quality": 16,
+  "none": 20,
+  "total": 54
+ },
+ "relink_candidates": {
+  "sent:tatoeba-144418": {
+   "jp_sentence_id": "144418",
+   "currently_linked_en_id": "270147",
+   "proposed_en_id": "543984",
+   "proposed_en_verbatim_upstream": "Don't make fun of people.",
+   "all_linked_en_ids": {
+    "270147": "Are you kidding?",
+    "543984": "Don't make fun of people.",
+    "628916": "Don't kid me!"
+   },
+   "note": "Text shown is a verbatim row from Tatoeba eng_sentences.tsv, quoted as Layer-A evidence. It is not authored and must be copied, not edited."
+  },
+  "sent:tatoeba-188098": {
+   "jp_sentence_id": "188098",
+   "currently_linked_en_id": "25237",
+   "proposed_en_id": "10680581",
+   "proposed_en_verbatim_upstream": "Do you have anything I can eat right away?",
+   "all_linked_en_ids": {
+    "25237": "Did you make anything I can start on now?",
+    "10680581": "Do you have anything I can eat right away?",
+    "10680582": "Do you have anything that's ready to eat?"
+   },
+   "note": "Text shown is a verbatim row from Tatoeba eng_sentences.tsv, quoted as Layer-A evidence. It is not authored and must be copied, not edited."
+  },
+  "sent:tatoeba-3506610": {
+   "jp_sentence_id": "3506610",
+   "currently_linked_en_id": "2249524",
+   "proposed_en_id": "3730657",
+   "proposed_en_verbatim_upstream": "Can I borrow you for just a minute?",
+   "all_linked_en_ids": {
+    "2249524": "Let me speak.",
+    "3730657": "Can I borrow you for just a minute?"
+   },
+   "note": "Text shown is a verbatim row from Tatoeba eng_sentences.tsv, quoted as Layer-A evidence. It is not authored and must be copied, not edited."
+  },
+  "sent:tatoeba-373351": {
+   "jp_sentence_id": "373351",
+   "currently_linked_en_id": "138919",
+   "proposed_en_id": "499689",
+   "proposed_en_verbatim_upstream": "Good afternoon.",
+   "all_linked_en_ids": {
+    "138919": "Welcome.",
+    "373330": "Hello!",
+    "499689": "Good afternoon.",
+    "538123": "Hi.",
+    "855284": "Good day!",
+    "1844755": "Good day.",
+    "1858850": "Hello."
+   },
+   "note": "Text shown is a verbatim row from Tatoeba eng_sentences.tsv, quoted as Layer-A evidence. It is not authored and must be copied, not edited."
+  },
+  "sent:tatoeba-5046": {
+   "jp_sentence_id": "5046",
+   "currently_linked_en_id": "1642",
+   "proposed_en_id": "470201",
+   "proposed_en_verbatim_upstream": "If you are by my side, I don't need anything else.",
+   "all_linked_en_ids": {
+    "1642": "You're by my side; everything's fine now.",
+    "470201": "If you are by my side, I don't need anything else."
+   },
+   "note": "Text shown is a verbatim row from Tatoeba eng_sentences.tsv, quoted as Layer-A evidence. It is not authored and must be copied, not edited."
+  },
+  "sent:tatoeba-98198": {
+   "jp_sentence_id": "98198",
+   "currently_linked_en_id": "305504",
+   "proposed_en_id": "410544",
+   "proposed_en_verbatim_upstream": "They always skip school.",
+   "all_linked_en_ids": {
+    "305504": "They always escape from school.",
+    "410544": "They always skip school.",
+    "410545": "They skip school all the time."
+   },
+   "note": "Text shown is a verbatim row from Tatoeba eng_sentences.tsv, quoted as Layer-A evidence. It is not authored and must be copied, not edited."
+  },
+  "sent:tatoeba-9454297": {
+   "jp_sentence_id": "9454297",
+   "currently_linked_en_id": "10236715",
+   "proposed_en_id": null,
+   "proposed_en_verbatim_upstream": null,
+   "all_linked_en_ids": {
+    "10236715": "Oh well, recently I continue to spend my days alone.",
+    "10315411": "So, I continue to spend my days alone.",
+    "10315416": "Well, as of late, I've been spending my days alone."
+   },
+   "note": "No linked English row renders the inferential auxiliary, so there is no re-link target. Listed here so a human can confirm the unlink-en call."
+  }
+ },
+ "cross_cutting_notes": [
+  "Six of the seven English strings the reviewers wanted to author already exist upstream as real, linked Tatoeba rows. The reviewers' semantic complaint was often correct; only their method was wrong. Re-linking gets the same result without fabricating Layer A.",
+  "A cluster of stored English strings look locally corrupted (a dropped article, a dropped copula, a truncated noun, one nonsensical final noun). All were verified byte-exact upstream. This is the known Tanaka Corpus legacy inside Tatoeba, not damage from any earlier patch. No re-fetch is needed.",
+  "provenance.pt_validated_against is 'en' on all 54 records. On the 12 unlink-en records that anchor is wrong, so the pt-BR on those records deserves a separate Layer-B re-check against the Japanese. Spot-checking suggests the pt-BR was in fact derived from the Japanese and is correct, with sent:tatoeba-198311 the one place where the pt-BR visibly inherited an unsupported subject from the English.",
+  "JEC is a one-to-one dataset: exactly one manual English per Japanese row. Re-linking is structurally impossible for the seven jec records, so their only options are flag-link-quality or unlink-en."
+ ],
+ "rows": [
+  {
+   "id": "sent:jec-0121",
+   "verdict": "no-change",
+   "current": "Many people do research.",
+   "fix": "none",
+   "why": "Reviewer wrong. The Japanese modifier means various or all kinds of, and the JEC English says many. That is a mild looseness, not a mismatch: same subject, same predicate, same proposition. The exact nuance is already preserved in translation_literal and in the pt-BR."
+  },
+  {
+   "id": "sent:jec-0281",
+   "verdict": "fix",
+   "current": "There aren't very many chances any more.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is correct. JEC row 0281 is a genuine one-to-one pair, so re-linking is impossible. The English does drift: the Japanese is polite past negative while the English is present, and the English adds a sense of no longer that the Japanese lacks. Keep the string verbatim and mark the pairing low fidelity so pt validation does not trust it on tense."
+  },
+  {
+   "id": "sent:jec-0453",
+   "verdict": "fix",
+   "current": "He looked at the sea through the curtains.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is correct but the person is wrong. The Japanese carries an explicit masculine first-person pronoun; the JEC English renders it third person. JEC pairs are one to one, so there is no alternative row. Keep the string verbatim, flag the pairing, and note that the stored pt-BR already uses first person and is right."
+  },
+  {
+   "id": "sent:jec-0517",
+   "verdict": "fix",
+   "current": "There are many serious opinions.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is correct, adjective is wrong. The Japanese adjective means harsh or severe; the JEC English says serious, which reads as weighty rather than critical. One-to-one dataset, so flag rather than re-link. The stored pt-BR and translation_literal both carry the harsh sense correctly."
+  },
+  {
+   "id": "sent:jec-0611",
+   "verdict": "fix",
+   "current": "You do activities freely in real time.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is correct, modality is dropped. The Japanese predicate expresses possibility, which is the point of the sentence; the JEC English states the action flatly with no can. One-to-one dataset, so flag the pairing. The stored pt-BR keeps the possibility reading."
+  },
+  {
+   "id": "sent:jec-1737",
+   "verdict": "fix",
+   "current": "He at last went on a trip to look for insects.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is correct, framing differs. The Japanese subject is the trip itself and the verb is the trip beginning; the JEC English introduces a third-person agent and recasts the verb as that agent departing. Same real-world event, different grammatical content, and the record teaches the subject marking. One-to-one dataset, so flag."
+  },
+  {
+   "id": "sent:jec-4408",
+   "verdict": "no-change",
+   "current": "Finally, the International Fair Trade Day on the 17th is around corner.",
+   "fix": "none",
+   "why": "Reviewer wrong to treat this as a content defect. Verified byte-exact against raw_jec row 4408: the missing article is the source dataset's own typo. The content matches the Japanese fully. Layer A is not ours to correct."
+  },
+  {
+   "id": "sent:tatoeba-10808987",
+   "verdict": "no-change",
+   "current": "Jobs are hard come by these days.",
+   "fix": "none",
+   "why": "Reviewer wrong. Verified byte-exact against Tatoeba: the missing word is upstream, on a genuine link from jpn 10808987. The meaning matches the Japanese. Do not repair source grammar."
+  },
+  {
+   "id": "sent:tatoeba-10899827",
+   "verdict": "no-change",
+   "current": "Last month, a department store was built in the town nextdoor.",
+   "fix": "none",
+   "why": "Reviewer wrong. Verified byte-exact against Tatoeba: the one-word spelling defect is upstream, on a genuine link from jpn 10899827, and the content matches the Japanese exactly."
+  },
+  {
+   "id": "sent:tatoeba-10901881",
+   "verdict": "no-change",
+   "current": "I want to become a handsome adult.",
+   "fix": "none",
+   "why": "Reviewer wrong. The Japanese na-adjective covers fine, splendid and respectable, and the older English gloss used here sits inside that range. Not a mismatch. The stored pt-BR already uses the admirable sense."
+  },
+  {
+   "id": "sent:tatoeba-10987705",
+   "verdict": "no-change",
+   "current": "There's a dictionary on that bookshelf.",
+   "fix": "none",
+   "why": "Reviewer wrong. The only difference is definiteness and the rendering of the distal demonstrative. The location pattern the record teaches is intact in both."
+  },
+  {
+   "id": "sent:tatoeba-11041763",
+   "verdict": "no-change",
+   "current": "Don't be in such a hurry.",
+   "fix": "none",
+   "why": "Reviewer wrong. Tatoeba links four English rows to jpn 11041763 and the stored one is the closest of them; the alternatives are about speed, not haste. The prohibition particle and the degree adverb are both represented. Nothing to re-link to and nothing to fix."
+  },
+  {
+   "id": "sent:tatoeba-11358720",
+   "verdict": "no-change",
+   "current": "March is over.",
+   "fix": "none",
+   "why": "Reviewer wrong. The difference is aspectual only, non-past in the Japanese against a completed reading in the English. The subject, verb and particle the record teaches all match."
+  },
+  {
+   "id": "sent:tatoeba-1160677",
+   "verdict": "fix",
+   "current": "Our English teacher is both strict and kind.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine but imprecise. The Japanese names no school subject, while the linked English specifies one. The English also flattens the concessive connective, which is this record's grammar target, into a coordinating pair. Only one English row is linked upstream, so flag the link rather than re-link or unlink."
+  },
+  {
+   "id": "sent:tatoeba-11733143",
+   "verdict": "fix",
+   "current": "If you could do that, would you?",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine but the question type differs. The Japanese main clause is an open question about what the listener would do; the linked English is a yes or no question about whether they would. Single upstream link, so flag. The stored pt-BR follows the Japanese, not the English."
+  },
+  {
+   "id": "sent:tatoeba-118746",
+   "verdict": "no-change",
+   "current": "He really gets across me.",
+   "fix": "none",
+   "why": "Reviewer wrong. Verified byte-exact against Tatoeba: the garbled idiom is upstream on a genuine link from jpn 118746. The intended sense of being irritated by him matches the Japanese causative-passive. Source awkwardness is not ours to smooth."
+  },
+  {
+   "id": "sent:tatoeba-144418",
+   "verdict": "fix",
+   "current": "Are you kidding?",
+   "fix": "relink-en:543984",
+   "why": "Reviewer right. The Japanese is a request to stop teasing people; the stored English is a rhetorical question and translates a different utterance. Tatoeba links three English rows to jpn 144418, and row 543984 renders this Japanese correctly. Re-point the en link to 543984 and keep every string verbatim from the dataset."
+  },
+  {
+   "id": "sent:tatoeba-165585",
+   "verdict": "no-change",
+   "current": "We should not depend on your parents.",
+   "fix": "none",
+   "why": "Reviewer wrong. Verified byte-exact against Tatoeba: the possessive is the source's own slip on a genuine link from jpn 165585. The prohibition pattern and the reliance verb both match. Do not correct upstream pronouns."
+  },
+  {
+   "id": "sent:tatoeba-169430",
+   "verdict": "fix",
+   "current": "The air in the mountain is fresh and clean.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine, predicate differs. The Japanese adjective means wonderful or splendid; the linked English substitutes a description of freshness and cleanliness. Since the adjective is the entire predicate, the English is a weak anchor. Single upstream link, so flag."
+  },
+  {
+   "id": "sent:tatoeba-170417",
+   "verdict": "fix",
+   "current": "The best is behind.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine but the English is ambiguous to the point of inverting. The Japanese says the best thing emerges later; the linked English reads most naturally as the best being already past. Single upstream link, so flag rather than unlink, since the intended reading is recoverable."
+  },
+  {
+   "id": "sent:tatoeba-173240",
+   "verdict": "no-change",
+   "current": "The higher we go up, thinner the air becomes.",
+   "fix": "none",
+   "why": "Reviewer wrong. Verified byte-exact against Tatoeba: the missing article is upstream on a genuine link from jpn 173240. The proportional comparative construction the record teaches is fully represented."
+  },
+  {
+   "id": "sent:tatoeba-175272",
+   "verdict": "fix",
+   "current": "Dogs see in black and white.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese says dogs are able to tell black and white apart; the stored English asserts a claim about how dogs perceive colour, which is a different proposition and close to its opposite in implication. Only one English row is linked upstream, so there is nothing to re-link to. Drop the en anchor, keep jp and pt-BR, set needs_review."
+  },
+  {
+   "id": "sent:tatoeba-187580",
+   "verdict": "fix",
+   "current": "I wonder what they have in store for us under the big top?",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine but the English carries setting information that is nowhere in the Japanese. The core benefactive question is preserved. Single upstream link, so flag the added context so pt validation does not import it."
+  },
+  {
+   "id": "sent:tatoeba-187583",
+   "verdict": "fix",
+   "current": "What are you driving at?",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese asks, in honorific register, what the listener intends to do; the stored English is an idiom asking what the listener is implying. Different speech act and different content. Single upstream link, so unlink the en anchor rather than re-link."
+  },
+  {
+   "id": "sent:tatoeba-188036",
+   "verdict": "fix",
+   "current": "Something may have happened to him.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine but the English adds an affected third person that the Japanese does not mention. Everything else matches. Single upstream link, so flag the added participant. The stored pt-BR correctly omits it."
+  },
+  {
+   "id": "sent:tatoeba-188098",
+   "verdict": "fix",
+   "current": "Did you make anything I can start on now?",
+   "fix": "relink-en:10680581",
+   "why": "Reviewer right. The Japanese verb is the existence verb (is there anything), while the stored English asks whether the addressee cooked something, which is not in the Japanese. Tatoeba links three English rows to jpn 188098; row 10680581 tracks the existence reading. Re-point the en link to 10680581."
+  },
+  {
+   "id": "sent:tatoeba-195360",
+   "verdict": "fix",
+   "current": "Everything's a little crazy right now.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese is the set idiom for being completely at a loss; the stored English is a general remark about circumstances and shares no content with it. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-198088",
+   "verdict": "no-change",
+   "current": "The passport important on your trip.",
+   "fix": "none",
+   "why": "Reviewer wrong. Verified byte-exact against Tatoeba: the missing copula is upstream on a genuine link from jpn 198088. Topic, time phrase and predicate all correspond."
+  },
+  {
+   "id": "sent:tatoeba-198311",
+   "verdict": "no-change",
+   "current": "He is allergic to house dust.",
+   "fix": "none",
+   "why": "Reviewer wrong about the English. The Japanese has no overt subject, so the third person in the linked English is context-supplied, not contradicted. Separate Layer-B observation, out of scope for this queue: the pt-BR inherited that third person from the anchor even though the Japanese does not state it."
+  },
+  {
+   "id": "sent:tatoeba-198447",
+   "verdict": "no-change",
+   "current": "The party is just beginning.",
+   "fix": "none",
+   "why": "Reviewer wrong. The gap is aspectual nuance only, imminence against inception, and the English wording is ambiguous enough to cover both. The dictionary form plus tokoro pattern is intact."
+  },
+  {
+   "id": "sent:tatoeba-202749",
+   "verdict": "fix",
+   "current": "I'd like to take my jacket off, please; it's too hot.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine but the speech act differs. The Japanese states what the speaker is going to do, with the heat given as a mild reason; the linked English is a request for permission and intensifies the heat. Single upstream link, so flag."
+  },
+  {
+   "id": "sent:tatoeba-203508",
+   "verdict": "fix",
+   "current": "Even if I have to sell my house, I'll keep my business going.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese concessive clause is about leaving one's home; the stored English is about selling a house. Different event, and the record's grammar target sits inside that clause. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-219421",
+   "verdict": "fix",
+   "current": "In respect of this question, there are three opinions.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese counts three problems; the stored English counts three opinions. The head noun is the whole content of the sentence, so the English cannot serve as a validation anchor. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-221299",
+   "verdict": "fix",
+   "current": "Their gloves are not in pairs.",
+   "fix": "flag-link-quality",
+   "why": "Reviewer right about the demonstrative. The Japanese topic is proximal and singular in reference; the linked English uses a third-person possessive and a plural. Single upstream link, so flag rather than re-link. The stored pt-BR and translation_literal already carry the proximal reading."
+  },
+  {
+   "id": "sent:tatoeba-227760",
+   "verdict": "fix",
+   "current": "They're all fine, thank you.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese is a humble first-person formula reporting the speaker's own wellbeing; the stored English reports on a third-person group. Wrong subject entirely. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-233703",
+   "verdict": "fix",
+   "current": "I'd like for you to go.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese asks the listener to meet, using the te form of the verb for meeting; the stored English asks the listener to go. The verb is the record's grammar target, so the mismatch is load-bearing. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-3316580",
+   "verdict": "no-change",
+   "current": "I wonder if Tom will come early.",
+   "fix": "none",
+   "why": "Reviewer wrong. The linked English is a defensible literal reading of the negative plus question particle; the wishful colouring is a pragmatic overlay, and the record's pt-BR and structure_explanation already carry it."
+  },
+  {
+   "id": "sent:tatoeba-3506610",
+   "verdict": "fix",
+   "current": "Let me speak.",
+   "fix": "relink-en:3730657",
+   "why": "Reviewer right. The Japanese is a request for a moment of the listener's time, phrased as a question; the stored English is a declarative demand. Tatoeba links two English rows to jpn 3506610; row 3730657 preserves the request form. Re-point the en link to 3730657."
+  },
+  {
+   "id": "sent:tatoeba-366809",
+   "verdict": "fix",
+   "current": "Exercise every day.",
+   "fix": "flag-link-quality",
+   "why": "Pairing is genuine but the mood differs. The Japanese is a first-person resolution built on the you ni suru pattern, which is the record's grammar target; the linked English is a bare imperative that erases both the person and the pattern. Single upstream link, so flag."
+  },
+  {
+   "id": "sent:tatoeba-373351",
+   "verdict": "fix",
+   "current": "Welcome.",
+   "fix": "relink-en:499689",
+   "why": "Reviewer right, and the record's own structure_explanation already states that the linked English is inaccurate. Tatoeba links seven English rows to jpn 373351. Row 499689 matches the stored pt-BR greeting, so re-pointing the en link to 499689 fixes the anchor without touching any text."
+  },
+  {
+   "id": "sent:tatoeba-4766",
+   "verdict": "fix",
+   "current": "I'm gonna shoot him.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese verb means to punish or discipline someone; the stored English describes shooting a person. Unrelated action. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-4930",
+   "verdict": "no-change",
+   "current": "Someday I'll run like the wind.",
+   "fix": "none",
+   "why": "Reviewer wrong. The only loss is the repetition adverb meaning again. The simile pattern that the record targets is fully present, and the stored pt-BR keeps the adverb."
+  },
+  {
+   "id": "sent:tatoeba-5046",
+   "verdict": "fix",
+   "current": "You're by my side; everything's fine now.",
+   "fix": "relink-en:470201",
+   "why": "Reviewer right. The Japanese is a conditional built on the ba form, which is the grammar target of the record; the stored English flattens it into two declarative clauses. Tatoeba links two English rows to jpn 5046 and row 470201 keeps the conditional. Re-point the en link to 470201."
+  },
+  {
+   "id": "sent:tatoeba-5326",
+   "verdict": "no-change",
+   "current": "I have to give back the book before Saturday.",
+   "fix": "none",
+   "why": "Reviewer wrong. Deadline particle rendered as before rather than by is a boundary nuance, not a mismatch. The obligation pattern the record teaches matches exactly."
+  },
+  {
+   "id": "sent:tatoeba-77972",
+   "verdict": "fix",
+   "current": "I don't like either of them.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese is a partial negation built on wake dewa nai, which denies liking both while leaving liking one open; the stored English is a total negation covering neither. The scope inversion is exactly the point the record teaches, and pt_validated_against is en, so this anchor actively pushes the pt-BR the wrong way. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-77973",
+   "verdict": "fix",
+   "current": "I do not like either of them.",
+   "fix": "unlink-en",
+   "why": "Reviewer right, same defect as its sibling record. The Japanese denies that one likes both; the stored English denies liking either. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-78651",
+   "verdict": "no-change",
+   "current": "I will be flying about this time next party.",
+   "fix": "none",
+   "why": "Reviewer wrong about the cause. Verified byte-exact against Tatoeba: the nonsense final noun is upstream, on the single genuine link from jpn 78651, and is not local corruption. Flagging it as a source defect is reasonable, but the record must keep it verbatim."
+  },
+  {
+   "id": "sent:tatoeba-78661",
+   "verdict": "fix",
+   "current": "Next week, millions of people will be watching the TV program.",
+   "fix": "flag-link-quality",
+   "why": "Reviewer right on the number. The Japanese quantity is hundreds of thousands; the linked English says millions, an order of magnitude apart. Everything else matches. Single upstream link, so flag the numeric drift. The stored pt-BR already has the correct magnitude."
+  },
+  {
+   "id": "sent:tatoeba-83446",
+   "verdict": "fix",
+   "current": "The fence fell with a great crash.",
+   "fix": "flag-link-quality",
+   "why": "Reviewer right on the noun. The Japanese subject is a wall; the linked English says fence. Same collapse event, wrong object, and the stored pt-BR follows the Japanese. Single upstream link, so flag."
+  },
+  {
+   "id": "sent:tatoeba-83634",
+   "verdict": "no-change",
+   "current": "I need to hear it.",
+   "fix": "none",
+   "why": "Reviewer wrong. Want against need is a strength nuance on the same desiderative auxiliary, which is the record's target. Not a mismatch."
+  },
+  {
+   "id": "sent:tatoeba-84279",
+   "verdict": "fix",
+   "current": "I can't stand getting beaten.",
+   "fix": "unlink-en",
+   "why": "Reviewer right. The Japanese states that becoming a failure is not permissible, using the wake ni wa ikanai pattern; the stored English states an inability to tolerate being beaten. Different modality and different content. Single upstream link, so unlink the en anchor."
+  },
+  {
+   "id": "sent:tatoeba-87710",
+   "verdict": "no-change",
+   "current": "She is a clear-headed.",
+   "fix": "none",
+   "why": "Reviewer wrong about the cause. Verified byte-exact against Tatoeba: the truncated English is upstream on the single genuine link from jpn 87710. No prior patch corrupted it and no re-fetch will change it. Keep verbatim."
+  },
+  {
+   "id": "sent:tatoeba-9454297",
+   "verdict": "fix",
+   "current": "Oh well, recently I continue to spend my days alone.",
+   "fix": "unlink-en",
+   "why": "Reviewer right about the mismatch, wrong about the remedy. The Japanese is a forward-looking inference that lonely days seem likely to continue; all three English rows Tatoeba links to jpn 9454297 describe a retrospective state and none renders the inferential auxiliary. There is no adequate re-link target, so unlink the en anchor and keep jp and pt-BR."
+  },
+  {
+   "id": "sent:tatoeba-98198",
+   "verdict": "fix",
+   "current": "They always escape from school.",
+   "fix": "relink-en:410544",
+   "why": "Reviewer right. The Japanese verb means to cut class; the stored English says they physically escape, which is a different action. Tatoeba links three English rows to jpn 98198 and row 410544 carries the cutting-class sense. Re-point the en link to 410544."
+  }
+ ]
+}

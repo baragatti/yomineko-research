@@ -1,0 +1,173 @@
+{
+ "batch": 8,
+ "fixes": [
+  {
+   "slug": "les:n3-limites-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"かんたん\">簡単</jp><text>, 'simples'.</text>",
+   "fix": "<jp reading=\"ようい\">容易</jp><text>, 'fácil, sem dificuldade'.</text>",
+   "why": "The 易 bullet illustrated the kanji with 簡単, a compound that does not contain 易 at all (it is 簡 + 単, and 単 is listed separately with 単語). Replaced with 容易 (ようい), which contains 易 and matches the 'facil' gloss. Tag multiset identical before and after."
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the 易/簡単 finding already fixed by the previous entry in this batch; applying the same anchor twice would either fail or corrupt."
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[1].answer.text",
+   "verdict": "fix",
+   "current": "この山の高___は3776メートルです",
+   "fix": "さ",
+   "why": "Cloze answer.text stores the blanked prompt instead of the filler. 261 of the 272 cloze items in the corpus store the filler in answer.text; the expected fill here is さ (full: この山の高さは3776メートルです). Only the .text leaf is touched, .full is left alone."
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[1].answer.text",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the answer.text defect in ex:n3limites-01-2, already fixed by the previous entry in this batch."
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[0].answer.choices[3]",
+   "verdict": "fix",
+   "current": "ほど",
+   "fix": "だけ",
+   "why": "The distractor ほど is a fully correct answer: 10分ほど待てば means exactly 'if you wait about ten minutes'. Replaced with だけ, which is grammatical but contradicts the pt gloss 'uns dez minutos' (だけ = only), keeping the useful くらい (approximation) vs だけ (exclusivity) contrast. Single leaf changed; correct stays くらい."
+  },
+  {
+   "slug": "les:n3-limites-01",
+   "field": "exercises[0].answer.choices[2]",
+   "verdict": "fix",
+   "current": "ばかり",
+   "fix": "から",
+   "why": "Second acceptable option: 10分ばかり待てば carries the same approximation as くらい (literary but grammatical), so the item had more than one right answer. から does not fit after a quantity in this reading and is a genuinely wrong distractor."
+  },
+  {
+   "slug": "les:n3-limites-02",
+   "field": "exercises[1].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already applied: the stored explanation reads 'ばかり ligado direto ao substantivo (ゲームばかり) sugere repeticao incomoda e reprovacao', without the false て-form analysis. Nothing to change."
+  },
+  {
+   "slug": "les:n3-limites-02",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already applied: the body now reads <jp reading=\"たんじゅん\">単純</jp><text>, 'simplicidade, simples'.</text>. The 'simplorio' gloss is gone from the file."
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already applied: the body carries reading=\"れんしゅうすればするほどじょうずになる\" for 練習すればするほど上手になる. The うまくなる furigana no longer exists in the file."
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already applied: the body reads 'quanto mais voce pratica, melhor fica', without the accent. Nothing to change."
+  },
+  {
+   "slug": "les:n3-limites-03",
+   "field": "exercises[0].prompt",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already applied: the prompt reads '(Quanto mais voce pratica, melhor fica.)', without the accent. Nothing to change."
+  },
+  {
+   "slug": "les:n3-limites-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": " abre a frase e </text><jp reading=\"とはかぎらない\">とは限らない</jp><text> a fecha:",
+   "fix": " vem antes do predicado, em geral logo depois do sujeito, e </text><jp reading=\"とはかぎらない\">とは限らない</jp><text> fecha a frase:",
+   "why": "The formation rule claimed 必ずしも 'opens the sentence', but both examples right below place it after the subject (高いものが必ずしも..., 有名な人が必ずしも...). 必ずしも is an adverb that precedes the predicate. Only the text between the existing tags is rewritten; tag multiset identical and no prose injected inside a tag."
+  },
+  {
+   "slug": "les:n3-limites-04",
+   "field": "exercises[1].answer.text",
+   "verdict": "fix",
+   "current": "高いものが必ずしもいい___",
+   "fix": "とは限らない",
+   "why": "Same grading defect as the sibling cloze: answer.text echoes the blanked prompt instead of the filler. Expected fill is とは限らない (full: 高いものが必ずしもいいとは限らない). Only the .text leaf is touched."
+  },
+  {
+   "slug": "les:n3-limites-05",
+   "field": "exercises[3].explanation",
+   "verdict": "fix",
+   "current": "num lugar. 滞在 (たいざい) é 'estadia, permanência' num lugar.",
+   "fix": "num lugar.",
+   "why": "The earlier apply pasted the whole replacement over the final sentence and duplicated the opening: the stored explanation now repeats \"e 'estadia, permanencia' num lugar\" twice in a row. The repetition is removed; the correct content about [lugar]での滞在 stays intact."
+  },
+  {
+   "slug": "les:n3-limites-07",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already applied: the tip reads 'Aqui 真逆 e lido まさか (leitura irregular); esses mesmos kanji tambem se leem まぎゃく...' and the example sentence is already in kana (まさか彼が負けるとは思わなかった). Nothing to change."
+  },
+  {
+   "slug": "les:n3-limites-07",
+   "field": "title",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already applied: the stored title is 'Do fosso ao microfone: o cotidiano em ほ e ま'. The は typo no longer exists."
+  },
+  {
+   "slug": "les:n3-perspectiva-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "os dois partilham o ",
+   "fix": "os dois compartilham o ",
+   "why": "'partilham' is European-Portuguese usage; pt-BR uses 'compartilhar', and the same lesson writes 'varios compartilham a leitura えい' a few paragraphs later. The 'os dois ' prefix in the anchor prevents matching the existing 'compartilham'. Plain text inside a <text> element; no tags touched."
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "body",
+   "verdict": "fix",
+   "current": " parecido na pronúncia (do verbo ",
+   "fix": " de pronúncia idêntica (do verbo ",
+   "why": "代わって and 変わって are exact homophones (かわって, same accent), not merely 'similar'; the next clause of the same sentence says the difference is only in the kanji. Saying 'parecido' implies the learner can hear a difference, the opposite of the teaching point. Plain text inside a <text> element."
+  },
+  {
+   "slug": "les:n3-perspectiva-03",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "The other findings on this lesson were already applied: the note already says 'にかわって (no lugar de) escreve-se に代わって, com o kanji 代' and the 大家 gloss is already 'locador, dono do imovel'. Nothing to change."
+  },
+  {
+   "slug": "les:n3-perspectiva-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "É um período úmido em que a palavra </text><jp>積もる</jp><text> dá lugar à umidade que se acumula em tudo.",
+   "fix": "É um período tão úmido que tudo parece encharcado, mas a palavra </text><jp>積もる</jp><text> vale mesmo para o que se empilha, como neve, poeira e trabalho.",
+   "why": "Incoherent close to the 梅雨 culture note: a word cannot 'dar lugar a umidade', and 積もる is not used with humidity (湿気が積もる is not natural Japanese). Rewritten with the <jp>積もる</jp> element left in place; tag multiset identical."
+  },
+  {
+   "slug": "les:n3-perspectiva-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Com isso, É um período tão úmido que tudo parece encharcado; já 積もる se usa mesmo para o que se empilha, como neve, poeira e trabalho..",
+   "fix": "Com isso, você já viu as dezessete palavras desta lição.",
+   "why": "The earlier apply pasted the culture-note replacement into the wrong paragraph, producing 'Com isso, E um periodo tao umido...trabalho..' (broken sentence, capital mid-sentence, doubled period). The paragraph close is restored with the correct count: the lesson presents 17 vocabulary items (4+3+4+5+1), not 18, and the 'em contexto' claim is dropped because デート, 連れ, 定期, 敵 and 抵抗 never appear in an example sentence."
+  }
+ ]
+}

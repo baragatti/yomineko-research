@@ -1,0 +1,165 @@
+{
+  "batch": 9,
+  "fixes": [
+    {
+      "slug": "les:n3-perspectiva-05",
+      "field": "exercises[1].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The complaint (hint says only three of the four matching items start with てい) was already applied earlier in the campaign. The stored explanation now reads 'As quatro começam com o som てい, então vale memorizá-las juntas.', which is correct: 提案/提出/定期/程度 all start with てい. Nothing left to change; the anchor 'As três primeiras' no longer exists in the field."
+    },
+    {
+      "slug": "les:n3-perspectiva-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "reading=\"あしたまでにれぽーとをていしゅつしてください\"",
+      "fix": "reading=\"あしたまでにレポートをていしゅつしてください\"",
+      "why": "Complaint confirmed. The furigana attribute spells the katakana loanword レポート in hiragana (れぽーと). House convention keeps katakana inside reading attributes: 136 reading= values across research/derived/lessons contain katakana (e.g. n3-conectores-01 reading=\"コーヒーをのむ\"). Kana-only attribute value, no tag added or removed, no prose injected into markup."
+    },
+    {
+      "slug": "les:n3-perspectiva-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "É um período úmido em que a palavra </text><jp>積もる</jp><text> dá lugar à umidade que se acumula em tudo.",
+      "fix": "É um período tão úmido que tudo parece encharcado; já o verbo </text><jp>積もる</jp><text> se usa para o que se empilha, como neve, poeira e trabalho.",
+      "why": "Complaint confirmed: the closing line of the 梅雨 culture note is incoherent (a word cannot 'dar lugar à umidade') and it implies 積もる collocates with humidity, which contradicts the lesson's own gloss 'empilhar-se, acumular-se (neve, poeira, trabalho)'. The anchor spans markup, so the tag multiset is preserved exactly: </text>, <jp>, </jp>, <text> before and after, 積もる stays inside <jp>, all Portuguese stays inside <text>. NOTE for the campaign owner: this same lesson carries two corruptions left by the mechanical applier that are outside this batch's scope. (1) In body, the sentence 'Com isso, você já viu as dezoito palavras desta lição em contexto.' was overwritten with the 積もる replacement text and now reads 'Com isso, É um período tão úmido que tudo parece encharcado; já 積もる se usa mesmo para o que se empilha, como neve, poeira e trabalho..'. (2) The description field now contains Cyrillic characters: '～にとття' instead of '～にとって'. Both need a separate repair pass."
+    },
+    {
+      "slug": "les:n3-perspectiva-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 秘密 num contexto de quem guarda algo só para si.",
+      "fix": "Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 瓶 (びん) numa fala do dia a dia.",
+      "why": "Complaint confirmed: the pointer promises a 秘密 example, but the two <jp> sentences that follow are 先生は生徒一人一人について話した and この瓶は空だけど、捨てないでね. 秘密 has no example anywhere in the body. The rewritten line announces what actually follows. Pure text inside an existing <text> element, so no markup is touched and the tag multiset is unchanged (this is why the reviewer's own fix, which added a whole new <jp> sentence, was rejected)."
+    },
+    {
+      "slug": "les:n3-perspectiva-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"てんきよほうによると、よのなかはあめつづきだ\">天気予報によると、世の中は雨続きだ</jp><text> (Segundo a previsão do tempo, o mundo todo está numa sequência de chuva.)</text>",
+      "fix": "<jp reading=\"てんきよほうによると、こんしゅうはあめつづきだそうだ\">天気予報によると、今週は雨続きだそうだ</jp><text> (Segundo a previsão do tempo, esta semana vai ser de chuva atrás de chuva.)</text>",
+      "why": "Complaint confirmed. 世の中 is 'a sociedade, o mundo das pessoas, os tempos' (exactly how this lesson's own list glosses it), never a geographic area, so 天気予報によると、世の中は雨続きだ is unnatural Japanese and the gloss 'o mundo todo' teaches the wrong sense. The replacement uses 今週 as the topic and closes 〜によると with そうだ, the hearsay ending the pattern requires. No 。 at the end, per the house rule for generated Japanese. 世の中 keeps its definition in the vocabulary list; several other words in that same list (予防, 離婚, 嫁, 陸) also have no example sentence, so the lesson stays consistent. A separate 世の中 example was not added because that would insert a new <p>/<jp>/<text> block and change the tag multiset; tags before and after are identical: <jp ...>, </jp>, <text>, </text>."
+    },
+    {
+      "slug": "les:n3-perspectiva-07",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the preceding entry: the two findings for les:n3-perspectiva-07 body describe the same defect (世の中 used for weather in 天気予報によると、世の中は雨続きだ). The fix is emitted once above; emitting it twice would either be a no-op or risk a double edit."
+    },
+    {
+      "slug": "les:n3-relato-01",
+      "field": "exercises[4].answer.accept[3]",
+      "verdict": "fix",
+      "current": "ボッちゃんという本を読みました",
+      "fix": "坊ちゃんという本を読みました",
+      "why": "Complaint confirmed. The accept list of ex:n3-relato-01-5 contains ボッちゃん, a mixed katakana/hiragana spelling that is not valid orthography for ぼっちゃん and would validate an orthographically wrong learner answer. The reviewer asked for deletion, but a list item cannot be deleted by a value replacement, so the malformed entry is replaced with 坊ちゃん, the legitimate alternate JMdict spelling of the same word, which is not yet in the list (accept already holds 坊っちゃんという本を読みました, the all-kana ぼっちゃんというほんをよみました and the bracketed 「坊っちゃん」という本を読みました。). Field path points at the leaf string, index 3 of answer.accept; the answer object and the other accept entries are untouched. This is why the mechanical applier missed it: it looked only at answer.correct and answer.choices, which a production exercise does not have."
+    },
+    {
+      "slug": "les:n3-relato-01",
+      "field": "exercises[4].answer",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the preceding entry: both findings for les:n3-relato-01 exercises[4].answer object to the same accept variant ボッちゃんという本を読みました. The fix is emitted once above."
+    },
+    {
+      "slug": "les:n3-relato-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "O verbo da ação fica sempre na forma de dicionário antes de",
+      "fix": "O verbo da ação fica na forma de dicionário (ordem positiva) ou na forma ～ない (ordem negativa) antes de",
+      "why": "Complaint confirmed: the l1-pitfall note states the action verb is ALWAYS in dictionary form before ように, which contradicts the paragraph two blocks above (医者はお酒を飲まないように言いました), exercise 1 (answer ない) and the lesson's own checklist item mentioning ～ないように. As an absolute rule it is false and would make a learner produce 飲むように言いました for 'told me not to drink'. The anchor is plain text inside one <text> element and stops before the space that precedes </text><jp>ように</jp>, so no markup is touched."
+    },
+    {
+      "slug": "les:n3-relato-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "MESMO que o verbo final seja educado (</text><jp>頼まれた</jp><text>, \"fui pedido\")",
+      "fix": "MESMO que o verbo final seja educado (</text><jp>頼まれました</jp><text>, \"me pediram\")",
+      "why": "Two confirmed defects in one span. 'Fui pedido' is not grammatical pt-BR (pedir does not passivize with the asked person as subject); the natural gloss is 'me pediram', which is exactly what exercise 2 and exercise 5 of this same lesson already use. And 頼まれた is the plain past passive, so labelling it 'educado' is wrong; 頼まれました is the polite form and matches the example 手伝ってくれと頼まれました three lines above. Keeping 'educado' preserves the concessive contrast the sentence is built on (brusque くれ inside the quote versus a polite reporting verb outside). Tag multiset identical before and after: </text>, <jp>, </jp>, <text>."
+    },
+    {
+      "slug": "les:n3-relato-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 'sempre na forma de dicionário' entry above; the same defect was reported twice for les:n3-relato-02 body. The fix is emitted once."
+    },
+    {
+      "slug": "les:n3-relato-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 頼まれた / 'fui pedido' entry above; the same defect was reported twice for les:n3-relato-02 body. The fix is emitted once."
+    },
+    {
+      "slug": "les:n3-relato-02",
+      "field": "exercises[1].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already corrected earlier in the campaign. The stored explanation of ex:n3-relato-02-2 now ends the breakdown with 頼まれました ('me pediram'). The objectionable gloss 'fui pedido' is gone, so the anchor no longer exists and nothing is left to fix."
+    },
+    {
+      "slug": "les:n3-relato-02",
+      "field": "exercises[4].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already corrected earlier in the campaign. The stored explanation of ex:n3-relato-02-5 now ends the breakdown with 頼まれた ('me pediram'), matching the prompt's own gloss. The 'fui pedido' anchor no longer exists."
+    },
+    {
+      "slug": "les:n3-relato-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<item><text>Verbo (casual) + </text><jp>っけ</jp><text>: </text><jp reading=\"なまえなんだっけ\">名前何だっけ?</jp><text> (\"qual era o nome mesmo?\").</text></item>",
+      "fix": "<item><text>Verbo (casual, passado) + </text><jp>っけ</jp><text>: </text><jp reading=\"もうたべたっけ\">もう食べたっけ?</jp><text> (\"eu já comi mesmo?\").</text></item>",
+      "why": "Complaint confirmed: the bullet that is supposed to demonstrate verb + っけ shows 名前何だっけ, which has no verb (it is 何 + だっけ, the noun/copula pattern already covered by the third bullet of the same list). The learner never sees verb + っけ. もう食べたっけ? is the canonical past-plain example and the label gains 'passado', which is the form っけ normally attaches to. Tag multiset identical before and after: <item>, <text>, </text> (x3), <jp>, </jp> (x2 pairs), </item>; the reading attribute follows the list's own convention of dropping the question mark."
+    },
+    {
+      "slug": "les:n3-relato-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Para reforçar essa identidade, existe a variante",
+      "fix": "Já para avaliar algo tomando o papel como critério (\"para um X\"), existe a variante",
+      "why": "Complaint confirmed, though minor. The line announces としては as a way to reinforce the role, but the example that follows, 学生としてはまあまあの成績だ ('Para um estudante, é uma nota razoável'), is the standard-of-evaluation use of としては, not reinforcement. The new wording matches the example. Plain text inside an existing <text> element, so no markup is touched; the following <jp>としては</jp> and the colon stay as they are."
+    },
+    {
+      "slug": "les:n3-relato-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 'Verbo (casual) + っけ' entry above; the same defect was reported twice for les:n3-relato-04 body. The fix is emitted once."
+    },
+    {
+      "slug": "les:n3-relato-06",
+      "field": "exercises[4].answer",
+      "verdict": "needs-human",
+      "current": "",
+      "fix": "",
+      "why": "The complaint is real: standard kanji usage assigns 測る to size/length, 量る to weight and 計る to time/quantity, so サイズを計る in ex:n3-relato-06-5 is nonstandard in a lesson whose whole point is that the kanji decides the meaning. But it cannot be repaired inside exercises[4].answer alone. The prompt says 'Traduza para o japonês: ''Me pediram que medisse o tamanho.'' (use 計る e a gramática てくれと)', the explanation says '計る (はかる) é medir', and the lesson body and unlocks list carry vocab:計る. Changing only answer.text and answer.accept to 測って would grade a learner wrong for typing exactly what the prompt told them to use. A human must choose one of two coordinated rewrites: keep 計る and move the object to a time target (prompt to 'Me pediram que cronometrasse o tempo', answer.text to 時間を計ってくれと言われた, accept and explanation to match), or keep サイズ and switch prompt, answer, accept, explanation and the vocab tie-in to 測る. The same edit is needed in course/n3/topic-48-relato/lesson-06.json. SEPARATE ISSUE found in this lesson while checking, outside this batch's scope: exercises[1].prompt now stores 'Qual destes verbos se lê はく e significa vomitar? (mesma correção na cópia course/n3/topic-48-relato/lesson-06.json)'. The mechanical applier wrote the reviewer's instruction tail into the learner-facing prompt; everything from ' (mesma correção' to the closing parenthesis must be deleted."
+    },
+    {
+      "slug": "les:n3-tempo-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"ふっていないうちに\">降っていないうちに</jp>",
+      "fix": "<jp reading=\"あめがふらないうちに\">雨が降らないうちに</jp>",
+      "why": "Complaint confirmed. The l1-pitfall note names ～ないうちに (objective 2 and a checklist item both use that label) but illustrates it with 降っていないうちに, the ている-negative. That form does mean 'enquanto não está chovendo', which is precisely the reading the surrounding sentence denies, so the example argues against the note. 雨が降らないうちに is the canonical form for 'antes que comece a chover' and makes the note true. Tag multiset identical: <jp ...>, </jp>. One related gap is left for a human: the formation line still reads 'verbo na forma ている + うちに' and does not mention the ない form, which is a second anchor in the same field and cannot be covered by this single replacement."
+    },
+    {
+      "slug": "les:n3-tempo-01",
+      "field": "exercises[2].answer.text",
+      "verdict": "fix",
+      "current": "疲れる___走った",
+      "fix": "まで",
+      "why": "Complaint confirmed and critical. In ex:tempo-01-3 (cloze) answer.text repeats the blanked prompt instead of holding the filler, so a learner who correctly types まで is graded wrong. The batch convention is filler-only: ex:n3-causa-08-3 stores text '料金' with full '空港で両替して、料金を払った。', and ex:n3-relato-02-1 stores text 'ない'. answer.full (疲れるまで走った) is already correct and is left untouched. Field path points at the leaf string inside the answer object, not the object itself. The mechanical applier missed it because it searched answer.correct and answer.choices, which a cloze exercise does not have."
+    }
+  ]
+}

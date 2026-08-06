@@ -1,0 +1,59 @@
+{
+ "queue": "layer-a-pairing",
+ "checked_file": "research/derived/qa_queues/layer_a_pairing.json",
+ "check": "independent-adversarial-2",
+ "date": "2026-08-06",
+ "verdict": "accept",
+ "summary": "All 34 fix rows survive. No row is droppable. The three problems recorded below are inaccuracies in human-facing rationale prose, not in any anchor, action token, or Layer-A string, and none of them changes an action.",
+ "problems": [
+  {
+   "id": "cross_cutting_notes[0]",
+   "issue": "Overstated evidence. The note says 'Six of the seven English strings the reviewers wanted to author already exist upstream as real, linked Tatoeba rows.' Checked against phase3_layer_a_queue.json would_have_written values and against the linked rows in eng_sentences.tsv.bz2: only two of the six exist byte-exact upstream. sent:tatoeba-144418 reviewer wanted \"Don't make fun of people.\" which is linked row 543984, and sent:tatoeba-373351 reviewer wanted 'Hello.' which is linked row 1858850. The other four do not exist upstream in any form: sent:tatoeba-188098 wanted 'Is there anything I can eat right away?' (linked rows are 'Did you make anything I can start on now?', 'Do you have anything I can eat right away?', \"Do you have anything that's ready to eat?\"), sent:tatoeba-3506610 wanted 'Can I talk to you for a moment?' (linked rows are 'Let me speak.' and 'Can I borrow you for just a minute?'), sent:tatoeba-5046 wanted \"If you're by my side, I don't need anything else.\" against upstream \"If you are by my side, I don't need anything else.\" which differs by the contraction, and sent:tatoeba-98198 wanted \"They're always skipping school.\" against upstream 'They always skip school.' and 'They skip school all the time.'. The re-link targets the queue actually proposes are semantically equivalent to what the reviewers wanted, so the six re-link actions stand; only the claim of verbatim pre-existence is wrong.",
+   "action": "keep"
+  },
+  {
+   "id": "sent:tatoeba-203508",
+   "issue": "Rationale states 'the record's grammar target sits inside that clause', meaning the concessive clause. The record's target is not in that clause. tags are ['top:n4-potencial', '続ける'] and structure_explanation names 続ける as 'o verbo pleno alvo', which sits in the main clause 事業は続ける, and the stored English renders that main clause correctly. The primary complaint is still true and load-bearing: 家を出る is leaving home while the English says selling a house, and pt_validated_against is 'en', so unlink-en remains the correct action. Only the supporting sentence is false.",
+   "action": "keep"
+  },
+  {
+   "id": "sent:tatoeba-233703",
+   "issue": "Rationale states 'The verb is the record's grammar target, so the mismatch is load-bearing.' The record's target is the てほしい pattern, not the verb. tags are ['top:n4-condicionais', 'てほしい'] and structure_explanation opens with 'O foco é 〜てほしい'. The stored English \"I'd like for you to go.\" in fact preserves that pattern and diverges only on the lexical verb (会う against go). unlink-en is still defensible under the queue's own criterion, since translating from the English would yield a wrong pt-BR verb, but the stated reason misidentifies what is at risk.",
+   "action": "keep"
+  }
+ ],
+ "evidence": {
+  "rows_checked": 54,
+  "fix_rows": 34,
+  "no_change_rows": 20,
+  "criterion_a_current_byte_exact": {
+   "method": "Loaded corpus/sentences/bank.json, keyed by slug, and compared each row's 'current' to the stored translation.en with full string equality (not substring).",
+   "result": "54 of 54 pass with exact equality. Includes every one of the 34 fix rows."
+  },
+  "criterion_b_fix_is_value": {
+   "method": "Regex scan of every fix value against the declared action_vocabulary, plus scans for instruction verbs (replace, should be, change to, rewrite, substitute), for arrows (-> and U+2192), for em and en dashes, for emoji, and for any embedded whitespace.",
+   "result": "Zero hits. All fix values are controlled-vocabulary tokens: none (20), flag-link-quality (16), unlink-en (12), relink-en:<digits> (6). Every relink-en target id also matches the proposed_en_id in the matching relink_candidates block."
+  },
+  "criterion_c_locale_purity": {
+   "result": "The queue proposes no field value anywhere. No pt-BR field is written and no pt-BR text appears in any enum slot. The action tokens are locale-neutral English identifiers, consistent with the project's enum convention."
+  },
+  "criterion_d_no_authored_english": {
+   "method": "This was the critical check. The only English strings the queue emits are inside relink_candidates (proposed_en_verbatim_upstream and all_linked_en_ids). Each was compared byte for byte against research/datasets/tatoeba/eng_sentences.tsv.bz2 after resolving the true link set from links.csv inside links.tar.bz2.",
+   "result": "All 22 quoted English strings across the 7 relink_candidates blocks are byte-exact upstream Tatoeba rows, and every one of them is genuinely linked to the stated Japanese id. No fix contains authored English prose. Zero rows qualify for the critical-failure drop."
+  },
+  "criterion_e_fix_addresses_complaint": {
+   "result": "Checked row by row against the Japanese, the stored pt-BR, the translation_literal, the tags and the structure_explanation. Every fix token is the right response to the defect it names, with the three rationale caveats recorded in problems. All 12 unlink-en rows and all 16 flag-link-quality rows were confirmed to sit on Japanese ids where no better linked English row exists, so none of them should have been a re-link instead."
+  },
+  "layer_a_independently_reverified": {
+   "links": "links.csv streamed in full from research/datasets/tatoeba/links.tar.bz2. For all 47 tatoeba records the real linked English id set equals the set the queue reports, including the seven-way link on 373351 and the four-way link on 11041763.",
+   "jp_byte_exact": "All 47 stored jp strings equal their upstream jpn_sentences.tsv row.",
+   "stored_en_is_a_real_link": "For all 47 tatoeba records the stored translation.en equals one of the genuinely linked English rows, which confirms the queue's headline that ingestion attached no wrong translation row.",
+   "jec": "All 7 jec records match raw_jec in db/corpus.sqlite byte-exact on both ja and en. raw_jec has id as primary key with a single en column, so the one-to-one claim that blocks re-linking holds.",
+   "counts_and_coverage": "The declared counts 6 / 12 / 16 / 20 total 54 are exact. The 137 dropped ops in phase3_layer_a_queue.json cover exactly 54 unique slugs and the output covers all 54 with no extras and no duplicates.",
+   "premise_rebuttal": "The source queue's premise was that these gen=false records have no translation.en. All 54 do have one. The headline rebuttal is correct.",
+   "pt_validated_against": "Confirmed 'en' on all 54 records, as cross_cutting_notes[2] states.",
+   "structure_explanation_claim_on_373351": "Confirmed. The record's own structure_explanation says in both locales that the linked English 'Welcome' is inaccurate for こんにちは."
+  },
+  "rationale_spot_checks_that_passed": "Every 'the stored pt-BR already carries X' claim was verified against bank.json and all held: jec-0453 first person, jec-0517 harsh sense, jec-0611 possibility, 11733143 open question, 188036 no added participant, 221299 proximal and singular, 78661 hundreds of thousands, 83446 wall, 373351 'Boa tarde.' matching the proposed row 499689. The pt-BR on all 12 unlink-en rows was checked and each tracks the Japanese, not the English anchor, which supports cross_cutting_notes[2]."
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "batch": 17,
+ "fixes": [
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "exercises[1].answer.text",
+   "verdict": "fix",
+   "current": "勉強____。",
+   "fix": "しなさい",
+   "why": "Cloze answer.text held the blanked template instead of the missing chunk, so nothing the learner types can match. All sibling clozes in the topic store the filler; the filler here is shinasai."
+  },
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "exercises[1].prompt",
+   "verdict": "fix",
+   "current": "Complete a ordem firme mas gentil que um professor dá ao aluno: 'Estude.' (verbo 勉強する na forma 〜なさい)",
+   "fix": "Complete a ordem firme mas gentil que um professor dá ao aluno ('Estude.', verbo 勉強する na forma 〜なさい): 勉強＿＿＿＿。",
+   "why": "With the answer now storing only the filler, the prompt must show the gapped sentence like every sibling cloze does, otherwise the learner cannot know what chunk is being asked for."
+  },
+  {
+   "slug": "les:n4-volitivo-06",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "The 'ruda' typo was already corrected in the stored body (it now reads 'em fala masculina bem rude'), so this duplicate finding has nothing left to change."
+  },
+  {
+   "slug": "les:n5-adjetivos-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"ぜんぶたかくなかった\">全部高くなかった</jp><text>= \"nem tudo estava caro\".</text>",
+   "fix": "<jp reading=\"ぜんぶたかくなかった\">全部高くなかった</jp><text>= \"nada estava caro\" (a negação cobre o \"tudo\").</text>",
+   "why": "Unmarked zenbu scopes over the negation (all-are-not = none), so the gloss 'nem tudo estava caro' teaches partial negation, which would need zenbu-wa. Gloss corrected and the scope made explicit."
+  },
+  {
+   "slug": "les:n5-adjetivos-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"いまおおぜいになる\">今大勢になる</jp><text>(\"agora virou multidão\") usa </text>",
+   "fix": "<jp reading=\"おとなになる\">大人になる</jp><text>(\"virar adulto\") usa </text>",
+   "why": "oozei is a quantity word (oozei no hito / oozei iru), so 'ima oozei ni naru' is not idiomatic, and the past-tense gloss 'virou' does not match the non-past naru. Swapped for otona ni naru, a real noun+ni naru example already glossed in the same lesson."
+  },
+  {
+   "slug": "les:n5-comparacoes-01",
+   "field": "exercises[3].prompt",
+   "verdict": "fix",
+   "current": "Monte 'O lado do trem é mais rápido do que o ônibus.' com as peças: [速い] [電車] [バス] [のほうが] [より]",
+   "fix": "Comece pelo lado que PERDE (バスより) e monte 'Do que o ônibus, o trem é que é mais rápido.' com as peças: [速い] [電車] [バス] [のほうが] [より]",
+   "why": "The answer key accepts a single order, but the old prompt ('O lado do trem...') cues densha no hou ga first, which is the answer of exercise 3 and equally correct. Fixing the prompt to demand the yori-first order keeps the single-order key gradeable; sentence_build answers in this course have no accept list."
+  },
+  {
+   "slug": "les:n5-comparacoes-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "treinar as quatro ordens mais comuns",
+   "fix": "treinar os quatro moldes mais comuns",
+   "why": "The lesson lists four grammar targets but only three distinct word orders, so 'quatro ordens' is false; 'quatro moldes' matches the corrected list heading below."
+  },
+  {
+   "slug": "les:n5-comparacoes-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<heading level=\"3\"><text>Quatro variações da mesma ideia</text></heading>\n<p><text>Quatro padrões cobrem \"A é mais X que B\". São a mesma ferramenta vista de ângulos diferentes; guarde-os como um só conjunto. Repare que, em todos eles, </text><jp>より</jp><text> continua colado no termo menor e </text><jp>のほうが</jp><text> no lado que ganha; o que muda é só por onde a frase começa.</text></p>\n<list ordered=\"false\">\n <item><text weight=\"bold\">は…より…です</text><text> (</text><grammar ref=\"gram:wa-yori-desu\"/><text>): o jeito polido e básico. </text><jp reading=\"でんしゃはばすよりはやいです\">電車はバスより速いです</jp><text> = \"O trem é mais rápido que o ônibus.\"</text></item>\n <item><text weight=\"bold\">より…ほうが</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): começa pelo \"do que\". </text><jp reading=\"ばすよりでんしゃのほうがはやい\">バスより電車のほうが速い</jp><text>.</text></item>\n <item><text weight=\"bold\">のほうが…より</text><text> (</text><grammar ref=\"gram:gp-140\"/><text>): começa pelo lado que ganha. </text><jp reading=\"でんしゃのほうがばすよりはやい\">電車のほうがバスより速い</jp><text>.</text></item>\n <item><text weight=\"bold\">より…のほうが</text><text> (</text><grammar ref=\"gram:gp-47\"/><text>): o \"prefiro B a A / B é mais\". </text><jp reading=\"でんしゃよりばすのほうがやすい\">電車よりバスのほうが安い</jp><text> = \"O ônibus é mais barato que o trem.\"</text></item>\n</list>",
+   "fix": "<heading level=\"3\"><text>Quatro moldes, três ordens</text></heading>\n<p><text>Quatro moldes cobrem \"A é mais X que B\", mas em apenas três ordens: o segundo e o quarto repetem a mesma ordem, com usos diferentes. Guarde-os como um só conjunto. Repare que, em todos, </text><jp>より</jp><text> continua colado no termo menor e </text><jp>のほうが</jp><text> no lado que ganha; o que muda é só por onde a frase começa.</text></p>\n<list ordered=\"false\">\n <item><text weight=\"bold\">は…より…です</text><text> (</text><grammar ref=\"gram:wa-yori-desu\"/><text>): o jeito polido e básico. </text><jp reading=\"でんしゃはばすよりはやいです\">電車はバスより速いです</jp><text> = \"O trem é mais rápido que o ônibus.\"</text></item>\n <item><text weight=\"bold\">より…のほうが</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): começa pelo \"do que\". </text><jp reading=\"ばすよりでんしゃのほうがはやい\">バスより電車のほうが速い</jp><text>.</text></item>\n <item><text weight=\"bold\">のほうが…より</text><text> (</text><grammar ref=\"gram:gp-140\"/><text>): começa pelo lado que ganha. </text><jp reading=\"でんしゃのほうがばすよりはやい\">電車のほうがバスより速い</jp><text>.</text></item>\n <item><text weight=\"bold\">より…のほうが, agora para preferir</text><text> (</text><grammar ref=\"gram:gp-47\"/><text>): a mesma ordem do segundo item, agora com sentido de escolha, \"prefiro B a A\". </text><jp reading=\"でんしゃよりばすのほうがやすい\">電車よりバスのほうが安い</jp><text> = \"O ônibus é mais barato que o trem.\"</text></item>\n</list>",
+   "why": "Items 2 and 4 of the list are the same order (B yori A no hou ga ADJ), so 'quatro variações / quatro padrões' presents three orders as four; item 2's label also dropped the no that its own example uses. Heading, intro and both labels corrected; all four grammar refs kept because they are in unlocks and the checklist."
+  },
+  {
+   "slug": "les:n5-comparacoes-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>(\"queria férias de verão\") ou, mais comum,</text><jp reading=\"にちようびがほしいです\">日曜日がほしいです</jp><text>(\"queria que fosse domingo\").</text>",
+   "fix": "<text>(\"quero férias de verão\") ou </text><jp reading=\"にちようびがほしいです\">日曜日がほしいです</jp><text>(\"quero um domingo de folga\"). Para dizer \"queria que já fosse domingo\", o japonês usa outra construção, que você vê mais pra frente.</text>",
+   "why": "nichiyoubi ga hoshii desu means 'I want a (day off on) Sunday', not 'I wish it were Sunday', and it is rarer than natsuyasumi ga hoshii, so 'mais comum' was also false. Gloss corrected and the wish reading redirected, staying consistent with the lesson's own rule that hoshii is for wanting to HAVE something."
+  },
+  {
+   "slug": "les:n5-conectando-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<item><jp>けれども</jp><text>(mais formal, escrita) ›</text><jp>けれど</jp><text>›</text><jp>けど</jp><text>(conversa) ›</text><jp>が</jp><text>(neutro/escrito).</text></item>",
+   "fix": "<item><jp>けれども</jp><text>(mais formal, escrita) ›</text><jp>が</jp><text>(formal, típico da escrita) ›</text><jp>けれど</jp><text>›</text><jp>けど</jp><text>(conversa).</text></item>",
+   "why": "The scale is announced 'do mais formal ao mais casual' but ended on ga, teaching the most written form as the most casual; its own '(neutro/escrito)' label contradicted the slot. ga moved to second place and relabelled as formal/written."
+  },
+  {
+   "slug": "les:n5-conectando-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Quando o contexto pede cuidado; um e-mail, uma redação, uma fala polida; use ",
+   "fix": "Quando o contexto pede cuidado (um e-mail, uma redação, uma fala polida), use ",
+   "why": "Paired semicolons cannot bracket an appositive in pt-BR and they strand the main verb 'use'; design/translation_style.md prescribes parentheses or commas for exactly this case."
+  },
+  {
+   "slug": "les:n5-conectando-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Note: para ligar </text><jp>んです</jp><text> a um verbo ou adjetivo, usa-se a forma simples (de dicionário) antes dele.",
+   "fix": "Note: para ligar </text><jp>んです</jp><text> a um verbo ou a um adjetivo-い, usa-se a forma simples (de dicionário) antes dele; com adjetivo-な e com substantivo entra um な no meio.",
+   "why": "The plain-form rule is false for na-adjectives and nouns, which need na; the lesson itself later uses rekoodo ga suki na n desu, so as written it invites *suki da n desu."
+  },
+  {
+   "slug": "les:n5-convites-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>= \"comer, comida\". Aparece no almoço,</text><jp reading=\"ひるごはん\">昼ご飯</jp><text>(</text><vocab ref=\"vocab:昼ご飯\"/><text>), e no verbo </text><jp reading=\"たべる\">食べる</jp><text>(\"comer\"). ",
+   "fix": "<text>= \"comer, comida\". Aparece no verbo </text><jp reading=\"たべる\">食べる</jp><text>(\"comer\") e, escondido, no último kanji de </text><jp reading=\"ひるごはん\">昼ご飯</jp><text>(</text><vocab ref=\"vocab:昼ご飯\"/><text>), onde ele encolhe e vira o radical da esquerda, o \"radical da comida\". ",
+   "why": "The kanji 食 does not appear in 昼ご飯 (hiru + go + han); it survives only as the left radical inside 飯, so the spotting cue pointed at a character that is not there."
+  },
+  {
+   "slug": "les:n5-convites-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "(pet) só diferem no primeiro kana;",
+   "fix": "(pet) diferem no primeiro e no último kana;",
+   "why": "beddo and petto differ in two of three kana (be/pe and do/to); the very next note in the same lesson stresses that beddo ends in -do, contradicting the old claim."
+  },
+  {
+   "slug": "les:n5-convites-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Em português usamos \"chover\" e \"ventar\" para os dois; em japonês, verbos diferentes.",
+   "fix": "Em português o próprio verbo já diz tudo (\"chove\", \"venta\"); em japonês o verbo é genérico (\"cair\", \"soprar\") e só se sustenta com o sujeito ao lado: quem cai é a chuva, quem sopra é o vento.",
+   "why": "The l1-pitfall stated a contrast that does not exist, since pt-BR also has two distinct verbs. Rewritten around the real asymmetry, in plain text so the note's tag balance is untouched."
+  },
+  {
+   "slug": "les:n5-desu-wa-02",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<item><vocab ref=\"vocab:彼\"/><text>: quando escrito em kana como </text><jp>あれ</jp><text>, é exatamente o demonstrativo \"aquilo\" desta lição</text></item>",
+   "fix": "<item><vocab ref=\"vocab:彼\"/><text>: este não é palavra de lugar; é o mesmo </text><jp>あれ</jp><text> da lição, aqui apontando uma pessoa distante dos dois (\"aquela pessoa\"). Escreva sempre em kana: o kanji desta entrada é raro e, na leitura comum, quer dizer \"ele\" (você o vê no N4).</text></item>",
+   "why": "The item sat in a place-word list, repeated are without adding anything, and sold the rare kanji 彼 as the spelling of are, when the common reading of that kanji is kare 'he' (N4). The vocab ref is kept because it is in the lesson's unlocks; the text now says it is not a place word, gives the corpus gloss 'aquela pessoa' and warns about the kanji."
+  },
+  {
+   "slug": "les:n5-desu-wa-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "O tamanho muda a palavra: </text><jp>おじ</jp><text> é \"tio\", mas </text><jp>おじいさん</jp><text> (com um tempo a mais) é \"vovô\".",
+   "fix": "O tamanho muda a palavra: </text><jp>おじさん</jp><text> é \"tio\", mas </text><jp>おじいさん</jp><text> (com um tempo a mais) é \"vovô\".",
+   "why": "oji and ojiisan differ by the san suffix plus three moras, so 'a diferença é só a duração' was false in a note whose whole point is vowel length. ojisan / ojiisan is the genuine length pair."
+  },
+  {
+   "slug": "les:n5-desu-wa-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<jp reading=\"おちゃ\">お茶</jp><text>(chá).</text>",
+   "fix": "<jp reading=\"おはな\">お花</jp><text>(flor).</text>",
+   "why": "The bullet defines o- as the prefix for words of Japanese origin read with kun readings, but cha is a Sino-Japanese on reading (corpus kanji:茶 lists only on readings), so ocha contradicts the rule in the same sentence. ohana is a clean native-reading example."
+  },
+  {
+   "slug": "les:n5-desu-wa-05",
+   "field": "body",
+   "verdict": "fix",
+   "current": "então </text><jp reading=\"かね\">金</jp><text> sozinho já cobre \"o dinheiro\".",
+   "fix": "então </text><jp reading=\"おかね\">お金</jp><text> sozinho já cobre tanto \"dinheiro\" quanto \"o dinheiro\".",
+   "why": "Bare 金 defaults to kin ('gold') and the sentence right before it calls okane the normal, neutral form, so the article point contradicted the lesson and invited dropping the o-. The point about articles is made with okane instead."
+  },
+  {
+   "slug": "les:n5-numeros-tempo-02",
+   "field": "exercises[4].answer.accept[2]",
+   "verdict": "fix",
+   "current": "いちせんまんえんくらい",
+   "fix": "いっせんまんえんくらい",
+   "why": "issen is the only reading of 一千 (sokuon before sen, like issai/ikkai); ichisenman is not a valid reading, so the accept list was validating a mispronunciation."
+  },
+  {
+   "slug": "les:n5-numeros-tempo-02",
+   "field": "exercises[4].answer.accept[3]",
+   "verdict": "fix",
+   "current": "いちせんまんえんぐらい",
+   "fix": "いっせんまんえんぐらい",
+   "why": "Same wrong reading in the gurai variant of the accept list; both entries must carry the sokuon issen."
+  },
+  {
+   "slug": "les:n5-numeros-tempo-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": ", uma partícula que gruda no número e diz o que está sendo contado.",
+   "fix": ", um pedacinho que gruda no número e diz o que está sendo contado.",
+   "why": "A counter (josuushi) is not a particle (joshi); the same course glosses ga as 'partícula', so calling ko/satsu/kai a particle taught a false grammatical category."
+  }
+ ]
+}

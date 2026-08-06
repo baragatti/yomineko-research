@@ -1,0 +1,322 @@
+{
+ "queue": "phase4-grammar",
+ "source_findings": "research/derived/fable5_validation/phase4_grammar.json",
+ "source_skipped": "research/derived/fable5_validation/phase4_grammar_skipped.json",
+ "targets": [
+  "corpus/grammar/n3.json",
+  "corpus/grammar/n4.json",
+  "corpus/grammar/n5.json"
+ ],
+ "id_format": "<slug>#<field>, field names matching phase4_grammar_skipped.json where the finding supplied one",
+ "note": "'current' is a byte-exact substring of the stored value unless marked otherwise in 'why' (gp-98 stores JSON null; register rows quote the JSON array; several rows quote a whole field because the same defect repeats inside it). 'fix' is always a value to write, never an instruction. An empty 'fix' means delete the anchored span.",
+ "rows": [
+  {
+   "id": "gram:cha-ikenai-ja-ikenai#expl_en",
+   "verdict": "fix",
+   "current": "ちゃいけない comes from action verbs ('you can't eat that', 'you can't go in'). じゃいけない appears with nouns and な-adjectives ('it can't be today').",
+   "fix": "ちゃいけない comes from verbs whose て-form ends in て (食べちゃいけない, 行っちゃいけない). じゃいけない comes from verbs whose て-form ends in で (飲んじゃいけない, 読んじゃいけない) and also from nouns and な-adjectives ('it can't be today').",
+   "why": "Real and critical. As stored, ちゃ is claimed for all action verbs and じゃ only for nouns/na-adjectives, which licenses *読んちゃいけない and *飲んちゃいけない. It also contradicts this record's own forms[1] ('casual, after a voiced sound') and its own formation.en, which already states the で to じゃ rule. The replacement mirrors the pt-BR text that was already applied to this record."
+  },
+  {
+   "id": "gram:cha-ikenai-ja-ikenai#expl_pt",
+   "verdict": "fix",
+   "current": "ちゃいけない vem de verbos de ação ('não pode comer isso', 'não pode entrar'). ちゃいけない vem de",
+   "fix": "ちゃいけない vem de",
+   "why": "Not in the queue, found while anchoring the en side. The earlier applier inserted the corrected sentence but left the old false one in front, so expl_pt now says 'ちゃいけない vem de verbos de ação' and then 'ちゃいけない vem de verbos cuja forma-て termina em て' back to back. The anchor deletes only the stale first sentence; the corrected sentence stays."
+  },
+  {
+   "id": "gram:gp-33#forms[0].en",
+   "verdict": "fix",
+   "current": "is not / is not (casual)",
+   "fix": "is not / are not (casual)",
+   "why": "Real copy slip: the two-slot gloss repeats itself, while forms[0].pt-BR correctly gives two readings ('não é / não está'). House style in the sibling copula entries is a number pair, gram:gp-32 'was / were (casual)' and gram:gp-34 'was not / were not (casual)', so the pair here is 'is not / are not'."
+  },
+  {
+   "id": "gram:gp-115#forms[0].en",
+   "verdict": "fix",
+   "current": "to be able to / can (potential suffix, godan)",
+   "fix": "to be able to / can (godan potential: final -u becomes -eru, as in 話せる, 書ける)",
+   "why": "Real and critical. The godan potential is the -eru verb (話す/話せる, 書く/書ける). れる on a godan verb is the PASSIVE (書かれる); れる as a potential is the ra-nuki ICHIDAN colloquialism (食べれる). Labelling れる 'potential suffix, godan' contradicts this record's own formation.en and its own 話せる example, and licenses *書かれる for 'can write'."
+  },
+  {
+   "id": "gram:gp-115#forms[0].pt",
+   "verdict": "fix",
+   "current": "poder/conseguir (sufixo potencial, godan)",
+   "fix": "poder/conseguir (potencial dos godan: o -u final vira -eru, como em 話せる, 書ける)",
+   "why": "Mesmo defeito do lado en. O potencial dos godan é o verbo em -eru (話す/話せる); れる num godan produz a voz passiva (書かれる). O texto atual contradiz o próprio formation.pt-BR do registro, que já ensina 書く/書ける."
+  },
+  {
+   "id": "gram:gp-115#forms[0].form",
+   "verdict": "needs-human",
+   "current": "れる",
+   "fix": "〜eる",
+   "why": "Consequence of the two fixes above: once the gloss says -eru, the stored form string れる contradicts it. But the godan potential has no single kana suffix (ける / せる / める / れる vary by consonant row), so there is no safe kana value to write. A human has to pick the display convention here, and the same decision then applies to label 'forma potencial, \"poder/conseguir\" (〜れる・られる)' and to structure_pattern 'れる・られる (Potential)'. forms[1] られる (ichidan) is correct and must not change."
+  },
+  {
+   "id": "gram:gp-152#forms[i].en",
+   "verdict": "fix",
+   "current": "to want someone to do (actually 〜てほしい; the spelling has a typo)",
+   "fix": "to want someone (else) to do something",
+   "why": "Real. A learner-facing gloss is carrying an editorial note about a defect in a sibling field. It breaks the fact/explanation separation and goes stale the moment forms[0].form is repaired."
+  },
+  {
+   "id": "gram:gp-152#forms[i].pt",
+   "verdict": "fix",
+   "current": "querer que alguém faça (na verdade 〜てほしい; a grafia tem erro de digitação)",
+   "fix": "querer que outra pessoa faça algo",
+   "why": "Mesmo defeito no lado pt-BR. A observação editorial não pertence a um glossário de aluno, e 'outra pessoa' distingue este ponto de 〜たい, que é justamente o contraste ensinado no explanation."
+  },
+  {
+   "id": "gram:gp-152#forms[0].form",
+   "verdict": "fix",
+   "current": "のようてほしい",
+   "fix": "てほしい",
+   "why": "Not in the queue but named in the finding's own notes, and the two gloss fixes above are incoherent without it. The stored form string is corrupt; this record's structure_pattern is already '～てほしい' and label is '〜てほしい (querer que alguém faça)', so the value is taken from the record itself, not invented. Note for a human: explanation.pt-BR and explanation.en each close with a sentence about this typo ('A grafia \"のようてほしい\" do material tem um erro de digitação'), and refs.label_en is also 'のようてほしい'; both go stale once this lands."
+  },
+  {
+   "id": "gram:gp-73#forms[0].en",
+   "verdict": "fix",
+   "current": "this kind of / like this, this way",
+   "fix": "that kind of / like that, that way",
+   "why": "Real and clear-cut. そういう is the そ-series demonstrative; 'this kind of / like this' is こういう. The stored gloss contradicts label.en ('that kind of / like that'), explanation.en, and its own pt-BR side ('esse tipo de'), and teaches the こ/そ contrast backwards."
+  },
+  {
+   "id": "gram:gp-98#forms[0].en",
+   "verdict": "fix",
+   "current": "null",
+   "fix": "some / several / a few (indefinite quantity, e.g. 何人か, 何回か)",
+   "why": "Real. forms[0].meaning is JSON null, so the only form row of this point renders with no meaning at all. There is no substring anchor to quote: the whole meaning object is null and this is a set-value, not a replace. The value restates the indefinite-quantity sense that explanation.en already defines."
+  },
+  {
+   "id": "gram:gp-98#forms[0].pt",
+   "verdict": "fix",
+   "current": "null",
+   "fix": "alguns / vários / uns quantos (quantidade indefinida, ex.: 何人か, 何回か)",
+   "why": "Mesmo buraco no lado pt-BR: forms[0].meaning é null, então não há âncora de substring, é atribuição de valor. O sentido vem do próprio explanation.pt-BR do registro."
+  },
+  {
+   "id": "gram:gp-98#forms[0].form",
+   "verdict": "fix",
+   "current": "なん    か",
+   "fix": "なん〜か",
+   "why": "Not in the queue but named in the finding's notes. The stored form string contains a run of literal spaces where the counter slot should be, which is an ingestion artifact rather than a Japanese string anyone authored. structure_pattern already reads 'なん + counter + か', so the placeholder shape is taken from the record itself."
+  },
+  {
+   "id": "gram:te-iku#forms[0].en",
+   "verdict": "fix",
+   "current": "to go on doing / to come to (〜ていく)",
+   "fix": "to go on doing / to keep changing from now on (movement or change away from you)",
+   "why": "Real. 'to come to' is the gloss of gram:you-ni-naru and points the change toward the speaker, the opposite of 〜ていく. The replacement mirrors the sibling gram:te-kuru, whose gloss ends '(movement or change toward you)', so the pair now reads as a contrast."
+  },
+  {
+   "id": "gram:te-iku#forms[0].pt",
+   "verdict": "fix",
+   "current": "ir fazendo / passar a (〜ていく)",
+   "fix": "ir fazendo / ir ficando cada vez mais (movimento ou mudança se afastando de você)",
+   "why": "Mesmo defeito: 'passar a' é o glossário de gram:you-ni-naru e aponta para o falante. 'ir ficando' sozinho colidiria com gram:te-kuru, que já usa essa expressão, por isso 'cada vez mais' e a direção explícita."
+  },
+  {
+   "id": "gram:teiru-tokoro#expl_en",
+   "verdict": "fix",
+   "current": "It serves to emphasize what stage of the action you're at: about to start, in the middle, or just finished.",
+   "fix": "〜ているところ marks only the mid-action stage: the action is under way right now. For 'about to start' Japanese uses 〜るところ (出かけるところです), and for 'just finished' 〜たところ (着いたところです).",
+   "why": "Real. The closing sentence hands the whole ところ family's range to 〜ているところ, so a learner reads that 〜ているところ can also mean 'about to start' or 'just finished'. Those are 〜るところ and 〜たところ, as this record's own formation.en already states. It also contradicts the record's label and its single form entry, both of which say mid-action only."
+  },
+  {
+   "id": "gram:teiru-tokoro#expl_pt",
+   "verdict": "fix",
+   "current": "Substituir a frase final por: \"〜ているところ marca apenas a ação em pleno andamento agora; para \\\"prestes a começar\\\" usa-se 〜るところ (出かけるところです) e para \\\"acabou de terminar\\\", 〜たところ (着いたところです).\"",
+   "fix": "Serve para enfatizar que a ação está em pleno andamento neste exato momento. Para \"prestes a começar\" o japonês usa 〜るところ (出かけるところです) e para \"acabou de terminar\", 〜たところ (着いたところです).",
+   "why": "Not in the queue, found while anchoring the en side, and it is the worst thing in this batch. An earlier round wrote its own INSTRUCTION into the learner field: explanation.pt-BR literally ends with 'Substituir a frase final por: \"...\"', escaped inner quotes and all. The student sees the edit order. The replacement is the pt-BR value that instruction was asking for, with the stray backslashes gone."
+  },
+  {
+   "id": "gram:te-shimau-chau#forms[0].pt",
+   "verdict": "fix",
+   "current": "completar totalmente / acabar fazendo (sem querer, pena)",
+   "fix": "completar totalmente / acabar fazendo (sem querer, infelizmente)",
+   "why": "Real. O parêntese pt-BR precisa espelhar '(unintentionally, regrettably)' do lado en, e 'pena' é substantivo, não advérbio: em série com 'sem querer' ele lê como um 'que pena' truncado. 'infelizmente' é o advérbio correspondente e é a palavra que o próprio nuance.pt-BR deste registro já usa ('infelizmente fazer')."
+  },
+  {
+   "id": "gram:to-iwarete-iru#forms[0].en",
+   "verdict": "fix",
+   "current": "it is said that / they say that / it is told that",
+   "fix": "it is said that / they say that / people say that",
+   "why": "Real. Impersonal 'tell' does not take dummy-it plus a that-clause in English; only 'I was told that' works. 'it is told that' is a calque of the pt-BR 'é dito que' sitting in the third slot. The pt-BR side offers three genuinely distinct renderings, so the en side should too."
+  },
+  {
+   "id": "gram:you-da#forms[0].pt",
+   "verdict": "fix",
+   "current": "forma volitiva casual: \"vamos\", \"vou\", \"bora\"",
+   "fix": "parece que / dá a impressão de (conjectura por evidência)",
+   "why": "Real e crítico. O único form deste ponto está glosado como VOLITIVO (食べよう, 'vamos comer'), que é outra estrutura. 〜ようだ é conjectura apoiada em evidência, como o próprio label ('parece que / aparentemente') e o começo do explanation.pt-BR dizem."
+  },
+  {
+   "id": "gram:you-da#forms[0].en",
+   "verdict": "fix",
+   "current": "casual volitional form: \"let's,\" \"I'll,\" \"c'mon\"",
+   "fix": "it seems / it looks like (conjecture from evidence)",
+   "why": "Same defect on the en side: the gloss describes the volitional 〜よう, not 〜ようだ. label.en already says 'it seems / it appears'."
+  },
+  {
+   "id": "gram:you-da#forms[0].form",
+   "verdict": "fix",
+   "current": "よう",
+   "fix": "ようだ",
+   "why": "Not in the queue but named in the finding's notes, and the two gloss fixes are incoherent without it. As 'よう' the form string is indistinguishable from the volitional entry. structure_pattern of this record is already '～ようだ', so the value comes from the record itself."
+  },
+  {
+   "id": "gram:you-da#formation_pt",
+   "verdict": "needs-human",
+   "current": "Verbos grupo 1 (godan): troca a vogal -u final por -ō → 行く→行こう, 飲む→飲もう, 話す→話そう, 待つ→待とう. Verbos grupo 2 (ichidan): tira o る e acrescenta よう → 食べる→食べよう, 見る→見よう. Irregulares: する→しよう, 来る（くる）→来よう（こよう）. A versão polida correspondente é a base ます + ましょう (食べましょう).",
+   "fix": "Frase em forma simples + ようだ: verbo (雨が降っているようだ), adjetivo-i (寒いようだ). Adjetivo-na + な + ようだ (元気なようだ). Substantivo + の + ようだ (夢のようだ). Antes de substantivo vira ような (夢のような話); antes de verbo ou adjetivo vira ように (夢のように). Versão polida: ようです.",
+   "why": "FALSE FORMATION RULE, and the most serious one in the batch. The entire formation.pt-BR of gram:you-da teaches the VOLITIVO (行く/行こう, 食べる/食べよう, する/しよう, ましょう) under a heading that says 'parece que / aparentemente'. A learner following it produces the wrong structure outright. Marked needs-human rather than fix because it replaces a whole authored Layer-C field, but the proposed value is plain morphology and matches the record's own structure_pattern '～ようだ' and its 夢のようだ example."
+  },
+  {
+   "id": "gram:you-da#formation_en",
+   "verdict": "needs-human",
+   "current": "Group 1 (godan) verbs: replace the final -u vowel with -ō → 行く→行こう, 飲む→飲もう, 話す→話そう, 待つ→待とう. Group 2 (ichidan) verbs: drop the る and add よう → 食べる→食べよう, 見る→見よう. Irregulars: する→しよう, 来る（くる）→来よう（こよう）. The corresponding polite version is the ます base + ましょう (食べましょう).",
+   "fix": "Clause in plain form + ようだ: verb (雨が降っているようだ), い-adjective (寒いようだ). な-adjective + な + ようだ (元気なようだ). Noun + の + ようだ (夢のようだ). Before a noun it becomes ような (夢のような話); before a verb or adjective, ように (夢のように). Polite version: ようです.",
+   "why": "Same false formation rule on the en side: it conjugates the volitional (行く/行こう, ましょう) for an entry about evidential conjecture. Same needs-human reasoning as formation_pt."
+  },
+  {
+   "id": "gram:you-da#nuance_pt",
+   "verdict": "needs-human",
+   "current": "É CASUAL: entre desconhecidos ou em situação formal, use 〜ましょう. O brasileiro costuma traduzir como imperativo (\"comamos!\"), mas o tom é mais de convite amigável (\"bora comer\"). Atenção: sozinha, ela não pede permissão; para isso, liga-se a outras estruturas (ver ようと思う e 〜ようか). Não confunda esse 〜よう volitivo com o 〜ようだ de aparência/comparação; são coisas diferentes, apesar da grafia parecida.",
+   "fix": "〜ようだ não é palpite solto: ele se apoia em algo que você percebeu, viu, ouviu ou sentiu. Para boato de terceiros use 〜そうだ, e para impressão puramente visual, 〜そう ou 〜らしい. Na conversa do dia a dia o equivalente é 〜みたいだ; 〜ようだ soa mais formal e escrito. Armadilha para brasileiros: não confunda com o 〜よう da forma volitiva (食べよう), que tem grafia parecida e função completamente diferente.",
+   "why": "Mesma contaminação: o nuance.pt-BR inteiro fala do volitivo ('É CASUAL... use 〜ましょう', 'comamos!', 'bora comer'), nada disso pertence a 〜ようだ, e o conselho de registro está invertido em relação ao explanation, que chama 〜ようだ de 'a versão mais formal e escrita de 〜みたいだ'. needs-human por ser reescrita completa de campo Layer C."
+  },
+  {
+   "id": "gram:you-da#nuance_en",
+   "verdict": "needs-human",
+   "current": "It is CASUAL: among strangers or in formal situations, use 〜ましょう. Brazilians tend to translate it as an imperative ('let's eat!'), but the tone is more of a friendly invitation ('let's go eat'). Note: on its own, it does not ask for permission; for that, it links to other structures (see ようと思う and 〜ようか). Don't confuse this volitional 〜よう with the 〜ようだ of appearance/comparison; they are different things, despite the similar spelling.",
+   "fix": "〜ようだ is not a loose guess: it rests on something you perceived, saw, heard, or felt. For third-party hearsay use 〜そうだ, and for a purely visual impression, 〜そう or 〜らしい. In everyday conversation the equivalent is 〜みたいだ; 〜ようだ sounds more formal and written. Pitfall for Portuguese speakers: don't confuse it with the volitional 〜よう (食べよう), which is spelled similarly and does something completely different.",
+   "why": "Same volitional contamination on the en side ('It is CASUAL... use 〜ましょう'). Same needs-human reasoning as nuance_pt."
+  },
+  {
+   "id": "gram:you-da#expl_pt",
+   "verdict": "needs-human",
+   "current": "Ela expressa uma sugestão (\"vamos fazer X\"), uma decisão pessoal (\"vou fazer X\", \"acho que vou...\") ou um convite entre pessoas próximas. Por exemplo, 食べよう = \"vamos comer / vou comer\", 行こう = \"vamos / bora\". É muito usada no dia a dia entre amigos e família.",
+   "fix": "",
+   "why": "Terceira parte da mesma contaminação: depois de avisar corretamente 'Não confunda com o 〜よう da forma volitiva... que é outra estrutura', o explanation.pt-BR emenda três frases ensinando o volitivo. A âncora cobre exatamente essas frases e o fix é a string vazia, ou seja, remoção. Marcado needs-human porque apagar trecho de campo Layer C pede assinatura humana; o aviso anterior sobre não confundir permanece."
+  },
+  {
+   "id": "gram:you-da#expl_en",
+   "verdict": "needs-human",
+   "current": " It expresses a suggestion ('let's do X'), a personal decision ('I'll do X,' 'I think I'll...'), or an invitation among close people. For example, 食べよう = 'let's eat / I'll eat,' 行こう = 'let's go / let's get going.' It is widely used in everyday life among friends and family.",
+   "fix": "",
+   "why": "Same trailing volitional passage on the en side, immediately after the correct 'Don't confuse it with the volitional 〜よう... which is a different structure.' Anchor covers exactly the stray passage, including the leading space; fix is the empty string, i.e. deletion."
+  },
+  {
+   "id": "gram:you-da#register",
+   "verdict": "needs-human",
+   "current": "[\"plain\", \"casual\"]",
+   "fix": "[\"plain\", \"written\"]",
+   "why": "ARRAY field (register_json), not prose. Stored value tags 〜ようだ 'casual', which contradicts the record's own explanation calling it 'a versão mais formal e escrita de 〜みたいだ'. The 'casual' tag almost certainly arrived with the volitional contamination in the same record. 'written' is already in use elsewhere in this registry (gram:to-iwarete-iru). needs-human because it is a judgement call bundled with the record-wide cleanup above, not an isolated typo."
+  },
+  {
+   "id": "gram:n3-da-mono-da#pattern",
+   "verdict": "fix",
+   "current": "～だものだ",
+   "fix": "～(ん)だもの",
+   "why": "Real and critical. ～だものだ is not an attested form, and it collides with the unrelated N3 point ～ものだ ('used to / one should'). This record's own label already reads '(～(ん)だもの / ～だもん)' and its formation teaches んだもの / なんだもの, so the value is taken from the record. ～だもん is deliberately left out of the pattern: gram:n3-nda-mon already owns ～んだもん and would become a duplicate; link it through `related` instead."
+  },
+  {
+   "id": "gram:n3-da-mono-da#forms[0].form",
+   "verdict": "fix",
+   "current": "～だものだ",
+   "fix": "～(ん)だもの",
+   "why": "The single form entry repeats the same unattested string as structure_pattern, so it has to move with it."
+  },
+  {
+   "id": "gram:n3-da-mono-da#register",
+   "verdict": "fix",
+   "current": "[\"neutral\"]",
+   "fix": "[\"casual\", \"colloquial\"]",
+   "why": "Real, and note this is an ARRAY field (register_json), not a prose string. 'neutral' contradicts the record's own nuance.pt-BR ('Registro bem informal e emotivo... evite em situações formais') and its explanation ('na fala cotidiana', 'quase infantil'). The sibling gram:n3-nda-mon, the same construction, is already tagged casual + colloquial. Leaving it 'neutral' tells a learner this is safe at work."
+  },
+  {
+   "id": "gram:n3-chatta#register",
+   "verdict": "fix",
+   "current": "[\"neutral\"]",
+   "fix": "[\"casual\", \"colloquial\"]",
+   "why": "Real, ARRAY field (register_json). 〜ちゃった is a marked spoken contraction; the record's own explanation calls it 'Versão coloquial e contraída' and its nuance says 'Bastante informal... em situações formais use ～てしまいました'. The N4 sibling for the same contraction, gram:te-shimau-chau, is tagged plain + casual + colloquial. Note this is a register value, not `caution`: nothing here is rough or offensive."
+  },
+  {
+   "id": "gram:n3-ppai#pattern",
+   "verdict": "fix",
+   "current": "～っぱい",
+   "fix": "～でいっぱい",
+   "why": "Real. ～っぱい is a truncation artifact, not an attachable morpheme: as written it invites *荷物っぱい and collides with the real suffix 〜っぽい. The record's own label ('cheio de / lotado de (〜でいっぱい)') and formation ('Substantivo + で + いっぱい') both give the correct pattern, so the value comes from the record."
+  },
+  {
+   "id": "gram:n3-ppai#forms[0].form",
+   "verdict": "fix",
+   "current": "～っぱい",
+   "fix": "～でいっぱい",
+   "why": "The lone form entry repeats the same broken fragment as structure_pattern and has to move with it."
+  },
+  {
+   "id": "gram:n3-shika-nai#label_pt",
+   "verdict": "fix",
+   "current": "não resta outra senão / só dá para (しかない)",
+   "fix": "não resta outra opção senão / só dá para (しかない)",
+   "why": "Real, minor. 'não resta outra senão' deixa 'outra' pendurado sem substantivo antecedente. O próprio explanation.pt-BR do registro diz 'não há outro jeito senão', ou seja, com núcleo nominal. 'só dá para' é mantido porque espelha o 'can only' do label.en. Atenção: o texto que o finding citou como 'current' já era a versão corrigida, por isso o applier não achou a âncora."
+  },
+  {
+   "id": "gram:n3-te-hajimete#expl_pt",
+   "verdict": "fix",
+   "current": "Indica que algo so foi percebido, entendido ou aconteceu pela primeira vez DEPOIS de outra ação se concretizar. Carrega quase sempre um tom de descoberta ou de tomada de consciência tardia: 'so depois de X foi que percebi Y'. Equivale a 'so depois de', 'so quando' ou 'foi preciso X para perceber Y'.",
+   "fix": "Indica que algo só foi percebido, entendido ou aconteceu pela primeira vez DEPOIS de outra ação se concretizar. Carrega quase sempre um tom de descoberta ou de tomada de consciência tardia: 'só depois de X foi que percebi Y'. Equivale a 'só depois de', 'só quando' ou 'foi preciso X para perceber Y'.",
+   "why": "Real: quatro ocorrências de 'so' sem acento, que em pt-BR é outra palavra. Substituição do campo inteiro para pegar as quatro de uma vez, já que uma âncora curta seria ambígua."
+  },
+  {
+   "id": "gram:n3-te-hajimete#formation_pt",
+   "verdict": "fix",
+   "current": "Verbo na forma て + はじめて + a frase principal (geralmente no passado, com um verbo de percepção como 分かる perceber, 気づく dar-se conta). Ex.: 行ってはじめて (so depois de ir).",
+   "fix": "Verbo na forma て + はじめて + a frase principal (geralmente no passado, com um verbo de percepção como 分かる perceber, 気づく dar-se conta). Ex.: 行ってはじめて (só depois de ir).",
+   "why": "Not in the queue but flagged in the finding's own notes: the same stripped accent in formation.pt-BR of the same record."
+  },
+  {
+   "id": "gram:n3-te-hajimete#nuance_pt",
+   "verdict": "fix",
+   "current": "Não confunda com はじめて isolado ('pela primeira vez') nem com てから ('depois de', que so marca ordem temporal sem o tom de descoberta). Aqui ha sempre a ideia de que sem a primeira ação a percepção não teria ocorrido. Armadilha PT: o brasileiro tende a traduzir literal por 'fazendo pela primeira vez', mas o sentido real e 'so apos'.",
+   "fix": "Não confunda com はじめて isolado ('pela primeira vez') nem com てから ('depois de', que só marca ordem temporal sem o tom de descoberta). Aqui há sempre a ideia de que sem a primeira ação a percepção não teria ocorrido. Armadilha PT: o brasileiro tende a traduzir literal por 'fazendo pela primeira vez', mas o sentido real é 'só após'.",
+   "why": "Not in the queue but flagged in the finding's own notes: nuance.pt-BR of the same record has 'so', 'ha', 'e' and 'apos' with the accents stripped. Whole-field replacement for the same reason as expl_pt."
+  },
+  {
+   "id": "gram:n3-te-hoshii#expl_pt",
+   "verdict": "fix",
+   "current": "Expressa o desejo de que OUTRA pessoa realize uma ação, e não quem fala. Equivale a 'quero que você faca', 'gostaria que ele fizesse'. Diferente de たい, que descreve o que o próprio falante quer fazer, aqui o foco e a ação de terceiros.",
+   "fix": "Expressa o desejo de que OUTRA pessoa realize uma ação, e não quem fala. Equivale a 'quero que você faça', 'gostaria que ele fizesse'. Diferente de たい, que descreve o que o próprio falante quer fazer, aqui o foco é a ação de terceiros.",
+   "why": "Real: 'faca' é substantivo, o subjuntivo é 'faça'; e 'o foco e a ação' é fragmento sem verbo, precisa de 'é'. Substituição do campo inteiro para pegar as duas correções juntas."
+  },
+  {
+   "id": "gram:n3-te-hoshii#formation_pt",
+   "verdict": "fix",
+   "current": "Verbo na forma て + ほしい. A pessoa de quem se deseja a ação leva a partícula に. Ex.: 友達に手伝ってほしい (quero que meu amigo me ajude). Para o negativo: ...ないでほしい (quero que não faca).",
+   "fix": "Verbo na forma て + ほしい. A pessoa de quem se deseja a ação leva a partícula に. Ex.: 友達に手伝ってほしい (quero que meu amigo me ajude). Para o negativo: ...ないでほしい (quero que não faça).",
+   "why": "Not in the queue but flagged in the finding's own notes: same 'faca' for 'faça' in formation.pt-BR of the same record."
+  },
+  {
+   "id": "gram:n3-te-hoshii#nuance_pt",
+   "verdict": "fix",
+   "current": "ほしい sozinho com substantivo + が significa 'querer (uma coisa)'; com a forma て passa a 'querer que alguém faca'. E informal/direto; em situações formais prefira ていただきたい. Armadilha PT: o agente leva に, não を; dizer 友達を手伝ってほしい inverte o sentido.",
+   "fix": "ほしい sozinho com substantivo + が significa 'querer (uma coisa)'; com a forma て passa a 'querer que alguém faça'. É informal/direto; em situações formais prefira ていただきたい. Armadilha PT: o agente leva に, não を; dizer 友達を手伝ってほしい inverte o sentido.",
+   "why": "Not in the queue but flagged in the finding's own notes: nuance.pt-BR repeats 'faca' and opens a sentence with 'E informal/direto', where the copula 'É' is meant."
+  },
+  {
+   "id": "gram:n3-te-kureto#expl_pt",
+   "verdict": "fix",
+   "current": "Literalmente é 'disseram me faça tal coisa', e aparece tipicamente com 言う, 頼む ou 伝える. Serve para reportar que você foi solicitado ou mandado a fazer algo.",
+   "fix": "Literalmente é 'disseram: faça tal coisa para mim', e aparece tipicamente com 言う, 頼む ou 伝える. Serve para reportar que alguém pediu ou mandou você fazer algo.",
+   "why": "Real. Dois problemas de pt-BR. Sem a fronteira de citação, 'disseram me faça tal coisa' não parseia, e o 'para mim' devolve o sentido benefactivo do くれ, que é justamente o ponto da estrutura. E 'mandado a fazer' é agramatical: mandar rege infinitivo puro ('mandou você fazer')."
+  },
+  {
+   "id": "gram:n3-zu-ni#label_pt",
+   "verdict": "fix",
+   "current": "sem fazer (algo) / sem que (〜ずに)",
+   "fix": "sem fazer (algo) / sem (〜ずに)",
+   "why": "Real, minor. Em pt-BR 'sem que' abre oração subordinada com sujeito próprio e subjuntivo ('sem que ele soubesse'), enquanto 〜ずに sempre compartilha o sujeito do verbo principal e corresponde a 'sem + infinitivo'. O próprio explanation.pt-BR do registro só oferece 'sem (fazer)', e label.en só diz 'without'."
+  }
+ ]
+}

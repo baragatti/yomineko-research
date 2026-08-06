@@ -1,0 +1,165 @@
+{
+  "batch": 15,
+  "fixes": [
+    {
+      "slug": "les:n4-oracoes-relativas-07",
+      "field": "exercises[3].prompt",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The complaint was the missing cedilla in 'pecas'. The stored prompt already reads \"Monte 'Tem banheiro em cada andar.' com as pecas\" with the cedilla ('peças'); the typo was already repaired by the mechanical pass. Nothing left to change."
+    },
+    {
+      "slug": "les:n4-passiva-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp>られる</jp><text>. Por isso você o conjuga depois como qualquer verbo ru: passado </text><jp>〜られた</jp><text>, presente contínuo </text><jp>〜られている</jp>",
+      "fix": "<jp>れる</jp><text>. Por isso você o conjuga depois como qualquer verbo ru: passado </text><jp>〜れた</jp><text>, presente contínuo </text><jp>〜れている</jp>",
+      "why": "Real error. The tip generalises 'Todo verbo na passiva vira um ichidan terminado em られる', which contradicts the godan list three lines above (読まれる, 呼ばれる, 叱られる) and licenses the wrong forms 読まられた / 読まられている. Every passive does end in れる (読まれる, 褒められる, される, 来られる), so swapping られる/〜られた/〜られている for れる/〜れた/〜れている makes the generalisation true and keeps the closing example 褒められる→褒められた valid. Only the content of the three <jp> nodes changes; tag multiset is unchanged."
+    },
+    {
+      "slug": "les:n4-passiva-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the other n4-passiva-01 body finding in this batch (same られる over-generalisation in the tip note). It is repaired by the single edit emitted above; applying a second edit to the same span would fail or double-edit."
+    },
+    {
+      "slug": "les:n4-passiva-03",
+      "field": "description",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The complaint was the missing space in 'dia a dia(atrasar-se'. The stored description already reads 'substantivos do dia a dia (atrasar-se, continuar, promessa, cuidado)' and objectives[3] already reads 'vocabulário do dia a dia (遅れる, 続く, 約束, 世話)'. Both were already repaired."
+    },
+    {
+      "slug": "les:n4-passiva-04",
+      "field": "exercises[1].answer.text",
+      "verdict": "fix",
+      "current": "今日は宿題が____。",
+      "fix": "少なくない",
+      "why": "Real error. This is a cloze; answer.text must hold the missing piece, not a copy of the blanked prompt. answer.full already carries the complete sentence 今日は宿題が少なくない。, and the sibling cloze in the same batch stores only the fill. As stored, a learner typing 少なくない is graded against '今日は宿題が____。' and marked wrong. Leaf edit only: answer.full and the container are untouched."
+    },
+    {
+      "slug": "les:n4-passiva-04",
+      "field": "exercises[4].answer.text",
+      "verdict": "fix",
+      "current": "Hoje não está nem um pouco frio.",
+      "fix": "今日は少しも寒くない。",
+      "why": "Real error. This is a production item: answer.text must hold the Japanese model answer, but it holds the Portuguese prompt. The accept[] list already contains 今日は少しも寒くない, so the model answer is the 。-terminated form of it. Leaf edit only; accept[] and the container are untouched."
+    },
+    {
+      "slug": "les:n4-potencial-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text> NÃO é \"o queijo consegue fazer\" (potencial), e sim \"o queijo é feito\" (passiva). Como queijo é coisa, não pode ter capacidade de fazer nada, então o sentido só pode ser passivo. Já com pessoas costuma ser potencial:</text><jp reading=\"わたしはおよげる\">私は泳げる</jp><text>= \"eu consigo nadar\". Use o bom senso do contexto.</text>",
+      "fix": "<text> é passiva: \"o queijo é feito\", e não \"o queijo consegue fazer\". Aqui nem cabe dúvida, porque 作る é godan e a potencial dele é 作れる. A hesitação entre potencial e passiva só existe nos verbos ichidan e em 来る, que usam 〜られる para os dois sentidos:</text><jp reading=\"せんせいにみられる\">先生に見られる</jp><text>= \"ser visto pelo professor\" (passiva), enquanto 早く起きられる quer dizer \"consigo acordar cedo\" (potencial). Quem decide é o contexto.</text>",
+      "why": "Real error, and the worst kind: the note teaches a semantic rule ('queijo é coisa, não pode ter capacidade') where the actual reason is morphological. 作る is godan, so its potential is 作れる and 作られる can only be passive (or honorific); the lesson itself states the godan rule two sections earlier. The follow-up contrast was also broken: 私は泳げる is not a 〜られる form at all, so it could not illustrate the ambiguity. Replaced with the real criterion plus an ichidan minimal pair. Tag multiset unchanged (<text>x2 + <jp>x1); only the <jp> content and its reading attribute change, and no Portuguese was placed inside an attribute."
+    },
+    {
+      "slug": "les:n4-potencial-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text>(brilhar) são godan:</text><jp reading=\"おこなえる\">行える</jp><text>,</text><jp reading=\"しまえる\">仕舞える</jp><text>,</text><jp reading=\"ひかれる\">光れる</jp><text>.</text>",
+      "fix": "<text>(brilhar) são godan:</text><jp reading=\"おこなえる\">行える</jp><text>,</text><jp reading=\"しまえる\">仕舞える</jp><text>. Pela regra, 光る daria </text><jp reading=\"ひかれる\">光れる</jp><text>, mas 光る descreve um fenômeno (algo brilha por si), não uma capacidade, então essa potencial quase não aparece: ninguém diz 星が光れる.</text>",
+      "why": "Real error. The list is headed 'verbos do dia a dia já entram na forma potencial sem mistério', but 光る is a non-volitional verb (a phenomenon, not an ability), so 光れる is not everyday Japanese and invites errors like 星が光れる. The form is kept, with the caveat that explains why it is not used, instead of being presented as a normal potential. The <vocab ref=\"vocab:光る\"> chip and all three <jp> nodes are preserved, so the tag multiset (<text>x4 + <jp>x3) is identical."
+    },
+    {
+      "slug": "les:n4-potencial-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text>O </text><vocab ref=\"vocab:昔\"/><text> não aparece, mas note </text><jp>やっと</jp><text> (\"finalmente\") dando o tom de alívio antes de </text><jp>休むことができる</jp><text> (\"consigo descansar\").</text>",
+      "fix": "<text>Note o </text><jp>やっと</jp><text> (\"finalmente\"), que dá o tom de alívio antes de </text><jp>休むことができる</jp><text> (\"consigo descansar\"). O </text><vocab ref=\"vocab:昔\"/><text> (\"antigamente\") você encontra na lista de vocabulário desta lição.</text>",
+      "why": "Real error. sent:tatoeba-158699 is 私はやっと休むことができる, so 昔 really is absent, and the paragraph opens by telling the learner that a word they have not met yet does not appear: a leftover coverage note. The useful content (やっと and 休むことができる) is promoted to the front and the 昔 chip is kept as a forward pointer to the lesson's own vocabulary list, so the <vocab> reference is not orphaned. Tag multiset identical (<text>x4, <jp>x2, <vocab>x1); only the order and the text content change."
+    },
+    {
+      "slug": "les:n4-potencial-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the other n4-potencial-02 body finding in this batch (the same 'O 昔 não aparece' paragraph). Repaired by the single edit emitted above."
+    },
+    {
+      "slug": "les:n4-potencial-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The complaint was the mislabelled lead-in 'Quem fala pode ser qualquer pessoa'. The stored body already reads '<text>Quem percebe pode ser outra pessoa: </text>' before パパも聞こえる？ and 夫には見える. Already repaired."
+    },
+    {
+      "slug": "les:n4-revisao-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "(antes de </text><jp>と</jp><text>,</text><jp>から</jp><text>, orações relativas, condicionais e por aí vai)",
+      "fix": "(antes de </text><jp>と</jp><text>,</text><jp>つもり</jp><text>, orações relativas, condicionais e por aí vai)",
+      "why": "Real error. から freely takes the polite form (時間がありませんから, 寒いですから行きません), so listing it among the structures where the plain form is 'obrigatória' is factually wrong and would make learners reject correct polite sentences. から is replaced by つもり, which does require the plain form (行くつもりです, never 行きますつもり) and is N4 material, so the list stays true and the same length. Tag multiset unchanged; only the content of one <jp> node changes."
+    },
+    {
+      "slug": "les:n4-revisao-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the other n4-revisao-01 body finding in this batch (the same から claim). Repaired by the single edit emitted above."
+    },
+    {
+      "slug": "les:n4-revisao-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text>(\"já era pra ter chegado\").</text>",
+      "fix": "<text>(\"é pra chegar a qualquer momento\").</text>",
+      "why": "Real error. もう着くはずだ has the non-past 着く, so it means the arrival is expected imminently; 'já era pra ter chegado' is an unfulfilled past expectation and would need もう着いた/着いているはずだ. The gloss flips the tense in the very example that teaches はず. 'deve' is deliberately avoided because 〜でしょう is glossed as 'deve ser / provavelmente' in the same paragraph, and reusing it would blur the でしょう/はず contrast. Only the pt-BR text node changes; the <jp> tag, its content and its reading attribute are untouched."
+    },
+    {
+      "slug": "les:n4-revisao-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"よう\">〜よう</jp><text> e</text><text> (na fala,</text>",
+      "fix": "<jp reading=\"よう\">〜よう</jp><text> (na fala,</text><text> </text>",
+      "why": "Real error. The source reads '〜よう' + '<text> e</text>' + '<text> (na fala,</text>', so the sentence renders as '〜よう e (na fala, 〜みたい) é a conclusão...', with a conjunction stranded before the parenthesis (the singular 'é' shows no coordination was intended). The stray ' e' is dropped by moving the parenthetical into the first node and leaving the separating space in the second, which keeps the tag multiset identical (<jp>x1 + <text>x2) instead of deleting a node. Renders as '〜よう (na fala, 〜みたい) é a conclusão...'."
+    },
+    {
+      "slug": "les:n4-revisao-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "The complaint was the ungrammatical 'A diferença mora em coladinho na raiz'. The stored body already reads 'A diferença está em vir coladinho na raiz ou depois da forma inteira.' Already repaired."
+    },
+    {
+      "slug": "les:n4-revisao-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the other 'mora em coladinho na raiz' finding in this batch; the stored text already reads 'A diferença está em vir coladinho na raiz ou depois da forma inteira.'"
+    },
+    {
+      "slug": "les:n4-suposicao-02",
+      "field": "exercises[4].answer.text",
+      "verdict": "fix",
+      "current": "世界はいつ終わるのだろうか。",
+      "fix": "世界は終わるのだろうか。",
+      "why": "Real error. The prompt asks for 'Será que o mundo um dia vai acabar?' using exactly 世界, 終わる and のだろうか, but the model answer inserts いつ ('quando'), turning the yes/no musing into a wh-question ('Quando será que o mundo vai acabar?') with a word the prompt never supplies. Dropping いつ uses precisely the three given pieces and matches accept[3] ('世界は終わるのだろうか'), which is already stored, so the model answer and the accept list agree. Leaf edit only; the container and accept[] are untouched. Note for a human: accept[] still holds three いつ variants that would pass a wh-question answer; tightening them is a separate call."
+    },
+    {
+      "slug": "les:n4-suposicao-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<text>. Depois de</text><text weight=\"bold\"> substantivo e o sentido é \"parece que\"</text><text> (雨らしい = \"parece que vai chover\") é inferência. Depois de</text><text weight=\"bold\"> só um substantivo qualificando algo</text><text> (春らしい天気 = \"tempo de primavera\") é \"típico de\". O truque: se dá pra trocar por \"pelo jeito\", é inferência; se dá pra trocar por \"bem a cara de\", é típico.</text>",
+      "fix": "<text>. Depois de</text><text weight=\"bold\"> verbo ou adjetivo</text><text>, ele é sempre inferência (雨が降るらしい = \"parece que vai chover\"; 閉まったらしい = \"parece que fechou\"). Depois de</text><text weight=\"bold\"> substantivo colado em outro substantivo</text><text>, ele é \"típico de\" (春らしい天気 = \"um tempo bem de primavera\"). Com substantivo sozinho no fim da frase, como 雨らしい, vale o truque: se dá pra trocar por \"pelo jeito\", é inferência; se dá pra trocar por \"bem a cara de\", é típico.</text>",
+      "why": "Real error. Both branches of the pitfall said 'Depois de ... substantivo', so the note gave no way to tell the two らしい apart, and the first bolded clause ('substantivo e o sentido é \"parece que\"') is broken pt-BR and circular (it defines inference by the meaning it is supposed to help you find). Replaced by a criterion that is actually testable and true: after a verb or adjective らしい is always inference; a noun glued to a following noun is 'típico de'. The QA's proposed 'らしい no fim da frase = inferência' rule was NOT used because it is false (今日は春らしい ends a sentence with the 'típico de' sense); that residual case is handled by the existing 'pelo jeito / bem a cara de' trick, which is kept and now explicitly anchored to 雨らしい. Tag multiset identical (<text>x3 + <text weight=\"bold\">x2)."
+    },
+    {
+      "slug": "les:n4-suposicao-02",
+      "field": "exercises[4].explanation",
+      "verdict": "fix",
+      "current": "世界 (mundo) + は + いつ (quando) + 終わる (acabar, forma simples) + のだろうか (será que...?).",
+      "fix": "世界 (mundo) + は + 終わる (acabar, forma simples) + のだろうか (será que...?).",
+      "why": "Real error, and the same defect as the sibling finding: the explanation walks the learner through いつ (quando), a word that is neither in the prompt's pieces nor in the corrected model answer. Retargeted from exercises[4].answer to exercises[4].explanation because that is where this half of the complaint actually lives; leaving it would contradict the corrected answer.text. The rest of the explanation ('É uma reflexão em voz alta, não uma pergunta dirigida a outra pessoa.') is untouched."
+    }
+  ]
+}

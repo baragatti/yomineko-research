@@ -1,0 +1,165 @@
+{
+  "batch": 5,
+  "fixes": [
+    {
+      "slug": "les:n3-enfase-02",
+      "field": "body",
+      "verdict": "needs-human",
+      "current": "",
+      "fix": "",
+      "why": "Complaint is real: the model sentence mixes non-past 降る with past 強くなった while its pt-BR gloss is past (\"nao so choveu\"). But the same frame is the answer key of ex:n3-enfase-02-3 (prompt 雨が降る＿＿＿＿、風も強くなった, answer.full 雨が降るばかりか、風も強くなった) and that exercise's explanation explicitly teaches that ばかりか attaches to the short form 降る. Editing the body alone would make the lesson contradict its own exercise, and those exercise fields are not in this batch, so body and exercise have to be retimed together by a human."
+    },
+    {
+      "slug": "les:n3-enfase-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the ばかりか tense finding recorded for this same field; nothing separate to change here."
+    },
+    {
+      "slug": "les:n3-enfase-02",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already applied. The lead-in no longer calls the whole list gairaigo; the stored body reads \"Observe o kana destas palavras. Nos estrangeirismos (コーチ, ゴール, コード), mesmo parecendo o portugues ou o ingles, a pronuncia tem moras completas.\" Nothing left to fix."
+    },
+    {
+      "slug": "les:n3-enfase-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp>コード</jp><text>) = \"código, programa\".</text>",
+      "fix": "<jp>コード</jp><text>) = \"código (de programação, cifra); cabo, fio\".</text>",
+      "why": "Real defect: コード does not mean programa (that is プログラム); corpus vocab:1049010 gives cabo/fio, codigo, acorde. Anchor re-cut byte-exact from the stored list item (the finding quoted a <vocab .../> form that is not in the file). Tag multiset unchanged."
+    },
+    {
+      "slug": "les:n3-enfase-03",
+      "field": "exercises[4].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already applied: the stored explanation now ends \"...com 異なる (ことなる, diferir): o kana muda em uma so silaba (わ/な), mas o sentido e totalmente outro.\" The false \"kana e sentido sao bem diferentes\" claim is gone."
+    },
+    {
+      "slug": "les:n3-enfase-03",
+      "field": "body",
+      "verdict": "fix",
+      "current": "O </text><jp>決して</jp><text> abre a frase e exige um verbo no negativo depois.",
+      "fix": "O </text><jp>決して</jp><text> vem antes do predicado negado (no começo da frase ou logo depois do tema) e exige um verbo no negativo.",
+      "why": "Real defect: the rule \"abre a frase\" is contradicted by the lesson's own next example このことは決して言わない, where 決して follows the topic. Anchor re-cut with the <jp> chip that splits the sentence; tag multiset unchanged. For the human pass: ex:n3-enfase-03-6's explanation repeats the same claim and sits outside this field."
+    },
+    {
+      "slug": "les:n3-enfase-06",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<vocab ref=\"vocab:値\"/><text> (あたい) - preço, valor.</text>",
+      "fix": "<vocab ref=\"vocab:値\"/><text> (ね / あたい) - preço (ね, como em 値が高い); valor, mérito (あたい).</text>",
+      "why": "Real defect: the vocab line teaches 値 only as あたい, but the example two lines below is <jp reading=\"このぬのはねがたかい\">この布は値が高い</jp>, i.e. ね, and 根 (ね) sits in the same list, so the learner gets a reading that does not match the example. Fix keeps the <vocab/> + <text> pair intact; the original finding's plain-text replacement is what broke tag balance."
+    },
+    {
+      "slug": "les:n3-enfase-06",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 値 あたい/ね fix recorded for this same field; nothing separate to change here."
+    },
+    {
+      "slug": "les:n3-enfase-07",
+      "field": "description",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already applied: the stored description reads \"...e o adverbio de intensidade 益々 e o adjetivo な 真っ赤.\" 真っ赤 is no longer called an adverb, and objectives[1] was corrected in the same pass."
+    },
+    {
+      "slug": "les:n3-enfase-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<heading level=\"3\"><text>Advérbios de intensidade total</text></heading>",
+      "fix": "<heading level=\"3\"><text>Palavras de intensidade total</text></heading>",
+      "why": "Real defect: the heading labels the whole group adverbs, but the list under it holds 真っ赤 (na-adjective, as the lesson's own ex-3 explanation states) and 万一. description and objectives[1] were already relabelled, so the body was left contradicting its own metadata. Single-anchor heading fix; the checklist line \"Uso adverbios de intensidade total como 全く, 益々, 真っ赤 e 丸で no sentido certo.\" still carries the wrong label and needs a second pass."
+    },
+    {
+      "slug": "les:n3-estado-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Cuidado: dobre o </text><jp>っ</jp><text> ao ouvir, mas aqui não há </text><jp>っ</jp><text>; são duas moras ka-ka-ru.",
+      "fix": "Cuidado: aqui não aparece o </text><jp>っ</jp><text> que dobra a consoante; sem </text><jp>っ</jp><text>, são três moras iguais: ka-ka-ru.",
+      "why": "Real defect: かかる is ka-ka-ru, three moras, and the sentence claims \"duas moras\" right after spelling three out; the opening \"dobre o っ\" is also incoherent because 掛かる has no っ. Anchor re-cut across the two <jp>っ</jp> chips that split the sentence, and both chips are kept, so the tag multiset is unchanged."
+    },
+    {
+      "slug": "les:n3-estado-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the かかる mora fix recorded for this same field; nothing separate to change here."
+    },
+    {
+      "slug": "les:n3-estado-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Aparece em </text><jp reading=\"しつもん\">質問</jp><text>... não, cuidado, esse é outro; aqui é </text><jp reading=\"ぎもん\">疑問</jp><text> (\"questão, dúvida\").",
+      "fix": "Aparece em </text><jp reading=\"ぎもん\">疑問</jp><text> (\"questão, dúvida\"). Não confunda com </text><jp reading=\"しつもん\">質問</jp><text> (\"pergunta\"), que usa outro kanji.",
+      "why": "Real defect: a mid-sentence self-correction artifact survived into learner-facing prose, and 質問 does not contain 疑, so it has no place as an example of that kanji. Rewritten as a deliberate contrast so both <jp> chips stay; the two <jp>/</jp> pairs and the surrounding <text> boundaries are preserved (order swapped, multiset identical)."
+    },
+    {
+      "slug": "les:n3-estado-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate of the 質問/疑問 fix recorded for this same field; nothing separate to change here."
+    },
+    {
+      "slug": "les:n3-estado-01",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already applied: the stored heading is <heading level=\"3\"><text>Vocabulário do dia (em kana)</text></heading>, with the space before the parenthesis."
+    },
+    {
+      "slug": "les:n3-estado-01",
+      "field": "exercises[1].prompt",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already applied: the stored prompt is \"Complete: 机の上に読みかけ＿＿本がある (tem um livro comecado em cima da mesa). Qual particula liga 読みかけ ao 本?\" The blank now sits between 読みかけ and 本, so the marked answer の fits."
+    },
+    {
+      "slug": "les:n3-estado-01",
+      "field": "exercises[0].explanation",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already applied: the stored explanation ends \"Para 'alguem esta abrindo a janela agora' usa-se o transitivo: 窓を開けている.\" The vague closing sentence is gone."
+    },
+    {
+      "slug": "les:n3-estado-02",
+      "field": "body",
+      "verdict": "fix",
+      "current": "É a forma negativa de </text><jp reading=\"きる\">～切る</jp><text> (\"fazer até o fim\"), então o que se nega é o \"concluir por completo\", não a ação em si.",
+      "fix": "É a negativa do potencial de </text><jp reading=\"きる\">～切る</jp><text> (\"fazer até o fim\"), então o que se nega é o \"conseguir concluir por completo\", não a ação em si.",
+      "why": "Real defect: 食べ切れない is the negative of the potential 切れる, not the plain negative of 切る (that would be 切らない, \"chooses not to finish\"). As written the note invites 食べ切らない and clashes with the lesson's own gloss \"nao dou conta\". Anchor re-cut with the <jp reading=\"きる\"> chip; tag multiset unchanged. The same wording recurs in ex:n3-estado-02-2's explanation, which is outside this field."
+    },
+    {
+      "slug": "les:n3-estado-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already applied: the stored heading is <heading level=\"3\"><text>Vocabulário do dia (em kana)</text></heading>. This finding was skipped only because its fix proposed replacing the whole tagged heading with bare text."
+    },
+    {
+      "slug": "les:n3-estado-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"ことしはせいせきがおおきくせいちょうした\">今年は成績が大きく成長した</jp><text> (Este ano meu desempenho cresceu bastante.)</text>",
+      "fix": "<jp reading=\"ことしはせいせきがおおきくのびた\">今年は成績が大きく伸びた</jp><text> (Este ano meu desempenho melhorou bastante.)</text>",
+      "why": "Real defect: 成績 does not take 成長する (the collocation is 成績が伸びる / 上がる), and the lesson's own vocab line glosses 成長 as growth of a person or an economy, so the example contradicts the list it illustrates. reading= is updated together with the text; element multiset (<jp>, </jp>, <text>, </text>) unchanged. The other four n3-estado-05 body findings (試験に成功した and the ～ずに/～たて claim) fall outside this batch's slots."
+    }
+  ]
+}

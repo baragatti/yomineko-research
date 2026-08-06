@@ -1,0 +1,189 @@
+{
+  "batch": 6,
+  "fixes": [
+    {
+      "slug": "les:n3-estado-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"どりょくのおかげでしけんにせいこうした\">努力のおかげで試験に成功した</jp><text> (Graças ao esforço, tive sucesso na prova.)</text>",
+      "fix": "<jp reading=\"どりょくのおかげでじっけんにせいこうした\">努力のおかげで実験に成功した</jp><text> (Graças ao esforço, o experimento deu certo.)</text>",
+      "why": "Complaint is real: 成功する pairs with undertakings (実験/手術/事業), not with 試験 (for exams Japanese uses 試験に合格する). Kept 成功 because it is the vocab item this paragraph illustrates, swapped the partner noun to 実験 and updated both the reading attribute (しけん to じっけん) and the pt-BR gloss so JP and pt agree. Tag multiset unchanged."
+    },
+    {
+      "slug": "les:n3-estado-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"ことしはせいせきがおおきくせいちょうした\">今年は成績が大きく成長した</jp><text> (Este ano meu desempenho cresceu bastante.)</text>",
+      "fix": "<jp reading=\"むすこはことしおおきくせいちょうした\">息子は今年大きく成長した</jp><text> (Meu filho cresceu bastante este ano.)</text>",
+      "why": "Complaint is real: 成績 takes 伸びる/上がる, never 成長する. Changed the subject instead of the verb because 成長 is the vocab item being taught and its own gloss in the list says 'de uma pessoa, economia', so a person as subject reinforces the constraint. 成績 is still glossed in the list and drilled in exercise 3. Tag multiset unchanged."
+    },
+    {
+      "slug": "les:n3-estado-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "Sem gramática nova; nos exemplos reaparecem padrões como </text><emphasis>～ずに</emphasis><text> e </text><emphasis>～たて</emphasis><text>.",
+      "fix": "Sem gramática nova: o foco é o vocabulário, com destaque para os pares </text><emphasis>成人 / 青年</emphasis><text> e </text><emphasis>生物 / 製品</emphasis><text>.",
+      "why": "Complaint is real: none of the six body examples uses ～ずに or ～たて. Rewrote the clause so it states something the lesson actually delivers (the two contrast pairs named in objectives[1] and drilled in the tip note and exercise 2). Kept the two <emphasis> pairs so the open/close tag multiset is identical."
+    },
+    {
+      "slug": "les:n3-estado-05",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate finding: the same two collocation defects (試験に成功した and 成績が成長した) are already covered by the two entries above in this batch. Applying a second edit to the same anchors would fail or double-edit."
+    },
+    {
+      "slug": "les:n3-estado-06",
+      "field": "description",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already fixed in the stored file: the description now reads 'palavras de identidade e insistência como 同様 (substantivo/adjetivo-な) e どうしても (advérbio)'. The false 'advérbios' POS label the finding objected to is gone."
+    },
+    {
+      "slug": "les:n3-estado-07",
+      "field": "exercises[3].answer.accept[2]",
+      "verdict": "fix",
+      "current": "風邪を防ぎます",
+      "fix": "かぜを防ごう",
+      "why": "Complaint is real: the prompt asks for 'Vamos prevenir o resfriado' and the explanation says ましょう is what produces the hortative, yet the accept list admits 風邪を防ぎます, a plain polite statement. Replaced that one leaf string with the kana variant of the volitional so the list stays three items and the container object is untouched."
+    },
+    {
+      "slug": "les:n3-estado-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<heading level=\"3\"><text>Ciência, matéria e física</text></heading><p><text>Este grupo aparece muito em textos mais sérios.</text></p>",
+      "fix": "<heading level=\"3\"><text>Ciência, matéria e objetos</text></heading><p><text>Os dois primeiros vêm de textos mais sérios; os três seguintes são palavras concretas do dia a dia.</text></p>",
+      "why": "Complaint is real: the group headed 'Ciência, matéria e física' lists 舞台 (palco), 縁 (borda) and 筆 (pincel), which are not science or matter, and the lead sentence claims the whole group belongs to serious texts. Renamed the heading and rewrote the lead so both match the actual five items. Tag multiset unchanged."
+    },
+    {
+      "slug": "les:n3-estado-07",
+      "field": "objectives[1]",
+      "verdict": "fix",
+      "current": "Empregar termos de ciência e matéria como 物質 e 物理 (fix the parallel <check> in the body checklist too)",
+      "fix": "Empregar termos de ciência e matéria como 物質 e 物理",
+      "why": "The 不正 miscategorization was already corrected, but the mechanical applier wrote the reviewer's English instruction into the learner-facing objective. Removed the leaked parenthetical, leaving only the pt-BR value. Fixes the leaf string, not the objectives list."
+    },
+    {
+      "slug": "les:n3-estado-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<heading level=\"2\"><text>Estados, materiais e ações: o batch fu continua</text></heading>",
+      "fix": "<heading level=\"2\"><text>Estados, materiais e ações: o grupo fu continua</text></heading>",
+      "why": "The title field is already correct ('o grupo fu continua'), which is why the title anchor could not be found; the duplicated <heading level=\"2\"> in the body still leaks the English word 'batch'. Retargeted the same finding at the body heading and matched the wording already used in the title."
+    },
+    {
+      "slug": "les:n3-estado-07",
+      "field": "exercises[3].answer",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate finding: the same accept-list defect is already handled by the exercises[3].answer.accept[2] entry above in this batch."
+    },
+    {
+      "slug": "les:n3-estado-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"ふとそらをみあげたら、ふたつのにじがあった\">不図空を見上げたら、二つの虹があった</jp>",
+      "fix": "<jp reading=\"ふとそらをみあげたら、ふたつのにじがあった\">ふと空を見上げたら、二つの虹があった</jp>",
+      "why": "Complaint is real: 不図 is rare ateji and modern Japanese writes this adverb in kana, so the running example models orthography a learner should not copy. Only the enclosed text changes; the reading attribute was already the full correct string and the <vocab ref=\"vocab:不図\"/> headword in the list is left untouched."
+    },
+    {
+      "slug": "les:n3-estado-08",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Both defects are already fixed in the stored file: the furigana reads 'ケーキをみっつにわけた' (katakana kept, no けえき) and the intro says 'quase todas com 論'. Nothing left to change."
+    },
+    {
+      "slug": "les:n3-estrutura-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<item><vocab ref=\"vocab:署名\"/><text> (</text><jp>しょめい</jp><text>) = \"assinatura, autógrafo\".</text></item>",
+      "fix": "<item><vocab ref=\"vocab:署名\"/><text> (</text><jp>しょめい</jp><text>) = \"assinatura (em documento, contrato, abaixo-assinado)\". Autógrafo de artista é サイン.</text></item>",
+      "why": "Complaint is real: 署名 is a formal signature; a celebrity autograph is サイン. Narrowed the gloss and added the contrast so the learner does not carry the wrong sense into production. Prose stays inside the existing <text> element and the tag multiset is unchanged."
+    },
+    {
+      "slug": "les:n3-estrutura-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"じょゆうのしょめい\">女優の署名</jp><text> = \"o autógrafo da atriz\"; </text>",
+      "fix": "<jp reading=\"じょゆうのしょめい\">女優の署名</jp><text> = \"a assinatura da atriz\"; </text>",
+      "why": "Same 署名 sense error in the worked example. Only the pt-BR gloss changes; the Japanese, the reading attribute and the tag multiset stay identical."
+    },
+    {
+      "slug": "les:n3-estrutura-01",
+      "field": "exercises[2].prompt",
+      "verdict": "fix",
+      "current": "prompt: \"Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名\"; explanation: replace '署名 (autógrafo, o possuído)' with '署名 (assinatura, o possuído)'.",
+      "fix": "Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名",
+      "why": "The mechanical applier stored the reviewer's instruction verbatim, so the learner-facing prompt now contains the words 'prompt:', 'explanation:' and 'replace ... with ...' in English. Restored the intended pt-BR prompt value only."
+    },
+    {
+      "slug": "les:n3-estrutura-01",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp>しょく</jp><text> termina em \"ku\" com 'u' central, não em \"ki\". Em português a gente diz \"gatu\", \"leiti\" sem perceber; no japonês cada vogal mantém seu som até o fim.</text>",
+      "fix": "<jp>しょく</jp><text> termina em \"ku\", com o 'u' curto e quase mudo. Em português a gente troca a vogal final sem perceber, dizendo \"gatu\" e \"leiti\"; no japonês cada mora mantém o som que está escrito.</text>",
+      "why": "Complaint is real: there is no Brazilian tendency to turn く into 'ki', so the contrast taught nothing. Replaced it with the accurate fact (the final u of しょく is short and devoiced) and reframed the gatu/leiti analogy as what it actually illustrates (changing the final vowel without noticing). Tag multiset unchanged; no em dash introduced."
+    },
+    {
+      "slug": "les:n3-estrutura-03",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Already fixed in the stored file: the passive example now reads <jp reading=\"しょくひんがしんごうのちかくでぬすまれた\">食品が信号の近くで盗まれた</jp>, matching the 盗む rule the lesson teaches. No 盗られた remains."
+    },
+    {
+      "slug": "les:n3-estrutura-04",
+      "field": "body",
+      "verdict": "fix",
+      "current": "mas com leituras e sentidos diferentes em cada palavra",
+      "fix": "sempre com a leitura ちゅう, mas com sentidos diferentes em cada palavra",
+      "why": "Complaint is real: 中 is ちゅう in all three compounds (ちゅうがく, ちゅうし, ちゅうこ), so only the senses differ. Anchor sits inside a <text> element and touches no markup, so the tag multiset is unchanged and the following sentence still reads correctly."
+    },
+    {
+      "slug": "les:n3-estrutura-04",
+      "field": "body",
+      "verdict": "no-change",
+      "current": "",
+      "fix": "",
+      "why": "Duplicate finding: the same false 'leituras diferentes' claim about 中 is already handled by the entry above in this batch."
+    },
+    {
+      "slug": "les:n3-estrutura-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<jp reading=\"こどものうのうりょくはあそびのなかではったつする\">子供の脳の能力は遊びの中で発達する</jp>",
+      "fix": "<jp reading=\"こどもののうののうりょくはあそびのなかではったつする\">子供の脳の能力は遊びの中で発達する</jp>",
+      "why": "Complaint is real: 子供の脳の能力 reads こども の のう の のうりょく, and the stored attribute collapses both の particles. Anchored on the whole <jp> element so the attribute is rewritten without disturbing the quote characters or the tag multiset (that is what broke the mechanical attempt)."
+    },
+    {
+      "slug": "les:n3-estado-07",
+      "field": "body",
+      "verdict": "fix",
+      "current": "<check><text>Emprego termos de ciência e matéria como 物質, 物理 e 不正.</text></check>",
+      "fix": "<check><text>Emprego termos de ciência e matéria como 物質 e 物理.</text></check>",
+      "why": "Second half of the objectives[1] finding, which explicitly asks for the parallel <check> in the body checklist. 不正 (injustiça, fraude) is listed by the lesson itself under 'Quantidade, falta e parte', not under science and matter, and the objective no longer names it, so the checklist contradicted it. Tag multiset unchanged."
+    },
+    {
+      "slug": "les:n3-estrutura-01",
+      "field": "exercises[2].explanation",
+      "verdict": "fix",
+      "current": "の liga 女優 (atriz, a possuidora) ao 署名 (autógrafo, o possuído). A ordem é possuidor の possuído, então a atriz vem antes.",
+      "fix": "の liga 女優 (atriz, a possuidora) ao 署名 (assinatura, o possuído). A ordem é possuidor の possuído, então a atriz vem antes.",
+      "why": "Second half of the exercises[2] finding, which explicitly names the explanation as well. Same 署名 sense error; only the gloss word changes."
+    },
+    {
+      "slug": "les:n3-estrutura-05",
+      "field": "body",
+      "verdict": "fix",
+      "current": "do mesmo kanji Preste atenção no sentido, não só no som.",
+      "fix": "do mesmo kanji, um transitivo e o outro intransitivo. Preste atenção no sentido, não só no som.",
+      "why": "Damage left by the earlier mechanical pass on this same sentence: the replacement ended at 'do mesmo kanji' and was concatenated straight onto the surviving 'Preste atenção...', producing a run-on with no punctuation and an unfinished clause. Restored the missing clause in pt-BR (離す transitive, 離れる intransitive), which also keeps the section heading 'dois pares traiçoeiros' true. Plain text only, no markup touched."
+    }
+  ]
+}

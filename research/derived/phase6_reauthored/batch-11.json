@@ -1,0 +1,165 @@
+{
+ "batch": 11,
+ "fixes": [
+  {
+   "slug": "les:n4-aspecto-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Sem nenhum verbo de tempo",
+   "fix": "Sem nenhum advérbio de tempo",
+   "why": "Real defect. \"verbo de tempo\" is not a Portuguese grammatical category, and the sentence it comments on (仕上がったばかり) does contain a verb; what it lacks is a time adverb (さっき/今). The reviewer anchor spanned an intervening <jp>ばかり</jp>, which is why it never matched. Plain-text anchor, no markup touched."
+  },
+  {
+   "slug": "les:n4-causativa-01",
+   "field": "body",
+   "verdict": "fix",
+   "current": "<text>Regra prática: quando a pessoa obrigada/autorizada é marcada por </text><jp>に</jp><text>, costuma ser obrigação (\"mandar fulano fazer\"). Quando é marcada por </text><jp>を</jp><text>, com verbo intransitivo, costuma ser permissão ou \"causar que aconteça\". Não decore como lei; sinta pelo contexto.</text>",
+   "fix": "<text>Regra prática: com verbo intransitivo, marcar a pessoa causada com </text><jp>を</jp><text> costuma indicar obrigação (\"fez fulano ir\"), e marcá-la com </text><jp>に</jp><text> costuma indicar permissão (\"deixou fulano ir\"). Com verbo transitivo o objeto já leva を, então a pessoa causada só pode vir com に e a partícula não separa os dois sentidos: aí quem decide é o contexto. Não decore como lei; sinta pelo contexto.</text>",
+   "why": "Real defect. The tip inverts the standard analysis (DBJG / Shibatani): with intransitives the を-causative leans coercive and the に-causative permissive; with transitives the causee can only be に (double-を constraint), so に signals nothing by itself. Anchor failed originally because the reviewer quoted across the <jp>に</jp> / <jp>を</jp> chips. Tag multiset kept identical (3 text, 2 jp); it also now agrees with the already-applied fixes in exercises 3 and 4 of this same lesson."
+  },
+  {
+   "slug": "les:n4-causativa-01",
+   "field": "exercises[1].explanation",
+   "verdict": "fix",
+   "current": " No grupo 1 troca-se",
+   "fix": "No grupo 1 troca-se",
+   "why": "Real defect: the stored explanation starts with a stray leading space. The reviewer wrapped the quote in literal single quotes, so the anchor never matched. Minimal anchor removes only the leading space."
+  },
+  {
+   "slug": "les:n4-causativa-01",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the finding handled at row 201 (the same inverted に/を tip, reported twice by two reviewers). Applying a second edit to the same span would either no-op or corrupt the already-corrected text."
+  },
+  {
+   "slug": "les:n4-causativa-01",
+   "field": "exercises[2].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source. The stored explanation now reads \"Como 食べる já tem seu objeto com を (野菜), a pessoa obrigada só pode vir com に; quem indica a obrigação aqui é o contexto, não a partícula.\" The duplicate finding failed only because its anchor described the pre-fix text."
+  },
+  {
+   "slug": "les:n4-causativa-01",
+   "field": "exercises[3].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source. The stored explanation now reads \"Aqui é o 自由に (livremente) que empurra o sentido para 'deixar/permitir'; a partícula を sozinha não garante a leitura de permissão.\" The duplicate finding's anchor described the pre-fix text."
+  },
+  {
+   "slug": "les:n4-causativa-03",
+   "field": "body",
+   "verdict": "fix",
+   "current": "no lugar de 〜させられる. Ex.:",
+   "fix": "no lugar de 〜せられる. Ex.:",
+   "why": "Real defect, first of the two wrong labels inside the group-1 <note type=\"tip\">. For godan verbs the long causative-passive is 〜せられる (飲ませられる), which contracts to 飲まされる; 〜させられる belongs to group 2 and would generate the ungrammatical 飲まさせられる. The reviewer supplied an instruction instead of a value; this is the value. Plain text, no markup touched."
+  },
+  {
+   "slug": "les:n4-causativa-03",
+   "field": "body",
+   "verdict": "fix",
+   "current": "produzir a forma longa 〜させられる já basta.",
+   "fix": "produzir a forma longa 〜せられる já basta.",
+   "why": "Second occurrence of the same wrong label in the same group-1 tip. Leaving it would keep telling the learner to produce 飲まさせられる and would still contradict exercise 5 (待たせられる) and the body line \"O resultado é 〜せられる ou 〜させられる\"."
+  },
+  {
+   "slug": "les:n4-condicionais-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "= \"eu devia ter trazido um casaco\"",
+   "fix": "= \"eu devia ter vindo de casaco\"",
+   "why": "Real defect. 着てくればよかった is \"devia ter vindo de casaco\" (\"devia ter trazido\" would be 持ってくればよかった). The line contradicts its own literal gloss (\"se eu tivesse vindo vestindo\") one clause earlier and exercise 2 of the same lesson, which already says \"eu devia ter vindo de casaco\". Anchor failed because the reviewer quote spanned <jp>よかった</jp>."
+  },
+  {
+   "slug": "les:n4-condicionais-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Ele está em </text><vocab ref=\"vocab:社長\"/><text> de modo indireto pela ideia de \"chefe\", e aparece em palavras como 主人 (\"dono, marido\").</text>",
+   "fix": "Ele aparece em palavras como 主人 (\"dono, marido\") e 主に (\"principalmente\"). Cuidado: </text><vocab ref=\"vocab:社長\"/><text> traz a mesma ideia de \"chefe\", mas se escreve com 社 + 長, sem o 主.</text>",
+   "why": "Real defect. In a kanji-composition paragraph \"Ele está em 社長\" is a containment claim, and 社長 is 社 + 長 with no 主 in it; the hedge \"de modo indireto\" does not neutralise it. Anchor failed because the reviewer quote spans the <vocab> chip. Rewrite keeps the same tag multiset (</text>, <vocab/>, <text>, </text>) and keeps the 社長 chip, now correctly framed as a contrast instead of a decomposition."
+  },
+  {
+   "slug": "les:n4-condicionais-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "vem um verbo ou adjetivo, basta deixá-lo na forma simples, sem </text><jp>の</jp><text>. Veja um aviso real:</text>",
+   "fix": "vem um verbo ou um adjetivo-い, basta deixá-lo na forma simples, sem </text><jp>の</jp><text> (行く場合は, 高い場合は). Já o adjetivo-な entra com な: 必要な場合は (\"caso seja necessário\"). Veja um aviso real:</text>",
+   "why": "Real defect. As written the rule yields the ungrammatical 必要だ場合は, since the course defines the plain form of a な-adjective as 必要だ. The project's own gram:baai-wa formation field says \"Adjetivo-い + 場合は (高い場合は). Adjetivo-な + な + 場合は (必要な場合は)\", so this aligns the lesson with the corpus. Anchor failed because the quote spans <jp>の</jp>; tag multiset unchanged."
+  },
+  {
+   "slug": "les:n4-condicionais-06",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the finding handled at row 209 (the same 主 / 社長 composition claim, reported twice). One edit to that span is enough."
+  },
+  {
+   "slug": "les:n4-condicionais-08",
+   "field": "body",
+   "verdict": "fix",
+   "current": ", parecido com nosso \"-al/-ico\": </text><jp reading=\"もくてき\">目的</jp><text> = \"objetivo/finalidade\"). Para gravar a forma:",
+   "fix": ", parecido com nosso \"-al/-ico\": </text><jp reading=\"しゃかいてき\">社会的</jp><text> = \"social\"). Já em 目的 (\"objetivo, finalidade\") o 的 guarda o sentido de \"alvo\". Para gravar a forma:",
+   "why": "Real defect. The colon makes 目的 the illustration of the adjectival suffix 〜的, but 目的 is a noun in which 的 keeps its \"alvo\" sense, and the gloss \"objetivo/finalidade\" does not match the claimed \"-al/-ico\". 社会的 (\"social\") is a genuine 〜的 adjective and uses only kanji the course already teaches (社, 会); 目的 is kept, now correctly labelled. Anchor failed because the quote spans the <jp reading> chip; tag multiset unchanged."
+  },
+  {
+   "slug": "les:n4-condicionais-08",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Duplicate of the finding handled at row 212 (same 目的 / 〜的 example, reported twice; this copy is the one whose fix field held an instruction). One edit to that span is enough."
+  },
+  {
+   "slug": "les:n4-condicionais-08",
+   "field": "exercises[2].prompt",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source: the prompt now reads \"Uma placa diz 18歳以上. Quem tem exatamente 18 anos pode entrar?\", which is grammatical pt-BR and answers cleanly with the Sim/Não choices. The duplicate finding's anchor described the pre-fix text."
+  },
+  {
+   "slug": "les:n4-conectores-02",
+   "field": "body",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source: the list is now introduced as \"Comece por estas palavras do dia a dia:\", so the false \"substantivos\" word-class claim (嬉しい is adj-i, ソフト adj-na/adj-no) is gone. The duplicate finding's anchor described the pre-fix text."
+  },
+  {
+   "slug": "les:n4-conectores-03",
+   "field": "exercises[3].explanation",
+   "verdict": "no-change",
+   "current": "",
+   "fix": "",
+   "why": "Already fixed in the source: the explanation now reads \"... Numa versão como りんごやバナナなど, など caberia (soa mais arrumado), mas repetir など depois de cada item não funciona; とか é o que se ouve entre amigos.\", so it no longer endorses the など…など distractor. This copy of the finding quoted the original with an elision \"(...)\", which is why it never matched."
+  },
+  {
+   "slug": "les:n4-conectores-04",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Cada item ganha seu próprio </text><jp>し</jp><text>, e a sensação é \"tem isto, tem aquilo, tudo se somando\".",
+   "fix": "Cada razão empilhada leva seu próprio </text><jp>し</jp><text>, e o último item pode aparecer sem ele, como nos dois exemplos abaixo. A sensação é \"tem isto, tem aquilo, tudo se somando\".",
+   "why": "Real defect. The rule says every listed item takes its own し, but both examples right below (時間もないしお金もない and 広いし…明るい) leave the final item without it. Hedged wording (\"o último item pode aparecer sem ele\") states what the examples actually show without overclaiming that the last item never takes し. Anchor failed because the quote spans <jp>し</jp>; tag multiset unchanged."
+  },
+  {
+   "slug": "les:n4-conectores-06",
+   "field": "body",
+   "verdict": "fix",
+   "current": "Vem depois de um verbo na forma-た ou da forma comum:",
+   "fix": "Vem depois de um verbo na forma-た (電気をつけたまま) ou na forma negativa 〜ない (何も言わないまま), nunca na forma de dicionário. Também gruda em adjetivo-い (高いまま), em adjetivo-な + な (静かなまま), em substantivo + の (昔のまま) e no demonstrativo その (そのまま):",
+   "why": "Real defect. This lesson uses \"forma comum\" for 普通形 (行った/高い in its のに note), so \"forma-た ou da forma comum\" licenses the ungrammatical 電気をつけるまま. まま takes Vた or Vない, plus adjective/noun/demonstrative attachments, which the new wording spells out and which match the lesson's own examples (そのまま, 電気をつけたまま, 立ったまま). The reviewer supplied an instruction instead of a value; this is the value. Plain text inside one <text> element, no markup touched."
+  },
+  {
+   "slug": "les:n4-conectores-06",
+   "field": "exercises[1].prompt",
+   "verdict": "fix",
+   "current": "Align the frame with the featured sentence instead of adding a topic: \"Complete com a concessão 'mesmo que' a partir de 高い (caro): ＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)\"",
+   "fix": "＿この服を買います。",
+   "why": "CORRUPTION, must be repaired: the mechanical applier wrote an English reviewer instruction (\"Align the frame with the featured sentence instead of adding a topic: ...\") into this learner-facing pt-BR prompt, replacing the cloze frame. Restoring the frame to ＿この服を買います。 also fixes the original complaint (the old frame この服は＿この服を買います。 repeated この服 and did not match answer.full 高くてもこの服を買います / sent:gen-fd723f8599f2). Result: \"Complete com a concessão 'mesmo que' a partir de 高い (caro): ＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)\""
+  }
+ ]
+}
