@@ -7,6 +7,49 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (u) — THE PATH NOW HAS A PRODUCTION SIDE, and all 8 `learning_science.md` §7.1
+> contradictions are closed. One of them was closed by proving the ruleset itself wrong.**
+>
+> - **`scripts/export/build_speaking_practice.py`** (R44/R45/R77/R79/R80/R81). `production` was emitted
+>   in **0 of 66 units** — every component was input or language-focused, so a speaking course shipped
+>   nothing that made the learner speak. Per unit now: **195 production items** (pt-BR → Japanese, drawn
+>   only from PRIOR units so production is never an item's first retrieval, each with `answer_key` +
+>   `accepted_variants` so it grades without ASR), **387 fluency items** across 65 units (Nation's four
+>   conditions machine-checked), **230 drills**, and an R77 strand histogram.
+>   - **Pipeline order matters:** `build_speaking_path.py` → `build_speaking_checkpoints.py` →
+>     `build_speaking_practice.py`. The practice builder used to consume its own output (re-running
+>     reported 0 demotions); it now restores `patterns + patterns_chunked` first. Three consecutive runs
+>     are byte-identical.
+>   - **Two calibrations, measured not assumed:** a drill sentence may carry ONE unknown word (demanding
+>     a fully-known drill is a coverage test on a ~500-word set, not a test of whether the pattern
+>     generalises — it kept 31% of patterns vs 70% at one); drill exclusivity is **per-unit**, since
+>     global exclusivity starved later patterns. 146 patterns failed the ≥3-example test and moved to
+>     `patterns_chunked` rather than being dropped.
+>   - Fluency items prefer the SAME stage. Ranking by recency alone put 久しぶりに食べたらスープの味が
+>     変わってた in the "you are lost near the station" block.
+> - **§7.1: ALL 8 CLOSED.** Five were mechanical. Two went to an independent three-checker pass first,
+>   which **overturned one of them**:
+>   - *Task-repetition citation (3-0 upheld):* the DOI really was Boers & Faez (2023), a TBLT
+>     meta-analysis with nothing about speech rate. Now Lambert, Kormos & Minn 2017 (SSLA 39(1),
+>     doi 10.1017/S0272263116000085). Two things the original item missed: print year is 2017, and the
+>     unit is **performances**, not repetitions, so our line overstated by one. Line 108's URL was stale too.
+>   - *Mnemonic durability (2-1 REFUTED):* `learning_science.md` claimed the "~2× items lost at 2 days"
+>     figure was unverifiable. **It is exact** — Wang, Thomas, Inzana & Primicerio 1993, rote 62% vs
+>     keyword 43%. The real finding is a SCOPE limit: every Wang-lab reversal had zero intervening
+>     retrieval. The note is rewritten and the error left on the record. **Lesson: do not call a claim
+>     unsourced on the strength of not having found the source.**
+> - Auditor **D.3** now says "first GRADED retrieval" and exempts pretests; **D.9** exempts abstract-gloss
+>   kanji from the keyword requirement while keeping decomposition; **D.15/line 68** are
+>   default-off-and-measured, warranted by redundancy + pt-BR grapheme interference rather than Okuyama
+>   2007 (a null, not evidence of harm).
+> - **STILL OPEN:** the R58 controlled read-aloud check (the text-free half is the `fluency` block; the
+>   read-aloud half needs audio); §7.3's remaining data prerequisites; the three short stages
+>   (`lodging` 4 units, `past_stories` 5, `opinions` 3) still want Tatoeba mining; and the R78 strand
+>   BUDGET is not enforced because our histogram counts ITEMS while Nation's split is a TIME budget —
+>   they are not comparable, and faking compliance would be worse than recording the mismatch.
+>
+> ---
+>
 > **2026-08-06 (t) — EXAM BANK + SPEAKING PATH ARE NOW ONE SYSTEM. Both features reachable, playable and
 > graded; four learner-visible defects found by reading rendered units rather than counts.**
 >
