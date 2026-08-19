@@ -937,7 +937,7 @@ _Generated 2026-08-19. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-67ade723cfcc | 校長が朝の話をしました | O diretor deu o aviso da manhã. | n4 |
 | sent:gen-67ec35869b3d | 毎晩お風呂に入ります | Toda noite tomo banho. | n1 |
 | sent:gen-68448be6940b | あの店は安くはないが おいしい | Aquela loja não é barata, mas a comida é gostosa. | n4 |
-| sent:gen-686faf1ec51d | 狭い駅で人がたくさんいる | Tem muita gente nesta estação apertada. | n1 |
+| sent:gen-686faf1ec51d | 狭い駅に人がたくさんいる | Tem muita gente na estação apertada. | n1 |
 | sent:gen-68944dee02df | 母は毎日お弁当を作る | Minha mãe faz marmita todo dia. | n1 |
 | sent:gen-68a32baf8ae8 | 彼が話している間に私はメモを取った | Enquanto ele estava falando, eu fiz anotações. | n3 |
 | sent:gen-68abf4e67d15 | レストランを予約した | Reservei o restaurante. | n3 |
@@ -1233,7 +1233,7 @@ _Generated 2026-08-19. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-8c90e1fd8750 | ご飯の次にお茶を飲む | Depois da comida, tomo chá. | n3 |
 | sent:gen-8c9693e204f9 | 鳥が空を翔る | O pássaro voa pelo céu. | n4 |
 | sent:gen-8cb731ddeb28 | 車が三台止まっている | Tem três carros estacionados. | n4 |
-| sent:gen-8cc2f196d1e9 | 彼女の毛はとてもきれいだ | O cabelo dela é muito bonito. | n2 |
+| sent:gen-8cc2f196d1e9 | 猫の毛はとてもきれいだ | O pelo do gato é muito bonito. | n2 |
 | sent:gen-8ccaa5707b78 | この空港はとても国際的です | Esse aeroporto é muito internacional. | n3 |
 | sent:gen-8ce265a0a35d | 祖母は八十歳です | Minha avó tem oitenta anos. | n3 |
 | sent:gen-8d2028379fc2 | ここで写真を撮ってもいいですか | Posso tirar foto aqui? | n1 |
@@ -1526,7 +1526,7 @@ _Generated 2026-08-19. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-ae447a072a54 | 彼女はテレビのアナウンサーだ | Ela é apresentadora de TV. | n3 |
 | sent:gen-ae823fbc1778 | 各部屋にテレビがあります | Cada quarto tem uma TV. | n2 |
 | sent:gen-aeb3c4b0363b | 海とか山とかに行きたい | Quero ir a lugares como a praia e a montanha. | n4 |
-| sent:gen-aef805c4840d | 妹はピアノを習いたい | Minha irmã mais nova quer aprender piano. | n4 |
+| sent:gen-aef805c4840d | 私はピアノを習いたい | Quero aprender piano. | n4 |
 | sent:gen-af188a7e2df1 | この家は昔から有名です | Esta casa é famosa há muito tempo. | n3 |
 | sent:gen-af62de024f83 | 彼女は何歳ですか | Quantos anos ela tem? | n3 |
 | sent:gen-af91de5063a5 | ゆっくり休めば治るよ | Se você descansar com calma, vai melhorar. | n3 |
@@ -1560,7 +1560,7 @@ _Generated 2026-08-19. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-b2a1c62b3fbb | りんごを六つください | Me vê seis maçãs, por favor. | n4 |
 | sent:gen-b2c4b3ced962 | 子供が遊んでいる間に夕食を作った | Enquanto as crianças brincavam, fiz o jantar. | n3 |
 | sent:gen-b2e4e4f13151 | 古い自転車をなおして使う | Conserto a bicicleta velha e continuo usando. | n4 |
-| sent:gen-b2ed6e8bb267 | 車を外国に輸入する会社です | É uma empresa que importa carros do exterior. | n2 |
+| sent:gen-b2ed6e8bb267 | 車を外国から輸入する会社です | É uma empresa que importa carros do exterior. | n2 |
 | sent:gen-b31296a19ebd | 掃除の道具はどこにありますか | Onde ficam as ferramentas de limpeza? | n2 |
 | sent:gen-b347563062a8 | 夜なかなか眠れない | À noite custo a conseguir dormir. | n3 |
 | sent:gen-b350a3581169 | 家の後ろに小さい林がある | Atrás de casa tem um bosque pequeno. | n4 |
@@ -1605,7 +1605,7 @@ _Generated 2026-08-19. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-b7806f254a95 | もう退院したから安心して | Ele já teve alta, então pode ficar tranquilo. | n3 |
 | sent:gen-b7875afae9d3 | 考えるだけで怖くなる | Só de pensar nisso, já fico com medo. | n3 |
 | sent:gen-b7992e71a26e | 三時頃に駅で会いましょう | Vamos nos encontrar na estação por volta das três. | n2 |
-| sent:gen-b7b28dfc0928 | このケーキは五百円いかです | Este bolo custa quinhentos ienes ou menos. | n4 |
+| sent:gen-b7b28dfc0928 | このケーキは五百円以下です | Este bolo custa quinhentos ienes ou menos. | n4 |
 | sent:gen-b7bec52aebfb | 弟は新しいゲームを欲しがっている | Meu irmão mais novo está querendo um jogo novo. | n3 |
 | sent:gen-b7d0642a0c56 | この旅館の温泉は有名です | As termas desta pousada japonesa são famosas. | n2 |
 | sent:gen-b7efef934f4e | 雨が降っても試合をします | Mesmo que chova, a partida vai acontecer. | n3 |
@@ -1773,7 +1773,7 @@ _Generated 2026-08-19. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-cb501aa67034 | 彼女は泣いてばかりいます | Ela só faz chorar. | n1 |
 | sent:gen-cb5cb7b0e549 | 母は野菜を塩に漬ける | Minha mãe conserva os legumes no sal. | n1 |
 | sent:gen-cb6474f5cede | 本を三冊借りました | Peguei emprestado três livros. | n2 |
-| sent:gen-cb6562f41e17 | 私のお兄さんは背が高い | Meu irmão mais velho é alto. | n3 |
+| sent:gen-cb6562f41e17 | 友達のお兄さんは背が高い | O irmão mais velho do meu amigo é alto. | n3 |
 | sent:gen-cb6a3fa3ad30 | 若い間に外国へ行きたい | Quero ir para o exterior enquanto sou jovem. | n3 |
 | sent:gen-cb6f9d2ce113 | 区の役所は駅の近くです | A prefeitura do distrito fica perto da estação. | n3 |
 | sent:gen-cb73e9a42699 | 御家族はお元気ですか | Sua família está bem? | n3 |
