@@ -7,6 +7,42 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (x) — THE STAGED QA BACKLOG IS NOW APPLIED, not just staged. Gate green throughout, and
+> `validate_furigana` is finally a HARD validator.**
+>
+> - **Phase-6 lessons: 274 of 292 applied** (`scripts/apply_phase6_reauthored.py`) — 216 body, 52
+>   exercise, 3 title, 2 objectives, 1 description. A new applier because these rows address fields BY
+>   PATH (`exercises[3].answer.choices[2]`), which `fable5_lessons_apply_source.py` cannot express; the
+>   guards are identical and every one fired: 6 tag-content, 6 anchor, 3 tag-balance, 1 dict-leaf, 1
+>   instruction, 1 the cross-batch collision. load_lessons 322/322, 0 warnings.
+> - **Furigana: 48 of 49 applied**, and `validate_furigana` is **promoted from advisory to `code`** in
+>   `validate_all.py` — 3,114 spans, ALL OK. It had carried a "promote once repaired" note since it was
+>   written. 22 of the empties were kana-only spans where ruby carries nothing; those became bare `<jp>`,
+>   matching the corpus's own 5,629-vs-465 convention.
+> - **Phase-4 grammar: 30 of 36 applied.** `gram:you-da` — the worst record in the corpus, teaching the
+>   VOLITIONAL under a "parece que" label — now has forms `["ようだ"]` and evidential prose.
+>   **Field-routing trap worth remembering:** `forms_json` is a list of plain STRINGS; the
+>   `{form, meaning}` objects in the export are assembled at export time against `localized_text`
+>   `form_meanings`, a JSON MAP keyed by the form string. A form RENAME must move its meaning key or the
+>   export silently drops the meaning, and `.form` edits must be ordered BEFORE the `.pt`/`.en` edits
+>   that look meanings up by that key.
+> - **Homophone mislinks: 1,425 tokens repointed corpus-wide** (`scripts/fix_homophone_vocab_links.py`)
+>   — 刷る→為る 739, 九→此の 367, 彼(あれ)→彼(かれ) 297, 背(せい)→背(せ) 12, 様(さま)→様(よう) 7,
+>   最も→尤も 3. Every repoint is conditional on the token's LEMMA OR READING, never the vocab id alone,
+>   so the 78 genuine 九, 9 あれ, 7 せい and 5 最も survive. `sentence_vocab` rebuilt from the corrected
+>   links. Crosses an n5/n4 boundary, so level counts moved.
+>   - **TRAP: `token.reading` is stored in HIRAGANA.** Predicates first written against カレ/セ/ヨウ
+>     matched nothing and reported "0 to repoint" — indistinguishable from "already clean". Three of the
+>     six classes would have been silently missed.
+> - **STILL RUNNING at session end:** (1) the 99-agent Layer-B authoring pass over the 324 staged mined
+>   sentences, writing to `research/derived/mined_layerb/` — this is the last blocker on the thin stages;
+>   (2) a second pass finishing the `pt_literal` sweep and adversarially verifying the 28 re-dissection
+>   fixes BEFORE they are applied, since several rewrite generated Japanese and could desync jp from its
+>   stored kana/romaji/translation. Check both output dirs first next session.
+
+---
+
+
 > **2026-08-06 (w) — QA QUEUES WORKED. All four remaining backlogs now have staged, byte-anchored
 > findings, and TWO LIVE CORRUPTIONS were found and fixed.**
 >
