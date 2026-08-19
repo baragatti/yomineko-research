@@ -1,0 +1,34 @@
+{
+ "queue": "layer-a-pairing",
+ "round": 3,
+ "check": "independent-adversarial-2",
+ "target": "research/derived/qa_queues/round3/layer_a_pairing_verified.json",
+ "date": "2026-08-19",
+ "method": "Re-derived from the records rather than from the target's summary. All 54 rows of the source queue were re-opened in corpus/sentences/bank.json and re-compared against db/corpus.sqlite raw_tatoeba_sentence, raw_tatoeba_translation and raw_jec. Every quoted jp, current_en and current_pt was compared byte for byte against the stored record. Every relink target was independently re-queried for existence, for being linked to the same Japanese id, and for byte identity with the string the target file quotes. The course tree was scanned file by file for embedded English. The whole target file was scanned for instruction-shaped fixes, arrows, em dashes, smart quotes and emoji.",
+ "verdict": "sound",
+ "confirmed": {
+  "no_layer_a_rewrite": "Zero rows propose changing any Japanese or any English string. The only action values are flag-link-quality, unlink-en and relink-en:<existing upstream row id>.",
+  "no_authored_english": "Confirmed independently. All six relink targets resolve to rows that already exist in raw_tatoeba_translation, are linked to the same Japanese id, and are byte identical with the strings quoted in relink_evidence: 543984, 10680581, 3730657, 499689, 470201, 410544.",
+  "anchors_byte_exact": "35 of 35 rows: quoted jp, current_en and current_pt match the stored record byte for byte. No paraphrase, no normalisation drift.",
+  "integrity_claims_reproduced": "stored jp byte exact upstream 54 of 54; stored en byte exact with a linked upstream row 54 of 54; exactly 324 bank records carry no en key; bank holds exactly 5889 records; the top level key set and the eight provenance keys are exactly as stated; 11 of the 12 unlink rows have exactly one linked English row and sent:tatoeba-9454297 has three.",
+  "no_gen_rows": "No sent:gen- record appears in this queue, so no coordinated jp/kana/romaji/pt/structure replacement is proposed anywhere and the internal-consistency risk does not arise.",
+  "course_layer_safe": "Independently scanned all 676 course/**/*.json files. The 34 sentences are referenced by id only; not one of their English strings is embedded anywhere in the course tree. sent:tatoeba-77972 and sent:tatoeba-77973 are indeed both pulled into course/speak/real_talk/unit-06.json.",
+  "hidden_dependency_scan": "Scanned every one of the 34 records for prose that quotes or depends on its own outgoing English, in both locales, in structure_explanation, translation_literal and tags. sent:tatoeba-373351 is the only one, exactly as the target file reports. Its structure_explanation names 'Welcome' in both pt-BR and en. No translation_literal.en duplicates a translation.en.",
+  "pt_not_orphaned_by_unlink": "Re-read the stored pt-BR of all 12 unlink rows against the Japanese. All 12 follow the Japanese, not the English, so unlinking leaves no pt-BR without support. The target file's identification of sent:tatoeba-198311 as the one place where the pt-BR visibly inherited an unsupported subject holds for this set.",
+  "no_instruction_shaped_fixes": "No arrows, no 'should be', no 'replace', no 'substituir', no em dashes, no en dashes, no smart quotes, no emoji anywhere in the file. The one 'substitut' hit is the word 'substitutes' inside descriptive prose at sent:tatoeba-169430.",
+  "no_cross_queue_conflict": "No id in this queue also appears in round3/escalated_sentences.json or round3/romaji_disputes.json."
+ },
+ "problems": [
+  {
+   "id": "sent:tatoeba-373351",
+   "issue": "Field shape contradicts the row's own instruction. The row carries verdict needs-human and its why states that the re-link must not be applied on its own, because the record's structure_explanation names the outgoing English 'Welcome' in both locales and would describe a string the record no longer contains. Yet endorsed_action is populated with relink-en:499689, while the other needs-human row, sent:tatoeba-198311, carries endorsed_action null. A consumer keying on the machine readable endorsed_action field rather than on verdict applies the one-field patch the prose forbids.",
+   "action": "needs-human",
+   "recommendation": "Null the endorsed_action on this row to match the shape of the other needs-human row, leaving the target id in relink_evidence and the reasoning in why. The relink and the coordinated Layer C edit of both structure_explanation locales stay one human decision, one commit."
+  }
+ ],
+ "not_problems": [
+  "The four blockers the target file raises (no storage slot for flag-link-quality, no en_source provenance for relinks, pt_validated_against left claiming en after unlink, and the flag versus unlink severity boundary) are all real and all disclosed. They are constraints on application, not defects in the output.",
+  "33 fix rows upheld and 0 downgraded is not rubber-stamping. Each of the 34 was re-derived here and each is a genuine drift. The two mildest, sent:jec-0517 and sent:tatoeba-188036, are already labelled by the target file as reasonably closable.",
+  "The target file's relink_evidence names only the chosen candidate for sent:tatoeba-373351, where seven English rows are linked, but the source queue's relink_candidates block lists all seven, so no evidence is withheld."
+ ]
+}

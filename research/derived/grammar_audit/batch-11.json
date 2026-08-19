@@ -1,0 +1,38 @@
+{
+  "batch": 11,
+  "reviewed": 15,
+  "findings": [
+    {
+      "slug": "gram:dasu",
+      "field": "explanation.pt-BR",
+      "defect": "instruction-leak",
+      "severity": "critical",
+      "evidence": "泣き出す = \"cair no choro\" (keep the gloss short and parallel to 走り出す = \"sair correndo\"; the sentence already establishes \"início súbito\", and \"começar a chorar de repente\" would echo the following 雨が降り出した = \"começou a chover de repente\"); 走り出す = \"sair correndo\" — an English editing instruction to the author was left inside the learner-facing pt-BR explanation, in place of the gloss.",
+      "suggested_fix": "出す, ligado à raiz de outro verbo, vira um auxiliar que indica o início súbito de uma ação, muitas vezes algo que \"explode\" ou escapa para fora. 泣き出す = \"cair no choro\"; 走り出す = \"sair correndo\"; 雨が降り出した = \"começou a chover de repente\". A imagem original de 出す (\"pôr para fora\") explica esse tom de algo que irrompe."
+    },
+    {
+      "slug": "gram:dake-de",
+      "field": "formation.pt-BR",
+      "defect": "false-formation",
+      "severity": "major",
+      "evidence": "The same field gives two incompatible attachments for nouns: \"Substantivo + だけで (水だけで生きる = viver só com água)\" and then \"adjetivo-な/substantivo + な/である + だけで em usos mais formais\". Taken literally, the second licenses *水なだけで / *パスポートなだけで; な after a plain noun is ungrammatical here (only 学生であるだけで is valid, and な belongs to な-adjectives: 便利なだけで).",
+      "suggested_fix": "Substantivo + だけで (水だけで生きる = viver só com água). Verbo no dicionário + だけで (聞くだけで分かる = só de ouvir já entendo). Adjetivo-い + だけで (安いだけで). Adjetivo-な + な + だけで (便利なだけで); com substantivo, em registro mais formal, usa-se である: 学生であるだけで. Costuma vir seguido de uma consequência positiva ou suficiente."
+    },
+    {
+      "slug": "gram:yori-hou-ga",
+      "field": "formation.pt-BR",
+      "defect": "false-formation",
+      "severity": "major",
+      "evidence": "\"Com substantivos usa-se の antes de ほう (車のほう); com verbos e adjetivos, ほう vem direto (行くほうがいい, 安いほうがいい).\" The rule splits the world into nouns vs \"verbos e adjetivos\" and only exemplifies an い-adjective, so applied to a な-adjective it produces *静かほうがいい / *便利ほうがいい (correct: 静かなほうがいい, 便利なほうが).",
+      "suggested_fix": "Padrão completo: [A] のほうが [B] より [adjetivo/predicado], ou [B] より [A] のほうが [adjetivo]. Com substantivos usa-se の antes de ほう (車のほう); com adjetivo-な entra な (静かなほうがいい, 便利なほうが); com verbos e adjetivo-い, ほう vem direto (行くほうがいい, 安いほうがいい). ほう(方) significa \"o lado/a direção\". より e ほうが podem trocar de ordem na frase sem mudar o sentido."
+    },
+    {
+      "slug": "gram:dewa-nai-ka",
+      "field": "register",
+      "defect": "register-contradiction",
+      "severity": "minor",
+      "evidence": "register is [\"casual\",\"masculine\",\"colloquial\"] for the headword ではないか, but the record's own formation says \"Versões coloquiais: じゃないか (masculino/informal), じゃない (com entonação subindo...)\" — i.e. じゃないか is the colloquial contraction and ではないか is the full/written-argumentative form (editorials, speeches, 〜ではないか の呼びかけ). Tagging ではないか itself as casual/colloquial tells the learner to use the literary form in everyday chat.",
+      "suggested_fix": "[\"plain\", \"masculine\", \"written\"]"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "file": "n3_reading_comp",
+  "reviewed": 92,
+  "findings": [
+    {
+      "item_id": "rc:n3:n3-relato-06-02",
+      "defect": "other",
+      "severity": "minor",
+      "evidence": "Item 135. The passage read:n3-relato-06-02 is a run-on: 'あっという間に４０度近くまで熱が出た二人の生徒が１台のコンピュータを使う話してる最中に割り込んでこないでよ。' Three separate source sentences (sent:jec-0673, sent:jec-0896, sent:tatoeba-10903706) are concatenated with no 。 between them, so a learner parses '熱が出た二人の生徒' as one relative clause and '使う話' as a noun phrase. The question (熱はどのぐらいまで出たか / ほぼ４０度) is still recoverable, and the answer key is correct — but the text the item is read against is corrupt. Root cause is upstream: sent:jec-0673 and sent:jec-0896 in corpus/sentences carry no terminal 。, and reading assembly concatenates raw.",
+      "suggested_action": "keep"
+    },
+    {
+      "item_id": "rc:n3:n3-estado-08-01",
+      "defect": "other",
+      "severity": "minor",
+      "evidence": "Item 83. Passage read:n3-estado-08-01 opens 'この期間が３ヶ月と言われています今日はいたずらばかりしているね。' — sent:jec-0804 has no terminal 。, so it fuses with the next Tatoeba sentence. Answer key (三か月) is correct and the distractors are all unsupported; only the passage text needs the punctuation restored.",
+      "suggested_action": "keep"
+    },
+    {
+      "item_id": "rc:n3:n3-estrutura-06-01",
+      "defect": "other",
+      "severity": "minor",
+      "evidence": "Item 92. Passage read:n3-estrutura-06-01 contains 'カップに、コーヒーをスプーン１杯入れます彼女はテニスは上手いが、水泳は下手だ。' — sent:jec-0996 lacks 。 and fuses with sent:tatoeba-92065, which is exactly the sentence the question depends on (彼女について正しいものはどれか / テニスは得意だが水泳は苦手だ). Answer key is correct; the sentence boundary must be restored.",
+      "suggested_action": "keep"
+    },
+    {
+      "item_id": "rc:n3:n3-relato-05-01",
+      "defect": "other",
+      "severity": "minor",
+      "evidence": "Item 132. Passage read:n3-relato-05-01 contains '子どもたちが熱心に先生の説明を聞きました彼らは話をしている最中に電話を切られた。' — sent:jec-0847 lacks 。. The question (どうして苦い薬を飲んだのか / せきがひどかったから) targets a different sentence and its key is correct.",
+      "suggested_action": "keep"
+    },
+    {
+      "item_id": "rc:n3:n3-intencao-05-01",
+      "defect": "other",
+      "severity": "minor",
+      "evidence": "Item 99. Passage read:n3-intencao-05-01 opens 'ヘッドライン開放システムを利用していますよくもまぁ、毎日毎日同じことができるね。' — sent:jec-1789 lacks 。. Separately, 'ヘッドライン開放システム' is opaque jargon with no pedagogical value at N3 and its pt-BR gloss ('sistema de manchete aberta') is meaningless. The item's own key (何歳になっても学べる, from 年を取り過ぎて学べないということはない) is correct.",
+      "suggested_action": "keep"
+    },
+    {
+      "item_id": "rc:n3:n3-estrutura-01-01",
+      "defect": "other",
+      "severity": "minor",
+      "evidence": "Item 85. Passage read:n3-estrutura-01-01 contains 'いよいよ１７日の国際フェアトレード・デーが近付きました「お飲み物はいかがですか？」' — sent:jec-4408 lacks 。 and runs straight into a quoted dialogue line. The item's key (自転車も車も持っていない, from 私は自転車も持っていない、まして車などとんでもない) is correct.",
+      "suggested_action": "keep"
+    },
+    {
+      "item_id": "rc:n3:n3-tempo-02-01",
+      "defect": "bad-japanese",
+      "severity": "minor",
+      "evidence": "Item 140. The passage sentence the item is built on is ungrammatical in the source: '少女はそんな人なことは聞いたこともないと言った。' (sent:tatoeba-146717) — 「そんな人なこと」 should be 「そんな人のこと」. The item's stem and its correct option 「そんな人は聞いたことがない」 are both fine Japanese, so the key is right, but learners read the broken form in the passage. Same passage also carries 'ドルペッグの意味は…' (sent:tatoeba-74364), finance jargon far above N3.",
+      "suggested_action": "keep"
+    }
+  ],
+  "summary": "Audited items 60-151 (92 items; the file holds 152, so the requested 60..199 range ends at 151). No item in this batch has a wrong answer key, and no distractor is defensible in the frame given — I checked each key against the Japanese of the passage it references by read: slug, not against plausibility. Several items are genuinely well built (143 '1ページおき' -> '2ページに1回', 142 '少なくとも3リットル' -> '3リットル以上', 149 'この本はあの本ほどやさしくない' -> 'あの本のほうがやさしい', 130 which correctly combines 医者として有名 + 医者として無能). Distractors are consistently drawn from other sentences in the same passage but re-attributed to the wrong subject or negated, so they are near-misses without being defensible: e.g. 110 offers '注意して読まなければならない' against a passage that says 選ばなければなりません; 96 offers 'すぐにあきらめた' against '説得してもだめだった'. Options are mutually exclusive throughout; no duplicate strings, no duplicate ids, every read: slug resolves. Stems and options stay well inside N3. The seven findings are all minor and all sit in the referenced passage rather than in the item: six are missing sentence boundaries and one is a source typo. Six of them share one upstream root cause worth fixing centrally — 127 sentences with slug prefix sent:jec- in corpus/sentences carry no terminal 。, and reading assembly concatenates jp fields raw, so any reading that includes a jec-* sentence emits a run-on. Fixing the punctuation at the sentence level repairs all of them, this batch included. One structural observation, by design rather than a defect: these readings are strings of unrelated single sentences, so every item is effectively a one-sentence comprehension check rather than a passage-level inference item; that is consistent across all 92 and should be a deliberate call, not a per-item fix. Related, the passages carry occasional far-above-level vocabulary from the source data (正規表現 in 96, 言質/あざける in 87, 流動体 in 81, 文無し in 135, ドルペッグ in 140) which does not block any answer but does raise the reading load above N3."
+}

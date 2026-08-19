@@ -1,0 +1,89 @@
+{
+ "queue": "layer-a-pairing",
+ "round": 3,
+ "artifact_checked": "research/derived/qa_queues/round3/layer_a_pairing_verified.json",
+ "check": "independent-adversarial-1",
+ "checked_on": "2026-08-19",
+ "method": "Nothing in the checked artifact's own summary was trusted. Every claim was re-derived from primary records: corpus/sentences/bank.json (5889 records) for stored jp, translation.en, translation.pt-BR, structure_explanation, translation_literal and provenance; db/corpus.sqlite tables raw_tatoeba_sentence, raw_tatoeba_translation and raw_jec for upstream Layer A; research/derived/qa_queues/layer_a_pairing.json for the source queue; and the whole course/ tree (676 json files) for downstream references.",
+ "verdict": "clean, with one encoding hazard and one count inaccuracy",
+ "critical_check_authored_english": {
+  "result": "PASS",
+  "detail": "No row proposes authored English. The endorsed_action vocabulary across all 35 rows is exactly flag-link-quality, unlink-en, relink-en:<id>, and one null. Each of the 6 relink strings quoted in relink_evidence was matched byte for byte against raw_tatoeba_translation and each target row is linked to the same Japanese id, so every one is a re-point to an existing row and not a new string."
+ },
+ "verified": [
+  {
+   "claim": "quoted anchors byte exact",
+   "result": "35 of 35 rows: quoted jp, current_en and current_pt are byte identical to bank.json stored values"
+  },
+  {
+   "claim": "stored jp byte exact upstream, 54 of 54",
+   "result": "re-derived independently across all 54 source-queue records: 0 divergences"
+  },
+  {
+   "claim": "stored en byte exact with a linked upstream row, 54 of 54",
+   "result": "re-derived independently across all 54: 0 divergences"
+  },
+  {
+   "claim": "relink targets present, linked and verbatim, 6 of 6",
+   "result": "confirmed for 543984, 10680581, 3730657, 499689, 470201, 410544"
+  },
+  {
+   "claim": "alternate-row reasoning",
+   "result": "confirmed. 628916 is 'Don't kid me!' and does add a first person object; 10680582 is 'Do you have anything that's ready to eat?'; 410545 is 'They skip school all the time.'; all three rows linked to 9454297 are retrospective and first person"
+  },
+  {
+   "claim": "unlink rows where only one english row is linked, 11 of 12",
+   "result": "confirmed, the exception being sent:tatoeba-9454297 with three linked rows"
+  },
+  {
+   "claim": "324 bank records already carry no en key",
+   "result": "confirmed exactly"
+  },
+  {
+   "claim": "sentence and provenance key sets",
+   "result": "confirmed exactly, and flag-link-quality indeed has no storage slot, so the schema blocker is real"
+  },
+  {
+   "claim": "pt_validated_against is en on these records",
+   "result": "confirmed on all 35, so the dangling-validation-anchor blocker is real"
+  },
+  {
+   "claim": "course references are by id only with no embedded English",
+   "result": "confirmed across 676 course json files. sent:tatoeba-77972 and sent:tatoeba-77973 do sit in the same unit at course/speak/real_talk/unit-06.json. The only embedded content found anywhere is the Japanese of sent:tatoeba-187583 in two keigo lessons, glossed in pt-BR only, which an en-side edit does not disturb"
+  },
+  {
+   "claim": "queue_action quotes the source queue faithfully",
+   "result": "confirmed byte for byte on all 35 rows; all 34 source fix rows are present and none was dropped or downgraded silently"
+  },
+  {
+   "claim": "sent:tatoeba-373351 quotes its own outgoing English in prose",
+   "result": "confirmed in both locales of structure_explanation. The needs-human call is correct"
+  },
+  {
+   "claim": "no Layer A text rewritten",
+   "result": "confirmed. No row proposes any jp, kana, romaji or English string value at all"
+  },
+  {
+   "claim": "no coordinated gen- replacement present",
+   "result": "confirmed. Zero sent:gen- rows, so the internal-consistency test for a replacement set does not apply to this queue"
+  },
+  {
+   "claim": "house conventions in the artifact prose",
+   "result": "no instruction-shaped fixes, no arrow, no 'should be', no 'replace', no em dash, no emoji, no language mixing between the pt-BR and English fields"
+  }
+ ],
+ "problems": [
+  {
+   "id": "sent:tatoeba-373351",
+   "severity": "hazard",
+   "issue": "The row carries verdict needs-human while endorsed_action holds the appliable value relink-en:499689, in exactly the shape the 33 applicable rows use. Its own why says the re-link must not be applied on its own, because structure_explanation quotes the outgoing English in both locales. The sibling needs-human row sent:tatoeba-198311 encodes the same status as endorsed_action null, so the file has two conventions and only the prose distinguishes them. An applier keyed on endorsed_action rather than on verdict would apply this row and leave both structure_explanation locales describing an English string the record no longer carries.",
+   "action": "needs-human"
+  },
+  {
+   "id": "counts",
+   "severity": "minor",
+   "issue": "counts.needs_human is 1 while two rows carry verdict needs-human, and counts.rows_reviewed is 34 while the rows array holds 35. The out-of-band row is disclosed separately in counts.out_of_band_rows_added, so nothing is hidden, but a consumer tallying by verdict gets a different answer than the header states.",
+   "action": "keep"
+  }
+ ]
+}

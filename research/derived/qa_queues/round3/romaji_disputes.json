@@ -1,0 +1,305 @@
+{
+ "queue": "romaji-disputes",
+ "round": 3,
+ "source": "research/derived/romaji_reading_disputes.json",
+ "verified_against": "corpus/sentences/bank.json",
+ "date": "2026-08-19",
+ "id_format": "<slug>#<field> for a sentence field; <slug>#tokens[position=N].<field> for a token field. TOKEN PATHS MUST BE RESOLVED BY THE position FIELD WITH split_mode C, NEVER BY ARRAY INDEX.",
+ "note": "'fix' is always a value to write, never an instruction. 'current' is the byte-exact stored value of the anchored field; a no-change row carries fix: null. No jp and no kana is touched anywhere in this queue: all nine records already satisfy I1 (concat of C-token surfaces equals jp) and I2 (concat of C-token readings equals kana), verified on 2026-08-19, so every reading question below is settled by fields the record already holds and the repair is confined to the derived romaji line. In all nine the token reading field is right and the token romaji field is stale; five records additionally need their sentence romaji repaired, and there the sentence field and the token field(s) must be applied together or I3 stays broken. Applying every 'fix' row makes concat(C-token romaji) equal the sentence romaji for all nine, closing the last nine I3 violations in the bank (5,880 of 5,889 pass today). Re-run the exporter afterwards: prototype/app/data/sentences.json carries the same romaji.",
+ "counts": {
+  "rows": 36,
+  "fix": 16,
+  "no_change": 19,
+  "needs_human": 1
+ },
+ "rows": [
+  {
+   "id": "sent:jec-4408#tokens[position=1].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=1].romaji",
+   "current": "ichinana",
+   "fix": "juunana",
+   "why": "Reading dispute resolved in favour of the token's own reading field. The surface is the full-width numeral 17 inside 17日 of a date ('the International Fair Trade Day on the 17th'), so the number is read as one number, じゅうなな, not digit by digit. The stored reading じゅうなな is already correct and the audited sentence romaji already spells juunana; only the romaji field was left behind, computed from a per-digit reading (1=ichi, 7=nana) that appears nowhere else in the record. With this and position 2 corrected, the thirteen C-token romaji concatenate byte for byte to the stored sentence romaji iyoiyojuunananichinokokusaifeatore-do de-gachikazukimashita, which is the I3 gate. Side note for a human, not a proposed change: じゅうしち is the other current reading of 17日 and would be equally defensible, but nothing in the record is evidence of it, and moving it would mean rewriting the sentence kana and the sentence romaji as well."
+  },
+  {
+   "id": "sent:jec-4408#tokens[position=2].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=2].romaji",
+   "current": "ka",
+   "fix": "nichi",
+   "why": "Reading dispute resolved in favour of the token's own reading field. 日 as a day-of-month suffix is か only in the irregular series 二日 through 十日 and 二十日; from 十一日 up it is にち, so 17日 is にち. The stored reading にち is correct, the sentence kana runs じゅうななにちの, and the audited sentence romaji reads juunananichino. The romaji field ka is the stale one and is the reading of a day the sentence does not name."
+  },
+  {
+   "id": "sent:jec-4408#tokens[position=7].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=7].romaji",
+   "current": " ",
+   "fix": null,
+   "why": "Not a defect. The recomputed value '-' comes from corpus_romaji()'s PUNCT_MAP, which maps the nakaguro to a hyphen; the bank does not. All seven sentences whose kana contains the nakaguro write a single space in the sentence romaji, and this record's own audited sentence romaji has featore-do de- with a space. Writing '-' here would break I3 rather than restore it."
+  },
+  {
+   "id": "sent:jec-4408#romaji",
+   "verdict": "no-change",
+   "field": "romaji",
+   "current": "iyoiyojuunananichinokokusaifeatore-do de-gachikazukimashita",
+   "fix": null,
+   "why": "The sentence romaji is correct and is the authority the two token fixes are derived from. It already carries juunana and nichi, keeps the katakana long vowel as '-' and the nakaguro as a space, both house conventions. After the position 1 and position 2 token fixes the concatenation reproduces it exactly."
+  },
+  {
+   "id": "sent:tatoeba-10492295#tokens[position=1].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=1].romaji",
+   "current": "nan",
+   "fix": "nani",
+   "why": "Reading dispute resolved in favour of the token's own reading field. 何 directly before を is read なに (なに is the free-standing pronoun; なん appears before counters and before the t/d/n onsets of と, で, の). The stored reading is なに, the sentence kana opens 「なにをはなしてるの, and the audited sentence romaji already spells naniohanashiteruno. The romaji field nan is the only piece still holding the other reading. The token's vocab_id 473 is 何 なに, so the link already agrees with なに too. With this one field corrected the fourteen C tokens concatenate exactly to the stored sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-10492295#tokens[position=0].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=0].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect. The recomputed value leaves the kagikakko as a Japanese character because corpus_romaji()'s PUNCT_MAP has no entry for it; commit aeec3ac ASCII-ized these corpus-wide to the straight double quote, and 18 of the 21 sentences whose kana contains the kagikakko carry it in their romaji. The stored value matches this record's own audited sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-10492295#tokens[position=7].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=7].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect. The recomputed value leaves the kagikakko as a Japanese character because corpus_romaji()'s PUNCT_MAP has no entry for it; commit aeec3ac ASCII-ized these corpus-wide to the straight double quote, and 18 of the 21 sentences whose kana contains the kagikakko carry it in their romaji. The stored value matches this record's own audited sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-10492295#tokens[position=8].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=8].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect. The recomputed value leaves the kagikakko as a Japanese character because corpus_romaji()'s PUNCT_MAP has no entry for it; commit aeec3ac ASCII-ized these corpus-wide to the straight double quote, and 18 of the 21 sentences whose kana contains the kagikakko carry it in their romaji. The stored value matches this record's own audited sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-10492295#tokens[position=13].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=13].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect. The recomputed value leaves the kagikakko as a Japanese character because corpus_romaji()'s PUNCT_MAP has no entry for it; commit aeec3ac ASCII-ized these corpus-wide to the straight double quote, and 18 of the 21 sentences whose kana contains the kagikakko carry it in their romaji. The stored value matches this record's own audited sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-10492295#romaji",
+   "verdict": "no-change",
+   "field": "romaji",
+   "current": "\"naniohanashiteruno?\"\"shitterukuseni\"",
+   "fix": null,
+   "why": "The sentence romaji is correct and is the authority the position 1 token fix is derived from: it already spells nani. After that single token fix the concatenation reproduces it exactly."
+  },
+  {
+   "id": "sent:tatoeba-10913720#tokens[position=0].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=0].romaji",
+   "current": "nan",
+   "fix": "nani",
+   "why": "Reading dispute resolved in favour of the token's own reading field. 何 before 考え is なに (何考えてた = なにかんがえてた); なん would need a counter or a t/d/n onset after it. The stored reading is なに, the sentence kana opens なにかんがえてた, the audited sentence romaji opens nanikangae, and vocab_id 473 is 何 なに. Only the romaji field still says nan."
+  },
+  {
+   "id": "sent:tatoeba-10913720#romaji",
+   "verdict": "fix",
+   "field": "romaji",
+   "current": "nanikangaeteta..",
+   "fix": "nanikangaetetakke.",
+   "why": "The sentence romaji is defective here, and this is the second half of a coordinated pair with the position 0 token fix; neither field alone restores I3. Two independent defects in one string: the particle っけ is dropped entirely, and the sentence-final maru is doubled. Neither is a convention. 15 of the 17 sentences whose kana contains っけ spell kke in their romaji, and the two that do not are this record and sent:tatoeba-2941029; likewise only four sentences in the whole bank contain doubled ASCII punctuation and all four are in this dispute set. The jp and the kana are untouched and already consistent (concat of the C-token surfaces equals jp, concat of the C-token readings equals kana), so the repair is confined to the derived romaji line. The replacement is the concatenation of the six C tokens with position 0 corrected: nani, kangae, te, ta, kke, and the final period."
+  },
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=10].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=10].romaji",
+   "current": "ireru",
+   "fix": "haireru",
+   "why": "Reading dispute resolved in favour of the token's own reading field, and the clearest of the nine. 入れる is spelled the same for the transitive いれる ('to put in') and for the potential of 入る, はいれる ('to be able to enter'). The sentence marks 体・手・指 with が, not を, and asks whether they fit into the safety partition, which only the potential of the intransitive licenses; the Layer-A English pairing says enter. The stored reading はいれる, the sentence kana ending がはいれるか, the audited sentence romaji gahaireruka and the token's own conjugation_note ('here with potential sense') all agree. Only the romaji field is still the transitive reading. This single field also closes I3 for the record."
+  },
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=5].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=5].romaji",
+   "current": " ",
+   "fix": null,
+   "why": "Not a defect, same nakaguro class as sent:jec-4408 position 7: the space is the bank's convention across all seven nakaguro sentences and matches this record's audited sentence romaji karada te yubi. The recomputed hyphen would break I3."
+  },
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=7].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=7].romaji",
+   "current": " ",
+   "fix": null,
+   "why": "Not a defect, same nakaguro class as sent:jec-4408 position 7: the space is the bank's convention across all seven nakaguro sentences and matches this record's audited sentence romaji karada te yubi. The recomputed hyphen would break I3."
+  },
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=2].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=2].romaji",
+   "current": "pa-te-shon",
+   "fix": null,
+   "why": "Not a defect, and the reason this sentence reached the dispute list at all. The recomputed pa-te-shiyon is a bug in the auditing romanizer, not a reading disagreement: corpus_romaji() re-romanizes character by character whenever the reading contains a chouonpu, which splits the しょ digraph into shi and yo. The stored value is correct and matches the audited sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-11248814#romaji",
+   "verdict": "no-change",
+   "field": "romaji",
+   "current": "anzenyoupa-te-shonnikarada te yubigahaireruka?",
+   "fix": null,
+   "why": "The sentence romaji is correct and is the authority the position 10 token fix is derived from: it already spells haireru. After that single token fix the concatenation reproduces it exactly."
+  },
+  {
+   "id": "sent:tatoeba-11727272#tokens[position=1].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=1].romaji",
+   "current": "tsurai",
+   "fix": "karai",
+   "why": "Reading dispute resolved in favour of the token's own reading field. 辛い is からい for taste and つらい for hardship, and the two are distinct lexemes, not variants. Here it modifies もの in a question about food that the Layer-A English pairing renders as spicy food, so からい. Everything else in the record already says so: the stored reading からい, the sentence kana 「からいものって, the token gloss picante (apimentado) and spicy (hot), and vocab_id 173, which is the からい entry. Only the romaji field carries the つらい reading. Together with the sentence romaji row below this closes I3 for the record."
+  },
+  {
+   "id": "sent:tatoeba-11727272#tokens[position=0].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=0].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect, same kagikakko class as sent:tatoeba-10492295: the straight double quote is the corpus-wide ASCII mapping and matches this record's own sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-11727272#tokens[position=7].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=7].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect, same kagikakko class as sent:tatoeba-10492295: the straight double quote is the corpus-wide ASCII mapping and matches this record's own sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-11727272#tokens[position=8].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=8].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect, same kagikakko class as sent:tatoeba-10492295: the straight double quote is the corpus-wide ASCII mapping and matches this record's own sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-11727272#tokens[position=10].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=10].romaji",
+   "current": "\"",
+   "fix": null,
+   "why": "Not a defect, same kagikakko class as sent:tatoeba-10492295: the straight double quote is the corpus-wide ASCII mapping and matches this record's own sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-11727272#romaji",
+   "verdict": "fix",
+   "field": "romaji",
+   "current": "\"karaimono,,suki?\"\"daisuki\"",
+   "fix": "\"karaimonotte,suki?\"\"daisuki\"",
+   "why": "The sentence romaji is defective here, and this is the second half of a coordinated pair with the position 1 token fix. The quoting particle って is dropped and the comma is doubled, the same artifact class as sent:tatoeba-10913720. 510 of the 512 sentences whose kana contains って spell tte in their romaji, and the two that do not are this record and sent:tatoeba-8938683. The って token itself stores tte and is not in dispute. jp and kana are untouched and already consistent, so the repair stays inside the derived romaji line. The replacement is the concatenation of the eleven C tokens with position 1 corrected."
+  },
+  {
+   "id": "sent:tatoeba-234773#tokens[position=5].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=5].romaji",
+   "current": "katamat",
+   "fix": "katamac",
+   "why": "No reading is in dispute in this record; it reached the list only because of the katakana bug reported on position 3. The reading かたまっ is correct and undisputed, and the defect is purely the house gemination convention, which resolves the small tsu at the token BOUNDARY against the following token: 固まっ plus ちゃっ is katamac plus chat, giving katamacchat. The bank does this consistently in the four other sentences where a small-tsu token precedes ちゃ (いっ as ic, なっ as nac, やっ as yac twice), and this record's audited sentence romaji already reads gakatamacchattayo. The stored katamat is the lone holdout and the only thing standing between this record and I3."
+  },
+  {
+   "id": "sent:tatoeba-234773#tokens[position=3].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=3].romaji",
+   "current": "konpyu-ta-",
+   "fix": null,
+   "why": "Not a defect, and the sole reason this sentence was quarantined as a reading dispute. The recomputed konpiyu-ta- is a bug in the auditing romanizer: corpus_romaji() falls back to character-by-character romanization whenever the reading contains a chouonpu, which splits the ぴゅ digraph into pi and yu. The stored value is correct, is the standard romanization of こんぴゅーたー, and matches the audited sentence romaji."
+  },
+  {
+   "id": "sent:tatoeba-234773#romaji",
+   "verdict": "no-change",
+   "field": "romaji",
+   "current": "a,matakonpyu-ta-gakatamacchattayo.",
+   "fix": null,
+   "why": "The sentence romaji is correct and is the authority the position 5 token fix is derived from: it already spells katamacchatta. After that single token fix the concatenation reproduces it exactly."
+  },
+  {
+   "id": "sent:tatoeba-2941029#tokens[position=3].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=3].romaji",
+   "current": "nan",
+   "fix": "nani",
+   "why": "Reading dispute resolved in favour of the token's own reading field. 何 before the volitional 言おう is なに (何言おうとした = なにいおうとした); なん appears before counters and before と, で, の, none of which follows here. The stored reading is なに, the sentence kana reads わたしなにいおうとした, the audited sentence romaji reads watashinaniiou, and vocab_id 473 is 何 なに. Only the romaji field still says nan."
+  },
+  {
+   "id": "sent:tatoeba-2941029#romaji",
+   "verdict": "fix",
+   "field": "romaji",
+   "current": "are,watashinaniioutoshitanda??",
+   "fix": "are,watashinaniioutoshitandakke?",
+   "why": "The sentence romaji is defective here, and this is the second half of a coordinated pair with the position 3 token fix. Same artifact as sent:tatoeba-10913720: the particle っけ is dropped and the question mark is doubled. This record and sent:tatoeba-10913720 are the only two of the 17 っけ sentences in the bank whose romaji lacks kke, and the っけ token itself stores kke and is not in dispute. jp and kana are untouched and already consistent, so the repair stays inside the derived romaji line. The replacement is the concatenation of the twelve C tokens with position 3 corrected."
+  },
+  {
+   "id": "sent:tatoeba-74887#tokens[position=2].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=2].romaji",
+   "current": "ketsu",
+   "fix": "yui",
+   "why": "Reading dispute resolved in favour of the token's own reading field. Inside 結納品 the compound 結納 is read ゆいのう, so 結 here is ゆい; ketsu is the isolated on reading and belongs to compounds such as 結果 and 結婚, not to this one. The stored reading ゆい, the sentence kana ゆいのうひんに and the audited sentence romaji yuinouhinni all agree, and the token's own role text names 結納品 as the compound. Side note for a human, not a proposed change: the dissection splits this compound as 結 plus 納品 where the morphology is 結納 plus 品, so 納品 is glossed as a fragment rather than as the delivery-of-goods word it would be on its own. That is a re-dissection question and out of scope for a romaji queue; the readings still concatenate to ゆいのうひん and the surfaces to 結納品, so nothing breaks by leaving it."
+  },
+  {
+   "id": "sent:tatoeba-74887#tokens[position=0].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=0].romaji",
+   "current": "e",
+   "fix": null,
+   "why": "Not a defect. The recomputed extsu is the wapuro spelling the romanizer emits for a small tsu with nothing to geminate; the bank strips it, which is what the xtsu replacement in fable5_fix_romaji.py was for. Three sibling records confirm the stored form: あっ before a comma is a in sent:tatoeba-11642656 and sent:tatoeba-234345, and えっ before a maru is e in sent:tatoeba-8871748. The sentence romaji begins with the same e."
+  },
+  {
+   "id": "sent:tatoeba-74887#tokens[position=3].romaji",
+   "verdict": "no-change",
+   "field": "tokens[position=3].romaji",
+   "current": "nouhin",
+   "fix": null,
+   "why": "Not in dispute; listed only because it sits inside the compound the 結 fix above discusses. 納品 as dissected reads のうひん and romanizes to nouhin, which is what is stored and what the sentence romaji carries."
+  },
+  {
+   "id": "sent:tatoeba-74887#romaji",
+   "verdict": "fix",
+   "field": "romaji",
+   "current": "e,,yuinouhinninanjuumanen?",
+   "fix": "e,yuinouhinninanjuumanen?",
+   "why": "The sentence romaji carries one spurious comma, and this is the second half of a coordinated pair with the position 2 token fix. The record has exactly one comma token, position 1, and the reading えっ that precedes it romanizes to e with nothing after it, as the three sibling records cited on position 0 show. Only four sentences in the whole bank contain doubled ASCII punctuation and all four are in this dispute set, so this is an artifact and not a convention. jp and kana are untouched and already consistent. The replacement is the concatenation of the nine C tokens with position 2 corrected."
+  },
+  {
+   "id": "sent:tatoeba-8938683#tokens[position=0].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=0].romaji",
+   "current": "ichisan",
+   "fix": "juusan",
+   "why": "Reading dispute resolved in favour of the token's own reading field. The whole point of the Layer-A pair ('Did you say 13 or 30?') is that both numerals are spoken as numbers, so 13 is じゅうさん and not the digit-by-digit 1 and 3. The stored reading is じゅうさん, the sentence kana opens じゅうさんっていった and the audited sentence romaji opens juusan. The romaji field ichisan is the stale one, formed the same way as sent:jec-4408 position 1."
+  },
+  {
+   "id": "sent:tatoeba-8938683#tokens[position=8].romaji",
+   "verdict": "fix",
+   "field": "tokens[position=8].romaji",
+   "current": "sanrei",
+   "fix": "sanjuu",
+   "why": "Reading dispute resolved in favour of the token's own reading field, and the mirror image of position 0: 30 is さんじゅう, not the digit-by-digit 3 and 0 that produced sanrei. れい is the reading of the digit zero on its own and has no place inside a two-digit number. The stored reading さんじゅう, the sentence kana それともさんじゅう and the audited sentence romaji soretomosanjuu all agree. If sanrei survived, the sentence would stop contrasting 13 with 30, which is the only thing it teaches."
+  },
+  {
+   "id": "sent:tatoeba-8938683#romaji",
+   "verdict": "fix",
+   "field": "romaji",
+   "current": "juusanitta?soretomosanjuu?",
+   "fix": "juusantteitta?soretomosanjuu?",
+   "why": "The sentence romaji is also defective, so this record needs three coordinated fields, not two. The quoting particle って is dropped, exactly as in sent:tatoeba-11727272, leaving juusan plus itta where the readings give juusan, tte, it and ta. The って token itself stores tte and is not in dispute, and 510 of the 512 って sentences in the bank spell it. The number readings in the stored string, juusan and sanjuu, are the correct part and are what the two token fixes above are derived from. jp and kana are untouched and already consistent. The replacement is the concatenation of the ten C tokens with positions 0 and 8 corrected."
+  },
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=10].vocab_id",
+   "verdict": "needs-human",
+   "field": "tokens[position=10].vocab_id",
+   "current": "71",
+   "fix": "",
+   "why": "Out of scope for a romaji queue, raised because verifying the reading above exposed it, and left to a human because the replacement is a policy choice rather than a fact. The fact is settled: the token reads はいれる, the potential of the godan 入る, while vocab_id 71 is the ichidan 入れる いれる, a different lexeme with a different verb class, so the link is wrong whatever replaces it. The policy is not. The bank's own habit for godan potential forms is to store no link at all (話せる, 読める, 行ける, 会える, 眠れる, 勝てる and the rest all carry vocab_id null), which argues for null; entry 505 is 入る はいる at n5 and would argue for pointing there instead so the learner can reach the dictionary form. Applying nothing is safe: the romaji fix above stands on its own and does not depend on this field."
+  }
+ ]
+}

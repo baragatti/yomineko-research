@@ -1,0 +1,70 @@
+{
+  "batch": 14,
+  "reviewed": 15,
+  "findings": [
+    {
+      "slug": "gram:gp-138",
+      "field": "formation.pt-BR (same error in formation.en)",
+      "defect": "false-formation",
+      "severity": "critical",
+      "evidence": "formation.pt-BR: \"Para arrependimento por NÃO ter feito, usa-se a negativa: 〜なければよかった (e.g., 行かなければよかった = \\\"não deveria ter ido\\\")\". A regra e o exemplo dizem o oposto um do outro: 〜なければよかった é o arrependimento por TER feito (行かなければよかった = 'teria sido bom se eu NÃO tivesse ido' = 'não deveria ter ido'). Aplicada ao pé da letra, a regra faz o aluno que quer dizer 'eu deveria ter ido / me arrependo de não ter ido' produzir 行かなければよかった, que significa exatamente o contrário; o correto é 行けばよかった. A própria nuance do registro contradiz a formation: \"行けばよかった ('deveria ter ido') e 行かなければよかった ('não deveria ter ido') são opostos\". Mesmo erro no en: \"For regret over NOT having done something, you use the negative\".",
+      "suggested_fix": "Para se arrepender de TER feito algo, usa-se a negativa: 〜なければよかった (e.g., 行かなければよかった = \"não deveria ter ido\"). Para se arrepender de NÃO ter feito, usa-se a afirmativa: 行けばよかった = \"deveria ter ido\"."
+    },
+    {
+      "slug": "gram:gp-148",
+      "field": "forms[0].form (e refs.label_en)",
+      "defect": "bad-form",
+      "severity": "major",
+      "evidence": "forms[0].form = \"てすみ\", truncado no meio da palavra; refs.label_en = \"てすみ\". O structure_pattern é \"～てすみません\", o label é \"〜てすみません\" e o próprio meaning do form diz \"desculpa por (ter feito)... (〜てすみません)\". Quem consumir o campo forms produz *遅れてすみ / *待たせてすみ, que não é japonês.",
+      "suggested_fix": "てすみません"
+    },
+    {
+      "slug": "gram:gp-147",
+      "field": "nuance.pt-BR (same error in nuance.en)",
+      "defect": "false-formation",
+      "severity": "major",
+      "evidence": "nuance.pt-BR: \"Construções importantes que derivam daqui: 〜ようと思う (\\\"penso/pretendo fazer\\\") e 〜とする (\\\"tentar/estar prestes a fazer\\\")\". O padrão volitivo é 〜(よ)うとする, não 〜とする. Escrito assim, e logo depois de 〜ようと思う (que traz o よう explícito), o aluno lê o 〜 como 'forma de dicionário' e produz *食べるとする / *行くとする para 'tentar comer / estar prestes a ir'. Pior: 〜とする com forma simples é outro ponto gramatical real ('supor que / considerar que'), então a frase gerada é gramatical mas quer dizer outra coisa. O correto é 食べようとする / 行こうとする.",
+      "suggested_fix": "〜ようとする"
+    },
+    {
+      "slug": "gram:gp-138",
+      "field": "nuance.pt-BR (same error in nuance.en)",
+      "defect": "label-mismatch",
+      "severity": "minor",
+      "evidence": "nuance.pt-BR: \"(não confunda a partícula なければ.)\" — なければ não é partícula: é a forma condicional negativa do verbo (行かない → 行かなければ), morfologia flexional. Chamá-la de partícula sugere ao aluno que é um elemento solto que se acrescenta, o que abre caminho para *行くなければ. Em en: \"don't confuse the なければ particle\".",
+      "suggested_fix": "não confunda com a condicional negativa 〜なければ, que é flexão do verbo (行かない → 行かなければ)"
+    },
+    {
+      "slug": "gram:gp-135",
+      "field": "forms[0].form",
+      "defect": "bad-form",
+      "severity": "minor",
+      "evidence": "forms[0].form = \"-  か\" — hífen solto seguido de dois espaços antes do か. Não bate com o structure_pattern (\"Question-phrase + か\") nem com o label (\"疑問詞 + か\"); renderizado numa lição vira \"-  か\" e não ensina forma nenhuma.",
+      "suggested_fix": "か"
+    },
+    {
+      "slug": "gram:gp-134",
+      "field": "formation.pt-BR",
+      "defect": "bad-form",
+      "severity": "minor",
+      "evidence": "formation.pt-BR: \"[Frase 1 (causa]。それで、[Frase 2) resultado]\" — parênteses e colchetes cruzados/corrompidos. O template estrutural é justamente o que o aluno copia; a versão en está correta (\"[Sentence 1 (cause)]。それで、[Sentence 2 (result)]\").",
+      "suggested_fix": "[Frase 1 (causa)]。それで、[Frase 2 (resultado)]"
+    },
+    {
+      "slug": "gram:gp-132",
+      "field": "nuance.pt-BR",
+      "defect": "ptbr-defect",
+      "severity": "minor",
+      "evidence": "nuance.pt-BR abre parêntese em \"(soa mais impessoal e objetivo do que dizer simplesmente \\\"existe\\\".\" e só fecha no fim do campo (\"...não o objeto.)\"), engolindo dentro do aparte as duas advertências principais — o \"Cuidado:\" sobre が見られる não ser permissão pessoal e a armadilha de を vs が. A versão en fecha corretamente: \"(it sounds more impersonal and objective than simply saying 'there is').\"",
+      "suggested_fix": "Registro neutro a formal, típico de linguagem escrita e expositiva (soa mais impessoal e objetivo do que dizer simplesmente \"existe\"). Cuidado: aqui が見られる não significa \"alguém consegue olhar\" no sentido de permissão pessoal; o foco é o fenômeno que se apresenta/se constata. Brasileiros podem cair na armadilha de usar を: o correto é が, pois X é o sujeito do que é observado, não o objeto."
+    },
+    {
+      "slug": "gram:gp-148",
+      "field": "nuance.pt-BR",
+      "defect": "ptbr-defect",
+      "severity": "minor",
+      "evidence": "nuance.pt-BR abre parêntese em \"(não tente colocar o verbo no passado antes do て.\" e só fecha no fim do campo, jogando para dentro do aparte a advertência de registro \"Em situações sérias ou no trabalho, すみません pode ser fraco demais; prefira 申し訳ありません.)\". A versão en fecha no lugar certo: \"(don't try to put the verb in the past before the て). In serious situations...\"",
+      "suggested_fix": "すみません cobre tanto \"desculpa\" quanto \"com licença/obrigado por se incomodar\", então com 〜て o foco é pedir desculpas pela ação. Atenção ao tempo: 遅れてすみません usa o verbo no presente da forma て mesmo falando de algo que já aconteceu (não tente colocar o verbo no passado antes do て). Em situações sérias ou no trabalho, すみません pode ser fraco demais; prefira 申し訳ありません."
+    }
+  ]
+}

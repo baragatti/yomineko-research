@@ -1,0 +1,55 @@
+{
+ "check": "independent-check-1",
+ "of": "research/derived/qa_queues/round3/escalated_sentences.json",
+ "re_derived_from": [
+  "corpus/sentences/bank.json",
+  "corpus/vocab/n1..n5.json",
+  "corpus/kanji/n1..n5.json",
+  "corpus/grammar/",
+  "course/"
+ ],
+ "date": "2026-08-19",
+ "verdict": "accept-with-two-completions",
+ "rows_checked": 6,
+ "rows_confirmed": 6,
+ "rows_dropped": 0,
+ "rows_needs_human": 0,
+ "confirmed": [
+  "All 6 ids exist in corpus/sentences/bank.json and all 6 carry the sent:gen- prefix with provenance.jp_source 'ai-generated'. No Layer-A record (sent:tatoeba-, sent:jec-) appears in the file, so no Layer-A Japanese or English is rewritten anywhere.",
+  "All 6 'current' anchors are byte-exact against the stored jp field, character for character.",
+  "Every supplied field is a literal value. No instruction verbs, no arrows, no 'should be', no 'Substituir', no em dashes, no en dashes, no emoji anywhere in the file.",
+  "No English leaks into pt, pt_literal or structure_explanation_pt; no pt-BR leaks into any en-facing value (the file supplies no en values at all, by design).",
+  "kana is the full reading of the proposed jp in all 6 rows, reconstructed token by token from the corpus's own readings: topic は renders as わ, を stays を, katakana renders as hiragana with the 長音符 kept (けーき).",
+  "romaji is ASCII lowercase plus hyphen only, no apostrophes; 長音符 renders as '-' (ke-ki preserved in row b7b28dfc0928) while hiragana long vowels stay spelled out (yunyuu, oniisan, imouto), which is the convention the stored records already follow.",
+  "The bank-wide invariant holds under every proposal: kana equals the concatenation of split_mode C token readings in all 5889 records, and each of the 6 proposed kana/romaji pairs reconstructs exactly from the token array the row prescribes.",
+  "Row cb6562f41e17 correctly warns that this record carries split_mode A subunits (お + 兄さん) at array indices 0 and 1 under position 2; verified, and array index 0 is NOT the 私 token. Resolving by position with split_mode C is required, as stated.",
+  "Every declared teaching target survives its edit: 341 狭い, 476 習う, 122 お兄さん, 1107 輸入, 1063 毛, gp-93 / 932 以下. The tags and grammar arrays need no change.",
+  "All vocab ids asserted in the why fields are correct against the registry: 454 友達 n5 common, 492 猫 n5 common, 690 私 n5 common, 1129 髪 n4, 932 以下 n4, 1063 毛 n4, 66 妹 n5, 1131 彼女 n4, 1358 為る/する. 兄 (28) and 輸出 (1318) are registered, and たがる is not, which is what the row aef805c4840d rationale depends on.",
+  "Corpus-frequency claims re-derived and correct: 友達 34 split_mode C tokens, 猫 18, から 216 particles entries.",
+  "No cross-reference is orphaned. The only external links to these 6 sentences are kanji example_sentences: 狭 (589) to 686faf1ec51d, 輸 (2728) to b2ed6e8bb267, 毛 (2683) to 8cc2f196d1e9. All three kanji survive their edit. Nothing in course/, corpus/grammar/, corpus/families/, corpus/exercises/ or corpus/exam_banks/ references any of the 6.",
+  "No vocabulary loses its only carrier: 妹 keeps 22 other sentences after aef805c4840d drops it, 彼女 keeps 111 after 8cc2f196d1e9 drops it.",
+  "Every value the file declares 'unchanged from what is stored' is byte-identical to the stored value: pt_literal on 686faf1ec51d, pt on b2ed6e8bb267, and kana + romaji + pt + pt_literal on b7b28dfc0928.",
+  "The two rows flagged as teaching a false rule really did: 686faf1ec51d stored 'A particula で marca o lugar onde a acao/existencia acontece', and b2ed6e8bb267 stored 'に marca o destino/lugar relacionado (外国)'. Both replacement paragraphs state the correct rule and name what the wrong particle would have meant.",
+  "The three referent changes leave grammatical, natural Japanese and pt-BR that describes the NEW wording: 私はピアノを習いたい, 友達のお兄さんは背が高い, 猫の毛はとてもきれいだ."
+ ],
+ "problems": [
+  {
+   "id": "sent:gen-686faf1ec51d",
+   "issue": "incomplete companion list: translation en locale omitted",
+   "action": "keep",
+   "detail": "The row moves translation pt-BR from 'Tem muita gente nesta estação apertada.' to 'Tem muita gente na estação apertada.', and its own why gives the reason: the Japanese carries no demonstrative. The stored translation.en is 'There are a lot of people in this crowded station.' and still carries 'this'. The row's re-authoring list names only token position 2, particles[0] and the en locale of structure_explanation; it does not name translation.en. The file's own scope_note requires 'the en locale of any translation or explanation whose pt-BR moved', and rows aef805c4840d, cb6562f41e17 and 8cc2f196d1e9 all name 'the en locale of both translations'. Applying exactly what this row enumerates leaves pt-BR and en disagreeing about a demonstrative the new jp does not have. The six supplied values are correct; the applier must extend the list to translation.en. translation_literal.en ('At the cramped station, there are a lot of people.') is already correct under に and needs nothing."
+  },
+  {
+   "id": "sent:gen-aef805c4840d",
+   "issue": "incomplete companion list: token position 0 pos fields omitted",
+   "action": "keep",
+   "detail": "The row replaces 妹 with 私 at token position 0 and enumerates surface, lemma, reading, romaji, gloss and vocab_id, but not pos. The stored token is pos 'noun', pos_coarse 名詞, pos_fine 普通名詞, correct for 妹. 私 is tagged pos 'pronoun', pos_coarse 代名詞, pos_fine '*' everywhere else in this corpus, including sent:gen-cb6562f41e17 position 0, which is the very record this row cites as its precedent for 私 being vocab 690. Rows cb6562f41e17 and 8cc2f196d1e9 both list 'pos pronoun' explicitly when a pronoun moves, so this row is the outlier. Applying exactly what it enumerates leaves 私 mis-tagged as a common noun. The six supplied values are correct; the applier must extend token position 0 to pos, pos_coarse and pos_fine. role ('tópico') is correctly not listed, since 私は remains the topic."
+  }
+ ],
+ "not_problems": [
+  "Row b7b28dfc0928 why states that among いか tokens 9 link entry 47 and 5 link 932; re-derived counts are 10 and 5. The miscount is in justification prose only, supports the same conclusion, and touches no applied value.",
+  "Several why fields say a particles entry changes 'in all four of its fields' while function_type is in fact stable at 'case' (で to に and に to から are both 格助詞). Rewriting 'case' as 'case' is a no-op, so this is loose wording rather than a corruption.",
+  "The i-adjective notation drifts across rows (adjetivo-i, adjetivo-い, い-adjetivo). Each replacement paragraph preserves the notation its own stored text already used, so the drift is pre-existing and not introduced here.",
+  "level fields on these records read n1, n2, n3 despite the build targeting N5 and N4. Pre-existing, untouched by this queue, out of scope for this check."
+ ]
+}

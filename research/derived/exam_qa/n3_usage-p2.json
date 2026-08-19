@@ -1,0 +1,49 @@
+{
+  "file": "n3_usage",
+  "reviewed": 11,
+  "findings": [
+    {
+      "item_id": "us:n3:1854",
+      "defect": "tests-nothing",
+      "severity": "major",
+      "evidence": "Index 63, target 合格. correct = \"試験に合格するといいですね\" (no sentence-final 。, because sent:gen-1d5a2872c1a1 is a GENERATED corpus sentence and the project style drops 。 on those). All three distractors are authored and DO end in 。: \"マラソンで一位に合格した。\" / \"実験がやっと合格した。\" / \"宝くじに合格してうれしい。\". The keyed answer is therefore the only option in the set without terminal punctuation, so the item is solvable on surface form alone without reading any Japanese. The Japanese content itself is fine: 合格 is n/vs/vi 'to pass (an exam)' (vocab 1854) and the three distractors are genuinely wrong (一位になる / 実験が成功する / 宝くじに当たる). This is a systematic bank-wide leak, not a one-off: 19 of the 71 items in n3_usage.json have the correct option as the only one lacking 。 (indices 0, 10, 25, 30, 32, 33, 34, 36, 37, 38, 39, 44, 45, 52, 56, 58, 63, 66, 67).",
+      "suggested_action": "fix-answer"
+    },
+    {
+      "item_id": "us:n3:1875",
+      "defect": "tests-nothing",
+      "severity": "major",
+      "evidence": "Index 66, target 氷. Same punctuation leak plus a second surface tell. correct = \"氷みたいな冷たい手\" (sent:gen-23bdff9ed0ca) has no 。 while all three distractors end in 。 (\"氷が沸いてお茶ができた。\", \"暑いから部屋の氷をつけよう。\", \"氷のように熱いスープだ。\"). Worse, the keyed answer is a bare noun phrase — the corpus record's own structure_explanation states \"Esta é uma locução nominal (não uma frase completa, não há verbo final)\" — while every distractor is a finite sentence. Two independent formal cues both point at the key, so a test-wise learner scores this without knowing what 氷 means. The semantics of the distractors are sound (氷が沸く should be お湯が沸く; 部屋の氷をつける should be エアコン; 氷のように熱い is self-contradictory).",
+      "suggested_action": "fix-answer"
+    },
+    {
+      "item_id": "us:n3:1884",
+      "defect": "tests-nothing",
+      "severity": "major",
+      "evidence": "Index 67, target 黒板. correct = \"黒板の字をノートに写す\" (sent:gen-2f6b42865629, no 。); distractors \"かばんに黒板を入れて帰った。\", \"レストランで黒板を注文した。\", \"黒板を洗濯してから干した。\" all end in 。. Again the key is identifiable by punctuation alone. Note the item is already weak on its own terms — all three distractors are absurd for any noun that is a large fixed classroom fixture, so nothing about 黒板's collocations is tested — but the punctuation asymmetry is the concrete, mechanical defect.",
+      "suggested_action": "fix-answer"
+    },
+    {
+      "item_id": "us:n3:1833",
+      "defect": "tests-nothing",
+      "severity": "minor",
+      "evidence": "Index 60, target 現実. correct = \"現実へようこそ！\" (sent:tatoeba-10721698) is the only option ending in ！; all three distractors end in 。 (\"それは現実な考え方だ。\", \"夢が現実したらうれしい。\", \"その計画には現実がない。\"). Weaker than the missing-。 leak but the same odd-one-out cue. Content is otherwise correct: 現実 is n-only in vocab 1833, so 現実な (needs 現実的な), 現実する (needs 実現する / 現実になる) and 現実がない (needs 現実味/現実性がない) are all properly wrong. Only two other items in the file share this ！/？ shape (indices 1 and 42).",
+      "suggested_action": "fix-answer"
+    },
+    {
+      "item_id": "us:n3:1846",
+      "defect": "distractor-also-correct",
+      "severity": "minor",
+      "evidence": "Index 62, target 濃い. Distractor \"彼は濃い声で話した。\" is not securely wrong. Modern colloquial Japanese applies 濃い productively to people and impressions (濃い顔, 濃いキャラ, 濃いメンバー), and 声が濃い / 濃い声 occurs in that register for a thick, heavily-flavoured voice. The distractor \"濃い音楽が聞こえてきた。\" has the same weakness for the same reason. The keyed answer \"彼女は濃い青のスカーフをしていた。\" (sent:tatoeba-87574) is unambiguously correct for vocab 1846 sense 2 ('escuro, intenso (cor)'), so the key is not wrong — but a learner who knows the colloquial extension can defend a second option. Only \"今日は風がとても濃い。\" is safely wrong (濃い takes 霧/煙, not 風).",
+      "suggested_action": "replace-distractor"
+    },
+    {
+      "item_id": "us:n3:1888",
+      "defect": "level-mismatch",
+      "severity": "minor",
+      "evidence": "Index 68, target 腰. The keyed answer \"しばらくこの町に腰を落ちつけようと思うんだ。\" (sent:tatoeba-216127) is the idiom 腰を落ち着ける 'to settle down', in which 腰 carries none of its dictionary meaning — vocab 1888 glosses it 'lombar / cintura / quadril'. The corpus itself marks this sentence level n2 and its structure_explanation opens with \"A expressão idiomática 腰を落ち着ける (literalmente 'assentar a cintura')\". So the one option that is supposed to model correct usage of 腰 never shows the learner what 腰 denotes; the item is answerable only by eliminating three body-part swaps (腰で音楽を聞く ← 耳, 腰をみがく ← 歯, 帽子を腰にかぶる ← 頭). Also uses the variant okurigana 落ちつけ rather than 落ち着け.",
+      "suggested_action": "replace-distractor"
+    }
+  ],
+  "summary": "Audited indices 60-70 of corpus/exam_banks/n3_usage.json (the file holds 71 items, so 60..199 resolves to 11 real items; nothing was invented for the empty tail). All 11 keyed answers were matched byte-for-byte against corpus/sentences/bank.json and all 11 targets against corpus/vocab/n3.json — every key is a genuine corpus sentence and every key is semantically correct for its vocab entry. No item has a wrong answer, no item has duplicate or non-exclusive options, and the target string appears in all four options everywhere. Six findings, none critical. The dominant defect is structural rather than linguistic: on items whose key comes from a GENERATED corpus sentence, the project's 'drop 。 in generated jp' style rule leaves the correct option as the only one in the set without sentence-final punctuation, while the three authored distractors all carry 。 — indices 63, 66 and 67 in this range, and 19 of the 71 items file-wide. Index 66 leaks twice over (the key is also the only non-sentence, a bare noun phrase). Index 60 has the softer ！-vs-。 version of the same asymmetry. Beyond that: index 62 (濃い) has a distractor 濃い声 that colloquial usage can defend, and index 68 (腰) keys an N2 idiom (腰を落ち着ける) in which the target word does not carry its dictionary meaning. Items 61 (恋), 64 (行動), 65 (幸福), 69 (好み) and 70 (今後) are clean — correct key, three defensibly wrong distractors, grammatical Japanese throughout. Fixing the punctuation normalisation is a mechanical pass over the whole bank and would repair the majority of the damage here."
+}

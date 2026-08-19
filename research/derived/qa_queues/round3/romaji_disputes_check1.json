@@ -1,0 +1,58 @@
+{
+ "check": "romaji-disputes independent check #1",
+ "round": 3,
+ "target": "research/derived/qa_queues/round3/romaji_disputes.json",
+ "re_derived_from": [
+  "corpus/sentences/bank.json",
+  "corpus/vocab/n1..n5.json",
+  "research/derived/romaji_reading_disputes.json",
+  "prototype/scripts/sync-data.mjs",
+  "prototype/app/data/sentences.json"
+ ],
+ "date": "2026-08-19",
+ "method": "Every row re-resolved against the live bank by slug plus position with split_mode C, never by array index. The 16 fix values were applied to an in-memory copy and the three invariants recomputed. Every corpus-wide convention the queue cites as evidence was recounted over all 5,889 records.",
+ "verdict": "sound; 16 fixes applicable as written",
+ "confirmed": {
+  "baseline": "I1 0 violations, I2 0 violations, I3 9 violations over 5,889 records, and the nine are exactly the nine slugs in this queue.",
+  "after_applying_all_16_fixes": "I3 passes on all nine; I1 and I2 unchanged at 0 violations. Bank goes 5,880/5,889 to 5,889/5,889.",
+  "anchors": "All 36 'current' values match the stored field byte for byte, including the single-space nakaguro romaji and the straight double quote. One type-level exception, noted under problems.",
+  "fix_values_are_values": "All 17 non-null fix strings are literal field values. No imperative, no arrow, no 'should be', no em dash, no apostrophe, ASCII only.",
+  "layer_a_untouched": "No row anchors jp, kana, translation.en or translation.pt-BR. The 36 rows anchor romaji 35 times and vocab_id once. jp, kana and the Layer-A English of all nine records are byte-identical before and after.",
+  "no_authored_english": "No row proposes English prose. The only English-looking strings in the queue are romaji field values.",
+  "gen_records": "None. All nine slugs are sent:jec- or sent:tatoeba-, so no generated Japanese is in play and no coordinated jp replacement was proposed.",
+  "prose_not_stranded": "No structure_explanation, translation, translation_literal, role, gloss or conjugation_note in the nine records quotes any of the romaji strings being replaced, so no pt-BR or English prose is left describing the old value.",
+  "coverage": "All 25 token rows of the upstream romaji_reading_disputes.json appear in the queue. Nothing was silently dropped. The 11 extra rows are the 9 sentence-level romaji rows, one extra no-change token row, and the needs-human row.",
+  "counts": "Header counts 36/16/19/1 match the rows exactly. Five records take a sentence-level romaji fix, as stated."
+ },
+ "conventions_recounted": {
+  "nakaguro": "7 sentences contain it; all 7 store a single space in the token romaji. Queue claim holds.",
+  "kagikakko": "21 sentences contain it; 18 romanize the brackets as the straight double quote, 3 keep the Japanese brackets (sent:tatoeba-4939, sent:tatoeba-74574, sent:tatoeba-77716). Queue claim holds.",
+  "kke": "17 sentences contain it; exactly 2 lack kke in their romaji, sent:tatoeba-10913720 and sent:tatoeba-2941029, the two named. Queue claim holds.",
+  "tte": "512 sentences contain it; exactly 2 lack tte, sent:tatoeba-11727272 and sent:tatoeba-8938683, the two named. Queue claim holds.",
+  "doubled_ascii_punctuation": "Exactly 4 records in the bank, and all 4 are in this dispute set. Queue claim holds.",
+  "gemination_before_cha": "5 records pair a small-tsu-final token with a cha token. Four store the c form (ic, nac, yac, yac); sent:tatoeba-234773 is the lone t holdout. The katamac fix is the majority house form and the only value that reproduces the stored sentence romaji.",
+  "small_tsu_stripped": "Confirmed on the three siblings cited: a before a comma twice, e before a maru once.",
+  "vocab_evidence": "473 is kanji 何 kana なに. 173 is kanji 辛 kana からい. 71 is kanji 入 kana いれる. 505 is kanji 入 kana はいる. Every vocab id the queue cites as evidence is what it says it is.",
+  "godan_potential_vocab_null": "Confirmed: 話せる, 読める, 行ける, 会える, 眠れる, 勝てる all carry vocab_id null across the bank. 入れる is the exception at vocab_id 71."
+ },
+ "problems": [
+  {
+   "id": "romaji_disputes.json#note",
+   "severity": "low",
+   "issue": "The closing sentence of the note says prototype/app/data/sentences.json carries the same romaji. It does not. prototype/scripts/sync-data.mjs builds that file's romaji with spacedRomaji(), which joins the per-token romaji with spaces and falls back to the bank's glued romaji field only when a record has no tokens. A grep for each of the five defective sentence strings finds them in corpus/sentences/bank.json and in historical fable5_validation audit files, never in the prototype export. The consequence is only descriptive: the 11 token fixes do propagate to the prototype on a re-sync, the 5 sentence-level romaji fixes do not reach it at all, and the instruction to re-run the exporter is still correct and still needed.",
+   "action": "keep"
+  },
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=10].vocab_id",
+   "severity": "low",
+   "issue": "Two encoding defects on the single needs-human row. Its fix is the empty string where every other non-fix row in the queue carries null, which contradicts the queue's own stated contract and is a mechanical-apply hazard: an applier keyed on fix being non-null would write an empty string into an integer field. Its current is the string 71 while the stored value is the integer 71, so this one anchor is not literally byte-exact. The substance of the row is sound and independently confirmed: the token reads はいれる while vocab 71 is kanji 入 kana いれる, a different lexeme, and the godan-potential-null habit the row cites is real across the bank.",
+   "action": "needs-human"
+  },
+  {
+   "id": "sent:tatoeba-11727272#romaji",
+   "severity": "low",
+   "issue": "The why calls the dropped って the quoting particle. In this sentence it is the colloquial topic marker, which the record's own structure_explanation states in pt-BR as a spoken form of は or というのは introducing the subject. The label is wrong only in the rationale; the observation that って is missing from the stored romaji is correct and the fix value is unaffected, since the token stores tte either way.",
+   "action": "keep"
+  }
+ ]
+}

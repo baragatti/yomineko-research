@@ -1,0 +1,57 @@
+{
+ "queue": "romaji-disputes",
+ "round": 3,
+ "checked_file": "research/derived/qa_queues/round3/romaji_disputes.json",
+ "check": "independent-adversarial-2",
+ "date": "2026-08-19",
+ "verdict": "accept",
+ "summary": "All 16 fix rows survive and all 19 no-change rows are correct. Re-derived from corpus/sentences/bank.json rather than from the queue's summary: applying the 16 fix values reproduces I1, I2 and I3 on all nine records, and those nine are exactly the nine I3 violations that exist in the bank today (5,880 of 5,889 pass, as claimed). No jp, no kana, no translation.en and no translation.pt-BR is touched by any row, and the queue contains no sent:gen- record, so no Japanese is authored anywhere. Every fix is a plain ASCII value with no instruction language. Every corpus-wide convention the rationales lean on was recounted independently and every count matched. The three problems below are confined to the single needs-human row's field typing and to one sentence of queue-level prose; none of them changes an action.",
+ "reverified": {
+  "i3_violations_in_bank": [
+   "sent:jec-4408",
+   "sent:tatoeba-10492295",
+   "sent:tatoeba-10913720",
+   "sent:tatoeba-11248814",
+   "sent:tatoeba-11727272",
+   "sent:tatoeba-234773",
+   "sent:tatoeba-2941029",
+   "sent:tatoeba-74887",
+   "sent:tatoeba-8938683"
+  ],
+  "after_applying_all_fix_rows": "I1 true, I2 true, I3 true on all nine; jp and kana byte-identical to the stored values",
+  "anchors_byte_exact": "35 of 36 rows exact; the exception is recorded as problem 1",
+  "fix_values_are_values": "16 of 16, ASCII only, no 'replace', no 'should be', no arrow, no 'Substituir'",
+  "layer_a_untouched": "no row targets jp, kana, translation.en or translation.pt-BR; targeted fields are romaji x35 and vocab_id x1",
+  "generated_sentences_in_queue": 0,
+  "convention_counts_recounted": {
+   "nakaguro_sentences": "7 total, all 7 write a single space in the sentence romaji and all nakaguro tokens store a space",
+   "kagikakko_sentences": "21 total, 18 carry the ASCII double quote; the 3 that keep the Japanese bracket are sent:tatoeba-4939, sent:tatoeba-74574, sent:tatoeba-77716",
+   "kke_sentences": "17 total, the only 2 whose romaji lacks kke are sent:tatoeba-10913720 and sent:tatoeba-2941029",
+   "tte_sentences": "512 total, the only 2 whose romaji lacks tte are sent:tatoeba-11727272 and sent:tatoeba-8938683",
+   "doubled_ascii_punctuation": "exactly 4 sentences in the bank, and all 4 are in this dispute set",
+   "small_tsu_before_cha": "5 occurrences; 4 already resolve the boundary with c (ic, nac, yac, yac) and sent:tatoeba-234773 position 5 is the fifth; across all 1,184 small-tsu-final tokens in the bank it is the only one ending in t whose following token does not begin with t",
+   "small_tsu_with_nothing_to_geminate": "sent:tatoeba-11642656 and sent:tatoeba-234345 store a for あっ, sent:tatoeba-8871748 stores e for えっ"
+  },
+  "vocab_registry": "473 = 何 なに n5; 173 = 辛い からい n5; 71 = 入れる いれる n5 ichidan; 505 = 入る はいる n5 godan. The godan-potential habit also holds: はなせる, いける, かてる and あえる all carry vocab_id null, and はいれる is the lone linked one.",
+  "layer_a_english_pairings_quoted_in_rationales": "all present byte-exact in translation.en: 'Can a body, hand, or finger enter the safety partition?', 'Did you say 13 or 30?', '\"Do you like spicy food?\" \"I love it.\"'",
+  "token_side_evidence": "gloss 'picante (apimentado)' on sent:tatoeba-11727272 position 1, conjugation_note 'aqui com sentido potencial' on sent:tatoeba-11248814 position 10, and role '1º componente do composto 結納品' on sent:tatoeba-74887 position 2 are all present as described",
+  "independent_reromanization": "a from-scratch kana romanizer built to the house conventions (chouonpu to '-', ASCII punctuation, no apostrophes, vowel doubling not macrons, gemination resolved against the following token) reproduces every post-fix token romaji in all nine records, including katamac, pa-te-shon and konpyu-ta-"
+ },
+ "problems": [
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=10].vocab_id",
+   "issue": "The row is malformed in two ways, both on the queue's own stated rules. First, the anchor is not byte-exact: current is the string \"71\" while the stored value is the integer 71, so a verifier that compares the anchor to the record reports a mismatch on the one row in the queue that a human is meant to read most carefully. Second, the queue's note says a row that writes nothing carries fix: null, but this row carries fix: \"\" (empty string). Under the applier pattern this repo actually uses the empty string is inert, because scripts/apply_furigana_fixes.py line 38, scripts/apply_ptliteral_round2.py line 40 and scripts/apply_phase4_grammar.py line 51 all select rows by verdict == \"fix\"; an applier written to select by fix is not None would blank vocab_id 71 instead of leaving the policy question open. The row's substance is correct and was verified: the token reads はいれる, vocab 71 is the ichidan 入れる いれる, vocab 505 is the godan 入る はいる, and every other godan potential in the bank carries vocab_id null.",
+   "action": "needs-human"
+  },
+  {
+   "id": "sent:tatoeba-11248814#tokens[position=10]",
+   "issue": "The escalation is under-scoped. The row asks a human to decide vocab_id only, but the same token also stores inflection_type '下一段-ラ行', which is the ichidan analysis the row itself argues is wrong for はいれる, the potential of the godan 入る. A human who answers only the vocab_id question leaves the record half-corrected, with the link repaired and the morphological class still asserting ichidan. pos_fine '一般' and inflection 'terminal' are unaffected. This does not touch the romaji fix, which stands on its own as the row says.",
+   "action": "needs-human"
+  },
+  {
+   "id": "note",
+   "issue": "The closing sentence 'Re-run the exporter afterwards: prototype/app/data/sentences.json carries the same romaji' is inaccurate about what that file holds. The prototype export is a dict keyed by slug whose romaji is a space-joined concatenation of the C-token romaji, not a copy of the sentence-level romaji field: sent:tatoeba-10913720 is stored there as 'nan kangae te ta kke.' and sent:jec-4408 as 'iyoiyo ichinana ka no kokusai fea tore-do   de- ga chikazuki mashi ta'. The consequence is only descriptive. The instruction to re-run the exporter is correct and sufficient, because the eleven token fixes are what the prototype is built from and they do propagate; but the five sentence-level romaji fixes will never appear in that file, and a reviewer who string-compares the two files to confirm the repair landed will be misled.",
+   "action": "keep"
+  }
+ ]
+}

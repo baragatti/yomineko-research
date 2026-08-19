@@ -1,0 +1,432 @@
+{
+ "queue": "layer-a-pairing",
+ "round": 3,
+ "verified_on": "2026-08-19",
+ "verifier_scope": "Adversarial re-check of the 34 rows marked fix in research/derived/qa_queues/layer_a_pairing.json, before application.",
+ "method": "Each record was opened in corpus/sentences/bank.json and its stored Japanese and stored English compared directly. Every stored jp and every stored en was then re-verified against the local dataset copies in db/corpus.sqlite: raw_tatoeba_sentence and raw_tatoeba_translation for the tatoeba records, raw_jec for the jec records. Every relink candidate was checked for existence, for being linked to the same Japanese id, and for byte identity with the string the queue quoted. No English was written, rewritten, or paraphrased at any point.",
+ "authoring_check": "PASS. Zero of the 54 rows proposes writing or rewriting English. Every fix row resolves to relink-en, unlink-en, or flag-link-quality. The six relink strings are verbatim rows already present in the dataset, quoted as evidence, not authored.",
+ "integrity_check": {
+  "stored_jp_byte_exact_upstream": "54 of 54",
+  "stored_en_byte_exact_with_a_linked_upstream_row": "54 of 54",
+  "relink_targets_present_linked_and_verbatim": "6 of 6",
+  "unlink_rows_where_only_one_english_row_is_linked": "11 of 12, the twelfth being sent:tatoeba-9454297 where three rows are linked and none is adequate",
+  "records_in_the_bank_that_already_carry_no_en_key": 324,
+  "course_references_to_these_sentences": "by id only, no embedded English, checked across course/**/*.json, so unlink and relink break no courseware"
+ },
+ "policy_used": "A pairing is a defect when the English states or invents something the Japanese does not, such that a pt-BR re-derived from it would carry a false or unsupported element. Ordinary Tatoeba looseness, register shifts, and upstream typos are not defects. Where a defect is real the only legitimate remedies are unlink-en or relink-en to a row that already exists in the dataset.",
+ "counts": {
+  "rows_reviewed": 34,
+  "fix_upheld": 33,
+  "no_change": 0,
+  "needs_human": 1,
+  "out_of_band_rows_added": 1
+ },
+ "blockers": [
+  {
+   "id": "schema",
+   "detail": "flag-link-quality has no storage slot. The sentence schema is slug, jp, kana, romaji, translation, translation_literal, level, provenance, structure_explanation, tags, new_items, tokens, particles, grammar, and provenance carries only jp_source, pt_source, pt_validated_against, translation_confidence, tier, ai_generated, needs_review, locale across all 5889 records. The 16 flag rows cannot be applied until a human fixes one key name and its value set, once, for all of them. Per the project rule the key and its values must be locale neutral English."
+  },
+  {
+   "id": "provenance-of-relink",
+   "detail": "No field records which upstream English row a record's translation.en came from. jp_source names the Japanese row only. Applying a relink therefore leaves no audit trail distinguishing a legitimate re-point from hand written English, which is the exact failure mode this queue exists to prevent. Recommend that the same human decision add an en_source key carrying the upstream row id, and that the six relinks be applied only together with it."
+  },
+  {
+   "id": "dangling-validation-anchor",
+   "detail": "All 34 records carry pt_validated_against set to en. On the 12 unlink rows that anchor points at a string that is about to be removed. The unlink operation is only complete if that field stops claiming en in the same edit, and the pt-BR on those records is then re-checked against the Japanese as a separate Layer B pass."
+  },
+  {
+   "id": "severity-boundary",
+   "detail": "The line between unlink-en and flag-link-quality is a judgment call applied case by case, and it is not perfectly consistent: a wrong head noun was unlinked at sent:tatoeba-219421 but flagged at sent:tatoeba-83446, and a wrong grammatical person was unlinked at sent:tatoeba-227760 but flagged at sent:jec-0453. Each individual call is defensible. A human should ratify the boundary once rather than row by row; the rows most likely to move are sent:tatoeba-203508, sent:tatoeba-366809, sent:tatoeba-221299 and sent:jec-0453."
+  }
+ ],
+ "relink_evidence": {
+  "sent:tatoeba-144418": {
+   "jp_sentence_id": "144418",
+   "target_en_id": "543984",
+   "target_en_verbatim_from_local_dataset_copy": "Don't make fun of people.",
+   "verified": "present in raw_tatoeba_translation, linked to this jp id, byte identical with the string the queue quoted"
+  },
+  "sent:tatoeba-188098": {
+   "jp_sentence_id": "188098",
+   "target_en_id": "10680581",
+   "target_en_verbatim_from_local_dataset_copy": "Do you have anything I can eat right away?",
+   "verified": "present in raw_tatoeba_translation, linked to this jp id, byte identical with the string the queue quoted"
+  },
+  "sent:tatoeba-3506610": {
+   "jp_sentence_id": "3506610",
+   "target_en_id": "3730657",
+   "target_en_verbatim_from_local_dataset_copy": "Can I borrow you for just a minute?",
+   "verified": "present in raw_tatoeba_translation, linked to this jp id, byte identical with the string the queue quoted"
+  },
+  "sent:tatoeba-373351": {
+   "jp_sentence_id": "373351",
+   "target_en_id": "499689",
+   "target_en_verbatim_from_local_dataset_copy": "Good afternoon.",
+   "verified": "present in raw_tatoeba_translation, linked to this jp id, byte identical with the string the queue quoted"
+  },
+  "sent:tatoeba-5046": {
+   "jp_sentence_id": "5046",
+   "target_en_id": "470201",
+   "target_en_verbatim_from_local_dataset_copy": "If you are by my side, I don't need anything else.",
+   "verified": "present in raw_tatoeba_translation, linked to this jp id, byte identical with the string the queue quoted"
+  },
+  "sent:tatoeba-98198": {
+   "jp_sentence_id": "98198",
+   "target_en_id": "410544",
+   "target_en_verbatim_from_local_dataset_copy": "They always skip school.",
+   "verified": "present in raw_tatoeba_translation, linked to this jp id, byte identical with the string the queue quoted"
+  }
+ },
+ "rows": [
+  {
+   "id": "sent:jec-0281",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "なかなか機会が有りませんでした",
+   "current_en": "There aren't very many chances any more.",
+   "current_pt": "Não tive muitas oportunidades assim.",
+   "why": "Pairing confirmed authentic: raw_jec row jec:#0281 carries this exact Japanese and this exact English, so nothing was mislinked and nothing may be rewritten. The drift the queue names is real and verifiable: the Japanese predicate is the polite past negative of the existence verb, while the English is present tense and adds a sense of no longer that the Japanese does not carry. JEC is one to one, so no re-link target exists. The stored pt-BR is past and was clearly derived from the Japanese, not from this English."
+  },
+  {
+   "id": "sent:jec-0453",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "僕はカーテン越しに海を見た",
+   "current_en": "He looked at the sea through the curtains.",
+   "current_pt": "Olhei o mar através da cortina.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#0453. The drift is real and load bearing: the Japanese opens with an explicit masculine first person pronoun marked as topic, and the English renders the subject as third person. A pt-BR re-derived from this English would say ele where the Japanese says eu. JEC is one to one so there is no alternative row; unlink-en would also be defensible here and a human may prefer it, since person is the subject of the whole clause. The stored pt-BR is first person and already correct."
+  },
+  {
+   "id": "sent:jec-0517",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "厳しい意見が多い",
+   "current_en": "There are many serious opinions.",
+   "current_pt": "Tem muita opinião crítica.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#0517. The Japanese adjective is the one meaning harsh, severe or critical, and the English says serious, which reads as weighty rather than critical. This is the mildest drift in the set and a human could reasonably close it as none; it is endorsed because the adjective is the only qualifier in a four token sentence and because the record teaches that qualifier. One to one dataset, so no re-link is possible."
+  },
+  {
+   "id": "sent:jec-0611",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "自由にリアルタイムに活動が出来ます",
+   "current_en": "You do activities freely in real time.",
+   "current_pt": "É possível realizar atividades livremente e em tempo real.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#0611. The Japanese predicate is the potential verb and the sentence exists to teach it; the English states the action flatly with no modal. Dropping the modality is exactly the kind of one element loss the flag action was defined for. One to one dataset, so no re-link target. The stored pt-BR keeps the possibility reading."
+  },
+  {
+   "id": "sent:jec-1737",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "いよいよ、虫探しの旅が始まりました",
+   "current_en": "He at last went on a trip to look for insects.",
+   "current_pt": "Finalmente, a viagem em busca de insetos começou.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#1737. The Japanese subject marked by ga is the trip itself and the verb is the intransitive one for something beginning; the English introduces a third person agent and recasts the verb as that agent departing. Same real world event, different grammatical content, and the record's structure paragraph teaches that subject marking. One to one dataset, so flag rather than re-link."
+  },
+  {
+   "id": "sent:tatoeba-1160677",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "私たちの先生は、厳しいけど優しい先生です。",
+   "current_en": "Our English teacher is both strict and kind.",
+   "current_pt": "Nosso professor é rígido, mas gentil.",
+   "why": "Japanese verified byte exact upstream and only one English row is linked to this Japanese id, so re-linking is structurally impossible. The drift is real on two counts: the Japanese names no school subject while the English specifies one, and the concessive connective that this coverage record targets is flattened into a coordinating pair. Nothing here is a different proposition, so unlink would be too strong."
+  },
+  {
+   "id": "sent:tatoeba-11733143",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "もしできるとしたら、どうする？",
+   "current_en": "If you could do that, would you?",
+   "current_pt": "Se você pudesse fazer isso, o que faria?",
+   "why": "Japanese verified byte exact upstream, single linked English row, so no re-link target. The subordinate clause is rendered correctly, but the Japanese main clause is an open question about what the listener would do and the English is a yes or no question about whether they would. The grammar target sits in the subordinate clause, which the English preserves, so flag rather than unlink. The stored pt-BR follows the Japanese."
+  },
+  {
+   "id": "sent:tatoeba-144418",
+   "verdict": "fix",
+   "queue_action": "relink-en:543984",
+   "endorsed_action": "relink-en:543984",
+   "jp": "人をからかわないで。",
+   "current_en": "Are you kidding?",
+   "current_pt": "Não zoa as pessoas.",
+   "why": "Confirmed mismatch and confirmed re-link target. The Japanese is a soft negative request built on the naide pattern; the currently linked row is a rhetorical question that translates a different utterance. Tatoeba links three English rows to this Japanese id in our local copy of the dataset, and row 543984 is verified present, linked to this same id, and byte identical with the string the queue quotes. No text is authored: the applier copies row 543984 verbatim. Row 628916 is the weaker alternative because it adds a first person object the Japanese does not have."
+  },
+  {
+   "id": "sent:tatoeba-169430",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "山の空気はすばらしい。",
+   "current_en": "The air in the mountain is fresh and clean.",
+   "current_pt": "O ar da montanha é maravilhoso.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese predicate is the adjective meaning wonderful or splendid and the English substitutes a description of freshness and cleanliness. Since that adjective is the entire predicate the anchor is weak, but both readings are positive evaluations of the same topic, so this is drift rather than a different proposition. The stored pt-BR follows the Japanese."
+  },
+  {
+   "id": "sent:tatoeba-170417",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "最上のものは後から出てくる。",
+   "current_en": "The best is behind.",
+   "current_pt": "As melhores coisas vêm/aparecem depois.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese says the best thing emerges later; the English reads most naturally in modern usage as the best being already past, which inverts it. Endorsed as flag rather than unlink because the intended reading is recoverable and because unlinking would leave the record with no English at all over a reading that is merely ambiguous. A human who reads the English as inverting rather than ambiguous should escalate this one to unlink-en."
+  },
+  {
+   "id": "sent:tatoeba-175272",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "犬は黒と白の見分けがつく。",
+   "current_en": "Dogs see in black and white.",
+   "current_pt": "Os cães distinguem o preto do branco.",
+   "why": "Confirmed mismatch. The Japanese uses the fixed expression for being able to tell things apart, so it says dogs can distinguish black from white; the English asserts a claim about how dogs perceive colour, which is a different proposition and carries close to the opposite implication. Our local copy of the dataset shows exactly one English row linked to this Japanese id, so there is nothing to re-link to. Dropping the en anchor is the correct action; having no English is not a defect and 324 records in the bank already have no en key."
+  },
+  {
+   "id": "sent:tatoeba-187580",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "何をやってみせてくれるのかしら？",
+   "current_en": "I wonder what they have in store for us under the big top?",
+   "current_pt": "O que será que vão nos mostrar?",
+   "why": "Japanese verified byte exact upstream, single linked English row. The benefactive question is preserved, but the English carries circus setting information that is nowhere in the Japanese. This is legacy Tanaka context carry over from the original dialogue, the same root cause as sent:tatoeba-1160677 and sent:tatoeba-188036, and the flag is what stops that invented context from being imported into a re-derived pt-BR."
+  },
+  {
+   "id": "sent:tatoeba-187583",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "何をなさるつもりですか。",
+   "current_en": "What are you driving at?",
+   "current_pt": "O que o senhor pretende fazer?",
+   "why": "Confirmed mismatch. The Japanese asks, with the honorific verb the record teaches, what the listener intends to do; the English is the idiom asking what the listener is implying. Different speech act and different content, and a pt-BR derived from the English would be wrong. Single linked English row in our copy of the dataset, so unlink rather than re-link."
+  },
+  {
+   "id": "sent:tatoeba-188036",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "何か起きたかもしれない。",
+   "current_en": "Something may have happened to him.",
+   "current_pt": "Pode ser que algo tenha acontecido.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The English adds an affected third person that the Japanese does not mention; everything else corresponds. Considered closing this as reviewer over reading, since Japanese routinely elides such a participant, but it is endorsed for consistency with the other two Tanaka context carry over records in this queue and because the record's provenance still names en as the pt validation anchor. Lowest severity fix in the set. The stored pt-BR correctly omits the participant."
+  },
+  {
+   "id": "sent:tatoeba-188098",
+   "verdict": "fix",
+   "queue_action": "relink-en:10680581",
+   "endorsed_action": "relink-en:10680581",
+   "jp": "何かすぐ食べられるものある？",
+   "current_en": "Did you make anything I can start on now?",
+   "current_pt": "Tem alguma coisa que dê pra comer já?",
+   "why": "Confirmed mismatch and confirmed re-link target. The Japanese verb is the existence verb, asking whether there is anything edible right away; the currently linked row asks whether the addressee cooked something, which is not in the Japanese. Row 10680581 is verified present in our local copy, linked to this same Japanese id, and byte identical with the quoted string. It is the better of the two alternatives because it keeps the potential reading that this record targets, where row 10680582 renders it as ready to eat."
+  },
+  {
+   "id": "sent:tatoeba-195360",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "まったくお手上げだ。",
+   "current_en": "Everything's a little crazy right now.",
+   "current_pt": "Estou completamente sem saída.",
+   "why": "Confirmed mismatch. The Japanese is the set idiom for being completely at a loss; the English is a general remark about circumstances and shares no content with it, and its hedge even contradicts the intensifier the Japanese uses. Single linked English row, so unlink."
+  },
+  {
+   "id": "sent:tatoeba-202749",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "ちょっと暑いのでジャケットを脱ぎます。",
+   "current_en": "I'd like to take my jacket off, please; it's too hot.",
+   "current_pt": "Está um pouco quente, então vou tirar a jaqueta.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The causal structure that this coverage record targets survives, but the speech act shifts from stating what the speaker is going to do to asking permission, and the mild adverb is intensified into too hot. Borderline between flag and none; endorsed as flag because the record's provenance names en as the pt validation anchor and a re-derived pt-BR would import the request framing."
+  },
+  {
+   "id": "sent:tatoeba-203508",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "たとえ家を出る事になっても事業は続ける。",
+   "current_en": "Even if I have to sell my house, I'll keep my business going.",
+   "current_pt": "Mesmo que eu tenha de sair de casa, vou continuar o negócio.",
+   "why": "Confirmed mismatch. The Japanese concessive clause is about it coming to leaving home; the English says selling a house. Different event in the clause that carries half the sentence. Single linked English row, so unlink rather than re-link. This is the most borderline of the twelve unlinks, because the main clause and the concessive frame both correspond and a flag would preserve a partly usable anchor; a human ratifying the flag versus unlink boundary should look at this row first."
+  },
+  {
+   "id": "sent:tatoeba-219421",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "この問題に関しては三つの問題がある。",
+   "current_en": "In respect of this question, there are three opinions.",
+   "current_pt": "A respeito dessa questão, há três problemas.",
+   "why": "Confirmed mismatch. The Japanese counts three problems, using the same noun twice, once in the topic frame and once as the counted head; the English counts three opinions. The head noun is effectively the whole content of the sentence, so the English cannot serve as a validation anchor. Single linked English row, so unlink."
+  },
+  {
+   "id": "sent:tatoeba-221299",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "この手袋は両方がそろっていない。",
+   "current_en": "Their gloves are not in pairs.",
+   "current_pt": "Este par de luvas não está completo (falta uma).",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese topic is proximal, this pair of gloves, and the English uses a third person possessive and a plural of pairs. The predicate corresponds. Endorsed as flag because only the referent drifts, though a human could reasonably escalate to unlink on the same grounds used for the person mismatch at sent:tatoeba-227760. The stored pt-BR and literal translation already carry the proximal reading."
+  },
+  {
+   "id": "sent:tatoeba-227760",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "おかげで元気にしております。",
+   "current_en": "They're all fine, thank you.",
+   "current_pt": "Graças a você, vou indo bem.",
+   "why": "Confirmed mismatch as stored. The Japanese is the humble polite formula reporting that the speaker keeps well; the English reports a plural third party. The Japanese subject is elided, so a reading in which the speaker reports on their own household is available and the English is not strictly contradictory, but nothing in the sentence recovers it and a pt-BR derived from the English would contradict the stored pt-BR. Single linked English row, so unlink."
+  },
+  {
+   "id": "sent:tatoeba-233703",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "あなたに会ってほしいのですが。",
+   "current_en": "I'd like for you to go.",
+   "current_pt": "Eu gostaria que você me encontrasse (se encontrasse comigo).",
+   "why": "Confirmed mismatch. The Japanese te form verb is the one for meeting someone and the English says go; the verb is the record's grammar target inside the te hoshii pattern, so the mismatch is load bearing. Single linked English row, so unlink."
+  },
+  {
+   "id": "sent:tatoeba-3506610",
+   "verdict": "fix",
+   "queue_action": "relink-en:3730657",
+   "endorsed_action": "relink-en:3730657",
+   "jp": "ちょっといいですか？",
+   "current_en": "Let me speak.",
+   "current_pt": "Posso falar um instante?",
+   "why": "Confirmed mismatch and confirmed re-link target. The Japanese is the fixed question asking for a moment of the listener's time; the currently linked row is a declarative demand. Row 3730657 is verified present in our local copy, linked to this same Japanese id, byte identical with the quoted string, and keeps the interrogative request form. Two English rows are linked, so this is a genuine re-link and not an authoring step."
+  },
+  {
+   "id": "sent:tatoeba-366809",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "毎日運動するようにする。",
+   "current_en": "Exercise every day.",
+   "current_pt": "Vou me esforçar para fazer exercício todo dia.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese is a first person resolution built on the you ni suru pattern that names this record; the English is a bare imperative that erases both the person and the pattern. Endorsed as flag because it is the only linked row, but note that a pt-BR derived from this English would be an order rather than a resolution, which is the same severity band as several rows the queue sent to unlink. A human ratifying the boundary should look at this row second."
+  },
+  {
+   "id": "sent:tatoeba-373351",
+   "verdict": "needs-human",
+   "queue_action": "relink-en:499689",
+   "endorsed_action": "relink-en:499689",
+   "jp": "こんにちは。",
+   "current_en": "Welcome.",
+   "current_pt": "Boa tarde.",
+   "why": "The re-link target is verified correct: row 499689 is present in our local copy, linked to this same Japanese id, byte identical with the quoted string, and matches the stored pt-BR greeting, while the currently linked row is the wrong greeting. The row is nonetheless not applicable as written, because it is a one field patch to a record that quotes its own outgoing English in prose. The structure paragraph carries a sentence in both locales stating that the English translation Welcome in the hint is inaccurate. Apply the re-link alone and the record describes an English string it no longer contains. This needs a human to authorise the coordinated Layer C edit of both structure_explanation locales in the same commit as the re-link; the re-link must not be applied on its own."
+  },
+  {
+   "id": "sent:tatoeba-4766",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "こらしめてやる。",
+   "current_en": "I'm gonna shoot him.",
+   "current_pt": "Vou dar uma lição nele!",
+   "why": "Confirmed mismatch. The Japanese verb means to punish or discipline someone, carried by the te yaru pattern the record teaches; the English describes shooting a person. Unrelated action. Single linked English row, so unlink."
+  },
+  {
+   "id": "sent:tatoeba-5046",
+   "verdict": "fix",
+   "queue_action": "relink-en:470201",
+   "endorsed_action": "relink-en:470201",
+   "jp": "君が側にいてくれれば何もいらない。",
+   "current_en": "You're by my side; everything's fine now.",
+   "current_pt": "Se você estiver ao meu lado, não preciso de mais nada.",
+   "why": "Confirmed mismatch and confirmed re-link target. The Japanese is a ba conditional and the record's structure paragraph teaches it; the currently linked row flattens it into two declarative clauses. Row 470201 is verified present in our local copy, linked to this same Japanese id, byte identical with the quoted string, and keeps the conditional. Two English rows are linked, so this is a genuine re-link."
+  },
+  {
+   "id": "sent:tatoeba-77972",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "両方とも好きなわけではない。",
+   "current_en": "I don't like either of them.",
+   "current_pt": "Não é que eu goste dos dois.",
+   "why": "Confirmed mismatch, and the most consequential one in the queue. The Japanese is a partial negation built on wake dewa nai, denying that one likes both while leaving liking one open; the English is a total negation covering neither. The scope inversion is exactly what the record teaches, and provenance names en as the pt validation anchor, so this English actively pushes the pt-BR the wrong way. Single linked English row, so unlink."
+  },
+  {
+   "id": "sent:tatoeba-77973",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "両方とも好きというわけではない。",
+   "current_en": "I do not like either of them.",
+   "current_pt": "Não é que eu goste dos dois.",
+   "why": "Confirmed mismatch, same defect as its sibling record with the to iu variant of the pattern. The Japanese denies that one likes both; the English denies liking either. Single linked English row, so unlink. Treat this row and sent:tatoeba-77972 as one operation, since both are pulled into the same speaking unit at course/speak/real_talk/unit-06.json by id."
+  },
+  {
+   "id": "sent:tatoeba-78661",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "来週になると、何十万人もの人がその番組を見ているだろう。",
+   "current_en": "Next week, millions of people will be watching the TV program.",
+   "current_pt": "Na semana que vem, centenas de milhares de pessoas vão estar assistindo a esse programa.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese quantity is the one meaning hundreds of thousands and the English says millions, an order of magnitude apart. Everything else corresponds, and the stored pt-BR already carries the correct magnitude. Numeric drift of this kind is precisely what the flag exists to record."
+  },
+  {
+   "id": "sent:tatoeba-83446",
+   "verdict": "fix",
+   "queue_action": "flag-link-quality",
+   "endorsed_action": "flag-link-quality",
+   "jp": "壁は大きな音をたててガラガラと倒れた。",
+   "current_en": "The fence fell with a great crash.",
+   "current_pt": "O muro desabou com estrondo, fazendo um barulho enorme.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese subject is a wall and the English says fence, and the English also drops the onomatopoeia and the te linkage that this coverage record targets. Same collapse event, wrong object. Endorsed as flag, though note the tension with sent:tatoeba-219421, where a wrong head noun was sent to unlink; the difference is that there the wrong noun was the entire content of the sentence."
+  },
+  {
+   "id": "sent:tatoeba-84279",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "負け犬になるわけにはいかない。",
+   "current_en": "I can't stand getting beaten.",
+   "current_pt": "Não dá para eu virar um fracassado.",
+   "why": "Confirmed mismatch. The Japanese states that becoming a failure is not permissible, using the wake ni wa ikanai pattern that names this record; the English states an inability to tolerate being beaten. Different modality and different content, and a pt-BR derived from the English would say the speaker cannot stand something rather than cannot allow it. Single linked English row, so unlink."
+  },
+  {
+   "id": "sent:tatoeba-9454297",
+   "verdict": "fix",
+   "queue_action": "unlink-en",
+   "endorsed_action": "unlink-en",
+   "jp": "しばらく、寂しい日が続きそうね。",
+   "current_en": "Oh well, recently I continue to spend my days alone.",
+   "current_pt": "Por um tempo, parece que vão continuar os dias solitários, né?",
+   "why": "Confirmed mismatch and confirmed absence of a re-link target. The Japanese is a forward looking inference that lonely days seem likely to continue, softened by a final particle. All three English rows linked to this Japanese id in our local copy describe a retrospective state, all three supply a first person subject the Japanese does not have, and none renders the inferential auxiliary. Unlink is correct; the queue was right to list the candidates and decline them."
+  },
+  {
+   "id": "sent:tatoeba-98198",
+   "verdict": "fix",
+   "queue_action": "relink-en:410544",
+   "endorsed_action": "relink-en:410544",
+   "jp": "彼らはいつも学校をサボっています。",
+   "current_en": "They always escape from school.",
+   "current_pt": "Eles estão sempre matando aula.",
+   "why": "Confirmed mismatch and confirmed re-link target. The Japanese verb is the slang one for cutting class; the currently linked row says they physically escape from school, a different action. Row 410544 is verified present in our local copy, linked to this same Japanese id, and byte identical with the quoted string. It is the better of the two alternatives because it keeps the frequency adverb that this record targets, where row 410545 rephrases it."
+  },
+  {
+   "id": "sent:tatoeba-198311",
+   "verdict": "needs-human",
+   "queue_action": "none",
+   "endorsed_action": null,
+   "jp": "ハウスダストにアレルギーがあります。",
+   "current_en": "He is allergic to house dust.",
+   "current_pt": "Ele tem alergia a poeira doméstica.",
+   "why": "Out of band observation, not one of the 34. The queue files this row as no-change yet its own cross cutting note names it as the one record where the pt-BR visibly inherited an unsupported subject from the English. The Japanese has no subject and is polite, the English supplies a third person, and the stored pt-BR supplies the same third person. The pairing verdict of no-change is defensible, because a subject-less Japanese does not contradict the English. The Layer B consequence is not: the pt-BR asserts a person the Japanese does not mark, and this queue's action vocabulary cannot express that. Do not close this row; carry it into the separate Layer B pt re-check the queue's own note asks for."
+  }
+ ]
+}

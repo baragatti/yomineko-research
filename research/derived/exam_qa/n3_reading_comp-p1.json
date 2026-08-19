@@ -1,0 +1,98 @@
+{
+  "file": "n3_reading_comp",
+  "reviewed": 60,
+  "findings": [
+    {
+      "item_id": "rc:n3:n3-conjectura-07-02",
+      "defect": "bad-japanese",
+      "severity": "critical",
+      "evidence": "The passage read:n3-conjectura-07-02 has ONE sentence terminator across six source sentences: 今のところ別にやめる気は全然ない。どんどんガソリンの値段が上がります親はすぐにこどもを病院に連れてくる私が今こうして、二日分の日記を書く中学校の２年生が職場体験をしました子どもを連れ去る所を近所の人が見た. The exact clause the question probes is fused into the next one: 「上がります親は」 — a polite -ます form followed directly by 親は is not parseable Japanese. Five of the six source sentences (sent:jec-2434, jec-3163, jec-1177, jec-0052, jec-0455) were ingested without their terminal 。.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-conjectura-06-01",
+      "defect": "bad-japanese",
+      "severity": "major",
+      "evidence": "The answer-bearing sentence is fused on BOTH sides in read:n3-conjectura-06-01: 一人一人がしっかりと社会のルールを守る３６人が１８日と１９日の会議に出席する私たちが出かけたとたん雨が降り始めた。 A learner parses 「社会のルールを守る３６人」 ('the 36 people who follow society's rules') and 「会議に出席する私たち」 ('we who attend the meeting') as relative clauses — the sentence the question 会議に出席するのは何人ですか asks about does not exist as a standalone unit in the text. sent:jec-2032 and sent:jec-3597 lost their 。.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-desejos-05-01",
+      "defect": "bad-japanese",
+      "severity": "major",
+      "evidence": "The sentence carrying the answer is fused into the next in read:n3-desejos-05-01: もちろん無料で全てのサービスが利用できますこう書いたほうがはっきりと相手に伝わります昨日になってはじめて私はそのことを知った。 — 「利用できますこう書いた」 and 「伝わります昨日」 are both ungrammatical joins. The item asks サービスの利用について and the target clause has no boundary. sent:jec-3676 and sent:jec-2783 lost their 。.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-desejos-07-01",
+      "defect": "bad-japanese",
+      "severity": "major",
+      "evidence": "read:n3-desejos-07-01 opens 自由にリアルタイムに活動が出来ますこのお金は夏の旅行にとっておこう。 — 「出来ますこのお金は」 has no sentence break (sent:jec-0611 lost its 。). The item's question is 「このお金は何のために使うつもりか」, so the referent このお金 is precisely the token stranded at the broken boundary.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-desejos-07-01",
+      "defect": "other",
+      "severity": "major",
+      "evidence": "Content unusable in learner-facing exam material. read:n3-desejos-07-01 ends 性病にかかっているかもしれません。 ('I may have an STD'), two sentences after ああ、ひょっとしたら今夜は・・・。 The pt-BR translation ships the same: 'Pode ser que eu esteja com uma doenca sexualmente transmissivel.' This is an N3 reading passage shown to general course learners.",
+      "suggested_action": "drop-item"
+    },
+    {
+      "item_id": "rc:n3:n3-concessao-05-01",
+      "defect": "bad-japanese",
+      "severity": "major",
+      "evidence": "The answer sentence begins mid-fusion in read:n3-concessao-05-01: ＳＰの仕事の様子が今日テレビで放送されました両親が昨晩ひそひそと話をしているのを聞いた。 — 「放送されました両親」 reads as 'the parents who were broadcast'. The question 両親は昨晩、何をしていたか targets exactly this fused clause. sent:jec-4753 lost its 。.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-causa-05-02",
+      "defect": "other",
+      "severity": "major",
+      "evidence": "read:n3-causa-05-02 contains 私よりもっとエッチな人もいて安心しました。, shipped in pt-BR as 'Fiquei aliviado(a) ao ver que tambem ha gente mais safada do que eu.' Off-register for a published exam passage and unrelated to the ということ grammar point the reading is gated to.",
+      "suggested_action": "drop-item"
+    },
+    {
+      "item_id": "rc:n3:n3-conectores-06-01",
+      "defect": "bad-japanese",
+      "severity": "minor",
+      "evidence": "read:n3-conectores-06-01 opens もっと社会全体の問題に関心を持つべきだ手をきれいにしておかなければならない。 — 「べきだ手を」 is an ungrammatical join (sent:jec-0530 lost its 。). The FAX sentence the item actually tests is intact, so the keyed answer stands, but the learner reads a broken first line.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-conectores-08-02",
+      "defect": "bad-japanese",
+      "severity": "minor",
+      "evidence": "read:n3-conectores-08-02 contains 多くの学生が、アルバイトをします父がもっと長生きしていたらなあ。 — 「します父が」 has no sentence break (sent:jec-0240). The マイク sentence the item tests is unaffected.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-concessao-06-02",
+      "defect": "bad-japanese",
+      "severity": "minor",
+      "evidence": "read:n3-concessao-06-02 ends without a terminator: ...一人一人が今一度教育のあり方を考えます (sent:jec-0392). The ラクダ sentence the item tests is unaffected.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-conjectura-05-01",
+      "defect": "bad-japanese",
+      "severity": "minor",
+      "evidence": "Both the passage and the item stem use the non-standard orthography 絵を書く. Passage: 絵を書くのはとても面白いし、リラックスする。 Stem: 絵を書くことについて、この人はどう思っていますか。 Standard is 絵を描く. corpus/vocab holds 書く (vocab:1343950, n5) and 描く (vocab:1583460, n3) as distinct entries, and this bank ships alongside n3_orthography.json, which tests exactly this kind of kanji choice.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-desejos-04-01",
+      "defect": "other",
+      "severity": "minor",
+      "evidence": "The stem quotes 「続ければよかった」 in quotation marks, implying verbatim citation, but the passage reads バレエ続けてればよかった (contracted 続けていれば). No string 続ければよかった appears in read:n3-desejos-04-01. The keyed answer バレエ is still uniquely correct.",
+      "suggested_action": "rewrite-stem"
+    },
+    {
+      "item_id": "rc:n3:n3-causa-07-01",
+      "defect": "tests-nothing",
+      "severity": "minor",
+      "evidence": "火事の場合は、何番に電話すればいいか。 with options １１９ / １１０ / １１７ / １０４. 119 is Japan's fire and ambulance number and 110 is the police number — a learner who has met these numbers answers without opening the passage. The passage sentence 火事の場合は１１９に電話しなさい。 adds nothing the option set does not already disclose.",
+      "suggested_action": "rewrite-stem"
+    }
+  ],
+  "summary": "Audited indices 0-59 of n3_reading_comp.json (152 items in the file; 60 in range). No item has a wrong answer and no distractor is defensible: every keyed answer is licensed by a sentence in the referenced read: passage, and in all 60 cases the three distractors are either contradicted by the text or unsupported by it. No duplicate option strings, no option set with fewer than four members, no vocabulary or grammar above N3 in any stem or option. The defects found are of two kinds. (1) A systematic ingestion bug: sentences sourced from sent:jec-* were concatenated into the reading passages WITHOUT their terminal 。, fusing them into the neighbouring sentence. Eight of the 60 passages are affected, and in five of those (n3-conjectura-07-02, n3-conjectura-06-01, n3-desejos-05-01, n3-desejos-07-01, n3-concessao-05-01) the fused clause is exactly the one the question probes, producing strings like 上がります親は and 利用できますこう書いた that no learner can parse. n3-conjectura-07-02 is the worst case: one terminator across six sentences. This is a mechanical fix over the JEC ingest rather than a re-authoring job, and it clears ten of the thirteen findings below. (2) Two passages carry content unusable in published courseware (性病にかかっているかもしれません and 私よりもっとエッチな人, both also shipped in the pt-BR translations). One design-level observation not filed as a per-item defect: all 60 passages are concatenations of five or six mutually unrelated Tatoeba/JEC sentences with no discourse coherence, so every item resolves to single-sentence retrieval rather than comprehension across a text. No individual item can be blamed for that, but it caps what this section can measure."
+}

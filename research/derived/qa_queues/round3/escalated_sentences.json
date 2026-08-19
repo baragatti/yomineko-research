@@ -1,0 +1,89 @@
+{
+ "queue": "escalated_sentences",
+ "check": "round3-coordinated-reauthor",
+ "source_queue": "research/derived/qa_queues/round2/redissect_verified.json",
+ "verified_against": "corpus/sentences/bank.json",
+ "date": "2026-08-19",
+ "counts": {
+  "rows": 6,
+  "fix": 6,
+  "no_change": 0,
+  "needs_human": 0
+ },
+ "scope_note": "Every row here is a coordinated edit on a sent:gen- record, never a one-field patch. Each row supplies six values that must land together: jp, kana, romaji, translation pt-BR (pt), translation_literal pt-BR (pt_literal) and structure_explanation pt-BR (structure_explanation_pt). The fields this file does NOT carry, and which the same operation must still re-author, are named per row in why: the affected token entries, the affected particles entries, and the en locale of any translation or explanation whose pt-BR moved. Applying jp alone would leave the record describing a sentence that no longer exists, which is exactly why round 2 refused these. Where a value is unchanged from what is stored, it is supplied anyway and said to be unchanged, so the applier writes a complete set rather than a partial one.",
+ "summary": "All six escalations are repairable inside vocabulary the corpus already registers and already uses, so none is returned as needs-human. Three change what the sentence is about and had their pt-BR rewritten rather than tweaked: sent:gen-aef805c4840d moves the desire from the younger sister to the speaker, sent:gen-cb6562f41e17 moves the elder brother from the speaker's family to a friend's, and sent:gen-8cc2f196d1e9 moves the hair from a woman's head to a cat. In each case the declared target of the record survives the change (476 習う, 122 お兄さん, 1063 毛), which is what ruled out the obvious alternative repairs: writing 習いたがっている would import 〜たがる, a form the record does not teach and the token array does not carry, and swapping お兄さん for 兄 would delete the very entry the sentence exists to demonstrate. The other three keep their referent: sent:gen-686faf1ec51d moves an existence clause off で onto に, sent:gen-b2ed6e8bb267 moves 外国 off に onto から so the Japanese finally agrees with its own pt-BR, and sent:gen-b7b28dfc0928 writes 以下 in kanji, which changes no reading at all. Two of the six carry teaching prose that actively stated a false rule, で as the place of existence and に as the destination of an importing verb, and both replacement explanations name the correct rule and say what the wrong particle would have meant. sent:gen-cb6562f41e17 additionally carries mode-A subunits at array indices 0 and 1, so any applier must resolve token paths by the position field with split_mode C rather than by array index.",
+ "rows": [
+  {
+   "id": "sent:gen-686faf1ec51d",
+   "verdict": "fix",
+   "current": "狭い駅で人がたくさんいる",
+   "jp": "狭い駅に人がたくさんいる",
+   "kana": "せまいえきにひとがたくさんいる",
+   "romaji": "semaiekinihitogatakusaniru",
+   "pt": "Tem muita gente na estação apertada.",
+   "pt_literal": "Na estação estreita, gente existe muito.",
+   "structure_explanation_pt": "狭い駅 é um adjetivo-i modificando diretamente o substantivo seguinte: 'estação apertada'. A partícula に marca o lugar onde alguém ou algo existe, e é a partícula exigida pelos verbos de existência いる e ある; で marcaria o lugar de uma ação, não de existência. 人がたくさんいる diz que 'muita gente existe', com いる sendo o verbo de existência para seres vivos e たくさん o advérbio de quantidade.",
+   "why": "Repairable with no new vocabulary: only the particle moves, from で to に, and に is already the corpus-wide existence marker. The referent does not change, so the pt-BR is re-authored only where it was inaccurate: the stored pt said 'nesta estação' while the Japanese carries no demonstrative, so the new value drops it. pt_literal already rendered the place phrase as 'Na estação estreita' and reads correctly under に, so it is supplied unchanged. structure_explanation_pt is rewritten because the stored text taught the false rule (で as the place of existence); the new text states the いる/ある requirement and contrasts で as the place of an action. Still to be re-authored in the same operation, outside the fields this row supplies: token position 2 (surface, lemma, reading, romaji all で), particles[0] in all four of its fields, and the en locale of structure_explanation. Target vocab 341 (狭い) is untouched."
+  },
+  {
+   "id": "sent:gen-aef805c4840d",
+   "verdict": "fix",
+   "current": "妹はピアノを習いたい",
+   "jp": "私はピアノを習いたい",
+   "kana": "わたしわぴあのをならいたい",
+   "romaji": "watashiwapianoonaraitai",
+   "pt": "Quero aprender piano.",
+   "pt_literal": "Quanto a mim, piano (objeto), quero aprender.",
+   "structure_explanation_pt": "Tópico 私は (eu) + objeto ピアノを (piano) + verbo no desiderativo 習いたい (quero aprender). O 〜たい se forma com a raiz conjuntiva do verbo (習い) mais o auxiliar たい. Na forma simples, 〜たい afirma o desejo de quem fala, e não o de terceiros: para falar do desejo de outra pessoa o japonês usa 〜たがっている. Por isso o sujeito aqui é 私. A frase é casual (termina em たい, sem です), então a tradução fica num registro neutro.",
+   "why": "This is one of the three rows where the referent changes, so the pt-BR is redone rather than tweaked. The record's declared target is vocab 476 (習う) and the desiderative pattern, not the sister; 妹 (66) is incidental, so moving the subject to the speaker keeps the teaching point intact and needs no vocabulary the corpus lacks (私 is vocab 690, already the position-0 token of sent:gen-cb6562f41e17). The alternative repair, keeping 妹 and writing 習いたがっている, would introduce 〜たがる, a form this record does not teach and the token array does not carry. Both translations named the sister and are replaced with first-person values; structure_explanation_pt now states explicitly that plain 〜たい is first-person, which is the rule the stored text got wrong. Still to be re-authored in the same operation: token position 0 (surface 妹, lemma, reading いもうと, romaji imouto, gloss, vocab_id 66), particles[0].explanation in both locales (it names 妹), particles[1].explanation in both locales (it says 'ela'), and the en locale of both translations and of structure_explanation."
+  },
+  {
+   "id": "sent:gen-cb6562f41e17",
+   "verdict": "fix",
+   "current": "私のお兄さんは背が高い",
+   "jp": "友達のお兄さんは背が高い",
+   "kana": "ともだちのおにいさんわせがたかい",
+   "romaji": "tomodachinooniisanwasegatakai",
+   "pt": "O irmão mais velho do meu amigo é alto.",
+   "pt_literal": "Quanto ao irmão mais velho do amigo, a estatura é alta.",
+   "structure_explanation_pt": "A frase usa a estrutura clássica de descrição A は B が 形容詞: o tópico geral é 友達のお兄さん 'o irmão mais velho do meu amigo' (com の de posse), e dentro dele 背 'estatura' é marcado por が como o aspecto específico que é 高い 'alto'. O alvo é o vocabulário お兄さん, a forma respeitosa usada para o irmão mais velho de outra pessoa; ao falar do próprio irmão com alguém de fora da família, diz-se 兄. Em português dizemos simplesmente 'é alto', sem repetir 'a estatura'.",
+   "why": "Referent change, so the pt-BR is redone. The record exists to teach vocab 122 (お兄さん), so the repair moves the possessor instead of the head noun: 友達 is vocab 454 (n5, common) and already appears as a token in the bank 34 times, so nothing new is invented. Keeping 私 and writing 兄 would abandon the declared target. Both translations named 'meu irmão' and are replaced; structure_explanation_pt now teaches the humble and honorific split that the stored sentence inverted. Two operational cautions for whoever applies this. First, this record carries mode-A subunits at array indices 0 and 1, so token paths must be resolved by the position field with split_mode C, never by array index. Second, still to be re-authored in the same operation: token position 0 (surface 私, lemma, reading わたし, romaji watashi, pos pronoun, gloss, role, vocab_id 690), particles[0].explanation and particles[1].explanation in both locales (both name 私 or 私のお兄さん), and the en locale of both translations and of structure_explanation."
+  },
+  {
+   "id": "sent:gen-b2ed6e8bb267",
+   "verdict": "fix",
+   "current": "車を外国に輸入する会社です",
+   "jp": "車を外国から輸入する会社です",
+   "kana": "くるまをがいこくからゆにゅうするかいしゃです",
+   "romaji": "kurumaogaikokukarayunyuusurukaishadesu",
+   "pt": "É uma empresa que importa carros do exterior.",
+   "pt_literal": "Carro (objeto) do exterior importar empresa é.",
+   "structure_explanation_pt": "A frase tem uma oração relativa: 車を外国から輸入する ('importar carros do exterior') vem diretamente antes do substantivo 会社 ('empresa') e o modifica, sem partícula entre eles. O verbo 輸入する ('importar') está na forma de dicionário porque modifica um substantivo. O foco de vocabulário aqui é 輸入する: importar é trazer mercadoria para dentro do país, então を marca o objeto importado (車) e から marca a origem de onde ele vem (外国). Compare com 輸出する ('exportar'), que é o sentido inverso e aí sim leva に para o destino. A frase termina em です, fechando de forma educada a estrutura 'X é uma empresa que...'.",
+   "why": "The referent does not change here, only the case role of 外国. The stored pt-BR already said 'importa carros do exterior', which is the correct reading of 輸入 and is exactly what disagreed with the stored に, so translation pt-BR is supplied unchanged and it is the Japanese that comes into line with it. pt_literal is re-authored because it mirrored the wrong case ('para o exterior'). structure_explanation_pt is re-authored because it named に as the destination. から as an origin marker is well established in this corpus (216 particles entries, 114 of them origin or starting-point), so no new grammar is introduced. Still to be re-authored in the same operation: token position 3 (surface, lemma, reading, romaji all に), token position 2 role in both locales (currently 'complemento de destino/lugar'), particles[1] in all four of its fields, and the en locale of translation_literal and structure_explanation. Target vocab 1107 (輸入) is untouched; position 5 already carries the repointed 1358."
+  },
+  {
+   "id": "sent:gen-8cc2f196d1e9",
+   "verdict": "fix",
+   "current": "彼女の毛はとてもきれいだ",
+   "jp": "猫の毛はとてもきれいだ",
+   "kana": "ねこのけわとてもきれいだ",
+   "romaji": "nekonokewatotemokireida",
+   "pt": "O pelo do gato é muito bonito.",
+   "pt_literal": "Quanto ao pelo do gato, é muito bonito.",
+   "structure_explanation_pt": "Tópico + comentário: 猫の毛は estabelece o tema (o pelo do gato) e きれいだ faz a afirmação. きれい é um adjetivo-な (adjetivo nominal), por isso usa だ no fim em vez de conjugar como い-adjetivo. とても reforça o grau ('muito'). O foco é o vocabulário 毛, que é pelo de animal ou pelo do corpo; para o cabelo da cabeça o japonês usa 髪.",
+   "why": "Referent change, so the pt-BR is redone. The declared target is vocab 1063 (毛) and 毛 has to stay; what cannot stay is a human head as its possessor, since head hair is 髪. Moving the possessor to 猫 (vocab 492, n5, common, already a token in the bank 18 times) keeps the target word and makes the sentence say something true about it, and invents nothing. Both translations said 'o cabelo dela' and are replaced with 'o pelo do gato'; the token gloss for 毛, 'cabelo (pelo)', is part of the same problem and is listed below. structure_explanation_pt now draws the 毛 versus 髪 line explicitly, which is the pedagogical value this record was missing (髪 is vocab 1129, so the contrast points at a registered entry). Still to be re-authored in the same operation: token position 0 (surface 彼女, lemma, reading かのじょ, romaji kanojo, pos pronoun, gloss 'ela', role, vocab_id 1131), token position 2 gloss in both locales, particles[0].explanation and particles[1].explanation in both locales (both name 彼女 or 'o cabelo dela'), and the en locale of both translations and of structure_explanation."
+  },
+  {
+   "id": "sent:gen-b7b28dfc0928",
+   "verdict": "fix",
+   "current": "このケーキは五百円いかです",
+   "jp": "このケーキは五百円以下です",
+   "kana": "このけーきわごひゃくえんいかです",
+   "romaji": "konoke-kiwagohyakuenikadesu",
+   "pt": "Este bolo custa quinhentos ienes ou menos.",
+   "pt_literal": "Quanto a este bolo, é quinhentos ienes ou menos.",
+   "structure_explanation_pt": "A estrutura é simples: tópico (このケーキは) + um valor numérico (五百円) seguido de 以下, que significa 'X ou menos / até X'. O ponto-alvo é justamente 以下: ele se coloca logo depois de uma quantidade (número + contador) para indicar que o valor fica naquele limite ou abaixo dele. A frase fecha com です, dando o tom polido.",
+   "why": "The lightest of the six and the only one where nothing but orthography moves. The reading is unchanged, so kana このけーきわごひゃくえんいかです and romaji konoke-kiwagohyakuenikadesu are supplied identical to what is stored, and both translations are supplied identical because the meaning is identical. The record's grammar point is gp-93 (以下) and vocab 932 is already correctly linked; spelling the target in kana was what forced the workaround 'いか (以下)' into the token role and into structure_explanation. It also sat on a live homophone hazard: among tokens spelled いか in this bank, 9 link entry 47 (行く) and only 5 link 932. structure_explanation_pt now writes 以下 plainly. Still to be re-authored in the same operation: token position 5 surface and lemma (both いか), its role in both locales ('expressão de limite (以下)'), and the en locale of structure_explanation. Its reading, romaji and vocab_id 932 do not move."
+  }
+ ]
+}

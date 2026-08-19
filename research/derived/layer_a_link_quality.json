@@ -1,0 +1,118 @@
+{
+ "note": "Pairings that are AUTHENTIC but loose. Verified byte-exact against the upstream dataset: ingestion linked nothing wrong, the drift is upstream Tatoeba/JEC translation quality. Recorded, never edited - rewriting the English here would be the very op that was blocked.",
+ "count": 16,
+ "sentences": [
+  {
+   "slug": "sent:jec-0281",
+   "jp": "なかなか機会が有りませんでした",
+   "en": "There aren't very many chances any more.",
+   "pt": "Não tive muitas oportunidades assim.",
+   "why": "Pairing confirmed authentic: raw_jec row jec:#0281 carries this exact Japanese and this exact English, so nothing was mislinked and nothing may be rewritten. The drift the queue names is real and verifiable: the Japanese predicate is the polite past negative of the existence verb, while the English is present tense and adds a sense of no longer that the Japanese does not carry. JEC is one to one, so no re-link target exists. The stored pt-BR is past and was clearly derived from the Japanese, not from this English."
+  },
+  {
+   "slug": "sent:jec-0453",
+   "jp": "僕はカーテン越しに海を見た",
+   "en": "He looked at the sea through the curtains.",
+   "pt": "Olhei o mar através da cortina.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#0453. The drift is real and load bearing: the Japanese opens with an explicit masculine first person pronoun marked as topic, and the English renders the subject as third person. A pt-BR re-derived from this English would say ele where the Japanese says eu. JEC is one to one so there is no alternative row; unlink-en would also be defensible here and a human may prefer it, since person is the subject of the whole clause. The stored pt-BR is first person and already correct."
+  },
+  {
+   "slug": "sent:jec-0517",
+   "jp": "厳しい意見が多い",
+   "en": "There are many serious opinions.",
+   "pt": "Tem muita opinião crítica.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#0517. The Japanese adjective is the one meaning harsh, severe or critical, and the English says serious, which reads as weighty rather than critical. This is the mildest drift in the set and a human could reasonably close it as none; it is endorsed because the adjective is the only qualifier in a four token sentence and because the record teaches that qualifier. One to one dataset, so no re-link is possible."
+  },
+  {
+   "slug": "sent:jec-0611",
+   "jp": "自由にリアルタイムに活動が出来ます",
+   "en": "You do activities freely in real time.",
+   "pt": "É possível realizar atividades livremente e em tempo real.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#0611. The Japanese predicate is the potential verb and the sentence exists to teach it; the English states the action flatly with no modal. Dropping the modality is exactly the kind of one element loss the flag action was defined for. One to one dataset, so no re-link target. The stored pt-BR keeps the possibility reading."
+  },
+  {
+   "slug": "sent:jec-1737",
+   "jp": "いよいよ、虫探しの旅が始まりました",
+   "en": "He at last went on a trip to look for insects.",
+   "pt": "Finalmente, a viagem em busca de insetos começou.",
+   "why": "Pairing confirmed authentic against raw_jec row jec:#1737. The Japanese subject marked by ga is the trip itself and the verb is the intransitive one for something beginning; the English introduces a third person agent and recasts the verb as that agent departing. Same real world event, different grammatical content, and the record's structure paragraph teaches that subject marking. One to one dataset, so flag rather than re-link."
+  },
+  {
+   "slug": "sent:tatoeba-1160677",
+   "jp": "私たちの先生は、厳しいけど優しい先生です。",
+   "en": "Our English teacher is both strict and kind.",
+   "pt": "Nosso professor é rígido, mas gentil.",
+   "why": "Japanese verified byte exact upstream and only one English row is linked to this Japanese id, so re-linking is structurally impossible. The drift is real on two counts: the Japanese names no school subject while the English specifies one, and the concessive connective that this coverage record targets is flattened into a coordinating pair. Nothing here is a different proposition, so unlink would be too strong."
+  },
+  {
+   "slug": "sent:tatoeba-11733143",
+   "jp": "もしできるとしたら、どうする？",
+   "en": "If you could do that, would you?",
+   "pt": "Se você pudesse fazer isso, o que faria?",
+   "why": "Japanese verified byte exact upstream, single linked English row, so no re-link target. The subordinate clause is rendered correctly, but the Japanese main clause is an open question about what the listener would do and the English is a yes or no question about whether they would. The grammar target sits in the subordinate clause, which the English preserves, so flag rather than unlink. The stored pt-BR follows the Japanese."
+  },
+  {
+   "slug": "sent:tatoeba-169430",
+   "jp": "山の空気はすばらしい。",
+   "en": "The air in the mountain is fresh and clean.",
+   "pt": "O ar da montanha é maravilhoso.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese predicate is the adjective meaning wonderful or splendid and the English substitutes a description of freshness and cleanliness. Since that adjective is the entire predicate the anchor is weak, but both readings are positive evaluations of the same topic, so this is drift rather than a different proposition. The stored pt-BR follows the Japanese."
+  },
+  {
+   "slug": "sent:tatoeba-170417",
+   "jp": "最上のものは後から出てくる。",
+   "en": "The best is behind.",
+   "pt": "As melhores coisas vêm/aparecem depois.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese says the best thing emerges later; the English reads most naturally in modern usage as the best being already past, which inverts it. Endorsed as flag rather than unlink because the intended reading is recoverable and because unlinking would leave the record with no English at all over a reading that is merely ambiguous. A human who reads the English as inverting rather than ambiguous should escalate this one to unlink-en."
+  },
+  {
+   "slug": "sent:tatoeba-187580",
+   "jp": "何をやってみせてくれるのかしら？",
+   "en": "I wonder what they have in store for us under the big top?",
+   "pt": "O que será que vão nos mostrar?",
+   "why": "Japanese verified byte exact upstream, single linked English row. The benefactive question is preserved, but the English carries circus setting information that is nowhere in the Japanese. This is legacy Tanaka context carry over from the original dialogue, the same root cause as sent:tatoeba-1160677 and sent:tatoeba-188036, and the flag is what stops that invented context from being imported into a re-derived pt-BR."
+  },
+  {
+   "slug": "sent:tatoeba-188036",
+   "jp": "何か起きたかもしれない。",
+   "en": "Something may have happened to him.",
+   "pt": "Pode ser que algo tenha acontecido.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The English adds an affected third person that the Japanese does not mention; everything else corresponds. Considered closing this as reviewer over reading, since Japanese routinely elides such a participant, but it is endorsed for consistency with the other two Tanaka context carry over records in this queue and because the record's provenance still names en as the pt validation anchor. Lowest severity fix in the set. The stored pt-BR correctly omits the participant."
+  },
+  {
+   "slug": "sent:tatoeba-202749",
+   "jp": "ちょっと暑いのでジャケットを脱ぎます。",
+   "en": "I'd like to take my jacket off, please; it's too hot.",
+   "pt": "Está um pouco quente, então vou tirar a jaqueta.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The causal structure that this coverage record targets survives, but the speech act shifts from stating what the speaker is going to do to asking permission, and the mild adverb is intensified into too hot. Borderline between flag and none; endorsed as flag because the record's provenance names en as the pt validation anchor and a re-derived pt-BR would import the request framing."
+  },
+  {
+   "slug": "sent:tatoeba-221299",
+   "jp": "この手袋は両方がそろっていない。",
+   "en": "Their gloves are not in pairs.",
+   "pt": "Este par de luvas não está completo (falta uma).",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese topic is proximal, this pair of gloves, and the English uses a third person possessive and a plural of pairs. The predicate corresponds. Endorsed as flag because only the referent drifts, though a human could reasonably escalate to unlink on the same grounds used for the person mismatch at sent:tatoeba-227760. The stored pt-BR and literal translation already carry the proximal reading."
+  },
+  {
+   "slug": "sent:tatoeba-366809",
+   "jp": "毎日運動するようにする。",
+   "en": "Exercise every day.",
+   "pt": "Vou me esforçar para fazer exercício todo dia.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese is a first person resolution built on the you ni suru pattern that names this record; the English is a bare imperative that erases both the person and the pattern. Endorsed as flag because it is the only linked row, but note that a pt-BR derived from this English would be an order rather than a resolution, which is the same severity band as several rows the queue sent to unlink. A human ratifying the boundary should look at this row second."
+  },
+  {
+   "slug": "sent:tatoeba-78661",
+   "jp": "来週になると、何十万人もの人がその番組を見ているだろう。",
+   "en": "Next week, millions of people will be watching the TV program.",
+   "pt": "Na semana que vem, centenas de milhares de pessoas vão estar assistindo a esse programa.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese quantity is the one meaning hundreds of thousands and the English says millions, an order of magnitude apart. Everything else corresponds, and the stored pt-BR already carries the correct magnitude. Numeric drift of this kind is precisely what the flag exists to record."
+  },
+  {
+   "slug": "sent:tatoeba-83446",
+   "jp": "壁は大きな音をたててガラガラと倒れた。",
+   "en": "The fence fell with a great crash.",
+   "pt": "O muro desabou com estrondo, fazendo um barulho enorme.",
+   "why": "Japanese verified byte exact upstream, single linked English row. The Japanese subject is a wall and the English says fence, and the English also drops the onomatopoeia and the te linkage that this coverage record targets. Same collapse event, wrong object. Endorsed as flag, though note the tension with sent:tatoeba-219421, where a wrong head noun was sent to unlink; the difference is that there the wrong noun was the entire content of the sentence."
+  }
+ ]
+}

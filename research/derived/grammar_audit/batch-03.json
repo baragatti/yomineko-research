@@ -1,0 +1,46 @@
+{
+  "batch": 3,
+  "reviewed": 15,
+  "findings": [
+    {
+      "slug": "gram:gp-29",
+      "field": "formation.pt-BR",
+      "defect": "false-formation",
+      "severity": "major",
+      "evidence": "formation.pt-BR: \"Com 〜も/〜か forma indefinidos: だれも (ninguém/todos, conforme o verbo), だれか (alguém).\" Taken literally, \"todos, conforme o verbo\" tells the learner that だれも + an AFFIRMATIVE verb means \"everyone\", producing *だれも来ました / *誰も来た for \"todo mundo veio\". 誰も only licenses a negative predicate (誰も来ませんでした = \"ninguém veio\"); the \"everyone\" senses require a different word: 誰でも (\"qualquer um\") or 誰もが + affirmative (誰もが知っている). The nuance field never corrects this, so the bad rule stands unopposed.",
+      "suggested_fix": "Pronome interrogativo: fica na posição do elemento que se quer descobrir e mantém a partícula correspondente: だれが きましたか (\"quem veio?\"), だれを よびますか (\"quem você vai chamar?\"). Com です: だれですか. Há a variante mais educada どなた (\"quem\", formal). Com 〜も/〜か forma indefinidos: だれも pede verbo NEGATIVO e significa \"ninguém\" (だれも 来ませんでした = \"ninguém veio\"); だれか significa \"alguém\". Para \"todo mundo\", use だれでも (\"qualquer um\") ou だれもが + verbo afirmativo (だれもが しっている = \"todos sabem\")."
+    },
+    {
+      "slug": "gram:gp-24",
+      "field": "nuance.pt-BR",
+      "defect": "internal-contradiction",
+      "severity": "minor",
+      "evidence": "nuance.pt-BR: \"Outro reflexo a evitar: não coloque です antes do negativo (高くないです está certo, mas 高いじゃない está errado).\" The stated rule is about placement of です, but neither example contains です before a negative — 高いじゃない is wrong because an い-adjective was negated with じゃない, which is the OTHER rule already stated one sentence earlier. Rule and illustration do not match, so the caution teaches nothing about the error it names and a learner cannot tell which mistake 高いじゃない actually is.",
+      "suggested_fix": "Armadilha para brasileiros: tratar todo adjetivo igual e tentar negar com じゃない. Lembre: adjetivo-い → 〜くない; adjetivo-な e substantivo → 〜じゃない. Por isso 高くないです está certo (o です vem DEPOIS do negativo) e 高いじゃない está errado. E nunca esqueça a irregularidade いい → よくない."
+    },
+    {
+      "slug": "gram:gp-24",
+      "field": "forms[0].form",
+      "defect": "bad-form",
+      "severity": "minor",
+      "evidence": "forms[0].form is \"い- くない\" — a stray space after the hyphen, left over from stripping the word \"Adjectives\" out of structure_pattern \"い-Adjectives くない\". Every other form in the batch is a clean token (て, これ, にいく, のがすきです), and this record's own refs.label_en already carries the correct spelling \"い-くない\". As stored, the form renders to the learner as two disconnected fragments.",
+      "suggested_fix": "い-くない"
+    },
+    {
+      "slug": "gram:gp-28",
+      "field": "explanation.pt-BR",
+      "defect": "ptbr-defect",
+      "severity": "minor",
+      "evidence": "explanation.en carries two sentences that explanation.pt-BR does not: \"Before に the verb goes in the ます-stem (the ます form minus ます): 食べに行く \\\"go eat\\\"; never 食べるに行く. A noun that names an activity also works: 買い物に行く \\\"go shopping\\\".\" The pt-BR text jumps straight from \"A partícula に aqui marca a finalidade da ida.\" to \"Também funciona com 来る (vir) e 帰る (voltar)...\". An earlier correction landed only in the en mirror, so the two locales of the same field now teach different amounts, and the learner-facing locale is the one missing the anti-*食べるに行く warning at the point it is introduced.",
+      "suggested_fix": "Esta construção expressa o PROPÓSITO de um deslocamento: \"ir (a algum lugar) para fazer X\". É o nosso \"ir comprar\", \"ir comer\", \"ir estudar\". A partícula に aqui marca a finalidade da ida. Antes de に o verbo fica na raiz ます (a forma ます sem o ます): 食べに行く (\"ir comer\"); nunca 食べるに行く. Um substantivo que nomeia uma atividade também serve: 買い物に行く (\"ir fazer compras\"). Também funciona com 来る (vir) e 帰る (voltar) para indicar o objetivo do movimento."
+    },
+    {
+      "slug": "gram:gp-22",
+      "field": "nuance.en",
+      "defect": "bad-form",
+      "severity": "minor",
+      "evidence": "nuance.en ends \"...きらい is not an i-adjective (it's a na-adjective, so it doesn't conjugate like さむい/たかい. This confuses many beginners.)\" — the parenthesis opened after \"i-adjective\" is never closed at the clause boundary and instead swallows the following sentence, so the closing paren lands after \"beginners.\" The pt-BR twin is clean (\"...não é adjetivo-i, é adjetivo-na, então não se conjuga como さむい/たかい. Isso confunde muito iniciante.\"), which shows the en string was mangled by an edit rather than written that way.",
+      "suggested_fix": "Same particle trap as 好き: use が, never を. Watch the tone: きらい sounds stronger than the softened 'I don't like' of Portuguese; to soften it, Japanese speakers prefer あまり好きじゃない ('I don't like it much'). Despite ending in い, きらい is not an i-adjective — it's a na-adjective, so it doesn't conjugate like さむい/たかい. This confuses many beginners."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "batch": 6,
+  "reviewed": 15,
+  "findings": [
+    {
+      "slug": "gram:keredo-mo",
+      "field": "formation.pt-BR / formation.en",
+      "defect": "internal-contradiction",
+      "severity": "major",
+      "evidence": "formation: \"Variantes do mesmo grupo, do mais formal ao mais casual: けれども > けれど > けど > が.\" — a escala coloca が como a MAIS casual do grupo, abaixo de けど. O nuance do MESMO registro diz o oposto: \"Não confunda com が (\\\"mas\\\"), que tem função parecida mas é ainda mais neutro/escrito\"; e gram:kedo (id 89) diz \"em situações formais prefira けれども ou が\". Seguindo a escala como está, o aluno escreve 高いが em conversa de bar e 高いけど num e-mail formal — o inverso exato do uso real.",
+      "suggested_fix": "Variantes do mesmo grupo, da mais formal à mais casual: が > けれども > けれど > けど."
+    },
+    {
+      "slug": "gram:i-adjectives",
+      "field": "nuance.pt-BR / nuance.en",
+      "defect": "internal-contradiction",
+      "severity": "major",
+      "evidence": "nuance: \"高いでした e 高くないです como passado estão errados\" — e duas frases depois o mesmo campo ensina \"a negação educada é 高くないです ou 高くありません\". 高くないです é a negação polida correta e nunca foi uma tentativa de passado; o erro clássico que a lista queria condenar é 高くないでした. Como está, o registro condena uma forma correta e o aluno passa a evitar a única negação polida que tem no N5.",
+      "suggested_fix": "Pegadinha número um para brasileiros: NÃO use です para formar passado ou negativo. 高いでした e 高くないでした estão errados; o tempo já está dentro do adjetivo (高かった, 高くなかった)."
+    },
+    {
+      "slug": "gram:itsumo",
+      "field": "nuance.pt-BR / nuance.en",
+      "defect": "internal-contradiction",
+      "severity": "minor",
+      "evidence": "nuance: \"Diferente do português, いつも não precisa de negação para significar \\\"nunca\\\": quem dá esse sentido é o verbo no negativo; sozinho, いつも é positivo.\" A primeira metade afirma que não é preciso negação e a segunda diz que é justamente o verbo negativo que dá o sentido. Lido literalmente pela primeira metade, o aluno produz いつも来る para \"nunca vem\" (o correto é いつも来ない, como o próprio campo formation ensina).",
+      "suggested_fix": "Diferente do português, o japonês não tem uma palavra solta para \"nunca\": esse sentido vem de いつも com o verbo no negativo (いつも来ない = nunca vem); sozinho, いつも é positivo."
+    },
+    {
+      "slug": "gram:ka-ka",
+      "field": "nuance.pt-BR / nuance.en",
+      "defect": "internal-contradiction",
+      "severity": "minor",
+      "evidence": "nuance: \"o か de \\\"ou\\\" vem depois do primeiro item (A か B), diferente do nosso \\\"ou\\\", que fica entre as palavras\". Em A か B o か está exatamente entre as palavras — o contraste é falso e contradiz o exemplo dado na mesma frase, deixando o aluno sem saber onde a partícula realmente cai. O contraste verdadeiro é que か se repete em cada item (A か B か C), enquanto \"ou\" aparece uma única vez.",
+      "suggested_fix": "Pegadinha importante para brasileiros: か cola no fim de cada item (A か B か C), enquanto o nosso \"ou\" aparece uma única vez, antes do último item (A, B ou C)."
+    },
+    {
+      "slug": "gram:gp-7",
+      "field": "formation.pt-BR / formation.en",
+      "defect": "false-formation",
+      "severity": "minor",
+      "evidence": "formation: \"Negativo (forma ない): -u vira -a + ない → 書く→書かない, 飲む→飲まない; exceção: verbos em -う viram -わ\". Aplicada literalmente ao godan ある, a regra gera *あらない — o negativo real é o supletivo ない. O campo já enumera exceções (買う→買わない, 行く→行った) mas omite justamente a mais frequente do N5, e *あらない é um erro clássico de iniciante.",
+      "suggested_fix": "…exceção: verbos em -う viram -わ (買う kau → 買わない, não 買あない); ある é irregular: seu negativo é ない (nunca あらない)."
+    },
+    {
+      "slug": "gram:janai-dewa-nai",
+      "field": "register",
+      "defect": "register-contradiction",
+      "severity": "minor",
+      "evidence": "register = [\"plain\",\"casual\"], mas o registro contém a forma ではない rotulada em forms como \"não é (formal/escrito)\", a explanation diz \"ではない é a forma completa, mais formal e usada na escrita\" e o nuance manda \"Em contextos formais ou escritos prefira ではない/ではありências\". Sem tag formal/written, ではない é classificado como fala casual e vai parar em exercícios de registro coloquial.",
+      "suggested_fix": "[\"plain\",\"casual\",\"formal\",\"written\"]"
+    },
+    {
+      "slug": "gram:ka-ka",
+      "field": "forms[0].form",
+      "defect": "bad-form",
+      "severity": "minor",
+      "evidence": "forms[0].form = \"かか\" com structure_pattern = \"か～か\". \"かか\" não é forma nenhuma do japonês — é o padrão com o ～ apagado na concatenação. Exibida numa lista de formas, ensina um item inexistente ao aluno.",
+      "suggested_fix": "か～か"
+    }
+  ]
+}
