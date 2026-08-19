@@ -8,187 +8,188 @@
   },
   "say_now": [
     "sent:tatoeba-1046077",
-    "sent:tatoeba-169066",
-    "sent:tatoeba-169112",
-    "sent:tatoeba-169083",
-    "sent:tatoeba-169114",
-    "sent:tatoeba-9553773"
+    "sent:tatoeba-84568",
+    "sent:tatoeba-184254",
+    "sent:tatoeba-141544",
+    "sent:jec-0320",
+    "sent:tatoeba-172198"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1304970",
     "vocab:1487660",
-    "vocab:1221270",
-    "vocab:1522050"
+    "vocab:1579260",
+    "vocab:1387990",
+    "vocab:1531710",
+    "vocab:1156530",
+    "vocab:1379380",
+    "vocab:1227560",
+    "vocab:1289370",
+    "vocab:1010150",
+    "vocab:1535780"
   ],
   "patterns": [
-    "gram:gp-96",
-    "gram:ta-bakari",
-    "gram:bakari",
-    "gram:gp-94"
+    "gram:mitai-da",
+    "gram:to-iu",
+    "gram:tai"
   ],
   "kanji_recognition": [
     "仕",
     "事",
     "必",
     "要",
-    "終",
-    "付"
+    "休",
+    "昨"
   ],
   "shadowing": [
     "sent:tatoeba-1046077",
-    "sent:tatoeba-169066",
-    "sent:tatoeba-169112",
-    "sent:tatoeba-169083",
-    "sent:tatoeba-169114",
-    "sent:tatoeba-9553773"
+    "sent:tatoeba-84568",
+    "sent:tatoeba-184254",
+    "sent:tatoeba-141544",
+    "sent:jec-0320",
+    "sent:tatoeba-172198"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 231,
+  "cumulative_known_vocab": 267,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "kr:n5:146",
-      "type": "kanji_reading",
+      "id": "so:n3:677",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:153:754",
+      "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "とたん",
-        "あんな",
-        "はなす"
+        "電気",
+        "何処",
+        "生産"
       ]
     },
     {
-      "id": "kr:n5:287",
+      "id": "cf:n4:3790:754",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "読む",
+        "急ぐ",
+        "聞く"
+      ]
+    },
+    {
+      "id": "kr:n4:706",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しまる",
+        "ようい",
         "ねだん",
-        "すわる"
+        "そんな"
       ]
     },
     {
-      "id": "cf:n4:1111:1132",
-      "type": "context_fill",
-      "via": "review",
+      "id": "kr:n4:754",
+      "type": "kanji_reading",
+      "via": "new-word",
       "distractors": [
-        "事",
-        "僕",
-        "人"
-      ]
-    },
-    {
-      "id": "cf:n4:1112:1132",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "足",
-        "犬",
-        "川"
+        "おくる",
+        "きらい",
+        "なまえ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-88",
-    "gram:ga-hitsuyou"
+    "gram:ga-hitsuyou",
+    "gram:yori"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-96",
+      "pattern": "gram:mitai-da",
       "examples": [
-        "sent:tatoeba-203978",
-        "sent:tatoeba-10703314",
-        "sent:tatoeba-203977"
+        "sent:tatoeba-4216208",
+        "sent:gen-1d94a829f09c",
+        "sent:tatoeba-774692"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ta-bakari",
+      "pattern": "gram:to-iu",
       "examples": [
-        "sent:tatoeba-11009581",
-        "sent:tatoeba-9722237",
-        "sent:tatoeba-159565"
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:tai",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-94",
-      "examples": [
-        "sent:gen-c68da1d332cd",
-        "sent:gen-5b0f0ae6501d",
-        "sent:gen-2d4d2149594f"
+        "sent:tatoeba-83633",
+        "sent:tatoeba-83634",
+        "sent:tatoeba-84964"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Tenho que ir dormir.",
-      "answer_key": "寝なくちゃ。",
+      "prompt_pt": "Havia quatro móveis no quarto.",
+      "answer_key": "部屋には家具が４点あった。",
       "accepted_variants": [
-        "寝なくちゃ",
-        "寝なくちゃ。"
+        "部屋には家具が４点あった",
+        "部屋には家具が４点あった。"
       ],
-      "sentence": "sent:tatoeba-12483339",
+      "sentence": "sent:tatoeba-84223",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Ele disse a eles para se hospedarem naquela pousada.",
-      "answer_key": "彼は彼らにその旅館に泊まるように言った。",
+      "prompt_pt": "Estou pensando em dormir mais cedo hoje à noite.",
+      "answer_key": "今夜は早めに寝ようと思う。",
       "accepted_variants": [
-        "彼は彼らにその旅館に泊まるように言った",
-        "彼は彼らにその旅館に泊まるように言った。"
+        "今夜は早めに寝ようと思う",
+        "今夜は早めに寝ようと思う。"
       ],
-      "sentence": "sent:tatoeba-101164",
+      "sentence": "sent:tatoeba-3313203",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Esse hotel tem piscina, quadra de tênis e coisas do tipo.",
-      "answer_key": "そのホテルにはプールやテニスコート等がある。",
+      "prompt_pt": "Poderia me mostrar o quarto?",
+      "answer_key": "部屋を見せていただけますか。",
       "accepted_variants": [
-        "そのホテルにはプールやテニスコート等がある",
-        "そのホテルにはプールやテニスコート等がある。"
+        "部屋を見せていただけますか",
+        "部屋を見せていただけますか。"
       ],
-      "sentence": "sent:tatoeba-212614",
+      "sentence": "sent:tatoeba-84126",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
     "items": [
-      "sent:tatoeba-204702",
-      "sent:tatoeba-11953118",
-      "sent:tatoeba-10587984",
-      "sent:tatoeba-121103",
-      "sent:tatoeba-10723441",
-      "sent:tatoeba-3313203"
+      "sent:tatoeba-84180",
+      "sent:tatoeba-84132",
+      "sent:tatoeba-84114",
+      "sent:tatoeba-218592",
+      "sent:tatoeba-84124",
+      "sent:tatoeba-77964"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 27,
     "fluency": 6
   }
 }

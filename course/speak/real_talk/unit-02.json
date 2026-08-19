@@ -7,64 +7,53 @@
     "pt-BR": "Conversa de verdade — parte 2"
   },
   "say_now": [
-    "sent:tatoeba-10274623",
-    "sent:tatoeba-78052",
     "sent:tatoeba-80952",
-    "sent:jec-4908",
+    "sent:tatoeba-78052",
     "sent:tatoeba-9938017",
-    "sent:tatoeba-90133"
+    "sent:tatoeba-90133",
+    "sent:tatoeba-10050266",
+    "sent:tatoeba-1227292"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1002290",
-    "vocab:1602710",
     "vocab:1529410",
-    "vocab:1487400",
     "vocab:1378520",
     "vocab:1080000",
-    "vocab:1594060"
+    "vocab:1594060",
+    "vocab:1172400",
+    "vocab:1581930",
+    "vocab:1216280"
   ],
   "patterns": [
     "gram:ta-bakari",
     "gram:janai-dewa-nai",
     "gram:bakari",
-    "gram:gp-105",
-    "gram:gp-89",
-    "gram:mitai-da"
+    "gram:mitai-da",
+    "gram:rashii"
   ],
   "kanji_recognition": [
-    "前",
+    "夢",
     "親",
     "生",
     "両",
-    "夢",
-    "気"
+    "始",
+    "幸"
   ],
   "shadowing": [
-    "sent:tatoeba-10274623",
-    "sent:tatoeba-78052",
     "sent:tatoeba-80952",
-    "sent:jec-4908",
+    "sent:tatoeba-78052",
     "sent:tatoeba-9938017",
-    "sent:tatoeba-90133"
+    "sent:tatoeba-90133",
+    "sent:tatoeba-10050266",
+    "sent:tatoeba-1227292"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 487,
+  "cumulative_known_vocab": 556,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "cf:n3:5290:1544",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "正月",
-        "半分",
-        "電車"
-      ]
-    },
     {
       "id": "cf:n3:5550:1966",
       "type": "context_fill",
@@ -76,33 +65,13 @@
       ]
     },
     {
-      "id": "pp:n3:1544",
-      "type": "paraphrase",
+      "id": "cf:n3:1277:1966",
+      "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "喉",
-        "時",
-        "薬"
-      ]
-    },
-    {
-      "id": "pp:n4:717",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "負ける",
-        "為さる",
-        "起こす"
-      ]
-    },
-    {
-      "id": "kr:n3:1544",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あんな",
-        "てがみ",
-        "くうき"
+        "咖哩",
+        "食事",
+        "家族"
       ]
     },
     {
@@ -110,13 +79,25 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "うごく",
-        "いたい",
-        "にがい"
+        "ようい",
+        "かかり",
+        "うごく"
+      ]
+    },
+    {
+      "id": "kr:n4:800",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ふん",
+        "まど",
+        "なぜ"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:gp-36"
+  ],
   "drills": [
     {
       "pattern": "gram:ta-bakari",
@@ -146,24 +127,6 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-105",
-      "examples": [
-        "sent:tatoeba-157461",
-        "sent:tatoeba-189160",
-        "sent:tatoeba-218501"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-89",
-      "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:mitai-da",
       "examples": [
         "sent:tatoeba-4216208",
@@ -171,27 +134,36 @@
         "sent:gen-1d94a829f09c"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Parece que ele está doente.",
-      "answer_key": "彼は病気らしい。",
+      "prompt_pt": "Não posso deixar você fazer uma coisa dessas.",
+      "answer_key": "お前にそんなこと、させるわけにはいかないよ。",
       "accepted_variants": [
-        "彼は病気らしい",
-        "彼は病気らしい。"
+        "お前にそんなこと、させるわけにはいかないよ",
+        "お前にそんなこと、させるわけにはいかないよ。"
       ],
-      "sentence": "sent:tatoeba-100541",
+      "sentence": "sent:tatoeba-10274623",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "O cachorro parece estar doente.",
-      "answer_key": "犬は病気みたい。",
+      "prompt_pt": "No entanto, é caro demais.",
+      "answer_key": "しかしながら、高すぎる。",
       "accepted_variants": [
-        "犬は病気みたい",
-        "犬は病気みたい。"
+        "しかしながら、高すぎる",
+        "しかしながら、高すぎる。"
       ],
-      "sentence": "sent:tatoeba-774692",
+      "sentence": "sent:tatoeba-216263",
       "strand": "meaning-output"
     },
     {
@@ -209,26 +181,26 @@
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
       "sent:tatoeba-230514",
-      "sent:tatoeba-8579878",
-      "sent:tatoeba-235244",
-      "sent:jec-0517",
-      "sent:tatoeba-89607",
-      "sent:tatoeba-179684"
+      "sent:tatoeba-79019",
+      "sent:tatoeba-74350",
+      "sent:tatoeba-79047",
+      "sent:tatoeba-80630",
+      "sent:tatoeba-235244"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 60,
+    "language-focused": 56,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 27,
     "fluency": 6
   }
 }

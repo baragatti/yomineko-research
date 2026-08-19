@@ -7,82 +7,85 @@
     "pt-BR": "Quando, que horas, combinar — parte 6"
   },
   "say_now": [
-    "sent:tatoeba-174391",
-    "sent:tatoeba-1699768",
-    "sent:tatoeba-179620",
     "sent:tatoeba-1590321",
-    "sent:tatoeba-12164913",
-    "sent:tatoeba-226765"
+    "sent:tatoeba-226765",
+    "sent:tatoeba-171774",
+    "sent:tatoeba-80616",
+    "sent:tatoeba-184394",
+    "sent:tatoeba-3263386"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1268990",
     "vocab:1273270",
     "vocab:1002650",
     "vocab:1002590",
-    "vocab:1577280",
-    "vocab:1454670",
-    "vocab:1243320",
-    "vocab:1546300"
+    "vocab:1222590",
+    "vocab:1307500",
+    "vocab:1293810",
+    "vocab:1384830",
+    "vocab:1477950",
+    "vocab:1269060",
+    "vocab:1559380"
   ],
   "patterns": [
     "gram:masen-ka",
     "gram:gp-149",
-    "gram:darou",
     "gram:gp-17",
-    "gram:garu-gatteiru"
+    "gram:da-desu",
+    "gram:gp",
+    "gram:kara"
   ],
   "kanji_recognition": [
-    "外",
+    "園",
     "午",
     "後",
-    "出",
-    "上",
-    "暇"
+    "公",
+    "行",
+    "今"
   ],
   "shadowing": [
-    "sent:tatoeba-174391",
-    "sent:tatoeba-1699768",
-    "sent:tatoeba-179620",
     "sent:tatoeba-1590321",
-    "sent:tatoeba-12164913",
-    "sent:tatoeba-226765"
+    "sent:tatoeba-226765",
+    "sent:tatoeba-171774",
+    "sent:tatoeba-80616",
+    "sent:tatoeba-184394",
+    "sent:tatoeba-3263386"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 331,
+  "cumulative_known_vocab": 373,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:775",
+      "id": "so:n3:558",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n4:3623",
+      "id": "so:n3:665",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:3623:1300",
+      "id": "cf:n3:665:2453",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "どんな",
-        "食べる",
-        "小さい"
+        "二",
+        "足",
+        "分"
       ]
     },
     {
-      "id": "cf:n4:369:840",
+      "id": "cf:n4:3700:848",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "辛い",
-        "安い",
-        "来る"
+        "漸と",
+        "説明",
+        "大学"
       ]
     },
     {
@@ -96,25 +99,23 @@
       ]
     },
     {
-      "id": "kr:n4:1081",
+      "id": "kr:n4:1129",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ねむい",
-        "ちかく",
-        "おもう"
+        "はこ",
+        "けす",
+        "いつ"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:gp-75"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:masen-ka",
       "examples": [
         "sent:gen-4595bdeb6907",
-        "sent:gen-4e948f2f75b0",
+        "sent:gen-24bb23e4256e",
         "sent:gen-a94929c3a847"
       ],
       "strand": "language-focused"
@@ -124,16 +125,7 @@
       "examples": [
         "sent:tatoeba-77812",
         "sent:tatoeba-4856",
-        "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
+        "sent:tatoeba-83623"
       ],
       "strand": "language-focused"
     },
@@ -147,44 +139,62 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:garu-gatteiru",
+      "pattern": "gram:da-desu",
       "examples": [
-        "sent:gen-a0d367f9d037",
-        "sent:gen-2424c6ff626d",
-        "sent:gen-0ce029328959"
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kara",
+      "examples": [
+        "sent:tatoeba-76156",
+        "sent:gen-061ed9aa1785",
+        "sent:gen-5b9e3ecfbcaf"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Eu costumava nadar aqui todos os dias.",
-      "answer_key": "私はここで毎日泳いだものだ。",
+      "prompt_pt": "Você está livre na sexta-feira à tarde?",
+      "answer_key": "金曜日の午後はお暇ですか。",
       "accepted_variants": [
-        "私はここで毎日泳いだものだ",
-        "私はここで毎日泳いだものだ。"
+        "金曜日の午後はお暇ですか",
+        "金曜日の午後はお暇ですか。"
       ],
-      "sentence": "sent:tatoeba-161057",
+      "sentence": "sent:tatoeba-179620",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "É que não tenho muito tempo. Você poderia se apressar?",
-      "answer_key": "時間があまりないんです。急いでもらえませんか。",
+      "prompt_pt": "Será que vai melhorar à tarde?",
+      "answer_key": "午後には上がるだろうか？",
       "accepted_variants": [
-        "時間があまりないんです。急いでもらえませんか",
-        "時間があまりないんです。急いでもらえませんか。"
+        "午後には上がるだろうか",
+        "午後には上がるだろうか？"
       ],
-      "sentence": "sent:tatoeba-1190209",
+      "sentence": "sent:tatoeba-1699768",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Levei três semanas para me curar da gripe.",
-      "answer_key": "インフルエンザを治すのに三週間かかりました。",
+      "prompt_pt": "À tarde não quero sair de casa.",
+      "answer_key": "午後は外へ出たくない。",
       "accepted_variants": [
-        "インフルエンザを治すのに三週間かかりました",
-        "インフルエンザを治すのに三週間かかりました。"
+        "午後は外へ出たくない",
+        "午後は外へ出たくない。"
       ],
-      "sentence": "sent:tatoeba-83926",
+      "sentence": "sent:tatoeba-174391",
       "strand": "meaning-output"
     }
   ],
@@ -203,15 +213,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 34,
     "fluency": 6
   }
 }

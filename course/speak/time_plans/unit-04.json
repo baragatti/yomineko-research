@@ -7,167 +7,172 @@
     "pt-BR": "Quando, que horas, combinar — parte 4"
   },
   "say_now": [
-    "sent:tatoeba-154767",
-    "sent:tatoeba-79549",
-    "sent:tatoeba-125943",
-    "sent:tatoeba-11013726",
+    "sent:tatoeba-80417",
     "sent:tatoeba-145155",
-    "sent:tatoeba-171539"
+    "sent:tatoeba-171539",
+    "sent:tatoeba-143418",
+    "sent:tatoeba-536767",
+    "sent:tatoeba-80373"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1155120",
-    "vocab:1538130",
-    "vocab:1483740",
-    "vocab:1405800",
     "vocab:1386500",
     "vocab:1542160",
-    "vocab:1106400"
+    "vocab:1373860",
+    "vocab:1236070",
+    "vocab:1337270",
+    "vocab:1438690",
+    "vocab:1499720"
   ],
   "patterns": [
-    "gram:gp-142",
-    "gram:da-desu"
+    "gram:gp-42",
+    "gram:made-ni",
+    "gram:owaru"
   ],
   "kanji_recognition": [
-    "以",
-    "間",
-    "私",
-    "時",
-    "上",
-    "待"
+    "思",
+    "雪",
+    "日",
+    "明",
+    "新",
+    "聞"
   ],
   "shadowing": [
-    "sent:tatoeba-154767",
-    "sent:tatoeba-79549",
-    "sent:tatoeba-125943",
-    "sent:tatoeba-11013726",
+    "sent:tatoeba-80417",
     "sent:tatoeba-145155",
-    "sent:tatoeba-171539"
+    "sent:tatoeba-171539",
+    "sent:tatoeba-143418",
+    "sent:tatoeba-536767",
+    "sent:tatoeba-80373"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 315,
+  "cumulative_known_vocab": 356,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:525",
+      "id": "so:n4:3427",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n3:722",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3684:1118",
+      "id": "cf:n4:3427:859",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "悪い",
-        "小説",
-        "関係"
+        "明日",
+        "趣味",
+        "何時"
       ]
     },
     {
-      "id": "cf:n4:3372:1118",
+      "id": "cf:n5:4163:426",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "一人",
-        "走る",
-        "地図"
+        "洋袴",
+        "電気",
+        "同じ"
       ]
     },
     {
-      "id": "kr:n4:1062",
+      "id": "kr:n4:859",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ほとんど",
-        "かんけい",
-        "しょくじ"
+        "あたま",
+        "おえる",
+        "わるい"
       ]
     },
     {
-      "id": "kr:n4:1118",
+      "id": "kr:n5:157",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しんぶん",
-        "がっこう",
-        "かのじょ"
+        "きく",
+        "ひく",
+        "かわ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:sou-da-1",
-    "gram:tsuzukeru",
-    "gram:gp-45",
-    "gram:gp-150"
+    "gram:nakereba-naranai",
+    "gram:gp-110",
+    "gram:sou-da-1"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-142",
+      "pattern": "gram:gp-42",
       "examples": [
-        "sent:tatoeba-78454",
-        "sent:tatoeba-137678",
-        "sent:tatoeba-83221"
+        "sent:tatoeba-227007",
+        "sent:tatoeba-994640",
+        "sent:tatoeba-229458"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:made-ni",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-150564",
+        "sent:tatoeba-218050",
+        "sent:tatoeba-147666"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:owaru",
+      "examples": [
+        "sent:tatoeba-228649",
+        "sent:tatoeba-8727067",
+        "sent:tatoeba-10206436"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Hoje estou com um pouco de dor de cabeça.",
-      "answer_key": "今日はちょっと頭が痛いの。",
+      "prompt_pt": "Explicar para você por que não vai dar certo ia levar um tempão.",
+      "answer_key": "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。",
       "accepted_variants": [
-        "今日はちょっと頭が痛いの",
-        "今日はちょっと頭が痛いの。"
+        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ",
+        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。"
       ],
-      "sentence": "sent:tatoeba-9777117",
+      "sentence": "sent:tatoeba-4905",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Hoje minha cabeça não está funcionando bem.",
-      "answer_key": "今日は頭がさえません。",
+      "prompt_pt": "Se você continua todos os dias, isso vira força.",
+      "answer_key": "毎日続けると力になる。",
       "accepted_variants": [
-        "今日は頭がさえません",
-        "今日は頭がさえません。"
+        "毎日続けると力になる",
+        "毎日続けると力になる。"
       ],
-      "sentence": "sent:tatoeba-171531",
+      "sentence": "sent:tatoeba-11013726",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "\"Quando você acorda?\" \"Às oito da manhã.\"",
-      "answer_key": "「いつ起きるの？」「朝八時だよ」",
+      "prompt_pt": "Como caminhamos por muito tempo, ficamos exaustos.",
+      "answer_key": "長い時間歩いたので疲れきった。",
       "accepted_variants": [
-        "「いつ起きるの？」「朝八時だよ」"
+        "長い時間歩いたので疲れきった",
+        "長い時間歩いたので疲れきった。"
       ],
-      "sentence": "sent:tatoeba-1037362",
+      "sentence": "sent:tatoeba-125943",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
-      "sent:tatoeba-80495",
-      "sent:tatoeba-152614",
-      "sent:tatoeba-10014826",
-      "sent:tatoeba-79849",
-      "sent:tatoeba-150577",
-      "sent:tatoeba-80452"
+      "sent:tatoeba-154767",
+      "sent:tatoeba-9777117",
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362",
+      "sent:tatoeba-80068",
+      "sent:tatoeba-152614"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -176,13 +181,13 @@
   "strands": {
     "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 24,
     "fluency": 6
   }
 }

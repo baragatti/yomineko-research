@@ -1,0 +1,202 @@
+{
+ "queue": "needs-human-round2",
+ "source_queues": [
+  "research/derived/qa_queues/phase4_grammar.json",
+  "research/derived/qa_queues/redissect.json"
+ ],
+ "resolved_at": "2026-08-19",
+ "id_format": "grammar rows keep the source id <slug>#<field>; sentence rows keep the source slug, and rows added by this pass address a token field as <slug>#tokens[position=N].<field>",
+ "note": "'fix' is always a value to write, never an instruction. An empty 'fix' on a needs-human row means no value was written; an empty 'fix' on a 'fix' row means delete the anchored span. 'current' is a byte-exact substring of the stored value, except where it quotes a JSON fragment or a canonical json.dumps rendering of an array or object, which is stated in 'why'. TOKEN PATHS MUST BE RESOLVED BY THE position FIELD WITH split_mode C, NEVER BY ARRAY INDEX: sent:gen-cb6562f41e17 and sent:gen-67098aef1bd0 carry mode-A subunits ahead of every mode-C row. Evidence for every boundary and link claim here comes from running the project's own dissector (scripts/ingest/dissect.py, SudachiPy 0.6.11 with sudachidict_full, against db/corpus.sqlite) and from the local Tatoeba dumps under research/datasets/tatoeba/. This pass modified nothing in corpus/.",
+ "counts": {
+  "source_needs_human_rows": 17,
+  "of_those_resolved_to_fix": 7,
+  "of_those_resolved_to_no_change": 3,
+  "of_those_still_needs_human": 7,
+  "additional_fix_rows_derived_while_verifying": 9,
+  "rows_in_file": 26
+ },
+ "rows": [
+  {
+   "id": "gram:gp-115#forms[0].form",
+   "verdict": "needs-human",
+   "current": "れる",
+   "fix": "",
+   "why": "CONFIRMED needs-human, but the decision is now narrow and packaged. Certain: れる must not stay. On a godan verb れる is the PASSIVE suffix, and gram:gp-63 (passive) stores the byte-identical forms[0] value れる, so the two records are indistinguishable at the form layer, while gp-115's own already-corrected gloss says the godan potential is the -u to -eru vowel change. Also certain: no kana suffix exists, because the change is a vowel-row shift that keeps the consonant (書ける, 話せる, 飲める, 待てる), and a value like eる would put Latin letters in forms[].form, which has never held them in any of the 498 distinct values across corpus/grammar/n3.json, n4.json and n5.json. The registry already answers this class of problem: gram:gp-127 stores 命令形, gram:ikou-kei-volitional-form stores 意向形, gram:ukemi-kei stores 受身形, all in forms[].form, precisely because those conjugations have no single kana suffix. RECOMMENDED PACKAGE, to accept or reject as one unit, since forms[0] cannot move without the two fields that quote it: forms[0].form becomes 可能形; label.pt-BR becomes forma potencial, \"poder/conseguir\" (可能形, 〜られる); label.en becomes potential form, \"to be able to\" (可能形, 〜られる); structure_pattern becomes 可能形. forms[1] られる and its gloss stay untouched. A human owns this because it rewrites two learner-facing label strings, and because the alternative worth weighing is retiring gp-115 as a duplicate of gram:rareru (られる) rather than repairing it."
+  },
+  {
+   "id": "gram:you-da#formation_pt",
+   "verdict": "fix",
+   "current": "Verbos grupo 1 (godan): troca a vogal -u final por -ō → 行く→行こう, 飲む→飲もう, 話す→話そう, 待つ→待とう. Verbos grupo 2 (ichidan): tira o る e acrescenta よう → 食べる→食べよう, 見る→見よう. Irregulares: する→しよう, 来る（くる）→来よう（こよう）. A versão polida correspondente é a base ます + ましょう (食べましょう).",
+   "fix": "Oração na forma simples + ようだ: verbo (雨が降っているようだ), adjetivo-い (寒いようだ). Adjetivo-な + な + ようだ (元気なようだ). Substantivo + の + ようだ (夢のようだ). Antes de substantivo vira ような (夢のような話); antes de verbo ou adjetivo vira ように (夢のように). A versão polida é ようです.",
+   "why": "Upgraded from needs-human to fix. Re-read of corpus/grammar/n4.json confirms the defect is still live and untouched: the whole formation.pt-BR conjugates the VOLITIVO (行く→行こう, 食べる→食べよう, する→しよう, ましょう) inside a record whose label, forms[0] and structure_pattern have all already been corrected to 〜ようだ. Nothing here is a judgement call; it is plain attachment morphology and every clause of the replacement is checkable against the record's own 夢のようだ example. The value differs from the queue's draft only to follow the registry's own wording: adjetivo-い and adjetivo-な are the corpus conventions (39 and 40 uses) against adjetivo-i and adjetivo-na (15 and 10), and forma simples is the dominant term (65 uses)."
+  },
+  {
+   "id": "gram:you-da#formation_en",
+   "verdict": "fix",
+   "current": "Group 1 (godan) verbs: replace the final -u vowel with -ō → 行く→行こう, 飲む→飲もう, 話す→話そう, 待つ→待とう. Group 2 (ichidan) verbs: drop the る and add よう → 食べる→食べよう, 見る→見よう. Irregulars: する→しよう, 来る（くる）→来よう（こよう）. The corresponding polite version is the ます base + ましょう (食べましょう).",
+   "fix": "Clause in plain form + ようだ: verb (雨が降っているようだ), い-adjective (寒いようだ). な-adjective + な + ようだ (元気なようだ). Noun + の + ようだ (夢のようだ). Before a noun it becomes ような (夢のような話); before a verb or adjective, ように (夢のように). The polite version is ようです.",
+   "why": "Same live defect on the en side, same reasoning as formation_pt. い-adjective and な-adjective are the corpus conventions on the en side too (85 and 88 uses against 29 and 32 for the romanized spellings), as are clause and plain form."
+  },
+  {
+   "id": "gram:you-da#nuance_pt",
+   "verdict": "fix",
+   "current": "É CASUAL: entre desconhecidos ou em situação formal, use 〜ましょう. O brasileiro costuma traduzir como imperativo (\"comamos!\"), mas o tom é mais de convite amigável (\"bora comer\"). Atenção: sozinha, ela não pede permissão; para isso, liga-se a outras estruturas (ver ようと思う e 〜ようか). Não confunda esse 〜よう volitivo com o 〜ようだ de aparência/comparação; são coisas diferentes, apesar da grafia parecida.",
+   "fix": "〜ようだ não é palpite solto: apoia-se em algo que a pessoa percebeu, viu, ouviu ou sentiu. Para repassar o que ouviu de terceiros, use 〜そうだ; para uma impressão visual imediata, 〜そう (寒そう); para conclusão tirada de informação indireta, 〜らしい. Na conversa do dia a dia o equivalente é 〜みたいだ, e 〜ようだ soa mais formal e escrito. A grande armadilha para brasileiros: o 〜よう da forma volitiva (食べよう) se parece na grafia, mas prende-se ao verbo e propõe uma ação, enquanto 〜ようだ vem depois de uma oração inteira e comenta uma aparência.",
+   "why": "Upgraded from needs-human to fix; the field is still the volitional's nuance word for word (É CASUAL ... use 〜ましょう, comamos!, bora comer), and its register advice is the exact opposite of what this record's own explanation says (É a versão mais formal e escrita de 〜みたいだ). Two corrections to the queue's draft. It called 〜らしい a purely visual impression, which is wrong: 様態 〜そう is the visual impression (寒そう) and 〜らしい is a conclusion from indirect information, so the three contrasts are now separated correctly. And the closing pitfall no longer restates the sentence that stays in explanation.pt-BR after the expl_pt deletion; it adds the attachment difference instead, which is the part a learner actually needs. A grande armadilha para brasileiros is the registry's own phrasing, taken from gram:gp-115."
+  },
+  {
+   "id": "gram:you-da#nuance_en",
+   "verdict": "fix",
+   "current": "It is CASUAL: among strangers or in formal situations, use 〜ましょう. Brazilians tend to translate it as an imperative ('let's eat!'), but the tone is more of a friendly invitation ('let's go eat'). Note: on its own, it does not ask for permission; for that, it links to other structures (see ようと思う and 〜ようか). Don't confuse this volitional 〜よう with the 〜ようだ of appearance/comparison; they are different things, despite the similar spelling.",
+   "fix": "〜ようだ is not a loose guess: it rests on something the speaker perceived, saw, heard or felt. To pass on what you heard from someone else, use 〜そうだ; for an immediate visual impression, 〜そう (寒そう); for a conclusion drawn from indirect information, 〜らしい. In everyday conversation the equivalent is 〜みたいだ, and 〜ようだ sounds more formal and written. The big trap for Brazilians: the volitional 〜よう (食べよう) looks similar in writing, but it attaches to the verb and proposes an action, while 〜ようだ follows a whole clause and comments on an appearance.",
+   "why": "Same live volitional contamination on the en side, same two corrections as nuance_pt (〜らしい reclassified away from visual impression, closing pitfall no longer duplicating explanation.en). The big trap for Brazilians is the registry's own phrasing, taken from gram:gp-115."
+  },
+  {
+   "id": "gram:you-da#expl_pt",
+   "verdict": "fix",
+   "current": " Ela expressa uma sugestão (\"vamos fazer X\"), uma decisão pessoal (\"vou fazer X\", \"acho que vou...\") ou um convite entre pessoas próximas. Por exemplo, 食べよう = \"vamos comer / vou comer\", 行こう = \"vamos / bora\". É muito usada no dia a dia entre amigos e família.",
+   "fix": "",
+   "why": "Upgraded from needs-human to fix, with the anchor corrected. The queue's anchor started at Ela expressa and would have left the field ending in a stray trailing space; this anchor starts one character earlier, at the space that separates the stray passage from the sentence before it, which is what the en anchor already did. Deleting it leaves explanation.pt-BR ending on ... Não confunda com o 〜よう da forma volitiva (食べよう = \"vamos comer\"), que é outra estrutura., a correct and self-contained close. Verified byte-exact against corpus/grammar/n4.json."
+  },
+  {
+   "id": "gram:you-da#expl_en",
+   "verdict": "fix",
+   "current": " It expresses a suggestion ('let's do X'), a personal decision ('I'll do X,' 'I think I'll...'), or an invitation among close people. For example, 食べよう = 'let's eat / I'll eat,' 行こう = 'let's go / let's get going.' It is widely used in everyday life among friends and family.",
+   "fix": "",
+   "why": "Upgraded from needs-human to fix. Anchor verified byte-exact against corpus/grammar/n4.json, leading space included; deleting it leaves explanation.en ending on ... which is a different structure. Same passage, same reasoning as expl_pt."
+  },
+  {
+   "id": "gram:you-da#register",
+   "verdict": "fix",
+   "current": "[\"plain\", \"casual\"]",
+   "fix": "[\"plain\", \"written\"]",
+   "why": "Upgraded from needs-human to fix. ARRAY field; current and fix are the canonical json.dumps rendering of the list, as in the source queue. casual is provably part of the volitional contamination, since the record's own explanation says 〜ようだ is a versão mais formal e escrita de 〜みたいだ and the polite counterpart is ようです. written is an established value in this registry (33 uses across n3/n4/n5, e.g. gram:to-iwarete-iru) and plain stays correct, because ようだ itself is the plain-form predicate."
+  },
+  {
+   "id": "sent:gen-0ef54fed8af5",
+   "verdict": "needs-human",
+   "current": "朝は味噌の汁を飲みます",
+   "fix": "",
+   "why": "CONFIRMED needs-human, with the cost now measured instead of assumed. Ran the project's own dissector (scripts/ingest/dissect.py, SudachiPy 0.6.11 with sudachidict_full, mode C) on the proposed 朝は味噌汁を飲みます: mode C does return 味噌汁 as ONE morpheme, reading みそしる, with mode-A subunits 味噌 and 汁 under it, and vocab_id null. So the merge is reachable, and it costs exactly what the queue predicted: the record's only link to its declared target 971 (味噌) disappears, because 味噌汁 is not in the vocab registry and mode-A subunits carry no vocab_id in this schema. The human decision is one of three. (a) Keep 味噌の汁, which is stilted but grammatical and keeps the 971 link. (b) Register 味噌汁 as a vocab entry FIRST, then change the jp, so the merged token links the compound. (c) Change the jp and accept a sentence tagged 971 that no longer links 971. Only (b) improves both the Japanese and the graph, and it is a registry change, not a token edit."
+  },
+  {
+   "id": "sent:gen-0ef54fed8af5#tokens[position=4].vocab_id",
+   "verdict": "fix",
+   "current": "\"vocab_id\": null",
+   "fix": "\"vocab_id\": 3551",
+   "why": "Derived from the row above, which flagged it. Independent of the 味噌汁 decision and safe as long as the jp stays 味噌の汁. Position 4 is 汁 read しる, and entry 3551 is 汁 kana しる; the link is null only because it predates that registry entry. Re-running the dissector on the stored jp today returns 3551 for this token, so this is the analyzer's own answer, not a judgement. Address by the position field with split_mode C, not by array index."
+  },
+  {
+   "id": "sent:gen-138c8e26cf51",
+   "verdict": "no-change",
+   "current": "背がいたいので病院に行く",
+   "fix": "",
+   "why": "Both of this row's claims fail on inspection, so the jp stays. Claim 1, that the correct unit is the single conjunctive particle ので and that this is a mode-C boundary outcome: false. I ran the dissector on 背がいたいので病院に行く, on 背中がいたいので病院に行く and on 背中が痛いので病院に行く; mode C returns の (助詞 準体助詞) plus で (助動詞, lemma だ) in all three. No re-run produces ので as one token, so there is no boundary defect to repair, only an analyzer limit that the record's structure_explanation already discloses honestly. Claim 2, that the gloss matches neither the linked lemma nor the target: false. Entry 1338 (背, kana せ) carries TWO senses, sense 0 altura (de uma pessoa) / estatura and sense 1 costas / dorso; the token gloss costas / back is sense 1 exactly. The queue also proposed repointing this token from 336 to 1338, but commit 294fe90 already landed that class corpus-wide, so the stored value is 1338 today, which is both the correct entry and the declared target tag. Do NOT accept the 背中 re-author: it would delete target vocab 1338 from a sentence generated to teach it, to fix a defect that is not there."
+  },
+  {
+   "id": "sent:gen-138c8e26cf51#tokens[position=4].role",
+   "verdict": "fix",
+   "current": "\"role\": null",
+   "fix": "\"role\": {\"pt-BR\": \"parte da conjunção ので\", \"en\": \"part of the conjunction ので\"}",
+   "why": "Derived from the row above: the one real complaint inside it that survives is that the learner-facing breakdown shows an unexplained で. Position 4 is a 助動詞, not a particle, and auxiliaries carry role and gloss everywhere else in the bank. This is not invention: 15 of the 33 の(準体助詞) plus で(だ) pairs in corpus/sentences/bank.json already fill these two fields, and the value here follows the wording already used by sent:gen-f919c1c65690. The fix is shown as canonical json.dumps; write it at that path with the file's existing 8-space indentation. Address by the position field with split_mode C."
+  },
+  {
+   "id": "sent:gen-138c8e26cf51#tokens[position=4].gloss",
+   "verdict": "fix",
+   "current": "\"gloss\": null",
+   "fix": "\"gloss\": {\"pt-BR\": \"porque, como (junto com o の anterior)\", \"en\": \"because, since (together with the preceding の)\"}",
+   "why": "Same derivation and same precedent as the role fix above; the two are one edit and must land together. Leaving position 3 (の, a 助詞) with null role and gloss is correct and matches every other particle in the bank."
+  },
+  {
+   "id": "sent:gen-67098aef1bd0",
+   "verdict": "needs-human",
+   "current": "お金をためて、然うして車を買った",
+   "fix": "",
+   "why": "CONFIRMED needs-human on the merge, and one of the row's two side-claims is stale. Ran the dissector on BOTH orthographies: 然うして gives 然う (副詞, vocab_id null) plus し plus て, and そうして gives そう (副詞, vocab_id 349, which is 総) plus し plus て. Mode C never returns the conjunction as one token, so the target 1340 (然うして) cannot be linked by re-running, and the orthography change makes it strictly worse by introducing a fresh mislink to 総. Stale claim: position 6 し is said to link 334 (刷る), but the stored value is 1358 (為る) today, because commit 294fe90 already repointed that class corpus-wide. The live claim is position 2, resolved separately below. The human decision: this sentence cannot link its own target word without a structural token override, which the project currently forbids (see sent:gen-960cef5443b3 below), so either accept a 1340-tagged sentence with no 1340 link, or retag it to the word it actually teaches. The record's own structure_explanation already says O foco é o vocábulo ためる, which contradicts tag 1340 and suggests the second option was the original intent."
+  },
+  {
+   "id": "sent:gen-67098aef1bd0#tokens[position=2].vocab_id",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 1089",
+   "fix": "\"vocab_id\": 3725",
+   "why": "The live half of the row above. Position 2 is ため with lemma ためる and gloss juntar, economizar; entry 1089 is 為 (ため, para / a fim de), a noun with nothing to do with this verb, while 3725 is 溜める (ためる, juntar / acumular / poupar). Three independent confirmations: the token's own lemma, the token's own gloss, and the dissector re-run on the stored jp, which returns 3725 for this token today. This class is NOT covered by scripts/fix_homophone_vocab_links.py, so it is still live. Address by the position field with split_mode C; this record carries mode-A rows at array indices 0 and 1, so array index and position disagree here."
+  },
+  {
+   "id": "sent:gen-7dd5dc18aba8",
+   "verdict": "needs-human",
+   "current": "\"en\": \"back of the hand\"",
+   "fix": "",
+   "why": "CONFIRMED needs-human, and the queue's escape route is refuted. The gloss defect is real: 手の裏 (てのうら) is the PALM, the same referent as 手のひら (registry entry 6214, palma da mão), while the back of the hand is 手の甲; gloss.pt-BR verso/dorso da mão, gloss.en back of the hand and both translations all say the opposite. But the proposed rescue does not work. I ran the dissector on 紙の裏を見せてください: it does split into 紙 plus の plus 裏, and the 裏 token comes back linked to vocab_id 79, which is 内 (うち) and registers 裏 among its forms, NOT to the declared target 1088 (裏, うら). So 紙の裏 restores a link to the wrong entry and leaves the target unlinked. The human decision is a content decision with no cheap option. (a) Keep 手の裏 and correct gloss plus both translations to palma da mão / palm of the hand, accepting that a sentence tagged 1088 still holds no 1088 link and now teaches a counter-intuitive use of 裏. (b) Re-author the jp to 紙の裏 AND repoint the resulting 裏 token to 1088 by hand, since the form-table lookup will not do it. (c) Retire the sentence and generate a cleaner one for 1088. Whichever is chosen, do not correct the gloss alone: that leaves both translations contradicting it."
+  },
+  {
+   "id": "sent:gen-a1650baf4ac0",
+   "verdict": "needs-human",
+   "current": "この問題が解けない学生はない",
+   "fix": "",
+   "why": "CONFIRMED needs-human, with the renumbering now measured rather than predicted. Ran the dissector on both readings. Stored 学生はない: 8 C tokens, position 7 is ない as 形容詞 非自立可能 with vocab_id 462, exactly as stored, so nothing is wrong against the current jp. Proposed 学生はいない: 9 C tokens, position 7 becomes い (lemma いる, 動詞 非自立可能, vocab_id 69) and position 8 becomes ない (助動詞). The queue's own token edits for this record address position 7, and after the change position 7 is い, not ない, so applying them in either order silently writes the existential note onto the wrong morpheme. The human decision is about what the sentence teaches, not about the parse: the grammar target is gp-102 and the record's structure_explanation teaches the pattern 〜ない〜はない by name, so switching to いない changes the taught surface. 学生はない is nonstandard for an animate subject in modern Japanese, where いない is expected, but it is the literary form of exactly the pattern the explanation names. Whoever decides must also update structure_explanation in both locales and re-issue the position-7 edits against the new numbering."
+  },
+  {
+   "id": "sent:gen-a1650baf4ac0#tokens[position=3].vocab_id",
+   "verdict": "fix",
+   "current": "\"vocab_id\": null",
+   "fix": "\"vocab_id\": 2462",
+   "why": "Adjacent null link found while re-parsing the record above; it survives either outcome of the 学生はない decision, since position 3 is untouched by it. Position 3 is 解け with lemma 解ける, and entry 2462 is 解ける (とける), whose sense 1 is ser resolvido (problema). The dissector re-run on the stored jp returns 2462 for this token today; the null is registry lag, like the 汁 case above."
+  },
+  {
+   "id": "sent:gen-cb6562f41e17",
+   "verdict": "no-change",
+   "current": "\"position\": 2,\n        \"split_mode\": \"A\",\n        \"surface\": \"お\",",
+   "fix": "",
+   "why": "CONFIRMED as written, and correctly needs no edit to the record itself. This row is not a defect report, it is an addressing warning for whoever applies the queue, and the warning is accurate: in corpus/sentences/bank.json this record's mode-A subunits お and 兄さん, both carrying parent position 2, sit at array indices 0 and 1 ahead of every mode-C row, so tokens[0] is the honorific prefix while position 0 is 私. Verified the same shape in sent:gen-67098aef1bd0, the only other record in this queue with mode-A rows. Every token path in this queue, including the ones added in this file, must be resolved by the position field with split_mode C. What a human still owns here is the separate 私のお兄さん to 友達のお兄さん row: it is a real politeness defect, since お兄さん is used for someone else's older brother, and the replacement is sound, but it is a content change to a generated sentence and its four token edits are exactly the mis-addressed ones."
+  },
+  {
+   "id": "sent:gen-960cef5443b3",
+   "verdict": "needs-human",
+   "current": "いちにちからあたらしいしごとがはじまる",
+   "fix": "",
+   "why": "CONFIRMED needs-human, but the queue named a route that does not exist and missed one that does. The named route is closed: scripts/fable5_register_reading_overrides.py registers READING deviations only, and its own docstring and code say structural mismatches are never registrable (structural_mismatches_NOT_registered), so the 10年 and ５月 precedent cannot deliver a boundary merge. The missed route: mode C DOES return １日 as one token read ついたち once a month precedes it. I ran the dissector on ４月１日から新しい仕事が始まる and on 来月の１日から新しい仕事が始まる; both give a single １日 token, reading ついたち, romaji tsuitachi. Bare １日 reads いちにち because the date is genuinely ambiguous without that context, so the analyzer is not wrong, the sentence is underspecified. Second and separate finding: even after the merge the link resolves to vocab_id 56 (一日, いちにち), NOT to the declared target 401 (１日, ついたち), because both entries register both forms １日 and 一日 and dissect.py's _vocab_by_form keeps whichever registered first. So the human decision is two-part. (a) Accept a minimal jp change supplying the month context, which fixes reading, kana, romaji and boundary in one go and is also better Japanese. (b) Decide how 401 gets linked, since the form table cannot separate it from 56; that is a registry-precedence defect that runs past this record. The earlier rejection of つい on １ plus たち on 日 remains correct and must not be revisited."
+  },
+  {
+   "id": "sent:tatoeba-141147",
+   "verdict": "no-change",
+   "current": "船はどんどん川を下って入った。",
+   "fix": "",
+   "why": "Resolved by going upstream, which the row asked for. Checked research/datasets/tatoeba/jpn_sentences.tsv.bz2: sentence 141147 is byte-identical to our stored jp, 船はどんどん川を下って入った。 Checked links.tar.bz2: 141147 links to 273424 and 1635626, and eng_sentences.tsv.bz2 gives 273424 as The boat was rolling down the river., byte-identical to our stored translation.en. So the ingest is faithful on both sides and there is nothing to repair in this record: the Japanese and the English disagree in Tatoeba itself. The dissection is likewise faithful, with 入っ correctly lemmatised to 入る and read はいっ. No token, no jp and no translation may move. What is left for a human is a curation call, not a correction: keep a coverage:n4 sentence whose paired English does not render 入った, or drop it and re-fill that coverage slot. Worth recording alongside it that 下って入った is very likely an upstream typo for 下って行った, which would read くだっていった and match the English exactly, but that is a Tatoeba edit, not ours."
+  },
+  {
+   "id": "sent:tatoeba-141147#tokens[position=5].vocab_id",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 1178",
+   "fix": "\"vocab_id\": 4419",
+   "why": "Live mislink found while verifying the record above; independent of the curation call and safe as long as the sentence stays in the bank. Position 5 is 下っ with lemma 下る and gloss descer; entry 1178 is 下がる (さがる), which registers 下る among its forms, and the entry that IS 下る (くだる) is 4419. This is the 下る to 1178 class named in the queue's own summary as running to 2 tokens corpus-wide; it is not covered by scripts/fix_homophone_vocab_links.py, so it is still live."
+  },
+  {
+   "id": "sent:tatoeba-141147#translation_literal.en",
+   "verdict": "fix",
+   "current": "The boat went swiftly down the river.",
+   "fix": "Boat-(topic) fast-fast river-(path) descending entered.",
+   "why": "The one thing inside this record that can be corrected without touching Layer A. translation_literal exists to mirror the Japanese morpheme by morpheme, and its pt-BR sibling in this same record does exactly that: Barco-(tópico) rápido-rápido rio-(trajeto) descendo entrou. The en sibling instead paraphrases and silently drops 入った, which is precisely the element the row says disagrees with the paired English. Making en mirror pt-BR restores locale parity and stops translation_literal from hiding the discrepancy a reviewer needs to see. translation.en stays untouched, because it is the recorded Tatoeba pairing."
+  },
+  {
+   "id": "sent:tatoeba-223377",
+   "verdict": "needs-human",
+   "current": "closing こ of はこ (箱, 'box') plus the genitive の",
+   "fix": "",
+   "why": "CONFIRMED needs-human on the boundary, with both the parse and the source verified. Checked research/datasets/tatoeba/jpn_sentences.tsv.bz2: sentence 223377 is byte-identical to our stored jp, so the unspaced kana string このはこの is Layer A and untouchable. Ran the dissector on it: mode C returns この plus は plus この, exactly as stored, so no re-run produces この plus はこ plus の. The correct cut therefore needs a structural token override, and scripts/fable5_register_reading_overrides.py cannot carry one, since its own docstring rules out registering structural mismatches and validate.py section 7.2 would reject a hand-cut array. So the human decision is a tooling decision, and it is the same one raised by sent:gen-960cef5443b3: whether to extend the override registry to sanctioned BOUNDARY overrides carrying the same two-vote evidence trail readings already get. Until that exists, the gloss and role on position 2 must keep describing the mis-cut, because they are the only thing stopping a learner from reading a second demonstrative この there. One stale detail in the row: position 2 is said to link 196 (九), but the stored value is 257 today, repointed by commit 294fe90, which is why it is addressed separately below."
+  },
+  {
+   "id": "sent:tatoeba-223377#tokens[position=1].romaji",
+   "verdict": "fix",
+   "current": "\"romaji\": \"wa\"",
+   "fix": "\"romaji\": \"ha\"",
+   "why": "Derived from the row above, which flagged it, and independent of the boundary decision. Position 1's reading was already hand-corrected from わ to は, because this mora belongs to はこ and is not the topic particle, but its romaji still holds wa from the particle override in dissect.py's _tok_romaji. The stored sentence romaji reads konohakonosotowa..., so concatenating the C-token romaji currently produces konowa where the sentence says konoha. Changing this one value makes the two agree. Exactly parallel to the chuu to naka fix the queue already accepted on position 8 of this record, and part of the same 336-sentence stale-romaji class."
+  },
+  {
+   "id": "sent:tatoeba-223377#tokens[position=2].vocab_id",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 257",
+   "fix": "\"vocab_id\": null",
+   "why": "Derived from the row above, and it is what the 196 complaint should now say after 294fe90 landed. Position 2 is no longer linked to 九; it is linked to 257 (此の, この), the demonstrative, while its own role and gloss say it is the closing こ of はこ plus the genitive の. A token cannot both be and not be the demonstrative. Nulling the link removes the false lemma edge without asserting anything about the boundary, costs nothing because position 0 is the real この and still carries 257, and leaves the record internally consistent while the boundary question waits. A null vocab_id is the normal state for a token with no registry entry."
+  }
+ ]
+}

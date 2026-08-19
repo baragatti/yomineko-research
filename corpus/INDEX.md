@@ -7,7 +7,7 @@ _Generated 2026-08-19 from `db/corpus.sqlite` (regenerable index). **These JSON/
 | kanji | `corpus/kanji/<level>.json` | 103 | 177 |
 | vocab | `corpus/vocab/<level>.json` | 705 | 653 |
 | grammar | `corpus/grammar/<level>.json` | 151 | 213 |
-| sentences | `corpus/sentences/bank.json` | 5565 | (dissected) |
+| sentences | `corpus/sentences/bank.json` | 5889 | (dissected) |
 | families | `corpus/families/families.json` | 396 | (cross-level) |
 | conjugations | `corpus/conjugations/<level>.json` | 212 | 295 |
 | kana _(hira/kata families)_ | `corpus/kana/<script>.json` | 28 | 29 |

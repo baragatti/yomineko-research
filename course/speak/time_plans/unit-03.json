@@ -7,127 +7,133 @@
     "pt-BR": "Quando, que horas, combinar — parte 3"
   },
   "say_now": [
-    "sent:tatoeba-152614",
-    "sent:tatoeba-118653",
-    "sent:tatoeba-80495",
-    "sent:tatoeba-1037362",
     "sent:tatoeba-171531",
-    "sent:tatoeba-9777117"
+    "sent:tatoeba-9777117",
+    "sent:tatoeba-154767",
+    "sent:tatoeba-125943",
+    "sent:tatoeba-11013726",
+    "sent:tatoeba-4905"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1310730",
-    "vocab:1316380",
-    "vocab:1536350",
-    "vocab:1223640",
     "vocab:1582310",
-    "vocab:1583090",
+    "vocab:1155120",
+    "vocab:1483740",
+    "vocab:1405800",
+    "vocab:1386460",
+    "vocab:1310460",
+    "vocab:1372800",
     "vocab:1163940"
   ],
   "patterns": [
-    "gram:kamo-shirenai",
-    "gram:mashou",
     "gram:gp-149",
+    "gram:gp-142",
+    "gram:gp-93",
     "gram:kana"
   ],
   "kanji_recognition": [
-    "死",
-    "私",
+    "今",
+    "頭",
     "日",
-    "明",
-    "会",
-    "次"
+    "痛",
+    "以",
+    "間"
   ],
   "shadowing": [
-    "sent:tatoeba-152614",
-    "sent:tatoeba-118653",
-    "sent:tatoeba-80495",
-    "sent:tatoeba-1037362",
     "sent:tatoeba-171531",
-    "sent:tatoeba-9777117"
+    "sent:tatoeba-9777117",
+    "sent:tatoeba-154767",
+    "sent:tatoeba-125943",
+    "sent:tatoeba-11013726",
+    "sent:tatoeba-4905"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 308,
+  "cumulative_known_vocab": 349,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "so:n3:722",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
     {
       "id": "so:n3:759",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n3:891:2453",
+      "id": "cf:n4:3684:1118",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "為",
-        "誰",
-        "日"
+        "少年",
+        "十分",
+        "悪い"
       ]
     },
     {
-      "id": "kr:n5:103",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "でんき",
-        "ズボン",
-        "ホテル"
-      ]
-    },
-    {
-      "id": "kr:n5:20",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あかい",
-        "えらぶ",
-        "しごと"
-      ]
-    },
-    {
-      "id": "cf:n4:3049:805",
+      "id": "cf:n4:1180:1113",
       "type": "context_fill",
-      "via": "review",
+      "via": "new-word",
       "distractors": [
-        "嫌い",
-        "言う",
-        "部屋"
+        "死ぬ",
+        "以下",
+        "仕事"
+      ]
+    },
+    {
+      "id": "kr:n4:1062",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けいかく",
+        "ほとんど",
+        "かんけい"
+      ]
+    },
+    {
+      "id": "kr:n4:1067",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こんばん",
+        "コーヒー",
+        "てつだう"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-91",
-    "gram:gp-120"
+    "gram:tsuzukeru",
+    "gram:gp-45"
   ],
   "drills": [
-    {
-      "pattern": "gram:kamo-shirenai",
-      "examples": [
-        "sent:tatoeba-2684823",
-        "sent:tatoeba-188036",
-        "sent:tatoeba-189633"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:mashou",
-      "examples": [
-        "sent:tatoeba-139208",
-        "sent:tatoeba-173392",
-        "sent:tatoeba-200934"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-149",
       "examples": [
         "sent:tatoeba-77812",
         "sent:tatoeba-4856",
-        "sent:tatoeba-79091"
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-93",
+      "examples": [
+        "sent:gen-a81f2084ea99",
+        "sent:gen-e1c2cfd5e350",
+        "sent:gen-0877b1b2f764"
       ],
       "strand": "language-focused"
     },
@@ -143,60 +149,59 @@
   ],
   "production": [
     {
-      "prompt_pt": "Quando você pretende começar?",
-      "answer_key": "いつ始めるつもりですか？",
+      "prompt_pt": "\"Quando você acorda?\" \"Às oito da manhã.\"",
+      "answer_key": "「いつ起きるの？」「朝八時だよ」",
       "accepted_variants": [
-        "いつ始めるつもりですか",
-        "いつ始めるつもりですか？"
+        "「いつ起きるの？」「朝八時だよ」"
       ],
-      "sentence": "sent:tatoeba-10014826",
+      "sentence": "sent:tatoeba-1037362",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A questão é quando começar.",
-      "answer_key": "問題はいつ始めるかだ。",
+      "prompt_pt": "Conheci uma pessoa chamada Kimura na festa.",
+      "answer_key": "木村さんという人にパーティーで会ったよ。",
       "accepted_variants": [
-        "問題はいつ始めるかだ",
-        "問題はいつ始めるかだ。"
+        "木村さんという人にパーティーで会ったよ",
+        "木村さんという人にパーティーで会ったよ。"
       ],
-      "sentence": "sent:tatoeba-79849",
+      "sentence": "sent:tatoeba-80068",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "O tempo é o mais precioso de tudo.",
-      "answer_key": "時間は一番大切だ。",
+      "prompt_pt": "Encontrar com ele a gente deixa para a próxima vez.",
+      "answer_key": "彼に会うのはこの次にしましょう。",
       "accepted_variants": [
-        "時間は一番大切だ",
-        "時間は一番大切だ。"
+        "彼に会うのはこの次にしましょう",
+        "彼に会うのはこの次にしましょう。"
       ],
-      "sentence": "sent:tatoeba-150577",
+      "sentence": "sent:tatoeba-118653",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
-      "sent:tatoeba-80452",
-      "sent:tatoeba-11162294",
+      "sent:tatoeba-152614",
+      "sent:tatoeba-150577",
       "sent:tatoeba-80460",
-      "sent:tatoeba-9489164",
-      "sent:tatoeba-113170",
-      "sent:tatoeba-163367"
+      "sent:tatoeba-78588",
+      "sent:tatoeba-185449",
+      "sent:tatoeba-79537"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 28,
     "fluency": 6
   }
 }

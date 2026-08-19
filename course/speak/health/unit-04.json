@@ -9,7 +9,7 @@
   "say_now": [
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
-    "sent:tatoeba-10587764",
+    "sent:jec-3163",
     "sent:tatoeba-5001",
     "sent:tatoeba-145552",
     "sent:tatoeba-85337"
@@ -18,21 +18,22 @@
   "untranslated": [],
   "words": [
     "vocab:1414150",
-    "vocab:1227560",
+    "vocab:1365040",
     "vocab:1369940",
     "vocab:2853889",
     "vocab:1257540",
-    "vocab:1002610",
+    "vocab:1559290",
+    "vocab:1269410",
     "vocab:1407980",
     "vocab:1171010"
   ],
   "patterns": [
     "gram:wa-dou-desu-ka",
+    "gram:te-kuru",
     "gram:gp-17",
     "gram:gp-31",
     "gram:ndesu",
-    "gram:da-desu",
-    "gram:gp"
+    "gram:da-desu"
   ],
   "kanji_recognition": [
     "丈",
@@ -40,19 +41,19 @@
     "夫",
     "右",
     "左",
-    "休"
+    "院"
   ],
   "shadowing": [
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
-    "sent:tatoeba-10587764",
+    "sent:jec-3163",
     "sent:tatoeba-5001",
     "sent:tatoeba-145552",
     "sent:tatoeba-85337"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 360,
+  "cumulative_known_vocab": 398,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -62,9 +63,24 @@
       "via": "phrase"
     },
     {
-      "id": "so:n3:761",
-      "type": "sentence_order",
-      "via": "phrase"
+      "id": "cf:n4:245:802",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "雨",
+        "靴",
+        "点"
+      ]
+    },
+    {
+      "id": "cf:n4:5461:802",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "雨",
+        "父",
+        "米"
+      ]
     },
     {
       "id": "kr:n4:1140",
@@ -72,38 +88,18 @@
       "via": "new-word",
       "distractors": [
         "うしなう",
-        "たとえば",
-        "コーヒー"
+        "コーヒー",
+        "アパート"
       ]
     },
     {
-      "id": "kr:n5:120",
+      "id": "kr:n4:802",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "やすい",
-        "パート",
-        "しゅみ"
-      ]
-    },
-    {
-      "id": "cf:n4:245:802",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "雨",
-        "隣",
-        "靴"
-      ]
-    },
-    {
-      "id": "cf:n4:3381:997",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "一緒",
-        "お礼",
-        "彼の"
+        "はち",
+        "くる",
+        "きみ"
       ]
     }
   ],
@@ -115,6 +111,15 @@
         "sent:tatoeba-125116",
         "sent:tatoeba-4751207",
         "sent:tatoeba-214357"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kuru",
+      "examples": [
+        "sent:tatoeba-8736595",
+        "sent:tatoeba-228677",
+        "sent:tatoeba-2999719"
       ],
       "strand": "language-focused"
     },
@@ -141,7 +146,7 @@
       "examples": [
         "sent:gen-d354f1465606",
         "sent:tatoeba-80973",
-        "sent:gen-f83463ff3681"
+        "sent:tatoeba-137685"
       ],
       "strand": "language-focused"
     },
@@ -153,27 +158,9 @@
         "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Os pais levam os filhos ao hospital logo de cara.",
-      "answer_key": "親はすぐにこどもを病院に連れてくる",
-      "accepted_variants": [
-        "親はすぐにこどもを病院に連れてくる"
-      ],
-      "sentence": "sent:jec-3163",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Daqui até o hospital são nada menos que dez milhas.",
       "answer_key": "病院まで１０マイルもある。",
@@ -193,17 +180,27 @@
       ],
       "sentence": "sent:tatoeba-83003",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Depois que dormi bem, me senti bem melhor.",
+      "answer_key": "よく眠ったらだいぶ気分がよくなった。",
+      "accepted_variants": [
+        "よく眠ったらだいぶ気分がよくなった",
+        "よく眠ったらだいぶ気分がよくなった。"
+      ],
+      "sentence": "sent:tatoeba-192750",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
-      "sent:tatoeba-189575",
-      "sent:tatoeba-171774",
+      "sent:tatoeba-226387",
+      "sent:tatoeba-79502",
+      "sent:tatoeba-11270411",
       "sent:tatoeba-90106",
       "sent:tatoeba-190894",
-      "sent:tatoeba-190902",
-      "sent:tatoeba-226765"
+      "sent:tatoeba-190902"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

@@ -7,67 +7,67 @@
     "pt-BR": "Quando, que horas, combinar — parte 5"
   },
   "say_now": [
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767",
     "sent:tatoeba-150509",
     "sent:tatoeba-83926",
-    "sent:tatoeba-1190209",
-    "sent:tatoeba-161057"
+    "sent:tatoeba-161057",
+    "sent:tatoeba-174391",
+    "sent:tatoeba-1699768",
+    "sent:tatoeba-179620"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1373860",
-    "vocab:1236070",
     "vocab:1316140",
     "vocab:1579350",
-    "vocab:1228650",
     "vocab:1174340",
-    "vocab:1499720",
-    "vocab:1310620"
+    "vocab:1268990",
+    "vocab:1577280",
+    "vocab:1310620",
+    "vocab:1243320"
   ],
   "patterns": [
-    "gram:amari-nai",
-    "gram:gp-42",
-    "gram:masen-ka",
-    "gram:gp-149",
-    "gram:owaru"
+    "gram:darou",
+    "gram:garu-gatteiru",
+    "gram:gp-75",
+    "gram:noni",
+    "gram:da-desu",
+    "gram:gp"
   ],
   "kanji_recognition": [
-    "界",
-    "終",
-    "世",
-    "強",
-    "今",
-    "日"
+    "間",
+    "計",
+    "止",
+    "時",
+    "三",
+    "治"
   ],
   "shadowing": [
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767",
     "sent:tatoeba-150509",
     "sent:tatoeba-83926",
-    "sent:tatoeba-1190209",
-    "sent:tatoeba-161057"
+    "sent:tatoeba-161057",
+    "sent:tatoeba-174391",
+    "sent:tatoeba-1699768",
+    "sent:tatoeba-179620"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 323,
+  "cumulative_known_vocab": 363,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n4:3427",
+      "id": "so:n4:3623",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:3427:859",
+      "id": "cf:n4:3623:1300",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "明日",
-        "趣味",
-        "何時"
+        "どんな",
+        "食べる",
+        "小さい"
       ]
     },
     {
@@ -75,111 +75,118 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "歯",
         "別",
-        "左"
+        "左",
+        "頭"
       ]
     },
     {
-      "id": "kr:n4:1272",
+      "id": "kr:n5:131",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "かえる",
-        "おわり",
-        "しまる"
+        "とまる",
+        "つかう",
+        "ビール"
       ]
     },
     {
-      "id": "kr:n4:859",
+      "id": "kr:n5:210",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あたま",
-        "わるい",
-        "あいだ"
+        "かたづける",
+        "おもしろい",
+        "としょかん"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:gp-110"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:amari-nai",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:tatoeba-1874351",
-        "sent:tatoeba-10908739",
-        "sent:tatoeba-171507"
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-42",
+      "pattern": "gram:garu-gatteiru",
       "examples": [
-        "sent:tatoeba-227007",
-        "sent:tatoeba-994640",
-        "sent:tatoeba-229458"
+        "sent:gen-a0d367f9d037",
+        "sent:gen-2424c6ff626d",
+        "sent:gen-0ce029328959"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:masen-ka",
+      "pattern": "gram:gp-75",
       "examples": [
-        "sent:gen-4595bdeb6907",
-        "sent:gen-4e948f2f75b0",
-        "sent:gen-a94929c3a847"
+        "sent:tatoeba-8900817",
+        "sent:gen-1afacbd438d6",
+        "sent:gen-3830fb7c7bbd"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-149",
+      "pattern": "gram:noni",
       "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-79091"
+        "sent:tatoeba-140578",
+        "sent:tatoeba-78708",
+        "sent:tatoeba-5128"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:owaru",
+      "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-228649",
-        "sent:tatoeba-8727067",
-        "sent:tatoeba-10206436"
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Como hoje o tempo estava bom, brincamos todos juntos lá fora.",
-      "answer_key": "今日は天気がよかったのでみんなで外で遊んだ。",
+      "prompt_pt": "Tenho que fazer a lição de casa até amanhã.",
+      "answer_key": "明日までに宿題をしなければならない。",
       "accepted_variants": [
-        "今日は天気がよかったのでみんなで外で遊んだ",
-        "今日は天気がよかったのでみんなで外で遊んだ。"
+        "明日までに宿題をしなければならない",
+        "明日までに宿題をしなければならない。"
       ],
-      "sentence": "sent:tatoeba-171539",
+      "sentence": "sent:tatoeba-80373",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Segundo o jornal, amanhã vai nevar.",
-      "answer_key": "新聞によれば明日は雪だそうです。",
+      "prompt_pt": "Hoje está ventando bastante, né?",
+      "answer_key": "今日はけっこう風が強いね。",
       "accepted_variants": [
-        "新聞によれば明日は雪だそうです",
-        "新聞によれば明日は雪だそうです。"
+        "今日はけっこう風が強いね",
+        "今日はけっこう風が強いね。"
       ],
-      "sentence": "sent:tatoeba-145155",
+      "sentence": "sent:tatoeba-536767",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Se você continua todos os dias, isso vira força.",
-      "answer_key": "毎日続けると力になる。",
+      "prompt_pt": "Quando será que o mundo vai acabar?",
+      "answer_key": "世界はいつ終わるのだろうか。",
       "accepted_variants": [
-        "毎日続けると力になる",
-        "毎日続けると力になる。"
+        "世界はいつ終わるのだろうか",
+        "世界はいつ終わるのだろうか。"
       ],
-      "sentence": "sent:tatoeba-11013726",
+      "sentence": "sent:tatoeba-143418",
       "strand": "meaning-output"
     }
   ],
@@ -190,7 +197,7 @@
       "sent:tatoeba-9777117",
       "sent:tatoeba-171531",
       "sent:tatoeba-1037362",
-      "sent:tatoeba-80495",
+      "sent:tatoeba-80068",
       "sent:tatoeba-152614"
     ],
     "seconds_target": 48,
@@ -200,13 +207,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 58,
+    "language-focused": 59,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 30,
     "fluency": 6
   }
 }

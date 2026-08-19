@@ -7,50 +7,52 @@
     "pt-BR": "Quando, que horas, combinar — parte 2"
   },
   "say_now": [
-    "sent:tatoeba-143547",
-    "sent:tatoeba-80608",
     "sent:tatoeba-234998",
     "sent:tatoeba-150577",
-    "sent:tatoeba-79849",
-    "sent:tatoeba-10014826"
+    "sent:tatoeba-152614",
+    "sent:tatoeba-118653",
+    "sent:tatoeba-80068",
+    "sent:tatoeba-1037362"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1512670",
-    "vocab:1604890",
     "vocab:1255430",
     "vocab:1165970",
-    "vocab:1307550",
+    "vocab:1310730",
+    "vocab:1316380",
+    "vocab:1100760",
+    "vocab:1223640",
     "vocab:1414340",
-    "vocab:1372980",
-    "vocab:1529330",
+    "vocab:1583090",
     "vocab:1554370"
   ],
   "patterns": [
-    "gram:gp-62",
-    "gram:tsumori",
-    "gram:koto"
+    "gram:kamo-shirenai",
+    "gram:mashou",
+    "gram:to-iu",
+    "gram:gp-120",
+    "gram:gp-14"
   ],
   "kanji_recognition": [
-    "学",
+    "月",
+    "今",
+    "日",
+    "一",
     "間",
-    "強",
-    "時",
-    "数",
-    "勉"
+    "時"
   ],
   "shadowing": [
-    "sent:tatoeba-143547",
-    "sent:tatoeba-80608",
     "sent:tatoeba-234998",
     "sent:tatoeba-150577",
-    "sent:tatoeba-79849",
-    "sent:tatoeba-10014826"
+    "sent:tatoeba-152614",
+    "sent:tatoeba-118653",
+    "sent:tatoeba-80068",
+    "sent:tatoeba-1037362"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 301,
+  "cumulative_known_vocab": 341,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -60,33 +62,33 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n4:4791:902",
+      "id": "cf:n3:891:2453",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "初めて",
-        "小さな",
-        "泊まる"
+        "為",
+        "誰",
+        "日"
       ]
     },
     {
-      "id": "cf:n4:4792:902",
+      "id": "cf:n5:5462:162",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "泊まる",
-        "覚える",
-        "どんな"
+        "左",
+        "傘",
+        "雨"
       ]
     },
     {
-      "id": "kr:n4:1214",
+      "id": "kr:n5:103",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "なるべく",
-        "かのじょ",
-        "せいよう"
+        "かかり",
+        "でんき",
+        "まもる"
       ]
     },
     {
@@ -96,65 +98,61 @@
       "distractors": [
         "こと",
         "はは",
-        "まつ"
+        "かず"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:hajimeru",
-    "gram:te-ita",
-    "gram:tara"
+    "gram:gp-91"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-62",
+      "pattern": "gram:kamo-shirenai",
       "examples": [
-        "sent:tatoeba-174749",
-        "sent:tatoeba-174748",
-        "sent:tatoeba-182548"
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-189633"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:tsumori",
+      "pattern": "gram:mashou",
       "examples": [
-        "sent:gen-f48e05df2b74",
-        "sent:tatoeba-80364",
-        "sent:tatoeba-137646"
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-200934"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:koto",
+      "pattern": "gram:to-iu",
       "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-120",
+      "examples": [
+        "sent:tatoeba-193408",
+        "sent:gen-40a736aa4ac8",
+        "sent:gen-5bccb5134f4a"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74036",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Será que amanhã vai chover?",
-      "answer_key": "明日は雨だろうか。",
-      "accepted_variants": [
-        "明日は雨だろうか",
-        "明日は雨だろうか。"
-      ],
-      "sentence": "sent:tatoeba-80452",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Será que amanhã vai fazer bom tempo?",
-      "answer_key": "明日は天気かしら。",
-      "accepted_variants": [
-        "明日は天気かしら",
-        "明日は天気かしら。"
-      ],
-      "sentence": "sent:tatoeba-11162294",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Será que amanhã vai chover?",
       "answer_key": "明日は雨かしら。",
@@ -164,32 +162,52 @@
       ],
       "sentence": "sent:tatoeba-80460",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Amanhã preciso me encontrar com você sobre isso.",
+      "answer_key": "明日このことについてお目にかからなくてはと思います。",
+      "accepted_variants": [
+        "明日このことについてお目にかからなくてはと思います",
+        "明日このことについてお目にかからなくてはと思います。"
+      ],
+      "sentence": "sent:tatoeba-80608",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ano que vem eu devo ter a oportunidade de encontrá-lo.",
+      "answer_key": "来年はお目にかかれるでしょう。",
+      "accepted_variants": [
+        "来年はお目にかかれるでしょう",
+        "来年はお目にかかれるでしょう。"
+      ],
+      "sentence": "sent:tatoeba-78588",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
-      "sent:tatoeba-9489164",
-      "sent:tatoeba-113170",
-      "sent:tatoeba-163367",
-      "sent:tatoeba-10899831",
-      "sent:tatoeba-1590863",
-      "sent:tatoeba-196355"
+      "sent:tatoeba-185449",
+      "sent:tatoeba-79537",
+      "sent:tatoeba-789591",
+      "sent:jec-1876",
+      "sent:tatoeba-163381",
+      "sent:tatoeba-113170"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 30,
     "fluency": 6
   }
 }

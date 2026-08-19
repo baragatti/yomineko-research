@@ -7,43 +7,52 @@
     "pt-BR": "Quando, que horas, combinar — parte 1"
   },
   "say_now": [
+    "sent:tatoeba-79537",
     "sent:tatoeba-185449",
-    "sent:tatoeba-195390",
-    "sent:tatoeba-9489164",
-    "sent:tatoeba-80460",
-    "sent:tatoeba-11162294",
-    "sent:tatoeba-80452"
+    "sent:tatoeba-143547",
+    "sent:tatoeba-78588",
+    "sent:tatoeba-80608",
+    "sent:tatoeba-80460"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1516925",
     "vocab:1523060",
-    "vocab:1584660",
+    "vocab:1512670",
+    "vocab:1604890",
     "vocab:1171900",
-    "vocab:1438690"
+    "vocab:1538130",
+    "vocab:1327120",
+    "vocab:1372980",
+    "vocab:1529330"
   ],
   "patterns": [
-    "gram:tte"
+    "gram:deshou",
+    "gram:gp-62",
+    "gram:ka-shira",
+    "gram:gp-115",
+    "gram:gp-63"
   ],
   "kanji_recognition": [
+    "守",
+    "束",
+    "方",
+    "約",
     "会",
-    "人",
-    "当",
-    "柄",
-    "本",
-    "日"
+    "人"
   ],
   "shadowing": [
+    "sent:tatoeba-79537",
     "sent:tatoeba-185449",
-    "sent:tatoeba-195390",
-    "sent:tatoeba-9489164",
-    "sent:tatoeba-80460",
-    "sent:tatoeba-11162294",
-    "sent:tatoeba-80452"
+    "sent:tatoeba-143547",
+    "sent:tatoeba-78588",
+    "sent:tatoeba-80608",
+    "sent:tatoeba-80460"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 292,
+  "cumulative_known_vocab": 332,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -53,8 +62,8 @@
       "via": "new-word",
       "distractors": [
         "所",
-        "別",
-        "日"
+        "音",
+        "別"
       ]
     },
     {
@@ -64,102 +73,136 @@
       "distractors": [
         "花",
         "話",
-        "時"
+        "夫"
       ]
     },
     {
-      "id": "kr:n5:16",
+      "id": "kr:n4:1214",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ところ",
-        "からい",
-        "よやく"
+        "なるべく",
+        "かのじょ",
+        "でかける"
       ]
     },
     {
-      "id": "kr:n5:36",
+      "id": "kr:n5:159",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "いつ",
-        "あう",
-        "だす"
+        "とし",
+        "そと",
+        "ふね"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:ka-shira",
-    "gram:darou",
-    "gram:gp-67"
+    "gram:te-ita"
   ],
   "drills": [
     {
-      "pattern": "gram:tte",
+      "pattern": "gram:deshou",
       "examples": [
-        "sent:gen-5412a2ccf468",
-        "sent:tatoeba-4888",
-        "sent:gen-f07c27f794eb"
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-5347"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-62",
+      "examples": [
+        "sent:tatoeba-174749",
+        "sent:tatoeba-182548",
+        "sent:tatoeba-174748"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ka-shira",
+      "examples": [
+        "sent:tatoeba-11510681",
+        "sent:tatoeba-12296518",
+        "sent:tatoeba-11162294"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-115",
+      "examples": [
+        "sent:gen-4c4eb1f80410",
+        "sent:tatoeba-123138",
+        "sent:gen-b5467a55ded1"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-63",
+      "examples": [
+        "sent:gen-113cd2b42397",
+        "sent:tatoeba-161847",
+        "sent:tatoeba-186610"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Por causa disso, talvez eu acabe perdendo o emprego.",
-      "answer_key": "そのために仕事を失うことになるかもしれない。",
+      "prompt_pt": "Infelizmente, muitos japoneses morreram.",
+      "answer_key": "悲しいことに多くの日本人が亡くなりました。",
       "accepted_variants": [
-        "そのために仕事を失うことになるかもしれない",
-        "そのために仕事を失うことになるかもしれない。"
+        "悲しいことに多くの日本人が亡くなりました",
+        "悲しいことに多くの日本人が亡くなりました。"
       ],
-      "sentence": "sent:tatoeba-212988",
+      "sentence": "sent:tatoeba-789591",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por causa disso, ele perdeu o emprego.",
-      "answer_key": "彼はそのために仕事を失った。",
+      "prompt_pt": "Meu marido geralmente sai para o trabalho às 8 horas.",
+      "answer_key": "夫は大抵８時には仕事に出かけます。",
       "accepted_variants": [
-        "彼はそのために仕事を失った",
-        "彼はそのために仕事を失った。"
+        "夫は大抵８時には仕事に出かけます",
+        "夫は大抵８時には仕事に出かけます。"
       ],
-      "sentence": "sent:tatoeba-113170",
+      "sentence": "sent:tatoeba-10050538",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Meu hobby é ler romances.",
-      "answer_key": "私の趣味は小説を読むことです。",
+      "prompt_pt": "Há muitos estudantes na biblioteca.",
+      "answer_key": "図書館にはたくさんの学生がいます。",
       "accepted_variants": [
-        "私の趣味は小説を読むことです",
-        "私の趣味は小説を読むことです。"
+        "図書館にはたくさんの学生がいます",
+        "図書館にはたくさんの学生がいます。"
       ],
-      "sentence": "sent:tatoeba-163367",
+      "sentence": "sent:tatoeba-143880",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
+      "sent:jec-1876",
+      "sent:tatoeba-163381",
+      "sent:tatoeba-113170",
+      "sent:tatoeba-163367",
       "sent:tatoeba-10899831",
-      "sent:tatoeba-1590863",
-      "sent:tatoeba-196355",
-      "sent:tatoeba-10760527",
-      "sent:tatoeba-142954",
-      "sent:jec-0320"
+      "sent:tatoeba-1590863"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 43,
-    "fluency": 16
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 16,
+    "language-focused": 29,
     "fluency": 6
   }
 }

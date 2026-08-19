@@ -1,0 +1,218 @@
+{
+  "id": "speak:past_stories-06",
+  "schema_version": "1.0",
+  "stage": "speak:past_stories",
+  "order": 6,
+  "title": {
+    "pt-BR": "Contar o que aconteceu — parte 6"
+  },
+  "say_now": [
+    "sent:tatoeba-159016",
+    "sent:tatoeba-228002",
+    "sent:tatoeba-792555",
+    "sent:tatoeba-1783174",
+    "sent:tatoeba-199229",
+    "sent:tatoeba-78190"
+  ],
+  "chunk_phrases": [],
+  "untranslated": [],
+  "words": [
+    "vocab:1463930",
+    "vocab:1001140",
+    "vocab:1039140",
+    "vocab:1388740",
+    "vocab:1577120",
+    "vocab:1445360"
+  ],
+  "patterns": [
+    "gram:nasai",
+    "gram:koto",
+    "gram:nara",
+    "gram:da-desu",
+    "gram:gp",
+    "gram:gp-14"
+  ],
+  "kanji_recognition": [
+    "記",
+    "行",
+    "私",
+    "日",
+    "旅",
+    "初"
+  ],
+  "shadowing": [
+    "sent:tatoeba-159016",
+    "sent:tatoeba-228002",
+    "sent:tatoeba-792555",
+    "sent:tatoeba-1783174",
+    "sent:tatoeba-199229",
+    "sent:tatoeba-78190"
+  ],
+  "audio": "pending",
+  "real_phrases": 6,
+  "cumulative_known_vocab": 455,
+  "layer": "C",
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:841",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4997:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "点",
+        "何",
+        "日"
+      ]
+    },
+    {
+      "id": "cf:n3:1730:2803",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "あっ",
+        "郊外",
+        "電話"
+      ]
+    },
+    {
+      "id": "kr:n5:343",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "すう",
+        "かぜ",
+        "あに"
+      ]
+    },
+    {
+      "id": "kr:n4:1100",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "ふね",
+        "はち",
+        "きく"
+      ]
+    }
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:nasai",
+      "examples": [
+        "sent:tatoeba-78287",
+        "sent:tatoeba-79943",
+        "sent:tatoeba-78855"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nara",
+      "examples": [
+        "sent:tatoeba-80337",
+        "sent:tatoeba-80586",
+        "sent:tatoeba-80338"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74036",
+        "sent:tatoeba-76735",
+        "sent:tatoeba-76723"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Vá procurar o motorista que chegou aqui ontem.",
+      "answer_key": "昨日ここに着いた運転手を見つけに行きなさい。",
+      "accepted_variants": [
+        "昨日ここに着いた運転手を見つけに行きなさい",
+        "昨日ここに着いた運転手を見つけに行きなさい。"
+      ],
+      "sentence": "sent:tatoeba-170105",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ontem eu fui ao zoológico.",
+      "answer_key": "昨日動物園に行った。",
+      "accepted_variants": [
+        "昨日動物園に行った",
+        "昨日動物園に行った。"
+      ],
+      "sentence": "sent:tatoeba-5217",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu pai foi internado ontem.",
+      "answer_key": "父は昨日入院しました。",
+      "accepted_variants": [
+        "父は昨日入院しました",
+        "父は昨日入院しました。"
+      ],
+      "sentence": "sent:tatoeba-84567",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-78160",
+      "sent:tatoeba-78156",
+      "sent:tatoeba-147605",
+      "sent:tatoeba-11706794",
+      "sent:tatoeba-214558",
+      "sent:jec-0319"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
+}

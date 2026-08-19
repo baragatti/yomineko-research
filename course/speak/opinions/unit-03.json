@@ -7,47 +7,50 @@
     "pt-BR": "Dizer o que você acha — parte 3"
   },
   "say_now": [
+    "sent:tatoeba-75043",
+    "sent:tatoeba-219422",
+    "sent:tatoeba-82992",
+    "sent:tatoeba-225064",
     "sent:tatoeba-197441",
-    "sent:tatoeba-179684",
-    "sent:tatoeba-89607",
-    "sent:jec-0517",
-    "sent:tatoeba-235244",
-    "sent:tatoeba-8579878"
+    "sent:tatoeba-179684"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1409140",
+    "vocab:1215790",
+    "vocab:1480670",
     "vocab:1346150",
     "vocab:1242970",
-    "vocab:1006110",
-    "vocab:1262530"
+    "vocab:1019420"
   ],
   "patterns": [
     "gram:kamo-shirenai",
-    "gram:janai-dewa-nai",
-    "gram:gp-32",
-    "gram:gp-120",
-    "gram:tte"
+    "gram:hazu-ga-nai",
+    "gram:masen-ka",
+    "gram:gp-149",
+    "gram:gp-89",
+    "gram:gp-12"
   ],
   "kanji_recognition": [
-    "勝",
-    "金",
-    "持",
+    "身",
+    "体",
     "意",
+    "関",
     "見",
-    "私"
+    "題"
   ],
   "shadowing": [
+    "sent:tatoeba-75043",
+    "sent:tatoeba-219422",
+    "sent:tatoeba-82992",
+    "sent:tatoeba-225064",
     "sent:tatoeba-197441",
-    "sent:tatoeba-179684",
-    "sent:tatoeba-89607",
-    "sent:jec-0517",
-    "sent:tatoeba-235244",
-    "sent:tatoeba-8579878"
+    "sent:tatoeba-179684"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 476,
+  "cumulative_known_vocab": 524,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -67,8 +70,18 @@
       "via": "new-word",
       "distractors": [
         "買い物",
-        "集まる",
-        "女の子"
+        "女の子",
+        "小さい"
+      ]
+    },
+    {
+      "id": "kr:n3:1663",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まいあさ",
+        "けいけん",
+        "りょうり"
       ]
     },
     {
@@ -80,21 +93,9 @@
         "せん",
         "かぜ"
       ]
-    },
-    {
-      "id": "kr:n4:1348",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "もんだい",
-        "コーヒー",
-        "みつかる"
-      ]
     }
   ],
-  "patterns_chunked": [
-    "gram:tara"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:kamo-shirenai",
@@ -106,98 +107,107 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:janai-dewa-nai",
+      "pattern": "gram:hazu-ga-nai",
       "examples": [
-        "sent:tatoeba-229343",
-        "sent:tatoeba-228269",
-        "sent:tatoeba-227828"
+        "sent:tatoeba-11692639",
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-32",
+      "pattern": "gram:masen-ka",
       "examples": [
-        "sent:tatoeba-78700",
-        "sent:tatoeba-4714",
-        "sent:tatoeba-85319"
+        "sent:gen-4595bdeb6907",
+        "sent:gen-24bb23e4256e",
+        "sent:gen-a94929c3a847"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-120",
+      "pattern": "gram:gp-149",
       "examples": [
-        "sent:tatoeba-193408",
-        "sent:gen-40a736aa4ac8",
-        "sent:gen-5bccb5134f4a"
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:tte",
+      "pattern": "gram:gp-89",
       "examples": [
-        "sent:gen-fee342a8016b",
-        "sent:gen-5412a2ccf468",
-        "sent:gen-000fc485400b"
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "É por isso que eu sou contra você.",
-      "answer_key": "こういうわけで私はあなたに反対なのです。",
+      "prompt_pt": "Não consigo compreender o motivo.",
+      "answer_key": "理由がわかりかねます。",
       "accepted_variants": [
-        "こういうわけで私はあなたに反対なのです",
-        "こういうわけで私はあなたに反対なのです。"
+        "理由がわかりかねます",
+        "理由がわかりかねます。"
       ],
-      "sentence": "sent:tatoeba-225064",
+      "sentence": "sent:tatoeba-78366",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Minha mãe é contra eu fazer um trabalho de meio período.",
-      "answer_key": "母は私がアルバイトをすることに反対なの。",
+      "prompt_pt": "Não é possível que eles tenham perdido a partida.",
+      "answer_key": "試合に負けたはずがない。",
       "accepted_variants": [
-        "母は私がアルバイトをすることに反対なの",
-        "母は私がアルバイトをすることに反対なの。"
+        "試合に負けたはずがない",
+        "試合に負けたはずがない。"
       ],
-      "sentence": "sent:tatoeba-82992",
+      "sentence": "sent:tatoeba-151044",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A respeito dessa questão, há três opiniões.",
-      "answer_key": "この問題に関しては３つの意見がある。",
+      "prompt_pt": "Sobre isto, eu devo estar certo.",
+      "answer_key": "これについては、私は正しいはずです。",
       "accepted_variants": [
-        "この問題に関しては３つの意見がある",
-        "この問題に関しては３つの意見がある。"
+        "これについては、私は正しいはずです",
+        "これについては、私は正しいはずです。"
       ],
-      "sentence": "sent:tatoeba-219422",
+      "sentence": "sent:tatoeba-5348453",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
     "items": [
-      "sent:tatoeba-519050",
-      "sent:tatoeba-151044",
       "sent:tatoeba-119734",
       "sent:tatoeba-11692639",
+      "sent:tatoeba-77555",
       "sent:tatoeba-162311",
-      "sent:tatoeba-79019"
+      "sent:tatoeba-81566",
+      "sent:tatoeba-84069"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 28,
     "fluency": 6
   }
 }

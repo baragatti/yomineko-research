@@ -76,6 +76,16 @@ def main() -> int:
 
     from dissect import Dissector
     from persist_dissection import persist
+
+    # Layer-B dissection content, authored and reviewed separately. Every bank sentence is
+    # dissection_tier "full", which validate.py reads as a promise of a gloss on every content token, an
+    # explanation on every particle, and a structure paragraph. Ingesting without these is what produced
+    # 2,756 validator errors on the first trial run.
+    layerb: dict[int, dict] = {}
+    for f in sorted((ROOT / "research" / "derived" / "mined_layerb").glob("batch-*.json")):
+        for s2 in json.loads(f.read_text(encoding="utf-8")).get("sentences", []):
+            layerb[s2["tatoeba_id"]] = s2
+    print(f"{len(layerb)} sentences carry authored Layer-B dissection content")
     con = sqlite3.connect(DB)
     raw = {i: t for i, t in con.execute("SELECT id,text FROM raw_tatoeba_sentence")}
     have = {s for s, in con.execute("SELECT slug FROM sentence")}
@@ -95,9 +105,14 @@ def main() -> int:
         if slug in have:
             stats["already-banked"] += 1
             continue
+        lb = layerb.get(tid, {})
         rec = {
             "slug": slug, "jp": jp, "en": r.get("en"),
             "pt": r.get("pt"), "pt_literal": r.get("pt_literal"),
+            "structure_explanation_pt": lb.get("structure_explanation_pt"),
+            # persist() keys these by token/particle POSITION, so they must be dicts, not lists.
+            "tokens": {t["position"]: t for t in lb.get("tokens", [])},
+            "particles": {q["position"]: q for q in lb.get("particles", [])},
             "jp_source": "tatoeba", "ai_generated": 0,
             "tags": ["mined", f"stage:{r.get('stage', '')}"],
             "translation_confidence": 0.8,

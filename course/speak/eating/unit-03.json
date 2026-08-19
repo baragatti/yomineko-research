@@ -10,8 +10,8 @@
     "sent:tatoeba-179074",
     "sent:tatoeba-10557770",
     "sent:tatoeba-412068",
+    "sent:tatoeba-5329",
     "sent:tatoeba-236798",
-    "sent:tatoeba-179391",
     "sent:tatoeba-10092041"
   ],
   "chunk_phrases": [],
@@ -20,14 +20,14 @@
     "vocab:1247250",
     "vocab:1463770",
     "vocab:1258330",
+    "vocab:1540170",
     "vocab:1163400",
-    "vocab:1451750",
     "vocab:1338180",
     "vocab:1465610",
+    "vocab:1371260",
     "vocab:1502840",
-    "vocab:1215810",
     "vocab:1348910",
-    "vocab:1245470"
+    "vocab:2796520"
   ],
   "patterns": [
     "gram:gp-109",
@@ -46,13 +46,13 @@
     "sent:tatoeba-179074",
     "sent:tatoeba-10557770",
     "sent:tatoeba-412068",
+    "sent:tatoeba-5329",
     "sent:tatoeba-236798",
-    "sent:tatoeba-179391",
     "sent:tatoeba-10092041"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 107,
+  "cumulative_known_vocab": 110,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -68,7 +68,7 @@
       "distractors": [
         "僕",
         "別",
-        "君"
+        "年"
       ]
     },
     {
@@ -82,16 +82,6 @@
       ]
     },
     {
-      "id": "kr:n4:1001",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はなす",
-        "ねだん",
-        "ちから"
-      ]
-    },
-    {
       "id": "kr:n4:1219",
       "type": "kanji_reading",
       "via": "new-word",
@@ -99,6 +89,16 @@
         "いえ",
         "ひと",
         "まつ"
+      ]
+    },
+    {
+      "id": "kr:n5:324",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かのじょ",
+        "おいしい",
+        "おしえる"
       ]
     }
   ],
@@ -138,45 +138,45 @@
   ],
   "production": [
     {
-      "prompt_pt": "Será que eu já tomei o remédio?",
-      "answer_key": "薬飲んだっけ？",
-      "accepted_variants": [
-        "薬飲んだっけ",
-        "薬飲んだっけ？"
-      ],
-      "sentence": "sent:tatoeba-11270411",
-      "strand": "meaning-output"
-    },
-    {
       "prompt_pt": "O que você quer beber?",
-      "answer_key": "何が飲みたい？",
+      "answer_key": "何飲みたい？",
       "accepted_variants": [
-        "何が飲みたい",
-        "何が飲みたい？"
+        "何飲みたい",
+        "何飲みたい？"
       ],
-      "sentence": "sent:tatoeba-672326",
+      "sentence": "sent:tatoeba-2633467",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Quero beber água.",
-      "answer_key": "水が飲みたい。",
+      "prompt_pt": "Não come tanto assim!",
+      "answer_key": "そんなに食べないの！",
       "accepted_variants": [
-        "水が飲みたい",
-        "水が飲みたい。"
+        "そんなに食べないの",
+        "そんなに食べないの！"
       ],
-      "sentence": "sent:tatoeba-143825",
+      "sentence": "sent:tatoeba-10657609",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Vamos conversar enquanto tomamos um chá.",
+      "answer_key": "お茶を飲みながら話しましょう。",
+      "accepted_variants": [
+        "お茶を飲みながら話しましょう",
+        "お茶を飲みながら話しましょう。"
+      ],
+      "sentence": "sent:tatoeba-226845",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
-      "sent:tatoeba-2633467",
-      "sent:tatoeba-10657609",
+      "sent:tatoeba-226844",
       "sent:tatoeba-10899775",
       "sent:tatoeba-171644",
       "sent:tatoeba-200661",
-      "sent:tatoeba-1115376"
+      "sent:tatoeba-1115376",
+      "sent:tatoeba-196349"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

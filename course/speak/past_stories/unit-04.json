@@ -8,103 +8,97 @@
   },
   "say_now": [
     "sent:tatoeba-11706794",
+    "sent:tatoeba-78182",
     "sent:tatoeba-147605",
+    "sent:tatoeba-78156",
     "sent:tatoeba-81342",
-    "sent:tatoeba-214558",
-    "sent:tatoeba-157573",
-    "sent:tatoeba-159016"
+    "sent:tatoeba-78160"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1228260",
+    "vocab:1518070",
     "vocab:1341000",
+    "vocab:1220570",
     "vocab:1524700",
-    "vocab:1397300",
-    "vocab:1242350",
-    "vocab:1198880",
+    "vocab:1535560",
     "vocab:1222840",
-    "vocab:1597150",
-    "vocab:1463930"
+    "vocab:1597150"
   ],
   "patterns": [
     "gram:n3-dakedo",
-    "gram:rashii",
     "gram:gp-25",
+    "gram:gp-32",
     "gram:totemo",
-    "gram:temo",
-    "gram:dake"
+    "gram:koto",
+    "gram:temo"
   ],
   "kanji_recognition": [
     "吸",
     "初",
-    "楽",
-    "季",
-    "春",
-    "節"
+    "言",
+    "行",
+    "市",
+    "訪"
   ],
   "shadowing": [
     "sent:tatoeba-11706794",
+    "sent:tatoeba-78182",
     "sent:tatoeba-147605",
+    "sent:tatoeba-78156",
     "sent:tatoeba-81342",
-    "sent:tatoeba-214558",
-    "sent:tatoeba-157573",
-    "sent:tatoeba-159016"
+    "sent:tatoeba-78160"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 399,
+  "cumulative_known_vocab": 441,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "so:n3:259",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
     {
       "id": "so:n3:822",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:463:1000",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "張る",
-        "ええ",
-        "無い"
-      ]
-    },
-    {
-      "id": "cf:n4:4657:1211",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "映画",
-        "毎日",
-        "送る"
-      ]
-    },
-    {
-      "id": "kr:n4:1000",
+      "id": "kr:n3:1688",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しごと",
-        "かわり",
-        "おわる"
+        "よやく",
+        "おわる",
+        "およぐ"
       ]
     },
     {
-      "id": "kr:n4:1211",
+      "id": "kr:n4:1286",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "こうがい",
-        "おくれる",
-        "たずねる"
+        "らいねん",
+        "はじめて",
+        "シャワー"
+      ]
+    },
+    {
+      "id": "cf:n3:4373:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "夜",
+        "薬",
+        "本"
+      ]
+    },
+    {
+      "id": "cf:n3:4391:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "役",
+        "君",
+        "次"
       ]
     }
   ],
@@ -120,15 +114,6 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:rashii",
-      "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-dbc3c7fb8b46",
-        "sent:tatoeba-189629"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:gp-25",
       "examples": [
         "sent:tatoeba-229345",
@@ -138,11 +123,29 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-85319",
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:totemo",
       "examples": [
         "sent:gen-25da035589e0",
-        "sent:tatoeba-5074",
-        "sent:tatoeba-4947"
+        "sent:gen-2b1fccae756f",
+        "sent:tatoeba-5074"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
       ],
       "strand": "language-focused"
     },
@@ -151,76 +154,65 @@
       "examples": [
         "sent:gen-ff6004963148",
         "sent:tatoeba-78150",
-        "sent:gen-fd723f8599f2"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:dake",
-      "examples": [
-        "sent:gen-10932a1910b5",
-        "sent:gen-fec0529a3037",
-        "sent:tatoeba-4767"
+        "sent:gen-a1d5b47d31e9"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Já o encontrei uma vez.",
-      "answer_key": "一度会ったことがある。",
+      "prompt_pt": "Por favor, tenha uma refeição maravilhosa.",
+      "answer_key": "すばらしい食事を経験下さい。",
       "accepted_variants": [
-        "一度会ったことがある",
-        "一度会ったことがある。"
+        "すばらしい食事を経験下さい",
+        "すばらしい食事を経験下さい。"
       ],
-      "sentence": "sent:tatoeba-1897537",
+      "sentence": "sent:tatoeba-214558",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Vamos guardar este dinheiro para a viagem de verão.",
-      "answer_key": "このお金は夏の旅行にとっておこう。",
+      "prompt_pt": "No fim das contas, é a experiência que faz a diferença.",
+      "answer_key": "やはり経験がものを言います",
       "accepted_variants": [
-        "このお金は夏の旅行にとっておこう",
-        "このお金は夏の旅行にとっておこう。"
+        "やはり経験がものを言います"
       ],
-      "sentence": "sent:tatoeba-223949",
+      "sentence": "sent:jec-0319",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Em casos assim, é a experiência que fala mais alto.",
-      "answer_key": "こういう場合には経験が物を言う。",
+      "prompt_pt": "Todo mundo passa por isso.",
+      "answer_key": "誰もが経験をする",
       "accepted_variants": [
-        "こういう場合には経験が物を言う",
-        "こういう場合には経験が物を言う。"
+        "誰もが経験をする"
       ],
-      "sentence": "sent:tatoeba-225041",
+      "sentence": "sent:jec-0071",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
     "items": [
-      "sent:tatoeba-228002",
+      "sent:tatoeba-5118",
+      "sent:tatoeba-78134",
       "sent:tatoeba-171398",
-      "sent:tatoeba-142423",
-      "sent:tatoeba-78175",
-      "sent:tatoeba-78150",
-      "sent:tatoeba-78153"
+      "sent:tatoeba-78158",
+      "sent:tatoeba-13537670",
+      "sent:tatoeba-143986"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 60,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 31,
     "fluency": 6
   }
 }

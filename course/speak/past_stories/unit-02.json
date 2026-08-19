@@ -7,97 +7,97 @@
     "pt-BR": "Contar o que aconteceu — parte 2"
   },
   "say_now": [
-    "sent:tatoeba-78179",
-    "sent:tatoeba-78176",
-    "sent:tatoeba-78153",
-    "sent:tatoeba-78150",
-    "sent:tatoeba-78175",
-    "sent:tatoeba-184162"
+    "sent:tatoeba-78177",
+    "sent:tatoeba-171398",
+    "sent:tatoeba-223949",
+    "sent:tatoeba-156748",
+    "sent:tatoeba-78134",
+    "sent:tatoeba-5118"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1553170",
-    "vocab:1207240"
+    "vocab:1602710",
+    "vocab:1158880",
+    "vocab:1191320",
+    "vocab:1378690",
+    "vocab:1501620",
+    "vocab:1260720",
+    "vocab:1401210",
+    "vocab:1348410"
   ],
   "patterns": [
     "gram:temo-ii-desu",
-    "gram:masen-ka",
-    "gram:gp-149",
-    "gram:issho-ni"
+    "gram:te-kudasai",
+    "gram:janai-dewa-nai",
+    "gram:temo",
+    "gram:da-desu",
+    "gram:gp"
   ],
   "kanji_recognition": [
     "行",
-    "出",
+    "親",
+    "相",
+    "談",
     "旅",
-    "一",
-    "緒",
-    "楽"
+    "両"
   ],
   "shadowing": [
-    "sent:tatoeba-78179",
-    "sent:tatoeba-78176",
-    "sent:tatoeba-78153",
-    "sent:tatoeba-78150",
-    "sent:tatoeba-78175",
-    "sent:tatoeba-184162"
+    "sent:tatoeba-78177",
+    "sent:tatoeba-171398",
+    "sent:tatoeba-223949",
+    "sent:tatoeba-156748",
+    "sent:tatoeba-78134",
+    "sent:tatoeba-5118"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 380,
+  "cumulative_known_vocab": 427,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:869",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n5:378",
+      "id": "kr:n4:1296",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "アパート",
-        "まいにち",
-        "なるべく"
+        "かのじょ",
+        "ほんとう",
+        "たくさん"
       ]
     },
     {
-      "id": "cf:n4:3511:1226",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "値段",
-        "使う",
-        "何れ"
-      ]
-    },
-    {
-      "id": "cf:n4:3517:887",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "家",
-        "別",
-        "夜"
-      ]
-    },
-    {
-      "id": "kr:n4:1302",
+      "id": "kr:n5:235",
       "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おおい",
+        "あたま",
+        "つれる"
+      ]
+    },
+    {
+      "id": "cf:n3:4093:2453",
+      "type": "context_fill",
       "via": "review",
       "distractors": [
-        "たくさん",
-        "たてもの",
-        "うまれる"
+        "熱",
+        "箸",
+        "道"
+      ]
+    },
+    {
+      "id": "cf:n3:4234:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "人",
+        "他",
+        "男"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:gp-128",
-    "gram:you-ni-you-na"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:temo-ii-desu",
@@ -109,88 +109,107 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:masen-ka",
+      "pattern": "gram:te-kudasai",
       "examples": [
-        "sent:gen-4595bdeb6907",
-        "sent:gen-4e948f2f75b0",
-        "sent:gen-24bb23e4256e"
+        "sent:tatoeba-124708",
+        "sent:tatoeba-74723",
+        "sent:tatoeba-146189"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-149",
+      "pattern": "gram:janai-dewa-nai",
       "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-79091"
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:issho-ni",
+      "pattern": "gram:temo",
       "examples": [
-        "sent:tatoeba-774809",
-        "sent:tatoeba-190532",
-        "sent:tatoeba-190545"
+        "sent:gen-ff6004963148",
+        "sent:tatoeba-78150",
+        "sent:gen-a1d5b47d31e9"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Vá procurar o motorista que chegou aqui ontem.",
-      "answer_key": "昨日ここに着いた運転手を見つけに行きなさい。",
+      "prompt_pt": "Viajar é divertido.",
+      "answer_key": "旅行は楽しい。",
       "accepted_variants": [
-        "昨日ここに着いた運転手を見つけに行きなさい",
-        "昨日ここに着いた運転手を見つけに行きなさい。"
+        "旅行は楽しい",
+        "旅行は楽しい。"
       ],
-      "sentence": "sent:tatoeba-170105",
+      "sentence": "sent:tatoeba-78158",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Só ontem fiquei sabendo disso.",
-      "answer_key": "昨日になってはじめて私はそのことを知った。",
+      "prompt_pt": "É muito divertido.",
+      "answer_key": "とても楽しい。",
       "accepted_variants": [
-        "昨日になってはじめて私はそのことを知った",
-        "昨日になってはじめて私はそのことを知った。"
+        "とても楽しい",
+        "とても楽しい。"
       ],
-      "sentence": "sent:tatoeba-170073",
+      "sentence": "sent:tatoeba-13537670",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "\"Qual gravata você vai escolher?\" \"A que comprei ontem.\"",
-      "answer_key": "「ネクタイどれにするの？」「昨日買ったの」",
+      "prompt_pt": "A vida é divertida.",
+      "answer_key": "人生は楽しい。",
       "accepted_variants": [
-        "「ネクタイどれにするの？」「昨日買ったの」"
+        "人生は楽しい",
+        "人生は楽しい。"
       ],
-      "sentence": "sent:tatoeba-10056979",
+      "sentence": "sent:tatoeba-143986",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
     "items": [
-      "sent:tatoeba-169806",
-      "sent:tatoeba-168168",
-      "sent:tatoeba-79502",
+      "sent:tatoeba-142423",
       "sent:tatoeba-121897",
+      "sent:tatoeba-10901645",
       "sent:tatoeba-212666",
-      "sent:tatoeba-10901645"
+      "sent:jec-1326",
+      "sent:tatoeba-10587764"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 30,
     "fluency": 6
   }
 }

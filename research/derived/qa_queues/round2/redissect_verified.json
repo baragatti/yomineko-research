@@ -1,0 +1,328 @@
+{
+ "queue": "redissect",
+ "check": "round2-verified",
+ "checked_file": "research/derived/qa_queues/redissect.json",
+ "verified_against": "corpus/sentences/bank.json",
+ "date": "2026-08-19",
+ "counts": {
+  "rows": 39,
+  "fix": 4,
+  "no_change": 19,
+  "needs_human": 16
+ },
+ "summary": "39 rows reverified against the live corpus/sentences/bank.json on 2026-08-19, not against the state the queue was written from. 4 fix, 19 no-change, 16 needs-human. The queue's 28 fixes do not survive: 10 of them are already in the file and 14 more should not be applied as written.\n\n1. TEN VOCAB REPOINTS ARE ALREADY LANDED. Rows 1, 11, 15, 17, 23, 25, 27, 29, 31 and 32 quote anchors that no longer exist. Commit 294fe90 applied scripts/fix_homophone_vocab_links.py corpus-wide (1,425 tokens), covering all six classes 334 to 1358, 196 to 257, 41 to 758, 336 to 1338, 1176 to 1199 and 1184 to 1356. The strings \"vocab_id\": 334 and \"vocab_id\": 1176 no longer occur anywhere in the bank. Their targets were correct; there is simply nothing left to do, and an applier that treats a missing anchor as an error will report ten false failures. The two repoint classes that commit did NOT cover are the two still live here, rows 34 and 37.\n\n2. EVERY ROW THAT REWRITES JAPANESE IS REFUSED. Ten rows anchor on the jp field. The applier for these queues is a byte-exact field replacement (scripts/apply_phase4_grammar.py is the working shape), not a re-dissection, so writing jp alone leaves the stored kana, the stored romaji, the token array, structure_explanation and the particles array describing a sentence that no longer exists. Four of the ten are orthography preference rather than error and are dropped outright: 此処 and 様 are both registered forms of their linked entries, no orthography convention is stated in YOMINEKO_CORPUS_BUILD_SPEC.md or anywhere in design/, and each of those four records is internally consistent exactly as stored. Worse, the queue's safety claim for them is provably false: dissect.py builds its form table from vocab_form with setdefault before headword or kana, entry 196 (九) registers ここ and entry 955 (用) owns よう, and the bank confirms it, since all 58 ここ-spelled tokens carry 196 and all 119 よう-spelled tokens carry 955. Re-dissecting from the proposed spellings would strip these four sentences of the very target link they were generated to teach.\n\n3. SIX JP ROWS NAME A REAL DEFECT AND ARE ESCALATED, NOT DROPPED. で with an existence predicate (686faf1ec51d), third-person 〜たい (aef805c4840d), 私のお兄さん (cb6562f41e17), 外国に輸入 against a translation that says do exterior (b2ed6e8bb267), 毛 for head hair (8cc2f196d1e9) and 以下 spelled in kana in its own grammar-point sentence (b7b28dfc0928). Two of those records do not merely contain the error, they teach it: structure_explanation and particles[0] of 686faf1ec51d state that で marks the place where existence happens, and b2ed6e8bb267 explains に as the destination in both locales. These are worth fixing, as coordinated re-authorings of one sentence each (jp plus kana plus romaji plus the affected token plus translations plus prose), never as a one-field row. Three of them (8cc2f196d1e9, aef805c4840d, cb6562f41e17) also change who or what the sentence is about, so the stored pt-BR would be left describing the old referent.\n\n4. FOUR ROWS SURVIVE. Row 26 (inflection attributive to terminal on 正しい, which closes a clause before a 読点 and a conjunction), row 34 (下る linked to 下がる), row 36 (token romaji chuu on a token read なか, where the stored sentence romaji already says naka) and row 37 (中 なか linked to 内). All four touch one derived or mechanical field, none touches a Layer-A string, and all four anchors are still present and unique inside their own record. Applier constraint for all of them: the anchors are NOT globally unique (\"inflection\": \"attributive\" occurs 1,549 times, and \"vocab_id\": 79 also prefix-matches ids like 790), so they must be resolved on the parsed record and the parsed field, not by raw text replacement.\n\n5. ROW 38 IS DROPPED ON PRINCIPLE. Adding a role to 家 in a Layer-A record repairs nothing: 31 C-mode tokens in the bank legitimately carry a gloss with no role, a prior verifier already ruled the state defensible, and this queue is not the place to re-litigate it.\n\n6. THE NINE NEEDS-HUMAN ROWS ALL HOLD, with two rationales gone stale by the repoint commit: row 2's gloss complaint (the token now links 1338, which does gloss back) and row 3's し complaint (already 1358). Row 3's ためる mislink to entry 1089 is still live and was covered by no repoint class. Row 19 is an applier constraint rather than a finding and must be honored before anything else in this queue is touched: in records carrying mode-A subunits the tokens array is not indexable by position, and for sent:gen-cb6562f41e17 tokens[0] is the honorific prefix お while position 0 is 私.",
+ "rows": [
+  {
+   "row": 0,
+   "id": "sent:gen-0ef54fed8af5",
+   "verdict": "needs-human",
+   "current": "朝は味噌の汁を飲みます",
+   "fix": "",
+   "why": "Agree with the queue. Confirmed against the file: the eight mode-C tokens reproduce jp, kana and romaji exactly, position 2 (味噌) carries vocab_id 971 which is the declared target tag, and position 4 (汁) carries vocab_id null although entry 3551 exists. The underlying complaint is real, because 味噌の汁 is not how the dish is named, but the registry has no entry for the compound 味噌汁, so any merge returns vocab_id null and strips the sentence of its only link to its target word. Note also that the particles array carries an explanation built on that の (の liga 味噌 a 汁), which a merge would strand. Human decision plus a registry addition, not a re-parse."
+  },
+  {
+   "row": 1,
+   "id": "sent:gen-138c8e26cf51",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 336",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 1338. The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-138c8e26cf51 position 0 (背, reading せ) now has vocab_id 1338, which is the record's declared target tag. Corpus-wide, \"vocab_id\": 336 survives on 7 tokens only, none of them read せ."
+  },
+  {
+   "row": 2,
+   "id": "sent:gen-138c8e26cf51",
+   "verdict": "needs-human",
+   "current": "背がいたいので病院に行く",
+   "fix": "",
+   "why": "Agree that this is not a mechanical row, with one correction to its rationale. The ので split is real and confirmed: position 3 is の tagged 準体助詞 and position 4 is で lemmatised to だ in the continuative, both with null role and null gloss, so the learner-facing breakdown shows an unexplained で. That is a boundary outcome no field edit can deliver. The queue's second limb is now stale: it says position 0 points at an entry glossing only height, but the link is already 1338 and entry 1338 glosses back as well as height and stature, so the stored gloss is defensible. Nothing here should be applied blind."
+  },
+  {
+   "row": 3,
+   "id": "sent:gen-67098aef1bd0",
+   "verdict": "needs-human",
+   "current": "お金をためて、然うして車を買った",
+   "fix": "",
+   "why": "Agree, with one limb now stale. Confirmed in the file: 然うして is cut into positions 5, 6 and 7, and entry 1340 (然うして) is the declared target tag with no token linking it. That is a boundary merge, not a value edit. The queue's claim that position 6 し points at 334 is out of date; it already carries 1358. The ため mislink is still live: position 2 has lemma ためる and points at entry 1089 (為, tame), a different lexeme, and that class was not covered by the corpus-wide repoint. This record also carries mode-A subunits at array indices 0 and 1, so array index and position disagree here."
+  },
+  {
+   "row": 4,
+   "id": "sent:gen-68448be6940b",
+   "verdict": "no-change",
+   "current": "あの店は安くはないが おいしい",
+   "fix": "",
+   "why": "Agree, independently reverified. Position 7 is the U+0020 token and its reading and romaji are both empty strings, not a きごう leak. Concatenated C-token readings reproduce the stored kana あのみせわやすくわないがおいしい exactly, and concatenated romaji reproduces the stored romaji exactly. Writing a space into the token reading would push the space back into kana and undo the audited repair in scripts/fable5_fix_whitespace_tokens.py. Correct as it stands."
+  },
+  {
+   "row": 5,
+   "id": "sent:gen-686faf1ec51d",
+   "verdict": "needs-human",
+   "current": "狭い駅で人がたくさんいる",
+   "fix": "",
+   "why": "The defect is real but the fix as scoped would corrupt the record. Real part: an existence predicate with いる takes に, not で, and the record does not merely use で, it teaches it. structure_explanation says in both locales that で marks the place where existence happens, and particles[0] spells the same false rule out again with function place marker. That is a formation rule shipping to learners. Why it cannot be applied here: the row supplies only the jp value, and the applier for these queues is a byte-exact field replacement (see scripts/apply_phase4_grammar.py), not a re-dissection. Writing jp alone leaves stored kana せまいえきで..., stored romaji semaiekide..., token position 2 (surface, lemma, reading, romaji all で), structure_explanation in two locales and particles[0] in four fields all describing a particle the sentence no longer contains. Six fields have to move together and the particle entry has to be re-authored. Escalate as a coordinated re-author of one generated sentence, not as a one-field row."
+  },
+  {
+   "row": 6,
+   "id": "sent:gen-7ca88b215555",
+   "verdict": "no-change",
+   "current": "此処はとても静かだ",
+   "fix": "",
+   "why": "Drop. This is an orthography preference, not an error, and the queue's own safety claim is false. No stated convention exists: I searched YOMINEKO_CORPUS_BUILD_SPEC.md and design/ for any rule on kanji versus kana spelling and found none, and 此処 is the primary registered form of entry 246 in corpus/vocab/n5.json. The record is internally consistent as stored: concatenated C surfaces reproduce jp, readings reproduce kana ここわとてもしずかだ, romaji reproduces the stored romaji, and position 0 links 246, the declared target tag. The row claims the 246 link survives a re-dissection because dissect.py indexes by kana. It does not. dissect.py builds _vocab_by_form from vocab_form with setdefault before it ever reaches headword or kana, and entry 196 (九) registers ここ among its written forms. Measured on the bank: all 58 C-tokens spelled ここ carry vocab_id 196, and only the 2 spelled 此処 carry 246. So the change either desyncs jp from token position 0 (applied as a field write) or destroys the target link (applied as a re-dissection). structure_explanation in both locales also names 此処. Leave it."
+  },
+  {
+   "row": 7,
+   "id": "sent:gen-7dbe2462fc9a",
+   "verdict": "needs-human",
+   "current": "\"surface\": \"え\",\n        \"lemma\": \"え\",\n        \"reading\": \"え\",\n        \"romaji\": \"e\",\n        \"pos\": \"interjection\",\n        \"pos_coarse\": \"感動詞\",\n        \"pos_fine\": \"フィラー\",",
+   "fix": "",
+   "why": "Half right, and the wrong half is bundled in. Real defect: stored jp is 厚い紙にえを描いた and position 3 is the を-marked direct object carrying vocab_id 85 (絵), yet it is tagged 感動詞 フィラー, the filler interjection. The three POS fields genuinely contradict the link and could be corrected on their own with no other consequence. Overreach: the same block also rewrites surface and lemma from え to 絵, which is a jp change this queue does not carry. The row itself says it must be applied together with a jp value from another queue. Applied here it makes the concatenated C surfaces stop reproducing jp. And the POS half has its own cascade the row does not mention: structure_explanation states in both locales that the tokenizer labelled え an interjection, which the fix is what makes false, while the gloss desenho (絵) and particles[1] carry the same workaround. Split the row or escalate it whole."
+  },
+  {
+   "row": 8,
+   "id": "sent:gen-7dd5dc18aba8",
+   "verdict": "needs-human",
+   "current": "\"en\": \"back of the hand\"",
+   "fix": "",
+   "why": "Agree with the queue, and the semantic call is right. 手の裏 is the palm, the same referent as 手のひら; the back of the hand is 手の甲. Both gloss locales and both translations say the opposite, and structure_explanation repeats it. Separately the declared target 1088 (裏) has no token linking it, because 手の裏 is held as a single 普通名詞 with vocab_id null, which also hides the internal の. Correcting the gloss alone leaves the translations contradicting it, and the alternative changes what the sentence teaches. Human."
+  },
+  {
+   "row": 9,
+   "id": "sent:gen-8cc2f196d1e9",
+   "verdict": "needs-human",
+   "current": "彼女の毛はとてもきれいだ",
+   "fix": "",
+   "why": "The complaint is real but the fix changes the referent and the row moves nothing with it. Real part: 毛 is body hair or fur and head hair is 髪, so 彼女の毛 reads oddly for a sentence whose declared target is 1063 (毛). Why it cannot be applied: this is a meaning change, from her hair to the cat's fur, and the stored pt-BR translation is O cabelo dela e muito bonito, with translation_literal and structure_explanation both naming dela. Applied as a field write it also strands stored kana かのじょのけわ..., stored romaji kanojono..., and token position 0 (surface 彼女, reading かのじょ, pos pronoun, vocab_id 1131). Nine fields plus two translations have to be re-authored together. This is a content decision about what the sentence says, not a dissection repair."
+  },
+  {
+   "row": 10,
+   "id": "sent:gen-9467d40879f4",
+   "verdict": "no-change",
+   "current": "此処に座ってもいいですか",
+   "fix": "",
+   "why": "Drop, same grounds as sent:gen-7ca88b215555. No stated orthography convention exists in the spec or in design/, 此処 is the primary registered form of entry 246, and the record is internally consistent: C surfaces reproduce jp, readings reproduce kana ここにすわってもいいですか, and position 0 links 246 which is the declared target tag. The row's claim that the link survives is refuted by the bank, where every one of the 58 ここ-spelled tokens carries 196 (九). structure_explanation in both locales also names 此処. Leave it."
+  },
+  {
+   "row": 11,
+   "id": "sent:gen-a1650baf4ac0",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 196",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 257 (此の). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-a1650baf4ac0 position 0 (この) now has vocab_id 257. The 367-token この class was repointed on a predicate (lemma or surface この, surface not containing 九), so genuine 九 links were preserved."
+  },
+  {
+   "row": 12,
+   "id": "sent:gen-a1650baf4ac0",
+   "verdict": "needs-human",
+   "current": "この問題が解けない学生はない",
+   "fix": "",
+   "why": "Agree. Confirmed in the file: the final ない at position 7 is the non-independent 形容詞 existential with vocab_id 462 (無い), and position 3 解け is the irrealis of 解ける, so nothing is wrong against the stored jp. The pending correction to 学生はいない is a real point, because an animate subject takes いない, but it takes the C-token count from 8 to 9 and renumbers everything after position 6. Any queued edit addressed at position 7 lands on the wrong token afterwards. Boundary work, human."
+  },
+  {
+   "row": 13,
+   "id": "sent:gen-aef805c4840d",
+   "verdict": "needs-human",
+   "current": "妹はピアノを習いたい",
+   "fix": "",
+   "why": "Real defect, wrong instrument. Real part: plain 〜たい states the speaker's own desire; a third-person subject needs 〜たがっている, so 妹は...習いたい is ungrammatical as a bare assertion, and structure_explanation teaches it as expressing the subject's desire in both locales. Why it cannot be applied: the row supplies jp only. Stored kana いもうとわ..., stored romaji imouto..., token position 0 (surface 妹, reading いもうと, pos noun, vocab_id 66), both translations (Minha irma mais nova quer aprender piano), translation_literal and structure_explanation all name the sister. The target vocab 476 on position 4 is indeed untouched, but everything else is not. Re-author as one unit."
+  },
+  {
+   "row": 14,
+   "id": "sent:gen-b2ed6e8bb267",
+   "verdict": "needs-human",
+   "current": "車を外国に輸入する会社です",
+   "fix": "",
+   "why": "Real defect, incomplete fix. Real part: 輸入 is bringing goods in, so the source is marked から; 外国に輸入する contradicts the record's own translation, which says importa carros do exterior. This one is worth fixing because jp and pt-BR currently disagree with each other. Why not here: the row supplies jp only and names one stale role without supplying a value for it. Applied alone it strands stored kana がいこくに..., stored romaji gaikokuni..., token position 3 (surface, lemma, reading, romaji all に), token position 2 role (complemento de destino/lugar, both locales), particles[1] (particle に, function marcador de destino/lugar, explanation in both locales) and structure_explanation, which states in both locales that に marks the destination. Ten fields. Escalate as a coordinated re-author."
+  },
+  {
+   "row": 15,
+   "id": "sent:gen-b2ed6e8bb267",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 334",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 1358 (為る). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-b2ed6e8bb267 position 5 (する) now has vocab_id 1358, and \"vocab_id\": 334 no longer occurs anywhere in corpus/sentences/bank.json. The disputed 716 figure in the queue prose is moot as well."
+  },
+  {
+   "row": 16,
+   "id": "sent:gen-b7b28dfc0928",
+   "verdict": "needs-human",
+   "current": "このケーキは五百円いかです",
+   "fix": "",
+   "why": "The mildest of the jp rows, and still not applicable as one field. Real part: the grammar point is gp-93 (以下) and spelling it in kana forces a workaround into the token role, expressao de limite (以下), and into structure_explanation, which writes いか (以下) in both locales. The homophone risk is live in the bank: of the tokens spelled いか, 9 link entry 47 (行く) and only 5 link 932. Genuinely safe parts: kana いか and romaji ika do not move, and the existing link 932 is already correct. What still blocks it: the row writes jp only, so token position 5 keeps surface and lemma いか and the concatenated C surfaces stop reproducing jp, and structure_explanation in both locales is left describing the old spelling. Needs the token pair and the prose in the same operation."
+  },
+  {
+   "row": 17,
+   "id": "sent:gen-b7b28dfc0928",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 196",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 257 (此の). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-b7b28dfc0928 position 0 (この) now has vocab_id 257."
+  },
+  {
+   "row": 18,
+   "id": "sent:gen-cb6562f41e17",
+   "verdict": "needs-human",
+   "current": "私のお兄さんは背が高い",
+   "fix": "",
+   "why": "Real pedagogical defect, and precisely the kind of change that must not go in as one field. Real part: お兄さん is the form used for someone else's elder brother; one's own is 兄. A sentence whose declared target is 122 (お兄さん) teaching 私のお兄さん inverts the humble and honorific distinction. Why not here: the row writes jp only, while stored kana わたしの..., stored romaji watashino..., token position 0 (surface 私, reading わたし, pos pronoun, vocab_id 690, role possuidor), both translations, translation_literal, structure_explanation and particles[0] and particles[1], which both name 私 explicitly, all follow the possessor. Note also that this record carries mode-A subunits at array indices 0 and 1, so any position-0 edit addressed by array index lands on the honorific prefix お instead. One correction to the row's prose: its carve-out saying position 4 (背) should stay on 336 is moot, that token already carries 1338."
+  },
+  {
+   "row": 19,
+   "id": "sent:gen-cb6562f41e17",
+   "verdict": "needs-human",
+   "current": "\"position\": 2,\n        \"split_mode\": \"A\",\n        \"surface\": \"お\",",
+   "fix": "",
+   "why": "Agree, and this is the most operationally important row in the queue. Independently confirmed: in sent:gen-cb6562f41e17 the two mode-A subunits of お兄さん (お and 兄さん, both carrying parent position 2) sit at array indices 0 and 1, ahead of every mode-C row, so tokens[0] is the honorific prefix while position 0 is 私. Of the 23 records in this queue only this one and sent:gen-67098aef1bd0 carry mode-A rows. Any pass acting on this queue must resolve token paths by the position field with split_mode C. This is an applier constraint rather than a content edit, so there is no value to supply."
+  },
+  {
+   "row": 20,
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "no-change",
+   "current": "雨が降る様ですね",
+   "fix": "",
+   "why": "Drop. 様 is a common registered form of entry 1199 in corpus/vocab/n4.json (is_common true), no orthography convention is stated anywhere in the spec or design/, and the record is internally consistent: C surfaces reproduce jp, readings reproduce kana あめがふるようですね, and position 3 already links 1199, the declared target. Applying jp alone desyncs, because no row in this queue moves position 3 surface and lemma. Applying it by re-dissection is worse: every one of the 119 C-tokens in the bank spelled よう with pos_fine 助動詞語幹 carries vocab_id 955 (用), so the re-parse would take the target link away. The consistency argument is thinner than the queue implies: 6 tokens spelled 様 with that pos_fine already carry 1199, across more records than the two in this queue, so this is a corpus-wide convention decision rather than a two-record cleanup."
+  },
+  {
+   "row": 21,
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "no-change",
+   "current": "main verb (within 様です)",
+   "fix": "",
+   "why": "Drop, conditional on row 20 being dropped. As stored this string is accurate: the sentence really does read 降る様ですね, so position 2 role.en naming 様です is correct, not stale. Rewriting it to the kana spelling while jp keeps 様 would manufacture exactly the mismatch the row claims to be closing. Note also that the same record still spells 様 in position 2 conjugation_note (both locales), position 3 role (both locales) and structure_explanation (both locales), so even under the other reading this pair of rows closes two of eight strings."
+  },
+  {
+   "row": 22,
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "no-change",
+   "current": "verbo principal (dentro do 様です)",
+   "fix": "",
+   "why": "Drop, same grounds as row 21. The pt-BR string is accurate against the stored jp. Changing it alone, or together with only its en twin, leaves six sibling strings in the same record naming 様 and the jp itself unchanged."
+  },
+  {
+   "row": 23,
+   "id": "sent:gen-6f1566f1c7de",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 1176",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 1199 (様, よう). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-6f1566f1c7de position 3 now has vocab_id 1199, which is the declared target tag, and \"vocab_id\": 1176 no longer occurs anywhere in the bank."
+  },
+  {
+   "row": 24,
+   "id": "sent:gen-960cef5443b3",
+   "verdict": "needs-human",
+   "current": "いちにちからあたらしいしごとがはじまる",
+   "fix": "",
+   "why": "Agree, and the earlier rejection was right. Confirmed in the file: position 0 is １ read いち linked to entry 55 and position 1 is 日 read にち linked to entry 484, so stored kana and romaji spell いちにち, the duration word, while both translations say the 1st and the declared target is 401 (１日, ついたち). ついたち is a fused reading of the whole unit and cannot be distributed over the two characters, so storing つい and たち would ship false furigana. The only correct shape is one token spanning １日, which is a boundary merge and belongs to the sanctioned override route in scripts/fable5_register_reading_overrides.py."
+  },
+  {
+   "row": 25,
+   "id": "sent:gen-986d061ae368",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 1184",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 1356 (尤も). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-986d061ae368 position 4 (尤も) now has vocab_id 1356, which is the declared target tag."
+  },
+  {
+   "row": 26,
+   "id": "sent:gen-986d061ae368",
+   "verdict": "fix",
+   "current": "\"inflection\": \"attributive\"",
+   "fix": "\"inflection\": \"terminal\"",
+   "why": "Keep. One of only four rows in the queue that is both still applicable and safe. Verified in the file: jp is 彼は正しい、尤も少し厳しいです, so position 2 (正しい) closes the first clause before the 読点 and the conjunction 尤も and modifies nothing; 終止形 and 連体形 are homographs for 形容詞 and the analyzer defaulted to the wrong one. Its own role says adjetivo (predicado) and its conjugation_note says dictionary form, both of which the attributive label contradicts, and position 6 (厳しい) in the same syntactic slot is already labelled terminal. The value is a neutral-English enum the corpus already uses in this very record. Applier constraint: this anchor occurs 1,549 times corpus-wide and must be scoped to this record, where it occurs exactly once."
+  },
+  {
+   "row": 27,
+   "id": "sent:gen-986d061ae368",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 41",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 758 (彼, かれ). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-986d061ae368 position 0 (彼, reading かれ) now has vocab_id 758. The class was repointed on the predicate reading equal to かれ, so genuine あれ links were left alone."
+  },
+  {
+   "row": 28,
+   "id": "sent:gen-bc13250dc26f",
+   "verdict": "no-change",
+   "current": "明日までに直します、承知しました",
+   "fix": "",
+   "why": "Agree, independently reverified. The ten C-token surfaces reproduce jp, the readings reproduce kana, romaji reproduces the stored romaji, and 承知 as a 普通名詞 with vocab_id 1156 (the declared target) followed by し, まし, た is the right analysis. Nothing in the array is wrong against the stored jp. If the clause reorder is ever accepted it is a permutation plus a renumber plus a kana and romaji rebuild, and it must not be applied while leaving the array alone."
+  },
+  {
+   "row": 29,
+   "id": "sent:gen-bc13250dc26f",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 334",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 1358 (為る). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-bc13250dc26f position 7 (the し of 承知しました) now has vocab_id 1358."
+  },
+  {
+   "row": 30,
+   "id": "sent:gen-efb21932a32f",
+   "verdict": "no-change",
+   "current": "彼は元気な様です",
+   "fix": "",
+   "why": "Drop, same grounds as row 20. 様 is a common registered form of entry 1199, no convention is stated, the record is internally consistent (C surfaces reproduce jp, readings reproduce kana かれわげんきなようです), and position 4 already links 1199, the declared target. A field write desyncs jp from position 4 surface and lemma, and a re-dissection relinks よう to 955 (用) as it does for all 119 existing よう tokens. The row itself names four stale Layer-B strings it would create and supplies a value for none of them, and it misses position 2 conjugation_note and both structure_explanation locales on top of that."
+  },
+  {
+   "row": 31,
+   "id": "sent:gen-efb21932a32f",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 1176",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 1199 (様, よう). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-efb21932a32f position 4 now has vocab_id 1199, which is the declared target tag."
+  },
+  {
+   "row": 32,
+   "id": "sent:gen-efb21932a32f",
+   "verdict": "no-change",
+   "current": "\"vocab_id\": 41",
+   "fix": "",
+   "why": "The anchor is no longer in the file. Commit 294fe90 (repoint of 1,425 homophone-mislinked token.vocab_id values, scripts/fix_homophone_vocab_links.py) already landed this class corpus-wide, and the stored token now carries 758 (彼, かれ). The repoint itself was correct and the target entry checks out against corpus/vocab, but there is nothing left to apply: re-running this row against the current bank finds no anchor, and an applier that treats a missing anchor as a failure reports a false error. Verified by reading corpus/sentences/bank.json directly: sent:gen-efb21932a32f position 0 (彼, reading かれ) now has vocab_id 758."
+  },
+  {
+   "row": 33,
+   "id": "sent:tatoeba-141147",
+   "verdict": "needs-human",
+   "current": "船はどんどん川を下って入った。",
+   "fix": "",
+   "why": "Agree, and the refusal to touch Layer A is correct. Confirmed: the dissection is faithful to the recorded surface, with position 7 入っ lemmatised to 入る and read はいっ, and kana, romaji and both translations internally consistent with the token array. What disagrees is the pairing: the stored English says the boat was rolling down the river, with no entering in it, and 川を下って入った is not idiomatic. That points at how the record or its pairing was ingested, so the check belongs upstream against Tatoeba 141147, not in the token array. Leaving the array as it is remains the only internally consistent state."
+  },
+  {
+   "row": 34,
+   "id": "sent:tatoeba-141147",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 1178",
+   "fix": "\"vocab_id\": 4419",
+   "why": "Keep. Still applicable (this class was not part of the corpus-wide repoint commit) and independently verified. Position 5 has surface 下っ, lemma 下る, reading くだっ, and points at entry 1178, which is 下がる (さがる); 1178 lists 下る among its written forms, which is how the form-table lookup landed there. Entry 4419 is 下る (くだる) and it is the only entry in corpus/vocab with that headword or that kana, and 川を下る is exactly its sense. Touches vocab_id only, no Layer-A string. One caveat for the owner: 4419 is tagged n2 while this is a coverage:n4 sentence, so level coverage counts move with the repoint. Applier constraint: scope to this record, since the bare string also prefix-matches longer ids elsewhere."
+  },
+  {
+   "row": 35,
+   "id": "sent:tatoeba-223377",
+   "verdict": "needs-human",
+   "current": "closing こ of はこ (箱, 'box') plus the genitive の",
+   "fix": "",
+   "why": "Agree, and the diagnosis is right. Confirmed in the file: jp is このはこの外は緑だが中は赤である。 and mode C cut it as この + は + この, so position 2 spans the last mora of はこ plus the following の, and the corpus wrote the description of that error into the token's own gloss and role instead of correcting the cut. Corroboration: position 1 has reading は while its romaji still holds wa from the particle override, so concatenated token romaji reads konowa where the stored sentence romaji reads konoha, and position 2 links 257 as though it were the demonstrative. No re-run of mode C fixes an unspaced kana string; this needs a manual token override, with the gloss and role text going with it."
+  },
+  {
+   "row": 36,
+   "id": "sent:tatoeba-223377",
+   "verdict": "fix",
+   "current": "\"romaji\": \"chuu\"",
+   "fix": "\"romaji\": \"naka\"",
+   "why": "Keep. Verified: position 8 is 中 with reading なか, but its romaji still holds chuu, the romanization of the analyzer's original ちゅう. The stored sentence romaji already reads ...daganakawaakadearu., so only the token field is out of step, and the correction moves the record toward the stored value rather than away from it. Layer-A safe: romaji is a derived display field, and no Japanese, reading or translation is touched. Independent of the boundary question in row 35, which affects positions 0 to 2 only. Applier constraint: scope to this record, where the anchor occurs once; it occurs 15 times corpus-wide."
+  },
+  {
+   "row": 37,
+   "id": "sent:tatoeba-223377",
+   "verdict": "fix",
+   "current": "\"vocab_id\": 79",
+   "fix": "\"vocab_id\": 464",
+   "why": "Keep. Still applicable (not part of the repoint commit) and verified. Position 8 is 中 read なか and points at entry 79, which is 内 (うち) and merely lists 中 among its written forms. Entry 464 is 中 with kana なか, and it is the right one: the only other なか entry is 2498 (仲, a different kanji) and the only other 中 entry is 306 read ちゅう. Both 79 and 464 are n5, so no level bucket moves. Applier constraint: this bare string prefix-matches longer ids such as 790 elsewhere in the bank, so it must be matched on the parsed field, not as raw text."
+  },
+  {
+   "row": 38,
+   "id": "sent:tatoeba-9240812",
+   "verdict": "no-change",
+   "current": "\"surface\": \"家\",\n        \"lemma\": \"家\",\n        \"reading\": \"いえ\",\n        \"romaji\": \"ie\",\n        \"pos\": \"noun\",\n        \"pos_coarse\": \"名詞\",\n        \"pos_fine\": \"普通名詞\",\n        \"inflection\": null,\n        \"inflection_type\": null,\n        \"role\": null,",
+   "fix": "",
+   "why": "Drop. The value itself is well formed and semantically right, 家 is the を-marked direct object and both locales are supplied, but there is no defect to repair. A prior pass already ruled that a missing optional annotation is not an error, and the count it rested on still holds: I counted 31 C-mode tokens in the bank that carry a gloss with no role at all, so this token is a member of a legitimate class rather than an outlier. Nothing in the record is wrong or inconsistent: surfaces reproduce jp, readings reproduce kana, romaji reproduces the stored romaji, んだって is correctly held as ん plus だ plus って, and 買っ links 144. Authoring a new Layer-B string onto a Layer-A record to close a gap a previous verifier explicitly declined to call a gap is churn, not a repair."
+  }
+ ]
+}

@@ -7,147 +7,131 @@
     "pt-BR": "Comer e beber fora — parte 5"
   },
   "say_now": [
+    "sent:tatoeba-187939",
+    "sent:tatoeba-143720",
     "sent:tatoeba-202470",
+    "sent:tatoeba-137747",
     "sent:tatoeba-8775094",
-    "sent:tatoeba-191220",
-    "sent:tatoeba-147790",
-    "sent:tatoeba-201917",
-    "sent:tatoeba-162347"
+    "sent:tatoeba-78125"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1547330",
     "vocab:1589600",
+    "vocab:1412890",
     "vocab:1460850",
-    "vocab:1432920",
-    "vocab:1598550",
-    "vocab:1203250",
-    "vocab:1579080",
-    "vocab:1257240",
-    "vocab:1155060",
-    "vocab:1421900",
+    "vocab:1553170",
+    "vocab:1365980",
+    "vocab:1132570",
     "vocab:1476410",
+    "vocab:1522050",
     "vocab:1049180"
   ],
   "patterns": [
-    "gram:itashimasu",
-    "gram:gp-62"
+    "gram:ga-hoshii",
+    "gram:n3-dakedo"
   ],
   "kanji_recognition": [
-    "終",
+    "何",
     "食",
-    "難",
-    "箸",
-    "以",
-    "下"
+    "水",
+    "終",
+    "進",
+    "大"
   ],
   "shadowing": [
+    "sent:tatoeba-187939",
+    "sent:tatoeba-143720",
     "sent:tatoeba-202470",
+    "sent:tatoeba-137747",
     "sent:tatoeba-8775094",
-    "sent:tatoeba-191220",
-    "sent:tatoeba-147790",
-    "sent:tatoeba-201917",
-    "sent:tatoeba-162347"
+    "sent:tatoeba-78125"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 126,
+  "cumulative_known_vocab": 132,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:207",
+      "id": "so:n4:3448",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n5:3605:416",
+      "id": "so:n5:4186",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:4186:383",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "テーブル",
-        "スリッパ",
-        "成るべく"
+        "出来る",
+        "昼ご飯",
+        "小さい"
       ]
     },
     {
-      "id": "cf:n5:4371:416",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "成るべく",
-        "テーブル",
-        "スリッパ"
-      ]
-    },
-    {
-      "id": "kr:n4:1083",
+      "id": "kr:n4:985",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "たかい",
-        "あがる",
-        "きらい"
+        "いくら",
+        "よやく",
+        "くうき"
       ]
     },
     {
-      "id": "kr:n4:796",
+      "id": "kr:n5:133",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はなし",
+        "しまる",
         "ほしい",
-        "できる"
+        "うける"
+      ]
+    },
+    {
+      "id": "cf:n3:201:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "誰",
+        "彼",
+        "別"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:nakute-wa-naranai",
+    "gram:gp-116",
+    "gram:gp-88",
     "gram:gp-94",
-    "gram:no-naka-de",
     "gram:owaru"
   ],
   "drills": [
     {
-      "pattern": "gram:itashimasu",
+      "pattern": "gram:ga-hoshii",
       "examples": [
-        "sent:tatoeba-10982402",
-        "sent:tatoeba-126195",
-        "sent:tatoeba-9226991"
+        "sent:tatoeba-1484951",
+        "sent:tatoeba-13126478",
+        "sent:tatoeba-1213043"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-62",
+      "pattern": "gram:n3-dakedo",
       "examples": [
-        "sent:tatoeba-174749",
-        "sent:tatoeba-182548",
-        "sent:tatoeba-174748"
+        "sent:tatoeba-3366905",
+        "sent:tatoeba-8575497",
+        "sent:tatoeba-171648"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Quero algo para comer.",
-      "answer_key": "何か食べるものがほしい。",
-      "accepted_variants": [
-        "何か食べるものがほしい",
-        "何か食べるものがほしい。"
-      ],
-      "sentence": "sent:tatoeba-187939",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Por que ninguém quer comer o que eu fiz?",
-      "answer_key": "どうして誰も私が作ったものを食べようとしないの？",
-      "accepted_variants": [
-        "どうして誰も私が作ったものを食べようとしないの",
-        "どうして誰も私が作ったものを食べようとしないの？"
-      ],
-      "sentence": "sent:tatoeba-9819543",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "No ano passado eu plantei tomates, e ficaram muito gostosos.",
       "answer_key": "去年トマトを作ったがとてもおいしかった。",
@@ -157,17 +141,37 @@
       ],
       "sentence": "sent:tatoeba-182254",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A gente comeu com gosto a comida que minha mãe fez.",
+      "answer_key": "母が作ってくれた食事をおいしく食べた。",
+      "accepted_variants": [
+        "母が作ってくれた食事をおいしく食べた",
+        "母が作ってくれた食事をおいしく食べた。"
+      ],
+      "sentence": "sent:tatoeba-83169",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Produção sob encomenda é fabricar só depois de receber o pedido.",
+      "answer_key": "注文を受けてから作るのが受注生産です。",
+      "accepted_variants": [
+        "注文を受けてから作るのが受注生産です",
+        "注文を受けてから作るのが受注生産です。"
+      ],
+      "sentence": "sent:tatoeba-13440729",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
-      "sent:tatoeba-13440729",
       "sent:tatoeba-10617667",
       "sent:tatoeba-179391",
-      "sent:tatoeba-11270411",
-      "sent:tatoeba-672326",
-      "sent:tatoeba-143825"
+      "sent:tatoeba-5329",
+      "sent:tatoeba-2633467",
+      "sent:tatoeba-10657609",
+      "sent:tatoeba-226845"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

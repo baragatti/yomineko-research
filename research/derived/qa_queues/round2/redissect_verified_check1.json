@@ -1,0 +1,39 @@
+{
+ "check": "independent-check-1",
+ "of": "research/derived/qa_queues/round2/redissect_verified.json",
+ "re_derived_from": [
+  "corpus/sentences/bank.json",
+  "corpus/vocab/n1..n5.json",
+  "research/derived/qa_queues/redissect.json",
+  "git 294fe90"
+ ],
+ "date": "2026-08-19",
+ "verdict": "accept",
+ "rows_checked": 39,
+ "fixes_checked": [
+  26,
+  34,
+  36,
+  37
+ ],
+ "confirmed": [
+  "All 39 source rows are carried over with id and current anchor unchanged; no row invented, none dropped.",
+  "All four surviving fix anchors occur exactly once inside their own record slice of the raw CRLF file, byte-exact.",
+  "All four fix fields are literal values (JSON key-value fragments); no instruction verbs, no arrows, no em dashes, no emoji anywhere in the file.",
+  "No fix touches jp, kana, romaji at sentence level, or any pt-BR field; no Layer-A Japanese is rewritten and no gen- sentence Japanese is changed at all.",
+  "Row 26: 正しい is the only i-adjective in dictionary form before a読点 in the whole bank; the 274 attributive i-adjectives all precede a noun, so terminal matches corpus convention and contradicts nothing else in the record.",
+  "Row 34: 4419 is the only entry with headword 下る or kana くだる; 1178 is 下がる and merely lists 下る as a non-primary form. Gloss on the token already matches 4419 sense 0.",
+  "Row 36: token reading is なか and the stored sentence romaji already reads naka, so the fix moves toward the stored value.",
+  "Row 37: 79 is 内 うち listing 中 as a form; 464 is 中 なか; the only other なか entry is 2498 (仲) and the only other 中 entry is 306 (ちゅう). Both 79 and 464 are n5.",
+  "Ten no-change rows verified: their anchors have zero occurrences in the live records, and the repointed values (1338, 257, 758, 1358, 1199, 1356) are all present, matching commit 294fe90 which exists and states those six classes.",
+  "Quantitative claims spot-checked and exact: 1549 attributive anchors, 15 chuu anchors, 7 surviving 336 links (all read せい), 58 ここ tokens on 196, 31 C-mode tokens with a gloss and no role, 0 remaining occurrences of vocab_id 334 and 1176.",
+  "Escalation rationales verified in the file: 686faf1ec51d does teach で as the place of existence, b2ed6e8bb267 does gloss に as destination while its pt-BR says do exterior, and the three referent-changing rows would strand their stored pt-BR."
+ ],
+ "problems": [
+  {
+   "id": "rows 34 and 37 are class-sized, the fixes are single-record",
+   "issue": "The summary calls these the two repoint classes the corpus-wide commit did not cover, but each row repairs only one token. Corpus-wide, 2 tokens with lemma 下る carry vocab_id 1178 (sent:tatoeba-141147 and sent:tatoeba-13492244), and 57 tokens with surface 中 reading なか carry vocab_id 79 (internal 内 うち). Applying these two rows leaves 1 and 56 identical mislinks in place. The rows themselves are correct and safe to apply as written; the gap is that the summary reads as if the class is then closed.",
+   "action": "keep"
+  }
+ ]
+}

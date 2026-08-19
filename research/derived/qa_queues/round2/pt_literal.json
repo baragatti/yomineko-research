@@ -1,0 +1,134 @@
+{
+  "task": "pt_literal",
+  "scope": "research/derived/mined_pt/batch-01..24.json and _accepted.json, field pt_literal only. jp, en and pt untouched.",
+  "coverage": "324 accepted rows swept. 21 already covered by research/derived/phase6_reauthored/pt_literal_fixes.json and not revisited; the remaining 303 reviewed here.",
+  "rows": [
+    {
+      "id": "84174",
+      "verdict": "fix",
+      "current": "Dentro do quarto, quanto a mesa, não existe.",
+      "fix": "Dentro do quarto, quanto à mesa, não existe.",
+      "why": "Missing crase. 'quanto a' plus a singular count noun needs the article, so the contraction is obligatory: quanto à mesa. Same defect as the already-fixed 'quanto a viagem'. The bare-plural cases in this corpus ('quanto a móveis', 'quanto a assentos reservados') are correct as they stand and are left alone."
+    },
+    {
+      "id": "84210",
+      "verdict": "fix",
+      "current": "Quanto ao quarto, nem um ruído se ouvia.",
+      "fix": "Quanto ao quarto, nem um ruído era audível.",
+      "why": "聞こえる is intransitive: the sound is audible, nobody hears it. 'se ouvia' is a passiva sintética, so the gloss reads as a passive of 聞く and misrepresents the verb. Matches the accepted repair of the sibling row 84243 (聞こえていた to 'estava audível'). The は topic is real (部屋には) and is kept."
+    },
+    {
+      "id": "84383",
+      "verdict": "fix",
+      "current": "Quanto ao pai, nem no quarto nem no jardim ele foi encontrado.",
+      "fix": "Quanto ao pai, nem no quarto nem no jardim ele estava à vista.",
+      "why": "見当たる is intransitive, the counterpart of 見つける. 'foi encontrado' is an analytic passive and invents an agent who did the finding; the Japanese only says he was not in sight. Same defect class as the 聞こえる passive. 父は is a real topic and is kept."
+    },
+    {
+      "id": "84220",
+      "verdict": "fix",
+      "current": "Quanto ao quarto, crianças um pouco existiam.",
+      "fix": "Quanto ao quarto, crianças em pequena quantidade existiam.",
+      "why": "'um pouco' does not quantify a count noun in Portuguese, and in this position it is not grammatical. 少し gets the same adverbial-quantity shape the corpus already uses for たくさん in the neighbouring row 84219, 'crianças em grande quantidade existiam'."
+    },
+    {
+      "id": "79287",
+      "verdict": "fix",
+      "current": "Para despedir do amigo, à estação é que eu fui.",
+      "fix": "Para me despedir do amigo, à estação é que eu fui.",
+      "why": "'despedir' without the reflexive means to dismiss someone from a job, which is the opposite of 見送る. The pronominal form is the only reading that matches, and it is the same missing-reflexive defect as 'consultar com' for 相談する. The んだ cleft is left as it is."
+    },
+    {
+      "id": "78366",
+      "verdict": "fix",
+      "current": "Quanto ao motivo, me é difícil entender.",
+      "fix": "O motivo, me é difícil entender.",
+      "why": "理由が is が-marked, and the 'Quanto a' formula is this corpus's rendering of は. Glossing が with it teaches a particle that is not in the sentence. Fronting without the formula is the shape already accepted for 84132 (部屋を)."
+    },
+    {
+      "id": "78188",
+      "verdict": "fix",
+      "current": "Quanto a fazer viagem, você gosta?",
+      "fix": "Fazer viagem, você gosta disso?",
+      "why": "旅行することが is が-marked, not は, so the 'Quanto a' formula is wrong for the same reason as 78366. Fronting plus a resumptive pronoun keeps the Japanese word order visible and keeps the Portuguese grammatical, since 'gostar' cannot stand without its complement."
+    },
+    {
+      "id": "79624",
+      "verdict": "fix",
+      "current": "Quanto a ir ao campo de beisebol, como seria bom fazer, não poderia me ensinar?",
+      "fix": "Ao campo de beisebol, como seria bom ir, não poderia me ensinar?",
+      "why": "There is no topic particle anywhere in this sentence; 野球場に is a に destination inside the embedded question. The 'Quanto a' opening invents a は that the learner will then look for and not find. The に phrase stays fronted and 行ったらよいか keeps its verb, which the old 'seria bom fazer' had dropped."
+    },
+    {
+      "id": "77716",
+      "verdict": "fix",
+      "current": "Por exemplo, o antônimo de \"alegria\" é \"tristeza\".",
+      "fix": "Por exemplo, quanto ao antônimo de \"alegria\", é \"tristeza\".",
+      "why": "The gloss differed from the natural pt by one synonym (contrário to antônimo) and did no structural work at all. 反対語は is the topic of the sentence, and the topic marking is the one thing this row has to show."
+    },
+    {
+      "id": "74350",
+      "verdict": "fix",
+      "current": "Se (você) vai apresentar desculpas, o mais cedo deve ser melhor.",
+      "fix": "Se vai apresentar desculpas, o mais cedo deve ser melhor.",
+      "why": "The parentheses are editorial metatext inside a learner-facing field, and no other row in the corpus uses them. Portuguese drops the subject pronoun on its own, which is the honest match for a Japanese clause that has no subject either."
+    },
+    {
+      "id": "78975",
+      "verdict": "no-change",
+      "current": "Quanto à reserva, ela se encontra confirmada.",
+      "fix": "Quanto à reserva, ela se encontra confirmada.",
+      "why": "Looks like the intransitive-glossed-as-passive defect but is not: 確認されています is a genuine Japanese passive in a resultative state, so a stative Portuguese gloss is the correct reading. 予約は is a real topic."
+    },
+    {
+      "id": "84217",
+      "verdict": "no-change",
+      "current": "Quanto ao quarto, jornais estão espalhados em quantidade.",
+      "fix": "Quanto ao quarto, jornais estão espalhados em quantidade.",
+      "why": "散らかっている is intransitive, and 'estão espalhados' reads here as a state, not as an event with a hidden agent. Nothing in it claims someone scattered the newspapers."
+    },
+    {
+      "id": "84236",
+      "verdict": "no-change",
+      "current": "Quanto ao quarto, quanto a móveis, não há muitos.",
+      "fix": "Quanto ao quarto, quanto a móveis, não há muitos.",
+      "why": "The doubled formula is not an error: 部屋には and 家具は are two real は in the source. 'quanto a móveis' is a bare plural and takes no crase."
+    },
+    {
+      "id": "75187",
+      "verdict": "no-change",
+      "current": "Quanto ao plano da viagem dos funcionários, não é muito chamativo, viu.",
+      "fix": "Quanto ao plano da viagem dos funcionários, não é muito chamativo, viu.",
+      "why": "The formula appears without a written は, but 予定、 is a dropped-particle topic marked by the comma in the source, which is the same function. Keeping it shows the learner why the comma is there."
+    },
+    {
+      "id": "84224",
+      "verdict": "no-change",
+      "current": "Quanto ao quarto, meninos de quantas pessoas existem?",
+      "fix": "Quanto ao quarto, meninos de quantas pessoas existem?",
+      "why": "Awkward on purpose and defensible: 何人の少年 really does modify the noun with a counter phrase, and the gloss keeps that visible. Smoothing it to 'quantos meninos' would delete the counter, which is the only thing this row teaches."
+    },
+    {
+      "id": "78962",
+      "verdict": "no-change",
+      "current": "Quanto a assentos reservados, existem?",
+      "fix": "Quanto a assentos reservados, existem?",
+      "why": "Caught by the crase sweep but correct as it stands: a bare plural after 'quanto a' takes no article, so no contraction is due. 予約席は is a real topic."
+    },
+    {
+      "id": "4738",
+      "verdict": "no-change",
+      "current": "O lado de ter dormido é bom, viu.",
+      "fix": "O lado de ter dormido é bom, viu.",
+      "why": "Reads oddly but is the shape already ratified for 方がいい in the accepted repair of 81566. Leaving it keeps the two rows teaching the same pattern the same way."
+    },
+    {
+      "id": "84212",
+      "verdict": "no-change",
+      "current": "Quanto ao quarto, ele era uma pessoa só.",
+      "fix": "Quanto ao quarto, ele era uma pessoa só.",
+      "why": "Ambiguous in Portuguese, but the ambiguity is the Japanese one: 一人だった states a count, not a mood. Rewriting to 'estava sozinho' would just copy the natural pt and lose the counter."
+    }
+  ],
+  "summary": "303 rows reviewed on top of the 21 already handled. 10 need a value change and 8 near-misses are recorded as deliberate no-change. Two more intransitive verbs were glossed as passives (聞こえる in 84210, 見当たる in 84383), one crase was missing (84174), one row carried editorial parentheses (74350), one did no structural work beyond a synonym swap (77716), one missed a reflexive (79287), one quantifier was ungrammatical with a count noun (84220), and three rows put the は formula on a particle that was not は (78366 が, 78188 が, 79624 に with no topic at all). The other 285 rows are sound: the 'Quanto a' openings all trace to a real は or to a comma-dropped topic, and the remaining bare-plural 'quanto a' cases need no crase."
+}

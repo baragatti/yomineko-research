@@ -7,149 +7,136 @@
     "pt-BR": "Chegar aonde você quer — parte 1"
   },
   "say_now": [
-    "sent:tatoeba-201024",
-    "sent:tatoeba-234972",
-    "sent:tatoeba-11110276",
-    "sent:tatoeba-235139",
-    "sent:tatoeba-10910772",
-    "sent:tatoeba-10107417"
+    "sent:tatoeba-10107417",
+    "sent:tatoeba-10725053",
+    "sent:tatoeba-11998934",
+    "sent:tatoeba-162318",
+    "sent:tatoeba-201017",
+    "sent:tatoeba-198139"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:2020680",
     "vocab:1323080",
-    "vocab:1422970",
-    "vocab:1175140",
-    "vocab:1268060",
+    "vocab:1206730",
+    "vocab:1338240",
+    "vocab:1382980",
+    "vocab:1098390",
+    "vocab:1443530",
     "vocab:1577140",
-    "vocab:1414470"
+    "vocab:1426920"
   ],
   "patterns": [
-    "gram:gp-145",
-    "gram:gp-116",
-    "gram:gp-52",
-    "gram:nakucha"
+    "gram:gp-17",
+    "gram:ni-iku"
   ],
   "kanji_recognition": [
-    "五",
-    "今",
-    "時",
-    "着",
-    "家",
-    "駅"
+    "車",
+    "行",
+    "電",
+    "場",
+    "駐",
+    "停"
   ],
   "shadowing": [
-    "sent:tatoeba-201024",
-    "sent:tatoeba-234972",
-    "sent:tatoeba-11110276",
-    "sent:tatoeba-235139",
-    "sent:tatoeba-10910772",
-    "sent:tatoeba-10107417"
+    "sent:tatoeba-10107417",
+    "sent:tatoeba-10725053",
+    "sent:tatoeba-11998934",
+    "sent:tatoeba-162318",
+    "sent:tatoeba-201017",
+    "sent:tatoeba-198139"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 146,
+  "cumulative_known_vocab": 151,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n4:3449",
+      "id": "so:n4:3596",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n3:3449:2453",
+      "id": "so:n5:4372",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3596:2713",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "杯",
-        "本",
-        "他"
+        "口",
+        "事",
+        "彼"
       ]
     },
     {
-      "id": "cf:n3:3705:2453",
+      "id": "cf:n5:4372:424",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "駅",
-        "間",
-        "円"
+        "何処",
+        "長い",
+        "以下"
       ]
     },
     {
-      "id": "kr:n4:1104",
+      "id": "kr:n4:1126",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はじめて",
-        "けっこう",
-        "きょねん"
+        "さいちゅう",
+        "レストラン",
+        "しょくどう"
       ]
     },
     {
-      "id": "kr:n5:225",
+      "id": "kr:n4:739",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "わたし",
-        "はなし",
-        "あなた"
+        "あまり",
+        "すすむ",
+        "はこぶ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:cha-ikenai-ja-ikenai",
-    "gram:gp-96"
+    "gram:gp-70",
+    "gram:ka-shira",
+    "gram:gp-49",
+    "gram:ndesu"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-145",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-10589883",
-        "sent:tatoeba-8914577",
-        "sent:tatoeba-10723299"
+        "sent:tatoeba-172639",
+        "sent:tatoeba-124633",
+        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-116",
+      "pattern": "gram:ni-iku",
       "examples": [
-        "sent:tatoeba-8575501",
-        "sent:tatoeba-8596851",
-        "sent:tatoeba-143720"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-52",
-      "examples": [
-        "sent:tatoeba-8753239",
-        "sent:tatoeba-12483339",
-        "sent:tatoeba-8736593"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nakucha",
-      "examples": [
-        "sent:tatoeba-2095014",
-        "sent:tatoeba-194211",
-        "sent:tatoeba-3555506"
+        "sent:gen-d82f2dd80e15",
+        "sent:tatoeba-182675",
+        "sent:tatoeba-187532"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Quando comi depois de muito tempo, o sabor da sopa tinha mudado.",
-      "answer_key": "久しぶりに食べたらスープの味が変わってた。",
+      "prompt_pt": "Ele levava água com afinco até a boca dela.",
+      "answer_key": "彼がせっせと彼女の口に水を運んだ",
       "accepted_variants": [
-        "久しぶりに食べたらスープの味が変わってた",
-        "久しぶりに食べたらスープの味が変わってた。"
+        "彼がせっせと彼女の口に水を運んだ"
       ],
-      "sentence": "sent:tatoeba-11038484",
+      "sentence": "sent:jec-2741",
       "strand": "meaning-output"
     },
     {
@@ -163,39 +150,40 @@
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Ele come biscoito no lugar da refeição.",
-      "answer_key": "彼がクッキーを食事の代わりに食べる",
+      "prompt_pt": "Naquela época, eu não gostava de cerveja.",
+      "answer_key": "私は、そのころビールが嫌いだった。",
       "accepted_variants": [
-        "彼がクッキーを食事の代わりに食べる"
+        "私は、そのころビールが嫌いだった",
+        "私は、そのころビールが嫌いだった。"
       ],
-      "sentence": "sent:jec-1168",
+      "sentence": "sent:tatoeba-162347",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
-      "sent:tatoeba-197915",
-      "sent:jec-2741",
-      "sent:tatoeba-162347",
       "sent:tatoeba-191220",
+      "sent:tatoeba-78125",
       "sent:tatoeba-8775094",
-      "sent:tatoeba-202470"
+      "sent:tatoeba-202470",
+      "sent:tatoeba-182254",
+      "sent:tatoeba-13440729"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 24,
     "fluency": 6
   }
 }

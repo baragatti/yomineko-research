@@ -7,175 +7,196 @@
     "pt-BR": "Falar de você — parte 4"
   },
   "say_now": [
-    "sent:tatoeba-189285",
-    "sent:tatoeba-172440",
-    "sent:tatoeba-157990",
-    "sent:jec-0320",
-    "sent:tatoeba-142954",
-    "sent:tatoeba-11727272"
+    "sent:tatoeba-164626",
+    "sent:tatoeba-10760527",
+    "sent:tatoeba-196355",
+    "sent:tatoeba-10899638",
+    "sent:tatoeba-217273",
+    "sent:tatoeba-80379"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1173720",
-    "vocab:1328190",
-    "vocab:1194500",
-    "vocab:1156530",
-    "vocab:1192150",
-    "vocab:1413660",
-    "vocab:1010150",
-    "vocab:1365850",
-    "vocab:1289140",
-    "vocab:1556370",
-    "vocab:1377030"
+    "vocab:1582670",
+    "vocab:1593670",
+    "vocab:1333500",
+    "vocab:1533580",
+    "vocab:1214330",
+    "vocab:1332760",
+    "vocab:1091500",
+    "vocab:1155180"
   ],
   "patterns": [
-    "gram:mashou",
-    "gram:gp-105"
+    "gram:deshou",
+    "gram:made-ni",
+    "gram:te-iru",
+    "gram:gp-81"
   ],
   "kanji_recognition": [
-    "映",
-    "画",
-    "作",
-    "仕",
-    "事",
-    "人"
+    "外",
+    "国",
+    "私",
+    "人",
+    "達",
+    "友"
   ],
   "shadowing": [
-    "sent:tatoeba-189285",
-    "sent:tatoeba-172440",
-    "sent:tatoeba-157990",
-    "sent:jec-0320",
-    "sent:tatoeba-142954",
-    "sent:tatoeba-11727272"
+    "sent:tatoeba-164626",
+    "sent:tatoeba-10760527",
+    "sent:tatoeba-196355",
+    "sent:tatoeba-10899638",
+    "sent:tatoeba-217273",
+    "sent:tatoeba-80379"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 266,
+  "cumulative_known_vocab": 298,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:5245:1908",
+      "id": "so:n3:680",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:3595:307",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "通り",
-        "仕事",
-        "今晩"
+        "此の",
+        "消す",
+        "必要"
       ]
     },
     {
-      "id": "kr:n4:1065",
+      "id": "kr:n3:1521",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "おぼえる",
-        "はじめて",
-        "こんばん"
+        "はいる",
+        "こんや",
+        "いれる"
       ]
     },
     {
-      "id": "kr:n4:1166",
+      "id": "kr:n4:1273",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はっきり",
-        "もんだい",
-        "せんぱい"
+        "さいきん",
+        "せんぱい",
+        "おこなう"
       ]
     },
     {
-      "id": "cf:n4:1172:1132",
+      "id": "cf:n3:3449:2453",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "頃",
-        "私",
-        "人"
+        "夜",
+        "鍵",
+        "朝"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-114",
-    "gram:gp-128",
-    "gram:saseru",
-    "gram:you-ni-you-na"
+    "gram:gp-36",
+    "gram:gp-120"
   ],
   "drills": [
     {
-      "pattern": "gram:mashou",
+      "pattern": "gram:deshou",
       "examples": [
-        "sent:tatoeba-139208",
-        "sent:tatoeba-173392",
-        "sent:tatoeba-200934"
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-105",
+      "pattern": "gram:made-ni",
       "examples": [
-        "sent:tatoeba-218501",
-        "sent:tatoeba-188156",
-        "sent:tatoeba-189203"
+        "sent:tatoeba-150564",
+        "sent:tatoeba-218050",
+        "sent:tatoeba-147666"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-iru",
+      "examples": [
+        "sent:tatoeba-10175894",
+        "sent:tatoeba-5100",
+        "sent:tatoeba-5028"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-81",
+      "examples": [
+        "sent:gen-20f9f43c9339",
+        "sent:gen-e5bc8ecc1fc4",
+        "sent:gen-f416c28a18c3"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "O veterano ainda estava na empresa.",
-      "answer_key": "先輩がまだ会社にいました",
+      "prompt_pt": "A sua vida de estudante também vai chegar ao fim em breve.",
+      "answer_key": "あなたの学生生活も間もなく終わりになる。",
       "accepted_variants": [
-        "先輩がまだ会社にいました"
+        "あなたの学生生活も間もなく終わりになる",
+        "あなたの学生生活も間もなく終わりになる。"
       ],
-      "sentence": "sent:jec-1094",
+      "sentence": "sent:tatoeba-233401",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Para alguém tão jovem, ele fez um trabalho muito bom.",
-      "answer_key": "彼は若いわりにはとてもいい仕事をした。",
+      "prompt_pt": "\"Comida picante, você gosta?\" \"Adoro.\"",
+      "answer_key": "「辛いものって、好き？」「大好き」",
       "accepted_variants": [
-        "彼は若いわりにはとてもいい仕事をした",
-        "彼は若いわりにはとてもいい仕事をした。"
+        "「辛いものって、好き？」「大好き」"
       ],
-      "sentence": "sent:tatoeba-104573",
+      "sentence": "sent:tatoeba-11727272",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças (SP).",
-      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
+      "prompt_pt": "No Ano-Novo, a gente passa bastante tempo com a família.",
+      "answer_key": "正月は家族と過ごす時間が長いのです。",
       "accepted_variants": [
-        "ＳＰの仕事の様子が今日テレビで放送されました"
+        "正月は家族と過ごす時間が長いのです",
+        "正月は家族と過ごす時間が長いのです。"
       ],
-      "sentence": "sent:jec-4753",
+      "sentence": "sent:tatoeba-142954",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
     "items": [
-      "sent:tatoeba-228156",
       "sent:tatoeba-11386733",
-      "sent:tatoeba-10661542",
+      "sent:tatoeba-9553773",
       "sent:tatoeba-172198",
+      "sent:jec-0320",
       "sent:tatoeba-184254",
-      "sent:tatoeba-186900"
+      "sent:tatoeba-84568"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 27,
     "fluency": 6
   }
 }

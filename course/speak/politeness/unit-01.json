@@ -11,8 +11,8 @@
     "sent:tatoeba-8467948",
     "sent:tatoeba-183277",
     "sent:tatoeba-147431",
-    "sent:tatoeba-146817",
-    "sent:tatoeba-226794"
+    "sent:tatoeba-5109",
+    "sent:tatoeba-226013"
   ],
   "chunk_phrases": [
     "sent:tatoeba-4854",
@@ -22,34 +22,34 @@
   "words": [
     "vocab:1221520",
     "vocab:1343950",
-    "vocab:1348870",
-    "vocab:1448580",
-    "vocab:1587290",
-    "vocab:1501660"
+    "vocab:1012620",
+    "vocab:1327720",
+    "vocab:1003430",
+    "vocab:1587290"
   ],
   "patterns": [
     "gram:te-kudasai",
+    "gram:kitto",
     "gram:gp-8"
   ],
   "kanji_recognition": [
     "気",
     "書",
-    "休",
-    "少",
-    "湯",
-    "沸"
+    "話",
+    "紙",
+    "手"
   ],
   "shadowing": [
     "sent:tatoeba-4854",
     "sent:tatoeba-8467948",
     "sent:tatoeba-183277",
     "sent:tatoeba-147431",
-    "sent:tatoeba-146817",
-    "sent:tatoeba-226794"
+    "sent:tatoeba-5109",
+    "sent:tatoeba-226013"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 411,
+  "cumulative_known_vocab": 461,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -68,9 +68,9 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "内",
         "箸",
-        "千"
+        "千",
+        "所"
       ]
     },
     {
@@ -78,9 +78,19 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "隣",
+        "数",
         "園",
         "誰"
+      ]
+    },
+    {
+      "id": "kr:n4:1101",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やすむ",
+        "ごぜん",
+        "やっと"
       ]
     },
     {
@@ -89,18 +99,8 @@
       "via": "new-word",
       "distractors": [
         "ど",
-        "ご",
+        "し",
         "に"
-      ]
-    },
-    {
-      "id": "kr:n4:921",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しんぶん",
-        "けいけん",
-        "きょねん"
       ]
     }
   ],
@@ -118,6 +118,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:kitto",
+      "examples": [
+        "sent:tatoeba-225989",
+        "sent:tatoeba-80474",
+        "sent:tatoeba-225992"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-8",
       "examples": [
         "sent:tatoeba-5320",
@@ -129,59 +138,60 @@
   ],
   "production": [
     {
-      "prompt_pt": "A vida é divertida.",
-      "answer_key": "人生は楽しい。",
+      "prompt_pt": "Já vá pensando nas lembrancinhas para a volta da viagem.",
+      "answer_key": "旅行から帰るときの土産のことを考えておきなさい。",
       "accepted_variants": [
-        "人生は楽しい",
-        "人生は楽しい。"
+        "旅行から帰るときの土産のことを考えておきなさい",
+        "旅行から帰るときの土産のことを考えておきなさい。"
       ],
-      "sentence": "sent:tatoeba-143986",
+      "sentence": "sent:tatoeba-78190",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Foi a primeira vez que entrei no site de vocês.",
-      "answer_key": "初めてこちらのＨＰを拝見しました",
+      "prompt_pt": "Isso porque ontem eu estudei por muito tempo.",
+      "answer_key": "なぜなら私は昨日長い間勉強したからです。",
       "accepted_variants": [
-        "初めてこちらのＨＰを拝見しました"
+        "なぜなら私は昨日長い間勉強したからです",
+        "なぜなら私は昨日長い間勉強したからです。"
       ],
-      "sentence": "sent:jec-4943",
+      "sentence": "sent:tatoeba-199229",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Um trabalho de meio período vira uma boa experiência, sabe.",
-      "answer_key": "アルバイトはいい経験になるの。",
+      "prompt_pt": "Essa viagem custa de mil a dois mil dólares.",
+      "answer_key": "その旅行には千ドルから二千ドルかかります。",
       "accepted_variants": [
-        "アルバイトはいい経験になるの",
-        "アルバイトはいい経験になるの。"
+        "その旅行には千ドルから二千ドルかかります",
+        "その旅行には千ドルから二千ドルかかります。"
       ],
-      "sentence": "sent:tatoeba-229934",
+      "sentence": "sent:tatoeba-1783174",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
     "items": [
-      "sent:jec-0319",
       "sent:tatoeba-792555",
-      "sent:tatoeba-214558",
-      "sent:tatoeba-147605",
-      "sent:tatoeba-11706794",
-      "sent:tatoeba-228002"
+      "sent:tatoeba-228002",
+      "sent:tatoeba-5217",
+      "sent:tatoeba-78160",
+      "sent:tatoeba-78156",
+      "sent:tatoeba-147605"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 51,
+    "language-focused": 52,
     "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 23,
     "fluency": 6
   }
 }

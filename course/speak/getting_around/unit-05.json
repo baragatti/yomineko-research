@@ -7,189 +7,206 @@
     "pt-BR": "Chegar aonde você quer — parte 5"
   },
   "say_now": [
-    "sent:tatoeba-200926",
-    "sent:tatoeba-158256",
-    "sent:tatoeba-124791",
-    "sent:tatoeba-198112",
-    "sent:tatoeba-222010",
-    "sent:tatoeba-141381"
+    "sent:tatoeba-141381",
+    "sent:tatoeba-234850",
+    "sent:jec-0673",
+    "sent:tatoeba-137633",
+    "sent:tatoeba-220272",
+    "sent:tatoeba-84766"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1291800",
-    "vocab:1402540",
-    "vocab:1340000",
-    "vocab:1266440",
     "vocab:1390020",
-    "vocab:1343100",
+    "vocab:1402730",
+    "vocab:1445160",
+    "vocab:1413240",
+    "vocab:1589060",
+    "vocab:1543240",
+    "vocab:1177800",
+    "vocab:2394370",
+    "vocab:1467710",
+    "vocab:1421290",
     "vocab:1427900",
-    "vocab:1592970",
-    "vocab:1582920"
+    "vocab:1108180"
   ],
   "patterns": [
-    "gram:tara-ii-desu-ka",
-    "gram:ta-tokoro",
-    "gram:te-iru"
+    "gram:te-itadakemasen-ka",
+    "gram:masen-ka",
+    "gram:gp-149",
+    "gram:to-iu"
   ],
   "kanji_recognition": [
-    "座",
-    "駅",
-    "私",
-    "走",
-    "車",
-    "電"
+    "近",
+    "川",
+    "張",
+    "図",
+    "送",
+    "地"
   ],
   "shadowing": [
-    "sent:tatoeba-200926",
-    "sent:tatoeba-158256",
-    "sent:tatoeba-124791",
-    "sent:tatoeba-198112",
-    "sent:tatoeba-222010",
-    "sent:tatoeba-141381"
+    "sent:tatoeba-141381",
+    "sent:tatoeba-234850",
+    "sent:jec-0673",
+    "sent:tatoeba-137633",
+    "sent:tatoeba-220272",
+    "sent:tatoeba-84766"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 179,
+  "cumulative_known_vocab": 192,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n4:3598",
+      "id": "so:n3:771",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n3:3598:2713",
+      "id": "so:n4:771",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4098:2453",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "五",
         "二",
-        "人"
+        "年",
+        "所"
       ]
     },
     {
-      "id": "cf:n4:5027:1226",
+      "id": "cf:n3:4691:2312",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "出る",
-        "壊す",
-        "最中"
+        "分",
+        "頃",
+        "円"
       ]
     },
     {
-      "id": "kr:n4:1226",
+      "id": "kr:n4:1138",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しょくどう",
-        "ひるごはん",
-        "さいちゅう"
+        "はなし",
+        "くるま",
+        "くうき"
       ]
     },
     {
-      "id": "kr:n5:180",
+      "id": "kr:n4:855",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "えき",
-        "これ",
-        "ころ"
+        "かんけい",
+        "こんばん",
+        "テーブル"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-70",
-    "gram:tokoro",
-    "gram:gp-36"
+    "gram:te-ita",
+    "gram:yotei-da"
   ],
   "drills": [
     {
-      "pattern": "gram:tara-ii-desu-ka",
+      "pattern": "gram:te-itadakemasen-ka",
       "examples": [
-        "sent:tatoeba-187548",
-        "sent:tatoeba-10140817",
-        "sent:tatoeba-4713"
+        "sent:tatoeba-146797",
+        "sent:tatoeba-148943",
+        "sent:tatoeba-124645"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ta-tokoro",
+      "pattern": "gram:masen-ka",
       "examples": [
-        "sent:tatoeba-11545589",
-        "sent:tatoeba-12440070",
-        "sent:tatoeba-12574555"
+        "sent:gen-4595bdeb6907",
+        "sent:gen-a94929c3a847",
+        "sent:tatoeba-172871"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:te-iru",
+      "pattern": "gram:gp-149",
       "examples": [
-        "sent:tatoeba-10175894",
-        "sent:tatoeba-5100",
-        "sent:tatoeba-5028"
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-76549",
+        "sent:tatoeba-79825"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "A estrada é só subida o caminho todo.",
-      "answer_key": "道はずっとのぼりだ。",
+      "prompt_pt": "Como se chama este cruzamento?",
+      "answer_key": "この交差点は何と呼ばれていますか。",
       "accepted_variants": [
-        "道はずっとのぼりだ",
-        "道はずっとのぼりだ。"
+        "この交差点は何と呼ばれていますか",
+        "この交差点は何と呼ばれていますか。"
       ],
-      "sentence": "sent:tatoeba-123591",
+      "sentence": "sent:tatoeba-222010",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Você vai a pé? Ou vai de ônibus?",
-      "answer_key": "歩いていく？それともバスで行く？",
+      "prompt_pt": "\"Será que já não nos encontramos em algum lugar antes?\", perguntou o estudante.",
+      "answer_key": "「以前にどこかで会ったことがありませんか」とその学生はたずねた。",
       "accepted_variants": [
-        "歩いていく？それともバスで行く",
-        "歩いていく？それともバスで行く？"
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた",
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた。"
       ],
-      "sentence": "sent:tatoeba-9145503",
+      "sentence": "sent:tatoeba-4939",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "As duas estradas se cruzam ali.",
-      "answer_key": "二本の道はそこでクロスしている。",
+      "prompt_pt": "O ônibus acabou de sair agora.",
+      "answer_key": "バスは今出発したところだ。",
       "accepted_variants": [
-        "二本の道はそこでクロスしている",
-        "二本の道はそこでクロスしている。"
+        "バスは今出発したところだ",
+        "バスは今出発したところだ。"
       ],
-      "sentence": "sent:tatoeba-75827",
+      "sentence": "sent:tatoeba-198112",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
-      "sent:tatoeba-182700",
+      "sent:tatoeba-158256",
+      "sent:tatoeba-200926",
+      "sent:tatoeba-193061",
+      "sent:tatoeba-9145503",
       "sent:tatoeba-179327",
-      "sent:tatoeba-84766",
-      "sent:tatoeba-5115",
-      "sent:tatoeba-4802",
-      "sent:tatoeba-198139"
+      "sent:tatoeba-5115"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 60,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 32,
     "fluency": 6
   }
 }

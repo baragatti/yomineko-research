@@ -1,0 +1,211 @@
+{
+  "id": "speak:lodging-05",
+  "schema_version": "1.0",
+  "stage": "speak:lodging",
+  "order": 5,
+  "title": {
+    "pt-BR": "Dormir e resolver problemas — parte 5"
+  },
+  "say_now": [
+    "sent:tatoeba-84124",
+    "sent:tatoeba-218592",
+    "sent:tatoeba-84114",
+    "sent:tatoeba-84216",
+    "sent:tatoeba-84162",
+    "sent:tatoeba-84243"
+  ],
+  "chunk_phrases": [],
+  "untranslated": [],
+  "words": [
+    "vocab:1269320",
+    "vocab:1202450",
+    "vocab:1487400",
+    "vocab:1580820",
+    "vocab:1210360",
+    "vocab:1576900",
+    "vocab:1591150",
+    "vocab:1260490",
+    "vocab:1585650",
+    "vocab:1350110",
+    "vocab:1586210"
+  ],
+  "patterns": [
+    "gram:da-desu",
+    "gram:gp",
+    "gram:gp-15",
+    "gram:gp-2"
+  ],
+  "kanji_recognition": [
+    "屋",
+    "後",
+    "出",
+    "部",
+    "閉",
+    "鍵"
+  ],
+  "shadowing": [
+    "sent:tatoeba-84124",
+    "sent:tatoeba-218592",
+    "sent:tatoeba-84114",
+    "sent:tatoeba-84216",
+    "sent:tatoeba-84162",
+    "sent:tatoeba-84243"
+  ],
+  "audio": "pending",
+  "real_phrases": 6,
+  "cumulative_known_vocab": 250,
+  "layer": "C",
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:3991:1369",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "真っ暗",
+        "ホテル",
+        "為さる"
+      ]
+    },
+    {
+      "id": "cf:n3:4077:1369",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "遅れる",
+        "開ける",
+        "積もり"
+      ]
+    },
+    {
+      "id": "pp:n3:1369",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "飲む",
+        "息子",
+        "作る"
+      ]
+    },
+    {
+      "id": "kr:n3:1369",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あがる",
+        "あなた",
+        "あるく"
+      ]
+    },
+    {
+      "id": "kr:n3:1611",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たつ",
+        "べつ",
+        "くつ"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:nasai",
+    "gram:te-ita"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-15",
+      "examples": [
+        "sent:gen-6fe6c769a3a7",
+        "sent:tatoeba-84712",
+        "sent:tatoeba-84720"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-2",
+      "examples": [
+        "sent:tatoeba-171785",
+        "sent:tatoeba-171784",
+        "sent:tatoeba-171787"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Deixe as janelas do quarto fechadas.",
+      "answer_key": "部屋の窓は閉めておくように。",
+      "accepted_variants": [
+        "部屋の窓は閉めておくように",
+        "部屋の窓は閉めておくように。"
+      ],
+      "sentence": "sent:tatoeba-84181",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O quarto está cheio de flores.",
+      "answer_key": "部屋は花でいっぱいです。",
+      "accepted_variants": [
+        "部屋は花でいっぱいです",
+        "部屋は花でいっぱいです。"
+      ],
+      "sentence": "sent:tatoeba-84147",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, ache um hotel com preço acessível.",
+      "answer_key": "料金の手ごろなホテルを見つけて下さい。",
+      "accepted_variants": [
+        "料金の手ごろなホテルを見つけて下さい",
+        "料金の手ごろなホテルを見つけて下さい。"
+      ],
+      "sentence": "sent:tatoeba-77964",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
+    "items": [
+      "sent:tatoeba-84203",
+      "sent:tatoeba-4562257",
+      "sent:tatoeba-126245",
+      "sent:tatoeba-84229",
+      "sent:tatoeba-84158",
+      "sent:tatoeba-84222"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 30,
+    "fluency": 6
+  }
+}

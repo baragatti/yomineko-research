@@ -7,70 +7,60 @@
     "pt-BR": "Dizer o que você acha — parte 1"
   },
   "say_now": [
-    "sent:tatoeba-79019",
+    "sent:tatoeba-81566",
     "sent:tatoeba-162311",
     "sent:tatoeba-209394",
-    "sent:tatoeba-11692639",
-    "sent:tatoeba-118153",
-    "sent:tatoeba-119734"
+    "sent:tatoeba-77523",
+    "sent:tatoeba-77555",
+    "sent:tatoeba-77522"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1516925",
+    "vocab:1359070",
     "vocab:1394800",
     "vocab:1344970",
-    "vocab:1376600",
-    "vocab:1543070",
+    "vocab:1558370",
+    "vocab:1449870",
     "vocab:1476430"
   ],
   "patterns": [
+    "gram:kamo-shirenai",
+    "gram:hazu-da",
     "gram:gp-89",
-    "gram:to-iu",
-    "gram:koto",
-    "gram:da-desu",
-    "gram:gp"
+    "gram:gp-32",
+    "gram:gp-120"
   ],
   "kanji_recognition": [
-    "始",
-    "習",
+    "信",
+    "当",
     "方",
-    "予",
+    "本",
     "意",
     "見"
   ],
   "shadowing": [
-    "sent:tatoeba-79019",
+    "sent:tatoeba-81566",
     "sent:tatoeba-162311",
     "sent:tatoeba-209394",
-    "sent:tatoeba-11692639",
-    "sent:tatoeba-118153",
-    "sent:tatoeba-119734"
+    "sent:tatoeba-77523",
+    "sent:tatoeba-77555",
+    "sent:tatoeba-77522"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 466,
+  "cumulative_known_vocab": 513,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:132",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:583",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:583:2731",
+      "id": "cf:n3:4260:2932",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "車",
-        "夜",
-        "父"
+        "必要",
+        "送る",
+        "食堂"
       ]
     },
     {
@@ -84,23 +74,23 @@
       ]
     },
     {
-      "id": "kr:n4:1106",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "よしゅう",
-        "おおきな",
-        "たのしい"
-      ]
-    },
-    {
       "id": "kr:n5:136",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
         "おとうさん",
-        "しょうせつ",
-        "おかあさん"
+        "りょうしん",
+        "しょうねん"
+      ]
+    },
+    {
+      "id": "kr:n4:1185",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "なに",
+        "ため",
+        "もう"
       ]
     }
   ],
@@ -108,6 +98,24 @@
     "gram:hazu-ga-nai"
   ],
   "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-152614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:hazu-da",
+      "examples": [
+        "sent:tatoeba-519050",
+        "sent:tatoeba-198131",
+        "sent:tatoeba-11173182"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-89",
       "examples": [
@@ -118,51 +126,43 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:to-iu",
+      "pattern": "gram:gp-32",
       "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
+        "sent:tatoeba-85319",
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:koto",
+      "pattern": "gram:gp-120",
       "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-5078",
-        "sent:tatoeba-75192"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
+        "sent:tatoeba-193408",
+        "sent:gen-40a736aa4ac8",
+        "sent:gen-5bccb5134f4a"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Deixe-me fazer algumas perguntas.",
-      "answer_key": "いくつか質問させてください。",
+      "prompt_pt": "Me dá um envelope, por favor.",
+      "answer_key": "封筒をください。",
       "accepted_variants": [
-        "いくつか質問させてください",
-        "いくつか質問させてください。"
+        "封筒をください",
+        "封筒をください。"
       ],
-      "sentence": "sent:tatoeba-229187",
+      "sentence": "sent:tatoeba-84069",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, ferva um pouco de água.",
+      "answer_key": "お湯を少し沸かしてください。",
+      "accepted_variants": [
+        "お湯を少し沸かしてください",
+        "お湯を少し沸かしてください。"
+      ],
+      "sentence": "sent:tatoeba-226794",
       "strand": "meaning-output"
     },
     {
@@ -174,42 +174,32 @@
       ],
       "sentence": "sent:tatoeba-147768",
       "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Sirva-se da salada à vontade, por favor.",
-      "answer_key": "サラダはご自由にお召し上がりください。",
-      "accepted_variants": [
-        "サラダはご自由にお召し上がりください",
-        "サラダはご自由にお召し上がりください。"
-      ],
-      "sentence": "sent:tatoeba-9812759",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
     "items": [
+      "sent:tatoeba-9812759",
       "sent:tatoeba-10117518",
       "sent:tatoeba-224121",
+      "sent:tatoeba-80618",
       "sent:tatoeba-214616",
-      "sent:tatoeba-220381",
-      "sent:tatoeba-9969670",
-      "sent:tatoeba-11561274"
+      "sent:tatoeba-220381"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 26,
     "fluency": 6
   }
 }

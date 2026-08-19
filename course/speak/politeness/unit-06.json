@@ -7,89 +7,68 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 6"
   },
   "say_now": [
-    "sent:tatoeba-214616",
     "sent:tatoeba-224121",
     "sent:tatoeba-10117518",
     "sent:tatoeba-9812759",
     "sent:tatoeba-147768",
-    "sent:tatoeba-229187"
+    "sent:tatoeba-226794",
+    "sent:tatoeba-84069"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1350600",
     "vocab:1050390",
     "vocab:1346370",
     "vocab:1189360",
-    "vocab:1219960",
-    "vocab:1070280",
-    "vocab:1057850"
+    "vocab:1448580",
+    "vocab:1057850",
+    "vocab:1499690",
+    "vocab:1501660"
   ],
   "patterns": [
-    "gram:sasete-kudasai",
     "gram:o-kudasai",
     "gram:te-kudasai"
   ],
   "kanji_recognition": [
-    "位",
-    "焼",
-    "中",
     "水",
     "杯",
-    "召"
+    "召",
+    "上",
+    "自",
+    "由"
   ],
   "shadowing": [
-    "sent:tatoeba-214616",
     "sent:tatoeba-224121",
     "sent:tatoeba-10117518",
     "sent:tatoeba-9812759",
     "sent:tatoeba-147768",
-    "sent:tatoeba-229187"
+    "sent:tatoeba-226794",
+    "sent:tatoeba-84069"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 460,
+  "cumulative_known_vocab": 507,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "kr:n5:48",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こんな",
-        "ごぜん",
-        "つれる"
-      ]
-    },
-    {
-      "id": "cf:n4:1414:1100",
+      "id": "cf:n3:4725:2453",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "箸",
-        "雨",
-        "足"
+        "店",
+        "船",
+        "家"
       ]
     },
     {
-      "id": "cf:n4:1445:736",
+      "id": "cf:n3:4865:2453",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "半",
-        "足",
-        "心"
-      ]
-    },
-    {
-      "id": "pp:n5:42",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "素晴らしい",
-        "アルバイト",
-        "召し上がる"
+        "頃",
+        "私",
+        "君"
       ]
     },
     {
@@ -98,8 +77,18 @@
       "via": "review",
       "distractors": [
         "おおきな",
-        "かのじょ",
-        "はっきり"
+        "けいかく",
+        "かのじょ"
+      ]
+    },
+    {
+      "id": "kr:n4:1118",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "かいもの",
+        "でんぽう",
+        "しんぶん"
       ]
     }
   ],
@@ -107,15 +96,6 @@
     "gram:gari"
   ],
   "drills": [
-    {
-      "pattern": "gram:sasete-kudasai",
-      "examples": [
-        "sent:tatoeba-3957479",
-        "sent:tatoeba-2045915",
-        "sent:tatoeba-164807"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:o-kudasai",
       "examples": [
@@ -137,6 +117,26 @@
   ],
   "production": [
     {
+      "prompt_pt": "Amanhã vou visitá-lo na sua casa.",
+      "answer_key": "明日お宅に伺います。",
+      "accepted_variants": [
+        "明日お宅に伺います",
+        "明日お宅に伺います。"
+      ],
+      "sentence": "sent:tatoeba-80618",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, faça o bife ao ponto.",
+      "answer_key": "ステーキは中位で焼いてください。",
+      "accepted_variants": [
+        "ステーキは中位で焼いてください",
+        "ステーキは中位で焼いてください。"
+      ],
+      "sentence": "sent:tatoeba-214616",
+      "strand": "meaning-output"
+    },
+    {
       "prompt_pt": "Eu gostaria que você enviasse este telegrama imediatamente.",
       "answer_key": "この電報をすぐに打っていただきたい。",
       "accepted_variants": [
@@ -145,52 +145,32 @@
       ],
       "sentence": "sent:tatoeba-220381",
       "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu poderia perguntar o seu nome e o seu endereço?",
-      "answer_key": "お名前とご住所を伺ってもよろしいでしょうか？",
-      "accepted_variants": [
-        "お名前とご住所を伺ってもよろしいでしょうか",
-        "お名前とご住所を伺ってもよろしいでしょうか？"
-      ],
-      "sentence": "sent:tatoeba-9969670",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Com licença, posso me retirar?",
-      "answer_key": "失礼してもよろしいですか。",
-      "accepted_variants": [
-        "失礼してもよろしいですか",
-        "失礼してもよろしいですか。"
-      ],
-      "sentence": "sent:tatoeba-149583",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
     "items": [
+      "sent:tatoeba-9969670",
       "sent:tatoeba-11561274",
+      "sent:tatoeba-206210",
       "sent:tatoeba-76813",
       "sent:tatoeba-1490062",
-      "sent:tatoeba-78723",
-      "sent:tatoeba-121505",
-      "sent:tatoeba-123791"
+      "sent:tatoeba-78723"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 21,
     "fluency": 6
   }
 }

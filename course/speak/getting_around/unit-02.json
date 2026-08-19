@@ -7,112 +7,119 @@
     "pt-BR": "Chegar aonde você quer — parte 2"
   },
   "say_now": [
-    "sent:tatoeba-162318",
-    "sent:tatoeba-201017",
-    "sent:tatoeba-198139",
-    "sent:tatoeba-198125",
-    "sent:tatoeba-199668",
-    "sent:tatoeba-4802"
+    "sent:tatoeba-84645",
+    "sent:tatoeba-4802",
+    "sent:tatoeba-5115",
+    "sent:tatoeba-227716",
+    "sent:tatoeba-188877",
+    "sent:tatoeba-179327"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1206730",
-    "vocab:1338240",
+    "vocab:1304970",
     "vocab:1606560",
-    "vocab:1098390",
-    "vocab:1009290"
+    "vocab:1443840",
+    "vocab:1334040",
+    "vocab:1605820",
+    "vocab:1497610",
+    "vocab:1175140",
+    "vocab:1242160",
+    "vocab:1155150",
+    "vocab:1245570",
+    "vocab:1253190",
+    "vocab:1607070"
   ],
   "patterns": [
-    "gram:gp-17",
-    "gram:gp-49",
-    "gram:ni-iku"
+    "gram:gp-122",
+    "gram:gp-49"
   ],
   "kanji_recognition": [
-    "学",
-    "校",
+    "以",
     "行",
-    "私",
-    "出",
-    "分"
+    "仕",
+    "事",
+    "前",
+    "父"
   ],
   "shadowing": [
-    "sent:tatoeba-162318",
-    "sent:tatoeba-201017",
-    "sent:tatoeba-198139",
-    "sent:tatoeba-198125",
-    "sent:tatoeba-199668",
-    "sent:tatoeba-4802"
+    "sent:tatoeba-84645",
+    "sent:tatoeba-4802",
+    "sent:tatoeba-5115",
+    "sent:tatoeba-227716",
+    "sent:tatoeba-188877",
+    "sent:tatoeba-179327"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 151,
+  "cumulative_known_vocab": 163,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n4:3596",
+      "id": "so:n3:471",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n5:4372",
+      "id": "so:n4:989",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n3:3596:2713",
+      "id": "cf:n3:3453:1422",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "口",
-        "駅",
-        "事"
+        "時間",
+        "壊す",
+        "毎日"
       ]
     },
     {
-      "id": "cf:n5:4372:424",
+      "id": "cf:n3:5372:1422",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "何処",
-        "長い",
-        "以下"
+        "結構",
+        "自分",
+        "食堂"
       ]
     },
     {
-      "id": "kr:n5:163",
+      "id": "kr:n3:1422",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ちいさい",
+        "かかり",
+        "おなじ",
+        "あいだ"
+      ]
+    },
+    {
+      "id": "kr:n4:1007",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
         "おぼえる",
-        "こんばん"
-      ]
-    },
-    {
-      "id": "kr:n5:424",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "だす",
-        "まつ",
-        "なに"
+        "おいしい",
+        "せいさん"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-70",
-    "gram:ndesu",
-    "gram:tara"
+    "gram:gp-154",
+    "gram:gp-77",
+    "gram:gp-128",
+    "gram:you-ni-you-na"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-17",
+      "pattern": "gram:gp-122",
       "examples": [
-        "sent:tatoeba-172639",
-        "sent:tatoeba-124633",
-        "sent:tatoeba-144227"
+        "sent:gen-8a3363848885",
+        "sent:tatoeba-10169329",
+        "sent:gen-9e643c0b17a7"
       ],
       "strand": "language-focused"
     },
@@ -120,77 +127,68 @@
       "pattern": "gram:gp-49",
       "examples": [
         "sent:tatoeba-201028",
-        "sent:tatoeba-201024",
-        "sent:gen-a0241d2a988e"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ni-iku",
-      "examples": [
-        "sent:tatoeba-182675",
-        "sent:tatoeba-187532",
-        "sent:gen-d82f2dd80e15"
+        "sent:gen-a0241d2a988e",
+        "sent:gen-4b81bb2c6fa6"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Onde será que estão as chaves do carro?",
-      "answer_key": "車のキーはどこかしら？",
+      "prompt_pt": "O ônibus sai a cada quinze minutos.",
+      "answer_key": "バスは１５分ごとにでます。",
       "accepted_variants": [
-        "車のキーはどこかしら",
-        "車のキーはどこかしら？"
+        "バスは１５分ごとにでます",
+        "バスは１５分ごとにでます。"
       ],
-      "sentence": "sent:tatoeba-10107417",
+      "sentence": "sent:tatoeba-198139",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Eu tenho que ir até a estação às três horas.",
-      "answer_key": "３時に駅に行かなくちゃいけないんだよ。",
+      "prompt_pt": "De onde (ele/isso) parte?",
+      "answer_key": "どこから出るんですか。",
       "accepted_variants": [
-        "３時に駅に行かなくちゃいけないんだよ",
-        "３時に駅に行かなくちゃいけないんだよ。"
+        "どこから出るんですか",
+        "どこから出るんですか。"
       ],
-      "sentence": "sent:tatoeba-10910772",
+      "sentence": "sent:tatoeba-201017",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Está combinado que vou encontrá-lo às cinco na estação.",
-      "answer_key": "５時に駅で会うことになっている。",
+      "prompt_pt": "Eu vou para a escola de ônibus.",
+      "answer_key": "私は、バスで学校に行く。",
       "accepted_variants": [
-        "５時に駅で会うことになっている",
-        "５時に駅で会うことになっている。"
+        "私は、バスで学校に行く",
+        "私は、バスで学校に行く。"
       ],
-      "sentence": "sent:tatoeba-235139",
+      "sentence": "sent:tatoeba-162318",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
-      "sent:tatoeba-201024",
-      "sent:tatoeba-11038484",
-      "sent:jec-1168",
-      "sent:tatoeba-197915",
+      "sent:tatoeba-10725053",
+      "sent:tatoeba-10107417",
       "sent:jec-2741",
-      "sent:tatoeba-162347"
+      "sent:tatoeba-162347",
+      "sent:tatoeba-191220",
+      "sent:tatoeba-78125"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 28,
     "fluency": 6
   }
 }

@@ -1,0 +1,210 @@
+{
+  "id": "speak:opinions-06",
+  "schema_version": "1.0",
+  "stage": "speak:opinions",
+  "order": 6,
+  "title": {
+    "pt-BR": "Dizer o que você acha — parte 6"
+  },
+  "say_now": [
+    "sent:tatoeba-77481",
+    "sent:tatoeba-75200",
+    "sent:tatoeba-80335",
+    "sent:tatoeba-74350",
+    "sent:tatoeba-79019",
+    "sent:tatoeba-78026"
+  ],
+  "chunk_phrases": [],
+  "untranslated": [],
+  "words": [
+    "vocab:1377080",
+    "vocab:1444510",
+    "vocab:1444010",
+    "vocab:1562670",
+    "vocab:1543070",
+    "vocab:1584380"
+  ],
+  "patterns": [
+    "gram:kamo-shirenai",
+    "gram:hazu-da",
+    "gram:darou",
+    "gram:gp-142",
+    "gram:tsumori"
+  ],
+  "kanji_recognition": [
+    "午",
+    "車",
+    "正",
+    "着",
+    "到",
+    "列"
+  ],
+  "shadowing": [
+    "sent:tatoeba-77481",
+    "sent:tatoeba-75200",
+    "sent:tatoeba-80335",
+    "sent:tatoeba-74350",
+    "sent:tatoeba-79019",
+    "sent:tatoeba-78026"
+  ],
+  "audio": "pending",
+  "real_phrases": 6,
+  "cumulative_known_vocab": 542,
+  "layer": "C",
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:583",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:583:2731",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "車",
+        "夜",
+        "父"
+      ]
+    },
+    {
+      "id": "cf:n3:4385:1571",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "全く",
+        "招待",
+        "強い"
+      ]
+    },
+    {
+      "id": "kr:n4:1187",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "おとこ",
+        "ベッド",
+        "かえる"
+      ]
+    },
+    {
+      "id": "kr:n4:1234",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "ひるごはん",
+        "しゅっぱつ",
+        "にゅういん"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:gp-45"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-152614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:hazu-da",
+      "examples": [
+        "sent:tatoeba-235244",
+        "sent:tatoeba-519050",
+        "sent:tatoeba-198131"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:darou",
+      "examples": [
+        "sent:tatoeba-80452",
+        "sent:tatoeba-85312",
+        "sent:tatoeba-84837"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tsumori",
+      "examples": [
+        "sent:gen-f48e05df2b74",
+        "sent:tatoeba-80364",
+        "sent:tatoeba-137646"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Pode ser que neve no fim da tarde, viu.",
+      "answer_key": "夕方には雪がふるかもしれないよ。",
+      "accepted_variants": [
+        "夕方には雪がふるかもしれないよ",
+        "夕方には雪がふるかもしれないよ。"
+      ],
+      "sentence": "sent:tatoeba-79047",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Pode ser que amanhã faça sol.",
+      "answer_key": "明日あるいは晴れるかもしれない。",
+      "accepted_variants": [
+        "明日あるいは晴れるかもしれない",
+        "明日あるいは晴れるかもしれない。"
+      ],
+      "sentence": "sent:tatoeba-80630",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele deve ter quase 40 anos.",
+      "answer_key": "４０近いはずだ。",
+      "accepted_variants": [
+        "４０近いはずだ",
+        "４０近いはずだ。"
+      ],
+      "sentence": "sent:tatoeba-235244",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:jec-0517",
+      "sent:tatoeba-4827",
+      "sent:tatoeba-89607",
+      "sent:tatoeba-80432",
+      "sent:tatoeba-5070",
+      "sent:tatoeba-179684"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  }
+}

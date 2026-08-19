@@ -7,178 +7,180 @@
     "pt-BR": "Chegar aonde você quer — parte 3"
   },
   "say_now": [
-    "sent:tatoeba-5115",
-    "sent:tatoeba-227716",
-    "sent:tatoeba-188877",
-    "sent:tatoeba-84766",
-    "sent:tatoeba-179327",
-    "sent:tatoeba-182700"
+    "sent:tatoeba-4786026",
+    "sent:tatoeba-10899657",
+    "sent:tatoeba-203709",
+    "sent:tatoeba-75827",
+    "sent:tatoeba-9145503",
+    "sent:tatoeba-193061"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1443840",
-    "vocab:1334040",
-    "vocab:1605820",
-    "vocab:1497610",
-    "vocab:1382980",
-    "vocab:1242160",
-    "vocab:1543240",
-    "vocab:1245570",
-    "vocab:1253190",
-    "vocab:1227500",
-    "vocab:1607070"
+    "vocab:1519210",
+    "vocab:1404975",
+    "vocab:1461140",
+    "vocab:1514320",
+    "vocab:1422970",
+    "vocab:1454080",
+    "vocab:1301940",
+    "vocab:1012800",
+    "vocab:1076190"
   ],
   "patterns": [
-    "gram:gp-122"
+    "gram:te-iku",
+    "gram:te-iru"
   ],
   "kanji_recognition": [
+    "傘",
+    "車",
     "電",
-    "話",
-    "学",
-    "近",
-    "校",
-    "住"
+    "忘",
+    "歩",
+    "道"
   ],
   "shadowing": [
-    "sent:tatoeba-5115",
-    "sent:tatoeba-227716",
-    "sent:tatoeba-188877",
-    "sent:tatoeba-84766",
-    "sent:tatoeba-179327",
-    "sent:tatoeba-182700"
+    "sent:tatoeba-4786026",
+    "sent:tatoeba-10899657",
+    "sent:tatoeba-203709",
+    "sent:tatoeba-75827",
+    "sent:tatoeba-9145503",
+    "sent:tatoeba-193061"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 162,
+  "cumulative_known_vocab": 172,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:471",
+      "id": "so:n3:755",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n4:989",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:4098:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "薬",
-        "五",
-        "昼"
-      ]
-    },
-    {
-      "id": "cf:n5:2498:649",
+      "id": "cf:n5:2757:480",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "致す",
-        "何時",
-        "思う"
+        "事",
+        "係",
+        "日"
       ]
     },
     {
-      "id": "kr:n4:1007",
-      "type": "kanji_reading",
+      "id": "cf:n5:2810:480",
+      "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "おぼえる",
-        "しつもん",
-        "あつまる"
+        "僕",
+        "道",
+        "円"
       ]
     },
     {
-      "id": "kr:n4:739",
+      "id": "kr:n5:155",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "かわり",
-        "あまり",
-        "はこぶ"
+        "あの",
+        "いえ",
+        "よむ"
+      ]
+    },
+    {
+      "id": "kr:n5:40",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "うける",
+        "つもり",
+        "さげる"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-154",
-    "gram:gp-77",
-    "gram:gp-128",
-    "gram:yotei-da",
-    "gram:you-ni-you-na"
+    "gram:yatto",
+    "gram:darou",
+    "gram:gp-36",
+    "gram:yori"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-122",
+      "pattern": "gram:te-iku",
       "examples": [
-        "sent:gen-8a3363848885",
-        "sent:gen-9e643c0b17a7",
-        "sent:tatoeba-10169329"
+        "sent:tatoeba-12642529",
+        "sent:tatoeba-7298759",
+        "sent:tatoeba-157850"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-iru",
+      "examples": [
+        "sent:tatoeba-10175894",
+        "sent:tatoeba-5100",
+        "sent:tatoeba-5028"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Eu não sabia de onde aquilo tinha vindo.",
-      "answer_key": "それがどこから来たのか分からなかった。",
+      "prompt_pt": "Fui ao aeroporto buscar meu pai.",
+      "answer_key": "空港まで父を迎えに行きました。",
       "accepted_variants": [
-        "それがどこから来たのか分からなかった",
-        "それがどこから来たのか分からなかった。"
+        "空港まで父を迎えに行きました",
+        "空港まで父を迎えに行きました。"
       ],
-      "sentence": "sent:tatoeba-4802",
+      "sentence": "sent:tatoeba-179327",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Em quanto tempo o ônibus sai?",
-      "answer_key": "どれくらいしたらバスはでるのですか。",
+      "prompt_pt": "Como faço para chegar à estação?",
+      "answer_key": "駅へはどのように行けばよいですか。",
       "accepted_variants": [
-        "どれくらいしたらバスはでるのですか",
-        "どれくらいしたらバスはでるのですか。"
+        "駅へはどのように行けばよいですか",
+        "駅へはどのように行けばよいですか。"
       ],
-      "sentence": "sent:tatoeba-199668",
+      "sentence": "sent:tatoeba-188877",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Há quanto tempo o ônibus saiu?",
-      "answer_key": "バスはどのくらい前に出ましたか。",
+      "prompt_pt": "Meu tio mora perto da escola.",
+      "answer_key": "おじは学校の近くに住んでいる。",
       "accepted_variants": [
-        "バスはどのくらい前に出ましたか",
-        "バスはどのくらい前に出ましたか。"
+        "おじは学校の近くに住んでいる",
+        "おじは学校の近くに住んでいる。"
       ],
-      "sentence": "sent:tatoeba-198125",
+      "sentence": "sent:tatoeba-227716",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
+      "sent:tatoeba-5115",
+      "sent:tatoeba-4802",
       "sent:tatoeba-198139",
       "sent:tatoeba-201017",
       "sent:tatoeba-162318",
-      "sent:tatoeba-10107417",
-      "sent:tatoeba-201024",
-      "sent:tatoeba-11038484"
+      "sent:tatoeba-10725053"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 54,
+    "language-focused": 53,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 24,
     "fluency": 6
   }
 }

@@ -7,188 +7,197 @@
     "pt-BR": "Chegar aonde você quer — parte 4"
   },
   "say_now": [
-    "sent:tatoeba-4786026",
-    "sent:tatoeba-10899657",
-    "sent:tatoeba-203709",
-    "sent:tatoeba-75827",
-    "sent:tatoeba-9145503",
-    "sent:tatoeba-123591"
+    "sent:tatoeba-200926",
+    "sent:tatoeba-158256",
+    "sent:tatoeba-124791",
+    "sent:tatoeba-198112",
+    "sent:tatoeba-4939",
+    "sent:tatoeba-222010"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1519210",
-    "vocab:1404975",
-    "vocab:1461140",
-    "vocab:1514320",
-    "vocab:1454080",
-    "vocab:1443530",
-    "vocab:1301940",
-    "vocab:1076190"
+    "vocab:1291800",
+    "vocab:1402540",
+    "vocab:1340000",
+    "vocab:1206900",
+    "vocab:1266440",
+    "vocab:1343100",
+    "vocab:1592970",
+    "vocab:1582920"
   ],
   "patterns": [
-    "gram:te-iku",
-    "gram:te-iru",
-    "gram:gp-10"
+    "gram:tara-ii-desu-ka",
+    "gram:ta-tokoro",
+    "gram:masen-ka",
+    "gram:gp-149"
   ],
   "kanji_recognition": [
-    "傘",
+    "座",
+    "駅",
+    "私",
+    "走",
     "車",
-    "電",
-    "忘",
-    "歩",
-    "道"
+    "電"
   ],
   "shadowing": [
-    "sent:tatoeba-4786026",
-    "sent:tatoeba-10899657",
-    "sent:tatoeba-203709",
-    "sent:tatoeba-75827",
-    "sent:tatoeba-9145503",
-    "sent:tatoeba-123591"
+    "sent:tatoeba-200926",
+    "sent:tatoeba-158256",
+    "sent:tatoeba-124791",
+    "sent:tatoeba-198112",
+    "sent:tatoeba-4939",
+    "sent:tatoeba-222010"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 170,
+  "cumulative_known_vocab": 180,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:755",
+      "id": "so:n4:3598",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n5:2430:428",
+      "id": "cf:n3:3598:2713",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "余り",
-        "沢山",
-        "着く"
+        "二",
+        "人",
+        "事"
       ]
     },
     {
-      "id": "cf:n5:2757:480",
+      "id": "cf:n4:5027:1226",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "事",
-        "日",
-        "頃"
+        "出る",
+        "壊す",
+        "最中"
       ]
     },
     {
-      "id": "kr:n5:155",
+      "id": "kr:n4:1226",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あの",
-        "いえ",
-        "よむ"
+        "しょくどう",
+        "ひるごはん",
+        "さいちゅう"
       ]
     },
     {
-      "id": "kr:n5:40",
+      "id": "kr:n5:151",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "うける",
-        "つもり",
-        "さげる"
+        "おくれる",
+        "メートル",
+        "でかける"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:darou",
-    "gram:gp-36",
-    "gram:yori"
+    "gram:gp-70",
+    "gram:tokoro"
   ],
   "drills": [
     {
-      "pattern": "gram:te-iku",
+      "pattern": "gram:tara-ii-desu-ka",
       "examples": [
-        "sent:tatoeba-12642529",
-        "sent:tatoeba-7298759",
-        "sent:tatoeba-157850"
+        "sent:tatoeba-187548",
+        "sent:tatoeba-10140817",
+        "sent:tatoeba-4713"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:te-iru",
+      "pattern": "gram:ta-tokoro",
       "examples": [
-        "sent:tatoeba-10175894",
-        "sent:tatoeba-5100",
-        "sent:tatoeba-5028"
+        "sent:tatoeba-11545589",
+        "sent:tatoeba-12440070",
+        "sent:tatoeba-12574555"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-10",
+      "pattern": "gram:masen-ka",
       "examples": [
-        "sent:tatoeba-97651",
-        "sent:tatoeba-99799",
-        "sent:tatoeba-78316"
+        "sent:gen-4595bdeb6907",
+        "sent:gen-a94929c3a847",
+        "sent:tatoeba-172871"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Aonde você pretende ir durante as férias?",
-      "answer_key": "休み中にどこへいくつもりですか。",
+      "prompt_pt": "Finalmente chegamos.",
+      "answer_key": "やっと着いた。",
       "accepted_variants": [
-        "休み中にどこへいくつもりですか",
-        "休み中にどこへいくつもりですか。"
+        "やっと着いた",
+        "やっと着いた。"
       ],
-      "sentence": "sent:tatoeba-182700",
+      "sentence": "sent:tatoeba-193061",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Fui ao aeroporto buscar meu pai.",
-      "answer_key": "空港まで父を迎えに行きました。",
+      "prompt_pt": "Você vai a pé? Ou vai de ônibus?",
+      "answer_key": "歩いていく？それともバスで行く？",
       "accepted_variants": [
-        "空港まで父を迎えに行きました",
-        "空港まで父を迎えに行きました。"
+        "歩いていく？それともバスで行く",
+        "歩いていく？それともバスで行く？"
       ],
-      "sentence": "sent:tatoeba-179327",
+      "sentence": "sent:tatoeba-9145503",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Meu pai tem previsão de chegar à estação às cinco horas.",
-      "answer_key": "父は５時に駅に着く予定だ。",
+      "prompt_pt": "As duas estradas se cruzam ali.",
+      "answer_key": "二本の道はそこでクロスしている。",
       "accepted_variants": [
-        "父は５時に駅に着く予定だ",
-        "父は５時に駅に着く予定だ。"
+        "二本の道はそこでクロスしている",
+        "二本の道はそこでクロスしている。"
       ],
-      "sentence": "sent:tatoeba-84766",
+      "sentence": "sent:tatoeba-75827",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
+      "sent:tatoeba-179327",
       "sent:tatoeba-5115",
       "sent:tatoeba-4802",
       "sent:tatoeba-198139",
       "sent:tatoeba-201017",
-      "sent:tatoeba-162318",
-      "sent:tatoeba-10107417"
+      "sent:tatoeba-162318"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 27,
     "fluency": 6
   }
 }

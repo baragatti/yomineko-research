@@ -7,94 +7,101 @@
     "pt-BR": "Conversa de verdade — parte 6"
   },
   "say_now": [
-    "sent:tatoeba-118031",
-    "sent:tatoeba-10153751",
-    "sent:tatoeba-234789",
-    "sent:tatoeba-184333",
     "sent:tatoeba-77972",
-    "sent:tatoeba-77973"
+    "sent:tatoeba-77973",
+    "sent:tatoeba-87071",
+    "sent:tatoeba-95365",
+    "sent:tatoeba-886104",
+    "sent:tatoeba-95747"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1179330",
-    "vocab:1295070",
-    "vocab:1263490",
-    "vocab:1206800",
-    "vocab:1554010"
+    "vocab:1554010",
+    "vocab:1486530",
+    "vocab:1317770",
+    "vocab:1532800",
+    "vocab:1302070",
+    "vocab:1188890"
   ],
   "patterns": [
     "gram:janai-dewa-nai",
+    "gram:bakari",
     "gram:mitai-da",
-    "gram:rashii",
-    "gram:to-iu",
-    "gram:tokoro",
-    "gram:gp-12"
+    "gram:nasai",
+    "gram:to-iu"
   ],
   "kanji_recognition": [
-    "奥",
-    "外",
-    "国",
-    "人",
-    "彼",
-    "済"
+    "好",
+    "方",
+    "両",
+    "気",
+    "女",
+    "人"
   ],
   "shadowing": [
-    "sent:tatoeba-118031",
-    "sent:tatoeba-10153751",
-    "sent:tatoeba-234789",
-    "sent:tatoeba-184333",
     "sent:tatoeba-77972",
-    "sent:tatoeba-77973"
+    "sent:tatoeba-77973",
+    "sent:tatoeba-87071",
+    "sent:tatoeba-95365",
+    "sent:tatoeba-886104",
+    "sent:tatoeba-95747"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 514,
+  "cumulative_known_vocab": 584,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:5450:1591",
+      "id": "so:n3:498",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5393:2639",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "動く",
-        "寝る",
-        "機会"
+        "新聞",
+        "休む",
+        "出席"
       ]
     },
     {
-      "id": "cf:n3:266:1591",
+      "id": "cf:n3:5522:1979",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "先輩",
-        "彼女",
-        "其れ"
+        "ビル",
+        "少年",
+        "引く"
       ]
     },
     {
-      "id": "kr:n3:1393",
+      "id": "kr:n5:62",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "いっしょ",
-        "だんせい",
-        "おくれる"
+        "うたう",
+        "みせる",
+        "こんな"
       ]
     },
     {
-      "id": "kr:n3:1591",
+      "id": "kr:n4:1037",
       "type": "kanji_reading",
-      "via": "new-word",
+      "via": "review",
       "distractors": [
-        "シャワー",
-        "しつもん",
-        "しんぶん"
+        "かいもの",
+        "ともだち",
+        "さんせい"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:gp-36"
+  ],
   "drills": [
     {
       "pattern": "gram:janai-dewa-nai",
@@ -102,6 +109,15 @@
         "sent:tatoeba-229343",
         "sent:tatoeba-228269",
         "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-157014",
+        "sent:tatoeba-144050"
       ],
       "strand": "language-focused"
     },
@@ -115,11 +131,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:rashii",
+      "pattern": "gram:nasai",
       "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-e9700d108b4a",
-        "sent:gen-dbc3c7fb8b46"
+        "sent:tatoeba-78287",
+        "sent:tatoeba-79943",
+        "sent:tatoeba-78855"
       ],
       "strand": "language-focused"
     },
@@ -127,71 +143,53 @@
       "pattern": "gram:to-iu",
       "examples": [
         "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tokoro",
-      "examples": [
-        "sent:gen-ad64679f3372",
-        "sent:tatoeba-84696",
-        "sent:gen-a3656907ff28"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-75665",
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451"
+        "sent:tatoeba-83621",
+        "sent:tatoeba-80590"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Não parece que é outono, hein.",
-      "answer_key": "秋じゃないみたいだな。",
+      "prompt_pt": "Ele tem um quê de acadêmico.",
+      "answer_key": "学者らしいところがある。",
       "accepted_variants": [
-        "秋じゃないみたいだな",
-        "秋じゃないみたいだな。"
+        "学者らしいところがある",
+        "学者らしいところがある。"
       ],
-      "sentence": "sent:tatoeba-8988161",
+      "sentence": "sent:tatoeba-184333",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão.",
-      "answer_key": "絵心がないから、風景を正確に写せるわけがない。",
+      "prompt_pt": "O que significa \"UN\"?",
+      "answer_key": "ＵＮというのは何を表わしていますか。",
       "accepted_variants": [
-        "絵心がないから、風景を正確に写せるわけがない",
-        "絵心がないから、風景を正確に写せるわけがない。"
+        "ＵＮというのは何を表わしていますか",
+        "ＵＮというのは何を表わしていますか。"
       ],
-      "sentence": "sent:tatoeba-12776411",
+      "sentence": "sent:tatoeba-234789",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Dizer que a neve é azul é um erro.",
-      "answer_key": "雪が青いというのは誤りだ。",
+      "prompt_pt": "Parece que você já terminou, né?",
+      "answer_key": "済んだみたいだね。",
       "accepted_variants": [
-        "雪が青いというのは誤りだ",
-        "雪が青いというのは誤りだ。"
+        "済んだみたいだね",
+        "済んだみたいだね。"
       ],
-      "sentence": "sent:tatoeba-142020",
+      "sentence": "sent:tatoeba-10153751",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-10901570",
-      "sent:tatoeba-423387",
-      "sent:tatoeba-127148",
-      "sent:tatoeba-143985",
-      "sent:tatoeba-211899",
-      "sent:tatoeba-216263"
+      "sent:tatoeba-118031",
+      "sent:tatoeba-8988161",
+      "sent:tatoeba-12776411",
+      "sent:tatoeba-142020",
+      "sent:tatoeba-214502",
+      "sent:tatoeba-10901570"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

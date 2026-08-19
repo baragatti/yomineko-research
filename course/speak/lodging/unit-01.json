@@ -8,34 +8,28 @@
   },
   "say_now": [
     "sent:tatoeba-109884",
-    "sent:tatoeba-84158",
-    "sent:tatoeba-84234",
-    "sent:tatoeba-126245",
-    "sent:tatoeba-4562257",
-    "sent:jec-4320"
+    "sent:tatoeba-84462",
+    "sent:tatoeba-84142",
+    "sent:tatoeba-84163",
+    "sent:tatoeba-84222",
+    "sent:tatoeba-84158"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1160790",
     "vocab:1499320",
-    "vocab:1305990",
-    "vocab:1407460",
-    "vocab:1428280",
-    "vocab:1122650",
+    "vocab:1154330",
     "vocab:1119650",
     "vocab:1443000",
-    "vocab:1203650",
-    "vocab:1061820",
-    "vocab:1587850"
+    "vocab:1191870",
+    "vocab:1363190"
   ],
   "patterns": [
-    "gram:temo-ii-desu",
     "gram:bakari",
+    "gram:gp-32",
     "gram:kana",
-    "gram:temo",
-    "gram:da-desu",
-    "gram:gp"
+    "gram:gp-8"
   ],
   "kanji_recognition": [
     "一",
@@ -47,86 +41,76 @@
   ],
   "shadowing": [
     "sent:tatoeba-109884",
-    "sent:tatoeba-84158",
-    "sent:tatoeba-84234",
-    "sent:tatoeba-126245",
-    "sent:tatoeba-4562257",
-    "sent:jec-4320"
+    "sent:tatoeba-84462",
+    "sent:tatoeba-84142",
+    "sent:tatoeba-84163",
+    "sent:tatoeba-84222",
+    "sent:tatoeba-84158"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 204,
+  "cumulative_known_vocab": 209,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "so:n3:784",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:815",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:4725:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "家",
-        "犬",
-        "事"
-      ]
-    },
     {
       "id": "cf:n3:865:2525",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
         "昼",
-        "五",
-        "家"
+        "家",
+        "君"
       ]
     },
     {
-      "id": "kr:n5:12",
-      "type": "kanji_reading",
+      "id": "cf:n5:1077:55",
+      "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "えき",
-        "おじ",
-        "かう"
+        "左",
+        "車",
+        "母"
       ]
     },
     {
-      "id": "kr:n5:140",
+      "id": "kr:n3:1586",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "さいちゅう",
-        "レストラン",
-        "ひるごはん"
+        "たつ",
+        "いま",
+        "バス"
+      ]
+    },
+    {
+      "id": "kr:n5:220",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ベッド",
+        "わかる",
+        "あがる"
       ]
     }
   ],
   "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:temo-ii-desu",
-      "examples": [
-        "sent:tatoeba-13158601",
-        "sent:tatoeba-2242416",
-        "sent:tatoeba-8861912"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:bakari",
       "examples": [
         "sent:tatoeba-169015",
         "sent:tatoeba-157014",
         "sent:tatoeba-144050"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-4714",
+        "sent:tatoeba-85319",
+        "sent:tatoeba-83696"
       ],
       "strand": "language-focused"
     },
@@ -140,89 +124,70 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:temo",
+      "pattern": "gram:gp-8",
       "examples": [
-        "sent:gen-ff6004963148",
-        "sent:gen-fd723f8599f2",
-        "sent:gen-a1d5b47d31e9"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "O caminho a se escolher é liberdade ou morte.",
-      "answer_key": "選ぶべき道は自由か死だ。",
+      "prompt_pt": "Ele vai alugar um carro logo no aeroporto.",
+      "answer_key": "彼が空港ですぐレンタカーを借ります",
       "accepted_variants": [
-        "選ぶべき道は自由か死だ",
-        "選ぶべき道は自由か死だ。"
+        "彼が空港ですぐレンタカーを借ります"
       ],
-      "sentence": "sent:tatoeba-141046",
+      "sentence": "sent:jec-3201",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Meu pé esquerdo está doendo.",
-      "answer_key": "左の足が痛いです。",
+      "prompt_pt": "Meu irmão mais velho foi vítima de batedor de carteira dentro do trem.",
+      "answer_key": "私の兄は電車の中でスリにあった。",
       "accepted_variants": [
-        "左の足が痛いです",
-        "左の足が痛いです。"
+        "私の兄は電車の中でスリにあった",
+        "私の兄は電車の中でスリにあった。"
       ],
-      "sentence": "sent:tatoeba-10263746",
+      "sentence": "sent:tatoeba-163785",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por essa rua não dá, viu. É que está em obras.",
-      "answer_key": "この道を行ってもダメですよ。工事中ですから。",
+      "prompt_pt": "Você foi em algum jardim famoso?",
+      "answer_key": "どこか有名な庭園に行ったの？",
       "accepted_variants": [
-        "この道を行ってもダメですよ。工事中ですから",
-        "この道を行ってもダメですよ。工事中ですから。"
+        "どこか有名な庭園に行ったの",
+        "どこか有名な庭園に行ったの？"
       ],
-      "sentence": "sent:tatoeba-220272",
+      "sentence": "sent:tatoeba-79250",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
     "items": [
+      "sent:tatoeba-141127",
+      "sent:tatoeba-141046",
+      "sent:tatoeba-10263746",
       "sent:tatoeba-137633",
       "sent:jec-0673",
-      "sent:tatoeba-234850",
-      "sent:tatoeba-141381",
-      "sent:tatoeba-158256",
-      "sent:tatoeba-200926"
+      "sent:tatoeba-234850"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 21,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 35,
+    "language-focused": 25,
     "fluency": 6
   }
 }

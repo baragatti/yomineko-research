@@ -7,57 +7,54 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 3"
   },
   "say_now": [
-    "sent:tatoeba-123440",
-    "sent:tatoeba-206210",
-    "sent:tatoeba-188640",
     "sent:tatoeba-223665",
-    "sent:tatoeba-124654",
-    "sent:tatoeba-199509"
+    "sent:tatoeba-199509",
+    "sent:tatoeba-8989567",
+    "sent:tatoeba-78628",
+    "sent:tatoeba-201345",
+    "sent:tatoeba-222508"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1554310",
-    "vocab:1259210",
-    "vocab:1591430",
     "vocab:1284430",
-    "vocab:1384830",
     "vocab:1421970",
+    "vocab:1548010",
+    "vocab:1189130",
+    "vocab:1549660",
     "vocab:1223660",
-    "vocab:1061520",
-    "vocab:1455280",
-    "vocab:1178450",
+    "vocab:1220800",
+    "vocab:1227500",
     "vocab:1066680",
-    "vocab:1555300",
-    "vocab:1238840"
+    "vocab:1374530",
+    "vocab:1593590"
   ],
   "patterns": [
-    "gram:gozaimasu",
+    "gram:sasete-kudasai",
     "gram:te-kudasai",
+    "gram:deshou",
     "gram:gp-89",
-    "gram:donna",
-    "gram:temo",
-    "gram:gp-14"
+    "gram:donna"
   ],
   "kanji_recognition": [
-    "特",
-    "別",
-    "理",
-    "料",
-    "見",
-    "緑"
+    "合",
+    "選",
+    "起",
+    "遅",
+    "週",
+    "食"
   ],
   "shadowing": [
-    "sent:tatoeba-123440",
-    "sent:tatoeba-206210",
-    "sent:tatoeba-188640",
     "sent:tatoeba-223665",
-    "sent:tatoeba-124654",
-    "sent:tatoeba-199509"
+    "sent:tatoeba-199509",
+    "sent:tatoeba-8989567",
+    "sent:tatoeba-78628",
+    "sent:tatoeba-201345",
+    "sent:tatoeba-222508"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 432,
+  "cumulative_known_vocab": 482,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -67,59 +64,61 @@
       "via": "phrase"
     },
     {
-      "id": "so:n4:3408",
+      "id": "so:n3:476",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:3408:1276",
+      "id": "cf:n4:476:1010",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "近く",
-        "見る",
-        "急ぐ"
+        "借りる",
+        "小さな",
+        "危ない"
       ]
     },
     {
-      "id": "cf:n4:1274:1021",
+      "id": "cf:n4:475:1010",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "終わり",
-        "迎える",
-        "シャツ"
+        "入れる",
+        "新しい",
+        "起こす"
       ]
     },
     {
-      "id": "kr:n4:1016",
+      "id": "kr:n4:1010",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あつまる",
-        "なるべく",
-        "せいよう"
+        "せんぱい",
+        "すうがく",
+        "しょくじ"
       ]
     },
     {
-      "id": "kr:n4:1021",
+      "id": "kr:n4:1087",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "じぶん",
-        "いない",
-        "あるく"
+        "ため",
+        "やく",
+        "いち"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:te-ita"
+  ],
   "drills": [
     {
-      "pattern": "gram:gozaimasu",
+      "pattern": "gram:sasete-kudasai",
       "examples": [
-        "sent:tatoeba-335372",
-        "sent:tatoeba-1576172",
-        "sent:tatoeba-8467948"
+        "sent:tatoeba-3957479",
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
       ],
       "strand": "language-focused"
     },
@@ -129,6 +128,15 @@
         "sent:tatoeba-146189",
         "sent:tatoeba-124708",
         "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-5347"
       ],
       "strand": "language-focused"
     },
@@ -149,55 +157,37 @@
         "sent:tatoeba-199480"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:tatoeba-78150",
-        "sent:gen-fd723f8599f2"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-14",
-      "examples": [
-        "sent:tatoeba-74036",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-76735"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Abaixa um pouco o volume do som, por favor.",
-      "answer_key": "少しステレオの音を小さくしてください。",
+      "prompt_pt": "Tenho um pedido a fazer. Será que eu poderia pedir um favor?",
+      "answer_key": "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？",
       "accepted_variants": [
-        "少しステレオの音を小さくしてください",
-        "少しステレオの音を小さくしてください。"
+        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか",
+        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？"
       ],
-      "sentence": "sent:tatoeba-146860",
+      "sentence": "sent:tatoeba-78565",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Deixe-me explicar.",
-      "answer_key": "説明させてください。",
+      "prompt_pt": "Por favor, diga o que sente sem cerimônia.",
+      "answer_key": "遠慮なく気持ちをおっしゃってください。",
       "accepted_variants": [
-        "説明させてください",
-        "説明させてください。"
+        "遠慮なく気持ちをおっしゃってください",
+        "遠慮なく気持ちをおっしゃってください。"
       ],
-      "sentence": "sent:tatoeba-1882978",
+      "sentence": "sent:tatoeba-188640",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por favor, tranque a porta antes de sair.",
-      "answer_key": "出かける前に、ドアにかぎをかけてください。",
+      "prompt_pt": "Nós temos um prato especial (para o senhor)...",
+      "answer_key": "特別料理がございますが。",
       "accepted_variants": [
-        "出かける前に、ドアにかぎをかけてください",
-        "出かける前に、ドアにかぎをかけてください。"
+        "特別料理がございますが",
+        "特別料理がございますが。"
       ],
-      "sentence": "sent:tatoeba-147801",
+      "sentence": "sent:tatoeba-123440",
       "strand": "meaning-output"
     }
   ],
@@ -207,24 +197,24 @@
       "sent:tatoeba-146189",
       "sent:tatoeba-226013",
       "sent:tatoeba-5109",
-      "sent:tatoeba-226794",
-      "sent:tatoeba-146817",
-      "sent:tatoeba-147431"
+      "sent:tatoeba-147431",
+      "sent:tatoeba-8467948",
+      "sent:tatoeba-4854"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 21,
-    "meaning-output": 5,
-    "language-focused": 64,
-    "fluency": 10
+    "meaning-input": 22,
+    "meaning-output": 6,
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 37,
+    "language-focused": 33,
     "fluency": 6
   }
 }

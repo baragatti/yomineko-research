@@ -1,0 +1,59 @@
+{
+ "queue": "pt_literal",
+ "checked_file": "research/derived/qa_queues/round2/pt_literal.json",
+ "check": "independent-adversarial-1",
+ "date": "2026-08-19",
+ "verdict": "accept",
+ "summary": "All 18 rows survive. Re-derived from research/derived/mined_pt/_accepted.json, batch-01..24.json and _skeletons.json rather than from the queue's own prose. Every anchor is byte-exact, every fix is a value, no Layer-A Japanese is touched, and all 8 no-change calls are independently corroborated by the Layer-B/C material authored in research/derived/mined_layerb/. The two problems recorded are residue outside the queue's scope, not defects in any anchor or value, and neither changes a verdict.",
+ "evidence": {
+  "rows_checked": 18,
+  "fix_rows": 10,
+  "no_change_rows": 8,
+  "criterion_a_current_byte_exact": {
+   "method": "Compared each row's 'current' to the stored pt_literal of the matching tatoeba_id in _accepted.json AND independently in batch-01..24.json AND in _skeletons.json.",
+   "result": "18/18 byte-exact in all three copies. No paraphrase, no truncation, no near-miss. The three files agree on all 324 pt_literal values (0 diffs)."
+  },
+  "criterion_b_fix_is_value": {
+   "method": "Every fix string tested for instruction shapes (arrow forms, 'should be', 'replace', 'substituir', 'trocar por') and for the no-change invariant fix equals current.",
+   "result": "No instruction phrasing in any fix. All 8 no-change rows carry fix identical to current. All 10 fix rows carry a finished pt-BR sentence."
+  },
+  "criterion_c_locale_purity": {
+   "method": "Scanned the 10 fix values and all 324 stored pt_literal values for English tokens, pt-PT markers, em dashes and emoji.",
+   "result": "No English in any pt-BR field. No pt-PT: the fix for 77716 uses the pt-BR spelling of the word for antonym, not the pt-PT one. No em dash, no en dash, no emoji. The queue writes no enum values, so no pt-BR can land in a neutral-English enum."
+  },
+  "criterion_d_layer_a_untouched": {
+   "method": "Checked the queue's field scope and confirmed no jp/kana/romaji/token field appears in any row.",
+   "result": "The queue writes pt_literal only. pt_literal maps to translation_literal, a Layer-B text field (scripts/ingest/persist_dissection.py line 98). All 18 ids are Tatoeba rows, none is a sent:gen- slug, and none is banked yet (0 of the 10 fix ids appear in corpus/sentences/bank.json), so no jp/kana/romaji/token-surface desync is possible from these edits."
+  },
+  "criterion_e_reasoning_reverified": {
+   "method": "Each row's linguistic claim re-derived from the source Japanese and cross-read against the independently authored structure_explanation_pt and particle explanations in research/derived/mined_layerb/.",
+   "result": [
+    "84174 crase: the layerb explanation states that the table comes with wa and not ga, so the topic formula is right and only the contraction changes. A crase sweep over all 324 rows finds no other missing-crase case: every remaining bare 'quanto a' sits before a pronoun, a proper noun, an adverb, an infinitive or a bare plural.",
+    "78366 / 78188 / 79624 particle claim: confirmed. A corpus-wide sweep for rows whose pt_literal opens with the 'Quanto a' topic formula while the Japanese carries no wa returns exactly 5 rows: these 3, plus 84132 (already in phase6 pt_literal_fixes.json) and 75187 (correctly kept, see below). The sweep is complete; nothing of that class is missed. The layerb particle notes confirm ga for 78366 and 78188 and list no wa at all for 79624. design/translation_style.md lines 12-14 independently ties 'quanto a X' to the topic particle wa.",
+    "75187 no-change: strongly corroborated. The independently authored explanation says the comma does the work of the dropped wa, which is the queue's exact argument.",
+    "4738 / 84212 / 84224 no-change: corroborated close to verbatim by the layerb prose, which glosses hou as 'lado, opcao', hitori as 'uma pessoa so', and nannin no shounen as a counter phrase glued by no.",
+    "78975 / 84217 / 84236 no-change: corroborated. 78975 is described as a genuine passive plus resultative state, 84217 as a state, 84236 as two real wa in different functions.",
+    "74350 parentheses claim: verified true. The optional-subject parenthesis is the only parenthesis in any pt_literal across all 360 batch rows, and the corpus bank carries 0 optional-pronoun parentheses across its 5,565 translation_literal values.",
+    "84219 precedent cited for 84220: verified, the stored value is the 'em grande quantidade' sibling the row claims.",
+    "84243 / 84132 / 81566 / 78158 / 78177 precedents: verified against phase6_reauthored/pt_literal_fixes.json. Overlap between this queue's 18 ids and that file's 21 ids is empty, so nothing is double-touched.",
+    "Missed-defect sweeps for the queue's own defect classes (intransitive glossed as analytic passive, missing reflexive, pt_literal identical to pt) return no further instances. The 285 unflagged rows hold up on those criteria."
+   ]
+  },
+  "criterion_f_scope": {
+   "method": "Checked whether pt_literal lives anywhere the queue's scope line does not name.",
+   "result": "_skeletons.json holds a third byte-identical copy but is a derived cache regenerated from _accepted.json by scripts/ingest/prep_mined_skeletons.py, and its pt_literal is never read on ingest. scripts/ingest/ingest_mined_stages.py reads _accepted.json (line 45). research/derived/mined_layerb/ carries no pt_literal field. The scope line names the sources of truth and is correct."
+  }
+ },
+ "problems": [
+  {
+   "id": "84210",
+   "issue": "The fix is right and should land, but it leaves the same defect standing in the sibling field of the same sentence. The row removes 'se ouvia' on the grounds that a passiva sintetica misrepresents an intransitive verb. The Layer-C structure explanation authored for 84210 in research/derived/mined_layerb/batch-09.json still glosses that verb as 'ser ouvido' and closes with 'a ideia de que nada se ouvia'. Both fields persist onto the same sentence (translation_literal at persist_dissection.py line 98, structure_explanation at line 99), so once this queue lands the learner reads 'era audivel' in the gloss beside 'ser ouvido' and 'nada se ouvia' in the explanation. Outside this queue's scope, but it is the queue's own defect class and it is now visible.",
+   "action": "keep"
+  },
+  {
+   "id": "4738",
+   "issue": "The no-change rationale rests on cross-row consistency for the hou ga ii pattern, namely that the 'O lado de ...' shape is the one already ratified for 81566. That argument is only half applied. The same sweep edits 74350, also a hou ga ii row, and leaves its smoothed 'o mais cedo deve ser melhor' unaligned, and it never reaches 74805, 'e melhor nao atender, viu'. Corpus-wide there are five hou ga ii rows: after this queue and phase6 land, 4738, 79537 and 81566 teach the pattern as 'O lado de ...' while 74350 and 74805 teach it as 'e melhor ...'. The summary's claim that the other 285 rows are sound does not hold for 74805 on the queue's own consistency criterion. No value here is wrong, so nothing should be dropped, but a human has to pick one house shape and align the outliers.",
+   "action": "needs-human"
+  }
+ ]
+}

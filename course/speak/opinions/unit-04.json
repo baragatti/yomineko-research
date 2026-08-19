@@ -1,0 +1,195 @@
+{
+  "id": "speak:opinions-04",
+  "schema_version": "1.0",
+  "stage": "speak:opinions",
+  "order": 4,
+  "title": {
+    "pt-BR": "Dizer o que você acha — parte 4"
+  },
+  "say_now": [
+    "sent:tatoeba-5070",
+    "sent:tatoeba-81654",
+    "sent:tatoeba-80432",
+    "sent:tatoeba-80745",
+    "sent:tatoeba-89607",
+    "sent:tatoeba-75789"
+  ],
+  "chunk_phrases": [],
+  "untranslated": [],
+  "words": [
+    "vocab:1304200",
+    "vocab:1598680",
+    "vocab:1203800",
+    "vocab:1006110",
+    "vocab:1349610"
+  ],
+  "patterns": [
+    "gram:kamo-shirenai",
+    "gram:hazu-ga-nai",
+    "gram:deshou",
+    "gram:janai-dewa-nai"
+  ],
+  "kanji_recognition": [
+    "賛",
+    "成",
+    "言",
+    "中",
+    "彼",
+    "本"
+  ],
+  "shadowing": [
+    "sent:tatoeba-5070",
+    "sent:tatoeba-81654",
+    "sent:tatoeba-80432",
+    "sent:tatoeba-80745",
+    "sent:tatoeba-89607",
+    "sent:tatoeba-75789"
+  ],
+  "audio": "pending",
+  "real_phrases": 6,
+  "cumulative_known_vocab": 529,
+  "layer": "C",
+  "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:13:1571",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "自由",
+        "貰う",
+        "去年"
+      ]
+    },
+    {
+      "id": "cf:n3:3488:1571",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "同じ",
+        "半分",
+        "苦労"
+      ]
+    },
+    {
+      "id": "kr:n3:1571",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きんようび",
+        "ファックス",
+        "めしあがる"
+      ]
+    },
+    {
+      "id": "kr:n4:981",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "にゅういん",
+        "むずかしい",
+        "かんがえる"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:te-kureru",
+    "gram:gp-128"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-152614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:hazu-ga-nai",
+      "examples": [
+        "sent:tatoeba-11692639",
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-5347"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ele pode até ser rico, mas é pão-duro.",
+      "answer_key": "金持ちかもしれないがけちだ。",
+      "accepted_variants": [
+        "金持ちかもしれないがけちだ",
+        "金持ちかもしれないがけちだ。"
+      ],
+      "sentence": "sent:tatoeba-179684",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Pode ser que eu ganhe, por sorte.",
+      "answer_key": "ひょっとしたら勝つかもしれない。",
+      "accepted_variants": [
+        "ひょっとしたら勝つかもしれない",
+        "ひょっとしたら勝つかもしれない。"
+      ],
+      "sentence": "sent:tatoeba-197441",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É por isso que eu sou contra você.",
+      "answer_key": "こういうわけで私はあなたに反対なのです。",
+      "accepted_variants": [
+        "こういうわけで私はあなたに反対なのです",
+        "こういうわけで私はあなたに反対なのです。"
+      ],
+      "sentence": "sent:tatoeba-225064",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-78366",
+      "sent:tatoeba-151044",
+      "sent:tatoeba-5348453",
+      "sent:tatoeba-119734",
+      "sent:tatoeba-11692639",
+      "sent:tatoeba-77555"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  }
+}

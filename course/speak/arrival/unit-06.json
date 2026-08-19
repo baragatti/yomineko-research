@@ -12,7 +12,7 @@
     "sent:tatoeba-231454",
     "sent:tatoeba-126710",
     "sent:tatoeba-204778",
-    "sent:tatoeba-11267683"
+    "sent:tatoeba-78964"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -22,8 +22,10 @@
     "vocab:1004880",
     "vocab:1589040",
     "vocab:1203260",
-    "vocab:1320760",
+    "vocab:1217950",
     "vocab:1246700",
+    "vocab:1543750",
+    "vocab:1589840",
     "vocab:1006970"
   ],
   "patterns": [
@@ -44,11 +46,11 @@
     "sent:tatoeba-231454",
     "sent:tatoeba-126710",
     "sent:tatoeba-204778",
-    "sent:tatoeba-11267683"
+    "sent:tatoeba-78964"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 36,
+  "cumulative_known_vocab": 38,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -77,9 +79,19 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
+        "係",
         "彼",
-        "間",
-        "事"
+        "間"
+      ]
+    },
+    {
+      "id": "kr:n3:1583",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いいえ",
+        "こんな",
+        "よやく"
       ]
     },
     {
@@ -87,19 +99,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しつもん",
         "こんばん",
-        "おしえる"
-      ]
-    },
-    {
-      "id": "kr:n5:108",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おくれる",
-        "スリッパ",
-        "おぼえる"
+        "おしえる",
+        "くださる"
       ]
     }
   ],
@@ -176,15 +178,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 26,
     "fluency": 6
   }
 }

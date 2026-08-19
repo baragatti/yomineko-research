@@ -7,96 +7,100 @@
     "pt-BR": "Dizer o que você acha — parte 2"
   },
   "say_now": [
+    "sent:tatoeba-11692639",
+    "sent:tatoeba-118153",
+    "sent:tatoeba-119734",
+    "sent:tatoeba-5348453",
     "sent:tatoeba-151044",
-    "sent:tatoeba-519050",
-    "sent:tatoeba-78363",
-    "sent:tatoeba-219422",
-    "sent:tatoeba-82992",
-    "sent:tatoeba-225064"
+    "sent:tatoeba-78366"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1376600",
     "vocab:1312420",
-    "vocab:1335080",
     "vocab:1550140",
-    "vocab:1215790",
-    "vocab:1480670",
-    "vocab:1497980"
+    "vocab:1497980",
+    "vocab:1414470"
   ],
   "patterns": [
     "gram:hazu-ga-nai",
     "gram:hazu-da",
-    "gram:gp-12",
-    "gram:gp-17",
-    "gram:koto",
-    "gram:da-desu"
+    "gram:to-iu",
+    "gram:da-desu",
+    "gram:gp",
+    "gram:gp-2"
   ],
   "kanji_recognition": [
-    "合",
-    "試",
-    "負",
-    "十",
-    "分",
-    "以"
+    "正",
+    "意",
+    "見",
+    "体",
+    "大",
+    "彼"
   ],
   "shadowing": [
+    "sent:tatoeba-11692639",
+    "sent:tatoeba-118153",
+    "sent:tatoeba-119734",
+    "sent:tatoeba-5348453",
     "sent:tatoeba-151044",
-    "sent:tatoeba-519050",
-    "sent:tatoeba-78363",
-    "sent:tatoeba-219422",
-    "sent:tatoeba-82992",
-    "sent:tatoeba-225064"
+    "sent:tatoeba-78366"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 472,
+  "cumulative_known_vocab": 518,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "so:n3:132",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
     {
       "id": "so:n3:196",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:3720:1099",
+      "id": "cf:n4:2068:889",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
+        "十分",
         "行く",
-        "大体",
-        "以下"
+        "頼む"
       ]
     },
     {
-      "id": "cf:n4:1452:1099",
+      "id": "kr:n4:1104",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はじめて",
+        "ステーキ",
+        "けっこう"
+      ]
+    },
+    {
+      "id": "kr:n4:1106",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おおきな",
+        "たのしい",
+        "さいきん"
+      ]
+    },
+    {
+      "id": "cf:n3:5046:2453",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "review",
       "distractors": [
-        "注意",
-        "一寸",
-        "予習"
-      ]
-    },
-    {
-      "id": "kr:n3:1663",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まいあさ",
-        "けいけん",
-        "りょうり"
-      ]
-    },
-    {
-      "id": "kr:n4:1099",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "すばらしい",
-        "めしあがる",
-        "おとうさん"
+        "口",
+        "点",
+        "日"
       ]
     }
   ],
@@ -105,45 +109,27 @@
     {
       "pattern": "gram:hazu-ga-nai",
       "examples": [
-        "sent:tatoeba-11692639",
         "sent:tatoeba-81586",
-        "sent:tatoeba-141784"
+        "sent:tatoeba-141784",
+        "sent:tatoeba-195794"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:hazu-da",
       "examples": [
-        "sent:tatoeba-235244",
+        "sent:tatoeba-519050",
         "sent:tatoeba-198131",
         "sent:tatoeba-11173182"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-12",
+      "pattern": "gram:to-iu",
       "examples": [
-        "sent:tatoeba-75665",
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
+        "sent:tatoeba-80587",
+        "sent:tatoeba-83621",
+        "sent:tatoeba-80590"
       ],
       "strand": "language-focused"
     },
@@ -155,37 +141,55 @@
         "sent:tatoeba-75192"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-2",
+      "examples": [
+        "sent:tatoeba-171785",
+        "sent:tatoeba-171784",
+        "sent:tatoeba-171787"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Que ele tem razão é a minha opinião.",
-      "answer_key": "彼が正しいというのは私の意見です。",
+      "prompt_pt": "O trem deve sair daqui a cinco minutos.",
+      "answer_key": "列車はあと５分で出発するはずです。",
       "accepted_variants": [
-        "彼が正しいというのは私の意見です",
-        "彼が正しいというのは私の意見です。"
+        "列車はあと５分で出発するはずです",
+        "列車はあと５分で出発するはずです。"
       ],
-      "sentence": "sent:tatoeba-119734",
+      "sentence": "sent:tatoeba-77522",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A opinião dele está, no geral, correta.",
-      "answer_key": "彼の意見は大体において正しい。",
+      "prompt_pt": "Ele pode ter perdido o trem.",
+      "answer_key": "列車に乗り遅れたのかもしれない。",
       "accepted_variants": [
-        "彼の意見は大体において正しい",
-        "彼の意見は大体において正しい。"
+        "列車に乗り遅れたのかもしれない",
+        "列車に乗り遅れたのかもしれない。"
       ],
-      "sentence": "sent:tatoeba-118153",
+      "sentence": "sent:tatoeba-77555",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Não tem como estar certo!",
-      "answer_key": "正しいはずがないよ。",
+      "prompt_pt": "O trem era pra chegar às seis.",
+      "answer_key": "列車は６時到着のはずだった。",
       "accepted_variants": [
-        "正しいはずがないよ",
-        "正しいはずがないよ。"
+        "列車は６時到着のはずだった",
+        "列車は６時到着のはずだった。"
       ],
-      "sentence": "sent:tatoeba-11692639",
+      "sentence": "sent:tatoeba-77523",
       "strand": "meaning-output"
     }
   ],
@@ -193,11 +197,11 @@
     "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
     "items": [
       "sent:tatoeba-162311",
-      "sent:tatoeba-79019",
+      "sent:tatoeba-81566",
+      "sent:tatoeba-84069",
+      "sent:tatoeba-226794",
       "sent:tatoeba-9812759",
-      "sent:tatoeba-10117518",
-      "sent:tatoeba-224121",
-      "sent:tatoeba-214616"
+      "sent:tatoeba-10117518"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

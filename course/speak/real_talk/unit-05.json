@@ -7,55 +7,64 @@
     "pt-BR": "Conversa de verdade — parte 5"
   },
   "say_now": [
-    "sent:tatoeba-127148",
-    "sent:tatoeba-423387",
-    "sent:tatoeba-10901570",
-    "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161"
+    "sent:tatoeba-8988161",
+    "sent:tatoeba-118031",
+    "sent:tatoeba-10153751",
+    "sent:tatoeba-234789",
+    "sent:tatoeba-184333"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1420160",
-    "vocab:1278400",
-    "vocab:1313830",
-    "vocab:1381390",
-    "vocab:1271290",
     "vocab:1376760",
     "vocab:1332650",
+    "vocab:1179330",
+    "vocab:1295070",
+    "vocab:1263490",
+    "vocab:1206800",
     "vocab:1499830"
   ],
   "patterns": [
     "gram:gp-33",
     "gram:janai-dewa-nai",
     "gram:mitai-da",
-    "gram:tagaru",
+    "gram:rashii",
     "gram:to-iu",
-    "gram:garu-gatteiru"
+    "gram:tokoro"
   ],
   "kanji_recognition": [
-    "見",
-    "性",
-    "男",
-    "何",
-    "幸",
-    "福"
+    "絵",
+    "確",
+    "景",
+    "写",
+    "心",
+    "正"
   ],
   "shadowing": [
-    "sent:tatoeba-127148",
-    "sent:tatoeba-423387",
-    "sent:tatoeba-10901570",
-    "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161"
+    "sent:tatoeba-8988161",
+    "sent:tatoeba-118031",
+    "sent:tatoeba-10153751",
+    "sent:tatoeba-234789",
+    "sent:tatoeba-184333"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 509,
+  "cumulative_known_vocab": 578,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "cf:n3:5450:1591",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "料金",
+        "動く",
+        "寝る"
+      ]
+    },
     {
       "id": "cf:n3:5503:2178",
       "type": "context_fill",
@@ -63,47 +72,27 @@
       "distractors": [
         "持つ",
         "週間",
-        "拝見"
+        "到着"
       ]
     },
     {
-      "id": "cf:n3:5504:1977",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "放送",
-        "引く",
-        "風景"
-      ]
-    },
-    {
-      "id": "pp:n3:1868",
-      "type": "paraphrase",
-      "via": "phrase",
-      "distractors": [
-        "あっ",
-        "会話",
-        "余り"
-      ]
-    },
-    {
-      "id": "kr:n3:1388",
+      "id": "kr:n3:1393",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ひつよう",
-        "いただく",
-        "けっこう"
+        "いっしょ",
+        "だんせい",
+        "おくれる"
       ]
     },
     {
-      "id": "kr:n4:1037",
+      "id": "kr:n3:1591",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "かいもの",
-        "ともだち",
-        "せいさん"
+        "シャワー",
+        "パソコン",
+        "しつもん"
       ]
     }
   ],
@@ -137,11 +126,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:tagaru",
+      "pattern": "gram:rashii",
       "examples": [
-        "sent:tatoeba-9971758",
-        "sent:tatoeba-163525",
-        "sent:tatoeba-4117192"
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
       ],
       "strand": "language-focused"
     },
@@ -149,77 +138,77 @@
       "pattern": "gram:to-iu",
       "examples": [
         "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
+        "sent:tatoeba-83621",
+        "sent:tatoeba-80590"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:garu-gatteiru",
+      "pattern": "gram:tokoro",
       "examples": [
-        "sent:gen-a0d367f9d037",
-        "sent:gen-2424c6ff626d",
-        "sent:gen-0ce029328959"
+        "sent:gen-ad64679f3372",
+        "sent:gen-9756e3d4a90a",
+        "sent:tatoeba-84696"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Infelizmente, por hoje vamos encerrar por aqui.",
-      "answer_key": "残念ながら今日はこれで終わりにします。",
+      "prompt_pt": "Dizer que a neve é azul é um erro.",
+      "answer_key": "雪が青いというのは誤りだ。",
       "accepted_variants": [
-        "残念ながら今日はこれで終わりにします",
-        "残念ながら今日はこれで終わりにします。"
+        "雪が青いというのは誤りだ",
+        "雪が青いというのは誤りだ。"
       ],
-      "sentence": "sent:tatoeba-169225",
+      "sentence": "sent:tatoeba-142020",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Ficávamos sentados nos aquecendo perto do fogo.",
-      "answer_key": "火にあたりながらすわっていた。",
+      "prompt_pt": "Como é o sabor do especial?",
+      "answer_key": "スペシャルというのはどんな味ですか。",
       "accepted_variants": [
-        "火にあたりながらすわっていた",
-        "火にあたりながらすわっていた。"
+        "スペシャルというのはどんな味ですか",
+        "スペシャルというのはどんな味ですか。"
       ],
-      "sentence": "sent:tatoeba-186754",
+      "sentence": "sent:tatoeba-214502",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A vida não é só diversão e brincadeira.",
-      "answer_key": "人生は楽しみや遊びばかりでない。",
+      "prompt_pt": "Não é que o caso tenha acabado.",
+      "answer_key": "事件は終わったわけではない。",
       "accepted_variants": [
-        "人生は楽しみや遊びばかりでない",
-        "人生は楽しみや遊びばかりでない。"
+        "事件は終わったわけではない",
+        "事件は終わったわけではない。"
       ],
-      "sentence": "sent:tatoeba-143985",
+      "sentence": "sent:tatoeba-10901570",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
+      "sent:tatoeba-423387",
+      "sent:tatoeba-127148",
+      "sent:tatoeba-143985",
       "sent:tatoeba-211899",
-      "sent:tatoeba-216263",
       "sent:tatoeba-120314",
-      "sent:tatoeba-123542",
-      "sent:tatoeba-1227292",
-      "sent:tatoeba-198643"
+      "sent:tatoeba-123542"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
+    "language-focused": 58,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 29,
     "fluency": 6
   }
 }

@@ -7,47 +7,49 @@
     "pt-BR": "Isto, aquilo, quanto custa — parte 5"
   },
   "say_now": [
+    "sent:tatoeba-74146",
     "sent:tatoeba-149750",
     "sent:tatoeba-76061",
     "sent:tatoeba-149971",
     "sent:jec-1593",
-    "sent:tatoeba-9240812",
-    "sent:tatoeba-137738"
+    "sent:tatoeba-9240812"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:2020680",
     "vocab:1318610",
     "vocab:1191730",
     "vocab:1473740",
-    "vocab:1283190",
-    "vocab:1412890",
+    "vocab:1468060",
     "vocab:1554820",
+    "vocab:1251100",
     "vocab:1282490",
     "vocab:1012980"
   ],
   "patterns": [
-    "gram:dake"
+    "gram:dake",
+    "gram:demo"
   ],
   "kanji_recognition": [
+    "経",
+    "高",
+    "時",
+    "年",
     "自",
-    "分",
-    "力",
-    "家",
-    "外",
-    "郊"
+    "分"
   ],
   "shadowing": [
+    "sent:tatoeba-74146",
     "sent:tatoeba-149750",
     "sent:tatoeba-76061",
     "sent:tatoeba-149971",
     "sent:jec-1593",
-    "sent:tatoeba-9240812",
-    "sent:tatoeba-137738"
+    "sent:tatoeba-9240812"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 67,
+  "cumulative_known_vocab": 70,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -68,17 +70,17 @@
       "distractors": [
         "他",
         "間",
-        "何"
+        "時"
       ]
     },
     {
-      "id": "cf:n4:4914:811",
+      "id": "cf:n4:3522:846",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "話",
-        "靴",
-        "何"
+        "他",
+        "年",
+        "靴"
       ]
     },
     {
@@ -87,8 +89,8 @@
       "via": "new-word",
       "distractors": [
         "スリッパ",
-        "しつもん",
-        "けっこう"
+        "けっこう",
+        "くださる"
       ]
     },
     {
@@ -96,9 +98,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "たかい",
         "おれい",
-        "こんな"
+        "こんな",
+        "あいだ"
       ]
     }
   ],
@@ -106,8 +108,7 @@
     "gram:nakereba-naranai",
     "gram:dake-de",
     "gram:gp-150",
-    "gram:nara",
-    "gram:noni"
+    "gram:nara"
   ],
   "drills": [
     {
@@ -116,6 +117,15 @@
         "sent:tatoeba-4767",
         "sent:tatoeba-5057",
         "sent:tatoeba-78717"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:demo",
+      "examples": [
+        "sent:tatoeba-4781",
+        "sent:tatoeba-85538",
+        "sent:tatoeba-74951"
       ],
       "strand": "language-focused"
     }
@@ -167,15 +177,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
   }
 }

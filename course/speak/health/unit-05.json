@@ -7,85 +7,85 @@
     "pt-BR": "Emergência e saúde — parte 5"
   },
   "say_now": [
+    "sent:tatoeba-10587764",
     "sent:jec-1326",
+    "sent:tatoeba-145398",
     "sent:tatoeba-5147343",
     "sent:tatoeba-3454872",
-    "sent:tatoeba-198568",
-    "sent:tatoeba-190909",
-    "sent:tatoeba-10901645"
+    "sent:tatoeba-198568"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1002610",
     "vocab:1228560",
+    "vocab:1308090",
     "vocab:1479890",
     "vocab:1599400",
     "vocab:1600280",
-    "vocab:1241490",
-    "vocab:1218380",
-    "vocab:1006780"
+    "vocab:1218380"
   ],
   "patterns": [
-    "gram:naide-kudasai",
-    "gram:darou",
     "gram:gp-12",
-    "gram:gp-17"
+    "gram:gp-17",
+    "gram:ndesu",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "急",
-    "子",
-    "出",
-    "熱",
-    "危",
-    "前"
+    "休",
+    "今",
+    "痛",
+    "日",
+    "腹",
+    "急"
   ],
   "shadowing": [
+    "sent:tatoeba-10587764",
     "sent:jec-1326",
+    "sent:tatoeba-145398",
     "sent:tatoeba-5147343",
     "sent:tatoeba-3454872",
-    "sent:tatoeba-198568",
-    "sent:tatoeba-190909",
-    "sent:tatoeba-10901645"
+    "sent:tatoeba-198568"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 367,
+  "cumulative_known_vocab": 405,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:863",
+      "id": "so:n3:761",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:223:1315",
+      "id": "cf:n3:157:1430",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "人",
-        "三",
-        "私"
+        "船",
+        "数",
+        "園"
       ]
     },
     {
-      "id": "cf:n4:3802:1315",
+      "id": "cf:n4:1917:1094",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "君",
-        "箸",
-        "力"
+        "八",
+        "方",
+        "暇"
       ]
     },
     {
-      "id": "kr:n3:1746",
+      "id": "kr:n4:1094",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しんぶん",
-        "はじめる",
-        "テーブル"
+        "ど",
+        "め",
+        "に"
       ]
     },
     {
@@ -93,41 +93,23 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "タイプ",
         "いれる",
-        "おおい",
-        "おれい"
+        "おおい"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-128",
-    "gram:you-ni-you-na"
+    "gram:kyuu-ni",
+    "gram:tara"
   ],
   "drills": [
     {
-      "pattern": "gram:naide-kudasai",
-      "examples": [
-        "sent:tatoeba-2006378",
-        "sent:tatoeba-1200727",
-        "sent:tatoeba-6704205"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:gp-12",
       "examples": [
-        "sent:tatoeba-75665",
         "sent:tatoeba-84959",
-        "sent:tatoeba-78451"
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
       ],
       "strand": "language-focused"
     },
@@ -137,6 +119,24 @@
         "sent:tatoeba-124633",
         "sent:tatoeba-172639",
         "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ndesu",
+      "examples": [
+        "sent:gen-d354f1465606",
+        "sent:tatoeba-80973",
+        "sent:tatoeba-137685"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     }
@@ -176,12 +176,12 @@
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
-      "sent:tatoeba-10587764",
-      "sent:tatoeba-203344",
       "sent:jec-3163",
+      "sent:tatoeba-203344",
       "sent:tatoeba-83003",
-      "sent:tatoeba-189575",
-      "sent:tatoeba-171774"
+      "sent:tatoeba-226387",
+      "sent:tatoeba-79502",
+      "sent:tatoeba-11270411"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

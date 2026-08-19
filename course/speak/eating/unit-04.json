@@ -7,47 +7,51 @@
     "pt-BR": "Comer e beber fora — parte 4"
   },
   "say_now": [
+    "sent:tatoeba-179391",
     "sent:tatoeba-10617667",
     "sent:tatoeba-5220",
     "sent:tatoeba-13440729",
-    "sent:tatoeba-182254",
-    "sent:tatoeba-9819543",
-    "sent:tatoeba-187939"
+    "sent:tatoeba-83169",
+    "sent:tatoeba-182254"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1451750",
     "vocab:1360010",
     "vocab:1597890",
-    "vocab:1547330",
+    "vocab:1514990",
     "vocab:1524720",
     "vocab:1329590",
+    "vocab:1215810",
+    "vocab:1358490",
+    "vocab:1245470",
     "vocab:1231690",
     "vocab:1378990",
     "vocab:1602340"
   ],
   "patterns": [
-    "gram:ga-hoshii"
+    "gram:totemo"
   ],
   "kanji_recognition": [
-    "食",
-    "寝",
-    "作",
-    "昼",
-    "日",
-    "飯"
+    "間",
+    "関",
+    "気",
+    "魚",
+    "空",
+    "係"
   ],
   "shadowing": [
+    "sent:tatoeba-179391",
     "sent:tatoeba-10617667",
     "sent:tatoeba-5220",
     "sent:tatoeba-13440729",
-    "sent:tatoeba-182254",
-    "sent:tatoeba-9819543",
-    "sent:tatoeba-187939"
+    "sent:tatoeba-83169",
+    "sent:tatoeba-182254"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 115,
+  "cumulative_known_vocab": 122,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -57,18 +61,33 @@
       "via": "phrase"
     },
     {
-      "id": "so:n5:4186",
-      "type": "sentence_order",
-      "via": "phrase"
+      "id": "cf:n4:208:1302",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "聞く",
+        "時間",
+        "願う"
+      ]
     },
     {
-      "id": "cf:n5:4186:383",
+      "id": "cf:n4:3494:1302",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "出来る",
-        "昼ご飯",
-        "小さい"
+        "来る",
+        "言う",
+        "去年"
+      ]
+    },
+    {
+      "id": "kr:n4:1001",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなす",
+        "ねだん",
+        "ちから"
       ]
     },
     {
@@ -80,42 +99,22 @@
         "まいにち",
         "スリッパ"
       ]
-    },
-    {
-      "id": "kr:n4:847",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たべる",
-        "こんな",
-        "あまり"
-      ]
-    },
-    {
-      "id": "cf:n3:5061:1921",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "聞く",
-        "お礼",
-        "思う"
-      ]
     }
   ],
   "patterns_chunked": [
     "gram:kara-tsukuru",
-    "gram:doushite",
     "gram:gp-36",
     "gram:te-iru",
-    "gram:te-kara"
+    "gram:te-kara",
+    "gram:temo"
   ],
   "drills": [
     {
-      "pattern": "gram:ga-hoshii",
+      "pattern": "gram:totemo",
       "examples": [
-        "sent:tatoeba-1484951",
-        "sent:tatoeba-13126478",
-        "sent:tatoeba-1213043"
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947",
+        "sent:tatoeba-5092"
       ],
       "strand": "language-focused"
     }
@@ -132,16 +131,6 @@
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A relação entre o ar e o ser humano é igual à relação entre a água e o peixe.",
-      "answer_key": "空気と人間との関係は水と魚との関係と同じだ。",
-      "accepted_variants": [
-        "空気と人間との関係は水と魚との関係と同じだ",
-        "空気と人間との関係は水と魚との関係と同じだ。"
-      ],
-      "sentence": "sent:tatoeba-179391",
-      "strand": "meaning-output"
-    },
-    {
       "prompt_pt": "Hoje à noite não posso ir ao restaurante com você.",
       "answer_key": "今晩あなたと一緒にレストランにいけません。",
       "accepted_variants": [
@@ -150,32 +139,42 @@
       ],
       "sentence": "sent:tatoeba-236798",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Fui tomar uma cerveja com uns amigos.",
+      "answer_key": "私は友達とビールを飲みに行った。",
+      "accepted_variants": [
+        "私は友達とビールを飲みに行った",
+        "私は友達とビールを飲みに行った。"
+      ],
+      "sentence": "sent:tatoeba-5329",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
-      "sent:tatoeba-11270411",
-      "sent:tatoeba-672326",
-      "sent:tatoeba-143825",
       "sent:tatoeba-2633467",
       "sent:tatoeba-10657609",
-      "sent:tatoeba-10899775"
+      "sent:tatoeba-226845",
+      "sent:tatoeba-226844",
+      "sent:tatoeba-10899775",
+      "sent:tatoeba-171644"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
   }
 }

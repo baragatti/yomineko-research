@@ -8,11 +8,11 @@
   },
   "say_now": [
     "sent:tatoeba-212666",
+    "sent:tatoeba-190909",
+    "sent:tatoeba-10901645",
     "sent:tatoeba-214052",
     "sent:tatoeba-121897",
-    "sent:tatoeba-79502",
-    "sent:tatoeba-83950",
-    "sent:tatoeba-168168"
+    "sent:tatoeba-83950"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,80 +20,82 @@
     "vocab:1265070",
     "vocab:1444680",
     "vocab:1237410",
+    "vocab:1241490",
+    "vocab:1006780",
     "vocab:1244310",
     "vocab:1602060"
   ],
   "patterns": [
+    "gram:naide-kudasai",
     "gram:gp-149",
-    "gram:ka-shira",
-    "gram:to-iu",
-    "gram:gp-15"
+    "gram:darou",
+    "gram:naide"
   ],
   "kanji_recognition": [
     "危",
     "橋",
-    "飲",
-    "苦",
-    "薬",
-    "上"
+    "医",
+    "煙",
+    "禁",
+    "君"
   ],
   "shadowing": [
     "sent:tatoeba-212666",
+    "sent:tatoeba-190909",
+    "sent:tatoeba-10901645",
     "sent:tatoeba-214052",
     "sent:tatoeba-121897",
-    "sent:tatoeba-79502",
-    "sent:tatoeba-83950",
-    "sent:tatoeba-168168"
+    "sent:tatoeba-83950"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 372,
+  "cumulative_known_vocab": 412,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n4:1104",
+      "id": "so:n3:863",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:3432:840",
+      "id": "kr:n3:1746",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "はじめる",
+        "テーブル"
+      ]
+    },
+    {
+      "id": "kr:n5:353",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かりる",
+        "だいぶ",
+        "あそぶ"
+      ]
+    },
+    {
+      "id": "cf:n3:3585:2453",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "古い",
-        "大体",
-        "出す"
+        "事",
+        "八",
+        "物"
       ]
     },
     {
-      "id": "cf:n4:3469:1132",
+      "id": "cf:n3:3586:2453",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "雨",
-        "駅",
-        "鍵"
-      ]
-    },
-    {
-      "id": "kr:n4:1240",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "しょくどう",
-        "ひさしぶり",
-        "さいちゅう"
-      ]
-    },
-    {
-      "id": "kr:n4:1246",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "あがる",
-        "おくる",
-        "あびる"
+        "市",
+        "分",
+        "雪"
       ]
     }
   ],
@@ -103,63 +105,43 @@
   ],
   "drills": [
     {
+      "pattern": "gram:naide-kudasai",
+      "examples": [
+        "sent:tatoeba-2006378",
+        "sent:tatoeba-1200727",
+        "sent:tatoeba-6704205"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-149",
       "examples": [
         "sent:tatoeba-77812",
         "sent:tatoeba-4856",
-        "sent:tatoeba-79091"
+        "sent:tatoeba-83623"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ka-shira",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:tatoeba-80460",
-        "sent:tatoeba-11510681",
-        "sent:tatoeba-12296518"
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:to-iu",
+      "pattern": "gram:naide",
       "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-15",
-      "examples": [
-        "sent:gen-6fe6c769a3a7",
-        "sent:tatoeba-84712",
-        "sent:tatoeba-84720"
+        "sent:tatoeba-125387",
+        "sent:tatoeba-142115",
+        "sent:tatoeba-145933"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Como é perigoso, por favor não vá para lá.",
-      "answer_key": "危ないので、そちらへ行かないでください。",
-      "accepted_variants": [
-        "危ないので、そちらへ行かないでください",
-        "危ないので、そちらへ行かないでください。"
-      ],
-      "sentence": "sent:tatoeba-10901645",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Qualquer médico vai mandar você parar de fumar.",
-      "answer_key": "医者なら誰でも君に禁煙するように言うだろう。",
-      "accepted_variants": [
-        "医者なら誰でも君に禁煙するように言うだろう",
-        "医者なら誰でも君に禁煙するように言うだろう。"
-      ],
-      "sentence": "sent:tatoeba-190909",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Minha garganta está ardendo e estou com um pouco de febre.",
       "answer_key": "喉がひりひりして、ちょっと熱があるんです。",
@@ -169,16 +151,36 @@
       ],
       "sentence": "sent:tatoeba-198568",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É verdade que, quando você passa o resfriado pra outra pessoa, você sara?",
+      "answer_key": "風邪って人にうつすと治るってほんと？",
+      "accepted_variants": [
+        "風邪って人にうつすと治るってほんと",
+        "風邪って人にうつすと治るってほんと？"
+      ],
+      "sentence": "sent:tatoeba-3454872",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Se você tivesse metade de um cérebro, seria perigoso!",
+      "answer_key": "お前は脳の半分があったら，危ない!",
+      "accepted_variants": [
+        "お前は脳の半分があったら，危ない",
+        "お前は脳の半分があったら，危ない!"
+      ],
+      "sentence": "sent:tatoeba-5147343",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
       "sent:jec-1326",
-      "sent:tatoeba-145552",
       "sent:tatoeba-10587764",
-      "sent:tatoeba-203344",
+      "sent:tatoeba-145552",
       "sent:jec-3163",
+      "sent:tatoeba-203344",
       "sent:tatoeba-83003"
     ],
     "seconds_target": 48,
@@ -186,15 +188,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 26,
     "fluency": 6
   }
 }

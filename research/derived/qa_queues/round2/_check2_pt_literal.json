@@ -1,0 +1,53 @@
+{
+  "check": "pt_literal",
+  "role": "independent adversarial check #2",
+  "target": "research/derived/qa_queues/round2/pt_literal.json",
+  "method": "re-derived from research/derived/mined_pt/_accepted.json, batch-01..24.json, _skeletons.json, research/derived/mined_layerb/batch-01..33.json and research/derived/phase6_reauthored/pt_literal_fixes.json. The target's own summary was not relied on.",
+  "verdict": "accept",
+  "mechanical_checks": {
+    "anchors_byte_exact": "18/18 rows: current matches the stored pt_literal in _accepted.json byte for byte. All 18 also resolve in a batch-NN.json file.",
+    "fixes_are_values": "10/10 fixes are complete replacement strings. No instruction shapes, no arrows, no 'should be', no 'Substituir'.",
+    "no_change_integrity": "8/8 no-change rows have current identical to fix. 10/10 fix rows genuinely differ.",
+    "layer_a_untouched": "No jp, en or pt value is altered. All 18 rows are Tatoeba-sourced Layer A; no sent:gen- row is in scope, so no jp/kana/romaji/token/translation desync is possible from this queue.",
+    "locale_hygiene": "No English in any fix. No pt-PT forms; BR-correct proclisis in 'Para me despedir', 'me e dificil entender', 'nao poderia me ensinar', and BR spellings 'antonimo' and 'beisebol'. No emoji, no em dashes.",
+    "arithmetic": "324 accepted, 21 in pt_literal_fixes.json (all 21 present in accepted, all 21 old values byte-match the stored value, zero overlap with this queue), 303 reviewed, 18 listed, 285 residual. Consistent."
+  },
+  "precedents_verified": {
+    "84243": "stored jp is 部屋から大きな音が聞こえていた, and pt_literal_fixes.json carries it to 'estava audivel'. Cited correctly by 84210.",
+    "84219": "stored pt_literal is exactly 'Quanto ao quarto, criancas em grande quantidade existiam'. Cited correctly by 84220.",
+    "84132": "stored jp is 部屋をいそいでかたづけてほしいの (を, not は), repaired to the bare-fronting shape. Cited correctly by 78366.",
+    "78158": "'Quanto a viagem' to 'Quanto a viagem' with crase. Cited correctly by 84174.",
+    "78177": "'consulte com' to 'consulte-se com'. The reflexive precedent cited by 79287 is real.",
+    "81566": "repaired to 'O lado de ter acreditado e bom, viu'. The shape 4738 defers to is real."
+  },
+  "independent_corroboration": {
+    "source": "research/derived/mined_layerb/ (structure_explanation_pt, particles[].function_pt, tokens[].role_pt) - an artifact the target never cites",
+    "78366": "particle at position 1 is recorded as 'marca de sujeito com わかる', token 理由 as 'sujeito de わかる'. Confirms が, so the は formula was wrong. Fix correct.",
+    "78188": "particle at position 3 recorded as 'marca daquilo de que se gosta', explicitly 'com が e nunca com を'. Confirms が. Fix correct.",
+    "79624": "five particles recorded, に as 'marca de destino'; no topic particle anywhere. Confirms the formula invented a は. Fix correct.",
+    "77716": "は at position 7 recorded as 'marca de topico', 反対語 as 'topico da frase'. Confirms the topic marking the fix adds. Fix correct.",
+    "84174": "は at position 5 recorded as 'marca de topico com valor de contraste' on テーブル. Confirms the formula placement was right and only the crase was missing."
+  },
+  "residual_sweeps": {
+    "quanto_a_openings": "110 accepted rows open with a quanto-a formula. Exactly 5 have no は in the jp: 84132 (in pt_literal_fixes.json) and 78188, 79624, 78366, 75187 (all four in this queue). The claim that every surviving formula traces to a real は or a comma-dropped topic holds.",
+    "crase": "Swept all 110. Only 84174 remains uncontracted before an article-taking singular. The bare plurals (quanto a moveis, quanto a assentos reservados), the infinitives, the pronouns, the adverb amanha and the proper noun Hokkaido correctly take no crase.",
+    "intransitive_as_passive": "Zero unhandled rows pair a passive-shaped pt_literal with an intransitive jp verb.",
+    "editorial_metatext": "74350 is the only row in all 324 containing parentheses, in pt_literal or pt. The claim is exact.",
+    "quantifier": "No other row uses 'um pouco' with a count noun.",
+    "contamination": "No Japanese, English, bracket metatext, em dash or emoji in any of the 324 pt_literal values."
+  },
+  "problems": [
+    {
+      "id": "scope",
+      "severity": "real",
+      "action": "needs-human",
+      "issue": "The declared scope names only batch-01..24.json and _accepted.json, but research/derived/mined_pt/_skeletons.json is a third git-tracked copy carrying pt_literal for all 324 rows, byte-identical to _accepted.json on all 18 queue rows. It was written 2026-08-19 03:46, seventeen minutes before this queue, and it is the file that carries the token arrays feeding mined_layerb. Applying the 10 fixes to the declared scope alone leaves _skeletons.json holding the superseded value. This is not hypothetical: _skeletons.json already holds the stale pre-fix value for 21 of 21 rows in phase6_reauthored/pt_literal_fixes.json, so the same omission has already desynced the file once.",
+      "affects": ["84174","84210","84383","84220","79287","78366","78188","79624","77716","74350"],
+      "note": "The ten fixes themselves are sound and should be kept. What needs a human decision is which files the applier writes, and whether _skeletons.json should also be refreshed for the 21 earlier fixes it is already stale on."
+    }
+  ],
+  "rows_confirmed": {
+    "fix": ["84174","84210","84383","84220","79287","78366","78188","79624","77716","74350"],
+    "no_change": ["78975","84217","84236","75187","84224","78962","4738","84212"]
+  }
+}

@@ -7,109 +7,125 @@
     "pt-BR": "Comer e beber fora — parte 6"
   },
   "say_now": [
-    "sent:jec-2741",
-    "sent:tatoeba-197915",
-    "sent:tatoeba-175925",
-    "sent:jec-1168",
+    "sent:tatoeba-191220",
+    "sent:tatoeba-147790",
+    "sent:tatoeba-201917",
+    "sent:tatoeba-162347",
     "sent:tatoeba-231327",
-    "sent:tatoeba-11038484"
+    "sent:jec-2741"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1432920",
+    "vocab:1598550",
+    "vocab:1203250",
+    "vocab:1579080",
     "vocab:1275640",
-    "vocab:1355850",
-    "vocab:1358490",
     "vocab:1175570",
-    "vocab:1510790",
+    "vocab:1257240",
     "vocab:1172660",
-    "vocab:1155090",
-    "vocab:1526960",
-    "vocab:1590770",
     "vocab:1472630",
-    "vocab:1333550",
-    "vocab:1591420",
-    "vocab:1227370"
+    "vocab:1155060",
+    "vocab:1421900"
   ],
   "patterns": [
-    "gram:gp-32",
-    "gram:tte"
+    "gram:itashimasu",
+    "gram:gp-62",
+    "gram:gp-32"
   ],
   "kanji_recognition": [
-    "運",
-    "口",
-    "女",
-    "水",
-    "彼",
-    "飲"
+    "以",
+    "下",
+    "注",
+    "通",
+    "文",
+    "出"
   ],
   "shadowing": [
-    "sent:jec-2741",
-    "sent:tatoeba-197915",
-    "sent:tatoeba-175925",
-    "sent:jec-1168",
+    "sent:tatoeba-191220",
+    "sent:tatoeba-147790",
+    "sent:tatoeba-201917",
+    "sent:tatoeba-162347",
     "sent:tatoeba-231327",
-    "sent:tatoeba-11038484"
+    "sent:jec-2741"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 139,
+  "cumulative_known_vocab": 143,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:232",
+      "id": "so:n3:207",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:428:923",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "此れ",
-        "知る",
-        "時間"
-      ]
-    },
-    {
-      "id": "cf:n4:2062:923",
+      "id": "cf:n5:2778:92",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "無い",
-        "自分",
-        "パン"
+        "彼",
+        "何",
+        "私"
       ]
     },
     {
-      "id": "kr:n4:1006",
-      "type": "kanji_reading",
+      "id": "cf:n5:3370:214",
+      "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "その",
-        "ころ",
-        "もう"
+        "外",
+        "話",
+        "係"
       ]
     },
     {
-      "id": "kr:n4:1090",
+      "id": "kr:n4:1083",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "さかな",
-        "くすり",
-        "かわり"
+        "よやく",
+        "ねがう",
+        "あがる"
+      ]
+    },
+    {
+      "id": "kr:n4:796",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなし",
+        "ほしい",
+        "できる"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-128",
-    "gram:you-ni-you-na",
-    "gram:tara",
-    "gram:gp-16"
+    "gram:nakute-wa-naranai",
+    "gram:no-naka-de",
+    "gram:nara"
   ],
   "drills": [
+    {
+      "pattern": "gram:itashimasu",
+      "examples": [
+        "sent:tatoeba-10982402",
+        "sent:tatoeba-126195",
+        "sent:tatoeba-9226991"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-62",
+      "examples": [
+        "sent:tatoeba-174749",
+        "sent:tatoeba-182548",
+        "sent:tatoeba-174748"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-32",
       "examples": [
@@ -118,58 +134,49 @@
         "sent:tatoeba-83696"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tte",
-      "examples": [
-        "sent:gen-5412a2ccf468",
-        "sent:gen-48c455d520ba",
-        "sent:gen-000fc485400b"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Naquela época, eu não gostava de cerveja.",
-      "answer_key": "私は、そのころビールが嫌いだった。",
+      "prompt_pt": "Durante a viagem, a gente quase não conseguiu comer arroz.",
+      "answer_key": "旅行中はほとんど米は食べられなかった。",
       "accepted_variants": [
-        "私は、そのころビールが嫌いだった",
-        "私は、そのころビールが嫌いだった。"
+        "旅行中はほとんど米は食べられなかった",
+        "旅行中はほとんど米は食べられなかった。"
       ],
-      "sentence": "sent:tatoeba-162347",
+      "sentence": "sent:tatoeba-78125",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Vamos comer lá fora em vez de dentro da barraca.",
-      "answer_key": "テントの中ではなくて外で食べよう。",
+      "prompt_pt": "É difícil comer com hashis (pauzinhos)?",
+      "answer_key": "お箸で食べるのは難しいですか？",
       "accepted_variants": [
-        "テントの中ではなくて外で食べよう",
-        "テントの中ではなくて外で食べよう。"
+        "お箸で食べるのは難しいですか",
+        "お箸で食べるのは難しいですか？"
       ],
-      "sentence": "sent:tatoeba-201917",
+      "sentence": "sent:tatoeba-8775094",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Preciso comer antes de sair.",
-      "answer_key": "出かける前に食べなくてはならない。",
+      "prompt_pt": "Uma grande canoa avançava cortando a água.",
+      "answer_key": "大きなカヌーが水をきって進んでいた。",
       "accepted_variants": [
-        "出かける前に食べなくてはならない",
-        "出かける前に食べなくてはならない。"
+        "大きなカヌーが水をきって進んでいた",
+        "大きなカヌーが水をきって進んでいた。"
       ],
-      "sentence": "sent:tatoeba-147790",
+      "sentence": "sent:tatoeba-137747",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
-      "sent:tatoeba-191220",
-      "sent:tatoeba-8775094",
       "sent:tatoeba-202470",
       "sent:tatoeba-182254",
       "sent:tatoeba-13440729",
-      "sent:tatoeba-10617667"
+      "sent:tatoeba-10617667",
+      "sent:tatoeba-179391",
+      "sent:tatoeba-5329"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
