@@ -7,6 +7,51 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-07 (aa) — I3 IS ZERO ACROSS THE WHOLE BANK. Every known-defect queue is now applied, and two
+> roadmap items moved from "planned" to "built and live in the app".**
+>
+> - **I3 (concat token romaji == sentence romaji): 0 violations / 5,889 sentences.** The last 9 were
+>   READING disputes, not romanization. In all nine the token READING was already right and the ROMAJI
+>   was stale — all nine already satisfied I1 and I2, so the records themselves held the answer.
+>   Decided: 17日 is a date read じゅうなな; 13-vs-30 is じゅうさん/さんじゅう not per-digit; 結納品 uses
+>   ゆい; 辛い here is からい not つらい; 入れる is はいれる (POTENTIAL of 入る, licensed by が and the
+>   Layer-A English "enter"); 何 before を/言おう/考え is なに. Five needed the sentence romaji fixed too
+>   — corpus counts proved those artifacts, not conventions (15/17 っけ spell kke, 510/512 って spell tte,
+>   and the only 4 sentences with doubled ASCII punctuation were all in this set).
+> - **Layer-A pairing queue resolved (33 rows).** Headline finding worth keeping: **ingestion linked
+>   nothing wrong.** All 54 stored jp are byte-exact upstream and all 54 stored en are byte-exact with a
+>   row genuinely linked to that same source. The drift is UPSTREAM Tatoeba/JEC translation quality.
+>   12 unlink-en, 5 relink-en to a verbatim upstream row (each re-verified to be linked to the same
+>   jp_id — relinking to another sentence's row would be worse than the defect), 16 flagged as authentic
+>   but loose in `research/derived/layer_a_link_quality.json` and NEVER edited, since rewriting a loose
+>   pairing is exactly the op that was blocked.
+> - **6 escalated sentences re-authored by RE-DISSECTION.** All six were TEACHING their defect: で with
+>   an existence predicate (its own structure paragraph said で marks where existence happens),
+>   third-person 〜たい, 私のお兄さん to an outsider, 外国に輸入 against a pt-BR that said "do exterior",
+>   毛 for head hair, 以下 in kana inside the gp-93 sentence teaching 以下. Layer-B carried by surface
+>   (31 tokens survived); the 7 new slots were SELECTED from the bank's existing glosses rather than
+>   authored. Zero gaps, so they still satisfy dissection_tier "full".
+> - **ROADMAP C BUILT: conjugation exercise bank, 18,524 items, zero AI** (`corpus/exercises/`, which did
+>   not exist). Derived entirely from `corpus/conjugations`. **Distractors are other forms of the SAME
+>   word** — a distractor from a different verb would be eliminable from the stem alone. Live at
+>   `/pratica/conjugacao`, replacing a tile that served ONE hardcoded question. Verified without the
+>   answer key: option positions 1/2/3/4 score 3/4/2/1, summing to exactly 10.
+> - **ROADMAP D step 1 BUILT: kanji per-reading grouping.** 630 kanji, 4,305 words grouped. 生 splits
+>   い.きる / う.まれる / セイ / ショウ; 人 splits ジン from ニン. Three corrections were needed:
+>   nanori excluded (the あ nanori of 日 was swallowing 明日), okurigana matched from its own field (not
+>   embedded with a dot), and readings keyed by (reading, okurigana) or the three い entries shared a
+>   bucket. Step 2 (pt-BR note per reading) is RUNNING -> `research/derived/kanji_reading_notes/`.
+> - **Two hard validators added this session:** `validate_furigana` (promoted from advisory) and
+>   `validate_conjugation_exercises`, whose load-bearing check is that every `correct` still matches
+>   corpus/conjugations — that is what keeps the drill bank DERIVED rather than a frozen copy.
+> - **Open:** 2 needs-human pairing rows; `gram:gp-115` forms[0] (れる is the godan PASSIVE, no kana
+>   suffix exists for the potential; registry convention would store a form NAME like 可能形 — needs
+>   sign-off); 1 needs-human romaji row (入れる vocab link is wrong either way and the replacement is a
+>   policy call); listening audio (owner voice-over); R58 controlled read-aloud (blocked on that audio).
+
+---
+
+
 > **2026-08-06 (z) — ROUND-2 VERIFICATION KILLED 24 OF 28 PROPOSED RE-DISSECTION FIXES. Applying that
 > queue unverified would have been a mistake. Everything that survived is applied; gate green.**
 >
