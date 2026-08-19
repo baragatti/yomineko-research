@@ -1,6 +1,6 @@
 # Corpus — Grammar points
 
-_Generated 2026-08-06. `label`/`explanation`/`formation`/`nuance` are locale-objects (pt-BR, Layer C, needs_review)._
+_Generated 2026-08-19. `label`/`explanation`/`formation`/`nuance` are locale-objects (pt-BR, Layer C, needs_review)._
 
 | key | pattern | level | explanation |
 |-----|---------|-------|-------------|
@@ -375,7 +375,7 @@ _Generated 2026-08-06. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | n3-bakari | ～ばかり | n3 | authored |
 | n3-beki-da | ～べきだ | n3 | authored |
 | n3-chatta | ～ちゃった | n3 | authored |
-| n3-da-mono-da | ～だものだ | n3 | authored |
+| n3-da-mono-da | ～(ん)だもの | n3 | authored |
 | n3-dake-shika | ～だけしか | n3 | authored |
 | n3-dakedo | だけど | n3 | authored |
 | n3-desu-kara | ですから～ | n3 | authored |
@@ -437,7 +437,7 @@ _Generated 2026-08-06. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | n3-ni-yotte | ～によって | n3 | authored |
 | n3-no | ～の～ | n3 | authored |
 | n3-okagede | ～おかげで | n3 | authored |
-| n3-ppai | ～っぱい | n3 | authored |
+| n3-ppai | ～でいっぱい | n3 | authored |
 | n3-ppanashi | ～っぱなし | n3 | authored |
 | n3-rareta | ～られた | n3 | authored |
 | n3-rashii | ～らしい | n3 | authored |
