@@ -35,9 +35,23 @@
 >   and POS never enter the decision. The speaking path works around it (see entry (t)); **the corpus
 >   still carries it.** Fixing it moves n5/n4 level counts, so it is its own task with its own re-export.
 > - Also reported: token romaji stale in **336 of 5,565** sentences.
-> - **STILL RUNNING at session end:** the 61-agent Phase-6 re-authoring workflow over the 399 skipped
->   lesson findings, writing durable partials to `research/derived/phase6_reauthored/`. Check that
->   directory first next session.
+> - **PHASE-6 RE-AUTHORING LANDED** (61 agents, 7.9M tokens) -> `research/derived/phase6_reauthored/`.
+>   436 rows: **292 fix, 141 no-change, 3 needs-human**, and **292/292 anchors verify byte-exact** against
+>   `research/derived/lessons/<slug>.json`. That was the whole problem originally: 269 of the 399 were
+>   skipped for "anchor not found" because the first pass paraphrased its quotes.
+>   - **141 no-change is a result, not a shortfall.** A third of the backlog was complaints that do not
+>     survive contact with the file. Agents were told no-change is a good outcome and used it.
+>   - **Zero instruction-shaped fixes got through** — worth noting in a session that also found two
+>     shipped explanations still carrying edit orders.
+>   - **Cross-batch collision, must be respected on apply:** batch-07 and batch-08 both rewrite
+>     `les:n3-limites-01 exercises[0].answer`. In order, batch-07 invalidates batch-08's `choices[3]`
+>     anchor while batch-08's `choices[2]` still lands, leaving **two identical distractors** in one
+>     multiple-choice item. Batch-07's row is dropped; batch-08 resolves both.
+>   - `pt_literal_fixes.json` (21 rows) is PARTIAL: the literal-sweep agent died on the session limit.
+> - **NOTHING FROM ANY QUEUE IS APPLIED.** All of it is staged with byte-exact anchors. Applying the
+>   lesson findings needs `fable5_lessons_apply_source.py` (structure-aware, with the tag-balance and
+>   tag-span guards) followed by `load_lessons.py`. Applying furigana goes to the same lesson JSON, NOT
+>   the DB.
 >
 > ---
 >
