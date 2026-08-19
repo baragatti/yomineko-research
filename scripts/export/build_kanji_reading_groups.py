@@ -83,7 +83,16 @@ def main() -> int:
         for w in words:
             kana = hira(w.get("kana") or "")
             best, best_len = None, 0
-            for r in reads:
+            # Two passes. STRICT requires the word to end with the reading's own okurigana, which is what
+            # separates 生.きる from 生.かす. But it is too strong on its own: a nominalised or compound
+            # verb ends with something else entirely (遊び does not end in ぶ, 逃げ出す does not end in
+            # げる, 備え付ける does not end in え), and those fell into `irregular` — 135 of them, all
+            # flagged by the authoring pass. So fall back to reading-only matching when nothing strict
+            # matches, rather than discarding the word.
+            for strict in (True, False):
+              if best:
+                break
+              for r in reads:
                 # NANORI are name-readings. Letting them group ordinary words is actively wrong: the
                 # あ nanori of 日 swallowed 明日 (あした), which is a 熟字訓 like 今日 and belongs in
                 # `irregular`. Only on/kun readings group words.
@@ -114,9 +123,10 @@ def main() -> int:
                 # okurigana, or all three collapse to い and every one of them claims 生きる, printing
                 # the same compound list three times under three different readings.
                 oku = hira(r.get("okurigana") or "")
-                if oku and not (w.get("headword") or "").endswith(oku):
+                oku_exact = bool(oku) and (w.get("headword") or "").endswith(oku)
+                if oku and not oku_exact and strict:
                     continue
-                score = len(b) + (len(oku) * 2)      # an okurigana match is stronger evidence
+                score = len(b) + (len(oku) * 2 if oku_exact else 0)   # exact okurigana is stronger
                 if score > best_len:
                     best, best_len = f"{r.get('reading')}|{r.get('okurigana') or ''}", score
             if best:
