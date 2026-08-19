@@ -1,0 +1,6 @@
+{
+  "file": "n5_usage",
+  "reviewed": 0,
+  "findings": [],
+  "summary": "Empty range. corpus/exam_banks/n5_usage.json is a flat JSON array of exactly 52 items (indices 0-51, ids us:n5:3 through us:n5:100). The assigned slice 60..199 lies entirely past the end of the array, so there was nothing to audit in this partition; the whole bank falls inside part 1's 0..59 range. No items read, no defects reported. This is an out-of-bounds shard, not a clean bill of health for the file."
+}

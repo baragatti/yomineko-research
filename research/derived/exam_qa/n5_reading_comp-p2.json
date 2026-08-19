@@ -1,0 +1,6 @@
+{
+  "file": "n5_reading_comp",
+  "reviewed": 0,
+  "findings": [],
+  "summary": "Empty range. corpus/exam_banks/n5_reading_comp.json is a flat JSON array of exactly 43 items (indices 0-42, first id rc:n5:n5-adjetivos-04-01, last id rc:n5:n5-verbos-06-01). The assigned shard covers indices 60..199, which lies entirely past the end of the array, so zero items were in scope and zero were audited. No defects reported and none implied: the whole bank falls inside part 1's range (0..59), which audits all 43 items. Nothing here indicates a problem with the file itself - only that the shard split assumed a larger bank than exists."
+}

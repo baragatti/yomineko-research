@@ -1,0 +1,6 @@
+{
+  "file": "n5_paraphrase",
+  "reviewed": 0,
+  "findings": [],
+  "summary": "Empty range - no work performed. corpus/exam_banks/n5_paraphrase.json is a flat JSON array of exactly 52 items (valid indices 0..51, ids pp:n5:3 through pp:n5:100, all 52 ids unique, no nested sub-item arrays). The assigned slice 60..199 lies entirely past the end of the array, so zero items were in scope for this part-2 pass. This is a range-partitioning artifact, not a defect in the bank: the file was sliced as if it held 200 items. Items 0..51 are presumably covered by the part-1 pass; if not, they remain unaudited and should be reassigned to a 0..51 range."
+}
