@@ -7,6 +7,42 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (z) — ROUND-2 VERIFICATION KILLED 24 OF 28 PROPOSED RE-DISSECTION FIXES. Applying that
+> queue unverified would have been a mistake. Everything that survived is applied; gate green.**
+>
+> - **Verdicts flipped** 28 fix / 2 no-change / 9 needs-human -> **4 fix / 19 no-change / 16 needs-human.**
+>   - **10 were already landed** by `fix_homophone_vocab_links.py` earlier the same session, so their
+>     anchors no longer exist. An applier treating a missing anchor as failure would have reported ten
+>     false errors and invited someone to "fix" them.
+>   - **10 rewrite the Japanese and are REFUSED.** Our appliers do byte-exact FIELD replacement, not
+>     re-dissection: writing `jp` alone leaves the stored kana, romaji, token array, particles and
+>     structure paragraph describing a sentence that no longer exists. **This is the general rule for any
+>     queue that proposes a jp edit.**
+>   - Four of those were mere orthography preference (此処 vs ここ, 様 vs よう) with no convention behind
+>     them, and the verifier MEASURED that re-dissecting from the proposed spellings would STRIP the
+>     target link the sentence was generated to teach: `dissect.py` registers ここ under entry 196 and
+>     よう under 955, and all 58 ここ-spelled / 119 よう-spelled tokens carry those ids.
+>   - **6 name a real defect but need a coordinated re-author of one whole sentence** (jp, kana, romaji,
+>     token, both translations, prose). Three of them change WHO the sentence is about, so the stored
+>     pt-BR would describe the old referent. Escalated in `qa_queues/round2/redissect_verified.json`.
+> - **APPLIED:** the 4 survivors (resolved on the PARSED row by slug/mode/position/column — anchors are
+>   NOT globally unique: `"inflection": "attributive"` occurs 1,549 times, `"vocab_id": 79` prefix-matches
+>   790); 7 more `gram:you-da` fields (formation and nuance still taught the VOLITIVO in both locales,
+>   register said "casual" against its own "mais formal e escrita" — now evidential, `["plain","written"]`);
+>   10 `pt_literal` corrections including two more intransitives glossed as passives and three rows
+>   applying the は-formula "Quanto a X" to が/に.
+> - **Applier lesson:** an empty fix with a NON-empty anchor is a DELETION, not a missing value. The guard
+>   conflated them and rejected two legitimate you-da deletions. Only empty-AND-anchorless is "no value".
+> - **OPEN, quantified, not fixed:** 336 of 5,889 sentences have stale token romaji (I3), e.g.
+>   `sent:tatoeba-223377` spells the topic particle `ha` in the sentence romaji and `wa` in the token.
+>   Also open: the 6 escalated sentence re-authors, 7 rows still genuinely needing a human (incl.
+>   `gram:gp-115` forms[0], where れる is the godan PASSIVE and no kana suffix exists for the potential —
+>   the registry convention is to store a form NAME like 可能形, which needs sign-off), and the remaining
+>   `needs-human` rows across queues.
+
+---
+
+
 > **2026-08-06 (y) — THE THIN-STAGE FIX IS DONE. All 12 speaking stages are complete; 324 mined
 > sentences are in the bank with full Layer-B depth and the gate is green.**
 >
