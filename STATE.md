@@ -7,6 +7,36 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-06 (y) — THE THIN-STAGE FIX IS DONE. All 12 speaking stages are complete; 324 mined
+> sentences are in the bank with full Layer-B depth and the gate is green.**
+>
+> - **Path is now 72 units / 432 phrases (100% real) / 584 vocab**, with 359 checkpoint items, 277
+>   drills, 423 fluency items, 213 production items. `lodging`, `past_stories` and `opinions` each reach
+>   6 units. `validate_speaking_path`: 72 units, 0 FAIL.
+> - **What the blocker actually was:** not the sentences, the DEPTH the bank demands. Every existing
+>   sentence is `dissection_tier "full"`, which `validate.py` reads as a promise of a gloss on every
+>   content token, an explanation on every particle, and a structure paragraph. The trial ingest with
+>   only translations produced **2,756 errors**; with the authored Layer-B it produced **0**.
+> - **99 agents / 8.7M tokens** authored 1,549 glosses, 986 particle entries, 324 structure paragraphs
+>   against the real dissection skeletons (`scripts/ingest/prep_mined_skeletons.py` lays out the exact
+>   token positions `persist()` keys on, plus three real shipped sentences as a house-voice reference).
+>   Two checkers per batch: 210 problems, **0 critical**. 45 agreed ones applied before ingest.
+> - **Two of those 45 were the false-formation-rule class again:** a note calling のぞいて "sonorizada"
+>   (のぞく is k-final, no voicing — and the same batch correctly used that word for いそぐ→いそいで two
+>   sentences later, so a learner derives *のぞいで), and が described as marking "quem realiza a ação"
+>   in 火が消えた, where 消える is intransitive. **This class keeps recurring; weight it in every review.**
+> - **A defect class worth naming for future authoring passes:** SELF-CONTAINMENT. Several structure
+>   paragraphs referred to "a frase com ね", a different record in the same batch. Each sentence is
+>   stored once and displayed alone, so a cross-reference to a batch neighbour is unresolvable by
+>   construction. Tell authoring agents this up front.
+> - **STILL RUNNING:** the pt_literal sweep + adversarial verification of the 28 re-dissection fixes
+>   (`research/derived/qa_queues/round2/`). Those fixes REWRITE GENERATED JAPANESE, so nothing from that
+>   queue should be applied without reading the verification first — a change there can desync `jp` from
+>   its stored kana, romaji, token surfaces and pt-BR translation.
+
+---
+
+
 > **2026-08-06 (x) — THE STAGED QA BACKLOG IS NOW APPLIED, not just staged. Gate green throughout, and
 > `validate_furigana` is finally a HARD validator.**
 >
