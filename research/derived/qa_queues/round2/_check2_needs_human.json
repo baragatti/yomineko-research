@@ -1,0 +1,65 @@
+{
+ "check": "needs_human_resolved",
+ "role": "independent adversarial check #2",
+ "target": "research/derived/qa_queues/round2/needs_human_resolved.json",
+ "date": "2026-08-19",
+ "method": "Re-derived from the primary sources, not from the target's summary: corpus/grammar/n3.json n4.json n5.json, corpus/vocab/n1..n5.json, corpus/sentences/bank.json (raw bytes and parsed), db/corpus.sqlite, research/datasets/tatoeba/jpn_sentences.tsv.bz2 and eng_sentences.tsv.bz2, research/derived/fable5_validation/verified_reading_overrides.json, scripts/ingest/dissect.py and scripts/validate/validate.py. Every dissector claim was re-run through the project's own Dissector (.venv python, SudachiPy 0.6.11, sudachidict_full) against db/corpus.sqlite.",
+ "verdict": "accept-with-drops",
+ "mechanical_checks": {
+  "anchors_byte_exact": "26/26. The 6 grammar prose anchors match corpus/grammar/n4.json exactly (4 whole-field, 2 tail substrings, each occurring once and each ending the field). The register anchor matches json.dumps of the stored array. The 9 sentence-slug anchors and the 10 JSON-fragment anchors are all byte-exact substrings of corpus/sentences/bank.json, and each addressed path holds the quoted value: gen-0ef54fed8af5 pos4 vocab null, gen-138c8e26cf51 pos4 role null and gloss null, gen-67098aef1bd0 pos2 vocab 1089, gen-a1650baf4ac0 pos3 vocab null, tatoeba-141147 pos5 vocab 1178, tatoeba-223377 pos1 romaji wa and pos2 vocab 257.",
+  "fixes_are_values": "16/16 fix rows carry a value, or an empty string for a deletion. No instruction shapes, no arrows, no 'should be', no 'Substituir'. Applier guidance (8-space indentation, resolve by position) lives in 'why', never in 'fix'.",
+  "layer_a_untouched": "No row writes jp, kana, sentence romaji, reading, surface, lemma or pos. Tatoeba 141147 and 223377 were pulled from jpn_sentences.tsv.bz2 and are byte-identical to the stored jp, confirming the provenance claim. Every gen- jp question is parked at needs-human with an empty fix, so no generated Japanese moves and no jp/kana/romaji/token/translation desync is reachable from this queue.",
+  "locale_hygiene": "No English in any pt-BR fix. No pt-BR in the register enum (plain and written are both established neutral values, 264 and 33 uses across n3/n4/n5). No emoji, no em dashes, no en dashes in any fix.",
+  "completeness": "All 17 source needs-human rows are present and accounted for: 8 from phase4_grammar.json, 9 from redissect.json. Counts arithmetic (7 fix + 3 no-change + 7 needs-human + 9 derived = 26) is exact.",
+  "validator_impact": "scripts/validate/validate.py section 7.2 compares surface, lemma, reading and pos_coarse only, so none of the 16 fixes can trip the tokenization gate. Section 7.6 is a warn, not an error: linking 3725 (n2) into the n3-tagged gen-67098aef1bd0 and 4419 (n2) into the n3-tagged tatoeba-141147 each raises a new level warn. Correct fixes, stale level tags; noted, not blocking."
+ },
+ "reran_dissector": {
+  "row_8_misoshiru": "CONFIRMED. Mode C returns 味噌汁 as one morpheme, reading みそしる, vocab_id null. The cost the row measures is real.",
+  "row_9_shiru": "CONFIRMED. The stored jp returns vocab 3551 for pos4 汁. Only one entry registers the form 汁, so the form table cannot land elsewhere.",
+  "row_10_node": "CONFIRMED. All three variants return の (助詞 準体助詞) plus で (助動詞, lemma だ). No re-run yields ので as one token. Entry 1338 sense 1 is costas / dorso, matching the stored gloss.",
+  "row_13_soushite": "CONFIRMED. 然うして gives 然う (vocab null) plus し plus て; そうして gives そう (vocab 349, 総) plus し plus て. The orthography swap really would introduce a fresh mislink.",
+  "row_14_tameru": "CONFIRMED. pos2 ため with lemma ためる returns 3725 (溜める). Stored 1089 is 為 (ため), the surface-only fallback.",
+  "row_15_kaminoura": "CONFIRMED. 紙の裏を見せてください splits 紙 + の + 裏 and the 裏 token links 79 (内, うち, which registers 裏 among its forms), not the declared target 1088. The escape route really is closed.",
+  "row_16_gakusei_wa_nai": "CONFIRMED. 学生はない gives 8 C tokens with pos7 ない as 形容詞 非自立可能 vocab 462. 学生はいない gives 9, pos7 becoming い (lemma いる, vocab 69) and pos8 ない (助動詞). The renumbering hazard is exactly as described.",
+  "row_17_tokeru": "CONFIRMED. pos3 解け with lemma 解ける returns 2462, whose sense 1 is ser resolvido (problema).",
+  "row_19_tsuitachi": "CONFIRMED. Bare １日 splits into １ (いち) plus 日 (にち); ４月１日 and 来月の１日 both return a single １日 token read ついたち, romaji tsuitachi, and it links 56 (一日, いちにち), not the declared target 401. Both halves of the two-part decision are real.",
+  "row_21_kudaru": "CONFIRMED on the merits. 1178 is 下がる (さがる) and registers 下る; 4419 is 下る (くだる). Exactly 2 tokens corpus-wide carry lemma 下る with link 1178: tatoeba-13492244 pos2 and tatoeba-141147 pos5.",
+  "row_23_konohakono": "CONFIRMED. Mode C returns この plus は plus この. No re-run produces はこ.",
+  "row_24_romaji": "CONFIRMED. verified_reading_overrides.json carries sent:tatoeba-223377 i=1 は with analyzer_reading わ, so the reading was registered and only the romaji is stale. With pos1 ha and the already-queued pos8 naka, the concatenation of the C-token romaji equals the stored sentence romaji konohakonosotowamidoridaganakawaakadearu byte for byte."
+ },
+ "precedents_verified": {
+  "row_0_gp115": "All five load-bearing claims hold. gram:gp-63 stores forms[0] れる byte-identical to gp-115. gp-115's own forms[0] meaning already says the godan potential is the -u to -eru change. forms[].form holds 498 distinct values across n3/n4/n5 and not one contains a Latin letter. gp-127 stores 命令形, ikou-kei-volitional-form stores 意向形, ukemi-kei stores 受身形.",
+  "row_3_row_4_phrasing": "A grande armadilha para brasileiros and The big trap for Brazilians are both the opening of gram:gp-115's nuance, as claimed.",
+  "row_7_written": "written is an established register value, 33 uses, including gram:to-iwarete-iru. The record's own explanation calls ようだ a versão mais formal e escrita de 〜みたいだ, so casual is provably volitional residue.",
+  "row_11_row_12_node": "sent:gen-f919c1c65690 pos6 carries role parte da conjunção ので / part of the conjunction ので and gloss porque, como (junto com o の anterior) / because, since (together with the preceding の), byte-identical to the proposed values. pos4 of the target is 助動詞 with lemma だ, so no particle convention is broken.",
+  "row_18_mode_a": "Confirmed in bank.json: gen-cb6562f41e17 carries its two mode-A subunits (お and 兄さん, both parent position 2) at array indices 0 and 1, ahead of every mode-C row, and gen-67098aef1bd0 has the same shape. The addressing warning is correct and load-bearing.",
+  "row_20_tatoeba_pairing": "Confirmed upstream. jpn 141147 is byte-identical to the stored jp, and eng 273424 is The boat was rolling down the river., byte-identical to the stored translation.en. The ingest is faithful and the disagreement is upstream, exactly as the row says."
+ },
+ "problems": [
+  {
+   "id": "sent:tatoeba-141147#tokens[position=5].vocab_id",
+   "severity": "real",
+   "action": "drop",
+   "issue": "This row is an exact duplicate of a fix that is already live in the queue it was derived from. research/derived/qa_queues/redissect.json row 34 carries the same target (sent:tatoeba-141147), the same anchor (\"vocab_id\": 1178) and the same value (\"vocab_id\": 4419), and the sibling round2 file redissect_verified.json row 34 re-verified it and marked it Keep, still applicable. It is the only one of the nine derived rows that collides with an existing fix row. Applying both files writes the value once and then fails to find the anchor the second time, which is precisely the false-anchor-failure mode redissect_verified.json warns about in its own summary. The fix is correct on the merits and must still land, once, from redissect.json.",
+   "evidence": "Compared all nine derived sentence fix rows against the 28 fix rows of redissect.json on (slug, current, fix). One exact match: this row. Independently confirmed 1178 is 下がる (さがる), 4419 is 下る (くだる), and that exactly 2 tokens corpus-wide carry lemma 下る with link 1178."
+  },
+  {
+   "id": "sent:tatoeba-141147#translation_literal.en",
+   "severity": "real",
+   "action": "needs-human",
+   "issue": "The value is written in a format that exists nowhere else in the corpus on the en side, and the stated justification for it is false. The row argues that mirroring the pt-BR sibling restores locale parity, but parity here does not mean identical punctuation: the two locales have different established conventions for translation_literal. Of the 5,565 en values in corpus/sentences/bank.json, zero use a hyphen-attached role marker, zero contain (path), and 1,670 open with As for. The 27 that do mark the topic write it space-separated with English word order and articles intact, for example sent:tatoeba-157701 I (topic) after a long time (time) visited that city (object). Of the 68 records whose pt-BR literal uses the hyphenated style, all 68 have an en sibling that does not. Applying Boat-(topic) fast-fast river-(path) descending entered. would make it the only en literal of its kind in the bank, and would carry the pt-BR reading of どんどん as fast-fast into en, against the token's own gloss nonstop, more and more, rapidly. The underlying complaint is real and worth keeping: the current en literal paraphrases and silently drops 入った, the very element the record's curation note needs a reviewer to see. Only the wording needs a human, in the en house style.",
+   "evidence": "Swept translation_literal.en across all 5,565 values: 0 matches for a word followed by hyphen and open paren, 0 for (path), 27 for (topic) all space-separated, 1,670 opening with As for. Cross-checked the 68 pt-BR hyphenated records one by one."
+  }
+ ],
+ "checked_and_clean": [
+  "The seven gram:you-da fixes. The volitional contamination is live and untouched in corpus/grammar/n4.json; every anchor is byte-exact; both deletions terminate their field and leave a self-contained close; every clause of the two formation replacements is plain attachment morphology checkable against the record's own 夢のようだ example; the nuance replacements correct the source queue's misfiling of 〜らしい as a visual impression.",
+  "The three no-change verdicts. gen-138c8e26cf51 (both source claims refuted by re-run and by vocab 1338 sense 1), gen-cb6562f41e17 (an addressing warning, not a defect, and the shape is confirmed in the file), tatoeba-141147 (faithful on both sides, verified against the Tatoeba dumps).",
+  "The five surviving needs-human verdicts other than the two rows above. Each is a genuine content or tooling decision, each is packaged with the cost measured rather than assumed, and none writes a value.",
+  "Rows 9, 11, 12, 14, 17, 24 and 25. All seven are correct, all are new (no collision with redissect.json), and all are safe against validate.py."
+ ],
+ "notes": [
+  "Minor, not blocking: row 11 cites 33 の(準体助詞) plus で(だ) pairs in the bank; the true count is 40. The load-bearing half, that 15 of them already fill both role and gloss, is exact.",
+  "Minor, not blocking: row 20 states that no token and no translation may move, and rows 21 and 22 then move a token vocab_id and a translation_literal in that same record. Row 22 draws the distinction (translation.en stays untouched) but row 20 does not, and a reviewer reading the three in order hits an apparent contradiction.",
+  "Out of scope but worth recording: the second member of the 下る to 1178 class, sent:tatoeba-13492244 position 2, is not addressed by any round2 queue."
+ ]
+}

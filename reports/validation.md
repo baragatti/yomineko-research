@@ -88,7 +88,7 @@ _Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P
 ---
 ## Sentence validation (§7)
 
-Validated 5889 sentences — **0 errors, 717 warnings**, 5239 clean.
+Validated 5889 sentences — **0 errors, 718 warnings**, 5238 clean.
 - sentence 12 `大学を出てから10年になります。`:
   - **warn**: lemma 10 not in JMdict-common (may be in full)
 - sentence 20 `１１時になっているよ。`:
@@ -127,6 +127,8 @@ Validated 5889 sentences — **0 errors, 717 warnings**, 5239 clean.
   - **warn**: lemma やあ not in JMdict-common (may be in full)
 - sentence 188 `うちのママはパパと80年代に結婚したの。`:
   - **warn**: lemma 80 not in JMdict-common (may be in full)
+- sentence 194 `船はどんどん川を下って入った。`:
+  - **warn**: sentence level n3 below max component level
 - sentence 268 `われわれはきっと試合に勝てると考えていた。`:
   - **warn**: lemma 勝てる not in JMdict-common (may be in full)
 - sentence 269 `夫は大抵８時には仕事に出かけます。`:
@@ -210,5 +212,3 @@ Validated 5889 sentences — **0 errors, 717 warnings**, 5239 clean.
   - **warn**: lemma いっつ not in JMdict-common (may be in full)
 - sentence 571 `彼らは２日でその古い建物を壊すでしょう。`:
   - **warn**: lemma 2 not in JMdict-common (may be in full)
-- sentence 576 `彼はオートバイを買う目的でお金を貯めている。`:
-  - **warn**: lemma 貯める not in JMdict-common (may be in full)

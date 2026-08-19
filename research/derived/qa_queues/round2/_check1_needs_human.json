@@ -1,0 +1,50 @@
+{
+ "check": "needs-human-round2 / independent adversarial check #1",
+ "target": "research/derived/qa_queues/round2/needs_human_resolved.json",
+ "checked_at": "2026-08-19",
+ "method": "Re-derived from sources rather than from the target's own summary: corpus/grammar/{n3,n4,n5}.json, corpus/vocab/*.json, corpus/sentences/bank.json (raw bytes, not just parsed), the two source queues, research/datasets/tatoeba/{jpn,eng}_sentences.tsv.bz2 and links.tar.bz2, research/derived/fable5_validation/verified_reading_overrides.json, scripts/validate/validate.py, scripts/ingest/dissect.py, and a fresh run of the project's own dissector (.venv SudachiPy 0.6.11 + sudachidict_full against db/corpus.sqlite) on all 15 stored and proposed strings.",
+ "verdict": "accept",
+ "anchors": {
+  "rows_with_anchor": 26,
+  "byte_exact_in_stored_file": 26,
+  "notes": "All 7 gram:you-da anchors are byte-exact against corpus/grammar/n4.json (4 whole-field, 2 substrings of explanation, 1 canonical json.dumps of the register array). All 19 sentence anchors occur byte-exact in the raw bytes of corpus/sentences/bank.json. The expl_pt anchor was correctly extended one character to the left relative to the source queue; without that leading space the deletion would leave a trailing space."
+ },
+ "fixes_are_values": {
+  "violations": 0,
+  "notes": "No fix value contains an instruction verb, an arrow, an em dash, or an emoji. Empty fixes occur only on needs-human rows."
+ },
+ "locale_purity": {
+  "violations": 0,
+  "notes": "pt-BR fixes are pt-BR, en fixes are en, the register fix is neutral English (['plain','written'], an existing 16-record combination)."
+ },
+ "layer_a": {
+  "violations": 0,
+  "notes": "Tatoeba 141147 and 223377 jp confirmed byte-identical to jpn_sentences.tsv.bz2 and untouched. No sent:gen- jp/kana/romaji/token surface is modified by any fix, so no jp-to-kana/romaji/token/translation desync is possible."
+ },
+ "independently_reproduced": [
+  "misoshiru merge: C returns 味噌汁 one token, reading みそしる, vocab_id null, mode-A subunits 味噌 + 汁 (row 8)",
+  "汁 in the stored jp links 3551 (row 9)",
+  "の(準体助詞) + で(助動詞, lemma だ) in all three 背/背中 variants, ので never one token (row 10)",
+  "然うして gives 然う vocab_id null; そうして gives そう vocab_id 349 (総) (row 13)",
+  "ため links 3725 in the stored jp; 1089 is 為 (row 14)",
+  "紙の裏 splits and 裏 links 79 (内), not target 1088 (row 15)",
+  "学生はない = 8 C tokens, position 7 ない/462; 学生はいない = 9 C tokens, position 7 becomes い/69 (row 16)",
+  "解け links 2462, whose sense 1 is ser resolvido (problema) (row 17)",
+  "１日 merges to one token reading ついたち only with a preceding month, and links 56 not target 401 (row 19)",
+  "Tatoeba 141147 links 273424 and 1635626; 273424 is byte-identical to the stored translation.en (row 20)",
+  "1178 is 下がる and registers 下る; 4419 is 下る くだる (row 21)",
+  "このはこの returns この + は + この; the position 1 は reading and position 8 なか overrides are both registered (rows 23, 24)",
+  "Only sent:gen-67098aef1bd0 and sent:gen-cb6562f41e17 carry mode-A rows ahead of the C rows, exactly as the file's addressing warning states",
+  "33 の(準体助詞)+で(だ) pairs exist, 15 already filled, and the proposed role/gloss values are byte-identical to sent:gen-f919c1c65690 (rows 11, 12)",
+  "gram:ikou-kei-volitional-form already carries the volitional formation being removed from gram:you-da, so nothing is orphaned (rows 1, 2)",
+  "validate.py §7.2 compares surface/lemma/reading/pos_coarse only, so the romaji and vocab_id fixes cannot trip the hard gate",
+  "counts reconcile exactly: 8 + 9 = 17 source needs-human rows, all present, 7 + 3 + 7 + 9 = 26 rows"
+ ],
+ "problems": [
+  {
+   "id": "sent:tatoeba-141147#translation_literal.en",
+   "issue": "The defect is real (the stored en paraphrases and drops 入った, which the pt-BR sibling renders) and the anchor is byte-exact, but the replacement adopts an interlinear hyphen-gloss format that appears in 0 of 5,889 translation_literal.en values in corpus/sentences/bank.json, against 1,670 that open with 'As for'. The format exists on the pt-BR side (68 records, including this record's sibling), so the row buys within-record parity at the cost of being the only en literal in the corpus written that way. A convention-preserving value that still renders 入った was available.",
+   "action": "keep"
+  }
+ ]
+}

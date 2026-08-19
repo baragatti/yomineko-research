@@ -1,0 +1,60 @@
+{
+ "check": "redissect",
+ "role": "independent adversarial check #2",
+ "target": "research/derived/qa_queues/round2/redissect_verified.json",
+ "method": "Re-derived from corpus/sentences/bank.json (5,565 records, read both raw and parsed), corpus/vocab/n1..n5.json (7,401 entries), corpus/kanji/, db/corpus.sqlite (token, sentence_vocab, kanji tables), scripts/export/export_corpus.py, scripts/apply_phase4_grammar.py, scripts/fix_homophone_vocab_links.py, scripts/validate/validate_generated_jp.py and the original research/derived/qa_queues/redissect.json. The target's own summary and counts were recomputed, not trusted.",
+ "verdict": "accept",
+ "mechanical_checks": {
+  "anchors_byte_exact": "39/39 checked against the raw bytes of bank.json, scoped to each row's own record. The 4 fix rows all resolve: present exactly once inside their record. bank.json is CRLF on disk, so the three multi-line block anchors (rows 7, 19, 38) match only after newline normalization; all three are needs-human or no-change, so nothing applies through them.",
+  "fixes_are_values": "4/4 fixes are complete replacement values. No instruction verb, no arrow, no 'should be', no 'Substituir'. The 35 non-fix rows all carry an empty fix, and no fix row carries an empty one.",
+  "layer_a_untouched": "No jp, kana, reading or translation is altered anywhere. The three rows on Layer-A records (34, 36, 37) touch token.vocab_id and token.romaji only. All ten of the queue's original jp rewrites are refused: 4 dropped, 6 escalated.",
+  "gen_jp_desync": "Row 26 is the only fix on a sent:gen- record and it changes an analysis label (inflection), not jp. Concatenated split-mode-C surfaces, readings and romaji reproduce the stored jp, kana and romaji in 23 of the 23 queue records, the single exception being sent:tatoeba-223377 romaji, which is exactly what row 35 reports. Row 36 moves that record toward the stored romaji, not away: after it the only residual difference is the position-1 wa-versus-ha that the row 35 escalation covers.",
+  "locale_hygiene": "No pt-BR field is touched. 'terminal' is a neutral-English enum the same record already uses on positions 6 and 7. No English in a pt-BR field, no pt-BR in an enum, no emoji, no em dash, no en dash, no arrow anywhere in the file.",
+  "arithmetic": "39 rows, 4 fix + 19 no-change + 16 needs-human. Against the original queue: 28 fix, 9 needs-human, 2 no-change. The 28 resolve as 4 kept, 10 already-landed, 14 refused; the 9 original needs-human all held plus 7 escalated equals 16. Consistent."
+ },
+ "claims_reverified": {
+  "ten_already_landed": "Rows 1, 11, 15, 17, 23, 25, 27, 29, 31, 32. All ten anchors are genuinely absent from their record, and every stated replacement value is exactly what the record now carries: 138c8e26cf51 pos0 1338, a1650baf4ac0 pos0 257, b2ed6e8bb267 pos5 1358, b7b28dfc0928 pos0 257, 6f1566f1c7de pos3 1199, 986d061ae368 pos4 1356 and pos0 758, bc13250dc26f pos7 1358, efb21932a32f pos4 1199 and pos0 758. The six repoint classes quoted match scripts/fix_homophone_vocab_links.py exactly.",
+  "corpus_wide_counts": "Every quoted statistic reproduces. vocab_id 334 and 1176 occur 0 times; 336 occurs 7 times, all seven reading せい; inflection attributive 1,549; romaji chuu 15; vocab_id 79 151. 58 ここ tokens all on 196 and the 2 此処 tokens on 246. 119 よう tokens with pos_fine 助動詞語幹 all on 955 and 6 様 tokens on 1199. いか tokens 9 on 47 and 5 on 932. 31 C-mode tokens carrying a gloss with no role. 23 distinct records. Only sent:gen-67098aef1bd0 and sent:gen-cb6562f41e17 carry mode-A subunits, both at array indices 0 and 1.",
+  "vocab_targets": "1178 is 下がる さがる n4 and lists 下る among its forms; 4419 is 下る くだる n2 and is the only entry with that headword or kana. 79 is 内 うち n5 and lists 中; 464 is 中 なか n5; the only other なか entry is 2498 (仲) and the only other 中 entry is 306 (ちゅう). Both 79 and 464 are n5, so that repoint moves no level bucket, while 4419 does.",
+  "row_26_linguistics": "jp is 彼は正しい、尤も少し厳しいです. Position 2 closes the clause before the 読点 and the conjunction, position 6 in the same slot is already terminal, and the token's own conjugation_note calls it the dictionary form. 終止形 and 連体形 are homographs for 形容詞.",
+  "escalations": "The six escalated defects are all real in the file. 686faf1ec51d structure_explanation and particles[0] do state that で marks the place where existence happens. b2ed6e8bb267 particles[1] and structure_explanation do teach に as the destination against a translation reading 'importa carros do exterior'. 7dd5dc18aba8 glosses 手の裏 as the back of the hand in both locales and in both translations. aef805c4840d, 8cc2f196d1e9 and cb6562f41e17 each carry the referent through kana, romaji, position 0, both translations, translation_literal, structure_explanation and the particles array.",
+  "stale_limbs": "The three rationale corrections the file makes against the original queue all check out: entry 1338 does carry a second sense glossing costas, sent:gen-67098aef1bd0 position 6 already carries 1358, and sent:gen-cb6562f41e17 position 4 already carries 1338. The one live mislink it keeps, sent:gen-67098aef1bd0 position 2 lemma ためる pointing at entry 1089 (為), is covered by no repoint class."
+ },
+ "problems": [
+  {
+   "id": "apply-target",
+   "severity": "real",
+   "action": "keep",
+   "issue": "The file names corpus/sentences/bank.json as the artifact it verified against and never names db/corpus.sqlite or the re-export step. bank.json is not a source file: scripts/export/export_corpus.py line 381 writes it. Both precedents the file leans on run the other way. scripts/apply_phase4_grammar.py, cited by name as the working shape, opens db/corpus.sqlite and UPDATEs fields, then re-exports; scripts/fix_homophone_vocab_links.py, the commit that makes ten of the no-change verdicts true, also edits the DB. The four values are still live in the DB: token rows for sent:gen-986d061ae368 position 2, sent:tatoeba-141147 position 5 and sent:tatoeba-223377 position 8 hold attributive, 1178, chuu and 79 right now. An applier that follows this file and writes bank.json alone is reverted by the next mandated re-export.",
+   "affects": ["row 26", "row 34", "row 36", "row 37"],
+   "note": "The four findings are correct and should be kept. What the file is missing is the route: the token table addressed by sentence slug, token position and column, then export_corpus.py, then the gate. The file does say the anchors must be resolved on the parsed record and the parsed field, which is half of it, but it supplies the position only in prose and never as an addressable field."
+  },
+  {
+   "id": "sentence-vocab-stale",
+   "severity": "real",
+   "action": "keep",
+   "issue": "Rows 34 and 37 repoint token.vocab_id, but that link is stored in a second place the file never mentions. db/corpus.sqlite sentence_vocab currently carries 1178 for sent:tatoeba-141147 and 79 for sent:tatoeba-223377. scripts/fix_homophone_vocab_links.py had to DELETE and rebuild that whole table after its own repoints, and its docstring says so. sentence_vocab feeds scripts/export/build_exam_banks.py, scripts/ingest/build_readings.py, scripts/ingest/prepare_coverage.py, scripts/ingest/align_jlpt_kanji.py and scripts/validate/completeness_audit.py, so leaving it stale ships a sentence-to-vocab edge pointing at 下がる and 内 into the exam banks and the coverage audit while the token says 下る and 中.",
+   "affects": ["row 34", "row 37"],
+   "note": "Row 34's own caveat about level counts moving is correct and is the same reason this matters: 4419 is n2 on a sentence tagged coverage:n4 whose own level is n3, so the coverage numbers only move if sentence_vocab is rebuilt too."
+  },
+  {
+   "id": "koko-drop-rationale",
+   "severity": "real",
+   "action": "needs-human",
+   "issue": "Rows 6 and 10 are closed as an orthography preference rather than an error, on the same grounds as rows 20 and 30, but the supporting facts run the opposite way for this pair. For 様 the drop is well founded: entry 1199 carries 様 as is_common true, the kanji 様 is taught at n3, and 6 other records already spell it that way. For 此処 the record says otherwise. Entry 246 carries 此処 with is_common false while ここ is is_common true; the kanji 此 has level NULL in the kanji table, meaning it sits outside the 2,131-kanji taught set; and sent:gen-7ca88b215555 and sent:gen-9467d40879f4 are the only two sentences in all 5,565 that contain 此. The file's own 58-versus-2 measurement is the corpus's de facto convention, and it is cited only to argue how a re-parse would fail, never to weigh whether the spelling is a defect. The claim that 此処 is the primary registered form is literally true (is_primary true) but omits that the same entry flags it uncommon.",
+   "affects": ["row 6", "row 10"],
+   "note": "The mechanical half of the drop is sound and I confirmed it: a re-dissection from ここ relinks to 196 (九) and destroys the 246 target link, since all 58 ここ tokens carry 196. So do not apply these as written. The verdict that does not hold is no-change; these belong with the six jp rows the file escalates, as a coordinated re-author of two generated sentences that currently ship an untaught kanji. Nothing here fails a live gate: the hard KANJI check in scripts/validate/validate_generated_jp.py reads the 10,384-row kanji table, which does contain 此, and validate_all.py does not run it."
+  }
+ ],
+ "rows_confirmed": {
+  "fix": [
+   "row 26 sent:gen-986d061ae368 inflection attributive to terminal",
+   "row 34 sent:tatoeba-141147 vocab_id 1178 to 4419",
+   "row 36 sent:tatoeba-223377 romaji chuu to naka",
+   "row 37 sent:tatoeba-223377 vocab_id 79 to 464"
+  ],
+  "no_change_upheld": ["1", "4", "11", "15", "17", "20", "21", "22", "23", "25", "27", "28", "29", "30", "31", "32", "38"],
+  "no_change_disputed": ["6", "10"],
+  "needs_human_upheld": ["0", "2", "3", "5", "7", "8", "9", "12", "13", "14", "16", "18", "19", "24", "33", "35"]
+ }
+}

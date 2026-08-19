@@ -29,7 +29,7 @@ from collections import Counter
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "research" / "derived" / "qa_queues" / "phase4_grammar.json"
+DEFAULT_SRC = ROOT / "research" / "derived" / "qa_queues" / "phase4_grammar.json"
 DB = ROOT / "db" / "corpus.sqlite"
 INSTRUCTION = re.compile(
     r"^(replace|change|set|update|remove|delete|drop|apply|rewrite|trocar|corrigir|substituir)\b"
@@ -45,8 +45,10 @@ REGISTER_OK = {"plain", "casual", "polite", "formal", "humble", "honorific", "wr
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--src", default=str(DEFAULT_SRC),
+                    help="findings file; round-2 files share the same row shape")
     args = ap.parse_args()
-    rows = [r for r in json.loads(SRC.read_text(encoding="utf-8"))["rows"] if r["verdict"] == "fix"]
+    rows = [r for r in json.loads(Path(args.src).read_text(encoding="utf-8"))["rows"] if r["verdict"] == "fix"]
     print(f"{len(rows)} fix rows staged")
     con = sqlite3.connect(DB)
     gid = {s: i for s, i in con.execute("SELECT slug,id FROM grammar_point")}
@@ -63,7 +65,12 @@ def main() -> int:
         i = gid.get(slug)
         if not i:
             skipped.append((r["id"], "unknown grammar point")); continue
-        if not fix or INSTRUCTION.search(fix):
+        # An EMPTY fix with a non-empty anchor is a DELETION, not a missing value: gram:you-da carried
+        # three trailing volitional sentences under an evidential entry, and removing them is the fix.
+        # Only a fix that is empty AND anchorless is "no value supplied"; that would blank the field.
+        if not fix and not cur:
+            skipped.append((r["id"], "empty fix with no anchor would blank the field")); continue
+        if fix and INSTRUCTION.search(fix):
             skipped.append((r["id"], "fix is an instruction, not a value")); continue
         if field == "caution":
             skipped.append((r["id"], "refused: caution is a closed enum")); continue
