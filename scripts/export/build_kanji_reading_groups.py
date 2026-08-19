@@ -51,10 +51,21 @@ def bare(reading: str) -> str:
     return hira(r)
 
 
+def oku_ok(headword: str, r: dict) -> bool:
+    """A reading with okurigana ends the word at the okurigana, not at the reading itself."""
+    o = hira(r.get("okurigana") or "")
+    return bool(o) and headword.endswith(o)
+
+
 def variants(r: str) -> list[str]:
+    """The sound changes a reading undergoes inside a compound."""
     out = [r]
     if r and r[0] in VOICED:
-        out.append(VOICED[r[0]] + r[1:])          # rendaku on the first mora
+        out.append(VOICED[r[0]] + r[1:])          # rendaku: ひ -> び in 誕生日
+    if r.endswith(("つ", "ち", "く", "き")):
+        # 促音便: an on-reading ending in つ/ち/く/き geminates before a voiceless consonant.
+        # Without this, シュツ loses 出発 / 出席 / 出身 (all しゅっ-) to `irregular`.
+        out.append(r[:-1] + "っ")
     return [x for x in out if x]
 
 
@@ -81,7 +92,23 @@ def main() -> int:
                 b = bare(r.get("reading"))
                 if not b:
                     continue
+                # POSITIONAL alignment. Matching the reading anywhere in the kana was wrong and the
+                # authoring pass caught it 142 times: 一人 (ひとり) landed under 人's ひと although that
+                # ひと is 一's reading and 人 sounds り; 三味線 (しゃみせん) landed under 三's み although
+                # 三 sounds しゃ there and the み belongs to 味. A kanji that opens the word must own the
+                # START of the kana, and one that closes it must own the END.
+                hw = w.get("headword") or ""
+                idx = hw.find(k["character"])
+                at_start, at_end = idx == 0, idx == len(hw) - 1
                 if not any(v in kana for v in variants(b)):
+                    continue
+                if at_start and not any(kana.startswith(v) for v in variants(b)):
+                    continue
+                if at_end and not oku_ok(hw, r) and not any(kana.endswith(v) for v in variants(b)):
+                    continue
+                # A leading hyphen marks a BOUND form, used only when the kanji is not word-initial
+                # (出's -で should not claim 出会う).
+                if (r.get("reading") or "").startswith("-") and at_start:
                     continue
                 # A kun reading with OKURIGANA (生.きる, 生.かす, 生.ける) must match the word's own
                 # okurigana, or all three collapse to い and every one of them claims 生きる, printing
@@ -93,7 +120,11 @@ def main() -> int:
                 if score > best_len:
                     best, best_len = f"{r.get('reading')}|{r.get('okurigana') or ''}", score
             if best:
-                groups.setdefault(best, []).append(
+                # example_words can list the same compound twice (日曜日 under ニチ); dedupe by headword.
+                bucket = groups.setdefault(best, [])
+                if any(c["headword"] == w.get("headword") for c in bucket):
+                    continue
+                bucket.append(
                     {"headword": w.get("headword"), "kana": w.get("kana"),
                      "vocab_id": w.get("vocab_id"),
                      "gloss_pt": (w.get("gloss") or {}).get("pt-BR")})
