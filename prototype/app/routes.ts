@@ -16,6 +16,7 @@ export default [
   route("gramatica/:key", "routes/grammarDetail.tsx"),
   route("revisar", "routes/review.tsx"),
   route("pratica", "routes/practice.tsx"),
+  route("pratica/conjugacao", "routes/conjugationDrill.tsx"),
   route("pratica/:mode", "routes/practiceSession.tsx"),
   route("simulado", "routes/exam.tsx"),
   route("simulado/:level", "routes/examPaper.tsx"),

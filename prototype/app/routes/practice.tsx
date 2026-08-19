@@ -13,7 +13,7 @@ const PRACTICES: PracticeMode[] = [
   { mode: "katakana", jp: "カタカナ", t: "Katakana", d: "Estrangeirismos e ênfase.", ic: "abc" },
   { mode: "particles", jp: "は が を に", t: "Partículas", d: "A partícula certa na lacuna.", ic: "link" },
   { mode: "sentence", jp: "わたしは…", t: "Construir frases", d: "Montar a partir dos blocos.", ic: "reorder" },
-  { mode: "conjugation", jp: "食べる → て", t: "Conjugação", d: "Forma て, た, ない e outras.", ic: "swap_calls" },
+  { mode: "conjugacao", jp: "食べる → て", t: "Conjugação", d: "Forma て, た, ない e outras. 18.524 itens reais.", ic: "swap_calls", badge: "real" },
   { mode: "numbers", jp: "1 2 3 / 人", t: "Números", d: "Cardinais e contadores.", ic: "tag" },
 ];
 

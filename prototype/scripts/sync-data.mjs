@@ -163,6 +163,19 @@ async function main() {
     }
   }
 
+  // conjugation drills (corpus/exercises/conjugation/<level>_conjugation.json) -> { level: [items] }.
+  // Server-only, same as the exam banks: the picker samples per attempt and only sampled items render.
+  const conjugationBank = {};
+  const cjDir = path.join(CORPUS, "exercises", "conjugation");
+  if (await exists(cjDir)) {
+    for (const f of (await fs.readdir(cjDir)).filter((x) => x.endsWith(".json"))) {
+      const m = /^(n[1-5])_conjugation\.json$/.exec(f);
+      if (!m) continue;
+      const items = await readJson(path.join(cjDir, f));
+      if (Array.isArray(items) && items.length) conjugationBank[m[1]] = items;
+    }
+  }
+
   let kana = {};
   const kanaFam = path.join(CORPUS, "kana", "families.json");
   if (await exists(kanaFam)) kana = await readJson(kanaFam);
@@ -182,6 +195,7 @@ async function main() {
   await write("kanaStrokes.json", kanaStrokes);
   await write("readings.json", readings);
   await write("examBanks.json", examBanks);
+  await write("conjugationBank.json", conjugationBank);
   await write("speakPath.json", speakPath ?? { stages: [], units: {}, totals: {} });
 
   console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
@@ -189,7 +203,8 @@ async function main() {
     `grammar=${Object.keys(grammar).length} sentences=${Object.keys(sentences).length} ` +
     `readings=${Object.keys(readings).length} ` +
     `examBanks=${Object.entries(examBanks).map(([l, t2]) => `${l}:${Object.values(t2).reduce((a, b) => a + b.length, 0)}`).join(",")} ` +
-    `speak=${speakPath ? `${speakPath.stages.length} stages/${Object.keys(speakPath.units).length} units` : "none"}`);
+    `speak=${speakPath ? `${speakPath.stages.length} stages/${Object.keys(speakPath.units).length} units` : "none"} ` +
+    `conjugation=${Object.entries(conjugationBank).map(([l, v]) => `${l}:${v.length}`).join(",") || "none"}`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
