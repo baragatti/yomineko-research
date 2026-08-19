@@ -8,46 +8,50 @@
   },
   "say_now": [
     "sent:tatoeba-83924",
-    "sent:tatoeba-189575",
     "sent:tatoeba-203287",
     "sent:tatoeba-192750",
     "sent:tatoeba-83003",
-    "sent:tatoeba-85328"
+    "sent:tatoeba-85328",
+    "sent:jec-3163"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1423000",
-    "vocab:1588120",
     "vocab:1510650",
     "vocab:1529390",
     "vocab:1490220",
+    "vocab:1365040",
+    "vocab:1559290",
     "vocab:2842174",
     "vocab:1634500",
+    "vocab:1269060",
     "vocab:1414920"
   ],
   "patterns": [
-    "gram:kana"
+    "gram:te-kuru",
+    "gram:kana",
+    "gram:gp-20"
   ],
   "kanji_recognition": [
     "引",
     "邪",
     "着",
     "風",
-    "雨",
-    "歌"
+    "外",
+    "気"
   ],
   "shadowing": [
     "sent:tatoeba-83924",
-    "sent:tatoeba-189575",
     "sent:tatoeba-203287",
     "sent:tatoeba-192750",
     "sent:tatoeba-83003",
-    "sent:tatoeba-85328"
+    "sent:tatoeba-85328",
+    "sent:jec-3163"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 351,
+  "cumulative_known_vocab": 352,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -62,16 +66,6 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n4:3876:848",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "約束",
-        "有名",
-        "話す"
-      ]
-    },
-    {
       "id": "cf:n4:2310:1325",
       "type": "context_fill",
       "via": "new-word",
@@ -79,6 +73,16 @@
         "今夜",
         "言う",
         "出る"
+      ]
+    },
+    {
+      "id": "cf:n4:2311:1325",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "関係",
+        "張る",
+        "住む"
       ]
     },
     {
@@ -97,58 +101,74 @@
       "via": "new-word",
       "distractors": [
         "あした",
-        "テレビ",
-        "あがる"
+        "いくら",
+        "テレビ"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:gp-128",
-    "gram:no-naka-de",
     "gram:you-ni-you-na",
-    "gram:tara",
-    "gram:you-da"
+    "gram:tara"
   ],
   "drills": [
+    {
+      "pattern": "gram:te-kuru",
+      "examples": [
+        "sent:tatoeba-8736595",
+        "sent:tatoeba-228677",
+        "sent:tatoeba-2999719"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:kana",
       "examples": [
         "sent:gen-a57fa0b2f6c3",
         "sent:gen-f626c3374153",
-        "sent:gen-d1273bc6a657"
+        "sent:gen-72c52ba4dd08"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-20",
+      "examples": [
+        "sent:tatoeba-77564",
+        "sent:tatoeba-95997",
+        "sent:tatoeba-198119"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "É verdade que, quando você passa o resfriado pra outra pessoa, você sara?",
-      "answer_key": "風邪って人にうつすと治るってほんと？",
+      "prompt_pt": "Agora estou me sentindo bem relaxado.",
+      "answer_key": "今とてもゆったりした気分だ。",
       "accepted_variants": [
-        "風邪って人にうつすと治るってほんと",
-        "風邪って人にうつすと治るってほんと？"
+        "今とてもゆったりした気分だ",
+        "今とてもゆったりした気分だ。"
       ],
-      "sentence": "sent:tatoeba-3454872",
+      "sentence": "sent:tatoeba-172775",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Cuide para não pegar resfriado, viu?",
-      "answer_key": "風邪をひかないようにしなさいよ。",
+      "prompt_pt": "Estou com vontade de cantar na chuva.",
+      "answer_key": "雨の中で歌いたい気分だ。",
       "accepted_variants": [
-        "風邪をひかないようにしなさいよ",
-        "風邪をひかないようにしなさいよ。"
+        "雨の中で歌いたい気分だ",
+        "雨の中で歌いたい気分だ。"
       ],
-      "sentence": "sent:tatoeba-83957",
+      "sentence": "sent:tatoeba-189575",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Tomara que você não pegue um resfriado.",
-      "answer_key": "風邪をひきませんように。",
+      "prompt_pt": "Hoje estou me sentindo muito melhor.",
+      "answer_key": "今日はずっと気分がよい。",
       "accepted_variants": [
-        "風邪をひきませんように",
-        "風邪をひきませんように。"
+        "今日はずっと気分がよい",
+        "今日はずっと気分がよい。"
       ],
-      "sentence": "sent:tatoeba-83950",
+      "sentence": "sent:tatoeba-171774",
       "strand": "meaning-output"
     }
   ],
@@ -158,24 +178,24 @@
       "sent:tatoeba-90106",
       "sent:tatoeba-190894",
       "sent:tatoeba-190902",
-      "sent:tatoeba-3263386",
-      "sent:tatoeba-171774",
-      "sent:tatoeba-226765"
+      "sent:tatoeba-226765",
+      "sent:tatoeba-12164913",
+      "sent:tatoeba-1590321"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 28,
     "fluency": 6
   }
 }

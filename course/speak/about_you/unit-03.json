@@ -34,7 +34,8 @@
     "gram:no-ga-suki",
     "gram:gp-89",
     "gram:totemo",
-    "gram:temo"
+    "gram:temo",
+    "gram:gp-14"
   ],
   "kanji_recognition": [
     "好",
@@ -54,7 +55,7 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 256,
+  "cumulative_known_vocab": 255,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -99,9 +100,7 @@
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:gp-14"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:janai-dewa-nai",
@@ -133,9 +132,9 @@
     {
       "pattern": "gram:totemo",
       "examples": [
-        "sent:tatoeba-5092",
         "sent:tatoeba-5074",
-        "sent:tatoeba-4947"
+        "sent:tatoeba-4947",
+        "sent:tatoeba-5092"
       ],
       "strand": "language-focused"
     },
@@ -143,8 +142,17 @@
       "pattern": "gram:temo",
       "examples": [
         "sent:gen-ff6004963148",
-        "sent:gen-a1d5b47d31e9",
-        "sent:tatoeba-5000"
+        "sent:gen-fd723f8599f2",
+        "sent:gen-a1d5b47d31e9"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735",
+        "sent:tatoeba-74036"
       ],
       "strand": "language-focused"
     }
@@ -196,15 +204,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 22,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 33,
     "fluency": 6
   }
 }

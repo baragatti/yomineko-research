@@ -7,164 +7,175 @@
     "pt-BR": "Isto, aquilo, quanto custa — parte 5"
   },
   "say_now": [
-    "sent:tatoeba-217663",
-    "sent:tatoeba-81631",
-    "sent:tatoeba-1484928",
-    "sent:tatoeba-159849",
-    "sent:tatoeba-196365",
-    "sent:tatoeba-196349"
+    "sent:tatoeba-149750",
+    "sent:tatoeba-76061",
+    "sent:tatoeba-149971",
+    "sent:jec-1593",
+    "sent:tatoeba-9240812",
+    "sent:tatoeba-137738"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1416830",
-    "vocab:1522150",
-    "vocab:1521400",
-    "vocab:1456360",
-    "vocab:1001820",
-    "vocab:1199890",
-    "vocab:1415870",
-    "vocab:1610870",
-    "vocab:1176240"
+    "vocab:1318610",
+    "vocab:1191730",
+    "vocab:1473740",
+    "vocab:1283190",
+    "vocab:1412890",
+    "vocab:1554820",
+    "vocab:1282490",
+    "vocab:1012980"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:dake"
+  ],
   "kanji_recognition": [
-    "壊",
-    "買",
-    "本",
-    "読",
-    "悔",
-    "後"
+    "自",
+    "分",
+    "力",
+    "家",
+    "外",
+    "郊"
   ],
   "shadowing": [
-    "sent:tatoeba-217663",
-    "sent:tatoeba-81631",
-    "sent:tatoeba-1484928",
-    "sent:tatoeba-159849",
-    "sent:tatoeba-196365",
-    "sent:tatoeba-196349"
+    "sent:tatoeba-149750",
+    "sent:tatoeba-76061",
+    "sent:tatoeba-149971",
+    "sent:jec-1593",
+    "sent:tatoeba-9240812",
+    "sent:tatoeba-137738"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 70,
+  "cumulative_known_vocab": 67,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n5:4355",
+      "id": "so:n4:3369",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n5:4412",
+      "id": "so:n4:3495",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n5:4355:591",
+      "id": "cf:n4:3369:846",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "靴",
-        "何",
-        "他"
+        "他",
+        "間",
+        "何"
       ]
     },
     {
-      "id": "cf:n5:4412:591",
+      "id": "cf:n4:4914:811",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
         "話",
-        "事",
-        "家"
+        "靴",
+        "何"
       ]
     },
     {
-      "id": "pp:n4:716",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "別",
-        "本",
-        "彼"
-      ]
-    },
-    {
-      "id": "kr:n4:718",
+      "id": "kr:n4:740",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ちから",
-        "どんな",
-        "あいだ"
+        "スリッパ",
+        "しつもん",
+        "けっこう"
+      ]
+    },
+    {
+      "id": "kr:n4:846",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "おれい",
+        "こんな"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:hou-ga-ii",
-    "gram:gp-43",
-    "gram:nowa-da",
-    "gram:gp-13",
-    "gram:gp-81",
-    "gram:yori"
+    "gram:nakereba-naranai",
+    "gram:dake-de",
+    "gram:gp-150",
+    "gram:nara",
+    "gram:noni"
   ],
-  "drills": [],
+  "drills": [
+    {
+      "pattern": "gram:dake",
+      "examples": [
+        "sent:tatoeba-4767",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-78717"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
-      "prompt_pt": "Casas grandes saem caro para morar.",
-      "answer_key": "大きな家はすむのに高くつく。",
+      "prompt_pt": "É melhor você fazer isso agora mesmo, viu.",
+      "answer_key": "今すぐそれをしたほうがいいよ。",
       "accepted_variants": [
-        "大きな家はすむのに高くつく",
-        "大きな家はすむのに高くつく。"
+        "今すぐそれをしたほうがいいよ",
+        "今すぐそれをしたほうがいいよ。"
       ],
-      "sentence": "sent:tatoeba-137738",
+      "sentence": "sent:tatoeba-172832",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Soube que você comprou uma casa, né.",
-      "answer_key": "家を買ったんだってね。",
+      "prompt_pt": "De preferência, o mais barato possível.",
+      "answer_key": "なるべく安いほうがいいです。",
       "accepted_variants": [
-        "家を買ったんだってね",
-        "家を買ったんだってね。"
+        "なるべく安いほうがいいです",
+        "なるべく安いほうがいいです。"
       ],
-      "sentence": "sent:tatoeba-9240812",
+      "sentence": "sent:tatoeba-199061",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Ele comprou uma casa no subúrbio.",
-      "answer_key": "彼が郊外に家を買った",
+      "prompt_pt": "É melhor não fazer isso!",
+      "answer_key": "それをしないほうがいいよ！",
       "accepted_variants": [
-        "彼が郊外に家を買った"
+        "それをしないほうがいいよ",
+        "それをしないほうがいいよ！"
       ],
-      "sentence": "sent:jec-1593",
+      "sentence": "sent:tatoeba-4562312",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-76061",
-      "sent:tatoeba-149750",
       "sent:tatoeba-8748248",
       "sent:tatoeba-3488181",
       "sent:tatoeba-8687007",
-      "sent:tatoeba-2123447"
+      "sent:tatoeba-2123447",
+      "sent:tatoeba-10307857",
+      "sent:tatoeba-160737"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 28,
     "meaning-output": 7,
-    "language-focused": 50,
+    "language-focused": 51,
     "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 22,
     "fluency": 6
   }
 }

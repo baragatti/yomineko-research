@@ -88,46 +88,22 @@ _Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P
 ---
 ## Sentence validation (§7)
 
-Validated 5565 sentences — **0 errors, 1166 warnings**, 4536 clean.
-- sentence 6 `母は外出しています。`:
-  - **warn**: sentence level n4 below max component level
-- sentence 10 `日曜日はのんびりしています。`:
-  - **warn**: sentence level n4 below max component level
+Validated 5565 sentences — **0 errors, 640 warnings**, 4984 clean.
 - sentence 12 `大学を出てから10年になります。`:
   - **warn**: lemma 10 not in JMdict-common (may be in full)
-- sentence 13 `暗くなってからは外出するな。`:
-  - **warn**: sentence level n4 below max component level
-- sentence 15 `オフィスに時間ぴったりについた。`:
-  - **warn**: sentence level n5 below max component level
 - sentence 20 `１１時になっているよ。`:
   - **warn**: lemma 11 not in JMdict-common (may be in full)
-  - **warn**: sentence level n4 below max component level
-- sentence 33 `人生は楽しい。`:
-  - **warn**: sentence level n4 below max component level
 - sentence 35 `人をあざわらうのはよくない。`:
   - **warn**: lemma あざわらう not in JMdict-common (may be in full)
-- sentence 36 `今日はむしろ外出したくない。`:
-  - **warn**: sentence level n4 below max component level
-- sentence 53 `外出しないほうがいいよ。`:
-  - **warn**: sentence level n4 below max component level
-- sentence 61 `ありがとう。これでけっこうです。`:
-  - **warn**: sentence level n5 below max component level
-- sentence 62 `何でもけっこうです。`:
-  - **warn**: sentence level n5 below max component level
-- sentence 69 `一人で行かなくちゃ。`:
-  - **warn**: sentence level n4 below max component level
 - sentence 76 `とりあえず、あたりさわりのない話をしておいたよ。`:
   - **warn**: lemma あたりさわり not in JMdict-common (may be in full)
 - sentence 78 `１万円でたりる？`:
   - **warn**: lemma 1万 not in JMdict-common (may be in full)
-  - **warn**: sentence level n4 below max component level
 - sentence 80 `ログアウトするんじゃなかったよ。`:
   - **warn**: lemma ログアウト not in JMdict-common (may be in full)
 - sentence 82 `10ヶ国語を話せたらどんなにかっこいいだろう！`:
   - **warn**: lemma 10 not in JMdict-common (may be in full)
   - **warn**: lemma 話せる not in JMdict-common (may be in full)
-- sentence 84 `まあ、いいけど。`:
-  - **warn**: sentence level n5 below max component level
 - sentence 90 `５月は４月のあとにくる。`:
   - **warn**: lemma 5 not in JMdict-common (may be in full)
   - **warn**: lemma 4 not in JMdict-common (may be in full)
@@ -139,7 +115,6 @@ Validated 5565 sentences — **0 errors, 1166 warnings**, 4536 clean.
   - **warn**: lemma どすん not in JMdict-common (may be in full)
 - sentence 157 `新しい市の病院を建てる計画が進行中である。`:
   - **warn**: lemma 進行中 not in JMdict-common (may be in full)
-  - **warn**: sentence level n4 below max component level
 - sentence 159 `行けない代わりに、贈り物をおくった。`:
   - **warn**: lemma 行ける not in JMdict-common (may be in full)
 - sentence 164 `試験に通るには６０点取らないといけない。`:
@@ -152,8 +127,6 @@ Validated 5565 sentences — **0 errors, 1166 warnings**, 4536 clean.
   - **warn**: lemma やあ not in JMdict-common (may be in full)
 - sentence 188 `うちのママはパパと80年代に結婚したの。`:
   - **warn**: lemma 80 not in JMdict-common (may be in full)
-- sentence 223 `たまにパソコンが急に切れるんですよ。`:
-  - **warn**: sentence level n4 below max component level
 - sentence 268 `われわれはきっと試合に勝てると考えていた。`:
   - **warn**: lemma 勝てる not in JMdict-common (may be in full)
 - sentence 269 `夫は大抵８時には仕事に出かけます。`:
@@ -190,8 +163,6 @@ Validated 5565 sentences — **0 errors, 1166 warnings**, 4536 clean.
   - **warn**: lemma 2 not in JMdict-common (may be in full)
 - sentence 414 `心熱けれど肉体は弱し。`:
   - **warn**: lemma 弱し not in JMdict-common (may be in full)
-- sentence 428 `パブはビールを飲みに人々が集まる場所だ。`:
-  - **warn**: sentence level n4 below max component level
 - sentence 430 `新しい卒研生は以下の３人に決まりました。`:
   - **warn**: lemma 卒研 not in JMdict-common (may be in full)
   - **warn**: lemma 3 not in JMdict-common (may be in full)
@@ -199,7 +170,6 @@ Validated 5565 sentences — **0 errors, 1166 warnings**, 4536 clean.
   - **warn**: lemma 中位 not in JMdict-common (may be in full)
 - sentence 440 `小鳥たちが森の中でさえずっていた。`:
   - **warn**: lemma さえずる not in JMdict-common (may be in full)
-  - **warn**: sentence level n4 below max component level
 - sentence 443 `1週間以内にお届けします。`:
   - **warn**: lemma 1 not in JMdict-common (may be in full)
 - sentence 444 `ぼくはこの仕事を１週間以内にかたづけたい。`:
@@ -212,7 +182,33 @@ Validated 5565 sentences — **0 errors, 1166 warnings**, 4536 clean.
   - **warn**: lemma 流動体 not in JMdict-common (may be in full)
 - sentence 470 `コンサートに行ければ、彼は喜ぶだろう。`:
   - **warn**: lemma 行ける not in JMdict-common (may be in full)
-- sentence 480 `都合のいいときいつでもいらっしゃい。`:
-  - **warn**: sentence level n4 below max component level
 - sentence 486 `教会の塔の時計が９時を打った。`:
   - **warn**: lemma 9 not in JMdict-common (may be in full)
+- sentence 489 `７月の工業生産は急増した。`:
+  - **warn**: lemma 7 not in JMdict-common (may be in full)
+- sentence 490 `その主な産業は、緑茶の生産だった。`:
+  - **warn**: lemma 主な not in JMdict-common (may be in full)
+- sentence 494 `喉がひりひりして、ちょっと熱があるんです。`:
+  - **warn**: lemma ひりひり not in JMdict-common (may be in full)
+- sentence 512 `その枝はたわんだが、折れなかった。`:
+  - **warn**: lemma たわむ not in JMdict-common (may be in full)
+- sentence 519 `最初から最後までうっとりしてた。`:
+  - **warn**: lemma うっとり not in JMdict-common (may be in full)
+- sentence 526 `数学を１時間ほど勉強していたら、眠くなった。`:
+  - **warn**: lemma 1 not in JMdict-common (may be in full)
+- sentence 542 `安全用パーテーションに体・手・指が入れるか？`:
+  - **warn**: lemma パーテーション not in JMdict-common (may be in full)
+- sentence 551 `ピアノ弾ける男子ってかっこいいと思う。`:
+  - **warn**: lemma 弾ける not in JMdict-common (may be in full)
+- sentence 560 `口の周りにケチャップがべったり付いてるよ。`:
+  - **warn**: lemma べったり not in JMdict-common (may be in full)
+- sentence 563 `服に血がべっとり付いてるよ。`:
+  - **warn**: lemma べっとり not in JMdict-common (may be in full)
+- sentence 567 `アヒルとガチョウの区別が付きますか。`:
+  - **warn**: lemma ガチョウ not in JMdict-common (may be in full)
+- sentence 568 `いっつもこの区間は揺れるんだよなあ。`:
+  - **warn**: lemma いっつ not in JMdict-common (may be in full)
+- sentence 571 `彼らは２日でその古い建物を壊すでしょう。`:
+  - **warn**: lemma 2 not in JMdict-common (may be in full)
+- sentence 576 `彼はオートバイを買う目的でお金を貯めている。`:
+  - **warn**: lemma 貯める not in JMdict-common (may be in full)

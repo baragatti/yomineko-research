@@ -7,9 +7,9 @@
     "pt-BR": "Emergência e saúde — parte 5"
   },
   "say_now": [
-    "sent:tatoeba-85337",
     "sent:jec-1326",
     "sent:tatoeba-5147343",
+    "sent:tatoeba-3454872",
     "sent:tatoeba-198568",
     "sent:tatoeba-190909",
     "sent:tatoeba-10901645"
@@ -17,9 +17,9 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1257540",
     "vocab:1228560",
     "vocab:1479890",
+    "vocab:1599400",
     "vocab:1600280",
     "vocab:1241490",
     "vocab:1218380",
@@ -32,17 +32,17 @@
     "gram:gp-17"
   ],
   "kanji_recognition": [
-    "院",
-    "建",
-    "後",
-    "病",
-    "物",
-    "急"
+    "急",
+    "子",
+    "出",
+    "熱",
+    "危",
+    "前"
   ],
   "shadowing": [
-    "sent:tatoeba-85337",
     "sent:jec-1326",
     "sent:tatoeba-5147343",
+    "sent:tatoeba-3454872",
     "sent:tatoeba-198568",
     "sent:tatoeba-190909",
     "sent:tatoeba-10901645"
@@ -85,7 +85,7 @@
       "distractors": [
         "しんぶん",
         "はじめる",
-        "がくせい"
+        "テーブル"
       ]
     },
     {
@@ -95,7 +95,7 @@
       "distractors": [
         "いれる",
         "おおい",
-        "そんな"
+        "おれい"
       ]
     }
   ],
@@ -143,6 +143,16 @@
   ],
   "production": [
     {
+      "prompt_pt": "O que é aquele prédio que fica atrás do hospital?",
+      "answer_key": "病院の後ろにあるあの建物はなんですか。",
+      "accepted_variants": [
+        "病院の後ろにあるあの建物はなんですか",
+        "病院の後ろにあるあの建物はなんですか。"
+      ],
+      "sentence": "sent:tatoeba-85337",
+      "strand": "meaning-output"
+    },
+    {
       "prompt_pt": "O espírito está pronto, mas a carne é fraca.",
       "answer_key": "心熱けれど肉体は弱し。",
       "accepted_variants": [
@@ -161,15 +171,6 @@
       ],
       "sentence": "sent:tatoeba-5001",
       "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Os pais levam os filhos ao hospital logo de cara.",
-      "answer_key": "親はすぐにこどもを病院に連れてくる",
-      "accepted_variants": [
-        "親はすぐにこどもを病院に連れてくる"
-      ],
-      "sentence": "sent:jec-3163",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -177,10 +178,10 @@
     "items": [
       "sent:tatoeba-10587764",
       "sent:tatoeba-203344",
+      "sent:jec-3163",
       "sent:tatoeba-83003",
       "sent:tatoeba-189575",
-      "sent:tatoeba-90106",
-      "sent:tatoeba-190894"
+      "sent:tatoeba-171774"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

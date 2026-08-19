@@ -7,44 +7,43 @@
     "pt-BR": "Quando, que horas, combinar — parte 4"
   },
   "say_now": [
+    "sent:tatoeba-154767",
     "sent:tatoeba-79549",
     "sent:tatoeba-125943",
     "sent:tatoeba-11013726",
     "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418"
+    "sent:tatoeba-171539"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1155120",
     "vocab:1538130",
     "vocab:1483740",
     "vocab:1405800",
     "vocab:1386500",
     "vocab:1542160",
-    "vocab:1373860",
     "vocab:1106400"
   ],
   "patterns": [
-    "gram:owaru",
-    "gram:darou",
-    "gram:gp-142"
+    "gram:gp-142",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "束",
-    "約",
+    "以",
     "間",
+    "私",
     "時",
-    "長",
-    "疲"
+    "上",
+    "待"
   ],
   "shadowing": [
+    "sent:tatoeba-154767",
     "sent:tatoeba-79549",
     "sent:tatoeba-125943",
     "sent:tatoeba-11013726",
     "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418"
+    "sent:tatoeba-171539"
   ],
   "audio": "pending",
   "real_phrases": 6,
@@ -63,13 +62,23 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n4:3427:859",
+      "id": "cf:n4:3684:1118",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "明日",
-        "趣味",
-        "暑い"
+        "悪い",
+        "小説",
+        "関係"
+      ]
+    },
+    {
+      "id": "cf:n4:3372:1118",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "一人",
+        "走る",
+        "地図"
       ]
     },
     {
@@ -83,56 +92,38 @@
       ]
     },
     {
-      "id": "kr:n4:859",
+      "id": "kr:n4:1118",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あたま",
-        "わるい",
-        "あいだ"
-      ]
-    },
-    {
-      "id": "cf:n4:3381:997",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "一緒",
-        "彼の",
-        "家族"
+        "しんぶん",
+        "がっこう",
+        "かのじょ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-110",
     "gram:sou-da-1",
-    "gram:tsuzukeru"
+    "gram:tsuzukeru",
+    "gram:gp-45",
+    "gram:gp-150"
   ],
   "drills": [
-    {
-      "pattern": "gram:owaru",
-      "examples": [
-        "sent:tatoeba-228649",
-        "sent:tatoeba-8727067",
-        "sent:tatoeba-10206436"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-142",
       "examples": [
         "sent:tatoeba-78454",
         "sent:tatoeba-137678",
         "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     }
@@ -183,15 +174,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 23,
     "fluency": 6
   }
 }

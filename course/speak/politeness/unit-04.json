@@ -7,46 +7,49 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 4"
   },
   "say_now": [
+    "sent:tatoeba-8989567",
     "sent:tatoeba-201345",
     "sent:tatoeba-222508",
     "sent:tatoeba-123791",
     "sent:tatoeba-121505",
-    "sent:tatoeba-78723",
-    "sent:tatoeba-76813"
+    "sent:tatoeba-78723"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1548010",
     "vocab:1189130",
     "vocab:1549660",
     "vocab:1451210",
     "vocab:1589730",
     "vocab:1219510",
-    "vocab:1589500",
     "vocab:1220800",
-    "vocab:1219680"
+    "vocab:1219680",
+    "vocab:1374530",
+    "vocab:1593590"
   ],
   "patterns": [
+    "gram:sasete-kudasai",
     "gram:naide-kudasai",
     "gram:te-kudasai",
     "gram:naide",
     "gram:totemo"
   ],
   "kanji_recognition": [
-    "上",
-    "会",
-    "機",
-    "私",
-    "用",
-    "利"
+    "週",
+    "食",
+    "走",
+    "馳",
+    "夕",
+    "来"
   ],
   "shadowing": [
+    "sent:tatoeba-8989567",
     "sent:tatoeba-201345",
     "sent:tatoeba-222508",
     "sent:tatoeba-123791",
     "sent:tatoeba-121505",
-    "sent:tatoeba-78723",
-    "sent:tatoeba-76813"
+    "sent:tatoeba-78723"
   ],
   "audio": "pending",
   "real_phrases": 6,
@@ -55,66 +58,69 @@
   "needs_review": true,
   "checkpoint": [
     {
+      "id": "so:n3:476",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
       "id": "so:n4:3529",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n4:5250:1257",
+      "id": "cf:n4:476:1010",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "プール",
+        "小さな",
+        "危ない"
+      ]
+    },
+    {
+      "id": "cf:n4:475:1010",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "家内",
-        "説明",
-        "何時"
+        "入れる",
+        "起こす",
+        "クラス"
       ]
     },
     {
-      "id": "kr:n4:1257",
+      "id": "kr:n4:1010",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "きれい",
-        "しまる",
-        "かない"
+        "せんぱい",
+        "すうがく",
+        "しょくじ"
       ]
     },
     {
-      "id": "kr:n4:1321",
+      "id": "kr:n4:1087",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "とくべつ",
-        "すずしい",
-        "ちいさな"
-      ]
-    },
-    {
-      "id": "cf:n4:1180:1113",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "死ぬ",
-        "午前",
-        "何故"
-      ]
-    },
-    {
-      "id": "pp:n5:42",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "素晴らしい",
-        "アルバイト",
-        "レストラン"
+        "ため",
+        "いち",
+        "かわ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:te-ita",
-    "gram:gari"
+    "gram:te-ita"
   ],
   "drills": [
+    {
+      "pattern": "gram:sasete-kudasai",
+      "examples": [
+        "sent:tatoeba-3957479",
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:naide-kudasai",
       "examples": [
@@ -145,7 +151,7 @@
     {
       "pattern": "gram:totemo",
       "examples": [
-        "sent:tatoeba-5092",
+        "sent:gen-25da035589e0",
         "sent:tatoeba-5074",
         "sent:gen-b2855c4e58c0"
       ],
@@ -154,16 +160,6 @@
   ],
   "production": [
     {
-      "prompt_pt": "Na próxima semana, por favor, deixe-me oferecer o jantar a você.",
-      "answer_key": "来週、ぜひ夕食をご馳走させてください。",
-      "accepted_variants": [
-        "来週、ぜひ夕食をご馳走させてください",
-        "来週、ぜひ夕食をご馳走させてください。"
-      ],
-      "sentence": "sent:tatoeba-8989567",
-      "strand": "meaning-output"
-    },
-    {
       "prompt_pt": "Por mais tarde que fique, me acorde, por favor.",
       "answer_key": "どんなに遅くなっても起こしてください。",
       "accepted_variants": [
@@ -171,6 +167,16 @@
         "どんなに遅くなっても起こしてください。"
       ],
       "sentence": "sent:tatoeba-199509",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, não desligue o telefone (fique na linha).",
+      "answer_key": "電話を切らずにおいてください。",
+      "accepted_variants": [
+        "電話を切らずにおいてください",
+        "電話を切らずにおいてください。"
+      ],
+      "sentence": "sent:tatoeba-124654",
       "strand": "meaning-output"
     },
     {
@@ -199,15 +205,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "language-focused": 60,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 32,
     "fluency": 6
   }
 }

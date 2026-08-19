@@ -10,25 +10,25 @@
     "sent:tatoeba-83934",
     "sent:tatoeba-83953",
     "sent:tatoeba-90106",
-    "sent:tatoeba-83950",
-    "sent:tatoeba-83957",
-    "sent:tatoeba-3454872"
+    "sent:tatoeba-171774",
+    "sent:tatoeba-189575",
+    "sent:tatoeba-172775"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1426530",
     "vocab:1229840",
+    "vocab:1222590",
     "vocab:1583720",
+    "vocab:1588120",
     "vocab:1169250",
-    "vocab:1599400",
     "vocab:1157090",
     "vocab:1305380"
   ],
   "patterns": [
-    "gram:gp-149",
-    "gram:gp-81",
-    "gram:kana"
+    "gram:totemo",
+    "gram:gp-81"
   ],
   "kanji_recognition": [
     "意",
@@ -42,34 +42,34 @@
     "sent:tatoeba-83934",
     "sent:tatoeba-83953",
     "sent:tatoeba-90106",
-    "sent:tatoeba-83950",
-    "sent:tatoeba-83957",
-    "sent:tatoeba-3454872"
+    "sent:tatoeba-171774",
+    "sent:tatoeba-189575",
+    "sent:tatoeba-172775"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 343,
+  "cumulative_known_vocab": 342,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n4:3849:765",
+      "id": "cf:n4:3700:848",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "子供",
-        "風邪",
-        "以外"
+        "大学",
+        "地図",
+        "郊外"
       ]
     },
     {
-      "id": "cf:n4:5458:765",
+      "id": "cf:n4:3876:848",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "趣味",
-        "小説",
-        "何れ"
+        "約束",
+        "有名",
+        "話す"
       ]
     },
     {
@@ -83,46 +83,38 @@
       ]
     },
     {
-      "id": "kr:n4:875",
+      "id": "kr:n4:848",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "およぐ",
-        "ごぜん",
-        "わたし"
+        "ひだり",
+        "おとこ",
+        "どんな"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:gp-128",
     "gram:nasai",
+    "gram:no-naka-de",
     "gram:you-ni-you-na"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-149",
+      "pattern": "gram:totemo",
       "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-79091"
+        "sent:gen-25da035589e0",
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:gp-81",
       "examples": [
+        "sent:gen-f416c28a18c3",
         "sent:tatoeba-3506554",
-        "sent:gen-e5bc8ecc1fc4",
-        "sent:gen-932e2b76037c"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kana",
-      "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-d1273bc6a657"
+        "sent:gen-20f9f43c9339"
       ],
       "strand": "language-focused"
     }
@@ -162,27 +154,27 @@
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
-      "sent:tatoeba-3263386",
-      "sent:tatoeba-171774",
       "sent:tatoeba-226765",
+      "sent:tatoeba-12164913",
       "sent:tatoeba-1590321",
-      "sent:tatoeba-174391",
-      "sent:tatoeba-1190209"
+      "sent:tatoeba-179620",
+      "sent:tatoeba-1699768",
+      "sent:tatoeba-174391"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 28,
     "meaning-output": 7,
-    "language-focused": 52,
+    "language-focused": 51,
     "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 22,
     "fluency": 6
   }
 }

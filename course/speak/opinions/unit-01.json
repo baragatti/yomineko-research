@@ -7,47 +7,49 @@
     "pt-BR": "Dizer o que você acha — parte 1"
   },
   "say_now": [
+    "sent:tatoeba-79019",
     "sent:tatoeba-162311",
     "sent:tatoeba-209394",
     "sent:tatoeba-11692639",
     "sent:tatoeba-118153",
-    "sent:tatoeba-119734",
-    "sent:tatoeba-5348453"
+    "sent:tatoeba-119734"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1516925",
     "vocab:1394800",
     "vocab:1344970",
     "vocab:1376600",
+    "vocab:1543070",
     "vocab:1476430"
   ],
   "patterns": [
-    "gram:hazu-da",
     "gram:gp-89",
     "gram:to-iu",
     "gram:koto",
-    "gram:da-desu"
+    "gram:da-desu",
+    "gram:gp"
   ],
   "kanji_recognition": [
+    "始",
+    "習",
+    "方",
+    "予",
     "意",
-    "見",
-    "同",
-    "子",
-    "女",
-    "正"
+    "見"
   ],
   "shadowing": [
+    "sent:tatoeba-79019",
     "sent:tatoeba-162311",
     "sent:tatoeba-209394",
     "sent:tatoeba-11692639",
     "sent:tatoeba-118153",
-    "sent:tatoeba-119734",
-    "sent:tatoeba-5348453"
+    "sent:tatoeba-119734"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 464,
+  "cumulative_known_vocab": 466,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -55,6 +57,21 @@
       "id": "so:n3:132",
       "type": "sentence_order",
       "via": "phrase"
+    },
+    {
+      "id": "so:n3:583",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:583:2731",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "車",
+        "夜",
+        "父"
+      ]
     },
     {
       "id": "cf:n5:726:136",
@@ -71,9 +88,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "よしゅう",
         "おおきな",
-        "たのしい",
-        "さいきん"
+        "たのしい"
       ]
     },
     {
@@ -85,31 +102,12 @@
         "しょうせつ",
         "おかあさん"
       ]
-    },
-    {
-      "id": "cf:n4:2022:1113",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "来週",
-        "休み",
-        "今日"
-      ]
     }
   ],
   "patterns_chunked": [
     "gram:hazu-ga-nai"
   ],
   "drills": [
-    {
-      "pattern": "gram:hazu-da",
-      "examples": [
-        "sent:tatoeba-235244",
-        "sent:tatoeba-198131",
-        "sent:tatoeba-11173182"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-89",
       "examples": [
@@ -140,9 +138,18 @@
     {
       "pattern": "gram:da-desu",
       "examples": [
+        "sent:tatoeba-5332",
         "sent:tatoeba-5078",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-75192"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp",
+      "examples": [
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
       ],
       "strand": "language-focused"
     }
@@ -184,25 +191,25 @@
     "items": [
       "sent:tatoeba-10117518",
       "sent:tatoeba-224121",
-      "sent:tatoeba-80049",
       "sent:tatoeba-214616",
-      "sent:tatoeba-1490062",
-      "sent:tatoeba-9969670"
+      "sent:tatoeba-220381",
+      "sent:tatoeba-9969670",
+      "sent:tatoeba-11561274"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 28,
     "fluency": 6
   }
 }

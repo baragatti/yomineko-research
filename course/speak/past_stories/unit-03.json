@@ -12,7 +12,7 @@
     "sent:tatoeba-228002",
     "sent:tatoeba-225041",
     "sent:tatoeba-223949",
-    "sent:jec-0071"
+    "sent:tatoeba-1897537"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -23,16 +23,18 @@
     "vocab:1502390",
     "vocab:1191320",
     "vocab:1382370",
+    "vocab:1576250",
     "vocab:1355810",
     "vocab:1251270",
     "vocab:1001140"
   ],
   "patterns": [
+    "gram:ta-koto-ga-aru",
+    "gram:koto-ga-aru",
+    "gram:gp-12",
+    "gram:koto",
     "gram:kyuu-ni",
-    "gram:da-desu",
-    "gram:gp",
-    "gram:gp-14",
-    "gram:gp-49"
+    "gram:da-desu"
   ],
   "kanji_recognition": [
     "急",
@@ -48,32 +50,32 @@
     "sent:tatoeba-228002",
     "sent:tatoeba-225041",
     "sent:tatoeba-223949",
-    "sent:jec-0071"
+    "sent:tatoeba-1897537"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 389,
+  "cumulative_known_vocab": 390,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "cf:n4:4843:896",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "貴方",
+        "特に",
+        "寝る"
+      ]
+    },
     {
       "id": "cf:n4:3356:852",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "複雑",
         "会社",
-        "余り"
-      ]
-    },
-    {
-      "id": "cf:n4:3357:852",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "週間",
-        "最近",
-        "空気"
+        "余り",
+        "電車"
       ]
     },
     {
@@ -87,20 +89,54 @@
       ]
     },
     {
-      "id": "kr:n4:935",
+      "id": "kr:n4:896",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "からい",
-        "ピアノ",
-        "いたす"
+        "よやく",
+        "むかし",
+        "かえる"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:gp-19"
-  ],
+  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:ta-koto-ga-aru",
+      "examples": [
+        "sent:gen-52a2e8482686",
+        "sent:tatoeba-9387697",
+        "sent:tatoeba-11956323"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-11960481",
+        "sent:tatoeba-235631",
+        "sent:tatoeba-433648"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-75665",
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:kyuu-ni",
       "examples": [
@@ -113,36 +149,9 @@
     {
       "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-75140"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-4708",
         "sent:tatoeba-5332",
-        "sent:tatoeba-5078"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-14",
-      "examples": [
-        "sent:tatoeba-74036",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-76735"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-49",
-      "examples": [
-        "sent:tatoeba-201028",
-        "sent:gen-4b81bb2c6fa6",
-        "sent:tatoeba-201024"
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     }
@@ -194,15 +203,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "language-focused": 60,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 32,
     "fluency": 6
   }
 }

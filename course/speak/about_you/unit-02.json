@@ -35,7 +35,6 @@
     "gram:mitai-da",
     "gram:to-iu",
     "gram:te-iru",
-    "gram:yori",
     "gram:demo"
   ],
   "kanji_recognition": [
@@ -56,7 +55,7 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 245,
+  "cumulative_known_vocab": 244,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -91,8 +90,8 @@
       "via": "new-word",
       "distractors": [
         "いぬ",
-        "より",
-        "くつ"
+        "くつ",
+        "えき"
       ]
     },
     {
@@ -107,7 +106,8 @@
     }
   ],
   "patterns_chunked": [
-    "gram:gp-36"
+    "gram:gp-36",
+    "gram:yori"
   ],
   "drills": [
     {
@@ -138,20 +138,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:yori",
-      "examples": [
-        "sent:tatoeba-105626",
-        "sent:tatoeba-76098",
-        "sent:tatoeba-84481"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:demo",
       "examples": [
+        "sent:tatoeba-4781",
         "sent:tatoeba-74951",
-        "sent:tatoeba-76060",
-        "sent:tatoeba-76884"
+        "sent:tatoeba-76060"
       ],
       "strand": "language-focused"
     }
@@ -203,15 +194,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
-    "meaning-output": 5,
-    "language-focused": 62,
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
     "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 34,
+    "language-focused": 32,
     "fluency": 6
   }
 }

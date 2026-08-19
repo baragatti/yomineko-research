@@ -7,52 +7,50 @@
     "pt-BR": "Conversa de verdade — parte 3"
   },
   "say_now": [
+    "sent:tatoeba-10050266",
+    "sent:tatoeba-107636",
+    "sent:tatoeba-198643",
     "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
-    "sent:tatoeba-120314",
-    "sent:tatoeba-216263",
-    "sent:tatoeba-211899",
-    "sent:tatoeba-213957"
+    "sent:tatoeba-120314"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1172400",
+    "vocab:1260720",
     "vocab:1581930",
     "vocab:1218760",
     "vocab:1313960",
-    "vocab:1195970",
-    "vocab:1339460",
-    "vocab:1216280",
-    "vocab:1454670",
-    "vocab:1198170",
-    "vocab:1505990"
+    "vocab:1216280"
   ],
   "patterns": [
-    "gram:gp-73",
+    "gram:n3-dakedo",
     "gram:mitai-da",
-    "gram:nagara",
+    "gram:rashii",
     "gram:to-iu",
-    "gram:gp-17"
+    "gram:gp-25",
+    "gram:dake"
   ],
   "kanji_recognition": [
-    "君",
-    "弟",
+    "嘘",
+    "女",
     "彼",
-    "喜",
-    "道",
-    "理"
+    "気",
+    "元",
+    "君"
   ],
   "shadowing": [
+    "sent:tatoeba-10050266",
+    "sent:tatoeba-107636",
+    "sent:tatoeba-198643",
     "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
-    "sent:tatoeba-120314",
-    "sent:tatoeba-216263",
-    "sent:tatoeba-211899",
-    "sent:tatoeba-213957"
+    "sent:tatoeba-120314"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 495,
+  "cumulative_known_vocab": 493,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -67,46 +65,44 @@
       ]
     },
     {
-      "id": "kr:n4:1081",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きっと",
-        "むかし",
-        "スーツ"
-      ]
-    },
-    {
-      "id": "kr:n4:713",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いか",
-        "これ",
-        "みず"
-      ]
-    },
-    {
-      "id": "cf:n3:4782:1544",
+      "id": "cf:n4:1893:800",
       "type": "context_fill",
-      "via": "review",
+      "via": "new-word",
       "distractors": [
-        "会話",
-        "学生",
-        "仰る"
+        "家",
+        "方",
+        "雪"
+      ]
+    },
+    {
+      "id": "kr:n4:800",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ふん",
+        "なぜ",
+        "ほん"
+      ]
+    },
+    {
+      "id": "kr:n5:114",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "もんだい",
+        "ただしい",
+        "タクシー"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:shikashi"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:gp-73",
+      "pattern": "gram:n3-dakedo",
       "examples": [
-        "sent:tatoeba-3488178",
-        "sent:tatoeba-2171509",
-        "sent:tatoeba-127272"
+        "sent:tatoeba-3366905",
+        "sent:tatoeba-8575497",
+        "sent:tatoeba-171648"
       ],
       "strand": "language-focused"
     },
@@ -120,11 +116,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:nagara",
+      "pattern": "gram:rashii",
       "examples": [
-        "sent:tatoeba-83211",
-        "sent:tatoeba-83210",
-        "sent:tatoeba-226844"
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
       ],
       "strand": "language-focused"
     },
@@ -138,55 +134,63 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-17",
+      "pattern": "gram:gp-25",
       "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
+        "sent:tatoeba-229345",
+        "sent:tatoeba-8575514",
+        "sent:tatoeba-8575496"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:dake",
+      "examples": [
+        "sent:gen-10932a1910b5",
+        "sent:gen-fec0529a3037",
+        "sent:tatoeba-4767"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Ei, você parece meio sem energia, hein...",
-      "answer_key": "ねえ、元気がないみたいだけど。",
+      "prompt_pt": "Parece que ela está feliz.",
+      "answer_key": "彼女は幸せらしい。",
       "accepted_variants": [
-        "ねえ、元気がないみたいだけど",
-        "ねえ、元気がないみたいだけど。"
+        "彼女は幸せらしい",
+        "彼女は幸せらしい。"
       ],
-      "sentence": "sent:tatoeba-198643",
+      "sentence": "sent:tatoeba-90133",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Parece que ele está bem.",
-      "answer_key": "彼は元気らしい。",
+      "prompt_pt": "Eu acabei de começar a jogar tênis.",
+      "answer_key": "テニスは始めたばかりなんだよ。",
       "accepted_variants": [
-        "彼は元気らしい",
-        "彼は元気らしい。"
+        "テニスは始めたばかりなんだよ",
+        "テニスは始めたばかりなんだよ。"
       ],
-      "sentence": "sent:tatoeba-107636",
+      "sentence": "sent:tatoeba-9938017",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Não tem como ela contar uma mentira.",
-      "answer_key": "彼女が嘘をつくわけがない。",
+      "prompt_pt": "Isso não quer dizer que vão necessariamente desenvolver a mesma doença.",
+      "answer_key": "必ず同じ病気を発症するわけではない",
       "accepted_variants": [
-        "彼女が嘘をつくわけがない",
-        "彼女が嘘をつくわけがない。"
+        "必ず同じ病気を発症するわけではない"
       ],
-      "sentence": "sent:tatoeba-10050266",
+      "sentence": "sent:jec-4908",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-90133",
-      "sent:tatoeba-9938017",
       "sent:tatoeba-80952",
       "sent:tatoeba-100541",
       "sent:tatoeba-774692",
+      "sent:tatoeba-230514",
+      "sent:tatoeba-8579878",
       "sent:tatoeba-235244"
     ],
     "seconds_target": 48,
@@ -196,13 +200,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 58,
+    "language-focused": 57,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 28,
     "fluency": 6
   }
 }

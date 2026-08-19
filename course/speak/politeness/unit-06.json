@@ -7,7 +7,7 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 6"
   },
   "say_now": [
-    "sent:tatoeba-80049",
+    "sent:tatoeba-214616",
     "sent:tatoeba-224121",
     "sent:tatoeba-10117518",
     "sent:tatoeba-9812759",
@@ -17,31 +17,29 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1243320",
+    "vocab:1350600",
     "vocab:1050390",
     "vocab:1346370",
     "vocab:1189360",
     "vocab:1219960",
-    "vocab:1057850",
-    "vocab:1534890"
+    "vocab:1070280",
+    "vocab:1057850"
   ],
   "patterns": [
     "gram:sasete-kudasai",
     "gram:o-kudasai",
-    "gram:te-kudasai",
-    "gram:yori",
-    "gram:tai"
+    "gram:te-kudasai"
   ],
   "kanji_recognition": [
-    "金",
-    "日",
-    "木",
-    "曜",
+    "位",
+    "焼",
+    "中",
     "水",
-    "杯"
+    "杯",
+    "召"
   ],
   "shadowing": [
-    "sent:tatoeba-80049",
+    "sent:tatoeba-214616",
     "sent:tatoeba-224121",
     "sent:tatoeba-10117518",
     "sent:tatoeba-9812759",
@@ -54,21 +52,6 @@
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "so:n4:933",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n5:210",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かたづける",
-        "おとうさん",
-        "めしあがる"
-      ]
-    },
     {
       "id": "kr:n5:48",
       "type": "kanji_reading",
@@ -97,6 +80,26 @@
         "半",
         "足",
         "心"
+      ]
+    },
+    {
+      "id": "pp:n5:42",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "素晴らしい",
+        "アルバイト",
+        "召し上がる"
+      ]
+    },
+    {
+      "id": "kr:n4:1113",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "おおきな",
+        "かのじょ",
+        "はっきり"
       ]
     }
   ],
@@ -130,47 +133,9 @@
         "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:yori",
-      "examples": [
-        "sent:tatoeba-105626",
-        "sent:tatoeba-76098",
-        "sent:tatoeba-79991"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tai",
-      "examples": [
-        "sent:tatoeba-83633",
-        "sent:tatoeba-79200",
-        "sent:tatoeba-83634"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Por favor, faça o bife ao ponto.",
-      "answer_key": "ステーキは中位で焼いてください。",
-      "accepted_variants": [
-        "ステーキは中位で焼いてください",
-        "ステーキは中位で焼いてください。"
-      ],
-      "sentence": "sent:tatoeba-214616",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Meio quilo de carne, por favor.",
-      "answer_key": "肉を半㌔ください。",
-      "accepted_variants": [
-        "肉を半㌔ください",
-        "肉を半㌔ください。"
-      ],
-      "sentence": "sent:tatoeba-1490062",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Eu gostaria que você enviasse este telegrama imediatamente.",
       "answer_key": "この電報をすぐに打っていただきたい。",
@@ -180,14 +145,34 @@
       ],
       "sentence": "sent:tatoeba-220381",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu poderia perguntar o seu nome e o seu endereço?",
+      "answer_key": "お名前とご住所を伺ってもよろしいでしょうか？",
+      "accepted_variants": [
+        "お名前とご住所を伺ってもよろしいでしょうか",
+        "お名前とご住所を伺ってもよろしいでしょうか？"
+      ],
+      "sentence": "sent:tatoeba-9969670",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Com licença, posso me retirar?",
+      "answer_key": "失礼してもよろしいですか。",
+      "accepted_variants": [
+        "失礼してもよろしいですか",
+        "失礼してもよろしいですか。"
+      ],
+      "sentence": "sent:tatoeba-149583",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
     "items": [
-      "sent:tatoeba-9969670",
       "sent:tatoeba-11561274",
       "sent:tatoeba-76813",
+      "sent:tatoeba-1490062",
       "sent:tatoeba-78723",
       "sent:tatoeba-121505",
       "sent:tatoeba-123791"
@@ -197,15 +182,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 24,
     "fluency": 6
   }
 }

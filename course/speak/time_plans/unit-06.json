@@ -7,85 +7,82 @@
     "pt-BR": "Quando, que horas, combinar — parte 6"
   },
   "say_now": [
+    "sent:tatoeba-174391",
+    "sent:tatoeba-1699768",
+    "sent:tatoeba-179620",
     "sent:tatoeba-1590321",
-    "sent:tatoeba-226765",
-    "sent:tatoeba-171774",
-    "sent:tatoeba-184394",
-    "sent:tatoeba-3263386",
-    "sent:tatoeba-1897537"
+    "sent:tatoeba-12164913",
+    "sent:tatoeba-226765"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1268990",
     "vocab:1273270",
     "vocab:1002650",
     "vocab:1002590",
-    "vocab:1222590",
-    "vocab:1307500",
-    "vocab:1293810",
-    "vocab:1576250",
-    "vocab:1384830",
-    "vocab:1477950",
-    "vocab:1269060"
+    "vocab:1577280",
+    "vocab:1454670",
+    "vocab:1243320",
+    "vocab:1546300"
   ],
   "patterns": [
-    "gram:ta-koto-ga-aru",
-    "gram:koto-ga-aru",
     "gram:masen-ka",
     "gram:gp-149",
-    "gram:gp-12",
-    "gram:gp-17"
+    "gram:darou",
+    "gram:gp-17",
+    "gram:garu-gatteiru"
   ],
   "kanji_recognition": [
-    "園",
+    "外",
     "午",
     "後",
-    "公",
-    "行",
-    "今"
+    "出",
+    "上",
+    "暇"
   ],
   "shadowing": [
+    "sent:tatoeba-174391",
+    "sent:tatoeba-1699768",
+    "sent:tatoeba-179620",
     "sent:tatoeba-1590321",
-    "sent:tatoeba-226765",
-    "sent:tatoeba-171774",
-    "sent:tatoeba-184394",
-    "sent:tatoeba-3263386",
-    "sent:tatoeba-1897537"
+    "sent:tatoeba-12164913",
+    "sent:tatoeba-226765"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 333,
+  "cumulative_known_vocab": 331,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:558",
+      "id": "so:n3:775",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n3:665",
+      "id": "so:n4:3623",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n3:665:2453",
+      "id": "cf:n4:3623:1300",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "二",
-        "足",
-        "分"
+        "どんな",
+        "食べる",
+        "小さい"
       ]
     },
     {
-      "id": "cf:n4:3700:848",
+      "id": "cf:n4:369:840",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "大学",
-        "地図",
-        "郊外"
+        "辛い",
+        "安い",
+        "来る"
       ]
     },
     {
@@ -93,42 +90,26 @@
       "type": "paraphrase",
       "via": "new-word",
       "distractors": [
+        "昼",
         "箸",
-        "駅",
-        "雪"
+        "駅"
       ]
     },
     {
-      "id": "kr:n4:1129",
+      "id": "kr:n4:1081",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はこ",
-        "いつ",
-        "かた"
+        "ねむい",
+        "ちかく",
+        "おもう"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:gp-75"
+  ],
   "drills": [
-    {
-      "pattern": "gram:ta-koto-ga-aru",
-      "examples": [
-        "sent:gen-52a2e8482686",
-        "sent:tatoeba-9387697",
-        "sent:tatoeba-11956323"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto-ga-aru",
-      "examples": [
-        "sent:tatoeba-11960481",
-        "sent:tatoeba-235631",
-        "sent:tatoeba-433648"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:masen-ka",
       "examples": [
@@ -148,11 +129,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-12",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:tatoeba-75665",
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451"
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
       ],
       "strand": "language-focused"
     },
@@ -164,19 +145,18 @@
         "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:garu-gatteiru",
+      "examples": [
+        "sent:gen-a0d367f9d037",
+        "sent:gen-2424c6ff626d",
+        "sent:gen-0ce029328959"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "À tarde não quero sair de casa.",
-      "answer_key": "午後は外へ出たくない。",
-      "accepted_variants": [
-        "午後は外へ出たくない",
-        "午後は外へ出たくない。"
-      ],
-      "sentence": "sent:tatoeba-174391",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Eu costumava nadar aqui todos os dias.",
       "answer_key": "私はここで毎日泳いだものだ。",
@@ -196,6 +176,16 @@
       ],
       "sentence": "sent:tatoeba-1190209",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Levei três semanas para me curar da gripe.",
+      "answer_key": "インフルエンザを治すのに三週間かかりました。",
+      "accepted_variants": [
+        "インフルエンザを治すのに三週間かかりました",
+        "インフルエンザを治すのに三週間かかりました。"
+      ],
+      "sentence": "sent:tatoeba-83926",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -203,25 +193,25 @@
     "items": [
       "sent:tatoeba-536767",
       "sent:tatoeba-143418",
+      "sent:tatoeba-154767",
       "sent:tatoeba-9777117",
       "sent:tatoeba-171531",
-      "sent:tatoeba-1037362",
-      "sent:tatoeba-80495"
+      "sent:tatoeba-1037362"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 34,
+    "language-focused": 30,
     "fluency": 6
   }
 }

@@ -7,50 +7,50 @@
     "pt-BR": "Conversa de verdade — parte 4"
   },
   "say_now": [
+    "sent:tatoeba-216263",
+    "sent:tatoeba-211899",
+    "sent:tatoeba-213957",
     "sent:tatoeba-143985",
     "sent:tatoeba-186754",
-    "sent:tatoeba-169225",
-    "sent:tatoeba-127148",
-    "sent:tatoeba-423387",
-    "sent:tatoeba-10901570"
+    "sent:tatoeba-169225"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1195970",
+    "vocab:1339460",
     "vocab:1207250",
     "vocab:1193610",
     "vocab:1304680",
-    "vocab:1420160",
-    "vocab:1278400",
-    "vocab:1313830",
-    "vocab:1542070"
+    "vocab:1198170",
+    "vocab:1542070",
+    "vocab:1505990"
   ],
   "patterns": [
-    "gram:janai-dewa-nai",
+    "gram:gp-73",
     "gram:bakari",
     "gram:nagara",
-    "gram:tagaru",
-    "gram:to-iu"
+    "gram:gp-17"
   ],
   "kanji_recognition": [
-    "楽",
-    "人",
-    "生",
-    "遊",
-    "火",
-    "今"
+    "高",
+    "会",
+    "出",
+    "席",
+    "特",
+    "私"
   ],
   "shadowing": [
+    "sent:tatoeba-216263",
+    "sent:tatoeba-211899",
+    "sent:tatoeba-213957",
     "sent:tatoeba-143985",
     "sent:tatoeba-186754",
-    "sent:tatoeba-169225",
-    "sent:tatoeba-127148",
-    "sent:tatoeba-423387",
-    "sent:tatoeba-10901570"
+    "sent:tatoeba-169225"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 502,
+  "cumulative_known_vocab": 501,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -60,43 +60,23 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n3:5504:1977",
+      "id": "cf:n4:4858:969",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "放送",
-        "引く",
-        "無い"
+        "所",
+        "雨",
+        "頭"
       ]
     },
     {
-      "id": "cf:n3:5534:1868",
+      "id": "cf:n4:3169:969",
       "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "電車",
-        "引く",
-        "休み"
-      ]
-    },
-    {
-      "id": "pp:n3:1868",
-      "type": "paraphrase",
-      "via": "phrase",
-      "distractors": [
-        "あっ",
-        "会話",
-        "余り"
-      ]
-    },
-    {
-      "id": "kr:n4:1037",
-      "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "かいもの",
-        "ともだち",
-        "せいさん"
+        "別",
+        "杯",
+        "店"
       ]
     },
     {
@@ -108,18 +88,29 @@
         "そちら",
         "よてい"
       ]
+    },
+    {
+      "id": "kr:n4:1326",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たいせつ",
+        "うしなう",
+        "でんしゃ"
+      ]
     }
   ],
   "patterns_chunked": [
-    "gram:te-ita"
+    "gram:te-ita",
+    "gram:shikashi"
   ],
   "drills": [
     {
-      "pattern": "gram:janai-dewa-nai",
+      "pattern": "gram:gp-73",
       "examples": [
-        "sent:tatoeba-229343",
-        "sent:tatoeba-228269",
-        "sent:tatoeba-227828"
+        "sent:tatoeba-3488178",
+        "sent:tatoeba-2171509",
+        "sent:tatoeba-127272"
       ],
       "strand": "language-focused"
     },
@@ -142,80 +133,71 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:tagaru",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-9971758",
-        "sent:tatoeba-163525",
-        "sent:tatoeba-4117192"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Sendo assim, eu não pude comparecer.",
-      "answer_key": "そういうわけだから私は出席できなかったのです。",
+      "prompt_pt": "Não é verdade que ele seja o gerente.",
+      "answer_key": "彼が支配人だというのは事実でない。",
       "accepted_variants": [
-        "そういうわけだから私は出席できなかったのです",
-        "そういうわけだから私は出席できなかったのです。"
+        "彼が支配人だというのは事実でない",
+        "彼が支配人だというのは事実でない。"
       ],
-      "sentence": "sent:tatoeba-213957",
+      "sentence": "sent:tatoeba-120314",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A reunião não teve uma presença especialmente boa.",
-      "answer_key": "その会は特に出席がよいわけではなかった。",
+      "prompt_pt": "Com razão você está tão feliz.",
+      "answer_key": "道理で、君が喜ぶわけだ。",
       "accepted_variants": [
-        "その会は特に出席がよいわけではなかった",
-        "その会は特に出席がよいわけではなかった。"
+        "道理で、君が喜ぶわけだ",
+        "道理で、君が喜ぶわけだ。"
       ],
-      "sentence": "sent:tatoeba-211899",
+      "sentence": "sent:tatoeba-123542",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "No entanto, é caro demais.",
-      "answer_key": "しかしながら、高すぎる。",
+      "prompt_pt": "Ele parece até o seu irmão mais novo.",
+      "answer_key": "彼はまるで君の弟みたいだよ。",
       "accepted_variants": [
-        "しかしながら、高すぎる",
-        "しかしながら、高すぎる。"
+        "彼はまるで君の弟みたいだよ",
+        "彼はまるで君の弟みたいだよ。"
       ],
-      "sentence": "sent:tatoeba-216263",
+      "sentence": "sent:tatoeba-1227292",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-120314",
-      "sent:tatoeba-123542",
-      "sent:tatoeba-1227292",
       "sent:tatoeba-198643",
       "sent:tatoeba-107636",
-      "sent:tatoeba-10050266"
+      "sent:tatoeba-10050266",
+      "sent:tatoeba-90133",
+      "sent:tatoeba-9938017",
+      "sent:tatoeba-80952"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 58,
+    "language-focused": 56,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 27,
     "fluency": 6
   }
 }

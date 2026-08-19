@@ -30,7 +30,8 @@
   ],
   "patterns": [
     "gram:gp-142",
-    "gram:gp-81"
+    "gram:gp-81",
+    "gram:gp-14"
   ],
   "kanji_recognition": [
     "学",
@@ -50,7 +51,7 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 277,
+  "cumulative_known_vocab": 276,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -65,8 +66,8 @@
       "via": "phrase",
       "distractors": [
         "味",
-        "手",
-        "外"
+        "外",
+        "内"
       ]
     },
     {
@@ -103,8 +104,7 @@
   "patterns_chunked": [
     "gram:gp-45",
     "gram:gp-120",
-    "gram:nara",
-    "gram:gp-14"
+    "gram:nara"
   ],
   "drills": [
     {
@@ -119,9 +119,18 @@
     {
       "pattern": "gram:gp-81",
       "examples": [
+        "sent:gen-f416c28a18c3",
         "sent:tatoeba-3506554",
-        "sent:gen-e5bc8ecc1fc4",
-        "sent:gen-932e2b76037c"
+        "sent:gen-20f9f43c9339"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735",
+        "sent:tatoeba-74036"
       ],
       "strand": "language-focused"
     }
@@ -171,15 +180,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 27,
     "fluency": 6
   }
 }

@@ -50,7 +50,7 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 470,
+  "cumulative_known_vocab": 472,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -76,7 +76,7 @@
       "distractors": [
         "注意",
         "一寸",
-        "動く"
+        "予習"
       ]
     },
     {
@@ -150,24 +150,14 @@
     {
       "pattern": "gram:da-desu",
       "examples": [
+        "sent:tatoeba-5332",
         "sent:tatoeba-5078",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-75192"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Sobre isto, eu devo estar certo.",
-      "answer_key": "これについては、私は正しいはずです。",
-      "accepted_variants": [
-        "これについては、私は正しいはずです",
-        "これについては、私は正しいはずです。"
-      ],
-      "sentence": "sent:tatoeba-5348453",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Que ele tem razão é a minha opinião.",
       "answer_key": "彼が正しいというのは私の意見です。",
@@ -187,17 +177,27 @@
       ],
       "sentence": "sent:tatoeba-118153",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não tem como estar certo!",
+      "answer_key": "正しいはずがないよ。",
+      "accepted_variants": [
+        "正しいはずがないよ",
+        "正しいはずがないよ。"
+      ],
+      "sentence": "sent:tatoeba-11692639",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
     "items": [
-      "sent:tatoeba-11692639",
       "sent:tatoeba-162311",
+      "sent:tatoeba-79019",
       "sent:tatoeba-9812759",
       "sent:tatoeba-10117518",
       "sent:tatoeba-224121",
-      "sent:tatoeba-80049"
+      "sent:tatoeba-214616"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,

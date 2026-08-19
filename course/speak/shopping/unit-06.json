@@ -7,184 +7,163 @@
     "pt-BR": "Isto, aquilo, quanto custa — parte 6"
   },
   "say_now": [
-    "sent:tatoeba-11540257",
-    "sent:tatoeba-12321669",
-    "sent:tatoeba-204815",
-    "sent:tatoeba-194455",
-    "sent:tatoeba-194478",
-    "sent:tatoeba-235190"
+    "sent:tatoeba-217663",
+    "sent:tatoeba-81631",
+    "sent:tatoeba-1484928",
+    "sent:tatoeba-159849",
+    "sent:tatoeba-196365",
+    "sent:tatoeba-196349"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1013190",
-    "vocab:1012480",
-    "vocab:1315720",
-    "vocab:1516925",
-    "vocab:1327190",
-    "vocab:1155120",
-    "vocab:1175570",
-    "vocab:1501350"
+    "vocab:1416830",
+    "vocab:1522150",
+    "vocab:1521400",
+    "vocab:1456360",
+    "vocab:1199890",
+    "vocab:1415870",
+    "vocab:1610870",
+    "vocab:1176240"
   ],
-  "patterns": [
-    "gram:deshou",
-    "gram:bakari"
-  ],
+  "patterns": [],
   "kanji_recognition": [
-    "安",
-    "方",
-    "雑",
-    "題",
-    "複",
-    "問"
+    "壊",
+    "買",
+    "本",
+    "読",
+    "悔",
+    "後"
   ],
   "shadowing": [
-    "sent:tatoeba-11540257",
-    "sent:tatoeba-12321669",
-    "sent:tatoeba-204815",
-    "sent:tatoeba-194455",
-    "sent:tatoeba-194478",
-    "sent:tatoeba-235190"
+    "sent:tatoeba-217663",
+    "sent:tatoeba-81631",
+    "sent:tatoeba-1484928",
+    "sent:tatoeba-159849",
+    "sent:tatoeba-196365",
+    "sent:tatoeba-196349"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 78,
+  "cumulative_known_vocab": 75,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:684",
+      "id": "so:n5:4355",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n3:847",
+      "id": "so:n5:4412",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n3:684:2731",
+      "id": "cf:n5:4355:591",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "僕",
-        "今",
-        "誰"
+        "靴",
+        "何",
+        "他"
       ]
     },
     {
-      "id": "cf:n4:3372:1118",
+      "id": "cf:n5:4412:591",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "言う",
-        "思う",
-        "洋袴"
+        "話",
+        "事",
+        "家"
       ]
     },
     {
-      "id": "kr:n4:1118",
-      "type": "kanji_reading",
+      "id": "pp:n4:716",
+      "type": "paraphrase",
       "via": "new-word",
       "distractors": [
-        "こうがい",
-        "おおきな",
-        "こんばん"
+        "別",
+        "本",
+        "彼"
       ]
     },
     {
-      "id": "kr:n5:159",
+      "id": "kr:n4:718",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ほか",
-        "あれ",
-        "その"
+        "ちから",
+        "どんな",
+        "あいだ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-113",
-    "gram:gp-80",
-    "gram:gp-36",
-    "gram:ni-suru"
+    "gram:hou-ga-ii",
+    "gram:gp-43",
+    "gram:nowa-da",
+    "gram:gp-13",
+    "gram:gp-81",
+    "gram:yori"
   ],
-  "drills": [
-    {
-      "pattern": "gram:deshou",
-      "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:bakari",
-      "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-144050",
-        "sent:tatoeba-157014"
-      ],
-      "strand": "language-focused"
-    }
-  ],
+  "drills": [],
   "production": [
     {
-      "prompt_pt": "Eu só sei isto.",
-      "answer_key": "ぼくはこれだけしか知らない。",
+      "prompt_pt": "Casas grandes saem caro para morar.",
+      "answer_key": "大きな家はすむのに高くつく。",
       "accepted_variants": [
-        "ぼくはこれだけしか知らない",
-        "ぼくはこれだけしか知らない。"
+        "大きな家はすむのに高くつく",
+        "大きな家はすむのに高くつく。"
       ],
-      "sentence": "sent:tatoeba-196349",
+      "sentence": "sent:tatoeba-137738",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Eu preciso de dinheiro.",
-      "answer_key": "ぼくはお金がいる。",
+      "prompt_pt": "Soube que você comprou uma casa, né.",
+      "answer_key": "家を買ったんだってね。",
       "accepted_variants": [
-        "ぼくはお金がいる",
-        "ぼくはお金がいる。"
+        "家を買ったんだってね",
+        "家を買ったんだってね。"
       ],
-      "sentence": "sent:tatoeba-196365",
+      "sentence": "sent:tatoeba-9240812",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Assim que comprei aquele livro, me arrependi.",
-      "answer_key": "私はその本を買ったとたんに後悔した。",
+      "prompt_pt": "Ele comprou uma casa no subúrbio.",
+      "answer_key": "彼が郊外に家を買った",
       "accepted_variants": [
-        "私はその本を買ったとたんに後悔した",
-        "私はその本を買ったとたんに後悔した。"
+        "彼が郊外に家を買った"
       ],
-      "sentence": "sent:tatoeba-159849",
+      "sentence": "sent:jec-1593",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-81631",
-      "sent:tatoeba-217663",
-      "sent:tatoeba-9240812",
-      "sent:jec-1593",
       "sent:tatoeba-76061",
-      "sent:tatoeba-149750"
+      "sent:tatoeba-149750",
+      "sent:tatoeba-8748248",
+      "sent:tatoeba-3488181",
+      "sent:tatoeba-8687007",
+      "sent:tatoeba-2123447"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 20,
     "fluency": 6
   }
 }

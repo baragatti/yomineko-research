@@ -7,52 +7,52 @@
     "pt-BR": "Conversa de verdade — parte 5"
   },
   "say_now": [
+    "sent:tatoeba-127148",
+    "sent:tatoeba-423387",
+    "sent:tatoeba-10901570",
     "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161",
-    "sent:tatoeba-118031",
-    "sent:tatoeba-10153751",
-    "sent:tatoeba-234789"
+    "sent:tatoeba-8988161"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1420160",
+    "vocab:1278400",
+    "vocab:1313830",
     "vocab:1381390",
     "vocab:1271290",
     "vocab:1376760",
     "vocab:1332650",
-    "vocab:1179330",
-    "vocab:1295070",
-    "vocab:1263490",
     "vocab:1499830"
   ],
   "patterns": [
     "gram:gp-33",
     "gram:janai-dewa-nai",
     "gram:mitai-da",
-    "gram:rashii",
+    "gram:tagaru",
     "gram:to-iu",
-    "gram:gp-105"
+    "gram:garu-gatteiru"
   ],
   "kanji_recognition": [
-    "誤",
-    "青",
-    "雪",
-    "絵",
-    "確",
-    "景"
+    "見",
+    "性",
+    "男",
+    "何",
+    "幸",
+    "福"
   ],
   "shadowing": [
+    "sent:tatoeba-127148",
+    "sent:tatoeba-423387",
+    "sent:tatoeba-10901570",
     "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
-    "sent:tatoeba-8988161",
-    "sent:tatoeba-118031",
-    "sent:tatoeba-10153751",
-    "sent:tatoeba-234789"
+    "sent:tatoeba-8988161"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 510,
+  "cumulative_known_vocab": 509,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -67,13 +67,23 @@
       ]
     },
     {
-      "id": "cf:n3:5535:1388",
+      "id": "cf:n3:5504:1977",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "特に",
-        "出す",
-        "最後"
+        "放送",
+        "引く",
+        "風景"
+      ]
+    },
+    {
+      "id": "pp:n3:1868",
+      "type": "paraphrase",
+      "via": "phrase",
+      "distractors": [
+        "あっ",
+        "会話",
+        "余り"
       ]
     },
     {
@@ -81,19 +91,19 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あらわす",
         "ひつよう",
-        "いただく"
+        "いただく",
+        "けっこう"
       ]
     },
     {
-      "id": "kr:n3:1393",
+      "id": "kr:n4:1037",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "いっしょ",
-        "だんせい",
-        "ふくざつ"
+        "かいもの",
+        "ともだち",
+        "せいさん"
       ]
     }
   ],
@@ -127,11 +137,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:rashii",
+      "pattern": "gram:tagaru",
       "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-e9700d108b4a",
-        "sent:gen-dbc3c7fb8b46"
+        "sent:tatoeba-9971758",
+        "sent:tatoeba-163525",
+        "sent:tatoeba-4117192"
       ],
       "strand": "language-focused"
     },
@@ -145,71 +155,71 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-105",
+      "pattern": "gram:garu-gatteiru",
       "examples": [
-        "sent:tatoeba-157461",
-        "sent:tatoeba-189160",
-        "sent:tatoeba-218501"
+        "sent:gen-a0d367f9d037",
+        "sent:gen-2424c6ff626d",
+        "sent:gen-0ce029328959"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Não é que o caso tenha acabado.",
-      "answer_key": "事件は終わったわけではない。",
+      "prompt_pt": "Infelizmente, por hoje vamos encerrar por aqui.",
+      "answer_key": "残念ながら今日はこれで終わりにします。",
       "accepted_variants": [
-        "事件は終わったわけではない",
-        "事件は終わったわけではない。"
+        "残念ながら今日はこれで終わりにします",
+        "残念ながら今日はこれで終わりにします。"
       ],
-      "sentence": "sent:tatoeba-10901570",
+      "sentence": "sent:tatoeba-169225",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "O que é a felicidade?",
-      "answer_key": "幸福というのは何ですか。",
+      "prompt_pt": "Ficávamos sentados nos aquecendo perto do fogo.",
+      "answer_key": "火にあたりながらすわっていた。",
       "accepted_variants": [
-        "幸福というのは何ですか",
-        "幸福というのは何ですか。"
+        "火にあたりながらすわっていた",
+        "火にあたりながらすわっていた。"
       ],
-      "sentence": "sent:tatoeba-423387",
+      "sentence": "sent:tatoeba-186754",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Os homens querem parecer masculinos.",
-      "answer_key": "男性は男らしく見せたがる。",
+      "prompt_pt": "A vida não é só diversão e brincadeira.",
+      "answer_key": "人生は楽しみや遊びばかりでない。",
       "accepted_variants": [
-        "男性は男らしく見せたがる",
-        "男性は男らしく見せたがる。"
+        "人生は楽しみや遊びばかりでない",
+        "人生は楽しみや遊びばかりでない。"
       ],
-      "sentence": "sent:tatoeba-127148",
+      "sentence": "sent:tatoeba-143985",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-143985",
       "sent:tatoeba-211899",
       "sent:tatoeba-216263",
       "sent:tatoeba-120314",
       "sent:tatoeba-123542",
-      "sent:tatoeba-1227292"
+      "sent:tatoeba-1227292",
+      "sent:tatoeba-198643"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 59,
+    "language-focused": 60,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 31,
     "fluency": 6
   }
 }

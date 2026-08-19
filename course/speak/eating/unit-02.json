@@ -7,41 +7,44 @@
     "pt-BR": "Comer e beber fora — parte 2"
   },
   "say_now": [
+    "sent:tatoeba-10899775",
     "sent:tatoeba-10657609",
     "sent:tatoeba-2633467",
     "sent:tatoeba-143825",
     "sent:tatoeba-672326",
-    "sent:tatoeba-11270411",
-    "sent:tatoeba-8584149"
+    "sent:tatoeba-11270411"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1012480",
     "vocab:1007130",
     "vocab:1169870",
     "vocab:1371260",
-    "vocab:1538160"
+    "vocab:1538160",
+    "vocab:1426250",
+    "vocab:1358550"
   ],
   "patterns": [
-    "gram:mitai-na",
     "gram:gp-89",
     "gram:mitai-da",
     "gram:tai"
   ],
   "kanji_recognition": [
     "食",
+    "昼",
+    "堂",
     "飲",
     "何",
-    "水",
-    "薬"
+    "水"
   ],
   "shadowing": [
+    "sent:tatoeba-10899775",
     "sent:tatoeba-10657609",
     "sent:tatoeba-2633467",
     "sent:tatoeba-143825",
     "sent:tatoeba-672326",
-    "sent:tatoeba-11270411",
-    "sent:tatoeba-8584149"
+    "sent:tatoeba-11270411"
   ],
   "audio": "pending",
   "real_phrases": 6,
@@ -49,11 +52,6 @@
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "so:n5:3826",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
     {
       "id": "cf:n5:3820:473",
       "type": "context_fill",
@@ -85,30 +83,21 @@
       ]
     },
     {
-      "id": "kr:n4:1240",
+      "id": "kr:n5:313",
       "type": "kanji_reading",
-      "via": "review",
+      "via": "new-word",
       "distractors": [
         "さいちゅう",
-        "レストラン",
-        "いじょう"
+        "かんがえる",
+        "レストラン"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-76",
-    "gram:sonna-ni"
+    "gram:sonna-ni",
+    "gram:mou"
   ],
   "drills": [
-    {
-      "pattern": "gram:mitai-na",
-      "examples": [
-        "sent:gen-7ec782cb2980",
-        "sent:gen-23bdff9ed0ca",
-        "sent:gen-d02b55e81bd6"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-89",
       "examples": [
@@ -173,26 +162,26 @@
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
       "sent:tatoeba-1115376",
-      "sent:tatoeba-194478",
-      "sent:tatoeba-194455",
       "sent:tatoeba-196349",
       "sent:tatoeba-81631",
-      "sent:tatoeba-217663"
+      "sent:tatoeba-217663",
+      "sent:tatoeba-9240812",
+      "sent:jec-1593"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 51,
+    "language-focused": 52,
     "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 23,
     "fluency": 6
   }
 }

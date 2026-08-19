@@ -7,157 +7,180 @@
     "pt-BR": "Isto, aquilo, quanto custa — parte 3"
   },
   "say_now": [
-    "sent:tatoeba-8687007",
-    "sent:tatoeba-3488181",
-    "sent:tatoeba-8748248",
-    "sent:tatoeba-4562312",
-    "sent:tatoeba-199061",
-    "sent:tatoeba-172832"
+    "sent:tatoeba-199394",
+    "sent:tatoeba-76098",
+    "sent:tatoeba-160737",
+    "sent:tatoeba-10307857",
+    "sent:tatoeba-2123447",
+    "sent:tatoeba-166326"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:2820690",
-    "vocab:1358280",
-    "vocab:1288850",
-    "vocab:1375620"
+    "vocab:1580640",
+    "vocab:1589350",
+    "vocab:1009330",
+    "vocab:1509430",
+    "vocab:1153670",
+    "vocab:1352290",
+    "vocab:1600160",
+    "vocab:1184170"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:koto-ga-dekiru"
+  ],
   "kanji_recognition": [
-    "食",
+    "人",
     "安",
-    "今"
+    "思",
+    "私",
+    "自",
+    "明"
   ],
   "shadowing": [
-    "sent:tatoeba-8687007",
-    "sent:tatoeba-3488181",
-    "sent:tatoeba-8748248",
-    "sent:tatoeba-4562312",
-    "sent:tatoeba-199061",
-    "sent:tatoeba-172832"
+    "sent:tatoeba-199394",
+    "sent:tatoeba-76098",
+    "sent:tatoeba-160737",
+    "sent:tatoeba-10307857",
+    "sent:tatoeba-2123447",
+    "sent:tatoeba-166326"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 54,
+  "cumulative_known_vocab": 55,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:56",
+      "id": "so:n3:520",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "so:n4:3603",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:1510:64",
+      "id": "cf:n4:4068:805",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "人",
-        "私",
-        "事"
+        "言う",
+        "今晩",
+        "待つ"
       ]
     },
     {
-      "id": "cf:n5:3204:64",
+      "id": "cf:n4:4967:730",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
+        "何",
         "話",
-        "他",
-        "別"
+        "彼"
       ]
     },
     {
-      "id": "kr:n5:383",
+      "id": "pp:n4:730",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "言う",
+        "待つ",
+        "今晩"
+      ]
+    },
+    {
+      "id": "kr:n4:1287",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "あなた",
         "あがる",
-        "わたし",
-        "あかい"
+        "いくら"
       ]
     },
     {
-      "id": "kr:n5:64",
+      "id": "kr:n4:1300",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "これ",
-        "みる",
-        "あう"
+        "ズボン",
+        "じかん",
+        "ねだん"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-51",
-    "gram:gp-50",
-    "gram:naku-temo-ii",
-    "gram:hou-ga-ii",
-    "gram:gp-71",
-    "gram:gp-134"
+    "gram:gp-78",
+    "gram:you-to-omou",
+    "gram:gp-89",
+    "gram:to-omou",
+    "gram:donna"
   ],
-  "drills": [],
+  "drills": [
+    {
+      "pattern": "gram:koto-ga-dekiru",
+      "examples": [
+        "sent:tatoeba-155347",
+        "sent:tatoeba-8795030",
+        "sent:tatoeba-13179916"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
-      "prompt_pt": "Nós pretendemos tornar isso público.",
-      "answer_key": "私たちはそれを公にしようと思う。",
+      "prompt_pt": "Então isso quer dizer que você não vem?",
+      "answer_key": "それでは、あなたは来ないということですか。",
       "accepted_variants": [
-        "私たちはそれを公にしようと思う",
-        "私たちはそれを公にしようと思う。"
+        "それでは、あなたは来ないということですか",
+        "それでは、あなたは来ないということですか。"
       ],
-      "sentence": "sent:tatoeba-166326",
+      "sentence": "sent:tatoeba-205771",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Eu acho que devíamos baixar o preço.",
-      "answer_key": "値段を下げるべきだと思います。",
+      "prompt_pt": "Por mais que eu agradeça, nunca será o bastante.",
+      "answer_key": "いくらお礼を言っても言い切れない。",
       "accepted_variants": [
-        "値段を下げるべきだと思います",
-        "値段を下げるべきだと思います。"
+        "いくらお礼を言っても言い切れない",
+        "いくらお礼を言っても言い切れない。"
       ],
-      "sentence": "sent:tatoeba-2123447",
+      "sentence": "sent:tatoeba-229178",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Acho que isso e isto são coisas separadas.",
-      "answer_key": "それとこれとは別だと思うよ。",
+      "prompt_pt": "Ué, o que mesmo que eu ia dizer?",
+      "answer_key": "あれ、私何言おうとしたんだっけ？",
       "accepted_variants": [
-        "それとこれとは別だと思うよ",
-        "それとこれとは別だと思うよ。"
+        "あれ、私何言おうとしたんだっけ",
+        "あれ、私何言おうとしたんだっけ？"
       ],
-      "sentence": "sent:tatoeba-10307857",
+      "sentence": "sent:tatoeba-2941029",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-160737",
-      "sent:tatoeba-76098",
-      "sent:tatoeba-218050",
-      "sent:tatoeba-8609914",
-      "sent:tatoeba-229723",
-      "sent:tatoeba-229628"
+      "sent:tatoeba-79848",
+      "sent:tatoeba-8938683",
+      "sent:tatoeba-10094172",
+      "sent:tatoeba-218647",
+      "sent:tatoeba-229736",
+      "sent:tatoeba-229742"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 35,
-    "meaning-output": 9,
-    "language-focused": 38,
-    "fluency": 18
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 13,
+    "language-focused": 22,
     "fluency": 6
   }
 }

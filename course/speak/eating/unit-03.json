@@ -27,8 +27,7 @@
     "vocab:1502840",
     "vocab:1215810",
     "vocab:1348910",
-    "vocab:1245470",
-    "vocab:1223615"
+    "vocab:1245470"
   ],
   "patterns": [
     "gram:gp-109",
@@ -53,7 +52,7 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 108,
+  "cumulative_known_vocab": 107,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -139,16 +138,6 @@
   ],
   "production": [
     {
-      "prompt_pt": "Queria beber alguma coisa.",
-      "answer_key": "何か飲みたいな。",
-      "accepted_variants": [
-        "何か飲みたいな",
-        "何か飲みたいな。"
-      ],
-      "sentence": "sent:tatoeba-8584149",
-      "strand": "meaning-output"
-    },
-    {
       "prompt_pt": "Será que eu já tomei o remédio?",
       "answer_key": "薬飲んだっけ？",
       "accepted_variants": [
@@ -167,14 +156,24 @@
       ],
       "sentence": "sent:tatoeba-672326",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Quero beber água.",
+      "answer_key": "水が飲みたい。",
+      "accepted_variants": [
+        "水が飲みたい",
+        "水が飲みたい。"
+      ],
+      "sentence": "sent:tatoeba-143825",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
-      "sent:tatoeba-143825",
       "sent:tatoeba-2633467",
       "sent:tatoeba-10657609",
+      "sent:tatoeba-10899775",
       "sent:tatoeba-171644",
       "sent:tatoeba-200661",
       "sent:tatoeba-1115376"
@@ -186,13 +185,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 58,
+    "language-focused": 57,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 28,
     "fluency": 6
   }
 }

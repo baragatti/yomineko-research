@@ -7,63 +7,52 @@
     "pt-BR": "Conversa de verdade — parte 6"
   },
   "say_now": [
+    "sent:tatoeba-118031",
+    "sent:tatoeba-10153751",
+    "sent:tatoeba-234789",
     "sent:tatoeba-184333",
     "sent:tatoeba-77972",
-    "sent:tatoeba-77973",
-    "sent:tatoeba-87071",
-    "sent:tatoeba-95365",
-    "sent:tatoeba-886104"
+    "sent:tatoeba-77973"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1179330",
+    "vocab:1295070",
+    "vocab:1263490",
     "vocab:1206800",
-    "vocab:1554010",
-    "vocab:1486530",
-    "vocab:1317770",
-    "vocab:1532800",
-    "vocab:1188890"
+    "vocab:1554010"
   ],
   "patterns": [
     "gram:janai-dewa-nai",
-    "gram:bakari",
-    "gram:nasai",
+    "gram:mitai-da",
     "gram:rashii",
     "gram:to-iu",
-    "gram:tokoro"
+    "gram:tokoro",
+    "gram:gp-12"
   ],
   "kanji_recognition": [
-    "学",
-    "者",
-    "好",
-    "方",
-    "両",
-    "気"
+    "奥",
+    "外",
+    "国",
+    "人",
+    "彼",
+    "済"
   ],
   "shadowing": [
+    "sent:tatoeba-118031",
+    "sent:tatoeba-10153751",
+    "sent:tatoeba-234789",
     "sent:tatoeba-184333",
     "sent:tatoeba-77972",
-    "sent:tatoeba-77973",
-    "sent:tatoeba-87071",
-    "sent:tatoeba-95365",
-    "sent:tatoeba-886104"
+    "sent:tatoeba-77973"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 516,
+  "cumulative_known_vocab": 514,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "cf:n3:5393:2639",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "新聞",
-        "休む",
-        "出席"
-      ]
-    },
     {
       "id": "cf:n3:5450:1591",
       "type": "context_fill",
@@ -75,6 +64,26 @@
       ]
     },
     {
+      "id": "cf:n3:266:1591",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "先輩",
+        "彼女",
+        "其れ"
+      ]
+    },
+    {
+      "id": "kr:n3:1393",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いっしょ",
+        "だんせい",
+        "おくれる"
+      ]
+    },
+    {
       "id": "kr:n3:1591",
       "type": "kanji_reading",
       "via": "new-word",
@@ -82,16 +91,6 @@
         "シャワー",
         "しつもん",
         "しんぶん"
-      ]
-    },
-    {
-      "id": "kr:n5:62",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こちら",
-        "うたう",
-        "みせる"
       ]
     }
   ],
@@ -107,20 +106,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:mitai-da",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78287",
-        "sent:tatoeba-78855"
+        "sent:tatoeba-4216208",
+        "sent:tatoeba-774692",
+        "sent:gen-1d94a829f09c"
       ],
       "strand": "language-focused"
     },
@@ -150,64 +140,73 @@
         "sent:gen-a3656907ff28"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-75665",
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "O que significa \"UN\"?",
-      "answer_key": "ＵＮというのは何を表わしていますか。",
+      "prompt_pt": "Não parece que é outono, hein.",
+      "answer_key": "秋じゃないみたいだな。",
       "accepted_variants": [
-        "ＵＮというのは何を表わしていますか",
-        "ＵＮというのは何を表わしていますか。"
+        "秋じゃないみたいだな",
+        "秋じゃないみたいだな。"
       ],
-      "sentence": "sent:tatoeba-234789",
+      "sentence": "sent:tatoeba-8988161",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Parece que você já terminou, né?",
-      "answer_key": "済んだみたいだね。",
+      "prompt_pt": "Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão.",
+      "answer_key": "絵心がないから、風景を正確に写せるわけがない。",
       "accepted_variants": [
-        "済んだみたいだね",
-        "済んだみたいだね。"
+        "絵心がないから、風景を正確に写せるわけがない",
+        "絵心がないから、風景を正確に写せるわけがない。"
       ],
-      "sentence": "sent:tatoeba-10153751",
+      "sentence": "sent:tatoeba-12776411",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A esposa dele parece ser estrangeira.",
-      "answer_key": "彼の奥さんは外国人らしい。",
+      "prompt_pt": "Dizer que a neve é azul é um erro.",
+      "answer_key": "雪が青いというのは誤りだ。",
       "accepted_variants": [
-        "彼の奥さんは外国人らしい",
-        "彼の奥さんは外国人らしい。"
+        "雪が青いというのは誤りだ",
+        "雪が青いというのは誤りだ。"
       ],
-      "sentence": "sent:tatoeba-118031",
+      "sentence": "sent:tatoeba-142020",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-8988161",
-      "sent:tatoeba-12776411",
-      "sent:tatoeba-142020",
       "sent:tatoeba-10901570",
       "sent:tatoeba-423387",
-      "sent:tatoeba-127148"
+      "sent:tatoeba-127148",
+      "sent:tatoeba-143985",
+      "sent:tatoeba-211899",
+      "sent:tatoeba-216263"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 57,
+    "language-focused": 56,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 27,
     "fluency": 6
   }
 }

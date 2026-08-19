@@ -7,22 +7,22 @@
     "pt-BR": "Quando, que horas, combinar — parte 5"
   },
   "say_now": [
+    "sent:tatoeba-143418",
     "sent:tatoeba-536767",
     "sent:tatoeba-150509",
     "sent:tatoeba-83926",
     "sent:tatoeba-1190209",
-    "sent:tatoeba-161057",
-    "sent:tatoeba-174391"
+    "sent:tatoeba-161057"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1373860",
     "vocab:1236070",
     "vocab:1316140",
     "vocab:1579350",
     "vocab:1228650",
     "vocab:1174340",
-    "vocab:1268990",
     "vocab:1499720",
     "vocab:1310620"
   ],
@@ -31,24 +31,23 @@
     "gram:gp-42",
     "gram:masen-ka",
     "gram:gp-149",
-    "gram:gp-17",
-    "gram:ndesu"
+    "gram:owaru"
   ],
   "kanji_recognition": [
+    "界",
+    "終",
+    "世",
     "強",
     "今",
-    "日",
-    "風",
-    "間",
-    "計"
+    "日"
   ],
   "shadowing": [
+    "sent:tatoeba-143418",
     "sent:tatoeba-536767",
     "sent:tatoeba-150509",
     "sent:tatoeba-83926",
     "sent:tatoeba-1190209",
-    "sent:tatoeba-161057",
-    "sent:tatoeba-174391"
+    "sent:tatoeba-161057"
   ],
   "audio": "pending",
   "real_phrases": 6,
@@ -57,6 +56,21 @@
   "needs_review": true,
   "checkpoint": [
     {
+      "id": "so:n4:3427",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3427:859",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "明日",
+        "趣味",
+        "何時"
+      ]
+    },
+    {
       "id": "cf:n5:3181:280",
       "type": "context_fill",
       "via": "new-word",
@@ -64,16 +78,6 @@
         "歯",
         "別",
         "左"
-      ]
-    },
-    {
-      "id": "cf:n5:4180:280",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "二",
-        "左",
-        "園"
       ]
     },
     {
@@ -87,17 +91,19 @@
       ]
     },
     {
-      "id": "kr:n5:131",
+      "id": "kr:n4:859",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "とまる",
-        "つかう",
-        "かわり"
+        "あたま",
+        "わるい",
+        "あいだ"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:gp-110"
+  ],
   "drills": [
     {
       "pattern": "gram:amari-nai",
@@ -136,35 +142,16 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-17",
+      "pattern": "gram:owaru",
       "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ndesu",
-      "examples": [
-        "sent:gen-d354f1465606",
-        "sent:tatoeba-80973",
-        "sent:gen-f83463ff3681"
+        "sent:tatoeba-228649",
+        "sent:tatoeba-8727067",
+        "sent:tatoeba-10206436"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Quando será que o mundo vai acabar?",
-      "answer_key": "世界はいつ終わるのだろうか。",
-      "accepted_variants": [
-        "世界はいつ終わるのだろうか",
-        "世界はいつ終わるのだろうか。"
-      ],
-      "sentence": "sent:tatoeba-143418",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Como hoje o tempo estava bom, brincamos todos juntos lá fora.",
       "answer_key": "今日は天気がよかったのでみんなで外で遊んだ。",
@@ -184,17 +171,27 @@
       ],
       "sentence": "sent:tatoeba-145155",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Se você continua todos os dias, isso vira força.",
+      "answer_key": "毎日続けると力になる。",
+      "accepted_variants": [
+        "毎日続けると力になる",
+        "毎日続けると力になる。"
+      ],
+      "sentence": "sent:tatoeba-11013726",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
+      "sent:tatoeba-154767",
       "sent:tatoeba-9777117",
       "sent:tatoeba-171531",
       "sent:tatoeba-1037362",
       "sent:tatoeba-80495",
-      "sent:tatoeba-152614",
-      "sent:tatoeba-10014826"
+      "sent:tatoeba-152614"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -203,13 +200,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 59,
+    "language-focused": 58,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 29,
     "fluency": 6
   }
 }

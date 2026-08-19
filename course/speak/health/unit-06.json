@@ -11,7 +11,7 @@
     "sent:tatoeba-214052",
     "sent:tatoeba-121897",
     "sent:tatoeba-79502",
-    "sent:tatoeba-172775",
+    "sent:tatoeba-83950",
     "sent:tatoeba-168168"
   ],
   "chunk_phrases": [],
@@ -24,10 +24,9 @@
     "vocab:1602060"
   ],
   "patterns": [
+    "gram:gp-149",
     "gram:ka-shira",
     "gram:to-iu",
-    "gram:totemo",
-    "gram:temo",
     "gram:gp-15"
   ],
   "kanji_recognition": [
@@ -43,7 +42,7 @@
     "sent:tatoeba-214052",
     "sent:tatoeba-121897",
     "sent:tatoeba-79502",
-    "sent:tatoeba-172775",
+    "sent:tatoeba-83950",
     "sent:tatoeba-168168"
   ],
   "audio": "pending",
@@ -58,33 +57,33 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n4:4227:848",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "赤い",
-        "より",
-        "何処"
-      ]
-    },
-    {
-      "id": "cf:n4:2311:1325",
+      "id": "cf:n4:3432:840",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "関係",
-        "其方",
-        "張る"
+        "古い",
+        "大体",
+        "出す"
       ]
     },
     {
-      "id": "kr:n4:1187",
+      "id": "cf:n4:3469:1132",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "雨",
+        "駅",
+        "鍵"
+      ]
+    },
+    {
+      "id": "kr:n4:1240",
       "type": "kanji_reading",
       "via": "review",
       "distractors": [
-        "きまる",
-        "おとこ",
-        "ベッド"
+        "しょくどう",
+        "ひさしぶり",
+        "さいちゅう"
       ]
     },
     {
@@ -99,9 +98,19 @@
     }
   ],
   "patterns_chunked": [
-    "gram:gp-143"
+    "gram:gp-128",
+    "gram:you-ni-you-na"
   ],
   "drills": [
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:ka-shira",
       "examples": [
@@ -117,24 +126,6 @@
         "sent:tatoeba-80587",
         "sent:tatoeba-80590",
         "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:totemo",
-      "examples": [
-        "sent:tatoeba-5092",
-        "sent:tatoeba-5074",
-        "sent:tatoeba-4947"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:gen-a1d5b47d31e9",
-        "sent:tatoeba-5000"
       ],
       "strand": "language-focused"
     },
@@ -185,9 +176,9 @@
     "items": [
       "sent:jec-1326",
       "sent:tatoeba-145552",
-      "sent:jec-3163",
       "sent:tatoeba-10587764",
       "sent:tatoeba-203344",
+      "sent:jec-3163",
       "sent:tatoeba-83003"
     ],
     "seconds_target": 48,
@@ -195,15 +186,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 24,
     "fluency": 6
   }
 }

@@ -10,30 +10,29 @@
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
     "sent:tatoeba-10587764",
-    "sent:jec-3163",
     "sent:tatoeba-5001",
-    "sent:tatoeba-145552"
+    "sent:tatoeba-145552",
+    "sent:tatoeba-85337"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1414150",
     "vocab:1227560",
-    "vocab:1365040",
     "vocab:1369940",
     "vocab:2853889",
-    "vocab:1559290",
+    "vocab:1257540",
     "vocab:1002610",
     "vocab:1407980",
     "vocab:1171010"
   ],
   "patterns": [
     "gram:wa-dou-desu-ka",
-    "gram:te-kuru",
+    "gram:gp-17",
+    "gram:gp-31",
+    "gram:ndesu",
     "gram:da-desu",
-    "gram:gp",
-    "gram:gp-20",
-    "gram:gp-8"
+    "gram:gp"
   ],
   "kanji_recognition": [
     "丈",
@@ -47,9 +46,9 @@
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
     "sent:tatoeba-10587764",
-    "sent:jec-3163",
     "sent:tatoeba-5001",
-    "sent:tatoeba-145552"
+    "sent:tatoeba-145552",
+    "sent:tatoeba-85337"
   ],
   "audio": "pending",
   "real_phrases": 6,
@@ -68,26 +67,6 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n4:245:802",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "雨",
-        "隣",
-        "靴"
-      ]
-    },
-    {
-      "id": "cf:n4:5461:802",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "雨",
-        "父",
-        "水"
-      ]
-    },
-    {
       "id": "kr:n4:1140",
       "type": "kanji_reading",
       "via": "new-word",
@@ -98,13 +77,33 @@
       ]
     },
     {
-      "id": "kr:n4:802",
+      "id": "kr:n5:120",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はち",
-        "くる",
-        "きみ"
+        "やすい",
+        "パート",
+        "しゅみ"
+      ]
+    },
+    {
+      "id": "cf:n4:245:802",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "雨",
+        "隣",
+        "靴"
+      ]
+    },
+    {
+      "id": "cf:n4:3381:997",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "一緒",
+        "お礼",
+        "彼の"
       ]
     }
   ],
@@ -120,52 +119,61 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:te-kuru",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-8736595",
-        "sent:tatoeba-228677",
-        "sent:tatoeba-2999719"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-31",
+      "examples": [
+        "sent:tatoeba-778974",
+        "sent:tatoeba-1057336",
+        "sent:tatoeba-4789"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ndesu",
+      "examples": [
+        "sent:gen-d354f1465606",
+        "sent:tatoeba-80973",
+        "sent:gen-f83463ff3681"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:da-desu",
       "examples": [
+        "sent:tatoeba-5332",
         "sent:tatoeba-75192",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-75140"
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:gp",
       "examples": [
-        "sent:tatoeba-4708",
-        "sent:tatoeba-5332",
-        "sent:tatoeba-5078"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-20",
-      "examples": [
-        "sent:tatoeba-77564",
-        "sent:tatoeba-95997",
-        "sent:tatoeba-198119"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-150175"
+        "sent:tatoeba-75140",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-4708"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt_pt": "Os pais levam os filhos ao hospital logo de cara.",
+      "answer_key": "親はすぐにこどもを病院に連れてくる",
+      "accepted_variants": [
+        "親はすぐにこどもを病院に連れてくる"
+      ],
+      "sentence": "sent:jec-3163",
+      "strand": "meaning-output"
+    },
     {
       "prompt_pt": "Daqui até o hospital são nada menos que dez milhas.",
       "answer_key": "病院まで１０マイルもある。",
@@ -185,42 +193,32 @@
       ],
       "sentence": "sent:tatoeba-83003",
       "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Depois que dormi bem, me senti bem melhor.",
-      "answer_key": "よく眠ったらだいぶ気分がよくなった。",
-      "accepted_variants": [
-        "よく眠ったらだいぶ気分がよくなった",
-        "よく眠ったらだいぶ気分がよくなった。"
-      ],
-      "sentence": "sent:tatoeba-192750",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
       "sent:tatoeba-189575",
+      "sent:tatoeba-171774",
       "sent:tatoeba-90106",
       "sent:tatoeba-190894",
       "sent:tatoeba-190902",
-      "sent:tatoeba-3263386",
-      "sent:tatoeba-171774"
+      "sent:tatoeba-226765"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 61,
+    "language-focused": 60,
     "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 32,
     "fluency": 6
   }
 }

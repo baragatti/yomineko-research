@@ -7,51 +7,51 @@
     "pt-BR": "Comer e beber fora — parte 5"
   },
   "say_now": [
+    "sent:tatoeba-202470",
     "sent:tatoeba-8775094",
     "sent:tatoeba-191220",
     "sent:tatoeba-147790",
     "sent:tatoeba-201917",
-    "sent:tatoeba-162347",
-    "sent:tatoeba-231327"
+    "sent:tatoeba-162347"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1589600",
     "vocab:1460850",
     "vocab:1432920",
     "vocab:1598550",
     "vocab:1203250",
     "vocab:1579080",
     "vocab:1257240",
-    "vocab:1472630",
     "vocab:1155060",
     "vocab:1421900",
-    "vocab:1476410"
+    "vocab:1476410",
+    "vocab:1049180"
   ],
   "patterns": [
     "gram:itashimasu",
-    "gram:gp-62",
-    "gram:gp-32"
+    "gram:gp-62"
   ],
   "kanji_recognition": [
+    "終",
     "食",
     "難",
     "箸",
     "以",
-    "下",
-    "注"
+    "下"
   ],
   "shadowing": [
+    "sent:tatoeba-202470",
     "sent:tatoeba-8775094",
     "sent:tatoeba-191220",
     "sent:tatoeba-147790",
     "sent:tatoeba-201917",
-    "sent:tatoeba-162347",
-    "sent:tatoeba-231327"
+    "sent:tatoeba-162347"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 127,
+  "cumulative_known_vocab": 126,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -65,9 +65,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
+        "テーブル",
         "スリッパ",
-        "成るべく",
-        "美味しい"
+        "成るべく"
       ]
     },
     {
@@ -76,8 +76,8 @@
       "via": "new-word",
       "distractors": [
         "成るべく",
-        "スリッパ",
-        "美味しい"
+        "テーブル",
+        "スリッパ"
       ]
     },
     {
@@ -103,8 +103,9 @@
   ],
   "patterns_chunked": [
     "gram:nakute-wa-naranai",
+    "gram:gp-94",
     "gram:no-naka-de",
-    "gram:nara"
+    "gram:owaru"
   ],
   "drills": [
     {
@@ -124,26 +125,17 @@
         "sent:tatoeba-174748"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-4714",
-        "sent:tatoeba-85319",
-        "sent:tatoeba-83696"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "O jantar quase sempre termina com um café.",
-      "answer_key": "ディナーはたいがいコーヒーで終わる。",
+      "prompt_pt": "Quero algo para comer.",
+      "answer_key": "何か食べるものがほしい。",
       "accepted_variants": [
-        "ディナーはたいがいコーヒーで終わる",
-        "ディナーはたいがいコーヒーで終わる。"
+        "何か食べるものがほしい",
+        "何か食べるものがほしい。"
       ],
-      "sentence": "sent:tatoeba-202470",
+      "sentence": "sent:tatoeba-187939",
       "strand": "meaning-output"
     },
     {
@@ -173,24 +165,24 @@
       "sent:tatoeba-13440729",
       "sent:tatoeba-10617667",
       "sent:tatoeba-179391",
-      "sent:tatoeba-8584149",
       "sent:tatoeba-11270411",
-      "sent:tatoeba-672326"
+      "sent:tatoeba-672326",
+      "sent:tatoeba-143825"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 26,
     "fluency": 6
   }
 }

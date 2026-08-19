@@ -7,52 +7,64 @@
     "pt-BR": "Conversa de verdade — parte 2"
   },
   "say_now": [
+    "sent:tatoeba-10274623",
+    "sent:tatoeba-78052",
     "sent:tatoeba-80952",
+    "sent:jec-4908",
     "sent:tatoeba-9938017",
-    "sent:tatoeba-90133",
-    "sent:tatoeba-10050266",
-    "sent:tatoeba-107636",
-    "sent:tatoeba-198643"
+    "sent:tatoeba-90133"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1002290",
+    "vocab:1602710",
     "vocab:1529410",
+    "vocab:1487400",
+    "vocab:1378520",
     "vocab:1080000",
-    "vocab:1594060",
-    "vocab:1172400",
-    "vocab:1260720"
+    "vocab:1594060"
   ],
   "patterns": [
     "gram:ta-bakari",
-    "gram:n3-dakedo",
+    "gram:janai-dewa-nai",
     "gram:bakari",
-    "gram:mitai-da",
-    "gram:rashii",
-    "gram:gp-25"
+    "gram:gp-105",
+    "gram:gp-89",
+    "gram:mitai-da"
   ],
   "kanji_recognition": [
+    "前",
+    "親",
+    "生",
+    "両",
     "夢",
-    "始",
-    "幸",
-    "女",
-    "彼",
-    "嘘"
+    "気"
   ],
   "shadowing": [
+    "sent:tatoeba-10274623",
+    "sent:tatoeba-78052",
     "sent:tatoeba-80952",
+    "sent:jec-4908",
     "sent:tatoeba-9938017",
-    "sent:tatoeba-90133",
-    "sent:tatoeba-10050266",
-    "sent:tatoeba-107636",
-    "sent:tatoeba-198643"
+    "sent:tatoeba-90133"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 486,
+  "cumulative_known_vocab": 487,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "cf:n3:5290:1544",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "正月",
+        "半分",
+        "電車"
+      ]
+    },
     {
       "id": "cf:n3:5550:1966",
       "type": "context_fill",
@@ -64,33 +76,43 @@
       ]
     },
     {
-      "id": "cf:n3:1277:1966",
-      "type": "context_fill",
+      "id": "pp:n3:1544",
+      "type": "paraphrase",
       "via": "new-word",
       "distractors": [
-        "複雑",
-        "咖哩",
-        "食事"
+        "喉",
+        "時",
+        "薬"
       ]
     },
     {
-      "id": "kr:n4:800",
-      "type": "kanji_reading",
+      "id": "pp:n4:717",
+      "type": "paraphrase",
       "via": "new-word",
       "distractors": [
-        "ふん",
-        "なぜ",
-        "ほん"
+        "負ける",
+        "為さる",
+        "起こす"
       ]
     },
     {
-      "id": "kr:n5:235",
+      "id": "kr:n3:1544",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "おこす",
-        "おおい",
-        "あたま"
+        "あんな",
+        "てがみ",
+        "くうき"
+      ]
+    },
+    {
+      "id": "kr:n4:703",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "うごく",
+        "いたい",
+        "にがい"
       ]
     }
   ],
@@ -106,11 +128,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-dakedo",
+      "pattern": "gram:janai-dewa-nai",
       "examples": [
-        "sent:tatoeba-3366905",
-        "sent:tatoeba-8575497",
-        "sent:tatoeba-171648"
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
       ],
       "strand": "language-focused"
     },
@@ -124,6 +146,24 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:gp-105",
+      "examples": [
+        "sent:tatoeba-157461",
+        "sent:tatoeba-189160",
+        "sent:tatoeba-218501"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:mitai-da",
       "examples": [
         "sent:tatoeba-4216208",
@@ -131,81 +171,64 @@
         "sent:gen-1d94a829f09c"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:rashii",
-      "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-e9700d108b4a",
-        "sent:gen-dbc3c7fb8b46"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-25",
-      "examples": [
-        "sent:tatoeba-229345",
-        "sent:tatoeba-8575514",
-        "sent:tatoeba-8575496"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Não é que meus dois pais estejam vivos.",
-      "answer_key": "両親とも生きているわけではない。",
+      "prompt_pt": "Parece que ele está doente.",
+      "answer_key": "彼は病気らしい。",
       "accepted_variants": [
-        "両親とも生きているわけではない",
-        "両親とも生きているわけではない。"
+        "彼は病気らしい",
+        "彼は病気らしい。"
       ],
-      "sentence": "sent:tatoeba-78052",
+      "sentence": "sent:tatoeba-100541",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Não posso deixar você fazer uma coisa dessas.",
-      "answer_key": "お前にそんなこと、させるわけにはいかないよ。",
+      "prompt_pt": "O cachorro parece estar doente.",
+      "answer_key": "犬は病気みたい。",
       "accepted_variants": [
-        "お前にそんなこと、させるわけにはいかないよ",
-        "お前にそんなこと、させるわけにはいかないよ。"
+        "犬は病気みたい",
+        "犬は病気みたい。"
       ],
-      "sentence": "sent:tatoeba-10274623",
+      "sentence": "sent:tatoeba-774692",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Isso não quer dizer que vão necessariamente desenvolver a mesma doença.",
-      "answer_key": "必ず同じ病気を発症するわけではない",
+      "prompt_pt": "Bom, afinal o Japão também viveu fechado para o mundo, né.",
+      "answer_key": "まぁ、日本も鎖国していたわけだしなあ。",
       "accepted_variants": [
-        "必ず同じ病気を発症するわけではない"
+        "まぁ、日本も鎖国していたわけだしなあ",
+        "まぁ、日本も鎖国していたわけだしなあ。"
       ],
-      "sentence": "sent:jec-4908",
+      "sentence": "sent:tatoeba-76419",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-100541",
-      "sent:tatoeba-774692",
+      "sent:tatoeba-230514",
+      "sent:tatoeba-8579878",
       "sent:tatoeba-235244",
-      "sent:tatoeba-79019",
       "sent:jec-0517",
-      "sent:tatoeba-89607"
+      "sent:tatoeba-89607",
+      "sent:tatoeba-179684"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 56,
+    "language-focused": 60,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 31,
     "fluency": 6
   }
 }

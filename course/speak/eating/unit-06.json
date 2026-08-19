@@ -8,32 +8,32 @@
   },
   "say_now": [
     "sent:jec-2741",
-    "sent:tatoeba-122989",
     "sent:tatoeba-197915",
     "sent:tatoeba-175925",
     "sent:jec-1168",
+    "sent:tatoeba-231327",
     "sent:tatoeba-11038484"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1275640",
-    "vocab:1438690",
     "vocab:1355850",
     "vocab:1358490",
+    "vocab:1175570",
     "vocab:1510790",
-    "vocab:1343460",
     "vocab:1172660",
-    "vocab:1463520",
     "vocab:1155090",
     "vocab:1526960",
     "vocab:1590770",
+    "vocab:1472630",
     "vocab:1333550",
     "vocab:1591420",
     "vocab:1227370"
   ],
   "patterns": [
-    "gram:gp-81"
+    "gram:gp-32",
+    "gram:tte"
   ],
   "kanji_recognition": [
     "運",
@@ -41,19 +41,19 @@
     "女",
     "水",
     "彼",
-    "気"
+    "飲"
   ],
   "shadowing": [
     "sent:jec-2741",
-    "sent:tatoeba-122989",
     "sent:tatoeba-197915",
     "sent:tatoeba-175925",
     "sent:jec-1168",
+    "sent:tatoeba-231327",
     "sent:tatoeba-11038484"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 141,
+  "cumulative_known_vocab": 139,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -88,8 +88,8 @@
       "via": "new-word",
       "distractors": [
         "その",
-        "もつ",
-        "ころ"
+        "ころ",
+        "もう"
       ]
     },
     {
@@ -106,32 +106,30 @@
   "patterns_chunked": [
     "gram:gp-128",
     "gram:you-ni-you-na",
-    "gram:darou",
     "gram:tara",
-    "gram:you-da"
+    "gram:gp-16"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-81",
+      "pattern": "gram:gp-32",
       "examples": [
-        "sent:tatoeba-3506554",
-        "sent:gen-e5bc8ecc1fc4",
-        "sent:gen-932e2b76037c"
+        "sent:tatoeba-4714",
+        "sent:tatoeba-85319",
+        "sent:tatoeba-83696"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-5412a2ccf468",
+        "sent:gen-48c455d520ba",
+        "sent:gen-000fc485400b"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Naquela época, uma xícara de café custava 200 ienes, viu.",
-      "answer_key": "あの頃はコーヒー１杯が２００円だったよ。",
-      "accepted_variants": [
-        "あの頃はコーヒー１杯が２００円だったよ",
-        "あの頃はコーヒー１杯が２００円だったよ。"
-      ],
-      "sentence": "sent:tatoeba-231327",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Naquela época, eu não gostava de cerveja.",
       "answer_key": "私は、そのころビールが嫌いだった。",
@@ -151,6 +149,16 @@
       ],
       "sentence": "sent:tatoeba-201917",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Preciso comer antes de sair.",
+      "answer_key": "出かける前に食べなくてはならない。",
+      "accepted_variants": [
+        "出かける前に食べなくてはならない",
+        "出かける前に食べなくてはならない。"
+      ],
+      "sentence": "sent:tatoeba-147790",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -168,15 +176,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 56,
+    "language-focused": 57,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 28,
     "fluency": 6
   }
 }
