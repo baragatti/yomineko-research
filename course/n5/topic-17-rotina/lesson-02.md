@@ -61,7 +61,7 @@ Além dos advérbios 未だ e 又 ("de novo"), esta lição traz números de con
 - 右: direita
 
 > **[culture]**
-Quer responder rápido em japonês? Para uma pergunta como "já comeu?", basta dizer もう(já) ou まだ(ainda não). Esses pares curtos fazem você soar fluente sem montar a frase inteira.
+Quer responder rápido em japonês? Para uma pergunta como "já comeu?", o lado do "ainda não" se resolve com まだです. Já o lado do "já" pede o verbo junto: もう食べました (já comi), porque a palavra sozinha soaria como a pergunta surpresa "já?!".
 
 #### Hora de praticar
 - Uso もう para "já" (afirmativo) e "não... mais" (com verbo negativo).

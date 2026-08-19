@@ -89,7 +89,7 @@ Resolva os exercícios abaixo e confira cada explicação com atenção.
 
 
 ### 3. (cloze) {'pt-BR': 'Complete: 客が___に入ってくる。 (Os clientes vão entrando um atrás do outro. / つぎつぎ)'}
-- **Resposta:** `{"text": "客が___に入ってくる", "full": "客が次々に入ってくる"}`
+- **Resposta:** `{"text": "次々", "full": "客が次々に入ってくる"}`
 - {'pt-BR': '次々 (つぎつぎ) com に descreve uma sucessão contínua: um cliente atrás do outro.'}
 
 

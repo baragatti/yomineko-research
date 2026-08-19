@@ -30,7 +30,7 @@ Como a informação é de segunda mão, é natural fechar a frase com uma marca 
 天気予報によれば明日は雨だそうだ = Segundo a previsão do tempo, dizem que amanhã vai chover.
 
 > **[warning]**
-Não confunda com によって, que aponta agente ou meio. によれば aponta a fonte da informação; os dois partilham o によ, mas não se misturam.
+Não confunda com によって, que aponta agente ou meio. によれば aponta a fonte da informação; os dois compartilham o によ, mas não se misturam.
 
 #### に対して: em relação a / ao contrário de
 A expressão n3-ni-taishite tem dois usos. O primeiro marca o alvo ou a direção de uma ação ou atitude (em relação a, para com, diante de). O segundo estabelece um contraste entre dois elementos (ao contrário de, enquanto).

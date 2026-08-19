@@ -23,7 +23,7 @@ Coloque んです (a forma escrita e mais formal é のです) no fim da frase q
 Aqui o predicado é 頭が痛い ("a cabeça dói"), e o んです grudado no fim diz "estou explicando o que se passa comigo". Sem ele, a frase só relata; com ele, ela se conecta à conversa.
 O んです brilha em perguntas, para mostrar interesse genuíno ou pedir uma explicação:
 > 🗣 人気があるんですか？ — É popular?
-Compare: 人気がありますか é só "(isso) é popular?". Já 人気があるんですか soa "é que é popular?", como quem reagiu a algo e quer entender o porquê. Note: para ligar んです a um verbo ou adjetivo, usa-se a forma simples (de dicionário) antes dele.
+Compare: 人気がありますか é só "(isso) é popular?". Já 人気があるんですか soa "é que é popular?", como quem reagiu a algo e quer entender o porquê. Note: para ligar んです a um verbo ou a um adjetivo-い, usa-se a forma simples (de dicionário) antes dele; com adjetivo-な e com substantivo entra um な no meio.
 
 > **[tip]**
 Resposta a "por que está estudando japonês?": 来月日本へ行くんです = "é que vou ao Japão 来月". O んです mostra que aquilo é a sua justificativa.

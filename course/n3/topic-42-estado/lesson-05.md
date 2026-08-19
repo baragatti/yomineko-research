@@ -14,7 +14,7 @@
 ---
 
 ### Crescimento, sistemas e governo: o bloco せい (parte 2)
-Continuamos no rico bloco せい, desta vez com palavras sobre sucesso, fabricação, instituições e fases da vida. Várias delas convivem em textos formais e jornalísticos. Sem gramática nova; nos exemplos reaparecem padrões como ～ずに e ～たて.
+Continuamos no rico bloco せい, desta vez com palavras sobre sucesso, fabricação, instituições e fases da vida. Várias delas convivem em textos formais e jornalísticos. Sem gramática nova: o foco é o vocabulário, com destaque para os pares 成人 / 青年 e 生物 / 製品.
 
 #### Sucesso, crescimento e desempenho
 - 成功 (せいこう) - sucesso, êxito.
@@ -22,8 +22,8 @@ Continuamos no rico bloco せい, desta vez com palavras sobre sucesso, fabrica�
 - 成績 (せいせき) - resultados, desempenho, notas (na escola).
 - 精々 (せいぜい) - no máximo, na melhor das hipóteses.
 - 精神 (せいしん) - mente, espírito, alma.
-努力のおかげで試験に成功した (Graças ao esforço, tive sucesso na prova.)
-今年は成績が大きく成長した (Este ano meu desempenho cresceu bastante.)
+努力のおかげで実験に成功した (Graças ao esforço, o experimento deu certo.)
+今年は成績が大きく伸びた (Este ano meu desempenho melhorou bastante.)
 
 #### Fases da vida e seres vivos
 Palavras parecidas que vale separar com cuidado.

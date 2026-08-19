@@ -47,7 +47,7 @@ Repare na palma das moras em やきたて: ya-ki-ta-te, quatro batidas iguais. N
 
 #### Vocabulário do dia (em kana)
 - 価格(かかく) = "preço, valor".
-- 掛かる(かかる) = "levar (tempo, dinheiro), custar". Cuidado: dobre o っ ao ouvir, mas aqui não há っ; são duas moras ka-ka-ru.
+- 掛かる(かかる) = "levar (tempo, dinheiro), custar". Cuidado: aqui não aparece o っ que dobra a consoante; sem っ, são três moras iguais: ka-ka-ru.
 - 係(かかり) = "encarregado, atendente, responsável".
 - 限る(かぎる) = "limitar, restringir".
 - 家具(かぐ) = "móveis, mobília".
@@ -65,7 +65,7 @@ O kanji 位 significa "posto, categoria, posição". À esquerda está a pessoa 
 O kanji 置 significa "colocar, pôr, deixar". Em cima a tampa de uma rede (罒) e embaixo "reto" (直): colocar algo direitinho no lugar. Junte com o anterior:位置 = "posição, localização".
 O kanji 流 significa "corrente, fluir, fluxo". À esquerda os três pingos de água (氵): a água que CORRE. Aparece em 流行 ("moda, tendência").
 O kanji 格 significa "categoria, posição, caráter". Ele dá o som かく em 価格 ("preço") e 性格 ("personalidade").
-O kanji 疑 significa "dúvida, desconfiar, suspeita". Pense em alguém parado na encruzilhada sem saber para onde ir: a DÚVIDA. Aparece em 質問... não, cuidado, esse é outro; aqui é 疑問 ("questão, dúvida").
+O kanji 疑 significa "dúvida, desconfiar, suspeita". Pense em alguém parado na encruzilhada sem saber para onde ir: a DÚVIDA. Aparece em 疑問 ("questão, dúvida"). Não confunda com 質問 ("pergunta"), que usa outro kanji.
 O kanji 過 significa "exceder, passar demais, erro". O radical de movimento (辶) embaixo: algo que PASSA do ponto. Aparece em 過去 ("o passado").
 O kanji 局 significa "repartição, escritório, setor". Aparece em 郵便局 ("agência dos correios").
 

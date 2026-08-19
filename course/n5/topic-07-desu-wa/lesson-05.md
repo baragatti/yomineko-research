@@ -18,7 +18,7 @@ O japonês tem um jeitinho simples de deixar uma palavra mais educada: colar um 
 
 #### お ou ご? Depende da origem da palavra
 A regra geral é fácil de lembrar:
-- お vem antes de palavras de origem japonesa (as que você lê com leitura japonesa):お名前(seu nome),お金(dinheiro),お茶(chá).
+- お vem antes de palavras de origem japonesa (as que você lê com leitura japonesa):お名前(seu nome),お金(dinheiro),お花(flor).
 - ご vem antes de palavras de origem chinesa (compostas com leitura sino-japonesa):ご家族(sua família),ご注文(seu pedido).
 
 > **[tip]**
@@ -27,7 +27,7 @@ Não precisa decorar tabela: por enquanto, guarde os exemplos como blocos pronto
 #### Cortesia que já virou parte da palavra
 Em muitos casos o prefixo grudou de vez e a palavra quase nunca aparece sem ele. Veja a frase de exemplo:
 > 🗣 お金を財布に入れた — Coloquei o dinheiro na carteira.
-Aqui お金(dinheiro) é a forma normal e neutra: o お já faz parte do uso comum e não soa exageradamente formal. Repare também que não existe artigo: o japonês não tem o/a/um/uma, então 金 sozinho já cobre "o dinheiro". Nesta frase aparecem ainda 財布 e o verbo 入れた, que você verá com calma mais adiante.
+Aqui お金(dinheiro) é a forma normal e neutra: o お já faz parte do uso comum e não soa exageradamente formal. Repare também que não existe artigo: o japonês não tem o/a/um/uma, então お金 sozinho já cobre tanto "dinheiro" quanto "o dinheiro". Nesta frase aparecem ainda 財布 e o verbo 入れた, que você verá com calma mais adiante.
 
 > **[culture]**
 Quem fala com muito cuidado às vezes usa お de sobra (por exemplo お水, "água"). Isso costuma soar mais delicado e é bem comum na fala de mulheres e no atendimento ao cliente. Não é obrigatório, mas é educado.

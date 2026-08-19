@@ -67,7 +67,7 @@ Nesta,まいにち é "todos os dias",テレビ é "TV" marcada pelo objeto を,
 
 #### O kanji da lição
 O verbo 見る traz o seu primeiro kanji de ação.
-- 見 significa ver, olhar (leitura kun み, on ケン). Mnemônica de forma: embaixo há um 目(olho) apoiado sobre duas perninhas 儿 que andam por aí olhando tudo. Esse é o kanji de 見る("ver").
+- 見 significa ver, olhar (leitura kun み, on ケン). Mnemônica de forma: em cima há um 目(olho) apoiado sobre duas perninhas 儿 que andam por aí olhando tudo. Esse é o kanji de 見る("ver").
 - 出 significa sair, ir para fora (leitura kun で/だ, on シュツ). Mnemônica de forma: parece duas montanhinhas empilhadas, como alguém que vai saindo por cima do morro. Aparece no verbo 出る("sair"), também um verbo る.
 
 #### Hora de praticar

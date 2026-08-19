@@ -38,7 +38,7 @@ Forma-se com o verbo na forma ない mais ことはない. Exemplo: 直せない
 Armadilha PT: o brasileiro tende a traduzir como 'eu consigo', mas isso perde o tom hesitante. Melhor algo como 'até que dá' ou 'não é que não dê'. A dupla negação evita um 'sim' direto demais e deixa espaço para um 'mas...'. É um recurso de polidez e modéstia bem japonês.
 
 > **[tip]**
-Repare na família: ～ことはない da lição anterior ('não precisa') e este ～ないことはない ('até que dá') usam o mesmo bloco ことはない; o que muda tudo é o ない antes do verbo.
+Repare na família: ～ことはない da lição anterior ('não precisa') e este ～ないことはない ('até que dá') usam o mesmo bloco ことはない; o que muda tudo é o ない colado no fim do verbo, logo antes desse bloco.
 
 #### Vocabulário
 Palavras úteis para falar de permissão, limites e qualidades (mostradas em kana):

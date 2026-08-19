@@ -51,7 +51,7 @@ Para preencher seus convites, guarde estas palavras (mostradas em kana):
 
 #### Kanji da lição
 Dois kanji deste bloco de vocabulário:
-- 食= "comer, comida". Aparece no almoço,昼ご飯(昼ご飯), e no verbo 食べる("comer"). Truque de forma: imagine uma tampa por cima e, embaixo, um prato cheio de comida, tudo abrigado como numa tigela quentinha.
+- 食= "comer, comida". Aparece no verbo 食べる("comer") e, escondido, no último kanji de 昼ご飯(昼ご飯), onde ele encolhe e vira o radical da esquerda, o "radical da comida". Truque de forma: imagine uma tampa por cima e, embaixo, um prato cheio de comida, tudo abrigado como numa tigela quentinha.
 - 西= "oeste". Truque de forma: pense numa cerca quadrada por onde o sol se põe ao oeste no fim do dia.
 
 #### Hora de praticar

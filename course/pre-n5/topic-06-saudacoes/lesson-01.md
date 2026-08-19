@@ -29,7 +29,7 @@ Várias dessas palavras têm vogal longa: o どう de どうも e o もう de �
 
 #### Ao telefone e na conversa
 - もしもし= "alô". É o "alô" do telefone, dito ao atender ou ao começar a falar.
-- もういちど= "mais uma vez". Não entendeu? Peça para repetirem com もういちど, geralmente seguido de um ください.
+- もういちど= "mais uma vez". Não entendeu? Peça para repetirem com もういちど, geralmente seguido de おねがいします ("por favor").
 
 > **[warning]**
 Cuidado:もしもし é só para telefone (ou chamadas de vídeo). Você não cumprimenta alguém na rua com もしもし; isso soaria estranho, como atender o celular na cara da pessoa.

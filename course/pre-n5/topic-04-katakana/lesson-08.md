@@ -17,18 +17,18 @@
 Você já viu várias famílias do katakana. Agora chega a família do Y, com apenas três sons:ヤ(ya),ユ(yu) e ヨ(yo). São formas novas para sons que você já conhece do hiragana や・ゆ・よ: o som é o mesmo, só o desenho muda.
 
 > **[l1-advantage]**
-Boa notícia para quem fala português: o som ya é igual ao "ia" de "ia te", yu é como o "iu" de "v iu", e yo soa como o "io" de "io gurte". Nada de som estranho aqui.
+Boa notícia para quem fala português: o som ya é igual ao "ia" de "ia te", yu é como o "iu" de "Iugoslávia", e yo soa como o "io" de "io gurte". Nada de som estranho aqui.
 
 #### Os três kana
 - ヤ(ya): lembra o hiragana や, mas mais reto e anguloso. Imagine um i ate com o mastro inclinado cortado por uma linha.
 - ユ(yu): só dois traços, formando um "U" achatado de boca aberta. Pense num u tensílio, uma colher de cabo virado.
-- ヨ(yo): parece um "E" sem a barra de cima ou um pente com três dentes. Diga "io" enquanto desenha os degraus.
+- ヨ(yo): parece um "E" espelhado, com as três barras viradas para a esquerda, ou um pente com três dentes. Diga "io" enquanto desenha os degraus.
 
 > **[warning]**
 Cuidado para não confundir ユ(yu) com コ(ko): o ユ abre para cima e o コ abre para a direita. E não confunda ヨ(yo) com o número 3 espelhado: o ヨ tem três barras horizontais bem retas.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços usando o diagrama numerado (de cima para baixo, da esquerda para a direita). O ヨ começa com a barra de cima e desce em degraus; o ユ faz primeiro o traço horizontal de baixo e depois fecha por cima. Repita cada kana em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços usando o diagrama numerado (de cima para baixo, da esquerda para a direita). O ヨ começa com a barra de cima e desce em degraus; o ユ começa pelo traço de cima, que vira e desce para a esquerda, e termina na linha horizontal de baixo. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
 Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:タイヤ(taiya, pneu/tire),ユニーク(yuniiku, único),マヨネーズ(mayoneezu, maionese) e ヨーヨー(yooyoo, ioiô).

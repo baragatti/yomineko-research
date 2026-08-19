@@ -27,7 +27,7 @@ Este bloco de vocabulário gira em torno de palavras que começam por ま e expr
 夏祭りでたこ焼きを食べた (No festival de verão eu comi takoyaki.)
 子供が親の真似をする (A criança imita os pais.)
 
-#### Advérbios de intensidade total
+#### Palavras de intensidade total
 Um grupo que combina perfeitamente com a ênfase:
 - 全く (まったく) - completamente, totalmente; também um "francamente!" de irritação.
 - 益々 (ますます) - cada vez mais, mais e mais.

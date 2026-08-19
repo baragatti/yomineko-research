@@ -18,7 +18,7 @@ Boa notícia: o katakana tem os mesmos sons do hiragana. Você não vai aprender
 
 #### Os cinco kana
 - マ(ma): como o ma de "ma çã". Imagine uma fita caindo em diagonal com um gancho embaixo.
-- ミ(mi): como o mi de "mi nha". São três risquinhos empilhados, como os três traços do hiraganaみ.
+- ミ(mi): como o mi de "mi nha". São três risquinhos empilhados; é o mesmo som do hiraganaみ.
 - ム(mu): como o mu de "mu ro". Parece uma boquinha aberta para a direita.
 - メ(me): como o me de "me sa". É um X meio torto, dois traços que se cruzam.
 - モ(mo): como o mo de "mo la". Lembra bastante o hiragana も, com dois tracinhos cruzados por um gancho.

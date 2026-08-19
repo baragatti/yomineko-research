@@ -31,7 +31,7 @@ O n3-wake-ga-nai afirma com convicção que algo é impossível ou não faz sent
 Veja: 彼女が嘘をつくわけがない ("é impossível que ela minta"). E sobre comida: この店がまずいわけがない ("não tem como esta loja ser ruim").
 
 > **[l1-pitfall]**
-Não confunda com はずがない. O わけがない nega por raciocínio lógico ("é absurdo pensar isso"); はずがない nega uma expectativa ("não era para ser assim"). E o brasileiro tende a traduzir por um "não pode ser" fraquinho; o tom de わけがない é mais forte e categórico.
+Não confunda com はずがない. O わけがない nega por raciocínio lógico ("é absurdo pensar isso"); はずがない nega a possibilidade com base no que se sabe ("não tem como ser assim"). E o brasileiro tende a traduzir por um "não pode ser" fraquinho; o tom de わけがない é mais forte e categórico.
 
 #### わけではない: não é bem que, não quer dizer que
 O n3-wake-dewa-nai nega só uma parte, sem rejeitar tudo. Serve para corrigir uma conclusão exagerada que o ouvinte poderia tirar: "não é bem assim", "não quer dizer que". Reconhece exceções e nuances em vez de negar o fato inteiro. Formação: forma casual + わけではない (substantivo + な ou という + わけではない). Coloquial: わけじゃない.
@@ -56,7 +56,7 @@ Repare como vários desses começam com しっ ou じっ com aquele っ (sokuon)
 
 #### Quatro kanji de concordância e ordem
 O kanji 賛 significa "aprovar, concordar". Embaixo está 貝 (concha/dinheiro); pense em todos juntando moedas para apoiar uma causa. Está em 賛成 ("concordar, ser a favor").
-O kanji 刻 significa "gravar, entalhar, picar (o tempo)". À direita está a faca (刂). Está em 時刻 ("hora exata", da lição passada) e 刻; o tempo "esculpido" em pontos exatos.
+O kanji 刻 significa "gravar, entalhar, picar (o tempo)". À direita está a faca (刂). Está em 時刻 ("hora exata", da lição passada) e no verbo 刻む ("entalhar, marcar"); o tempo "esculpido" em pontos exatos.
 O kanji 更 significa "renovar, de novo, ainda mais". Está em 更新 ("atualização, renovação") e no advérbio 更に ("ainda mais, além disso").
 O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de algo cortado em linha. Está em 行列 ("fila de pessoas") e 列車 ("trem").
 
@@ -71,7 +71,7 @@ O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de
 - Uso はずだ para uma dedução fundamentada e NÃO o confundo com o 'deve' de obrigação (べきだ).
 - Descarto uma possibilidade por completo com わけがない, com o tom categórico certo.
 - Relativizo uma generalização com わけではない ('não é bem que'), sem achar que estou negando tudo.
-- Distingo わけがない (negação total) de はずがない (expectativa frustrada) e seguro o っ de 実験/実施.
+- Distingo わけがない (negação total) de はずがない (não tem como ser, pelo que se sabe) e seguro o っ de 実験/実施.
 
 ---
 

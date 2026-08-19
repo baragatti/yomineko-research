@@ -38,7 +38,7 @@ Um belo par de verbos com seus substantivos derivados.
 - 眺め (ながめ) - vista, panorama.
 - 半ば (なかば) - meio, metade do caminho.
 - 尚 (なお) - ainda, mais ainda; além disso.
-山の上からの眺めを眺めた (Contemplei a vista do alto da montanha.)
+山の上から景色を眺めた (Contemplei a vista do alto da montanha.)
 
 #### Natureza e reações fortes
 - 泥 (どろ) - lama, barro.

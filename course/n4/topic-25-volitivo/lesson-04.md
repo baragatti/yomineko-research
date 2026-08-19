@@ -33,7 +33,7 @@ Pense em ことにする como "fazer disso (こと) o que eu faço (する)", qu
 koto-ni-naru troca する ("fazer") por なる ("tornar-se"). Essa troca muda tudo: agora a decisão não é sua. Algo "ficou decidido", "acabou sendo que", por circunstâncias externas, pela empresa, pela escola, pelo destino. Você só recebe o resultado. O molde acompanha o de antes, só mudando o verbo final:
 Molde: [verbo na forma de dicionário] ことになる
 - 来月大阪に転勤することになった = "Ficou decidido que vou ser transferido para Osaka mês que vem" (a empresa decidiu, não eu).
-- 会議は金曜日になることになりました = "Ficou decidido que a reunião será na sexta."
+- 会議は金曜日に行うことになりました = "Ficou decidido que a reunião será na sexta."
 
 > **[l1-pitfall]**
 O contraste する vs なる é o coração da lição. ことにした = "EU decidi". ことになった = "ficou decidido (por aí)". Mesmo quando, na prática, foi você que escolheu, o japonês prefere ことになる para soar humilde, como se a decisão tivesse "acontecido". É um traço cultural: evita-se parecer impositivo.
@@ -52,7 +52,7 @@ Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした =
 
 #### Kanji da lição
 集 ("reunir, juntar, congregar"). Imagine um pássaro (隹) pousado numa árvore (木): quando um pousa, vêm muitos, e o bando se reúne. Aparece em 集まる ("reunir-se") e 集合 ("encontro marcado").
-員 ("membro"). Uma boca (口) dentro de um cerco: cada membro contado dentro de um grupo. Está em 員 e em 店員 ("atendente de loja"), bem perto de quem trabalha no 受付.
+員 ("membro"). Uma boca (口) em cima de uma concha (貝, o dinheiro da antiguidade): cada membro contado dentro de um grupo. Está em 員 e em 店員 ("atendente de loja"), bem perto de quem trabalha no 受付.
 画 ("traço; desenho/plano"). Um campo (田) delimitado por linhas: traços que desenham e planejam o espaço. Aparece em 計画 ("plano, projeto") e em 映画 ("filme"); tudo que se projeta numa スクリーン.
 
 #### Vocabulário extra

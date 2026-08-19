@@ -64,13 +64,13 @@ Para fechar, um conjunto variado: o clima que serve de cenário, uma sensação 
 彼にとってそれはとても辛い出来事だった (Para ele, aquilo foi um acontecimento muito doloroso.)
 
 > **[culture]**
-O 梅雨 (つゆ) é uma estação bem marcada no calendário japonês: chove quase todos os dias entre o fim de maio e meados de julho, na maior parte do país. O nome se escreve com os kanji de "ameixa" e "chuva", porque coincide com o amadurecimento das ameixas. É um período úmido em que a palavra 積もる dá lugar à umidade que se acumula em tudo.
+O 梅雨 (つゆ) é uma estação bem marcada no calendário japonês: chove quase todos os dias entre o fim de maio e meados de julho, na maior parte do país. O nome se escreve com os kanji de "ameixa" e "chuva", porque coincide com o amadurecimento das ameixas. É um período tão úmido que tudo parece encharcado, mas a palavra 積もる vale mesmo para o que se empilha, como neve, poeira e trabalho.
 
 #### Partícula で e itens restantes
 Falta apresentar uma palavra-ferramenta e fechar o vocabulário da lição.
 - で (で) - em, no, na (marca o lugar onde uma ação acontece).
 海で釣りをするのが好きだ (Gosto de pescar no mar.)
-Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa 釣り, a pescaria. Com isso, É um período tão úmido que tudo parece encharcado; já 積もる se usa mesmo para o que se empilha, como neve, poeira e trabalho..
+Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa 釣り, a pescaria. Com isso, você já viu as dezessete palavras desta lição.
 
 #### Hora de praticar
 

@@ -23,7 +23,7 @@ Molde: [pessoa] にかわって [ação]
 彼にかわって会議に出席します = Vou à reunião no lugar dele. Antes de um substantivo, usa-se にかわる; em texto formal aparece に代わり.
 
 > **[warning]**
-Existe um に変わって parecido na pronúncia (do verbo 変わる, mudar) que significa transformar-se em, sentido totalmente diferente de em vez de. Repare que a diferença está só no kanji: にかわって (no lugar de) escreve-se に代わって, com o kanji 代, enquanto に変わって (transformar-se em) traz o kanji 変. Para troca de algo material (em troca de), prefira と引き換えに.
+Existe um に変わって de pronúncia idêntica (do verbo 変わる, mudar) que significa transformar-se em, sentido totalmente diferente de em vez de. Repare que a diferença está só no kanji: にかわって (no lugar de) escreve-se に代わって, com o kanji 代, enquanto に変わって (transformar-se em) traz o kanji 変. Para troca de algo material (em troca de), prefira と引き換えに.
 
 #### に比べて: comparado com / em comparação a
 A expressão n3-ni-kurabete compara duas situações destacando a diferença. O termo que recebe に比べて é o ponto de referência da comparação; o resto da frase diz como o outro elemento difere dele. Registro neutro a levemente formal; na fala bem casual prefira より.

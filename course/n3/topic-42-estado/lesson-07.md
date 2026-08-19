@@ -13,7 +13,7 @@
 
 ---
 
-### Estados, materiais e ações: o batch fu continua
+### Estados, materiais e ações: o grupo fu continua
 Seguindo o grupo de palavras com leitura fu e bu, esta lição reúne substantivos sobre estados e quantidades, alguns termos de ciência e um punhado de verbos do dia a dia. Como sempre nestas lições de vocabulário, não há gramática nova: vamos só engordar o seu dicionário mental.
 
 #### Quantidade, falta e parte
@@ -28,8 +28,8 @@ Comecemos por palavras que descrevem estados e proporções.
 > **[l1-pitfall]**
 不足 (ふそく) é falta no sentido de quantidade insuficiente (faltou dinheiro, faltou sono). Não confunda com 不平 (ふへい), que é a reclamação que a pessoa faz; uma é a escassez, a outra é a queixa sobre ela.
 
-#### Ciência, matéria e física
-Este grupo aparece muito em textos mais sérios.
+#### Ciência, matéria e objetos
+Os dois primeiros vêm de textos mais sérios; os três seguintes são palavras concretas do dia a dia.
 - 物質 (ぶっしつ) - material, substância.
 - 物理 (ぶつり) - física, as leis da natureza.
 - 舞台 (ぶたい) - palco.
@@ -51,7 +51,7 @@ Para fechar, pessoas e alguns verbos.
 
 > **[l1-pitfall]**
 夫人 e 婦人 têm a mesma leitura (ふじん), mas significados diferentes: 夫人 é a esposa de alguém (a senhora fulana de tal), enquanto 婦人 é mulher em geral. O contexto resolve a dúvida.
-不図空を見上げたら、二つの虹があった (Quando olhei para o céu sem querer, havia dois arco-íris.)
+ふと空を見上げたら、二つの虹があった (Quando olhei para o céu sem querer, havia dois arco-íris.)
 手を洗って風邪を防ぎましょう (Vamos lavar as mãos para prevenir o resfriado.)
 
 #### Hora de praticar
@@ -60,7 +60,7 @@ Para fechar, pessoas e alguns verbos.
 > 📖 ステレオをかけても構わないかい。必要なら、すぐにまいりましょう。クラブの会員は会議室に集まった。水も空気も両方とも流動体である。最初から最後までうっとりしてた。父は中学校で英語を教えています。 — Tudo bem se eu ligar o som? Se for necessário, irei imediatamente. Os membros do clube se reuniram na sala de reuniões. Tanto a água quanto o ar são fluidos. Fiquei encantado(a) do começo ao fim. Meu pai ensina inglês numa escola de ensino fundamental.
 > 📖 学校は午前８時１０分から始まる。こっちの方があっちのより安いよ。その語にはいくつかの意味がある。来月には子どもが生まれるんだよ。この犬は２ヶ月前に生まれました。あの店でノートは売っていますか？ — A escola começa às 8h10 da manhã. Este aqui é mais barato do que aquele ali, viu. Essa palavra tem vários significados. No mês que vem vai nascer um bebê, sabia? Este cachorro nasceu há dois meses. Naquela loja vendem cadernos?
 - Reconheço e uso substantivos de estado e quantidade como 不足, 物価 e 部分.
-- Emprego termos de ciência e matéria como 物質, 物理 e 不正.
+- Emprego termos de ciência e matéria como 物質 e 物理.
 - Identifico palavras de pessoas e ações como 夫人, 双子 e 防ぐ.
 
 ---
@@ -82,7 +82,7 @@ Para fechar, pessoas e alguns verbos.
 
 
 ### 4. (production) {'pt-BR': 'Escreva uma frase em japonês dizendo Vamos prevenir o resfriado (use 防ぐ e 風邪).'}
-- **Resposta:** `{"text": "風邪を防ぎましょう", "accept": ["風邪を防ごう", "かぜを防ぎましょう", "風邪を防ぎます"]}`
+- **Resposta:** `{"text": "風邪を防ぎましょう", "accept": ["風邪を防ごう", "かぜを防ぎましょう", "かぜを防ごう"]}`
 - {'pt-BR': '防ぐ (ふせぐ) é proteger-se de ou prevenir; com ましょう vira um convite, vamos prevenir.'}
 
 

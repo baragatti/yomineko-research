@@ -28,10 +28,10 @@ Cuidado com os três sósias:ワ(wa),ク(ku) e ウ(u). O ワ é largo e aberto e
 Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O ワ tem dois traços: primeiro o tracinho curto no topo à esquerda, depois a grande curva que desce pela direita. O ヲ tem três traços, como um フ com uma barra no meio. Repita cada kana em voz alta enquanto escreve.
 
 > **[tip]**
-Boa notícia: com esta família, você fechou os 46 sons básicos do katakana. Agora consegue ler qualquer palavra escrita só com kana simples.
+Boa notícia: com esta família, você já viu 45 dos 46 kana básicos do katakana. Falta só o ン, que vem na próxima lição (ele é o último som de ワイン, logo abaixo).
 
 #### Pratique a leitura
-Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワイン(wain, vinho),ハワイ(hawai, Havaí),ワイシャツ(waishatsu, camisa social) e キウイ(kiui, kiwi). Repare como o ワ abre cada uma delas.
+Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワイン(wain, vinho),ハワイ(hawai, Havaí),ワイシャツ(waishatsu, camisa social) e キウイ(kiui, kiwi). Repare onde o ワ aparece em cada palavra: ele abre a primeira e a terceira, fica no meio da segunda e não aparece na última, onde o kana é o ウ.
 
 #### Hora de praticar
 - Reconheço ワ e ヲ e seus sons.

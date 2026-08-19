@@ -1,4 +1,4 @@
-# Title: 'Explicando o porquê: ですから e なぜなら'. Também no body, o H2: 'Explicando o porquê: justificar com clareza e cortesia'.
+# Explicando o porquê: ですから e なぜなら
 
 > Lição `les:n3-conectores-03` · tópico `top:n3-conectores` · **needs_review** (Layer C, aguarda professor).
 
@@ -53,7 +53,7 @@ Armadilha PT: 息 (いき, "folego") e 行き (いき, "ida") soam iguais. So o 
 O kanji 決 significa "decidir, resolver". O radical da esquerda e a água (氵): pense em decidir o curso da água, abrir o caminho. Aparece em 決定 ("decisão") e 決める ("decidir").
 O kanji 関 significa "relação, barreira, portao". O radical externo e o portao (門). Forma 関係 ("relação, ligação") e 関心 ("interesse"). Útil ao explicar causas e conexoes.
 O kanji 実 significa "realidade, verdade, fruto". Sob o teto (宀) cresce o que e real, o fruto. Aparece em 実は ("na verdade") e 実験 ("experimento").
-O kanji 首 significa "pescoco, cabeca". E um pictograma de uma cabeca com cabelo em cima. Aparece em 首相 ("primeiro-ministro", a "cabeca mutua" do governo, com o 相 que você ja viu).
+O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com cabelo em cima. Aparece em 首相 ("primeiro-ministro", a "cabeça mútua" do governo, com o 相 que você já viu).
 
 #### Exemplos do banco
 > 🗣 彼はドライですからね。 — É que ele é meio frio mesmo, né.
@@ -83,7 +83,7 @@ O kanji 首 significa "pescoco, cabeca". E um pictograma de uma cabeca com cabel
 
 ### 3. (particle_choice) {'pt-BR': 'Você vai abrir uma frase inteira so para justificar, num texto escrito formal. Qual conector usar? 今日は行かない。___、雨が降っているからだ。'}
 - **Resposta:** `{"choices": ["なぜなら", "ですから", "それとも", "つまり"], "correct": "なぜなら"}`
-- {'pt-BR': "なぜなら abre uma frase dedicada a justificar a anterior, com tom estruturado/escrito, e fecha com からだ. ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo"}
+- {'pt-BR': "なぜなら abre uma frase dedicada a justificar a anterior, com tom estruturado/escrito, e fecha com からだ. ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo, e por isso não cabe aqui, onde a segunda frase é a justificativa."}
 
 
 ### 4. (matching) {'pt-BR': 'Ligue cada elemento ao seu sentido.'}

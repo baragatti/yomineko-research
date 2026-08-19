@@ -1,6 +1,6 @@
 # Curso — Módulo Fundamentos (pré-N5) (pre-n5)
 
-_Gerado 2026-08-05. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
+_Gerado 2026-08-19. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
@@ -40,6 +40,6 @@ _Gerado 2026-08-05. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 6. Saudações e sobrevivência
 - **kanji** (0): —
-- **vocab** (24, amostra): 嗚呼、いいえ、ええ、男の子、女の子、下さい、さあ、其れから、其れでは、一寸、では、如何して、どうも、もう、もしもし
+- **vocab** (24, amostra): では、下さい、もう、就いて、そんな、如何して、女の子、男の子、もう一度、御座います、あっ、どうも、さあ、此れから、いいえ
 - **gramática** (0): —
 

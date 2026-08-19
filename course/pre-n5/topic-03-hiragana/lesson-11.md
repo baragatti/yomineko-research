@@ -17,10 +17,10 @@
 Você chegou ao último hiragana básico! O ん é especial: é a única consoante que sozinha vale por uma sílaba inteira. Ela nunca começa uma palavra; aparece sempre depois de outro som, no meio ou no fim. Some isso a todas as famílias que você já viu e o quadro do hiragana fica completo.
 
 > **[l1-advantage]**
-O som de ん existe em português, então seu ouvido já o conhece. Ele se parece com o n de "hífen" dito com calma. Cuidado só com um detalhe: em "bom" e "sim" o português apaga o n/m e nasaliza só a vogal, e não é isso que acontece no ん. A vantagem: você não precisa aprender um som novo, só dar a ele uma batida própria.
+O som de ん existe em português, então seu ouvido já o conhece. Ele se parece com o n de "nada" ou "cana", segurado bem (nnn). Cuidado só com um detalhe: em "bom" e "sim" o português apaga o n/m e nasaliza só a vogal, e não é isso que acontece no ん. A vantagem: você não precisa aprender um som novo, só dar a ele uma batida própria.
 
 #### O som do ん
-- ん(n): um som nasal que ocupa o tempo de uma sílaba inteira, como o n final de "hífen".
+- ん(n): um som nasal que ocupa o tempo de uma sílaba inteira, como o n de "cana" segurado (nnn).
 
 > **[l1-pitfall]**
 Em português, o "n" e o "m" no fim da sílaba só nasalizam a vogal anterior ("sim" vira quase "sĩ", e o n some). Em japonês o ん é uma batida própria: dê a ele o mesmo tempo de qualquer outra sílaba. Diga はん(han) em dois tempos: ha + n, não um "hã" engolido.

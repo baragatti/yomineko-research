@@ -22,11 +22,11 @@ No N3 você começa a falar de tempo com mais nuance: não basta dizer 'quando' 
 A ideia central de うちに é uma janela de tempo que está aberta agora e vai se fechar. Você faz algo enquanto a condição favorável ainda dura.
 - 温かいうちに食べてください  Coma enquanto está quente.
 - 明るいうちに帰ろう  Vamos voltar enquanto ainda está claro.
-Formação: verbo na forma ている + うちに; adjetivo い + うちに; substantivo + の + うちに.
+Formação: verbo na forma ている + うちに; verbo na forma ない + うちに; adjetivo い + うちに; substantivo + の + うちに.
 
 > **[l1-pitfall]**
 Armadilha PT. A forma negativa
-降っていないうちに
+雨が降らないうちに
 traduz-se por 'antes que comece a chover', e não 'enquanto não chove'. O português inverte a lógica. Pense sempre em 'aproveitar antes que a situação mude'.
 
 #### 2. n3-saichuu-ni
@@ -95,7 +95,7 @@ Faça os exercícios abaixo. Cada resposta vem com explicação.
 
 
 ### 3. (cloze) {'pt-BR': 'Complete: 疲れる___走った。 (Corri até cansar.)'}
-- **Resposta:** `{"text": "疲れる___走った", "full": "疲れるまで走った"}`
+- **Resposta:** `{"text": "まで", "full": "疲れるまで走った"}`
 - {'pt-BR': 'まで marca o limite contínuo da ação: correr sem parar ATÉ o ponto de cansar.'}
 
 

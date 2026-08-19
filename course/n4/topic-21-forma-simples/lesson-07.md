@@ -80,6 +80,6 @@ Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouc
 
 ### 5. (production) {'pt-BR': "Diga em japonês, de modo casual, 'De repente o tempo piorou.' usando 急に e 悪くなった (piorou)."}
 - **Resposta:** `{"text": "急に天気が悪くなった。", "accept": ["急に天気が悪くなった", "きゅうに天気が悪くなった", "急にてんきが悪くなった", "急に天気がわるくなった", "急に天気が悪くなってきた"]}`
-- {'pt-BR': " Por ser casual, não leva です no fim: 急に ('de repente') + 天気が ('o tempo') + 悪くなった ('piorou', forma simples passada). 急に vem antes do verbo da mudança."}
+- {'pt-BR': " Por ser casual, o verbo fica na forma simples 悪くなった, e não na polida 悪くなりました: 急に ('de repente') + 天気が ('o tempo') + 悪くなった ('piorou', forma simples passada). 急に vem antes do verbo da mudança."}
 
 

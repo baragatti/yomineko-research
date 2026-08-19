@@ -118,7 +118,7 @@ Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade r
 
 
 ### 5. (production) {'pt-BR': "Diga 'Li um livro chamado Botchan' usando という. (本 = livro, 読みました = li)"}
-- **Resposta:** `{"text": "「坊っちゃん」という本を読みました", "accept": ["坊っちゃんという本を読みました", "ぼっちゃんというほんをよみました", "「坊っちゃん」という本を読みました。", "ボッちゃんという本を読みました"]}`
+- **Resposta:** `{"text": "「坊っちゃん」という本を読みました", "accept": ["坊っちゃんという本を読みました", "ぼっちゃんというほんをよみました", "「坊っちゃん」という本を読みました。", "坊ちゃんという本を読みました"]}`
 - {'pt-BR': "A fórmula de nomear é Nome + という + substantivo: 坊っちゃんという本 = 'um livro chamado Botchan'. Depois vem を読みました ('li'). Repare que em pt-BR natural dá para traduzir só por 'li o livro Botchan', sem o 'chamado'."}
 
 

@@ -35,7 +35,7 @@ Não se preocupe em dominar は contra が de uma vez: essa dupla volta em vári
 O japonês tem dois verbos de existência, e a escolha depende da natureza do sujeito:
 - ある (有る): para coisas e seres inanimados (objetos, plantas, lugares, ideias). Polido: あります.
 - いる (居る): para seres animados que se movem por vontade própria (pessoas, animais). Polido: います.
-Repare que ある e いる têm formas polidas irregulares no negativo, mas por enquanto fique com o positivo あります / います, que já cobre quase tudo.
+Repare que ある tem um negativo irregular fora do polido: ない, e não あらない. Por enquanto fique com o positivo あります / います, que já cobre quase tudo.
 
 > **[l1-pitfall]**
 O critério é "tem vida e se move sozinho?", não "é vivo?". Uma árvore está viva, mas não anda, então usa ある. Um peixe usa いる. Trocar os dois é o erro mais comum de iniciante; quando a dúvida bater, pergunte-se: o sujeito se mexe por conta própria?

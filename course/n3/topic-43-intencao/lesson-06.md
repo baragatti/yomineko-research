@@ -14,7 +14,7 @@
 ---
 
 ### Cidade, leitura e o ato de soltar nós
-Quem decide tocar a vida na cidade grande precisa de palavras para falar de independência, hábitos e até daquele veneno que se deve evitar. Este lote reúne substantivos urbanos, verbos de "desatar" e dois conectores úteis. Use a gramática deste tópico, como ～ことにしている (faço questão de) e ～つもりでした (eu pretendia), nos seus exemplos.
+Quem decide tocar a vida na cidade grande precisa de palavras para falar de independência, hábitos e até daquele veneno que se deve evitar. Esta lição reúne substantivos urbanos, verbos de "desatar" e dois conectores úteis. Nos exemplos reaparece a gramática deste tópico: ～ことにしている (faço questão de) e ～つもりでした (eu pretendia).
 
 #### Cidade e vida urbana
 Dois jeitos de dizer "cidade", com nuances diferentes.
@@ -40,7 +40,7 @@ Um par clássico de transitivo e intransitivo, com a mesma raiz.
 - 特徴 (とくちょう) - característica, traço marcante.
 - 独特 (どくとく) - peculiar, único, bem característico.
 - 得意 (とくい) - orgulho, satisfação; também "ser bom em algo".
-彼の読書の特徴は独特だ (O jeito dele de ler tem um traço bem peculiar.)
+彼の読書の仕方には独特な特徴がある (O jeito dele de ler tem um traço bem peculiar.)
 
 #### Tempo, lugar e conectores
 - 時 (とき) - tempo, hora, momento.

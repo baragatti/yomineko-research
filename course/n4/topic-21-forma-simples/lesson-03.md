@@ -59,7 +59,7 @@ Aproveite também para fixar vários verbos do cotidiano, úteis para descrever 
 新 significa "novo", e aparece no adjetivo 新しい ("novo"). Mnemônico: junta árvore (木) com um machado (斤) à direita; derrubar a árvore com o machado deixa a madeira nova em folha para construir.
 
 > **[example]**
-Juntando tudo: 新しい傘は千円しかなかった = "o guarda-chuva novo custou só mil ienes". Note o negativo no passado, なかった, mantendo o sentido de "foi só isso".
+Juntando tudo: 新しい傘は千円しかしなかった = "o guarda-chuva novo custou só mil ienes". Aqui o verbo する tem o sentido de "custar". Note o negativo no passado, しなかった, mantendo o sentido de "foi só isso".
 
 #### Hora de praticar
 

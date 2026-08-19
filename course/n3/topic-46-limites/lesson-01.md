@@ -42,7 +42,7 @@ O sufixo n3-sa transforma um adjetivo em substantivo que expressa o grau daquela
 
 #### Kanji do bloco
 Os kanji de hoje giram em torno de medida e julgamento. Veja a leitura e o sentido de cada um:
-- 易 fácil, simples (também 'adivinhação'): 簡単, 'simples'.
+- 易 fácil, simples (também 'adivinhação'): 容易, 'fácil, sem dificuldade'.
 - 速 rápido, veloz: 速度, 'velocidade'.
 - 単 simples, único, mero: 単語, 'palavra (vocábulo)'.
 - 号 número, título, apelido: 番号, 'número (de telefone)'.
@@ -86,12 +86,12 @@ Faça os exercícios abaixo. Confira a explicação de cada um depois de respond
 
 ## Exercícios
 ### 1. (particle_choice) {'pt-BR': 'これは10分___待てば終わる作業です。(É uma tarefa que termina se você esperar uns dez minutos.)'}
-- **Resposta:** `{"choices": ["くらい", "しか", "ばかり", "ほど"], "correct": "くらい"}`
+- **Resposta:** `{"choices": ["くらい", "しか", "から", "だけ"], "correct": "くらい"}`
 - {'pt-BR': "Para indicar quantidade aproximada ('uns dez minutos'), usamos くらい (ou ぐらい). Liga-se direto ao número/contador 10分."}
 
 
 ### 2. (cloze) {'pt-BR': 'Complete com o sufixo de grau: この山の高___は3776メートルです。(A altura desta montanha é 3776 metros.)'}
-- **Resposta:** `{"text": "この山の高___は3776メートルです", "full": "この山の高さは3776メートルです"}`
+- **Resposta:** `{"text": "さ", "full": "この山の高さは3776メートルです"}`
 - {'pt-BR': "高い (alto) perde o い e ganha さ: 高さ = 'altura'. O sufixo さ nominaliza o adjetivo focando no grau mensurável."}
 
 

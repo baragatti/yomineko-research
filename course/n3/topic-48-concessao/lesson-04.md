@@ -19,7 +19,7 @@ Para fechar a unidade, três recursos que medem o resultado contra uma expectati
 #### 〜にしては: para / considerando que (base concreta)
 A estrutura n3-ni-shite-wa aponta que algo SURPREENDE quando se leva em conta uma condição concreta e nomeada. Em pt-BR é o 'para' de 'para iniciante, é muito bom': sempre há contraste entre o que a condição faria esperar e a realidade.
 - 初心者にしては上手だ = 'Para iniciante, é muito bom.'
-- 安いにしては美味しい = 'Para algo barato, é gostoso.'
+- 子どもにしては字がきれいだ = 'Para uma criança, a letra é muito bonita.'
 
 > **[l1-pitfall]**
 Armadilha PT: use にしては só quando a base de comparação é CONCRETA e específica (uma pessoa, um padrão dado). Quando a base é geral ou normativa, o natural é わりには. O 'para' do português cobre os dois, então preste atenção ao tipo de base.

@@ -46,7 +46,7 @@ Algumas palavras novas para usar nos exemplos de causa e efeito:
 - お喋り: conversa, bate-papo; 男の人: homem.
 
 > **[l1-pitfall]**
-Armadilha PT: em せいで e おかげで, mantenha o o final limpo. O brasileiro tende a levantar o "o" para "u" sem perceber (como em "gato" virando "gatu"). Aqui é "de" com "e" limpo, nunca "di".
+Armadilha PT: em せいで e おかげで, mantenha o e final limpo. O brasileiro tende a levantar o "e" final para "i" sem perceber (como em "leite" virando "leiti"). Aqui é "de", nunca "di".
 
 #### Exemplos do banco
 > 🗣 あなたのおかげです。 — É tudo graças a você.

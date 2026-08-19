@@ -34,8 +34,8 @@ Depois de verbo ou de adjetivo-い, basta colar けど. Depois de substantivo ou
 No registro polido você pode encaixar けど depois de です/ます:有名ですけど("é 有名, mas...") soa educado e natural.
 
 #### けれども: a versão mais formal
-Quando o contexto pede cuidado; um e-mail, uma redação, uma fala polida; use keredo-mo. É a forma mais completa de けど e significa "mas", "contudo", "no entanto". Guarde a escala, do mais formal ao mais casual:
-- けれども(mais formal, escrita) ›けれど›けど(conversa) ›が(neutro/escrito).
+Quando o contexto pede cuidado (um e-mail, uma redação, uma fala polida), use keredo-mo. É a forma mais completa de けど e significa "mas", "contudo", "no entanto". Guarde a escala, do mais formal ao mais casual:
+- けれども(mais formal, escrita) ›が(formal, típico da escrita) ›けれど›けど(conversa).
 Exemplo cuidado:このカメラは高いけれども、いい= "esta câmera é cara, porém é boa". Na conversa do dia a dia, a mesma frase fica melhor com けど.
 
 #### けど também suaviza e deixa em aberto

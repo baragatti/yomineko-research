@@ -44,7 +44,7 @@ O arrependimento ronda quem tropeça. Estes kanji giram em torno de tentar, falh
 O kanji 敗 significa 'derrota, fracasso'. Vem em 失敗 ('falha, erro') e 敗北 ('derrota'): a matéria-prima de todo 'eu devia ter...'.
 O kanji 満 significa 'cheio, pleno, satisfação'. Tem água (氵) à esquerda: um recipiente transbordando. Vem em 満足 ('satisfação') e 不満 ('insatisfação').
 O kanji 積 significa 'acumular, empilhar'. Aparece em 経験を積む ('acumular experiência'): o que você queria ter feito mais.
-O kanji 達 significa 'alcançar, atingir'; é o 達 de 友達 ('amigos'). O kanji 登 significa 'subir, escalar', em 登る ('escalar'). E 達 com 'alcançar o topo' combina bem com a ideia de chegar lá.
+O kanji 達 significa 'alcançar, atingir'; é o 達 de 友達 ('amigos'). O kanji 登 significa 'subir, escalar', em 登る ('escalar'). Dá para juntar os dois numa imagem só: 登 é a subida e 達 é a chegada.
 Mais cinco para a sua coleção: 横 ('lateral, horizontal', em 横, 'ao lado'); 深 ('profundo', em 深い); 光 ('luz', em 光); 路 ('caminho, rota', em 道路, 'estrada'); e 太 ('gordo, grosso', em 太い).
 E quatro do mundo do estudo e do clima: 科 ('disciplina, departamento', em 科学, 'ciência'); 師 ('mestre, professor', em 教師); 客 ('convidado, cliente', em 客); e 候 ('clima, estação', em 気候, 'clima').
 

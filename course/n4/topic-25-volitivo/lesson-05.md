@@ -34,15 +34,15 @@ Aqui 忘れる ("esquecer") está na negativa 忘れない, seguido de ように
 #### Frases reais com 〜ようにする
 Veja a estrutura em frases que japoneses realmente dizem. São ótimas para falar de metas pessoais.
 > 🗣 毎日運動するようにする。 — Vou me esforçar para fazer exercício todo dia.
-Esta é o exemplo-modelo: o verbo 運動する ("fazer exercício") na forma de dicionário, seguido de ようにする, resulta em "vou me esforçar para fazer exercício todo dia". Não é só uma intenção solta; é o compromisso de transformar isso em hábito.
+Esta frase é o exemplo-modelo: o verbo 運動する ("fazer exercício") na forma de dicionário, seguido de ようにする, resulta em "vou me esforçar para fazer exercício todo dia". Não é só uma intenção solta; é o compromisso de transformar isso em hábito.
 > 🗣 もっと気を付けるようにするよ。 — Vou procurar tomar mais cuidado.
 Nesta, 気を付ける é a expressão "tomar cuidado", e もっと quer dizer "mais". Com ようにする, fica "vou procurar tomar mais cuidado": um esforço contínuo, não um ato único.
 
 > **[l1-pitfall]**
 Não confunda ようにする com ことにする. A estrutura ことにする é uma decisão pontual ("decidi, resolvi fazer"); já ようにする é um esforço contínuo ("procuro fazer como hábito"). Compare: 歩くことにした quer dizer "decidi ir a pé (hoje)", enquanto 歩くようにしている quer dizer "tenho procurado andar a pé (sempre)".
 
-#### Vocabulário de gentileza e cortesia
-Estas palavras combinam bem com metas de comportamento ("procuro ser gentil", "procuro agradecer"). Leia o som em kana.
+#### Vocabulário da lição
+Várias destas palavras combinam bem com metas de comportamento ("procuro ser gentil", "procuro agradecer"). Leia o som em kana.
 - 親切: gentil, atencioso, amável.
 - 熱心: zeloso, entusiasmado, dedicado.
 - お礼: agradecimento, gratidão.

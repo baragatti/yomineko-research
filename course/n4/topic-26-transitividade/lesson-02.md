@@ -17,7 +17,7 @@
 Na lição anterior você viu a ideia central dos pares: transitivo (alguém faz algo a um objeto, marcado com を) e intransitivo (a coisa muda sozinha, marcada com が). Agora vamos sair da teoria e levar isso para dentro de casa: objetos que você abre, apaga, seca ou passa todos os dias. Quanto mais concreto o vocabulário, mais fácil sentir a diferença entre "eu apaguei o fogo" e "o fogo apagou".
 
 #### Objetos do cotidiano
-Comece reconhecendo as coisas. Aqui vão itens de cozinha, material e elementos comuns da casa, todos escritos em kana para você ler de primeira:
+Comece reconhecendo as coisas. Aqui vão itens de cozinha, material e elementos comuns da casa, uns escritos em katakana e outros em kanji:
 - ステーキ: bife, filé (aquele que vai à frigideira).
 - 食料品: gêneros alimentícios, mantimentos da despensa.
 - ジャム: geleia, para passar no pão.

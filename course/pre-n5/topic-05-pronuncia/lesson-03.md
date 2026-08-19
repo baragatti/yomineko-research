@@ -1,9 +1,9 @@
-# Devozeamento: です/ます e o u quase mudo
+# Desvozeamento: です/ます e o u quase mudo
 
 > Lição `les:pre-n5-pronuncia-03` · tópico `top:pre-n5-pronuncia` · **needs_review** (Layer C, aguarda professor).
 
 **Objetivos:**
-- Entender que o i e o u ficam devozeados (quase mudos) entre consoantes surdas ou no fim da palavra
+- Entender que o i e o u ficam desvozeados (quase mudos) entre consoantes surdas ou no fim da palavra
 - Pronunciar です como 'dess' e ます como 'mass', sem inserir vogal cheia
 - Evitar a epêntese (o 'i' extra do português) ao ler すき, した e palavras parecidas
 
@@ -13,8 +13,8 @@
 
 ---
 
-### Devozeamento: です/ます e o u quase mudo
-Você já sabe ler hiragana e katakana. Agora vamos a um detalhe da pronúncia que faz toda a diferença para soar natural. Em japonês, as vogais i e u muitas vezes ficam devozeadas, ou seja, quase mudas. Isso acontece principalmente quando elas aparecem entre duas consoantes surdas ou no fim da palavra.
+### Desvozeamento: です/ます e o u quase mudo
+Você já sabe ler hiragana e katakana. Agora vamos a um detalhe da pronúncia que faz toda a diferença para soar natural. Em japonês, as vogais i e u muitas vezes ficam desvozeadas, ou seja, quase mudas. Isso acontece principalmente quando elas aparecem entre duas consoantes surdas ou no fim da palavra.
 
 > **[example]**
 Repare como o u some na prática:です soa dess (e não "dê-su"),ます soa mass (e não "má-su"). O i faz o mesmo:すき soa ski (gostar de) e した soa shta (fez / embaixo).
@@ -49,7 +49,7 @@ Leia devagar e depois rápido, sempre cortando a vogal:です(dess),ます(mass)
 ## Exercícios
 ### 1. (recognition) {'pt-BR': 'Como です soa na fala natural?'}
 - **Resposta:** `{"choices": ["dess", "desi", "dê-su"], "correct": "dess"}`
-- {'pt-BR': "O u de です fica devozeado (quase mudo): soa 'dess'. Inserir um 'i' ('desi') é a armadilha do português; e a vogal cheia 'dê-su' soa robótica."}
+- {'pt-BR': "O u de です fica desvozeado (quase mudo): soa 'dess'. Inserir um 'i' ('desi') é a armadilha do português; e a vogal cheia 'dê-su' soa robótica."}
 
 
 ### 2. (recognition) {'pt-BR': 'Qual é o erro típico do brasileiro ao pronunciar ます?'}
@@ -57,7 +57,7 @@ Leia devagar e depois rápido, sempre cortando a vogal:です(dess),ます(mass)
 - {'pt-BR': "A epêntese (o 'i' extra do português) faz virar 'masi'. O certo é cortar a vogal: ます soa 'mass'."}
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao som correto (com a vogal devozeada).'}
+### 3. (matching) {'pt-BR': 'Ligue cada palavra ao som correto (com a vogal desvozeada).'}
 - **Resposta:** `{"pairs": [["です", "dess"], ["ます", "mass"], ["すき", "ski"], ["した", "shta"]]}`
 - {'pt-BR': "Em todas, o i ou o u fica quase mudo entre consoantes surdas. Nada de inserir um 'i' extra."}
 

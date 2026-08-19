@@ -24,7 +24,7 @@ A passiva depende do grupo do verbo:
 - Irregulares:する→される;来る→来られる.
 
 > **[tip]**
-Todo verbo na passiva vira um ichidan terminado em られる. Por isso você o conjuga depois como qualquer verbo ru: passado 〜られた, presente contínuo 〜られている.褒められる→褒められた("foi elogiado").
+Todo verbo na passiva vira um ichidan terminado em れる. Por isso você o conjuga depois como qualquer verbo ru: passado 〜れた, presente contínuo 〜れている.褒められる→褒められた("foi elogiado").
 
 #### Passiva regular: quem recebe a ação
 O receptor vira o tópico, e quem fez a ação (o agente) ganha a partícula に("por"). O molde é (receptor) は (agente) に (verbo passivo).

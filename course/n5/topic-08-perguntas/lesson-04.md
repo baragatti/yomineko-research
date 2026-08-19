@@ -62,7 +62,7 @@ Cuidado com as vogais longas dessas palavras. Em コーヒー (café) e カレ�
 - 珈琲= café
 
 > **[culture]**
-Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tipo de pergunta perfeita para esta lição, como "Por que você faltou? Pegou um resfriado?". Note também que かぜ tem dois kanji:風(vento) é "vento";風邪 é "resfriado".
+Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tipo de pergunta perfeita para esta lição, como "Por que você faltou? Pegou um resfriado?". Note também que かぜ tem duas grafias em kanji: 風 é "vento"; 風邪 é "resfriado".
 
 #### Hora de praticar
 

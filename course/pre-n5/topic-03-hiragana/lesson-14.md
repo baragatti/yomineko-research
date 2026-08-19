@@ -14,7 +14,7 @@
 ---
 
 ### Hiragana: Contraídos (yōon) I (きゃ・しゃ・ちゃ・にゃ・ひゃ)
-Você já conhece os sons da coluna i: き, し, ち, に e ひ. Agora vamos juntar cada um deles com um や, ゆ ou よ escrito pequeno. Esse som combinado se chama yōon: uma sílaba só, não duas. O や/ゆ/よ pequeno não tem som próprio; ele apenas funde a vogal anterior, formando uma única batida.
+Você já conhece os sons da coluna i: き, し, ち, に e ひ. Agora vamos juntar cada um deles com um や, ゆ ou よ escrito pequeno. Esse som combinado se chama yōon: uma sílaba só, não duas. O や/ゆ/よ pequeno não forma sílaba separada: ele toma o lugar da vogal i do kana anterior e traz a vogal nova, tudo numa única batida.
 
 > **[tip]**
 O segredo é o tamanho: きや (dois sinais normais) lê-se kiya, em duas sílabas. Já きゃ, com o や pequeno no canto inferior, lê-se kya, numa só sílaba. O símbolo miudinho avisa: "funda comigo".

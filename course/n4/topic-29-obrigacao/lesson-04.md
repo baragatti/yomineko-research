@@ -48,9 +48,9 @@ Molde: [momento] までに [verbo na negativa] と
 > **[tip]**
 Para organizar a fala, alguns advérbios caem muito bem aqui:
 - 先ず: primeiro de tudo (para o que vem antes).
-- 是非: sem falta, com certeza (para reforçar a vontade).
+- 是非: com certeza, sem falta. Combina com vontade e convite ("quero muito ir", "não deixe de vir"), não com obrigação.
 - 特に: especialmente (para destacar o mais urgente).
-Por exemplo: 是非あしたまでにやらないと ("preciso fazer até amanhã sem falta").
+Por exemplo: 必ずあしたまでにやらないと ("preciso fazer até amanhã sem falta").
 
 > **[example]**
 Mais palavras úteis do dia a dia:

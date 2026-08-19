@@ -62,7 +62,7 @@ E ainda uma direção, que volta nos kanji logo abaixo:
 - 西: oeste
 
 > **[example]**
-Quem não quer que chegue logo o 夏休み? Daria pra dizer 夏休みがほしいです("queria férias de verão") ou, mais comum,日曜日がほしいです("queria que fosse domingo").
+Quem não quer que chegue logo o 夏休み? Daria pra dizer 夏休みがほしいです("quero férias de verão") ou 日曜日がほしいです("quero um domingo de folga"). Para dizer "queria que já fosse domingo", o japonês usa outra construção, que você vê mais pra frente.
 
 #### Kanji da lição
 Quatro kanji para fixar, três deles ligados a números e direções.

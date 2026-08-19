@@ -15,7 +15,7 @@
 ---
 
 ### Comparando duas coisas: より e ～ほうが
-Como dizer que o trem é mais rápido que o ônibus, ou que hoje está mais quente que ontem? O japonês resolve toda comparação entre duas coisas com duas pecinhas: a partícula yori-hou-ga, que marca o termo de comparação (o nosso "do que"), e ほうが, que aponta o lado que ganha. Nesta lição você vai montar o molde "A é mais [adjetivo] que B" e treinar as quatro ordens mais comuns.
+Como dizer que o trem é mais rápido que o ônibus, ou que hoje está mais quente que ontem? O japonês resolve toda comparação entre duas coisas com duas pecinhas: a partícula yori-hou-ga, que marca o termo de comparação (o nosso "do que"), e ほうが, que aponta o lado que ganha. Nesta lição você vai montar o molde "A é mais [adjetivo] que B" e treinar os quatro moldes mais comuns.
 
 #### より: a partícula "do que"
 A partícula より gruda depois do termo que serve de base de comparação, o nosso "do que". Em バスより速い, o より diz "do que o ônibus", e 速い ("rápido") completa a ideia. Repare numa coisa que economiza muita regra: o japonês não tem uma palavra solta para "mais". O sentido de "mais rápido" já nasce da própria estrutura, e o adjetivo fica na forma normal, sem nada na frente.
@@ -33,12 +33,12 @@ Aqui o バスより ("do que o ônibus") vem primeiro e 電車のほうが ("o l
 > 🗣 電車のほうがバスより速い — O trem é mais rápido que o ônibus.
 Mesma frase, blocos trocados: 電車のほうが ("o lado do trem") na frente e バスより ("do que o ônibus") atrás. Essa é a ordem do alvo gp-140: のほうが … より. Trem continua ganhando.
 
-#### Quatro variações da mesma ideia
-Quatro padrões cobrem "A é mais X que B". São a mesma ferramenta vista de ângulos diferentes; guarde-os como um só conjunto. Repare que, em todos eles, より continua colado no termo menor e のほうが no lado que ganha; o que muda é só por onde a frase começa.
+#### Quatro moldes, três ordens
+Quatro moldes cobrem "A é mais X que B", mas em apenas três ordens: o segundo e o quarto repetem a mesma ordem, com usos diferentes. Guarde-os como um só conjunto. Repare que, em todos, より continua colado no termo menor e のほうが no lado que ganha; o que muda é só por onde a frase começa.
 - は…より…です (wa-yori-desu): o jeito polido e básico. 電車はバスより速いです = "O trem é mais rápido que o ônibus."
-- より…ほうが (yori-hou-ga): começa pelo "do que". バスより電車のほうが速い.
+- より…のほうが (yori-hou-ga): começa pelo "do que". バスより電車のほうが速い.
 - のほうが…より (gp-140): começa pelo lado que ganha. 電車のほうがバスより速い.
-- より…のほうが (gp-47): o "prefiro B a A / B é mais". 電車よりバスのほうが安い = "O ônibus é mais barato que o trem."
+- より…のほうが, agora para preferir (gp-47): a mesma ordem do segundo item, agora com sentido de escolha, "prefiro B a A". 電車よりバスのほうが安い = "O ônibus é mais barato que o trem."
 
 > **[l1-advantage]**
 Em português você muda a frase inteira para inverter ("o trem é mais rápido que o ônibus" / "o ônibus é mais lento que o trem"). Em japonês basta deslocar os blocos: as partículas より e のほうが dizem sozinhas quem é quem, então a ordem fica livre.
@@ -94,7 +94,7 @@ O kanji 小 significa pequeno, reduzido. Suas leituras principais são ちい (e
 - {'pt-BR': "のほうが marca o lado favorecido (電車, o trem). Junto com バスより ('do que o ônibus') forma a comparação のほうが…より."}
 - frases: `sent:gen-ead8371d038a`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'O lado do trem é mais rápido do que o ônibus.' com as peças: [速い] [電車] [バス] [のほうが] [より]"}
+### 4. (sentence_build) {'pt-BR': "Comece pelo lado que PERDE (バスより) e monte 'Do que o ônibus, o trem é que é mais rápido.' com as peças: [速い] [電車] [バス] [のほうが] [より]"}
 - **Resposta:** `{"order": ["バス", "より", "電車", "のほうが", "速い"], "text": "バスより電車のほうが速い。"}`
 - {'pt-BR': "Ordem より…のほうが: バス + より ('do que o ônibus') + 電車 + のほうが ('o lado do trem') + 速い ('rápido'). より gruda no perdedor (バス)."}
 - frases: `sent:gen-dc17b084b7de`

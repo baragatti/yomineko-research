@@ -33,7 +33,7 @@ Quando você quer resumir, reformular ou comentar uma frase inteira (uma fala, u
 Repare na estrutura: a frase あなたが先生だ("você é professor") vira o pacote 〜ということ, marcado com を e entregue a 知っています("sei"). Resultado: "sei o fato de que você é professor".
 
 > **[l1-pitfall]**
-Em português dizemos "sei que você é professor" com um simples "que". Em japonês esse "que" exige o pacote という seguido de こと antes do verbo. Não tente traduzir "que" como uma palavrinha solta: pense "empacotar a frase".
+Em português dizemos "sei que você é professor" com um simples "que". Em japonês esse "que" costuma virar o pacote という seguido de こと antes do verbo. Não tente traduzir "que" como uma palavrinha solta: pense "empacotar a frase".
 O segundo grande uso é reformular: "ou seja, isso quer dizer que...". Aí ということ fecha a frase com です ou ですか.
 > 🗣 それでは、あなたは来ないということですか。 — Então isso quer dizer que você não vem?
 Aqui quem fala junta as pistas e confirma a conclusão: "então isso quer dizer que você não vem?". O ということですか é a forma natural de pedir essa confirmação.

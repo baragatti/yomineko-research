@@ -1,4 +1,4 @@
-# Advérbios de frequência: いつも e けっこう
+# Advérbios do dia a dia: いつも e けっこう
 
 > Lição `les:n5-rotina-01` · tópico `top:n5-rotina` · **needs_review** (Layer C, aguarda professor).
 
@@ -14,7 +14,7 @@
 
 ---
 
-### Advérbios de frequência: いつも e けっこう
+### Advérbios do dia a dia: いつも e けっこう
 Para começar a contar a sua rotina, dois advérbios pequenos resolvem muita coisa.itsumo diz que algo é um hábito ("sempre", "de costume"), e gp-42 mede o grau de algo ("bastante", "razoavelmente"). Os dois vão na frente do que descrevem, igual ao nosso "sempre" e "bem". Junto deles vem um primeiro bloco de palavras do dia a dia.
 
 #### いつも: o que você faz por hábito

@@ -45,15 +45,15 @@ Não troque かい por かな: são funções diferentes.かい pergunta ao outr
 #### Kanji do dia: 会, 員, 者, 方
 Estes quatro kanji aparecem muito em palavras de gente e de grupos, justamente o tipo de coisa sobre a qual você faz essas perguntas casuais.
 - 会("reunião, encontrar-se, associação"). É o próprio 会(かい, "reunião/encontro"). Imagine um teto (人) cobrindo gente que se junta embaixo: um encontro.
-- 員("funcionário, membro"). Pense numa "boca" (口) dentro de uma moldura: o membro registrado de um grupo. Aparece em palavras como 会員 (membro de uma associação).
-- 者("alguém, pessoa"). Marca "a pessoa que faz X". Está em 大学生? Não, mas pense em 医者 (médico): é "a pessoa da medicina".
+- 員("funcionário, membro"). Pense numa "boca" (口) em cima de uma concha (貝), que era moeda na China antiga: o membro registrado e contado de um grupo. Aparece em palavras como 会員 (membro de uma associação).
+- 者("alguém, pessoa"). Marca "a pessoa que faz X". Pense em 医者 (médico): é "a pessoa da medicina". Já em 大学生 quem marca a pessoa é 生, não 者.
 - 方("direção, pessoa, alternativa"). Lido かた, é uma forma educada de dizer "pessoa". A forma quadrada lembra uma bandeira apontando uma direção.
 
 #### Vocabulário para usar nas perguntas
 Palavras do dia a dia que combinam bem com かな/かしら/かい:僕(ぼく, "eu", masculino casual),意見(いけん, "opinião"),心配(しんぱい, "preocupação"),気(き, "ânimo/disposição"),別(べつ, "outro/diferente"),失礼(しつれい, "falta de educação"),漫画(まんが, "mangá"),テキスト(テキスト, "texto/apostila"),ステレオ(ステレオ, "som estéreo") e 床屋(とこや, "barbearia"). Ex.:君の意見は別かな("será que sua opinião é outra?").
 
 > **[example]**
-Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配かしら("será que ela está preocupada?"),元気かい("tá tudo bem com você?").
+Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配かしら("será que tem algum problema?"),元気かい("tá tudo bem com você?").
 
 #### Hora de praticar
 

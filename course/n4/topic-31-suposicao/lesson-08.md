@@ -30,7 +30,7 @@ Aqui 雨 (chuva) vem seguido direto de かもしれない: "amanhã, talvez chuv
 #### はずです: a conclusão que era de se esperar
 hazu-da sobe um degrau na escala. Não é certeza absoluta, mas uma conclusão lógica: pelo que eu sei, isto deve ser o caso. Cuidado para não confundir com o "dever" de obrigação; aqui é expectativa, "é de se esperar que".
 > 🗣 バスはすぐ来るはずです。 — O ônibus deve chegar logo.
-O raciocínio por trás do molde 来るはずです é claro: o horário diz que o バス (ônibus) passa agora, logo "deve chegar logo". Com substantivo ou adjetivo-na, entra o な antes de はず: 静か vira 静かなはずです.
+O raciocínio por trás do molde 来るはずです é claro: o horário diz que o バス (ônibus) passa agora, logo "deve chegar logo". Com adjetivo-na entra o な antes de はず: 静か vira 静かなはずです. Com substantivo, no lugar do な entra o の: 学生 vira 学生のはずです.
 
 > **[l1-pitfall]**
 Não traduza はず por "tem que" no sentido de regra. 行くはずです é "deve ir / é esperado que vá" (eu deduzo), não "tem a obrigação de ir". Para obrigação você usaria outras formas, como なければならない.

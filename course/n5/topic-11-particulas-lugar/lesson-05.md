@@ -32,7 +32,7 @@ Em português a gente põe o "para" antes do lugar ("para a escola"); em japonê
 O par mais comum é gp-18: a direção へ com o verbo 行く ("ir"). Na fala educada vira 行きます. Repare como as palavras de tempo que você está aprendendo encaixam direitinho aqui:
 - 今年日本へ行きます = "今年 vou para o Japão."
 - 再来年日本へ行きます = "再来年 vou para o Japão."
-- 秋日本へ帰ります = "No 秋 volto para o Japão."
+- 秋に日本へ帰ります = "No 秋 volto para o Japão."
 
 > **[tip]**
 Guarde o molde: [lugar] へ [verbo de movimento]. Troque só o lugar e o verbo e você já fala dezenas de frases sobre ir, vir e voltar.
@@ -47,7 +47,7 @@ A diferença é só de ênfase: へ realça o rumo (o caminho rumo a algo) e に
 Cuidado para não confundir へ (direção) com で (lugar onde a ação acontece). 学校へ行く é "ir À escola"; 学校で勉強する é "estudar NA escola". E lembre: para tempo, existência e alvo de ação você só pode usar に, nunca へ. O へ serve quase só para direção.
 
 #### O kanji 月
-O kanji 月 significa mês e também lua (a lua marca os meses). Sozinho, lido つき, é "lua"; em compostos de mês ele soa げつ. Você já o vê em 今月 (今月) e 先月 (先月).
+O kanji 月 significa mês e também lua (a lua marca os meses). Sozinho, lido つき, é "lua"; em compostos de mês ele costuma soar げつ, mas nos nomes dos meses soa がつ (一月 é いちがつ). O げつ você já vê em 今月 (今月) e 先月 (先月).
 
 > **[tip]**
 Mnemônico de forma: 月 é o desenho de uma lua crescente, com as duas listrinhas dentro como nuvens passando na frente. Lua no céu, contagem de 今月, 先月.

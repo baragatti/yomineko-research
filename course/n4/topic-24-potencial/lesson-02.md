@@ -41,7 +41,7 @@ Veja a estrutura inteira em frases que japoneses escrevem de verdade. Note o mol
 > 🗣 私は走ることができる。 — Eu consigo correr.
 Aqui 走る (correr) entra inteiro no dicionário e ことができる fecha a ideia de capacidade.
 > 🗣 私はやっと休むことができる。 — Finalmente eu consigo descansar.
-O 昔 não aparece, mas note やっと ("finalmente") dando o tom de alívio antes de 休むことができる ("consigo descansar").
+Note o やっと ("finalmente"), que dá o tom de alívio antes de 休むことができる ("consigo descansar"). O 昔 ("antigamente") você encontra na lista de vocabulário desta lição.
 > 🗣 私は少し英語を話すことができる。 — Eu consigo falar um pouco de inglês.
 Com 少し ("um pouco") e o objeto 英語 marcado por を, a frase mostra que o objeto vem antes do verbo seguido de ことができる.
 

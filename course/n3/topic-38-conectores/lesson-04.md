@@ -14,7 +14,7 @@
 ---
 
 ### Dando exemplos: listar sem fechar a lista
-Para fechar nossa caixa de conectores, faltam os marcadores de EXEMPLO. Em português a gente joga um "etc." no fim, mas o japonês tem ferramentas mais elegantes: n3-nado (neutro, "tais como") e n3-nanka (coloquial, e as vezes depreciativo). Os dois dizem "esses são so alguns exemplos entre muitos".
+Para fechar nossa caixa de conectores, faltam os marcadores de EXEMPLO. Em português a gente joga um "etc." no fim, mas o japonês tem ferramentas mais elegantes: n3-nado (neutro, "tais como") e n3-nanka (coloquial, e às vezes depreciativo). Os dois dizem "esses são só alguns exemplos entre muitos".
 
 #### など: tais como, coisas como
 O marcador n3-nado da uma lista de exemplos que NÃO e completa: os itens citados são so alguns entre muitos possíveis, deixando subentendido o "e outros". Liga-se direto a substantivos.

@@ -20,7 +20,7 @@ Nem toda justificativa é neutra. Quando a gente quer se defender com um tom emo
 O n3-da-mono-da apresenta uma razão de forma subjetiva e meio queixosa, como quem se desculpa ou se defende. Tem carga emocional e soa pessoal, quase infantil ou afetivo.
 - Verbo / adjetivo-i: forma simples + んだもの. Ex.: 疲れたんだもの (é que eu estou cansado, sabe).
 - Substantivo / adjetivo-na: + なんだもの.
-É comum fechar com から para reforçar: んだものだから ("porque... afinal").
+Para dar o motivo no meio da frase, use a forma simples + ものだから (na fala, もんだから). Ex.: 疲れていたものだから、先に帰った ("é que eu estava cansado, então fui embora antes"). Repare que んだもの fecha a frase e não recebe から.
 
 #### ～んだもん: a versão ainda mais coloquial
 O n3-nda-mon é a mesma ideia, só que もの encolhe para もん. Soa ainda mais coloquial, manhoso, quase de criança que justifica uma travessura.

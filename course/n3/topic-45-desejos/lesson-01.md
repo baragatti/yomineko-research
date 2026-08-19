@@ -61,7 +61,7 @@ Vantagem PT: クリスマス e グループ são empréstimos fáceis de reconhe
 
 #### Quatro kanji da cortesia e do pedido
 O kanji 申 significa 'dizer humildemente, relatar'. É o radical de campo (田) atravessado por um traço vertical, como uma flecha que 'reporta' de cima a baixo. Aparece em 申し込む ('inscrever-se') e na forma humilde 申す ('dizer').
-O kanji 様 significa 'modo, maneira' e é o 様 respeitoso que vira さん formal (お客様, 'caro cliente'). Aparece em 様子 ('aparência, situação').
+O kanji 様 significa 'modo, maneira' e é o 様 respeitoso, a versão mais formal de さん (お客様, 'caro cliente'). Aparece em 様子 ('aparência, situação').
 O kanji 呼 significa 'chamar, convocar'. Tem a boca (口) à esquerda, claro: a gente chama com a boca. Vem em 呼ぶ ('chamar').
 O kanji 良 significa 'bom, agradável'. É a versão 'séria' de いい: a leitura 良 está dentro de よかった, que você vai usar muito para arrependimentos mais à frente.
 

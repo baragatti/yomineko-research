@@ -30,7 +30,7 @@ O segundo uso é diferente: depois de um substantivo,らしい quer dizer "típi
 Repare:春らしい天気 não é "parece primavera (será que é?)", e sim "um tempo bem de primavera, típico da estação". O contexto deixa claro qual dos dois sentidos está em jogo.
 
 > **[l1-pitfall]**
-Não confunda os dois らしい. Depois de substantivo e o sentido é "parece que" (雨らしい = "parece que vai chover") é inferência. Depois de só um substantivo qualificando algo (春らしい天気 = "tempo de primavera") é "típico de". O truque: se dá pra trocar por "pelo jeito", é inferência; se dá pra trocar por "bem a cara de", é típico.
+Não confunda os dois らしい. Depois de verbo ou adjetivo, ele é sempre inferência (雨が降るらしい = "parece que vai chover"; 閉まったらしい = "parece que fechou"). Depois de substantivo colado em outro substantivo, ele é "típico de" (春らしい天気 = "um tempo bem de primavera"). Com substantivo sozinho no fim da frase, como 雨らしい, vale o truque: se dá pra trocar por "pelo jeito", é inferência; se dá pra trocar por "bem a cara de", é típico.
 
 #### のだろうか: será que...?
 Quando a dúvida é com você mesmo, entra gp-110. Ela junta o のだ explicativo com だろう("imagino, deve ser") e o か de pergunta, virando um questionamento pensativo: "será que...?", "fico me perguntando se...". Não espera resposta de ninguém; é a pessoa ruminando.
@@ -94,7 +94,7 @@ Três kanji ligados à natureza e às estações, que casam com o らしい de "
 
 
 ### 5. (production) {'pt-BR': "Em japonês, pergunte a si mesmo(a) 'Será que o mundo um dia vai acabar?' usando 世界 (mundo), 終わる (acabar) e のだろうか."}
-- **Resposta:** `{"text": "世界はいつ終わるのだろうか。", "accept": ["世界はいつ終わるのだろうか", "世界はいつ終わるのだろうか？", "せかいはいつおわるのだろうか", "世界は終わるのだろうか"]}`
-- {'pt-BR': '世界 (mundo) + は + いつ (quando) + 終わる (acabar, forma simples) + のだろうか (será que...?). É uma reflexão em voz alta, não uma pergunta dirigida a outra pessoa.'}
+- **Resposta:** `{"text": "世界は終わるのだろうか。", "accept": ["世界はいつ終わるのだろうか", "世界はいつ終わるのだろうか？", "せかいはいつおわるのだろうか", "世界は終わるのだろうか"]}`
+- {'pt-BR': '世界 (mundo) + は + 終わる (acabar, forma simples) + のだろうか (será que...?). É uma reflexão em voz alta, não uma pergunta dirigida a outra pessoa.'}
 
 

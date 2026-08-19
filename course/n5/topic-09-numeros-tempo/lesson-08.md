@@ -27,7 +27,7 @@ Estas são as peças mais comuns. Repare que todas as quatro se escrevem em kata
 - セーター= suéter, blusa de lã. Do inglês "sweater". A barrinha ー estica a vogal: seetaa.
 
 > **[l1-pitfall]**
-Cuidado com 洋袴: parece "esporte" ou algo do tipo, mas significa calça. E não confunda com a palavra inglesa "shirt": em japonês シャツ costuma ser a camiseta de baixo, não a camisa social.
+Cuidado com 洋袴: o katakana engana, porque a palavra veio do francês, não do inglês, e significa calça. E não confunda com a palavra inglesa "shirt": em japonês シャツ costuma ser a camiseta de baixo, não a camisa social.
 
 #### Banho e higiene
 Agora o banheiro. Aqui aparece uma mistura: uma palavra em katakana e uma com kanji que você por enquanto vai ler em kana.

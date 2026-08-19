@@ -29,7 +29,7 @@ Veja o molde em ação numa frase típica de atendimento, em que você se oferec
 Repare em が depois de 私: ele enfatiza "sou EU quem faz isso", reforçando a oferta de serviço. O verbo 持つ virou お持ちします, e 荷物(bagagem) é o que você se oferece para levar.
 
 > **[culture]**
-Verbos que vêm do chinês (os 〜する, como 翻訳→翻訳する) usam ご no lugar de お:ご案内します("eu acompanho/oriento"). A ideia é a mesma; só muda o prefixo.
+Verbos que vêm do chinês (os 〜する, como 翻訳→翻訳する) costumam usar ご no lugar de お:ご案内します("eu acompanho/oriento"). A ideia é a mesma; só muda o prefixo. Existem exceções que você decora uma a uma: 電話, por exemplo, pede お (お電話いたします).
 
 #### いたす/いたします: o する humilde
 O verbo gp-112 é a versão humilde de する("fazer"). Na fala polida do dia a dia você quase sempre o usa na forma itashimasu. Toda vez que diria します sobre uma ação sua, num contexto formal pode trocar por いたします e soar mais modesto.
@@ -50,7 +50,7 @@ Nenhuma frase de cortesia é mais comum do que esta. Guarde-a inteira, como um b
 
 > **[example]**
 Mais vocabulário de trabalho e serviços para praticar (a leitura já vem na própria palavra). Veja como cada um aparece numa cena de atendimento:
-- 入院: internação. Depois de uma internação, você pode dizer a uma enfermeira ご案内します ("eu acompanho").
+- 入院: internação. Na hora da internação, é a enfermeira que diz ご案内します ("eu acompanho o senhor") ao levar você até o quarto.
 - 競争: competição, disputa. Num evento de competição, o organizador faz ご説明いたします ("eu explico").
 - 湖: lago. Até num passeio ao lago o guia oferece serviços ao grupo.
 - 水: água. O guia pode oferecer água com um お持ちします ("eu levo para você").

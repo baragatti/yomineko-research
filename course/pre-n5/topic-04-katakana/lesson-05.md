@@ -33,7 +33,7 @@ Outra dupla traiçoeira:ヌ(nu) e ス(su). O ヌ tem um traço extra cruzando po
 Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. O ノ é o mais fácil: um único traço descendo na diagonal. Repita cada kana em voz alta enquanto escreve.
 
 #### Pratique a leitura
-Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナス(nasu, berinjela),カニ(kani, caranguejo),ネコ(neko, gato) e ノート(nooto, caderno).
+Usando só os katakana que você já viu, leia estas palavrinhas em voz alta:ナス(nasu, berinjela),カニ(kani, caranguejo),ネコ(neko, gato) e ノート(nōto, caderno).
 
 > **[l1-pitfall]**
 Ao ler ネコ em voz alta, cuidado com o reflexo do português: a gente fala "gatu", "leiti" sem perceber. No japonês isso é erro. ネコ é "ne-ko", com o "o" limpo até o fim (não "neku"). Cada vogal mantém o mesmo som do começo ao fim.

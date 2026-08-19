@@ -43,7 +43,7 @@ De 歩きます sai 歩きながら("enquanto caminhava"), e a ação principal 
 O ながら exige um só sujeito fazendo as duas coisas ao mesmo tempo. Para "enquanto eu cozinho, ele estuda" (sujeitos diferentes), o ながら não serve, você usaria outra construção.
 
 #### まま: do jeito que está, sem mudar
-mama indica que um estado continua igual enquanto outra ação ocorre: "do jeito que está", "sem mudar". Vem depois de um verbo na forma-た ou da forma comum:
+mama indica que um estado continua igual enquanto outra ação ocorre: "do jeito que está", "sem mudar". Vem depois de um verbo na forma-た (電気をつけたまま) ou na forma negativa 〜ない (何も言わないまま), nunca na forma de dicionário. Também gruda em adjetivo-い (高いまま), em adjetivo-な + な (静かなまま), em substantivo + の (昔のまま) e no demonstrativo その (そのまま):
 > 🗣 そのままにしておけ。 — Deixa assim mesmo.
 O そのまま é "desse jeito mesmo", "como está": a frase pede para deixar a coisa no estado em que se encontra. Outro clássico:電気をつけたまま寝た= "dormi com a luz acesa (deixei acesa e dormi)".
 
@@ -68,7 +68,7 @@ As quatro peças em uma vista só:休みなのに働く("trabalha embora seja fo
 - {'pt-BR': 'のに liga duas orações em que a segunda contraria o que a primeira faria esperar, quase sempre com surpresa ou frustração. ～ながら marca ações simultâneas e まま indica um estado que continua igual.'}
 
 
-### 2. (cloze) {'pt-BR': 'Complete com a concessão \'mesmo que\' a partir de 高い (caro): Align the frame with the featured sentence instead of adding a topic: "Complete com a concessão \'mesmo que\' a partir de 高い (caro): ＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)"; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)'}
+### 2. (cloze) {'pt-BR': "Complete com a concessão 'mesmo que' a partir de 高い (caro): ＿この服を買います。; escreva só a forma de 高い + ても. (Mesmo que seja caro, vou comprar esta roupa.)"}
 - **Resposta:** `{"text": "高くても", "full": "高くてもこの服を買います"}`
 - {'pt-BR': "O adjetivo-i 高い perde o い e ganha くても: 高くても = 'mesmo que seja caro'. O resultado (買います) se mantém apesar da condição."}
 - frases: `sent:gen-fd723f8599f2`

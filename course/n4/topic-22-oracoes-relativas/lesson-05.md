@@ -36,7 +36,7 @@ gp-89 é a família de adjetivos demonstrativos mais comum para "esse/tal tipo d
 - そんな = "esse tipo de" (perto do ouvinte, ou recém-mencionado)
 - あんな = "aquele tipo de" (longe dos dois, ou algo distante no tempo)
 - どんな = "que tipo de?" (a pergunta)
-Todos vêm direto na frente de um substantivo: そんな人 ("gente desse tipo"), こんなこと ("uma coisa dessas"), どんな車 ("que tipo de carro?").
+Todos vêm direto na frente de um substantivo: そんな人 ("gente desse tipo"), こんなこと ("uma coisa assim, deste tipo aqui"), どんな車 ("que tipo de carro?").
 
 > **[l1-advantage]**
 Boa notícia para quem fala português: o mapeamento é quase um para um. "Uma coisa dessas" = そんなこと; "que tipo de...?" = どんな…. Você já tem o instinto, só precisa trocar a palavra.

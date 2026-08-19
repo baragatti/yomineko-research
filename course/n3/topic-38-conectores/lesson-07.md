@@ -21,7 +21,7 @@ Nesta lição você amplia o vocabulário com uma leva de palavras da linha は.
 Começamos por palavras ligadas a pessoas e ao corpo. Repare que 母 sozinho já é "mãe", mas 母親 enfatiza o papel de mãe, e por isso aparece muito em textos e notícias.
 - 母親 (ははおや) - mãe.
 - 腹 (はら) - abdômen, barriga, ventre.
-- バン (バン) - coque (penteado).
+- バン (バン) - van, furgão (veículo).
 - ハンサム (ハンサム) - bonito, atraente, charmoso (geralmente para homens).
 あの人は母親に似ていて、その上とてもハンサムだ (Aquela pessoa é parecida com a mãe e, além disso, é muito bonita.)
 腹が痛いけど、仕事は休めない (Está doendo a barriga, mas não dá para faltar ao trabalho.)
@@ -37,7 +37,7 @@ Este grupo aparece bastante em jornais e novelas policiais. Cuidado para não co
 この事件の被害は大きい。その上、犯人はまだ捕まっていない (O prejuízo deste caso é grande. E ainda por cima o criminoso ainda não foi pego.)
 
 > **[l1-pitfall]**
-Em português, "crime" cobre tanto o ato quanto, às vezes, quem o cometeu. Em japonês essa separação é rígida: 犯罪 é sempre o ato, e a pessoa é 犯人. Trocar os dois muda completamente o sentido da frase.
+Em português, "crime" é o ato e "criminoso" é quem o comete. Em japonês essa separação é rígida: 犯罪 é sempre o ato, e a pessoa é 犯人. Trocar os dois muda completamente o sentido da frase.
 
 #### Comércio e objetos do dia a dia
 Aqui entram palavras concretas que você encontra em lojas, em casa e na rua.
@@ -97,6 +97,6 @@ O par 腹 (はら, barriga) e 原 (はら, campo) é um bom exemplo de como o ka
 
 ### 5. (production) {'pt-BR': 'Traduza para o japonês usando o conector その上: "A polícia está procurando o criminoso e, além disso, há poucas pistas."'}
 - **Resposta:** `{"text": "警察は犯人を探している。その上、手がかりが少ない", "accept": ["警察は犯人を探している。その上手がかりが少ない", "けいさつは犯人をさがしている。その上、手がかりが少ない", "警察は犯人をさがしている。その上、てがかりが少ない"]}`
-- {'pt-BR': '犯人 (はんにん) é o criminoso e 探す (さがす) é "procurar". O conector その上 liga as duas ideias com o sentido de "além disso, e ainda por cima". Em japonês gerado, é comum deixar a vírgula 、 e dispensar o ponto final 。 no fim da frase.'}
+- {'pt-BR': '犯人 (はんにん) é o criminoso e 探す (さがす) é "procurar". O conector その上 liga as duas ideias com o sentido de "além disso, e ainda por cima".'}
 
 

@@ -28,7 +28,7 @@ Lembrete do padrão: pegamos a coluna do i (ミ・リ・ギ・ジ・ビ・ピ) e
 - ピャ(pya),ピュ(pyu),ピョ(pyo): p de "pato".
 
 > **[l1-advantage]**
-Vantagem PT: a sequência ジャ・ジュ・ジョ usa o mesmo som do di de "dia" ou do g de "gente" (aquele "dj"). Cuidado: NÃO é o "j" puxado de "já"/"jogo". É o "dj" de "dia", e a maioria dos brasileiros já faz isso sem pensar.
+Vantagem PT: a sequência ジャ・ジュ・ジョ usa o som do di de "dia" (aquele "dj"). Cuidado: NÃO é o "j" puxado de "já"/"jogo", que em português é o mesmo som do g de "gente". É o "dj" de "dia", e a maioria dos brasileiros já faz isso sem pensar.
 
 > **[warning]**
 Cuidado com sósias do katakana:シ(shi) e ジ(ji) parecem com ツ(tsu); a diferença está no ângulo dos tracinhos e na direção do traço comprido. Repare bem antes de ler.
@@ -40,7 +40,7 @@ O ッ é um ツ escrito pequeno, mas não tem som próprio: ele dobra a consoant
 Veja em empréstimos:サッカー(sakkaa, "futebol") e コップ(koppu, "copo"). Em ambos há uma pausa antes da consoante dobrada: sak(pausa)kaa, kop(pausa)pu.
 
 #### A barrinha ー (chōon)
-Aqui vem a novidade exclusiva do katakana: a barrinha ー (chōon) alonga a vogal anterior por mais uma mora. No hiragana, a vogal longa se escreve repetindo a vogal; no katakana, basta a barrinha.
+Aqui vem a novidade exclusiva do katakana: a barrinha ー (chōon) alonga a vogal anterior por mais uma mora. No hiragana, a vogal longa se escreve acrescentando um segundo kana; no katakana, basta a barrinha.
 
 > **[example]**
 Compare a duração:コーヒー(koohii, "café") tem o o e o i esticados, e ジュース(juusu, "suco") tem o u esticado. Segure a vogal: koo, hii, juu.

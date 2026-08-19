@@ -21,10 +21,10 @@ Você já viu as vogais e a família do K no katakana. Agora chega o som S, comb
 Atenção ao シ: ele soa shi (como o "chi" de "chiclete"), e nunca"si". O falante de português tende a ler シ como "si", mas isso muda a palavra. Repita:シ= shi.
 
 #### Os cinco kana
-- サ(sa): como o sa de "sapo". Parece um cruzamento com um risquinho à direita; lembra um se máforo torto. É o primo da hiragana さ.
+- サ(sa): como o sa de "sapo". Parece um cruzamento com um risquinho à direita; lembra um se máforo torto. É o primo do hiragana さ.
 - シ(shi): como o shi de "Xis". São dois pontinhos quase horizontais em cima e um traço longo desenhado de baixo para cima. Imagine um sorriso com dois olhos deitados.
 - ス(su): como o su de "suco", com o u seco. Parece um número 7 com uma perninha saindo embaixo.
-- セ(se): como o se de "seda". Tem um gancho que sobe, parecido com a hiragana せ só que mais reto e enxuto.
+- セ(se): como o se de "seda". Tem um gancho que sobe, parecido com o hiragana せ só que mais reto e enxuto.
 - ソ(so): como o so de "sopa", com o o cheio (nunca "u"). São dois traços mais verticais: um pontinho em cima e um risco descendo.
 
 > **[warning]**

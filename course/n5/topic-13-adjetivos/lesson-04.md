@@ -47,7 +47,7 @@ Mesmo molde:行く("ir") →行きたい("querer ir") →行きたくなかっ�
 #### Palavras para avaliar e medir
 Estas palavras combinam muito bem com a ideia de comparar "como era antes". Algumas são adjetivos-な (descrevem qualidade), outras são advérbios de quantidade:
 - 一番(いちばん): "o número um", e por isso o jeito de fazer superlativo, "o mais ~".一番高い= "o mais caro".
-- 全部(ぜんぶ): "tudo, todo, inteiro".全部高くなかった= "nem tudo estava caro".
+- 全部(ぜんぶ): "tudo, todo, inteiro".全部高くなかった= "nada estava caro" (a negação cobre o "tudo").
 - 同じ(おなじ): "mesmo, igual, idêntico".
 - 大切(たいせつ): "importante, crucial" (adjetivo-な).
 - 丈夫(じょうぶ): "robusto, forte, resistente" (adjetivo-な, para coisas e saúde).

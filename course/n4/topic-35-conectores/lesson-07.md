@@ -46,7 +46,7 @@ Molde: [afirmação] と言ってもいい
 Ou seja, você pega a frase que quer afirmar, encaixa a partícula de citação と (que liga aquilo que você está "citando" ao verbo) e fecha com 言ってもいい. É um jeito elegante de dar a sua leitura sem soar arrogante.
 
 > **[culture]**
-Essa hedge é muito apreciada no japonês: deixar uma brecha em vez de afirmar com 100% de certeza soa educado e ponderado. É a mesma lógica do ～かもしれない e do ～と思う que você já conhece.
+Essa moderação é muito apreciada no japonês: deixar uma brecha em vez de afirmar com 100% de certeza soa educado e ponderado. É a mesma lógica do ～かもしれない e do ～と思う que você já conhece.
 
 #### Resumindo a família
 - ように = finalidade ("para que") e desejo ("que aconteça").

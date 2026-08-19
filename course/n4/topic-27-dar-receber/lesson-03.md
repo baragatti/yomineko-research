@@ -53,8 +53,8 @@ Estas palavras combinam bem com desejos e pedidos. Comece pelos substantivos lig
 - 科学: ciência
 - 興味: interesse
 - 校長: diretor de escola
-- 亡くなる: falecer
-Agora os verbos e adjetivos do registro formal ou humilde, muito úteis em contexto de escola e cortesia:
+Agora os verbos e adjetivos de registro formal, humilde ou delicado, úteis em situações de cortesia:
+- 亡くなる: falecer (jeito delicado de dizer "morrer", no lugar de 死ぬ)
 - 申す: dizer (humilde)
 - 居る: estar (humilde)
 - ご覧になる: ver (respeitoso)

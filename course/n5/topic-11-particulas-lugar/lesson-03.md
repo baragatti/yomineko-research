@@ -48,7 +48,7 @@ Na cidade, dá para chamar um タクシー erguendo a mão; a porta de trás abr
 #### Mais alguns verbos de ação
 Para praticar, vale ter alguns verbos à mão. Repare como cada ação combina com um lugar marcado por で:
 - 頼む ("pedir, fazer um pedido"): 店で頼む = "pedir na loja".
-- 出す ("tirar, pôr para fora"): 家で出す = "tirar/pôr para fora em casa".
+- 出す ("pôr para fora, enviar"): 郵便局で出す = "postar uma carta no correio".
 - 立つ ("ficar de pé"): 駅で立つ = "ficar de pé na estação". O substantivo 立ち ("partida, início") vem do mesmo verbo.
 
 #### Kanji da lição: 生

@@ -26,7 +26,7 @@ Junte a forma て do verbo com みる. Esse みる vem de 見る (ver), mas aqui
 > 🗣 やってみる。 — Vou tentar fazer.
 Repare como やってみる não é só "vou fazer", e sim "vou tentar fazer (pra ver no que dá)". Você usa muito quando recomenda algo a alguém:食べてみて= "experimenta comer". Combina bem com palavras de tentativa.
 
-> **[tip]** Quer dizer que vai dar uma chance a um remédio duro de engolir?この道具(どうぐ, ferramenta) ou qualquer objeto novo pede 使ってみる= "vou experimentar usar".
+> **[tip]** Comprou um aparelho novo e quer testar?この道具(どうぐ, ferramenta) ou qualquer objeto novo pede 使ってみる= "vou experimentar usar".
 
 ### 〜ておく: deixar feito de antemão
 Junte a forma て com おく(de 置く, "colocar/pôr"). O sentido literal some e fica a ideia de deixar algo pronto com antecedência, seja como preparação para algo futuro, seja por precaução.

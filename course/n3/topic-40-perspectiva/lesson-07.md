@@ -44,7 +44,7 @@ Cuidado: 楽 (らく) é 'conforto, sossego', mas o MESMO kanji lido がく sign
 - 来 (らい) - 'que vem, próximo' (como em 来年, ano que vem).
 - ライター (ライター) - escritor, redator (do inglês 'writer').
 - ラケット (ラケット) - raquete.
-天気予報によると、世の中は雨続きだ (Segundo a previsão do tempo, o mundo todo está numa sequência de chuva.)
+天気予報によると、今週は雨続きだそうだ (Segundo a previsão do tempo, esta semana vai ser de chuva atrás de chuva.)
 
 > **[l1-pitfall]**
 Cuidado: ライター (raitaa) pode ser 'escritor' (writer) OU 'isqueiro' (lighter), dependendo do contexto. Aqui é o sentido de escritor; mas, na prática, só o assunto da frase desfaz a dúvida.

@@ -25,7 +25,7 @@ Palavras que ligam uma ideia a outra ou apontam um contraste.
 - 其のまま (そのまま) - do jeito que está, sem alteração.
 - その内 (そのうち) - em breve, qualquer dia desses.
 雨が降っていた。それでも試合は続いた (Estava chovendo. Mesmo assim a partida continuou.)
-コーヒーにする。それとも紅茶にする (Você vai querer café, ou então chá?)
+コーヒーにする？それとも紅茶にする？ (Você vai querer café, ou então chá?)
 
 #### Cuidar, servir e crescer
 Verbos e advérbios sobre o jeito de agir com cuidado.

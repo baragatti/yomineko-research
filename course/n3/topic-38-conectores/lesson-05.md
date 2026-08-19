@@ -20,7 +20,7 @@ Nesta lição você amplia o vocabulário em torno de como organizamos o que diz
 Comecemos pelas palavras que ajudam a guiar a conversa e o texto.
 - 偖 (さて) - bem, pois bem, então. Serve para fazer uma transição, abrindo um novo tópico.
 - 何れ (いずれ) - qual (deles), onde, quem; também 'qualquer um dos dois'. É um pronome interrogativo mais formal que どれ.
-- 今日は (こんにちは) - olá, bom dia, boa tarde. A saudação clássica, escrita com kanji em textos mais formais.
+- 今日は (こんにちは) - olá, boa tarde (de manhã use おはよう / おはようございます). É a saudação clássica e escreve-se quase sempre em hiragana; a grafia 今日は é rara e se confunde com きょうは.
 - 御 (お) - prefixo honorífico, o mesmo お de おちゃ e おみず, que deixa a palavra mais polida.
 偖、次の話に移りましょう (Pois bem, vamos passar ao próximo assunto.)
 何れにしても決定は明日だ (De qualquer forma, a decisão fica para amanhã.)
@@ -42,7 +42,7 @@ Vários kanji que você já lê de um jeito ganham aqui uma leitura nova. Preste
 華やかな柄の着物を着ている (Ela está usando um quimono de estampa vistosa.)
 
 > **[l1-pitfall]**
-O kanji 空 tem várias leituras com sentidos diferentes: そら é 'céu', あく é 'esvaziar-se' e から (esta lição) é o adjetivo 'vazio'. O contexto resolve quase sempre, mas vale guardar que から quase nunca aparece sozinho no meio de uma frase como verbo, e sim descrevendo algo que está oco.
+O kanji 空 tem várias leituras com sentidos diferentes: そら é 'céu', あく é 'esvaziar-se' e から (esta lição) é o substantivo 'vazio', como em このグラスは空だ e 空の箱. O contexto resolve quase sempre, mas guarde que から nunca funciona como verbo: ele sempre descreve algo que ficou oco.
 
 #### Palavras emprestadas e o universo da política
 Para fechar, alguns katakana do dia a dia e dois kanji do campo político.

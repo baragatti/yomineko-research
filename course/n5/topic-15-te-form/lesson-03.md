@@ -39,7 +39,7 @@ Agora troque いる por ある. te-aru descreve o estado que sobrou de algo que 
 Note a partícula: com 〜てある o objeto que sofreu a ação costuma vir marcado com が (鍵がかけてある, "a chave está posta / está trancado"). É como dizer "alguém tratou disso de antemão, e está resolvido". A geladeira tem cerveja gelando porque alguém a pôs lá para gelar.
 
 > **[tip]**
-Atalho mental: 〜ています (com いる, de seres vivos) costuma ser "está acontecendo / está num estado"; 〜てある (com ある, de coisas) é sempre "foi preparado de propósito e está assim". Trancar a porta: a ação é かける; o resultado intencional é かけてある.
+Atalho mental: 〜ています (com いる) vale para qualquer sujeito, seja gente, bicho ou coisa, e diz "está acontecendo" ou "está num estado"; 〜てある (com ある) é sempre "alguém deixou assim de propósito e continua assim", por isso pede um verbo com alguém agindo por trás. Trancar a porta: a ação é かける; o resultado intencional é かけてある.
 
 #### Vocabulário de clima e natureza
 Esses estados descrevem muito bem o tempo e a paisagem. Aprenda este grupo em kana:

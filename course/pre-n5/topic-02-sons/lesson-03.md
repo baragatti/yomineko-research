@@ -4,7 +4,7 @@
 
 **Objetivos:**
 - Entender que o japonês distingue palavras pela altura (pitch), e não pela força (acento tônico do português)
-- Reconhecer que 'hashi' pode ser palito ou ponte conforme a altura, sem cobrar de si perfeição neste nível
+- Reconhecer que 'hashi' pode ser pauzinhos ou ponte conforme a altura, sem cobrar de si perfeição neste nível
 - Identificar três vantagens que o falante de português já tem: o r de tepe, a afriçação de ti/di e a intuição você/o senhor
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [—] · kana [—]
@@ -14,10 +14,10 @@
 ---
 
 ### Acento de altura (pitch) e vantagens do português
-No português, a sílaba forte sai com mais força: dizemos CA-fe apertando o "ca". No japonês a diferença é outra: ela vem da altura da voz, mais aguda ou mais grave. Isso se chama acento de altura, ou pitch.
+No português, a sílaba forte sai com mais força: dizemos ca-FÉ apertando o "fé". No japonês a diferença é outra: ela vem da altura da voz, mais aguda ou mais grave. Isso se chama acento de altura, ou pitch.
 
 > **[example]**
-A mesma sequência de sons hashi pode ser 箸(hashi, palito) ou 橋(hashi, ponte). O que muda é a altura: numa, a voz começa mais alta e cai; na outra, ela sobe. Os sons são iguais; o desenho da melodia é diferente.
+A mesma sequência de sons hashi pode ser 箸(hashi, pauzinhos de comer) ou 橋(hashi, ponte). O que muda é a altura: numa, a voz começa mais alta e cai; na outra, ela sobe. Os sons são iguais; o desenho da melodia é diferente.
 
 > **[tip]**
 Boa notícia para começar: no N5 a meta é consciência, não perfeição. Saber que o pitch existe e prestar atenção nele ao ouvir já basta. A precisão vem com o tempo e com muita escuta.
@@ -40,7 +40,7 @@ A polidez também te favorece. Você já sente a diferença entre falar "você" 
 
 #### Hora de praticar
 - Entendo que o pitch é altura da voz (agudo/grave), não força como o acento tônico.
-- Sei que "hashi" pode ser palito ou ponte conforme a altura, e que no N5 basta a consciência.
+- Sei que "hashi" pode ser pauzinhos ou ponte conforme a altura, e que no N5 basta a consciência.
 - Reconheço minhas vantagens: o r de tepe, a afriçação de ti/di e a intuição você/o senhor.
 
 ---

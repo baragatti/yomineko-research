@@ -54,9 +54,9 @@ O 半 (はん) significa metade, meio. Pense num objeto cortado bem no meio: os 
 - 半分 (はんぶん) = "metade" (de uma quantidade).
 
 #### Vocabulário extra: números, horas e direções
-Aproveite para fixar palavras que soam parecido mas se escrevem diferente, todas lidas ばん:
+Aproveite para fixar palavras que carregam o mesmo som ばん:
 - 晩 = "noite, anoitecer".
-- 晩御飯 = "jantar".
+- 晩御飯 (ばんごはん) = "jantar".
 - 番 = "número (de uma série)", como a senha numa fila.
 E duas direções básicas:
 - 東 = "leste".

@@ -67,7 +67,7 @@ Aproveite para guardar um bloco de palavrinhas de lugar e tempo que vão circula
 - がいこく= "país estrangeiro" (外国).
 
 > **[tip]**
-Junte os dois assuntos da lição numa frase só:今大勢になる("agora virou multidão") usa になる com substantivo;寒くなる("esfriar") usa くなる com adjetivo-い. Mesmo verbo, partícula diferente.
+Junte os dois assuntos da lição numa frase só:大人になる("virar adulto") usa になる com substantivo;寒くなる("esfriar") usa くなる com adjetivo-い. Mesmo verbo, partícula diferente.
 
 #### Hora de praticar
 

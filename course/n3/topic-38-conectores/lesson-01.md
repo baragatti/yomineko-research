@@ -14,7 +14,7 @@
 ---
 
 ### Somando e escolhendo: somar na mesma direção ou abrir uma escolha
-No N3 você começa a costurar frases em paragrafos de verdade. Esta lição reune três palavrinhas que aparecem no inicio da segunda frase e dizem ao ouvinte para onde o raciocinio vai: n3-sono-ue (somar reforcando), n3-sore-to (somar mais um item) e n3-sore-tomo (abrir uma escolha). As duas primeiras ADICIONAM; a terceira OFERECE alternativas. Confundir a soma com a escolha e o erro classico do brasileiro aqui, então vamos separar bem.
+No N3 você começa a costurar frases em parágrafos de verdade. Esta lição reúne três palavrinhas que aparecem no início da segunda frase e dizem ao ouvinte para onde o raciocínio vai: n3-sono-ue (somar reforçando), n3-sore-to (somar mais um item) e n3-sore-tomo (abrir uma escolha). As duas primeiras ADICIONAM; a terceira OFERECE alternativas. Confundir a soma com a escolha e o erro classico do brasileiro aqui, então vamos separar bem.
 
 #### その上: e ainda por cima
 O conector n3-sono-ue liga duas afirmações que puxam para o MESMO lado: dois elogios, duas vantagens, ou dois problemas. Equivale a "além disso", "e ainda por cima", "e mais". A imagem literal e boa: 上 e "em cima", então e como empilhar um segundo ponto por cima do primeiro.
@@ -38,7 +38,7 @@ Aqui mora a confusão. O conector n3-sore-tomo apresenta duas alternativas e ped
 Armadilha PT: それと (soma, "e também") e それとも (escolha, "ou então") são quase identicos na escrita. A sílaba も a mais muda TUDO: de adição para alternativa. Em português usamos "ou" para tudo, mas em japonês a escolha entre frases e それとも; para ligar dois substantivos numa mesma frase use か (コーヒーか紅茶, "cafe ou cha").
 
 #### Vocabulário do dia a dia
-Palavras frequentes que começam com o som あ (mostradas em kana):
+Palavras frequentes que começam com os sons da linha あ (mostradas em kana):
 - 愛 (あい) = "amor, afeto". Veja também 愛情 (あいじょう, "amor, carinho") e o verbo 愛する (あいする, "amar").
 - 相手 (あいて) = "parceiro, a outra pessoa (com quem você fala ou joga)". Muito útil ao falar de conversas.
 - 合図 (あいず) = "sinal, deixa, aceno".
@@ -53,7 +53,7 @@ Palavras frequentes que começam com o som あ (mostradas em kana):
 Armadilha PT: em アイロン e アルバム, cada vogal mantem seu som ate o fim. Não levante o "o" final de アイロン para "u" como em "gatu"; e "a-i-ro-n", com o ん sendo uma batida inteira.
 
 #### Três kanji novos
-O kanji 相 traz a ideia de "mutuo" e também de "aspecto". Lidere pelo radical da esquerda, a arvore (木), e a direita o olho (目): "o olho que observa a arvore". Aparece em 相手 ("a outra pessoa") e 相談 ("consulta, conversar").
+O kanji 相 traz a ideia de "mutuo" e também de "aspecto". Junte o componente da esquerda, a árvore (木), com o olho da direita (目): "o olho que observa a árvore". O radical oficial deste kanji é o olho. Aparece em 相手 ("a outra pessoa") e 相談 ("consulta, conversar").
 O kanji 案 significa "ideia, plano". Em cima esta 安 ("tranquilo") e embaixo a arvore (木): pense num plano que te deixa tranquilo. Forma a palavra 案 (あん).
 O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "estabilidade") e 予定 ("agenda, plano marcado"). Mnemônico de forma: um teto (宀) cobrindo algo que ficou "fixo" no lugar.
 

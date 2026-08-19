@@ -25,7 +25,7 @@ O n3-donna-ni-koto-ka é uma exclamação disfarçada de pergunta. Enfatiza o gr
 > **[l1-pitfall]** Armadilha PT: embora termine em か (partícula de pergunta), não é uma pergunta real. Não responda como se fosse. Aqui o ことか equivale ao nosso ponto de exclamação. É um tom mais literário, comum em narrativas, cartas e discursos emocionados.
 
 #### 2. 必ずしも～とは限らない; não necessariamente
-O n3-kanarazushimo-towa-kagiranai serve para dizer que algo nem sempre é verdade, contestando uma suposição que parece óbvia. Reconhece que a regra costuma valer, mas que há exceções. O advérbio 必ずしも abre a frase e とは限らない a fecha:
+O n3-kanarazushimo-towa-kagiranai serve para dizer que algo nem sempre é verdade, contestando uma suposição que parece óbvia. Reconhece que a regra costuma valer, mas que há exceções. O advérbio 必ずしも vem antes do predicado, em geral logo depois do sujeito, e とは限らない fecha a frase:
 - 高いものが必ずしもいいとは限らない  O que é caro não é necessariamente bom.
 - 有名な人が必ずしも幸せとは限らない  Quem é famoso não é necessariamente feliz.
 Liga-se direto a substantivo, adjetivo-な, adjetivo-い e verbo na forma comum.
@@ -86,7 +86,7 @@ Resolva os exercícios e leia cada explicação com calma.
 
 
 ### 2. (cloze) {'pt-BR': 'Complete a relativização: 高いものが必ずしもいい___。(O que é caro não é necessariamente bom.)'}
-- **Resposta:** `{"text": "高いものが必ずしもいい___", "full": "高いものが必ずしもいいとは限らない"}`
+- **Resposta:** `{"text": "とは限らない", "full": "高いものが必ずしもいいとは限らない"}`
 - {'pt-BR': "必ずしも (advérbio) abre e とは限らない fecha, dando o sentido parcial 'não necessariamente / nem sempre'. Não é negação total."}
 
 

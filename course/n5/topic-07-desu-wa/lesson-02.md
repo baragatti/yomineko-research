@@ -63,7 +63,7 @@ Com essas palavras já dá para brincar bastante: comentar a 色 de um 犬, apon
 A mesma lógica こ・そ・あ também vale para LUGARES. Aqui estão os "primos" dos demonstrativos no mundo dos lugares:
 - 彼処: ali, lá (o ponto distante dos dois, irmão de あれ)
 - 彼方: por ali, naquela direção (a forma mais educada de apontar para longe)
-- 彼: quando escrito em kana como あれ, é exatamente o demonstrativo "aquilo" desta lição
+- 彼: este não é palavra de lugar; é o mesmo あれ da lição, aqui apontando uma pessoa distante dos dois ("aquela pessoa"). Escreva sempre em kana: o kanji desta entrada é raro e, na leitura comum, quer dizer "ele" (você o vê no N4).
 
 #### Hora de praticar
 - Sei que これ é "isto", algo perto de quem fala.

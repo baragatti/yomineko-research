@@ -33,7 +33,7 @@ Aqui 安い("barato") recebe o し e logo emenda おいしい("gostoso"). A leit
 Diferente do nosso "e", o し já carrega a ideia de "essa é mais uma razão". Você não precisa dizer "por isso" no fim: o ouvinte entende que a conclusão (vale a pena, não quero ir, etc.) vem da soma.
 
 #### し～し: listando várias de uma vez
-Quando você quer empilhar duas ou mais razões, repete:gp-121. Cada item ganha seu próprio し, e a sensação é "tem isto, tem aquilo, tudo se somando".
+Quando você quer empilhar duas ou mais razões, repete:gp-121. Cada razão empilhada leva seu próprio し, e o último item pode aparecer sem ele, como nos dois exemplos abaixo. A sensação é "tem isto, tem aquilo, tudo se somando".
 > 🗣 時間もないしお金もない — Não tenho tempo e ainda por cima não tenho dinheiro.
 Note o も("também") reforçando cada parte: "não tenho tempo, e ainda por cima não tenho dinheiro". É bem comum juntar も com し para o efeito acumulado.
 > 🗣 この部屋は広いし明るい — Este quarto é espaçoso e ainda por cima claro.

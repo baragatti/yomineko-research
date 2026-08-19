@@ -19,8 +19,8 @@
 Esta é a última parada antes do simulado. Aqui a gente não aprende nada novo: reúne os blocos mais "adultos" do N4 e arruma cada um no lugar certo. São quatro frentes: como você supõe algo, como muda a voz do verbo, como demonstra respeito e como costura as frases. Leia com calma e marque o que ainda treme.
 
 #### Suposição: cada forma tem uma fonte
-O segredo aqui não é decorar a tradução, e sim lembrar de onde vem a sua certeza.〜そう ligado à raiz do verbo ou do adjetivo é o que você vê na hora:雨が降りそう("parece que vai chover", olhando o céu).〜よう e (na fala,〜みたい) é a conclusão que você tira juntando indícios:誰かいるようだ("parece que tem alguém").〜らしい é o que você ouviu de fora, informação de terceiros:明日休みらしい("dizem que amanhã é folga").
-Do lado da probabilidade:〜かもしれない é "talvez", baixa certeza;〜でしょう é uma previsão mais firme ("deve ser / provavelmente"); e 〜はず é a expectativa lógica baseada num motivo:もう着くはずだ("já era pra ter chegado").
+O segredo aqui não é decorar a tradução, e sim lembrar de onde vem a sua certeza.〜そう ligado à raiz do verbo ou do adjetivo é o que você vê na hora:雨が降りそう("parece que vai chover", olhando o céu).〜よう (na fala,〜みたい) é a conclusão que você tira juntando indícios:誰かいるようだ("parece que tem alguém").〜らしい é o que você ouviu de fora, informação de terceiros:明日休みらしい("dizem que amanhã é folga").
+Do lado da probabilidade:〜かもしれない é "talvez", baixa certeza;〜でしょう é uma previsão mais firme ("deve ser / provavelmente"); e 〜はず é a expectativa lógica baseada num motivo:もう着くはずだ("é pra chegar a qualquer momento").
 
 > **[l1-pitfall]**
 Não confunda o 〜そう de aparência com o 〜そうだ de boato.おいしそう(raiz do adjetivo) é "tem cara de gostoso";おいしいそうだ(forma completa + そうだ) é "dizem que é gostoso". A diferença está em vir coladinho na raiz ou depois da forma inteira.

@@ -56,7 +56,7 @@ E mais algumas palavras úteis para o dia a dia:
 - 真っ直ぐ: reto, em frente
 - 耳: orelha
 - 目: olho
-- 米: metro, unidade
+- 米(メートル): metro (unidade de comprimento)
 - 南: sul
 
 #### Os kanji de hoje

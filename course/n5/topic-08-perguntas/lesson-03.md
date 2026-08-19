@@ -66,7 +66,7 @@ Numa loja de bilhetes: どの切符ですか = "qual passagem é?". E sem dizer 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Há cinco câmeras na vitrine e você quer perguntar 'qual deles?' SEM dizer a palavra 'câmera'. Qual palavra usar?"}
+### 1. (recognition) {'pt-BR': "Há cinco câmeras na vitrine e você quer perguntar 'qual delas?' SEM dizer a palavra 'câmera'. Qual palavra usar?"}
 - **Resposta:** `{"choices": ["どれ", "どの", "どこ"], "correct": "どれ"}`
 - {'pt-BR': "Sem o nome depois e com três ou mais opções, usa-se どれ ('qual deles?'). どの precisaria de um substantivo logo após."}
 

@@ -21,7 +21,7 @@ O かな já é uma dúvida leve. Quando você alonga a vogal e diz かなあ, o
 Veja a fala interior de quem espera bom tempo: 明日は晴れるかなあ ("será que amanhã faz sol?"). E um desejo: 試験に受かるといいかなあ ("tomara que eu passe na prova").
 
 > **[l1-pitfall]**
-O seed deste ponto sugere algo como 静かだかなあ, mas na fala real o だ some antes de かなあ. Com adjetivo な e com substantivo, fale 静かかなあ ("será que é silencioso?") e 学生かなあ ("será que é estudante?"). Verbos e adjetivos い entram na forma comum, sem mexer: 来るかなあ, 高いかなあ.
+Dá vontade de dizer algo como 静かだかなあ, mas na fala real o だ some antes de かなあ. Com adjetivo な e com substantivo, fale 静かかなあ ("será que é silencioso?") e 学生かなあ ("será que é estudante?"). Verbos e adjetivos い entram na forma comum, sem mexer: 来るかなあ, 高いかなあ.
 
 > **[warning]**
 É registro informal, de monólogo ou conversa próxima. Numa reunião de trabalho, com um cliente, não solte um かなあ; ali a dúvida vira でしょうか.
@@ -90,7 +90,7 @@ O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o 
 
 
 ### 5. (production) {'pt-BR': "Diga 'tomara que eu seja feliz' como um desejo pensado em voz alta, usando 幸せ (felicidade) + になる + ～といい + ～かなあ."}
-- **Resposta:** `{"text": "幸せになるといいかなあ", "accept": ["幸せになるといいかなあ", "しあわせになるといいかなあ", "幸せになれるといいかなあ", "幸せになりたいなあ"]}`
+- **Resposta:** `{"text": "幸せになるといいかなあ", "accept": ["幸せになるといいかなあ", "しあわせになるといいかなあ", "幸せになれるといいかなあ", "しあわせになれるといいかなあ"]}`
 - {'pt-BR': "～といいかなあ é o jeito natural de soltar um desejo brando: 'tomara que dê certo de eu ficar feliz'. O かなあ alongado dá o tom de quem fala consigo mesmo. Mantenha o registro informal."}
 
 

@@ -19,7 +19,7 @@ Boa parte das palavras desta lição compartilha o som inicial しん, o que aju
 #### Confiança, pessoas e relações
 Um conjunto de palavras girando em torno de confiar e de gente.
 - 信頼 (しんらい) - confiança, fé (em alguém). É a confiança profunda, de longo prazo.
-- 信用 (しんよう) - confiança, crédito, reputação. Mais ligada a crédito e confiabilidade prática. (e, na nota: 'crédito, confiabilidade')
+- 信用 (しんよう) - confiança, crédito, reputação. Mais ligada a crédito e confiabilidade prática.
 - 親友 (しんゆう) - amigo íntimo, melhor amigo.
 - 人物 (じんぶつ) - pessoa, personagem, figura (de destaque).
 - 人類 (じんるい) - humanidade, gênero humano.
@@ -36,7 +36,7 @@ Aqui moram alguns homófonos perigosos: しんちょう aparece duas vezes com s
 - 心理 (しんり) - estado de espírito, mentalidade, psicologia.
 - 進歩 (しんぽ) - progresso, avanço, melhora.
 彼は身長が高いが性格は慎重だ (Ele tem estatura alta, mas tem temperamento cauteloso.)
-この内に実験が大きく進歩した (Nesse meio-tempo, o experimento progrediu bastante.)
+そのうちに実験が大きく進歩した (Com o tempo, o experimento progrediu bastante.)
 
 #### Julgamento, padrão e palavras curtas
 Para completar, palavras de avaliação e alguns substantivos de uma sílaba.

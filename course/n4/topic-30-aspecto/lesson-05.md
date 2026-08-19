@@ -29,7 +29,7 @@ Quase sempre vem um advérbio de "timing" junto:ちょうど("bem na hora", "jus
 Com o verbo na forma do dicionário,gp-72 diz que a ação está a um passo de acontecer: você ainda NÃO começou, está no ponto de começar. Em português é o nosso "estar prestes a" ou "estar na hora de".
 Molde: [verbo na forma do dicionário] ところだ
 > 🗣 ちょうど出かけるところだ。 — Estou de saída agora mesmo.
-Aqui ちょうど("bem na hora") com 出かける(sair) na forma do dicionário e ところだ: ninguém saiu ainda, a pessoa está com a mão na maçaneta. Compare com a versão gerada, que diz o mesmo com 今から("a partir de agora"):
+Aqui ちょうど("bem na hora") com 出かける(sair) na forma do dicionário e ところだ: ninguém saiu ainda, a pessoa está com a mão na maçaneta. Compare com a frase abaixo, que diz o mesmo com 今から("a partir de agora"):
 > 🗣 今から出かけるところだ — Estou de saída agora mesmo.
 
 > **[l1-pitfall]**
@@ -42,7 +42,7 @@ Molde: [verbo] ているところだ
 A carta não está pronta nem por começar: a caneta está correndo no papel agora. Por isso 〜ているところ é a resposta natural a "o que você está fazendo neste momento?".
 
 > **[example]**
-Imagine ver pela janela do 特急 uma 島 passando:天気予報を見ているところです= "estou bem no meio de ver a 天気予報". A cena está acontecendo enquanto você fala.
+Dentro do 特急, a caminho de uma 島:天気予報を見ているところです= "estou bem no meio de ver a 天気予報". A cena está acontecendo enquanto você fala.
 
 #### Acabei de fazer: 〜たところ
 Com o verbo no passado (forma 〜た),ta-tokoro diz que a ação acabou de terminar há pouquíssimo tempo: o nosso "acabar de". A ação está "fresca", quentinha, recém-saída do forno.

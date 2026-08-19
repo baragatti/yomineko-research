@@ -65,7 +65,7 @@ Para falar do cotidiano você também vai precisar destes verbos e palavras. Not
 - がる: sufixo que significa "mostrar sinais de estar / parecer sentir" (por exemplo, 寒がる = parecer com frio).
 
 > **[culture]**
-Roupa em japonês escolhe o verbo pela parte do corpo: chapéu vai com 被る (na cabeça), enquanto o 背広 (terno), do tronco para baixo, pede outro verbo (着る). Acessórios como gravata e relógio, por sua vez, usam o nosso する.
+Roupa em japonês escolhe o verbo pela parte do corpo: chapéu vai com 被る (na cabeça), enquanto o 背広 (terno), vestido no tronco, pede outro verbo (着る). Acessórios como gravata e relógio, por sua vez, usam o nosso する.
 
 #### Kanji da lição: 時
 O kanji 時 significa tempo e hora. Leituras principais: とき (kun, "momento, ocasião") e ジ (on, usada para as horas do relógio, como em "3 horas").

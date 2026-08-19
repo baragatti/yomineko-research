@@ -43,7 +43,7 @@ Mudanças acontecem com profissões, saúde e o que a gente lê. Guarde este gru
 
 #### Kanji novos
 - 備 ("equipar, preparar"): radical de pessoa preparando o necessário. Em 準備 ("preparação") e 設備 ("instalações").
-- 育 ("criar, educar, crescer"): em baixo o radical de "carne/corpo"; cuidar para o corpo crescer. Em 育てる ("criar, educar") e 教育 ("educação").
+- 育 ("criar, educar, crescer"): embaixo o radical de "carne/corpo"; cuidar para o corpo crescer. Em 育てる ("criar, educar") e 教育 ("educação").
 - 助 ("ajudar, socorrer"): ao lado o radical de "força"; emprestar força a alguém. Em 助ける ("ajudar, salvar").
 - 労 ("trabalho, esforço, fadiga"): também traz o radical de "força" embaixo; a força gasta no trabalho. Em 労働 ("trabalho, labor").
 - 訪 ("visitar"): à esquerda o radical de "palavra"; ir falar com alguém é visitar. Em 訪ねる ("visitar") e 訪問 ("visita").

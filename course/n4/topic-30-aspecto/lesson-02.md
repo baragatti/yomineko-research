@@ -22,7 +22,7 @@ O auxiliar tsuzukeru (つづける) cola no radical de outro verbo e diz que a a
 Aqui 勉強 (estudo) é o objeto e 続ける aparece sozinho, no sentido de "manter, dar continuidade a". O ことにしました é "decidi" (você verá depois); o que importa é a ideia de não largar o estudo.
 
 > **[tip]**
-Para parar de fazer, o par de 続ける é 続く (algo continua sozinho) e, do outro lado, os verbos de fim da lição anterior. Mas para "eu mantenho a ação", 〜続ける é a escolha certeira: 毎日続けると力になる = "se você continua todo dia, vira força".
+O par intransitivo de 続ける é 続く (algo continua sozinho); já para parar de fazer, use os verbos de fim da lição anterior. Mas para "eu mantenho a ação", 〜続ける é a escolha certeira: 毎日続けると力になる = "se você continua todo dia, vira força".
 
 #### 〜ていく: ir fazendo, rumo ao futuro
 Junte a forma て de um verbo com いく (ir) e nasce te-iku. Ele tem dois sentidos. O físico: você faz a ação e se afasta de onde está, "ir fazendo / ir embora fazendo".

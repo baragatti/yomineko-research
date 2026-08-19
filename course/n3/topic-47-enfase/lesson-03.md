@@ -39,7 +39,7 @@ A estrutura n3-mattaku-nai leva a negação ao extremo com carga emocional (impa
 Armadilha PT: まったく exige a negação no fim; sem ela, a frase fica incompleta ou muda de sentido (sozinho, まったく pode virar "francamente!", uma interjeição de irritação). Não basta pôr o advérbio no começo e esquecer de negar o verbo, como às vezes fazemos no português coloquial ("totalmente esqueci"). É mais enfático que 全然 e soa um pouco mais formal.
 
 #### 決して〜ない: "jamais, de modo algum"
-A estrutura n3-kesshite-nai deixa a negação categórica e enfática: "jamais", "de modo algum", "nunca". Expressa uma recusa firme, uma promessa ou uma regra que não admite exceção. É bem mais forte que um simples ない. O 決して abre a frase e exige um verbo no negativo depois.
+A estrutura n3-kesshite-nai deixa a negação categórica e enfática: "jamais", "de modo algum", "nunca". Expressa uma recusa firme, uma promessa ou uma regra que não admite exceção. É bem mais forte que um simples ない. O 決して vem antes do predicado negado (no começo da frase ou logo depois do tema) e exige um verbo no negativo.
 - 決して遅刻しない = "jamais me atraso".
 - このことは決して言わない = "isto eu nunca conto".
 Também combina com pedidos negativos 決して〜ないでください, comum em avisos:

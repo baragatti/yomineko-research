@@ -83,7 +83,7 @@ O kanji 煙 ('fumaça, fumo') aparece em 煙 ('fumaça') e 煙草 ('cigarro'). T
 
 ### 4. (cloze) {'pt-BR': "Complete 'A estadia em Tóquio foi divertida': 東京での＿＿は楽しかった。"}
 - **Resposta:** `{"text": "滞在", "full": "東京での滞在は楽しかった"}`
-- {'pt-BR': "滞在 (たいざい) é 'estadia, permanência' num lugar. 滞在 (たいざい) é 'estadia, permanência' num lugar. Com um lugar usa-se [lugar]での滞在: で marca onde se ficou e の liga ao substantivo (東京での滞在)."}
+- {'pt-BR': "滞在 (たいざい) é 'estadia, permanência' num lugar. Com um lugar usa-se [lugar]での滞在: で marca onde se ficou e の liga ao substantivo (東京での滞在)."}
 
 
 ### 5. (production) {'pt-BR': "Escreva em japonês: 'Este evento tem as crianças como público-alvo.' (use 対象)"}

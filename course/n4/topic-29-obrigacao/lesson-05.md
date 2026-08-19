@@ -93,8 +93,8 @@ Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.
 - {'pt-BR': "A negativa 行かない termina em ない (um adjetivo-い). Para a forma て, troca-se o い final por くて: ない → なくて. Por isso 行かない → 行かなくて. (行かないで também existe, mas marca modo, 'sem ir', não causa.)"}
 
 
-### 2. (cloze) {'pt-BR': 'Complete a forma て negativa de 急ぐ: 急が＿、間に合いました。 (Não me apressei, e mesmo assim cheguei a tempo.)'}
-- **Resposta:** `{"text": "なくて", "full": "急がなくて、間に合いました"}`
+### 2. (cloze) {'pt-BR': 'Complete a forma て negativa de 急ぐ: 急が＿、遅れました。 (Não me apressei, e por isso me atrasei.)'}
+- **Resposta:** `{"text": "なくて", "full": "急がなくて、遅れました"}`
 - {'pt-BR': '急がない (não me apresso) vira 急がなくて na forma て: liga a oração negativa à seguinte, marcando estado/causa. Lembre: い → くて.'}
 
 

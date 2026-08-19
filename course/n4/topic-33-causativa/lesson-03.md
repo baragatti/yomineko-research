@@ -23,7 +23,7 @@ A receita é simples: pegue o causativo de um verbo e coloque a terminação do 
 Assim,私は野菜を食べさせられた quer dizer "fui obrigado a comer verdura" (alguém me fez comer, e eu não queria).
 
 > **[tip]**
-Nos verbos do grupo 1 existe uma forma curta: 〜される no lugar de 〜させられる. Ex.:飲まされる("ser obrigado a beber"). Por enquanto, reconheça as duas; produzir a forma longa 〜させられる já basta.
+Nos verbos do grupo 1 existe uma forma curta: 〜される no lugar de 〜せられる. Ex.:飲まされる("ser obrigado a beber"). Por enquanto, reconheça as duas; produzir a forma longa 〜せられる já basta.
 
 #### Dois sentidos: coerção e reação involuntária
 O primeiro sentido é a coerção: alguém com mais poder (chefe, pai, professor) te força a agir. Quem manda costuma ser marcado com に.

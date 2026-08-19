@@ -53,7 +53,7 @@ Palavras coloquiais e de quantidade.
 
 #### Kanji novos
 O kanji 晩 ('anoitecer, noite') aparece em 今晩 ('esta noite') e 晩御飯 ('jantar'). Tem o sol (日) à esquerda, já se pondo.
-O kanji 寒 ('frio') aparece em 寒い ('frio') e 寒気 ('ar frio, calafrio'). Imagine alguém encolhido dentro de casa no inverno.
+O kanji 寒 ('frio') aparece em 寒い ('frio') e 寒気 ('ar frio, frio intenso'; com a leitura さむけ, 寒気 significa 'calafrio'). Imagine alguém encolhido dentro de casa no inverno.
 
 #### Hora de praticar
 

@@ -48,7 +48,7 @@ Por fim, um grupo variado de substantivos comuns.
 - 品 (ひん) - elegância, classe, aquele requinte que uma pessoa tem.
 - 紐 (ひも) - cordão, cadarço ou fio.
 - 瓶 (びん) - garrafa, frasco ou jarro.
-Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 秘密 num contexto de quem guarda algo só para si.
+Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 瓶 (びん) numa fala do dia a dia.
 先生は生徒一人一人について話した (A professora falou sobre cada aluno individualmente.)
 この瓶は空だけど、捨てないでね (Esta garrafa está vazia, mas não jogue fora, viu?)
 

@@ -49,7 +49,7 @@ A forma て seguida de はいけない (te-wa-ikenai) proíbe: "não pode", "é 
 Molde: [forma て] はいけません ("é proibido fazer")
 - ここに入ってはいけません: "é proibido entrar aqui".
 - そのドアを引いてはいけません: "não pode puxar essa porta".
-Um cenário clássico de proibição é o 灰皿 ("cinzeiro"): onde não há um, costuma valer "é proibido fumar". A leitura はいざら começa igual a はいる, e só diverge a partir da segunda mora, então preste atenção ao resto da palavra. Compare também com:
+Um cenário clássico de proibição é o 灰皿 ("cinzeiro"): onde não há um, costuma valer "é proibido fumar". A leitura はいざら começa igual a はいる, e só diverge a partir da terceira mora, então preste atenção ao resto da palavra. Compare também com:
 - 伯: conde (título de nobreza)
 
 > **[l1-pitfall]**

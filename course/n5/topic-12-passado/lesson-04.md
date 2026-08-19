@@ -85,8 +85,8 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 
 
 ### 2. (particle_choice) {'pt-BR': "Você está sozinho(a) e quer comentar 'ah, como eu gosto de animais...'. Complete: 動物が好きだ＿。"}
-- **Resposta:** `{"choices": ["なあ", "か", "な"], "correct": "なあ"}`
-- {'pt-BR': "なあ solta a emoção em voz alta depois de だ. O か faria uma pergunta, e o な sozinho colado a verbo seria proibição. Aqui queremos o suspiro: 'ah, como eu gosto...'."}
+- **Resposta:** `{"choices": ["なあ", "か", "を"], "correct": "なあ"}`
+- {'pt-BR': "なあ solta a emoção em voz alta depois de だ. O か depois de だ não forma pergunta (a pergunta seria 好きか) e o を é partícula de objeto, que nunca fecha a frase. Aqui queremos o suspiro: 'ah, como eu gosto...'."}
 
 
 ### 3. (cloze) {'pt-BR': 'Complete com a partícula de emoção (suspiro de quem achou caro): 高かった＿。 (Nossa, como foi caro...)'}

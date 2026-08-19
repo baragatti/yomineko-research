@@ -36,13 +36,13 @@ Fechamos o vocabulário do tema com algumas palavras úteis:
 - ジェット (ジェット) = "jato", como em ジェット機 ("avião a jato").
 
 > **[l1-pitfall]**
-Em ジーンズ e ジェット, o ー e o っ marcam batidas. ジーンズ tem a vogal longa (ジー = dois tempos), e ジェット tem o っ (uma pausa silenciosa): je-(pausa)-tto. Não atropele essas batidas como faria com "jeans" em português; cada uma é um tempo.
+Em ジーンズ e ジェット, o ー e o っ marcam batidas. ジーンズ tem a vogal longa (ジー = dois tempos), e ジェット tem o っ (uma pausa silenciosa): je-(pausa)-to. Não atropele essas batidas como faria com "jeans" em português; cada uma é um tempo.
 
 #### Kanji de ação e emoção (um grande bloco de revisão)
 Este tema acumulou muitos verbos de ação e estado. Veja a leva final, agrupada por radical e ideia:
 Do corpo e da emoção: 抱 "abraçar, segurar nos braços" (radical da mão 扌), em 抱く; 息 "respiração, fôlego" (coração 心 embaixo do nariz 自), em 息; 恐 "medo, temor", em 恐ろしい ("assustador"); 痛 "dor, doer" (radical da doença 疒), em 痛い ("dói").
 De desejo e busca: 欲 "desejo, cobiça", em 欲しい ("querer"); 探 "procurar, buscar" (mão 扌), em 探す; 束 "feixe, maço, amarrar", em 約束 ("promessa").
-De movimento (todos com o radical 辶): 遠 "distante, longe", em 遠い; 戻 "voltar, retornar", em 戻る; 越 "ultrapassar, atravessar", em 越える; 逃 "fugir, escapar", em 逃げる.
+De movimento (só 遠 e 逃 trazem o radical 辶; 戻 vem de 戸, porta, e 越 vem de 走, correr): 遠 "distante, longe", em 遠い; 戻 "voltar, retornar", em 戻る; 越 "ultrapassar, atravessar", em 越える; 逃 "fugir, escapar", em 逃げる.
 E ainda: 犯 "crime, delito", em 犯人 ("criminoso"); 君 "você (informal), soberano", o 君 usado entre próximos; 閉 "fechar" (algo dentro do portão 門), em 閉める ("fechar").
 
 > **[culture]**

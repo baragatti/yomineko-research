@@ -90,7 +90,7 @@ Numa mesa com amigos: ケーキを一つずつください ("um pedaço de bolo 
 
 
 ### 5. (production) {'pt-BR': "Diga em japonês 'cerca de dez milhões de ienes' usando 一千万円 (dez milhões de ienes) + a partícula de aproximação."}
-- **Resposta:** `{"text": "一千万円くらい", "accept": ["一千万円くらい", "一千万円ぐらい", "いちせんまんえんくらい", "いちせんまんえんぐらい"]}`
+- **Resposta:** `{"text": "一千万円くらい", "accept": ["一千万円くらい", "一千万円ぐらい", "いっせんまんえんくらい", "いっせんまんえんぐらい"]}`
 - {'pt-BR': "一千万円 (dez milhões de ienes) + くらい/ぐらい = 'cerca de dez milhões de ienes'. As formas くらい e ぐらい são intercambiáveis."}
 - frases: `sent:tatoeba-190376`
 

@@ -49,7 +49,7 @@ Observe o kana destas palavras. Nos estrangeirismos (コーチ, ゴール, コ�
 - 候補 (こうほ) = "candidato, opção".
 - コーチ (コーチ) = "treinador, técnico". A barrinha ー marca a vogal longa.
 - ゴール (ゴール) = "gol, meta, chegada".
-- コード (コード) = "código, programa".
+- コード (コード) = "código (de programação, cifra); cabo, fio".
 - 呼吸 (こきゅう) = "respiração".
 - 故郷 (こきょう) = "terra natal, cidade natal".
 - 氷 (こおり) = "gelo".

@@ -29,7 +29,7 @@ Comecemos por palavras de natureza e do calendário. Repare que três delas fala
 - 野 (の) - campo aberto, planície.
 この家は年中鼠が出るくせに、家賃は高い (Esta casa tem rato o ano todo, e mesmo assim o aluguel é caro.)
 彼は大人の年齢なのに、子どものようにゲームに熱中している (Ele já tem idade de adulto, mas vive imerso em jogos como uma criança.)
-熱帯では一年間雨が降るが、涼しい季節もないわけではない (Nos trópicos chove o ano inteiro, mas não é que não exista também uma estação mais fresca.)
+熱帯では一年中雨が降るが、涼しい季節もないわけではない (Nos trópicos chove o ano inteiro, mas não é que não exista também uma estação mais fresca.)
 
 > **[l1-pitfall]**
 Cuidado para não confundir 年間, 年中 e 年代. 年間 conta uma quantidade de anos como intervalo (três anos, dez anos); 年中 significa "o ano inteiro, sem parar"; e 年代 aponta uma época ou período. Já a idade de uma pessoa é sempre 年齢.

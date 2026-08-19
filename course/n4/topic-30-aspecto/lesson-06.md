@@ -27,7 +27,7 @@ Molde: [substantivo] ばかり
 Quando ばかり vem depois de um verbo no passado (forma 〜た), o sentido muda: ta-bakari significa "acabar de fazer". Marca uma ação que terminou há muito pouco tempo e que, para quem fala, ainda está "fresca".
 Molde: [verbo no passado] たばかり (だ / です)
 > 🗣 仕上がったばかり。 — Acabei de terminar.
-Aqui 仕上がった é o passado de "ficar pronto", e ばかり diz que isso foi agorinha: "acabei de terminar". Sem nenhum verbo de tempo, o ばかり sozinho já carrega o "acabar de".
+Aqui 仕上がった é o passado de "ficar pronto", e ばかり diz que isso foi agorinha: "acabei de terminar". Sem nenhum advérbio de tempo, o ばかり sozinho já carrega o "acabar de".
 > 🗣 仕事から帰ったばかりよ。 — Acabei de chegar do trabalho.
 Nesta, 帰った é o passado de "voltar para casa" e ばかり marca que o retorno do trabalho foi há pouquíssimo. O よ no fim é só um toque coloquial, como um "viu" suavizando o aviso.
 
@@ -57,7 +57,7 @@ Juntando tudo: 市民は政治の話ばかりしている = "Os 市民 só falam
 
 #### Kanji da lição
 古 significa "velho, antigo" (leituras: kun ふる em 古い "velho"; on コ). A forma é 十 (dez) sobre 口 (boca): pense em algo tão "velho" que passou por dez bocas, contado de geração em geração.
-買 significa "comprar" (leituras: kun か em 買う "comprar"; on バイ). Em baixo está 貝 (concha), que no passado servia de dinheiro; em cima, uma "rede" que apanha o que você leva da loja. Casa direto com 〜たばかり: 買ったばかりの物だ = "é uma coisa que acabei de comprar".
+買 significa "comprar" (leituras: kun か em 買う "comprar"; on バイ). Embaixo está 貝 (concha), que no passado servia de dinheiro; em cima, uma "rede" que apanha o que você leva da loja. Casa direto com 〜たばかり: 買ったばかりの物だ = "é uma coisa que acabei de comprar".
 
 #### Hora de praticar
 

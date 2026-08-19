@@ -83,9 +83,9 @@ Como 必要 já significa "necessário", você não precisa conjugar verbo algum
 - {'pt-BR': "No padrão X が必要, a coisa de que se precisa é marcada por が, como se fosse o sujeito de 'ser necessário'. Cuidado: não há um 'de' nem o uso de を aqui."}
 
 
-### 3. (cloze) {'pt-BR': "Complete com a palavra de 'necessidade' (em kana): 電灯が＿です。 (Preciso de uma luz / a luz é necessária.)"}
+### 3. (cloze) {'pt-BR': "Complete com a palavra de 'necessidade': 電灯が＿です。 (Preciso de uma luz / a luz é necessária.)"}
 - **Resposta:** `{"text": "必要", "full": "電灯が必要です"}`
-- {'pt-BR': "必要 (ひつよう) carrega o sentido de 'necessário'. O molde fica 電灯 (luz elétrica) が 必要 です. Aceita-se também escrever ひつよう em kana."}
+- {'pt-BR': "必要 (ひつよう) carrega o sentido de 'necessário'. O molde fica 電灯 (luz elétrica) が 必要 です. A leitura é ひつよう, mas escreva 必要 em kanji para a resposta ser aceita."}
 
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'Preciso de roupa de baixo.' com as peças: [です] [下着] [必要] [が]"}

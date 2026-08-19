@@ -57,7 +57,7 @@ Estas palavras aparecem muito quando descrevemos e corrigimos descrições (em k
 - 参考 (さんこう) = 'referência, consulta'.
 
 > **[l1-advantage]**
-Vantagem PT: o par 覚ます (さます, 'acordar alguém') e 覚める (さめる, 'acordar') segue a mesma lógica de transitivo/intransitivo que você já tem em português com 'acordar (alguém)' e 'acordar (sozinho)'. Guarde o casal junto: あ・ます é o que você faz no outro, あ・める é o que acontece com você.
+Vantagem PT: o par 覚ます (さます, 'acordar alguém') e 覚める (さめる, 'acordar') segue a mesma lógica de transitivo/intransitivo que você já tem em português com 'acordar (alguém)' e 'acordar (sozinho)'. Guarde o casal junto: さ・ます é o que você faz no outro, さ・める é o que acontece com você.
 
 #### Kanji da música e do sentimento
 O kanji 曲 ('curvar; música, melodia') desenha algo dobrado, com curvas; daí vem tanto 'curvar' quanto 'melodia', em 作曲 ('compor'). O kanji 精 ('refinado, essência, energia') aparece em 精神 ('espírito').
@@ -101,7 +101,7 @@ O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na ág
 
 
 ### 5. (production) {'pt-BR': "Diga 'Eu ia sair. No entanto, começou a chover.' usando ところが no começo da segunda frase."}
-- **Resposta:** `{"text": "出かけようとした。ところが雨が降ってきた", "accept": ["でかけようとした。ところがあめがふってきた", "出かけようとした ところが雨が降ってきた", "出かけようとしたが、ところが雨が降ってきた"]}`
+- **Resposta:** `{"text": "出かけようとした。ところが雨が降ってきた", "accept": ["でかけようとした。ところがあめがふってきた", "出かけようとした ところが雨が降ってきた", "出かけようとしました。ところが雨が降ってきました"]}`
 - {'pt-BR': 'ところが encabeça a segunda frase para marcar o desfecho inesperado: 出かけようとした (ia sair) + ところが + 雨が降ってきた (começou a chover). Note que ところが não se cola ao verbo da primeira oração; ele abre uma frase nova.'}
 
 

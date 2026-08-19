@@ -24,11 +24,11 @@ Molde: [substantivo] じゃなかった
 - １日じゃなかった = "não era １日".
 
 > **[tip]**
-Veja o passo a passo a partir do presente: です ("é") → じゃない ("não é") → じゃなかった ("não era"). O -katta no fim é a marca de passado, a mesma que aparece em だった. Já o じゃ é só a contração coloquial de では.
+Veja o passo a passo a partir do presente: です ("é") → じゃない ("não é") → じゃなかった ("não era"). O -katta no fim é o passado de ない (なかった); a marca de passado mesmo é o た, que também aparece em だった. Já o じゃ é só a contração coloquial de では.
 
 #### Funciona com substantivos e com adjetivos-な
 Assim como o afirmativo, o じゃなかった gruda em substantivos e em adjetivos-な. Compare o afirmativo e o negativo lado a lado:
-- １０日でした = "era １０日" → １０日じゃなかった = "não era １０日".
+- １０日だった = "era １０日" → １０日じゃなかった = "não era １０日".
 - ひまだった = "estava livre" → ひまじゃなかった = "não estava livre".
 
 > **[l1-advantage]**

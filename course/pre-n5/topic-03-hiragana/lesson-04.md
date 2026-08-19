@@ -30,7 +30,7 @@ Cuidado com os dois fora da curva:ち é o som chi, igual ao "ti" de "tia" (com 
 Mais uma armadilha do português: muita gente já fala ti de "tia" com aquele "tch", e para ち esse é justamente o som certo. Em japonês a regra é fixa:ち é sempre chi e つ é sempre tsu, em qualquer palavra. Não existe "ti" nem "tu" puros nesta família.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Atenção ao つ: é um traço único, feito de cima para a esquerda e depois curvando para a direita. Repita cada kana algumas vezes em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Atenção ao つ: é um traço único, começando no alto e indo para a direita, depois descendo numa curva larga para a esquerda, com a ponta afinando no fim. Repita cada kana algumas vezes em voz alta enquanto escreve.
 
 #### Leitura: junte com o que você já sabe
 

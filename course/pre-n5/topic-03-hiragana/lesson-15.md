@@ -23,12 +23,12 @@ Lembrete do padrão: pegamos a coluna do i (み・り・ぎ・じ・び・ぴ) e
 - みゃ(mya),みゅ(myu),みょ(myo): pense em "miau" do gato, mas curtinho.
 - りゃ(rya),りゅ(ryu),りょ(ryo): o r é leve, batidinho, como em "caro".
 - ぎゃ(gya),ぎゅ(gyu),ぎょ(gyo): g duro como em "gato".
-- じゃ(ja),じゅ(ju),じょ(jo): o j do romaji aqui é o "dj" de "dia", "gente", não o "j" de "jeito".
+- じゃ(ja),じゅ(ju),じょ(jo): o j do romaji aqui é o "dj" de "dia", "grande", não o "j" de "jeito".
 - びゃ(bya),びゅ(byu),びょ(byo): b de "boca".
 - ぴゃ(pya),ぴゅ(pyu),ぴょ(pyo): p de "pato".
 
 > **[l1-advantage]**
-Vantagem PT: a sequência じゃ・じゅ・じょ usa o som de "dj" do nosso "dia", "gente" (e não o "j" de "já", "jogo"). A maioria dos brasileiros já faz esse som sem perceber, então é um dos contraídos mais fáceis.
+Vantagem PT: a sequência じゃ・じゅ・じょ usa o som de "dj" do nosso "dia", "grande" (e não o "j" de "já", "jogo"). A maioria dos brasileiros já faz esse som sem perceber, então é um dos contraídos mais fáceis.
 
 > **[l1-pitfall]**
 Armadilha PT: cuidado para não engolir o り dos contraídos りゃ・りゅ・りょ. Não é um rr forte de "carro"; é o r leve e batidinho de "cara". Diga りょ como o "rio" de "Mário", "diário", bem suave.

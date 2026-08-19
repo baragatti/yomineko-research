@@ -27,10 +27,10 @@ Boa notícia para quem fala português: o m japonês soa exatamente como o nosso
 - も(mo): som de mo em "moça". Um anzol vertical atravessado por dois traços horizontais.
 
 > **[l1-pitfall]**
-Cuidado com dois pares parecidos na forma:め(me) versus ぬ(nu): o ぬ termina com um lacinho, o め não. E む(mu) lembra um pouco o す(su), mas o む tem aquele lacinho extra à direita. Olhe sempre o detalhe final de cada um.
+Cuidado com dois pares parecidos na forma:め(me) versus ぬ(nu): o ぬ termina com um lacinho, o め não. E む(mu) lembra um pouco o す(su), mas o む tem um risquinho extra no canto superior direito. Olhe sempre o detalhe final de cada um.
 
 > **[tip]**
-Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado estático. O ま e o も começam pelos traços horizontais antes da curva vertical. Repita cada kana algumas vezes em voz alta enquanto escreve.
+Para escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado estático. O ま começa pelos dois traços horizontais; já o も começa pela curva vertical com gancho e só depois recebe os dois traços horizontais. Repita cada kana algumas vezes em voz alta enquanto escreve.
 
 #### Palavras para ler
 Junte com os kana que você já aprendeu e leia em voz alta:

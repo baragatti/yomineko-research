@@ -52,7 +52,7 @@ Palavras que aparecem o tempo todo na vida prática: na escola, no trânsito, na
 中古の車を安く買った (Comprei um carro usado baratinho.)
 
 > **[tip]**
-Repare como o kanji 中 (meio, dentro) reaparece em 中学, 中止 e 中古, mas com leituras e sentidos diferentes em cada palavra. Memorizar a palavra inteira é mais seguro do que tentar deduzir pelo kanji isolado.
+Repare como o kanji 中 (meio, dentro) reaparece em 中学, 中止 e 中古, sempre com a leitura ちゅう, mas com sentidos diferentes em cada palavra. Memorizar a palavra inteira é mais seguro do que tentar deduzir pelo kanji isolado.
 
 #### Palavras do dia a dia
 Para fechar, quatro itens curtos e muito frequentes.

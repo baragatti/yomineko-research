@@ -19,7 +19,7 @@ O japonês tem toda uma família de verbos para falar de favores: dar um, fazer 
 #### ～てあげる: faço isso em seu benefício
 Pegue um verbo na forma て e acrescente あげる. O verbo あげる sozinho quer dizer "dar (de mim para fora)"; colado à forma て ele passa a "dar a ação", ou seja, fazer o favor. te-ageru serve quando você (ou alguém do seu lado) faz algo de bom para outra pessoa.
 > 🗣 してあげる。 — Eu faço isso pra você.
-Aqui してあげる é a forma て de する ("fazer") mais あげる: literalmente "faço para você". A pessoa beneficiada normalmente é marcada com に: 友だちに手伝ってあげる = "ajudo meu amigo".
+Aqui してあげる é a forma て de する ("fazer") mais あげる: literalmente "faço para você". A pessoa beneficiada normalmente é marcada com に: 友だちに本を貸してあげる = "empresto um livro para o meu amigo".
 > 🗣 待ってあげる。 — Eu te espero.
 Repare em 待ってあげる: "vou esperar por você". A nuance de あげる é que a ação é um gesto de bondade, algo que a outra pessoa recebe de bom grado e por isso 喜ぶ (fica contente).
 
@@ -72,14 +72,14 @@ Resuma assim: te-ageru = faço o favor (educado, neutro); te-yaru = mesmo favor,
 - {'pt-BR': "〜てあげる indica que você (ou alguém do seu lado) faz uma ação de bom grado em benefício de outra pessoa. A direção é 'de mim para fora'."}
 - frases: `sent:tatoeba-11059892`
 
-### 2. (recognition) {'pt-BR': 'Você vai regar a planta do seu quarto, fazendo um favor a ela. Qual forma combina melhor?'}
-- **Resposta:** `{"choices": ["水をやってあげます", "水をやってやる", "水をくれる"], "correct": "水をやってやる"}`
-- {'pt-BR': "Para plantas, animais, crianças e iguais em tom informal usa-se 〜てやる. É a versão 'de cima para baixo' do mesmo favor."}
+### 2. (recognition) {'pt-BR': 'Você vai ler um livro para o seu irmão mais novo, fazendo um favor a ele. Qual forma combina melhor?'}
+- **Resposta:** `{"choices": ["本を読んであげます", "本を読んでやる", "本を読んでくれる"], "correct": "本を読んでやる"}`
+- {'pt-BR': "Para irmãos mais novos, crianças, animais e plantas, em tom informal, usa-se 〜てやる: 弟に本を読んでやる. É a versão 'de cima para baixo' do mesmo favor. 本を読んであげます soa formal demais entre irmãos, e 本を読んでくれる inverteria a direção (alguém lendo para mim)."}
 - frases: `sent:tatoeba-4766`
 
-### 3. (particle_choice) {'pt-BR': 'Complete: 友だち＿手伝ってあげる。 (Ajudo meu amigo.)'}
+### 3. (particle_choice) {'pt-BR': 'Complete: 友だち＿日本語を教えてあげる。 (Ensino japonês para o meu amigo.)'}
 - **Resposta:** `{"choices": ["に", "は", "で"], "correct": "に"}`
-- {'pt-BR': "A pessoa beneficiada pelo favor (〜てあげる) é marcada com に: 友だちに手伝ってあげる = 'ajudo o meu amigo'."}
+- {'pt-BR': "A pessoa que recebe o favor de 〜てあげる costuma vir com に: 友だちに日本語を教えてあげる = 'ensino japonês para o meu amigo'. Atenção: a partícula vem do verbo de base, e 手伝う marca a pessoa com を (友だちを手伝ってあげる)."}
 
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'Vou te contar uma coisa boa.' com as peças: [やる] [教えて] [いいことを]"}

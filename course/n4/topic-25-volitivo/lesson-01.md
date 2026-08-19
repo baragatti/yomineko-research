@@ -56,7 +56,7 @@ Não traduza a volitiva como futuro de previsão. 雨が降ろう NÃO significa
 Cuidado para não confundir este you-da volitivo (vontade) com o 〜ようだ de "parecer/aparência". A grafia se parece, mas o uso é totalmente diferente.
 
 #### Verbos do dia a dia para praticar
-Estes verbos são do grupo 2, então todos viram volitivo simplesmente somando よう:
+Estes verbos são do grupo 2, então todos viram volitivo trocando o る por よう:
 - 始める: começar → 始めよう ("vamos começar").
 - 届ける: entregar → 届けよう.
 - 知らせる: avisar → 知らせよう.

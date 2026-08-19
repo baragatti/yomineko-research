@@ -33,7 +33,7 @@ A forma gp-132 usa 見られる, o potencial/passivo de 見る ("ver"). Signific
 Aqui 夜 é "noite", 星 é "estrela" e よく é "bem / com frequência". Ou seja: "à noite, estrelas podem ser bem vistas". É uma descrição do que se pode observar, não um "eu quero ver".
 
 > **[tip]**
-Pense em がみられる como o "dá para ver" do português, usado para descrever lugares e fenômenos: "no parque dá para ver cerejeiras", "do alto dá para ver o mar". É objetivo e impessoal, ótimo para descrições.
+Pense em がみられる como o "dá para ver" do português, usado para descrever lugares e fenômenos: "no parque dá para ver cerejeiras na primavera", "no zoológico dá para ver pandas". É objetivo e impessoal, ótimo para descrições. Para o que simplesmente está à vista de onde você está (o mar, lá do alto), o japonês usa 見える.
 
 #### O sufixo 〜風: no estilo de, à moda de
 Grudado no fim de um substantivo, gp-131 (lido ふう) indica estilo, jeito ou aparência parecida: "no estilo de", "à moda de", "tipo", "meio". Vem da ideia de "modo / maneira". Você usa para dizer que algo imita ou lembra um certo estilo, sem ser exatamente aquilo.
@@ -58,7 +58,7 @@ Aproveite para fixar cinco palavras úteis em casa e na escola. Repare como elas
 - 慣れる: acostumar-se, habituar-se.
 
 > **[example]**
-Juntando os três padrões num só retrato: このカフェは和風で、静かでいい匂いがして、窓から庭が見られる = "Este café é em estilo japonês, é silencioso e tem um cheiro bom. Pela janela dá para ver o jardim".
+Juntando os três padrões num só retrato: このカフェは和風で、静かでいい匂いがして、春には窓から桜が見られる = "Este café é em estilo japonês, é silencioso e tem um cheiro bom. Na primavera, dá para ver as cerejeiras pela janela".
 
 #### Hora de praticar
 

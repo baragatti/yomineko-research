@@ -21,7 +21,7 @@ A estrutura n3-to-shite indica o papel, a função, a posição ou a qualidade e
 彼は弁護士として働いている = "Ele trabalha como advogado".
 Também serve para classificar algo:
 これはおやつとして食べられる = "Isto pode ser comido como lanche".
-Para reforçar essa identidade, existe a variante としては:
+Já para avaliar algo tomando o papel como critério ("para um X"), existe a variante としては:
 学生としてはまあまあの成績だ = "Para um estudante, é uma nota razoável".
 
 > **[l1-pitfall]**
@@ -31,7 +31,7 @@ Armadilha PT: o nosso "como" é ambíguo e também serve para COMPARAÇÃO ("cor
 A partícula final n3-kke aparece quando a pessoa tenta LEMBRAR ou confirmar algo que sabia mas esqueceu na hora. É o tom de quem fala consigo mesmo ou pede uma conferida rápida: "era hoje, né?", "como é que era mesmo?". É bem coloquial.
 あれ、会議は明日じゃなかったっけ? = "Ué, a reunião não era amanhã mesmo?".
 A formação por tipo de palavra:
-- Verbo (casual) + っけ: 名前何だっけ? ("qual era o nome mesmo?").
+- Verbo (casual, passado) + っけ: もう食べたっけ? ("eu já comi mesmo?").
 - Adjetivo-い no passado + っけ: 高かったっけ? ("era caro mesmo?").
 - Adjetivo-な e substantivo + だっけ: 明日休みだっけ? ("amanhã é folga mesmo?").
 Na fala mais cuidada pode aparecer ですっけ / ましたっけ, mas o uso típico é casual.

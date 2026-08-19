@@ -22,7 +22,7 @@ A palavra 場合 significa "caso, situação". Com a partícula は ela vira baa
 - 故障の場合は電話してください = "No caso de defeito, ligue, por favor".
 Repare na ligação. Quando antes de 場合は vem um substantivo, ele entra com a partícula の no meio. O molde fica assim:
 Molde: [substantivo] の場合は [o que fazer]
-É o caso de 雨の場合は ("no caso de chuva"). Quando antes de 場合は vem um verbo ou adjetivo, basta deixá-lo na forma simples, sem の. Veja um aviso real:
+É o caso de 雨の場合は ("no caso de chuva"). Quando antes de 場合は vem um verbo ou um adjetivo-い, basta deixá-lo na forma simples, sem の (行く場合は, 高い場合は). Já o adjetivo-な entra com な: 必要な場合は ("caso seja necessário"). Veja um aviso real:
 > 🗣 雨天の場合は運動会を中止する。 — Em caso de chuva, a gincana esportiva será cancelada.
 Aqui 雨天 é "tempo chuvoso" e 中止 é "cancelamento". A estrutura é exatamente "no caso de X, faz-se Y". Essa frase poderia estar colada num mural de escola.
 場合は também aponta de volta a algo já dito, como "nesse caso":
@@ -45,7 +45,7 @@ Você também pode prender だけで a um substantivo: ボタンだけで動く 
 Não confunda だけで ("só com isso já basta") com だけ sozinho ("apenas X, e nada mais"). 水だけ飲む = "bebo só água"; 水だけで生きる = "vivo só com água (basta água)". O で é que traz a ideia de "por meio disso é suficiente".
 
 #### Kanji da lição
-Dois kanji aparecem nesta unidade. Primeiro 主, com sentido de "senhor, chefe, dono, o principal". Imagine um candeeiro (王 "rei") com uma chama (丶) em cima: o que fica no topo, o "principal". Ele está em 社長 de modo indireto pela ideia de "chefe", e aparece em palavras como 主人 ("dono, marido").
+Dois kanji aparecem nesta unidade. Primeiro 主, com sentido de "senhor, chefe, dono, o principal". Imagine um candeeiro (王 "rei") com uma chama (丶) em cima: o que fica no topo, o "principal". Ele aparece em palavras como 主人 ("dono, marido") e 主に ("principalmente"). Cuidado: 社長 traz a mesma ideia de "chefe", mas se escreve com 社 + 長, sem o 主.
 Depois 持, "segurar, ter". À esquerda está o radical de mão (扌); à direita, 寺 ("templo"). Pense em "a mão que segura algo no templo". É o kanji do verbo 持つ ("ter, segurar") e de 気持ち ("sentimento, o que se carrega por dentro").
 
 > **[example]**

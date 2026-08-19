@@ -60,7 +60,7 @@ Molde: 何 [contador] か
 É a mesma lógica do だれか / 何か de antes: o か transforma "qual/quanto exato?" em "algum/uns quantos". Aprendeu uma peça, ganhou três usos.
 
 #### O kanji da lição: 的
-O kanji 的 significa alvo, marca, e também funciona como terminação de adjetivo (o sufixo てき, parecido com nosso "-al/-ico": 目的 = "objetivo/finalidade"). Para gravar a forma: à esquerda fica 白 ("branco"), o fundo claro do alvo, e à direita uma marquinha, o ponto de mira no centro. É o branco do alvo com a marca no meio.
+O kanji 的 significa alvo, marca, e também funciona como terminação de adjetivo (o sufixo てき, parecido com nosso "-al/-ico": 社会的 = "social"). Já em 目的 ("objetivo, finalidade") o 的 guarda o sentido de "alvo". Para gravar a forma: à esquerda fica 白 ("branco"), o fundo claro do alvo, e à direita uma marquinha, o ponto de mira no centro. É o branco do alvo com a marca no meio.
 
 #### Uma palavra de coleção: 県下
 Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか), que significa "na província", "provincial". Aqui 下 não é "menos", mas "sob a jurisdição de": tudo o que está "abaixo" (dentro) da província. É um bom lembrete de que o mesmo kanji muda de sentido conforme o composto.

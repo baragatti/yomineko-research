@@ -46,7 +46,7 @@ Mais um par de verbos com a mesma raiz e papéis opostos.
 - 願い (ねがい) - desejo, vontade, pedido.
 - 願う (ねがう) - desejar, almejar, pedir.
 - 根 (ね) - raiz (de planta).
-- 値 (あたい) - preço, valor.
+- 値 (ね / あたい) - preço (ね, como em 値が高い); valor, mérito (あたい).
 - 布 (ぬの) - pano, tecido, material.
 彼女はにっこり笑って願いを言った (Ela sorriu docemente e disse seu desejo.)
 この布は値が高い (Este tecido tem um preço alto.)

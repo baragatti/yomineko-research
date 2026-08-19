@@ -28,7 +28,7 @@ O oposto da conclusão: n3-kirenai diz que a pessoa NÃO consegue completar a a�
 この量は食べ切れない = "não dou conta de comer toda essa quantidade".
 
 > **[l1-pitfall]**
-Armadilha PT: não traduza por um simples "não consigo comer". O ponto é "não consigo TERMINAR de comer / não dou conta de tudo". É a forma negativa de ～切る ("fazer até o fim"), então o que se nega é o "concluir por completo", não a ação em si.
+Armadilha PT: não traduza por um simples "não consigo comer". O ponto é "não consigo TERMINAR de comer / não dou conta de tudo". É a negativa do potencial de ～切る ("fazer até o fim"), então o que se nega é o "conseguir concluir por completo", não a ação em si.
 
 #### ～ちゃった: acabei fazendo
 Versão coloquial e contraída de ～てしまった,n3-chatta marca uma ação concluída, muitas vezes com tom de descuido, arrependimento ou algo sem querer. Pegue a forma て/で e troque por ちゃった/じゃった:食べてしまった vira 食べちゃった;飲んでしまった vira 飲んじゃった. Os verbos cuja forma termina em で usam じゃった.

@@ -32,7 +32,7 @@ A mesma forma cobre obrigar/mandar e deixar/permitir. Quem decide é o contexto 
 - Permitir:子供を自由に遊ばせる= "deixar a criança brincar à vontade". Aqui 自由(liberdade) reforça o sentido de permissão.
 
 > **[tip]**
-Regra prática: quando a pessoa obrigada/autorizada é marcada por に, costuma ser obrigação ("mandar fulano fazer"). Quando é marcada por を, com verbo intransitivo, costuma ser permissão ou "causar que aconteça". Não decore como lei; sinta pelo contexto.
+Regra prática: com verbo intransitivo, marcar a pessoa causada com を costuma indicar obrigação ("fez fulano ir"), e marcá-la com に costuma indicar permissão ("deixou fulano ir"). Com verbo transitivo o objeto já leva を, então a pessoa causada só pode vir com に e a partícula não separa os dois sentidos: aí quem decide é o contexto. Não decore como lei; sinta pelo contexto.
 
 #### Frases reais
 Veja o causativo em frases que japoneses realmente dizem.
@@ -76,7 +76,7 @@ Os exemplos de obrigação usam muito a família. Aproveite para fixar os quatro
 
 ### 2. (recognition) {'pt-BR': 'No grupo 1 (godan), o causativo de 勝つ (かつ, vencer) é:'}
 - **Resposta:** `{"choices": ["勝たせる (かたせる)", "勝てせる (かてせる)", "勝たさせる (かたさせる)"], "correct": "勝たせる (かたせる)"}`
-- {'pt-BR': ' No grupo 1 troca-se o som final -u pelo som -a e soma-se せる. つ (tsu) na linha -a vira た (ta), então 勝つ → 勝たせる. させる só entra nos verbos do grupo 2 e nos irregulares.'}
+- {'pt-BR': 'No grupo 1 troca-se o som final -u pelo som -a e soma-se せる. つ (tsu) na linha -a vira た (ta), então 勝つ → 勝たせる. させる só entra nos verbos do grupo 2 e nos irregulares.'}
 
 
 ### 3. (cloze) {'pt-BR': 'Complete o causativo de 食べる (comer). 母は弟に野菜を食べ＿。 (A mãe fez o irmão mais novo comer verduras.)'}

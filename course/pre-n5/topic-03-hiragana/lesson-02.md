@@ -33,7 +33,7 @@ Para memorizar a forma, vale uma imagem rápida:き lembra uma chave com dois de
 Cuidado para não "fechar" as vogais no fim, como o português costuma fazer:け é sempre ke, não "ki";こ é sempre ko, não "ku". O som da consoante muda, mas a vogal continua a mesma que você já aprendeu.
 
 > **[tip]**
-Ao escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Note que か,き e こ têm um traço solto à direita; faça-o por último. Repita cada símbolo em voz alta enquanto escreve.
+Ao escrever, siga a ordem dos traços (de cima para baixo, da esquerda para a direita) usando o diagrama numerado. Note que か tem um tracinho solto no alto, à direita: faça esse por último. Já em き o último traço é a curva solta embaixo, à esquerda, e こ tem só dois traços horizontais. Repita cada símbolo em voz alta enquanto escreve.
 
 #### Leitura com o que você já sabe
 Misturando a família do KA com as vogais, você já consegue ler palavras de verdade, como かお(kao, "rosto"),あき(aki, "outono") e こえ(koe, "voz"). Leia cada uma em voz alta, sílaba por sílaba.

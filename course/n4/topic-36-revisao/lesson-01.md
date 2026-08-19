@@ -18,7 +18,7 @@
 Esta é uma parada para respirar e juntar três peças que sustentam quase tudo no N4. Nada de matéria nova aqui: a ideia é reativar o que você já viu, costurar uma coisa na outra e tirar de letra as armadilhas que mais derrubam quem fala português. Vamos por partes.
 
 #### 1. A forma simples (informal)
-A forma simples é a base "crua" do verbo, sem o です/ます da forma polida. Ela é o que você usa com amigos e família, e também é a forma obrigatória dentro de outras estruturas (antes de と,から, orações relativas, condicionais e por aí vai). Vale revisar os quatro tempos de 飲む(beber):
+A forma simples é a base "crua" do verbo, sem o です/ます da forma polida. Ela é o que você usa com amigos e família, e também é a forma obrigatória dentro de outras estruturas (antes de と,つもり, orações relativas, condicionais e por aí vai). Vale revisar os quatro tempos de 飲む(beber):
 - presente/futuro afirmativo:飲む("bebo / vou beber").
 - presente/futuro negativo:飲まない("não bebo").
 - passado afirmativo:飲んだ("bebi").

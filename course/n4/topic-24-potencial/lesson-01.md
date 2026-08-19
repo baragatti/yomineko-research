@@ -37,13 +37,13 @@ Atenção a uma armadilha. A terminação rareru tem dois usos: o potencial ("co
 > 🗣 ミルクからチーズが作られる。 — O queijo é feito de leite.
 
 > **[warning]**
-Em チーズが作られる, o 作られる NÃO é "o queijo consegue fazer" (potencial), e sim "o queijo é feito" (passiva). Como queijo é coisa, não pode ter capacidade de fazer nada, então o sentido só pode ser passivo. Já com pessoas costuma ser potencial:私は泳げる= "eu consigo nadar". Use o bom senso do contexto.
+Em チーズが作られる, o 作られる é passiva: "o queijo é feito", e não "o queijo consegue fazer". Aqui nem cabe dúvida, porque 作る é godan e a potencial dele é 作れる. A hesitação entre potencial e passiva só existe nos verbos ichidan e em 来る, que usam 〜られる para os dois sentidos:先生に見られる= "ser visto pelo professor" (passiva), enquanto 早く起きられる quer dizer "consigo acordar cedo" (potencial). Quem decide é o contexto.
 
 #### Verbos para praticar
 Estes verbos do dia a dia já entram na forma potencial sem mistério:
 - 決める(decidir) →決められる(conseguir decidir);調べる(pesquisar) →調べられる(conseguir pesquisar).
 - 捨てる(jogar fora) e 痩せる(emagrecer) são ichidan:捨てられる,痩せられる.
-- 行う(realizar),仕舞う(encerrar) e 光る(brilhar) são godan:行える,仕舞える,光れる.
+- 行う(realizar),仕舞う(encerrar) e 光る(brilhar) são godan:行える,仕舞える. Pela regra, 光る daria 光れる, mas 光る descreve um fenômeno (algo brilha por si), não uma capacidade, então essa potencial quase não aparece: ninguém diz 星が光れる.
 
 > **[warning]**
 Mas nem todo verbo entra na potencial, e vale conhecer algumas palavras à parte:

@@ -86,8 +86,8 @@ Marcadores de discurso e palavras de transação.
 - {'pt-BR': '税金 (ぜいきん) é imposto. A frase fala em conversar sobre impostos.'}
 
 
-### 5. (production) {'pt-BR': 'prompt: "Diga em japonês \'Estou com dor de cabeça desde a manhã\' usando 頭痛 e ずっと."'}
+### 5. (production) {'pt-BR': "Diga em japonês 'Estou com dor de cabeça desde a manhã' usando 頭痛 e ずっと."}
 - **Resposta:** `{"text": "朝からずっと頭痛がする", "accept": ["朝からずっと頭痛がする", "あさからずっとずつうがする", "朝からずっと頭痛がします", "朝からずっと頭痛だ"]}`
-- {'pt-BR': '朝から (desde de manhã) + ずっと (sem parar) + 頭痛がする (estar com dor de cabeça).'}
+- {'pt-BR': '朝から (desde a manhã) + ずっと (sem parar) + 頭痛がする (estar com dor de cabeça).'}
 
 

@@ -46,7 +46,7 @@ Comparações no dia a dia vivem citando cores ("vermelho feito tomate", "branco
 - 色: "cor", a palavra-mãe, lida いろ. Imagine uma pessoa de pé ao lado de outra abaixada, escolhendo tintas: "que cor levo?".
 - 赤: "vermelho". Pense numa fogueira (土 terra com 火 fogo amassados) brilhando あか, vermelha.
 - 青: "azul", às vezes "verde". Lido あお; lembre do brilho azulado do céu, ligado ao vocábulo 光.
-- 黒: "preto". Lido くろ; visualize fuligem kuro acumulada sobre o fogo lá embaixo. 黒みたいな空 = "um céu que parece preto".
+- 黒: "preto". Lido くろ; visualize fuligem kuro acumulada sobre o fogo lá embaixo. 夜みたいに黒い空 = "um céu preto igual à noite".
 
 #### Palavras novas em ação
 Mais alguns vocábulos que combinam bem com comparações:

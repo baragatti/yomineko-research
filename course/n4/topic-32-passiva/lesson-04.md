@@ -83,7 +83,7 @@ Três kanji para reconhecer, dois deles um par fácil de confundir:
 - frases: `sent:gen-d3bba30db3a5`
 
 ### 2. (cloze) {'pt-BR': "Complete para dizer 'Hoje a lição de casa não é pouca' (= é bastante), usando a litotes 少なくない. 今日は宿題が____。"}
-- **Resposta:** `{"text": "今日は宿題が____。", "full": "今日は宿題が少なくない。"}`
+- **Resposta:** `{"text": "少なくない", "full": "今日は宿題が少なくない。"}`
 - {'pt-BR': "少なくない é a forma negativa de 少ない ('poucos'). Negar 'poucos' afirma que há bastante: a lição 'não é pouca' = é bastante. É uma maneira comedida de dizer おおい."}
 - frases: `sent:gen-2be04a058c05`
 
@@ -98,7 +98,7 @@ Três kanji para reconhecer, dois deles um par fácil de confundir:
 
 
 ### 5. (production) {'pt-BR': "Escreva em japonês: 'Hoje não está nem um pouco frio.' Use すこしも + a forma negativa de 寒い."}
-- **Resposta:** `{"text": "Hoje não está nem um pouco frio.", "accept": ["今日は少しも寒くない", "今日はすこしも寒くない", "きょうは少しも寒くない", "今日は少しも寒くないです"]}`
+- **Resposta:** `{"text": "今日は少しも寒くない。", "accept": ["今日は少しも寒くない", "今日はすこしも寒くない", "きょうは少しも寒くない", "今日は少しも寒くないです"]}`
 - {'pt-BR': "すこしも intensifica a negação 寒くない ('não está frio') até zerá-la: 'nem um pouco frio'. A partícula は marca 今日 como tópico. Aceita-se a versão polida com です."}
 - frases: `sent:gen-e9bb12279da1`
 

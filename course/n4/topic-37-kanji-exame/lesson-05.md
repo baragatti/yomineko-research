@@ -23,7 +23,7 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 首
 
 #### Palavra extra do exame
-献花: oferenda de flores. Palavra do conjunto N4; toque para ver leituras e exemplos.
+献花: oferenda de flores, usada em cerimônias de memorial. Palavra extra deste tópico, fora da lista básica do N4; toque para ver leituras e exemplos.
 - Reconheço o kanji 門 e sei onde conferir suas leituras.
 - Reconheço o kanji 頭 e sei onde conferir suas leituras.
 - Reconheço o kanji 顔 e sei onde conferir suas leituras.

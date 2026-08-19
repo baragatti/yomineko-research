@@ -32,7 +32,7 @@ Veja o molde em ação. A primeira frase fala de uma despesa que não cobre o ga
 O prefixo gp-99真 significa "puro", "perfeitamente", "bem no". Ele se cola na frente de cores, formas e posições para intensificá-las, como nosso "vermelho vivo" ou "bem no meio". A pronúncia muda conforme a palavra que vem depois:
 - Vira まっ(com pausa) antes da maioria das palavras:真っ赤(vermelho vivo),真っ白(branco puro),真っ暗(escuro como breu).
 - Vira まん em algumas posições:真ん中(bem no meio).
-- Fica só ま em poucas palavras antigas.
+- Fica só ま em um grupo fechado de palavras comuns: 真夏 (まなつ, pleno verão), 真上 (まうえ, bem em cima), 真面目 (まじめ, sério e aplicado).
 
 > **[l1-pitfall]**
 O っ de 真っ白 e 真っ赤 é uma pausa de UM tempo, em silêncio, antes da próxima consoante: ma-(pausa)-shi-ro. Bata a palma no vazio nessa pausa. O brasileiro tende a engolir esse tempo; se você não segurar a batida, a palavra encurta e some o reforço.

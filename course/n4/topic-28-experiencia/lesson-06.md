@@ -55,7 +55,7 @@ Repare na construção:悪い("ruim") vira 悪く, entra o は, e fecha com な�
 O は entra no meio, entre o 〜く e o ない. Veja o molde, com as peças separadas: 高くはない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
 
 > **[example]**
-Juntando tudo num minirretrato de mudança:最近ずっと勉強して、日本語はだいたい分かるようになった とうとうあきらめなかった= "Estudei o tempo todo ultimamente e passei a entender japonês mais ou menos. No fim, não desisti".
+Juntando tudo num minirretrato de mudança:最近ずっと勉強して、とうとう日本語がだいたい分かるようになった= "Ultimamente estudei o tempo todo e, por fim, passei a entender japonês mais ou menos".
 
 #### Hora de praticar
 

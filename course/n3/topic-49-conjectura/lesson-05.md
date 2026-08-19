@@ -48,7 +48,7 @@ Verbos sobre experimentar e depender.
 - 単位 (たんい) - unidade (de medida); crédito (na faculdade).
 - 段 (だん) - degrau, lance de escada.
 新しい方法を試してみた (Experimentei um método novo.)
-困った時は友達に頼る (Quando me complico, conto com os amigos.)
+困った時は友達に頼る (Quando estou em apuros, conto com os amigos.)
 
 #### Kanji novos
 O kanji 髪 ('cabelo') aparece em 髪 ('cabelo') e 髪の毛 ('fio de cabelo'). Em cima tem o radical de cabelos longos, como uma cabeleira solta.
@@ -86,7 +86,7 @@ O kanji 靴 ('sapato, calçado') aparece em 靴 ('sapato') e 靴下 ('meia'). Te
 - {'pt-BR': "便り (たより) é 'notícias, correspondência'. Combina com 届く ('chegar') para falar de cartas e novidades."}
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Quando me complico, conto com os amigos.' (use 頼る)"}
+### 5. (production) {'pt-BR': "Escreva em japonês: 'Quando estou em apuros, conto com os amigos.' (use 頼る)"}
 - **Resposta:** `{"text": "困った時は友達に頼る", "accept": ["困った時は友達に頼る", "こまったときはともだちにたよる", "困ったときは友達に頼る", "友達に頼る"]}`
 - {'pt-BR': "頼る (たよる) é 'depender de/contar com'. A partícula に marca em quem se confia: 友達に頼る."}
 

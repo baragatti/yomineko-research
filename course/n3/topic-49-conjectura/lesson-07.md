@@ -52,7 +52,7 @@ Um grupo ligado a comando e competência:
 > **[culture]**
 A expressão 迷惑をかける (めいわくをかける, "causar incômodo a alguém") é central na etiqueta japonesa. Evitar dar 迷惑 aos outros guia muito do comportamento social. Vale memorizar essa combinação inteira.
 
-#### Advérbios úteis
+#### Mais palavras úteis
 - 寧ろ (むしろ) - antes, na verdade, de preferência (ao comparar duas opções).
 - 夢中 (むちゅう) - absorto em, vidrado em, louco por algo.
 - 結ぶ (むすぶ) - amarrar, atar, unir.

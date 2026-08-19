@@ -18,7 +18,7 @@
 Você já sabe que o の pode transformar uma oração inteira num "bloco" (nominalizar). Nesta lição usamos esse mesmo の para dar destaque a um pedaço da frase, e aprendemos a embutir uma dúvida ("será que...? / se... ou não") dentro de uma frase maior. De brinde, vemos como dizer que algo "é um dos" de um grupo e como encadear consequências com すると.
 
 #### のは〜だ: jogar a luz sobre um elemento
-A estrutura nowa-da serve para enfatizar um elemento da frase, como o nosso "o que... é..." ou "quem... foi...". O の empacota uma oração num bloco, o は marca esse bloco como tema, e o que vem depois de だ(ou です) é a informação que você quer pôr em foco.
+A estrutura nowa-da serve para enfatizar um elemento da frase, como o nosso "o que... é..." ou "quem... foi...". O の empacota uma oração num bloco, o は marca esse bloco como tema, e o que vem logo antes de だ(ou です) é a informação que você quer pôr em foco.
 - Frase neutra: "alguém quebrou isto".
 - Com foco:これを壊したのはだれですか= "quem foi que quebrou isto?". O bloco これを壊した("quebrou isto") vira o tema, e だれ("quem") é a informação em destaque.
 > 🗣 これを壊したのはだれですか。 — Quem foi que quebrou isto?
@@ -45,7 +45,7 @@ Ao pé da letra: "isto é uma das músicas de que gosto". O bloco 私の好き�
 O conector すると("então", "e então", "em seguida") liga uma ação a uma consequência que vem logo depois, muitas vezes inesperada. Ele aparece no começo da segunda frase.
 
 > **[example]**
-窓を開けたすると、雨が降ってきた = "Abri a janela. E então, começou a chover." A segunda frase é a consequência direta da primeira.
+窓を開けた。すると、雨が降ってきた = "Abri a janela. E então, começou a chover." A segunda frase é a consequência direta da primeira.
 
 #### Hora de praticar
 

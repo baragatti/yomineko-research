@@ -26,7 +26,7 @@ Comece por três verbos que descrevem coisas que acontecem ou que você faz. Rep
 Os verbos do clima andam juntos com a partícula が, que marca quem faz a ação:雪が降る("neva") e 風が吹く("venta"). Guarde os pares あめ が ふる e かぜ が ふく como blocos prontos.
 
 > **[l1-pitfall]**
-Cuidado:ふく(soprar) e ふる(cair) são parecidos no som, mas não se misturam. O vento sopra (ふく); a chuva cai (ふる). Em português usamos "chover" e "ventar" para os dois; em japonês, verbos diferentes.
+Cuidado:ふく(soprar) e ふる(cair) são parecidos no som, mas não se misturam. O vento sopra (ふく); a chuva cai (ふる). Em português o próprio verbo já diz tudo ("chove", "venta"); em japonês o verbo é genérico ("cair", "soprar") e só se sustenta com o sujeito ao lado: quem cai é a chuva, quem sopra é o vento.
 
 > **[l1-pitfall]**
 Som de ふ: o ふ de ふく e ふる não é o "f" do português (dente no lábio). É um sopro leve entre os dois lábios, como assoprar uma vela, seguido de um "u" central, de lábios neutros (não empurre os lábios para a frente como em "tudo").

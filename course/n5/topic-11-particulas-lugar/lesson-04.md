@@ -25,7 +25,7 @@ Para dizer a que horas ou em que dia algo acontece, coloque に logo depois da e
 Cuidado: nem toda expressão de tempo leva に. Palavras "relativas" como 今日 (hoje), 明日 (amanhã) e 昨日 (ontem) não usam に: diz-se 明日行きます ("vou amanhã"), sem partícula. O に entra quando o tempo é um ponto "fixo" no relógio ou no calendário (horas, dias da semana), não quando ele depende de "hoje". A dica prática: se você consegue marcar a hora ou a data exata num relógio ou numa agenda, use に; se a palavra só faz sentido em relação ao dia de hoje, deixe sem.
 
 #### Partes do dia
-Estas palavras de tempo aparecem o tempo todo. Algumas são "fixas" e combinam com に (午前, 午後, 今晩), outras são "relativas" e dispensam a partícula (朝, 今朝):
+Estas palavras de tempo aparecem o tempo todo. Algumas são "fixas" e combinam com に (午前, 午後), outras são "relativas" e dispensam a partícula (朝, 今朝, 今晩):
 - 朝: manhã (em geral)
 - 今朝: esta manhã, hoje de manhã
 - 午前: manhã, da manhã (a.m.)

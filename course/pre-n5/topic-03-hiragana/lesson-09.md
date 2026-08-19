@@ -23,7 +23,7 @@ O r do japonês é um r batido: é exatamente o r que você fala no meio de caro
 #### Os cinco kana
 - ら(ra): som de ra como no ra de "ca ra col". Imagine um número 5 com um chapeuzinho em cima.
 - り(ri): som de ri como em "a ri sco". Parecem dois risquinhos pendurados, como duas gotas caindo.
-- る(ru): som de ru como em "a ru ela". Termina com uma alça fechada embaixo, como um lacinho.
+- る(ru): som de ru como em "ba ru lho". Termina com uma alça fechada embaixo, como um lacinho.
 - れ(re): som de re como em "ca re ca". Tem uma perna reta à esquerda e uma curva que sobe e desce à direita.
 - ろ(ro): som de ro como em "ca ro". É igual ao る, mas sem a alça no final: termina aberto.
 

@@ -38,7 +38,7 @@ Em 食べなきゃ está implícito o resto: "(se eu) não comer, (não dá)". O
 O brasileiro tem uma muleta perfeita aqui: pense em なきゃ como o nosso "tenho que…" engolido no fim da frase, tipo "vou nessa, tenho que…". A frase fica pendurada de propósito, e todo mundo entende. Em japonês é igualzinho.
 
 > **[warning]**
-Essas contrações são faladas e informais. Com o chefe, o professor ou num e-mail, volte para 〜なくてはいけません ou 〜なければなりません. Entre 一人(uma pessoa) e amigos,なきゃ é o som natural.
+Essas contrações são faladas e informais. Com o chefe, o professor ou num e-mail, volte para 〜なくてはいけません ou 〜なければなりません. Em casa, com amigos ou sozinho (一人, ひとり), なきゃ é o som natural.
 
 #### Vocabulário de números, idade e datas
 Aproveite para fixar palavras que aparecem o tempo todo quando falamos de obrigações com prazo ("tenho que pagar até o dia 20"):
@@ -47,7 +47,7 @@ Aproveite para fixar palavras que aparecem o tempo todo quando falamos de obriga
 - 一月(ひとつき) = um mês;一人(ひとり) = uma pessoa.
 
 > **[culture]**
-はたち (20 anos) tem peso: はたち (20 anos) tem peso: no Japão é a idade tradicional da maioridade. A leitura, porém, não vem daí: はたち é a contagem japonesa antiga (はた = vinte), a mesma raiz de はつか (dia 20)
+はたち (20 anos) tem peso: no Japão é a idade tradicional da maioridade. A leitura, porém, não vem daí: はたち é a contagem japonesa antiga (はた = vinte), a mesma raiz de はつか (dia 20). Por isso não se diz にじゅっさい.
 
 #### O hiragana como sistema
 Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana é o sistema que carrega justamente as terminações gramaticais como なくちゃ e なきゃ. Sem dominar o hiragana, essas formas faladas passam despercebidas.

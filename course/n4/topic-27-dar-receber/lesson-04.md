@@ -57,7 +57,7 @@ Para pedir e agradecer favores você vai falar de ambientes e transporte. Guarde
 - 冷房= ar-condicionado (refrigeração).
 - 味= sabor, gosto.
 - 反対= oposição, o oposto, contra.
-- チェック= xadrez (estampa), quadriculado.
+- チェック= verificação, checagem, conferência.
 - ワープロ= processador de texto.
 
 > **[tip]**

@@ -31,7 +31,7 @@ Veja a fórmula em frases que japoneses realmente dizem. A primeira é a mais cu
 > 🗣 遅れてすみません。 — Desculpe pelo atraso.
 Repare que não há sujeito: o contexto deixa claro que é você quem se atrasou. Bem japonês deixar isso subentendido.
 > 🗣 お手数をおかけしてすみません。 — Desculpe pelo incômodo.
-Aqui お手数をおかけして quer dizer "por causar trabalho/transtorno" (a parte かけて é a forma て do verbo "causar"). É a desculpa padrão por dar trabalho a alguém, muito comum no atendimento e em e-mails de trabalho.
+Aqui お手数をおかけして quer dizer "por causar trabalho/transtorno" (おかけして é a forma て de おかけする, a versão humilde de かける, "causar"). É a desculpa padrão por dar trabalho a alguém, muito comum no atendimento e em e-mails de trabalho.
 > 🗣 今晩お会いできなくてすみません。 — Desculpe por não poder me encontrar com você hoje à noite.
 Esta mostra o molde com um verbo na negativa: 会えなくて é a forma て de "não poder encontrar". Ou seja, você também se desculpa por algo que não conseguiu fazer, não só pelo que fez.
 

@@ -21,7 +21,7 @@ Numa conversa de verdade, você não fica só falando: você responde e reage. E
 - いいえ(iie): não. O "não" educado e claro. Serve tanto para negar quanto para dizer "de nada" depois de um agradecimento.
 
 > **[tip]**
-ええ e いいえ são fáceis de confundir na escrita:ええ tem dois traços iguais ("sim"), e いいえ começa com dois い mais um え("não"). Leia em voz alta para fixar.
+ええ e いいえ são fáceis de confundir na escrita:ええ tem dois kana iguais ("sim"), e いいえ começa com dois い mais um え("não"). Leia em voz alta para fixar.
 
 #### Reações na hora da conversa
 - なるほど(naruhodo): entendi; faz sentido. Você solta isso quando a outra pessoa explica algo e a ficha cai. Mostra que você está acompanhando.

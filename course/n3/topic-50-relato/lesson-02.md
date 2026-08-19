@@ -26,12 +26,12 @@ Para mandar NÃO fazer, use a forma ～ない antes de ように:
 O 言う pode virar verbos mais específicos sem mudar a estrutura: 頼む (pedir), 伝える (transmitir), 注意する (advertir). Só o verbo final muda.
 
 > **[l1-pitfall]**
-Armadilha PT: como é discurso INDIRETO, nada de aspas nem da fala original. O verbo da ação fica sempre na forma de dicionário antes de ように, e o verbo de fala vai no fim. Lembre que o japonês segura o verbo principal para o final da frase.
+Armadilha PT: como é discurso INDIRETO, nada de aspas nem da fala original. O verbo da ação fica na forma de dicionário (ordem positiva) ou na forma ～ない (ordem negativa) antes de ように, e o verbo de fala vai no fim. Lembre que o japonês segura o verbo principal para o final da frase.
 
 #### ～てくれと: "pediram para eu fazer"
 Quando você quer citar um pedido ou ordem mais direto, use n3-te-kureto. A montagem é: verbo na forma て + くれ (imperativo casual de くれる) + と (a partícula de aspas) + verbo de fala (言う, 頼む, 伝える).
 手伝ってくれと頼まれました = "Me pediram para ajudar".
-O くれ é um imperativo bem brusco, então a citação preserva o tom de quem deu a ordem, MESMO que o verbo final seja educado (頼まれた, "fui pedido"):
+O くれ é um imperativo bem brusco, então a citação preserva o tom de quem deu a ordem, MESMO que o verbo final seja educado (頼まれました, "me pediram"):
 社長にすぐ来てくれと言われた = "O presidente me disse para vir já".
 
 > **[l1-pitfall]**

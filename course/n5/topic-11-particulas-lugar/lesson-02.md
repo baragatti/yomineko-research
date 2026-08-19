@@ -41,7 +41,7 @@ Para dizer ONDE algo existe, marque o lugar com a partícula に (não で) e po
 Molde: [lugar] に [coisa ou ser] がある／いる
 Você escolhe ある ou いる pela mesma regra de sempre: coisa inanimada fica com ある, ser vivo fica com いる. Esta lição traz palavras de lugar e direção próxima para você praticar:
 - 其処: aí (perto de quem ouve)
-- 其方: por aí, naquela direção
+- 其方: por aí, nessa direção (do lado de quem ouve)
 - 側: ao lado, pertinho
 - 外: fora, do lado de fora
 - 園: jardim, parque

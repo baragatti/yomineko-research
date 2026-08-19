@@ -14,7 +14,7 @@
 ---
 
 ### Contadores do dia a dia
-Em japonês, você não conta só com o número: cada tipo de coisa pede um sufixo contador, uma partícula que gruda no número e diz o que está sendo contado. É parecido com o nosso "três fatias de pão" ou "duas folhas de papel", só que em japonês isso acontece o tempo todo. Nesta lição você junta os números que já conhece com cinco contadores muito úteis.
+Em japonês, você não conta só com o número: cada tipo de coisa pede um sufixo contador, um pedacinho que gruda no número e diz o que está sendo contado. É parecido com o nosso "três fatias de pão" ou "duas folhas de papel", só que em japonês isso acontece o tempo todo. Nesta lição você junta os números que já conhece com cinco contadores muito úteis.
 - 個 conta coisas pequenas e arredondadas (frutas, ovos, peças).
 - 冊 conta livros, revistas e cadernos.
 - 回 conta vezes (quantas ocorrências).

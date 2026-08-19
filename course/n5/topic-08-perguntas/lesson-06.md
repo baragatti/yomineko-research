@@ -32,7 +32,7 @@ Troque か por も e o verbo vai para a forma negativa. Aqui o par é obrigatór
 - 何も com verbo negativo = não... nada
 - 誰も com verbo negativo = ninguém
 - どこも com verbo negativo = (lugar) nenhum
-Exemplo: 何も食べませんでした = "não comi nada". Compare com a frase do café acima: なにか (algo, verbo afirmativo) e なにも (nada, verbo negativo) são dois lados da mesma moeda.
+Exemplo: 何も食べませんでした = "não comi nada". Compare com a frase "Quero comer alguma coisa" lá do começo da lição: なにか (algo, verbo afirmativo) e なにも (nada, verbo negativo) são dois lados da mesma moeda.
 
 > **[l1-pitfall]**
 Em português usamos dupla negação solta ("não vi ninguém"), mas em japonês a negação mora no verbo. Não diga だれも います querendo dizer "não tem ninguém": o correto é 誰もいません. Se o verbo ficar afirmativo, a frase desanda.

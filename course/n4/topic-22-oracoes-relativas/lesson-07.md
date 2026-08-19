@@ -27,9 +27,9 @@ O português usa "como" para os dois casos ("nada como um peixe", "uma casa como
 #### ように: para que / de modo que (finalidade)
 O segundo uso é o de finalidade. Aqui ように liga duas frases: "faço X de modo que Y aconteça". Ele aparece tipicamente depois de um verbo na forma potencial ou na forma negativa, justamente porque expressa um resultado desejado, não uma ação que você controla diretamente.
 > 🗣 落ちないように注意しなさい。 — Tome cuidado para não cair.
-Aqui 落ちない é "não cair" (negativo de 落ちる), e 注意 é a 注意. Ao pé da letra: "tome cuidado de modo que não caia". Repare que o verbo antes de ように fica na forma de dicionário (afirmativa ou negativa), nunca na forma -ます.
+Aqui 落ちない é "não cair" (negativo de 落ちる), e 注意 é a 注意. Ao pé da letra: "tome cuidado de modo que não caia". Repare que o verbo antes de ように fica na forma simples (afirmativa ou negativa). A forma -ます só aparece nos desejos e preces, como no exemplo logo abaixo.
 > 🗣 風邪をひきませんように。 — Tomara que você não pegue um resfriado.
-Esta é um uso afetuoso e muito comum: um desejo ou prece.風邪をひきません é "não pegar resfriado", e ように sozinho no fim deixa a frase suspensa, como um "tomara que...". É o mesmo ように de finalidade, só que voltado para algo que você torce para que aconteça.
+Este é um uso afetuoso e muito comum: um desejo ou prece.風邪をひきません é "não pegar resfriado", e ように sozinho no fim deixa a frase suspensa, como um "tomara que...". É o mesmo ように de finalidade, só que voltado para algo que você torce para que aconteça.
 
 > **[tip]**
 Macete para não errar a forma: se vier substantivo, é な(夢のような); se vier verbo, é に(落ちないように). Substantivo casa com substantivo (adjetivo), verbo casa com verbo (advérbio).
@@ -71,7 +71,7 @@ Repare como os dois recursos descrevem por ângulos diferentes:ように compara
 
 ### 3. (cloze) {'pt-BR': "Complete a finalidade: 落ちない＿注意しなさい。 ('Tome cuidado para não cair.')"}
 - **Resposta:** `{"text": "ように", "full": "落ちないように注意しなさい"}`
-- {'pt-BR': "ように depois de um verbo na forma de dicionário (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. Nunca se usa a forma -ます antes dele."}
+- {'pt-BR': "ように depois de um verbo na forma simples (aqui o negativo 落ちない) marca finalidade: 'de modo que não caia'. A forma -ます antes de ように aparece só nos desejos e preces: 〜ますように / 〜ませんように."}
 - frases: `sent:tatoeba-78536`
 
 ### 4. (sentence_build) {'pt-BR': "Monte 'Tem banheiro em cada andar.' com as peças: [あります] [トイレ] [各階] [が] [に]"}

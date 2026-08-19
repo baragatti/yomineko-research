@@ -49,10 +49,10 @@ Repare como vários começam com o mesmo som しょう ou しょ. Bater uma palm
 - 書類 (しょるい) = "documento, papelada".
 - 書物 (しょもつ) = "livro, obra" (registro mais culto que 本).
 - 書斎 (しょさい) = "escritório em casa, gabinete de estudo".
-- 署名 (しょめい) = "assinatura, autógrafo".
+- 署名 (しょめい) = "assinatura (em documento, contrato, abaixo-assinado)". Autógrafo de artista é サイン.
 
 > **[l1-pitfall]**
-Não levante as vogais finais. しょうひん termina em "n" limpo, não em "ni"; しょく termina em "ku" com 'u' central, não em "ki". Em português a gente diz "gatu", "leiti" sem perceber; no japonês cada vogal mantém seu som até o fim.
+Não levante as vogais finais. しょうひん termina em "n" limpo, não em "ni"; しょく termina em "ku", com o 'u' curto e quase mudo. Em português a gente troca a vogal final sem perceber, dizendo "gatu" e "leiti"; no japonês cada mora mantém o som que está escrito.
 
 #### Vocabulário: pessoas
 - 女子 (じょし) = "mulher, garota" (em rótulos como 女子トイレ).
@@ -60,7 +60,7 @@ Não levante as vogais finais. しょうひん termina em "n" limpo, não em "ni
 - 助手 (じょしゅ) = "assistente, auxiliar".
 - 少女 (しょうじょ) = "menina, moça".
 - 少年 (しょうねん) = "menino, garoto".
-Com の, dá para combinar tudo isso: 女優の署名 = "o autógrafo da atriz"; 助手の職業 = "a profissão do assistente".
+Com の, dá para combinar tudo isso: 女優の署名 = "a assinatura da atriz"; 助手の職業 = "a profissão do assistente".
 
 #### Quatro kanji para guardar
 O kanji 箱 significa "caixa, estojo" e dá a palavra 箱 (はこ). Mnemônico de forma: em cima o radical de "bambu" (竹), porque caixas antigas eram trançadas de bambu, e embaixo 相 ("aspecto"). Pense numa caixa de bambu.
@@ -96,9 +96,9 @@ O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯
 - {'pt-BR': "O の só marca que há uma relação entre 日本語 e 本; o contexto decide qual. Aqui a relação é de idioma, então a tradução natural é 'livro em japonês'. 'Livro de japonês' sugeriria um material didático, que seria 日本語の教科書."}
 
 
-### 3. (cloze) {'pt-BR': 'prompt: "Complete \'a assinatura da atriz\' ligando os dois substantivos: 女優＿署名"; explanation: replace \'署名 (autógrafo, o possuído)\' with \'署名 (assinatura, o possuído)\'.'}
+### 3. (cloze) {'pt-BR': "Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名"}
 - **Resposta:** `{"text": "の", "full": "女優の署名"}`
-- {'pt-BR': 'の liga 女優 (atriz, a possuidora) ao 署名 (autógrafo, o possuído). A ordem é possuidor の possuído, então a atriz vem antes.'}
+- {'pt-BR': 'の liga 女優 (atriz, a possuidora) ao 署名 (assinatura, o possuído). A ordem é possuidor の possuído, então a atriz vem antes.'}
 
 
 ### 4. (matching) {'pt-BR': 'Associe cada palavra desta lição ao seu significado em português.'}

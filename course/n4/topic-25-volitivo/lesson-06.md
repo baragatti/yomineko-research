@@ -79,8 +79,8 @@ Duas palavras desta lição mostram bem onde as ordens aparecem:
 - {'pt-BR': '何とかしろ usa o 命令形 (する → しろ): é o imperativo cru, seco e brusco. 〜なさい é firme mas gentil, ～てください é um pedido educado, e 〜ようと思う apenas expressa intenção, não ordem.'}
 - frases: `sent:tatoeba-187788`
 
-### 2. (cloze) {'pt-BR': "Complete a ordem firme mas gentil que um professor dá ao aluno: 'Estude.' (verbo 勉強する na forma 〜なさい)"}
-- **Resposta:** `{"text": "勉強____。", "full": "勉強しなさい。"}`
+### 2. (cloze) {'pt-BR': "Complete a ordem firme mas gentil que um professor dá ao aluno ('Estude.', verbo 勉強する na forma 〜なさい): 勉強＿＿＿＿。"}
+- **Resposta:** `{"text": "しなさい", "full": "勉強しなさい。"}`
 - {'pt-BR': '〜なさい usa a base ます do verbo. する vira し, então 勉強する → 勉強し + なさい = 勉強しなさい. É o tom clássico de professor/pai: firme, porém não grosseiro.'}
 - frases: `sent:tatoeba-83322`
 

@@ -58,7 +58,7 @@ Estas são coisas sem vida que existem em lugares, então todas vão com あり�
 - 煙草: cigarro
 - 台: suporte ou base
 - 盾: escudo
-Para apontar uma dessas coisas, use 其れ(それ, "isso / aquilo"). Ex.:それは卵です("isso é um ovo"). E para dizer onde a coisa está, lembre do 上:台の上に卵があります("tem um ovo em cima do suporte").
+Para apontar uma dessas coisas, use 其れ(それ, "isso", algo perto de quem ouve). Ex.:それは卵です("isso é um ovo"). E para dizer onde a coisa está, lembre do 上:台の上に卵があります("tem um ovo em cima do suporte").
 
 #### O kanji do dia: 上
 上 significa "acima / em cima" e, sozinho como palavra, lê-se うえ. Foi exatamente o que apareceu em いすの上にねこがいます("tem um gato em cima da cadeira").

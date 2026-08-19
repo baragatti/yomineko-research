@@ -22,7 +22,7 @@ No sentido de finalidade, n3-you-ni liga uma ação ao estado que você QUER que
 英語が話せるように毎日勉強する: "estudo todo dia para conseguir falar inglês". Repare no potencial 話せる antes de ように: o "conseguir falar" é um resultado, não algo que você liga e desliga.
 
 > **[l1-pitfall]**
-Armadilha PT: não confunda ように ("para que") com ために ("para"). ために exige objetivo intencional e o MESMO sujeito controlando a ação ("estudo PARA passar"); ように combina com resultados ou estados que você não controla direto ("para que eu CONSIGA falar"). Antes de ように usa-se a forma de dicionário ou o potencial, nunca a volitiva.
+Armadilha PT: não confunda ように ("para que") com ために ("para"). ために exige objetivo intencional e o MESMO sujeito controlando a ação ("estudo PARA passar"); ように combina com resultados ou estados que você não controla direto ("para que eu CONSIGA falar"). Antes de ように usa-se a forma de dicionário, o potencial ou a negativa ない (忘れないように), nunca a volitiva.
 
 #### ように de modo: "de um jeito que"
 O segundo uso, n3-you-ni-2, descreve a MANEIRA de fazer algo. É comum em pedidos do tipo "explique de modo que fique fácil de entender".
@@ -48,7 +48,7 @@ Armadilha PT: a comparação com substantivo pede のように, não só よう�
 - 空 (から): "vazio, estar vazio" (a lata vazia é 空き缶). 刈る (かる): "cortar, aparar" (grama, cabelo).
 
 #### Kanji novos
-- 術 ("arte, técnica"): no meio o radical de "ir/caminho"; a técnica como um caminho dominado. Em 技術 ("tecnologia, técnica").
+- 術 ("arte, técnica"): ao redor, o radical de "ir/caminho" (行), com 朮 no meio; a técnica como um caminho dominado. Em 技術 ("tecnologia, técnica").
 - 違 ("diferença, divergir"): traz o radical de movimento; sair do caminho combinado é "divergir". Em 違う ("ser diferente, estar errado").
 - 石 ("pedra"): um penhasco com uma pedra embaixo. Em 石 ("pedra").
 - 消 ("apagar, desligar"): radical de água à esquerda; a água que apaga o fogo. Em 消す ("apagar, desligar") e 消しゴム ("borracha").

@@ -24,6 +24,7 @@ Comecemos com palavras que aparecem bastante em textos e na escola.
 - 分 (ぶん) - parte, porção, a cota que cabe a alguém.
 - 文 (ぶん) - frase, oração.
 - 不満 (ふまん) - insatisfação, descontentamento, desgosto.
+- 不利 (ふり) - desvantagem, posição desfavorável.
 
 > **[l1-pitfall]**
 分 e 文 têm a mesma leitura (ぶん) mas sentidos bem distintos: 分 é uma parte ou cota (a sua parte do bolo), enquanto 文 é uma frase escrita. O kanji deixa a diferença clara.
@@ -33,7 +34,6 @@ Estes katakana já fazem parte do japonês do dia a dia.
 - プラス (プラス) - mais, adição, algo positivo.
 - プラン (プラン) - plano, esquema.
 - プロ (プロ) - profissional.
-- 不利 (ふり) - desvantagem, posição desfavorável.
 - ブレーキ (ブレーキ) - freio.
 Veja 分析 e プラン numa frase de trabalho.
 データを分析して、新しいプランを考えた (Analisei os dados e pensei num plano novo.)

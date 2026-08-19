@@ -29,7 +29,7 @@ A estrutura gp-138 exprime arrependimento sobre o passado: "eu devia ter feito" 
 > 🗣 電話すればよかったのに。 — Você devia ter ligado.
 Aqui 電話 ("telefone/ligação") vira 電話すれば ("se ligasse") + よかった. O のに no fim adiciona um toque de "que pena, e você não fez": a frase deixa de ser um lamento sobre si mesmo e vira uma reclamação gentil dirigida à outra pessoa, "você devia ter ligado".
 > 🗣 コート着てくればよかった。 — Eu devia ter trazido um casaco.
-Esta é um lamento sobre si mesmo: 着てくれば ("se eu tivesse vindo vestindo") + よかった = "eu devia ter trazido um casaco". A pessoa passou frio e agora se arrepende.
+Esta é um lamento sobre si mesmo: 着てくれば ("se eu tivesse vindo vestindo") + よかった = "eu devia ter vindo de casaco". A pessoa passou frio e agora se arrepende.
 
 > **[l1-pitfall]**
 Para lamentar algo que você FEZ e não devia, use a NEGATIVA + ば: 〜なければよかった. Veja:

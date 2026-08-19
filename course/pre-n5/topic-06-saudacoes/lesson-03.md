@@ -28,7 +28,7 @@ Não confunda as duas:それから liga acontecimentos ("e depois disso"), enqua
 - ついて(tsuite) = sobre; a respeito de. Aparece na fórmula Xについて= "sobre X". Ex.: "日本について" = "sobre o Japão".
 
 > **[l1-pitfall]**
-Em どうして, o おう é uma vogal longa: segure o "o" por dois tempos (duas palmas), não fale mais forte. Em japonês esse "o" comprido quase sempre se escreve おう, e não おお.
+Em どうして, o う alonga o "o" anterior: segure o "o" por dois tempos (duas palmas), não fale mais forte. Em japonês esse "o" comprido quase sempre se escreve おう, e não おお.
 
 > **[tip]**
 ついて quase nunca vem sozinho: ele anda colado num assunto, no padrão X について. Pense nele como o nosso "a respeito de X".
@@ -68,8 +68,8 @@ Repare na diferença entre おとこのこ(menino) e おんなのこ(menina): o 
 - {'pt-BR': "'por quê' = どうして (dōshite)."}
 
 
-### 4. (production) {'pt-BR': "Complete a fórmula 'sobre X': X____. Escreva em kana a palavra que falta."}
-- **Resposta:** `{"text": "について", "accept": ["について", "ついて"]}`
+### 4. (production) {'pt-BR': "Complete a fórmula 'sobre X': X____. Escreva em kana o que falta na lacuna."}
+- **Resposta:** `{"text": "について", "accept": ["について", "について"]}`
 - {'pt-BR': "A fórmula é Xについて = 'sobre X'. A palavra-chave é ついて (a respeito de), usada como について."}
 
 

@@ -14,7 +14,7 @@
 ---
 
 ### Tenho que fazer: a obrigação em japonês
-Nas lições casuais você já viu なくちゃ e なきゃ. Agora chega a versão completa, a que você escreve e usa fora do bate-papo entre amigos. Existem três construções plenas para dizer "tenho que", "preciso" ou "é obrigatório": naito-ikenai, nakute-wa-ikenai e nakute-wa-naranai.
+Na próxima lição você vai ver as versões faladas なくちゃ e なきゃ. Aqui vem primeiro a versão completa, a que você escreve e usa fora do bate-papo entre amigos. Existem três construções plenas para dizer "tenho que", "preciso" ou "é obrigatório": naito-ikenai, nakute-wa-ikenai e nakute-wa-naranai.
 
 #### A lógica: dupla negação
 Em japonês a obrigação nasce de uma dupla negação: você nega duas vezes para afirmar. A ideia é "se não fizer, não dá", ou seja, é obrigatório fazer. Você parte da forma negativa do verbo (a forma ない) e acrescenta um "não dá". O sentido literal é "se eu não fizer, não está bom", mas em pt-BR isso é simplesmente uma obrigação direta.
