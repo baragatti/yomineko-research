@@ -1,6 +1,6 @@
 # Corpus — Families / groups
 
-_Generated 2026-08-19. `label`/`description`/`governing_rule` = locale-objects (pt-BR)._
+_Generated 2026-08-20. `label`/`description`/`governing_rule` = locale-objects (pt-BR)._
 
 | family | type | label | #members |
 |--------|------|-------|---------:|

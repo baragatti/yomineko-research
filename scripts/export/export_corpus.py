@@ -103,13 +103,23 @@ def export_kanji(con: sqlite3.Connection) -> dict:
              level, lconf, lagree, lsrc) = k
             # nanori are rare name-readings (KANJIDIC2) — kept for fidelity, flagged low-priority so the
             # UI can de-emphasize/hide them (this is what jisho does).
+            # Per-reading enrichment (roadmap D): `note` is a pt-BR line on what the reading means and
+            # when it is used; `example_vocab_ids` are the compounds that actually USE this reading,
+            # grouped positionally rather than by substring. Both are null for readings nobody enriched.
             readings = [
                 {"reading": r[0], "type": r[1], "okurigana": r[2], "introduced_at_level": r[3],
-                 "common": r[1] != "nanori", "example_vocab_ids": jloads(r[4])}
+                 "common": r[1] != "nanori", "example_vocab_ids": jloads(r[4]),
+                 "note": loc(pt=r[5]) if r[5] else None}
                 for r in con.execute(
-                    "SELECT reading,reading_type,okurigana,introduced_at_level,example_vocab_ids "
-                    "FROM kanji_reading WHERE kanji_id=? ORDER BY reading_type", (kid,))
+                    "SELECT kr.reading,kr.reading_type,kr.okurigana,kr.introduced_at_level,"
+                    "kr.example_vocab_ids,"
+                    "(SELECT value FROM localized_text WHERE entity_type='kanji_reading' "
+                    " AND entity_id=kr.id AND field='note' AND locale='pt-BR') "
+                    "FROM kanji_reading kr WHERE kr.kanji_id=? ORDER BY kr.reading_type", (kid,))
             ]
+            irr_note = con.execute(
+                "SELECT value FROM localized_text WHERE entity_type='kanji' AND entity_id=? "
+                "AND field='irregular_note' AND locale='pt-BR'", (kid,)).fetchone()
             components = [r[0] for r in con.execute(
                 "SELECT component FROM kanji_component WHERE kanji_id=?", (kid,))]
             # example words: vocab written with this kanji (common first), with kana + meaning
@@ -138,7 +148,8 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "kanjivg_ref": kvg, "kangxi_radical": radical, "radical_char": rchar,
                 "meanings": loc(pt=L.get((kid, "meanings")), en=jloads(men)),
                 "notes": loc(pt=L.get((kid, "notes"))),
-                "readings": readings, "components": components,
+                "readings": readings, "irregular_note": loc(pt=irr_note[0]) if irr_note else None,
+                "components": components,
                 "example_words": example_words, "example_sentences": example_sentences,
             }
             records.append(rec)
