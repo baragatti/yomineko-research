@@ -7,6 +7,48 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-07 (ab) — ROADMAP C, D AND F ALL BUILT. Three planned-but-never-built items shipped, two of
+> them live in the app. Gate green throughout.**
+>
+> - **C — conjugation exercise bank.** 18,524 items, zero AI, derived entirely from `corpus/conjugations`
+>   (`corpus/exercises/` did not exist before). **Distractors are other forms of the SAME word** — one
+>   from a different verb would be eliminable from the stem alone. Live at `/pratica/conjugacao`,
+>   replacing a tile that served ONE hardcoded question. `validate_conjugation_exercises` is a hard gate
+>   validator; its load-bearing check is that every `correct` still matches corpus/conjugations, which is
+>   what keeps the bank DERIVED rather than a frozen copy.
+> - **D — kanji per-reading enrichment, COMPLETE.** 630 kanji, 3,678 pt-BR notes, 1,460 readings carrying
+>   their compounds, 99 irregular notes. Live on the kanji detail page.
+>   - **The failure-mode checklist measurably worked.** v3 ran with `design/authoring_failure_modes.md`
+>     in its prompt, v1 did not: problems 221→148, agreed 40→27, grouping problems 142→91.
+>   - **Three rounds, each finding the next bug:** v1 flagged 142 alignment errors (matching a reading
+>     ANYWHERE in the kana — 一人 under 人's ひと when that ひと is 一's); fixing it positionally exposed
+>     促音便 (出発/出席/出身); v2 then flagged 135 more (the okurigana gate was a hard FILTER, so 遊び,
+>     逃げ出す, 備え付ける fell out). Making it a fallback dropped `irregular` 398→144.
+>   - **The 6 MAJOR note defects were one shape:** a relative clause trailing a coordinated pair, so a
+>     property of the second item reads as covering both. 水 スイ said 香水 sonorises (it does not —
+>     produces *こうずい); 西 サイ said 関西 does (*かんざい); 説 セツ said 説明 becomes せっ (it is
+>     せつめい, a high-frequency word to get wrong).
+>   - **UI trap:** the first filter kept any reading with a note, and since EVERY reading got one, 日
+>     rendered 17 readings including 14 nanori of boilerplate. Requiring COMPOUNDS drops it to 2.
+>     **2,218 of the 3,678 notes sit on readings with no examples** — "3,678 readings noted" is not
+>     "3,678 have worked examples", and the merge counts them separately for that reason.
+> - **F — machine-readable sentence patterns.** 5,825 of 5,889, zero AI, from tokens + particle links.
+>   `私[topic/は] | ピアノ[object/を] | 習いたい[predicate]`. **は is TOPIC, not subject** (conflating
+>   them is the commonest way a course teaches は wrong); に/で map to `ni-phrase`/`de-phrase` rather
+>   than guessing a sense the dissection does not carry. Predicate is the whole trailing verbal run
+>   (習い+たい is ONE drill piece). In `research/derived/` until it has a validator and a consumer.
+>   - Known limitation, recorded: an adverb has no particle to close it and glues to the next noun
+>     (どんどんガソリン). Needs adverb detection, not a different delimiter.
+> - **Also landed:** merge path + export surface for D (`merge_kanji_reading_notes.py`, join key is
+>   (kanji_id, reading, OKURIGANA) — without okurigana, 生.きる/生.かす/生.ける are one row).
+> - **Open:** the 91 v3 grouping problems (not yet triaged); 2 needs-human pairing rows; `gram:gp-115`
+>   forms[0] (れる is the godan PASSIVE; registry convention would store a form NAME like 可能形 — needs
+>   sign-off); 1 needs-human romaji row; roadmap E (grammar `formation_steps[]`); listening audio and
+>   R58 read-aloud (both blocked on owner voice-over).
+
+---
+
+
 > **2026-08-07 (aa) — I3 IS ZERO ACROSS THE WHOLE BANK. Every known-defect queue is now applied, and two
 > roadmap items moved from "planned" to "built and live in the app".**
 >
