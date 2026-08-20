@@ -31,6 +31,7 @@ SUITE = [
     ("audit_jlpt_coverage.py", "code"),
     ("validate_exam_banks.py", "code"),
     ("validate_conjugation_exercises.py", "code"),
+    ("validate_role_exercises.py", "code"),
     ("validate_speaking_path.py", "code"),
     ("validate_capabilities.py", "code"),
     ("audit_manifest.py", "code"),

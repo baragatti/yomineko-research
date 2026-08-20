@@ -86,7 +86,14 @@ def main() -> int:
 
         pattern, buf = [], []
         for tid, pos, surf, pc in toks:
-            if pc == "補助記号":                       # punctuation closes nothing and carries no role
+            if pc == "補助記号":
+                # Punctuation CLOSES the running chunk. Skipping it silently glued text across a comma
+                # (みえて、返事 became the chunk みえて返事), producing chunks that are not substrings of
+                # the sentence at all — 325 role-drill options the learner could not find on the page.
+                # A comma is also a clause boundary, so closing there is right on its own terms.
+                if buf:
+                    pattern.append({"chunk": "".join(buf), "role": "phrase"})
+                    buf = []
                 continue
             is_particle = pc == "助詞"
             ft = fin.get(tid)
