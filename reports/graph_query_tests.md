@@ -23,9 +23,10 @@ WHERE s.level = 'n5'
 
 ## Q2 — vocab using kun-reading た.べる of 食 (+ #dissected sentences)
 ```sql
-SELECT v.headword, (SELECT count(*) FROM sentence_vocab sv WHERE sv.vocab_id=v.id) FROM vocab v WHERE v.id IN (?)
+SELECT v.headword, (SELECT count(*) FROM sentence_vocab sv WHERE sv.vocab_id=v.id) FROM vocab v WHERE v.id IN (?,?)
 ```
-**1 rows.** PASS ✓
+**2 rows.** PASS ✓
+- 食べ物 — 5 sentences
 - 食べる — 101 sentences
 
 ## Q3 — 言-component kanji across N5–N4, ordered by frequency
