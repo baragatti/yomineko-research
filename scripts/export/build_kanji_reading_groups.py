@@ -36,6 +36,9 @@ LEVELS = ("n5", "n4", "n3")
 VOICED = {"か": "が", "き": "ぎ", "く": "ぐ", "け": "げ", "こ": "ご", "さ": "ざ", "し": "じ",
           "す": "ず", "せ": "ぜ", "そ": "ぞ", "た": "だ", "ち": "ぢ", "つ": "づ", "て": "で",
           "と": "ど", "は": "ば", "ひ": "び", "ふ": "ぶ", "へ": "べ", "ほ": "ぼ"}
+# handakuten: は-row also geminates to the p-row after っ and ん (ハイ -> ぱい in 一杯, 乾杯).
+# Without this the whole は-row on-reading family loses its most common compounds to `irregular`.
+PLOSIVE = {"は": "ぱ", "ひ": "ぴ", "ふ": "ぷ", "へ": "ぺ", "ほ": "ぽ"}
 KATA = {chr(c): chr(c - 0x60) for c in range(0x30A1, 0x30F7)}
 
 
@@ -62,6 +65,8 @@ def variants(r: str) -> list[str]:
     out = [r]
     if r and r[0] in VOICED:
         out.append(VOICED[r[0]] + r[1:])          # rendaku: ひ -> び in 誕生日
+    if r and r[0] in PLOSIVE:
+        out.append(PLOSIVE[r[0]] + r[1:])         # handakuten: ハイ -> ぱい in 一杯
     if r.endswith(("つ", "ち", "く", "き")):
         # 促音便: an on-reading ending in つ/ち/く/き geminates before a voiceless consonant.
         # Without this, シュツ loses 出発 / 出席 / 出身 (all しゅっ-) to `irregular`.
@@ -126,7 +131,23 @@ def main() -> int:
                 oku_exact = bool(oku) and (w.get("headword") or "").endswith(oku)
                 if oku and not oku_exact and strict:
                     continue
-                score = len(b) + (len(oku) * 2 if oku_exact else 0)   # exact okurigana is stronger
+                # An UNCHANGED reading beats one that only matched through rendaku or handakuten. Both
+                # ソン and ゾン are listed for 存, and without this the ぞん compounds (保存, 依存, 生存)
+                # matched ソN through rendaku and won on length, landing in the wrong group.
+                exact = any(kana.startswith(b) or kana.endswith(b) or b in kana for b in [b]) and (
+                    b in kana)
+                unchanged = b in kana
+                # In the LOOSE pass nothing has exact okurigana, so slots tie and the winner is
+                # arbitrary: 暮らし went to く+る instead of く+らす, 寝かせる to ね+る instead of ね+かす.
+                # Score the shared prefix between the word's tail and the reading's okurigana.
+                tail = hw[idx + 1:] if idx >= 0 else ""
+                shared = 0
+                for a, c2 in zip(hira(tail), oku):
+                    if a != c2:
+                        break
+                    shared += 1
+                score = (len(b) + (len(oku) * 2 if oku_exact else 0)
+                         + shared * 3 + (2 if unchanged else 0))
                 if score > best_len:
                     best, best_len = f"{r.get('reading')}|{r.get('okurigana') or ''}", score
             if best:
