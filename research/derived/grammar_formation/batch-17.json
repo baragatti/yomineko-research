@@ -1,0 +1,224 @@
+{
+  "batch": 17,
+  "points": [
+    {
+      "slug": "gram:gp-83",
+      "nuance_tags": ["intention", "conjecture", "comparison"],
+      "usage_contexts": ["written", "literary"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "まい" }
+          ],
+          "example": "行くまい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のように" }
+          ],
+          "example": "雪のように"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のような" }
+          ],
+          "example": "夢のような"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-84",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "が" },
+            { "op": "append", "token": "聞こえる" }
+          ],
+          "example": "音楽が聞こえる"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-85",
+      "nuance_tags": ["conjecture"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "が" },
+            { "op": "append", "token": "見える" }
+          ],
+          "example": "山が見える"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "見える" }
+          ],
+          "example": "若く見える"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "見える" }
+          ],
+          "example": "元気に見える"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-86",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "代" }
+          ],
+          "example": "電気代"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-87",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "かかる is a lexical verb, not a pattern built on a base. The record's frame is [time/money quantity] が/Ø かかる, with the particle itself stated as optional, and the pre-verbal slot is a quantity expression - a semantic subclass the base enum cannot express: base 'noun' would license *学生かかる."
+    },
+    {
+      "slug": "gram:gp-88",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "Adverb placed BEFORE the predicate (ほとんど + verb), and before a noun as ほとんどの + noun; the op enum has no prepend operation. The affirmative/negative sense split ('almost all' vs 'almost none') comes from the predicate's own polarity, not from a build step."
+    },
+    {
+      "slug": "gram:gp-89",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "casual-friends", "written"],
+      "steps_unavailable": "Prenominal demonstratives placed BEFORE the noun (こんな/そんな/あんな/どんな + noun, with no の), and こんなに/そんなに before an adjective or adverb; the op enum has no prepend operation. どんな〜でも is a circumfix around the noun and is likewise unencodable."
+    },
+    {
+      "slug": "gram:gp-90",
+      "nuance_tags": [],
+      "usage_contexts": ["written", "business", "announcement"],
+      "steps_unavailable": "Prefix placed BEFORE the noun (各 + noun, with no particle and no の); the op enum has no prepend operation."
+    },
+    {
+      "slug": "gram:gp-91",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "の次に" }
+          ],
+          "example": "朝ごはんの次に"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "の次は" }
+          ],
+          "example": "日本の次は"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-92",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written", "business", "announcement", "academic"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "以上" }
+          ],
+          "example": "三人以上"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-93",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written", "business", "announcement"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "以下" }
+          ],
+          "example": "三人以下"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-94",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "以外" }
+          ],
+          "example": "漢字以外"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "以外に" }
+          ],
+          "example": "行く以外に"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-95",
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "Adverb placed BEFORE the verb or predicate it modifies (ずっと + verb); the op enum has no prepend operation, and the record states it neither conjugates nor takes a particle of its own."
+    },
+    {
+      "slug": "gram:gp-96",
+      "nuance_tags": ["softening"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "Fixed adverb placed BEFORE the verb, adjective, or quantity it softens (だいたい + element); the op enum has no prepend operation, and the record states it does not conjugate."
+    },
+    {
+      "slug": "gram:gp-97",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のなかで" }
+          ],
+          "example": "スポーツのなかで"
+        }
+      ]
+    }
+  ]
+}

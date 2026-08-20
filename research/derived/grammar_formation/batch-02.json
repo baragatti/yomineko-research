@@ -1,0 +1,418 @@
+{
+  "batch": 2,
+  "points": [
+    {
+      "slug": "gram:gp-10",
+      "variants": [],
+      "steps_unavailable": "Invariant lexical item. そこ is a place pronoun, not a construction built on a host: the record's formation says it 'does not conjugate; it is a fixed word' and only describes which particles may follow (そこに / そこで / そこへ / そこから / そこまで). Particle choice is usage, not formation, so there is no base to transform and no ordered step list to emit.",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-11",
+      "variants": [],
+      "steps_unavailable": "Invariant lexical item. あそこ is a place pronoun that 'does not conjugate' per the record; its formation text only lists following particles (あそこに / あそこで / あそこへ / あそこから / あそこまで). The record also flags the shape itself as irregular (あそこ, not the あれ/あの-style ×あこ), which confirms it is stored, not derived. No base, no step list.",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-12",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "がある"
+            }
+          ],
+          "example": "本がある"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-13",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "がいる"
+            }
+          ],
+          "example": "猫がいる"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-139",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "はいけません"
+            }
+          ],
+          "example": "食べてはいけません"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "prohibition"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "announcement"
+      ]
+    },
+    {
+      "slug": "gram:gp-14",
+      "variants": [],
+      "steps_unavailable": "Prenominal demonstrative. The record's formation is この + noun with no particle and no change to either word (この + 車 = この車). この stands BEFORE its host, while the closed op enum builds a surface by transforming a base and suffixing tokens to it. Encoding this as base=noun would emit the bare noun and silently drop この, so no step list is given.",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-140",
+      "variants": [],
+      "steps_unavailable": "Two-slot comparison frame, not a single derivation. The record's formation is A + のほうが + B + より + adjective (with the two blocks reorderable), so it binds two independent noun slots plus a predicate. A linear step list transforms exactly one base, so any sequence emitted here would have to drop either the より term or the adjective and would license an incomplete surface.",
+      "nuance_tags": [
+        "comparison"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-141",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-adverbial"
+            }
+          ],
+          "example": "早く"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-142",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "になる"
+            }
+          ],
+          "example": "医者になる"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "になる"
+            }
+          ],
+          "example": "静かになる"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-adverbial"
+            },
+            {
+              "op": "append",
+              "token": "なる"
+            }
+          ],
+          "example": "大きくなる"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "change-of-state"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-143",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "り"
+            }
+          ],
+          "example": "読んだり"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "り"
+            }
+          ],
+          "example": "安かったり"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だったり"
+            }
+          ],
+          "example": "静かだったり"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だったり"
+            }
+          ],
+          "example": "学生だったり"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-144",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "りする"
+            }
+          ],
+          "example": "見たりする"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "りです"
+            }
+          ],
+          "example": "高かったりです"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だったりです"
+            }
+          ],
+          "example": "静かだったりです"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だったりです"
+            }
+          ],
+          "example": "学生だったりです"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-145",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "くちゃいけない"
+            }
+          ],
+          "example": "行かなくちゃいけない"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "obligation"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "casual-friends"
+      ]
+    },
+    {
+      "slug": "gram:gp-15",
+      "variants": [],
+      "steps_unavailable": "Prenominal demonstrative. The record's formation is その + noun (その本, その人, その店) and calls it invariable; その precedes its host and applies no operation to it. The closed op enum can only transform a base and suffix tokens, so it cannot place an element in front of the base; base=noun would generate the bare noun and lose その.",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-16",
+      "variants": [],
+      "steps_unavailable": "Prenominal demonstrative. The record's formation is あの + noun (あの山, あの人, あの店) and calls it invariable; あの precedes its host and changes neither word. The closed op enum builds a surface by transforming a base and appending tokens, so no ordered step list can express a preceding element without licensing a wrong surface.",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-17",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "んです"
+            }
+          ],
+          "example": "行くんです"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "んです"
+            }
+          ],
+          "example": "高いんです"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "なんです"
+            }
+          ],
+          "example": "静かなんです"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "なんです"
+            }
+          ],
+          "example": "学生なんです"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "cause"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+  "batch": 9,
+  "points": [
+    {
+      "slug": "gram:no-naka-de-a-ga-ichiban",
+      "nuance_tags": [
+        "comparison"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ],
+      "steps_unavailable": "Multi-slot sentence template (group-noun + の中で + [A] + が + 一番 + predicate), not an inflection chain on one base; 一番 stands before the predicate and the op enum has no prepend operation."
+    },
+    {
+      "slug": "gram:node",
+      "nuance_tags": [
+        "cause",
+        "softening",
+        "politeness"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "business",
+        "formal-email"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ので"
+            }
+          ],
+          "example": "書くので"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "ますので"
+            }
+          ],
+          "example": "書きますので"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ので"
+            }
+          ],
+          "example": "高いので"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "なので"
+            }
+          ],
+          "example": "静かなので"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "なので"
+            }
+          ],
+          "example": "学生なので"
+        }
+      ]
+    },
+    {
+      "slug": "gram:o-go",
+      "nuance_tags": [
+        "politeness",
+        "honorific"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "business",
+        "formal-email",
+        "announcement"
+      ],
+      "steps_unavailable": "Prefix placed BEFORE the noun (お with wago/kun'yomi, ご with kango/on'yomi); the op enum has no prepend operation, and the choice is lexically selected with established exceptions (お電話, お料理, お時間)."
+    },
+    {
+      "slug": "gram:o-kudasai",
+      "nuance_tags": [
+        "request",
+        "politeness"
+      ],
+      "usage_contexts": [
+        "spoken"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "を"
+            },
+            {
+              "op": "append",
+              "token": "ください"
+            }
+          ],
+          "example": "コーヒーをください"
+        }
+      ]
+    },
+    {
+      "slug": "gram:o-wo",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "を"
+            }
+          ],
+          "example": "パンを"
+        }
+      ]
+    },
+    {
+      "slug": "gram:shikashi",
+      "nuance_tags": [
+        "concession"
+      ],
+      "usage_contexts": [
+        "written",
+        "academic",
+        "business",
+        "formal-email"
+      ],
+      "steps_unavailable": "Invariable sentence-initial conjunction: it takes no base and inflects nothing; it opens an independent second sentence, and the op enum has no prepend operation."
+    },
+    {
+      "slug": "gram:sore-kara",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "casual-friends"
+      ],
+      "steps_unavailable": "Invariable sentence-initial connective: it takes no base and inflects nothing (the record states it is fixed); it opens the second sentence, and the op enum has no prepend operation."
+    },
+    {
+      "slug": "gram:soshite",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "written",
+        "academic",
+        "spoken"
+      ],
+      "steps_unavailable": "Invariable sentence-initial connective: it takes no base and inflects nothing (the record states it does not conjugate); it opens the second sentence, and the op enum has no prepend operation."
+    },
+    {
+      "slug": "gram:sugiru",
+      "nuance_tags": [
+        "emphasis"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "casual-friends",
+        "written"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "すぎる"
+            }
+          ],
+          "example": "食べすぎる"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "replace-ending",
+              "token": "すぎる"
+            }
+          ],
+          "example": "高すぎる"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "すぎる"
+            }
+          ],
+          "example": "静かすぎる"
+        }
+      ]
+    },
+    {
+      "slug": "gram:ta-koto-ga-aru",
+      "nuance_tags": [
+        "experience"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "ことがある"
+            }
+          ],
+          "example": "食べたことがある"
+        }
+      ]
+    },
+    {
+      "slug": "gram:tai",
+      "nuance_tags": [
+        "desire"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "casual-friends",
+        "written"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たい"
+            }
+          ],
+          "example": "食べたい"
+        }
+      ]
+    },
+    {
+      "slug": "gram:tari-tari",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "casual-friends",
+        "written"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "り"
+            }
+          ],
+          "example": "読んだり"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "り"
+            }
+          ],
+          "example": "高かったり"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だったり"
+            }
+          ],
+          "example": "元気だったり"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だったり"
+            }
+          ],
+          "example": "学生だったり"
+        }
+      ]
+    },
+    {
+      "slug": "gram:te-aru",
+      "nuance_tags": [
+        "completion",
+        "intention"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "ある"
+            }
+          ],
+          "example": "書いてある"
+        }
+      ]
+    },
+    {
+      "slug": "gram:te-de",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "replace-ending",
+              "token": "くて"
+            }
+          ],
+          "example": "高くて"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "で"
+            }
+          ],
+          "example": "静かで"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "で"
+            }
+          ],
+          "example": "学生で"
+        }
+      ]
+    },
+    {
+      "slug": "gram:te-form",
+      "nuance_tags": [
+        "cause"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "casual-friends"
+      ],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            }
+          ],
+          "example": "書いて"
+        }
+      ]
+    }
+  ]
+}

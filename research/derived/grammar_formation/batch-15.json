@@ -1,0 +1,517 @@
+{
+ "batch": 15,
+ "points": [
+  {
+   "slug": "gram:gp-150",
+   "nuance_tags": [
+    "condition"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-conditional-ba"
+      }
+     ],
+     "example": "書けば"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-nai-stem"
+      },
+      {
+       "op": "append",
+       "token": "ければ"
+      }
+     ],
+     "example": "行かなければ"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "to-conditional-ba"
+      }
+     ],
+     "example": "高ければ"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "to-adverbial"
+      },
+      {
+       "op": "append",
+       "token": "なければ"
+      }
+     ],
+     "example": "高くなければ"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "append",
+       "token": "なら"
+      }
+     ],
+     "example": "静かなら"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "なら"
+      }
+     ],
+     "example": "学生なら"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-151",
+   "nuance_tags": [
+    "completion"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written",
+    "casual-friends"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-te-form"
+      },
+      {
+       "op": "append",
+       "token": "しまう"
+      }
+     ],
+     "example": "書いてしまう"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-te-form"
+      },
+      {
+       "op": "replace-ending",
+       "token": "て→ちゃう"
+      }
+     ],
+     "example": "食べちゃう"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-te-form"
+      },
+      {
+       "op": "replace-ending",
+       "token": "で→じゃう"
+      }
+     ],
+     "example": "飲んじゃう"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-152",
+   "nuance_tags": [
+    "desire",
+    "request"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "casual-friends"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-te-form"
+      },
+      {
+       "op": "append",
+       "token": "ほしい"
+      }
+     ],
+     "example": "書いてほしい"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-nai-stem"
+      },
+      {
+       "op": "append",
+       "token": "いでほしい"
+      }
+     ],
+     "example": "行かないでほしい"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-153",
+   "nuance_tags": [
+    "comparison"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "のような"
+      }
+     ],
+     "example": "学生のような"
+    },
+    {
+     "base": "clause",
+     "steps": [
+      {
+       "base": "clause",
+       "op": "to-attributive"
+      },
+      {
+       "op": "append",
+       "token": "ような"
+      }
+     ],
+     "example": "子供が遊んでいるような"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-154",
+   "nuance_tags": [
+    "comparison"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "のように"
+      }
+     ],
+     "example": "学生のように"
+    },
+    {
+     "base": "clause",
+     "steps": [
+      {
+       "base": "clause",
+       "op": "to-attributive"
+      },
+      {
+       "op": "append",
+       "token": "ように"
+      }
+     ],
+     "example": "先生が言ったように"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-58",
+   "nuance_tags": [
+    "change-of-state"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "Invariable adverb placed BEFORE the expression of change it modifies (だんだん + verb/adjective, e.g. だんだん暖かくなる). The record states it does not inflect and applies no operation to its host; the closed op enum only transforms a base and appends material after it, so no step list can place だんだん in front. The combinations the record lists (〜なる, 〜てくる, 〜ていく) are the host predicate's own morphology, not steps this point performs."
+  },
+  {
+   "slug": "gram:gp-59",
+   "nuance_tags": [
+    "change-of-state",
+    "emphasis"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "casual-friends"
+   ],
+   "steps_unavailable": "Invariable adverb placed BEFORE the verb (どんどん + verb, e.g. どんどん増える, どんどん食べてください). The record describes position and collocation, not morphology: nothing is inflected and nothing is suffixed to any base, and the op enum has no prepend operation. Encoding the 〜てください half would emit generic polite-request morphology carrying none of this point's own material."
+  },
+  {
+   "slug": "gram:gp-60",
+   "nuance_tags": [
+    "condition"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-ta-form"
+      },
+      {
+       "op": "append",
+       "token": "ら"
+      }
+     ],
+     "example": "書いたら"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-nai-stem"
+      },
+      {
+       "op": "append",
+       "token": "かったら"
+      }
+     ],
+     "example": "行かなかったら"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "to-ta-form"
+      },
+      {
+       "op": "append",
+       "token": "ら"
+      }
+     ],
+     "example": "高かったら"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "to-ta-form"
+      },
+      {
+       "op": "append",
+       "token": "ら"
+      }
+     ],
+     "example": "静かだったら"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "to-ta-form"
+      },
+      {
+       "op": "append",
+       "token": "ら"
+      }
+     ],
+     "example": "学生だったら"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-61",
+   "nuance_tags": [
+    "concession"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "Two different things share one record and neither yields a safe step list. (a) The primary use the record gives is a sentence-initial conjunction opening an independent second sentence (高いです。ですが、買います); it takes no base, inflects nothing, and the op enum has no prepend operation. (b) The clause-final use is stated only as 'です/だ + が' with no part-of-speech condition, and taken literally that licenses the ungrammatical *行くだが and *高いだが — だ attaches to nouns and na-adjectives only, while verbs and i-adjectives take が directly (行くが / 高いが) or the polite ますが/ですが. The record does not carry that split, so emitting steps would invent it."
+  },
+  {
+   "slug": "gram:gp-62",
+   "nuance_tags": [
+    "cause"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-nai-stem"
+      },
+      {
+       "op": "append",
+       "token": "くて"
+      }
+     ],
+     "example": "書かなくて"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "to-adverbial"
+      },
+      {
+       "op": "append",
+       "token": "なくて"
+      }
+     ],
+     "example": "高くなくて"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "append",
+       "token": "じゃなくて"
+      }
+     ],
+     "example": "静かじゃなくて"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "じゃなくて"
+      }
+     ],
+     "example": "学生じゃなくて"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-63",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-passive"
+      }
+     ],
+     "example": "書かれる"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-64",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "Lexical verb pairs, not a derivation. The record states outright that there is no single rule ('Não há uma regra única') and lists pairs of independent dictionary words (開ける/開く, 閉める/閉まる, 始める/始まる, 入れる/入る, 出す/出る, 消す/消える, 落とす/落ちる) whose shapes differ pair by pair, so no op sequence maps one member onto the other. What the record does state generally is a particle rule (transitive takes を, intransitive takes が), which constrains the clause around the verb rather than building a form from a base."
+  },
+  {
+   "slug": "gram:gp-65",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-masu-stem"
+      },
+      {
+       "op": "append",
+       "token": "なおす"
+      }
+     ],
+     "example": "書きなおす"
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-66",
+   "nuance_tags": [
+    "softening"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "Invariable adverb standing at the head of the sentence or clause, before the verb (まず + [action 1]。それから + [action 2]。). The record describes placement in a sequence, not morphology: no base is inflected and nothing is suffixed, and the op enum has no prepend operation. The record also states まず never qualifies a noun, so there is no prenominal attachment to encode either."
+  },
+  {
+   "slug": "gram:gp-67",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "Invariable in both of its uses, and both are pre-posed. As an adverb it stands before the verb (また + verb, また来ます); as a connective it opens a new sentence (〜。また、〜。). The record says outright that it does not change form; nothing is inflected and nothing is appended to any base, and the op enum has no prepend operation."
+  }
+ ]
+}

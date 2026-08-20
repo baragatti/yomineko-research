@@ -1,0 +1,246 @@
+{
+  "batch": 5,
+  "points": [
+    {
+      "slug": "gram:gp-45",
+      "nuance_tags": ["change-of-state"],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "になる" }],
+          "example": "先生になる"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [{ "base": "na-adjective", "op": "append", "token": "になる" }],
+          "example": "静かになる"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "なる" }
+          ],
+          "example": "大きくなる"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-46",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [],
+      "steps_unavailable": "Multi-slot sentence frame, not a derivation from one base. The record's formation is [group noun] + の中で + [item noun] + が + いちばん + [predicate]. The ordered-step model builds one surface from a single base and cannot express the second nominal slot or the predicate slot; emitting only the group-noun + の中で fragment would misstate the pattern as complete."
+    },
+    {
+      "slug": "gram:gp-47",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [],
+      "steps_unavailable": "Two-slot comparison frame, not a derivation from one base. The record's formation is [A] + より + [B] + のほうが + [predicate], with the order of A and B reversible and each slot carrying its own fixed particle. One ordered chain from a single base cannot represent two independent nominal slots."
+    },
+    {
+      "slug": "gram:gp-48",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [],
+      "steps_unavailable": "Closed-class lexical items, not a productive derivation. なにか / なにも are built on the single interrogative なに; the narrowest base available (noun) would license 学生か / 学生も, which do not carry these meanings. The one general rule the record states, that なにも requires the predicate in the negative, is a constraint on the verb rather than a build step from a base."
+    },
+    {
+      "slug": "gram:gp-49",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [],
+      "steps_unavailable": "Closed-class lexical items, not a productive derivation. だれか / どこか / だれも / どこも are built on the fixed interrogatives 誰 and どこ; the narrowest base available (noun) would license the same append on any noun. The rules the record gives, that も-forms require a negative predicate and that に/で/へ precede も (どこにも), are predicate and particle-order constraints rather than build steps from a base."
+    },
+    {
+      "slug": "gram:gp-5",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [],
+      "steps_unavailable": "The point is the suppletive paradigm of one lexical adjective (いい / よい), not a construction over an open word class. Every inflected form the record lists is built on the stem よ- (よくない, よかった, よくなかった, よく) while only the affirmative present keeps いい, so no step sequence starting from いい produces them. A base of i-adjective would assert a general rule that this record exists to contradict."
+    },
+    {
+      "slug": "gram:gp-50",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "行ったほうがいい"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-51",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いほうがいい" }
+          ],
+          "example": "行かないほうがいい"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-52",
+      "nuance_tags": ["obligation"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "くちゃ" }
+          ],
+          "example": "行かなくちゃ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "きゃ" }
+          ],
+          "example": "行かなきゃ"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-53",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "のがへたです" }
+          ],
+          "example": "料理をするのがへたです"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "がへたです" }],
+          "example": "テニスがへたです"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-54",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "のがじょうずです" }
+          ],
+          "example": "歌を歌うのがじょうずです"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "がじょうずです" }],
+          "example": "日本語がじょうずです"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-55",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "あげる" }
+          ],
+          "example": "手伝ってあげる"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-56",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれる" }
+          ],
+          "example": "教えてくれる"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-57",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "もらう" }
+          ],
+          "example": "教えてもらう"
+        }
+      ],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:gp-6",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [{ "base": "verb", "op": "to-dictionary" }],
+          "example": "食べる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "い" }
+          ],
+          "example": "食べない"
+        },
+        {
+          "base": "verb",
+          "steps": [{ "base": "verb", "op": "to-ta-form" }],
+          "example": "食べた"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "かった" }
+          ],
+          "example": "食べなかった"
+        }
+      ],
+      "steps_unavailable": ""
+    }
+  ]
+}

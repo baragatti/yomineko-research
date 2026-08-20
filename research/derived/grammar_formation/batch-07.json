@@ -1,0 +1,280 @@
+{
+  "batch": 7,
+  "points": [
+    {
+      "slug": "gram:mada",
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "まだ is a free adverb placed BEFORE the predicate (まだ雨です / まだ寝ています). The record describes placement, not morphology: no base is inflected and nothing is suffixed. The closed op set only models material added after a base, so no step sequence can express a pre-posed adverb without inventing a rule the record does not carry.",
+      "variants": []
+    },
+    {
+      "slug": "gram:mada-te-imasen",
+      "nuance_tags": ["continuation", "politeness"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "食べていません",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いません" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:made",
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "example": "駅まで",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "まで" }
+          ]
+        },
+        {
+          "base": "verb",
+          "example": "終わるまで",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "まで" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:mae-ni",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "食べるまえに",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "まえに" }
+          ]
+        },
+        {
+          "base": "noun",
+          "example": "食事のまえに",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のまえに" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:masen-ka",
+      "nuance_tags": ["request", "softening", "politeness"],
+      "usage_contexts": ["spoken"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "飲みませんか",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ませんか" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:mashou",
+      "nuance_tags": ["intention", "politeness"],
+      "usage_contexts": ["spoken"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "食べましょう",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ましょう" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:mashouka",
+      "nuance_tags": ["intention", "softening", "politeness"],
+      "usage_contexts": ["spoken"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "手伝いましょうか",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ましょうか" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:mo",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "example": "学生も",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "も" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:mou",
+      "nuance_tags": ["completion", "change-of-state"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "もう is a free adverb placed BEFORE the predicate or before a quantity (もう終わりました / もう飲みません / もう一杯). The record describes placement plus the polarity of the following verb, not morphology: no base is inflected and nothing is suffixed. The closed op set only models material added after a base, so no step sequence can express it.",
+      "variants": []
+    },
+    {
+      "slug": "gram:na",
+      "nuance_tags": ["prohibition", "emphasis"],
+      "usage_contexts": ["spoken", "casual-friends", "announcement"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "食べるな",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "な" }
+          ]
+        },
+        {
+          "base": "i-adjective",
+          "example": "寒いな",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "な" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:na-adjectives",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "na-adjective",
+          "example": "静かな",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" }
+          ]
+        },
+        {
+          "base": "na-adjective",
+          "example": "静かだ",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だ" }
+          ]
+        },
+        {
+          "base": "na-adjective",
+          "example": "静かです",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "です" }
+          ]
+        },
+        {
+          "base": "na-adjective",
+          "example": "静かじゃない",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "じゃない" }
+          ]
+        },
+        {
+          "base": "na-adjective",
+          "example": "静かだった",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だった" }
+          ]
+        },
+        {
+          "base": "na-adjective",
+          "example": "静かに",
+          "steps": [
+            { "base": "na-adjective", "op": "to-adverbial" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:naa",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "example": "寒いなあ",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "なあ" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:naide",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "食べないで",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いで" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:naide-kudasai",
+      "nuance_tags": ["request", "prohibition", "politeness"],
+      "usage_contexts": ["spoken", "written", "announcement"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "食べないでください",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いでください" }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gram:naito-ikenai",
+      "nuance_tags": ["obligation", "condition"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "example": "行かないといけない",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いといけない" }
+          ]
+        }
+      ]
+    }
+  ]
+}

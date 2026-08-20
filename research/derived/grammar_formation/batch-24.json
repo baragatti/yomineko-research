@@ -1,0 +1,595 @@
+{
+ "batch": 24,
+ "points": [
+  {
+   "slug": "gram:to-kiita",
+   "variants": [
+    {
+     "base": "clause",
+     "steps": [
+      {
+       "base": "clause",
+       "op": "append",
+       "token": "と聞いた"
+      }
+     ],
+     "example": "書くと聞いた"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "hearsay"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:to-omou",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "と思う"
+      }
+     ],
+     "example": "食べると思う"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "append",
+       "token": "と思う"
+      }
+     ],
+     "example": "高いと思う"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "append",
+       "token": "だと思う"
+      }
+     ],
+     "example": "静かだと思う"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "だと思う"
+      }
+     ],
+     "example": "学生だと思う"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-volitional"
+      },
+      {
+       "op": "append",
+       "token": "と思う"
+      }
+     ],
+     "example": "書こうと思う"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "conjecture",
+    "softening",
+    "intention"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:toka-toka",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "とか"
+      }
+     ],
+     "example": "寿司とか"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "とか"
+      }
+     ],
+     "example": "書くとか"
+    },
+    {
+     "base": "clause",
+     "steps": [
+      {
+       "base": "clause",
+       "op": "append",
+       "token": "とか"
+      }
+     ],
+     "example": "寿司を食べるとか"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "softening"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "casual-friends"
+   ]
+  },
+  {
+   "slug": "gram:tokoro",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "ところ"
+      }
+     ],
+     "example": "食べるところ"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-te-form"
+      },
+      {
+       "op": "append",
+       "token": "いるところ"
+      }
+     ],
+     "example": "食べているところ"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-ta-form"
+      },
+      {
+       "op": "append",
+       "token": "ところ"
+      }
+     ],
+     "example": "食べたところ"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "continuation",
+    "completion"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:tsuzukeru",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-masu-stem"
+      },
+      {
+       "op": "append",
+       "token": "続ける"
+      }
+     ],
+     "example": "食べ続ける"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "continuation"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:ukemi-kei",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-passive"
+      }
+     ],
+     "example": "書かれる"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:wa-ga-wa",
+   "variants": [],
+   "steps_unavailable": "Multi-slot clause template, not a derivation from one base. The record's formation is the schema [X]は [Y]が [predicate1]、[Z]は [predicate2]: it places particles across two independent clauses and binds three noun slots plus two predicates. A linear step list transforms exactly one base and can only suffix tokens to it, so any sequence emitted here would collapse to 'noun + は' and would license every は-sentence as this contrast pattern. The record's own explanation field is additionally damaged — two different, conflicting descriptions (the は…が…は contrast frame and the 象は鼻が長い topic/sub-subject frame) are spliced together mid-sentence — so the point needs human repair before steps can be derived.",
+   "nuance_tags": [
+    "comparison",
+    "emphasis"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:yasui",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-masu-stem"
+      },
+      {
+       "op": "append",
+       "token": "やすい"
+      }
+     ],
+     "example": "食べやすい"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:yatto",
+   "variants": [],
+   "steps_unavailable": "Free adverb standing BEFORE the predicate (やっと終わった, やっと間に合う): it applies no operation to its host and takes no host of its own. The closed op enum only transforms a base and suffixes tokens to it, so no ordered step list can place やっと in front. The record's formation field is also incomplete — it opens with 'Também acompanha o presente…' and never states the base rule it is adding to — so there is nothing further to derive from.",
+   "nuance_tags": [
+    "emphasis"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "casual-friends"
+   ]
+  },
+  {
+   "slug": "gram:yori",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "より"
+      }
+     ],
+     "example": "猫より"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "comparison"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written",
+    "announcement"
+   ]
+  },
+  {
+   "slug": "gram:yotei-da",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "予定だ"
+      }
+     ],
+     "example": "行く予定だ"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "intention"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written",
+    "business"
+   ]
+  },
+  {
+   "slug": "gram:you-da",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "ようだ"
+      }
+     ],
+     "example": "書くようだ"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "append",
+       "token": "ようだ"
+      }
+     ],
+     "example": "高いようだ"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "to-attributive"
+      },
+      {
+       "op": "append",
+       "token": "ようだ"
+      }
+     ],
+     "example": "静かなようだ"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "のようだ"
+      }
+     ],
+     "example": "学生のようだ"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "conjecture",
+    "comparison"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:you-ni-naru",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "ようになる"
+      }
+     ],
+     "example": "食べるようになる"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-potential"
+      },
+      {
+       "op": "append",
+       "token": "ようになる"
+      }
+     ],
+     "example": "書けるようになる"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "change-of-state"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:you-ni-suru",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "ようにする"
+      }
+     ],
+     "example": "食べるようにする"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-nai-stem"
+      },
+      {
+       "op": "append",
+       "token": "ないようにする"
+      }
+     ],
+     "example": "食べないようにする"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "intention"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  },
+  {
+   "slug": "gram:you-ni-you-na",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "のように"
+      }
+     ],
+     "example": "子供のように"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "のような"
+      }
+     ],
+     "example": "夢のような"
+    },
+    {
+     "base": "clause",
+     "steps": [
+      {
+       "base": "clause",
+       "op": "append",
+       "token": "ように"
+      }
+     ],
+     "example": "言ったように"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "ように"
+      }
+     ],
+     "example": "分かるように"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-potential"
+      },
+      {
+       "op": "append",
+       "token": "ように"
+      }
+     ],
+     "example": "書けるように"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-nai-stem"
+      },
+      {
+       "op": "append",
+       "token": "ないように"
+      }
+     ],
+     "example": "忘れないように"
+    }
+   ],
+   "steps_unavailable": "",
+   "nuance_tags": [
+    "comparison"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ]
+  }
+ ]
+}

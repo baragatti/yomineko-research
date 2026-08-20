@@ -1,0 +1,381 @@
+{
+  "batch": 6,
+  "points": [
+    {
+      "slug": "gram:gp-7",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" }
+          ],
+          "example": "書く"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ない" }
+          ],
+          "example": "書かない"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" }
+          ],
+          "example": "書いた"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "なかった" }
+          ],
+          "example": "書かなかった"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:gp-8",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ます" }
+          ],
+          "example": "飲みます"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ません" }
+          ],
+          "example": "飲みません"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ました" }
+          ],
+          "example": "飲みました"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ませんでした" }
+          ],
+          "example": "飲みませんでした"
+        }
+      ],
+      "nuance_tags": ["politeness"],
+      "usage_contexts": ["spoken", "written", "business"]
+    },
+    {
+      "slug": "gram:gp-9",
+      "steps_unavailable": "ここ is a lexical demonstrative pronoun, not a form derived from a base. The record's formation section only states which particles follow it (ここで / ここに / ここは) and lists the ここ／そこ／あそこ／どこ series; no operation is applied to any base, so any ordered build would have to be invented.",
+      "variants": [],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:hou-ga-ii",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "食べたほうがいい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ないほうがいい" }
+          ],
+          "example": "食べないほうがいい"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "安いほうがいい"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "静かなほうがいい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "の" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "学生のほうがいい"
+        }
+      ],
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:i-adjectives",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" }
+          ],
+          "example": "高い"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "ない" }
+          ],
+          "example": "高くない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-ta-form" }
+          ],
+          "example": "高かった"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "なかった" }
+          ],
+          "example": "高くなかった"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:ichiban",
+      "steps_unavailable": "一番 is placed BEFORE the adjective or adverb it modifies (一番大きい, 一番好き). The op enum is suffix-only — append and replace-ending both attach to the right of the base — so the record's rule cannot be expressed as an ordered build on a base without inverting it into something false. The comparison group (〜で / 〜のなかで) is a separate phrase, not a step on the head word either.",
+      "variants": [],
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:issho-ni",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "と一緒に" }
+          ],
+          "example": "友だちと一緒に"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:itsumo",
+      "steps_unavailable": "いつも is a lexical frequency adverb. The record describes where it sits (before the verb, near the start of the clause) and what it combines with (a negative verb; いつもの + noun), not an operation performed on a base. Both placements are pre-posed and the op enum has no prepend, so any ordered build would misstate the rule.",
+      "variants": [],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:janai-dewa-nai",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "じゃない" }
+          ],
+          "example": "先生じゃない"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "じゃない" }
+          ],
+          "example": "静かじゃない"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "ではない" }
+          ],
+          "example": "先生ではない"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "ではない" }
+          ],
+          "example": "静かではない"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "casual-friends", "written"]
+    },
+    {
+      "slug": "gram:ka",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "append", "token": "か" }
+          ],
+          "example": "行きますか"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:ka-ka",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "か" }
+          ],
+          "example": "コーヒーか"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "append", "token": "か" }
+          ],
+          "example": "行くか"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:kara",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "append", "token": "から" }
+          ],
+          "example": "忙しいから"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だから" }
+          ],
+          "example": "学生だから"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "から" }
+          ],
+          "example": "3時から"
+        }
+      ],
+      "nuance_tags": ["cause"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:kata",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "方" }
+          ],
+          "example": "食べ方"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:kedo",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "append", "token": "けど" }
+          ],
+          "example": "高いけど"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だけど" }
+          ],
+          "example": "学生だけど"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だけど" }
+          ],
+          "example": "静かだけど"
+        }
+      ],
+      "nuance_tags": ["concession", "softening"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:keredo-mo",
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "append", "token": "けれども" }
+          ],
+          "example": "高いけれども"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だけれども" }
+          ],
+          "example": "学生だけれども"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だけれども" }
+          ],
+          "example": "静かだけれども"
+        }
+      ],
+      "nuance_tags": ["concession"],
+      "usage_contexts": ["spoken", "written", "formal-email", "academic"]
+    }
+  ]
+}

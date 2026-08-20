@@ -1,0 +1,334 @@
+{
+  "batch": 13,
+  "points": [
+    {
+      "slug": "gram:gp-113",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のほかに" }
+          ],
+          "example": "日本語のほかに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のほかにも" }
+          ],
+          "example": "これのほかにも"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:gp-114",
+      "variants": [],
+      "steps_unavailable": "Invariant sentence adverb. たとえば is a whole word placed BEFORE the illustrating clause; it neither attaches to nor inflects any base, and the op set can only append to a base, so there is no build step to state. The record own formation field says exactly this (palavra fixa, nao muda de forma).",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "academic", "business"]
+    },
+    {
+      "slug": "gram:gp-115",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-potential" }
+          ],
+          "example": "書ける"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:gp-116",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "んだけど" }
+          ],
+          "example": "行くんだけど"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "んだけど" }
+          ],
+          "example": "高いんだけど"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "なんだけど" }
+          ],
+          "example": "静かなんだけど"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "なんだけど" }
+          ],
+          "example": "学生なんだけど"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "んですが" }
+          ],
+          "example": "行くんですが"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "んですが" }
+          ],
+          "example": "高いんですが"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "なんですが" }
+          ],
+          "example": "静かなんですが"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "なんですが" }
+          ],
+          "example": "学生なんですが"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["softening", "politeness", "cause"],
+      "usage_contexts": ["spoken", "casual-friends", "business"]
+    },
+    {
+      "slug": "gram:gp-117",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いと" }
+          ],
+          "example": "行かないと"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["obligation", "condition"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:gp-118",
+      "variants": [],
+      "steps_unavailable": "Discontinuous two-site pattern. しか attaches to a noun or a quantity, but the obligatory negation lands on a DIFFERENT word, the predicate verb (水しか飲まない, 一人しか来なかった). The op set only appends to one base, so no sequence can force the nai-form onto the separate predicate. Encoding just the noun side would license the ungrammatical 千円しかある, which the record own nuance field flags as wrong.",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:gp-119",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だけでなく" }
+          ],
+          "example": "子供だけでなく"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "だけでなく" }
+          ],
+          "example": "食べるだけでなく"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "だけでなく" }
+          ],
+          "example": "安いだけでなく"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "なだけでなく" }
+          ],
+          "example": "便利なだけでなく"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["written", "spoken", "academic"]
+    },
+    {
+      "slug": "gram:gp-120",
+      "variants": [],
+      "steps_unavailable": "Pre-posed adverb, and the op set has no prepend. もし stands at the head of the clause and, as the record itself insists, carries no conditional morphology: the conditional is built by tara / ba / nara / to on the predicate, which are separate grammar points. Emitting a conditional op here would credit もし with an inflection it does not perform.",
+      "nuance_tags": ["condition"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:gp-121",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "し" }
+          ],
+          "example": "行くし"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "し" }
+          ],
+          "example": "安いし"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だし" }
+          ],
+          "example": "暇だし"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だし" }
+          ],
+          "example": "学生だし"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["cause", "emphasis"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:gp-122",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "でできている" }
+          ],
+          "example": "ガラスでできている"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "からできる" }
+          ],
+          "example": "ぶどうからできる"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["written", "spoken"]
+    },
+    {
+      "slug": "gram:gp-123",
+      "variants": [],
+      "steps_unavailable": "Sentence frame with two independent slots, not an affix on one base: A と B と、どちらが + adjective + ですか. The op set appends to a single base, so the second compared term and the どちらが question slot cannot be expressed, and the answer half (B のほうが) is a further separate clause.",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken"]
+    },
+    {
+      "slug": "gram:gp-124",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ように言う" }
+          ],
+          "example": "勉強するように言う"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いように言う" }
+          ],
+          "example": "吸わないように言う"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["request"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:gp-125",
+      "variants": [
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "none" },
+            { "op": "append", "token": "ように祈る" }
+          ],
+          "example": "試験に合格するように祈る"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ますように" }
+          ],
+          "example": "元気になりますように"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["desire"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:gp-126",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "化する" }
+          ],
+          "example": "機械化する"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "化" }
+          ],
+          "example": "高齢化"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["change-of-state"],
+      "usage_contexts": ["written", "academic", "business"]
+    },
+    {
+      "slug": "gram:gp-127",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "な" }
+          ],
+          "example": "行くな"
+        }
+      ],
+      "steps_unavailable": "The single variant encodes ONLY the negative imperative (dictionary form + な, 行くな), which is class-independent. The AFFIRMATIVE 命令形 cannot be encoded: the op enum has no to-imperative, and base verb cannot distinguish godan (final -u kana swapped for its -e kana, 行く gives 行け) from ichidan (drop る, add ろ or よ, 食べる gives 食べろ). Any single sequence misfires on the other class, since drop-final-ru + ろ turns the godan 帰る into the ungrammatical 帰ろ instead of 帰れ, and する gives しろ / せよ and 来る gives 来い suppletively.",
+      "nuance_tags": ["prohibition"],
+      "usage_contexts": ["spoken", "casual-friends", "announcement", "literary"]
+    }
+  ]
+}

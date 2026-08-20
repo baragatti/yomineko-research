@@ -1,0 +1,399 @@
+{
+  "batch": 12,
+  "points": [
+    {
+      "slug": "gram:garu-gatteiru",
+      "nuance_tags": ["desire", "continuation"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "replace-ending", "token": "がる" }
+          ],
+          "example": "怖がる"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "がる" }
+          ],
+          "example": "嫌がる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "たがる" }
+          ],
+          "example": "食べたがる"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "replace-ending", "token": "がる" },
+            { "op": "to-te-form" },
+            { "op": "append", "token": "いる" }
+          ],
+          "example": "怖がっている"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "たがる" },
+            { "op": "to-te-form" },
+            { "op": "append", "token": "いる" }
+          ],
+          "example": "食べたがっている"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gozaimasu",
+      "nuance_tags": ["politeness", "humility"],
+      "usage_contexts": ["spoken", "business", "announcement", "formal-email"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "でございます" }
+          ],
+          "example": "学生でございます"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "でございます" }
+          ],
+          "example": "静かでございます"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "ではございません" }
+          ],
+          "example": "学生ではございません"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-100",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "しか" }
+          ],
+          "example": "千円しか"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "い" }
+          ],
+          "example": "書かない"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-101",
+      "nuance_tags": ["softening"],
+      "usage_contexts": ["written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "の一つだ" }
+          ],
+          "example": "山の一つだ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "の一人だ" }
+          ],
+          "example": "学生の一人だ"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-102",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["written", "literary"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "い" }
+          ],
+          "example": "食べない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "ない" }
+          ],
+          "example": "高くない"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "はない" }
+          ],
+          "example": "ものはない"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-103",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "Fixed preposed adverb: すこしも stands in front of the predicate and no op in the enum can place material ahead of a base, so no step list reaches the surface. The only suffixal half the record supplies is the obligatory plain negative (〜ない / 〜ません), which is generic negation carrying none of this point's own material — a step list built from it would generate forms that are not instances of the pattern.",
+      "variants": []
+    },
+    {
+      "slug": "gram:gp-104",
+      "nuance_tags": ["softening"],
+      "usage_contexts": ["written", "academic"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "ない" }
+          ],
+          "example": "少なくない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "ありません" }
+          ],
+          "example": "少なくありません"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-105",
+      "nuance_tags": ["obligation", "permission"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-causative" }
+          ],
+          "example": "食べさせる"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-106",
+      "nuance_tags": ["desire", "request", "softening"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ように" }
+          ],
+          "example": "わかるように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-potential" },
+            { "op": "append", "token": "ように" }
+          ],
+          "example": "食べられるように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "ほしい" }
+          ],
+          "example": "食べてほしい"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-107",
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いるあいだに" }
+          ],
+          "example": "寝ているあいだに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のあいだに" }
+          ],
+          "example": "休みのあいだに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "あいだに" }
+          ],
+          "example": "高いあいだに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "あいだに" }
+          ],
+          "example": "静かなあいだに"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-108",
+      "nuance_tags": ["politeness"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれてありがとう" }
+          ],
+          "example": "手伝ってくれてありがとう"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれてありがとうございます" }
+          ],
+          "example": "来てくれてありがとうございます"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-109",
+      "nuance_tags": ["request", "softening", "politeness"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれない" }
+          ],
+          "example": "開けてくれない"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "もらえない" }
+          ],
+          "example": "開けてもらえない"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれませんか" }
+          ],
+          "example": "開けてくれませんか"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "もらえませんか" }
+          ],
+          "example": "開けてもらえませんか"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いただけませんか" }
+          ],
+          "example": "開けていただけませんか"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-110",
+      "nuance_tags": ["conjecture"],
+      "usage_contexts": ["written", "literary"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "のだろうか" }
+          ],
+          "example": "行くのだろうか"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "のだろうか" }
+          ],
+          "example": "高いのだろうか"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "なのだろうか" }
+          ],
+          "example": "静かなのだろうか"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "なのだろうか" }
+          ],
+          "example": "学生なのだろうか"
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-111",
+      "nuance_tags": ["humility", "politeness"],
+      "usage_contexts": ["spoken", "business", "formal-email"],
+      "steps_unavailable": "Circumfix: the honorific prefix お/ご sits in front of the base and no op in the enum places material ahead of it, so no step list reaches the surface. The suffixal half is masu-stem + する (持つ -> 持ち -> お持ちする), but the choice between お and ご is lexical — お for native 和語 verbs, ご for Sino-Japanese 漢語 compounds, with memorized exceptions — and cannot be derived from the base token.",
+      "variants": []
+    },
+    {
+      "slug": "gram:gp-112",
+      "nuance_tags": ["humility", "politeness"],
+      "usage_contexts": ["spoken", "business", "formal-email"],
+      "steps_unavailable": "いたす is a suppletive lexical replacement for する, not a derivation from a base: no op in the enum produces it. The productive half the record gives (Sino-Japanese verbal noun + いたす, 説明する -> 説明いたします) requires a サ変 verbal-noun base that the base enum cannot express; declaring base \"noun\" would license *学生いたします.",
+      "variants": []
+    }
+  ]
+}

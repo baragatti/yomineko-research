@@ -1,0 +1,402 @@
+{
+  "batch": 18,
+  "points": [
+    {
+      "slug": "gram:gp-98",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "The pattern in the record is 何 + COUNTER + か: the interrogative 何 must PRECEDE the counter. The op enum is suffix-only (no prepend), and the base enum has no counter / interrogative-quantifier member. Base noun + append か would either yield 人か (no 何) or, applied to a plain noun, license 学生か, which is the sentence-final question particle the record explicitly warns against confusing with this か.",
+      "variants": []
+    },
+    {
+      "slug": "gram:gp-99",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "真 is a PREFIX (真っ赤, 真ん中, 真夜中); the op enum is suffix-only, so the attachment cannot be expressed. The record also states the shape is decided case by case (ま / まっ / まん) and is to be memorised as vocabulary, so no rule selects the allomorph from the following word.",
+      "variants": []
+    },
+    {
+      "slug": "gram:hajimeru",
+      "nuance_tags": ["change-of-state"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "始める" }
+          ],
+          "example": "食べ始める"
+        }
+      ]
+    },
+    {
+      "slug": "gram:hazu-da",
+      "nuance_tags": ["conjecture"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "はずです" }
+          ],
+          "example": "来るはずです"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "はずです" }
+          ],
+          "example": "高いはずです"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "はずです" }
+          ],
+          "example": "元気なはずです"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のはずです" }
+          ],
+          "example": "学生のはずです"
+        }
+      ]
+    },
+    {
+      "slug": "gram:hazu-ga-nai",
+      "nuance_tags": ["conjecture", "emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "はずがない" }
+          ],
+          "example": "来るはずがない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "はずがない" }
+          ],
+          "example": "高いはずがない"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "はずがない" }
+          ],
+          "example": "静かなはずがない"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のはずがない" }
+          ],
+          "example": "学生のはずがない"
+        }
+      ]
+    },
+    {
+      "slug": "gram:hitsuyou-ga-aru",
+      "nuance_tags": ["obligation"],
+      "usage_contexts": ["spoken", "written", "business"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "必要がある" }
+          ],
+          "example": "行く必要がある"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "が必要だ" }
+          ],
+          "example": "お金が必要だ"
+        }
+      ]
+    },
+    {
+      "slug": "gram:ikou-kei-volitional-form",
+      "nuance_tags": ["intention"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-volitional" }
+          ],
+          "example": "食べよう"
+        }
+      ]
+    },
+    {
+      "slug": "gram:irassharu",
+      "nuance_tags": ["honorific", "politeness"],
+      "usage_contexts": ["spoken", "business"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いらっしゃる" }
+          ],
+          "example": "待っていらっしゃる"
+        }
+      ]
+    },
+    {
+      "slug": "gram:itashimasu",
+      "nuance_tags": ["humility", "politeness"],
+      "usage_contexts": ["business", "formal-email", "spoken"],
+      "steps_unavailable": "いたします is the suppletive humble counterpart of する, not a productive suffix. The productive pattern in the record is お／ご + VERBAL NOUN + いたします (ご連絡いたします): it needs a prefix operation the op enum lacks and a suru-verbal-noun base the base enum lacks. Base noun + append いたします would license 学生いたします; base verb + replace-ending would license 書いたします.",
+      "variants": []
+    },
+    {
+      "slug": "gram:janai-ka",
+      "nuance_tags": ["emphasis", "softening"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "じゃないか" }
+          ],
+          "example": "行くじゃないか"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "じゃないか" }
+          ],
+          "example": "高いじゃないか"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "じゃないか" }
+          ],
+          "example": "便利じゃないか"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "じゃないか" }
+          ],
+          "example": "学生じゃないか"
+        }
+      ]
+    },
+    {
+      "slug": "gram:ka-dou-ka",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "かどうか" }
+          ],
+          "example": "来るかどうか"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "かどうか" }
+          ],
+          "example": "高いかどうか"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "かどうか" }
+          ],
+          "example": "静かかどうか"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "かどうか" }
+          ],
+          "example": "学生かどうか"
+        }
+      ]
+    },
+    {
+      "slug": "gram:ka-shira",
+      "nuance_tags": ["conjecture", "softening", "request"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "かしら" }
+          ],
+          "example": "行くかしら"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "かしら" }
+          ],
+          "example": "高いかしら"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "かしら" }
+          ],
+          "example": "元気かしら"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "かしら" }
+          ],
+          "example": "学生かしら"
+        }
+      ]
+    },
+    {
+      "slug": "gram:kai",
+      "nuance_tags": ["softening"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "かい" }
+          ],
+          "example": "食べるかい"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "かい" }
+          ],
+          "example": "寒いかい"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "かい" }
+          ],
+          "example": "好きかい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "かい" }
+          ],
+          "example": "学生かい"
+        }
+      ]
+    },
+    {
+      "slug": "gram:kamo-shirenai",
+      "nuance_tags": ["conjecture", "softening"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "かもしれない" }
+          ],
+          "example": "行くかもしれない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "かもしれない" }
+          ],
+          "example": "高いかもしれない"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "かもしれない" }
+          ],
+          "example": "静かかもしれない"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "かもしれない" }
+          ],
+          "example": "学生かもしれない"
+        }
+      ]
+    },
+    {
+      "slug": "gram:kana",
+      "nuance_tags": ["conjecture", "desire"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-attributive" },
+            { "op": "append", "token": "かな" }
+          ],
+          "example": "行くかな"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "かな" }
+          ],
+          "example": "高いかな"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "かな" }
+          ],
+          "example": "暇かな"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "かな" }
+          ],
+          "example": "学生かな"
+        }
+      ]
+    }
+  ]
+}
