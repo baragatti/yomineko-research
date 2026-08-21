@@ -2529,7 +2529,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "Two-slot frame with obligatory repetition of the same predicate, not a single derivation. ～ことは～が requires the base to appear on both sides of ことは and in a different shape on the right (verb plain + が, い-adj + が, な-adj なことは + だが, noun であることは + だが). No op in the enum re-emits the base into the string, and append tokens are literal, so the second slot is unreachable. A left-half-only rule would not merely be incomplete but misleading: 書くことは alone is the ordinary こと nominaliser plus は, a different construction. Separately, the record's noun line omits である and would license *学生ことは学生だが; it needs human repair before any encoding is attempted.",
     "nuance": {
       "pt-BR": "É uma concessão suave e bem natural na fala: você admite a parte boa para introduzir um 'porém' com mais delicadeza. Armadilha PT: o brasileiro pode achar estranha a repetição da mesma palavra, mas ela é obrigatória e é justamente o que dá o tom de 'sim, é verdade, mas...'.",
       "en": "It is a soft concession, quite natural in speech: you admit the good part in order to introduce a 'however' more gently. PT trap: the Brazilian may find the repetition of the same word strange, but it is obligatory and is precisely what gives the tone of 'yes, it's true, but...'."
@@ -3529,7 +3529,68 @@
       "pt-BR": "Liga-se a forma curta: verbo na forma comum, adjetivo-i, na+adjetivo ou substantivo (estes ultimos podem levar である) + ばかりか; o segundo membro recebe a partícula も. Padrão: A ばかりか B も.",
       "en": "It attaches to the short form: verb in plain form, い-adjective, な-adjective, or noun (these last two can take である) + ばかりか; the second member receives the particle も. Pattern: A ばかりか B も."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ばかりか"
+            }
+          ],
+          "example": "書くばかりか"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "ばかりか"
+            }
+          ],
+          "example": "高いばかりか"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "であるばかりか"
+            }
+          ],
+          "example": "静かであるばかりか"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "ばかりか"
+            }
+          ],
+          "example": "学生ばかりか"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "であるばかりか"
+            }
+          ],
+          "example": "学生であるばかりか"
+        }
+      ]
+    },
     "nuance_tags": [
       "emphasis"
     ],
@@ -3537,7 +3598,7 @@
       "written",
       "academic"
     ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "Only the A member (～ばかりか) is encoded. ～ばかりか～も is a two-slot correlative: the も of the B member attaches to a separate constituent the derivation has no access to, and no op introduces a second constituent. Read the variants as the left half of 'A ばかりか B も' and supply B from context; 書くばかりか is not a complete realisation of this point.",
     "nuance": {
       "pt-BR": "Registro formal e mais escrito; na conversa cotidiana e mais natural だけでなく...も. Sinonimos proximos com pequenas diferenças: ばかりでなく (neutro) e のみならず (bem formal, literário). Armadilha PT: o segundo elemento costuma escalar em intensidade ou surpresa em relação ao primeiro, então a tradução 'não so... como também' deve preservar essa ideia de algo a mais, e não de mera soma de itens equivalentes.",
       "en": "Formal and more written register; in everyday conversation だけでなく...も is more natural. Close synonyms with small differences: ばかりでなく (neutral) and のみならず (very formal, literary). PT trap: the second element usually escalates in intensity or surprise relative to the first, so the translation 'not only... but also' should preserve this idea of something extra, and not of a mere sum of equivalent items."
@@ -4841,9 +4902,61 @@
       "pt-BR": "Liga-se à forma simples: verbo-simples + にしては, adjetivo-い + にしては, adjetivo-な (sem な) + にしては, substantivo + にしては. Ex.: 安いにしては美味しい (\"para algo barato, é gostoso\").",
       "en": "It attaches to the plain form: plain-verb + にしては, い-adjective + にしては, な-adjective (without な) + にしては, noun + にしては. E.g.: 安いにしては美味しい (\"for something cheap, it's tasty\")."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "にしては"
+            }
+          ],
+          "example": "初心者にしては"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "にしては"
+            }
+          ],
+          "example": "書くにしては"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "にしては"
+            }
+          ],
+          "example": "書いたにしては"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "にしては"
+            }
+          ],
+          "example": "安いにしては"
+        }
+      ]
+    },
     "nuance_tags": [
-      "concession",
       "comparison"
     ],
     "usage_contexts": [
@@ -4851,7 +4964,7 @@
       "written",
       "casual-friends"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "な-adjectives are excluded. The record's line 'adjetivo-な (sem な) + にしては' generates 静かにしては, a well-formed string whose live reading is 静かに + して + は (the て-form of 静かにする plus は, 'as for making it quiet'), not the surprise-against-a-standard construction taught here; a generator would emit correct Japanese carrying the wrong construction. Dropping な is what creates the collision, and keeping な (静かなにしては) is not supported by the record, so neither shape can be encoded and the base is left out. The same block applies to the sibling にしても for the identical reason. The record's な-adjective formation line needs human review.",
     "nuance": {
       "pt-BR": "Use にしては só quando o ponto de comparação é concreto e específico (uma pessoa, um padrão dado). Quando a base de comparação é mais geral ou normativa, o natural é わりに (\"para\", \"relativamente a\"). Armadilha PT: o \"para\" do português engloba os dois, então cuidado para não usar にしては onde a comparação não é com algo nomeado.",
       "en": "Use にしては only when the point of comparison is concrete and specific (a person, a given standard). When the basis of comparison is more general or normative, the natural choice is わりに ('for', 'relative to'). PT trap: the 'for' of Portuguese covers both, so be careful not to use にしては where the comparison is not with something named."
@@ -5767,17 +5880,91 @@
       "pt-BR": "Verbo na forma comum + らしい; adjetivo-い + らしい; adjetivo-な + らしい (sem だ); substantivo + らしい (sem だ).",
       "en": "Verb in plain form + らしい; い-adjective + らしい; な-adjective + らしい (without だ); noun + らしい (without だ)."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "らしい"
+            }
+          ],
+          "example": "書くらしい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "らしい"
+            }
+          ],
+          "example": "書いたらしい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いらしい"
+            }
+          ],
+          "example": "書かないらしい"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "らしい"
+            }
+          ],
+          "example": "高いらしい"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "らしい"
+            }
+          ],
+          "example": "静からしい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "らしい"
+            }
+          ],
+          "example": "インフルエンザらしい"
+        }
+      ]
+    },
     "nuance_tags": [
       "hearsay",
-      "conjecture",
-      "comparison"
+      "conjecture"
     ],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Cuidado: o substantivo e o adjetivo-な ligam-se direto a らしい, sem だ (彼はインフルエンザらしい). Diferente de ようだ/みたいだ (impressão baseada no que você mesmo percebe) e de そうだ de boato (que apenas repassa); らしい mistura boato com uma leve avaliação pessoal. Há ainda um らしい diferente que significa \"típico de\", \"bem cara de\" (男らしい = \"másculo\").",
       "en": "Careful: a noun and a na-adjective link directly to らしい, without だ (彼はインフルエンザらしい). Unlike ようだ/みたいだ (an impression based on what you yourself perceive) and the hearsay そうだ (which merely passes it along); らしい mixes hearsay with a slight personal assessment. There is also a different らしい meaning 'typical of', 'very much like' (男らしい = 'manly')."
@@ -6282,16 +6469,27 @@
       "pt-BR": "Verbo na forma de dicionário + しかない (não há outra opção senão); substantivo + しかない (só há X). Com substantivos contáveis e quantidades é onde aparece o sentido de 'só tem/restam'.",
       "en": "Verb in dictionary form + しかない (there's no other option but to); noun + しかない (there's only X). It's with countable nouns and quantities that the 'there's only / what's left is' meaning appears."
     },
-    "formation_steps": null,
-    "nuance_tags": [
-      "obligation",
-      "emphasis"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "しかない"
+            }
+          ],
+          "example": "書くしかない"
+        }
+      ]
+    },
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": "Noun branch withheld: the pattern's ない is the negative of the existential ある, so the correct form depends on animacy (千円しかない but 学生しかいない). The base enum has only `noun` and carries no animate/inanimate distinction, so a noun-accepting rule appending しかない generates 学生しかない, and one appending しかいない would generate 千円しかいない — either way the rule manufactures the error. The record's formation field scopes the noun use to countable nouns and quantities, which does not exclude animates, and it never documents しかいない, so nothing in the record can narrow the base. The verb branch (dictionary form + しかない) is unaffected and is emitted.",
     "nuance": {
       "pt-BR": "Lembre que しか sempre exige verbo negativo (o ない já cumpre esse papel), então a frase tem forma negativa mas sentido de exclusividade. Armadilha PT: não traduza por 'apenas' de forma neutra; com verbo o tom é de resignação ('não tem outro jeito a não ser...'), algo mais forte que um simples 'só'.",
       "en": "Remember that しか always requires a negative verb (the ない already fulfills this role), so the sentence has a negative form but an exclusivity meaning. PT trap: don't translate it as a neutral 'only'; with a verb the tone is one of resignation ('there's no choice but to...'), something stronger than a simple 'just'."
@@ -6855,14 +7053,9 @@
       "en": "Verb stem (ます-form without ます) + たて. E.g.: 焼く → 焼きたて (freshly baked); 作る → 作りたて (freshly made); 洗う → 洗いたて (freshly washed). To qualify a noun, の is inserted: 焼きたてのパン."
     },
     "formation_steps": null,
-    "nuance_tags": [
-      "completion"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": "～たて is lexically restricted and the base enum cannot say so. The morphology (masu-stem + たて) is correct, but the record limits the pattern to a few established production verbs and names its own counterexample: 食べたて is not said. Its formation field licenses only 焼く→焼きたて, 作る→作りたて, 洗う→洗いたて. The base enum has no value for a closed lexical verb set, so any `verb` sequence generates 食べたて, したて and きたて alongside the three good forms. No steps are emitted rather than ship that over-generation. Also not covered by any op: the の-linking used when ～たて qualifies a noun (焼きたてのパン).",
     "nuance": {
       "pt-BR": "Limita-se a poucos verbos consagrados de ações com resultado físico e perceptível; não se diz 食べたて, por exemplo. Armadilha PT: é diferente de ～たばかり, que marca 'acabei de fazer' no tempo de modo geral; ～たて enfatiza a qualidade fresca do objeto resultante, não apenas que a ação foi recente.",
       "en": "It is limited to a few established verbs of actions with a physical, perceptible result; you don't say 食べたて, for example. PT trap: it differs from ～たばかり, which marks 'I just did' in time generally; ～たて emphasizes the fresh quality of the resulting object, not merely that the action was recent."
@@ -9198,17 +9391,41 @@
       "pt-BR": "Verbo na forma de dicionário + つもりでした para o que se pretendia fazer; com a negativa, Verbo-ない + つもりでした ('pretendia não fazer'). A diferença para つもりです é só o tempo: でした joga a intenção para o passado frustrado.",
       "en": "Verb in dictionary form + つもりでした for what one intended to do; with the negative, Verb-ない + つもりでした ('I intended not to do'). The difference from つもりです is only the tense: でした pushes the intention into the frustrated past."
     },
-    "formation_steps": null,
-    "nuance_tags": [
-      "intention",
-      "politeness"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written",
-      "business"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "つもりでした"
+            }
+          ],
+          "example": "書くつもりでした"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いつもりでした"
+            }
+          ],
+          "example": "書かないつもりでした"
+        }
+      ]
+    },
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": "〜たつもりでした excluded. The record carries it only in its nuance field and explicitly marks it as a different meaning — a mistaken conviction (\"eu achava que tinha feito, mas não tinha\") rather than the unrealized plan this point is labelled for — while the formation field lists only dictionary form and Verbo-ない. A variant object carries no meaning or label field, so a past-form branch cannot be held apart from the two that realize the point's stated sense, and unmarked it lets a generator answer \"eu pretendia escrever\" with 書いたつもりでした. It belongs to a record covering the mistaken-conviction つもり, not to this one.",
     "nuance": {
       "pt-BR": "O peso está no plano que falhou; por isso soa estranho usar quando a intenção de fato se cumpriu. Armadilha PT: há ainda o uso 〜たつもりでした (forma た + つもり), que é 'eu achava que tinha feito (mas não tinha)', uma convicção equivocada, diferente do simples plano não realizado.",
       "en": "The weight is on the plan that failed; that's why it sounds strange to use it when the intention was actually fulfilled. PT trap: there is also the use 〜たつもりでした (た form + つもり), which is 'I thought I had done it (but I hadn't)', a mistaken conviction, different from the simple unrealized plan."
@@ -9250,13 +9467,91 @@
       "pt-BR": "Verbo na forma ている + うちに (enquanto a ação ocorre); adjetivo い + うちに; adjetivo な + な + うちに; substantivo + の + うちに. Com verbo na negativa ない + うちに, expressa 'antes que (deixe de ser assim)', como em 雨が降っていないうちに ('antes que comece a chover').",
       "en": "Verb in ている form + うちに (while the action is happening); い-adjective + うちに; な-adjective + な + うちに; noun + の + うちに. With a verb in the negative ない + うちに, it expresses 'before (it stops being so)', as in 雨が降っていないうちに ('before it starts to rain')."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いるうちに"
+            }
+          ],
+          "example": "話しているうちに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いうちに"
+            }
+          ],
+          "example": "降らないうちに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いないうちに"
+            }
+          ],
+          "example": "降っていないうちに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "うちに"
+            }
+          ],
+          "example": "高いうちに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "to-attributive"
+            },
+            {
+              "op": "append",
+              "token": "うちに"
+            }
+          ],
+          "example": "静かなうちに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のうちに"
+            }
+          ],
+          "example": "学生のうちに"
+        }
+      ]
+    },
     "nuance_tags": [],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Registro neutro. Contraste com 間に (aida ni), que apenas delimita um intervalo sem o senso de urgência de aproveitar a oportunidade. Armadilha PT: a construção negativa 降っていないうちに traduz-se por 'antes de começar a chover', não 'enquanto não chove'; o português inverte a lógica, então preste atenção ao sentido de 'aproveitar antes que mude'.",
       "en": "Neutral register. Contrast with 間に (aida ni), which merely delimits an interval without the sense of seizing the opportunity that うちに has. PT trap: the negative construction 降っていないうちに translates as 'before it starts raining', not 'while it's not raining'; Portuguese reverses the logic, so pay attention to the sense of 'taking advantage before it changes'."

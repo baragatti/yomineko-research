@@ -1,0 +1,546 @@
+{
+  "batch": 7,
+  "points": [
+    {
+      "slug": "gram:irassharu",
+      "resolution": "unavailable",
+      "resolution_note": "The record is a LEXICAL entry, not an attachment pattern. structure_pattern is 'いらっしゃる', forms[] has the single entry 'いらっしゃる', and the explanation says it 'substitui, de uma vez, tres verbos: いる, 行く e 来る'. Its formation field is a conjugation list for an irregular godan verb (stem いらっしゃ-, polite いらっしゃいます not *いらっしゃります, て-form いらっしゃって, greeting いらっしゃいませ). That derivation is SUPPLETION - one whole lexeme replacing another - and no op in the closed enum performs a lexical substitution, nor does the base enum have a value naming the verb being replaced. The only sequence the enum can express is the withheld one, to-te-form + いらっしゃる, and that builds a DIFFERENT construction: 〜ていらっしゃる, the honorific of 〜ている, which the record mentions in one trailing clause as a secondary combination. Every test base yields a well-formed string, so nothing ungrammatical is produced in isolation - but the variant object has no label field, so a variant sitting in THIS record's formation_steps asserts 'this is how you form いらっしゃる = estar/ir/vir honorifico'. Executed, that teaches the learner that the honorific of 来る is 来ていらっしゃる (has come and is here, progressive/resultative) rather than いらっしゃいます, and it can never reach the record's own headline use お客様がいらっしゃいます, which has no preceding verb at all. That is F5: a rule that makes the learner PRODUCE the wrong form. It also over-generates onto いる itself (*いていらっしゃる), the very verb いらっしゃる replaces. House precedent is settled and identical: gram:itashimasu ('suppletive humble counterpart of する, not a productive suffix') and gram:gp-19 (する) both took steps_unavailable on exactly this ground.",
+      "steps_unavailable": "Suppletive honorific verb, not a productive attachment pattern. いらっしゃる REPLACES the lexemes いる / 行く / 来る outright; the closed op enum has no lexical-substitution op and the base enum has no value for the verb being replaced, so the record's own pattern (お客様がいらっしゃいます, いらっしゃいませ) is not derivable. The record's formation section is an irregular-conjugation list (stem いらっしゃ-, polite いらっしゃいます not いらっしゃります, て-form いらっしゃって), not build steps. The only expressible sequence, verb + to-te-form + 'いらっしゃる', builds the separate construction 〜ていらっしゃる (honorific of 〜ている, mentioned once as a trailing combination note): it yields the progressive/resultative meaning instead of 'estar / ir / vir', cannot generate the headline use, and licenses *いていらっしゃる on the very verb いらっしゃる supplants. Same treatment as gram:itashimasu and gram:gp-19.",
+      "self_test": [
+        {
+          "input": "書く [withheld rule: verb + to-te-form + いらっしゃる]",
+          "output": "書いていらっしゃる — well-formed, but it is the honorific of 書いている (progressive), not this record's estar / ir / vir",
+          "ok": false
+        },
+        {
+          "input": "食べる [withheld rule]",
+          "output": "食べていらっしゃる — honorific progressive, wrong construction for this record",
+          "ok": false
+        },
+        {
+          "input": "する [withheld rule]",
+          "output": "していらっしゃる — honorific progressive, wrong construction for this record",
+          "ok": false
+        },
+        {
+          "input": "くる [withheld rule]",
+          "output": "来ていらっしゃる — teaches this as the honorific of 来る; the record's honorific of 来る is いらっしゃいます",
+          "ok": false
+        },
+        {
+          "input": "いる [withheld rule; いる is one of the three verbs the record says いらっしゃる replaces]",
+          "output": "*いていらっしゃる — ungrammatical",
+          "ok": false
+        },
+        {
+          "input": "record headline use お客様がいらっしゃいます (no preceding verb)",
+          "output": "unreachable from any op sequence — no lexical-substitution op exists",
+          "ok": false
+        },
+        {
+          "input": "高い / 静か / 学生",
+          "output": "n/a — record documents no adjective or noun base",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "slug": "gram:koro-goro",
+      "resolution": "partial",
+      "resolution_note": "Bare ごろ is dropped; every ころ variant is kept and completed. The defect is real and is the animacy-split shape named in the brief: the record's formation says ごろ 'liga-se direto a uma expressao de tempo pontual' (7時ごろ, 来週ごろ), i.e. it selects a SEMANTIC SUBCLASS of noun - a point in time. The base enum has only noun, so base noun + append ごろ accepts every noun and generates 学生ごろ, for which the record itself supplies the correct alternative (学生のころ), and it generates 3時間ごろ - the exact string the record's nuance field forbids in writing ('Nao diga 3時間ごろ'). A rule that produces the one form its own record exists to prevent is F5, so bare ごろ goes to steps_unavailable rather than being re-stated. The ころ half needs no such restriction: ころ is a temporal NOUN, so it takes the ordinary adnominal frames, and the record spells them out ('depois de substantivo + の ou depois de verbo/adjetivo na forma simples'). I aligned those to gram:toki, the exact structural twin (とき and ころ are both temporal nouns), which already carries verb-dictionary / verb-た / i-adjective-attributive / na-adjective-attributive / noun+の. Two changes to the withheld set: the i-adjective variant now goes through to-attributive instead of a bare append, matching toki / aida / baai-wa (same output, house-consistent op); and the missing na-adjective base is added as to-attributive + ころ (静かなころ), which the record licenses under 'adjetivo na forma simples' - ころ is a noun, so a na-adjective must be attributive before it, exactly as in 静かなとき / 静かな間. The record's own 子供だったころ is kept as a second noun variant. Nothing else in the withheld set was wrong: all six ころ rows execute cleanly on every test base.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "書くころ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "日本に来たころ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-attributive"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "若いころ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "to-attributive"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "静かなころ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のころ"
+            }
+          ],
+          "example": "学生のころ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だったころ"
+            }
+          ],
+          "example": "子供だったころ"
+        }
+      ],
+      "steps_unavailable": "Bare ごろ (7時ごろ, 来週ごろ) is excluded. The record restricts it to point-in-time expressions - 'liga-se direto a uma expressao de tempo pontual, sem particula' - which is a semantic subclass of noun, and the base enum has no time-point-noun value. Declaring base noun accepts every noun and generates 学生ごろ, for which the record itself gives the correct form 学生のころ, and 3時間ごろ, which the record's nuance field bans outright ('use ごろ so para pontos no tempo e ぐらい/くらい para quantidades e duracoes. Nao diga 3時間ごろ'). The ころ variants above carry no such restriction and are complete. ごろ vs ころ is also a reading split the step ops cannot express: the same 頃 is read ごろ after a time point and ころ after an adnominal.",
+      "self_test": [
+        {
+          "input": "書く [verb + to-dictionary + ころ]",
+          "output": "書くころ",
+          "ok": true
+        },
+        {
+          "input": "食べる [verb + to-dictionary + ころ]",
+          "output": "食べるころ",
+          "ok": true
+        },
+        {
+          "input": "する [verb + to-dictionary + ころ]",
+          "output": "するころ",
+          "ok": true
+        },
+        {
+          "input": "くる [verb + to-dictionary + ころ]",
+          "output": "くるころ",
+          "ok": true
+        },
+        {
+          "input": "書く [verb + to-ta-form + ころ]",
+          "output": "書いたころ",
+          "ok": true
+        },
+        {
+          "input": "食べる [verb + to-ta-form + ころ]",
+          "output": "食べたころ",
+          "ok": true
+        },
+        {
+          "input": "する [verb + to-ta-form + ころ]",
+          "output": "したころ",
+          "ok": true
+        },
+        {
+          "input": "くる [verb + to-ta-form + ころ]",
+          "output": "来たころ",
+          "ok": true
+        },
+        {
+          "input": "高い [i-adjective + to-attributive + ころ]",
+          "output": "高いころ",
+          "ok": true
+        },
+        {
+          "input": "静か [na-adjective + to-attributive + ころ]",
+          "output": "静かなころ",
+          "ok": true
+        },
+        {
+          "input": "学生 [noun + のころ]",
+          "output": "学生のころ — matches the record's own example",
+          "ok": true
+        },
+        {
+          "input": "学生 [noun + だったころ]",
+          "output": "学生だったころ",
+          "ok": true
+        },
+        {
+          "input": "学生 [WITHHELD rule: noun + ごろ — now excluded]",
+          "output": "学生ごろ — ungrammatical; the record's own fix is 学生のころ. Rule removed.",
+          "ok": false
+        },
+        {
+          "input": "3時間 [WITHHELD rule: noun + ごろ — now excluded]",
+          "output": "3時間ごろ — the exact string the record's nuance field forbids. Rule removed.",
+          "ok": false
+        }
+      ]
+    },
+    {
+      "slug": "gram:koto-ga-aru",
+      "resolution": "fixed",
+      "resolution_note": "Token fix on variant 3 only; variants 1 and 2 were already correct and are re-emitted unchanged. to-nai-stem in this corpus is the な-inclusive stem (書く -> 書かな, 食べる -> 食べな, する -> しな, くる -> 来な), so the withheld token 'ないことがある' doubled the な and produced 書かなないことがある, 食べなないことがある, しなないことがある, 来なないことがある; the variant's own stated example 行かないことがある was unreachable. Correct token is 'いことがある', which is what the same corpus already uses for this shape in gram:n3-nai-koto-wa-nai (to-nai-stem + 'いことはない') and gram:n3-koto-ni-shite-iru (to-nai-stem + 'いことにしている'). With that token every test base lands on the form the record's formation field names. Both of the record's documented roles are covered and kept in separate variants, as the record insists they must be ('O tempo do verbo muda totalmente o sentido'): た-form + ことがある = experience (見たことがある), dictionary or plain-negative + ことがある = occasional occurrence (遅れることがある, 行かないことがある). The record is verb-only - no adjective or noun base appears anywhere in it - so 高い / 静か / 学生 get no variant.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "ことがある"
+            }
+          ],
+          "example": "見たことがある"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことがある"
+            }
+          ],
+          "example": "遅れることがある"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いことがある"
+            }
+          ],
+          "example": "行かないことがある"
+        }
+      ],
+      "self_test": [
+        {
+          "input": "書く [to-ta-form + ことがある]",
+          "output": "書いたことがある",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-ta-form + ことがある]",
+          "output": "食べたことがある",
+          "ok": true
+        },
+        {
+          "input": "する [to-ta-form + ことがある]",
+          "output": "したことがある",
+          "ok": true
+        },
+        {
+          "input": "くる [to-ta-form + ことがある]",
+          "output": "来たことがある",
+          "ok": true
+        },
+        {
+          "input": "書く [to-dictionary + ことがある]",
+          "output": "書くことがある",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-dictionary + ことがある]",
+          "output": "食べることがある",
+          "ok": true
+        },
+        {
+          "input": "する [to-dictionary + ことがある]",
+          "output": "することがある",
+          "ok": true
+        },
+        {
+          "input": "くる [to-dictionary + ことがある]",
+          "output": "くることがある",
+          "ok": true
+        },
+        {
+          "input": "書く [to-nai-stem 書かな + いことがある]",
+          "output": "書かないことがある",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-nai-stem 食べな + いことがある]",
+          "output": "食べないことがある",
+          "ok": true
+        },
+        {
+          "input": "する [to-nai-stem しな + いことがある]",
+          "output": "しないことがある",
+          "ok": true
+        },
+        {
+          "input": "くる [to-nai-stem 来な + いことがある]",
+          "output": "来ないことがある",
+          "ok": true
+        },
+        {
+          "input": "行く [to-nai-stem 行かな + いことがある] — the record's own example",
+          "output": "行かないことがある — now reachable; the withheld token gave 行かなないことがある",
+          "ok": true
+        },
+        {
+          "input": "高い / 静か / 学生",
+          "output": "n/a — record documents verb bases only",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "slug": "gram:koto-ni-naru",
+      "resolution": "fixed",
+      "resolution_note": "Same な-doubling defect, same fix. to-nai-stem is the な-inclusive stem, so the withheld token 'ないことになる' produced 書かなないことになる / 食べなないことになる / しなないことになる / 来なないことになる, and the record's own 行かないことになった was unreachable. Token corrected to 'いことになる', which resolves the corpus's internal contradiction: gram:n3-koto-ni-natte-iru already encodes the identical negative as to-nai-stem + 'いことになっている', so the two records now agree. Variant 1 (to-dictionary + ことになる) was correct and is unchanged; together the two variants cover exactly what the record's formation field states, '[verbo na forma dicionario ou negativa simples] + ことになる'. Verb-only, so no adjective or noun variant. SECOND, SEPARATE REPAIR - nuance_tags: the record carried humility + politeness, which misreads the enum. This point's register is ['plain'] and the surface pattern is plain ことになる; it is not a keigo form, so a consumer filtering nuance_tags=humility to assemble a keigo lesson would pull in a plain N4 pattern. The record's actual content is a change of state arrived at externally ('ficou decidido que / acabou sendo que' - the なる is literally a becoming) plus a pragmatic muting of self-assertion ('soa mais modesto e impessoal... menos egocentrico'). Retagged change-of-state + softening, both derived from that text. This came from one checker rather than two, but it is checkable against the record's own register field rather than a judgement call, so I acted on it; usage_contexts is re-emitted unchanged.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことになる"
+            }
+          ],
+          "example": "結婚することになる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いことになる"
+            }
+          ],
+          "example": "行かないことになる"
+        }
+      ],
+      "nuance_tags": [
+        "change-of-state",
+        "softening"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "business",
+        "formal-email",
+        "announcement"
+      ],
+      "self_test": [
+        {
+          "input": "書く [to-dictionary + ことになる]",
+          "output": "書くことになる",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-dictionary + ことになる]",
+          "output": "食べることになる",
+          "ok": true
+        },
+        {
+          "input": "する [to-dictionary + ことになる]",
+          "output": "することになる",
+          "ok": true
+        },
+        {
+          "input": "くる [to-dictionary + ことになる]",
+          "output": "くることになる",
+          "ok": true
+        },
+        {
+          "input": "書く [to-nai-stem 書かな + いことになる]",
+          "output": "書かないことになる",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-nai-stem 食べな + いことになる]",
+          "output": "食べないことになる",
+          "ok": true
+        },
+        {
+          "input": "する [to-nai-stem しな + いことになる]",
+          "output": "しないことになる",
+          "ok": true
+        },
+        {
+          "input": "くる [to-nai-stem 来な + いことになる]",
+          "output": "来ないことになる",
+          "ok": true
+        },
+        {
+          "input": "行く [to-nai-stem 行かな + いことになる] — the record's own example",
+          "output": "行かないことになる — now reachable; the withheld token gave 行かなないことになる",
+          "ok": true
+        },
+        {
+          "input": "高い / 静か / 学生",
+          "output": "n/a — record documents verb bases only",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "slug": "gram:koto-ni-suru",
+      "resolution": "fixed",
+      "resolution_note": "Same な-doubling defect on variant 2, same fix. The withheld token 'ないことにする' gave 飲まなないことにする while the variant's own example claimed 飲まないことにする; corrected to 'いことにする', matching the N3 twin gram:n3-koto-ni-shite-iru, which already uses to-nai-stem + 'いことにしている'. The corpus was carrying two encodings of one pattern and now carries one. Variants 1 and 3 were correct and are unchanged: the record's formation field states all three shapes explicitly - dictionary + ことにする, the 〜ない form + ことにする, and ことにしている for a decision that has hardened into a personal rule ('faco questao de'). I did NOT add a negative counterpart to variant 3 (*いことにしている): the record documents the negative and the している habit separately and never combines them, and gram:n3-koto-ni-shite-iru already owns that combination at N3, so inventing it here would be supplying grammar the record does not carry. Verb-only, so 高い / 静か / 学生 get no variant.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことにする"
+            }
+          ],
+          "example": "勉強することにする"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いことにする"
+            }
+          ],
+          "example": "飲まないことにする"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことにしている"
+            }
+          ],
+          "example": "走ることにしている"
+        }
+      ],
+      "self_test": [
+        {
+          "input": "書く [to-dictionary + ことにする]",
+          "output": "書くことにする",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-dictionary + ことにする]",
+          "output": "食べることにする",
+          "ok": true
+        },
+        {
+          "input": "する [to-dictionary + ことにする]",
+          "output": "することにする",
+          "ok": true
+        },
+        {
+          "input": "くる [to-dictionary + ことにする]",
+          "output": "くることにする",
+          "ok": true
+        },
+        {
+          "input": "書く [to-nai-stem 書かな + いことにする]",
+          "output": "書かないことにする",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-nai-stem 食べな + いことにする]",
+          "output": "食べないことにする",
+          "ok": true
+        },
+        {
+          "input": "する [to-nai-stem しな + いことにする]",
+          "output": "しないことにする",
+          "ok": true
+        },
+        {
+          "input": "くる [to-nai-stem 来な + いことにする]",
+          "output": "来ないことにする",
+          "ok": true
+        },
+        {
+          "input": "飲む [to-nai-stem 飲まな + いことにする] — the variant's own example",
+          "output": "飲まないことにする — now reachable; the withheld token gave 飲まなないことにする",
+          "ok": true
+        },
+        {
+          "input": "書く [to-dictionary + ことにしている]",
+          "output": "書くことにしている",
+          "ok": true
+        },
+        {
+          "input": "食べる [to-dictionary + ことにしている]",
+          "output": "食べることにしている",
+          "ok": true
+        },
+        {
+          "input": "する [to-dictionary + ことにしている]",
+          "output": "することにしている",
+          "ok": true
+        },
+        {
+          "input": "くる [to-dictionary + ことにしている]",
+          "output": "くることにしている",
+          "ok": true
+        },
+        {
+          "input": "高い / 静か / 学生",
+          "output": "n/a — record documents verb bases only",
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

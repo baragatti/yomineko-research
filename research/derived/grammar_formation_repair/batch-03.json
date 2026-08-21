@@ -1,0 +1,175 @@
+{
+  "batch": 3,
+  "points": [
+    {
+      "slug": "gram:hou-ga-ii",
+      "resolution": "fixed",
+      "resolution_note": "Single-token defect in the negative variant, confirmed by execution. Under the settled to-nai-stem = na-inclusive stem convention, 食べる -> 食べな, so the token \"ないほうがいい\" re-supplied a な the op had already produced: *食べなないほうがいい / *書かなないほうがいい / *しなないほうがいい / *こなないほうがいい. Token corrected to \"いほうがいい\", which yields 書かないほうがいい / 食べないほうがいい / しないほうがいい / こないほうがいい and matches the record's own formation text (\"Verbo na forma negativa curta ない + ほうがいい -> 食べないほうがいい\") and the encoding already used for the same construction in gram:gp-51. The other four variants were executed unchanged and are correct: to-ta-form + ほうがいい gives 書いた/食べた/した/きたほうがいい (the record's \"forma た\" advice, including the past-form trap its nuance field flags), i-adjective to-attributive gives 高いほうがいい, na-adjective to-attributive gives 静かなほうがいい, noun + の gives 学生のほうがいい. The record's optional politeness alternant (いい -> いいです) is a substitution on the tail, not a separate build path, so it gets no variant.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "食べたほうがいい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いほうがいい" }
+          ],
+          "example": "食べないほうがいい"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "安いほうがいい"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "静かなほうがいい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "の" },
+            { "op": "append", "token": "ほうがいい" }
+          ],
+          "example": "学生のほうがいい"
+        }
+      ],
+      "self_test": [
+        { "input": "書く [verb, affirmative advice variant]", "output": "書いたほうがいい", "ok": true },
+        { "input": "食べる [verb, affirmative advice variant]", "output": "食べたほうがいい", "ok": true },
+        { "input": "する [verb, affirmative advice variant]", "output": "したほうがいい", "ok": true },
+        { "input": "くる [verb, affirmative advice variant]", "output": "きたほうがいい", "ok": true },
+        { "input": "書く [verb, negative advice variant]", "output": "書かないほうがいい", "ok": true },
+        { "input": "食べる [verb, negative advice variant]", "output": "食べないほうがいい", "ok": true },
+        { "input": "する [verb, negative advice variant]", "output": "しないほうがいい", "ok": true },
+        { "input": "くる [verb, negative advice variant]", "output": "こないほうがいい", "ok": true },
+        { "input": "高い [i-adjective]", "output": "高いほうがいい", "ok": true },
+        { "input": "静か [na-adjective]", "output": "静かなほうがいい", "ok": true },
+        { "input": "学生 [noun]", "output": "学生のほうがいい", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:mada-te-imasen",
+      "resolution": "unavailable",
+      "resolution_note": "Both checkers are right and the defect is not repairable inside the closed op enum. The point IS the pre-posed まだ: structure_pattern is まだ～ていません, the formation reads \"まだ + forma て do verbo + いません\", and every example in the record carries it (まだ食べていません, まだ決めていません). The op enum has no prepend operation and `append` only writes to the tail, so no step sequence can place まだ in front of the built form. The withheld steps executed to 書いていません / 食べていません / していません / きていません — grammatical, but that is the plain polite negative progressive (\"nao estou comendo\"), not \"ainda nao\"; shipping them under this record's label would make the learner PRODUCE the wrong sentence for the meaning, which is the F5 failure this pass exists to stop. Keeping only the post-base half is not a partial either: there is no base whose output is correct, so nothing safe remains to emit. This also restores consistency with the rest of the corpus, where gram:mada, gram:mou, gram:amari-nai, gram:nakanaka-nai, gram:zenzen-nai and gram:o-ni-naru all take steps_unavailable for exactly this reason.",
+      "steps_unavailable": "The pattern is まだ + te-form + いません. The closed op enum has no prepend/prefix operation and `append` writes only to the tail, so the pre-posed adverb まだ cannot be encoded. まだ is the whole content of this point: without it the steps emit 書いていません / 食べていません / していません / きていません, which is the plain polite negative progressive, not the 'ainda nao' pattern, so a consumer generating from partial steps and labelling the result with this record's meaning would be wrong. No base yields a correct form, so no variant is emitted. Same treatment as gram:mada, gram:mou, gram:amari-nai, gram:nakanaka-nai and gram:zenzen-nai.",
+      "self_test": [
+        { "input": "書く [withheld steps, executed to show why they are refused]", "output": "書いていません — grammatical, but the record requires まだ書いていません", "ok": false },
+        { "input": "食べる [withheld steps]", "output": "食べていません — grammatical, but the record requires まだ食べていません", "ok": false },
+        { "input": "する [withheld steps]", "output": "していません — grammatical, but the record requires まだしていません", "ok": false },
+        { "input": "くる [withheld steps]", "output": "きていません — grammatical, but the record requires まだきていません", "ok": false }
+      ]
+    },
+    {
+      "slug": "gram:mae-ni",
+      "resolution": "partial",
+      "resolution_note": "The verb variant survives execution unchanged and is correct: to-dictionary + まえに gives 書くまえに / 食べるまえに / するまえに / くるまえに, which is exactly the record's \"SEMPRE a forma de dicionario\" warning (never 寝たまえに). The noun variant is correct for ordinary nouns (食事のまえに, 学生のまえに) and the record's nuance field makes the の obligatory there (\"nao esqueca o の (食事のまえに, nao 食事まえに)\"), so it is kept. What cannot be carried is the third attachment the record's own formation states: \"Com periodo de tempo: numero + contador + まえに -> 三年（さんねん）まえに\", explicitly WITHOUT の. Number+counter phrases are nouns, so base:\"noun\" accepts them and the variant would generate *三年のまえに; and the base enum has no quantity/counter value, so a separate variant cannot be addressed to them either — inventing a base value is forbidden. The exclusion is therefore named in steps_unavailable rather than encoded. The mandated test bases hide this (学生のまえに is fine), which is why the extra 三年 row is included in self_test as the excluded case.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "まえに" }
+          ],
+          "example": "食べるまえに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のまえに" }
+          ],
+          "example": "食事のまえに"
+        }
+      ],
+      "steps_unavailable": "Excluded from the noun variant: time-quantity expressions (number + counter, e.g. 三年 / 五分 / 一週間 / 二日). The record's formation gives two distinct noun attachments — noun + の + まえに (食事のまえに) and number + counter + まえに with NO の (三年まえに, 'tres anos atras') — and the base enum has no value for a quantity/counter phrase, so the split cannot be encoded: base 'noun' accepts 三年 and would generate *三年のまえに. The emitted noun variant must not be applied to number+counter phrases; those take まえに directly. Verb attachment (always dictionary form) and ordinary-noun attachment are fully covered by the variants above.",
+      "self_test": [
+        { "input": "書く [verb]", "output": "書くまえに", "ok": true },
+        { "input": "食べる [verb]", "output": "食べるまえに", "ok": true },
+        { "input": "する [verb]", "output": "するまえに", "ok": true },
+        { "input": "くる [verb]", "output": "くるまえに", "ok": true },
+        { "input": "学生 [noun]", "output": "学生のまえに", "ok": true },
+        { "input": "三年 [number+counter — the case excluded by steps_unavailable]", "output": "三年のまえに — wrong; the record requires 三年まえに, which is why quantity nouns are excluded rather than covered", "ok": false }
+      ]
+    },
+    {
+      "slug": "gram:naide",
+      "resolution": "fixed",
+      "resolution_note": "Both checkers state the steps themselves are correct, and re-execution confirms it: under the settled to-nai-stem = na-inclusive stem convention, 書く -> 書かな + いで = 書かないで, 食べる -> 食べな + いで = 食べないで, する -> しな + いで = しないで, くる -> こな + いで = こないで. That matches structure_pattern ～ないで, the explanation's own 食べないで / 寝ないで, and formation[\"en\"] (\"Take the verb in the short negative form (the ない-form) and add で\"). So the steps are re-emitted unchanged, and the repair is the flag the earlier pass owed: THE CORPUS RECORD IS CORRUPT. In corpus/grammar/n5.json, gram:naide (id 103) has a formation[\"pt-BR\"] that is gram:naa's text — \"Basta acrescentar なあ ao fim de uma frase ou palavra: いいなあ, 寒いなあ...\" — and never mentions ないで. That field is learner-facing and currently teaches なあ under a ないで heading; it must be re-authored from formation[\"en\"] before this point ships, and any validator cross-checking steps against formation prose will mismatch here until it is. Scope note: only the verb base is emitted. ないで does not attach to i-adjective, na-adjective or noun bases in this record, and the ないでください mentioned in passing in the explanation is a pointer to a separate pattern — the record's `forms` array carries ないで only, so giving ください its own variant here would be an F2 out-of-scope citation.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いで" }
+          ],
+          "example": "食べないで"
+        }
+      ],
+      "self_test": [
+        { "input": "書く [verb]", "output": "書かないで", "ok": true },
+        { "input": "食べる [verb]", "output": "食べないで", "ok": true },
+        { "input": "する [verb]", "output": "しないで", "ok": true },
+        { "input": "くる [verb]", "output": "こないで", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:naku-temo-ii",
+      "resolution": "fixed",
+      "resolution_note": "The critical finding is right about the na-adjective and noun variants and wrong about nothing else. Under the settled to-nai-stem = na-inclusive stem convention the verb and i-adjective variants execute correctly and are kept verbatim: 書かな + くてもいい = 書かなくてもいい, 食べな -> 食べなくてもいい, しな -> しなくてもいい, こな -> こなくてもいい, 高くな -> 高くなくてもいい. The na-adjective and noun variants were the defect: reaching 静かじゃな / 学生じゃな requires inserting the copula negative じゃ, which no op in the closed enum performs, so to-nai-stem on a bare noun or na-adjective emits *学生くてもいい / *静かくてもいい — the intended form survived only in the `example` field, which is exactly the F5 shape where a plausible example masks a rule that generates something wrong. Both are repaired the way the rest of the corpus already encodes the copula negative, by direct append: gram:nakereba-ikenai uses noun + append \"じゃなければいけない\", gp-62 uses noun + append \"じゃなくて\". Here that gives 学生じゃなくてもいい and 静かじゃなくてもいい, matching the record's own 日本語じゃなくてもいい. No op is invented and no base is invented.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "くてもいい" }
+          ],
+          "example": "行かなくてもいい"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-nai-stem" },
+            { "op": "append", "token": "くてもいい" }
+          ],
+          "example": "高くなくてもいい"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "じゃなくてもいい" }
+          ],
+          "example": "静かじゃなくてもいい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "じゃなくてもいい" }
+          ],
+          "example": "日本語じゃなくてもいい"
+        }
+      ],
+      "self_test": [
+        { "input": "書く [verb]", "output": "書かなくてもいい", "ok": true },
+        { "input": "食べる [verb]", "output": "食べなくてもいい", "ok": true },
+        { "input": "する [verb]", "output": "しなくてもいい", "ok": true },
+        { "input": "くる [verb]", "output": "こなくてもいい", "ok": true },
+        { "input": "高い [i-adjective]", "output": "高くなくてもいい", "ok": true },
+        { "input": "静か [na-adjective]", "output": "静かじゃなくてもいい", "ok": true },
+        { "input": "学生 [noun]", "output": "学生じゃなくてもいい", "ok": true }
+      ]
+    }
+  ]
+}

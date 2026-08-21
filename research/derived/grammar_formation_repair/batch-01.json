@@ -1,0 +1,129 @@
+{
+  "batch": 1,
+  "points": [
+    {
+      "slug": "gram:demo",
+      "resolution": "partial",
+      "resolution_note": "Both findings are minor and both are about REPORTING, not about a wrong step: the emitted noun rule is sound, but steps_unavailable was left \"\" so nothing recorded that the record's first documented role had been consciously skipped. The repair keeps the one safe variant (noun + でも, the softening-suggestion particle, the record's own コーヒーでも) and fills steps_unavailable for the sentence-initial conjunction role, in the same style the author already used for gram:donna / gram:doushite / gram:douyatte. Executed: 学生 -> 学生でも, well-formed; no other mandated base is nominal, so nothing else is generated. One honest limit worth recording: 学生でも is grammatical but reads as concessive 'even a student', not as the record's softening suggestion, which favours offerable nouns (コーヒーでも, お茶でも). No wrong FORM is produced, so this does not defeat the variant, but a drill builder that labels every noun + でも as 'suggestion' would mislabel some outputs. nuance_tags kept as [concession, softening]: with the conjunction role now named in steps_unavailable, 'concession' is anchored in the record instead of dangling against the steps.",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "でも" }
+          ],
+          "example": "コーヒーでも"
+        }
+      ],
+      "steps_unavailable": "Sentence-initial conjunction role not expressible. The record documents two constructions and its formation field leads with the conjunction one (でも、〜 = 'but / however'), which opens a NEW sentence and applies no operation to any base. The closed op enum only transforms a base and suffixes tokens to it; there is no prepend operation, so no ordered step list can place でも in front of a clause, and appending it instead would yield a different construction. Only role (2), noun + でも, is emitted. The indefinite pronouns the same formation lists (誰でも, 何でも, いつでも) are a closed lexicalized set rather than a productive rule; the emitted noun rule reproduces their surface but not their 'any-' meaning, so they are not modelled as a separate variant.",
+      "nuance_tags": ["concession", "softening"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "self_test": [
+        { "input": "学生 (noun, mandated)", "output": "学生でも", "ok": true },
+        { "input": "コーヒー (noun, record's own example)", "output": "コーヒーでも", "ok": true },
+        { "input": "書く (verb)", "output": "(no variant emitted for base verb)", "ok": true },
+        { "input": "食べる (verb)", "output": "(no variant emitted for base verb)", "ok": true },
+        { "input": "する (verb)", "output": "(no variant emitted for base verb)", "ok": true },
+        { "input": "くる (verb)", "output": "(no variant emitted for base verb)", "ok": true },
+        { "input": "高い (i-adjective)", "output": "(no variant emitted for base i-adjective)", "ok": true },
+        { "input": "静か (na-adjective)", "output": "(no variant emitted for base na-adjective)", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:deshou",
+      "resolution": "fixed",
+      "resolution_note": "Under-derivation from the record, exactly as both findings state. The record's formation reads 'Verbo (forma simples) + でしょう' / 'Verb (plain form) + でしょう', and plain form includes the past, so a to-ta-form verb variant is added alongside the existing to-dictionary one. That is the pair the sibling record gram:darou already carries for identical wording ('Verb in plain form + だろう', with 行っただろう listed), and this record's own explanation calls でしょう the polite form of だろう, so the derivation comes from the record rather than from memory. Deliberately NOT extended to the i-adjective: this record narrows that base to 'Adjetivo-い (forma de dicionário)' / 'I-adjective (dictionary form)', so no 高かったでしょう variant is emitted even though だろう would license one. Noun and na-adjective append the token bare, which respects the record's explicit ban on a copula before でしょう (×高いですでしょう, and by the same logic no だ). Executed all seven mandated bases: eleven forms, all well-formed, nothing ungrammatical.",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "でしょう" }
+          ],
+          "example": "学生でしょう"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "でしょう" }
+          ],
+          "example": "静かでしょう"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "でしょう" }
+          ],
+          "example": "高いでしょう"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "でしょう" }
+          ],
+          "example": "行くでしょう"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "でしょう" }
+          ],
+          "example": "行ったでしょう"
+        }
+      ],
+      "nuance_tags": ["conjecture", "politeness"],
+      "usage_contexts": ["spoken", "written", "announcement"],
+      "self_test": [
+        { "input": "書く (verb)", "output": "書くでしょう [to-dictionary]; 書いたでしょう [to-ta-form]", "ok": true },
+        { "input": "食べる (verb)", "output": "食べるでしょう [to-dictionary]; 食べたでしょう [to-ta-form]", "ok": true },
+        { "input": "する (verb)", "output": "するでしょう [to-dictionary]; したでしょう [to-ta-form]", "ok": true },
+        { "input": "くる (verb)", "output": "くるでしょう [to-dictionary]; きたでしょう [to-ta-form]", "ok": true },
+        { "input": "高い (i-adjective)", "output": "高いでしょう (dictionary form only, as the record narrows it; no past variant emitted)", "ok": true },
+        { "input": "静か (na-adjective)", "output": "静かでしょう (no だ inserted, per the record)", "ok": true },
+        { "input": "学生 (noun)", "output": "学生でしょう (no だ inserted, per the record)", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:ga-arimasu",
+      "resolution": "unavailable",
+      "resolution_note": "The rejected rule is genuinely unsafe and cannot be narrowed inside the closed enums, so no steps are emitted. The defect both checkers raised is real: base:\"noun\" + append があります, executed on the mandated noun 学生, emits 学生があります, the precise error this record exists to prevent (its own nuance calls it 'o erro clássico de quem fala português'). The restriction that would fix it is animacy; the base enum's only nominal value is the unrestricted `noun`, inventing an inanimate-noun base is forbidden, and no combination of the closed ops filters a base by semantic class. A `partial` is not available either, because there is exactly one candidate base and it is the unsafe one. Emitting nothing is the right outcome here: the animacy restriction stays in the record's explanation, formation and nuance, where a human reader gets it, instead of being silently dropped from a machine rule that a drill generator would execute blind. nuance_tags left empty: the closed tag enum has no value for existence or animacy, and none of the available tags describes this point.",
+      "steps_unavailable": "Animacy restriction not expressible. The record's formation is 'Substantivo (coisa) + が + あります' / 'Noun (thing) + が + あります', and the animate/inanimate split is the entire content of the point ('Use あります para coisas que não se movem por vontade própria; para pessoas e animais, usa-se います'). The base enum's only nominal value is the unrestricted `noun`, so every rule the enum can express also accepts 学生, 犬, 田中さん and emits 学生があります / 犬があります, which must be 学生がいます / 犬がいます. No inanimate-noun base exists and none may be invented, and no closed op filters a base by semantic class, so no step list is emitted. Same reason as gram:gp-12 (its plain-form counterpart), and mirrored in gram:ga-imasu / gram:gp-13.",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "学生 (animate noun, mandated)", "output": "(no steps emitted; the rejected rule noun -> append があります would yield 学生があります, ungrammatical for an animate noun, must be 学生がいます)", "ok": true },
+        { "input": "本 (inanimate noun, record's own example)", "output": "(no steps emitted; the rejected rule would yield 本があります, which is correct, but the enum cannot restrict the base to this class, which is why nothing is emitted)", "ok": true },
+        { "input": "書く / 食べる / する / くる (verbs)", "output": "(not applicable: the construction takes a noun; no variant emitted for any base)", "ok": true },
+        { "input": "高い (i-adjective) / 静か (na-adjective)", "output": "(not applicable: the construction takes a noun; no variant emitted for any base)", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:ga-imasu",
+      "resolution": "unavailable",
+      "resolution_note": "Mirror of gram:ga-arimasu, resolved the same way. The rejected rule base:\"noun\" + append がいます happens to pass the mandated noun (学生がいます is correct), which is why one checker graded it major rather than critical, but it accepts the whole inanimate class and emits 本がいます / 机がいます / 車がいます, all of which require あります. The record delimits the base as explicitly as its counterpart does ('Substantivo (ser vivo)' / 'Noun (living thing)', 'Para o oposto (objetos, coisas sem vida) usa-se あります/ある'), and that restriction is animacy, which the base enum cannot carry. The second checker's structural point is what settles it, and it is the reason a rule that looks fine on the mandated test noun still cannot ship: ga-imasu and ga-arimasu were given byte-identical step shapes differing only in the appended token, so to a consumer reading formation_steps alone the two points are indistinguishable, the single contrast the pair exists to teach disappears, and a generator can freely produce both halves of the error pair. Emitting nothing keeps the contrast where it is actually stated, in the record's prose. nuance_tags left empty: no value in the closed enum covers existence or animacy.",
+      "steps_unavailable": "Animacy restriction not expressible, mirroring gram:ga-arimasu. The record's formation is '(Lugar + に) + Substantivo (ser vivo) + が + います' / 'Noun (living thing)', and its nuance is entirely about Japanese choosing the existence verb by animacy. The base enum offers only the unrestricted `noun`, so every expressible rule also accepts 本, 机, 車 and emits 本がいます, which must be 本があります. Worse, the only expressible rule here is shape-identical to the one for gram:ga-arimasu apart from the appended token, so the います/あります contrast the pair exists to teach would be invisible to any consumer reading formation_steps alone. No step list is emitted; the restriction stays in the record's explanation, formation and nuance.",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "学生 (animate noun, mandated)", "output": "(no steps emitted; the rejected rule noun -> append がいます would yield 学生がいます, which is correct, but only for the animate class, which the enum cannot express)", "ok": true },
+        { "input": "本 (inanimate noun, the record's own contrast case)", "output": "(no steps emitted; the rejected rule would yield 本がいます, ungrammatical, must be 本があります)", "ok": true },
+        { "input": "書く / 食べる / する / くる (verbs)", "output": "(not applicable: the construction takes a noun; no variant emitted for any base)", "ok": true },
+        { "input": "高い (i-adjective) / 静か (na-adjective)", "output": "(not applicable: the construction takes a noun; no variant emitted for any base)", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:gp-12",
+      "resolution": "unavailable",
+      "resolution_note": "Plain-form counterpart of gram:ga-arimasu, resolved identically and for the same reason. Both checkers agree and both are right: base:\"noun\" + append がある executed on the mandated noun 学生 emits 学生がある, the record's own headline mistake (correct: 学生がいる), and the record states the rule it violates in so many words ('o japonês escolhe o verbo de existência pela natureza do sujeito'). One checker pre-empts the obvious objection that every pattern carries semantics, and the distinction holds: gp-142 になる also takes base=noun but genuinely accepts any noun (本になる is fine), whereas here the record itself excludes a class. The exclusion is animacy, the base enum has only the unrestricted `noun`, and inventing a base value is forbidden, so nothing is emitted. A second, independent reason is worth recording: the record flags ある's suppletive negative ない ('não existe ×あらない'), a lexical irregularity that no ordered sequence of closed ops derives, so even the negative half of this record's formation would be out of reach. nuance_tags left empty: the closed enum carries no existence or animacy value.",
+      "steps_unavailable": "Animacy restriction not expressible. The record's formation is '(Lugar + に) + Substantivo (coisa) + が + ある / あります', that is Noun (THING), and its nuance states the constraint outright: 'o japonês escolhe o verbo de existência pela natureza do sujeito, ある/あります para coisas sem vida e いる/います para seres vivos'. The base enum's only nominal value is the unrestricted `noun`, so every expressible rule also accepts 学生 and emits 学生がある, exactly the error the record is written to prevent (correct: 学生がいる). No inanimate-noun base exists and none may be invented. Plain-form counterpart of gram:ga-arimasu, mirrored by gram:gp-13. Secondary and independent: the same formation covers ある's suppletive negative ない (×あらない), a lexical irregularity that no ordered sequence of closed ops can derive.",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "学生 (animate noun, mandated)", "output": "(no steps emitted; the rejected rule noun -> append がある would yield 学生がある, ungrammatical, must be 学生がいる)", "ok": true },
+        { "input": "本 (inanimate noun, record's own example)", "output": "(no steps emitted; the rejected rule would yield 本がある, which is correct, but the enum cannot restrict the base to this class)", "ok": true },
+        { "input": "書く / 食べる / する / くる (verbs)", "output": "(not applicable: the construction takes a noun; no variant emitted for any base)", "ok": true },
+        { "input": "高い (i-adjective) / 静か (na-adjective)", "output": "(not applicable: the construction takes a noun; no variant emitted for any base)", "ok": true }
+      ]
+    }
+  ]
+}

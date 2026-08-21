@@ -1,0 +1,372 @@
+{
+  "batch": 2,
+  "points": [
+    {
+      "slug": "gram:gp-13",
+      "resolution": "unavailable",
+      "resolution_note": "Confirmed defect, not expressible. The withheld variant [noun, append \"がいる\"] is morphologically right and semantically unguarded: the record's formation reads \"Substantivo (ser vivo) + が + いる\" and its nuance states flatly that a robot or a car takes ある while a person takes いる, so the animacy filter IS the content of the point. The base enum offers only unrestricted `noun`; every noun-accepting variant licenses 本がいる / 車がいる, the exact production this record exists to prevent. The prescribed test noun 学生 masks it (学生がいる is correct), which is why the pair 車 / ロボット named in the record's own nuance is the honest test. No base value, op, or token narrows `noun` to animates, and inventing one is out of scope, so no steps are emitted. Mirrors gram:gp-12 (がある), whose restriction is the same split seen from the other side; the two must be withheld together or a consumer joining them gets a rule set that licenses both 学生がある and 本がいる.",
+      "steps_unavailable": "Animacy restriction that the closed base enum cannot carry. The record's formation is \"Substantivo (ser vivo) + が + いる\" and its nuance fixes the contrast: ロボット and 車 take ある, a person takes いる. The only available base for the host is unrestricted `noun`, so any variant of the shape [noun, append がいる] generates 本がいる / 車がいる — ungrammatical for this existence verb, and additionally a homophone trap, since 本がいる reads as 本が要る (\"needs a book\"). Since the animate/inanimate split is the entire content of the point, a rule that drops it is worse than no rule. Paired with gram:gp-12 (がある), which carries the mirror-image restriction.",
+      "self_test": [
+        {
+          "input": "学生 (noun, animate) via withheld [noun, append がいる]",
+          "output": "学生がいる",
+          "ok": true
+        },
+        {
+          "input": "車 (noun, inanimate — named in the record's nuance as an ある-taker)",
+          "output": "車がいる (record requires 車がある)",
+          "ok": false
+        },
+        {
+          "input": "本 (noun, inanimate)",
+          "output": "本がいる (record requires 本がある; also parses as 本が要る)",
+          "ok": false
+        },
+        {
+          "input": "書く / 食べる / する / くる / 高い / 静か",
+          "output": "no variant emitted",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-24",
+      "resolution": "fixed",
+      "resolution_note": "The finding is right and the fix is two-part. (1) The op was wrong for the job: `replace-ending` with token くない is blind string surgery on the final い, so it cannot know about a lexical irregular and turns いい into the form the record bans. The corpus already encodes this exact stem with the inflection op instead — gram:i-adjectives [to-adverbial, append ない] -> 高くない, and the same shape at gp-35 (append なかった), gp-62 (append なくて), gp-81 (append はない) — so variant 1 now matches its own paradigm siblings. to-adverbial is lexicon-mediated (gp-141: 早い -> 早く), which is what lets it return よく for いい. (2) Because the record NAMES the exception, it must also survive in the machine layer rather than living only inside an op implementation, so variant 2 pins it in the arrow convention the corpus already uses for ending-conditioned rewrites (gram:sa い→さ, cha-ikenai-ja-ikenai て→ちゃ / で→じゃ). Variant 2 is the authority for any adjective ending in いい and produces よくない even if a consumer implements to-adverbial as a naive い→く rewrite. No na-adjective or noun variant: the record excludes them outright (\"adjetivos-な ... não usam essa regra; eles fazem o negativo com じゃない\"), so that is a stated exclusion, not a coverage gap. です is politeness on top of the finished form, not part of this plain/casual formation, so it is not appended.",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-adverbial"
+            },
+            {
+              "op": "append",
+              "token": "ない"
+            }
+          ],
+          "example": "高くない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "replace-ending",
+              "token": "いい→よくない"
+            }
+          ],
+          "example": "よくない"
+        }
+      ],
+      "self_test": [
+        {
+          "input": "高い via variant 1",
+          "output": "高く -> 高くない",
+          "ok": true
+        },
+        {
+          "input": "寒い via variant 1 (record's second example)",
+          "output": "寒く -> 寒くない",
+          "ok": true
+        },
+        {
+          "input": "いい via variant 2 (the exception the record names)",
+          "output": "よくない",
+          "ok": true
+        },
+        {
+          "input": "いい via variant 1 (to-adverbial is lexicon-mediated: いい -> よく)",
+          "output": "よく -> よくない",
+          "ok": true
+        },
+        {
+          "input": "いい via the WITHHELD replace-ending くない, for contrast",
+          "output": "いくない (banned by the record)",
+          "ok": false
+        },
+        {
+          "input": "静か (na-adjective)",
+          "output": "no variant — record routes na-adjectives to じゃない",
+          "ok": true
+        },
+        {
+          "input": "学生 (noun)",
+          "output": "no variant — record routes nouns to じゃない",
+          "ok": true
+        },
+        {
+          "input": "書く / 食べる / する / くる (verbs)",
+          "output": "no variant — base not licensed",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-28",
+      "resolution": "partial",
+      "resolution_note": "The withheld verb variant is correct and is kept unchanged — both checkers said so; what was missing is the record's own SECOND formation and any record of why it is absent. The record says outright \"Há duas formações conforme o que vem antes do に\", and the second one takes an action (verbal) noun: 買い物に行く, 勉強に行く. That half is genuinely not expressible: the base enum's only nominal value is unrestricted `noun`, and [noun, append に行く] applied to the prescribed test noun 学生 yields *学生に行く — which is not this pattern at all (it reads as a destination に, the very confusion the record's nuance warns against). gram:gp-19 in this same corpus already wrote out exactly this reasoning for noun+する; the omission is now recorded here the same way instead of being silent. On くる the verb variant returns きに行く: well-formed by the rule and rated fine by the verification pass, though the record's own use of 来る is as the movement verb (食べに来る), not as the purpose verb, and the record neither licenses nor forbids the reverse.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "に行く"
+            }
+          ],
+          "example": "食べに行く"
+        }
+      ],
+      "steps_unavailable": "Only the first of the record's two formations is encoded. The second — action (verbal) noun + に行く (買い物に行く, 勉強に行く) — is omitted because the base enum has no verbal-noun value: a variant on unrestricted `noun` would license *学生に行く, turning the purpose に into the destination に that the record's nuance explicitly tells the learner to keep apart. Same reasoning as gram:gp-19, which withholds the noun+する half of its compounding rule for the same reason. Also not encoded: the substitution of 来る / 帰る for 行く, which the record mentions (食べに来る) — that is a choice of head verb, not an operation on the base.",
+      "self_test": [
+        {
+          "input": "書く",
+          "output": "書き -> 書きに行く",
+          "ok": true
+        },
+        {
+          "input": "食べる",
+          "output": "食べ -> 食べに行く",
+          "ok": true
+        },
+        {
+          "input": "する",
+          "output": "し -> しに行く (record's own 勉強しに行く confirms the shape)",
+          "ok": true
+        },
+        {
+          "input": "くる",
+          "output": "き -> きに行く (well-formed; semantically marginal)",
+          "ok": true
+        },
+        {
+          "input": "学生 (noun) — why the second formation is withheld",
+          "output": "学生に行く (destination reading, not this pattern)",
+          "ok": false
+        },
+        {
+          "input": "高い / 静か",
+          "output": "no variant — base not licensed",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-41",
+      "resolution": "fixed",
+      "resolution_note": "Two repairs, both read straight off the record. (1) The missing tail: this record's structure_pattern is たり～たりする, its single forms entry is たりたりする, its formation says \"fechando com する\", and its nuance names the する-less string as the learner error to avoid. The withheld steps appended only り, so the machine layer generated precisely the incomplete production the point is written to prevent. The token is now りする, matching the sibling gram:gp-144 (見たりする) — note that gram:gp-143 and gram:tari-tari legitimately stop at り, because their structure_pattern (～たり / たり～たり) has no する in it; this one does. (2) Two bases the record licenses were missing: its formation ends \"Também funciona com adjetivos e substantivos para listar estados que se alternam\", and the だったり shape for na-adjective and noun is already encoded for the sibling points gram:gp-143 and gram:tari-tari (静かだったり, 学生だったり); here they carry this record's closing する. Not encoded, and not a defect: the repetition of two たり constituents is a clause-level pattern, while a step list builds one constituent at a time — the single-item output 書いたりする is a complete, grammatical predicate and matches the record's own \"lista não exaustiva\" definition. The tense/politeness of the final する (します / した) is downstream conjugation of the finished form, not part of this formation.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "りする"
+            }
+          ],
+          "example": "飲んだりする"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "りする"
+            }
+          ],
+          "example": "暑かったりする"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だったりする"
+            }
+          ],
+          "example": "静かだったりする"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だったりする"
+            }
+          ],
+          "example": "学生だったりする"
+        }
+      ],
+      "self_test": [
+        {
+          "input": "書く",
+          "output": "書いた -> 書いたりする",
+          "ok": true
+        },
+        {
+          "input": "食べる",
+          "output": "食べた -> 食べたりする",
+          "ok": true
+        },
+        {
+          "input": "する",
+          "output": "した -> したりする",
+          "ok": true
+        },
+        {
+          "input": "くる",
+          "output": "きた -> きたりする",
+          "ok": true
+        },
+        {
+          "input": "飲む (record's own example)",
+          "output": "飲んだ -> 飲んだりする",
+          "ok": true
+        },
+        {
+          "input": "高い",
+          "output": "高かった -> 高かったりする",
+          "ok": true
+        },
+        {
+          "input": "暑い (record's own example 暑かったり寒かったり)",
+          "output": "暑かった -> 暑かったりする",
+          "ok": true
+        },
+        {
+          "input": "静か",
+          "output": "静かだったりする",
+          "ok": true
+        },
+        {
+          "input": "学生",
+          "output": "学生だったりする",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "slug": "gram:gp-7",
+      "resolution": "fixed",
+      "resolution_note": "The finding is right: under the settled な-inclusive reading of to-nai-stem (書く -> 書かな), variants 2 and 4 appended a second な and generated *書かなない / *書かななかった (and on the other bases the declared `verb` base reaches: *食べなない, *しなない, *こなない), invisible by eye because the stored examples were the correct 書かない / 書かなかった. Fixed by trimming the tokens to い and かった, which makes this record identical in shape to gram:gp-6 — the ichidan half of the same four-form paradigm, already merged as [to-dictionary] / [to-nai-stem, い] / [to-ta-form] / [to-nai-stem, かった]. Variants 1 and 3 were already correct and are unchanged. Two things stay delegated to the ops, correctly: the う-column vowel shifts and the 買う -> 買わない exception belong to to-nai-stem, and 行く -> 行った, which the record flags as irregular, belongs to to-ta-form — which is exactly why the inflection ops are the right choice here over string surgery. The base enum has no godan value, so the steps also run on 食べる / する / くる; because the ops are class-aware, every output is correct Japanese, so the wider base under-specifies the record's scope without licensing anything wrong. Separately, usage_contexts is corrected: the record's register is [plain, casual] and its explanation defines the dictionary form as how the verb appears in the dictionary, so these plain forms are written as well as spoken; the sibling gram:i-adjectives, same register and same four-form shape, already carries \"written\". \"casual-friends\" is kept because the record's nuance says to use these with friends and family and prefer ます in formal situations.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            }
+          ],
+          "example": "書く"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "い"
+            }
+          ],
+          "example": "書かない"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            }
+          ],
+          "example": "書いた"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "かった"
+            }
+          ],
+          "example": "書かなかった"
+        }
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "casual-friends"
+      ],
+      "self_test": [
+        {
+          "input": "書く v1/v2/v3/v4",
+          "output": "書く / 書かな+い=書かない / 書いた / 書かな+かった=書かなかった",
+          "ok": true
+        },
+        {
+          "input": "飲む v1/v2/v3/v4 (record's own example)",
+          "output": "飲む / 飲まない / 飲んだ / 飲まなかった",
+          "ok": true
+        },
+        {
+          "input": "買う v2 (record's -う -> -わ exception, carried by to-nai-stem)",
+          "output": "買わな+い=買わない",
+          "ok": true
+        },
+        {
+          "input": "行く v3 (record's irregular past, carried by to-ta-form)",
+          "output": "行った",
+          "ok": true
+        },
+        {
+          "input": "食べる v1/v2/v3/v4",
+          "output": "食べる / 食べな+い=食べない / 食べた / 食べな+かった=食べなかった",
+          "ok": true
+        },
+        {
+          "input": "する v1/v2/v3/v4",
+          "output": "する / しない / した / しなかった",
+          "ok": true
+        },
+        {
+          "input": "くる v1/v2/v3/v4",
+          "output": "くる / こない / きた / こなかった",
+          "ok": true
+        },
+        {
+          "input": "書く v2 under the WITHHELD token ない, for contrast",
+          "output": "書かな+ない=*書かなない",
+          "ok": false
+        },
+        {
+          "input": "高い / 静か / 学生",
+          "output": "no variant — base not licensed",
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

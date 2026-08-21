@@ -1,0 +1,203 @@
+{
+  "batch": 6,
+  "points": [
+    {
+      "slug": "gram:gp-136",
+      "resolution": "fixed",
+      "resolution_note": "Both checkers agreed the defect is in nuance_tags, not in the steps. \"hearsay\" is imported from the neighbouring pattern this record's own nuance tells the learner to distinguish it from: \"Comparado a と言われている ('diz-se que', baseado no que se fala), と考えられている enfatiza um raciocínio/conclusão\". Dropped to [\"conjecture\"]; gram:gp-137 keeps \"hearsay\" on the strength of its own \"diz-se que\" gloss, so the collision the finding named is gone. The four original variants execute cleanly on every applicable base and are re-emitted unchanged (this is a tag repair, not a steps repair, and both checkers said so explicitly). One addition, on the だろう/でしょう under-derivation precedent named in the brief: the record's formation reads \"[Oração na forma simples] + と + 考えられている\", plain form includes the past, and \"it is believed that X happened\" is the everyday case for this pattern in the history/science/news writing the explanation cites — so the verb base gains a to-ta-form branch, exactly as gram:darou carries both to-dictionary and to-ta-form. Not extended to the adjective/noun pasts: forms[] carries only the non-past citation and the sibling gp-137 enumerates only the non-past, so those would be supplied from outside the record. The record's other documented variations (考えられていた past, 考えられる punctual) are tail inflections of the same construction rather than distinct build paths, and are left to the conjugation layer.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "と考えられている" }
+          ],
+          "example": "起こると考えられている"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "と考えられている" }
+          ],
+          "example": "起こったと考えられている"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "none" },
+            { "op": "append", "token": "と考えられている" }
+          ],
+          "example": "丸いと考えられている"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "none" },
+            { "op": "append", "token": "だと考えられている" }
+          ],
+          "example": "安全だと考えられている"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "none" },
+            { "op": "append", "token": "だと考えられている" }
+          ],
+          "example": "原因だと考えられている"
+        }
+      ],
+      "nuance_tags": ["conjecture"],
+      "usage_contexts": ["written", "academic"],
+      "self_test": [
+        { "input": "書く / variant 1 (verb, to-dictionary + と考えられている)", "output": "書くと考えられている", "ok": true },
+        { "input": "食べる / variant 1", "output": "食べると考えられている", "ok": true },
+        { "input": "する / variant 1", "output": "すると考えられている", "ok": true },
+        { "input": "くる / variant 1", "output": "来ると考えられている", "ok": true },
+        { "input": "書く / variant 2 (verb, to-ta-form + と考えられている)", "output": "書いたと考えられている", "ok": true },
+        { "input": "食べる / variant 2", "output": "食べたと考えられている", "ok": true },
+        { "input": "する / variant 2", "output": "したと考えられている", "ok": true },
+        { "input": "くる / variant 2", "output": "来たと考えられている", "ok": true },
+        { "input": "高い / variant 3 (i-adjective, none + と考えられている)", "output": "高いと考えられている", "ok": true },
+        { "input": "静か / variant 4 (na-adjective, none + だと考えられている)", "output": "静かだと考えられている", "ok": true },
+        { "input": "学生 / variant 5 (noun, none + だと考えられている)", "output": "学生だと考えられている", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:gp-150",
+      "resolution": "fixed",
+      "resolution_note": "Three findings. Two agreed on the same defect: withheld variants 5 and 6 append なら, and the record's own formation text says the opposite of what they encode — \"Com substantivos/adjetivos な usa-se geralmente なら, não ば\". structure_pattern is ～れば and forms[] carries only れば, so a generator asked for the 〜ば conditional of 学生 was emitting a different point's construction: 静かなら / 学生なら are perfectly grammatical and contain no ば at all. Both dropped; gram:nara (batch-20) already owns noun+なら and na-adjective+なら with all four bases, so nothing is lost from the corpus, only the mis-attribution. The finding notes gram:ba (batch-11) encodes the same duplicate and should get the same treatment. What remains is exactly the four attachment shapes the record's formation lists — godan/ichidan/irregular through to-conditional-ba, the 〜なければ negative, the い-adjective ければ, and the い-adjective negative くなければ — so the point's own scope is now fully covered and no gap note is warranted. The third finding is about the op enum's definition rather than about this record: it flagged that to-nai-stem is used in two senses corpus-wide and that under the 未然形 reading this variant emits *書かければ. Under the な-inclusive reading settled in the brief (書く → 書かな), 書かな + ければ = 書かなければ and the variant is correct as authored; that finding needs a written definition of the op, not a change here.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [{ "base": "verb", "op": "to-conditional-ba" }],
+          "example": "書けば"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ければ" }
+          ],
+          "example": "行かなければ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [{ "base": "i-adjective", "op": "to-conditional-ba" }],
+          "example": "高ければ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "なければ" }
+          ],
+          "example": "高くなければ"
+        }
+      ],
+      "nuance_tags": ["condition"],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "書く / variant 1 (verb, to-conditional-ba)", "output": "書けば", "ok": true },
+        { "input": "食べる / variant 1", "output": "食べれば", "ok": true },
+        { "input": "する / variant 1", "output": "すれば", "ok": true },
+        { "input": "くる / variant 1", "output": "来れば", "ok": true },
+        { "input": "書く / variant 2 (verb, to-nai-stem 書かな + ければ)", "output": "書かなければ", "ok": true },
+        { "input": "食べる / variant 2 (食べな + ければ)", "output": "食べなければ", "ok": true },
+        { "input": "する / variant 2 (しな + ければ)", "output": "しなければ", "ok": true },
+        { "input": "くる / variant 2 (こな + ければ)", "output": "来なければ", "ok": true },
+        { "input": "高い / variant 3 (i-adjective, to-conditional-ba)", "output": "高ければ", "ok": true },
+        { "input": "高い / variant 4 (i-adjective, to-adverbial 高く + なければ)", "output": "高くなければ", "ok": true },
+        { "input": "静か / DROPPED withheld variant 5 (na-adjective + なら)", "output": "静かなら", "ok": false },
+        { "input": "学生 / DROPPED withheld variant 6 (noun + なら)", "output": "学生なら", "ok": false }
+      ]
+    },
+    {
+      "slug": "gram:gp-68",
+      "resolution": "unavailable",
+      "resolution_note": "Critical, and not repairable inside the closed enums. The record documents two attachment shapes and both are selectional. (1) time-point noun + ごろ: 3時ごろ, 来週ごろ — \"Anexa-se direto ao substantivo de tempo\". (2) life-stage noun + の + the UNVOICED ころ: 子供のころ — rendaku fires only on direct suffixation, so の and ご cannot co-occur. The base enum's only nominal value is `noun`, unrestricted, so [noun → append ごろ] licenses *学生ごろ, *本ごろ and *五人ごろ; the last is the exact error the record's nuance exists to prevent (\"ごろ é só para PONTOS no tempo... Não use ごろ com números de coisas\"). This is the same shape as the があります/がいます animacy case the brief names as the clearest unavailable: the entire pedagogical content of the entry is the selectional restriction, and the base vocabulary cannot carry it. I am overruling the one finding that called this fixable by adding a third [noun → append のころ] variant. It repairs nothing — the ごろ rule still stands beside it licensing *学生ごろ, and the new rule is itself unrestricted over `noun`, so it licenses *3時のころ and *本のころ. The two are also not two spellings of one rule that a consumer could pick between on phonological grounds: ごろ is approximation (\"around 3\") and のころ is \"back in the days when\", different meanings, so there is no derivable criterion for choosing. Worth flagging for the human review loop: 学生 is the only noun in the mandated seven-base test set and it happens to be a life-stage noun, so 学生のころ comes out grammatical and the のころ half of the defect is invisible to the standard test — it only surfaces when the test widens to a clock time or a plain object noun, which is why I extended the self_test below with 3時 and 本 from the record's own examples.",
+      "steps_unavailable": "ごろ selects a time-point noun (clock time, day, week, era) and the alternate shape のころ selects a life-stage noun; the base enum's only nominal value is `noun`, which is unrestricted, so any rule that accepts a noun licenses *学生ごろ, *本ごろ and *五人ごろ — the very error the record's nuance is written to prevent (ごろ for points in time; ぐらい/くらい for quantities and counts). The record's own third example 子供のころ additionally needs の plus the unvoiced ころ, because rendaku fires only on direct suffixation, so a single noun rule cannot produce both attachment shapes without producing the wrong one for the other class. Adding a second [noun → append のころ] variant does not fix this: it leaves *学生ごろ licensed and adds *3時のころ. No base value expresses \"time-point noun\", and none was invented.",
+      "self_test": [
+        { "input": "学生 / withheld variant 1 (noun + ごろ)", "output": "学生ごろ", "ok": false },
+        { "input": "学生 / withheld variant 2 (noun + ごろに)", "output": "学生ごろに", "ok": false },
+        { "input": "本 (extended, plain object noun) / withheld variant 1", "output": "本ごろ", "ok": false },
+        { "input": "3時 (extended, record's own example) / withheld variant 1", "output": "3時ごろ", "ok": true },
+        { "input": "3時 (extended) / proposed fix variant (noun + のころ)", "output": "3時のころ", "ok": false },
+        { "input": "本 (extended) / proposed fix variant (noun + のころ)", "output": "本のころ", "ok": false },
+        { "input": "学生 / proposed fix variant (noun + のころ)", "output": "学生のころ", "ok": true },
+        { "input": "書く / 食べる / する / くる / 高い / 静か", "output": "no variant applies — the record's only base is nominal", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:gp-75",
+      "resolution": "partial",
+      "resolution_note": "Critical and half-repairable. Withheld variants 1, 2 and 4 claimed the whole い- and な-adjective classes and execute literally to *高がる, *静かがる and *高がっている, none of which are Japanese words. The record carries the restriction the steps dropped: がる \"transforma um adjetivo de SENTIMENTO ou DESEJO em um verbo\", and every adjective it names is a psych or desire adjective (寒い, 怖い, ほしい, いやだ). The base enum has no value for that subclass and no combination of the existing ops narrows it, so the adjective half goes to steps_unavailable rather than getting cosmetically narrowed steps. The verb half is safe and fully productive and is emitted: to-masu-stem + たがる runs correctly on all four verb classes (書きたがる, 食べたがる, したがる, 来たがる), and the chained て-form + いる variant likewise. Encoding the たがる path verb-first rather than through the record's own たい → たがる derivation is deliberate, not a shortcut: たい is itself a desire い-adjective, so deriving through it would need exactly the base value that does not exist, while the masu-stem path produces identical output from a base the enum does have. Note also that the record's own nuance documents a case-frame shift (ほしい takes が, 欲しがる takes を); that is argument structure, not a build step, and there is no op for it — it stays in the prose fields.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "たがる" }
+          ],
+          "example": "食べたがる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "たがる" },
+            { "op": "to-te-form" },
+            { "op": "append", "token": "いる" }
+          ],
+          "example": "食べたがっている"
+        }
+      ],
+      "steps_unavailable": "The い-adjective and な-adjective bases of 〜がる cannot be encoded. がる attaches only to adjectives of feeling or desire — the record names 寒い, 怖い, ほしい, いやだ — and is not productive over property adjectives, so an unrestricted [i-adjective → replace-ending がる] licenses *高がる and *大きがる, [na-adjective → append がる] licenses *静かがる, and the chained ている form licenses *高がっている. The base enum has no psych/desire-adjective value and no op narrows the class, so only the verb path (〜たがる, from the record's 食べたい → 食べたがる) is emitted. The adjective examples the record teaches (寒がる, 怖がる, ほしがる, いやがる) remain available as listed lexical forms in the prose fields; they are simply not machine-derivable from a bare adjective base.",
+      "nuance_tags": ["desire"],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "書く / variant 1 (verb, to-masu-stem 書き + たがる)", "output": "書きたがる", "ok": true },
+        { "input": "食べる / variant 1 (食べ + たがる)", "output": "食べたがる", "ok": true },
+        { "input": "する / variant 1 (し + たがる)", "output": "したがる", "ok": true },
+        { "input": "くる / variant 1 (き + たがる)", "output": "来たがる", "ok": true },
+        { "input": "書く / variant 2 (書きたがる → て-form + いる)", "output": "書きたがっている", "ok": true },
+        { "input": "食べる / variant 2", "output": "食べたがっている", "ok": true },
+        { "input": "する / variant 2", "output": "したがっている", "ok": true },
+        { "input": "くる / variant 2", "output": "来たがっている", "ok": true },
+        { "input": "高い / DROPPED withheld variant 1 (i-adjective, replace-ending がる)", "output": "高がる", "ok": false },
+        { "input": "高い / DROPPED withheld variant 4 (i-adjective, replace-ending がる → て-form + いる)", "output": "高がっている", "ok": false },
+        { "input": "静か / DROPPED withheld variant 2 (na-adjective + がる)", "output": "静かがる", "ok": false },
+        { "input": "学生", "output": "no variant applies — the record has no noun base", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:gp-83",
+      "resolution": "partial",
+      "resolution_note": "Both checkers found the same thing and it is a scope defect, not a false formation rule: the まい variant is correct for all four verb classes and the two のように/のような variants do not belong to this point. The record's structure_pattern is not a pattern at all — it is an editorial instruction ordering the のように half stripped, because 〜のように/〜のような already exist as gp-153/gp-154 (and gp-77). The withheld steps for them are byte-identical to what batch-15 emitted for gram:gp-153 ({noun, append, \"のような\"}) and gram:gp-154 ({noun, append, \"のように\"}), so the derived layer was carrying the same rule four times over, two of those copies hanging off a point labelled \"decerto não / recusa firme (まい)\". Both dropped. That also resolves the second checker's tagging contradiction: usage_contexts [\"written\",\"literary\"] was derived from the まい half only and was wrong for のように, which the three records that own it correctly tag \"spoken\"; with only まい left the list is right as it stands, since the record's nuance says まい is \"bastante formal e literário (jornais, discursos, escrita)\". nuance_tags loses \"comparison\" for the same reason and keeps \"intention\" and \"conjecture\", the two readings the record gives まい (negative volition/refusal, and strong negative conjecture). Writing steps over an upstream record that flags itself as broken is F3, so recording it rather than laundering it: gp-83's own label, forms, explanation, formation, nuance and refs.label_en still need the human fix its structure_pattern describes, and the same concatenation bug is suspected on gp-152. Resolution is \"partial\" rather than \"fixed\" because of one thing the record documents that the steps genuinely cannot carry — the ichidan and irregular stem alternates 食べまい / すまい / こまい.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "まい" }
+          ],
+          "example": "行くまい"
+        }
+      ],
+      "steps_unavailable": "The ichidan and irregular stem alternates the record documents (食べる → 食べまい, する → すまい, 来る → こまい) have no encoding. They attach まい to the verb stem, and the base enum has no ichidan-only or irregular-only value, so a [verb → to-masu-stem → append まい] variant would emit *書きまい for godan verbs. The emitted to-dictionary branch is the one path valid for all four verb classes (書くまい / 食べるまい / するまい / 来るまい), so the alternates are a coverage gap, not a correctness one. Separately, the 〜のように / 〜のような half of this record is deliberately not encoded here: the record's own structure_pattern identifies it as a concatenation bug and orders it stripped, and gram:gp-153 / gram:gp-154 / gram:gp-77 already carry those rules.",
+      "nuance_tags": ["intention", "conjecture"],
+      "usage_contexts": ["written", "literary"],
+      "self_test": [
+        { "input": "書く / variant 1 (verb, to-dictionary + まい)", "output": "書くまい", "ok": true },
+        { "input": "食べる / variant 1", "output": "食べるまい", "ok": true },
+        { "input": "する / variant 1", "output": "するまい", "ok": true },
+        { "input": "くる / variant 1", "output": "来るまい", "ok": true },
+        { "input": "書く / REJECTED alternative encoding (verb, to-masu-stem + まい) — why the stem alternates are unavailable", "output": "書きまい", "ok": false },
+        { "input": "食べる / REJECTED alternative encoding (verb, to-masu-stem + まい)", "output": "食べまい", "ok": true },
+        { "input": "学生 / DROPPED withheld variant 2 (noun + のように)", "output": "学生のように", "ok": false },
+        { "input": "学生 / DROPPED withheld variant 3 (noun + のような)", "output": "学生のような", "ok": false },
+        { "input": "高い / 静か", "output": "no variant applies — まい takes a verb base only", "ok": true }
+      ]
+    }
+  ]
+}

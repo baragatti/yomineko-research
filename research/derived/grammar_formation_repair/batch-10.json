@@ -1,0 +1,229 @@
+{
+  "batch": 10,
+  "points": [
+    {
+      "slug": "gram:n3-rashii",
+      "resolution": "fixed",
+      "resolution_note": "The two agreeing findings do not touch the steps at all — both explicitly certify them (\"Formation steps are unaffected and correct\" / \"the steps themselves are all correct\"). The point was withheld by the two-checker rule, but the defect both checkers describe lives in nuance_tags: \"comparison\" is imported either from the didactic contrast the nuance field draws against ようだ/みたいだ/そうだ (meta-commentary about other points) or from the \"típico de\" らしい, which the record itself walls off as \"um らしい diferente\". The explanation is purely indirect-source, which hearsay + conjecture already carry, so nuance_tags is corrected to [hearsay, conjecture]; usage_contexts is untouched. Steps re-emitted with two changes. (1) Shape normalised for the three direct-attachment bases to the single-step base+append form that this record's closest sibling gram:n3-mitai-da uses for the identical direct-attachment shape (静かみたいだ / 学生みたいだ) and that 336 of the 905 merged variants use, instead of the none+append pair; the generated strings are identical either way. (2) One under-derived variant added: the record's formation field says \"Verbo na forma comum + らしい\", and forma comum covers the plain negative exactly as it covers the plain past the original steps already encoded, so to-nai-stem + \"いらしい\" is added, giving 書かないらしい / 食べないらしい / しないらしい / こないらしい. All four verb shapes and the three direct-attachment bases execute clean. Worth recording for the human reviewer but NOT a formation defect: noun + らしい is formally identical to the \"typical of\" らしい the record walls off, so 学生らしい is genuinely ambiguous in Japanese. That is an ambiguity of the language, not a form the steps get wrong, and the record's own noun example インフルエンザらしい (from its nuance field) is kept as the variant example precisely because it cannot be read the other way.",
+      "nuance_tags": [
+        "hearsay",
+        "conjecture"
+      ],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "らしい" }
+          ],
+          "example": "書くらしい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "らしい" }
+          ],
+          "example": "書いたらしい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いらしい" }
+          ],
+          "example": "書かないらしい"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "らしい" }
+          ],
+          "example": "高いらしい"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "らしい" }
+          ],
+          "example": "静からしい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "らしい" }
+          ],
+          "example": "インフルエンザらしい"
+        }
+      ],
+      "self_test": [
+        { "input": "書く [v1 to-dictionary + らしい]", "output": "書くらしい", "ok": true },
+        { "input": "食べる [v1 to-dictionary + らしい]", "output": "食べるらしい", "ok": true },
+        { "input": "する [v1 to-dictionary + らしい]", "output": "するらしい", "ok": true },
+        { "input": "くる [v1 to-dictionary + らしい]", "output": "くるらしい", "ok": true },
+        { "input": "書く [v2 to-ta-form + らしい]", "output": "書いたらしい", "ok": true },
+        { "input": "食べる [v2 to-ta-form + らしい]", "output": "食べたらしい", "ok": true },
+        { "input": "する [v2 to-ta-form + らしい]", "output": "したらしい", "ok": true },
+        { "input": "くる [v2 to-ta-form + らしい]", "output": "きたらしい", "ok": true },
+        { "input": "書く [v3 to-nai-stem 書かな + いらしい]", "output": "書かないらしい", "ok": true },
+        { "input": "食べる [v3 to-nai-stem 食べな + いらしい]", "output": "食べないらしい", "ok": true },
+        { "input": "する [v3 to-nai-stem しな + いらしい]", "output": "しないらしい", "ok": true },
+        { "input": "くる [v3 to-nai-stem こな + いらしい]", "output": "こないらしい", "ok": true },
+        { "input": "高い [v4 i-adjective + らしい]", "output": "高いらしい", "ok": true },
+        { "input": "静か [v5 na-adjective + らしい, no な and no だ per the record]", "output": "静からしい", "ok": true },
+        { "input": "学生 [v6 noun + らしい, no だ per the record]", "output": "学生らしい", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:n3-shika-nai",
+      "resolution": "partial",
+      "resolution_note": "The verb branch is correct and untouched: to-dictionary + しかない gives 書くしかない / 食べるしかない / するしかない / くるしかない, exactly the record's \"Verbo na forma de dicionário + しかない\". The noun branch is not repairable inside the closed enums, so it is dropped and named in steps_unavailable. Reasoning: the ない of this pattern is the negative of the existential ある, so the required existential switches with animacy — 千円しかない but 学生しかいない. The record's formation prose narrows the noun use only to \"substantivos contáveis e quantidades\", and 学生 is countable, so the record itself does not narrow the base away from the failing class; it also never mentions しかいない anywhere, so there is no record-carried basis for authoring an いない branch. The base enum offers only `noun`, with no animacy distinction, so any noun-accepting rule licenses 学生しかない — the exact error — and swapping the token to しかいない would license 千円しかいない instead. Same structure as the があります / がいます case the task names as the model unavailable outcome, except that here one of the two branches is safe, hence partial rather than unavailable.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "しかない" }
+          ],
+          "example": "書くしかない"
+        }
+      ],
+      "steps_unavailable": "Noun branch withheld: the pattern's ない is the negative of the existential ある, so the correct form depends on animacy (千円しかない but 学生しかいない). The base enum has only `noun` and carries no animate/inanimate distinction, so a noun-accepting rule appending しかない generates 学生しかない, and one appending しかいない would generate 千円しかいない — either way the rule manufactures the error. The record's formation field scopes the noun use to countable nouns and quantities, which does not exclude animates, and it never documents しかいない, so nothing in the record can narrow the base. The verb branch (dictionary form + しかない) is unaffected and is emitted.",
+      "self_test": [
+        { "input": "書く [v1 to-dictionary + しかない]", "output": "書くしかない", "ok": true },
+        { "input": "食べる [v1 to-dictionary + しかない]", "output": "食べるしかない", "ok": true },
+        { "input": "する [v1 to-dictionary + しかない]", "output": "するしかない", "ok": true },
+        { "input": "くる [v1 to-dictionary + しかない]", "output": "くるしかない", "ok": true },
+        { "input": "学生 [rejected noun branch: noun + しかない]", "output": "学生しかない — required form is 学生しかいない", "ok": false },
+        { "input": "千円 [rejected alternative noun branch: noun + しかいない]", "output": "千円しかいない — required form is 千円しかない", "ok": false },
+        { "input": "学生 [emitted variants]", "output": "n/a — no noun variant emitted", "ok": true },
+        { "input": "高い [emitted variants]", "output": "n/a — the record's formation carries no adjective base", "ok": true },
+        { "input": "静か [emitted variants]", "output": "n/a — the record's formation carries no adjective base", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:n3-tate",
+      "resolution": "unavailable",
+      "resolution_note": "The morphology the original steps encode is right — masu-stem + たて — and I am not overturning it. What cannot be encoded is its scope. The record's own nuance field states the restriction and hands over the counterexample: \"Limita-se a poucos verbos consagrados de ações com resultado físico e perceptível; não se diz 食べたて, por exemplo\", and its formation field names exactly three verbs (焼く, 作る, 洗う). ～たて is therefore lexical, not productive. The base enum is verb / i-adjective / na-adjective / noun / clause / any: there is no value meaning \"a closed lexical set of production verbs\", and `verb` asserts full productivity over every verb. Executed literally the sequence returns 焼きたて (fine, record-licensed) but also 食べたて — the form the record names as impossible — plus したて and きたて. The steps would therefore ship a generator licence to produce the single form this entry exists to warn against, which is F5 in its purest form. Narrowing is not expressible, so no variants are emitted. Nothing pedagogical is lost: the record's formation field already carries all three worked pairs (焼く→焼きたて, 作る→作りたて, 洗う→洗いたて) in prose for a human, and the の-linking to a noun (焼きたてのパン) that the original steps never covered either is named in steps_unavailable so a later pass with a lexical-scope mechanism can pick both up.",
+      "steps_unavailable": "～たて is lexically restricted and the base enum cannot say so. The morphology (masu-stem + たて) is correct, but the record limits the pattern to a few established production verbs and names its own counterexample: 食べたて is not said. Its formation field licenses only 焼く→焼きたて, 作る→作りたて, 洗う→洗いたて. The base enum has no value for a closed lexical verb set, so any `verb` sequence generates 食べたて, したて and きたて alongside the three good forms. No steps are emitted rather than ship that over-generation. Also not covered by any op: the の-linking used when ～たて qualifies a noun (焼きたてのパン).",
+      "self_test": [
+        { "input": "焼く [rejected rule: to-masu-stem + たて]", "output": "焼きたて", "ok": true },
+        { "input": "作る [rejected rule: to-masu-stem + たて]", "output": "作りたて", "ok": true },
+        { "input": "洗う [rejected rule: to-masu-stem + たて]", "output": "洗いたて", "ok": true },
+        { "input": "書く [rejected rule: to-masu-stem + たて]", "output": "書きたて — outside the record's licensed set", "ok": false },
+        { "input": "食べる [rejected rule: to-masu-stem + たて]", "output": "食べたて — the record states this is not said", "ok": false },
+        { "input": "する [rejected rule: to-masu-stem + たて]", "output": "したて", "ok": false },
+        { "input": "くる [rejected rule: to-masu-stem + たて]", "output": "きたて", "ok": false },
+        { "input": "高い / 静か / 学生 [rejected rule]", "output": "n/a — the record's formation carries only a verb base", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:n3-tsumori-deshita",
+      "resolution": "partial",
+      "resolution_note": "Two defects, both real. (1) Critical, fixed: variant 2's token began with ない while its base op already produces the な-inclusive stem, so the sequence doubled the negative — to-nai-stem(書く) = 書かな, plus \"ないつもりでした\" = *書かなないつもりでした, and likewise *食べなないつもりでした, *しなないつもりでした, *こなないつもりでした. The declared example 書かないつもりでした was right, which is what hid it: the example did not follow from the steps. Token corrected to \"いつもりでした\", which is byte-for-byte what the direct sibling gram:tsumori already carries (to-nai-stem + \"いつもりです\" → 書かないつもりです) and matches gram:n3-nai-to (\"いと\"), gram:n3-mama (\"いまま\"), gram:n3-you-ni-2 (\"いように\"). (2) Minor, excluded: variant 3 (to-ta-form + つもりでした → 書いたつもりでした) is grammatical Japanese but is a different meaning. The record's formation field lists only dictionary form and Verbo-ない; 〜たつもりでした appears solely in the nuance field, and there it is explicitly separated — \"eu achava que tinha feito (mas não tinha)\", uma convicção equivocada, diferente do simples plano não realizado. A variant object has no meaning or label field, so the two senses cannot be kept apart inside `variants`; filed unmarked under a point labelled \"eu pretendia / eu ia\", a generator asked for \"eu pretendia escrever\" can emit 書いたつもりでした, which means \"I was under the impression I had written it\". Dropped and named in steps_unavailable. The two emitted variants now match the record's formation field exactly.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "つもりでした" }
+          ],
+          "example": "書くつもりでした"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いつもりでした" }
+          ],
+          "example": "書かないつもりでした"
+        }
+      ],
+      "steps_unavailable": "〜たつもりでした excluded. The record carries it only in its nuance field and explicitly marks it as a different meaning — a mistaken conviction (\"eu achava que tinha feito, mas não tinha\") rather than the unrealized plan this point is labelled for — while the formation field lists only dictionary form and Verbo-ない. A variant object carries no meaning or label field, so a past-form branch cannot be held apart from the two that realize the point's stated sense, and unmarked it lets a generator answer \"eu pretendia escrever\" with 書いたつもりでした. It belongs to a record covering the mistaken-conviction つもり, not to this one.",
+      "self_test": [
+        { "input": "書く [v1 to-dictionary + つもりでした]", "output": "書くつもりでした", "ok": true },
+        { "input": "食べる [v1 to-dictionary + つもりでした]", "output": "食べるつもりでした", "ok": true },
+        { "input": "する [v1 to-dictionary + つもりでした]", "output": "するつもりでした", "ok": true },
+        { "input": "くる [v1 to-dictionary + つもりでした]", "output": "くるつもりでした", "ok": true },
+        { "input": "書く [v2 to-nai-stem 書かな + いつもりでした]", "output": "書かないつもりでした", "ok": true },
+        { "input": "食べる [v2 to-nai-stem 食べな + いつもりでした]", "output": "食べないつもりでした", "ok": true },
+        { "input": "する [v2 to-nai-stem しな + いつもりでした]", "output": "しないつもりでした", "ok": true },
+        { "input": "くる [v2 to-nai-stem こな + いつもりでした]", "output": "こないつもりでした", "ok": true },
+        { "input": "書く [old rejected token: to-nai-stem + ないつもりでした]", "output": "*書かなないつもりでした", "ok": false },
+        { "input": "書く [excluded branch: to-ta-form + つもりでした]", "output": "書いたつもりでした — grammatical but a different meaning; not emitted", "ok": false },
+        { "input": "高い / 静か / 学生 [emitted variants]", "output": "n/a — the record's formation carries only a verb base", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:n3-uchi-ni",
+      "resolution": "fixed",
+      "resolution_note": "One token, one defect, and both checkers agreed on it. Variant 2 was to-nai-stem + \"ないうちに\" while to-nai-stem already yields the な-inclusive stem, so the sequence doubled the negative: to-nai-stem(降る) = 降らな, plus \"ないうちに\" = *降らなないうちに, and likewise *書かなないうちに, *食べなないうちに, *しなないうちに, *こなないうちに. Its declared example 降らないうちに was correct and did not follow from its own steps. Token corrected to \"いうちに\", matching the sibling encodings of the same ない+particle shape: gram:n3-nai-to \"いと\", gram:n3-mama \"いまま\", gram:n3-you-ni-2 \"いように\". The branch itself is record-carried — the formation field says \"Com verbo na negativa ない + うちに, expressa 'antes que (deixe de ser assim)'\". The other five variants were re-executed and all hold: to-te-form + \"いるうちに\" gives 書いているうちに / 食べているうちに / しているうちに / きているうちに; to-te-form + \"いないうちに\" gives 書いていないうちに and the record's own 降っていないうちに; i-adjective + \"うちに\" gives 高いうちに; na-adjective to-attributive + \"うちに\" gives 静かなうちに, matching the record's \"adjetivo な + な + うちに\"; noun + \"のうちに\" gives 学生のうちに, matching \"substantivo + の + うちに\". The i-adjective example is set to 高いうちに (a mandated test base) rather than an adjective the record never mentions. Nothing else changed; nuance_tags is empty on this record and no finding raised it, so it is left alone.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いるうちに" }
+          ],
+          "example": "話しているうちに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いうちに" }
+          ],
+          "example": "降らないうちに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いないうちに" }
+          ],
+          "example": "降っていないうちに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "うちに" }
+          ],
+          "example": "高いうちに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "うちに" }
+          ],
+          "example": "静かなうちに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のうちに" }
+          ],
+          "example": "学生のうちに"
+        }
+      ],
+      "self_test": [
+        { "input": "書く [v1 to-te-form 書いて + いるうちに]", "output": "書いているうちに", "ok": true },
+        { "input": "食べる [v1 to-te-form 食べて + いるうちに]", "output": "食べているうちに", "ok": true },
+        { "input": "する [v1 to-te-form して + いるうちに]", "output": "しているうちに", "ok": true },
+        { "input": "くる [v1 to-te-form きて + いるうちに]", "output": "きているうちに", "ok": true },
+        { "input": "書く [v2 to-nai-stem 書かな + いうちに]", "output": "書かないうちに", "ok": true },
+        { "input": "食べる [v2 to-nai-stem 食べな + いうちに]", "output": "食べないうちに", "ok": true },
+        { "input": "する [v2 to-nai-stem しな + いうちに]", "output": "しないうちに", "ok": true },
+        { "input": "くる [v2 to-nai-stem こな + いうちに]", "output": "こないうちに", "ok": true },
+        { "input": "書く [old rejected token: to-nai-stem + ないうちに]", "output": "*書かなないうちに", "ok": false },
+        { "input": "書く [v3 to-te-form 書いて + いないうちに]", "output": "書いていないうちに", "ok": true },
+        { "input": "食べる [v3 to-te-form 食べて + いないうちに]", "output": "食べていないうちに", "ok": true },
+        { "input": "する [v3 to-te-form して + いないうちに]", "output": "していないうちに", "ok": true },
+        { "input": "くる [v3 to-te-form きて + いないうちに]", "output": "きていないうちに", "ok": true },
+        { "input": "高い [v4 i-adjective + うちに]", "output": "高いうちに", "ok": true },
+        { "input": "静か [v5 na-adjective to-attributive 静かな + うちに]", "output": "静かなうちに", "ok": true },
+        { "input": "学生 [v6 noun + のうちに]", "output": "学生のうちに", "ok": true }
+      ]
+    }
+  ]
+}

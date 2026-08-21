@@ -1,0 +1,232 @@
+{
+  "batch": 9,
+  "points": [
+    {
+      "slug": "gram:you-ni-suru",
+      "resolution": "fixed",
+      "resolution_note": "Both findings are the same off-by-な and both are correct. to-nai-stem is the な-inclusive stem (書く -> 書かな), so the append token must not re-supply な. Token changed from \"ないようにする\" to \"いようにする\", which reproduces the record's own target string 遅れないようにする and the variant's claimed example 食べないようにする. The affirmative variant (to-dictionary + ようにする) was already correct and is kept unchanged. Base stays verb-only: the record's formation licenses no adjective or noun attachment. The record also mentions 〜ようにしている and 〜ようにしてください, but those are inflections of the する tail of the form already emitted, not separate attachment rules, and forms[] carries only ようにする, so they get no variant of their own.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ようにする" }
+          ],
+          "example": "早く寝るようにする"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いようにする" }
+          ],
+          "example": "遅れないようにする"
+        }
+      ],
+      "nuance_tags": ["intention"],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "書く + variant 1", "output": "書くようにする", "ok": true },
+        { "input": "食べる + variant 1", "output": "食べるようにする", "ok": true },
+        { "input": "する + variant 1", "output": "するようにする", "ok": true },
+        { "input": "くる + variant 1", "output": "くるようにする", "ok": true },
+        { "input": "書く + variant 2 (to-nai-stem = 書かな)", "output": "書かないようにする", "ok": true },
+        { "input": "食べる + variant 2 (to-nai-stem = 食べな)", "output": "食べないようにする", "ok": true },
+        { "input": "する + variant 2 (to-nai-stem = しな)", "output": "しないようにする", "ok": true },
+        { "input": "くる + variant 2 (to-nai-stem = こな)", "output": "こないようにする", "ok": true },
+        { "input": "高い / 静か / 学生", "output": "no variant applies — the record's formation licenses verb attachment only", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:you-ni-you-na",
+      "resolution": "fixed",
+      "resolution_note": "Two findings, both correct, both repaired. (1) The ない variant carried the same off-by-な as gram:you-ni-suru: to-nai-stem(忘れる) = 忘れな, so the token becomes \"いように\" and the steps now actually produce the claimed example 忘れないように. (2) nuance_tags carried only \"comparison\" while the explanation names a second use verbatim (\"(2) Finalidade: ように também marca 'de modo que', 'para que'\"), which is what three of the emitted variants generate; \"intention\" added. One gap is also repaired: forms[] documents ような as a form in its own right and the formation text says \"frase/verbo simples + ように／ような\", yet ような was reachable only from noun+の. A clause + ような variant is added, mirroring the clause + ように variant that already verified clean. The other five variants execute correctly and are kept as they were.",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "のように" }],
+          "example": "子供のように"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "のような" }],
+          "example": "夢のような"
+        },
+        {
+          "base": "clause",
+          "steps": [{ "base": "clause", "op": "append", "token": "ように" }],
+          "example": "言ったように"
+        },
+        {
+          "base": "clause",
+          "steps": [{ "base": "clause", "op": "append", "token": "ような" }],
+          "example": "言ったような"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ように" }
+          ],
+          "example": "分かるように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-potential" },
+            { "op": "append", "token": "ように" }
+          ],
+          "example": "書けるように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いように" }
+          ],
+          "example": "忘れないように"
+        }
+      ],
+      "nuance_tags": ["comparison", "intention"],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "学生 + noun のように", "output": "学生のように", "ok": true },
+        { "input": "学生 + noun のような", "output": "学生のような", "ok": true },
+        { "input": "言った (clause) + ように", "output": "言ったように", "ok": true },
+        { "input": "言った (clause) + ような", "output": "言ったような", "ok": true },
+        { "input": "書く + to-dictionary", "output": "書くように", "ok": true },
+        { "input": "食べる + to-dictionary", "output": "食べるように", "ok": true },
+        { "input": "する + to-dictionary", "output": "するように", "ok": true },
+        { "input": "くる + to-dictionary", "output": "くるように", "ok": true },
+        { "input": "書く + to-potential", "output": "書けるように", "ok": true },
+        { "input": "食べる + to-potential", "output": "食べられるように", "ok": true },
+        { "input": "する + to-potential", "output": "できるように", "ok": true },
+        { "input": "くる + to-potential", "output": "こられるように", "ok": true },
+        { "input": "書く + to-nai-stem (書かな)", "output": "書かないように", "ok": true },
+        { "input": "食べる + to-nai-stem (食べな)", "output": "食べないように", "ok": true },
+        { "input": "する + to-nai-stem (しな)", "output": "しないように", "ok": true },
+        { "input": "くる + to-nai-stem (こな)", "output": "こないように", "ok": true },
+        { "input": "忘れる + to-nai-stem (忘れな)", "output": "忘れないように", "ok": true },
+        { "input": "高い / 静か", "output": "no adjective-specific variant — the record attaches ように／ような to noun+の, to a clause, or to a verb; 高い reaches it through the clause base", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:n3-koto-wa-ga",
+      "resolution": "unavailable",
+      "resolution_note": "The finding that withheld this point is real but concerns a different field: structure_pattern in corpus/grammar/n3.json carries an F6 instruction-as-value ('pattern: \"～ことは～が\" — and apply the same fix to forms[0].form...') and forms[0].form is still the malformed ～ことはが. Neither is a formation defect, and no variants were ever emitted here, so there is nothing to correct — the real question is whether steps are expressible at all, and they are not. The construction's whole identity, as the record states it ('a estrutura repete a mesma palavra dos dois lados de ことは'), is that the SAME predicate appears twice, in two different shapes: 書くことは書くが, 高いことは高いが, 静かなことは静かだが. append tokens are literal strings and no op re-emits the base, so the repetition cannot be encoded. Emitting only the left half would be worse than emitting nothing: 書くことは is an ordinary nominalised topic ('as for writing'), so a generator fed that half would produce sentences that are not this construction at all. Flagging rather than laundering matters here per F3, because the record's own noun line ('substantivo + ことは + substantivo + だが') is itself wrong: it yields *学生ことは学生だが, where the attributive requires である (学生であることは学生だが). Two upstream repairs are needed from a human editor — the structure_pattern / forms[0].form edit order, and that noun line.",
+      "steps_unavailable": "Two-slot frame with obligatory repetition of the same predicate, not a single derivation. ～ことは～が requires the base to appear on both sides of ことは and in a different shape on the right (verb plain + が, い-adj + が, な-adj なことは + だが, noun であることは + だが). No op in the enum re-emits the base into the string, and append tokens are literal, so the second slot is unreachable. A left-half-only rule would not merely be incomplete but misleading: 書くことは alone is the ordinary こと nominaliser plus は, a different construction. Separately, the record's noun line omits である and would license *学生ことは学生だが; it needs human repair before any encoding is attempted.",
+      "nuance_tags": ["concession", "softening"],
+      "usage_contexts": ["spoken", "written"],
+      "self_test": [
+        { "input": "書く, attempting to-dictionary + append ことは", "output": "書くことは — left half only; the target is 書くことは書くが and no op re-emits 書く", "ok": false },
+        { "input": "食べる, same attempt", "output": "食べることは — target 食べることは食べるが", "ok": false },
+        { "input": "する, same attempt", "output": "することは — target することはするが", "ok": false },
+        { "input": "くる, same attempt", "output": "くることは — target くることはくるが", "ok": false },
+        { "input": "高い, same attempt", "output": "高いことは — target 高いことは高いが", "ok": false },
+        { "input": "静か, same attempt", "output": "静かなことは — target 静かなことは静かだが; the right slot also switches to だ", "ok": false },
+        { "input": "学生, record's own noun line taken literally", "output": "*学生ことは学生だが — ungrammatical; 学生であることは学生だが is the real form, so the record's formation text is defective too", "ok": false }
+      ]
+    },
+    {
+      "slug": "gram:n3-mo",
+      "resolution": "partial",
+      "resolution_note": "Both findings agree, and both say the same thing: every emitted variant is grammatical, and the defect is the empty steps_unavailable, which reports a half-encoded correlative as complete. Executed against the test set the five variants all hold (書くばかりか, 食べるばかりか, するばかりか, くるばかりか, 高いばかりか, 静かであるばかりか, 学生ばかりか, 学生であるばかりか), including the な-adjective restriction to である that keeps bare *静かばかりか out. The variants are therefore kept verbatim and the repair is the note: the record's structure_pattern is ～ばかりか～も and its formation ends 'o segundo membro recebe a partícula も. Padrão: A ばかりか B も', none of which is derivable from A. This follows the gram:n3-no treatment (emit the reachable variant plus a note) rather than the gram:n3-wa-mochiron-mo treatment (declare the whole frame unavailable), because here the A-member suffix is a real, safe, self-contained rule. The second member was deliberately NOT folded in as an append token: も lands on a different constituent, and packing it into A's tail is exactly the flattening this pass exists to remove.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ばかりか" }
+          ],
+          "example": "書くばかりか"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [{ "base": "i-adjective", "op": "append", "token": "ばかりか" }],
+          "example": "高いばかりか"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [{ "base": "na-adjective", "op": "append", "token": "であるばかりか" }],
+          "example": "静かであるばかりか"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "ばかりか" }],
+          "example": "学生ばかりか"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "であるばかりか" }],
+          "example": "学生であるばかりか"
+        }
+      ],
+      "steps_unavailable": "Only the A member (～ばかりか) is encoded. ～ばかりか～も is a two-slot correlative: the も of the B member attaches to a separate constituent the derivation has no access to, and no op introduces a second constituent. Read the variants as the left half of 'A ばかりか B も' and supply B from context; 書くばかりか is not a complete realisation of this point.",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["written", "academic"],
+      "self_test": [
+        { "input": "書く + to-dictionary", "output": "書くばかりか", "ok": true },
+        { "input": "食べる + to-dictionary", "output": "食べるばかりか", "ok": true },
+        { "input": "する + to-dictionary", "output": "するばかりか", "ok": true },
+        { "input": "くる + to-dictionary", "output": "くるばかりか", "ok": true },
+        { "input": "高い + i-adjective", "output": "高いばかりか", "ok": true },
+        { "input": "静か + na-adjective", "output": "静かであるばかりか", "ok": true },
+        { "input": "静か with bare ばかりか (encoding not used)", "output": "*静かばかりか — why the na-adjective variant is restricted to である", "ok": false },
+        { "input": "学生 + noun", "output": "学生ばかりか", "ok": true },
+        { "input": "学生 + noun (である)", "output": "学生であるばかりか", "ok": true },
+        { "input": "full pattern A ばかりか B も", "output": "not derivable — B is a second constituent; declared in steps_unavailable", "ok": false }
+      ]
+    },
+    {
+      "slug": "gram:n3-ni-shite-wa",
+      "resolution": "partial",
+      "resolution_note": "Three findings; both substantive ones are correct. (1) The な-adjective variant is dropped. 静か + にしては yields 静かにしては, which reads live as 静かに + して + は — the て-form of 静かにする plus は — and this corpus already encodes 静かにする elsewhere (gram:gp-80, to-adverbial + する), so the colliding parse is live in the same data. The same author declared exactly this string unencodable one record earlier for the sibling にしても, then encoded the は twin anyway; the two decisions are now reconciled in favour of the block. Per F3 the upstream text is flagged rather than laundered: the record's formation line 'adjetivo-な (sem な) + にしては' is the defective input, and every sibling connective in this corpus keeps な (静かなわりには, 静かなせいで, 静かなおかげで) — including わりには, which this record's own nuance field names as にしては's near-synonym. (2) nuance_tags loses \"concession\": the record's nuance field says in so many words that にしても is the concessive one and にしては marks surprise against a standard, so tagging it concessive collapses the very distinction the record exists to teach; \"comparison\" alone carries the expectation-vs-reality contrast. The verb (dictionary and た), い-adjective and noun variants execute cleanly and are kept unchanged.",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "にしては" }],
+          "example": "初心者にしては"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "にしては" }
+          ],
+          "example": "書くにしては"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "にしては" }
+          ],
+          "example": "書いたにしては"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [{ "base": "i-adjective", "op": "append", "token": "にしては" }],
+          "example": "安いにしては"
+        }
+      ],
+      "steps_unavailable": "な-adjectives are excluded. The record's line 'adjetivo-な (sem な) + にしては' generates 静かにしては, a well-formed string whose live reading is 静かに + して + は (the て-form of 静かにする plus は, 'as for making it quiet'), not the surprise-against-a-standard construction taught here; a generator would emit correct Japanese carrying the wrong construction. Dropping な is what creates the collision, and keeping な (静かなにしては) is not supported by the record, so neither shape can be encoded and the base is left out. The same block applies to the sibling にしても for the identical reason. The record's な-adjective formation line needs human review.",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written", "casual-friends"],
+      "self_test": [
+        { "input": "学生 + noun", "output": "学生にしては", "ok": true },
+        { "input": "初心者 + noun", "output": "初心者にしては", "ok": true },
+        { "input": "書く + to-dictionary", "output": "書くにしては", "ok": true },
+        { "input": "食べる + to-dictionary", "output": "食べるにしては", "ok": true },
+        { "input": "する + to-dictionary", "output": "するにしては", "ok": true },
+        { "input": "くる + to-dictionary", "output": "くるにしては", "ok": true },
+        { "input": "書く + to-ta-form", "output": "書いたにしては", "ok": true },
+        { "input": "食べる + to-ta-form", "output": "食べたにしては", "ok": true },
+        { "input": "する + to-ta-form", "output": "したにしては", "ok": true },
+        { "input": "くる + to-ta-form", "output": "来たにしては", "ok": true },
+        { "input": "高い + i-adjective", "output": "高いにしては", "ok": true },
+        { "input": "安い + i-adjective", "output": "安いにしては", "ok": true },
+        { "input": "静か, withheld na-adjective variant", "output": "静かにしては — parses as 静かにする + ては, wrong construction; base excluded", "ok": false }
+      ]
+    }
+  ]
+}

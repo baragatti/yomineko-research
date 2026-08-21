@@ -1,0 +1,281 @@
+{
+  "batch": 4,
+  "points": [
+    {
+      "slug": "gram:te-aru",
+      "resolution": "unavailable",
+      "resolution_note": "Both checkers are right and the defect is not expressible. The record's formation states the restriction in its own words -- \"Usa-se com verbos TRANSITIVOS (que normalmente levam を)\" -- and contrasts it with the intransitive alternative 〜ている (まどがあいている). The rejected variant declared the open base `verb`, which executes on the mandated base くる as きてある / 来てある: 来る is intransitive and takes ている, never てある. The same over-generation reaches 行ってある, 寝てある, 起きてある. The base enum offers verb / i-adjective / na-adjective / noun / clause / any and has no transitive-verb value, so the restriction cannot be moved into `base`; and because the failure is lexical transitivity rather than part of speech, there is no safe sub-base to keep, so `partial` does not apply either. gram:tadoushi-jidoushi already refuses the identical shape. Refusing is the correct outcome here.",
+      "steps_unavailable": "Transitivity-restricted derivation. The morphology is simple (て-form + ある) but the record licenses it only for TRANSITIVE verbs -- its formation says \"Usa-se com verbos TRANSITIVOS (que normalmente levam を)\" and contrasts it with 〜ている on intransitives (まどがあいている) -- and the base enum has no transitive-verb value. An unrestricted base:verb variant executes on the mandated test base くる as きてある, and equally licenses 行ってある / 寝てある / 起きてある, forms no speaker produces. Narrowing is impossible inside the closed enums, so no steps are emitted; cf. gram:tadoushi-jidoushi, refused on the same grounds.",
+      "self_test": [
+        {
+          "input": "書く (transitive) -- rejected steps [verb, to-te-form, append ある]",
+          "output": "書いてある",
+          "ok": true
+        },
+        {
+          "input": "食べる (transitive) -- rejected steps [verb, to-te-form, append ある]",
+          "output": "食べてある",
+          "ok": true
+        },
+        {
+          "input": "する (transitive; record's own よやくする) -- rejected steps [verb, to-te-form, append ある]",
+          "output": "してある",
+          "ok": true
+        },
+        {
+          "input": "くる (INTRANSITIVE) -- rejected steps [verb, to-te-form, append ある]",
+          "output": "きてある / 来てある",
+          "ok": false
+        },
+        {
+          "input": "高い / 静か / 学生",
+          "output": "not applicable -- the pattern takes only a verb base",
+          "ok": true
+        }
+      ],
+      "nuance_tags": [
+        "completion",
+        "intention"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:ga-suru",
+      "resolution": "unavailable",
+      "resolution_note": "Both checkers are right. The record never says \"noun\": its formation names the slot \"Substantivo de sensação\" and then enumerates the class (匂い・味・音・声・気・感じ・寒気・吐き気). The rejected variant widened that to the open base `noun`, which executes on the mandated test noun 学生 as 学生がする -- not a bad instance of the pattern but not an instance of it at all, since it re-parses as ordinary subject-が + する, \"the student does it\". Same for 本がする, 車がする, 水がする. The morphology (append がする) is correct; only the base is wrong, and the base enum has no sensation-noun value, so there is no narrower base to fall back to and no safe subset to emit as `partial`. gram:gari refuses an identical lexically-restricted derivation (base i-adjective would license *高がり), and applying that precedent here also removes the internal inconsistency the second checker flagged between the two neighbouring records.",
+      "steps_unavailable": "Lexically restricted noun class. The record's formation names the slot \"Substantivo de sensação\" and enumerates it (匂い・味・音・声・気・感じ・寒気・吐き気); it is not the open class `noun`. A base:noun variant appending がする executes on the mandated test noun 学生 as 学生がする, which is not an instance of this pattern at all -- it re-parses as ordinary subject-が + する -- and equally licenses 本がする / 車がする. The base enum has no sensation-noun value, so no steps are emitted; cf. gram:gari, refused on the same grounds.",
+      "self_test": [
+        {
+          "input": "学生 (mandated noun) -- rejected steps [noun, append がする]",
+          "output": "学生がする",
+          "ok": false
+        },
+        {
+          "input": "匂い (record's own class member) -- rejected steps [noun, append がする]",
+          "output": "匂いがする",
+          "ok": true
+        },
+        {
+          "input": "音 (record's own class member) -- rejected steps [noun, append がする]",
+          "output": "音がする",
+          "ok": true
+        },
+        {
+          "input": "書く / 食べる / する / くる / 高い / 静か",
+          "output": "not applicable -- the pattern takes only a noun base",
+          "ok": true
+        }
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:garu-gatteiru",
+      "resolution": "partial",
+      "resolution_note": "The defect is confined to the adjective bases; the verb half is sound and both checkers said so explicitly (\"the verb variants all execute correctly\"). Rejected variants 1, 2 and 4 declared the open bases i-adjective and na-adjective, but the record's formation says \"Raiz do adjetivo de EMOÇÃO\" and every example it supplies is an emotion adjective (怖い→怖がる, 寂しい→寂しがる, 嫌だ→嫌がる, 欲しい→欲しがる). Executed on the mandated bases they yield 高がる, 高がっている and 静かがる, none of which is a word, and the base enum has no emotion-adjective value -- the same wall gram:gari hits with *高がり -- so those three are dropped and the exclusion is named in steps_unavailable. Variants 3 and 5 are kept because they are correct, not merely because they were proposed: the record derives them itself (\"Com o desiderativo 〜たい, troca-se たい→たがる: 食べたい→食べたがる\"), 〜たい is masu-stem + たい so masu-stem + たがる is the same morphology, and the derivation runs on all four mandated verb bases without exception (書きたがる, 食べたがる, したがる, きたがる). The to-te-form step in the second variant is licensed by the record's own statement that \"〜がる conjuga como verbo godan\". The already-merged sibling gram:tagaru carries this same verb derivation and passed verification, so keeping it here also keeps the two records consistent; that record encodes the ている surface as a flat append \"たがっている\", and both encodings reach 食べたがっている.",
+      "steps_unavailable": "The adjective bases are excluded. The record restricts them to EMOTION adjectives (\"Raiz do adjetivo de emoção (adjetivo-い sem い; adjetivo-な sem な) + がる\": 怖い→怖がる, 寂しい→寂しがる, 嫌だ→嫌がる, 欲しい→欲しがる), and the base enum has no emotion-adjective value. Unrestricted i-adjective / na-adjective variants execute on the mandated test bases as 高がる, 高がっている and 静かがる, none of which is a word -- the refusal gram:gari makes for *高がり. Only the desiderative half is emitted, which the record derives on any verb (食べたい→食べたがる) and which runs clean on every mandated verb base.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たがる"
+            }
+          ],
+          "example": "食べたがる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たがる"
+            },
+            {
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いる"
+            }
+          ],
+          "example": "食べたがっている"
+        }
+      ],
+      "self_test": [
+        {
+          "input": "書く -- EMITTED variant 1 [verb, to-masu-stem, append たがる]",
+          "output": "書きたがる",
+          "ok": true
+        },
+        {
+          "input": "食べる -- EMITTED variant 1",
+          "output": "食べたがる",
+          "ok": true
+        },
+        {
+          "input": "する -- EMITTED variant 1",
+          "output": "したがる",
+          "ok": true
+        },
+        {
+          "input": "くる -- EMITTED variant 1",
+          "output": "きたがる (来たがる)",
+          "ok": true
+        },
+        {
+          "input": "書く -- EMITTED variant 2 [verb, to-masu-stem, append たがる, to-te-form, append いる]",
+          "output": "書きたがっている",
+          "ok": true
+        },
+        {
+          "input": "食べる -- EMITTED variant 2",
+          "output": "食べたがっている",
+          "ok": true
+        },
+        {
+          "input": "する -- EMITTED variant 2",
+          "output": "したがっている",
+          "ok": true
+        },
+        {
+          "input": "くる -- EMITTED variant 2",
+          "output": "きたがっている (来たがっている)",
+          "ok": true
+        },
+        {
+          "input": "怖い -- DROPPED variant [i-adjective, replace-ending がる]",
+          "output": "怖がる -- correct, but only because 怖い is an emotion adjective; base:i-adjective cannot say that",
+          "ok": true
+        },
+        {
+          "input": "高い -- DROPPED variant [i-adjective, replace-ending がる]",
+          "output": "高がる",
+          "ok": false
+        },
+        {
+          "input": "高い -- DROPPED variant [i-adjective, replace-ending がる, to-te-form, append いる]",
+          "output": "高がっている",
+          "ok": false
+        },
+        {
+          "input": "静か -- DROPPED variant [na-adjective, append がる]",
+          "output": "静かがる",
+          "ok": false
+        },
+        {
+          "input": "学生",
+          "output": "not applicable -- this pattern has no noun base",
+          "ok": true
+        }
+      ],
+      "nuance_tags": [
+        "desire",
+        "continuation"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "casual-friends"
+      ]
+    },
+    {
+      "slug": "gram:gp-100",
+      "resolution": "unavailable",
+      "resolution_note": "Both checkers are right and the corpus has already settled this exact case: gram:gp-118, the duplicate record for しか〜ない, is steps_unavailable on precisely this argument and names 千円しかある as the error a noun-only rule licenses. The pattern is discontinuous -- しか lands on the noun or quantity, the obligatory ない lands on a DIFFERENT word, the predicate (日本語しか話せない, 一人しか来なかった) -- and the closed op set only ever appends to one base, so no sequence can force the negative onto the separate predicate. Neither rejected half survives alone. Variant 1 emits the bare fragment 学生しか carrying no negative constraint, so it licenses the 千円しかある the record's own nuance forbids (\"Não use しか com verbo afirmativo\"). Variant 2 emits 書かない / 食べない / しない / こない: grammatical Japanese, but generic plain negation carrying none of this point's material, so a consumer would present 書かない as an instance of \"só/apenas\", which it is not -- the same disqualification the batch accepted at gram:gp-103. No safe subset exists, so `partial` does not apply.",
+      "steps_unavailable": "Discontinuous two-site pattern. しか attaches to the limited noun or quantity, but the obligatory negation lands on a DIFFERENT word, the predicate (日本語しか話せない, 一人しか来なかった), and the op set only appends to a single base, so no sequence can force the nai-form onto the separate predicate. A noun-only variant emits the bare fragment 学生しか with no negative constraint attached, licensing exactly the 千円しかある the record's own nuance forbids (\"Não use しか com verbo afirmativo\"); a verb-only variant emits 書かない / 食べない / しない / こない, generic negation carrying none of this point's material. The duplicate record gram:gp-118 is steps_unavailable on the same argument. No steps are emitted.",
+      "self_test": [
+        {
+          "input": "学生 -- rejected variant 1 [noun, append しか]",
+          "output": "学生しか -- fragment; no negative predicate is forced, so the rule also licenses 千円しかある",
+          "ok": false
+        },
+        {
+          "input": "書く -- rejected variant 2 [verb, to-nai-stem, append い]",
+          "output": "書かない -- plain negative, not an instance of しか〜ない",
+          "ok": false
+        },
+        {
+          "input": "食べる -- rejected variant 2",
+          "output": "食べない -- plain negative, not an instance of しか〜ない",
+          "ok": false
+        },
+        {
+          "input": "する -- rejected variant 2",
+          "output": "しない -- plain negative, not an instance of しか〜ない",
+          "ok": false
+        },
+        {
+          "input": "くる -- rejected variant 2",
+          "output": "こない -- plain negative, not an instance of しか〜ない",
+          "ok": false
+        },
+        {
+          "input": "高い / 静か",
+          "output": "not applicable -- the record's formation gives only noun/quantity + しか + negative predicate",
+          "ok": true
+        }
+      ],
+      "nuance_tags": [
+        "emphasis"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:gp-101",
+      "resolution": "unavailable",
+      "resolution_note": "Both checkers are right, and this is the animacy case the brief names as the clearest refusal. The counter choice IS the content of the point: the record's formation says \"Para pessoas ou animais, use 一人 (ひとり) no lugar de 一つ\" and its nuance repeats it (\"para pessoas, use 一人 (ひとり), não 一つ\"). The two rejected variants declare the SAME base, `noun`, so nothing distinguishes them for a consumer -- only the human-readable `example` field (山 vs 学生) does, and a machine reading `base` never sees it. Executed literally, variant 1 gives 学生の一つだ on the mandated test noun, the exact error the record exists to prevent, and variant 2 gives 山の一人だ on the record's own inanimate example. Neither half is safe on an open noun base: they over-generate in opposite directions, which rules out `partial` as well. The base enum has only `noun`, and inventing an animate/inanimate value is forbidden. This is the same refusal gram:gp-12 and gram:gp-13 make for the ある/いる split.",
+      "steps_unavailable": "Animacy split. The counter choice is the whole content of the point: the record's formation says \"Para pessoas ou animais, use 一人 (ひとり) no lugar de 一つ\" and its nuance repeats it. The base enum has only the open value `noun`, so the two candidate variants (noun + の一つだ, noun + の一人だ) declare the same base and nothing lets a consumer choose between them -- the first executes on the mandated test noun 学生 as 学生の一つだ, the exact error the record warns against, and the second executes on the record's own 山 as 山の一人だ. Neither is safe on an open noun base, so no steps are emitted; cf. gram:gp-12 / gram:gp-13, refused for the identical ある/いる animacy split.",
+      "self_test": [
+        {
+          "input": "学生 (mandated noun, ANIMATE) -- rejected variant 1 [noun, append の一つだ]",
+          "output": "学生の一つだ",
+          "ok": false
+        },
+        {
+          "input": "学生 (mandated noun, ANIMATE) -- rejected variant 2 [noun, append の一人だ]",
+          "output": "学生の一人だ -- grammatical, but not machine-selectable: same base:noun as variant 1",
+          "ok": true
+        },
+        {
+          "input": "山 (record's own example, INANIMATE) -- rejected variant 2 [noun, append の一人だ]",
+          "output": "山の一人だ",
+          "ok": false
+        },
+        {
+          "input": "山 (record's own example, INANIMATE) -- rejected variant 1 [noun, append の一つだ]",
+          "output": "山の一つだ",
+          "ok": true
+        },
+        {
+          "input": "書く / 食べる / する / くる / 高い / 静か",
+          "output": "not applicable -- the pattern takes only a noun base",
+          "ok": true
+        }
+      ],
+      "nuance_tags": [
+        "softening"
+      ],
+      "usage_contexts": [
+        "written"
+      ]
+    }
+  ]
+}

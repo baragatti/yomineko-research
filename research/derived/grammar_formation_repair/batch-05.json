@@ -1,0 +1,304 @@
+{
+ "batch": 5,
+ "points": [
+  {
+   "slug": "gram:gp-102",
+   "resolution": "unavailable",
+   "resolution_note": "The finding is right and there is no expressible repair. ～ない～はない is a discontinuous TWO-SITE frame: a negative-form clause modifies a head noun, and only then does はない close it (the record's single example is 食べられないものはない, and its formation states the schema outright: 〜ない + [substantivo] + はない). A step list derives everything from ONE base, so the negative clause and the head noun cannot both vary; every single-site rule that was proposed generates something that is not an instance of the point. The verb variant (to-nai-stem + \"い\") yields plain 書かない / 食べない / しない / こない; the i-adjective variant (to-adverbial + \"ない\") yields plain 高くない; the noun variant yields bare ものはない. None of the three carries any of this point's own material, which is exactly the reasoning gram:gp-103 used when it took this same escape hatch (\"generic negation carrying none of this point's own material\"), and the discontinuity is the same one gram:gp-118 (しか〜ない) refused to encode. The noun branch is additionally wrong on its own terms: はない here is existential, the negative of ある, so an animate head noun requires はいない — executed on the mandated test noun it emits 学生はない, which must be 学生はいない. The base enum has no animacy value, the same wall that withheld があります / がいます / gp-12 / gp-13, so narrowing the base is not available either. No safe subset remains and no variants are emitted.",
+   "steps_unavailable": "Discontinuous two-site frame. The pattern is [clause ending in 〜ない] + noun + はない (食べられないものはない): a negative modifying clause and a head noun vary independently, and a step list builds from a single base, so no sequence can fill both sites. Each half on its own is not an instance of the point — the verb half is generic plain negation (書かない), the i-adjective half is the ordinary negative (高くない), and the noun half is bare existential negation (ものはない). The noun half is also animacy-restricted: はない is the negative of ある, so an animate head noun takes はいない (学生はいない, not the 学生はない these steps emit), and the base enum has no value that distinguishes animate from inanimate nouns.",
+   "self_test": [
+    {
+     "input": "書く — rejected verb variant [to-nai-stem, append \"い\"]",
+     "output": "書かない",
+     "ok": false
+    },
+    {
+     "input": "食べる — rejected verb variant [to-nai-stem, append \"い\"]",
+     "output": "食べない",
+     "ok": false
+    },
+    {
+     "input": "する / くる — rejected verb variant [to-nai-stem, append \"い\"]",
+     "output": "しない / こない",
+     "ok": false
+    },
+    {
+     "input": "高い — rejected i-adjective variant [to-adverbial, append \"ない\"]",
+     "output": "高くない",
+     "ok": false
+    },
+    {
+     "input": "学生 — rejected noun variant [append \"はない\"]",
+     "output": "学生はない (ungrammatical for an animate head noun; must be 学生はいない)",
+     "ok": false
+    },
+    {
+     "input": "静か — no variant proposed for a na-adjective base",
+     "output": "(no output)",
+     "ok": false
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-104",
+   "resolution": "fixed",
+   "resolution_note": "Fixed by re-basing, not by re-stating. The defect was that the productive slot had been identified as the ADJECTIVE: base i-adjective + generic negation turns the record's derivation line (少ない → 少なくない) into a rule over the whole class, so 高い comes out as 高くない / 高くありません carrying the litotes label \"não são poucos\", which is simply false — 高くない is the ordinary negative \"not expensive\". 少ない is the fixed lexical head of this point (structure_pattern and forms[0].form are both literally すくなくない); it is not a variable and no base in the enum produces it. The slot that actually varies is the topic noun, and the record's own formation names that frame explicitly: \"Costuma aparecer como 〜は少なくない\", with the example 日本語を勉強する人は少なくない. The repaired variants therefore append the entire fixed predicate to a noun base, so the litotes reading can only ever attach to 少なくない and no i-adjective base is accepted anywhere — 高くない has become unreachable from this record. The polite 少なくありません is the record's own polite form; it also lists 少なくないです, which is the plain variant plus です rather than a separate build, so it is not encoded as a third variant.",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "は少なくない"
+      }
+     ],
+     "example": "学生は少なくない"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "は少なくありません"
+      }
+     ],
+     "example": "学生は少なくありません"
+    }
+   ],
+   "self_test": [
+    {
+     "input": "学生 — variant 1 [noun, append \"は少なくない\"]",
+     "output": "学生は少なくない (\"there are not a few students\") — grammatical, and a true instance of the litotes this point teaches",
+     "ok": true
+    },
+    {
+     "input": "学生 — variant 2 [noun, append \"は少なくありません\"]",
+     "output": "学生は少なくありません — grammatical, the record's own polite form",
+     "ok": true
+    },
+    {
+     "input": "高い (i-adjective)",
+     "output": "(no variant accepts an i-adjective base — 高くない / 高くありません are no longer generated by this record)",
+     "ok": true
+    },
+    {
+     "input": "静か (na-adjective)",
+     "output": "(not accepted — no na-adjective variant)",
+     "ok": true
+    },
+    {
+     "input": "書く / 食べる / する / くる (verbs)",
+     "output": "(not accepted — no verb variant)",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-113",
+   "resolution": "partial",
+   "resolution_note": "Partial, on the model of gram:gp-127 (safe variants kept, the inexpressible branch named). Both checkers agreed that nothing currently emitted is WRONG — the defect is under-claiming against the record's own forms[], not mis-generation — so the two variants are carried over unchanged and re-verified: noun + の + ほかに(も) is verbatim the record's formation line (\"substantivo + の + ほかに(も)\", 日本語のほかに英語も話せます), and executed on the mandated test noun it gives 学生のほかに / 学生のほかにも, both grammatical and both instances of this point. What was missing is the steps_unavailable declaring that the other half of the record is deliberately not encoded. Two things go in it. First, forms[1] ほかは: the exclusion construction is 〜ほか(に)は + a NEGATIVE predicate (これよりほかに方法はない), so the obligatory negation lands on a separate word — the identical discontinuity gram:gp-118 (しか〜ない) refused to encode, and encoding only the noun side would license *これのほかには方法がある, the affirmative the branch exists to exclude. Second, the bare adverbial use the record's formation and explanation both give (ほかに / ほかにも sentence-initially, ほかに質問はありますか): it attaches to no base at all, and no op in the enum can place material ahead of a base — the same wall gram:gp-103 hit. No verb branch is emitted, because the record documents none.",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "のほかに"
+      }
+     ],
+     "example": "日本語のほかに"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "append",
+       "token": "のほかにも"
+      }
+     ],
+     "example": "これのほかにも"
+    }
+   ],
+   "steps_unavailable": "Two documented uses are excluded. (1) forms[1] ほかは, the exclusion branch: 〜ほか(に)は takes an obligatory NEGATIVE predicate on a separate word (これよりほかに方法はない), and the op set only appends to a single base, so no sequence can force the negation onto that predicate; a noun-side-only rule would license the affirmative the branch exists to rule out. Same discontinuity as gram:gp-118 (しか〜ない). (2) The bare adverbial use (ほかに / ほかにも standing at the head of the clause, ほかに質問はありますか): it attaches to no base, and no op can place material ahead of a base. Same wall as gram:gp-103. The emitted variants cover only the additive noun frame, noun + の + ほかに(も).",
+   "self_test": [
+    {
+     "input": "学生 — variant 1 [noun, append \"のほかに\"]",
+     "output": "学生のほかに — grammatical, additive frame as in the record's 日本語のほかに英語も話せます",
+     "ok": true
+    },
+    {
+     "input": "学生 — variant 2 [noun, append \"のほかにも\"]",
+     "output": "学生のほかにも — grammatical",
+     "ok": true
+    },
+    {
+     "input": "日本語 (the record's own noun) — variant 1",
+     "output": "日本語のほかに",
+     "ok": true
+    },
+    {
+     "input": "書く / 食べる / する / くる / 高い / 静か",
+     "output": "(not accepted — both variants are noun-based; the record documents no verb or adjective branch)",
+     "ok": true
+    },
+    {
+     "input": "学生 — ほかは exclusion branch",
+     "output": "(no variant emitted; see steps_unavailable — the obligatory negation sits on a separate predicate)",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-128",
+   "resolution": "partial",
+   "resolution_note": "Partial. The withheld set's variant 1 (verb, to-dictionary + ように) is DROPPED, not re-stated: executed literally on the mandated bases it emits 書くように / 食べるように / するように / くるように, and the record's nuance says flatly that purpose with a controllable (volitional) verb takes ために, not ように (\"para finalidade com verbo controlável (volitivo) o correto é ために\"). Those strings are wrong productions OF THIS POINT even though 書くように exists as a string in the unrelated indirect-command use 〜ように言う, which the record does not cover. The record's dictionary-form path is real but restricted to non-volitional / intransitive verbs — its own examples are 見えるように and 聞こえるように — and the base enum has only `verb`, with no value for non-volitional, so the branch moves to steps_unavailable instead of being kept in a form that licenses the forbidden production. Note that 見える and 聞こえる are separate lexical intransitives, not the potential of 見る / 聞く, so they are not recovered by the potential variant either; that is why this is partial and not fixed. The remaining three variants execute cleanly on every mandated base and between them cover both roles the record documents: purpose whose outcome is beyond the speaker's control (potential, and the negative 〜ないように) and wish / prayer (〜ますように, the record's 風邪が早く治りますように). The negative variant keeps the token \"いように\", which is correct under the settled な-inclusive to-nai-stem: 書かな + いように = 書かないように, no doubled な. nuance_tags additionally drops \"intention\": the record assigns intentional, controllable purpose to ために and defines ように as the form used precisely when \"o resultado escapa ao seu controle\", so tagging this point \"intention\" reinstates the exact ように / ために confusion the record was written to prevent. \"desire\" and \"request\" stay — both are grounded in the record's prayer and soft-request use — and the enum has no \"purpose\" value, so omission is the correct handling rather than a substitution.",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-potential"
+      },
+      {
+       "op": "append",
+       "token": "ように"
+      }
+     ],
+     "example": "書けるように"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-nai-stem"
+      },
+      {
+       "op": "append",
+       "token": "いように"
+      }
+     ],
+     "example": "忘れないように"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-masu-stem"
+      },
+      {
+       "op": "append",
+       "token": "ますように"
+      }
+     ],
+     "example": "治りますように"
+    }
+   ],
+   "steps_unavailable": "The dictionary-form purpose branch is not encoded. The record allows a dictionary-form verb before ように, but only a NON-VOLITIONAL / intransitive one — its examples are 見えるように and 聞こえるように — while its nuance requires ために for any controllable verb. The base enum has only `verb` and no way to express \"non-volitional\", so a to-dictionary rule would emit 書くように / 勉強するように as instances of this point, which the record forbids. The gap is not covered by the potential variant either: 見える and 聞こえる are separate lexical intransitives, not the potential of 見る / 聞く, so they are unreachable from any base.",
+   "nuance_tags": [
+    "desire",
+    "request"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "self_test": [
+    {
+     "input": "書く — variant 1 [to-potential, append \"ように\"]",
+     "output": "書けるように",
+     "ok": true
+    },
+    {
+     "input": "食べる — variant 1",
+     "output": "食べられるように",
+     "ok": true
+    },
+    {
+     "input": "する — variant 1",
+     "output": "できるように",
+     "ok": true
+    },
+    {
+     "input": "くる — variant 1",
+     "output": "こられるように",
+     "ok": true
+    },
+    {
+     "input": "書く — variant 2 [to-nai-stem (= 書かな), append \"いように\"]",
+     "output": "書かないように",
+     "ok": true
+    },
+    {
+     "input": "食べる — variant 2 [to-nai-stem (= 食べな), append \"いように\"]",
+     "output": "食べないように",
+     "ok": true
+    },
+    {
+     "input": "する / くる — variant 2 [to-nai-stem (= しな / こな), append \"いように\"]",
+     "output": "しないように / こないように",
+     "ok": true
+    },
+    {
+     "input": "書く / 食べる — variant 3 [to-masu-stem, append \"ますように\"]",
+     "output": "書きますように / 食べますように — the record's wish/prayer use (治りますように)",
+     "ok": true
+    },
+    {
+     "input": "する / くる — variant 3",
+     "output": "しますように / きますように",
+     "ok": true
+    },
+    {
+     "input": "高い / 静か / 学生",
+     "output": "(not accepted — all three variants are verb-based; the record documents no adjective or noun branch)",
+     "ok": true
+    },
+    {
+     "input": "書く / する — DROPPED variant [to-dictionary, append \"ように\"]",
+     "output": "書くように / するように — no longer generated: volitional-verb purpose takes ために per the record's own nuance",
+     "ok": true
+    }
+   ]
+  },
+  {
+   "slug": "gram:gp-133",
+   "resolution": "unavailable",
+   "resolution_note": "The finding is right and no repair is expressible. The point IS the doubling: structure_pattern is 〜でも 〜でも, forms[0].form is \"でも でも\", and the record's formation states the shape as a repetition — \"Substantivo + でも, repetido: 名詞 + でも + 名詞 + でも\". A step list starts from a single `base` and the closed op enum has no repetition op and no way to introduce a second, independently-varying noun, so no sequence can build the correlative that constitutes the pattern. The one-slot fallback is worse than emitting nothing: noun + でも executed on the mandated test noun gives 学生でも, and on the record's own noun コーヒーでも. Both are perfectly grammatical strings, which is what makes them dangerous — they are instances of a DIFFERENT record in this same corpus, gram:demo (\"even X / X or something\"), and a generator fed these steps would present 学生でも under the label \"tanto… quanto… / seja… seja…\". The withheld variant's own `example` field, コーヒーでも紅茶でもいい, is not derivable from its own steps, which is the proof that the steps do not build this pattern. The record's second documented use, interrogative + でも (誰でも, 何でも, どこでも, いつでも), is a closed lexical list of question words rather than a productive rule over any base value in the enum, so it cannot rescue a variant either. Both go into steps_unavailable.",
+   "steps_unavailable": "Two-slot correlative. The pattern is noun + でも + noun + でも (コーヒーでも紅茶でもいいです) and the doubling is the point; a step list builds from one base and the op enum has no repetition op and no way to introduce the second noun, so no sequence produces it. A single noun + でも is not a safe partial: it emits grammatical strings (学生でも, コーヒーでも) that belong to a different record, gram:demo (\"even X / X or something\"), and would be labelled \"both X and Y / whether X or Y\". The record's other use, interrogative + でも (誰でも / 何でも / どこでも / いつでも), is a closed lexical list of question words, not a rule over any base in the enum.",
+   "self_test": [
+    {
+     "input": "学生 — rejected noun variant [none, append \"でも\"]",
+     "output": "学生でも — grammatical, but an instance of gram:demo, not of 〜でも〜でも",
+     "ok": false
+    },
+    {
+     "input": "コーヒー (the record's own noun) — rejected noun variant",
+     "output": "コーヒーでも — only the first of the two required slots",
+     "ok": false
+    },
+    {
+     "input": "コーヒー + 紅茶 — the record's example コーヒーでも紅茶でもいい",
+     "output": "(unreachable — no step introduces the second noun slot)",
+     "ok": false
+    },
+    {
+     "input": "何 / 誰 — the interrogative branch",
+     "output": "何でも / 誰でも — a closed lexical list, not derivable from the base enum",
+     "ok": false
+    },
+    {
+     "input": "書く / 食べる / する / くる / 高い / 静か",
+     "output": "(no variant proposed — the record's formation is noun-only)",
+     "ok": false
+    }
+   ]
+  }
+ ]
+}

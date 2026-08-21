@@ -1286,7 +1286,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "Lexically restricted noun class. The record's formation names the slot \"Substantivo de sensação\" and enumerates it (匂い・味・音・声・気・感じ・寒気・吐き気); it is not the open class `noun`. A base:noun variant appending がする executes on the mandated test noun 学生 as 学生がする, which is not an instance of this pattern at all -- it re-parses as ordinary subject-が + する -- and equally licenses 本がする / 車がする. The base enum has no sensation-noun value, so no steps are emitted; cf. gram:gari, refused on the same grounds.",
     "nuance": {
       "pt-BR": "Cuidado com a partícula: é sempre が, não を. Quem fala português tende a tratar \"sentir um cheiro\" como objeto direto, mas em japonês a sensação é o sujeito gramatical que \"aparece\". Note também que se usa する (não ある) para cheiro, som e sabor; usar あります soa errado nesses casos. Registro neutro, comum na fala e na escrita.",
       "en": "Mind the particle: it's always が, not を. Portuguese speakers tend to treat 'smelling a scent' as a direct object, but in Japanese the sensation is the grammatical subject that 'appears.' Note too that you use する (not ある) for smell, sound, and taste; using あります sounds wrong in these cases. Neutral register, common in speech and writing."
@@ -1408,7 +1408,45 @@
       "pt-BR": "Raiz do adjetivo de emoção (adjetivo-い sem い; adjetivo-な sem な) + がる. Ex.: 怖い→怖がる, 寂しい→寂しがる, 嫌だ→嫌がる. Com o desiderativo 〜たい, troca-se たい→たがる: 食べたい→食べたがる (\"mostra vontade de comer\"). 〜がる conjuga como verbo godan: 怖がる→怖がります→怖がった. A forma 〜がっている descreve o sinal observado no momento. Importante: o objeto desejado leva を com 〜たがる/欲しがる (não が): パンを食べたがる.",
       "en": "Stem of an emotion adjective (i-adjective without い; na-adjective without な) + がる. Ex.: 怖い→怖がる, 寂しい→寂しがる, 嫌だ→嫌がる. With the desiderative 〜たい, you change たい→たがる: 食べたい→食べたがる ('shows a desire to eat'). 〜がる conjugates like a godan verb: 怖がる→怖がります→怖がった. The 〜がっている form describes the sign observed at the moment. Important: the desired object takes を with 〜たがる/欲しがる (not が): パンを食べたがる."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たがる"
+            }
+          ],
+          "example": "食べたがる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たがる"
+            },
+            {
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いる"
+            }
+          ],
+          "example": "食べたがっている"
+        }
+      ]
+    },
     "nuance_tags": [
       "desire",
       "continuation"
@@ -1418,7 +1456,7 @@
       "written",
       "casual-friends"
     ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "The adjective bases are excluded. The record restricts them to EMOTION adjectives (\"Raiz do adjetivo de emoção (adjetivo-い sem い; adjetivo-な sem な) + がる\": 怖い→怖がる, 寂しい→寂しがる, 嫌だ→嫌がる, 欲しい→欲しがる), and the base enum has no emotion-adjective value. Unrestricted i-adjective / na-adjective variants execute on the mandated test bases as 高がる, 高がっている and 静かがる, none of which is a word -- the refusal gram:gari makes for *高がり. Only the desiderative half is emitted, which the record derives on any verb (食べたい→食べたがる) and which runs clean on every mandated verb base.",
     "nuance": {
       "pt-BR": "Armadilha central para quem fala português: não use 〜たい nem 嬉しい/欲しい direto para terceiros como afirmação. \"Ele está feliz\" não é 彼は嬉しい, e sim 彼は嬉しがっている ou 嬉しそうだ. A troca de partícula com 欲しがる/〜たがる (が→を) também pega muita gente: na primeira pessoa usamos が (水が欲しい), mas com 〜がる o desejo vira ação transitiva e leva を (水を欲しがる). 〜がる pode soar presunçoso com um superior; nesses casos prefira 〜そうだ ou 〜ようだ. Registro neutro.",
       "en": "Central trap for Portuguese speakers: don't use 〜たい or 嬉しい/欲しい directly for third parties as an assertion. 'He is happy' is not 彼は嬉しい, but 彼は嬉しがっている or 嬉しそうだ. The particle change with 欲しがる/〜たがる (が→を) also catches many people: in the first person we use が (水が欲しい), but with 〜がる the desire becomes a transitive action and takes を (水を欲しがる). 〜がる can sound presumptuous with a superior; in those cases prefer 〜そうだ or 〜ようだ. Neutral register."
@@ -1584,7 +1622,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "Discontinuous two-site pattern. しか attaches to the limited noun or quantity, but the obligatory negation lands on a DIFFERENT word, the predicate (日本語しか話せない, 一人しか来なかった), and the op set only appends to a single base, so no sequence can force the nai-form onto the separate predicate. A noun-only variant emits the bare fragment 学生しか with no negative constraint attached, licensing exactly the 千円しかある the record's own nuance forbids (\"Não use しか com verbo afirmativo\"); a verb-only variant emits 書かない / 食べない / しない / こない, generic negation carrying none of this point's material. The duplicate record gram:gp-118 is steps_unavailable on the same argument. No steps are emitted.",
     "nuance": {
       "pt-BR": "Compare com だけ (\"apenas\"), que é neutro e leva verbo afirmativo (千円だけある = \"tenho exatamente mil ienes\", sem julgamento), enquanto しか〜ない carrega a ideia de \"só isso e nada mais, é pouco\". A grande armadilha para quem fala português: o verbo precisa ficar negativo mesmo que em português a frase seja afirmativa (\"só tenho\" → しかない, não しかある). Não use しか com verbo afirmativo. Registro neutro, serve para fala e escrita.",
       "en": "Compare with だけ ('only'), which is neutral and takes an affirmative verb (千円だけある = 'I have exactly a thousand yen,' no judgment), while しか〜ない carries the idea of 'only this and nothing more, it's not much.' The big trap for Portuguese speakers: the verb must stay negative even if in Portuguese the sentence is affirmative ('I only have' → しかない, not しかある). Don't use しか with an affirmative verb. Neutral register, fitting speech and writing."
@@ -1643,7 +1681,7 @@
     "usage_contexts": [
       "written"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "Animacy split. The counter choice is the whole content of the point: the record's formation says \"Para pessoas ou animais, use 一人 (ひとり) no lugar de 一つ\" and its nuance repeats it. The base enum has only the open value `noun`, so the two candidate variants (noun + の一つだ, noun + の一人だ) declare the same base and nothing lets a consumer choose between them -- the first executes on the mandated test noun 学生 as 学生の一つだ, the exact error the record warns against, and the second executes on the record's own 山 as 山の一人だ. Neither is safe on an open noun base, so no steps are emitted; cf. gram:gp-12 / gram:gp-13, refused for the identical ある/いる animacy split.",
     "nuance": {
       "pt-BR": "Quem fala português às vezes esquece o の de ligação antes de 一つ (é 〜の一つ, não 〜一つ). Note também a leitura ひとつ e o uso do classificador certo: para pessoas, use 一人 (ひとり), não 一つ. Soa um pouco formal/escrito e é ótimo para deixar elogios mais modestos, em vez de afirmar que algo é \"o único\" ou \"o melhor\". Registro neutro.",
       "en": "Portuguese speakers sometimes forget the linking の before 一つ (it's 〜の一つ, not 〜一つ). Note too the reading ひとつ and the use of the correct classifier: for people, use 一人 (ひとり), not 一つ. It sounds a bit formal/written and is great for making praise more modest, rather than asserting that something is 'the only one' or 'the best.' Neutral register."
@@ -1697,14 +1735,9 @@
       "en": "The pattern fits two negations into the same sentence. The first appears within a clause that modifies a noun: [verb/adjective in the negative 〜ない-form] + noun. Then that noun is followed by は + ない (there is no). Schema: 〜ない + [noun] + はない. Ex.: 食べられないものはない = 'there is nothing that can't be eaten' (= you can eat everything). For 'to exist/there to be', use ない (informal) or ありません (formal)."
     },
     "formation_steps": null,
-    "nuance_tags": [
-      "emphasis"
-    ],
-    "usage_contexts": [
-      "written",
-      "literary"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": "Discontinuous two-site frame. The pattern is [clause ending in 〜ない] + noun + はない (食べられないものはない): a negative modifying clause and a head noun vary independently, and a step list builds from a single base, so no sequence can fill both sites. Each half on its own is not an instance of the point — the verb half is generic plain negation (書かない), the i-adjective half is the ordinary negative (高くない), and the noun half is bare existential negation (ものはない). The noun half is also animacy-restricted: はない is the negative of ある, so an animate head noun takes はいない (学生はいない, not the 学生はない these steps emit), and the base enum has no value that distinguishes animate from inanimate nouns.",
     "nuance": {
       "pt-BR": "A armadilha para quem fala português é se perder na dupla negação e ler como negativo, quando o sentido final é fortemente afirmativo: 〜ないものはない significa \"existe de tudo\", não \"não existe nada\". Cuidado também para não confundir o は de はない (tópico do que \"não existe\") com outras partículas; a ênfase recai sobre esse は. É de registro neutro a levemente literário/retórico.",
       "en": "The trap for Portuguese speakers is getting lost in the double negative and reading it as negative, when the final sense is strongly affirmative: 〜ないものはない means 'there's everything,' not 'there's nothing.' Be careful too not to confuse the は of はない (topic of what 'doesn't exist') with other particles; the emphasis falls on that は. It's a neutral to slightly literary/rhetorical register."
@@ -1816,15 +1849,35 @@
       "pt-BR": "少ない é um adjetivo-い. A negativa se faz trocando o 〜い final por 〜くない: 少ない → 少なくない (すくなくない). Forma polida: 少なくありません ou 少なくないです. Costuma aparecer como 〜は少なくない (\"... não são poucos\"). Ex.: 日本語(にほんご)を勉強(べんきょう)する人(ひと)は少なくない = \"não são poucas as pessoas que estudam japonês\".",
       "en": "少ない is an i-adjective. The negative is made by replacing the final 〜い with 〜くない: 少ない → 少なくない (すくなくない). Polite form: 少なくありません or 少なくないです. It usually appears as 〜は少なくない ('... are not few'). Ex.: 日本語(にほんご)を勉強(べんきょう)する人(ひと)は少なくない = 'there are not few people who study Japanese'."
     },
-    "formation_steps": null,
-    "nuance_tags": [
-      "softening"
-    ],
-    "usage_contexts": [
-      "written",
-      "academic"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "は少なくない"
+            }
+          ],
+          "example": "学生は少なくない"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "は少なくありません"
+            }
+          ],
+          "example": "学生は少なくありません"
+        }
+      ]
+    },
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Atenção a uma pegadinha de forma: embora 少ない pareça terminar em 〜ない como uma negação, ele já é um adjetivo positivo (\"poucos\"); a negação de verdade é 少なくない. Não confunda com o verbo 少なくなる (\"diminuir\"). O tom é mais formal, escrito e comedido; em conversa casual o japonês diria direto 多(おお)い (\"muitos\").",
       "en": "Watch a form trap: although 少ない seems to end in 〜ない like a negation, it's already a positive adjective ('few'); the real negation is 少なくない. Don't confuse it with the verb 少なくなる ('to decrease'). The tone is more formal, written, and restrained; in casual conversation a Japanese speaker would just say 多(おお)い ('many')."
@@ -2663,13 +2716,35 @@
       "pt-BR": "Como advérbio: ほかに / ほかにも no início ou no meio da frase. Como \"além de X\": substantivo + の + ほかに(も) (日本語のほかに英語も話せます = \"além de japonês, falo inglês também\"). Em construção de exclusão: 〜ほか(に)は + verbo negativo (これより ほかに 方法はない = \"não há outro jeito a não ser este\"). Escreve-se 他 em kanji, mas é comum em kana.",
       "en": "As an adverb: ほかに / ほかにも at the start or in the middle of the sentence. As 'besides X': noun + の + ほかに(も) (日本語のほかに英語も話せます = 'besides Japanese, I can also speak English'). In an exclusion construction: 〜ほか(に)は + negative verb (これより ほかに 方法はない = 'there is no other way besides this'). It is written 他 in kanji, but it is common in kana."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のほかに"
+            }
+          ],
+          "example": "日本語のほかに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のほかにも"
+            }
+          ],
+          "example": "これのほかにも"
+        }
+      ]
+    },
     "nuance_tags": [],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": "Two documented uses are excluded. (1) forms[1] ほかは, the exclusion branch: 〜ほか(に)は takes an obligatory NEGATIVE predicate on a separate word (これよりほかに方法はない), and the op set only appends to a single base, so no sequence can force the negation onto that predicate; a noun-side-only rule would license the affirmative the branch exists to rule out. Same discontinuity as gram:gp-118 (しか〜ない). (2) The bare adverbial use (ほかに / ほかにも standing at the head of the clause, ほかに質問はありますか): it attaches to no base, and no op can place material ahead of a base. Same wall as gram:gp-103. The emitted variants cover only the additive noun frame, noun + の + ほかに(も).",
     "nuance": {
       "pt-BR": "Diferença sutil: ほかに lista mais um item (\"além disso\"), enquanto ほか(に)は + negativo restringe (\"nada além de\"). Não confunda com べつ(別): ambos remetem a \"outro\", mas 別 enfatiza \"diferente/separado\" e ほか \"em acréscimo/o restante\". Cuidado com a ordem: o que vem antes de のほかに é o ponto de partida (\"além de X, também Y\"), espelhando o português, mas o の é obrigatório e não corresponde ao \"de\" preposicional.",
       "en": "Subtle difference: ほかに lists one more item ('besides that'), while ほか(に)は + negative restricts ('nothing besides'). Don't confuse it with べつ(別): both refer to 'other,' but 別 emphasizes 'different/separate' and ほか 'in addition/the rest.' Mind the order: what comes before のほかに is the starting point ('besides X, also Y'), mirroring Portuguese, but the の is mandatory and doesn't correspond to the preposition 'de.'"
@@ -3944,9 +4019,53 @@
       "pt-BR": "Para finalidade: oração com verbo na forma de dicionário ou potencial/intransitivo + ように + oração principal. Costuma vir com verbos não volitivos ou negativos: 見えるように (\"para que se possa ver\"), 忘れないように (\"para não esquecer\"), 聞こえるように大きい声で話す (\"falar alto para que se ouça\"). Para desejo/oração: oração + ように (em preces, muitas vezes 〜ますように). Não confunda com ようにする (\"esforçar-se para fazer/criar o hábito\") nem ようになる (\"passar a fazer/conseguir\").",
       "en": "For purpose: a clause with the verb in dictionary form or potential/intransitive + ように + the main clause. It usually comes with non-volitional or negative verbs: 見えるように ('so that one can see'), 忘れないように ('so as not to forget'), 聞こえるように大きい声で話す ('speak loudly so that it can be heard'). For wish/prayer: clause + ように (in prayers, often 〜ますように). Don't confuse it with ようにする ('make an effort to do / form the habit') nor ようになる ('come to do / become able to')."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-potential"
+            },
+            {
+              "op": "append",
+              "token": "ように"
+            }
+          ],
+          "example": "書けるように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いように"
+            }
+          ],
+          "example": "忘れないように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "ますように"
+            }
+          ],
+          "example": "治りますように"
+        }
+      ]
+    },
     "nuance_tags": [
-      "intention",
       "desire",
       "request"
     ],
@@ -3954,7 +4073,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "The dictionary-form purpose branch is not encoded. The record allows a dictionary-form verb before ように, but only a NON-VOLITIONAL / intransitive one — its examples are 見えるように and 聞こえるように — while its nuance requires ために for any controllable verb. The base enum has only `verb` and no way to express \"non-volitional\", so a to-dictionary rule would emit 書くように / 勉強するように as instances of this point, which the record forbids. The gap is not covered by the potential variant either: 見える and 聞こえる are separate lexical intransitives, not the potential of 見る / 聞く, so they are unreachable from any base.",
     "nuance": {
       "pt-BR": "Pegadinha clássica para brasileiros: para finalidade com verbo controlável (volitivo) o correto é ために, não ように. Use ように quando o resultado escapa ao seu controle (poder ver, não esquecer, melhorar) e ために quando você controla diretamente a ação-objetivo (留学するために = \"para estudar fora\"). Registro neutro; 〜ますように em preces tem tom respeitoso e emotivo.",
       "en": "Classic trap for Brazilians: for purpose with a controllable (volitional) verb, the correct one is ために, not ように. Use ように when the result is beyond your control (being able to see, not forgetting, improving) and ために when you directly control the goal action (留学するために = 'in order to study abroad'). Neutral register; 〜ますように in prayers has a respectful, emotional tone."
@@ -4466,14 +4585,9 @@
       "en": "Noun + でも, repeated: noun + でも + noun + でも. With interrogative words, でも creates the sense of 'any': 誰でも (dare demo, 'anyone'), 何でも (nani demo, 'anything'), どこでも (doko demo, 'anywhere'), いつでも (itsu demo, 'anytime'). It usually closes with いい ('is fine'), 大丈夫 ('it's okay'), or a verb that holds for both."
     },
     "formation_steps": null,
-    "nuance_tags": [
-      "concession"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": "Two-slot correlative. The pattern is noun + でも + noun + でも (コーヒーでも紅茶でもいいです) and the doubling is the point; a step list builds from one base and the op enum has no repetition op and no way to introduce the second noun, so no sequence produces it. A single noun + でも is not a safe partial: it emits grammatical strings (学生でも, コーヒーでも) that belong to a different record, gram:demo (\"even X / X or something\"), and would be labelled \"both X and Y / whether X or Y\". The record's other use, interrogative + でも (誰でも / 何でも / どこでも / いつでも), is a closed lexical list of question words, not a rule over any base in the enum.",
     "nuance": {
       "pt-BR": "Registro neutro, comum na fala e na escrita. Não confunda este でも (\"seja... seja...\") com o でも de início de frase que significa \"mas/porém\", são usos diferentes. Armadilha para brasileiros: a partícula を/が antes de でも costuma sumir (コーヒーでも, não コーヒーをでも). Para listar duas opções equivalentes em uma escolha simples, 〜か〜 também existe, mas 〜でも〜でも enfatiza melhor o \"qualquer um serve\".",
       "en": "Neutral register, common in speech and writing. Don't confuse this でも ('whether... or...') with the でも at the start of a sentence meaning 'but/however', they're different uses. Trap for Brazilians: the particle を/が before でも usually drops (コーヒーでも, not コーヒーをでも). To list two equivalent options in a simple choice, 〜か〜 also exists, but 〜でも〜でも better emphasizes 'any one will do.'"
@@ -4700,16 +4814,88 @@
       "pt-BR": "[Oração na forma simples] + と + 考えられている. A partícula と (to) marca o conteúdo do pensamento (\"que...\"). 考えられている = 考える (ichidan) na passiva 考えられる + ている (estado contínuo). Variações: 考えられていた (passado), 考えられる (sem ている, mais pontual).",
       "en": "[Clause in plain form] + と + 考えられている. The particle と (to) marks the content of the thought ('that...'). 考えられている = 考える (ichidan) in the passive 考えられる + ている (continuous state). Variations: 考えられていた (past), 考えられる (without ている, more punctual)."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "と考えられている"
+            }
+          ],
+          "example": "起こると考えられている"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "と考えられている"
+            }
+          ],
+          "example": "起こったと考えられている"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "none"
+            },
+            {
+              "op": "append",
+              "token": "と考えられている"
+            }
+          ],
+          "example": "丸いと考えられている"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "none"
+            },
+            {
+              "op": "append",
+              "token": "だと考えられている"
+            }
+          ],
+          "example": "安全だと考えられている"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "none"
+            },
+            {
+              "op": "append",
+              "token": "だと考えられている"
+            }
+          ],
+          "example": "原因だと考えられている"
+        }
+      ]
+    },
     "nuance_tags": [
-      "conjecture",
-      "hearsay"
+      "conjecture"
     ],
     "usage_contexts": [
       "written",
       "academic"
     ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Registro formal/escrito. Diferença para brasileiros: o と aqui é o \"que\" de discurso indireto e nunca é traduzido por uma partícula como を ou が, ele introduz a ideia inteira. Use a forma simples antes de と (丸い, não 丸いです). Comparado a と言われている (\"diz-se que\", baseado no que se fala), と考えられている enfatiza um raciocínio/conclusão; ambos são impessoais, mas o foco difere.",
       "en": "Formal/written register. Difference for Brazilians: the と here is the 'that' of indirect speech and is never translated by a particle like を or が, it introduces the whole idea. Use the plain form before と (丸い, not 丸いです). Compared to と言われている ('it's said that,' based on what people say), と考えられている emphasizes a reasoning/conclusion; both are impersonal, but the focus differs."
@@ -5402,7 +5588,58 @@
       "pt-BR": "Verbos grupo 1 (godan): troca a última sílaba -u por -eba (いく → いけば, のむ → のめば). Grupo 2 (ichidan): troca る por れば (たべる → たべれば, みる → みれば). Irregulares: する → すれば, くる → くれば. Adjetivos い: troca い por ければ (たかい → たかければ). Negativo (verbos e adjetivos): 〜なければ (e.g., 行かなければ, \"se não for\"). Com substantivos/adjetivos な usa-se geralmente なら, não ば.",
       "en": "Group 1 (godan) verbs: replace the final -u syllable with -eba (いく → いけば, のむ → のめば). Group 2 (ichidan): replace る with れば (たべる → たべれば, みる → みれば). Irregulars: する → すれば, くる → くれば. い-adjectives: replace い with ければ (たかい → たかければ). Negative (verbs and adjectives): 〜なければ (e.g., 行かなければ, \"if one does not go\"). With nouns and な-adjectives, なら is generally used instead of ば."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-conditional-ba"
+            }
+          ],
+          "example": "書けば"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "ければ"
+            }
+          ],
+          "example": "行かなければ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-conditional-ba"
+            }
+          ],
+          "example": "高ければ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-adverbial"
+            },
+            {
+              "op": "append",
+              "token": "なければ"
+            }
+          ],
+          "example": "高くなければ"
+        }
+      ]
+    },
     "nuance_tags": [
       "condition"
     ],
@@ -5410,7 +5647,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "O japonês tem várias formas de \"se\" (〜ば, 〜たら, 〜と, 〜なら) e elas não são intercambiáveis como o nosso único \"se\". 〜ば foca na condição (\"caso A se cumpra\") e em relações gerais/hipotéticas, e tende a evitar ordens ou convites na oração principal quando a condição é uma ação controlável, nesses casos 〜たら soa mais natural. Não confunda este 〜ば condicional com o 〜ばよかった (arrependimento), que é um uso especializado dessa mesma forma.",
       "en": "Japanese has several forms of 'if' (〜ば, 〜たら, 〜と, 〜なら) and they're not interchangeable like our single 'se.' 〜ば focuses on the condition ('should A be met') and on general/hypothetical relations, and it tends to avoid orders or invitations in the main clause when the condition is a controllable action, in those cases 〜たら sounds more natural. Don't confuse this conditional 〜ば with 〜ばよかった (regret), which is a specialized use of this same form."
@@ -6596,11 +6833,8 @@
     },
     "formation_steps": null,
     "nuance_tags": [],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": "ごろ selects a time-point noun (clock time, day, week, era) and the alternate shape のころ selects a life-stage noun; the base enum's only nominal value is `noun`, which is unrestricted, so any rule that accepts a noun licenses *学生ごろ, *本ごろ and *五人ごろ — the very error the record's nuance is written to prevent (ごろ for points in time; ぐらい/くらい for quantities and counts). The record's own third example 子供のころ additionally needs の plus the unvoiced ころ, because rendaku fires only on direct suffixation, so a single noun rule cannot produce both attachment shapes without producing the wrong one for the other class. Adding a second [noun → append のころ] variant does not fix this: it leaves *学生ごろ licensed and adds *3時のころ. No base value expresses \"time-point noun\", and none was invented.",
     "nuance": {
       "pt-BR": "Armadilha importante: ごろ é só para PONTOS no tempo (horas, dias, anos); para QUANTIDADES/durações aproximadas usa-se ぐらい／くらい (3時間ぐらい = \"cerca de 3 horas\"). Errar isso é o deslize mais comum. Não use ごろ com números de coisas (pessoas, ienes); ali entra くらい/ぐらい também.",
       "en": "Important trap: ごろ is only for POINTS in time (hours, days, years); for approximate QUANTITIES/durations you use ぐらい／くらい (3時間ぐらい = 'about 3 hours'). Getting this wrong is the most common slip. Don't use ごろ with counts of things (people, yen); there くらい/ぐらい applies too."
@@ -7045,7 +7279,45 @@
       "pt-BR": "Tira-se o い final do adjetivo-い ou o な do adjetivo-な e acrescenta-se がる: 寒い→寒がる, 怖い→怖がる, ほしい→ほしがる, いやだ→いやがる. Com 〜たい (querer fazer), a forma vira 〜たがる: 食べたい→食べたがる (\"demonstra querer comer\"). Como がる é verbo do grupo 1 (う-verb), conjuga normalmente: 寒がっている、欲しがった、怖がりません.",
       "en": "Drop the final い of the い-adjective or the な of the な-adjective and add がる: 寒い→寒がる, 怖い→怖がる, ほしい→ほしがる, いやだ→いやがる. With 〜たい (to want to do), the form becomes 〜たがる: 食べたい→食べたがる (\"to show signs of wanting to eat\"). Since がる is a Group 1 verb (う-verb), it conjugates normally: 寒がっている、欲しがった、怖がりません."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たがる"
+            }
+          ],
+          "example": "食べたがる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たがる"
+            },
+            {
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いる"
+            }
+          ],
+          "example": "食べたがっている"
+        }
+      ]
+    },
     "nuance_tags": [
       "desire"
     ],
@@ -7053,7 +7325,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "The い-adjective and な-adjective bases of 〜がる cannot be encoded. がる attaches only to adjectives of feeling or desire — the record names 寒い, 怖い, ほしい, いやだ — and is not productive over property adjectives, so an unrestricted [i-adjective → replace-ending がる] licenses *高がる and *大きがる, [na-adjective → append がる] licenses *静かがる, and the chained ている form licenses *高がっている. The base enum has no psych/desire-adjective value and no op narrows the class, so only the verb path (〜たがる, from the record's 食べたい → 食べたがる) is emitted. The adjective examples the record teaches (寒がる, 怖がる, ほしがる, いやがる) remain available as listed lexical forms in the prose fields; they are simply not machine-derivable from a bare adjective base.",
     "nuance": {
       "pt-BR": "Armadilha central para lusófonos: em português dizemos livremente \"ele quer\", \"ela tem frio\"; em japonês, 彼はほしい ou 彼は寒い soam errados para terceiros, use 欲しがる／寒がる. Reserve os adjetivos puros (寒い、ほしい) para você mesmo (1ª pessoa) e para perguntas diretas ao ouvinte. Note também que o objeto de desejo, que com ほしい leva が (車がほしい), com 欲しがる passa a levar を (車を欲しがる).",
       "en": "Central trap for Lusophones: in Portuguese we freely say 'ele quer,' 'ela tem frio'; in Japanese, 彼はほしい or 彼は寒い sound wrong for third parties, use 欲しがる／寒がる. Reserve the pure adjectives (寒い、ほしい) for yourself (1st person) and for direct questions to the listener. Note too that the object of desire, which with ほしい takes が (車がほしい), with 欲しがる comes to take を (車を欲しがる)."
@@ -7841,17 +8113,33 @@
       "pt-BR": "まい: com verbos do grupo 1 (godan) liga-se à forma dicionário → 行くまい (não irei / decerto não vai). Com grupo 2 (ichidan) usa-se a forma dicionário ou a raiz + まい → 食べるまい / 食べまい. Irregulares: するまい/すまい, 来る→来るまい/こまい. のように/のような: substantivo + のように (antes de verbo/adjetivo) ou のような (antes de substantivo): 雪のように白い (branco como neve), 夢のような話 (uma história como um sonho).",
       "en": "まい: with Group 1 (godan) verbs it attaches to the dictionary form → 行くまい (I will not go / it surely won't). With Group 2 (ichidan) the dictionary form or the stem + まい is used → 食べるまい / 食べまい. Irregulars: するまい/すまい, 来る→来るまい/こまい. のように/のような: noun + のように (before a verb/adjective) or のような (before a noun): 雪のように白い (white like snow), 夢のような話 (a story like a dream)."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "まい"
+            }
+          ],
+          "example": "行くまい"
+        }
+      ]
+    },
     "nuance_tags": [
       "intention",
-      "conjecture",
-      "comparison"
+      "conjecture"
     ],
     "usage_contexts": [
       "written",
       "literary"
     ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": "The ichidan and irregular stem alternates the record documents (食べる → 食べまい, する → すまい, 来る → こまい) have no encoding. They attach まい to the verb stem, and the base enum has no ichidan-only or irregular-only value, so a [verb → to-masu-stem → append まい] variant would emit *書きまい for godan verbs. The emitted to-dictionary branch is the one path valid for all four verb classes (書くまい / 食べるまい / するまい / 来るまい), so the alternates are a coverage gap, not a correctness one. Separately, the 〜のように / 〜のような half of this record is deliberately not encoded here: the record's own structure_pattern identifies it as a concatenation bug and orders it stripped, and gram:gp-153 / gram:gp-154 / gram:gp-77 already carry those rules.",
     "nuance": {
       "pt-BR": "まい é bastante formal e literário (jornais, discursos, escrita); no dia a dia o japonês prefere 〜ないだろう (decerto não) ou 〜ないつもりだ (não pretendo). Não confunda のように (\"como/igual a\", comparação) com a partícula より (\"mais que\"): 天使のように = \"como um anjo\", não \"mais que um anjo\". E のような vem antes de substantivo, のように antes de verbo/adjetivo, troca comum entre iniciantes.",
       "en": "まい is quite formal and literary (newspapers, speeches, writing); in everyday life Japanese prefers simpler expressions like 〜ないだろう (surely not) or 〜ないつもりだ (I don't intend to). Don't confuse のように ('like/equal to,' comparison) with the particle より ('more than'): 天使のように = 'like an angel,' not 'more than an angel.' And のような comes before a noun, のように before a verb/adjective (a common beginner swap.)"
@@ -9534,15 +9822,9 @@
       "en": "It is a godan verb with an irregular polite conjugation: the stem is いらっしゃ-, but in the polite present it loses the り → いらっしゃいます (not いらっしゃります). て-form: いらっしゃって. Welcome greeting: いらっしゃい / いらっしゃいませ. It combines with the て-form in 〜ていらっしゃる (honorific version of 〜ている: 待っていらっしゃいます, \"is waiting\", with respect)."
     },
     "formation_steps": null,
-    "nuance_tags": [
-      "honorific",
-      "politeness"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "business"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": "Suppletive honorific verb, not a productive attachment pattern. いらっしゃる REPLACES the lexemes いる / 行く / 来る outright; the closed op enum has no lexical-substitution op and the base enum has no value for the verb being replaced, so the record's own pattern (お客様がいらっしゃいます, いらっしゃいませ) is not derivable. The record's formation section is an irregular-conjugation list (stem いらっしゃ-, polite いらっしゃいます not いらっしゃります, て-form いらっしゃって), not build steps. The only expressible sequence, verb + to-te-form + 'いらっしゃる', builds the separate construction 〜ていらっしゃる (honorific of 〜ている, mentioned once as a trailing combination note): it yields the progressive/resultative meaning instead of 'estar / ir / vir', cannot generate the headline use, and licenses *いていらっしゃる on the very verb いらっしゃる supplants. Same treatment as gram:itashimasu and gram:gp-19.",
     "nuance": {
       "pt-BR": "Use いらっしゃる SÓ para a outra pessoa ou para terceiros que você respeita, NUNCA para si mesmo ou para o seu grupo (in-group); para si, use o humilde 参る（まいる）ou おる. Esse contraste entre 尊敬語 (eleva o outro) e 謙譲語 (humilde, rebaixa a si) não tem paralelo direto em português e é a maior armadilha do keigo. E lembre da forma polida irregular いらっしゃいます (não いらっしゃります).",
       "en": "Use いらっしゃる ONLY for the other person or for respected third parties, NEVER for yourself or your group (in-group); for yourself, use the humble 参る（まいる）or おる. This contrast between 尊敬語 (elevates the other) and 謙譲語 (humble, lowers oneself) has no direct parallel in Portuguese and is the biggest trap of keigo. And remember the irregular polite form いらっしゃいます (not いらっしゃります)."
@@ -10516,13 +10798,91 @@
       "pt-BR": "ごろ: liga-se direto a uma expressão de tempo pontual, sem partícula, 7時ごろ (lá pelas 7h), 来週ごろ. ころ: usa-se depois de substantivo + の ou depois de verbo/adjetivo na forma simples, 学生のころ (na época de estudante), 子供だったころ (quando era criança), 日本に来たころ (por volta de quando vim ao Japão).",
       "en": "ごろ: it attaches directly to an expression of point-in-time, without a particle, 7時ごろ (around 7 o'clock), 来週ごろ. ころ: it is used after noun + の or after a verb/adjective in plain form, 学生のころ (back in student days), 子供だったころ (when I was a child), 日本に来たころ (around when I came to Japan)."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "書くころ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "日本に来たころ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-attributive"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "若いころ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "to-attributive"
+            },
+            {
+              "op": "append",
+              "token": "ころ"
+            }
+          ],
+          "example": "静かなころ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のころ"
+            }
+          ],
+          "example": "学生のころ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だったころ"
+            }
+          ],
+          "example": "子供だったころ"
+        }
+      ]
+    },
     "nuance_tags": [],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": "Bare ごろ (7時ごろ, 来週ごろ) is excluded. The record restricts it to point-in-time expressions - 'liga-se direto a uma expressao de tempo pontual, sem particula' - which is a semantic subclass of noun, and the base enum has no time-point-noun value. Declaring base noun accepts every noun and generates 学生ごろ, for which the record itself gives the correct form 学生のころ, and 3時間ごろ, which the record's nuance field bans outright ('use ごろ so para pontos no tempo e ぐらい/くらい para quantidades e duracoes. Nao diga 3時間ごろ'). The ころ variants above carry no such restriction and are complete. ごろ vs ころ is also a reading split the step ops cannot express: the same 頃 is read ごろ after a time point and ころ after an adnominal.",
     "nuance": {
       "pt-BR": "Armadilha clássica para brasileiros: use ごろ só para pontos no tempo (horas, datas) e ぐらい/くらい para quantidades e durações. 3時ごろ (por volta das 3h) vs. 3時間ぐらい (umas 3 horas). Não diga 3時間ごろ. Em português um único \"por volta de\" cobre os dois, mas o japonês separa.",
       "en": "Classic trap for Brazilians: use ごろ only for points in time (hours, dates) and ぐらい/くらい for quantities and durations. 3時ごろ (around 3 o'clock) vs. 3時間ぐらい (about 3 hours). Don't say 3時間ごろ. In Portuguese a single 'por volta de' covers both, but Japanese separates them."
@@ -10712,15 +11072,55 @@
       "pt-BR": "Experiência: [verbo na forma た (passado simples)] ＋ ことがある → 見たことがある (já vi). Ocorrência ocasional: [verbo na forma dicionário ou negativa simples] ＋ ことがある → 遅れることがある (às vezes me atraso), 行かないことがある (às vezes não vou). Na fala polida: 〜ことがあります.",
       "en": "Experience: [verb in た-form (plain past)] ＋ ことがある → 見たことがある (have seen). Occasional occurrence: [verb in dictionary or plain negative form] ＋ ことがある → 遅れることがある (I'm sometimes late), 行かないことがある (I sometimes don't go). In polite speech: 〜ことがあります."
     },
-    "formation_steps": null,
-    "nuance_tags": [
-      "experience"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "ことがある"
+            }
+          ],
+          "example": "見たことがある"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことがある"
+            }
+          ],
+          "example": "遅れることがある"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いことがある"
+            }
+          ],
+          "example": "行かないことがある"
+        }
+      ]
+    },
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "O tempo do verbo muda totalmente o sentido (た = experiência passada; dicionário = hábito ocasional), então não troque um pelo outro. Para experiência, evite algo recentíssimo: 昨日見たことがある soa estranho (use só 昨日見ました). Brasileiros costumam querer dizer \"eu já\" com 〜たことがある, mas para \"já terminei\" (ação concluída recente) use 〜もう〜ました, não esta estrutura.",
       "en": "The verb's tense completely changes the meaning (た = past experience; dictionary = occasional habit), so don't swap one for the other. For experience, avoid something very recent: 昨日見たことがある sounds odd (use just 昨日見ました). Brazilians often want to say 'I already' with 〜たことがある, but for 'I've already finished' (a recent completed action) use 〜もう〜ました, not this structure."
@@ -10864,10 +11264,41 @@
       "pt-BR": "[verbo na forma dicionário ou negativa simples] ＋ ことになる → 結婚することになった (ficou decidido que vou casar), 行かないことになった (ficou decidido que não vou). Polido no passado: 〜ことになりました (muito usado em avisos). Compare com 〜ことにする, que é a decisão pessoal do próprio falante.",
       "en": "[verb in dictionary or plain negative form] ＋ ことになる → 結婚することになった (it has been decided that I'll get married), 行かないことになった (it has been decided that I won't go). Polite past: 〜ことになりました (much used in announcements). Compare with 〜ことにする, which is the speaker's own personal decision."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことになる"
+            }
+          ],
+          "example": "結婚することになる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いことになる"
+            }
+          ],
+          "example": "行かないことになる"
+        }
+      ]
+    },
     "nuance_tags": [
-      "humility",
-      "politeness"
+      "change-of-state",
+      "softening"
     ],
     "usage_contexts": [
       "spoken",
@@ -10876,7 +11307,7 @@
       "formal-email",
       "announcement"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Contraste-chave: ことになる = decisão que \"veio de fora\" ou resultado (mesmo quando o falante participou, soa mais modesto e impessoal); ことにする = \"eu decidi\". Os japoneses usam ことになる até para escolhas próprias, por modéstia, porque soa menos egocêntrico. Brasileiros tendem a sempre dizer \"eu decidi\"; em japonês, anunciar algo com ことになりました é mais educado e natural.",
       "en": "Key contrast: ことになる = a decision that 'came from outside' or a result (even when the speaker took part, it sounds more modest and impersonal); ことにする = 'I decided.' Japanese use ことになる even for their own choices, out of modesty, because it sounds less self-centered. Brazilians tend to always say 'I decided'; in Japanese, announcing something with ことになりました is more polite and natural."
@@ -10930,16 +11361,55 @@
       "pt-BR": "Verbo na forma de dicionário (simples afirmativa) + ことにする. Na negativa: verbo na forma 〜ない + ことにする. Para uma decisão já tomada, usa-se o passado: 〜ことにした / 〜ことにしました. ことにしている indica uma decisão que virou hábito/regra pessoal (\"faço questão de\", \"tenho por hábito\").",
       "en": "Verb in dictionary form (plain affirmative) + ことにする. In the negative: verb in 〜ない form + ことにする. For a decision already made, the past is used: 〜ことにした / 〜ことにしました. ことにしている indicates a decision that has become a personal habit/rule (\"I make a point of\", \"I have a habit of\")."
     },
-    "formation_steps": null,
-    "nuance_tags": [
-      "intention"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written",
-      "casual-friends"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことにする"
+            }
+          ],
+          "example": "勉強することにする"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いことにする"
+            }
+          ],
+          "example": "飲まないことにする"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ことにしている"
+            }
+          ],
+          "example": "走ることにしている"
+        }
+      ]
+    },
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Não confunda com 〜ことになる, que indica que algo \"acabou sendo decidido\" (por circunstâncias ou por outros, sem ênfase na sua vontade). 〜ことにする é a sua escolha ativa. O こと aqui é o substantivo formal \"o ato/fato de\", então não traduza por \"coisa\". Em português dizemos só \"decidi estudar\", mas em japonês a estrutura nominaliza o verbo, então não esqueça o こと.",
       "en": "Don't confuse it with 〜ことになる, which indicates that something 'ended up being decided' (by circumstances or by others, with no emphasis on your will). 〜ことにする is your active choice. The こと here is the formal noun 'the act/fact of,' so don't translate it as 'thing.' In Portuguese we just say 'decidi estudar,' but in Japanese the structure nominalizes the verb, so don't forget the こと."
@@ -11252,15 +11722,77 @@
       "pt-BR": "Pode vir depois de: verbo no passado simples (forma -ta) → 立ったまま (\"em pé / permanecendo de pé\"); verbo negativo 〜ない → 食べないまま (\"sem ter comido\"); adjetivo-い → 安いまま; adjetivo-な + な → 静かなまま; substantivo + の → 昔のまま (\"como antigamente\"). Também aparece como そのまま (\"assim mesmo, do jeito que está\").",
       "en": "It can come after: a verb in the plain past (-ta form) → 立ったまま (\"standing / remaining standing\"); a negative verb 〜ない → 食べないまま (\"without having eaten\"); an い-adjective → 安いまま; a な-adjective + な → 静かなまま; a noun + の → 昔のまま (\"as in old times\"). It also appears as そのまま (\"as is, just the way it is\")."
     },
-    "formation_steps": null,
-    "nuance_tags": [
-      "continuation"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "まま"
+            }
+          ],
+          "example": "立ったまま"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いまま"
+            }
+          ],
+          "example": "食べないまま"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "まま"
+            }
+          ],
+          "example": "安いまま"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "to-attributive"
+            },
+            {
+              "op": "append",
+              "token": "まま"
+            }
+          ],
+          "example": "静かなまま"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のまま"
+            }
+          ],
+          "example": "昔のまま"
+        }
+      ]
+    },
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Com verbos, a forma -ta aqui não indica passado, e sim um estado resultante que continua: つけたまま = \"estando aceso\", não \"acendeu\". Cuidado para não usar a forma -te (〜て) no lugar: 〜たまま não é o mesmo que 〜ている. O brasileiro costuma traduzir por gerúndio (\"com a luz acesa\"), o que ajuda, mas lembre que まま enfatiza a ausência de mudança de estado.",
       "en": "With verbs, the -ta form here doesn't indicate past tense, but a resultant state that continues: つけたまま = 'left on,' not 'turned on.' Be careful not to use the -te form (〜て) in its place: 〜たまま is not the same as 〜ている. Brazilians usually translate it with a gerund ('with the light on'), which helps, but remember that まま emphasizes the absence of a change in state."
@@ -13134,11 +13666,8 @@
     },
     "formation_steps": null,
     "nuance_tags": [],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": "おきに attaches to a quantity expression (numeral + counter), not to a noun: the record's own formation says \"número + contador + おきに\" (10分おきに, 1メートルおきに, 1日おきに, 一人おきに). The closed base enum has no quantity/counter member, and the only base that would accept these hosts, `noun`, also accepts every ordinary noun in the vocab registry, licensing *学生おきに and *本おきに — precisely the error the point exists to prevent. No safe variant can be expressed; the counter phrase must be built by the caller and おきに appended to it.",
     "nuance": {
       "pt-BR": "A armadilha clássica: com unidades discretas como dias, semanas ou postes, おきに costuma significar 'pulando um'. 1日おきに = 'dia sim, dia não' (a cada 2 dias), não 'todo dia'. Já com medidas contínuas (minutos, metros) significa simplesmente o valor citado. Não confunda com 〜ごとに ('a cada', sem a ideia de pular).",
       "en": "The classic trap: with discrete units like days, weeks, or posts, おきに usually means 'skipping one.' 1日おきに = 'every other day' (every 2 days), not 'every day.' But with continuous measures (minutes, meters) it simply means the stated value. Don't confuse it with 〜ごとに ('every,' without the skipping idea)."
@@ -14435,16 +14964,127 @@
       "pt-BR": "Raiz do adjetivo/verbo + そう, depois conjuga como adjetivo な. Adjetivos い: 高い → 高そう (cai o い). Adjetivos な: 元気 → 元気そう. Verbos: forma ます sem o ます: 降る → 降りそう, 泣く → 泣きそう. Daí: + な antes de substantivo (おいしそうなパン), + に antes de verbo (悲しそうに話す). Exceções: いい → よさそう; ない → なさそう.",
       "en": "Stem of the adjective/verb + そう, then it conjugates like a な-adjective. い-adjectives: 高い → 高そう (the い drops). な-adjectives: 元気 → 元気そう. Verbs: ます-form without the ます: 降る → 降りそう, 泣く → 泣きそう. Hence: + な before a noun (おいしそうなパン), + に before a verb (悲しそうに話す). Exceptions: いい → よさそう; ない → なさそう."
     },
-    "formation_steps": null,
-    "nuance_tags": [
-      "conjecture"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "written",
-      "casual-friends"
-    ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "そうな"
+            }
+          ],
+          "example": "降りそうな"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "そうに"
+            }
+          ],
+          "example": "泣きそうに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "さそうな"
+            }
+          ],
+          "example": "降らなさそうな"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "さそうに"
+            }
+          ],
+          "example": "降らなさそうに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "replace-ending",
+              "token": "い→そう"
+            },
+            {
+              "op": "append",
+              "token": "な"
+            }
+          ],
+          "example": "高そうな"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "replace-ending",
+              "token": "い→そう"
+            },
+            {
+              "op": "append",
+              "token": "に"
+            }
+          ],
+          "example": "高そうに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "none"
+            },
+            {
+              "op": "append",
+              "token": "そうな"
+            }
+          ],
+          "example": "元気そうな"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "none"
+            },
+            {
+              "op": "append",
+              "token": "そうに"
+            }
+          ],
+          "example": "静かそうに"
+        }
+      ]
+    },
+    "nuance_tags": [],
+    "usage_contexts": [],
+    "steps_unavailable": "Two things the emitted variants deliberately do not cover. (1) いい → よさそう. It is a lexeme-scoped exception and the variant schema has only base/steps/example — no lexical scope. It cannot be rescued by a surface ending-match either: the adjectives that need it are the ones whose final element IS the lexeme いい (いい → よさそう, 気持ちいい → 気持ちよさそう, かっこいい → かっこよさそう), and they are indistinguishable by surface ending from かわいい, whose correct form かわいそう comes from the general い→そう variant. So the general i-adjective variant emitted here must not be applied to that lexeme set: on いい it would produce *いそう. (2) The negative of an i-adjective (高くない → 高くなさそう). The op enum has no negative-adjective step, and encoding it as replace-ending い→くなさそう would fire on いい as well (*いくなさそう). Only the verb negative is encoded, via to-nai-stem + さそう.",
     "nuance": {
       "pt-BR": "Pegadinha clássica: este そう usa a raiz (おいし-そう), enquanto o そうだ de relato usa a frase completa (おいしいそうだ = 'dizem que é gostoso'). Não se usa com características visualmente óbvias, como cores (não se diz 赤そう). そうに modifica como a ação acontece ('de um jeito que parece...'), então não troque por そうな diante de verbo. Muito comum na fala cotidiana.",
       "en": "Classic trap: this そう uses the stem (おいし-そう), whereas the reportative そうだ uses the complete clause (おいしいそうだ = 'they say it's tasty'). It is not used with visually obvious features, such as colors (you don't say 赤そう). そうに modifies how the action happens ('in a way that seems...'), so don't swap it for そうな before a verb. Very common in everyday speech."
@@ -15854,15 +16494,86 @@
       "pt-BR": "Verbo na forma て + くれる. Conjuga no くれる: くれます (polido), くれた (passado), くれない (negativo). Quem faz o favor é o sujeito, marcado com が (友達が〜てくれる); o beneficiário (você) costuma ficar implícito. Versão respeitosa, quando o favor vem de um superior: 〜てくださる. Para pedidos, a negativa 〜てくれない？ ('você faz para mim?') é comum e amigável.",
       "en": "Verb in て-form + くれる. It conjugates on くれる: くれます (polite), くれた (past), くれない (negative). The one who does the favor is the subject, marked with が (友達が〜てくれる); the beneficiary (you) is usually left implicit. Respectful version, when the favor comes from a superior: 〜てくださる. For requests, the negative 〜てくれない？ ('will you do it for me?') is common and friendly."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "くれる"
+            }
+          ],
+          "example": "手伝ってくれる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "くれた"
+            }
+          ],
+          "example": "手伝ってくれた"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "くれます"
+            }
+          ],
+          "example": "手伝ってくれます"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "くれない"
+            }
+          ],
+          "example": "手伝ってくれない"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "くださる"
+            }
+          ],
+          "example": "手伝ってくださる"
+        }
+      ]
+    },
     "nuance_tags": [
-      "request"
+      "request",
+      "honorific"
     ],
-    "usage_contexts": [
-      "spoken",
-      "written"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "O grande contraste é com 〜てあげる e 〜てもらう: くれる é sempre a ação vindo de fora para você ou seu grupo; あげる é de você para fora. Quem fala português não tem essa marcação de direção embutida no verbo e esquece de usar くれる, soando frio. Em japonês, dizer só 手伝った ('ajudou') sem o くれる perde o tom de gratidão. Use くれる quando você é o beneficiário e あげる quando você é o doador.",
       "en": "The big contrast is with 〜てあげる and 〜てもらう: くれる is always the action coming from outside toward you or your group; あげる is from you outward. Portuguese speakers don't have this direction marking built into the verb and forget to use くれる, sounding cold. In Japanese, saying just 手伝った ('helped') without くれる loses the tone of gratitude. Use くれる when you are the beneficiary and あげる when you are the giver."
@@ -16181,16 +16892,87 @@
       "pt-BR": "Verbo na て-forma + もらう. Quem faz o favor leva に (ou から): 〜に〜てもらう. Versão respeitosa: 〜ていただく. Ex.: 先生に教えてもらいました (o professor me ensinou) / 先生に教えていただきました (mais respeitoso). Para pedir favores: 〜てもらえますか / 〜ていただけますか (\"você poderia...?\").",
       "en": "Verb in て-form + もらう. The one who does the favor takes に (or から): 〜に〜てもらう. Respectful version: 〜ていただく. E.g.: 先生に教えてもらいました (the teacher taught me) / 先生に教えていただきました (more respectful). To ask for favors: 〜てもらえますか / 〜ていただけますか (\"could you...?\")."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "もらう"
+            }
+          ],
+          "example": "教えてもらう"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "もらいました"
+            }
+          ],
+          "example": "教えてもらいました"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いただく"
+            }
+          ],
+          "example": "教えていただく"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "もらえますか"
+            }
+          ],
+          "example": "教えてもらえますか"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いただけますか"
+            }
+          ],
+          "example": "教えていただけますか"
+        }
+      ]
+    },
     "nuance_tags": [
-      "request"
+      "request",
+      "politeness",
+      "humility"
     ],
-    "usage_contexts": [
-      "spoken",
-      "written",
-      "business"
-    ],
-    "steps_unavailable": "WITHHELD (agreed): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "usage_contexts": [],
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "A armadilha para brasileiros é a partícula com o sujeito: o sujeito é quem RECEBE o favor, e quem PRÁTICA a ação leva に, o contrário da intuição de \"quem faz é o sujeito\". Compare a família: 〜てくれる (a outra pessoa faz por mim, foco nela) vs 〜てもらう (eu recebo, foco em mim) vs 〜てあげる (eu faço por outro). Use 〜てもらう quando há a ideia de que você pediu ou queria o favor; em situação de respeito, prefira 〜ていただく.",
       "en": "The trap for Brazilians is the particle with the subject: the subject is the one who RECEIVES the favor, and the one who PERFORMS the action takes に, the opposite of the intuition that 'the one who does is the subject'. Compare the family: 〜てくれる (the other person does it for me, focus on them) vs 〜てもらう (I receive, focus on me) vs 〜てあげる (I do it for another). Use 〜てもらう when there is the idea that you asked for or wanted the favor; in a situation of respect, prefer 〜ていただく."
@@ -18729,7 +19511,38 @@
       "pt-BR": "Verbo na forma do dicionário + ようにする (afirmativo): 早く寝るようにする (procurar dormir cedo). Verbo na forma negativa curta (ない) + ようにする (negativo): 遅れないようにする (procurar não se atrasar). A forma 〜ようにしている indica hábito contínuo (\"venho procurando...\"); 〜ようにしてください é um pedido educado (\"por favor, procure...\").",
       "en": "Verb in dictionary form + ようにする (affirmative): 早く寝るようにする (to try to sleep early). Verb in short negative form (ない) + ようにする (negative): 遅れないようにする (to try not to be late). The 〜ようにしている form indicates an ongoing habit (\"I've been trying to...\"); 〜ようにしてください is a polite request (\"please try to...\")."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ようにする"
+            }
+          ],
+          "example": "早く寝るようにする"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いようにする"
+            }
+          ],
+          "example": "遅れないようにする"
+        }
+      ]
+    },
     "nuance_tags": [
       "intention"
     ],
@@ -18737,7 +19550,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Não confunda com 〜ようになる (mudança que ocorre): aqui o foco é o esforço e a decisão do falante. Outra diferença útil: 〜ようにする = esforço habitual e contínuo; já 〜ことにする = uma decisão pontual de fazer algo. Para brasileiros, o cuidado é não traduzir tudo como \"tentar\": 〜てみる é \"experimentar fazer pra ver\", enquanto ようにする é \"manter o hábito / fazer questão de\".",
       "en": "Don't confuse it with 〜ようになる (a change that occurs): here the focus is the speaker's effort and decision. Another useful difference: 〜ようにする = habitual, ongoing effort; whereas 〜ことにする = a one-off decision to do something. For Brazilians, the caution is not to translate everything as 'try': 〜てみる is 'try doing something to see', whereas ようにする is 'keep the habit / make a point of'."
@@ -18799,15 +19612,105 @@
       "pt-BR": "Comparação: substantivo + の + ように／ような (子供のように = como uma criança); frase/verbo simples + ように／ような (言ったように = como eu disse). Use ように antes de verbo ou adjetivo (advérbio) e ような antes de substantivo. Finalidade: verbo (em geral potencial ou não volitivo) na forma do dicionário ou em ない + ように: 忘れないように = \"para não esquecer\"; 分かるように = \"para que se entenda\".",
       "en": "Comparison: noun + の + ように／ような (子供のように = like a child); clause/plain verb + ように／ような (言ったように = as I said). Use ように before a verb or adjective (adverbial) and ような before a noun. Purpose: verb (usually potential or non-volitional) in dictionary form or in ない + ように: 忘れないように = \"so as not to forget\"; 分かるように = \"so that it's understood\"."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のように"
+            }
+          ],
+          "example": "子供のように"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のような"
+            }
+          ],
+          "example": "夢のような"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            {
+              "base": "clause",
+              "op": "append",
+              "token": "ように"
+            }
+          ],
+          "example": "言ったように"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            {
+              "base": "clause",
+              "op": "append",
+              "token": "ような"
+            }
+          ],
+          "example": "言ったような"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "ように"
+            }
+          ],
+          "example": "分かるように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-potential"
+            },
+            {
+              "op": "append",
+              "token": "ように"
+            }
+          ],
+          "example": "書けるように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いように"
+            }
+          ],
+          "example": "忘れないように"
+        }
+      ]
+    },
     "nuance_tags": [
-      "comparison"
+      "comparison",
+      "intention"
     ],
     "usage_contexts": [
       "spoken",
       "written"
     ],
-    "steps_unavailable": "WITHHELD (critical): the verification pass found this formation generates a wrong form or contradicts the record's own text. See research/derived/grammar_formation_withheld.json.",
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "Não confunda esse 〜ように de comparação com o 〜ように de finalidade; o contexto e o verbo ajudam a distinguir. Para finalidade, lembre: ように pede verbo NÃO volitivo (potencial, intransitivo); se o verbo for volitivo, o certo é 〜ために. O brasileiro tende a usar \"para\" para tudo, mas em japonês ように (não controlável) e ために (controlável, mesmo sujeito) não são intercambiáveis. Cuidado também: みたい é o equivalente coloquial de ような/ように em comparações.",
       "en": "Don't confuse this 〜ように of comparison with the 〜ように of purpose; context and the verb help distinguish them. For purpose, remember: ように requires a NON-volitional verb (potential, intransitive); if the verb is volitional, the correct one is 〜ために. Brazilians tend to use 'para' for everything, but in Japanese ように (uncontrollable) and ために (controllable, same subject) are not interchangeable. Careful too: みたい is the colloquial equivalent of ような/ように in comparisons."

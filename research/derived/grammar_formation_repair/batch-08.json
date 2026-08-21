@@ -1,0 +1,282 @@
+{
+  "batch": 8,
+  "points": [
+    {
+      "slug": "gram:mama",
+      "resolution": "fixed",
+      "resolution_note": "One token was wrong, in exactly one variant. to-nai-stem is the な-inclusive stem (書く -> 書かな, 食べる -> 食べな), so appending \"ないまま\" doubles the な and yields 書かなないまま / 食べなないまま. The token must be \"いまま\". This is not a judgement call: the same grammar point is encoded at N3 as gram:n3-mama with [to-nai-stem] + \"いまま\" and the identical example 食べないまま, so the two records now agree and only the N4 one was wrong. The other four variants were re-executed against the full test set and every output is grammatical and matches the record's own formation text (verbo no passado simples -> 立ったまま; adjetivo-い -> 安いまま; adjetivo-な + な -> 静かなまま; substantivo + の -> 昔のまま), so they are re-emitted unchanged, including their exact step shapes, which are identical to gram:n3-mama's. nuance_tags [continuation] and usage_contexts [spoken, written] are untouched — no finding touched them and both are grounded in the record.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "まま" }
+          ],
+          "example": "立ったまま"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いまま" }
+          ],
+          "example": "食べないまま"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "まま" }
+          ],
+          "example": "安いまま"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "まま" }
+          ],
+          "example": "静かなまま"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のまま" }
+          ],
+          "example": "昔のまま"
+        }
+      ],
+      "self_test": [
+        { "input": "書く + [to-ta-form, append まま]", "output": "書いたまま", "ok": true },
+        { "input": "食べる + [to-ta-form, append まま]", "output": "食べたまま", "ok": true },
+        { "input": "する + [to-ta-form, append まま]", "output": "したまま", "ok": true },
+        { "input": "くる + [to-ta-form, append まま]", "output": "来たまま", "ok": true },
+        { "input": "書く + [to-nai-stem (書かな), append いまま]", "output": "書かないまま", "ok": true },
+        { "input": "食べる + [to-nai-stem (食べな), append いまま]", "output": "食べないまま (matches the variant's own example)", "ok": true },
+        { "input": "する + [to-nai-stem (しな), append いまま]", "output": "しないまま", "ok": true },
+        { "input": "くる + [to-nai-stem (来な / こな), append いまま]", "output": "来ないまま", "ok": true },
+        { "input": "高い + [append まま]", "output": "高いまま", "ok": true },
+        { "input": "静か + [to-attributive (静かな), append まま]", "output": "静かなまま", "ok": true },
+        { "input": "学生 + [append のまま]", "output": "学生のまま", "ok": true },
+        { "input": "REGRESSION CHECK — the withheld token: 食べる + [to-nai-stem (食べな), append ないまま]", "output": "食べなないまま — ungrammatical, which is the defect being repaired", "ok": false }
+      ]
+    },
+    {
+      "slug": "gram:oki-ni",
+      "resolution": "unavailable",
+      "resolution_note": "The restriction is real and the closed base enum cannot carry it. The record's formation states the host type outright — \"número + contador + おきに\" — and every instance it carries is a quantity phrase: 10分おきに, 1メートルおきに, 1日おきに. The base enum offers verb / i-adjective / na-adjective / noun / clause / any, and none of them means \"numeral + counter\". Declaring base \"noun\" is what the withheld variant did, and a consumer expanding it over the vocab registry produces *学生おきに, *本おきに, *猫おきに — the `example` field pins 10分おきに but example is documentation, not a constraint. Narrowing the base is not available, splitting into variants does not help (every split still lands on `noun`), and inventing a base value is forbidden. So no variant is emitted. Note this is a schema-level gap rather than a defect in this record: the record itself is precise and its nuance_tags [] is honest (the enum has no interval/frequency member), and gram:gp-70 (ごとに) and gram:gp-68 (ごろ) have the same host type. Nothing else in the record is changed.",
+      "steps_unavailable": "おきに attaches to a quantity expression (numeral + counter), not to a noun: the record's own formation says \"número + contador + おきに\" (10分おきに, 1メートルおきに, 1日おきに, 一人おきに). The closed base enum has no quantity/counter member, and the only base that would accept these hosts, `noun`, also accepts every ordinary noun in the vocab registry, licensing *学生おきに and *本おきに — precisely the error the point exists to prevent. No safe variant can be expressed; the counter phrase must be built by the caller and おきに appended to it.",
+      "self_test": [
+        { "input": "学生 + withheld steps [{base:noun, op:none}, {op:append, token:おきに}]", "output": "学生おきに — ungrammatical", "ok": false },
+        { "input": "本 / 猫 (any ordinary noun reachable through base `noun`) + the same steps", "output": "本おきに / 猫おきに — ungrammatical", "ok": false },
+        { "input": "10分 / 1メートル / 1日 (numeral + counter, the host the record's formation names)", "output": "10分おきに / 1メートルおきに / 1日おきに — grammatical, but \"numeral + counter\" is not a member of the base enum, so these cannot be generated from a legal base", "ok": true },
+        { "input": "書く / 食べる / する / くる / 高い / 静か", "output": "no variant claims these bases; the record's formation names only número + contador, so nothing is generated and nothing wrong is generated", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:sou-ni-sou-na",
+      "resolution": "partial",
+      "resolution_note": "Six of the eight withheld variants are productive and execute clean; the two that were dropped both encoded a LEXICAL exception as a class-wide surface rule. Variant 7 ({i-adjective, replace-ending いい→よさそう}) fires on any adjective whose surface merely ends in いい, so かわいい — an i_adj in this corpus's own N5 vocab — yields *かわよさそうな, when the general variant already gives the correct かわいそうな. Variant 8 ({i-adjective, replace-ending ない→なさそう}) mis-targets its own case: the record's ない is the negative auxiliary (its Exceções line sits beside いい→よさそう, and the whole point is stem-based 様態 そう), so as an i-adjective ending-match it never reaches the verb negative it exists for and instead fires on lexical -ない adjectives, where 汚い yields *きたなさそうな instead of 汚そう. Both are dropped. In their place the negative IS given its own variant, because it is expressible: to-nai-stem is the な-inclusive stem, so [verb, to-nai-stem] + \"さそうな\" derives exactly what the record states (ない → なさそう) — 降る -> 降らなさそうな, 書く -> 書かなさそうな — with the な/に pair the record defines as fully general over the そう stem (\"+ な antes de substantivo, + に antes de verbo\"). Dropping variant 8 also repairs 汚い, which now takes the general rule and gives 汚そうな. What remains unencodable is the いい exception itself, recorded in steps_unavailable. Noun is correctly still not claimed. nuance_tags [conjecture] and usage_contexts [spoken, written, casual-friends] are untouched.",
+      "steps_unavailable": "Two things the emitted variants deliberately do not cover. (1) いい → よさそう. It is a lexeme-scoped exception and the variant schema has only base/steps/example — no lexical scope. It cannot be rescued by a surface ending-match either: the adjectives that need it are the ones whose final element IS the lexeme いい (いい → よさそう, 気持ちいい → 気持ちよさそう, かっこいい → かっこよさそう), and they are indistinguishable by surface ending from かわいい, whose correct form かわいそう comes from the general い→そう variant. So the general i-adjective variant emitted here must not be applied to that lexeme set: on いい it would produce *いそう. (2) The negative of an i-adjective (高くない → 高くなさそう). The op enum has no negative-adjective step, and encoding it as replace-ending い→くなさそう would fire on いい as well (*いくなさそう). Only the verb negative is encoded, via to-nai-stem + さそう.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "そうな" }
+          ],
+          "example": "降りそうな"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "そうに" }
+          ],
+          "example": "泣きそうに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "さそうな" }
+          ],
+          "example": "降らなさそうな"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "さそうに" }
+          ],
+          "example": "降らなさそうに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "replace-ending", "token": "い→そう" },
+            { "op": "append", "token": "な" }
+          ],
+          "example": "高そうな"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "replace-ending", "token": "い→そう" },
+            { "op": "append", "token": "に" }
+          ],
+          "example": "高そうに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "none" },
+            { "op": "append", "token": "そうな" }
+          ],
+          "example": "元気そうな"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "none" },
+            { "op": "append", "token": "そうに" }
+          ],
+          "example": "静かそうに"
+        }
+      ],
+      "self_test": [
+        { "input": "書く + [to-masu-stem (書き), append そうな / そうに]", "output": "書きそうな / 書きそうに", "ok": true },
+        { "input": "食べる + [to-masu-stem (食べ), append そうな / そうに]", "output": "食べそうな / 食べそうに", "ok": true },
+        { "input": "する + [to-masu-stem (し), append そうな / そうに]", "output": "しそうな / しそうに", "ok": true },
+        { "input": "くる + [to-masu-stem (来 / き), append そうな / そうに]", "output": "来そうな / 来そうに", "ok": true },
+        { "input": "書く + [to-nai-stem (書かな), append さそうな / さそうに]", "output": "書かなさそうな / 書かなさそうに", "ok": true },
+        { "input": "食べる + [to-nai-stem (食べな), append さそうな]", "output": "食べなさそうな", "ok": true },
+        { "input": "する + [to-nai-stem (しな), append さそうな]", "output": "しなさそうな", "ok": true },
+        { "input": "くる + [to-nai-stem (来な / こな), append さそうな]", "output": "来なさそうな", "ok": true },
+        { "input": "降る (the record's own verb) + [to-nai-stem (降らな), append さそうな]", "output": "降らなさそうな — matches the record's Exceções line ない → なさそう", "ok": true },
+        { "input": "高い + [replace-ending い→そう, append な / に]", "output": "高そうな / 高そうに — matches the record's 高い → 高そう", "ok": true },
+        { "input": "かわいい + [replace-ending い→そう, append な] (the case the dropped variant 7 broke)", "output": "かわいそうな — correct, and no longer *かわよさそうな", "ok": true },
+        { "input": "汚い + [replace-ending い→そう, append な] (the case the dropped variant 8 broke)", "output": "汚そうな — correct, and no longer *きたなさそうな", "ok": true },
+        { "input": "静か + [none, append そうな / そうに]", "output": "静かそうな / 静かそうに", "ok": true },
+        { "input": "学生", "output": "no variant claims base noun; the record's formation names only adjective and verb stems, so nothing is generated", "ok": true },
+        { "input": "EXCLUDED CASE (see steps_unavailable): いい + [replace-ending い→そう, append な]", "output": "いそうな — ungrammatical; the correct よさそうな is lexeme-scoped and not expressible in the variant schema", "ok": false }
+      ]
+    },
+    {
+      "slug": "gram:te-kureru",
+      "resolution": "fixed",
+      "resolution_note": "The defect here is not in the steps. Both checkers raised the same omission: variant 5 emits 〜てくださる, which the record's own formation labels \"Versão respeitosa, quando o favor vem de um superior\" — くださる is 尊敬語, the closed enum carries an exact member for it, and nuance_tags was [request] alone. Fixed by adding \"honorific\", which is what the sibling gram:o-kudasai-2 already carries for the same くださる family. The five variants were re-executed against the full verb set and every output is grammatical and matches the record's own conjugation list (くれます polido, くれた passado, くれない negativo, くださる respeitosa), so they are re-emitted unchanged — this is a tag repair, not a step rewrite. Two things I did NOT do. The second checker also observed that \"request\" is the record's secondary sense (drawn from the one aside 〜てくれない？) while its primary content is direction of benefit and gratitude; that primary sense has no member in the closed nuance enum, so it cannot be tagged and \"request\" stays, since it is genuinely grounded. And I did not add \"politeness\" for くれます: there the ます form is listed as an ordinary conjugation slot available to any verb, not as a register choice, and usage_contexts carries no business/formal context — unlike gram:te-morau, where the respectful set is framed as a register choice. usage_contexts [spoken, written] unchanged.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれる" }
+          ],
+          "example": "手伝ってくれる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれた" }
+          ],
+          "example": "手伝ってくれた"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれます" }
+          ],
+          "example": "手伝ってくれます"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くれない" }
+          ],
+          "example": "手伝ってくれない"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "くださる" }
+          ],
+          "example": "手伝ってくださる"
+        }
+      ],
+      "nuance_tags": ["request", "honorific"],
+      "self_test": [
+        { "input": "書く + [to-te-form (書いて), append くれる]", "output": "書いてくれる", "ok": true },
+        { "input": "食べる + [to-te-form (食べて), append くれる]", "output": "食べてくれる", "ok": true },
+        { "input": "する + [to-te-form (して), append くれる]", "output": "してくれる", "ok": true },
+        { "input": "くる + [to-te-form (来て / きて), append くれる]", "output": "来てくれる", "ok": true },
+        { "input": "書く + [to-te-form, append くれた / くれます / くれない / くださる]", "output": "書いてくれた / 書いてくれます / 書いてくれない / 書いてくださる", "ok": true },
+        { "input": "する + [to-te-form, append くださる]", "output": "してくださる", "ok": true },
+        { "input": "くる + [to-te-form, append くれない]", "output": "来てくれない", "ok": true },
+        { "input": "高い / 静か / 学生", "output": "no variant claims these bases; the record's formation says verbo na forma て + くれる, so nothing is generated", "ok": true }
+      ]
+    },
+    {
+      "slug": "gram:te-morau",
+      "resolution": "fixed",
+      "resolution_note": "Same class as gram:te-kureru and the same shape of repair: the steps are sound, the mechanical tags were not. Variants 3 and 5 emit 〜ていただく and 〜ていただけますか, which the record's formation labels \"Versão respeitosa\" and its nuance field repeats (\"em situação de respeito, prefira 〜ていただく\"); いただく is 謙譲語 and the closed enum carries \"humility\", which was unused. Added. \"politeness\" is added here too — the record's own request formulas 〜てもらえますか / 〜ていただけますか and its 教えてもらいました are ます-level, usage_contexts already carries business (which follows only from these keigo variants), and the sibling gram:te-itadakemasen-ka, the same いただく family, is tagged [request, politeness, humility]; this record now matches it exactly. \"request\" stays: the record's own formation heads these two variants with \"Para pedir favores\". The five variants were re-executed on the full verb set, every output is grammatical, and they are re-emitted unchanged. usage_contexts [spoken, written, business] unchanged.",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "もらう" }
+          ],
+          "example": "教えてもらう"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "もらいました" }
+          ],
+          "example": "教えてもらいました"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いただく" }
+          ],
+          "example": "教えていただく"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "もらえますか" }
+          ],
+          "example": "教えてもらえますか"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いただけますか" }
+          ],
+          "example": "教えていただけますか"
+        }
+      ],
+      "nuance_tags": ["request", "politeness", "humility"],
+      "self_test": [
+        { "input": "書く + [to-te-form (書いて), append もらう]", "output": "書いてもらう", "ok": true },
+        { "input": "食べる + [to-te-form (食べて), append もらう]", "output": "食べてもらう", "ok": true },
+        { "input": "する + [to-te-form (して), append もらう]", "output": "してもらう", "ok": true },
+        { "input": "くる + [to-te-form (来て / きて), append もらう]", "output": "来てもらう", "ok": true },
+        { "input": "書く + [to-te-form, append もらいました / いただく / もらえますか / いただけますか]", "output": "書いてもらいました / 書いていただく / 書いてもらえますか / 書いていただけますか", "ok": true },
+        { "input": "食べる + [to-te-form, append いただけますか]", "output": "食べていただけますか", "ok": true },
+        { "input": "する + [to-te-form, append いただく]", "output": "していただく", "ok": true },
+        { "input": "くる + [to-te-form, append もらえますか]", "output": "来てもらえますか", "ok": true },
+        { "input": "高い / 静か / 学生", "output": "no variant claims these bases; the record's formation says verbo na て-forma + もらう, so nothing is generated", "ok": true }
+      ]
+    }
+  ]
+}
