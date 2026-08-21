@@ -1,0 +1,24 @@
+{
+  "batch": 6,
+  "kanji_checked": 30,
+  "problems": [
+    {
+      "character": "知",
+      "headword": "ご存知",
+      "kana": "ごぞんじ",
+      "assigned": "し.る (kun)",
+      "should_be": "irregular (ateji); alternatively the on reading チ",
+      "why": "The kana is go-zon-ji. 存 takes ぞん and 知 is left with じ, so the aligner accepted じ as a rendaku of し. But 知 has no bound noun/stem form し: the standard spelling is ご存じ, where じ is the verb ending of 存じる and 知 is 当て字 substituted for that syllable. The only reading-based account is the old noun 存知（ぞんち）with the ON reading チ rendaku'd to じ — never the kun し. As filed, a learner is shown ごぞんじ as an example of 知=し and cannot find a し anywhere in it. The pre-alignment grouping made the same mistake, so the rewrite did not introduce it.",
+      "severity": "major"
+    },
+    {
+      "character": "真",
+      "headword": "真っ赤",
+      "kana": "まっか",
+      "assigned": "irregular",
+      "should_be": "ま (kun)",
+      "why": "真 contributes ま cleanly here — まっか is ま + あか with the あ absorbed into the 促音, exactly as in 真っ白 (まっしろ) and 真っ黒 (まっくろ), and the headword writes the っ literally. What fails to align is the 赤 side (あか -> か/っか, vowel elision the aligner does not model), not the 真 side. This is not a 熟字訓: it is a productive prefix use of 真. Sending the whole word to irregular costs 真's ま group its single best example, and the pre-alignment grouping had it right (OLD ま -> NEW irregular). Lower priority than a wrong group, since irregular teaches nothing false.",
+      "severity": "minor"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "batch": 16,
+  "range": "entries 450..479",
+  "kanji_checked": 30,
+  "characters": ["福","望","非","観","察","段","横","深","申","様","財","港","識","呼","達","良","候","程","満","敗","値","突","路","科","積","他","処","歩","客","否"],
+  "problems": [
+    {
+      "character": "処",
+      "headword": "何処",
+      "kana": "どこ",
+      "assigned": "irregular",
+      "should_be": "-こ (kun)",
+      "why": "どこ splits ど (何) + こ (処); 処 contributes exactly the こ of the -こ slot, the same こ already credited to 此処/ここ and 其処で/そこで inside this very entry. The whole-word alignment fails only because 何 has no ど in its reading list, so the failure is on 何's side, not 処's. Not a 熟字訓: the word is transparently decomposable (ど-れ/ど-の/ど-こ vs こ-こ/そ-こ/あそ-こ). On 処's page the split is arbitrary — two of the four こそあど words group and two do not.",
+      "severity": "minor"
+    },
+    {
+      "character": "処",
+      "headword": "何処か",
+      "kana": "どこか",
+      "assigned": "irregular",
+      "should_be": "-こ (kun)",
+      "why": "Same cause as 何処/どこ — 処 = こ, ど is 何's problem. Sits in irregular while 其処で/そこで, structurally identical (demonstrative stem + 処 こ + particle), sits under -こ.",
+      "severity": "minor"
+    },
+    {
+      "character": "処",
+      "headword": "彼処",
+      "kana": "あそこ",
+      "assigned": "irregular",
+      "should_be": "-こ (kun)",
+      "why": "あそこ = あそ (彼) + こ (処); 処 contributes the regular こ, identical to 此処/ここ which is grouped. 彼 has no あそ reading, which is what breaks the whole-word alignment. JMdict carries no ateji/iK flag on 彼処, and it flags neither 此処 nor 其処 either — so ateji is not what separates the grouped pair from the irregular pair.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "No wrong-group findings. Every grouped word was read out from the Japanese first; a mechanical span check (rendaku, handakuten, 促音便, gemination tolerated) over all 30 entries then reported zero misses, matching the hand pass.",
+    "All 5 disagreements with kanji_reading_groups.pre_alignment.json: 3 favor the NEW grouping, 1 is neutral, 1 is the 処 issue above. NEW correct: 仕様がない/しょうがない moved ショウ -> irregular (the old ショウ match swallowed 仕's し — 仕様 is しよう and しょうがない is a contraction, so no clean split exists); 突く/つつく newly emitted as irregular (つつく has no slot; 突's kun list holds only つ.く, and つつ cannot be a span of つ). NEW wrong: 何処/何処か/彼処 moved -こ -> irregular, per the problems above; the old grouping was right for THIS kanji.",
+    "Root cause of the 処 finding is structural, not a scoring bug: alignment is all-or-nothing over the whole word, so a word unalignable because of ONE kanji drops out of every participating kanji's groups. Partial credit (file the word under the readings of the kanji that do align, leave it irregular only on the kanji that does not) would fix 処 without touching 何 — batch-03 correctly kept 何処か irregular under 何, and that judgment stands.",
+    "Shared-span slots verified against the okurigana each word writes: 深 split ふか.い / ふか.まる / ふか.める correctly, with 情け深い/なさけぶかい in the non-initial rendaku slot -ぶか.い; 満ちる under み.ちる vs 満たす under み.たす; 積む/積もる/積もり split つ.む / つ.もる / つ.もり, with 見積もり/みつもり under つ.もり; 申す under もう.す while every し-writing word (申し訳, 申し込む, 申し出る…) sits under もう.し-; 歩く under ある.く vs 歩む/歩み under あゆ.む; 値段/値引き/値打ち under ね vs 値/値する under あたい.",
+    "Homograph and same-kanji-two-readings pairs each landed on the right side: 様/さま vs 様/よう; 他/ほか vs 他/た; 否/いな vs 否/いや; 財布/さいふ under サイ vs the ザイ block; 旅客/りょかく under カク vs the キャク block. 未満/みまん correctly under マン and not under the kun み.ちる — the み there is 未.",
+    "Sound changes accounted for: 失敗/しっぱい and 一敗/いっぱい (は->ぱ), 散歩/さんぽ and 進歩/しんぽ, 友達/ともだち (た->だ in the non-initial slot -たち), 横綱/よこづな, 察する/さっする, 達する/たっする, 客観/きゃっかん, 突破/とっぱ, 積極的/せっきょくてき, 学科/がっか, 百科事典/ひゃっかじてん, 日程/にってい, 突っ込む/つっこむ.",
+    "Genuine ateji left in irregular and correctly so: 嗚呼/ああ (呼).",
+    "No nanori reading holds an ordinary word anywhere in the batch (福 and 望 carry seven and two nanori slots respectively, all empty); every compound's kanji appears in its headword."
+  ]
+}

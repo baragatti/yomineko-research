@@ -1,0 +1,24 @@
+{
+  "batch": 9,
+  "range": "entries 240..269",
+  "kanji_checked": 30,
+  "characters": ["走","秋","林","夏","顔","短","薬","習","便","洋","旅","軽","池","服","遠","夕","借","曜","弱","肉","貸","堂","暗","鳥","飯","勉","冬","昼","茶","弟"],
+  "problems": [
+    {
+      "character": "茶",
+      "headword": "滅茶苦茶",
+      "kana": "めちゃくちゃ",
+      "assigned": "irregular (emitted twice, same vocab_id 4042)",
+      "should_be": "irregular (a single entry)",
+      "why": "The word writes 茶 twice (めちゃくちゃ = め-ちゃ-く-ちゃ), and the irregular emitter appears to push one entry per occurrence of the kanji in the headword instead of one per word, so 茶's irregular list shows the identical vocab_id 4042 twice in a row. The grouped path does not have this bug: 無茶苦茶/むちゃくちゃ also contains 茶 twice yet appears only once under チャ. Placement itself is correct - 滅 has no reading め (メツ/ほろ.びる), so the word cannot be aligned and belongs in irregular; only the duplication is wrong.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "Checked against the pre-alignment file: only two placements changed in this range, and the rewrite is right on both. 貸し/かし moved from かし- to か.し- - correct, because 貸し writes the okurigana し, so the slot that spans か and writes し is the match; かし- (no written okurigana) correctly keeps 貸出/貸家/貸間. 滅茶苦茶 moved from チャ to irregular - correct, since 滅 cannot be め.",
+    "Sound-change cases all verified correct: 笑顔/えがお (かお->がお), 短波/たんぱ, 軍服/ぐんぷく, 薄暗い/うすぐらい, 渡り鳥/わたりどり, 気軽・手軽 (かる->がる), 待ち遠しい/まちどおしい (とお->どお, and どお is only nanori so とお.い is the right home), 薬局/やっきょく, 実習/じっしゅう, 借金/しゃっきん, 喫茶/きっさ.",
+    "Irregular lists otherwise correct: 薬缶/やかん (薬 reduced to や), 洋杯/コップ and 洋袴/ズボン (ateji), 従兄弟/いとこ (熟字訓). None of these has a clean reading-by-reading account and none should be pulled into a group.",
+    "遠ざかる is filed under とお.い, whose okurigana it is not a form of, but 遠 exposes no other kun slot (KANJIDIC gives only とお.い), so this is the least-wrong placement and is not reported as a defect.",
+    "貸's three-way kun split (か.す / か.し- / かし-) is filed correctly throughout, as is 弱's four-way (よわ.い/る/まる/める) and 便's ベン/ビン split (船便/ふなびん under ビン, 便所/べんじょ under ベン)."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "batch": 5,
+  "range": "entries 120..149 (明 動 京 理 体 田 主 題 首 意 不 作 用 度 強 持 野 都 以 思 家 世 区 県 進 院 心 界 産 教)",
+  "kanji_checked": 30,
+  "problems": [
+    {
+      "character": "度",
+      "headword": "御目出度う",
+      "kana": "おめでとう",
+      "assigned": "ト (on)",
+      "should_be": "irregular (ateji) — or, if grouped at all, the -た.い kun slot",
+      "why": "おめでとう is the ウ音便 adverbial of the native adjective めでたい (めでたく → めでとう). The と that 度 covers is that adjective's た shifted to と, not the Sino-Japanese on-reading ト; the whole spelling 御目出度う is 当て字. The entry itself already carries the kun slot -た.い, which exists in KANJIDIC precisely because of 目出度い/めでたい, so the alignment credited the wrong slot even though the surface kana matched. Contrast 屹度/きっと in the same group, which IS a sound-ateji built on the on-readings (屹 キツ→きっ + 度 ト→と) and is correctly filed under ト.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "One misfiling found in this range; everything else in entries 120..149 checks out reading-by-reading.",
+    "Four headwords differ from kanji_reading_groups.pre_alignment.json; in all four the NEW assignment is the correct one:",
+    "  明日/あした and 明後日/あさって — NEW irregular, OLD あ.かり. NEW is right: both are 常用漢字表付表 熟字訓 (あした, あさって cannot be split reading-by-reading); the old pass matched the あ of あした/あさって against あ.かり, which is a prefix coincidence.",
+    "  作家/さっか — NEW サク, OLD サ. NEW is right: さっか is さく with 促音便 (さく→さっ) + 家 か, not サ + っか.",
+    "  持ち/もち — NEW -も.ち, OLD も.つ. NEW is right: もち is the 連用形 stem, so ち is its okurigana, not つ.",
+    "Deliberate non-findings (checked and judged correct as filed):",
+    "  明日/あした, 明後日/あさって, 田舎/いなか, 区々/まちまち, 土産/みやげ, お土産/おみやげ — genuine 熟字訓/ateji; irregular is correct and grouping them would teach a falsehood. Note 田 lists いなか as a nanori and 明 lists あす as a nanori — neither may group ordinary words, so 田舎 and 明日 stay irregular for that reason too.",
+    "  屹度/きっと under ト — sound-ateji whose と really is 度's on-reading ト (屹 キツ→きっ); left as filed.",
+    "  持ち/もち under the leading-hyphen slot -も.ち although the word is 持-initial: もち is a genuine form of the ち okurigana and no hyphenless も.ち slot exists, so this is the only defensible home, not a wrong slot.",
+    "  進み/すすみ under すす.む (み is む's stem) rather than すす.める — correct shared-span slotting; すすめ would be the める stem.",
+    "  作る/つくる under つく.る vs 作り/つくり under つく.り — distinct slots, each matched by its own okurigana.",
+    "  Sound changes all verified on their spans: rendaku 力強い ちからづよい (つよ→づよ), 区切る/区切り くぎ (きり→ぎ), 用心 じん (しん→じん), 主に/主 おも, 世論 よろん; 促音便 一体 いったい, 一家 いっか, 国家 こっか, 出世 しゅっせ, 出産 しゅっさん, 出題 しゅつだい, 決心 けっしん, 熱心 ねっしん, 作家 さっか; handakuten 進歩 しんぽ, 心配 しんぱい, 大体 だいたい.",
+    "  送り仮名 absorbed forms: 思い出/おもいで, 思わず/おもわず, 思いがけない/おもいがけない all under おも.う; 気持ち・金持ち・お金持ち under -も.ち; 受け持つ/うけもつ under も.つ; 首飾り/くびかざり under くび; 田植え/たうえ under た; 田んぼ/たんぼ under た (んぼ is literal kana in the headword).",
+    "  Multi-slot on-readings all correct: 作 サク (作品 作文 作物 作成 作家) vs サ (作業 操作 動作); 都 ト (都市 首都 都会 都心) vs ツ (都合); 世 セイ (世紀) vs セ (世界 世話 世間 世代 出世 お世辞); 家 カ (家族 家庭 家具 画家 国家 家事 一家 作家) vs ケ (家/け); 度 ド (度 一度 もう一度 今度 態度 程度 制度) vs ト; 強 キョウ (勉強 強調 強化 強力 強制 強烈) vs ゴウ (強盗)."
+  ]
+}

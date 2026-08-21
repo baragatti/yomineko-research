@@ -1,0 +1,60 @@
+{
+  "batch": 11,
+  "kanji_checked": 30,
+  "problems": [
+    {
+      "character": "受",
+      "headword": "受け取る",
+      "kana": "うけとる",
+      "assigned": "-う.け (kun, leading hyphen = non-initial form)",
+      "should_be": "う.ける",
+      "why": "受 opens this word, so it cannot use the -う.け slot: the leading hyphen marks うけ as it appears when 受 is NOT word-initial (引き受け, 待ち受け, 荷受け). The span うけ and the sound are right, but the slot's defining property is contradicted by every word filed in it. The け-only okurigana is the ren'youkei stem of 受ける used as the first half of a compound verb, so the lemma slot is う.ける — which is where the pre-alignment grouping had all five, and where the aligner still puts 引き受ける (受 genuinely non-initial) and 受付. The exact-okurigana-match preference picked け over ける and overrode the hyphen.",
+      "severity": "major"
+    },
+    {
+      "character": "受",
+      "headword": "受け入れる",
+      "kana": "うけいれる",
+      "assigned": "-う.け (kun, leading hyphen = non-initial form)",
+      "should_be": "う.ける",
+      "why": "受 opens this word, so it cannot use the -う.け slot: the leading hyphen marks うけ as it appears when 受 is NOT word-initial (引き受け, 待ち受け, 荷受け). The span うけ and the sound are right, but the slot's defining property is contradicted by every word filed in it. The け-only okurigana is the ren'youkei stem of 受ける used as the first half of a compound verb, so the lemma slot is う.ける — which is where the pre-alignment grouping had all five, and where the aligner still puts 引き受ける (受 genuinely non-initial) and 受付. The exact-okurigana-match preference picked け over ける and overrode the hyphen.",
+      "severity": "major"
+    },
+    {
+      "character": "受",
+      "headword": "受け継ぐ",
+      "kana": "うけつぐ",
+      "assigned": "-う.け (kun, leading hyphen = non-initial form)",
+      "should_be": "う.ける",
+      "why": "受 opens this word, so it cannot use the -う.け slot: the leading hyphen marks うけ as it appears when 受 is NOT word-initial (引き受け, 待ち受け, 荷受け). The span うけ and the sound are right, but the slot's defining property is contradicted by every word filed in it. The け-only okurigana is the ren'youkei stem of 受ける used as the first half of a compound verb, so the lemma slot is う.ける — which is where the pre-alignment grouping had all five, and where the aligner still puts 引き受ける (受 genuinely non-initial) and 受付. The exact-okurigana-match preference picked け over ける and overrode the hyphen.",
+      "severity": "major"
+    },
+    {
+      "character": "受",
+      "headword": "受け付ける",
+      "kana": "うけつける",
+      "assigned": "-う.け (kun, leading hyphen = non-initial form)",
+      "should_be": "う.ける",
+      "why": "受 opens this word, so it cannot use the -う.け slot: the leading hyphen marks うけ as it appears when 受 is NOT word-initial (引き受け, 待ち受け, 荷受け). The span うけ and the sound are right, but the slot's defining property is contradicted by every word filed in it. The け-only okurigana is the ren'youkei stem of 受ける used as the first half of a compound verb, so the lemma slot is う.ける — which is where the pre-alignment grouping had all five, and where the aligner still puts 引き受ける (受 genuinely non-initial) and 受付. The exact-okurigana-match preference picked け over ける and overrode the hyphen.",
+      "severity": "major"
+    },
+    {
+      "character": "受",
+      "headword": "受け持つ",
+      "kana": "うけもつ",
+      "assigned": "-う.け (kun, leading hyphen = non-initial form)",
+      "should_be": "う.ける",
+      "why": "受 opens this word, so it cannot use the -う.け slot: the leading hyphen marks うけ as it appears when 受 is NOT word-initial (引き受け, 待ち受け, 荷受け). The span うけ and the sound are right, but the slot's defining property is contradicted by every word filed in it. The け-only okurigana is the ren'youkei stem of 受ける used as the first half of a compound verb, so the lemma slot is う.ける — which is where the pre-alignment grouping had all five, and where the aligner still puts 引き受ける (受 genuinely non-initial) and 受付. The exact-okurigana-match preference picked け over ける and overrode the hyphen.",
+      "severity": "major"
+    },
+    {
+      "character": "加",
+      "headword": "阿弗利加",
+      "kana": "アフリカ",
+      "assigned": "カ (on)",
+      "should_be": "irregular",
+      "why": "Phonetic ateji for 'Africa'. 加=カ is technically its real on-reading, so the alignment is not a sound error, but the word is an obsolete 音訳 spelling, not an example of the カ reading in use. The same entry already files its sibling 亜米利加/アメリカ under irregular (only because 米 has no メ reading, not on principle), so the two country-name ateji are treated inconsistently inside one kanji page. Reported as a consistency/pedagogy call, not a mis-read: showing アフリカ as an example word for カ next to 参加/増加/追加 is misleading.",
+      "severity": "minor"
+    }
+  ]
+}

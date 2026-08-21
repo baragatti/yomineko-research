@@ -1,0 +1,96 @@
+{
+  "batch": 7,
+  "range": "entries 180..209 (町 .. 英)",
+  "kanji_checked": 30,
+  "problems": [
+    {
+      "character": "乗",
+      "headword": "乗り物",
+      "kana": "のりもの",
+      "assigned": "-の.り",
+      "should_be": "の.る",
+      "why": "The span is right (乗 = の, り is the okurigana the headword writes), but the slot carries a LEADING hyphen, which marks a form used when the kanji is NOT word-initial (相乗り, 二人乗り). Here 乗 opens the word. The masu-stem り of 乗る belongs under の.る. The pre-alignment grouping had this under の.る; the rewrite's exact-okurigana preference moved it. Learner-visible contradiction: the slot header says 'non-initial' and every example under it is word-initial.",
+      "severity": "minor"
+    },
+    {
+      "character": "乗",
+      "headword": "乗り込む",
+      "kana": "のりこむ",
+      "assigned": "-の.り",
+      "should_be": "の.る",
+      "why": "Same cause as 乗り物: 乗 is word-initial, so the leading-hyphen slot (non-initial form) does not apply. のり here is the 連用形 of 乗る.",
+      "severity": "minor"
+    },
+    {
+      "character": "乗",
+      "headword": "乗り換える",
+      "kana": "のりかえる",
+      "assigned": "-の.り",
+      "should_be": "の.る",
+      "why": "Same cause: 乗 opens the word, so a leading-hyphen (non-initial) slot is the wrong home for it; 乗り is the 連用形 of 乗る.",
+      "severity": "minor"
+    },
+    {
+      "character": "乗",
+      "headword": "乗り換え",
+      "kana": "のりかえ",
+      "assigned": "-の.り",
+      "should_be": "の.る",
+      "why": "Same cause: 乗 is word-initial. Was under の.る before the rewrite.",
+      "severity": "minor"
+    },
+    {
+      "character": "乗",
+      "headword": "乗り越し",
+      "kana": "のりこし",
+      "assigned": "-の.り",
+      "should_be": "の.る",
+      "why": "Same cause: 乗 is word-initial. Was under の.る before the rewrite.",
+      "severity": "minor"
+    },
+    {
+      "character": "待",
+      "headword": "待ち合わせ",
+      "kana": "まちあわせ",
+      "assigned": "-ま.ち",
+      "should_be": "ま.つ",
+      "why": "Identical pattern to 乗: 待 = ま with written okurigana ち, but the -ま.ち slot's leading hyphen marks the non-initial form (順番待ち, 客待ち) and 待 opens this word. ち is the 連用形 of 待つ. Note the sibling 待合室/まちあいしつ IS filed under ま.つ in the same entry, so the entry is internally inconsistent.",
+      "severity": "minor"
+    },
+    {
+      "character": "待",
+      "headword": "待ち合わせる",
+      "kana": "まちあわせる",
+      "assigned": "-ま.ち",
+      "should_be": "ま.つ",
+      "why": "Same cause: 待 is word-initial, so the leading-hyphen (non-initial) slot does not apply.",
+      "severity": "minor"
+    },
+    {
+      "character": "待",
+      "headword": "待ち遠しい",
+      "kana": "まちどおしい",
+      "assigned": "-ま.ち",
+      "should_be": "ま.つ",
+      "why": "Same cause: 待 is word-initial. Was under ま.つ before the rewrite.",
+      "severity": "minor"
+    },
+    {
+      "character": "待",
+      "headword": "待ち望む",
+      "kana": "まちのぞむ",
+      "assigned": "-ま.ち",
+      "should_be": "ま.つ",
+      "why": "Same cause: 待 is word-initial. Was under ま.つ before the rewrite.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "No WRONG GROUP (priority 1) findings in this range: every example word's kana was worked out independently and the kanji's contributed sound matches its slot, including the sound-change cases 切符/きっぷ, 切手/きって, 楽器/がっき, 楽観/らっかん, 説得/せっとく, 早速/さっそく, 格好/かっこう, 乗っ取る/のっとる (gemination), 裏切る/うらぎる, 横切る/よこぎる, 上着/うわぎ, 水着/みずぎ, 素早い/すばやい, 共働き/ともばたらき, 立ち止まる/たちどまる, 演説/えんぜつ, 待ち遠しい/まちどおしい, 二階建て/にかいだて (rendaku), 切符/きっぷ (handakuten).",
+    "人質/ひとじち is now under シチ (じち = rendaku of しち) instead of the pre-alignment's チ. The rewrite is correct here and the old grouping was wrong — チ cannot account for the two morae じち.",
+    "建物/たてもの and 建前/たてまえ moved from た.てる to た.て. The rewrite is correct: the span たて is た + absorbed て, an exact fit for the た.て slot, whereas た.てる would predict たてる.",
+    "IRREGULAR entries checked and correctly irregular: 倶楽部/クラブ (ateji), 親父/おやじ (父 has no じ reading — 熟字訓), 最早/もはや (最 has no も reading — ateji), お早う/おはよう (はよ is the ウ音便 of はや, a sound change outside the allowed set; no clean reading-by-reading account exists, so irregular is the honest filing).",
+    "急かす/せかす under せ.く is acceptable: 急か- is the 未然形 of 急く plus causative す, and せ.く is the only kun slot spanning せ.",
+    "見送り/みおくり and 送り仮名/おくりがな under おく.る are correct — り is the 連用形 of 送る and 送 has no おく.り slot."
+  ]
+}

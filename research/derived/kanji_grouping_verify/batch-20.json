@@ -1,0 +1,45 @@
+{
+  "batch": 20,
+  "range": "entries 570..599",
+  "kanji_checked": 30,
+  "characters": ["笑","互","束","似","列","探","逃","遊","迷","夢","君","閉","緒","折","草","暮","酒","悲","晴","掛","到","寝","盗","吸","陽","御","歯","忘","雪","吹"],
+  "problems": [
+    {
+      "character": "晴",
+      "headword": "素晴らしい",
+      "kana": "すばらしい",
+      "assigned": "-ば.れ (kun, leading hyphen = non-word-initial voiced form)",
+      "should_be": "irregular",
+      "why": "Reading it out: す (素) + ば (晴) + らしい. The okurigana the word actually writes after 晴 is らしい, which cannot be a form of れ — the -ば.れ slot is the 五月晴れ/さつきばれ slot, where れ is the stem ending of 晴れる. There is no adjectival slot for 晴 at all, and JMdict's own alternative spellings for this word (素晴しい, 素薔薇しい) show the kanji are 当て字: すばらしい descends from すばる/すばらし, not from 晴れる. So 晴 contributes no reading here and the word belongs in irregular, next to 煙草/草臥れる. The pre-alignment grouping filed it under は.らす (見晴らし's slot), which is wrong for the same reason — らしい is not a form of らす — so both passes mis-file it; the rewrite did not introduce the error, it only moved it.",
+      "severity": "major"
+    },
+    {
+      "character": "草",
+      "headword": "草履",
+      "kana": "ぞうり",
+      "assigned": "ソウ (on)",
+      "should_be": "ソウ, but with a voicing note — the alignment licensed rendaku on a word-INITIAL element",
+      "why": "草履 = ぞう (草) + り (履). The span the aligner gave 草 is ぞう, voiced from ソウ, and 草 is the first element of the word — rendaku only ever voices a NON-initial element, so the sound change that made this alignment succeed is not a real one. Historically ぞう here is the 呉音 ザウ→ゾウ, a second on-reading that KANJIDIC (and therefore our reading list) does not carry. The filing is defensible in substance — 草 really does supply ぞう and it really is the same on-reading — so I am not asking for it to be moved to irregular, which would teach that 草履 is 熟字訓 when it is an ordinary on-compound. Flagging it because (a) a learner sees ソウ headed over a word whose kana starts ぞう with nothing explaining why, and (b) the permissive word-initial voicing rule that let it through could mis-file other words elsewhere in the corpus.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "Everything else in the range checks out reading-by-reading. Cases that could plausibly have gone wrong and did not:",
+    "笑: 笑顔/えがお correctly under え.む (え + がお, rendaku on 顔); 微笑/びしょう under ショウ. 微笑む/ほほえむ correctly moved to irregular by the rewrite (pre-alignment had it under え.む) — 笑 = え is clean, but 微 = ほほ is not a reading of 微 at all (it is 頬 borrowed), so the word has no reading-by-reading account and irregular is honest. 可笑しい/おかしい (可 = お, ateji) likewise correct in irregular.",
+    "列: 列車/れっしゃ and 列島/れっとう moved from the bare レ slot to レツ with 促音便 れつ->れっ. Straight improvement — レ alone never accounted for the っ.",
+    "折: the four spans are told apart correctly by the okurigana each word writes — 折る under お.る, 折れる under お.れる, 折/おり and 時折/ときおり under the bare おり (no okurigana written), 折り返す/おりかえす under お.り (writes り). The rewrite moved 折り返す from おり to お.り; that is the right slot, since the word does write り. 骨折/こっせつ, 折角/せっかく, 折衷/せっちゅう, 屈折/くっせつ all take せつ->せっ correctly.",
+    "掛: 掛け算/かけざん moved from か.ける to か.け — correct, the word writes け and nothing more. 切っ掛け/きっかけ also correct under か.け (き + っ from 切, か + け from 掛). 差し掛かる/さしかかる under か.かる.",
+    "暮: 暮れ/くれ under く.れる (れ is the ren'youkei), 夕暮れ/ゆうぐれ same slot with rendaku く->ぐ, 暮らし/くらし under く.らす. All three correct.",
+    "晴 (the rest): 晴れ/はれ sits in its own は.れ slot, 見晴らし/みはらし under は.らす (らし is らす's ren'youkei), 晴天/せいてん and 快晴/かいせい under セイ. Only 素晴らしい is wrong.",
+    "逃: the に / のが split is right — 逃げる・逃げ出す under に.げる, 逃がす under に.がす, 逃す/のがす and 見逃す/みのがす under のが.す, 逃れる under のが.れる. Easy pair to swap and it was not swapped.",
+    "寝: 寝かせる/ねかせる moved from ね.る to ね.かす. Accepted — かせ is inside 寝かす's paradigm (potential/仮定形) and there is no ね.かせる slot, so ね.かす is the only defensible home; ね.る was clearly worse, since る is not written.",
+    "雪 / 吹: 吹雪/ふぶき is now in irregular on both kanji (pre-alignment credited 吹 with ふ). Correct — 吹雪 and 雪崩/なだれ are both 常用漢字表 付表 entries, and 雪 = ぶき is not rendaku of ゆき. Genuine 熟字訓, leave them.",
+    "迷: 迷子/まいご correctly in irregular — also a 付表 word, and めい->まい is not a licensed sound change.",
+    "似: 真似/まね and 真似る/まねる correctly in irregular (似 = ね is no reading of 似); 似合う/にあう and 似通う/にかよう correctly under に.る via okurigana absorption.",
+    "御: the positional slots are honored — 御中/おんちゅう in おん- (word-initial), 御/お and 御目出度う/おめでとう in お-, and ご/御座います/晩御飯/御免 under ゴ. 晩御飯 puts 御 non-initially and it sits under the unmarked ゴ, which carries no positional constraint.",
+    "歯: every member of は (歯, 歯医者, 虫歯 with rendaku ば, 歯磨き, 歯車) genuinely uses は; 歯科/しか under シ.",
+    "君: the two homograph vocab entries 君/きみ and 君/くん are correctly split across きみ and クン.",
+    "酒: 酒場/さかば correctly in the trailing-hyphen さか- slot (酒 opens the word).",
+    "No word in this range is filed under a nanori reading."
+  ]
+}

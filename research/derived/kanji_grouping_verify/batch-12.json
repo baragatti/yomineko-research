@@ -1,0 +1,25 @@
+{
+  "batch": 12,
+  "range": "entries 330..359",
+  "kanji_checked": 30,
+  "kanji": ["報","済","活","原","共","得","解","交","資","予","向","際","勝","面","告","反","判","認","参","利","組","信","在","件","側","任","求","次","昨","論"],
+  "problems": [
+    {
+      "character": "利",
+      "headword": "阿弗利加",
+      "kana": "アフリカ",
+      "vocab_id": 751,
+      "assigned": "リ (on)",
+      "should_be": "irregular",
+      "why": "阿弗利加 is the obsolete 当て字 spelling of アフリカ (阿=ア, 弗=フ, 利=リ, 加=カ). The span リ is phonetically defensible, so this is not a wrong-sound assignment, but its exact twin 亜米利加/アメリカ (vocab 1036) sits in `irregular` on the same kanji, so the two are treated inconsistently — 亜米利加 only failed to align because 米 has no メ reading, not because it is a different kind of word. Shown to a learner, 阿弗利加 appears as an example word for 利's リ alongside 利用 and 便利, which teaches a dead ateji spelling rather than the on-reading in real vocabulary.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "All other example words in these 30 entries align correctly reading-by-reading, including the sound-change cases: 電報/でんぽう (handakuten ほう->ぽう), 経済/けいざい (rendaku さい->ざい), 活気/かっき and 活発/かっぱつ and 勝手/かって (gemination), 審判/しんぱん (handakuten はん->ぱん), 手際/てぎわ and 番組/ばんぐみ and 共働き/ともばたらき (rendaku, all under the correct leading-hyphen slot where one exists), 組合/くみあい (送り仮名の省略).",
+    "Shared-span slots resolve correctly: 勝ち/かち under か.つ rather than the suffix slot -が.ち (word-initial, no rendaku); 向い/むかい under むか.い rather than む.かい (the word writes only い); 交わす/かわす under か.わす rather than かわ.す (the word writes わす); 次いで/ついで under つ.ぐ (いで is the イ音便 te-form of a ぐ-verb); 済みません/すみません and 済まない/すまない under す.む / す.まない respectively.",
+    "Irregular buckets are correct where populated: 昨日/きのう, 昨夜/ゆうべ, 一昨日/おととい, 一昨年/おととし are 熟字訓; 真面目/まじめ is 熟字訓; 予て/かねて has no 予 reading that accounts for かね; 亜米利加/アメリカ is ateji. None of these should be pulled into a group.",
+    "No nanori slot in this range carries any compound.",
+    "Diffs vs pre_alignment.json in this range are all improvements by the new aligner: 向き -> -む.き and 向け -> -む.け (dedicated suffix slots); お参り -> まい.る (writes り, so not the word-initial まい- slot); 亜米利加 -> irregular; and 組み立てる / 仕組み / 組み合わせる / 組み合わせ moved from くみ to く.む, which is right because those words write み as okurigana so 組 spans only く. 阿弗利加 sat under リ in both files."
+  ]
+}

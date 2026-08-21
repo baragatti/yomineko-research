@@ -1,0 +1,39 @@
+{
+  "batch": 13,
+  "kanji_checked": 30,
+  "range": "entries 360..389 (官 増 係 感 情 投 示 変 打 直 両 式 確 果 容 必 演 歳 争 談 能 無 位 置 流 格 疑 過 局 放)",
+  "problems": [
+    {
+      "character": "直",
+      "headword": "素直",
+      "kana": "すなお",
+      "assigned": "kun なお.す",
+      "should_be": "kun なお.き",
+      "why": "すなお splits 素=す + 直=なお. The す belongs to 素 and comes BEFORE 直; the word writes no okurigana at all, so 直 cannot be a form of the verb 直す (consertar). Filing it under なお.す shows the learner 素直 'honesto' as an example of the 'to fix/correct' reading. Among the non-nanori slots sharing the span なお (なお.す / -なお.す / なお.る / なお.き) the only one whose okurigana the word can satisfy vacuously and whose sense fits is なお.き (なおき = reto, honesto). Same error in the pre-alignment file, so it is a surviving bug rather than a regression.",
+      "severity": "major"
+    },
+    {
+      "character": "投",
+      "headword": "投げ出す",
+      "kana": "なげだす",
+      "assigned": "kun -な.げ",
+      "should_be": "kun な.げる",
+      "why": "な.げ carries a LEADING hyphen: it is the nominal 投げ used non-word-initially (上手投げ うわてなげ, 身投げ みなげ). In 投げ出す the 投 is word-initial and 投げ is the 連用形 of 投げる, so the slot's positional constraint is violated. The exact-okurigana match (げ vs げる) pulled it out of the correct verb slot; the pre-alignment file had it under な.げる, so this one is a regression from the rewrite.",
+      "severity": "minor"
+    },
+    {
+      "character": "打",
+      "headword": "値打ち",
+      "kana": "ねうち",
+      "assigned": "kun う.ち-",
+      "should_be": "kun う.つ",
+      "why": "う.ち- carries a TRAILING hyphen: it is the prefixal 打ち- that OPENS a word (打ち明ける, 打ち合わせ, 打ち込む, 打ち切る — all correctly filed there). In ねうち the 打 is word-final (値=ね + 打ち=うち), a nominalisation of 打つ suffixed to 値, so it cannot be an example of the word-initial prefix form. The span うち is right, only the slot is wrong. Present in the pre-alignment file too.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "Verified-correct highlights: 相変わらず/あいかわらず under か.わる (わらず is a form of わる); 仲直り/なかなおり correctly moved from なお.す (pre-alignment) to なお.る; 一変/いっぺん handakuten; 率直/そっちょく and 設置/せっち gemination; 格好/かっこう (カク→カッ); 両替/りょうがえ and 万歳/ばんざい rendaku; 下位/かい (下=か + 位=い).",
+    "Irregular buckets all justified: 確り/しっかり, 果物/くだもの, 容易い/たやすい, ２０歳/はたち, 流行る/はやる — all genuine 熟字訓/ateji, none of them has a reading-by-reading account. Nothing was found that is wrongly in irregular.",
+    "無し/なし under な.い was examined and accepted: 無 has no な.し slot in the reading list, and なし is the classical form of ない, so な.い is the only and defensible home."
+  ]
+}

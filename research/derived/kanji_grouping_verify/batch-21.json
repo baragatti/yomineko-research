@@ -1,0 +1,24 @@
+{
+  "batch": 21,
+  "kanji_checked": 30,
+  "problems": [
+    {
+      "character": "煙",
+      "headword": "煙たい",
+      "kana": "けむたい",
+      "assigned": "けむ.る",
+      "should_be": "けむ.い",
+      "why": "けむたい is an i-adjective (けむたい / けむたく / けむたかった); たい cannot be an inflected form of the verb okurigana る, so 煙たい cannot sit in the けむ.る slot. The span けむ is shared by けむ.る, けむり and けむ.い, so the okurigana decides, and the only adjective slot is けむ.い (煙たい is the -たい variant of 煙い). The pre-alignment file had it under けむ.い; the rewrite moved it and the old placement was the right one.",
+      "severity": "minor"
+    },
+    {
+      "character": "眠",
+      "headword": "眠たい",
+      "kana": "ねむたい",
+      "assigned": "ねむ.る",
+      "should_be": "ねむ.い",
+      "why": "ねむたい is an i-adjective (ねむたい / ねむたく / ねむたかった); たい is not a form of the verb okurigana る, so the ねむ.る slot (眠る, 居眠り) cannot host it. Span ねむ is shared with ねむ.い, which is the adjective slot 眠たい belongs to (the -たい variant of 眠い). The pre-alignment file had it under ねむ.い; the rewrite moved it and the old placement was the right one.",
+      "severity": "minor"
+    }
+  ]
+}

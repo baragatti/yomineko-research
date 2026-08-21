@@ -5,19 +5,31 @@ Have: readings (on/kun/nanori, faithful to KANJIDIC2) and example_words with kan
 them, so a learner looking at 日 sees a flat list of readings and a flat list of words and has to work
 out for themselves that 今日 uses none of the listed readings while 日曜日 uses two.
 
-This is the mechanical half. It aligns by READING SUBSTRING, which is a heuristic and is treated as one:
-  * a kun reading is stripped of its okurigana marker (書-く -> か) and of the leading hyphen KANJIDIC2
-    uses for bound forms (-び -> び);
-  * on readings are matched in hiragana, since example_words carry hiragana kana;
-  * rendaku is handled by also testing the voiced form of a reading's first mora (ひ -> び, か -> が),
-    which is why -び and -か already appear as separate KANJIDIC2 entries for 日 and why matching only
-    the literal form would mis-group 三日 and 日曜日;
-  * the LONGEST matching reading wins, so にち beats に.
+This is the mechanical half, and it works by ALIGNING THE WHOLE WORD (scripts/export/kanji_align.py)
+rather than by looking for a reading inside the kana. The difference is the whole point.
 
-A word that matches no reading is NOT forced into a group. 今日 (きょう) is the standard example: it is
-a 熟字訓, a whole-word reading that belongs to no single character, and pretending it uses a listed
-reading of 日 would teach a falsehood. Those are emitted under `irregular` so the app can show them as
-what they are.
+Substring matching asks "does this reading appear in the word's kana, somewhere plausible?" -- a
+question you can answer without ever looking at the other kanji. Six rounds of patches went into
+propping that up (positional start/end anchoring, 促音便, handakuten, an okurigana strict-then-loose
+two-pass, a shared-prefix score, a consonant-row tiebreak, prefix/bound hyphen rules) and it still
+credited 生 with the う of 誕生日, where 生 plainly sounds じょう.
+
+Alignment asks the question the word actually poses: can every kanji be given a contiguous span of the
+kana such that the spans, interleaved with the literal okurigana the headword writes, reconstruct the
+reading exactly? That is a constraint over the whole word, so a wrong claim about one kanji fails
+because the REST of the word can no longer be accounted for:
+
+    誕生日 / たんじょうび  ->  誕:たん  生:じょう  日:び        (う for 生 leaves んじょうび unaccounted)
+    売り切れる / うりきれる ->  売:う [り] 切:き [れる]          (れる for 売 strands うりき)
+    硝子 / がらす          ->  no alignment exists              -> `irregular`
+
+A word that cannot be aligned is NOT forced into a group. 今日 (きょう), 明日 (あした), 三味線
+(しゃみせん) and 硝子 (がらす) are 熟字訓 or ateji -- whole-word readings belonging to no single
+character -- and pretending they use a listed reading would teach a falsehood. They go to `irregular`
+so the app can show them as what they are.
+
+Alignment fixes the SPAN. Choosing between readings that share a span (痛い and 痛む both give 痛 the
+span いた) is a separate question, answered below by the okurigana the headword actually writes.
 
 Output: research/derived/kanji_reading_groups.json — the grouping plus, for each reading, the slots a
 later authoring pass fills (a pt-BR note on what the reading means and when it is used). Nothing is
@@ -29,191 +41,213 @@ from __future__ import annotations
 import json, sys
 from collections import Counter
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from kanji_align import (Aligner, bare, hira, masu_stem, no_kun_kanji,  # noqa: E402
+                         row_of, variants)
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "research" / "derived" / "kanji_reading_groups.json"
 LEVELS = ("n5", "n4", "n3")
-VOICED = {"か": "が", "き": "ぎ", "く": "ぐ", "け": "げ", "こ": "ご", "さ": "ざ", "し": "じ",
-          "す": "ず", "せ": "ぜ", "そ": "ぞ", "た": "だ", "ち": "ぢ", "つ": "づ", "て": "で",
-          "と": "ど", "は": "ば", "ひ": "び", "ふ": "ぶ", "へ": "べ", "ほ": "ぼ"}
-# handakuten: は-row also geminates to the p-row after っ and ん (ハイ -> ぱい in 一杯, 乾杯).
-# Without this the whole は-row on-reading family loses its most common compounds to `irregular`.
-PLOSIVE = {"は": "ぱ", "ひ": "ぴ", "ふ": "ぷ", "へ": "ぺ", "ほ": "ぽ"}
-KATA = {chr(c): chr(c - 0x60) for c in range(0x30A1, 0x30F7)}
+SLOT_NOTE = """Choosing between readings that SHARE a span.
+
+Alignment gives 痛 the span いた in both 痛い and 痛み, so the span alone cannot say which okurigana slot
+the word belongs to. What can is the okurigana THE HEADWORD ITSELF WRITES after that kanji, judged
+against each candidate reading's own okurigana. Four tests, in priority order:
+
+  UNCHANGED SPAN  the reading matches the span as written, not through a sound change. 子供 gives 供 the
+                  span ども, which is -ども exactly and とも only via rendaku, so -ども is the slot.
+  EXACT           the word writes the reading's okurigana verbatim.      痛い    -> いた.い
+  RELATED         it writes a recognisable INFLECTION of it. Japanese verbs inflect within a consonant
+                  row, so 休み is a form of 休む (み and む are both ま-row) but not of 休まる; and the
+                  撥音便 ぶ/む/ぬ -> ん makes 飛んだ a form of 飛ぶ.
+  SHORTEST        among equals, the most basic form. 売り is 売る, not 売れる; 続き is 続く, not 続ける.
+
+A reading whose okurigana is UNRELATED to what the word writes loses to a reading with no okurigana at
+all, because an unrelated okurigana is positive evidence the word is not a form of that verb: 赤ちゃん
+is not a form of 赤らめる and belongs on the bare あか, 出来る is not a form of 来す.
+
+Every one of those tests was put here by a specific wrong grouping. Without SHORTEST, 休み went to
+やす.まる and 見つける to み.える. Without RELATED, 済ませる went to す.まない -- the negative of a
+different verb -- and 楽しみ to the adjective たの.しい instead of the verb たの.しむ it is the stem-noun
+of. Without UNCHANGED SPAN, the bound forms -ども, -ぎわ, -がた, -ぶか and -ぐみ all lost their own
+compounds to the unvoiced readings they are derived from.
+"""
+NASAL = {"ぶ": "ん", "む": "ん", "ぬ": "ん"}   # 撥音便: ぶ/む/ぬ -> ん
 
 
-def hira(s: str) -> str:
-    return "".join(KATA.get(c, c) for c in s or "")
+def oku_related(word_oku: str, oku: str) -> tuple[int, int]:
+    """(shared prefix length, 1 if the first divergence is a plausible inflection else 0)."""
+    if not word_oku or not oku:
+        return (0, 0)
+    shared = 0
+    for a, b in zip(word_oku, oku):
+        if a != b:
+            break
+        shared += 1
+    if shared >= len(oku) or shared >= len(word_oku):
+        return (shared, 1 if shared else 0)
+    # Two i-adjective shapes the row test alone misses, both flagged by the verification pass:
+    #   SUFFIX     the word's okurigana ENDS with the reading's. 煙たい is a form of 煙い (けむ.い), and
+    #              たい ends in い; without this it fell to けむ.る, a different verb entirely.
+    #   ADVERBIAL  い -> く. 亡くなる and 亡くす are built on the く-form of 亡い (な.い); the row test
+    #              matched く against the き of な.き- instead, which is a bound okurigana the words
+    #              do not write.
+    # Both shapes are specific to the い-adjective ending, and the test has to say so. Written as the
+    # general "word_oku ends with oku" it also fired on ね.る for 寝かせる -- かせる does end in る --
+    # and pulled 寝かせる out of ね.かす, which is the slot it had just been fixed into.
+    if oku == "い" and (word_oku.endswith("い") or word_oku.startswith("く")):
+        return (shared, 2)
+    a, b = word_oku[shared], oku[shared]
+    ra, rb = row_of(a), row_of(b)
+    if ra is not None and ra == rb:
+        return (shared, 1)                       # same consonant row: 休み / 休む
+    if NASAL.get(b) == a:
+        return (shared, 1)                       # 撥音便: 飛んだ / 飛ぶ
+    return (shared, 0)
 
 
-def bare(reading: str) -> str:
-    """KANJIDIC2 decorations: '-び' bound form, '書.く' okurigana split."""
-    r = (reading or "").replace("-", "").replace("‐", "")
-    if "." in r:
-        r = r.split(".", 1)[0]
-    return hira(r)
+def slot_score(word_oku: str, r: dict, span: str, unchanged: bool,
+               chosen: bool = False, as_written: bool = True) -> tuple:
+    """Rank one reading as the slot for a span. See SLOT_NOTE for why each term is here.
+
+    `chosen` means the ALIGNER picked this very reading row when it solved the word, and it carries
+    information nothing here can reconstruct: the aligner weighs 音訓 consistency across the whole
+    compound, which is the only thing separating 気's real ON キ from the look-alike kun き our KANJIDIC
+    import also lists. Both give 病気 the span き and neither has okurigana, so without this the tie fell
+    to whichever was listed first, and all ten 気 compounds landed on the kun.
+
+    `as_written` separates an okurigana absorbed verbatim from one absorbed in its masu-stem. 押入れ
+    gives 押 the span おし, which is お.し- as written but お.す only after す -> し, so the first is the
+    slot."""
+    oku = hira(r.get("okurigana") or "").replace("-", "").replace("‐", "")
+    if not word_oku:
+        # The word writes no okurigana after this kanji, so a reading that demands some is the wrong
+        # slot: 青白い gives 青 the bare span あお and belongs under あお, not あお.い.
+        return (1 if unchanged else 0, 3 if not oku else 0, 0, 0,
+                1 if as_written else 0, 1 if chosen else 0, 0)
+    shared, related = oku_related(word_oku, oku)
+    if word_oku == oku:
+        kind = 4
+    elif related >= 2:
+        kind = 35 / 10          # between "related" and "exact": a recognised adjective form
+    elif shared or related:
+        # A shared leading run is evidence on its own, not only a divergence in the same row: 下さい
+        # shares さ with くだ.さる, and judging only the divergence (い vs る) sent it to くだ.す.
+        kind = 3
+    elif not oku:
+        kind = 2                                  # bare beats an UNRELATED okurigana
+    else:
+        kind = 1
+    # An EXACT okurigana outranks an unchanged span. 役立つ writes つ, which is た.つ exactly, and the
+    # bound -だ.て matches the rendaku'd span だ as written but carries the wrong okurigana; the word is
+    # 立つ, so the okurigana is the stronger evidence. Below exact, the unchanged span still decides,
+    # which is what keeps 子供 on -ども rather than on とも-via-rendaku.
+    return (1 if kind == 4 else 0, 1 if unchanged else 0, kind, shared,
+            1 if as_written else 0, 1 if chosen else 0, related, -len(oku))
 
 
-def oku_ok(headword: str, r: dict) -> bool:
-    """A reading with okurigana ends the word at the okurigana, not at the reading itself."""
-    o = hira(r.get("okurigana") or "")
-    return bool(o) and headword.endswith(o)
-
-
-# Kana rows. A Japanese verb inflects WITHIN its consonant row -- 済ます / 済ませ, 書く / 書か / 書け --
-# so when two readings tie, the one whose okurigana diverges into the same row as the word is the one
-# that shares its stem. Used ONLY to break ties (see `row_match`), never to filter.
-ROWS = ("あいうえお", "かきくけこがぎぐげご", "さしすせそざじずぜぞ", "たちつてとだぢづでど",
-        "なにぬねの", "はひふへほばびぶべぼぱぴぷぺぽ", "まみむめも", "やゆよ", "らりるれろ", "わをん")
-ROW_OF = {c: i for i, r in enumerate(ROWS) for c in r}
-
-
-def row_match(word_tail: str, oku: str) -> int:
-    """1 when the okurigana diverges from the word into the SAME kana row, else 0.
-
-    This is the tiebreak the 済 family needed. 済ませる scored identically against す.まない and す.ます
-    -- both share exactly the one mora ま with the word's tail ませる -- so the winner was whichever
-    KANJIDIC2 happened to list first, which was す.まない. That put 済ませる (the transitive partner of
-    済ます) under the negative of 済む.
-
-    At the first divergence the word reads せ. ます continues す, same さ-row, because 済ます and 済ませる
-    are the same stem. まない continues な, the な-row, because it is a different word's negation.
-
-    Deliberately a tiebreak and not a scoring term: 少.ない legitimately claims 少なくとも, where the
-    divergence is く against い and the rows do NOT match. As a filter that grouping would be lost; as a
-    tiebreak nothing happens there at all, because 少 has no competing reading to tie with.
-    """
-    if not oku or not word_tail:
-        return 0
-    i = 0
-    while i < len(oku) and i < len(word_tail) and oku[i] == word_tail[i]:
-        i += 1
-    if i == 0 or i >= len(oku) or i >= len(word_tail):
-        return 0
-    a, b = ROW_OF.get(word_tail[i]), ROW_OF.get(oku[i])
-    return 1 if a is not None and a == b else 0
-
-
-def variants(r: str) -> list[str]:
-    """The sound changes a reading undergoes inside a compound."""
-    out = [r]
-    if r and r[0] in VOICED:
-        out.append(VOICED[r[0]] + r[1:])          # rendaku: ひ -> び in 誕生日
-    if r and r[0] in PLOSIVE:
-        out.append(PLOSIVE[r[0]] + r[1:])         # handakuten: ハイ -> ぱい in 一杯
-    if r.endswith(("つ", "ち", "く", "き")):
-        # 促音便: an on-reading ending in つ/ち/く/き geminates before a voiceless consonant.
-        # Without this, シュツ loses 出発 / 出席 / 出身 (all しゅっ-) to `irregular`.
-        out.append(r[:-1] + "っ")
-    return [x for x in out if x]
+def pick_slot(k: dict, span: str, word_oku: str, at_start: bool, at_end: bool,
+              chosen: dict | None = None) -> dict | None:
+    """The reading row whose span matches and whose okurigana best fits what the word writes."""
+    whole = at_start and at_end
+    ckey = (chosen or {}).get("reading")
+    cands = []
+    for r in k.get("readings") or []:
+        if (r.get("type") or "").lower() == "nanori":
+            continue
+        b = bare(r.get("reading"))
+        if not b:
+            continue
+        oku = hira(r.get("okurigana") or "").replace("-", "").replace("‐", "")
+        # The span is the reading itself, or the reading with its okurigana absorbed (送り仮名の省略:
+        # 立ち場 -> 立場, so 立's span たち is still the た.ち slot).
+        # Mirror the aligner's absorption forms exactly. It accepts the okurigana both as written and
+        # in its masu-stem (受け付け -> 受付, 待ち合い室 -> 待合室), so a slot lookup that only knew the
+        # written form found nothing for spans the aligner had just resolved, and the word fell to
+        # `irregular` having aligned perfectly well.
+        stem = masu_stem(oku) if oku else ""
+        absorbed = (variants(b + oku) if oku else []) + (variants(b + stem) if stem else [])
+        plain = variants(b)
+        if span not in plain and span not in absorbed:
+            continue
+        unchanged = span == b or (bool(oku) and span in (b + oku, b + stem))
+        rd = (r.get("reading") or "").strip()
+        # A LEADING hyphen marks a bound form, used only when the kanji is not word-initial (出's -で
+        # must not claim 出会う); a TRAILING hyphen is its mirror, a prefix form. Neither restriction can
+        # be meant for a one-character word, where the kanji is simultaneously initial and final.
+        #
+        # An EXACT okurigana match overrides the leading-hyphen hint, because it is direct evidence
+        # about THIS word while the hyphen is a general claim about where the reading occurs.
+        # KANJIDIC lists 持's もち as bound (-も.ち), yet 持ち writes 持 first and its ち verbatim;
+        # honouring the hyphen sent it to も.つ, whose つ the word does not write at all.
+        # POSITION IS NOT NEGOTIABLE. An earlier version let an exact okurigana match override the
+        # leading hyphen, to pull 持ち into -も.ち. That was wrong twice over: the hyphen states WHERE
+        # the reading occurs, and an okurigana says nothing about position, so the override let every
+        # word-initial word into a suffix slot -- 読み, 読み上げる, 飲み物, 飲み込む, 行き, 回り, 通り,
+        # 向き and more, filling -よ.み and -の.み entirely with counterexamples while よ.む and の.む
+        # showed only their dictionary forms. 持ち belongs with も.つ for the same reason 痛み belongs
+        # with いた.む: it is the 連用形 of the verb, and the suffix slot is for 気持ち and 金持ち.
+        if rd.startswith(("-", "‐")) and at_start and not whole:
+            continue
+        if rd.endswith(("-", "‐")) and at_end and not whole:
+            continue
+        as_written = span in plain or (bool(oku) and span in variants(b + oku))
+        sc = slot_score(word_oku, r, span, unchanged,
+                        chosen=(ckey is not None and r.get("reading") == ckey),
+                        as_written=as_written)
+        if (r.get("type") or "").lower() == "kun" and k["character"] in no_kun_kanji():
+            # Second source says this kanji has no kun reading at all; see kanji_align.no_kun_kanji.
+            sc = (-1,) + sc
+        else:
+            sc = (0,) + sc
+        cands.append((sc, r))
+    if not cands:
+        return None
+    cands.sort(key=lambda t: t[0], reverse=True)
+    return cands[0][1]
 
 
 def main() -> int:
     entries = []
     for lv in LEVELS:
         entries += json.loads((ROOT / "corpus" / "kanji" / f"{lv}.json").read_text(encoding="utf-8"))
+    aligner = Aligner()
 
     out, stats = [], Counter()
     for k in entries:
         reads = k.get("readings") or []
         words = k.get("example_words") or []
+        ch = k["character"]
         groups: dict[str, list] = {}
         irregular = []
         for w in words:
-            kana = hira(w.get("kana") or "")
-            best, best_len = None, (0, 0)
-            # Two passes. STRICT requires the word to end with the reading's own okurigana, which is what
-            # separates 生.きる from 生.かす. But it is too strong on its own: a nominalised or compound
-            # verb ends with something else entirely (遊び does not end in ぶ, 逃げ出す does not end in
-            # げる, 備え付ける does not end in え), and those fell into `irregular` — 135 of them, all
-            # flagged by the authoring pass. So fall back to reading-only matching when nothing strict
-            # matches, rather than discarding the word.
-            for strict in (True, False):
-              if best:
-                break
-              for r in reads:
-                # NANORI are name-readings. Letting them group ordinary words is actively wrong: the
-                # あ nanori of 日 swallowed 明日 (あした), which is a 熟字訓 like 今日 and belongs in
-                # `irregular`. Only on/kun readings group words.
-                if (r.get("type") or "").lower() == "nanori":
-                    continue
-                b = bare(r.get("reading"))
-                if not b:
-                    continue
-                # POSITIONAL alignment. Matching the reading anywhere in the kana was wrong and the
-                # authoring pass caught it 142 times: 一人 (ひとり) landed under 人's ひと although that
-                # ひと is 一's reading and 人 sounds り; 三味線 (しゃみせん) landed under 三's み although
-                # 三 sounds しゃ there and the み belongs to 味. A kanji that opens the word must own the
-                # START of the kana, and one that closes it must own the END.
-                hw = w.get("headword") or ""
-                idx = hw.find(k["character"])
-                at_start, at_end = idx == 0, idx == len(hw) - 1
-                if not any(v in kana for v in variants(b)):
-                    continue
-                if at_start and not any(kana.startswith(v) for v in variants(b)):
-                    continue
-                if at_end and not oku_ok(hw, r) and not any(kana.endswith(v) for v in variants(b)):
-                    continue
-                # A leading hyphen marks a BOUND form, used only when the kanji is not word-initial
-                # (出's -で should not claim 出会う).
-                # A TRAILING hyphen is the mirror: a PREFIX form, used only when the kanji opens the
-                # word. 59 readings carry one and nothing enforced it, so 合's あい- (prefix) claimed
-                # 場合 and 試合 -- both of which have 合 at the END -- while the -あい listed for exactly
-                # that position sat empty.
-                #
-                # Both tests exclude the ONE-CHARACTER word, where the kanji is simultaneously initial
-                # and final and neither restriction can be meant: 御 alone reads ご and 幾 alone reads
-                # いく, and a naive at_end test threw both out of their own prefix reading.
-                rd = (r.get("reading") or "").strip()
-                whole_word = at_start and at_end
-                if rd.startswith(("-", "‐")) and at_start and not whole_word:
-                    continue
-                if rd.endswith(("-", "‐")) and at_end and not whole_word:
-                    continue
-                # A kun reading with OKURIGANA (生.きる, 生.かす, 生.ける) must match the word's own
-                # okurigana, or all three collapse to い and every one of them claims 生きる, printing
-                # the same compound list three times under three different readings.
-                oku = hira(r.get("okurigana") or "")
-                oku_exact = bool(oku) and (w.get("headword") or "").endswith(oku)
-                if oku and not oku_exact and strict:
-                    continue
-                # An UNCHANGED reading beats one that only matched through rendaku or handakuten. Both
-                # ソン and ゾン are listed for 存, and without this the ぞん compounds (保存, 依存, 生存)
-                # matched ソN through rendaku and won on length, landing in the wrong group.
-                exact = any(kana.startswith(b) or kana.endswith(b) or b in kana for b in [b]) and (
-                    b in kana)
-                unchanged = b in kana
-                # In the LOOSE pass nothing has exact okurigana, so slots tie and the winner is
-                # arbitrary: 暮らし went to く+る instead of く+らす, 寝かせる to ね+る instead of ね+かす.
-                # Score the shared prefix between the word's tail and the reading's okurigana.
-                tail = hw[idx + 1:] if idx >= 0 else ""
-                shared = 0
-                for a, c2 in zip(hira(tail), oku):
-                    if a != c2:
-                        break
-                    shared += 1
-                score = (len(b) + (len(oku) * 2 if oku_exact else 0)
-                         + shared * 3 + (2 if unchanged else 0))
-                # Compared as a TUPLE, so the row match decides only among equal scores and cannot
-                # outrank any of the real signals above it.
-                rank = (score, row_match(hira(tail), oku))
-                if rank > best_len:
-                    best, best_len = f"{r.get('reading')}|{r.get('okurigana') or ''}", rank
-            if best:
-                # example_words can list the same compound twice (日曜日 under ニチ); dedupe by headword.
-                bucket = groups.setdefault(best, [])
-                if any(c["headword"] == w.get("headword") for c in bucket):
-                    continue
-                bucket.append(
-                    {"headword": w.get("headword"), "kana": w.get("kana"),
-                     "vocab_id": w.get("vocab_id"),
-                     "gloss_pt": (w.get("gloss") or {}).get("pt-BR")})
-                stats["grouped"] += 1
-            else:
-                irregular.append({"headword": w.get("headword"), "kana": w.get("kana"),
+            hw = w.get("headword") or ""
+            got = aligner.span_of(hw, w.get("kana") or "", ch)
+            if got is None:
+                # No assignment of spans reconstructs the reading -> 熟字訓 / ateji / a reading we do
+                # not hold. Recorded as irregular rather than forced into a group.
+                irregular.append({"headword": hw, "kana": w.get("kana"),
                                   "vocab_id": w.get("vocab_id"),
                                   "gloss_pt": (w.get("gloss") or {}).get("pt-BR")})
                 stats["irregular"] += 1
+                continue
+            idx = hw.find(ch)
+            r = pick_slot(k, got["span"], got["okurigana"], idx == 0, idx == len(hw) - 1,
+                          chosen=got.get("reading"))
+            if r is None:
+                irregular.append({"headword": hw, "kana": w.get("kana"),
+                                  "vocab_id": w.get("vocab_id"),
+                                  "gloss_pt": (w.get("gloss") or {}).get("pt-BR")})
+                stats["aligned but no slot"] += 1
+                continue
+            key = f"{r.get('reading')}|{r.get('okurigana') or ''}"
+            bucket = groups.setdefault(key, [])
+            # example_words can list the same compound twice (日曜日 under ニチ); dedupe by headword.
+            if any(c["headword"] == hw for c in bucket):
+                continue
+            bucket.append({"headword": hw, "kana": w.get("kana"), "vocab_id": w.get("vocab_id"),
+                           "gloss_pt": (w.get("gloss") or {}).get("pt-BR")})
+            stats["grouped"] += 1
 
         rows = []
         for r in reads:

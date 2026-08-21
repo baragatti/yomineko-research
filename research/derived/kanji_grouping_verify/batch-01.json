@@ -1,0 +1,36 @@
+{
+  "batch": 1,
+  "entries_range": "0..29",
+  "kanji_checked": 30,
+  "kanji": ["日","一","国","会","人","年","大","十","二","本","中","長","出","三","時","行","社","見","月","分","後","前","生","五","間","上","東","四","今","新"],
+  "problems": [
+    {
+      "character": "本",
+      "headword": "日本",
+      "kana": "にほん",
+      "assigned": "irregular",
+      "should_be": "on:ホン",
+      "why": "本 reads ほん in にほん with no sound change at all - it is the 日 that is irregular (に is only a truncation of ニチ, and 日's に is listed nanori-only). The aligner is all-or-nothing per WORD, so a word that fails on one kanji is dumped into the irregular bucket of EVERY kanji in it, including the ones that behave perfectly. Under 本 the learner is told 日本 is a special whole-word reading, which is false for 本 - it is the plainest possible ホン example the corpus has. The pre-alignment file had it right (on:ホン). Leaving 日本 irregular under 日 is defensible; under 本 it is not.",
+      "severity": "major"
+    },
+    {
+      "character": "大",
+      "headword": "大きな",
+      "kana": "おおきな",
+      "assigned": "kun:おお.きい",
+      "should_be": "kun:おお-",
+      "why": "The headword literally writes きな. な is not an inflection of the okurigana きい: 大きい inflects 大きく / 大きかった / 大きくない, never 大きな - 大きな is a separate 連体詞 (JMdict gives it its own entry). So it sits in a slot whose okurigana it cannot be a form of. The reading itself (おお) is right, so no false sound is taught; only the slot is wrong. The pre-alignment file had it under おお- , which the aligner can satisfy exactly (span おお + literal okurigana きな). Low priority, and if the reviewer prefers keeping the 大きい/大きな family together this can be left alone deliberately.",
+      "severity": "minor"
+    }
+  ],
+  "verified_clean_notes": [
+    "誕生日/たんじょうび now correctly 生:ショウ (じょう, rendaku) - was 生:-う before the rewrite.",
+    "一人/ひとり and 二人/ふたり correctly split 一:ひと- / 二:ふた + 人:-り.",
+    "日曜日/にちようび filed under ニチ (first 日). Correct; it is also a -び example but that is coverage, not error.",
+    "四つ角/よつかど moved 四:よ -> 四:よ.つ; よ.つ is the right KANJIDIC slot for よつ- compounds.",
+    "行き/いき moved い.く -> -い.き; correct, its gloss is 'com destino a' (the 〜行き suffix noun).",
+    "今年/ことし moved 年:とし -> irregular; correct, it is a 常用漢字表 付表 special reading.",
+    "Genuine 熟字訓/ateji confirmed as correctly irregular: 今日 きょう, 明日 あした, 昨日 きのう, 今朝 けさ, 今年 ことし, 時計 とけい, 何時 いつ, 何時でも いつでも, 明後日 あさって, 三味線 しゃみせん, 上手い うまい.",
+    "Positional pairs with identical sound (出 だ.す vs -だ.す for 思い出す; 前 まえ vs -まえ for 名前/お前/当たり前) default to the non-hyphen slot. Not reported: the sound taught is correct and no dictionary distinction is lost."
+  ]
+}

@@ -34,6 +34,8 @@ SUITE = [
     ("validate_role_exercises.py", "code"),
     ("validate_sentence_structure.py", "code"),
     ("validate_grammar_formation.py", "code"),
+    ("test_kanji_align.py", "code"),
+    ("validate_kanji_reading_groups.py", "code"),
     ("validate_speaking_path.py", "code"),
     ("validate_capabilities.py", "code"),
     ("audit_manifest.py", "code"),

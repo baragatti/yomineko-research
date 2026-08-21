@@ -1,0 +1,42 @@
+{
+  "batch": 19,
+  "range": "entries 540..569",
+  "kanji_checked": 30,
+  "characters": ["絶","幸","押","倒","等","老","曲","払","庭","徒","勤","遅","居","雑","招","困","欠","更","刻","賛","抱","犯","恐","息","戻","願","絵","越","欲","痛"],
+  "problems": [
+    {
+      "character": "払",
+      "headword": "払い戻す",
+      "kana": "はらいもどす",
+      "assigned": "-はら.い (kun, leading hyphen = non-word-initial form)",
+      "should_be": "はら.う",
+      "why": "払 opens the word here (はらい-もどす), so it cannot sit in a slot whose leading hyphen marks the non-initial form. The other two members of that slot are correct precisely because 払 is non-initial there (支払い しはらい, 酔っ払い よっぱらい). はらい is the ren'youkei of 払う, so the unmarked slot はら.う is its home; the pre-alignment grouping had it there and the rewrite moved it. Sound assignment (払 = はらい) is right either way, so this is a slot/position error, not a wrong reading.",
+      "severity": "minor"
+    },
+    {
+      "character": "払",
+      "headword": "払い込む",
+      "kana": "はらいこむ",
+      "assigned": "-はら.い (kun, leading hyphen = non-word-initial form)",
+      "should_be": "はら.う",
+      "why": "Same as 払い戻す: 払 is word-initial (はらい-こむ) and the leading hyphen on -はら.い reserves that slot for non-initial occurrences. The い is the ren'youkei okurigana of 払う. Pre-alignment had it under はら.う; the rewrite moved it because only the -はら.い slot literally writes い.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "Everything else in the range checks out reading-by-reading. Spot notes on the cases that could have gone wrong:",
+    "痛: 痛み/いたみ is under いた.む (correct — み is む's stem, not い's); 痛い/いたい under いた.い; 痛める/いためる under いた.める. This is the case the prompt flags and the rewrite gets it right (pre-alignment had 痛み under いた.い).",
+    "押: 押入れ/おしいれ correctly under お.し- with 押 spanning おし (送り仮名の省略 — the compound drops the し). Pre-alignment credited only お. Improvement.",
+    "恐: 恐らく/おそらく correctly moved to おそ.る (classical 恐る + ク語法) instead of おそ.れる. Improvement.",
+    "絶: 絶えず/たえず is the ず-negative of 絶える, so た.える is right; 途絶える/とだえる takes rendaku た->だ non-initially.",
+    "倒: 面倒/めんどう under トウ with rendaku ど[う]; 面倒くさい/めんどくさい correctly left in irregular — the colloquial contraction めんど has no clean ト/トウ account.",
+    "欠伸/あくび and 息子/むすこ are genuine 熟字訓 and belong in irregular where they sit.",
+    "越: 引っ越す, 追い越す, 乗り越し etc. sit in the unmarked こ.す slot while -こ.す / -ご.し stay empty. Not reported: an unmarked slot carries no positional constraint, so a non-initial word in it violates nothing (unlike 払 above, where the constrained slot is the one being used).",
+    "願: お願いします/おねがいします moved from -ねがい to ねが.う. Not reported for the same reason — ねが.う is unmarked, and ねがい is the ren'youkei of 願う, so nothing false is taught; the -ねがい slot merely goes unused.",
+    "抱: 抱っこ/だっこ under だ.く (only だ-span slot) and 抱く/いだく under いだ.く — the two spans are correctly told apart by the kana.",
+    "居: 芝居/しばい correctly in the leading-hyphen -い slot (居 non-initial); 居る appears under both い.る and お.る as separate vocab, both correct.",
+    "等: 等々/とうとう, 平等/びょうどう (rendaku), これ等/これら in -ら (non-initial, hyphen honored) all correct.",
+    "雑: 大雑把/おおざっぱ under ザツ with 促音便 ざっ; 雑巾/ぞうきん correctly under the separate ゾウ reading.",
+    "No word in this range is filed under a nanori reading."
+  ]
+}

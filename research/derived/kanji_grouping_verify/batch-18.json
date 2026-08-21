@@ -1,0 +1,46 @@
+{
+  "batch": 18,
+  "kanji_checked": 30,
+  "problems": [
+    {
+      "character": "亡",
+      "headword": "亡くなる",
+      "kana": "なくなる",
+      "assigned": "な.き-",
+      "should_be": "な.い",
+      "why": "The word writes 亡 + くなる. く is the adverbial (連用) form of the i-adjective 亡い (な.い), so なくなる = 亡く + なる. The slot な.き- is the classical attributive 亡き, used prenominally (亡き人); き cannot inflect to く inside that slot, so this word cannot be a form of the okurigana き. Span な is right, slot is wrong. The pre-alignment file had it correctly under な.い, so the rewrite regressed here.",
+      "severity": "minor"
+    },
+    {
+      "character": "亡",
+      "headword": "亡くす",
+      "kana": "なくす",
+      "assigned": "な.き-",
+      "should_be": "な.い",
+      "why": "Same as 亡くなる: 亡く (adverbial form of 亡い) + す. The written okurigana is くす, which is a form of the い slot, not of the き- (attributive 亡き) slot. Pre-alignment had it under な.い.",
+      "severity": "minor"
+    },
+    {
+      "character": "込",
+      "headword": "込む",
+      "kana": "こむ",
+      "assigned": "-こ.む",
+      "should_be": "こ.む",
+      "why": "The leading hyphen in -こ.む marks the form used when 込 is NOT word-initial (飛び込む, 申し込む, all correctly there). 込む/こむ is the standalone verb with 込 word-initial, and the unhyphenated こ.む slot exists and is empty. Pre-alignment filed it correctly under こ.む, so the rewrite regressed. Reading itself is correct (こむ), only the positional slot contradicts.",
+      "severity": "minor"
+    },
+    {
+      "character": "留",
+      "headword": "歌留多",
+      "kana": "カルタ",
+      "assigned": "ル",
+      "should_be": "irregular",
+      "why": "歌留多 is 当て字 for the Portuguese loan 'carta' — the three kanji are used purely as phonetic props (歌=カ, 留=ル, 多=タ) and the word is written/read in katakana. The span ル does align, so this is not a false sound claim, but presenting a Portuguese-loan ateji transcription to a learner as an example word OF the 留 ル on-reading is misleading; it belongs with the other ateji in irregular, next to 留守/留守番 which are the genuine ル examples. Low confidence that this is worth changing — flagging for the owner to decide.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "Improvements over pre_alignment confirmed as correct in this range: 書留/かきとめ now under と.める (書き留める with 送り仮名の省略) instead of irregular; 余所/よそ moved from ヨ into irregular (ateji, 所 has no そ reading); 浮気/うわき moved from う.く into irregular (う does not account for うわ, and 気 has no わき reading).",
+    "Checked and correct: 冷 (つめたい/ひえる/ひやす/さめる/さます vs レイ compounds), 適, 婦 (夫婦=ふうふ), 寄 (年寄り under -よ.り, 寄越す under よ.る), 類, 余, 王 (女王=じょおう), 返 (裏返し=うらがえし with rendaku, し = 連用形 of す), 妻, 背 (背広=せびろ aligns as せ+びろ), 熱 (熱心/熱中/熱する 促音便), 宿, 険, 頼 (頼み), 覚 (目覚まし under さ.ます, 目覚める under さ.める), 船 (船便 under word-initial ふな-), 途 (途切れる/途絶える with rendaku), 許 (許り/ばかり correctly irregular), 抜, 罪, 努 (努めて = て-form of 努める), 精 (精々=せいぜい, 々 repeat with rendaku), 散, 静, 婚, 喜, 浮."
+  ]
+}

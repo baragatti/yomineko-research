@@ -1,0 +1,50 @@
+{
+  "batch": 4,
+  "range": "entries 90..119",
+  "kanji_checked": 30,
+  "characters": ["火","花","右","読","友","左","休","父","駅","雨","飲","魚","耳","同","事","自","民","発","者","地","合","市","業","方","場","員","開","力","問","代"],
+  "problems": [
+    {
+      "character": "読",
+      "headword": "読み",
+      "kana": "よみ",
+      "assigned": "-よ.み",
+      "should_be": "よ.む",
+      "why": "The leading hyphen in -よ.み marks the form used when the kanji is NOT word-initial (the 秒読み / 下読み type). In 読み the kanji opens the word, so the marked slot asserts something false about its position. 読 has no unhyphenated よ.み slot, so the stem belongs under よ.む, exactly as み is the stem of む (the 痛み -> いた.む case). The pre-alignment grouping had it under よ.む; the rewrite moved it, so here the OLD grouping was right.",
+      "severity": "minor"
+    },
+    {
+      "character": "読",
+      "headword": "読み上げる",
+      "kana": "よみあげる",
+      "assigned": "-よ.み",
+      "should_be": "よ.む",
+      "why": "読 is word-initial in よみあげる (読 = よ, み is okurigana, 上 = あ, げる okurigana), so the non-initial-marked slot -よ.み is the wrong position. With no plain よ.み slot available, the compound-verb stem belongs under よ.む. Moved here by the rewrite; pre-alignment had よ.む.",
+      "severity": "minor"
+    },
+    {
+      "character": "飲",
+      "headword": "飲み物",
+      "kana": "のみもの",
+      "assigned": "-の.み",
+      "should_be": "の.む",
+      "why": "飲 opens のみもの (飲 = の, み okurigana, 物 = もの), but -の.み is the leading-hyphen slot reserved for non-initial use (立ち飲み, 一気飲み). 飲 has no unhyphenated の.み slot, so the み-stem noun belongs under の.む. The pre-alignment grouping filed it under の.む and was right.",
+      "severity": "minor"
+    },
+    {
+      "character": "飲",
+      "headword": "飲み込む",
+      "kana": "のみこむ",
+      "assigned": "-の.み",
+      "should_be": "の.む",
+      "why": "飲 is word-initial in のみこむ (飲 = の + み, 込 = こ + む), so the non-initial slot -の.み misstates its position; the stem of の.む is the correct home. Same rewrite-introduced move as 飲み物.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "No wrong-group errors found: every compound's kana was re-derived and each kanji's span matches the reading it sits under, including the sound changes (花火 はなび under -び, 生け花 いけばな under はな, 仕事 しごと under こと, 患者 かんじゃ under シャ, 出発 しゅっぱつ under ハツ, 一方 いっぽう under ホウ, 立場 たちば under ば with 送り仮名の省略).",
+    "All 8 irregular entries are genuine 熟字訓/ateji and belong there: 火傷 やけど, お父さん おとうさん, 叔父 おじ, お祖父さん おじいさん, 親父 おやじ, 梅雨 つゆ, 貴方 あなた, 彼方此方 あちこち. None should be pulled into a reading group.",
+    "Not reported as errors: non-initial words filed under the UNMARKED slot while an empty leading-hyphen slot exists (似合う/付き合う/話し合う/間に合う under あ.う with -あ.う empty; 仕方 しかた and 味方 みかた under かた with -かた empty). The hyphenless KANJIDIC entry is the citation form and covers every position when the sound is unchanged; only the reverse - a word-initial word placed in a hyphen-marked non-initial slot - makes a false positional claim.",
+    "Old-vs-new diff over these 30 kanji shows exactly 4 changed assignments, and they are the 4 reported above. Everything else is unchanged between the pre-alignment and post-rewrite groupings."
+  ]
+}

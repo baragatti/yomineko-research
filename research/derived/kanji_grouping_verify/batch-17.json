@@ -1,0 +1,24 @@
+{
+  "batch": 17,
+  "range": "entries 480..509",
+  "kanji_checked": 30,
+  "characters": ["師","登","易","速","存","飛","殺","号","単","座","破","除","完","降","責","捕","危","給","苦","迎","園","具","辞","因","馬","愛","富","彼","未","舞"],
+  "problems": [
+    {
+      "character": "馬",
+      "headword": "馬穴",
+      "kana": "バケツ",
+      "assigned": "バ (on)",
+      "should_be": "irregular",
+      "why": "バケツ e o emprestimo estrangeiro 'bucket'; 馬穴 e uma grafia ateji puramente fonetica (por isso a leitura vem em katakana). O alinhamento 馬=バ + 穴=ケツ fecha por acaso, entao a palavra escapou do bloco irregular, mas ela e a mesma especie de 硝子/ガラス: os kanji foram escolhidos pelo som, nao ha composto sino-japones. Como exemplo da leitura バ mostrado ao aluno e enganoso e a grafia e praticamente inexistente no uso real.",
+      "severity": "minor"
+    }
+  ],
+  "notes": [
+    "Diferencas contra kanji_reading_groups.pre_alignment.json nesta faixa: 4, e nas 4 o novo agrupamento esta certo. 容易い/たやすい saiu de やす.い para irregular (容 nao tem leitura た; o antigo achou やす por busca de substring). 滅茶苦茶/めちゃくちゃ saiu de ク para irregular (滅 nao le め; ateji integral). 見舞い/みまい e お仕舞い/おしまい sairam de まい para ま.う, correto: o proprio verbete escreve o い como okurigana, entao 舞 cobre so ま; se 舞 valesse まい a reconstrucao daria みまいい.",
+      "苦手/にがて fica sob にが.い sem escrever okurigana; e omissao de okurigana em composto e にが.い e o unico destino sensato (にが.る e marginal). Nao e erro.",
+      "早速/さっそく sob ソク, 突破/とっぱ sob ハ, 滑降/かっこう sob コウ, 月給/げっきゅう sob キュウ: todas as mudancas sonoras conferem.",
+      "Blocos irregular conferidos e legitimos: 容易い(たやすい), 滅茶苦茶(めちゃくちゃ), 玩具(おもちゃ), 可愛い/可愛らしい/可愛がる(かわい-), e os seis de 彼 (あれ/あの/あそこ/あちこち/あれこれ/あちら) - 彼 nao tem leitura あ.",
+      "Nenhuma leitura nanori recebeu palavras nesta faixa."
+  ]
+}

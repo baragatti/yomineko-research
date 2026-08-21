@@ -1,0 +1,44 @@
+{
+  "batch": 10,
+  "range": "entries 270..299",
+  "kanji_checked": 30,
+  "characters": ["洗","牛","兄","犬","菜","暑","妹","寒","姉","漢","政","議","連","対","部","内","相","定","回","選","米","実","関","決","全","表","戦","経","通","最"],
+  "problems": [
+    {
+      "character": "回",
+      "headword": "回り",
+      "kana": "まわり",
+      "assigned": "-まわ.り (kun, hyphen-initial = word-final variant)",
+      "should_be": "まわ.り (unhyphenated), which is absent from this kanji's readings list",
+      "why": "The span まわ and the okurigana り are both right, so the sound taught is correct; the slot's POSITION is not. A leading hyphen marks the form used when the kanji is NOT word-initial (遠回り, 身の回り). 回り/まわり is a standalone noun, word-initial. KANJIDIC2 lists both まわ.り and -まわ.り for 回, but this entry only carries -まわ.り, so the aligner had no correct slot to choose. The corpus note on that slot still reads 'Variante 回り marcada com hífen para o fim de palavras compostas. Nenhum composto desta entrada foi agrupado nela.' — which now contradicts the compound sitting in it. Note the aligner does get the analogous 通 case right (通り/とおり -> とお.り, 通り/どおり -> -どお.り) precisely because 通 has both slots. Pre-alignment file had 回り under まわ.る, which is also wrong (the word writes り, not る), so this is not a regression.",
+      "severity": "minor"
+    },
+    {
+      "character": "米",
+      "headword": "米",
+      "kana": "メートル",
+      "assigned": "irregular",
+      "should_be": "メエトル (on)",
+      "why": "This is a single kanji, so it cannot be 熟字訓, and the entry already carries the on reading メエトル — KANJIDIC2's archaic transcription of メートル — with zero compounds. The word is the abbreviation of 米突/メートル, and 米 alone genuinely reads メートル in measurement contexts, so it does have a reading-by-reading account. The alignment failed only on the orthographic difference メエトル vs メートル (エ vs the chouon mark). Grouping it under メエトル would teach nothing false. 亜米利加/アメリカ next to it is real ateji and is correctly left in irregular.",
+      "severity": "minor"
+    }
+  ],
+  "checked_and_correct_notes": [
+    "洗: あら covers 洗う/お手洗い/手洗い; セン covers 洗濯・洗剤・洗面・水洗 (水すい+洗せん). All sound-accounted.",
+    "兄: 兄弟/きょうだい correctly under キョウ (弟 takes the rendaku だい). お兄さん/おにいさん and 従兄弟/いとこ correctly irregular — にい is not among this entry's readings and いとこ is 熟字訓.",
+    "姉: 姉妹/しまい appears under シ for 姉 and under マイ for 妹 — both halves independently correct. お姉さん/おねえさん and 従姉妹/いとこ correctly irregular.",
+    "寒: the same headword 寒気 sits under さむ.い as さむけ and under カン as かんき — two real words, each filed by its own kana. Correct.",
+    "決: 決まり/きまり is under き.まる, not き.める — り is the stem of まる, so the shared span き is resolved by the right okurigana.",
+    "表: 表す/あらわす is under あらわ.す, not あら.わす (which would require the spelling 表わす). Correct slot among shared spans.",
+    "戦: 戦い/たたかい under たたか.う (い = stem of う). 連: 連れ/つれ under つ.れる (れ = stem), not -づ.れ, since the word is word-initial and undakuten.",
+    "通: とお.り takes 通り/とおり and -どお.り takes 通り/どおり — hyphen positions and rendaku both handled correctly.",
+    "相: あい- (word-initial variant) takes 相手/あいて and 相変わらず/あいかわらず; ソウ and ショウ split correctly (首相/しゅしょう vs 相談/そうだん); 相撲/すもう correctly irregular.",
+    "実: 実際/じっさい, 実行/じっこう, 実験/じっけん all 促音便 of ジツ — correctly credited to ジツ, not to a phantom ジッ slot.",
+    "表: 発表/はっぴょう — handakuten ぴょう correctly credited to ヒョウ.",
+    "部: 部屋/へや and 倶楽部/クラブ correctly irregular (熟字訓 and loanword ateji). The pre-alignment file had 倶楽部 under ブ; the rewrite is the better call here.",
+    "回: 上回る/うわまわる correctly under まわ.る (上 takes うわ, 回 takes まわ).",
+    "関: にも関わらず/にもかかわらず and 関わる/かかわる under かか.わる; 交通機関/こうつうきかん and 玄関/げんかん under カン. Correct.",
+    "最: 最早/もはや correctly irregular — も is not a kun span of 最 (もっと.も cannot yield も alone).",
+    "菜: お菜/おかず correctly irregular (gikun, not な)."
+  ]
+}

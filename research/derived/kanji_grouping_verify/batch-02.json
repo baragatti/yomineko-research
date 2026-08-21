@@ -1,0 +1,41 @@
+{
+  "batch": 2,
+  "kanji_checked": 30,
+  "range": "entries[30..59]",
+  "characters": "金九入立手学高円子目外言八六下来気小七山話多安女北午百書先名",
+  "example_words_checked": 243,
+  "problems": [
+    {
+      "character": "気",
+      "headword": "気持ち",
+      "kana": "きもち",
+      "assigned": "き (kun)",
+      "should_be": "キ (on)",
+      "why": "The き of 気持ち is the Sino-Japanese on-reading キ (気持ち is a 重箱読み: キ + もち). It is the identical reading to the one in 気分/きぶん, 天気/てんき and 元気/げんき, all of which this same entry files under キ. KANJIDIC2 3.6.2 does list a kun き for 気, so the two slots hold the same kana and the aligner had to break a tie; it appears to have preferred the kun slot whenever the rest of the word is kun (もち, づく), which is exactly backwards for a 重箱読み word. Result: one kanji card shows the same sound split across a kun group and an on group with no visible criterion. The 常用漢字表 gives 気 only キ/ケ and no kun.",
+      "severity": "major"
+    },
+    {
+      "character": "気",
+      "headword": "気づく",
+      "kana": "きづく",
+      "assigned": "き (kun)",
+      "should_be": "キ (on)",
+      "why": "気 contributes the on-reading キ; づく is 付く rendaku'd, a separate morpheme. Same defect as 気持ち: filed under the duplicate kun き slot while the seven other キ words (病気, 天気, 気分, 元気, 空気, 人気, 勇気) sit under キ.",
+      "severity": "major"
+    },
+    {
+      "character": "気",
+      "headword": "気",
+      "kana": "き",
+      "assigned": "き (kun)",
+      "should_be": "キ (on)",
+      "why": "Standalone 気/き is the on-reading used as a free noun (like 本/ほん, 肉/にく), not a native kun. Leaving it in the kun slot while 病気/びょうき and 天気/てんき sit under キ teaches the learner that 気 alone and 気 in 天気 are different readings.",
+      "severity": "major"
+    }
+  ],
+  "notes": [
+    "Compared against kanji_reading_groups.pre_alignment.json: within this range the rewrite changed 15 assignments and 14 of them are improvements — 立場/たちば moved た.つ -> た.ち- (送り仮名の省略, correct); 息子/むすこ, 硝子/ガラス and 八百屋/やおや moved out of forced groups into irregular (all 熟字訓/ateji, correct); 話しかける・話し合う・話し合い moved from the noun はなし to the verb はな.す (correct, し is the 連用形 of 話す); 安っぽい moved やす.い -> やす (correct, っぽい is a suffix, not an inflection of ~い); and the seven 気 compounds moved き(kun) -> キ(on) (correct). The three 気 rows above are the leftovers of that last fix.",
+    "Irregular lists in this range are all genuine and correctly placed: 上手い/うまい (手), 息子/むすこ + 硝子/ガラス (子), 八百屋/やおや (八, 百), 下手/へた (下), 巫山戯る/ふざける (山), 先/さっき (先 — さっき cannot come from さき by any allowed sound change).",
+    "Checked and accepted, not reported: 役立つ/やくだつ under た.つ (rendaku; the -た.つ non-initial slot would be marginally more precise but the reading is the same and the aligner systematically prefers unhyphenated slots); 小さな/ちいさな under ちい.さい (連体詞 form, and no competing ちい slot exists); 下さい/ください under くだ.さる (special imperative of くださる); 歌留多/カルタ under タ and 御目出度う/おめでとう under め (phonetic 借字, but every character does carry a listed reading there, so they align rather than being irregular)."
+  ]
+}

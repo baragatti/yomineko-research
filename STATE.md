@@ -7,6 +7,64 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-21 (ad) — THE 50 WITHHELD FORMATION POINTS ARE REPAIRED, AND THE KANJI GROUPING NOW ALIGNS
+> THE WHOLE WORD INSTEAD OF SEARCHING FOR A READING INSIDE IT. Gate green, 22 hard validators (three
+> new).**
+>
+> - **Roadmap E repair: all 50 withheld points resolved.** 20 fixed, 14 partial, 16 `unavailable`.
+>   366 points now carry `formation_steps`, 130 carry a stated reason, **0 remain withheld**.
+>   - The 16 `unavailable` are the right answer. があります / がいます / gp-12 / gp-13 are entirely an
+>     ANIMACY split (学生がいます but 本があります) and the base enum has no value for it, so any
+>     noun-accepting rule licenses the error the record exists to prevent.
+>   - **One repair was corrected rather than merged.** gp-24 was withheld because `replace-ending くない`
+>     turns いい into the explicitly forbidden いくない. The repair added `replace-ending いい→よくない`,
+>     and both checkers rejected it: an arrow token here is a SUFFIX rewrite, every arrow already merged
+>     is a single kana and therefore suffix-safe, and いい is the first two-kana one. On 可愛い, an n5
+>     entry in this corpus, it emits *かわよくない where the rule it replaced produced the correct
+>     かわいくない. The merge now REFUSES any multi-kana arrow, so it is a gate rather than a memory.
+> - **Kanji grouping rewritten as whole-word alignment** (`scripts/export/kanji_align.py`).
+>   - Six rounds of patches had gone into propping up substring matching and it still credited 生 with
+>     the う of 誕生日, where 生 plainly sounds じょう. Alignment asks the question the word poses: can
+>     every kanji take a contiguous kana span such that the spans, interleaved with the literal
+>     okurigana, reconstruct the reading exactly? A wrong claim about one kanji now fails because the
+>     REST of the word cannot be accounted for.
+>   - Rules it needed, each from a specific defect: rendaku, handakuten, 促音便, gemination APPENDED
+>     (切手 きって) as well as substituted, 送り仮名の省略 (立ち場 -> 立場) including the masu-stem form
+>     (割り引き -> 割引), the iteration mark 々, small ヶ as 箇, and 音訓 consistency across the compound.
+>   - **77 compounds regrouped; 30 moved to `irregular` and every one is a genuine 熟字訓 or ateji**
+>     (今日, 明日, 果物, 景色, 硝子, 部屋, 息子, 風邪, 真面目); 6 recovered from it.
+>   - **Adversarial verification over all 630 kanji: 49 raised, 32 confirmed, 0 critical.** It found a
+>     defect I had introduced — an exact-okurigana override let word-initial words into leading-hyphen
+>     SUFFIX slots, filling -よ.み and -の.み with 読み, 読み上げる, 飲み物, 飲み込む while よ.む and の.む
+>     showed only their dictionary forms. The hyphen is positional and an okurigana says nothing about
+>     position; the override is gone.
+>   - **気 was the best find.** KANJIDIC lists a kun き that Kanji Alive and the 常用漢字表 both deny, and
+>     it was splitting one sound across two groups: 気, 気持ち, 気づく under a phantom kun, and
+>     病気 / 天気 / 元気 under the real ON キ. `no_kun_kanji()` cross-checks the 344 kanji Kanji Alive
+>     gives no kun, as a TIEBREAK not a deletion — KANJIDIC is Layer A and stays as it is.
+>   - **Partial alignment, capped at one unresolved kanji and gated on plausible truncation.** 日本 was
+>     failing only because 日's に is nanori-only here, costing 本 its commonest N5 example. Uncapped it
+>     also rescued 明日 (as 明:あ + 日:した), so the unresolved span must share a first mora with one of
+>     that kanji's readings: 日's に opens にち, and nothing of 日 begins with し.
+> - **87 per-reading notes re-authored**, in two passes plus a hand-written tail. A note is Layer C
+>   prose a learner reads, and the grouping being right does not make the note right.
+>   - Staleness runs in THREE directions and the first pass caught one. LOST (names a departed word),
+>     GAINED (the group was empty and now is not — 気's キ said "ficou sem exemplos" directly above its
+>     seven compounds), EMPTIED (the mirror). The same blind spot had already cost three attempts at
+>     classifying the grouping problems.
+>   - The applier's refusal gate went through four revisions, each because the data showed it wrong:
+>     refusing every mention of a departed word rejected 35 of 63 good notes, all of which were
+>     explaining where the word went; and accepting the destination reading anywhere let 亡's な.き-
+>     present 亡くなる as its own example, because the sibling slot shares the bare reading な.
+> - **Three new hard validators**: `validate_kanji_reading_groups` (630 kanji, 4,591 compounds, 3,679
+>   notes, and independent of the aligner by design), `test_kanji_align` (25 regression cases, each one
+>   a real defect), and `validate_grammar_formation`.
+> - **Open:** the ateji the aligner cannot detect and the verification pass named (歌留多, 阿弗利加, 馬穴,
+>   草履, 御目出度う) — mechanically indistinguishable from an ordinary on-compound, so they need a list
+>   or a source that marks them; 3 held clause disputes; 2 needs-human pairing rows; `gram:gp-115`
+>   forms[0]; 1 needs-human romaji row; listening audio (owner will AI-generate once the research is
+>   done) and R58 read-aloud, which depends on it.
+
 > **2026-08-20 (ac) — ROADMAP E AND F MERGED INTO THE CORPUS. Role drills routed. Gate green, 20 hard
 > validators (three new). Both stopped workflows resumed to completion.**
 >
