@@ -3,7 +3,10 @@ import { Form, Link, useActionData, useLoaderData } from "react-router";
 import { data } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { getUnit, gradeCheckpoint, gradeProduction, checkpointLabel, splitUnitId } from "~/lib/speak.server";
+// The two pure helpers come from the client-safe module; the component calls them, and importing
+// them from the .server file pulls the whole speaking path into the client bundle.
+import { checkpointLabel, splitUnitId } from "~/lib/speak";
+import { getUnit, gradeCheckpoint, gradeProduction } from "~/lib/speak.server";
 
 export function meta({ data: d }: { data?: { unit?: { title?: string } } }) {
   return [{ title: `Yomineko — ${d?.unit?.title ?? "Fala Primeiro"}` }];

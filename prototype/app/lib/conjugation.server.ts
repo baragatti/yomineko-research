@@ -14,9 +14,10 @@
  */
 import bankData from "../data/conjugationBank.json";
 
-export type Level = "n5" | "n4" | "n3";
-export const LEVELS: Level[] = ["n5", "n4", "n3"];
-export const ROUND = 10;
+// Re-exported from the client-safe module: the component needs ROUND, and importing it from here
+// would pull this entire file (and the 18,524-item bank) into the client bundle. See ~/lib/drill.
+export { LEVELS, ROUND, type Level } from "./drill";
+import { LEVELS, ROUND, type Level } from "./drill";
 
 interface RawItem {
   id: string; level: string; vocab_id: number; headword: string; kind: string; class?: string;

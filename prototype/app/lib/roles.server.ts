@@ -14,9 +14,10 @@
  */
 import bankData from "../data/roleBank.json";
 
-export type Level = "n5" | "n4" | "n3";
-export const LEVELS: Level[] = ["n5", "n4", "n3"];
-export const ROUND = 10;
+// Re-exported from the client-safe module: the component needs ROUND, and importing it from here
+// would pull this entire file (and the 5,358-item bank) into the client bundle. See ~/lib/drill.
+export { LEVELS, ROUND, type Level } from "./drill";
+import { ROUND, type Level } from "./drill";
 
 interface RawItem {
   id: string; level: string; sentence: string; jp: string; role: string;

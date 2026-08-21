@@ -90,14 +90,10 @@ export function gradeProduction(stageKey: string, order: number, answers: Record
   return { total: out.length, right: out.filter((x) => x.correct).length, items: out };
 }
 
-const LABEL: Record<string, string> = {
-  sentence_order: "Monte a frase",
-  context_fill: "Complete a frase",
-  kanji_reading: "Como se lê?",
-  paraphrase: "Sentido mais próximo",
-  usage: "Uso correto",
-};
-export const checkpointLabel = (t: string) => LABEL[t] ?? t;
+// Moved to the client-safe module: the unit page renders these in its component, and importing them
+// from here pulls the whole speaking path into the client bundle. See ~/lib/speak.
+export { checkpointLabel, splitUnitId } from "./speak";
+import { splitUnitId } from "./speak";
 
 /**
  * Deterministic option order. The unit is a fixed page, not a fresh attempt, so the shuffle is keyed on
@@ -227,9 +223,4 @@ export function getUnit(stageKey: string, order: number): SpeakUnit | null {
   };
 }
 
-/** "speak:eating-02" -> { stage: "eating", order: 2 } — for prev/next links. */
-export function splitUnitId(id: string): { stage: string; order: number } {
-  const body = id.split(":")[1] ?? "";
-  const at = body.lastIndexOf("-");
-  return { stage: body.slice(0, at), order: Number(body.slice(at + 1)) };
-}
+

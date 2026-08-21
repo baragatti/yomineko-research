@@ -1,7 +1,10 @@
 import { Form, Link, useActionData, useLoaderData, useNavigation } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { LEVELS, ROUND, bankSize, buildRound, gradeRound, type Level } from "~/lib/roles.server";
+// ROUND/LEVELS come from the client-safe module — the component renders ROUND, and importing it
+// from the .server file pulls the whole bank into the client bundle and fails the build.
+import { LEVELS, ROUND, type Level } from "~/lib/drill";
+import { bankSize, buildRound, gradeRound } from "~/lib/roles.server";
 
 export function meta() {
   return [{ title: "Yomineko — Papéis na frase" }];
