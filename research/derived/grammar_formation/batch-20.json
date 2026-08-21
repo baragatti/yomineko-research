@@ -1,0 +1,327 @@
+{
+  "batch": 20,
+  "points": [
+    {
+      "slug": "gram:mitai-ni",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "みたいに" }],
+          "example": "学生みたいに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [{ "base": "na-adjective", "op": "append", "token": "みたいに" }],
+          "example": "静かみたいに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "みたいに" }
+          ],
+          "example": "書くみたいに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "みたいに" }
+          ],
+          "example": "食べたみたいに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [{ "base": "i-adjective", "op": "append", "token": "みたいに" }],
+          "example": "高いみたいに"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nado",
+      "nuance_tags": ["softening"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "など" }],
+          "example": "学生など"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nagara",
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ながら" }
+          ],
+          "example": "書きながら"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nakanaka-nai",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "Pre-predicate adverb plus an obligatory negative predicate. The record's formation is なかなか + [verb in the 〜ない / 〜ません form], so なかなか stands BEFORE the predicate and applies no operation to it, and the closed op enum has no prepend operation. Steps covering only the negative half would emit 書かない as if it were the pattern, and the ない cannot be dropped either: the record states that なかなか with an affirmative predicate means something else entirely ('quite / surprisingly good').",
+      "variants": []
+    },
+    {
+      "slug": "gram:nakereba-ikenai",
+      "nuance_tags": ["obligation"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ければいけない" }
+          ],
+          "example": "書かなければいけない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-nai-stem" },
+            { "op": "append", "token": "ければいけない" }
+          ],
+          "example": "高くなければいけない"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [{ "base": "na-adjective", "op": "append", "token": "じゃなければいけない" }],
+          "example": "静かじゃなければいけない"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "じゃなければいけない" }],
+          "example": "学生じゃなければいけない"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nakereba-naranai",
+      "nuance_tags": ["obligation"],
+      "usage_contexts": ["written", "business", "announcement"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ければならない" }
+          ],
+          "example": "書かなければならない"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nara",
+      "nuance_tags": ["condition"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "なら" }],
+          "example": "学生なら"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [{ "base": "na-adjective", "op": "append", "token": "なら" }],
+          "example": "静かなら"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "なら" }
+          ],
+          "example": "書くなら"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [{ "base": "i-adjective", "op": "append", "token": "なら" }],
+          "example": "高いなら"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nasai",
+      "nuance_tags": ["request"],
+      "usage_contexts": ["spoken", "written", "academic"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "なさい" }
+          ],
+          "example": "書きなさい"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nasaru",
+      "nuance_tags": ["honorific", "politeness"],
+      "usage_contexts": ["spoken", "business"],
+      "steps_unavailable": "Lexical entry for the honorific verb なさる, not an attachment pattern. The record's formation section is a conjugation note about this one word (godan in う, but irregular polite なさいます, not ×なさります, alongside いらっしゃる／くださる／おっしゃる), so no base is transformed. The single productive construction it names, お + masu-stem + なさる (お話しなさる), needs the PREFIX お in front of the host and the closed op enum has no prepend operation; emitting [verb, to-masu-stem, append なさる] would drop the お and license a surface the record does not give.",
+      "variants": []
+    },
+    {
+      "slug": "gram:ni-ki-ga-tsuku",
+      "nuance_tags": ["change-of-state"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "に気がつく" }],
+          "example": "危険に気がつく"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "to-attributive" },
+            { "op": "nominalize", "token": "こと" },
+            { "op": "append", "token": "に気がつく" }
+          ],
+          "example": "財布を忘れたことに気がつく"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "to-attributive" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "に気がつく" }
+          ],
+          "example": "財布を忘れたのに気がつく"
+        }
+      ]
+    },
+    {
+      "slug": "gram:ni-mieru",
+      "nuance_tags": ["conjecture"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "見える" }
+          ],
+          "example": "高く見える"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-adverbial" },
+            { "op": "append", "token": "見える" }
+          ],
+          "example": "静かに見える"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "に見える" }],
+          "example": "学生に見える"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nikui",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "にくい" }
+          ],
+          "example": "書きにくい"
+        }
+      ]
+    },
+    {
+      "slug": "gram:no-naka-de",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "の中で" }],
+          "example": "スポーツの中で"
+        }
+      ]
+    },
+    {
+      "slug": "gram:noni",
+      "nuance_tags": ["concession"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": "",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "のに" }
+          ],
+          "example": "書くのに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "のに" }
+          ],
+          "example": "食べたのに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [{ "base": "i-adjective", "op": "append", "token": "のに" }],
+          "example": "高いのに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "のに" }
+          ],
+          "example": "静かなのに"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "なのに" }],
+          "example": "学生なのに"
+        },
+        {
+          "base": "noun",
+          "steps": [{ "base": "noun", "op": "append", "token": "だったのに" }],
+          "example": "学生だったのに"
+        }
+      ]
+    },
+    {
+      "slug": "gram:nowa-da",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "Two-slot cleft frame, not a derivation from one base. The record's formation is [clause in plain form] + のは + [element in focus] + だ/です: the second slot is a free element (noun, place, time) supplied independently, so an ordered chain built from a single base cannot produce the pattern's surface. Steps covering only the left half would emit 行くのは / 好きなのは as if that were the pattern, the same defect flagged for the other multi-slot templates in this set. The left-half rule the record does state is: verbs and い-adjectives take the plain form directly before のは, な-adjectives take 〜な (好きなのは).",
+      "variants": []
+    }
+  ]
+}

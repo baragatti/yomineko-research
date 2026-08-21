@@ -1,0 +1,349 @@
+{
+  "batch": 25,
+  "points": [
+    {
+      "slug": "gram:you-to-omou",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-volitional" },
+            { "op": "append", "token": "と思う" }
+          ],
+          "example": "書こうと思う"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-volitional" },
+            { "op": "append", "token": "と思っている" }
+          ],
+          "example": "書こうと思っている"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["intention"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:zehi",
+      "variants": [],
+      "steps_unavailable": "Invariable adverb placed BEFORE the predicate. The record's own formation states it takes no particle and does not inflect, and every combination it lists is pre-posed (ぜひ + 〜てください, ぜひ + 〜たい). The closed op enum only transforms a base and suffixes tokens to it, so no ordered step list can put ぜひ in front; encoding the 〜てください or 〜たい half would emit generic request/desire morphology carrying none of this point's own material.",
+      "nuance_tags": ["emphasis", "request", "desire"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:zenzen-nai",
+      "variants": [],
+      "steps_unavailable": "Circumfix built on a pre-predicate adverb. The record is precise (全然 stands before the verb, adjective or copula and that predicate goes negative: 〜ない / 〜ません / 〜くない / 〜じゃない), but the closed op set has append and no prepend, so the 全然 slot cannot be produced by an ordered build sequence. Steps covering only the negative half would emit 書かない as if it were the pattern.",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:zurai",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "づらい" }
+          ],
+          "example": "食べづらい"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-ageru",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "上げる" }
+          ],
+          "example": "書き上げる"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["completion"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-ba-hodo",
+      "variants": [],
+      "steps_unavailable": "The pattern requires the SAME lexical item twice: its conditional-ば form followed by its own plain/attributive form + ほど (書けば書くほど, 高ければ高いほど). The op enum builds one surface by transforming a single base and appending literal tokens; it has no operation that re-emits the base, and an append token is a fixed string, so no ordered sequence can generate the second copy. Emitting only [to-conditional-ba] would produce 高ければ, which is the plain ば conditional (a separate point), not this pattern.",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-ba-noni",
+      "variants": [],
+      "steps_unavailable": "Two-clause frame, not a derivation from one base. Per the record's own formation the ば conditional sits on clause 1 while のに closes an independent clause 2 (usually in the past). A step list transforms exactly one base, so any sequence here would either stop at 行けば, which is the plain ば conditional and a separate point, or suffix のに straight onto the conditional and license the ungrammatical *行けばのに.",
+      "nuance_tags": ["desire", "condition"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-ba-yokatta",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-conditional-ba" },
+            { "op": "append", "token": "よかった" }
+          ],
+          "example": "行けばよかった"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ければよかった" }
+          ],
+          "example": "行かなければよかった"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "ならよかった" }
+          ],
+          "example": "静かならよかった"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "ならよかった" }
+          ],
+          "example": "学生ならよかった"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["desire"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-bakari",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "ばかり" }
+          ],
+          "example": "学生ばかり"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "ばかり" }
+          ],
+          "example": "書いてばかり"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "ばかりいる" }
+          ],
+          "example": "遊んでばかりいる"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["emphasis", "continuation"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-beki-da",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "べきだ" }
+          ],
+          "example": "勉強するべきだ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "べきだった" }
+          ],
+          "example": "書くべきだった"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "べきではない" }
+          ],
+          "example": "書くべきではない"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["obligation"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-chatta",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "replace-ending", "token": "て→ちゃった" }
+          ],
+          "example": "食べちゃった"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "replace-ending", "token": "で→じゃった" }
+          ],
+          "example": "飲んじゃった"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["completion"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:n3-da-mono-da",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "んだもの" }
+          ],
+          "example": "書くんだもの"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "んだもの" }
+          ],
+          "example": "疲れたんだもの"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "んだもの" }
+          ],
+          "example": "忙しいんだもの"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "なんだもの" }
+          ],
+          "example": "静かなんだもの"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "なんだもの" }
+          ],
+          "example": "学生なんだもの"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["cause"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:n3-dake-shika",
+      "variants": [],
+      "steps_unavailable": "Discontinuous two-site pattern. だけしか attaches to a noun or a quantity, but the obligatory negation lands on a DIFFERENT word, the predicate verb (カレーだけしか食べない, 5人だけしか招待しなかった). The op set appends to one base only and cannot force the negative onto the separate predicate, so a step list of the shape [noun, append だけしか] would license the ungrammatical *カレーだけしか食べる, which is the error the record's own nuance field names as the most common one here.",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-dakedo",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "けど" }
+          ],
+          "example": "書くけど"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-dictionary" },
+            { "op": "append", "token": "けど" }
+          ],
+          "example": "高いけど"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だけど" }
+          ],
+          "example": "静かだけど"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だけど" }
+          ],
+          "example": "学生だけど"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "none" },
+            { "op": "append", "token": "けど" }
+          ],
+          "example": "高いですけど"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["concession"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:n3-desu-kara",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ますから" }
+          ],
+          "example": "書きますから"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "ですから" }
+          ],
+          "example": "寒いですから"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "ですから" }
+          ],
+          "example": "静かですから"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "ですから" }
+          ],
+          "example": "学生ですから"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["cause", "politeness"],
+      "usage_contexts": ["spoken", "written", "business"]
+    }
+  ]
+}

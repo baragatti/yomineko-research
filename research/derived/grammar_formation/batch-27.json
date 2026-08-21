@@ -1,0 +1,348 @@
+{
+  "batch": 27,
+  "points": [
+    {
+      "slug": "gram:n3-koto",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "nominalize", "token": "こと" }
+          ],
+          "example": "話すこと"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "nominalize", "token": "こと" }
+          ],
+          "example": "運動すること"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-koto-da",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ことだ" }
+          ],
+          "example": "運動することだ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いことだ" }
+          ],
+          "example": "無理をしないことだ"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["obligation"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-koto-ni-natte-iru",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ことになっている" }
+          ],
+          "example": "書くことになっている"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いことになっている" }
+          ],
+          "example": "食べないことになっている"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["obligation", "prohibition"],
+      "usage_contexts": ["spoken", "written", "business", "announcement"]
+    },
+    {
+      "slug": "gram:n3-koto-ni-shite-iru",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ことにしている" }
+          ],
+          "example": "運動することにしている"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いことにしている" }
+          ],
+          "example": "働かないことにしている"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["intention", "continuation"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-koto-wa-ga",
+      "variants": [],
+      "steps_unavailable": "Reduplication frame, not a single linear derivation. The formation field repeats the SAME predicate on both sides of ことは (verb + ことは + verb + が; i-adjective + ことは + i-adjective + が; na-adjective + な + ことは + na-adjective + だが; noun + ことは + noun + だが). An ordered step list transforms one base and then suffixes FIXED tokens, so the second copy of the host word cannot be emitted: any token placed in append would hard-code one specific word and re-emit it for every other base. Steps covering only the first half would license 書くことは as if it were the whole pattern. Note also that structure_pattern and forms[0].form on this record both carry an unapplied edit instruction instead of a value, so the intended shape ～ことは～が had to be read out of the formation prose.",
+      "nuance_tags": ["concession", "softening"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-koto-wa-nai",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ことはない" }
+          ],
+          "example": "心配することはない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "ことはない" }
+          ],
+          "example": "高いことはない"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "であることはない" }
+          ],
+          "example": "静かであることはない"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "であることはない" }
+          ],
+          "example": "学生であることはない"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["softening"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-kurai",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "くらい" }
+          ],
+          "example": "10分くらい"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "ぐらい" }
+          ],
+          "example": "10分ぐらい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "くらい" }
+          ],
+          "example": "食べるくらい"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "くらい" }
+          ],
+          "example": "泣きたいくらい"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "くらい" }
+          ],
+          "example": "静かなくらい"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["comparison", "softening"],
+      "usage_contexts": ["spoken", "casual-friends", "written"]
+    },
+    {
+      "slug": "gram:n3-kurai-wa-nai",
+      "variants": [],
+      "steps_unavailable": "Two-slot frame. The formation field defines it as host + くらい + は followed by a SEPARATE negative predicate (or by 〜ないと), as in 週に一度くらいはジムに行かないと. The closed op set builds one base and suffixes tokens to it, so it can reach 一度くらいは but has no way to bind the second, independent predicate slot that carries the obligatory negation, and that negation is what produces the at-least-this-minimum reading. Emitting only the くらいは half would license 一度くらいは as if it were the complete construction. Note also that structure_pattern and forms[0].form on this record both carry an unapplied edit instruction instead of a value; the intended shape ～くらいは～ない was read out of the formation prose.",
+      "nuance_tags": ["emphasis", "obligation"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:n3-kuse-ni",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "くせに" }
+          ],
+          "example": "食べるくせに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "くせに" }
+          ],
+          "example": "高いくせに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "くせに" }
+          ],
+          "example": "暇なくせに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のくせに" }
+          ],
+          "example": "金持ちのくせに"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["concession"],
+      "usage_contexts": ["spoken", "casual-friends"]
+    },
+    {
+      "slug": "gram:n3-made",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "まで" }
+          ],
+          "example": "東京まで"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "まで" }
+          ],
+          "example": "疲れるまで"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-mama",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "まま" }
+          ],
+          "example": "開けたまま"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いまま" }
+          ],
+          "example": "食べないまま"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "まま" }
+          ],
+          "example": "熱いまま"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "まま" }
+          ],
+          "example": "静かなまま"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のまま" }
+          ],
+          "example": "元のまま"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-maru-de-you",
+      "variants": [],
+      "steps_unavailable": "Circumfix around a pre-posed adverb. The record defines the pattern as まるで + term of comparison + ようだ/ように (まるで天使のように美しい) and states that まるで without the closing ようだ/みたい is incomplete, so both halves belong to the pattern. The closed op set has append but no prepend, so the まるで slot cannot be produced by an ordered build sequence. Steps covering only the trailing half would emit 天使のように, which is the plain ようだ/ように comparison entry, not this one, and would silently drop the element that marks the comparison as strong and non-literal.",
+      "nuance_tags": ["comparison", "emphasis"],
+      "usage_contexts": ["spoken", "written", "literary"]
+    },
+    {
+      "slug": "gram:n3-masu-you-ni",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ますように" }
+          ],
+          "example": "帰ってきますように"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ように" }
+          ],
+          "example": "帰ってくるように"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": ["desire", "politeness"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-mattaku-nai",
+      "variants": [],
+      "steps_unavailable": "Circumfix built on a pre-predicate adverb. The record is precise (まったく sits before the predicate and the predicate must go negative: verb まったく覚えていない, i-adjective まったく暖かくない, na-adjective まったく静かではない), but the closed op set has only append and no prepend, so the まったく slot cannot be produced by an ordered build sequence. Steps covering only the negative half would license 高くない as if it were the pattern, and the record warns that まったく without the closing negation changes meaning entirely.",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"]
+    },
+    {
+      "slug": "gram:n3-metta-ni-nai",
+      "variants": [],
+      "steps_unavailable": "Circumfix built on a pre-predicate adverb. The record places めったに before the predicate and requires the predicate to be negative (めったに外食しない, めったに高くない, めったに静かではない), stating that めったに with an affirmative predicate is incorrect. The closed op set has only append and no prepend, so the めったに slot cannot be produced; steps covering only the negative half would license 食べない as if it were the pattern and would drop the element that carries the low-frequency meaning.",
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"]
+    }
+  ]
+}

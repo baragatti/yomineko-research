@@ -1,0 +1,407 @@
+{
+  "batch": 26,
+  "points": [
+    {
+      "slug": "gram:n3-donna-ni-koto-ka",
+      "variants": [],
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["written", "literary", "spoken"],
+      "steps_unavailable": "Circumfix around a fixed pre-predicate adverb. The record is explicit (どんなに opens, the predicate goes in plain form, ことか closes: どんなに疲れたことか), but the closed op set has append and no prepend, so an ordered sequence from one base could only emit 疲れたことか and would silently drop the obligatory どんなに slot."
+    },
+    {
+      "slug": "gram:n3-donna-ni-temo",
+      "variants": [],
+      "nuance_tags": ["concession", "emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": "Circumfix around a fixed pre-predicate adverb (どんなに + て-form + も; い-adjective くて + も; な-adjective + でも). With no prepend op, any single sequence would emit only the ても half — 書いても, 高くても, 静かでも — which is the separate ても concessive, not this point. Emitting it under this label would teach the wrong pattern."
+    },
+    {
+      "slug": "gram:n3-furi-wo-suru",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ふりをする" }
+          ],
+          "example": "食べるふりをする"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "いふりをする" }
+          ],
+          "example": "知らないふりをする"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "ふりをする" }
+          ],
+          "example": "高いふりをする"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "ふりをする" }
+          ],
+          "example": "静かなふりをする"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のふりをする" }
+          ],
+          "example": "病気のふりをする"
+        }
+      ],
+      "nuance_tags": ["intention"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-hazu-da",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "はずだ" }
+          ],
+          "example": "書くはずだ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "はずだ" }
+          ],
+          "example": "着いたはずだ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "はずだ" }
+          ],
+          "example": "高いはずだ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "はずだ" }
+          ],
+          "example": "静かなはずだ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のはずだ" }
+          ],
+          "example": "学生のはずだ"
+        }
+      ],
+      "nuance_tags": ["conjecture"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-hodo",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "ほど" }
+          ],
+          "example": "私ほど"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ほど" }
+          ],
+          "example": "書くほど"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "ほど" }
+          ],
+          "example": "高いほど"
+        }
+      ],
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-kake",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "かけ" }
+          ],
+          "example": "読みかけ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "かけの" }
+          ],
+          "example": "読みかけの本"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-kanaa",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "かなあ" }
+          ],
+          "example": "書くかなあ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "かなあ" }
+          ],
+          "example": "食べたかなあ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "かなあ" }
+          ],
+          "example": "高いかなあ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "かなあ" }
+          ],
+          "example": "静かかなあ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "かなあ" }
+          ],
+          "example": "学生かなあ"
+        }
+      ],
+      "nuance_tags": ["conjecture", "desire"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-kanarazushimo-towa-kagiranai",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "とは限らない" }
+          ],
+          "example": "行くとは限らない"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "とは限らない" }
+          ],
+          "example": "高いとは限らない"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "とは限らない" }
+          ],
+          "example": "便利とは限らない"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "とは限らない" }
+          ],
+          "example": "学生とは限らない"
+        }
+      ],
+      "nuance_tags": ["softening"],
+      "usage_contexts": ["written", "spoken"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-kara-ni-kakete",
+      "variants": [],
+      "nuance_tags": [],
+      "usage_contexts": ["written", "announcement"],
+      "steps_unavailable": "Two-slot correlative frame: Noun1 + から + Noun2 + にかけて. The steps model builds one linear sequence from a single base, so it cannot express the second noun slot; a sequence would emit either 朝から or 夜にかけて alone, neither of which is this pattern."
+    },
+    {
+      "slug": "gram:n3-kawari-ni",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "かわりに" }
+          ],
+          "example": "書くかわりに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "かわりに" }
+          ],
+          "example": "高いかわりに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "かわりに" }
+          ],
+          "example": "静かなかわりに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のかわりに" }
+          ],
+          "example": "犬のかわりに"
+        }
+      ],
+      "nuance_tags": ["concession"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-kesshite-nai",
+      "variants": [],
+      "nuance_tags": ["emphasis", "prohibition"],
+      "usage_contexts": ["spoken", "written", "announcement"],
+      "steps_unavailable": "Circumfix around a fixed pre-predicate adverb: 決して opens the sentence and the predicate must end negative (決して遅刻しない, 決して〜ないでください). With no prepend op the sequence would emit only the ordinary negative — 書かない — which is plain negation, not this emphatic frame."
+    },
+    {
+      "slug": "gram:n3-kirenai",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "切れない" }
+          ],
+          "example": "読み切れない"
+        }
+      ],
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-kiri",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "きり" }
+          ],
+          "example": "出かけたきり"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "きり" }
+          ],
+          "example": "二人きり"
+        }
+      ],
+      "nuance_tags": ["continuation"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-kke",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "っけ" }
+          ],
+          "example": "書いたっけ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "to-ta-form" },
+            { "op": "append", "token": "っけ" }
+          ],
+          "example": "高かったっけ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だっけ" }
+          ],
+          "example": "静かだっけ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だっけ" }
+          ],
+          "example": "学生だっけ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-masu-stem" },
+            { "op": "append", "token": "ましたっけ" }
+          ],
+          "example": "書きましたっけ"
+        }
+      ],
+      "nuance_tags": ["conjecture"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "steps_unavailable": ""
+    },
+    {
+      "slug": "gram:n3-koso",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "こそ" }
+          ],
+          "example": "今日こそ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "こそ" }
+          ],
+          "example": "頑張ってこそ"
+        }
+      ],
+      "nuance_tags": ["emphasis"],
+      "usage_contexts": ["spoken", "written"],
+      "steps_unavailable": ""
+    }
+  ]
+}

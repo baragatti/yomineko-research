@@ -1,0 +1,451 @@
+{
+ "batch": 21,
+ "points": [
+  {
+   "slug": "gram:o-kudasai-2",
+   "nuance_tags": [
+    "request",
+    "politeness",
+    "honorific"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written",
+    "business",
+    "announcement"
+   ],
+   "steps_unavailable": "Circumfix: the honorific prefix sits BEFORE the base and the closed op enum has no prepend operation, so no ordered sequence reaches the surface. The suffixal half on its own (masu-stem + ください) would emit *待ちください instead of お待ちください. The record also makes the prefix lexically selected rather than derivable from the base token (お + masu-stem for native verbs, ご + verbal noun for Sino-Japanese suru-verbs: ご注意ください), and it excludes monosyllabic-stem verbs such as 見る from the pattern."
+  },
+  {
+   "slug": "gram:o-ni-naru",
+   "nuance_tags": [
+    "honorific",
+    "politeness"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "business",
+    "announcement"
+   ],
+   "steps_unavailable": "Circumfix: お / ご stands BEFORE the base and the closed op enum has no prepend operation. The suffixal half alone (masu-stem + になる) would emit *読みになる instead of お読みになる, and the お vs ご choice follows the base's native/Sino-Japanese origin (ご利用になる), which is not derivable from the token. The record further states that 見る, 来る and する take suppletive honorifics (ご覧になる, いらっしゃる, なさる), so any verb-wide rule would license *お見になる."
+  },
+  {
+   "slug": "gram:oki-ni",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "おきに"
+      }
+     ],
+     "example": "10分おきに"
+    }
+   ]
+  },
+  {
+   "slug": "gram:owaru",
+   "nuance_tags": [
+    "completion"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-masu-stem"
+      },
+      {
+       "op": "append",
+       "token": "終わる"
+      }
+     ],
+     "example": "食べ終わる"
+    }
+   ]
+  },
+  {
+   "slug": "gram:rareru",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-potential"
+      }
+     ],
+     "example": "食べられる"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-passive"
+      }
+     ],
+     "example": "褒められる"
+    }
+   ]
+  },
+  {
+   "slug": "gram:rashii",
+   "nuance_tags": [
+    "conjecture",
+    "hearsay",
+    "comparison"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "らしい"
+      }
+     ],
+     "example": "行くらしい"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-ta-form"
+      },
+      {
+       "op": "append",
+       "token": "らしい"
+      }
+     ],
+     "example": "行ったらしい"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "らしい"
+      }
+     ],
+     "example": "高いらしい"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "らしい"
+      }
+     ],
+     "example": "元気らしい"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "らしい"
+      }
+     ],
+     "example": "学生らしい"
+    }
+   ]
+  },
+  {
+   "slug": "gram:sa",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "replace-ending",
+       "token": "い→さ"
+      }
+     ],
+     "example": "高さ"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "さ"
+      }
+     ],
+     "example": "静かさ"
+    }
+   ]
+  },
+  {
+   "slug": "gram:sakki",
+   "nuance_tags": [],
+   "usage_contexts": [
+    "spoken",
+    "casual-friends"
+   ],
+   "steps_unavailable": "Invariable lexical adverb. The record's own formation states it does not conjugate and describes only sentence POSITION (clause-initial or right before the verb: さっき食べた). Its combinations さっきから and さっきの話 attach particles to さっき itself rather than deriving さっき from any base, and the closed op enum only transforms or appends to a base, with no prepend operation, so there is no build sequence to express."
+  },
+  {
+   "slug": "gram:saserareru",
+   "nuance_tags": [
+    "obligation"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written",
+    "casual-friends"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-causative"
+      },
+      {
+       "op": "to-passive"
+      }
+     ],
+     "example": "食べさせられる"
+    }
+   ]
+  },
+  {
+   "slug": "gram:saseru",
+   "nuance_tags": [
+    "obligation",
+    "permission"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-causative"
+      }
+     ],
+     "example": "書かせる"
+    }
+   ]
+  },
+  {
+   "slug": "gram:sasete-kudasai",
+   "nuance_tags": [
+    "request",
+    "permission",
+    "politeness"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "business"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-causative"
+      },
+      {
+       "op": "to-te-form"
+      },
+      {
+       "op": "append",
+       "token": "ください"
+      }
+     ],
+     "example": "行かせてください"
+    }
+   ]
+  },
+  {
+   "slug": "gram:sasuga",
+   "nuance_tags": [
+    "emphasis",
+    "concession"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "casual-friends"
+   ],
+   "steps_unavailable": "Invariable adverb / fixed expression placed BEFORE what it praises (さすが + noun or name, さすがに + clause), or standing alone as a reaction (さすが！). The record states it is a fixed expression; nothing is inflected and nothing attaches to a base. The closed op enum has no prepend operation, and encoding it as an append would generate *田中さんさすが."
+  },
+  {
+   "slug": "gram:shi",
+   "nuance_tags": [
+    "cause",
+    "emphasis",
+    "softening"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "casual-friends",
+    "written"
+   ],
+   "steps_unavailable": "",
+   "variants": [
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-dictionary"
+      },
+      {
+       "op": "append",
+       "token": "し"
+      }
+     ],
+     "example": "食べるし"
+    },
+    {
+     "base": "verb",
+     "steps": [
+      {
+       "base": "verb",
+       "op": "to-ta-form"
+      },
+      {
+       "op": "append",
+       "token": "し"
+      }
+     ],
+     "example": "行ったし"
+    },
+    {
+     "base": "i-adjective",
+     "steps": [
+      {
+       "base": "i-adjective",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "し"
+      }
+     ],
+     "example": "高いし"
+    },
+    {
+     "base": "na-adjective",
+     "steps": [
+      {
+       "base": "na-adjective",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "だし"
+      }
+     ],
+     "example": "静かだし"
+    },
+    {
+     "base": "noun",
+     "steps": [
+      {
+       "base": "noun",
+       "op": "none"
+      },
+      {
+       "op": "append",
+       "token": "だし"
+      }
+     ],
+     "example": "学生だし"
+    }
+   ]
+  },
+  {
+   "slug": "gram:sonna-ni",
+   "nuance_tags": [
+    "emphasis"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written",
+    "casual-friends"
+   ],
+   "steps_unavailable": "Pre-posed degree adverb. The record's formation is そんなに + adjective / adverb / verb, i.e. sentence POSITION, and そんなに itself never inflects. The closed op enum has no prepend operation, and encoding it as an append would generate *高くないそんなに. The frequent pairing with a negative predicate (そんなに高くない) is polarity carried by a separate word, which no single-base build sequence can force."
+  },
+  {
+   "slug": "gram:sore-demo",
+   "nuance_tags": [
+    "concession",
+    "emphasis"
+   ],
+   "usage_contexts": [
+    "spoken",
+    "written"
+   ],
+   "steps_unavailable": "Invariable sentence-initial conjunction. The record's own formation is Clause 1。それでも、Clause 2, placing それでも at the HEAD of the second sentence, and states it is fixed and does not change form; its internal それ + で + も is lexicalized, not a productive attachment. The closed op enum has no prepend operation, so there is no build sequence to express."
+  }
+ ]
+}
