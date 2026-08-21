@@ -6,8 +6,9 @@ import { YominekoLogo } from "./yomineko/mascot";
 
 const NAV = [
   { id: "home", to: "/", icon: "home", label: "Início" },
-  { id: "study", to: "/curso", icon: "auto_stories", label: "Curso" },
-  { id: "speak", to: "/falar", icon: "record_voice_over", label: "Falar" },
+  // One destination for BOTH paths. "Falar" used to sit here as a sibling of "Curso", which framed a
+  // second ordering of the same corpus as a separate product; it is now a choice inside /cursos.
+  { id: "study", to: "/cursos", icon: "auto_stories", label: "Cursos" },
   { id: "review", to: "/revisar", icon: "style", label: "Revisar" },
   { id: "practice", to: "/pratica", icon: "target", label: "Prática" },
   { id: "exam", to: "/simulado", icon: "quiz", label: "Simulado" },

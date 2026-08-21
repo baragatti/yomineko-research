@@ -61,7 +61,7 @@ export default function Login() {
             </p>
             <div className="ym-public-cta">
               <Link to="/" className="btn btn-filled btn-lg">Começar agora <Icon name="arrow_forward" size={20} /></Link>
-              <Link to="/curso" className="btn btn-tonal btn-lg">Ver o curso</Link>
+              <Link to="/cursos" className="btn btn-tonal btn-lg">Ver os cursos</Link>
             </div>
           </div>
           <div className="ym-public-hero-art">

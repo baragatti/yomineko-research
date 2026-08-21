@@ -76,7 +76,7 @@ export default function SpeakUnit() {
     <AppShell active="speak" title={unit.stageTitle}>
       <div className="ym-page">
         <p className="ym-muted">
-          <Link to="/falar">Fala Primeiro</Link> · {unit.stageTitle}
+          <Link to="/cursos/falar">Fala Primeiro</Link> · {unit.stageTitle}
         </p>
         <h1 className="ym-h1">{unit.title}</h1>
         <p className="ym-sub">

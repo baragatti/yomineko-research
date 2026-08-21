@@ -4,7 +4,12 @@ export default [
   index("routes/home.tsx"),
   route("health", "routes/health.ts"),
   route("entrar", "routes/login.tsx"),
-  route("curso", "routes/course.tsx"),
+  // Two paths through one corpus. /cursos is the chooser; each path keeps its own index below it.
+  route("cursos", "routes/courses.tsx"),
+  route("cursos/jlpt", "routes/course.tsx"),
+  route("cursos/falar", "routes/speak.tsx"),
+  // Old top-level addresses, kept as permanent redirects.
+  route("curso", "routes/redirectCurso.ts"),
   route("curso/:topicId", "routes/topic.tsx"),
   route("licao/:lessonId", "routes/lesson.tsx"),
   route("kana", "routes/kana.tsx"),
@@ -21,7 +26,7 @@ export default [
   route("pratica/:mode", "routes/practiceSession.tsx"),
   route("simulado", "routes/exam.tsx"),
   route("simulado/:level", "routes/examPaper.tsx"),
-  route("falar", "routes/speak.tsx"),
+  route("falar", "routes/redirectFalar.ts"),
   route("falar/:stage/:unit", "routes/speakUnit.tsx"),
   route("perfil", "routes/soon.tsx", { id: "perfil" }),
   route("creditos", "routes/creditos.tsx"),

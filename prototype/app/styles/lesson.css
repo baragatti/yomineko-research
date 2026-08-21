@@ -782,3 +782,217 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
 .ym-credit-link { color: var(--primary); text-decoration: none; }
 .ym-credit-link:hover { text-decoration: underline; }
 .ym-kana-combo { display: flex; gap: 8px; align-items: flex-start; justify-content: center; }
+
+/* ---- /cursos — the two-path chooser ------------------------------------------------------------
+   Two big cards rather than a list: the choice is the page, and a chooser that looks like navigation
+   gets clicked through without being read. Side by side on desktop, stacked on mobile. */
+.ym-path-grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.ym-path {
+  display: flex; flex-direction: column; gap: 14px;
+  background: var(--surface); border: 1px solid var(--outline-variant);
+  border-radius: 20px; padding: 22px;
+}
+.ym-path:hover { border-color: color-mix(in srgb, var(--primary) 35%, var(--outline-variant)); }
+.ym-path-h { display: flex; align-items: center; gap: 12px; }
+.ym-path-ic {
+  display: grid; place-items: center; width: 46px; height: 46px; flex: none;
+  border-radius: 14px; background: var(--primary-container); color: var(--on-primary-container);
+}
+.ym-path-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: .08em; color: var(--on-surface-variant); }
+.ym-path-title { font-family: var(--font-display); font-weight: 700; font-size: 22px; margin: 2px 0 0; color: var(--on-surface); }
+.ym-path-pitch { font-size: 15.5px; line-height: 1.65; color: var(--on-surface); margin: 0; }
+.ym-path-stats { display: flex; gap: 10px; flex-wrap: wrap; }
+.ym-path-stat {
+  flex: 1 1 90px; min-width: 90px; padding: 10px 12px; border-radius: 14px;
+  background: var(--surface-container); border: 1px solid var(--outline-variant);
+}
+.ym-path-stat-n { font-family: var(--font-display); font-weight: 700; font-size: 19px; color: var(--on-surface); line-height: 1.2; }
+.ym-path-stat-of { font-size: 12px; color: var(--on-surface-variant); margin-top: 2px; }
+.ym-path-detail { font-size: 14.5px; color: var(--on-surface-variant); }
+.ym-path-detail .ym-list { margin: 0; }
+.ym-path-for {
+  display: flex; align-items: center; gap: 6px; margin: 0;
+  font-size: 13.5px; font-weight: 600; color: var(--on-surface-variant);
+}
+.ym-path-cta { align-self: flex-start; margin-top: auto; }
+
+/* ---- /simulado/:level — the exam paper -----------------------------------------------------------
+   Type here is deliberately larger than elsewhere in the app. A JLPT booklet is set big: the candidate
+   is reading unfamiliar Japanese under time pressure, and squinting is not part of the skill being
+   tested. `.ym-q` and `.ym-choice` previously had NO rules at all and inherited body copy, which is
+   what made the paper feel like a form rather than an exam. */
+.ym-exam { max-width: 860px; margin: 0 auto; }
+
+/* Sticky clock. It is the one thing that must never scroll away: the whole point of a timed mock is
+   that the learner feels the clock. */
+.ym-exam-bar {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 10px 14px; margin: 0 0 18px;
+  background: var(--surface-container); border: 1px solid var(--outline-variant);
+  border-radius: 14px; backdrop-filter: blur(6px);
+}
+.ym-exam-bar-l { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.ym-exam-part { font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--on-surface-variant); }
+.ym-exam-partjp { font-size: 15px; font-weight: 600; color: var(--on-surface); }
+.ym-exam-clock {
+  display: inline-flex; align-items: center; gap: 6px; flex: none;
+  font-family: var(--font-display); font-weight: 700; font-size: 26px;
+  font-variant-numeric: tabular-nums; color: var(--on-surface);
+}
+.ym-exam-bar.is-low { border-color: var(--error, #b3261e); }
+.ym-exam-bar.is-low .ym-exam-clock { color: var(--error, #b3261e); }
+
+.ym-exam-head { margin-bottom: 18px; }
+.ym-exam-sec { margin: 0 0 26px; }
+.ym-exam-sec-h {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding-bottom: 8px; border-bottom: 2px solid var(--outline-variant); margin-bottom: 4px;
+}
+.ym-exam-sec-jp { font-size: 18px; font-weight: 600; color: var(--primary); }
+.ym-exam-sec-h strong { font-family: var(--font-display); font-size: 17px; color: var(--on-surface); }
+.ym-exam-hint { font-size: 14.5px; color: var(--on-surface-variant); margin: 8px 0 14px; }
+
+/* A question. The number sits in the margin like a printed booklet's 大問 numbering. */
+.ym-q { border: none; margin: 0 0 22px; padding: 0; position: relative; }
+.ym-q-n {
+  display: inline-grid; place-items: center; width: 30px; height: 30px; padding: 0;
+  border-radius: 9px; background: var(--surface-container-highest); color: var(--on-surface-variant);
+  font-family: var(--font-display); font-weight: 700; font-size: 15px;
+}
+.ym-q-stem { font-size: 20.5px; line-height: 1.85; color: var(--on-surface); margin: 8px 0 12px; }
+.ym-passage {
+  font-size: 18px; line-height: 2; color: var(--on-surface);
+  background: var(--surface-container); border-left: 4px solid var(--primary);
+  border-radius: 0 12px 12px 0; padding: 14px 16px; margin: 8px 0 14px; white-space: pre-wrap;
+}
+
+/* Options. Big hit targets, numbered ①②③④ style so a learner can answer by position. */
+.ym-choices { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.ym-choice {
+  display: flex; align-items: center; gap: 12px; cursor: pointer;
+  padding: 12px 14px; border-radius: 13px;
+  border: 1.5px solid var(--outline-variant); background: var(--surface);
+  transition: background .12s, border-color .12s;
+}
+.ym-choice:hover { background: var(--surface-container-high); }
+.ym-choice input { accent-color: var(--primary); width: 19px; height: 19px; flex: none; margin: 0; }
+.ym-choice-n {
+  display: grid; place-items: center; width: 24px; height: 24px; flex: none;
+  border-radius: 50%; border: 1.5px solid var(--outline-variant);
+  font-size: 13px; font-weight: 700; color: var(--on-surface-variant);
+}
+.ym-choice-t { font-size: 19px; line-height: 1.6; color: var(--on-surface); }
+.ym-choice:has(input:checked) { border-color: var(--primary); background: var(--primary-container); }
+.ym-choice:has(input:checked) .ym-choice-n { border-color: var(--primary); color: var(--on-primary-container); }
+.ym-choice:has(input:checked) .ym-choice-t { color: var(--on-primary-container); }
+
+/* 並べ替え — numbered slots above, the block pool below. */
+.ym-order-slots { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 12px; }
+.ym-order-slot {
+  position: relative; min-width: 96px; min-height: 58px; padding: 18px 12px 8px;
+  border-radius: 13px; border: 2px solid var(--outline-variant); background: var(--surface);
+  cursor: pointer; font-size: 19px; color: var(--on-surface);
+}
+.ym-order-slot.is-empty { border-style: dashed; background: var(--surface-container); cursor: default; }
+.ym-order-slot:not(.is-empty) { border-color: var(--primary); background: var(--primary-container); color: var(--on-primary-container); }
+.ym-order-num {
+  position: absolute; top: 4px; left: 8px;
+  font-size: 11px; font-weight: 800; color: var(--on-surface-variant);
+}
+.ym-order-slot:not(.is-empty) .ym-order-num { color: var(--on-primary-container); opacity: .75; }
+.ym-order-pool { display: flex; gap: 8px; flex-wrap: wrap; }
+.ym-order-piece {
+  padding: 11px 16px; border-radius: 999px; cursor: pointer; font-size: 19px;
+  border: 1.5px solid var(--outline-variant); background: var(--surface-container-high);
+  color: var(--on-surface); transition: filter .12s;
+}
+.ym-order-piece:hover:not(:disabled) { filter: brightness(.96); }
+.ym-order-piece:disabled { opacity: .3; cursor: default; }
+.ym-order-preview { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 19px; margin: 12px 0 0; }
+
+.ym-exam-foot {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  padding-top: 18px; border-top: 1px solid var(--outline-variant); margin-top: 8px;
+}
+.ym-exam-foot .ym-muted { font-size: 13.5px; margin: 0; }
+
+/* The changeover between parts. */
+.ym-exam-break {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px;
+  padding: 44px 24px; border-radius: 20px;
+  background: var(--surface-container); border: 1px solid var(--outline-variant);
+  color: var(--on-surface-variant);
+}
+.ym-exam-break .ym-h2 { margin: 6px 0 0; }
+.ym-exam-break .ym-sub { max-width: 46ch; margin: 4px 0 10px; }
+.ym-exam-break-next { font-size: 15.5px; margin: 0 0 16px; color: var(--on-surface); }
+
+@media (max-width: 640px) {
+  .ym-exam-clock { font-size: 22px; }
+  .ym-q-stem { font-size: 19px; }
+  .ym-choice-t { font-size: 18px; }
+}
+
+/* ---- /simulado — the level picker ---------------------------------------------------------------- */
+.ym-sim-how {
+  display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  margin: 4px 0 26px;
+}
+.ym-sim-how-item { display: flex; gap: 10px; align-items: flex-start; }
+.ym-sim-how-ic {
+  display: grid; place-items: center; width: 38px; height: 38px; flex: none;
+  border-radius: 11px; background: var(--surface-container-high); color: var(--primary);
+}
+.ym-sim-how-t { font-weight: 700; font-size: 14.5px; color: var(--on-surface); }
+.ym-sim-how-d { font-size: 13.5px; line-height: 1.5; color: var(--on-surface-variant); margin-top: 1px; }
+
+.ym-sim-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.ym-sim-card {
+  display: flex; flex-direction: column; gap: 12px;
+  background: var(--surface); border: 1px solid var(--outline-variant);
+  border-radius: 18px; padding: 18px;
+}
+.ym-sim-h { display: flex; align-items: center; gap: 12px; }
+.ym-sim-lv {
+  display: grid; place-items: center; width: 54px; height: 54px; flex: none; border-radius: 15px;
+  background: color-mix(in srgb, var(--gold) 28%, var(--surface-container-highest));
+  font-family: var(--font-display); font-weight: 700; font-size: 20px; color: var(--on-surface);
+}
+.ym-sim-meta { display: flex; flex-direction: column; line-height: 1.35; }
+.ym-sim-meta strong { font-size: 16px; color: var(--on-surface); }
+.ym-sim-meta .ym-muted { font-size: 13px; }
+
+.ym-sim-part {
+  border: 1px solid var(--outline-variant); border-radius: 13px;
+  padding: 10px 12px; background: var(--surface-container);
+}
+.ym-sim-part-h { display: flex; align-items: center; gap: 8px; }
+.ym-sim-part-n {
+  display: grid; place-items: center; width: 21px; height: 21px; flex: none; border-radius: 6px;
+  background: var(--primary-container); color: var(--on-primary-container);
+  font-size: 12px; font-weight: 800;
+}
+.ym-sim-part-jp { flex: 1; min-width: 0; font-size: 14.5px; font-weight: 600; color: var(--on-surface); }
+.ym-sim-part-time { font-size: 13px; font-weight: 700; color: var(--primary); white-space: nowrap; }
+.ym-sim-part-secs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.ym-sim-sec {
+  font-size: 12.5px; padding: 3px 9px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--outline-variant); color: var(--on-surface-variant);
+}
+.ym-sim-sec b { color: var(--on-surface); }
+.ym-sim-f {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  margin-top: auto; padding-top: 4px;
+}
+.ym-sim-f .ym-muted { font-size: 12.5px; }
+
+.ym-sim-notes { margin-top: 22px; display: flex; flex-direction: column; gap: 8px; }
+.ym-sim-notes p {
+  display: flex; gap: 8px; align-items: flex-start; margin: 0;
+  font-size: 13.5px; line-height: 1.6; color: var(--on-surface-variant);
+}
+.ym-exam-break-note {
+  max-width: 52ch; font-size: 13.5px; line-height: 1.6;
+  color: var(--on-surface-variant); margin: 0 0 14px;
+}

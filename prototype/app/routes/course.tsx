@@ -65,9 +65,12 @@ export default function Course() {
   const topLevel = courses.length ? courses[courses.length - 1].level.toUpperCase() : "N4";
 
   return (
-    <AppShell active="study" title="Curso">
+    <AppShell active="study" title="Curso JLPT" back="/cursos">
       <div className="ym-page-wide">
-        <h1 className="ym-h1">Trilha do curso</h1>
+        <div className="ym-breadcrumb">
+          <Link to="/cursos">Cursos</Link> <Icon name="chevron_right" size={14} /> <span>Curso JLPT</span>
+        </div>
+        <h1 className="ym-h1">Curso JLPT</h1>
         <p className="ym-sub">Do zero ao {topLevel} — {topics.length} tópicos com dados reais do corpus.</p>
 
         <FilterableList

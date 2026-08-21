@@ -23,9 +23,29 @@ Mirror the real Language-Knowledge sections (listening deferred). Item counts fo
 | listening_gist (概要理解) | 0* | 0* | 3 |
 | listening_say (発話表現) | 5 | 5 | 4 |
 | listening_reply (即時応答) | 6 | 8 | 9 |
-(*section absent in the real exam at that level — N5 has no 用法; 概要理解 starts at N3.) Timing:
-LK + Reading ≈ 60/80/100 min, Listening ≈ 30/35/40 min → totals ≈ 90/115/140 min (the post-2022 official
-session lengths). reading_comp items carry a `reading` slug; the app renders the passage from
+(*section absent in the real exam at that level — N5 has no 用法; 概要理解 starts at N3.)
+
+## Timing (verified 2026-08-21 against jlpt.jp + JEES + LTTC, two independent checks)
+The exam is separately-timed PARTS, not one sitting, and the app mirrors that: you cannot carry time
+from vocabulary into reading, and a part that runs out is collected as-is.
+
+| Part | N5 | N4 | N3 |
+|---|---|---|---|
+| ① 言語知識（文字・語彙） | 20 | 25 | 30 |
+| ② 言語知識（文法）・読解 | 40 | 55 | 70 |
+| ③ 聴解 (not run — audio pending) | 30 | 35 | 40 |
+
+Two corrections to what this doc previously said. The N4/N5 shortening took effect **December 2020**,
+not 2022 (N4 30→25 and 60→55; N5 25→20 and 50→40). The only December-2022 change was N1 聴解 60→55;
+**N3 was never shortened** — 30/70/40 are its original post-2010 durations.
+
+**There is no official JLPT break.** jlpt.jp publishes durations only: no clock schedule, no break, and
+the word 休憩 appears nowhere in the JEES timetable. Each administering body sets its own, and they
+disagree — Japan schedules a 20-minute gap after ① (unlabelled), Taiwan 25 (15 of it labelled rest),
+Korea 5. That gap is also not free time: JEES footnote ※2(4) says candidates cannot leave for about 20
+minutes while papers are collected. The app therefore simulates the **Japan-domestic scheduled gap**,
+names it as such, and lets the learner skip it. Do not restate it as "the JLPT break", and do not invent
+a rest figure — none is published. reading_comp items carry a `reading` slug; the app renders the passage from
 `corpus/readings` above the question (several items may share a passage across attempts, never within one
 paper — enforce one item per passage per attempt). listening_* items are TEXT scripts until voiced
 (`audio: "pending"`); playback order per subsection + TTS pipeline: `design/listening.md`. Listening

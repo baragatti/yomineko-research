@@ -46,8 +46,87 @@ export const SECTIONS: SectionSpec[] = [
 // Listening is intentionally absent: those banks are voice-ready SCRIPTS with audio: "pending"
 // (design/listening.md). The section joins the paper only once the audio exists.
 
-/** Minutes allowed, per design/exam_simulator.md (Language Knowledge + Reading session). */
-export const MINUTES: Record<Level, number> = { n5: 60, n4: 80, n3: 100 };
+/**
+ * The real exam is not one sitting. It is separately-timed PARTS with the papers collected between
+ * them, and that shape is most of what makes a mock feel like the test: you cannot bank time from the
+ * vocabulary section to spend on reading, and you cannot go back once a part is over.
+ *
+ * N5/N4/N3 run 言語知識（文字・語彙） first, then 言語知識（文法）・読解. (N1/N2 merge the two, which is
+ * why this table stops at N3 — the levels we ship.) 聴解 is a third part in the real exam and is absent
+ * here for the same reason it is absent from SECTIONS: the scripts exist, the audio does not.
+ */
+export interface PartSpec {
+  key: string;
+  jp: string;
+  label: string;
+  types: string[];
+  minutes: Record<Level, number>;
+  /** Scheduled gap AFTER this part, in minutes. See GAP_NOTE. */
+  gapAfter?: number;
+}
+export const PARTS: PartSpec[] = [
+  {
+    key: "vocab",
+    jp: "言語知識（文字・語彙）",
+    label: "Conhecimento da língua — escrita e vocabulário",
+    types: ["kanji_reading", "orthography", "context_fill", "paraphrase", "usage"],
+    minutes: { n5: 20, n4: 25, n3: 30 },
+    gapAfter: 20,
+  },
+  {
+    key: "grammar",
+    jp: "言語知識（文法）・読解",
+    label: "Gramática e compreensão de leitura",
+    types: ["grammar_form", "sentence_order", "text_grammar", "reading_comp"],
+    minutes: { n5: 40, n4: 55, n3: 70 },
+  },
+];
+
+/**
+ * WHAT THE GAP BETWEEN PARTS IS, AND WHAT IT IS NOT.
+ *
+ * The section durations above are official and identical across two independent checks of the JEES /
+ * jlpt.jp material. The gap is a different kind of number and has to be described honestly, because
+ * JEES does not publish one: the word 休憩 appears nowhere in its timetable, and the only figure
+ * available is the SCHEDULED GAP between the end of one section and the start of the next -- 20 minutes
+ * after 文字・語彙, 30 after 文法・読解. That window is not free time. It covers collecting the booklets,
+ * handing out the next ones and reading the instructions, so the actual rest is some unpublished
+ * fraction of it.
+ *
+ * So we model the scheduled gap, at its sourced length, and say in the UI what it is. An earlier version
+ * of this file simply asserted a flat 10 minutes, which was a number nobody had measured presented to
+ * learners as if it were the real exam's.
+ *
+ * The gap is always SKIPPABLE. The point of simulating it is rehearsing the interruption -- that part 1
+ * is over and cannot be reopened -- not enforcing a wait nobody benefits from at a desk at home.
+ *
+ * There is also no GLOBAL gap to copy. jlpt.jp publishes section durations and nothing else -- no clock
+ * schedule, no break -- and each administering body sets its own: Japan schedules 20 minutes here and
+ * never labels it a break, Taiwan 25 (of which 15 is labelled rest), Korea 5. They genuinely disagree,
+ * so the UI names the Japan figure as the Japan figure instead of implying a universal one. Brazilian
+ * sittings publish no equivalent timetable at all.
+ */
+export const GAP_NOTE =
+  "No exame, entre uma parte e outra as provas são recolhidas e as instruções da parte seguinte são " +
+  "lidas, então esse tempo não é todo descanso. A duração muda conforme o país que aplica: no Japão o " +
+  "intervalo programado aqui é de 20 minutos, em Taiwan 25 e na Coreia 5.";
+
+/** Scheduled gap after part `i`, in minutes; 0 when the part is the last one we run. */
+export function gapAfter(i: number): number {
+  return PARTS[i]?.gapAfter ?? 0;
+}
+
+/** Total scored minutes for a level (the sum of its parts; excludes the break). */
+export const MINUTES: Record<Level, number> =
+  LEVELS.reduce((acc, lv) => {
+    acc[lv] = PARTS.reduce((a, p) => a + p.minutes[lv], 0);
+    return acc;
+  }, {} as Record<Level, number>);
+
+/** Which part a section belongs to, so a section can never be silently orphaned. */
+export function partOf(type: string): PartSpec | undefined {
+  return PARTS.find((p) => p.types.includes(type));
+}
 
 interface RawItem {
   id: string; level: string; stem?: string; correct?: string; distractors?: string[];
@@ -104,9 +183,16 @@ export interface PaperQuestion {
 }
 export interface PaperSection {
   type: string; label: string; jp: string; hint: string; questions: PaperQuestion[];
+  /** 1-based index of this section's first question WITHIN THE PAPER, for continuous numbering. */
+  from: number;
+}
+export interface PaperPart {
+  key: string; jp: string; label: string; minutes: number; gapAfter: number; total: number;
+  sections: PaperSection[];
 }
 export interface Paper {
-  level: Level; seed: number; minutes: number; total: number; sections: PaperSection[];
+  level: Level; seed: number; minutes: number; total: number; gapNote: string;
+  parts: PaperPart[];
 }
 
 /**
@@ -151,6 +237,9 @@ export function buildPaper(level: Level, seedInput: string | number, exclude: Se
   const sections: PaperSection[] = [];
   let total = 0;
 
+  // Sections are built in SECTIONS order (which is the real paper's 大問 order) and then grouped into
+  // parts, rather than iterating parts and then sections. Keeping one pass means the RNG is consumed in
+  // a fixed sequence, so an existing seed still reproduces the same paper it did before parts existed.
   for (const spec of SECTIONS) {
     const want = spec.counts[level];
     if (!want) continue;
@@ -188,10 +277,31 @@ export function buildPaper(level: Level, seedInput: string | number, exclude: Se
       });
     }
     if (!questions.length) continue;
-    sections.push({ type: spec.type, label: spec.label, jp: spec.jp, hint: spec.hint, questions });
+    sections.push({ type: spec.type, label: spec.label, jp: spec.jp, hint: spec.hint, questions,
+                    from: total + 1 });
     total += questions.length;
   }
-  return { level, seed, minutes: MINUTES[level], total, sections };
+
+  const parts: PaperPart[] = [];
+  for (const spec of PARTS) {
+    const mine = sections.filter((sec) => spec.types.includes(sec.type));
+    if (!mine.length) continue;
+    parts.push({
+      key: spec.key, jp: spec.jp, label: spec.label, minutes: spec.minutes[level],
+      gapAfter: spec.gapAfter ?? 0,
+      total: mine.reduce((a, sec) => a + sec.questions.length, 0),
+      sections: mine,
+    });
+  }
+  // A section that matches no part would vanish from the paper while still counting toward `total`,
+  // which would silently change the scoring denominator. Fail loudly instead.
+  const placed = parts.reduce((a, p) => a + p.total, 0);
+  if (placed !== total) {
+    const orphans = sections.filter((sec) => !partOf(sec.type)).map((sec) => sec.type);
+    throw new Error(`exam: sections outside every part: ${orphans.join(", ") || "(count mismatch)"}`);
+  }
+
+  return { level, seed, minutes: MINUTES[level], total, gapNote: GAP_NOTE, parts };
 }
 
 export interface Graded {
@@ -215,7 +325,7 @@ export function gradePaper(level: Level, seedInput: string | number, answers: Re
   const questions: Graded[] = [];
   const perSection: Result["perSection"] = [];
 
-  for (const sec of paper.sections) {
+  for (const sec of paper.parts.flatMap((p) => p.sections)) {
     let right = 0;
     for (const q of sec.questions) {
       const expected = expectedFor(level, sec.type, q);

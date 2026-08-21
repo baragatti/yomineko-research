@@ -49,10 +49,10 @@ export default function Lesson() {
   const l = useLoaderData<typeof loader>();
   const hasUnlocks = (l.unlocks.kanji.length + l.unlocks.vocab.length + l.unlocks.grammar.length) > 0;
   return (
-    <AppShell active="study" title={l.title} back={l.topic ? `/curso/${encodeURIComponent(l.topic.id)}` : "/curso"}>
+    <AppShell active="study" title={l.title} back={l.topic ? `/curso/${encodeURIComponent(l.topic.id)}` : "/cursos/jlpt"}>
       <article className="ym-page">
         <nav className="ym-breadcrumb" aria-label="Trilha">
-          <Link to="/curso">Curso</Link>
+          <Link to="/cursos/jlpt">Curso</Link>
           <Icon name="chevron_right" size={14} />
           {l.topic && (
             <>

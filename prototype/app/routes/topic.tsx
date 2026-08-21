@@ -29,10 +29,10 @@ export async function loader({ params }: { params: { topicId: string } }) {
 export default function Topic() {
   const t = useLoaderData<typeof loader>();
   return (
-    <AppShell active="study" title={t.title} back="/curso">
+    <AppShell active="study" title={t.title} back="/cursos/jlpt">
       <div className="ym-page">
         <div className="ym-breadcrumb">
-          <Link to="/curso">Curso</Link> <Icon name="chevron_right" size={14} /> <span>{t.level.toUpperCase()}</span>
+          <Link to="/cursos/jlpt">Curso</Link> <Icon name="chevron_right" size={14} /> <span>{t.level.toUpperCase()}</span>
         </div>
         <h1 className="ym-h1">{t.title}</h1>
         {t.objectives.length > 0 && (

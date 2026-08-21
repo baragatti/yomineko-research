@@ -71,7 +71,7 @@ export default function Kana() {
   const selRomaji = rows.flatMap((r) => r.members).find((m) => m.char === sel)?.romaji ?? "";
 
   return (
-    <AppShell active="kana" title="Kana" back="/curso">
+    <AppShell active="kana" title="Kana" back="/cursos/jlpt">
       <div className="ym-page">
         <h1 className="ym-h1">Kana — ordem dos traços</h1>
         <p className="ym-sub">Toque em um caractere para ver como escrevê-lo, traço a traço.</p>

@@ -45,7 +45,7 @@ export default function Home() {
                     <Icon name="play_arrow" size={20} fill /> Começar a lição
                   </Link>
                 )}
-                <Link to="/curso" className="btn btn-tonal">Ver o curso</Link>
+                <Link to="/cursos" className="btn btn-tonal">Ver os cursos</Link>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
           <Link to="/revisar" className="ym-quick"><div className="ym-quick-ic"><Icon name="style" size={22} /></div><div><div className="ym-quick-t">Revisar</div><div className="ym-quick-d">Cartões de hoje</div></div></Link>
           <Link to="/pratica" className="ym-quick"><div className="ym-quick-ic"><Icon name="target" size={22} /></div><div><div className="ym-quick-t">Praticar</div><div className="ym-quick-d">Seis modos</div></div></Link>
           <Link to="/kanji" className="ym-quick"><div className="ym-quick-ic"><Icon name="translate" size={22} /></div><div><div className="ym-quick-t">Kanji</div><div className="ym-quick-d">Explorar</div></div></Link>
-          <Link to="/falar" className="ym-quick"><div className="ym-quick-ic"><Icon name="record_voice_over" size={22} /></div><div><div className="ym-quick-t">Falar</div><div className="ym-quick-d">Trilha da conversa</div></div></Link>
+          <Link to="/cursos/falar" className="ym-quick"><div className="ym-quick-ic"><Icon name="record_voice_over" size={22} /></div><div><div className="ym-quick-t">Falar</div><div className="ym-quick-d">Trilha da conversa</div></div></Link>
           <Link to="/simulado" className="ym-quick"><div className="ym-quick-ic"><Icon name="quiz" size={22} /></div><div><div className="ym-quick-t">Simulado</div><div className="ym-quick-d">Prova JLPT</div></div></Link>
         </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
         <h2 className="ym-section-title">Módulos</h2>
         <div className="ym-cards">
           {courses.map((c) => (
-            <Link key={c.id} to="/curso" className="ym-tile">
+            <Link key={c.id} to="/cursos/jlpt" className="ym-tile">
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8 }}>
                 <div>
                   <div className="ym-tile-title">{c.title}</div>
