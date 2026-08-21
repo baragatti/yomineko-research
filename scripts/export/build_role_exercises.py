@@ -21,9 +21,18 @@ An item shows a sentence, names a role in pt-BR, and offers the sentence's own c
 Constraints that make it answerable:
   * the target role must occur EXACTLY ONCE in the sentence. Two を chunks means two defensible answers.
   * at least 3 chunks, so there are real distractors; at most 6, so the options stay readable.
-  * `ni-phrase` and `de-phrase` are excluded as TARGETS. They exist precisely because に and で are
-    ambiguous, so asking "which part is the ni-phrase" tests reading the particle off the page rather
-    than understanding a role. They stay as distractors, where they are honest.
+  * the non-committal roles are excluded as TARGETS: `ni-phrase`, `de-phrase`, `to-phrase`. They exist
+    precisely because に, で and と are ambiguous, so asking "which part is the ni-phrase" tests reading
+    the particle off the page rather than understanding a role. They stay as distractors, where they
+    are honest. So do the clause roles (`kara-clause`, `ga-clause`, `de-clause`, `to-clause`) and
+    `nominalizer`: naming those to a beginner would be jargon, but they are real chunks of the sentence
+    and make good distractors.
+
+と USED TO BE A TARGET and must not become one again. It mapped to `with`, so this file generated 319
+items asking "qual parte é a parte marcada por と (companhia ou par)?" -- including of 花は切られると
+すぐにしぼむ, where the と is conditional, and 早く起きろと父に言われた, where it is quotative. The
+pattern builder now maps と to `to-phrase`, and its docstring records why the comitative sense cannot be
+derived mechanically from anything the corpus stores. Re-adding "with" here resurrects the whole defect.
 
 Output: corpus/exercises/roles/<level>_roles.json.
 Usage: build_role_exercises.py
@@ -45,11 +54,17 @@ ASKABLE = {
     "object": "o OBJETO DIRETO",
     "predicate": "o PREDICADO (o que a frase diz)",
     "modifier": "o MODIFICADOR (a parte ligada por の)",
-    "with": "a parte marcada por と (companhia ou par)",
     "from": "a ORIGEM (marcada por から)",
     "direction": "o DESTINO (marcado por へ)",
 }
 MIN_CHUNKS, MAX_CHUNKS = 3, 6
+# A role reaches ASKABLE only when the (particle, function_type) pair pins it down. Anything the pattern
+# builder deliberately left non-committal -- to-phrase, ni-phrase, de-phrase -- or that names a clause
+# rather than a role must stay out, and failing here is cheaper than noticing it in the app.
+_NEVER_ASK = {"ni-phrase", "de-phrase", "to-phrase", "nominalizer", "phrase", "sentence-final",
+              "kara-clause", "ga-clause", "de-clause", "to-clause", "ni-clause", "te-kara",
+              "with"}
+assert not (set(ASKABLE) & _NEVER_ASK), f"role asked about but not derivable: {set(ASKABLE) & _NEVER_ASK}"
 
 
 def spread(anchor: str, value: str) -> str:
@@ -116,9 +131,14 @@ def main() -> int:
         f"**{total} items** across "
         + ", ".join(f"{k.split('_')[0].upper()} {len(v)}" for k, v in sorted(banks.items()))
         + ".\n\nA role is only asked about when it occurs EXACTLY ONCE in the sentence; two を chunks "
-        "would mean two defensible answers. `ni-phrase` and `de-phrase` are never targets - they exist "
-        "because に and で are ambiguous, so asking for them would test reading the particle off the "
-        "page rather than understanding a role. They remain as distractors, where they are honest.\n",
+        "would mean two defensible answers.\n\n`ni-phrase`, `de-phrase` and `to-phrase` are never "
+        "targets - they exist because に, で and と are ambiguous, so asking for them would test "
+        "reading the particle off the page rather than understanding a role. They remain as "
+        "distractors, where they are honest.\n\nRoles come from the (particle, function_type) "
+        "PAIR, never the particle surface: から/case is an origin but から/conjunctive means "
+        "'porque', の/case links nouns but の/nominalizer modifies nothing, and が/conjunctive "
+        "is 'mas' rather than a subject. An earlier build read the surface alone and shipped 319 "
+        "items calling every と 'companhia ou par', quotatives and conditionals included.\n",
         encoding="utf-8")
 
     print(f"role exercises: {total} items  " + "  ".join(f"{k}={len(v)}" for k, v in sorted(banks.items())))

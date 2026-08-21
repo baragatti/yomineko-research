@@ -1,0 +1,832 @@
+{
+ "note": "Report every `grouping_problem` the note-authoring pass flagged, against the CURRENT alignment.\n\nRoadmap D step 2 asked each authoring agent to write a note per reading AND to flag it when the\nmechanical grouping underneath looked wrong. 46 readings came back flagged. Several rounds of alignment\nfixes have landed since — positional alignment, 促音便, handakuten, exact-match preference, the\nokurigana shared-prefix score, the consonant-row tiebreak, and the prefix/bound hyphen rules — so an\nunknown number are already resolved.\n\nThis does NOT try to decide which. Two attempts at classifying them automatically both failed, in\ninstructive ways worth recording so a third is not attempted the same way:\n\n  * \"the flagged word is still in the flagged group\" reads the wrong direction for the minority of notes\n    that complain a slot is wrongly EMPTY. Those resolve when the word ARRIVES, so the check reported\n    合's -あい and 共's -ども as broken at the exact moment they were fixed.\n  * keying off the word the note names fails whenever the note names only the kanji itself\n    (共's note is about the single-character word 共), which the word extractor must exclude to avoid\n    matching every entry.\n\nSo this emits the flag together with what the group actually holds now, and leaves the judgement to a\nreader. That is the honest output: the classification is the hard part, and a wrong count of \"known\nremaining problems\" is worse than no count.\n\nOutput: research/derived/kanji_grouping_review.json\nUsage: report_kanji_grouping_problems.py",
+ "count": 46,
+ "rows": [
+  {
+   "character": "生",
+   "reading": "-う.",
+   "batch": "batch-02.json",
+   "problem": "誕生日 (たんじょうび) está agrupado em -う, mas nessa palavra 生 lê じょう (forma sonorizada de ショウ); o composto pertence à leitura ショウ.",
+   "words_the_note_names": [
+    "誕生日"
+   ],
+   "group_holds_now": [
+    "誕生日"
+   ],
+   "still_present": [
+    "誕生日"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "立",
+   "reading": "た.つ",
+   "batch": "batch-03.json",
+   "problem": "立場 (たちば) está agrupado em た.つ, mas nessa palavra 立 lê たち; ele pertence ao grupo た.ち-.",
+   "words_the_note_names": [
+    "立場"
+   ],
+   "group_holds_now": [
+    "立つ",
+    "役に立つ",
+    "立場",
+    "役立つ"
+   ],
+   "still_present": [
+    "立場"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "子",
+   "reading": "ス.",
+   "batch": "batch-03.json",
+   "problem": "硝子 também foi posto aqui, mas a palavra é lida ガラス por inteiro e não tem um ス vindo do 子; o lugar dela é a lista de irregulares.",
+   "words_the_note_names": [
+    "硝子"
+   ],
+   "group_holds_now": [
+    "椅子",
+    "硝子"
+   ],
+   "still_present": [
+    "硝子"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "気",
+   "reading": "き.",
+   "batch": "batch-04.json",
+   "problem": "Este grupo está marcado como leitura kun, mas o き de 気, 病気, 天気, 気持ち, 気分, 元気, 気づく, 空気, 人気 e 勇気 é a leitura sino-japonesa キ, que está logo abaixo com a lista vazia. A única kun listada para 気 nesta entrada é いき; os dois grupos deveriam ser um só, do tipo on.",
+   "words_the_note_names": [
+    "人気",
+    "元気",
+    "勇気",
+    "天気",
+    "気づく",
+    "気分",
+    "気持ち",
+    "病気",
+    "空気"
+   ],
+   "group_holds_now": [
+    "気",
+    "病気",
+    "天気",
+    "気持ち",
+    "気分",
+    "元気",
+    "気づく",
+    "空気",
+    "人気",
+    "勇気"
+   ],
+   "still_present": [
+    "人気",
+    "元気",
+    "勇気",
+    "天気",
+    "気づく",
+    "気分",
+    "気持ち",
+    "病気",
+    "空気"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "気",
+   "reading": "キ.",
+   "batch": "batch-04.json",
+   "problem": "Lista vazia por erro de alinhamento: 気, 病気, 天気, 気持ち, 気分, 元気, 気づく, 空気, 人気 e 勇気 usam esta leitura e foram todas parar no grupo hiragana き, marcado como kun.",
+   "words_the_note_names": [
+    "人気",
+    "元気",
+    "勇気",
+    "天気",
+    "気づく",
+    "気分",
+    "気持ち",
+    "病気",
+    "空気"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "土",
+   "reading": "ト.",
+   "batch": "batch-05.json",
+   "problem": "混凝土 (コンクリート) não deveria estar neste grupo. A palavra inteira é lida como o estrangeirismo コンクリート e nenhum dos três kanji empresta som a ela, então 土 não vale ト aí. O lugar dela é a lista de irregulares.",
+   "words_the_note_names": [
+    "混凝土"
+   ],
+   "group_holds_now": [
+    "土地",
+    "混凝土"
+   ],
+   "still_present": [
+    "混凝土"
+   ],
+   "kanji_irregular_list_now": [
+    "土産",
+    "お土産"
+   ]
+  },
+  {
+   "character": "合",
+   "reading": "あい-.",
+   "batch": "batch-08.json",
+   "problem": "試合 (しあい) e 場合 (ばあい) têm 合 no FIM da palavra. A leitura あい está certa, mas o encaixe não: os dois pertencem à variante de sufixo -あい, listada logo abaixo e vazia. Nenhum dos dois é uso de prefixo.",
+   "words_the_note_names": [
+    "場合",
+    "試合"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "合",
+   "reading": "-あい.",
+   "batch": "batch-08.json",
+   "problem": "Encaixe vazio, embora seja o correto para 試合 (しあい) e 場合 (ばあい), que foram anexados acima, na variante de prefixo あい-.",
+   "words_the_note_names": [
+    "場合",
+    "試合"
+   ],
+   "group_holds_now": [
+    "試合",
+    "場合"
+   ],
+   "still_present": [
+    "場合",
+    "試合"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "明",
+   "reading": "あ.かり",
+   "batch": "batch-09.json",
+   "problem": "明日 (あした) e 明後日 (あさって) caíram neste grupo, mas são leituras do composto inteiro e não do padrão あ + かり; só 明かり pertence aqui.",
+   "words_the_note_names": [
+    "明かり",
+    "明後日",
+    "明日"
+   ],
+   "group_holds_now": [
+    "明日",
+    "明かり",
+    "明後日"
+   ],
+   "still_present": [
+    "明かり",
+    "明後日",
+    "明日"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "度",
+   "reading": "ト.",
+   "batch": "batch-09.json",
+   "problem": "Os únicos exemplos de ト são grafias ateji (きっと, おめでとう), quase sempre escritas em kana; o alinhamento em si é defensável, mas como evidência da leitura elas são fracas.",
+   "words_the_note_names": [],
+   "group_holds_now": [
+    "屹度",
+    "御目出度う"
+   ],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "持",
+   "reading": "も.つ",
+   "batch": "batch-10.json",
+   "problem": "持ち tem okurigana ち, e não つ. Ele caiu neste grupo por ser derivado de 持つ, mas a escrita casa com o grupo -も + ち.",
+   "words_the_note_names": [
+    "持ち",
+    "持つ"
+   ],
+   "group_holds_now": [
+    "持つ",
+    "受け持つ",
+    "持ち"
+   ],
+   "still_present": [
+    "持ち",
+    "持つ"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "文",
+   "reading": "も.",
+   "batch": "batch-11.json",
+   "problem": "文字 (もじ) foi parar nos irregulares, mas o 文 dessa palavra se lê exatamente も, que é esta leitura aqui; o agrupamento deveria tê-la colocado neste grupo.",
+   "words_the_note_names": [
+    "文字"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": [
+    "文字"
+   ]
+  },
+  {
+   "character": "売",
+   "reading": "う.れる",
+   "batch": "batch-11.json",
+   "problem": "売り切れる (うりきれる) caiu neste grupo por terminar em れる, mas esse れる é de 切れる; o 売 dessa palavra se lê う com okurigana り, então ela é do grupo う.る, onde 売り切れ já está.",
+   "words_the_note_names": [
+    "切れる",
+    "売り切れ",
+    "売り切れる"
+   ],
+   "group_holds_now": [
+    "売れる",
+    "売り切れる"
+   ],
+   "still_present": [
+    "売り切れる"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "知",
+   "reading": "し.る",
+   "batch": "batch-11.json",
+   "problem": "ご存知 (ごぞんじ) não pertence a este grupo kun: o ご é 御, o ぞん é 存 e o 知 vale じ, a forma sonorizada da leitura on チ. Como está, o slot し.る sugere que o 知 de ご存知 soa し.",
+   "words_the_note_names": [
+    "存知"
+   ],
+   "group_holds_now": [
+    "知る",
+    "かも知れない",
+    "知り合い",
+    "ご存知"
+   ],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "引",
+   "reading": "ひ.ける",
+   "batch": "batch-11.json",
+   "problem": "引き受ける (ひきうける) caiu neste grupo por terminar em ける, mas esse ける é de 受ける; o 引 se lê ひ com okurigana き, então a palavra é do grupo ひ.く.",
+   "words_the_note_names": [
+    "受ける",
+    "引き受ける"
+   ],
+   "group_holds_now": [
+    "引き受ける"
+   ],
+   "still_present": [
+    "引き受ける"
+   ],
+   "kanji_irregular_list_now": [
+    "取引"
+   ]
+  },
+  {
+   "character": "楽",
+   "reading": "たの.しい",
+   "batch": "batch-13.json",
+   "problem": "楽しみ (たのしみ) é a forma nominal de 楽しむ, então caberia melhor no grupo たの + しむ logo abaixo; a leitura たの é a mesma nos dois.",
+   "words_the_note_names": [
+    "楽しみ",
+    "楽しむ"
+   ],
+   "group_holds_now": [
+    "楽しい"
+   ],
+   "still_present": [],
+   "kanji_irregular_list_now": [
+    "倶楽部"
+   ]
+  },
+  {
+   "character": "質",
+   "reading": "チ.",
+   "batch": "batch-14.json",
+   "problem": "人質 (ひとじち) não pertence ao grupo チ: o 質 vale じち ali, que é シチ sonorizada, e não um チ solto. Deveria estar no slot シチ, que ficou vazio nesta mesma entrada.",
+   "words_the_note_names": [
+    "人質"
+   ],
+   "group_holds_now": [
+    "人質"
+   ],
+   "still_present": [
+    "人質"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "青",
+   "reading": "あお.い",
+   "batch": "batch-16.json",
+   "problem": "青白い (あおじろい) caiu neste grupo, mas ali 青 se lê あお sem okurigana e o い final pertence a 白い. A palavra pertence ao grupo あお.",
+   "words_the_note_names": [
+    "白い",
+    "青白い"
+   ],
+   "group_holds_now": [
+    "青い",
+    "青白い"
+   ],
+   "still_present": [
+    "青白い"
+   ],
+   "kanji_irregular_list_now": [
+    "番瀝青",
+    "真っ青"
+   ]
+  },
+  {
+   "character": "貸",
+   "reading": "か.し-",
+   "batch": "batch-18.json",
+   "problem": "貸し (かし) foi parar no grupo かし-, em que o kanji sozinho cobre かし sem okurigana. Como ela se escreve 貸し, com o し de fora, a grafia dela casa é com este slot, か + し, que ficou vazio.",
+   "words_the_note_names": [
+    "貸し"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "貸",
+   "reading": "かし-.",
+   "batch": "batch-18.json",
+   "problem": "貸し (かし) também está neste grupo, mas ela leva okurigana し, ou seja, o kanji vale só か. Ela pertence ao slot か + し- logo acima, que ficou vazio.",
+   "words_the_note_names": [
+    "貸し"
+   ],
+   "group_holds_now": [
+    "貸出",
+    "貸家",
+    "貸間",
+    "貸し"
+   ],
+   "still_present": [
+    "貸し"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "済",
+   "reading": "す.まない",
+   "batch": "batch-23.json",
+   "problem": "済ませる (すませる) caiu no slot す.まない, mas ele pertence ao verbo 済ます, que tem o próprio slot す.ます nesta mesma entrada (onde já está 済ます). O okurigana ませる empata no prefixo compartilhado ま tanto com まない quanto com ます, e o empate foi resolvido para o slot errado.",
+   "words_the_note_names": [
+    "済ます",
+    "済ませる"
+   ],
+   "group_holds_now": [
+    "済まない"
+   ],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "共",
+   "reading": "とも.",
+   "batch": "batch-23.json",
+   "problem": "共 (ども) foi posto neste grupo, mas a palavra é lida ども, a forma sonorizada, que tem slot próprio (-ども) nesta mesma entrada e ficou vazio.",
+   "words_the_note_names": [],
+   "group_holds_now": [
+    "共働き"
+   ],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "共",
+   "reading": "-ども.",
+   "batch": "batch-23.json",
+   "problem": "Slot vazio embora a própria entrada traga 共 (ども), que acabou agrupado em とも.",
+   "words_the_note_names": [],
+   "group_holds_now": [
+    "共"
+   ],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "直",
+   "reading": "なお.す",
+   "batch": "batch-25.json",
+   "problem": "仲直り (なかなおり) e 素直 (すなお) entraram aqui só pelo trecho なお, e nenhum dos dois tem a terminação す: 仲直り traz なおり e casa com o grupo なお+る, que ficou vazio, e 素直 não leva okurigana nenhuma.",
+   "words_the_note_names": [
+    "仲直り",
+    "素直"
+   ],
+   "group_holds_now": [
+    "直す",
+    "仲直り",
+    "素直"
+   ],
+   "still_present": [
+    "仲直り",
+    "素直"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "果",
+   "reading": "は.て",
+   "batch": "batch-25.json",
+   "problem": "果たして (はたして) não é deste grupo: a okurigana dele é たして, não て, e a palavra casa com o grupo は+たす.",
+   "words_the_note_names": [
+    "果たして"
+   ],
+   "group_holds_now": [
+    "果たして",
+    "果て"
+   ],
+   "still_present": [
+    "果たして"
+   ],
+   "kanji_irregular_list_now": [
+    "果物"
+   ]
+  },
+  {
+   "character": "置",
+   "reading": "-お.き",
+   "batch": "batch-26.json",
+   "problem": "物置 (ものおき) foi para a lista irregular, mas o 置 ali soa おき, esta mesma leitura; pelo som ele pertence a este grupo.",
+   "words_the_note_names": [
+    "物置"
+   ],
+   "group_holds_now": [
+    "前置き"
+   ],
+   "still_present": [],
+   "kanji_irregular_list_now": [
+    "物置"
+   ]
+  },
+  {
+   "character": "流",
+   "reading": "なが.れる",
+   "batch": "batch-26.json",
+   "problem": "流し (ながし) está neste grupo, mas vem de 流す, não de 流れる; o lugar dele é o grupo なが+す.",
+   "words_the_note_names": [
+    "流し",
+    "流す",
+    "流れる"
+   ],
+   "group_holds_now": [
+    "流れる",
+    "流し"
+   ],
+   "still_present": [
+    "流し",
+    "流れる"
+   ],
+   "kanji_irregular_list_now": [
+    "流行る"
+   ]
+  },
+  {
+   "character": "労",
+   "reading": "ろう.する",
+   "batch": "batch-29.json",
+   "problem": "ろう está marcada como leitura kun, mas soa igual à leitura on ロウ registrada nesta mesma entrada e só existe presa a する (労する). Parece a convenção de listar verbos on + する entre os kun, e não uma leitura nativa de verdade.",
+   "words_the_note_names": [
+    "労する"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "渡",
+   "reading": "わた.る",
+   "batch": "batch-30.json",
+   "problem": "橋渡し (はしわたし) foi posto neste grupo, mas o 渡し dele vem de 渡す, não de 渡る: o lugar da palavra é o grupo わた+す, logo abaixo.",
+   "words_the_note_names": [
+    "橋渡し",
+    "渡し",
+    "渡す",
+    "渡る"
+   ],
+   "group_holds_now": [
+    "渡る",
+    "渡り鳥",
+    "橋渡し"
+   ],
+   "still_present": [
+    "橋渡し",
+    "渡る"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "差",
+   "reading": "サ.",
+   "batch": "batch-30.json",
+   "problem": "差し上げる, 人差し指 e 差し支え também foram postos aqui, mas o さ dessas três é a forma nativa 差し, do verbo 差す, e não a leitura sino-japonesa サ: o lugar delas é o grupo さ+し.",
+   "words_the_note_names": [
+    "人差し指",
+    "差し",
+    "差し上げる",
+    "差し支え",
+    "差す"
+   ],
+   "group_holds_now": [
+    "差",
+    "差し上げる",
+    "交差点",
+    "差別",
+    "人差し指",
+    "差し支え"
+   ],
+   "still_present": [
+    "人差し指",
+    "差し上げる",
+    "差し支え"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "若",
+   "reading": "も.しくわ",
+   "batch": "batch-30.json",
+   "problem": "若しも, 若しかして, 若しかしたら e 若しかすると foram postos neste grupo, mas todos começam por もし e nenhum deles traz o しくわ: eles pertencem ao grupo も+し.",
+   "words_the_note_names": [
+    "若しかしたら",
+    "若しかして",
+    "若しかすると",
+    "若しも"
+   ],
+   "group_holds_now": [
+    "若しも",
+    "若しかして",
+    "若しかしたら",
+    "若しかすると"
+   ],
+   "still_present": [
+    "若しかしたら",
+    "若しかして",
+    "若しかすると",
+    "若しも"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "様",
+   "reading": "ショウ.",
+   "batch": "batch-31.json",
+   "problem": "仕様がない (しょうがない) é a contração falada de しようがない: o 仕 é し e o 様 é よう, e o しょう nasce da fusão dos dois, então a palavra não serve como exemplo da leitura ショウ.",
+   "words_the_note_names": [
+    "仕様がない"
+   ],
+   "group_holds_now": [
+    "仕様がない"
+   ],
+   "still_present": [
+    "仕様がない"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "留",
+   "reading": "るうぶる.",
+   "batch": "batch-36.json",
+   "problem": "るうぶる destoa das outras leituras nativas de 留 (と, とど) e tem cara de transcrição estrangeira herdada do dicionário de origem, não de leitura kun comum. Vale conferir antes de exibir ao aluno.",
+   "words_the_note_names": [],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": [
+    "書留"
+   ]
+  },
+  {
+   "character": "浮",
+   "reading": "う.く",
+   "batch": "batch-36.json",
+   "problem": "浮気 (うわき) caiu neste grupo só porque começa com う, mas ali 浮 se lê うわ e o き é o kanji 気, não okurigana. Nenhuma das leituras listadas para 浮 cobre うわ, então 浮気 deveria estar em irregular.",
+   "words_the_note_names": [
+    "浮気"
+   ],
+   "group_holds_now": [
+    "浮気",
+    "浮く"
+   ],
+   "still_present": [
+    "浮気"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "押",
+   "reading": "お.す",
+   "batch": "batch-37.json",
+   "problem": "押入れ (おしいれ) caiu neste grupo, mas nele o 押 vale おし, e não お mais o okurigana す. O lugar dele é o slot お.し- desta mesma entrada, o mesmo que já reúne 押し込む e 押し切る.",
+   "words_the_note_names": [
+    "押し切る",
+    "押し込む",
+    "押入れ"
+   ],
+   "group_holds_now": [
+    "押す",
+    "押入れ"
+   ],
+   "still_present": [
+    "押入れ"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "恐",
+   "reading": "おそ.れる",
+   "batch": "batch-38.json",
+   "problem": "恐らく (おそらく) caiu neste grupo só pela leitura おそ. O okurigana dele é らく, não れる, então ele não é uma forma de 恐れる: é um advérbio que quer dizer provavelmente.",
+   "words_the_note_names": [
+    "恐らく",
+    "恐れる"
+   ],
+   "group_holds_now": [
+    "恐れる",
+    "恐らく",
+    "恐れ"
+   ],
+   "still_present": [
+    "恐らく",
+    "恐れる"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "痛",
+   "reading": "いた.い",
+   "batch": "batch-38.json",
+   "problem": "痛み (いたみ) caiu neste grupo só pela leitura いた. O okurigana dele é み, ligado a 痛む, então ele pertence ao grupo いた.む e não é uma forma de 痛い.",
+   "words_the_note_names": [
+    "痛い",
+    "痛み",
+    "痛む"
+   ],
+   "group_holds_now": [
+    "痛い",
+    "痛み"
+   ],
+   "still_present": [
+    "痛い",
+    "痛み"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "列",
+   "reading": "れっ.",
+   "batch": "batch-39.json",
+   "problem": "Slot vazio embora 列車 (れっしゃ) e 列島 (れっとう) usem exatamente este れっ, a forma reduzida de レツ diante da consoante seguinte. As duas palavras foram parar num grupo escrito レ nesta mesma entrada.",
+   "words_the_note_names": [
+    "列島",
+    "列車"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "列",
+   "reading": "レ.",
+   "batch": "batch-39.json",
+   "problem": "列車 e 列島 não pertencem a um grupo レ: o som que o 列 empresta nelas é れっ, com o っ que dobra a consoante seguinte, ou seja レツ reduzida. Elas deveriam estar no slot れっ, que ficou vazio nesta mesma entrada, e um レ isolado não é leitura de 列.",
+   "words_the_note_names": [
+    "列島",
+    "列車"
+   ],
+   "group_holds_now": [
+    "列車",
+    "列島"
+   ],
+   "still_present": [
+    "列島",
+    "列車"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "折",
+   "reading": "おり.",
+   "batch": "batch-39.json",
+   "problem": "折り返す (おりかえす) escreve o り como okurigana e caberia melhor no slot お + り, que ficou vazio nesta mesma entrada; nos outros dois vocábulos deste grupo (折, 時折) o り não é escrito.",
+   "words_the_note_names": [
+    "折り返す",
+    "時折"
+   ],
+   "group_holds_now": [
+    "時折",
+    "折り返す",
+    "折"
+   ],
+   "still_present": [
+    "折り返す",
+    "時折"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "掛",
+   "reading": "か.ける",
+   "batch": "batch-40.json",
+   "problem": "掛け算 (かけざん) tem okurigana け, não ける: o lugar dele é o slot か+け desta mesma entrada.",
+   "words_the_note_names": [
+    "掛け算"
+   ],
+   "group_holds_now": [
+    "掛ける",
+    "腰掛ける",
+    "仕掛ける",
+    "掛け算"
+   ],
+   "still_present": [
+    "掛け算"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "寝",
+   "reading": "ね.る",
+   "batch": "batch-40.json",
+   "problem": "寝かせる (ねかせる) tem okurigana かせる e corresponde ao slot ね+かす desta mesma entrada, não a ね+る.",
+   "words_the_note_names": [
+    "寝かせる"
+   ],
+   "group_holds_now": [
+    "寝る",
+    "昼寝",
+    "寝坊",
+    "寝かせる",
+    "朝寝坊",
+    "寝巻き"
+   ],
+   "still_present": [
+    "寝かせる"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "寝",
+   "reading": "ね.かす",
+   "batch": "batch-40.json",
+   "problem": "寝かせる (ねかせる) ficou em ね+る, mas é a palavra que corresponde a este slot.",
+   "words_the_note_names": [
+    "寝かせる"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "雪",
+   "reading": "ぶき.",
+   "batch": "batch-40.json",
+   "problem": "吹雪 (ふぶき) foi para os irregulares, mas o trecho ぶき dessa palavra é exatamente esta leitura listada aqui.",
+   "words_the_note_names": [
+    "吹雪"
+   ],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": [
+    "吹雪",
+    "雪崩"
+   ]
+  },
+  {
+   "character": "頂",
+   "reading": "いただき.",
+   "batch": "batch-42.json",
+   "problem": "頂きます (いただきます) caiu neste grupo, mas ali o kanji lê いただ e きます é okurigana: a palavra é a forma polida do verbo e pertence ao slot いただ+く desta mesma entrada.",
+   "words_the_note_names": [
+    "頂きます"
+   ],
+   "group_holds_now": [
+    "頂きます",
+    "頂"
+   ],
+   "still_present": [
+    "頂きます"
+   ],
+   "kanji_irregular_list_now": []
+  },
+  {
+   "character": "忙",
+   "reading": "うれえるさま.",
+   "batch": "batch-42.json",
+   "problem": "うれえるさま não se comporta como leitura de uso e sim como uma glosa descritiva herdada do dicionário de origem. Vale checar antes de exibir isso ao aluno como leitura de 忙.",
+   "words_the_note_names": [],
+   "group_holds_now": [],
+   "still_present": [],
+   "kanji_irregular_list_now": []
+  }
+ ]
+}

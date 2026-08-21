@@ -10,7 +10,7 @@
             { "base": "verb", "op": "to-volitional" },
             { "op": "append", "token": "と思う" }
           ],
-          "example": "書こうと思う"
+          "example": "行こうと思う"
         },
         {
           "base": "verb",
@@ -18,7 +18,7 @@
             { "base": "verb", "op": "to-volitional" },
             { "op": "append", "token": "と思っている" }
           ],
-          "example": "書こうと思っている"
+          "example": "留学しようと思っている"
         }
       ],
       "steps_unavailable": "",
@@ -28,14 +28,14 @@
     {
       "slug": "gram:zehi",
       "variants": [],
-      "steps_unavailable": "Invariable adverb placed BEFORE the predicate. The record's own formation states it takes no particle and does not inflect, and every combination it lists is pre-posed (ぜひ + 〜てください, ぜひ + 〜たい). The closed op enum only transforms a base and suffixes tokens to it, so no ordered step list can put ぜひ in front; encoding the 〜てください or 〜たい half would emit generic request/desire morphology carrying none of this point's own material.",
+      "steps_unavailable": "Invariable adverb placed BEFORE the predicate. The record's formation states it takes no particle and does not inflect, and every combination it lists is pre-posed (ぜひ + 〜てください, ぜひ + 〜たい). The closed op enum only transforms a base and suffixes tokens to it, so no ordered step list can put ぜひ in front; encoding the 〜てください or 〜たい half alone would emit generic request/desire morphology carrying none of this point's own material.",
       "nuance_tags": ["emphasis", "request", "desire"],
       "usage_contexts": ["spoken", "written"]
     },
     {
       "slug": "gram:zenzen-nai",
       "variants": [],
-      "steps_unavailable": "Circumfix built on a pre-predicate adverb. The record is precise (全然 stands before the verb, adjective or copula and that predicate goes negative: 〜ない / 〜ません / 〜くない / 〜じゃない), but the closed op set has append and no prepend, so the 全然 slot cannot be produced by an ordered build sequence. Steps covering only the negative half would emit 書かない as if it were the pattern.",
+      "steps_unavailable": "Pre-predicate adverb plus an obligatory negation on the predicate. The record is explicit — 全然 stands before the verb, adjective or copula and that predicate goes negative (〜ない / 〜ません / 〜くない / 〜じゃない) — but the closed op set only transforms a base and suffixes tokens to it, with no prepend operation, so the 全然 slot cannot be produced by an ordered build sequence. A step list covering only the negative half would emit 書かない as if it were this pattern, silently dropping 全然.",
       "nuance_tags": ["emphasis"],
       "usage_contexts": ["spoken", "written"]
     },
@@ -48,7 +48,7 @@
             { "base": "verb", "op": "to-masu-stem" },
             { "op": "append", "token": "づらい" }
           ],
-          "example": "食べづらい"
+          "example": "言いづらい"
         }
       ],
       "steps_unavailable": "",
@@ -57,32 +57,23 @@
     },
     {
       "slug": "gram:n3-ageru",
-      "variants": [
-        {
-          "base": "verb",
-          "steps": [
-            { "base": "verb", "op": "to-masu-stem" },
-            { "op": "append", "token": "上げる" }
-          ],
-          "example": "書き上げる"
-        }
-      ],
-      "steps_unavailable": "",
+      "variants": [],
+      "steps_unavailable": "Lexically restricted compound auxiliary, not a productive attachment rule. The record states 'radical-ます do verbo + 上げる', but both examples it supplies (書き上げる, 作り上げる) are verbs of making or producing something, and the auxiliary attaches only to that class. Applied literally to the mandated test verbs the rule emits *食べ上げる, *し上げる and *き上げる, none of which exists — unlike the genuinely productive stem auxiliaries 始める / 終わる / 続ける / 出す, which survive the same test. The base enum offers only 'verb' and no way to name the creation-verb subclass, so any step list here would license those non-words.",
       "nuance_tags": ["completion"],
       "usage_contexts": ["spoken", "written"]
     },
     {
       "slug": "gram:n3-ba-hodo",
       "variants": [],
-      "steps_unavailable": "The pattern requires the SAME lexical item twice: its conditional-ば form followed by its own plain/attributive form + ほど (書けば書くほど, 高ければ高いほど). The op enum builds one surface by transforming a single base and appending literal tokens; it has no operation that re-emits the base, and an append token is a fixed string, so no ordered sequence can generate the second copy. Emitting only [to-conditional-ba] would produce 高ければ, which is the plain ば conditional (a separate point), not this pattern.",
+      "steps_unavailable": "The pattern requires the SAME lexical item twice: its ば conditional followed by its own plain/attributive form + ほど (起きれば起きるほど, 高ければ高いほど, であればあるほど). A step list transforms one running surface and can only append literal fixed strings; the op enum has no operation that re-emits the base, so the second copy cannot be generated. Stopping at [to-conditional-ba] would emit 高ければ, which is the plain ば conditional and a separate point, not this pattern.",
       "nuance_tags": ["comparison"],
       "usage_contexts": ["spoken", "written"]
     },
     {
       "slug": "gram:n3-ba-noni",
       "variants": [],
-      "steps_unavailable": "Two-clause frame, not a derivation from one base. Per the record's own formation the ば conditional sits on clause 1 while のに closes an independent clause 2 (usually in the past). A step list transforms exactly one base, so any sequence here would either stop at 行けば, which is the plain ば conditional and a separate point, or suffix のに straight onto the conditional and license the ungrammatical *行けばのに.",
-      "nuance_tags": ["desire", "condition"],
+      "steps_unavailable": "Two-clause frame, not a derivation over one base. Per the record's own formation the ば conditional sits on clause 1 while のに closes an independent clause 2, usually in the past. A step list transforms exactly one base, so any sequence here would either stop at 行けば, which is the plain ば conditional and a separate point, or suffix のに straight onto the conditional and license the ungrammatical *行けばのに.",
+      "nuance_tags": ["condition", "desire"],
       "usage_contexts": ["spoken", "written"]
     },
     {
@@ -139,7 +130,7 @@
             { "base": "verb", "op": "to-te-form" },
             { "op": "append", "token": "ばかり" }
           ],
-          "example": "書いてばかり"
+          "example": "遊んでばかり"
         },
         {
           "base": "verb",
@@ -258,7 +249,7 @@
     {
       "slug": "gram:n3-dake-shika",
       "variants": [],
-      "steps_unavailable": "Discontinuous two-site pattern. だけしか attaches to a noun or a quantity, but the obligatory negation lands on a DIFFERENT word, the predicate verb (カレーだけしか食べない, 5人だけしか招待しなかった). The op set appends to one base only and cannot force the negative onto the separate predicate, so a step list of the shape [noun, append だけしか] would license the ungrammatical *カレーだけしか食べる, which is the error the record's own nuance field names as the most common one here.",
+      "steps_unavailable": "Discontinuous two-site pattern. だけしか attaches to a noun or a quantity, but the obligatory negation lands on a DIFFERENT word, the predicate (カレーだけしか食べない, 5人だけしか招待しなかった). The op set appends to one base only and cannot force the negative onto that separate predicate, so a step list would stop at カレーだけしか and a consumer completing the sentence from it would produce the affirmative *カレーだけしか食べる — the exact error the record's own nuance field names as the commonest one here.",
       "nuance_tags": ["emphasis"],
       "usage_contexts": ["spoken", "written"]
     },
@@ -276,8 +267,7 @@
         {
           "base": "i-adjective",
           "steps": [
-            { "base": "i-adjective", "op": "to-dictionary" },
-            { "op": "append", "token": "けど" }
+            { "base": "i-adjective", "op": "append", "token": "けど" }
           ],
           "example": "高いけど"
         },
@@ -298,8 +288,7 @@
         {
           "base": "clause",
           "steps": [
-            { "base": "clause", "op": "none" },
-            { "op": "append", "token": "けど" }
+            { "base": "clause", "op": "append", "token": "けど" }
           ],
           "example": "高いですけど"
         }

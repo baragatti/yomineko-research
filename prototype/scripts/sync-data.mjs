@@ -176,6 +176,19 @@ async function main() {
     }
   }
 
+  // role-identification drills (corpus/exercises/roles/<level>_roles.json) -> { level: [items] }.
+  // Same server-only contract as the conjugation bank: the answer key never reaches the client.
+  const roleBank = {};
+  const rlDir = path.join(CORPUS, "exercises", "roles");
+  if (await exists(rlDir)) {
+    for (const f of (await fs.readdir(rlDir)).filter((x) => x.endsWith(".json"))) {
+      const m = /^(n[1-5])_roles\.json$/.exec(f);
+      if (!m) continue;
+      const items = await readJson(path.join(rlDir, f));
+      if (Array.isArray(items) && items.length) roleBank[m[1]] = items;
+    }
+  }
+
   let kana = {};
   const kanaFam = path.join(CORPUS, "kana", "families.json");
   if (await exists(kanaFam)) kana = await readJson(kanaFam);
@@ -196,6 +209,7 @@ async function main() {
   await write("readings.json", readings);
   await write("examBanks.json", examBanks);
   await write("conjugationBank.json", conjugationBank);
+  await write("roleBank.json", roleBank);
   await write("speakPath.json", speakPath ?? { stages: [], units: {}, totals: {} });
 
   console.log(`synced -> app/data/  courses=${courses.length} topics=${Object.keys(topics).length} ` +
@@ -204,7 +218,8 @@ async function main() {
     `readings=${Object.keys(readings).length} ` +
     `examBanks=${Object.entries(examBanks).map(([l, t2]) => `${l}:${Object.values(t2).reduce((a, b) => a + b.length, 0)}`).join(",")} ` +
     `speak=${speakPath ? `${speakPath.stages.length} stages/${Object.keys(speakPath.units).length} units` : "none"} ` +
-    `conjugation=${Object.entries(conjugationBank).map(([l, v]) => `${l}:${v.length}`).join(",") || "none"}`);
+    `conjugation=${Object.entries(conjugationBank).map(([l, v]) => `${l}:${v.length}`).join(",") || "none"} ` +
+    `roles=${Object.entries(roleBank).map(([l, v]) => `${l}:${v.length}`).join(",") || "none"}`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

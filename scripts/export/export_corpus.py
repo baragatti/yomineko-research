@@ -236,14 +236,18 @@ def export_grammar(con: sqlite3.Connection) -> dict:
     for lvl in LEVELS:
         records = []
         gcols = [r[1] for r in con.execute("PRAGMA table_info(grammar_point)")]
-        extra = "".join(f",{c}" for c in ("forms_json", "register_json", "caution") if c in gcols)
+        # Roadmap E added four; guarded by `if c in gcols` so an un-migrated DB still exports.
+        GEXTRA = ("forms_json", "register_json", "caution",
+                 "formation_steps_json", "nuance_tags_json", "usage_contexts_json",
+                 "steps_unavailable")
+        extra = "".join(f",{c}" for c in GEXTRA if c in gcols)
         for g in con.execute(
             "SELECT id,slug,key,structure_pattern,register,references_json,level,level_confidence,"
             f"level_agreement,level_sources,needs_review{extra} FROM grammar_point WHERE level=? "
             "ORDER BY key", (lvl,)
         ):
             (gid, slug, key, pattern, reg, refs, level, lconf, lagree, lsrc, nr) = g[:11]
-            ex = dict(zip(("forms_json", "register_json", "caution"), g[11:]))
+            ex = dict(zip([c for c in GEXTRA if c in gcols], g[11:]))
             forms_json = ex.get("forms_json")
             form_meanings = L.get((gid, "form_meanings")) or {}
             form_meanings_en = Len.get((gid, "form_meanings"))
@@ -265,6 +269,15 @@ def export_grammar(con: sqlite3.Connection) -> dict:
                 "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
                 "explanation": loc(pt=expl, en=Len.get((gid, "explanation"))),
                 "formation": loc(pt=L.get((gid, "formation")), en=Len.get((gid, "formation"))),
+                # Roadmap E (migration 008). Mechanical build steps alongside the prose formation, so a
+                # generator can act on the pattern instead of only a human reading it. `variants` is one
+                # step list PER accepting base and is never flattened; `steps_unavailable` carries the
+                # reason when a formation cannot be stated safely, which includes the 50 points whose
+                # steps the verification pass refused. Neutral enums (design/i18n.md).
+                "formation_steps": jloads(ex.get("formation_steps_json")),
+                "nuance_tags": jloads(ex.get("nuance_tags_json")) or [],
+                "usage_contexts": jloads(ex.get("usage_contexts_json")) or [],
+                "steps_unavailable": ex.get("steps_unavailable"),
                 "nuance": loc(pt=L.get((gid, "nuance")), en=Len.get((gid, "nuance"))),
                 "related": related, "refs": jloads(refs), "needs_review": bool(nr),
             }
@@ -384,6 +397,12 @@ def export_sentences(con: sqlite3.Connection) -> int:
                            "needs_review": bool(s["needs_review"]), "locale": LOC},
             "structure_explanation": loc(pt=SL.get((sid, "structure_explanation")), en=SLen.get((sid, "structure_explanation"))),
             "tags": jloads(s["tags"]), "new_items": jloads(s["new_items"]),
+            # Roadmap F (migration 007). `pattern` is Layer B and wholly mechanical -- chunks from the
+            # token array, roles from the (particle, function_type) pair closing each chunk, so it is
+            # regenerable and carries no judgement. `clause_structure` is Layer C: one closed-enum value
+            # judged from the Japanese, which is why it is a sibling field and not folded into pattern.
+            "pattern": jloads(s["pattern_json"]),
+            "clause_structure": s["clause_structure"],
             "tokens": tokens, "particles": particles, "grammar": grammar,
         }
         records.append(rec)

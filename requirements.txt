@@ -1,0 +1,17 @@
+# Pinned toolchain for the corpus build. These versions are not cosmetic.
+#
+# SudachiDict-full is PINNED because the dissection is stored, not recomputed: every sentence in
+# corpus/sentences/bank.json carries the token array the analyzer produced at ingest time, and
+# validate.py re-tokenizes and compares. A newer dictionary re-segments words and the comparison
+# reports a corpus error that is not one. Installing the then-latest 20260723 into a fresh environment
+# turned four 一番 sentences into "tokenization mismatch vs analyzer (stored 7 vs 7)" — equal token
+# counts, different boundaries — and failed the gate on a corpus that had not changed.
+#
+# Re-tokenizing the bank to match a newer dictionary is a deliberate migration, not a side effect of
+# `pip install`. Bump this pin only as its own change, with the bank re-dissected and re-validated.
+SudachiPy==0.6.11
+SudachiDict-full==20260428
+
+jaconv==0.5.0
+lxml==6.1.0
+requests==2.32.5

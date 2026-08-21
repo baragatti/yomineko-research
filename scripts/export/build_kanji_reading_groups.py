@@ -60,6 +60,40 @@ def oku_ok(headword: str, r: dict) -> bool:
     return bool(o) and headword.endswith(o)
 
 
+# Kana rows. A Japanese verb inflects WITHIN its consonant row -- 済ます / 済ませ, 書く / 書か / 書け --
+# so when two readings tie, the one whose okurigana diverges into the same row as the word is the one
+# that shares its stem. Used ONLY to break ties (see `row_match`), never to filter.
+ROWS = ("あいうえお", "かきくけこがぎぐげご", "さしすせそざじずぜぞ", "たちつてとだぢづでど",
+        "なにぬねの", "はひふへほばびぶべぼぱぴぷぺぽ", "まみむめも", "やゆよ", "らりるれろ", "わをん")
+ROW_OF = {c: i for i, r in enumerate(ROWS) for c in r}
+
+
+def row_match(word_tail: str, oku: str) -> int:
+    """1 when the okurigana diverges from the word into the SAME kana row, else 0.
+
+    This is the tiebreak the 済 family needed. 済ませる scored identically against す.まない and す.ます
+    -- both share exactly the one mora ま with the word's tail ませる -- so the winner was whichever
+    KANJIDIC2 happened to list first, which was す.まない. That put 済ませる (the transitive partner of
+    済ます) under the negative of 済む.
+
+    At the first divergence the word reads せ. ます continues す, same さ-row, because 済ます and 済ませる
+    are the same stem. まない continues な, the な-row, because it is a different word's negation.
+
+    Deliberately a tiebreak and not a scoring term: 少.ない legitimately claims 少なくとも, where the
+    divergence is く against い and the rows do NOT match. As a filter that grouping would be lost; as a
+    tiebreak nothing happens there at all, because 少 has no competing reading to tie with.
+    """
+    if not oku or not word_tail:
+        return 0
+    i = 0
+    while i < len(oku) and i < len(word_tail) and oku[i] == word_tail[i]:
+        i += 1
+    if i == 0 or i >= len(oku) or i >= len(word_tail):
+        return 0
+    a, b = ROW_OF.get(word_tail[i]), ROW_OF.get(oku[i])
+    return 1 if a is not None and a == b else 0
+
+
 def variants(r: str) -> list[str]:
     """The sound changes a reading undergoes inside a compound."""
     out = [r]
@@ -87,7 +121,7 @@ def main() -> int:
         irregular = []
         for w in words:
             kana = hira(w.get("kana") or "")
-            best, best_len = None, 0
+            best, best_len = None, (0, 0)
             # Two passes. STRICT requires the word to end with the reading's own okurigana, which is what
             # separates 生.きる from 生.かす. But it is too strong on its own: a nominalised or compound
             # verb ends with something else entirely (遊び does not end in ぶ, 逃げ出す does not end in
@@ -122,7 +156,19 @@ def main() -> int:
                     continue
                 # A leading hyphen marks a BOUND form, used only when the kanji is not word-initial
                 # (出's -で should not claim 出会う).
-                if (r.get("reading") or "").startswith("-") and at_start:
+                # A TRAILING hyphen is the mirror: a PREFIX form, used only when the kanji opens the
+                # word. 59 readings carry one and nothing enforced it, so 合's あい- (prefix) claimed
+                # 場合 and 試合 -- both of which have 合 at the END -- while the -あい listed for exactly
+                # that position sat empty.
+                #
+                # Both tests exclude the ONE-CHARACTER word, where the kanji is simultaneously initial
+                # and final and neither restriction can be meant: 御 alone reads ご and 幾 alone reads
+                # いく, and a naive at_end test threw both out of their own prefix reading.
+                rd = (r.get("reading") or "").strip()
+                whole_word = at_start and at_end
+                if rd.startswith(("-", "‐")) and at_start and not whole_word:
+                    continue
+                if rd.endswith(("-", "‐")) and at_end and not whole_word:
                     continue
                 # A kun reading with OKURIGANA (生.きる, 生.かす, 生.ける) must match the word's own
                 # okurigana, or all three collapse to い and every one of them claims 生きる, printing
@@ -148,8 +194,11 @@ def main() -> int:
                     shared += 1
                 score = (len(b) + (len(oku) * 2 if oku_exact else 0)
                          + shared * 3 + (2 if unchanged else 0))
-                if score > best_len:
-                    best, best_len = f"{r.get('reading')}|{r.get('okurigana') or ''}", score
+                # Compared as a TUPLE, so the row match decides only among equal scores and cannot
+                # outrank any of the real signals above it.
+                rank = (score, row_match(hira(tail), oku))
+                if rank > best_len:
+                    best, best_len = f"{r.get('reading')}|{r.get('okurigana') or ''}", rank
             if best:
                 # example_words can list the same compound twice (日曜日 under ニチ); dedupe by headword.
                 bucket = groups.setdefault(best, [])

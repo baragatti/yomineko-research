@@ -1,0 +1,729 @@
+{
+  "batch": 31,
+  "points": [
+    {
+      "slug": "gram:n3-ta-totan",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "とたん"
+            }
+          ],
+          "example": "開けたとたん"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-ta-form"
+            },
+            {
+              "op": "append",
+              "token": "とたんに"
+            }
+          ],
+          "example": "開けたとたんに"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "completion"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-tabi-ni",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "たびに"
+            }
+          ],
+          "example": "会うたびに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "のたびに"
+            }
+          ],
+          "example": "旅行のたびに"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-tate",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-masu-stem"
+            },
+            {
+              "op": "append",
+              "token": "たて"
+            }
+          ],
+          "example": "焼きたて"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "completion"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-tatoe-temo",
+      "variants": [],
+      "steps_unavailable": "Circumfix around a fixed pre-clause adverb: たとえ sits BEFORE the clause and the op enum has no prepend operation. Any single sequence would emit only the ても half - 降っても / 寒くても / 静かであっても - which is the plain ても concessive (gram:n3-temo, same batch), not this point; emitting it under this label would teach the wrong pattern. Same decision as gram:n3-donna-ni-temo. (Record defect noted separately: this point's structure_pattern field contains an editing instruction instead of a value.)",
+      "nuance_tags": [
+        "concession",
+        "condition",
+        "emphasis"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-te-goran",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "ごらん"
+            }
+          ],
+          "example": "食べてごらん"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "request",
+        "softening"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "casual-friends"
+      ]
+    },
+    {
+      "slug": "gram:n3-te-hajimete",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "はじめて"
+            }
+          ],
+          "example": "行ってはじめて"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "completion",
+        "emphasis"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-te-hoshii",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "ほしい"
+            }
+          ],
+          "example": "手伝ってほしい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いでほしい"
+            }
+          ],
+          "example": "行かないでほしい"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "desire",
+        "request"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "casual-friends"
+      ]
+    },
+    {
+      "slug": "gram:n3-te-iru",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いる"
+            }
+          ],
+          "example": "書いている"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "いた"
+            }
+          ],
+          "example": "書いていた"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "る"
+            }
+          ],
+          "example": "書いてる"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "continuation"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-te-kureto",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "くれ"
+            },
+            {
+              "op": "append",
+              "token": "と"
+            }
+          ],
+          "example": "手伝ってくれと"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "hearsay",
+        "request"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-te-miru",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "みる"
+            }
+          ],
+          "example": "作ってみる"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "みた"
+            }
+          ],
+          "example": "作ってみた"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "みたい"
+            }
+          ],
+          "example": "作ってみたい"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "みてください"
+            }
+          ],
+          "example": "作ってみてください"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "intention"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-temo",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "も"
+            }
+          ],
+          "example": "降っても"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "to-te-form"
+            },
+            {
+              "op": "append",
+              "token": "も"
+            }
+          ],
+          "example": "忙しくても"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "でも"
+            }
+          ],
+          "example": "元気でも"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "でも"
+            }
+          ],
+          "example": "学生でも"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "concession",
+        "condition"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-to-ii-naa",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "といいなあ"
+            }
+          ],
+          "example": "晴れるといいなあ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "といいなあ"
+            }
+          ],
+          "example": "安いといいなあ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だといいなあ"
+            }
+          ],
+          "example": "静かだといいなあ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だといいなあ"
+            }
+          ],
+          "example": "晴れだといいなあ"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "desire"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "casual-friends"
+      ]
+    },
+    {
+      "slug": "gram:n3-to-ittemo",
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "といっても"
+            }
+          ],
+          "example": "作るといっても"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            {
+              "base": "clause",
+              "op": "append",
+              "token": "といっても"
+            }
+          ],
+          "example": "料理を作るといっても"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "といっても"
+            }
+          ],
+          "example": "高いといっても"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だといっても"
+            }
+          ],
+          "example": "静かだといっても"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だといっても"
+            }
+          ],
+          "example": "学生だといっても"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "concession",
+        "softening"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-to-iu",
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "という"
+            }
+          ],
+          "example": "ハリー・ポッターという"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            {
+              "base": "clause",
+              "op": "append",
+              "token": "という"
+            }
+          ],
+          "example": "彼が来るという"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だという"
+            }
+          ],
+          "example": "親切だという"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": [
+        "spoken",
+        "written"
+      ]
+    },
+    {
+      "slug": "gram:n3-to-iu-koto-da",
+      "variants": [
+        {
+          "base": "clause",
+          "steps": [
+            {
+              "base": "clause",
+              "op": "append",
+              "token": "という"
+            },
+            {
+              "op": "nominalize",
+              "token": "こと"
+            },
+            {
+              "op": "append",
+              "token": "だ"
+            }
+          ],
+          "example": "彼が結婚するということだ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "という"
+            },
+            {
+              "op": "nominalize",
+              "token": "こと"
+            },
+            {
+              "op": "append",
+              "token": "だ"
+            }
+          ],
+          "example": "結婚するということだ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "という"
+            },
+            {
+              "op": "nominalize",
+              "token": "こと"
+            },
+            {
+              "op": "append",
+              "token": "だ"
+            }
+          ],
+          "example": "高いということだ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "だという"
+            },
+            {
+              "op": "nominalize",
+              "token": "こと"
+            },
+            {
+              "op": "append",
+              "token": "だ"
+            }
+          ],
+          "example": "静かだということだ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "だという"
+            },
+            {
+              "op": "nominalize",
+              "token": "こと"
+            },
+            {
+              "op": "append",
+              "token": "だ"
+            }
+          ],
+          "example": "学生だということだ"
+        }
+      ],
+      "steps_unavailable": "",
+      "nuance_tags": [
+        "hearsay"
+      ],
+      "usage_contexts": [
+        "spoken",
+        "written",
+        "announcement"
+      ]
+    }
+  ]
+}

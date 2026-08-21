@@ -1,0 +1,948 @@
+{
+ "note": "Every problem the two per-batch checkers raised against the roadmap-E formation steps. The first checker EXECUTES each sequence against 書く/食べる/する/くる/高い/静か/学生 rather than judging by eye, which is why `bad_output` carries the actual ungrammatical form it generated.",
+ "count": 157,
+ "problems": [
+  {
+   "slug": "gram:gp-12",
+   "issue": "The only variant is base:\"noun\" + append \"がある\", with no restriction to inanimates. The record's own formation says \"(Lugar + に) + Substantivo (coisa) + が + ある\" — Noun (THING) — and its entire nuance section is about Japanese forcing the ある/いる choice by animacy (\"ある/あります para coisas sem vida e いる/います para seres vivos\"). The steps dropped that restriction, so applying them literally to the prescribed test noun 学生 emits 学生がある, which is exactly the error the record warns against; the correct form is 学生がいる. This is a generation-facing defect: any drill or exercise builder consuming formation_steps will pick a noun and produce it. Because the base enum has no inanimate-noun value, the fix is to narrow the variant (e.g. steps_unavailable, or carry the restriction in note_pt) rather than leave an unqualified base:\"noun\".",
+   "severity": "critical",
+   "bad_output": "学生がある"
+  },
+  {
+   "slug": "gram:gp-13",
+   "issue": "Same unencoded animacy restriction, mirrored. base:\"noun\" + append \"がいる\" is unqualified, but the record's formation says \"Substantivo (ser vivo) + が + いる\" and its nuance states flatly that \"um robô ou um carro usam ある, mas uma pessoa usa いる\". Applied to an inanimate noun the steps emit 本がいる / 車がいる, which are ungrammatical; the correct form is 本がある. It happens to survive the prescribed test noun 学生 (学生がいる is fine), which is why it is rated below its gp-12 twin, but the defect is identical and the pair is stored adjacently — a consumer joining both records gets a rule set that licenses both 学生がある and 本がいる. Narrow the base or record the restriction in note_pt.",
+   "severity": "major",
+   "bad_output": "本がいる"
+  },
+  {
+   "slug": "gram:gp-17",
+   "issue": "Coverage gap against the record's own forms array. The record's structure_pattern is \"～んです・のです\" and forms lists TWO entries, んです (fala/speech) and のです (formal/escrito), and the formation text distinguishes them explicitly. All four variants append only んです / なんです, so no step sequence in the batch can ever generate のです, 学生なのです, etc. Meanwhile usage_contexts is tagged [\"spoken\",\"written\"], claiming written coverage that the steps do not actually produce — under the record's own split, only the ungenerated のです is the written form. Nothing emitted is ungrammatical, so this is a completeness/consistency defect, not a false rule: either add のです variants or drop \"written\" from usage_contexts.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:ga-arimasu",
+   "issue": "The single variant declares base \"noun\" and appends があります, but the record's own formation narrows it: \"Substantivo (coisa) + が + あります\" / \"Noun (thing) + が + あります\", and the explanation and nuance both make the animate/inanimate split the entire teaching point (\"Use あります para coisas que não se movem por vontade própria; para pessoas e animais, usa-se います\"). The steps erase that restriction, so executing them on any animate noun generates the exact error the record exists to prevent. Applied literally to the test noun 学生: 学生 + があります = 学生があります (must be 学生がいます). Same for 犬があります, 田中さんがあります. The base enum has no animacy value, so the fix is not a different base but an explicit restriction the schema can carry (a constraint field, or at minimum the restriction recorded rather than silently dropped) — a drill generator fed only formation_steps has no way to know 学生 is excluded.",
+   "severity": "critical",
+   "bad_output": "学生があります"
+  },
+  {
+   "slug": "gram:ga-imasu",
+   "issue": "Mirror image of gram:ga-arimasu. The variant declares base \"noun\" and appends がいます, but the record's formation reads \"(Lugar + に) + Substantivo (ser vivo) + が + います\" / \"Noun (living thing)\", and the nuance is explicitly about not swapping the two verbs. Executing the steps on the inanimate test noun gives an ungrammatical string: 本 + がいます = 本がいます (must be 本があります); likewise 机がいます, 車がいます. The animacy restriction the record states is not represented anywhere machine-readable, so the two points are indistinguishable to a consumer reading formation_steps alone — both say \"noun + suffix\", which means a generator can freely produce both halves of the error pair.",
+   "severity": "critical",
+   "bad_output": "本がいます"
+  },
+  {
+   "slug": "gram:cha-ikenai-ja-ikenai",
+   "issue": "The `replace-ending` token is encoded as a from→to pair (\"て→ちゃ\", \"で→じゃ\"), but the same op elsewhere in this same run carries only the replacement string (batch-03 gram:gp-24 \"くない\", batch-09 gram:sugiru \"すぎる\", gram:te-de \"くて\", batch-12 gram:garu-gatteiru \"がる\"). Two incompatible semantics for one field in one dataset: an executor implementing `replace-ending` the batch-03 way (strip the ending, substitute `token`) emits the arrow literally — 書いて → 書い + \"て→ちゃ\" + いけない = 書いて→ちゃいけない. Compounding it, the two verb variants both declare base \"verb\" with no discriminator field; the only thing separating them is the left half of that arrow string, so variant selection depends on parsing an undocumented mini-DSL inside `token`. The grammar itself is right (the て/で split is handled correctly and does not license *飲んちゃいけない) — the defect is that the guard lives in a field format that is not stable across the corpus.",
+   "severity": "major",
+   "bad_output": "書いて→ちゃいけない"
+  },
+  {
+   "slug": "gram:deshou",
+   "issue": "The verb variant uses only `to-dictionary`, but the record's formation says \"Verbo (forma simples) + でしょう\" / \"Verb (plain form)\", and plain form includes the past. The steps therefore cannot generate 行ったでしょう or 雨が降ったでしょう. This is a coverage gap rather than a false rule — nothing ungrammatical is produced — but it is inconsistent inside this same batch: gram:darou, whose record uses the identical wording \"Verbo na forma simples\", correctly got both a `to-dictionary` variant and a `to-ta-form` variant. Since でしょう is the polite counterpart of だろう and the two records were authored in parallel, the asymmetry looks like an omission, not a deliberate narrowing.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:demo",
+   "issue": "The record documents two roles and its formation field leads with the conjunction one (\"Como conjunção, começa a frase nova: でも、〜\"). Only the second role (noun + でも, the softened-suggestion particle) is represented in `variants`, and `steps_unavailable` is left as an empty string, so nothing records that the first role was consciously skipped. The conjunction use is sentence-initial and genuinely unexpressible with the closed op enum — exactly the situation the author documented properly for gram:donna, gram:doushite and gram:douyatte in this same batch — so the inconsistency is in the reporting, not the analysis. Side effect: the nuance_tag \"concession\" derives from the unrepresented conjunction sense and has no structural anchor in the emitted steps.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-24",
+   "issue": "The single i-adjective variant (replace-ending, token くない) is applied to every i-adjective. Run literally on いい it produces いくない — the exact form the record's own formation section forbids: \"Exceção importante: いい ('bom') é irregular, vira よくない (conjuga a partir de よい), nunca いくない.\" The record carries the exception, the steps drop it, so a consumer generating negatives from this rule emits the banned form. 高い → 高くない is correct, so the general rule is right; what is missing is a second variant pinning the exception (the corpus already does this elsewhere — another batch encodes an i-adjective replace-ending with token 'いい→よさそう'), or a token in the 'いい→よくない' arrow style that replace-ending already supports.",
+   "severity": "critical",
+   "bad_output": "いくない"
+  },
+  {
+   "slug": "gram:gp-18",
+   "issue": "The variant declares base \"noun\" with no restriction, but the record's formation is \"Lugar/destino + へ + 行く\" and every example it carries is a place (日本, うち, 学校). Applied literally to the mandated noun test base: 学生 → 学生へ行く, and to a corpus noun like ねこ → ねこへ行く. With 行く, へ requires a locational goal; a person noun needs 学生のところへ行く, so the bare form is not usable Japanese. The base enum has no place-noun value, so the fix is not a new base — either narrow the variant's example set or carry the restriction in note_pt, which this batch never uses. Note gp-27 (particle へ alone) is unaffected: 学生へ is fine as an addressee.",
+   "severity": "minor",
+   "bad_output": "学生へ行く"
+  },
+  {
+   "slug": "gram:gp-28",
+   "issue": "The record states outright that there are two formations (\"Há duas formações conforme o que vem antes do に\"): masu-stem + に行く, and action/verbal noun + に行く (買い物に行く, 勉強に行く). Only the masu-stem one is encoded, with steps_unavailable left empty and no note, so the second half of the record's formation silently disappears from the machine-usable layer. The omission itself is the right call — the base enum has no verbal-noun value and a plain base:noun variant would license *学生に行く — but that reasoning is exactly what gp-19 in this same batch wrote into steps_unavailable, and here it is recorded nowhere.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-13",
+   "issue": "base is declared as unrestricted `noun`, but the record's formation says \"Substantivo (ser vivo) + が + いる\" and the whole record exists to contrast animate いる with inanimate ある (\"um robô ou um carro usam ある, mas uma pessoa usa いる\"). Executing the single step append(がいる) on the inanimate test noun gives 本がいる, which is wrong for the existence verb this record teaches — and worse, it is a live homophone trap, since 本がいる parses as 本が要る (\"I need a book\"), so a learner or drill generator gets a sentence that is not the one the pattern means. The morphology of the step is right; what is missing is the animacy restriction the record itself states, which the closed base enum (verb/i-adjective/na-adjective/noun/clause/any) cannot carry. The author dropped a constraint that is present in the source record rather than narrowing or flagging it.",
+   "severity": "critical",
+   "bad_output": "本がいる"
+  },
+  {
+   "slug": "gram:gp-12",
+   "issue": "Mirror image of gp-13. base is declared as unrestricted `noun`, but the record's formation reads \"(Lugar + に) + Substantivo (coisa) + が + ある\" and its nuance explicitly warns this is the trap (\"o japonês escolhe o verbo de existência pela natureza do sujeito, ある/あります para coisas sem vida e いる/います para seres vivos\"). Executing append(がある) on the standard noun test base 学生 yields 学生がある, which is exactly the error the record is written to prevent; the correct form is 学生がいる. Note this is not the generic observation that all patterns have semantics: gp-142 になる with base=noun accepts any noun (本になる is fine), so the restriction here is specific and record-stated. Either narrow the base or record the animacy restriction; as emitted, the steps license the record's own headline mistake.",
+   "severity": "critical",
+   "bad_output": "学生がある"
+  },
+  {
+   "slug": "gram:gp-144",
+   "issue": "The record's structure_pattern is \"～たりする\" and its only `forms` entry is \"たりする\", but three of the four variants (i-adjective, na-adjective, noun) end in です and never produce する at all: 高かったりです / 静かだったりです / 学生だったりです. The record says \"Com nomes e adjetivos, o する TAMBÉM pode virar です\" — です is offered as an alternative, not as the form. The canonical 静かだったりする / 学生だったりする is grammatical and is what structure_pattern and forms describe, yet no variant generates it, so a validator matching learner production against these steps would reject the correct answer and a drill generator would never teach the pattern's namesake する for those bases. Additionally the i-adjective です variant is an extrapolation: the record's only です evidence is na-adjectival (部屋は静かだったり、にぎやかだったりです), nothing in the record attests 高かったりです. Outputs are not ungrammatical, so this is a fidelity/coverage defect rather than a false formation rule.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:ga-arimasu",
+   "issue": "The single variant is an unrestricted base:\"noun\" + append \"があります\". Executed literally against the mandated noun 学生 it yields 学生があります. That is the exact error the record itself is written to prevent: its formation says \"Use あります for things that don't move of their own will; for people and animals, use います\", and its nuance says \"The classic mistake by Portuguese speakers is to use あります for people and animals, which require います\". The animacy restriction IS the entire content of this grammar point, and the structured output erases it, handing a drill generator a rule that produces the wrong form (F5 — learner PRODUCES something wrong). The base enum has no animate/inanimate value, so the correct move was steps_unavailable with that as the reason (an explicitly good outcome) rather than a bare noun rule.",
+   "severity": "critical",
+   "bad_output": "学生があります"
+  },
+  {
+   "slug": "gram:ga-imasu",
+   "issue": "Same defect, mirrored: unrestricted base:\"noun\" + append \"がいます\". It passes the mandated noun (学生がいます is correct), which is why it is not critical, but it accepts any noun and so licenses 本がいます / 車がいます for the whole inanimate class. The record delimits it just as explicitly as its counterpart — \"For the opposite (objects, lifeless things) you use あります/ある\", \"Japanese separates living beings (います) from inanimate things (あります)\". ga-arimasu and ga-imasu received byte-identical step shapes differing only in the appended token, so the one contrast the pair exists to teach is not representable in the emitted structure.",
+   "severity": "major",
+   "bad_output": "本がいます"
+  },
+  {
+   "slug": "gram:deshou",
+   "issue": "Verb coverage is narrower than the record's own wording. The record's formation reads \"Verb (plain form) + でしょう\" — plain form includes the past — but only a to-dictionary variant was emitted, so 行ったでしょう / 降ったでしょう cannot be generated. The sibling record gram:darou in this same batch carries identical wording (\"Verb in plain form + だろう\") and correctly got BOTH a to-dictionary and a to-ta-form variant. Nothing ungrammatical is produced; this is under-derivation from the record plus an inconsistency between two points that share a source formulation.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:demo",
+   "issue": "The record carries two distinct constructions and only one was modelled. Explanation and formation both split it: (1) sentence-initial conjunction \"but/however\" (でも、〜), (2) noun + でも softening a suggestion (コーヒーでも). Only (2) got a variant, and steps_unavailable was left \"\" — i.e. the output asserts steps are fully available. The unmodelled role (1) is clause-initial and hits exactly the prepend gap that donna, doushite and douyatte in this same batch correctly documented via steps_unavailable, so the escape hatch was available and demonstrably known to the author. Compounding it, the nuance_tag \"concession\" corresponds to the conjunction sense that has no steps, while the only emitted variant realises the \"softening\" sense — a consumer joining tags to steps gets a mismatch.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-24",
+   "issue": "The single i-adjective variant {base:\"i-adjective\", op:\"replace-ending\", token:\"くない\"} is applied literally to the bases it claims to accept. 高い → 高くない (correct), but いい (an i-adjective, and the ONLY exception the record itself bothers to name) → *いくない. The record's own formation says: \"Exceção importante: いい ('bom') é irregular, vira よくない (conjuga a partir de よい), nunca いくない\", and the nuance repeats \"nunca esqueça a irregularidade いい → よくない\". So the prose layer teaches the exception and the machine layer generates precisely the forbidden form — a consumer drilling from formation_steps produces the error the record warns against. The exception is expressible in the existing convention: batch-22 encodes the same irregular as a separate i-adjective variant with token \"いい→よさそう\". Fix: add a second i-adjective variant with replace-ending token \"いい→よくない\" (arrow form), or state the exception rather than leaving the bare rule to cover いい.",
+   "severity": "critical",
+   "bad_output": "いくない"
+  },
+  {
+   "slug": "gram:gp-26",
+   "issue": "Same mechanism as gp-24, one severity lower because this record does not carry the exception. The i-adjective variant {op:\"replace-ending\", token:\"くて\"} gives 高い → 高くて (correct) but いい → *いくて (correct form is よくて). The record's formation only says \"Adjetivos-い também têm forma て: 〜い→〜くて\" and names 行く→行って as the only irregular, so the steps are faithful to the record — but the emitted rule still generates an ungrammatical form for an i-adjective it claims to accept. If gp-24 gets an いい→よくない variant, this one needs いい→よくて for consistency; otherwise the two records disagree about whether いい is inside the i-adjective base.",
+   "severity": "minor",
+   "bad_output": "いくて"
+  },
+  {
+   "slug": "gram:gp-28",
+   "issue": "Coverage gap against the record's own formation, not a false rule. The record explicitly states two formations — \"Há duas formações conforme o que vem antes do に. Primeira: raiz da forma ます + に行く ... Segunda: substantivo de ação (verbal) + に行く → 買い物に行く\" — and the batch emits only the masu-stem variant, with steps_unavailable left empty and no explanation. The verb variant itself is correct (書きに行く / 食べに行く / しに行く / きに行く all fine). Note that a naive fix is dangerous: adding a plain base:\"noun\" variant would license *学生に行く, since only action/verbal nouns qualify and the base enum has no verbal-noun value — which is exactly the reasoning the same batch wrote out for gp-19. Either scope the second variant or record the omission the way gp-19 does, rather than leaving half the record's formation silently unrepresented.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-41",
+   "issue": "The verb variant's steps are [to-ta-form, append \"り\"], which literally yields 書いたり / 食べたり / したり / きたり / 飲んだり — no する. But this record's structure_pattern is \"たり～たりする\" and its only forms entry is \"たりたりする\", and its own nuance section explicitly names the する-less string as a learner error: \"Não esqueça o する no fim: dizer só 食べたり、飲んだり sem o する soa incompleto na maioria dos contextos.\" So the machine structure carries nothing that produces する and a generator driven by these steps emits exactly the incomplete production the record was written to prevent. The parallel point gram:gp-144 in batch-02 encodes the same construction as [to-ta-form, append \"りする\"] -> 見たりする, showing the closing する is expressible with the available ops. (Note: batch-09 gram:tari-tari makes the same omission, so the fix may need to cover both.) Not an ungrammatical string in isolation — 飲んだり is a legitimate constituent — which is why this is major rather than critical.",
+   "severity": "major",
+   "bad_output": "飲んだり"
+  },
+  {
+   "slug": "gram:gp-41",
+   "issue": "Only verb and i-adjective variants are emitted, but the record's formation states the pattern also takes nouns: \"Também funciona com adjetivos e substantivos para listar estados que se alternam\". The noun variant [noun, append \"だったり\"] -> 学生だったり is grammatical and is encoded for the sibling points gram:gp-143, gram:gp-144 and gram:tari-tari in batches 02 and 09. Under-coverage against the record's own formation text, not a false rule.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-41",
+   "issue": "Steps stop short of the record's own structure_pattern. The record's structure_pattern is \"たり～たりする\", its forms entry is \"たりたりする\", and its nuance section explicitly warns \"Não esqueça o する no fim: dizer só 食べたり、飲んだり sem o する soa incompleto na maioria dos contextos.\" Executed literally, the verb variant [to-ta-form, append り] yields 書く→書いた→書いたり, 食べる→食べたり, する→したり, くる→きたり, 飲む→飲んだり, and the i-adjective variant yields 高い→高かった→高かったり — i.e. exactly the bare 〜たり the record flags as incomplete, with no する anywhere in the sequence. A consumer generating the target form from these steps produces the very error the point teaches against. The fix is available and already used elsewhere in this campaign: batch-15's gp-144 encodes append \"りする\" (見たりする). Appending する is safe on every base tested here (書いたりする, 食べたりする, したりする, きたりする, 高かったりする are all grammatical).",
+   "severity": "major",
+   "bad_output": "飲んだり (record requires 飲んだりする)"
+  },
+  {
+   "slug": "gram:gp-41",
+   "issue": "Missing variants for two bases the record's own formation licenses. The formation text states \"Também funciona com adjetivos e substantivos para listar estados que se alternam (暑かったり寒かったり)\", but only verb and i-adjective variants are emitted; noun and na-adjective are absent. The sibling encoding of the same pattern (batch-15, gram:gp-143) carries them as na-adjective [append だったり] → 静かだったり and noun [append だったり] → 学生だったり, so the omission is a coverage gap rather than a deliberate narrowing. Under-generation, not a false rule, hence minor.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-44",
+   "issue": "base \"noun\" over-licenses beyond what the record allows. The record's formation says \"Número/quantidade + くらい (ou ぐらい)\" and every example is a numeral+counter (三人くらい, 千円ぐらい, 一時間くらい); structure_pattern is sense-numbered \"くらい ①\", the approximate-QUANTITY sense. Executed against a plain noun, the steps produce 学生くらい / 本くらい, which are not ill-formed strings but instantiate a different sense of くらい (extent/comparison — \"about student age\", \"even a student\"), not the approximation sense this record teaches. A drill generator asking for \"the approximate-quantity form of 学生\" would emit 学生くらい glossed as \"approximately student\". The base enum has no numeral/quantifier member, so the base cannot be narrowed mechanically — worth flagging so the constraint is recorded rather than silently widened.",
+   "severity": "minor",
+   "bad_output": "学生くらい"
+  },
+  {
+   "slug": "gram:gp-6",
+   "issue": "Base is over-broad: the record is ichidan-only, the emitted steps accept every verb. The record's label is \"verbos る (ichidan): formas básicas\", its structure_pattern is \"る-Verb (Dictionary)\", its formation is \"Tire o る final e adicione...\", and its nuance paragraph exists specifically to warn that 帰る/走る/ある/分かる end in る but are NOT this group. The emitted steps use only class-agnostic ops (to-dictionary / to-nai-stem / to-ta-form) under base \"verb\", so they silently accept 書く and produce 書く・書かない・書いた・書かなかった — grammatical strings, but presented as demonstrating the る-verb rule, which is the exact claim the record denies. Consequence: gp-6 and gp-7 (the う-verb/godan record, batch-06) come out with structurally identical variant sets — same base, same four ops — so the machine-readable layer erases the only distinction the pair of records exists to teach, and any drill generator filtering on gp-6's base would pull godan verbs into an ichidan lesson. The record's own formation maps to the op the enum already provides for this: drop-final-ru + append ない / た / なかった (食べ+ない=食べない ✓, 見+た=見た ✓), which self-restricts to ichidan because it misfires audibly on 書く. There is precedent in the corpus for handling this honestly — batch-13 gram:gp-127 uses steps_unavailable and reasons explicitly that \"base verb cannot distinguish godan ... from ichidan\". Not critical because no output string is ungrammatical; the defect is scope, not surface form.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-55",
+   "issue": "Steps encode the 〜てあげる favor auxiliary, not the pattern the record is about. The record's structure_pattern is \"あげる\", its single forms[] entry is \"あげる\", and its formation leads with the transfer frame [giver]は/が + [receiver]に + [thing]を + あげる; 〜てあげる is the trailing aside. Executed on 書く/食べる/する/くる the steps give 書いてあげる / 食べてあげる / してあげる / 来てあげる — all grammatical, but none is あげる as a main verb with に/を, so the record's own construction has no machine representation. The corpus already carries a separate record gram:te-ageru (batch-22) whose first variant has byte-identical steps and the identical example 手伝ってあげる, so gp-55 is now a duplicate of it. Either set steps_unavailable (lexical verb + multi-slot argument frame — the same reasoning this batch correctly applied to gp-46/gp-47) or mark the variant as covering only the 〜て auxiliary sub-pattern.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-56",
+   "issue": "Same defect as gp-55. structure_pattern is \"くれる\" and forms[] is \"くれる\", with the formation leading on [giver]は/が + [me/my group]に + [thing]を + くれる; the encoded steps are to-te-form + くれる (example 教えてくれる), which is the 〜てくれる favor auxiliary already held by the separate record gram:te-kureru (batch-23, same steps, example 手伝ってくれる). Executed output 書いてくれる / 食べてくれる / してくれる / 来てくれる is grammatical but belongs to the other grammar point; nothing in gp-56 now encodes 本をくれた.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-57",
+   "issue": "Same defect as gp-55/gp-56. structure_pattern \"もらう\", forms[] \"もらう\", formation leads with [receiver]は/が + [giver]に/から + [thing]を + もらう; the steps encode to-te-form + もらう with example 教えてもらう — byte-identical to the first variant and example of the separate record gram:te-morau (batch-23). Executed output 書いてもらう / 食べてもらう / してもらう / 来てもらう is grammatical, but the record's own receive-an-object frame is left with no steps and steps_unavailable was left empty.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-53",
+   "issue": "The verb variant's `example` is not the output of its own steps. Applied literally to する, [to-dictionary, append のがへたです] yields するのがへたです, but the example reads 料理をするのがへたです — the 料理を is extra material copied from the record's example sentence. Every other variant in this batch (gp-45 先生になる, gp-50 行ったほうがいい, gp-52 行かなくちゃ, gp-55 手伝ってあげる) and the near-duplicate record gram:no-ga-heta in batch-08 (example 書くのが下手) carry the exact literal output, so a validator checking example == apply(steps, base) fails only here. The steps themselves are correct: 書くのがへたです / 食べるのがへたです / するのがへたです / 来るのがへたです / テニスがへたです are all well-formed.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-54",
+   "issue": "Same as gp-53: the verb variant's `example` 歌を歌うのがじょうずです is not what the steps produce. [to-dictionary, append のがじょうずです] applied to 歌う gives 歌うのがじょうずです; 歌を is extra material from the record's example sentence, breaking the batch-wide convention (and batch-08's gram:no-ga-jouzu, example 書くのが上手) that `example` is the literal output of the sequence. Steps are otherwise correct: 書くのがじょうずです / 食べるのがじょうずです / するのがじょうずです / 日本語がじょうずです.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-7",
+   "issue": "Variants 2 and 4 use to-nai-stem with the opposite meaning from the op-enum's own worked example and from the rest of the corpus. The anchor なければいけない = [to-nai-stem, append \"ければいけない\"] only produces 書かなければいけない if to-nai-stem returns 書かな (the ない-form minus い); the 未然形 reading 書か would give *書かければいけない. 50 of the 61 to-nai-stem variants across batches 01-33 assume the な-inclusive stem (batch-08 gram:nakute-wa-ikenai: to-nai-stem + \"くてはいけない\" = 書かなくてはいけない; batch-05 gram:gp-6: to-nai-stem + \"い\" = 食べない; batch-20 gram:nakereba-ikenai: to-nai-stem + \"ければいけない\" = 書かなければいけない). Executed under that definition, variant 2 (to-nai-stem + \"ない\") gives 書か-な + ない = *書かなない, and on the other bases the sequence claims (base is \"verb\", not godan-only) *食べなない, *しなない, *こなない; variant 4 (to-nai-stem + \"なかった\") gives *書かななかった. The stated examples 書かない / 書かなかった are correct Japanese, so the defect is invisible by eye and only shows when the steps are run - exactly the F5 pattern. Fix: append tokens \"い\" and \"かった\", matching batch-05 gram:gp-6 which encodes the ichidan half of the same paradigm.",
+   "severity": "critical",
+   "bad_output": "*書かなない / *書かななかった (also *食べなない, *しなない, *こなない)"
+  },
+  {
+   "slug": "gram:hou-ga-ii",
+   "issue": "Variant 2 is [to-nai-stem, append \"ないほうがいい\"]. Executed with the corpus's to-nai-stem (ない-form minus final い, the definition the prompt's なければいけない example forces), 食べる -> 食べな + ないほうがいい = *食べなないほうがいい; 書く -> *書かなないほうがいい; する -> *しなないほうがいい; くる -> *こなないほうがいい. The doubled な comes from the token re-supplying a な the op already produced. The identical construction is encoded in batch-05 gram:gp-51 as to-nai-stem + \"いほうがいい\" -> 行かないほうがいい, so the two files contradict each other and whichever definition the conjugation engine implements, one of them emits a malformed negative. The record's own formation text (\"Verbo na forma negativa curta ない + ほうがいい -> 食べないほうがいい\") supports only the single-な output. Fix: token \"いほうがいい\".",
+   "severity": "critical",
+   "bad_output": "*食べなないほうがいい (also *書かなないほうがいい, *しなないほうがいい)"
+  },
+  {
+   "slug": "gram:mada-te-imasen",
+   "issue": "Steps drop the まだ that the entry exists to teach. Executed literally: 書く->書いていません, 食べる->食べていません, する->していません, くる->来ていません. All grammatical, but all are plain 〜ていません, not the record's structure_pattern まだ〜ていません (forms: \"まだていません\"; formation: \"まだ + forma て do verbo + いません\"; every example in the record is まだ食べていません / まだ決めていません). The `example` field was also written as 食べていません rather than the record's まだ食べていません, so nothing in the emitted object carries まだ at all. A consumer generating from these steps and labelling the result \"ainda não\" is wrong: 食べていません alone is just the negative progressive. Note the batch is internally inconsistent here — gram:mada was correctly given steps_unavailable with the reason that the closed op set cannot express a pre-posed adverb, and that same reasoning applies to the まだ half of this pattern, but here it was silently dropped instead of stated. Fix: either steps_unavailable citing the pre-posed まだ, or keep the steps and record explicitly (in the example and a note) that they cover only the post-base 〜ていません half.",
+   "severity": "major",
+   "bad_output": "食べていません (pattern requires まだ食べていません)"
+  },
+  {
+   "slug": "gram:mae-ni",
+   "issue": "The noun variant appends のまえに unconditionally, which overgenerates onto the quantity case the record itself documents. The record's formation lists THREE attachments: verb dictionary + まえに, noun + の + まえに, and \"Com período de tempo: número + contador + まえに → 三年（さんねん）まえに (três anos atrás)\" — explicitly WITHOUT の. Only the first two were emitted. Number+counter expressions (三年, 一時間, 二日) are nouns and are therefore accepted by base:\"noun\", so applying the variant literally yields 三年 -> 三年のまえに for \"três anos atrás\", where the record requires 三年まえに. The mandated test bases do not surface this (学生 -> 学生のまえに is fine), which is exactly why it survived. There is no quantity value in the base enum, so the fix is either a third variant covering number+counter + まえに, or a narrowing note that the noun variant excludes time-quantity nouns. The verb variant is correct: 書くまえに / 食べるまえに / するまえに / 来るまえに all check out, including the record's \"SEMPRE a forma de dicionário\" warning.",
+   "severity": "major",
+   "bad_output": "三年のまえに (record requires 三年まえに)"
+  },
+  {
+   "slug": "gram:naide",
+   "issue": "Upstream record corruption laundered rather than flagged (failure mode F3). In corpus/grammar/n5.json, gram:naide (id 103) has formation[\"pt-BR\"] that is a copy of gram:naa's text — it reads \"Basta acrescentar なあ ao fim de uma frase ou palavra: いいなあ…, 寒いなあ…\" and never mentions ないで at all. Only formation[\"en\"] carries the real rule (\"Take the verb in the short negative form (the ない-form) and add で: 食べる→食べない→食べないで…\"). The emitted steps are CORRECT — [to-nai-stem, append \"いで\"] executes to 書かないで / 食べないで / しないで / こないで, matching the en formation, the structure_pattern ～ないで and the batch-wide to-nai-stem convention pinned by the なければいけない reference example — but the pass derived them from the en field while the pt-BR field it contradicts was left unreported. That field is learner-facing and currently teaches なあ under a ないで heading, so a downstream validator cross-checking steps against formation prose will also mismatch here. Needs flagging back to the corpus, not a change to the steps.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:te-aru",
+   "issue": "The single variant declares base \"verb\" with no transitivity restriction, but the record's own formation states the constraint explicitly: \"Usa-se com verbos TRANSITIVOS (que normalmente levam を)\" and contrasts it with 〜ている on intransitives (まどがあいている). Executed literally on the mandated test bases: 書く→書いてある OK, する→してある OK (matches the record's よやくしてある), but くる→*きてある/*来てある, which is not Japanese — 来る is intransitive and takes ている, never てある. The restriction is carried by the record and was dropped when converting to steps, so a generator consuming base:\"verb\" will emit intransitive てある. Since the base enum has no transitive-verb value, this should be narrowed some other way or refused via steps_unavailable rather than silently over-claiming the base.",
+   "severity": "critical",
+   "bad_output": "きてある (来てある)"
+  },
+  {
+   "slug": "gram:sugiru",
+   "issue": "nuance_tags is [\"emphasis\"], but the record's nuance section is built on rejecting exactly that reading: \"em japonês とても/たくさん só dizem 'muito' (neutro), enquanto すぎる sempre implica exagero indesejado. Não use すぎる quando quiser só elogiar\". \"emphasis\" is the tag that belongs to とても; applying it to すぎる erases the distinction the record spends its nuance field establishing, and would group すぎる with neutral intensifiers in any consumer that filters on it. The closed enum has no excess/excessive value, so [] would be truer to the record than a tag it explicitly argues against.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:te-form",
+   "issue": "nuance_tags is [\"cause\"] only. \"cause\" is attested in the record (nuance: \"a て sozinha indica sequência ou causa\"), but only as the second of two senses, while the record's explanation leads with the primary function — \"conecta ações em sequência ('faço X e depois Y') e serve de base para muitas estruturas gramaticais\" — and every example given (あさおきて、ごはんをたべます) is sequential, not causal. Tagging the bare て-form as causal and nothing else places it in the same bucket as ので (index 121, same batch, also tagged \"cause\"), which the record does not support. The enum carries no sequence/connective value, so [] — as this same batch used for te-de, sore-kara and soshite when no tag fit — would represent the record more honestly.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:te-aru",
+   "issue": "The single variant declares base \"verb\" with no restriction, but the record's own formation states てある attaches only to TRANSITIVE verbs (\"Usa-se com verbos TRANSITIVOS (que normalmente levam を)\", and its nuance repeats the が-object consequence). Executed literally on the mandated test base くる: to-te-form gives きて, append ある gives きてある — ungrammatical. Same for any intransitive verb the base claims to accept: 行く → *行ってある, 寝る → *寝てある, 起きる → *起きてある. This is exactly F5: the derived structure DROPS a restriction the source record explicitly carries, so a generator running these steps produces forms no Japanese speaker says. The base enum has no transitive option, so it cannot be narrowed in `base` — the batch-22 record gram:tadoushi-jidoushi set steps_unavailable for precisely this situation, writing that encoding an over-general rule \"is precisely the false-formation defect this field must avoid\". te-aru needs the same treatment (steps_unavailable citing the transitivity restriction), or the restriction must be surfaced some other way; as it stands the steps license ungrammatical output.",
+   "severity": "critical",
+   "bad_output": "きてある"
+  },
+  {
+   "slug": "gram:tari-tari",
+   "issue": "The steps stop after one 〜たり and never reach the closing する, so they do not match the record's own structure_pattern \"たり～たり\" or its forms entry \"たりたり\". The record's formation defines the pattern as \"Verbo na forma た + り, repetido para cada item, fechando em geral com する (que carrega o tempo verbal): 〜たり、〜たりする/します\", and its nuance names the missing する as a learner error that leaves the sentence incomplete (\"esquecer o する final (a frase fica incompleta)\"). The batch is also internally inconsistent here: gram:no-naka-de-a-ga-ichiban, a multi-slot template in this same batch, was correctly given steps_unavailable because the op enum cannot express a multi-slot template, and 〜たり〜たり is the same shape of problem (repetition plus a tense-bearing closer). Not scored higher because the outputs are not ungrammatical — the record itself sanctions a lone 〜たり (\"Dá para usar um só 〜たり quando se quer dar um único exemplo\") — so this is a coverage/structure-mismatch issue rather than a false formation rule.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:mada-te-imasen",
+   "issue": "The steps silently drop まだ, which IS the grammar point. structure_pattern is まだ～ていません and the record's own formation reads \"まだ + forma て do verbo + いません\", but the sequence is only [to-te-form, append いません], and the variant's own example field is written as 食べていません rather than まだ食べていません. Applied literally the steps emit 書いていません / 食べていません / していません / きていません — grammatical, but they are the plain polite negative progressive (\"não estou comendo\"), NOT the \"ainda não\" pattern this record teaches. This is the exact output the rest of the corpus explicitly refuses to emit: gram:amari-nai (batch 11), gram:nakanaka-nai (batch 20), gram:zenzen-nai (batch 25) and gram:o-ni-naru (batch 21) all set steps_unavailable with the reason that the op enum has no prepend and that \"steps covering only the negative half would emit 書かない as if it were the pattern\". Batch 7 itself does the right thing for gram:mada and gram:mou (both steps_unavailable for the pre-posed adverb) and then does the opposite here, so it is internally inconsistent too. Fix: steps_unavailable with a prepend-not-modellable reason, matching the established convention.",
+   "severity": "major",
+   "bad_output": "食べていません"
+  },
+  {
+   "slug": "gram:mae-ni",
+   "issue": "The noun variant appends のまえに unconditionally under base \"noun\", but the record's own formation splits nouns into two cases and the variants cover only one: \"Com substantivo: substantivo + の + まえに → 食事のまえに\" AND \"Com período de tempo: número + contador + まえに → 三年（さんねん）まえに (três anos atrás)\" — no の in the second. Time-quantity expressions (三年, 五分, 一週間) are nouns, so a consumer applying base=noun to them generates 三年のまえに / 五分のまえに instead of the 三年まえに the record teaches. This is an exception the record states explicitly, so it is not an omission the author had to infer. 学生のまえに (a named test base) is fine, which is why it reads plausibly. Fix: either add a third variant covering number+counter + まえに, or narrow/qualify the noun variant so it does not claim quantity nouns.",
+   "severity": "major",
+   "bad_output": "三年のまえに"
+  },
+  {
+   "slug": "gram:naide",
+   "issue": "Source-record contamination that the batch worked around silently instead of flagging (F3). In corpus/grammar/n5.json, gram:naide.formation[\"pt-BR\"] is not about ないで at all — it is the なあ text: \"Basta acrescentar なあ ao fim de uma frase ou palavra: いいなあ…, 寒いなあ…, 食べたいなあ…, 来ればいいなあ…\", a near-duplicate of gram:naa.formation[\"pt-BR\"] (not byte-identical, so it was authored/pasted, not a join artifact). The en field of the same record is correct (\"Take the verb in the short negative form (the ない-form) and add で\"). The batch's steps [to-nai-stem, append いで] are RIGHT — they were derived from the correct en field and the explanation — but the learner-facing pt-BR formation for 〜ないで currently teaches なあ, which is a shipped critical defect in the corpus, and this pass had the record open and did not raise it. The prompt's instruction to derive from structure_pattern/forms/formation/explanation means the disagreement between formation and explanation should have been surfaced.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:na",
+   "issue": "Two functionally different patterns are flattened into one variants list carrying record-level nuance_tags [prohibition, emphasis]. Variant 1 (verb + dictionary + な) is the STRONG PROHIBITION 書くな / 食べるな. Variant 2 (i-adjective + な) is the sentence-final EMPHASIS particle 高いな / 寒いな. Both outputs are grammatical in isolation, but nuance_tags are stored per record, not per variant, so a downstream generator asked for a prohibition drill can legitimately pick the i-adjective variant and present 高いな under a \"não faça\" label — the same tag/variant mismatch shape as the ようだ-taught-as-volitional case in F5. Nothing in the emitted structure distinguishes which tag belongs to which variant. Worth either splitting into two records or adding per-variant tagging; low severity because it needs a consumer that cross-products tags with variants.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:wa-dou-desu-ka",
+   "issue": "The point encodes a third variant that is explicitly the casual reduction (noun + \"はどう\", example 学生はどう — from the record's \"Versão casual: はどう？\"), but usage_contexts is [\"spoken\",\"business\"] and omits \"casual-friends\". The steps themselves are correct and every output is grammatical; only the context tagging is incomplete. Batch 10 does use \"casual-friends\" correctly elsewhere (gram:tte, gram:yo), so this is an inconsistency within the batch rather than a convention. Consequence is limited to filtering: a consumer selecting patterns by usage_context \"casual-friends\" would miss the はどう variant.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:ka",
+   "issue": "The single variant claims base \"clause\", but the record's formation examples are all です/ます (行きますか, きれいですか, どこですか) and it adds that plain speech drops か entirely. Executing [clause + append か] on a plain nominal or na-adjective clause gives *学生だか / *静かだか — not well-formed questions; the copula だ must drop (学生か / 静かか). Verb and i-adjective clauses survive (書くか, 高いか), so the fix is to narrow the base to a polite clause or split off noun / na-adjective variants that append か to the bare stem, the way gram:ka-ka and gram:kedo already do for their nominal bases.",
+   "severity": "major",
+   "bad_output": "学生だか"
+  },
+  {
+   "slug": "gram:ka-ka",
+   "issue": "structure_pattern is か～か — a coordination of two members — but the emitted steps attach か to ONE member, so executing them produces 学生か / コーヒーか / 行くか. Those strings are the sentence-final question particle (they mean \"a student?\", \"coffee?\", \"are you going?\"), i.e. they are byte-identical in rule shape to gram:ka's own steps and do not construct the alternatives pattern at all. The clause example 行くか also does not appear in the record, whose clause example is 行くか行かないか. The op enum cannot express infixed coordination — which is exactly the situation the same author correctly handled with steps_unavailable for 一番 and いつも; either bail the same way here or carry the second slot inside the token.",
+   "severity": "major",
+   "bad_output": "コーヒーか"
+  },
+  {
+   "slug": "gram:kata",
+   "issue": "The variant claims base \"verb\" unrestricted, but executing [to-masu-stem + append 方] on the two irregulars gives し方 for する (the standard orthography is 仕方 — 仕 is ateji for the し stem) and 来方 for くる, which is archaic/unattested as a \"way of doing\" noun. The reading しかた is right, so this is an orthography-level defect rather than a morphological one, but a generator driven by these steps would render a misspelled learner-facing form. The record's own examples are all regular (食べ方, 使い方, 書き方).",
+   "severity": "minor",
+   "bad_output": "し方"
+  },
+  {
+   "slug": "gram:kara",
+   "issue": "Two variants share base \"noun\" with nothing to discriminate them: [noun + だから] (cause, 学生だから) and [noun + から] (starting point, 3時から). The point-level nuance_tags is [\"cause\"], so a consumer selecting base=noun under the \"cause\" tag can pick the second variant and emit 学生から for \"because I'm a student\" — which actually reads \"from a student\". The record itself separates the two senses explicitly (\"As a conjunction… As a particle, it indicates the starting point\"); the starting-point variant needs to be marked as not carrying the cause reading, or restricted to time/place nouns.",
+   "severity": "minor",
+   "bad_output": "学生から"
+  },
+  {
+   "slug": "gram:gp-7",
+   "issue": "usage_contexts is [\"spoken\",\"casual-friends\"], but this point is the plain-form conjugation set of godan verbs (dictionary / ない / た / なかった) — the backbone of written Japanese, and the record's register is [\"plain\",\"casual\"] with an explanation that defines the dictionary form as \"how the verb appears in the dictionary\". Omitting \"written\" lets a consumer filter these forms out of written material. The sibling point gram:i-adjectives, with the same register and the same plain/negative/past/negative-past shape, was tagged [\"spoken\",\"written\"], so the two are inconsistent with each other.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:naku-temo-ii",
+   "issue": "The na-adjective and noun variants apply `to-nai-stem` to bases that have no nai-stem: reaching 静かじゃな / 学生じゃな requires inserting the copula negative じゃ, and no step encodes that — the intended surface form only survives in the `example` field. Batch 8's own reading is the one the task spec endorses (its worked example なければいけない = to-nai-stem + \"ければいけない\" forces to-nai-stem = 書かな), and under that reading every batch-8 output is correct, so DO NOT rewrite batch 8's tokens. The defect is corpus-level: elsewhere the same op carries the opposite convention — batch-06 gram:gp-7 has to-nai-stem + \"ない\" => 書かない and batch-19 gram:koto-ga-aru has to-nai-stem + \"ないことがある\" => 行かないことがある, both of which require to-nai-stem = 書か. No single implementation satisfies both conventions; whichever one is implemented, the other half of the corpus emits ungrammatical Japanese. Batch 8 is the only place the op is applied to a noun base at all, which is where the ambiguity bites hardest. Fix by normalizing the op's definition corpus-wide (or adding a distinct op for the copula negative), not by editing this batch.",
+   "severity": "minor",
+   "bad_output": "学生くてもいい / 静かくてもいい (produced only if to-nai-stem is implemented as the pre-ない stem, the convention used in batch-06 and batch-19)"
+  },
+  {
+   "slug": "gram:no",
+   "issue": "The record bundles three unrelated constructions (possessive noun+の+noun, nominalizer, explanatory のです) and the six variants are emitted as one flat list with no sense discriminator, including two entries whose `base` is both \"noun\": {noun, append \"の\"} => 学生の (possessive) and {noun, append \"なのです\"} => 学生なのです (explanatory). Both sequences execute to grammatical Japanese, so this is not a false formation rule, but a consumer selecting \"the variant for base=noun\" gets an ambiguous match and cannot tell that variant 1 belongs to the possessive sense while variants 3-6 all belong to the のです sense. The same shape appears in gram:ni-e (two noun variants, に and へ), but there it is benign because the two map onto the record's own two `forms` entries and are interchangeable in the same slot. Suggest a `sense` or `form` field on the variant, or splitting the record.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:naku-temo-ii",
+   "issue": "The noun and na-adjective variants are {base, op:\"to-nai-stem\"} + append \"くてもいい\". No step in that sequence emits じゃ. Everywhere else in the corpus (all 57 uses) to-nai-stem is verb morphology meaning \"ない-form minus final い\" (書く→書かな, 高い→高くな); it has no defined result for a bare noun or na-adjective, so executing the steps on 学生 and 静か yields *学生くてもいい and *静かくてもいい, not the 学生じゃなくてもいい / 静かじゃなくてもいい the variants' own example fields claim, and not the 日本語じゃなくてもいい the record's formation prose gives. The sibling pattern shows the house convention: batch-20 gram:nakereba-ikenai encodes noun + append \"じゃなければいけない\" → 学生じゃなければいけない, and batch-15 gp-62 uses noun + append \"じゃなくて\". Fix identically: noun|na-adjective + append \"じゃなくてもいい\". The verb variant (書かなくてもいい, 食べなくてもいい, しなくてもいい, こなくてもいい) and the i-adjective variant (高くなくてもいい, precedent in batch-20) are correct.",
+   "severity": "critical",
+   "bad_output": "*学生くてもいい / *静かくてもいい"
+  },
+  {
+   "slug": "gram:ni",
+   "issue": "Single variant noun + append \"に\" accepts any noun, but the record's own nuance flags as a \"tropeço importante\" that relative time words take no particle at all: \"Não diga 今日に ou 毎日に\". Executed literally on those nouns the steps generate exactly the error the record warns against. The prescribed test bases do not expose it (学生に is grammatical as a target/recipient) and the base enum has nothing narrower than noun, so the honest options are steps_unavailable with that reason or a note that the base is restricted to time-point/destination/target nouns.",
+   "severity": "minor",
+   "bad_output": "*今日に / *毎日に"
+  },
+  {
+   "slug": "gram:ga-suru",
+   "issue": "Base is over-broad for a lexically restricted class. The record's formation says \"Substantivo de sensacao + ga + suru\" and enumerates the class (匂い・味・音・声・気・感じ・寒気・吐き気); the steps declare plain base `noun` and append がする to anything. Executed literally on the mandated test noun 学生 the sequence yields 学生がする, and on any non-sensation noun 本がする, 車がする. Those strings are not instances of this pattern at all — they only re-parse as ordinary subject+する (\"a student does it\"), so a generator or a learner following the steps produces wrong Japanese for the taught meaning. This is exactly the situation the same batch handled correctly one point later: gram:gari sets steps_unavailable because base i-adjective would license *高がり and the base enum has no narrower value. The identical reasoning applies here (the base enum has no `sensation-noun`), so this point should either be steps_unavailable with that reason or carry a variant restricted to the record's own listed nouns. Note the mismatch is also a derive-from-the-record violation: the record never says \"noun\", it says \"sensation noun\".",
+   "severity": "major",
+   "bad_output": "学生がする"
+  },
+  {
+   "slug": "gram:ga-suru",
+   "issue": "The single variant declares base \"noun\" and appends がする unconditionally, but the record restricts the slot to a closed class of sensation nouns and enumerates it exhaustively in `formation` (\"Substantivo de sensação + が + する\": 匂い・味・音・声・気・感じ・寒気・吐き気). Executed on the mandated test noun 学生 the steps emit 学生がする, which is not an instance of this pattern at all — it parses as ordinary subject-が + する \"the student does it\". Any arbitrary noun does the same (本がする, 水がする). Note this file already handles the identical hazard correctly one entry later: gram:gari sets steps_unavailable precisely because the base enum has no value narrower than i-adjective and a wide base would license *高がり. The same reasoning applies here and was not applied, so the batch is internally inconsistent. Fix: steps_unavailable citing the lexically-restricted noun class, matching the gari precedent.",
+   "severity": "major",
+   "bad_output": "学生がする"
+  },
+  {
+   "slug": "gram:aida",
+   "issue": "The verb variant is [to-te-form, append いる, append 間], i.e. it forces 〜ている on every verb. The four mandated test verbs all come out grammatical (書いている間 / 食べている間 / している間 / 来ている間), so this passes the letter of the test set, but the declared base is bare \"verb\" and the sequence is ungrammatical for the two stative verbs most commonly used with 間: いる has no progressive form, so it yields *いている間 where standard Japanese is 日本にいる間, and ある yields *あっている間 where standard is 授業がある間. 間 also attaches directly to a plain non-past verb generally (毎日通う間), which the forced ている blocks. The record's own `formation` prose says \"verbo na forma ～ている + 間\", so the batch faithfully copied it — but the hard rule is that a sequence generating something ungrammatical for a base it claims to accept must be narrowed or split, not transcribed. Fix: either restrict the ている path to non-stative verbs and add a plain-form variant, or set steps_unavailable noting the record over-generalises.",
+   "severity": "major",
+   "bad_output": "*いている間 (correct: いる間) / *あっている間 (correct: ある間)"
+  },
+  {
+   "slug": "gram:aida-ni",
+   "issue": "Same defect as gram:aida, and more consequential here because the textbook example sentence for this very pattern uses いる. The verb variant [to-te-form, append いる, append 間に] declares base \"verb\" and forces 〜ている, so it emits *日本にいている間に for the canonical 日本にいる間に, and *あっている間に for ある. The mandated test verbs (書く/食べる/する/くる) all pass, so the error is invisible unless you push past the test set. Inherited from the record's `formation` (\"Mesma ligação de 間: verbo ～ている + 間に\"), but per the narrow-or-split rule that is not a defence. Fix: same as gram:aida — narrow the ている path to non-stative verbs plus a plain-form variant, or steps_unavailable.",
+   "severity": "major",
+   "bad_output": "*いている間に (correct: いる間に) / *あっている間に (correct: ある間に)"
+  },
+  {
+   "slug": "gram:gp-113",
+   "issue": "Half the record's structure_pattern is silently unencoded. structure_pattern is \"ほかに(も)・ほか(に)は\" and forms[] carries two entries — ほかに AND ほかは (\"fora isso / a não ser (com negação)\") — but the two variants only cover のほかに and のほかにも. The exclusion pattern 〜ほか(に)は + negative predicate (the record's formation gives これよりほかに方法はない) has no variant, and steps_unavailable is \"\", so nothing signals the omission. Note that this pattern is discontinuous in exactly the way gp-118 (しか〜ない) is — the obligatory negation lands on a separate predicate — so the consistent fix is a partial steps_unavailable note stating that the ほか(に)は branch cannot be encoded, the way gp-127 does for the affirmative 命令形. Nothing currently emitted is wrong; the entry just under-claims against its own forms[].",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-127",
+   "issue": "Label/pattern/forms mismatch: the record IS the affirmative 命令形 (label \"imperative form (命令形, direct command)\", structure_pattern \"命令形\", forms[] = 命令形 only, explanation entirely about blunt commands), but the single variant encodes the PROHIBITIVE 〜な. Executed literally it yields 書くな / 食べるな / するな / くるな — grammatical, but the opposite polarity of what the record teaches. A consumer that reads variants[] as \"the formation of gp-127\" will drill 書くな as the imperative of 書く (correct: 書け). This is structurally the ようだ/volitional case named in F5: the formation teaches a different grammar point than the label, and nuance_tags [\"prohibition\"] locks the wrong reading in — the record's own nuance/explanation are about command register and bluntness, not prohibition. Compounding it, this is the only point in the batch where steps_unavailable is populated AND variants is non-empty (elsewhere a non-empty reason always pairs with variants: []), so a program branching on steps_unavailable gets inconsistent semantics. The reason text itself is accurate (the affirmative imperative genuinely cannot be built from the closed op set); the defect is emitting the prohibitive as the record's formation instead of leaving variants empty or otherwise marking the variant as the negative-only sub-case.",
+   "severity": "major",
+   "bad_output": "書くな (produced as the 命令形 of 書く; the imperative is 書け)"
+  },
+  {
+   "slug": "gram:gp-113",
+   "issue": "Partial coverage silently asserted as complete. The record carries two forms (ほかに and ほかは) and structure_pattern \"ほかに(も)・ほか(に)は\", plus a sentence-initial adverbial use in both formation and explanation (ほかに質問はありますか). The variants cover only noun+の+ほかに(も); the exclusion construction 〜ほか(に)は + negative predicate (これよりほかに方法はない) has no variant, yet steps_unavailable is \"\" — i.e. the record asserts nothing is missing. The uncovered half is the same discontinuous noun-plus-negated-predicate shape that this very batch correctly flagged with steps_unavailable for gram:gp-118 (しか〜ない), so the two records handle an identical structural problem inconsistently. No wrong form is generated; the risk is a consumer treating forms[1] as unformable without knowing why.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-126",
+   "issue": "Base is broader than the record allows. Both variants declare base \"noun\" with no restriction, but the record's own nuance explicitly limits 化する to kango/abstract nouns and rules out everyday words and loanwords (\"you don't say 化する with casual words or everyday loanwords; for those, use 〜になる/〜にする\"), and formation says \"Noun (usually of Chinese origin, kango)\". Executed literally against an ordinary noun the steps license forms the record itself calls wrong. The op/base enums offer no narrower base, so the fix is a flag or a note rather than a different sequence — but as it stands the machine-readable rule contradicts a restriction the record spells out.",
+   "severity": "minor",
+   "bad_output": "コーヒー化する"
+  },
+  {
+   "slug": "gram:gp-133",
+   "issue": "The single variant appends ONE でも, but the record's structure_pattern is \"〜でも 〜でも\" and its forms entry is \"でも でも\" — a doubled construction. Executed literally: 学生 → 学生でも; コーヒー → コーヒーでも. That output is grammatical Japanese but it is a DIFFERENT grammar point (gram:demo, index 5, \"even X / X or something\"), not \"both X and Y / whether X or Y\". The variant's own example field, コーヒーでも紅茶でもいい, is not derivable from its steps — proof the steps do not build the pattern. The closed op enum has no repetition op, so the honest options were a token carrying both slots or steps_unavailable; a generator fed these steps will emit single-でも forms under a \"both...and\" label.",
+   "severity": "major",
+   "bad_output": "学生でも"
+  },
+  {
+   "slug": "gram:gp-147",
+   "issue": "Variant 2 (to-masu-stem + ましょう) is outside this record. The record's structure_pattern is \"～おう\", its forms list is only [おう], its register is [\"casual\"], and its label is \"informal volitional form\". ましょう appears in the formation prose solely as a cross-reference (\"The polite equivalent form is 〜ましょう\") and already has its own record, gram:mashou (index 95, structure_pattern \"～ましょう\"). Executed: 書く → 書きましょう, する → しましょう — correct Japanese, but polite, so it also contradicts this point's own usage_contexts [\"spoken\",\"casual-friends\"] and register \"casual\". A drill built from these steps would accept/emit 行きましょう as an instance of the informal volitional. Variant 1 (to-volitional → 書こう, 食べよう, しよう, こよう) is correct and is the whole record.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-136",
+   "issue": "nuance_tags includes \"hearsay\", which the record's own nuance explicitly contrasts this pattern AGAINST: \"Compared to と言われている ('it's said that,' based on what people say), と考えられている emphasizes a reasoning/conclusion.\" The label and forms both read \"it is believed / it is thought\". \"conjecture\" is grounded; \"hearsay\" is imported from the neighbouring pattern the record tells the learner to distinguish it from, and it collides with gp-137, which is tagged hearsay on the strength of its own \"it is said that\" gloss. Steps themselves are correct (書くと考えられている, 静かだと考えられている, 学生だと考えられている).",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-101",
+   "issue": "Both variants declare base \"noun\" with nothing to choose between them, so variant 1 (noun + の一つだ) accepts any noun. Applied literally to 学生 it yields 学生の一つだ — the exact error the record's own nuance warns against (\"para pessoas, use 一人 (ひとり), não 一つ\") and its formation states (\"Para pessoas ou animais, use 一人 no lugar de 一つ\"). The animacy split that variant 2 exists to encode is not expressible in the base enum, so a consumer picking variant 1 for an animate noun produces the wrong counter. Variant 1 must be restricted, or the pair merged with the animacy condition recorded.",
+   "severity": "critical",
+   "bad_output": "学生の一つだ"
+  },
+  {
+   "slug": "gram:gp-102",
+   "issue": "Variant 3 is base \"noun\" + append はない. Applied to 学生 it yields 学生はない. The ない here is existential (negative of ある), and animate subjects require いない — 学生はいない. The record's only example is 食べられないものはない, an inanimate head noun (もの), so the unrestricted \"noun\" base is wider than anything the record supports and over-generates for people and animals.",
+   "severity": "critical",
+   "bad_output": "学生はない"
+  },
+  {
+   "slug": "gram:gp-102",
+   "issue": "None of the three variants generates an instance of the pattern. structure_pattern is ～ない～はない, a discontinuous two-part frame, but variant 1 outputs only 食べない, variant 2 only 高くない and variant 3 only ものはない — each half is indistinguishable from plain negation or plain existential negation. Applying variant 1 to 書く gives 書かない labeled as \"não há nada que não...\", i.e. generic negation presented as this grammar point. This is exactly the reasoning the same batch used to justify steps_unavailable on gram:gp-103 (\"generic negation carrying none of this point's own material — a step list built from it would generate forms that are not instances of the pattern\"); the two records are handled inconsistently and gp-102 should have taken the same escape hatch.",
+   "severity": "major",
+   "bad_output": "食べない"
+  },
+  {
+   "slug": "gram:gp-100",
+   "issue": "Variant 2 (verb → to-nai-stem → append \"い\") carries none of the point's own material: applied to 書く it yields 書かない, to 食べる 食べない, to する しない — plain negative forms, tagged as \"apenas/só com negativo (〜しか〜ない)\". A consumer generating from this variant emits 書かない as an instance of しか〜ない, which is simply the negative and means nothing like \"only\". Same failure the batch itself declared disqualifying at gram:gp-103. Only the しか half (variant 1) carries the pattern; the negative half should be dropped or the point flagged steps_unavailable for the discontinuous frame.",
+   "severity": "major",
+   "bad_output": "書かない"
+  },
+  {
+   "slug": "gram:gp-104",
+   "issue": "This point is a single lexical item — structure_pattern is literally \"すくなくない\" and the record's formation is 少ない → 少なくない. The steps generalize it to base \"i-adjective\", so applying them to 高い produces 高くない and 高くありません, presented as the litotes \"não são poucos / bastante\". A learner or drill generator following the rule derives 高くない = \"quite a lot\", which is wrong: it is the ordinary negative \"not expensive\". The steps encode generic い-adjective negation, not this point; the fixed 少な is never generated from any standard base.",
+   "severity": "major",
+   "bad_output": "高くない"
+  },
+  {
+   "slug": "gram:garu-gatteiru",
+   "issue": "Variants 1, 2 and 4 declare bases \"i-adjective\" and \"na-adjective\" with no restriction, but the record's formation says \"Raiz do adjetivo de emoção (adjetivo-い sem い; adjetivo-な sem な) + がる\" and every example it gives is an emotion/subjective adjective (怖い, 寂しい, 嫌だ). Applied literally to the test bases the steps produce 高がる and 高がっている from 高い, and 静かがる from 静か — none is a Japanese word. The morphology of the steps is right; the base is wider than the record states, so the rule over-generates onto non-emotion adjectives.",
+   "severity": "major",
+   "bad_output": "高がる"
+  },
+  {
+   "slug": "gram:gozaimasu",
+   "issue": "The three variants only cover the copula route (noun/na-adj + でございます / ではございません), all of which check out. But the record's headline function — ございます as the courteous replacement for ある (トイレは二階にございます, ある→ございます, negative ございません) — and the い-adjective euphonic route the formation spells out (ありがたい→ありがとうございます, 早い→おはようございます, 〜とうございます) are both absent, and steps_unavailable is left empty, so nothing records that they were considered and found unrepresentable. A consumer sees a complete-looking variant set that silently omits the point's primary use.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-75",
+   "issue": "Variants 1 and 2 (and 4, which chains off variant 1) declare bare base \"i-adjective\" / \"na-adjective\" for 〜がる. Executed literally: 高い → replace-ending がる → 高がる; 静か → append がる → 静かがる. Neither is a Japanese word. The record explicitly carries the restriction the steps dropped — its explanation says がる \"transforma um adjetivo de SENTIMENTO ou DESEJO em um verbo\" and every example it gives is a psych-adjective (寒い, 怖い, ほしい, いやだ). がる is not productive over property adjectives, so the sequence licenses *高がる, *大きがる, *静かがる, and via variant 4 also *高がっている. Variant 3 (verb → to-masu-stem → たがる) is correct for all four verb classes (書きたがる, 食べたがる, したがる, 来たがる), so only the adjective bases are affected. Fix: narrow the base, or state the psych-adjective restriction rather than emitting an unrestricted i-adjective/na-adjective rule.",
+   "severity": "critical",
+   "bad_output": "高がる / 静かがる / 高がっている"
+  },
+  {
+   "slug": "gram:gp-68",
+   "issue": "Both variants declare base \"noun\" with no restriction. Executed literally: 学生 → append ごろ → 学生ごろ, which is ungrammatical (the form is 学生のころ). The record restricts the base in its own formation text — \"Anexa-se direto ao SUBSTANTIVO DE TEMPO\" — and its nuance section warns outright not to use ごろ with counts of things. Worse, the record's own third example is 子供のころ, i.e. noun + の + ころ, which these steps cannot produce and which directly contradicts the flat \"noun + ごろ\" rule they emit: a consumer following the steps derives *子供ごろ from the very record that shows 子供のころ. The time-point restriction is the entire pedagogical content of this entry (ごろ for points, ぐらい/くらい for quantities) and it is absent from the machine-usable form.",
+   "severity": "critical",
+   "bad_output": "学生ごろ / 子供ごろ"
+  },
+  {
+   "slug": "gram:gp-128",
+   "issue": "Variant 1 (base \"verb\", to-dictionary + ように) is over-broad and licenses a production the record itself forbids. Executed literally: 書く→書くように, する→するように, 食べる→食べるように. The record's own formation says the dictionary-form purpose path \"costuma vir com verbos não volitivos ou negativos\" and its examples are all non-volitional (見えるように, 聞こえるように), while its nuance states outright: \"para finalidade com verbo controlável (volitivo) o correto é ために, não ように\". So under this record's \"para que / de modo que\" label the steps generate 書くように / 勉強するように where the record says the learner must produce 書けるように (already covered by variant 2), 忘れないように (variant 3) or 勉強するために. Note for severity: 書くように is not an ungrammatical *string* — it exists in the unrelated indirect-command use (〜ように言う) — which is why this is major rather than critical, but as an instance of this pattern it is a wrong production. The base enum cannot express \"non-volitional verb\", so the fix is to drop variant 1 (variants 2 and 3 already carry the record's real cases) rather than to keep an unrestrictable \"verb\" base.",
+   "severity": "major",
+   "bad_output": "書くように"
+  },
+  {
+   "slug": "gram:gp-133",
+   "issue": "The single variant does not encode the pattern the record describes. structure_pattern is \"〜でも 〜でも\" and forms is \"でも でも\" — a correlative PAIR — but the steps are one noun + one でも. Executed literally: 学生→学生でも, コーヒー→コーヒーでも. The doubling that constitutes the grammar point is never produced, and the variant's own `example` (コーヒーでも紅茶でもいい) is not derivable from its own steps — it needs a second noun+でも that no step supplies. A consumer applying these steps would present 学生でも as an instance of \"tanto… quanto… / seja… seja…\", which is instead the unrelated single 〜でも (\"even/or something\"). Not ungrammatical as a string, hence major not critical; the fix is a two-slot sequence (noun + でも + noun + でも) or an explicit steps_unavailable if the closed op enum cannot express a repeated slot.",
+   "severity": "major",
+   "bad_output": "学生でも"
+  },
+  {
+   "slug": "gram:gp-128",
+   "issue": "nuance_tag \"intention\" is contradicted by the record. The record's nuance paragraph assigns intentional/controllable purpose to ために and defines ように as the form used precisely when \"o resultado escapa ao seu controle\" (poder ver, não esquecer, melhorar). The enum has no \"purpose\" value, but tags are \"zero or more\", so omitting it was available; \"desire\" and \"request\" (both grounded in the record's prayer/pedido suave use) already carry the record. Tagging this point \"intention\" reinstates the exact ように/ために confusion the record is written to prevent.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-136",
+   "issue": "nuance_tag \"hearsay\" is contradicted by the record's own contrast. The record's nuance explicitly separates と考えられている from the hearsay expression: \"Comparado a と言われている ('diz-se que', baseado no que se fala), と考えられている enfatiza um raciocínio/conclusão\". The explanation likewise frames it as \"uma opinião ou conclusão como consenso geral\" — reasoning, not report of speech. \"conjecture\" alone reflects the record; \"hearsay\" belongs to gp-137/と言われている, where the label literally reads \"diz-se que\".",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-83",
+   "issue": "The point emits three variants (まい, のように, のような) but a single usage_contexts list [\"written\",\"literary\"], which is derived from the まい half only. The record's nuance says まい is formal/literary; のように/のような is everyday Japanese (雪のように白い) and is not written- or literary-restricted. So the emitted object contradicts itself: variants 2 and 3 are tagged literary/written-only. Related: the record's own structure_pattern is not a pattern at all, it is an editorial instruction stating that the のように half is a concatenation bug and must be stripped because 〜のように/〜のような already exist as gp-153/gp-154 (and gp-77). The author encoded the half the record flags for deletion, so once the record is fixed these two variants become orphan duplicates, and until it is fixed they carry the wrong register tags. The formation steps themselves are correct (学生のように / 学生のような are both grammatical) — this is a scoping/tagging defect, not a false formation rule.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-100",
+   "issue": "Neither variant produces an instance of 〜しか〜ない. Executed literally: variant 1 (base noun, append しか) on 学生 gives the bare fragment 学生しか with NO negative-predicate constraint attached — it licenses exactly 千円しかある, which the record's own nuance forbids ('Não use しか com verbo afirmativo'). Variant 2 (base verb, to-nai-stem + い) on 書く/食べる/する/くる gives 書かない/食べない/しない/こない — the generic plain negative, carrying none of this point's material. This is a discontinuous two-site pattern (しか on the noun, ない on a DIFFERENT word) and the closed op set cannot force the negative onto the separate predicate. The same file already reached the right verdict for the identical shape at gram:gp-103 ('a step list built from it would generate forms that are not instances of the pattern'), and the duplicate record gram:gp-118 (batch-13) is steps_unavailable with precisely this argument, naming 千円しかある as the licensed error. This entry should be steps_unavailable with empty variants.",
+   "severity": "critical",
+   "bad_output": "学生しか / 書かない (noun half licenses 千円しかある)"
+  },
+  {
+   "slug": "gram:gp-102",
+   "issue": "〜ない〜はない is a two-site pattern (negative clause + noun + はない, e.g. 食べられないものはない), and each variant emits only one site, so none is an instance of the point. Variant 1 (verb, to-nai-stem + い) on 食べる/書く/する/くる gives 食べない/書かない/しない/こない — generic plain negation. Variant 2 (i-adjective, to-adverbial + ない) on 高い gives 高くない — the ordinary negative i-adjective. Variant 3 (noun, append はない) on 学生 gives 学生はない, which is wrong for an animate noun: existence-negation for people is はいない (cf. 知らない人はいない, where 人 is the natural head noun for this pattern). Same class as gram:gp-103 in this same file, which was correctly marked steps_unavailable for producing 'forms that are not instances of the pattern'.",
+   "severity": "major",
+   "bad_output": "食べない / 高くない / 学生はない"
+  },
+  {
+   "slug": "gram:gp-101",
+   "issue": "Both variants declare base \"noun\", so the split between them is not machine-selectable, and executing variant 1 on the mandated test noun 学生 gives 学生の一つだ — the exact counter error the record's own nuance warns against ('para pessoas, use 一人 (ひとり), não 一つ'). The distinction is animacy, not part of speech, and the base enum cannot express it; only the human-readable `example` field (山 vs 学生) disambiguates, and a consumer reading `base` will not see it. Either narrow variant 1 (inanimate only, which the enum cannot state → steps_unavailable or a note) or the pair must not both claim base noun.",
+   "severity": "major",
+   "bad_output": "学生の一つだ"
+  },
+  {
+   "slug": "gram:gp-104",
+   "issue": "The point is a fixed lexical item — structure_pattern is \"すくなくない\", forms[0].form is \"すくなくない\", and the whole explanation is litotes on 少ない specifically. Declaring base \"i-adjective\" generalises it to every i-adjective: executed on 高い the two variants give 高くない and 高くありません, which are grammatical but are simply the ordinary negative of an i-adjective, not this grammar point. A generator would emit 高くない labelled 'não são poucos'. The record's formation prose does state the general 〜い→〜くない rule, but only as the derivation of this one word.",
+   "severity": "minor",
+   "bad_output": "高くない / 高くありません"
+  },
+  {
+   "slug": "gram:garu-gatteiru",
+   "issue": "The record restricts the base to emotion adjectives ('Raiz do adjetivo de emoção (adjetivo-い sem い; adjetivo-な sem な) + がる'), but the steps claim the unrestricted bases i-adjective and na-adjective. Executed on the mandated test bases: 高い → 高がる (variant 1) and 高がっている (variant 4); 静か → 静かがる (variant 2). None is a word. The verb variants (書く→書きたがる, 食べる→食べたがる, する→したがる, くる→きたがる, and the ている chain) all execute correctly. Note this over-generation matches sibling record gram:gp-75 in batch-16, so it may be a project-wide convention rather than a batch-12 slip; the enum has no way to say 'emotion adjective', so the honest fix is a narrowing note rather than different ops.",
+   "severity": "minor",
+   "bad_output": "高がる / 静かがる / 高がっている"
+  },
+  {
+   "slug": "gram:gp-68",
+   "issue": "Both variants are [base:noun -> append ごろ / ごろに], but the record's own formation field lists three attachment examples: 3時ごろ, 来週ごろ AND 子供のころ. The third one requires の and the UNVOICED ころ (rendaku only fires on direct suffixation). Executing the steps on a non-time noun therefore yields *学生ごろ / *子供ごろ, contradicting the record's own example — the F1 pattern (a rule its own example breaks) combined with F5 (learner produces the wrong form). The record's nuance field is explicitly about this selectional restriction ('ごろ é só para PONTOS no tempo'). Unlike the がる case below, this one IS fixable inside the closed enums: add a third variant [base:noun -> append \"のころ\"] covering the non-time-point noun, which is what the record documents.",
+   "severity": "critical",
+   "bad_output": "学生ごろ (and 子供ごろ, where the record itself has 子供のころ)"
+  },
+  {
+   "slug": "gram:gp-75",
+   "issue": "Variant 1 [i-adjective -> replace-ending がる] and variant 2 [na-adjective -> append がる] claim the whole i-/na-adjective classes, but the record's explanation restricts がる to 'um adjetivo de sentimento ou desejo' (emotion/desire only). Run literally on the test bases: 高い -> 高がる and 静か -> 静かがる, neither of which exists. Verbs (variant 3, たがる) are fine and fully productive. Weaker than the ごろ finding — no example inside the record breaks the rule, and the base enum has no 'emotion i-adjective' value, so there is no step-level fix; the restriction can only be carried as a note. Flagging so the gap is recorded rather than silently inherited by a generator.",
+   "severity": "minor",
+   "bad_output": "高がる / 静かがる"
+  },
+  {
+   "slug": "gram:gp-150",
+   "issue": "The na-adjective and noun variants append なら, but this record's structure_pattern is \"～れば\" and its only form is \"れば\". Executing them yields 静かなら / 学生なら — grammatical Japanese, but containing no ば at all, so a generator asked for instances of the 〜ば conditional emits forms of a different pattern. The record's formation prose is the source, yet it says the opposite of what the steps encode: \"Com substantivos/adjetivos な usa-se geralmente なら, não ば\" — i.e. ば does NOT apply to those bases. なら also already has its own record (gram:nara, batch-20) covering exactly noun+なら and na-adjective+なら, so this duplicates it under the wrong slug. Note the identical pattern exists in gram:ba (batch-11), so if this is intentional convention it should be fixed in both or in neither; the safer encoding is to drop these two variants and let gram:nara own them. Severity kept minor because nothing ungrammatical is produced — this is a scope/attribution mismatch, not an F5 false formation rule.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:irassharu",
+   "issue": "The steps build 〜ていらっしゃる, not いらっしゃる. Record's structure_pattern is \"いらっしゃる\" and its single forms[] entry is \"いらっしゃる\" — a suppletive honorific VERB replacing いる/行く/来る (\"estar / ir / vir\"), not a suffix attaching to a て-form. 〜ていらっしゃる appears only as a passing combination note at the end of the formation prose. Executed literally the steps give 書いていらっしゃる / 食べていらっしゃる / していらっしゃる / 来ていらっしゃる: each is well-formed Japanese but each is the honorific of 〜ている (progressive/resultative), which is NOT the entry's meaning. A consumer generating from formation_steps teaches that いらっしゃる requires a preceding て-form verb, so a learner honorifying 先生が来る produces 先生が来ていらっしゃる (\"has come and is here\") instead of 先生がいらっしゃいます, and can never produce the entry's own headline use, which has no preceding verb at all. Same-batch inconsistency confirms this: gram:itashimasu is the exact parallel case (suppletive keigo counterpart of する) and was correctly given steps_unavailable with the reason \"not a productive suffix\"; いらっしゃる should get the same treatment, or the variant must be relabelled as the 〜ていらっしゃる pattern rather than as this record's formation.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-83",
+   "issue": "gp-83 encodes the 〜のように/〜のような half that the record's own structure_pattern explicitly identifies as a concatenation bug and orders removed ('Do NOT split into two records — 〜のように/〜のような already exist as gp-153/gp-154 (and gp-77). Reduce gp-83 to 〜まい only ... strip the 〜のように half'). Variants 2 and 3 are byte-identical in steps to what batch-15 already emitted for gp-153 ({noun, append, 'のような'}) and gp-154 ({noun, append, 'のように'}) and to two of batch-16's four gp-77 variants, so the comparison steps now exist four times in the derived layer, and here they hang off a point labelled 'decerto não / recusa firme (まい)'. This is F3: prose/steps written over a known-bad upstream record instead of the record being flagged. Knock-on: usage_contexts ['written','literary'] is right for まい and wrong for のように, which the other three records correctly tag 'spoken'. The まい variant itself is correct — to-dictionary is the one branch valid for all of 書く/食べる/する/くる — so the fix is to drop variants 2 and 3, not to rewrite them.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-87",
+   "issue": "The six points that set steps_unavailable (gram:gp-87, gp-88, gp-89, gp-90, gp-95, gp-96) omit the `variants` key entirely rather than emitting `\"variants\": []`. The 25 other batches that carry steps_unavailable points do emit the empty array — batch-16 gp-69/gp-71 and batch-18 gp-98/gp-99 are the immediate neighbours and both include it. Across the whole derived set 36 of 495 points are missing the key, 6 of them in this batch. Since the entire purpose of this field set is machine consumption, a consumer iterating `point.variants` gets `undefined` and throws (or silently skips) on exactly the points where it most needs to fall through to the steps_unavailable branch. The steps_unavailable reasons themselves are all correct and should be kept as written.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:irassharu",
+   "issue": "The steps model いらっしゃる as a productive て-form auxiliary (base:verb → to-te-form → append いらっしゃる, example 待っていらっしゃる), but the record is about the standalone suppletive honorific verb: structure_pattern is \"いらっしゃる\", forms[0].form is \"いらっしゃる\", and the explanation says it \"substitui, de uma vez, três verbos: いる (estar), 行く (ir) e 来る (vir)\". 〜ていらっしゃる appears in one clause at the END of the formation field as a secondary combination, not as the pattern being taught. So the steps cannot generate the record's own headline use (お客様がいらっしゃいます) and instead assert a generic V-て suffix rule. Consumers building drills from this would never surface the suppletive verb that is the entire lesson point, and would present いらっしゃる as attachable to any verb — including いる, the very verb it replaces (*いていらっしゃる). Note the same batch correctly set steps_unavailable for gram:itashimasu on exactly this ground (\"suppletive humble counterpart of する, not a productive suffix\"), and batch-03 did the same for gram:gp-19 (する) — the house precedent for a lexical suppletive verb is steps_unavailable, not a step list built from an incidental compound. Not critical: every test-set base (書く/食べる/する/くる) yields a grammatical 〜ていらっしゃる, so nothing ungrammatical is produced; the defect is that the steps describe a different construction from the one the record carries.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-150",
+   "issue": "Variants 5 and 6 (na-adjective -> append なら, noun -> append なら) fall outside this record's own scope. structure_pattern is ～れば and forms[] carries only \"れば\"; the record's formation text says explicitly \"Com substantivos/adjetivos な usa-se geralmente なら, não ば\" — i.e. ば is NOT this point's form for those bases. なら is a separate n4 record (gram:nara, encoded in batch-20 with all four bases). Output 静かなら / 学生なら is grammatical, so this is a scope/labeling issue, not a production error: a generator asked for the 〜れば form of 学生 emits another grammar point's construction under the ば label. (batch-11 encoded the duplicate record gram:ba the same way, so the fix, if any, should cover both.)",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:gp-150",
+   "issue": "The four to-nai-stem variants in this batch (gp-150 +\"ければ\", gp-60 +\"かったら\", gp-62 +\"くて\", gp-152 +\"いでほしい\") are only correct if to-nai-stem yields the ない-form minus い (書かな). That matches the authoring spec's canonical example (なければいけない = to-nai-stem + \"ければいけない\"), so the batch is internally consistent and conforms to the spec. But the corpus as a whole uses the op in both senses — batch-06 gram:gp-7 does to-nai-stem + \"ない\" = 書かない and batch-19 gram:koto-ga-aru does to-nai-stem + \"ないことがある\" = 行かないことがある, which require the stem to be 書か instead. No single implementation of the op can satisfy both readings, and under the 未然形 reading this batch's four variants emit *書かければ / *書かかったら / *書かくて / *書かいでほしい. Flagging so the op gets one written definition before anything consumes it; the defect is in the enum's definition, not in this batch's logic.",
+   "severity": "minor",
+   "bad_output": "書かければ"
+  },
+  {
+   "slug": "gram:gp-66",
+   "issue": "nuance_tags [\"softening\"] is the only tag and it captures a parenthetical secondary use rather than the point's function. The record's core content is sequencing (\"primeiro / antes de tudo\", まず + [ação 1]。それから + [ação 2]); \"softening\" is grounded only in one nuance-field aside (まあ、まず大丈夫 = \"bem, no geral está ok\"). The enum has no sequencing/ordering member, and the comparable sequencing adverb それから (batch-09 gram:sore-kara) was correctly given []. As it stands a tag-based consumer classifies まず as a hedging expression alongside なるべく and だいたい.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:koto-ga-aru",
+   "issue": "Variant 3 is [to-nai-stem] + append \"ないことがある\", which duplicates な. The op enum is pinned by the task spec's own worked example (to-nai-stem + \"ければいけない\" -> 書かなければいけない), so to-nai-stem yields 書かな / 食べな / しな / 来な — the ない-form minus い, NOT the 未然形 書か. Executed literally: 書く -> 書かな + ないことがある = 書かなないことがある; 食べる -> 食べなないことがある; する -> しなないことがある; くる -> 来なないことがある. The stated example 行かないことがある is unreachable from these steps. Corpus-wide this is the minority reading: 50 of 61 to-nai-stem uses append い / くて / ければ / かった / いで (e.g. batch-20 gram:nakereba-ikenai, batch-08 gram:nakute-wa-ikenai), which only work if the stem already ends in な. Fix: token should be \"いことがある\" (matching batch-27 gram:n3-nai-koto-wa-nai, which uses \"いことはない\").",
+   "severity": "critical",
+   "bad_output": "書かなないことがある"
+  },
+  {
+   "slug": "gram:koto-ni-naru",
+   "issue": "Same defect as gram:koto-ga-aru. Variant 2 is [to-nai-stem] + append \"ないことになる\", duplicating な. Executed literally: 書く -> 書かなないことになる; 食べる -> 食べなないことになる; する -> しなないことになる; くる -> 来なないことになる. Its own record's formation (\"verbo na forma dicionário ou negativa simples ＋ ことになる\", 行かないことになった) is not what these steps produce. Note the direct internal contradiction: batch-27 gram:n3-koto-ni-natte-iru encodes the same construction as [to-nai-stem] + \"いことになっている\", which is the correct token shape. Fix: \"いことになる\".",
+   "severity": "critical",
+   "bad_output": "書かなないことになる"
+  },
+  {
+   "slug": "gram:koto-ni-suru",
+   "issue": "Same defect. Variant 2 is [to-nai-stem] + append \"ないことにする\", duplicating な. Executed literally: 書く -> 書かなないことにする; 飲む -> 飲まなないことにする (the variant's own example is 飲まないことにする, which the steps cannot generate); 食べる -> 食べなないことにする; する -> しなないことにする; くる -> 来なないことにする. Contradicts batch-27 gram:n3-koto-ni-shite-iru, which uses [to-nai-stem] + \"いことにしている\" for the same construction. Fix: \"いことにする\".",
+   "severity": "critical",
+   "bad_output": "飲まなないことにする"
+  },
+  {
+   "slug": "gram:mama",
+   "issue": "Same defect. Variant 2 is [to-nai-stem] + append \"ないまま\", duplicating な. Executed literally: 書く -> 書かなないまま; 食べる -> 食べなないまま (the variant's own example is 食べないまま); する -> しなないまま; くる -> 来なないまま. This is the sharpest instance because batch-27 gram:n3-mama encodes the SAME grammar point at N3 as [to-nai-stem] + \"いまま\" with the identical example 食べないまま — the two records disagree on the token for one construction, and only the batch-27 form is consistent with the op definition. Fix: \"いまま\".",
+   "severity": "critical",
+   "bad_output": "食べなないまま"
+  },
+  {
+   "slug": "gram:koro-goro",
+   "issue": "Variant 1 declares base \"noun\" for bare ごろ, but ごろ only attaches to point-in-time nouns. Executed on the standard noun test base: 学生 -> 学生ごろ, which is not Japanese (the record's own variant 2 exists precisely for that case: 学生のころ). Worse, the record's nuance field explicitly names the form this rule licenses as an error: \"use ごろ só para pontos no tempo (horas, datas) e ぐらい/くらい para quantidades e durações... Não diga 3時間ごろ\" — yet base \"noun\" + append \"ごろ\" generates exactly 3時間ごろ. Two variants of the same record thus claim the same base and produce contradictory results for the same input, which is the flattening pattern the spec warns about. The base enum has no time-noun member, so the fix is either to keep only the の/だった variants as generative and mark bare ごろ as lexically restricted, or to record the restriction in note_pt.",
+   "severity": "major",
+   "bad_output": "学生ごろ"
+  },
+  {
+   "slug": "gram:made-ni",
+   "issue": "Same class as gram:koro-goro, milder. Variant 1 declares base \"noun\", but the record's formation says \"Substantivo de tempo (ou verbo na forma de dicionário) + までに\". Executed on the standard noun test base: 学生 -> 学生までに, which is ungrammatical (までに requires a temporal limit; non-temporal nouns take まで at most, and only spatially). Unlike koro-goro there is no competing variant that rescues non-temporal nouns, so any consumer feeding an arbitrary noun gets a bad form. Narrow the base or record the temporal restriction.",
+   "severity": "minor",
+   "bad_output": "学生までに"
+  },
+  {
+   "slug": "gram:oki-ni",
+   "issue": "The single variant declares base \"noun\" with steps [{base:noun, op:none}, {op:append, token:\"おきに\"}]. Executed literally on the standard test noun 学生 it yields *学生おきに, which is ungrammatical. おきに attaches only to a quantity expression (numeral + counter), not to an arbitrary noun — the record's own formation says exactly that (\"número + contador + おきに\", with 10分おきに / 1メートルおきに / 1日おきに) and every example in the record and in the explanation is a counter phrase. The `example` field pins 10分おきに, but `example` is documentation, not a constraint: a consumer expanding base \"noun\" over the vocab registry produces *学生おきに, *猫おきに, *本おきに. Note for triage: the closed base enum has no quantity/counter option, so \"narrow the base\" is not literally available here — the two honest fixes are (a) `steps_unavailable` citing the missing quantity base (the record is precise, but the enum cannot express its input type), or (b) keep base \"noun\" and record the numeral+counter restriction so the step is not blindly expanded. Everything else in the record is fine: nuance_tags [] is honest (the enum has no interval/frequency tag) and usage_contexts spoken+written match register \"plain\".",
+   "severity": "critical",
+   "bad_output": "学生おきに"
+  },
+  {
+   "slug": "gram:you-ni-suru",
+   "issue": "Variant 2 is [{base:verb, op:to-nai-stem}, {op:append, token:\"ないようにする\"}]. The task spec defines to-nai-stem by its own worked example (なければいけない = to-nai-stem + append \"ければいけない\", which only yields 書かなければいけない if to-nai-stem(書く) = 書かな). Under that definition the append token must NOT re-supply な. Executed literally: 食べる -> 食べな -> 食べな + ないようにする = 食べなないようにする; 書く -> 書かな + ないようにする = 書かなないようにする; する -> しなないようにする; くる -> こなないようにする. The corpus's own dominant convention agrees with the spec (~45 uses append tokens starting い/く/け/か vs ~12 that re-supply ない), and batch-14 gram:gp-128 encodes the identical surface form 忘れないように correctly as to-nai-stem + \"いように\". Fix: token \"いようにする\". Record's formation text (\"Verbo na forma negativa curta (ない) + ようにする\") is fine; only the step encoding is off by one な.",
+   "severity": "critical",
+   "bad_output": "食べなないようにする"
+  },
+  {
+   "slug": "gram:you-ni-you-na",
+   "issue": "Variant 6 is [{base:verb, op:to-nai-stem}, {op:append, token:\"ないように\"}] — same off-by-な as gram:you-ni-suru. Executed literally: 忘れる -> 忘れな -> 忘れな + ないように = 忘れなないように; 書く -> 書かなないように; する -> しなないように; くる -> こなないように. The stated example 忘れないように is not what the steps produce. batch-33 gram:n3-you-ni-2 and batch-14 gram:gp-128 encode this exact pattern correctly as to-nai-stem + \"いように\". Fix: token \"いように\".",
+   "severity": "critical",
+   "bad_output": "忘れなないように"
+  },
+  {
+   "slug": "gram:you-ni-you-na",
+   "issue": "nuance_tags is [\"comparison\"] only, but the record's explanation states two main uses and names the second explicitly: \"(2) Finalidade: ように também marca 'de modo que', 'para que' um resultado aconteça\". Three of the six emitted variants (分かるように, 書けるように, 忘れないように) are purpose forms with no tag covering them, so a consumer filtering by nuance retrieves this point only as a comparison pattern. \"intention\" is the closed-enum value that covers purpose and is used for exactly that sense on gram:you-ni-suru in this same batch.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:yotei-da",
+   "issue": "Only a verb variant is emitted, but the record's own formation field carries a second base: \"It also appears with noun + の: 会議は3時の予定です\". A noun variant [{base:noun, op:append, token:\"の予定だ\"}] -> 学生の予定だ / 3時の予定だ is derivable from the record and is missing, so the point cannot generate the scheduled-event reading at all. (Contributing record defect: the pt-BR formation field is truncated relative to the en one — pt-BR stops after 行く予定です while en continues with the noun+の, 予定だった and negative patterns. Worth flagging upstream, but the noun base is present in the record as it stands.)",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:oki-ni",
+   "issue": "The single variant claims base \"noun\" with steps [none, append \"おきに\"], but the record's own formation restricts the host to a quantity phrase: \"número + contador + おきに\" (10分おきに, 1メートルおきに, 1日おきに). Executed literally on the plain noun the base admits, 学生 + おきに yields *学生おきに, which is ungrammatical — おきに needs a numeral+counter (一人おきに), not a bare noun. The example field (10分おきに) carries the restriction but nothing machine-readable does, so a generator consuming formation_steps can emit the bad form. Note this is systemic rather than batch-21-specific: the base enum has no quantity/counter member, and gram:gp-70 (ごとに, 3日ごとに) and gram:gp-68 (ごろ, 3時ごろ) are encoded the same way in batches 16 and 07 — so the fix is probably a schema-level narrowing (or steps_unavailable, as gram:gp-98 did for 何+COUNTER+か), not a rewrite of this record alone.",
+   "severity": "major",
+   "bad_output": "*学生おきに"
+  },
+  {
+   "slug": "gram:you-ni-suru",
+   "issue": "Negative variant is [{base:verb, op:\"to-nai-stem\"},{op:\"append\", token:\"ないようにする\"}]. Under the op semantics the task prompt itself defines (なければいけない = to-nai-stem + append \"ければいけない\", which requires 書く -> 書かな, i.e. the ない-form minus final い), to-nai-stem already supplies the な. Appending a token that starts with ない duplicates it. Executed literally: 書く -> 書かなないようにする, 食べる -> 食べなないようにする, する -> しなないようにする, くる -> 来なないようにする. The variant's own claimed example (食べないようにする) is NOT what its steps produce, which is the tell. The record's formation says \"Verbo na forma negativa curta (ない) + ようにする ... 遅れないようにする\", so the target string is right and only the token is wrong: it should be \"いようにする\". Cross-check inside this same dataset: batch-20 gram:nakereba-ikenai uses to-nai-stem + \"ければいけない\" -> 書かなければいけない (the prompt's canonical pair), batch-08 gram:naku-temo-ii uses to-nai-stem + \"くてもいい\" -> 静かじゃなくてもいい, and batch-33 gram:n3-you-ni-shimashou uses to-nai-stem + \"いようにしましょう\" -> 書かないようにしましょう. Roughly 50 of ~60 to-nai-stem uses across the batches follow the 〜な convention; these two in batch-24 do not.",
+   "severity": "critical",
+   "bad_output": "食べなないようにする / 書かなないようにする / しなないようにする / 来なないようにする"
+  },
+  {
+   "slug": "gram:you-ni-you-na",
+   "issue": "Sixth variant is [{base:verb, op:\"to-nai-stem\"},{op:\"append\", token:\"ないように\"}] — the same duplicated-ない defect. to-nai-stem yields 忘れな, so appending \"ないように\" gives 忘れなないように; the claimed example 忘れないように is not reachable from the steps. Correct token is \"いように\". This is provable against the corpus rather than by taste: batch-14 gram:gp-128 encodes the SAME construction with the SAME example and gets it right — to-nai-stem + append(\"いように\") => 忘れないように — as does batch-33 gram:n3-you-ni-2 (to-nai-stem + \"いように\" => 書かないように). Executed across bases: 書く -> 書かなないように, 食べる -> 食べなないように, する -> しなないように, くる -> 来なないように, 忘れる -> 忘れなないように. All five ungrammatical. The record's formation (\"verbo ... na forma do dicionário ou em ない + ように: 忘れないように\") supports the target, so only the token is defective. The other five variants of this point (noun+のように, noun+のような, clause+ように, dictionary+ように, potential+ように) all execute correctly.",
+   "severity": "critical",
+   "bad_output": "忘れなないように / 書かなないように / 食べなないように / しなないように / 来なないように"
+  },
+  {
+   "slug": "gram:koto-ga-aru",
+   "issue": "Variant 3 is [verb, to-nai-stem] + append \"ないことがある\". In this corpus to-nai-stem yields the ない-form MINUS the final い (書かな / 食べな / しな / こな) — proved by batch-08 gram:naku-temo-ii where i-adjective to-nai-stem + \"くてもいい\" = 高くなくてもいい, by batch-20 nakereba-ikenai (to-nai-stem + \"ければいけない\" = 書かなければいけない), and by the なければいけない example in the authoring brief itself. Executed literally: 書く -> 書かな -> 書かな+ないことがある; 食べる -> 食べな+ないことがある; する -> しな+ないことがある; くる -> こな+ないことがある. The token must be \"いことがある\", which is exactly what batch-28 gram:n3-nai-koto-wa-nai and batch-27 gram:n3-koto-da used for the same shape. Same defect in this batch on koto-ni-naru, koto-ni-suru and mama; also present outside this batch in batch-06 (gp-7, hou-ga-ii), batch-24 (you-ni-suru, you-ni-you-na) and batch-32 (n3-tsumori-deshita, n3-uchi-ni), so a single sweep over all to-nai-stem tokens beginning with な is the fix.",
+   "severity": "critical",
+   "bad_output": "書かなないことがある"
+  },
+  {
+   "slug": "gram:koto-ni-naru",
+   "issue": "Variant 2 is [verb, to-nai-stem] + append \"ないことになる\", doubling the な. Executed: 行く -> 行かな -> 行かな+ないことになる (the variant's own example claims 行かないことになる); 書く -> 書かなないことになる; 食べる -> 食べなないことになる; する -> しなないことになる; くる -> こなないことになる. Token should be \"いことになる\" — compare batch-27 gram:n3-koto-ni-natte-iru, which encodes the same negative as to-nai-stem + \"いことになっている\".",
+   "severity": "critical",
+   "bad_output": "行かなないことになる"
+  },
+  {
+   "slug": "gram:koto-ni-suru",
+   "issue": "Variant 2 is [verb, to-nai-stem] + append \"ないことにする\", doubling the な. Executed: 飲む -> 飲まな -> 飲まな+ないことにする (example claims 飲まないことにする); 書く -> 書かなないことにする; 食べる -> 食べなないことにする; する -> しなないことにする; くる -> こなないことにする. Token should be \"いことにする\"; the N3 twin batch-27 gram:n3-koto-ni-shite-iru already uses to-nai-stem + \"いことにしている\" correctly, so the same corpus now carries both encodings of one pattern.",
+   "severity": "critical",
+   "bad_output": "飲まなないことにする"
+  },
+  {
+   "slug": "gram:mama",
+   "issue": "Variant 2 is [verb, to-nai-stem] + append \"ないまま\", doubling the な. Executed: 食べる -> 食べな -> 食べな+ないまま (example claims 食べないまま); 書く -> 書かなないまま; する -> しなないまま; くる -> こなないまま. Token should be \"いまま\" — batch-27 gram:n3-mama, the same grammar point at N3, encodes it as to-nai-stem + \"いまま\" and yields 食べないまま. The other four variants of this point (to-ta-form+まま, i-adj+まま, na-adj to-attributive+まま, noun+のまま) all execute correctly: 立ったまま / 書いたまま / 食べたまま / したまま / きたまま, 高いまま, 静かなまま, 学生のまま.",
+   "severity": "critical",
+   "bad_output": "食べなないまま"
+  },
+  {
+   "slug": "gram:koro-goro",
+   "issue": "Variant 1 is base \"noun\" + append \"ごろ\", but the record restricts ごろ to point-in-time expressions and its nuance field names the counterexample explicitly: \"Don't say 3時間ごろ\" (use ぐらい for durations). Executed on the test bases, 学生 -> *学生ごろ and the record's own banned 3時間 -> *3時間ごろ; only the 7時ごろ-type example is valid. The base enum has no time-noun value and the corpus convention elsewhere (batch-06 gram:kara ex=3時から, batch-07 gram:made ex=駅まで) is to let the example carry the semantic class, so this is not a step-sequence error — but here the record itself supplies the forbidden output, so the restriction is worth carrying in note_pt rather than being dropped. Variants 2-6 all execute correctly (学生のころ, 子供だったころ / 学生だったころ, 書いたころ / 食べたころ / したころ / きたころ, 書くころ, 若いころ / 高いころ). Missing na-adjective attachment (静かだったころ) — incompleteness only, not a false rule.",
+   "severity": "minor",
+   "bad_output": "3時間ごろ"
+  },
+  {
+   "slug": "gram:koto-ni-naru",
+   "issue": "nuance_tags [\"humility\",\"politeness\"] misuse the enum relative to every other point that carries them. In batches 08/11/12/18/22 \"humility\" marks actual 謙譲語 surface forms (ございます, いたします, 〜ていただけませんか, 〜のが下手), and \"politeness\" marks polite-register forms. This record's register field is [\"plain\"] and the pattern itself is plain ことになる; the modesty the record describes is a pragmatic effect of choosing it over ことにする, not a humble/polite form. As tagged, a consumer filtering nuance_tags=humility to build a keigo lesson pulls in a plain-form N4 pattern. The tags are record-grounded (the nuance text does say \"out of modesty\" / \"more polite\") but the enum values do not mean that here.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:kyuu-ni",
+   "issue": "The single variant is [na-adjective, to-adverbial] with no token pinning the lexeme 急, so nothing mechanical in the record identifies this grammar point. Executed on the test na-adjective 静か it returns 静かに — grammatical, but that is the generic な-adjective adverbial rule (already encoded as its own point), not 急に \"de repente\". A generator can only reach 急に if 急 is fed in from outside the steps. Every other lexical adverb in the pass took steps_unavailable for exactly this reason — いつも (batch-06), まだ (batch-07), とても (batch-10), ぜひ / ぜんぜん (batch-25) — including きっと in this same batch, so 急に is handled inconsistently with its own neighbours.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:mitai-ni",
+   "issue": "Coverage gap vs the record, not a wrong rule. The record's formation is \"[Substantivo / verbo ou adjetivo na forma simples] + みたいに\" and its ONLY verb example is a plain past-NEGATIVE: 知らなかったみたいに話す. The two verb variants emitted cover only to-dictionary (書く→書くみたいに) and to-ta-form (食べる→食べたみたいに), so the record's own worked example 知らなかったみたいに (and 知らないみたいに) is unreachable from the steps. Every form the steps do generate is grammatical (書くみたいに / 食べたみたいに / 学生みたいに / 静かみたいに / 高いみたいに all verified). Fix would be adding a negative branch (to-nai-stem + い / かった) rather than changing anything already present.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:nakereba-naranai",
+   "issue": "Asymmetric with its sibling in the same batch. The record's formation opens \"Igual ao anterior\" / \"Same as the previous one\" — the previous record (gram:nakereba-ikenai) explicitly extends to い-adjectives, な-adjectives and nouns (元気じゃなければいけない), and batch-20 correctly emits all four bases there. Here only base verb is emitted, so 高くなければならない / 静かじゃなければならない / 学生じゃなければならない are unreachable while their いけない counterparts are reachable, from records that state the same rule. The verb steps themselves execute correctly (書かなければならない, 食べなければならない, しなければならない, 来(こ)なければならない).",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:te-oku",
+   "issue": "The two contraction variants encode replace-ending with token \"て→とく\" and \"で→どく\" — a from→to instruction inside the single token slot, not a token. The op signature is {base?, op, token?}: replace-ending has exactly one token, so a consumer takes it as the replacement ending. Executed literally on 書く: to-te-form gives 書いて, then replacing the ending with the string \"て→とく\" yields 買って→とく / 書いて→とく. This is the F6 instruction-as-value shape in a mechanical field, and the same run uses the plain-value convention for the same op elsewhere (token \"がる\", \"くて\"), so the two encodings cannot both be right. Fix: token \"とく\" / \"どく\", with the て vs で condition carried by splitting the variants (which this record already does correctly).",
+   "severity": "major",
+   "bad_output": "買って→とく"
+  },
+  {
+   "slug": "gram:te-shimau-chau",
+   "issue": "Same defect as gram:te-oku: four variants use replace-ending with tokens \"て→ちゃう\", \"で→じゃう\", \"て→ちゃった\", \"で→じゃった\". Applied literally, replace-ending substitutes the ending with the whole token string, so 食べる → 食べて → 食べて→ちゃう. The grammar underneath is correct — the voiced and unvoiced cases are properly split into separate variants, so no *読んちゃう is licensed — but the token values are unparseable by a uniform consumer. Fix: tokens \"ちゃう\" / \"じゃう\" / \"ちゃった\" / \"じゃった\".",
+   "severity": "major",
+   "bad_output": "食べて→ちゃう"
+  },
+  {
+   "slug": "gram:te-sumimasen",
+   "issue": "usage_contexts is [spoken, business], but variant 3 emits 〜てごめんなさい, which the record's own formation field explicitly marks as casual (\"〜てごめんなさい / 〜てごめん (casual)\"). Contexts are point-level, so every variant inherits business, and a business-context selector would surface 遅れてごめんなさい alongside 遅れて申し訳ありません. The enum has casual-friends and it is unused here.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:te-kureru",
+   "issue": "Variant 5 emits 〜てくださる, which the record's formation labels \"Versão respeitosa, quando o favor vem de um superior\". くださる is 尊敬語, the enum carries an exact tag (honorific), and it is not applied — nuance_tags is [request] only. The request tag itself is grounded (formation cites 〜てくれない？), so this is an omission rather than a wrong tag.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:te-morau",
+   "issue": "Variants 3 and 5 emit 〜ていただく and 〜ていただけますか, which the record's formation labels \"Versão respeitosa\". いただく is 謙譲語 and the enum carries an exact tag (humility) that is unused — nuance_tags is [request] only. Same omission class as gram:te-kureru's missing honorific.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:sou-ni-sou-na",
+   "issue": "The 7th variant encodes the record's LEXICAL exception (\"Exceções: いい → よさそう\") as a productive ending-replacement over the whole i-adjective class: {base:\"i-adjective\", op:\"replace-ending\", token:\"いい→よさそう\"} + append \"な\". Applied literally to any i-adjective whose surface form ends in いい, it fires. かわいい is stored in this very corpus as an N5 i-adjective (corpus/vocab/n5.json, vocab:1577200, adj_class \"i_adj\"), so a generator joining these steps to the vocab registry gets かわ + よさそう + な = *かわよさそうな. The general variant (い→そう) would have produced the correct かわいそうな, but a longest-match applier must prefer いい→そう... いい→よさそう, so the exception wins and licenses the wrong form. Same defect shape as the ちゃいけない case: an exception stated for one lexeme re-expressed as a rule over a whole part of speech. The variant schema has no lexical-scope field (variant keys across all 33 batches are only base/steps/example), so the fix is to drop this variant and record いい→よさそう / かっこいい・気持ちいい as a note, or restrict it to a whole-word replacement rather than an ending match.",
+   "severity": "critical",
+   "bad_output": "かわよさそうな"
+  },
+  {
+   "slug": "gram:sou-ni-sou-na",
+   "issue": "The 8th variant mis-targets the record's other exception. The record's \"ない → なさそう\" is about the NEGATIVE ない (高くない → 高くなさそう, 行かない → 行かなさそう) — its own explanation contrasts stem-based 様態 そう with the full-clause 報告 そうだ, and ない there is the negative auxiliary. Encoding it as {base:\"i-adjective\", op:\"replace-ending\", token:\"ない→なさそう\"} does two wrong things: (a) it never reaches the case it exists for, because no verb variant carries it, so 行かない → 行かなさそう and 高くない → 高くなさそう are unreachable from these steps; (b) it instead fires on lexical -ない adjectives, where the applier must choose between it and the general い→そう rule with no data to decide — 汚い yields きたなさそうな where dictionaries give きたなそう. Not a hard ungrammaticality, so minor, but the steps do not derive from what the record actually says.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:sou-ni-sou-na",
+   "issue": "The two exception variants encode LEXEME-specific irregularities as class-wide string rules: base is \"i-adjective\" with replace-ending \"いい→よさそう\" and \"ない→なさそう\". The record's own formation says these are exceptions for the words いい and ない, not for the い-adjective class. Executed literally, they fire on any い-adjective whose surface merely ENDS in いい/ない: かわいい ends in いい, so the rule yields *かわよさそうな (the correct derivation is the general い→そう rule); 汚い(きたない) ends in ない, so it yields *きたなさそうな where the standard form is 汚そう. Nothing in the emitted structure tells a consumer these two variants are lexically scoped while the coexisting general variant (い→そう, base i-adjective) is productive, so a program has no way to pick correctly — a most-specific-suffix-match picks the wrong one. Note the productive variants are all correct: masu-stem+そうな/そうに gives 書きそうな・食べそうな・しそうな・きそうな, い→そう gives 高そうな/高そうに, na-adj gives 静かそうな/静かそうに, and noun is correctly not claimed. Fix: scope the two exception variants to the lexemes いい/ない (or drop them from variants and leave the irregulars to prose), because base \"i-adjective\" claims far more input than they accept.",
+   "severity": "major",
+   "bad_output": "かわよさそうな (from かわいい); きたなさそうな (from 汚い)"
+  },
+  {
+   "slug": "gram:n3-tsumori-deshita",
+   "issue": "Variant 2 is [to-nai-stem] + append \"ないつもりでした\", which doubles the な. Under the op semantics the prompt itself defines (なければいけない = to-nai-stem + \"ければいけない\", which forces to-nai-stem(書く) = 書かな, i.e. the ない-form minus its final い), and under the convention 50 of the 61 existing to-nai-stem steps in batches 01-33 follow (…+\"い\"→書かない, …+\"かった\"→書かなかった, …+\"くてもいい\"→書かなくてもいい, na-adj …+\"くてもいい\"→静かじゃなくてもいい), executing this sequence yields 書か-な + ないつもりでした. The token must be \"いつもりでした\" — which is exactly what the direct sibling record gram:tsumori (batch-10) already uses: to-nai-stem + \"いつもりです\" → 書かないつもりです. Same bad output for every base it claims: 食べる → *食べなないつもりでした, する → *しなないつもりでした, くる → *こなないつもりでした. The declared example 書かないつもりでした is NOT what the steps produce.",
+   "severity": "critical",
+   "bad_output": "*書かなないつもりでした"
+  },
+  {
+   "slug": "gram:n3-uchi-ni",
+   "issue": "Variant 2 is [to-nai-stem] + append \"ないうちに\" — the same doubled な. to-nai-stem(降る) = 降らな under the convention the prompt's なければいけない example establishes and that the rest of the corpus follows (batch-27 gram:n3-mama uses \"いまま\", batch-28 gram:n3-nai-to uses \"いと\", batch-33 gram:n3-you-ni-2 uses \"いように\"), so the sequence executes to 降らな + ないうちに. The token must be \"いうちに\". Same bad output for the other bases: 書く → *書かなないうちに, 食べる → *食べなないうちに, する → *しなないうちに, くる → *こなないうちに. The declared example 降らないうちに is not what the steps generate. (The other five variants of this point all execute correctly: 話しているうちに, 降っていないうちに, 熱いうちに, 静かなうちに, 学生のうちに.)",
+   "severity": "critical",
+   "bad_output": "*降らなないうちに"
+  },
+  {
+   "slug": "gram:n3-tsumori-deshita",
+   "issue": "Variant 3 ([to-ta-form] + \"つもりでした\" → 書いたつもりでした) is grammatical Japanese but is not this record's pattern. The record's formation field lists only dictionary-form and Verbo-ない; 〜たつもりでした appears solely in the nuance field, where the record explicitly separates it as a different meaning — 'eu achava que tinha feito (mas não tinha)', uma convicção equivocada, diferente do simples plano não realizado. Filing it as an unmarked third variant of a point labelled 'eu pretendia / eu ia' means a generator asked for 'I intended to write (but didn't)' can emit 書いたつもりでした, which means 'I was under the impression I had written it'. Either drop it or keep the two meanings apart.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:to-iu",
+   "issue": "structure_pattern is ～という～ and the record's own formation is \"[Nome/citação] + という + [substantivo]\" (田中さんという人, 「猫」という映画, 日本は安全だという話) — the head noun is obligatory. Both variants stop at という, so the steps generate a bare attributive fragment and the stored examples (田中さんという, 日本は安全だという) are truncated versions of the record's own examples with the head noun cut off. A consumer generating a target form from these steps would present 田中さんという as a complete answer. Either add a final slot for the modified noun or narrow the example to something that legitimately ends in という.",
+   "severity": "minor",
+   "bad_output": "田中さんという"
+  },
+  {
+   "slug": "gram:te-morau",
+   "issue": "nuance_tags is [\"request\"] only, but two of the five emitted variants are 〜ていただく and 〜ていただけますか, which the record's formation explicitly labels \"Versão respeitosa\" and the nuance field repeats (\"em situação de respeito, prefira 〜ていただく\"). The closed enum carries \"humility\" and \"politeness\", and the sibling record gram:te-itadakemasen-ka (batch-22) is tagged [\"request\",\"politeness\",\"humility\"] for the same いただく family. The batch also lists \"business\" in usage_contexts, which only follows from those keigo variants — so the point acknowledges the register in one mechanical field and drops it in the other. A keigo-filtered query over nuance_tags misses this point.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:te-kureru",
+   "issue": "Same species as te-morau: nuance_tags is [\"request\"] only, while the variant list emits 〜てくださる, which the record's formation calls \"Versão respeitosa, quando o favor vem de um superior\" — \"honorific\" is in the closed enum and is used for exactly this in batch-21 (gram:o-kudasai-2). Additionally, \"request\" is drawn from a single aside in the formation field (\"Para pedidos, a negativa 〜てくれない？ é comum\"), whereas the record's explanation and nuance fields are entirely about direction of benefit and gratitude (\"a ação chega até você como um gesto bondoso\", contrast with 〜てあげる/〜てもらう). The one tag carried is the record's secondary sense, not its primary one.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-tsumori-deshita",
+   "issue": "Variant 2 (negative) is [{base:verb, op:to-nai-stem},{op:append, token:\"ないつもりでした\"}]. Executed literally, to-nai-stem yields the nai-form minus い (書か-な / 食べ-な / し-な / こ-な), which is the semantics the task spec fixes with its own worked example (なければいけない = to-nai-stem + append \"ければいけない\" ⇒ 書かな+ければいけない) and the semantics 51 variants across batches 02-33 use (+\"い\"→書かない, +\"かったら\"→行かなかったら, +\"くてもいい\"→書かなくてもいい, +\"いで\"→待たないで). Appending a token that itself begins with ない therefore doubles the negative. The direct sibling record batch-10 gram:tsumori encodes the identical shape correctly as to-nai-stem + \"いつもりです\" → 書かないつもりです. The variant's own `example` field (書かないつもりでした) is right, which is exactly what hides the defect: the example does not follow from the steps. Fix: token \"いつもりでした\".",
+   "severity": "critical",
+   "bad_output": "書かなないつもりでした (also 食べなないつもりでした, しなないつもりでした, こなないつもりでした)"
+  },
+  {
+   "slug": "gram:n3-uchi-ni",
+   "issue": "Variant 2 is [{base:verb, op:to-nai-stem},{op:append, token:\"ないうちに\"}]. Same defect as gram:n3-tsumori-deshita: to-nai-stem already produces 降ら-な / 書か-な / 食べ-な / し-な / こ-な per the spec's なければいけない example and the 51 sibling variants, so a token starting with ない doubles the negative. Compare batch-28 gram:n3-nai-to, which encodes the same 〜ない+particle shape as to-nai-stem + \"いと\" → 書かないと. The stated example 降らないうちに is correct but is not what the steps generate. Variants 1, 3, 4, 5 and 6 of this record all execute correctly (話しているうちに, 降っていないうちに, 高いうちに, 静かなうちに, 学生のうちに) and match the record's formation field. Fix: token \"いうちに\".",
+   "severity": "critical",
+   "bad_output": "降らなないうちに (also 書かなないうちに, 食べなないうちに, しなないうちに, こなないうちに)"
+  },
+  {
+   "slug": "gram:n3-to-iu-no",
+   "issue": "The record's formation says the clause closes with だ (informal) or です (formal) as a free alternation over all four bases, but the variant list gives the です form only for verb and noun (variants 5 and 6). The i-adjective and na-adjective variants exist only in the だ form, so a consumer generating from these steps can build 高いというのだ and 学生だというのです but never 高いというのです or 静かだというのです. Nothing ungrammatical is produced — this is a coverage asymmetry, not a false rule. Either add the two missing polite variants or drop variants 5 and 6 and model だ/です as a single alternation.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-ni-shite-wa",
+   "issue": "nuance_tags contains \"concession\", which the record's own nuance field explicitly denies. That field reads: \"Armadilha PT: não confunda com にしては ('para/considerando', que marca surpresa); にしても é concessivo ('mesmo que')\" — i.e. the record states that にしても is the concessive one and にしては marks surprise against a standard. The batch nevertheless tags both points with \"concession\" (n3-ni-shitemo: [\"concession\"], n3-ni-shite-wa: [\"concession\",\"comparison\"]), collapsing exactly the distinction the record warns about. Any consumer filtering by nuance_tags=concession pulls にしては into a concessive bucket and a drill generator would present it as \"mesmo que\". \"comparison\" alone already covers the expectation-vs-reality contrast the explanation describes; \"concession\" should be dropped. Not a formation defect — no wrong Japanese is produced — so severity is minor.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-ni-shite-wa",
+   "issue": "The na-adjective variant emits 静かにしては, which is the exact ambiguity the same author declared blocking one record earlier. In n3-ni-shitemo they wrote steps_unavailable because 静かにしても \"parses as the て-form of 静かにする plus も ... rather than the concessive this record teaches, so a generator would emit a well-formed sentence carrying the wrong construction.\" 静かにしては has the identical double parse (静かにする + ては = 'if you make it quiet'), yet it is encoded here. The stated reason for the split is that this record says 'sem な' while the sibling is silent, but that only settles whether な is kept — it does not remove the collision with 静かにする, which is what made the sibling unencodable. One of the two decisions is wrong and they should be reconciled. The output string is well-formed under at least one parse, so this is not critical; it is a generation hazard rather than an ungrammatical form.",
+   "severity": "minor",
+   "bad_output": "静かにしては"
+  },
+  {
+   "slug": "gram:n3-rashii",
+   "issue": "nuance_tags includes \"comparison\", which the record does not support for THIS らしい. The explanation is purely indirect-source hearsay (\"informação vem de algo que você ouviu, leu ou soube por uma fonte indireta, não de observação direta\") — covered by hearsay + conjecture. The only comparison-flavoured content in the record is (a) a contrast drawn against ようだ/みたいだ, which is meta-commentary about a different grammar point, and (b) the record's explicit statement that there is \"um らしい diferente que significa 'típico de'\" (男らしい). Tagging comparison here imports the nuance of a pattern the record deliberately walls off, and looks derived from the label \"parece que\" rather than from the explanation. Formation steps are unaffected and correct.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-ta-tokoro",
+   "issue": "nuance_tags is [\"completion\"], which is the tag that naturally denotes 〜たところだ / 〜たばかり (\"acabar de fazer\") — exactly the reading the record's own nuance warns against: \"Cuidado para não confundir com outros usos de ところ: ～ているところ (estar no meio de algo) e ～たところだ (acabar de fazer) têm sentidos diferentes.\" The pattern's actual nuance per the explanation is discovery/finding-out after a completed action (\"ao fazer X, descobri/aconteceu Y\", \"constatou um fato inesperado\"), for which the closed enum has no member; an empty nuance_tags would be safer than one that collapses this record into the neighbour it is explicitly distinguished from. Formation steps (to-ta-form + ところ) are correct for all four verb classes.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-ni-shite-wa",
+   "issue": "The na-adjective variant {base:\"na-adjective\", op:\"append\", token:\"にしては\"} applied to 静か produces 静かにしては, whose live parse is 静かに + して + は — the て-form of 静かにする plus は, 'as for making it quiet' — not the surprise/concession construction this record teaches. A generator would emit a well-formed sentence carrying the wrong construction. Three independent confirmations that this is a real defect and not a judgement call: (1) the SAME batch file flags the identical string for the sibling point gram:n3-ni-shitemo, whose steps_unavailable reads 'Dropping it yields 静かにしても, a string that parses as the て-form of 静かにする plus も ... so a generator would emit a well-formed sentence carrying the wrong construction' — the author reasoned it through, then encoded the は twin anyway on the strength of the record's wording; (2) this corpus already encodes 静かにする as to-adverbial > append(する) at batch-16 gram:gp-80, so the colliding parse is live in the same data; (3) it is the only na-adjective attachment of this shape among all 495 points — every sibling connective keeps な, including わりには, which THIS record's own nuance field names as にしては's near-synonym (batch-33 gram:n3-wari-ni-wa => 静かなわりには; also 暇なくせに, 静かなせいで, and 静かなおかげで in this very batch). The record's formation field ('adjetivo-な (sem な) + にしては', corpus/grammar/n3.json id 441) is itself defective — な-adjectives are not listed as an attachment for にしては in standard references. Per failure mode F3, that upstream error was laundered into machine steps rather than flagged; the correct output was the same steps_unavailable the author used one point later, or dropping the na-adjective variant. Verb, i-adjective and noun variants of this point are correct (書くにしては, 書いたにしては, 安いにしては, 初心者にしては).",
+   "severity": "critical",
+   "bad_output": "静かにしては"
+  },
+  {
+   "slug": "gram:n3-tate",
+   "issue": "The single variant claims base \"verb\" (unrestricted) with to-masu-stem + たて, but the record's own nuance explicitly states the pattern is limited to a handful of established production verbs and that 食べたて is NOT said (\"Limita-se a poucos verbos consagrados de ações com resultado físico e perceptível; não se diz 食べたて, por exemplo\"). Executed literally: 焼く→焼きたて OK, 洗う→洗いたて OK, but 食べる→食べたて (the record's own counterexample), する→したて, くる→きたて are not Japanese. The morphology is right and the base enum has no way to say \"verb, lexically restricted\", so this is a scope/annotation gap rather than a wrong rule — but as it stands a consumer generating drills from these steps will emit the exact form the record warns against. Fix by recording the restriction (e.g. the same steps plus an explicit lexical-scope note, or steps_unavailable citing the closed verb set); do not simply drop the steps, since the 焼き/作り/洗い cases are correct.",
+   "severity": "minor",
+   "bad_output": "食べたて / したて / きたて"
+  },
+  {
+   "slug": "gram:n3-shika-nai",
+   "issue": "The second variant claims base \"noun\" with steps [{base:noun,op:none},{op:append,token:\"しかない\"}]. Executed against the mandated noun test case 学生, it emits 学生しかない. The ない in this pattern is the negative of the existential ある, so with an animate noun the required form is 学生しかいない — the steps produce the wrong existential verb. The record's own formation prose (\"substantivo + しかない (só há X). Com substantivos contáveis e quantidades é onde aparece o sentido de 'só tem/restam'\") explicitly scopes the noun use to countable nouns, and 学生 is countable, so the record does not narrow the base away from the failing class either. Only the record's own example 千円しかない (inanimate) was tested by the author. Fix: either narrow the noun variant to inanimate/quantity nouns, or split into two variants — inanimate → append しかない, animate → append しかいない. The verb variant (書くしかない / 食べるしかない / するしかない / 来るしかない) is correct and unaffected.",
+   "severity": "critical",
+   "bad_output": "学生しかない"
+  },
+  {
+   "slug": "gram:n3-rashii",
+   "issue": "nuance_tags includes \"comparison\", which the record's explanation does not support. This record's explanation is exclusively about indirect information (\"a informação vem de algo que você ouviu, leu ou soube por uma fonte indireta\"), which \"hearsay\" and \"conjecture\" already cover correctly. The only comparison-flavoured material in the record is (a) the nuance paragraph contrasting らしい with ようだ/みたいだ/そうだ, which is a didactic contrast between grammar points rather than a nuance the pattern expresses, and (b) the \"típico de / 男らしい\" sense, which the record itself labels \"um らしい diferente\" — a distinct grammar point. Tagging comparison here pulls a different point's semantics into this record's mechanical index, so a consumer querying comparison patterns gets hearsay-らしい back. Drop \"comparison\"; the steps themselves are all correct.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-kiri",
+   "issue": "Only the verb-た+きり variant is emitted. The record's own `formation` explicitly documents a second attachment the steps do not cover — \"Também aparece com substantivo + きり no sentido de 'apenas/só' (ex.: 二人きり)\" — and the `label` itself carries that sense (\"desde que (e nunca mais) / só (きり)\"). A noun variant [{base:'noun', op:'append', token:'きり'}] is derivable straight from the record (学生きり / 二人きり). As shipped, a generator consuming these steps cannot produce the 'só' half of the point the label advertises. Not a false rule — a coverage gap — but it is a gap the record itself supplies the material to close.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-hodo",
+   "issue": "The i-adjective variant's steps are correct (to-attributive + ほど is grammatical), but the chosen example 高いほど illustrates the PROPORTIONAL ほど, which this record explicitly excludes and which lives in its own corpus record. n3-hodo's nuance says: \"não confunda este ほど comparativo com o ほど proporcional de ば...ほど\", and gram:n3-ba-hodo (structure_pattern ～ば～ほど) exists as a separate point. 高いほど standalone reads as 'the more expensive, the...' — the neighbouring point — not as this record's comparative ('não tão... quanto') or extent ('a ponto de') senses. An extent-sense example (痛いほど type) would demonstrate the record's own scope. The steps need no change; the example does.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-kanarazushimo-towa-kagiranai",
+   "issue": "The record's structure_pattern and its single `forms` entry are 必ずしも～とは限らない, but the four variants encode only the ～とは限らない tail; nothing carries the 必ずしも head that names the point. This is the same adverb-plus-tail shape that this very batch declared unrepresentable three times (どんなに～ことか, どんなに～ても, 決して～ない all got steps_unavailable with the reason 'the closed op enum has no prepend operation'), so the batch treats one structural class two different ways. Executing the steps is harmless in itself — 行くとは限らない, 高いとは限らない, 便利とは限らない, 学生とは限らない are all grammatical, and the record's own nuance says とは限らない can stand alone — but a consumer generating a production drill for this slug will emit the bare tail while labelling it 必ずしも～とは限らない, which the record calls the form that 'quase sempre aparece junto'. Either add a steps_unavailable-style note about the dropped adverb slot or apply the same verdict used for 決して～ない.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-kke",
+   "issue": "nuance_tags is [\"conjecture\"], which the record does not support. Its explanation defines っけ as memory retrieval — 'usada quando a pessoa tenta lembrar ou confirmar algo que sabia mas esqueceu no momento' — and the nuance field then explicitly rules out the neighbouring reading it could be confused with ('não é um simples \"né?\" de confirmação social (isso é ね); っけ carrega especificamente a ideia de \"eu esqueci e estou tentando resgatar da memória\"'). Conjecture is inference about an unknown proposition; っけ is recall of a known one, so the tag looks derived from the interrogative label rather than from the record. The closed enum has no recall/confirmation value, and nuance_tags accepts zero entries, so [] would be the honest encoding. As it stands, a query for conjecture points groups っけ with かなあ, はずだ and でしょう. The formation_steps themselves are correct — 書いたっけ, 高かったっけ, 静かだっけ, 学生だっけ, 書きましたっけ, 学生ですっけ all match the record's formation field.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-mama",
+   "issue": "Corpus-wide ambiguity in the `to-nai-stem` op boundary, provable at this exact slug. Batch-27 treats `to-nai-stem` as yielding the stem of the NAI-adjective (書かな / 食べな / しな / こな) and carries the final い inside the append token (\"いまま\"). Batch-19's `gram:mama` — the same grammar point at N4 — encodes the identical formation the other way: `to-nai-stem` + token \"ないまま\", i.e. the op yields 書か / 食べ. Both files claim the same op name with incompatible outputs, so under any single interpreter definition at most one executes correctly; the loser emits *食べいまま or *食べないないまま. Batch-27 is on the SPEC-CONFORMANT side — the authoring prompt's own worked example (なければいけない = to-nai-stem + \"ければいけない\") only produces 書かなければいけない if the stem is 書かな, and batch-27 matches that, as do batches 05, 08, 12, 13, 14, 15, 20, 23, 25, 26, 28, 31, 33. The divergent minority is batch-06 (gp-7, hou-ga-ii), batch-19 (koto-ga-aru, koto-ni-naru, koto-ni-suru, mama), batch-24 (you-ni-suru, you-ni-you-na) and batch-32 (n3-tsumori-deshita, n3-uchi-ni). Flagging so the fix is applied to those batches and NOT to batch-27, and so the op enum gets a written definition before any generator consumes it. Applied literally under batch-27's own definition, all four of this point's to-nai-stem outputs are grammatical (書かないまま, 食べないまま, しないまま, こないまま).",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-tate",
+   "issue": "The single variant claims base \"verb\" with no restriction: to-masu-stem + たて. Executed literally on the required test bases it yields 書きたて, 食べたて, したて, きたて. The record's own nuance field explicitly rules the second one out: \"Limita-se a poucos verbos consagrados de ações com resultado físico e perceptível; não se diz 食べたて, por exemplo.\" So the steps generate a form the record itself names as impossible — an F1/F5 over-generation (a general rule contradicted by the entry's own text). The morphology is correct; the defect is that ～たて is lexically restricted to a closed set of production verbs (the record names only 焼く/作る/洗う) and the steps assert full productivity over all verbs. Fix: either steps_unavailable citing the lexical restriction, or keep the steps and narrow the claim so a generator cannot apply them to arbitrary verbs.",
+   "severity": "critical",
+   "bad_output": "食べたて"
+  },
+  {
+   "slug": "gram:n3-te-iru",
+   "issue": "nuance_tags is [\"continuation\"] only, which encodes just the progressive half of the record and omits the half the record spends its PT trap warning about. The explanation states both senses — \"Marca uma ação em andamento (...) ou o estado resultante de uma ação já concluída\" — and the nuance is entirely about the second: \"～ている nem sempre é o nosso gerúndio. Com verbos como 知る, 結婚する, 死ぬ ele indica estado (知っている = sei, 結婚している = sou casado), não ação em curso.\" The closed enum carries \"completion\", which is the tag for the resultative-state reading. As tagged, a consumer filtering by nuance sees ている as purely durative, i.e. exactly the misreading the record exists to correct. Steps themselves (ている / ていた / てる, incl. the で-voicing via to-te-form) all execute correctly.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-mo",
+   "issue": "Partial encoding of a two-slot correlative, reported as complete. The record's structure_pattern is ～ばかりか～も and its formation ends 'o segundo membro recebe a partícula も. Padrão: A ばかりか B も.' The five variants encode only the A-half (書くばかりか / 高いばかりか / 静かであるばかりか / 学生ばかりか / 学生であるばかりか — all grammatical when executed against 書く・食べる・する・くる・高い・静か・学生), and steps_unavailable is left \"\", which signals full coverage of a point whose identity is the pairing (label: 'não só... como também (ばかりか... も)'). This diverges from how the corpus handles the structurally identical 'not only A but also B' frame: batch-33 gram:n3-wa-mochiron-mo (～はもちろん～も) is declared steps_unavailable as 'Two-slot frame, not a single derivation', and batch-29 gram:n3-no emits a partial variant WITH a steps_unavailable note ('Encoded as far as a suffixing rule reaches'). Fix is either of those two treatments — do not add the second slot as an append token. Note this is coverage/labelling only: nothing here licenses a wrong form, and the な-adjective slot was correctly restricted to である (bare 静かばかりか would have been ungrammatical, and the record's ambiguous 'na+adjetivo ... podem levar である' could have invited it).",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-desu-kara",
+   "issue": "The steps encode the clause-FINAL attachment (Clause A + ですから), which is what the record's `formation` field describes and matches its example 寒いですから exactly - but they do not match the record's `structure_pattern` and `forms`, both of which are \"ですから～\" with the tilde AFTER, i.e. the sentence-initial connective (\"portanto/então\", which the pt-BR label also glosses). All four variants produce grammatical Japanese (書きますから, 寒いですから, 静かですから, 学生ですから), so nothing wrong is licensed; the defect is that the record is internally ambiguous (structure_pattern/forms say initial, formation says final) and the output silently picked one reading without flagging the other as unrepresented. A consumer generating a drill from these steps would target 書きますから for a point whose stored `form` is \"ですから～\". Either add a steps_unavailable-style note that the sentence-initial ですから sense cannot be encoded (no prepend op), or the record needs an upstream fix.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-ba-yokatta",
+   "issue": "The record's formation says \"Adjetivos e substantivos aparecem com なら + よかった\" (adjectives, plural — both types — and nouns). The batch emits variants for verb, na-adjective and noun, but no i-adjective variant at all: neither 高いならよかった (the なら route the record names) nor 高ければよかった (the ば route the pattern is named after). A consumer asked to build ばよかった on 高い has nothing to apply. Nothing ungrammatical is generated — this is under-coverage, not a false rule — but the steps do not match what the record's own formation field states.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-nanka",
+   "issue": "Base coverage does not match the record's own formation field. The record licenses FOUR attachments — 'Anexa-se a substantivos (substantivo + なんか) e tambem a verbos e adjetivos na forma simples (informal): verbo-simples + なんか, adjetivo-い + なんか, adjetivo-な + なんか', with its own example ピアノなんかも弾ける — but the output emits only the noun variant and leaves steps_unavailable as the empty string, so nothing records that the three documented attachments were dropped on purpose. Sibling batches emit one variant per documented base for the same kind of particle (gram:n3-kurai -> noun/verb/i-adjective; gram:n3-bakari -> noun + verb-te). Nothing ungrammatical is generated, so this is a coverage/traceability gap, not an F5: either add the verb (to-dictionary + なんか -> 書くなんか), i-adjective (高いなんか) and na-adjective (静かなんか) variants, or keep noun-only and say in steps_unavailable why the record's plain-form attachments were judged too shaky to emit.",
+   "severity": "major",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-mo",
+   "issue": "The five variants encode only the first member of a two-member pattern and give no signal that they do. structure_pattern is ～ばかりか～も and the record's formation ends 'o segundo membro recebe a particula も. Padrao: A ばかりか B も', but the steps stop at 書くばかりか / 静かであるばかりか and steps_unavailable is empty, so a consumer reading the record programmatically cannot tell the も member exists. Precedent runs both ways and either is acceptable: gram:n3-wa-mochiron-mo (～はもちろん～も, structurally identical: suffix on member A, も on member B) was given steps_unavailable as a two-slot frame, while gram:n3-no emitted its one expressible variant AND a steps_unavailable note ('Encoded as far as a suffixing rule reaches'). The defect here is the empty note, not the variants — every emitted form is grammatical.",
+   "severity": "minor",
+   "bad_output": ""
+  },
+  {
+   "slug": "gram:n3-koto-wa-ga",
+   "issue": "OUT OF BATCH-28 SCOPE — upstream corpus defect found while resolving indices, reported because it has already SHIPPED into a source-of-truth file. corpus/grammar/n3.json carries F6 instruction-as-value in structure_pattern for three records outside this batch: gram:n3-koto-wa-ga (index 394) structure_pattern = 'pattern: \"～ことは～が\" — and apply the same fix to forms[0].form, which currently repeats the malformed \"～ことはが\".'; gram:n3-kurai-wa-nai (index 397) = 'pattern: \"～くらいは～ない\" — and fix forms[0].form, which carries the same erroneous \"～くらい～は～ない\".'; gram:n3-tatoe-temo (index 453) = 'たとえ～ても (apply to pattern, forms[0].form, and corpus/grammar/n3.json structure_pattern; siblings ～めったに～ない, ～それと～, ～それとも～, ～どんなに～ことか carry the same bug)'. An edit order was written into the value slot instead of the value, and the forms[0].form each one names is still malformed. All fifteen batch-28 records (405..419) have clean structure_pattern values; batch-28.json itself is not affected.",
+   "severity": "critical",
+   "bad_output": ""
+  }
+ ]
+}

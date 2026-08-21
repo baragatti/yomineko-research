@@ -1,0 +1,488 @@
+{
+  "batch": 32,
+  "points": [
+    {
+      "slug": "gram:n3-to-iu-no",
+      "steps_unavailable": "",
+      "nuance_tags": ["emphasis", "cause", "hearsay"],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "という" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "だ" }
+          ],
+          "example": "書くというのだ"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "という" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "だ" }
+          ],
+          "example": "高いというのだ"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だという" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "だ" }
+          ],
+          "example": "静かだというのだ"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だという" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "だ" }
+          ],
+          "example": "学生だというのだ"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "という" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "です" }
+          ],
+          "example": "書くというのです"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だという" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "です" }
+          ],
+          "example": "学生だというのです"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-to-iu-no-wa",
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "academic"],
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "という" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "は" }
+          ],
+          "example": "敬語というのは"
+        },
+        {
+          "base": "clause",
+          "steps": [
+            { "base": "clause", "op": "append", "token": "という" },
+            { "op": "nominalize", "token": "の" },
+            { "op": "append", "token": "は" }
+          ],
+          "example": "毎日走るというのは"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "とは" }
+          ],
+          "example": "敬語とは"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-to-iu-to",
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "というと" }
+          ],
+          "example": "日本料理というと"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "といえば" }
+          ],
+          "example": "日本料理といえば"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-to-iu-yori",
+      "steps_unavailable": "",
+      "nuance_tags": ["comparison"],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "というより" }
+          ],
+          "example": "書くというより"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "というより" }
+          ],
+          "example": "高いというより"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だというより" }
+          ],
+          "example": "静かだというより"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "というより" }
+          ],
+          "example": "静かというより"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だというより" }
+          ],
+          "example": "学生だというより"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "というより" }
+          ],
+          "example": "学生というより"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-to-shitara",
+      "steps_unavailable": "",
+      "nuance_tags": ["condition"],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "としたら" }
+          ],
+          "example": "書くとしたら"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "としたら" }
+          ],
+          "example": "高いとしたら"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "append", "token": "だとしたら" }
+          ],
+          "example": "静かだとしたら"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "だとしたら" }
+          ],
+          "example": "学生だとしたら"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-to-shite",
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "business", "academic"],
+      "variants": [
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "として" }
+          ],
+          "example": "学生として"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "としては" }
+          ],
+          "example": "学生としては"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-tokoro-datta",
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ところだった" }
+          ],
+          "example": "転ぶところだった"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いるところだった" }
+          ],
+          "example": "食べているところだった"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-tokoro-ga",
+      "steps_unavailable": "Sentence-initial conjunction. The record's own formation states it opens a NEW sentence between two complete clauses (Frase 1. ところが Frase 2) and is explicitly \"não um sufixo preso a um verbo\"; its nuance field warns against the exact glued shape いつも遅刻するところが. The closed op enum only transforms a base and appends material to its right, with no prepend operation, so any step list would have to attach ところが after a clause — reproducing the error the record itself flags.",
+      "nuance_tags": ["concession"],
+      "usage_contexts": ["spoken", "written"],
+      "variants": []
+    },
+    {
+      "slug": "gram:n3-tokorode",
+      "steps_unavailable": "Invariable sentence-initial transition word. The record's formation says it appears at the start of a new utterance followed by the new topic (ところで + assunto novo) and that it \"não se liga a verbo ou adjetivo anterior; é uma palavra de transição independente\". There is no base to transform, and the op enum has no prepend operation.",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": []
+    },
+    {
+      "slug": "gram:n3-toku",
+      "steps_unavailable": "",
+      "nuance_tags": ["intention"],
+      "usage_contexts": ["spoken", "casual-friends"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "replace-ending", "token": "て→とく" }
+          ],
+          "example": "食べとく"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "replace-ending", "token": "で→どく" }
+          ],
+          "example": "読んどく"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-toori",
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written", "business"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "とおり" }
+          ],
+          "example": "言うとおり"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "とおり" }
+          ],
+          "example": "言ったとおり"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "とおりに" }
+          ],
+          "example": "言うとおりに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "とおりに" }
+          ],
+          "example": "言ったとおりに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のとおり" }
+          ],
+          "example": "予定のとおり"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のとおりに" }
+          ],
+          "example": "予定のとおりに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "どおり" }
+          ],
+          "example": "予定どおり"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "どおりに" }
+          ],
+          "example": "予定どおりに"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-tsuide-ni",
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "ついでに" }
+          ],
+          "example": "買い物に行くついでに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "ついでに" }
+          ],
+          "example": "買い物に行ったついでに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のついでに" }
+          ],
+          "example": "買い物のついでに"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-tsumari",
+      "steps_unavailable": "Invariable sentence-initial connective. The record's formation gives only sentence position (Frase A. つまり, Frase B) and states it opens the second clause, typically followed by a comma in writing; it attaches to no base and inflects nothing. The op enum has no prepend operation, so no ordered build sequence can place it.",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": []
+    },
+    {
+      "slug": "gram:n3-tsumori-deshita",
+      "steps_unavailable": "",
+      "nuance_tags": ["intention", "politeness"],
+      "usage_contexts": ["spoken", "written", "business"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-dictionary" },
+            { "op": "append", "token": "つもりでした" }
+          ],
+          "example": "書くつもりでした"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ないつもりでした" }
+          ],
+          "example": "書かないつもりでした"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-ta-form" },
+            { "op": "append", "token": "つもりでした" }
+          ],
+          "example": "書いたつもりでした"
+        }
+      ]
+    },
+    {
+      "slug": "gram:n3-uchi-ni",
+      "steps_unavailable": "",
+      "nuance_tags": [],
+      "usage_contexts": ["spoken", "written"],
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いるうちに" }
+          ],
+          "example": "話しているうちに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-nai-stem" },
+            { "op": "append", "token": "ないうちに" }
+          ],
+          "example": "降らないうちに"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            { "base": "verb", "op": "to-te-form" },
+            { "op": "append", "token": "いないうちに" }
+          ],
+          "example": "降っていないうちに"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            { "base": "i-adjective", "op": "append", "token": "うちに" }
+          ],
+          "example": "熱いうちに"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            { "base": "na-adjective", "op": "to-attributive" },
+            { "op": "append", "token": "うちに" }
+          ],
+          "example": "静かなうちに"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            { "base": "noun", "op": "append", "token": "のうちに" }
+          ],
+          "example": "学生のうちに"
+        }
+      ]
+    }
+  ]
+}

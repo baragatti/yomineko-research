@@ -17,6 +17,7 @@ export default [
   route("revisar", "routes/review.tsx"),
   route("pratica", "routes/practice.tsx"),
   route("pratica/conjugacao", "routes/conjugationDrill.tsx"),
+  route("pratica/papeis", "routes/roleDrill.tsx"),
   route("pratica/:mode", "routes/practiceSession.tsx"),
   route("simulado", "routes/exam.tsx"),
   route("simulado/:level", "routes/examPaper.tsx"),

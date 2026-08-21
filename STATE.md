@@ -7,6 +7,73 @@
 
 ## ▶ RESUME HERE
 
+> **2026-08-20 (ac) — ROADMAP E AND F MERGED INTO THE CORPUS. Role drills routed. Gate green, 20 hard
+> validators (three new). Both stopped workflows resumed to completion.**
+>
+> - **F merged (migration 007).** `pattern[]` and `clause_structure` now live on the sentence record and
+>   export to `corpus/sentences/bank.json` — 5,825 of 5,889. Before this, roadmap F existed only in
+>   `research/derived/` and nothing but the role builder could read it.
+>   - **The role mapper was reading the particle SURFACE and ignoring `function_type`, which every
+>     particle already carries.** から/case is an origin but から/conjunctive means "porque"; の/case
+>     links nouns but の/nominalizer modifies nothing; が/conjunctive is "mas", not a subject. 968 role
+>     labels were wrong. Roles now key on the (particle, function_type) PAIR.
+>   - **と was the worst of it and is now `to-phrase`, never a drill target.** It mapped to `with`, so
+>     the drill asked "qual parte é marcada por と (companhia ou par)?" of 花は切られるとすぐにしぼむ
+>     (conditional) and 早く起きろと父に言われた (quotative). `function_type` separates the conditional
+>     but NOT quotative from comitative — both are `case`, both 格助詞 in UniDic. The only field
+>     carrying the distinction is the pt-BR prose, which design/i18n.md forbids as a derivation source.
+>     A heuristic was tried and SCORED against that prose: 10 quotatives labelled `with`, 7 real
+>     comitatives lost (友達と話す trips the saying-verb test). Recorded in the builder docstring so it
+>     is not re-attempted. Recovering it needs a `sense` enum on the particle, i.e. an authoring pass.
+>   - **15 particles had a genuinely wrong `function_type`**, found by INTERSECTING two weak signals
+>     that fail independently (authored prose + token shape). Each alone was useless: prose alone gave
+>     90 candidates of which ~85 were the audit's own false positives (a cause-marking で/に IS 格助詞);
+>     shape alone drops 84 good genitives to catch 5 pronominal の. `fix_particle_function_type.py`.
+>   - Drill bank 5,911 → **5,358**. That is 553 removed, not lost: 319 と items were teaching a wrong
+>     role outright, plus nominalizer の, causal から, adversative が, and 〜てから (which is "after",
+>     not an origin — 93 origins attach to a nominal, all 11 particle-attached are 〜てから).
+>   - **13 clause_structure disputes, one checker only**, so consistency-of-citation was checked instead
+>     of trusting a single opinion. 10 applied, 3 held: naive citation-counting reads CONTRASTIVE
+>     citations backwards, and a construction survey over all 5,825 rows showed the あと/前に disputes
+>     had their premise inverted (8 of 9 noun-anchored あと are NOT subordinate-time). Held rows are a
+>     convention to decide, not a fact to apply → `clause_structure_review.json`.
+> - **E merged (migration 008), with 50 points deliberately WITHHELD.** 332 points carry
+>   `formation_steps`, 114 carry a stated `steps_unavailable` reason, 50 are withheld.
+>   - **The verifier EXECUTES each sequence** against 書く/食べる/する/くる/高い/静か/学生 rather than
+>     judging by eye. 157 problems over 101 points, 41 critical. It caught: `があります` with an
+>     unrestricted noun base → 学生があります (the exact error the record exists to prevent); gp-13 →
+>     本がいる, which additionally parses as 本が要る; gp-24 → いくない, which the record explicitly
+>     forbids; gp-41 → 飲んだり with no する; gp-7 using to-nai-stem opposite to 50 of the 61 other uses.
+>   - **Withheld = both checkers agreed, OR either called it critical.** They carry a reason instead of
+>     a rule. Merging them "to fix later" is wrong: a formation rule is consumed by GENERATORS, so a
+>     wrong one manufactures wrong Japanese for as long as it is there. → `grammar_formation_withheld.json`.
+>   - 1 point (`n3-zu-ni`) was never authored — 33 batches × 15 = 495, registry has 496. Recorded as a
+>     coverage gap, not hand-authored, because a rule no checker executed is the thing this pipeline exists to prevent.
+> - **Role drills routed: `/pratica/papeis`.** 5,358 items had a passing validator and no way to reach
+>   them. Round-robins over ROLES and allows one item per SENTENCE — a flat draw is 40% predicate at N5,
+>   and two items from one sentence let the learner answer the second by elimination.
+> - **Kanji grouping: consonant-row tiebreak + prefix-form rule.** 済ませる tied with す.まない and す.ます
+>   on shared prefix and lost to list order. A Japanese verb inflects WITHIN its consonant row, so at the
+>   divergence ませる continues す (さ-row, same stem) not な. Applied as a strict TIEBREAK, never a filter
+>   — as a filter it would lose 少.ない's legitimate 少なくとも. Also: a TRAILING hyphen marks a PREFIX
+>   form and nothing enforced it (59 readings), so 合's あい- claimed 場合/試合 where 合 is FINAL. Both
+>   guards now exclude the one-character word, where the kanji is simultaneously initial and final.
+>   Fixed 6 groupings, 5 of them flagged by the authoring pass: 済ませる, 楽しみ, 試合, 場合, 共.
+> - **CORRECTION to (ab) and to what was reported earlier this session:** the kanji grouping backlog is
+>   **46 flagged problems, not 1**. Roughly 29 still look live. Two attempts to classify them
+>   automatically both failed in instructive ways (notes complaining a slot is wrongly EMPTY resolve in
+>   the opposite direction), so `report_kanji_grouping_problems.py` emits all 46 with current group
+>   contents and leaves the judgement to a reader rather than publishing a wrong count.
+> - **`requirements.txt` added, and SudachiDict-full is PINNED to 20260428.** A fresh environment
+>   installed 20260723 and the gate failed on a corpus that had not changed: the dissection is STORED and
+>   validate.py re-tokenizes to compare, so a newer dictionary re-segments 一番 and reports four
+>   "tokenization mismatch (stored 7 vs 7)" errors. Re-tokenizing the bank is a deliberate migration, not
+>   a side effect of `pip install`.
+> - **Open:** the ~29 live kanji grouping problems; the 50 withheld formation points; 3 held clause
+>   disputes; 2 needs-human pairing rows; `gram:gp-115` forms[0] (needs owner sign-off); 1 needs-human
+>   romaji row; listening audio (owner will AI-generate after the research/papers are done) and R58
+>   read-aloud, which depends on it.
+
 > **2026-08-07 (ab) — ROADMAP C, D AND F ALL BUILT. Three planned-but-never-built items shipped, two of
 > them live in the app. Gate green throughout.**
 >

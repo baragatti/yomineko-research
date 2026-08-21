@@ -32,6 +32,8 @@ SUITE = [
     ("validate_exam_banks.py", "code"),
     ("validate_conjugation_exercises.py", "code"),
     ("validate_role_exercises.py", "code"),
+    ("validate_sentence_structure.py", "code"),
+    ("validate_grammar_formation.py", "code"),
     ("validate_speaking_path.py", "code"),
     ("validate_capabilities.py", "code"),
     ("audit_manifest.py", "code"),
@@ -41,8 +43,8 @@ SUITE = [
     ("validate.py", "code"),
     ("completeness_audit.py", "advisory"),
     ("detect_ai_tells.py", "advisory"),
-    # ADVISORY until the 49 known furigana gaps are repaired (32 empty reading="" + 17 truncated,
-    # over 7 lesson records). Promote to "code" once they are fixed, so regressions become hard failures.
+    # Was advisory while 49 furigana gaps were open (32 empty reading="" + 17 truncated over 7 lesson
+    # records). Those are repaired, so it gates: a regression is now a hard failure.
     ("validate_furigana.py", "code"),
 ]
 
