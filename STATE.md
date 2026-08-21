@@ -5,6 +5,49 @@
 
 ---
 
+## ▶ NEXT — DO THIS FIRST
+
+### UI review: the new screens left the design system instead of using it
+
+The simulado rework and the `/cursos` chooser (commit `4c1db1d`) shipped **62 new CSS classes across 8
+new families** — `ym-path-*`, `ym-sim-*`, `ym-exam-*`, `ym-order-*`, `ym-q*`, `ym-choice*`, `ym-passage`
+— while the app already had components built for those exact jobs. The screens work and are gate-green,
+but they do not look like the rest of the product, and that is a regression in the thing the design
+system exists to prevent.
+
+**The duplications, specifically:**
+
+| Shipped new | Already existed and should have been used |
+|---|---|
+| `.ym-q` / `.ym-choice` / `.ym-choices` / `.ym-q-stem` | `.ym-ex` / `.ym-ex-choice` / `.ym-ex-choices` / `.ym-ex-prompt` — the lesson exercise component, same job |
+| `.ym-order-slot` / `-piece` / `-pool` / `-preview` | `.ym-build` / `.ym-build-tok` / `.ym-build-bank` / `.ym-build-answer` — the sentence-assembly component, same job |
+| `.ym-path-stat` / `-stat-n` / `-stat-of` | `.ym-stat` / `.ym-stat-n` / `.ym-stat-label` / `.ym-stat-ic` |
+| `.ym-sim-how-item` / `-ic` / `-t` / `-d` | `.ym-quick` / `.ym-quick-ic` / `.ym-quick-t` / `.ym-quick-d` |
+| `.ym-path`, `.ym-sim-card` | `.ym-tile` / `.ym-tile-title` / `.ym-tile-sub`, `.ym-card-soft`, `.ym-practice-tile` |
+| `.ym-exam-bar`, `.ym-exam-foot` | `.ym-sess-top` / `.ym-sess-prog` / `.ym-sess-actions` — the timed-session shell |
+
+**Why it happened, so the next pass does not repeat it.** `.ym-q` and `.ym-choice` were already being
+used by `examPaper.tsx` with **no CSS defined anywhere**, so they read as unstyled body copy. Rather
+than asking why a class was in the markup with no rules — the answer being that the exam page was never
+finished against the design system — the fix defined them from scratch, and every later component
+followed that same path. A missing rule for an existing class name is a signal to look for the
+component it was meant to be, not a blank slate.
+
+**What the pass should do**
+1. Inventory `app/styles/lesson.css` for duplicate-purpose families and pick ONE per job.
+2. Re-point the new screens at the surviving components; delete the losers. Expect the exam paper to
+   compose `.ym-ex-*` and `.ym-build-*` rather than carry its own.
+3. Keep what genuinely has no precedent — the sticky clock and the interval screen are new behaviour —
+   but style them from existing tokens and primitives.
+4. Check the two course paths render as one product: `/cursos`, `/cursos/jlpt`, `/cursos/falar` should
+   share tile, breadcrumb and section-title treatment with `/kanji`, `/vocabulario` and `/pratica`.
+5. Only then revisit type scale. The stems were enlarged to 20.5px against nothing; the right size is
+   whatever the design system's reading scale says it is.
+
+**Do NOT re-litigate the behaviour.** Parts, the timer, hand-in on timeout, the skippable interval, the
+numbered ordering slots and the two-path course structure are all settled and verified. This is about
+appearance and reuse only.
+
 ## ▶ RESUME HERE
 
 > **2026-08-21 (ad) — THE 50 WITHHELD FORMATION POINTS ARE REPAIRED, AND THE KANJI GROUPING NOW ALIGNS

@@ -5,6 +5,15 @@ deliverable to the data artifacts it requires, marks status (✅ have / 🟡 par
 remaining enrichment passes. Provenance + confidence are tracked on every generated artifact (Layer A facts,
 Layer B derived-verified, Layer C pedagogy; `ai_generated` + `*_confidence` + `source`).
 
+## 0. UI review (FIRST — blocks further front-end work)
+
+The prototype's newer screens stopped composing the design system and started re-inventing it: the
+simulado rework and `/cursos` added 62 classes in 8 families that duplicate `.ym-ex-*` (question +
+options), `.ym-build-*` (sentence assembly), `.ym-stat-*`, `.ym-quick-*` and `.ym-tile`. Consolidate
+onto one component per job before building any more screens, or every new screen inherits the drift.
+Detail, including the specific duplication table and how it happened, is in `STATE.md` under
+"NEXT — DO THIS FIRST".
+
 ## A. Product deliverables → data needed
 
 | Deliverable | Needs | Status |
