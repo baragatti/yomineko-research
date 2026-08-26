@@ -139,7 +139,7 @@ def main() -> int:
                 if len(dh) == 3:
                     cf.append({"id": f"cf:{lvl}:{sid}:{vid}", "level": lvl,
                                "stem": jp.replace(v["hw"], "（　）", 1), "correct": v["hw"],
-                               "distractors": dh, "sentence": slug, "vocab_id": vid, "ai": ai,
+                               "distractors": dh, "sentence": slug, "vocab_id": vid, "ai_generated": bool(ai),
                                "source": "sentence+vocab"})
                 break  # one item per sentence
 
@@ -166,7 +166,7 @@ def main() -> int:
                 if len(dis) >= 3:
                     gf.append({"id": f"gf:{lvl}:{sid}", "level": lvl,
                                "stem": jp.replace(fm, "（　）", 1), "correct": fm, "distractors": dis[:3],
-                               "sentence": slug, "grammar": key, "ai": ai, "source": "sentence+grammar"})
+                               "sentence": slug, "grammar": key, "ai_generated": bool(ai), "source": "sentence+grammar"})
                 break
 
         # ---- sentence_order ----
@@ -180,7 +180,7 @@ def main() -> int:
             pieces = [t for t in toks[sid] if t.strip() and t not in "。、！？!?"]
             if 5 <= len(pieces) <= 9:
                 so.append({"id": f"so:{lvl}:{sid}", "level": lvl, "pieces": pieces,
-                           "answer": "".join(pieces), "sentence": slug, "ai": ai, "source": "sentence-tokens"})
+                           "answer": "".join(pieces), "sentence": slug, "ai_generated": bool(ai), "source": "sentence-tokens"})
 
         # ---- text_grammar (文章の文法): blank a level-appropriate grammar form inside a READING passage ----
         tg = []

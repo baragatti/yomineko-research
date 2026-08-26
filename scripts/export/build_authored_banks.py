@@ -56,10 +56,10 @@ def main() -> int:
                 skip.append((vid, ";".join(probs))); continue
             para.append({"id": f"pp:{lvl}:{vid}", "level": lvl, "stem": f["example"], "target": f["hw"],
                          "correct": pc, "distractors": pd, "vocab_id": vid, "sentence": f["ex_slug"],
-                         "layer": "C", "needs_review": 1, "source": "authored+verified"})
+                         "layer": "C", "needs_review": True, "source": "authored+verified"})
             usage.append({"id": f"us:{lvl}:{vid}", "level": lvl, "target": f["hw"],
                           "correct": f["example"], "wrong": uw, "vocab_id": vid, "sentence": f["ex_slug"],
-                          "layer": "C", "needs_review": 1, "source": "authored+verified(real-correct)"})
+                          "layer": "C", "needs_review": True, "source": "authored+verified(real-correct)"})
         (OUT / f"{lvl}_paraphrase.json").write_text(json.dumps(para, ensure_ascii=False), encoding="utf-8")
         (OUT / f"{lvl}_usage.json").write_text(json.dumps(usage, ensure_ascii=False), encoding="utf-8")
         counts[lvl] = (len(para), len(usage))

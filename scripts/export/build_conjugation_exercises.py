@@ -105,7 +105,7 @@ def main() -> int:
                 "form_label": {"pt-BR": LABEL.get(form, form)},
                 "correct": ans, "kana": x.get("kana"), "romaji": x.get("romaji"),
                 "distractors": dis, "example": by_surface.get(ans),
-                "source": "conjugations", "layer": "B", "needs_review": 0,
+                "source": "conjugations", "layer": "B", "needs_review": False,
             })
             stats[e["level"]] += 1
             if by_surface.get(ans):

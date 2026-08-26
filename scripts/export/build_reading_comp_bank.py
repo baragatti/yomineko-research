@@ -50,7 +50,7 @@ def main() -> int:
                 continue
             banks[lvl].append({"id": f"rc:{lvl}:{slug.split(':', 1)[1]}", "level": lvl, "reading": slug,
                                "question": q, "correct": corr, "distractors": dis,
-                               "layer": "C", "needs_review": 1, "source": "authored+verified"})
+                               "layer": "C", "needs_review": True, "source": "authored+verified"})
     counts = {}
     for lvl, items in banks.items():
         if items:

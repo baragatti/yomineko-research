@@ -81,7 +81,7 @@ def main() -> int:
                    else f"{PREFIX[sub]}:{lvl}:{int(it['n']):03d}")
             rec = {"id": iid, "level": lvl, "script": it["script"], "question": (it.get("question") or ""),
                    "correct": it["correct"].strip(), "distractors": [x.strip() for x in it["distractors"]],
-                   "audio": "pending", "layer": "C", "needs_review": 1, "ai": 1}
+                   "audio": "pending", "layer": "C", "needs_review": True, "ai_generated": True}
             if sub == "reply":
                 rec["sentence"] = it["slug"]
             items.append(rec)

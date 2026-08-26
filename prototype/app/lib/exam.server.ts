@@ -131,7 +131,7 @@ export function partOf(type: string): PartSpec | undefined {
 interface RawItem {
   id: string; level: string; stem?: string; correct?: string; distractors?: string[];
   pieces?: string[]; answer?: string; question?: string; reading?: string; sentence?: string;
-  target?: string; wrong?: string[]; ai?: number;
+  target?: string; wrong?: string[]; ai_generated?: boolean;
 }
 const BANKS = examBanksData as unknown as Record<string, Record<string, RawItem[]>>;
 
@@ -247,11 +247,11 @@ export function buildPaper(level: Level, seedInput: string | number, exclude: Se
     if (!bank.length) continue;
     let pool = bank.filter((it) => !exclude.has(it.id));
     if (pool.length < want) pool = bank;                       // no-repeat must never shorten the paper
-    // Real-first (design rule 4): prefer items grounded in a real bank sentence. `ai` marks a generated
-    // one; the banks that carry no `ai` field at all (kanji_reading, orthography, usage…) are built
-    // straight off Layer-A vocab, so a missing field means real, not unknown.
-    const real = pool.filter((it) => !it.ai);
-    const rest = pool.filter((it) => !!it.ai);
+    // Real-first (design rule 4): prefer items grounded in a real bank sentence. `ai_generated` marks a
+    // generated one; the banks that carry no `ai_generated` field at all (kanji_reading, orthography,
+    // usage…) are built straight off Layer-A vocab, so a missing field means real, not unknown.
+    const real = pool.filter((it) => !it.ai_generated);
+    const rest = pool.filter((it) => !!it.ai_generated);
     const ordered = [...shuffle(real, rand), ...shuffle(rest, rand)];
 
     const questions: PaperQuestion[] = [];

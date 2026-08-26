@@ -39,7 +39,8 @@ def main() -> int:
             "uses": {"kanji": [char_by_kid[k] for k in u.get("kanji", []) if k in char_by_kid],
                      "vocab": [hw_by_vid[v] for v in u.get("vocab", []) if v in hw_by_vid]},
             "source_slugs": json.loads(src or "[]"),
-            "ai_generated": ai or 0, "needs_review": nr if nr is not None else 1, "layer": layer or "B"})
+            "ai_generated": bool(ai), "needs_review": True if nr is None else bool(nr),
+            "layer": layer or "B"})
     counts = {}
     for lvl, items in by_level.items():
         (OUT / f"{lvl}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")

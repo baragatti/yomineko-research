@@ -107,7 +107,7 @@ def main() -> int:
                 "correct": answer["chunk"],
                 "particle": answer.get("particle"),
                 "distractors": sorted((p["chunk"] for p in others), key=lambda c: spread(iid, c))[:3],
-                "source": "sentence-patterns", "layer": "B", "needs_review": 0,
+                "source": "sentence-patterns", "layer": "B", "needs_review": False,
             })
             stats[role] += 1
 
