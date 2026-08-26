@@ -52,33 +52,36 @@ interface PathCardProps {
   cta: string;
 }
 
+/** Built from .ym-tile + .ym-stat + .ym-practice-ic, the components the rest of the app already uses. */
 function PathCard(p: PathCardProps) {
   return (
-    <article className="ym-path">
-      <header className="ym-path-h">
-        <span className="ym-path-ic"><Icon name={p.icon} size={26} /></span>
+    <article className="ym-tile ym-tile-static ym-tile-col">
+      <header style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <span className="ym-practice-ic"><Icon name={p.icon} size={24} /></span>
         <div>
-          <div className="ym-path-eyebrow">{p.eyebrow}</div>
-          <h2 className="ym-path-title">{p.title}</h2>
+          <div className="ym-kicker">{p.eyebrow}</div>
+          <h2 className="ym-tile-title" style={{ fontSize: 20 }}>{p.title}</h2>
         </div>
       </header>
 
-      <p className="ym-path-pitch">{p.pitch}</p>
+      <p className="ym-sub" style={{ margin: 0 }}>{p.pitch}</p>
 
-      <div className="ym-path-stats">
+      <div className="ym-stats-row">
         {p.stats.map((s) => (
-          <div key={s.of} className="ym-path-stat">
-            <div className="ym-path-stat-n">{s.n}</div>
-            <div className="ym-path-stat-of">{s.of}</div>
+          <div key={s.of} className="ym-stat">
+            <div className="ym-stat-n">{s.n}</div>
+            <div className="ym-stat-label">{s.of}</div>
           </div>
         ))}
       </div>
 
-      <div className="ym-path-detail">{p.detail}</div>
+      <div className="ym-tile-sub">{p.detail}</div>
 
-      <p className="ym-path-for"><Icon name="person" size={16} /> {p.forWhom}</p>
+      <p className="ym-tile-sub" style={{ display: "flex", alignItems: "center", gap: 6, margin: 0 }}>
+        <Icon name="person" size={16} /> {p.forWhom}
+      </p>
 
-      <Link className="ym-btn ym-btn-primary ym-path-cta" to={p.to}>
+      <Link className="ym-btn ym-btn-primary ym-tile-cta" to={p.to}>
         {p.cta} <Icon name="arrow_forward" size={18} />
       </Link>
     </article>
@@ -99,7 +102,7 @@ export default function Courses() {
           quando quiser — o vocabulário, os kanji e as frases são os mesmos.
         </p>
 
-        <div className="ym-path-grid">
+        <div className="ym-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(340px,1fr))" }}>
           <PathCard
             to="/cursos/jlpt"
             icon="auto_stories"

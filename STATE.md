@@ -36,7 +36,15 @@ component it was meant to be, not a blank slate.
 **What the pass should do**
 1. Inventory `app/styles/lesson.css` for duplicate-purpose families and pick ONE per job.
 2. Re-point the new screens at the surviving components; delete the losers. Expect the exam paper to
-   compose `.ym-ex-*` and `.ym-build-*` rather than carry its own.
+   compose `.ym-ex-*` and `.ym-build-*` rather than carry its own — but share the VISUAL layer only.
+   **Those components ship the answer key.** `render-body.server.ts` emits
+   `data-correct="true|false"` on every `.ym-ex-choice` input, and puts the whole correct string in
+   `data-correct` on `.ym-build`, because a lesson exercise is supposed to mark itself right or wrong
+   the instant you answer. An exam must not: the key stays server-side until grading, which is the
+   reason this app is SSR-only at all. Reuse the base pill and token styling, never the
+   answer-bearing attributes — the feedback CSS is keyed on `:has(input[data-correct=…]:checked)`, so
+   plain radios inherit the look and none of the leak, and the exam supplies its own neutral
+   selected state.
 3. Keep what genuinely has no precedent — the sticky clock and the interval screen are new behaviour —
    but style them from existing tokens and primitives.
 4. Check the two course paths render as one product: `/cursos`, `/cursos/jlpt`, `/cursos/falar` should

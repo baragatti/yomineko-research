@@ -43,13 +43,14 @@ function mmss(sec: number): string {
 }
 
 /**
- * 並べ替え with NUMBERED SLOTS.
+ * 並べ替え, built on the app's existing sentence-assembly component (`.ym-build-*`) with numbered slots
+ * added, because the real 大問 is about ORDER and `.ym-build-answer` alone is a free-flowing row with
+ * no positions in it.
  *
- * The previous widget appended blocks to a running string, which gave the learner no way to see the
- * position they were assigning or to fix one piece without clearing everything. The real 大問 is about
- * word ORDER, so the order has to be the visible thing: n numbered slots, click a block to drop it into
- * the next empty one, click a filled slot to take it back. The assembled sentence still rides in a
- * hidden input, so the answer arrives through the normal form POST and nothing is checked client-side.
+ * What it does NOT reuse is that component's answer contract. The lesson version carries the correct
+ * string in `data-correct` on `.ym-build` so it can mark itself right or wrong on the spot; an exam
+ * cannot ship its key to the client. So this shares the tokens and the bank, and the assembled string
+ * rides in a hidden input to be graded server-side.
  */
 function OrderQuestion({ name, pieces }: { name: string; pieces: string[] }) {
   const [slots, setSlots] = useState<(number | null)[]>(() => pieces.map(() => null));
@@ -81,46 +82,51 @@ function OrderQuestion({ name, pieces }: { name: string; pieces: string[] }) {
   return (
     <>
       <input type="hidden" name={name} value={sentence} />
-      <div className="ym-order-slots">
-        {slots.map((pi, at) => (
-          <button
-            key={at}
-            type="button"
-            className={`ym-order-slot${pi === null ? " is-empty" : ""}`}
-            onClick={() => pi !== null && clear(at)}
-            aria-label={pi === null ? `Posição ${at + 1}, vazia` : `Posição ${at + 1}: ${pieces[pi]}. Clique para remover.`}
-          >
-            <span className="ym-order-num">{at + 1}</span>
-            <span className="ym-jp">{pi === null ? "" : pieces[pi]}</span>
-          </button>
-        ))}
-      </div>
+      <div className="ym-build">
+        <div className="ym-build-slots">
+          {slots.map((pi, at) => (
+            <button
+              key={at}
+              type="button"
+              className={`ym-build-slot${pi === null ? "" : " is-filled"}`}
+              onClick={() => pi !== null && clear(at)}
+              aria-label={pi === null
+                ? `Posição ${at + 1}, vazia`
+                : `Posição ${at + 1}: ${pieces[pi]}. Clique para remover.`}
+            >
+              <span className="ym-build-slot-n">{at + 1}</span>
+              <span lang="ja">{pi === null ? "" : pieces[pi]}</span>
+            </button>
+          ))}
+        </div>
 
-      <div className="ym-order-pool">
-        {pieces.map((p, i) => (
-          <button
-            key={`${p}-${i}`}
-            type="button"
-            className="ym-order-piece"
-            disabled={used.has(i)}
-            onClick={() => place(i)}
-          >
-            <span className="ym-jp">{p}</span>
-          </button>
-        ))}
-      </div>
+        <div className="ym-build-bank">
+          {pieces.map((p, i) => (
+            <button
+              key={`${p}-${i}`}
+              type="button"
+              className="ym-build-tok"
+              lang="ja"
+              disabled={used.has(i)}
+              onClick={() => place(i)}
+            >
+              {p}
+            </button>
+          ))}
+        </div>
 
-      <p className="ym-order-preview">
-        {sentence
-          ? <span className="ym-jp">{sentence}</span>
-          : <span className="ym-muted">Coloque cada bloco na posição certa, de 1 a {pieces.length}.</span>}
-        {used.size > 0 && (
-          <button type="button" className="ym-btn-text"
-                  onClick={() => setSlots(pieces.map(() => null))}>
-            <Icon name="undo" size={16} /> limpar
-          </button>
-        )}
-      </p>
+        <p className="ym-build-preview">
+          {sentence
+            ? <span className="ym-jp">{sentence}</span>
+            : <span className="ym-muted">Coloque cada bloco na posição certa, de 1 a {pieces.length}.</span>}
+          {used.size > 0 && (
+            <button type="button" className="ym-btn-text"
+                    onClick={() => setSlots(pieces.map(() => null))}>
+              <Icon name="undo" size={16} /> limpar
+            </button>
+          )}
+        </p>
+      </div>
     </>
   );
 }
@@ -227,8 +233,8 @@ export default function ExamPaper() {
           <div className="ym-exam-bar-l">
             <span className="ym-pill ym-pill-gold">{paper.level.toUpperCase()}</span>
             <div>
-              <div className="ym-exam-part">Parte {partIx + 1} de {paper.parts.length}</div>
-              <div className="ym-exam-partjp ym-jp">{part.jp}</div>
+              <div className="ym-sess-count">Parte {partIx + 1} de {paper.parts.length}</div>
+              <div className="ym-jp">{part.jp}</div>
             </div>
           </div>
           <div className="ym-exam-clock" role="timer" aria-live="off">
@@ -244,8 +250,8 @@ export default function ExamPaper() {
             <p className="ym-sub">
               A parte {partIx + 1} foi entregue e não pode mais ser alterada.
             </p>
-            <p className="ym-exam-break-note">{paper.gapNote}</p>
-            <p className="ym-exam-break-next">
+            <p className="ym-sub">{paper.gapNote}</p>
+            <p>
               A seguir: <strong>{paper.parts[partIx + 1]?.label}</strong>{" "}
               <span className="ym-muted">
                 ({paper.parts[partIx + 1]?.total} questões · {paper.parts[partIx + 1]?.minutes} min)
@@ -270,7 +276,7 @@ export default function ExamPaper() {
           */}
           {paper.parts.map((pt, i) => (
             <div key={pt.key} hidden={i !== partIx || phase !== "part"}>
-              <header className="ym-exam-head">
+              <header>
                 <h1 className="ym-h1">{pt.label}</h1>
                 <p className="ym-sub">
                   {pt.total} questões · {pt.minutes} minutos · prova nº {paper.seed}
@@ -280,17 +286,17 @@ export default function ExamPaper() {
               {pt.sections.map((sec) => (
                 <section key={sec.type} className="ym-exam-sec">
                   <header className="ym-exam-sec-h">
-                    <span className="ym-jp ym-exam-sec-jp">{sec.jp}</span>
-                    <strong>{sec.label}</strong>
+                    <span className="ym-jp">{sec.jp}</span>
+                    <strong className="ym-tile-title">{sec.label}</strong>
                     <span className="ym-muted">
                       questões {sec.from}–{sec.from + sec.questions.length - 1}
                     </span>
                   </header>
-                  <p className="ym-exam-hint">{sec.hint}</p>
+                  <p className="ym-sub">{sec.hint}</p>
 
                   {sec.questions.map((q, qi) => (
                     <fieldset key={q.key} className="ym-q">
-                      <legend className="ym-q-n">{sec.from + qi}</legend>
+                      <legend className="ym-seg-n">{sec.from + qi}</legend>
                       {q.passage && <p className="ym-jp ym-passage">{q.passage}</p>}
                       {q.prompt && <p className="ym-q-stem ym-jp">{q.prompt}</p>}
                       {q.focus && !q.prompt.includes(`「${q.focus}」`) && (
@@ -302,15 +308,19 @@ export default function ExamPaper() {
                       {q.pieces ? (
                         <OrderQuestion name={`q:${q.key}`} pieces={q.pieces} />
                       ) : (
-                        <div className="ym-choices">
+                        /* The lesson component with NO data-correct: it inherits the pill and the
+                           neutral selected state, and ships no answer key. `is-stacked` because exam
+                           options run to whole sentences. */
+                        <fieldset className="ym-ex-choices is-stacked">
+                          <legend className="ym-sr-only">Escolha a resposta</legend>
                           {q.options.map((opt, oi) => (
-                            <label key={opt} className="ym-choice">
+                            <label key={opt} className="ym-ex-choice">
                               <input type="radio" name={`q:${q.key}`} value={opt} />
-                              <span className="ym-choice-n">{oi + 1}</span>
-                              <span className="ym-jp ym-choice-t">{opt}</span>
+                              <span className="ym-ex-choice-n">{oi + 1}</span>
+                              <span lang="ja">{opt}</span>
                             </label>
                           ))}
-                        </div>
+                        </fieldset>
                       )}
                     </fieldset>
                   ))}

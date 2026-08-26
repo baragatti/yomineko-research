@@ -44,7 +44,8 @@ export default function Exam() {
           questões. Tudo o que aparece aqui sai do próprio corpus, então você também encontra nas lições.
         </p>
 
-        <div className="ym-sim-how">
+        <div className="ym-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px,1fr))",
+                                          margin: "4px 0 26px" }}>
           {[
             { ic: "timer", t: "Cronometrado por parte",
               d: "Cada parte tem o tempo real do exame. O relógio fica na tela o tempo todo." },
@@ -55,47 +56,51 @@ export default function Exam() {
             { ic: "shuffle", t: "Nunca a mesma prova",
               d: "As questões e a ordem das alternativas são sorteadas a cada tentativa." },
           ].map((x) => (
-            <div key={x.t} className="ym-sim-how-item">
-              <span className="ym-sim-how-ic"><Icon name={x.ic} size={22} /></span>
+            <div key={x.t} className="ym-quick ym-tile-static">
+              <span className="ym-quick-ic"><Icon name={x.ic} size={22} /></span>
               <div>
-                <div className="ym-sim-how-t">{x.t}</div>
-                <div className="ym-sim-how-d">{x.d}</div>
+                <div className="ym-quick-t">{x.t}</div>
+                <div className="ym-quick-d">{x.d}</div>
               </div>
             </div>
           ))}
         </div>
 
         <h2 className="ym-section-title">Escolha o nível</h2>
-        <div className="ym-sim-grid">
+        <div className="ym-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(320px,1fr))" }}>
           {levels.map((lv) => (
-            <article key={lv.level} className="ym-sim-card">
-              <header className="ym-sim-h">
-                <span className="ym-sim-lv">{lv.level.toUpperCase()}</span>
-                <div className="ym-sim-meta">
-                  <strong>{lv.questions} questões</strong>
-                  <span className="ym-muted">{lv.minutes} min de prova, em {lv.parts.length} partes</span>
+            <article key={lv.level} className="ym-tile ym-tile-static ym-tile-col">
+              <header style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <span className="ym-practice-ic" style={{ fontFamily: "var(--font-display)",
+                                                          fontWeight: 700, fontSize: 18 }}>
+                  {lv.level.toUpperCase()}
+                </span>
+                <div>
+                  <div className="ym-tile-title">{lv.questions} questões</div>
+                  <div className="ym-tile-sub">
+                    {lv.minutes} min de prova, em {lv.parts.length} partes
+                  </div>
                 </div>
               </header>
 
               {lv.parts.map((p, i) => (
-                <div key={p.jp} className="ym-sim-part">
-                  <div className="ym-sim-part-h">
-                    <span className="ym-sim-part-n">{i + 1}</span>
-                    <span className="ym-jp ym-sim-part-jp">{p.jp}</span>
-                    <span className="ym-sim-part-time">{p.minutes} min</span>
+                <div key={p.jp} className="ym-card-plain">
+                  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                    <span className="ym-seg-n">{i + 1}</span>
+                    <span className="ym-jp" style={{ flex: 1, minWidth: 0, fontWeight: 600 }}>{p.jp}</span>
+                    <span className="ym-pill ym-pill-primary">{p.minutes} min</span>
                   </div>
-                  <div className="ym-sim-part-secs">
+                  <div className="ym-chip-row">
                     {p.sections.map((s) => (
-                      <span key={s.label} className="ym-sim-sec">
-                        {s.label} <b>×{s.n}</b>
-                      </span>
+                      <span key={s.label} className="ym-chip">{s.label} ×{s.n}</span>
                     ))}
                   </div>
                 </div>
               ))}
 
-              <footer className="ym-sim-f">
-                <span className="ym-muted">
+              <footer style={{ display: "flex", alignItems: "center", justifyContent: "space-between",
+                               gap: 10, marginTop: "auto" }}>
+                <span className="ym-tile-sub">
                   banco: {lv.items.toLocaleString("pt-BR")} questões
                 </span>
                 <Link className="ym-btn ym-btn-primary" to={`/simulado/${lv.level}`}>
@@ -106,9 +111,11 @@ export default function Exam() {
           ))}
         </div>
 
-        <div className="ym-sim-notes">
-          <p><Icon name="info" size={16} /> {gapNote}</p>
-          <p>
+        <div className="ym-cards" style={{ marginTop: 22, gap: 8 }}>
+          <p className="ym-tile-sub" style={{ display: "flex", gap: 8 }}>
+            <Icon name="info" size={16} /> {gapNote}
+          </p>
+          <p className="ym-tile-sub" style={{ display: "flex", gap: 8 }}>
             <Icon name="headphones" size={16} /> A seção de <strong>compreensão auditiva</strong> ainda
             não entra no simulado: os roteiros já existem, mas o áudio está pendente de gravação. Por
             isso a prova aqui é mais curta que a do dia do exame.
