@@ -2,16 +2,18 @@ import { Link, useLoaderData } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { FilterableList } from "~/ui/FilterableList";
 import { allVocab, locArr } from "~/lib/corpus.server";
+import { vocabHref } from "~/lib/ids";
 
 export function meta() {
   return [{ title: "Yomineko — Vocabulário" }];
 }
 
-interface VocabItem { headword: string; kana: string; romaji: string; level: string; gloss: string }
+interface VocabItem { slug: string; headword: string; kana: string; romaji: string; level: string; gloss: string }
 
 export async function loader() {
   const items: VocabItem[] = allVocab()
     .map((v: any) => ({
+      slug: v.slug,
       headword: v.headword,
       kana: v.kana,
       romaji: v.romaji ?? "",
@@ -40,7 +42,7 @@ export default function Vocab() {
           {(filtered) => (
             <div className="ym-cards">
               {filtered.map((v) => (
-                <Link key={v.headword} to={`/vocabulario/${encodeURIComponent(v.headword)}`} className="ym-vocab-row">
+                <Link key={v.slug} to={vocabHref(v.slug)} className="ym-vocab-row">
                   <ruby className="ym-vocab-hw" lang="ja">{v.headword}<rt>{v.kana}</rt></ruby>
                   <div className="ym-vocab-gloss">{v.gloss}</div>
                 </Link>

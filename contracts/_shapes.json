@@ -101,6 +101,14 @@
       "string"
      ]
     },
+    "example_words[].slug": {
+     "present": 8085,
+     "pct": 379.4,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
     "example_words[].vocab_id": {
      "present": 8085,
      "pct": 379.4,
@@ -211,11 +219,7 @@
      "pct": 100.0,
      "required": true,
      "types": [
-      "number",
-      "string"
-     ],
-     "values": [
-      "low"
+      "number"
      ]
     },
     "level_sources": {
@@ -223,7 +227,6 @@
      "pct": 100.0,
      "required": true,
      "types": [
-      "array",
       "object"
      ]
     },
@@ -300,7 +303,7 @@
      ]
     },
     "level_sources.lists": {
-     "present": 2,
+     "present": 3,
      "pct": 0.1,
      "required": false,
      "types": [
@@ -308,19 +311,8 @@
      ]
     },
     "level_sources.lists[]": {
-     "present": 2,
+     "present": 3,
      "pct": 0.1,
-     "required": false,
-     "types": [
-      "string"
-     ],
-     "values": [
-      "author-added: usado por vocabulário N4; fora das listas de consenso"
-     ]
-    },
-    "level_sources[]": {
-     "present": 1,
-     "pct": 0.0,
      "required": false,
      "types": [
       "string"
@@ -4417,67 +4409,36 @@
    "glob": "course/*/topic-*/topic.json",
    "kind": "single",
    "files": [
-    "course/n3/topic-36-conectores/topic.json",
-    "course/n3/topic-37-tempo/topic.json",
     "course/n3/topic-38-conectores/topic.json",
-    "course/n3/topic-38-perspectiva/topic.json",
-    "course/n3/topic-39-causa/topic.json",
     "course/n3/topic-39-tempo/topic.json",
-    "course/n3/topic-40-estado/topic.json",
     "course/n3/topic-40-perspectiva/topic.json",
     "course/n3/topic-41-causa/topic.json",
-    "course/n3/topic-41-intencao/topic.json",
-    "course/n3/topic-42-deveres/topic.json",
     "course/n3/topic-42-estado/topic.json",
-    "course/n3/topic-43-desejos/topic.json",
     "course/n3/topic-43-intencao/topic.json",
     "course/n3/topic-44-deveres/topic.json",
-    "course/n3/topic-44-limites/topic.json",
     "course/n3/topic-45-desejos/topic.json",
-    "course/n3/topic-45-enfase/topic.json",
-    "course/n3/topic-46-concessao/topic.json",
     "course/n3/topic-46-limites/topic.json",
-    "course/n3/topic-47-conjectura/topic.json",
     "course/n3/topic-47-enfase/topic.json",
     "course/n3/topic-48-concessao/topic.json",
-    "course/n3/topic-48-relato/topic.json",
     "course/n3/topic-49-conjectura/topic.json",
-    "course/n3/topic-49-estrutura/topic.json",
     "course/n3/topic-50-relato/topic.json",
-    "course/n3/topic-50-revisao/topic.json",
     "course/n3/topic-51-estrutura/topic.json",
     "course/n3/topic-52-revisao/topic.json",
-    "course/n4/topic-20-forma-simples/topic.json",
     "course/n4/topic-21-forma-simples/topic.json",
-    "course/n4/topic-21-oracoes-relativas/topic.json",
-    "course/n4/topic-22-condicionais/topic.json",
     "course/n4/topic-22-oracoes-relativas/topic.json",
     "course/n4/topic-23-condicionais/topic.json",
-    "course/n4/topic-23-potencial/topic.json",
     "course/n4/topic-24-potencial/topic.json",
-    "course/n4/topic-24-volitivo/topic.json",
-    "course/n4/topic-25-transitividade/topic.json",
     "course/n4/topic-25-volitivo/topic.json",
-    "course/n4/topic-26-dar-receber/topic.json",
     "course/n4/topic-26-transitividade/topic.json",
     "course/n4/topic-27-dar-receber/topic.json",
-    "course/n4/topic-27-experiencia/topic.json",
     "course/n4/topic-28-experiencia/topic.json",
-    "course/n4/topic-28-obrigacao/topic.json",
-    "course/n4/topic-29-aspecto/topic.json",
     "course/n4/topic-29-obrigacao/topic.json",
     "course/n4/topic-30-aspecto/topic.json",
-    "course/n4/topic-30-suposicao/topic.json",
-    "course/n4/topic-31-passiva/topic.json",
     "course/n4/topic-31-suposicao/topic.json",
-    "course/n4/topic-32-causativa/topic.json",
     "course/n4/topic-32-passiva/topic.json",
     "course/n4/topic-33-causativa/topic.json",
-    "course/n4/topic-33-keigo/topic.json",
-    "course/n4/topic-34-conectores/topic.json",
     "course/n4/topic-34-keigo/topic.json",
     "course/n4/topic-35-conectores/topic.json",
-    "course/n4/topic-35-revisao/topic.json",
     "course/n4/topic-36-revisao/topic.json",
     "course/n4/topic-37-kanji-exame/topic.json",
     "course/n5/topic-07-desu-wa/topic.json",
@@ -4501,10 +4462,10 @@
     "course/pre-n5/topic-05-pronuncia/topic.json",
     "course/pre-n5/topic-06-saudacoes/topic.json"
    ],
-   "records": 83,
+   "records": 52,
    "fields": {
     "id": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4512,7 +4473,7 @@
      ]
     },
     "lessons": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4520,40 +4481,40 @@
      ]
     },
     "lessons[].description": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "object"
      ]
     },
     "lessons[].description.pt-BR": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].id": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].needs": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "array"
      ]
     },
     "lessons[].order": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "integer"
@@ -4577,48 +4538,48 @@
      ]
     },
     "lessons[].path": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].title": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "object"
      ]
     },
     "lessons[].title.pt-BR": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].unlocks": {
-     "present": 514,
-     "pct": 619.3,
+     "present": 322,
+     "pct": 619.2,
      "required": false,
      "types": [
       "array"
      ]
     },
     "lessons[].unlocks[].ref": {
-     "present": 7249,
-     "pct": 8733.7,
+     "present": 4131,
+     "pct": 7944.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].unlocks[].type": {
-     "present": 7249,
-     "pct": 8733.7,
+     "present": 4131,
+     "pct": 7944.2,
      "required": false,
      "types": [
       "string"
@@ -4632,7 +4593,7 @@
      ]
     },
     "level": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4646,7 +4607,7 @@
      ]
     },
     "objectives": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4654,15 +4615,15 @@
      ]
     },
     "objectives[].pt-BR": {
-     "present": 53,
-     "pct": 63.9,
+     "present": 37,
+     "pct": 71.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "order": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4670,7 +4631,7 @@
      ]
     },
     "theme": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4678,7 +4639,7 @@
      ]
     },
     "title": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4686,7 +4647,7 @@
      ]
     },
     "title.pt-BR": {
-     "present": 83,
+     "present": 52,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -4699,22 +4660,6 @@
    "glob": "course/*/topic-*/lesson-*.json",
    "kind": "single",
    "files": [
-    "course/n3/topic-36-conectores/lesson-01.json",
-    "course/n3/topic-36-conectores/lesson-02.json",
-    "course/n3/topic-36-conectores/lesson-03.json",
-    "course/n3/topic-36-conectores/lesson-04.json",
-    "course/n3/topic-36-conectores/lesson-05.json",
-    "course/n3/topic-36-conectores/lesson-06.json",
-    "course/n3/topic-36-conectores/lesson-07.json",
-    "course/n3/topic-36-conectores/lesson-08.json",
-    "course/n3/topic-37-tempo/lesson-01.json",
-    "course/n3/topic-37-tempo/lesson-02.json",
-    "course/n3/topic-37-tempo/lesson-03.json",
-    "course/n3/topic-37-tempo/lesson-04.json",
-    "course/n3/topic-37-tempo/lesson-05.json",
-    "course/n3/topic-37-tempo/lesson-06.json",
-    "course/n3/topic-37-tempo/lesson-07.json",
-    "course/n3/topic-37-tempo/lesson-08.json",
     "course/n3/topic-38-conectores/lesson-01.json",
     "course/n3/topic-38-conectores/lesson-02.json",
     "course/n3/topic-38-conectores/lesson-03.json",
@@ -4723,21 +4668,6 @@
     "course/n3/topic-38-conectores/lesson-06.json",
     "course/n3/topic-38-conectores/lesson-07.json",
     "course/n3/topic-38-conectores/lesson-08.json",
-    "course/n3/topic-38-perspectiva/lesson-01.json",
-    "course/n3/topic-38-perspectiva/lesson-02.json",
-    "course/n3/topic-38-perspectiva/lesson-03.json",
-    "course/n3/topic-38-perspectiva/lesson-04.json",
-    "course/n3/topic-38-perspectiva/lesson-05.json",
-    "course/n3/topic-38-perspectiva/lesson-06.json",
-    "course/n3/topic-38-perspectiva/lesson-07.json",
-    "course/n3/topic-39-causa/lesson-01.json",
-    "course/n3/topic-39-causa/lesson-02.json",
-    "course/n3/topic-39-causa/lesson-03.json",
-    "course/n3/topic-39-causa/lesson-04.json",
-    "course/n3/topic-39-causa/lesson-05.json",
-    "course/n3/topic-39-causa/lesson-06.json",
-    "course/n3/topic-39-causa/lesson-07.json",
-    "course/n3/topic-39-causa/lesson-08.json",
     "course/n3/topic-39-tempo/lesson-01.json",
     "course/n3/topic-39-tempo/lesson-02.json",
     "course/n3/topic-39-tempo/lesson-03.json",
@@ -4746,14 +4676,6 @@
     "course/n3/topic-39-tempo/lesson-06.json",
     "course/n3/topic-39-tempo/lesson-07.json",
     "course/n3/topic-39-tempo/lesson-08.json",
-    "course/n3/topic-40-estado/lesson-01.json",
-    "course/n3/topic-40-estado/lesson-02.json",
-    "course/n3/topic-40-estado/lesson-03.json",
-    "course/n3/topic-40-estado/lesson-04.json",
-    "course/n3/topic-40-estado/lesson-05.json",
-    "course/n3/topic-40-estado/lesson-06.json",
-    "course/n3/topic-40-estado/lesson-07.json",
-    "course/n3/topic-40-estado/lesson-08.json",
     "course/n3/topic-40-perspectiva/lesson-01.json",
     "course/n3/topic-40-perspectiva/lesson-02.json",
     "course/n3/topic-40-perspectiva/lesson-03.json",
@@ -4769,19 +4691,6 @@
     "course/n3/topic-41-causa/lesson-06.json",
     "course/n3/topic-41-causa/lesson-07.json",
     "course/n3/topic-41-causa/lesson-08.json",
-    "course/n3/topic-41-intencao/lesson-01.json",
-    "course/n3/topic-41-intencao/lesson-02.json",
-    "course/n3/topic-41-intencao/lesson-03.json",
-    "course/n3/topic-41-intencao/lesson-04.json",
-    "course/n3/topic-41-intencao/lesson-05.json",
-    "course/n3/topic-41-intencao/lesson-06.json",
-    "course/n3/topic-41-intencao/lesson-07.json",
-    "course/n3/topic-42-deveres/lesson-01.json",
-    "course/n3/topic-42-deveres/lesson-02.json",
-    "course/n3/topic-42-deveres/lesson-03.json",
-    "course/n3/topic-42-deveres/lesson-04.json",
-    "course/n3/topic-42-deveres/lesson-05.json",
-    "course/n3/topic-42-deveres/lesson-06.json",
     "course/n3/topic-42-estado/lesson-01.json",
     "course/n3/topic-42-estado/lesson-02.json",
     "course/n3/topic-42-estado/lesson-03.json",
@@ -4790,13 +4699,6 @@
     "course/n3/topic-42-estado/lesson-06.json",
     "course/n3/topic-42-estado/lesson-07.json",
     "course/n3/topic-42-estado/lesson-08.json",
-    "course/n3/topic-43-desejos/lesson-01.json",
-    "course/n3/topic-43-desejos/lesson-02.json",
-    "course/n3/topic-43-desejos/lesson-03.json",
-    "course/n3/topic-43-desejos/lesson-04.json",
-    "course/n3/topic-43-desejos/lesson-05.json",
-    "course/n3/topic-43-desejos/lesson-06.json",
-    "course/n3/topic-43-desejos/lesson-07.json",
     "course/n3/topic-43-intencao/lesson-01.json",
     "course/n3/topic-43-intencao/lesson-02.json",
     "course/n3/topic-43-intencao/lesson-03.json",
@@ -4810,13 +4712,6 @@
     "course/n3/topic-44-deveres/lesson-04.json",
     "course/n3/topic-44-deveres/lesson-05.json",
     "course/n3/topic-44-deveres/lesson-06.json",
-    "course/n3/topic-44-limites/lesson-01.json",
-    "course/n3/topic-44-limites/lesson-02.json",
-    "course/n3/topic-44-limites/lesson-03.json",
-    "course/n3/topic-44-limites/lesson-04.json",
-    "course/n3/topic-44-limites/lesson-05.json",
-    "course/n3/topic-44-limites/lesson-06.json",
-    "course/n3/topic-44-limites/lesson-07.json",
     "course/n3/topic-45-desejos/lesson-01.json",
     "course/n3/topic-45-desejos/lesson-02.json",
     "course/n3/topic-45-desejos/lesson-03.json",
@@ -4824,20 +4719,6 @@
     "course/n3/topic-45-desejos/lesson-05.json",
     "course/n3/topic-45-desejos/lesson-06.json",
     "course/n3/topic-45-desejos/lesson-07.json",
-    "course/n3/topic-45-enfase/lesson-01.json",
-    "course/n3/topic-45-enfase/lesson-02.json",
-    "course/n3/topic-45-enfase/lesson-03.json",
-    "course/n3/topic-45-enfase/lesson-04.json",
-    "course/n3/topic-45-enfase/lesson-05.json",
-    "course/n3/topic-45-enfase/lesson-06.json",
-    "course/n3/topic-45-enfase/lesson-07.json",
-    "course/n3/topic-46-concessao/lesson-01.json",
-    "course/n3/topic-46-concessao/lesson-02.json",
-    "course/n3/topic-46-concessao/lesson-03.json",
-    "course/n3/topic-46-concessao/lesson-04.json",
-    "course/n3/topic-46-concessao/lesson-05.json",
-    "course/n3/topic-46-concessao/lesson-06.json",
-    "course/n3/topic-46-concessao/lesson-07.json",
     "course/n3/topic-46-limites/lesson-01.json",
     "course/n3/topic-46-limites/lesson-02.json",
     "course/n3/topic-46-limites/lesson-03.json",
@@ -4845,13 +4726,6 @@
     "course/n3/topic-46-limites/lesson-05.json",
     "course/n3/topic-46-limites/lesson-06.json",
     "course/n3/topic-46-limites/lesson-07.json",
-    "course/n3/topic-47-conjectura/lesson-01.json",
-    "course/n3/topic-47-conjectura/lesson-02.json",
-    "course/n3/topic-47-conjectura/lesson-03.json",
-    "course/n3/topic-47-conjectura/lesson-04.json",
-    "course/n3/topic-47-conjectura/lesson-05.json",
-    "course/n3/topic-47-conjectura/lesson-06.json",
-    "course/n3/topic-47-conjectura/lesson-07.json",
     "course/n3/topic-47-enfase/lesson-01.json",
     "course/n3/topic-47-enfase/lesson-02.json",
     "course/n3/topic-47-enfase/lesson-03.json",
@@ -4866,13 +4740,6 @@
     "course/n3/topic-48-concessao/lesson-05.json",
     "course/n3/topic-48-concessao/lesson-06.json",
     "course/n3/topic-48-concessao/lesson-07.json",
-    "course/n3/topic-48-relato/lesson-01.json",
-    "course/n3/topic-48-relato/lesson-02.json",
-    "course/n3/topic-48-relato/lesson-03.json",
-    "course/n3/topic-48-relato/lesson-04.json",
-    "course/n3/topic-48-relato/lesson-05.json",
-    "course/n3/topic-48-relato/lesson-06.json",
-    "course/n3/topic-48-relato/lesson-07.json",
     "course/n3/topic-49-conjectura/lesson-01.json",
     "course/n3/topic-49-conjectura/lesson-02.json",
     "course/n3/topic-49-conjectura/lesson-03.json",
@@ -4880,12 +4747,6 @@
     "course/n3/topic-49-conjectura/lesson-05.json",
     "course/n3/topic-49-conjectura/lesson-06.json",
     "course/n3/topic-49-conjectura/lesson-07.json",
-    "course/n3/topic-49-estrutura/lesson-01.json",
-    "course/n3/topic-49-estrutura/lesson-02.json",
-    "course/n3/topic-49-estrutura/lesson-03.json",
-    "course/n3/topic-49-estrutura/lesson-04.json",
-    "course/n3/topic-49-estrutura/lesson-05.json",
-    "course/n3/topic-49-estrutura/lesson-06.json",
     "course/n3/topic-50-relato/lesson-01.json",
     "course/n3/topic-50-relato/lesson-02.json",
     "course/n3/topic-50-relato/lesson-03.json",
@@ -4893,7 +4754,6 @@
     "course/n3/topic-50-relato/lesson-05.json",
     "course/n3/topic-50-relato/lesson-06.json",
     "course/n3/topic-50-relato/lesson-07.json",
-    "course/n3/topic-50-revisao/lesson-01.json",
     "course/n3/topic-51-estrutura/lesson-01.json",
     "course/n3/topic-51-estrutura/lesson-02.json",
     "course/n3/topic-51-estrutura/lesson-03.json",
@@ -4901,13 +4761,6 @@
     "course/n3/topic-51-estrutura/lesson-05.json",
     "course/n3/topic-51-estrutura/lesson-06.json",
     "course/n3/topic-52-revisao/lesson-01.json",
-    "course/n4/topic-20-forma-simples/lesson-01.json",
-    "course/n4/topic-20-forma-simples/lesson-02.json",
-    "course/n4/topic-20-forma-simples/lesson-03.json",
-    "course/n4/topic-20-forma-simples/lesson-04.json",
-    "course/n4/topic-20-forma-simples/lesson-05.json",
-    "course/n4/topic-20-forma-simples/lesson-06.json",
-    "course/n4/topic-20-forma-simples/lesson-07.json",
     "course/n4/topic-21-forma-simples/lesson-01.json",
     "course/n4/topic-21-forma-simples/lesson-02.json",
     "course/n4/topic-21-forma-simples/lesson-03.json",
@@ -4915,21 +4768,6 @@
     "course/n4/topic-21-forma-simples/lesson-05.json",
     "course/n4/topic-21-forma-simples/lesson-06.json",
     "course/n4/topic-21-forma-simples/lesson-07.json",
-    "course/n4/topic-21-oracoes-relativas/lesson-01.json",
-    "course/n4/topic-21-oracoes-relativas/lesson-02.json",
-    "course/n4/topic-21-oracoes-relativas/lesson-03.json",
-    "course/n4/topic-21-oracoes-relativas/lesson-04.json",
-    "course/n4/topic-21-oracoes-relativas/lesson-05.json",
-    "course/n4/topic-21-oracoes-relativas/lesson-06.json",
-    "course/n4/topic-21-oracoes-relativas/lesson-07.json",
-    "course/n4/topic-22-condicionais/lesson-01.json",
-    "course/n4/topic-22-condicionais/lesson-02.json",
-    "course/n4/topic-22-condicionais/lesson-03.json",
-    "course/n4/topic-22-condicionais/lesson-04.json",
-    "course/n4/topic-22-condicionais/lesson-05.json",
-    "course/n4/topic-22-condicionais/lesson-06.json",
-    "course/n4/topic-22-condicionais/lesson-07.json",
-    "course/n4/topic-22-condicionais/lesson-08.json",
     "course/n4/topic-22-oracoes-relativas/lesson-01.json",
     "course/n4/topic-22-oracoes-relativas/lesson-02.json",
     "course/n4/topic-22-oracoes-relativas/lesson-03.json",
@@ -4945,26 +4783,10 @@
     "course/n4/topic-23-condicionais/lesson-06.json",
     "course/n4/topic-23-condicionais/lesson-07.json",
     "course/n4/topic-23-condicionais/lesson-08.json",
-    "course/n4/topic-23-potencial/lesson-01.json",
-    "course/n4/topic-23-potencial/lesson-02.json",
-    "course/n4/topic-23-potencial/lesson-03.json",
-    "course/n4/topic-23-potencial/lesson-04.json",
     "course/n4/topic-24-potencial/lesson-01.json",
     "course/n4/topic-24-potencial/lesson-02.json",
     "course/n4/topic-24-potencial/lesson-03.json",
     "course/n4/topic-24-potencial/lesson-04.json",
-    "course/n4/topic-24-volitivo/lesson-01.json",
-    "course/n4/topic-24-volitivo/lesson-02.json",
-    "course/n4/topic-24-volitivo/lesson-03.json",
-    "course/n4/topic-24-volitivo/lesson-04.json",
-    "course/n4/topic-24-volitivo/lesson-05.json",
-    "course/n4/topic-24-volitivo/lesson-06.json",
-    "course/n4/topic-24-volitivo/lesson-07.json",
-    "course/n4/topic-25-transitividade/lesson-01.json",
-    "course/n4/topic-25-transitividade/lesson-02.json",
-    "course/n4/topic-25-transitividade/lesson-03.json",
-    "course/n4/topic-25-transitividade/lesson-04.json",
-    "course/n4/topic-25-transitividade/lesson-05.json",
     "course/n4/topic-25-volitivo/lesson-01.json",
     "course/n4/topic-25-volitivo/lesson-02.json",
     "course/n4/topic-25-volitivo/lesson-03.json",
@@ -4972,10 +4794,6 @@
     "course/n4/topic-25-volitivo/lesson-05.json",
     "course/n4/topic-25-volitivo/lesson-06.json",
     "course/n4/topic-25-volitivo/lesson-07.json",
-    "course/n4/topic-26-dar-receber/lesson-01.json",
-    "course/n4/topic-26-dar-receber/lesson-02.json",
-    "course/n4/topic-26-dar-receber/lesson-03.json",
-    "course/n4/topic-26-dar-receber/lesson-04.json",
     "course/n4/topic-26-transitividade/lesson-01.json",
     "course/n4/topic-26-transitividade/lesson-02.json",
     "course/n4/topic-26-transitividade/lesson-03.json",
@@ -4985,30 +4803,12 @@
     "course/n4/topic-27-dar-receber/lesson-02.json",
     "course/n4/topic-27-dar-receber/lesson-03.json",
     "course/n4/topic-27-dar-receber/lesson-04.json",
-    "course/n4/topic-27-experiencia/lesson-01.json",
-    "course/n4/topic-27-experiencia/lesson-02.json",
-    "course/n4/topic-27-experiencia/lesson-03.json",
-    "course/n4/topic-27-experiencia/lesson-04.json",
-    "course/n4/topic-27-experiencia/lesson-05.json",
-    "course/n4/topic-27-experiencia/lesson-06.json",
     "course/n4/topic-28-experiencia/lesson-01.json",
     "course/n4/topic-28-experiencia/lesson-02.json",
     "course/n4/topic-28-experiencia/lesson-03.json",
     "course/n4/topic-28-experiencia/lesson-04.json",
     "course/n4/topic-28-experiencia/lesson-05.json",
     "course/n4/topic-28-experiencia/lesson-06.json",
-    "course/n4/topic-28-obrigacao/lesson-01.json",
-    "course/n4/topic-28-obrigacao/lesson-02.json",
-    "course/n4/topic-28-obrigacao/lesson-03.json",
-    "course/n4/topic-28-obrigacao/lesson-04.json",
-    "course/n4/topic-28-obrigacao/lesson-05.json",
-    "course/n4/topic-29-aspecto/lesson-01.json",
-    "course/n4/topic-29-aspecto/lesson-02.json",
-    "course/n4/topic-29-aspecto/lesson-03.json",
-    "course/n4/topic-29-aspecto/lesson-04.json",
-    "course/n4/topic-29-aspecto/lesson-05.json",
-    "course/n4/topic-29-aspecto/lesson-06.json",
-    "course/n4/topic-29-aspecto/lesson-07.json",
     "course/n4/topic-29-obrigacao/lesson-01.json",
     "course/n4/topic-29-obrigacao/lesson-02.json",
     "course/n4/topic-29-obrigacao/lesson-03.json",
@@ -5021,18 +4821,6 @@
     "course/n4/topic-30-aspecto/lesson-05.json",
     "course/n4/topic-30-aspecto/lesson-06.json",
     "course/n4/topic-30-aspecto/lesson-07.json",
-    "course/n4/topic-30-suposicao/lesson-01.json",
-    "course/n4/topic-30-suposicao/lesson-02.json",
-    "course/n4/topic-30-suposicao/lesson-03.json",
-    "course/n4/topic-30-suposicao/lesson-04.json",
-    "course/n4/topic-30-suposicao/lesson-05.json",
-    "course/n4/topic-30-suposicao/lesson-06.json",
-    "course/n4/topic-30-suposicao/lesson-07.json",
-    "course/n4/topic-30-suposicao/lesson-08.json",
-    "course/n4/topic-31-passiva/lesson-01.json",
-    "course/n4/topic-31-passiva/lesson-02.json",
-    "course/n4/topic-31-passiva/lesson-03.json",
-    "course/n4/topic-31-passiva/lesson-04.json",
     "course/n4/topic-31-suposicao/lesson-01.json",
     "course/n4/topic-31-suposicao/lesson-02.json",
     "course/n4/topic-31-suposicao/lesson-03.json",
@@ -5041,9 +4829,6 @@
     "course/n4/topic-31-suposicao/lesson-06.json",
     "course/n4/topic-31-suposicao/lesson-07.json",
     "course/n4/topic-31-suposicao/lesson-08.json",
-    "course/n4/topic-32-causativa/lesson-01.json",
-    "course/n4/topic-32-causativa/lesson-02.json",
-    "course/n4/topic-32-causativa/lesson-03.json",
     "course/n4/topic-32-passiva/lesson-01.json",
     "course/n4/topic-32-passiva/lesson-02.json",
     "course/n4/topic-32-passiva/lesson-03.json",
@@ -5051,19 +4836,6 @@
     "course/n4/topic-33-causativa/lesson-01.json",
     "course/n4/topic-33-causativa/lesson-02.json",
     "course/n4/topic-33-causativa/lesson-03.json",
-    "course/n4/topic-33-keigo/lesson-01.json",
-    "course/n4/topic-33-keigo/lesson-02.json",
-    "course/n4/topic-33-keigo/lesson-03.json",
-    "course/n4/topic-33-keigo/lesson-04.json",
-    "course/n4/topic-33-keigo/lesson-05.json",
-    "course/n4/topic-33-keigo/lesson-06.json",
-    "course/n4/topic-34-conectores/lesson-01.json",
-    "course/n4/topic-34-conectores/lesson-02.json",
-    "course/n4/topic-34-conectores/lesson-03.json",
-    "course/n4/topic-34-conectores/lesson-04.json",
-    "course/n4/topic-34-conectores/lesson-05.json",
-    "course/n4/topic-34-conectores/lesson-06.json",
-    "course/n4/topic-34-conectores/lesson-07.json",
     "course/n4/topic-34-keigo/lesson-01.json",
     "course/n4/topic-34-keigo/lesson-02.json",
     "course/n4/topic-34-keigo/lesson-03.json",
@@ -5077,9 +4849,6 @@
     "course/n4/topic-35-conectores/lesson-05.json",
     "course/n4/topic-35-conectores/lesson-06.json",
     "course/n4/topic-35-conectores/lesson-07.json",
-    "course/n4/topic-35-revisao/lesson-01.json",
-    "course/n4/topic-35-revisao/lesson-02.json",
-    "course/n4/topic-35-revisao/lesson-03.json",
     "course/n4/topic-36-revisao/lesson-01.json",
     "course/n4/topic-36-revisao/lesson-02.json",
     "course/n4/topic-36-revisao/lesson-03.json",
@@ -5214,10 +4983,10 @@
     "course/pre-n5/topic-06-saudacoes/lesson-02.json",
     "course/pre-n5/topic-06-saudacoes/lesson-03.json"
    ],
-   "records": 514,
+   "records": 322,
    "fields": {
     "body": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5225,7 +4994,7 @@
      ]
     },
     "cumulative_known_set": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5233,7 +5002,7 @@
      ]
     },
     "cumulative_known_set.conjugation-form": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5241,7 +5010,7 @@
      ]
     },
     "cumulative_known_set.grammar": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5249,15 +5018,15 @@
      ]
     },
     "cumulative_known_set.grammar[]": {
-     "present": 143097,
-     "pct": 27839.9,
+     "present": 75695,
+     "pct": 23507.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "cumulative_known_set.kana-family": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5265,15 +5034,15 @@
      ]
     },
     "cumulative_known_set.kana-family[]": {
-     "present": 28012,
-     "pct": 5449.8,
+     "present": 17068,
+     "pct": 5300.6,
      "required": false,
      "types": [
       "string"
      ]
     },
     "cumulative_known_set.kanji": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5281,15 +5050,15 @@
      ]
     },
     "cumulative_known_set.kanji[]": {
-     "present": 128855,
-     "pct": 25069.1,
+     "present": 68312,
+     "pct": 21214.9,
      "required": false,
      "types": [
       "string"
      ]
     },
     "cumulative_known_set.phrase": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5297,7 +5066,7 @@
      ]
     },
     "cumulative_known_set.vocab": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5305,15 +5074,15 @@
      ]
     },
     "cumulative_known_set.vocab[]": {
-     "present": 663187,
-     "pct": 129024.7,
+     "present": 354143,
+     "pct": 109982.3,
      "required": false,
      "types": [
       "string"
      ]
     },
     "description": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5321,7 +5090,7 @@
      ]
     },
     "description.pt-BR": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5329,7 +5098,7 @@
      ]
     },
     "exercises": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5337,136 +5106,136 @@
      ]
     },
     "exercises[].answer": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "object"
      ]
     },
     "exercises[].answer.accept": {
-     "present": 500,
-     "pct": 97.3,
+     "present": 308,
+     "pct": 95.7,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].answer.choices": {
-     "present": 1078,
-     "pct": 209.7,
+     "present": 676,
+     "pct": 209.9,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].answer.correct": {
-     "present": 1078,
-     "pct": 209.7,
+     "present": 676,
+     "pct": 209.9,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].answer.full": {
-     "present": 465,
-     "pct": 90.5,
+     "present": 272,
+     "pct": 84.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].answer.order": {
-     "present": 273,
-     "pct": 53.1,
+     "present": 173,
+     "pct": 53.7,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].answer.pairs": {
-     "present": 221,
-     "pct": 43.0,
+     "present": 131,
+     "pct": 40.7,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].answer.sentence_refs": {
-     "present": 2,
-     "pct": 0.4,
+     "present": 1,
+     "pct": 0.3,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].answer.text": {
-     "present": 1240,
-     "pct": 241.2,
+     "present": 754,
+     "pct": 234.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].explanation": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "object"
      ]
     },
     "exercises[].explanation.pt-BR": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].id": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].prompt": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "object"
      ]
     },
     "exercises[].prompt.pt-BR": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].sentence_refs": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].sentence_refs[]": {
-     "present": 545,
-     "pct": 106.0,
+     "present": 316,
+     "pct": 98.1,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].type": {
-     "present": 2537,
-     "pct": 493.6,
+     "present": 1560,
+     "pct": 484.5,
      "required": false,
      "types": [
       "string"
@@ -5481,7 +5250,7 @@
      ]
     },
     "feature_unlocks": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5489,8 +5258,8 @@
      ]
     },
     "feature_unlocks[]": {
-     "present": 5,
-     "pct": 1.0,
+     "present": 4,
+     "pct": 1.2,
      "required": false,
      "types": [
       "string"
@@ -5503,7 +5272,7 @@
      ]
     },
     "id": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5511,7 +5280,7 @@
      ]
     },
     "level": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5525,7 +5294,7 @@
      ]
     },
     "needs": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5533,7 +5302,7 @@
      ]
     },
     "needs_review": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5544,7 +5313,7 @@
      ]
     },
     "objectives": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5552,15 +5321,15 @@
      ]
     },
     "objectives[].pt-BR": {
-     "present": 1734,
-     "pct": 337.4,
+     "present": 1074,
+     "pct": 333.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "order": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5585,7 +5354,7 @@
      ]
     },
     "schema_version": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5596,7 +5365,7 @@
      ]
     },
     "sentence_refs": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5604,15 +5373,15 @@
      ]
     },
     "sentence_refs[]": {
-     "present": 864,
-     "pct": 168.1,
+     "present": 529,
+     "pct": 164.3,
      "required": false,
      "types": [
       "string"
      ]
     },
     "srs": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5620,7 +5389,7 @@
      ]
     },
     "srs.introduces_cards": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5628,16 +5397,16 @@
      ]
     },
     "srs.introduces_cards[].card_types": {
-     "present": 7244,
-     "pct": 1409.3,
+     "present": 4127,
+     "pct": 1281.7,
      "required": false,
      "types": [
       "array"
      ]
     },
     "srs.introduces_cards[].deck": {
-     "present": 7244,
-     "pct": 1409.3,
+     "present": 4127,
+     "pct": 1281.7,
      "required": false,
      "types": [
       "string"
@@ -5654,15 +5423,15 @@
      ]
     },
     "srs.introduces_cards[].item": {
-     "present": 7244,
-     "pct": 1409.3,
+     "present": 4127,
+     "pct": 1281.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "title": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5670,7 +5439,7 @@
      ]
     },
     "title.pt-BR": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5678,7 +5447,7 @@
      ]
     },
     "topic": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5686,7 +5455,7 @@
      ]
     },
     "unlocks": {
-     "present": 514,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -5694,16 +5463,16 @@
      ]
     },
     "unlocks[].ref": {
-     "present": 7249,
-     "pct": 1410.3,
+     "present": 4131,
+     "pct": 1282.9,
      "required": false,
      "types": [
       "string"
      ]
     },
     "unlocks[].type": {
-     "present": 7249,
-     "pct": 1410.3,
+     "present": 4131,
+     "pct": 1282.9,
      "required": false,
      "types": [
       "string"
@@ -6989,7 +6758,7 @@
       "string"
      ],
      "values": [
-      "2026-08-19"
+      "2026-08-26"
      ]
     },
     "schema_version": {

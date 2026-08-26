@@ -21,33 +21,132 @@ from i18n_text import get_text, DEFAULT_LOCALE as LOC  # noqa: E402
 import enums  # noqa: E402
 import re as _re  # noqa: E402
 
-# Numeric vocab/kanji refs (vocab:1421) precisely disambiguate homographs in the corpus/placement layer, but
-# the courseware DISPLAY layer keys vocab by headword. Rewrite numeric refs -> headword/character refs on export
-# so lesson chips resolve in the prototype (the homograph distinction is a placement concern, not a display one).
+from vocab_identity import VocabIdentity  # noqa: E402
+
+_LESSON_SLUG: dict = {}
+
+# Lesson refs arrive as `vocab:<row_id>` / `kanji:<row_id>`, which are storage row numbers and mean
+# nothing outside the working index. Rewrite them to the PUBLISHED address of the record: for kanji
+# that is `kanji:<character>`, for vocab `vocab:<jmdict_id>` — in both cases exactly the `slug` that
+# corpus/{kanji,vocab}/*.json carries, so a courseware ref and a corpus record agree on one identity.
+#
+# This used to rewrite vocab to `vocab:<headword>`, which reads better but is not an address: 93
+# headwords are shared by 193 records (人 is both the N5 "pessoa" and an N1 sense; 仏 is both "Buda"
+# and "França"), so 24,031 references resolved to whichever record an index happened to load last, and
+# the prototype's own headword index quietly collapsed 7,401 records into 7,301. Headwords are still
+# what a human reads — they are looked up for the generated Markdown below — but they are a LABEL, and
+# the ref is the identity.
 _NUM_MAP: dict = {}
+_LABEL: dict = {}
 
 
-def _deref(con, ref: str) -> str:
+def _load_maps(con) -> None:
+    if _NUM_MAP:
+        return
+    for vid, slug, hw in con.execute("SELECT id, slug, headword FROM vocab"):
+        _NUM_MAP[("vocab", str(vid))] = slug.split(":", 1)[1] if ":" in slug else slug
+        _LABEL[f"vocab:{_NUM_MAP[('vocab', str(vid))]}"] = hw
+    for kid, ch in con.execute("SELECT id, character FROM kanji"):
+        _NUM_MAP[("kanji", str(kid))] = ch
+        _LABEL[f"kanji:{ch}"] = ch
+
+
+_IDENT = None
+_LEVEL_OF_LESSON: dict = {}
+
+
+def _identity(con):
+    global _IDENT
+    if _IDENT is None:
+        _IDENT = VocabIdentity(con)
+    return _IDENT
+
+
+def _lesson_level(con, lesson_id) -> str | None:
+    if not _LEVEL_OF_LESSON:
+        for lid, slug, lvl in con.execute(
+                "SELECT l.id, l.slug, m.level FROM lesson l JOIN topic t ON t.id=l.topic_id "
+                "JOIN course_module m ON m.id=t.module_id"):
+            _LEVEL_OF_LESSON[lid] = lvl
+            _LESSON_SLUG[lid] = slug
+    return _LEVEL_OF_LESSON.get(lesson_id)
+
+
+def _deref(con, ref: str, lesson_id=None) -> str:
+    """Rewrite a courseware ref to the published address of the record it names.
+
+    Two input forms exist and both are storage artefacts rather than addresses: `vocab:1421` is a row
+    number in the working index, and `vocab:人` is a headword that up to three records answer to.
+    Both become `vocab:<jmdict_id>`, which is the `slug` corpus/vocab/*.json publishes.
+    """
     if ":" not in ref:
         return ref
     ns, ident = ref.split(":", 1)
-    if ns not in ("vocab", "kanji") or not ident.isdigit():
+    if ns not in ("vocab", "kanji"):
         return ref
-    if not _NUM_MAP:
-        for vid, hw in con.execute("SELECT id, headword FROM vocab"):
-            _NUM_MAP[("vocab", str(vid))] = hw
-        for kid, ch in con.execute("SELECT id, character FROM kanji"):
-            _NUM_MAP[("kanji", str(kid))] = ch
-    val = _NUM_MAP.get((ns, ident))
-    return f"{ns}:{val}" if val else ref
+    # str.isdigit() is true for full-width digits too, and `vocab:０` is a real headword (the N5 word
+    # for zero), not a row number. Require ASCII before treating the ref as an index row id.
+    if ident.isascii() and ident.isdigit():
+        _load_maps(con)
+        val = _NUM_MAP.get((ns, ident))
+        return f"{ns}:{val}" if val else ref
+    if ns == "vocab":
+        level = _lesson_level(con, lesson_id) if lesson_id else None   # also fills _LESSON_SLUG
+        slug, _how = _identity(con).resolve(ident, level, _LESSON_SLUG.get(lesson_id))
+        return slug or ref
+    return ref  # kanji:<character> is already the published address
 
 
-def _deref_body(con, body: str) -> str:
+def _label(con, ref: str) -> str:
+    """The human-readable form of a ref, for generated Markdown only. Never written into a ref field."""
+    _load_maps(con)
+    return _LABEL.get(ref, ref.split(":", 1)[1] if ":" in ref else ref)
+
+
+_CUM: dict = {}
+_CUM_KEYS = ("kana-family", "vocab", "kanji", "grammar", "conjugation-form", "phrase")
+
+
+def _cumulative(con) -> dict:
+    """cumulative_known_set per lesson, recomputed here rather than read from the index.
+
+    It is by definition the union of every unlock up to and including the lesson, in course order —
+    that is what ingest/load_lessons.py:recompute_cumulative writes. Deriving it at export time instead
+    of trusting the stored copy does two things. It picks up unlock edits made after the last recompute
+    (97 of 322 lessons had a stored set that still listed refs their unlocks no longer contain), and it
+    means the refs land here already dereferenced to slugs, so `cumulative_known_set` speaks the same
+    identity as `unlocks` instead of a parallel headword vocabulary that cannot be resolved to one
+    record. No headword is guessed at: the unlock row ids map 1:1 onto slugs.
+    """
+    if _CUM:
+        return _CUM
+    acc: dict = {k: [] for k in _CUM_KEYS}
+    seen: dict = {k: set() for k in _CUM_KEYS}
+    for (lid,) in con.execute(
+            "SELECT l.id FROM lesson l JOIN topic t ON t.id=l.topic_id ORDER BY t.ord, l.ord"):
+        for typ, ref in con.execute(
+                "SELECT unlock_type, ref FROM lesson_unlocks WHERE lesson_id=?", (lid,)):
+            if typ in acc:
+                r = _deref(con, ref, lid)
+                if r not in seen[typ]:
+                    seen[typ].add(r)
+                    acc[typ].append(r)
+        _CUM[lid] = {k: list(v) for k, v in acc.items()}
+    return _CUM
+
+
+def _deref_body(con, body: str, lesson_id=None) -> str:
+    """Rewrite the inline <vocab .../> and <kanji .../> refs in lesson prose to published addresses.
+
+    Both ref forms appear here — `vocab:1421` (31 of them) and `vocab:物質` (5,468) — and both become
+    the record's slug, exactly as the unlock refs do. The lesson id is passed through because the
+    headword form needs it to disambiguate; kanji refs already name the character, which IS the slug.
+    """
     if not body:
         return body
     return _re.sub(
-        r'(<(?:vocab|kanji) ref=")((?:vocab|kanji):\d+)(")',
-        lambda m: m.group(1) + _deref(con, m.group(2)) + m.group(3), body)
+        r'(<(?:vocab|kanji) ref=")((?:vocab|kanji):[^"]+)(")',
+        lambda m: m.group(1) + _deref(con, m.group(2), lesson_id) + m.group(3), body)
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -112,7 +211,11 @@ class _Flatten(HTMLParser):
         elif tag == "exercise":
             pass  # exercises are listed separately below the body
         elif tag in ("vocab", "kanji", "grammar"):
-            self.buf.append(a.get("ref", "").split(":", 1)[-1])
+            # The .md is the human-review view, so a vocab ref renders as its headword. Stripping the
+            # prefix was enough while refs WERE headwords; now that they are JMdict ids it would print
+            # "1421" in the middle of a Portuguese sentence.
+            ref = a.get("ref", "")
+            self.buf.append(_label(self.con, ref) if tag == "vocab" else ref.split(":", 1)[-1])
         elif tag == "ruby":
             self.buf.append(a.get("base", ""))
         elif tag == "break":
@@ -168,7 +271,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         reldir = f"topic-{L['tord']:02d}-{tail}"
         d = COURSE / L["level"] / reldir
         d.mkdir(parents=True, exist_ok=True)
-        unlocks = [{"type": u[0], "ref": _deref(con, u[1])} for u in con.execute(
+        unlocks = [{"type": u[0], "ref": _deref(con, u[1], L["id"])} for u in con.execute(
             "SELECT unlock_type, ref FROM lesson_unlocks WHERE lesson_id=? ORDER BY unlock_type, ref", (L["id"],))]
         needs = [{"type": u[0], "ref": u[1]} for u in con.execute(
             "SELECT need_type, ref FROM lesson_needs WHERE lesson_id=? ORDER BY need_type, ref", (L["id"],))]
@@ -189,11 +292,8 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         title = get_text(con, "lesson", L["id"], "title")
         description = get_text(con, "lesson", L["id"], "description")
         objectives = get_text(con, "lesson", L["id"], "objectives") or []
-        body = _deref_body(con, get_text(con, "lesson", L["id"], "body"))
-        cks = json.loads(L["cumulative_known_set"]) if L["cumulative_known_set"] else {}
-        for _k in ("vocab", "kanji"):  # numeric refs -> headword/character (dedupe; homograph losers collapse)
-            if cks.get(_k):
-                cks[_k] = list(dict.fromkeys(_deref(con, r) for r in cks[_k]))
+        body = _deref_body(con, get_text(con, "lesson", L["id"], "body"), L["id"])
+        cks = _cumulative(con)[L["id"]]
         rec = {
             "id": L["slug"], "schema_version": "1.0", "level": L["level"], "topic": L["tslug"],
             "order": L["ord"], "title": {LOC: title}, "description": {LOC: description},
@@ -209,8 +309,9 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
             "id": L["slug"], "order": L["ord"], "title": {LOC: title},
             "description": {LOC: description}, "path": f"{reldir}/lesson-{L['ord']:02d}.json",
             "needs": needs, "unlocks": unlocks})
+        # The Markdown is for a human reviewer, so it shows headwords; the JSON above carries the refs.
         intro = {"kanji": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "kanji"],
-                 "vocab": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "vocab"],
+                 "vocab": [_label(con, u["ref"]) for u in unlocks if u["type"] == "vocab"],
                  "grammar": [u["ref"].split(":", 1)[1] for u in unlocks if u["type"] == "grammar"],
                  "kana": [u["ref"] for u in unlocks if u["type"] == "kana-family"]}
         # readable MD
@@ -286,7 +387,7 @@ def main() -> int:
         for t in con.execute("SELECT * FROM topic WHERE module_id=? ORDER BY ord", (m["id"],)):
             tid = t["id"]
             vocab = [dict(r) for r in con.execute(
-                "SELECT headword, kana, level FROM vocab WHERE introducing_topic_id=? "
+                "SELECT headword, kana, level, slug FROM vocab WHERE introducing_topic_id=? "
                 "ORDER BY freq_rank IS NULL, freq_rank", (tid,))]
             kanji = [r[0] for r in con.execute(
                 "SELECT character FROM kanji WHERE introducing_topic_id=? "
@@ -299,10 +400,18 @@ def main() -> int:
                 "title": get_text(con, "topic", tid, "title"), "theme": get_text(con, "topic", tid, "theme"),
                 "objectives": get_text(con, "topic", tid, "objectives") or [],
                 "counts": {"vocab": len(vocab), "kanji": len(kanji), "grammar": len(grammar)},
+                # `introduces` is the readable listing (headwords); `introduces_refs` is the
+                # addressable one. Two fields rather than one ambiguous field: a headword is not
+                # unique, and this file is described as machine-readable.
                 "introduces": {
                     "vocab": [v["headword"] for v in vocab],
                     "kanji": kanji,
                     "grammar": [g["key"] for g in grammar],
+                },
+                "introduces_refs": {
+                    "vocab": [v["slug"] for v in vocab],
+                    "kanji": [f"kanji:{c}" for c in kanji],
+                    "grammar": [f"gram:{g['key']}" for g in grammar],
                 },
             })
         outline.append(mod)
@@ -356,6 +465,32 @@ def main() -> int:
     stubs: dict = {}
     nles = export_lessons(con, stubs)
     export_manifest(con, outline, stubs)
+
+    # Publish whatever the headword->slug resolution could not settle on evidence alone. This is a
+    # short list (the vast majority of headwords name exactly one record) but it is the part a teacher
+    # has to look at, so it gets a file rather than a line of console output that scrolls away.
+    ident = _IDENT
+    if ident is not None and ident.review:
+        rows = sorted(ident.review, key=lambda r: (r["how"] != "unresolved", r["headword"]))
+        seen_hw, deduped = set(), []
+        for r in rows:
+            if r["headword"] in seen_hw:
+                continue
+            seen_hw.add(r["headword"])
+            deduped.append(r)
+        (COURSE / "vocab_disambiguation_review.json").write_text(
+            json.dumps({"generated": _dt_today,
+                        "why": "Lessons address vocabulary by headword; these headwords name more "
+                               "than one record and the lesson's level did not single one out. "
+                               "`how` says what decided it: 'frequency' used the sentence bank, "
+                               "'unresolved' had nothing to go on and took the lowest JMdict entry. "
+                               "Both need a teacher to confirm which sense the lesson teaches.",
+                        "count": len(deduped), "items": deduped},
+                       ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        nfreq = sum(1 for r in deduped if r["how"] == "frequency")
+        print(f"vocab disambiguation: {len(deduped)} headword(s) needed more than the lesson level "
+              f"({nfreq} settled by corpus frequency, {len(deduped) - nfreq} await a teacher) "
+              f"-> course/vocab_disambiguation_review.json")
     con.close()
     print(f"exported outline: {sum(len(m['topics']) for m in outline)} topics, {nles} lessons, "
           f"4-tier manifest -> course/")

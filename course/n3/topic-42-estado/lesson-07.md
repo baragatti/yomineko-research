@@ -4,7 +4,7 @@
 
 **Objetivos:**
 - Reconhecer e usar substantivos de estado e quantidade como 不足, 物価 e 部分
-- Empregar termos de ciência e matéria como 物質 e 物理 (fix the parallel <check> in the body checklist too)
+- Empregar termos de ciência e matéria como 物質, 物理 e 不正
 - Identificar palavras de pessoas e ações como 夫人, 双子 e 防ぐ
 
 **Introduz:** gramática [—] · vocabulário [打つ, 不図, 不平, 不正, 不足, 再び, 双子, 夫人, 婦人, 普段, 物価, 物理, 物質, 筆, 縁, 舞台, 部分, 防ぐ] · kanji [—] · kana [—]
@@ -60,7 +60,7 @@ Para fechar, pessoas e alguns verbos.
 > 📖 ステレオをかけても構わないかい。必要なら、すぐにまいりましょう。クラブの会員は会議室に集まった。水も空気も両方とも流動体である。最初から最後までうっとりしてた。父は中学校で英語を教えています。 — Tudo bem se eu ligar o som? Se for necessário, irei imediatamente. Os membros do clube se reuniram na sala de reuniões. Tanto a água quanto o ar são fluidos. Fiquei encantado(a) do começo ao fim. Meu pai ensina inglês numa escola de ensino fundamental.
 > 📖 学校は午前８時１０分から始まる。こっちの方があっちのより安いよ。その語にはいくつかの意味がある。来月には子どもが生まれるんだよ。この犬は２ヶ月前に生まれました。あの店でノートは売っていますか？ — A escola começa às 8h10 da manhã. Este aqui é mais barato do que aquele ali, viu. Essa palavra tem vários significados. No mês que vem vai nascer um bebê, sabia? Este cachorro nasceu há dois meses. Naquela loja vendem cadernos?
 - Reconheço e uso substantivos de estado e quantidade como 不足, 物価 e 部分.
-- Emprego termos de ciência e matéria como 物質 e 物理.
+- Emprego termos de ciência e matéria como 物質, 物理 e 不正.
 - Identifico palavras de pessoas e ações como 夫人, 双子 e 防ぐ.
 
 ---

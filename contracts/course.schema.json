@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/course.schema.json",
+  "title": "course",
+  "description": "A course root for one level: its ordered topics and the overview shown before the first lesson.",
+  "x-yomineko": {
+    "entity": "course",
+    "records": 4,
+    "packing": "single",
+    "glob": "course/[!s]*/course.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "order": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "overview": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/StableId"
+          },
+          "lesson_count": {
+            "type": "integer",
+            "enum": [
+              1,
+              15,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          "order": {
+            "type": "integer"
+          },
+          "path": {
+            "type": "string"
+          },
+          "theme": {
+            "type": "string"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "unlocks_summary": {
+            "type": "object",
+            "properties": {
+              "grammar": {
+                "type": "integer",
+                "enum": [
+                  0,
+                  10,
+                  11,
+                  12,
+                  13,
+                  15,
+                  16,
+                  18,
+                  2,
+                  21,
+                  22,
+                  27,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              },
+              "kanji": {
+                "type": "integer",
+                "enum": [
+                  0,
+                  1,
+                  13,
+                  14,
+                  16,
+                  26,
+                  28,
+                  29,
+                  8
+                ]
+              },
+              "vocab": {
+                "type": "integer",
+                "enum": [
+                  0,
+                  1,
+                  102,
+                  107,
+                  108,
+                  109,
+                  123,
+                  124,
+                  127,
+                  129,
+                  24,
+                  34,
+                  4,
+                  40,
+                  45,
+                  50,
+                  55,
+                  60,
+                  70
+                ]
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "level",
+    "order",
+    "overview",
+    "title",
+    "topics"
+  ]
+}

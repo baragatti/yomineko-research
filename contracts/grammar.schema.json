@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/grammar.schema.json",
+  "title": "grammar",
+  "description": "One grammar point: its forms, how it is formed, what it contrasts with, and the pedagogy around it.",
+  "x-yomineko": {
+    "entity": "grammar",
+    "records": 496,
+    "packing": "list",
+    "glob": "corpus/grammar/*.json",
+    "stable_id_field": "slug",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "caution": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "rough",
+        "sensitive",
+        null
+      ]
+    },
+    "explanation": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "formation": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "formation_steps": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "base": {
+                "type": "string",
+                "enum": [
+                  "clause",
+                  "i-adjective",
+                  "na-adjective",
+                  "noun",
+                  "verb"
+                ]
+              },
+              "example": {
+                "type": "string"
+              },
+              "steps": {
+                "type": "array"
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "form": {
+            "type": "string"
+          },
+          "meaning": {
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/LocaleText"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "id": {
+      "type": "integer"
+    },
+    "key": {
+      "type": "string"
+    },
+    "label": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "level_agreement": {
+      "$ref": "common.schema.json#/$defs/LevelTag/properties/level_agreement"
+    },
+    "level_confidence": {
+      "$ref": "common.schema.json#/$defs/LevelTag/properties/level_confidence"
+    },
+    "level_sources": {
+      "type": "object",
+      "properties": {
+        "bunpro": {
+          "type": "string",
+          "enum": [
+            "n4",
+            "n5"
+          ]
+        },
+        "hanabira": {
+          "type": "string",
+          "enum": [
+            "n3"
+          ]
+        },
+        "jlptsensei": {
+          "type": "string",
+          "enum": [
+            "n4",
+            "n5"
+          ]
+        },
+        "note": {
+          "type": "string",
+          "enum": [
+            "course anchor for the て-form hub"
+          ]
+        },
+        "tanos": {
+          "type": "string",
+          "enum": [
+            "n4",
+            "n5"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "nuance": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "nuance_tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "cause",
+          "change-of-state",
+          "comparison",
+          "completion",
+          "concession",
+          "condition",
+          "conjecture",
+          "continuation",
+          "desire",
+          "emphasis",
+          "experience",
+          "hearsay",
+          "honorific",
+          "humility",
+          "intention",
+          "obligation",
+          "permission",
+          "politeness",
+          "prohibition",
+          "request",
+          "softening"
+        ]
+      }
+    },
+    "refs": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "also_known_as": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "label_en": {
+          "type": "string"
+        },
+        "level_sources": {
+          "type": "object",
+          "properties": {
+            "bunpro": {
+              "type": "string",
+              "enum": [
+                "n4",
+                "n5"
+              ]
+            },
+            "jlptsensei": {
+              "type": "string",
+              "enum": [
+                "n4",
+                "n5"
+              ]
+            },
+            "tanos": {
+              "type": "string",
+              "enum": [
+                "n4",
+                "n5"
+              ]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "register": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "casual",
+          "colloquial",
+          "feminine",
+          "formal",
+          "honorific",
+          "humble",
+          "literary",
+          "masculine",
+          "neutral",
+          "plain",
+          "polite",
+          "written"
+        ]
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "de",
+          "ga",
+          "ni",
+          "wa-topic-marker"
+        ]
+      }
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "steps_unavailable": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "structure_pattern": {
+      "type": "string"
+    },
+    "usage_contexts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "academic",
+          "announcement",
+          "business",
+          "casual-friends",
+          "formal-email",
+          "literary",
+          "spoken",
+          "written"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "caution",
+    "explanation",
+    "formation",
+    "formation_steps",
+    "forms",
+    "id",
+    "key",
+    "label",
+    "level",
+    "level_agreement",
+    "level_confidence",
+    "level_sources",
+    "needs_review",
+    "nuance",
+    "nuance_tags",
+    "refs",
+    "register",
+    "related",
+    "slug",
+    "steps_unavailable",
+    "structure_pattern",
+    "usage_contexts"
+  ]
+}

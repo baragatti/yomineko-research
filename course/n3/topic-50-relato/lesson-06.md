@@ -70,7 +70,7 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 - {'pt-BR': '博物館 (はくぶつかん) significa museu. As outras opções são leituras de palavras diferentes desta mesma lição.'}
 
 
-### 2. (recognition) {'pt-BR': 'Qual destes verbos se lê はく e significa vomitar? (mesma correção na cópia course/n3/topic-48-relato/lesson-06.json)'}
+### 2. (recognition) {'pt-BR': 'Qual destes verbos se lê はく e significa vomitar?'}
 - **Resposta:** `{"choices": ["吐く", "履く", "計る", "外す"], "correct": "吐く"}`
 - {'pt-BR': '吐く (はく) é vomitar ou botar para fora, enquanto 履く (はく) é vestir da cintura para baixo ou calçar. A leitura é igual, mas o kanji muda tudo.'}
 

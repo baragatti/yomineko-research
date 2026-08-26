@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/topic.schema.json",
+  "title": "topic",
+  "description": "A block of lessons that closes one theme, and the items it unlocks.",
+  "x-yomineko": {
+    "entity": "topic",
+    "records": 52,
+    "packing": "single",
+    "glob": "course/*/topic-*/topic.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "id": {
+            "$ref": "common.schema.json#/$defs/StableId"
+          },
+          "needs": {
+            "type": "array"
+          },
+          "order": {
+            "type": "integer",
+            "enum": [
+              1,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "unlocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ref": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "feature",
+                    "grammar",
+                    "kana-family",
+                    "kanji",
+                    "vocab"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/LocaleText"
+      }
+    },
+    "order": {
+      "type": "integer"
+    },
+    "theme": {
+      "type": "string"
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "lessons",
+    "level",
+    "objectives",
+    "order",
+    "theme",
+    "title"
+  ]
+}

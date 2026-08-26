@@ -40,6 +40,8 @@ SUITE = [
     ("validate_capabilities.py", "code"),
     ("audit_manifest.py", "code"),
     ("audit_export_refs.py", "code"),
+    # Schema + identity + graph conformance for every exported artifact, against contracts/*.schema.json.
+    ("validate_contracts.py", "code"),
     ("audit_lesson_hygiene.py", "code"),
     ("graph_queries.py", "grep-fail"),
     ("validate.py", "code"),

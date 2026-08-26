@@ -1,4 +1,4 @@
-# Retitle to the actual content, e.g. 'Pessoas, crime e medida: vocabulário da linha は', and update the matching <heading level="2"> at the top of body, which repeats the old title.
+# Pessoas, crime e medida: vocabulário da linha は
 
 > Lição `les:n3-conectores-07` · tópico `top:n3-conectores` · **needs_review** (Layer C, aguarda professor).
 
@@ -14,7 +14,7 @@
 
 ---
 
-### Conectores e organização do discurso
+### Pessoas, crime e medida: vocabulário da linha は
 Nesta lição você amplia o vocabulário com uma leva de palavras da linha は. Não há gramática nova: a ideia é fixar as palavras vendo cada uma em uso. As frases de exemplo reaproveitam conectores que você já conhece, como その上 (além disso) e だけど (mas), só para você perceber como o vocabulário novo se encaixa num discurso encadeado. Leia cada palavra em voz alta, confira a leitura em hiragana e preste atenção aos pares parecidos.
 
 #### Pessoas e corpo

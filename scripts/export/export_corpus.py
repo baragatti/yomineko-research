@@ -51,6 +51,30 @@ def jloads(s):
     return json.loads(s) if s else None
 
 
+# Confidence and sources reach us straight from the working index, which stores whatever each ingest
+# pass happened to write. Three author-added kanji (米, 港, 市) carry the string "low" where all 10,025
+# other leveled rows carry a float, and one of them stores its sources as a bare list where its two
+# siblings use a dict. Normalising on the way out means the exported contract is uniform no matter what
+# the index holds, which is the point of having a contract at all.
+_CONF_WORDS = {"low": 0.0, "medium": 0.5, "high": 1.0}
+
+
+def confidence(v):
+    """level_confidence as a float in [0,1]. A word grade maps to its midpoint; None stays None."""
+    if v is None or isinstance(v, (int, float)):
+        return v
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return _CONF_WORDS.get(str(v).strip().lower())
+
+
+def sources(s):
+    """level_sources as an object. A bare list is the 'lists' member of that object, not a rival shape."""
+    v = jloads(s)
+    return {"lists": v} if isinstance(v, list) else v
+
+
 def loc(pt=None, en=None):
     """Locale-object: include only the keys that have content. None if empty."""
     o = {}
@@ -124,13 +148,16 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "SELECT component FROM kanji_component WHERE kanji_id=?", (kid,))]
             # example words: vocab written with this kanji (common first), with kana + meaning
             example_words = []
-            for vhw, vkana, vid in con.execute(
-                    "SELECT v.headword,v.kana,v.id FROM vocab_kanji vk JOIN vocab v ON v.id=vk.vocab_id "
+            for vhw, vkana, vid, vslug in con.execute(
+                    "SELECT v.headword,v.kana,v.id,v.slug FROM vocab_kanji vk JOIN vocab v ON v.id=vk.vocab_id "
                     "WHERE vk.kanji_id=? ORDER BY v.common DESC, v.freq_rank IS NULL, v.freq_rank LIMIT 10",
                     (kid,)):
                 fs = first_sense.get(vid)
+                # `slug` is the published address; `vocab_id` is the storage row and is kept only
+                # because existing consumers read it. A reader linking to the word wants the slug —
+                # resolving by `headword` instead lands on the wrong record for 93 shared headwords.
                 example_words.append({
-                    "headword": vhw, "kana": vkana, "vocab_id": vid,
+                    "headword": vhw, "kana": vkana, "vocab_id": vid, "slug": vslug,
                     "gloss": loc(pt=SL.get((fs[0], "gloss")) if fs else None,
                                  en=jloads(fs[1]) if fs and fs[1] else None)})
             # example sentences (phrases) containing this kanji
@@ -143,7 +170,7 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "LIMIT 18", (kid,)) if r[0] not in SENSITIVE][:6]
             rec = {
                 "id": kid, "slug": slug, "character": ch, "level": level,
-                "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
+                "level_confidence": confidence(lconf), "level_agreement": lagree, "level_sources": sources(lsrc),
                 "strokes": strokes, "grade": grade, "freq_rank": freq, "unicode": cp,
                 "kanjivg_ref": kvg, "kangxi_radical": radical, "radical_char": rchar,
                 "meanings": loc(pt=L.get((kid, "meanings")), en=jloads(men)),
@@ -205,8 +232,8 @@ def export_vocab(con: sqlite3.Connection) -> dict:
             vreg = sorted({r for s in senses if s["register"] for r in s["register"]}) or None
             rec = {
                 "id": vid, "slug": slug, "headword": hw, "kana": kana, "romaji": romaji,
-                "level": level, "level_confidence": lconf, "level_agreement": lagree,
-                "level_sources": jloads(lsrc), "lexeme_type": lex, "verb_class": vclass,
+                "level": level, "level_confidence": confidence(lconf), "level_agreement": lagree,
+                "level_sources": sources(lsrc), "lexeme_type": lex, "verb_class": vclass,
                 "adj_class": aclass, "common": bool(common), "register": vreg, "jmdict_ref": jref,
                 "notes": loc(pt=VL.get((vid, "notes"))), "pitch": pitch, "forms": forms,
                 "senses": senses, "kanji": kanji,
@@ -266,7 +293,7 @@ def export_grammar(con: sqlite3.Connection) -> dict:
                 "forms": forms or None,
                 "structure_pattern": pattern, "register": register, "caution": ex.get("caution"),
                 "level": level,
-                "level_confidence": lconf, "level_agreement": lagree, "level_sources": jloads(lsrc),
+                "level_confidence": confidence(lconf), "level_agreement": lagree, "level_sources": sources(lsrc),
                 "explanation": loc(pt=expl, en=Len.get((gid, "explanation"))),
                 "formation": loc(pt=L.get((gid, "formation")), en=Len.get((gid, "formation"))),
                 # Roadmap E (migration 008). Mechanical build steps alongside the prose formation, so a

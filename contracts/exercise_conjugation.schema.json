@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/exercise_conjugation.schema.json",
+  "title": "exercise_conjugation",
+  "description": "One generated conjugation drill: a prompt form, the correct inflection, and three distractors.",
+  "x-yomineko": {
+    "entity": "exercise_conjugation",
+    "records": 18524,
+    "packing": "list",
+    "glob": "corpus/exercises/conjugation/*.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "class": {
+      "type": "string",
+      "enum": [
+        "godan",
+        "i_adj",
+        "ichidan",
+        "kuru_irregular",
+        "na_adj",
+        "suru_irregular"
+      ]
+    },
+    "correct": {
+      "type": "string"
+    },
+    "distractors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "example": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "form": {
+      "type": "string",
+      "enum": [
+        "adverbial",
+        "attributive",
+        "causative",
+        "causative_passive",
+        "conditional_ba",
+        "conditional_tara",
+        "imperative",
+        "masu",
+        "masu_negative",
+        "masu_past",
+        "masu_past_negative",
+        "negative",
+        "negative_te",
+        "passive",
+        "past",
+        "past_negative",
+        "polite",
+        "polite_negative",
+        "polite_past",
+        "potential",
+        "te",
+        "volitional",
+        "volitional_polite"
+      ]
+    },
+    "form_label": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "headword": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "kana": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "adjective",
+        "verb"
+      ]
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "romaji": {
+      "type": "string"
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
+    "vocab_id": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "class",
+    "correct",
+    "distractors",
+    "example",
+    "form",
+    "form_label",
+    "headword",
+    "id",
+    "kana",
+    "kind",
+    "layer",
+    "level",
+    "needs_review",
+    "prompt",
+    "romaji",
+    "slug",
+    "source",
+    "vocab_id"
+  ]
+}

@@ -7,6 +7,7 @@ import { Icon } from "~/ui/Icon";
 // them from the .server file pulls the whole speaking path into the client bundle.
 import { checkpointLabel, splitUnitId } from "~/lib/speak";
 import { getUnit, gradeCheckpoint, gradeProduction } from "~/lib/speak.server";
+import { vocabHref } from "~/lib/ids";
 
 export function meta({ data: d }: { data?: { unit?: { title?: string } } }) {
   return [{ title: `Yomineko — ${d?.unit?.title ?? "Fala Primeiro"}` }];
@@ -107,7 +108,7 @@ export default function SpeakUnit() {
             <ul className="ym-list ym-list-tight">
               {unit.words.map((w) => (
                 <li key={w.slug}>
-                  <Link to={`/vocabulario/${encodeURIComponent(w.headword)}`}>
+                  <Link to={vocabHref(w.slug)}>
                     <span className="ym-jp">{w.headword}</span>
                   </Link>{" "}
                   <span className="ym-muted">{w.kana} · {w.romaji} · {w.level.toUpperCase()}</span>

@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/family.schema.json",
+  "title": "family",
+  "description": "A group of items that behave alike (a conjugation class, a particle set, a semantic field), with the rule that governs the group.",
+  "x-yomineko": {
+    "entity": "family",
+    "records": 396,
+    "packing": "list",
+    "glob": "corpus/families/families.json",
+    "stable_id_field": "slug",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "null"
+    },
+    "governing_rule": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/LocaleText"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "id": {
+      "type": "integer"
+    },
+    "importance_rank": {
+      "type": "integer"
+    },
+    "label": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "intra_order": {
+            "type": "integer"
+          },
+          "is_core": {
+            "type": "boolean"
+          },
+          "member_type": {
+            "type": "string",
+            "enum": [
+              "grammar",
+              "kanji",
+              "vocab"
+            ]
+          },
+          "note": {
+            "type": "null"
+          },
+          "ref": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "spans_levels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "n4",
+          "n5"
+        ]
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "conjugation_class",
+        "contrast_pair",
+        "function_set",
+        "kanji_component",
+        "particle_set",
+        "semantic_field",
+        "word_family"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "description",
+    "governing_rule",
+    "id",
+    "importance_rank",
+    "label",
+    "members",
+    "slug",
+    "spans_levels",
+    "type"
+  ]
+}

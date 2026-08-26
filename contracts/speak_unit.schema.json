@@ -1,0 +1,440 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/speak_unit.schema.json",
+  "title": "speak_unit",
+  "description": "One unit of the speaking path: phrases, drills and a checkpoint for a single situation.",
+  "x-yomineko": {
+    "entity": "speak_unit",
+    "records": 72,
+    "packing": "single",
+    "glob": "course/speak/*/unit-*.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "audio": {
+      "type": "string",
+      "enum": [
+        "pending"
+      ]
+    },
+    "checkpoint": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "distractors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "id": {
+            "$ref": "common.schema.json#/$defs/StableId"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "context_fill",
+              "kanji_reading",
+              "paraphrase",
+              "sentence_order"
+            ]
+          },
+          "via": {
+            "type": "string",
+            "enum": [
+              "new-word",
+              "phrase",
+              "review"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "chunk_phrases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "sent:tatoeba-13174949",
+          "sent:tatoeba-1531875",
+          "sent:tatoeba-1532832",
+          "sent:tatoeba-1576172",
+          "sent:tatoeba-1598216",
+          "sent:tatoeba-335372",
+          "sent:tatoeba-3480287",
+          "sent:tatoeba-3553332",
+          "sent:tatoeba-373351",
+          "sent:tatoeba-408301",
+          "sent:tatoeba-426889",
+          "sent:tatoeba-4854",
+          "sent:tatoeba-4971",
+          "sent:tatoeba-640569",
+          "sent:tatoeba-8467948",
+          "sent:tatoeba-9559301"
+        ]
+      }
+    },
+    "cumulative_known_vocab": {
+      "type": "integer"
+    },
+    "drills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pattern": {
+            "type": "string"
+          },
+          "strand": {
+            "type": "string",
+            "enum": [
+              "language-focused"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "fluency": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "prompt_pt": {
+          "type": "string",
+          "enum": [
+            "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+            "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+            "Perguntaram sua opinião. Diga o que você acha e por quê.",
+            "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+            "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
+            "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
+            "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+            "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+            "Você não está bem. Explique o que está sentindo e peça ajuda.",
+            "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+            "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+            "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
+          ]
+        },
+        "seconds_target": {
+          "type": "integer",
+          "enum": [
+            24,
+            48
+          ]
+        },
+        "strand": {
+          "type": "string",
+          "enum": [
+            "fluency"
+          ]
+        },
+        "zero_new_tokens": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "kanji_recognition": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "order": {
+      "type": "integer",
+      "enum": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "patterns_chunked": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "production": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "accepted_variants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "answer_key": {
+            "type": "string"
+          },
+          "prompt_pt": {
+            "type": "string"
+          },
+          "sentence": {
+            "type": "string"
+          },
+          "strand": {
+            "type": "string",
+            "enum": [
+              "meaning-output"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "real_phrases": {
+      "type": "integer",
+      "enum": [
+        6
+      ]
+    },
+    "say_now": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "shadowing": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "speak:about_you",
+        "speak:arrival",
+        "speak:eating",
+        "speak:getting_around",
+        "speak:health",
+        "speak:lodging",
+        "speak:opinions",
+        "speak:past_stories",
+        "speak:politeness",
+        "speak:real_talk",
+        "speak:shopping",
+        "speak:time_plans"
+      ]
+    },
+    "strand_counts": {
+      "type": "object",
+      "properties": {
+        "fluency": {
+          "type": "integer",
+          "enum": [
+            0,
+            3,
+            6
+          ]
+        },
+        "language-focused": {
+          "type": "integer",
+          "enum": [
+            0,
+            13,
+            17,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35
+          ]
+        },
+        "meaning-input": {
+          "type": "integer",
+          "enum": [
+            12
+          ]
+        },
+        "meaning-output": {
+          "type": "integer",
+          "enum": [
+            0,
+            3
+          ]
+        }
+      },
+      "required": [
+        "fluency",
+        "language-focused",
+        "meaning-input",
+        "meaning-output"
+      ],
+      "additionalProperties": false
+    },
+    "strands": {
+      "type": "object",
+      "properties": {
+        "fluency": {
+          "type": "integer",
+          "enum": [
+            0,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        "language-focused": {
+          "type": "integer",
+          "enum": [
+            0,
+            38,
+            45,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ]
+        },
+        "meaning-input": {
+          "type": "integer",
+          "enum": [
+            100,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            32,
+            35,
+            67
+          ]
+        },
+        "meaning-output": {
+          "type": "integer",
+          "enum": [
+            0,
+            17,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      },
+      "required": [
+        "fluency",
+        "language-focused",
+        "meaning-input",
+        "meaning-output"
+      ],
+      "additionalProperties": false
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "untranslated": {
+      "type": "array"
+    },
+    "words": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "audio",
+    "checkpoint",
+    "chunk_phrases",
+    "cumulative_known_vocab",
+    "drills",
+    "fluency",
+    "id",
+    "kanji_recognition",
+    "layer",
+    "needs_review",
+    "order",
+    "patterns",
+    "patterns_chunked",
+    "production",
+    "real_phrases",
+    "say_now",
+    "schema_version",
+    "shadowing",
+    "stage",
+    "strand_counts",
+    "strands",
+    "title",
+    "untranslated",
+    "words"
+  ]
+}

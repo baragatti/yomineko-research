@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/capability.schema.json",
+  "title": "capability",
+  "description": "Something a learner can DO once a set of lessons is complete. The bridge between the syllabus and the exam.",
+  "x-yomineko": {
+    "entity": "capability",
+    "records": 74,
+    "packing": "list",
+    "glob": "corpus/capabilities/registry.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "grammar_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "name": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "grammar_keys",
+    "id",
+    "level",
+    "name"
+  ]
+}

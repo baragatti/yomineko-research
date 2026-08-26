@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/vocab.schema.json",
+  "title": "vocab",
+  "description": "One dictionary word, keyed by its JMdict entry. Carries senses, pitch, inflection class and the consensus level.",
+  "x-yomineko": {
+    "entity": "vocab",
+    "records": 7401,
+    "packing": "list",
+    "glob": "corpus/vocab/*.json",
+    "stable_id_field": "slug",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "adj_class": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "i_adj",
+        "na_adj",
+        null
+      ]
+    },
+    "common": {
+      "type": "boolean"
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "form": {
+            "type": "string"
+          },
+          "is_common": {
+            "type": "boolean"
+          },
+          "is_kana": {
+            "type": "boolean"
+          },
+          "is_primary": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "headword": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "jmdict_ref": {
+      "type": "string"
+    },
+    "kana": {
+      "type": "string"
+    },
+    "kanji": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "level_agreement": {
+      "$ref": "common.schema.json#/$defs/LevelTag/properties/level_agreement"
+    },
+    "level_confidence": {
+      "$ref": "common.schema.json#/$defs/LevelTag/properties/level_confidence"
+    },
+    "level_sources": {
+      "type": "object",
+      "properties": {
+        "bluskyo": {
+          "type": "string",
+          "enum": [
+            "n3",
+            "n4",
+            "n5"
+          ]
+        },
+        "correction": {
+          "type": "string",
+          "enum": [
+            "2026-07-09 kana-collision fix: bluskyo/jlptvocabapi せっけん n5 rows mean 石鹸 (soap, vocab:1382590); 接見 is unlisted in every ingested JLPT list -> conservative n1 (advanced formal/legal term)"
+          ]
+        },
+        "elzup": {
+          "type": "string",
+          "enum": [
+            "n4",
+            "n5"
+          ]
+        },
+        "jlpt-lists": {
+          "type": "string",
+          "enum": [
+            "n1",
+            "n2"
+          ]
+        },
+        "jlptvocabapi": {
+          "type": "string",
+          "enum": [
+            "n4",
+            "n5"
+          ]
+        },
+        "openanki": {
+          "type": "string",
+          "enum": [
+            "n4",
+            "n5"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "lexeme_type": {
+      "type": "string",
+      "enum": [
+        "counter",
+        "suru_verb",
+        "word"
+      ]
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/LocaleText"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "pitch": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "accent_positions": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          },
+          "reading": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "register": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "humble"
+        ]
+      }
+    },
+    "romaji": {
+      "type": "string"
+    },
+    "senses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "array"
+          },
+          "gloss": {
+            "$ref": "common.schema.json#/$defs/LocaleTextList"
+          },
+          "misc": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "hum"
+              ]
+            }
+          },
+          "order": {
+            "type": "integer",
+            "enum": [
+              0,
+              1,
+              2,
+              3
+            ]
+          },
+          "pos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "register": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "string",
+              "enum": [
+                "humble"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "verb_class": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "godan",
+        "ichidan",
+        "kuru_irregular",
+        "suru_irregular",
+        null
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "adj_class",
+    "common",
+    "forms",
+    "headword",
+    "id",
+    "jmdict_ref",
+    "kana",
+    "kanji",
+    "level",
+    "level_agreement",
+    "level_confidence",
+    "level_sources",
+    "lexeme_type",
+    "notes",
+    "pitch",
+    "register",
+    "romaji",
+    "senses",
+    "slug",
+    "verb_class"
+  ]
+}

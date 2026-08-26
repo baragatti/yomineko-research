@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/conjugation.schema.json",
+  "title": "conjugation",
+  "description": "The full inflection table for one verb or adjective, keyed by the vocab entry it belongs to.",
+  "x-yomineko": {
+    "entity": "conjugation",
+    "records": 1156,
+    "packing": "list",
+    "glob": "corpus/conjugations/*.json",
+    "stable_id_field": "slug",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "class": {
+      "type": "string",
+      "enum": [
+        "godan",
+        "i_adj",
+        "ichidan",
+        "kuru_irregular",
+        "na_adj",
+        "suru_irregular"
+      ]
+    },
+    "conjugations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "form": {
+            "type": "string",
+            "enum": [
+              "adverbial",
+              "attributive",
+              "causative",
+              "causative_passive",
+              "conditional_ba",
+              "conditional_tara",
+              "dictionary",
+              "imperative",
+              "masu",
+              "masu_negative",
+              "masu_past",
+              "masu_past_negative",
+              "negative",
+              "negative_te",
+              "passive",
+              "past",
+              "past_negative",
+              "polite",
+              "polite_negative",
+              "polite_past",
+              "potential",
+              "te",
+              "volitional",
+              "volitional_polite"
+            ]
+          },
+          "kana": {
+            "type": "string"
+          },
+          "romaji": {
+            "type": "string"
+          },
+          "surface": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "headword": {
+      "type": "string"
+    },
+    "kana": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "adjective",
+        "verb"
+      ]
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "vocab_id": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "class",
+    "conjugations",
+    "headword",
+    "kana",
+    "kind",
+    "level",
+    "slug",
+    "vocab_id"
+  ]
+}

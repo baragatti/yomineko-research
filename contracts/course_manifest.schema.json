@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/course_manifest.schema.json",
+  "title": "course_manifest",
+  "description": "The index an API reads first: every course, where its root lives, and how much is in it.",
+  "x-yomineko": {
+    "entity": "course_manifest",
+    "records": 1,
+    "packing": "single",
+    "glob": "course/manifest.json",
+    "stable_id_field": null,
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "courses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/StableId"
+          },
+          "lesson_count": {
+            "type": "integer",
+            "enum": [
+              101,
+              41,
+              84,
+              96
+            ]
+          },
+          "level": {
+            "$ref": "common.schema.json#/$defs/Level"
+          },
+          "order": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          "path": {
+            "type": "string",
+            "enum": [
+              "n3/course.json",
+              "n4/course.json",
+              "n5/course.json",
+              "pre-n5/course.json"
+            ]
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "topic_count": {
+            "type": "integer",
+            "enum": [
+              14,
+              15,
+              17,
+              6
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "enums_ref": {
+      "type": "string",
+      "enum": [
+        "design/unlock_enums.json"
+      ]
+    },
+    "generated": {
+      "type": "string",
+      "enum": [
+        "2026-08-26"
+      ]
+    },
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "courses",
+    "enums_ref",
+    "generated",
+    "schema_version"
+  ]
+}

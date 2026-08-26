@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/capability_lesson_map.schema.json",
+  "title": "capability_lesson_map",
+  "description": "Which capabilities each lesson contributes to. A keyed collection rather than a record list: the lesson id IS the key, so there is no id field inside the value. Hand-authored — a map's contract is about its key space and value shape, which the record-shape generator has no idiom for.",
+  "x-yomineko": {
+    "entity": "capability_lesson_map",
+    "packing": "map",
+    "glob": "corpus/capabilities/lesson_map.json",
+    "key_namespace": "les",
+    "value_namespace": "cap",
+    "stable_id_field": null
+  },
+  "type": "object",
+  "propertyNames": {
+    "$ref": "common.schema.json#/$defs/StableId",
+    "pattern": "^les:"
+  },
+  "additionalProperties": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "$ref": "common.schema.json#/$defs/StableId",
+      "pattern": "^cap:"
+    },
+    "description": "The capabilities this lesson advances. Every entry must resolve in corpus/capabilities/registry.json."
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/lesson.schema.json",
+  "title": "lesson",
+  "description": "The leaf unit a learner sits down to. Holds objectives, explanation, exercises and the items it introduces — all corpus content by REFERENCE, never embedded.",
+  "x-yomineko": {
+    "entity": "lesson",
+    "records": 322,
+    "packing": "single",
+    "glob": "course/*/topic-*/lesson-*.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "body": {
+      "type": "string"
+    },
+    "cumulative_known_set": {
+      "type": "object",
+      "properties": {
+        "conjugation-form": {
+          "type": "array"
+        },
+        "grammar": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "kana-family": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "kanji": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phrase": {
+          "type": "array"
+        },
+        "vocab": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "conjugation-form",
+        "grammar",
+        "kana-family",
+        "kanji",
+        "phrase",
+        "vocab"
+      ],
+      "additionalProperties": false
+    },
+    "description": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "exercises": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "answer": {
+            "type": "object",
+            "properties": {
+              "accept": {
+                "type": "array"
+              },
+              "choices": {
+                "type": "array"
+              },
+              "correct": {
+                "type": "string"
+              },
+              "full": {
+                "type": "string"
+              },
+              "order": {
+                "type": "array"
+              },
+              "pairs": {
+                "type": "array"
+              },
+              "sentence_refs": {
+                "type": "array"
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          },
+          "explanation": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "id": {
+            "$ref": "common.schema.json#/$defs/StableId"
+          },
+          "prompt": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "sentence_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "cloze",
+              "matching",
+              "particle_choice",
+              "production",
+              "recognition",
+              "sentence_build"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "feature_unlocks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "feat:conjugation-drill",
+          "feat:jlpt-sim-n4",
+          "feat:jlpt-sim-n5",
+          "feat:srs-reviews"
+        ]
+      }
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "needs": {
+      "type": "array"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "objectives": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/LocaleText"
+      }
+    },
+    "order": {
+      "type": "integer",
+      "enum": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "sentence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "srs": {
+      "type": "object",
+      "properties": {
+        "introduces_cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "card_types": {
+                "type": "array"
+              },
+              "deck": {
+                "type": "string",
+                "enum": [
+                  "deck:grammar-n4",
+                  "deck:grammar-n5",
+                  "deck:kana-hiragana",
+                  "deck:kana-katakana",
+                  "deck:kanji-n4",
+                  "deck:kanji-n5",
+                  "deck:vocab-n4",
+                  "deck:vocab-n5"
+                ]
+              },
+              "item": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "introduces_cards"
+      ],
+      "additionalProperties": false
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "unlocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ref": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "feature",
+              "grammar",
+              "kana-family",
+              "kanji",
+              "vocab"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "body",
+    "cumulative_known_set",
+    "description",
+    "exercises",
+    "feature_unlocks",
+    "id",
+    "level",
+    "needs",
+    "needs_review",
+    "objectives",
+    "order",
+    "schema_version",
+    "sentence_refs",
+    "srs",
+    "title",
+    "topic",
+    "unlocks"
+  ]
+}

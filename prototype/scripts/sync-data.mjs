@@ -44,6 +44,24 @@ function indexBy(arr, key) {
   return o;
 }
 
+/**
+ * Index by the identifier part of a record's stable slug ("vocab:1580640" -> "1580640").
+ *
+ * Vocabulary cannot be indexed by headword: 93 headwords are shared by 193 records, so indexBy(…,
+ * "headword") silently dropped 100 entries — 7,401 records became 7,301 keys, last one wins. The
+ * courseware now references vocabulary by slug, and this is the matching lookup.
+ */
+function indexBySlugIdent(arr) {
+  const o = {};
+  for (const it of arr) {
+    const slug = it?.slug;
+    if (typeof slug !== "string") continue;
+    const i = slug.indexOf(":");
+    o[i === -1 ? slug : slug.slice(i + 1)] = it;
+  }
+  return o;
+}
+
 async function main() {
   if (!(await exists(COURSE)) || !(await exists(CORPUS))) {
     console.error(`Missing research export. Looked in:\n  ${COURSE}\n  ${CORPUS}\nSet YOMINEKO_RESEARCH.`);
@@ -82,7 +100,7 @@ async function main() {
 
   // ---- corpus registries ----
   const kanji = indexBy(await readCorpusList("kanji"), "character");
-  const vocab = indexBy(await readCorpusList("vocab"), "headword");
+  const vocab = indexBySlugIdent(await readCorpusList("vocab"));
   const grammar = indexBy(await readCorpusList("grammar"), "key");
   // kanji stroke-order (Kanji Alive CC BY 4.0, adapted to our format) — keyed by character. Public attributed
   // data: a single kanji's steps may be sent to the client island for the draw animation (not paid corpus).

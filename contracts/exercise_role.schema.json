@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/exercise_role.schema.json",
+  "title": "exercise_role",
+  "description": "One generated particle-role drill, derived mechanically from a sentence's own particles.",
+  "x-yomineko": {
+    "entity": "exercise_role",
+    "records": 5358,
+    "packing": "list",
+    "glob": "corpus/exercises/roles/*.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "correct": {
+      "type": "string"
+    },
+    "distractors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "jp": {
+      "type": "string"
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "particle": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "から",
+        "が",
+        "の",
+        "は",
+        "へ",
+        "を",
+        null
+      ]
+    },
+    "prompt": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "direction",
+        "from",
+        "modifier",
+        "object",
+        "predicate",
+        "subject",
+        "topic"
+      ]
+    },
+    "sentence": {
+      "type": "string"
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "correct",
+    "distractors",
+    "id",
+    "jp",
+    "layer",
+    "level",
+    "needs_review",
+    "particle",
+    "prompt",
+    "role",
+    "sentence",
+    "source"
+  ]
+}

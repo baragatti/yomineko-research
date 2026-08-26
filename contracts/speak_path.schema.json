@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/speak_path.schema.json",
+  "title": "speak_path",
+  "description": "The root of the situation-ordered path (Fala Primeiro): its stages and totals.",
+  "x-yomineko": {
+    "entity": "speak_path",
+    "records": 1,
+    "packing": "single",
+    "glob": "course/speak/course.json",
+    "stable_id_field": "id",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "description": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "id": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "ordering": {
+      "type": "string",
+      "enum": [
+        "survival scenario (primary) + vocab.freq_rank (secondary)"
+      ]
+    },
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "shortfall": {
+      "type": "array"
+    },
+    "spec": {
+      "type": "string",
+      "enum": [
+        "design/speaking_path.md"
+      ]
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "approx_band": {
+            "type": "string",
+            "enum": [
+              "n3",
+              "n4",
+              "n4/n3",
+              "n5",
+              "n5/n4",
+              "pre-n5",
+              "pre-n5/n5"
+            ]
+          },
+          "order": {
+            "type": "integer",
+            "enum": [
+              1,
+              10,
+              11,
+              12,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          "slug": {
+            "$ref": "common.schema.json#/$defs/StableId"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
+          },
+          "unit_count": {
+            "type": "integer",
+            "enum": [
+              6
+            ]
+          },
+          "unit_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "checkpoint_items": {
+          "type": "integer",
+          "enum": [
+            359
+          ]
+        },
+        "drills": {
+          "type": "integer",
+          "enum": [
+            277
+          ]
+        },
+        "fluency": {
+          "type": "integer",
+          "enum": [
+            423
+          ]
+        },
+        "patterns_chunked": {
+          "type": "integer",
+          "enum": [
+            134
+          ]
+        },
+        "patterns_kept": {
+          "type": "integer",
+          "enum": [
+            277
+          ]
+        },
+        "phrases": {
+          "type": "integer",
+          "enum": [
+            432
+          ]
+        },
+        "production": {
+          "type": "integer",
+          "enum": [
+            213
+          ]
+        },
+        "real_phrases": {
+          "type": "integer",
+          "enum": [
+            432
+          ]
+        },
+        "stages": {
+          "type": "integer",
+          "enum": [
+            12
+          ]
+        },
+        "units": {
+          "type": "integer",
+          "enum": [
+            72
+          ]
+        },
+        "vocab_introduced": {
+          "type": "integer",
+          "enum": [
+            584
+          ]
+        }
+      },
+      "required": [
+        "checkpoint_items",
+        "drills",
+        "fluency",
+        "patterns_chunked",
+        "patterns_kept",
+        "phrases",
+        "production",
+        "real_phrases",
+        "stages",
+        "units",
+        "vocab_introduced"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "description",
+    "id",
+    "layer",
+    "needs_review",
+    "ordering",
+    "schema_version",
+    "shortfall",
+    "spec",
+    "stages",
+    "title",
+    "totals"
+  ]
+}

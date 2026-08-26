@@ -322,7 +322,10 @@ export function resolveUnlocks(lesson: any) {
     if (u.type === "kanji" && getKanji(id)) out.kanji.push({ id, label: id, href: `/kanji/${encodeURIComponent(id)}` });
     else if (u.type === "vocab") {
       const v = getVocab(id);
-      if (v) out.vocab.push({ id, label: v.kana || id, sub: id, href: `/vocabulario/${encodeURIComponent(id)}` });
+      // `id` is the JMdict slug now, so it is an address, not something to show a learner: the chip
+      // shows the word and its reading and keeps the id only in the href.
+      if (v) out.vocab.push({ id, label: v.headword || id, sub: v.kana ?? "",
+                              href: `/vocabulario/${encodeURIComponent(id)}` });
     } else if (u.type === "grammar") {
       const g = getGrammar(id);
       if (g) out.grammar.push({ id, label: g.forms?.[0]?.form || g.structure_pattern || loc(g.label) || id, href: `/gramatica/${encodeURIComponent(id)}` });

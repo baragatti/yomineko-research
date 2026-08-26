@@ -2,6 +2,7 @@ import { Link, useLoaderData } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
 import { getVocab, allVocab, locArr, sentencesForVocab } from "~/lib/corpus.server";
+import { vocabHref } from "~/lib/ids";
 
 export function meta() {
   return [{ title: "Yomineko — Revisar" }];
@@ -17,7 +18,7 @@ export async function loader() {
       kana: v.kana,
       romaji: v.romaji ?? "",
       gloss: locArr(v.senses?.[0]?.gloss).slice(0, 3).join(", "),
-      href: `/vocabulario/${encodeURIComponent(v.headword)}`,
+      href: vocabHref(v.slug),
     },
     example: ex,
   };

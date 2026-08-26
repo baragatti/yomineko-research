@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/stroke_lines.schema.json",
+  "title": "stroke_lines",
+  "description": "Raw stroke path geometry for one kanji.",
+  "x-yomineko": {
+    "entity": "stroke_lines",
+    "records": 2098,
+    "packing": "list",
+    "glob": "corpus/strokes/lines_n[0-9].json",
+    "stable_id_field": null,
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "character": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string",
+      "enum": [
+        "GlyphWiki-free"
+      ]
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
+    "strokes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "character",
+    "license",
+    "source",
+    "strokes"
+  ]
+}

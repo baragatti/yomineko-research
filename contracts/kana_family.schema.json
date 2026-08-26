@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/kana_family.schema.json",
+  "title": "kana_family",
+  "description": "The kana chart as ordered groups. Keyed by script, so unlike the capability map its keys are a fixed enum rather than stable IDs — which is why the two map-packed files cannot share one generated shape.",
+  "x-yomineko": {
+    "entity": "kana_family",
+    "packing": "map",
+    "glob": "corpus/kana/families.json",
+    "key_namespace": null,
+    "stable_id_field": null
+  },
+  "type": "object",
+  "propertyNames": { "enum": ["hiragana", "katakana"] },
+  "required": ["hiragana", "katakana"],
+  "additionalProperties": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/StableId", "pattern": "^kana:" },
+        "label": { "$ref": "common.schema.json#/$defs/LocaleText" },
+        "row": { "type": "string", "minLength": 1 },
+        "type": {
+          "type": "string",
+          "enum": ["base", "dakuten", "handakuten", "long-vowel", "sokuon", "yoon"],
+          "description": "How the group relates to the base chart. Neutral English per design/i18n.md — the pt-BR label lives in `label`."
+        },
+        "order": { "type": "integer", "minimum": 1, "description": "Teaching order within the script." },
+        "members": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "$ref": "common.schema.json#/$defs/StableId", "pattern": "^kana:" },
+              "char": { "type": "string", "minLength": 1 },
+              "romaji": { "type": "string", "minLength": 1 }
+            },
+            "required": ["id", "char", "romaji"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["id", "label", "row", "type", "order", "members"],
+      "additionalProperties": false
+    }
+  }
+}

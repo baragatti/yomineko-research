@@ -16,7 +16,7 @@ export default [
   route("kanji", "routes/kanji.tsx"),
   route("kanji/:char", "routes/kanjiDetail.tsx"),
   route("vocabulario", "routes/vocab.tsx"),
-  route("vocabulario/:headword", "routes/vocabDetail.tsx"),
+  route("vocabulario/:id", "routes/vocabDetail.tsx"),
   route("gramatica", "routes/grammar.tsx"),
   route("gramatica/:key", "routes/grammarDetail.tsx"),
   route("revisar", "routes/review.tsx"),

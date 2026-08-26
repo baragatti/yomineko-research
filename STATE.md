@@ -58,6 +58,62 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-08-26 (ae) — THE CORPUS NOW HAS A MACHINE-READABLE CONTRACT, ONE IDENTITY PER RECORD, AND
+> 223 DUPLICATE-ID FILES OUT OF THE LIVE TREE. Gate green: 23 hard validators (one new), 23/23
+> entities schema-clean.**
+>
+> - **`contracts/` — 23 JSON Schemas, a manifest and generated TypeScript.** The model was prose in
+>   `design/schema_v2.md` and hand-written field checks for lesson leaves; the other seventeen artifact
+>   families had nothing. `scripts/contracts/infer_shapes.py` measures what the data IS (per field:
+>   frequency, types, closed value sets), `build_schemas.py` turns that into schemas — `required` from
+>   the measurement, semantics from its own tables — and `build_manifest.py` writes the catalogue an
+>   API mounts routes from, plus `contracts/types.ts`. `validate_contracts.py` checks shape + identity
+>   + graph and is now in `validate_all.py`.
+> - **`needs_review` was an integer on four entities and a boolean on five.** A consumer writing
+>   `=== true` read the integer form as false, i.e. presented unreviewed Layer-C material as approved.
+>   "AI-generated" had three spellings (`ai` int, `ai_generated` int, `ai_generated` bool). Fixed at
+>   all six producers; the exam banks were migrated in place because the working index cannot rebuild
+>   them (below). No TypeScript read those fields, so nothing broke.
+> - **Vocabulary had two addressing schemes and one of them was ambiguous.** The corpus publishes
+>   `vocab:1580640` (JMdict); the courseware wrote `vocab:人` — and 93 headwords are shared by 193
+>   records, so 人 is both the N5 "pessoa" and an N1 suffix, 仏 both "Buda" and "França". 678,700
+>   references resolved by index order, and the prototype's own headword index silently collapsed
+>   7,401 records into 7,301. The course layer is migrated to slugs (`scripts/export/vocab_identity.py`):
+>   2,831 headwords name one record, 60 more were settled by the unlocking lesson's level, 10 by
+>   reading frequency in our own sentence bank. **20 await a teacher** —
+>   `course/vocab_disambiguation_review.json`, each with both candidates and the evidence.
+>   `/vocabulario/1580640` and `/vocabulario/1366410` are now different pages.
+> - **`cumulative_known_set` is derived at export, not read from the index.** It is by definition the
+>   union of unlocks up to each lesson; 97 of 322 stored sets still listed refs their unlocks no longer
+>   contained.
+> - **223 files moved to `archive/course-pre-renumber-2026-06-26/`.** n3 and n4 each held two copies of
+>   every topic after renumbering, so 31 topic ids and 192 lesson ids each answered to two files.
+>   Independently audited before the move (`archive/ARCHIVE.md`).
+> - **The audit found something the proposal had wrong, and it was the important part.** The live copy
+>   was NOT a clean superset: **7 lessons carried QA-reviewer instructions in learner-facing fields**.
+>   `les:n3-conectores-07`'s title on the live site read *"Retitle to the actual content, e.g. …, and
+>   update the matching `<heading level=\"2\">` at the top of body"*. One also had mojibake — Cyrillic
+>   т and я inside `～にとって` — and had dropped `～にかわって`. Repaired by
+>   `scripts/apply_qa_instruction_leaks.py` BEFORE the move; not blind reverts, since where the
+>   instruction contained the improvement it asked for, the improvement was applied.
+>
+> **Open, needing a human:**
+> - `course/vocab_disambiguation_review.json` — **20 headwords**. 10 chosen by corpus frequency,
+>   10 with no evidence at all (何方 どちら/どなた, 得る える/うる, 様 さま/よう, 柄 え/がら, 額 がく/ひたい…).
+>   The lesson's own topic is usually the tell: 様 is unlocked by `les:n4-suposicao-03`, so it is
+>   ようだ, not the honorific — but that is a teacher's call, not a script's.
+> - **The working index cannot rebuild the exam banks.** `db/corpus.sqlite`'s `sentence_vocab` is
+>   thinner than the one they were built from — 361 of 400 committed `n3_context_fill` items reference
+>   a link that no longer exists, and a rebuild drops that bank from 400 items to 97. The committed
+>   JSON is the source of truth (CLAUDE.md) and is correct; the INDEX has regressed. Re-run
+>   `build_exam_banks.py` only after that is repaired. `export_corpus.py` and `export_course.py` were
+>   both verified safe to re-run (record-by-record type-sensitive diff, zero unintended changes).
+> - Three stroke entities (`stroke_order`, `stroke_lines`, `stroke_kana`, 3,493 records) have **no
+>   stable id** — addressed by the character they draw. Nothing in the graph can link to them.
+> - `archive/` copies predate both migrations and are not self-consistent with the corpus; restoring
+>   one is a migration, not a copy.
+
+
 > **2026-08-21 (ad) — THE 50 WITHHELD FORMATION POINTS ARE REPAIRED, AND THE KANJI GROUPING NOW ALIGNS
 > THE WHOLE WORD INSTEAD OF SEARCHING FOR A READING INSIDE IT. Gate green, 22 hard validators (three
 > new).**

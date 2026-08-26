@@ -43,7 +43,9 @@ def _load(sub: str, key: str) -> set:
 def main() -> int:
     # pools keyed by the FULL ref form, so comparisons are uniform (no per-kind prefix stripping)
     kanji = {f"kanji:{c}" for c in _load("kanji", "character")}
-    vocab = {f"vocab:{h}" for h in _load("vocab", "headword")}
+    # Vocab is addressed by its published slug (vocab:<jmdict_id>), not by headword: 93 headwords are
+    # shared by 193 records, so a headword pool would accept a ref that cannot be resolved to one word.
+    vocab = set(_load("vocab", "slug"))  # already "vocab:…"
     grammar = {f"gram:{k}" for k in _load("grammar", "key")}
     sents = _load("sentences", "slug")  # already "sent:…"
     readings = _load("readings", "slug")  # already "read:…"

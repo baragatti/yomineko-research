@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/reading.schema.json",
+  "title": "reading",
+  "description": "A short reading passage gated to a lesson, with its tokens and translation.",
+  "x-yomineko": {
+    "entity": "reading",
+    "records": 286,
+    "packing": "list",
+    "glob": "corpus/readings/*.json",
+    "stable_id_field": "slug",
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "ai_generated": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/ai_generated"
+    },
+    "gated_to_lesson": {
+      "type": "string"
+    },
+    "jp": {
+      "type": "string"
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
+    "length_band": {
+      "type": "string",
+      "enum": [
+        "long",
+        "paragraph",
+        "short"
+      ]
+    },
+    "level": {
+      "$ref": "common.schema.json#/$defs/Level"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "slug": {
+      "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "source_slugs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "title": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "tokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pos": {
+            "type": "string",
+            "enum": [
+              "adnominal",
+              "adverb",
+              "auxiliary",
+              "conjunction",
+              "i-adjective",
+              "interjection",
+              "na-adjective",
+              "noun",
+              "particle",
+              "prefix",
+              "pronoun",
+              "punctuation",
+              "suffix",
+              "verb",
+              "whitespace"
+            ]
+          },
+          "r": {
+            "type": "string"
+          },
+          "ro": {
+            "type": "string"
+          },
+          "s": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "translation": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "uses": {
+      "type": "object",
+      "properties": {
+        "kanji": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vocab": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "kanji",
+        "vocab"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "ai_generated",
+    "gated_to_lesson",
+    "jp",
+    "layer",
+    "length_band",
+    "level",
+    "needs_review",
+    "slug",
+    "source_slugs",
+    "title",
+    "tokens",
+    "translation",
+    "uses"
+  ]
+}

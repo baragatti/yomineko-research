@@ -1,4 +1,4 @@
-# Title: 'Corpo, natureza e cotidiano: o bloco ほ'
+# Corpo, natureza e cotidiano: o bloco ほ
 
 > Lição `les:n3-desejos-07` · tópico `top:n3-desejos` · **needs_review** (Layer C, aguarda professor).
 

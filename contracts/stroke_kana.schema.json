@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/stroke_kana.schema.json",
+  "title": "stroke_kana",
+  "description": "Stroke data for one kana character, including the shadow guides used when tracing.",
+  "x-yomineko": {
+    "entity": "stroke_kana",
+    "records": 162,
+    "packing": "list",
+    "glob": "corpus/strokes/kana.json",
+    "stable_id_field": null,
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+  },
+  "type": "object",
+  "properties": {
+    "char": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "hiragana",
+        "katakana"
+      ]
+    },
+    "license": {
+      "type": "string",
+      "enum": [
+        "OFL-1.1+MIT"
+      ]
+    },
+    "shadows": {
+      "type": "array",
+      "items": {
+        "type": "array"
+      }
+    },
+    "shadows[]": {
+      "type": "object",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
+    "strokes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "viewbox": {
+      "type": "string",
+      "enum": [
+        "0 0 1024 1024"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "char",
+    "kind",
+    "license",
+    "shadows",
+    "source",
+    "strokes",
+    "viewbox"
+  ]
+}

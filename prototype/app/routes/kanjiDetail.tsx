@@ -5,6 +5,7 @@ import { Icon } from "~/ui/Icon";
 import { getKanji, getVocab, locArr, lessonsUsing, sentencesForKanji, kanaToRomaji, getStrokes, getStrokeLines, loc, allVocab } from "~/lib/corpus.server";
 import { SentenceCards } from "~/ui/SentenceCards";
 import { KanjiStrokes } from "~/ui/KanjiStrokes";
+import { vocabHref, idPart } from "~/lib/ids";
 
 export function meta({ data: d }: { data: any }) {
   return [{ title: `Yomineko — ${d?.character ?? "Kanji"}` }];
@@ -42,7 +43,8 @@ export async function loader({ params }: { params: { char: string } }) {
       compounds: ((r.example_vocab_ids || []) as number[])
         .map((id) => vocabById.get(id))
         .filter(Boolean)
-        .map((v: any) => ({ headword: v.headword as string, kana: v.kana as string })),
+        .map((v: any) => ({ headword: v.headword as string, kana: v.kana as string,
+                            slug: v.slug as string })),
     }))
     .sort((a, b) => b.compounds.length - a.compounds.length);
 
@@ -69,8 +71,10 @@ export async function loader({ params }: { params: { char: string } }) {
     examples: (k.example_words || []).slice(0, 16).map((w: any) => ({
       headword: w.headword,
       kana: w.kana,
+      slug: w.slug ?? "",
       gloss: locArr(w.gloss)[0] ?? "",
-      hasEntry: !!getVocab(w.headword),
+      // Resolve by slug, not headword — 93 headwords name more than one record.
+      hasEntry: !!(w.slug && getVocab(idPart(w.slug))),
     })),
     sentences: sentencesForKanji(k.character, 5),
     lessons: lessonsUsing("kanji", k.character),
@@ -175,7 +179,7 @@ export default function KanjiDetail() {
           <>
             <h2 className="ym-section-title">Palavras de exemplo</h2>
             <div className="ym-grid ym-grid-2">
-              {k.examples.map((w: { headword: string; kana: string; gloss: string; hasEntry: boolean }, i: number) => {
+              {k.examples.map((w: { headword: string; kana: string; slug: string; gloss: string; hasEntry: boolean }, i: number) => {
                 const inner = (
                   <>
                     <ruby className="ym-vocab-hw" lang="ja">{w.headword}<rt>{w.kana}</rt></ruby>
@@ -183,7 +187,7 @@ export default function KanjiDetail() {
                   </>
                 );
                 return w.hasEntry ? (
-                  <Link key={i} to={`/vocabulario/${encodeURIComponent(w.headword)}`} className="ym-vocab-row">{inner}</Link>
+                  <Link key={i} to={vocabHref(w.slug)} className="ym-vocab-row">{inner}</Link>
                 ) : (
                   <div key={i} className="ym-vocab-row is-static">{inner}</div>
                 );
@@ -220,7 +224,7 @@ export default function KanjiDetail() {
                   {r.compounds.length > 0 && (
                     <div className="ym-muted">
                       {r.compounds.map((c) => (
-                        <Link key={c.headword} to={`/vocabulario/${encodeURIComponent(c.headword)}`}
+                        <Link key={c.slug} to={vocabHref(c.slug)}
                               style={{ marginRight: ".7rem" }}>
                           <span className="ym-jp">{c.headword}</span> {c.kana}
                         </Link>

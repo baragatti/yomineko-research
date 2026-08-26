@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/common.schema.json",
+  "title": "Shared corpus patterns",
+  "description": "The cross-cutting shapes every Yomineko entity is built from. Entity schemas $ref these rather than restating them, so a change to what a stable ID or a provenance envelope means happens in one place. Every definition here was derived from the exported data by scripts/contracts/infer_shapes.py, not designed ahead of it.",
+
+  "$defs": {
+    "StableId": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*:[^\\s]+$",
+      "minLength": 3,
+      "description": "The public, durable address of a record: a lowercase namespace prefix, a colon, then an identifier with no whitespace. Every record in the corpus is addressable this way and the value never changes once published — it is what an API route and a cross-reference both key on. Distinct from the integer `id` some registries also carry, which is a storage row number and is NOT stable across a rebuild.",
+      "examples": ["kanji:食", "vocab:2820690", "gram:n3-ageru", "sent:tatoeba-83013", "les:n5-saudacoes-01"]
+    },
+
+    "IdNamespace": {
+      "type": "string",
+      "enum": [
+        "kanji", "vocab", "gram", "sent", "grp", "read", "kana", "cap", "feat",
+        "mod", "top", "les", "speak", "course",
+        "cj", "rl",
+        "kr", "or", "cf", "gf", "so", "tg", "rc", "pp", "us",
+        "lt", "lp", "ls", "lr", "lg"
+      ],
+      "description": "Every namespace prefix in use. Registries: kanji, vocab, gram(mar), sent(ence), grp (family), read(ing), kana, cap(ability), feat(ure). Courseware: mod(ule), top(ic), les(son), speak, course. Drills: cj (conjugation), rl (role). Exam items carry the section's own prefix: kr kanji_reading, or orthography, cf context_fill, gf grammar_form, so sentence_order, tg text_grammar, rc reading_comp, pp paraphrase, us usage, and lt/lp/ls/lr/lg for the five listening sections."
+    },
+
+    "LocaleText": {
+      "type": "object",
+      "description": "One piece of human-facing prose in every locale it exists in. pt-BR is required because it is the language the course is taught in; `en` is present when the string was derived from an English Layer-A source and is kept for auditing, not for display. Adding a locale is adding a key here — never a new field or a parallel file.",
+      "properties": {
+        "pt-BR": { "type": "string" },
+        "en": { "type": "string" }
+      },
+      "required": ["pt-BR"],
+      "additionalProperties": { "type": "string" }
+    },
+
+    "LocaleTextList": {
+      "type": "object",
+      "description": "Like LocaleText, but for a field that is genuinely plural in every locale — a kanji's meanings, a sense's glosses. Kept as a separate definition rather than allowing string-or-array in LocaleText, because a consumer must know from the type alone whether to render one string or join a list.",
+      "properties": {
+        "pt-BR": { "type": "array", "items": { "type": "string" } },
+        "en": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["pt-BR"],
+      "additionalProperties": { "type": "array", "items": { "type": "string" } }
+    },
+
+    "Level": {
+      "type": "string",
+      "enum": ["pre-n5", "n5", "n4", "n3", "n2", "n1"],
+      "description": "Ordered from first-taught to last. This is DATA, not structure (spec §1.6): the same schema serves N5 through N1, and adding a level is adding rows. Note these are consensus labels, not official JLPT lists (spec §1.5) — see level_confidence and level_sources on any record that claims one. Courseware currently stops at n3; the registries carry n2/n1 rows that no lesson references yet."
+    },
+
+    "Layer": {
+      "type": "string",
+      "enum": ["A", "B", "C"],
+      "description": "Provenance layer (spec §1.1). A = authoritative, straight from an open dataset, zero AI, trustworthy blind. B = derived by AI and then machine-validated against A. C = pedagogy: AI-authored, research-grounded, and never trustworthy without a human teacher's sign-off. A reviewer must be able to audit C selectively and skip A entirely, which is only possible if the layer is recorded per record."
+    },
+
+    "Provenance": {
+      "type": "object",
+      "description": "Where a record came from and how far it can be trusted. Not every entity carries every key yet — see contracts/manifest.json for which do — but where a key appears it means this and nothing else.",
+      "properties": {
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The dataset or derivation that produced this record. Free text scoped to its entity (a stroke record says `kanjialive`, an exam item says `sentence+vocab`), because the meaningful vocabulary differs per family."
+        },
+        "layer": { "$ref": "#/$defs/Layer" },
+        "needs_review": {
+          "type": "boolean",
+          "description": "A human teacher has not signed this off yet. ALWAYS true for Layer C (spec §1.1). Must be a real boolean: it was once written as 1/0 in four families, and a consumer comparing against `true` read those as reviewed."
+        },
+        "ai_generated": {
+          "type": "boolean",
+          "description": "The content itself was produced by a model rather than selected from a human-written source. Selection beats generation (spec §1.2), so this being false is a quality signal, and every true here should also be needs_review. Formerly spelled `ai` on exam items."
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "LevelTag": {
+      "type": "object",
+      "description": "A consensus level claim plus the evidence for it. There is no official JLPT vocabulary or kanji list (spec §1.5), so a bare `level` is an assertion; these fields are what makes it auditable. KANJIDIC2's own `jlpt` field is the pre-2010 four-level scale and is never a source here.",
+      "properties": {
+        "level": { "$ref": "#/$defs/Level" },
+        "level_confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "How strongly the consulted lists agree, as a fraction: 1.0 when every list placed the item at `level`, 0.0 when none did. Derived from level_agreement, never asserted on its own. (Three kanji once carried the word \"low\" here instead of a number; export_corpus.py now maps word grades to their numeric value, so a consumer can always sort and threshold on this.)"
+        },
+        "level_agreement": {
+          "type": ["string", "null"],
+          "pattern": "^(\\d+/\\d+|0|anchor)$",
+          "description": "The raw tally behind level_confidence, as \"agreed/consulted\" — \"4/4\" means all four lists placed the item at this level, \"1/3\" means one of three did. Kept as text because numerator and denominator are both meaningful and a single float would discard the sample size: \"1/1\" and \"4/4\" are both 1.0 but are not equally good evidence. Two sentinels cover the placements we made ourselves rather than read off a list, and they are NOT interchangeable — \"0\" is an author-added item that appears in no consensus list (confidence 0.0, we are guessing), while \"anchor\" is a deliberate course placement such as the て-form hub (confidence 1.0, we are certain, there is simply no list to cite). Collapsing them into one value would report editorial certainty as a guess."
+        },
+        "level_sources": {
+          "type": ["object", "null"],
+          "description": "Which lists were consulted and where each placed the item, as {list_name: level} — three independent lists is the floor (spec §1.5). Author-added items instead carry {lists: [reason], anchor?: id}, naming why the item is here at all when no list contains it. Both are objects so a consumer can branch on the keys.",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "IdRef": {
+      "$ref": "#/$defs/StableId",
+      "description": "A pointer to another record, by its StableId. The corpus is one graph (spec §1.7): courseware references corpus by ID and never embeds it, so every one of these must resolve. validate_contracts.py checks that they do."
+    },
+
+    "IdRefList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/StableId" },
+      "description": "A set of cross-references. A field named after an entity (`grammar`, `kanji`, `vocab`) holds references; a count of the same thing is named `*_count` so the two can never be confused by a consumer."
+    }
+  }
+}

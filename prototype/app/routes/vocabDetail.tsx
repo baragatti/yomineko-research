@@ -13,8 +13,9 @@ interface Sense { n: number; pos: string[]; gloss: string[]; register: string[] 
 
 const VISIBLE = 6;
 
-export async function loader({ params }: { params: { headword: string } }) {
-  const v = getVocab(params.headword);
+export async function loader({ params }: { params: { id: string } }) {
+  // The route carries the JMdict id, not the headword: 93 headwords name more than one record.
+  const v = getVocab(params.id);
   if (!v) throw data("Palavra não encontrada", { status: 404 });
 
   const senses: Sense[] = (v.senses || []).map((s: any, i: number) => ({
@@ -39,7 +40,7 @@ export async function loader({ params }: { params: { headword: string } }) {
     senses,
     kanjiLinks,
     sentences: sentencesForVocab(v.headword, 5),
-    lessons: lessonsUsing("vocab", v.headword),
+    lessons: lessonsUsing("vocab", params.id),
   };
 }
 
