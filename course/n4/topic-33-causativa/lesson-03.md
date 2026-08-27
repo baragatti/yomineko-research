@@ -67,7 +67,7 @@ Quatro caracteres concretos para fixar agora.
 > 🗣 彼の行動にはいつもびっくりさせられる。 — O comportamento dele sempre me surpreende.
 
 #### Leitura
-> 📖 夕方から雨だっていっていたよ。電話を貸していただけませんか。医者に見てもらうべきだと思う。買い物に行っているところです。 — Falaram que vai chover a partir do fim da tarde, viu. Você poderia me emprestar o telefone, por favor? Acho que você deveria ser examinado por um médico. "Estou indo fazer compras agora." The proposed 'Estou saindo para fazer compras' shifts 行っているところ toward 出かけるところ; the record's own literal en is 'I'm on my way to go shopping.'
+> 📖 夕方から雨だっていっていたよ。電話を貸していただけませんか。医者に見てもらうべきだと思う。買い物に行っているところです。 — Falaram que vai chover a partir do fim da tarde, viu. Você poderia me emprestar o telefone, por favor? Acho que você deveria ser examinado por um médico. Estou indo fazer compras agora.
 - Sei montar o causativo-passivo: causativo + 〜られる = 〜させられる.
 - Uso 〜させられる para "ser obrigado a fazer" algo contra a vontade.
 - Uso 〜させられる para reações involuntárias ("ele me deixa irritado").

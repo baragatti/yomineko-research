@@ -72,7 +72,7 @@ A forma é a mnemônica perfeita: 三 são literalmente três tracinhos horizont
 > 🗣 ポーチにスカンクがいます。 — Tem um cangambá na varanda.
 
 #### Leitura
-> 📖 クリップってある？クソっ。かかれ！ — Tem clipe (de papel)? "Droga! Vai logo!"
+> 📖 クリップってある？クソっ。かかれ！ — Tem clipe (de papel)? Droga! Vai logo!
 - Sei marcar o sujeito com が, sobretudo quando a informação é nova.
 - Uso ある (あります) para dizer que coisas inanimadas existem.
 - Uso いる (います) para dizer que seres animados existem.

@@ -403,24 +403,33 @@ plain-past JP. Fix: `Meu bolo deu errado.`
 
 ## Count table
 
-| Class | What | Records flagged |
-|---|---|---|
-| A | `translation_literal`: は topic scaffold on a non-は chunk | 39 |
-| B | `この` rendered "esse/essa" against corpus convention | 13 |
-| C | 好き/上手/下手 literal gloss: coined word or wrong noun | 9 |
-| D | plain non-past rendered as bare infinitive | 5 (+1 related: polite declarative to imperative) |
-| E | Layer-A `translation["en"]` missing | 59 (57 `mined` batch + 2 individual) |
-| F | explanatory parentheses inside `translation` | 13 |
-| I-high | individual: meaning wrong / taught point lost | 7 |
-| I-med | individual: medium | 11 |
-| I-low | individual: naturalness | 5 |
+| Class | What | Records flagged | Severity |
+|---|---|---|---|
+| A | `translation_literal`: は topic scaffold on a non-は chunk | 39 | medium (misteaches が/は) |
+| B | `この` rendered "esse/essa" against corpus convention | 13 | low |
+| C | 好き/上手/下手 literal gloss: coined word or wrong noun | 9 | medium |
+| D | plain non-past rendered as bare infinitive (+1 declarative to imperative) | 6 | medium |
+| E | Layer-A `translation["en"]` missing | 59 | high (blocks validation) |
+| F | explanatory parentheses inside `translation` | 13 | low |
+| I-high | individual: meaning wrong or taught point lost | 7 | high |
+| I-med | individual | 11 | medium |
+| I-low | individual: naturalness | 5 | low |
+| | **sum of class rows** | **162** | |
 
-**Distinct records flagged: 137** (some records appear in more than one class, e.g.
-`sent:gen-633db27a84d8` in A and C; `sent:tatoeba-84914` in A and F; `sent:gen-d4a16635f7bd` in A and C;
-`sent:gen-273cffc1f6f8` in A and D).
+Six records carry two classes each, so the class rows sum to more than the record count:
+`sent:gen-273cffc1f6f8` (A + D), `sent:gen-633db27a84d8` (A + C), `sent:gen-d4a16635f7bd` (A + C),
+`sent:tatoeba-74693` (B + E), `sent:tatoeba-79687` (E + I-high), `sent:tatoeba-84914` (A + F).
 
-**Checked: 982. Distinct records flagged: 137 (14.0%). Clean: 845 (86.0%).**
+**Checked: 982. Distinct records flagged: 156 (15.9%). Clean: 826 (84.1%).**
 
-Weighted by block: `ai-generated` (369 records) carries 106 of the 137 flags; `jec` (22 records) carries 7;
-`tatoeba` (591 records) carries 24, of which 59 are Class E alone (i.e. only a handful of Tatoeba records have
-a *content* defect). Reviewer effort is best spent on the generated block and on the `mined` ingestion path.
+Flags by source block:
+
+| block | records in slice | flagged | flagged excluding Class E |
+|---|---|---|---|
+| `ai-generated` | 369 | 69 (18.7%) | 69 |
+| `jec:*` | 21 | 8 (38.1%) | 8 |
+| `tatoeba:*` | 592 | 79 (13.3%) | **20 (3.4%)** |
+
+Triage guidance: the 59 Class-E records are one ingestion bug, not 59 authoring errors, and should be fixed at
+the pipeline level rather than in the review queue. Excluding them, the human review queue from this slice is
+**97 records**, concentrated in the generated and `jec` blocks. The Tatoeba block is genuinely clean at 3.4%.

@@ -1,373 +1,362 @@
 # QA sweep — kanji records, slice 1
 
-**Assignment:** `corpus/kanji/n5.json` + `corpus/kanji/n4.json` — **280 records checked** (n5 103, n4 177),
-covering `meanings` (pt-BR + en), `notes`, `irregular_note`, all **1 812** `readings` rows (type, okurigana,
-`common`, `introduced_at_level`, `example_vocab_ids`, `note`) and all **2 193** `example_words` entries
-(headword, kana, level fit, gloss).
+**Assignment:** `corpus/kanji/n5.json` + `corpus/kanji/n4.json` — **280 records** (n5 103, n4 177), covering
+`meanings` (pt-BR + en), `notes`, `irregular_note`, all **1 812** `readings` rows and all **2 193**
+`example_words` entries.
 
-**Cross-checks run:** every record was diffed against **KANJIDIC2 3.6.2+20260608153333**
-(`research/datasets/jmdict/kanjidic2-en-…json.tgz`, unpacked read-only into scratch) and against
-`corpus/vocab/{n5,n4,n3,n2,n1}.json` (7 401 records) for level fit and gloss provenance. Contracts consulted:
-`design/schema_v2.md`, `design/i18n.md`, `design/translation_style.md`, `design/quality_rubric.md`,
-`YOMINEKO_CORPUS_BUILD_SPEC.md`.
+**Method.** Every record read in full. Cross-checked mechanically against
+`research/datasets/jmdict/kanjidic2-en-3.6.2+20260608153333.json.tgz` (10 384 characters, unpacked read-only
+into scratch) and against `corpus/vocab/{n5,n4,n3,n2,n1}.json` for level fit, gloss provenance and written-form
+commonness. Style authority: `design/translation_style.md`. Provenance contract: `design/i18n.md`,
+`CLAUDE.md` §1.1–1.3. Producer inspected: `scripts/export/export_corpus.py:159-171`.
+
+**Note on this file.** An earlier pass wrote a report to this same path (findings F1–F10). This is an
+independent second pass. Everything that pass found is **still present in the exported data** and is
+re-confirmed below from my own evidence, marked `[confirmed]`. Four findings are new — three of them fall in
+areas the earlier pass explicitly listed as clean, so they are worth reading first.
 
 ---
 
 ## Headline
 
-**The Layer-A spine of this slice is flawless.** Across all 280 records, `strokes`, `grade`, `freq_rank`,
-`kangxi_radical`, and the complete kun/on/nanori reading sets (with okurigana split points reconstructed)
-match KANJIDIC2 **exactly — zero mismatches, in both directions**. Reading *type* assignment is likewise
-perfect: no on reading is filed as kun, no kun as on, no nanori carries `common: true`, and all 1 812 rows sit
-in contiguous type blocks. Referential integrity is clean too: **0** dangling `example_vocab_ids`, **0**
-example words whose headword/kana/slug disagrees with its vocab record, **0** example words that do not
-contain the kanji.
+The **Layer-A spine is exact**. Against KANJIDIC2, all 280 records match on `strokes`, `grade`, `freq_rank`
+and `kangxi_radical` with **zero** mismatches, and the kun/on/nanori reading **sets** (okurigana split points
+reconstructed) match **exactly in both directions — 0 missing, 0 extra, across all 1 812 rows**. The 47
+`irregular_note` texts are factually correct: every jukujikun, rendaku and gemination claim I checked holds
+(真っ二つ ふた→ぷた, 出発 シュツ→しゅっ + ハツ→ぱつ, 木綿 も, 八百屋 お, 真っ赤 あか→か, 扇風機 ふう→ぷう).
 
-The pt-BR prose is also in good shape. Every one of the 47 `irregular_note` texts (22 n5 + 25 n4) is
-factually correct — I verified each claimed jukujikun/rendaku/gemination case by hand, including the ones that
-lean on the record's own reading list (木/木綿 → も, 文/文字 → も: both readings are genuinely present in the
-nanori group). The style contract holds: **0** em dashes, **0** pt-PT forms, **0** "Quanto a"/"Vale
-ressaltar" tells, **0** trailing/double whitespace across the whole slice.
-
-**The failures are all on the pedagogical-selection side, not the factual side.** Two records duplicate an
-example word verbatim; the example-word chooser systematically reaches past easy words the corpus already
-owns and grabs N1/N2 ones instead; and `introduced_at_level` — the field the spec calls "essential" — is
-absent or contradictory on 44 records.
+**Everything that fails is on the selection-and-labelling side.** The `example_words` chooser has no notion of
+level and no notion of which *written form* of a word people actually use; three reading-metadata fields
+(`introduced_at_level`, `common`, array order) either contradict the record they sit in or carry no
+information at all.
 
 ---
 
-## F1 — HIGH — two records list the same example word twice, verbatim
+## K1 — HIGH — 29 example words teach a written form the corpus itself marks `is_common: false` **[new]**
 
-- **Records:** `kanji:日` (id 2160, n5) and `kanji:茶` (id 1853, n4)
-- **Field:** `example_words[7]` and `example_words[8]` in both cases
+- **Records:** 24 — 仕 何 先 八 区 土 子 山 左 度 思 所 方 早 時 有 本 洋 目 紙 菜 薬 行 青
+- **Field:** `example_words[].headword`
 
-`kanji:日`, slots #8 and #9, byte-identical:
+The vocab record stores every surface form with an `is_common` flag. For 29 example words the `headword` the
+kanji record renders is the form flagged **`is_common: false`**, while the form flagged common is the kana one.
+`kanji:洋` (n4) is the worst: its **first two** example words are ateji nobody writes.
 
-> ```json
-> { "headword": "日曜日", "kana": "にちようび", "vocab_id": 485, "slug": "vocab:1464900",
->   "gloss": { "pt-BR": ["domingo"], "en": ["Sunday"] } }
-> ```
+```json
+// corpus/kanji/n4.json — kanji:洋, example_words[0] and [1]
+{ "headword": "洋杯", "kana": "コップ", "slug": "vocab:1050390", "gloss": {"pt-BR": ["copo"]} },
+{ "headword": "洋袴", "kana": "ズボン", "slug": "vocab:1074260", "gloss": {"pt-BR": ["calça", "calças"]} }
+```
 
-`kanji:茶`, slots #8 and #9, byte-identical:
+```json
+// corpus/vocab/n5.json — vocab:1074260, the same word
+"forms": [ {"form": "洋袴",  "is_kana": false, "is_common": false, "is_primary": true},
+           {"form": "段袋",  "is_kana": false, "is_common": false, "is_primary": false},
+           {"form": "ズボン", "is_kana": true,  "is_common": true,  "is_primary": false} ]
+```
 
-> ```json
-> { "headword": "滅茶苦茶", "kana": "めちゃくちゃ", "vocab_id": 4042, "slug": "vocab:1533000",
->   "gloss": { "pt-BR": ["bagunçado", "caótico", "uma bagunça"], "en": ["a mess", "chaotic", "in disarray"] } }
-> ```
+Representative cases (all 29 follow the same shape — rare kanji form as headword, kana form as the only common one):
 
-- **Why it is wrong:** both records cap out at 10 example words, so a duplicate silently costs the record one
-  of its ten teaching slots and renders the same row twice in any UI that walks the array. These are the only
-  two exact duplicates in the slice (checked on `(headword, kana)` and on `vocab_id`); every other repeated
-  headword is a legitimate different-reading pair (中 なか/ちゅう, 空 そら/から, 悪口 わるぐち/あっこう …).
-- **Proposed fix:** drop the second occurrence in each and dedupe on `vocab_id` in the exporter. Both freed
-  slots have an obvious in-corpus filler: for 日, `月曜日` (げつようび, n5) or `一日` (いちにち, n5); for 茶,
-  **`お茶` (おちゃ, n5)**, which is currently missing from 茶 entirely (see F2).
+| record | headword shown | reading | the form marked common | what the learner is being told |
+|---|---|---|---|---|
+| `kanji:洋` (n4) | 洋杯 / 洋袴 | コップ / ズボン | ズボン, コップ | that ズボン is written 洋袴 |
+| `kanji:土` (n5) | 混凝土 | コンクリート | コンクリート | 凝 is N1-and-beyond; 土's 7th example |
+| `kanji:子` (n5) | 硝子 | ガラス | ガラス | 硝 is not in the corpus at any level |
+| `kanji:目` (n5) | 御目出度う | おめでとう | おめでとう | a greeting written in kana 100% of the time |
+| `kanji:左` (n5) | 左様なら | さようなら | さようなら | idem |
+| `kanji:青` (n4) | 番瀝青 | ペンキ | ペンキ | 瀝 is not in the corpus at any level |
+| `kanji:山` (n5) | 巫山戯る | ふざける | ふざける | 巫 is not in the corpus at any level |
+| `kanji:度` (n4) | 屹度 | きっと | きっと | 屹 is not in the corpus at any level |
+| `kanji:何` (n5) | 如何して | どうして | どうして | どうして is kana in every textbook |
+| `kanji:早` (n4) | お早う | おはよう | おはよう | the single most-used greeting, misspelled |
 
-## F2 — HIGH — `example_words` reaches past easy in-corpus words and picks N1/N2 ones
+- **Why it is wrong.** The earlier pass checked commonness at the *record* level ("`example_words` backed by a
+  JMdict-uncommon vocab — 0") and it is right that all 29 words are common words. The defect is one level down:
+  the **spelling being taught** is the rare one. Six of these headwords (混凝土, 硝子, 番瀝青, 巫山戯る, 屹度,
+  彼方此方) use kanji that do not appear anywhere in `corpus/kanji/{n5..n1}.json`, so an N5 learner is shown a
+  character the corpus never plans to teach. This directly violates the assignment's "appropriate for level"
+  bar and CLAUDE.md §1.2's preference for what real writers actually produce.
+- **Root cause.** The vocab record's `headword` is `forms[is_primary]`, and JMdict's first kanji form is
+  primary even when tagged rare (`rK`); `export_corpus.py:161` then copies `v.headword` straight through.
+- **Proposed fix.** In the example-word projection, render the first form with `is_common: true` (which is the
+  kana form for all 29), keeping the rare kanji form available as a secondary field if it is wanted at all. As
+  a data-side alternative, exclude a candidate whose only kanji spelling is `is_common: false` when the record
+  has other candidates — 洋 has 洋服 / 西洋 / 東洋 / 海洋 / 洋風 waiting, and 目 has 目上 / 目印 in the bank.
 
-- **Records:** 48 records omit a vocab at or below their own level that exists in `corpus/vocab/` and contains
-  the kanji; **31 of those** simultaneously spend a slot on an N1 or N2 word.
-- **Field:** `example_words[]`
+## K2 — HIGH — two records list the same example word twice, byte-identical `[confirmed]`
 
-Distribution across the whole slice, example word level vs. its kanji's level:
+- **Records:** `kanji:日` (n5), `kanji:茶` (n4) — `example_words[7]` and `[8]` in both
 
-| kanji level | ex. words at n5 | n4 | n3 | n2 | n1 | above own level |
-|---|---:|---:|---:|---:|---:|---:|
-| n5 (103 records) | 266 | 123 | 197 | 124 | 117 | **561 / 827 (68%)** |
-| n4 (177 records) | 229 | 195 | 362 | 246 | 334 | **942 / 1 366 (69%)** |
+`kanji:日` repeats `{"headword": "日曜日", "kana": "にちようび", "vocab_id": 485, "slug": "vocab:1464900"}`;
+`kanji:茶` repeats `{"headword": "滅茶苦茶", "kana": "めちゃくちゃ", "slug": "vocab:1533000"}`. These are the
+only two exact duplicates in the slice (checked on `slug` and on `(headword, kana)`); every other repeated
+headword is a legitimate different-reading pair (中 なか/ちゅう, 悪口 わるぐち/あっこう, 寒気 かんき/さむけ).
 
-**451 of the 2 193 example words (21%) are N1.** That alone is arguable — a kanji's compounds genuinely run
-harder than the kanji. What is not arguable is the 48 records where the easier word *was already in the
-corpus* and was passed over. The worst:
+- **Why it is wrong.** Both records are at the 10-slot cap, so a duplicate costs a real teaching slot and
+  renders twice in any UI that walks the array. `お茶` (おちゃ, n5, `vocab:111`) — the first 茶 word anyone
+  learns — is absent from `kanji:茶` while 滅茶苦茶 holds two slots.
+- **Diagnosis note.** Both duplicated headwords contain the record's kanji **twice** (日曜**日**, 滅**茶**苦**茶**),
+  which points at a per-occurrence row in the `vocab_kanji` join feeding
+  `export_corpus.py:160-163`. It is not consistent, though: 彼方此方 (方 twice, under `kanji:方`) and 無茶苦茶
+  (茶 twice, under `kanji:茶`) each appear only once. So dedupe on `slug` in the exporter rather than assuming
+  the join is uniform.
+- **Proposed fix.** `SELECT DISTINCT` / dedupe on `v.id` in the example-word query, then re-export. Freed slots:
+  `お茶` for 茶, `月曜日` or `一日` for 日.
 
-| record | N1/N2 words it chose | in-corpus word it skipped |
+## K3 — HIGH — `example_words` selection is level-blind, and its tiebreak is arbitrary `[confirmed, root cause new]`
+
+- **Scope:** **1 503 of 2 193 example words (69%) sit above their own record's level** — 451 of them N1.
+
+| kanji level | above own level |
+|---|---|
+| n5 (103 records, 827 words) | 561 |
+| n4 (177 records, 1 366 words) | 942 |
+| **total** | **1 503 (n3 559, n2 370, n1 451, n4-over-n5 123)** |
+
+Three records have **zero** example words at or below their own level: `kanji:京`, `kanji:主`, `kanji:不`.
+Two of the three could be fixed from the existing bank:
+
+| record | what it shows | in-corpus word at level it skipped |
 |---|---|---|
-| `kanji:名` (n5) | 名付ける, 名誉, 本名, 名札, **名簿** (n1), 名詞 (n2) — 6 of 10 slots | **平仮名 (ひらがな, n5)**, **片仮名 (カタカナ, n5)** |
-| `kanji:茶` (n4) | 喫茶, 無茶, 滅茶苦茶 ×2, 無茶苦茶 — 5 of 10 slots | **お茶 (おちゃ, n5)** |
-| `kanji:何` (n5) | 何て, 何と (n1) | どこ, なぜ, どちら, どなた, いつも, いかが, どれ, どの — **8 n5 words** |
-| `kanji:不` (n4) | 不可欠, 不在 (n1) | **不便 (ふべん, n4)**, **不味い (まずい, n5)** |
-| `kanji:一` (n5) | **一敗 (いっぱい, n1)** | 一日, 一寸, 一昨日, 一昨年, 一月 — 5 n5 words |
-| `kanji:場` (n4) | 市場 (しじょう), 農場, 職場 | 会場, 売り場, 飛行場, 駐車場 — 4 n4 words |
-| `kanji:書` (n5) | 秘書, 文書, 聖書 (all n1) | **葉書 (はがき, n5)** |
-| `kanji:入` (n5) | 入る (いる), 受け入れる, 購入 (all n1) | **入り口 (いりぐち, n5)** |
-| `kanji:合` (n4) | 付き合う (n2) | 具合, 割合, 都合 — 3 n4 words |
-| `kanji:字` (n4) | 字 (あざ), 赤字, 黒字, 字体, 十字路, 苗字 — 6 of 10 | **字引 (じびき, n5)** |
+| `kanji:不` (n4) | 不可欠 (n1), 不在 (n1), + 8 × n3 | **不便 (ふべん, n4, `vocab:1060`)** |
+| `kanji:主` (n4) | 主人公 (n1), 主 ×3 (n1/n1/n2), + 6 × n2/n3 | **ご主人 (ごしゅじん, n4, `vocab:953`)** |
+| `kanji:社` (n5) | 出社 (n1), 社交 (n1), 社説 (n2), 商社 (n2) — 4 of 10 slots | — |
+| `kanji:見` (n5) | 見込み (n1), 見かける (n1), 見つめる (n2) | — |
 
-- **Why it is wrong:** `kanji:名` is the sharpest case. It is an **n5** kanji; a learner meeting it has just
-  finished the kana syllabaries, and the two words that would land hardest — 平仮名 and 片仮名, both **n5**,
-  both already sitting in `corpus/vocab/n5.json` — are absent, while `名簿` ("lista de nomes, registro,
-  cadastro", n1) takes a slot. `kanji:茶` is nearly as bad: `お茶` is the first and most useful 茶 word in the
-  language and it is not there, while `滅茶苦茶` occupies **two** slots (F1) and `無茶苦茶` a third.
-  `kanji:一` — the very first kanji in `n5.json` — spends a slot on `一敗` ("uma derrota", n1), a scorekeeping
-  term, which additionally collides in kana with `一杯` (いっぱい) two rows below it, so the learner sees the
-  same reading twice with unrelated meanings and no note explaining the collision.
-- **Proposed fix:** make the selector level-aware rather than frequency-only — sort candidates by
-  `(level_order DESC, freq)` and take the top N, so a word at or below the kanji's level always outranks one
-  above it. Then re-export. The 48 affected records are recoverable without adding any vocab: the replacement
-  words are already in the corpus.
+- **Root cause (new).** `export_corpus.py:162` is
+  `ORDER BY v.common DESC, v.freq_rank IS NULL, v.freq_rank LIMIT 10`. There is no level term at all — and for
+  the records above the sort **degenerates entirely**: every candidate for 不 and for 主 has `common = true` and
+  `freq_rank = null`, so both keys tie on all rows and the LIMIT 10 cut falls on undefined row order. 不便 and
+  ご主人 are not losing on merit; they are losing on row id. This makes the field non-reproducible across a
+  rebuild as well.
+- **Proposed fix.** Add a level term and a stable tiebreak:
+  `ORDER BY (level_order >= kanji_level_order) DESC, v.common DESC, v.freq_rank IS NULL, v.freq_rank, v.slug`.
+  Everything needed is already in the corpus; no vocab additions required for 不 or 主.
 
-## F3 — HIGH — `introduced_at_level` is unpopulated or self-contradictory on 44 records
+## K4 — HIGH — `introduced_at_level` is null or contradicts the same record's example list `[confirmed]`
 
-- **Records:** 44 (40 with a null-but-derivable reading, 15 with **no** reading tagged at all, 3 n5 records
-  with no reading tagged `n5`; the sets overlap)
-- **Field:** `readings[].introduced_at_level`
+- **Scope:** 43 non-nanori readings carry `null` despite having an example word at or below the kanji's level;
+  **43 readings on n5 kanji are tagged `n4`**; **15 records have no reading tagged at all**
+  (不 京 仕 以 医 午 図 土 地 意 理 田 自 試 野).
 
-`design/schema_v2.md:51` defines the field as `n5|n4|n3|... derived from example vocab`, and
-`schema_v2.md:14` calls it the whole reason `kanji_reading` is a first-class table. `design/quality_rubric.md`
-item **1d** requires it to be *correct*. `YOMINEKO_CORPUS_BUILD_SPEC.md:304` calls it "essential."
+`design/schema_v2.md` defines the field as derived from the example vocab, so these are all determinable.
+The self-contradictions are the sharpest, because both halves live inside one record:
 
-**(a) 43 non-nanori readings carry `null` despite having an example word at or below the kanji's own level.**
-Under the documented derivation rule these are all determinable. Worst offenders:
-
-| record | reading | tagged | example vocab that forces the tag |
+| record | reading | tagged | its own `example_vocab_ids` resolve to |
 |---|---|---|---|
-| `kanji:午` (n5) | on ゴ | `null` | 午前 (n5), 午後 (n5) |
-| `kanji:土` (n5) | on ド | `null` | 土曜日 (n5) |
-| `kanji:火` (n5) | on カ | `null` | 火曜日 (n5) |
-| `kanji:意` (n4) | on イ | `null` | 意味 (n5), 意見/注意/用意 (n4) |
-| `kanji:以` (n4) | on イ | `null` | 以上/以外/以内/以下 (all n4) |
-| `kanji:図` (n4) | on ズ / on ト | `null` / `null` | 地図 (n5) / 図書館 (n5) |
-| `kanji:自` (n4) | on ジ | `null` | 自分, 自転車, 自動車 (all n5) |
-| `kanji:仕` (n4) | on シ | `null` | 仕事 (n5) |
-| `kanji:医` (n4) | on イ | `null` | 医者 (n5) |
-| `kanji:理` (n4) | on リ | `null` | 料理 (n5) |
-| `kanji:野` (n4) | on ヤ | `null` | 野菜 (n5) |
+| `kanji:子` (n5) | kun こ | **n4** | 子供 (n5), 女の子 (n5), 男の子 (n5) |
+| `kanji:子` (n5) | on シ | **null** | 帽子 (n5), お菓子 (n5), 調子 (n3) |
+| `kanji:気` (n5) | on キ | **n4** | 病気 (n5), 天気 (n5), 元気 (n5) |
+| `kanji:火` (n5) | on カ | **null** | 火曜日 (n5), 火事 (n4) |
+| `kanji:午` (n5) | on ゴ | **null** | 午前 (n5), 午後 (n5) |
+| `kanji:自` (n4) | on ジ | **null** | 自分, 自転車, 自動車 (all n5) |
 
-**(b) 15 records have not a single reading tagged:** 不, 京, 仕, 以, 医, 午, 図, 土, 地, 意, 理, 田, 自, 試, 野.
-For `kanji:午` this is total: the record has exactly two readings (kun うま, on ゴ), ゴ is the only one a
-learner will ever need, and the record never says so.
+`kanji:子` ends up with **no reading tagged n5 at all**, though it is an n5 kanji whose n5 words 子供 and
+女の子 are sitting in its own reading rows.
 
-**(c) 3 n5 records have no reading tagged `n5`, and the tag they do carry contradicts their own example
-list:**
+- **Proposed fix.** Re-derive as documented — for each non-nanori reading,
+  `introduced_at_level = max(level_order)` over `example_vocab_ids` (the *easiest* word that uses it), leave
+  null only where the reading genuinely has no example, and re-export. Do not patch values individually: the
+  seeding rule that produced the current ones is not the documented rule.
 
-- `kanji:子` (n5): kun こ is tagged **`n4`**, but its own `example_vocab_ids` resolve to 子供 (n5), 女の子
-  (n5), 男の子 (n5). Its on シ (帽子, お菓子 — both n5) is `null`. So the n5 kanji 子 has no n5 reading.
-- `kanji:気` (n5): both き and キ are tagged **`n4`**, but キ's examples include 病気 (n5) and 天気 (n5).
-- `kanji:火` (n5): kun ひ tagged `n4`; the on カ that 火曜日 (n5) needs is `null`.
+## K5 — MEDIUM — `common` on a reading carries no information, and the record's own notes say so **[new]**
 
-- **Why it is wrong:** this is the field that answers the spec's own design question ("*which* readings belong
-  to *which* tier"). With it null on 午/以/図/仕/医, a lesson planner asking "which reading of 以 do I teach at
-  N4?" gets no answer from the corpus at all; with it wrong on 子/気, it gets an answer that is off by a level
-  and contradicted by the same record's example list.
-- **Proposed fix:** re-run the derivation as documented — for each non-nanori reading,
-  `introduced_at_level = max(level_order)` over `example_vocab_ids`, i.e. the easiest word that uses it — then
-  flag `needs_review` on rows where the result disagrees with the current value (278 of the 671 readings that
-  have examples currently disagree, so the field is not merely incomplete; the seeding rule that produced it
-  is not the documented one and should be replaced, not patched).
+- **Scope:** `common: true` on **698 of 698** kun readings and **426 of 426** on readings; `false` on
+  **688 of 688** nanori. The field is a verbatim restatement of `type != 'nanori'`.
 
-## F4 — MEDIUM — `kanji:屋` drops "telhado" from pt-BR while its own example word and reading note teach it
+The corpus notices this itself. Five reading notes in the slice read, verbatim:
 
-- **Record:** `kanji:屋` (id 204, n4)
-- **Field:** `meanings`
+> "Segunda leitura sino-japonesa (on) **marcada como comum, mas nenhuma palavra desta entrada a usa**."
 
-> ```json
-> "meanings": {
->   "pt-BR": ["loja", "estabelecimento", "prédio", "-eiro"],
->   "en":    ["roof", "shop", "store", "building", "-dealer"]
-> }
-> ```
+…attached to rows that carry `"common": true`:
 
-- **Why it is wrong:** `en` opens with **roof**; `pt-BR` has no **telhado** anywhere. KANJIDIC2 gives
-  `['roof', 'house', 'shop', 'dealer', 'seller']` — roof is the *first* meaning. The record then contradicts
-  its own meaning list twice over: `example_words[1]` is **屋根 (やね) — "telhado"**, and the note on the kun
-  reading や says, verbatim:
-  > "…abre 屋根 (telhado) e 屋敷 (mansão)."
+```json
+// corpus/kanji/n5.json — kanji:来
+{ "reading": "タイ", "type": "on", "common": true, "example_vocab_ids": null, "note": {"pt-BR": "Segunda leitura sino-japonesa (on) marcada como comum, mas nenhuma palavra desta entrada a usa."} }
+// corpus/kanji/n5.json — kanji:気
+{ "reading": "ケ",  "type": "on", "common": true, "example_vocab_ids": null, "note": {"pt-BR": "Segunda leitura sino-japonesa (on) marcada como comum, mas nenhuma palavra desta entrada a usa."} }
+```
 
-  So the pt-BR learner is shown "loja, estabelecimento, prédio" (and only the first three, in
-  `corpus/kanji/INDEX.md:245`), then immediately handed 屋根 = telhado with nothing in the meaning list to
-  hang it on. Every other locale-object in the slice is drop-free on the pt-BR side except this one and F9.
-- **Proposed fix:** `"pt-BR": ["telhado", "loja", "estabelecimento", "prédio", "-eiro"]` — restoring index
-  parity with `en` at the same time.
+- **Why it is wrong.** A consumer filtering `readings[].common` to show "the readings that matter" gets 気 ケ
+  ranked equal to 気 キ, 来 タイ equal to 来 ライ, and 日 -か equal to 日 ニチ. `corpus/kanji/INDEX.md` documents
+  the flag as "`common` (nanori=false)", so the current behaviour matches the doc — but a boolean named
+  `common` that can only ever mirror `type` is a field a reviewer will trust wrongly, and the authored prose in
+  the same record already contradicts it. This one is not visible from the "no nanori carries `common: true`"
+  check the earlier pass ran, which only tests one direction.
+- **Proposed fix.** Either derive it for real — `common = example_vocab_ids IS NOT NULL` is already computed
+  and would separate キ from ケ (426 on rows split roughly 173/253 by whether they have any example) — or drop
+  the field and let consumers read `type`. Whichever is chosen, fix `INDEX.md` to describe it accurately, and
+  delete the five notes that argue with it.
 
-## F5 — MEDIUM — `meanings.en` is not the KANJIDIC source `design/i18n.md` says it is
+## K6 — MEDIUM — the nanori block sits between kun and on `[confirmed]`
 
-- **Records:** 170 of 280 (61%)
-- **Field:** `meanings.en`
+- **Scope:** 182 of 280 records order `kun → nanori → on`; 11 more `nanori → on`. Never `kun → on → nanori`.
 
-`design/i18n.md:60-62` states the contract:
-
-> "The export's locale-object shape is `{"pt-BR": <ours>, "en": <Layer-A source>}`; the `en` key already
-> preserves the authoritative English source wherever one exists: kanji **meanings** → `en` from KANJIDIC…"
-
-- **Why it is wrong:** for 170 records `en` contains glosses that are **not in KANJIDIC2 at all**, and it
-  drops KANJIDIC glosses that are. Only 110 records have an `en` list that is a subset of KANJIDIC's, and only
-  75 are a clean prefix of it. Examples:
-
-  | record | `meanings.en` | KANJIDIC2 |
-  |---|---|---|
-  | `kanji:車` | car, **vehicle**, **wheel** | car |
-  | `kanji:火` | fire, **Tuesday** | fire |
-  | `kanji:金` | gold, **money**, **metal** | gold |
-  | `kanji:文` | **writing**, sentence, **text**, literature | sentence, literature, style, art, decoration, figures, plan, literary radical (no. 67) |
-  | `kanji:首` | neck, **head**, **chief** | neck, counter for songs and poems |
-
-  The curation is *better teaching material* than raw KANJIDIC — I am not asking for it to be reverted. The
-  defect is the **provenance label**. CLAUDE.md §1.1 defines Layer A as "zero AI… ground truth" and §1.3
-  requires fact and explanation never to share a field. A reviewer told that `en` is KANJIDIC will trust it
-  blindly (that is the stated point of Layer A) and will be wrong 61% of the time.
-- **Proposed fix:** either (a) amend `design/i18n.md` to say kanji `meanings.en` is a **curated, KANJIDIC-
-  grounded** list (Layer B), not the raw source, and note that the verbatim source stays reachable via
-  `research/datasets/jmdict/kanjidic2-en-*.tgz`; or (b) add a sibling `meanings_source.en` holding the
-  untouched KANJIDIC array so the Layer-A claim becomes true. (a) is cheaper and matches what the data
-  actually is.
-
-## F6 — MEDIUM — nanori readings are ordered *between* kun and on, burying the reading that matters
-
-- **Records:** 193 of 280
-- **Field:** `readings[]` array order
-
-All 280 records order reading types contiguously — but the order is **kun → nanori → on** (182 records) or
-**nanori → on** (11), never kun → on → nanori.
-
-| record | nanori rows before the first on row | on reading thus buried |
+| record | nanori rows before the first on row | on reading buried |
 |---|---:|---|
-| `kanji:理` (n4) | 16 (of 18 total rows) | **リ** — the only on reading; needed for 料理, 理由, 無理 |
-| `kanji:生` (n5) | 25 (of 45) | セイ, ショウ |
+| `kanji:生` (n5) | 25 (first on at index **43 of 45**) | セイ, ショウ |
+| `kanji:上` (n5) | 10 (first on at index 25 of 28) | ジョウ, ショウ |
+| `kanji:理` (n4) | 16 (of 18) | リ — the only on reading, needed for 料理, 理由, 無理 |
 | `kanji:真` (n4) | 15 (of 19) | シン — needed for 写真 |
-| `kanji:海` (n4) | 15 (of 17) | カイ |
-| `kanji:三` (n5) | 15 (of 20) | サン |
 | `kanji:日` (n5) | 12 (of 17) | ニチ, ジツ |
 
-- **Why it is wrong:** the file argues against its own ordering. Every one of the 108+ nanori notes says some
-  variant of:
-  > "Leitura de nome próprio (nanori): usada em nomes de pessoas e lugares, **não no vocabulário comum**.
-  > Nenhum vocábulo desta entrada ficou agrupado nela."
+- **Root cause.** `export_corpus.py:151` is `ORDER BY kr.reading_type` — a plain string sort, and
+  `kun < nanori < on` alphabetically. The order is an accident of the enum spelling, not a decision.
+- **Why it is wrong.** The nanori notes themselves say the group is "não no vocabulário comum" with no
+  examples; a group the record labels irrelevant should not separate the two relevant ones.
+- **Proposed fix.** Sort by an explicit ordinal — kun(0), on(1), nanori(2) — in the exporter and re-export.
+  Presentation only; no data edits.
 
-  A group the record itself labels "not in common vocabulary, no examples here" should not sit between the two
-  groups that *are* common vocabulary. For `kanji:理` a learner scrolls 16 example-less name readings (あや,
-  おさむ, さと, さとる, ただ, ただし, とおる, に, のり, ひ, まこと, まさ, まさし, まろ, みち, よし) to reach
-  リ, the single reading 料理 needs.
-- **Proposed fix:** emit `ORDER BY reading_type` with the ordinal kun(0) → on(1) → nanori(2) in the exporter,
-  then re-export. Pure presentation change; no data edits.
+## K7 — MEDIUM — `kanji:屋` drops "telhado" from pt-BR while its own example word teaches it `[confirmed]`
 
-## F7 — LOW — `kanji:台` uses the abbreviation "p/" in a learner-facing meaning
+```json
+"meanings": { "pt-BR": ["loja", "estabelecimento", "prédio", "-eiro"],
+              "en":    ["roof", "shop", "store", "building", "-dealer"] }
+```
 
-- **Record:** `kanji:台` (id 1762, n4)
-- **Field:** `meanings["pt-BR"][2]`
+KANJIDIC2 for 屋 is `['roof', 'house', 'shop', 'dealer', 'seller']` — **roof is first**. `en` keeps it; pt-BR
+has no *telhado* anywhere. Then `example_words[1]` is **屋根 (やね) — "telhado"** and `example_words[4]` is
+屋上 ("terraço, cobertura de prédio"). The learner is handed the word and given nothing in the meaning list to
+hang it on. This is the only pt-BR meaning list in the slice that drops a concept its own example words teach.
 
-> "contador (sufixo **p/** máquinas e veículos)"
+- **Proposed fix.** `"pt-BR": ["telhado", "loja", "estabelecimento", "prédio", "-eiro"]`, which also restores
+  index parity with `en`.
 
-- **Why it is wrong:** it is the **only** `p/` in `corpus/kanji/{n5,n4}.json` and `corpus/vocab/{n5,n4}.json`
-  combined (grep count: 1, 0, 0, 0). `corpus/vocab/n5.json` already writes the identical concept out in full —
-  **"contador para máquinas e veículos"** — so the abbreviation is both unique and inconsistent with the
-  corpus's own established phrasing. `design/translation_style.md` §4 asks for direct, beginner-clear pt-BR;
-  a clipped `p/` in a beginner gloss is neither.
-- **Proposed fix:** `"contador (sufixo para máquinas e veículos)"`.
+## K8 — MEDIUM — `meanings.en` is not the KANJIDIC source `design/i18n.md` claims `[confirmed]`
 
-## F8 — LOW — `kanji:文`'s irregular_note starts lowercase and undersells the irregularity
+- **Scope:** **170 of 280 records (61%)** contain at least one `en` gloss that is not a KANJIDIC2 meaning for
+  that character.
 
-- **Record:** `kanji:文` (id 2468, n4)
-- **Field:** `irregular_note["pt-BR"]`
+`design/i18n.md:60-62`: *"the `en` key already preserves the authoritative English source wherever one exists:
+kanji **meanings** → `en` from KANJIDIC"*. Measured:
 
-> "o único irregular é 文字 (もじ), e ele não é tão irregular assim: o も de 文字 está listado como leitura
-> deste kanji."
+| record | `meanings.en` | KANJIDIC2 |
+|---|---|---|
+| `kanji:金` | gold, **money**, **metal** | gold |
+| `kanji:屋` | roof, shop, **store**, **building**, **-dealer** | roof, house, shop, dealer, seller |
+| `kanji:生` | life, **be born**, **live**, **raw** | life, genuine, birth |
+| `kanji:真` | true, real, **pure** | true, reality, Buddhist sect |
+| `kanji:安` | cheap, **safe**, **peace** | relax, cheap, low, quiet, rested, contented, peaceful |
 
-- **Why it is wrong:** two defects in one line. (1) It is the only one of the 47 `irregular_note` texts in the
-  slice that opens lowercase; all 46 others open with a capital or a kanji. (2) The reassurance is misleading:
-  も *is* listed for 文 — as a **nanori**, i.e. a name-only reading (`readings[]` for 文: nanori = かざり, ふ,
-  も). A name reading turning up inside an ordinary noun like 文字 is precisely what makes it irregular. The
-  corpus already handles the identical situation correctly one file over, in `kanji:木`:
-  > "木綿 (もめん), "algodão", ficou fora dos grupos porque nele 木 soa como も, forma que esta entrada **só
-  > registra entre as leituras de nome próprio (nanori)**."
-- **Proposed fix:** mirror the 木 wording —
-  > "O único irregular é 文字 (もじ): ali 文 soa como も, forma que esta entrada só registra entre as leituras
-  > de nome próprio (nanori). Por isso a palavra fica fora dos grupos de leitura."
+- **Why it matters.** The curated list is *better teaching material* than raw KANJIDIC and should stay. The
+  defect is the provenance label: CLAUDE.md §1.1 defines Layer A as ground truth a reviewer may trust blindly,
+  and pt-BR is validated *against* `en`, so today both sides of the locale object are authored with no
+  untouched source between them.
+- **Proposed fix.** Amend `design/i18n.md` to describe kanji `meanings.en` as a curated, KANJIDIC-grounded
+  Layer-B list (cheapest), or add a sibling `meanings_source.en` carrying the untouched KANJIDIC array so the
+  Layer-A claim becomes true.
 
-## F9 — LOW — `kanji:少`'s pt-BR meanings split a redundant pair and misalign with `en`
+## K9 — LOW — 17 example-word `en` glosses are one string with embedded semicolons **[new]**
 
-- **Record:** `kanji:少` (id 1331, n5)
-- **Field:** `meanings`
+- **Records:** 16 — 出 土 火 意 用 以 思 心 産 海 料 乗 森 館 色 旅
 
-> `"pt-BR": ["pouco", "escasso", "poucos"]` / `"en": ["few", "little", "scarce"]`
+The pt-BR side is split into a proper list; the `en` side is a single unsplit string:
 
-- **Why it is wrong:** index-paired, this reads pouco↔few, **escasso↔little**, **poucos↔scarce** — the last
-  two are swapped. Rendered as a flat list (which is what `corpus/kanji/INDEX.md` does), "pouco, escasso,
-  poucos" puts an unrelated word between two forms of the same word, which reads like an authoring slip.
-- **Proposed fix:** `"pt-BR": ["poucos", "pouco", "escasso"]`, matching `en` position for position.
+```json
+// kanji:思 / kanji:出 — example_words, 思い出す
+"gloss": { "pt-BR": ["lembrar", "recordar", "vir à memória"],
+           "en":    ["to remember; to recall; to call to mind"] }   // 3 items on one side, 1 on the other
+```
 
-## F10 — LOW (cross-layer) — `kanji:京` is taught with no word at or below its own level
+Others: 心 `["heart; mind"]`, 火 `["fire; flame"]`, 用意 `["preparation; arrangements"]`, 以内
+`["within; inside (a limit); less than"]`, 景色 `["scenery; landscape; view"]`, 旅館
+`["traditional Japanese inn; ryokan"]`, 乗り物 `["vehicle; means of transport; ride"]`.
 
-- **Record:** `kanji:京` (id 564, n4)
-- **Field:** `example_words[]` (root cause is in `corpus/vocab/`)
+- **Why it is wrong.** `common.schema.json#/$defs/LocaleTextList` types this as a list of glosses; a consumer
+  joining with ", " renders `heart; mind` where every other record renders `heart, mind`, and any gloss-count
+  check against pt-BR reports a false mismatch. It also breaks the "gloss vs vocab sense-0 is byte-identical"
+  invariant's usefulness — the divergence is upstream in `corpus/vocab/*.json` senses, so both layers carry it.
+- **Proposed fix.** Split on `; ` at ingest for these 17 sense rows in the vocab layer, then re-export the
+  kanji layer.
 
-> `"meanings": {"pt-BR": ["capital", "Quioto"], "en": ["capital", "Kyoto"]}`
-> `example_words`: 上京 (じょうきょう, **n3**) "ir a Tóquio"; 帰京 (ききょう, **n1**) "volta à capital (Tóquio)"
+## K10 — LOW — English-dictionary abbreviations survive untranslated into pt-BR learner text **[extends prior F7]**
 
-- **Why it is wrong:** 京 is one of only two records in the slice with **zero** example words at or below its
-  own level (the other is 主, see below), and the two it has are a paraphrase of each other. Neither **東京**
-  nor **京都** appears — `grep -c 東京 corpus/vocab/*.json` returns 0 across all five files, so the kanji
-  layer cannot link them. A learner is told 京 means "capital, Quioto" and then shown two words about going to
-  and coming back from Tokyo, with the word 東京 itself never appearing.
-- **Root cause and why it is worth revisiting:** `YOMINEKO_CORPUS_BUILD_SPEC.md:138` says of JMnedict, "proper
-  names — **not needed for N5/N4, skip unless useful**." The escape hatch was written for exactly this. 東京
-  is not an obscure toponym; it is the reason 京 is on the N4 list at all.
-- **Proposed fix:** admit 東京 (とうきょう) and 京都 (きょうと) to `corpus/vocab/n5.json`/`n4.json` under the
-  spec's "unless useful" clause, link them from `kanji:京`, and tag its on キョウ `introduced_at_level: n4`
-  (currently `null`, see F3b). Related: `kanji:主` (n4) also has 0/10 at-or-below-level, and spends **three**
-  of its ten slots on single-character 主 entries (おも n2, ぬし n1, しゅ n1) while `ご主人` (n4) sits unused.
+Six learner-facing pt-BR strings carry conventions from the English source rather than pt-BR prose:
+
+| record | field | text |
+|---|---|---|
+| `kanji:台` | `meanings["pt-BR"][2]` | contador (sufixo **p/** máquinas e veículos) |
+| `kanji:車` | gloss of 汽車 | trem (**esp.** a vapor) |
+| `kanji:花` | gloss of 花見 | contemplação das flores (**esp.** de cerejeira) |
+| `kanji:漢` | gloss of 漢和 | sino-japonês (**esp.** dicionário de kanji) |
+| `kanji:英` | gloss of 和英 | japonês-inglês (**ex.:** dicionário) |
+| `kanji:貸` | gloss of 貸出 | empréstimo (de livro **etc.**) |
+
+`esp.` is a direct carry-over of JMdict's "especially" and is not a standard pt-BR abbreviation; `p/` is
+texting shorthand. `corpus/vocab/n5.json` already writes the 台 concept out in full as *"contador para máquinas
+e veículos"*, so the abbreviated form is inconsistent with the corpus's own phrasing.
+`design/translation_style.md` §4 asks for direct, beginner-clear pt-BR.
+
+- **Proposed fix.** `p/` → `para`; `esp.` → `especialmente`; `ex.:` → `por exemplo,`; `etc.` → `e outros`.
+
+## K11 — LOW (cross-layer) — `kanji:京` has two example words, both above level, and 東京 is not in the bank `[confirmed]`
+
+`kanji:京` (n4), meanings "capital, Quioto", has exactly two example words: 上京 (じょうきょう, **n3**) and
+帰京 (ききょう, **n1**) — paraphrases of each other, both about travelling to and from Tokyo, while 東京 itself
+never appears. It is absent from all five `corpus/vocab/*.json` files, so the kanji layer has nothing to link.
+`YOMINEKO_CORPUS_BUILD_SPEC.md` skips proper names "unless useful"; 東京 is the reason 京 is on the N4 list.
+
+- **Proposed fix.** Admit 東京 (and 京都) under the "unless useful" clause, link them from `kanji:京`, and tag
+  its on キョウ `introduced_at_level: n4` (currently null, see K4).
 
 ---
 
 ## What I checked and found clean
 
-| Check | Records/rows | Result |
+| Check | Rows | Result |
 |---|---:|---|
-| `strokes` vs KANJIDIC2 | 280 | 0 mismatches |
-| `grade` vs KANJIDIC2 | 280 | 0 mismatches |
-| `freq_rank` vs KANJIDIC2 | 280 | 0 mismatches |
-| `kangxi_radical` vs KANJIDIC2 | 280 | 0 mismatches |
-| kun/on/nanori reading **sets**, okurigana reconstructed, both directions | 1 812 rows | 0 missing, 0 extra |
-| Reading **type** filed correctly (no on-as-kun etc.) | 1 812 | 0 errors |
-| `common: false` on every nanori | 1 812 | 0 violations |
-| Reading types contiguous within the array | 280 | 0 split blocks |
-| Reading `note` present and non-empty | 1 812 | 0 missing |
-| Reading note vs `example_vocab_ids` ("no examples" claims) | 1 812 | 0 contradictions |
-| `irregular_note` factual accuracy (jukujikun / rendaku / gemination) | 47 | 47 correct |
-| `notes` field | 280 | all `null` (consistent) |
-| `example_vocab_ids` resolve to a real vocab record | 671 rows | 0 dangling |
-| `example_vocab_ids` also present in the record's `example_words` | 671 rows | 0 orphans |
-| `example_words` headword/kana/slug vs its vocab record | 2 193 | 0 mismatches |
-| `example_words` gloss vs vocab sense-0 gloss | 2 193 | 0 divergences (byte-identical) |
+| `strokes` / `grade` / `freq_rank` / `kangxi_radical` vs KANJIDIC2 | 280 each | 0 mismatches |
+| kun/on/nanori reading **sets** vs KANJIDIC2, okurigana reconstructed, both directions | 1 812 | 0 missing, 0 extra |
+| Reading `type` filed correctly (no on-as-kun, no kun-as-on) | 1 812 | 0 errors |
+| Reading types contiguous within the array (no interleaving) | 280 | 0 split blocks |
+| Duplicate `(type, reading, okurigana)` within a record | 1 812 | 0 |
+| `common: false` on every nanori | 688 | 0 violations |
+| Reading `note` present, non-empty, pt-BR | 1 812 | 0 missing |
+| `irregular_note` factual accuracy (jukujikun / rendaku / gemination / ateji) | 47 | 47 correct |
+| `notes` field null on every record | 280 | consistent with the contract's own description |
 | `example_words` headword actually contains the kanji | 2 193 | 0 violations |
-| `example_words` backed by a JMdict-uncommon vocab | 2 193 | 0 |
-| Em dash (—) in any authored pt-BR text | all | 0 |
-| pt-PT forms / "Quanto a" / "Vale ressaltar" tells | all | 0 |
-| Trailing or doubled whitespace | all | 0 |
+| `example_words` headword/kana/slug vs its vocab record | 2 193 | 0 mismatches |
+| `example_words` gloss vs the vocab record's sense-0 gloss | 2 193 | 0 divergences |
+| `example_vocab_ids` resolve to a real vocab record | 671 | 0 dangling |
+| pt-BR meanings/glosses/notes: em dash (—) | all | 0 |
+| pt-BR meanings/glosses/notes: pt-PT forms, "Quanto a", "Vale ressaltar" | all | 0 |
+| pt-BR gloss left untranslated (identical to `en`) | 2 193 | 0 real cases (動物 "animal", 病院 "hospital" are true cognates) |
 
-Thin `example_words` lists (駅 and 犬 and 秋 have exactly 1; 九, 六, 七, 川, 千, 右, 魚, 耳, 町, 銀, 春, 森, 冬,
-勉, 菜, 暑 have 2) were checked and **are not defects**: for every one of them, `corpus/vocab/` contains no
-other word using that kanji. The lists are as full as the vocab layer allows.
+Thin `example_words` lists — 駅, 犬, 秋 have 1; 九, 六, 七, 川, 千, 右, 魚, 耳, 町, 銀, 春, 森, 冬, 勉, 菜, 暑
+have 2 — are **not** defects: for each, `corpus/vocab/` holds no further word using that kanji. The lists are
+as full as the vocab layer allows.
 
 ---
 
 ## Counts
 
-| Finding | Severity | Records affected |
-|---|---|---:|
-| F1 duplicate `example_words` entry | HIGH | 2 |
-| F2 example words skip easier in-corpus words | HIGH | 48 (31 also spend a slot on N1/N2) |
-| F3 `introduced_at_level` null or contradictory | HIGH | 44 |
-| F4 `kanji:屋` pt-BR drops "telhado" | MEDIUM | 1 |
-| F5 `meanings.en` mislabelled as raw KANJIDIC | MEDIUM | 170 (contract/doc fix, 1 edit) |
-| F6 nanori ordered between kun and on | MEDIUM | 193 (exporter fix, 1 edit) |
-| F7 `kanji:台` "p/" abbreviation | LOW | 1 |
-| F8 `kanji:文` irregular_note casing + framing | LOW | 1 |
-| F9 `kanji:少` meaning order | LOW | 1 |
-| F10 `kanji:京` no in-level example word | LOW | 1 (+`kanji:主`) |
-| **Total** | **10 findings** | **75 records carry a record-specific finding; 205 clean** |
+| Finding | Severity | Status | Records |
+|---|---|---|---:|
+| K1 example word teaches an `is_common: false` written form | HIGH | **new** | 24 (29 entries) |
+| K2 duplicate `example_words` entry | HIGH | confirmed | 2 |
+| K3 example-word selection level-blind; tiebreak degenerate | HIGH | confirmed (root cause new) | 1 503 of 2 193 entries; 3 records at 0/10 |
+| K4 `introduced_at_level` null or self-contradictory | HIGH | confirmed | 44 |
+| K5 `common` on readings restates `type`; notes contradict it | MEDIUM | **new** | 280 (1 124 rows) |
+| K6 nanori block ordered between kun and on | MEDIUM | confirmed | 193 |
+| K7 `kanji:屋` pt-BR drops "telhado" | MEDIUM | confirmed | 1 |
+| K8 `meanings.en` mislabelled as raw KANJIDIC | MEDIUM | confirmed | 170 (1 doc edit) |
+| K9 `en` gloss unsplit on `;` | LOW | **new** | 16 (17 entries) |
+| K10 English abbreviations in pt-BR text | LOW | **extends prior F7** | 6 |
+| K11 `kanji:京` no in-level example word; 東京 absent | LOW | confirmed | 1 (+`kanji:主`, `kanji:不`) |
 
 | Scope | Count |
 |---|---:|
-| Records assigned | 280 |
-| Records read in full | 280 |
+| Records assigned / read in full | 280 / 280 |
 | n5 / n4 | 103 / 177 |
 | `readings[]` rows checked | 1 812 |
 | `example_words[]` entries checked | 2 193 |
 | `irregular_note` texts verified by hand | 47 |
-| Vocab records loaded for level/gloss cross-check | 7 401 |
+| Vocab records loaded for level / gloss / form cross-check | 7 401 |
+| KANJIDIC2 characters loaded | 10 384 |
+| **Findings** | **11 (4 HIGH, 4 MEDIUM, 3 LOW)** |
 
-**Priority for the teacher review queue:** F1 first (two-minute fix, and it frees the slot `お茶` needs), then
-F2 and F3 together — both are exporter/selector logic, both are recoverable from data the corpus already
-holds, and between them they account for 73 of the 75 flagged records, so a single re-export closes almost
-the whole list. F5 is a one-line documentation correction but should not be skipped: it is the difference
-between a reviewer trusting `meanings.en` blindly and knowing to spot-check it.
+**Priority.** K2 is a two-minute exporter fix that also frees the slot `お茶` needs. K1 and K3 are the same
+query in `export_corpus.py:160-163` and should be fixed together — add the `is_common` form preference and the
+level term in one edit, then re-export; between them they change what 24 records *show* and reorder what 1 503
+entries *are*, with no vocab additions needed. K4 and K5 are both reading-metadata derivations that the corpus
+already has the inputs for. K8 is a one-line documentation correction and should not be skipped: it is the
+difference between a reviewer trusting `meanings.en` blindly and knowing to spot-check it.

@@ -59,7 +59,7 @@ A grande diferença de なら: nas outras três, a condição costuma vir antes 
 #### Hora de praticar
 
 #### Leitura
-> 📖 お会いできるといいですね。また会えるといいですね。明日雨ならば行きません。明日ならどうですか。 — "Tomara que eu possa vê-lo, né?" Tomara que a gente possa se ver de novo, né? Se chover amanhã, eu não vou. E amanhã, que tal?
+> 📖 お会いできるといいですね。また会えるといいですね。明日雨ならば行きません。明日ならどうですか。 — Tomara que eu possa vê-lo, né? Tomara que a gente possa se ver de novo, né? Se chover amanhã, eu não vou. E amanhã, que tal?
 - Sei torcer por algo com 〜といいです ("tomara que").
 - Uso なら para reagir a um tema que surgiu na conversa.
 - Distingo と・なら de たら・ば pelo tipo de relação entre condição e resultado.
