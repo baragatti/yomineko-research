@@ -366,6 +366,131 @@ Worth recording, since these were checked and held up:
 
 ---
 
+# Second pass — independent re-review (2026-08-27)
+
+A second reviewer re-read all 1,358 records from the exported JSON without reading this report first, then
+diffed the result against it. Everything below either **confirms** a prior finding by an independent route, or
+is **new**. Nothing above was removed.
+
+## Prior findings reproduced independently
+
+Re-derived from `corpus/vocab/{n5,n4}.json` alone (no JMdict, no source lists), so they hold even if the
+JMdict resolution in the first pass is ever questioned:
+
+- **F1.** Keying every record by `kana` shows the collisions directly: `する` → only 刷る "imprimir" (n5) and
+  為る (n4); `なる` → only 生る "dar fruto" (n5) and 鳴る (n4); `はい` → only 肺 "pulmão"; `その` → only 園
+  "jardim"; `たち` → only 立ち "partida". Scanning all five level files confirms the collateral damage:
+  成る sits at **n3** (id 2517), 掛かる at **n3** (1584), 方/ほう at **n3** (2731), 喧嘩 at **n3** (1825),
+  the honorific prefix 御/お at **n3** (1512), and **達 does not exist in any of the 7,401 records**.
+- **F4 / F5.** Across 1,947 senses: `misc` non-empty on **1**, sense `register` non-empty on **1**, record
+  `register` non-empty on **1**, `field` non-empty on **0**. Independently of JMdict, **37 records name a
+  register inside their own `en` gloss prose** ("(honorific)", "(humble)", "(polite)", "(informal, male)",
+  "(familiar)") while `register` and `misc` are both null — so the data contradicts itself without any
+  external reference needed. (Two of the 37, 慣れる and 全然, are regex artefacts; 35 are genuine.)
+- **F9.** 48 records carry ー in `kana`; 47 render it `-`, id 501 パーティー renders it `paatii`.
+  `axtsu` (id 1183) is the only romaji string in the corpus containing `x`.
+- **F10.** Exactly 15 headwords contain a full-width digit or Latin letter. Same list.
+- **F11.** 52 `en` gloss strings contain `;`; 38 `pt-BR` gloss strings contain a bare `, `. Both cluster in
+  contiguous id blocks (`;` across n4 ids 934–973, `,` across n4 ids 1255–1292), consistent with the two
+  unnormalized authoring batches the first pass inferred.
+- **F12.** 11 records repeat a pt string across senses. Same 11.
+- **Clean checks re-run and confirmed:** every `kana` and every `headword` appears in the record's own
+  `forms`; exactly one `is_primary` per record and it always equals `headword`; zero em/en dashes in any pt
+  gloss; zero empty pt sense lists; zero leading/trailing whitespace; no duplicate `(headword, kana)` pair.
+
+---
+
+## F16 — LOW: 大変 is the only na-adjective in the corpus with `adj_class: null`
+
+`corpus/vocab/n5.json`, id 368:
+
+```
+adj_class: null
+s0  pos ["adv"]      en "very | extremely | greatly"           pt "muito | extremamente"
+s1  pos ["adj-na"]   en "awful | tough | a big deal (situation)" pt "difícil | complicado | terrível"
+```
+
+A sweep of all 1,358 records for `adj-na` / `adj-i` / `adj-ix` in any sense `pos` versus the record-level
+`adj_class` returns **exactly one** mismatch, this record. Its neighbours are consistent: 大人 (119) is
+`adj-na` in `pos` and `na_adj` in `adj_class`, so does 大丈夫 (364), 大切 (366), 大事 (761).
+
+Consequence: `adj_class` is the field a conjugation table or a な-adjective drill filters on, and
+`corpus/conjugations/{n5,n4}.json` is keyed off it, so 大変 silently drops out of every な-adjective exercise
+even though 大変な一日 is standard N5 material.
+
+**Fix:** `adj_class: "na_adj"` on id 368. Then add the invariant as a validator: for every record, `adj-na`
+in any sense `pos` ⇒ `adj_class == "na_adj"`, `adj-i`/`adj-ix` ⇒ `adj_class == "i_adj"`.
+
+---
+
+## F17 — MEDIUM: 暖房 has no pt gloss for its する sense, and two more records misalign en↔pt inside one sense
+
+id 1160, its only sense:
+
+```
+pos ["n","vs","vt"]
+en  ["heating",     "heater",         "to heat (a room)"]
+pt  ["aquecimento", "calefação",      "aquecedor"]
+```
+
+`en[2]` is the verb "to heat (a room)"; `pt[2]` is **"aquecedor"**, a noun meaning "heater" that already
+duplicates `en[1]`. No gloss anywhere in the record means *aquecer*, so 暖房する has no pt-BR rendering at
+all. Its own sibling gets this right: 冷房 (id 1014) splits the noun sense (`s0` "ar-condicionado") from the
+する sense (`s1` "refrigerar (um ambiente)").
+
+Same shape, positional misalignment rather than a missing meaning:
+
+| id | | |
+|---|---|---|
+| 1141 放送 | en `["broadcast", "broadcasting", "to air", "to broadcast"]` | pt `["transmissão", "transmitir", "ir ao ar"]` — 4 en vs 3 pt, and `en[1]` "broadcasting" (noun) sits opposite `pt[1]` "transmitir" (verb) |
+| 1150 講義 | en `["lecture", "to lecture", "to give a lecture"]` | pt `["palestra", "aula (expositiva)", "dar uma palestra"]` — `en[1]` "to lecture" (verb) opposite `pt[1]` "aula (expositiva)" (noun) |
+
+Structural cause: of the 99 `suru_irregular` records with a `vs` sense, **75 split the noun and the する
+reading into two senses** and **24 pack both into one**. The packed ones are where the en and pt lists drift
+out of correspondence, because nothing forces `pt[i]` to translate `en[i]`.
+
+**Fix:** give 暖房 the same two-sense shape as 冷房 (`s0` "aquecimento / calefação", `s1` "aquecer (um
+ambiente) / ligar o aquecedor"); do the same for 放送 and 講義. Then validate `len(pt) == len(en)` per sense
+and, for any `en[i]` beginning "to ", require `pt[i]` to be an infinitive.
+
+---
+
+## F18 — MEDIUM: 不味い leads with "sem graça", which is a different flavour complaint
+
+id 603, `s0`:
+
+```
+en "bad-tasting", "unappetizing"
+pt "sem graça (comida)", "ruim de sabor", "intragável"
+```
+
+In pt-BR *sem graça* applied to food means **bland / insipid** — the absence of flavour. まずい asserts a
+*bad* flavour; the insipid meaning belongs to 味気ない / 味が薄い. Because it sits at index 0 it is the string
+a flashcard front, an autocomplete and a short-form UI will show, so the learner's one-word takeaway for
+まずい becomes the wrong adjective, and pt→ja recall will produce まずい for "sem graça".
+
+The record's own `en` is unambiguous ("bad-tasting"), and the third gloss "intragável" is already correct, so
+this is a leading-gloss ordering problem, not a comprehension failure.
+
+**Fix:** `pt: "ruim (de gosto)", "horrível (de sabor)", "intragável"`. Note that 美味しい (id 95) is the mirror
+entry and leads correctly with "delicioso".
+
+---
+
+## F19 — LOW: three more pt glosses that mistranslate or misdate their own `en` (extends the F14 table)
+
+| id | en | pt | problem |
+|---|---|---|---|
+| 422 デパート | `"department store"` | `"loja de departamentos"`, **`"magazine"`** | *magazine* as a common noun for a department store is dated Brazilian usage surviving mainly inside brand names. A learner reads it as English "magazine" and maps デパート to *revista*. Fix: `"loja de departamentos"`, `"grande loja"` |
+| 101 お菓子 | `"sweets"`, `"snacks"`, `"candy"` | `"doces"`, `"guloseimas"`, **`"salgadinhos"`** | *salgadinhos* are savoury snacks — the one thing none of the three `en` glosses covers. It adds meaning the record's own Layer-A source does not carry. Fix: `"doces"`, `"guloseimas"`, `"confeitos"` |
+| 414 テープ | `"tape (adhesive, magnetic)"` | `"fita"`, **`"durex"`** | *Durex* is a trademark, and it names only the adhesive half of a gloss that explicitly covers the magnetic sense too. Fix: `"fita"`, `"fita adesiva"` |
+
+Also worth folding into **F13**: the reason 336 背(せい) and 1338 背(せ) are indistinguishable is that 1338
+leads with the *height* sense, byte-identical to 336, and keeps its own distinctive sense ("costas", "dorso")
+at `s1`. Reordering 1338 so "costas | dorso" is `s0` separates the two cards without deleting either.
+
+---
+
 ## Counts
 
 | | |
@@ -373,12 +498,16 @@ Worth recording, since these were checked and held up:
 | Records checked | 1,358 (n5: 705, n4: 653) |
 | Senses checked | 1,947 |
 | Gloss strings checked (en + pt-BR) | 3,737 |
-| **Findings flagged** | **15** |
+| **Findings flagged** | **19** (15 first pass + 4 second pass) |
 | — critical | 2 (F1, F2) |
 | — high | 3 (F3, F4, F5) |
-| — medium | 4 (F6, F7, F8, F9) + F10 |
-| — low | 5 (F11–F15) |
-| Individual records implicated | ~21 (F1) + 1 (F2) + 156 (F3) + 1,946 senses (F4) + 51 (F5) + 485 forms (F6) + 2 (F7) + 2 (F8) + 48 (F9) + 15 (F10) + 86 (F11) + 11 (F12) + 2 (F13) + 9 (F14) + 1 (F15) |
+| — medium | 6 (F6, F7, F8, F9, F10, F17, F18) |
+| — low | 6 (F11–F16, F19) |
+| Individual records implicated | ~21 (F1) + 1 (F2) + 156 (F3) + 1,946 senses (F4) + 51 (F5) + 485 forms (F6) + 2 (F7) + 2 (F8) + 48 (F9) + 15 (F10) + 86 (F11) + 11 (F12) + 2 (F13) + 9 (F14) + 1 (F15) + 1 (F16) + 3 (F17) + 1 (F18) + 3 (F19) |
 
 **Blocking for learner release:** F1 and F2. F3, F4 and F5 are blocking for any UI that renders headwords or
-filters on politeness.
+filters on politeness. F16, F17 and F18 are single-record or three-record fixes that can ship immediately.
+
+**Cheapest durable win:** four of the nineteen findings (F16, F17, F11, and the `len(pt) == len(en)` half of
+F17) are expressible as validators over the exported JSON, so they can be added to the existing hard-validator
+suite and never regress.

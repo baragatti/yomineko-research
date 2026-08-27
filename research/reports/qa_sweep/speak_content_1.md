@@ -1,16 +1,18 @@
 # QA sweep: `course/speak` content, stages arrival / eating / getting_around / shopping / lodging / health
 
-**Scope:** the 36 unit files under `course/speak/{arrival,eating,getting_around,shopping,lodging,health}/unit-0*.json`,
-with every `say_now`, `chunk_phrases`, `drills[].examples`, `production[].sentence` and `fluency.items` ID
-resolved against `corpus/sentences/bank.json`, and every `words[]` ID resolved against `corpus/vocab/*.json`.
+**Scope.** The 36 unit files under `course/speak/{arrival,eating,getting_around,shopping,lodging,health}/unit-0*.json`,
+with all 403 distinct sentence IDs (`say_now`, `chunk_phrases`, `drills[].examples`, `production[].sentence`,
+`fluency.items`) resolved against `corpus/sentences/bank.json`. 216 `say_now` slots, 105 production items,
+6 fluency prompts, 111 drill blocks.
 
-**Questions asked:** are the selected phrases what a traveler actually needs in that situation; natural spoken
-register; correctly translated; well-ordered within the stage; are drill/production prompts natural pt-BR; is
-anything bookish or written-register in a speaking path.
+**Questions asked.** Are the selected phrases what a traveler actually needs in that situation; natural spoken
+register; correctly translated; well ordered inside the stage; are drill and production prompts natural pt-BR;
+is anything bookish or written-register in a speaking path.
 
-**Out of scope by instruction:** sentence `structure_explanation` fields (being re-authored concurrently).
+**Out of scope by instruction.** Sentence `structure_explanation` fields (being re-authored concurrently).
 
-**Authority for pt-BR judgements:** `design/translation_style.md`.
+**Authority for pt-BR judgements.** `design/translation_style.md`. Design contract for the path:
+`design/speaking_path.md`.
 
 **Read-only run.** Nothing outside this file was modified.
 
@@ -18,708 +20,569 @@ anything bookish or written-register in a speaking path.
 
 ## Summary
 
-The six stages are not six curated survival scenarios. They are six buckets of Tatoeba sentences selected by
-**keyword and grammar-tag match**, then labelled with a scenario title and a scenario `fluency.prompt_pt` that
-the contents cannot deliver. The `coverage:n5` / `coverage:n4` / `mined` / `jec` provenance tags are the visible
-fingerprint: **99 of the 216 `say_now` slots** carry one, meaning the phrase was pulled in to cover a vocab or
-grammar item, not because a traveler would say it. In `lodging` it is 34 of 36.
+The path is built by keyword match over the sentence bank, and the six stages are what that match returned,
+not six curated survival scenarios. The scenario title and the scenario `fluency.prompt_pt` are then written
+on top of contents that cannot deliver them. Three measurements make this concrete:
 
-Three of the six stages do not contain the single phrase their own title promises:
+- **99 of 216 `say_now` sentences carry a `coverage:n5` / `coverage:n4` / `mined` / `jec` tag**, meaning the
+  sentence was ingested to close a JLPT vocab or grammar gap, not because a traveler would say it. In
+  `lodging` it is **34 of 36**.
+- **`speak:shopping` never teaches a price question.** Zero of its 36 phrases contain いくらですか, 円,
+  ください, カード, レジ, 会計 or 袋. The stage is titled "Isto, aquilo, quanto custa".
+- **Every stage-opening unit drills the previous stage.** In `eating-01`, `getting_around-01`, `shopping-01`,
+  `lodging-01` and `health-01`, **0 of 6 fluency items and 0 of 3 production items** come from that stage,
+  while the fluency prompt already describes the new scenario.
 
-| Stage | Title / task promised | The phrase is absent |
-|---|---|---|
-| `shopping` | "Isto, aquilo, quanto custa" / "Pergunte o preço e feche a compra" | no price question anywhere in 36 slots |
-| `lodging` | "Dormir e resolver problemas" / "Faça o check-in" | no check-in phrase anywhere in 36 slots |
-| `health` | "Emergência e saúde" / "peça ajuda" | no emergency phrase anywhere in 36 slots |
+Provenance is otherwise clean: **0 of 216 `say_now` sentences are `ai_generated`**, so the path's
+"432 real / 0 generated" claim in `course/speak/INDEX.md` holds for this slice. The problem is selection
+quality, not fabrication.
 
-On top of that, `production` and `fluency` are wired to a rolling window of *previously seen* sentences that
-crosses stage boundaries, so the scenario prompt and the material handed to the learner are systematically
-disjoint (F04). And two items actively train the learner to say something rude (F01, F08).
-
-Findings are ranked. Severity: **S1** = ships something harmful or embarrassing to a learner; **S2** = the stage
-fails its own stated objective; **S3** = wrong register / wrong data; **S4** = style and polish.
-
----
-
-## F01 (S1) `health-06` drills the learner to produce an insult, in the emergency stage
-
-`course/speak/health/unit-06.json` → `production[2]`, and `health-05` → `say_now[3]`
-(`sent:tatoeba-5147343`):
-
-```
-prompt_pt:   "Se você tivesse metade de um cérebro, seria perigoso!"
-answer_key:  お前は脳の半分があったら，危ない!
-```
-
-Two separate defects in one item.
-
-**Japanese.** This is a jokey put-down ("if you had half a brain you'd be dangerous"), built on **お前**, a
-second person pronoun that is confrontational toward anyone who is not an intimate. The stage is titled
-"Emergência e saúde" and its `fluency.prompt_pt` is *"Você não está bem. Explique o que está sentindo e peça
-ajuda."* A learner who has been drilled on this line and reaches for a half-remembered phrase in a clinic will
-insult the person they are asking for help. Nothing in the unit marks it as an insult: the `words[]` list
-introduces only 半分 and 危ない, and 脳 and お前 are not glossed at all.
-
-**pt-BR.** "Se você tivesse metade de um cérebro, seria perigoso!" is a word-for-word calque of the English
-idiom. It does not carry the insult in pt-BR; read literally it means the opposite of what is intended, and a
-Brazilian learner will not understand that the Japanese is rude. This violates `translation_style.md` §1
-(natural pt-BR, not a mirror) and §2 (register mirrors the Japanese; flag offensive items).
-
-**Fix:** remove `sent:tatoeba-5147343` from `health-05.say_now` and from `health-06.production`. Replace the
-production slot with a first-person symptom line the stage already needs, e.g. `sent:tatoeba-198568`
-(喉がひりひりして、ちょっと熱があるんです) is already in `health-05.say_now` and is the right register. If the
-sentence is kept in the bank at all, its `register` must be marked and the pt-BR reworked so the insult reads
-as an insult.
-
-Minor, same item: the Japanese uses a full-width Latin comma `，` (U+FF0C) instead of `、`, and all four
-`accepted_variants` preserve it.
+Fourteen findings below, most severe first. Severity: **S1** blocks the stage from doing its job,
+**S2** is a systematic defect a learner will hit repeatedly, **S3** is a localised fix.
 
 ---
 
-## F02 (S2) The `shopping` stage never teaches a price question
+## S1-1. Every stage-opening unit practises the previous stage under the new stage's prompt
 
-Stage title: **"Isto, aquilo, quanto custa"**. `fluency.prompt_pt` in all six units: *"Você está numa loja com
-uma coisa na mão. Pergunte o preço e feche a compra."*
+**Where.** `speak:eating-01`, `speak:getting_around-01`, `speak:shopping-01`, `speak:lodging-01`,
+`speak:health-01`.
 
-Across all 36 `say_now` slots in `shopping-01..06` there is not one price question, not one purchase phrase, not
-one これください. Scanning the 36 Japanese strings for いくら / 円 / ください / お願いします / カード / 袋 /
-レシート / 会計 returns exactly one hit, and it is a false positive:
+Measured: fluency items from own stage 0/6, production items from own stage 0/3, in all five.
 
-```
-sent:tatoeba-229178  いくらお礼を言っても言い切れない。
-                     "Por mais que eu agradeça, nunca será o bastante."
-```
-
-That is いくら in its "however much" adverbial sense, not the price word.
-
-What the stage teaches instead, in order: あれはキジです ("Aquilo é um faisão."), あれはネコですか,
-あれはテーブルです, 問題はお金がないということです, 私はこれは自明のことと思う ("Eu acho que isto é algo
-óbvio."), 私たちはそれを公にしようと思う ("Nós pretendemos tornar isso público."), 自分でそれをしなければ
-ならない, 彼が郊外に家を買った, これを壊したのはだれですか.
-
-The sentence the stage needs exists in the bank and is deployed everywhere else:
-
-```
-sent:tatoeba-5332  いくらですか？  "Quanto custa?"
-  used as a gram:da-desu drill example in:
-    speak:eating-04, speak:getting_around-06, speak:lodging-05, speak:about_you-05,
-    speak:about_you-06, speak:time_plans-05, speak:time_plans-06, speak:health-04,
-    speak:health-05, speak:past_stories-02, speak:past_stories-06, speak:opinions-02
-  used in speak:shopping-01..06: NEVER
-```
-
-Twelve units across eight stages get "Quanto custa?" as filler for a copula drill; the stage named after it gets
-none. A learner who stops after stage 2 (which `course/speak/INDEX.md` promises is "um ponto de parada usável")
-cannot buy anything.
-
-**Fix:** rebuild `shopping` `say_now` around the transaction: いくらですか / これください / これをください /
-カードで払えますか / 袋いりません / もう少し安くなりませんか / 試着してもいいですか. `sent:tatoeba-5332` and
-`sent:tatoeba-1484951` (いくらほしい？) are already in the bank. The demonstratives (これ/それ/あれ) are the
-grammar vehicle, not the content: keep one あれは何ですか, drop the faisão / gato / mesa series.
-
----
-
-## F03 (S2) The `health` stage never teaches an emergency phrase, and unit 1 is about other people's doctors
-
-Stage title **"Emergência e saúde"**, `fluency.prompt_pt`: *"Você não está bem. Explique o que está sentindo e
-peça ajuda."*
-
-`health-01.say_now` in full:
-
-```
-医者にかかるべきだ。               "Você devia consultar um médico."          (advice to someone else)
-彼は医者として有名だ。             "Ele é famoso como médico."                (third person)
-彼は医者として無能だ。             "Ele é incompetente como médico."          (third person, insulting)
-医者に診てもらうべきですよ。       "Você deveria se consultar com um médico"  (advice to someone else)
-父は私を医者にしたがっている。     "Meu pai quer fazer de mim um médico."     (career talk)
-医者に見てもらうべきだと思う。     "Acho que você deveria ser examinado..."   (advice to someone else)
-```
-
-Six of six are about a doctor rather than about the speaker's body. Two of the six (`tatoeba-110065` /
-`tatoeba-110066`) are a Tatoeba minimal pair that differs only in 有名/無能 and burn two of the six slots to
-teach the learner to call a doctor incompetent. Two more (`tatoeba-190902` / `tatoeba-190894`) differ only in
-見/診 and both translate to near-identical pt-BR.
-
-Across all 36 `say_now` slots in the stage there is no 助けて, no 救急車を呼んでください, no
-アレルギーがあります, no 病院はどこですか, no 保険証. The first-person symptom reports amount to four lines
-(お腹が痛いので今日は休みます, 喉がひりひりして…, 熱が上がった, せきがひどかったので…), and one of those
-four is a past-tense narrative.
-
-In a module whose name is "Emergência", the absence of any phrase that summons help is not a taste question.
-
-Two supporting items in the same stage:
-
-- `health-04.say_now[5]` / `health-05.production[0]`: 病院まで１０マイルもある, *"Daqui até o hospital são nada
-  menos que dez milhas."* Japan does not use miles. A production drill that trains a Japan-bound traveler to
-  state distances in miles is wrong for the target situation regardless of the grammar point (n3-made).
-- `health-06.production[1]`: 風邪って人にうつすと治るってほんと？ *"É verdade que, quando você passa o
-  resfriado pra outra pessoa, você sara?"* This is a folk myth. Drilling a learner to produce it, unmarked, in
-  a health module is the one place the course should not be casual about medical content. The pt-BR itself is
-  natural; the problem is that it is a production target in this stage.
-
-**Fix:** re-seed `health-01` and `health-02` with first-person symptom and help-request phrases and push the
-"you should see a doctor" advice-to-others cluster to a later unit. Drop `tatoeba-110066` (無能) entirely.
-Drop the miles sentence. Move the folk-myth sentence to `real_talk` if it is kept, or mark it.
-
----
-
-## F04 (S2, systemic) `production` and `fluency` are a rolling window of earlier `say_now`, so the scenario prompt never matches the material
-
-This is the root cause behind most of what follows. For every one of the 36 units I checked, each
-`production[].sentence` resolves to a sentence that was in the **immediately preceding unit's** `say_now`, and
-`fluency.items` resolve to the `say_now` of the two to four preceding units. The window does not reset at a
-stage boundary:
-
-```
-speak:shopping-01        production <- speak:arrival-06
-speak:eating-01          production <- speak:shopping-06
-speak:getting_around-01  production <- speak:eating-06
-speak:lodging-01         production <- speak:getting_around-06
-speak:health-01          production <- speak:time_plans-06
-```
-
-Because the `fluency.prompt_pt` is written per stage but the `fluency.items` come from the previous stage, the
-first units of every stage pair a scenario instruction with six sentences that have nothing to do with it.
-
-**Worst case, `getting_around-01`:**
-
-```
-fluency.prompt_pt: "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu."
-items:
-  以下の通り注文いたします。            "Faço o pedido conforme o que segue abaixo."
-  旅行中はほとんど米は食べられなかった。 "Durante a viagem, a gente quase não conseguiu comer arroz."
-  お箸で食べるのは難しいですか？        "É difícil comer com hashis (pauzinhos)?"
-  ディナーはたいがいコーヒーで終わる。   "O jantar quase sempre termina com um café."
-  去年トマトを作ったがとてもおいしかった。"No ano passado eu plantei tomates..."
-  注文を受けてから作るのが受注生産です。 "Produção sob encomenda é fabricar só depois de receber o pedido."
-```
-
-Six for six from the restaurant stage. The learner is told to ask for directions and handed a purchase order
-and a tomato harvest.
-
-The same unit's three `production` prompts are the tail of `eating-06`:
-
-```
-"Ele levava água com afinco até a boca dela."          -> 彼がせっせと彼女の口に水を運んだ
-"Naquela época, uma xícara de café custava 200 ienes." -> あの頃はコーヒー１杯が２００円だったよ。
-"Naquela época, eu não gostava de cerveja."            -> 私は、そのころビールが嫌いだった。
-```
-
-**Second worst, `eating-01`:**
+The clearest case, `speak:eating-01`:
 
 ```
 fluency.prompt_pt: "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
-items: 本をたくさん買ったんだ / これを壊したのはだれですか / 家を買ったんだってね /
-       彼が郊外に家を買った / 自分でもそれをやってみます / 自分の力だけでそれをできる
+fluency.items:
+  sent:tatoeba-81631    本をたくさん買ったんだ。          "É que eu comprei muitos livros."
+  sent:tatoeba-217663   これを壊したのはだれですか。      "Quem foi que quebrou isto?"
+  sent:tatoeba-9240812  家を買ったんだってね。            "Soube que você comprou uma casa, né."
+  sent:jec-1593         彼が郊外に家を買った              "Ele comprou uma casa no subúrbio."
+  sent:tatoeba-76061    自分でもそれをやってみます。      "Eu também vou tentar fazer isso por conta própria."
+  sent:tatoeba-149750   自分の力だけでそれをできる。      "Consigo fazer isso só com as minhas próprias forças."
 ```
 
-All six are the `shopping` stage's book-and-house-buying tail. `eating-02` repeats four of the same six under
-the same restaurant prompt.
+Not one item is about eating. The learner is told to sit down in a restaurant and order, and handed six
+sentences about buying books and houses. `speak:health-01` is the same shape: prompt
+`"Você não está bem. Explique o que está sentindo e peça ajuda."` over six `time_plans` leftovers
+(午後には上がるだろうか？, 金曜日の午後はお暇ですか。, 今日の午後に公園へ行きませんか。), and its three
+production prompts are `"Quando foi a última vez que você cortou o cabelo?"`,
+`"A escola começa às 8h10 da manhã."`, `"Amanhã começa um feriadão de cinco dias..."`.
 
-**Fix:** `fluency.items` must be filtered to the current stage's own scenario pool (still respecting
-`zero_new_tokens` by drawing from earlier units *of the same stage*, plus the stage's own unit 1 where needed),
-and `production[].sentence` likewise. If the generator cannot fill a slot from in-stage material, that is the
-signal that the stage's `say_now` is too thin, not a licence to borrow from the previous stage. Where a stage
-genuinely has no earlier in-stage material (unit 1), drop `fluency` for that unit rather than pairing a scenario
-prompt with off-scenario items; `arrival-01` already has `fluency: null` and that is the correct shape.
+**Why it is a defect.** `fluency` is declared `zero_new_tokens` and is the unit's only rehearsal of the
+situation out loud. At a stage boundary the recycled material comes from the previous stage by construction,
+so the prompt is a promise the unit provably cannot keep. `design/speaking_path.md` §2 makes "handles the
+situation out loud" the success test for the path.
+
+**Fix.** Seed unit 1's `fluency.items` and `production` from that unit's own `say_now` (they are selected
+before the fluency block is built, so the material exists), or, if the review-carry-over is deliberate, give
+unit 1 a distinct prompt that names the carried-over scenario: `"Antes de entrar no restaurante, revise o que
+você já sabe dizer na loja."`
 
 ---
 
-## F05 (S3) Written-register and literary sentences in a speaking-first path
+## S1-2. `speak:shopping` never teaches the learner to ask a price
 
-`design/speaking_path.md` positions these stages as things the learner says out loud. The following are all
-`say_now` (and several are `production` answer keys), and none of them is spoken Japanese.
+**Where.** All six units of `course/speak/shopping/`. Stage title `"Isto, aquilo, quanto custa"`.
+Fluency prompt (all six units): `"Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra."`
 
-**`health-04.say_now[4]`, also `health-05.production[1]` (`sent:tatoeba-145552`):**
+Zero of the 36 `say_now` phrases contain いくらですか, 円, ください, カード, レジ, 会計 or 袋.
 
-```
-心熱けれど肉体は弱し。   "O espírito está pronto, mas a carne é fraca."
-```
-
-This is **Classical Japanese** (bungo): 〜し is the classical terminal form of an adjective, 熱けれど is the
-classical concessive. It is a scripture quotation. It is tagged `level: n3` and drilled as a production target
-in a survival speaking module. No living Japanese speaker says this sentence.
-
-**`eating-06.say_now[0]`, also `getting_around-01.fluency` (`sent:tatoeba-191220`):**
+What the stage teaches instead:
 
 ```
-以下の通り注文いたします。  "Faço o pedido conforme o que segue abaixo."
+speak:shopping-01  sent:tatoeba-229742  あれはキジです。          "Aquilo é um faisão."
+speak:shopping-01  sent:tatoeba-229736  あれはテーブルです。      "Aquilo é uma mesa."
+speak:shopping-03  sent:tatoeba-160737  私はこれは自明のことと思う。  "Eu acho que isto é algo óbvio."
+speak:shopping-03  sent:tatoeba-166326  私たちはそれを公にしようと思う。 "Nós pretendemos tornar isso público."
+speak:shopping-05  sent:jec-1593        彼が郊外に家を買った       "Ele comprou uma casa no subúrbio."
+speak:shopping-06  sent:tatoeba-159849  私はその本を買ったとたんに後悔した。 "Assim que comprei aquele livro, me arrependi."
 ```
 
-以下の通り ("as follows below") is purchase-order and business-letter boilerplate. It is the first item of the
-final unit of "Comer e beber fora". A traveler ordering food says すみません、これください, not this.
+The stage's only usable till phrases in 36 slots are `sent:tatoeba-199061` なるべく安いほうがいいです。
+("De preferência, o mais barato possível.") and the pair それでいい？ / それでいいよ。
 
-**`eating-04.say_now[3]`, also `eating-05.production[2]` (`sent:tatoeba-13440729`):**
+**And the missing phrase is already in the bank.** `sent:tatoeba-5332` いくらですか？ "Quanto custa?" is used
+as a `gram:da-desu` drill example in `speak:eating-04`, `speak:getting_around-06`, `speak:lodging-05`,
+`speak:health-04` and `speak:health-05`. It appears in every stage except the one about prices.
 
-```
-注文を受けてから作るのが受注生産です。
-"Produção sob encomenda é fabricar só depois de receber o pedido."
-```
+**Why it is a defect.** `design/speaking_path.md` §2 makes "a learner who stops after stage 4 can still land,
+eat, buy and navigate" a hard constraint. A learner who completes stage 2 cannot buy anything.
 
-受注生産 is manufacturing/supply-chain jargon. The learner is drilled to *produce* a definition of build-to-order
-production while sitting in a restaurant.
-
-**`health-05.say_now[2]` (`sent:tatoeba-145398`):**
-
-```
-新しい市の病院を建てる計画が進行中である。
-"O plano de construir um novo hospital municipal está em andamento."
-```
-
-である体 plus 進行中 is newspaper and report register. It cannot be said aloud in a conversation.
-
-**`eating-04.say_now[0]`, also `eating-05` and `eating-06.fluency` (`sent:tatoeba-179391`):**
-
-```
-空気と人間との関係は水と魚との関係と同じだ。
-"A relação entre o ar e o ser humano é igual à relação entre a água e o peixe."
-```
-
-An aphorism, three times in one stage, in "Comer e beber fora".
-
-**`getting_around-06.say_now[1]` (`sent:tatoeba-141046`):**
-
-```
-選ぶべき道は自由か死だ。  "O caminho a se escolher é liberdade ou morte."
-```
-
-Pulled in to cover 道 in the "get where you want to go" stage. It is a political motto.
-
-**`eating-01.say_now[5]`, also `eating-02.production[0]` (`sent:tatoeba-171644`):**
-
-```
-今日は魚の食いが悪い。  "Hoje os peixes não estão mordendo a isca."
-```
-
-食いが悪い here is angling jargon. It was selected to cover 魚 in the eating-out stage, and then promoted to a
-production prompt: the learner is asked to say a fishing report while ordering dinner.
-
-**Fix:** add a hard register filter to the `say_now` selector. A sentence is eligible only if a private
-individual could plausibly say it aloud to another person in the stage's situation. Concretely, exclude
-`である` predicates, classical inflections (terminal 〜し, 〜けれど on adjectives), and sentences whose tokens
-carry technical/business `field` tags. The `coverage:*` tag should never be sufficient on its own to place a
-sentence in `say_now`; coverage-only sentences belong in reading input, not in a speaking slot.
+**Fix.** Hard-pin a survival set into `shopping-01`/`-02` before the frequency sort runs: いくらですか,
+これください, カードで払えますか, 袋いりません, もう少し安いのはありますか. `sent:tatoeba-5332` is already
+audited and available. Drop あれはキジです (a pheasant is not a shopping item) and the 自明 / 公にする pair.
 
 ---
 
-## F06 (S2) The `lodging` stage is a keyword dump of 部屋 sentences, mostly said *to* a guest, not *by* one
+## S1-3. `speak:lodging` is 25 of 36 slots from one contiguous Tatoeba example block, and most of it is not a guest speaking
 
-The stage promises check-in and problem-solving. What the 36 slots contain is nearly every Tatoeba sentence
-that has 部屋 in it, in whatever speaker role it happened to come in.
+**Where.** `course/speak/lodging/unit-01..06`. IDs `sent:tatoeba-84114` through `sent:tatoeba-84243`, a
+consecutive textbook run of "the room" sentences, fill 5 / 4 / 4 / 3 / 5 / 4 of the six `say_now` slots per
+unit (25 of 36). 34 of the 36 `say_now` sentences carry a `coverage` / `mined` / `jec` tag.
 
-Things a guest cannot say, all in `say_now`:
-
-```
-lodging-02  部屋の中に入ってください。          "Entre no quarto, por favor."
-lodging-02  部屋の中に一人づつ入ってください。  "Entrem no quarto um de cada vez, por favor."
-lodging-02  部屋にはノックなしで入らないでください。 "Por favor, não entre no quarto sem bater."
-lodging-04  部屋に入ったらドアを閉めなさい。    "Feche a porta quando entrar no quarto."
-lodging-05  部屋を出た後はドアを閉めなさい。    "Feche a porta depois de sair do quarto."
-lodging-04  部屋の窓は閉めておくように。        "Deixe as janelas do quarto fechadas."
-lodging-06  部屋の大きさは、これで十分ですか。  "O quarto é grande o suficiente para você?"
-```
-
-These are the receptionist's, the landlord's or the notice board's lines. 〜なさい and the bare 〜ように
-imperative are what an adult says to a child or a written notice says to a reader; a traveler using them on
-hotel staff is rude. Two of them (`tatoeba-84181`, `tatoeba-84203`) are `production` answer keys, so the course
-is actively training that.
-
-Pure narration, also in `say_now`:
+Phrases the unit teaches a hotel guest to say:
 
 ```
-lodging-01  部屋は真っ暗だった。          lodging-01  部屋には家具がない。
-lodging-01  彼は一日中ベッドで寝てばかりいた。  lodging-03  部屋には子ども達が少しいた。
-lodging-05  部屋には数人の学生がいた。    lodging-06  部屋には家具が４点あった。
-lodging-04  来年ここに新しいホテルが建てられるだろう。
+speak:lodging-06  sent:tatoeba-84223  部屋には家具が４点あった。      "Havia quatro móveis no quarto."
+speak:lodging-03  sent:tatoeba-84224  部屋には何人の少年がいますか。  "Quantos meninos estão no quarto?"
+speak:lodging-05  sent:tatoeba-84216  部屋には数人の学生がいた。      "Havia vários estudantes no quarto."
+speak:lodging-02  sent:tatoeba-84169  部屋の中に一人づつ入ってください。 "Entrem no quarto um de cada vez, por favor."
+speak:lodging-04  sent:tatoeba-84203  部屋に入ったらドアを閉めなさい。 "Feche a porta quando entrar no quarto."
+speak:lodging-05  sent:tatoeba-84181  部屋の窓は閉めておくように。    "Deixe as janelas do quarto fechadas."
+speak:lodging-04  sent:tatoeba-78606  来年ここに新しいホテルが建てられるだろう。 "Ano que vem devem construir um hotel novo aqui."
 ```
 
-`lodging-04.production[1]` asks the learner to produce **部屋には何人の少年がいますか** ("Quantos meninos estão
-no quarto?"). Set aside that it is useless at a hotel desk: an adult traveler asking a stranger how many boys
-are in a room is a sentence the course should not put in a learner's mouth.
+These are third-person descriptions and instructions given *to* a group (なさい is a command to a child or
+subordinate; 〜ように is a written notice register). A guest says none of them.
 
-`lodging-06.say_now[1]`: 部屋をいそいでかたづけてほしいの ("Quero que você arrume o quarto rápido."). The
-casual 〜てほしいの with the soft-casual sentence-final の, aimed at service staff, is a politeness hazard the
-unit does not flag.
+Meanwhile the stage's own declared seeds 泊まる, トイレ, 風呂 appear in **zero** phrases, and 鍵 appears once,
+in `sent:tatoeba-218592` これはその箱をあける鍵です。("Esta é a chave que abre essa caixa.") which is a box
+key, not a room key.
 
-Genuinely useful, and there are only three in the whole stage: 部屋の電気がつかない, 部屋を見せていただけますか,
-朝、シャワーを使ってもいいですか. There is no チェックインお願いします, no 予約した〇〇です, no
-部屋を変えてもらえますか, no お湯が出ません, no Wi-Fiのパスワードを教えてください.
+**Why it is a defect.** `design/speaking_path.md` §6 already records lodging's real-sentence yield as 18 and
+says "the builder emits short units and says so". The builder instead filled all 36 slots by relaxing what
+counts as a lodging sentence, which is exactly the papering-over §3.6 forbids.
 
-Minor data point inside the stage: `lodging-02.say_now[1]` uses **一人づつ**. Modern standard orthography is
-ずつ; づつ is a pre-1946 spelling. It should not be a model form in a `say_now` slot.
-
-**Fix:** select `lodging` `say_now` by speaker role, not by the 部屋 keyword. Guest-side check-in and complaint
-phrases first, then room description. Drop every 〜なさい / 〜ように instruction sentence from `say_now` and
-`production`.
+**Fix.** Do the §6 mining pass for `lodging` (`raw_tatoeba_sentence` holds 248,705 sentences) targeting
+チェックイン, 予約, 荷物, 部屋を変えて, お湯が出ない, Wi-Fi, 何時までですか. Until then, emit short units as
+the spec says. Independently: cap any single contiguous Tatoeba id-run at about 4 sentences per stage, which
+would have caught this block automatically.
 
 ---
 
-## F07 (S3) `arrival` drills the learner to produce the shop clerk's apology, four times
+## S1-4. `speak:health-01` teaches the learner to tell other people to see a doctor, and never to say what hurts
 
-`arrival-05.say_now` spends three of six slots on the same phrase, and all three carry an identical pt-BR
-translation, so nothing distinguishes them for the learner:
+**Where.** `speak:health-01`, all six `say_now`.
 
 ```
-sent:tatoeba-125944  長い事お待たせしてすみません。      "Desculpe por tê-lo feito esperar tanto tempo."
-sent:tatoeba-125913  長くお待たせしてすみませんでした。  "Desculpe por tê-lo feito esperar tanto tempo."
-sent:tatoeba-125967  長い間、お待たせしてすみませんでした。"Desculpe por tê-lo feito esperar tanto tempo."
+sent:tatoeba-190906  医者にかかるべきだ。          "Você devia consultar um médico."
+sent:tatoeba-110065  彼は医者として有名だ。        "Ele é famoso como médico."
+sent:tatoeba-110066  彼は医者として無能だ。        "Ele é incompetente como médico."
+sent:tatoeba-190902  医者に診てもらうべきですよ。  "Você deveria se consultar com um médico, viu?"
+sent:tatoeba-84479   父は私を医者にしたがっている。 "Meu pai quer fazer de mim um médico."
+sent:tatoeba-190894  医者に見てもらうべきだと思う。 "Acho que você deveria ser examinado por um médico."
 ```
 
-`arrival-06.say_now[2]` adds a fourth variant (こんなに長い間待たせてすみません, "Desculpe por tê-lo feito
-esperar por tanto tempo."), and `arrival-06.production[2]` makes `tatoeba-125967` a production target. Four of
-the twelve `say_now` slots in the stage's last two units are the same sentence.
+Three of the six are the same advice ("you should see a doctor") in three renderings, and all three are
+addressed *to someone else*. 彼は医者として無能だ teaches a beginner to call a doctor incompetent.
+父は私を医者にしたがっている is a career sentence.
 
-Beyond the redundancy, the phrase is the wrong side of the counter. **お待たせする** is 謙譲語 (お + stem +
-する): the humble form used by the person who provides a service toward the person who waited. It is what the
-shop, the restaurant and the hotel desk say to *you*. A traveler in "Chegar e cumprimentar" needs すみません,
-お待たせしました at most, and mostly needs to *recognise* お待たせしてすみません when it is said to them, not
-produce it.
+The self-report phrases the stage does own arrive only in units 5 and 6:
+`sent:tatoeba-198568` 喉がひりひりして、ちょっと熱があるんです。, `sent:tatoeba-10587764` お腹が痛いので今日は休みます。,
+`sent:tatoeba-121897` 熱が上がった。 The stage prompt from unit 1 onward is
+`"Você não está bem. Explique o que está sentindo e peça ajuda."`
 
-The pt-BR is a second problem. **"Desculpe por tê-lo feito esperar tanto tempo."** uses the proclitic-infinitive
-construction *tê-lo feito*, which is written, formal, near-Lusitanian pt-BR. No Brazilian says it aloud. Natural
-pt-BR for this apology is *"Desculpa a demora."* or *"Foi mal te deixar esperando tanto."* This is exactly the
-"never a literal mirror, register-aware, natural pt-BR" contract in `translation_style.md` §1 and §2, and it is
-being used as a `production.prompt_pt`, which means it is the text the learner reads and has to translate.
+**Why it is a defect.** This is the emergency stage. Ordering inside the stage is the one axis the builder
+fully controls (`design/speaking_path.md` §3.4), and it has put the least urgent material first.
 
-**Fix:** keep at most one お待たせ sentence, move it to a recognition-only slot, and re-translate as
-"Desculpa a demora." Free the three freed slots for arrival phrases the stage lacks (よろしくお願いします,
-はじめまして, 日本語がわかりません).
+**Fix.** Reorder: 痛いです / 熱があります / 気分が悪いです / 助けてください in `health-01`; move the 医者に…べき
+family to unit 4 or later and keep exactly one of the three; delete 彼は医者として無能だ and
+父は私を医者にしたがっている.
 
 ---
 
-## F08 (S3) Drill example sets contain rude, startling and off-domain sentences
+## S1-5. Classical and written-register sentences used as things to say out loud
 
-`drills[].examples` are shadowed and repeated aloud. These are what the selector chose by grammar tag alone.
-
-**痔があります ("Tenho hemorroidas.")** as the `gram:gp-8` (polite ます) example, in three units of three
-different stages: `getting_around-06`, `lodging-01`, `health-03`. Alongside どこに行きますか and 兄がいます.
-
-**`lodging-02`, `gram:te-kudasai` (`sent:tatoeba-74723`):**
+**Where.** Six items across four stages. The worst is a production prompt.
 
 ```
-「どいてください」「やんのか？あんちゃん」
-"Saia da frente, por favor." "Quer brigar, garotão?"
+speak:health-04 say_now / speak:health-05 production
+  sent:tatoeba-145552  心熱けれど肉体は弱し。   "O espírito está pronto, mas a carne é fraca."
 ```
 
-A street-confrontation exchange as the example of "please do X", in the hotel stage. やんのか is aggressive
-slang.
-
-**`shopping-01`, `gram:da-desu`,** i.e. the copula drill in the very first unit of stage 2, at
-`cumulative_known_vocab = 43`:
+That is classical Japanese (bungo): けれど after a bare noun-adjective stem, and 弱し, the classical terminal
+form. It is a scripture quotation, not a sentence any living speaker produces. It reached the health stage
+because the tokenizer split 熱 out of 熱けれど and 熱 is a health seed (`surf: 心 熱 けれど 肉体 は 弱し`).
+`speak:health-05` then asks the learner to say it aloud from the pt prompt.
 
 ```
-彼がばかだなんてとんでもない。      "Que ele é bobo?! De jeito nenhum."
-どいつもこいつもばかばっかりだ。    "Não tem um que preste, é tudo idiota."
+speak:eating-06 say_now (slot 1)
+  sent:tatoeba-191220  以下の通り注文いたします。 "Faço o pedido conforme o que segue abaixo."
 ```
+A business-letter opener (以下の通り + いたします). Nobody says this in a restaurant; it is written on a
+purchase order.
 
-どいつもこいつも is derogatory. Two of the three examples of "how to say X is Y" are insults.
+```
+speak:eating-04 say_now / speak:eating-05 production
+  sent:tatoeba-13440729  注文を受けてから作るのが受注生産です。
+                         "Produção sob encomenda é fabricar só depois de receber o pedido."
+```
+A manufacturing-glossary definition, selected because it contains 注文.
 
-**こいつは悪いウサギだった ("Esse aí era um coelho mau.")** as a `gram:gp-32` example in four units
-(`arrival-05`, `eating-06`, `lodging-01`, `lodging-03`). こいつ is a rough pronoun; the sentence is also
-meaningless out of its source context.
+```
+speak:health-05  sent:tatoeba-145398  新しい市の病院を建てる計画が進行中である。
+                 "O plano de construir um novo hospital municipal está em andamento."
+```
+である is newspaper register, explicitly not spoken.
 
-**`health-05`, `gram:gp-12` (がある):** 富には翼がある ("A riqueza tem asas.", a proverb, n1) and
-嵐のきざしがある ("Há sinais de tempestade.", n1) as beginner existence-verb examples.
+```
+speak:lodging-05 say_now / production
+  sent:tatoeba-84181  部屋の窓は閉めておくように。  "Deixe as janelas do quarto fechadas."
+```
+〜ように as a bare directive is notice-board register.
 
-**`getting_around-06` and `lodging-05`, `gram:da-desu`:** トピずれです。すみません。 ("É off-topic (fora do
-assunto). Desculpe.") Internet-forum jargon as a です model.
+```
+speak:getting_around-04 say_now / speak:getting_around-05 production
+  sent:tatoeba-4939  「以前にどこかで会ったことがありませんか」とその学生はたずねた。
+                     "\"Será que já não nos encontramos em algum lugar antes?\", perguntou o estudante."
+```
+Narrative prose with a reporting verb. The production prompt is 79 characters of reported speech, which the
+learner is asked to say aloud.
 
-**Fix:** the drill selector needs the same register filter as F05, plus an explicit block list for
-pejorative pronouns (こいつ / どいつ / お前) and for body/medical content outside the health stage.
+**Why it is a defect.** `design/speaking_path.md` §1 sets the success test as "handles the situation out
+loud", and §3.5 sorts spoken registers first. None of these six is speakable material.
+
+**Fix.** Add a register filter to the selection pass that rejects a sentence whose final predicate is
+`である`, a classical terminal (`〜し` / `〜けれど` on a stem), a bare 〜ように directive, or a quotation closed
+by a reporting verb (`」と…た`). Replace the eating slots from the same patterns: for 注文, use
+`注文をお願いします` / `これをください` if present, otherwise mine them.
 
 ---
 
-## F09 (S3) Drill examples repeat to the point that "drill" means nothing
+## S1-6. Offensive, insulting and unusable sentences used as drill and production material
 
-Counting distinct sentences used as `drills[].examples` across the 291 drill-example slots in my six stages:
-
-```
-x9  sent:tatoeba-4856   家に来ませんか。      "Não quer vir até a minha casa?"
-x8  sent:tatoeba-83623  聞こえませんよ。      "Não dá para ouvir, viu."
-x7  sent:tatoeba-5057   ありがとう、それだけだよ。 "Obrigado, é só isso."
-x7  sent:tatoeba-77812  力が出ません。        "Não tenho forças."
-x5  sent:tatoeba-5332   いくらですか？        "Quanto custa?"
-x4  sent:tatoeba-4714   こいつは悪いウサギだった。
-x4  sent:tatoeba-85319  病気だったんだよ。
-x4  sent:tatoeba-83696  雰囲気がいやだった。
-```
-
-Whole example triples repeat verbatim across units and stages:
+**Where.** Five distinct sentences, several reused across stages.
 
 ```
-gram:gp-149  [力が出ません。 家に来ませんか。 聞こえませんよ。]
-             getting_around-04, getting_around-05, lodging-06, health-06
-gram:da-desu [いくらですか？ トピずれです。すみません。 ありがとう、それだけだよ。]
-             getting_around-06, lodging-05, health-04, health-05
-gram:gp-32   [こいつは悪いウサギだった。 病気だったんだよ。 雰囲気がいやだった。]
-             eating-06, lodging-01, lodging-03
-gram:masen-ka[お茶を飲みませんか 一緒に昼ご飯を食べませんか 今からドライブに行きませんか。]
-             getting_around-04, getting_around-05, lodging-03
+speak:shopping-01  drill gram:da-desu
+  sent:tatoeba-75188  どいつもこいつもばかばっかりだ。
+                      "Não tem um que preste, é tudo idiota."   (bank EN: "I'm surrounded by fuckwits!")
 ```
+Unit 1 of stage 2, alongside `sent:tatoeba-120747` 彼がばかだなんてとんでもない。 in the same three-item drill.
 
-`getting_around-04` and `getting_around-05` are consecutive units and share two identical drill blocks. A
-learner meets 家に来ませんか nine times in six stages while never meeting a single check-in or price phrase
-(F02, F06).
+```
+speak:lodging-02  drill gram:te-kudasai
+  sent:tatoeba-74723  「どいてください」「やんのか？あんちゃん」
+                      "\"Saia da frente, por favor.\" \"Quer brigar, garotão?\""
+```
+A street-fight taunt used to teach 〜てください in a hotel unit.
 
-**Fix:** deduplicate at build time. A pattern re-drilled in a later unit should draw fresh examples, and
-examples should be preferred from the current stage's own domain.
+```
+speak:health-05 say_now / speak:health-06 production
+  sent:tatoeba-5147343  お前は脳の半分があったら，危ない!
+                        "Se você tivesse metade de um cérebro, seria perigoso!"
+```
+An insult built on お前, asked of the learner as a production item. The Japanese is also broken (a literal
+calque of "if you had half a brain"; natural Japanese would not use 〜があったら here), and it carries a
+full-width `，` mid-sentence.
+
+```
+speak:eating-04  drill gram:totemo
+  sent:tatoeba-4947  ドイツ人はとてもずる賢い。  "Os alemães são muito astutos."
+```
+A national stereotype presented as a とても example, next to `sent:tatoeba-5074` 彼はとてもセクシーだ。
+
+```
+speak:getting_around-06, speak:lodging-01, speak:health-03  drill gram:gp-8 / gram:ga-imasu
+  sent:tatoeba-150175  痔があります。  "Tenho hemorroidas."
+```
+Used three times as an ある/いる example, including inside a navigation unit.
+
+**Why it is a defect.** These are drill and production items, so the learner is asked to repeat and produce
+them. Nothing in the pipeline screens Tatoeba's content, and Tatoeba contains this material by design.
+
+**Fix.** Add a denylist pass over drill/production candidates before the frequency sort: slurs and insults
+(ばか, あほ, お前 as a second person, けんか taunts), national and ethnic generalisations, and shock-value
+medical items. A ~40-entry stoplist plus a check on the bank's own EN field would catch all five.
 
 ---
 
-## F10 (S3) Declared stage bands do not match the level of the phrases
+## S2-7. Seed matching keeps putting the wrong scenario's sentences in a stage
 
-`course/speak/course.json` declares an `approx_band` per stage. Actual distribution of `say_now` levels
-(36 slots per stage, from `bank.json.level`):
+**Where.** All six stages. `scripts/export/build_speaking_path.py` matches a seed against a token
+surface or lemma exactly, with a substring fallback for seeds of 4+ characters. The header comment records
+that raw substring matching was already fixed once (夕食はいりません in greetings via はい). Exact token
+matching does not fix it, because the offending forms are whole tokens.
 
-| Stage | declared band | n5 | n4 | n3 | n2 | n1 | at or above n3 |
-|---|---|---|---|---|---|---|---|
-| arrival | pre-n5 | 13 | 15 | 8 | 0 | 0 | 8/36 (22%) |
-| shopping | pre-n5/n5 | 4 | 25 | 4 | 1 | 2 | 7/36 (19%) |
-| eating | n5 | 3 | 18 | 10 | 1 | 4 | 15/36 (42%) |
-| getting_around | n5 | 2 | 16 | 14 | 1 | 3 | 18/36 (50%) |
-| **lodging** | **n5** | 0 | 3 | 30 | 2 | 1 | **33/36 (92%)** |
-| **health** | **n4** | 0 | 11 | 11 | 5 | 9 | **25/36 (69%)** |
+Verified token evidence:
 
-`lodging` is declared n5 and is 92% n3-or-harder. `health` is declared n4 and puts 14 n2/n1 sentences in front
-of the learner, including 心熱けれど肉体は弱し (F05) and the お前 insult (F01).
-
-Concrete jumps inside a stage, not just across it. `arrival-03` is the third unit of the pre-n5 opening stage,
-at `cumulative_known_vocab = 8`, and its `say_now` includes:
-
-```
-sent:tatoeba-103106  彼は赤いズボンをはいていた。  n3, tags coverage:n5
-sent:tatoeba-229458  いいえ、けっこうです。見ているだけですから。  n5
-```
-
-`arrival-04`, at `cumulative_known_vocab = 19`, opens with いいえ、知らないです。いつか覚えなければ。 (n3) and
-closes with 今晩お会いできなくてすみません。 (n3, 謙譲語 お会いする + potential + negative て-form).
-
-**Fix:** either the band labels or the selection has to move. Given F02/F03/F06, the selection is what should
-move; the band labels are the honest description of what a "fala primeiro" path should contain.
-
----
-
-## F11 (S3) Five units introduce a `words[]` entry whose sense contradicts the sentence it came from
-
-In each case the bank's own token gloss for that sentence disagrees with the vocab record the unit teaches.
-
-| Unit | `words[]` entry taught | Sentence | Token in that sentence |
+| Stage | Seed | Sentence | Why it is wrong |
 |---|---|---|---|
-| `eating-05` | `vocab:1132570` 米/**メートル** = "metro (unidade de comprimento)" | 旅行中はほとんど**米**は食べられなかった | 米 / **こめ** / gloss "arroz" |
-| `eating-06` | `vocab:1472630` 杯/**さかずき** = "cálice de saquê, taça para bebidas alcoólicas" | あの頃はコーヒー１**杯**が２００円だった | 杯 / **ぱい** / gloss "xícara (contador de copos/xícaras)" |
-| `eating-03` | `vocab:1502840` 分/**ふん** = "minuto" | 僕の**分**も入れてくれないかな | 分 / **ぶん** / gloss "porção / parte" |
-| `shopping-06` | `vocab:1176240` 園/**その** = "jardim, parque" | 私は**その**本を買ったとたんに後悔した | その / adnominal / gloss "aquele / esse" |
-| `shopping-05` | `vocab:2020680` 時/**じ** = "hora (sufixo), ...horas" | それが高1の**時**だから | 時 / **とき** / gloss "época; tempo" |
+| arrival | はい | `sent:tatoeba-103106` 彼は赤いズボンをはいていた。 "Ele estava usando uma calça vermelha." | surface tokens `彼 は 赤い ズボン を はい て い た`; はい is 履く's te-form stem, not the answer はい |
+| arrival | はい | `sent:tatoeba-214119` スリッパをはいてください。 | same, `スリッパ を はい て ください` |
+| arrival | はい | `sent:tatoeba-204778` それより他の靴をはいてみたいのですが。 | same. Three footwear/trousers sentences in the greetings stage |
+| arrival | お願いします | `sent:tatoeba-78964` 予約係をお願いします。 "O setor de reservas, por favor." | 4+ char substring fallback; this is a hotel phone-transfer line, it belongs in `lodging` |
+| shopping | いくら | `sent:tatoeba-229178` いくらお礼を言っても言い切れない。 "Por mais que eu agradeça, nunca será o bastante." | the concessive いくら…ても, not the price いくら |
+| health | 熱 | `sent:tatoeba-145552` 心熱けれど肉体は弱し。 | 熱 split out of classical 熱けれど (see S1-5) |
+| getting_around | 近く | `sent:jec-0673` あっという間に４０度近くまで熱が出た "Num piscar de olhos, a febre subiu para quase 40 graus." | 近く = "approximately", and this is a `health` sentence |
+| getting_around | 近く | `sent:tatoeba-141381` 川の近くにテントを張った。 "Armamos a barraca perto do rio." | camping, not navigation |
+| getting_around | 道 | `sent:tatoeba-141046` 選ぶべき道は自由か死だ。 "O caminho a se escolher é liberdade ou morte." | 道 metaphorical; a political slogan in the wayfinding stage |
+| getting_around | 左 | `sent:tatoeba-10263746` 左の足が痛いです。 "Meu pé esquerdo está doendo." | a `health` sentence, and it opens the last navigation unit |
+| eating | 水 / 魚 | `sent:tatoeba-179391` 空気と人間との関係は水と魚との関係と同じだ。 | a proverb about air and man |
+| eating | 魚 | `sent:tatoeba-171644` 今日は魚の食いが悪い。 "Hoje os peixes não estão mordendo a isca." | a fishing idiom, and it is a `speak:eating-02` production prompt and a `speak:eating-03` fluency item under the restaurant prompt |
+| eating | 水 | `sent:tatoeba-137747` 大きなカヌーが水をきって進んでいた。 "Uma grande canoa avançava cortando a água." | a canoe, in a restaurant stage; production prompt in `speak:eating-06` |
+| eating | 食べる | `sent:tatoeba-182409` 救出されてはじめて、彼女は食べた。 "Só depois de ser resgatada é que ela comeu." | the **first phrase of the whole eating stage** is an N1 passive rescue narrative |
 
-The `shopping-06` case is the clearest: the sentence contains the demonstrative その and the unit introduces the
-noun 園 ("garden"). The `eating-05` case is the most damaging in context: in the eating stage, the learner is
-taught that 米 means "metre".
+**Fix.** Two cheap guards, both mechanical:
+1. Reject a seed match when the matched token's **lemma** is not the seed's lemma. `はい`/`履く`,
+   `熱`/`熱し` and `近く`/`近い`(approx.) all fail this test and disappear.
+2. Per-stage frame stoplist for idiom frames that swallow a seed: `いくら…ても`, `〜の食いが悪い`,
+   `〜との関係は…と同じ`, metaphorical 道 (`選ぶべき道`, `道が開ける`).
 
-These are homograph collisions from the vocab linker, and every one of them lands in a unit's "new words" list,
-which is the surface the learner studies.
-
-**Fix:** the `words[]` builder should resolve through the token's `reading`, not through the surface form.
-All five sentences already carry the correct reading and gloss on the token, so the data to fix this is present.
-
----
-
-## F12 (S3) Several `production.prompt_pt` strings are literary or technical pt-BR, not something anyone would be asked to say
-
-The prompt is the text the learner reads and renders into Japanese, so it has to be plain spoken pt-BR.
-
-```
-getting_around-01  "Ele levava água com afinco até a boca dela."
-eating-06          "Uma grande canoa avançava cortando a água."
-eating-05          "Produção sob encomenda é fabricar só depois de receber o pedido."
-health-05          "O espírito está pronto, mas a carne é fraca."
-arrival-06         "Desculpe por tê-lo feito esperar tanto tempo."
-health-05          "\"Como você está se sentindo?\", ele perguntou."
-getting_around-05  "\"Será que já não nos encontramos em algum lugar antes?\", perguntou o estudante."
-```
-
-"com afinco" is a stiff literary adverbial no Brazilian uses in speech. "avançava cortando a água" is narrative
-prose. The last two are *reported speech with a narrative tag*: asking a learner in a speaking course to produce
-「気分はどうですか」と彼は尋ねた means producing the quotation frame と…尋ねた, which is a written-narration
-device, not something said aloud. The useful half of those two sentences (気分はどうですか /
-以前にどこかで会ったことがありませんか) is buried inside the quotation.
-
-**Fix:** production targets should be the bare utterance. Where a bank sentence wraps a useful utterance in a
-narrative frame, either exclude it or add an unwrapped generated variant.
+The 予約係 case needs a third: a 4+ char substring fallback should still require the match to be a token
+boundary, otherwise お願いします matches inside any polite request.
 
 ---
 
-## F13 (S4) `arrival` violates the em-dash prohibition, and two units carry identical or self-cancelling prompts
+## S2-8. `speak:arrival` spends 8 of its 36 phrase slots on punctuation-only duplicates, and the duplication propagates into drills and production
 
-**Em dash.** `translation_style.md` §4: *"Never use the — (em dash) character anywhere in authored text."*
-One authored string breaks it, replicated across five units (`arrival-02` through `arrival-06`):
-
-```
-fluency.prompt_pt: "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler."
-```
-
-The other five stages' fluency prompts are clean. Fix: replace ` — ` with a comma or parentheses:
-`"...e peça licença, em voz alta, sem ler."`
-
-**Identical prompt twice in one production list.** `arrival-03.production` contains:
+**Where.** Eight pairs where the two `say_now` entries are the same sentence differing only in final
+punctuation:
 
 ```
-[0] prompt_pt "Bom dia!"  -> answer_key おはようございます！
-[1] prompt_pt "Bom dia!"  -> answer_key おはようございます。
+speak:arrival-01  おはよう          sent:tatoeba-1598216 / sent:tatoeba-3553332
+speak:arrival-01  こんにちは        sent:tatoeba-373351  / sent:tatoeba-3480287
+speak:arrival-01  ありがとう        sent:tatoeba-1532832 / sent:tatoeba-1531875
+speak:arrival-02  さようなら        sent:tatoeba-426889  / sent:tatoeba-640569
+speak:arrival-02  すみません        sent:tatoeba-408301  / sent:tatoeba-13174949
+speak:arrival-02  おはようございます sent:tatoeba-335372  / sent:tatoeba-1576172
+speak:arrival-03  ありがとうございます sent:tatoeba-4971  / sent:tatoeba-9559301
+speak:arrival-04  聞いてくれてありがとう sent:tatoeba-10355885 / sent:tatoeba-11858059
 ```
 
-The same prompt with two different answer keys. Nothing in the prompt tells the learner which is wanted, and the
-`accepted_variants` of item [0] already include the unpunctuated form, so the two items are not separable. The
-same prompt is also ambiguous against おはよう, which `arrival-01` taught as "Bom dia."
+`speak:arrival-01` and `-02` therefore teach three expressions each, not six. Downstream:
 
-Related: `arrival-02.production` is "Obrigado!" / "Obrigado." as two separate items, differing only in final
-punctuation.
+- **`speak:arrival-03` has two production items with the identical prompt** `"Bom dia!"`, answer keys
+  おはようございます！ and おはようございます。, and overlapping `accepted_variants` (both accept the bare
+  おはようございます). The two items are indistinguishable to the learner and to the grader.
+- **`speak:arrival-05` production items 2 and 3 are the same sentence**, 聞いてくれてありがとう！ and
+  聞いてくれてありがとう。
+- **`speak:arrival-05` drill `gram:gp-108` lists that same pair** as two of its three examples.
+- **`speak:getting_around-04` drill `gram:ta-tokoro`** lists `sent:tatoeba-11545589` 今着いたところよ。 and
+  `sent:tatoeba-12440070` 今、着いたところよ。 (one comma apart) as two of three examples.
+- `speak:getting_around-03` `say_now` opens with two "I left my umbrella on the train" sentences,
+  `sent:tatoeba-4786026` and `sent:tatoeba-10899657`.
+- `speak:arrival-05` carries three renderings of the same apology (`sent:tatoeba-125944`,
+  `sent:tatoeba-125913`, `sent:tatoeba-125967`) with **one identical pt string**, and `speak:arrival-06` adds
+  a fourth (`sent:tatoeba-231454`).
 
-**Fix:** deduplicate `production` on `prompt_pt` at build time. Where two register variants of a phrase must be
-distinguished (おはよう vs おはようございます), the prompt has to carry the register cue, e.g.
-"Bom dia! (formal, para um desconhecido)".
+**Why it is a defect.** In a speaking path the difference between おはよう。 and おはよう！ does not exist:
+it is punctuation on a written source, inaudible when spoken and unproducible when the learner answers aloud.
+Eight of arrival's 36 slots buy nothing.
+
+**Fix.** Dedupe on `jp.rstrip("。！？!?、")` before filling `say_now`, `drills[].examples` and `production`, and
+spend the freed slots on the missing arrival material (はじめまして, 失礼します, お世話になります, よろしく
+お願いします are all seeds that never appear).
 
 ---
 
-## F14 (S3) Same Japanese phrase, two different pt-BR translations shown side by side
+## S2-9. The same set expression gets contradictory pt-BR inside one unit
 
-Within a single unit, sentences that differ only in final punctuation get different pt-BR, so the learner sees
-one phrase claiming two meanings:
+**Where.** `speak:arrival-01`, `speak:arrival-02`.
 
-| Unit | Japanese | pt-BR shown |
-|---|---|---|
-| `arrival-01` | こんにちは | "Boa tarde." and "Olá!" |
-| `arrival-02` | さようなら | "Adeus!" and "Até logo." |
-| `arrival-02` | すみません | "Desculpe." and "Com licença!" |
-| `arrival-01` | おはよう | "Bom dia." and "Bom dia!" |
-| `arrival-01` | ありがとう | "Obrigado." and "Obrigado!" |
+```
+speak:arrival-01  sent:tatoeba-373351   こんにちは。   "Boa tarde."
+speak:arrival-01  sent:tatoeba-3480287  こんにちは！   "Olá!"
 
-For こんにちは and すみません the two glosses are both correct and the split is arguably useful, but presenting
-them as two undifferentiated `say_now` entries teaches nothing about *when* each applies.
+speak:arrival-02  sent:tatoeba-426889   さようなら！   "Adeus!"
+speak:arrival-02  sent:tatoeba-640569   さようなら。   "Até logo."
+```
 
-**さようなら → "Até logo." is a mistranslation.** さようなら carries finality; Japanese speakers do not use it
-for ordinary daily partings. "Até logo" in pt-BR means the opposite: see you shortly. The pair also contradicts
-itself within one unit ("Adeus!" vs "Até logo."). A traveler taught さようなら as the default goodbye will use it
-wrongly; the phrases they actually need (じゃあね, また, 失礼します) are absent from the stage.
+**Why it is a defect.** The learner meets one Japanese word twice in one sitting with two pt readings and no
+note explaining that they are the same word. The さようなら pair is worse than cosmetic: in pt-BR "Adeus"
+reads as a final farewell and "Até logo" as see-you-soon, so the two cards teach opposite things about when
+to use it (the truth is closer to "Adeus", which makes "Até logo" the wrong one).
 
-**Fix:** collapse each punctuation-only pair into one `say_now` entry with one translation. Re-translate
-`sent:tatoeba-640569` (さようなら。) as "Adeus." and add じゃあね / また明日 to `arrival`.
+The すみません pair in the same stage (`sent:tatoeba-408301` "Desculpe." / `sent:tatoeba-13174949`
+"Com licença!") is the one case where the two glosses are both correct and worth teaching, but nothing in the
+unit says so, so it reads as the same inconsistency.
+
+**Fix.** One canonical pt per set expression across the path (こんにちは → "Olá.", さようなら → "Adeus."),
+and where an expression genuinely has two uses, teach the second as an explicit note on the single card
+rather than as a second phrase.
 
 ---
 
-## F15 (S3) Four `arrival` slots are shopping or telephone phrases
+## S2-10. 44 of 105 production items accept a misspelled kana answer and reject the correct one
 
-`arrival` is "Chegar e cumprimentar", `approx_band` pre-n5. It contains:
+**Where.** Across all six stages. The all-kana entries in `accepted_variants` are generated from the
+sentence's phonetic `kana` field, so the particle は is spelled わ and へ is spelled え.
 
 ```
-arrival-03  いいえ、けっこうです。見ているだけですから。 "Não, obrigado. É que estou só olhando."
-arrival-06  それより他の靴をはいてみたいのですが。       "Eu gostaria de experimentar outros sapatos..."
-arrival-06  予約係をお願いします。                      "O setor de reservas, por favor."
-arrival-03  彼は赤いズボンをはいていた。                "Ele estava usando uma calça vermelha."
+speak:eating-01
+  answer_key:         ぼくはこれだけしか知らない。
+  accepted_variants:  ["ぼくはこれだけしか知らない", "ぼくはこれだけしか知らない。",
+                       "ぼくわこれだけしかしらない", "ぼくわこれだけしかしらない。"]
 ```
 
-The first two are shop-browsing and shoe-fitting lines that belong in `shopping` (which, per F02, badly needs
-them and instead gets 予約係をお願いします and それより他の靴… as its unit-01 production carryover). 予約係を
-お願いします is a telephone transfer request ("reservations desk, please") and 予約係 is dated office
-vocabulary. 彼は赤いズボンをはいていた is pure vocab coverage for 赤い/ズボン and has no arrival function at
-all.
+The correct kana spelling ぼくはこれだけしかしらない is **not** accepted; the incorrect ぼくわ… is.
+`speak:getting_around-03` is the compound case, accepting `えきえわどのようにいけばよいですか`
+(both は→わ and へ→え) for 駅へはどのように行けばよいですか。
 
-**Fix:** move the two shopping lines to `shopping-01`. Drop the calça sentence and the 予約係 line.
+Full count: 44 of 105 production items. Worst-affected stages: `lodging` 10, `getting_around` 8, `eating` 6.
 
-Provenance note, not a content judgement but visible from the same records: `sent:tatoeba-78964` and a further
-17 sentences used in these six stages carry `tags: ["mined", "stage:"]` with an empty `stage:` value and a bare
-`jp_source: "tatoeba"` with no ID. Whoever owns provenance QA should see whether that truncated tag indicates an
-incomplete mining record.
+**Why it is a defect.** A beginner who has correctly learned that the topic particle is written は and
+pronounced *wa* types the right answer and is marked wrong. A beginner who copies the accepted form learns to
+spell particles phonetically, which is the single most common kana error and the hardest to unlearn.
+
+**Fix.** Build the kana variant from an orthographic-kana source rather than `sentence.kana` (which is
+correctly phonetic and should stay that way), or post-process the variant by restoring は/へ/を at every token
+position whose `pos` is `particle`. The token data needed is already in the bank.
 
 ---
 
-## F16 (S4, flagged with a caveat) `accepted_variants` kana forms spell the topic particle は as わ
+## S3-11. "Desculpe por tê-lo feito esperar tanto tempo" is written pt-BR, and the learner says it four times
 
-37 of the 105 `production` items in these six stages offer kana `accepted_variants` that render the topic
-particle は phonetically as わ, and offer no orthographically correct kana alternative:
+**Where.**
 
 ```
-shopping-02  answer_key これはあれよりも小さい。
-             accepted_variants kana: これわあれよりもちいさい / これわあれよりもちいさい。
-shopping-04  answer_key 私たちはそれを公にしようと思う。
-             accepted_variants kana: わたしたちわそれをおおやけにしようとおもう
-eating-04    answer_key 私は友達とビールを飲みに行った。
-             accepted_variants kana: わたしわともだちとびーるをのみにいった
+speak:arrival-05  sent:tatoeba-125944  長い事お待たせしてすみません。      "Desculpe por tê-lo feito esperar tanto tempo."
+speak:arrival-05  sent:tatoeba-125913  長くお待たせしてすみませんでした。  "Desculpe por tê-lo feito esperar tanto tempo."
+speak:arrival-05  sent:tatoeba-125967  長い間、お待たせしてすみませんでした。 "Desculpe por tê-lo feito esperar tanto tempo."
+speak:arrival-06  sent:tatoeba-231454  こんなに長い間待たせてすみません。   "Desculpe por tê-lo feito esperar por tanto tempo."
 ```
 
-これわ is not valid Japanese orthography. A learner who types the correct kana これは matches none of the four
-variants.
+`sent:tatoeba-125967` is also the third production prompt of `speak:arrival-06`.
 
-**Caveat:** this follows mechanically from the bank's `kana` field, which is phonetic throughout
-(あのみせわやすいってきいた for あの店は安いって聞いた), so it is probably a deliberate reading field rather
-than a spelling field. If the grader normalises は/わ before comparing, this is a non-issue. I could not
-determine that from the data, so I am flagging it rather than asserting it: if the grader does a literal string
-match, every kana-typed answer to these 37 items is scored wrong. Worth one check by whoever owns the grading
-path.
+**Why it is a defect.** The enclitic "tê-lo" plus the periphrastic "feito esperar" is formal written
+Portuguese; no Brazilian says it out loud. `design/translation_style.md` §2 requires the pt register to mirror
+the Japanese, and the Japanese here (お待たせしてすみません) is ordinary spoken politeness, not written
+formality. §1 keeps structural mirrors in `translation_literal`, not `translation`.
+
+**Fix.** Keep one of the four Japanese variants in the stage and translate it
+`"Desculpa a demora."` (or `"Desculpa te deixar esperando tanto."` where the length matters). Move the
+particle-by-particle version to `translation_literal`.
 
 ---
 
-## F17 (S4) Two `production` items force a male-gendered pronoun with no alternative
-
-`eating-01.production[0]` and `[1]`:
+## S3-12. Other over-literal or unspeakable pt in learner-facing prompts
 
 ```
-prompt_pt "Eu só sei isto."        answer_key ぼくはこれだけしか知らない。
-prompt_pt "Eu preciso de dinheiro." answer_key ぼくはお金がいる。
-accepted_variants: only ぼく forms
+speak:eating-06  drill gram:itashimasu  sent:tatoeba-10982402  お知らせいたします。  "Eu o(a) informarei."
+```
+Synthetic future plus the "o(a)" clitic is written pt. Natural pt-BR: `"Eu aviso."` / `"Vou te avisar."`
+
+```
+speak:eating-03  sent:tatoeba-179074  君が飲むついでに、僕の分も入れてくれないかな。
+                 "Quando você for tomar, será que aproveita e faz a minha porção também?"
+```
+"faz a minha porção" is not pt-BR. 分 here is "one for me", and 入れる with a drink is "pour/brew".
+Natural: `"já faz uma pra mim também?"`
+
+```
+speak:getting_around-02  production prompt_pt:  "De onde (ele/isso) parte?"
+                         (sent:tatoeba-201017  どこから出るんですか。)
+```
+A translator's disambiguation parenthesis used as the text the learner reads and speaks. Either commit to
+`"De onde ele sai?"` or state the referent in the prompt.
+
+```
+speak:shopping-01  production prompt_pt:  "Eu gostaria de experimentar outros sapatos diferentes desses."
+                   (sent:tatoeba-204778  それより他の靴をはいてみたいのですが。)
+```
+"outros ... diferentes desses" says the same thing twice. Natural: `"Queria experimentar outros sapatos, não
+esses."`
+
+```
+speak:arrival-03/-05  sent:tatoeba-4971 / sent:tatoeba-9559301  "Muito obrigado(a)!" / "Muito obrigado(a)."
+```
+The inline "(a)" is unspeakable in a path whose whole point is saying the line out loud. Pick one form and
+note the other once.
+
+**Fix.** Re-author the five strings above; all are `translation` fields on Layer-B records, so the fix is
+local and the JP is untouched.
+
+---
+
+## S3-13. Em dash in every `arrival` fluency prompt, against the project's explicit ban
+
+**Where.** `speak:arrival-02` through `speak:arrival-06`, 5 occurrences of the same string:
+
+```
+"Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler."
 ```
 
-**ぼく** is glossed correctly in `corpus/vocab` as "eu (informal, masculino)", but the pt-BR prompt is the
-neutral "Eu", and no 私 variant is accepted. A female learner producing 私はお金がいる is marked wrong for
-giving the more appropriate answer. (Both sentences are also off-domain for the eating stage, per F04.)
+`design/translation_style.md` §4: "**Never use the — (em dash) character** anywhere in authored text". The
+other five stages' prompts are clean, so this is a single authored string to fix.
 
-**Fix:** add 私/わたし forms to `accepted_variants` wherever the answer key uses a gendered pronoun that the
-pt-BR prompt does not specify, or prefer bank sentences with 私.
+**Fix.** `"Você acabou de desembarcar. Cumprimente, agradeça e peça licença, em voz alta e sem ler."`
+
+---
+
+## S3-14. `speak:arrival-01` asks the learner to produce nothing, and four sentences are stale or wrong for the setting
+
+**`speak:arrival-01`** has `production: []` and an empty `fluency` (`prompt_pt: null`, no items,
+`seconds_target: null`). Unit 1 of a speaking-first path contains no speaking task. `speak:arrival-02`'s
+fluency then runs 3 items / 24 s against 6 items / 48 s everywhere else. The material for a production item
+already exists in the unit (おはよう, こんにちは, ありがとう are all `chunk_phrases`).
+
+**Four sentences that should be replaced outright:**
+
+```
+speak:getting_around-05  sent:tatoeba-234850  ＦＡＸで地図を送っていただけませんか。
+                         "Você poderia me enviar o mapa por fax?"
+```
+Fax, in a travel course. Also reused in `speak:getting_around-06` and `speak:lodging-01` fluency.
+The pattern (`gram:te-itadakemasen-ka`) is well served by the unit's own drill examples
+少し待っていただけませんか / 電話を貸していただけませんか.
+
+```
+speak:health-03 say_now / speak:health-04 production  sent:tatoeba-85328  病院まで１０マイルもある。
+                         "Daqui até o hospital são nada menos que dez milhas."
+```
+Miles, for a Brazilian learner in Japan. Both countries are metric.
+
+```
+speak:getting_around-03 say_now / speak:getting_around-04 production
+  sent:tatoeba-75827  二本の道はそこでクロスしている。  "As duas estradas se cruzam ali."
+```
+クロスする for "intersect" is not idiomatic; 交差している is. The path teaches 交差点 two units later
+(`speak:getting_around-05`, `sent:tatoeba-222010`), so it contradicts itself.
+
+```
+speak:health-04  sent:tatoeba-74743  右よ～し、左よ～し・・・、よし。大丈夫。
+                 "Direita, liberado~; esquerda, liberado~...; pronto. Tudo certo."
+```
+A Japanese railway/driver pointing-and-calling safety chant, used to teach 大丈夫. Unusable as a phrase, and
+the "~" tildes are carried straight into the pt.
+
+**Fix.** Give `arrival-01` three production items from its own chunk phrases and a fluency block matching
+`arrival-02`'s. Drop the four sentences above and refill from the same grammar points.
+
+---
+
+## Notable non-findings
+
+Recorded so a later pass does not re-litigate them.
+
+- **Provenance is clean.** 0 of 216 `say_now` sentences are `ai_generated`. The `INDEX.md` claim of
+  "432 real / 0 generated" holds for this slice. AI-generated sentences appear only as drill examples
+  (`gram:masen-ka`, `gram:kana`, `gram:gp-115` and others), which `design/speaking_path.md` permits.
+- **`speak:getting_around` units 1 to 4 are the strongest work in the slice.** 駅へはどのように行けばよいですか,
+  どこから出るんですか, バスは１５分ごとにでます, どこに座ったらいいですか, やっと着いた, 歩いていく？それとも
+  バスで行く？ are exactly right, and `sent:tatoeba-192503` リムジンはどこですか。 glossed
+  "Onde fica o ônibus do aeroporto?" is a genuinely good contextual translation, not a literal one.
+- **`speak:lodging-03`'s 朝、シャワーを使ってもいいですか。 and `speak:lodging-06`'s 部屋を見せていただけますか。**
+  are the two phrases in the stage a guest really says. Keep them and build the stage around them.
+- **`speak:health-06`'s 風邪をひきませんように。 "Tomara que você não pegue um resfriado."** is well chosen and
+  well translated.
+- **The repeated per-stage `fluency.prompt_pt`** (one string reused across all six units of a stage) is not
+  itself a defect; the defect is unit 1's items not matching it (S1-1).
+- **38 `say_now` sentences have `translation.en == null`.** That is a Layer-A/B completeness matter for the
+  translation sweep, not a speaking-content defect, and it is not counted below.
+- **`structure_explanation`** was not read, per instruction.
 
 ---
 
 ## Counts
 
-"Flagged" counts slots named in a finding above, or mechanically identified by the checks the findings rest on.
-Where a number is mechanical, the rule is stated.
+| Stage | Units checked | `say_now` checked | Production items checked | Findings touching this stage |
+|---|---|---|---|---|
+| arrival | 6 | 36 | 15 | 7 (S1-1 partial, S1-5, S2-7, S2-8, S2-9, S2-10, S3-11, S3-12, S3-13, S3-14) |
+| eating | 6 | 36 | 18 | 6 (S1-1, S1-5, S1-6, S2-7, S2-10, S3-12) |
+| getting_around | 6 | 36 | 18 | 6 (S1-1, S1-5, S2-7, S2-8, S2-10, S3-12, S3-14) |
+| shopping | 6 | 36 | 18 | 5 (S1-1, S1-2, S1-6, S2-7, S2-10, S3-12) |
+| lodging | 6 | 36 | 18 | 6 (S1-1, S1-3, S1-5, S1-6, S2-7, S2-10) |
+| health | 6 | 36 | 18 | 6 (S1-1, S1-4, S1-5, S1-6, S2-7, S2-10, S3-14) |
+| **Total** | **36** | **216** | **105** | **14 distinct findings** |
 
-| Item | Reviewed | Flagged | Basis for the flagged count |
-|---|---|---|---|
-| Units (6 stages x 6) | 36 | 36 | every unit appears in at least one finding (`arrival-01` via F14) |
-| `say_now` phrase slots | 216 | 99 | slots whose sentence carries a `coverage:*`, `mined` or `jec` tag, i.e. selected to cover an item rather than for the scenario |
-| `production` items | 105 | 105 | all 105 resolve to the immediately preceding unit's `say_now` (F04); 37 also hit F16 |
-| `fluency` blocks | 35 | 35 | every block draws items from preceding units; in 14 blocks those units are in a preceding *stage* (F04) |
-| `drills[].examples` slots | 291 | 34 | slots filled by the 8 over-repeated or off-register sentences listed in F08/F09 |
-| Distinct corpus sentences resolved | 403 | 41 | sentences quoted in a finding |
-| `words[]` vocab links checked for sense | 216 | 5 | unit teaches a reading the sentence's own token contradicts (F11) |
-| **Distinct defects reported** | | **17** | S1 x1, S2 x4, S3 x8, S4 x4 |
+| Severity | Count | Findings |
+|---|---|---|
+| S1 (stage cannot do its job) | 6 | S1-1 stage-opening mismatch, S1-2 no price question, S1-3 lodging room block, S1-4 health-01 ordering, S1-5 written register, S1-6 offensive drill material |
+| S2 (systematic, repeated) | 4 | S2-7 seed false positives, S2-8 punctuation duplicates, S2-9 contradictory set-expression gloss, S2-10 kana particle in `accepted_variants` |
+| S3 (localised) | 4 | S3-11 "tê-lo feito esperar", S3-12 over-literal pt, S3-13 em dash, S3-14 arrival-01 empty + 4 stale sentences |
 
-Per-stage `say_now` coverage-tag density, which tracks how closely a stage's contents match its scenario:
-
-| Stage | coverage/mined/jec `say_now` slots (of 36) |
-|---|---|
-| arrival | 6 |
-| shopping | 3 |
-| eating | 18 |
-| getting_around | 18 |
-| health | 20 |
-| **lodging** | **34** |
-
-## Checked and found clean
-
-- `shadowing` equals `say_now` in all 36 units. Consistent and intentional.
-- `chunk_phrases` is used exactly where `INDEX.md` says it is: `arrival-01`, `arrival-02` and the ありがとう
-  ございます pair in `arrival-03`, i.e. the set expressions the analyser mis-lemmatises. No misuse found.
-- `real_phrases: 6` matches `len(say_now)` in all 36 units; `audio: "pending"` and `needs_review: true`
-  throughout, as documented.
-- `fluency.zero_new_tokens` is `true` on every fluency block, and the items are drawn from already-seen
-  sentences, so the no-new-vocabulary constraint holds even though the *scenario* match does not (F04).
-- The AI-generated drill examples (`sent:gen-*`) are, as a group, the best-fitting material in these stages:
-  お茶を飲みませんか, 一緒に昼ご飯を食べませんか, わたしは日本語が少し話せます, 頭が痛いんです,
-  この服似合うかな all read as natural spoken Japanese with natural pt-BR. Where a stage needs a phrase the
-  Tatoeba bank cannot supply cleanly (F02, F03, F06), generation is demonstrably capable of filling it.
-- pt-BR is pt-BR throughout: "você", "ônibus", "trem", "celular"-class vocabulary, "a gente", "tá", "né", "viu"
-  used naturally and register-appropriately in the casual translations. No pt-PT leakage found. No "Quanto a
-  mim" crutch in any `translation` field in these six stages (it appears only in `translation_literal`, which is
-  where `translation_style.md` §5 puts it).
-- Apart from the single `arrival` fluency string (F13), no em dash appears in any authored prompt in these six
-  stages.
+**Checked:** 36 units, 216 `say_now` slots, 403 distinct sentence records, 105 production items,
+111 drill blocks, 6 fluency prompts.
+**Flagged:** 14 findings.

@@ -106,8 +106,16 @@ def main() -> int:
             stats["already-banked"] += 1
             continue
         lb = layerb.get(tid, {})
+        # The English anchor is Layer A and belongs to the jp id, so read it from the source of truth
+        # rather than trusting it to survive the authoring round-trip. The pt-BR authoring schema
+        # ({tatoeba_id, jp, pt, pt_literal, register, reject, reject_reason}) has no `en` key, so
+        # `r.get("en")` silently returned None for all 324 rows of the first run and every one landed
+        # with no anchor -- see research/reports/en_anchor_backfill.md.
+        anchor = r.get("en") or (con.execute(
+            "SELECT text FROM raw_tatoeba_translation WHERE jp_id=? AND lang='eng' "
+            "ORDER BY trans_id LIMIT 1", (tid,)).fetchone() or (None,))[0]
         rec = {
-            "slug": slug, "jp": jp, "en": r.get("en"),
+            "slug": slug, "jp": jp, "en": anchor,
             "pt": r.get("pt"), "pt_literal": r.get("pt_literal"),
             "structure_explanation_pt": lb.get("structure_explanation_pt"),
             # persist() keys these by token/particle POSITION, so they must be dicts, not lists.
