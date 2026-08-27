@@ -32,9 +32,8 @@
   ],
   "patterns": [
     "gram:gp-78",
-    "gram:gp-115",
-    "gram:te-oku",
-    "gram:to-omou"
+    "gram:you-to-omou",
+    "gram:gp-115"
   ],
   "kanji_recognition": [
     "建",
@@ -58,8 +57,9 @@
   "layer": "C",
   "needs_review": true,
   "patterns_chunked": [
-    "gram:you-ni-you-na",
-    "gram:nasai"
+    "gram:gp-128",
+    "gram:nasai",
+    "gram:rareru"
   ],
   "drills": [
     {
@@ -72,29 +72,20 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:you-to-omou",
+      "examples": [
+        "sent:tatoeba-3313205",
+        "sent:tatoeba-202096",
+        "sent:tatoeba-3313203"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-115",
       "examples": [
         "sent:gen-4c4eb1f80410",
         "sent:gen-b5467a55ded1",
         "sent:gen-7506a021dd5b"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:te-oku",
-      "examples": [
-        "sent:tatoeba-173469",
-        "sent:tatoeba-175176",
-        "sent:tatoeba-10712752"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-omou",
-      "examples": [
-        "sent:tatoeba-199355",
-        "sent:tatoeba-187786",
-        "sent:tatoeba-160737"
       ],
       "strand": "language-focused"
     }
@@ -152,15 +143,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 24,
     "fluency": 6
   },
   "checkpoint": [

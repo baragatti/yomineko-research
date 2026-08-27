@@ -30,6 +30,7 @@
     "vocab:1586210"
   ],
   "patterns": [
+    "gram:da-desu",
     "gram:gp-15",
     "gram:gp-2",
     "gram:kara"
@@ -57,10 +58,18 @@
   "needs_review": true,
   "patterns_chunked": [
     "gram:nasai",
-    "gram:te-ita",
-    "gram:wa-yori-desu"
+    "gram:te-ita"
   ],
   "drills": [
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-15",
       "examples": [
@@ -142,15 +151,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 25,
     "fluency": 6
   },
   "checkpoint": [

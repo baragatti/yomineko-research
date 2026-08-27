@@ -287,17 +287,26 @@ def main() -> int:
             # >=2-char form sets are nested (gram:gp {です} inside gram:da-desu {だ,です}), keep the
             # superset record — it is the more complete statement of the same point. Nine units used
             # to drill the copula twice because of exactly this pair.
+            def richness(g):
+                # canonical survivor on ties: more raw forms first (da-desu {da,desu} beats gp
+                # {desu}), then the earlier-taught level, then a stable key order
+                return (-len(g["forms"]), g["level"], g["key"])
+            # Same grammar point under two identities (gram:gp {desu} vs gram:da-desu {da,desu})
+            # must not be drilled twice in one unit: EQUAL effective form sets collapse to the
+            # canonical record. Equality ONLY — a strict-subset rule looked right and was wrong:
+            # composite patterns list their components as separate forms (wa-yori-desu carries
+            # yori AND desu), so subset-dedupe silently ate the standalone copula from every unit
+            # that also taught a comparison. Two records are only the same point when they claim
+            # the same forms.
             kept: list = []
             for g in patterns:
                 fs = {f for f in g["forms"] if len(f) >= 2}
                 replaced = False
                 for i, k in enumerate(kept):
                     ks = {f for f in k["forms"] if len(f) >= 2}
-                    if fs <= ks:
-                        replaced = True          # g adds nothing over k: drop g
-                        break
-                    if ks < fs:
-                        kept[i] = g              # g supersedes k
+                    if fs and fs == ks:
+                        if richness(g) < richness(k):
+                            kept[i] = g
                         replaced = True
                         break
                 if not replaced:

@@ -23,7 +23,9 @@
     "vocab:1078630",
     "vocab:1628530"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:da-desu"
+  ],
   "kanji_recognition": [
     "何",
     "小"
@@ -43,11 +45,21 @@
   "needs_review": true,
   "patterns_chunked": [
     "gram:yori",
-    "gram:wa-yori-desu",
     "gram:gp-2",
-    "gram:gp-4"
+    "gram:gp-4",
+    "gram:wa-yori-desu"
   ],
-  "drills": [],
+  "drills": [
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5057",
+        "sent:tatoeba-120747",
+        "sent:tatoeba-75188"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
       "prompt_pt": "O setor de reservas, por favor.",
@@ -101,15 +113,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 43,
-    "meaning-output": 11,
-    "language-focused": 25,
-    "fluency": 21
+    "meaning-input": 40,
+    "meaning-output": 10,
+    "language-focused": 30,
+    "fluency": 20
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 7,
+    "language-focused": 9,
     "fluency": 6
   },
   "checkpoint": [
