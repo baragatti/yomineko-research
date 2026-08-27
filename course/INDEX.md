@@ -1,6 +1,6 @@
 # Courseware layer — outline (P4 placement)
 
-_Generated 2026-08-26. `course/outline.json` is the machine-readable Module→Topic→introducing-item map; per-level `INDEX.md` are readable. Lessons (P6) will hold dense pt-BR text + exercises + corpus refs BY ID._
+_Generated 2026-08-27. `course/outline.json` is the machine-readable Module→Topic→introducing-item map; per-level `INDEX.md` are readable. Lessons (P6) will hold dense pt-BR text + exercises + corpus refs BY ID._
 
 | module | topics | vocab | kanji | grammar |
 |--------|-------:|------:|------:|--------:|

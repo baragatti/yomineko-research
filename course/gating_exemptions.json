@@ -1,0 +1,45 @@
+{
+  "why": "Item references a lesson BODY renders before the course unlocks them. validate_lesson_gating.py check B fails on any such reference unless it is listed here with the reason the gap is held rather than hidden; an entry that matches nothing is also a failure, so this list cannot rot. Eight of the nine originally found were repaired by adding the missing unlocks — what remains is one forward reference and the seven unresolved homograph placements that are also in course/coverage_exemptions.json and await the same teacher decision.",
+  "item_refs": [
+    {
+      "lesson": "les:n4-dar-receber-02",
+      "ref": "vocab:1228690",
+      "reason": "Forward reference by two lessons: 急行 (きゅうこう) is used in the body here but unlocked by les:n4-dar-receber-04. Fix is a content edit — move the unlock earlier or reword the example — not a change to the gate."
+    },
+    {
+      "lesson": "les:n4-condicionais-01",
+      "ref": "vocab:1310670",
+      "reason": "Homograph sibling of vocab:1310680 (止める); the course unlocks the やめる reading and the body cites とめる. Placement needs a teacher's curriculum decision — see course/vocab_disambiguation_review.json and course/coverage_exemptions.json."
+    },
+    {
+      "lesson": "les:n4-passiva-02",
+      "ref": "vocab:1605840",
+      "reason": "Homograph sibling of vocab:1545790 (様); the course unlocks the さま reading and the body cites よう. Placement needs a teacher's curriculum decision — see course/vocab_disambiguation_review.json and course/coverage_exemptions.json."
+    },
+    {
+      "lesson": "les:n5-particulas-lugar-02",
+      "ref": "vocab:1403830",
+      "reason": "Homograph sibling of vocab:1581310 (側); the course unlocks the がわ reading and the body cites そば. Placement needs a teacher's curriculum decision — see course/vocab_disambiguation_review.json and course/coverage_exemptions.json."
+    },
+    {
+      "lesson": "les:n5-comparacoes-02",
+      "ref": "vocab:1423310",
+      "reason": "Homograph sibling of vocab:1620400 (中); the course unlocks the ちゅう reading and the body cites なか. Placement needs a teacher's curriculum decision — see course/vocab_disambiguation_review.json and course/coverage_exemptions.json."
+    },
+    {
+      "lesson": "les:n5-comparacoes-04",
+      "ref": "vocab:2084840",
+      "reason": "Homograph sibling of vocab:1468060 (年); the course unlocks the とし reading and the body cites ねん. Placement needs a teacher's curriculum decision — see course/vocab_disambiguation_review.json and course/coverage_exemptions.json."
+    },
+    {
+      "lesson": "les:n5-conectando-01",
+      "ref": "vocab:2846738",
+      "reason": "Homograph sibling of vocab:1577100 (何); the course unlocks the なに reading and the body cites なん. Placement needs a teacher's curriculum decision — see course/vocab_disambiguation_review.json and course/coverage_exemptions.json."
+    },
+    {
+      "lesson": "les:n5-conectando-04",
+      "ref": "vocab:2147990",
+      "reason": "Homograph sibling of vocab:1472650 (背); the course unlocks the せい reading and the body cites せ. Placement needs a teacher's curriculum decision — see course/vocab_disambiguation_review.json and course/coverage_exemptions.json."
+    }
+  ]
+}

@@ -78,7 +78,7 @@ O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com c
 
 ### 2. (recognition) Na estrutura なぜなら, o que NUNCA pode faltar para amarrar a explicação?
 - **Resposta:** `{"choices": ["o から (ou からだ) no fim do motivo", "um そして no meio", "um ところで antes", "a partícula を"], "correct": "o から (ou からだ) no fim do motivo"}`
-- Em japonês a causa fica abraçada entre なぜなら (na frente) e から/からだ (no fim). Mesmo com なぜなら já dito, esquecer o から deixa a frase incompleta. Mesmo com なぜなら ja dito, esquecer o から deixa a frase incompleta.
+- Em japonês a causa fica abraçada entre なぜなら (na frente) e から/からだ (no fim). Mesmo com なぜなら já dito, esquecer o から deixa a frase incompleta.
 
 
 ### 3. (particle_choice) Você vai abrir uma frase inteira so para justificar, num texto escrito formal. Qual conector usar? 今日は行かない。___、雨が降っているからだ。

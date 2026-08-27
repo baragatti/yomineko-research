@@ -58,6 +58,75 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-08-27 (af) — THE SUITE IS NOW 39 HARD VALIDATORS, EVERY ONE LANDED WITH A PLANTED-VIOLATION
+> PROOF, AND EVERY CONFIRMED DEFECT FROM THE TWO 13-PANEL REVIEWS IS REPAIRED OR HELD BY A NAMED
+> RATCHET. Gate green end to end; scripts/validate/README.md documents the whole gate.**
+>
+> - **Two review panels ran first** (13 Opus reviewers + 3-lens adversarial verification each; their
+>   digests live in the session scratchpad): a migration audit of commits 6de5daa/8e0d9af and a
+>   whole-course structural review. 161 findings; everything mechanical was fixed at the durable
+>   layer in 8b101ac6 (see that commit's message), then THIS entry's work landed the validators that
+>   keep it fixed.
+> - **The validator build itself was adversarially reviewed.** 15 implementers wrote 19 new
+>   validators + 6 upgrades, each REQUIRED to plant violations in a copied tree and show its checks
+>   catch them (~120 plants, all caught); 3 reviewers then hunted cannot-fail patterns and found
+>   real ones (empty-input exit-0 holes, a subset rule that re-implemented the logic 531b47c2
+>   reverted, two gates disagreeing about the same rows, a sidecar written inside a registry glob
+>   that broke four other gates). All fixed before wiring. validate_all.py now runs 41 entries /
+>   39 hard; scripts/validate/README.md is the map.
+> - **Conventions the suite now enforces** (see README): validators read the EXPORTED JSON, never
+>   the DB (validate_readings/validate_generated_jp/validate_exam_banks/hygiene were all repointed);
+>   empty input FAILS; exemption files carry reasons and rot loudly; known content debt is held by
+>   RATCHETS that fail on growth (i+1 sentence backlog 305, terminal punctuation 171, L4-L6 level
+>   consensus 134+6+1, okurigana-solvable distractors) — each names the decision that retires it.
+> - **Corrections to earlier entries, from the audit:** the (ae) claim "97 of 322 stored
+>   cumulative_known_sets were stale" is FALSE (the stored sets matched their unlocks; the export
+>   derivation is still right — it recovered 28 records that headword de-duplication collapsed);
+>   the sentence_vocab loss was 436 pairs across three banks (n3 361 / n4 58 / n5 17), not 361;
+>   the resolver counters were 2,832/2,910; and the archived copies' flags ARE pre-migration
+>   integers, not "may be".
+> - **Content repaired since 8b101ac6:** 239 listening exam items gained their missing `source`;
+>   kanji reading example vocab now publishes slugs beside the 4,591 row ids; family spans_levels is
+>   DERIVED from members (16 stale declarations gone); 8 more hygiene defects (2 doubled grammar
+>   explanation drafts, a doubled exercise explanation, an accent-stripped sentence explanation +
+>   grammar/kanji notes, 2 kanji meanings split mid-parenthetical: 府, 浴); ex:n3-concessao-04-5's
+>   answer now spellable from its own pieces; the speak pattern dedupe was corrected to
+>   EQUALITY-only after the subset rule silently ate the copula from every comparison unit
+>   (531b47c2), with a canonical survivor on ties.
+>
+> **OWNER QUEUE — every item now has a prepared, evidence-grounded proposal in research/reports/:**
+> - `homograph_recommendations.md`: all 14 disambiguation rows + 9 exemption placements judged from
+>   lesson prose. 4 exported refs are provably wrong (the lesson prints the reading beside the ref —
+>   上/じょう, 柄/がら, 品/しな, 金/きん); 5 exemptions have certain placements needing zero new
+>   content. Method finding: the resolver should read the `<jp>` reading printed next to the ref —
+>   that one signal settles 12 of 14; corpus frequency was the least reliable rule.
+> - `exam_bank_regen_review.md`: regeneration is NO-GO as the builder stands (93 leak items return,
+>   provenance stripped) and GO after nine enumerated builder fixes — prototype measured: 5,262
+>   items, EB-02 affix-solvable 373→58, leaks 95→0, zero unexplained diffs.
+> - `grammar_identity_merges.md`: gp→da-desu MERGE (840 refs mapped), gp-152→te-hoshii MERGE (591
+>   refs; the loser also carries leaked build commentary), gp-36/te-iru KEEP BOTH (fix forms[]),
+>   gp-63/gp-115 KEEP BOTH — the real defect is the gp-115 forms[0] item already in this queue.
+>   Plus 3 untriaged collisions of the same class.
+> - `family_layer_rebuild.md`: staged plan (validator → mechanical rebuild → particle/topic
+>   families → family_related → authored Layer C). New finds: 74.7% of grammar function_set
+>   memberships name the WRONG topic (stale introducing_topic snapshot), and family_ids/related
+>   were silently dropped from the published contracts.
+> - Level-confidence formula (L4-L6 ratchet): 132 grammar records pair '1/1' with 0.34 while 207
+>   pair it with 1.0 — one group's agreement string is wrong and only the reconciliation history
+>   says which. vocab:1385390 pairs '0' with 0.5 against the documented sentinel semantics.
+> - Still queued from before: `needs[]` prerequisite model empty everywhere (linearity gate prints
+>   an unconditional notice); 875 body `<jp>` spans with kanji and no reading attribute (furigana
+>   coverage policy); listening audio (owner will AI-generate post-research); the ateji list; the
+>   i+1 sentence re-selection work (baseline frozen, teacher queue in
+>   research/reports/lesson_sentence_review.json).
+>
+> **Running when this entry was written:** structure-explanation re-authoring workflow (locate →
+> author → verify → apply, DB layer; re-export + hygiene re-run after it lands) and two deep-QA
+> sweeps (26 auditors over translation accuracy, grammar accuracy, lesson prose, exam Japanese,
+> speak naturalness, readings, kanji records, conjugations, vocab glosses, i+1 replacement
+> candidates) — their reports land in research/reports/qa_sweep/.
+
+
 > **2026-08-26 (ae) — THE CORPUS NOW HAS A MACHINE-READABLE CONTRACT, ONE IDENTITY PER RECORD, AND
 > 223 DUPLICATE-ID FILES OUT OF THE LIVE TREE. Gate green: 23 hard validators (one new), 23/23
 > entities schema-clean.**

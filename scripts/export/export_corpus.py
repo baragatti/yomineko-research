@@ -139,6 +139,9 @@ def export_kanji(con: sqlite3.Connection) -> dict:
             readings = [
                 {"reading": r[0], "type": r[1], "okurigana": r[2], "introduced_at_level": r[3],
                  "common": r[1] != "nanori", "example_vocab_ids": jloads(r[4]),
+                 # the published address form of the same edge; the row ids stay for compatibility
+                 "example_vocab": [VOCAB_SLUG_BY_ID[v] for v in (jloads(r[4]) or [])
+                                   if v in VOCAB_SLUG_BY_ID],
                  "note": loc(pt=r[5]) if r[5] else None}
                 for r in con.execute(
                     "SELECT kr.reading,kr.reading_type,kr.okurigana,kr.introduced_at_level,"
@@ -347,6 +350,23 @@ def family_backlinks(con: sqlite3.Connection) -> dict:
     return out
 
 
+_LEVEL_SEQ = ["pre-n5", "n5", "n4", "n3", "n2", "n1"]
+
+
+def _member_span(con: sqlite3.Connection, fid: int) -> list:
+    """The set of levels a family's members actually occupy, in teaching order."""
+    found = set()
+    for mtype, mid in con.execute(
+            "SELECT member_type, member_id FROM family_member WHERE family_id=?", (fid,)):
+        tbl = {"kanji": "kanji", "vocab": "vocab", "grammar": "grammar_point"}.get(mtype)
+        if not tbl:
+            continue
+        r = con.execute(f"SELECT level FROM {tbl} WHERE id=?", (mid,)).fetchone()
+        if r and r[0]:
+            found.add(r[0])
+    return [lv for lv in _LEVEL_SEQ if lv in found]
+
+
 def export_families(con: sqlite3.Connection) -> int:
     if not con.execute("SELECT COUNT(*) FROM family").fetchone()[0]:
         return 0
@@ -382,7 +402,11 @@ def export_families(con: sqlite3.Connection) -> int:
             "description": loc(pt=L.get((fid, "description")), en=Len.get((fid, "description"))),
             "importance_rank": rank,
             "governing_rule": loc(pt=L.get((fid, "governing_rule")), en=Len.get((fid, "governing_rule"))),
-            "spans_levels": jloads(spans),
+            # spans_levels is DERIVED from the members, not read from the stored column: 16 families
+            # (14 kanji_component + 2 others) declared ['n5','n4'] while holding members outside it,
+            # because the column froze at authoring time and the membership moved. A derived claim
+            # cannot go stale. Order follows the teaching sequence.
+            "spans_levels": _member_span(con, fid),
             "members": members,
         })
         lbl = L.get((fid, "label"))

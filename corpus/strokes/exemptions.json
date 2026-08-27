@@ -1,0 +1,93 @@
+{
+  "_readme": [
+    "Declared holes in the stroke data, read by scripts/validate/validate_stroke_integrity.py.",
+    "Every entry carries a reason. An entry that matches nothing (the hole was filled, the",
+    "mismatch was repaired, the orphan row was dropped) is itself a FAILURE: the exemption must",
+    "be deleted in the same commit that fixes the data, so this file can only shrink.",
+    "Seeded 2026-08-26 from the migration-audit findings G12 (coverage), G13 (counts), G14 (kana)."
+  ],
+  "coverage": [
+    {
+      "character": "建",
+      "level": "n4",
+      "missing": "stroke_lines",
+      "finding": "G12",
+      "reason": "pending data acquisition - no GlyphWiki centreline record was extracted for this character"
+    },
+    {
+      "character": "質",
+      "level": "n4",
+      "missing": "stroke_lines",
+      "finding": "G12",
+      "reason": "pending data acquisition - no GlyphWiki centreline record was extracted for this character"
+    },
+    {
+      "character": "銀",
+      "level": "n4",
+      "missing": "stroke_lines",
+      "finding": "G12",
+      "reason": "pending data acquisition - no GlyphWiki centreline record was extracted for this character"
+    },
+    {
+      "character": "庭",
+      "level": "n3",
+      "missing": "stroke_lines",
+      "finding": "G12",
+      "reason": "pending data acquisition - no GlyphWiki centreline record was extracted for this character"
+    },
+    {
+      "character": "御",
+      "level": "n3",
+      "missing": "stroke_lines",
+      "finding": "G12",
+      "reason": "pending data acquisition - no GlyphWiki centreline record was extracted for this character"
+    },
+    {
+      "character": "段",
+      "level": "n3",
+      "missing": "stroke_lines",
+      "finding": "G12",
+      "reason": "pending data acquisition - no GlyphWiki centreline record was extracted for this character"
+    },
+    {
+      "character": "解",
+      "level": "n3",
+      "missing": "stroke_lines",
+      "finding": "G12",
+      "reason": "pending data acquisition - no GlyphWiki centreline record was extracted for this character"
+    }
+  ],
+  "counts": [
+    {
+      "character": "極",
+      "level": "n2",
+      "finding": "G13",
+      "reason": "pending data acquisition - stroke_order was mis-extracted (13 steps against kanji.strokes 12 and 12 centrelines); re-extract from KanjiVG/GlyphWiki. Not learner-facing yet (n2)."
+    },
+    {
+      "character": "離",
+      "level": "n1",
+      "finding": "G13",
+      "reason": "pending data acquisition - stroke_order was mis-extracted (18 steps against kanji.strokes 19 and 19 centrelines); re-extract from KanjiVG/GlyphWiki. Not learner-facing yet (n1)."
+    }
+  ],
+  "kana_orphans": [
+    {"char": "ぁ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ぃ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ぅ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ぇ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ぉ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ゃ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ゅ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ょ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ァ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ィ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ゥ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ェ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ォ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ャ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ュ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ョ", "finding": "G14", "reason": "small kana: has a stroke drawing but no corpus/kana record, so nothing in the graph reaches it. Pending a decision to register it or drop the row."},
+    {"char": "ヴ", "finding": "G14", "reason": "katakana VU: has a stroke drawing but no corpus/kana record. Pending a decision to register it or drop the row."}
+  ]
+}

@@ -42,8 +42,29 @@ SUITE = [
     ("audit_export_refs.py", "code"),
     # Schema + identity + graph conformance for every exported artifact, against contracts/*.schema.json.
     ("validate_contracts.py", "code"),
-    ("audit_lesson_hygiene.py", "code"),
-    ("graph_queries.py", "grep-fail"),
+    # ---- 2026-08-27 suite build: 19 validators from the two 13-panel reviews, each landed with a
+    # planted-violation proof and adversarially reviewed for cannot-fail patterns. Everything below
+    # reads the EXPORTED JSON (the source of truth) unless its docstring says otherwise.
+    ("validate_course_chain.py", "code"),        # manifest->course->topic->lesson tiers + catalogue
+    ("validate_unlock_ledger.py", "code"),       # slug-space introduce-once + coverage + exemptions
+    ("validate_lesson_bodies.py", "code"),       # markup, all ref kinds, furigana, no-markup-in-prose
+    ("validate_exercise_contracts.py", "code"),  # body binding, per-type answer keys grade as rendered
+    ("validate_srs_decks.py", "code"),           # deck registry + lesson-level filing + no dup cards
+    ("validate_lesson_gating.py", "code"),       # item refs inside own cks; i+1 sentence ratchet
+    ("validate_sentence_manifest.py", "code"),   # sentence_refs == what the body renders
+    ("audit_hygiene_all_locales.py", "code"),    # every pt-BR string, corpus-wide (replaces the
+                                                 # deprecated audit_lesson_hygiene.py, which read a
+                                                 # stale staging dir — F5/STRUCT-08)
+    ("validate_provenance_json.py", "code"),     # layer/source/ai_generated/needs_review semantics
+    ("validate_stable_addresses.py", "code"),    # integer FKs always beside their published slug
+    ("validate_stroke_integrity.py", "code"),    # stroke coverage + count agreement + exemptions
+    ("validate_level_consensus.py", "code"),     # spec-1.5 evidence well-formedness (+L4-L6 ratchet)
+    ("validate_graph_edges.py", "code"),         # 550k cross-entity edges + family/capability layers
+    ("validate_prototype_sync.py", "code"),      # app/data is the current projection
+    ("validate_no_client_leak.py", "code"),      # SSR-only: no corpus content in build/client
+    ("validate_md_views.py", "code"),            # .md views re-render identical to their .json
+    ("validate_schema_generation_is_current.py", "code"),  # contracts == regenerated contracts
+    ("graph_queries.py", "code"),                # spec-1.7 queries verbatim, real pass/fail + waivers
     ("validate.py", "code"),
     ("completeness_audit.py", "advisory"),
     ("detect_ai_tells.py", "advisory"),

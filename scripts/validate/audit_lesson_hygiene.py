@@ -1,5 +1,29 @@
 #!/usr/bin/env python3
-"""P8 — enforce the standing lesson-hygiene rules (design/quality_rubric.md §P8) as a committed validator.
+"""DEPRECATED — superseded by scripts/validate/audit_hygiene_all_locales.py.
+
+Use audit_hygiene_all_locales.py instead. It is a strict superset of this file: every rule below is
+ported there, and the three holes the 13-panel review found in this one are closed.
+
+  * WRONG TREE (F5). This file reads research/derived/lessons/*.json — the ingest SEED that
+    load_lessons.py re-authors the DB from — not course/*/topic-*/lesson-*.json, which is what
+    contracts/manifest.json calls a lesson and what the app renders. 259 of 322 bodies differed, and
+    the gated copy was the damaged one: the seven lessons whose QA-reviewer instructions had leaked
+    into title/description/objectives were still corrupt here while this gate printed "0 FAIL".
+  * LESSONS ONLY (F6). Speak units, topics, courses, grammar, kanji, vocab, readings, families, the
+    exam banks and the sentence bank were checked by nothing — 72 em dashes were live in speak-unit
+    pt-BR titles alone.
+  * FIXED WORD LIST (F7). The ACCENT_STRIPPED regex below is 30 hand-written words. The replacement
+    derives its lexicon from the corpus (any word the corpus writes with ã/õ at least three times has
+    a wrong plain spelling), which catches the 42 live cases this list never knew: reuniao, amanha,
+    memorizacao, comissao, portao, conexoes, irmao, compaixao, opiniao, padrao, questao, verao…
+
+The replacement additionally checks mojibake, Cyrillic/Greek mixed script, pt-PT vocabulary,
+QA-reviewer instruction leaks, duplicated clauses and unbalanced parentheses, and it accepts --root so
+it can be pointed at a mutated copy of the tree.
+
+Original docstring follows.
+---------------------------------------------------------------------------------------------------
+P8 — enforce the standing lesson-hygiene rules (design/quality_rubric.md §P8) as a committed validator.
 
 These rules were previously only enforced by one-off fixer scripts; this is the GUARD that fails CI if any
 regress. Checks every authored lesson JSON (research/derived/lessons/*.json) for:

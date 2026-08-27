@@ -1,0 +1,23 @@
+{
+  "_why": "Frozen counts for validate_exam_banks.py's ADVISORY section. These items are individually CORRECT — the answer key is right and no learner is shown wrong Japanese — but each one can be shortcut by a learner who never uses the skill under test. Every repair is a change to scripts/export/build_exam_banks.py plus a bank regeneration, which is a deliberate migration (see the plan's 'NOT validators' list), not something a validator may do. So the numbers are frozen here instead: a count may SHRINK freely (lower the baseline in the same commit that improves the builder), but if it GROWS the validator fails, because a bank rebuild that makes the exam easier to game must be a visible decision. An entry whose count is above zero but matches nothing in the banks is also a failure, so this file cannot rot into decoration.",
+  "okurigana_giveaway": {
+    "count": 373,
+    "reason": "EB-02. A kanji_reading stem carrying okurigana whose correct reading is the ONLY option matching the stem's leading/trailing kana run — the learner matches kana shape and skips the kanji. Root cause: build_exam_banks.py ranks distractors by mora count only (abs(len(kana)-len(kana))*10 + lexeme-class penalty), never by kana affix. Fix is an affix bonus in that closeness key requiring >=2 of 3 distractors to be affix-compatible; the bank runs 50x the paper requirement, so dropping stems that cannot supply them costs nothing. Measured 2026-08-26 over 439 affix-bearing items: n5 133, n4 127, n3 113."
+  },
+  "reading_comp_string_match": {
+    "count": 32,
+    "reason": "EB-07. A reading_comp item whose correct option appears verbatim in the passage while no distractor does, so it is answerable by scanning rather than by comprehension. A verbatim answer span is normal in real 読解; the defect is that the distractors are not drawn from the passage. Fix is an authoring guideline — either all four options come from the passage's own vocabulary or none does — applied when these items are re-authored. Measured 2026-08-26 over 286 items."
+  },
+  "orthography_shape_solvable": {
+    "count": 304,
+    "reason": "EB-06. An orthography item where the correct spelling's kana affixes fit the kana stem and fewer than 2 of the 3 distractors' do, so affix elimination narrows the choice without knowing the spelling. Root cause: the builder scores orthography candidates on len(kana) while the option shown is the HEADWORD. Fix is a separate closeness key for this bank scored on len(headword) plus an affix bonus. Measured 2026-08-26 over 1,200 items. (Not required by the plan row; frozen anyway so the counter is a gate rather than a printed number.)"
+  },
+  "orthography_longshot_distractors": {
+    "count": 241,
+    "reason": "EB-06, the length half of the same defect: an orthography distractor 2 or more characters away from the correct spelling's length, which no learner would mistake for it. Distribution when measured 2026-08-26 over 3,600 distractors: 207 at delta 2, 30 at 3, 4 at 4. Same builder fix as orthography_shape_solvable."
+  },
+  "sentence_order_ambiguous": {
+    "count": 1,
+    "reason": "EB-09. A sentence_order item where a SECOND distinct ordering of the chips also spells the answer string, so a learner producing it is graded wrong by the exact-string comparison in exam.server.ts. Today this is so:n3:620 alone, whose chips include 学部 and, separately, 学 and 部 (「この学部は大学の主力学部です」). Fix is chunking the pieces at bunsetsu boundaries in the builder, or accepting any ordering that also exists in the sentence bank."
+  }
+}

@@ -66,7 +66,11 @@ SENTENCE_DERIVED = {"cf", "gf", "so", "pp", "us"}
 # Families whose Japanese is always real (selection/derivation from human-written sources).
 ALWAYS_REAL = {"kr", "or", "tg", "rc"}
 # source fill-ins for families whose builder never wrote one (checked against the data at run time).
-DEFAULT_SOURCE = {"kr": "vocab", "or": "vocab", "tg": "reading+grammar"}
+DEFAULT_SOURCE = {"kr": "vocab", "or": "vocab", "tg": "reading+grammar",
+                  # authored listening scripts wrapped around bank sentences (design/listening.md);
+                  # the five listening families were the only 239 items with no source at all
+                  "lt": "listening-script", "lp": "listening-script", "ls": "listening-script",
+                  "lr": "listening-script", "lg": "listening-script"}
 
 
 def main() -> int:

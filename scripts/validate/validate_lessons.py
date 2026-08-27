@@ -5,13 +5,29 @@ Reads every lesson from the DB, parses its tagged body, and enforces: (1) no bar
 whitelist, (3) all ref ids resolve, (4) child-kind rules, (5) pt-BR (structural only here), (6) required
 structure (ends with <checklist>; ≥1 retrieval + ≥1 production exercise). Plus per-exercise answer-key shapes,
 introduce-once, and lesson_introduces ⊆ topic.introduces. Errors block; deferred-asset refs warn.
-Run: .venv/Scripts/python.exe scripts/validate/validate_lessons.py
+
+WHY THE PRACTICE + PRODUCTION-ANSWER RULES LIVE IN EXPORT SPACE
+--------------------------------------------------------------
+The "≥1 retrieval + ≥1 production" rule used to sit behind an `if types:` guard, which made it vacuous in
+exactly the case that hurts a learner most: a lesson with ZERO exercises was skipped instead of failed.
+Eight kanji-reinforcement lessons unlock 8 kanji each, enrol 8 SRS cards and ship no practice at all, and
+the gate stayed green. The rule now fires on the empty list; it counts only the exercises the body actually
+RENDERS (an exercise row no <exercise ref> points at is dead weight the learner never meets); and its
+exceptions come from an explicit course/practice_exemptions.json, never from the emptiness of a list.
+Production answers get the same treatment: ANSWER_SHAPES demanded only `text` — the string the app REVEALS
+— and never looked at `accept`, the list it GRADES against, so an exercise could reveal an answer its own
+grader scores as wrong. Both rules read the committed course JSON (the source of truth per CLAUDE.md).
+
+Run: .venv/Scripts/python.exe scripts/validate/validate_lessons.py [--root PATH]
 """
 from __future__ import annotations
 
+import argparse
 import json
+import re
 import sqlite3
 import sys
+import unicodedata
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -102,8 +118,118 @@ ANSWER_SHAPES = {  # type -> required keys
     "recognition": ("choices", "correct"), "particle_choice": ("choices", "correct"),
     "reading": ("choices", "correct"), "listening": ("choices", "correct"),
     "cloze": ("text", "full"), "sentence_build": ("order", "text"), "ordering": ("order", "text"),
-    "production": ("text",), "handwriting": ("text",), "matching": ("pairs",),
+    # `text` is what the app REVEALS, `accept` is what it GRADES: a production item needs both, and the
+    # two must agree (see check_production_answers).
+    "production": ("text", "accept"), "handwriting": ("text",), "matching": ("pairs",),
 }
+# An unlock of one of these types means the lesson TEACHES an item, so it owes the learner practice.
+TEACHING_UNLOCKS = {"kana-family", "vocab", "kanji", "grammar", "conjugation-form", "phrase"}
+EXERCISE_REF_RX = re.compile(r"<exercise\s[^>]*?ref=\"([^\"]+)\"")
+# Grader normalisation: NFKC, casefold, drop Japanese + ASCII punctuation and every kind of space.
+ANSWER_PUNCT = set("。、，．・…！？!?,.;:；：\"'`´“”‘’「」『』（）()［］[]｛｝{}〜～ー-–—_/\\|＋+*&^%$#@~")
+
+
+def norm_answer(s: str) -> str:
+    """The comparison the grader is meant to apply (LessonExercises.tsx): identity modulo punctuation."""
+    s = unicodedata.normalize("NFKC", s or "").lower()
+    return "".join(ch for ch in s if ch not in ANSWER_PUNCT and not ch.isspace())
+
+
+def norm_literal(s: str) -> str:
+    """The comparison the grader applies TODAY: trim + lowercase, nothing else."""
+    return (s or "").strip().lower()
+
+
+def load_practice_exemptions(root: Path) -> dict[str, str]:
+    """course/practice_exemptions.json — lessons allowed to teach without practice, each with a reason.
+
+    Shared with validate_exercise_contracts.py, so accept every shape the convention permits: a list of
+    {id, reason}, a bare {id: reason} map, or either of those under a "lessons"/"exemptions"/"entries" key
+    alongside a prose "why". A missing file means no exemptions (the strictest reading), never a skipped
+    check.
+    """
+    f = root / "course" / "practice_exemptions.json"
+    if not f.exists():
+        return {}
+    data = json.loads(f.read_text(encoding="utf-8"))
+    if isinstance(data, dict):
+        for k in ("lessons", "exemptions", "entries"):
+            if isinstance(data.get(k), (list, dict)):
+                data = data[k]
+                break
+    if isinstance(data, dict):
+        return {str(k): str(v) for k, v in data.items()}
+    out: dict[str, str] = {}
+    for e in data or []:
+        if isinstance(e, dict) and e.get("id"):
+            out[str(e["id"])] = str(e.get("reason") or "")
+        elif isinstance(e, str):
+            out[e] = ""
+    return out
+
+
+def check_practice_coverage(lessons: dict, exempt: dict[str, str]) -> tuple[list[str], list[str]]:
+    """≥1 retrieval + ≥1 production among the exercises the BODY RENDERS — with no `if exercises:` guard."""
+    errors, warns = [], []
+    used_exemptions: set[str] = set()
+    for lid, d in lessons.items():
+        by_id = {e.get("id"): e for e in (d.get("exercises") or []) if isinstance(e, dict)}
+        rendered = [r for r in EXERCISE_REF_RX.findall(d.get("body") or "") if r in by_id]
+        types = [by_id[r].get("type") for r in rendered]
+        teaches = any(u.get("type") in TEACHING_UNLOCKS for u in (d.get("unlocks") or []))
+        if not (teaches or types):
+            continue  # no items taught and nothing rendered: a pure method/orientation lesson
+        missing = []
+        if not any(t in RETRIEVAL for t in types):
+            missing.append(f"retrieval (need ≥1 of {sorted(RETRIEVAL)})")
+        if teaches and not any(t in PRODUCTION for t in types):
+            missing.append(f"production (need ≥1 of {sorted(PRODUCTION)})")
+        if not missing:
+            continue
+        if lid in exempt:
+            used_exemptions.add(lid)
+            continue
+        lead = "teaches items but renders" if teaches else "renders"
+        errors.append(f"[{lid}] {lead} no {' and no '.join(missing)} "
+                      f"({len(by_id)} exercise(s) defined, {len(rendered)} rendered by the body)")
+    for lid, reason in sorted(exempt.items()):
+        if lid not in lessons:
+            errors.append(f"practice_exemptions.json: '{lid}' names no lesson in this tree (reason: {reason})")
+        elif lid not in used_exemptions:
+            # Not an error: the same file also exempts lessons for the sibling exercise-contract checks.
+            warns.append(f"practice_exemptions.json: '{lid}' is not needed by the practice rule (reason: {reason})")
+    return errors, warns
+
+
+def check_production_answers(lessons: dict) -> tuple[list[str], int]:
+    """`answer.text` — the string the app reveals — must be one of `answer.accept`, the strings it grades."""
+    errors: list[str] = []
+    punct_only = 0
+    for lid, d in lessons.items():
+        for ex in (d.get("exercises") or []):
+            if not isinstance(ex, dict) or ex.get("type") != "production":
+                continue
+            eid, ans = ex.get("id"), ex.get("answer") or {}
+            acc = ans.get("accept")
+            if not isinstance(acc, list) or not acc:
+                errors.append(f"[{lid}] exercise {eid}: production answer has no non-empty 'accept' list")
+                continue
+            if any(not isinstance(a, str) or not a.strip() for a in acc):
+                errors.append(f"[{lid}] exercise {eid}: 'accept' holds a blank or non-string entry")
+                continue
+            lit = [norm_literal(a) for a in acc]
+            if len(set(lit)) != len(lit):
+                errors.append(f"[{lid}] exercise {eid}: 'accept' repeats an entry ({acc})")
+            text = ans.get("text")
+            if not isinstance(text, str) or not text.strip():
+                errors.append(f"[{lid}] exercise {eid}: production answer has no 'text' to reveal")
+                continue
+            if norm_answer(text) not in {norm_answer(a) for a in acc}:
+                errors.append(f"[{lid}] exercise {eid}: revealed answer '{text}' is not in accept {acc} "
+                              f"— the learner cannot type the answer the app shows them")
+            elif norm_literal(text) not in set(lit):
+                punct_only += 1
+    return errors, punct_only
 
 
 class LessonParser(HTMLParser):
@@ -226,11 +352,19 @@ def check_refs(refs, sets) -> tuple[list, list]:
 
 
 def main() -> int:
-    con = sqlite3.connect(DB)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--root", default=str(ROOT), help="tree to validate (default: repo root)")
+    args = ap.parse_args()
+    root = Path(args.root).resolve()
+    con = sqlite3.connect(root / "db" / "corpus.sqlite")
     con.row_factory = sqlite3.Row
     if not con.execute("SELECT COUNT(*) FROM lesson").fetchone()[0]:
-        print("no lessons yet — nothing to validate")
-        return 0
+        # The exported course tree is the artifact; if it has lessons while the DB has none, the DB
+        # is stale/rebuilt and every DB-based rule below would silently certify nothing.
+        _leaves = len(list((root / "course").glob("*/topic-*/lesson-*.json")))
+        print(f"FAIL: lesson table is empty while course/ holds {_leaves} leaves — a gate whose data vanished must FAIL, not certify nothing"
+              if _leaves else "no lessons anywhere yet — nothing to validate")
+        return 1 if _leaves else 0
     sets = resolve_sets(con)
     extra = {
         "kana": {r[0] for r in con.execute("SELECT id FROM kana_family")},
@@ -267,10 +401,9 @@ def main() -> int:
             errors.append(f"[{lslug}] empty body (no block elements)")
         elif p.top_blocks[-1] != "checklist":
             errors.append(f"[{lslug}] body must end with <checklist> (got <{p.top_blocks[-1]}>)")
-        # exercises: ≥1 retrieval + ≥1 production; answer shapes
-        types = []
+        # exercises: answer shapes (the ≥1 retrieval + ≥1 production rule is checked in export space below,
+        # where "rendered by the body" is knowable and the empty-exercise case cannot be skipped)
         for ex in con.execute("SELECT slug, type, answer FROM exercise WHERE lesson_id=?", (lid,)):
-            types.append(ex["type"])
             shape = ANSWER_SHAPES.get(ex["type"])
             try:
                 ans = json.loads(ex["answer"]) if ex["answer"] else {}
@@ -282,16 +415,6 @@ def main() -> int:
             if ex["type"] in ("recognition", "particle_choice", "reading", "listening") \
                     and isinstance(ans, dict) and ans.get("correct") not in (ans.get("choices") or []):
                 errors.append(f"[{lslug}] exercise {ex['slug']}: 'correct' not among 'choices'")
-        if types:
-            if not any(t in RETRIEVAL for t in types):
-                errors.append(f"[{lslug}] no retrieval exercise (need ≥1 of {sorted(RETRIEVAL)})")
-            # production is required only for lessons that TEACH items; pure method/phonology lessons
-            # (no item unlocks — orientation, sounds, rhythm) need only retrieval.
-            teaches_items = con.execute(
-                "SELECT 1 FROM lesson_unlocks WHERE lesson_id=? AND unlock_type IN "
-                "('kana-family','vocab','kanji','grammar','conjugation-form','phrase') LIMIT 1", (lid,)).fetchone()
-            if teaches_items and not any(t in PRODUCTION for t in types):
-                errors.append(f"[{lslug}] no production exercise (need ≥1 of {sorted(PRODUCTION)})")
         # ⊆-topic placement consistency (WARNING — P4 placement is a known first pass; format ≠ placement)
         for mt, mid in con.execute(
                 "SELECT member_type, member_id FROM lesson_introduces WHERE lesson_id=?", (lid,)):
@@ -329,17 +452,27 @@ def main() -> int:
     # and two lessons may unlock the same headword when they mean different homograph records
     # (vocab:先 = saki in n5, sakki in n4). The published slug is the identity, so the check reads
     # the exported course tree; a genuine duplicate (same record twice) still fails.
-    exported_by: dict = {}
-    for _lf in (ROOT / "course").glob("*/topic-*/lesson-*.json"):
+    exported: dict = {}
+    for _lf in (root / "course").glob("*/topic-*/lesson-*.json"):
         _d = json.loads(_lf.read_text(encoding="utf-8"))
+        exported[_d["id"]] = _d
+    exported_by: dict = {}
+    for _lid, _d in exported.items():
         for _u in _d.get("unlocks", []):
             if _u["type"] != "srs-deck":
-                exported_by.setdefault((_u["type"], _u["ref"]), []).append(_d["id"])
+                exported_by.setdefault((_u["type"], _u["ref"]), []).append(_lid)
     for (_t, _r), ls in exported_by.items():
         if len(ls) > 1:
             errors.append(f"introduce-once violated (export space): '{_r}' unlocked by {ls}")
+    prac_errs, prac_warns = check_practice_coverage(exported, load_practice_exemptions(root))
+    errors += prac_errs
+    warns += prac_warns
+    prod_errs, punct_only = check_production_answers(exported)
+    errors += prod_errs
 
-    print(f"validated {len(lessons)} lessons: {len(errors)} errors, {len(warns)} warnings")
+    print(f"validated {len(lessons)} lessons: {len(errors)} errors, {len(warns)} warnings "
+          f"({len(exported)} exported leaves; {punct_only} production answers accepted only after "
+          f"punctuation normalisation)")
     for e in errors[:80]:
         print(f"  ERROR {e}")
     for w in warns[:20]:

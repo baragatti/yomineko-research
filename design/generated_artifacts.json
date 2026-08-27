@@ -1,0 +1,37 @@
+{
+  "why": "Published *.json under course/ and corpus/ that contracts/manifest.json deliberately does NOT catalogue as an entity, each with the reason it is not schema'd. validate_course_chain.py fails on any published JSON that is neither matched by an entity glob nor listed here, and an entry here that matches no file on disk is ALSO a failure — so this list cannot rot into a blanket amnesty. Paths are repo-relative, forward slashes, no globs. Adding a real learner-facing entity here instead of to contracts/manifest.json is the abuse this file is watched for: a derived projection, a review queue or a quarantine log qualifies; a registry does not.",
+  "files": [
+    {
+      "path": "course/outline.json",
+      "reason": "Flat derived projection of the whole course tree for navigation UI. Every field in it is recomputed from the lesson leaves and gated for exact equality by validate_course_chain.py itself, so a schema would restate a shape that is already pinned by derivation."
+    },
+    {
+      "path": "course/coverage_exemptions.json",
+      "reason": "Exemption ledger read by validate_unlock_ledger.py — a validator input recording which taught-level records are knowingly untaught. Project bookkeeping, not corpus or courseware content."
+    },
+    {
+      "path": "course/vocab_disambiguation_review.json",
+      "reason": "Teacher review queue for the homograph placements the export could not decide. A work-item list that shrinks to nothing once the decisions are made; it addresses records but publishes none."
+    },
+    {
+      "path": "course/practice_exemptions.json",
+      "reason": "Exemption ledger read by validate_exercise_contracts.py — the lessons that teach items yet render no practice, held with a reason. Validator bookkeeping, not courseware."
+    },
+    {
+      "path": "course/gating_exemptions.json",
+      "reason": "Exemption ledger read by validate_lesson_gating.py — the item references a body renders before the course unlocks them, held with a reason. Validator bookkeeping, not courseware."
+    },
+    {
+      "path": "corpus/strokes/exemptions.json",
+      "reason": "Exemption ledger read by validate_stroke_integrity.py — the kanji/kana whose stroke data is a known acquisition hole and the two records whose stroke counts legitimately disagree. Validator bookkeeping, not corpus content."
+    },
+    {
+      "path": "corpus/capabilities/exemptions.json",
+      "reason": "Exemption ledger read by validate_graph_edges.py — the lessons corpus/capabilities/lesson_map.json deliberately leaves unmapped, each with a written status. Validator bookkeeping, not corpus content."
+    },
+    {
+      "path": "corpus/exam_banks/removed_items.json",
+      "reason": "Quarantine log of the 93 exam items withdrawn by scripts/contracts/migrate_exam_banks_p7.py, kept in full so nothing is silently lost. The exam_item glob (corpus/exam_banks/n[0-9]_*.json) excludes it on purpose: these items are NOT published to learners."
+    }
+  ]
+}

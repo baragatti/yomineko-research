@@ -373,8 +373,8 @@
      ]
     },
     "meanings.pt-BR[]": {
-     "present": 5315,
-     "pct": 249.4,
+     "present": 5313,
+     "pct": 249.3,
      "required": false,
      "types": [
       "string"
@@ -410,6 +410,22 @@
      "required": false,
      "types": [
       "boolean"
+     ]
+    },
+    "readings[].example_vocab": {
+     "present": 9340,
+     "pct": 438.3,
+     "required": false,
+     "types": [
+      "array"
+     ]
+    },
+    "readings[].example_vocab[]": {
+     "present": 4591,
+     "pct": 215.4,
+     "required": false,
+     "types": [
+      "string"
      ]
     },
     "readings[].example_vocab_ids": {
@@ -2442,13 +2458,15 @@
      ]
     },
     "spans_levels[]": {
-     "present": 792,
-     "pct": 200.0,
+     "present": 596,
+     "pct": 150.5,
      "required": false,
      "types": [
       "string"
      ],
      "values": [
+      "n1",
+      "n3",
       "n4",
       "n5"
      ]
@@ -3645,15 +3663,16 @@
      ]
     },
     "source": {
-     "present": 5834,
-     "pct": 96.1,
-     "required": false,
+     "present": 6073,
+     "pct": 100.0,
+     "required": true,
      "types": [
       "string"
      ],
      "values": [
       "authored+verified",
       "authored+verified(real-correct)",
+      "listening-script",
       "reading+grammar",
       "sentence+grammar",
       "sentence+vocab",
@@ -3775,7 +3794,8 @@
       "level",
       "needs_review",
       "question",
-      "script"
+      "script",
+      "source"
      ]
     },
     "lp": {
@@ -3790,7 +3810,8 @@
       "level",
       "needs_review",
       "question",
-      "script"
+      "script",
+      "source"
      ]
     },
     "lr": {
@@ -3806,7 +3827,8 @@
       "needs_review",
       "question",
       "script",
-      "sentence"
+      "sentence",
+      "source"
      ]
     },
     "ls": {
@@ -3821,7 +3843,8 @@
       "level",
       "needs_review",
       "question",
-      "script"
+      "script",
+      "source"
      ]
     },
     "lt": {
@@ -3836,7 +3859,8 @@
       "level",
       "needs_review",
       "question",
-      "script"
+      "script",
+      "source"
      ]
     },
     "or": {
@@ -5856,8 +5880,8 @@
      "types": [
       "integer"
      ],
-     "min": 275,
-     "max": 275
+     "min": 274,
+     "max": 274
     },
     "totals.fluency": {
      "present": 1,
@@ -5876,8 +5900,8 @@
      "types": [
       "integer"
      ],
-     "min": 132,
-     "max": 132
+     "min": 135,
+     "max": 135
     },
     "totals.patterns_kept": {
      "present": 1,
@@ -5886,8 +5910,8 @@
      "types": [
       "integer"
      ],
-     "min": 275,
-     "max": 275
+     "min": 274,
+     "max": 274
     },
     "totals.phrases": {
      "present": 1,
@@ -6153,32 +6177,32 @@
      ]
     },
     "drills[].examples": {
-     "present": 275,
-     "pct": 381.9,
+     "present": 274,
+     "pct": 380.6,
      "required": false,
      "types": [
       "array"
      ]
     },
     "drills[].examples[]": {
-     "present": 825,
-     "pct": 1145.8,
+     "present": 822,
+     "pct": 1141.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "drills[].pattern": {
-     "present": 275,
-     "pct": 381.9,
+     "present": 274,
+     "pct": 380.6,
      "required": false,
      "types": [
       "string"
      ]
     },
     "drills[].strand": {
-     "present": 275,
-     "pct": 381.9,
+     "present": 274,
+     "pct": 380.6,
      "required": false,
      "types": [
       "string"
@@ -6325,8 +6349,8 @@
      ]
     },
     "patterns[]": {
-     "present": 275,
-     "pct": 381.9,
+     "present": 274,
+     "pct": 380.6,
      "required": false,
      "types": [
       "string"
@@ -6341,8 +6365,8 @@
      ]
     },
     "patterns_chunked[]": {
-     "present": 132,
-     "pct": 183.3,
+     "present": 135,
+     "pct": 187.5,
      "required": false,
      "types": [
       "string"
@@ -6749,7 +6773,7 @@
       "string"
      ],
      "values": [
-      "2026-08-26"
+      "2026-08-27"
      ]
     },
     "schema_version": {

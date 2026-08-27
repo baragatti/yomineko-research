@@ -106,7 +106,7 @@ O 桜 (flor de cerejeira) tem o seu 盛り ('auge') por poucos dias na primavera
 
 
 ### 5. (sentence_build) Monte 'Para alguém que não estuda, vai bem demais (nas notas).' com as peças: [成績がいい] [わりには] [勉強しない]
-- **Resposta:** `{"order": ["勉強しない", "わりには", "成績がいい"], "text": "勉強しない割には成績がいい"}`
+- **Resposta:** `{"order": ["勉強しない", "わりには", "成績がいい"], "text": "勉強しないわりには成績がいい"}`
 - 勉強しない ('não estuda') + わりには ('para o que se esperava') + 成績がいい ('as notas são boas'). わりには marca a desproporção: dado que não estuda, surpreende ir tão bem.
 
 

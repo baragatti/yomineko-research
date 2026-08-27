@@ -103,7 +103,7 @@ export interface ExamItem {
       text?: string;
     }[];
   sentence?: string;
-  source?: string;
+  source: string;
   stem?: string;
   target?: string;
   vocab?: string;
@@ -251,6 +251,7 @@ export interface Kanji {
   radical_char: string;
   readings: {
       common?: boolean;
+      example_vocab?: string[];
       example_vocab_ids?: number[] | null;
       introduced_at_level?: Level | null;
       note?: LocaleText | null;

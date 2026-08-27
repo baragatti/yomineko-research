@@ -4,9 +4,23 @@
 Provenance, ai_generated/needs_review discipline, level correctness, orphan graph edges, localized_text
 health (JSON parse / em dash / orphans), enum validity, registry completeness, conjugation coverage, and
 the §10 numbers. Read-only. Prints PASS/WARN/FAIL per check. Run with venv python.
+
+WHY TWO CHECKS WERE REWRITTEN (review finding G17)
+--------------------------------------------------
+`chk(bad_level == 0 or "warn", …)` and `chk(cj >= conj_targets * 0.97 or "warn", …)` could not report FAIL:
+in Python each expression evaluates to True or to the truthy string 'warn', never to False, and chk() only
+counts a failure when the value is neither. Both are now written as an explicit True / 'warn' / False, so
+the FAIL branch is reachable. The conjugation one had also been stuck on WARN since the n1/n2 vocabulary
+arrived, because its denominator counted every vocab record with a verb_class/adj_class including the two
+levels the bank does not cover by design — a ratio that can never reach the threshold measures nothing. It
+is now scoped to the levels corpus/conjugations actually ships, where real coverage is 1,156/1,156, and
+those targets are counted from the exported corpus JSON (the source of truth) rather than the index.
+
+Usage: integrity_audit.py [--root PATH]
 """
 from __future__ import annotations
 
+import argparse
 import json
 import sqlite3
 import sys
@@ -17,8 +31,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from dissect import POS_MAP, INFLECTION_MAP, PARTICLE_FUNCTION_MAP  # noqa: E402
 
-DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
+_ap = argparse.ArgumentParser()
+_ap.add_argument("--root", default=str(Path(__file__).resolve().parents[2]),
+                 help="tree to audit (default: repo root)")
+ROOT = Path(_ap.parse_args().root).resolve()
+DB = ROOT / "db" / "corpus.sqlite"
 LV = {"pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
+# Sentences whose declared level sits below a component's level fall back to computed_level in the app, so
+# a handful are tolerable; the count is frozen here so the tolerance cannot quietly grow into the corpus.
+SENTENCE_LEVEL_FALLBACK_CEILING = 585
+CONJ_COVERAGE_FLOOR = 0.97  # below this the bank is missing drills for words the course teaches
 c = sqlite3.connect(DB)
 fails = warns = 0
 
@@ -41,7 +63,8 @@ gen_noreview = c.execute("SELECT count(*) FROM sentence WHERE ai_generated=1 AND
 chk(gen_noreview == 0, "ai_generated ⇒ needs_review", f"{gen_noreview} violations")
 ai = c.execute("SELECT count(*) FROM sentence WHERE ai_generated=1").fetchone()[0]
 real = n - ai
-chk(True, "real vs AI sentences", f"{real} real ({round(100*real/n)}%) / {ai} AI ({round(100*ai/n)}%)")
+# informational, not a check: there is no threshold a real/AI split could fail here
+print(f"  [info] real vs AI sentences: {real} real ({round(100*real/n)}%) / {ai} AI ({round(100*ai/n)}%)")
 
 # 2. level correctness: sentence.level >= max component level
 bad_level = 0
@@ -53,7 +76,9 @@ for sid, slvl in c.execute("SELECT id,level FROM sentence"):
     mx = max([LV.get(x, 0) for x in comp] + [0])
     if mx and LV.get(slvl, 0) < mx:
         bad_level += 1
-chk(bad_level == 0 or "warn", "sentence.level ≥ component levels", f"{bad_level} below (computed_level fallback)")
+chk(True if bad_level == 0 else ("warn" if bad_level <= SENTENCE_LEVEL_FALLBACK_CEILING else False),
+    "sentence.level ≥ component levels",
+    f"{bad_level} below (computed_level fallback; ceiling {SENTENCE_LEVEL_FALLBACK_CEILING})")
 
 # 3. orphan graph edges
 for tbl, col, ref in [("sentence_vocab", "vocab_id", "vocab"), ("sentence_grammar", "grammar_id", "grammar_point"),
@@ -92,12 +117,24 @@ gno = c.execute("SELECT count(*) FROM grammar_point g WHERE NOT EXISTS (SELECT 1
                 "l.entity_type='grammar_point' AND l.entity_id=g.id AND l.field='explanation')").fetchone()[0]
 chk(gno == 0, "every grammar point has explanation", f"{gno} without")
 
-# 7. conjugation coverage
-conj_targets = c.execute("SELECT count(*) FROM vocab WHERE verb_class IS NOT NULL OR adj_class IS NOT NULL").fetchone()[0]
+# 7. conjugation coverage — scoped to the levels the bank actually ships (n1/n2 have no bank by design,
+#    and counting them made the ratio unreachable, so the check could only ever WARN).
 cj = 0
-for f in (Path(DB).parents[1] / "corpus" / "conjugations").glob("*.json"):
-    cj += len(json.loads(f.read_text(encoding="utf-8")))
-chk(cj >= conj_targets * 0.97 or "warn", "conjugation bank covers verbs/adj", f"{cj}/{conj_targets}")
+bank_levels: set[str] = set()
+for f in (ROOT / "corpus" / "conjugations").glob("*.json"):
+    recs = json.loads(f.read_text(encoding="utf-8"))
+    cj += len(recs)
+    bank_levels |= {r.get("level") for r in recs if isinstance(r, dict) and r.get("level")} or {f.stem}
+conj_targets = 0
+for f in (ROOT / "corpus" / "vocab").glob("*.json"):
+    if f.stem not in bank_levels:
+        continue
+    conj_targets += sum(1 for v in json.loads(f.read_text(encoding="utf-8"))
+                        if v.get("verb_class") or v.get("adj_class"))
+ratio = cj / conj_targets if conj_targets else 0.0
+chk(True if (conj_targets and cj >= conj_targets) else ("warn" if ratio >= CONJ_COVERAGE_FLOOR else False),
+    "conjugation bank covers verbs/adj",
+    f"{cj}/{conj_targets} at levels {sorted(bank_levels)} (floor {CONJ_COVERAGE_FLOOR:.0%})")
 
 # 8. §10 coverage numbers
 vc = Counter(r[0] for r in c.execute("SELECT vocab_id FROM sentence_vocab"))
@@ -107,7 +144,9 @@ for lvl in ("n5", "n4"):
     gids = [r[0] for r in c.execute("SELECT id FROM grammar_point WHERE level=?", (lvl,))]
     v3 = sum(1 for i in vids if vc.get(i, 0) >= 3)
     g5 = sum(1 for i in gids if gc.get(i, 0) >= 5)
-    chk(True, f"§10 {lvl}", f"vocab ≥3 {v3}/{len(vids)} ({100*v3//len(vids)}%); grammar ≥5 {g5}/{len(gids)} ({100*g5//len(gids)}%)")
+    # informational: per-level §10 coverage is gated by validate_level_coverage advisory work,
+    # not here — printing it as [PASS] claimed a check that never existed
+    print(f"  [info] §10 {lvl}: vocab ≥3 {v3}/{len(vids)} ({100*v3//len(vids)}%); grammar ≥5 {g5}/{len(gids)} ({100*g5//len(gids)}%)")
 
 print(f"\n=== audit: {fails} FAIL, {warns} WARN ===")
 c.close()

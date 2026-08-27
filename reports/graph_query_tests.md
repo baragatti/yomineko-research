@@ -1,60 +1,37 @@
 # §1.7 cross-cutting graph query tests
 
-_Proves the corpus is one queryable graph (acceptance #10). With the sentence bank still small (P5 in progress), sentence-dependent results are sparse, but every JOIN path resolves._
+_Acceptance #10. The four spec queries are run VERBATIM — every clause of the spec sentence is applied — against the exported JSON under `corpus/` (never `db/corpus.sqlite`). A query that returns zero rows FAILS. A query listed in the WAIVERS table of `scripts/validate/graph_queries.py` is allowed to fail with its reason recorded; if it starts returning rows, the gate fails so the waiver is removed._
 
-## Q1 — N5 sentences containing a godan verb (family) AND the を particle
-```sql
-SELECT DISTINCT s.jp FROM sentence s
-JOIN particle p   ON p.sentence_id = s.id AND p.particle = 'を'
-JOIN sentence_vocab sv ON sv.sentence_id = s.id
-JOIN family_member fm  ON fm.member_type='vocab' AND fm.member_id = sv.vocab_id
-JOIN family f          ON f.id = fm.family_id AND f.slug = 'grp:godan'
-WHERE s.level = 'n5'
-```
-**44 rows.** PASS ✓
-- 大学を出てから10年になります。
-- デパートで来年のカレンダーを買いました。
-- 名前を書くだけでいいです
-- りんごとかバナナとかをよく買う
-- ひるごはんを食べにいきます
-- 本を買いに本やにいきました
-- 誰がこの本を読みましたか
-- 誰とえいがを見にいきますか
+## Q1 — All N5 sentences containing a godan verb from the *daily-routine* family **and** the を particle.
 
-## Q2 — vocab using kun-reading た.べる of 食 (+ #dissected sentences)
-```sql
-SELECT v.headword, (SELECT count(*) FROM sentence_vocab sv WHERE sv.vocab_id=v.id) FROM vocab v WHERE v.id IN (?,?)
-```
-**2 rows.** PASS ✓
-- 食べ物 — 5 sentences
-- 食べる — 101 sentences
+**0 rows.**
 
-## Q3 — 言-component kanji across N5–N4, ordered by frequency
-```sql
-SELECT k.character, k.level, k.freq_rank FROM kanji_component kc
-JOIN kanji k ON k.id = kc.kanji_id
-WHERE kc.component = '言' AND k.level IS NOT NULL
-ORDER BY k.freq_rank IS NULL, k.freq_rank
-```
-**70 rows.** PASS ✓
-- 議 (n3, freq 25)
+**WAIVED** — 0 rows is the CORRECT answer today, and it is the defect: the 28 semantic_field families hold no verbs, so (grp:godan ∩ daily-routine) is empty by construction — build_families_full.py fills a semantic field only with vocab left over after the conjugation_class assignment, and every verb is already in a conjugation class. Finding G03/G04; STATE.md line 1927 'P4b — full families' owns the rebuild of the family layer over n5–n3. Delete this waiver once a semantic field can contain a verb.
+
+## Q2 — Every vocab item using the kun-reading た.べる of 食, with its dissected sentences.
+
+**2 rows.**
+- 食べる (vocab:1358280) — 101 dissected sentences
+- 食べ物 (vocab:1358340) — 5 dissected sentences
+
+PASS
+
+## Q3 — All members of the 言-component kanji family across N5–N4, ordered by frequency.
+
+**7 rows.**
 - 言 (n5, freq 83)
-- 調 (n3, freq 87)
 - 話 (n5, freq 134)
-- 設 (n2, freq 145)
-- 記 (n3, freq 149)
-- 認 (n3, freq 198)
-- 信 (n3, freq 208)
+- 計 (n4, freq 228)
+- 語 (n5, freq 301)
+- 説 (n4, freq 326)
+- 試 (n4, freq 392)
+- 読 (n5, freq 618)
 
-## Q4 — grammar points contrasting with は (+ #example sentences)
-```sql
-SELECT g2.key, g2.label_pt,
-       (SELECT count(*) FROM sentence_grammar sg WHERE sg.grammar_id = g2.id)
-FROM grammar_related gr
-JOIN grammar_point g1 ON g1.id = gr.grammar_id AND g1.key = 'wa-topic-marker'
-JOIN grammar_point g2 ON g2.id = gr.related_grammar_id
-WHERE gr.relation = 'contrast'
-```
-**1 rows.** PASS ✓
-- ga — None (8 sentences)
+PASS
+
+## Q4 — Every grammar point that contrasts with は, with example sentences.
+
+**0 rows.**
+
+**WAIVED** — The relation TYPE is not exported. grammar.related is a bare list of keys (wa-topic-marker -> ['ga']) with no 'contrast'/'synonym'/'confusable' label, and db/corpus.sqlite's grammar_related.relation is not carried into corpus/grammar/*.json, so the §1.7 clause 'that contrasts with は' cannot be evaluated — every candidate is filtered out for having no relation at all. Finding G04 (family/relation edges are write-only). Delete this waiver once export_corpus.py emits the relation.
 
