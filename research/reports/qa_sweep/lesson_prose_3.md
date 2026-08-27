@@ -1,835 +1,834 @@
 # QA sweep — lesson prose, part 3/3: every lesson body under `course/n3`
 
-**Slice:** all 101 lesson bodies in `course/n3/topic-38-*` … `topic-52-*` (read in full, via a renderer that
-resolves `<grammar>/<vocab>/<kanji>` refs the way `prototype/app/lib/render-body.server.ts` does, so the
-prose was judged as a learner sees it, not as the `.md` export prints it).
-**Out of scope by instruction:** sentence `structure_explanation` fields; the open items already listed in
-`STATE.md` (the 14 rows of `course/vocab_disambiguation_review.json` — 上, 柄, 金, 品, 数, 得る, 注ぐ, 額,
-後, 何方, 様 — were found by a reading-vs-corpus scan and are **excluded** from every count below).
+**Scope.** All 101 lesson bodies in `course/n3/topic-38-conectores` … `topic-52-revisao`
+(15 topics, 644,643 characters of `body`), read in full as a Brazilian learner would read them.
+Judged against `design/translation_style.md`.
 
-**Clean results worth stating:** furigana integrity is clean — 0 defects over every `<jp reading="…">` in the
-slice (no kanji or latin inside a reading; surface kana always a subsequence of the reading; no
-implausibly short readings). XML tag balance is clean — 0 unclosed/stray tags in 101 bodies. Em dashes: 0.
-`gp-NN` codes, `sent:`/`les:`/`top:` id leaks, `TODO`/`Retitle`/reviewer instructions in learner text: 0.
+**Excluded by instruction and honoured:** sentence `structure_explanation` fields (being re-authored
+elsewhere); the open items already recorded in `STATE.md` — the 875 `<jp>` spans with kanji and no
+`reading` attribute, the homograph-ref queue (上/じょう, 柄/がら, 品/しな, 金/きん) and the 20 headwords
+in `course/vocab_disambiguation_review.json`, the i+1 sentence re-selection, the empty `needs[]`
+model, the pending listening audio, and the ateji list. Where a defect class overlapped one of those
+queues I chose exemplars from **outside** it, so nothing below restates a known item.
+
+Findings are ordered by severity. Every one carries the lesson id, the exact current text, why it is
+wrong, and a concrete fix.
 
 ---
 
-## A. pt-BR text defects
+## Class A — pt-BR prose with the diacritics stripped (4 lessons, ~30 words)
 
-### A1 — Accent-stripped Portuguese across `topic-38-conectores` lessons 01–04 (systematic)
+This is the largest single concentration of defects in the slice and it is confined to
+**`topic-38-conectores` lessons 01–04**. The rest of n3 (97 lessons) is diacritically clean, so this
+is not a corpus-wide condition; it is four lesson bodies that a previous accent pass did not reach.
+`fix_accents_lessons.py` and `accent_sweep_localized.py` repaired description/objectives/exercise
+fields, but these four **bodies** still carry the damage.
 
-These four lessons never received the diacritic repair the rest of the tree did. 53 unambiguous stripped
-tokens plus a long tail of minimal pairs (`é/e`, `está/esta`, `só/so`, `já/ja`, `dá/da`, `lá/la`) that a
-mechanical fixer must not touch blind. Everything from `les:n3-conectores-05` onward is clean.
-
-**`les:n3-conectores-01`** — unambiguous: `classico` `espontaneo` `identicos` `obvio` `mantem` `ate`
-`arvore` `mutuo` `cafe` (×2) `cha` (×2) `album` `ja`. Representative lines:
+### A1 — `les:n3-conectores-01` (12+ stripped words in the body)
 
 > "Confundir a soma com a escolha **e** o erro **classico** do brasileiro aqui"
-> → "…**é** o erro **clássico**…"
+> "A imagem literal **e** boa: 上 **e** 'em cima', então **e** como empilhar um segundo ponto"
+> "acrescenta mais um item ou mais uma ação a algo **ja** mencionado"
+> "Tem um tom mais falado e **espontaneo**."
+> "それと **e** o jeito de conversa."
+> "Você vai tomar **cafe**? Ou (então) **cha**?"
+> "são quase **identicos** na escrita"
+> "a escolha entre frases **e** それとも"
+> "= 'claro, evidente, **obvio**'. **E** um adjetivo な."
+> "(**album**)"
+> "cada vogal **mantem** seu som **ate** o fim … **e** 'a-i-ro-n'"
+> "traz a ideia de '**mutuo**'"
+> "Em cima **esta** 安 … e embaixo a **arvore** (木)"
 
-> "A imagem literal **e** boa: 上 **e** \"em cima\", então **e** como empilhar um segundo ponto por cima do primeiro."
-> → "A imagem literal **é** boa: 上 **é** \"em cima\", então **é** como empilhar…"
+**Fix:** é / clássico / é boa / é "em cima" / é como / já / espontâneo / é o jeito / café / chá /
+idênticos / é それとも / óbvio / É um adjetivo / álbum / mantém / até / é "a-i-ro-n" / mútuo / está /
+árvore.
 
-> "\"Você vai tomar **cafe**? Ou (então) **cha**?\"" → "…**café**? Ou (então) **chá**?"
+### A2 — `les:n3-conectores-02`
 
-> "acrescenta mais um item ou mais uma ação a algo **ja** mencionado … Tem um tom mais falado e **espontaneo**."
-> → "…algo **já** mencionado … mais falado e **espontâneo**."
+> "だけど / けど: mas, **so** que, mesmo assim"
+> "**E** a versão coloquial de しかし"
+> "normalmente usamos **so** けど"
+> "= 'Este filme **e** longo, mas **e** interessante.'"
+> "existe outro けど que **so** SUAVIZA … ('**e** que...')"
+> "aqui o sentido **e** sempre de OPOSIÇÃO"
+> "**E** o nosso 'ou seja'"
+> "tirar uma conclusão **logica** … Ele **e** o termo neutro … すなわち … **e** mais **tecnico** e formal, e 要するに **e** 'resumindo'"
+> "**E** uma palavra de transição independente"
+> "= 'A propósito, qual **e** a agenda de hoje?'"
+> "por isso 'mudando de assunto' **as vezes** traduz melhor … aqui, sozinho no começo da fala, **e** sempre 'a propósito'"
+> "o substantivo **e** あらわれ" / "o par transitivo **e** あてる"
+> "= 'novo, **inedito**'"
+> "= '**forca**, vigor, energia'"
+> "= '**vestigio**, marca'"
+> "Esse par **e** um ponto **classico** de confusão"
+> "significa '**superficie**, tabela, expressar'"
+> "O radical da esquerda **e** a joia/rei (王) e **a direita** o ver (見)"
 
-> "«明らか» (あきらか) = \"claro, evidente, **obvio**\". **E** um adjetivo な." → "**óbvio**. **É** um adjetivo な."
+**Fix:** só que / É a versão / só けど / é longo, mas é interessante / só SUAVIZA / "é que..." / é sempre /
+É o nosso / lógica / Ele é / é mais técnico / é "resumindo" / É uma palavra / qual é / às vezes /
+é sempre / é あらわれ / é あてる / inédito / força / vestígio / é um ponto clássico / superfície /
+é a joia/rei … e **à** direita.
 
-> "cada vogal **mantem** seu som **ate** o fim … **e** \"a-i-ro-n\"" → "**mantém** … **até** … **é**"
+### A3 — `les:n3-conectores-03`
 
-> "O kanji 相 traz a ideia de \"**mutuo**\" … Em cima **esta** 安 … e embaixo a **arvore**"
-> → "\"**mútuo**\" … Em cima **está** 安 … a **árvore**"
+Heading: `<heading level="2"><text>Explicando o porque: justificar com clareza e cortesia</text></heading>`
+— but the lesson **title** is "Explicando o **porquê**". The h2 and the title disagree on the same word,
+and the h2 is the wrong spelling (interrogative "por que" ≠ noun "porquê").
 
-> checklist: "Sei que entre substantivos o \"ou\" **e** か, e entre perguntas **e** それとも."
-> → "…o \"ou\" **é** か, e entre perguntas **é** それとも."
+> "de um pedido **e** essencial para soar adulto … Você **ja** conhece o から"
+> "a versão educada e **enfatica**" (×3 in body + description)
+> "A ordem **e**: primeiro o motivo … **E** a versão formal e ligeiramente mais **enfatica**"
+> "= 'Porque **esta** frio, vamos fechar a janela.'"
+> "retoma um motivo **ja** dado"
+> "なぜなら: isso porque, a razão **e** que"
+> "abre uma frase nova dedicada **SO** a justificar"
+> "o fechamento com から … **e** quase obrigatório"
+> "= 'Hoje não vou. Isso porque **esta** chovendo.'"
+> "não **esqueca** o から no fim, mesmo **ja** tendo dito … a gente diz **so** 'porque' … a causa fica **ABRACADA** entre なぜなら … soa formal e **e tipico** de textos escritos"
+> "'respiração, **folego**'), い ('**estomago**')" / "**Saude**: いし ('**medico**, doutor'). Combina com causa: 'Vou ao **medico**, porque o **estomago doi**'"
+> "'**oleo**'" / "'diabo, **demonio**'" / "**Otimo** para abrir uma recusa educada"
+> "que se **le** igual mas se escreve diferente"
+> "**So** o contexto **e** o kanji separam os dois"
+> "O radical da esquerda **e** a água" / "O radical externo **e** o portão" / "cresce o que **e** real"
 
-**`les:n3-conectores-02`** — `classico` `logica` `forca` `inedito` `vestigio` `superficie` `tecnico`, plus
-`so`/`e`.
+**Fix:** porquê (heading) / é essencial / já conhece / enfática / A ordem é / É a versão / está frio /
+já dado / a razão é que / SÓ a justificar / é quase obrigatório / está chovendo / esqueça / já tendo /
+só "porque" / ABRAÇADA / é típico / fôlego / estômago / Saúde / médico / dói / óleo / demônio / Ótimo /
+lê / Só o contexto e o kanji / é a água / é o portão / o que é real.
 
-> "**E** a versão coloquial de しかし e だが" → "**É** a versão coloquial…"
-> "Dentro de uma mesma frase, normalmente usamos **so** けど" → "**só** けど"
-> "\"Este filme **e** longo, mas **e** interessante.\"" → "**é** longo, mas **é** interessante"
-> "tirar uma conclusão **logica**" → "**lógica**"; "e mais **tecnico** e formal" → "**técnico**"
-> "«勢い» (いきおい) = \"**forca**, vigor, energia\"" → "**força**" (as written it means *gallows*)
-> "«新た» (あらた) = \"novo, **inedito**\"" → "**inédito**"; "«跡» (あと, \"**vestigio**\")" → "**vestígio**"
-> "O kanji 表 significa \"**superficie**, tabela, expressar\"" → "**superfície**"
-> "Esse par **e** um ponto **classico** de confusão" → "**é** um ponto **clássico**"
+### A4 — `les:n3-conectores-04`
 
-**`les:n3-conectores-03`** — `estomago` (×2) `medico` (×2) `Saude` `folego` `oleo` `demonio` `Otimo`
-`tipico` `esqueca` `le` `demonio` `ABRACADA` `ja`, plus `é/e`, `está/esta`, `só/so`.
+> "**da** uma lista de exemplos que NÃO **e** completa: os itens citados são **so** alguns"
+> "Ele **ja** carrega a ideia de 'e coisas do **genero**' … など **e** neutro"
+> "なんか: coisas como... ou sei **la**, nem ligo"
+> "**e** a versão coloquial de など … com tom de **desdem**. O contexto **e** a entonação decidem qual dos dois **e**."
+> "= 'Ele toca **ate** coisas como piano.'"
+> "vira 'que nada', 'nem ligo para', 'sei **la**' ou um 'isso de' carregado de **desdem**. なんか **e** bem informal … onde など **e** a escolha segura. E não confunda com なんて, que **e** mais exclamativo e **enfatico**."
+> "**Otima** para o sentido oposto de など"
+> "A escrita em kanji **e** rara; quase sempre se **ve** em kana"
+> "o oposto **e** 帰り" / "'não pode, **e** proibido, **e** ruim'"
+> "O う japonês tem **labios** neutros"
+> "'**seguranca**'" / "**E** um sufixo muito produtivo" / "uma pessoa em **pe** e outra de **cabeca** para baixo"
+> "'o melhor, **otimo**'" / "O radical da esquerda **e** o fio"
+> "Vocabulário para fechar a **serie**"
+> Checklist: "Sei que なんか **e** a versão coloquial de など **e** pode carregar **desdem**."
 
-> h3 heading: "**なぜなら: isso porque, a razão e que**" → "a razão **é** que" (the h2 has the same problem:
-> "Explicando o **porque**" while the lesson title correctly reads "Explicando o **porquê**")
-> "\"**Porque** **esta** frio, vamos fechar a janela.\"" → "**Porque está** frio…"
-> "não **esqueca** o から … a causa fica **ABRACADA** entre なぜなら … e から"
-> → "não **esqueça** … fica **ABRAÇADA**"
-> "«胃» (い, \"**estomago**\") … «医師» (いし, \"**medico**, doutor\") … \"Vou ao **medico**, porque o **estomago** doi\""
-> → "**estômago** … **médico** … **dói**"
-> "«息» (いき, \"respiração, **folego**\")" → "**fôlego**"; "«油» (あぶら, \"**oleo**\")" → "**óleo**"
-> "«悪魔» (あくま, \"diabo, **demonio**\")" → "**demônio**"; "**Otimo** para abrir uma recusa" → "**Ótimo**"
-> "não confunda com 以外 … que se **le** igual" → "se **lê** igual"
-> "**So** o contexto e o kanji separam os dois" → "**Só** o contexto…"
-
-**`les:n3-conectores-04`** — `ate` `cabeca` `pe` `desdem` (×3) `enfatico` `genero` `labios` `otimo`
-`seguranca` `serie` `ve` `ja`, plus `só/so`, `lá/la`, `dá/da`.
-
-> h3 heading: "**なんか: coisas como... ou sei la, nem ligo**" → "sei **lá**"
-> h3 heading: "**Vocabulário para fechar a serie**" → "a **série**"
-> "O marcador «～など» **da** uma lista … os itens citados são **so** alguns" → "**dá** uma lista … **só** alguns"
-> "com tom de **desdem**" (×3) → "**desdém**"
-> "\"Ele toca **ate** coisas como piano.\"" → "**até**"
-> "que **e** mais exclamativo e **enfatico**" → "**é** … **enfático**"
-> "Ele **ja** carrega a ideia de \"e coisas do **genero**\"" → "**já** … do **gênero**"
-> "A escrita em kanji **e** rara; quase sempre se **ve** em kana" → "**é** rara … se **vê**"
-> "«行けない» = \"não pode, **e** proibido, **e** ruim\"" → "**é** proibido, **é** ruim"
-> "O う japonês tem **labios** neutros" → "**lábios**"
-> "Aparece em 全部 … e em 安全 (\"**seguranca**\")" → "**segurança**"
-> "uma pessoa em **pe** e outra de **cabeca** para baixo" → "em **pé** … de **cabeça** para baixo"
-> "「最高」 (\"o melhor, **otimo**\")" → "**ótimo**"
-
-**Fix:** re-run the diacritic pass on these four files only, with the minimal pairs decided by hand
-(`e→é` wherever it is the copula, `esta→está`, `so→só`, `ja→já`, `da→dá`, `la→lá`, `porque→porquê` in the
-h2 of lesson 03).
-
-### A2 — `les:n3-estrutura-02`: a minimal-pair note whose two halves are the same string
-
-> "Note os pares mínimos de duração: **しょう (curto) versus しょう longo** muda a palavra inteira."
-
-The contrast is written with the identical string on both sides, so the note teaches nothing, and the list
-below it (上達 じょうたつ / 状態 じょうたい / 症状 しょうじょう / 少々 しょうしょう) is exactly where the
-distinction matters. **Fix:** "…**しょ (curto) versus しょう (longo)** muda a palavra inteira".
-
-### A3 — Missing space before an opening parenthesis (3 sites)
-
-- `les:n3-conectores-06`: "«昼食» (ちゅうしょく) - almoço, a refeição do **meio-dia(mais** formal que 昼ごはん)."
-- `les:n3-estado-02`, h3: "**Vocabulário do dia(em kana)**"
-- `les:n3-estado-03`, h3: "**Vocabulário do dia(em kana)**"
-
-`les:n3-estado-01` and `les:n3-estado-04` write the same heading correctly ("Vocabulário do dia (em kana)"),
-so two of the four are wrong. **Fix:** insert the space.
-
-### A4 — Chips run together with the surrounding punctuation (`topic-42-estado`, lessons 01–04)
-
-> `les:n3-estado-01`: "Nesta lição você junta três ferramentas para isso**:«～ている»,«～かけ»** e «～たて»."
-> `les:n3-estado-02`: "Três ferramentas**:«～上げる»,«～切れない»** e «～ちゃった»."
-> `les:n3-estado-03`: "Três ferramentas**:«～ないで»,«～ずに»** e «～まま»."
-> `les:n3-estado-04`: "Três formas de descrever o estado das coisas**:«～っぱなし»** (deixou e largou)**,«～でいっぱい»** (cheio de)…"
-
-Every vocabulary bullet in these four lessons has the same problem: `«価格»(「かかく」)` with no space
-between the chip and the parenthesis, against the spaced form used everywhere else in n3.
-**Fix:** one space after `:` and after each `,`, and one space before every `(`.
-
-### A5 — `les:n3-desejos-03`: a vulgar Portuguese word inside a pronunciation note
-
-> "Armadilha PT: 「くう」 tem duas vogais, duas batidas: 'ku-u', não um **'cu'** curto."
-
-The note otherwise uses Hepburn (`ku-u`, `ku-ra-u`), then switches to Portuguese spelling for the one
-syllable where that spelling is an obscenity. **Fix:** "…não um **'ku'** curto." (keep the romaji register
-consistent with the rest of the note).
-
-### A6 — `les:n3-causa-08`: broken Portuguese in the 例 reading note
-
-> "Mas em 例えば ('por exemplo'), que você já viu, **ele lê たと-**. Mesmo kanji, leituras diferentes."
-
-"ele lê" makes the kanji the subject of *reading*; and the trailing hyphen in `たと-` is a dictionary
-convention the learner has not been taught. **Fix:** "…em 例えば ('por exemplo'), que você já viu,
-**lê-se たと** (例えば)."
-
-### A7 — `les:n3-desejos-01`: a kanji called a "leitura"
-
-> "O kanji «良» significa 'bom, agradável'. É a versão 'séria' de 「いい」: **a leitura 「良」 está dentro de
-> 「よかった」**, que você vai usar muito para arrependimentos mais à frente."
-
-良 is a kanji, not a reading, and よかった is written 良かった — the kanji is *the head of* the word, not
-"inside" it. **Fix:** "…: é o 良 de **良かった**, que você vai usar muito…"
-
-### A8 — `les:n3-concessao-02`: the くせに formation note points at the wrong item
-
-> "A montagem é **como a do 「の」**: verbo simples + くせに, adjetivo-な + な + くせに, substantivo + の + くせに."
-
-The pattern being echoed is 「のに」 (which the same note contrasts three lines later), not the particle の.
-**Fix:** "A montagem é **a mesma de 「のに」**: …".
-
-### A9 — `les:n3-limites-01`: a garbled pronunciation example
-
-> "Vantagem PT: o 「そ」 de 「速度」 tem o 'o' limpo de 'avô', não levante para 'u' **como em 'sôku' que vira
-> 'suku'**. Cada vogal mantém sua qualidade até o fim."
-
-`sôku` is not a word in either language and 速度 is そくど, not そく. **Fix:** "…não levante para 'u': é
-**so-ku-do**, nunca **su-ku-do**."
-
-### A10 — `les:n3-intencao-06`: "a vogal final" when the whole mora changes
-
-> "Não confunda ところが com ところで. ところが introduz um contraste inesperado…; ところで muda de assunto….
-> **A vogal final muda tudo.**"
-
-が → で changes consonant *and* vowel. **Fix:** "**A última sílaba muda tudo.**"
-
-### A11 — `les:n3-concessao-04`: an unusable gloss for 氏
-
-> "«氏» (「し」) = 'senhor/senhora' **(sobrenome formal)**."
-
-氏 is a suffix that attaches to a surname (田中氏); "(sobrenome formal)" reads as if 氏 *were* a surname, and
-"senhor/senhora" hides that it is written, not spoken. **Fix:** "«氏» (し) = sufixo formal de tratamento,
-colado ao sobrenome (田中氏, 'o Sr. Tanaka'); típico de texto escrito e noticiário."
+**Fix:** dá / não é completa / só alguns / já carrega / gênero / é neutro / sei lá / é a versão /
+desdém / O contexto e a entonação decidem qual dos dois é / até / é bem informal / é a escolha /
+é mais exclamativo e enfático / Ótima / é rara / se vê / é 帰り / é proibido, é ruim / lábios /
+segurança / É um sufixo / pé / cabeça / ótimo / é o fio / série / é a versão … e pode carregar desdém.
 
 ---
 
-## B. Japanese examples that are wrong, or that do not demonstrate the point
+## Class B — broken or missing markup that reaches the learner's screen
 
-### B1 — `les:n3-concessao-01`: the opening example of ても contains no ても
+### B1 — `les:n3-deveres-02`: a vocabulary entry with **no headword**
 
-> "Você já viu o 「ても」 em formas como 「**いいですか**」 ('pode? / tudo bem se?')."
+Raw body:
 
-Raw: `<jp reading="いいですか">いいですか</jp>`. 「いいですか」 alone means "is it all right?" and has no ても
-at all; the form the learner met at N5 is 「〜てもいいですか」. **Fix:** replace with
-`<jp reading="たべてもいいですか">食べてもいいですか</jp>` (or 「〜てもいいですか」 as the pattern).
+```
+<item><text> (</text><jp>きじゅん</jp><text>) = 'critério, padrão de referência'.</text></item>
+```
 
-### B2 — `les:n3-intencao-03`: 空き缶 offered as an example of 空 read から
+Every sibling item in that list opens with `<vocab ref="vocab:…"/>`. This one does not, so the learner
+reads a bullet that literally begins with a space and an open parenthesis: " (きじゅん) = 'critério,
+padrão de referência'." — the word 基準 is never shown.
+**Fix:** insert the missing `<vocab ref="vocab:1222410"/>` (基準) before the reading, matching the
+sibling items.
 
-> "«空» (「から」): 'vazio, estar vazio' (**a lata vazia é 「空き缶」**)."
+### B2 — `les:n3-deveres-03`: a kanji introduced without the kanji, duplicated from the next lesson
 
-空き缶 is あきかん — the 空 there is 空く(あく), not から. The bullet proves the opposite of what it claims,
-and the same lesson bank already has the correct example (`les:n3-conectores-05` uses 空の箱).
-**Fix:** "(a caixa vazia é 「空箱」/「空の箱」, からばこ)" or 「空手」(からて).
+Raw body, first paragraph under `<heading level="3"><text>Kanji novos</text></heading>`:
 
-### B3 — `les:n3-tempo-03`: 抱く glossed "abraçar" while the record it links to is いだく
+```
+<p><text>O kanji </text><text> ('comércio, negociar') aparece em </text><jp reading="しょうにん">商人</jp>…
+```
 
-> "«抱く» 'abraçar'; «至る» 'chegar a, alcançar'."
+The `<kanji ref="kanji:商"/>` is missing, so the page reads **"O kanji ('comércio, negociar') aparece
+em 商人…"**. 商 is also **not** in this lesson's `unlocks`. The paragraph is a stranded near-copy of the
+one that legitimately introduces 商 in the *next* lesson, `les:n3-deveres-04`:
 
-The bullet links `vocab:1584090`, whose headword is 抱く / **いだく**, corpus gloss
-`"nutrir (um sentimento)", "alimentar (uma ideia, dúvida)"`. "Abraçar" is だく — a different reading and a
-different record. Chip and prose contradict each other, and the block's premise is い-initial words, which
-だく would break. **Fix:** "«抱く» (いだく) 'nutrir, alimentar (um sentimento, uma dúvida)'".
+> deveres-03: "Pense numa boca (口) que pechincha embaixo da barraca."
+> deveres-04: "Imagine uma boca que pechincha embaixo da barraca da feira."
 
-### B4 — `les:n3-desejos-07`: ボーイ glossed as "garoto"
+**Fix:** delete the orphaned paragraph from deveres-03 (deveres-04 already teaches 商 correctly and
+unlocks it). deveres-03's kanji section then matches its 10 unlocked kanji exactly.
 
-> "«ボーイ» (ボーイ) - **garoto, rapaz**."
+### B3 — `les:n3-desejos-03`: a second vocabulary entry with no headword
 
-In Japanese ボーイ is a job title — waiter, bellboy — not "boy" (that is 男の子 / 少年). The corpus record for
-this ref glosses it `"garçom; camareiro"`. **Fix:** "«ボーイ» - garçom, camareiro, mensageiro de hotel
-(nunca 'menino': isso é 男の子)."
+```
+<item><vocab ref="vocab:1592100"/><text> (</text><jp>くう</jp><text>) = 'comer' (informal, masculino).
+</text><text> (</text><jp>くらう</jp><text>) = 'devorar, levar (uma porrada)'.</text></item>
+```
 
-### B5 — `les:n3-conectores-05`: the 上=かみ example only works because the furigana forces it
+食らう has no `<vocab ref>`; the learner sees " (くらう) = 'devorar, levar (uma porrada)'." with a blank
+where the word should be. **Fix:** add the `vocab:` ref for 食らう (or drop the fragment).
 
-> `<jp reading="このかわのかみにはちいさなむらがある">この川の上には小さな村がある</jp>`
-> "(No curso superior deste rio há um vilarejo pequeno.)"
+### B4 — `topic-39-tempo` 01–04: 7 sentences broken across three block elements
 
-Read without furigana, a native reads 川の上 as かわのうえ ("above the river"). The whole point of the
-section is that the learner should recognise 上 as かみ in the wild, and this sentence gives them no way to.
-**Fix:** use the collocation that carries the reading: 「この川の**上流**には小さな村がある」 or
-「**川上**には小さな村がある」.
+Pattern (from `les:n3-tempo-01`):
 
-### B6 — `les:n3-conectores-07`: the translation contradicts the gloss two lines above
+```
+<note type="l1-pitfall"><p><text weight="bold">Armadilha PT.</text><text> A forma negativa </text></p>
+<jp reading="あめがふらないうちに">雨が降らないうちに</jp><p><text> traduz-se por 'antes que comece a chover'…
+```
 
-> "«ハンサム» (ハンサム) - bonito, atraente, charmoso (**geralmente para homens**)."
-> "「あの人は母親に似ていて、その上とてもハンサムだ」 (Aquela pessoa é parecida com a mãe e, além disso, é
-> muito **bonita**.)"
+The `<jp>` sits **outside** the `<p>`, so one sentence renders as three separate blocks: "Armadilha PT.
+A forma negativa" / 雨が降らないうちに / "traduz-se por…". Seven occurrences, all in tempo-01 (3),
+tempo-02 (2), tempo-03 (1), tempo-04 (1); no other n3 lesson does this.
+**Fix:** move the `<jp>` inside the surrounding `<p>` so each note is a single paragraph.
 
-The lesson states ハンサム is used of men and then renders it with a feminine adjective. **Fix:** "…é muito
-**bonito**." (and consider 「あの人」 → 「彼」 so the pt gender has an anchor).
+### B5 — `les:n3-perspectiva-05`: a katakana word written in hiragana inside a `reading`
 
-### B7 — `les:n3-causa-05`: the same sentence as `les:n3-causa-01`, respelled in a rare kanji, with no note
+```
+<jp reading="あしたまでにれぽーとをていしゅつしてください">明日までにレポートを提出してください</jp>
+```
 
-> `les:n3-causa-01`: 「雨のせいで試合が中止になった」 = "o jogo foi cancelado por causa da chuva"
-> `les:n3-causa-05`: 「雨の**所為**で試合が中止になった」 (Por culpa da chuva, o jogo foi cancelado.)
+`れぽーと` is malformed kana (a chōonpu after hiragana) and will misalign the furigana over レポート.
+Every other lesson keeps katakana as katakana in the reading — e.g. `les:n3-estado-02` correctly writes
+`いちにちでレポートをかきあげた`.
+**Fix:** `あしたまでにレポートをていしゅつしてください`.
 
-せい is written in kana in essentially all modern prose; 所為 is an ateji a learner will not meet. Presenting
-the *identical* sentence in the rare spelling four lessons later, with no cross-reference and no note that
-所為 = せい, teaches a spelling the course itself does not use. **Fix:** keep 所為 as the dictionary headword
-but write the example as 「雨のせいで…」 and add one line: "a grafia 所為 é rara; na prática escreve-se せい,
-como você viu em ～せいで."
+### B6 — `les:n3-intencao-02`: same defect, second instance
 
-### B8 — `les:n3-tempo-02`: 一時 glossed "uma hora"
+```
+<jp reading="ここでたばこをすわないことになっている">ここでタバコを吸わないことになっている</jp>
+```
+**Fix:** `ここでタバコをすわないことになっている`.
 
-> "«一時» '**uma hora**'; «一度に» 'de uma vez'; «一瞬» você já viu na lição anterior."
+### B7 — 43 `reading` attributes containing spaces (6 lessons)
 
-一時 (いちじ) is "one o'clock" or "temporarily / for a while"; "uma hora" in pt-BR reads first as a
-*duration*, which is 一時間. **Fix:** "«一時» 'uma hora (o horário, 1h)' e, como advérbio, 'por um tempo,
-temporariamente'".
+`les:n3-conjectura-01` (8), `-02` (6), `-03` (11), `-04` (6), `-06` (5), `les:n3-relato-06` (7).
+Examples:
 
-### B9 — `les:n3-intencao-06`: 得意 leads with its secondary sense
+> `<jp reading="かれ は もう ついた はず だ">彼はもう着いたはずだ</jp>`
+> `<jp reading="おこって いる みたい だ">怒っているみたいだ</jp>`
+> `<jp reading="かれは このぶんやの はかせ だという ことだ">彼はこの分野の博士だということだ</jp>`
 
-> "«得意» (とくい) - **orgulho, satisfação**; também \"ser bom em algo\"."
+The other ~95 lessons never put spaces in a reading. A furigana aligner will either fail or emit the
+spaces over the kanji. **Fix:** strip all whitespace from the `reading` attribute in those 43 spans.
 
-The dominant modern use is "one's forte / good at"; the corpus record for this ref leads
-`"bom em; habilidoso; forte (em algo)"` and only then `"orgulhoso; triunfante"`. Leading with "orgulho"
-inverts the priority a learner needs. **Fix:** "«得意» - ser bom em, ter facilidade com (数学が得意だ); também
-'orgulhoso, satisfeito consigo' e 'cliente habitual' (お得意さん)."
+### B8 — `les:n3-relato-01`: a `<vocab ref>` embedded inside the Portuguese translation
 
-### B10 — `les:n3-perspectiva-01`: an example sentence that means nothing in either language
+```
+常識というのは、みんなが知っているはずのことです = "<vocab ref="vocab:1356000"/> (bom senso), ou seja,
+é aquilo que todo mundo deveria saber".
+主義とは、ある考え方のことです = "<vocab ref="vocab:1325260"/> (doutrina) é uma certa maneira de pensar".
+```
 
-> "[Exemplo] Junte tema e contexto: 「**この映画について会議で訴える**」 (**apelar sobre este filme na reunião**);
-> 「宇宙に関する本」 (livro a respeito do universo)."
-
-訴える is "to sue / to appeal to (someone's emotions) / to complain of (pain)"; it does not take an
-について topic this way, and the Portuguese "apelar sobre este filme na reunião" is not a sentence a
-Brazilian would produce. The second half of the note is fine. **Fix:** replace the first clause with a real
-collocation, e.g. 「この映画について会議で話し合う」 ("discutir este filme na reunião").
-
-### B11 — `les:n3-limites-06`: an example that uses untaught grammar and does not cohere
-
-> "「悩むくらいなら怠けない方がいい」 (Se é para ficar remoendo, melhor não enrolar.)"
-
-The lesson opener says the examples reuse "～しかない … e ～くらい (a ponto de)". くらいなら is a distinct N3
-point (comparative "rather than…") that this topic never teaches, and the logic does not close: "rather
-than agonising, better not to slack off" does not follow from anything. **Fix:** rebuild on the くらい the
-lesson actually taught, e.g. 「泣きたいくらい悩んだ」 ("me atormentei a ponto de querer chorar").
-
-### B12 — `les:n3-deveres-05`: an example of ことだ that contradicts the definition given in `les:n3-deveres-02`
-
-> `les:n3-deveres-02`: "É um conselho impessoal e genérico … 「ことだ」 tem um quê de '**a regra de ouro é…**'."
-> `les:n3-deveres-05`: 「土曜日にドライブに行く**ことだ**」 (O ideal é ir dar uma volta de carro no sábado.)
-
-A one-off weekend plan is exactly the case the earlier lesson excludes. **Fix:** use a general precept, e.g.
-「疲れた時は早く寝ることだ」 ("quando estiver cansado, o melhor é dormir cedo") — and keep ドライブ in a
-plain example.
-
-### B13 — `les:n3-conjectura-06`: unnatural pt-BR and a comparison that does not hold
-
-> "「彼女はまるでモデルのように背が伸びた」 (Ela **cresceu de altura** como se fosse uma modelo.)"
-
-"cresceu de altura" is not pt-BR (背が伸びた = "ficou mais alta"), and まるで invites a *figurative* image;
-"grew as if she were a model" compares a process to a profession. **Fix:** 「彼女はまるでモデルのように背が高い」
-→ "Ela é alta feito uma modelo."
-
-### B14 — `les:n3-tempo-05`: stilted pt and an unmotivated contrast
-
-> "「彼は身長が高いが性格は慎重だ」 (**Ele tem estatura alta**, mas tem temperamento cauteloso.)"
-
-"ter estatura alta" is bureaucratese for "ser alto"; and the が is adversative while being tall and being
-cautious are not in tension, so the sentence models a contrast the learner cannot feel. **Fix:**
-「彼は身長が高いが性格は慎重だ」 → 「彼は明るいが性格は慎重だ」 = "Ele é alegre, mas de temperamento cauteloso."
-
-### B15 — `les:n3-causa-01`: 助かりました rendered as a reflexive
-
-> "「あなたのおかげで助かりました」 significa \"graças a você, **me salvei**\"."
-
-助かりました here is the fixed thanks formula ("that was a huge help"), not a reflexive escape.
-`design/translation_style.md` §1 puts the mirror in `translation_literal`, never in the natural rendering.
-**Fix:** "\"graças a você, **me ajudou muito** / **você me salvou**\"."
-
-### B16 — `les:n3-causa-07`: a construction Brazilians do not use
-
-> "「子供が無事に帰ってきたおかげで、安心した」 (**Graças a meu filho ter voltado em segurança**, fiquei aliviado.)"
-
-Two problems: "Graças a [alguém] ter [feito]" is not natural pt-BR, and 子供 is generic ("a criança"), so
-"meu filho" adds a possessive the Japanese does not have. **Fix:** "**Fiquei aliviado porque a criança
-voltou bem.**"
-
-### B17 — `les:n3-conectores-06`: いい調子？ presented as the colloquial "Como vai?"
-
-> "'Como vai?' coloquial em japonês é **いい調子？** (está em bom ritmo?)."
-
-「いい調子」 is a statement of state ("going well"); the colloquial greeting built on 調子 is 「調子はどう？」 /
-「調子どう？」. **Fix:** "'Como vai?' coloquial em japonês é 「**調子はどう？**」 — e 「いい調子だね」 é a
-resposta ('tá indo bem')."
+The Portuguese gloss renders as **"常識 (bom senso), ou seja, é aquilo que…"** — a Japanese headword
+inside the pt-BR translation line. Every other example in the slice gives a clean pt-BR translation.
+**Fix:** "Senso comum, ou seja, é aquilo que todo mundo deveria saber." / "Doutrina é uma certa maneira
+de pensar."
 
 ---
 
-## C. Structural defects a learner sees on the page
+## Class C — the lesson introduces material it never teaches
 
-### C1 — `les:n3-deveres-02`: a vocabulary bullet with no headword at all
+### C1 — `topic-41-causa` lessons 01–04: **25 kanji unlocked, zero kanji taught**
 
-Raw: `<item><text> (</text><jp>きじゅん</jp><text>) = 'critério, padrão de referência'.</text></item>`
-There is no `<vocab ref>` — the item renders as:
+| lesson | kanji unlocked (SRS cards created) | kanji section in body |
+|---|---|---|
+| `les:n3-causa-01` | 官 昨 次 求 論 | none |
+| `les:n3-causa-02` | 係 増 変 情 感 投 示 | none |
+| `les:n3-causa-03` | 両 容 式 打 果 直 確 | none |
+| `les:n3-causa-04` | 争 必 歳 演 能 談 | none |
 
-> "- **(きじゅん)** = 'critério, padrão de referência'."
+Verified: `les:n3-causa-01` `srs.introduces_cards` contains `deck:kanji-n3` entries for all five, and
+the body contains **no `<kanji ref>` at all**. Every other n3 grammar lesson has a "Kanji novos" /
+"Kanji do dia" / "Kanji do bloco" section. A learner finishing causa-01 gets five kanji flashcards for
+characters the lesson never showed, explained, or decomposed.
 
-The word 基準 never appears. Every other bullet in the same list carries its chip. **Fix:** restore
-`<vocab ref="…"/>` for 基準 before the parenthesis.
+Downstream consequence, already visible: `les:n3-relato-01` introduces 示 as a **new** kanji
+("O kanji 示 significa 'mostrar, indicar'… Aparece em 示す e 展示") — but causa-02 silently unlocked it
+~30 lessons earlier.
 
-### C2 — `les:n3-deveres-03`: a kanji paragraph with no kanji
+**Fix:** author the four missing kanji sections in causa-01…04 following the pattern of
+`les:n3-estado-01`/`-02` (component decomposition + two example compounds each); then relato-01's
+"Kanji novos" heading for 示 becomes correct as a review reference instead of a first introduction.
 
-Raw: `<p><text>O kanji </text><text> ('comércio, negociar') aparece em …` — renders as:
+### C2 — `les:n3-estado-05`: a promised contrast that never arrives
 
-> "O kanji **(**'comércio, negociar'**)** aparece em 商人 ('comerciante') e 商品 ('mercadoria'). Pense numa
-> boca (口) que pechincha embaixo da barraca."
+Intro: *"Sem gramática nova: o foco é o vocabulário, com destaque para os pares **成人 / 青年** e
+**生物 / 製品**."*
+Objective and checklist repeat it: *"Distinguir 成人 (adulto) de 青年 (jovem) e **生物 (ser vivo) de
+製品 (produto)**."*
 
-The `<kanji ref>` for 商 was dropped. **Fix:** restore the chip. (See also **D3** — this paragraph is a
-near-duplicate of one in `les:n3-deveres-04`, which *does* carry the chip.)
+The body delivers only the first pair (a `tip` note on 成 vs 青). 生物 and 製品 sit in two different
+sections with no comparison anywhere. They are also not a confusable pair (せいぶつ vs せいひん), so
+the promise is both unkept and ill-chosen.
+**Fix:** either add the note, or replace the promised pair with a real one from the lesson —
+**製造 / 製品** (せいぞう "fabricar" vs せいひん "o produto fabricado") is the natural candidate and
+sits in the same list.
 
-### C3 — `les:n3-desejos-03`: a second dropped headword
+### C3 — `les:n3-estado-06`: the checklist claims a verb the lesson never uses
 
-Raw: `…= 'comer' (informal, masculino). </text><text> (</text><jp>くらう</jp><text>) = 'devorar, levar (uma
-porrada)'.` — renders as:
+Objective and checklist: *"Empregar どうしても e **通す** em frases sobre persistência e estado das
+coisas."*
+The list glosses 通す ("deixar passar, dar passagem; também 'levar até o fim'"), but the only example
+in that section is:
 
-> "«食う» (くう) = 'comer' (informal, masculino).  **(くらう)** = 'devorar, levar (uma porrada)'."
+> 「その道路は高い塔の前を**通る**」 reading 「そのどうろはたかいとうのまえを**とおる**」
+> (Aquela estrada passa em frente a uma torre alta.)
 
-食らう is missing. **Fix:** restore the `<vocab ref>` (and remove the resulting double space).
+That is 通る (intransitive), a different verb — and the difference is never flagged. So the lesson
+asserts a skill it does not demonstrate and quietly swaps the transitive twin for the intransitive one.
+**Fix:** add a 通す example (e.g. 「客を部屋に通す」 "fazer o visitante entrar na sala") and a one-line
+transitive/intransitive note, matching how the same topic handles 隠す/隠れる in `les:n3-estado-02`.
 
-### C4 — Vocabulary bullets render as "kana (kana)" — the kanji headword never reaches the page
+Same lesson: the objective also says *"Distinguir 同一 / 同時 / 同様"*, but the body's paragraph only
+contrasts 同一 with 同様 — 同時 is listed and never discussed.
 
-`chip("vocab", …)` sets `text = v?.kana || id`, so `<vocab ref>` renders the **kana**. The n3 bodies were
-written assuming it renders the **headword**, and then repeat the same kana in a parenthesis:
+### C4 — 注ぐ is unlocked in one lesson and taught in another
 
-| written | rendered by the app |
-|---|---|
-| `«愛» (「あい」) = "amor, afeto"` (`les:n3-conectores-01`) | **あい (あい) = "amor, afeto"** |
-| `«昼食» (ちゅうしょく) - almoço…` (`les:n3-conectores-06`) | **ちゅうしょく (ちゅうしょく) - almoço…** |
-| `«クラシック» (クラシック) - música clássica` (`les:n3-conectores-05`) | **クラシック (クラシック) - música clássica** |
-| `«通過» (つうか) - passagem…` (`les:n3-conectores-06`) | **つうか (つうか) - passagem…** |
+`les:n3-tempo-06` unlocks **both** `vocab:2145240` (注ぐ / つぐ) and `vocab:1581730` (注ぐ / そそぐ),
+but teaches only つぐ, and its pitfall states flatly:
 
-**1,396 occurrences across 88 of the 101 n3 lessons.** It is heavily n3-specific — the same scan finds 108
-in n5 (23/84 lessons) and 117 in n4 (23/96). The cost is not cosmetic: `les:n3-conectores-06`'s objective is
-"Distinguir os compostos com 通 (通過, 通学, 通行, 通信)" and, as rendered, not one of those four kanji
-compounds appears in the list the learner studies — only in the h3 above it.
+> "つぐ 注ぐ é despejar um líquido"
 
-**Fix (two viable, pick one and apply consistently):** either drop the redundant parenthesis and have
-`chip("vocab")` render `v.headword` with the kana as its tooltip/reading (matches what the `.md` export
-already prints, and what these bodies were authored for); or keep the kana chip and change the parenthesis
-to the kanji headword. This one needs a decision before it is edited, since it touches 88 files.
+そそぐ — the commoner reading — is never mentioned. Five topics later, `les:n3-desejos-05` teaches it
+as a fresh item ("そそぐ - despejar, servir um líquido") **without** unlocking it.
+**Fix:** move `vocab:1581730` to desejos-05's `unlocks`, and add "(também lido そそぐ)" to tempo-06's
+pitfall so the two readings are not presented as one word.
 
-### C5 — `topic-39-tempo` lessons 01–04: one sentence split across three block elements (18 sites)
+The same split affects 数 (`vocab:1580820` かず unlocked by `les:n3-perspectiva-04`, which teaches only
+`vocab:1580825` すう; かず is then taught as new in `les:n3-estado-03`).
 
-Raw pattern: `</p><jp …>…</jp><p><text> …`. Example from `les:n3-tempo-01`:
+### C5 — `les:n3-deveres-06`: a highlight pointing at nothing
 
-> **Armadilha PT.** A forma negativa
-> 雨が降らないうちに
-> ` traduz-se por 'antes que comece a chover', e não 'enquanto não chove'.`
+> "Repare em 弁当, parte essencial do dia japonês, e em **冒険** para histórias."
 
-The `<p>` closes before the `<jp>` and a new `<p>` opens after it, so a single sentence becomes three
-stacked blocks, the third beginning with a leading space and a lowercase letter. Counts: `les:n3-tempo-01` 6,
-`les:n3-tempo-02` 4, `les:n3-tempo-03` 2, `les:n3-tempo-04` 6. Nowhere else in n3.
-**Fix:** move the `<jp>` inside the surrounding `<p>` (every other n3 lesson already does this).
+Two example sentences follow, using 弁当 and 宝石. 冒険 appears in the list and in no example.
+**Fix:** either add a 冒険 sentence or drop it from the "Repare em" line.
 
-### C6 — `topic-39-tempo` lessons 01–04: the sentence bank lands *inside* "Hora de praticar"
+### C6 — `les:n3-conectores-05`: the description promises a word the lesson never covers
 
-`les:n3-tempo-01` body order: `## Hora de praticar` → intro paragraph → 5 `<exercise>` → **2 `<sentence>`
-cards** → `### Leitura`. The two dissected bank sentences sit after the exercises, under a heading that
-promises practice, with no lead-in. Every lesson in `topic-38`, `topic-40`, `topic-41`, `topic-42` puts them
-under their own `### Exemplos do banco` heading *before* practice. Same defect in tempo-02, tempo-03,
-tempo-04. **Fix:** move the `<sentence>` refs under an `### Exemplos do banco` heading placed before
-"Hora de praticar", matching the rest of n3.
+> DESC: "Esta lição ensina palavras N3 ligadas a discurso e referência, como いずれ, さて e **そのまま**"
 
-Related, same four lessons: "Palavras novas", "Kanji do bloco" and "Hora de praticar" are `<heading level="2">`
-while their sibling "Leitura" is `level="3"` — the only place in n3 where the section levels disagree
-within one lesson.
+そのまま is not in conectores-05's body or unlocks; it is taught in `les:n3-desejos-05`.
+**Fix:** replace そのまま in the description with a word the lesson actually teaches (こんにちは or
+あるいは), or move it here.
 
-### C7 — 43 notes repeat their own rendered label (35 lessons)
+### C7 — `les:n3-revisao-01`: the level's capstone under-delivers on its own map
 
-`render-body.server.ts` prints the note head from its `type`: `l1-pitfall` → **"Cuidado"**, `tip` → **"Dica"**,
-`warning` → **"Atenção"**, `culture` → **"Cultura"**, `l1-advantage` → **"Vantagem para você"**. 43 note
-bodies then open with that same word:
+The body lists five blocks the learner "domina agora":
 
-> **Cuidado** · "**Cuidado:** 優秀 (ゆうしゅう, excelente) e 優勝…" (`les:n3-conectores-08`)
-> **Dica** · "**Dica:** つまり serve tanto para resumir…" (`les:n3-conectores-02`)
-> **Cultura** · "**Cultura.** Ao começar a comer, diz-se 頂きます…" (`les:n3-tempo-04`)
-> **Vantagem para você** · "**Vantagem PT:** ずに e ないで são intercambiáveis…" (`les:n3-estado-03`)
+> "Conectar e organizar … Situar no tempo … Causa e resultado … Conjectura e relato … Concessão e ênfase."
 
-Affected: conectores-02/03/06/08, tempo-02/03/04/06/07/08, perspectiva-05/06/07, causa-08, estado-03/06/08,
-deveres-04, desejos-01, limites-01/03/07, enfase-03/04, concessao-03/06, conjectura-02, relato-03/05/06,
-estrutura-01/04/05/06, revisao-01. (n5 has 21, n4 has 9 — so this is disproportionately an n3 habit.)
-**Fix:** delete the leading label word from the note body; the component already supplies it.
+The self-assessment checklist has **two** items, covering only the first two blocks:
 
-### C8 — `culture` notes whose content is not cultural (3 sites)
+> "[x] Escolho o conector certo para somar, contrastar ou concluir.
+>  [x] Sei situar uma ação numa janela de tempo (うちに, 最中に)."
 
-- `les:n3-deveres-01`: "**Cultura** — Repare como vários destes kanji compartilham o radical da pessoa 「イ」
-  à esquerda (働, 伝): é uma pista de que o significado envolve gente." → this is a `tip`.
-- `les:n3-deveres-03`: "**Cultura** — Veja como 観 e 察 se unem em 観察 ('observação'): 'ver' mais 'deduzir'
-  é justamente observar com atenção." → `tip`.
-- `les:n3-conjectura-04`: "**Cultura** — O 君 (きみ) é um 'você' informal… Como o japonês é pró-drop, evite
-  encher a frase de 君 ou あなた…" → the pro-drop half is a usage `tip`, not a culture note.
+Causa, conjectura/relato and concessão/ênfase get no checkpoint, although the objective is explicitly
+*"Autoavaliar o domínio dos blocos de gramática do N3."*
 
-**Fix:** change `type="culture"` to `type="tip"` on these three.
+The same lesson also **introduces four brand-new words** (郵便, 便, 停留所, ピン) under
+*"Vocabulário avulso para fechar"*, in a lesson its own description calls *"um mapa de revisão e
+autoavaliação"*. New vocabulary in the review capstone contradicts the framing, and the four words have
+no thematic link to anything in the lesson.
+
+Two smaller inaccuracies in the same recap list: **ために** and **のに** are listed as N3 achievements,
+but both are N4 material — the N3 points actually taught are そのために (causa-02) and くせに /
+ことは〜が / にしては / にしても / わりには (concessão).
+
+**Fix:** extend the checklist to one item per block; move the four words into a vocabulary lesson;
+replace ために/のに with そのために and くせに.
 
 ---
 
-## D. Content duplicated, or promised and not delivered
+## Class D — numeric claims that do not match what the lesson introduces
 
-### D1 — Two pairs of lessons share the same title; one pair also shares the same h2
+Each of these is a learner-facing count, in an objective or a checklist, that is wrong. Verified
+against each lesson's `unlocks`.
 
-| title | lessons |
-|---|---|
-| **"Relato, citação e definição"** | `les:n3-relato-05` **and** `les:n3-relato-06` — and both open with the identical `<heading level="2">Relato, citação e definição</heading>` |
-| **"Nominalização, explicação e voz passiva"** | `les:n3-estrutura-04` **and** `les:n3-estrutura-05` |
+| lesson | claim | actual | the extra item(s) |
+|---|---|---|---|
+| `les:n3-tempo-02` | "Reconhecer **14 palavras novas e 7 kanji**" (obj + 2 checklist items) | 13 vocab, 6 kanji | 市 (`vocab:1308080`, taught in conectores-05) and 都 (unlocked earlier) are counted as new. 一瞬 is correctly flagged "você já viu"; 市 is not. |
+| `les:n3-tempo-03` | "Reconhecer 14 palavras novas e **6 kanji**" | 5 kanji | 進 was already unlocked. |
+| `les:n3-tempo-04` | "Reconhecer **14 palavras novas** e **6 kanji**" | 12 vocab, 5 kanji | いずれ (`vocab:1566210`, taught in conectores-05) is re-listed unflagged; 産 already unlocked. |
+| `les:n3-limites-04` | "Reconheço a leitura dos sete kanji e dos **treze** vocábulos novos" | 12 | 後/ご (`vocab:2147630`, taught in conectores-05) is re-listed unflagged. |
 
-Two consecutive entries in the same topic list are indistinguishable to a learner. The bodies are
-different: relato-05 is a 地/単 vocabulary block, relato-06 is a は-line block; estrutura-04 is 地球/知識/中学,
-estrutura-05 is 発見/発達/離す. **Fix:** retitle to the actual content, e.g. relato-06 →
-"Pessoas, ações e objetos: vocabulário da linha は"; estrutura-04 → "Lugar, conhecimento e rotina"; and
-estrutura-05 already has the right h2 ("Descoberta, crescimento e divulgação") — promote it to the title.
+### D5 — `les:n3-deveres-01`: three already-taught kanji under "Kanji novos"
 
-### D2 — `les:n3-intencao-05`: the same sentence twice, eight lines apart
+The section presents 働, 好, 形, 種, 頭, 葉, 伝 — but the lesson unlocks only 伝, 形, 種, 葉.
+**働** (first presented in `les:n4-kanji-exame-01`), **好** (`les:n4-kanji-exame-02`) and **頭**
+(`les:n4-kanji-exame-05`) are given full first-introduction treatment ("O kanji 働 ('trabalhar') junta a
+pessoa (イ) com 'mover' (動)…") under a heading that says they are new.
+**Fix:** move 働/好/頭 into a short "já vistos, agora em contexto" line, or retitle the section
+"Kanji desta lição" and mark the three as revision.
 
-Section lead-in, immediately under `### Responsabilidade e julgamento`:
+Two n3-internal repeats of the same shape: `les:n3-limites-02` presents 単 under "Kanji do bloco" one
+lesson after `les:n3-limites-01` introduced it (the lesson does flag it — "(revisão)" and a tip — so
+this one is deliberate and fine); `les:n3-relato-04` presents 晴 the lesson after `les:n3-relato-03`
+introduced it, and there the bullet is malformed (see G7).
+
+---
+
+## Class E — material the learner already has, presented as new
+
+### E1 — Days of the week and 日本, taught as new N3 vocabulary in seven lessons
+
+| lesson | item | gloss as printed | where the learner already met it |
+|---|---|---|---|
+| `les:n3-tempo-08` | `vocab:1545770` 曜日 | "dia da semana" | body of `les:n5-particulas-lugar-04`, `les:n5-comparacoes-04`, `les:n4-forma-simples-05` |
+| `les:n3-intencao-02` | `vocab:1194280` 火曜 | "terça-feira" | `les:n5-conectando-07`, `les:n4-transitividade-02` |
+| `les:n3-deveres-05` | `vocab:1445580` 土曜 | "sábado" | `les:n5-passado-02`, `les:n5-convites-02`, `les:n4-passiva-01` |
+| `les:n3-desejos-02` | `vocab:1243310` 金曜 | "sexta-feira" | `les:n5-particulas-lugar-06`, `les:n5-passado-04`, `les:n4-volitivo-04`, `les:n4-obrigacao-04` |
+| `les:n3-limites-02` | `vocab:1255880` 月曜 | "segunda-feira" | as above |
+| `les:n3-enfase-06` | `vocab:1464880` 日曜 | "domingo" | as above |
+| `les:n3-relato-07` | `vocab:1534880` 木曜 | "quinta-feira (forma curta de 木曜日)" | as above |
+| `les:n3-enfase-06` | `vocab:1582710` **日本** | "Japão" | appears in **22** pre-N5/N5/N4 lesson bodies |
+
+The 日本 case is the sharpest: a learner three quarters of the way through N3 is shown 日本 as a new
+word, in a list headed *"Dias e luz do sol"*. Three more of the same shape: `vocab:1333450` 週
+("semana") in `les:n3-relato-03`; `vocab:1156800` 意味 ("significado, sentido") in `les:n3-relato-01`
+— 意味 was first unlocked in `les:n5-verbos-04`; `vocab:1441870` 伝える in `les:n3-relato-02`, first
+unlocked in `les:n4-aspecto-01`.
+
+**Fix (prose level, no corpus change needed):** these words are being pulled in because they sit in a
+kana-run block (かよう, どよう, きんよう…). Reframe each as a reading note rather than a new word —
+e.g. in `les:n3-relato-07`, replace the bullet with a parenthetical inside the もく group:
+"(o mesmo もく de 木曜日, que você já usa)". That preserves the sound-grouping pedagogy without telling
+an N3 learner that "sábado" is new.
+
+### E2 — Grammar points re-taught as bare vocabulary entries
+
+Nine cases where a structure that got a full section (heading + examples + pitfall) in an earlier
+lesson reappears later as a one-line vocabulary bullet, with no "você já viu isto" marker:
+
+| re-listed in | item | originally taught in |
+|---|---|---|
+| `les:n3-tempo-06` | つまり (`vocab:1610430`) "ou seja, isto é, quer dizer" | `les:n3-conectores-02`, `gram:n3-tsumari`, full section |
+| `les:n3-causa-06` | ですから (`vocab:1008430`) "portanto, por isso (versão polida de だから)" + a fresh l1-pitfall repeating the same だから contrast | `les:n3-conectores-03`, `gram:n3-desu-kara`, full section |
+| `les:n3-desejos-05` | それとも (`vocab:1007010`) | `les:n3-conectores-01`, `gram:n3-sore-tomo` |
+| `les:n3-limites-06` | なぜなら (`vocab:1009410`) | `les:n3-conectores-03`, `gram:n3-nazenara` |
+| `les:n3-intencao-06` | ところで (`vocab:1343110`) and ところが (`vocab:1008570`) | ところで: `les:n3-conectores-02`; ところが is then formally introduced *later*, in `les:n3-concessao-03` |
+| `les:n3-concessao-05` | だけど (`vocab:1007370`) and **たとえ** (`vocab:1597125`) "mesmo que, ainda que, por mais que" | だけど: `les:n3-conectores-02`; **たとえ: `les:n3-concessao-01`, four lessons earlier in the same topic** |
+| `les:n3-conjectura-07` | めったに (`vocab:1612000`) "raramente, quase nunca (sempre com verbo negativo)" + a pitfall repeating the negative-verb rule | `les:n3-enfase-04` — an entire lesson devoted to めったに〜ない, with two sections and a frequency scale |
+| `les:n3-deveres-05` | 途端 (`vocab:1610870`) "no instante exato em que" + a pitfall on 〜た途端 | `les:n3-tempo-03`, `gram:n3-ta-totan` |
+| `les:n3-enfase-05` | だが (`vocab:2055530`), in a section with exactly one item | mentioned in `les:n3-conectores-02` |
+
+`les:n3-causa-06` is internally contradictory about this: its own intro says *"nos exemplos você revê
+padrões já vistos, como **ですから** e その結果"* — and then lists ですから in the new-vocabulary block.
+
+**Fix:** keep the entry (the SRS card is legitimate) but add the marker the corpus already uses
+elsewhere — `les:n3-tempo-02` writes "você já viu na lição anterior", `les:n3-tempo-03` writes
+"você já viu". One clause per row.
+
+### E3 — The same word listed twice as new
+
+Seven clean cases (homograph-queue items deliberately excluded):
+
+- `les:n3-conectores-04`: `vocab:1586840` 或る — "(ある) = 'um certo, algum'. Como em 'um certo dia'."
+  `les:n3-conectores-02` had already listed it with the identical gloss: "(ある) = 'um certo, algum'."
+- `les:n3-conectores-03`: `vocab:1156410` 意外 "(いがい) = 'inesperado'" — listed in
+  `les:n3-conectores-01` as "(いがい) = 'inesperado, surpreendente'".
+- `les:n3-tempo-02`: 市 (`vocab:1308080`) — from `les:n3-conectores-05`.
+- `les:n3-tempo-04`: いずれ (`vocab:1566210`) — from `les:n3-conectores-05`.
+- `les:n3-perspectiva-03`: 御/お (`vocab:2826528`) "prefixo honorífico" — `les:n3-conectores-05` had
+  "prefixo honorífico, o mesmo お de おちゃ e おみず".
+- `les:n3-causa-03`: 音/おん (`vocab:2859161`) "som, ruído" — from `les:n3-conectores-05`.
+- `les:n3-intencao-03`: 空/から (`vocab:1245280`) — from `les:n3-conectores-05`, which even gave it a
+  dedicated l1-pitfall.
+
+**Fix:** same as E2 — one "já visto" clause, or drop the repeat row.
+
+### E4 — `les:n3-enfase-03`: the same vocab ref twice inside one list
+
+```
+<item>… <vocab ref="vocab:1287070"/> (こくみん) = "povo, cidadãos de um país".</item>
+…
+<item><vocab ref="vocab:1287070"/><text> aparece muito em notícias, ao lado de </text>
+      <vocab ref="vocab:1285790"/><text> (こくふく) = "superação…"</text></item>
+```
+
+国民 occupies two of the fifteen bullets in a single list. The second bullet reads as if it were
+introducing a new word and instead re-announces the first.
+**Fix:** fold the 克服 entry into its own bullet and delete the duplicate 国民 anchor.
+
+---
+
+## Class F — verbatim duplication inside one lesson
+
+### F1 — `les:n3-intencao-05`: the same sentence twice, ~200 characters apart
+
+Paragraph opening the section:
 
 > "Quem foge da 責任 acaba sendo culpado (責められる) por todos."
 
-and the closing line of the `l1-pitfall` note in the same section:
+`l1-pitfall` closing the same section:
 
-> "…enquanto 責める é um verbo (você 'culpa' alguém). **Quem foge da 責任 acaba sendo culpado (責められる) por
-> todos.**"
+> "…enquanto 責める é um verbo (você 'culpa' alguém). **Quem foge da 責任 acaba sendo culpado
+> (責められる) por todos.**"
 
-Verbatim. The lead-in also uses 責任 and 責められる before the bullets that introduce them.
-**Fix:** delete the lead-in paragraph (the note is the better home for the line) and let the bullets open
-the section.
+Identical string. **Fix:** delete the standalone lead paragraph; the pitfall already carries the line
+and gives it context.
 
-### D3 — `les:n3-deveres-03` / `les:n3-deveres-04`: the same 商 paragraph, twice
+### F2 — the 商 paragraph shared by deveres-03 and deveres-04
 
-> deveres-03: "O kanji [chip missing] ('comércio, negociar') aparece em 商人 ('comerciante') e 商品
-> ('mercadoria'). **Pense numa boca (口) que pechincha embaixo da barraca.**"
-> deveres-04: "O kanji «商» ('comércio, negociar, comerciante') aparece em 商人 ('comerciante') e 商品
-> ('mercadoria'). **Imagine uma boca que pechincha embaixo da barraca da feira.**"
+Covered in B2.
 
-Same kanji, same two compounds, same mnemonic, adjacent lessons — and the first copy is the one missing its
-chip (**C2**). **Fix:** keep the deveres-04 paragraph, remove it from deveres-03.
+### F3 — the mnemonic boilerplate, three times
 
-### D4 — Eight grammar points taught in full, then re-taught as a vocabulary bullet
-
-Each of these had a dedicated h3 section (or, in one case, an entire lesson) and later reappears as a plain
-vocabulary line with no back-reference, as if new:
-
-| point | taught as grammar in | re-taught as vocab in |
-|---|---|---|
-| ですから | `les:n3-conectores-03` (own h3 + 2 notes) | `les:n3-causa-06` — "«ですから» - portanto, por isso (versão polida de だから)" + its own l1-pitfall |
-| ところで | `les:n3-conectores-02` (own h3 + l1-pitfall) | `les:n3-intencao-06` — "«所で» (ところで) - a propósito, mudando de assunto" |
-| なぜなら | `les:n3-conectores-03` (own h3 + l1-pitfall) | `les:n3-limites-06` — "«何故なら» (なぜなら) - porque, a razão é que" |
-| それとも | `les:n3-conectores-01` (own h3 + l1-pitfall) | `les:n3-desejos-05` — "«其れとも» (それとも) - ou, ou então", with a near-copy of the original example (conectores-01 「コーヒーを飲む？それとも紅茶を飲む？」 vs desejos-05 「コーヒーにする？それとも紅茶にする？」) |
-| だけど | `les:n3-conectores-02` (own h3) | `les:n3-concessao-05` — "«だけど» - mas, porém, só que (bem coloquial)" |
-| 最中に | `les:n3-tempo-01` (own h3 + formation) | `les:n3-concessao-03` — "«最中» (さいちゅう) = 'no auge de, em pleno'" |
-| たとえ〜ても | `les:n3-concessao-01` (own h3) | `les:n3-concessao-05` — "«仮令» (たとえ) - mesmo que, ainda que, por mais que" |
-| **めったに〜ない** | **an entire lesson**, `les:n3-enfase-04` | `les:n3-conjectura-07` — "«滅多に» (めったに) - raramente, quase nunca (sempre com verbo negativo)" **plus a pitfall note that restates the whole lesson**: "滅多に só funciona com verbo negativo: 滅多に行かない… Não diga 滅多に行く." |
-
-**Fix:** in each vocabulary bullet, replace the standalone explanation with a one-line back-reference
-("você já viu em [lição]") so the learner is not asked to learn the same point twice; or drop the bullet.
-
-### D5 — Four near-identical boilerplate notes about mnemonics and spaced repetition
-
-> `les:n3-intencao-01`: "Os mnemônicos acima são só uma rampa de entrada. Você fixa de verdade revendo esses
-> kanji nas próximas lições e nos exercícios espaçados, não relendo a explicação."
-> `les:n3-relato-01`: "Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade revendo
+> `les:n3-intencao-01`: "Os mnemônicos acima são só uma rampa de entrada. Você fixa de verdade revendo
 > esses kanji nas próximas lições e nos exercícios espaçados, não relendo a explicação."
+> `les:n3-relato-01`: "Os mnemônicos acima são só uma rampa de entrada. Você **vai fixar** de verdade
+> revendo esses kanji nas próximas lições e nos exercícios espaçados, não relendo a explicação."
 > `les:n3-relato-02`: "Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar esses
 > kanji nos exercícios e nas próximas lições, em intervalos crescentes."
-> `les:n3-relato-04`: "São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão voltar nos
-> exercícios e nas revisões espaçadas das próximas lições; o reconhecimento se consolida na repetição, não
-> na primeira leitura."
 
-Four statements of the same study advice, two of them word-for-word. **Fix:** keep one (the first time it
-appears) and delete the other three.
-
-### D6 — 七転び八起き used as a culture note twice
-
-> `les:n3-enfase-04`: "Um provérbio (諺) famoso usa essa ideia de raridade ao contrário: 「七転び八起き」,
-> '**sete quedas, oito vezes de pé**', ou seja, não desista nunca."
-> `les:n3-concessao-01`: "A persistência apesar das dificuldades … resumido no ditado 「七転び八起き」
-> ('**caiu sete vezes, levanta oito**')."
-
-Same proverb, same function (culture note), two topics apart, two different translations of the same phrase.
-**Fix:** keep the concessao-01 one (it is on-theme for ても) and cut or repoint the enfase-04 note.
-
-### D7 — `les:n3-estado-05`: a contrast the intro promises and the body never makes
-
-> intro: "…com destaque para os **pares 成人 / 青年 e 生物 / 製品**."
-> objective: "Distinguir 成人 (adulto) de 青年 (jovem) **e 生物 (ser vivo) de 製品 (produto)**."
-
-成人/青年 gets a full `tip` note. 生物 and 製品 sit in *different* h3 sections ("Fases da vida e seres vivos"
-and "Produção, sistemas e governo") with no note and nothing comparing them. **Fix:** add the second tip
-(生 "o que vive/nasce" vs 製 "o que se fabrica"), or drop the pair from the intro and the objective.
-
-### D8 — `les:n3-estado-06`: the objective names three items, the body distinguishes two
-
-> objective + checklist: "Distinguir **同一 / 同時 / 同様** ao falar de igualdade e simultaneidade."
-> body, the entire explanation: "同一 serve para identidade total; 「同様」 aceita 'parecido', não precisa ser
-> idêntico."
-
-同時 gets one gloss line and is never contrasted, even though it is the one whose *sense* (simultaneity, not
-sameness) sits apart from the other two. 同化, also in the list, gets nothing. **Fix:** extend the sentence:
-"…；「同時」 não é sobre ser igual, e sim sobre **acontecer ao mesmo tempo** (同時に出発する)."
-
-### D9 — `les:n3-revisao-01`: the "mapa completo" leaves out a whole topic and claims a point never taught
-
-> h2: "**Revisão do N3: o mapa completo**" · "### O que você domina agora"
-> - Conectar e organizar: その上, それと/それとも, つまり, ところで.
-> - Situar no tempo: うちに, 最中に, たびに, たところ.
-> - Causa e resultado: おかげで, せいで, ために, によって.
-> - Conjectura e relato: はずだ, みたいだ, らしい, ということだ.
-> - Concessão e ênfase: **のに**, くせに, こそ, さえ.
-
-Two problems.
-(a) **`topic-51-estrutura` is missing entirely** — the particle の (estrutura-01), the nominalizer こと and
-ことができる (estrutura-02) and the past passive 〜られた (estrutura-03) are the last grammar block of the
-level and appear in no bullet, while the checklist below repeats the same five headings.
-(b) **のに is listed as mastered but never taught.** It appears in n3 only as a *contrast* inside other
-lessons ("Para um 'apesar de' neutro, use 「のに」", `les:n3-concessao-02`; ば〜のに in `les:n3-desejos-04`).
-It has no section of its own anywhere in `course/n3`.
-
-**Fix:** add a sixth bullet — "Estruturar a frase: の, こと / ことができる, a passiva 〜られた" — and add the
-matching checklist line; replace のに with a point the level actually taught (ても or ことは〜が).
-
-### D10 — Two titles promise content the lesson does not contain
-
-- `les:n3-perspectiva-07`, title: "Folga e ganho: **do orçamento** à compreensão". The lesson has 予報
-  (previsão) and 予防 (prevenção); 予算 ("orçamento") is not in it — it belongs to `les:n3-tempo-08`.
-  **Fix:** "Folga e ganho: **da margem** à compreensão".
-- `les:n3-deveres-04`, title: "Falando de competições, **números** e máquinas: vocabulário sobre grupos e
-  crescimento". The eighteen items are 全国/全体/先日/前者/選手/選択/前進/センター/増加/相当/操作/装置/速度/
-  想像/相続/騒音/象/底 — nothing numeric. **Fix:** "Grupos, competições e crescimento" (the h2 already says
-  exactly that, and it is accurate).
-
-### D11 — `les:n3-tempo-06`: the title announces grammar the lesson does not have
-
-> title: "**Tempo, simultaneidade e sequência**"
-> description: "Lição de expansão de vocabulário: dezoito palavras que começam com o som tsu … **Sem
-> gramática nova.**"
-> h2: "Palavras da continuidade: o que se prende, se sucede e se acumula"
-
-"Simultaneidade" names a grammar concept (〜ながら, 〜間に) that this lesson does not teach; the h2 and the
-description agree with each other and disagree with the title. **Fix:** promote the h2 to the title.
-
-### D12 — `les:n3-desejos-07`: an English word in learner-facing pt-BR, and the title disagrees with it
-
-> title: "Corpo, natureza e cotidiano: **o bloco ほ**"
-> h2: "Lar, corpo e natureza: **o batch ho**"
-
-"batch" is untranslated English in the learner's first line; every other lesson of this shape says "bloco"
-or "lote" (`les:n3-causa-05` "o bloco せい", `les:n3-perspectiva-04` "o bloco す"). The two also name
-different things ("Corpo, natureza e cotidiano" vs "Lar, corpo e natureza"). **Fix:** h2 → "Lar, corpo e
-natureza: o bloco ほ", and align the title to it.
+Two are near-verbatim. It is also meta-commentary about the course's own SRS mechanics inside learner
+prose, which no other tip in the slice does.
+**Fix:** keep at most one instance (the relato-02 wording is the least mechanical), delete the others.
 
 ---
 
-## E. Section headings that do not cover their contents
+## Class G — headings that do not describe their contents
 
-### E1 — `les:n3-causa-05`: a "bloco せい" that is half す
+### G1 — Two pairs of lessons share a title; one pair shares its h2 as well
 
-> title: "Personalidade, precisão e impostos: **o bloco せい**"
-> intro: "**Muitas palavras de N3 começam com せい**, então vale aprendê-las em conjunto…"
+- `les:n3-relato-05` and `les:n3-relato-06` are both titled **"Relato, citação e definição"** *and*
+  both open with `<heading level="2"><text>Relato, citação e definição</text></heading>` in relato-06
+  (relato-05's h2 differs). In the topic index the learner sees the same entry twice in a row.
+- `les:n3-estrutura-04` and `les:n3-estrutura-05` are both titled
+  **"Nominalização, explicação e voz passiva"**.
 
-Nine of the eighteen items are す-, not せい-: 頭痛 (ずつう), ずっと, 既に (すでに), 全て (すべて), 鋭い
-(するどい), 即ち (すなわち), 素敵 (すてき), スピーチ, 済ませる (すませる). The intro's grouping claim is the
-learner's whole memory hook, and it does not hold for half the list. **Fix:** either retitle to "o bloco
-せい/す" and say so in the intro, or move the す- items into `les:n3-perspectiva-04` ("o bloco す").
+**Fix:** retitle from each lesson's actual content — relato-06 is a は-row vocabulary batch
+("Doutores, aplausos e o par はく"); estrutura-05 is descoberta/desenvolvimento/divulgação
+("Descoberta, crescimento e divulgação", which is already its own h2).
 
-Same lesson, smaller: `«生» (なま) - cru, fresco` is filed under the h3 "**Caráter, exatidão e os homófonos
-せい**" while its reading is なま, and the intro lists 生 among "leituras curtas isoladas (正, 性, 生)",
-implying せい. **Fix:** move 生/なま out of the せい homophone group, or state explicitly that the entry is
-the *other* reading of a kanji whose せい reading the learner already knows (学生).
+### G2 — `les:n3-relato-07`: 木曜 filed under "Objetivos e metas"
 
-### E2 — `les:n3-limites-05`: "Corpo, saúde e estadia" contains two abstract nouns
+```
+### Objetivos e metas
+Duas palavras muito próximas que vale separar:
+ - 目的 (もくてき) - objetivo, propósito
+ - 目標 (もくひょう) - meta, alvo concreto
+ - 木曜 (もくよう) - quinta-feira (forma curta de 木曜日)
+```
 
-> h3 "**Corpo, saúde e estadia**" → 体育, 体温, 大気, 滞在, 退屈, **存在** (existência), **尊重** (respeito).
+The heading announces two words and a contrast; a weekday is appended purely because it starts with
+もく. **Fix:** move 木曜 out (see E1) and let the section be the two-word contrast it advertises.
 
-存在 and 尊重 belong to neither body, health nor staying. **Fix:** move them to a "Existência e respeito"
-group or fold them into the following section.
+### G3 — `les:n3-perspectiva-01`: "animais, sons e objetos" that are neither
 
-### E3 — `les:n3-enfase-05`: "Maioria e proporção" contains a war and a reciprocal
+> "Agora mais um grupo do cotidiano, com **animais, sons e objetos do dia a dia**:"
+> atirar · gemer, resmungar · gargarejo · boi · cavalo · coelho · **curso superior de um rio** · uísque
 
-> h3 "**Maioria e proporção**" · lead "Quanto é a maior parte de algo." → 大半, 大部分, **互い** (um ao
-> outro), **大戦** (grande guerra).
+上/かみ ("curso superior de um rio") is not an animal, a sound or an object — and it was already taught
+in `les:n3-conectores-05`. ウイスキー is not a sound or an animal either. The real organizing principle
+is the initial う, which the prose never states — unlike `les:n3-perspectiva-02`, which does say
+*"Note como vários compartilham a leitura えい"*.
+**Fix:** state the sound grouping ("palavras que começam com う") and drop the 上 repeat.
 
-**Fix:** move 互い and 大戦 out; 互い fits "Representação e liderança" poorly too, so a small "Reciprocidade
-e conflito" group or the "Mundo natural e objetos" section is the better home.
+### G4 — `les:n3-perspectiva-03`: a false claim about which kanji writes the sound
 
-### E4 — `les:n3-concessao-06`: "O campo e a agricultura" opens with two words about talent
+> "Repare que vários nomes começam com o som えん, **escrito com o kanji 演** (apresentar-se, executar)"
 
-> h3 "**O campo e a agricultura**" · lead "Agora um grupo ligado ao **trabalho rural**. Note que três
-> palavras compartilham o kanji de 'agricultura'…" → **能** (talento), **能力** (capacidade), 農業, 農家,
-> 農民, ノー.
+Of the ten items that follow, 演技/演説/演奏 use 演; but **援助** uses 援, **エンジン** is katakana, and
+**横断** is おうだん, not えん at all. 王/王様/王子 and 大家 are covered by the second half of the
+sentence or not at all.
+**Fix:** "vários começam com o som えん — em 演技, 演説 e 演奏 escrito com 演, em 援助 com 援 — e outros
+giram em torno de 王 (rei)."
 
-The two leading items and ノー are not rural; the promised trio (農業/農家/農民) is items 3–5. **Fix:** move
-能/能力/ノー into their own group and let the section open on 農業.
+### G5 — `les:n3-perspectiva-07`: two headings that do not cover their lists
 
-### E5 — `les:n3-desejos-02`: "Vocabulário de dinheiro e economia" is half not that
+> "### Proveito, razão e esperteza" — contains 利益, 利口, 理解 (fits) **plus** 読み ("a leitura de um
+> texto ou de um kanji") and よろしく ("manda lembranças").
+> "### Previsão, sociedade e relações" — contains 予報, 予防, 世の中, 離婚, 嫁 (fits) **plus** 陸
+> ("terra firme"), 来 (prefixo "que vem"), ライター ("escritor") and ラケット ("raquete").
 
-> h3 "**Vocabulário de dinheiro e economia**" · lead "Hipóteses ('se eu tivesse dinheiro…') combinam com
-> este campo. Note como o kanji 「金」 … aparece em vários." → 金額, 金銭, 金融, 金庫, 金属, 銀, 景気, 経営,
-> 金曜, 近代, **偶然**, **具体**, **区別**, **句**, **計**, **敬意**, **位**.
+The second is effectively a catch-all with a specific-sounding title.
+**Fix:** split off "Palavras avulsas do bloco り/ら" for the four leftovers, as
+`les:n3-conjectura-07` does with its "Mais palavras úteis" section.
 
-Seven of seventeen have nothing to do with money, and 金曜 (Friday) and 近代 (modern era) only share the
-sound. **Fix:** split into "Dinheiro e economia" (金額…経営) and "Outras palavras do bloco き/く/け".
+### G6 — `les:n3-relato-05`: an item that admits it does not belong
 
-### E6 — `les:n3-estrutura-06`: "Três palavras" followed by four, the fourth unrelated
+> "- チーズ (queijo, do inglês 'cheese'). **Não tem nada a ver com 地**, mas é a hora de guardar mais um
+> empréstimo do dia a dia."
 
-> "Três palavras parecidas no som, mas com sentidos distintos:" → 役 (やく), 役割 (やくわり), 約 (やく),
-> **文句** (もんく).
+The section is headed *"Lugar, posição e região"* and introduced as *"a família do kanji 地"*. The
+author states in the item itself that it does not fit and includes it anyway.
+**Fix:** move チーズ to a "Empréstimos do bloco ち" bullet outside the 地-family section, so the family
+section stays coherent.
 
-文句 is neither one of the three nor similar in sound. **Fix:** move 文句 to the "Coisas, sons e histórias"
-group (it is a も- word) and leave the trio intact.
+### G7 — `les:n3-relato-04`: a kanji bullet anchored on an already-taught kanji
 
-### E7 — `les:n3-limites-07`: two headings that misclassify their own items
+> "- 晴… já vimos; aqui entra o parente **雪** 'neve': em cima o radical da chuva (雨): a chuva que vira
+> gelo. 雪 = 'neve'."
 
-> h3 "**Verbos do dia a dia**" → 任せる, 増す, **マスター** (a noun; the verb is マスターする)
-> h3 "**Adjetivos e advérbios de grau**" → 貧しい, **負け** (a noun), 正に, 真逆, ぼんやり, まあ
+Every sibling bullet in that list opens with the new kanji it teaches. This one opens with 晴, taught
+in the immediately preceding lesson (`les:n3-relato-03`), and buries 雪 mid-sentence — so the list's
+visual anchor is wrong and 雪 has no bullet of its own.
+**Fix:** "- 雪 'neve': em cima o radical da chuva (雨)… parente de 晴, que você viu na lição passada."
 
-**Fix:** move マスター and 負け into the "Gente, lugares e coisas concretas" group.
+### G8 — Three more mis-filed items
 
-### E8 — `les:n3-enfase-03`: 国民 listed twice, the second time in a malformed bullet
+- `les:n3-intencao-02`: 火曜 ("terça-feira") sits in *"Vocabulário de empresa, regra e sociedade"*,
+  alongside 企業, 管理, 議会, 環境.
+- `les:n3-enfase-05`: *"Maioria e proporção"* contains 互い ("um ao outro") and 大戦 ("grande guerra"),
+  neither of which is about majority or proportion; and *"Conectivos de contraste"* is a section with
+  a single entry (だが).
+- `les:n3-causa-07`: *"Sentimentos e impressões"* contains 無事 ("estar são e salvo"), which is a state,
+  not a sentiment.
 
-> "- «国民» (「こくみん」) = 'povo, cidadãos de um país'."
-> …four bullets later…
-> "- **«国民» aparece muito em notícias, ao lado de «克服» (「こくふく」) = 'superação, vencer uma dificuldade'.**"
+### G9 — `les:n3-conectores-06`: the title names two sound families, the lesson has three
 
-The second bullet is a duplicate entry that exists only to smuggle 克服 into the list, and it reads as a
-sentence, not a glossary line. **Fix:** delete the duplicate and give 克服 its own bullet:
-"- «克服» (こくふく) = 'superação, vencer uma dificuldade'."
+> TITLE: "Do almoço à comunicação: palavras com **ちゅう e つう**"
 
----
+The middle block is entirely ちょ/ちょう — 調査, 調子, 貯金, 長期, 長大, 頂上, 著者, 直接 — plus 遂に
+(ついに). The description gets it right; the title does not.
+**Fix:** "palavras com ちゅう, ちょう e つう".
 
-## F. Vague, filler, or manufactured pedagogy
+### G10 — `les:n3-conjectura-04`: 13 new kanji under a heading that calls them revision
 
-### F1 — Two kanji entries that name no word (`les:n3-perspectiva-01`, `les:n3-perspectiva-02`)
+> "### Kanji de ação e emoção (**um grande bloco de revisão**)"
 
-Every other bullet in these two "Kanji do dia" lists ends in a concrete compound. These two do not:
+The lesson unlocks 13 of the 14 kanji presented (抱 息 恐 痛 欲 探 束 戻 越 逃 犯 君 閉 — only 遠 is
+older). Calling a first introduction "revisão" tells the learner not to study them.
+**Fix:** "Kanji de ação e emoção (bloco grande — volte a ele nas revisões)".
 
-> "«予» (de antemão, previamente). **Aparece em palavras de planejamento, como adiar algo previsto.**"
-> "«参» (participar, tomar parte, visitar). **Aparece no verbo de participar, como em uma reunião.**"
+### G11 — `les:n3-perspectiva-05`: an N5 particle taught as filler, plus a build artifact
 
-The learner is told a compound exists but not which one. **Fix:** "«予» … Aparece em 「予定」 ('agenda'),
-「予約」 ('reserva') e 「予習」 ('estudo prévio')." / "«参» … Aparece em 「参加する」 ('participar') e
-「参考」 ('referência')."
-
-### F2 — The tail of each kanji section is a run-on dump (9 lessons)
-
-The established pattern inside a "kanji novos" section is one paragraph per kanji, with a component
-breakdown and a compound. The last paragraph of the section then abandons it and crams the remainder into a
-single sentence with no mnemonic:
-
-> `les:n3-enfase-01`: "O kanji «亡» significa 'falecido, perecer'. O kanji «舞» significa 'dança, rodopiar'…
-> O kanji «婦» tem o radical da mulher… E o kanji «寄» significa 'aproximar-se, reunir'…" (4 in one paragraph)
-> `les:n3-desejos-04`: "**Mais cinco para a sua coleção:** «横»…; «深»…; «光»…; «路»…; e «太»…" followed by
-> "**E quatro do mundo do estudo e do clima:** «科»…; «師»…; «客»…; e «候»…" (9 across two sentences)
-> `les:n3-conjectura-04`, worst case: heading "**Kanji de ação e emoção (um grande bloco de revisão)**" then
-> **14 kanji** in four paragraphs, including the parenthetical "(só 遠 e 逃 trazem o radical 辶; 戻 vem de 戸,
-> porta, e 越 vem de 走, correr)"
-> `les:n3-relato-04`: **14 kanji** as a flat bullet list, one of which opens "«晴»… **já vimos**; aqui entra
-> o parente «雪»…" — a bullet whose head kanji is not what it teaches
-
-Both of the 14-kanji cases carry a note that effectively apologises for the dump ("São muitos kanji de uma
-vez, então não tente decorar todos agora"), which is the tell. Also in enfase-02, enfase-03, enfase-04,
-concessao-01, concessao-04. **Fix:** cap a kanji section at what fits the one-per-paragraph pattern and push
-the overflow into the next lesson, or give the overflow its own sub-heading with the same treatment.
-
-### F3 — `les:n3-concessao-07`: a manufactured pitfall between two words nobody confuses
-
-> "E **ミス (erro) não tem nada a ver com 妙 (みょう, 'estranho')**: a primeira vem do inglês, a segunda é
-> palavra japonesa de origem chinesa."
-
-みす and みょう are not homophones, near-homophones, or semantically adjacent; the note warns against a
-confusion it has to invent. **Fix:** delete the second half of the note (the first half, 魅力 vs 魅力的, is
-a real distinction and should stay).
-
-### F4 — `les:n3-perspectiva-05`: a culture note that ends on a non-sequitur
-
-> "**Cultura** — O 梅雨 (つゆ) é uma estação bem marcada no calendário japonês: chove quase todos os dias
-> entre o fim de maio e meados de julho… O nome se escreve com os kanji de 'ameixa' e 'chuva', porque
-> coincide com o amadurecimento das ameixas. É um período tão úmido que tudo parece encharcado, **mas a
-> palavra 「積もる」 vale mesmo para o que se empilha, como neve, poeira e trabalho.**"
-
-The final clause is about a different word, joined by an adversative ("mas") that carries no contrast — the
-note reads as if two notes were merged. **Fix:** end the culture note at "…amadurecimento das ameixas." and
-move the 積もる line into the bullet for 積もる, without "mas".
-
-### F5 — `les:n3-perspectiva-05`: an N5 particle presented as N3 vocabulary, to hit a count
-
-> "### **Partícula で e itens restantes**
+> "### Partícula で e itens restantes
 > Falta apresentar uma palavra-ferramenta e fechar o vocabulário da lição.
-> - «で» (で) - em, no, na (marca o lugar onde uma ação acontece).
-> 「海で釣りをするのが好きだ」 (Gosto de pescar no mar.)
-> Repare que 「で」 aqui marca *onde* a ação acontece (no mar), e a frase ainda usa 「釣り」, a pescaria.
+> - で - em, no, na (marca o lugar onde uma ação acontece).
+> …
+> Repare que で aqui marca *onde* a ação acontece (no mar), e a frase ainda usa 釣り, a pescaria.
 > **Com isso, você já viu as dezessete palavras desta lição.**"
 
-The particle で is N5 material and the heading itself ("itens restantes") admits the section exists to
-close a tally; the closing sentence states the tally out loud, which is bookkeeping addressed to the
-curriculum, not to the learner. **Fix:** drop the section, fold 釣り into "Clima, sensações e
-acontecimentos", and delete the count sentence.
+Three problems in one section: (a) the heading "itens restantes" and the line "Falta apresentar…"
+describe the lesson's own construction, not its content; (b) で marking location is N5 material, given
+a dedicated section at N3; (c) *"Com isso, você já viu as dezessete palavras desta lição"* is a
+word-count bookkeeping note addressed to the author, not the learner.
+**Fix:** delete the section; fold で into the 釣り example as a one-clause reminder, and drop the
+counting sentence.
 
-### F6 — `les:n3-conjectura-02`: the contrast note reuses the phrase it assigned to the other item
+---
 
-> h3: "**わけがない: não tem como, é impossível**"
-> note: "Não confunda com 「はずがない」. O 「わけがない」 nega por raciocínio lógico ('é absurdo pensar isso');
-> 「はずがない」 nega a possibilidade com base no que se sabe (**'não tem como ser assim'**)."
+## Class H — explanations that are wrong or unusable as written
 
-"Não tem como" is the heading's own gloss for わけがない and is then handed to はずがない as its distinguishing
-translation, so the pair the note is separating collapses back together. **Fix:** give はずがない a different
-Portuguese anchor: "…('**não era para ser assim**', pelo que se sabe)".
+### H1 — `les:n3-concessao-01`: the opening example contains no ても
 
-### F7 — `les:n3-tempo-07`: a homophone warning that never names the homophones
+Raw body, first paragraph:
 
-> objective: "Distinguir palavras parecidas: 額 … e **os verbos que soam ひく**, como 轢く (atropelar)."
-> note: "E o verbo 轢く (ひく, atropelar) **soa idêntico a outros verbos do dia a dia**; é o contexto, e não o
-> som, que diz qual é qual."
+```
+<p><text>Você já viu o </text><jp>ても</jp><text> em formas como </text>
+<jp reading="いいですか">いいですか</jp><text> ('pode? / tudo bem se?')…
+```
 
-The two verbs in question — 引く (puxar) and 弾く (tocar um instrumento) — are never named, and 引っ張る
-(puxar) is introduced in the very same lesson, so the learner has the raw material and is denied the link.
-**Fix:** "…soa idêntico a **引く** ('puxar', o mesmo 引 de 引っ張る) e a **弾く** ('tocar piano/violão'); só o
-kanji e o contexto separam os três."
+いいですか by itself is "está bom?" and contains no ても. The form the learner met at N4 is
+**〜てもいいですか**. As printed, the lesson's very first sentence makes a false claim about the pattern
+it is introducing.
+**Fix:** `<jp reading="てもいいですか">〜てもいいですか</jp>`.
 
-### F8 — `les:n3-limites-03`: 富士山 used to illustrate 富 = "riqueza"
+### H2 — `les:n3-concessao-02`: an incomplete formation rule pointing at the wrong particle
 
-> "- «富» riqueza, abundância: 「**富士山**」, 'monte Fuji'."
+> "A montagem é como a do **の**: verbo simples + くせに, adjetivo-な + な + くせに, substantivo + の +
+> くせに."
 
-In 富士山 the kanji are ateji for a pre-existing name; 富 carries none of "wealth" there, so the example
-undoes the gloss it is meant to support. Every other bullet in the same list uses a transparent compound
-(速→速度, 給→給料). **Fix:** "«富» riqueza, abundância: 「豊富」, 'abundante'" (which the course already
-teaches, in `les:n3-deveres-06`).
+Two defects: (a) "como a do の" is meaningless — the intended comparison is **のに**, the neutral
+"apesar de" the same note contrasts くせに with two sentences later; (b) the rule omits the
+い-adjective (高いくせに), which the learner will need.
+**Fix:** "A montagem é a mesma de のに: verbo simples + くせに, adjetivo-い + くせに, adjetivo-な + な +
+くせに, substantivo + の + くせに."
 
-### F9 — `les:n3-tempo-06`: an example that uses the pattern the course just told the learner to avoid confusing
+### H3 — `les:n3-estrutura-02`: a "minimal pair" made of the same string twice
 
-> `les:n3-tempo-03` warning: "Não confunda com ～ているところ (estar no meio de algo) **nem com ～たところだ
-> (acabar de fazer)**."
-> `les:n3-tempo-06` intro: "…usamos só padrões que você já conhece, como 「うちに」, 「きり」 e 「**たところ**」…"
-> `les:n3-tempo-06` example: "「泥棒が警察に**捕まったところだ**」 (O ladrão **acabou de** ser pego pela polícia.)"
+```
+<p><text>こと combina bem com palavras de aprendizado e de estado. Note os pares mínimos de duração:
+しょう (curto) versus しょう longo muda a palavra inteira.</text></p>
+```
 
-The example is 〜たところ**だ**, i.e. exactly the form flagged three lessons earlier as the thing *not* to
-confuse with the 〜たところ this lesson claims to be reusing — and no note marks the switch. (The lesson's
-other example, 「机の上を見たところ大きな包みがあった」, uses the intended pattern correctly.)
-**Fix:** either change the example to the discovery 〜たところ (「警察が来たところ泥棒は逃げていた」) or add
-one line naming the difference.
+The identical string しょう is labelled both "curto" and "longo". Nothing is being contrasted, the
+sentence has no working predicate ("versus しょう longo **muda** a palavra inteira"), and the learner
+is pointed at a distinction that is not on the page. The list that follows does contain a real
+duration pair — **上達 (じょうたつ)** vs **状態 (じょうたい)** share じょう, and **症状 (しょうじょう)**
+vs **少々 (しょうしょう)** are a genuine しょ/しょう contrast.
+**Fix:** "Note o par de duração: 少々 (しょうしょう, 'um pouco') tem quatro moras longas, enquanto
+処理 (しょり) tem só duas curtas — a vogal longa muda a palavra inteira."
 
-### F10 — Kanji entries whose only example is the kanji itself (4 sites)
+### H4 — `les:n3-conectores-03`: 相 in 首相 glossed as "mútuo"
 
-> `les:n3-intencao-01`: "«声» ('voz'): a voz com que a gente diz o que pensa. **Em 「声」 ('voz').**"
-> `les:n3-intencao-03`: "«石» ('pedra'): um penhasco com uma pedra embaixo. **Em 「石」 ('pedra').**"
-> `les:n3-intencao-03`: "«神» ('deus'): à esquerda o radical de 'altar/divino'. **Em 「神」 ('deus')** e 「神道」."
-> `les:n3-deveres-01`: "«頭» ('cabeça'): tem o radical de 'página/rosto' (頁) à direita. **Aparece em 「頭」
-> ('cabeça').**"
+> "Aparece em 首相 ('primeiro-ministro', a '**cabeça mútua**' do governo, com o 相 que você já viu)."
 
-The "aparece em" slot is supposed to show the kanji at work in a word; here it restates the entry.
-**Fix:** 声 → 「声を出す」/「大声」; 石 → 「石段」/「宝石」 (the course teaches 宝石 in `les:n3-deveres-06`);
-神 → keep only 「神道」; 頭 → 「頭痛」 (taught in `les:n3-causa-05`).
+The 相 of 首相 (and of 外相, 蔵相) is the "minister / aide" sense, not the 相 = "mútuo" the same lesson
+family taught in conectores-01. Presenting 首相 as "cabeça mútua" teaches a wrong reading of the
+compound, and the cross-reference makes the error look authoritative.
+**Fix:** "Aparece em 首相 ('primeiro-ministro'): 首 é 'cabeça' e este 相 tem o sentido de 'ministro,
+auxiliar' — outro uso do kanji que você viu como 'mútuo' em 相手."
+
+### H5 — `les:n3-causa-05`: the same example sentence, respelt into a hyōgai kanji
+
+`les:n3-causa-01` teaches せいで with:
+
+> 「雨の**せい**で試合が中止になった」 — "o jogo foi cancelado por causa da chuva"
+
+`les:n3-causa-05` reprints the identical sentence as:
+
+> `<jp reading="あめのせいでしあいがちゅうしになった">雨の**所為**で試合が中止になった</jp>`
+> (Por culpa da chuva, o jogo foi cancelado.)
+
+所為 is a rare ateji form that essentially never appears in modern writing; the learner who memorised
+かな four lessons ago now meets the same sentence in a spelling nobody uses, with no note explaining
+the change.
+**Fix:** print 雨のせいで in the example and, if the 所為 form is worth showing, mention it in the gloss
+line for `vocab:1610040` ("escreve-se quase sempre em kana; a grafia 所為 é rara").
+
+### H6 — `les:n3-conectores-05`: two examples printed in kanji forms nobody writes
+
+> 「**偖**、次の話に移りましょう」 (Pois bem, vamos passar ao próximo assunto.)
+> 「**何れ**にしても決定は明日だ」 (De qualquer forma, a decisão fica para amanhã.)
+
+偖 is a hyōgai kanji for さて; 何れ for いずれ is likewise almost always written in kana. The same
+lesson explicitly warns about exactly this for こんにちは — *"É a saudação clássica e escreve-se quase
+sempre em hiragana; a grafia 今日は é rara"* — but then prints 偖 and 何れ without the equivalent note.
+**Fix:** write さて and いずれ in kana in the examples, keeping the kanji forms (if wanted) in the gloss
+line with the same "grafia rara" caveat already used for 今日は.
+
+### H7 — `les:n3-causa-07`: a generated example that stacks two synonyms
+
+> 「明日の試験が**心配**で、**不安**で眠れなかった」
+> (Preocupado com a prova de amanhã, não consegui dormir de tanta ansiedade.)
+
+心配 and 不安 mean the same thing here, and chaining two て-form causes on one predicate is not how a
+native would build the sentence. The lesson is teaching 不安, so the first clause is redundant padding.
+**Fix:** 「明日の試験が不安で眠れなかった」 — "Fiquei sem dormir de ansiedade por causa da prova de
+amanhã."
+
+---
+
+## Class I — register and locale slips in learner-facing pt-BR
+
+### I1 — `les:n3-desejos-03`: an unfortunate collision in a pronunciation note
+
+> "Armadilha PT: くう tem duas vogais, duas batidas: 'ku-u', não um '**cu**' curto."
+
+In pt-BR, *cu* is a vulgar word for anus. Printing it in quotation marks in a learner-facing
+pronunciation note is a register failure specific to this locale, and `design/translation_style.md`
+asks that genuinely vulgar items be flagged rather than produced. Every other mora note in the slice
+uses the hyphenated romanisation without a Portuguese sound-alike.
+**Fix:** "くう tem duas vogais, duas batidas: 'ku-u'. Não colapse as duas num só tempo; segure a
+segunda batida."
+
+### I2 — `les:n3-desejos-07`: English "batch" in the lesson's own h2
+
+> `<heading level="2"><text>Lar, corpo e natureza: o **batch** ho</text></heading>`
+
+The title says "o bloco ほ", the description says "leitura ho", and the h2 says "o batch ho". Three
+labels for one thing, one of them an untranslated English word in the largest heading on the page.
+**Fix:** "Lar, corpo e natureza: o bloco ほ" (matching the title).
+
+### I3 — `les:n3-tempo-08`: "Vamos por clusters"
+
+> "No meio ainda entram algumas palavras do dia a dia. **Vamos por clusters.**"
+
+The corpus's own idiom for this move is Portuguese: `les:n3-conectores-06` writes *"Vamos por blocos
+para facilitar"*, `les:n3-concessao-07` and `les:n3-estado-08` write *"Vamos por grupos"*.
+**Fix:** "Vamos por blocos."
+
+### I4 — `les:n3-estado-02`: an untranslated English gloss
+
+> "Aparece em 放送 ('transmissão, **broadcast**')."
+
+**Fix:** "('transmissão, radiodifusão')" or "('transmissão de rádio ou TV')".
+
+### I5 — Missing space before an opening parenthesis (3 occurrences)
+
+- `les:n3-conectores-06`: "almoço, a refeição do meio-**dia(mais** formal que 昼ごはん)"
+- `les:n3-estado-02`: heading "Vocabulário do **dia(em** kana)"
+- `les:n3-estado-03`: heading "Vocabulário do **dia(em** kana)"
+
+`les:n3-estado-01` and `-04` get the same heading right ("Vocabulário do dia (em kana)").
+**Fix:** insert the space.
+
+---
+
+## Class J — pedagogy: uneven treatment inside a single lesson
+
+### J1 — `topic-46-limites` 01–04: vocabulary lists with no readings, next to instructions that need them
+
+`les:n3-limites-01` presents its fourteen new words as bare glosses:
+
+> "Pratique a leitura em voz alta, batendo uma palma por mora:
+>  - tendência, propensão. · aviso, advertência. · cálculo, conta. · aviso, cartaz (afixado). …"
+
+No kana anywhere. The learner is told to clap one beat per mora for words whose readings the page does
+not show, and the checklist then asserts *"Reconheço a leitura dos sete kanji e dos quatorze vocábulos
+novos."* The same shape recurs in limites-02 (*"Muitos termos de hoje começam com けつ ou けっ; preste
+atenção ao っ"* — with no readings to check that against), limites-03 (*"Repare em quantos termos
+começam com 現 ou 検"*, plus a tip naming a けんとう pair the list never spells) and limites-04
+(*"Vários termos de hoje se leem こうか"*).
+
+Contrast the house style used everywhere else in n3 — `les:n3-estado-01`, `les:n3-intencao-01`,
+`les:n3-tempo-05`, `les:n3-conjectura-05` all print "(kana) = gloss" per row.
+**Fix:** add the kana to the four limites lists, matching the sibling lessons; the sound-grouping
+claims and the clap-per-mora instruction only work once the readings are visible.
+
+### J2 — Kanji dumped without treatment at the end of a section
+
+A recurring shape: the first two or three kanji in a section get a component decomposition and an
+example compound; the remainder are chained into one run-on sentence with a meaning and nothing else.
+
+- `les:n3-enfase-01`: "O kanji 亡 significa 'falecido, perecer'. O kanji 舞 significa 'dança'… O kanji
+  婦 … E o kanji 寄 …" — **亡 gets no example word at all**, four kanji in one paragraph after three
+  full treatments.
+- `les:n3-desejos-04`: **nine** of fourteen kanji dispatched in two sentences — "Mais cinco para a sua
+  coleção: 横…; 深…; 光…; 路…; e 太…. E quatro do mundo do estudo e do clima: 科…; 師…; 客…; e 候…."
+- `les:n3-concessao-01`: the tail four are strung on a manufactured semantic link — "O 倒 …, o 押 …, O
+  散 … e o 欠 … completam a leva: **por mais que se empurre ou se espalhe, algo sempre pode faltar.**"
+  That sentence invents a relationship between 倒/押/散/欠 that does not exist and will mislead anyone
+  who tries to use it as a mnemonic.
+- Also `les:n3-enfase-03` (妻, 背, 険, 頼), `les:n3-enfase-04` (途, 許, 便),
+  `les:n3-perspectiva-01` (予: "Aparece em palavras de planejamento, como adiar algo previsto" — no
+  component, no example word), `les:n3-estado-01` (局: meaning + one compound, no decomposition),
+  `les:n3-intencao-01` (声: "a voz com que a gente diz o que pensa. Em 声 ('voz')" — the example word
+  is the kanji itself).
+
+**Fix:** give every kanji in a "Kanji novos" section the same minimum the majority already get — one
+component observation plus one example compound — and drop the invented connective in concessao-01.
 
 ---
 
 ## Count table
 
-| Class | Checked | Flagged |
-|---|---:|---:|
-| **A. pt-BR text defects** | 101 lesson bodies | **11** (A1 covers 4 lessons / 53 unambiguous stripped tokens + minimal-pair tail) |
-| **B. Japanese examples wrong or off-point** | ~640 inline JP examples | **17** |
-| **C. Structural defects on the page** | 101 bodies, 1,332 vocab items, 715 notes | **8** (C4 = 1,396 sites / 88 lessons; C5 = 18 sites / 4 lessons; C7 = 43 notes / 35 lessons) |
-| **D. Duplicated / promised-not-delivered** | 101 titles, 101 h2, all `<p>` ≥70 chars | **12** |
-| **E. Headings vs contents** | ~430 h3 sections | **8** |
-| **F. Vague / filler / manufactured pedagogy** | 101 bodies | **10** |
-| **TOTAL** | **101 lessons** | **66 defects** |
+**Checked:** 101 lesson bodies (all of `course/n3`), 644,643 characters.
 
-### Clean, and stated as such
+| Class | What | Lessons affected | Findings |
+|---|---|---:|---:|
+| A | pt-BR diacritics stripped in body prose | 4 | 4 |
+| B | Broken / missing markup reaching the learner | 12 | 8 |
+| C | Lesson introduces material it never teaches | 12 | 7 |
+| D | Numeric claims contradicted by `unlocks` | 5 | 5 |
+| E | Already-taught material presented as new | 26 | 4 |
+| F | Verbatim duplication inside a lesson | 5 | 3 |
+| G | Headings that do not describe their contents | 15 | 11 |
+| H | Explanations wrong or unusable as written | 7 | 7 |
+| I | Register / locale slips in pt-BR | 7 | 5 |
+| J | Uneven pedagogical treatment inside a lesson | 12 | 2 |
+| **Total** | | **≈62 distinct lessons** | **56** |
 
-| Check | Result |
-|---|---:|
-| Furigana integrity (`<jp reading>` vs surface) | **0** |
-| XML tag balance in `body` | **0** |
-| Em dash (—) in authored prose | **0** |
-| `gp-NN` codes / `sent:`/`les:`/`top:` id leaks in learner text | **0** |
-| Reviewer instructions, TODO/FIXME/placeholder text | **0** |
-| `<term>` without `define` | **0** |
-| Lesson bodies in `topic-38` lessons 05–08, `topic-40`, `topic-43`, `topic-44`, `topic-45`, `topic-47` grammar lessons | no A-class (accent) defects |
+Counts in the "Findings" column are numbered items; several items (E1, E2, E3, D1–D4, G8, I5, J1, J2)
+aggregate a table of instances, so the number of individual repair sites is higher — roughly 190,
+of which ~120 are the Class A diacritic restorations in four lessons.
 
-**Excluded by instruction (STATE.md open items):** 4 reading-vs-corpus mismatches found by scan
-(`les:n3-intencao-03` 柄 がら, `les:n3-deveres-03` 金 きん, `les:n3-conjectura-03` 品 ひん,
-`les:n3-relato-04` 上 じょう) all resolve to rows already sitting in
-`course/vocab_disambiguation_review.json` and are **not** counted above.
+**Highest-value repairs, in order:**
 
-### Suggested triage order for the teacher queue
+1. **C1** — the 25 untaught kanji in `topic-41-causa` 01–04. This is the only finding in the slice
+   where the learner receives SRS cards for material that has no teaching at all anywhere in the
+   course, and it silently breaks `les:n3-relato-01`'s introduction of 示 downstream.
+2. **Class A** — four lessons of accent-stripped prose, at the very start of n3, i.e. the first thing
+   an N3 learner reads. Mechanical to fix and highly visible.
+3. **B1/B2/B3** — three places where a headword or kanji simply does not render.
+4. **E1** — 日本, 週, 意味 and seven weekday words taught as new N3 vocabulary.
+5. **H1/H2/H3** — three explanations that are false or empty as written, each in the opening move of
+   its section.
 
-1. **C1, C2, C3** — three lessons currently render a word or a kanji as nothing. Smallest fix, worst symptom.
-2. **B1, B2, B3, B4** — four statements that are simply wrong (a ても example with no ても; 空き缶 as から;
-   抱く as "abraçar" against its own linked record; ボーイ as "garoto").
-3. **A1** — the four accent-stripped lessons; mechanical except for the minimal pairs.
-4. **D1** — two pairs of same-titled lessons; a naming decision, then a one-line edit each.
-5. **C4** — needs a decision (renderer vs prose) before anyone edits 88 files.
-6. Everything else.
+**Not defects, checked and cleared** (recorded so the next pass does not re-open them): no em dashes
+anywhere in n3 bodies; no pt-PT forms; no backslashes, mojibake, HTML entities misuse, or smart-quote
+mixing; no QA-instruction leaks; `gram:n3-mo` is a badly named slug but its `label` renders correctly
+as "não só… como também (ばかりか… も)"; `vocab:1610340` (長大) is glossed correctly in
+`les:n3-conectores-06`; the "Repare em … " glue in `les:n3-deveres-06` and `les:n3-limites-01` is a
+rendering artefact of the review tooling, not of the corpus.

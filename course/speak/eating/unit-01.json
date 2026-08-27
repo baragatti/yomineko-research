@@ -80,6 +80,8 @@
       "prompt_pt": "Eu só sei isto.",
       "answer_key": "ぼくはこれだけしか知らない。",
       "accepted_variants": [
+        "ぼくはこれだけしかしらない",
+        "ぼくはこれだけしかしらない。",
         "ぼくはこれだけしか知らない",
         "ぼくはこれだけしか知らない。",
         "ぼくわこれだけしかしらない",
@@ -92,6 +94,8 @@
       "prompt_pt": "Eu preciso de dinheiro.",
       "answer_key": "ぼくはお金がいる。",
       "accepted_variants": [
+        "ぼくはおかねがいる",
+        "ぼくはおかねがいる。",
         "ぼくはお金がいる",
         "ぼくはお金がいる。",
         "ぼくわおかねがいる",
@@ -104,6 +108,8 @@
       "prompt_pt": "Assim que comprei aquele livro, me arrependi.",
       "answer_key": "私はその本を買ったとたんに後悔した。",
       "accepted_variants": [
+        "わたしはそのほんをかったとたんにこうかいした",
+        "わたしはそのほんをかったとたんにこうかいした。",
         "わたしわそのほんをかったとたんにこうかいした",
         "わたしわそのほんをかったとたんにこうかいした。",
         "私はその本を買ったとたんに後悔した",
@@ -114,7 +120,7 @@
     }
   ],
   "fluency": {
-    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
       "sent:tatoeba-81631",
       "sent:tatoeba-217663",
@@ -125,18 +131,19 @@
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
+    "kind": "recap",
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 29,
     "fluency": 6
   },
   "checkpoint": [

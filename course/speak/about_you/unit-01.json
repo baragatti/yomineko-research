@@ -92,8 +92,12 @@
       "prompt_pt": "Havia quatro móveis no quarto.",
       "answer_key": "部屋には家具が４点あった。",
       "accepted_variants": [
+        "へやにはかぐがよんてんあった",
+        "へやにはかぐがよんてんあった。",
         "へやにわかぐがよんてんあった",
         "へやにわかぐがよんてんあった。",
+        "部屋には家具が4点あった",
+        "部屋には家具が4点あった。",
         "部屋には家具が４点あった",
         "部屋には家具が４点あった。"
       ],
@@ -104,6 +108,8 @@
       "prompt_pt": "Estou pensando em dormir mais cedo hoje à noite.",
       "answer_key": "今夜は早めに寝ようと思う。",
       "accepted_variants": [
+        "こんやははやめにねようとおもう",
+        "こんやははやめにねようとおもう。",
         "こんやわはやめにねようとおもう",
         "こんやわはやめにねようとおもう。",
         "今夜は早めに寝ようと思う",
@@ -126,7 +132,7 @@
     }
   ],
   "fluency": {
-    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
       "sent:tatoeba-84180",
       "sent:tatoeba-84132",
@@ -137,18 +143,19 @@
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
+    "kind": "recap",
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 27,
     "fluency": 6
   },
   "checkpoint": [

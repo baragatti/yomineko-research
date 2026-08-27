@@ -273,7 +273,7 @@ load is stated. These cannot be fixed by re-selection. The fix is in `unlocks`, 
 | `les:n5-numeros-tempo-02` | 4 | `sent:tatoeba-190227` (n5/7), `sent:tatoeba-141433` (n5/5), `sent:tatoeba-190376` (n5/3), `sent:tatoeba-200413` (n5/3) | 56 くらい/ぐらい sentences; only **2** reach load ≤ 1 (`sent:tatoeba-225517` グリーンまでどれくらい？, `sent:tatoeba-5675047` どれくらい？), and both teach どれくらい (asking an amount) rather than the approximation-after-a-number the lesson teaches. | The counting lesson sits at pos 53 but 人 unlocks at pos 54, 高 at 78, 前 at 70, 来 at 84, 円 at 85, 千 at 100, 万 at 109. The body itself writes 千円ぐらい and 一時間くらい. |
 | `les:n5-numeros-tempo-05` | 1 | `sent:tatoeba-190227` 一年前くらい前に来ました。(n5/6) | Same pool. | 前 (pos 70) and 来 (pos 84) vs this lesson at pos 56. |
 | `les:n5-perguntas-03` | 3 | `sent:gen-2f1c4475a858` (n5/6), `sent:gen-40220286d0b2` (n4/6), `sent:gen-4e9dec6558f5` (n4/5) | 53 どれ/どの sentences; min load **1**, and the only load-1 in-level ones are どれくらい questions (`sent:tatoeba-3488662` どれどれ。, `sent:tatoeba-5675047`, `sent:tatoeba-225517`). | The lesson is titled "どれ e どの" and unlocks **neither**: `vocab:1009290` どれ at pos 89, `vocab:1920240` どの at pos 79; this lesson is pos 48. |
-| `les:n5-te-form-05` | 1 | `sent:tatoeba-2242416` 食べてもいいですか？(n5/2) | `sent:tatoeba-13158601` 出てもいいですか。and `sent:tatoeba-10962356` 外に出てもいいですか？are compliant (n5, load 1) but **both are already displayed in this lesson**; the only fresh compliant option is `sent:tatoeba-8861912` (n4, load 1, above level). | kanji 食 is not in this lesson's set at pos 98 although it is unlocked before pos 114. Unlocking 食 one topic earlier makes the current sentence compliant with no swap. |
+| `les:n5-te-form-05` | 1 | `sent:tatoeba-2242416` 食べてもいいですか？(n5/2) | `sent:tatoeba-13158601` 出てもいいですか。and `sent:tatoeba-10962356` 外に出てもいいですか？are compliant (n5, load 1) but **both are already displayed in this lesson**; the only fresh compliant option is `sent:tatoeba-8861912` (n4, load 1, above level). | kanji 食 unlocks at `les:n5-convites-01` (pos 102) vs this lesson at pos 98, a 4-lesson miss. Unlocking 食 one topic earlier makes the current sentence compliant with no swap at all. |
 | `les:n5-verbos-04` | 1 | `sent:tatoeba-81225` 毎晩電話するよ。(n5/7) | Every する sentence in the bank counts `vocab:1157170` as unknown here, so **min load is 1 and every candidate is n4 or above**. | The lesson is titled "O irregular する" and unlocks 時 plus 14 nouns, but **not する itself**, which arrives 142 lessons later at `les:n4-conectores-01`. |
 
 ### 3.2 Blocked by a wrong token → vocab link (W, 6 slots)
@@ -365,8 +365,9 @@ outside this bucket's slot list: kanji 諦 (in `sent:tatoeba-125387`, displayed 
 
 ## 5. Counts
 
-**Checked:** 41 lessons / 81 lesson-sentence pairs (100% of bucket 2). Every pair was searched against all 5 889
-bank records by grammar tag, by target vocab and by pattern substring; no pair was skipped or sampled.
+**Checked:** 41 lessons / 81 lesson-sentence pairs (100% of bucket 2), covering 78 distinct sentences (3 are shown
+by two lessons each). Every pair was searched against all 5 889 bank records by grammar tag, by target vocab and
+by pattern substring; no pair was skipped or sampled.
 
 | Class | Meaning | Slots | Lessons touched |
 |---|---|---|---|
@@ -386,7 +387,8 @@ Secondary defects found while searching, reported here because they change what 
 | wrong vocab link | ほう → 報 (`vocab:1515620`) instead of 方 (`vocab:1516930`); よう → 用 (`vocab:1546200`) instead of 様 (`vocab:1605840`), both contradicting their own token gloss | 2 links, 6 slots |
 | never-unlocked item | kanji 比, kanji 諦, `vocab:2846738` 何(なん) are used by displayed sentences but unlocked by no lesson | 3 items |
 
-**Candidate proposals delivered:** 33 slots with at least one compliant candidate (27 real, 6 generated), 68
-distinct candidate sentences cited with level, load, provenance and the evidence for the teaching-point match.
+**Candidate proposals delivered:** 33 slots with at least one compliant candidate (27 real, 6 generated); 90
+distinct candidate sentences cited in total (compliant proposals plus the least-bad fallbacks of §3), each with
+level, load, provenance and the evidence for the teaching-point match.
 For the remaining 48 slots the honest answer is recorded per slot: no compliant sentence exists in the bank, with
 the exact reason (ledger gap, wrong link, or empty pool) and the least-bad fallback.

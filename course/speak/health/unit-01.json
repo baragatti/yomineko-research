@@ -97,6 +97,7 @@
         "さいごにかみきったのいつですか",
         "さいごにかみきったのいつですか?",
         "最後に髪切ったのいつですか",
+        "最後に髪切ったのいつですか?",
         "最後に髪切ったのいつですか？"
       ],
       "sentence": "sent:tatoeba-3263386",
@@ -106,8 +107,12 @@
       "prompt_pt": "A escola começa às 8h10 da manhã.",
       "answer_key": "学校は午前８時１０分から始まる。",
       "accepted_variants": [
+        "がっこうはごぜんはちじじゅっぷんからはじまる",
+        "がっこうはごぜんはちじじゅっぷんからはじまる。",
         "がっこうわごぜんはちじじゅっぷんからはじまる",
         "がっこうわごぜんはちじじゅっぷんからはじまる。",
+        "学校は午前8時10分から始まる",
+        "学校は午前8時10分から始まる。",
         "学校は午前８時１０分から始まる",
         "学校は午前８時１０分から始まる。"
       ],
@@ -120,6 +125,8 @@
       "accepted_variants": [
         "あすからごれんきゅうだから、みんなるんるんきぶんだね",
         "あすからごれんきゅうだから、みんなるんるんきぶんだね。",
+        "明日から5連休だから、みんなルンルン気分だね",
+        "明日から5連休だから、みんなルンルン気分だね。",
         "明日から５連休だから、みんなルンルン気分だね",
         "明日から５連休だから、みんなルンルン気分だね。"
       ],
@@ -128,7 +135,7 @@
     }
   ],
   "fluency": {
-    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
       "sent:tatoeba-171774",
       "sent:tatoeba-226765",
@@ -139,18 +146,19 @@
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
+    "kind": "recap",
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 43,
-    "fluency": 16
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 16,
+    "language-focused": 21,
     "fluency": 6
   },
   "checkpoint": [

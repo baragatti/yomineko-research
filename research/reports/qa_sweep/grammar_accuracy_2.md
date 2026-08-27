@@ -589,49 +589,48 @@ convention the rest of the batch follows.
 
 ## What is clean
 
-The following were checked and found correct on every axis reviewed (explanation factual in
-both locales, formation producing the listed forms, `formation_steps` chains resolving to
-their stated examples, nuance consistent, examples on point). Listing them so the review
-queue does not re-litigate them:
+**97 of the 124 records carry no grammar-content defect.** That is, their `explanation` is
+factually correct in both locales, their `formation` produces the forms listed, every
+`formation_steps` chain resolves to its own `example`, `nuance` does not contradict
+`explanation`, and their linked sentences do illustrate the point. Some of those 97 still
+appear above under classes T (typography), L (leakage) or S (structure); those are
+presentation and graph defects sitting on top of correct grammar, and a teacher can sign the
+grammar off without re-deriving it.
 
-`da-desu`, `ga-imasu`, `gp-12`, `gp-140` (content; see T-5 for typography), `gp-144`,
-`gp-17`, `gp-20`, `gp-28` (content; see T-8), `gp-35`, `gp-39`, `gp-46`, `gp-9`, `issho-ni`,
-`ka-ka`, `keredo-mo`, `naku-temo-ii`, `naru`, `ni-e`, `shikashi`, `ta-koto-ga-aru`,
-`te-kudasai` (rules; see L-4), `toki` (rules; see T-5), `wa-dou-desu-ka`, `yo`, `amari-nai`,
-`bakari`, `garu-gatteiru`, `gp-106`, `gp-110`, `gp-114`, `gp-118`, `gp-122`, `gp-130`,
-`gp-149`, `gp-153`, `gp-60`, `gp-64`, `gp-68`, `gp-76`, `gp-80`, `gp-84`, `gp-88`, `gp-92`,
-`gp-96`, `ikou-kei-volitional-form`, `ka-dou-ka`, `kana`, `koto`, `koto-ni-suru`, `mama`,
-`mitai-ni`, `nakereba-ikenai`, `nasaru`, `o-ni-naru`, `rashii`, `saseru`, `sonna-ni`,
-`tagaru`, `te-ageru`, `te-itadakemasen-ka`, `te-morau`, `te-yaru`, `to-ittemo-ii`,
-`tsuzukeru`, `you-ni-naru`, `zehi`, `n3-beki-da`, `n3-dakedo`, `n3-furi-wo-suru`,
-`n3-kanaa`, `n3-kesshite-nai`, `n3-koso`, `n3-koto-ni-shite-iru`, `n3-maru-de-you`,
-`n3-metta-ni-nai-2`, `n3-moshi-temo`, `n3-nado`, `n3-ni-shitemo`, `n3-ni-yoreba`,
-`n3-sete-kudasai`, `n3-sono-ue`, `n3-te-iru`, `n3-to-shitara`, `n3-tokorode`, `n3-tsumari`,
-`n3-wa-mochiron-mo`, `n3-wake-ni-wa-ikanai`, `n3-you-to-omou`.
+The **27** records with a grammar-content defect (classes F, X and N) are exactly:
+
+`gp-102`, `gp-126`, `gp-24`, `gp-31`, `gp-42`, `gp-5`, `gp-72`, `gp-134`, `gp-138`,
+`demo`, `dewa-nai-ka`, `douyatte`, `hajimeru`, `mo`, `no-naka-de`, `node`, `sou-ni-sou-na`,
+`te-de`, `to-kiita`, `tsuzukeru`, `n3-ba-hodo`, `n3-nanka`, `n3-ni-kawatte`, `n3-ppai`,
+`n3-ta-tokoro`, `n3-to-iu-no`, `n3-you-ni-3`.
 
 Every `formation_steps` chain in the slice was executed by hand against its own `example`
-field and all of them resolve (including the non-obvious ones: `to-nai-stem` conventions
-such as 行かな + くてもいい, 書かな + いでください, 高くな + ければいけない; the two-transform chain
-`to-masu-stem + たがる + to-te-form + いる` = 食べたがっている; `to-causative + to-te-form +
-ください` = 帰らせてください). Fifteen distinct `op` values are used, all consistently.
+field and all of them resolve, including the non-obvious ones: the `to-nai-stem` convention
+(行かな + くてもいい, 書かな + いでください, 高くな + ければいけない, 食べな + いまま), the
+two-transform chain `to-masu-stem + たがる + to-te-form + いる` = 食べたがっている, and
+`to-causative + to-te-form + ください` = 帰らせてください. Fifteen distinct `op` values appear
+across the slice, used consistently.
 
 ---
 
 ## Counts
 
 **Records checked: 124** (58 n5, 33 n4, 33 n3).
-**Records with at least one record-specific finding: 66.**
-**Findings: 53** (individual) plus 3 corpus-wide systematic (S-2, S-3, S-4).
+**Records with at least one finding of any class: 67.** Of those, **27** have a
+grammar-content defect (F / X / N); the other 40 are flagged only for text, leakage or
+structure. **57 records are clean on every axis.**
+**Findings: 46** = 39 record-level (F, X, T, L, N) + 7 structural (S). S-2, S-3 and S-4 are
+corpus-wide rather than per-record.
 
 | class | findings | severity spread | records touched |
 |---|---|---|---|
-| F. Formation factually wrong / unproducible | 8 | 2 BLOCKER, 4 MEDIUM, 2 LOW | 8 |
-| X. Example sentences do not carry the point | 15 | 4 HIGH, 8 MEDIUM, 3 LOW | 17 |
-| T. Corrupted / truncated / malformed text | 8 | 1 HIGH, 4 MEDIUM, 3 LOW | 21 |
-| L. Pipeline vocabulary leaking to learners | 5 | 4 MEDIUM, 1 LOW | 6 |
+| F. Formation factually wrong / unproducible | 8 | 2 BLOCKER, 5 MEDIUM, 1 LOW | 8 |
+| X. Example sentences do not carry the point | 15 | 4 HIGH, 9 MEDIUM, 2 LOW | 16 |
+| T. Corrupted / truncated / malformed text | 8 | 1 HIGH, 5 MEDIUM, 2 LOW | 23 |
+| L. Pipeline vocabulary leaking to learners | 5 | 4 MEDIUM, 1 LOW | 7 |
 | N. Nuance contradicting explanation | 3 | 1 MEDIUM, 2 LOW | 3 |
 | S. Structural / coverage | 7 | 4 HIGH, 3 MEDIUM | 124 (S-3), 33 (S-2, S-4), 10 (S-1), 20 (S-5), 5 (S-7), 1 (S-6) |
-| **total** | **46 record-level + 7 structural** | **2 BLOCKER, 9 HIGH, 25 MEDIUM, 11 LOW** | **66 distinct** |
+| **total** | **46** | **2 BLOCKER, 9 HIGH, 27 MEDIUM, 8 LOW** | **67 distinct** |
 
 ### Suggested triage order
 

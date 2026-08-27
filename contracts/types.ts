@@ -449,6 +449,7 @@ export interface SpeakUnit {
     }[];
   fluency: {
     items?: string[];
+    kind?: "recap" | "situation";
     prompt_pt?: string;
     seconds_target?: number;
     strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";

@@ -55,6 +55,11 @@ DRILL_MAX_NEW = 1
 PRODUCTION_PER_UNIT = 3       # R44: all drawn from prior units
 FLUENCY_PER_UNIT = 6          # R79 (d)
 SECONDS_PER_ITEM = 8          # R79 (c) speed target; a design choice, labelled as such in the ruleset
+# Prompt for a fluency block whose items all predate this stage. It happens at a stage's opening
+# unit, where nothing from the new situation is known-material yet; naming it a recap is honest,
+# where reusing the stage situation asks for a rehearsal the items cannot support.
+RECAP_PROMPT = ("Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. "
+                "Vá o mais rápido que conseguir, sem travar.")
 
 # R79 (b): the prompt must be a SITUATION, not a form. One per stage, pt-BR, addressed to the learner.
 SITUATIONS: dict[str, str] = {
@@ -87,17 +92,30 @@ STRAND = {
 PUNCT = "。、！？!?…，,．. 　"
 
 
-def variants(jp: str, kana: str | None = None) -> list[str]:
+def variants(jp: str, kana: str | None = None, kana_written: str | None = None) -> list[str]:
     """Accepted answers for a production item (R45). Graded by string match, so the learner must not be
-    failed for punctuation they cannot type or spacing the bank happens to carry — nor for writing in
-    kana: the path's own contract (design/speaking_path.md section 1) is kanji RECOGNITION ONLY, never
-    written, so the bank sentence's kana reading is always an accepted way to type the answer."""
+    failed for punctuation they cannot type, spacing the bank happens to carry, a fullwidth character
+    no IME emits — nor for writing in kana: the path's own contract (design/speaking_path.md section 1)
+    is kanji RECOGNITION ONLY, never written.
+
+    TWO kana forms are accepted, and the distinction is the whole point. The bank's `kana` column is
+    PHONETIC: it records how the sentence SOUNDS, so the topic particle は appears as わ and the
+    direction particle へ as え. A learner writing correct kana types は and へ — the spelling — and an
+    audit found 92 of 213 production items accepting only the phonetic string, i.e. rejecting the
+    orthographically correct answer and accepting a misspelling. `kana_written` is that orthographic
+    form, rebuilt from the dissection by taking each token's SURFACE for particles and its READING
+    otherwise. Both are accepted: a learner who transcribes what they hear is not wrong either.
+
+    NFKC folds the fullwidth digits and Latin the bank carries (４点, ＳＰ, ８時) and squared
+    characters like ㌔ onto what a normal IME actually produces."""
+    import unicodedata
     out = set()
-    for base in (jp, kana):
+    for base in (jp, kana, kana_written):
         if not base:
             continue
-        bare = re.sub(r"[\s　]", "", base)
-        out |= {base, bare, bare.rstrip(PUNCT), base.rstrip(PUNCT)}
+        for form in {base, unicodedata.normalize("NFKC", base)}:
+            bare = re.sub(r"[\s　]", "", form)
+            out |= {form, bare, bare.rstrip(PUNCT), form.rstrip(PUNCT)}
     return sorted(x for x in out if x)
 
 
@@ -109,6 +127,16 @@ def main() -> int:
 
     sent = {sid: {"id": sid, "slug": slug, "jp": jp, "kana": kana} for sid, slug, jp, kana in
             con.execute("SELECT id,slug,jp,kana FROM sentence")}
+    # Orthographic kana: the reading of every token EXCEPT particles, which keep their surface, so
+    # the topic は stays は instead of collapsing to its sound わ. See variants().
+    _ortho: dict = {}
+    for sid, surface, reading, pos in con.execute(
+            "SELECT sentence_id, surface, reading, pos FROM token WHERE split_mode='C' "
+            "ORDER BY sentence_id, position"):
+        piece = surface if pos == "particle" else (reading or surface)
+        _ortho[sid] = _ortho.get(sid, "") + (piece or "")
+    for sid, rec in sent.items():
+        rec["kana_written"] = _ortho.get(sid) or None
     by_slug = {s["slug"]: s for s in sent.values()}
     pt = {sid: v for sid, v in con.execute(
         "SELECT entity_id,value FROM localized_text WHERE entity_type='sentence' "
@@ -157,7 +185,7 @@ def main() -> int:
                 production.append({
                     "prompt_pt": pt[s["id"]],
                     "answer_key": s["jp"],
-                    "accepted_variants": variants(s["jp"], s.get("kana")),
+                    "accepted_variants": variants(s["jp"], s.get("kana"), s.get("kana_written")),
                     "sentence": slug,
                     "strand": "meaning-output",
                 })
@@ -178,12 +206,27 @@ def main() -> int:
             # block with 久しぶりに食べたらスープの味が変わってた, because it ranked by recency alone.
             same_stage = [s for s in reversed(prior) if s in stage_phrases and eligible(s)]
             other = [s for s in reversed(prior) if s not in stage_phrases and eligible(s)]
+
             fluency_items = (same_stage + other)[:FLUENCY_PER_UNIT]
+
+            # COLD START, and why the PROMPT moves rather than the items. At a stage's opening unit
+            # `prior` holds nothing from this stage, so the block fills from earlier scenarios — and
+            # it used to present that under the NEW stage's situation prompt, asking the learner to
+            # talk about arriving somewhere and handing them six lines about a hotel room (own-stage
+            # overlap was 0/6 in every opening unit).
+            #
+            # The tempting fix is to let the unit's own phrases in. That is wrong, and the validator
+            # is right to reject it: R79(a) wants already-known material, and a sentence the learner
+            # met a minute ago in this same unit is still being acquired. Fluency practice on
+            # unlearned material is not fluency practice. So the items stay strictly prior-known and
+            # the PROMPT stops lying — a recap block says it is a recap.
+            is_recap = bool(fluency_items) and not any(i in stage_phrases for i in fluency_items)
             fluency = {
-                "prompt_pt": SITUATIONS.get(key, ""),
+                "prompt_pt": (RECAP_PROMPT if is_recap else SITUATIONS.get(key, "")),
                 "items": fluency_items,
                 "seconds_target": SECONDS_PER_ITEM * len(fluency_items),
                 "zero_new_tokens": True,
+                "kind": "recap" if is_recap else "situation",
                 "strand": "fluency",
             } if fluency_items else None
 
