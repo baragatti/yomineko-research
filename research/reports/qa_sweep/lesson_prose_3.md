@@ -134,8 +134,13 @@ Raw body:
 Every sibling item in that list opens with `<vocab ref="vocab:…"/>`. This one does not, so the learner
 reads a bullet that literally begins with a space and an open parenthesis: " (きじゅん) = 'critério,
 padrão de referência'." — the word 基準 is never shown.
-**Fix:** insert the missing `<vocab ref="vocab:1222410"/>` (基準) before the reading, matching the
-sibling items.
+
+The lesson's eighteen `unlocks` are all accounted for by the other eighteen bullets, so this is a
+nineteenth, orphaned row. The corpus record is `vocab:1591210` (基準, きじゅん) — but it is levelled
+**n2**, which is probably why it was never wired in.
+**Fix (teacher call):** either delete the orphaned row, or add `<vocab ref="vocab:1591210"/>` **and**
+the matching `unlocks` entry — the second option pulls an n2 word into an n3 lesson, so it needs a
+level decision, not a silent patch.
 
 ### B2 — `les:n3-deveres-03`: a kanji introduced without the kanji, duplicated from the next lesson
 
@@ -163,7 +168,11 @@ unlocks it). deveres-03's kanji section then matches its 10 unlocked kanji exact
 ```
 
 食らう has no `<vocab ref>`; the learner sees " (くらう) = 'devorar, levar (uma porrada)'." with a blank
-where the word should be. **Fix:** add the `vocab:` ref for 食らう (or drop the fragment).
+where the word should be. There is **no vocab record for 食らう anywhere in `corpus/vocab/`**, and the
+lesson does not unlock it, so this is a dangling fragment rather than a lost ref.
+**Fix:** rewrite it as plain prose attached to the 食う row, spelling the word out —
+"食う (くう) = 'comer' (informal, masculino); a variante 食らう (くらう) é ainda mais bruta: 'devorar,
+levar (uma porrada)'." — or delete the fragment.
 
 ### B4 — `topic-39-tempo` 01–04: 7 sentences broken across three block elements
 

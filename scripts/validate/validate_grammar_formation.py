@@ -24,7 +24,8 @@ CHECKS
 Usage: validate_grammar_formation.py
 """
 from __future__ import annotations
-import json, sys
+import json
+import re, sys
 from collections import Counter
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
@@ -35,6 +36,11 @@ OPS = {"to-te-form", "to-masu-stem", "to-nai-stem", "to-ta-form", "to-dictionary
        "to-potential", "to-passive", "to-causative", "to-conditional-ba", "to-adverbial",
        "to-attributive", "nominalize", "append", "replace-ending", "drop-final-ru", "none"}
 BASES = {"verb", "i-adjective", "na-adjective", "noun", "clause", "any"}
+
+# A rule that moves a godan verb's final kana onto the あ-row (causative, passive, negative stem...),
+# and the exception every such rule must carry.
+AROW_RULE = re.compile(r"linha\s*[〜～]?\s*あ|sílaba final em -u|vogal\s*-u\s*pela linha|por -areru")
+U_EXCEPTION = re.compile(r"-?う\s*(viram|vira|→|->)\s*-?わ|買わ")
 NUANCE = {"emphasis", "softening", "conjecture", "obligation", "permission", "prohibition", "hearsay",
           "comparison", "cause", "condition", "concession", "intention", "desire", "request",
           "experience", "change-of-state", "continuation", "completion", "politeness", "humility",
@@ -52,6 +58,17 @@ def main() -> int:
             key = g.get("key")
             fs = g.get("formation_steps")
             reason = g.get("steps_unavailable")
+
+            # A godan あ-row rule stated WITHOUT the う exception teaches the learner to produce a
+            # non-existent form: 買う goes to 買わせる, never to ×買あせる. Four records stated the rule
+            # that way while gp-7 stated it correctly and conjugate.py's godan table ("う" -> "わ")
+            # had always been right, so the prose and the drill data disagreed and nothing checked.
+            # Prose is where the damage is — the machine steps delegate to the conjugator.
+            prose = (g.get("formation") or {}).get("pt-BR") or ""
+            if AROW_RULE.search(prose) and not U_EXCEPTION.search(prose):
+                fails.append(f"{key}: states a godan あ-row formation rule without the う->わ "
+                             f"exception, so applying it to a -う verb yields a form that does not "
+                             f"exist (buy: 買う -> 買わ..., never 買あ...)")
 
             for t in g.get("nuance_tags") or []:
                 if t not in NUANCE:

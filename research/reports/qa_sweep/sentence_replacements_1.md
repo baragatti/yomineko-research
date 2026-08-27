@@ -95,7 +95,7 @@ course points the learner at 九. `les:n5-comparacoes-01` is the ～のほうが
 its budget three times. Two records are missing outright (**其の (その)** and **如何 (どう)**), so those two
 cannot be repaired by a swap — a record has to be added first.
 
-**8 units of load across my 99 slots come from this defect alone.**
+**8 units of load across my 99 slots come from this defect alone**, and 561 tokens across the bank carry it.
 
 ### 3.2 A sentence's `level` is `max(kanji level, vocab level)`, so one kanji character sets the grade
 
@@ -505,9 +505,10 @@ own nouns (人, 子供, 生徒) remains necessary.
 * `sent:tatoeba-229125` 「いすの上にねこがいます。」 (n5, load 2/1): **REPLACE**.
   * `sent:tatoeba-11561754` 「ポーチにスカンクがいます。」 = "Tem um cangambá na varanda." REAL, n5, **load 0**,
     `ga-imasu`, polite, animate subject in a place. Exact match for the teaching point.
-  Availability: `ga-imasu` 5 at level, only this 1 within budget. Note the incumbent's overage is 上 and
-  猫 — both are excellent N5 words whose records unlock later; **KEEP/UNLOCK** is defensible here too, and
-  「いすの上にねこがいます」 is the better beginner picture.
+  Availability: `ga-imasu` 5 at level, only this 1 within budget, so 11561754 is the only compliant
+  choice and that is the recorded verdict. Second-best option if the teacher prefers the picture:
+  keep 「いすの上にねこがいます」 and move the 上 / 猫 unlocks instead, since both are ordinary N5 words
+  whose records simply land later (§3.3).
 * `sent:tatoeba-6828196` 「学校に人がいる。」 (n5, load 2/1): **DROP from this lesson**. It is tagged `gp-13`
   (casual いる) while this lesson teaches the polite います, and it is displayed again in
   `les:n5-particulas-lugar-02`, where it belongs. Removing it here fixes the register mismatch and the
@@ -896,9 +897,10 @@ a token link or a level grade) · `A` = AUTHOR (nothing compliant exists in the 
 | Quality defects in displayed sentences (malformed JP, loose pt-BR, dated slang, idiom as first example, register clash) | 99 | 7 |
 | Sentences displayed in more than one lesson inside this slice | 99 | 5 |
 | Systemic root causes documented | — | 4 |
-| Homograph token mislinks confirmed (distinct vocab records) | 10 | 10 (568 token occurrences) |
+| Homograph token mislinks confirmed (distinct vocab records) | 10 | 10 (561 token occurrences) |
 | Vocab records missing that the corpus needs | — | 2 (其の その, 如何 どう) |
-| Grammar points with zero usable example at or below their lesson level | 78 points across 43 lessons | 21 |
+| Grammar points these 43 lessons unlock, with **zero** sentence at or below the lesson level | 100 | **31** |
+| …with zero sentence inside the i+1 budget | 100 | **50** |
 | Candidates flagged as traps for any future automated pass | — | 7 |
 
 Slots that leave the queue with **no sentence work at all** (K plus D): **60 of 99**.
@@ -912,7 +914,7 @@ lesson in the slice is in the queue because at least one of its links already fa
 ## 8. Recommended order of work
 
 1. Fix the ten token mislinks in section 3.1 and add the two missing records (其の その, 如何 どう). One
-   data change, 568 tokens, and a prerequisite for authoring anything in `les:n5-comparacoes-01`,
+   data change, 561 tokens, and a prerequisite for authoring anything in `les:n5-comparacoes-01`,
    `les:n5-perguntas-02` and `les:n5-particulas-lugar-07`.
 2. Decide section 3.4 once: are する / いる / ある / ない vocabulary items or grammar-carried auxiliaries?
 3. Move the section 3.3 unlocks so each lesson owns the item it teaches: 沢山, 其処, 何処, 無い, 欲しい,
