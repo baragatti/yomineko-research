@@ -4,7 +4,7 @@
   "stage": "speak:arrival",
   "order": 5,
   "title": {
-    "pt-BR": "Chegar e cumprimentar — parte 5"
+    "pt-BR": "Chegar e cumprimentar, parte 5"
   },
   "say_now": [
     "sent:tatoeba-125944",
@@ -53,6 +53,104 @@
   "cumulative_known_vocab": 28,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:te-sumimasen",
+    "gram:te-kudasai",
+    "gram:gp-148"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-108",
+      "examples": [
+        "sent:tatoeba-78721",
+        "sent:tatoeba-10355885",
+        "sent:tatoeba-11858059"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-85319",
+        "sent:tatoeba-83696",
+        "sent:tatoeba-4714"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Desculpe por não poder me encontrar com você hoje à noite.",
+      "answer_key": "今晩お会いできなくてすみません。",
+      "accepted_variants": [
+        "こんばんおあいできなくてすみません",
+        "こんばんおあいできなくてすみません。",
+        "今晩お会いできなくてすみません",
+        "今晩お会いできなくてすみません。"
+      ],
+      "sentence": "sent:tatoeba-171272",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Obrigado por me escutar!",
+      "answer_key": "聞いてくれてありがとう！",
+      "accepted_variants": [
+        "きいてくれてありがとう",
+        "きいてくれてありがとう!",
+        "聞いてくれてありがとう",
+        "聞いてくれてありがとう！"
+      ],
+      "sentence": "sent:tatoeba-11858059",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Obrigado por me escutar.",
+      "answer_key": "聞いてくれてありがとう。",
+      "accepted_variants": [
+        "きいてくれてありがとう",
+        "きいてくれてありがとう。",
+        "聞いてくれてありがとう",
+        "聞いてくれてありがとう。"
+      ],
+      "sentence": "sent:tatoeba-10355885",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
+    "items": [
+      "sent:tatoeba-1874351",
+      "sent:tatoeba-229425",
+      "sent:tatoeba-9559301",
+      "sent:tatoeba-4971",
+      "sent:tatoeba-1576172",
+      "sent:tatoeba-335372"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 21,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:1035",
@@ -104,97 +202,5 @@
         "こんばん"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:te-sumimasen",
-    "gram:te-kudasai",
-    "gram:gp-148"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-108",
-      "examples": [
-        "sent:tatoeba-78721",
-        "sent:tatoeba-10355885",
-        "sent:tatoeba-11858059"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623",
-        "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-83696",
-        "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Desculpe por não poder me encontrar com você hoje à noite.",
-      "answer_key": "今晩お会いできなくてすみません。",
-      "accepted_variants": [
-        "今晩お会いできなくてすみません",
-        "今晩お会いできなくてすみません。"
-      ],
-      "sentence": "sent:tatoeba-171272",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Obrigado por me escutar!",
-      "answer_key": "聞いてくれてありがとう！",
-      "accepted_variants": [
-        "聞いてくれてありがとう",
-        "聞いてくれてありがとう！"
-      ],
-      "sentence": "sent:tatoeba-11858059",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Obrigado por me escutar.",
-      "answer_key": "聞いてくれてありがとう。",
-      "accepted_variants": [
-        "聞いてくれてありがとう",
-        "聞いてくれてありがとう。"
-      ],
-      "sentence": "sent:tatoeba-10355885",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
-    "items": [
-      "sent:tatoeba-1874351",
-      "sent:tatoeba-229425",
-      "sent:tatoeba-9559301",
-      "sent:tatoeba-4971",
-      "sent:tatoeba-1576172",
-      "sent:tatoeba-335372"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 27,
-    "fluency": 6
-  }
+  ]
 }

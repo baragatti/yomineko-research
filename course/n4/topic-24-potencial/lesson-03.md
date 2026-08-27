@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-84, gp-85] · vocabulário [パパ, 坂, 壁, 夫, 星, 林, 素晴らしい, 美しい, 葡萄, 雲] · kanji [野] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-9979575`, `sent:tatoeba-188299`, `sent:tatoeba-2552450`, `sent:tatoeba-8572172`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-188299`, `sent:tatoeba-9979575`, `sent:tatoeba-8572172`, `sent:tatoeba-2552450`
 
 ---
 
@@ -61,28 +61,28 @@ Três kanji que aparecem em palavras de paisagem e do dia a dia.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Você está dentro de casa e, sem fazer nada, escuta passos do lado de fora. Qual verbo descreve esse som que chegou sozinho aos seus ouvidos?'}
+### 1. (recognition) Você está dentro de casa e, sem fazer nada, escuta passos do lado de fora. Qual verbo descreve esse som que chegou sozinho aos seus ouvidos?
 - **Resposta:** `{"choices": ["聞こえる", "聞く", "見える"], "correct": "聞こえる"}`
-- {'pt-BR': '聞こえる é a percepção espontânea: o som veio até você, sem esforço. 聞く seria ouvir de propósito (pôr música, prestar atenção). Regra rápida: se o som CHEGOU até você, é 聞こえる.'}
+- 聞こえる é a percepção espontânea: o som veio até você, sem esforço. 聞く seria ouvir de propósito (pôr música, prestar atenção). Regra rápida: se o som CHEGOU até você, é 聞こえる.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete com a partícula certa: 星＿見える。 (Dá para ver as estrelas.)'}
+### 2. (particle_choice) Complete com a partícula certa: 星＿見える。 (Dá para ver as estrelas.)
 - **Resposta:** `{"choices": ["が", "を", "に"], "correct": "が"}`
-- {'pt-BR': "Com 見える, aquilo que se vê é marcado por が, nunca を. Mesmo que em português a gente diga 'ver AS estrelas' (como objeto), em japonês 見える pede が, porque a coisa simplesmente aparece à vista."}
+- Com 見える, aquilo que se vê é marcado por が, nunca を. Mesmo que em português a gente diga 'ver AS estrelas' (como objeto), em japonês 見える pede が, porque a coisa simplesmente aparece à vista.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com o verbo de percepção espontânea (dá para ouvir): 音楽が＿。 (Dá para ouvir música.)'}
+### 3. (cloze) Complete com o verbo de percepção espontânea (dá para ouvir): 音楽が＿。 (Dá para ouvir música.)
 - **Resposta:** `{"text": "聞こえる", "full": "音楽が聞こえる"}`
-- {'pt-BR': '音楽が聞こえる descreve a música que chega aos ouvidos sozinha. Note o が marcando 音楽 (o que se ouve). Se você tivesse posto um disco de propósito, aí sim usaria 音楽を聞く.'}
+- 音楽が聞こえる descreve a música que chega aos ouvidos sozinha. Note o が marcando 音楽 (o que se ouve). Se você tivesse posto um disco de propósito, aí sim usaria 音楽を聞く.
 - frases: `sent:tatoeba-188299`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Dá para ver uma casa.' com as peças: [見える] [が] [家]"}
+### 4. (sentence_build) Monte 'Dá para ver uma casa.' com as peças: [見える] [が] [家]
 - **Resposta:** `{"order": ["家", "が", "見える"], "text": "家が見える。"}`
-- {'pt-BR': 'Ordem japonesa: o que se vê (家) + が + o verbo (見える) no fim. 家 está à vista sem você procurar, por isso 見える e não 見る. が marca aquilo que aparece diante dos olhos.'}
+- Ordem japonesa: o que se vê (家) + が + o verbo (見える) no fim. 家 está à vista sem você procurar, por isso 見える e não 見る. が marca aquilo que aparece diante dos olhos.
 - frases: `sent:tatoeba-8572172`
 
-### 5. (production) {'pt-BR': "Você sobe uma ladeira e a vista se abre. Diga em japonês 'Dá para ver as nuvens.' usando 雲 (nuvem), a partícula が e o verbo de percepção visual espontânea."}
+### 5. (production) Você sobe uma ladeira e a vista se abre. Diga em japonês 'Dá para ver as nuvens.' usando 雲 (nuvem), a partícula が e o verbo de percepção visual espontânea.
 - **Resposta:** `{"text": "雲が見える。", "accept": ["雲が見える", "雲が見える。", "くもが見える", "くもがみえる", "雲がみえる"]}`
-- {'pt-BR': '雲 (nuvem) + が (o que aparece à vista) + 見える (estar visível). É o mesmo molde de 星が見える e 家が見える: a coisa entra no seu campo de visão sozinha, então 見える, e o que se vê leva が.'}
+- 雲 (nuvem) + が (o que aparece à vista) + 見える (estar visível). É o mesmo molde de 星が見える e 家が見える: a coisa entra no seu campo de visão sozinha, então 見える, e o que se vê leva が.
 
 

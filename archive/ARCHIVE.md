@@ -53,11 +53,20 @@ Seven lessons were affected (`n3-conectores-07`, `n3-desejos-07`, `n3-estado-07`
 `body` and one exercise prompt. One also carried mojibake — a Cyrillic т and я inside `～にとって` — and
 had silently dropped `～にかわって` from its list.
 
-All nine fields were repaired **before** the move, by `scripts/apply_qa_instruction_leaks.py`, which
+All nine fields were repaired before the move by `scripts/apply_qa_instruction_leaks.py`, which
 records the exact before/after and the reasoning for each. The repairs are not blind reverts: where
 the reviewer's instruction contained the improvement it was asking for, the improvement was applied
 and only the instruction wrapper removed, because restoring the older copy would have discarded the QA
 finding.
+
+**Correction (2026-08-26, later the same day):** the first version of that script repaired only
+`db/corpus.sqlite` — a git-ignored, regenerable index — so the nine corrupt values survived in the
+tracked authoring source (`research/derived/lessons/`) and one loader+export cycle would have
+reintroduced them. The script now writes both layers, and a follow-up sweep found the archive-diff
+method itself was the blind spot: it could only expose leaked instructions in lessons that HAD an
+archived twin. A content-pattern sweep over everything else found more of the same class (an N5
+exercise prompt, 35 sentence-bank fields, 10 reading furigana values, 6 grammar fields), all repaired
+by `scripts/apply_phase7_content_repairs.py`.
 
 The reverse check found **0** cases of archive-only corruption.
 
@@ -67,6 +76,8 @@ These files predate two later changes and are **not** self-consistent with the c
 
 - their vocabulary references use headwords (`vocab:人`), not the published slugs (`vocab:1580640`)
   that the live tree now uses;
-- their `needs_review` / `ai_generated` flags may still be integers rather than booleans.
+- their `needs_review` / `ai_generated` flags ARE the pre-migration integers (`1`/`0`, with
+  `ai` as the field name on exam-derived rows) — a whole-tree census reconciled every count, so this
+  is a statement, not a hedge.
 
 Restoring one is therefore a migration, not a copy. Re-run the exporters and both gates afterwards.

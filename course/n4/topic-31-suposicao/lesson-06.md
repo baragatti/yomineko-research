@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [ga-suru, gp-131, gp-132] · vocabulário [忘れ物, 慣れる, 昼休み, 暖房, 留守] · kanji [風] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-f2f39d1b820e`, `sent:gen-3c81102a6182`, `sent:tatoeba-11588172`, `sent:tatoeba-11483540`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11588172`, `sent:gen-3c81102a6182`, `sent:gen-f2f39d1b820e`, `sent:tatoeba-11483540`
 
 ---
 
@@ -19,7 +19,7 @@ Esta lição fecha o bloco de aparência e percepção juntando o que entra pelo
 
 #### 〜がする: a percepção que chega até você
 Use ga-suru para falar de algo que você capta pelos sentidos sem querer: um cheiro, um som, um sabor ou uma sensação. É diferente de ver de propósito (見る) ou ouvir de propósito (聞く): aqui a percepção simplesmente acontece e chega a você.
-Molde: [percepção] がする
+Molde: [percepção] が する
 No lugar de [percepção] entra a coisa que você sente: o cheiro, o som, o sabor ou a sensação. Repare que が e する vêm separados: a percepção é marcada por が e o verbo する fecha a frase.
 > 🗣 足音がする。 — Ouço passos.
 Aqui 足音 é "som de passos". Ao pé da letra, "há (chega até mim) som de passos". Você não foi escutar de propósito: o som apareceu. Outros usos comuns: いい匂いがする ("sinto um cheiro bom") e 変な味がする ("está com um gosto estranho").
@@ -75,28 +75,28 @@ Juntando os três padrões num só retrato: このカフェは和風で、静か
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': 'Complete a percepção: 足音＿する。 (Ouço passos / há som de passos.) Qual partícula marca o som?'}
+### 1. (particle_choice) Complete a percepção: 足音＿する。 (Ouço passos / há som de passos.) Qual partícula marca o som?
 - **Resposta:** `{"choices": ["が", "を", "に"], "correct": "が"}`
-- {'pt-BR': "Com 〜がする o que se percebe (足音, som de passos) é o SUJEITO de する: o som 'se faz / acontece'. Por isso が, nunca を. Em português dizemos 'ouço um som' (objeto), mas o japonês trata o som como sujeito."}
+- Com 〜がする o que se percebe (足音, som de passos) é o SUJEITO de する: o som 'se faz / acontece'. Por isso が, nunca を. Em português dizemos 'ouço um som' (objeto), mas o japonês trata o som como sujeito.
 - frases: `sent:tatoeba-11588172`
 
-### 2. (recognition) {'pt-BR': "Na frase 夜は星がよく見られる ('À noite dá para ver bem as estrelas'), o que 〜がみられる expressa?"}
+### 2. (recognition) Na frase 夜は星がよく見られる ('À noite dá para ver bem as estrelas'), o que 〜がみられる expressa?
 - **Resposta:** `{"choices": ["Que as estrelas podem ser vistas / são observáveis", "Que alguém quer ver as estrelas", "Que as estrelas foram vistas por engano"], "correct": "Que as estrelas podem ser vistas / são observáveis"}`
-- {'pt-BR': "見られる é o potencial/passivo de 見る (ver), então 〜がみられる significa 'pode ser visto / é observado'. É uma descrição objetiva ('dá para ver'), não um desejo de ver."}
+- 見られる é o potencial/passivo de 見る (ver), então 〜がみられる significa 'pode ser visto / é observado'. É uma descrição objetiva ('dá para ver'), não um desejo de ver.
 - frases: `sent:gen-3c81102a6182`
 
-### 3. (cloze) {'pt-BR': 'Complete com o sufixo de estilo (lido ふう): 和＿の家に住んでみたい。 (Quero experimentar morar numa casa de estilo japonês.)'}
+### 3. (cloze) Complete com o sufixo de estilo (lido ふう): 和＿の家に住んでみたい。 (Quero experimentar morar numa casa de estilo japonês.)
 - **Resposta:** `{"text": "風", "full": "和風の家に住んでみたい"}`
-- {'pt-BR': "O sufixo 風 (ふう) gruda no substantivo e indica estilo: 和風 = 'estilo japonês'. A casa tem o JEITO japonês, sem ser necessariamente tradicional de verdade."}
+- O sufixo 風 (ふう) gruda no substantivo e indica estilo: 和風 = 'estilo japonês'. A casa tem o JEITO japonês, sem ser necessariamente tradicional de verdade.
 - frases: `sent:gen-f2f39d1b820e`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Sinto cheiro do aquecedor.' com as peças: [する] [匂いが] [暖房の]"}
+### 4. (sentence_build) Monte 'Sinto cheiro do aquecedor.' com as peças: [する] [匂いが] [暖房の]
 - **Resposta:** `{"order": ["暖房の", "匂いが", "する"], "text": "暖房の匂いがする。"}`
-- {'pt-BR': '暖房の (do aquecedor) + 匂いが (cheiro, sujeito com が) + する (acontece/se faz). É o molde X が する para uma percepção que chega até você. 暖房 (だんぼう) é o aquecimento de ambiente.'}
+- 暖房の (do aquecedor) + 匂いが (cheiro, sujeito com が) + する (acontece/se faz). É o molde X が する para uma percepção que chega até você. 暖房 (だんぼう) é o aquecimento de ambiente.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'No parque dá para ver as flores de cerejeira.' usando 公園 (parque, こうえん) + で, 桜 (cerejeira, さくら) e 〜がみられる. Forma simples."}
+### 5. (production) Diga em japonês 'No parque dá para ver as flores de cerejeira.' usando 公園 (parque, こうえん) + で, 桜 (cerejeira, さくら) e 〜がみられる. Forma simples.
 - **Resposta:** `{"text": "公園で桜が見られる。", "accept": ["公園で桜が見られる", "こうえんでさくらがみられる", "公園で桜がみられる", "こうえんで桜が見られる"]}`
-- {'pt-BR': "公園で (no parque, lugar com で) + 桜が (cerejeiras, sujeito com が) + 見られる (podem ser vistas). 〜がみられる descreve o que se pode observar no lugar: 'dá para ver'."}
+- 公園で (no parque, lugar com で) + 桜が (cerejeiras, sujeito com が) + 見られる (podem ser vistas). 〜がみられる descreve o que se pode observar no lugar: 'dá para ver'.
 
 

@@ -42,7 +42,7 @@ Molde: [hora] すぎ
 Os dias do mês têm leituras próprias que valem a pena decorar aos poucos. Um exemplo clássico é ９日, o "dia 9". Repare que ele termina com o kanji 日, lido aqui como か.
 
 > **[warning]**
-O ９日não se lê "kyuunichi". A data "dia 9" é ここのか, uma das leituras especiais (1 a 10) que fogem do número regular. Trate-a como uma palavra inteira a memorizar, não como "9 mais 日".
+O ９日 não se lê "kyuunichi". A data "dia 9" é ここのか, uma das leituras especiais (1 a 10) que fogem do número regular. Trate-a como uma palavra inteira a memorizar, não como "9 mais 日".
 
 #### Os dois kanji da lição
 O kanji 日 significa dia, e também "sol" e "Japão". Leituras úteis agora: にち e か (em datas, como ここのか) e ひ ("dia" sozinho). Mnemônico de forma: é um sol numa janelinha, um retângulo com um traço no meio, a luz do dia presa no quadro. Você o vê em ９日.
@@ -76,28 +76,28 @@ Na fala rápida, じゃあ encurta para じゃ. É super comum na despedida: じ
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que significa 時間 (じかん)?'}
+### 1. (recognition) O que significa 時間 (じかん)?
 - **Resposta:** `{"choices": ["tempo / hora(s) de duração", "semana", "mês"], "correct": "tempo / hora(s) de duração"}`
-- {'pt-BR': "時間 (じかん) é 'tempo'; em contagem vira a duração em horas (ex.: さんじかん = três horas de duração). Semana é 週間 e mês é ヶ月."}
+- 時間 (じかん) é 'tempo'; em contagem vira a duração em horas (ex.: さんじかん = três horas de duração). Semana é 週間 e mês é ヶ月.
 
 
-### 2. (recognition) {'pt-BR': 'Como se LÊ a data ９日 (dia 9 do mês)?'}
+### 2. (recognition) Como se LÊ a data ９日 (dia 9 do mês)?
 - **Resposta:** `{"choices": ["ここのか", "きゅうにち", "くにち"], "correct": "ここのか"}`
-- {'pt-BR': "Os dias 1 a 10 têm leituras especiais. '9 do mês' é ここのか, não 'kyuunichi'. Decore como palavra inteira; o kanji 日 aqui se lê か."}
+- Os dias 1 a 10 têm leituras especiais. '9 do mês' é ここのか, não 'kyuunichi'. Decore como palavra inteira; o kanji 日 aqui se lê か.
 
 
-### 3. (cloze) {'pt-BR': "Complete para dizer 'passou das três (pouco depois das 3)': さんじ＿。"}
+### 3. (cloze) Complete para dizer 'passou das três (pouco depois das 3)': さんじ＿。
 - **Resposta:** `{"text": "すぎ", "full": "さんじすぎ"}`
-- {'pt-BR': "過ぎ (すぎ) = 'passado / depois de', colado depois da hora cheia: さんじ + すぎ = 'passou das três'."}
+- 過ぎ (すぎ) = 'passado / depois de', colado depois da hora cheia: さんじ + すぎ = 'passou das três'.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Então, até amanhã.' com as peças: [また] [じゃあ] [あした]"}
+### 4. (sentence_build) Monte 'Então, até amanhã.' com as peças: [また] [じゃあ] [あした]
 - **Resposta:** `{"order": ["じゃあ", "また", "あした"], "text": "じゃあ、またあした。"}`
-- {'pt-BR': "じゃあ ('então') abre a fala, emendando uma conclusão ao que já foi dito; またあした é 'até amanhã'. Na fala rápida じゃあ vira じゃ."}
+- じゃあ ('então') abre a fala, emendando uma conclusão ao que já foi dito; またあした é 'até amanhã'. Na fala rápida じゃあ vira じゃ.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'uma semana' usando o contador de semana (número 'um' + 週間)."}
+### 5. (production) Diga em japonês 'uma semana' usando o contador de semana (número 'um' + 週間).
 - **Resposta:** `{"text": "いっしゅうかん", "accept": ["いっしゅうかん", "一週間", "１週間"]}`
-- {'pt-BR': "週間 (しゅうかん) é o contador de semanas. 'Um' + 週間 = いっしゅうかん ('uma semana'), com o ち de いち virando っ antes de し."}
+- 週間 (しゅうかん) é o contador de semanas. 'Um' + 週間 = いっしゅうかん ('uma semana'), com o ち de いち virando っ antes de し.
 
 

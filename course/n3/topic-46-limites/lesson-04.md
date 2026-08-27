@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-donna-ni-koto-ka, n3-kanarazushimo-towa-kagiranai] · vocabulário [効果, 合格, 幸運, 恋, 恋人, 憲法, 権利, 濃い, 硬貨, 講演, 豪華, 高価] · kanji [彼 愛 捕 殺 責 迎 馬] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-111460`, `sent:tatoeba-10151326`
 
 ---
 
@@ -80,28 +80,28 @@ Resolva os exercícios e leia cada explicação com calma.
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': 'あの日、___会いたかったことか。(Naquele dia, o quanto eu queria te ver!)'}
+### 1. (particle_choice) あの日、___会いたかったことか。(Naquele dia, o quanto eu queria te ver!)
 - **Resposta:** `{"choices": ["どんなに", "必ずしも", "ばかり", "しか"], "correct": "どんなに"}`
-- {'pt-BR': "どんなに...ことか forma uma exclamação de grau emotivo: 'o quanto...!'. どんなに会いたかったことか = 'o quanto eu queria te ver!'."}
+- どんなに...ことか forma uma exclamação de grau emotivo: 'o quanto...!'. どんなに会いたかったことか = 'o quanto eu queria te ver!'.
 
 
-### 2. (cloze) {'pt-BR': 'Complete a relativização: 高いものが必ずしもいい___。(O que é caro não é necessariamente bom.)'}
+### 2. (cloze) Complete a relativização: 高いものが必ずしもいい___。(O que é caro não é necessariamente bom.)
 - **Resposta:** `{"text": "とは限らない", "full": "高いものが必ずしもいいとは限らない"}`
-- {'pt-BR': "必ずしも (advérbio) abre e とは限らない fecha, dando o sentido parcial 'não necessariamente / nem sempre'. Não é negação total."}
+- 必ずしも (advérbio) abre e とは限らない fecha, dando o sentido parcial 'não necessariamente / nem sempre'. Não é negação total.
 
 
-### 3. (recognition) {'pt-BR': 'O que どんなに嬉しかったことか realmente expressa?'}
+### 3. (recognition) O que どんなに嬉しかったことか realmente expressa?
 - **Resposta:** `{"choices": ["Uma exclamação: 'Como eu fiquei feliz!'", "Uma pergunta esperando resposta: 'Fiquei feliz?'", "Uma dúvida: 'Será que fiquei feliz?'", "Uma negação: 'Não fiquei feliz'"], "correct": "Uma exclamação: 'Como eu fiquei feliz!'"}`
-- {'pt-BR': 'Apesar do か final, ことか não pede resposta: é exclamação de intensidade emotiva. Equivale ao ponto de exclamação em português.'}
+- Apesar do か final, ことか não pede resposta: é exclamação de intensidade emotiva. Equivale ao ponto de exclamação em português.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada kanji ao seu sentido principal.'}
+### 4. (matching) Associe cada kanji ao seu sentido principal.
 - **Resposta:** `{"pairs": [["責", "culpar / responsabilizar"], ["迎", "receber / ir ao encontro"], ["馬", "cavalo"], ["愛", "amor"]]}`
-- {'pt-BR': '責 (responsabilizar) em 責任; 迎 (receber) em 歓迎 (boas-vindas); 馬 (cavalo) em 競馬; 愛 (amor) em 愛情.'}
+- 責 (responsabilizar) em 責任; 迎 (receber) em 歓迎 (boas-vindas); 馬 (cavalo) em 競馬; 愛 (amor) em 愛情.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Quem é famoso não é necessariamente feliz.' (use 有名な人, 幸せ e 必ずしも～とは限らない)."}
-- **Resposta:** `{"text": "有名な人が必ずしも幸せとは限らない", "accept": ["有名な人が必ずしも幸せだとは限らない", "有名な人は必ずしも幸せとは限らない", "有名な人が必ずしもしあわせとは限らない"]}`
-- {'pt-BR': "必ずしも + 幸せ (adjetivo-な/substantivo) + とは限らない relativiza a generalização: 'não necessariamente feliz', deixando espaço para exceções."}
+### 5. (production) Escreva em japonês: 'Quem é famoso não é necessariamente feliz.' (use 有名な人, 幸せ e 必ずしも～とは限らない).
+- **Resposta:** `{"text": "有名な人が必ずしも幸せとは限らない", "accept": ["有名な人が必ずしも幸せとは限らない", "有名な人が必ずしも幸せだとは限らない", "有名な人は必ずしも幸せとは限らない", "有名な人が必ずしもしあわせとは限らない"]}`
+- 必ずしも + 幸せ (adjetivo-な/substantivo) + とは限らない relativiza a generalização: 'não necessariamente feliz', deixando espaço para exceções.
 
 

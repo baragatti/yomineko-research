@@ -71,28 +71,28 @@ Três palavras lidas ぜん, fáceis de confundir.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'responsabilidade, dever'?"}
+### 1. (recognition) Qual palavra significa 'responsabilidade, dever'?
 - **Resposta:** `{"choices": ["責任 (せきにん)", "節約 (せつやく)", "絶滅 (ぜつめつ)"], "correct": "責任 (せきにん)"}`
-- {'pt-BR': '責任 = responsabilidade. 節約 = economia; 絶滅 = extinção.'}
+- 責任 = responsabilidade. 節約 = economia; 絶滅 = extinção.
 
 
-### 2. (recognition) {'pt-BR': "善 e 全 têm a leitura ぜん. Qual significa 'todo, inteiro, completo'?"}
+### 2. (recognition) 善 e 全 têm a leitura ぜん. Qual significa 'todo, inteiro, completo'?
 - **Resposta:** `{"choices": ["善", "全", "as duas significam bem"], "correct": "全"}`
-- {'pt-BR': "全 = todo/inteiro (全員 'todos'). 善 = bem, bondade (sentido moral)."}
+- 全 = todo/inteiro (全員 'todos'). 善 = bem, bondade (sentido moral).
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra à tradução.'}
+### 3. (matching) Associe cada palavra à tradução.
 - **Resposta:** `{"pairs": [["石油", "petróleo"], ["節約", "economia / poupança"], ["積極的", "proativo"], ["設備", "instalações"]]}`
-- {'pt-BR': '石油 = petróleo; 節約 = economia; 積極的 = proativo; 設備 = instalações.'}
+- 石油 = petróleo; 節約 = economia; 積極的 = proativo; 設備 = instalações.
 
 
-### 4. (cloze) {'pt-BR': "Complete com a palavra para 'economizar/poupar': 石油を＿＿する必要がある。"}
+### 4. (cloze) Complete com a palavra para 'economizar/poupar': 石油を＿＿する必要がある。
 - **Resposta:** `{"text": "節約", "full": "石油を節約する必要がある。"}`
-- {'pt-BR': '節約 (せつやく) é economizar recursos. A frase fala em economizar petróleo.'}
+- 節約 (せつやく) é economizar recursos. A frase fala em economizar petróleo.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Todos os membros compareceram à reunião' usando 全員, 会議 e 出席する."}
+### 5. (production) Diga em japonês 'Todos os membros compareceram à reunião' usando 全員, 会議 e 出席する.
 - **Resposta:** `{"text": "全員が会議に出席した", "accept": ["全員が会議に出席した", "ぜんいんがかいぎにしゅっせきした", "全員が会議に出席しました", "全員は会議に出席した"]}`
-- {'pt-BR': '全員が (todos os membros) + 会議に (na reunião) + 出席した (compareceram).'}
+- 全員が (todos os membros) + 会議に (na reunião) + 出席した (compareceram).
 
 

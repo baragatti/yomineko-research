@@ -65,28 +65,28 @@ Não confunda 全く (まったく, "completamente") com 丸で (まるで, "com
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa "cada vez mais"?'}
+### 1. (recognition) Qual palavra significa "cada vez mais"?
 - **Resposta:** `{"choices": ["益々", "全く", "丸で", "万一"], "correct": "益々"}`
-- {'pt-BR': '益々 (ますます) marca uma intensidade crescente; 全く é "completamente", 丸で é "como se" e 万一 é "na pior das hipóteses".'}
+- 益々 (ますます) marca uma intensidade crescente; 全く é "completamente", 丸で é "como se" e 万一 é "na pior das hipóteses".
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["祭り", "festival"], ["真似", "imitação"], ["守る", "proteger / cumprir"], ["満足", "satisfação"]]}`
-- {'pt-BR': '祭り = festa popular, 真似 = imitação, 守る = proteger ou cumprir, 満足 = contentamento.'}
+- 祭り = festa popular, 真似 = imitação, 守る = proteger ou cumprir, 満足 = contentamento.
 
 
-### 3. (cloze) {'pt-BR': 'Complete "Ela ficou com o rosto todo vermelho": 彼女は＿＿な顔をした。'}
+### 3. (cloze) Complete "Ela ficou com o rosto todo vermelho": 彼女は＿＿な顔をした。
 - **Resposta:** `{"text": "真っ赤", "full": "彼女は真っ赤な顔をした。"}`
-- {'pt-BR': '真っ赤 (まっか) é "vermelho vivo, todo corado", e como adjetivo な vem com な antes do substantivo (真っ赤な顔).'}
+- 真っ赤 (まっか) é "vermelho vivo, todo corado", e como adjetivo な vem com な antes do substantivo (真っ赤な顔).
 
 
-### 4. (recognition) {'pt-BR': 'Em "é ＿＿ como um sonho", qual palavra abre a comparação imaginária?'}
+### 4. (recognition) Em "é ＿＿ como um sonho", qual palavra abre a comparação imaginária?
 - **Resposta:** `{"choices": ["丸で", "全く", "益々", "真っ赤"], "correct": "丸で"}`
-- {'pt-BR': '丸で (まるで) introduz uma comparação ("como se", tal qual); 全く reforça um fato real, não uma comparação.'}
+- 丸で (まるで) introduz uma comparação ("como se", tal qual); 全く reforça um fato real, não uma comparação.
 
 
-### 5. (production) {'pt-BR': 'Diga "Eu sempre cumpro a promessa" usando 守る (約束 = promessa, 必ず = sempre/sem falta).'}
+### 5. (production) Diga "Eu sempre cumpro a promessa" usando 守る (約束 = promessa, 必ず = sempre/sem falta).
 - **Resposta:** `{"text": "約束は必ず守る", "accept": ["約束は必ず守る。", "約束を必ず守る", "約束を必ず守る。", "約束は必ず守ります", "約束を必ず守ります"]}`
-- {'pt-BR': '守る (まもる) aqui significa "cumprir"; 約束 é o objeto (marcado por は ou を) e 必ず reforça "sem falta".'}
+- 守る (まもる) aqui significa "cumprir"; 約束 é o objeto (marcado por は ou を) e 必ず reforça "sem falta".
 
 

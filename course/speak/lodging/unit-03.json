@@ -4,7 +4,7 @@
   "stage": "speak:lodging",
   "order": 3,
   "title": {
-    "pt-BR": "Dormir e resolver problemas — parte 3"
+    "pt-BR": "Dormir e resolver problemas, parte 3"
   },
   "say_now": [
     "sent:tatoeba-126245",
@@ -58,58 +58,6 @@
   "cumulative_known_vocab": 227,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:784",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:815",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:550:2086",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "安い",
-        "今日",
-        "何時"
-      ]
-    },
-    {
-      "id": "cf:n5:4414:326",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "部屋",
-        "関係",
-        "無し"
-      ]
-    },
-    {
-      "id": "kr:n5:12",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "えき",
-        "おじ",
-        "かう"
-      ]
-    },
-    {
-      "id": "kr:n5:140",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さいちゅう",
-        "レストラン",
-        "ひるごはん"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -172,6 +120,8 @@
       "prompt_pt": "Quase não havia crianças no quarto.",
       "answer_key": "部屋にはほとんど子供がいなかった。",
       "accepted_variants": [
+        "へやにわほとんどこどもがいなかった",
+        "へやにわほとんどこどもがいなかった。",
         "部屋にはほとんど子供がいなかった",
         "部屋にはほとんど子供がいなかった。"
       ],
@@ -182,6 +132,8 @@
       "prompt_pt": "Eu gostaria de fazer uma reserva para o jantar de amanhã à noite.",
       "answer_key": "明日の夜のディナーの予約をお願いします。",
       "accepted_variants": [
+        "あすのよるのでぃなーのよやくをおねがいします",
+        "あすのよるのでぃなーのよやくをおねがいします。",
         "明日の夜のディナーの予約をお願いします",
         "明日の夜のディナーの予約をお願いします。"
       ],
@@ -192,6 +144,8 @@
       "prompt_pt": "Eu queria fazer uma reserva para amanhã às seis da tarde.",
       "answer_key": "明日の６時に予約したいのですが。",
       "accepted_variants": [
+        "あすのろくじによやくしたいのですが",
+        "あすのろくじによやくしたいのですが。",
         "明日の６時に予約したいのですが",
         "明日の６時に予約したいのですが。"
       ],
@@ -214,15 +168,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 21,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 35,
+    "language-focused": 29,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:784",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:815",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:550:2086",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "安い",
+        "今日",
+        "何時"
+      ]
+    },
+    {
+      "id": "cf:n5:4414:326",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "部屋",
+        "関係",
+        "無し"
+      ]
+    },
+    {
+      "id": "kr:n5:12",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "えき",
+        "おじ",
+        "かう"
+      ]
+    },
+    {
+      "id": "kr:n5:140",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さいちゅう",
+        "レストラン",
+        "ひるごはん"
+      ]
+    }
+  ]
 }

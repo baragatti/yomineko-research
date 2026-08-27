@@ -4,7 +4,7 @@
   "stage": "speak:health",
   "order": 5,
   "title": {
-    "pt-BR": "Emergência e saúde — parte 5"
+    "pt-BR": "Emergência e saúde, parte 5"
   },
   "say_now": [
     "sent:tatoeba-10587764",
@@ -28,8 +28,8 @@
   "patterns": [
     "gram:gp-12",
     "gram:gp-17",
-    "gram:ndesu",
-    "gram:da-desu"
+    "gram:wa-yori-desu",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
     "休",
@@ -52,6 +52,112 @@
   "cumulative_known_vocab": 405,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:kyuu-ni",
+    "gram:tara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-90ed9f56e125",
+        "sent:gen-e97b8aeb1456"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O que é aquele prédio que fica atrás do hospital?",
+      "answer_key": "病院の後ろにあるあの建物はなんですか。",
+      "accepted_variants": [
+        "びょういんのうしろにあるあのたてものわなんですか",
+        "びょういんのうしろにあるあのたてものわなんですか。",
+        "病院の後ろにあるあの建物はなんですか",
+        "病院の後ろにあるあの建物はなんですか。"
+      ],
+      "sentence": "sent:tatoeba-85337",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O espírito está pronto, mas a carne é fraca.",
+      "answer_key": "心熱けれど肉体は弱し。",
+      "accepted_variants": [
+        "こころあつけれどにくたいわよわし",
+        "こころあつけれどにくたいわよわし。",
+        "心熱けれど肉体は弱し",
+        "心熱けれど肉体は弱し。"
+      ],
+      "sentence": "sent:tatoeba-145552",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "\"Como você está se sentindo?\", ele perguntou.",
+      "answer_key": "「気分はどうですか」と彼は尋ねた。",
+      "accepted_variants": [
+        "「きぶんわどうですか」とかれわたずねた",
+        "「きぶんわどうですか」とかれわたずねた。",
+        "「気分はどうですか」と彼は尋ねた",
+        "「気分はどうですか」と彼は尋ねた。"
+      ],
+      "sentence": "sent:tatoeba-5001",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:jec-3163",
+      "sent:tatoeba-203344",
+      "sent:tatoeba-83003",
+      "sent:tatoeba-226387",
+      "sent:tatoeba-79502",
+      "sent:tatoeba-11270411"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 21,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:761",
@@ -98,105 +204,5 @@
         "おおい"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:kyuu-ni",
-    "gram:tara"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ndesu",
-      "examples": [
-        "sent:gen-d354f1465606",
-        "sent:tatoeba-80973",
-        "sent:tatoeba-137685"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O que é aquele prédio que fica atrás do hospital?",
-      "answer_key": "病院の後ろにあるあの建物はなんですか。",
-      "accepted_variants": [
-        "病院の後ろにあるあの建物はなんですか",
-        "病院の後ろにあるあの建物はなんですか。"
-      ],
-      "sentence": "sent:tatoeba-85337",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "O espírito está pronto, mas a carne é fraca.",
-      "answer_key": "心熱けれど肉体は弱し。",
-      "accepted_variants": [
-        "心熱けれど肉体は弱し",
-        "心熱けれど肉体は弱し。"
-      ],
-      "sentence": "sent:tatoeba-145552",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "\"Como você está se sentindo?\", ele perguntou.",
-      "answer_key": "「気分はどうですか」と彼は尋ねた。",
-      "accepted_variants": [
-        "「気分はどうですか」と彼は尋ねた",
-        "「気分はどうですか」と彼は尋ねた。"
-      ],
-      "sentence": "sent:tatoeba-5001",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
-    "items": [
-      "sent:jec-3163",
-      "sent:tatoeba-203344",
-      "sent:tatoeba-83003",
-      "sent:tatoeba-226387",
-      "sent:tatoeba-79502",
-      "sent:tatoeba-11270411"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 26,
-    "fluency": 6
-  }
+  ]
 }

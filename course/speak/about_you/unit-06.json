@@ -4,7 +4,7 @@
   "stage": "speak:about_you",
   "order": 6,
   "title": {
-    "pt-BR": "Falar de você — parte 6"
+    "pt-BR": "Falar de você, parte 6"
   },
   "say_now": [
     "sent:tatoeba-11005020",
@@ -34,9 +34,9 @@
     "gram:ga-imasu",
     "gram:gp-43",
     "gram:koto",
-    "gram:da-desu",
-    "gram:gp",
-    "gram:gp-21"
+    "gram:wa-yori-desu",
+    "gram:gp-21",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
     "下",
@@ -59,6 +59,127 @@
   "cumulative_known_vocab": 323,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:ga-imasu",
+      "examples": [
+        "sent:tatoeba-176635",
+        "sent:tatoeba-11795596",
+        "sent:tatoeba-187375"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-43",
+      "examples": [
+        "sent:tatoeba-112055",
+        "sent:tatoeba-81631",
+        "sent:tatoeba-79299"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-90ed9f56e125",
+        "sent:gen-e97b8aeb1456"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-21",
+      "examples": [
+        "sent:tatoeba-5052",
+        "sent:tatoeba-4852",
+        "sent:tatoeba-77212"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-150175",
+        "sent:tatoeba-150639"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Por causa disso, ele perdeu o emprego.",
+      "answer_key": "彼はそのために仕事を失った。",
+      "accepted_variants": [
+        "かれわそのためにしごとをうしなった",
+        "かれわそのためにしごとをうしなった。",
+        "彼はそのために仕事を失った",
+        "彼はそのために仕事を失った。"
+      ],
+      "sentence": "sent:tatoeba-113170",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu hobby é ler romances.",
+      "answer_key": "私の趣味は小説を読むことです。",
+      "accepted_variants": [
+        "わたしのしゅみわしょうせつをよむことです",
+        "わたしのしゅみわしょうせつをよむことです。",
+        "私の趣味は小説を読むことです",
+        "私の趣味は小説を読むことです。"
+      ],
+      "sentence": "sent:tatoeba-163367",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu moro num apartamento bonito e silencioso.",
+      "answer_key": "きれいで静かなアパートに住んでいます。",
+      "accepted_variants": [
+        "きれいでしずかなあぱーとにすんでいます",
+        "きれいでしずかなあぱーとにすんでいます。",
+        "きれいで静かなアパートに住んでいます",
+        "きれいで静かなアパートに住んでいます。"
+      ],
+      "sentence": "sent:tatoeba-11021418",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-10899831",
+      "sent:tatoeba-1590863",
+      "sent:tatoeba-10899638",
+      "sent:tatoeba-196355",
+      "sent:tatoeba-10760527",
+      "sent:tatoeba-11727272"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 30,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:906",
@@ -105,120 +226,5 @@
         "てつだう"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:ga-imasu",
-      "examples": [
-        "sent:tatoeba-176635",
-        "sent:tatoeba-11795596",
-        "sent:tatoeba-187375"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-43",
-      "examples": [
-        "sent:tatoeba-112055",
-        "sent:tatoeba-81631",
-        "sent:tatoeba-79299"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-21",
-      "examples": [
-        "sent:tatoeba-5052",
-        "sent:tatoeba-4852",
-        "sent:tatoeba-77212"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Por causa disso, ele perdeu o emprego.",
-      "answer_key": "彼はそのために仕事を失った。",
-      "accepted_variants": [
-        "彼はそのために仕事を失った",
-        "彼はそのために仕事を失った。"
-      ],
-      "sentence": "sent:tatoeba-113170",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Meu hobby é ler romances.",
-      "answer_key": "私の趣味は小説を読むことです。",
-      "accepted_variants": [
-        "私の趣味は小説を読むことです",
-        "私の趣味は小説を読むことです。"
-      ],
-      "sentence": "sent:tatoeba-163367",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu moro num apartamento bonito e silencioso.",
-      "answer_key": "きれいで静かなアパートに住んでいます。",
-      "accepted_variants": [
-        "きれいで静かなアパートに住んでいます",
-        "きれいで静かなアパートに住んでいます。"
-      ],
-      "sentence": "sent:tatoeba-11021418",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
-    "items": [
-      "sent:tatoeba-10899831",
-      "sent:tatoeba-1590863",
-      "sent:tatoeba-10899638",
-      "sent:tatoeba-196355",
-      "sent:tatoeba-10760527",
-      "sent:tatoeba-11727272"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 21,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 35,
-    "fluency": 6
-  }
+  ]
 }

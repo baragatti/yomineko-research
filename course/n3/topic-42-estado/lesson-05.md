@@ -68,28 +68,28 @@ Repare na diferença entre 成人 (せいじん, 'adulto' no sentido legal, maio
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'governo, administração de um país'?"}
+### 1. (recognition) Qual palavra significa 'governo, administração de um país'?
 - **Resposta:** `{"choices": ["政府 (せいふ)", "制度 (せいど)", "成功 (せいこう)"], "correct": "政府 (せいふ)"}`
-- {'pt-BR': '政府 = governo. 制度 = sistema/instituição; 成功 = sucesso.'}
+- 政府 = governo. 制度 = sistema/instituição; 成功 = sucesso.
 
 
-### 2. (recognition) {'pt-BR': 'Em <jp reading="うみにはめずらしいせいぶつがおおい">海には珍しい生物が多い</jp>, o que é 生物?'}
+### 2. (recognition) Em 海には珍しい生物が多い, o que é 生物?
 - **Resposta:** `{"choices": ["produto", "ser vivo / criatura", "sistema"], "correct": "ser vivo / criatura"}`
-- {'pt-BR': '生物 (せいぶつ) = ser vivo, criatura. Não confunda com 製品 (せいひん, produto).'}
+- 生物 (せいぶつ) = ser vivo, criatura. Não confunda com 製品 (せいひん, produto).
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra do bloco せい à tradução.'}
+### 3. (matching) Associe cada palavra do bloco せい à tradução.
 - **Resposta:** `{"pairs": [["成功", "sucesso"], ["成績", "desempenho / notas"], ["製造", "fabricação"], ["清潔", "limpo / higiênico"]]}`
-- {'pt-BR': '成功 = sucesso; 成績 = desempenho; 製造 = fabricação; 清潔 = limpo.'}
+- 成功 = sucesso; 成績 = desempenho; 製造 = fabricação; 清潔 = limpo.
 
 
-### 4. (cloze) {'pt-BR': "Complete com a palavra para 'fabricar/produzir': この工場は車を＿＿している。"}
+### 4. (cloze) Complete com a palavra para 'fabricar/produzir': この工場は車を＿＿している。
 - **Resposta:** `{"text": "製造", "full": "この工場は車を製造している。"}`
-- {'pt-BR': '製造 (せいぞう) é a fabricação industrial. A fábrica produz carros.'}
+- 製造 (せいぞう) é a fabricação industrial. A fábrica produz carros.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'O governo iniciou um novo sistema' usando 政府, 新しい e 制度."}
+### 5. (production) Diga em japonês 'O governo iniciou um novo sistema' usando 政府, 新しい e 制度.
 - **Resposta:** `{"text": "政府は新しい制度を始めた", "accept": ["政府は新しい制度を始めた", "せいふはあたらしいせいどをはじめた", "政府が新しい制度を始めた", "政府は新しい制度を始めました"]}`
-- {'pt-BR': '政府は (o governo) + 新しい制度を (um novo sistema) + 始めた (iniciou).'}
+- 政府は (o governo) + 新しい制度を (um novo sistema) + 始めた (iniciou).
 
 

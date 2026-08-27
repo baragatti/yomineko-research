@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-ni-kanshite, n3-ni-oite, n3-ni-tsuite] · vocabulário [ウイスキー, 兎, 動かす, 受け取る, 唸る, 嗽, 失う, 奪う, 宇宙, 引用, 引退, 撃つ, 牛, 疑う, 移す, 訴える, 馬] · kanji [予 交 共 原 得 活 済 解 資] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-220401`, `sent:tatoeba-77936`
 
 ---
 
@@ -32,7 +32,7 @@ A expressão n3-ni-tsuite marca o tema ou assunto de que se fala, pensa ou escre
 日本の文化について学ぶ = estudar sobre a cultura japonesa. Para qualificar um substantivo, use についての, como em 文化についての本 (livro sobre cultura).
 
 > **[l1-pitfall]**
-Armadilha PT: について cobre o assunto de que se trata, mas não substituiにとって (do ponto de vista de). No sentido de opinião, sobre mim não vira わたしについて, e sim, conforme o caso, わたしにとって. Você verá にとって na próxima lição.
+Armadilha PT: について cobre o assunto de que se trata, mas não substitui にとって (do ponto de vista de). No sentido de opinião, sobre mim não vira わたしについて, e sim, conforme o caso, わたしにとって. Você verá にとって na próxima lição.
 
 #### に関して: quanto a / no que diz respeito a
 A expressão n3-ni-kanshite também indica o assunto, como について, mas soa mais formal e escrita. É comum em relatórios e contextos de negócios. Para modificar um substantivo seguinte, usa-se に関する, como em 環境に関する問題 (questão relativa ao meio ambiente).
@@ -96,28 +96,28 @@ Junte tema e contexto:この映画について会議で訴える (apelar sobre e
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Num relatório acadêmico você quer dizer "no campo da ciência" num tom formal e escrito. Qual expressão encaixa melhor?'}
+### 1. (recognition) Num relatório acadêmico você quer dizer "no campo da ciência" num tom formal e escrito. Qual expressão encaixa melhor?
 - **Resposta:** `{"choices": ["科学の分野において", "科学の分野について", "科学の分野にとって"], "correct": "科学の分野において"}`
-- {'pt-BR': 'において situa algo num lugar, tempo ou domínio em registro formal (a versão escrita de で). について marcaria o assunto ("sobre o campo da ciência"), e にとって traria perspectiva ("para o campo da ciência"), sentidos diferentes.'}
+- において situa algo num lugar, tempo ou domínio em registro formal (a versão escrita de で). について marcaria o assunto ("sobre o campo da ciência"), e にとって traria perspectiva ("para o campo da ciência"), sentidos diferentes.
 
 
-### 2. (particle_choice) {'pt-BR': '"Estudo sobre a cultura japonesa": 日本の文化＿＿学ぶ. Qual completa marcando o ASSUNTO no tom neutro do dia a dia?'}
+### 2. (particle_choice) "Estudo sobre a cultura japonesa": 日本の文化＿＿学ぶ. Qual completa marcando o ASSUNTO no tom neutro do dia a dia?
 - **Resposta:** `{"choices": ["について", "において", "に対して"], "correct": "について"}`
-- {'pt-BR': 'について marca o tema de que se fala ou estuda, no registro neutro. において seria contexto/lugar; に対して seria alvo ou contraste, não o assunto.'}
+- について marca o tema de que se fala ou estuda, no registro neutro. において seria contexto/lugar; に対して seria alvo ou contraste, não o assunto.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a forma formal e escrita de "a respeito de" (use 関) para "questão relativa ao meio ambiente": 環境＿＿＿＿問題'}
+### 3. (cloze) Complete com a forma formal e escrita de "a respeito de" (use 関) para "questão relativa ao meio ambiente": 環境＿＿＿＿問題
 - **Resposta:** `{"text": "に関する", "full": "環境に関する問題"}`
-- {'pt-BR': 'Para modificar o substantivo 問題 logo a seguir, に関して vira に関する. Fica 環境に関する問題 (questão relativa ao meio ambiente), num tom mais formal que についての.'}
+- Para modificar o substantivo 問題 logo a seguir, に関して vira に関する. Fica 環境に関する問題 (questão relativa ao meio ambiente), num tom mais formal que についての.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada kanji ao seu sentido central.'}
+### 4. (matching) Associe cada kanji ao seu sentido central.
 - **Resposta:** `{"pairs": [["済", "saldar / concluir"], ["解", "resolver / desatar"], ["資", "recursos / capital"], ["共", "junto / comum"]]}`
-- {'pt-BR': '済 (água que escoa até o fim, conta saldada), 解 (faca que separa o chifre do boi, deslindar), 資 (concha embaixo, capital), 共 (duas mãos erguendo a mesma coisa, em comum).'}
+- 済 (água que escoa até o fim, conta saldada), 解 (faca que separa o chifre do boi, deslindar), 資 (concha embaixo, capital), 共 (duas mãos erguendo a mesma coisa, em comum).
 
 
-### 5. (production) {'pt-BR': 'Escreva em japonês "um livro sobre o universo" usando 宇宙 (うちゅう), について e 本.'}
+### 5. (production) Escreva em japonês "um livro sobre o universo" usando 宇宙 (うちゅう), について e 本.
 - **Resposta:** `{"text": "宇宙についての本", "accept": ["宇宙についての本", "うちゅうについてのほん", "宇宙に関する本", "うちゅうにかんするほん"]}`
-- {'pt-BR': 'Para ligar o tema a um substantivo, について vira についての: 宇宙についての本. A variante mais formal 宇宙に関する本 também está correta.'}
+- Para ligar o tema a um substantivo, について vira についての: 宇宙についての本. A variante mais formal 宇宙に関する本 também está correta.
 
 

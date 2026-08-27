@@ -106,6 +106,12 @@ def sensitive_slugs(con: sqlite3.Connection) -> set:
         tuple(f"%{t}%" for t in SENSITIVE_PT))}
 
 
+# Filled by main() before any export runs: vocab row id -> published slug, and
+# (member_type, member_row_id) -> [family slug,...] (see family_backlinks).
+VOCAB_SLUG_BY_ID: dict = {}
+FAMILY_OF: dict = {}
+
+
 def export_kanji(con: sqlite3.Connection) -> dict:
     SENSITIVE = sensitive_slugs(con)
     L = get_all(con, "kanji")
@@ -178,6 +184,9 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "readings": readings, "irregular_note": loc(pt=irr_note[0]) if irr_note else None,
                 "components": components,
                 "example_words": example_words, "example_sentences": example_sentences,
+                # Back-pointer into the family layer, so a family is reachable FROM its members
+                # (spec 1.7); without it all 396 families were graph orphans.
+                "families": FAMILY_OF.get(("kanji", kid), []),
             }
             records.append(rec)
             men_pt = (L.get((kid, "meanings")) or jloads(men) or [])[:3]
@@ -237,6 +246,7 @@ def export_vocab(con: sqlite3.Connection) -> dict:
                 "adj_class": aclass, "common": bool(common), "register": vreg, "jmdict_ref": jref,
                 "notes": loc(pt=VL.get((vid, "notes"))), "pitch": pitch, "forms": forms,
                 "senses": senses, "kanji": kanji,
+                "families": FAMILY_OF.get(("vocab", vid), []),
             }
             records.append(rec)
             g0 = senses[0]["gloss"] if senses else None
@@ -307,6 +317,7 @@ def export_grammar(con: sqlite3.Connection) -> dict:
                 "steps_unavailable": ex.get("steps_unavailable"),
                 "nuance": loc(pt=L.get((gid, "nuance")), en=Len.get((gid, "nuance"))),
                 "related": related, "refs": jloads(refs), "needs_review": bool(nr),
+                "families": FAMILY_OF.get(("grammar", gid), []),
             }
             records.append(rec)
             index_rows.append((key, pattern or "", level, "authored" if expl else "stub"))
@@ -320,6 +331,20 @@ def export_grammar(con: sqlite3.Connection) -> dict:
         lines.append(f"| {key} | {pat} | {lvl} | {st} |")
     (CORPUS / "grammar" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return out_counts
+
+
+def family_backlinks(con: sqlite3.Connection) -> dict:
+    """(member_type, member_row_id) -> [family slug, ...] so records can point back at their families.
+
+    Without this the family layer is write-only: families name their members but no member names its
+    family, so nothing in the published graph can reach a family from a record (spec 1.7).
+    """
+    out: dict = {}
+    for fslug, mtype, mid in con.execute(
+            "SELECT f.slug, fm.member_type, fm.member_id FROM family_member fm "
+            "JOIN family f ON f.id = fm.family_id ORDER BY f.importance_rank, f.slug"):
+        out.setdefault((mtype, mid), []).append(fslug)
+    return out
 
 
 def export_families(con: sqlite3.Connection) -> int:
@@ -338,13 +363,17 @@ def export_families(con: sqlite3.Connection) -> int:
             "WHERE family_id=? ORDER BY intra_order", (fid,)
         ):
             mtype, mid, order, core, note = m
+            # `ref` stays the human-readable form (headword/character/key); `slug` is the ADDRESS.
+            # 73 of the 1,652 vocab member refs are headwords shared by more than one record, so the
+            # display form alone cannot be resolved; the slug can.
             if mtype == "kanji":
-                ref = con.execute("SELECT character FROM kanji WHERE id=?", (mid,)).fetchone()
+                row = con.execute("SELECT character, slug FROM kanji WHERE id=?", (mid,)).fetchone()
             elif mtype == "vocab":
-                ref = con.execute("SELECT headword FROM vocab WHERE id=?", (mid,)).fetchone()
+                row = con.execute("SELECT headword, slug FROM vocab WHERE id=?", (mid,)).fetchone()
             else:
-                ref = con.execute("SELECT key FROM grammar_point WHERE id=?", (mid,)).fetchone()
-            members.append({"member_type": mtype, "ref": ref[0] if ref else None,
+                row = con.execute("SELECT key, slug FROM grammar_point WHERE id=?", (mid,)).fetchone()
+            members.append({"member_type": mtype, "ref": row[0] if row else None,
+                            "slug": row[1] if row else None,
                             "id": mid, "intra_order": order, "is_core": bool(core),
                             "note": loc(pt=note)})
         records.append({
@@ -392,6 +421,9 @@ def export_sentences(con: sqlite3.Connection) -> int:
             tokens.append({
                 "position": t[1], "split_mode": t[2], "surface": t[3], "lemma": t[4],
                 "reading": t[5], "romaji": t[6],
+                # The vocab SLUG is the published sentence->vocab edge; `vocab_id` (below, kept for
+                # compatibility) is a storage row number no consumer should key on.
+                "vocab": VOCAB_SLUG_BY_ID.get(t[12]),
                 # mechanical Layer-A grammar (neutral enums + raw Sudachi)
                 "pos": t[9], "pos_coarse": t[7], "pos_fine": t[8],
                 "inflection": t[10], "inflection_type": t[11],
@@ -479,8 +511,17 @@ def write_corpus_index(kc, vc, gc=None, fc=0, sc=0) -> None:
     (CORPUS / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
+def _fill_link_caches(con: sqlite3.Connection) -> None:
+    VOCAB_SLUG_BY_ID.clear()
+    for vid, slug in con.execute("SELECT id, slug FROM vocab"):
+        VOCAB_SLUG_BY_ID[vid] = slug
+    FAMILY_OF.clear()
+    FAMILY_OF.update(family_backlinks(con))
+
+
 def main() -> int:
     con = sqlite3.connect(DB)
+    _fill_link_caches(con)
     kc = export_kanji(con)
     vc = export_vocab(con)
     gc = export_grammar(con)

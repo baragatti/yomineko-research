@@ -4,7 +4,7 @@
   "stage": "speak:time_plans",
   "order": 1,
   "title": {
-    "pt-BR": "Quando, que horas, combinar — parte 1"
+    "pt-BR": "Quando, que horas, combinar, parte 1"
   },
   "say_now": [
     "sent:tatoeba-79537",
@@ -32,7 +32,7 @@
     "gram:gp-62",
     "gram:ka-shira",
     "gram:gp-115",
-    "gram:gp-63"
+    "gram:koto"
   ],
   "kanji_recognition": [
     "守",
@@ -55,48 +55,6 @@
   "cumulative_known_vocab": 332,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n5:3047:36",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "所",
-        "音",
-        "別"
-      ]
-    },
-    {
-      "id": "cf:n5:3581:36",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "花",
-        "話",
-        "夫"
-      ]
-    },
-    {
-      "id": "kr:n4:1214",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "なるべく",
-        "かのじょ",
-        "でかける"
-      ]
-    },
-    {
-      "id": "kr:n5:159",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とし",
-        "そと",
-        "ふね"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:te-ita"
   ],
@@ -138,11 +96,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-63",
+      "pattern": "gram:koto",
       "examples": [
-        "sent:gen-113cd2b42397",
-        "sent:tatoeba-161847",
-        "sent:tatoeba-186610"
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
       ],
       "strand": "language-focused"
     }
@@ -152,6 +110,8 @@
       "prompt_pt": "Infelizmente, muitos japoneses morreram.",
       "answer_key": "悲しいことに多くの日本人が亡くなりました。",
       "accepted_variants": [
+        "かなしいことにおおくのにほんじんがなくなりました",
+        "かなしいことにおおくのにほんじんがなくなりました。",
         "悲しいことに多くの日本人が亡くなりました",
         "悲しいことに多くの日本人が亡くなりました。"
       ],
@@ -162,6 +122,8 @@
       "prompt_pt": "Meu marido geralmente sai para o trabalho às 8 horas.",
       "answer_key": "夫は大抵８時には仕事に出かけます。",
       "accepted_variants": [
+        "おっとわたいていはちじにわしごとにでかけます",
+        "おっとわたいていはちじにわしごとにでかけます。",
         "夫は大抵８時には仕事に出かけます",
         "夫は大抵８時には仕事に出かけます。"
       ],
@@ -172,6 +134,8 @@
       "prompt_pt": "Há muitos estudantes na biblioteca.",
       "answer_key": "図書館にはたくさんの学生がいます。",
       "accepted_variants": [
+        "としょかんにわたくさんのがくせいがいます",
+        "としょかんにわたくさんのがくせいがいます。",
         "図書館にはたくさんの学生がいます",
         "図書館にはたくさんの学生がいます。"
       ],
@@ -194,15 +158,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n5:3047:36",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "所",
+        "音",
+        "別"
+      ]
+    },
+    {
+      "id": "cf:n5:3581:36",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "花",
+        "話",
+        "夫"
+      ]
+    },
+    {
+      "id": "kr:n4:1214",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "なるべく",
+        "かのじょ",
+        "でかける"
+      ]
+    },
+    {
+      "id": "kr:n5:159",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とし",
+        "そと",
+        "ふね"
+      ]
+    }
+  ]
 }

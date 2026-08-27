@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-102, gp-103, gp-104] · vocabulário [カーテン, 億, 出発, 展覧会, 数学, 汽車, 沖, 注射, 滑降, 退院] · kanji [借 洋 貸] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-9054c26d99b8`, `sent:gen-e9bb12279da1`, `sent:gen-d3bba30db3a5`, `sent:gen-2be04a058c05`
+**Frases (por ID, do banco dissecado):** `sent:gen-e9bb12279da1`, `sent:gen-d3bba30db3a5`, `sent:gen-2be04a058c05`, `sent:gen-9054c26d99b8`
 
 ---
 
@@ -77,28 +77,28 @@ Três kanji para reconhecer, dois deles um par fácil de confundir:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase quer dizer 'Ele não está NEM UM POUCO bravo' (negação total com すこしも)?"}
+### 1. (recognition) Qual frase quer dizer 'Ele não está NEM UM POUCO bravo' (negação total com すこしも)?
 - **Resposta:** `{"choices": ["彼は少しも怒っていない", "彼は少なくない", "彼が知らない歌はない", "彼はあまり怒っていない"], "correct": "彼は少しも怒っていない"}`
-- {'pt-BR': "すこしも + predicado negativo (怒っていない) é a negação total: 'nem um pouco bravo'. As demais opções usam litotes (少なくない), dupla negação (〜ない〜はない) ou um grau mais brando (あまり)."}
+- すこしも + predicado negativo (怒っていない) é a negação total: 'nem um pouco bravo'. As demais opções usam litotes (少なくない), dupla negação (〜ない〜はない) ou um grau mais brando (あまり).
 - frases: `sent:gen-d3bba30db3a5`
 
-### 2. (cloze) {'pt-BR': "Complete para dizer 'Hoje a lição de casa não é pouca' (= é bastante), usando a litotes 少なくない. 今日は宿題が____。"}
+### 2. (cloze) Complete para dizer 'Hoje a lição de casa não é pouca' (= é bastante), usando a litotes 少なくない. 今日は宿題が____。
 - **Resposta:** `{"text": "少なくない", "full": "今日は宿題が少なくない。"}`
-- {'pt-BR': "少なくない é a forma negativa de 少ない ('poucos'). Negar 'poucos' afirma que há bastante: a lição 'não é pouca' = é bastante. É uma maneira comedida de dizer おおい."}
+- 少なくない é a forma negativa de 少ない ('poucos'). Negar 'poucos' afirma que há bastante: a lição 'não é pouca' = é bastante. É uma maneira comedida de dizer おおい.
 - frases: `sent:gen-2be04a058c05`
 
-### 3. (sentence_build) {'pt-BR': "Ordene os blocos para formar 'Não existe música que ele não conheça' (dupla negação 〜ない〜はない)."}
+### 3. (sentence_build) Ordene os blocos para formar 'Não existe música que ele não conheça' (dupla negação 〜ない〜はない).
 - **Resposta:** `{"order": ["彼が", "知らない", "歌は", "ない"], "text": "彼が知らない歌はない"}`
-- {'pt-BR': "O molde é [oração com verbo negativo] + [substantivo] + はない. Aqui: 彼が知らない ('que ele não conhece') + 歌 ('música') + はない ('não existe'). Junto afirma que ele conhece todas as músicas."}
+- O molde é [oração com verbo negativo] + [substantivo] + はない. Aqui: 彼が知らない ('que ele não conhece') + 歌 ('música') + はない ('não existe'). Junto afirma que ele conhece todas as músicas.
 - frases: `sent:gen-9054c26d99b8`
 
-### 4. (recognition) {'pt-BR': "Qual kanji significa 'emprestar' (dar algo para o outro usar), e não 'pedir emprestado'?"}
+### 4. (recognition) Qual kanji significa 'emprestar' (dar algo para o outro usar), e não 'pedir emprestado'?
 - **Resposta:** `{"choices": ["貸", "借", "洋", "億"], "correct": "貸"}`
-- {'pt-BR': "貸 (かす) = 'emprestar'; tem 貝 (dinheiro) embaixo, lembrando que quem empresta solta o dinheiro. 借 (かりる) é o oposto: 'pedir emprestado', com o radical de pessoa (亻)."}
+- 貸 (かす) = 'emprestar'; tem 貝 (dinheiro) embaixo, lembrando que quem empresta solta o dinheiro. 借 (かりる) é o oposto: 'pedir emprestado', com o radical de pessoa (亻).
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Hoje não está nem um pouco frio.' Use すこしも + a forma negativa de 寒い."}
+### 5. (production) Escreva em japonês: 'Hoje não está nem um pouco frio.' Use すこしも + a forma negativa de 寒い.
 - **Resposta:** `{"text": "今日は少しも寒くない。", "accept": ["今日は少しも寒くない", "今日はすこしも寒くない", "きょうは少しも寒くない", "今日は少しも寒くないです"]}`
-- {'pt-BR': "すこしも intensifica a negação 寒くない ('não está frio') até zerá-la: 'nem um pouco frio'. A partícula は marca 今日 como tópico. Aceita-se a versão polida com です."}
+- すこしも intensifica a negação 寒くない ('não está frio') até zerá-la: 'nem um pouco frio'. A partícula は marca 今日 como tópico. Aceita-se a versão polida com です.
 - frases: `sent:gen-e9bb12279da1`
 

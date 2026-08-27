@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-donna-ni-temo, n3-tatoe-temo, n3-temo] · vocabulário [こんなに, 叫ぶ, 困難, 差, 幸い, 才能, 支える, 更に, 様々, 混乱, 砂漠, 逆らう, 避ける] · kanji [倒 努 困 押 散 欠] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-85028`, `sent:tatoeba-199506`
 
 ---
 
@@ -84,28 +84,28 @@ A persistência apesar das dificuldades é um valor muito presente no Japão, re
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': "Complete: 'Mesmo que chova, o jogo acontece.' 雨が降っ＿＿試合はあります。"}
+### 1. (particle_choice) Complete: 'Mesmo que chova, o jogo acontece.' 雨が降っ＿＿試合はあります。
 - **Resposta:** `{"choices": ["たら", "ても", "なら", "から"], "correct": "ても"}`
-- {'pt-BR': "O sentido é de concessão ('mesmo que', contrariedade), então usa-se 〜ても: 降っても. 〜たら e 〜なら marcariam uma condição neutra ('se chover, então...'), sem a ideia de 'ainda assim'."}
+- O sentido é de concessão ('mesmo que', contrariedade), então usa-se 〜ても: 降っても. 〜たら e 〜なら marcariam uma condição neutra ('se chover, então...'), sem a ideia de 'ainda assim'.
 
 
-### 2. (recognition) {'pt-BR': "Qual frase significa 'Por mais que eu estude, há coisas que não entendo'?"}
+### 2. (recognition) Qual frase significa 'Por mais que eu estude, há coisas que não entendo'?
 - **Resposta:** `{"choices": ["勉強したら分からないことがある", "どんなに勉強しても分からないことがある", "勉強するなら分かることがある"], "correct": "どんなに勉強しても分からないことがある"}`
-- {'pt-BR': "'Por mais que' (foco no grau) é どんなに〜ても. A primeira opção usa たら (condição neutra) e a terceira usa なら, nenhuma das duas carrega a ideia de 'por mais que, ainda assim'."}
+- 'Por mais que' (foco no grau) é どんなに〜ても. A primeira opção usa たら (condição neutra) e a terceira usa なら, nenhuma das duas carrega a ideia de 'por mais que, ainda assim'.
 
 
-### 3. (cloze) {'pt-BR': "Complete a forma concessiva do adjetivo 寒い ('frio') em 'Nem que faça frio, eu vou à praia': たとえ寒＿＿＿海へ行く。"}
+### 3. (cloze) Complete a forma concessiva do adjetivo 寒い ('frio') em 'Nem que faça frio, eu vou à praia': たとえ寒＿＿＿海へ行く。
 - **Resposta:** `{"text": "くても", "full": "たとえ寒くても海へ行く"}`
-- {'pt-BR': "Adjetivo-い troca o final い por くても: 寒い vira 寒くても ('mesmo frio'). O たとえ no começo apenas reforça o tom de suposição extrema; quem faz o trabalho de concessão é o くても."}
+- Adjetivo-い troca o final い por くても: 寒い vira 寒くても ('mesmo frio'). O たとえ no começo apenas reforça o tom de suposição extrema; quem faz o trabalho de concessão é o くても.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Nem que surjam dificuldades, não desisto.' com as peças: [困難が] [諦めない] [たとえ] [あっても]"}
+### 4. (sentence_build) Monte 'Nem que surjam dificuldades, não desisto.' com as peças: [困難が] [諦めない] [たとえ] [あっても]
 - **Resposta:** `{"order": ["たとえ", "困難が", "あっても", "諦めない"], "text": "たとえ困難があっても諦めない"}`
-- {'pt-BR': "O advérbio たとえ abre a frase como aviso de hipótese; 困難がある ('haver dificuldade') vira 困難があっても ('mesmo havendo'); 諦めない ('não desisto') fecha. A ordem é rígida: o verbo principal fica no fim (SOV)."}
+- O advérbio たとえ abre a frase como aviso de hipótese; 困難がある ('haver dificuldade') vira 困難があっても ('mesmo havendo'); 諦めない ('não desisto') fecha. A ordem é rígida: o verbo principal fica no fim (SOV).
 
 
-### 5. (production) {'pt-BR': "Diga 'Por mais que eu gritasse, ninguém veio.' usando どんなに〜ても e o verbo 叫ぶ ('gritar')."}
-- **Resposta:** `{"text": "どんなに叫んでも誰も来なかった", "accept": ["どんなにさけんでもだれもこなかった", "どんなに叫んでも誰も来ませんでした", "どんなに叫んでもだれも来なかった"]}`
-- {'pt-BR': "どんなに reforça o grau ('por mais que'); 叫ぶ na forma-て é 叫んで, e com も vira 叫んでも ('mesmo gritando'); 誰も来なかった = 'ninguém veio'. Repare que o verbo fica no fim da frase."}
+### 5. (production) Diga 'Por mais que eu gritasse, ninguém veio.' usando どんなに〜ても e o verbo 叫ぶ ('gritar').
+- **Resposta:** `{"text": "どんなに叫んでも誰も来なかった", "accept": ["どんなに叫んでも誰も来なかった", "どんなにさけんでもだれもこなかった", "どんなに叫んでも誰も来ませんでした", "どんなに叫んでもだれも来なかった"]}`
+- どんなに reforça o grau ('por mais que'); 叫ぶ na forma-て é 叫んで, e com も vira 叫んでも ('mesmo gritando'); 誰も来なかった = 'ninguém veio'. Repare que o verbo fica no fim da frase.
 
 

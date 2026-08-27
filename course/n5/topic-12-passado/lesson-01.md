@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-32] · vocabulário [デパート, トイレ, ドア, 出口, 図書館, 地下鉄, 地図, 戸, 所, 電気, 電話, 電車] · kanji [入 東] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-78700`, `sent:tatoeba-83696`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-83696`, `sent:tatoeba-78700`
 
 ---
 
@@ -86,28 +86,28 @@ Mesma frase, versão polida: 雨でした = "era chuva / chovia". Trocar だっ�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é a forma POLIDA do passado da cópula ("era / foi")?'}
+### 1. (recognition) Qual é a forma POLIDA do passado da cópula ("era / foi")?
 - **Resposta:** `{"choices": ["でした", "だった", "です"], "correct": "でした"}`
-- {'pt-BR': 'でした é a versão polida do passado da cópula; だった é a casual; です é o presente polido. As duas do passado significam "era / foi".'}
+- でした é a versão polida do passado da cópula; だった é a casual; です é o presente polido. As duas do passado significam "era / foi".
 
 
-### 2. (cloze) {'pt-BR': 'Complete com o passado POLIDO da cópula: ここは図書館＿。 (Aqui era a biblioteca.)'}
+### 2. (cloze) Complete com o passado POLIDO da cópula: ここは図書館＿。 (Aqui era a biblioteca.)
 - **Resposta:** `{"text": "でした", "full": "ここは図書館でした"}`
-- {'pt-BR': '図書館 (biblioteca) é substantivo, então recebe でした direto para virar "era a biblioteca". O molde é [substantivo] + でした.'}
+- 図書館 (biblioteca) é substantivo, então recebe でした direto para virar "era a biblioteca". O molde é [substantivo] + でした.
 
 
-### 3. (recognition) {'pt-BR': 'Qual frase está CERTA para dizer "estava silencioso" (静か é adjetivo-な)?'}
+### 3. (recognition) Qual frase está CERTA para dizer "estava silencioso" (静か é adjetivo-な)?
 - **Resposta:** `{"choices": ["静かだった", "静かいでした", "静かかった"], "correct": "静かだった"}`
-- {'pt-BR': '静か é adjetivo-な, então usa a cópula: 静かだった ("estava silencioso"). As outras misturam o padrão de adjetivo-い, que aqui não se aplica.'}
+- 静か é adjetivo-な, então usa a cópula: 静かだった ("estava silencioso"). As outras misturam o padrão de adjetivo-い, que aqui não se aplica.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Era um trem.' com as peças: [でした] [電車]"}
+### 4. (sentence_build) Monte 'Era um trem.' com as peças: [でした] [電車]
 - **Resposta:** `{"order": ["電車", "でした"], "text": "電車でした。"}`
-- {'pt-BR': '電車 (trem) é substantivo + でした (passado polido) = "era um trem". Sem artigo: não se diz "um" em japonês.'}
+- 電車 (trem) é substantivo + でした (passado polido) = "era um trem". Sem artigo: não se diz "um" em japonês.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês, no CASUAL, 'Era chuva / chovia.' usando 雨 (chuva) e o passado casual da cópula."}
+### 5. (production) Diga em japonês, no CASUAL, 'Era chuva / chovia.' usando 雨 (chuva) e o passado casual da cópula.
 - **Resposta:** `{"text": "雨だった。", "accept": ["雨だった", "雨だった。", "あめだった", "あめだった。"]}`
-- {'pt-BR': '雨 (chuva, substantivo) + だった (passado casual da cópula) = "era chuva / chovia". É exatamente o coração da frase real 来る日も来る日も雨だった。'}
+- 雨 (chuva, substantivo) + だった (passado casual da cópula) = "era chuva / chovia". É exatamente o coração da frase real 来る日も来る日も雨だった。
 - frases: `sent:tatoeba-78700`
 

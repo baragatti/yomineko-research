@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-kurai, n3-kurai-wa-nai, n3-sa] · vocabulário [ケース, ゲーム, 傾向, 刑事, 劇, 劇場, 化粧, 契約, 掲示, 経由, 結果, 芸術, 計算, 警告] · kanji [具 単 号 園 易 辞 速] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-200411`
 
 ---
 
@@ -85,28 +85,28 @@ Faça os exercícios abaixo. Confira a explicação de cada um depois de respond
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': 'これは10分___待てば終わる作業です。(É uma tarefa que termina se você esperar uns dez minutos.)'}
+### 1. (particle_choice) これは10分___待てば終わる作業です。(É uma tarefa que termina se você esperar uns dez minutos.)
 - **Resposta:** `{"choices": ["くらい", "しか", "から", "だけ"], "correct": "くらい"}`
-- {'pt-BR': "Para indicar quantidade aproximada ('uns dez minutos'), usamos くらい (ou ぐらい). Liga-se direto ao número/contador 10分."}
+- Para indicar quantidade aproximada ('uns dez minutos'), usamos くらい (ou ぐらい). Liga-se direto ao número/contador 10分.
 
 
-### 2. (cloze) {'pt-BR': 'Complete com o sufixo de grau: この山の高___は3776メートルです。(A altura desta montanha é 3776 metros.)'}
+### 2. (cloze) Complete com o sufixo de grau: この山の高___は3776メートルです。(A altura desta montanha é 3776 metros.)
 - **Resposta:** `{"text": "さ", "full": "この山の高さは3776メートルです"}`
-- {'pt-BR': "高い (alto) perde o い e ganha さ: 高さ = 'altura'. O sufixo さ nominaliza o adjetivo focando no grau mensurável."}
+- 高い (alto) perde o い e ganha さ: 高さ = 'altura'. O sufixo さ nominaliza o adjetivo focando no grau mensurável.
 
 
-### 3. (recognition) {'pt-BR': "Qual frase expressa melhor 'pelo menos cumprimente os outros' (cobrança de um mínimo)?"}
+### 3. (recognition) Qual frase expressa melhor 'pelo menos cumprimente os outros' (cobrança de um mínimo)?
 - **Resposta:** `{"choices": ["挨拶ぐらいはしなさい", "挨拶しか知らない", "挨拶ばかりしている", "挨拶ほど大切ではない"], "correct": "挨拶ぐらいはしなさい"}`
-- {'pt-BR': "くらい/ぐらい + は aponta um patamar mínimo ('ao menos isto'). O は é o que cria o realce; a frase cobra o mínimo razoável."}
+- くらい/ぐらい + は aponta um patamar mínimo ('ao menos isto'). O は é o que cria o realce; a frase cobra o mínimo razoável.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada kanji ao seu sentido principal.'}
+### 4. (matching) Associe cada kanji ao seu sentido principal.
 - **Resposta:** `{"pairs": [["速", "rápido"], ["単", "simples / mero"], ["号", "número / título"], ["園", "parque / jardim"]]}`
-- {'pt-BR': '速 (rápido) aparece em 速度 (velocidade); 単 (mero) em 単語 (vocábulo); 号 (número) em 番号; 園 (jardim) em 公園 (parque).'}
+- 速 (rápido) aparece em 速度 (velocidade); 単 (mero) em 単語 (vocábulo); 号 (número) em 番号; 園 (jardim) em 公園 (parque).
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Estou tão feliz a ponto de querer chorar.' (use くらい e a forma 泣きたい)."}
-- **Resposta:** `{"text": "泣きたいくらい嬉しい", "accept": ["泣きたいくらい嬉しいです", "泣きたいぐらい嬉しい", "泣きたいぐらいうれしい", "泣きたいくらいうれしいです"]}`
-- {'pt-BR': "O segundo uso de くらい marca grau ('a ponto de'): 泣きたいくらい嬉しい = 'feliz a ponto de querer chorar'. ぐらい também é aceito."}
+### 5. (production) Escreva em japonês: 'Estou tão feliz a ponto de querer chorar.' (use くらい e a forma 泣きたい).
+- **Resposta:** `{"text": "泣きたいくらい嬉しい", "accept": ["泣きたいくらい嬉しい", "泣きたいくらい嬉しいです", "泣きたいぐらい嬉しい", "泣きたいぐらいうれしい", "泣きたいくらいうれしいです"]}`
+- O segundo uso de くらい marca grau ('a ponto de'): 泣きたいくらい嬉しい = 'feliz a ponto de querer chorar'. ぐらい também é aceito.
 
 

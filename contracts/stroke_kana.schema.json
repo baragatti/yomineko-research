@@ -9,7 +9,8 @@
     "packing": "list",
     "glob": "corpus/strokes/kana.json",
     "stable_id_field": null,
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -21,13 +22,17 @@
       "enum": [
         "hiragana",
         "katakana"
-      ]
+      ],
+      "description": "Which script this glyph belongs to. Vocabulary owner: curated — the two kana scripts. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "curated",
+        "source": "the two kana scripts"
+      }
     },
     "license": {
       "type": "string",
-      "enum": [
-        "OFL-1.1+MIT"
-      ]
+      "minLength": 1,
+      "description": "The upstream dataset's licence identifier (see ATTRIBUTION.md). Free text: a new dataset brings a new licence, which is not a contract violation."
     },
     "shadows": {
       "type": "array",
@@ -51,10 +56,7 @@
       }
     },
     "viewbox": {
-      "type": "string",
-      "enum": [
-        "0 0 1024 1024"
-      ]
+      "type": "string"
     }
   },
   "additionalProperties": false,

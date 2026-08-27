@@ -71,28 +71,28 @@ Duas palavras muito próximas que vale separar:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa "licença / habilitação" (como a de motorista)?'}
+### 1. (recognition) Qual palavra significa "licença / habilitação" (como a de motorista)?
 - **Resposta:** `{"choices": ["免許", "毛布", "文字", "面倒"], "correct": "免許"}`
-- {'pt-BR': '免許 (めんきょ) é a habilitação oficial; 毛布 é cobertor, 文字 é letra/caractere e 面倒 é trabalheira.'}
+- 免許 (めんきょ) é a habilitação oficial; 毛布 é cobertor, 文字 é letra/caractere e 面倒 é trabalheira.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["申し込む", "inscrever-se"], ["用いる", "utilizar"], ["戻す", "devolver"], ["基づく", "basear-se em"]]}`
-- {'pt-BR': '申し込む = candidatar-se, 用いる = empregar (formal), 戻す = recolocar, 基づく = fundamentar-se em.'}
+- 申し込む = candidatar-se, 用いる = empregar (formal), 戻す = recolocar, 基づく = fundamentar-se em.
 
 
-### 3. (cloze) {'pt-BR': 'Complete "Esta pesquisa se baseia em dados reais": この研究は実際のデータに＿＿いる。'}
+### 3. (cloze) Complete "Esta pesquisa se baseia em dados reais": この研究は実際のデータに＿＿いる。
 - **Resposta:** `{"text": "基づいて", "full": "この研究は実際のデータに基づいている。"}`
-- {'pt-BR': '基づく (もとづく) pede a partícula に (データに) e, na forma te + いる, vira 基づいている ("está baseado em").'}
+- 基づく (もとづく) pede a partícula に (データに) e, na forma te + いる, vira 基づいている ("está baseado em").
 
 
-### 4. (recognition) {'pt-BR': 'Você quer dizer a meta concreta do ano (perder peso). Qual palavra usar?'}
+### 4. (recognition) Você quer dizer a meta concreta do ano (perder peso). Qual palavra usar?
 - **Resposta:** `{"choices": ["目標", "目的", "面倒", "免許"], "correct": "目標"}`
-- {'pt-BR': '目標 (もくひょう) é a meta concreta a atingir; 目的 (もくてき) seria o propósito abstrato por trás da ação.'}
+- 目標 (もくひょう) é a meta concreta a atingir; 目的 (もくてき) seria o propósito abstrato por trás da ação.
 
 
-### 5. (production) {'pt-BR': 'Diga "Inscrevi-me no curso pela internet" usando 申し込む no passado (インターネットで = pela internet, 講座 = curso).'}
+### 5. (production) Diga "Inscrevi-me no curso pela internet" usando 申し込む no passado (インターネットで = pela internet, 講座 = curso).
 - **Resposta:** `{"text": "インターネットで講座に申し込んだ", "accept": ["インターネットで講座に申し込んだ。", "インターネットで講座に申し込みました", "インターネットで講座に申し込みました。", "講座にインターネットで申し込んだ"]}`
-- {'pt-BR': '申し込む (もうしこむ) marca o alvo da inscrição com に (講座に); o passado casual é 申し込んだ.'}
+- 申し込む (もうしこむ) marca o alvo da inscrição com に (講座に); o passado casual é 申し込んだ.
 
 

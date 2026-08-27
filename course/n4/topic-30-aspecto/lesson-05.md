@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [gp-72, ta-tokoro, teiru-tokoro, tokoro] · vocabulário [天気予報, 島, 枝, 特急, 都, 駐車場] · kanji [図 室] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-ad64679f3372`, `sent:tatoeba-202898`, `sent:tatoeba-11545589`, `sent:tatoeba-157026`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-202898`, `sent:gen-ad64679f3372`, `sent:tatoeba-157026`, `sent:tatoeba-11545589`
 
 ---
 
@@ -74,7 +74,7 @@ Encadeando as três fases num dia de viagem:特急に乗るところです(estou
 #### Hora de praticar
 
 #### Leitura
-> 📖 上着を今着ているところだ。ちょうど出かけるところだ。今ここに来たところだ。今始めたところです。 — Ele está vestindo o casaco agora mesmo. "Já estou de saída." (or "Estou saindo agora mesmo."). 'Estou justamente de saída' is stiff, and the first sentence of this same reading already uses 'agora mesmo'. Acabei de chegar aqui agora. Acabei de começar agora.
+> 📖 上着を今着ているところだ。ちょうど出かけるところだ。今ここに来たところだ。今始めたところです。 — Ele está vestindo o casaco agora mesmo. Estou saindo agora mesmo. Acabei de chegar aqui agora. Acabei de começar agora.
 - Entendo que ところ marca o estágio da ação no tempo (prestes a, no meio, acabou de).
 - Uso forma do dicionário + ところだ para "estar prestes a fazer".
 - Uso 〜ているところ para "estar bem no meio de fazer".
@@ -85,33 +85,33 @@ Encadeando as três fases num dia de viagem:特急に乗るところです(estou
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual estágio da ação 〜たところ marca?'}
+### 1. (recognition) Qual estágio da ação 〜たところ marca?
 - **Resposta:** `{"choices": ["Prestes a fazer (ainda não comecei)", "Bem no meio de fazer (fazendo agora)", "Acabei de fazer (terminei agorinha)"], "correct": "Acabei de fazer (terminei agorinha)"}`
-- {'pt-BR': "〜た é o passado, então 〜たところ aponta para o instante em que a ação ACABOU de terminar: 'acabar de'. A forma do dicionário + ところ seria 'prestes a', e 〜ている + ところ seria 'no meio de'."}
+- 〜た é o passado, então 〜たところ aponta para o instante em que a ação ACABOU de terminar: 'acabar de'. A forma do dicionário + ところ seria 'prestes a', e 〜ている + ところ seria 'no meio de'.
 
 
-### 2. (recognition) {'pt-BR': 'Você ainda está com a mão na maçaneta, prestes a sair de casa. Qual frase descreve isso?'}
+### 2. (recognition) Você ainda está com a mão na maçaneta, prestes a sair de casa. Qual frase descreve isso?
 - **Resposta:** `{"choices": ["出かけたところです", "出かけているところです", "出かけるところです"], "correct": "出かけるところです"}`
-- {'pt-BR': "'Prestes a fazer' pede a forma do DICIONÁRIO + ところだ: 出かける + ところです. A versão 〜ている seria 'no meio de sair' e a 〜た seria 'acabei de sair'."}
+- 'Prestes a fazer' pede a forma do DICIONÁRIO + ところだ: 出かける + ところです. A versão 〜ている seria 'no meio de sair' e a 〜た seria 'acabei de sair'.
 
 
-### 3. (cloze) {'pt-BR': "Complete para dizer 'Acabei de chegar agora.': 今着いた＿よ。"}
+### 3. (cloze) Complete para dizer 'Acabei de chegar agora.': 今着いた＿よ。
 - **Resposta:** `{"text": "ところ", "full": "今着いたところよ"}`
-- {'pt-BR': "今 (agora) + 着いた (cheguei, passado) + ところ = 'acabei de chegar agora mesmo'. O passado 〜た antes de ところ marca a ação recém-concluída."}
+- 今 (agora) + 着いた (cheguei, passado) + ところ = 'acabei de chegar agora mesmo'. O passado 〜た antes de ところ marca a ação recém-concluída.
 - frases: `sent:tatoeba-11545589`
 
-### 4. (particle_choice) {'pt-BR': "Complete para 'Estou bem no meio de escrever uma carta.': 手紙を書い＿ところです。"}
+### 4. (particle_choice) Complete para 'Estou bem no meio de escrever uma carta.': 手紙を書い＿ところです。
 - **Resposta:** `{"choices": ["ている", "た", "る"], "correct": "ている"}`
-- {'pt-BR': "'Bem no meio de fazer' (ação em pleno andamento) pede 〜ている + ところ: 書いている + ところです. Com 〜た seria 'acabei de escrever' e com a forma do dicionário 書く seria 'prestes a escrever'."}
+- 'Bem no meio de fazer' (ação em pleno andamento) pede 〜ている + ところ: 書いている + ところです. Com 〜た seria 'acabei de escrever' e com a forma do dicionário 書く seria 'prestes a escrever'.
 - frases: `sent:tatoeba-157026`
 
-### 5. (sentence_build) {'pt-BR': "Monte 'Estou bem na hora de sair.' com as peças: [ところだ] [ちょうど] [出かける]"}
+### 5. (sentence_build) Monte 'Estou bem na hora de sair.' com as peças: [ところだ] [ちょうど] [出かける]
 - **Resposta:** `{"order": ["ちょうど", "出かける", "ところだ"], "text": "ちょうど出かけるところだ。"}`
-- {'pt-BR': "ちょうど (bem na hora) + 出かける (sair, forma do dicionário) + ところだ (estar prestes a). A forma do dicionário antes de ところ dá o sentido de 'prestes a'."}
+- ちょうど (bem na hora) + 出かける (sair, forma do dicionário) + ところだ (estar prestes a). A forma do dicionário antes de ところ dá o sentido de 'prestes a'.
 - frases: `sent:tatoeba-202898`
 
-### 6. (production) {'pt-BR': "Diga em japonês 'Acabei de chegar à capital.' usando 都 (capital), 着く (chegar) no passado e 〜たところだ."}
+### 6. (production) Diga em japonês 'Acabei de chegar à capital.' usando 都 (capital), 着く (chegar) no passado e 〜たところだ.
 - **Resposta:** `{"text": "都に着いたところだ。", "accept": ["都に着いたところだ", "都に着いたところです", "みやこに着いたところだ", "みやこについたところだ", "みやこについたところです", "都についたところです"]}`
-- {'pt-BR': "都 (capital) + に (destino) + 着いた (cheguei, passado) + ところだ/です = 'acabei de chegar à capital'. O 〜た antes de ところ marca a chegada recém-concluída."}
+- 都 (capital) + に (destino) + 着いた (cheguei, passado) + ところだ/です = 'acabei de chegar à capital'. O 〜た antes de ところ marca a chegada recém-concluída.
 
 

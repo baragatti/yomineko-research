@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-151, owaru, te-shimau-chau] · vocabulário [プレゼント, 具合, 卒業, 妻, 彼女, 負ける] · kanji [夜 悪] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-9191453`, `sent:tatoeba-228649`, `sent:tatoeba-150664`, `sent:tatoeba-234345`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-228649`, `sent:tatoeba-150664`, `sent:tatoeba-234345`, `sent:tatoeba-9191453`
 
 ---
 
@@ -80,28 +80,28 @@ Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual forma marca o FIM neutro de uma atividade que tem duração, sem tom de arrependimento (ex.: 食べ終わる)?'}
+### 1. (recognition) Qual forma marca o FIM neutro de uma atividade que tem duração, sem tom de arrependimento (ex.: 食べ終わる)?
 - **Resposta:** `{"choices": ["〜終わる (おわる)", "〜てしまう", "〜ちゃう"], "correct": "〜終わる (おわる)"}`
-- {'pt-BR': "〜終わる cola na raiz do verbo e diz só que a ação acabou (食べ終わる = terminar de comer). 〜てしまう e sua contração 〜ちゃう acrescentam 'de vez' ou um tom de algo indesejado."}
+- 〜終わる cola na raiz do verbo e diz só que a ação acabou (食べ終わる = terminar de comer). 〜てしまう e sua contração 〜ちゃう acrescentam 'de vez' ou um tom de algo indesejado.
 
 
-### 2. (recognition) {'pt-BR': 'Em バスが行ってしまった (o ônibus foi embora), qual é o sentido de 〜てしまう aqui?'}
+### 2. (recognition) Em バスが行ってしまった (o ônibus foi embora), qual é o sentido de 〜てしまう aqui?
 - **Resposta:** `{"choices": ["Algo indesejado / lamentável aconteceu", "A pessoa terminou de propósito uma tarefa", "O ônibus está prestes a chegar"], "correct": "Algo indesejado / lamentável aconteceu"}`
-- {'pt-BR': "O ônibus foi embora e não dá mais para pegá-lo: é o sentido de arrependimento/acidente de 〜てしまう, aquele 'que pena' embutido. O outro sentido (conclusão total) aparece em coisas como 宿題をしてしまった."}
+- O ônibus foi embora e não dá mais para pegá-lo: é o sentido de arrependimento/acidente de 〜てしまう, aquele 'que pena' embutido. O outro sentido (conclusão total) aparece em coisas como 宿題をしてしまった.
 - frases: `sent:tatoeba-234345`
 
-### 3. (cloze) {'pt-BR': 'Complete com a CONTRAÇÃO coloquial de 飲んでしまった: ぜんぶ＿。 (Acabei bebendo tudo.)'}
+### 3. (cloze) Complete com a CONTRAÇÃO coloquial de 飲んでしまった: ぜんぶ＿。 (Acabei bebendo tudo.)
 - **Resposta:** `{"text": "飲んじゃった", "full": "ぜんぶ飲んじゃった"}`
-- {'pt-BR': 'でしまう vira じゃう, então 飲んでしまった encolhe para 飲んじゃった na fala casual. Verbos cuja forma て é て usam ちゃう (食べちゃう); os de で usam じゃう.'}
+- でしまう vira じゃう, então 飲んでしまった encolhe para 飲んじゃった na fala casual. Verbos cuja forma て é て usam ちゃう (食べちゃう); os de で usam じゃう.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Terminei de ler este livro.' com as peças: [読み終わった] [本] [この] [を]"}
+### 4. (sentence_build) Monte 'Terminei de ler este livro.' com as peças: [読み終わった] [本] [この] [を]
 - **Resposta:** `{"order": ["この", "本", "を", "読み終わった"], "text": "この本を読み終わった。"}`
-- {'pt-BR': 'この本 (este livro) + を (objeto) + 読み終わった (terminei de ler). 〜終わる cola na raiz 読み- e marca o fim da leitura.'}
+- この本 (este livro) + を (objeto) + 読み終わった (terminei de ler). 〜終わる cola na raiz 読み- e marca o fim da leitura.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Acabamos perdendo (a partida).' usando 負ける (perder) com 〜てしまう no passado, para mostrar o lamento."}
+### 5. (production) Diga em japonês 'Acabamos perdendo (a partida).' usando 負ける (perder) com 〜てしまう no passado, para mostrar o lamento.
 - **Resposta:** `{"text": "負けてしまった。", "accept": ["負けてしまった", "負けてしまいました", "まけてしまった", "負けちゃった", "まけちゃった"]}`
-- {'pt-BR': '負ける → forma て 負けて + しまった = 負けてしまった (acabamos perdendo, que pena). Na fala vira 負けちゃった. O 〜てしまう aqui carrega o tom de algo indesejado.'}
+- 負ける → forma て 負けて + しまった = 負けてしまった (acabamos perdendo, que pena). Na fala vira 負けちゃった. O 〜てしまう aqui carrega o tom de algo indesejado.
 
 

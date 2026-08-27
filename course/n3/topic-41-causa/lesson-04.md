@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-da-mono-da, n3-nda-mon] · vocabulário [会合, 回復, 外交, 外出, 快適, 抱える, 改善, 替える, 画家, 解釈, 開始, 飼う, 香り] · kanji [争 必 歳 演 能 談] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-161057`, `sent:tatoeba-10107238`
 
 ---
 
@@ -59,28 +59,28 @@ Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pod
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Em qual situação ～んだもん é adequado?'}
+### 1. (recognition) Em qual situação ～んだもん é adequado?
 - **Resposta:** `{"choices": ["Conversa entre amigos próximos ou casais", "Apresentação formal no trabalho", "Carta oficial a um cliente"], "correct": "Conversa entre amigos próximos ou casais"}`
-- {'pt-BR': '～んだもん é bem coloquial e emotivo, comum entre crianças, casais e amigos íntimos. Soa deslocado em qualquer contexto formal ou profissional.'}
+- ～んだもん é bem coloquial e emotivo, comum entre crianças, casais e amigos íntimos. Soa deslocado em qualquer contexto formal ou profissional.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete a justificativa manhosa: だって知らなかった＿＿＿＿。 (É que eu não sabia, oras!)'}
+### 2. (particle_choice) Complete a justificativa manhosa: だって知らなかった＿＿＿＿。 (É que eu não sabia, oras!)
 - **Resposta:** `{"choices": ["んだもん", "によって", "その結果"], "correct": "んだもん"}`
-- {'pt-BR': "～んだもん dá uma justificativa emotiva e infantilizada; combina com o だって inicial ('é que...'). によって e その結果 são conectores formais."}
+- ～んだもん dá uma justificativa emotiva e infantilizada; combina com o だって inicial ('é que...'). によって e その結果 são conectores formais.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a forma com ん: もう帰りたい。疲れた＿＿＿＿＿。 (Já quero ir embora. É que estou cansado, sabe.)'}
+### 3. (cloze) Complete com a forma com ん: もう帰りたい。疲れた＿＿＿＿＿。 (Já quero ir embora. É que estou cansado, sabe.)
 - **Resposta:** `{"text": "んだもの", "full": "疲れたんだもの。"}`
-- {'pt-BR': 'Verbo na forma simples (疲れた) + んだもの dá a justificativa subjetiva e queixosa. A variante んだもん seria ainda mais coloquial.'}
+- Verbo na forma simples (疲れた) + んだもの dá a justificativa subjetiva e queixosa. A variante んだもん seria ainda mais coloquial.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada justificativa ao seu registro.'}
+### 4. (matching) Associe cada justificativa ao seu registro.
 - **Resposta:** `{"pairs": [["から", "motivo neutro"], ["んだもん", "manha / autodefesa íntima"], ["ので", "motivo educado"]]}`
-- {'pt-BR': 'から é o motivo bruto e neutro; ので soa mais educado; んだもん carrega birra e charme, só para situações íntimas.'}
+- から é o motivo bruto e neutro; ので soa mais educado; んだもん carrega birra e charme, só para situações íntimas.
 
 
-### 5. (production) {'pt-BR': "Uma criança justifica por que não quer comer, com manha: 'É que não gosto, oras!' (use ～んだもん; não gostar = 嫌い きらい)"}
+### 5. (production) Uma criança justifica por que não quer comer, com manha: 'É que não gosto, oras!' (use ～んだもん; não gostar = 嫌い きらい)
 - **Resposta:** `{"text": "だって嫌いなんだもん。", "accept": ["だって嫌いなんだもん", "嫌いなんだもん", "だって嫌いなんだもの"]}`
-- {'pt-BR': "Adjetivo-na (嫌い) + な + んだもん dá o tom infantil e manhoso. O だって inicial ('é que...') combina perfeitamente com essa justificativa afetiva."}
+- Adjetivo-na (嫌い) + な + んだもん dá o tom infantil e manhoso. O だって inicial ('é que...') combina perfeitamente com essa justificativa afetiva.
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:about_you",
   "order": 3,
   "title": {
-    "pt-BR": "Falar de você — parte 3"
+    "pt-BR": "Falar de você, parte 3"
   },
   "say_now": [
     "sent:tatoeba-189285",
@@ -33,7 +33,8 @@
   "patterns": [
     "gram:deshou",
     "gram:mashou",
-    "gram:gp-105"
+    "gram:gp-105",
+    "gram:gp-45"
   ],
   "kanji_recognition": [
     "映",
@@ -56,6 +57,108 @@
   "cumulative_known_vocab": 290,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-77",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mashou",
+      "examples": [
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-200934"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-105",
+      "examples": [
+        "sent:tatoeba-218501",
+        "sent:tatoeba-188156",
+        "sent:tatoeba-189203"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-45",
+      "examples": [
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221",
+        "sent:tatoeba-78583"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O veterano ainda estava na empresa.",
+      "answer_key": "先輩がまだ会社にいました",
+      "accepted_variants": [
+        "せんぱいがまだかいしゃにいました",
+        "先輩がまだ会社にいました"
+      ],
+      "sentence": "sent:jec-1094",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Para alguém tão jovem, ele fez um trabalho muito bom.",
+      "answer_key": "彼は若いわりにはとてもいい仕事をした。",
+      "accepted_variants": [
+        "かれわわかいわりにわとてもいいしごとをした",
+        "かれわわかいわりにわとてもいいしごとをした。",
+        "彼は若いわりにはとてもいい仕事をした",
+        "彼は若いわりにはとてもいい仕事をした。"
+      ],
+      "sentence": "sent:tatoeba-104573",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças (SP).",
+      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
+      "accepted_variants": [
+        "えすぴーのしごとのようすがきょうてれびでほうそうされました",
+        "ＳＰの仕事の様子が今日テレビで放送されました"
+      ],
+      "sentence": "sent:jec-4753",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-11386733",
+      "sent:tatoeba-9553773",
+      "sent:tatoeba-172198",
+      "sent:jec-0320",
+      "sent:tatoeba-184254",
+      "sent:tatoeba-84568"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "cf:n3:197:2762",
@@ -97,95 +200,5 @@
         "テーブル"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-153",
-    "gram:gp-77",
-    "gram:gp-128"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:deshou",
-      "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:mashou",
-      "examples": [
-        "sent:tatoeba-139208",
-        "sent:tatoeba-173392",
-        "sent:tatoeba-200934"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-105",
-      "examples": [
-        "sent:tatoeba-218501",
-        "sent:tatoeba-188156",
-        "sent:tatoeba-189203"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O veterano ainda estava na empresa.",
-      "answer_key": "先輩がまだ会社にいました",
-      "accepted_variants": [
-        "先輩がまだ会社にいました"
-      ],
-      "sentence": "sent:jec-1094",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Para alguém tão jovem, ele fez um trabalho muito bom.",
-      "answer_key": "彼は若いわりにはとてもいい仕事をした。",
-      "accepted_variants": [
-        "彼は若いわりにはとてもいい仕事をした",
-        "彼は若いわりにはとてもいい仕事をした。"
-      ],
-      "sentence": "sent:tatoeba-104573",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças (SP).",
-      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
-      "accepted_variants": [
-        "ＳＰの仕事の様子が今日テレビで放送されました"
-      ],
-      "sentence": "sent:jec-4753",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
-    "items": [
-      "sent:tatoeba-11386733",
-      "sent:tatoeba-9553773",
-      "sent:tatoeba-172198",
-      "sent:jec-0320",
-      "sent:tatoeba-184254",
-      "sent:tatoeba-84568"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  }
+  ]
 }

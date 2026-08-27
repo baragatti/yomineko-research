@@ -60,28 +60,28 @@ Dica: ユーモア (humor, graça) tem quatro batidas: ユ-ー-モ-ア, e o ー 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'excelente, brilhante'?"}
+### 1. (recognition) Qual palavra significa 'excelente, brilhante'?
 - **Resposta:** `{"choices": ["優秀", "優勝", "有利", "勇気"], "correct": "優秀"}`
-- {'pt-BR': '優秀 (ゆうしゅう) descreve algo ou alguém de qualidade superior. 優勝 é conquistar o título, 有利 é vantajoso e 勇気 é coragem.'}
+- 優秀 (ゆうしゅう) descreve algo ou alguém de qualidade superior. 優勝 é conquistar o título, 有利 é vantajoso e 勇気 é coragem.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["友情", "amizade"], ["勇気", "coragem"], ["愉快", "divertido"], ["夜明け", "amanhecer"]]}`
-- {'pt-BR': '友情 é o sentimento de amizade, 勇気 é coragem, 愉快 é agradável/divertido e 夜明け é o raiar do dia.'}
+- 友情 é o sentimento de amizade, 勇気 é coragem, 愉快 é agradável/divertido e 夜明け é o raiar do dia.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'No trem, cedi o lugar para um idoso': 電車で年寄りに席を＿＿。"}
+### 3. (cloze) Complete 'No trem, cedi o lugar para um idoso': 電車で年寄りに席を＿＿。
 - **Resposta:** `{"text": "譲った", "full": "電車で年寄りに席を譲った。"}`
-- {'pt-BR': '譲る (ゆずる) é ceder/entregar; no passado vira 譲った. Aqui é ceder o assento a alguém.'}
+- 譲る (ゆずる) é ceder/entregar; no passado vira 譲った. Aqui é ceder o assento a alguém.
 
 
-### 4. (recognition) {'pt-BR': "Você quer dizer a um convidado para ir 'com calma, sem pressa'. Qual palavra usar?"}
+### 4. (recognition) Você quer dizer a um convidado para ir 'com calma, sem pressa'. Qual palavra usar?
 - **Resposta:** `{"choices": ["ゆっくり", "唯一", "有能", "豊か"], "correct": "ゆっくり"}`
-- {'pt-BR': "ゆっくり significa devagar/sem pressa. 唯一 é 'único', 有能 é 'competente' e 豊か é 'abundante'."}
+- ゆっくり significa devagar/sem pressa. 唯一 é 'único', 有能 é 'competente' e 豊か é 'abundante'.
 
 
-### 5. (production) {'pt-BR': "Diga 'Conversar com gente bem-humorada é divertido' usando ユーモア e 愉快 (conversar = 話す)."}
+### 5. (production) Diga 'Conversar com gente bem-humorada é divertido' usando ユーモア e 愉快 (conversar = 話す).
 - **Resposta:** `{"text": "ユーモアのある人と話すのは愉快だ", "accept": ["ユーモアのある人と話すのは愉快だ。", "ユーモアのある人と話すのは愉快です", "ユーモアのある人と話すのは愉快です。"]}`
-- {'pt-BR': "ユーモアのある人 é 'pessoa com humor' e 愉快だ fecha a ideia de algo prazeroso/divertido."}
+- ユーモアのある人 é 'pessoa com humor' e 愉快だ fecha a ideia de algo prazeroso/divertido.
 
 

@@ -79,28 +79,28 @@ Não traduza "vezes" e "anos" como palavras soltas. Em japonês eles são sufixo
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual contador você usa para contar LIVROS e revistas?'}
+### 1. (recognition) Qual contador você usa para contar LIVROS e revistas?
 - **Resposta:** `{"choices": ["個 (こ)", "冊 (さつ)", "階 (かい)"], "correct": "冊 (さつ)"}`
-- {'pt-BR': '冊 (さつ) conta material de leitura: livros, revistas, cadernos. 個 é para coisas pequenas em geral e 階 é para andares.'}
+- 冊 (さつ) conta material de leitura: livros, revistas, cadernos. 個 é para coisas pequenas em geral e 階 é para andares.
 
 
-### 2. (recognition) {'pt-BR': 'Como se lê 三階 (terceiro andar)? Cuidado com a mudança de som.'}
+### 2. (recognition) Como se lê 三階 (terceiro andar)? Cuidado com a mudança de som.
 - **Resposta:** `{"choices": ["さんかい (sankai)", "さんがい (sangai)", "みかい (mikai)"], "correct": "さんがい (sangai)"}`
-- {'pt-BR': 'Com 三, o som de 階 muda de かい para がい: 三階 = さんがい. É uma das irregularidades de pronúncia mais comuns dos contadores.'}
+- Com 三, o som de 階 muda de かい para がい: 三階 = さんがい. É uma das irregularidades de pronúncia mais comuns dos contadores.
 
 
-### 3. (cloze) {'pt-BR': "Complete com o contador de IDADE: 五＿ significa 'cinco anos de idade'."}
+### 3. (cloze) Complete com o contador de IDADE: 五＿ significa 'cinco anos de idade'.
 - **Resposta:** `{"text": "歳", "full": "五歳"}`
-- {'pt-BR': "歳 (さい) é o contador de idade. 五歳 = ごさい = 'cinco anos de idade'. O contador gruda direto no número."}
+- 歳 (さい) é o contador de idade. 五歳 = ごさい = 'cinco anos de idade'. O contador gruda direto no número.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'três maçãs' com as peças: [三] [りんご] [個]"}
+### 4. (sentence_build) Monte 'três maçãs' com as peças: [三] [りんご] [個]
 - **Resposta:** `{"order": ["りんご", "三", "個"], "text": "りんご三個"}`
-- {'pt-BR': 'Primeiro a coisa contada (りんご, maçã), depois número + contador colados: 三個 (さんこ). O molde é sempre número + contador.'}
+- Primeiro a coisa contada (りんご, maçã), depois número + contador colados: 三個 (さんこ). O molde é sempre número + contador.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'duas vezes' usando o número 二 e o contador de ocorrências."}
+### 5. (production) Diga em japonês 'duas vezes' usando o número 二 e o contador de ocorrências.
 - **Resposta:** `{"text": "二回", "accept": ["二回", "にかい", "2回"]}`
-- {'pt-BR': "二 (dois) + 回 (かい, contador de vezes) = 二回 (にかい), 'duas vezes'. Lembre que 回 conta ocorrências, não objetos."}
+- 二 (dois) + 回 (かい, contador de vezes) = 二回 (にかい), 'duas vezes'. Lembre que 回 conta ocorrências, não objetos.
 
 

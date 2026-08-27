@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-you-ni, n3-you-ni-2, n3-you-ni-3] · vocabulário [刈る, 完了, 完全, 完成, 気候, 気温, 皮, 缶, 観光, 観客, 観察, 革] · kanji [害 消 石 神 術 警 違] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-83924`, `sent:tatoeba-84519`
 
 ---
 
@@ -77,28 +77,28 @@ Armadilha PT: palavras como 観光 (かんこう) têm DUAS coisas de duração 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase diz 'estudo todo dia para conseguir falar inglês' (resultado que não se controla direto)?"}
+### 1. (recognition) Qual frase diz 'estudo todo dia para conseguir falar inglês' (resultado que não se controla direto)?
 - **Resposta:** `{"choices": ["英語が話せるように毎日勉強する", "英語を話すために毎日勉強する", "英語を話そうように毎日勉強する", "英語が話せるために毎日勉強する"], "correct": "英語が話せるように毎日勉強する"}`
-- {'pt-BR': "Com o potencial 話せる ('conseguir falar'), que é um resultado não controlado, usa-se ように. ために pediria uma ação controlada; e a volitiva 話そう nunca aparece antes de ように."}
+- Com o potencial 話せる ('conseguir falar'), que é um resultado não controlado, usa-se ように. ために pediria uma ação controlada; e a volitiva 話そう nunca aparece antes de ように.
 
 
-### 2. (particle_choice) {'pt-BR': "Comparação 'ele canta como um pássaro': 彼は鳥＿ように歌う。 Qual partícula falta antes de ように?"}
+### 2. (particle_choice) Comparação 'ele canta como um pássaro': 彼は鳥＿ように歌う。 Qual partícula falta antes de ように?
 - **Resposta:** `{"choices": ["の", "に", "と", "が"], "correct": "の"}`
-- {'pt-BR': "Comparação com substantivo exige の: 鳥のように = 'como um pássaro'. Esquecer o の é o erro mais comum desse uso de ように."}
+- Comparação com substantivo exige の: 鳥のように = 'como um pássaro'. Esquecer o の é o erro mais comum desse uso de ように.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'explique de modo que fique fácil de entender': 分かりやすい___説明してください。"}
+### 3. (cloze) Complete 'explique de modo que fique fácil de entender': 分かりやすい___説明してください。
 - **Resposta:** `{"text": "ように", "full": "分かりやすいように説明してください"}`
-- {'pt-BR': "No sentido de MODO ('de um jeito que'), o adjetivo-い 分かりやすい liga-se direto a ように. A frase pede que a explicação seja feita de uma maneira clara."}
+- No sentido de MODO ('de um jeito que'), o adjetivo-い 分かりやすい liga-se direto a ように. A frase pede que a explicação seja feita de uma maneira clara.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada uso de ように ao seu sentido.'}
+### 4. (matching) Ligue cada uso de ように ao seu sentido.
 - **Resposta:** `{"pairs": [["話せるように", "finalidade ('para que eu consiga')"], ["分かりやすいように", "modo ('de um jeito que')"], ["鳥のように", "comparação ('como um pássaro')"]]}`
-- {'pt-BR': 'O mesmo ように cobre finalidade (com potencial/なる), modo (com adjetivo ou verbo de maneira) e comparação (com substantivo + の). O contexto decide qual leitura vale.'}
+- O mesmo ように cobre finalidade (com potencial/なる), modo (com adjetivo ou verbo de maneira) e comparação (com substantivo + の). O contexto decide qual leitura vale.
 
 
-### 5. (production) {'pt-BR': "Diga 'estudo todo dia para conseguir ler kanji' usando 〜ように com o potencial. (漢字 = kanji, 読める = conseguir ler, 毎日 = todo dia, 勉強する = estudar)"}
+### 5. (production) Diga 'estudo todo dia para conseguir ler kanji' usando 〜ように com o potencial. (漢字 = kanji, 読める = conseguir ler, 毎日 = todo dia, 勉強する = estudar)
 - **Resposta:** `{"text": "漢字が読めるように毎日勉強する", "accept": ["漢字が読めるように毎日勉強する。", "かんじがよめるようにまいにちべんきょうする", "漢字が読めるように毎日勉強します"]}`
-- {'pt-BR': "O potencial 読める ('conseguir ler') é um resultado não controlado, então usa-se ように (não ために). O alvo do potencial leva が: 漢字が読めるように. Depois vem 毎日勉強する."}
+- O potencial 読める ('conseguir ler') é um resultado não controlado, então usa-se ように (não ために). O alvo do potencial leva が: 漢字が読めるように. Depois vem 毎日勉強する.
 
 

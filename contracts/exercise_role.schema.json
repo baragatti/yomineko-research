@@ -9,7 +9,8 @@
     "packing": "list",
     "glob": "corpus/exercises/roles/*.json",
     "stable_id_field": "id",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -20,7 +21,9 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "minItems": 2,
+      "uniqueItems": true
     },
     "id": {
       "$ref": "common.schema.json#/$defs/StableId"
@@ -38,18 +41,14 @@
       "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
     },
     "particle": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "から",
-        "が",
-        "の",
-        "は",
-        "へ",
-        "を",
-        null
+      "anyOf": [
+        {
+          "type": "string",
+          "description": "The particle that pins the asked-about role, when one does."
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "prompt": {
@@ -65,7 +64,12 @@
         "predicate",
         "subject",
         "topic"
-      ]
+      ],
+      "description": "Which sentence role the drill asks about. Vocabulary owner: producer — scripts/export/build_role_exercises.py ASKABLE. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "producer",
+        "source": "scripts/export/build_role_exercises.py ASKABLE"
+      }
     },
     "sentence": {
       "type": "string"

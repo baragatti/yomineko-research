@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-ni-shite-wa, n3-ni-shitemo, n3-wari-ni-wa] · vocabulário [サイン, 作物, 去る, 参加, 境, 左右, 指す, 桜, 氏, 猿, 盛り, 裁判, 酸素, 際] · kanji [勤 幸 庭 徒 留 等 老 静] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-234998`, `sent:tatoeba-87583`
 
 ---
 
@@ -85,33 +85,33 @@ O 桜 (flor de cerejeira) tem o seu 盛り ('auge') por poucos dias na primavera
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase significa 'Para iniciante, ele é muito bom' (surpresa contra um padrão concreto)?"}
+### 1. (recognition) Qual frase significa 'Para iniciante, ele é muito bom' (surpresa contra um padrão concreto)?
 - **Resposta:** `{"choices": ["初心者にしては上手だ", "初心者にしても上手だ", "初心者というより上手だ"], "correct": "初心者にしては上手だ"}`
-- {'pt-BR': "にしては marca surpresa contra uma base concreta ('para iniciante'). にしても seria concessivo ('mesmo sendo iniciante') e というより trocaria o rótulo, mudando o sentido."}
+- にしては marca surpresa contra uma base concreta ('para iniciante'). にしても seria concessivo ('mesmo sendo iniciante') e というより trocaria o rótulo, mudando o sentido.
 
 
-### 2. (particle_choice) {'pt-BR': "Complete: 'Mesmo que chova, vou para a escola.' 雨が降る____学校へ行く。"}
+### 2. (particle_choice) Complete: 'Mesmo que chova, vou para a escola.' 雨が降る____学校へ行く。
 - **Resposta:** `{"choices": ["にしては", "にしても", "わりには", "かわりに"], "correct": "にしても"}`
-- {'pt-BR': "にしても é concessivo e cobre hipóteses ('mesmo que chova'). にしては marcaria surpresa contra um padrão, e わりには marcaria desproporção; nenhum dos dois encaixa aqui."}
+- にしても é concessivo e cobre hipóteses ('mesmo que chova'). にしては marcaria surpresa contra um padrão, e わりには marcaria desproporção; nenhum dos dois encaixa aqui.
 
 
-### 3. (cloze) {'pt-BR': "Complete com a partícula obrigatória: 'Para o preço, é gostoso.' 値段___わりには美味しい。"}
+### 3. (cloze) Complete com a partícula obrigatória: 'Para o preço, é gostoso.' 値段___わりには美味しい。
 - **Resposta:** `{"text": "の", "full": "値段のわりには美味しい"}`
-- {'pt-BR': "Depois de substantivo, 〜わりには pede の: 値段のわりには ('para o preço que custa'). わりには foca na desproporção entre a expectativa (o preço) e o resultado (o sabor)."}
+- Depois de substantivo, 〜わりには pede の: 値段のわりには ('para o preço que custa'). わりには foca na desproporção entre a expectativa (o preço) e o resultado (o sabor).
 
 
-### 4. (matching) {'pt-BR': 'Associe cada estrutura ao seu uso:'}
+### 4. (matching) Associe cada estrutura ao seu uso:
 - **Resposta:** `{"pairs": [["〜にしては", "surpresa contra base concreta (para iniciante...)"], ["〜にしても", "concessivo (mesmo que / mesmo assim)"], ["〜わりには", "desproporção (para o que se esperava)"], ["のに", "apesar de, com frustração"]]}`
-- {'pt-BR': "にしては exige base concreta e nomeada; にしても é concessivo e cobre hipóteses e fatos; わりには foca na desproporção sem frustração; のに é 'apesar de' e pode carregar frustração."}
+- にしては exige base concreta e nomeada; にしても é concessivo e cobre hipóteses e fatos; わりには foca na desproporção sem frustração; のに é 'apesar de' e pode carregar frustração.
 
 
-### 5. (sentence_build) {'pt-BR': "Monte 'Para alguém que não estuda, vai bem demais (nas notas).' com as peças: [成績がいい] [わりには] [勉強しない]"}
+### 5. (sentence_build) Monte 'Para alguém que não estuda, vai bem demais (nas notas).' com as peças: [成績がいい] [わりには] [勉強しない]
 - **Resposta:** `{"order": ["勉強しない", "わりには", "成績がいい"], "text": "勉強しない割には成績がいい"}`
-- {'pt-BR': "勉強しない ('não estuda') + わりには ('para o que se esperava') + 成績がいい ('as notas são boas'). わりには marca a desproporção: dado que não estuda, surpreende ir tão bem."}
+- 勉強しない ('não estuda') + わりには ('para o que se esperava') + 成績がいい ('as notas são boas'). わりには marca a desproporção: dado que não estuda, surpreende ir tão bem.
 
 
-### 6. (production) {'pt-BR': "Diga 'Para a idade, ela parece jovem.' usando 〜わりには. (idade = 年, parecer jovem = 若く見える)"}
-- **Resposta:** `{"text": "年のわりには若く見える", "accept": ["としのわりにはわかくみえる", "年の割には若く見える", "年のわりに若く見える"]}`
-- {'pt-BR': "年 (substantivo) + のわりには ('para a idade') + 若く見える ('parece jovem'). Lembre-se do の depois do substantivo; a estrutura marca a desproporção entre a idade e a aparência."}
+### 6. (production) Diga 'Para a idade, ela parece jovem.' usando 〜わりには. (idade = 年, parecer jovem = 若く見える)
+- **Resposta:** `{"text": "年のわりには若く見える", "accept": ["年のわりには若く見える", "としのわりにはわかくみえる", "年の割には若く見える", "年のわりに若く見える"]}`
+- 年 (substantivo) + のわりには ('para a idade') + 若く見える ('parece jovem'). Lembre-se do の depois do substantivo; a estrutura marca a desproporção entre a idade e a aparência.
 
 

@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [gp-69, gp-81, gp-88, gp-95, gp-96, sonna-ni] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-159348`, `sent:tatoeba-3506554`, `sent:tatoeba-81647`, `sent:tatoeba-203977`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-159348`, `sent:tatoeba-81647`, `sent:tatoeba-203977`, `sent:tatoeba-3506554`
 
 ---
 
@@ -52,7 +52,7 @@ Aqui a forma adverbial 〜く de um adjetivo-い recebe a partícula は de tóp
 Repare na construção:悪い("ruim") vira 悪く, entra o は, e fecha com ない. O そう reforça o "tão assim". É bem mais macio que dizer só 悪くない.
 
 > **[l1-pitfall]**
-O は entra no meio, entre o 〜く e o ない. Veja o molde, com as peças separadas: 高くはない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
+O は entra no meio, entre o 〜く e o ない. Veja o molde, com as peças separadas: 高く は ない. Não é o は de tópico no começo da frase; é um は de contraste embutido na própria negação.
 
 > **[example]**
 Juntando tudo num minirretrato de mudança:最近ずっと勉強して、とうとう日本語がだいたい分かるようになった= "Ultimamente estudei o tempo todo e, por fim, passei a entender japonês mais ou menos".
@@ -71,28 +71,28 @@ Juntando tudo num minirretrato de mudança:最近ずっと勉強して、とう�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Na frase 本はほとんどない。 ('Quase não há livros.'), por que ほとんど significa 'quase nada' e não 'quase tudo'?"}
+### 1. (recognition) Na frase 本はほとんどない。 ('Quase não há livros.'), por que ほとんど significa 'quase nada' e não 'quase tudo'?
 - **Resposta:** `{"choices": ["Porque o verbo está na negativa (ない)", "Porque ほとんど só significa 'quase nada'", "Porque 本 (livros) é incontável"], "correct": "Porque o verbo está na negativa (ない)"}`
-- {'pt-BR': "ほとんど muda de lado conforme o verbo: com verbo afirmativo = 'quase todo'; com verbo negativo (ない) = 'quase nada'. É o ない que puxa o sentido para 'quase nada'."}
+- ほとんど muda de lado conforme o verbo: com verbo afirmativo = 'quase todo'; com verbo negativo (ない) = 'quase nada'. É o ない que puxa o sentido para 'quase nada'.
 - frases: `sent:tatoeba-81647`
 
-### 2. (cloze) {'pt-BR': "Complete com o advérbio de estimativa ('mais ou menos'): ＿６時です。 (São mais ou menos seis horas.)"}
+### 2. (cloze) Complete com o advérbio de estimativa ('mais ou menos'): ＿６時です。 (São mais ou menos seis horas.)
 - **Resposta:** `{"text": "だいたい", "full": "だいたい６時です"}`
-- {'pt-BR': "だいたい significa 'mais ou menos / aproximadamente'. Você o usa quando não quer dar um número cravado, como na hora estimada."}
+- だいたい significa 'mais ou menos / aproximadamente'. Você o usa quando não quer dar um número cravado, como na hora estimada.
 - frases: `sent:tatoeba-203977`
 
-### 3. (particle_choice) {'pt-BR': "Para suavizar a negação 'não é tão ruim assim' (そう悪く＿ない), qual partícula entra entre 悪く e ない?"}
+### 3. (particle_choice) Para suavizar a negação 'não é tão ruim assim' (そう悪く＿ない), qual partícula entra entre 悪く e ない?
 - **Resposta:** `{"choices": ["は", "が", "を"], "correct": "は"}`
-- {'pt-BR': "A negação branda 〜くはない insere o は de contraste entre a forma adverbial 〜く e ない: 悪く + は + ない. Fica 'ruim, propriamente, não é'."}
+- A negação branda 〜くはない insere o は de contraste entre a forma adverbial 〜く e ない: 悪く + は + ない. Fica 'ruim, propriamente, não é'.
 - frases: `sent:tatoeba-3506554`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Eu finalmente parei de fumar.' com as peças: [やめた] [私は] [とうとう] [タバコを]"}
+### 4. (sentence_build) Monte 'Eu finalmente parei de fumar.' com as peças: [やめた] [私は] [とうとう] [タバコを]
 - **Resposta:** `{"order": ["私は", "とうとう", "タバコを", "やめた"], "text": "私はとうとうタバコをやめた。"}`
-- {'pt-BR': '私は (eu, tópico) + とうとう (finalmente, marcando o desfecho de um processo longo) + タバコを (cigarro, objeto) + やめた (parei). とうとう vem antes do verbo que descreve o desfecho.'}
+- 私は (eu, tópico) + とうとう (finalmente, marcando o desfecho de um processo longo) + タバコを (cigarro, objeto) + やめた (parei). とうとう vem antes do verbo que descreve o desfecho.
 - frases: `sent:tatoeba-159348`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Hoje estou me sentindo muito melhor' usando 今日 (hoje), ずっと (muito mais) e 気分がいい (estar bem de ânimo). Forma casual."}
+### 5. (production) Diga em japonês 'Hoje estou me sentindo muito melhor' usando 今日 (hoje), ずっと (muito mais) e 気分がいい (estar bem de ânimo). Forma casual.
 - **Resposta:** `{"text": "今日はずっと気分がいい。", "accept": ["今日はずっと気分がいい", "きょうはずっときぶんがいい", "今日はずっと気分がよい", "きょうはずっときぶんがよい"]}`
-- {'pt-BR': "今日は (hoje, tópico) + ずっと (muito mais, reforçando a comparação) + 気分がいい (sentir-se bem). Aqui ずっと não é 'o tempo todo': é o segundo uso, 'bem mais (que antes)'."}
+- 今日は (hoje, tópico) + ずっと (muito mais, reforçando a comparação) + 気分がいい (sentir-se bem). Aqui ずっと não é 'o tempo todo': é o segundo uso, 'bem mais (que antes)'.
 
 

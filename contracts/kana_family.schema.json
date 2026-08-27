@@ -2,22 +2,59 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://yomineko.dev/contracts/kana_family.schema.json",
   "title": "kana_family",
-  "description": "The kana chart as ordered groups. Keyed by script, so unlike the capability map its keys are a fixed enum rather than stable IDs — which is why the two map-packed files cannot share one generated shape.",
+  "description": "The kana chart as ordered groups. Keyed by script, so unlike the capability map its keys are a fixed enum rather than stable IDs — which is why the two map-packed files cannot share one generated shape. The script is not just a label: every id under `hiragana` must be a hiragana id, and the per-script patternProperties below are what ties the two together, so a katakana glyph filed under the wrong script fails instead of validating.",
   "x-yomineko": {
     "entity": "kana_family",
     "packing": "map",
     "glob": "corpus/kana/families.json",
     "key_namespace": null,
-    "stable_id_field": null
+    "stable_id_field": null,
+    "declares": ["*[].id"],
+    "note": "The GROUP ids (kana:hiragana-a) are declared here and nowhere else. The MEMBER ids are not: every one of them is a record in corpus/kana/, so members[].id is a reference the graph check resolves."
   },
   "type": "object",
   "propertyNames": { "enum": ["hiragana", "katakana"] },
   "required": ["hiragana", "katakana"],
-  "additionalProperties": {
-    "type": "array",
-    "minItems": 1,
-    "items": {
+  "patternProperties": {
+    "^hiragana$": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/group" },
+          {
+            "properties": {
+              "id": { "pattern": "^kana:hiragana-" },
+              "members": { "items": { "properties": { "id": { "pattern": "^kana:hiragana-" } } } }
+            }
+          }
+        ]
+      }
+    },
+    "^katakana$": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/group" },
+          {
+            "properties": {
+              "id": { "pattern": "^kana:katakana-" },
+              "members": { "items": { "properties": { "id": { "pattern": "^kana:katakana-" } } } }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": false,
+
+  "$defs": {
+    "group": {
       "type": "object",
+      "description": "One row of the chart — か行, the dakuten row, the yoon set — in teaching order.",
       "properties": {
         "id": { "$ref": "common.schema.json#/$defs/StableId", "pattern": "^kana:" },
         "label": { "$ref": "common.schema.json#/$defs/LocaleText" },
@@ -31,6 +68,7 @@
         "members": {
           "type": "array",
           "minItems": 1,
+          "uniqueItems": true,
           "items": {
             "type": "object",
             "properties": {

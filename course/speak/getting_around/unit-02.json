@@ -4,7 +4,7 @@
   "stage": "speak:getting_around",
   "order": 2,
   "title": {
-    "pt-BR": "Chegar aonde você quer — parte 2"
+    "pt-BR": "Chegar aonde você quer, parte 2"
   },
   "say_now": [
     "sent:tatoeba-84645",
@@ -55,6 +55,96 @@
   "cumulative_known_vocab": 163,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-77",
+    "gram:you-ni-you-na",
+    "gram:wa-yori-desu",
+    "gram:gp-3"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-122",
+      "examples": [
+        "sent:gen-8a3363848885",
+        "sent:tatoeba-10169329",
+        "sent:gen-9e643c0b17a7"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-49",
+      "examples": [
+        "sent:tatoeba-201028",
+        "sent:gen-a0241d2a988e",
+        "sent:gen-4b81bb2c6fa6"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O ônibus sai a cada quinze minutos.",
+      "answer_key": "バスは１５分ごとにでます。",
+      "accepted_variants": [
+        "ばすわじゅうごふんごとにでます",
+        "ばすわじゅうごふんごとにでます。",
+        "バスは１５分ごとにでます",
+        "バスは１５分ごとにでます。"
+      ],
+      "sentence": "sent:tatoeba-198139",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "De onde (ele/isso) parte?",
+      "answer_key": "どこから出るんですか。",
+      "accepted_variants": [
+        "どこからでるんですか",
+        "どこからでるんですか。",
+        "どこから出るんですか",
+        "どこから出るんですか。"
+      ],
+      "sentence": "sent:tatoeba-201017",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu vou para a escola de ônibus.",
+      "answer_key": "私は、バスで学校に行く。",
+      "accepted_variants": [
+        "わたしわ、ばすでがっこうにいく",
+        "わたしわ、ばすでがっこうにいく。",
+        "私は、バスで学校に行く",
+        "私は、バスで学校に行く。"
+      ],
+      "sentence": "sent:tatoeba-162318",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-10725053",
+      "sent:tatoeba-10107417",
+      "sent:jec-2741",
+      "sent:tatoeba-162347",
+      "sent:tatoeba-191220",
+      "sent:tatoeba-78125"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:471",
@@ -106,89 +196,5 @@
         "せいさん"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-154",
-    "gram:gp-77",
-    "gram:gp-128",
-    "gram:you-ni-you-na"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-122",
-      "examples": [
-        "sent:gen-8a3363848885",
-        "sent:tatoeba-10169329",
-        "sent:gen-9e643c0b17a7"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-49",
-      "examples": [
-        "sent:tatoeba-201028",
-        "sent:gen-a0241d2a988e",
-        "sent:gen-4b81bb2c6fa6"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O ônibus sai a cada quinze minutos.",
-      "answer_key": "バスは１５分ごとにでます。",
-      "accepted_variants": [
-        "バスは１５分ごとにでます",
-        "バスは１５分ごとにでます。"
-      ],
-      "sentence": "sent:tatoeba-198139",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "De onde (ele/isso) parte?",
-      "answer_key": "どこから出るんですか。",
-      "accepted_variants": [
-        "どこから出るんですか",
-        "どこから出るんですか。"
-      ],
-      "sentence": "sent:tatoeba-201017",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu vou para a escola de ônibus.",
-      "answer_key": "私は、バスで学校に行く。",
-      "accepted_variants": [
-        "私は、バスで学校に行く",
-        "私は、バスで学校に行く。"
-      ],
-      "sentence": "sent:tatoeba-162318",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
-    "items": [
-      "sent:tatoeba-10725053",
-      "sent:tatoeba-10107417",
-      "sent:jec-2741",
-      "sent:tatoeba-162347",
-      "sent:tatoeba-191220",
-      "sent:tatoeba-78125"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  }
+  ]
 }

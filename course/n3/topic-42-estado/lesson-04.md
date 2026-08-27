@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-ppai, n3-ppanashi, n3-toori] · vocabulário [がっかり, 価値, 勝ち, 可也, 可能, 学期, 必ずしも, 悲しむ, 我慢, 株, 活動, 活気, 活用, 神, 雷] · kanji [優 収 夫 断 難] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11058328`, `sent:tatoeba-11924443`
 
 ---
 
@@ -86,33 +86,33 @@ O kanji 断 significa "cortar, recusar, decisão". À direita o machado (斤): C
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase soa como CRÍTICA a um descuido ('deixou a luz acesa e largou assim')?"}
+### 1. (recognition) Qual frase soa como CRÍTICA a um descuido ('deixou a luz acesa e largou assim')?
 - **Resposta:** `{"choices": ["電気をつけっぱなしにした", "電気をつけたままにした", "電気をつけている", "電気をつけたて"], "correct": "電気をつけっぱなしにした"}`
-- {'pt-BR': "～っぱなし carrega a ideia de descuido/negligência: つけっぱなし = 'deixou ligado e largou'. ～たまま (つけたまま) é neutro, ている é estado/ação, e たて ('recém-feito') nem combina com つける."}
+- ～っぱなし carrega a ideia de descuido/negligência: つけっぱなし = 'deixou ligado e largou'. ～たまま (つけたまま) é neutro, ている é estado/ação, e たて ('recém-feito') nem combina com つける.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete: 部屋は荷物＿＿いっぱいだ (o quarto está cheio de bagagem). Qual partícula marca o que preenche?'}
+### 2. (particle_choice) Complete: 部屋は荷物＿＿いっぱいだ (o quarto está cheio de bagagem). Qual partícula marca o que preenche?
 - **Resposta:** `{"choices": ["で", "が", "を", "に"], "correct": "で"}`
-- {'pt-BR': "Em 〜でいっぱい, a partícula で marca aquilo que enche o espaço: 荷物でいっぱい = 'cheio de bagagem'. Usar が ou を muda ou quebra o sentido."}
+- Em 〜でいっぱい, a partícula で marca aquilo que enche o espaço: 荷物でいっぱい = 'cheio de bagagem'. Usar が ou を muda ou quebra o sentido.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'o trem chegou conforme o planejado' (予定 colado direto): 電車は予定＿＿＿に着いた。"}
+### 3. (cloze) Complete 'o trem chegou conforme o planejado' (予定 colado direto): 電車は予定＿＿＿に着いた。
 - **Resposta:** `{"text": "どおり", "full": "電車は予定どおりに着いた"}`
-- {'pt-BR': "Colado direto a um substantivo, とおり sonoriza e vira どおり: 予定どおり = 'conforme o planejado'. O に entra porque funciona como advérbio (どおりに)."}
+- Colado direto a um substantivo, とおり sonoriza e vira どおり: 予定どおり = 'conforme o planejado'. O に entra porque funciona como advérbio (どおりに).
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada forma ao seu sentido.'}
+### 4. (matching) Ligue cada forma ao seu sentido.
 - **Resposta:** `{"pairs": [["開けっぱなし", "deixado aberto (descuido)"], ["荷物でいっぱい", "cheio de bagagem"], ["予定どおり", "conforme o planejado"], ["言ったとおり", "como (a pessoa) disse"]]}`
-- {'pt-BR': 'っぱなし = largar com descuido; でいっぱい = cheio de algo; どおり (colado a substantivo) e とおり (após verbo no passado) = conforme/exatamente como.'}
+- っぱなし = largar com descuido; でいっぱい = cheio de algo; どおり (colado a substantivo) e とおり (após verbo no passado) = conforme/exatamente como.
 
 
-### 5. (sentence_build) {'pt-BR': "Monte 'acabei dormindo com a luz acesa' com as peças: [寝てしまった] [電気を] [つけっぱなしで]"}
+### 5. (sentence_build) Monte 'acabei dormindo com a luz acesa' com as peças: [寝てしまった] [電気を] [つけっぱなしで]
 - **Resposta:** `{"order": ["電気を", "つけっぱなしで", "寝てしまった"], "text": "電気をつけっぱなしで寝てしまった"}`
-- {'pt-BR': "電気をつけっぱなしで = 'com a luz deixada acesa (descuido)', e a ação principal vem no fim: 寝てしまった ('acabei dormindo'). O っぱなし dá o tom de 'que descuido'."}
+- 電気をつけっぱなしで = 'com a luz deixada acesa (descuido)', e a ação principal vem no fim: 寝てしまった ('acabei dormindo'). O っぱなし dá o tom de 'que descuido'.
 
 
-### 6. (production) {'pt-BR': "Diga 'fiz conforme o professor disse' usando 先生が言った, ～とおりに e する no passado."}
+### 6. (production) Diga 'fiz conforme o professor disse' usando 先生が言った, ～とおりに e する no passado.
 - **Resposta:** `{"text": "先生が言ったとおりにした", "accept": ["先生が言ったとおりにした", "せんせいがいったとおりにした", "先生が言った通りにした", "先生の言ったとおりにした"]}`
-- {'pt-BR': "Usa-se a forma PASSADA do verbo + とおり porque a instrução já foi dada: 言ったとおり ('como disse'). O に torna advérbio (とおりに) e した é 'fiz'. Resultado: '(eu) fiz conforme o professor disse'."}
+- Usa-se a forma PASSADA do verbo + とおり porque a instrução já foi dada: 言ったとおり ('como disse'). O に torna advérbio (とおりに) e した é 'fiz'. Resultado: '(eu) fiz conforme o professor disse'.
 
 

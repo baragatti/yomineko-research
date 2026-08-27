@@ -67,23 +67,23 @@ Repare em 弁当, parte essencial do dia japonês, e em 冒険 para histórias.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa método, modo de fazer algo?'}
+### 1. (recognition) Qual palavra significa método, modo de fazer algo?
 - **Resposta:** `{"choices": ["方法 (ほうほう)", "方向 (ほうこう)", "報告 (ほうこく)"], "correct": "方法 (ほうほう)"}`
-- {'pt-BR': '方法 (ほうほう) é o método; 方向 é a direção e 報告 é o relatório.'}
+- 方法 (ほうほう) é o método; 方向 é a direção e 報告 é o relatório.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra à sua tradução.'}
+### 2. (matching) Associe cada palavra à sua tradução.
 - **Resposta:** `{"pairs": [["弁当", "marmita japonesa"], ["宝石", "joia"], ["変化", "mudança"], ["豊富", "abundante"]]}`
-- {'pt-BR': 'Quatro itens da lição: bentô, joia, mudança e algo abundante.'}
+- Quatro itens da lição: bentô, joia, mudança e algo abundante.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a frase: <jp>体重を＿＿たい</jp> (Quero reduzir o peso.)'}
+### 3. (cloze) Complete a frase: 体重を＿＿たい (Quero reduzir o peso.)
 - **Resposta:** `{"text": "減らし", "full": "体重を減らしたい。"}`
-- {'pt-BR': '減らす (へらす) é o verbo transitivo reduzir algo; com たい indica desejo: 減らしたい.'}
+- 減らす (へらす) é o verbo transitivo reduzir algo; com たい indica desejo: 減らしたい.
 
 
-### 4. (production) {'pt-BR': 'Escreva uma frase em japonês dizendo que você comeu a marmita (弁当) no banco (ベンチ) do parque.'}
-- **Resposta:** `{"text": "公園のベンチで弁当を食べました", "accept": ["公園のベンチで弁当を食べた", "ベンチで弁当を食べました", "公園のベンチでお弁当を食べた"]}`
-- {'pt-BR': '弁当 (べんとう) é a marmita e ベンチ é o banco; a partícula で marca o lugar da ação.'}
+### 4. (production) Escreva uma frase em japonês dizendo que você comeu a marmita (弁当) no banco (ベンチ) do parque.
+- **Resposta:** `{"text": "公園のベンチで弁当を食べました", "accept": ["公園のベンチで弁当を食べました", "公園のベンチで弁当を食べた", "ベンチで弁当を食べました", "公園のベンチでお弁当を食べた"]}`
+- 弁当 (べんとう) é a marmita e ベンチ é o banco; a partícula で marca o lugar da ação.
 
 

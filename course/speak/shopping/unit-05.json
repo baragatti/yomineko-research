@@ -4,7 +4,7 @@
   "stage": "speak:shopping",
   "order": 5,
   "title": {
-    "pt-BR": "Isto, aquilo, quanto custa — parte 5"
+    "pt-BR": "Isto, aquilo, quanto custa, parte 5"
   },
   "say_now": [
     "sent:tatoeba-74146",
@@ -52,6 +52,95 @@
   "cumulative_known_vocab": 70,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:nakereba-naranai",
+    "gram:dake-de",
+    "gram:gp-150",
+    "gram:nara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:dake",
+      "examples": [
+        "sent:tatoeba-4767",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-78717"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:demo",
+      "examples": [
+        "sent:tatoeba-4781",
+        "sent:tatoeba-85538",
+        "sent:tatoeba-74951"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "É melhor você fazer isso agora mesmo, viu.",
+      "answer_key": "今すぐそれをしたほうがいいよ。",
+      "accepted_variants": [
+        "いますぐそれをしたほうがいいよ",
+        "いますぐそれをしたほうがいいよ。",
+        "今すぐそれをしたほうがいいよ",
+        "今すぐそれをしたほうがいいよ。"
+      ],
+      "sentence": "sent:tatoeba-172832",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "De preferência, o mais barato possível.",
+      "answer_key": "なるべく安いほうがいいです。",
+      "accepted_variants": [
+        "なるべくやすいほうがいいです",
+        "なるべくやすいほうがいいです。",
+        "なるべく安いほうがいいです",
+        "なるべく安いほうがいいです。"
+      ],
+      "sentence": "sent:tatoeba-199061",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É melhor não fazer isso!",
+      "answer_key": "それをしないほうがいいよ！",
+      "accepted_variants": [
+        "それをしないほうがいいよ",
+        "それをしないほうがいいよ!",
+        "それをしないほうがいいよ！"
+      ],
+      "sentence": "sent:tatoeba-4562312",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-8748248",
+      "sent:tatoeba-3488181",
+      "sent:tatoeba-8687007",
+      "sent:tatoeba-2123447",
+      "sent:tatoeba-10307857",
+      "sent:tatoeba-160737"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 19,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:3369",
@@ -103,89 +192,5 @@
         "あいだ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:nakereba-naranai",
-    "gram:dake-de",
-    "gram:gp-150",
-    "gram:nara"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:dake",
-      "examples": [
-        "sent:tatoeba-4767",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-78717"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:demo",
-      "examples": [
-        "sent:tatoeba-4781",
-        "sent:tatoeba-85538",
-        "sent:tatoeba-74951"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "É melhor você fazer isso agora mesmo, viu.",
-      "answer_key": "今すぐそれをしたほうがいいよ。",
-      "accepted_variants": [
-        "今すぐそれをしたほうがいいよ",
-        "今すぐそれをしたほうがいいよ。"
-      ],
-      "sentence": "sent:tatoeba-172832",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "De preferência, o mais barato possível.",
-      "answer_key": "なるべく安いほうがいいです。",
-      "accepted_variants": [
-        "なるべく安いほうがいいです",
-        "なるべく安いほうがいいです。"
-      ],
-      "sentence": "sent:tatoeba-199061",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "É melhor não fazer isso!",
-      "answer_key": "それをしないほうがいいよ！",
-      "accepted_variants": [
-        "それをしないほうがいいよ",
-        "それをしないほうがいいよ！"
-      ],
-      "sentence": "sent:tatoeba-4562312",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
-    "items": [
-      "sent:tatoeba-8748248",
-      "sent:tatoeba-3488181",
-      "sent:tatoeba-8687007",
-      "sent:tatoeba-2123447",
-      "sent:tatoeba-10307857",
-      "sent:tatoeba-160737"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 25,
-    "fluency": 6
-  }
+  ]
 }

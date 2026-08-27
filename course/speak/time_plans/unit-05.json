@@ -4,7 +4,7 @@
   "stage": "speak:time_plans",
   "order": 5,
   "title": {
-    "pt-BR": "Quando, que horas, combinar — parte 5"
+    "pt-BR": "Quando, que horas, combinar, parte 5"
   },
   "say_now": [
     "sent:tatoeba-150509",
@@ -28,10 +28,9 @@
   "patterns": [
     "gram:darou",
     "gram:garu-gatteiru",
-    "gram:gp-75",
     "gram:noni",
-    "gram:da-desu",
-    "gram:gp"
+    "gram:wa-yori-desu",
+    "gram:ka-ka"
   ],
   "kanji_recognition": [
     "間",
@@ -54,6 +53,120 @@
   "cumulative_known_vocab": 363,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-9"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:darou",
+      "examples": [
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:garu-gatteiru",
+      "examples": [
+        "sent:gen-a0d367f9d037",
+        "sent:gen-2424c6ff626d",
+        "sent:gen-0ce029328959"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:noni",
+      "examples": [
+        "sent:tatoeba-140578",
+        "sent:tatoeba-78708",
+        "sent:tatoeba-5128"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-90ed9f56e125",
+        "sent:gen-e97b8aeb1456"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ka-ka",
+      "examples": [
+        "sent:gen-d338f63d2a25",
+        "sent:gen-d61de489227e",
+        "sent:gen-c737b9f8b9da"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Tenho que fazer a lição de casa até amanhã.",
+      "answer_key": "明日までに宿題をしなければならない。",
+      "accepted_variants": [
+        "あすまでにしゅくだいをしなければならない",
+        "あすまでにしゅくだいをしなければならない。",
+        "明日までに宿題をしなければならない",
+        "明日までに宿題をしなければならない。"
+      ],
+      "sentence": "sent:tatoeba-80373",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Hoje está ventando bastante, né?",
+      "answer_key": "今日はけっこう風が強いね。",
+      "accepted_variants": [
+        "きょうわけっこうかぜがつよいね",
+        "きょうわけっこうかぜがつよいね。",
+        "今日はけっこう風が強いね",
+        "今日はけっこう風が強いね。"
+      ],
+      "sentence": "sent:tatoeba-536767",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Quando será que o mundo vai acabar?",
+      "answer_key": "世界はいつ終わるのだろうか。",
+      "accepted_variants": [
+        "せかいわいつおわるのだろうか",
+        "せかいわいつおわるのだろうか。",
+        "世界はいつ終わるのだろうか",
+        "世界はいつ終わるのだろうか。"
+      ],
+      "sentence": "sent:tatoeba-143418",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-154767",
+      "sent:tatoeba-9777117",
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362",
+      "sent:tatoeba-80068",
+      "sent:tatoeba-152614"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:3623",
@@ -100,120 +213,5 @@
         "としょかん"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:garu-gatteiru",
-      "examples": [
-        "sent:gen-a0d367f9d037",
-        "sent:gen-2424c6ff626d",
-        "sent:gen-0ce029328959"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-75",
-      "examples": [
-        "sent:tatoeba-8900817",
-        "sent:gen-1afacbd438d6",
-        "sent:gen-3830fb7c7bbd"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:noni",
-      "examples": [
-        "sent:tatoeba-140578",
-        "sent:tatoeba-78708",
-        "sent:tatoeba-5128"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Tenho que fazer a lição de casa até amanhã.",
-      "answer_key": "明日までに宿題をしなければならない。",
-      "accepted_variants": [
-        "明日までに宿題をしなければならない",
-        "明日までに宿題をしなければならない。"
-      ],
-      "sentence": "sent:tatoeba-80373",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Hoje está ventando bastante, né?",
-      "answer_key": "今日はけっこう風が強いね。",
-      "accepted_variants": [
-        "今日はけっこう風が強いね",
-        "今日はけっこう風が強いね。"
-      ],
-      "sentence": "sent:tatoeba-536767",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Quando será que o mundo vai acabar?",
-      "answer_key": "世界はいつ終わるのだろうか。",
-      "accepted_variants": [
-        "世界はいつ終わるのだろうか",
-        "世界はいつ終わるのだろうか。"
-      ],
-      "sentence": "sent:tatoeba-143418",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
-    "items": [
-      "sent:tatoeba-154767",
-      "sent:tatoeba-9777117",
-      "sent:tatoeba-171531",
-      "sent:tatoeba-1037362",
-      "sent:tatoeba-80068",
-      "sent:tatoeba-152614"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 30,
-    "fluency": 6
-  }
+  ]
 }

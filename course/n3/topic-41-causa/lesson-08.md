@@ -61,28 +61,28 @@ Dica: 礼 (れい) e 例 (れい) soam idênticos mas se escrevem diferente. 礼
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'boas maneiras, cortesia'?"}
+### 1. (recognition) Qual palavra significa 'boas maneiras, cortesia'?
 - **Resposta:** `{"choices": ["礼儀", "冷静", "理想", "連続"], "correct": "礼儀"}`
-- {'pt-BR': "礼儀 (れいぎ) é etiqueta/boas maneiras. 冷静 é 'calma', 理想 é 'ideal' e 連続 é 'sequência'."}
+- 礼儀 (れいぎ) é etiqueta/boas maneiras. 冷静 é 'calma', 理想 é 'ideal' e 連続 é 'sequência'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["留学", "estudar fora"], ["料金", "tarifa"], ["列車", "trem"], ["連続", "sequência"]]}`
-- {'pt-BR': '留学 é intercâmbio, 料金 é a tarifa cobrada, 列車 é um trem e 連続 é uma sucessão de coisas.'}
+- 留学 é intercâmbio, 料金 é a tarifa cobrada, 列車 é um trem e 連続 é uma sucessão de coisas.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'Troquei dinheiro no aeroporto e paguei a tarifa': 空港で両替して、＿＿を払った。"}
+### 3. (cloze) Complete 'Troquei dinheiro no aeroporto e paguei a tarifa': 空港で両替して、＿＿を払った。
 - **Resposta:** `{"text": "料金", "full": "空港で両替して、料金を払った。"}`
-- {'pt-BR': '料金 (りょうきん) é a tarifa/valor cobrado; 払う é pagar.'}
+- 料金 (りょうきん) é a tarifa/valor cobrado; 払う é pagar.
 
 
-### 4. (recognition) {'pt-BR': "Numa emergência, manter-se 'calmo, com sangue-frio' é:"}
+### 4. (recognition) Numa emergência, manter-se 'calmo, com sangue-frio' é:
 - **Resposta:** `{"choices": ["冷静", "流行", "労働", "理想"], "correct": "冷静"}`
-- {'pt-BR': "冷静 (れいせい) é calma/serenidade. 流行 é 'moda', 労働 é 'trabalho' e 理想 é 'ideal'."}
+- 冷静 (れいせい) é calma/serenidade. 流行 é 'moda', 労働 é 'trabalho' e 理想 é 'ideal'.
 
 
-### 5. (production) {'pt-BR': "Diga 'Estudar no exterior era o meu ideal' usando 留学 e 理想 (meu = 私の)."}
+### 5. (production) Diga 'Estudar no exterior era o meu ideal' usando 留学 e 理想 (meu = 私の).
 - **Resposta:** `{"text": "留学は私の理想だった", "accept": ["留学は私の理想だった。", "留学は私の理想でした", "留学は私の理想でした。"]}`
-- {'pt-BR': "留学 (estudar fora) é o sujeito e 理想だった fecha 'era o ideal'."}
+- 留学 (estudar fora) é o sujeito e 理想だった fecha 'era o ideal'.
 
 

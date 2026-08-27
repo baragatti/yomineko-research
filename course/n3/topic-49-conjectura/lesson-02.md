@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-hazu-da, n3-wake-dewa-nai, n3-wake-ga-nai] · vocabulário [事務, 事態, 実施, 実現, 実行, 実際, 実験, 従う, 指導, 支出, 支店, 支払い, 支払う, 支給, 支配, 次第, 資本, 資源] · kanji [列 刻 更 賛] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-8579878`, `sent:tatoeba-2190027`
 
 ---
 
@@ -76,33 +76,33 @@ O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual frase usa はずだ no sentido correto de dedução lógica?'}
+### 1. (recognition) Qual frase usa はずだ no sentido correto de dedução lógica?
 - **Resposta:** `{"choices": ["君は毎日勉強するはずだ (ordem: você deve estudar todo dia)", "彼はもう着いたはずだ (a essa hora ele já deve ter chegado)", "ここでタバコを吸うはずだ (é proibido fumar aqui)", "早く帰るはずだ (volte logo para casa)"], "correct": "彼はもう着いたはずだ (a essa hora ele já deve ter chegado)"}`
-- {'pt-BR': "はずだ é o 'deve' de dedução, com base em algo concreto (o horário). O 'deve' de obrigação ('você deve estudar') usa べきだ ou なければならない, não はずだ."}
+- はずだ é o 'deve' de dedução, com base em algo concreto (o horário). O 'deve' de obrigação ('você deve estudar') usa べきだ ou なければならない, não はずだ.
 
 
-### 2. (recognition) {'pt-BR': "Você conhece bem sua amiga e tem certeza de que ela jamais mentiria. Como dizer 'é impossível que ela minta'?"}
+### 2. (recognition) Você conhece bem sua amiga e tem certeza de que ela jamais mentiria. Como dizer 'é impossível que ela minta'?
 - **Resposta:** `{"choices": ["彼女が嘘をつくわけがない", "彼女が嘘をつくわけではない", "彼女が嘘をつくはずだ", "彼女が嘘をつくかもしれない"], "correct": "彼女が嘘をつくわけがない"}`
-- {'pt-BR': "わけがない descarta a possibilidade por completo, com convicção: 'não tem como'. わけではない apenas relativizaria, はずだ seria expectativa, e かもしれない seria 'talvez' (o oposto da sua certeza)."}
+- わけがない descarta a possibilidade por completo, com convicção: 'não tem como'. わけではない apenas relativizaria, はずだ seria expectativa, e かもしれない seria 'talvez' (o oposto da sua certeza).
 
 
-### 3. (cloze) {'pt-BR': "Complete 'não é bem que eu deteste japonês (só está difícil)': 日本語が嫌いな＿＿＿＿＿＿。"}
+### 3. (cloze) Complete 'não é bem que eu deteste japonês (só está difícil)': 日本語が嫌いな＿＿＿＿＿＿。
 - **Resposta:** `{"text": "わけではない", "full": "日本語が嫌いなわけではない"}`
-- {'pt-BR': "わけではない nega parcialmente, amaciando uma conclusão exagerada: 'não é bem que eu deteste'. Com adjetivo な, entra o な antes (嫌いなわけではない). Para negar de vez seria わけがない."}
+- わけではない nega parcialmente, amaciando uma conclusão exagerada: 'não é bem que eu deteste'. Com adjetivo な, entra o な antes (嫌いなわけではない). Para negar de vez seria わけがない.
 
 
-### 4. (particle_choice) {'pt-BR': "Qual estrutura nega por RACIOCÍNIO LÓGICO ('é absurdo pensar isso'), em contraste com はずがない (negação apoiada numa razão concreta: 'não tem como ser')?"}
+### 4. (particle_choice) Qual estrutura nega por RACIOCÍNIO LÓGICO ('é absurdo pensar isso'), em contraste com はずがない (negação apoiada numa razão concreta: 'não tem como ser')?
 - **Resposta:** `{"choices": ["わけがない", "わけではない", "ないわけではない", "はずだ"], "correct": "わけがない"}`
-- {'pt-BR': "わけがない = negação total por lógica ('é impossível, é absurdo'). はずがない também nega a possibilidade ('não tem como ser'), mas com base numa expectativa/razão e em tom menos enfático que わけがない. わけではない relativiza, e ないわけではない é dupla negação suave."}
+- わけがない = negação total por lógica ('é impossível, é absurdo'). はずがない também nega a possibilidade ('não tem como ser'), mas com base numa expectativa/razão e em tom menos enfático que わけがない. わけではない relativiza, e ないわけではない é dupla negação suave.
 
 
-### 5. (matching) {'pt-BR': 'Ligue cada palavra de escritório/finanças à sua tradução.'}
+### 5. (matching) Ligue cada palavra de escritório/finanças à sua tradução.
 - **Resposta:** `{"pairs": [["支払う", "pagar"], ["支店", "filial"], ["支出", "despesa"], ["資本", "capital"]]}`
-- {'pt-BR': '支払う (しはらう) = pagar; 支店 (してん) = filial; 支出 (ししゅつ) = gasto/despesa; 資本 (しほん) = capital/fundos. O kanji 支 (sustentar/ramificar) une os três primeiros.'}
+- 支払う (しはらう) = pagar; 支店 (してん) = filial; 支出 (ししゅつ) = gasto/despesa; 資本 (しほん) = capital/fundos. O kanji 支 (sustentar/ramificar) une os três primeiros.
 
 
-### 6. (production) {'pt-BR': "Diga 'amanhã deve ser folga (pelo que sei)' usando 明日 (amanhã), 休み (folga, substantivo) e はずだ. Lembre do conector com substantivo."}
+### 6. (production) Diga 'amanhã deve ser folga (pelo que sei)' usando 明日 (amanhã), 休み (folga, substantivo) e はずだ. Lembre do conector com substantivo.
 - **Resposta:** `{"text": "明日は休みのはずだ", "accept": ["明日は休みのはずだ", "あしたはやすみのはずだ", "明日は休みのはずです", "明日は休みのはず"]}`
-- {'pt-BR': 'Com substantivo, o conector é の: 休みのはずだ. はずだ marca a expectativa lógica baseada no que você sabe (a escala, o calendário). É dedução, não obrigação.'}
+- Com substantivo, o conector é の: 休みのはずだ. はずだ marca a expectativa lógica baseada no que você sabe (a escala, o calendário). É dedução, não obrigação.
 
 

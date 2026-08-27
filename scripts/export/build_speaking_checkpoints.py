@@ -69,7 +69,8 @@ def main() -> int:
     forms = {i: (hw, kana) for i, hw, kana in con.execute("SELECT id,headword,kana FROM vocab")}
 
     items: list[dict] = []
-    for f in sorted(BANKS.glob("*.json")):
+    # Banks are named <level>_<section>.json; sidecars (removed_items.json, INDEX.md) are not banks.
+    for f in sorted(BANKS.glob("n[0-9]_*.json")):
         parts = f.stem.split("_", 1)
         if len(parts) != 2:
             continue

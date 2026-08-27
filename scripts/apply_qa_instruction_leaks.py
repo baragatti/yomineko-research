@@ -17,8 +17,17 @@ asking for, the improvement is applied and only the instruction wrapper is remov
 copy would throw the QA finding away. Where the live copy is simply damaged (a Cyrillic т inside
 ～にとって, and a dropped clause) the clean text is restored.
 
-Writes to localized_text, which is the source the exporter reads; run export_course.py afterwards.
-Idempotent: every edit is matched on its exact current value, so a second run reports 0 changes.
+Writes BOTH layers of every lesson:
+  * `db/corpus.sqlite` localized_text -- what the exporters read, and
+  * `research/derived/lessons/<slug>.json` -- the tracked authoring source that load_lessons.py
+    re-authors the DB from.
+The first version of this script wrote only the DB. That was the wrong layer on its own: db/*.sqlite is
+git-ignored and regenerable, so the repair looked done in the exports while all nine fields stayed
+corrupt in the durable source, and the next `load_lessons.py` + `export_course.py` cycle would have
+reintroduced every one of them (including the Cyrillic mojibake). Run export_course.py afterwards.
+
+Idempotent: every edit is matched on its exact current value, so a second run reports 0 changes. The two
+layers are checked independently, so a field already repaired in one layer is still repaired in the other.
 Usage: apply_qa_instruction_leaks.py [--check]
 """
 from __future__ import annotations
@@ -32,6 +41,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / "db" / "corpus.sqlite"
+LESSON_SRC = ROOT / "research" / "derived" / "lessons"
 
 # (lesson slug, field, index-or-None, exact current value, corrected value, why)
 FIXES: list[tuple[str, str, int | None, str, str, str]] = [
@@ -121,13 +131,122 @@ EXERCISE_FIXES: list[tuple[str, str, str, str, str]] = [
 ]
 
 
+class SourceLayer:
+    """The tracked authoring source, edited in place without reflowing anything else.
+
+    Files are pretty-printed with `json.dumps(..., ensure_ascii=False, indent=2)`; some carry CRLF and
+    some have no trailing newline. Each file is only touched when re-serialising the parsed object
+    reproduces it byte for byte, so a whitespace reflow can never ride along with a content repair.
+    """
+
+    def __init__(self, check: bool) -> None:
+        self.check = check
+        self.loaded: dict[str, tuple[dict, str, bool]] = {}
+        self.dirty: set[str] = set()
+
+    def _path(self, lesson_slug: str) -> Path:
+        return LESSON_SRC / (lesson_slug.replace("les:", "") + ".json")
+
+    def get(self, lesson_slug: str):
+        if lesson_slug in self.loaded:
+            return self.loaded[lesson_slug]
+        p = self._path(lesson_slug)
+        if not p.exists():
+            return None
+        raw = p.read_text(encoding="utf-8", newline="")
+        newline = "\r\n" if "\r\n" in raw else "\n"
+        norm = raw.replace("\r\n", "\n")
+        trailing = norm.endswith("\n")
+        obj = json.loads(norm)
+        if json.dumps(obj, ensure_ascii=False, indent=2) + ("\n" if trailing else "") != norm:
+            return None
+        self.loaded[lesson_slug] = (obj, newline, trailing)
+        return self.loaded[lesson_slug]
+
+    def save(self) -> None:
+        for slug in sorted(self.dirty):
+            obj, newline, trailing = self.loaded[slug]
+            text = json.dumps(obj, ensure_ascii=False, indent=2) + ("\n" if trailing else "")
+            self._path(slug).write_bytes(text.replace("\n", newline).encode("utf-8"))
+
+    # -- edits; each returns 'applied' | 'noop' | 'skip:<reason>' --
+    def field(self, lesson_slug: str, field: str, idx, before: str, after: str) -> str:
+        got = self.get(lesson_slug)
+        if got is None:
+            return "skip:source file missing or not byte-reproducible"
+        obj = got[0]
+        if field not in obj:
+            return "skip:field absent from source"
+        if idx is None:
+            cur, container, key = obj[field], obj, field
+        else:
+            items = obj[field]
+            if not isinstance(items, list) or idx >= len(items):
+                return "skip:index out of range"
+            cur, container, key = items[idx], items, idx
+        if cur == after:
+            return "noop"
+        if cur != before:
+            return "skip:source value does not match the expected corrupted text"
+        if not self.check:
+            container[key] = after
+            self.dirty.add(lesson_slug)
+        return "applied"
+
+    def body(self, lesson_slug: str, before: str, after: str) -> str:
+        got = self.get(lesson_slug)
+        if got is None:
+            return "skip:source file missing or not byte-reproducible"
+        obj = got[0]
+        cur = obj.get("body")
+        if not isinstance(cur, str):
+            return "skip:no body in source"
+        if before not in cur:
+            return "noop" if after in cur else "skip:expected body text not found"
+        if cur.count(before) != 1:
+            return f"skip:expected body text occurs {cur.count(before)}x"
+        if not self.check:
+            obj["body"] = cur.replace(before, after)
+            self.dirty.add(lesson_slug)
+        return "applied"
+
+    def exercise(self, lesson_slug: str, ex_slug: str, field: str, before: str, after: str) -> str:
+        got = self.get(lesson_slug)
+        if got is None:
+            return "skip:source file missing or not byte-reproducible"
+        obj = got[0]
+        match = [e for e in obj.get("exercises", []) if e.get("slug") == ex_slug]
+        if not match:
+            return "skip:exercise absent from source"
+        ex = match[0]
+        if ex.get(field) == after:
+            return "noop"
+        if ex.get(field) != before:
+            return "skip:source value does not match the expected corrupted text"
+        if not self.check:
+            ex[field] = after
+            self.dirty.add(lesson_slug)
+        return "applied"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
     con = sqlite3.connect(DB)
+    con.execute("PRAGMA busy_timeout=60000")
+    src = SourceLayer(args.check)
 
     changed, skipped = 0, []
+
+    def report(label: str, status: str, why: str) -> None:
+        """Fold a SourceLayer result into the same counters the DB edits use."""
+        nonlocal changed
+        if status == "applied":
+            print(f"  {label}\n     why: {why}")
+            changed += 1
+        elif status.startswith("skip:"):
+            skipped.append(f"{label}: {status[5:]}")
 
     def lesson_id(slug: str):
         r = con.execute("SELECT id FROM lesson WHERE slug=?", (slug,)).fetchone()
@@ -145,70 +264,86 @@ def main() -> int:
             "AND locale='pt-BR'", (value, etype, eid, field))
 
     for slug, field, idx, before, after, why in FIXES:
+        label = f"{slug}.{field}" + ("" if idx is None else f"[{idx}]")
         lid = lesson_id(slug)
         if lid is None:
-            skipped.append(f"{slug}: no such lesson"); continue
-        raw, is_list = get("lesson", lid, field)
-        if raw is None:
-            skipped.append(f"{slug}.{field}: no localized_text row"); continue
-        if is_list:
-            items = json.loads(raw)
-            if idx is None or idx >= len(items):
-                skipped.append(f"{slug}.{field}[{idx}]: index out of range"); continue
-            if items[idx] == after:
-                continue                                   # already repaired
-            if items[idx] != before:
-                skipped.append(f"{slug}.{field}[{idx}]: current value does not match the expected "
-                               f"corrupted text — not touching it"); continue
-            items[idx] = after
-            new = json.dumps(items, ensure_ascii=False)
+            skipped.append(f"{slug}: no such lesson")
         else:
-            if raw == after:
-                continue
-            if raw != before:
-                skipped.append(f"{slug}.{field}: current value does not match the expected corrupted "
-                               f"text — not touching it"); continue
-            new = after
-        print(f"  {slug}.{field}{'' if idx is None else f'[{idx}]'}")
-        print(f"     why: {why}")
-        if not args.check:
-            put("lesson", lid, field, new, is_list)
-        changed += 1
+            raw, is_list = get("lesson", lid, field)
+            if raw is None:
+                skipped.append(f"{label} (db): no localized_text row")
+            else:
+                new = None
+                if is_list:
+                    items = json.loads(raw)
+                    if idx is None or idx >= len(items):
+                        skipped.append(f"{label} (db): index out of range")
+                    elif items[idx] == after:
+                        pass                                   # already repaired
+                    elif items[idx] != before:
+                        skipped.append(f"{label} (db): current value does not match the expected "
+                                       f"corrupted text — not touching it")
+                    else:
+                        items[idx] = after
+                        new = json.dumps(items, ensure_ascii=False)
+                else:
+                    if raw == after:
+                        pass
+                    elif raw != before:
+                        skipped.append(f"{label} (db): current value does not match the expected "
+                                       f"corrupted text — not touching it")
+                    else:
+                        new = after
+                if new is not None:
+                    print(f"  {label} (db)")
+                    print(f"     why: {why}")
+                    if not args.check:
+                        put("lesson", lid, field, new, is_list)
+                    changed += 1
+        report(f"{label} (source)", src.field(slug, field, idx, before, after), why)
 
     for slug, before, after, why in BODY_FIXES:
         lid = lesson_id(slug)
         if lid is None:
-            skipped.append(f"{slug}: no such lesson"); continue
-        raw, is_list = get("lesson", lid, "body")
-        if raw is None:
-            skipped.append(f"{slug}.body: no localized_text row"); continue
-        if after in raw:
-            continue
-        if before not in raw:
-            skipped.append(f"{slug}.body: expected text not found — not touching it"); continue
-        print(f"  {slug}.body\n     why: {why}")
-        if not args.check:
-            put("lesson", lid, "body", raw.replace(before, after), is_list)
-        changed += 1
+            skipped.append(f"{slug}: no such lesson")
+        else:
+            raw, is_list = get("lesson", lid, "body")
+            if raw is None:
+                skipped.append(f"{slug}.body (db): no localized_text row")
+            elif after in raw:
+                pass
+            elif before not in raw:
+                skipped.append(f"{slug}.body (db): expected text not found — not touching it")
+            else:
+                print(f"  {slug}.body (db)\n     why: {why}")
+                if not args.check:
+                    put("lesson", lid, "body", raw.replace(before, after), is_list)
+                changed += 1
+        report(f"{slug}.body (source)", src.body(slug, before, after), why)
 
     for eslug, field, before, after, why in EXERCISE_FIXES:
-        r = con.execute("SELECT id FROM exercise WHERE slug=?", (eslug,)).fetchone()
+        r = con.execute(
+            "SELECT e.id, l.slug FROM exercise e JOIN lesson l ON l.id=e.lesson_id WHERE e.slug=?",
+            (eslug,)).fetchone()
         if not r:
             skipped.append(f"{eslug}: no such exercise"); continue
         raw, is_list = get("exercise", r[0], field)
         if raw is None:
-            skipped.append(f"{eslug}.{field}: no localized_text row"); continue
-        if raw == after:
-            continue
-        if raw != before:
-            skipped.append(f"{eslug}.{field}: current value does not match — not touching it"); continue
-        print(f"  {eslug}.{field}\n     why: {why}")
-        if not args.check:
-            put("exercise", r[0], field, after, is_list)
-        changed += 1
+            skipped.append(f"{eslug}.{field} (db): no localized_text row")
+        elif raw == after:
+            pass
+        elif raw != before:
+            skipped.append(f"{eslug}.{field} (db): current value does not match — not touching it")
+        else:
+            print(f"  {eslug}.{field} (db)\n     why: {why}")
+            if not args.check:
+                put("exercise", r[0], field, after, is_list)
+            changed += 1
+        report(f"{eslug}.{field} (source)", src.exercise(r[1], eslug, field, before, after), why)
 
     if not args.check:
         con.commit()
+        src.save()
     verb = "would repair" if args.check else "repaired"
     print(f"\n{verb} {changed} field(s)")
     for s in skipped:

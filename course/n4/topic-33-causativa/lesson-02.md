@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [sasete-kudasai] · vocabulário [アクセサリー, コンサート, コンピュータ, スーツケース, スーパー, 失敗, 工場, 工業, 新聞社, 水泳, 研究室, 紹介, 経験] · kanji [牛 茶 飯 鳥] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-3957479`, `sent:tatoeba-2045915`, `sent:tatoeba-164807`, `sent:tatoeba-195599`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3957479`, `sent:tatoeba-2045915`, `sent:tatoeba-195599`, `sent:tatoeba-164807`
 
 ---
 
@@ -35,7 +35,7 @@ Esse pedido soa muito educado e até humilde em japonês. Num trabalho, ao se vo
 Veja japoneses usando o padrão de verdade. A primeira é curtinha e pede um momento de reflexão:
 > 🗣 考えさせてください。 — Deixe-me pensar, por favor.
 A próxima coloca um substantivo seguido de を antes do causativo. Aqui 質問 ("pergunta") é o objeto: literalmente "deixe-me fazer uma pergunta". O molde fica assim:
-Molde: [substantivo] をさせてください
+Molde: [substantivo] を させてください
 > 🗣 質問をさせてください。 — Deixe-me fazer uma pergunta, por favor.
 E esta junta まず ("primeiro") com 私に ("a mim"), pedindo a palavra de forma elegante:
 > 🗣 まず私に話させてください。 — Primeiro, deixe-me falar.
@@ -83,28 +83,28 @@ Quatro kanji do dia a dia, todos ligados a comida e animais:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que 考えさせてください pede ao interlocutor?'}
+### 1. (recognition) O que 考えさせてください pede ao interlocutor?
 - **Resposta:** `{"choices": ["Que ELE pense por você", "Que ele te deixe pensar (você quer pensar)", "Que ele pare de pensar"], "correct": "Que ele te deixe pensar (você quer pensar)"}`
-- {'pt-BR': "させてください pede permissão para VOCÊ mesmo agir. 考えさせてください = 'deixe-me pensar': quem vai pensar é você, e está pedindo licença educadamente."}
+- させてください pede permissão para VOCÊ mesmo agir. 考えさせてください = 'deixe-me pensar': quem vai pensar é você, e está pedindo licença educadamente.
 - frases: `sent:tatoeba-3957479`
 
-### 2. (sentence_build) {'pt-BR': "Monte 'Deixe-me falar.' com as peças: [ください] [話さ] [私に] [せて]"}
+### 2. (sentence_build) Monte 'Deixe-me falar.' com as peças: [ください] [話さ] [私に] [せて]
 - **Resposta:** `{"order": ["私に", "話さ", "せて", "ください"], "text": "私に話させてください。"}`
-- {'pt-BR': "私に (a mim) marca quem age; 話す → causativo 話させる → forma て 話させて + ください. Resultado: 'deixe-me falar'."}
+- 私に (a mim) marca quem age; 話す → causativo 話させる → forma て 話させて + ください. Resultado: 'deixe-me falar'.
 - frases: `sent:tatoeba-195599`
 
-### 3. (cloze) {'pt-BR': 'Complete pedindo permissão para fazer uma pergunta: 質問を＿ください。 (Deixe-me fazer uma pergunta.)'}
+### 3. (cloze) Complete pedindo permissão para fazer uma pergunta: 質問を＿ください。 (Deixe-me fazer uma pergunta.)
 - **Resposta:** `{"text": "させて", "full": "質問をさせてください"}`
-- {'pt-BR': "する → causativo させる → forma て させて, mais ください. 質問をさせてください = 'deixe-me fazer uma pergunta'. O 〜て liga o causativo ao pedido ください."}
+- する → causativo させる → forma て させて, mais ください. 質問をさせてください = 'deixe-me fazer uma pergunta'. O 〜て liga o causativo ao pedido ください.
 - frases: `sent:tatoeba-2045915`
 
-### 4. (particle_choice) {'pt-BR': 'Complete indicando quem vai agir: 私＿説明させてください。 (Deixe-me explicar.)'}
+### 4. (particle_choice) Complete indicando quem vai agir: 私＿説明させてください。 (Deixe-me explicar.)
 - **Resposta:** `{"choices": ["に", "を", "へ"], "correct": "に"}`
-- {'pt-BR': "Em させてください, a pessoa que realiza a ação costuma vir com に. 私に = 'a mim', ou seja, sou eu quem vai explicar."}
+- Em させてください, a pessoa que realiza a ação costuma vir com に. 私に = 'a mim', ou seja, sou eu quem vai explicar.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Deixe-me apresentar (alguém).' usando 紹介 (apresentação) + する no causativo + ください."}
+### 5. (production) Diga em japonês 'Deixe-me apresentar (alguém).' usando 紹介 (apresentação) + する no causativo + ください.
 - **Resposta:** `{"text": "紹介させてください。", "accept": ["紹介させてください", "しょうかいさせてください", "紹介させて下さい"]}`
-- {'pt-BR': "紹介 + する → 紹介させる (causativo) → 紹介させて (forma て) + ください. 紹介させてください = 'deixe-me apresentar', um pedido educado para você mesmo fazer a apresentação."}
+- 紹介 + する → 紹介させる (causativo) → 紹介させて (forma て) + ください. 紹介させてください = 'deixe-me apresentar', um pedido educado para você mesmo fazer a apresentação.
 
 

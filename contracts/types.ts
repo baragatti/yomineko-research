@@ -28,7 +28,7 @@ export interface Capability {
 /** Which capabilities each lesson contributes to. A keyed collection rather than a record list: the lesson id IS the key, so there is no id field inside the value. Hand-authored — a map's contract is about its key space and value shape, which the record-shape generator has no idiom for. */
 export type CapabilityLessonMap = Record<string, unknown>;
 
-/** The full inflection table for one verb or adjective, keyed by the vocab entry it belongs to. */
+/** The full inflection table for one verb or adjective. It is addressed by the vocab entry it belongs to, so `slug` here is a foreign key into vocab, not a new address. */
 export interface Conjugation {
   class: "godan" | "i_adj" | "ichidan" | "kuru_irregular" | "na_adj" | "suru_irregular";
   conjugations: {
@@ -74,27 +74,27 @@ export interface CourseManifest {
       lesson_count?: number;
       level?: Level;
       order?: number;
-      path?: "n3/course.json" | "n4/course.json" | "n5/course.json" | "pre-n5/course.json";
+      path?: string;
       title?: LocaleText;
       topic_count?: number;
     }[];
-  enums_ref: "design/unlock_enums.json";
-  generated: "2026-08-26";
-  schema_version: "1.0";
+  enums_ref: string;
+  generated: string;
+  schema_version: string;
 }
 
-/** One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. */
+/** One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. The id prefix names the section, and each section has its own required shape. */
 export interface ExamItem {
-  ai_generated?: boolean;
+  ai_generated: boolean;
   answer?: string;
-  audio?: "pending";
+  audio?: string;
   correct?: string;
   distractors?: string[];
   grammar?: string;
   id: StableId;
-  layer?: Layer;
+  layer: Layer;
   level: Level;
-  needs_review?: boolean;
+  needs_review: boolean;
   pieces?: string[];
   question?: string;
   reading?: string;
@@ -106,6 +106,7 @@ export interface ExamItem {
   source?: string;
   stem?: string;
   target?: string;
+  vocab?: string;
   vocab_id?: number;
   wrong?: string[];
 }
@@ -116,7 +117,7 @@ export interface ExerciseConjugation {
   correct: string;
   distractors: string[];
   example: string | null;
-  form: "adverbial" | "attributive" | "causative" | "causative_passive" | "conditional_ba" | "conditional_tara" | "imperative" | "masu" | "masu_negative" | "masu_past" | "masu_past_negative" | "negative" | "negative_te" | "passive" | "past" | "past_negative" | "polite" | "polite_negative" | "polite_past" | "potential" | "te" | "volitional" | "volitional_polite";
+  form: "adverbial" | "attributive" | "causative" | "causative_passive" | "conditional_ba" | "conditional_tara" | "dictionary" | "imperative" | "masu" | "masu_negative" | "masu_past" | "masu_past_negative" | "negative" | "negative_te" | "passive" | "past" | "past_negative" | "polite" | "polite_negative" | "polite_past" | "potential" | "te" | "volitional" | "volitional_polite";
   form_label: LocaleText;
   headword: string;
   id: StableId;
@@ -141,7 +142,7 @@ export interface ExerciseRole {
   layer: Layer;
   level: Level;
   needs_review: boolean;
-  particle: "\u304b\u3089" | "\u304c" | "\u306e" | "\u306f" | "\u3078" | "\u3092" | null;
+  particle: string | null;
   prompt: LocaleText;
   role: "direction" | "from" | "modifier" | "object" | "predicate" | "subject" | "topic";
   sentence: string;
@@ -150,7 +151,7 @@ export interface ExerciseRole {
 
 /** A group of items that behave alike (a conjugation class, a particle set, a semantic field), with the rule that governs the group. */
 export interface Family {
-  description: null;
+  description?: LocaleText | null;
   governing_rule: LocaleText | null;
   id: number;
   importance_rank: number;
@@ -160,22 +161,24 @@ export interface Family {
       intra_order?: number;
       is_core?: boolean;
       member_type?: "grammar" | "kanji" | "vocab";
-      note?: null;
+      note?: LocaleText | null;
       ref?: string;
+      slug?: StableId;
     }[];
   slug: StableId;
-  spans_levels: "n4" | "n5"[];
-  type: "conjugation_class" | "contrast_pair" | "function_set" | "kanji_component" | "particle_set" | "semantic_field" | "word_family";
+  spans_levels: Level[];
+  type: "conjugation_class" | "contrast_pair" | "function_set" | "kanji_component" | "particle_set" | "phonetic_series" | "semantic_field" | "word_family";
 }
 
 /** One grammar point: its forms, how it is formed, what it contrasts with, and the pedagogy around it. */
 export interface Grammar {
-  caution: "rough" | "sensitive" | null;
+  caution: "none" | "offensive" | "rough" | "sensitive" | null;
   explanation: LocaleText;
+  families: string[];
   formation: LocaleText;
   formation_steps: {
     variants?: {
-        base?: "clause" | "i-adjective" | "na-adjective" | "noun" | "verb";
+        base?: "any" | "clause" | "i-adjective" | "na-adjective" | "noun" | "verb";
         example?: string;
         steps?: unknown[];
       }[];
@@ -190,31 +193,21 @@ export interface Grammar {
   level: Level;
   level_agreement: string | null;
   level_confidence: number | null;
-  level_sources: {
-    bunpro?: "n4" | "n5";
-    hanabira?: "n3";
-    jlptsensei?: "n4" | "n5";
-    note?: "course anchor for the \u3066-form hub";
-    tanos?: "n4" | "n5";
-  };
+  level_sources: Record<string, unknown> | null;
   needs_review: boolean;
   nuance: LocaleText;
-  nuance_tags: "cause" | "change-of-state" | "comparison" | "completion" | "concession" | "condition" | "conjecture" | "continuation" | "desire" | "emphasis" | "experience" | "hearsay" | "honorific" | "humility" | "intention" | "obligation" | "permission" | "politeness" | "prohibition" | "request" | "softening"[];
+  nuance_tags: string[];
   refs: {
     also_known_as?: string[];
     label_en?: string;
-    level_sources?: {
-      bunpro?: "n4" | "n5";
-      jlptsensei?: "n4" | "n5";
-      tanos?: "n4" | "n5";
-    };
+    level_sources?: Record<string, unknown> | null;
   };
-  register: "casual" | "colloquial" | "feminine" | "formal" | "honorific" | "humble" | "literary" | "masculine" | "neutral" | "plain" | "polite" | "written"[];
-  related: "de" | "ga" | "ni" | "wa-topic-marker"[];
+  register: "casual" | "colloquial" | "dated" | "feminine" | "formal" | "honorific" | "humble" | "literary" | "masculine" | "neutral" | "plain" | "polite" | "slang" | "written"[];
+  related: string[];
   slug: StableId;
   steps_unavailable: string | null;
   structure_pattern: string;
-  usage_contexts: "academic" | "announcement" | "business" | "casual-friends" | "formal-email" | "literary" | "spoken" | "written"[];
+  usage_contexts: string[];
 }
 
 /** One hiragana or katakana character and the family it belongs to. */
@@ -227,7 +220,7 @@ export interface Kana {
   type: "base" | "dakuten" | "handakuten" | "long-vowel" | "sokuon" | "yoon";
 }
 
-/** The kana chart as ordered groups. Keyed by script, so unlike the capability map its keys are a fixed enum rather than stable IDs — which is why the two map-packed files cannot share one generated shape. */
+/** The kana chart as ordered groups. Keyed by script, so unlike the capability map its keys are a fixed enum rather than stable IDs — which is why the two map-packed files cannot share one generated shape. The script is not just a label: every id under `hiragana` must be a hiragana id, and the per-script patternProperties below are what ties the two together, so a katakana glyph filed under the wrong script fails instead of validating. */
 export type KanaFamily = Record<string, unknown>;
 
 /** One kanji character: readings, meanings, radical decomposition and the level it is taught at. Layer A apart from the pt-BR meanings. */
@@ -242,6 +235,7 @@ export interface Kanji {
       slug?: StableId;
       vocab_id?: number;
     }[];
+  families: string[];
   freq_rank: number | null;
   grade: number;
   id: number;
@@ -251,21 +245,14 @@ export interface Kanji {
   level: Level;
   level_agreement: string | null;
   level_confidence: number | null;
-  level_sources: {
-    anchor?: "jlpt_anchor:n4" | "jlpt_anchor:n5" | "jlpt_anchor:not-in-n5n4";
-    anchori?: "n1" | "n2" | "n4" | "n5";
-    bluskyo?: "n1" | "n2" | "n3" | "n4" | "n5";
-    davidluzgouveia?: "n1" | "n2" | "n3" | "n4" | "n5";
-    kanjiapi?: "n1" | "n2" | "n3" | "n4" | "n5";
-    lists?: "author-added: usado por vocabul\u00e1rio N4; fora das listas de consenso"[];
-  };
+  level_sources: Record<string, unknown> | null;
   meanings: LocaleTextList;
-  notes: null;
+  notes?: LocaleText | null;
   radical_char: string;
   readings: {
       common?: boolean;
       example_vocab_ids?: number[] | null;
-      introduced_at_level?: "n4" | "n5" | null;
+      introduced_at_level?: Level | null;
       note?: LocaleText | null;
       okurigana?: string | null;
       reading?: string;
@@ -303,21 +290,21 @@ export interface Lesson {
       id?: StableId;
       prompt?: LocaleText;
       sentence_refs?: string[];
-      type?: "cloze" | "matching" | "particle_choice" | "production" | "recognition" | "sentence_build";
+      type?: "cloze" | "handwriting" | "listening" | "matching" | "ordering" | "particle_choice" | "production" | "reading" | "recognition" | "sentence_build";
     }[];
-  feature_unlocks: "feat:conjugation-drill" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:srs-reviews"[];
+  feature_unlocks: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode"[];
   id: StableId;
   level: Level;
   needs: unknown[];
   needs_review: boolean;
   objectives: LocaleText[];
   order: number;
-  schema_version: "1.0";
+  schema_version: string;
   sentence_refs: string[];
   srs: {
     introduces_cards: {
         card_types?: unknown[];
-        deck?: "deck:grammar-n4" | "deck:grammar-n5" | "deck:kana-hiragana" | "deck:kana-katakana" | "deck:kanji-n4" | "deck:kanji-n5" | "deck:vocab-n4" | "deck:vocab-n5";
+        deck?: "deck:grammar-n3" | "deck:grammar-n4" | "deck:grammar-n5" | "deck:kana-hiragana" | "deck:kana-katakana" | "deck:kanji-n3" | "deck:kanji-n4" | "deck:kanji-n5" | "deck:phrases" | "deck:vocab-n3" | "deck:vocab-n4" | "deck:vocab-n5";
         item?: string;
       }[];
   };
@@ -325,7 +312,7 @@ export interface Lesson {
   topic: string;
   unlocks: {
       ref?: string;
-      type?: "feature" | "grammar" | "kana-family" | "kanji" | "vocab";
+      type?: "conjugation-form" | "feature" | "grammar" | "kana-family" | "kanji" | "kanji-family" | "phrase" | "srs-deck" | "vocab";
     }[];
 }
 
@@ -342,7 +329,7 @@ export interface Reading {
   source_slugs: string[];
   title: LocaleText;
   tokens: {
-      pos?: "adnominal" | "adverb" | "auxiliary" | "conjunction" | "i-adjective" | "interjection" | "na-adjective" | "noun" | "particle" | "prefix" | "pronoun" | "punctuation" | "suffix" | "verb" | "whitespace";
+      pos?: "adnominal" | "adverb" | "auxiliary" | "conjunction" | "filler" | "i-adjective" | "interjection" | "na-adjective" | "noun" | "numeral" | "particle" | "prefix" | "pronoun" | "punctuation" | "suffix" | "symbol" | "verb" | "whitespace";
       r?: string;
       ro?: string;
       s?: string;
@@ -356,7 +343,7 @@ export interface Reading {
 
 /** One fully dissected example sentence — the unit the whole corpus is built on. A sentence lives here ONCE and everything else references it by id. */
 export interface Sentence {
-  clause_structure: "cause" | "conditional" | "coordinate" | "fragment" | "imperative" | "question" | "quote" | "relative-clause" | "simple" | "subordinate-time" | "topic-comment" | null;
+  clause_structure: string | null;
   grammar: string[];
   jp: string;
   kana: string;
@@ -365,22 +352,22 @@ export interface Sentence {
   particles: {
       explanation?: LocaleText;
       function?: LocaleText | null;
-      function_type?: "adverbial" | "binding" | "case" | "conjunctive" | "nominalizer" | "sentence-final";
+      function_type?: "adverbial" | "binding" | "case" | "conjunctive" | "nominalizer" | "parallel" | "sentence-final";
       particle?: string;
     }[];
   pattern: {
       chunk?: string;
       particle?: string;
-      role?: "also" | "de-clause" | "de-phrase" | "direction" | "from" | "ga-clause" | "kara-clause" | "modifier" | "ni-phrase" | "nominalizer" | "object" | "phrase" | "predicate" | "sentence-final" | "subject" | "te-kara" | "than" | "to-clause" | "to-phrase" | "topic" | "until";
+      role?: string;
     }[] | null;
   provenance: {
     ai_generated: boolean;
     jp_source: string;
-    locale: "pt-BR";
+    locale: string;
     needs_review: boolean;
-    pt_source: "ai";
-    pt_validated_against: "dict" | "en";
-    tier: "full";
+    pt_source: "ai" | "human" | "tatoeba";
+    pt_validated_against: "both" | "dict" | "en" | "none";
+    tier: string;
     translation_confidence: number;
   };
   romaji: string;
@@ -390,18 +377,19 @@ export interface Sentence {
   tokens: {
       conjugation_note?: LocaleText | null;
       gloss?: LocaleText | null;
-      inflection?: "attributive" | "conditional" | "continuative" | "imperative" | "irrealis" | "stem" | "terminal" | "volitional" | null;
+      inflection?: "attributive" | "conditional" | "continuative" | "imperative" | "irrealis" | "ku-form" | "stem" | "terminal" | "volitional" | null;
       inflection_type?: string | null;
       lemma?: string;
-      pos?: "adnominal" | "adverb" | "auxiliary" | "conjunction" | "i-adjective" | "interjection" | "na-adjective" | "noun" | "particle" | "prefix" | "pronoun" | "punctuation" | "suffix" | "verb" | "whitespace" | null;
-      pos_coarse?: "\u4ee3\u540d\u8a5e" | "\u526f\u8a5e" | "\u52a9\u52d5\u8a5e" | "\u52a9\u8a5e" | "\u52d5\u8a5e" | "\u540d\u8a5e" | "\u5f62\u5bb9\u8a5e" | "\u5f62\u72b6\u8a5e" | "\u611f\u52d5\u8a5e" | "\u63a5\u5c3e\u8f9e" | "\u63a5\u7d9a\u8a5e" | "\u63a5\u982d\u8f9e" | "\u7a7a\u767d" | "\u88dc\u52a9\u8a18\u53f7" | "\u9023\u4f53\u8a5e";
-      pos_fine?: "*" | "\u30bf\u30ea" | "\u30d5\u30a3\u30e9\u30fc" | "\u4e00\u822c" | "\u4fc2\u52a9\u8a5e" | "\u526f\u52a9\u8a5e" | "\u52a9\u52d5\u8a5e\u8a9e\u5e79" | "\u52d5\u8a5e\u7684" | "\u53e5\u70b9" | "\u540d\u8a5e\u7684" | "\u56fa\u6709\u540d\u8a5e" | "\u5f62\u5bb9\u8a5e\u7684" | "\u5f62\u72b6\u8a5e\u7684" | "\u62ec\u5f27\u9589" | "\u62ec\u5f27\u958b" | "\u63a5\u7d9a\u52a9\u8a5e" | "\u6570\u8a5e" | "\u666e\u901a\u540d\u8a5e" | "\u683c\u52a9\u8a5e" | "\u6e96\u4f53\u52a9\u8a5e" | "\u7d42\u52a9\u8a5e" | "\u8aad\u70b9" | "\u975e\u81ea\u7acb\u53ef\u80fd";
+      pos?: "adnominal" | "adverb" | "auxiliary" | "conjunction" | "filler" | "i-adjective" | "interjection" | "na-adjective" | "noun" | "numeral" | "particle" | "prefix" | "pronoun" | "punctuation" | "suffix" | "symbol" | "verb" | "whitespace" | null;
+      pos_coarse?: string;
+      pos_fine?: string;
       position?: number;
       reading?: string;
       role?: LocaleText | null;
       romaji?: string | null;
-      split_mode?: "A" | "C";
+      split_mode?: "A" | "B" | "C";
       surface?: string;
+      vocab?: string | null;
       vocab_id?: number | null;
     }[];
   translation: LocaleText;
@@ -414,12 +402,12 @@ export interface SpeakPath {
   id: StableId;
   layer: Layer;
   needs_review: boolean;
-  ordering: "survival scenario (primary) + vocab.freq_rank (secondary)";
-  schema_version: "1.0";
+  ordering: string;
+  schema_version: string;
   shortfall: unknown[];
-  spec: "design/speaking_path.md";
+  spec: string;
   stages: {
-      approx_band?: "n3" | "n4" | "n4/n3" | "n5" | "n5/n4" | "pre-n5" | "pre-n5/n5";
+      approx_band?: string;
       order?: number;
       slug?: StableId;
       title?: LocaleText;
@@ -444,25 +432,25 @@ export interface SpeakPath {
 
 /** One unit of the speaking path: phrases, drills and a checkpoint for a single situation. */
 export interface SpeakUnit {
-  audio: "pending";
+  audio: string;
   checkpoint: {
       distractors?: string[];
       id?: StableId;
-      type?: "context_fill" | "kanji_reading" | "paraphrase" | "sentence_order";
+      type?: "context_fill" | "grammar_form" | "kanji_reading" | "orthography" | "paraphrase" | "reading_comp" | "sentence_order" | "text_grammar" | "usage";
       via?: "new-word" | "phrase" | "review";
     }[];
-  chunk_phrases: "sent:tatoeba-13174949" | "sent:tatoeba-1531875" | "sent:tatoeba-1532832" | "sent:tatoeba-1576172" | "sent:tatoeba-1598216" | "sent:tatoeba-335372" | "sent:tatoeba-3480287" | "sent:tatoeba-3553332" | "sent:tatoeba-373351" | "sent:tatoeba-408301" | "sent:tatoeba-426889" | "sent:tatoeba-4854" | "sent:tatoeba-4971" | "sent:tatoeba-640569" | "sent:tatoeba-8467948" | "sent:tatoeba-9559301"[];
+  chunk_phrases: StableId[];
   cumulative_known_vocab: number;
   drills: {
       examples?: string[];
       pattern?: string;
-      strand?: "language-focused";
+      strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";
     }[];
   fluency: {
     items?: string[];
-    prompt_pt?: "Algu\u00e9m perguntou como foi seu fim de semana. Conte, no passado." | "Algu\u00e9m puxou assunto com voc\u00ea. Diga quem voc\u00ea \u00e9, de onde vem e do que gosta." | "Perguntaram sua opini\u00e3o. Diga o que voc\u00ea acha e por qu\u00ea." | "Um amigo quer marcar alguma coisa. Combine dia e hor\u00e1rio." | "Voc\u00ea acabou de desembarcar. Cumprimente, agrade\u00e7a e pe\u00e7a licen\u00e7a \u2014 em voz alta, sem ler." | "Voc\u00ea chegou no hotel. Fa\u00e7a o check-in e resolva um problema no quarto." | "Voc\u00ea est\u00e1 numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa." | "Voc\u00ea est\u00e1 numa loja com uma coisa na m\u00e3o. Pergunte o pre\u00e7o e feche a compra." | "Voc\u00ea n\u00e3o est\u00e1 bem. Explique o que est\u00e1 sentindo e pe\u00e7a ajuda." | "Voc\u00ea precisa pedir um favor a algu\u00e9m mais velho. Pe\u00e7a com jeito." | "Voc\u00ea se perdeu perto da esta\u00e7\u00e3o. Pergunte o caminho e confirme se entendeu." | "Voc\u00ea sentou num restaurante. Pe\u00e7a o que quer comer e beber, e diga se est\u00e1 bom.";
+    prompt_pt?: string;
     seconds_target?: number;
-    strand?: "fluency";
+    strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";
     zero_new_tokens?: boolean;
   };
   id: StableId;
@@ -477,13 +465,13 @@ export interface SpeakUnit {
       answer_key?: string;
       prompt_pt?: string;
       sentence?: string;
-      strand?: "meaning-output";
+      strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";
     }[];
   real_phrases: number;
   say_now: string[];
-  schema_version: "1.0";
+  schema_version: string;
   shadowing: string[];
-  stage: "speak:about_you" | "speak:arrival" | "speak:eating" | "speak:getting_around" | "speak:health" | "speak:lodging" | "speak:opinions" | "speak:past_stories" | "speak:politeness" | "speak:real_talk" | "speak:shopping" | "speak:time_plans";
+  stage: StableId;
   strand_counts: {
     fluency: number;
     "language-focused": number;
@@ -505,18 +493,18 @@ export interface SpeakUnit {
 export interface StrokeKana {
   char: string;
   kind: "hiragana" | "katakana";
-  license: "OFL-1.1+MIT";
+  license: string;
   shadows: unknown[][];
   "shadows[]"?: Record<string, unknown>;
   source: string;
   strokes: string[];
-  viewbox: "0 0 1024 1024";
+  viewbox: string;
 }
 
 /** Raw stroke path geometry for one kanji. */
 export interface StrokeLines {
   character: string;
-  license: "GlyphWiki-free";
+  license: string;
   source: string;
   strokes: string[];
 }
@@ -524,12 +512,12 @@ export interface StrokeLines {
 /** Ordered stroke steps for one kanji, for animating how it is written. */
 export interface StrokeOrder {
   character: string;
-  license: "CC-BY-4.0";
+  license: string;
   source: string;
   steps: string[];
   total_strokes: number;
-  transform: "translate(0.000000,248.000000) scale(0.100000,-0.100000)";
-  viewbox: "0 0 248.000000 248.000000";
+  transform: string;
+  viewbox: string;
 }
 
 /** A block of lessons that closes one theme, and the items it unlocks. */
@@ -544,7 +532,7 @@ export interface Topic {
       title?: LocaleText;
       unlocks?: {
           ref?: string;
-          type?: "feature" | "grammar" | "kana-family" | "kanji" | "vocab";
+          type?: "conjugation-form" | "feature" | "grammar" | "kana-family" | "kanji" | "kanji-family" | "phrase" | "srs-deck" | "vocab";
         }[];
     }[];
   level: Level;
@@ -558,6 +546,7 @@ export interface Topic {
 export interface Vocab {
   adj_class: "i_adj" | "na_adj" | null;
   common: boolean;
+  families: string[];
   forms: {
       form?: string;
       is_common?: boolean;
@@ -572,29 +561,22 @@ export interface Vocab {
   level: Level;
   level_agreement: string | null;
   level_confidence: number | null;
-  level_sources: {
-    bluskyo?: "n3" | "n4" | "n5";
-    correction?: "2026-07-09 kana-collision fix: bluskyo/jlptvocabapi \u305b\u3063\u3051\u3093 n5 rows mean \u77f3\u9e78 (soap, vocab:1382590); \u63a5\u898b is unlisted in every ingested JLPT list -> conservative n1 (advanced formal/legal term)";
-    elzup?: "n4" | "n5";
-    "jlpt-lists"?: "n1" | "n2";
-    jlptvocabapi?: "n4" | "n5";
-    openanki?: "n4" | "n5";
-  };
-  lexeme_type: "counter" | "suru_verb" | "word";
+  level_sources: Record<string, unknown> | null;
+  lexeme_type: "aux" | "counter" | "expression" | "prefix" | "suffix" | "suru_verb" | "word";
   notes: LocaleText | null;
   pitch: {
       accent_positions?: number[];
       reading?: string;
     }[];
-  register: "humble"[] | null;
+  register: "archaic" | "colloquial" | "familiar" | "honorific" | "humble" | "polite" | "slang" | "vulgar"[] | null;
   romaji: string;
   senses: {
       field?: unknown[];
       gloss?: LocaleTextList;
-      misc?: "hum"[];
+      misc?: string[];
       order?: number;
       pos?: string[];
-      register?: "humble"[] | null;
+      register?: "archaic" | "colloquial" | "familiar" | "honorific" | "humble" | "polite" | "slang" | "vulgar"[] | null;
     }[];
   slug: StableId;
   verb_class: "godan" | "ichidan" | "kuru_irregular" | "suru_irregular" | null;

@@ -42,23 +42,23 @@ Usando o katakana que você já aprendeu, leia estas palavrinhas em voz alta:ワ
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'wa'?"}
+### 1. (recognition) Qual katakana representa o som 'wa'?
 - **Resposta:** `{"choices": ["ワ", "ク", "ウ"], "correct": "ワ"}`
-- {'pt-BR': 'ワ = wa. ク = ku e ウ = u são os sósias dele.'}
+- ワ = wa. ク = ku e ウ = u são os sósias dele.
 
 
-### 2. (recognition) {'pt-BR': 'Que som tem ヲ?'}
+### 2. (recognition) Que som tem ヲ?
 - **Resposta:** `{"choices": ["wo", "wa", "u"], "correct": "wo"}`
-- {'pt-BR': "ヲ = wo (lê-se quase como o 'ô' de 'avô', não o 'ó' aberto). É raríssimo no japonês moderno; a partícula usa を em hiragana."}
+- ヲ = wo (lê-se quase como o 'ô' de 'avô', não o 'ó' aberto). É raríssimo no japonês moderno; a partícula usa を em hiragana.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
+### 3. (matching) Ligue cada katakana ao seu som.
 - **Resposta:** `{"pairs": [["ワ", "wa"], ["ヲ", "wo"]]}`
-- {'pt-BR': 'Os dois kana da Família do WA. Lembre que ヲ quase não aparece em palavras.'}
+- Os dois kana da Família do WA. Lembre que ヲ quase não aparece em palavras.
 
 
-### 4. (production) {'pt-BR': "Escreva o katakana do som 'wa'."}
+### 4. (production) Escreva o katakana do som 'wa'.
 - **Resposta:** `{"text": "ワ", "accept": ["ワ"]}`
-- {'pt-BR': "'wa' = ワ. Cuidado para não confundir com ク (ku) ou ウ (u)."}
+- 'wa' = ワ. Cuidado para não confundir com ク (ku) ou ウ (u).
 
 

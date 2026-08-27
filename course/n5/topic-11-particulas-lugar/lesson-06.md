@@ -83,28 +83,28 @@ Mais três palavrinhas úteis para suas frases:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que a frase ひるごはんを食べに行きます expressa?'}
+### 1. (recognition) O que a frase ひるごはんを食べに行きます expressa?
 - **Resposta:** `{"choices": ["Vou (sair) para almoçar", "Estou almoçando agora", "Não vou almoçar"], "correct": "Vou (sair) para almoçar"}`
-- {'pt-BR': "食べ (raiz de 食べる) + に行きます marca a finalidade da ida: 'ir a fim de comer'. Com ひるごはん (almoço), o natural em pt-BR é 'vou almoçar'."}
+- 食べ (raiz de 食べる) + に行きます marca a finalidade da ida: 'ir a fim de comer'. Com ひるごはん (almoço), o natural em pt-BR é 'vou almoçar'.
 - frases: `sent:gen-59bccb81087b`
 
-### 2. (particle_choice) {'pt-BR': "Complete para dizer 'vou ver um filme': 映画を見＿行きます。"}
+### 2. (particle_choice) Complete para dizer 'vou ver um filme': 映画を見＿行きます。
 - **Resposta:** `{"choices": ["に", "で", "を"], "correct": "に"}`
-- {'pt-BR': 'Na construção 〜に行く, a partícula に liga o objetivo (見, raiz de 見る = ver) ao verbo de movimento. Aqui ela marca finalidade, não destino.'}
+- Na construção 〜に行く, a partícula に liga o objetivo (見, raiz de 見る = ver) ao verbo de movimento. Aqui ela marca finalidade, não destino.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com o dia certo: 水曜日と＿は学校に行きます。 (Vou à escola na quarta e na sexta.); escreva a sexta-feira em kana.'}
+### 3. (cloze) Complete com o dia certo: 水曜日と＿は学校に行きます。 (Vou à escola na quarta e na sexta.); escreva a sexta-feira em kana.
 - **Resposta:** `{"text": "きんようび", "full": "水曜日ときんようびは学校に行きます。"}`
-- {'pt-BR': "金曜日 (きんようび) = sexta-feira. Todos os dias terminam em 曜日 (ようび). Aqui 学校に行く usa o に de destino ('ir À escola'), diferente do に de finalidade."}
+- 金曜日 (きんようび) = sexta-feira. Todos os dias terminam em 曜日 (ようび). Aqui 学校に行く usa o に de destino ('ir À escola'), diferente do に de finalidade.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Se o tempo estiver bom, a gente vai fazer uma trilha.' com as peças: [ハイキングに] [天気が] [行く] [よければ]"}
+### 4. (sentence_build) Monte 'Se o tempo estiver bom, a gente vai fazer uma trilha.' com as peças: [ハイキングに] [天気が] [行く] [よければ]
 - **Resposta:** `{"order": ["天気が", "よければ", "ハイキングに", "行く"], "text": "天気がよければハイキングに行く"}`
-- {'pt-BR': "ハイキング (substantivo de ação) gruda direto em に行く ('ir fazer uma trilha'). 天気がよければ ('se o tempo estiver bom') abre a condição; o objetivo + に行く fecha a frase."}
+- ハイキング (substantivo de ação) gruda direto em に行く ('ir fazer uma trilha'). 天気がよければ ('se o tempo estiver bom') abre a condição; o objetivo + に行く fecha a frase.
 - frases: `sent:tatoeba-125175`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Na segunda-feira vou comprar (algo).' usando 月曜日, a raiz de 買う (kau, comprar = 買い) e 〜に行く no educado."}
+### 5. (production) Diga em japonês 'Na segunda-feira vou comprar (algo).' usando 月曜日, a raiz de 買う (kau, comprar = 買い) e 〜に行く no educado.
 - **Resposta:** `{"text": "月曜日に買いに行きます。", "accept": ["月曜日に買いに行きます", "げつようびに買いに行きます", "げつようびにかいにいきます", "月曜日にかいにいきます"]}`
-- {'pt-BR': '月曜日に (na segunda; に de tempo) + 買い (raiz de 買う) + に行きます (finalidade). Os dois に têm papéis diferentes: o primeiro marca o dia, o segundo marca o objetivo da ida.'}
+- 月曜日に (na segunda; に de tempo) + 買い (raiz de 買う) + に行きます (finalidade). Os dois に têm papéis diferentes: o primeiro marca o dia, o segundo marca o objetivo da ida.
 
 

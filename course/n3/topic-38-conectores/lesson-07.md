@@ -75,28 +75,28 @@ O par 腹 (はら, barriga) e 原 (はら, campo) é um bom exemplo de como o ka
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é a leitura correta de 犯人?'}
+### 1. (recognition) Qual é a leitura correta de 犯人?
 - **Resposta:** `{"choices": ["はんにん", "はんざい", "はんだん", "ひがい"], "correct": "はんにん"}`
-- {'pt-BR': '犯人 lê-se はんにん e significa "criminoso, culpado, autor do crime". Não confunda com 犯罪 (はんざい), que é o crime em si.'}
+- 犯人 lê-se はんにん e significa "criminoso, culpado, autor do crime". Não confunda com 犯罪 (はんざい), que é o crime em si.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra à sua tradução em português.'}
+### 2. (matching) Associe cada palavra à sua tradução em português.
 - **Resposta:** `{"pairs": [["範囲", "extensão, alcance, âmbito"], ["場面", "cena, situação"], ["被害", "dano, prejuízo"], ["省く", "omitir, deixar de fora"]]}`
-- {'pt-BR': '範囲 (はんい) é o escopo ou alcance de algo; 場面 (ばめん) é uma cena ou situação; 被害 (ひがい) é o prejuízo sofrido pela vítima; e 省く (はぶく) é omitir ou excluir.'}
+- 範囲 (はんい) é o escopo ou alcance de algo; 場面 (ばめん) é uma cena ou situação; 被害 (ひがい) é o prejuízo sofrido pela vítima; e 省く (はぶく) é omitir ou excluir.
 
 
-### 3. (cloze) {'pt-BR': 'Complete: この道路は___が広い。(Esta rua é larga / tem bastante largura.)'}
+### 3. (cloze) Complete: この道路は___が広い。(Esta rua é larga / tem bastante largura.)
 - **Resposta:** `{"text": "幅", "full": "この道路は幅が広い。"}`
-- {'pt-BR': '幅 (はば) significa "largura". A expressão 幅が広い quer dizer "ser largo, ter bastante largura".'}
+- 幅 (はば) significa "largura". A expressão 幅が広い quer dizer "ser largo, ter bastante largura".
 
 
-### 4. (recognition) {'pt-BR': 'Os dois kanji 腹 e 原 têm a mesma leitura はら. Qual deles significa "barriga, abdômen"?'}
+### 4. (recognition) Os dois kanji 腹 e 原 têm a mesma leitura はら. Qual deles significa "barriga, abdômen"?
 - **Resposta:** `{"choices": ["腹", "原"], "correct": "腹"}`
-- {'pt-BR': '腹 (はら) é "barriga, abdômen, ventre". Já 原 (はら) é "campo, planície, descampado". A leitura é igual; só o kanji e o contexto distinguem.'}
+- 腹 (はら) é "barriga, abdômen, ventre". Já 原 (はら) é "campo, planície, descampado". A leitura é igual; só o kanji e o contexto distinguem.
 
 
-### 5. (production) {'pt-BR': 'Traduza para o japonês usando o conector その上: "A polícia está procurando o criminoso e, além disso, há poucas pistas."'}
+### 5. (production) Traduza para o japonês usando o conector その上: "A polícia está procurando o criminoso e, além disso, há poucas pistas."
 - **Resposta:** `{"text": "警察は犯人を探している。その上、手がかりが少ない", "accept": ["警察は犯人を探している。その上手がかりが少ない", "けいさつは犯人をさがしている。その上、手がかりが少ない", "警察は犯人をさがしている。その上、てがかりが少ない"]}`
-- {'pt-BR': '犯人 (はんにん) é o criminoso e 探す (さがす) é "procurar". O conector その上 liga as duas ideias com o sentido de "além disso, e ainda por cima".'}
+- 犯人 (はんにん) é o criminoso e 探す (さがす) é "procurar". O conector その上 liga as duas ideias com o sentido de "além disso, e ainda por cima".
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:eating",
   "order": 1,
   "title": {
-    "pt-BR": "Comer e beber fora — parte 1"
+    "pt-BR": "Comer e beber fora, parte 1"
   },
   "say_now": [
     "sent:tatoeba-182409",
@@ -33,7 +33,9 @@
     "vocab:1436560",
     "vocab:1270590"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:demo"
+  ],
   "kanji_recognition": [
     "救",
     "出",
@@ -55,6 +57,88 @@
   "cumulative_known_vocab": 93,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-115",
+    "gram:gp-36",
+    "gram:totemo",
+    "gram:temo",
+    "gram:gp-16"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:demo",
+      "examples": [
+        "sent:tatoeba-4781",
+        "sent:tatoeba-74951",
+        "sent:tatoeba-76884"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Eu só sei isto.",
+      "answer_key": "ぼくはこれだけしか知らない。",
+      "accepted_variants": [
+        "ぼくはこれだけしか知らない",
+        "ぼくはこれだけしか知らない。",
+        "ぼくわこれだけしかしらない",
+        "ぼくわこれだけしかしらない。"
+      ],
+      "sentence": "sent:tatoeba-196349",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu preciso de dinheiro.",
+      "answer_key": "ぼくはお金がいる。",
+      "accepted_variants": [
+        "ぼくはお金がいる",
+        "ぼくはお金がいる。",
+        "ぼくわおかねがいる",
+        "ぼくわおかねがいる。"
+      ],
+      "sentence": "sent:tatoeba-196365",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Assim que comprei aquele livro, me arrependi.",
+      "answer_key": "私はその本を買ったとたんに後悔した。",
+      "accepted_variants": [
+        "わたしわそのほんをかったとたんにこうかいした",
+        "わたしわそのほんをかったとたんにこうかいした。",
+        "私はその本を買ったとたんに後悔した",
+        "私はその本を買ったとたんに後悔した。"
+      ],
+      "sentence": "sent:tatoeba-159849",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-81631",
+      "sent:tatoeba-217663",
+      "sent:tatoeba-9240812",
+      "sent:jec-1593",
+      "sent:tatoeba-76061",
+      "sent:tatoeba-149750"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:714",
@@ -106,72 +190,5 @@
         "あなた"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-115",
-    "gram:gp-63",
-    "gram:rareru",
-    "gram:gp-36",
-    "gram:te-iru",
-    "gram:totemo"
-  ],
-  "drills": [],
-  "production": [
-    {
-      "prompt_pt": "Eu só sei isto.",
-      "answer_key": "ぼくはこれだけしか知らない。",
-      "accepted_variants": [
-        "ぼくはこれだけしか知らない",
-        "ぼくはこれだけしか知らない。"
-      ],
-      "sentence": "sent:tatoeba-196349",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu preciso de dinheiro.",
-      "answer_key": "ぼくはお金がいる。",
-      "accepted_variants": [
-        "ぼくはお金がいる",
-        "ぼくはお金がいる。"
-      ],
-      "sentence": "sent:tatoeba-196365",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Assim que comprei aquele livro, me arrependi.",
-      "answer_key": "私はその本を買ったとたんに後悔した。",
-      "accepted_variants": [
-        "私はその本を買ったとたんに後悔した",
-        "私はその本を買ったとたんに後悔した。"
-      ],
-      "sentence": "sent:tatoeba-159849",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
-    "items": [
-      "sent:tatoeba-81631",
-      "sent:tatoeba-217663",
-      "sent:tatoeba-9240812",
-      "sent:jec-1593",
-      "sent:tatoeba-76061",
-      "sent:tatoeba-149750"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 27,
-    "fluency": 6
-  }
+  ]
 }

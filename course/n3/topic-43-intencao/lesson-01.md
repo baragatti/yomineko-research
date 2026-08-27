@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-uto-shita, n3-you-to-omou, n3-you-to-shinai] · vocabulário [かも知れない, 勘, 感じ, 感じる, 感動, 感情, 感覚, 期待, 機嫌, 科目, 考え, 記憶, 関心, 髪の毛] · kanji [念 想 残 然 追 限] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-4959`, `sent:tatoeba-8075115`
 
 ---
 
@@ -86,28 +86,28 @@ Armadilha PT: em 行こう e 寝よう, o final おう/よう traz uma vogal lon
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase significa 'ele não dá o menor sinal de pedir desculpas'?"}
+### 1. (recognition) Qual frase significa 'ele não dá o menor sinal de pedir desculpas'?
 - **Resposta:** `{"choices": ["彼は謝ろうと思う", "彼は謝ろうとしない", "彼は謝ろうとした", "彼は謝りましょう"], "correct": "彼は謝ろうとしない"}`
-- {'pt-BR': "〜ようとしない indica recusa ou falta de iniciativa de outra pessoa: 謝ろうとしない = 'não dá sinal de pedir desculpas'. A opção com 思う seria a intenção do próprio falante, e a com とした seria uma tentativa passada frustrada."}
+- 〜ようとしない indica recusa ou falta de iniciativa de outra pessoa: 謝ろうとしない = 'não dá sinal de pedir desculpas'. A opção com 思う seria a intenção do próprio falante, e a com とした seria uma tentativa passada frustrada.
 
 
-### 2. (cloze) {'pt-BR': "Complete 'tentei pegar o trem, mas a porta fechou': 電車に乗___としたが、ドアが閉まった。"}
+### 2. (cloze) Complete 'tentei pegar o trem, mas a porta fechou': 電車に乗___としたが、ドアが閉まった。
 - **Resposta:** `{"text": "ろう", "full": "電車に乗ろうとしたが、ドアが閉まった"}`
-- {'pt-BR': "乗る (grupo 1) vira a volitiva 乗ろう e recebe としたが. O が introduz o obstáculo que frustrou a tentativa: a porta fechou. Esse padrão volitiva + としたが + 'mas...' é típico de 〜うとした."}
+- 乗る (grupo 1) vira a volitiva 乗ろう e recebe としたが. O が introduz o obstáculo que frustrou a tentativa: a porta fechou. Esse padrão volitiva + としたが + 'mas...' é típico de 〜うとした.
 
 
-### 3. (particle_choice) {'pt-BR': "Em 来年日本へ行こう＿思います ('ano que vem pretendo ir ao Japão'), qual partícula completa a estrutura de intenção?"}
+### 3. (particle_choice) Em 来年日本へ行こう＿思います ('ano que vem pretendo ir ao Japão'), qual partícula completa a estrutura de intenção?
 - **Resposta:** `{"choices": ["と", "を", "が", "に"], "correct": "と"}`
-- {'pt-BR': "A estrutura é 〜ようと思う: a volitiva 行こう liga-se a 思う pela partícula と (a mesma que cita o conteúdo de um pensamento). 行こうと思います = 'penso em ir / pretendo ir'."}
+- A estrutura é 〜ようと思う: a volitiva 行こう liga-se a 思う pela partícula と (a mesma que cita o conteúdo de um pensamento). 行こうと思います = 'penso em ir / pretendo ir'.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada estrutura ao seu sentido.'}
+### 4. (matching) Ligue cada estrutura ao seu sentido.
 - **Resposta:** `{"pairs": [["〜ようと思う", "intenção do falante ('acho que vou')"], ["〜うとした", "tentativa frustrada no passado ('tentou, mas...')"], ["〜ようとしない", "recusa de outra pessoa ('não dá sinal de')"]]}`
-- {'pt-BR': 'As três saem da volitiva: と思う anuncia o próprio plano; とした (passado) relata uma tentativa que não deu certo; としない nega o esforço de um terceiro.'}
+- As três saem da volitiva: と思う anuncia o próprio plano; とした (passado) relata uma tentativa que não deu certo; としない nega o esforço de um terceiro.
 
 
-### 5. (production) {'pt-BR': "Diga 'Ano que vem pretendo estudar japonês' usando 〜ようと思う com o verbo 勉強する (forma polida 思います)."}
+### 5. (production) Diga 'Ano que vem pretendo estudar japonês' usando 〜ようと思う com o verbo 勉強する (forma polida 思います).
 - **Resposta:** `{"text": "来年日本語を勉強しようと思います", "accept": ["来年日本語を勉強しようと思います。", "らいねんにほんごをべんきょうしようとおもいます", "来年日本語を勉強しようと思う", "日本語を勉強しようと思います"]}`
-- {'pt-BR': "勉強する é irregular: a volitiva é 勉強しよう. Some と思います ('pretendo'): 勉強しようと思います. O objeto 日本語 leva を. A volitiva 〜よう aqui é a intenção do falante, não um convite."}
+- 勉強する é irregular: a volitiva é 勉強しよう. Some と思います ('pretendo'): 勉強しようと思います. O objeto 日本語 leva を. A volitiva 〜よう aqui é a intenção do falante, não um convite.
 
 

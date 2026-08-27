@@ -83,28 +83,28 @@ Aproveite o tema desta lição para guardar dois kanji que não estão nas palav
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'distrito, zona, região'?"}
+### 1. (recognition) Qual palavra significa 'distrito, zona, região'?
 - **Resposta:** `{"choices": ["地区", "中央", "地平線", "知事"], "correct": "地区"}`
-- {'pt-BR': "地区 (ちく) é 'distrito, zona, região'. 中央 (ちゅうおう) é 'centro'; 地平線 (ちへいせん) é 'horizonte'; 知事 (ちじ) é 'governador'."}
+- 地区 (ちく) é 'distrito, zona, região'. 中央 (ちゅうおう) é 'centro'; 地平線 (ちへいせん) é 'horizonte'; 知事 (ちじ) é 'governador'.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em português.'}
+### 2. (matching) Associe cada palavra ao seu significado em português.
 - **Resposta:** `{"pairs": [["地球", "Terra, o globo"], ["知識", "conhecimento, saber"], ["遅刻", "atraso, chegar atrasado"], ["中古", "usado, de segunda mão"]]}`
-- {'pt-BR': '地球 (ちきゅう) é o planeta Terra; 知識 (ちしき) é o conhecimento que se acumula; 遅刻 (ちこく) é o ato de chegar atrasado; 中古 (ちゅうこ) descreve algo usado, de segunda mão.'}
+- 地球 (ちきゅう) é o planeta Terra; 知識 (ちしき) é o conhecimento que se acumula; 遅刻 (ちこく) é o ato de chegar atrasado; 中古 (ちゅうこ) descreve algo usado, de segunda mão.
 
 
-### 3. (cloze) {'pt-BR': "Complete com a palavra para 'cancelamento/suspensão': 雨のため試合は＿された。 (Por causa da chuva, a partida foi cancelada.)"}
+### 3. (cloze) Complete com a palavra para 'cancelamento/suspensão': 雨のため試合は＿された。 (Por causa da chuva, a partida foi cancelada.)
 - **Resposta:** `{"text": "中止", "full": "雨のため試合は中止された。"}`
-- {'pt-BR': "中止 (ちゅうし) é 'interrupção, suspensão, cancelamento'. Aqui aparece com a passiva: 中止された ('foi cancelada')."}
+- 中止 (ちゅうし) é 'interrupção, suspensão, cancelamento'. Aqui aparece com a passiva: 中止された ('foi cancelada').
 
 
-### 4. (particle_choice) {'pt-BR': 'Complete: 新しい知識を得る＿＿は楽しい。 (Adquirir conhecimento novo é prazeroso.)'}
+### 4. (particle_choice) Complete: 新しい知識を得る＿＿は楽しい。 (Adquirir conhecimento novo é prazeroso.)
 - **Resposta:** `{"choices": ["こと", "ちゃ", "ちゅう"], "correct": "こと"}`
-- {'pt-BR': "こと nominaliza o verbo 得る ('adquirir'), formando 'o ato de adquirir'. ちゃ ('chá') e ちゅう ('nota') não fazem sentido aqui."}
+- こと nominaliza o verbo 得る ('adquirir'), formando 'o ato de adquirir'. ちゃ ('chá') e ちゅう ('nota') não fazem sentido aqui.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês: 'Comprei um carro usado.' (use 中古 para 'usado' e 車 para 'carro')."}
+### 5. (production) Diga em japonês: 'Comprei um carro usado.' (use 中古 para 'usado' e 車 para 'carro').
 - **Resposta:** `{"text": "中古の車を買った。", "accept": ["中古の車を買った", "ちゅうこのくるまをかった", "中古の車を買いました", "中古車を買った"]}`
-- {'pt-BR': "中古 (ちゅうこ, 'usado') liga-se a 車 ('carro') pela partícula の: 中古の車. Em seguida, を買った ('comprei'). A forma cortês 買いました também está correta."}
+- 中古 (ちゅうこ, 'usado') liga-se a 車 ('carro') pela partícula の: 中古の車. Em seguida, を買った ('comprei'). A forma cortês 買いました também está correta.
 
 

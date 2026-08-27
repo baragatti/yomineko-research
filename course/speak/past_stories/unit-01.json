@@ -4,7 +4,7 @@
   "stage": "speak:past_stories",
   "order": 1,
   "title": {
-    "pt-BR": "Contar o que aconteceu — parte 1"
+    "pt-BR": "Contar o que aconteceu, parte 1"
   },
   "say_now": [
     "sent:tatoeba-85300",
@@ -54,58 +54,6 @@
   "cumulative_known_vocab": 419,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "kr:n4:935",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まもる",
-        "からい",
-        "ピアノ"
-      ]
-    },
-    {
-      "id": "kr:n5:375",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おじ",
-        "その",
-        "くる"
-      ]
-    },
-    {
-      "id": "cf:n3:3701:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "男",
-        "為",
-        "車"
-      ]
-    },
-    {
-      "id": "cf:n3:3705:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "駅",
-        "傘",
-        "間"
-      ]
-    },
-    {
-      "id": "pp:n3:1422",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "昼",
-        "点",
-        "心"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -168,6 +116,8 @@
       "prompt_pt": "Tomara que você não pegue um resfriado.",
       "answer_key": "風邪をひきませんように。",
       "accepted_variants": [
+        "かぜをひきませんように",
+        "かぜをひきませんように。",
         "風邪をひきませんように",
         "風邪をひきませんように。"
       ],
@@ -178,6 +128,8 @@
       "prompt_pt": "A febre subiu.",
       "answer_key": "熱が上がった。",
       "accepted_variants": [
+        "ねつがあがった",
+        "ねつがあがった。",
         "熱が上がった",
         "熱が上がった。"
       ],
@@ -188,6 +140,8 @@
       "prompt_pt": "A tosse estava terrível, então tomei um remédio amargo.",
       "answer_key": "せきがひどかったので、苦い薬を飲んだ。",
       "accepted_variants": [
+        "せきがひどかったので、にがいくすりをのんだ",
+        "せきがひどかったので、にがいくすりをのんだ。",
         "せきがひどかったので、苦い薬を飲んだ",
         "せきがひどかったので、苦い薬を飲んだ。"
       ],
@@ -210,15 +164,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "kr:n4:935",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まもる",
+        "からい",
+        "ピアノ"
+      ]
+    },
+    {
+      "id": "kr:n5:375",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おじ",
+        "その",
+        "くる"
+      ]
+    },
+    {
+      "id": "cf:n3:3701:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "男",
+        "為",
+        "車"
+      ]
+    },
+    {
+      "id": "cf:n3:3705:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "駅",
+        "傘",
+        "間"
+      ]
+    },
+    {
+      "id": "pp:n3:1422",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "昼",
+        "点",
+        "心"
+      ]
+    }
+  ]
 }

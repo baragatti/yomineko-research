@@ -4,7 +4,7 @@
   "stage": "speak:health",
   "order": 1,
   "title": {
-    "pt-BR": "Emergência e saúde — parte 1"
+    "pt-BR": "Emergência e saúde, parte 1"
   },
   "say_now": [
     "sent:tatoeba-190906",
@@ -47,53 +47,6 @@
   "cumulative_known_vocab": 375,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3402",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:4009:805",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "良い",
-        "バス",
-        "洋袴"
-      ]
-    },
-    {
-      "id": "kr:n5:51",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あそぶ",
-        "てんき",
-        "すわる"
-      ]
-    },
-    {
-      "id": "cf:n3:3572:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "左",
-        "何",
-        "暇"
-      ]
-    },
-    {
-      "id": "kr:n4:1074",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "しゅみ",
-        "やすむ",
-        "いしゃ"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:te-morau",
     "gram:gp-36"
@@ -141,6 +94,8 @@
       "prompt_pt": "Quando foi a última vez que você cortou o cabelo?",
       "answer_key": "最後に髪切ったのいつですか？",
       "accepted_variants": [
+        "さいごにかみきったのいつですか",
+        "さいごにかみきったのいつですか?",
         "最後に髪切ったのいつですか",
         "最後に髪切ったのいつですか？"
       ],
@@ -151,6 +106,8 @@
       "prompt_pt": "A escola começa às 8h10 da manhã.",
       "answer_key": "学校は午前８時１０分から始まる。",
       "accepted_variants": [
+        "がっこうわごぜんはちじじゅっぷんからはじまる",
+        "がっこうわごぜんはちじじゅっぷんからはじまる。",
         "学校は午前８時１０分から始まる",
         "学校は午前８時１０分から始まる。"
       ],
@@ -161,6 +118,8 @@
       "prompt_pt": "Amanhã começa um feriadão de cinco dias, então todo mundo tá animado, né?",
       "answer_key": "明日から５連休だから、みんなルンルン気分だね。",
       "accepted_variants": [
+        "あすからごれんきゅうだから、みんなるんるんきぶんだね",
+        "あすからごれんきゅうだから、みんなるんるんきぶんだね。",
         "明日から５連休だから、みんなルンルン気分だね",
         "明日から５連休だから、みんなルンルン気分だね。"
       ],
@@ -183,15 +142,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 43,
+    "fluency": 16
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 16,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3402",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4009:805",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "良い",
+        "バス",
+        "洋袴"
+      ]
+    },
+    {
+      "id": "kr:n5:51",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あそぶ",
+        "てんき",
+        "すわる"
+      ]
+    },
+    {
+      "id": "cf:n3:3572:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "左",
+        "何",
+        "暇"
+      ]
+    },
+    {
+      "id": "kr:n4:1074",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "しゅみ",
+        "やすむ",
+        "いしゃ"
+      ]
+    }
+  ]
 }

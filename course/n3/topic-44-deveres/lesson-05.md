@@ -67,23 +67,23 @@ Não troque 突然 (advérbio solto: "de repente") por 途端. 途端 sempre vem
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'caminhão'?"}
+### 1. (recognition) Qual palavra significa 'caminhão'?
 - **Resposta:** `{"choices": ["トラック", "トランプ", "ドライブ"], "correct": "トラック"}`
-- {'pt-BR': "トラック = caminhão. トランプ é 'baralho' e ドライブ, 'passeio de carro'."}
+- トラック = caminhão. トランプ é 'baralho' e ドライブ, 'passeio de carro'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["年寄り", "idoso"], ["虎", "tigre"], ["土地", "terreno"], ["届く", "chegar/alcançar"]]}`
-- {'pt-BR': '年寄り=idoso, 虎=tigre, 土地=terreno, 届く=alcançar/chegar.'}
+- 年寄り=idoso, 虎=tigre, 土地=terreno, 届く=alcançar/chegar.
 
 
-### 3. (cloze) {'pt-BR': "Complete: 'No instante em que saí de casa, começou a chover.' 家を出た＿＿、雨が降り出した。"}
+### 3. (cloze) Complete: 'No instante em que saí de casa, começou a chover.' 家を出た＿＿、雨が降り出した。
 - **Resposta:** `{"text": "途端", "full": "家を出た途端、雨が降り出した。"}`
-- {'pt-BR': '途端 (とたん) marca o instante exato logo após uma ação no passado (〜た途端).'}
+- 途端 (とたん) marca o instante exato logo após uma ação no passado (〜た途端).
 
 
-### 4. (production) {'pt-BR': "Diga em japonês: 'Viajei junto com um amigo.' (use 友 e 共に)"}
-- **Resposta:** `{"text": "友と共に旅行した", "accept": ["ともとともに旅行した", "ともとともにりょこうした", "友と共に旅行をした"]}`
-- {'pt-BR': "友 (とも) é 'amigo' e 共に (ともに), 'juntos'. と liga o companheiro à ação."}
+### 4. (production) Diga em japonês: 'Viajei junto com um amigo.' (use 友 e 共に)
+- **Resposta:** `{"text": "友と共に旅行した", "accept": ["友と共に旅行した", "ともとともに旅行した", "ともとともにりょこうした", "友と共に旅行をした"]}`
+- 友 (とも) é 'amigo' e 共に (ともに), 'juntos'. と liga o companheiro à ação.
 
 

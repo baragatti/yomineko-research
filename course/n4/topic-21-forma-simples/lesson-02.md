@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [dewa-nai-ka, gp-129, janai-ka] · vocabulário [オートバイ, ガソリン, 怒る, 柔らかい, 生きる, 聞こえる, 苦い, 運, 運動, 運転手, 駄目, 鳴る] · kanji [事 同 自] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-238f14601cdc`, `sent:gen-5b8afca2e28a`, `sent:tatoeba-200192`, `sent:tatoeba-228724`
+**Frases (por ID, do banco dissecado):** `sent:gen-5b8afca2e28a`, `sent:tatoeba-228724`, `sent:tatoeba-200192`, `sent:gen-238f14601cdc`
 
 ---
 
@@ -77,28 +77,28 @@ Use って感じ só no casual. Para soar mais neutro, dá para dizer という�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Seu amigo diz この料理おいしいじゃないか ao provar a comida. O que ele está fazendo?'}
+### 1. (recognition) Seu amigo diz この料理おいしいじゃないか ao provar a comida. O que ele está fazendo?
 - **Resposta:** `{"choices": ["Negando que a comida seja gostosa", "Elogiando a comida e buscando sua concordância ('tá uma delícia, né?')", "Perguntando se a comida é cara"], "correct": "Elogiando a comida e buscando sua concordância ('tá uma delícia, né?')"}`
-- {'pt-BR': 'Apesar do formato negativo, じゃないか aqui é uma constatação POSITIVA com emoção: um elogio que pede concordância, não uma dúvida sobre o sabor.'}
+- Apesar do formato negativo, じゃないか aqui é uma constatação POSITIVA com emoção: um elogio que pede concordância, não uma dúvida sobre o sabor.
 - frases: `sent:gen-5b8afca2e28a`
 
-### 2. (recognition) {'pt-BR': 'じゃないか e ではないか se diferenciam principalmente em quê?'}
+### 2. (recognition) じゃないか e ではないか se diferenciam principalmente em quê?
 - **Resposta:** `{"choices": ["No significado: uma é positiva, a outra negativa", "No registro: じゃないか é a contração casual de ではないか, mais neutra", "No tempo verbal que exigem"], "correct": "No registro: じゃないか é a contração casual de ではないか, mais neutra"}`
-- {'pt-BR': 'Têm o mesmo sentido (buscar concordância / marcar constatação). じゃ é só a contração coloquial de では, igual ao português falado que encurta as sílabas.'}
+- Têm o mesmo sentido (buscar concordância / marcar constatação). じゃ é só a contração coloquial de では, igual ao português falado que encurta as sílabas.
 
 
-### 3. (cloze) {'pt-BR': "Complete para dizer 'Tô com a sensação de que a primavera já chegou.': もう春が来た＿＿＿だ。"}
+### 3. (cloze) Complete para dizer 'Tô com a sensação de que a primavera já chegou.': もう春が来た＿＿＿だ。
 - **Resposta:** `{"text": "って感じ", "full": "もう春が来たって感じだ"}`
-- {'pt-BR': "って感じ transmite a impressão/vibe de algo ('tipo assim'). Vem depois da forma simples 来た (chegou) e fecha com だ no casual."}
+- って感じ transmite a impressão/vibe de algo ('tipo assim'). Vem depois da forma simples 来た (chegou) e fecha com だ no casual.
 - frases: `sent:gen-238f14601cdc`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Eu vivo dizendo isso, ué!' com as peças: [じゃないか] [いつも] [言ってる]"}
+### 4. (sentence_build) Monte 'Eu vivo dizendo isso, ué!' com as peças: [じゃないか] [いつも] [言ってる]
 - **Resposta:** `{"order": ["いつも", "言ってる", "じゃないか"], "text": "いつも言ってるじゃないか。"}`
-- {'pt-BR': "いつも (sempre) + 言ってる (estar dizendo, casual) + じゃないか (constatação com leve protesto: 'ué!'). A expressão fecha a frase."}
+- いつも (sempre) + 言ってる (estar dizendo, casual) + じゃないか (constatação com leve protesto: 'ué!'). A expressão fecha a frase.
 - frases: `sent:tatoeba-228724`
 
-### 5. (production) {'pt-BR': "Você reconhece o Tom de longe e quer soltar 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação (ではないか)."}
+### 5. (production) Você reconhece o Tom de longe e quer soltar 'Ora, não é o Tom?!'. Use o nome トム e a expressão neutra de constatação (ではないか).
 - **Resposta:** `{"text": "トムではないか。", "accept": ["トムではないか", "トムではないか。", "トムじゃないか", "トムじゃないか。"]}`
-- {'pt-BR': "トム + ではないか marca a descoberta ('ora, não é o Tom?!'). A versão ainda mais casual seria トムじゃないか; a mesma ideia, só mais coloquial."}
+- トム + ではないか marca a descoberta ('ora, não é o Tom?!'). A versão ainda mais casual seria トムじゃないか; a mesma ideia, só mais coloquial.
 - frases: `sent:tatoeba-200192`
 

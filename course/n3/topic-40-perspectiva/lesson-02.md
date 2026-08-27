@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-ni-taishite, n3-ni-totte, n3-ni-yoreba] · vocabulário [エネルギー, 営業, 噂, 売れる, 延期, 影響, 描く, 栄養, 梅, 永久, 永遠, 生まれ, 笑顔, 衛星, 裏切る, 餌] · kanji [判 勝 参 反 向 告 認 際 面] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-164771`, `sent:tatoeba-125083`
 
 ---
 
@@ -92,28 +92,28 @@ Encadeie fonte e perspectiva:噂によれば彼は引退するそうだ (segundo
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': '"Para mim, a saúde é o mais importante": 私＿＿＿健康は一番大切だ. Qual marca o PONTO DE VISTA de quem avalia?'}
+### 1. (particle_choice) "Para mim, a saúde é o mais importante": 私＿＿＿健康は一番大切だ. Qual marca o PONTO DE VISTA de quem avalia?
 - **Resposta:** `{"choices": ["にとって", "について", "によれば"], "correct": "にとって"}`
-- {'pt-BR': 'にとって traz a perspectiva de quem julga algo importante. について marcaria o assunto, e によれば apontaria uma fonte de informação.'}
+- にとって traz a perspectiva de quem julga algo importante. について marcaria o assunto, e によれば apontaria uma fonte de informação.
 
 
-### 2. (recognition) {'pt-BR': 'Você ouviu na previsão do tempo que vai chover e quer relatar isso sem afirmar como certeza própria. Qual frase faz isso?'}
+### 2. (recognition) Você ouviu na previsão do tempo que vai chover e quer relatar isso sem afirmar como certeza própria. Qual frase faz isso?
 - **Resposta:** `{"choices": ["天気予報によれば明日は雨だそうだ", "天気予報にとって明日は雨だ", "天気予報に対して明日は雨だ"], "correct": "天気予報によれば明日は雨だそうだ"}`
-- {'pt-BR': 'によれば cita a fonte (a previsão) e o fecho そうだ marca que é informação relatada. にとって (perspectiva) e に対して (alvo/contraste) não servem para citar fonte.'}
+- によれば cita a fonte (a previsão) e o fecho そうだ marca que é informação relatada. にとって (perspectiva) e に対して (alvo/contraste) não servem para citar fonte.
 
 
-### 3. (cloze) {'pt-BR': '"Responder a uma pergunta" (dirigir a resposta a um alvo): 質問＿＿＿＿答える. Complete a expressão de alvo.'}
+### 3. (cloze) "Responder a uma pergunta" (dirigir a resposta a um alvo): 質問＿＿＿＿答える. Complete a expressão de alvo.
 - **Resposta:** `{"text": "に対して", "full": "質問に対して答える"}`
-- {'pt-BR': 'に対して marca o alvo a que a ação se dirige (responder à pergunta). Para modificar um substantivo seria に対する, como em 質問に対する答え.'}
+- に対して marca o alvo a que a ação se dirige (responder à pergunta). Para modificar um substantivo seria に対する, como em 質問に対する答え.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada expressão à sua função.'}
+### 4. (matching) Associe cada expressão à sua função.
 - **Resposta:** `{"pairs": [["にとって", "ponto de vista de quem avalia"], ["によれば", "fonte de uma informação relatada"], ["に対して", "alvo de uma atitude ou contraste"], ["によって", "agente ou meio"]]}`
-- {'pt-BR': 'にとって é perspectiva; によれば é fonte; に対して é alvo/contraste. によって (agente/meio) partilha o によ com によれば, mas tem função diferente: cuidado para não trocar.'}
+- にとって é perspectiva; によれば é fonte; に対して é alvo/contraste. によって (agente/meio) partilha o によ com によれば, mas tem função diferente: cuidado para não trocar.
 
 
-### 5. (production) {'pt-BR': 'Escreva "Para mim, a nutrição é importante" usando 私, にとって, 栄養 (えいよう) e 大切.'}
+### 5. (production) Escreva "Para mim, a nutrição é importante" usando 私, にとって, 栄養 (えいよう) e 大切.
 - **Resposta:** `{"text": "私にとって栄養は大切だ", "accept": ["私にとって栄養は大切だ", "わたしにとってえいようはたいせつだ", "私にとって栄養は大切です", "わたしにとってえいようはたいせつです"]}`
-- {'pt-BR': '私にとって abre a perspectiva, 栄養は é o que se avalia, e 大切だ (ou 大切です) traz o juízo de valor. にとって sempre acompanha um julgamento como este.'}
+- 私にとって abre a perspectiva, 栄養は é o que se avalia, e 大切だ (ou 大切です) traz o juízo de valor. にとって sempre acompanha um julgamento como este.
 
 

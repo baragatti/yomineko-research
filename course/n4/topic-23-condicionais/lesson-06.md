@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [baai-wa, dake-de] · vocabulário [ビル, 人形, 会議室, 利用, 包む, 品物, 社長, 飾る] · kanji [主 持] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-6f9f34d07c95`, `sent:gen-e97bdf76e9db`, `sent:tatoeba-189516`, `sent:tatoeba-2349428`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-189516`, `sent:tatoeba-2349428`, `sent:gen-6f9f34d07c95`, `sent:gen-e97bdf76e9db`
 
 ---
 
@@ -21,7 +21,7 @@ A palavra 場合 significa "caso, situação". Com a partícula は ela vira baa
 - 雨の場合は中止です = "Em caso de chuva, fica cancelado".
 - 故障の場合は電話してください = "No caso de defeito, ligue, por favor".
 Repare na ligação. Quando antes de 場合は vem um substantivo, ele entra com a partícula の no meio. O molde fica assim:
-Molde: [substantivo] の場合は [o que fazer]
+Molde: [substantivo] の 場合は [o que fazer]
 É o caso de 雨の場合は ("no caso de chuva"). Quando antes de 場合は vem um verbo ou um adjetivo-い, basta deixá-lo na forma simples, sem の (行く場合は, 高い場合は). Já o adjetivo-な entra com な: 必要な場合は ("caso seja necessário"). Veja um aviso real:
 > 🗣 雨天の場合は運動会を中止する。 — Em caso de chuva, a gincana esportiva será cancelada.
 Aqui 雨天 é "tempo chuvoso" e 中止 é "cancelamento". A estrutura é exatamente "no caso de X, faz-se Y". Essa frase poderia estar colada num mural de escola.
@@ -84,28 +84,28 @@ Em だけで, o verbo que vem antes fica na forma simples (dicionário), não na
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que 場合は (ばあいは) acrescenta a uma frase como 雨の場合は中止です?'}
+### 1. (recognition) O que 場合は (ばあいは) acrescenta a uma frase como 雨の場合は中止です?
 - **Resposta:** `{"choices": ["A ideia de 'no caso de / quando (tal situação)'", "A ideia de 'só com isso já basta'", "A ideia de 'depois que'"], "correct": "A ideia de 'no caso de / quando (tal situação)'"}`
-- {'pt-BR': "場合 = 'caso/situação'; com は forma 'no caso de', 'quando (acontecer X)'. É típico de avisos e regras, como '雨の場合は中止です' (em caso de chuva, cancelado)."}
+- 場合 = 'caso/situação'; com は forma 'no caso de', 'quando (acontecer X)'. É típico de avisos e regras, como '雨の場合は中止です' (em caso de chuva, cancelado).
 - frases: `sent:tatoeba-189516`
 
-### 2. (particle_choice) {'pt-BR': 'Complete: 火事の___は１１９に電話してください。 (Em caso de incêndio, ligue para o 119.)'}
+### 2. (particle_choice) Complete: 火事の___は１１９に電話してください。 (Em caso de incêndio, ligue para o 119.)
 - **Resposta:** `{"choices": ["場合", "だけで", "次に"], "correct": "場合"}`
-- {'pt-BR': "火事の場合は = 'no caso de incêndio'. Note a ligação substantivo + の + 場合は, padrão clássico de aviso de emergência."}
+- 火事の場合は = 'no caso de incêndio'. Note a ligação substantivo + の + 場合は, padrão clássico de aviso de emergência.
 
 
-### 3. (cloze) {'pt-BR': "Complete com 'só com / basta': 名前を書く___いいです。 (Basta escrever o nome.)"}
+### 3. (cloze) Complete com 'só com / basta': 名前を書く___いいです。 (Basta escrever o nome.)
 - **Resposta:** `{"text": "だけで", "full": "名前を書くだけでいいです"}`
-- {'pt-BR': "〜だけで indica condição mínima suficiente; com いいです vira 'basta (fazer) X'. O verbo 書く fica na forma simples antes de だけで."}
+- 〜だけで indica condição mínima suficiente; com いいです vira 'basta (fazer) X'. O verbo 書く fica na forma simples antes de だけで.
 - frases: `sent:gen-e97bdf76e9db`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Só de olhar já é divertido.' com as peças: [楽しい] [見る] [だけで]"}
+### 4. (sentence_build) Monte 'Só de olhar já é divertido.' com as peças: [楽しい] [見る] [だけで]
 - **Resposta:** `{"order": ["見る", "だけで", "楽しい"], "text": "見るだけで楽しい"}`
-- {'pt-BR': "見る (olhar, forma simples) + だけで (só com isso já basta) + 楽しい (divertido). A condição mínima 'apenas olhar' já basta para o resultado."}
+- 見る (olhar, forma simples) + だけで (só com isso já basta) + 楽しい (divertido). A condição mínima 'apenas olhar' já basta para o resultado.
 - frases: `sent:gen-6f9f34d07c95`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'No caso de chuva, fica cancelado.' usando 雨 (chuva), 場合は e 中止です (é cancelamento)."}
+### 5. (production) Diga em japonês 'No caso de chuva, fica cancelado.' usando 雨 (chuva), 場合は e 中止です (é cancelamento).
 - **Resposta:** `{"text": "雨の場合は中止です。", "accept": ["雨の場合は中止です", "雨の場合は中止です。", "あめの場合は中止です", "雨のばあいは中止です"]}`
-- {'pt-BR': "雨 + の + 場合は ('no caso de chuva') + 中止です ('é cancelamento'). É o molde 'X の場合は Y' usado em avisos e regras."}
+- 雨 + の + 場合は ('no caso de chuva') + 中止です ('é cancelamento'). É o molde 'X の場合は Y' usado em avisos e regras.
 
 

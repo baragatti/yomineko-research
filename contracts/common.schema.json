@@ -2,27 +2,28 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://yomineko.dev/contracts/common.schema.json",
   "title": "Shared corpus patterns",
-  "description": "The cross-cutting shapes every Yomineko entity is built from. Entity schemas $ref these rather than restating them, so a change to what a stable ID or a provenance envelope means happens in one place. Every definition here was derived from the exported data by scripts/contracts/infer_shapes.py, not designed ahead of it.",
+  "description": "The cross-cutting shapes every Yomineko entity is built from. Entity schemas $ref these rather than restating them, so a change to what a stable ID or a provenance envelope means happens in one place. This file is HAND-AUTHORED: it was informed by the exported data (scripts/contracts/infer_shapes.py) but the definitions are decisions, and the generated entity schemas point at them precisely so a measurement can never narrow them.",
 
   "$defs": {
     "StableId": {
       "type": "string",
       "pattern": "^[a-z][a-z0-9_]*:[^\\s]+$",
       "minLength": 3,
-      "description": "The public, durable address of a record: a lowercase namespace prefix, a colon, then an identifier with no whitespace. Every record in the corpus is addressable this way and the value never changes once published — it is what an API route and a cross-reference both key on. Distinct from the integer `id` some registries also carry, which is a storage row number and is NOT stable across a rebuild.",
+      "description": "The public, durable address of a record: a lowercase namespace prefix, a colon, then an identifier with no whitespace. Every record in the corpus is addressable this way and the value never changes once published — it is what an API route and a cross-reference both key on. Distinct from the integer `id` some registries also carry, which is a storage row number and is NOT stable across a rebuild. One address is currently SHARED by two entities: a conjugation table is addressed by the vocab entry it inflects (`vocab:1000730` names both the word and its paradigm), so a route that resolves an address has to know which of the two it wants. validate_contracts.py therefore treats conjugation's `slug` as a foreign key into vocab rather than as a declaration; re-keying conjugation as `conj:<jmdict_id>` would remove the ambiguity for good.",
       "examples": ["kanji:食", "vocab:2820690", "gram:n3-ageru", "sent:tatoeba-83013", "les:n5-saudacoes-01"]
     },
 
     "IdNamespace": {
       "type": "string",
       "enum": [
-        "kanji", "vocab", "gram", "sent", "grp", "read", "kana", "cap", "feat",
-        "mod", "top", "les", "speak", "course",
+        "kanji", "vocab", "gram", "sent", "grp", "read", "kana", "cap",
+        "mod", "top", "les", "speak", "course", "ex",
         "cj", "rl",
         "kr", "or", "cf", "gf", "so", "tg", "rc", "pp", "us",
-        "lt", "lp", "ls", "lr", "lg"
+        "lt", "lp", "ls", "lr", "lg",
+        "feat", "deck", "conj"
       ],
-      "description": "Every namespace prefix in use. Registries: kanji, vocab, gram(mar), sent(ence), grp (family), read(ing), kana, cap(ability), feat(ure). Courseware: mod(ule), top(ic), les(son), speak, course. Drills: cj (conjugation), rl (role). Exam items carry the section's own prefix: kr kanji_reading, or orthography, cf context_fill, gf grammar_form, so sentence_order, tg text_grammar, rc reading_comp, pp paraphrase, us usage, and lt/lp/ls/lr/lg for the five listening sections."
+      "description": "Every namespace prefix in use, in two groups. DECLARED — some record on disk owns the address: kanji, vocab, gram(mar), sent(ence), grp (family), read(ing), kana, cap(ability); mod(ule), top(ic), les(son), speak (both a path stage and a unit), course; ex (a lesson's own exercises, declared inside the lesson); cj (conjugation drill), rl (role drill); and the exam sections kr kanji_reading, or orthography, cf context_fill, gf grammar_form, so sentence_order, tg text_grammar, rc reading_comp, pp paraphrase, us usage, plus lt/lp/ls/lr/lg for the five listening sections. REFERENCE-ONLY — no record declares one, they name entries in design/unlock_enums.json: feat (app feature), deck (SRS deck), conj (conjugation form). Nothing $refs this definition, because the pattern that would enforce it lives in StableId and the per-entity namespace is computed from the data into contracts/manifest.json; it is documentation of the address space, and it is kept complete on purpose. Note design/unlock_enums.json calls the family namespace `fam` while every family on disk is `grp:` — the disk is right and the doc's ref_form line is stale."
     },
 
     "LocaleText": {
@@ -59,9 +60,16 @@
       "description": "Provenance layer (spec §1.1). A = authoritative, straight from an open dataset, zero AI, trustworthy blind. B = derived by AI and then machine-validated against A. C = pedagogy: AI-authored, research-grounded, and never trustworthy without a human teacher's sign-off. A reviewer must be able to audit C selectively and skip A entirely, which is only possible if the layer is recorded per record."
     },
 
+    "Locale": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(-[A-Za-z0-9]+)?$",
+      "description": "A BCP-47-shaped locale tag: language, optionally a region or script subtag. pt-BR is the only locale authored today, and that is a CONTENT fact, not a structural one — design/i18n.md: adding a language adds content rows, never a schema change. This is a pattern rather than an enum for exactly that reason; the earlier enum [\"pt-BR\"] contradicted LocaleText two definitions below it.",
+      "examples": ["pt-BR", "en", "es-LA", "ja"]
+    },
+
     "Provenance": {
       "type": "object",
-      "description": "Where a record came from and how far it can be trusted. Not every entity carries every key yet — see contracts/manifest.json for which do — but where a key appears it means this and nothing else.",
+      "description": "Where a record came from and how far it can be trusted. These keys are OPTIONAL and unevenly adopted: most entities carry none of them at the record root (kanji, vocab, family, conjugation, kana, capability, course, topic and the stroke sets do not), `sentence` carries ai_generated/needs_review nested under its own `provenance` object, `lesson` carries needs_review alone, and reading plus the two generated exercise families carry source+layer+needs_review together. contracts/manifest.json lists what each entity actually has. Where a key does appear it means this and nothing else — that uniformity is what is enforced, not the presence.",
       "properties": {
         "source": {
           "type": "string",
@@ -97,13 +105,29 @@
           "pattern": "^(\\d+/\\d+|0|anchor)$",
           "description": "The raw tally behind level_confidence, as \"agreed/consulted\" — \"4/4\" means all four lists placed the item at this level, \"1/3\" means one of three did. Kept as text because numerator and denominator are both meaningful and a single float would discard the sample size: \"1/1\" and \"4/4\" are both 1.0 but are not equally good evidence. Two sentinels cover the placements we made ourselves rather than read off a list, and they are NOT interchangeable — \"0\" is an author-added item that appears in no consensus list (confidence 0.0, we are guessing), while \"anchor\" is a deliberate course placement such as the て-form hub (confidence 1.0, we are certain, there is simply no list to cite). Collapsing them into one value would report editorial certainty as a guess."
         },
-        "level_sources": {
-          "type": ["object", "null"],
-          "description": "Which lists were consulted and where each placed the item, as {list_name: level} — three independent lists is the floor (spec §1.5). Author-added items instead carry {lists: [reason], anchor?: id}, naming why the item is here at all when no list contains it. Both are objects so a consumer can branch on the keys.",
-          "additionalProperties": true
-        }
+        "level_sources": { "$ref": "#/$defs/LevelSources" }
       },
       "additionalProperties": true
+    },
+
+    "LevelSources": {
+      "type": ["object", "null"],
+      "description": "Which lists were consulted and where each placed the item, as {list_name: level} — three independent lists is the floor (spec §1.5). The KEY SPACE IS OPEN BY DESIGN: consulting one more community list is the operation §1.5 is built around, and it must not be a schema change. Author-added items instead carry {lists: [reason], anchor?: id}, naming why the item is here at all when no list contains it; `note` and `correction` hold the editorial reasoning behind a hand placement. Everything else is a list name and its value is a Level.",
+      "properties": {
+        "lists": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Why an author-added item is here at all, when no consensus list contains it."
+        },
+        "anchor": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*:[^\\s]+$",
+          "description": "The deliberate course placement this item was anchored to, e.g. `jlpt_anchor:n4`. Pairs with level_agreement \"anchor\"."
+        },
+        "note": { "type": "string", "minLength": 1, "description": "Editorial note on the placement." },
+        "correction": { "type": "string", "minLength": 1, "description": "Why a list's placement was overridden." }
+      },
+      "additionalProperties": { "$ref": "#/$defs/Level" }
     },
 
     "IdRef": {

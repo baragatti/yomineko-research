@@ -67,28 +67,28 @@ Dois kanji que voltarão muito em palavras de N3:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'progresso, avanço, melhora'?"}
+### 1. (recognition) Qual palavra significa 'progresso, avanço, melhora'?
 - **Resposta:** `{"choices": ["進歩 (しんぽ)", "審判 (しんぱん)", "出版 (しゅっぱん)"], "correct": "進歩 (しんぽ)"}`
-- {'pt-BR': '進歩 (しんぽ) é progresso. 審判 é julgamento e 出版 é publicação.'}
+- 進歩 (しんぽ) é progresso. 審判 é julgamento e 出版 é publicação.
 
 
-### 2. (recognition) {'pt-BR': "As palavras 身長 e 慎重 têm a mesma leitura しんちょう. Qual delas significa 'cauteloso, prudente'?"}
+### 2. (recognition) As palavras 身長 e 慎重 têm a mesma leitura しんちょう. Qual delas significa 'cauteloso, prudente'?
 - **Resposta:** `{"choices": ["身長", "慎重", "as duas significam altura"], "correct": "慎重"}`
-- {'pt-BR': '慎重 (しんちょう) = cauteloso. 身長 (しんちょう) = altura. Mesmo som, sentidos diferentes.'}
+- 慎重 (しんちょう) = cauteloso. 身長 (しんちょう) = altura. Mesmo som, sentidos diferentes.
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra da família しん à tradução.'}
+### 3. (matching) Associe cada palavra da família しん à tradução.
 - **Resposta:** `{"pairs": [["信頼", "confiança (emocional)"], ["親友", "amigo íntimo"], ["心理", "psicologia / mentalidade"], ["人類", "humanidade"]]}`
-- {'pt-BR': '信頼 = confiança; 親友 = amigo íntimo; 心理 = mentalidade; 人類 = humanidade.'}
+- 信頼 = confiança; 親友 = amigo íntimo; 心理 = mentalidade; 人類 = humanidade.
 
 
-### 4. (cloze) {'pt-BR': "Complete com a palavra para 'nível/padrão': この学校は教育の＿＿が高い。"}
+### 4. (cloze) Complete com a palavra para 'nível/padrão': この学校は教育の＿＿が高い。
 - **Resposta:** `{"text": "水準", "full": "この学校は教育の水準が高い。"}`
-- {'pt-BR': '水準 (すいじゅん) é o nível ou padrão de algo, aqui o nível de ensino.'}
+- 水準 (すいじゅん) é o nível ou padrão de algo, aqui o nível de ensino.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Confio no meu amigo íntimo' usando 親友 e 信頼する."}
+### 5. (production) Diga em japonês 'Confio no meu amigo íntimo' usando 親友 e 信頼する.
 - **Resposta:** `{"text": "親友を信頼している", "accept": ["親友を信頼している", "しんゆうをしんらいしている", "親友を信頼する", "私は親友を信頼している"]}`
-- {'pt-BR': '親友を (amigo íntimo, objeto) + 信頼している (confio, no aspecto contínuo).'}
+- 親友を (amigo íntimo, objeto) + 信頼している (confio, no aspecto contínuo).
 
 

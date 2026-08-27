@@ -4,7 +4,7 @@
   "stage": "speak:health",
   "order": 4,
   "title": {
-    "pt-BR": "Emergência e saúde — parte 4"
+    "pt-BR": "Emergência e saúde, parte 4"
   },
   "say_now": [
     "sent:tatoeba-203344",
@@ -32,8 +32,8 @@
     "gram:te-kuru",
     "gram:gp-17",
     "gram:gp-31",
-    "gram:ndesu",
-    "gram:da-desu"
+    "gram:wa-yori-desu",
+    "gram:gp-16"
   ],
   "kanji_recognition": [
     "丈",
@@ -56,6 +56,127 @@
   "cumulative_known_vocab": 398,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:wa-dou-desu-ka",
+      "examples": [
+        "sent:tatoeba-125116",
+        "sent:tatoeba-4751207",
+        "sent:tatoeba-214357"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kuru",
+      "examples": [
+        "sent:tatoeba-8736595",
+        "sent:tatoeba-228677",
+        "sent:tatoeba-2999719"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-31",
+      "examples": [
+        "sent:tatoeba-778974",
+        "sent:tatoeba-1057336",
+        "sent:tatoeba-4789"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-90ed9f56e125",
+        "sent:gen-e97b8aeb1456"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-16",
+      "examples": [
+        "sent:tatoeba-219720",
+        "sent:tatoeba-76902",
+        "sent:tatoeba-219725"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Daqui até o hospital são nada menos que dez milhas.",
+      "answer_key": "病院まで１０マイルもある。",
+      "accepted_variants": [
+        "びょういんまでじゅうまいるもある",
+        "びょういんまでじゅうまいるもある。",
+        "病院まで１０マイルもある",
+        "病院まで１０マイルもある。"
+      ],
+      "sentence": "sent:tatoeba-85328",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Minha mãe vai ao hospital de manhã.",
+      "answer_key": "母は午前中病院に行きます。",
+      "accepted_variants": [
+        "ははわごぜんちゅうびょういんにいきます",
+        "ははわごぜんちゅうびょういんにいきます。",
+        "母は午前中病院に行きます",
+        "母は午前中病院に行きます。"
+      ],
+      "sentence": "sent:tatoeba-83003",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Depois que dormi bem, me senti bem melhor.",
+      "answer_key": "よく眠ったらだいぶ気分がよくなった。",
+      "accepted_variants": [
+        "よくねむったらだいぶきぶんがよくなった",
+        "よくねむったらだいぶきぶんがよくなった。",
+        "よく眠ったらだいぶ気分がよくなった",
+        "よく眠ったらだいぶ気分がよくなった。"
+      ],
+      "sentence": "sent:tatoeba-192750",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-226387",
+      "sent:tatoeba-79502",
+      "sent:tatoeba-11270411",
+      "sent:tatoeba-90106",
+      "sent:tatoeba-190894",
+      "sent:tatoeba-190902"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:414",
@@ -102,120 +223,5 @@
         "きみ"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:wa-dou-desu-ka",
-      "examples": [
-        "sent:tatoeba-125116",
-        "sent:tatoeba-4751207",
-        "sent:tatoeba-214357"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:te-kuru",
-      "examples": [
-        "sent:tatoeba-8736595",
-        "sent:tatoeba-228677",
-        "sent:tatoeba-2999719"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-31",
-      "examples": [
-        "sent:tatoeba-778974",
-        "sent:tatoeba-1057336",
-        "sent:tatoeba-4789"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ndesu",
-      "examples": [
-        "sent:gen-d354f1465606",
-        "sent:tatoeba-80973",
-        "sent:tatoeba-137685"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Daqui até o hospital são nada menos que dez milhas.",
-      "answer_key": "病院まで１０マイルもある。",
-      "accepted_variants": [
-        "病院まで１０マイルもある",
-        "病院まで１０マイルもある。"
-      ],
-      "sentence": "sent:tatoeba-85328",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Minha mãe vai ao hospital de manhã.",
-      "answer_key": "母は午前中病院に行きます。",
-      "accepted_variants": [
-        "母は午前中病院に行きます",
-        "母は午前中病院に行きます。"
-      ],
-      "sentence": "sent:tatoeba-83003",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Depois que dormi bem, me senti bem melhor.",
-      "answer_key": "よく眠ったらだいぶ気分がよくなった。",
-      "accepted_variants": [
-        "よく眠ったらだいぶ気分がよくなった",
-        "よく眠ったらだいぶ気分がよくなった。"
-      ],
-      "sentence": "sent:tatoeba-192750",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
-    "items": [
-      "sent:tatoeba-226387",
-      "sent:tatoeba-79502",
-      "sent:tatoeba-11270411",
-      "sent:tatoeba-90106",
-      "sent:tatoeba-190894",
-      "sent:tatoeba-190902"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 32,
-    "fluency": 6
-  }
+  ]
 }

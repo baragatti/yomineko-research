@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-110, rashii] · vocabulário [世, 亜細亜, 割合, 寺, 普通, 田舎] · kanji [春 秋] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-e9700d108b4a`, `sent:tatoeba-8504285`, `sent:tatoeba-189533`, `sent:tatoeba-189629`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-189533`, `sent:gen-e9700d108b4a`, `sent:tatoeba-8504285`, `sent:tatoeba-189629`
 
 ---
 
@@ -73,28 +73,28 @@ Três kanji ligados à natureza e às estações, que casam com o らしい de "
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Em 雨らしい ("pelo jeito vai chover"), o que らしい comunica?'}
+### 1. (recognition) Em 雨らしい ("pelo jeito vai chover"), o que らしい comunica?
 - **Resposta:** `{"choices": ["Uma inferência a partir do que se ouviu ou observou", "Uma ordem para alguém", "Uma certeza absoluta do falante"], "correct": "Uma inferência a partir do que se ouviu ou observou"}`
-- {'pt-BR': "らしい marca uma conclusão cautelosa, baseada em informação externa (ouviu a previsão, viu o céu). O falante não afirma como fato próprio: é 'parece que / pelo jeito'."}
+- らしい marca uma conclusão cautelosa, baseada em informação externa (ouviu a previsão, viu o céu). O falante não afirma como fato próprio: é 'parece que / pelo jeito'.
 
 
-### 2. (recognition) {'pt-BR': 'Qual frase usa らしい no sentido de "típico de" (e NÃO de inferência)?'}
+### 2. (recognition) Qual frase usa らしい no sentido de "típico de" (e NÃO de inferência)?
 - **Resposta:** `{"choices": ["今日は春らしい天気だ。", "あの店はもう閉まったらしい。", "夜は雨になるらしい。"], "correct": "今日は春らしい天気だ。"}`
-- {'pt-BR': "春らしい天気 = 'um tempo bem de primavera, típico da estação'. As outras duas ('parece que a loja fechou', 'parece que vai chover à noite') são inferências a partir de algo que se soube ou observou."}
+- 春らしい天気 = 'um tempo bem de primavera, típico da estação'. As outras duas ('parece que a loja fechou', 'parece que vai chover à noite') são inferências a partir de algo que se soube ou observou.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a auto-indagação "Será que isso tem algum significado?": 何か意味がある＿。'}
+### 3. (cloze) Complete a auto-indagação "Será que isso tem algum significado?": 何か意味がある＿。
 - **Resposta:** `{"text": "のだろうか", "full": "何か意味があるのだろうか"}`
-- {'pt-BR': "のだろうか transforma a frase numa pergunta pensativa que a pessoa faz a si mesma: 'será que...?'. Liga-se à forma simples do verbo (ある + のだろうか)."}
+- のだろうか transforma a frase numa pergunta pensativa que a pessoa faz a si mesma: 'será que...?'. Liga-se à forma simples do verbo (ある + のだろうか).
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Pelo jeito, o interior é calmo.' com as peças: [らしい] [田舎] [静か] [は]"}
+### 4. (sentence_build) Monte 'Pelo jeito, o interior é calmo.' com as peças: [らしい] [田舎] [静か] [は]
 - **Resposta:** `{"order": ["田舎", "は", "静か", "らしい"], "text": "田舎は静からしい。"}`
-- {'pt-BR': '田舎 (interior) + は (tópico) + 静か (calmo) + らしい (pelo jeito / parece que). らしい vem no fim, ligado ao adjetivo-na sem だ, repassando o que se concluiu de fora.'}
+- 田舎 (interior) + は (tópico) + 静か (calmo) + らしい (pelo jeito / parece que). らしい vem no fim, ligado ao adjetivo-na sem だ, repassando o que se concluiu de fora.
 
 
-### 5. (production) {'pt-BR': "Em japonês, pergunte a si mesmo(a) 'Será que o mundo um dia vai acabar?' usando 世界 (mundo), 終わる (acabar) e のだろうか."}
+### 5. (production) Em japonês, pergunte a si mesmo(a) 'Será que o mundo um dia vai acabar?' usando 世界 (mundo), 終わる (acabar) e のだろうか.
 - **Resposta:** `{"text": "世界は終わるのだろうか。", "accept": ["世界はいつ終わるのだろうか", "世界はいつ終わるのだろうか？", "せかいはいつおわるのだろうか", "世界は終わるのだろうか"]}`
-- {'pt-BR': '世界 (mundo) + は + 終わる (acabar, forma simples) + のだろうか (será que...?). É uma reflexão em voz alta, não uma pergunta dirigida a outra pessoa.'}
+- 世界 (mundo) + は + 終わる (acabar, forma simples) + のだろうか (será que...?). É uma reflexão em voz alta, não uma pergunta dirigida a outra pessoa.
 
 

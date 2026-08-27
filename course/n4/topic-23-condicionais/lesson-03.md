@@ -65,28 +65,28 @@ O condicional 〜ば é o coração de muitos provérbios. Um clássico:塵も�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é o condicional 〜ば do verbo godan 急ぐ (いそぐ, apressar-se)?'}
+### 1. (recognition) Qual é o condicional 〜ば do verbo godan 急ぐ (いそぐ, apressar-se)?
 - **Resposta:** `{"choices": ["急げば", "急ぐば", "急ぎば"], "correct": "急げば"}`
-- {'pt-BR': "Em verbos godan, troca-se o -u final pela vogal -e e acrescenta-se ば: いそぐ → いそげ + ば = 急げば ('se (você) se apressar')."}
+- Em verbos godan, troca-se o -u final pela vogal -e e acrescenta-se ば: いそぐ → いそげ + ば = 急げば ('se (você) se apressar').
 - frases: `sent:gen-4f5ce8074635`
 
-### 2. (recognition) {'pt-BR': 'O verbo ichidan 逃げる (にげる, fugir) no condicional 〜ば fica:'}
+### 2. (recognition) O verbo ichidan 逃げる (にげる, fugir) no condicional 〜ば fica:
 - **Resposta:** `{"choices": ["逃げれば", "逃げば", "逃ごば"], "correct": "逃げれば"}`
-- {'pt-BR': "Verbos ichidan perdem o る e ganham れば: にげる → にげ + れば = 逃げれば ('se (ele) fugir'). É daí que vem o apelido 〜れば."}
+- Verbos ichidan perdem o る e ganham れば: にげる → にげ + れば = 逃げれば ('se (ele) fugir'). É daí que vem o apelido 〜れば.
 
 
-### 3. (cloze) {'pt-BR': 'Complete o condicional do adjetivo 安い (やすい, barato): 安＿買います。 (Se for barato, eu compro.)'}
+### 3. (cloze) Complete o condicional do adjetivo 安い (やすい, barato): 安＿買います。 (Se for barato, eu compro.)
 - **Resposta:** `{"text": "ければ", "full": "安ければ買います"}`
-- {'pt-BR': "Adjetivos-い trocam o い por ければ: やすい → やすければ. A frase 安ければ買います expressa uma condição lógica: 'basta ser barato para eu comprar'."}
+- Adjetivos-い trocam o い por ければ: やすい → やすければ. A frase 安ければ買います expressa uma condição lógica: 'basta ser barato para eu comprar'.
 - frases: `sent:gen-a6fc1781b5e9`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Se você apertar aqui, a porta abre.' com as peças: [ドアが開く] [ここを] [押せば]"}
+### 4. (sentence_build) Monte 'Se você apertar aqui, a porta abre.' com as peças: [ドアが開く] [ここを] [押せば]
 - **Resposta:** `{"order": ["ここを", "押せば", "ドアが開く"], "text": "ここを押せばドアが開く"}`
-- {'pt-BR': 'A condição vem primeiro: ここを (aqui) + 押せば (おす → おせば, se apertar) + ドアが開く (a porta abre). É a relação de causa e efeito natural típica do 〜ば.'}
+- A condição vem primeiro: ここを (aqui) + 押せば (おす → おせば, se apertar) + ドアが開く (a porta abre). É a relação de causa e efeito natural típica do 〜ば.
 - frases: `sent:gen-46f095053830`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Se for assustador, eu fujo.' usando o condicional 〜ば de 怖い (こわい, assustador) e 逃げる (にげる, fugir)."}
+### 5. (production) Diga em japonês 'Se for assustador, eu fujo.' usando o condicional 〜ば de 怖い (こわい, assustador) e 逃げる (にげる, fugir).
 - **Resposta:** `{"text": "怖ければ逃げる", "accept": ["怖ければ逃げる", "こわければ逃げる", "怖ければにげる", "こわければにげる", "怖ければ逃げます", "こわければ逃げます"]}`
-- {'pt-BR': "怖い → 怖ければ (adjetivo-い: い → ければ) e 逃げる → 逃げる (verbo principal no resultado). 怖ければ逃げる = 'se for assustador, eu fujo'. Uma reação lógica, bem no espírito do 〜ば."}
+- 怖い → 怖ければ (adjetivo-い: い → ければ) e 逃げる → 逃げる (verbo principal no resultado). 怖ければ逃げる = 'se for assustador, eu fujo'. Uma reação lógica, bem no espírito do 〜ば.
 
 

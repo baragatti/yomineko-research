@@ -63,23 +63,23 @@ Tente ler em voz alta, juntando o que você já sabe:ジュース(juusu, "suco")
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual contraído de katakana representa o som 'ja' (o 'dj' de 'dia')?"}
+### 1. (recognition) Qual contraído de katakana representa o som 'ja' (o 'dj' de 'dia')?
 - **Resposta:** `{"choices": ["ジャ", "ギャ", "ビャ"], "correct": "ジャ"}`
-- {'pt-BR': "ジャ = ja (ジ + ャ pequeno). O som é o do 'di' de 'dia' (aquele 'dj'), não o 'j' puxado de 'já'."}
+- ジャ = ja (ジ + ャ pequeno). O som é o do 'di' de 'dia' (aquele 'dj'), não o 'j' puxado de 'já'.
 
 
-### 2. (recognition) {'pt-BR': 'O que a barrinha ー faz em コーヒー?'}
+### 2. (recognition) O que a barrinha ー faz em コーヒー?
 - **Resposta:** `{"choices": ["Alonga a vogal anterior", "Soa como 'tsu'", "Dobra a consoante seguinte"], "correct": "Alonga a vogal anterior"}`
-- {'pt-BR': 'ー é o chōon, exclusivo do katakana: alonga a vogal do kana anterior. コーヒー = koohii.'}
+- ー é o chōon, exclusivo do katakana: alonga a vogal do kana anterior. コーヒー = koohii.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada contraído de katakana ao seu som.'}
+### 3. (matching) Ligue cada contraído de katakana ao seu som.
 - **Resposta:** `{"pairs": [["ミャ", "mya"], ["リュ", "ryu"], ["ギョ", "gyo"], ["ビャ", "bya"], ["ピュ", "pyu"]]}`
-- {'pt-BR': 'Os contraídos que faltavam no katakana: consoante da coluna do i + ャ/ュ/ョ pequeno.'}
+- Os contraídos que faltavam no katakana: consoante da coluna do i + ャ/ュ/ョ pequeno.
 
 
-### 4. (production) {'pt-BR': "Escreva em katakana a palavra 'koppu' (copo), usando o ッ pequeno."}
+### 4. (production) Escreva em katakana a palavra 'koppu' (copo), usando o ッ pequeno.
 - **Resposta:** `{"text": "コップ", "accept": ["コップ"]}`
-- {'pt-BR': 'コ (ko) + ッ (sokuon, dobra a consoante) + プ (pu) = コップ.'}
+- コ (ko) + ッ (sokuon, dobra a consoante) + プ (pu) = コップ.
 
 

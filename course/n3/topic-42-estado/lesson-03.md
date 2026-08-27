@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-mama, n3-naide, n3-zu-ni] · vocabulário [刀, 型, 家事, 数える, 方々, 歌手, 稼ぐ, 肩, 菓子, 語る, 貸し, 賢い] · kanji [付 割 役 構 由 費] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-123792`, `sent:tatoeba-237317`
 
 ---
 
@@ -89,33 +89,33 @@ O kanji 由 significa "motivo, razão, origem". Aparece em 理由 ("motivo, raz�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase significa 'fui para a escola sem tomar café da manhã'?"}
+### 1. (recognition) Qual frase significa 'fui para a escola sem tomar café da manhã'?
 - **Resposta:** `{"choices": ["朝ご飯を食べないで学校に行った", "朝ご飯を食べなくて学校に行った", "朝ご飯を食べながら学校に行った", "朝ご飯を食べたまま学校に行った"], "correct": "朝ご飯を食べないで学校に行った"}`
-- {'pt-BR': "'Sem fazer X' (modo) pede ～ないで: 食べないで = 'sem comer'. ～なくて marcaria causa ('não comi, e por isso...'), ながら seria 'enquanto comia' e たまま seria 'no estado de ter comido'."}
+- 'Sem fazer X' (modo) pede ～ないで: 食べないで = 'sem comer'. ～なくて marcaria causa ('não comi, e por isso...'), ながら seria 'enquanto comia' e たまま seria 'no estado de ter comido'.
 
 
-### 2. (cloze) {'pt-BR': "Reescreva 食べないで de forma mais formal/escrita, com o mesmo sentido de 'sem comer': 朝ご飯を食べ＿＿家を出た。"}
+### 2. (cloze) Reescreva 食べないで de forma mais formal/escrita, com o mesmo sentido de 'sem comer': 朝ご飯を食べ＿＿家を出た。
 - **Resposta:** `{"text": "ずに", "full": "朝ご飯を食べずに家を出た"}`
-- {'pt-BR': "～ずに é a variante formal de ～ないで. Tira-se o ない de 食べない e acrescenta-se ずに: 食べずに ('sem comer'). Mesmo sentido, registro mais cuidado."}
+- ～ずに é a variante formal de ～ないで. Tira-se o ない de 食べない e acrescenta-se ずに: 食べずに ('sem comer'). Mesmo sentido, registro mais cuidado.
 
 
-### 3. (particle_choice) {'pt-BR': 'Qual é a forma ずに correta do verbo する?'}
+### 3. (particle_choice) Qual é a forma ずに correta do verbo する?
 - **Resposta:** `{"choices": ["せずに", "しずに", "さずに", "すずに"], "correct": "せずに"}`
-- {'pt-BR': "する é irregular: não vira しずに, e sim せずに ('sem fazer'). É uma exceção que vale a pena decorar."}
+- する é irregular: não vira しずに, e sim せずに ('sem fazer'). É uma exceção que vale a pena decorar.
 
 
-### 4. (recognition) {'pt-BR': "Qual forma com まま está correta para 'ainda quente' (com o adjetivo 熱い)?"}
+### 4. (recognition) Qual forma com まま está correta para 'ainda quente' (com o adjetivo 熱い)?
 - **Resposta:** `{"choices": ["熱いまま", "熱いなまま", "熱なまま", "熱まま"], "correct": "熱いまま"}`
-- {'pt-BR': "Adjetivo い liga-se direto a まま, sem な: 熱いまま ('no estado quente, ainda quente'). A forma com な (熱いなまま) está errada."}
+- Adjetivo い liga-se direto a まま, sem な: 熱いまま ('no estado quente, ainda quente'). A forma com な (熱いなまま) está errada.
 
 
-### 5. (sentence_build) {'pt-BR': "Monte 'acabei dormindo com a janela aberta' com as peças: [寝てしまった] [窓を] [開けたまま]"}
+### 5. (sentence_build) Monte 'acabei dormindo com a janela aberta' com as peças: [寝てしまった] [窓を] [開けたまま]
 - **Resposta:** `{"order": ["窓を", "開けたまま", "寝てしまった"], "text": "窓を開けたまま寝てしまった"}`
-- {'pt-BR': "窓を開けたまま = 'no estado de ter deixado a janela aberta' (verbo na forma た + まま), e a ação principal vem no fim: 寝てしまった ('acabei dormindo'). O まま mostra um estado que persistiu e que talvez devesse ter mudado."}
+- 窓を開けたまま = 'no estado de ter deixado a janela aberta' (verbo na forma た + まま), e a ação principal vem no fim: 寝てしまった ('acabei dormindo'). O まま mostra um estado que persistiu e que talvez devesse ter mudado.
 
 
-### 6. (production) {'pt-BR': "Diga 'por favor, não olhe' usando 見る e ～ないでください."}
+### 6. (production) Diga 'por favor, não olhe' usando 見る e ～ないでください.
 - **Resposta:** `{"text": "見ないでください", "accept": ["見ないでください", "みないでください", "見ないで", "みないで"]}`
-- {'pt-BR': "見る vira a negativa 見ない + でください = 見ないでください ('por favor, não olhe'). É o uso de ～ないで como pedido suave de não fazer algo. A versão curta 見ないで é mais informal."}
+- 見る vira a negativa 見ない + でください = 見ないでください ('por favor, não olhe'). É o uso de ～ないで como pedido suave de não fazer algo. A versão curta 見ないで é mais informal.
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:arrival",
   "order": 4,
   "title": {
-    "pt-BR": "Chegar e cumprimentar — parte 4"
+    "pt-BR": "Chegar e cumprimentar, parte 4"
   },
   "say_now": [
     "sent:tatoeba-229425",
@@ -51,6 +51,79 @@
   "cumulative_known_vocab": 19,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-108",
+    "gram:te-sumimasen",
+    "gram:amari-nai",
+    "gram:gp-148",
+    "gram:gp-149",
+    "gram:gp-62"
+  ],
+  "drills": [],
+  "production": [
+    {
+      "prompt_pt": "Não, obrigado. É que estou só olhando.",
+      "answer_key": "いいえ、けっこうです。見ているだけですから。",
+      "accepted_variants": [
+        "いいえ、けっこうです。みているだけですから",
+        "いいえ、けっこうです。みているだけですから。",
+        "いいえ、けっこうです。見ているだけですから",
+        "いいえ、けっこうです。見ているだけですから。"
+      ],
+      "sentence": "sent:tatoeba-229458",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Sim, vamos.",
+      "answer_key": "はい、行きましょう。",
+      "accepted_variants": [
+        "はい、いきましょう",
+        "はい、いきましょう。",
+        "はい、行きましょう",
+        "はい、行きましょう。"
+      ],
+      "sentence": "sent:tatoeba-198378",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Desculpe. A culpa é minha.",
+      "answer_key": "ごめんなさい。私のせいです。",
+      "accepted_variants": [
+        "ごめんなさい。わたしのせいです",
+        "ごめんなさい。わたしのせいです。",
+        "ごめんなさい。私のせいです",
+        "ごめんなさい。私のせいです。"
+      ],
+      "sentence": "sent:tatoeba-219058",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
+    "items": [
+      "sent:tatoeba-9559301",
+      "sent:tatoeba-4971",
+      "sent:tatoeba-1576172",
+      "sent:tatoeba-335372",
+      "sent:tatoeba-640569",
+      "sent:tatoeba-426889"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 45,
+    "fluency": 16
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 17,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:756",
@@ -102,72 +175,5 @@
         "いく"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-108",
-    "gram:te-sumimasen",
-    "gram:amari-nai",
-    "gram:gp-148",
-    "gram:gp-149",
-    "gram:gp-62"
-  ],
-  "drills": [],
-  "production": [
-    {
-      "prompt_pt": "Não, obrigado. É que estou só olhando.",
-      "answer_key": "いいえ、けっこうです。見ているだけですから。",
-      "accepted_variants": [
-        "いいえ、けっこうです。見ているだけですから",
-        "いいえ、けっこうです。見ているだけですから。"
-      ],
-      "sentence": "sent:tatoeba-229458",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Sim, vamos.",
-      "answer_key": "はい、行きましょう。",
-      "accepted_variants": [
-        "はい、行きましょう",
-        "はい、行きましょう。"
-      ],
-      "sentence": "sent:tatoeba-198378",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Desculpe. A culpa é minha.",
-      "answer_key": "ごめんなさい。私のせいです。",
-      "accepted_variants": [
-        "ごめんなさい。私のせいです",
-        "ごめんなさい。私のせいです。"
-      ],
-      "sentence": "sent:tatoeba-219058",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
-    "items": [
-      "sent:tatoeba-9559301",
-      "sent:tatoeba-4971",
-      "sent:tatoeba-1576172",
-      "sent:tatoeba-335372",
-      "sent:tatoeba-640569",
-      "sent:tatoeba-426889"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 23,
-    "fluency": 6
-  }
+  ]
 }

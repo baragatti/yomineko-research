@@ -4,7 +4,7 @@
   "stage": "speak:opinions",
   "order": 3,
   "title": {
-    "pt-BR": "Dizer o que você acha — parte 3"
+    "pt-BR": "Dizer o que você acha, parte 3"
   },
   "say_now": [
     "sent:tatoeba-75043",
@@ -53,48 +53,6 @@
   "cumulative_known_vocab": 524,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n4:3764:1348",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "少ない",
-        "手伝う",
-        "ホテル"
-      ]
-    },
-    {
-      "id": "cf:n4:3751:1348",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "買い物",
-        "女の子",
-        "小さい"
-      ]
-    },
-    {
-      "id": "kr:n3:1663",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まいあさ",
-        "けいけん",
-        "りょうり"
-      ]
-    },
-    {
-      "id": "kr:n4:1268",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いぬ",
-        "せん",
-        "かぜ"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -157,6 +115,8 @@
       "prompt_pt": "Não consigo compreender o motivo.",
       "answer_key": "理由がわかりかねます。",
       "accepted_variants": [
+        "りゆうがわかりかねます",
+        "りゆうがわかりかねます。",
         "理由がわかりかねます",
         "理由がわかりかねます。"
       ],
@@ -167,6 +127,8 @@
       "prompt_pt": "Não é possível que eles tenham perdido a partida.",
       "answer_key": "試合に負けたはずがない。",
       "accepted_variants": [
+        "しあいにまけたはずがない",
+        "しあいにまけたはずがない。",
         "試合に負けたはずがない",
         "試合に負けたはずがない。"
       ],
@@ -178,7 +140,9 @@
       "answer_key": "これについては、私は正しいはずです。",
       "accepted_variants": [
         "これについては、私は正しいはずです",
-        "これについては、私は正しいはずです。"
+        "これについては、私は正しいはずです。",
+        "これについてわ、わたしわただしいはずです",
+        "これについてわ、わたしわただしいはずです。"
       ],
       "sentence": "sent:tatoeba-5348453",
       "strand": "meaning-output"
@@ -199,15 +163,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 24,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n4:3764:1348",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "少ない",
+        "手伝う",
+        "ホテル"
+      ]
+    },
+    {
+      "id": "cf:n4:3751:1348",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "買い物",
+        "女の子",
+        "小さい"
+      ]
+    },
+    {
+      "id": "kr:n3:1663",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まいあさ",
+        "けいけん",
+        "りょうり"
+      ]
+    },
+    {
+      "id": "kr:n4:1268",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いぬ",
+        "せん",
+        "かぜ"
+      ]
+    }
+  ]
 }

@@ -4,7 +4,7 @@
   "stage": "speak:getting_around",
   "order": 1,
   "title": {
-    "pt-BR": "Chegar aonde você quer — parte 1"
+    "pt-BR": "Chegar aonde você quer, parte 1"
   },
   "say_now": [
     "sent:tatoeba-10107417",
@@ -51,6 +51,94 @@
   "cumulative_known_vocab": 151,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-70",
+    "gram:ka-shira",
+    "gram:gp-49",
+    "gram:tsumori"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-172639",
+        "sent:tatoeba-124633",
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ni-iku",
+      "examples": [
+        "sent:gen-d82f2dd80e15",
+        "sent:tatoeba-182675",
+        "sent:tatoeba-187532"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ele levava água com afinco até a boca dela.",
+      "answer_key": "彼がせっせと彼女の口に水を運んだ",
+      "accepted_variants": [
+        "かれがせっせとかのじょのくちにみずをはこんだ",
+        "彼がせっせと彼女の口に水を運んだ"
+      ],
+      "sentence": "sent:jec-2741",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Naquela época, uma xícara de café custava 200 ienes, viu.",
+      "answer_key": "あの頃はコーヒー１杯が２００円だったよ。",
+      "accepted_variants": [
+        "あのころわこーひーいっぱいがにひゃくえんだったよ",
+        "あのころわこーひーいっぱいがにひゃくえんだったよ。",
+        "あの頃はコーヒー１杯が２００円だったよ",
+        "あの頃はコーヒー１杯が２００円だったよ。"
+      ],
+      "sentence": "sent:tatoeba-231327",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Naquela época, eu não gostava de cerveja.",
+      "answer_key": "私は、そのころビールが嫌いだった。",
+      "accepted_variants": [
+        "わたしわ、そのころびーるがきらいだった",
+        "わたしわ、そのころびーるがきらいだった。",
+        "私は、そのころビールが嫌いだった",
+        "私は、そのころビールが嫌いだった。"
+      ],
+      "sentence": "sent:tatoeba-162347",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-191220",
+      "sent:tatoeba-78125",
+      "sent:tatoeba-8775094",
+      "sent:tatoeba-202470",
+      "sent:tatoeba-182254",
+      "sent:tatoeba-13440729"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 18,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:3596",
@@ -102,88 +190,5 @@
         "はこぶ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-70",
-    "gram:ka-shira",
-    "gram:gp-49",
-    "gram:ndesu"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-172639",
-        "sent:tatoeba-124633",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ni-iku",
-      "examples": [
-        "sent:gen-d82f2dd80e15",
-        "sent:tatoeba-182675",
-        "sent:tatoeba-187532"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Ele levava água com afinco até a boca dela.",
-      "answer_key": "彼がせっせと彼女の口に水を運んだ",
-      "accepted_variants": [
-        "彼がせっせと彼女の口に水を運んだ"
-      ],
-      "sentence": "sent:jec-2741",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Naquela época, uma xícara de café custava 200 ienes, viu.",
-      "answer_key": "あの頃はコーヒー１杯が２００円だったよ。",
-      "accepted_variants": [
-        "あの頃はコーヒー１杯が２００円だったよ",
-        "あの頃はコーヒー１杯が２００円だったよ。"
-      ],
-      "sentence": "sent:tatoeba-231327",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Naquela época, eu não gostava de cerveja.",
-      "answer_key": "私は、そのころビールが嫌いだった。",
-      "accepted_variants": [
-        "私は、そのころビールが嫌いだった",
-        "私は、そのころビールが嫌いだった。"
-      ],
-      "sentence": "sent:tatoeba-162347",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
-    "items": [
-      "sent:tatoeba-191220",
-      "sent:tatoeba-78125",
-      "sent:tatoeba-8775094",
-      "sent:tatoeba-202470",
-      "sent:tatoeba-182254",
-      "sent:tatoeba-13440729"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 24,
-    "fluency": 6
-  }
+  ]
 }

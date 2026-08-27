@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-130, ni-mieru, sou-ni-sou-na] · vocabulário [会場, 席, 空く, 腕, 運ぶ] · kanji [屋 館] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-f1b038704e1c`, `sent:tatoeba-12653680`, `sent:tatoeba-3496750`, `sent:tatoeba-10496134`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-12653680`, `sent:gen-f1b038704e1c`, `sent:tatoeba-3496750`, `sent:tatoeba-10496134`
 
 ---
 
@@ -68,28 +68,28 @@ Palavras que combinam com cenas que a gente observa e interpreta:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Você vê a rua molhada e conclui que choveu, sem ter visto a chuva. Qual forma expressa essa inferência a partir do que você VÊ?'}
+### 1. (recognition) Você vê a rua molhada e conclui que choveu, sem ter visto a chuva. Qual forma expressa essa inferência a partir do que você VÊ?
 - **Resposta:** `{"choices": ["雨が降ったそうだ (dizem que choveu)", "雨が降ったとみえて (pelo visto choveu)", "雨が降ると聞いた (ouvi dizer que vai chover)"], "correct": "雨が降ったとみえて (pelo visto choveu)"}`
-- {'pt-BR': "とみえて marca uma conclusão tirada de evidência VISÍVEL ('pelo visto'). そうだ e と聞いた são relatos de terceiros (alguém te contou), não a sua própria leitura da cena."}
+- とみえて marca uma conclusão tirada de evidência VISÍVEL ('pelo visto'). そうだ e と聞いた são relatos de terceiros (alguém te contou), não a sua própria leitura da cena.
 - frases: `sent:gen-f1b038704e1c`
 
-### 2. (particle_choice) {'pt-BR': 'Complete pela aparência: 彼は元気＿見える。 (Ele parece bem-disposto, pela cara dele.)'}
+### 2. (particle_choice) Complete pela aparência: 彼は元気＿見える。 (Ele parece bem-disposto, pela cara dele.)
 - **Resposta:** `{"choices": ["に", "と", "が"], "correct": "に"}`
-- {'pt-BR': "〜に見える liga 見える a um adjetivo-na ou substantivo com に: 元気に見える = 'aparenta estar bem'. と aqui daria a estrutura de citação (とみえる), e が marcaria sujeito."}
+- 〜に見える liga 見える a um adjetivo-na ou substantivo com に: 元気に見える = 'aparenta estar bem'. と aqui daria a estrutura de citação (とみえる), e が marcaria sujeito.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a forma de APARÊNCIA antes do substantivo: おいし＿ケーキだ。 (Um bolo com cara de gostoso.)'}
+### 3. (cloze) Complete com a forma de APARÊNCIA antes do substantivo: おいし＿ケーキだ。 (Um bolo com cara de gostoso.)
 - **Resposta:** `{"text": "そうな", "full": "おいしそうなケーキだ"}`
-- {'pt-BR': "そうな (não そうに) qualifica um substantivo: おいしそうなケーキ = 'um bolo que parece gostoso'. O radical おいし- recebe そう direto, sem o い: おいしいそうだ (com い) é que seria 'dizem que é gostoso'. Antes de substantivo, そう vira そうな."}
+- そうな (não そうに) qualifica um substantivo: おいしそうなケーキ = 'um bolo que parece gostoso'. O radical おいし- recebe そう direto, sem o い: おいしいそうだ (com い) é que seria 'dizem que é gostoso'. Antes de substantivo, そう vira そうな.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Ela riu com cara de feliz.' com as peças: [笑いました] [うれし] [彼女] [そうに] [は]"}
+### 4. (sentence_build) Monte 'Ela riu com cara de feliz.' com as peças: [笑いました] [うれし] [彼女] [そうに] [は]
 - **Resposta:** `{"order": ["彼女", "は", "うれし", "そうに", "笑いました"], "text": "彼女はうれしそうに笑いました。"}`
-- {'pt-BR': "そうに (advérbio) modifica o verbo 笑う: うれしそうに笑う = 'rir parecendo feliz'. O radical do adjetivo うれし- recebe そうに direto, e o verbo vem por último."}
+- そうに (advérbio) modifica o verbo 笑う: うれしそうに笑う = 'rir parecendo feliz'. O radical do adjetivo うれし- recebe そうに direto, e o verbo vem por último.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Pelo visto está frio lá fora, porque todo mundo está de casaco.' usando とみえて. (Dica: 外=lá fora, 寒い=frio, みんな=todo mundo, コートを着ている=estar de casaco.)"}
+### 5. (production) Diga em japonês 'Pelo visto está frio lá fora, porque todo mundo está de casaco.' usando とみえて. (Dica: 外=lá fora, 寒い=frio, みんな=todo mundo, コートを着ている=estar de casaco.)
 - **Resposta:** `{"text": "外は寒いとみえて、みんなコートを着ている。", "accept": ["外は寒いとみえて、みんなコートを着ている", "外は寒いとみえて、みんなコートを着ている。", "外は寒いとみえて みんなコートを着ている", "そとはさむいとみえて、みんなコートを着ている"]}`
-- {'pt-BR': 'Estrutura [conclusão] とみえて、[o que vejo]: 寒い (conclusão) + とみえて + みんなコートを着ている (a evidência). Você infere o frio a partir dos casacos que vê.'}
+- Estrutura [conclusão] とみえて、[o que vejo]: 寒い (conclusão) + とみえて + みんなコートを着ている (a evidência). Você infere o frio a partir dos casacos que vê.
 
 

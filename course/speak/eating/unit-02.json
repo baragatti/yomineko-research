@@ -4,7 +4,7 @@
   "stage": "speak:eating",
   "order": 2,
   "title": {
-    "pt-BR": "Comer e beber fora — parte 2"
+    "pt-BR": "Comer e beber fora, parte 2"
   },
   "say_now": [
     "sent:tatoeba-10899775",
@@ -52,48 +52,6 @@
   "cumulative_known_vocab": 99,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n5:3820:473",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "年",
-        "本",
-        "私"
-      ]
-    },
-    {
-      "id": "cf:n5:2900:498",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "壊す",
-        "結構",
-        "会う"
-      ]
-    },
-    {
-      "id": "kr:n5:313",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さいちゅう",
-        "かんがえる",
-        "レストラン"
-      ]
-    },
-    {
-      "id": "kr:n4:1240",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "しょくどう",
-        "さいちゅう",
-        "レストラン"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:sonna-ni"
   ],
@@ -149,6 +107,8 @@
       "prompt_pt": "Hoje os peixes não estão mordendo a isca.",
       "answer_key": "今日は魚の食いが悪い。",
       "accepted_variants": [
+        "きょうわさかなのくいがわるい",
+        "きょうわさかなのくいがわるい。",
         "今日は魚の食いが悪い",
         "今日は魚の食いが悪い。"
       ],
@@ -169,6 +129,8 @@
       "prompt_pt": "O jantar já está pronto, então a gente pode comer na hora que quiser.",
       "answer_key": "夕食の用意はできているから、いつでも食べたいときに食べられるよ。",
       "accepted_variants": [
+        "ゆうしょくのよういわできているから、いつでもたべたいときにたべられるよ",
+        "ゆうしょくのよういわできているから、いつでもたべたいときにたべられるよ。",
         "夕食の用意はできているから、いつでも食べたいときに食べられるよ",
         "夕食の用意はできているから、いつでも食べたいときに食べられるよ。"
       ],
@@ -191,15 +153,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n5:3820:473",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "年",
+        "本",
+        "私"
+      ]
+    },
+    {
+      "id": "cf:n5:2900:498",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "壊す",
+        "結構",
+        "会う"
+      ]
+    },
+    {
+      "id": "kr:n5:313",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さいちゅう",
+        "かんがえる",
+        "レストラン"
+      ]
+    },
+    {
+      "id": "kr:n4:1240",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "しょくどう",
+        "さいちゅう",
+        "レストラン"
+      ]
+    }
+  ]
 }

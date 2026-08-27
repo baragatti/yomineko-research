@@ -52,7 +52,7 @@ record is the lesson leaf.
 |--------|------------------|---------|
 | `sent:` | `sentence.slug` | `sent:tatoeba-124708` |
 | `kanji:` | `kanji.character` | `kanji:食` |
-| `vocab:` | `vocab.headword` (or numeric id) | `vocab:食べる` |
+| `vocab:` | AUTHORING accepts `vocab.headword` or a numeric row id; the EXPORT resolves both to the published `vocab:<jmdict_id>` slug (93 headwords name more than one record, so a headword is not an address — ambiguous ones are decided by sibling ref / lesson level / introducing topic, and queued in `course/vocab_disambiguation_review.json` otherwise) | authoring `vocab:食べる` -> exported `vocab:1358280` |
 | `gram:` | `grammar_point.key` | `gram:te-kudasai` |
 | `img:` `aud:` `vid:` | `asset.id` (registry) | `img:te-form-chart` |
 

@@ -64,23 +64,23 @@ Com as duas famílias novas, já dá para ler estrangeirismos usando só o katak
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual katakana resulta de カ + dakuten (゛)?'}
+### 1. (recognition) Qual katakana resulta de カ + dakuten (゛)?
 - **Resposta:** `{"choices": ["ガ", "ザ", "ギ"], "correct": "ガ"}`
-- {'pt-BR': 'カ + ゛ = ガ (ga). O dakuten deixa o som k sonoro, virando g.'}
+- カ + ゛ = ガ (ga). O dakuten deixa o som k sonoro, virando g.
 
 
-### 2. (recognition) {'pt-BR': 'Que som tem ジ?'}
+### 2. (recognition) Que som tem ジ?
 - **Resposta:** `{"choices": ["ji", "zi", "gi"], "correct": "ji"}`
-- {'pt-BR': "ジ vem de シ (shi), então soa ji como o 'di' de 'dia' (com aquele leve 'dj'), nunca o 'j' de 'janela' nem 'zi'."}
+- ジ vem de シ (shi), então soa ji como o 'di' de 'dia' (com aquele leve 'dj'), nunca o 'j' de 'janela' nem 'zi'.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
+### 3. (matching) Ligue cada katakana ao seu som.
 - **Resposta:** `{"pairs": [["ゴ", "go"], ["ギ", "gi"], ["ザ", "za"], ["ズ", "zu"], ["ゼ", "ze"]]}`
-- {'pt-BR': 'Famílias GA (ガ ギ グ ゲ ゴ) e ZA (ザ ジ ズ ゼ ゾ), formadas com o dakuten.'}
+- Famílias GA (ガ ギ グ ゲ ゴ) e ZA (ザ ジ ズ ゼ ゾ), formadas com o dakuten.
 
 
-### 4. (production) {'pt-BR': "Escreva o katakana do som 'gu' (ク com dakuten)."}
+### 4. (production) Escreva o katakana do som 'gu' (ク com dakuten).
 - **Resposta:** `{"text": "グ", "accept": ["グ"]}`
-- {'pt-BR': 'ク + ゛ = グ (gu).'}
+- ク + ゛ = グ (gu).
 
 

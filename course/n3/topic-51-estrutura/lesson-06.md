@@ -72,28 +72,28 @@ Não troque 辞める (やめる, "demitir-se, largar o emprego") por 止める 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa "telhado"?'}
+### 1. (recognition) Qual palavra significa "telhado"?
 - **Resposta:** `{"choices": ["屋根", "家賃", "宿", "物音"], "correct": "屋根"}`
-- {'pt-BR': '屋根 (やね) é o telhado; 家賃 é aluguel, 宿 é pousada e 物音 é barulho.'}
+- 屋根 (やね) é o telhado; 家賃 é aluguel, 宿 é pousada e 物音 é barulho.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["物語", "história / narrativa"], ["役割", "papel / função"], ["雇う", "contratar"], ["辞める", "demitir-se"]]}`
-- {'pt-BR': '物語 = conto, 役割 = a parte que cada um cumpre, 雇う = admitir alguém, 辞める = largar o emprego.'}
+- 物語 = conto, 役割 = a parte que cada um cumpre, 雇う = admitir alguém, 辞める = largar o emprego.
 
 
-### 3. (cloze) {'pt-BR': 'Complete "Até a estação leva cerca de cinco minutos": 駅まで＿＿五分かかる。'}
+### 3. (cloze) Complete "Até a estação leva cerca de cinco minutos": 駅まで＿＿五分かかる。
 - **Resposta:** `{"text": "約", "full": "駅まで約五分かかる。"}`
-- {'pt-BR': '約 (やく) significa "aproximadamente" e vem grudado antes do número (約五分 = cerca de cinco minutos).'}
+- 約 (やく) significa "aproximadamente" e vem grudado antes do número (約五分 = cerca de cinco minutos).
 
 
-### 4. (recognition) {'pt-BR': 'Em 夜に変な＿＿が聞こえた ("ouvi um ＿＿ estranho à noite"), qual palavra cabe?'}
+### 4. (recognition) Em 夜に変な＿＿が聞こえた ("ouvi um ＿＿ estranho à noite"), qual palavra cabe?
 - **Resposta:** `{"choices": ["物音", "物語", "模様", "役割"], "correct": "物音"}`
-- {'pt-BR': '物音 (ものおと) é "ruído, barulho", o que se ouve; 物語 é história, 模様 é estampa e 役割 é papel.'}
+- 物音 (ものおと) é "ruído, barulho", o que se ouve; 物語 é história, 模様 é estampa e 役割 é papel.
 
 
-### 5. (production) {'pt-BR': 'Diga "Pretendo me demitir da empresa no mês que vem" usando 辞める (来月 = mês que vem, 会社 = empresa, つもりだ = pretendo).'}
+### 5. (production) Diga "Pretendo me demitir da empresa no mês que vem" usando 辞める (来月 = mês que vem, 会社 = empresa, つもりだ = pretendo).
 - **Resposta:** `{"text": "来月会社を辞めるつもりだ", "accept": ["来月会社を辞めるつもりだ。", "来月会社を辞めるつもりです", "来月会社を辞めるつもりです。", "来月、会社を辞めるつもりだ"]}`
-- {'pt-BR': '辞める (やめる) é "sair do cargo"; o objeto vem com を (会社を) e つもりだ expressa intenção.'}
+- 辞める (やめる) é "sair do cargo"; o objeto vem com を (会社を) e つもりだ expressa intenção.
 
 

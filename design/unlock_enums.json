@@ -2,57 +2,234 @@
   "schema_version": "1.0",
   "_doc": "Closed, versioned global taxonomy for lesson needs/unlocks + app features + SRS. See design/courseware_architecture.md. Adding a value is a deliberate, documented change. Loader/validator import this. NOTE: these are the needs/unlocks METADATA ref namespaces; lesson-BODY chip refs are a subset (sent/kanji/vocab/gram) + the deferred asset prefixes (img/aud/vid), defined in lesson_schema.md rule 3. SRS cards are ALWAYS derived from item unlocks (a lesson's srs.introduces_cards is computed from its unlocks), so there is no `srs-card` unlock type or `card:` namespace — only `card_type` (the per-skill kinds).",
   "unlock_type": [
-    "kana-family", "vocab", "kanji", "grammar", "conjugation-form",
-    "phrase", "kanji-family", "feature", "srs-deck"
+    "kana-family",
+    "vocab",
+    "kanji",
+    "grammar",
+    "conjugation-form",
+    "phrase",
+    "kanji-family",
+    "feature",
+    "srs-deck"
   ],
   "need_type": [
-    "lesson", "kana-family", "vocab", "kanji", "grammar", "conjugation-form",
-    "phrase", "kanji-family", "feature"
+    "lesson",
+    "kana-family",
+    "vocab",
+    "kanji",
+    "grammar",
+    "conjugation-form",
+    "phrase",
+    "kanji-family",
+    "feature"
   ],
   "_need_type_doc": "= unlock_type minus {srs-deck} plus {lesson}. You depend on items/features/prior-lessons, never on a deck.",
   "feature": [
-    "srs-reviews", "kana-input", "furigana-toggle", "romaji-toggle", "kanji-lookup",
-    "handwriting-input", "conjugation-drill", "particle-drill", "phrase-builder",
-    "listening", "voice-mode", "jlpt-sim-n5", "jlpt-sim-n4",
-    "find-correct-kanji", "find-correct-particle", "visual-novel"
+    "srs-reviews",
+    "kana-input",
+    "furigana-toggle",
+    "romaji-toggle",
+    "kanji-lookup",
+    "handwriting-input",
+    "conjugation-drill",
+    "particle-drill",
+    "phrase-builder",
+    "listening",
+    "voice-mode",
+    "jlpt-sim-n5",
+    "jlpt-sim-n4",
+    "find-correct-kanji",
+    "find-correct-particle",
+    "visual-novel"
   ],
-  "card_type": ["recognition", "production", "listening", "handwriting", "cloze"],
+  "card_type": [
+    "recognition",
+    "production",
+    "listening",
+    "handwriting",
+    "cloze"
+  ],
   "deck": [
-    "deck:kana-hiragana", "deck:kana-katakana",
-    "deck:vocab-n5", "deck:vocab-n4",
-    "deck:kanji-n5", "deck:kanji-n4",
-    "deck:grammar-n5", "deck:grammar-n4",
+    "deck:kana-hiragana",
+    "deck:kana-katakana",
+    "deck:vocab-n5",
+    "deck:vocab-n4",
+    "deck:kanji-n5",
+    "deck:kanji-n4",
+    "deck:grammar-n5",
+    "deck:grammar-n4",
+    "deck:vocab-n3",
+    "deck:kanji-n3",
+    "deck:grammar-n3",
     "deck:phrases"
   ],
   "deck_registry": {
-    "deck:kana-hiragana": {"skill": "kana", "level": "pre-n5", "card_types": ["recognition", "production", "handwriting"]},
-    "deck:kana-katakana": {"skill": "kana", "level": "pre-n5", "card_types": ["recognition", "production", "handwriting"]},
-    "deck:vocab-n5": {"skill": "vocab", "level": "n5", "card_types": ["recognition", "production"]},
-    "deck:vocab-n4": {"skill": "vocab", "level": "n4", "card_types": ["recognition", "production"]},
-    "deck:kanji-n5": {"skill": "kanji", "level": "n5", "card_types": ["recognition", "production", "handwriting"]},
-    "deck:kanji-n4": {"skill": "kanji", "level": "n4", "card_types": ["recognition", "production", "handwriting"]},
-    "deck:grammar-n5": {"skill": "grammar", "level": "n5", "card_types": ["recognition", "cloze", "production"]},
-    "deck:grammar-n4": {"skill": "grammar", "level": "n4", "card_types": ["recognition", "cloze", "production"]},
-    "deck:phrases": {"skill": "phrase", "level": "n5", "card_types": ["listening", "production"]}
+    "deck:kana-hiragana": {
+      "skill": "kana",
+      "level": "pre-n5",
+      "card_types": [
+        "recognition",
+        "production",
+        "handwriting"
+      ]
+    },
+    "deck:kana-katakana": {
+      "skill": "kana",
+      "level": "pre-n5",
+      "card_types": [
+        "recognition",
+        "production",
+        "handwriting"
+      ]
+    },
+    "deck:vocab-n5": {
+      "skill": "vocab",
+      "level": "n5",
+      "card_types": [
+        "recognition",
+        "production"
+      ]
+    },
+    "deck:vocab-n4": {
+      "skill": "vocab",
+      "level": "n4",
+      "card_types": [
+        "recognition",
+        "production"
+      ]
+    },
+    "deck:kanji-n5": {
+      "skill": "kanji",
+      "level": "n5",
+      "card_types": [
+        "recognition",
+        "production",
+        "handwriting"
+      ]
+    },
+    "deck:kanji-n4": {
+      "skill": "kanji",
+      "level": "n4",
+      "card_types": [
+        "recognition",
+        "production",
+        "handwriting"
+      ]
+    },
+    "deck:grammar-n5": {
+      "skill": "grammar",
+      "level": "n5",
+      "card_types": [
+        "recognition",
+        "cloze",
+        "production"
+      ]
+    },
+    "deck:grammar-n4": {
+      "skill": "grammar",
+      "level": "n4",
+      "card_types": [
+        "recognition",
+        "cloze",
+        "production"
+      ]
+    },
+    "deck:phrases": {
+      "skill": "phrase",
+      "level": "n5",
+      "card_types": [
+        "listening",
+        "production"
+      ]
+    },
+    "deck:vocab-n3": {
+      "skill": "vocab",
+      "level": "n3",
+      "card_types": [
+        "recognition",
+        "production"
+      ]
+    },
+    "deck:kanji-n3": {
+      "skill": "kanji",
+      "level": "n3",
+      "card_types": [
+        "recognition",
+        "production",
+        "handwriting"
+      ]
+    },
+    "deck:grammar-n3": {
+      "skill": "grammar",
+      "level": "n3",
+      "card_types": [
+        "recognition",
+        "cloze",
+        "production"
+      ]
+    }
   },
-  "_deck_defaults": {"desired_retention": 0.90, "retention_band": [0.80, 0.95], "new_per_day": 10,
-    "_note": "FSRS params are per-deck-preset; only scheduler on/off is global. >0.97 retention discouraged."},
-  "item_to_deck": {"kana-family": "deck:kana-<script>", "vocab": "deck:vocab-<level>", "kanji": "deck:kanji-<level>",
-    "grammar": "deck:grammar-<level>", "phrase": "deck:phrases"},
+  "_deck_defaults": {
+    "desired_retention": 0.9,
+    "retention_band": [
+      0.8,
+      0.95
+    ],
+    "new_per_day": 10,
+    "_note": "FSRS params are per-deck-preset; only scheduler on/off is global. >0.97 retention discouraged."
+  },
+  "item_to_deck": {
+    "kana-family": "deck:kana-<script>",
+    "vocab": "deck:vocab-<level>",
+    "kanji": "deck:kanji-<level>",
+    "grammar": "deck:grammar-<level>",
+    "phrase": "deck:phrases"
+  },
   "conjugation_form": [
-    "dictionary", "masu", "te", "nai", "ta", "nakatta", "masen", "mashita", "masendeshita",
-    "potential", "volitional", "passive", "causative", "causative-passive", "imperative", "prohibitive",
-    "conditional-ba", "conditional-tara", "provisional", "stem"
+    "dictionary",
+    "masu",
+    "te",
+    "nai",
+    "ta",
+    "nakatta",
+    "masen",
+    "mashita",
+    "masendeshita",
+    "potential",
+    "volitional",
+    "passive",
+    "causative",
+    "causative-passive",
+    "imperative",
+    "prohibitive",
+    "conditional-ba",
+    "conditional-tara",
+    "provisional",
+    "stem"
   ],
   "ref_namespace": {
-    "kana-family": "kana", "vocab": "vocab", "kanji": "kanji", "grammar": "gram",
-    "conjugation-form": "conj", "phrase": "sent", "kanji-family": "fam",
-    "feature": "feat", "srs-deck": "deck", "lesson": "les"
+    "kana-family": "kana",
+    "vocab": "vocab",
+    "kanji": "kanji",
+    "grammar": "gram",
+    "conjugation-form": "conj",
+    "phrase": "sent",
+    "kanji-family": "fam",
+    "feature": "feat",
+    "srs-deck": "deck",
+    "lesson": "les"
   },
   "_kana_ref_note": "The `kana:` namespace holds BOTH family ids `kana:<script>-<row>` (the kana-family unlock target) and per-glyph ids `kana:<script>-<char>` (members of a family, NOT independently unlockable). Only families are unlock/need refs.",
   "_ref_form": {
-    "vocab": "vocab:<headword> (or vocab:<numeric id>)", "kanji": "kanji:<char>", "grammar": "gram:<key>",
-    "kana-family": "kana:<script>-<row>", "conjugation-form": "conj:<form>", "phrase": "sent:<slug>",
-    "kanji-family": "fam:<slug>", "feature": "feat:<key>", "srs-deck": "deck:<key>", "lesson": "les:<id>"
+    "vocab": "vocab:<headword> (or vocab:<numeric id>)",
+    "kanji": "kanji:<char>",
+    "grammar": "gram:<key>",
+    "kana-family": "kana:<script>-<row>",
+    "conjugation-form": "conj:<form>",
+    "phrase": "sent:<slug>",
+    "kanji-family": "fam:<slug>",
+    "feature": "feat:<key>",
+    "srs-deck": "deck:<key>",
+    "lesson": "les:<id>"
   }
 }

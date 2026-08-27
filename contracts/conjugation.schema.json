@@ -2,14 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://yomineko.dev/contracts/conjugation.schema.json",
   "title": "conjugation",
-  "description": "The full inflection table for one verb or adjective, keyed by the vocab entry it belongs to.",
+  "description": "The full inflection table for one verb or adjective. It is addressed by the vocab entry it belongs to, so `slug` here is a foreign key into vocab, not a new address.",
   "x-yomineko": {
     "entity": "conjugation",
     "records": 1156,
     "packing": "list",
     "glob": "corpus/conjugations/*.json",
     "stable_id_field": "slug",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -22,7 +23,12 @@
         "kuru_irregular",
         "na_adj",
         "suru_irregular"
-      ]
+      ],
+      "description": "Inflection class this table was generated from. Vocabulary owner: producer — scripts/ingest/conjugate.py (verb_class ∪ adj_class — the conjugation bank keys on both). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "producer",
+        "source": "scripts/ingest/conjugate.py (verb_class ∪ adj_class — the conjugation bank keys on both)"
+      }
     },
     "conjugations": {
       "type": "array",
@@ -56,7 +62,12 @@
               "te",
               "volitional",
               "volitional_polite"
-            ]
+            ],
+            "description": "Which inflected form this is. Vocabulary owner: producer — scripts/ingest/conjugate.py VERB_FORMS + ADJ_FORMS. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "producer",
+              "source": "scripts/ingest/conjugate.py VERB_FORMS + ADJ_FORMS"
+            }
           },
           "kana": {
             "type": "string"
@@ -82,7 +93,12 @@
       "enum": [
         "adjective",
         "verb"
-      ]
+      ],
+      "description": "Whether this is a verb or an adjective paradigm. Vocabulary owner: producer — scripts/ingest/conjugate.py (VERB_FORMS vs ADJ_FORMS). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "producer",
+        "source": "scripts/ingest/conjugate.py (VERB_FORMS vs ADJ_FORMS)"
+      }
     },
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
@@ -91,7 +107,8 @@
       "$ref": "common.schema.json#/$defs/StableId"
     },
     "vocab_id": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     }
   },
   "additionalProperties": false,

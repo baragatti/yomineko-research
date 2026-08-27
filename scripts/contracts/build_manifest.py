@@ -59,6 +59,14 @@ def ts_type(node: dict, depth: int = 0) -> str:
         tail = ref.split("/")[-1]
         if tail in ("LocaleText", "LocaleTextList", "StableId", "Level", "Layer"):
             return tail
+        if tail == "Locale":
+            return "string"
+        if tail in ("IdRef",):
+            return "StableId"
+        if tail == "IdRefList":
+            return "StableId[]"
+        if tail == "LevelSources":
+            return "Record<string, unknown> | null"
         if tail in ("needs_review", "ai_generated"):
             return "boolean"
         if tail == "source":

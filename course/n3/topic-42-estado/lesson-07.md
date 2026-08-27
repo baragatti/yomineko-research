@@ -66,23 +66,23 @@ Para fechar, pessoas e alguns verbos.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa o custo de vida, isto é, o preço das mercadorias em geral?'}
+### 1. (recognition) Qual palavra significa o custo de vida, isto é, o preço das mercadorias em geral?
 - **Resposta:** `{"choices": ["物価 (ぶっか)", "物質 (ぶっしつ)", "物理 (ぶつり)"], "correct": "物価 (ぶっか)"}`
-- {'pt-BR': '物価 (ぶっか) é o nível de preços; 物質 é substância e 物理 é física.'}
+- 物価 (ぶっか) é o nível de preços; 物質 é substância e 物理 é física.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra à sua tradução.'}
+### 2. (matching) Associe cada palavra à sua tradução.
 - **Resposta:** `{"pairs": [["双子", "gêmeos"], ["防ぐ", "prevenir, proteger contra"], ["再び", "novamente"], ["部分", "parte, trecho"]]}`
-- {'pt-BR': 'Quatro itens da lição: gêmeos, o verbo prevenir, novamente e parte.'}
+- Quatro itens da lição: gêmeos, o verbo prevenir, novamente e parte.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a frase: <jp>最近お金が＿＿している</jp> (Ultimamente o dinheiro está faltando.)'}
+### 3. (cloze) Complete a frase: 最近お金が＿＿している (Ultimamente o dinheiro está faltando.)
 - **Resposta:** `{"text": "不足", "full": "最近お金が不足している。"}`
-- {'pt-BR': '不足 (ふそく) indica escassez ou falta de quantidade, neste caso de dinheiro.'}
+- 不足 (ふそく) indica escassez ou falta de quantidade, neste caso de dinheiro.
 
 
-### 4. (production) {'pt-BR': 'Escreva uma frase em japonês dizendo Vamos prevenir o resfriado (use 防ぐ e 風邪).'}
-- **Resposta:** `{"text": "風邪を防ぎましょう", "accept": ["風邪を防ごう", "かぜを防ぎましょう", "かぜを防ごう"]}`
-- {'pt-BR': '防ぐ (ふせぐ) é proteger-se de ou prevenir; com ましょう vira um convite, vamos prevenir.'}
+### 4. (production) Escreva uma frase em japonês dizendo Vamos prevenir o resfriado (use 防ぐ e 風邪).
+- **Resposta:** `{"text": "風邪を防ぎましょう", "accept": ["風邪を防ぎましょう", "風邪を防ごう", "かぜを防ぎましょう", "かぜを防ごう"]}`
+- 防ぐ (ふせぐ) é proteger-se de ou prevenir; com ましょう vira um convite, vamos prevenir.
 
 

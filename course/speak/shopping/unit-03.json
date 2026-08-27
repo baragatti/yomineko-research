@@ -4,7 +4,7 @@
   "stage": "speak:shopping",
   "order": 3,
   "title": {
-    "pt-BR": "Isto, aquilo, quanto custa — parte 3"
+    "pt-BR": "Isto, aquilo, quanto custa, parte 3"
   },
   "say_now": [
     "sent:tatoeba-199394",
@@ -27,7 +27,8 @@
     "vocab:1184170"
   ],
   "patterns": [
-    "gram:koto-ga-dekiru"
+    "gram:koto-ga-dekiru",
+    "gram:koto"
   ],
   "kanji_recognition": [
     "人",
@@ -50,6 +51,96 @@
   "cumulative_known_vocab": 57,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-78",
+    "gram:gp-89",
+    "gram:to-omou",
+    "gram:gp-123"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:koto-ga-dekiru",
+      "examples": [
+        "sent:tatoeba-155347",
+        "sent:tatoeba-8795030",
+        "sent:tatoeba-13179916"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:tatoeba-5047",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Então isso quer dizer que você não vem?",
+      "answer_key": "それでは、あなたは来ないということですか。",
+      "accepted_variants": [
+        "それでは、あなたは来ないということですか",
+        "それでは、あなたは来ないということですか。",
+        "それでわ、あなたわこないということですか",
+        "それでわ、あなたわこないということですか。"
+      ],
+      "sentence": "sent:tatoeba-205771",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por mais que eu agradeça, nunca será o bastante.",
+      "answer_key": "いくらお礼を言っても言い切れない。",
+      "accepted_variants": [
+        "いくらおれいをいってもいいきれない",
+        "いくらおれいをいってもいいきれない。",
+        "いくらお礼を言っても言い切れない",
+        "いくらお礼を言っても言い切れない。"
+      ],
+      "sentence": "sent:tatoeba-229178",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ué, o que mesmo que eu ia dizer?",
+      "answer_key": "あれ、私何言おうとしたんだっけ？",
+      "accepted_variants": [
+        "あれ、わたしなにいおうとしたんだっけ",
+        "あれ、わたしなにいおうとしたんだっけ?",
+        "あれ、私何言おうとしたんだっけ",
+        "あれ、私何言おうとしたんだっけ？"
+      ],
+      "sentence": "sent:tatoeba-2941029",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-79848",
+      "sent:tatoeba-8938683",
+      "sent:tatoeba-10094172",
+      "sent:tatoeba-218647",
+      "sent:tatoeba-229736",
+      "sent:tatoeba-229742"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 18,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:520",
@@ -106,81 +197,5 @@
         "ねだん"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-78",
-    "gram:you-to-omou",
-    "gram:gp-89",
-    "gram:to-omou",
-    "gram:donna"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:koto-ga-dekiru",
-      "examples": [
-        "sent:tatoeba-155347",
-        "sent:tatoeba-8795030",
-        "sent:tatoeba-13179916"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Então isso quer dizer que você não vem?",
-      "answer_key": "それでは、あなたは来ないということですか。",
-      "accepted_variants": [
-        "それでは、あなたは来ないということですか",
-        "それでは、あなたは来ないということですか。"
-      ],
-      "sentence": "sent:tatoeba-205771",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Por mais que eu agradeça, nunca será o bastante.",
-      "answer_key": "いくらお礼を言っても言い切れない。",
-      "accepted_variants": [
-        "いくらお礼を言っても言い切れない",
-        "いくらお礼を言っても言い切れない。"
-      ],
-      "sentence": "sent:tatoeba-229178",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ué, o que mesmo que eu ia dizer?",
-      "answer_key": "あれ、私何言おうとしたんだっけ？",
-      "accepted_variants": [
-        "あれ、私何言おうとしたんだっけ",
-        "あれ、私何言おうとしたんだっけ？"
-      ],
-      "sentence": "sent:tatoeba-2941029",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
-    "items": [
-      "sent:tatoeba-79848",
-      "sent:tatoeba-8938683",
-      "sent:tatoeba-10094172",
-      "sent:tatoeba-218647",
-      "sent:tatoeba-229736",
-      "sent:tatoeba-229742"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 22,
-    "fluency": 6
-  }
+  ]
 }

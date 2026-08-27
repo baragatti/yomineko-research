@@ -9,7 +9,8 @@
     "packing": "list",
     "glob": "corpus/readings/*.json",
     "stable_id_field": "slug",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -31,7 +32,12 @@
         "long",
         "paragraph",
         "short"
-      ]
+      ],
+      "description": "Roughly how long the passage is. Vocabulary owner: design — design/reading_practice.md (length_band). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "design",
+        "source": "design/reading_practice.md (length_band)"
+      }
     },
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
@@ -63,18 +69,26 @@
               "adverb",
               "auxiliary",
               "conjunction",
+              "filler",
               "i-adjective",
               "interjection",
               "na-adjective",
               "noun",
+              "numeral",
               "particle",
               "prefix",
               "pronoun",
               "punctuation",
               "suffix",
+              "symbol",
               "verb",
               "whitespace"
-            ]
+            ],
+            "description": "Part of speech, Layer A, mechanical from the analyzer. Vocabulary owner: producer — scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "producer",
+              "source": "scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum)"
+            }
           },
           "r": {
             "type": "string"

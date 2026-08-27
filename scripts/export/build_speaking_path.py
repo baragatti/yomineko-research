@@ -283,6 +283,26 @@ def main() -> int:
                     patterns.append((max(len(h) for h in hits), g))
             patterns.sort(key=lambda t: (-t[0], t[1]["level"], t[1]["key"]))
             patterns = [g for _, g in patterns]
+            # No unit teaches one grammar point twice under two identities: when two candidates'
+            # >=2-char form sets are nested (gram:gp {です} inside gram:da-desu {だ,です}), keep the
+            # superset record — it is the more complete statement of the same point. Nine units used
+            # to drill the copula twice because of exactly this pair.
+            kept: list = []
+            for g in patterns:
+                fs = {f for f in g["forms"] if len(f) >= 2}
+                replaced = False
+                for i, k in enumerate(kept):
+                    ks = {f for f in k["forms"] if len(f) >= 2}
+                    if fs <= ks:
+                        replaced = True          # g adds nothing over k: drop g
+                        break
+                    if ks < fs:
+                        kept[i] = g              # g supersedes k
+                        replaced = True
+                        break
+                if not replaced:
+                    kept.append(g)
+            patterns = kept
             words_sorted = sorted(new_ids, key=lambda v: (vocab[v]["freq"], vocab[v]["level"]))
             sign = []
             for s in picked:
@@ -296,7 +316,7 @@ def main() -> int:
                 "schema_version": "1.0",
                 "stage": f"speak:{slug}",
                 "order": u,
-                "title": {"pt-BR": f"{title} — parte {u}"},
+                "title": {"pt-BR": f"{title}, parte {u}"},
                 "say_now": [s["slug"] for s in picked],
                 "chunk_phrases": [s["slug"] for s in picked if s["chunk"]],
                 "untranslated": [s["slug"] for s in picked if not ptx.get(s["id"])],

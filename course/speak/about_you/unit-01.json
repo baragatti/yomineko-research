@@ -4,7 +4,7 @@
   "stage": "speak:about_you",
   "order": 1,
   "title": {
-    "pt-BR": "Falar de você — parte 1"
+    "pt-BR": "Falar de você, parte 1"
   },
   "say_now": [
     "sent:tatoeba-1046077",
@@ -54,6 +54,103 @@
   "cumulative_known_vocab": 267,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:ga-hitsuyou",
+    "gram:yori"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:gen-1d94a829f09c",
+        "sent:tatoeba-774692"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tai",
+      "examples": [
+        "sent:tatoeba-83633",
+        "sent:tatoeba-83634",
+        "sent:tatoeba-84964"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Havia quatro móveis no quarto.",
+      "answer_key": "部屋には家具が４点あった。",
+      "accepted_variants": [
+        "へやにわかぐがよんてんあった",
+        "へやにわかぐがよんてんあった。",
+        "部屋には家具が４点あった",
+        "部屋には家具が４点あった。"
+      ],
+      "sentence": "sent:tatoeba-84223",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Estou pensando em dormir mais cedo hoje à noite.",
+      "answer_key": "今夜は早めに寝ようと思う。",
+      "accepted_variants": [
+        "こんやわはやめにねようとおもう",
+        "こんやわはやめにねようとおもう。",
+        "今夜は早めに寝ようと思う",
+        "今夜は早めに寝ようと思う。"
+      ],
+      "sentence": "sent:tatoeba-3313203",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Poderia me mostrar o quarto?",
+      "answer_key": "部屋を見せていただけますか。",
+      "accepted_variants": [
+        "へやをみせていただけますか",
+        "へやをみせていただけますか。",
+        "部屋を見せていただけますか",
+        "部屋を見せていただけますか。"
+      ],
+      "sentence": "sent:tatoeba-84126",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-84180",
+      "sent:tatoeba-84132",
+      "sent:tatoeba-84114",
+      "sent:tatoeba-218592",
+      "sent:tatoeba-84124",
+      "sent:tatoeba-77964"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:677",
@@ -100,96 +197,5 @@
         "なまえ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:ga-hitsuyou",
-    "gram:yori"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:mitai-da",
-      "examples": [
-        "sent:tatoeba-4216208",
-        "sent:gen-1d94a829f09c",
-        "sent:tatoeba-774692"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tai",
-      "examples": [
-        "sent:tatoeba-83633",
-        "sent:tatoeba-83634",
-        "sent:tatoeba-84964"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Havia quatro móveis no quarto.",
-      "answer_key": "部屋には家具が４点あった。",
-      "accepted_variants": [
-        "部屋には家具が４点あった",
-        "部屋には家具が４点あった。"
-      ],
-      "sentence": "sent:tatoeba-84223",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Estou pensando em dormir mais cedo hoje à noite.",
-      "answer_key": "今夜は早めに寝ようと思う。",
-      "accepted_variants": [
-        "今夜は早めに寝ようと思う",
-        "今夜は早めに寝ようと思う。"
-      ],
-      "sentence": "sent:tatoeba-3313203",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Poderia me mostrar o quarto?",
-      "answer_key": "部屋を見せていただけますか。",
-      "accepted_variants": [
-        "部屋を見せていただけますか",
-        "部屋を見せていただけますか。"
-      ],
-      "sentence": "sent:tatoeba-84126",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
-    "items": [
-      "sent:tatoeba-84180",
-      "sent:tatoeba-84132",
-      "sent:tatoeba-84114",
-      "sent:tatoeba-218592",
-      "sent:tatoeba-84124",
-      "sent:tatoeba-77964"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 27,
-    "fluency": 6
-  }
+  ]
 }

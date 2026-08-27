@@ -4,7 +4,7 @@
   "stage": "speak:lodging",
   "order": 5,
   "title": {
-    "pt-BR": "Dormir e resolver problemas — parte 5"
+    "pt-BR": "Dormir e resolver problemas, parte 5"
   },
   "say_now": [
     "sent:tatoeba-84124",
@@ -30,10 +30,9 @@
     "vocab:1586210"
   ],
   "patterns": [
-    "gram:da-desu",
-    "gram:gp",
     "gram:gp-15",
-    "gram:gp-2"
+    "gram:gp-2",
+    "gram:kara"
   ],
   "kanji_recognition": [
     "屋",
@@ -56,6 +55,104 @@
   "cumulative_known_vocab": 250,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:nasai",
+    "gram:te-ita",
+    "gram:wa-yori-desu"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-15",
+      "examples": [
+        "sent:gen-6fe6c769a3a7",
+        "sent:tatoeba-84712",
+        "sent:tatoeba-84720"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-2",
+      "examples": [
+        "sent:tatoeba-171785",
+        "sent:tatoeba-171784",
+        "sent:tatoeba-171787"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kara",
+      "examples": [
+        "sent:tatoeba-76156",
+        "sent:tatoeba-4772",
+        "sent:gen-671b7aebf53d"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Deixe as janelas do quarto fechadas.",
+      "answer_key": "部屋の窓は閉めておくように。",
+      "accepted_variants": [
+        "へやのまどわしめておくように",
+        "へやのまどわしめておくように。",
+        "部屋の窓は閉めておくように",
+        "部屋の窓は閉めておくように。"
+      ],
+      "sentence": "sent:tatoeba-84181",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O quarto está cheio de flores.",
+      "answer_key": "部屋は花でいっぱいです。",
+      "accepted_variants": [
+        "へやわはなでいっぱいです",
+        "へやわはなでいっぱいです。",
+        "部屋は花でいっぱいです",
+        "部屋は花でいっぱいです。"
+      ],
+      "sentence": "sent:tatoeba-84147",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, ache um hotel com preço acessível.",
+      "answer_key": "料金の手ごろなホテルを見つけて下さい。",
+      "accepted_variants": [
+        "りょうきんのてごろなほてるをみつけてください",
+        "りょうきんのてごろなほてるをみつけてください。",
+        "料金の手ごろなホテルを見つけて下さい",
+        "料金の手ごろなホテルを見つけて下さい。"
+      ],
+      "sentence": "sent:tatoeba-77964",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
+    "items": [
+      "sent:tatoeba-84203",
+      "sent:tatoeba-4562257",
+      "sent:tatoeba-126245",
+      "sent:tatoeba-84229",
+      "sent:tatoeba-84158",
+      "sent:tatoeba-84222"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "cf:n3:3991:1369",
@@ -107,105 +204,5 @@
         "くつ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:nasai",
-    "gram:te-ita"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-15",
-      "examples": [
-        "sent:gen-6fe6c769a3a7",
-        "sent:tatoeba-84712",
-        "sent:tatoeba-84720"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-2",
-      "examples": [
-        "sent:tatoeba-171785",
-        "sent:tatoeba-171784",
-        "sent:tatoeba-171787"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Deixe as janelas do quarto fechadas.",
-      "answer_key": "部屋の窓は閉めておくように。",
-      "accepted_variants": [
-        "部屋の窓は閉めておくように",
-        "部屋の窓は閉めておくように。"
-      ],
-      "sentence": "sent:tatoeba-84181",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "O quarto está cheio de flores.",
-      "answer_key": "部屋は花でいっぱいです。",
-      "accepted_variants": [
-        "部屋は花でいっぱいです",
-        "部屋は花でいっぱいです。"
-      ],
-      "sentence": "sent:tatoeba-84147",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Por favor, ache um hotel com preço acessível.",
-      "answer_key": "料金の手ごろなホテルを見つけて下さい。",
-      "accepted_variants": [
-        "料金の手ごろなホテルを見つけて下さい",
-        "料金の手ごろなホテルを見つけて下さい。"
-      ],
-      "sentence": "sent:tatoeba-77964",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
-    "items": [
-      "sent:tatoeba-84203",
-      "sent:tatoeba-4562257",
-      "sent:tatoeba-126245",
-      "sent:tatoeba-84229",
-      "sent:tatoeba-84158",
-      "sent:tatoeba-84222"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 30,
-    "fluency": 6
-  }
+  ]
 }

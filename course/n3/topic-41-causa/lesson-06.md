@@ -68,28 +68,28 @@ Para fechar, um grupo de palavras avulsas muito usadas no dia a dia.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'moderado, na medida certa'?"}
+### 1. (recognition) Qual palavra significa 'moderado, na medida certa'?
 - **Resposta:** `{"choices": ["適度", "適切", "適用", "徹底"], "correct": "適度"}`
-- {'pt-BR': "適度 (てきど) é 'moderado'. 適切 é 'apropriado', 適用 é 'aplicação' e 徹底 é 'a fundo, rigor'."}
+- 適度 (てきど) é 'moderado'. 適切 é 'apropriado', 適用 é 'aplicação' e 徹底 é 'a fundo, rigor'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu sentido em português.'}
+### 2. (matching) Ligue cada palavra ao seu sentido em português.
 - **Resposta:** `{"pairs": [["鉄道", "ferrovia"], ["徹夜", "virar a noite"], ["哲学", "filosofia"], ["伝統", "tradição"]]}`
-- {'pt-BR': "鉄道 é 'ferrovia', 徹夜 é 'virar a noite', 哲学 é 'filosofia' e 伝統 é 'tradição'. São palavras desta lição."}
+- 鉄道 é 'ferrovia', 徹夜 é 'virar a noite', 哲学 é 'filosofia' e 伝統 é 'tradição'. São palavras desta lição.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'Virei a noite por causa da prova': 試験のために＿＿しました。"}
+### 3. (cloze) Complete 'Virei a noite por causa da prova': 試験のために＿＿しました。
 - **Resposta:** `{"text": "徹夜", "full": "試験のために徹夜しました。"}`
-- {'pt-BR': "徹夜する significa 'passar a noite em claro'. 徹夜 (てつや) vem dos kanji 徹 (a fundo) e 夜 (noite)."}
+- 徹夜する significa 'passar a noite em claro'. 徹夜 (てつや) vem dos kanji 徹 (a fundo) e 夜 (noite).
 
 
-### 4. (recognition) {'pt-BR': "Você quer dizer 'portanto' de forma educada. Qual palavra usar?"}
+### 4. (recognition) Você quer dizer 'portanto' de forma educada. Qual palavra usar?
 - **Resposta:** `{"choices": ["ですから", "デモ", "手間", "典型"], "correct": "ですから"}`
-- {'pt-BR': "ですから é a versão polida de だから (portanto). デモ é 'protesto', 手間 é 'esforço' e 典型 é 'modelo típico'."}
+- ですから é a versão polida de だから (portanto). デモ é 'protesto', 手間 é 'esforço' e 典型 é 'modelo típico'.
 
 
-### 5. (production) {'pt-BR': "Diga 'Esta festa é uma tradição do Japão' usando 伝統 (festa = 祭り, Japão = 日本)."}
+### 5. (production) Diga 'Esta festa é uma tradição do Japão' usando 伝統 (festa = 祭り, Japão = 日本).
 - **Resposta:** `{"text": "この祭りは日本の伝統です", "accept": ["この祭りは日本の伝統です", "この祭りは日本の伝統です。", "この祭りは日本の伝統だ", "この祭りは日本の伝統だ。"]}`
-- {'pt-BR': "伝統 (でんとう) é 'tradição'; aqui funciona como substantivo predicativo com です. A partícula の liga 日本 a 伝統 ('tradição do Japão')."}
+- 伝統 (でんとう) é 'tradição'; aqui funciona como substantivo predicativo com です. A partícula の liga 日本 a 伝統 ('tradição do Japão').
 
 

@@ -47,23 +47,23 @@ Junte com o que você já aprendeu e leia em voz alta:なか(naka, "dentro"),ね
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'no'?"}
+### 1. (recognition) Qual hiragana representa o som 'no'?
 - **Resposta:** `{"choices": ["の", "ぬ", "ね"], "correct": "の"}`
-- {'pt-BR': "の = no (uma espiral única; o 'no' de 'novo', com ô fechado)."}
+- の = no (uma espiral única; o 'no' de 'novo', com ô fechado).
 
 
-### 2. (recognition) {'pt-BR': 'Que som tem に?'}
+### 2. (recognition) Que som tem に?
 - **Resposta:** `{"choices": ["ni", "nu", "na"], "correct": "ni"}`
-- {'pt-BR': "に = ni (como o 'ni' de 'níquel')."}
+- に = ni (como o 'ni' de 'níquel').
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
+### 3. (matching) Ligue cada hiragana ao seu som.
 - **Resposta:** `{"pairs": [["な", "na"], ["に", "ni"], ["ぬ", "nu"], ["ね", "ne"], ["の", "no"]]}`
-- {'pt-BR': 'As cinco sílabas da Família do NA.'}
+- As cinco sílabas da Família do NA.
 
 
-### 4. (production) {'pt-BR': "Escreva o hiragana do som 'ne'."}
+### 4. (production) Escreva o hiragana do som 'ne'.
 - **Resposta:** `{"text": "ね", "accept": ["ね"]}`
-- {'pt-BR': "'ne' = ね (o do lacinho, como em 'neko', gato)."}
+- 'ne' = ね (o do lacinho, como em 'neko', gato).
 
 

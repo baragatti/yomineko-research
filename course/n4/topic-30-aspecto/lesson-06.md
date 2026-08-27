@@ -25,7 +25,7 @@ Molde: [substantivo] ばかり
 
 #### 〜たばかり: acabar de fazer
 Quando ばかり vem depois de um verbo no passado (forma 〜た), o sentido muda: ta-bakari significa "acabar de fazer". Marca uma ação que terminou há muito pouco tempo e que, para quem fala, ainda está "fresca".
-Molde: [verbo no passado] たばかり (だ / です)
+Molde: [verbo no passado] た ばかり (だ / です)
 > 🗣 仕上がったばかり。 — Acabei de terminar.
 Aqui 仕上がった é o passado de "ficar pronto", e ばかり diz que isso foi agorinha: "acabei de terminar". Sem nenhum advérbio de tempo, o ばかり sozinho já carrega o "acabar de".
 > 🗣 仕事から帰ったばかりよ。 — Acabei de chegar do trabalho.
@@ -75,28 +75,28 @@ Juntando tudo: 市民は政治の話ばかりしている = "Os 市民 só falam
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que 〜たばかり acrescenta à frase 仕事から帰ったばかりだ？'}
+### 1. (recognition) O que 〜たばかり acrescenta à frase 仕事から帰ったばかりだ？
 - **Resposta:** `{"choices": ["A ação acabou de acontecer há pouco", "A ação vai começar em breve", "A ação se repete sempre"], "correct": "A ação acabou de acontecer há pouco"}`
-- {'pt-BR': "Verbo no passado + ばかり significa 'acabar de fazer': marca que a ação terminou há pouquíssimo tempo. Aqui, 'acabei de chegar do trabalho'."}
+- Verbo no passado + ばかり significa 'acabar de fazer': marca que a ação terminou há pouquíssimo tempo. Aqui, 'acabei de chegar do trabalho'.
 - frases: `sent:tatoeba-9553773`
 
-### 2. (recognition) {'pt-BR': 'Qual advérbio expressa que algo esperado FINALMENTE aconteceu, depois de muito esforço ou espera?'}
+### 2. (recognition) Qual advérbio expressa que algo esperado FINALMENTE aconteceu, depois de muito esforço ou espera?
 - **Resposta:** `{"choices": ["やっと", "ばかり", "それほど"], "correct": "やっと"}`
-- {'pt-BR': "やっと = 'finalmente / enfim', com forte carga de alívio. ばかり marca recência ou exclusividade, não a realização aguardada."}
+- やっと = 'finalmente / enfim', com forte carga de alívio. ばかり marca recência ou exclusividade, não a realização aguardada.
 - frases: `sent:tatoeba-7577179`
 
-### 3. (cloze) {'pt-BR': "Complete com 'acabar de': これは買っ＿のカバンです。 (Esta é uma bolsa que acabei de comprar.)"}
+### 3. (cloze) Complete com 'acabar de': これは買っ＿のカバンです。 (Esta é uma bolsa que acabei de comprar.)
 - **Resposta:** `{"text": "たばかり", "full": "これは買ったばかりのカバンです"}`
-- {'pt-BR': "買った (passado de comprar) + ばかり = 'que acabei de comprar'. O 〜たばかり marca a ação recém-concluída e modifica o substantivo com の."}
+- 買った (passado de comprar) + ばかり = 'que acabei de comprar'. O 〜たばかり marca a ação recém-concluída e modifica o substantivo com の.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Finalmente cheguei em casa.' com as peças: [着いた] [家] [に] [やっと]"}
+### 4. (sentence_build) Monte 'Finalmente cheguei em casa.' com as peças: [着いた] [家] [に] [やっと]
 - **Resposta:** `{"order": ["やっと", "家", "に", "着いた"], "text": "やっと家に着いた。"}`
-- {'pt-BR': 'やっと (finalmente) vem antes do verbo; 家に (em casa) marca o destino com に; 着いた (cheguei) fecha. O やっと traz o alívio de enfim ter chegado.'}
+- やっと (finalmente) vem antes do verbo; 家に (em casa) marca o destino com に; 着いた (cheguei) fecha. O やっと traz o alívio de enfim ter chegado.
 - frases: `sent:tatoeba-193061`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Os cidadãos só falam de política.' usando 市民 (cidadão), 政治 (política), ばかり e する."}
+### 5. (production) Diga em japonês 'Os cidadãos só falam de política.' usando 市民 (cidadão), 政治 (política), ばかり e する.
 - **Resposta:** `{"text": "市民は政治の話ばかりしている。", "accept": ["市民は政治の話ばかりしている", "市民は政治の話ばかりしている。", "しみんはせいじのはなしばかりしている", "市民は政治の話ばかりする", "しみんは政治の話ばかりしている"]}`
-- {'pt-BR': "市民は (tópico) + 政治の話 (assunto política) + ばかり ('só / nada além de', com substantivo) + している (estar fazendo). Aqui ばかり marca exclusividade, não recência."}
+- 市民は (tópico) + 政治の話 (assunto política) + ばかり ('só / nada além de', com substantivo) + している (estar fazendo). Aqui ばかり marca exclusividade, não recência.
 
 

@@ -68,28 +68,28 @@ O par 向く / 向ける é um clássico de transitivo e intransitivo. 向く (�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa "aliado, quem está do seu lado"?'}
+### 1. (recognition) Qual palavra significa "aliado, quem está do seu lado"?
 - **Resposta:** `{"choices": ["味方", "土産", "未来", "魅力"], "correct": "味方"}`
-- {'pt-BR': '味方 (みかた) é o aliado/apoiador; 土産 é lembrança, 未来 é futuro e 魅力 é charme.'}
+- 味方 (みかた) é o aliado/apoiador; 土産 é lembrança, 未来 é futuro e 魅力 é charme.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["見事", "esplêndido"], ["魅力", "charme"], ["未来", "futuro"], ["認める", "reconhecer"]]}`
-- {'pt-BR': '見事 = magnífico, 魅力 = atrativo, 未来 = futuro, 認める = admitir/notar.'}
+- 見事 = magnífico, 魅力 = atrativo, 未来 = futuro, 認める = admitir/notar.
 
 
-### 3. (cloze) {'pt-BR': 'Complete "Ele apontou a câmera para mim": 彼はカメラを私に＿＿。'}
+### 3. (cloze) Complete "Ele apontou a câmera para mim": 彼はカメラを私に＿＿。
 - **Resposta:** `{"text": "向けた", "full": "彼はカメラを私に向けた。"}`
-- {'pt-BR': '向ける (むける) é transitivo: aponta-se um objeto (カメラを) numa direção (私に). A forma passada é 向けた.'}
+- 向ける (むける) é transitivo: aponta-se um objeto (カメラを) numa direção (私に). A forma passada é 向けた.
 
 
-### 4. (recognition) {'pt-BR': 'Em 右を＿＿ ("virar-se para a direita", sem objeto), qual verbo cabe?'}
+### 4. (recognition) Em 右を＿＿ ("virar-se para a direita", sem objeto), qual verbo cabe?
 - **Resposta:** `{"choices": ["向く", "向ける", "満ちる", "認める"], "correct": "向く"}`
-- {'pt-BR': '向く (むく) é intransitivo: a própria pessoa se vira (右を向く). 向ける precisaria de um objeto sendo apontado.'}
+- 向く (むく) é intransitivo: a própria pessoa se vira (右を向く). 向ける precisaria de um objeto sendo apontado.
 
 
-### 5. (production) {'pt-BR': 'Diga "Você está sempre do meu lado" usando 味方 (君 = você, いつも = sempre, 僕 = eu).'}
+### 5. (production) Diga "Você está sempre do meu lado" usando 味方 (君 = você, いつも = sempre, 僕 = eu).
 - **Resposta:** `{"text": "君はいつも僕の味方だ", "accept": ["君はいつも僕の味方だ。", "君はいつも僕の味方です", "君はいつも僕の味方です。", "あなたはいつも私の味方だ", "あなたはいつも私の味方です"]}`
-- {'pt-BR': '味方 (みかた) é "aliado"; aqui forma o predicado 僕の味方だ ("é meu aliado"), com いつも ("sempre") como advérbio.'}
+- 味方 (みかた) é "aliado"; aqui forma o predicado 僕の味方だ ("é meu aliado"), com いつも ("sempre") como advérbio.
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:politeness",
   "order": 6,
   "title": {
-    "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 6"
+    "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 6"
   },
   "say_now": [
     "sent:tatoeba-224121",
@@ -50,6 +50,93 @@
   "cumulative_known_vocab": 507,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gari"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:o-kudasai",
+      "examples": [
+        "sent:tatoeba-143718",
+        "sent:tatoeba-150556",
+        "sent:tatoeba-227004"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Amanhã vou visitá-lo na sua casa.",
+      "answer_key": "明日お宅に伺います。",
+      "accepted_variants": [
+        "あすおたくにうかがいます",
+        "あすおたくにうかがいます。",
+        "明日お宅に伺います",
+        "明日お宅に伺います。"
+      ],
+      "sentence": "sent:tatoeba-80618",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, faça o bife ao ponto.",
+      "answer_key": "ステーキは中位で焼いてください。",
+      "accepted_variants": [
+        "すてーきわちゅういでやいてください",
+        "すてーきわちゅういでやいてください。",
+        "ステーキは中位で焼いてください",
+        "ステーキは中位で焼いてください。"
+      ],
+      "sentence": "sent:tatoeba-214616",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu gostaria que você enviasse este telegrama imediatamente.",
+      "answer_key": "この電報をすぐに打っていただきたい。",
+      "accepted_variants": [
+        "このでんぽうをすぐにうっていただきたい",
+        "このでんぽうをすぐにうっていただきたい。",
+        "この電報をすぐに打っていただきたい",
+        "この電報をすぐに打っていただきたい。"
+      ],
+      "sentence": "sent:tatoeba-220381",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:tatoeba-9969670",
+      "sent:tatoeba-11561274",
+      "sent:tatoeba-206210",
+      "sent:tatoeba-76813",
+      "sent:tatoeba-1490062",
+      "sent:tatoeba-78723"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 45,
+    "fluency": 16
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 17,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "cf:n3:4725:2453",
@@ -91,86 +178,5 @@
         "しんぶん"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gari"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:o-kudasai",
-      "examples": [
-        "sent:tatoeba-143718",
-        "sent:tatoeba-150556",
-        "sent:tatoeba-227004"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:te-kudasai",
-      "examples": [
-        "sent:tatoeba-146189",
-        "sent:tatoeba-124708",
-        "sent:tatoeba-5109"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Amanhã vou visitá-lo na sua casa.",
-      "answer_key": "明日お宅に伺います。",
-      "accepted_variants": [
-        "明日お宅に伺います",
-        "明日お宅に伺います。"
-      ],
-      "sentence": "sent:tatoeba-80618",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Por favor, faça o bife ao ponto.",
-      "answer_key": "ステーキは中位で焼いてください。",
-      "accepted_variants": [
-        "ステーキは中位で焼いてください",
-        "ステーキは中位で焼いてください。"
-      ],
-      "sentence": "sent:tatoeba-214616",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu gostaria que você enviasse este telegrama imediatamente.",
-      "answer_key": "この電報をすぐに打っていただきたい。",
-      "accepted_variants": [
-        "この電報をすぐに打っていただきたい",
-        "この電報をすぐに打っていただきたい。"
-      ],
-      "sentence": "sent:tatoeba-220381",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
-    "items": [
-      "sent:tatoeba-9969670",
-      "sent:tatoeba-11561274",
-      "sent:tatoeba-206210",
-      "sent:tatoeba-76813",
-      "sent:tatoeba-1490062",
-      "sent:tatoeba-78723"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 21,
-    "fluency": 6
-  }
+  ]
 }

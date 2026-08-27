@@ -4,7 +4,7 @@
   "stage": "speak:politeness",
   "order": 3,
   "title": {
-    "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 3"
+    "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 3"
   },
   "say_now": [
     "sent:tatoeba-223665",
@@ -33,8 +33,7 @@
     "gram:sasete-kudasai",
     "gram:te-kudasai",
     "gram:deshou",
-    "gram:gp-89",
-    "gram:donna"
+    "gram:gp-89"
   ],
   "kanji_recognition": [
     "合",
@@ -57,6 +56,112 @@
   "cumulative_known_vocab": 482,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:te-ita",
+    "gram:gari"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:sasete-kudasai",
+      "examples": [
+        "sent:tatoeba-3957479",
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-kudasai",
+      "examples": [
+        "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-5347"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Tenho um pedido a fazer. Será que eu poderia pedir um favor?",
+      "answer_key": "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？",
+      "accepted_variants": [
+        "たのみたいことがあります。ちょっとおねがいしてもよろしいでしょうか",
+        "たのみたいことがあります。ちょっとおねがいしてもよろしいでしょうか?",
+        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか",
+        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？"
+      ],
+      "sentence": "sent:tatoeba-78565",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, diga o que sente sem cerimônia.",
+      "answer_key": "遠慮なく気持ちをおっしゃってください。",
+      "accepted_variants": [
+        "えんりょなくきもちをおっしゃってください",
+        "えんりょなくきもちをおっしゃってください。",
+        "遠慮なく気持ちをおっしゃってください",
+        "遠慮なく気持ちをおっしゃってください。"
+      ],
+      "sentence": "sent:tatoeba-188640",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Nós temos um prato especial (para o senhor)...",
+      "answer_key": "特別料理がございますが。",
+      "accepted_variants": [
+        "とくべつりょうりがございますが",
+        "とくべつりょうりがございますが。",
+        "特別料理がございますが",
+        "特別料理がございますが。"
+      ],
+      "sentence": "sent:tatoeba-123440",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
+    "items": [
+      "sent:tatoeba-146189",
+      "sent:tatoeba-226013",
+      "sent:tatoeba-5109",
+      "sent:tatoeba-147431",
+      "sent:tatoeba-8467948",
+      "sent:tatoeba-4854"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:238",
@@ -108,113 +213,5 @@
         "いち"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:te-ita"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:sasete-kudasai",
-      "examples": [
-        "sent:tatoeba-3957479",
-        "sent:tatoeba-2045915",
-        "sent:tatoeba-164807"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:te-kudasai",
-      "examples": [
-        "sent:tatoeba-146189",
-        "sent:tatoeba-124708",
-        "sent:tatoeba-5109"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:deshou",
-      "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-5347"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-89",
-      "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:donna",
-      "examples": [
-        "sent:tatoeba-199382",
-        "sent:tatoeba-171732",
-        "sent:tatoeba-199480"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Tenho um pedido a fazer. Será que eu poderia pedir um favor?",
-      "answer_key": "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？",
-      "accepted_variants": [
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか",
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？"
-      ],
-      "sentence": "sent:tatoeba-78565",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Por favor, diga o que sente sem cerimônia.",
-      "answer_key": "遠慮なく気持ちをおっしゃってください。",
-      "accepted_variants": [
-        "遠慮なく気持ちをおっしゃってください",
-        "遠慮なく気持ちをおっしゃってください。"
-      ],
-      "sentence": "sent:tatoeba-188640",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Nós temos um prato especial (para o senhor)...",
-      "answer_key": "特別料理がございますが。",
-      "accepted_variants": [
-        "特別料理がございますが",
-        "特別料理がございますが。"
-      ],
-      "sentence": "sent:tatoeba-123440",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
-    "items": [
-      "sent:tatoeba-146189",
-      "sent:tatoeba-226013",
-      "sent:tatoeba-5109",
-      "sent:tatoeba-147431",
-      "sent:tatoeba-8467948",
-      "sent:tatoeba-4854"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 22,
-    "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 33,
-    "fluency": 6
-  }
+  ]
 }

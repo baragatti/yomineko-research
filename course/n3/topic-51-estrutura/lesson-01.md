@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-no] · vocabulário [助手, 商人, 商品, 商売, 城, 女優, 女子, 女王, 少女, 少年, 書斎, 書物, 書類, 消費, 署名, 職, 職業] · kanji [城 杯 皆 箱] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-5324`
 
 ---
 
@@ -86,28 +86,28 @@ O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Como se diz 'a chave do carro do amigo' em japonês, respeitando a ordem do の?"}
+### 1. (recognition) Como se diz 'a chave do carro do amigo' em japonês, respeitando a ordem do の?
 - **Resposta:** `{"choices": ["鍵の車の友達", "友達の車の鍵", "車の鍵の友達", "友達の鍵の車"], "correct": "友達の車の鍵"}`
-- {'pt-BR': 'Em japonês o possuidor vem antes do の e o possuído depois, e o assunto principal (a 鍵, chave) fica no fim. Lendo de trás para frente: chave (鍵) do carro (車) do amigo (友達).'}
+- Em japonês o possuidor vem antes do の e o possuído depois, e o assunto principal (a 鍵, chave) fica no fim. Lendo de trás para frente: chave (鍵) do carro (車) do amigo (友達).
 
 
-### 2. (recognition) {'pt-BR': "Em 日本語の本, por que 'livro de japonês' é uma tradução ruim?"}
+### 2. (recognition) Em 日本語の本, por que 'livro de japonês' é uma tradução ruim?
 - **Resposta:** `{"choices": ["Porque の aqui significa 'em': é um livro escrito EM japonês", "Porque 本 não significa 'livro'", "Porque の nunca pode aparecer entre dois substantivos", "Porque a ordem dos substantivos está trocada"], "correct": "Porque の aqui significa 'em': é um livro escrito EM japonês"}`
-- {'pt-BR': "O の só marca que há uma relação entre 日本語 e 本; o contexto decide qual. Aqui a relação é de idioma, então a tradução natural é 'livro em japonês'. 'Livro de japonês' sugeriria um material didático, que seria 日本語の教科書."}
+- O の só marca que há uma relação entre 日本語 e 本; o contexto decide qual. Aqui a relação é de idioma, então a tradução natural é 'livro em japonês'. 'Livro de japonês' sugeriria um material didático, que seria 日本語の教科書.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名"}
+### 3. (cloze) Complete 'a assinatura da atriz' ligando os dois substantivos: 女優＿署名
 - **Resposta:** `{"text": "の", "full": "女優の署名"}`
-- {'pt-BR': 'の liga 女優 (atriz, a possuidora) ao 署名 (assinatura, o possuído). A ordem é possuidor の possuído, então a atriz vem antes.'}
+- の liga 女優 (atriz, a possuidora) ao 署名 (assinatura, o possuído). A ordem é possuidor の possuído, então a atriz vem antes.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra desta lição ao seu significado em português.'}
+### 4. (matching) Associe cada palavra desta lição ao seu significado em português.
 - **Resposta:** `{"pairs": [["職業", "profissão"], ["商品", "mercadoria"], ["書類", "documento"], ["少女", "menina"]]}`
-- {'pt-BR': '職業 (しょくぎょう) = profissão; 商品 (しょうひん) = mercadoria; 書類 (しょるい) = documento; 少女 (しょうじょ) = menina. Repare como todas começam com しょう ou しょ, mas o resto da palavra muda tudo.'}
+- 職業 (しょくぎょう) = profissão; 商品 (しょうひん) = mercadoria; 書類 (しょるい) = documento; 少女 (しょうじょ) = menina. Repare como todas começam com しょう ou しょ, mas o resto da palavra muda tudo.
 
 
-### 5. (production) {'pt-BR': "Diga 'o portão do castelo da rainha' em japonês, encadeando の. Use 女王 (rainha), 城 (castelo) e 門 (portão)."}
+### 5. (production) Diga 'o portão do castelo da rainha' em japonês, encadeando の. Use 女王 (rainha), 城 (castelo) e 門 (portão).
 - **Resposta:** `{"text": "女王の城の門", "accept": ["女王の城の門", "じょおうのしろのもん", "女王の城の門。"]}`
-- {'pt-BR': 'Encadeamos do maior possuidor ao objeto final: 女王 (rainha) の 城 (castelo) の 門 (portão). Lendo de trás para frente: o portão, do castelo, da rainha. Cada の adiciona uma camada de posse.'}
+- Encadeamos do maior possuidor ao objeto final: 女王 (rainha) の 城 (castelo) の 門 (portão). Lendo de trás para frente: o portão, do castelo, da rainha. Cada の adiciona uma camada de posse.
 
 

@@ -58,28 +58,28 @@ Repare na diferença entre katakana e kanji nestas palavras:シャツ・スカ�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual destas palavras significa 'saia'?"}
+### 1. (recognition) Qual destas palavras significa 'saia'?
 - **Resposta:** `{"choices": ["スカート", "セーター", "シャツ"], "correct": "スカート"}`
-- {'pt-BR': "スカート vem do inglês 'skirt' (saia). セーター é suéter e シャツ é camiseta. Lendo o katakana em voz alta, o som entrega o significado."}
+- スカート vem do inglês 'skirt' (saia). セーター é suéter e シャツ é camiseta. Lendo o katakana em voz alta, o som entrega o significado.
 
 
-### 2. (recognition) {'pt-BR': 'Você está no banheiro e quer tomar banho. Qual palavra se refere ao chuveiro?'}
+### 2. (recognition) Você está no banheiro e quer tomar banho. Qual palavra se refere ao chuveiro?
 - **Resposta:** `{"choices": ["シャワー", "せっけん", "さいふ"], "correct": "シャワー"}`
-- {'pt-BR': "シャワー é o chuveiro (do inglês 'shower'). せっけん é sabonete e さいふ é a carteira. Não confunda シャワー (chuveiro) com シャツ (camiseta): as duas começam com シャ, mas terminam diferente."}
+- シャワー é o chuveiro (do inglês 'shower'). せっけん é sabonete e さいふ é a carteira. Não confunda シャワー (chuveiro) com シャツ (camiseta): as duas começam com シャ, mas terminam diferente.
 
 
-### 3. (cloze) {'pt-BR': "Complete com a palavra para 'calça': これは＿です。 (Isto é uma calça.)"}
+### 3. (cloze) Complete com a palavra para 'calça': これは＿です。 (Isto é uma calça.)
 - **Resposta:** `{"text": "ズボン", "full": "これはズボンです"}`
-- {'pt-BR': 'ズボン = calça (calças). Curiosamente vem do francês, não do inglês, mas também se escreve em katakana. O molde A は B です serve para qualquer objeto.'}
+- ズボン = calça (calças). Curiosamente vem do francês, não do inglês, mas também se escreve em katakana. O molde A は B です serve para qualquer objeto.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Isto é sabonete.' com as peças: [です] [これ] [せっけん] [は]"}
+### 4. (sentence_build) Monte 'Isto é sabonete.' com as peças: [です] [これ] [せっけん] [は]
 - **Resposta:** `{"order": ["これ", "は", "せっけん", "です"], "text": "これはせっけんです。"}`
-- {'pt-BR': 'Molde A は B です: これ (isto) + は (tópico) + せっけん (sabonete) + です (é). せっけん é palavra nativa; o っ pequeno é uma pausa de um tempo, em silêncio, antes do próximo som: sek-ken.'}
+- Molde A は B です: これ (isto) + は (tópico) + せっけん (sabonete) + です (é). せっけん é palavra nativa; o っ pequeno é uma pausa de um tempo, em silêncio, antes do próximo som: sek-ken.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Isto é uma carteira.' usando これ (isto), a partícula de tópico e a cópula educada."}
+### 5. (production) Diga em japonês 'Isto é uma carteira.' usando これ (isto), a partícula de tópico e a cópula educada.
 - **Resposta:** `{"text": "これはさいふです。", "accept": ["これはさいふです", "これは財布です", "これはさいふです。", "これは財布です。"]}`
-- {'pt-BR': "これ (isto) + は (tópico, lê-se 'wa') + さいふ (carteira) + です (cópula educada). さいふ é japonesa, escrita 財布 em kanji, mas você pode escrever em kana por enquanto."}
+- これ (isto) + は (tópico, lê-se 'wa') + さいふ (carteira) + です (cópula educada). さいふ é japonesa, escrita 財布 em kanji, mas você pode escrever em kana por enquanto.
 
 

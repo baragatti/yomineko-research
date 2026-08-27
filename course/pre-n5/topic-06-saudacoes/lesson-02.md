@@ -50,23 +50,23 @@ Quer soar mais educado? Várias dessas reações combinam com expressões polida
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra você usa para mostrar que entendeu o que a pessoa explicou ("faz sentido")?'}
+### 1. (recognition) Qual palavra você usa para mostrar que entendeu o que a pessoa explicou ("faz sentido")?
 - **Resposta:** `{"choices": ["なるほど", "いいえ", "それでは"], "correct": "なるほど"}`
-- {'pt-BR': 'なるほど = "entendi; faz sentido", a reação de quando a ficha cai.'}
+- なるほど = "entendi; faz sentido", a reação de quando a ficha cai.
 
 
-### 2. (recognition) {'pt-BR': 'Você deixa cair algo de repente. Que reação curta e seca combina?'}
+### 2. (recognition) Você deixa cair algo de repente. Que reação curta e seca combina?
 - **Resposta:** `{"choices": ["あっ", "ああ", "ええ"], "correct": "あっ"}`
-- {'pt-BR': 'あっ é o susto curto ("opa!"); ああ seria um "ah" longo e calmo.'}
+- あっ é o susto curto ("opa!"); ああ seria um "ah" longo e calmo.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu sentido.'}
+### 3. (matching) Ligue cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["ええ", "sim"], ["いいえ", "não"], ["もう", "já / não mais"], ["それでは", "bem então"]]}`
-- {'pt-BR': 'ええ = sim, いいえ = não, もう = já/não mais, それでは = bem então (fecho educado).'}
+- ええ = sim, いいえ = não, もう = já/não mais, それでは = bem então (fecho educado).
 
 
-### 4. (production) {'pt-BR': 'Escreva em kana a palavra para "não".'}
+### 4. (production) Escreva em kana a palavra para "não".
 - **Resposta:** `{"text": "いいえ", "accept": ["いいえ"]}`
-- {'pt-BR': '"Não" = いいえ (dois い + え).'}
+- "Não" = いいえ (dois い + え).
 
 

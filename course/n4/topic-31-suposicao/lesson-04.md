@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-153, gp-154, gp-77] · vocabulário [下がる, 合う, 最も, 最後] · kanji [歩 走] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-218631`, `sent:tatoeba-160307`, `sent:tatoeba-141991`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-218631`, `sent:tatoeba-141991`, `sent:tatoeba-160307`
 
 ---
 
@@ -33,7 +33,7 @@ Em português a comparação muda de lugar conforme a frase ("um gosto de chá",
 #### 〜のように: antes de verbo ou adjetivo
 Quando a comparação descreve como uma ação acontece ou de que jeito algo é, usamos gp-154. Ela modifica um verbo ou um adjetivo: "como", "do jeito que", "feito".
 > 🗣 雪のように白い。 — Branco como neve.
-Aqui 白い ("branco") é um adjetivo, então usamos のように: "branco como neve". Compare com o caso do substantivo: のような味 (qualifica o nome 味) vs.のように白い (modifica o adjetivo 白い).
+Aqui 白い ("branco") é um adjetivo, então usamos のように: "branco como neve". Compare com o caso do substantivo: のような味 (qualifica o nome 味) vs. のように白い (modifica o adjetivo 白い).
 
 > **[l1-pitfall]**
 O erro clássico é misturar のような e のように. A regra é mecânica: termina em な antes de substantivo, termina em に antes de verbo/adjetivo. É o mesmo padrão な/に que você já viu em みたいな/みたいに.
@@ -78,28 +78,28 @@ Os dois juntam-se à gramática de hoje: 鳥のように走る ("correr como um 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': '〜のよう é a versão de qual estrutura, só que em tom mais formal e escrito?'}
+### 1. (recognition) 〜のよう é a versão de qual estrutura, só que em tom mais formal e escrito?
 - **Resposta:** `{"choices": ["みたい (comparação coloquial)", "かもしれない (possibilidade)", "はずだ (expectativa lógica)"], "correct": "みたい (comparação coloquial)"}`
-- {'pt-BR': "のよう e みたい expressam a MESMA comparação ('como, parecido com'). A diferença é só de registro: みたい é coloquial, のよう é formal/escrito. Atalho: troque みたい por のよう e a frase sobe de tom."}
+- のよう e みたい expressam a MESMA comparação ('como, parecido com'). A diferença é só de registro: みたい é coloquial, のよう é formal/escrito. Atalho: troque みたい por のよう e a frase sobe de tom.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete antes do SUBSTANTIVO: これはお茶＿味だ。 (Isto tem um gosto parecido com o de chá.)'}
+### 2. (particle_choice) Complete antes do SUBSTANTIVO: これはお茶＿味だ。 (Isto tem um gosto parecido com o de chá.)
 - **Resposta:** `{"choices": ["のような", "のように", "のよう"], "correct": "のような"}`
-- {'pt-BR': 'Antes de substantivo (味 = gosto) usa-se a forma terminada em な: のような. Não confunda com のように, que vem antes de verbo/adjetivo.'}
+- Antes de substantivo (味 = gosto) usa-se a forma terminada em な: のような. Não confunda com のように, que vem antes de verbo/adjetivo.
 - frases: `sent:tatoeba-218631`
 
-### 3. (cloze) {'pt-BR': 'Complete antes do ADJETIVO: 雪＿白い。 (Branco como neve.)'}
+### 3. (cloze) Complete antes do ADJETIVO: 雪＿白い。 (Branco como neve.)
 - **Resposta:** `{"text": "のように", "full": "雪のように白い"}`
-- {'pt-BR': '白い (branco) é adjetivo, então a comparação usa のように (termina em に). Regra mecânica: な antes de substantivo, に antes de verbo/adjetivo.'}
+- 白い (branco) é adjetivo, então a comparação usa のように (termina em に). Regra mecânica: な antes de substantivo, に antes de verbo/adjetivo.
 - frases: `sent:tatoeba-141991`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Eu pensei dessa forma.' com as peças: [私] [そのように] [は] [考えた]"}
+### 4. (sentence_build) Monte 'Eu pensei dessa forma.' com as peças: [私] [そのように] [は] [考えた]
 - **Resposta:** `{"order": ["私", "は", "そのように", "考えた"], "text": "私はそのように考えた。"}`
-- {'pt-BR': "そのように ('dessa forma') modifica o verbo 考えた ('pensei'), indicando o MODO. Ordem: 私 (eu) + は (tópico) + そのように (dessa forma) + 考えた (pensei)."}
+- そのように ('dessa forma') modifica o verbo 考えた ('pensei'), indicando o MODO. Ordem: 私 (eu) + は (tópico) + そのように (dessa forma) + 考えた (pensei).
 - frases: `sent:tatoeba-160307`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Acordei cedo, como de costume.' usando いつものように (como de costume), 早く (cedo) e 起きた (acordei)."}
+### 5. (production) Diga em japonês 'Acordei cedo, como de costume.' usando いつものように (como de costume), 早く (cedo) e 起きた (acordei).
 - **Resposta:** `{"text": "いつものように早く起きた。", "accept": ["いつものように早く起きた", "いつものように早く起きた。", "いつものようにはやくおきた"]}`
-- {'pt-BR': "いつものように ('como de costume') usa のように para indicar modo, antes do verbo. Estrutura: いつものように + 早く (cedo) + 起きた (acordei). いつものように é uma expressão pronta que vale a pena decorar."}
+- いつものように ('como de costume') usa のように para indicar modo, antes do verbo. Estrutura: いつものように + 早く (cedo) + 起きた (acordei). いつものように é uma expressão pronta que vale a pena decorar.
 
 

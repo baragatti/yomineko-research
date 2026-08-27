@@ -9,7 +9,8 @@
     "packing": "single",
     "glob": "course/*/topic-*/lesson-*.json",
     "stable_id_field": "id",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -116,12 +117,21 @@
             "type": "string",
             "enum": [
               "cloze",
+              "handwriting",
+              "listening",
               "matching",
+              "ordering",
               "particle_choice",
               "production",
+              "reading",
               "recognition",
               "sentence_build"
-            ]
+            ],
+            "description": "What kind of exercise this is. Vocabulary owner: design — design/lesson_schema.md ('Exercise records', the ten `type` values). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/lesson_schema.md ('Exercise records', the ten `type` values)"
+            }
           }
         },
         "additionalProperties": false
@@ -133,10 +143,27 @@
         "type": "string",
         "enum": [
           "feat:conjugation-drill",
+          "feat:find-correct-kanji",
+          "feat:find-correct-particle",
+          "feat:furigana-toggle",
+          "feat:handwriting-input",
           "feat:jlpt-sim-n4",
           "feat:jlpt-sim-n5",
-          "feat:srs-reviews"
-        ]
+          "feat:kana-input",
+          "feat:kanji-lookup",
+          "feat:listening",
+          "feat:particle-drill",
+          "feat:phrase-builder",
+          "feat:romaji-toggle",
+          "feat:srs-reviews",
+          "feat:visual-novel",
+          "feat:voice-mode"
+        ],
+        "description": "An app feature this lesson turns on. Vocabulary owner: design — design/unlock_enums.json#feature. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+        "x-vocabulary": {
+          "owner": "design",
+          "source": "design/unlock_enums.json#feature"
+        }
       }
     },
     "id": {
@@ -159,29 +186,12 @@
     },
     "order": {
       "type": "integer",
-      "enum": [
-        1,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ]
+      "minimum": 0
     },
     "schema_version": {
       "type": "string",
-      "enum": [
-        "1.0"
-      ]
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "MAJOR.MINOR of the record format. A version field exists to be bumped; an enum over the current value means it never can be."
     },
     "sentence_refs": {
       "type": "array",
@@ -203,15 +213,24 @@
               "deck": {
                 "type": "string",
                 "enum": [
+                  "deck:grammar-n3",
                   "deck:grammar-n4",
                   "deck:grammar-n5",
                   "deck:kana-hiragana",
                   "deck:kana-katakana",
+                  "deck:kanji-n3",
                   "deck:kanji-n4",
                   "deck:kanji-n5",
+                  "deck:phrases",
+                  "deck:vocab-n3",
                   "deck:vocab-n4",
                   "deck:vocab-n5"
-                ]
+                ],
+                "description": "The SRS deck these cards land in. Vocabulary owner: design — design/unlock_enums.json#deck. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "design",
+                  "source": "design/unlock_enums.json#deck"
+                }
               },
               "item": {
                 "type": "string"
@@ -242,12 +261,21 @@
           "type": {
             "type": "string",
             "enum": [
+              "conjugation-form",
               "feature",
               "grammar",
               "kana-family",
               "kanji",
+              "kanji-family",
+              "phrase",
+              "srs-deck",
               "vocab"
-            ]
+            ],
+            "description": "What kind of item this lesson makes available. Vocabulary owner: design — design/unlock_enums.json#unlock_type. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/unlock_enums.json#unlock_type"
+            }
           }
         },
         "additionalProperties": false

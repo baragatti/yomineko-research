@@ -63,28 +63,28 @@ Veja como essas palavras já encaixam em frases simples que você monta com o qu
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que significa o verbo 降る (ふる)?'}
+### 1. (recognition) O que significa o verbo 降る (ふる)?
 - **Resposta:** `{"choices": ["soprar (o vento)", "cair (chuva, neve)", "dobrar / virar"], "correct": "cair (chuva, neve)"}`
-- {'pt-BR': "降る (ふる) é o verbo para algo que cai do céu: chuva, neve, cinzas. Não confunda com 吹く (ふく), 'soprar (o vento)'."}
+- 降る (ふる) é o verbo para algo que cai do céu: chuva, neve, cinzas. Não confunda com 吹く (ふく), 'soprar (o vento)'.
 
 
-### 2. (recognition) {'pt-BR': "Qual palavra você usa para dizer 'por aqui / esta região'?"}
+### 2. (recognition) Qual palavra você usa para dizer 'por aqui / esta região'?
 - **Resposta:** `{"choices": ["辺 (へん)", "本当 (ほんとう)", "ひる"], "correct": "辺 (へん)"}`
-- {'pt-BR': "辺 (へん) significa área, arredores, região. この辺 = 'por aqui'. 本当 é 'verdade' e ひる é 'meio-dia'."}
+- 辺 (へん) significa área, arredores, região. この辺 = 'por aqui'. 本当 é 'verdade' e ひる é 'meio-dia'.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com o verbo certo: 雨が＿。 (Vai chover / A chuva cai.) Use a forma de dicionário em kana.'}
+### 3. (cloze) Complete com o verbo certo: 雨が＿。 (Vai chover / A chuva cai.) Use a forma de dicionário em kana.
 - **Resposta:** `{"text": "ふる", "full": "雨がふる"}`
-- {'pt-BR': "雨 (あめ, chuva) anda com 降る (ふる). A chuva 'cai': 雨が降る. Lembre que o vento, esse sim, 'sopra' (吹く / ふく)."}
+- 雨 (あめ, chuva) anda com 降る (ふる). A chuva 'cai': 雨が降る. Lembre que o vento, esse sim, 'sopra' (吹く / ふく).
 
 
-### 4. (particle_choice) {'pt-BR': 'Complete: 風＿吹く。 (O vento sopra.) Qual partícula marca quem faz a ação?'}
+### 4. (particle_choice) Complete: 風＿吹く。 (O vento sopra.) Qual partícula marca quem faz a ação?
 - **Resposta:** `{"choices": ["が", "は", "を"], "correct": "が"}`
-- {'pt-BR': "Nas frases de clima, が marca quem faz a ação: 風が吹く ('o vento sopra'), assim como 雨が降る ('a chuva cai')."}
+- Nas frases de clima, が marca quem faz a ação: 風が吹く ('o vento sopra'), assim como 雨が降る ('a chuva cai').
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Quero água.' usando 水 (みず, água), a partícula が e o adjetivo 'querer (ter)'."}
+### 5. (production) Diga em japonês 'Quero água.' usando 水 (みず, água), a partícula が e o adjetivo 'querer (ter)'.
 - **Resposta:** `{"text": "水が欲しい。", "accept": ["水が欲しい", "みずが欲しい", "みずがほしい", "水がほしい"]}`
-- {'pt-BR': "欲しい (ほしい) é um adjetivo, não um verbo: 水が欲しい = 'quero água'. O objeto desejado vem marcado por が."}
+- 欲しい (ほしい) é um adjetivo, não um verbo: 水が欲しい = 'quero água'. O objeto desejado vem marcado por が.
 
 

@@ -9,28 +9,20 @@
     "packing": "list",
     "glob": "corpus/sentences/bank.json",
     "stable_id_field": "slug",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
     "clause_structure": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "cause",
-        "conditional",
-        "coordinate",
-        "fragment",
-        "imperative",
-        "question",
-        "quote",
-        "relative-clause",
-        "simple",
-        "subordinate-time",
-        "topic-comment",
-        null
+      "anyOf": [
+        {
+          "type": "string",
+          "description": "Coarse clause shape of the sentence. No declared taxonomy."
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "grammar": {
@@ -77,8 +69,14 @@
               "case",
               "conjunctive",
               "nominalizer",
+              "parallel",
               "sentence-final"
-            ]
+            ],
+            "description": "Standard joshi classification for this particle. Vocabulary owner: producer — scripts/ingest/dissect.py PARTICLE_FUNCTION_MAP (Sudachi 助詞 subtype). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "producer",
+              "source": "scripts/ingest/dissect.py PARTICLE_FUNCTION_MAP (Sudachi 助詞 subtype)"
+            }
           },
           "particle": {
             "type": "string"
@@ -103,29 +101,7 @@
           },
           "role": {
             "type": "string",
-            "enum": [
-              "also",
-              "de-clause",
-              "de-phrase",
-              "direction",
-              "from",
-              "ga-clause",
-              "kara-clause",
-              "modifier",
-              "ni-phrase",
-              "nominalizer",
-              "object",
-              "phrase",
-              "predicate",
-              "sentence-final",
-              "subject",
-              "te-kara",
-              "than",
-              "to-clause",
-              "to-phrase",
-              "topic",
-              "until"
-            ]
+            "description": "Slot role inside the sentence pattern, as the pattern builder labelled it. No declared taxonomy; scripts/export/build_role_exercises.py consumes only the subset it can ask about."
           }
         },
         "additionalProperties": false
@@ -141,10 +117,7 @@
           "type": "string"
         },
         "locale": {
-          "type": "string",
-          "enum": [
-            "pt-BR"
-          ]
+          "$ref": "common.schema.json#/$defs/Locale"
         },
         "needs_review": {
           "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
@@ -152,24 +125,37 @@
         "pt_source": {
           "type": "string",
           "enum": [
-            "ai"
-          ]
+            "ai",
+            "human",
+            "tatoeba"
+          ],
+          "description": "Where the pt-BR translation came from. Selection beats generation (spec §1.2). Vocabulary owner: design — design/schema_v2.md (the `sentence` table, pt_source). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/schema_v2.md (the `sentence` table, pt_source)"
+          }
         },
         "pt_validated_against": {
           "type": "string",
           "enum": [
+            "both",
             "dict",
-            "en"
-          ]
+            "en",
+            "none"
+          ],
+          "description": "What the Layer-B translation was machine-checked against. Vocabulary owner: design — design/schema_v2.md (the `sentence` table, pt_validated_against). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/schema_v2.md (the `sentence` table, pt_validated_against)"
+          }
         },
         "tier": {
           "type": "string",
-          "enum": [
-            "full"
-          ]
+          "description": "Dissection tier this sentence was processed at."
         },
         "translation_confidence": {
-          "type": "number"
+          "type": "number",
+          "minimum": 0
         }
       },
       "required": [
@@ -225,20 +211,29 @@
             ]
           },
           "inflection": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "enum": [
-              "attributive",
-              "conditional",
-              "continuative",
-              "imperative",
-              "irrealis",
-              "stem",
-              "terminal",
-              "volitional",
-              null
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "attributive",
+                  "conditional",
+                  "continuative",
+                  "imperative",
+                  "irrealis",
+                  "ku-form",
+                  "stem",
+                  "terminal",
+                  "volitional"
+                ],
+                "description": "Inflected form of this token, Layer A. Vocabulary owner: producer — scripts/ingest/dissect.py INFLECTION_MAP (Sudachi 活用形). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "producer",
+                  "source": "scripts/ingest/dissect.py INFLECTION_MAP (Sudachi 活用形)"
+                }
+              },
+              {
+                "type": "null"
+              }
             ]
           },
           "inflection_type": {
@@ -251,103 +246,51 @@
             "type": "string"
           },
           "pos": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "enum": [
-              "adnominal",
-              "adverb",
-              "auxiliary",
-              "conjunction",
-              "i-adjective",
-              "interjection",
-              "na-adjective",
-              "noun",
-              "particle",
-              "prefix",
-              "pronoun",
-              "punctuation",
-              "suffix",
-              "verb",
-              "whitespace",
-              null
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "adnominal",
+                  "adverb",
+                  "auxiliary",
+                  "conjunction",
+                  "filler",
+                  "i-adjective",
+                  "interjection",
+                  "na-adjective",
+                  "noun",
+                  "numeral",
+                  "particle",
+                  "prefix",
+                  "pronoun",
+                  "punctuation",
+                  "suffix",
+                  "symbol",
+                  "verb",
+                  "whitespace"
+                ],
+                "description": "Part of speech, Layer A, mechanical from the analyzer. Vocabulary owner: producer — scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "producer",
+                  "source": "scripts/ingest/dissect.py POS_MAP (Sudachi/UniDic 品詞 → neutral enum)"
+                }
+              },
+              {
+                "type": "null"
+              }
             ]
           },
           "pos_coarse": {
             "type": "string",
-            "enum": [
-              "代名詞",
-              "副詞",
-              "助動詞",
-              "助詞",
-              "動詞",
-              "名詞",
-              "形容詞",
-              "形状詞",
-              "感動詞",
-              "接尾辞",
-              "接続詞",
-              "接頭辞",
-              "空白",
-              "補助記号",
-              "連体詞"
-            ]
+            "description": "Raw Sudachi/UniDic 品詞 大分類, kept verbatim for traceability. Third-party analyzer output: the project does not own this vocabulary and must not constrain it (design/schema_v2.md §B makes token analyzer output immutable)."
           },
           "pos_fine": {
             "type": "string",
-            "enum": [
-              "*",
-              "タリ",
-              "フィラー",
-              "一般",
-              "係助詞",
-              "副助詞",
-              "助動詞語幹",
-              "動詞的",
-              "句点",
-              "名詞的",
-              "固有名詞",
-              "形容詞的",
-              "形状詞的",
-              "括弧閉",
-              "括弧開",
-              "接続助詞",
-              "数詞",
-              "普通名詞",
-              "格助詞",
-              "準体助詞",
-              "終助詞",
-              "読点",
-              "非自立可能"
-            ]
+            "description": "Raw Sudachi/UniDic 品詞 細分類, kept verbatim. Third-party analyzer output, see pos_coarse."
           },
           "position": {
             "type": "integer",
-            "enum": [
-              0,
-              1,
-              10,
-              11,
-              12,
-              13,
-              14,
-              15,
-              16,
-              17,
-              18,
-              19,
-              2,
-              20,
-              21,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9
-            ]
+            "minimum": 0
           },
           "reading": {
             "type": "string"
@@ -372,17 +315,30 @@
             "type": "string",
             "enum": [
               "A",
+              "B",
               "C"
-            ]
+            ],
+            "description": "Which Sudachi split mode produced this token. Vocabulary owner: producer — SudachiPy split modes (A short / B middle / C long). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "producer",
+              "source": "SudachiPy split modes (A short / B middle / C long)"
+            }
           },
           "surface": {
             "type": "string"
+          },
+          "vocab": {
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "vocab_id": {
             "type": [
               "integer",
               "null"
-            ]
+            ],
+            "minimum": 0
           }
         },
         "additionalProperties": false

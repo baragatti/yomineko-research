@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-te-kureto, n3-to-iu-koto-da, n3-you-ni-iu] · vocabulário [主張, 乗客, 使用, 修正, 借金, 収入, 奨学金, 就職, 重大, 重視, 障害, 集中, 集団, 需要, 順番, 順調] · kanji [御 慣 折 誤] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-141613`, `sent:tatoeba-2233241`
 
 ---
 
@@ -94,28 +94,28 @@ Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar 
 ---
 
 ## Exercícios
-### 1. (cloze) {'pt-BR': "Complete o discurso indireto 'o médico mandou eu não beber álcool': 医者はお酒を飲ま___ように言いました。"}
+### 1. (cloze) Complete o discurso indireto 'o médico mandou eu não beber álcool': 医者はお酒を飲ま___ように言いました。
 - **Resposta:** `{"text": "ない", "full": "医者はお酒を飲まないように言いました"}`
-- {'pt-BR': "Para mandar NÃO fazer, usa-se a forma ～ない antes de ように: 飲まない + ように言う. Se fosse uma ordem positiva ('mande beber'), seria a forma de dicionário 飲む + ように言う."}
+- Para mandar NÃO fazer, usa-se a forma ～ない antes de ように: 飲まない + ように言う. Se fosse uma ordem positiva ('mande beber'), seria a forma de dicionário 飲む + ように言う.
 
 
-### 2. (recognition) {'pt-BR': "Qual frase significa 'Me pediram para ajudar' (citando o pedido com てくれと)?"}
+### 2. (recognition) Qual frase significa 'Me pediram para ajudar' (citando o pedido com てくれと)?
 - **Resposta:** `{"choices": ["手伝ってくれと頼まれました", "手伝うように頼まれました", "手伝ったということです", "手伝うというと頼みました"], "correct": "手伝ってくれと頼まれました"}`
-- {'pt-BR': "～てくれと cita o pedido direto: 手伝って (forma て) + くれ (imperativo casual) + と (aspas) + 頼まれました ('me pediram'). A segunda opção (手伝うように頼まれました) também é correta em japonês, mas usa o discurso INDIRETO ように, não a citação てくれと que o enunciado pede."}
+- ～てくれと cita o pedido direto: 手伝って (forma て) + くれ (imperativo casual) + と (aspas) + 頼まれました ('me pediram'). A segunda opção (手伝うように頼まれました) também é correta em japonês, mas usa o discurso INDIRETO ように, não a citação てくれと que o enunciado pede.
 
 
-### 3. (particle_choice) {'pt-BR': "Escolha o fecho para relatar um boato lido no jornal: 部長は来月退職する___。('Pelo que dizem, o gerente vai se aposentar mês que vem.')"}
+### 3. (particle_choice) Escolha o fecho para relatar um boato lido no jornal: 部長は来月退職する___。('Pelo que dizem, o gerente vai se aposentar mês que vem.')
 - **Resposta:** `{"choices": ["ということだ", "ということだから", "というと", "ように言う"], "correct": "ということだ"}`
-- {'pt-BR': "ということだ encerra a frase relatando informação ouvida ('pelo que dizem'), tom formal de notícia. ということだから significaria 'já que é assim' (não encerra, justifica), e というと puxaria uma associação."}
+- ということだ encerra a frase relatando informação ouvida ('pelo que dizem'), tom formal de notícia. ということだから significaria 'já que é assim' (não encerra, justifica), e というと puxaria uma associação.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'O professor mandou os alunos ficarem quietos' com as peças: [言いました] [学生に] [先生は] [静かにする] [ように]"}
+### 4. (sentence_build) Monte 'O professor mandou os alunos ficarem quietos' com as peças: [言いました] [学生に] [先生は] [静かにする] [ように]
 - **Resposta:** `{"order": ["先生は", "学生に", "静かにする", "ように", "言いました"], "text": "先生は学生に静かにするように言いました"}`
-- {'pt-BR': 'Ordem do discurso indireto: tema (先生は) + a pessoa instruída com に (学生に) + ação na forma de dicionário (静かにする) + ように + verbo de fala no fim (言いました). O verbo principal sempre vai para o final.'}
+- Ordem do discurso indireto: tema (先生は) + a pessoa instruída com に (学生に) + ação na forma de dicionário (静かにする) + ように + verbo de fala no fim (言いました). O verbo principal sempre vai para o final.
 
 
-### 5. (production) {'pt-BR': "Diga 'O chefe me pediu para vir mais cedo' citando o pedido com てくれと. (上司 = chefe, 早く来る = vir cedo, 頼まれた = me pediram)"}
+### 5. (production) Diga 'O chefe me pediu para vir mais cedo' citando o pedido com てくれと. (上司 = chefe, 早く来る = vir cedo, 頼まれた = me pediram)
 - **Resposta:** `{"text": "上司に早く来てくれと頼まれた", "accept": ["上司に早く来てくれと頼まれた", "じょうしにはやくきてくれとたのまれた", "上司に早く来てくれと頼まれました", "上司に早く来てくれと言われた"]}`
-- {'pt-BR': "早く来る vira 来てくれ (forma て + くれ, imperativo casual) + と (aspas) + 頼まれた ('me pediram'). O くれ preserva o tom direto do pedido original, mesmo com o verbo final educado. A pessoa que pediu leva に (上司に)."}
+- 早く来る vira 来てくれ (forma て + くれ, imperativo casual) + と (aspas) + 頼まれた ('me pediram'). O くれ preserva o tom direto do pedido original, mesmo com o verbo final educado. A pessoa que pediu leva に (上司に).
 
 

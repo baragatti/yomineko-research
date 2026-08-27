@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-moshi-temo, n3-nai-to] · vocabulário [下り, 狂う, 禁止, 禁煙, 筋肉, 管, 組合, 腐る, 臭い, 訓, 軍, 軍隊, 鎖, 食う] · kanji [他 処 否 禁 突] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-83323`
 
 ---
 
@@ -75,28 +75,28 @@ O kanji 突 significa 'perfurar, cravar, de repente'. Tem a abertura (穴) em ci
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Sozinha no fim da fala, もう行かないと significa o quê?'}
+### 1. (recognition) Sozinha no fim da fala, もう行かないと significa o quê?
 - **Resposta:** `{"choices": ["Já não vou mais", "Já tenho que ir (a consequência ruim de não ir fica subentendida)", "Vou perguntar se vou", "Fui embora há pouco"], "correct": "Já tenho que ir (a consequência ruim de não ir fica subentendida)"}`
-- {'pt-BR': "〜ないと cortada no fim vira 'tenho que': 行かないと = 'tenho que ir'. É a versão coloquial e curta de 行かなければならない / 行かなきゃ; a consequência ruim de não ir fica implícita."}
+- 〜ないと cortada no fim vira 'tenho que': 行かないと = 'tenho que ir'. É a versão coloquial e curta de 行かなければならない / 行かなきゃ; a consequência ruim de não ir fica implícita.
 
 
-### 2. (particle_choice) {'pt-BR': "Complete 'mesmo que seja caro, eu compro': 高＿＿＿買います。"}
+### 2. (particle_choice) Complete 'mesmo que seja caro, eu compro': 高＿＿＿買います。
 - **Resposta:** `{"choices": ["くても", "ても", "でも", "かったら"], "correct": "くても"}`
-- {'pt-BR': "Adjetivo-い no concessivo troca o い final por くても: 高い vira 高くても ('mesmo que seja caro'). ても puro é para verbos na forma て; でも é para substantivos e な-adjetivos."}
+- Adjetivo-い no concessivo troca o い final por くても: 高い vira 高くても ('mesmo que seja caro'). ても puro é para verbos na forma て; でも é para substantivos e な-adjetivos.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'se você não dormir cedo, amanhã vai ser duro': 早く寝＿＿＿、明日つらいよ。"}
+### 3. (cloze) Complete 'se você não dormir cedo, amanhã vai ser duro': 早く寝＿＿＿、明日つらいよ。
 - **Resposta:** `{"text": "ないと", "full": "早く寝ないと、明日つらいよ"}`
-- {'pt-BR': "〜ないと aponta a consequência ruim de não fazer algo: 寝ないと ('se não dormir') + a parte ruim depois. O と é o 'se' condicional automático, não citação."}
+- 〜ないと aponta a consequência ruim de não fazer algo: 寝ないと ('se não dormir') + a parte ruim depois. O と é o 'se' condicional automático, não citação.
 
 
-### 4. (recognition) {'pt-BR': "Qual frase é concessiva ('mesmo que', resultado não muda), e não condicional?"}
+### 4. (recognition) Qual frase é concessiva ('mesmo que', resultado não muda), e não condicional?
 - **Resposta:** `{"choices": ["雨が降ったら、試合は中止です", "雨が降っても、試合はやります", "雨が降ると、道が混みます", "雨が降れば、行きません"], "correct": "雨が降っても、試合はやります"}`
-- {'pt-BR': "〜ても é concessivo: 降っても = 'mesmo que chova', e mesmo assim o jogo acontece (resultado não muda). As outras usam 〜たら/〜と/〜ば, condicionais em que o resultado depende da chuva."}
+- 〜ても é concessivo: 降っても = 'mesmo que chova', e mesmo assim o jogo acontece (resultado não muda). As outras usam 〜たら/〜と/〜ば, condicionais em que o resultado depende da chuva.
 
 
-### 5. (production) {'pt-BR': "Diga 'Mesmo que seja proibido, tem gente que faz' usando 〜ても com 禁止する (proibir) e 〜人がいる (tem gente que...)."}
+### 5. (production) Diga 'Mesmo que seja proibido, tem gente que faz' usando 〜ても com 禁止する (proibir) e 〜人がいる (tem gente que...).
 - **Resposta:** `{"text": "禁止されても、やる人がいる", "accept": ["禁止されても、やる人がいる", "禁止されてもやる人がいる", "きんしされても、やるひとがいる", "禁止されても、する人がいる"]}`
-- {'pt-BR': "禁止する na passiva 禁止される + ても = 'mesmo que seja proibido'. O resultado (やる人がいる, 'tem gente que faz') acontece apesar da proibição: concessão típica de 〜ても."}
+- 禁止する na passiva 禁止される + ても = 'mesmo que seja proibido'. O resultado (やる人がいる, 'tem gente que faz') acontece apesar da proibição: concessão típica de 〜ても.
 
 

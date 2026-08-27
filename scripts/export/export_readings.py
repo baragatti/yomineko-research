@@ -4,7 +4,7 @@ JSON, split by level. Readings are assembled by SELECTION from the verified sent
 human EN, our re-authored pt-BR, dissected); each is i+0 for the lesson it is gated to (every kanji + content
 vocab already in that lesson's cumulative_known_set). Shape per box:
   {slug, level, gated_to_lesson, title:{pt-BR,en}, jp, tokens:[{s,r,ro,pos}…],
-   translation:{pt-BR,en}, length_band, uses:{kanji:[char…],vocab:[headword…]}, source_slugs:[sent:…],
+   translation:{pt-BR,en}, length_band, uses:{kanji:[char…],vocab:[vocab:<jmdict_id>…]}, source_slugs:[sent:…],
    ai_generated, needs_review, layer}
 Re-run after build_readings.py. Usage: export_readings.py"""
 from __future__ import annotations
@@ -23,7 +23,10 @@ def main() -> int:
         return 0
     OUT.mkdir(parents=True, exist_ok=True)
     char_by_kid = {i: ch for i, ch in con.execute("SELECT id,character FROM kanji")}
-    hw_by_vid = {i: hw for i, hw in con.execute("SELECT id,headword FROM vocab")}
+    # The DB stores uses.vocab as vocab ROW IDS -- the exact records, no ambiguity. The old export
+    # collapsed them to headwords, which re-introduced the very homograph problem the course layer
+    # was migrated away from (6,200 refs, 558 of them naming more than one record). Publish the slug.
+    slug_by_vid = {i: sl for i, sl in con.execute("SELECT id,slug FROM vocab")}
     by_level: dict = {}
     for (slug, level, lesson, tpt_title, ten_title, jp, tokens, tpt, ten, uses, band, src, ai, nr,
          layer) in con.execute(
@@ -37,7 +40,7 @@ def main() -> int:
             "translation": {"pt-BR": tpt or "", "en": ten or ""},
             "length_band": band,
             "uses": {"kanji": [char_by_kid[k] for k in u.get("kanji", []) if k in char_by_kid],
-                     "vocab": [hw_by_vid[v] for v in u.get("vocab", []) if v in hw_by_vid]},
+                     "vocab": [slug_by_vid[v] for v in u.get("vocab", []) if v in slug_by_vid]},
             "source_slugs": json.loads(src or "[]"),
             "ai_generated": bool(ai), "needs_review": True if nr is None else bool(nr),
             "layer": layer or "B"})
@@ -53,8 +56,10 @@ def main() -> int:
         "content word it uses is already in that lesson's `cumulative_known_set` (HARD gate, validated by "
         "`scripts/validate/validate_readings.py`). See `design/reading_practice.md`.\n\n"
         "Per box: `{slug, level, gated_to_lesson, title, jp, tokens:[{s,r,ro,pos}], translation:{pt-BR,en}, "
-        "length_band, uses:{kanji,vocab}, source_slugs:[sent:…]}`. `source_slugs` credit the underlying bank "
-        "sentences (provenance). Layer **B** (derived-and-verified), `needs_review: 1`.\n\n"
+        "length_band, uses:{kanji,vocab}, source_slugs:[sent:…]}`. `uses.vocab` holds published "
+        "`vocab:<jmdict_id>` slugs (never headwords — 93 headwords name more than one record). "
+        "`source_slugs` credit the underlying bank sentences (provenance). Layer **B** "
+        "(derived-and-verified), `needs_review: true`.\n\n"
         + "".join(f"- `{lvl}.json` — {n} boxes\n" for lvl, n in sorted(counts.items())),
         encoding="utf-8")
     con.close()

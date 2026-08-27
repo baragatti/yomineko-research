@@ -19,10 +19,11 @@
   "additionalProperties": {
     "type": "array",
     "minItems": 1,
+    "uniqueItems": true,
     "items": {
       "$ref": "common.schema.json#/$defs/StableId",
       "pattern": "^cap:"
     },
-    "description": "The capabilities this lesson advances. Every entry must resolve in corpus/capabilities/registry.json."
+    "description": "The capabilities this lesson advances, as a SET — listing one twice says nothing and would double-count the lesson's contribution in any capability-coverage report, so duplicates are rejected. Every entry must resolve in corpus/capabilities/registry.json; validate_contracts.py checks that."
   }
 }

@@ -4,7 +4,7 @@
   "stage": "speak:getting_around",
   "order": 4,
   "title": {
-    "pt-BR": "Chegar aonde você quer — parte 4"
+    "pt-BR": "Chegar aonde você quer, parte 4"
   },
   "say_now": [
     "sent:tatoeba-200926",
@@ -53,53 +53,6 @@
   "cumulative_known_vocab": 180,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3598",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3598:2713",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "二",
-        "人",
-        "事"
-      ]
-    },
-    {
-      "id": "cf:n4:5027:1226",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "出る",
-        "壊す",
-        "最中"
-      ]
-    },
-    {
-      "id": "kr:n4:1226",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しょくどう",
-        "ひるごはん",
-        "さいちゅう"
-      ]
-    },
-    {
-      "id": "kr:n5:151",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おくれる",
-        "メートル",
-        "でかける"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-70",
     "gram:tokoro"
@@ -147,6 +100,8 @@
       "prompt_pt": "Finalmente chegamos.",
       "answer_key": "やっと着いた。",
       "accepted_variants": [
+        "やっとついた",
+        "やっとついた。",
         "やっと着いた",
         "やっと着いた。"
       ],
@@ -157,6 +112,8 @@
       "prompt_pt": "Você vai a pé? Ou vai de ônibus?",
       "answer_key": "歩いていく？それともバスで行く？",
       "accepted_variants": [
+        "あるいていく?それともばすでいく",
+        "あるいていく?それともばすでいく?",
         "歩いていく？それともバスで行く",
         "歩いていく？それともバスで行く？"
       ],
@@ -167,6 +124,8 @@
       "prompt_pt": "As duas estradas se cruzam ali.",
       "answer_key": "二本の道はそこでクロスしている。",
       "accepted_variants": [
+        "にほんのみちわそこでくろすしている",
+        "にほんのみちわそこでくろすしている。",
         "二本の道はそこでクロスしている",
         "二本の道はそこでクロスしている。"
       ],
@@ -189,15 +148,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3598",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3598:2713",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "二",
+        "人",
+        "事"
+      ]
+    },
+    {
+      "id": "cf:n4:5027:1226",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "出る",
+        "壊す",
+        "最中"
+      ]
+    },
+    {
+      "id": "kr:n4:1226",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しょくどう",
+        "ひるごはん",
+        "さいちゅう"
+      ]
+    },
+    {
+      "id": "kr:n5:151",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おくれる",
+        "メートル",
+        "でかける"
+      ]
+    }
+  ]
 }

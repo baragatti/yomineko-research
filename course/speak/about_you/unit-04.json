@@ -4,7 +4,7 @@
   "stage": "speak:about_you",
   "order": 4,
   "title": {
-    "pt-BR": "Falar de você — parte 4"
+    "pt-BR": "Falar de você, parte 4"
   },
   "say_now": [
     "sent:tatoeba-164626",
@@ -29,7 +29,6 @@
   "patterns": [
     "gram:deshou",
     "gram:made-ni",
-    "gram:te-iru",
     "gram:gp-81"
   ],
   "kanji_recognition": [
@@ -53,6 +52,102 @@
   "cumulative_known_vocab": 298,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-36",
+    "gram:gp-120",
+    "gram:nara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:made-ni",
+      "examples": [
+        "sent:tatoeba-150564",
+        "sent:tatoeba-218050",
+        "sent:tatoeba-147666"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-81",
+      "examples": [
+        "sent:gen-20f9f43c9339",
+        "sent:gen-e5bc8ecc1fc4",
+        "sent:gen-f416c28a18c3"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "A sua vida de estudante também vai chegar ao fim em breve.",
+      "answer_key": "あなたの学生生活も間もなく終わりになる。",
+      "accepted_variants": [
+        "あなたのがくせいせいかつもまもなくおわりになる",
+        "あなたのがくせいせいかつもまもなくおわりになる。",
+        "あなたの学生生活も間もなく終わりになる",
+        "あなたの学生生活も間もなく終わりになる。"
+      ],
+      "sentence": "sent:tatoeba-233401",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "\"Comida picante, você gosta?\" \"Adoro.\"",
+      "answer_key": "「辛いものって、好き？」「大好き」",
+      "accepted_variants": [
+        "「からいものって、すき?」「だいすき」",
+        "「辛いものって、好き？」「大好き」"
+      ],
+      "sentence": "sent:tatoeba-11727272",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "No Ano-Novo, a gente passa bastante tempo com a família.",
+      "answer_key": "正月は家族と過ごす時間が長いのです。",
+      "accepted_variants": [
+        "しょうがつわかぞくとすごすじかんがながいのです",
+        "しょうがつわかぞくとすごすじかんがながいのです。",
+        "正月は家族と過ごす時間が長いのです",
+        "正月は家族と過ごす時間が長いのです。"
+      ],
+      "sentence": "sent:tatoeba-142954",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
+    "items": [
+      "sent:tatoeba-11386733",
+      "sent:tatoeba-9553773",
+      "sent:tatoeba-172198",
+      "sent:jec-0320",
+      "sent:tatoeba-184254",
+      "sent:tatoeba-84568"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 20,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:680",
@@ -99,104 +194,5 @@
         "朝"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-36",
-    "gram:gp-120"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:deshou",
-      "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:made-ni",
-      "examples": [
-        "sent:tatoeba-150564",
-        "sent:tatoeba-218050",
-        "sent:tatoeba-147666"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:te-iru",
-      "examples": [
-        "sent:tatoeba-10175894",
-        "sent:tatoeba-5100",
-        "sent:tatoeba-5028"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-81",
-      "examples": [
-        "sent:gen-20f9f43c9339",
-        "sent:gen-e5bc8ecc1fc4",
-        "sent:gen-f416c28a18c3"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "A sua vida de estudante também vai chegar ao fim em breve.",
-      "answer_key": "あなたの学生生活も間もなく終わりになる。",
-      "accepted_variants": [
-        "あなたの学生生活も間もなく終わりになる",
-        "あなたの学生生活も間もなく終わりになる。"
-      ],
-      "sentence": "sent:tatoeba-233401",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "\"Comida picante, você gosta?\" \"Adoro.\"",
-      "answer_key": "「辛いものって、好き？」「大好き」",
-      "accepted_variants": [
-        "「辛いものって、好き？」「大好き」"
-      ],
-      "sentence": "sent:tatoeba-11727272",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "No Ano-Novo, a gente passa bastante tempo com a família.",
-      "answer_key": "正月は家族と過ごす時間が長いのです。",
-      "accepted_variants": [
-        "正月は家族と過ごす時間が長いのです",
-        "正月は家族と過ごす時間が長いのです。"
-      ],
-      "sentence": "sent:tatoeba-142954",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
-    "items": [
-      "sent:tatoeba-11386733",
-      "sent:tatoeba-9553773",
-      "sent:tatoeba-172198",
-      "sent:jec-0320",
-      "sent:tatoeba-184254",
-      "sent:tatoeba-84568"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 27,
-    "fluency": 6
-  }
+  ]
 }

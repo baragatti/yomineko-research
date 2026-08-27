@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-to-iu, n3-to-iu-no-wa, n3-to-iu-to] · vocabulário [主義, 住民, 出身, 周囲, 喋る, 宗教, 常識, 手段, 条件, 正直, 状況, 瞬間, 示す, 種類, 重要, 首相, 首都] · kanji [昔 窓 草] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-100592`, `sent:tatoeba-423387`
 
 ---
 
@@ -97,28 +97,28 @@ Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade r
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Você quer apresentar 'um filme chamado Tonari no Totoro' para alguém que talvez não conheça. Qual frase usa という corretamente?"}
+### 1. (recognition) Você quer apresentar 'um filme chamado Tonari no Totoro' para alguém que talvez não conheça. Qual frase usa という corretamente?
 - **Resposta:** `{"choices": ["となりのトトロという映画", "となりのトトロというと映画", "となりのトトロというのは映画", "となりのトトロとして映画"], "correct": "となりのトトロという映画"}`
-- {'pt-BR': "Para NOMEAR (apresentar um título/exemplo) a fórmula é Nome + という + substantivo. となりのトトロという映画 = 'um filme chamado Tonari no Totoro'. というと puxaria uma associação ('por falar em...'), e というのは serviria para definir, não para nomear."}
+- Para NOMEAR (apresentar um título/exemplo) a fórmula é Nome + という + substantivo. となりのトトロという映画 = 'um filme chamado Tonari no Totoro'. というと puxaria uma associação ('por falar em...'), e というのは serviria para definir, não para nomear.
 
 
-### 2. (particle_choice) {'pt-BR': "Complete a definição: 常識___、みんなが知っているはずのことです。('Bom senso, ou seja, é o que todos deveriam saber.')"}
+### 2. (particle_choice) Complete a definição: 常識___、みんなが知っているはずのことです。('Bom senso, ou seja, é o que todos deveriam saber.')
 - **Resposta:** `{"choices": ["というのは", "という", "というと", "として"], "correct": "というのは"}`
-- {'pt-BR': "Aqui o objetivo é DEFINIR o termo 常識, então usamos というのは ('ou seja', 'quer dizer que'), que marca o tema e abre a explicação. という sozinho serviria para nomear um substantivo, não para definir."}
+- Aqui o objetivo é DEFINIR o termo 常識, então usamos というのは ('ou seja', 'quer dizer que'), que marca o tema e abre a explicação. という sozinho serviria para nomear um substantivo, não para definir.
 
 
-### 3. (cloze) {'pt-BR': "Complete com a forma que puxa a associação típica de um tema ('quando se fala em comida japonesa, sushi'): 日本料理___、寿司ですね。"}
+### 3. (cloze) Complete com a forma que puxa a associação típica de um tema ('quando se fala em comida japonesa, sushi'): 日本料理___、寿司ですね。
 - **Resposta:** `{"text": "というと", "full": "日本料理というと、寿司ですね"}`
-- {'pt-BR': 'というと pega o tema (日本料理, comida japonesa) e traz a primeira associação que vem à mente (寿司, sushi). A variante といえば também caberia, com sentido quase igual.'}
+- というと pega o tema (日本料理, comida japonesa) e traz a primeira associação que vem à mente (寿司, sushi). A variante といえば também caberia, com sentido quase igual.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada estrutura ao seu papel principal.'}
+### 4. (matching) Ligue cada estrutura ao seu papel principal.
 - **Resposta:** `{"pairs": [["という", "nomear / apresentar um título ou exemplo"], ["というのは", "definir ou reformular ('ou seja')"], ["というと", "puxar a associação típica ('por falar em')"]]}`
-- {'pt-BR': 'という apresenta um nome (livro chamado X); というのは define e esclarece (ou seja...); というと evoca a associação espontânea de um tema (por falar em...). Os três partem da mesma raiz と + 言う, mas com funções distintas.'}
+- という apresenta um nome (livro chamado X); というのは define e esclarece (ou seja...); というと evoca a associação espontânea de um tema (por falar em...). Os três partem da mesma raiz と + 言う, mas com funções distintas.
 
 
-### 5. (production) {'pt-BR': "Diga 'Li um livro chamado Botchan' usando という. (本 = livro, 読みました = li)"}
+### 5. (production) Diga 'Li um livro chamado Botchan' usando という. (本 = livro, 読みました = li)
 - **Resposta:** `{"text": "「坊っちゃん」という本を読みました", "accept": ["坊っちゃんという本を読みました", "ぼっちゃんというほんをよみました", "「坊っちゃん」という本を読みました。", "坊ちゃんという本を読みました"]}`
-- {'pt-BR': "A fórmula de nomear é Nome + という + substantivo: 坊っちゃんという本 = 'um livro chamado Botchan'. Depois vem を読みました ('li'). Repare que em pt-BR natural dá para traduzir só por 'li o livro Botchan', sem o 'chamado'."}
+- A fórmula de nomear é Nome + という + substantivo: 坊っちゃんという本 = 'um livro chamado Botchan'. Depois vem を読みました ('li'). Repare que em pt-BR natural dá para traduzir só por 'li o livro Botchan', sem o 'chamado'.
 
 

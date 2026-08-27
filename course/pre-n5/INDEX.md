@@ -40,6 +40,6 @@ _Gerado 2026-08-26. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 6. Saudações e sobrevivência
 - **kanji** (0): —
-- **vocab** (24, amostra): では、下さい、もう、就いて、そんな、如何して、女の子、男の子、もう一度、御座います、あっ、どうも、さあ、此れから、いいえ
+- **vocab** (24, amostra): さあ、では、どうも、もう一度、もしもし、一寸、下さい、御座います、あっ、いいえ、ええ、そんな、もう、其れでは、嗚呼
 - **gramática** (0): —
 

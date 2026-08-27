@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [to-omou] · vocabulário [事故, 勿論, 原因, 可笑しい, 変, 泣く, 確か, 驚く] · kanji [物] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-199355`, `sent:tatoeba-4877`, `sent:tatoeba-187786`, `sent:tatoeba-189627`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-189627`, `sent:tatoeba-199355`, `sent:tatoeba-4877`, `sent:tatoeba-187786`
 
 ---
 
@@ -18,7 +18,7 @@ Em português a gente quase nunca crava as coisas: dizemos "acho que vai dar cer
 
 #### O molde: frase casual と思う
 A receita é simples: você fala uma frase inteira na forma casual (forma de dicionário, sem です/だ no fim para verbos e adjetivos-i), gruda a partícula と e fecha com 思う ("pensar"). O と aqui funciona como umas aspas: ele empacota o que você pensa e entrega para o 思う.
-Molde: [frase casual] と思う
+Molde: [frase casual] と 思う
 Veja como a frase casual entra inteira no molde:
 - 雨が降る ("vai chover") vira 雨が降ると思う ("acho que vai chover").
 - いい ("é bom") vira いいと思う ("acho que é bom").
@@ -70,28 +70,28 @@ Não confunda 考 ("ponderar", com a perna comprida embaixo) com 老 ("velho"): 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'A estrutura と思う serve para...'}
+### 1. (recognition) A estrutura と思う serve para...
 - **Resposta:** `{"choices": ["dar uma ordem direta", "dar uma opinião ou suposição ('acho que...')", "pedir um favor educadamente"], "correct": "dar uma opinião ou suposição ('acho que...')"}`
-- {'pt-BR': "と思う ('to omou') empacota a sua opinião/suposição com a partícula と e fecha com 思う ('pensar'). É o nosso 'acho que...', mas sempre no fim da frase."}
+- と思う ('to omou') empacota a sua opinião/suposição com a partícula と e fecha com 思う ('pensar'). É o nosso 'acho que...', mas sempre no fim da frase.
 
 
-### 2. (cloze) {'pt-BR': "Complete com o verbo 'pensar' que fecha a opinião: 雨が降る＿＿＿。 (Acho que vai chover.)"}
+### 2. (cloze) Complete com o verbo 'pensar' que fecha a opinião: 雨が降る＿＿＿。 (Acho que vai chover.)
 - **Resposta:** `{"text": "と思う", "full": "雨が降ると思う"}`
-- {'pt-BR': "Frase casual (雨が降る = 'vai chover') + と + 思う. O と funciona como aspas que entregam a ideia ao 思う. Resultado: 'acho que vai chover'."}
+- Frase casual (雨が降る = 'vai chover') + と + 思う. O と funciona como aspas que entregam a ideia ao 思う. Resultado: 'acho que vai chover'.
 
 
-### 3. (recognition) {'pt-BR': "Para dizer 'Acho que NÃO vai chover', qual frase está correta e mais natural?"}
+### 3. (recognition) Para dizer 'Acho que NÃO vai chover', qual frase está correta e mais natural?
 - **Resposta:** `{"choices": ["雨が降ると思わない", "雨が降らないと思う", "雨が降ると思うない"], "correct": "雨が降らないと思う"}`
-- {'pt-BR': "A negação entra ANTES de と思う: 降らない ('não vai chover') + と思う. Negar o 思う (思わない) soa mais firme e é menos usado no dia a dia. '思うない' não existe."}
+- A negação entra ANTES de と思う: 降らない ('não vai chover') + と思う. Negar o 思う (思わない) soa mais firme e é menos usado no dia a dia. '思うない' não existe.
 - frases: `sent:tatoeba-189627`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Acho que dou conta (de algum jeito).' com as peças: [思う] [何とか] [できる] [と] [よ]"}
+### 4. (sentence_build) Monte 'Acho que dou conta (de algum jeito).' com as peças: [思う] [何とか] [できる] [と] [よ]
 - **Resposta:** `{"order": ["何とか", "できる", "と", "思う", "よ"], "text": "何とかできると思うよ。"}`
-- {'pt-BR': "何とか ('de algum jeito') + できる ('conseguir') formam a opinião; depois と + 思う fecham o molde, e よ ('viu') dá um tom amigável. É a frase real 何とかできると思うよ."}
+- 何とか ('de algum jeito') + できる ('conseguir') formam a opinião; depois と + 思う fecham o molde, e よ ('viu') dá um tom amigável. É a frase real 何とかできると思うよ.
 - frases: `sent:tatoeba-187786`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Acho que é bom.' usando o adjetivo いい ('bom') + a estrutura de opinião."}
+### 5. (production) Diga em japonês 'Acho que é bom.' usando o adjetivo いい ('bom') + a estrutura de opinião.
 - **Resposta:** `{"text": "いいと思う。", "accept": ["いいと思う", "いいと思うよ", "いいとおもう", "いいとおもうよ"]}`
-- {'pt-BR': "いい ('é bom', forma casual) + と思う = 'acho que é bom'. Adjetivos-i entram na forma de dicionário, sem です/だ antes do と."}
+- いい ('é bom', forma casual) + と思う = 'acho que é bom'. Adjetivos-i entram na forma de dicionário, sem です/だ antes do と.
 
 

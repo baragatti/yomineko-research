@@ -4,7 +4,7 @@
   "stage": "speak:opinions",
   "order": 1,
   "title": {
-    "pt-BR": "Dizer o que você acha — parte 1"
+    "pt-BR": "Dizer o que você acha, parte 1"
   },
   "say_now": [
     "sent:tatoeba-81566",
@@ -52,48 +52,6 @@
   "cumulative_known_vocab": 513,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:4260:2932",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "必要",
-        "送る",
-        "食堂"
-      ]
-    },
-    {
-      "id": "cf:n5:726:136",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "分かる",
-        "昼ご飯",
-        "嬉しい"
-      ]
-    },
-    {
-      "id": "kr:n5:136",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おとうさん",
-        "りょうしん",
-        "しょうねん"
-      ]
-    },
-    {
-      "id": "kr:n4:1185",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "なに",
-        "ため",
-        "もう"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:hazu-ga-nai"
   ],
@@ -149,6 +107,8 @@
       "prompt_pt": "Me dá um envelope, por favor.",
       "answer_key": "封筒をください。",
       "accepted_variants": [
+        "ふうとうをください",
+        "ふうとうをください。",
         "封筒をください",
         "封筒をください。"
       ],
@@ -159,6 +119,8 @@
       "prompt_pt": "Por favor, ferva um pouco de água.",
       "answer_key": "お湯を少し沸かしてください。",
       "accepted_variants": [
+        "おゆをすこしわかしてください",
+        "おゆをすこしわかしてください。",
         "お湯を少し沸かしてください",
         "お湯を少し沸かしてください。"
       ],
@@ -169,6 +131,8 @@
       "prompt_pt": "Decida-se: ou sai, ou entra.",
       "answer_key": "出るか入るかどちらかにしてください。",
       "accepted_variants": [
+        "でるかはいるかどちらかにしてください",
+        "でるかはいるかどちらかにしてください。",
         "出るか入るかどちらかにしてください",
         "出るか入るかどちらかにしてください。"
       ],
@@ -191,15 +155,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:4260:2932",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "必要",
+        "送る",
+        "食堂"
+      ]
+    },
+    {
+      "id": "cf:n5:726:136",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "分かる",
+        "昼ご飯",
+        "嬉しい"
+      ]
+    },
+    {
+      "id": "kr:n5:136",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おとうさん",
+        "りょうしん",
+        "しょうねん"
+      ]
+    },
+    {
+      "id": "kr:n4:1185",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "なに",
+        "ため",
+        "もう"
+      ]
+    }
+  ]
 }

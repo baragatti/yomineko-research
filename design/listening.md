@@ -29,7 +29,7 @@ N5 72, N4 84, N3 84 → **240 scripts**.
  "question": "男の人はこのあと何を買いますか。",
  "correct": "…", "distractors": ["…", "…", "…"],
  "sentence": "sent:… (listening_reply only — the REAL bank sentence used verbatim as the prompt)",
- "audio": "pending", "layer": "C", "needs_review": 1, "ai": 1}
+ "audio": "pending", "layer": "C", "needs_review": true, "ai_generated": true}
 ```
 
 - `script` = ordered spoken turns. Speaker registry (locale-neutral): `M1 M2 F1 F2` (dialogue voices),

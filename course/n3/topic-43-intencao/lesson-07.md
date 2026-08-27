@@ -64,23 +64,23 @@ Repare em 雰囲気, uma palavra muito comum, e em 震える para sensações f�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa a atmosfera ou o clima de um lugar?'}
+### 1. (recognition) Qual palavra significa a atmosfera ou o clima de um lugar?
 - **Resposta:** `{"choices": ["雰囲気 (ふんいき)", "分析 (ぶんせき)", "平均 (へいきん)"], "correct": "雰囲気 (ふんいき)"}`
-- {'pt-BR': '雰囲気 (ふんいき) é o ambiente ou clima; 分析 é análise e 平均 é média.'}
+- 雰囲気 (ふんいき) é o ambiente ou clima; 分析 é análise e 平均 é média.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra à sua tradução.'}
+### 2. (matching) Associe cada palavra à sua tradução.
 - **Resposta:** `{"pairs": [["分野", "área, campo"], ["平和", "paz"], ["ブレーキ", "freio"], ["震える", "tremer"]]}`
-- {'pt-BR': 'Quatro itens da lição: campo de conhecimento, paz, freio e o verbo tremer.'}
+- Quatro itens da lição: campo de conhecimento, paz, freio e o verbo tremer.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a frase: <jp>データを＿＿して、新しいプランを考えた</jp> (Analisei os dados e pensei num plano novo.)'}
+### 3. (cloze) Complete a frase: データを＿＿して、新しいプランを考えた (Analisei os dados e pensei num plano novo.)
 - **Resposta:** `{"text": "分析", "full": "データを分析して、新しいプランを考えた。"}`
-- {'pt-BR': '分析 (ぶんせき) é analisar; aqui na forma 分析して, encadeando com a próxima ação.'}
+- 分析 (ぶんせき) é analisar; aqui na forma 分析して, encadeando com a próxima ação.
 
 
-### 4. (production) {'pt-BR': 'Escreva uma frase em japonês dizendo que você gosta do clima (雰囲気) desta loja (店).'}
-- **Resposta:** `{"text": "この店の雰囲気が好きです", "accept": ["この店の雰囲気が好きだ", "店の雰囲気が好きです", "この店の雰囲気が大好きです"]}`
-- {'pt-BR': '雰囲気 (ふんいき) é o clima do lugar; com 好き expressa o que você aprecia nele.'}
+### 4. (production) Escreva uma frase em japonês dizendo que você gosta do clima (雰囲気) desta loja (店).
+- **Resposta:** `{"text": "この店の雰囲気が好きです", "accept": ["この店の雰囲気が好きです", "この店の雰囲気が好きだ", "店の雰囲気が好きです", "この店の雰囲気が大好きです"]}`
+- 雰囲気 (ふんいき) é o clima do lugar; com 好き expressa o que você aprecia nele.
 
 

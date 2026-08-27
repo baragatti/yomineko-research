@@ -45,23 +45,23 @@ Para arredondar o N3, guarde mais algumas palavras úteis do dia a dia.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Para dizer 'graças ao professor, passei', qual padrão N3 usar?"}
+### 1. (recognition) Para dizer 'graças ao professor, passei', qual padrão N3 usar?
 - **Resposta:** `{"choices": ["おかげで", "せいで", "くせに", "ところで"], "correct": "おかげで"}`
-- {'pt-BR': 'おかげで atribui um resultado bom a uma causa, com tom de gratidão. せいで seria para resultado ruim.'}
+- おかげで atribui um resultado bom a uma causa, com tom de gratidão. せいで seria para resultado ruim.
 
 
-### 2. (recognition) {'pt-BR': "Qual expressão marca 'enquanto a janela de tempo ainda dura, antes que mude'?"}
+### 2. (recognition) Qual expressão marca 'enquanto a janela de tempo ainda dura, antes que mude'?
 - **Resposta:** `{"choices": ["うちに", "までに", "そのうえ", "ために"], "correct": "うちに"}`
-- {'pt-BR': 'うちに foca em aproveitar uma condição favorável antes que ela acabe.'}
+- うちに foca em aproveitar uma condição favorável antes que ela acabe.
 
 
-### 3. (recognition) {'pt-BR': "Para um boato ('dizem que vai chover'), qual forma de relato é mais neutra?"}
+### 3. (recognition) Para um boato ('dizem que vai chover'), qual forma de relato é mais neutra?
 - **Resposta:** `{"choices": ["そうだ (ouvi dizer)", "はずだ", "みたいだ", "こそ"], "correct": "そうだ (ouvi dizer)"}`
-- {'pt-BR': 'A そうだ de relato transmite informação ouvida de terceiros, sem o falante avaliar a probabilidade.'}
+- A そうだ de relato transmite informação ouvida de terceiros, sem o falante avaliar a probabilidade.
 
 
-### 4. (production) {'pt-BR': "Escreva 'vou até o ponto de ônibus' usando 停留所 (ていりゅうじょ)."}
-- **Resposta:** `{"text": "停留所に行きます", "accept": ["停留所に行く", "停留所まで行きます", "ていりゅうじょに行きます"]}`
-- {'pt-BR': '停留所 (ていりゅうじょ) é o ponto de ônibus; com に行きます você indica o destino do deslocamento.'}
+### 4. (production) Escreva 'vou até o ponto de ônibus' usando 停留所 (ていりゅうじょ).
+- **Resposta:** `{"text": "停留所に行きます", "accept": ["停留所に行きます", "停留所に行く", "停留所まで行きます", "ていりゅうじょに行きます"]}`
+- 停留所 (ていりゅうじょ) é o ponto de ônibus; com に行きます você indica o destino do deslocamento.
 
 

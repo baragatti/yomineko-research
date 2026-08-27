@@ -81,28 +81,28 @@ Os dois se parecem à primeira vista, mas o lado direito é bem diferente. Assoc
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que significa 地域 (ちいき)?'}
+### 1. (recognition) O que significa 地域 (ちいき)?
 - **Resposta:** `{"choices": ["área, região, localidade", "subsolo, subterrâneo", "posição social, status", "sabedoria, bom senso"], "correct": "área, região, localidade"}`
-- {'pt-BR': '地域 (ちいき) é uma faixa de território: área, região. Não confunda com 地下 (subsolo) nem com 地位 (posição social), que compartilham o mesmo kanji 地.'}
+- 地域 (ちいき) é uma faixa de território: área, região. Não confunda com 地下 (subsolo) nem com 地位 (posição social), que compartilham o mesmo kanji 地.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em português.'}
+### 2. (matching) Associe cada palavra ao seu significado em português.
 - **Resposta:** `{"pairs": [["担当", "estar encarregado de, ser responsável por"], ["知恵", "sabedoria, bom senso"], ["近頃", "ultimamente, hoje em dia"], ["団体", "grupo, organização"]]}`
-- {'pt-BR': '担当 é a responsabilidade por uma tarefa; 知恵 é o saber prático; 近頃 situa algo no presente recente; 団体 é um grupo de pessoas.'}
+- 担当 é a responsabilidade por uma tarefa; 知恵 é o saber prático; 近頃 situa algo no presente recente; 団体 é um grupo de pessoas.
 
 
-### 3. (particle_choice) {'pt-BR': 'Escolha a palavra certa: 彼は＿忘れただけだ。 (Ele simplesmente esqueceu, só isso.)'}
+### 3. (particle_choice) Escolha a palavra certa: 彼は＿忘れただけだ。 (Ele simplesmente esqueceu, só isso.)
 - **Resposta:** `{"choices": ["単に", "単なる", "単純", "違い"], "correct": "単に"}`
-- {'pt-BR': "Antes de um verbo (忘れた) usa-se o advérbio 単に (simplesmente). 単なる só vem antes de substantivo, e 単純 é o adjetivo 'simples'."}
+- Antes de um verbo (忘れた) usa-se o advérbio 単に (simplesmente). 単なる só vem antes de substantivo, e 単純 é o adjetivo 'simples'.
 
 
-### 4. (cloze) {'pt-BR': "Complete com 'sem dúvida / com certeza': この違いは大きい＿＿＿＿。 (Esta diferença deve ser grande, sem dúvida.)"}
+### 4. (cloze) Complete com 'sem dúvida / com certeza': この違いは大きい＿＿＿＿。 (Esta diferença deve ser grande, sem dúvida.)
 - **Resposta:** `{"text": "に違いない", "full": "この違いは大きいに違いない"}`
-- {'pt-BR': "違いない aparece quase sempre em に違いない, ligado ao que vem antes: 大きいに違いない = 'deve ser grande, com certeza'. Repare que 違い (diferença) e 違いない (sem dúvida) vêm do mesmo verbo 違う."}
+- 違いない aparece quase sempre em に違いない, ligado ao que vem antes: 大きいに違いない = 'deve ser grande, com certeza'. Repare que 違い (diferença) e 違いない (sem dúvida) vêm do mesmo verbo 違う.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês: 'Pelo que dizem, o responsável por esta equipe é o Tanaka.' Use 担当, チーム e ということだ."}
+### 5. (production) Diga em japonês: 'Pelo que dizem, o responsável por esta equipe é o Tanaka.' Use 担当, チーム e ということだ.
 - **Resposta:** `{"text": "このチームの担当は田中さんだということだ。", "accept": ["このチームの担当は田中さんだということだ", "このチームの担当は田中さんだということだ。", "チームの担当は田中さんだということだ", "このチームの担当は田中さんだそうだ"]}`
-- {'pt-BR': "担当 (responsável) + チーム (equipe) + ということだ ('ou seja / pelo que dizem'). A estrutura だということだ relata uma informação ouvida de terceiros."}
+- 担当 (responsável) + チーム (equipe) + ということだ ('ou seja / pelo que dizem'). A estrutura だということだ relata uma informação ouvida de terceiros.
 
 

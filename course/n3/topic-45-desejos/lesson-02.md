@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-moshi-tanara, n3-moshimo-nara, n3-to-shitara] · vocabulário [偶然, 具体, 区別, 句, 敬意, 景気, 経営, 計, 近代, 金属, 金庫, 金曜, 金融, 金銭, 金額, 銀] · kanji [値 程 識 財] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11733143`, `sent:tatoeba-11038521`
 
 ---
 
@@ -78,28 +78,28 @@ O kanji 識 significa 'conhecer, discernir, consciência'. Tem a palavra (言) �
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Em もし雨が降ったなら、家にいます, o que o た de 降った indica?'}
+### 1. (recognition) Em もし雨が降ったなら、家にいます, o que o た de 降った indica?
 - **Resposta:** `{"choices": ["Que a chuva já caiu (passado real)", "A suposição assumida como ponto de partida (た gramatical, não temporal)", "Uma ordem para chover", "Uma ação repetida toda vez"], "correct": "A suposição assumida como ponto de partida (た gramatical, não temporal)"}`
-- {'pt-BR': "Em もし〜たなら o た é gramatical, não temporal: marca a condição como algo dado/assumido, como o nosso 'se isso tiver acontecido'. A ação não ocorreu de verdade."}
+- Em もし〜たなら o た é gramatical, não temporal: marca a condição como algo dado/assumido, como o nosso 'se isso tiver acontecido'. A ação não ocorreu de verdade.
 
 
-### 2. (particle_choice) {'pt-BR': "Complete a hipótese 'supondo que isto seja verdade, é um problemão': これが本当＿としたら、大問題だ。"}
+### 2. (particle_choice) Complete a hipótese 'supondo que isto seja verdade, é um problemão': これが本当＿としたら、大問題だ。
 - **Resposta:** `{"choices": ["だ", "の", "を", "に"], "correct": "だ"}`
-- {'pt-BR': 'Com substantivo (本当) ou な-adjetivo, 〜としたら exige o だ antes: 本当だとしたら. Verbos e adjetivos-い entram direto na forma casual.'}
+- Com substantivo (本当) ou な-adjetivo, 〜としたら exige o だ antes: 本当だとしたら. Verbos e adjetivos-い entram direto na forma casual.
 
 
-### 3. (cloze) {'pt-BR': "Complete a hipótese improvável 'se eu ganhasse na loteria, queria comprar uma casa': ＿＿＿宝くじが当たったなら、家を買いたい。"}
+### 3. (cloze) Complete a hipótese improvável 'se eu ganhasse na loteria, queria comprar uma casa': ＿＿＿宝くじが当たったなら、家を買いたい。
 - **Resposta:** `{"text": "もしも", "full": "もしも宝くじが当たったなら、家を買いたい"}`
-- {'pt-BR': "もしも reforça o tom dramático/improvável da suposição. A condição usa o passado simples 当たった + なら. Em português, um único 'se' já traduz os dois も."}
+- もしも reforça o tom dramático/improvável da suposição. A condição usa o passado simples 当たった + なら. Em português, um único 'se' já traduz os dois も.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada forma à sua nuance.'}
+### 4. (matching) Associe cada forma à sua nuance.
 - **Resposta:** `{"pairs": [["〜としたら", "supor algo e puxar a conclusão lógica"], ["もしも〜なら", "hipótese enfática, muitas vezes improvável"], ["もし〜たなら", "suposição marcada pelo た gramatical, tom cuidadoso"]]}`
-- {'pt-BR': "〜としたら foca na consequência ('se for verdade, então...'); もしも〜なら é o 'e se acontecesse' dramático; もし〜たなら usa o た gramatical para enfatizar a suposição."}
+- 〜としたら foca na consequência ('se for verdade, então...'); もしも〜なら é o 'e se acontecesse' dramático; もし〜たなら usa o た gramatical para enfatizar a suposição.
 
 
-### 5. (production) {'pt-BR': "Diga 'Supondo que amanhã seja folga, eu queria viajar' usando 〜としたら (休み = folga, 旅行したい = quero viajar)."}
+### 5. (production) Diga 'Supondo que amanhã seja folga, eu queria viajar' usando 〜としたら (休み = folga, 旅行したい = quero viajar).
 - **Resposta:** `{"text": "明日休みだとしたら、旅行したい", "accept": ["明日休みだとしたら、旅行したい", "明日休みだとしたら旅行したい", "あしたやすみだとしたら、りょこうしたい", "明日休みだとしたら、旅行がしたい"]}`
-- {'pt-BR': "休み é substantivo, então entra o だ: 休みだとしたら ('supondo que seja folga'). A conclusão lógica vem depois: 旅行したい ('queria viajar')."}
+- 休み é substantivo, então entra o だ: 休みだとしたら ('supondo que seja folga'). A conclusão lógica vem depois: 旅行したい ('queria viajar').
 
 

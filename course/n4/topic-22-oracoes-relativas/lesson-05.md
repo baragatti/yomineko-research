@@ -65,6 +65,8 @@ Para praticar "que tipo de...?", aqui vão dois substantivos úteis em katakana:
 - エスカレーター: escada rolante
 Por exemplo: どんなアフリカ料理 = "que tipo de comida africana?".
 
+#### Hora de praticar
+
 #### Leitura
 > 📖 人生とはそんなものさ。ひょっとしたら明日は雨かも。あなたは行ったほうがいい。どんなワインがありますか。 — A vida é assim mesmo. Pode ser que amanhã chova. É melhor você ir. Que tipos de vinho vocês têm?
 - Sei usar そういう + substantivo para dizer "esse tipo de / coisa assim".
@@ -75,33 +77,33 @@ Por exemplo: どんなアフリカ料理 = "que tipo de comida africana?".
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual forma do sistema こ-そ-あ-ど significa "que tipo de...?" (a pergunta)?'}
+### 1. (recognition) Qual forma do sistema こ-そ-あ-ど significa "que tipo de...?" (a pergunta)?
 - **Resposta:** `{"choices": ["こんな", "そんな", "あんな", "どんな"], "correct": "どんな"}`
-- {'pt-BR': 'どんな é a forma interrogativa do sistema: "que tipo de?". As outras três (こんな/そんな/あんな) apontam para algo conhecido, marcando distância.'}
+- どんな é a forma interrogativa do sistema: "que tipo de?". As outras três (こんな/そんな/あんな) apontam para algo conhecido, marcando distância.
 
 
-### 2. (recognition) {'pt-BR': 'Você quer dizer "gente desse tipo" (esse tipo de pessoa). Qual opção está correta?'}
+### 2. (recognition) Você quer dizer "gente desse tipo" (esse tipo de pessoa). Qual opção está correta?
 - **Resposta:** `{"choices": ["そういう人", "そんなに人", "どんな人", "こういうに人"], "correct": "そういう人"}`
-- {'pt-BR': 'そういう vem direto antes do substantivo 人 e o qualifica: "esse tipo de pessoa". そんなに precisa de verbo/adjetivo, não de substantivo.'}
+- そういう vem direto antes do substantivo 人 e o qualifica: "esse tipo de pessoa". そんなに precisa de verbo/adjetivo, não de substantivo.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a forma correta para "Não quero esperar TANTO ASSIM" (antes de verbo): ____待ちたくない。'}
+### 3. (cloze) Complete com a forma correta para "Não quero esperar TANTO ASSIM" (antes de verbo): ____待ちたくない。
 - **Resposta:** `{"text": "そんなに", "full": "そんなに待ちたくない。"}`
-- {'pt-BR': 'Antes de um verbo (待つ), usamos そんなに (com に), no sentido de "tanto assim". そんな sozinho só apareceria antes de substantivo.'}
+- Antes de um verbo (待つ), usamos そんなに (com に), no sentido de "tanto assim". そんな sozinho só apareceria antes de substantivo.
 
 
-### 4. (sentence_build) {'pt-BR': 'Ordene para formar "É exatamente isso."'}
+### 4. (sentence_build) Ordene para formar "É exatamente isso."
 - **Resposta:** `{"order": ["そういう", "こと", "です"], "text": "そういうことです"}`
-- {'pt-BR': 'そういうこと ("esse tipo de coisa / é isso") + です forma a expressão そういうことです, usada para confirmar "é exatamente isso".'}
+- そういうこと ("esse tipo de coisa / é isso") + です forma a expressão そういうことです, usada para confirmar "é exatamente isso".
 
 
-### 5. (production) {'pt-BR': 'Traduza para o japonês: "Não posso pagar tanto assim." (use そんなに e 金 / 出す)'}
+### 5. (production) Traduza para o japonês: "Não posso pagar tanto assim." (use そんなに e 金 / 出す)
 - **Resposta:** `{"text": "そんなに金は出せない", "accept": ["そんなに金は出せない", "そんなにお金は出せない", "そんなに金は出せません", "そんなにお金は出せません"]}`
-- {'pt-BR': 'そんなに ("tanto assim") modifica o verbo 出す na forma potencial negativa 出せない. Frase modelo: そんなに金は出せない。'}
+- そんなに ("tanto assim") modifica o verbo 出す na forma potencial negativa 出せない. Frase modelo: そんなに金は出せない。
 
 
-### 6. (recognition) {'pt-BR': 'Qual é a leitura do kanji 京 em palavras como 東京 (Tóquio)?'}
+### 6. (recognition) Qual é a leitura do kanji 京 em palavras como 東京 (Tóquio)?
 - **Resposta:** `{"choices": ["きょう", "けい", "とう", "みやこ"], "correct": "きょう"}`
-- {'pt-BR': '京 significa "capital" e tem a leitura きょう (kyō), como em 東京 (Tóquio) e 京都 (Quioto).'}
+- 京 significa "capital" e tem a leitura きょう (kyō), como em 東京 (Tóquio) e 京都 (Quioto).
 
 

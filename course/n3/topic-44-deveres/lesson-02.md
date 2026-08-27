@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-beki-da, n3-koto-da, n3-koto-wa-nai] · vocabulário [供給, 共同, 共通, 協力, 寄付, 強調, 急に, 急激, 教師, 教授, 気の毒, 決まり, 疑問, 義務, 行儀, 記念, 議論, 議長] · kanji [命 失 守 落 負 退 非] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-8842279`, `sent:tatoeba-144981`
 
 ---
 
@@ -90,33 +90,33 @@ O kanji 落 ('cair, queda') tem o radical de planta (艹) no topo, como folha qu
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Para dar o conselho geral 'o ideal é se exercitar todo dia', qual forma fecha a frase 毎日運動する＿?"}
+### 1. (recognition) Para dar o conselho geral 'o ideal é se exercitar todo dia', qual forma fecha a frase 毎日運動する＿?
 - **Resposta:** `{"choices": ["ことだ", "ことがない", "はずだ", "だろう"], "correct": "ことだ"}`
-- {'pt-BR': "～ことだ dá conselho ('o ideal é'). ことがない seria experiência ('nunca'), はずだ seria dedução e だろう seria suposição ('deve ser')."}
+- ～ことだ dá conselho ('o ideal é'). ことがない seria experiência ('nunca'), はずだ seria dedução e だろう seria suposição ('deve ser').
 
 
-### 2. (particle_choice) {'pt-BR': "Complete 'não precisa se preocupar tanto': そんなに心配する＿。"}
+### 2. (particle_choice) Complete 'não precisa se preocupar tanto': そんなに心配する＿。
 - **Resposta:** `{"choices": ["ことはない", "ことがない", "べきだ", "ことだ"], "correct": "ことはない"}`
-- {'pt-BR': "～ことはない = 'não precisa, não há por que'. 心配することがない daria 'não costumo me preocupar'; 'nunca me preocupei' exige a forma た: 心配したことがない, べきだ seria 'deveria se preocupar' e ことだ seria o conselho 'o ideal é se preocupar'."}
+- ～ことはない = 'não precisa, não há por que'. 心配することがない daria 'não costumo me preocupar'; 'nunca me preocupei' exige a forma た: 心配したことがない, べきだ seria 'deveria se preocupar' e ことだ seria o conselho 'o ideal é se preocupar'.
 
 
-### 3. (recognition) {'pt-BR': "Qual frase usa o 'deve' de OBRIGAÇÃO MORAL ('a gente deveria cumprir as promessas')?"}
+### 3. (recognition) Qual frase usa o 'deve' de OBRIGAÇÃO MORAL ('a gente deveria cumprir as promessas')?
 - **Resposta:** `{"choices": ["約束は守るべきだ", "約束は守るはずだ", "約束を守ることがない", "約束を守ってごらん"], "correct": "約束は守るべきだ"}`
-- {'pt-BR': "べきだ é o dever moral. 守るはずだ seria dedução ('é de se esperar que cumpra'), 守ることがない seria 'nunca cumpre' e 守ってごらん seria 'experimenta cumprir'."}
+- べきだ é o dever moral. 守るはずだ seria dedução ('é de se esperar que cumpra'), 守ることがない seria 'nunca cumpre' e 守ってごらん seria 'experimenta cumprir'.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada estrutura ao seu sentido.'}
+### 4. (matching) Ligue cada estrutura ao seu sentido.
 - **Resposta:** `{"pairs": [["～ことだ", "o ideal é, o melhor a fazer é"], ["～ことはない", "não precisa, é dispensável"], ["～べきだ", "deveria, é o certo (dever moral)"], ["はずだ", "deve ser (dedução)"]]}`
-- {'pt-BR': "As três da lição orientam alguém; はずだ entra como contraste para você não confundir o 'deve' de dedução com o べきだ de dever moral."}
+- As três da lição orientam alguém; はずだ entra como contraste para você não confundir o 'deve' de dedução com o べきだ de dever moral.
 
 
-### 5. (cloze) {'pt-BR': "Complete 'não se deve mentir' usando a negativa de べきだ: うそをつく＿。"}
+### 5. (cloze) Complete 'não se deve mentir' usando a negativa de べきだ: うそをつく＿。
 - **Resposta:** `{"text": "べきではない", "full": "うそをつくべきではない"}`
-- {'pt-BR': "A negativa de べきだ é べきではない = 'não se deve'. Logo, うそをつくべきではない ('não se deve mentir')."}
+- A negativa de べきだ é べきではない = 'não se deve'. Logo, うそをつくべきではない ('não se deve mentir').
 
 
-### 6. (production) {'pt-BR': "Dê o conselho 'o melhor é não se forçar' usando 無理をする na forma negativa + ことだ."}
+### 6. (production) Dê o conselho 'o melhor é não se forçar' usando 無理をする na forma negativa + ことだ.
 - **Resposta:** `{"text": "無理をしないことだ", "accept": ["無理をしないことだ", "無理しないことだ", "むりをしないことだ", "むりしないことだ"]}`
-- {'pt-BR': "A forma negativa do verbo + ことだ vira conselho de 'não fazer X'. 無理をする ('forçar-se') na negativa é 無理をしない, e com ことだ fica 無理をしないことだ ('o melhor é não se forçar')."}
+- A forma negativa do verbo + ことだ vira conselho de 'não fazer X'. 無理をする ('forçar-se') na negativa é 無理をしない, e com ことだ fica 無理をしないことだ ('o melhor é não se forçar').
 
 

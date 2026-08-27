@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-kawari-ni, n3-koto-wa-ga, n3-kuse-ni] · vocabulário [サービス, 作業, 作法, 婚約, 差別, 座席, 札, 材料, 皿, 誘う, 財産, 賛成, 酒] · kanji [婚 居 払 招 罪 雑] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-152898`, `sent:tatoeba-12146427`
 
 ---
 
@@ -78,33 +78,33 @@ O kanji 招 ('convidar') também tem a mão (扌): a mão que acena chamando alg
 ---
 
 ## Exercícios
-### 1. (cloze) {'pt-BR': "Complete a partícula obrigatória: 'Beber água em vez de saquê' 酒＿代わりに水を飲む。"}
+### 1. (cloze) Complete a partícula obrigatória: 'Beber água em vez de saquê' 酒＿代わりに水を飲む。
 - **Resposta:** `{"text": "の", "full": "酒の代わりに水を飲む"}`
-- {'pt-BR': 'Depois de substantivo, 〜かわりに exige の: 酒の代わりに. Esquecer esse の (dizer 酒代わりに) é a armadilha mais comum para brasileiros.'}
+- Depois de substantivo, 〜かわりに exige の: 酒の代わりに. Esquecer esse の (dizer 酒代わりに) é a armadilha mais comum para brasileiros.
 
 
-### 2. (recognition) {'pt-BR': "Você está falando com seu chefe e quer dizer 'apesar de o senhor estar ocupado, obrigado por vir'. Qual opção é apropriada?"}
+### 2. (recognition) Você está falando com seu chefe e quer dizer 'apesar de o senhor estar ocupado, obrigado por vir'. Qual opção é apropriada?
 - **Resposta:** `{"choices": ["忙しいくせに来てくれてありがとう", "お忙しいのに来てくださってありがとうございます", "忙しいかわりに来てありがとう"], "correct": "お忙しいのに来てくださってありがとうございます"}`
-- {'pt-BR': "くせに carrega crítica e desdém, então é grosseiro com um superior. O 'apesar de' neutro e educado é のに. A terceira opção usa かわりに ('em vez de'), que muda o sentido."}
+- くせに carrega crítica e desdém, então é grosseiro com um superior. O 'apesar de' neutro e educado é のに. A terceira opção usa かわりに ('em vez de'), que muda o sentido.
 
 
-### 3. (particle_choice) {'pt-BR': "Escolha a ligação correta para 'Mesmo sendo rico, é pão-duro' (com desprezo): 金持ち＿＿けちだ。"}
+### 3. (particle_choice) Escolha a ligação correta para 'Mesmo sendo rico, é pão-duro' (com desprezo): 金持ち＿＿けちだ。
 - **Resposta:** `{"choices": ["のくせに", "なくせに", "くせに", "のかわりに"], "correct": "のくせに"}`
-- {'pt-BR': "Substantivo + くせに leva の: 金持ちのくせに. O tom de くせに é justamente o desprezo que combina com 'e ainda por cima é pão-duro'."}
+- Substantivo + くせに leva の: 金持ちのくせに. O tom de くせに é justamente o desprezo que combina com 'e ainda por cima é pão-duro'.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Caro até que é caro, mas é gostoso.' com as peças: [おいしい] [高い] [高いことは] [が]"}
+### 4. (sentence_build) Monte 'Caro até que é caro, mas é gostoso.' com as peças: [おいしい] [高い] [高いことは] [が]
 - **Resposta:** `{"order": ["高いことは", "高い", "が", "おいしい"], "text": "高いことは高いがおいしい"}`
-- {'pt-BR': "A estrutura 〜ことは〜が repete o predicado: 高いことは高い ('caro, caro até que é') + が ('mas') + おいしい. A repetição é obrigatória e é o que dá o tom de concessão suave."}
+- A estrutura 〜ことは〜が repete o predicado: 高いことは高い ('caro, caro até que é') + が ('mas') + おいしい. A repetição é obrigatória e é o que dá o tom de concessão suave.
 
 
-### 5. (matching) {'pt-BR': 'Associe cada estrutura ao seu tom/sentido:'}
+### 5. (matching) Associe cada estrutura ao seu tom/sentido:
 - **Resposta:** `{"pairs": [["〜かわりに", "troca ou compensação (em vez de)"], ["〜くせに", "apesar de, com crítica/desdém"], ["〜ことは〜が", "concessão suave (até que é, mas)"], ["のに", "apesar de, neutro"]]}`
-- {'pt-BR': "かわりに é substituição; くせに concede mas julga negativamente; 〜ことは〜が admite a parte boa antes do 'mas'; のに é o 'apesar de' neutro, sem carga emocional."}
+- かわりに é substituição; くせに concede mas julga negativamente; 〜ことは〜が admite a parte boa antes do 'mas'; のに é o 'apesar de' neutro, sem carga emocional.
 
 
-### 6. (production) {'pt-BR': "Diga 'Vou eu no lugar do diretor.' usando 〜かわりに. (diretor = 社長, eu = 私, ir = 行きます)"}
-- **Resposta:** `{"text": "社長の代わりに私が行きます", "accept": ["しゃちょうのかわりにわたしがいきます", "社長のかわりに私が行きます", "社長の代わりに私が行く"]}`
-- {'pt-BR': "社長 (substantivo) + の代わりに ('no lugar de') + 私が行きます. Lembre-se do の obrigatório depois do substantivo e de manter o verbo no fim da frase."}
+### 6. (production) Diga 'Vou eu no lugar do diretor.' usando 〜かわりに. (diretor = 社長, eu = 私, ir = 行きます)
+- **Resposta:** `{"text": "社長の代わりに私が行きます", "accept": ["社長の代わりに私が行きます", "しゃちょうのかわりにわたしがいきます", "社長のかわりに私が行きます", "社長の代わりに私が行く"]}`
+- 社長 (substantivo) + の代わりに ('no lugar de') + 私が行きます. Lembre-se do の obrigatório depois do substantivo e de manter o verbo no fim da frase.
 
 

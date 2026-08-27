@@ -66,28 +66,28 @@ Quase toda palavra com 通 carrega a ideia de 'algo que passa': 通過 (passar p
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'poupança, economias'?"}
+### 1. (recognition) Qual palavra significa 'poupança, economias'?
 - **Resposta:** `{"choices": ["貯金", "調査", "長期", "著者"], "correct": "貯金"}`
-- {'pt-BR': "貯金 (ちょきん) é 'poupança'. 調査 é 'pesquisa', 長期 é 'longo prazo' e 著者 é 'autor'."}
+- 貯金 (ちょきん) é 'poupança'. 調査 é 'pesquisa', 長期 é 'longo prazo' e 著者 é 'autor'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada composto com 通 ao seu sentido.'}
+### 2. (matching) Ligue cada composto com 通 ao seu sentido.
 - **Resposta:** `{"pairs": [["通過", "passar por (sem parar)"], ["通学", "trajeto até a escola"], ["通行", "tráfego, circulação"], ["通信", "comunicação"]]}`
-- {'pt-BR': 'Todos vêm de 通 (passar): 通過, 通学, 通行 e 通信 mantêm essa ideia central.'}
+- Todos vêm de 通 (passar): 通過, 通学, 通行 e 通信 mantêm essa ideia central.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'Finalmente cheguei ao cume': ＿＿頂上に到着した。"}
+### 3. (cloze) Complete 'Finalmente cheguei ao cume': ＿＿頂上に到着した。
 - **Resposta:** `{"text": "遂に", "full": "遂に頂上に到着した。"}`
-- {'pt-BR': "遂に (ついに) marca 'finalmente, por fim', depois de muito esforço ou espera."}
+- 遂に (ついに) marca 'finalmente, por fim', depois de muito esforço ou espera.
 
 
-### 4. (recognition) {'pt-BR': "Você quer dizer que sua saúde 'está boa'. Qual palavra completa 体の＿＿がいい?"}
+### 4. (recognition) Você quer dizer que sua saúde 'está boa'. Qual palavra completa 体の＿＿がいい?
 - **Resposta:** `{"choices": ["調子", "調査", "中心", "注文"], "correct": "調子"}`
-- {'pt-BR': "体の調子がいい significa 'estou em boa forma'. 調査 é 'pesquisa', 中心 é 'centro' e 注文 é 'pedido'."}
+- 体の調子がいい significa 'estou em boa forma'. 調査 é 'pesquisa', 中心 é 'centro' e 注文 é 'pedido'.
 
 
-### 5. (production) {'pt-BR': "Diga 'O trem passou pela estação' usando 通過 (trem = 電車, estação = 駅)."}
+### 5. (production) Diga 'O trem passou pela estação' usando 通過 (trem = 電車, estação = 駅).
 - **Resposta:** `{"text": "電車が駅を通過した。", "accept": ["電車が駅を通過した", "電車が駅を通過しました。", "電車が駅を通過しました", "電車が駅を通過した。"]}`
-- {'pt-BR': "通過する significa 'passar por sem parar'; o lugar por onde se passa leva を (駅を通過する)."}
+- 通過する significa 'passar por sem parar'; o lugar por onde se passa leva を (駅を通過する).
 
 

@@ -72,7 +72,7 @@ def _lesson_level(con, lesson_id) -> str | None:
     return _LEVEL_OF_LESSON.get(lesson_id)
 
 
-def _deref(con, ref: str, lesson_id=None) -> str:
+def _deref(con, ref: str, lesson_id=None, where: str = "unlock") -> str:
     """Rewrite a courseware ref to the published address of the record it names.
 
     Two input forms exist and both are storage artefacts rather than addresses: `vocab:1421` is a row
@@ -92,7 +92,7 @@ def _deref(con, ref: str, lesson_id=None) -> str:
         return f"{ns}:{val}" if val else ref
     if ns == "vocab":
         level = _lesson_level(con, lesson_id) if lesson_id else None   # also fills _LESSON_SLUG
-        slug, _how = _identity(con).resolve(ident, level, _LESSON_SLUG.get(lesson_id))
+        slug, _how = _identity(con).resolve(ident, level, _LESSON_SLUG.get(lesson_id), where)
         return slug or ref
     return ref  # kanji:<character> is already the published address
 
@@ -110,13 +110,14 @@ _CUM_KEYS = ("kana-family", "vocab", "kanji", "grammar", "conjugation-form", "ph
 def _cumulative(con) -> dict:
     """cumulative_known_set per lesson, recomputed here rather than read from the index.
 
-    It is by definition the union of every unlock up to and including the lesson, in course order —
-    that is what ingest/load_lessons.py:recompute_cumulative writes. Deriving it at export time instead
-    of trusting the stored copy does two things. It picks up unlock edits made after the last recompute
-    (97 of 322 lessons had a stored set that still listed refs their unlocks no longer contain), and it
-    means the refs land here already dereferenced to slugs, so `cumulative_known_set` speaks the same
-    identity as `unlocks` instead of a parallel headword vocabulary that cannot be resolved to one
-    record. No headword is guessed at: the unlock row ids map 1:1 onto slugs.
+    It is by definition the union of every unlock up to and including the lesson, in course order --
+    that is what ingest/load_lessons.py:recompute_cumulative writes. Deriving it at export time makes
+    cumulative_known_set speak the same slug identity as `unlocks`. (An earlier docstring claimed the
+    stored DB copy was stale in 97 lessons; an independent audit refuted that -- the stored copy was
+    consistent with its unlocks. What the derivation actually changed is that headword-level
+    de-duplication in the old export collapsed homograph siblings, hiding up to 28 records; deriving
+    in slug space keeps them distinct.) Note the refs pass through the same resolver as unlocks, so a
+    headword ref here is resolved -- and possibly queued for review -- exactly once per lesson.
     """
     if _CUM:
         return _CUM
@@ -144,9 +145,13 @@ def _deref_body(con, body: str, lesson_id=None) -> str:
     """
     if not body:
         return body
+    # `ref=` on <vocab>/<kanji> chips AND `item-ref=` on <check>/<flashcard> rows: the first
+    # migration only rewrote the former, which left 80 checklist rows speaking the retired headword
+    # scheme while the chips beside them spoke slugs. Any attribute carrying a vocab:/kanji: value is
+    # an address and gets the same treatment.
     return _re.sub(
-        r'(<(?:vocab|kanji) ref=")((?:vocab|kanji):[^"]+)(")',
-        lambda m: m.group(1) + _deref(con, m.group(2), lesson_id) + m.group(3), body)
+        r'((?:ref|item-ref)=")((?:vocab|kanji):[^"]+)(")',
+        lambda m: m.group(1) + _deref(con, m.group(2), lesson_id, where="body") + m.group(3), body)
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -228,6 +233,10 @@ class _Flatten(HTMLParser):
     def handle_data(self, data):
         if data.strip():
             self.buf.append(data)
+        elif data and self.buf and not self.buf[-1].endswith(" "):
+            # A space-only <text> node is a word boundary; dropping it ran words together in 21
+            # generated .md files ("nao substitui" + "にとって" fused).
+            self.buf.append(" ")
 
     def result(self):
         self._flush()
@@ -273,12 +282,23 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         d.mkdir(parents=True, exist_ok=True)
         unlocks = [{"type": u[0], "ref": _deref(con, u[1], L["id"])} for u in con.execute(
             "SELECT unlock_type, ref FROM lesson_unlocks WHERE lesson_id=? ORDER BY unlock_type, ref", (L["id"],))]
+        # Two source refs resolving to one record means the disambiguator collided with an explicit
+        # sibling ref -- the defect that once dropped both siblings of a homograph pair from the
+        # course. Fail the export loudly rather than shipping a duplicate unlock.
+        _pairs = [(u["type"], u["ref"]) for u in unlocks]
+        if len(_pairs) != len(set(_pairs)):
+            _dups = sorted({x for x in _pairs if _pairs.count(x) > 1})
+            raise SystemExit(f"duplicate unlock ref(s) in {L['slug']}: {_dups} -- "
+                             f"two source refs resolved to the same record")
         needs = [{"type": u[0], "ref": u[1]} for u in con.execute(
             "SELECT need_type, ref FROM lesson_needs WHERE lesson_id=? ORDER BY need_type, ref", (L["id"],))]
         feature_unlocks = [u["ref"] for u in unlocks if u["type"] == "feature"]
-        srefs = [r[0] for r in con.execute(
-            "SELECT s.slug FROM lesson_sentence ls JOIN sentence s ON s.id=ls.sentence_id "
-            "WHERE ls.lesson_id=?", (L["id"],))]
+        # sentence_refs is a MANIFEST of what the lesson displays, so it is derived from the
+        # body, not from the lesson_sentence staging table: N3's 96 rendered sentences had no rows
+        # there, and one N4 lesson declared a sentence its body never shows. Computed after
+        # _deref_body so the refs are final.
+        _body = _deref_body(con, get_text(con, "lesson", L["id"], "body"), L["id"])
+        srefs = list(dict.fromkeys(_re.findall(r'<sentence ref="([^"]+)"', _body or "")))
         exercises = []
         for e in con.execute("SELECT * FROM exercise WHERE lesson_id=? ORDER BY ord", (L["id"],)):
             erefs = [r[0] for r in con.execute(
@@ -292,7 +312,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
         title = get_text(con, "lesson", L["id"], "title")
         description = get_text(con, "lesson", L["id"], "description")
         objectives = get_text(con, "lesson", L["id"], "objectives") or []
-        body = _deref_body(con, get_text(con, "lesson", L["id"], "body"), L["id"])
+        body = _body
         cks = _cumulative(con)[L["id"]]
         rec = {
             "id": L["slug"], "schema_version": "1.0", "level": L["level"], "topic": L["tslug"],
@@ -327,9 +347,10 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
                "**Frases (por ID, do banco dissecado):** " + (", ".join(f"`{s}`" for s in srefs) or "—"),
                "", "---", "", flatten_body(con, body), "", "---", "", "## Exercícios"]
         for i, ex in enumerate(exercises, 1):
-            md += [f"### {i}. ({ex['type']}) {ex['prompt']}",
+            # The .md is the human-review view: show the pt-BR text, not the locale-object repr.
+            md += [f"### {i}. ({ex['type']}) {ex['prompt'].get(LOC) or ''}",
                    f"- **Resposta:** `{json.dumps(ex['answer'], ensure_ascii=False)}`",
-                   f"- {ex['explanation']}",
+                   f"- {ex['explanation'].get(LOC) or ''}",
                    (f"- frases: {', '.join('`'+s+'`' for s in ex['sentence_refs'])}"
                     if ex["sentence_refs"] else ""), ""]
         (d / f"lesson-{L['ord']:02d}.md").write_text("\n".join(md) + "\n", encoding="utf-8")
@@ -340,6 +361,37 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
 def _topic_dir(tslug: str, tord: int) -> str:
     tail = tslug.split(":", 1)[1].replace("pre-n5-", "").replace("n5-", "").replace("n4-", "").replace("n3-", "")
     return f"topic-{tord:02d}-{tail}"
+
+
+def _sync_outline_with_lessons(con, outline, stubs) -> None:
+    """Make the published topic summaries a statement about the LESSONS, not about the placement pass.
+
+    `counts`, `introduces` and `introduces_refs` were computed from vocab.introducing_topic_id -- the
+    P4 placement -- while the numbers a reader actually wants describe what the topic's lessons unlock.
+    The two views disagreed in 33 of 52 topics (top:n5-kanji-exame declared 0 kanji and teaches 23),
+    and introduces_refs carried pre-migration disambiguation picks. Deriving from the stubs makes
+    course.json's unlocks_summary, outline.json and the INDEX tables agree with the leaves by
+    construction. Topics without authored lessons keep their placement-derived preview.
+    """
+    for mod in outline:
+        for t in mod["topics"]:
+            lst = sorted(stubs.get(t["slug"], []), key=lambda x: x["order"])
+            if not lst:
+                continue
+            refs = {"vocab": [], "kanji": [], "grammar": []}
+            for stub in lst:
+                for u in stub.get("unlocks", []):
+                    if u["type"] in refs:
+                        refs[u["type"]].append(u["ref"])
+            for k in refs:
+                refs[k] = list(dict.fromkeys(refs[k]))
+            t["counts"] = {k: len(v) for k, v in refs.items()}
+            t["introduces"] = {
+                "vocab": [_label(con, r) for r in refs["vocab"]],
+                "kanji": [r.split(":", 1)[1] for r in refs["kanji"]],
+                "grammar": [r.split(":", 1)[1] for r in refs["grammar"]],
+            }
+            t["introduces_refs"] = dict(refs)
 
 
 def export_manifest(con, outline, stubs) -> None:
@@ -417,6 +469,11 @@ def main() -> int:
         outline.append(mod)
 
     COURSE.mkdir(parents=True, exist_ok=True)
+    # Lessons are exported FIRST so the outline, the per-level INDEX tables and unlocks_summary can be
+    # recomputed from what the lessons actually unlock (see _sync_outline_with_lessons).
+    stubs: dict = {}
+    nles = export_lessons(con, stubs)
+    _sync_outline_with_lessons(con, outline, stubs)
     (COURSE / "outline.json").write_text(json.dumps(outline, ensure_ascii=False, indent=2) + "\n",
                                          encoding="utf-8")
     # per-module readable index
@@ -462,8 +519,6 @@ def main() -> int:
         t = tot[mod["level"]]
         lines.append(f"| {mod['title']} ({mod['level']}) | {n} | {t['vocab']} | {t['kanji']} | {t['grammar']} |")
     (COURSE / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-    stubs: dict = {}
-    nles = export_lessons(con, stubs)
     export_manifest(con, outline, stubs)
 
     # Publish whatever the headword->slug resolution could not settle on evidence alone. This is a
@@ -471,25 +526,24 @@ def main() -> int:
     # has to look at, so it gets a file rather than a line of console output that scrolls away.
     ident = _IDENT
     if ident is not None and ident.review:
-        rows = sorted(ident.review, key=lambda r: (r["how"] != "unresolved", r["headword"]))
-        seen_hw, deduped = set(), []
-        for r in rows:
-            if r["headword"] in seen_hw:
-                continue
-            seen_hw.add(r["headword"])
-            deduped.append(r)
+        # One row per (headword, lesson): the decision is per-lesson, and the first version of
+        # this file deduplicated by headword alone, publishing 20 rows for 38 distinct decisions.
+        deduped = sorted(ident.review,
+                         key=lambda r: (r["how"] != "unresolved", r["headword"], r["lesson"] or ""))
         (COURSE / "vocab_disambiguation_review.json").write_text(
             json.dumps({"generated": _dt_today,
                         "why": "Lessons address vocabulary by headword; these headwords name more "
-                               "than one record and the lesson's level did not single one out. "
-                               "`how` says what decided it: 'frequency' used the sentence bank, "
-                               "'unresolved' had nothing to go on and took the lowest JMdict entry. "
-                               "Both need a teacher to confirm which sense the lesson teaches.",
+                               "than one record and no stored evidence (sibling ref, lesson level, "
+                               "introducing topic) singled one out. Each row is ONE lesson's "
+                               "decision; `affects` says where the ref occurs (unlock and/or body). "
+                               "'frequency' rows were settled by sentence-bank reading counts; "
+                               "'unresolved' rows had nothing to go on and took the lowest JMdict "
+                               "entry. Both need a teacher to confirm the sense the lesson teaches.",
                         "count": len(deduped), "items": deduped},
                        ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         nfreq = sum(1 for r in deduped if r["how"] == "frequency")
-        print(f"vocab disambiguation: {len(deduped)} headword(s) needed more than the lesson level "
-              f"({nfreq} settled by corpus frequency, {len(deduped) - nfreq} await a teacher) "
+        print(f"vocab disambiguation: {len(deduped)} (headword, lesson) decision(s) needed a guess "
+              f"({nfreq} by corpus frequency, {len(deduped) - nfreq} await a teacher) "
               f"-> course/vocab_disambiguation_review.json")
     con.close()
     print(f"exported outline: {sum(len(m['topics']) for m in outline)} topics, {nles} lessons, "

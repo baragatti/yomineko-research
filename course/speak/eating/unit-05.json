@@ -4,7 +4,7 @@
   "stage": "speak:eating",
   "order": 5,
   "title": {
-    "pt-BR": "Comer e beber fora — parte 5"
+    "pt-BR": "Comer e beber fora, parte 5"
   },
   "say_now": [
     "sent:tatoeba-187939",
@@ -30,7 +30,7 @@
   ],
   "patterns": [
     "gram:ga-hoshii",
-    "gram:n3-dakedo"
+    "gram:gp-25"
   ],
   "kanji_recognition": [
     "何",
@@ -53,6 +53,96 @@
   "cumulative_known_vocab": 132,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-116",
+    "gram:gp-88",
+    "gram:gp-94",
+    "gram:owaru"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:ga-hoshii",
+      "examples": [
+        "sent:tatoeba-1484951",
+        "sent:tatoeba-13126478",
+        "sent:tatoeba-1213043"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-25",
+      "examples": [
+        "sent:tatoeba-229345",
+        "sent:tatoeba-8575514",
+        "sent:tatoeba-8575496"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "No ano passado eu plantei tomates, e ficaram muito gostosos.",
+      "answer_key": "去年トマトを作ったがとてもおいしかった。",
+      "accepted_variants": [
+        "きょねんとまとをつくったがとてもおいしかった",
+        "きょねんとまとをつくったがとてもおいしかった。",
+        "去年トマトを作ったがとてもおいしかった",
+        "去年トマトを作ったがとてもおいしかった。"
+      ],
+      "sentence": "sent:tatoeba-182254",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A gente comeu com gosto a comida que minha mãe fez.",
+      "answer_key": "母が作ってくれた食事をおいしく食べた。",
+      "accepted_variants": [
+        "ははがつくってくれたしょくじをおいしくたべた",
+        "ははがつくってくれたしょくじをおいしくたべた。",
+        "母が作ってくれた食事をおいしく食べた",
+        "母が作ってくれた食事をおいしく食べた。"
+      ],
+      "sentence": "sent:tatoeba-83169",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Produção sob encomenda é fabricar só depois de receber o pedido.",
+      "answer_key": "注文を受けてから作るのが受注生産です。",
+      "accepted_variants": [
+        "ちゅうもんをうけてからつくるのがじゅちゅうせいさんです",
+        "ちゅうもんをうけてからつくるのがじゅちゅうせいさんです。",
+        "注文を受けてから作るのが受注生産です",
+        "注文を受けてから作るのが受注生産です。"
+      ],
+      "sentence": "sent:tatoeba-13440729",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-10617667",
+      "sent:tatoeba-179391",
+      "sent:tatoeba-5329",
+      "sent:tatoeba-2633467",
+      "sent:tatoeba-10657609",
+      "sent:tatoeba-226845"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 20,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:3448",
@@ -104,89 +194,5 @@
         "別"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-116",
-    "gram:gp-88",
-    "gram:gp-94",
-    "gram:owaru"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:ga-hoshii",
-      "examples": [
-        "sent:tatoeba-1484951",
-        "sent:tatoeba-13126478",
-        "sent:tatoeba-1213043"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-dakedo",
-      "examples": [
-        "sent:tatoeba-3366905",
-        "sent:tatoeba-8575497",
-        "sent:tatoeba-171648"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "No ano passado eu plantei tomates, e ficaram muito gostosos.",
-      "answer_key": "去年トマトを作ったがとてもおいしかった。",
-      "accepted_variants": [
-        "去年トマトを作ったがとてもおいしかった",
-        "去年トマトを作ったがとてもおいしかった。"
-      ],
-      "sentence": "sent:tatoeba-182254",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "A gente comeu com gosto a comida que minha mãe fez.",
-      "answer_key": "母が作ってくれた食事をおいしく食べた。",
-      "accepted_variants": [
-        "母が作ってくれた食事をおいしく食べた",
-        "母が作ってくれた食事をおいしく食べた。"
-      ],
-      "sentence": "sent:tatoeba-83169",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Produção sob encomenda é fabricar só depois de receber o pedido.",
-      "answer_key": "注文を受けてから作るのが受注生産です。",
-      "accepted_variants": [
-        "注文を受けてから作るのが受注生産です",
-        "注文を受けてから作るのが受注生産です。"
-      ],
-      "sentence": "sent:tatoeba-13440729",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
-    "items": [
-      "sent:tatoeba-10617667",
-      "sent:tatoeba-179391",
-      "sent:tatoeba-5329",
-      "sent:tatoeba-2633467",
-      "sent:tatoeba-10657609",
-      "sent:tatoeba-226845"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 26,
-    "fluency": 6
-  }
+  ]
 }

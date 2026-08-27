@@ -4,7 +4,7 @@
   "stage": "speak:politeness",
   "order": 2,
   "title": {
-    "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 2"
+    "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 2"
   },
   "say_now": [
     "sent:tatoeba-146189",
@@ -57,63 +57,6 @@
   "cumulative_known_vocab": 471,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3408",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3408:1276",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "近く",
-        "入院",
-        "見る"
-      ]
-    },
-    {
-      "id": "cf:n4:1274:1021",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "終わり",
-        "手ごろ",
-        "迎える"
-      ]
-    },
-    {
-      "id": "kr:n4:1016",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "らいねん",
-        "なるべく",
-        "もくてき"
-      ]
-    },
-    {
-      "id": "kr:n4:1021",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かかり",
-        "かりる",
-        "じぶん"
-      ]
-    },
-    {
-      "id": "pp:n4:717",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "為さる",
-        "真っ暗",
-        "入れる"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -176,6 +119,8 @@
       "prompt_pt": "Não deixe de me escrever, viu?",
       "answer_key": "きっと手紙くださいね。",
       "accepted_variants": [
+        "きっとてがみくださいね",
+        "きっとてがみくださいね。",
         "きっと手紙くださいね",
         "きっと手紙くださいね。"
       ],
@@ -186,6 +131,8 @@
       "prompt_pt": "Fale mais devagar, por favor!",
       "answer_key": "もっとゆっくり話してください！",
       "accepted_variants": [
+        "もっとゆっくりはなしてください",
+        "もっとゆっくりはなしてください!",
         "もっとゆっくり話してください",
         "もっとゆっくり話してください！"
       ],
@@ -196,6 +143,8 @@
       "prompt_pt": "Você poderia escrever isso, por favor?",
       "answer_key": "書いてくださいますか。",
       "accepted_variants": [
+        "かいてくださいますか",
+        "かいてくださいますか。",
         "書いてくださいますか",
         "書いてくださいますか。"
       ],
@@ -218,15 +167,72 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 34,
+    "language-focused": 28,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3408",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3408:1276",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "近く",
+        "入院",
+        "見る"
+      ]
+    },
+    {
+      "id": "cf:n4:1274:1021",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "終わり",
+        "手ごろ",
+        "迎える"
+      ]
+    },
+    {
+      "id": "kr:n4:1016",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "らいねん",
+        "なるべく",
+        "もくてき"
+      ]
+    },
+    {
+      "id": "kr:n4:1021",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かかり",
+        "かりる",
+        "じぶん"
+      ]
+    },
+    {
+      "id": "pp:n4:717",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "為さる",
+        "真っ暗",
+        "入れる"
+      ]
+    }
+  ]
 }

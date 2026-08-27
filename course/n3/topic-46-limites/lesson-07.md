@@ -70,28 +70,28 @@ Repare no contraste sonoro entre 正に (まさに, "exatamente") e 真逆 (ま�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa "criança (ou pessoa) perdida"?'}
+### 1. (recognition) Qual palavra significa "criança (ou pessoa) perdida"?
 - **Resposta:** `{"choices": ["迷子", "本人", "孫", "堀"], "correct": "迷子"}`
-- {'pt-BR': '迷子 (まいご) é a pessoa que se perdeu; 本人 é a própria pessoa, 孫 é neto e 堀 é fosso.'}
+- 迷子 (まいご) é a pessoa que se perdeu; 本人 é a própria pessoa, 孫 é neto e 堀 é fosso.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["本物", "coisa de verdade"], ["任せる", "delegar a alguém"], ["増す", "aumentar"], ["貧しい", "pobre"]]}`
-- {'pt-BR': '本物 = genuíno, 任せる = deixar nas mãos de alguém, 増す = crescer em quantidade, 貧しい = necessitado.'}
+- 本物 = genuíno, 任せる = deixar nas mãos de alguém, 増す = crescer em quantidade, 貧しい = necessitado.
 
 
-### 3. (cloze) {'pt-BR': 'Complete "É exatamente isso mesmo": ＿＿その通りです。'}
+### 3. (cloze) Complete "É exatamente isso mesmo": ＿＿その通りです。
 - **Resposta:** `{"text": "正に", "full": "正にその通りです。"}`
-- {'pt-BR': '正に (まさに) significa "exatamente, precisamente" e reforça que algo está perfeitamente certo.'}
+- 正に (まさに) significa "exatamente, precisamente" e reforça que algo está perfeitamente certo.
 
 
-### 4. (recognition) {'pt-BR': 'Você ouve uma notícia chocante e quer dizer "Não acredito! / De jeito nenhum!". Qual palavra usar?'}
+### 4. (recognition) Você ouve uma notícia chocante e quer dizer "Não acredito! / De jeito nenhum!". Qual palavra usar?
 - **Resposta:** `{"choices": ["真逆", "正に", "まあ", "ぼんやり"], "correct": "真逆"}`
-- {'pt-BR': '真逆 (まさか) expressa descrença diante do inesperado; 正に é "exatamente", まあ é "calma" e ぼんやり é "vagamente".'}
+- 真逆 (まさか) expressa descrença diante do inesperado; 正に é "exatamente", まあ é "calma" e ぼんやり é "vagamente".
 
 
-### 5. (production) {'pt-BR': 'Diga "Esse trabalho eu deixo nas suas mãos" usando 任せる (君 = você, この仕事 = esse trabalho).'}
+### 5. (production) Diga "Esse trabalho eu deixo nas suas mãos" usando 任せる (君 = você, この仕事 = esse trabalho).
 - **Resposta:** `{"text": "この仕事は君に任せる", "accept": ["この仕事は君に任せる。", "この仕事は君に任せます", "この仕事は君に任せます。", "この仕事はあなたに任せる", "この仕事はあなたに任せます"]}`
-- {'pt-BR': '任せる (まかせる) pede a pessoa a quem se confia marcada por に (君に), e o que se delega vem antes (この仕事は).'}
+- 任せる (まかせる) pede a pessoa a quem se confia marcada por に (君に), e o que se delega vem antes (この仕事は).
 
 

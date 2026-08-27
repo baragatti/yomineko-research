@@ -45,23 +45,23 @@ Agora você consegue ler palavrinhas inteiras:たこ(tako, polvo),いと(ito, li
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'tsu'?"}
+### 1. (recognition) Qual hiragana representa o som 'tsu'?
 - **Resposta:** `{"choices": ["つ", "す", "ち"], "correct": "つ"}`
-- {'pt-BR': "つ = tsu (um 'ts' rápido seguido de u, nunca 'su' ou 'tu')."}
+- つ = tsu (um 'ts' rápido seguido de u, nunca 'su' ou 'tu').
 
 
-### 2. (recognition) {'pt-BR': 'Como se lê ち?'}
+### 2. (recognition) Como se lê ち?
 - **Resposta:** `{"choices": ["chi", "ti", "shi"], "correct": "chi"}`
-- {'pt-BR': 'ち = chi, o "ti" de "tia" com aquele leve "tch"; a maioria dos brasileiros já fala assim.'}
+- ち = chi, o "ti" de "tia" com aquele leve "tch"; a maioria dos brasileiros já fala assim.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
+### 3. (matching) Ligue cada hiragana ao seu som.
 - **Resposta:** `{"pairs": [["た", "ta"], ["ち", "chi"], ["つ", "tsu"], ["て", "te"], ["と", "to"]]}`
-- {'pt-BR': 'Os cinco kana da Família do TA, com chi e tsu irregulares.'}
+- Os cinco kana da Família do TA, com chi e tsu irregulares.
 
 
-### 4. (production) {'pt-BR': "Escreva o hiragana do som 'te'."}
+### 4. (production) Escreva o hiragana do som 'te'.
 - **Resposta:** `{"text": "て", "accept": ["て"]}`
-- {'pt-BR': "'te' = て."}
+- 'te' = て.
 
 

@@ -58,7 +58,7 @@ sections enter a paper only once their items have audio.
    feel fresh — the anti-memorization requirement.
 3. **Option shuffle:** per attempt, shuffle [correct + 3 distractors] with the attempt seed. For
    sentence_order, shuffle `pieces` (reshuffle if identity order).
-4. **Real-first:** items carry an `ai` flag (0 = real bank sentence). Prefer `ai=0` when a section has enough;
+4. **Real-first:** items carry an explicit `ai_generated` boolean (false = real bank sentence). Prefer `ai_generated=false` when a section has enough;
    verified-generated items (§9-gated, needs_review) fill the rest.
 5. **Seeded:** seed = (userId, level, attemptNo) → reproducible papers for support/review.
 6. **Scoring:** 1 point/item; section + total percentages; per-type breakdown feeds the capability tracker

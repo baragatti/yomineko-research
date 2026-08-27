@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-bakari, n3-dake-shika, n3-shika-nai] · vocabulário [券, 喧嘩, 月曜, 欠席, 欠点, 欠陥, 決定, 決心, 煙, 県, 結局, 結論, 見解, 限界] · kanji [危 因 存 完 苦 除] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-4793305`, `sent:tatoeba-160740`
 
 ---
 
@@ -86,28 +86,28 @@ Resolva os exercícios e leia a explicação de cada resposta.
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': '財布の中に千円___ない。困った。(Só tenho mil ienes na carteira. Que problema.)'}
+### 1. (particle_choice) 財布の中に千円___ない。困った。(Só tenho mil ienes na carteira. Que problema.)
 - **Resposta:** `{"choices": ["しか", "だけ", "ばかり", "くらい"], "correct": "しか"}`
-- {'pt-BR': "しか + verbo negativo (ない) expressa quantidade limitada: 'só tem mil ienes'. Note que o verbo fica na negativa mas o sentido é 'só'."}
+- しか + verbo negativo (ない) expressa quantidade limitada: 'só tem mil ienes'. Note que o verbo fica na negativa mas o sentido é 'só'.
 
 
-### 2. (recognition) {'pt-BR': "Qual frase tem tom de CRÍTICA ao excesso ('vive só fazendo isso')?"}
+### 2. (recognition) Qual frase tem tom de CRÍTICA ao excesso ('vive só fazendo isso')?
 - **Resposta:** `{"choices": ["弟はゲームばかりしている", "弟はゲームしかしない", "弟はゲームだけしかしない", "弟はゲームをするしかない"], "correct": "弟はゲームばかりしている"}`
-- {'pt-BR': "ばかり ligado direto ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação: 'vive só jogando'. As outras enfatizam escassez ou falta de opção, não excesso."}
+- ばかり ligado direto ao substantivo (ゲームばかり) sugere repetição incômoda e reprovação: 'vive só jogando'. As outras enfatizam escassez ou falta de opção, não excesso.
 
 
-### 3. (cloze) {'pt-BR': 'Complete pondo o verbo na NEGATIVA: 一時間だけしか勉強___。(Só consegui estudar uma horinha.)'}
-- **Resposta:** `{"text": "一時間だけしか勉強___", "full": "一時間だけしか勉強できなかった"}`
-- {'pt-BR': "だけしか sempre exige verbo negativo. 'Conseguir estudar' no passado negativo é 勉強できなかった. Esquecer a negativa é o erro mais comum."}
+### 3. (cloze) Complete pondo o verbo na NEGATIVA: 一時間だけしか勉強___。(Só consegui estudar uma horinha.)
+- **Resposta:** `{"text": "できなかった", "full": "一時間だけしか勉強できなかった"}`
+- だけしか sempre exige verbo negativo. 'Conseguir estudar' no passado negativo é 勉強できなかった. Esquecer a negativa é o erro mais comum.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu sentido.'}
+### 4. (matching) Associe cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["限界", "limite"], ["欠席", "falta / ausência"], ["結論", "conclusão"], ["喧嘩", "briga / bate-boca"]]}`
-- {'pt-BR': '限界 = limite; 欠席 = falta (ausência); 結論 = conclusão (de um argumento); 喧嘩 = briga. Todos são substantivos comuns no tema de limites e conflito.'}
+- 限界 = limite; 欠席 = falta (ausência); 結論 = conclusão (de um argumento); 喧嘩 = briga. Todos são substantivos comuns no tema de limites e conflito.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Como não tem trem, não resta outra senão ir a pé.' (use 電車がない e 歩く + しかない)."}
+### 5. (production) Escreva em japonês: 'Como não tem trem, não resta outra senão ir a pé.' (use 電車がない e 歩く + しかない).
 - **Resposta:** `{"text": "電車がないから歩くしかない", "accept": ["電車がないので歩くしかない", "電車がないから歩くしかないです", "電車がないから、歩くしかない"]}`
-- {'pt-BR': "Verbo dicionário + しかない transmite resignação ('não há outro jeito senão'). 歩くしかない = 'não resta outra senão ir a pé'."}
+- Verbo dicionário + しかない transmite resignação ('não há outro jeito senão'). 歩くしかない = 'não resta outra senão ir a pé'.
 
 

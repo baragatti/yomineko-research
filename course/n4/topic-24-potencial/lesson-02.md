@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [koto-ga-dekiru] · vocabulário [世界, 事務所, 住所, 倍, 場合, 客, 小学校, 戦争, 文法, 昔, 準備, 線, 美術館, 連絡, 飛行場] · kanji [世 家 教 文 界] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-155347`, `sent:tatoeba-158699`, `sent:tatoeba-8795030`, `sent:tatoeba-155872`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-155347`, `sent:tatoeba-158699`, `sent:tatoeba-155872`, `sent:tatoeba-8795030`
 
 ---
 
@@ -19,7 +19,7 @@ Na lição anterior você aprendeu a transformar o verbo na forma potencial (〜
 
 #### Como se monta
 A receita é sempre a mesma: pegue o verbo na forma de dicionário e acrescente o bloco fixo ことができる. Ele é formado por três peças que sempre andam juntas, nesta ordem:
-Molde: [verbo no dicionário] ことができる
+Molde: [verbo no dicionário] こと が できる
 Vale a pena saber o que cada peça faz. O こと é um substantivo que quer dizer "coisa, ato"; ele transforma o verbo em "o ato de…". A partícula が marca esse ato como o assunto da frase. Por fim, できる significa "ser possível / conseguir". Junto, fica "o ato de fazer X é possível", ou seja, "consigo fazer X".
 - 走る (correr) → 走ることができる = "consigo correr".
 - 休む (descansar) → 休むことができる = "consigo descansar".
@@ -90,28 +90,28 @@ Não confunda 世界 ("mundo", せかい) com 線 ("linha", せん): começam co
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual peça liga o verbo no dicionário a できる para formar 'conseguir fazer'?"}
+### 1. (recognition) Qual peça liga o verbo no dicionário a できる para formar 'conseguir fazer'?
 - **Resposta:** `{"choices": ["ことが", "ますが", "でを"], "correct": "ことが"}`
-- {'pt-BR': "A estrutura é verbo (dicionário) + こと + が + できる. O こと nominaliza o verbo ('o ato de…') e が marca esse ato como o que 'é possível'."}
+- A estrutura é verbo (dicionário) + こと + が + できる. O こと nominaliza o verbo ('o ato de…') e が marca esse ato como o que 'é possível'.
 
 
-### 2. (cloze) {'pt-BR': 'Complete com a estrutura de capacidade: 私は走る＿＿＿＿。 (Eu consigo correr.)'}
+### 2. (cloze) Complete com a estrutura de capacidade: 私は走る＿＿＿＿。 (Eu consigo correr.)
 - **Resposta:** `{"text": "ことができる", "full": "私は走ることができる"}`
-- {'pt-BR': '走る fica inteiro no dicionário e recebe ことができる. Não se conjuga o verbo: a forma é sempre dicionário + ことができる.'}
+- 走る fica inteiro no dicionário e recebe ことができる. Não se conjuga o verbo: a forma é sempre dicionário + ことができる.
 - frases: `sent:tatoeba-155347`
 
-### 3. (sentence_build) {'pt-BR': "Monte 'Eu consigo descansar.' com as peças: [できる] [私] [休む] [は] [ことが]"}
+### 3. (sentence_build) Monte 'Eu consigo descansar.' com as peças: [できる] [私] [休む] [は] [ことが]
 - **Resposta:** `{"order": ["私", "は", "休む", "ことが", "できる"], "text": "私は休むことができる。"}`
-- {'pt-BR': '私 (eu) + は (tópico) + 休む (descansar, no dicionário) + ことが + できる. O verbo nunca muda de forma antes de ことができる.'}
+- 私 (eu) + は (tópico) + 休む (descansar, no dicionário) + ことが + できる. O verbo nunca muda de forma antes de ことができる.
 - frases: `sent:tatoeba-158699`
 
-### 4. (recognition) {'pt-BR': 'Você está escrevendo um aviso formal de regras. Qual frase combina melhor com esse tom?'}
+### 4. (recognition) Você está escrevendo um aviso formal de regras. Qual frase combina melhor com esse tom?
 - **Resposta:** `{"choices": ["ここで写真をとることができません。", "ここで写真とれないよ。", "ここ写真だめ。"], "correct": "ここで写真をとることができません。"}`
-- {'pt-BR': '〜ことができる(ません) soa mais formal e geral, ideal para avisos e regras. A forma potencial 〜れる・られる (とれない) é mais coloquial, típica da fala.'}
+- 〜ことができる(ません) soa mais formal e geral, ideal para avisos e regras. A forma potencial 〜れる・られる (とれない) é mais coloquial, típica da fala.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Eu consigo falar um pouco de inglês.' usando 私 (eu), 英語 (inglês), 少し (um pouco), o verbo 話す e ことができる."}
+### 5. (production) Diga em japonês 'Eu consigo falar um pouco de inglês.' usando 私 (eu), 英語 (inglês), 少し (um pouco), o verbo 話す e ことができる.
 - **Resposta:** `{"text": "私は少し英語を話すことができる。", "accept": ["私は少し英語を話すことができる", "私は少し英語を話すことができます", "わたしは少し英語を話すことができる", "わたしはすこしえいごをはなすことができる", "少し英語を話すことができる"]}`
-- {'pt-BR': '私は (tópico) + 少し (um pouco) + 英語を (inglês, objeto com を) + 話す (falar, dicionário) + ことができる. Versão educada: ...ことができます.'}
+- 私は (tópico) + 少し (um pouco) + 英語を (inglês, objeto com を) + 話す (falar, dicionário) + ことができる. Versão educada: ...ことができます.
 - frases: `sent:tatoeba-155872`
 

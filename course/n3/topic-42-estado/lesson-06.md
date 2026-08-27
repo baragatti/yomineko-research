@@ -68,23 +68,23 @@ Cuidado: どうしても pode parecer "de qualquer jeito" no sentido de descaso,
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Numa notícia eleitoral você lê 投票. O que significa?'}
+### 1. (recognition) Numa notícia eleitoral você lê 投票. O que significa?
 - **Resposta:** `{"choices": ["votação, voto", "partido político", "chegada"], "correct": "votação, voto"}`
-- {'pt-BR': "投票 (とうひょう) é o ato de votar. 党 seria 'partido' e 到着, 'chegada'."}
+- 投票 (とうひょう) é o ato de votar. 党 seria 'partido' e 到着, 'chegada'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado em pt-BR.'}
+### 2. (matching) Ligue cada palavra ao seu significado em pt-BR.
 - **Resposta:** `{"pairs": [["道徳", "moral, ética"], ["同僚", "colega de trabalho"], ["天然", "natural, espontâneo"], ["到着", "chegada"]]}`
-- {'pt-BR': '道徳=ética, 同僚=colega de trabalho, 天然=natural, 到着=chegada.'}
+- 道徳=ética, 同僚=colega de trabalho, 天然=natural, 到着=chegada.
 
 
-### 3. (cloze) {'pt-BR': "Complete: 'As duas provas eram idênticas.' 二つの答案は＿＿だった。"}
+### 3. (cloze) Complete: 'As duas provas eram idênticas.' 二つの答案は＿＿だった。
 - **Resposta:** `{"text": "同一", "full": "二つの答案は同一だった。"}`
-- {'pt-BR': "同一 (どういつ) indica identidade total. 同様 daria 'semelhantes', não 'idênticas'."}
+- 同一 (どういつ) indica identidade total. 同様 daria 'semelhantes', não 'idênticas'.
 
 
-### 4. (production) {'pt-BR': "Diga em japonês: 'Quero responder a essa pergunta de todo jeito.' (use 問い e どうしても)"}
-- **Resposta:** `{"text": "どうしてもその問いに答えたい", "accept": ["どうしてもそのといにこたえたい", "その問いにどうしても答えたい", "どうしてもこの問いに答えたい"]}`
-- {'pt-BR': "どうしても reforça o empenho ('a todo custo') e 問い (とい) é a pergunta."}
+### 4. (production) Diga em japonês: 'Quero responder a essa pergunta de todo jeito.' (use 問い e どうしても)
+- **Resposta:** `{"text": "どうしてもその問いに答えたい", "accept": ["どうしてもその問いに答えたい", "どうしてもそのといにこたえたい", "その問いにどうしても答えたい", "どうしてもこの問いに答えたい"]}`
+- どうしても reforça o empenho ('a todo custo') e 問い (とい) é a pergunta.
 
 

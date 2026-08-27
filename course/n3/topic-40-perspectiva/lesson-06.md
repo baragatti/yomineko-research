@@ -64,23 +64,23 @@ Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 瓶
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa reputação, ou seja, o que as pessoas andam dizendo de alguém?'}
+### 1. (recognition) Qual palavra significa reputação, ou seja, o que as pessoas andam dizendo de alguém?
 - **Resposta:** `{"choices": ["評判 (ひょうばん)", "費用 (ひよう)", "秘密 (ひみつ)"], "correct": "評判 (ひょうばん)"}`
-- {'pt-BR': '評判 (ひょうばん) é a reputação ou fama; 費用 é custo e 秘密 é segredo.'}
+- 評判 (ひょうばん) é a reputação ou fama; 費用 é custo e 秘密 é segredo.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra à sua tradução em português.'}
+### 2. (matching) Associe cada palavra à sua tradução em português.
 - **Resposta:** `{"pairs": [["表情", "expressão facial"], ["微妙", "sutil, delicado"], ["費用", "custo, despesa"], ["平等", "igualdade"]]}`
-- {'pt-BR': 'São quatro palavras-chave desta lição: semblante, algo sutil, despesa e igualdade.'}
+- São quatro palavras-chave desta lição: semblante, algo sutil, despesa e igualdade.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a frase: <jp>この映画の＿＿はとても良かった</jp> (A crítica deste filme foi muito boa.)'}
+### 3. (cloze) Complete a frase: この映画の＿＿はとても良かった (A crítica deste filme foi muito boa.)
 - **Resposta:** `{"text": "批評", "full": "この映画の批評はとても良かった。"}`
-- {'pt-BR': '批評 (ひひょう) é a crítica ou resenha de uma obra, mais analítica do que 批判.'}
+- 批評 (ひひょう) é a crítica ou resenha de uma obra, mais analítica do que 批判.
 
 
-### 4. (production) {'pt-BR': 'Escreva uma frase curta em japonês dizendo que esta garrafa está vazia. (Use 瓶 e 空.)'}
-- **Resposta:** `{"text": "この瓶は空です", "accept": ["この瓶は空だ", "瓶が空です", "この瓶は空っぽです"]}`
-- {'pt-BR': '瓶 (びん) é garrafa e 空 (から) significa vazio; juntos formam uma frase simples e natural.'}
+### 4. (production) Escreva uma frase curta em japonês dizendo que esta garrafa está vazia. (Use 瓶 e 空.)
+- **Resposta:** `{"text": "この瓶は空です", "accept": ["この瓶は空です", "この瓶は空だ", "瓶が空です", "この瓶は空っぽです"]}`
+- 瓶 (びん) é garrafa e 空 (から) significa vazio; juntos formam uma frase simples e natural.
 
 

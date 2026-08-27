@@ -4,7 +4,7 @@
   "stage": "speak:opinions",
   "order": 4,
   "title": {
-    "pt-BR": "Dizer o que você acha — parte 4"
+    "pt-BR": "Dizer o que você acha, parte 4"
   },
   "say_now": [
     "sent:tatoeba-5070",
@@ -50,51 +50,9 @@
   "cumulative_known_vocab": 529,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:13:1571",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "自由",
-        "貰う",
-        "去年"
-      ]
-    },
-    {
-      "id": "cf:n3:3488:1571",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "同じ",
-        "半分",
-        "苦労"
-      ]
-    },
-    {
-      "id": "kr:n3:1571",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きんようび",
-        "ファックス",
-        "めしあがる"
-      ]
-    },
-    {
-      "id": "kr:n4:981",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "にゅういん",
-        "むずかしい",
-        "かんがえる"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:te-kureru",
-    "gram:gp-128"
+    "gram:you-ni-you-na"
   ],
   "drills": [
     {
@@ -139,6 +97,8 @@
       "prompt_pt": "Ele pode até ser rico, mas é pão-duro.",
       "answer_key": "金持ちかもしれないがけちだ。",
       "accepted_variants": [
+        "かねもちかもしれないがけちだ",
+        "かねもちかもしれないがけちだ。",
         "金持ちかもしれないがけちだ",
         "金持ちかもしれないがけちだ。"
       ],
@@ -149,6 +109,8 @@
       "prompt_pt": "Pode ser que eu ganhe, por sorte.",
       "answer_key": "ひょっとしたら勝つかもしれない。",
       "accepted_variants": [
+        "ひょっとしたらかつかもしれない",
+        "ひょっとしたらかつかもしれない。",
         "ひょっとしたら勝つかもしれない",
         "ひょっとしたら勝つかもしれない。"
       ],
@@ -159,6 +121,8 @@
       "prompt_pt": "É por isso que eu sou contra você.",
       "answer_key": "こういうわけで私はあなたに反対なのです。",
       "accepted_variants": [
+        "こういうわけでわたしわあなたにはんたいなのです",
+        "こういうわけでわたしわあなたにはんたいなのです。",
         "こういうわけで私はあなたに反対なのです",
         "こういうわけで私はあなたに反対なのです。"
       ],
@@ -181,15 +145,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:13:1571",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "自由",
+        "貰う",
+        "去年"
+      ]
+    },
+    {
+      "id": "cf:n3:3488:1571",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "同じ",
+        "半分",
+        "苦労"
+      ]
+    },
+    {
+      "id": "kr:n3:1571",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きんようび",
+        "ファックス",
+        "めしあがる"
+      ]
+    },
+    {
+      "id": "kr:n4:981",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "にゅういん",
+        "むずかしい",
+        "かんがえる"
+      ]
+    }
+  ]
 }

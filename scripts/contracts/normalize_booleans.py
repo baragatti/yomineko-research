@@ -53,8 +53,15 @@ def fix(node: object, tally: Counter) -> object:
             new = bool(v)
             tally[f"{k} int -> bool"] += 1
         else:
-            out[k] = v  # not a 0/1 int and not a bool: leave it and let the schema flag it
-            continue
+            # Not a 0/1 int and not a bool. Still RENAME it (an audit found the old branch kept the
+            # retired key name for such values, and --check reported the tree clean) and surface it
+            # loudly so the schema failure that follows is no surprise.
+            tally[f"{k}: unexpected value {v!r} (renamed, not coerced)"] += 1
+            new = v
+        if canon in out:
+            # A record carrying both `ai` and `ai_generated` would silently lose one value here.
+            raise SystemExit(f"key collision: record carries both {k!r} and {canon!r} — "
+                             f"resolve by hand, refusing to pick a winner")
         if k != canon:
             tally[f"{k} -> {canon}"] += 1
         out[canon] = new

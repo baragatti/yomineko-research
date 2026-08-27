@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [n3-made, n3-saichuu-ni, n3-uchi-ni] · vocabulário [一瞬, 今に, 今にも, 以前, 命, 居眠り, 居間, 意志, 意思, 意識, 板, 泉, 異常, 維持] · kanji [制 務 性 成 治 法 要] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-9032501`, `sent:tatoeba-226507`
 
 ---
 
@@ -84,28 +84,28 @@ Faça os exercícios abaixo. Cada resposta vem com explicação.
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': '温かい___食べてください。 (Coma enquanto está quente.)'}
+### 1. (particle_choice) 温かい___食べてください。 (Coma enquanto está quente.)
 - **Resposta:** `{"choices": ["うちに", "までに", "最中に", "以前"], "correct": "うちに"}`
-- {'pt-BR': 'うちに marca a janela favorável que vai se fechar: aproveite a comida enquanto ainda está quente.'}
+- うちに marca a janela favorável que vai se fechar: aproveite a comida enquanto ainda está quente.
 
 
-### 2. (recognition) {'pt-BR': "Qual frase significa 'O telefone tocou bem no meio da reunião'?"}
+### 2. (recognition) Qual frase significa 'O telefone tocou bem no meio da reunião'?
 - **Resposta:** `{"choices": ["会議の最中に電話が鳴った", "会議のうちに電話が鳴った", "会議まで電話が鳴った", "会議の以前に電話が鳴った"], "correct": "会議の最中に電話が鳴った"}`
-- {'pt-BR': '最中に foca no ponto central da ação (a reunião em curso) e antecipa a interrupção inesperada.'}
+- 最中に foca no ponto central da ação (a reunião em curso) e antecipa a interrupção inesperada.
 
 
-### 3. (cloze) {'pt-BR': 'Complete: 疲れる___走った。 (Corri até cansar.)'}
+### 3. (cloze) Complete: 疲れる___走った。 (Corri até cansar.)
 - **Resposta:** `{"text": "まで", "full": "疲れるまで走った"}`
-- {'pt-BR': 'まで marca o limite contínuo da ação: correr sem parar ATÉ o ponto de cansar.'}
+- まで marca o limite contínuo da ação: correr sem parar ATÉ o ponto de cansar.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu sentido.'}
+### 4. (matching) Associe cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["意識", "consciência"], ["維持", "manutenção"], ["命", "vida"], ["一瞬", "um instante"]]}`
-- {'pt-BR': '意識 いしき consciência; 維持 いじ manutenção; 命 いのち vida; 一瞬 いっしゅん instante. Cuidado com os pares homófonos em いし.'}
+- 意識 いしき consciência; 維持 いじ manutenção; 命 いのち vida; 一瞬 いっしゅん instante. Cuidado com os pares homófonos em いし.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Vamos voltar para casa enquanto ainda está claro.' (use うちに e 明るい claro)"}
+### 5. (production) Escreva em japonês: 'Vamos voltar para casa enquanto ainda está claro.' (use うちに e 明るい claro)
 - **Resposta:** `{"text": "明るいうちに帰ろう", "accept": ["明るいうちに帰ろう", "明るいうちに帰りましょう", "あかるいうちにかえろう"]}`
-- {'pt-BR': 'Adjetivo い + うちに: 明るいうちに. A janela de luz vai se fechar, então aproveite-a antes que escureça.'}
+- Adjetivo い + うちに: 明るいうちに. A janela de luz vai se fechar, então aproveite-a antes que escureça.
 
 

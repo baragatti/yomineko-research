@@ -22,6 +22,15 @@ export interface SectionSpec {
   jp: string;
   hint: string;
   counts: Record<Level, number>;
+  /**
+   * Print the referenced reading above the question. TRUE only where the stem lives OUTSIDE the passage.
+   *
+   * 読解 asks a separate question about a text, so the text has to be on the page. 文章の文法 does not: its
+   * stem IS the passage with one grammar form replaced by （　）, and the stored passage is that same text
+   * unblanked — so showing it restores the blank and hands the learner the answer. Both types carry a
+   * `reading` slug, which is why this is declared per SECTION and not inferred from the item.
+   */
+  showsPassage?: boolean;
 }
 export const SECTIONS: SectionSpec[] = [
   { type: "kanji_reading", label: "Leitura de kanji", jp: "漢字読み",
@@ -41,7 +50,7 @@ export const SECTIONS: SectionSpec[] = [
   { type: "text_grammar", label: "Gramática no texto", jp: "文章の文法",
     hint: "Escolha a forma que completa o texto.", counts: { n5: 2, n4: 3, n3: 4 } },
   { type: "reading_comp", label: "Compreensão de leitura", jp: "読解",
-    hint: "Leia o texto e responda.", counts: { n5: 3, n4: 4, n3: 4 } },
+    hint: "Leia o texto e responda.", counts: { n5: 3, n4: 4, n3: 4 }, showsPassage: true },
 ];
 // Listening is intentionally absent: those banks are voice-ready SCRIPTS with audio: "pending"
 // (design/listening.md). The section joins the paper only once the audio exists.
@@ -135,7 +144,10 @@ interface RawItem {
 }
 const BANKS = examBanksData as unknown as Record<string, Record<string, RawItem[]>>;
 
-/** reading_comp / text_grammar reference their passage by slug; resolve it for display. */
+/**
+ * reading_comp and text_grammar both reference a passage by slug. Resolving it is only ever DISPLAY, and
+ * only the sections flagged `showsPassage` want it — see SectionSpec.showsPassage.
+ */
 const READINGS = readingsData as unknown as Record<string, { jp?: string }>;
 function readingText(slug: string): string | undefined {
   return READINGS[slug]?.jp;
@@ -177,7 +189,7 @@ export interface PaperQuestion {
   type: string;
   prompt: string;           // the stem / question shown to the learner
   focus?: string;           // the word under test (paraphrase / usage), shown highlighted
-  passage?: string;         // reading_comp + text_grammar: the text above the question
+  passage?: string;         // sections with `showsPassage` (読解) only: the text above the question
   options: string[];        // already shuffled for this attempt
   pieces?: string[];        // sentence_order only
 }
@@ -236,6 +248,11 @@ export function buildPaper(level: Level, seedInput: string | number, exclude: Se
   const rand = rng(seed);
   const sections: PaperSection[] = [];
   let total = 0;
+  // One question per passage, PAPER-wide. 文章の文法 and 読解 draw from the SAME reading pool (every
+  // text_grammar passage is also a reading_comp passage), so a guard scoped to one section let the same
+  // text be printed twice in one paper — re-reading spent text and burning scarce material. Paper scope
+  // is the only scope that holds.
+  const seenPassage = new Set<string>();
 
   // Sections are built in SECTIONS order (which is the real paper's 大問 order) and then grouped into
   // parts, rather than iterating parts and then sections. Keeping one pass means the RNG is consumed in
@@ -247,15 +264,18 @@ export function buildPaper(level: Level, seedInput: string | number, exclude: Se
     if (!bank.length) continue;
     let pool = bank.filter((it) => !exclude.has(it.id));
     if (pool.length < want) pool = bank;                       // no-repeat must never shorten the paper
-    // Real-first (design rule 4): prefer items grounded in a real bank sentence. `ai_generated` marks a
-    // generated one; the banks that carry no `ai_generated` field at all (kanji_reading, orthography,
-    // usage…) are built straight off Layer-A vocab, so a missing field means real, not unknown.
+    // Real-first (design rule 4): prefer items grounded in a real human-written sentence. Provenance is
+    // stated, never inferred — every exam item carries an explicit `ai_generated` boolean, written at build
+    // time from the sentence it is derived from (an item with no sentence behind it is built straight off
+    // Layer-A vocab and carries `false`). The filter keys on that flag alone. It used to read an ABSENT
+    // field as "real", which quietly mislabelled the paraphrase and usage banks — those items reproduce a
+    // bank sentence verbatim and some of those sentences are generated, so the rule was inert exactly where
+    // it mattered. Provenance now lives in the data, so the banks and this picker cannot drift apart again.
     const real = pool.filter((it) => !it.ai_generated);
     const rest = pool.filter((it) => !!it.ai_generated);
     const ordered = [...shuffle(real, rand), ...shuffle(rest, rand)];
 
     const questions: PaperQuestion[] = [];
-    const seenPassage = new Set<string>();
     for (const it of ordered) {
       if (questions.length >= want) break;
       // One question per passage: two items off the same text give away each other's context.
@@ -271,7 +291,7 @@ export function buildPaper(level: Level, seedInput: string | number, exclude: Se
         type: spec.type,
         prompt: p.prompt,
         focus: p.focus,
-        passage: it.reading ? readingText(it.reading) : undefined,
+        passage: spec.showsPassage && it.reading ? readingText(it.reading) : undefined,
         options: p.pieces ? [] : shuffle(p.options, rand),
         pieces: p.pieces ? shuffle(p.pieces, rand) : undefined,
       });

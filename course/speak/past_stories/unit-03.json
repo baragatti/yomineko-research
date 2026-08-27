@@ -4,7 +4,7 @@
   "stage": "speak:past_stories",
   "order": 3,
   "title": {
-    "pt-BR": "Contar o que aconteceu — parte 3"
+    "pt-BR": "Contar o que aconteceu, parte 3"
   },
   "say_now": [
     "sent:tatoeba-1897537",
@@ -52,6 +52,120 @@
   "cumulative_known_vocab": 433,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:ta-koto-ga-aru"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-11960481",
+        "sent:tatoeba-235631",
+        "sent:tatoeba-433648"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-dbc3c7fb8b46",
+        "sent:tatoeba-189629"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-85319",
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Tudo bem? A viagem foi boa?",
+      "answer_key": "元気？旅行は良かった？",
+      "accepted_variants": [
+        "げんき?りょこうわよかった",
+        "げんき?りょこうわよかった?",
+        "元気？旅行は良かった",
+        "元気？旅行は良かった？"
+      ],
+      "sentence": "sent:tatoeba-5118",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Posso pagar com cheque de viagem?",
+      "answer_key": "旅行小切手で払ってもいいですか。",
+      "accepted_variants": [
+        "りょこうこぎってではらってもいいですか",
+        "りょこうこぎってではらってもいいですか。",
+        "旅行小切手で払ってもいいですか",
+        "旅行小切手で払ってもいいですか。"
+      ],
+      "sentence": "sent:tatoeba-78134",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu não nasci ontem.",
+      "answer_key": "私は昨日生まれたわけではない。",
+      "accepted_variants": [
+        "わたしわきのううまれたわけでわない",
+        "わたしわきのううまれたわけでわない。",
+        "私は昨日生まれたわけではない",
+        "私は昨日生まれたわけではない。"
+      ],
+      "sentence": "sent:tatoeba-156748",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-171398",
+      "sent:tatoeba-78158",
+      "sent:tatoeba-13537670",
+      "sent:tatoeba-143986",
+      "sent:tatoeba-142423",
+      "sent:tatoeba-121897"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:259",
@@ -108,113 +222,5 @@
         "レストラン"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:ta-koto-ga-aru"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:koto-ga-aru",
-      "examples": [
-        "sent:tatoeba-11960481",
-        "sent:tatoeba-235631",
-        "sent:tatoeba-433648"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:rashii",
-      "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-dbc3c7fb8b46",
-        "sent:tatoeba-189629"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-78700",
-        "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Tudo bem? A viagem foi boa?",
-      "answer_key": "元気？旅行は良かった？",
-      "accepted_variants": [
-        "元気？旅行は良かった",
-        "元気？旅行は良かった？"
-      ],
-      "sentence": "sent:tatoeba-5118",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Posso pagar com cheque de viagem?",
-      "answer_key": "旅行小切手で払ってもいいですか。",
-      "accepted_variants": [
-        "旅行小切手で払ってもいいですか",
-        "旅行小切手で払ってもいいですか。"
-      ],
-      "sentence": "sent:tatoeba-78134",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu não nasci ontem.",
-      "answer_key": "私は昨日生まれたわけではない。",
-      "accepted_variants": [
-        "私は昨日生まれたわけではない",
-        "私は昨日生まれたわけではない。"
-      ],
-      "sentence": "sent:tatoeba-156748",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
-    "items": [
-      "sent:tatoeba-171398",
-      "sent:tatoeba-78158",
-      "sent:tatoeba-13537670",
-      "sent:tatoeba-143986",
-      "sent:tatoeba-142423",
-      "sent:tatoeba-121897"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  }
+  ]
 }

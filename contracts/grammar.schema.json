@@ -9,23 +9,40 @@
     "packing": "list",
     "glob": "corpus/grammar/*.json",
     "stable_id_field": "slug",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
     "caution": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "rough",
-        "sensitive",
-        null
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "none",
+            "offensive",
+            "rough",
+            "sensitive"
+          ],
+          "description": "How careful a learner has to be with this pattern. Vocabulary owner: design — design/schema_v2.md ('Grammar': caution). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/schema_v2.md ('Grammar': caution)"
+          }
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "explanation": {
       "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "families": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "formation": {
       "$ref": "common.schema.json#/$defs/LocaleText"
@@ -44,12 +61,18 @@
               "base": {
                 "type": "string",
                 "enum": [
+                  "any",
                   "clause",
                   "i-adjective",
                   "na-adjective",
                   "noun",
                   "verb"
-                ]
+                ],
+                "description": "What the formation step attaches to. Vocabulary owner: producer — scripts/validate/validate_grammar_formation.py BASES. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                "x-vocabulary": {
+                  "owner": "producer",
+                  "source": "scripts/validate/validate_grammar_formation.py BASES"
+                }
               },
               "example": {
                 "type": "string"
@@ -86,7 +109,8 @@
       }
     },
     "id": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "key": {
       "type": "string"
@@ -104,43 +128,7 @@
       "$ref": "common.schema.json#/$defs/LevelTag/properties/level_confidence"
     },
     "level_sources": {
-      "type": "object",
-      "properties": {
-        "bunpro": {
-          "type": "string",
-          "enum": [
-            "n4",
-            "n5"
-          ]
-        },
-        "hanabira": {
-          "type": "string",
-          "enum": [
-            "n3"
-          ]
-        },
-        "jlptsensei": {
-          "type": "string",
-          "enum": [
-            "n4",
-            "n5"
-          ]
-        },
-        "note": {
-          "type": "string",
-          "enum": [
-            "course anchor for the て-form hub"
-          ]
-        },
-        "tanos": {
-          "type": "string",
-          "enum": [
-            "n4",
-            "n5"
-          ]
-        }
-      },
-      "additionalProperties": false
+      "$ref": "common.schema.json#/$defs/LevelTag/properties/level_sources"
     },
     "needs_review": {
       "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
@@ -152,29 +140,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [
-          "cause",
-          "change-of-state",
-          "comparison",
-          "completion",
-          "concession",
-          "condition",
-          "conjecture",
-          "continuation",
-          "desire",
-          "emphasis",
-          "experience",
-          "hearsay",
-          "honorific",
-          "humility",
-          "intention",
-          "obligation",
-          "permission",
-          "politeness",
-          "prohibition",
-          "request",
-          "softening"
-        ]
+        "description": "Free semantic tags on a grammar point. No document defines the tag set, so the contract does not pretend one is closed — an authored tag nobody declared should be caught by review, not by an enum measured from the corpus."
       }
     },
     "refs": {
@@ -193,31 +159,7 @@
           "type": "string"
         },
         "level_sources": {
-          "type": "object",
-          "properties": {
-            "bunpro": {
-              "type": "string",
-              "enum": [
-                "n4",
-                "n5"
-              ]
-            },
-            "jlptsensei": {
-              "type": "string",
-              "enum": [
-                "n4",
-                "n5"
-              ]
-            },
-            "tanos": {
-              "type": "string",
-              "enum": [
-                "n4",
-                "n5"
-              ]
-            }
-          },
-          "additionalProperties": false
+          "$ref": "common.schema.json#/$defs/LevelTag/properties/level_sources"
         }
       },
       "additionalProperties": false
@@ -229,6 +171,7 @@
         "enum": [
           "casual",
           "colloquial",
+          "dated",
           "feminine",
           "formal",
           "honorific",
@@ -238,20 +181,21 @@
           "neutral",
           "plain",
           "polite",
+          "slang",
           "written"
-        ]
+        ],
+        "description": "Registers this grammar point belongs to. Vocabulary owner: design — design/schema_v2.md ('Grammar': the register array) + the grammar_point table comment. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+        "x-vocabulary": {
+          "owner": "design",
+          "source": "design/schema_v2.md ('Grammar': the register array) + the grammar_point table comment"
+        }
       }
     },
     "related": {
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [
-          "de",
-          "ga",
-          "ni",
-          "wa-topic-marker"
-        ]
+        "description": "Keys of related grammar points. A reference list, not a vocabulary."
       }
     },
     "slug": {
@@ -270,16 +214,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [
-          "academic",
-          "announcement",
-          "business",
-          "casual-friends",
-          "formal-email",
-          "literary",
-          "spoken",
-          "written"
-        ]
+        "description": "Situations this pattern belongs to. No declared taxonomy."
       }
     }
   },
@@ -287,6 +222,7 @@
   "required": [
     "caution",
     "explanation",
+    "families",
     "formation",
     "formation_steps",
     "forms",

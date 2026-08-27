@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-124, gp-125, gp-128, to-ittemo-ii] · vocabulário [—] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-4558abf25a14`, `sent:gen-e41bdeadc5f1`, `sent:gen-88bf9946eae0`, `sent:tatoeba-80880`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-80880`, `sent:gen-4558abf25a14`, `sent:gen-e41bdeadc5f1`, `sent:gen-88bf9946eae0`
 
 ---
 
@@ -42,7 +42,7 @@ Aqui 晴れる é "abrir o tempo / fazer sol" e 祈っています é "estou tor
 Por último, uma forma de moderação. to-ittemo-ii significa "dá para dizer que", "pode-se dizer que", "não é exagero afirmar que". Você lança uma afirmação forte, mas reconhece que é uma interpretação sua e suaviza com a ideia de "é aceitável dizer".
 > 🗣 もう春だと言ってもいい — Dá para dizer que já é primavera.
 Em もう春だと言ってもいい, o falante não crava "já é primavera"; ele oferece "dá para dizer que já é primavera". O molde é simples e sempre o mesmo:
-Molde: [afirmação] と言ってもいい
+Molde: [afirmação] と 言ってもいい
 Ou seja, você pega a frase que quer afirmar, encaixa a partícula de citação と (que liga aquilo que você está "citando" ao verbo) e fecha com 言ってもいい. É um jeito elegante de dar a sua leitura sem soar arrogante.
 
 > **[culture]**
@@ -66,28 +66,28 @@ Essa moderação é muito apreciada no japonês: deixar uma brecha em vez de afi
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase usa ように para expressar uma FINALIDADE/desejo ('para que / de modo que'), e não um pedido relatado?"}
+### 1. (recognition) Qual frase usa ように para expressar uma FINALIDADE/desejo ('para que / de modo que'), e não um pedido relatado?
 - **Resposta:** `{"choices": ["友だちに明日来るように言った", "明日晴れるように祈っています", "母は弟に早く寝るように言った"], "correct": "明日晴れるように祈っています"}`
-- {'pt-BR': "祈る ('torcer/rezar') aponta para um resultado fora do seu controle: você deseja QUE algo aconteça. As outras duas têm 言う e relatam um pedido/ordem feito a alguém (marcado com に)."}
+- 祈る ('torcer/rezar') aponta para um resultado fora do seu controle: você deseja QUE algo aconteça. As outras duas têm 言う e relatam um pedido/ordem feito a alguém (marcado com に).
 - frases: `sent:gen-e41bdeadc5f1`
 
-### 2. (particle_choice) {'pt-BR': 'Complete o pedido relatado: 友だち＿明日来るように言った。 (Falei pro meu amigo vir amanhã.)'}
+### 2. (particle_choice) Complete o pedido relatado: 友だち＿明日来るように言った。 (Falei pro meu amigo vir amanhã.)
 - **Resposta:** `{"choices": ["に", "を", "は"], "correct": "に"}`
-- {'pt-BR': "Em ～ように言う, a pessoa que RECEBE o pedido leva に (友だちに = 'para o amigo'). O 'para que' já mora dentro do ように; o に só marca a quem você falou."}
+- Em ～ように言う, a pessoa que RECEBE o pedido leva に (友だちに = 'para o amigo'). O 'para que' já mora dentro do ように; o に só marca a quem você falou.
 - frases: `sent:gen-4558abf25a14`
 
-### 3. (cloze) {'pt-BR': 'Complete com a partícula de citação que falta antes de 言ってもいい: もう春だ＿言ってもいい。 (Dá para dizer que já é primavera.)'}
+### 3. (cloze) Complete com a partícula de citação que falta antes de 言ってもいい: もう春だ＿言ってもいい。 (Dá para dizer que já é primavera.)
 - **Resposta:** `{"text": "と", "full": "もう春だと言ってもいい"}`
-- {'pt-BR': "と言ってもいい = afirmação + と (partícula de citação) + 言ってもいい ('dá para dizer'). O と liga a frase que você está 'citando' ao verbo 言う."}
+- と言ってもいい = afirmação + と (partícula de citação) + 言ってもいい ('dá para dizer'). O と liga a frase que você está 'citando' ao verbo 言う.
 - frases: `sent:gen-88bf9946eae0`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Tô torcendo pra fazer sol amanhã.' com as peças: [祈っています] [晴れる] [明日] [ように]"}
+### 4. (sentence_build) Monte 'Tô torcendo pra fazer sol amanhã.' com as peças: [祈っています] [晴れる] [明日] [ように]
 - **Resposta:** `{"order": ["明日", "晴れる", "ように", "祈っています"], "text": "明日晴れるように祈っています。"}`
-- {'pt-BR': '明日 (amanhã) + 晴れる (fazer sol, forma de dicionário) + ように (para que) + 祈っています (estou torcendo). O ように+祈る é a fórmula de torcida para algo fora do seu controle.'}
+- 明日 (amanhã) + 晴れる (fazer sol, forma de dicionário) + ように (para que) + 祈っています (estou torcendo). O ように+祈る é a fórmula de torcida para algo fora do seu controle.
 - frases: `sent:gen-e41bdeadc5f1`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Cuide para não se esforçar demais.' usando 無理 (esforço excessivo), o negativo de する e ように."}
+### 5. (production) Diga em japonês 'Cuide para não se esforçar demais.' usando 無理 (esforço excessivo), o negativo de する e ように.
 - **Resposta:** `{"text": "無理をしないように。", "accept": ["無理をしないように", "無理をしないように。", "むりをしないように", "むりをしないように。"]}`
-- {'pt-BR': '無理を (esforço excessivo) + しない (negativo de する) + ように (cuide para / de modo a). Aqui o ように aparece sozinho no fim, carregando o desejo/conselho, sem precisar de outro verbo.'}
+- 無理を (esforço excessivo) + しない (negativo de する) + ように (cuide para / de modo a). Aqui o ように aparece sozinho no fim, carregando o desejo/conselho, sem precisar de outro verbo.
 - frases: `sent:tatoeba-80880`
 

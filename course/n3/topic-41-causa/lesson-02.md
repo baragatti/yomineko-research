@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-ni-yotte, n3-sono-kekka, n3-sono-tame-ni] · vocabulário [お前, お昼, オフィス, 下ろす, 主に, 凡そ, 及ぼす, 帯, 御目出度う, 思い出, 思わず, 泳ぎ, 溺れる, 鬼] · kanji [係 増 変 情 感 投 示] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-201846`, `sent:tatoeba-211124`
 
 ---
 
@@ -34,7 +34,7 @@ O n3-sono-tame-ni também conecta duas frases, mas marca finalidade: a primeira 
 健康に暮らしたい。そのためにジムに通う significa "quero levar uma vida saudável. Para isso, vou à academia".
 
 > **[l1-pitfall]**
-Armadilha PT: não confunda その結果 com そのために. その結果 apenas constata o que aconteceu (resultado factual); そのために carrega intenção deliberada, algo feito de propósito para chegar a um objetivo. Em português "para isso" pode soar como simples consequência, mas そのために carrega finalidade. (Atenção: ため(に) não é só finalidade.
+Armadilha PT: não confunda その結果 com そのために. その結果 apenas constata o que aconteceu (resultado factual); そのために carrega intenção deliberada, algo feito de propósito para chegar a um objetivo. Em português "para isso" pode soar como simples consequência, mas そのために carrega finalidade. (Atenção: ため(に) não é só finalidade; depois de substantivo + の ele também marca beneficiário.)
 
 #### Vocabulário desta lição
 - 及ぼす: exercer (influência), causar, provocar. Muito usado com causa e efeito.
@@ -64,28 +64,28 @@ O pronome お前 é bruto e íntimo. O japonês prefere omitir o sujeito sempre 
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': 'Complete (voz passiva, marcando o agente): この本は有名な作家＿＿＿書かれた。 (Este livro foi escrito por um autor famoso.)'}
+### 1. (particle_choice) Complete (voz passiva, marcando o agente): この本は有名な作家＿＿＿書かれた。 (Este livro foi escrito por um autor famoso.)
 - **Resposta:** `{"choices": ["によって", "その結果", "せいで"], "correct": "によって"}`
-- {'pt-BR': "Na voz passiva, によって marca o agente (quem realizou a ação): 作家によって書かれた = 'foi escrito por um autor'."}
+- Na voz passiva, によって marca o agente (quem realizou a ação): 作家によって書かれた = 'foi escrito por um autor'.
 
 
-### 2. (recognition) {'pt-BR': 'Qual conector indica FINALIDADE (objetivo a alcançar de propósito)?'}
+### 2. (recognition) Qual conector indica FINALIDADE (objetivo a alcançar de propósito)?
 - **Resposta:** `{"choices": ["そのために", "その結果", "によって"], "correct": "そのために"}`
-- {'pt-BR': 'そのために marca a finalidade buscada. その結果 apenas constata um resultado, e によって aponta agente ou meio.'}
+- そのために marca a finalidade buscada. その結果 apenas constata um resultado, e によって aponta agente ou meio.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com o conector de CONSEQUÊNCIA factual: 毎日練習した。＿＿＿、試合に勝った。 (Treinou todo dia. Como resultado, venceu.)'}
+### 3. (cloze) Complete com o conector de CONSEQUÊNCIA factual: 毎日練習した。＿＿＿、試合に勝った。 (Treinou todo dia. Como resultado, venceu.)
 - **Resposta:** `{"text": "その結果", "full": "毎日練習した。その結果、試合に勝った。"}`
-- {'pt-BR': 'その結果 liga a causa (treinar) ao desfecho concreto (vencer). Vem no início da segunda frase, em geral seguido de vírgula.'}
+- その結果 liga a causa (treinar) ao desfecho concreto (vencer). Vem no início da segunda frase, em geral seguido de vírgula.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada conector ao seu papel.'}
+### 4. (matching) Associe cada conector ao seu papel.
 - **Resposta:** `{"pairs": [["によって", "agente / meio / variação"], ["その結果", "resultado factual"], ["そのために", "finalidade buscada"]]}`
-- {'pt-BR': 'によって aponta agente ou meio; その結果 constata o que aconteceu; そのために marca a intenção deliberada de alcançar uma meta.'}
+- によって aponta agente ou meio; その結果 constata o que aconteceu; そのために marca a intenção deliberada de alcançar uma meta.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Quero morar no Japão. Para isso, estudo japonês todos os dias.' (use そのために; morar = 住む すむ, estudar = 勉強する)"}
+### 5. (production) Escreva em japonês: 'Quero morar no Japão. Para isso, estudo japonês todos os dias.' (use そのために; morar = 住む すむ, estudar = 勉強する)
 - **Resposta:** `{"text": "日本に住みたい。そのために毎日日本語を勉強する。", "accept": ["日本に住みたい。そのために毎日日本語を勉強する", "日本に住みたい。そのために毎日日本語を勉強しています", "日本に住みたいです。そのために毎日日本語を勉強しています"]}`
-- {'pt-BR': 'A primeira frase traz a meta (住みたい), e そのために introduz a ação tomada para alcançá-la. O verbo fica no fim de cada frase (japonês é SOV).'}
+- A primeira frase traz a meta (住みたい), e そのために introduz a ação tomada para alcançá-la. O verbo fica no fim de cada frase (japonês é SOV).
 
 

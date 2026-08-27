@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-140, gp-47, wa-yori-desu, yori-hou-ga] · vocabulário [冷たい, 多分, 大変, 強い, 楽しい, 次, 沢山, 温い, 茶色, 詰らない, 近い, 遠い, 長い, 隣, 高い] · kanji [小] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-ead8371d038a`, `sent:gen-326ea97de1a1`, `sent:gen-dc17b084b7de`
+**Frases (por ID, do banco dissecado):** `sent:gen-dc17b084b7de`, `sent:gen-ead8371d038a`, `sent:gen-326ea97de1a1`
 
 ---
 
@@ -79,33 +79,33 @@ O kanji 小 significa pequeno, reduzido. Suas leituras principais são ちい (e
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Na frase バスより電車のほうが速い ('o trem é mais rápido que o ônibus'), o que a partícula より marca?"}
+### 1. (recognition) Na frase バスより電車のほうが速い ('o trem é mais rápido que o ônibus'), o que a partícula より marca?
 - **Resposta:** `{"choices": ["O termo MENOR, a base de comparação (o 'do que', aqui o ônibus)", "O termo MAIOR, o que ganha (o trem)", "O adjetivo da comparação (速い)"], "correct": "O termo MENOR, a base de comparação (o 'do que', aqui o ônibus)"}`
-- {'pt-BR': "より gruda no termo que fica 'abaixo' na comparação, o nosso 'do que'. Em バスより, é o ônibus que perde; quem ganha vem com のほうが (電車のほうが)."}
+- より gruda no termo que fica 'abaixo' na comparação, o nosso 'do que'. Em バスより, é o ônibus que perde; quem ganha vem com のほうが (電車のほうが).
 - frases: `sent:gen-dc17b084b7de`
 
-### 2. (particle_choice) {'pt-BR': "Complete com a partícula 'do que' para dizer 'O trem é mais rápido que o ônibus': 電車はバス＿速いです。"}
+### 2. (particle_choice) Complete com a partícula 'do que' para dizer 'O trem é mais rápido que o ônibus': 電車はバス＿速いです。
 - **Resposta:** `{"choices": ["より", "のほうが", "は"], "correct": "より"}`
-- {'pt-BR': "より marca o termo de comparação (バス = ônibus, o 'do que'). O molde polido aqui é X は Y より [adjetivo] です."}
+- より marca o termo de comparação (バス = ônibus, o 'do que'). O molde polido aqui é X は Y より [adjetivo] です.
 
 
-### 3. (cloze) {'pt-BR': "Complete o lado que GANHA para dizer 'O lado do trem é mais rápido que o ônibus': 電車＿バスより速い。"}
+### 3. (cloze) Complete o lado que GANHA para dizer 'O lado do trem é mais rápido que o ônibus': 電車＿バスより速い。
 - **Resposta:** `{"text": "のほうが", "full": "電車のほうがバスより速い"}`
-- {'pt-BR': "のほうが marca o lado favorecido (電車, o trem). Junto com バスより ('do que o ônibus') forma a comparação のほうが…より."}
+- のほうが marca o lado favorecido (電車, o trem). Junto com バスより ('do que o ônibus') forma a comparação のほうが…より.
 - frases: `sent:gen-ead8371d038a`
 
-### 4. (sentence_build) {'pt-BR': "Comece pelo lado que PERDE (バスより) e monte 'Do que o ônibus, o trem é que é mais rápido.' com as peças: [速い] [電車] [バス] [のほうが] [より]"}
+### 4. (sentence_build) Comece pelo lado que PERDE (バスより) e monte 'Do que o ônibus, o trem é que é mais rápido.' com as peças: [速い] [電車] [バス] [のほうが] [より]
 - **Resposta:** `{"order": ["バス", "より", "電車", "のほうが", "速い"], "text": "バスより電車のほうが速い。"}`
-- {'pt-BR': "Ordem より…のほうが: バス + より ('do que o ônibus') + 電車 + のほうが ('o lado do trem') + 速い ('rápido'). より gruda no perdedor (バス)."}
+- Ordem より…のほうが: バス + より ('do que o ônibus') + 電車 + のほうが ('o lado do trem') + 速い ('rápido'). より gruda no perdedor (バス).
 - frases: `sent:gen-dc17b084b7de`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Hoje está mais quente que ontem.' usando 今日 (hoje) como o lado que ganha (のほうが), 昨日 (ontem) com より e 暑い (quente)."}
+### 5. (production) Diga em japonês 'Hoje está mais quente que ontem.' usando 今日 (hoje) como o lado que ganha (のほうが), 昨日 (ontem) com より e 暑い (quente).
 - **Resposta:** `{"text": "今日のほうが昨日より暑い。", "accept": ["今日のほうが昨日より暑い", "きょうのほうがきのうよりあつい", "今日のほうが昨日より暑いです", "今日の方が昨日より暑い"]}`
-- {'pt-BR': "今日のほうが ('o lado de hoje', o que ganha) + 昨日より ('do que ontem', a base) + 暑い ('quente'). É a ordem のほうが…より aplicada ao clima."}
+- 今日のほうが ('o lado de hoje', o que ganha) + 昨日より ('do que ontem', a base) + 暑い ('quente'). É a ordem のほうが…より aplicada ao clima.
 - frases: `sent:gen-326ea97de1a1`
 
-### 6. (recognition) {'pt-BR': "O japonês tem uma palavra separada para 'mais' (como em 'mais rápido')?"}
+### 6. (recognition) O japonês tem uma palavra separada para 'mais' (como em 'mais rápido')?
 - **Resposta:** `{"choices": ["Não: a ideia de 'mais' já vem da estrutura より/のほうが, e o adjetivo fica na forma normal", "Sim: usa-se もっと antes de todo adjetivo na comparação", "Sim: a palavra para 'mais' é ほう"], "correct": "Não: a ideia de 'mais' já vem da estrutura より/のほうが, e o adjetivo fica na forma normal"}`
-- {'pt-BR': "Diferente do português, não há um 'mais' avulso: 速い já significa 'rápido', e o sentido comparativo nasce do par より…のほうが. O adjetivo não muda de forma."}
+- Diferente do português, não há um 'mais' avulso: 速い já significa 'rápido', e o sentido comparativo nasce do par より…のほうが. O adjetivo não muda de forma.
 
 

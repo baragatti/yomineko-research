@@ -75,28 +75,28 @@ A expressão 迷惑をかける (めいわくをかける, "causar incômodo a a
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa "gratuito, de graça"?'}
+### 1. (recognition) Qual palavra significa "gratuito, de graça"?
 - **Resposta:** `{"choices": ["無料", "無視", "無駄", "迷惑"], "correct": "無料"}`
-- {'pt-BR': '無料 (むりょう) é "sem taxa = de graça"; 無視 é ignorar, 無駄 é desperdício e 迷惑 é incômodo.'}
+- 無料 (むりょう) é "sem taxa = de graça"; 無視 é ignorar, 無駄 é desperdício e 迷惑 é incômodo.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["虫歯", "cárie"], ["命令", "ordem"], ["名人", "mestre"], ["明確", "claro / preciso"]]}`
-- {'pt-BR': '虫歯 = dente cariado, 命令 = comando, 名人 = especialista, 明確 = nítido.'}
+- 虫歯 = dente cariado, 命令 = comando, 名人 = especialista, 明確 = nítido.
 
 
-### 3. (cloze) {'pt-BR': 'Complete "Ele quase nunca se irrita": 彼は＿＿怒らない。'}
+### 3. (cloze) Complete "Ele quase nunca se irrita": 彼は＿＿怒らない。
 - **Resposta:** `{"text": "滅多に", "full": "彼は滅多に怒らない。"}`
-- {'pt-BR': '滅多に (めったに) significa "raramente" e exige verbo negativo (怒らない = não se irrita).'}
+- 滅多に (めったに) significa "raramente" e exige verbo negativo (怒らない = não se irrita).
 
 
-### 4. (recognition) {'pt-BR': 'Qual palavra completa a expressão de etiqueta "causar incômodo aos outros": 人に＿＿をかける?'}
+### 4. (recognition) Qual palavra completa a expressão de etiqueta "causar incômodo aos outros": 人に＿＿をかける?
 - **Resposta:** `{"choices": ["迷惑", "無視", "命令", "メモ"], "correct": "迷惑"}`
-- {'pt-BR': '迷惑をかける (めいわくをかける) é "causar transtorno a alguém", combinação fixa da etiqueta japonesa.'}
+- 迷惑をかける (めいわくをかける) é "causar transtorno a alguém", combinação fixa da etiqueta japonesa.
 
 
-### 5. (production) {'pt-BR': 'Diga "A entrada deste museu é gratuita" usando 無料 (この博物館 = este museu, 入場 = entrada).'}
+### 5. (production) Diga "A entrada deste museu é gratuita" usando 無料 (この博物館 = este museu, 入場 = entrada).
 - **Resposta:** `{"text": "この博物館は入場無料です", "accept": ["この博物館は入場無料です。", "この博物館は入場無料だ", "この博物館は入場無料だ。", "この博物館は無料です", "この博物館は無料です。"]}`
-- {'pt-BR': '無料 (むりょう) é "gratuito"; aqui forma o predicado 入場無料です ("a entrada é de graça").'}
+- 無料 (むりょう) é "gratuito"; aqui forma o predicado 入場無料です ("a entrada é de graça").
 
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-masu-you-ni, n3-te-hoshii, n3-to-ii-naa] · vocabulário [ぐっすり, クリスマス, グループ, 加える, 加わる, 暮らし, 暮らす, 暮れ, 癖, 組, 組む, 緊張, 繰り返す, 苦しい, 苦しむ, 苦労, 苦痛, 訓練, 詳しい] · kanji [呼 様 申 良] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-148499`, `sent:tatoeba-234462`
 
 ---
 
@@ -84,28 +84,28 @@ Em templos e santuários, os japoneses penduram um 絵馬 (plaquinha de madeira)
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': "Complete: 友達＿手伝ってほしい ('quero que meu amigo me ajude'). Qual partícula marca quem você quer que aja?"}
+### 1. (particle_choice) Complete: 友達＿手伝ってほしい ('quero que meu amigo me ajude'). Qual partícula marca quem você quer que aja?
 - **Resposta:** `{"choices": ["に", "を", "が", "で"], "correct": "に"}`
-- {'pt-BR': "Em 〜てほしい, a pessoa de quem você deseja a ação leva に. Usar を (友達を手伝ってほしい) inverteria o sentido para 'quero que ajudem meu amigo'."}
+- Em 〜てほしい, a pessoa de quem você deseja a ação leva に. Usar を (友達を手伝ってほしい) inverteria o sentido para 'quero que ajudem meu amigo'.
 
 
-### 2. (recognition) {'pt-BR': 'Qual frase é uma prece/voto sincero, do tipo que se escreve num 絵馬 de templo?'}
+### 2. (recognition) Qual frase é uma prece/voto sincero, do tipo que se escreve num 絵馬 de templo?
 - **Resposta:** `{"choices": ["日本へ行きたいです", "試験に合格しますように", "友達を呼びました", "雨が降っています"], "correct": "試験に合格しますように"}`
-- {'pt-BR': "〜ますように expressa torcida/prece: 合格しますように = 'que eu passe na prova'. 行きたいです é vontade própria (〜たい), não um voto pelos céus."}
+- 〜ますように expressa torcida/prece: 合格しますように = 'que eu passe na prova'. 行きたいです é vontade própria (〜たい), não um voto pelos céus.
 
 
-### 3. (cloze) {'pt-BR': "Complete o desejo 'tomara que faça sol amanhã': 明日晴れる＿＿＿なあ。"}
+### 3. (cloze) Complete o desejo 'tomara que faça sol amanhã': 明日晴れる＿＿＿なあ。
 - **Resposta:** `{"text": "といい", "full": "明日晴れるといいなあ"}`
-- {'pt-BR': "〜といいなあ = 'tomara que...'. O verbo fica na forma de dicionário (晴れる) + といいなあ. O と aqui é um 'se' embutido ('seria bom se fizesse sol'), e o なあ dá o suspiro de torcida."}
+- 〜といいなあ = 'tomara que...'. O verbo fica na forma de dicionário (晴れる) + といいなあ. O と aqui é um 'se' embutido ('seria bom se fizesse sol'), e o なあ dá o suspiro de torcida.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada estrutura ao seu uso típico.'}
+### 4. (matching) Associe cada estrutura ao seu uso típico.
 - **Resposta:** `{"pairs": [["〜てほしい", "quero que outra pessoa faça algo"], ["〜といいなあ", "torcida informal e emotiva ('tomara que...')"], ["〜ますように", "voto sincero / prece ('oxalá dê tudo certo')"]]}`
-- {'pt-BR': '〜てほしい foca na ação de terceiros (agente com に); 〜といいなあ é coloquial e cheio de sentimento; 〜ますように é o desejo solene de carta ou templo.'}
+- 〜てほしい foca na ação de terceiros (agente com に); 〜といいなあ é coloquial e cheio de sentimento; 〜ますように é o desejo solene de carta ou templo.
 
 
-### 5. (production) {'pt-BR': "Diga 'Queria que você não fosse embora' usando a forma negativa de 〜てほしい com o verbo 帰る (kaeru, ir embora)."}
+### 5. (production) Diga 'Queria que você não fosse embora' usando a forma negativa de 〜てほしい com o verbo 帰る (kaeru, ir embora).
 - **Resposta:** `{"text": "帰らないでほしい", "accept": ["帰らないでほしい", "かえらないでほしい", "帰らないでほしいです", "かえらないでほしいです"]}`
-- {'pt-BR': "O negativo de 〜てほしい é 〜ないでほしい: 帰る vira 帰らない + でほしい = 'queria que você não fosse'. É direto e informal; em contexto formal usaríamos 帰らないでいただきたい."}
+- O negativo de 〜てほしい é 〜ないでほしい: 帰る vira 帰らない + でほしい = 'queria que você não fosse'. É direto e informal; em contexto formal usaríamos 帰らないでいただきたい.
 
 

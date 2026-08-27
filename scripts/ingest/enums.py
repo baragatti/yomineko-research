@@ -43,7 +43,12 @@ def deck_for(unlock_type: str, ref: str, level: str | None) -> str | None:
         script = (ident or "").split("-", 1)[0]  # hiragana / katakana
         return f"deck:kana-{script}" if script in ("hiragana", "katakana") else None
     if unlock_type in ("vocab", "kanji", "grammar"):
-        lv = level if level in ("n5", "n4") else "n5"
+        # pre-n5 lessons teach ahead into the n5 decks; any OTHER unknown level is a data error and
+        # must fail loudly — the silent `else "n5"` clamp filed all 2,072 N3 cards into N5 decks.
+        lv = "n5" if level == "pre-n5" else level
+        if f"deck:{unlock_type}-{lv}" not in DECK_REGISTRY:
+            raise ValueError(f"no SRS deck for {unlock_type} at level {level!r} — "
+                             f"add it to design/unlock_enums.json instead of clamping")
         return f"deck:{unlock_type}-{lv}"
     if unlock_type == "phrase":
         return "deck:phrases"

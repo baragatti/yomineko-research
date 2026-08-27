@@ -14,7 +14,24 @@ Three checks, in the order a defect matters:
                corpus by ID and never embeds it, so a dangling reference is a lesson that renders
                empty rather than a lesson that errors.
 
-Exit 0 only when all three pass. Advisory notes print but do not fail.
+Plus one structural check: an entity whose glob matches nothing is a FAILURE, not a quiet `0 records`.
+A stopped exporter and a moved directory both look like a passing gate otherwise.
+
+WHAT DECLARES AN ADDRESS, AND WHAT POINTS AT ONE
+------------------------------------------------
+This used to be decided by the key name: any id-shaped string under a key called `id` or `slug` was
+read as the record announcing its own address. That silently swallowed 20,570 foreign keys — a drill's
+`slug` naming the vocab it drills, a checkpoint's `id` naming an exam item, a topic's `lessons[].id`
+naming a lesson leaf — and, worse, a BROKEN one minted itself as a new address instead of being
+reported as dangling. The rule is now structural:
+
+  * the record root's `stable_id_field` (from the schema's x-yomineko block) declares;
+  * a map file's KEYS declare;
+  * plus the handful of nested paths in DECLARATIONS below, which genuinely own an address that exists
+    nowhere else (a lesson's own exercises, the speaking path's stages, the kana chart's groups);
+  * everything else that is id-shaped is an EDGE and has to land somewhere.
+
+Exit 0 only when all of it passes. Advisory notes print but do not fail.
 Usage: validate_contracts.py [--entity NAME] [--verbose]
 """
 from __future__ import annotations
@@ -39,6 +56,25 @@ except ImportError:
 
 MAX_REPORT = 12          # per entity; the rest are counted, not printed
 ID_PATTERN = re.compile(r"^([a-z][a-z0-9_]*):")
+
+# Nested paths that genuinely DECLARE an address — the record they name exists in no other file, so
+# there is nothing for the graph check to resolve them against. Paths are dotted, `[]` descends into an
+# array element, and `*` is a map key. Anything not listed here is a reference.
+DECLARATIONS: dict[str, set[str]] = {
+    # A lesson's exercises live inside the lesson; `<exercise ref="ex:…">` in the body points back here.
+    "lesson": {"exercises[].id"},
+    # The speaking path declares its own stages; speak_unit.stage points at one.
+    "speak_path": {"stages[].slug"},
+    # Group ids (kana:hiragana-a) exist only in the chart. Member ids do NOT — every one of them is a
+    # record in corpus/kana/, so members[].id stays a reference and gets resolved.
+    "kana_family": {"*[].id"},
+}
+
+# An entity whose stable_id_field is really a FOREIGN key. A conjugation table is addressed by the vocab
+# entry it inflects, so `vocab:1000730` is one address answered by two records. Registering it here as a
+# declaration would hide that; treating it as an edge both resolves it and keeps the ambiguity visible
+# (see contracts/common.schema.json → StableId). Uniqueness is still checked: one paradigm per word.
+ROOT_ID_IS_FOREIGN = {"conjugation": "slug"}
 
 
 def load_registry() -> Registry:
@@ -67,23 +103,26 @@ def records_of(path: Path, packing: str):
             yield f"{rel}[{key}]", rec
 
 
-def scan(node: object, declared: list[str], refs: list[str], under_id: bool = False) -> None:
+def scan(node: object, path: str, decl_paths: set[str], root_id: str | None,
+         declared: list[str], refs: list[str]) -> None:
     """Split the ID-shaped strings in a record into the ones it DECLARES and the ones it POINTS AT.
 
-    A value sitting under an `id` or `slug` key is that object announcing its own address — including
-    nested objects, because a course's stages and a lesson's exercises are addressable records too and
-    the rest of the corpus links straight to them. Everything else that looks like an ID is an edge,
-    and an edge has to land somewhere.
+    `path` is the position inside the record: `""` at the root, `checkpoint[].id` for a checkpoint's id,
+    `*[].members[].id` inside a map file. A string declares only when its path is the entity's own
+    stable_id_field at the root, or one of the explicitly declarable nested paths (see DECLARATIONS).
+    Everything else that looks like an ID is an edge, and an edge has to land somewhere.
     """
     if isinstance(node, str):
         if ID_PATTERN.match(node) and len(node) > 3:
-            (declared if under_id else refs).append(node)
+            is_decl = (path and path == root_id) or path in decl_paths
+            (declared if is_decl else refs).append(node)
     elif isinstance(node, list):
         for x in node:
-            scan(x, declared, refs, under_id)
+            scan(x, path + "[]", decl_paths, root_id, declared, refs)
     elif isinstance(node, dict):
         for k, v in node.items():
-            scan(v, declared, refs, k in ("id", "slug"))
+            child = k if not path else f"{path}.{k}"
+            scan(v, child, decl_paths, root_id, declared, refs)
 
 
 def main() -> int:
@@ -118,6 +157,8 @@ def main() -> int:
 
         validator = Draft202012Validator(doc, registry=registry)
         id_field = meta.get("stable_id_field")
+        root_id = None if entity in ROOT_ID_IS_FOREIGN else id_field
+        decl_paths = DECLARATIONS.get(entity, set())
         n_rec = n_bad = n_dup = 0
         shown = 0
         seen: dict[str, str] = {}
@@ -135,10 +176,21 @@ def main() -> int:
                             shown += 1
                 declared: list[str] = []
                 refs: list[str] = []
-                scan(rec, declared, refs)
-                if packing == "map":
-                    for k in rec:                      # in a map the KEY is the address
-                        known_ids.setdefault(k, entity)
+                if packing == "map" and isinstance(rec, dict):
+                    # In a map the KEY is the address, and the values sit under a `*` path so one
+                    # DECLARATIONS entry covers every key.
+                    for k, v in rec.items():
+                        if k in seen:
+                            n_dup += 1
+                            if shown < MAX_REPORT:
+                                fails.append(f"{entity}: duplicate key {k!r} — {locator} and {seen[k]}")
+                                shown += 1
+                        seen[k] = locator
+                        if ID_PATTERN.match(k):
+                            known_ids.setdefault(k, entity)
+                        scan(v, "*", decl_paths, root_id, declared, refs)
+                else:
+                    scan(rec, "", decl_paths, root_id, declared, refs)
                 for d in declared:
                     known_ids.setdefault(d, entity)
                 all_refs += [(entity, locator, r) for r in refs]
@@ -159,13 +211,22 @@ def main() -> int:
         summary.append((entity, n_rec, n_bad, n_dup))
         if (n_bad or n_dup) and shown >= MAX_REPORT:
             fails.append(f"{entity}: ...{n_bad} invalid + {n_dup} duplicate-id record(s) in total")
+        # An entity that validates nothing is not a passing entity. A moved directory, a renamed file
+        # or a stopped exporter all read as `0 records` and used to print [OK ].
+        if n_rec == 0:
+            fails.append(f"{entity}: glob {glob!r} matched 0 records — the data moved, the exporter "
+                         f"stopped, or the glob is wrong. Nothing was validated.")
 
-    # ---- aliases: the second, legitimate way to address a vocab record -------------------------
-    # The courseware writes `vocab:<headword>` (vocab:人) while corpus/vocab writes
-    # `vocab:<jmdict_id>` (vocab:1580640). Both are real and in use — 678,700 references take the
-    # first form and 584 the second — so the graph check has to accept both or it reports the entire
-    # course layer as broken. It is still worth knowing about: a headword is NOT a unique address,
-    # and the ambiguous ones are reported separately below.
+    # ---- aliases: the second, legacy way to address a vocab record -----------------------------
+    # corpus/vocab publishes `vocab:<jmdict_id>` (vocab:1580640), and after the vocab_identity migration
+    # that is the form of every vocab reference this check can SEE — the count printed below says how
+    # many of each, and it is the evidence for that claim rather than a comment asserting it. The table
+    # stays because the headword form is not gone from the tree: it survives inside lesson-body markup
+    # (`<check item-ref="vocab:人">`), which this scanner does not parse — ID_PATTERN is anchored at the
+    # start of a string and a body starts with `<heading` — and in corpus/readings, which addresses
+    # vocabulary by bare headword with no namespace at all. The moment either is wired into the graph
+    # check, dropping the alias would report legitimate legacy references as broken.
+    # A headword is NOT a unique address; the ambiguous ones in use are reported separately.
     alias: dict[str, list[str]] = {}
     for path in sorted(ROOT.glob("corpus/vocab/*.json")):
         for r in json.loads(path.read_text(encoding="utf-8")):
@@ -214,9 +275,17 @@ def main() -> int:
     # layer onto slugs, which is a migration, not a validation.
     ambiguous = {a: v for a, v in alias.items() if len(v) > 1}
     used = Counter()
+    by_form = Counter()
     for _, _, rid in all_refs:
+        if rid.startswith("vocab:"):
+            by_form["slug" if rid.split(":", 1)[1].isascii()
+                    and rid.split(":", 1)[1].isdigit() else "headword"] += 1
         if rid in ambiguous:
             used[rid] += 1
+    if by_form:
+        print()
+        print(f"  [info] vocab references: {by_form['slug']} by published slug, "
+              f"{by_form['headword']} still by headword (the alias table below covers those).")
     if used:
         print()
         print(f"  [info] {len(used)} ambiguous headword address(es) in use "

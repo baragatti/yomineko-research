@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [n3-kara-ni-kakete, n3-tabi-ni, n3-tsuide-ni] · vocabulário [一家, 一層, 一度に, 一方, 一時, 一生, 一種, 一致, 一般, 位置, 市場, 従兄弟, 移動] · kanji [加 取 和 平 期 機] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11022968`, `sent:tatoeba-10914932`
 
 ---
 
@@ -79,28 +79,28 @@ Resolva os exercícios; confira a explicação de cada um.
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': '朝___夜___雨が降った。 (Choveu da manhã à noite.) Qual par completa?'}
+### 1. (particle_choice) 朝___夜___雨が降った。 (Choveu da manhã à noite.) Qual par completa?
 - **Resposta:** `{"choices": ["から ... にかけて", "まで ... から", "にかけて ... から", "から ... までに"], "correct": "から ... にかけて"}`
-- {'pt-BR': 'から marca o início e にかけて o fim da faixa contínua e difusa: ao longo de todo o período da manhã à noite.'}
+- から marca o início e にかけて o fim da faixa contínua e difusa: ao longo de todo o período da manhã à noite.
 
 
-### 2. (cloze) {'pt-BR': 'Complete: この歌を聞く___彼女を思い出す。 (Toda vez que ouço esta música, me lembro dela.)'}
-- **Resposta:** `{"text": "この歌を聞く___彼女を思い出す", "full": "この歌を聞くたびに彼女を思い出す"}`
-- {'pt-BR': 'Verbo na forma de dicionário + たびに expressa a repetição: a cada vez que a ação ocorre, vem a reação.'}
+### 2. (cloze) Complete: この歌を聞く___彼女を思い出す。 (Toda vez que ouço esta música, me lembro dela.)
+- **Resposta:** `{"text": "たびに", "full": "この歌を聞くたびに彼女を思い出す"}`
+- Verbo na forma de dicionário + たびに expressa a repetição: a cada vez que a ação ocorre, vem a reação.
 
 
-### 3. (recognition) {'pt-BR': 'Qual frase usa ついでに corretamente?'}
+### 3. (recognition) Qual frase usa ついでに corretamente?
 - **Resposta:** `{"choices": ["買い物に行くついでに手紙を出した", "手紙を出すついでに手紙を出した", "ついでに買い物に行った", "毎日ついでに勉強する"], "correct": "買い物に行くついでに手紙を出した"}`
-- {'pt-BR': 'A ação principal (fazer compras) tem propósito próprio; postar a carta pega carona nela. As outras não têm ação principal independente.'}
+- A ação principal (fazer compras) tem propósito próprio; postar a carta pega carona nela. As outras não têm ação principal independente.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu sentido.'}
+### 4. (matching) Associe cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["一般", "geral"], ["一致", "concordância"], ["移動", "deslocamento"], ["一方", "por outro lado"]]}`
-- {'pt-BR': '一般 いっぱん geral; 一致 いっち concordância; 移動 いどう deslocamento; 一方 いっぽう por outro lado.'}
+- 一般 いっぱん geral; 一致 いっち concordância; 移動 いどう deslocamento; 一方 いっぽう por outro lado.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Já que ia fazer compras, aproveitei para postar a carta.' (use ついでに)"}
+### 5. (production) Escreva em japonês: 'Já que ia fazer compras, aproveitei para postar a carta.' (use ついでに)
 - **Resposta:** `{"text": "買い物に行くついでに手紙を出した", "accept": ["買い物に行くついでに手紙を出した", "買い物のついでに手紙を出した", "かいものにいくついでにてがみをだした"]}`
-- {'pt-BR': 'A saída para compras é a ação com propósito; ついでに encaixa a tarefa secundária de postar a carta.'}
+- A saída para compras é a ação com propósito; ついでに encaixa a tarefa secundária de postar a carta.
 
 

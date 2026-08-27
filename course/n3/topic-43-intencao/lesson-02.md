@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-koto-ni-natte-iru, n3-koto-ni-shite-iru, n3-tsumori-deshita] · vocabulário [企業, 勘定, 帰宅, 感心, 感謝, 歓迎, 火曜, 環境, 監督, 管理, 議会, 議員, 関する, 関連] · kanji [例 宅 席 番 規 配] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1119969`, `sent:tatoeba-152735`
 
 ---
 
@@ -75,28 +75,28 @@ Decisões coletivas vivem no mundo do trabalho e das instituições. Guarde este
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': 'Regra da empresa, válida para todos: この会社では靴を脱ぐこと＿なっている。 Qual partícula completa a estrutura?'}
+### 1. (particle_choice) Regra da empresa, válida para todos: この会社では靴を脱ぐこと＿なっている。 Qual partícula completa a estrutura?
 - **Resposta:** `{"choices": ["に", "を", "で", "と"], "correct": "に"}`
-- {'pt-BR': "A estrutura é 〜ことになっている: こと + に + なっている. Marca uma norma externa já estabelecida ('é regra tirar os sapatos'). A partícula に é fixa nessa construção."}
+- A estrutura é 〜ことになっている: こと + に + なっている. Marca uma norma externa já estabelecida ('é regra tirar os sapatos'). A partícula に é fixa nessa construção.
 
 
-### 2. (recognition) {'pt-BR': "Você mesmo decidiu e mantém: 'faço questão de acordar cedo toda manhã'. Qual frase encaixa?"}
+### 2. (recognition) Você mesmo decidiu e mantém: 'faço questão de acordar cedo toda manhã'. Qual frase encaixa?
 - **Resposta:** `{"choices": ["毎朝早く起きることにしている", "毎朝早く起きることになっている", "毎朝早く起きるつもりでした", "毎朝早く起きようとしない"], "correct": "毎朝早く起きることにしている"}`
-- {'pt-BR': 'ことにしている marca uma regra pessoal autoimposta e mantida. ことになっている seria uma regra externa; つもりでした seria um plano passado frustrado; ようとしない seria recusa de terceiros.'}
+- ことにしている marca uma regra pessoal autoimposta e mantida. ことになっている seria uma regra externa; つもりでした seria um plano passado frustrado; ようとしない seria recusa de terceiros.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'ontem eu pretendia estudar, mas acabei dormindo': 昨日勉強する___が、寝てしまいました。"}
+### 3. (cloze) Complete 'ontem eu pretendia estudar, mas acabei dormindo': 昨日勉強する___が、寝てしまいました。
 - **Resposta:** `{"text": "つもりでした", "full": "昨日勉強するつもりでしたが、寝てしまいました"}`
-- {'pt-BR': "つもりでした joga a intenção para o passado frustrado: 'eu pretendia, mas não deu'. O が introduz o que atrapalhou o plano. Repare que つもりです (presente) não caberia, pois o plano falhou."}
+- つもりでした joga a intenção para o passado frustrado: 'eu pretendia, mas não deu'. O が introduz o que atrapalhou o plano. Repare que つもりです (presente) não caberia, pois o plano falhou.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada estrutura ao tipo de decisão.'}
+### 4. (matching) Ligue cada estrutura ao tipo de decisão.
 - **Resposta:** `{"pairs": [["〜つもりでした", "plano do passado que falhou"], ["〜ことにしている", "regra pessoal autoimposta"], ["〜ことになっている", "norma externa, do grupo"]]}`
-- {'pt-BR': 'つもりでした = intenção passada não cumprida; ことにしている = você se impõe e mantém; ことになっている = a instituição ou o grupo decidiu por todos.'}
+- つもりでした = intenção passada não cumprida; ことにしている = você se impõe e mantém; ことになっている = a instituição ou o grupo decidiu por todos.
 
 
-### 5. (production) {'pt-BR': "Diga 'à noite faço questão de não tomar café' usando 〜ことにしている. (夜 = à noite, コーヒー = café, 飲む = tomar)"}
+### 5. (production) Diga 'à noite faço questão de não tomar café' usando 〜ことにしている. (夜 = à noite, コーヒー = café, 飲む = tomar)
 - **Resposta:** `{"text": "夜はコーヒーを飲まないことにしている", "accept": ["夜はコーヒーを飲まないことにしている。", "よるはコーヒーをのまないことにしている", "夜コーヒーを飲まないことにしている"]}`
-- {'pt-BR': "Para o que você decide NÃO fazer, use a negativa casual 飲まない + ことにしている: 飲まないことにしている = 'faço questão de não tomar'. O tema 夜 leva は e o objeto コーヒー leva を."}
+- Para o que você decide NÃO fazer, use a negativa casual 飲まない + ことにしている: 飲まないことにしている = 'faço questão de não tomar'. O tema 夜 leva は e o objeto コーヒー leva を.
 
 

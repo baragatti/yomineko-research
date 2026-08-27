@@ -66,28 +66,28 @@ O kanji 商 ('comércio, negociar, comerciante') aparece em 商人 ('comerciante
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'atleta, jogador'?"}
+### 1. (recognition) Qual palavra significa 'atleta, jogador'?
 - **Resposta:** `{"choices": ["選手", "選択", "前進", "速度"], "correct": "選手"}`
-- {'pt-BR': "選手 (せんしゅ) é o atleta. 選択 é 'escolha', 前進 é 'avanço' e 速度 é 'velocidade'."}
+- 選手 (せんしゅ) é o atleta. 選択 é 'escolha', 前進 é 'avanço' e 速度 é 'velocidade'.
 
 
-### 2. (recognition) {'pt-BR': "Você quer dizer que um produto é vendido em 'todo o país'. Qual palavra usar?"}
+### 2. (recognition) Você quer dizer que um produto é vendido em 'todo o país'. Qual palavra usar?
 - **Resposta:** `{"choices": ["全国", "全体", "先日", "前者"], "correct": "全国"}`
-- {'pt-BR': "全国 (ぜんこく) é 'o país inteiro'. 全体 é 'o todo', 先日 é 'outro dia' e 前者 é 'o primeiro (dos dois)'."}
+- 全国 (ぜんこく) é 'o país inteiro'. 全体 é 'o todo', 先日 é 'outro dia' e 前者 é 'o primeiro (dos dois)'.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu sentido.'}
+### 3. (matching) Ligue cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["装置", "aparelho, dispositivo"], ["速度", "velocidade"], ["増加", "aumento"], ["騒音", "barulho, ruído"]]}`
-- {'pt-BR': '装置=aparelho, 速度=velocidade, 増加=aumento, 騒音=barulho. São palavras frequentes em textos sobre máquinas e cidade.'}
+- 装置=aparelho, 速度=velocidade, 増加=aumento, 騒音=barulho. São palavras frequentes em textos sobre máquinas e cidade.
 
 
-### 4. (cloze) {'pt-BR': "Complete 'A operação deste aparelho é simples': この装置の＿＿は簡単だ。"}
+### 4. (cloze) Complete 'A operação deste aparelho é simples': この装置の＿＿は簡単だ。
 - **Resposta:** `{"text": "操作", "full": "この装置の操作は簡単だ"}`
-- {'pt-BR': "操作 (そうさ) é 'operação, manuseio'. Combina com 装置 (aparelho) para falar de como se maneja a máquina."}
+- 操作 (そうさ) é 'operação, manuseio'. Combina com 装置 (aparelho) para falar de como se maneja a máquina.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'A velocidade do carro aumentou.' (use 速度 e 増加)"}
+### 5. (production) Escreva em japonês: 'A velocidade do carro aumentou.' (use 速度 e 増加)
 - **Resposta:** `{"text": "車の速度が増加した", "accept": ["車の速度が増加した", "くるまのそくどがぞうかした", "車の速度が増加しました"]}`
-- {'pt-BR': '速度 (velocidade) + 増加する (aumentar) descreve o carro acelerando. O passado 増加した fecha a ideia.'}
+- 速度 (velocidade) + 増加する (aumentar) descreve o carro acelerando. O passado 増加した fecha a ideia.
 
 

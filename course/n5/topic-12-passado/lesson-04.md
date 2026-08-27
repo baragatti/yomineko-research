@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [naa] · vocabulário [でも, どうぞ, 丁度, 動, 動物, 天気, 度, 迚も, 飛ぶ, 鳥, 鶏肉] · kanji [金 高] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-77673`, `sent:tatoeba-203366`, `sent:tatoeba-3488338`, `sent:tatoeba-229334`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3488338`, `sent:tatoeba-229334`, `sent:tatoeba-77673`, `sent:tatoeba-203366`
 
 ---
 
@@ -49,8 +49,8 @@ Ao pé da letra é "que bom...", mas o なあ carrega aquele tom de inveja gosto
 Aqui temos a estrutura completa: 天気 (tempo/clima) + だ (cópula casual) + なあ. É a admiração de quem olha para o céu e comenta sozinho: "que tempo bom, hein!".
 
 #### Kanji da vez: 金 e 高
-金 significa "ouro" e, por extensão, dinheiro. Leitura kunかね, como em お金 ("dinheiro"); leitura onキン, como em 金曜日 ("sexta-feira"). Para a forma: imagine um telhado protegendo duas pepitas de ouro escondidas embaixo.
-高 significa "alto", "elevado" e também "caro". Leitura kunたか, como em 高い ("alto / caro"); leitura onコウ, como em 高校 ("ensino médio"). Para a forma: enxergue um prédio alto com telhado, janela e uma boca lá embaixo, esticado para cima.
+金 significa "ouro" e, por extensão, dinheiro. Leitura kun かね, como em お金 ("dinheiro"); leitura on キン, como em 金曜日 ("sexta-feira"). Para a forma: imagine um telhado protegendo duas pepitas de ouro escondidas embaixo.
+高 significa "alto", "elevado" e também "caro". Leitura kun たか, como em 高い ("alto / caro"); leitura on コウ, como em 高校 ("ensino médio"). Para a forma: enxergue um prédio alto com telhado, janela e uma boca lá embaixo, esticado para cima.
 
 > **[tip]**
 Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ transforma o preço alto em um lamento bem natural.
@@ -79,28 +79,28 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que a partícula final なあ acrescenta a uma frase como いい天気だなあ?'}
+### 1. (recognition) O que a partícula final なあ acrescenta a uma frase como いい天気だなあ?
 - **Resposta:** `{"choices": ["uma emoção dita em voz alta (admiração, vontade, suspiro)", "uma pergunta", "uma proibição"], "correct": "uma emoção dita em voz alta (admiração, vontade, suspiro)"}`
-- {'pt-BR': "なあ não muda o sentido da frase; ele acrescenta a emoção. É o 'suspiro' da frase, dito muitas vezes para si mesmo: 'que tempo bom, hein!'."}
+- なあ não muda o sentido da frase; ele acrescenta a emoção. É o 'suspiro' da frase, dito muitas vezes para si mesmo: 'que tempo bom, hein!'.
 
 
-### 2. (particle_choice) {'pt-BR': "Você está sozinho(a) e quer comentar 'ah, como eu gosto de animais...'. Complete: 動物が好きだ＿。"}
+### 2. (particle_choice) Você está sozinho(a) e quer comentar 'ah, como eu gosto de animais...'. Complete: 動物が好きだ＿。
 - **Resposta:** `{"choices": ["なあ", "か", "を"], "correct": "なあ"}`
-- {'pt-BR': "なあ solta a emoção em voz alta depois de だ. O か depois de だ não forma pergunta (a pergunta seria 好きか) e o を é partícula de objeto, que nunca fecha a frase. Aqui queremos o suspiro: 'ah, como eu gosto...'."}
+- なあ solta a emoção em voz alta depois de だ. O か depois de だ não forma pergunta (a pergunta seria 好きか) e o を é partícula de objeto, que nunca fecha a frase. Aqui queremos o suspiro: 'ah, como eu gosto...'.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a partícula de emoção (suspiro de quem achou caro): 高かった＿。 (Nossa, como foi caro...)'}
+### 3. (cloze) Complete com a partícula de emoção (suspiro de quem achou caro): 高かった＿。 (Nossa, como foi caro...)
 - **Resposta:** `{"text": "なあ", "full": "高かったなあ"}`
-- {'pt-BR': "なあ gruda no fim, até depois do passado 高かった ('foi caro'). O resultado é o lamento natural 'nossa, como foi caro...'."}
+- なあ gruda no fim, até depois do passado 高かった ('foi caro'). O resultado é o lamento natural 'nossa, como foi caro...'.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Que tempo bom, hein!' com as peças: [なあ] [いい] [だ] [天気]"}
+### 4. (sentence_build) Monte 'Que tempo bom, hein!' com as peças: [なあ] [いい] [だ] [天気]
 - **Resposta:** `{"order": ["いい", "天気", "だ", "なあ"], "text": "いい天気だなあ。"}`
-- {'pt-BR': 'いい (bom) + 天気 (tempo) + だ (cópula casual) + なあ (emoção). A partícula de emoção fica sempre por último, depois de だ.'}
+- いい (bom) + 天気 (tempo) + だ (cópula casual) + なあ (emoção). A partícula de emoção fica sempre por último, depois de だ.
 
 
-### 5. (production) {'pt-BR': "Você vê um pássaro voando e suspira 'Ah, que inveja...' usando o adjetivo いい (bom) e a partícula de emoção."}
+### 5. (production) Você vê um pássaro voando e suspira 'Ah, que inveja...' usando o adjetivo いい (bom) e a partícula de emoção.
 - **Resposta:** `{"text": "いいなあ。", "accept": ["いいなあ", "いいなあ。", "いいな", "いいな。"]}`
-- {'pt-BR': "いい (bom) + なあ vira o suspiro 'que inveja!' / 'ah, que bom...'. Na escrita, なあ ou só な representam a mesma partícula (a vogal esticada)."}
+- いい (bom) + なあ vira o suspiro 'que inveja!' / 'ah, que bom...'. Na escrita, なあ ou só な representam a mesma partícula (a vogal esticada).
 - frases: `sent:tatoeba-3488338`
 

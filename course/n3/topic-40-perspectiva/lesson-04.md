@@ -67,28 +67,28 @@ Um lote de katakana, vários do mundo esportivo.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual verbo significa 'passar o tempo, levar a vida'?"}
+### 1. (recognition) Qual verbo significa 'passar o tempo, levar a vida'?
 - **Resposta:** `{"choices": ["過ごす (すごす)", "救う (すくう)", "優れる (すぐれる)"], "correct": "過ごす (すごす)"}`
-- {'pt-BR': '過ごす = passar o tempo. 救う = salvar; 優れる = sobressair.'}
+- 過ごす = passar o tempo. 救う = salvar; 優れる = sobressair.
 
 
-### 2. (recognition) {'pt-BR': 'Em <jp reading="せんせいがこのほんをすすめてくれた">先生がこの本を勧めてくれた</jp>, qual o sentido de 勧める?'}
+### 2. (recognition) Em 先生がこの本を勧めてくれた, qual o sentido de 勧める?
 - **Resposta:** `{"choices": ["adiantar (relógio)", "recomendar", "salvar"], "correct": "recomendar"}`
-- {'pt-BR': '勧める (すすめる) = recomendar. Não confunda com 進める (avançar/adiantar).'}
+- 勧める (すすめる) = recomendar. Não confunda com 進める (avançar/adiantar).
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra do bloco す à tradução.'}
+### 3. (matching) Associe cada palavra do bloco す à tradução.
 - **Resposta:** `{"pairs": [["姿", "silhueta / figura"], ["数字", "algarismo"], ["睡眠", "sono"], ["スキー", "esqui"]]}`
-- {'pt-BR': '姿 = silhueta; 数字 = algarismo; 睡眠 = sono; スキー = esqui.'}
+- 姿 = silhueta; 数字 = algarismo; 睡眠 = sono; スキー = esqui.
 
 
-### 4. (cloze) {'pt-BR': "Complete com a palavra para 'silhueta/figura': 遠くに友達の＿＿が見えた。"}
+### 4. (cloze) Complete com a palavra para 'silhueta/figura': 遠くに友達の＿＿が見えた。
 - **Resposta:** `{"text": "姿", "full": "遠くに友達の姿が見えた。"}`
-- {'pt-BR': '姿 (すがた) é a figura ou silhueta de alguém vista de longe.'}
+- 姿 (すがた) é a figura ou silhueta de alguém vista de longe.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'No inverno curto esqui e patinação' usando スキー, スケート e 楽しむ."}
+### 5. (production) Diga em japonês 'No inverno curto esqui e patinação' usando スキー, スケート e 楽しむ.
 - **Resposta:** `{"text": "冬はスキーとスケートを楽しむ", "accept": ["冬はスキーとスケートを楽しむ", "ふゆはスキーとスケートをたのしむ", "冬にスキーとスケートを楽しむ", "冬はスケートとスキーを楽しむ"]}`
-- {'pt-BR': '冬は (no inverno) + スキーとスケートを (esqui e patinação) + 楽しむ (curtir).'}
+- 冬は (no inverno) + スキーとスケートを (esqui e patinação) + 楽しむ (curtir).
 
 

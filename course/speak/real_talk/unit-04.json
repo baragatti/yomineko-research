@@ -4,7 +4,7 @@
   "stage": "speak:real_talk",
   "order": 4,
   "title": {
-    "pt-BR": "Conversa de verdade — parte 4"
+    "pt-BR": "Conversa de verdade, parte 4"
   },
   "say_now": [
     "sent:tatoeba-169225",
@@ -31,7 +31,7 @@
     "gram:nagara",
     "gram:tagaru",
     "gram:to-iu",
-    "gram:donna"
+    "gram:garu-gatteiru"
   ],
   "kanji_recognition": [
     "今",
@@ -54,6 +54,127 @@
   "cumulative_known_vocab": 571,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nagara",
+      "examples": [
+        "sent:tatoeba-83211",
+        "sent:tatoeba-83210",
+        "sent:tatoeba-226844"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tagaru",
+      "examples": [
+        "sent:tatoeba-9971758",
+        "sent:tatoeba-163525",
+        "sent:tatoeba-4117192"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-83621",
+        "sent:tatoeba-80590"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:garu-gatteiru",
+      "examples": [
+        "sent:gen-a0d367f9d037",
+        "sent:gen-2424c6ff626d",
+        "sent:gen-0ce029328959"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ficávamos sentados nos aquecendo perto do fogo.",
+      "answer_key": "火にあたりながらすわっていた。",
+      "accepted_variants": [
+        "ひにあたりながらすわっていた",
+        "ひにあたりながらすわっていた。",
+        "火にあたりながらすわっていた",
+        "火にあたりながらすわっていた。"
+      ],
+      "sentence": "sent:tatoeba-186754",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A vida não é só diversão e brincadeira.",
+      "answer_key": "人生は楽しみや遊びばかりでない。",
+      "accepted_variants": [
+        "じんせいわたのしみやあそびばかりでない",
+        "じんせいわたのしみやあそびばかりでない。",
+        "人生は楽しみや遊びばかりでない",
+        "人生は楽しみや遊びばかりでない。"
+      ],
+      "sentence": "sent:tatoeba-143985",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Sendo assim, eu não pude comparecer.",
+      "answer_key": "そういうわけだから私は出席できなかったのです。",
+      "accepted_variants": [
+        "そういうわけだからわたしわしゅっせきできなかったのです",
+        "そういうわけだからわたしわしゅっせきできなかったのです。",
+        "そういうわけだから私は出席できなかったのです",
+        "そういうわけだから私は出席できなかったのです。"
+      ],
+      "sentence": "sent:tatoeba-213957",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
+    "items": [
+      "sent:tatoeba-211899",
+      "sent:tatoeba-120314",
+      "sent:tatoeba-123542",
+      "sent:tatoeba-1227292",
+      "sent:tatoeba-10050266",
+      "sent:tatoeba-90133"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 25,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "cf:n3:5504:1977",
@@ -105,120 +226,5 @@
         "つぎ"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:janai-dewa-nai",
-      "examples": [
-        "sent:tatoeba-229343",
-        "sent:tatoeba-228269",
-        "sent:tatoeba-227828"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-89",
-      "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nagara",
-      "examples": [
-        "sent:tatoeba-83211",
-        "sent:tatoeba-83210",
-        "sent:tatoeba-226844"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tagaru",
-      "examples": [
-        "sent:tatoeba-9971758",
-        "sent:tatoeba-163525",
-        "sent:tatoeba-4117192"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-83621",
-        "sent:tatoeba-80590"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:donna",
-      "examples": [
-        "sent:tatoeba-199382",
-        "sent:tatoeba-171732",
-        "sent:tatoeba-199480"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Ficávamos sentados nos aquecendo perto do fogo.",
-      "answer_key": "火にあたりながらすわっていた。",
-      "accepted_variants": [
-        "火にあたりながらすわっていた",
-        "火にあたりながらすわっていた。"
-      ],
-      "sentence": "sent:tatoeba-186754",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "A vida não é só diversão e brincadeira.",
-      "answer_key": "人生は楽しみや遊びばかりでない。",
-      "accepted_variants": [
-        "人生は楽しみや遊びばかりでない",
-        "人生は楽しみや遊びばかりでない。"
-      ],
-      "sentence": "sent:tatoeba-143985",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Sendo assim, eu não pude comparecer.",
-      "answer_key": "そういうわけだから私は出席できなかったのです。",
-      "accepted_variants": [
-        "そういうわけだから私は出席できなかったのです",
-        "そういうわけだから私は出席できなかったのです。"
-      ],
-      "sentence": "sent:tatoeba-213957",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
-    "items": [
-      "sent:tatoeba-211899",
-      "sent:tatoeba-120314",
-      "sent:tatoeba-123542",
-      "sent:tatoeba-1227292",
-      "sent:tatoeba-10050266",
-      "sent:tatoeba-90133"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 30,
-    "fluency": 6
-  }
+  ]
 }

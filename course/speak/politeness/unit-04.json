@@ -4,7 +4,7 @@
   "stage": "speak:politeness",
   "order": 4,
   "title": {
-    "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 4"
+    "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 4"
   },
   "say_now": [
     "sent:tatoeba-123791",
@@ -55,58 +55,6 @@
   "cumulative_known_vocab": 491,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:832",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3529",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:5250:1257",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "説明",
-        "何時",
-        "赤い"
-      ]
-    },
-    {
-      "id": "kr:n4:1257",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きれい",
-        "いくつ",
-        "しまる"
-      ]
-    },
-    {
-      "id": "kr:n4:1321",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とくべつ",
-        "すずしい",
-        "ちいさな"
-      ]
-    },
-    {
-      "id": "cf:n3:1732:2803",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "乗る",
-        "壊す",
-        "寝る"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-150"
   ],
@@ -162,6 +110,8 @@
       "prompt_pt": "Eu gostaria de aproveitar esta oportunidade.",
       "answer_key": "この機会を私は利用させていただきたい。",
       "accepted_variants": [
+        "このきかいをわたしわりようさせていただきたい",
+        "このきかいをわたしわりようさせていただきたい。",
         "この機会を私は利用させていただきたい",
         "この機会を私は利用させていただきたい。"
       ],
@@ -172,6 +122,8 @@
       "prompt_pt": "Por favor, sirva-se à vontade.",
       "answer_key": "どうぞお上がりください。",
       "accepted_variants": [
+        "どうぞおあがりください",
+        "どうぞおあがりください。",
         "どうぞお上がりください",
         "どうぞお上がりください。"
       ],
@@ -182,6 +134,8 @@
       "prompt_pt": "Seria possível eu tirar folga na semana que vem?",
       "answer_key": "来週休みを取ってもよろしいでしょうか。",
       "accepted_variants": [
+        "らいしゅうやすみをとってもよろしいでしょうか",
+        "らいしゅうやすみをとってもよろしいでしょうか。",
         "来週休みを取ってもよろしいでしょうか",
         "来週休みを取ってもよろしいでしょうか。"
       ],
@@ -204,15 +158,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:832",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3529",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:5250:1257",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "説明",
+        "何時",
+        "赤い"
+      ]
+    },
+    {
+      "id": "kr:n4:1257",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きれい",
+        "いくつ",
+        "しまる"
+      ]
+    },
+    {
+      "id": "kr:n4:1321",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とくべつ",
+        "すずしい",
+        "ちいさな"
+      ]
+    },
+    {
+      "id": "cf:n3:1732:2803",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "乗る",
+        "壊す",
+        "寝る"
+      ]
+    }
+  ]
 }

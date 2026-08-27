@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-ba-noni, n3-ba-yokatta] · vocabulário [—] · kanji [候 客 師 敗 横 深 満 登 科 積 路 達] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-4812`, `sent:tatoeba-3179585`
 
 ---
 
@@ -67,28 +67,28 @@ O par 師 + 走 forma 師走, o nome poético de dezembro: 'até o mestre corre'
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Em もっと勉強すればよかった, o que よかった expressa?'}
+### 1. (recognition) Em もっと勉強すればよかった, o que よかった expressa?
 - **Resposta:** `{"choices": ["Alívio: 'que bom que estudei'", "Lamento: 'eu devia ter estudado mais'", "Uma ordem para estudar", "Uma pergunta sobre estudar"], "correct": "Lamento: 'eu devia ter estudado mais'"}`
-- {'pt-BR': "Em 〜ばよかった o よかった carrega LAMENTO ('teria sido bom se...'), não alívio. すればよかった = 'eu devia ter estudado'. Cuidado para não associar a 'que bom!'."}
+- Em 〜ばよかった o よかった carrega LAMENTO ('teria sido bom se...'), não alívio. すればよかった = 'eu devia ter estudado'. Cuidado para não associar a 'que bom!'.
 
 
-### 2. (cloze) {'pt-BR': "Complete o lamento 'se você tivesse vindo um pouco mais cedo, teria dado tempo...': もう少し早く来れば、間に合った＿＿。"}
+### 2. (cloze) Complete o lamento 'se você tivesse vindo um pouco mais cedo, teria dado tempo...': もう少し早く来れば、間に合った＿＿。
 - **Resposta:** `{"text": "のに", "full": "もう少し早く来れば、間に合ったのに"}`
-- {'pt-BR': "ば〜のに expressa lamento por algo que não se cumpriu. 来れば põe a condição não realizada; 間に合ったのに ('teria dado tempo, mas...') carrega o suspiro. Aqui のに não é 'apesar de', e sim 'se ao menos...'."}
+- ば〜のに expressa lamento por algo que não se cumpriu. 来れば põe a condição não realizada; 間に合ったのに ('teria dado tempo, mas...') carrega o suspiro. Aqui のに não é 'apesar de', e sim 'se ao menos...'.
 
 
-### 3. (recognition) {'pt-BR': "Qual frase significa 'eu não devia ter dito aquilo' (arrependimento de algo que você FEZ)?"}
+### 3. (recognition) Qual frase significa 'eu não devia ter dito aquilo' (arrependimento de algo que você FEZ)?
 - **Resposta:** `{"choices": ["あんなことを言えばよかった", "あんなことを言わなければよかった", "あんなことを言いますか", "あんなことを言うといいなあ"], "correct": "あんなことを言わなければよかった"}`
-- {'pt-BR': "Para lamentar uma ação que aconteceu e foi erro, usa-se a negativa + ば: 〜なければよかった. 言わなければよかった = 'não devia ter dito'. A primeira opção (言えばよかった) seria o oposto: 'devia ter dito'."}
+- Para lamentar uma ação que aconteceu e foi erro, usa-se a negativa + ば: 〜なければよかった. 言わなければよかった = 'não devia ter dito'. A primeira opção (言えばよかった) seria o oposto: 'devia ter dito'.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Você devia ter ido, viu' (cutucada gentil para a outra pessoa) com as peças: [のに] [行けば] [よかった]"}
+### 4. (sentence_build) Monte 'Você devia ter ido, viu' (cutucada gentil para a outra pessoa) com as peças: [のに] [行けば] [よかった]
 - **Resposta:** `{"order": ["行けば", "よかった", "のに"], "text": "行けばよかったのに"}`
-- {'pt-BR': "行く vira 行けば (condicional ば) + よかった ('teria sido bom') + のに, que aqui dá o tom de 'que pena que você não foi'. Sem o のに, seria você lamentando a si mesmo; com ele, vira um cutucão amigável dirigido ao outro."}
+- 行く vira 行けば (condicional ば) + よかった ('teria sido bom') + のに, que aqui dá o tom de 'que pena que você não foi'. Sem o のに, seria você lamentando a si mesmo; com ele, vira um cutucão amigável dirigido ao outro.
 
 
-### 5. (production) {'pt-BR': "Diga 'Eu devia ter acumulado mais experiência' usando 〜ばよかった com 経験を積む (acumular experiência)."}
+### 5. (production) Diga 'Eu devia ter acumulado mais experiência' usando 〜ばよかった com 経験を積む (acumular experiência).
 - **Resposta:** `{"text": "もっと経験を積めばよかった", "accept": ["もっと経験を積めばよかった", "経験を積めばよかった", "もっとけいけんをつめばよかった", "もっと経験を積めば良かった"]}`
-- {'pt-BR': "積む vira 積めば (condicional ば) + よかった = 'eu devia ter acumulado'. もっと ('mais') reforça o arrependimento. É sempre sobre o passado e sobre você mesmo."}
+- 積む vira 積めば (condicional ば) + よかった = 'eu devia ter acumulado'. もっと ('mais') reforça o arrependimento. É sempre sobre o passado e sobre você mesmo.
 
 

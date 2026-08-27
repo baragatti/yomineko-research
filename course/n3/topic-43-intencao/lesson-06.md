@@ -66,28 +66,28 @@ Não confunda ところが com ところで. ところが introduz um contraste 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'independência / virar-se sozinho'?"}
+### 1. (recognition) Qual palavra significa 'independência / virar-se sozinho'?
 - **Resposta:** `{"choices": ["独立", "独身", "読書"], "correct": "独立"}`
-- {'pt-BR': "独立 (どくりつ) é independência. 独身 é 'solteiro' e 読書, 'leitura'."}
+- 独立 (どくりつ) é independência. 独身 é 'solteiro' e 読書, 'leitura'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["登山", "montanhismo"], ["毒", "veneno"], ["特徴", "característica"], ["都会", "cidade grande"]]}`
-- {'pt-BR': '登山=montanhismo, 毒=veneno, 特徴=característica, 都会=cidade grande.'}
+- 登山=montanhismo, 毒=veneno, 特徴=característica, 都会=cidade grande.
 
 
-### 3. (cloze) {'pt-BR': "Complete com o verbo intransitivo: 'O problema foi resolvido.' その問題は＿＿た。"}
+### 3. (cloze) Complete com o verbo intransitivo: 'O problema foi resolvido.' その問題は＿＿た。
 - **Resposta:** `{"text": "解け", "full": "その問題は解けた。"}`
-- {'pt-BR': "解ける é o intransitivo ('ser resolvido'): radical 解け + た. 解いた seria 'eu resolvi'."}
+- 解ける é o intransitivo ('ser resolvido'): radical 解け + た. 解いた seria 'eu resolvi'.
 
 
-### 4. (particle_choice) {'pt-BR': "Escolha o conector: 'A propósito, o tempo passa rápido, né?' ＿＿、年月が経つのは早いね。"}
+### 4. (particle_choice) Escolha o conector: 'A propósito, o tempo passa rápido, né?' ＿＿、年月が経つのは早いね。
 - **Resposta:** `{"choices": ["ところで", "ところが", "どこか"], "correct": "ところで"}`
-- {'pt-BR': "ところで muda de assunto ('a propósito'). ところが marcaria contraste surpreso."}
+- ところで muda de assunto ('a propósito'). ところが marcaria contraste surpreso.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês: 'Faço questão de resolver os enigmas.' (use 謎, 解く e ～ことにしている)"}
-- **Resposta:** `{"text": "謎を解くことにしている", "accept": ["なぞを解くことにしている", "なぞをとくことにしている", "謎を解く事にしている"]}`
-- {'pt-BR': "解く é o transitivo ('resolver'); ～ことにしている indica hábito assumido por escolha."}
+### 5. (production) Diga em japonês: 'Faço questão de resolver os enigmas.' (use 謎, 解く e ～ことにしている)
+- **Resposta:** `{"text": "謎を解くことにしている", "accept": ["謎を解くことにしている", "なぞを解くことにしている", "なぞをとくことにしている", "謎を解く事にしている"]}`
+- 解く é o transitivo ('resolver'); ～ことにしている indica hábito assumido por escolha.
 
 

@@ -37,7 +37,7 @@ Sem artigo e sem gênero: uma só forma serve para tudo. 英語です cobre "é 
 Lembre que じゃ é só a contração falada de では. Então じゃない (bate-papo) e ではない (escrita/formal) são a mesma ideia em registros diferentes.
 
 #### Demonstrativos: これ系 e この系
-Há duas famílias. Os pronomesこれ・それ・あれ ("isto/isso/aquilo") ficam sozinhos. Os adjetivosこの・その・あの ("este/esse/aquele") sempre acompanham um substantivo.
+Há duas famílias. Os pronomes これ・それ・あれ ("isto/isso/aquilo") ficam sozinhos. Os adjetivos この・その・あの ("este/esse/aquele") sempre acompanham um substantivo.
 - これは本です (isto é um livro); これ aparece sozinho.
 - この本は面白いです (este livro é interessante); この vem seguido de um substantivo.
 A distância segue o falante e o ouvinte: これ／この = perto de mim; それ／その = perto de você; あれ／あの = longe dos dois.
@@ -69,38 +69,38 @@ Com só essas peças você já monta muita coisa: これは私の鍵です (isto
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Na frase 私は日本人です, como se LÊ a partícula は?'}
+### 1. (recognition) Na frase 私は日本人です, como se LÊ a partícula は?
 - **Resposta:** `{"choices": ["ha", "wa", "ba"], "correct": "wa"}`
-- {'pt-BR': "O kana は sozinho seria 'ha', mas como partícula de tópico lê-se 'wa'. O mesmo tipo de mudança ocorre com へ (e) e を (o)."}
+- O kana は sozinho seria 'ha', mas como partícula de tópico lê-se 'wa'. O mesmo tipo de mudança ocorre com へ (e) e を (o).
 
 
-### 2. (recognition) {'pt-BR': "Qual forma significa 'NÃO é chuva' de modo casual?"}
+### 2. (recognition) Qual forma significa 'NÃO é chuva' de modo casual?
 - **Resposta:** `{"choices": ["雨です", "雨じゃない", "雨でした"], "correct": "雨じゃない"}`
-- {'pt-BR': "雨じゃない é a negação casual da cópula. 雨です é afirmativo no presente e 雨でした é afirmativo no passado ('era chuva')."}
+- 雨じゃない é a negação casual da cópula. 雨です é afirmativo no presente e 雨でした é afirmativo no passado ('era chuva').
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a cópula no PASSADO: 昨日は雨＿。 (Ontem estava chuva / choveu.)'}
+### 3. (cloze) Complete com a cópula no PASSADO: 昨日は雨＿。 (Ontem estava chuva / choveu.)
 - **Resposta:** `{"text": "でした", "full": "昨日は雨でした"}`
-- {'pt-BR': "でした é o passado educado da cópula です ('foi/era'). Aqui descreve que ontem (昨日) era dia de chuva."}
+- でした é o passado educado da cópula です ('foi/era'). Aqui descreve que ontem (昨日) era dia de chuva.
 
 
-### 4. (particle_choice) {'pt-BR': "Escolha o demonstrativo para 'ESTE livro é interessante': ＿本は面白いです。"}
+### 4. (particle_choice) Escolha o demonstrativo para 'ESTE livro é interessante': ＿本は面白いです。
 - **Resposta:** `{"choices": ["これ", "この", "それ"], "correct": "この"}`
-- {'pt-BR': 'Como vem um substantivo (本) logo depois, use a família この. これ é pronome e ficaria sozinho (これは本です = isto é um livro).'}
+- Como vem um substantivo (本) logo depois, use a família この. これ é pronome e ficaria sozinho (これは本です = isto é um livro).
 
 
-### 5. (particle_choice) {'pt-BR': 'Complete o objeto direto: 水＿飲みます。 (Bebo água.)'}
+### 5. (particle_choice) Complete o objeto direto: 水＿飲みます。 (Bebo água.)
 - **Resposta:** `{"choices": ["を", "は", "の"], "correct": "を"}`
-- {'pt-BR': 'を marca o objeto direto (o que sofre a ação): 水 é o que se bebe. は marcaria o tópico e の ligaria dois nomes.'}
+- を marca o objeto direto (o que sofre a ação): 水 é o que se bebe. は marcaria o tópico e の ligaria dois nomes.
 
 
-### 6. (sentence_build) {'pt-BR': "Monte 'Isto é a minha chave.' com as peças: [です] [これ] [は] [鍵] [の] [私]"}
+### 6. (sentence_build) Monte 'Isto é a minha chave.' com as peças: [です] [これ] [は] [鍵] [の] [私]
 - **Resposta:** `{"order": ["これ", "は", "私", "の", "鍵", "です"], "text": "これは私の鍵です。"}`
-- {'pt-BR': "Molde A は B です com posse: これ (isto) + は (tópico) + 私 (eu) + の (de) + 鍵 (chave) + です (é). A partícula の liga 私 a 鍵 ('minha chave')."}
+- Molde A は B です com posse: これ (isto) + は (tópico) + 私 (eu) + の (de) + 鍵 (chave) + です (é). A partícula の liga 私 a 鍵 ('minha chave').
 
 
-### 7. (production) {'pt-BR': "Diga em japonês 'Eu também sou estudante.' usando 私, a partícula 'também', 学生 e a cópula educada."}
+### 7. (production) Diga em japonês 'Eu também sou estudante.' usando 私, a partícula 'também', 学生 e a cópula educada.
 - **Resposta:** `{"text": "私も学生です。", "accept": ["私も学生です", "私も学生です。", "わたしもがくせいです", "わたしも学生です"]}`
-- {'pt-BR': "も significa 'também' e substitui は/が: 私 (eu) + も (também) + 学生 (estudante) + です (cópula educada)."}
+- も significa 'também' e substitui は/が: 私 (eu) + も (também) + 学生 (estudante) + です (cópula educada).
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:opinions",
   "order": 5,
   "title": {
-    "pt-BR": "Dizer o que você acha — parte 5"
+    "pt-BR": "Dizer o que você acha, parte 5"
   },
   "say_now": [
     "sent:tatoeba-4827",
@@ -29,8 +29,7 @@
     "gram:kamo-shirenai",
     "gram:nasai",
     "gram:gp-115",
-    "gram:gp-120",
-    "gram:gp-63"
+    "gram:gp-120"
   ],
   "kanji_recognition": [
     "何",
@@ -53,6 +52,109 @@
   "cumulative_known_vocab": 536,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-152614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nasai",
+      "examples": [
+        "sent:tatoeba-78287",
+        "sent:tatoeba-79943",
+        "sent:tatoeba-78855"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-115",
+      "examples": [
+        "sent:gen-7506a021dd5b",
+        "sent:gen-4c4eb1f80410",
+        "sent:tatoeba-123138"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-120",
+      "examples": [
+        "sent:tatoeba-193408",
+        "sent:gen-40a736aa4ac8",
+        "sent:gen-5bccb5134f4a"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ele provavelmente está dando um jeito de ser convidado.",
+      "answer_key": "彼は、たぶん、招待してくれるように仕向けているでしょう。",
+      "accepted_variants": [
+        "かれわ、たぶん、しょうたいしてくれるようにしむけているでしょう",
+        "かれわ、たぶん、しょうたいしてくれるようにしむけているでしょう。",
+        "彼は、たぶん、招待してくれるように仕向けているでしょう",
+        "彼は、たぶん、招待してくれるように仕向けているでしょう。"
+      ],
+      "sentence": "sent:tatoeba-75789",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não é que ela concordasse totalmente comigo.",
+      "answer_key": "彼女は私とすっかり同意見だったわけではない。",
+      "accepted_variants": [
+        "かのじょわわたしとすっかりどういけんだったわけでわない",
+        "かのじょわわたしとすっかりどういけんだったわけでわない。",
+        "彼女は私とすっかり同意見だったわけではない",
+        "彼女は私とすっかり同意見だったわけではない。"
+      ],
+      "sentence": "sent:tatoeba-89607",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A luz está acesa, então não tem como eles terem saído.",
+      "answer_key": "明かりがついているのだから、彼らが外出したはずがない。",
+      "accepted_variants": [
+        "あかりがついているのだから、かれらががいしゅつしたはずがない",
+        "あかりがついているのだから、かれらががいしゅつしたはずがない。",
+        "明かりがついているのだから、彼らが外出したはずがない",
+        "明かりがついているのだから、彼らが外出したはずがない。"
+      ],
+      "sentence": "sent:tatoeba-80745",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-80432",
+      "sent:tatoeba-5070",
+      "sent:tatoeba-179684",
+      "sent:tatoeba-78366",
+      "sent:tatoeba-151044",
+      "sent:tatoeba-5348453"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 21,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "kr:n3:1398",
@@ -94,111 +196,5 @@
         "近い"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:kamo-shirenai",
-      "examples": [
-        "sent:tatoeba-2684823",
-        "sent:tatoeba-188036",
-        "sent:tatoeba-152614"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-78287",
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78855"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-115",
-      "examples": [
-        "sent:gen-7506a021dd5b",
-        "sent:gen-4c4eb1f80410",
-        "sent:tatoeba-123138"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-120",
-      "examples": [
-        "sent:tatoeba-193408",
-        "sent:gen-40a736aa4ac8",
-        "sent:gen-5bccb5134f4a"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-63",
-      "examples": [
-        "sent:tatoeba-186610",
-        "sent:gen-113cd2b42397",
-        "sent:tatoeba-161847"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Ele provavelmente está dando um jeito de ser convidado.",
-      "answer_key": "彼は、たぶん、招待してくれるように仕向けているでしょう。",
-      "accepted_variants": [
-        "彼は、たぶん、招待してくれるように仕向けているでしょう",
-        "彼は、たぶん、招待してくれるように仕向けているでしょう。"
-      ],
-      "sentence": "sent:tatoeba-75789",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Não é que ela concordasse totalmente comigo.",
-      "answer_key": "彼女は私とすっかり同意見だったわけではない。",
-      "accepted_variants": [
-        "彼女は私とすっかり同意見だったわけではない",
-        "彼女は私とすっかり同意見だったわけではない。"
-      ],
-      "sentence": "sent:tatoeba-89607",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "A luz está acesa, então não tem como eles terem saído.",
-      "answer_key": "明かりがついているのだから、彼らが外出したはずがない。",
-      "accepted_variants": [
-        "明かりがついているのだから、彼らが外出したはずがない",
-        "明かりがついているのだから、彼らが外出したはずがない。"
-      ],
-      "sentence": "sent:tatoeba-80745",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
-    "items": [
-      "sent:tatoeba-80432",
-      "sent:tatoeba-5070",
-      "sent:tatoeba-179684",
-      "sent:tatoeba-78366",
-      "sent:tatoeba-151044",
-      "sent:tatoeba-5348453"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 27,
-    "fluency": 6
-  }
+  ]
 }

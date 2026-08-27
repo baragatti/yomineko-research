@@ -4,7 +4,7 @@
   "stage": "speak:time_plans",
   "order": 2,
   "title": {
-    "pt-BR": "Quando, que horas, combinar — parte 2"
+    "pt-BR": "Quando, que horas, combinar, parte 2"
   },
   "say_now": [
     "sent:tatoeba-234998",
@@ -55,53 +55,6 @@
   "cumulative_known_vocab": 341,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n5:5462",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:891:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "為",
-        "誰",
-        "日"
-      ]
-    },
-    {
-      "id": "cf:n5:5462:162",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "左",
-        "傘",
-        "雨"
-      ]
-    },
-    {
-      "id": "kr:n5:103",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かかり",
-        "でんき",
-        "まもる"
-      ]
-    },
-    {
-      "id": "kr:n5:162",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こと",
-        "はは",
-        "かず"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-91"
   ],
@@ -157,6 +110,8 @@
       "prompt_pt": "Será que amanhã vai chover?",
       "answer_key": "明日は雨かしら。",
       "accepted_variants": [
+        "あすわあめかしら",
+        "あすわあめかしら。",
         "明日は雨かしら",
         "明日は雨かしら。"
       ],
@@ -167,6 +122,8 @@
       "prompt_pt": "Amanhã preciso me encontrar com você sobre isso.",
       "answer_key": "明日このことについてお目にかからなくてはと思います。",
       "accepted_variants": [
+        "あすこのことについておめにかからなくてはとおもいます",
+        "あすこのことについておめにかからなくてはとおもいます。",
         "明日このことについてお目にかからなくてはと思います",
         "明日このことについてお目にかからなくてはと思います。"
       ],
@@ -177,6 +134,8 @@
       "prompt_pt": "Ano que vem eu devo ter a oportunidade de encontrá-lo.",
       "answer_key": "来年はお目にかかれるでしょう。",
       "accepted_variants": [
+        "らいねんわおめにかかれるでしょう",
+        "らいねんわおめにかかれるでしょう。",
         "来年はお目にかかれるでしょう",
         "来年はお目にかかれるでしょう。"
       ],
@@ -199,15 +158,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n5:5462",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:891:2453",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "為",
+        "誰",
+        "日"
+      ]
+    },
+    {
+      "id": "cf:n5:5462:162",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "左",
+        "傘",
+        "雨"
+      ]
+    },
+    {
+      "id": "kr:n5:103",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かかり",
+        "でんき",
+        "まもる"
+      ]
+    },
+    {
+      "id": "kr:n5:162",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こと",
+        "はは",
+        "かず"
+      ]
+    }
+  ]
 }

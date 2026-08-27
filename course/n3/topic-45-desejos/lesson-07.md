@@ -67,23 +67,23 @@ Repare em 炎 para descrever fogo e em ホーム no contexto de estação de tre
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa garantia, a promessa de que algo vai funcionar?'}
+### 1. (recognition) Qual palavra significa garantia, a promessa de que algo vai funcionar?
 - **Resposta:** `{"choices": ["保証 (ほしょう)", "保存 (ほぞん)", "訪問 (ほうもん)"], "correct": "保証 (ほしょう)"}`
-- {'pt-BR': '保証 (ほしょう) é a garantia; 保存 é conservação e 訪問 é visita.'}
+- 保証 (ほしょう) é a garantia; 保存 é conservação e 訪問 é visita.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra à sua tradução.'}
+### 2. (matching) Associe cada palavra à sua tradução.
 - **Resposta:** `{"pairs": [["骨", "osso"], ["頬", "bochecha"], ["炎", "chama"], ["微笑む", "sorrir"]]}`
-- {'pt-BR': 'Quatro itens da lição: osso, bochecha, chama e o verbo sorrir.'}
+- Quatro itens da lição: osso, bochecha, chama e o verbo sorrir.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a frase: <jp>電車が＿＿に到着した</jp> (O trem chegou à plataforma.)'}
+### 3. (cloze) Complete a frase: 電車が＿＿に到着した (O trem chegou à plataforma.)
 - **Resposta:** `{"text": "ホーム", "full": "電車がホームに到着した。"}`
-- {'pt-BR': 'ホーム (do inglês platform) é a plataforma da estação onde o trem para.'}
+- ホーム (do inglês platform) é a plataforma da estação onde o trem para.
 
 
-### 4. (production) {'pt-BR': 'Escreva uma frase em japonês dizendo que ela sorriu (use 微笑む).'}
-- **Resposta:** `{"text": "彼女は微笑んだ", "accept": ["彼女が微笑んだ", "彼女は微笑みました", "彼女はにっこり微笑んだ"]}`
-- {'pt-BR': '微笑む (ほほえむ) é sorrir; no passado simples fica 微笑んだ.'}
+### 4. (production) Escreva uma frase em japonês dizendo que ela sorriu (use 微笑む).
+- **Resposta:** `{"text": "彼女は微笑んだ", "accept": ["彼女は微笑んだ", "彼女が微笑んだ", "彼女は微笑みました", "彼女はにっこり微笑んだ"]}`
+- 微笑む (ほほえむ) é sorrir; no passado simples fica 微笑んだ.
 
 

@@ -7,13 +7,29 @@ exported JSON drifted: `audit_export_refs.py` hand-checks a handful of fields on
 nothing checks the other seventeen artifact families at all.
 
 This does not invent a schema. It reads what is on disk and reports, per entity and per field:
-frequency (how many records carry it), the JSON types seen, whether it is always present, and the
-observed value set when it looks closed (few distinct scalar values). An authoring pass turns that into
-a JSON Schema; a field present on 100% of records is `required`, one present on 3% is not, and a field
-with six distinct string values across 5,889 records is an enum rather than a free string.
+frequency (how many records carry it), the JSON types seen, whether it is always present, the observed
+STRING value set when it looks closed (few distinct values), and the numeric range for number fields.
+
+What is measured and what is decided is deliberately split, and the split moved after the 2026-08-26
+contract audit found the schemas had become a photograph of that day's data:
+
+  * `present`/`required` are measured and stay measured. A `required` derived from 100% presence is
+    monotone-safe — adding a record that carries the field can never break it.
+  * `values` is measured but is only ever a CANDIDATE. build_schemas.py decides which candidates become
+    an enum, and for the fields that carry a real taxonomy it ignores the measurement entirely and takes
+    the vocabulary from the design document or the producing code instead. A measured enum is NOT
+    monotone-safe: the first legitimately-new value fails the build.
+  * Value sets are collected for STRINGS ONLY. An integer field is a quantity, not a vocabulary — a
+    corpus that grew a 25-stroke kanji or a 16th lesson is not a contract violation — so integers and
+    booleans report `min`/`max` and nothing else.
 
 Nested objects and arrays-of-objects are walked one level deep under a dotted path (`tokens[].pos`),
 which is where the real variation lives — a token array is uniform, a sentence record is not.
+
+An entity may also declare `discriminant: "id_prefix"`, which additionally reports, per id prefix, how
+many records carry it and which keys every one of them has. `exam_item` unions fourteen question shapes
+in one file family, and that per-shape inventory is what lets build_schemas.py give each shape its own
+`required` list instead of requiring only what all fourteen happen to share.
 
 Output: contracts/_shapes.json. Regenerate whenever the exporter changes.
 Usage: infer_shapes.py [--max-enum N]
@@ -55,7 +71,13 @@ FAMILIES: list[dict] = [
     {"entity": "stroke_kana", "glob": "corpus/strokes/kana.json", "kind": "list"},
     {"entity": "capability", "glob": "corpus/capabilities/registry.json", "kind": "list"},
     {"entity": "capability_lesson_map", "glob": "corpus/capabilities/lesson_map.json", "kind": "map"},
-    {"entity": "exam_item", "glob": "corpus/exam_banks/*.json", "kind": "list"},
+    # Fourteen question shapes share corpus/exam_banks/. They cannot be split by glob (a bank file holds
+    # one section for one level, and the section is the shape), so the discriminant is the id prefix.
+    # `<level>_<section>.json` is the bank naming convention; the directory also holds sidecars that are
+    # not banks (removed_items.json is an archive of items a migration pulled out, an object rather than
+    # a list), and a glob that swallows those validates an audit trail against the item schema.
+    {"entity": "exam_item", "glob": "corpus/exam_banks/n[0-9]_*.json", "kind": "list",
+     "discriminant": "id_prefix"},
     {"entity": "exercise_conjugation", "glob": "corpus/exercises/conjugation/*.json", "kind": "list"},
     {"entity": "exercise_role", "glob": "corpus/exercises/roles/*.json", "kind": "list"},
     {"entity": "course", "glob": "course/[!s]*/course.json", "kind": "single"},
@@ -84,26 +106,33 @@ def jtype(v: object) -> str:
 
 
 class FieldStat:
-    __slots__ = ("count", "types", "values", "too_many")
+    __slots__ = ("count", "types", "values", "too_many", "nmin", "nmax")
 
     def __init__(self) -> None:
         self.count = 0
         self.types: Counter = Counter()
-        self.values: set = set()
+        self.values: set = set()          # STRINGS only — see the module docstring
         self.too_many = False
+        self.nmin: float | None = None
+        self.nmax: float | None = None
 
 
 def note(stats: dict[str, FieldStat], path: str, value: object, max_enum: int, depth: int) -> None:
     fs = stats.setdefault(path, FieldStat())
     fs.count += 1
     fs.types[jtype(value)] += 1
-    if isinstance(value, (str, bool, int)) and not isinstance(value, float):
+    if isinstance(value, str):
         if not fs.too_many:
             fs.values.add(value)
             # A closed set stays small. Past the cap it is free text and the samples are noise.
             if len(fs.values) > max_enum:
                 fs.too_many = True
                 fs.values = set()
+    elif isinstance(value, (int, float)) and not isinstance(value, bool):
+        # A number is a quantity. Range is the honest measurement; the value set is not, because
+        # "every stroke count we happen to have drawn" is not a statement about kanji.
+        fs.nmin = value if fs.nmin is None else min(fs.nmin, value)
+        fs.nmax = value if fs.nmax is None else max(fs.nmax, value)
     if depth <= 0:
         return
     if isinstance(value, dict):
@@ -141,6 +170,8 @@ def main() -> int:
         stats: dict[str, FieldStat] = {}
         n = 0
         keys: list[str] = []
+        # per id prefix: [record count, Counter of top-level keys] — only for discriminated entities
+        variants: dict[str, list] = {}
         for f in files:
             rel = str(f.relative_to(ROOT)).replace("\\", "/")
             try:
@@ -156,6 +187,12 @@ def main() -> int:
                 n += 1
                 for k, v in rec.items():
                     note(stats, k, v, args.max_enum, depth=2)
+                if fam.get("discriminant") == "id_prefix":
+                    rid = rec.get("id")
+                    pre = rid.split(":", 1)[0] if isinstance(rid, str) and ":" in rid else "(none)"
+                    slot = variants.setdefault(pre, [0, Counter()])
+                    slot[0] += 1
+                    slot[1].update(rec.keys())
         if not n:
             problems.append(f"{fam['entity']}: glob {fam['glob']!r} matched {len(files)} file(s), "
                             f"0 records — the glob or the kind is wrong")
@@ -172,6 +209,8 @@ def main() -> int:
             }
             if fs.values and not fs.too_many:
                 entry["values"] = sorted(fs.values, key=lambda x: str(x))
+            if fs.nmin is not None:
+                entry["min"], entry["max"] = fs.nmin, fs.nmax
             fields[path] = entry
         entry: dict = {
             "glob": fam["glob"],
@@ -183,6 +222,12 @@ def main() -> int:
         if keys:
             entry["key_sample"] = sorted(keys)[:5]
             entry["key_prefixes"] = sorted({k.split(":", 1)[0] for k in keys if ":" in k})
+        if variants:
+            entry["discriminant"] = fam["discriminant"]
+            entry["variants"] = {
+                pre: {"records": cnt, "always": sorted(k for k, c in keyc.items() if c == cnt)}
+                for pre, (cnt, keyc) in sorted(variants.items())
+            }
         out[fam["entity"]] = entry
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

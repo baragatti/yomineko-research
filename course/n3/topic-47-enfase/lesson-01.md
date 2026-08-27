@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-koso, n3-sae] · vocabulário [交換, 交際, 光景, 公平, 合計, 幸福, 広告, 強盗, 後者, 攻撃, 構成, 航空, 行動, 貢献, 高速] · kanji [亡 冷 婦 寄 未 舞 適] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10573391`, `sent:tatoeba-194622`
 
 ---
 
@@ -86,28 +86,28 @@ O kanji 亡 significa "falecido, perecer". O kanji 舞 significa "dança, rodopi
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Alguém te agradece e você quer devolver a gentileza ('eu é que agradeço'). O que você responde?"}
+### 1. (recognition) Alguém te agradece e você quer devolver a gentileza ('eu é que agradeço'). O que você responde?
 - **Resposta:** `{"choices": ["こちらだけ", "こちらこそ", "こちらさえ", "こちらまで"], "correct": "こちらこそ"}`
-- {'pt-BR': "こちらこそ é a resposta clássica para devolver uma gentileza: o こそ coloca o holofote em こちら ('eu/deste lado'), no sentido de 'eu é que agradeço'. だけ ('apenas') e さえ ('até mesmo') não cabem aqui."}
+- こちらこそ é a resposta clássica para devolver uma gentileza: o こそ coloca o holofote em こちら ('eu/deste lado'), no sentido de 'eu é que agradeço'. だけ ('apenas') e さえ ('até mesmo') não cabem aqui.
 
 
-### 2. (particle_choice) {'pt-BR': "Complete 'basta ter dinheiro que dá pra comprar qualquer coisa': お金＿あれば、何でも買える。"}
+### 2. (particle_choice) Complete 'basta ter dinheiro que dá pra comprar qualquer coisa': お金＿あれば、何でも買える。
 - **Resposta:** `{"choices": ["こそ", "さえ", "だけ", "まで"], "correct": "さえ"}`
-- {'pt-BR': "O padrão さえ + condicional ば significa 'basta que'. お金さえあれば = 'basta ter dinheiro'. こそ enfatizaria sem o sentido de suficiência; だけ ('apenas') não combina com o 'basta que'."}
+- O padrão さえ + condicional ば significa 'basta que'. お金さえあれば = 'basta ter dinheiro'. こそ enfatizaria sem o sentido de suficiência; だけ ('apenas') não combina com o 'basta que'.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'hoje sim eu vou estudar' (depois de adiar vários dias): 今日＿＿勉強する。"}
+### 3. (cloze) Complete 'hoje sim eu vou estudar' (depois de adiar vários dias): 今日＿＿勉強する。
 - **Resposta:** `{"text": "こそ", "full": "今日こそ勉強する"}`
-- {'pt-BR': "今日こそ usa o こそ para destacar 'hoje' como o dia certo, em contraste com os dias em que você adiou: 'hoje (e não outro dia) é que vou estudar'."}
+- 今日こそ usa o こそ para destacar 'hoje' como o dia certo, em contraste com os dias em que você adiou: 'hoje (e não outro dia) é que vou estudar'.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em pt-BR.'}
+### 4. (matching) Associe cada palavra ao seu significado em pt-BR.
 - **Resposta:** `{"pairs": [["広告", "anúncio, propaganda"], ["交換", "troca, substituição"], ["幸福", "felicidade, bem-estar"], ["攻撃", "ataque, ofensiva"], ["合計", "total, soma"]]}`
-- {'pt-BR': '広告 (こうこく) = anúncio; 交換 (こうかん) = troca; 幸福 (こうふく) = felicidade; 攻撃 (こうげき) = ataque; 合計 (ごうけい) = total. Repare que quase todas começam com a sequência longa こう.'}
+- 広告 (こうこく) = anúncio; 交換 (こうかん) = troca; 幸福 (こうふく) = felicidade; 攻撃 (こうげき) = ataque; 合計 (ごうけい) = total. Repare que quase todas começam com a sequência longa こう.
 
 
-### 5. (production) {'pt-BR': "Diga 'desde que eu tenha você, sou feliz' usando o padrão さえ...ば e a palavra 幸福 (feliz)."}
+### 5. (production) Diga 'desde que eu tenha você, sou feliz' usando o padrão さえ...ば e a palavra 幸福 (feliz).
 - **Resposta:** `{"text": "君さえいれば、僕は幸福だ", "accept": ["君さえいれば僕は幸福だ", "きみさえいれば、ぼくはこうふくだ", "君さえいれば、私は幸福だ", "あなたさえいれば、僕は幸福だ"]}`
-- {'pt-BR': "君さえいれば ('desde que eu tenha você', com さえ + condicional いれば) é a condição suficiente; 幸福だ ('sou feliz') é o resultado. O padrão さえ...ば transmite 'basta isso e tudo fica bem'."}
+- 君さえいれば ('desde que eu tenha você', com さえ + condicional いれば) é a condição suficiente; 幸福だ ('sou feliz') é o resultado. O padrão さえ...ば transmite 'basta isso e tudo fica bem'.
 
 

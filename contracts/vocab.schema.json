@@ -9,23 +9,38 @@
     "packing": "list",
     "glob": "corpus/vocab/*.json",
     "stable_id_field": "slug",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
     "adj_class": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "i_adj",
-        "na_adj",
-        null
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "i_adj",
+            "na_adj"
+          ],
+          "description": "Adjective class, null for anything that is not an adjective. Vocabulary owner: design — design/schema_v2.md (the `vocab` table, adj_class). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/schema_v2.md (the `vocab` table, adj_class)"
+          }
+        },
+        {
+          "type": "null"
+        }
       ]
     },
     "common": {
       "type": "boolean"
+    },
+    "families": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "forms": {
       "type": "array",
@@ -52,7 +67,8 @@
       "type": "string"
     },
     "id": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "jmdict_ref": {
       "type": "string"
@@ -76,60 +92,24 @@
       "$ref": "common.schema.json#/$defs/LevelTag/properties/level_confidence"
     },
     "level_sources": {
-      "type": "object",
-      "properties": {
-        "bluskyo": {
-          "type": "string",
-          "enum": [
-            "n3",
-            "n4",
-            "n5"
-          ]
-        },
-        "correction": {
-          "type": "string",
-          "enum": [
-            "2026-07-09 kana-collision fix: bluskyo/jlptvocabapi せっけん n5 rows mean 石鹸 (soap, vocab:1382590); 接見 is unlisted in every ingested JLPT list -> conservative n1 (advanced formal/legal term)"
-          ]
-        },
-        "elzup": {
-          "type": "string",
-          "enum": [
-            "n4",
-            "n5"
-          ]
-        },
-        "jlpt-lists": {
-          "type": "string",
-          "enum": [
-            "n1",
-            "n2"
-          ]
-        },
-        "jlptvocabapi": {
-          "type": "string",
-          "enum": [
-            "n4",
-            "n5"
-          ]
-        },
-        "openanki": {
-          "type": "string",
-          "enum": [
-            "n4",
-            "n5"
-          ]
-        }
-      },
-      "additionalProperties": false
+      "$ref": "common.schema.json#/$defs/LevelTag/properties/level_sources"
     },
     "lexeme_type": {
       "type": "string",
       "enum": [
+        "aux",
         "counter",
+        "expression",
+        "prefix",
+        "suffix",
         "suru_verb",
         "word"
-      ]
+      ],
+      "description": "What kind of lexical item this entry is. Vocabulary owner: design — design/schema_v2.md (the `vocab` table, lexeme_type). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "design",
+        "source": "design/schema_v2.md (the `vocab` table, lexeme_type)"
+      }
     },
     "notes": {
       "anyOf": [
@@ -150,14 +130,7 @@
             "type": "array",
             "items": {
               "type": "integer",
-              "enum": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5
-              ]
+              "minimum": 0
             }
           },
           "reading": {
@@ -175,8 +148,20 @@
       "items": {
         "type": "string",
         "enum": [
-          "humble"
-        ]
+          "archaic",
+          "colloquial",
+          "familiar",
+          "honorific",
+          "humble",
+          "polite",
+          "slang",
+          "vulgar"
+        ],
+        "description": "Register tags for this word or sense. Vocabulary owner: design — design/schema_v2.md ('Vocab': the neutral register enum from JMdict misc). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+        "x-vocabulary": {
+          "owner": "design",
+          "source": "design/schema_v2.md ('Vocab': the neutral register enum from JMdict misc)"
+        }
       }
     },
     "romaji": {
@@ -197,19 +182,12 @@
             "type": "array",
             "items": {
               "type": "string",
-              "enum": [
-                "hum"
-              ]
+              "description": "JMdict misc tags for this sense, verbatim (`uk`, `hum`, `col`, …). JMdict owns roughly eighty of them and adds more; this corpus carries whichever the entry had."
             }
           },
           "order": {
             "type": "integer",
-            "enum": [
-              0,
-              1,
-              2,
-              3
-            ]
+            "minimum": 0
           },
           "pos": {
             "type": "array",
@@ -225,8 +203,20 @@
             "items": {
               "type": "string",
               "enum": [
-                "humble"
-              ]
+                "archaic",
+                "colloquial",
+                "familiar",
+                "honorific",
+                "humble",
+                "polite",
+                "slang",
+                "vulgar"
+              ],
+              "description": "Register tags for this word or sense. Vocabulary owner: design — design/schema_v2.md ('Vocab': the neutral register enum from JMdict misc). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+              "x-vocabulary": {
+                "owner": "design",
+                "source": "design/schema_v2.md ('Vocab': the neutral register enum from JMdict misc)"
+              }
             }
           }
         },
@@ -237,16 +227,24 @@
       "$ref": "common.schema.json#/$defs/StableId"
     },
     "verb_class": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "godan",
-        "ichidan",
-        "kuru_irregular",
-        "suru_irregular",
-        null
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "godan",
+            "ichidan",
+            "kuru_irregular",
+            "suru_irregular"
+          ],
+          "description": "Inflection class, null for anything that is not a verb. Vocabulary owner: design — design/schema_v2.md (the `vocab` table, verb_class). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/schema_v2.md (the `vocab` table, verb_class)"
+          }
+        },
+        {
+          "type": "null"
+        }
       ]
     }
   },
@@ -254,6 +252,7 @@
   "required": [
     "adj_class",
     "common",
+    "families",
     "forms",
     "headword",
     "id",

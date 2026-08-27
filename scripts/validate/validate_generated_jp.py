@@ -79,14 +79,16 @@ def _attested(con: sqlite3.Connection, phrase: str) -> bool:
 
 
 def load_known(lesson_slug: str) -> dict | None:
-    con = sqlite3.connect(DB)
-    r = con.execute("SELECT cumulative_known_set FROM lesson WHERE slug=?", (lesson_slug,)).fetchone()
-    con.close()
-    if not r or not r[0]:
-        return None
-    ks = json.loads(r[0])
-    # cumulative_known_set shape: {"kanji":[...], "vocab":[...]} (ids or surfaces) — normalize to surfaces
-    return ks
+    """Known set from the EXPORTED lesson leaf (course/), not the DB: the export is the source of
+    truth, speaks slug space, and the DB's stored copy can lag it. Prefix-strip so the comparisons
+    below see bare characters/slug idents ('kanji:食' -> '食')."""
+    for lf in ROOT.glob("course/*/topic-*/lesson-*.json"):
+        d = json.loads(lf.read_text(encoding="utf-8"))
+        if d.get("id") == lesson_slug:
+            ks = d.get("cumulative_known_set") or {}
+            return {k: [x.split(":", 1)[1] if isinstance(x, str) and ":" in x else x for x in v]
+                    for k, v in ks.items()}
+    return None
 
 
 def validate_jp(text: str, known: dict | None = None) -> dict:

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-you-ni-natta, n3-you-ni-shimashou] · vocabulário [傷, 効く, 可哀想, 可愛らしい, 岸, 患者, 技師, 期間, 機械, 機関, 生地, 記事, 記者] · kanji [備 助 労 育 訪] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-123214`, `sent:tatoeba-237354`
 
 ---
 
@@ -69,28 +69,28 @@ Note que 助 e 労 compartilham o mesmo radical de "força". Quando um kanji nov
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase significa 'passei a conseguir falar japonês' (mudança gradual de capacidade)?"}
+### 1. (recognition) Qual frase significa 'passei a conseguir falar japonês' (mudança gradual de capacidade)?
 - **Resposta:** `{"choices": ["日本語が話せるようになった", "日本語を話すようにしましょう", "日本語が話せなくなった", "日本語を話そうとした"], "correct": "日本語が話せるようになった"}`
-- {'pt-BR': "〜ようになった com o potencial 話せる marca a aquisição gradual de uma habilidade ('passei a conseguir falar'). ようにしましょう seria um convite ao esforço; 話せなくなった seria perder a capacidade; 話そうとした seria uma tentativa passada."}
+- 〜ようになった com o potencial 話せる marca a aquisição gradual de uma habilidade ('passei a conseguir falar'). ようにしましょう seria um convite ao esforço; 話せなくなった seria perder a capacidade; 話そうとした seria uma tentativa passada.
 
 
-### 2. (cloze) {'pt-BR': "Complete 'vamos procurar comer verduras todo dia': 毎日野菜を食べる___。"}
+### 2. (cloze) Complete 'vamos procurar comer verduras todo dia': 毎日野菜を食べる___。
 - **Resposta:** `{"text": "ようにしましょう", "full": "毎日野菜を食べるようにしましょう"}`
-- {'pt-BR': "〜ようにしましょう convida a um esforço contínuo para adotar um hábito. Com o verbo na forma de dicionário 食べる: 食べるようにしましょう = 'vamos procurar comer'."}
+- 〜ようにしましょう convida a um esforço contínuo para adotar um hábito. Com o verbo na forma de dicionário 食べる: 食べるようにしましょう = 'vamos procurar comer'.
 
 
-### 3. (particle_choice) {'pt-BR': 'Mudança de capacidade: 日本語＿話せるようになった。 Qual partícula marca o alvo do potencial?'}
+### 3. (particle_choice) Mudança de capacidade: 日本語＿話せるようになった。 Qual partícula marca o alvo do potencial?
 - **Resposta:** `{"choices": ["が", "を", "に", "へ"], "correct": "が"}`
-- {'pt-BR': "O verbo potencial 話せる ('conseguir falar') marca seu alvo com が: 日本語が話せる. Some ようになった para a mudança gradual: 日本語が話せるようになった."}
+- O verbo potencial 話せる ('conseguir falar') marca seu alvo com が: 日本語が話せる. Some ようになった para a mudança gradual: 日本語が話せるようになった.
 
 
-### 4. (recognition) {'pt-BR': "Você quer dizer 'sem óculos deixei de conseguir ler' (capacidade PERDIDA). Qual frase está correta?"}
+### 4. (recognition) Você quer dizer 'sem óculos deixei de conseguir ler' (capacidade PERDIDA). Qual frase está correta?
 - **Resposta:** `{"choices": ["眼鏡がないと読めなくなった", "眼鏡がないと読めるようになった", "眼鏡がないと読まないようにしましょう", "眼鏡がないと読もうとした"], "correct": "眼鏡がないと読めなくなった"}`
-- {'pt-BR': "Para uma capacidade que se PERDEU, usa-se a negativa do potencial + なくなった: 読めなくなった = 'deixei de conseguir ler'. ようになった serve para ganhar capacidade, não para perdê-la."}
+- Para uma capacidade que se PERDEU, usa-se a negativa do potencial + なくなった: 読めなくなった = 'deixei de conseguir ler'. ようになった serve para ganhar capacidade, não para perdê-la.
 
 
-### 5. (production) {'pt-BR': "Diga 'vamos fazer questão de não virar a noite' usando 〜ようにしましょう na negativa. (夜更かしをする = virar a noite)"}
+### 5. (production) Diga 'vamos fazer questão de não virar a noite' usando 〜ようにしましょう na negativa. (夜更かしをする = virar a noite)
 - **Resposta:** `{"text": "夜更かしをしないようにしましょう", "accept": ["夜更かしをしないようにしましょう。", "よふかしをしないようにしましょう", "夜更かししないようにしましょう"]}`
-- {'pt-BR': "Para um hábito a EVITAR, use a negativa しない + ようにしましょう: 夜更かしをしないようにしましょう = 'vamos fazer questão de não virar a noite'. A ênfase é no esforço contínuo de evitar."}
+- Para um hábito a EVITAR, use a negativa しない + ようにしましょう: 夜更かしをしないようにしましょう = 'vamos fazer questão de não virar a noite'. A ênfase é no esforço contínuo de evitar.
 
 

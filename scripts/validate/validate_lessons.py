@@ -20,7 +20,8 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from i18n_text import get_text  # noqa: E402
 import enums  # noqa: E402
 
-DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
+ROOT = Path(__file__).resolve().parents[2]
+DB = ROOT / "db" / "corpus.sqlite"
 
 
 def resolve_meta_ref(typ: str, ref: str, sets: dict, extra: dict) -> str | None:
@@ -324,9 +325,19 @@ def main() -> int:
                 unlocked_by.setdefault(ref, []).append(lslug)
             unlocked.add(ref)
         seen_lessons.add(lslug)
-    for ref, ls in unlocked_by.items():
+    # introduce-once is an EXPORT-space rule: the authoring layer addresses vocab by headword,
+    # and two lessons may unlock the same headword when they mean different homograph records
+    # (vocab:先 = saki in n5, sakki in n4). The published slug is the identity, so the check reads
+    # the exported course tree; a genuine duplicate (same record twice) still fails.
+    exported_by: dict = {}
+    for _lf in (ROOT / "course").glob("*/topic-*/lesson-*.json"):
+        _d = json.loads(_lf.read_text(encoding="utf-8"))
+        for _u in _d.get("unlocks", []):
+            if _u["type"] != "srs-deck":
+                exported_by.setdefault((_u["type"], _u["ref"]), []).append(_d["id"])
+    for (_t, _r), ls in exported_by.items():
         if len(ls) > 1:
-            errors.append(f"introduce-once violated: '{ref}' unlocked by {ls}")
+            errors.append(f"introduce-once violated (export space): '{_r}' unlocked by {ls}")
 
     print(f"validated {len(lessons)} lessons: {len(errors)} errors, {len(warns)} warnings")
     for e in errors[:80]:

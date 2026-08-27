@@ -27,7 +27,7 @@ Regra de bolso: adjetivo-い usa く, todo o resto usa に. Decorada essa peça,
 
 #### なる: a mudança que acontece sozinha
 O verbo なる quer dizer "tornar-se", "ficar", "virar". A mudança não tem um culpado: ela simplesmente acontece. O molde é a forma adverbial seguida de なる:
-Molde (espontâneo): [adjetivo-い] くなる / [adjetivo-な] になる
+Molde (espontâneo): [adjetivo-い] く なる / [adjetivo-な] に なる
 > 🗣 夜になると寒くなる — Quando anoitece, esfria.
 Aqui 寒い (frio) virou 寒く e ganhou なる: ninguém esfria o ar de propósito, é a noite que traz o frio. Veja agora um adjetivo-な, com に:
 > 🗣 薬を飲んで元気になった — Tomei o remédio e melhorei.
@@ -35,7 +35,7 @@ O 元気 (bem-disposto) pediu に antes de なった (passado de なる). A pess
 
 #### する: a mudança que alguém provoca
 Troque なる por する e o sentido vira: agora alguém deixa algo de um certo jeito. É "deixar mais ~", "tornar ~". A forma adverbial continua igual; só muda o verbo do fim. Em ku-suru (com adjetivo-い) e gp-80 (com adjetivo-な) você verá os dois lados.
-Molde (causado): [adjetivo-い] くする / [adjetivo-な] にする
+Molde (causado): [adjetivo-い] く する / [adjetivo-な] に する
 > 🗣 部屋を明るくする — Deixar o quarto mais claro.
 Compare com a frase do frio: lá o ar esfriava sozinho; aqui alguém deixa o 部屋 (quarto) mais 明るい (claro). Por isso é 明るく seguido de する. Mais um exemplo bem do dia a dia:
 > 🗣 音を小さくしてください — Abaixa o volume, por favor.
@@ -75,33 +75,33 @@ Estas palavras combinam muito com なる e する. Repare em como cada uma escol
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é a forma adverbial correta de 寒い (frio) para juntar com なる/する?'}
+### 1. (recognition) Qual é a forma adverbial correta de 寒い (frio) para juntar com なる/する?
 - **Resposta:** `{"choices": ["寒に", "寒く", "寒くに"], "correct": "寒く"}`
-- {'pt-BR': '寒い é adjetivo-い, então o い vira く: 寒く. Só adjetivos-な e substantivos usam に.'}
+- 寒い é adjetivo-い, então o い vira く: 寒く. Só adjetivos-な e substantivos usam に.
 
 
-### 2. (recognition) {'pt-BR': 'きれい (bonito/limpo) é adjetivo-な. Para ligar com なる, qual partícula ele precisa?'}
+### 2. (recognition) きれい (bonito/limpo) é adjetivo-な. Para ligar com なる, qual partícula ele precisa?
 - **Resposta:** `{"choices": ["く", "に", "を"], "correct": "に"}`
-- {'pt-BR': "Adjetivos-な (e substantivos) usam に: きれいになる ('ficar arrumado'). O く é só para adjetivos-い."}
+- Adjetivos-な (e substantivos) usam に: きれいになる ('ficar arrumado'). O く é só para adjetivos-い.
 
 
-### 3. (particle_choice) {'pt-BR': 'O ar esfria sozinho (ninguém causa). Complete: 夜になると寒く＿。 (Quando anoitece, esfria.)'}
+### 3. (particle_choice) O ar esfria sozinho (ninguém causa). Complete: 夜になると寒く＿。 (Quando anoitece, esfria.)
 - **Resposta:** `{"choices": ["なる", "する", "ある"], "correct": "なる"}`
-- {'pt-BR': 'A mudança acontece por conta própria, sem causador → なる. Seria する só se alguém deixasse algo frio de propósito.'}
+- A mudança acontece por conta própria, sem causador → なる. Seria する só se alguém deixasse algo frio de propósito.
 - frases: `sent:gen-11bb4cdbc365`
 
-### 4. (cloze) {'pt-BR': 'Alguém pede para você abaixar o som. Complete com a forma adverbial: 音を＿してください。 (Deixa o som mais baixo, por favor.) [小さい]'}
+### 4. (cloze) Alguém pede para você abaixar o som. Complete com a forma adverbial: 音を＿してください。 (Deixa o som mais baixo, por favor.) [小さい]
 - **Resposta:** `{"text": "小さく", "full": "音を小さくしてください"}`
-- {'pt-BR': '小さい é adjetivo-い → 小さく. Com する porque a pessoa pede que VOCÊ provoque a mudança (não acontece sozinho).'}
+- 小さい é adjetivo-い → 小さく. Com する porque a pessoa pede que VOCÊ provoque a mudança (não acontece sozinho).
 - frases: `sent:gen-b76ff6005aca`
 
-### 5. (sentence_build) {'pt-BR': "Monte 'Tomei o remédio e melhorei (fiquei bem).' com as peças: [元気] [飲んで] [なった] [薬を] [に]"}
+### 5. (sentence_build) Monte 'Tomei o remédio e melhorei (fiquei bem).' com as peças: [元気] [飲んで] [なった] [薬を] [に]
 - **Resposta:** `{"order": ["薬を", "飲んで", "元気", "に", "なった"], "text": "薬を飲んで元気になった。"}`
-- {'pt-BR': '元気 é adjetivo-な → 元気に + なった (passado de なる). A melhora veio sozinha depois do remédio, por isso なる e não する.'}
+- 元気 é adjetivo-な → 元気に + なった (passado de なる). A melhora veio sozinha depois do remédio, por isso なる e não する.
 - frases: `sent:gen-79838fe22b3c`
 
-### 6. (production) {'pt-BR': "Diga em japonês 'Vou deixar o quarto mais claro.' (você é quem causa a mudança). Use 部屋 (quarto), 明るい (claro) e する."}
+### 6. (production) Diga em japonês 'Vou deixar o quarto mais claro.' (você é quem causa a mudança). Use 部屋 (quarto), 明るい (claro) e する.
 - **Resposta:** `{"text": "部屋を明るくする。", "accept": ["部屋を明るくする", "部屋を明るくします", "へやを明るくする", "部屋をあかるくする", "へやをあかるくする"]}`
-- {'pt-BR': "明るい (adjetivo-い) → 明るく + する porque VOCÊ provoca a mudança. Com なる ('部屋が明るくなる') seria o quarto clareando sozinho."}
+- 明るい (adjetivo-い) → 明るく + する porque VOCÊ provoca a mudança. Com なる ('部屋が明るくなる') seria o quarto clareando sozinho.
 - frases: `sent:gen-f1534c9baa43`
 

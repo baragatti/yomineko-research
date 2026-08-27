@@ -4,7 +4,7 @@
   "stage": "speak:getting_around",
   "order": 5,
   "title": {
-    "pt-BR": "Chegar aonde você quer — parte 5"
+    "pt-BR": "Chegar aonde você quer, parte 5"
   },
   "say_now": [
     "sent:tatoeba-141381",
@@ -57,6 +57,112 @@
   "cumulative_known_vocab": 192,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:te-ita",
+    "gram:yotei-da"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:te-itadakemasen-ka",
+      "examples": [
+        "sent:tatoeba-146797",
+        "sent:tatoeba-148943",
+        "sent:tatoeba-124645"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:masen-ka",
+      "examples": [
+        "sent:gen-4595bdeb6907",
+        "sent:gen-a94929c3a847",
+        "sent:tatoeba-172871"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-76549",
+        "sent:tatoeba-79825"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Como se chama este cruzamento?",
+      "answer_key": "この交差点は何と呼ばれていますか。",
+      "accepted_variants": [
+        "このこうさてんわなんとよばれていますか",
+        "このこうさてんわなんとよばれていますか。",
+        "この交差点は何と呼ばれていますか",
+        "この交差点は何と呼ばれていますか。"
+      ],
+      "sentence": "sent:tatoeba-222010",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "\"Será que já não nos encontramos em algum lugar antes?\", perguntou o estudante.",
+      "answer_key": "「以前にどこかで会ったことがありませんか」とその学生はたずねた。",
+      "accepted_variants": [
+        "「いぜんにどこかであったことがありませんか」とそのがくせいわたずねた",
+        "「いぜんにどこかであったことがありませんか」とそのがくせいわたずねた。",
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた",
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた。"
+      ],
+      "sentence": "sent:tatoeba-4939",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O ônibus acabou de sair agora.",
+      "answer_key": "バスは今出発したところだ。",
+      "accepted_variants": [
+        "ばすわいましゅっぱつしたところだ",
+        "ばすわいましゅっぱつしたところだ。",
+        "バスは今出発したところだ",
+        "バスは今出発したところだ。"
+      ],
+      "sentence": "sent:tatoeba-198112",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-158256",
+      "sent:tatoeba-200926",
+      "sent:tatoeba-193061",
+      "sent:tatoeba-9145503",
+      "sent:tatoeba-179327",
+      "sent:tatoeba-5115"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:771",
@@ -108,105 +214,5 @@
         "テーブル"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:te-ita",
-    "gram:yotei-da"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:te-itadakemasen-ka",
-      "examples": [
-        "sent:tatoeba-146797",
-        "sent:tatoeba-148943",
-        "sent:tatoeba-124645"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:masen-ka",
-      "examples": [
-        "sent:gen-4595bdeb6907",
-        "sent:gen-a94929c3a847",
-        "sent:tatoeba-172871"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-76549",
-        "sent:tatoeba-79825"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Como se chama este cruzamento?",
-      "answer_key": "この交差点は何と呼ばれていますか。",
-      "accepted_variants": [
-        "この交差点は何と呼ばれていますか",
-        "この交差点は何と呼ばれていますか。"
-      ],
-      "sentence": "sent:tatoeba-222010",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "\"Será que já não nos encontramos em algum lugar antes?\", perguntou o estudante.",
-      "answer_key": "「以前にどこかで会ったことがありませんか」とその学生はたずねた。",
-      "accepted_variants": [
-        "「以前にどこかで会ったことがありませんか」とその学生はたずねた",
-        "「以前にどこかで会ったことがありませんか」とその学生はたずねた。"
-      ],
-      "sentence": "sent:tatoeba-4939",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "O ônibus acabou de sair agora.",
-      "answer_key": "バスは今出発したところだ。",
-      "accepted_variants": [
-        "バスは今出発したところだ",
-        "バスは今出発したところだ。"
-      ],
-      "sentence": "sent:tatoeba-198112",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
-    "items": [
-      "sent:tatoeba-158256",
-      "sent:tatoeba-200926",
-      "sent:tatoeba-193061",
-      "sent:tatoeba-9145503",
-      "sent:tatoeba-179327",
-      "sent:tatoeba-5115"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 32,
-    "fluency": 6
-  }
+  ]
 }

@@ -59,6 +59,12 @@ def main() -> int:
     subprocess.run([py, f"{here}/clean_emdash.py", "--apply"], check=False)
     # reset_sentences wiped lessons too — reload authored lessons (research/derived/lessons/*.json).
     subprocess.run([py, f"{here}/load_lessons.py"], check=False)
+    # sentence_vocab LAST, and unconditionally. On 2026-08-19 fix_homophone_vocab_links.py and
+    # apply_redissect_round2.py each did DELETE FROM sentence_vocab + rebuild from token.vocab_id alone,
+    # destroying the run-match and n3-lemma link families (31.8k rows -> 20,357) and taking 436 links the
+    # committed exam banks depend on with them. This builder is the single writer that restores all three
+    # rules; a replay that stops before it leaves the index in that thinned state. It never re-levels.
+    subprocess.run([py, f"{here}/build_sentence_vocab.py"], check=False)
     return 0
 
 

@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-100, gp-118] · vocabulário [壊す, 大抵, 必ず, 折る, 拾う, 止む, 殆ど, 沸く, 焼く, 盗む, 等々, 踏む] · kanji [地] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-172845`, `sent:tatoeba-179727`, `sent:tatoeba-2464847`, `sent:tatoeba-4849`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-4849`, `sent:tatoeba-172845`, `sent:tatoeba-2464847`, `sent:tatoeba-179727`
 
 ---
 
@@ -73,28 +73,28 @@ Juntando tudo: 新しい傘は千円しかしなかった = "o guarda-chuva novo
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'No padrão しか〜ない, em que forma fica SEMPRE o verbo?'}
+### 1. (recognition) No padrão しか〜ない, em que forma fica SEMPRE o verbo?
 - **Resposta:** `{"choices": ["no negativo", "no passado afirmativo", "na forma -te"], "correct": "no negativo"}`
-- {'pt-BR': "しか exige o verbo no negativo (ない), mas o sentido geral da frase é positivo-limitado: 'só / apenas'. Ex.: 待つしかない = 'só resta esperar'."}
+- しか exige o verbo no negativo (ない), mas o sentido geral da frase é positivo-limitado: 'só / apenas'. Ex.: 待つしかない = 'só resta esperar'.
 
 
-### 2. (cloze) {'pt-BR': "Complete com o negativo para dizer 'só resta esperar': 待つしか＿。"}
+### 2. (cloze) Complete com o negativo para dizer 'só resta esperar': 待つしか＿。
 - **Resposta:** `{"text": "ない", "full": "待つしかない"}`
-- {'pt-BR': "待つ ('esperar') + しか + ない ('não há'). O ない é o negativo obrigatório; a frase quer dizer 'a única opção é esperar'. Não traduza 'não esperar'; o negativo japonês vira afirmativo limitado em pt-BR."}
+- 待つ ('esperar') + しか + ない ('não há'). O ない é o negativo obrigatório; a frase quer dizer 'a única opção é esperar'. Não traduza 'não esperar'; o negativo japonês vira afirmativo limitado em pt-BR.
 
 
-### 3. (particle_choice) {'pt-BR': "Escolha o que vai no lugar de ＿ para dizer 'só tenho mil ienes': 千円＿ない。"}
+### 3. (particle_choice) Escolha o que vai no lugar de ＿ para dizer 'só tenho mil ienes': 千円＿ない。
 - **Resposta:** `{"choices": ["しか", "だけ", "から"], "correct": "しか"}`
-- {'pt-BR': "しか combina com o negativo (ない) para marcar escassez: 千円しかない = 'só tenho mil ienes (e é pouco)'. だけ NÃO usa verbo negativo, então não cabe aqui."}
+- しか combina com o negativo (ない) para marcar escassez: 千円しかない = 'só tenho mil ienes (e é pouco)'. だけ NÃO usa verbo negativo, então não cabe aqui.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Só resta um dia.' com as peças: [ない] [あと] [しか] [1日]"}
+### 4. (sentence_build) Monte 'Só resta um dia.' com as peças: [ない] [あと] [しか] [1日]
 - **Resposta:** `{"order": ["あと", "1日", "しか", "ない"], "text": "あと1日しかない。"}`
-- {'pt-BR': "あと ('restante') + 1日 ('um dia') + しか + ない. O padrão [quantidade] + しか + verbo negativo dá o tom de pouco: 'só resta um dia'."}
+- あと ('restante') + 1日 ('um dia') + しか + ない. O padrão [quantidade] + しか + verbo negativo dá o tom de pouco: 'só resta um dia'.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'É agora ou nunca.' (literalmente 'fora agora, não há') usando 今 e o padrão しか〜ない."}
+### 5. (production) Diga em japonês 'É agora ou nunca.' (literalmente 'fora agora, não há') usando 今 e o padrão しか〜ない.
 - **Resposta:** `{"text": "今しかない。", "accept": ["今しかない", "いましかない", "今しかない。", "いましかない。"]}`
-- {'pt-BR': "今 ('agora') + しか + ない. しか substitui partículas como は/が, então não se diz 今がしか; só 今しか. O negativo ない fecha o sentido 'é agora ou nunca'."}
+- 今 ('agora') + しか + ない. しか substitui partículas como は/が, então não se diz 今がしか; só 今しか. O negativo ない fecha o sentido 'é agora ou nunca'.
 
 

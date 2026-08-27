@@ -50,18 +50,18 @@ De novo, o português tende a engolir essa pausa e falar tudo emendado. Mas き�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'avó' (com a vogal longa)?"}
+### 1. (recognition) Qual palavra significa 'avó' (com a vogal longa)?
 - **Resposta:** `{"choices": ["おばあさん", "おばさん", "おじさん"], "correct": "おばあさん"}`
-- {'pt-BR': "おばあさん (obaasan) = avó, com o 'baa' segurado por 2 moras. おばさん (obasan), curto, é 'tia'."}
+- おばあさん (obaasan) = avó, com o 'baa' segurado por 2 moras. おばさん (obasan), curto, é 'tia'.
 
 
-### 2. (recognition) {'pt-BR': 'きって (com o っ pequeno) significa:'}
+### 2. (recognition) きって (com o っ pequeno) significa:
 - **Resposta:** `{"choices": ["selo", "venha", "árvore"], "correct": "selo"}`
-- {'pt-BR': 'きって (kitte) = selo, com a pausa do っ (consoante dobrada). Sem o っ, きて (kite) = venha.'}
+- きって (kitte) = selo, com a pausa do っ (consoante dobrada). Sem o っ, きて (kite) = venha.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 3. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["ゆき", "neve"], ["ゆうき", "coragem"], ["きて", "venha"], ["きって", "selo"]]}`
-- {'pt-BR': 'Pares mínimos por duração: ゆき/ゆうき diferem na vogal longa; きて/きって diferem no っ (pausa de 1 mora).'}
+- Pares mínimos por duração: ゆき/ゆうき diferem na vogal longa; きて/きって diferem no っ (pausa de 1 mora).
 
 

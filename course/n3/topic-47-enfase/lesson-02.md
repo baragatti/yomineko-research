@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-mo, n3-wa-mochiron-mo] · vocabulário [コーチ, コード, ゴール, 候補, 凍る, 呼吸, 国語, 故郷, 極, 氷, 考慮, 語学, 誤解, 越える, 黒板] · kanji [余 王 込 返 類] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-87071`, `sent:tatoeba-184254`
 
 ---
 
@@ -29,7 +29,7 @@ Armadilha PT: o segundo elemento costuma ESCALAR em intensidade ou surpresa em r
 Registro: ばかりか é formal e mais escrito. Na conversa do dia a dia soa mais natural だけでなく…も. Há ainda parentes próximos: ばかりでなく (neutro) e のみならず (bem formal, literário).
 
 #### はもちろん...も: "A, é claro, e também B"
-A estrutura n3-wa-mochiron-mo enfatiza que, além do primeiro item (que é óbvio ou esperado), também vale o segundo. A palavra もちろん significa "é claro, naturalmente", então a estrutura diz literalmente "A, é claro, e também B". Liga-se tipicamente a substantivos: S1はもちろんS2も.
+A estrutura n3-wa-mochiron-mo enfatiza que, além do primeiro item (que é óbvio ou esperado), também vale o segundo. A palavra もちろん significa "é claro, naturalmente", então a estrutura diz literalmente "A, é claro, e também B". Liga-se tipicamente a substantivos: S1 はもちろん S2 も.
 - 数学はもちろん英語も得意だ = "sou bom em matemática, claro, e em inglês também".
 - 子供はもちろん大人も楽しめる = "as crianças, claro, e também os adultos conseguem se divertir".
 
@@ -82,28 +82,28 @@ O kanji 類 significa "tipo, espécie, categoria", como em 種類 ("tipo, varied
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase transmite melhor 'ele fala não só inglês, como também chinês' (com a ideia de 'ainda por cima')?"}
+### 1. (recognition) Qual frase transmite melhor 'ele fala não só inglês, como também chinês' (com a ideia de 'ainda por cima')?
 - **Resposta:** `{"choices": ["彼は英語と中国語が好きだ", "彼は英語ばかりか、中国語も話せる", "彼は英語だけ話せる", "彼は英語か中国語を話す"], "correct": "彼は英語ばかりか、中国語も話せる"}`
-- {'pt-BR': "ばかりか...も acrescenta algo que vai além e surpreende: 英語ばかりか、中国語も = 'não só inglês, como também chinês'. As outras opções são apenas lista, restrição (だけ) ou alternativa (か), sem a ideia de escalada."}
+- ばかりか...も acrescenta algo que vai além e surpreende: 英語ばかりか、中国語も = 'não só inglês, como também chinês'. As outras opções são apenas lista, restrição (だけ) ou alternativa (か), sem a ideia de escalada.
 
 
-### 2. (particle_choice) {'pt-BR': "Complete 'as crianças, claro, e também os adultos conseguem se divertir': 子供＿＿＿＿大人も楽しめる。"}
+### 2. (particle_choice) Complete 'as crianças, claro, e também os adultos conseguem se divertir': 子供＿＿＿＿大人も楽しめる。
 - **Resposta:** `{"choices": ["はもちろん", "ばかりか", "だけで", "でさえ"], "correct": "はもちろん"}`
-- {'pt-BR': 'S1 はもちろん S2 も parte de um item óbvio (as crianças) e reforça que vale também o segundo (os adultos). はもちろん soa natural e positivo, típico de elogios. ばかりか também funcionaria gramaticalmente, mas é bem mais formal e escrito.'}
+- S1 はもちろん S2 も parte de um item óbvio (as crianças) e reforça que vale também o segundo (os adultos). はもちろん soa natural e positivo, típico de elogios. ばかりか também funcionaria gramaticalmente, mas é bem mais formal e escrito.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'não só choveu, como também o vento ficou forte': 雨が降る＿＿＿＿、風も強くなった。"}
+### 3. (cloze) Complete 'não só choveu, como também o vento ficou forte': 雨が降る＿＿＿＿、風も強くなった。
 - **Resposta:** `{"text": "ばかりか", "full": "雨が降るばかりか、風も強くなった"}`
-- {'pt-BR': "雨が降るばかりか...風も = 'não só choveu, como também o vento (ficou forte)'. ばかりか liga-se à forma curta (降る) e o segundo membro recebe も, mantendo a ideia de escalada negativa ('e ainda por cima')."}
+- 雨が降るばかりか...風も = 'não só choveu, como também o vento (ficou forte)'. ばかりか liga-se à forma curta (降る) e o segundo membro recebe も, mantendo a ideia de escalada negativa ('e ainda por cima').
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em pt-BR.'}
+### 4. (matching) Associe cada palavra ao seu significado em pt-BR.
 - **Resposta:** `{"pairs": [["語学", "estudo de idiomas estrangeiros"], ["黒板", "quadro-negro, lousa"], ["誤解", "mal-entendido, equívoco"], ["氷", "gelo"], ["故郷", "terra natal, cidade natal"]]}`
-- {'pt-BR': '語学 (ごがく) = estudo de idiomas; 黒板 (こくばん) = lousa; 誤解 (ごかい) = mal-entendido; 氷 (こおり) = gelo; 故郷 (こきょう) = terra natal.'}
+- 語学 (ごがく) = estudo de idiomas; 黒板 (こくばん) = lousa; 誤解 (ごかい) = mal-entendido; 氷 (こおり) = gelo; 故郷 (こきょう) = terra natal.
 
 
-### 5. (production) {'pt-BR': "Diga 'sou bom em matemática, claro, e em inglês também' usando o padrão はもちろん...も."}
+### 5. (production) Diga 'sou bom em matemática, claro, e em inglês também' usando o padrão はもちろん...も.
 - **Resposta:** `{"text": "数学はもちろん英語も得意だ", "accept": ["数学はもちろん、英語も得意だ", "すうがくはもちろんえいごもとくいだ", "数学はもちろん英語も得意です"]}`
-- {'pt-BR': "数学はもちろん ('matemática, claro') parte do item esperado; 英語も得意だ ('também em inglês sou bom') acrescenta o segundo. O も no segundo elemento é obrigatório para fechar o padrão はもちろん...も."}
+- 数学はもちろん ('matemática, claro') parte do item esperado; 英語も得意だ ('também em inglês sou bom') acrescenta o segundo. O も no segundo elemento é obrigatório para fechar o padrão はもちろん...も.
 
 

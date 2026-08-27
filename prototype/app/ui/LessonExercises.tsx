@@ -10,6 +10,23 @@ import { useEffect } from "react";
  * dangerouslySetInnerHTML lesson body. The bank / right-column are pre-shuffled server-side; all per-exercise
  * state is read from the DOM (classes), so nothing here depends on querying the body at mount time.
  */
+/**
+ * Compare a typed answer the way a learner writes it, not the way the bank stores it.
+ *
+ * The accept list is built server-side from `answer.accept` (render-body.server.ts), while the answer the
+ * page REVEALS is `answer.text` — and on 110 of the 308 production exercises those two differ by nothing
+ * but a trailing 。 (also 、 and 「」). Grading on the raw string therefore rejected the app's own revealed
+ * answer typed verbatim. Both sides go through this now: NFKC folds full-width ASCII (！？（）ａ) down to
+ * half-width, then sentence punctuation and every flavour of space are dropped.
+ *
+ * ー (chōonpu) is deliberately NOT stripped: it is a phoneme, not punctuation, and folding it would make
+ * ビール and ビル the same answer. ・ is, matching what kanaToRomaji already strips, so the romaji variants
+ * render-body derives from each accept entry still line up after normalisation.
+ */
+function normAnswer(s: string): string {
+  return (s || "").normalize("NFKC").toLowerCase().replace(/[\s　。、・「」『』（）()！？!?]/g, "");
+}
+
 export function LessonExercises() {
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -78,8 +95,8 @@ export function LessonExercises() {
         }
         let accept: string[] = [];
         try { accept = JSON.parse(box.dataset.accept || "[]"); } catch { accept = []; }
-        const val = (field?.value || "").trim().toLowerCase();
-        const ok = !!val && accept.includes(val);
+        const val = normAnswer(field?.value || "");
+        const ok = !!val && accept.some((a) => normAnswer(a) === val);
         box.classList.toggle("is-correct", ok);
         box.classList.toggle("is-wrong", !ok);
         if (result) { result.hidden = false; result.textContent = ok ? "Correto!" : "Ainda não — tente de novo ou veja a resposta."; }
@@ -99,7 +116,17 @@ export function LessonExercises() {
         }
         const sel = m.querySelector<HTMLElement>('.ym-match-item.is-sel[data-side="left"]');
         if (!sel) return;
-        if (sel.dataset.key === item.dataset.key) {
+        // Grade by TEXT, not by array index. A right column may legitimately repeat a label (three terms
+        // whose answer is "3"), and the learner can only see the label — rejecting a visually identical
+        // cell because it carries a different data-key made those exercises unpassable by appearance.
+        // The cell keyed to the selected term is still the canonical answer; ANY right cell showing that
+        // same text is accepted, and the cell actually tapped is the one consumed, so N duplicate labels
+        // are used exactly once each. Index equality remains sufficient (it implies text equality).
+        const cellText = (el: Element | null | undefined) => (el?.textContent || "").trim();
+        const want = m.querySelector<HTMLElement>(
+          `.ym-match-item[data-side="right"][data-key="${sel.dataset.key}"]`,
+        );
+        if (sel.dataset.key === item.dataset.key || (!!want && cellText(want) === cellText(item))) {
           sel.classList.add("is-matched");
           item.classList.add("is-matched");
           sel.classList.remove("is-sel");

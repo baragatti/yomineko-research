@@ -46,8 +46,8 @@
      ]
     },
     "example_sentences[]": {
-     "present": 4360,
-     "pct": 204.6,
+     "present": 4357,
+     "pct": 204.5,
      "required": false,
      "types": [
       "string"
@@ -115,6 +115,24 @@
      "required": false,
      "types": [
       "integer"
+     ],
+     "min": 1,
+     "max": 7401
+    },
+    "families": {
+     "present": 2131,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "families[]": {
+     "present": 545,
+     "pct": 25.6,
+     "required": false,
+     "types": [
+      "string"
      ]
     },
     "freq_rank": {
@@ -124,7 +142,9 @@
      "types": [
       "integer",
       "null"
-     ]
+     ],
+     "min": 1,
+     "max": 2495
     },
     "grade": {
      "present": 2131,
@@ -133,15 +153,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      8
-     ]
+     "min": 1,
+     "max": 8
     },
     "id": {
      "present": 2131,
@@ -149,7 +162,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 9629
     },
     "irregular_note": {
      "present": 2131,
@@ -174,7 +189,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 211
     },
     "kanjivg_ref": {
      "present": 2131,
@@ -220,7 +237,9 @@
      "required": true,
      "types": [
       "number"
-     ]
+     ],
+     "min": 0.0,
+     "max": 1.0
     },
     "level_sources": {
      "present": 2131,
@@ -391,10 +410,6 @@
      "required": false,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false,
-      true
      ]
     },
     "readings[].example_vocab_ids": {
@@ -412,7 +427,9 @@
      "required": false,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 2,
+     "max": 7399
     },
     "readings[].introduced_at_level": {
      "present": 9340,
@@ -489,32 +506,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      2,
-      20,
-      21,
-      22,
-      23,
-      29,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 1,
+     "max": 29
     },
     "unicode": {
      "present": 2131,
@@ -557,9 +550,22 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
+     ]
+    },
+    "families": {
+     "present": 7401,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "families[]": {
+     "present": 1652,
+     "pct": 22.3,
+     "required": false,
+     "types": [
+      "string"
      ]
     },
     "forms": {
@@ -584,10 +590,6 @@
      "required": false,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false,
-      true
      ]
     },
     "forms[].is_kana": {
@@ -596,10 +598,6 @@
      "required": false,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false,
-      true
      ]
     },
     "forms[].is_primary": {
@@ -608,10 +606,6 @@
      "required": false,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false,
-      true
      ]
     },
     "headword": {
@@ -628,7 +622,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 7401
     },
     "jmdict_ref": {
      "present": 7401,
@@ -700,7 +696,9 @@
      "required": true,
      "types": [
       "number"
-     ]
+     ],
+     "min": 0.34,
+     "max": 1.0
     },
     "level_sources": {
      "present": 7401,
@@ -838,14 +836,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-     ]
+     "min": 0,
+     "max": 5
     },
     "pitch[].reading": {
      "present": 1221,
@@ -949,12 +941,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      1,
-      2,
-      3
-     ]
+     "min": 0,
+     "max": 3
     },
     "senses[].pos": {
      "present": 10588,
@@ -1060,6 +1048,22 @@
      "present": 496,
      "pct": 100.0,
      "required": true,
+     "types": [
+      "string"
+     ]
+    },
+    "families": {
+     "present": 496,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "families[]": {
+     "present": 375,
+     "pct": 75.6,
+     "required": false,
      "types": [
       "string"
      ]
@@ -1183,7 +1187,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 496
     },
     "key": {
      "present": 496,
@@ -1253,7 +1259,9 @@
      "required": true,
      "types": [
       "number"
-     ]
+     ],
+     "min": 0.333,
+     "max": 1.0
     },
     "level_sources": {
      "present": 496,
@@ -1327,9 +1335,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "nuance": {
@@ -1813,10 +1818,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false,
-      true
      ]
     },
     "provenance.jp_source": {
@@ -1844,9 +1845,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "provenance.pt_source": {
@@ -1889,7 +1887,9 @@
      "required": true,
      "types": [
       "number"
-     ]
+     ],
+     "min": 0.6,
+     "max": 0.85
     },
     "romaji": {
      "present": 5889,
@@ -1965,7 +1965,7 @@
      ]
     },
     "tokens[].conjugation_note.en": {
-     "present": 13502,
+     "present": 13501,
      "pct": 229.3,
      "required": false,
      "types": [
@@ -1973,8 +1973,8 @@
      ]
     },
     "tokens[].conjugation_note.pt-BR": {
-     "present": 13937,
-     "pct": 236.7,
+     "present": 13936,
+     "pct": 236.6,
      "required": false,
      "types": [
       "string"
@@ -2132,30 +2132,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      1,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      2,
-      20,
-      21,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 0,
+     "max": 21
     },
     "tokens[].reading": {
      "present": 49756,
@@ -2219,6 +2197,15 @@
       "string"
      ]
     },
+    "tokens[].vocab": {
+     "present": 49756,
+     "pct": 844.9,
+     "required": false,
+     "types": [
+      "null",
+      "string"
+     ]
+    },
     "tokens[].vocab_id": {
      "present": 49756,
      "pct": 844.9,
@@ -2226,7 +2213,9 @@
      "types": [
       "integer",
       "null"
-     ]
+     ],
+     "min": 1,
+     "max": 7229
     },
     "translation": {
      "present": 5889,
@@ -2325,7 +2314,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 396
     },
     "importance_rank": {
      "present": 396,
@@ -2333,7 +2324,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 719
     },
     "label": {
      "present": 396,
@@ -2373,7 +2366,9 @@
      "required": false,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 2949
     },
     "members[].intra_order": {
      "present": 2572,
@@ -2381,7 +2376,9 @@
      "required": false,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 0,
+     "max": 176
     },
     "members[].is_core": {
      "present": 2572,
@@ -2389,10 +2386,6 @@
      "required": false,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false,
-      true
      ]
     },
     "members[].member_type": {
@@ -2417,6 +2410,14 @@
      ]
     },
     "members[].ref": {
+     "present": 2572,
+     "pct": 649.5,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "members[].slug": {
      "present": 2572,
      "pct": 649.5,
      "required": false,
@@ -2618,7 +2619,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 2,
+     "max": 2952
     }
    }
   },
@@ -2775,7 +2778,9 @@
      "required": false,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 57
     },
     "[value][].row": {
      "present": 57,
@@ -2824,9 +2829,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false
      ]
     },
     "gated_to_lesson": {
@@ -2888,9 +2890,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "slug": {
@@ -3135,29 +3134,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      2,
-      20,
-      22,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 1,
+     "max": 22
     },
     "transform": {
      "present": 1233,
@@ -3449,7 +3427,7 @@
    ]
   },
   "exam_item": {
-   "glob": "corpus/exam_banks/*.json",
+   "glob": "corpus/exam_banks/n[0-9]_*.json",
    "kind": "list",
    "files": [
     "corpus/exam_banks/n3_context_fill.json",
@@ -3493,23 +3471,19 @@
     "corpus/exam_banks/n5_text_grammar.json",
     "corpus/exam_banks/n5_usage.json"
    ],
-   "records": 6166,
+   "records": 6073,
    "fields": {
     "ai_generated": {
-     "present": 2852,
-     "pct": 46.3,
-     "required": false,
+     "present": 6073,
+     "pct": 100.0,
+     "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false,
-      true
      ]
     },
     "answer": {
      "present": 873,
-     "pct": 14.2,
+     "pct": 14.4,
      "required": false,
      "types": [
       "string"
@@ -3527,39 +3501,39 @@
      ]
     },
     "correct": {
-     "present": 5293,
-     "pct": 85.8,
+     "present": 5200,
+     "pct": 85.6,
      "required": false,
      "types": [
       "string"
      ]
     },
     "distractors": {
-     "present": 5110,
-     "pct": 82.9,
+     "present": 5017,
+     "pct": 82.6,
      "required": false,
      "types": [
       "array"
      ]
     },
     "distractors[]": {
-     "present": 15220,
-     "pct": 246.8,
+     "present": 14941,
+     "pct": 246.0,
      "required": false,
      "types": [
       "string"
      ]
     },
     "grammar": {
-     "present": 729,
-     "pct": 11.8,
+     "present": 728,
+     "pct": 12.0,
      "required": false,
      "types": [
       "string"
      ]
     },
     "id": {
-     "present": 6166,
+     "present": 6073,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3567,18 +3541,19 @@
      ]
     },
     "layer": {
-     "present": 891,
-     "pct": 14.5,
-     "required": false,
+     "present": 6073,
+     "pct": 100.0,
+     "required": true,
      "types": [
       "string"
      ],
      "values": [
+      "B",
       "C"
      ]
     },
     "level": {
-     "present": 6166,
+     "present": 6073,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3591,19 +3566,16 @@
      ]
     },
     "needs_review": {
-     "present": 891,
-     "pct": 14.5,
-     "required": false,
+     "present": 6073,
+     "pct": 100.0,
+     "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "pieces": {
      "present": 873,
-     "pct": 14.2,
+     "pct": 14.4,
      "required": false,
      "types": [
       "array"
@@ -3611,7 +3583,7 @@
     },
     "pieces[]": {
      "present": 6085,
-     "pct": 98.7,
+     "pct": 100.2,
      "required": false,
      "types": [
       "string"
@@ -3619,15 +3591,15 @@
     },
     "question": {
      "present": 525,
-     "pct": 8.5,
+     "pct": 8.6,
      "required": false,
      "types": [
       "string"
      ]
     },
     "reading": {
-     "present": 548,
-     "pct": 8.9,
+     "present": 475,
+     "pct": 7.8,
      "required": false,
      "types": [
       "string"
@@ -3643,7 +3615,7 @@
     },
     "script[].speaker": {
      "present": 855,
-     "pct": 13.9,
+     "pct": 14.1,
      "required": false,
      "types": [
       "string"
@@ -3658,22 +3630,22 @@
     },
     "script[].text": {
      "present": 855,
-     "pct": 13.9,
+     "pct": 14.1,
      "required": false,
      "types": [
       "string"
      ]
     },
     "sentence": {
-     "present": 3047,
-     "pct": 49.4,
+     "present": 3027,
+     "pct": 49.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "source": {
-     "present": 5927,
+     "present": 5834,
      "pct": 96.1,
      "required": false,
      "types": [
@@ -3690,8 +3662,8 @@
      ]
     },
     "stem": {
-     "present": 4585,
-     "pct": 74.4,
+     "present": 4492,
+     "pct": 74.0,
      "required": false,
      "types": [
       "string"
@@ -3699,19 +3671,29 @@
     },
     "target": {
      "present": 366,
-     "pct": 5.9,
+     "pct": 6.0,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "vocab": {
+     "present": 3758,
+     "pct": 61.9,
      "required": false,
      "types": [
       "string"
      ]
     },
     "vocab_id": {
-     "present": 3777,
-     "pct": 61.3,
+     "present": 3758,
+     "pct": 61.9,
      "required": false,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 2953
     },
     "wrong": {
      "present": 183,
@@ -3723,10 +3705,233 @@
     },
     "wrong[]": {
      "present": 549,
-     "pct": 8.9,
+     "pct": 9.0,
      "required": false,
      "types": [
       "string"
+     ]
+    }
+   },
+   "discriminant": "id_prefix",
+   "variants": {
+    "cf": {
+     "records": 992,
+     "always": [
+      "ai_generated",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "sentence",
+      "source",
+      "stem",
+      "vocab",
+      "vocab_id"
+     ]
+    },
+    "gf": {
+     "records": 728,
+     "always": [
+      "ai_generated",
+      "correct",
+      "distractors",
+      "grammar",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "sentence",
+      "source",
+      "stem"
+     ]
+    },
+    "kr": {
+     "records": 1200,
+     "always": [
+      "ai_generated",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "source",
+      "stem",
+      "vocab",
+      "vocab_id"
+     ]
+    },
+    "lg": {
+     "records": 9,
+     "always": [
+      "ai_generated",
+      "audio",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "question",
+      "script"
+     ]
+    },
+    "lp": {
+     "records": 57,
+     "always": [
+      "ai_generated",
+      "audio",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "question",
+      "script"
+     ]
+    },
+    "lr": {
+     "records": 68,
+     "always": [
+      "ai_generated",
+      "audio",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "question",
+      "script",
+      "sentence"
+     ]
+    },
+    "ls": {
+     "records": 42,
+     "always": [
+      "ai_generated",
+      "audio",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "question",
+      "script"
+     ]
+    },
+    "lt": {
+     "records": 63,
+     "always": [
+      "ai_generated",
+      "audio",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "question",
+      "script"
+     ]
+    },
+    "or": {
+     "records": 1200,
+     "always": [
+      "ai_generated",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "source",
+      "stem",
+      "vocab",
+      "vocab_id"
+     ]
+    },
+    "pp": {
+     "records": 183,
+     "always": [
+      "ai_generated",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "sentence",
+      "source",
+      "stem",
+      "target",
+      "vocab",
+      "vocab_id"
+     ]
+    },
+    "rc": {
+     "records": 286,
+     "always": [
+      "ai_generated",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "question",
+      "reading",
+      "source"
+     ]
+    },
+    "so": {
+     "records": 873,
+     "always": [
+      "ai_generated",
+      "answer",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "pieces",
+      "sentence",
+      "source"
+     ]
+    },
+    "tg": {
+     "records": 189,
+     "always": [
+      "ai_generated",
+      "correct",
+      "distractors",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "reading",
+      "source",
+      "stem"
+     ]
+    },
+    "us": {
+     "records": 183,
+     "always": [
+      "ai_generated",
+      "correct",
+      "id",
+      "layer",
+      "level",
+      "needs_review",
+      "sentence",
+      "source",
+      "target",
+      "vocab",
+      "vocab_id",
+      "wrong"
      ]
     }
    }
@@ -3930,9 +4135,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false
      ]
     },
     "prompt": {
@@ -3976,7 +4178,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 2,
+     "max": 2952
     }
    }
   },
@@ -4060,9 +4264,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      false
      ]
     },
     "particle": {
@@ -4191,12 +4392,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      2,
-      3,
-      4
-     ]
+     "min": 1,
+     "max": 4
     },
     "overview": {
      "present": 4,
@@ -4265,18 +4462,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      15,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 1,
+     "max": 15
     },
     "topics[].order": {
      "present": 52,
@@ -4284,7 +4471,9 @@
      "required": false,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 52
     },
     "topics[].path": {
      "present": 52,
@@ -4333,27 +4522,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      10,
-      11,
-      12,
-      13,
-      15,
-      16,
-      18,
-      2,
-      21,
-      22,
-      27,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 0,
+     "max": 27
     },
     "topics[].unlocks_summary.kanji": {
      "present": 52,
@@ -4362,17 +4532,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      1,
-      13,
-      14,
-      16,
-      26,
-      28,
-      29,
-      8
-     ]
+     "min": 0,
+     "max": 36
     },
     "topics[].unlocks_summary.vocab": {
      "present": 52,
@@ -4381,27 +4542,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      1,
-      102,
-      107,
-      108,
-      109,
-      123,
-      124,
-      127,
-      129,
-      24,
-      34,
-      4,
-      40,
-      45,
-      50,
-      55,
-      60,
-      70
-     ]
+     "min": 0,
+     "max": 129
     }
    }
   },
@@ -4519,23 +4661,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 1,
+     "max": 15
     },
     "lessons[].path": {
      "present": 322,
@@ -4570,16 +4697,16 @@
      ]
     },
     "lessons[].unlocks[].ref": {
-     "present": 4131,
-     "pct": 7944.2,
+     "present": 4137,
+     "pct": 7955.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].unlocks[].type": {
-     "present": 4131,
-     "pct": 7944.2,
+     "present": 4137,
+     "pct": 7955.8,
      "required": false,
      "types": [
       "string"
@@ -4628,7 +4755,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 1,
+     "max": 52
     },
     "theme": {
      "present": 52,
@@ -5074,8 +5203,8 @@
      ]
     },
     "cumulative_known_set.vocab[]": {
-     "present": 354143,
-     "pct": 109982.3,
+     "present": 355373,
+     "pct": 110364.3,
      "required": false,
      "types": [
       "string"
@@ -5307,9 +5436,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "objectives": {
@@ -5335,23 +5461,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 1,
+     "max": 15
     },
     "schema_version": {
      "present": 322,
@@ -5373,8 +5484,8 @@
      ]
     },
     "sentence_refs[]": {
-     "present": 529,
-     "pct": 164.3,
+     "present": 624,
+     "pct": 193.8,
      "required": false,
      "types": [
       "string"
@@ -5397,34 +5508,37 @@
      ]
     },
     "srs.introduces_cards[].card_types": {
-     "present": 4127,
-     "pct": 1281.7,
+     "present": 4133,
+     "pct": 1283.5,
      "required": false,
      "types": [
       "array"
      ]
     },
     "srs.introduces_cards[].deck": {
-     "present": 4127,
-     "pct": 1281.7,
+     "present": 4133,
+     "pct": 1283.5,
      "required": false,
      "types": [
       "string"
      ],
      "values": [
+      "deck:grammar-n3",
       "deck:grammar-n4",
       "deck:grammar-n5",
       "deck:kana-hiragana",
       "deck:kana-katakana",
+      "deck:kanji-n3",
       "deck:kanji-n4",
       "deck:kanji-n5",
+      "deck:vocab-n3",
       "deck:vocab-n4",
       "deck:vocab-n5"
      ]
     },
     "srs.introduces_cards[].item": {
-     "present": 4127,
-     "pct": 1281.7,
+     "present": 4133,
+     "pct": 1283.5,
      "required": false,
      "types": [
       "string"
@@ -5463,16 +5577,16 @@
      ]
     },
     "unlocks[].ref": {
-     "present": 4131,
-     "pct": 1282.9,
+     "present": 4137,
+     "pct": 1284.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "unlocks[].type": {
-     "present": 4131,
-     "pct": 1282.9,
+     "present": 4137,
+     "pct": 1284.8,
      "required": false,
      "types": [
       "string"
@@ -5542,9 +5656,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "ordering": {
@@ -5620,20 +5731,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      10,
-      11,
-      12,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 1,
+     "max": 12
     },
     "stages[].slug": {
      "present": 12,
@@ -5694,9 +5793,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      6
-     ]
+     "min": 6,
+     "max": 6
     },
     "stages[].unit_ids": {
      "present": 12,
@@ -5748,9 +5846,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      359
-     ]
+     "min": 359,
+     "max": 359
     },
     "totals.drills": {
      "present": 1,
@@ -5759,9 +5856,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      277
-     ]
+     "min": 275,
+     "max": 275
     },
     "totals.fluency": {
      "present": 1,
@@ -5770,9 +5866,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      423
-     ]
+     "min": 423,
+     "max": 423
     },
     "totals.patterns_chunked": {
      "present": 1,
@@ -5781,9 +5876,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      134
-     ]
+     "min": 132,
+     "max": 132
     },
     "totals.patterns_kept": {
      "present": 1,
@@ -5792,9 +5886,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      277
-     ]
+     "min": 275,
+     "max": 275
     },
     "totals.phrases": {
      "present": 1,
@@ -5803,9 +5896,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      432
-     ]
+     "min": 432,
+     "max": 432
     },
     "totals.production": {
      "present": 1,
@@ -5814,9 +5906,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      213
-     ]
+     "min": 213,
+     "max": 213
     },
     "totals.real_phrases": {
      "present": 1,
@@ -5825,9 +5916,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      432
-     ]
+     "min": 432,
+     "max": 432
     },
     "totals.stages": {
      "present": 1,
@@ -5836,9 +5926,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      12
-     ]
+     "min": 12,
+     "max": 12
     },
     "totals.units": {
      "present": 1,
@@ -5847,9 +5936,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      72
-     ]
+     "min": 72,
+     "max": 72
     },
     "totals.vocab_introduced": {
      "present": 1,
@@ -5858,9 +5946,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      584
-     ]
+     "min": 584,
+     "max": 584
     }
    }
   },
@@ -6053,7 +6140,9 @@
      "required": true,
      "types": [
       "integer"
-     ]
+     ],
+     "min": 0,
+     "max": 584
     },
     "drills": {
      "present": 72,
@@ -6064,32 +6153,32 @@
      ]
     },
     "drills[].examples": {
-     "present": 277,
-     "pct": 384.7,
+     "present": 275,
+     "pct": 381.9,
      "required": false,
      "types": [
       "array"
      ]
     },
     "drills[].examples[]": {
-     "present": 831,
-     "pct": 1154.2,
+     "present": 825,
+     "pct": 1145.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "drills[].pattern": {
-     "present": 277,
-     "pct": 384.7,
+     "present": 275,
+     "pct": 381.9,
      "required": false,
      "types": [
       "string"
      ]
     },
     "drills[].strand": {
-     "present": 277,
-     "pct": 384.7,
+     "present": 275,
+     "pct": 381.9,
      "required": false,
      "types": [
       "string"
@@ -6152,10 +6241,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      24,
-      48
-     ]
+     "min": 24,
+     "max": 48
     },
     "fluency.strand": {
      "present": 71,
@@ -6174,9 +6261,6 @@
      "required": false,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "id": {
@@ -6220,9 +6304,6 @@
      "required": true,
      "types": [
       "boolean"
-     ],
-     "values": [
-      true
      ]
     },
     "order": {
@@ -6232,14 +6313,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6
-     ]
+     "min": 1,
+     "max": 6
     },
     "patterns": {
      "present": 72,
@@ -6250,8 +6325,8 @@
      ]
     },
     "patterns[]": {
-     "present": 277,
-     "pct": 384.7,
+     "present": 275,
+     "pct": 381.9,
      "required": false,
      "types": [
       "string"
@@ -6266,8 +6341,8 @@
      ]
     },
     "patterns_chunked[]": {
-     "present": 134,
-     "pct": 186.1,
+     "present": 132,
+     "pct": 183.3,
      "required": false,
      "types": [
       "string"
@@ -6290,8 +6365,8 @@
      ]
     },
     "production[].accepted_variants[]": {
-     "present": 416,
-     "pct": 577.8,
+     "present": 821,
+     "pct": 1140.3,
      "required": false,
      "types": [
       "string"
@@ -6339,9 +6414,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      6
-     ]
+     "min": 6,
+     "max": 6
     },
     "say_now": {
      "present": 72,
@@ -6423,11 +6497,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      3,
-      6
-     ]
+     "min": 0,
+     "max": 6
     },
     "strand_counts.language-focused": {
      "present": 72,
@@ -6436,27 +6507,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      13,
-      17,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35
-     ]
+     "min": 0,
+     "max": 30
     },
     "strand_counts.meaning-input": {
      "present": 72,
@@ -6465,9 +6517,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      12
-     ]
+     "min": 12,
+     "max": 12
     },
     "strand_counts.meaning-output": {
      "present": 72,
@@ -6476,10 +6527,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      3
-     ]
+     "min": 0,
+     "max": 3
     },
     "strands": {
      "present": 72,
@@ -6496,17 +6545,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18
-     ]
+     "min": 0,
+     "max": 21
     },
     "strands.language-focused": {
      "present": 72,
@@ -6515,25 +6555,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      38,
-      45,
-      49,
-      50,
-      51,
-      52,
-      53,
-      54,
-      55,
-      56,
-      57,
-      58,
-      59,
-      60,
-      61,
-      62
-     ]
+     "min": 0,
+     "max": 59
     },
     "strands.meaning-input": {
      "present": 72,
@@ -6542,21 +6565,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      100,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      32,
-      35,
-      67
-     ]
+     "min": 24,
+     "max": 100
     },
     "strands.meaning-output": {
      "present": 72,
@@ -6565,15 +6575,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      0,
-      17,
-      5,
-      6,
-      7,
-      8,
-      9
-     ]
+     "min": 0,
+     "max": 17
     },
     "title": {
      "present": 72,
@@ -6654,12 +6657,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      101,
-      41,
-      84,
-      96
-     ]
+     "min": 41,
+     "max": 101
     },
     "courses[].level": {
      "present": 4,
@@ -6682,12 +6681,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      1,
-      2,
-      3,
-      4
-     ]
+     "min": 1,
+     "max": 4
     },
     "courses[].path": {
      "present": 4,
@@ -6732,12 +6727,8 @@
      "types": [
       "integer"
      ],
-     "values": [
-      14,
-      15,
-      17,
-      6
-     ]
+     "min": 6,
+     "max": 17
     },
     "enums_ref": {
      "present": 1,

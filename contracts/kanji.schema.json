@@ -9,7 +9,8 @@
     "packing": "list",
     "glob": "corpus/kanji/*.json",
     "stable_id_field": "slug",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -46,32 +47,33 @@
             "$ref": "common.schema.json#/$defs/StableId"
           },
           "vocab_id": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           }
         },
         "additionalProperties": false
+      }
+    },
+    "families": {
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     },
     "freq_rank": {
       "type": [
         "integer",
         "null"
-      ]
+      ],
+      "minimum": 0
     },
     "grade": {
       "type": "integer",
-      "enum": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8
-      ]
+      "minimum": 0
     },
     "id": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "irregular_note": {
       "anyOf": [
@@ -84,7 +86,8 @@
       ]
     },
     "kangxi_radical": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "kanjivg_ref": {
       "type": "string"
@@ -99,72 +102,21 @@
       "$ref": "common.schema.json#/$defs/LevelTag/properties/level_confidence"
     },
     "level_sources": {
-      "type": "object",
-      "properties": {
-        "anchor": {
-          "type": "string",
-          "enum": [
-            "jlpt_anchor:n4",
-            "jlpt_anchor:n5",
-            "jlpt_anchor:not-in-n5n4"
-          ]
-        },
-        "anchori": {
-          "type": "string",
-          "enum": [
-            "n1",
-            "n2",
-            "n4",
-            "n5"
-          ]
-        },
-        "bluskyo": {
-          "type": "string",
-          "enum": [
-            "n1",
-            "n2",
-            "n3",
-            "n4",
-            "n5"
-          ]
-        },
-        "davidluzgouveia": {
-          "type": "string",
-          "enum": [
-            "n1",
-            "n2",
-            "n3",
-            "n4",
-            "n5"
-          ]
-        },
-        "kanjiapi": {
-          "type": "string",
-          "enum": [
-            "n1",
-            "n2",
-            "n3",
-            "n4",
-            "n5"
-          ]
-        },
-        "lists": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "author-added: usado por vocabulário N4; fora das listas de consenso"
-            ]
-          }
-        }
-      },
-      "additionalProperties": false
+      "$ref": "common.schema.json#/$defs/LevelTag/properties/level_sources"
     },
     "meanings": {
       "$ref": "common.schema.json#/$defs/LocaleTextList"
     },
     "notes": {
-      "type": "null"
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/LocaleText"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Authorable Layer-C prose. Empty on every record today; typed as the locale object it will hold rather than pinned to null."
     },
     "radical_char": {
       "type": "string"
@@ -183,18 +135,18 @@
               "null"
             ],
             "items": {
-              "type": "integer"
+              "type": "integer",
+              "minimum": 0
             }
           },
           "introduced_at_level": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "enum": [
-              "n4",
-              "n5",
-              null
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/Level"
+              },
+              {
+                "type": "null"
+              }
             ]
           },
           "note": {
@@ -222,7 +174,12 @@
               "kun",
               "nanori",
               "on"
-            ]
+            ],
+            "description": "Reading class. `nanori` readings are name-only and are not taught. Vocabulary owner: curated — KANJIDIC2 reading types (Layer A source vocabulary). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "curated",
+              "source": "KANJIDIC2 reading types (Layer A source vocabulary)"
+            }
           }
         },
         "additionalProperties": false
@@ -233,32 +190,7 @@
     },
     "strokes": {
       "type": "integer",
-      "enum": [
-        1,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        2,
-        20,
-        21,
-        22,
-        23,
-        29,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ]
+      "minimum": 0
     },
     "unicode": {
       "type": "string"
@@ -270,6 +202,7 @@
     "components",
     "example_sentences",
     "example_words",
+    "families",
     "freq_rank",
     "grade",
     "id",
@@ -281,7 +214,6 @@
     "level_confidence",
     "level_sources",
     "meanings",
-    "notes",
     "radical_char",
     "readings",
     "slug",

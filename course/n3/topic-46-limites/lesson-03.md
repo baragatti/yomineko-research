@@ -10,12 +10,12 @@
 
 **Introduz:** gramática [n3-ba-hodo, n3-hodo] · vocabulário [健康, 建築, 建設, 検査, 検討, 現代, 現在, 現場, 現実, 現状, 現象, 現金, 見当, 言語] · kanji [富 座 破 給 降 飛] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-139697`, `sent:tatoeba-79954`
 
 ---
 
 ### Mais e mais, menos e menos
-Esta lição traz duas estruturas com a palavra ほど, que parecem irmãs mas fazem coisas distintas: a relação proporcionalば～ほど ('quanto mais..., mais...') e a comparaçãoほど ('não tão... quanto').
+Esta lição traz duas estruturas com a palavra ほど, que parecem irmãs mas fazem coisas distintas: a relação proporcional ば～ほど ('quanto mais..., mais...') e a comparação ほど ('não tão... quanto').
 
 #### 1. ば～ほど; quanto mais..., mais...
 O n3-ba-hodo marca uma relação proporcional: à medida que A aumenta, B aumenta (ou diminui) junto. O detalhe que confunde é que o verbo ou adjetivo aparece duas vezes:
@@ -80,28 +80,28 @@ Faça os exercícios abaixo e confira cada explicação.
 ---
 
 ## Exercícios
-### 1. (cloze) {'pt-BR': 'Complete a relação proporcional: 練習___するほど上手になる。(Quanto mais você pratica, melhor fica.)'}
-- **Resposta:** `{"text": "練習___するほど上手になる", "full": "練習すればするほど上手になる"}`
-- {'pt-BR': 'A estrutura ば... ほど duplica o verbo: する vira すれば...するほど. O japonês repete o termo dos dois lados, ao contrário do português.'}
+### 1. (cloze) Complete a relação proporcional: 練習___するほど上手になる。(Quanto mais você pratica, melhor fica.)
+- **Resposta:** `{"text": "すれば", "full": "練習すればするほど上手になる"}`
+- A estrutura ば... ほど duplica o verbo: する vira すれば...するほど. O japonês repete o termo dos dois lados, ao contrário do português.
 
 
-### 2. (particle_choice) {'pt-BR': '今日は昨日___寒くない。(Hoje não está tão frio quanto ontem.)'}
+### 2. (particle_choice) 今日は昨日___寒くない。(Hoje não está tão frio quanto ontem.)
 - **Resposta:** `{"choices": ["ほど", "くらい", "しか", "ばかり"], "correct": "ほど"}`
-- {'pt-BR': "ほど em comparação aparece com a frase principal negativa: 'A não é tão... quanto B'. 昨日ほど寒くない = 'não tão frio quanto ontem'."}
+- ほど em comparação aparece com a frase principal negativa: 'A não é tão... quanto B'. 昨日ほど寒くない = 'não tão frio quanto ontem'.
 
 
-### 3. (recognition) {'pt-BR': "Qual frase significa 'não há nada tão importante quanto a saúde' (superlativo disfarçado)?"}
+### 3. (recognition) Qual frase significa 'não há nada tão importante quanto a saúde' (superlativo disfarçado)?
 - **Resposta:** `{"choices": ["健康ほど大切なものはない", "健康ばかり大切だ", "健康くらい大切だ", "健康しか大切ではない"], "correct": "健康ほど大切なものはない"}`
-- {'pt-BR': "A construção ～ほど...はない funciona como superlativo: 'nada é tão... quanto'. 健康ほど大切なものはない = 'nada é tão importante quanto a saúde'."}
+- A construção ～ほど...はない funciona como superlativo: 'nada é tão... quanto'. 健康ほど大切なものはない = 'nada é tão importante quanto a saúde'.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada kanji ao seu sentido principal.'}
+### 4. (matching) Associe cada kanji ao seu sentido principal.
 - **Resposta:** `{"pairs": [["飛", "voar"], ["座", "assento / sentar"], ["給", "salário / fornecer"], ["富", "riqueza"]]}`
-- {'pt-BR': '飛 (voar) em 飛行機 (avião); 座 (assento) em 座席; 給 (salário) em 給料; 富 (riqueza) em 富士山 (monte Fuji).'}
+- 飛 (voar) em 飛行機 (avião); 座 (assento) em 座席; 給 (salário) em 給料; 富 (riqueza) em 富士山 (monte Fuji).
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Quanto mais caro, melhor.' (use 高い na estrutura ば... ほど)."}
-- **Resposta:** `{"text": "高ければ高いほどいい", "accept": ["高ければ高いほどいいです", "高ければ高い程いい", "高ければ高いほど良い"]}`
-- {'pt-BR': "Adjetivo-い na estrutura proporcional: condicional 高ければ + 高い + ほど. 高ければ高いほどいい = 'quanto mais caro, melhor'."}
+### 5. (production) Escreva em japonês: 'Quanto mais caro, melhor.' (use 高い na estrutura ば... ほど).
+- **Resposta:** `{"text": "高ければ高いほどいい", "accept": ["高ければ高いほどいい", "高ければ高いほどいいです", "高ければ高い程いい", "高ければ高いほど良い"]}`
+- Adjetivo-い na estrutura proporcional: condicional 高ければ + 高い + ほど. 高ければ高いほどいい = 'quanto mais caro, melhor'.
 
 

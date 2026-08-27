@@ -47,18 +47,18 @@ Só como prévia (você ainda vai aprender a escrever nas próximas lições): a
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual das vogais japonesas é a 'diferente', pronunciada de forma seca (lábios não arredondados)?"}
+### 1. (recognition) Qual das vogais japonesas é a 'diferente', pronunciada de forma seca (lábios não arredondados)?
 - **Resposta:** `{"choices": ["u", "a", "o"], "correct": "u"}`
-- {'pt-BR': "O u japonês é seco: o segredo é NÃO empurrar os lábios pra frente como no 'u' de 'uva'. Deixe os lábios neutros (nem bico, nem sorriso esticado), num 'u' mais central. As outras vogais soam praticamente como em português."}
+- O u japonês é seco: o segredo é NÃO empurrar os lábios pra frente como no 'u' de 'uva'. Deixe os lábios neutros (nem bico, nem sorriso esticado), num 'u' mais central. As outras vogais soam praticamente como em português.
 
 
-### 2. (recognition) {'pt-BR': "No japonês, como termina a palavra 'sake' (saquê)?"}
+### 2. (recognition) No japonês, como termina a palavra 'sake' (saquê)?
 - **Resposta:** `{"choices": ["com 'e' cheio (sa-ke)", "com 'i' (saki)", "com 'a' (saka)"], "correct": "com 'e' cheio (sa-ke)"}`
-- {'pt-BR': "As vogais japonesas não reduzem no fim da palavra. O 'e' continua 'e' (sa-ke), nunca vira 'i' como o português costuma fazer."}
+- As vogais japonesas não reduzem no fim da palavra. O 'e' continua 'e' (sa-ke), nunca vira 'i' como o português costuma fazer.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada vogal japonesa (em romaji) à descrição correta do seu som.'}
+### 3. (matching) Ligue cada vogal japonesa (em romaji) à descrição correta do seu som.
 - **Resposta:** `{"pairs": [["a", "'a' como em 'casa'"], ["i", "'i' como em 'vida'"], ["u", "'u' seco, de lábios neutros (não é o 'u' arredondado de 'uva')"], ["e", "'e' como em 'mesa'"], ["o", "'o' como em 'bolo'"]]}`
-- {'pt-BR': 'Quatro vogais batem com o português (a, i, e, o). Só o u é diferente: pronunciado seco, sem arredondar os lábios.'}
+- Quatro vogais batem com o português (a, i, e, o). Só o u é diferente: pronunciado seco, sem arredondar os lábios.
 
 

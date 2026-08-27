@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-86, gp-99] · vocabulário [すっと, 伺う, 矢張り, 積もり, 若し, 非常に] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-6de90943b937`, `sent:gen-6ffac971eaff`, `sent:gen-bdce9a74350a`, `sent:gen-1ec34274aae8`
+**Frases (por ID, do banco dissecado):** `sent:gen-6ffac971eaff`, `sent:gen-6de90943b937`, `sent:gen-bdce9a74350a`, `sent:gen-1ec34274aae8`
 
 ---
 
@@ -67,28 +67,28 @@ Para usar bem esses moldes em frases reais, junte algumas palavras de movimento,
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que significa o sufixo 〜代 em palavras como 電気代 (でんきだい) ou バス代?'}
+### 1. (recognition) O que significa o sufixo 〜代 em palavras como 電気代 (でんきだい) ou バス代?
 - **Resposta:** `{"choices": ["a conta / o custo de algo", "o lugar onde fica algo", "a cor de algo", "a hora aproximada de algo"], "correct": "a conta / o custo de algo"}`
-- {'pt-BR': "O sufixo 〜代 (だい) gruda num substantivo para indicar o custo ou a taxa daquele item ou serviço. 電気代 = conta de luz, バス代 = dinheiro da passagem de ônibus. Pense sempre em 'a conta de' ou 'o valor de'."}
+- O sufixo 〜代 (だい) gruda num substantivo para indicar o custo ou a taxa daquele item ou serviço. 電気代 = conta de luz, バス代 = dinheiro da passagem de ônibus. Pense sempre em 'a conta de' ou 'o valor de'.
 
 
-### 2. (cloze) {'pt-BR': "Complete: 毎月の電話___を払う ('Pago a conta de telefone todo mês'). Qual sufixo de custo entra na lacuna?"}
+### 2. (cloze) Complete: 毎月の電話___を払う ('Pago a conta de telefone todo mês'). Qual sufixo de custo entra na lacuna?
 - **Resposta:** `{"text": "代", "full": "毎月の電話代を払う"}`
-- {'pt-BR': "Para falar da 'conta de telefone', cola-se 代 (だい) ao substantivo 電話 (telefone): 電話代. A leitura do sufixo é sempre だい, mesmo que a palavra-base tenha outra pronúncia."}
+- Para falar da 'conta de telefone', cola-se 代 (だい) ao substantivo 電話 (telefone): 電話代. A leitura do sufixo é sempre だい, mesmo que a palavra-base tenha outra pronúncia.
 
 
-### 3. (recognition) {'pt-BR': "Em 真っ白 (まっしろ), o que o prefixo 真っ acrescenta ao adjetivo 白 ('branco')?"}
+### 3. (recognition) Em 真っ白 (まっしろ), o que o prefixo 真っ acrescenta ao adjetivo 白 ('branco')?
 - **Resposta:** `{"choices": ["intensifica: 'branco puro / totalmente branco'", "suaviza: 'meio branco / branquinho fofo'", "nega: 'não branco'", "pergunta: 'será branco?'"], "correct": "intensifica: 'branco puro / totalmente branco'"}`
-- {'pt-BR': "O prefixo 真（っ）intensifica cores, formas e posições, dando a ideia de 'totalmente' ou 'puro'. 真っ白 = branco puro. Mesmo que a tradução pt-BR às vezes use 'branquinho', não é diminutivo: o sentido é de cor intensa, não de algo pequeno."}
+- O prefixo 真（っ）intensifica cores, formas e posições, dando a ideia de 'totalmente' ou 'puro'. 真っ白 = branco puro. Mesmo que a tradução pt-BR às vezes use 'branquinho', não é diminutivo: o sentido é de cor intensa, não de algo pequeno.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte a frase 'A camisa nova é branquinha (branco puro)':"}
+### 4. (sentence_build) Monte a frase 'A camisa nova é branquinha (branco puro)':
 - **Resposta:** `{"order": ["新しい", "シャツは", "真っ白", "です"], "text": "新しいシャツは真っ白です"}`
-- {'pt-BR': 'A ordem é tópico + intensificador + です: 新しいシャツは (a camisa nova) + 真っ白 (branco puro) + です. O 真っ vem grudado em 白 para formar uma única palavra, 真っ白 (まっしろ).'}
+- A ordem é tópico + intensificador + です: 新しいシャツは (a camisa nova) + 真っ白 (branco puro) + です. O 真っ vem grudado em 白 para formar uma única palavra, 真っ白 (まっしろ).
 
 
-### 5. (production) {'pt-BR': "Em japonês casual, diga 'O dinheiro da passagem de ônibus não dá (não é suficiente)'. Use o sufixo de custo 〜代."}
+### 5. (production) Em japonês casual, diga 'O dinheiro da passagem de ônibus não dá (não é suficiente)'. Use o sufixo de custo 〜代.
 - **Resposta:** `{"text": "バス代が足りない", "accept": ["バス代が足りない", "バスだいがたりない", "バス代がたりない"]}`
-- {'pt-BR': "バス ('ônibus') + 代 ('custo') = バス代, o dinheiro da passagem. 足りない (たりない) significa 'não é suficiente'. が marca o sujeito que falta. A frase inteira fica バス代が足りない."}
+- バス ('ônibus') + 代 ('custo') = バス代, o dinheiro da passagem. 足りない (たりない) significa 'não é suficiente'. が marca o sujeito que falta. A frase inteira fica バス代が足りない.
 
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-rareta] · vocabulário [人工, 人種, 信仰, 信号, 印, 尻, 心臓, 植物, 消防, 深刻, 知らせ, 神経, 衝突, 親戚, 診察, 食卓, 食品, 食料, 食物, 食糧] · kanji [怒 怖 恥 腹 鳴] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-93463`
 
 ---
 
@@ -99,33 +99,33 @@ Repare quantos kanji de sentimento trazem o coração (心 ou 忄): 怒 (raiva),
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual é a passiva no passado de 読む ('ler')?"}
+### 1. (recognition) Qual é a passiva no passado de 読む ('ler')?
 - **Resposta:** `{"choices": ["読まれた", "読めた", "読んだ", "読ませた"], "correct": "読まれた"}`
-- {'pt-BR': "読む é verbo u (godan): a sílaba final む vira a coluna 'a' (ま) + れた, dando 読まれた ('foi lido'). 読めた seria o potencial ('consegui ler') e 読んだ o passado simples ('li')."}
+- 読む é verbo u (godan): a sílaba final む vira a coluna 'a' (ま) + れた, dando 読まれた ('foi lido'). 読めた seria o potencial ('consegui ler') e 読んだ o passado simples ('li').
 
 
-### 2. (particle_choice) {'pt-BR': "Em 'fui elogiado pelo professor' (先生＿褒められた), qual partícula marca o agente?"}
+### 2. (particle_choice) Em 'fui elogiado pelo professor' (先生＿褒められた), qual partícula marca o agente?
 - **Resposta:** `{"choices": ["に", "で", "を", "が"], "correct": "に"}`
-- {'pt-BR': "Na passiva, quem praticou a ação (o agente, nosso 'por') é marcado com に. 先生に褒められた = 'fui elogiado pelo professor'. Cuidado para não usar で, que marcaria lugar ou meio."}
+- Na passiva, quem praticou a ação (o agente, nosso 'por') é marcado com に. 先生に褒められた = 'fui elogiado pelo professor'. Cuidado para não usar で, que marcaria lugar ou meio.
 
 
-### 3. (recognition) {'pt-BR': "Qual frase carrega o tom de 'algo sofrido / prejuízo' típico da passiva japonesa?"}
+### 3. (recognition) Qual frase carrega o tom de 'algo sofrido / prejuízo' típico da passiva japonesa?
 - **Resposta:** `{"choices": ["財布が盗まれた", "財布を買った", "財布が新しい", "財布を見せた"], "correct": "財布が盗まれた"}`
-- {'pt-BR': "財布が盗まれた ('a carteira foi roubada') usa a passiva 盗まれた e implica prejuízo para a vítima. As outras opções são frases ativas normais, sem essa carga."}
+- 財布が盗まれた ('a carteira foi roubada') usa a passiva 盗まれた e implica prejuízo para a vítima. As outras opções são frases ativas normais, sem essa carga.
 
 
-### 4. (cloze) {'pt-BR': "Complete 'este livro foi lido por muita gente': この本は多くの人＿読まれた"}
+### 4. (cloze) Complete 'este livro foi lido por muita gente': この本は多くの人＿読まれた
 - **Resposta:** `{"text": "に", "full": "この本は多くの人に読まれた"}`
-- {'pt-BR': "O agente (多くの人, 'muita gente') leva に na passiva. 読まれた é a passiva no passado de 読む. Repare que o 本 é o tópico (は) que sofreu a ação."}
+- O agente (多くの人, 'muita gente') leva に na passiva. 読まれた é a passiva no passado de 読む. Repare que o 本 é o tópico (は) que sofreu a ação.
 
 
-### 5. (matching) {'pt-BR': 'Associe cada palavra desta lição ao seu significado.'}
+### 5. (matching) Associe cada palavra desta lição ao seu significado.
 - **Resposta:** `{"pairs": [["衝突", "colisão"], ["診察", "exame médico"], ["心臓", "coração"], ["知らせ", "aviso"]]}`
-- {'pt-BR': '衝突 (しょうとつ) = colisão; 診察 (しんさつ) = exame médico; 心臓 (しんぞう) = coração (órgão); 知らせ (しらせ) = aviso. Note que 心臓 é o órgão físico, diferente de 心 (こころ), o coração das emoções.'}
+- 衝突 (しょうとつ) = colisão; 診察 (しんさつ) = exame médico; 心臓 (しんぞう) = coração (órgão); 知らせ (しらせ) = aviso. Note que 心臓 é o órgão físico, diferente de 心 (こころ), o coração das emoções.
 
 
-### 6. (production) {'pt-BR': "Diga 'a carteira foi roubada' em japonês, usando a passiva de 盗む ('roubar') no passado e 財布 ('carteira') como sujeito com が."}
+### 6. (production) Diga 'a carteira foi roubada' em japonês, usando a passiva de 盗む ('roubar') no passado e 財布 ('carteira') como sujeito com が.
 - **Resposta:** `{"text": "財布が盗まれた", "accept": ["財布が盗まれた", "さいふがぬすまれた", "財布が盗まれました"]}`
-- {'pt-BR': '盗む (verbo u) vira a passiva 盗まれた no passado. O 財布 (carteira) é quem sofreu a ação, marcado com が. A frase carrega o tom de prejuízo para a vítima, bem típico da passiva japonesa.'}
+- 盗む (verbo u) vira a passiva 盗まれた no passado. O 財布 (carteira) é quem sofreu a ação, marcado com が. A frase carrega o tom de prejuízo para a vítima, bem típico da passiva japonesa.
 
 

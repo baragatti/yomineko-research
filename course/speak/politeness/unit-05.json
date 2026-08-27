@@ -4,7 +4,7 @@
   "stage": "speak:politeness",
   "order": 5,
   "title": {
-    "pt-BR": "Pedir, oferecer, agradecer com jeito — parte 5"
+    "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 5"
   },
   "say_now": [
     "sent:tatoeba-11561274",
@@ -55,58 +55,6 @@
   "cumulative_known_vocab": 500,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:254",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:306",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n4:1044",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ひる",
-        "まど",
-        "あの"
-      ]
-    },
-    {
-      "id": "kr:n4:1328",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ネクタイ",
-        "けいかく",
-        "なくなる"
-      ]
-    },
-    {
-      "id": "cf:n3:4450:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "間",
-        "千",
-        "道"
-      ]
-    },
-    {
-      "id": "cf:n3:4615:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "三",
-        "園",
-        "外"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:te-ita"
   ],
@@ -162,6 +110,8 @@
       "prompt_pt": "Por favor, me mostre aquela camisa verde.",
       "answer_key": "その緑のシャツを見せてください。",
       "accepted_variants": [
+        "そのみどりのしゃつをみせてください",
+        "そのみどりのしゃつをみせてください。",
         "その緑のシャツを見せてください",
         "その緑のシャツを見せてください。"
       ],
@@ -172,6 +122,8 @@
       "prompt_pt": "Assim que a criança descer do carro, por favor saia (arranque) imediatamente.",
       "answer_key": "お子さんが車をおりたらすぐに車を出してください。",
       "accepted_variants": [
+        "おこさんがくるまをおりたらすぐにくるまをだしてください",
+        "おこさんがくるまをおりたらすぐにくるまをだしてください。",
         "お子さんが車をおりたらすぐに車を出してください",
         "お子さんが車をおりたらすぐに車を出してください。"
       ],
@@ -182,6 +134,8 @@
       "prompt_pt": "Meio quilo de carne, por favor.",
       "answer_key": "肉を半㌔ください。",
       "accepted_variants": [
+        "にくをはんきろください",
+        "にくをはんきろください。",
         "肉を半㌔ください",
         "肉を半㌔ください。"
       ],
@@ -204,15 +158,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:254",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:306",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n4:1044",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ひる",
+        "まど",
+        "あの"
+      ]
+    },
+    {
+      "id": "kr:n4:1328",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ネクタイ",
+        "けいかく",
+        "なくなる"
+      ]
+    },
+    {
+      "id": "cf:n3:4450:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "間",
+        "千",
+        "道"
+      ]
+    },
+    {
+      "id": "cf:n3:4615:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "三",
+        "園",
+        "外"
+      ]
+    }
+  ]
 }

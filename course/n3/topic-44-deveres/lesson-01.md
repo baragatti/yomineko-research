@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-te-goran, n3-te-miru, n3-toku] · vocabulário [きちんと, きつい, キャプテン, キャンプ, 休憩, 休暇, 吸収, 器用, 基本, 希望, 教科書, 気づく, 気に入る, 球, 競技, 給料, 記入, 記録] · kanji [伝 形 種 葉] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-9752027`, `sent:tatoeba-1490005`
 
 ---
 
@@ -95,28 +95,28 @@ Repare como vários destes kanji compartilham o radical da pessoa イ à esquerd
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase quer dizer 'experimenta comer isto aqui' (incentivo gentil, de adulto para criança)?"}
+### 1. (recognition) Qual frase quer dizer 'experimenta comer isto aqui' (incentivo gentil, de adulto para criança)?
 - **Resposta:** `{"choices": ["これを食べてごらん", "これを食べてみせる", "これを食べておく", "これを食べたい"], "correct": "これを食べてごらん"}`
-- {'pt-BR': "～てごらん é o convite carinhoso 'vai lá, experimenta'. 食べてみせる seria 'vou provar que como', 食べておく seria 'deixo comido de antemão' e 食べたい é 'quero comer'."}
+- ～てごらん é o convite carinhoso 'vai lá, experimenta'. 食べてみせる seria 'vou provar que como', 食べておく seria 'deixo comido de antemão' e 食べたい é 'quero comer'.
 
 
-### 2. (cloze) {'pt-BR': "Complete 'quero experimentar fazer este bolo': このケーキを作って＿たい。"}
+### 2. (cloze) Complete 'quero experimentar fazer este bolo': このケーキを作って＿たい。
 - **Resposta:** `{"text": "み", "full": "このケーキを作ってみたい"}`
-- {'pt-BR': "～てみる = 'experimentar fazer'. Com たい vira 作ってみたい ('quero dar uma tentada de fazer'). Escreve-se み em hiragana porque o sentido é figurado, não 'olhar'."}
+- ～てみる = 'experimentar fazer'. Com たい vira 作ってみたい ('quero dar uma tentada de fazer'). Escreve-se み em hiragana porque o sentido é figurado, não 'olhar'.
 
 
-### 3. (particle_choice) {'pt-BR': "Na fala casual, 読んでおく ('vou deixar lido') contrai para qual forma?"}
+### 3. (particle_choice) Na fala casual, 読んでおく ('vou deixar lido') contrai para qual forma?
 - **Resposta:** `{"choices": ["読んどく", "読んとく", "読みとく", "読んでく"], "correct": "読んどく"}`
-- {'pt-BR': 'O で de ～でおく contrai para ど, então 読んでおく vira 読んどく. Só ～ておく (com て) vira ～とく; com で sempre vira ～どく.'}
+- O で de ～でおく contrai para ど, então 読んでおく vira 読んどく. Só ～ておく (com て) vira ～とく; com で sempre vira ～どく.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada expressão ao seu sentido.'}
+### 4. (matching) Ligue cada expressão ao seu sentido.
 - **Resposta:** `{"pairs": [["～てみる", "experimentar, ver no que dá"], ["～てごらん", "vai lá, experimenta (carinhoso)"], ["～とく / ～どく", "deixar feito de antemão"], ["～てみせる", "provar que vou conseguir"]]}`
-- {'pt-BR': "As três da lição lidam com tentar e preparar; ～てみせる entra como contraste por ter tom de determinação, bem diferente do 'só pra ver' de ～てみる."}
+- As três da lição lidam com tentar e preparar; ～てみせる entra como contraste por ter tom de determinação, bem diferente do 'só pra ver' de ～てみる.
 
 
-### 5. (production) {'pt-BR': "Diga de forma casual 'vou já deixando o formulário preenchido (por garantia)', usando 記入 e a contração de ～ておく."}
+### 5. (production) Diga de forma casual 'vou já deixando o formulário preenchido (por garantia)', usando 記入 e a contração de ～ておく.
 - **Resposta:** `{"text": "記入しとく", "accept": ["記入しとく", "記入しとくね", "きにゅうしとく", "フォームを記入しとく", "記入しといた"]}`
-- {'pt-BR': "記入する ('preencher') na forma て é 記入して; contraída com おく fica 記入しとく ('já deixo preenchido'). É o sentido de fazer antes, por garantia, no registro casual."}
+- 記入する ('preencher') na forma て é 記入して; contraída com おく fica 記入しとく ('já deixo preenchido'). É o sentido de fazer antes, por garantia, no registro casual.
 
 

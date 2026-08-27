@@ -4,7 +4,7 @@
   "stage": "speak:about_you",
   "order": 2,
   "title": {
-    "pt-BR": "Falar de você — parte 2"
+    "pt-BR": "Falar de você, parte 2"
   },
   "say_now": [
     "sent:tatoeba-9553773",
@@ -58,48 +58,6 @@
   "cumulative_known_vocab": 278,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n4:3717:902",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "外国人",
-        "教える",
-        "上がる"
-      ]
-    },
-    {
-      "id": "cf:n4:1299:1082",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "生産",
-        "叔父",
-        "いい"
-      ]
-    },
-    {
-      "id": "kr:n4:1082",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せいさん",
-        "でんしゃ",
-        "おしえる"
-      ]
-    },
-    {
-      "id": "kr:n4:1208",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くださる",
-        "りょこう",
-        "わすれる"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -162,6 +120,8 @@
       "prompt_pt": "O professor novo é mais um amigo do que um professor.",
       "answer_key": "今度来た先生は、先生というより友達みたいだ。",
       "accepted_variants": [
+        "こんどきたせんせいわ、せんせいというよりともだちみたいだ",
+        "こんどきたせんせいわ、せんせいというよりともだちみたいだ。",
         "今度来た先生は、先生というより友達みたいだ",
         "今度来た先生は、先生というより友達みたいだ。"
       ],
@@ -172,6 +132,7 @@
       "prompt_pt": "Ele diz com clareza a sua própria opinião para os professores e os amigos.",
       "answer_key": "彼が先生や友達にはっきり自分の意見を言う",
       "accepted_variants": [
+        "かれがせんせいやともだちにはっきりじぶんのいけんをゆう",
         "彼が先生や友達にはっきり自分の意見を言う"
       ],
       "sentence": "sent:jec-0320",
@@ -181,6 +142,8 @@
       "prompt_pt": "O professor chamou todos os alunos pelo nome.",
       "answer_key": "先生は生徒みんなを名前で呼んだ。",
       "accepted_variants": [
+        "せんせいわせいとみんなをなまえでよんだ",
+        "せんせいわせいとみんなをなまえでよんだ。",
         "先生は生徒みんなを名前で呼んだ",
         "先生は生徒みんなを名前で呼んだ。"
       ],
@@ -203,15 +166,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 29,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n4:3717:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "外国人",
+        "教える",
+        "上がる"
+      ]
+    },
+    {
+      "id": "cf:n4:1299:1082",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "生産",
+        "叔父",
+        "いい"
+      ]
+    },
+    {
+      "id": "kr:n4:1082",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "せいさん",
+        "でんしゃ",
+        "おしえる"
+      ]
+    },
+    {
+      "id": "kr:n4:1208",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くださる",
+        "りょこう",
+        "わすれる"
+      ]
+    }
+  ]
 }

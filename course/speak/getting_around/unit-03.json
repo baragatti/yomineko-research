@@ -4,7 +4,7 @@
   "stage": "speak:getting_around",
   "order": 3,
   "title": {
-    "pt-BR": "Chegar aonde você quer — parte 3"
+    "pt-BR": "Chegar aonde você quer, parte 3"
   },
   "say_now": [
     "sent:tatoeba-4786026",
@@ -29,7 +29,7 @@
   ],
   "patterns": [
     "gram:te-iku",
-    "gram:te-iru"
+    "gram:gp-10"
   ],
   "kanji_recognition": [
     "傘",
@@ -52,6 +52,96 @@
   "cumulative_known_vocab": 172,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:yatto",
+    "gram:darou",
+    "gram:gp-36",
+    "gram:yori"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:te-iku",
+      "examples": [
+        "sent:tatoeba-12642529",
+        "sent:tatoeba-7298759",
+        "sent:tatoeba-157850"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-10",
+      "examples": [
+        "sent:tatoeba-97651",
+        "sent:tatoeba-99799",
+        "sent:tatoeba-78316"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Fui ao aeroporto buscar meu pai.",
+      "answer_key": "空港まで父を迎えに行きました。",
+      "accepted_variants": [
+        "くうこうまでちちをむかえにいきました",
+        "くうこうまでちちをむかえにいきました。",
+        "空港まで父を迎えに行きました",
+        "空港まで父を迎えに行きました。"
+      ],
+      "sentence": "sent:tatoeba-179327",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Como faço para chegar à estação?",
+      "answer_key": "駅へはどのように行けばよいですか。",
+      "accepted_variants": [
+        "えきえわどのようにいけばよいですか",
+        "えきえわどのようにいけばよいですか。",
+        "駅へはどのように行けばよいですか",
+        "駅へはどのように行けばよいですか。"
+      ],
+      "sentence": "sent:tatoeba-188877",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu tio mora perto da escola.",
+      "answer_key": "おじは学校の近くに住んでいる。",
+      "accepted_variants": [
+        "おじは学校の近くに住んでいる",
+        "おじは学校の近くに住んでいる。",
+        "おじわがっこうのちかくにすんでいる",
+        "おじわがっこうのちかくにすんでいる。"
+      ],
+      "sentence": "sent:tatoeba-227716",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-5115",
+      "sent:tatoeba-4802",
+      "sent:tatoeba-198139",
+      "sent:tatoeba-201017",
+      "sent:tatoeba-162318",
+      "sent:tatoeba-10725053"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 19,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:755",
@@ -98,89 +188,5 @@
         "さげる"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:yatto",
-    "gram:darou",
-    "gram:gp-36",
-    "gram:yori"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:te-iku",
-      "examples": [
-        "sent:tatoeba-12642529",
-        "sent:tatoeba-7298759",
-        "sent:tatoeba-157850"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:te-iru",
-      "examples": [
-        "sent:tatoeba-10175894",
-        "sent:tatoeba-5100",
-        "sent:tatoeba-5028"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Fui ao aeroporto buscar meu pai.",
-      "answer_key": "空港まで父を迎えに行きました。",
-      "accepted_variants": [
-        "空港まで父を迎えに行きました",
-        "空港まで父を迎えに行きました。"
-      ],
-      "sentence": "sent:tatoeba-179327",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Como faço para chegar à estação?",
-      "answer_key": "駅へはどのように行けばよいですか。",
-      "accepted_variants": [
-        "駅へはどのように行けばよいですか",
-        "駅へはどのように行けばよいですか。"
-      ],
-      "sentence": "sent:tatoeba-188877",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Meu tio mora perto da escola.",
-      "answer_key": "おじは学校の近くに住んでいる。",
-      "accepted_variants": [
-        "おじは学校の近くに住んでいる",
-        "おじは学校の近くに住んでいる。"
-      ],
-      "sentence": "sent:tatoeba-227716",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
-    "items": [
-      "sent:tatoeba-5115",
-      "sent:tatoeba-4802",
-      "sent:tatoeba-198139",
-      "sent:tatoeba-201017",
-      "sent:tatoeba-162318",
-      "sent:tatoeba-10725053"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 24,
-    "fluency": 6
-  }
+  ]
 }

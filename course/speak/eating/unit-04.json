@@ -4,7 +4,7 @@
   "stage": "speak:eating",
   "order": 4,
   "title": {
-    "pt-BR": "Comer e beber fora — parte 4"
+    "pt-BR": "Comer e beber fora, parte 4"
   },
   "say_now": [
     "sent:tatoeba-179391",
@@ -54,6 +54,88 @@
   "cumulative_known_vocab": 122,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:kara-tsukuru",
+    "gram:gp-36",
+    "gram:te-kara",
+    "gram:temo",
+    "gram:wa-yori-desu"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947",
+        "sent:tatoeba-5092"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Não deixe a água correndo.",
+      "answer_key": "水を出しっぱなしにしないで。",
+      "accepted_variants": [
+        "みずをだしっぱなしにしないで",
+        "みずをだしっぱなしにしないで。",
+        "水を出しっぱなしにしないで",
+        "水を出しっぱなしにしないで。"
+      ],
+      "sentence": "sent:tatoeba-10092041",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Hoje à noite não posso ir ao restaurante com você.",
+      "answer_key": "今晩あなたと一緒にレストランにいけません。",
+      "accepted_variants": [
+        "こんばんあなたといっしょにれすとらんにいけません",
+        "こんばんあなたといっしょにれすとらんにいけません。",
+        "今晩あなたと一緒にレストランにいけません",
+        "今晩あなたと一緒にレストランにいけません。"
+      ],
+      "sentence": "sent:tatoeba-236798",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Fui tomar uma cerveja com uns amigos.",
+      "answer_key": "私は友達とビールを飲みに行った。",
+      "accepted_variants": [
+        "わたしわともだちとびーるをのみにいった",
+        "わたしわともだちとびーるをのみにいった。",
+        "私は友達とビールを飲みに行った",
+        "私は友達とビールを飲みに行った。"
+      ],
+      "sentence": "sent:tatoeba-5329",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-2633467",
+      "sent:tatoeba-10657609",
+      "sent:tatoeba-226845",
+      "sent:tatoeba-226844",
+      "sent:tatoeba-10899775",
+      "sent:tatoeba-171644"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 20,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:930",
@@ -100,81 +182,5 @@
         "スリッパ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:kara-tsukuru",
-    "gram:gp-36",
-    "gram:te-iru",
-    "gram:te-kara",
-    "gram:temo"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:totemo",
-      "examples": [
-        "sent:tatoeba-5074",
-        "sent:tatoeba-4947",
-        "sent:tatoeba-5092"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Não deixe a água correndo.",
-      "answer_key": "水を出しっぱなしにしないで。",
-      "accepted_variants": [
-        "水を出しっぱなしにしないで",
-        "水を出しっぱなしにしないで。"
-      ],
-      "sentence": "sent:tatoeba-10092041",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Hoje à noite não posso ir ao restaurante com você.",
-      "answer_key": "今晩あなたと一緒にレストランにいけません。",
-      "accepted_variants": [
-        "今晩あなたと一緒にレストランにいけません",
-        "今晩あなたと一緒にレストランにいけません。"
-      ],
-      "sentence": "sent:tatoeba-236798",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Fui tomar uma cerveja com uns amigos.",
-      "answer_key": "私は友達とビールを飲みに行った。",
-      "accepted_variants": [
-        "私は友達とビールを飲みに行った",
-        "私は友達とビールを飲みに行った。"
-      ],
-      "sentence": "sent:tatoeba-5329",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
-    "items": [
-      "sent:tatoeba-2633467",
-      "sent:tatoeba-10657609",
-      "sent:tatoeba-226845",
-      "sent:tatoeba-226844",
-      "sent:tatoeba-10899775",
-      "sent:tatoeba-171644"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 25,
-    "fluency": 6
-  }
+  ]
 }

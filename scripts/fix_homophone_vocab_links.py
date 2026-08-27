@@ -1,6 +1,23 @@
 #!/usr/bin/env python3
 """Repoint homophone-mislinked token.vocab_id values corpus-wide.
 
+!!! APPLIED ONE-SHOT — DO NOT RE-RUN WITH --apply. !!!
+================================================================================================
+The six repoints below were APPLIED to db/corpus.sqlite on 2026-08-19 (commit 294fe90). The dry run
+still reports 81 matching tokens, so a re-run is NOT a no-op — but the repoints are not the hazard.
+What must NEVER run again is the `DELETE FROM sentence_vocab` + rebuild block at the bottom of
+main(). It treats sentence_vocab as a projection of token.vocab_id, which it never was: the table
+was the UNION of three rules (token links, relink_vocab.py's contiguous-token runs, and the
+July-2026 n3 lemma tagger). That DELETE thinned it from ~31,789 rows to exactly the 20,357-row
+token subset and destroyed 436 (sentence_id, vocab_id) pairs the COMMITTED exam banks depend on —
+n3_context_fill collapses from 400 items to 97 on a rebuild.
+
+Repaired 2026-08-26 by scripts/ingest/build_sentence_vocab.py, which is now the ONLY writer of
+sentence_vocab (INSERT OR IGNORE, all three rules, per-row link_rule/reading_verified provenance).
+If token.vocab_id ever moves again, run THAT after the repoint — never this DELETE.
+================================================================================================
+
+
 scripts/ingest/dissect.py resolves a token to a vocab entry through a form-table lookup that keys on the
 WRITTEN FORM alone and keeps whichever entry registered first. Reading and part of speech never enter the
 decision, so wherever several entries share a spelling the dissector can land on the rare one — and it

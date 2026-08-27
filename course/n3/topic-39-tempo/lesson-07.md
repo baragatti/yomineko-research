@@ -65,28 +65,28 @@ Para fechar, verbos de ação, palavras de tempo e alguns empréstimos do kataka
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'comparação'?"}
+### 1. (recognition) Qual palavra significa 'comparação'?
 - **Resposta:** `{"choices": ["比較 (ひかく)", "否定 (ひてい)", "悲劇 (ひげき)"], "correct": "比較 (ひかく)"}`
-- {'pt-BR': '比較 (ひかく) é comparação. 否定 (ひてい) é negação e 悲劇 (ひげき) é tragédia.'}
+- 比較 (ひかく) é comparação. 否定 (ひてい) é negação e 悲劇 (ひげき) é tragédia.
 
 
-### 2. (recognition) {'pt-BR': 'A palavra 非常 tem dois usos. Em 非常に, qual é o sentido?'}
+### 2. (recognition) A palavra 非常 tem dois usos. Em 非常に, qual é o sentido?
 - **Resposta:** `{"choices": ["emergência", "extremamente", "comparação"], "correct": "extremamente"}`
-- {'pt-BR': "Sozinho, 非常 (ひじょう) significa 'emergência' (como em 非常口, saída de emergência). Mas na forma 非常に ele vira advérbio e significa 'extremamente'."}
+- Sozinho, 非常 (ひじょう) significa 'emergência' (como em 非常口, saída de emergência). Mas na forma 非常に ele vira advérbio e significa 'extremamente'.
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra da família ひ à tradução correta.'}
+### 3. (matching) Associe cada palavra da família ひ à tradução correta.
 - **Resposta:** `{"pairs": [["膝", "joelho"], ["額", "testa"], ["飛行", "voo"], ["一言", "uma palavra"]]}`
-- {'pt-BR': '膝 (ひざ) = joelho; 額 (ひたい) = testa; 飛行 (ひこう) = voo; 一言 (ひとこと) = uma palavra. São todos substantivos com leitura iniciada em ひ.'}
+- 膝 (ひざ) = joelho; 額 (ひたい) = testa; 飛行 (ひこう) = voo; 一言 (ひとこと) = uma palavra. São todos substantivos com leitura iniciada em ひ.
 
 
-### 4. (cloze) {'pt-BR': "Complete com a palavra para 'piquenique': 雨が降らないうちに＿＿＿＿＿＿を済ませよう。"}
+### 4. (cloze) Complete com a palavra para 'piquenique': 雨が降らないうちに＿＿＿＿＿＿を済ませよう。
 - **Resposta:** `{"text": "ピクニック", "full": "雨が降らないうちにピクニックを済ませよう。"}`
-- {'pt-BR': "ピクニック é o empréstimo para 'piquenique'. A frase usa o padrão ～うちに (antes que / enquanto): aproveitar antes que comece a chover."}
+- ピクニック é o empréstimo para 'piquenique'. A frase usa o padrão ～うちに (antes que / enquanto): aproveitar antes que comece a chover.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Esta roupa fica com o tamanho perfeito' usando 服, サイズ e ぴったり."}
+### 5. (production) Diga em japonês 'Esta roupa fica com o tamanho perfeito' usando 服, サイズ e ぴったり.
 - **Resposta:** `{"text": "この服はサイズがぴったりだ", "accept": ["この服はサイズがぴったりだ", "このふくはサイズがぴったりだ", "この服はサイズがぴったりです", "服のサイズがぴったりだ"]}`
-- {'pt-BR': 'この服は (esta roupa, tópico) + サイズが (o tamanho, sujeito) + ぴったりだ (fica perfeito). ぴったり expressa o encaixe exato; a forma polida seria ぴったりです.'}
+- この服は (esta roupa, tópico) + サイズが (o tamanho, sujeito) + ぴったりだ (fica perfeito). ぴったり expressa o encaixe exato; a forma polida seria ぴったりです.
 
 

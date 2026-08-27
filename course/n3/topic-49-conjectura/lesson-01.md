@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-kanaa, n3-moshikasuru-to-kamoshirenai] · vocabulário [事件, 事実, 事情, 失望, 実に, 実は, 幸せ, 思想, 時刻, 時期, 死亡, 沈む, 自殺, 自然, 舌, 詩, 詩人, 質] · kanji [夢 沈 迷 願] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11016226`
 
 ---
 
@@ -69,28 +69,28 @@ O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é o tom de ～かなあ numa frase como 明日は晴れるかなあ?'}
+### 1. (recognition) Qual é o tom de ～かなあ numa frase como 明日は晴れるかなあ?
 - **Resposta:** `{"choices": ["Uma ordem firme dirigida a outra pessoa", "Uma dúvida ou desejo pensado em voz alta, em tom informal", "Uma pergunta formal de reunião de trabalho", "Uma negação categórica"], "correct": "Uma dúvida ou desejo pensado em voz alta, em tom informal"}`
-- {'pt-BR': "かなあ é monólogo interior: 'será que amanhã faz sol?'. O alongamento da vogal deixa o tom mais reflexivo. Por ser informal, num contexto formal usa-se でしょうか, não かなあ."}
+- かなあ é monólogo interior: 'será que amanhã faz sol?'. O alongamento da vogal deixa o tom mais reflexivo. Por ser informal, num contexto formal usa-se でしょうか, não かなあ.
 
 
-### 2. (cloze) {'pt-BR': "Complete 'será que ele é estudante?' soltando o だ corretamente: 彼は学生＿＿＿。"}
+### 2. (cloze) Complete 'será que ele é estudante?' soltando o だ corretamente: 彼は学生＿＿＿。
 - **Resposta:** `{"text": "かなあ", "full": "彼は学生かなあ"}`
-- {'pt-BR': 'Com substantivo, o だ cai antes de かなあ no uso natural: 学生かなあ, e não 学生だかなあ. A mesma regra vale para adjetivo な (静かかなあ).'}
+- Com substantivo, o だ cai antes de かなあ no uso natural: 学生かなあ, e não 学生だかなあ. A mesma regra vale para adjetivo な (静かかなあ).
 
 
-### 3. (particle_choice) {'pt-BR': "Para anunciar e fechar uma suposição ('talvez chova'), qual par completa ＿＿＿＿＿雨が降る＿＿＿＿＿?"}
+### 3. (particle_choice) Para anunciar e fechar uma suposição ('talvez chova'), qual par completa ＿＿＿＿＿雨が降る＿＿＿＿＿?
 - **Resposta:** `{"choices": ["もし...だろう", "もしかすると...かもしれない", "もしかすると...にちがいない", "もしも...はずだ"], "correct": "もしかすると...かもしれない"}`
-- {'pt-BR': 'O sanduíche é もしかすると no começo (avisa que vem suposição) e かもしれない no fim (reforça a dúvida): もしかすると雨が降るかもしれない. As outras combinações mudam o sentido ou não fecham o par.'}
+- O sanduíche é もしかすると no começo (avisa que vem suposição) e かもしれない no fim (reforça a dúvida): もしかすると雨が降るかもしれない. As outras combinações mudam o sentido ou não fecham o par.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada palavra à sua tradução em pt-BR.'}
+### 4. (matching) Ligue cada palavra à sua tradução em pt-BR.
 - **Resposta:** `{"pairs": [["事実", "fato"], ["事情", "circunstâncias"], ["失望", "decepção"], ["幸せ", "felicidade"]]}`
-- {'pt-BR': '事実 (じじつ) = fato; 事情 (じじょう) = circunstâncias/motivos; 失望 (しつぼう) = decepção; 幸せ (しあわせ) = felicidade. Note que 事 (assunto/coisa) aparece em 事実 e 事情.'}
+- 事実 (じじつ) = fato; 事情 (じじょう) = circunstâncias/motivos; 失望 (しつぼう) = decepção; 幸せ (しあわせ) = felicidade. Note que 事 (assunto/coisa) aparece em 事実 e 事情.
 
 
-### 5. (production) {'pt-BR': "Diga 'tomara que eu seja feliz' como um desejo pensado em voz alta, usando 幸せ (felicidade) + になる + ～といい + ～かなあ."}
+### 5. (production) Diga 'tomara que eu seja feliz' como um desejo pensado em voz alta, usando 幸せ (felicidade) + になる + ～といい + ～かなあ.
 - **Resposta:** `{"text": "幸せになるといいかなあ", "accept": ["幸せになるといいかなあ", "しあわせになるといいかなあ", "幸せになれるといいかなあ", "しあわせになれるといいかなあ"]}`
-- {'pt-BR': "～といいかなあ é o jeito natural de soltar um desejo brando: 'tomara que dê certo de eu ficar feliz'. O かなあ alongado dá o tom de quem fala consigo mesmo. Mantenha o registro informal."}
+- ～といいかなあ é o jeito natural de soltar um desejo brando: 'tomara que dê certo de eu ficar feliz'. O かなあ alongado dá o tom de quem fala consigo mesmo. Mantenha o registro informal.
 
 

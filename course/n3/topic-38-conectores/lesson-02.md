@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-dakedo, n3-tokorode, n3-tsumari] · vocabulário [勢い, 合わせる, 当たる, 当てる, 彼方此方, 或る, 新た, 現れ, 現れる, 略, 表す, 誤り, 諦める, 跡, 辺り, 飽きる] · kanji [当 現 表] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3366905`, `sent:tatoeba-11027663`
 
 ---
 
@@ -28,7 +28,7 @@ Armadilha PT: existe outro けど que so SUAVIZA um pedido ou puxa o ouvinte a c
 
 #### つまり: ou seja, em outras palavras
 O conector n3-tsumari reformula, resume ou esclarece de forma mais direta o que acabou de ser dito. E o nosso "ou seja", "em outras palavras", "em resumo". Costuma abrir a segunda frase.
-彼は明日来ない。つまり、会議は中止だ = "Ele não vem amanha. Ou seja, a reuniao esta cancelada."
+彼は明日来ない。つまり、会議は中止だ = "Ele não vem amanhã. Ou seja, a reunião está cancelada."
 
 > **[tip]**
 Dica: つまり serve tanto para resumir quanto para tirar uma conclusão logica do que foi dito. Ele e o termo neutro e cotidiano; すなわち ("a saber") e mais tecnico e formal, e 要するに e "resumindo, no fim das contas".
@@ -38,11 +38,11 @@ O conector n3-tokorode troca de assunto, em geral sem nenhuma ligação com o qu
 ところで、今日の予定は？ = "A propósito, qual e a agenda de hoje?"
 
 > **[l1-pitfall]**
-Armadilha PT: em português "falando nisso" supoe alguma ligação com o assunto anterior, mas ところで pode ser uma virada totalmente nova; por isso "mudando de assunto" as vezes traduz melhor. Cuidado também para não confundir com o outro ところで de "mesmo que", que tem outra função; aqui, sozinho no começo da fala, e sempre "a propósito".
+Armadilha PT: em português "falando nisso" supõe alguma ligação com o assunto anterior, mas ところで pode ser uma virada totalmente nova; por isso "mudando de assunto" as vezes traduz melhor. Cuidado também para não confundir com o outro ところで de "mesmo que", que tem outra função; aqui, sozinho no começo da fala, e sempre "a propósito".
 
 #### Vocabulário: aparecer, acertar, errar
 Verbos e palavras úteis para descrever fatos e mudanças (em kana):
-- 現れる (あらわれる) = "aparecer, surgir"; o substantivo e 現れ (あらわれ, "manifestacao, indicio").
+- 現れる (あらわれる) = "aparecer, surgir"; o substantivo e 現れ (あらわれ, "manifestação, indício").
 - 表す (あらわす) = "representar, significar, simbolizar".
 - 当たる (あたる) = "acertar, ser atingido" (intransitivo); o par transitivo e 当てる (あてる, "acertar, atingir algo").
 - 誤り (あやまり) = "erro, engano, falha".
@@ -76,28 +76,28 @@ O kanji 当 significa "acertar, apropriado, corresponder". Aparece nos verbos �
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual conector marca contraste em 'Este filme e longo, ___ e interessante'?"}
+### 1. (recognition) Qual conector marca contraste em 'Este filme e longo, ___ e interessante'?
 - **Resposta:** `{"choices": ["けど", "つまり", "その上", "それと"], "correct": "けど"}`
-- {'pt-BR': 'けど (forma coloquial de しかし) marca oposição: longo X interessante. つまり reformularia; その上 e それと somariam na mesma direção.'}
+- けど (forma coloquial de しかし) marca oposição: longo X interessante. つまり reformularia; その上 e それと somariam na mesma direção.
 
 
-### 2. (cloze) {'pt-BR': "Complete o resumo 'Ele não vem amanha. Ou seja, a reuniao esta cancelada': 彼は明日来ない。___、会議は中止だ。"}
+### 2. (cloze) Complete o resumo 'Ele não vem amanhã. Ou seja, a reunião está cancelada': 彼は明日来ない。___、会議は中止だ。
 - **Resposta:** `{"text": "つまり", "full": "彼は明日来ない。つまり、会議は中止だ。"}`
-- {'pt-BR': "つまり reformula/conclui o que foi dito ('ou seja'). Aqui a segunda frase e a consequência logica da primeira."}
+- つまり reformula/conclui o que foi dito ('ou seja'). Aqui a segunda frase e a consequência logica da primeira.
 
 
-### 3. (particle_choice) {'pt-BR': 'Você quer mudar totalmente de assunto e perguntar a agenda de hoje. Complete: ___、今日の予定は？'}
+### 3. (particle_choice) Você quer mudar totalmente de assunto e perguntar a agenda de hoje. Complete: ___、今日の予定は？
 - **Resposta:** `{"choices": ["ところで", "だけど", "つまり", "なぜなら"], "correct": "ところで"}`
-- {'pt-BR': "ところで abre um assunto novo ('a propósito / mudando de assunto'). だけど contrastaria, つまり resumiria e なぜなら daria uma causa."}
+- ところで abre um assunto novo ('a propósito / mudando de assunto'). だけど contrastaria, つまり resumiria e なぜなら daria uma causa.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada conector a sua função no discurso.'}
+### 4. (matching) Ligue cada conector a sua função no discurso.
 - **Resposta:** `{"pairs": [["だけど", "contraste (mas, so que)"], ["つまり", "reformulação (ou seja)"], ["ところで", "troca de assunto (a propósito)"]]}`
-- {'pt-BR': 'だけど vira a direção por oposição; つまり diz a mesma coisa de outro jeito; ところで abandona o tema atual.'}
+- だけど vira a direção por oposição; つまり diz a mesma coisa de outro jeito; ところで abandona o tema atual.
 
 
-### 5. (production) {'pt-BR': "Diga: 'Me esforcei, mas não deu certo.' usando けど numa única frase (verbo 'esforcar-se' no passado: 頑張った)."}
+### 5. (production) Diga: 'Me esforcei, mas não deu certo.' usando けど numa única frase (verbo 'esforcar-se' no passado: 頑張った).
 - **Resposta:** `{"text": "頑張ったけど、うまくいかなかった。", "accept": ["頑張ったけど、うまくいかなかった", "がんばったけど、うまくいかなかった。", "がんばったけど、うまくいかなかった", "頑張ったけどうまくいかなかった"]}`
-- {'pt-BR': "Dentro de uma so frase, けど gruda no fim da primeira oração (頑張った + けど) e liga ao contraste うまくいかなかった ('não deu certo'). Se fossem duas frases separadas, você comecaria a segunda com だけど."}
+- Dentro de uma so frase, けど gruda no fim da primeira oração (頑張った + けど) e liga ao contraste うまくいかなかった ('não deu certo'). Se fossem duas frases separadas, você comecaria a segunda com だけど.
 
 

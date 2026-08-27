@@ -43,23 +43,23 @@ Estrangeirismos costumam vir em katakana. Leia em voz alta com o que você já s
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'ro'?"}
+### 1. (recognition) Qual katakana representa o som 'ro'?
 - **Resposta:** `{"choices": ["ロ", "ラ", "ル"], "correct": "ロ"}`
-- {'pt-BR': 'ロ = ro (o quadradinho).'}
+- ロ = ro (o quadradinho).
 
 
-### 2. (recognition) {'pt-BR': 'Que som tem リ?'}
+### 2. (recognition) Que som tem リ?
 - **Resposta:** `{"choices": ["ri", "re", "ru"], "correct": "ri"}`
-- {'pt-BR': "リ = ri, parecido com o hiragana り (que também é 'ri')."}
+- リ = ri, parecido com o hiragana り (que também é 'ri').
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada katakana ao seu som.'}
+### 3. (matching) Ligue cada katakana ao seu som.
 - **Resposta:** `{"pairs": [["ラ", "ra"], ["リ", "ri"], ["ル", "ru"], ["レ", "re"], ["ロ", "ro"]]}`
-- {'pt-BR': "Os cinco kana da Família do RA. Todos usam o 'r' suave japonês."}
+- Os cinco kana da Família do RA. Todos usam o 'r' suave japonês.
 
 
-### 4. (production) {'pt-BR': "Escreva o katakana do som 'ru'."}
+### 4. (production) Escreva o katakana do som 'ru'.
 - **Resposta:** `{"text": "ル", "accept": ["ル"]}`
-- {'pt-BR': "'ru' = ル."}
+- 'ru' = ル.
 
 

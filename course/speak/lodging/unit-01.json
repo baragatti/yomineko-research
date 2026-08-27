@@ -4,7 +4,7 @@
   "stage": "speak:lodging",
   "order": 1,
   "title": {
-    "pt-BR": "Dormir e resolver problemas — parte 1"
+    "pt-BR": "Dormir e resolver problemas, parte 1"
   },
   "say_now": [
     "sent:tatoeba-109884",
@@ -52,48 +52,6 @@
   "cumulative_known_vocab": 209,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:865:2525",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "昼",
-        "家",
-        "君"
-      ]
-    },
-    {
-      "id": "cf:n5:1077:55",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "左",
-        "車",
-        "母"
-      ]
-    },
-    {
-      "id": "kr:n3:1586",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たつ",
-        "いま",
-        "バス"
-      ]
-    },
-    {
-      "id": "kr:n5:220",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ベッド",
-        "わかる",
-        "あがる"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -138,6 +96,7 @@
       "prompt_pt": "Ele vai alugar um carro logo no aeroporto.",
       "answer_key": "彼が空港ですぐレンタカーを借ります",
       "accepted_variants": [
+        "かれがくうこうですぐれんたかーをかります",
         "彼が空港ですぐレンタカーを借ります"
       ],
       "sentence": "sent:jec-3201",
@@ -147,6 +106,8 @@
       "prompt_pt": "Meu irmão mais velho foi vítima de batedor de carteira dentro do trem.",
       "answer_key": "私の兄は電車の中でスリにあった。",
       "accepted_variants": [
+        "わたしのあにわでんしゃのなかですりにあった",
+        "わたしのあにわでんしゃのなかですりにあった。",
         "私の兄は電車の中でスリにあった",
         "私の兄は電車の中でスリにあった。"
       ],
@@ -157,6 +118,8 @@
       "prompt_pt": "Você foi em algum jardim famoso?",
       "answer_key": "どこか有名な庭園に行ったの？",
       "accepted_variants": [
+        "どこかゆうめいなていえんにいったの",
+        "どこかゆうめいなていえんにいったの?",
         "どこか有名な庭園に行ったの",
         "どこか有名な庭園に行ったの？"
       ],
@@ -179,15 +142,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:865:2525",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "昼",
+        "家",
+        "君"
+      ]
+    },
+    {
+      "id": "cf:n5:1077:55",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "左",
+        "車",
+        "母"
+      ]
+    },
+    {
+      "id": "kr:n3:1586",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たつ",
+        "いま",
+        "バス"
+      ]
+    },
+    {
+      "id": "kr:n5:220",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ベッド",
+        "わかる",
+        "あがる"
+      ]
+    }
+  ]
 }

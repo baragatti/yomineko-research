@@ -4,7 +4,7 @@
   "stage": "speak:health",
   "order": 6,
   "title": {
-    "pt-BR": "Emergência e saúde — parte 6"
+    "pt-BR": "Emergência e saúde, parte 6"
   },
   "say_now": [
     "sent:tatoeba-212666",
@@ -29,7 +29,8 @@
     "gram:naide-kudasai",
     "gram:gp-149",
     "gram:darou",
-    "gram:naide"
+    "gram:naide",
+    "gram:kana"
   ],
   "kanji_recognition": [
     "危",
@@ -52,6 +53,120 @@
   "cumulative_known_vocab": 412,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:naide-kudasai",
+      "examples": [
+        "sent:tatoeba-2006378",
+        "sent:tatoeba-1200727",
+        "sent:tatoeba-6704205"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:darou",
+      "examples": [
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:naide",
+      "examples": [
+        "sent:tatoeba-125387",
+        "sent:tatoeba-142115",
+        "sent:tatoeba-145933"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-72c52ba4dd08"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Minha garganta está ardendo e estou com um pouco de febre.",
+      "answer_key": "喉がひりひりして、ちょっと熱があるんです。",
+      "accepted_variants": [
+        "のどがひりひりして、ちょっとねつがあるんです",
+        "のどがひりひりして、ちょっとねつがあるんです。",
+        "喉がひりひりして、ちょっと熱があるんです",
+        "喉がひりひりして、ちょっと熱があるんです。"
+      ],
+      "sentence": "sent:tatoeba-198568",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É verdade que, quando você passa o resfriado pra outra pessoa, você sara?",
+      "answer_key": "風邪って人にうつすと治るってほんと？",
+      "accepted_variants": [
+        "かぜってひとにうつすとなおるってほんと",
+        "かぜってひとにうつすとなおるってほんと?",
+        "風邪って人にうつすと治るってほんと",
+        "風邪って人にうつすと治るってほんと？"
+      ],
+      "sentence": "sent:tatoeba-3454872",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Se você tivesse metade de um cérebro, seria perigoso!",
+      "answer_key": "お前は脳の半分があったら，危ない!",
+      "accepted_variants": [
+        "おまえわのうのはんぶんがあったら,あぶない",
+        "おまえわのうのはんぶんがあったら,あぶない!",
+        "お前は脳の半分があったら，危ない",
+        "お前は脳の半分があったら，危ない!"
+      ],
+      "sentence": "sent:tatoeba-5147343",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:jec-1326",
+      "sent:tatoeba-10587764",
+      "sent:tatoeba-145552",
+      "sent:jec-3163",
+      "sent:tatoeba-203344",
+      "sent:tatoeba-83003"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:863",
@@ -98,105 +213,5 @@
         "雪"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-128",
-    "gram:you-ni-you-na"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:naide-kudasai",
-      "examples": [
-        "sent:tatoeba-2006378",
-        "sent:tatoeba-1200727",
-        "sent:tatoeba-6704205"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:naide",
-      "examples": [
-        "sent:tatoeba-125387",
-        "sent:tatoeba-142115",
-        "sent:tatoeba-145933"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Minha garganta está ardendo e estou com um pouco de febre.",
-      "answer_key": "喉がひりひりして、ちょっと熱があるんです。",
-      "accepted_variants": [
-        "喉がひりひりして、ちょっと熱があるんです",
-        "喉がひりひりして、ちょっと熱があるんです。"
-      ],
-      "sentence": "sent:tatoeba-198568",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "É verdade que, quando você passa o resfriado pra outra pessoa, você sara?",
-      "answer_key": "風邪って人にうつすと治るってほんと？",
-      "accepted_variants": [
-        "風邪って人にうつすと治るってほんと",
-        "風邪って人にうつすと治るってほんと？"
-      ],
-      "sentence": "sent:tatoeba-3454872",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Se você tivesse metade de um cérebro, seria perigoso!",
-      "answer_key": "お前は脳の半分があったら，危ない!",
-      "accepted_variants": [
-        "お前は脳の半分があったら，危ない",
-        "お前は脳の半分があったら，危ない!"
-      ],
-      "sentence": "sent:tatoeba-5147343",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
-    "items": [
-      "sent:jec-1326",
-      "sent:tatoeba-10587764",
-      "sent:tatoeba-145552",
-      "sent:jec-3163",
-      "sent:tatoeba-203344",
-      "sent:tatoeba-83003"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 26,
-    "fluency": 6
-  }
+  ]
 }

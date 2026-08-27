@@ -9,7 +9,8 @@
     "packing": "single",
     "glob": "course/speak/course.json",
     "stable_id_field": "id",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -26,25 +27,18 @@
       "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
     },
     "ordering": {
-      "type": "string",
-      "enum": [
-        "survival scenario (primary) + vocab.freq_rank (secondary)"
-      ]
+      "type": "string"
     },
     "schema_version": {
       "type": "string",
-      "enum": [
-        "1.0"
-      ]
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "MAJOR.MINOR of the record format. A version field exists to be bumped; an enum over the current value means it never can be."
     },
     "shortfall": {
       "type": "array"
     },
     "spec": {
-      "type": "string",
-      "enum": [
-        "design/speaking_path.md"
-      ]
+      "type": "string"
     },
     "stages": {
       "type": "array",
@@ -53,32 +47,12 @@
         "properties": {
           "approx_band": {
             "type": "string",
-            "enum": [
-              "n3",
-              "n4",
-              "n4/n3",
-              "n5",
-              "n5/n4",
-              "pre-n5",
-              "pre-n5/n5"
-            ]
+            "pattern": "^(pre-n5|n5|n4|n3|n2|n1)(/(pre-n5|n5|n4|n3|n2|n1))?$",
+            "description": "Roughly where this stage sits against the JLPT ladder — one Level, or a pair when the stage straddles two. A pattern rather than an enum so the bands can be re-cut without a schema change (spec §1.6)."
           },
           "order": {
             "type": "integer",
-            "enum": [
-              1,
-              10,
-              11,
-              12,
-              2,
-              3,
-              4,
-              5,
-              6,
-              7,
-              8,
-              9
-            ]
+            "minimum": 0
           },
           "slug": {
             "$ref": "common.schema.json#/$defs/StableId"
@@ -88,9 +62,7 @@
           },
           "unit_count": {
             "type": "integer",
-            "enum": [
-              6
-            ]
+            "minimum": 0
           },
           "unit_ids": {
             "type": "array",
@@ -110,69 +82,47 @@
       "properties": {
         "checkpoint_items": {
           "type": "integer",
-          "enum": [
-            359
-          ]
+          "minimum": 0
         },
         "drills": {
           "type": "integer",
-          "enum": [
-            277
-          ]
+          "minimum": 0
         },
         "fluency": {
           "type": "integer",
-          "enum": [
-            423
-          ]
+          "minimum": 0
         },
         "patterns_chunked": {
           "type": "integer",
-          "enum": [
-            134
-          ]
+          "minimum": 0
         },
         "patterns_kept": {
           "type": "integer",
-          "enum": [
-            277
-          ]
+          "minimum": 0
         },
         "phrases": {
           "type": "integer",
-          "enum": [
-            432
-          ]
+          "minimum": 0
         },
         "production": {
           "type": "integer",
-          "enum": [
-            213
-          ]
+          "minimum": 0
         },
         "real_phrases": {
           "type": "integer",
-          "enum": [
-            432
-          ]
+          "minimum": 0
         },
         "stages": {
           "type": "integer",
-          "enum": [
-            12
-          ]
+          "minimum": 0
         },
         "units": {
           "type": "integer",
-          "enum": [
-            72
-          ]
+          "minimum": 0
         },
         "vocab_introduced": {
           "type": "integer",
-          "enum": [
-            584
-          ]
+          "minimum": 0
         }
       },
       "required": [

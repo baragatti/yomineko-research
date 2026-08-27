@@ -4,7 +4,7 @@
   "stage": "speak:shopping",
   "order": 6,
   "title": {
-    "pt-BR": "Isto, aquilo, quanto custa — parte 6"
+    "pt-BR": "Isto, aquilo, quanto custa, parte 6"
   },
   "say_now": [
     "sent:tatoeba-217663",
@@ -48,6 +48,77 @@
   "cumulative_known_vocab": 78,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:hou-ga-ii",
+    "gram:gp-43",
+    "gram:nowa-da",
+    "gram:gp-13",
+    "gram:gp-81",
+    "gram:yori"
+  ],
+  "drills": [],
+  "production": [
+    {
+      "prompt_pt": "Soube que você comprou uma casa, né.",
+      "answer_key": "家を買ったんだってね。",
+      "accepted_variants": [
+        "いえをかったんだってね",
+        "いえをかったんだってね。",
+        "家を買ったんだってね",
+        "家を買ったんだってね。"
+      ],
+      "sentence": "sent:tatoeba-9240812",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele comprou uma casa no subúrbio.",
+      "answer_key": "彼が郊外に家を買った",
+      "accepted_variants": [
+        "かれがこうがいにいえをかった",
+        "彼が郊外に家を買った"
+      ],
+      "sentence": "sent:jec-1593",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você tem que fazer isso sozinho.",
+      "answer_key": "自分でそれをしなければならない。",
+      "accepted_variants": [
+        "じぶんでそれをしなければならない",
+        "じぶんでそれをしなければならない。",
+        "自分でそれをしなければならない",
+        "自分でそれをしなければならない。"
+      ],
+      "sentence": "sent:tatoeba-149971",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-76061",
+      "sent:tatoeba-149750",
+      "sent:tatoeba-74146",
+      "sent:tatoeba-8748248",
+      "sent:tatoeba-3488181",
+      "sent:tatoeba-8687007"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 34,
+    "meaning-output": 9,
+    "language-focused": 40,
+    "fluency": 17
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 14,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n5:4355",
@@ -99,71 +170,5 @@
         "あいだ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:hou-ga-ii",
-    "gram:gp-43",
-    "gram:nowa-da",
-    "gram:gp-13",
-    "gram:gp-81",
-    "gram:yori"
-  ],
-  "drills": [],
-  "production": [
-    {
-      "prompt_pt": "Soube que você comprou uma casa, né.",
-      "answer_key": "家を買ったんだってね。",
-      "accepted_variants": [
-        "家を買ったんだってね",
-        "家を買ったんだってね。"
-      ],
-      "sentence": "sent:tatoeba-9240812",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ele comprou uma casa no subúrbio.",
-      "answer_key": "彼が郊外に家を買った",
-      "accepted_variants": [
-        "彼が郊外に家を買った"
-      ],
-      "sentence": "sent:jec-1593",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Você tem que fazer isso sozinho.",
-      "answer_key": "自分でそれをしなければならない。",
-      "accepted_variants": [
-        "自分でそれをしなければならない",
-        "自分でそれをしなければならない。"
-      ],
-      "sentence": "sent:tatoeba-149971",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
-    "items": [
-      "sent:tatoeba-76061",
-      "sent:tatoeba-149750",
-      "sent:tatoeba-74146",
-      "sent:tatoeba-8748248",
-      "sent:tatoeba-3488181",
-      "sent:tatoeba-8687007"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 20,
-    "fluency": 6
-  }
+  ]
 }

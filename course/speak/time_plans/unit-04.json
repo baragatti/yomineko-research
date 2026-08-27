@@ -4,7 +4,7 @@
   "stage": "speak:time_plans",
   "order": 4,
   "title": {
-    "pt-BR": "Quando, que horas, combinar — parte 4"
+    "pt-BR": "Quando, que horas, combinar, parte 4"
   },
   "say_now": [
     "sent:tatoeba-80417",
@@ -51,6 +51,104 @@
   "cumulative_known_vocab": 356,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:nakereba-naranai",
+    "gram:gp-110",
+    "gram:sou-da-1"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-42",
+      "examples": [
+        "sent:tatoeba-227007",
+        "sent:tatoeba-994640",
+        "sent:tatoeba-229458"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:made-ni",
+      "examples": [
+        "sent:tatoeba-150564",
+        "sent:tatoeba-218050",
+        "sent:tatoeba-147666"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:owaru",
+      "examples": [
+        "sent:tatoeba-228649",
+        "sent:tatoeba-8727067",
+        "sent:tatoeba-10206436"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Explicar para você por que não vai dar certo ia levar um tempão.",
+      "answer_key": "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。",
+      "accepted_variants": [
+        "なんでうまくいかないかきみにせつめいするにわずいぶんじかんがかかりそうだ",
+        "なんでうまくいかないかきみにせつめいするにわずいぶんじかんがかかりそうだ。",
+        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ",
+        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。"
+      ],
+      "sentence": "sent:tatoeba-4905",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Se você continua todos os dias, isso vira força.",
+      "answer_key": "毎日続けると力になる。",
+      "accepted_variants": [
+        "まいにちつづけるとちからになる",
+        "まいにちつづけるとちからになる。",
+        "毎日続けると力になる",
+        "毎日続けると力になる。"
+      ],
+      "sentence": "sent:tatoeba-11013726",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Como caminhamos por muito tempo, ficamos exaustos.",
+      "answer_key": "長い時間歩いたので疲れきった。",
+      "accepted_variants": [
+        "ながいじかんあるいたのでつかれきった",
+        "ながいじかんあるいたのでつかれきった。",
+        "長い時間歩いたので疲れきった",
+        "長い時間歩いたので疲れきった。"
+      ],
+      "sentence": "sent:tatoeba-125943",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-154767",
+      "sent:tatoeba-9777117",
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362",
+      "sent:tatoeba-80068",
+      "sent:tatoeba-152614"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 19,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:3427",
@@ -97,97 +195,5 @@
         "かわ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:nakereba-naranai",
-    "gram:gp-110",
-    "gram:sou-da-1"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-42",
-      "examples": [
-        "sent:tatoeba-227007",
-        "sent:tatoeba-994640",
-        "sent:tatoeba-229458"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:made-ni",
-      "examples": [
-        "sent:tatoeba-150564",
-        "sent:tatoeba-218050",
-        "sent:tatoeba-147666"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:owaru",
-      "examples": [
-        "sent:tatoeba-228649",
-        "sent:tatoeba-8727067",
-        "sent:tatoeba-10206436"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Explicar para você por que não vai dar certo ia levar um tempão.",
-      "answer_key": "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。",
-      "accepted_variants": [
-        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ",
-        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。"
-      ],
-      "sentence": "sent:tatoeba-4905",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Se você continua todos os dias, isso vira força.",
-      "answer_key": "毎日続けると力になる。",
-      "accepted_variants": [
-        "毎日続けると力になる",
-        "毎日続けると力になる。"
-      ],
-      "sentence": "sent:tatoeba-11013726",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Como caminhamos por muito tempo, ficamos exaustos.",
-      "answer_key": "長い時間歩いたので疲れきった。",
-      "accepted_variants": [
-        "長い時間歩いたので疲れきった",
-        "長い時間歩いたので疲れきった。"
-      ],
-      "sentence": "sent:tatoeba-125943",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
-    "items": [
-      "sent:tatoeba-154767",
-      "sent:tatoeba-9777117",
-      "sent:tatoeba-171531",
-      "sent:tatoeba-1037362",
-      "sent:tatoeba-80068",
-      "sent:tatoeba-152614"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 24,
-    "fluency": 6
-  }
+  ]
 }

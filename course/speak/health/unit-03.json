@@ -4,7 +4,7 @@
   "stage": "speak:health",
   "order": 3,
   "title": {
-    "pt-BR": "Emergência e saúde — parte 3"
+    "pt-BR": "Emergência e saúde, parte 3"
   },
   "say_now": [
     "sent:tatoeba-83924",
@@ -28,7 +28,8 @@
   ],
   "patterns": [
     "gram:kana",
-    "gram:gp-8"
+    "gram:gp-8",
+    "gram:made"
   ],
   "kanji_recognition": [
     "引",
@@ -51,6 +52,104 @@
   "cumulative_known_vocab": 389,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:you-ni-you-na",
+    "gram:no-naka-de",
+    "gram:tara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-72c52ba4dd08"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:made",
+      "examples": [
+        "sent:gen-9c55e692729f",
+        "sent:gen-1bcd4a8c549a",
+        "sent:gen-e8f77ce7960b"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Se você ficar resfriado, tome este remédio, viu?",
+      "answer_key": "かぜをひいたらこの薬を飲むんだよ。",
+      "accepted_variants": [
+        "かぜをひいたらこのくすりをのむんだよ",
+        "かぜをひいたらこのくすりをのむんだよ。",
+        "かぜをひいたらこの薬を飲むんだよ",
+        "かぜをひいたらこの薬を飲むんだよ。"
+      ],
+      "sentence": "sent:tatoeba-226387",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O seu remédio ficou pronto, viu?",
+      "answer_key": "お薬ができましたよ。",
+      "accepted_variants": [
+        "おくすりができましたよ",
+        "おくすりができましたよ。",
+        "お薬ができましたよ",
+        "お薬ができましたよ。"
+      ],
+      "sentence": "sent:tatoeba-79502",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Será que eu já tomei o remédio?",
+      "answer_key": "薬飲んだっけ？",
+      "accepted_variants": [
+        "くすりのんだっけ",
+        "くすりのんだっけ?",
+        "薬飲んだっけ",
+        "薬飲んだっけ？"
+      ],
+      "sentence": "sent:tatoeba-11270411",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-90106",
+      "sent:tatoeba-190894",
+      "sent:tatoeba-190902",
+      "sent:tatoeba-3263386",
+      "sent:tatoeba-171774",
+      "sent:tatoeba-226765"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 20,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:183",
@@ -102,89 +201,5 @@
         "すすむ"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-128",
-    "gram:no-naka-de",
-    "gram:you-ni-you-na",
-    "gram:tara"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:kana",
-      "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-150175"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Se você ficar resfriado, tome este remédio, viu?",
-      "answer_key": "かぜをひいたらこの薬を飲むんだよ。",
-      "accepted_variants": [
-        "かぜをひいたらこの薬を飲むんだよ",
-        "かぜをひいたらこの薬を飲むんだよ。"
-      ],
-      "sentence": "sent:tatoeba-226387",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "O seu remédio ficou pronto, viu?",
-      "answer_key": "お薬ができましたよ。",
-      "accepted_variants": [
-        "お薬ができましたよ",
-        "お薬ができましたよ。"
-      ],
-      "sentence": "sent:tatoeba-79502",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Será que eu já tomei o remédio?",
-      "answer_key": "薬飲んだっけ？",
-      "accepted_variants": [
-        "薬飲んだっけ",
-        "薬飲んだっけ？"
-      ],
-      "sentence": "sent:tatoeba-11270411",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
-    "items": [
-      "sent:tatoeba-90106",
-      "sent:tatoeba-190894",
-      "sent:tatoeba-190902",
-      "sent:tatoeba-3263386",
-      "sent:tatoeba-171774",
-      "sent:tatoeba-226765"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 24,
-    "fluency": 6
-  }
+  ]
 }

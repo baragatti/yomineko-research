@@ -61,28 +61,28 @@ Cuidado: 酔う (よう, ficar bêbado) é o verbo, mas você verá muito 様 e 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual expressão significa 'em resumo, numa palavra'?"}
+### 1. (recognition) Qual expressão significa 'em resumo, numa palavra'?
 - **Resposta:** `{"choices": ["要するに", "要点", "要素", "要求"], "correct": "要するに"}`
-- {'pt-BR': "要するに (ようするに) introduz um resumo. 要点 é 'ponto principal', 要素 é 'elemento' e 要求 é 'exigência'."}
+- 要するに (ようするに) introduz um resumo. 要点 é 'ponto principal', 要素 é 'elemento' e 要求 é 'exigência'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["予測", "previsão"], ["用心", "cautela"], ["様子", "situação"], ["夜中", "madrugada"]]}`
-- {'pt-BR': '予測 é uma previsão baseada em dados, 用心 é precaução, 様子 é o estado das coisas e 夜中 é a alta madrugada.'}
+- 予測 é uma previsão baseada em dados, 用心 é precaução, 様子 é o estado das coisas e 夜中 é a alta madrugada.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'À noite é perigoso, então é melhor tomar cuidado': 夜は危ないから、＿＿したほうがいい。"}
+### 3. (cloze) Complete 'À noite é perigoso, então é melhor tomar cuidado': 夜は危ないから、＿＿したほうがいい。
 - **Resposta:** `{"text": "用心", "full": "夜は危ないから、用心したほうがいい。"}`
-- {'pt-BR': "用心 (ようじん) é cautela/precaução; com する vira 'tomar cuidado'."}
+- 用心 (ようじん) é cautela/precaução; com する vira 'tomar cuidado'.
 
 
-### 4. (recognition) {'pt-BR': "Você quer dizer que uma tarefa 'não é nada fácil'. Qual palavra cabe na ideia de 'fácil'?"}
+### 4. (recognition) Você quer dizer que uma tarefa 'não é nada fácil'. Qual palavra cabe na ideia de 'fácil'?
 - **Resposta:** `{"choices": ["容易", "陽気", "予算", "曜日"], "correct": "容易"}`
-- {'pt-BR': "容易 (ようい) significa fácil/simples. 陽気 é 'alegre', 予算 é 'orçamento' e 曜日 é 'dia da semana'."}
+- 容易 (ようい) significa fácil/simples. 陽気 é 'alegre', 予算 é 'orçamento' e 曜日 é 'dia da semana'.
 
 
-### 5. (production) {'pt-BR': "Diga 'Em resumo, o plano tem três pontos principais' usando 要するに e 要点 (plano = 計画, três = 三つ)."}
+### 5. (production) Diga 'Em resumo, o plano tem três pontos principais' usando 要するに e 要点 (plano = 計画, três = 三つ).
 - **Resposta:** `{"text": "要するに、計画の要点は三つだ", "accept": ["要するに、計画の要点は三つだ。", "要するに計画の要点は三つだ", "要するに、計画の要点は三つです", "要するに、計画の要点は三つです。"]}`
-- {'pt-BR': "要するに abre o resumo e 要点 marca os pontos principais; 三つだ fecha 'são três'."}
+- 要するに abre o resumo e 要点 marca os pontos principais; 三つだ fecha 'são três'.
 
 

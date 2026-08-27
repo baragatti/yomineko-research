@@ -4,7 +4,7 @@
   "stage": "speak:shopping",
   "order": 2,
   "title": {
-    "pt-BR": "Isto, aquilo, quanto custa — parte 2"
+    "pt-BR": "Isto, aquilo, quanto custa, parte 2"
   },
   "say_now": [
     "sent:tatoeba-10094172",
@@ -49,6 +49,96 @@
   "cumulative_known_vocab": 49,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:to-iu-koto",
+    "gram:gp-117",
+    "gram:to-iu",
+    "gram:gp-147"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-134",
+      "examples": [
+        "sent:tatoeba-8687007",
+        "sent:tatoeba-8719362",
+        "sent:tatoeba-3488181"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nikui",
+      "examples": [
+        "sent:tatoeba-9458223",
+        "sent:tatoeba-10006818",
+        "sent:tatoeba-11995722"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Este é menor do que aquele.",
+      "answer_key": "これはあれよりも小さい。",
+      "accepted_variants": [
+        "これはあれよりも小さい",
+        "これはあれよりも小さい。",
+        "これわあれよりもちいさい",
+        "これわあれよりもちいさい。"
+      ],
+      "sentence": "sent:tatoeba-218647",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Aquilo é uma mesa.",
+      "answer_key": "あれはテーブルです。",
+      "accepted_variants": [
+        "あれはテーブルです",
+        "あれはテーブルです。",
+        "あれわてーぶるです",
+        "あれわてーぶるです。"
+      ],
+      "sentence": "sent:tatoeba-229736",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Aquilo é um gato?",
+      "answer_key": "あれはネコですか。",
+      "accepted_variants": [
+        "あれはネコですか",
+        "あれはネコですか。",
+        "あれわねこですか",
+        "あれわねこですか。"
+      ],
+      "sentence": "sent:tatoeba-229731",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-229742",
+      "sent:tatoeba-229723",
+      "sent:tatoeba-229628",
+      "sent:tatoeba-229460",
+      "sent:tatoeba-1874351",
+      "sent:tatoeba-229425"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 43,
+    "fluency": 16
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 16,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n5:4968",
@@ -95,89 +185,5 @@
         "ズボン"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:to-iu-koto",
-    "gram:gp-117",
-    "gram:to-iu",
-    "gram:gp-147"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-134",
-      "examples": [
-        "sent:tatoeba-8687007",
-        "sent:tatoeba-8719362",
-        "sent:tatoeba-3488181"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nikui",
-      "examples": [
-        "sent:tatoeba-9458223",
-        "sent:tatoeba-10006818",
-        "sent:tatoeba-11995722"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Este é menor do que aquele.",
-      "answer_key": "これはあれよりも小さい。",
-      "accepted_variants": [
-        "これはあれよりも小さい",
-        "これはあれよりも小さい。"
-      ],
-      "sentence": "sent:tatoeba-218647",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Aquilo é uma mesa.",
-      "answer_key": "あれはテーブルです。",
-      "accepted_variants": [
-        "あれはテーブルです",
-        "あれはテーブルです。"
-      ],
-      "sentence": "sent:tatoeba-229736",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Aquilo é um gato?",
-      "answer_key": "あれはネコですか。",
-      "accepted_variants": [
-        "あれはネコですか",
-        "あれはネコですか。"
-      ],
-      "sentence": "sent:tatoeba-229731",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
-    "items": [
-      "sent:tatoeba-229742",
-      "sent:tatoeba-229723",
-      "sent:tatoeba-229628",
-      "sent:tatoeba-229460",
-      "sent:tatoeba-1874351",
-      "sent:tatoeba-229425"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 21,
-    "fluency": 6
-  }
+  ]
 }

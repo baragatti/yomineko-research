@@ -65,28 +65,28 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é a leitura correta de 博物館?'}
+### 1. (recognition) Qual é a leitura correta de 博物館?
 - **Resposta:** `{"choices": ["はくぶつかん", "はかせ", "はくしゅ", "はさみ"], "correct": "はくぶつかん"}`
-- {'pt-BR': '博物館 (はくぶつかん) significa museu. As outras opções são leituras de palavras diferentes desta mesma lição.'}
+- 博物館 (はくぶつかん) significa museu. As outras opções são leituras de palavras diferentes desta mesma lição.
 
 
-### 2. (recognition) {'pt-BR': 'Qual destes verbos se lê はく e significa vomitar?'}
+### 2. (recognition) Qual destes verbos se lê はく e significa vomitar?
 - **Resposta:** `{"choices": ["吐く", "履く", "計る", "外す"], "correct": "吐く"}`
-- {'pt-BR': '吐く (はく) é vomitar ou botar para fora, enquanto 履く (はく) é vestir da cintura para baixo ou calçar. A leitura é igual, mas o kanji muda tudo.'}
+- 吐く (はく) é vomitar ou botar para fora, enquanto 履く (はく) é vestir da cintura para baixo ou calçar. A leitura é igual, mas o kanji muda tudo.
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra japonesa ao seu significado em português.'}
+### 3. (matching) Associe cada palavra japonesa ao seu significado em português.
 - **Resposta:** `{"pairs": [["拍手", "aplauso, palmas"], ["破産", "falência, insolvência"], ["旗", "bandeira"], ["激しい", "violento, intenso"]]}`
-- {'pt-BR': '拍手 (はくしゅ) é aplauso; 破産 (はさん) é falência; 旗 (はた) é bandeira; 激しい (はげしい) é violento ou intenso.'}
+- 拍手 (はくしゅ) é aplauso; 破産 (はさん) é falência; 旗 (はた) é bandeira; 激しい (はげしい) é violento ou intenso.
 
 
-### 4. (cloze) {'pt-BR': 'Complete a frase com a palavra que significa explosão: その工場で大きな____が起きた。'}
+### 4. (cloze) Complete a frase com a palavra que significa explosão: その工場で大きな____が起きた。
 - **Resposta:** `{"text": "爆発", "full": "その工場で大きな爆発が起きた。"}`
-- {'pt-BR': '爆発 (ばくはつ) significa explosão. A frase completa é その工場で大きな爆発が起きた (Houve uma grande explosão naquela fábrica).'}
+- 爆発 (ばくはつ) significa explosão. A frase completa é その工場で大きな爆発が起きた (Houve uma grande explosão naquela fábrica).
 
 
-### 5. (production) {'pt-BR': "Traduza para o japonês: 'Me pediram que medisse o tamanho.' (use 計る e a gramática てくれと)"}
+### 5. (production) Traduza para o japonês: 'Me pediram que medisse o tamanho.' (use 計る e a gramática てくれと)
 - **Resposta:** `{"text": "サイズを計ってくれと言われた", "accept": ["サイズを計ってくれと言われた", "大きさを計ってくれと言われた", "サイズを計ってくれと頼まれた"]}`
-- {'pt-BR': "計る (はかる) é medir. Com a forma てくれと você cita um pedido feito a você: 計ってくれと言われた significa 'me pediram que eu medisse'."}
+- 計る (はかる) é medir. Com a forma てくれと você cita um pedido feito a você: 計ってくれと言われた significa 'me pediram que eu medisse'.
 
 

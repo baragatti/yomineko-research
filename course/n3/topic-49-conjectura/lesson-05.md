@@ -66,28 +66,28 @@ O kanji 靴 ('sapato, calçado') aparece em 靴 ('sapato') e 靴下 ('meia'). Te
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'por acaso, sem querer'?"}
+### 1. (recognition) Qual palavra significa 'por acaso, sem querer'?
 - **Resposta:** `{"choices": ["偶々", "度々", "他人", "便り"], "correct": "偶々"}`
-- {'pt-BR': "偶々 (たまたま) é 'por acaso'. 度々 é 'com frequência', 他人 é 'os outros' e 便り é 'notícias'."}
+- 偶々 (たまたま) é 'por acaso'. 度々 é 'com frequência', 他人 é 'os outros' e 便り é 'notícias'.
 
 
-### 2. (recognition) {'pt-BR': "Você quer dizer que vai 'experimentar um método novo'. Qual verbo usar?"}
+### 2. (recognition) Você quer dizer que vai 'experimentar um método novo'. Qual verbo usar?
 - **Resposta:** `{"choices": ["試す", "頼る", "黙る", "届く"], "correct": "試す"}`
-- {'pt-BR': "試す (ためす) é 'experimentar/testar'. 頼る é 'depender de', 黙る é 'ficar calado' e 届く é 'chegar/ser entregue'."}
+- 試す (ためす) é 'experimentar/testar'. 頼る é 'depender de', 黙る é 'ficar calado' e 届く é 'chegar/ser entregue'.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu sentido.'}
+### 3. (matching) Ligue cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["旅", "viagem"], ["単語", "palavra, vocábulo"], ["谷", "vale"], ["頼る", "contar com, depender de"]]}`
-- {'pt-BR': "旅=viagem, 単語=palavra, 谷=vale, 頼る=contar com. Lembre que 旅 (たび) é diferente de 度 (たび, 'vez')."}
+- 旅=viagem, 単語=palavra, 谷=vale, 頼る=contar com. Lembre que 旅 (たび) é diferente de 度 (たび, 'vez').
 
 
-### 4. (cloze) {'pt-BR': "Complete 'Chegou notícia de um amigo': 友達から＿＿が届いた。"}
+### 4. (cloze) Complete 'Chegou notícia de um amigo': 友達から＿＿が届いた。
 - **Resposta:** `{"text": "便り", "full": "友達から便りが届いた"}`
-- {'pt-BR': "便り (たより) é 'notícias, correspondência'. Combina com 届く ('chegar') para falar de cartas e novidades."}
+- 便り (たより) é 'notícias, correspondência'. Combina com 届く ('chegar') para falar de cartas e novidades.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Quando estou em apuros, conto com os amigos.' (use 頼る)"}
+### 5. (production) Escreva em japonês: 'Quando estou em apuros, conto com os amigos.' (use 頼る)
 - **Resposta:** `{"text": "困った時は友達に頼る", "accept": ["困った時は友達に頼る", "こまったときはともだちにたよる", "困ったときは友達に頼る", "友達に頼る"]}`
-- {'pt-BR': "頼る (たよる) é 'depender de/contar com'. A partícula に marca em quem se confia: 友達に頼る."}
+- 頼る (たよる) é 'depender de/contar com'. A partícula に marca em quem se confia: 友達に頼る.
 
 

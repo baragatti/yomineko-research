@@ -10,13 +10,15 @@ non-zero on any FAIL. Usage: audit_coverage.py
 """
 from __future__ import annotations
 
+import json
 import sqlite3
 import sys
 from collections import Counter
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
-DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
+ROOT = Path(__file__).resolve().parents[2]
+DB = ROOT / "db" / "corpus.sqlite"
 KINDS = [("vocab", "vocab", "headword"), ("kanji", "kanji", "character"), ("grammar", "grammar_point", "key")]
 
 
@@ -37,12 +39,16 @@ def main() -> int:
                 if row:
                     ident = row[0]
             unlocked.add(ident)
-        # introduce-once: a ref unlocked by >1 distinct lesson
+        # introduce-once in EXPORT space: DB refs are authoring headwords, and one headword can
+        # legitimately be unlocked by two lessons that mean different homograph records; the exported
+        # slug is the identity. (Slug-space uniqueness is the rule the export itself now enforces with
+        # a hard SystemExit on within-lesson duplicates.)
         per_ref = Counter()
-        for (ref, n) in con.execute(
-                "SELECT ref, COUNT(DISTINCT lesson_id) FROM lesson_unlocks WHERE unlock_type=? GROUP BY ref",
-                (kind,)):
-            per_ref[ref] = n
+        for lf in (ROOT / "course").glob("*/topic-*/lesson-*.json"):
+            dd = json.loads(lf.read_text(encoding="utf-8"))
+            for uu in dd.get("unlocks", []):
+                if uu["type"] == kind:
+                    per_ref[uu["ref"]] += 1
         dup = {r: n for r, n in per_ref.items() if n > 1}
         gap = placed - unlocked
         extra = unlocked - placed

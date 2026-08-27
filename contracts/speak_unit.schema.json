@@ -9,15 +9,15 @@
     "packing": "single",
     "glob": "course/speak/*/unit-*.json",
     "stable_id_field": "id",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
     "audio": {
       "type": "string",
-      "enum": [
-        "pending"
-      ]
+      "pattern": "^(pending|[A-Za-z0-9_./-]+\\.(mp3|m4a|ogg|wav|opus))$",
+      "description": "The audio asset, or the literal `pending` while the TTS pipeline (design/listening.md) has not produced it yet. The first real filename must not fail the build."
     },
     "checkpoint": {
       "type": "array",
@@ -28,7 +28,9 @@
             "type": "array",
             "items": {
               "type": "string"
-            }
+            },
+            "minItems": 2,
+            "uniqueItems": true
           },
           "id": {
             "$ref": "common.schema.json#/$defs/StableId"
@@ -37,10 +39,20 @@
             "type": "string",
             "enum": [
               "context_fill",
+              "grammar_form",
               "kanji_reading",
+              "orthography",
               "paraphrase",
-              "sentence_order"
-            ]
+              "reading_comp",
+              "sentence_order",
+              "text_grammar",
+              "usage"
+            ],
+            "description": "Which exam section this item is drawn from. Vocabulary owner: design — design/exam_simulator.md (the written-section table). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/exam_simulator.md (the written-section table)"
+            }
           },
           "via": {
             "type": "string",
@@ -48,7 +60,12 @@
               "new-word",
               "phrase",
               "review"
-            ]
+            ],
+            "description": "Why this checkpoint item is in this unit. Vocabulary owner: producer — scripts/export/build_speaking_checkpoints.py (how the item was selected for this unit). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "producer",
+              "source": "scripts/export/build_speaking_checkpoints.py (how the item was selected for this unit)"
+            }
           }
         },
         "additionalProperties": false
@@ -57,29 +74,12 @@
     "chunk_phrases": {
       "type": "array",
       "items": {
-        "type": "string",
-        "enum": [
-          "sent:tatoeba-13174949",
-          "sent:tatoeba-1531875",
-          "sent:tatoeba-1532832",
-          "sent:tatoeba-1576172",
-          "sent:tatoeba-1598216",
-          "sent:tatoeba-335372",
-          "sent:tatoeba-3480287",
-          "sent:tatoeba-3553332",
-          "sent:tatoeba-373351",
-          "sent:tatoeba-408301",
-          "sent:tatoeba-426889",
-          "sent:tatoeba-4854",
-          "sent:tatoeba-4971",
-          "sent:tatoeba-640569",
-          "sent:tatoeba-8467948",
-          "sent:tatoeba-9559301"
-        ]
+        "$ref": "common.schema.json#/$defs/IdRef"
       }
     },
     "cumulative_known_vocab": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "drills": {
       "type": "array",
@@ -98,8 +98,16 @@
           "strand": {
             "type": "string",
             "enum": [
-              "language-focused"
-            ]
+              "fluency",
+              "language-focused",
+              "meaning-input",
+              "meaning-output"
+            ],
+            "description": "Which of the four strands this component trains. Vocabulary owner: design — design/learning_science.md R77 (Nation's four strands). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/learning_science.md R77 (Nation's four strands)"
+            }
           }
         },
         "additionalProperties": false
@@ -118,34 +126,25 @@
           }
         },
         "prompt_pt": {
-          "type": "string",
-          "enum": [
-            "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
-            "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
-            "Perguntaram sua opinião. Diga o que você acha e por quê.",
-            "Um amigo quer marcar alguma coisa. Combine dia e horário.",
-            "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
-            "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
-            "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
-            "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
-            "Você não está bem. Explique o que está sentindo e peça ajuda.",
-            "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
-            "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
-            "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
-          ]
+          "type": "string"
         },
         "seconds_target": {
           "type": "integer",
-          "enum": [
-            24,
-            48
-          ]
+          "minimum": 0
         },
         "strand": {
           "type": "string",
           "enum": [
-            "fluency"
-          ]
+            "fluency",
+            "language-focused",
+            "meaning-input",
+            "meaning-output"
+          ],
+          "description": "Which of the four strands this component trains. Vocabulary owner: design — design/learning_science.md R77 (Nation's four strands). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/learning_science.md R77 (Nation's four strands)"
+          }
         },
         "zero_new_tokens": {
           "type": "boolean"
@@ -170,14 +169,7 @@
     },
     "order": {
       "type": "integer",
-      "enum": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
+      "minimum": 0
     },
     "patterns": {
       "type": "array",
@@ -214,8 +206,16 @@
           "strand": {
             "type": "string",
             "enum": [
+              "fluency",
+              "language-focused",
+              "meaning-input",
               "meaning-output"
-            ]
+            ],
+            "description": "Which of the four strands this component trains. Vocabulary owner: design — design/learning_science.md R77 (Nation's four strands). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/learning_science.md R77 (Nation's four strands)"
+            }
           }
         },
         "additionalProperties": false
@@ -223,9 +223,7 @@
     },
     "real_phrases": {
       "type": "integer",
-      "enum": [
-        6
-      ]
+      "minimum": 0
     },
     "say_now": {
       "type": "array",
@@ -235,9 +233,8 @@
     },
     "schema_version": {
       "type": "string",
-      "enum": [
-        "1.0"
-      ]
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "MAJOR.MINOR of the record format. A version field exists to be bumped; an enum over the current value means it never can be."
     },
     "shadowing": {
       "type": "array",
@@ -246,69 +243,26 @@
       }
     },
     "stage": {
-      "type": "string",
-      "enum": [
-        "speak:about_you",
-        "speak:arrival",
-        "speak:eating",
-        "speak:getting_around",
-        "speak:health",
-        "speak:lodging",
-        "speak:opinions",
-        "speak:past_stories",
-        "speak:politeness",
-        "speak:real_talk",
-        "speak:shopping",
-        "speak:time_plans"
-      ]
+      "$ref": "common.schema.json#/$defs/IdRef"
     },
     "strand_counts": {
       "type": "object",
       "properties": {
         "fluency": {
           "type": "integer",
-          "enum": [
-            0,
-            3,
-            6
-          ]
+          "minimum": 0
         },
         "language-focused": {
           "type": "integer",
-          "enum": [
-            0,
-            13,
-            17,
-            20,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            30,
-            31,
-            32,
-            33,
-            34,
-            35
-          ]
+          "minimum": 0
         },
         "meaning-input": {
           "type": "integer",
-          "enum": [
-            12
-          ]
+          "minimum": 0
         },
         "meaning-output": {
           "type": "integer",
-          "enum": [
-            0,
-            3
-          ]
+          "minimum": 0
         }
       },
       "required": [
@@ -324,69 +278,19 @@
       "properties": {
         "fluency": {
           "type": "integer",
-          "enum": [
-            0,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18
-          ]
+          "minimum": 0
         },
         "language-focused": {
           "type": "integer",
-          "enum": [
-            0,
-            38,
-            45,
-            49,
-            50,
-            51,
-            52,
-            53,
-            54,
-            55,
-            56,
-            57,
-            58,
-            59,
-            60,
-            61,
-            62
-          ]
+          "minimum": 0
         },
         "meaning-input": {
           "type": "integer",
-          "enum": [
-            100,
-            21,
-            22,
-            23,
-            24,
-            25,
-            26,
-            27,
-            28,
-            29,
-            32,
-            35,
-            67
-          ]
+          "minimum": 0
         },
         "meaning-output": {
           "type": "integer",
-          "enum": [
-            0,
-            17,
-            5,
-            6,
-            7,
-            8,
-            9
-          ]
+          "minimum": 0
         }
       },
       "required": [

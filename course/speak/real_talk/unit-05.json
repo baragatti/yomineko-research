@@ -4,7 +4,7 @@
   "stage": "speak:real_talk",
   "order": 5,
   "title": {
-    "pt-BR": "Conversa de verdade — parte 5"
+    "pt-BR": "Conversa de verdade, parte 5"
   },
   "say_now": [
     "sent:tatoeba-12776411",
@@ -26,12 +26,12 @@
     "vocab:1499830"
   ],
   "patterns": [
-    "gram:gp-33",
     "gram:janai-dewa-nai",
     "gram:mitai-da",
     "gram:rashii",
     "gram:to-iu",
-    "gram:tokoro"
+    "gram:tokoro",
+    "gram:gp-12"
   ],
   "kanji_recognition": [
     "絵",
@@ -54,59 +54,8 @@
   "cumulative_known_vocab": 578,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:5450:1591",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "料金",
-        "動く",
-        "寝る"
-      ]
-    },
-    {
-      "id": "cf:n3:5503:2178",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "持つ",
-        "週間",
-        "到着"
-      ]
-    },
-    {
-      "id": "kr:n3:1393",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いっしょ",
-        "だんせい",
-        "おくれる"
-      ]
-    },
-    {
-      "id": "kr:n3:1591",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "シャワー",
-        "パソコン",
-        "しつもん"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
-    {
-      "pattern": "gram:gp-33",
-      "examples": [
-        "sent:gen-c8e36c94f4e2",
-        "sent:tatoeba-144679",
-        "sent:tatoeba-536769"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:janai-dewa-nai",
       "examples": [
@@ -151,6 +100,15 @@
         "sent:tatoeba-84696"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
@@ -158,6 +116,8 @@
       "prompt_pt": "Dizer que a neve é azul é um erro.",
       "answer_key": "雪が青いというのは誤りだ。",
       "accepted_variants": [
+        "ゆきがあおいというのわあやまりだ",
+        "ゆきがあおいというのわあやまりだ。",
         "雪が青いというのは誤りだ",
         "雪が青いというのは誤りだ。"
       ],
@@ -168,6 +128,8 @@
       "prompt_pt": "Como é o sabor do especial?",
       "answer_key": "スペシャルというのはどんな味ですか。",
       "accepted_variants": [
+        "すぺしゃるというのわどんなあじですか",
+        "すぺしゃるというのわどんなあじですか。",
         "スペシャルというのはどんな味ですか",
         "スペシャルというのはどんな味ですか。"
       ],
@@ -178,6 +140,8 @@
       "prompt_pt": "Não é que o caso tenha acabado.",
       "answer_key": "事件は終わったわけではない。",
       "accepted_variants": [
+        "じけんわおわったわけでわない",
+        "じけんわおわったわけでわない。",
         "事件は終わったわけではない",
         "事件は終わったわけではない。"
       ],
@@ -200,15 +164,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:5450:1591",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "料金",
+        "動く",
+        "寝る"
+      ]
+    },
+    {
+      "id": "cf:n3:5503:2178",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "持つ",
+        "週間",
+        "到着"
+      ]
+    },
+    {
+      "id": "kr:n3:1393",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いっしょ",
+        "だんせい",
+        "おくれる"
+      ]
+    },
+    {
+      "id": "kr:n3:1591",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "シャワー",
+        "パソコン",
+        "しつもん"
+      ]
+    }
+  ]
 }

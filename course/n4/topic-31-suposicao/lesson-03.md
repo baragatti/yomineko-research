@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-76, mitai-da, mitai-na, mitai-ni] · vocabulário [似る, 光, 様, 笑う, 褒める] · kanji [色 赤 青 黒] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-7ec782cb2980`, `sent:tatoeba-774692`, `sent:tatoeba-9846192`, `sent:tatoeba-4216208`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-774692`, `sent:gen-7ec782cb2980`, `sent:tatoeba-9846192`, `sent:tatoeba-4216208`
 
 ---
 
@@ -73,28 +73,28 @@ Mais alguns vocábulos que combinam bem com comparações:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Você olha pro cachorro caído no canto e quer dizer 'o cachorro parece estar doente' de forma casual. Qual frase encaixa?"}
+### 1. (recognition) Você olha pro cachorro caído no canto e quer dizer 'o cachorro parece estar doente' de forma casual. Qual frase encaixa?
 - **Resposta:** `{"choices": ["犬は病気みたい。", "犬は病気な人だ。", "犬は病気を見る。"], "correct": "犬は病気みたい。"}`
-- {'pt-BR': "みたい(だ) gruda direto no substantivo 病気 e expressa uma suposição informal baseada no que você vê: 'parece estar doente'. Na fala casual o だ costuma cair."}
+- みたい(だ) gruda direto no substantivo 病気 e expressa uma suposição informal baseada no que você vê: 'parece estar doente'. Na fala casual o だ costuma cair.
 - frases: `sent:tatoeba-774692`
 
-### 2. (particle_choice) {'pt-BR': 'Complete com な ou に: 夢みたい＿話だね。 (É uma história que parece um sonho, né?); depois vem o substantivo 話.'}
+### 2. (particle_choice) Complete com な ou に: 夢みたい＿話だね。 (É uma história que parece um sonho, né?); depois vem o substantivo 話.
 - **Resposta:** `{"choices": ["な", "に", "だ"], "correct": "な"}`
-- {'pt-BR': "Antes de um substantivo (話 = 'história'), usa-se みたいな. O な aparece porque みたい qualifica o nome seguinte, igual aos adjetivos-な."}
+- Antes de um substantivo (話 = 'história'), usa-se みたいな. O な aparece porque みたい qualifica o nome seguinte, igual aos adjetivos-な.
 - frases: `sent:gen-7ec782cb2980`
 
-### 3. (particle_choice) {'pt-BR': 'Complete com な ou に: 君みたい＿強ければなあ。 (Ah, se eu fosse forte como você...); depois vem o adjetivo 強い.'}
+### 3. (particle_choice) Complete com な ou に: 君みたい＿強ければなあ。 (Ah, se eu fosse forte como você...); depois vem o adjetivo 強い.
 - **Resposta:** `{"choices": ["に", "な", "の"], "correct": "に"}`
-- {'pt-BR': "Antes de verbo ou adjetivo (強い = 'forte'), usa-se みたいに, que descreve o MODO: 'forte como você'. A escolha な/に depende da palavra seguinte, não do sentido."}
+- Antes de verbo ou adjetivo (強い = 'forte'), usa-se みたいに, que descreve o MODO: 'forte como você'. A escolha な/に depende da palavra seguinte, não do sentido.
 - frases: `sent:tatoeba-9846192`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Quero voar feito pássaro.' com as peças: [飛びたい] [鳥] [みたいに]"}
+### 4. (sentence_build) Monte 'Quero voar feito pássaro.' com as peças: [飛びたい] [鳥] [みたいに]
 - **Resposta:** `{"order": ["鳥", "みたいに", "飛びたい"], "text": "鳥みたいに飛びたい。"}`
-- {'pt-BR': '鳥 (pássaro) + みたいに (como/feito, porque modifica o verbo) + 飛びたい (quero voar). みたいに vem antes de verbo para indicar o modo da ação.'}
+- 鳥 (pássaro) + みたいに (como/feito, porque modifica o verbo) + 飛びたい (quero voar). みたいに vem antes de verbo para indicar o modo da ação.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês, de forma casual, 'Parece que choveu.' usando 雨 (chuva), 降った (choveu, passado) e みたい."}
+### 5. (production) Diga em japonês, de forma casual, 'Parece que choveu.' usando 雨 (chuva), 降った (choveu, passado) e みたい.
 - **Resposta:** `{"text": "雨が降ったみたい。", "accept": ["雨が降ったみたい", "雨が降ったみたいだ", "あめがふったみたい", "雨が降ったみたいだ。", "雨が降ったみたい。"]}`
-- {'pt-BR': "降った (forma passada do verbo) + みたい(だ) = suposição informal: 'parece que choveu'. みたい gruda direto na forma simples do verbo; na fala casual o だ pode cair."}
+- 降った (forma passada do verbo) + みたい(だ) = suposição informal: 'parece que choveu'. みたい gruda direto na forma simples do verbo; na fala casual o だ pode cair.
 
 

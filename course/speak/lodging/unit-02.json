@@ -4,7 +4,7 @@
   "stage": "speak:lodging",
   "order": 2,
   "title": {
-    "pt-BR": "Dormir e resolver problemas — parte 2"
+    "pt-BR": "Dormir e resolver problemas, parte 2"
   },
   "say_now": [
     "sent:tatoeba-84171",
@@ -54,48 +54,6 @@
   "cumulative_known_vocab": 216,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n5:2348:548",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "あっ",
-        "空気",
-        "電気"
-      ]
-    },
-    {
-      "id": "cf:n5:3007:548",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "言う",
-        "着く",
-        "学校"
-      ]
-    },
-    {
-      "id": "kr:n5:16",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ところ",
-        "すすむ",
-        "よやく"
-      ]
-    },
-    {
-      "id": "kr:n5:256",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "わたし",
-        "あした",
-        "ようい"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -158,6 +116,8 @@
       "prompt_pt": "A luz do quarto não acende.",
       "answer_key": "部屋の電気がつかない。",
       "accepted_variants": [
+        "へやのでんきがつかない",
+        "へやのでんきがつかない。",
         "部屋の電気がつかない",
         "部屋の電気がつかない。"
       ],
@@ -168,6 +128,8 @@
       "prompt_pt": "Não tem nenhum móvel no quarto.",
       "answer_key": "部屋には家具がない。",
       "accepted_variants": [
+        "へやにわかぐがない",
+        "へやにわかぐがない。",
         "部屋には家具がない",
         "部屋には家具がない。"
       ],
@@ -178,6 +140,8 @@
       "prompt_pt": "Estava escuro dentro do quarto.",
       "answer_key": "部屋の中は暗かった。",
       "accepted_variants": [
+        "へやのなかわくらかった",
+        "へやのなかわくらかった。",
         "部屋の中は暗かった",
         "部屋の中は暗かった。"
       ],
@@ -200,15 +164,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n5:2348:548",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "あっ",
+        "空気",
+        "電気"
+      ]
+    },
+    {
+      "id": "cf:n5:3007:548",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "言う",
+        "着く",
+        "学校"
+      ]
+    },
+    {
+      "id": "kr:n5:16",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ところ",
+        "すすむ",
+        "よやく"
+      ]
+    },
+    {
+      "id": "kr:n5:256",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "わたし",
+        "あした",
+        "ようい"
+      ]
+    }
+  ]
 }

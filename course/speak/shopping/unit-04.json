@@ -4,7 +4,7 @@
   "stage": "speak:shopping",
   "order": 4,
   "title": {
-    "pt-BR": "Isto, aquilo, quanto custa — parte 4"
+    "pt-BR": "Isto, aquilo, quanto custa, parte 4"
   },
   "say_now": [
     "sent:tatoeba-8687007",
@@ -41,6 +41,79 @@
   "cumulative_known_vocab": 61,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-51",
+    "gram:gp-50",
+    "gram:naku-temo-ii",
+    "gram:hou-ga-ii",
+    "gram:gp-71",
+    "gram:gp-134"
+  ],
+  "drills": [],
+  "production": [
+    {
+      "prompt_pt": "Nós pretendemos tornar isso público.",
+      "answer_key": "私たちはそれを公にしようと思う。",
+      "accepted_variants": [
+        "わたしたちわそれをおおやけにしようとおもう",
+        "わたしたちわそれをおおやけにしようとおもう。",
+        "私たちはそれを公にしようと思う",
+        "私たちはそれを公にしようと思う。"
+      ],
+      "sentence": "sent:tatoeba-166326",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu acho que devíamos baixar o preço.",
+      "answer_key": "値段を下げるべきだと思います。",
+      "accepted_variants": [
+        "ねだんをさげるべきだとおもいます",
+        "ねだんをさげるべきだとおもいます。",
+        "値段を下げるべきだと思います",
+        "値段を下げるべきだと思います。"
+      ],
+      "sentence": "sent:tatoeba-2123447",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Acho que isso e isto são coisas separadas.",
+      "answer_key": "それとこれとは別だと思うよ。",
+      "accepted_variants": [
+        "それとこれとは別だと思うよ",
+        "それとこれとは別だと思うよ。",
+        "それとこれとわべつだとおもうよ",
+        "それとこれとわべつだとおもうよ。"
+      ],
+      "sentence": "sent:tatoeba-10307857",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-160737",
+      "sent:tatoeba-76098",
+      "sent:tatoeba-205771",
+      "sent:tatoeba-229178",
+      "sent:tatoeba-79848",
+      "sent:tatoeba-8938683"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 43,
+    "meaning-output": 11,
+    "language-focused": 25,
+    "fluency": 21
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 7,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:56",
@@ -92,72 +165,5 @@
         "あう"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-51",
-    "gram:gp-50",
-    "gram:naku-temo-ii",
-    "gram:hou-ga-ii",
-    "gram:gp-71",
-    "gram:gp-134"
-  ],
-  "drills": [],
-  "production": [
-    {
-      "prompt_pt": "Nós pretendemos tornar isso público.",
-      "answer_key": "私たちはそれを公にしようと思う。",
-      "accepted_variants": [
-        "私たちはそれを公にしようと思う",
-        "私たちはそれを公にしようと思う。"
-      ],
-      "sentence": "sent:tatoeba-166326",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu acho que devíamos baixar o preço.",
-      "answer_key": "値段を下げるべきだと思います。",
-      "accepted_variants": [
-        "値段を下げるべきだと思います",
-        "値段を下げるべきだと思います。"
-      ],
-      "sentence": "sent:tatoeba-2123447",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Acho que isso e isto são coisas separadas.",
-      "answer_key": "それとこれとは別だと思うよ。",
-      "accepted_variants": [
-        "それとこれとは別だと思うよ",
-        "それとこれとは別だと思うよ。"
-      ],
-      "sentence": "sent:tatoeba-10307857",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
-    "items": [
-      "sent:tatoeba-160737",
-      "sent:tatoeba-76098",
-      "sent:tatoeba-205771",
-      "sent:tatoeba-229178",
-      "sent:tatoeba-79848",
-      "sent:tatoeba-8938683"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 35,
-    "meaning-output": 9,
-    "language-focused": 38,
-    "fluency": 18
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 13,
-    "fluency": 6
-  }
+  ]
 }

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-to-iu-no, n3-wake-da] · vocabulário [カー, カード, 会員, 会計, 可, 害, 恩, 海外, 温度, 温暖, 絵画, 解決, 課] · kanji [両 容 式 打 果 直 確] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-220804`, `sent:tatoeba-123542`
 
 ---
 
@@ -22,7 +22,7 @@ O n3-to-iu-no apresenta a razão de uma situação como um fato que justifica o 
 - Substantivo / adjetivo-na: + だ + というのだ.
 
 > **[warning]**
-Não confunda というのだ com というのは. Este último define um termo ("X quer dizer..."), enquanto というのだjustifica um motivo. A partícula final muda tudo: のは define, のだ explica.
+Não confunda というのだ com というのは. Este último define um termo ("X quer dizer..."), enquanto というのだ justifica um motivo. A partícula final muda tudo: のは define, のだ explica.
 
 #### ～わけだ: ou seja, é por isso que
 O n3-wake-da apresenta uma conclusão lógica que era de se esperar a partir de uma informação dada. Traduz bem como "ou seja", "então é por isso que" ou "com razão" (no sentido de "agora faz sentido"). O falante conecta os pontos: dado A, conclui-se B.
@@ -61,28 +61,28 @@ Armadilha PT: os empréstimos カー e カード têm vogais de duração inteir
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual estrutura expressa uma CONCLUSÃO LÓGICA ('ou seja, é por isso que')?"}
+### 1. (recognition) Qual estrutura expressa uma CONCLUSÃO LÓGICA ('ou seja, é por isso que')?
 - **Resposta:** `{"choices": ["～わけだ", "～というのだ", "～せいで"], "correct": "～わけだ"}`
-- {'pt-BR': '～わけだ conecta os pontos e anuncia a conclusão esperada. ～というのだ justifica um motivo; ～せいで joga a culpa por algo ruim.'}
+- ～わけだ conecta os pontos e anuncia a conclusão esperada. ～というのだ justifica um motivo; ～せいで joga a culpa por algo ruim.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete a conclusão lógica: 北だから寒い＿＿＿。 (É o norte, então faz sentido que seja frio.)'}
+### 2. (particle_choice) Complete a conclusão lógica: 北だから寒い＿＿＿。 (É o norte, então faz sentido que seja frio.)
 - **Resposta:** `{"choices": ["わけだ", "というのだ", "おかげで"], "correct": "わけだ"}`
-- {'pt-BR': "Depois de だから, a conclusão natural fecha com わけだ: '...então faz sentido que seja frio'."}
+- Depois de だから, a conclusão natural fecha com わけだ: '...então faz sentido que seja frio'.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a estrutura que JUSTIFICA o motivo: どうして来ないの？急に仕事が入った＿＿＿＿＿＿。 (Por que não vem? Acontece que surgiu trabalho de repente.)'}
+### 3. (cloze) Complete com a estrutura que JUSTIFICA o motivo: どうして来ないの？急に仕事が入った＿＿＿＿＿＿。 (Por que não vem? Acontece que surgiu trabalho de repente.)
 - **Resposta:** `{"text": "というのだ", "full": "急に仕事が入ったというのだ。"}`
-- {'pt-BR': "～というのだ apresenta a razão como um fato que justifica a situação, tipicamente respondendo a um 'por quê'."}
+- ～というのだ apresenta a razão como um fato que justifica a situação, tipicamente respondendo a um 'por quê'.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada estrutura ao seu uso.'}
+### 4. (matching) Associe cada estrutura ao seu uso.
 - **Resposta:** `{"pairs": [["というのだ", "justifica um motivo (é que...)"], ["というのは", "define um termo (quer dizer...)"], ["わけだ", "conclusão lógica (ou seja...)"]]}`
-- {'pt-BR': 'のは define, のだ explica/justifica, e わけだ tira a conclusão natural. A partícula final muda o sentido.'}
+- のは define, のだ explica/justifica, e わけだ tira a conclusão natural. A partícula final muda o sentido.
 
 
-### 5. (production) {'pt-BR': "Você descobre que seu amigo morou 10 anos no Japão. Comente com surpresa lógica: 'Ah, é por isso que o japonês dele é tão bom.' (use ～わけだ; ser bom em = 上手 じょうず)"}
+### 5. (production) Você descobre que seu amigo morou 10 anos no Japão. Comente com surpresa lógica: 'Ah, é por isso que o japonês dele é tão bom.' (use ～わけだ; ser bom em = 上手 じょうず)
 - **Resposta:** `{"text": "だから日本語が上手なわけだ。", "accept": ["だから日本語が上手なわけだ", "なるほど、だから日本語が上手なわけだ", "日本語が上手なわけだ"]}`
-- {'pt-BR': 'Adjetivo-na (上手) + な + わけだ marca a conclusão lógica que agora faz sentido. だから no começo reforça o encadeamento.'}
+- Adjetivo-na (上手) + な + わけだ marca a conclusão lógica que agora faz sentido. だから no começo reforça o encadeamento.
 
 

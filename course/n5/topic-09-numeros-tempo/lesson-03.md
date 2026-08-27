@@ -48,9 +48,9 @@ Ao pé da letra: "americanos que conseguem falar japonês existem em grande quan
 
 #### Kanji: 人 (pessoa)
 O kanji 人 significa pessoa e tem só 2 traços. Leituras principais: kun'yomi ひと (a palavra solta 人, "pessoa") e on'yomi じん / にん (dentro de palavras compostas). A regra geral é simples: sozinho ele lê ひと; grudado a outras palavras, costuma virar じん ou にん.
-- Sozinho:人 = 人 (pessoa).
-- Com じん:アメリカ人 = americano (pessoa dos EUA).
-- Com にん:三人 = três pessoas.
+- Sozinho: 人 = 人 (pessoa).
+- Com じん: アメリカ人 = americano (pessoa dos EUA).
+- Com にん: 三人 = três pessoas.
 
 > **[tip]**
 Mnemônico de forma: 人 parece duas perninhas, uma apoiando a outra, como alguém caminhando de lado. Duas pernas, uma pessoa. É o mesmo símbolo que você vê no fim de アメリカ人 da frase de cima.
@@ -67,28 +67,28 @@ Mnemônico de forma: 人 parece duas perninhas, uma apoiando a outra, como algu�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'muito/muitos' no sentido de QUANTIDADE (número grande de coisas ou pessoas)?"}
+### 1. (recognition) Qual palavra significa 'muito/muitos' no sentido de QUANTIDADE (número grande de coisas ou pessoas)?
 - **Resposta:** `{"choices": ["たくさん", "とても", "あまり"], "correct": "たくさん"}`
-- {'pt-BR': "たくさん indica QUANTIDADE (muitas pessoas, muitos livros). とても é para INTENSIDADE ('muito bonito'), uma ideia diferente."}
+- たくさん indica QUANTIDADE (muitas pessoas, muitos livros). とても é para INTENSIDADE ('muito bonito'), uma ideia diferente.
 
 
-### 2. (recognition) {'pt-BR': "Como se lê o kanji 人 quando está sozinho e significa 'pessoa'?"}
+### 2. (recognition) Como se lê o kanji 人 quando está sozinho e significa 'pessoa'?
 - **Resposta:** `{"choices": ["ひと", "じん", "き"], "correct": "ひと"}`
-- {'pt-BR': "Sozinho, 人 usa a leitura kun'yomi ひと (pessoa). As leituras じん/にん aparecem dentro de palavras compostas, como アメリカ人 (americano)."}
+- Sozinho, 人 usa a leitura kun'yomi ひと (pessoa). As leituras じん/にん aparecem dentro de palavras compostas, como アメリカ人 (americano).
 
 
-### 3. (cloze) {'pt-BR': 'Complete com o advérbio de quantidade: 子供が＿いる。 (Há muitas crianças.)'}
+### 3. (cloze) Complete com o advérbio de quantidade: 子供が＿いる。 (Há muitas crianças.)
 - **Resposta:** `{"text": "たくさん", "full": "子供がたくさんいる"}`
-- {'pt-BR': "たくさん ('muitos', quantidade) vem antes do verbo いる ('existir' para seres vivos). 子供 = criança(s)."}
+- たくさん ('muitos', quantidade) vem antes do verbo いる ('existir' para seres vivos). 子供 = criança(s).
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Há muitos alunos.' com as peças: [いる] [生徒] [たくさん] [が]"}
+### 4. (sentence_build) Monte 'Há muitos alunos.' com as peças: [いる] [生徒] [たくさん] [が]
 - **Resposta:** `{"order": ["生徒", "が", "たくさん", "いる"], "text": "生徒がたくさんいる。"}`
-- {'pt-BR': '生徒 (aluno) + が (partícula) + たくさん (muitos) + いる (existir). O たくさん fica antes do verbo, medindo o NÚMERO de alunos.'}
+- 生徒 (aluno) + が (partícula) + たくさん (muitos) + いる (existir). O たくさん fica antes do verbo, medindo o NÚMERO de alunos.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Há muitas pessoas.' usando 人 (pessoa), o advérbio de quantidade e o verbo いる."}
+### 5. (production) Diga em japonês 'Há muitas pessoas.' usando 人 (pessoa), o advérbio de quantidade e o verbo いる.
 - **Resposta:** `{"text": "人がたくさんいる。", "accept": ["人がたくさんいる", "ひとがたくさんいる", "人がたくさんいます", "ひとがたくさんいます"]}`
-- {'pt-BR': '人 (pessoa) + が + たくさん (muitas) + いる/います (existir). Use たくさん (quantidade), não とても, porque está contando pessoas.'}
+- 人 (pessoa) + が + たくさん (muitas) + いる/います (existir). Use たくさん (quantidade), não とても, porque está contando pessoas.
 
 

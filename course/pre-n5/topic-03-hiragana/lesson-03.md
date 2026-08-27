@@ -46,23 +46,23 @@ Usando o que você já aprendeu, leia estas palavrinhas em voz alta:あさ(asa, 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual hiragana representa o som 'shi'?"}
+### 1. (recognition) Qual hiragana representa o som 'shi'?
 - **Resposta:** `{"choices": ["し", "さ", "す"], "correct": "し"}`
-- {'pt-BR': "し = shi (como o 'chi' de 'chiclete'), nunca 'si'."}
+- し = shi (como o 'chi' de 'chiclete'), nunca 'si'.
 
 
-### 2. (recognition) {'pt-BR': 'Que som tem そ?'}
+### 2. (recognition) Que som tem そ?
 - **Resposta:** `{"choices": ["so", "su", "sa"], "correct": "so"}`
-- {'pt-BR': "そ = so (som cheio, nunca 'su')."}
+- そ = so (som cheio, nunca 'su').
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada hiragana ao seu som.'}
+### 3. (matching) Ligue cada hiragana ao seu som.
 - **Resposta:** `{"pairs": [["さ", "sa"], ["し", "shi"], ["す", "su"], ["せ", "se"], ["そ", "so"]]}`
-- {'pt-BR': "Os cinco kana da Família do SA. Note que し = shi, não 'si'."}
+- Os cinco kana da Família do SA. Note que し = shi, não 'si'.
 
 
-### 4. (production) {'pt-BR': "Escreva o hiragana do som 'su'."}
+### 4. (production) Escreva o hiragana do som 'su'.
 - **Resposta:** `{"text": "す", "accept": ["す"]}`
-- {'pt-BR': "'su' = す."}
+- 'su' = す.
 
 

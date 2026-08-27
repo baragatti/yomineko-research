@@ -4,7 +4,7 @@
   "stage": "speak:past_stories",
   "order": 4,
   "title": {
-    "pt-BR": "Contar o que aconteceu — parte 4"
+    "pt-BR": "Contar o que aconteceu, parte 4"
   },
   "say_now": [
     "sent:tatoeba-11706794",
@@ -27,12 +27,12 @@
     "vocab:1597150"
   ],
   "patterns": [
-    "gram:n3-dakedo",
     "gram:gp-25",
     "gram:gp-32",
     "gram:totemo",
     "gram:koto",
-    "gram:temo"
+    "gram:temo",
+    "gram:wa-yori-desu"
   ],
   "kanji_recognition": [
     "吸",
@@ -55,6 +55,123 @@
   "cumulative_known_vocab": 441,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:gp-25",
+      "examples": [
+        "sent:tatoeba-229345",
+        "sent:tatoeba-8575514",
+        "sent:tatoeba-8575496"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-85319",
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:gen-25da035589e0",
+        "sent:gen-2b1fccae756f",
+        "sent:tatoeba-5074"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:tatoeba-78150",
+        "sent:gen-a1d5b47d31e9"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-90ed9f56e125",
+        "sent:gen-e97b8aeb1456"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Por favor, tenha uma refeição maravilhosa.",
+      "answer_key": "すばらしい食事を経験下さい。",
+      "accepted_variants": [
+        "すばらしいしょくじをけいけんください",
+        "すばらしいしょくじをけいけんください。",
+        "すばらしい食事を経験下さい",
+        "すばらしい食事を経験下さい。"
+      ],
+      "sentence": "sent:tatoeba-214558",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "No fim das contas, é a experiência que faz a diferença.",
+      "answer_key": "やはり経験がものを言います",
+      "accepted_variants": [
+        "やはりけいけんがものをいいます",
+        "やはり経験がものを言います"
+      ],
+      "sentence": "sent:jec-0319",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Todo mundo passa por isso.",
+      "answer_key": "誰もが経験をする",
+      "accepted_variants": [
+        "だれもがけいけんをする",
+        "誰もが経験をする"
+      ],
+      "sentence": "sent:jec-0071",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-5118",
+      "sent:tatoeba-78134",
+      "sent:tatoeba-171398",
+      "sent:tatoeba-78158",
+      "sent:tatoeba-13537670",
+      "sent:tatoeba-143986"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:822",
@@ -101,118 +218,5 @@
         "次"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:n3-dakedo",
-      "examples": [
-        "sent:tatoeba-3366905",
-        "sent:tatoeba-8575497",
-        "sent:tatoeba-171648"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-25",
-      "examples": [
-        "sent:tatoeba-229345",
-        "sent:tatoeba-8575514",
-        "sent:tatoeba-8575496"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-78700",
-        "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:totemo",
-      "examples": [
-        "sent:gen-25da035589e0",
-        "sent:gen-2b1fccae756f",
-        "sent:tatoeba-5074"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:tatoeba-78150",
-        "sent:gen-a1d5b47d31e9"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Por favor, tenha uma refeição maravilhosa.",
-      "answer_key": "すばらしい食事を経験下さい。",
-      "accepted_variants": [
-        "すばらしい食事を経験下さい",
-        "すばらしい食事を経験下さい。"
-      ],
-      "sentence": "sent:tatoeba-214558",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "No fim das contas, é a experiência que faz a diferença.",
-      "answer_key": "やはり経験がものを言います",
-      "accepted_variants": [
-        "やはり経験がものを言います"
-      ],
-      "sentence": "sent:jec-0319",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Todo mundo passa por isso.",
-      "answer_key": "誰もが経験をする",
-      "accepted_variants": [
-        "誰もが経験をする"
-      ],
-      "sentence": "sent:jec-0071",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
-    "items": [
-      "sent:tatoeba-5118",
-      "sent:tatoeba-78134",
-      "sent:tatoeba-171398",
-      "sent:tatoeba-78158",
-      "sent:tatoeba-13537670",
-      "sent:tatoeba-143986"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 31,
-    "fluency": 6
-  }
+  ]
 }

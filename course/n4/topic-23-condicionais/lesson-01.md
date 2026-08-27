@@ -8,7 +8,7 @@
 - Montar frases A→B do cotidiano: condição com たら na primeira oração, resultado na segunda
 - Reconhecer os kanji 体 (corpo) e 力 (força)
 
-**Introduz:** gramática [gp-60, tara] · vocabulário [だから, 力, 寄る, 思う, 残念, 決まる] · kanji [体] · kana [—]
+**Introduz:** gramática [gp-60, tara] · vocabulário [だから, 力, 寄る, 思う, 残念, 決まる, 開く] · kanji [体] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-5d330e502fe3`, `sent:gen-54d978e882ca`, `sent:gen-4f79637ba175`, `sent:tatoeba-4713`
 
@@ -29,7 +29,7 @@ Repare: a forma é a mesma para "se" e para "quando". Em português você escolh
 #### たら = "se" (hipótese)
 Quando a condição é incerta, algo que pode ou não acontecer, たら vira o nosso "se". Veja a frase mais clássica do condicional:
 > 🗣 雨が降ったら出かけない — Se chover, não vou sair.
-Ao pé da letra: "雨 (chuva) が降ったら (se cair), 出かけない (não saio)". A chuva é incerta, então é "se". A condição (降ったら) vem primeiro; o resultado (não sair), depois.
+Ao pé da letra: "雨 (chuva) が 降ったら (se cair), 出かけない (não saio)". A chuva é incerta, então é "se". A condição (降ったら) vem primeiro; o resultado (não sair), depois.
 
 > **[tip]**
 Muita gente coloca だから ("por isso, portanto") para emendar o motivo numa frase seguinte, mas com たら a relação de causa já está embutida: a condição leva ao resultado sem precisar de palavra extra.
@@ -37,12 +37,12 @@ Muita gente coloca だから ("por isso, portanto") para emendar o motivo numa f
 #### たら = "quando / depois que" (sequência no tempo)
 Quando a condição é algo que vai acontecer com certeza, só não aconteceu ainda, たら vira "quando" ou "depois que".
 > 🗣 宿題が終わったら遊べる — Quando eu terminar a lição de casa, posso brincar.
-"宿題 (lição de casa) が終わったら (quando terminar), 遊べる (posso brincar)." A lição vai terminar; é só questão de tempo. Por isso é "quando", não "se".
+"宿題 (lição de casa) が 終わったら (quando terminar), 遊べる (posso brincar)." A lição vai terminar; é só questão de tempo. Por isso é "quando", não "se".
 > 🗣 駅に着いたらメールして — Quando chegar na estação, me manda uma mensagem.
-"駅 (estação) に着いたら (quando chegar), メールして (me manda mensagem)." Aqui o resultado é um pedido. たら combina muito bem com pedidos e ordens na segunda oração.
+"駅 (estação) に 着いたら (quando chegar), メールして (me manda mensagem)." Aqui o resultado é um pedido. たら combina muito bem com pedidos e ordens na segunda oração.
 
 > **[l1-pitfall]**
-A ordem é fixa: condição com たらprimeiro, resultado depois. Não dá para inverter como em português ("não vou sair se chover"). Em japonês é sempre 降ったら → 出かけない, nessa sequência.
+A ordem é fixa: condição com たら primeiro, resultado depois. Não dá para inverter como em português ("não vou sair se chover"). Em japonês é sempre 降ったら → 出かけない, nessa sequência.
 
 #### Mais alguns verbos úteis com たら
 - 決まる (ser decidido) → 決まったら ("quando ficar decidido").
@@ -74,28 +74,28 @@ Dois kanji simples e muito frequentes entram aqui, um deles direto do vocabulár
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Como se forma 〜たら a partir do verbo 降る (chover)?'}
+### 1. (recognition) Como se forma 〜たら a partir do verbo 降る (chover)?
 - **Resposta:** `{"choices": ["Pega a forma de passado casual 降った e acrescenta ら → 降ったら", "Pega a forma de dicionário 降る e acrescenta ら → 降るら", "Pega a forma polida 降ります e acrescenta ら → 降りますら"], "correct": "Pega a forma de passado casual 降った e acrescenta ら → 降ったら"}`
-- {'pt-BR': '〜たら é simplesmente a forma de passado casual (た) + ら. 降る → 降った → 降ったら. Por isso não há regra nova: se você já sabe o passado casual, já sabe formar o たら.'}
+- 〜たら é simplesmente a forma de passado casual (た) + ら. 降る → 降った → 降ったら. Por isso não há regra nova: se você já sabe o passado casual, já sabe formar o たら.
 
 
-### 2. (cloze) {'pt-BR': 'Complete a condicional: 宿題が終わっ＿、遊べる。 (Quando eu terminar a lição, posso brincar.)'}
+### 2. (cloze) Complete a condicional: 宿題が終わっ＿、遊べる。 (Quando eu terminar a lição, posso brincar.)
 - **Resposta:** `{"text": "たら", "full": "宿題が終わったら、遊べる"}`
-- {'pt-BR': "終わる → passado 終わった → 終わったら ('quando terminar'). Como a lição vai terminar com certeza, o sentido é 'quando', não 'se'. A condição vem antes do resultado."}
+- 終わる → passado 終わった → 終わったら ('quando terminar'). Como a lição vai terminar com certeza, o sentido é 'quando', não 'se'. A condição vem antes do resultado.
 - frases: `sent:gen-54d978e882ca`
 
-### 3. (recognition) {'pt-BR': "Na frase 雨が降ったら出かけない ('Se chover, não vou sair'), 〜たら está com qual sentido?"}
+### 3. (recognition) Na frase 雨が降ったら出かけない ('Se chover, não vou sair'), 〜たら está com qual sentido?
 - **Resposta:** `{"choices": ["'se' (hipótese: a chuva é incerta)", "'quando' (vai acontecer com certeza)", "'porque' (causa já realizada)"], "correct": "'se' (hipótese: a chuva é incerta)"}`
-- {'pt-BR': "A chuva pode ou não acontecer, então 〜たら aqui é 'se' (hipótese). O mesmo たら viraria 'quando' se o evento fosse certo (ex.: 駅に着いたら = 'quando chegar na estação'). Quem decide é o contexto."}
+- A chuva pode ou não acontecer, então 〜たら aqui é 'se' (hipótese). O mesmo たら viraria 'quando' se o evento fosse certo (ex.: 駅に着いたら = 'quando chegar na estação'). Quem decide é o contexto.
 - frases: `sent:gen-5d330e502fe3`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Quando chegar na estação, me manda uma mensagem.' com as peças: [メールして] [駅] [着いたら] [に]"}
+### 4. (sentence_build) Monte 'Quando chegar na estação, me manda uma mensagem.' com as peças: [メールして] [駅] [着いたら] [に]
 - **Resposta:** `{"order": ["駅", "に", "着いたら", "メールして"], "text": "駅に着いたらメールして。"}`
-- {'pt-BR': "Ordem fixa: condição primeiro (駅に着いたら = 'quando chegar na estação'), resultado/pedido depois (メールして = 'me manda mensagem'). 着く → 着いた → 着いたら. たら combina muito bem com pedidos na segunda oração."}
+- Ordem fixa: condição primeiro (駅に着いたら = 'quando chegar na estação'), resultado/pedido depois (メールして = 'me manda mensagem'). 着く → 着いた → 着いたら. たら combina muito bem com pedidos na segunda oração.
 - frases: `sent:gen-4f79637ba175`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Quando eu chegar em casa, ligo na hora.' usando 家 (うち, casa), 帰る (かえる, voltar) na forma たら, e 電話する (telefonar)."}
+### 5. (production) Diga em japonês 'Quando eu chegar em casa, ligo na hora.' usando 家 (うち, casa), 帰る (かえる, voltar) na forma たら, e 電話する (telefonar).
 - **Resposta:** `{"text": "家に帰ったらすぐ電話する。", "accept": ["家に帰ったらすぐ電話する", "うちに帰ったらすぐ電話する", "家に帰ったら電話する", "うちにかえったらすぐ電話する", "家にかえったらすぐ電話する", "うちに帰ったら電話する"]}`
-- {'pt-BR': "帰る → passado 帰った → 帰ったら ('quando voltar'). A condição (家に帰ったら) vem primeiro e o resultado (電話する) depois. すぐ ('na hora') é opcional. Como voltar pra casa é certo, o sentido natural é 'quando', não 'se'."}
+- 帰る → passado 帰った → 帰ったら ('quando voltar'). A condição (家に帰ったら) vem primeiro e o resultado (電話する) depois. すぐ ('na hora') é opcional. Como voltar pra casa é certo, o sentido natural é 'quando', não 'se'.
 
 

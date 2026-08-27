@@ -2,14 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://yomineko.dev/contracts/exam_item.schema.json",
   "title": "exam_item",
-  "description": "One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson.",
+  "description": "One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. The id prefix names the section, and each section has its own required shape.",
   "x-yomineko": {
     "entity": "exam_item",
-    "records": 6166,
+    "records": 6073,
     "packing": "list",
-    "glob": "corpus/exam_banks/*.json",
+    "glob": "corpus/exam_banks/n[0-9]_*.json",
     "stable_id_field": "id",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -21,9 +22,8 @@
     },
     "audio": {
       "type": "string",
-      "enum": [
-        "pending"
-      ]
+      "pattern": "^(pending|[A-Za-z0-9_./-]+\\.(mp3|m4a|ogg|wav|opus))$",
+      "description": "The audio asset, or the literal `pending` while the TTS pipeline (design/listening.md) has not produced it yet. The first real filename must not fail the build."
     },
     "correct": {
       "type": "string"
@@ -32,7 +32,9 @@
       "type": "array",
       "items": {
         "type": "string"
-      }
+      },
+      "minItems": 2,
+      "uniqueItems": true
     },
     "grammar": {
       "type": "string"
@@ -74,7 +76,12 @@
               "M1",
               "M2",
               "N"
-            ]
+            ],
+            "description": "Locale-neutral speaker slot the TTS pipeline maps to a voice. Vocabulary owner: design — design/listening.md (speaker registry — dialogue voices plus narrator). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/listening.md (speaker registry — dialogue voices plus narrator)"
+            }
           },
           "text": {
             "type": "string"
@@ -95,8 +102,12 @@
     "target": {
       "type": "string"
     },
+    "vocab": {
+      "type": "string"
+    },
     "vocab_id": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "wrong": {
       "type": "array",
@@ -107,7 +118,233 @@
   },
   "additionalProperties": false,
   "required": [
+    "ai_generated",
     "id",
-    "level"
+    "layer",
+    "level",
+    "needs_review"
+  ],
+  "allOf": [
+    {
+      "title": "known section",
+      "description": "Every item's id names one of the declared exam sections. A typo'd prefix would otherwise match no branch and be validated by the envelope alone.",
+      "properties": {
+        "id": {
+          "pattern": "^(cf|gf|kr|lg|lp|lr|ls|lt|or|pp|rc|so|tg|us):"
+        }
+      }
+    },
+    {
+      "title": "word-level multiple choice",
+      "description": "kanji_reading / orthography: a word in isolation, four options. Applies to ids prefixed kr, or (2400 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^(kr|or):"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "ai_generated",
+          "correct",
+          "distractors",
+          "id",
+          "layer",
+          "level",
+          "needs_review",
+          "source",
+          "stem",
+          "vocab",
+          "vocab_id"
+        ]
+      }
+    },
+    {
+      "title": "multiple choice inside a sentence",
+      "description": "context_fill / grammar_form: the gap sits in a real corpus sentence. Applies to ids prefixed cf, gf (1720 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^(cf|gf):"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "ai_generated",
+          "correct",
+          "distractors",
+          "id",
+          "layer",
+          "level",
+          "needs_review",
+          "sentence",
+          "source",
+          "stem"
+        ]
+      }
+    },
+    {
+      "title": "ordering",
+      "description": "sentence_order: the learner rebuilds the sentence from shuffled pieces. Applies to ids prefixed so (873 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^(so):"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "ai_generated",
+          "answer",
+          "id",
+          "layer",
+          "level",
+          "needs_review",
+          "pieces",
+          "sentence",
+          "source"
+        ]
+      }
+    },
+    {
+      "title": "passage multiple choice",
+      "description": "text_grammar / reading_comp: the item hangs off a reading passage, and the prompt is carried by `stem` or by `question` depending on the section. Applies to ids prefixed tg, rc (475 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^(tg|rc):"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "ai_generated",
+          "correct",
+          "distractors",
+          "id",
+          "layer",
+          "level",
+          "needs_review",
+          "reading",
+          "source"
+        ],
+        "anyOf": [
+          {
+            "required": [
+              "stem"
+            ]
+          },
+          {
+            "required": [
+              "question"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "paraphrase",
+      "description": "paraphrase: pick the sentence that means the same thing. Applies to ids prefixed pp (183 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^(pp):"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "ai_generated",
+          "correct",
+          "distractors",
+          "id",
+          "layer",
+          "level",
+          "needs_review",
+          "sentence",
+          "source",
+          "stem",
+          "target",
+          "vocab",
+          "vocab_id"
+        ]
+      }
+    },
+    {
+      "title": "usage",
+      "description": "usage: pick the sentence that uses the target word correctly. Applies to ids prefixed us (183 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^(us):"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "ai_generated",
+          "correct",
+          "id",
+          "layer",
+          "level",
+          "needs_review",
+          "sentence",
+          "source",
+          "target",
+          "vocab",
+          "vocab_id",
+          "wrong"
+        ]
+      }
+    },
+    {
+      "title": "listening",
+      "description": "the five listening sections: a spoken script, its audio, and options. Applies to ids prefixed lt, lp, ls, lr, lg (239 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "if": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "pattern": "^(lt|lp|ls|lr|lg):"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "ai_generated",
+          "audio",
+          "correct",
+          "distractors",
+          "id",
+          "layer",
+          "level",
+          "needs_review",
+          "question",
+          "script"
+        ]
+      }
+    }
   ]
 }

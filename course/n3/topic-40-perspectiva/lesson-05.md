@@ -85,28 +85,28 @@ Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa �
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é o significado de 出会う (であう)?'}
+### 1. (recognition) Qual é o significado de 出会う (であう)?
 - **Resposta:** `{"choices": ["entregar um documento", "encontrar por acaso, deparar-se com", "acumular-se, empilhar-se", "ser adequado, convir"], "correct": "encontrar por acaso, deparar-se com"}`
-- {'pt-BR': '出会う (であう) é o verbo "encontrar por acaso, deparar-se com, topar com". O substantivo correspondente é 出会い (であい), o encontro em si. Não confunda com 提出 (entregar), 積もる (acumular-se) nem 適する (ser adequado).'}
+- 出会う (であう) é o verbo "encontrar por acaso, deparar-se com, topar com". O substantivo correspondente é 出会い (であい), o encontro em si. Não confunda com 提出 (entregar), 積もる (acumular-se) nem 適する (ser adequado).
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra japonesa ao seu significado em português.'}
+### 2. (matching) Associe cada palavra japonesa ao seu significado em português.
 - **Resposta:** `{"pairs": [["提案", "proposta, sugestão"], ["提出", "entrega de documentos"], ["定期", "período fixo, prazo determinado"], ["程度", "grau, nível"]]}`
-- {'pt-BR': '提案 (ていあん) é o que você propõe; 提出 (ていしゅつ) é o que você entrega; 定期 (ていき) é o prazo ou período fixo; e 程度 (ていど) é o grau ou nível de algo. As quatro começam com o som てい, então vale memorizá-las juntas.'}
+- 提案 (ていあん) é o que você propõe; 提出 (ていしゅつ) é o que você entrega; 定期 (ていき) é o prazo ou período fixo; e 程度 (ていど) é o grau ou nível de algo. As quatro começam com o som てい, então vale memorizá-las juntas.
 
 
-### 3. (cloze) {'pt-BR': 'Complete: この本は子供に＿＿している。 (Este livro é adequado para crianças.)'}
+### 3. (cloze) Complete: この本は子供に＿＿している。 (Este livro é adequado para crianças.)
 - **Resposta:** `{"text": "適", "full": "この本は子供に適している。"}`
-- {'pt-BR': '適する (てきする) significa "ser adequado, convir". Na forma 適している, ela descreve um estado: "está adequado para crianças". Cuidado para não confundir com 敵 (てき), que é "inimigo".'}
+- 適する (てきする) significa "ser adequado, convir". Na forma 適している, ela descreve um estado: "está adequado para crianças". Cuidado para não confundir com 敵 (てき), que é "inimigo".
 
 
-### 4. (recognition) {'pt-BR': 'Em japonês, como se chama a estação das chuvas, típica do início do verão?'}
+### 4. (recognition) Em japonês, como se chama a estação das chuvas, típica do início do verão?
 - **Resposta:** `{"choices": ["梅雨 (つゆ)", "釣り (つり)", "連れ (つれ)", "程度 (ていど)"], "correct": "梅雨 (つゆ)"}`
-- {'pt-BR': '梅雨 (つゆ) é a estação das chuvas, que no Japão vai do fim de maio a meados de julho. Os outros itens soam parecido, mas significam coisas bem diferentes: 釣り é pescaria, 連れ é acompanhante e 程度 é grau ou nível.'}
+- 梅雨 (つゆ) é a estação das chuvas, que no Japão vai do fim de maio a meados de julho. Os outros itens soam parecido, mas significam coisas bem diferentes: 釣り é pescaria, 連れ é acompanhante e 程度 é grau ou nível.
 
 
-### 5. (production) {'pt-BR': 'Diga em japonês: "Para ele, aquilo foi um acontecimento muito doloroso." (use 出来事 e 辛い)'}
+### 5. (production) Diga em japonês: "Para ele, aquilo foi um acontecimento muito doloroso." (use 出来事 e 辛い)
 - **Resposta:** `{"text": "彼にとってそれはとても辛い出来事だった", "accept": ["彼にとってそれはとても辛い出来事だった", "彼にとってそれはとても辛い出来事でした", "彼にとってそれはとてもつらい出来事だった", "彼にとってそれはとても辛いできごとだった"]}`
-- {'pt-BR': '彼にとって (para ele, do ponto de vista dele) abre a frase reaproveitando ～にとって. Em seguida, それは (aquilo) + とても辛い (muito doloroso) + 出来事 (acontecimento) + だった (foi). A leitura completa é かれにとってそれはとてもつらいできごとだった.'}
+- 彼にとって (para ele, do ponto de vista dele) abre a frase reaproveitando ～にとって. Em seguida, それは (aquilo) + とても辛い (muito doloroso) + 出来事 (acontecimento) + だった (foi). A leitura completa é かれにとってそれはとてもつらいできごとだった.
 
 

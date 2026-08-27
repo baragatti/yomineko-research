@@ -4,100 +4,100 @@ _Gerado 2026-08-26. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
-| 21 | Forma simples e registro casual | registro | 55 | 13 | 18 |
-| 22 | Orações relativas | descrever | 50 | 13 | 16 |
-| 23 | Condicionais (たら/ば/と/なら) | hipóteses | 50 | 13 | 22 |
-| 24 | Potencial | capacidade | 45 | 13 | 6 |
-| 25 | Volitivo e intenção | intenção | 45 | 13 | 15 |
+| 21 | Forma simples e registro casual | registro | 56 | 10 | 18 |
+| 22 | Orações relativas | descrever | 50 | 9 | 16 |
+| 23 | Condicionais (たら/ば/と/なら) | hipóteses | 48 | 13 | 22 |
+| 24 | Potencial | capacidade | 45 | 11 | 6 |
+| 25 | Volitivo e intenção | intenção | 45 | 12 | 15 |
 | 26 | Transitivos × intransitivos | pares verbais | 45 | 13 | 2 |
-| 27 | Dar e receber | favores | 40 | 14 | 9 |
-| 28 | Experiência e mudança | experiência | 40 | 14 | 21 |
+| 27 | Dar e receber | favores | 40 | 11 | 9 |
+| 28 | Experiência e mudança | experiência | 40 | 12 | 21 |
 | 29 | Obrigação e permissão | deveres | 40 | 14 | 7 |
-| 30 | Tentar, preparar, completar | aspecto | 40 | 13 | 22 |
-| 31 | Aparência e suposição | inferir | 40 | 13 | 27 |
-| 32 | Voz passiva | passiva | 40 | 13 | 9 |
-| 33 | Causativa e causativa-passiva | causar | 40 | 13 | 4 |
+| 30 | Tentar, preparar, completar | aspecto | 40 | 10 | 22 |
+| 31 | Aparência e suposição | inferir | 40 | 12 | 27 |
+| 32 | Voz passiva | passiva | 39 | 11 | 9 |
+| 33 | Causativa e causativa-passiva | causar | 39 | 12 | 4 |
 | 34 | Keigo básico | formalidade | 40 | 1 | 13 |
 | 35 | Conectores avançados | discurso | 34 | 0 | 22 |
 | 36 | Revisão N4 e can-do | revisão | 0 | 0 | 0 |
-| 37 | Kanji do exame N4: reforço | kanji | 1 | 13 | 0 |
+| 37 | Kanji do exame N4: reforço | kanji | 1 | 36 | 0 |
 
 ## Itens introduzidos por tópico (amostra)
 
 ### 21. Forma simples e registro casual
-- **kanji** (13): 会 同 事 自 社 発 者 地 業 方 新 場 員
-- **vocab** (55, amostra): 僕、気、積もり、意見、心配、怒る、必ず、非常に、生きる、聞こえる、別、盗む、運動、鳴る、規則
-- **gramática** (18): dewa-nai-ka, gp-100, gp-118, gp-129, gp-68, gp-86, gp-94, gp-99, janai-ka, ka-shira, kai, kana
+- **kanji** (10): 員 方 者 事 同 自 地 発 場 業
+- **vocab** (56, amostra): ステレオ、テキスト、会、僕、別、大学生、失礼、床屋、心配、意見、気、漫画、オートバイ、ガソリン、怒る
+- **gramática** (18): ka-shira, kai, kana, dewa-nai-ka, gp-129, janai-ka, gp-100, gp-118, gp-68, koro-goro, gp-94, sa
 
 ### 22. Orações relativas
-- **kanji** (13): 立 開 手 力 問 代 明 動 京 目 通 言 理
-- **vocab** (50, amostra): 彼、必要、すると、注意、深い、一生懸命、落ちる、点、過ぎる、止める、今度、赤ちゃん、起こす、地震、機会
-- **gramática** (16): aida, aida-ni, ato-de, gp-101, gp-107, gp-73, gp-89, gp-90, gp-97, ka-dou-ka, koto, no-naka-de
+- **kanji** (9): 力 通 代 問 理 動 開 明 京
+- **vocab** (50, amostra): 今度、厳しい、大事、建てる、彼、必要、悲しい、機会、止める、浅い、深い、点、落ちる、起こす、通る
+- **gramática** (16): gp-97, koto, no-naka-de, to-iu, to-iu-koto, aida, aida-ni, ato-de, gp-107, gp-73, gp-89, gp-101
 
 ### 23. Condicionais (たら/ば/と/なら)
-- **kanji** (13): 体 田 主 題 意 不 作 的 用 度 強 公 持
-- **vocab** (50, amostra): 思う、家、だから、受ける、開く、嘘、気分、其れに、小説、止める、怖い、ビル、力、出席、親
-- **gramática** (22): ba, baai-wa, dake-de, gp-113, gp-116, gp-120, gp-123, gp-133, gp-135, gp-138, gp-146, gp-150
+- **kanji** (13): 体 度 用 作 強 不 意 公 題 主 持 田 的
+- **vocab** (48, amostra): だから、力、寄る、思う、残念、決まる、開く、受ける、成るべく、気分、無理、用事、間違える、頑張る、動物園
+- **gramática** (22): gp-60, tara, gp-146, tara-dou, tara-ii-desu-ka, ba, gp-150, gp-120, gp-138, gp-82, nara, baai-wa
 
 ### 24. Potencial
-- **kanji** (13): 野 以 思 家 世 多 正 安 院 心 界 教 文
-- **vocab** (45, amostra): 事、美しい、世界、行う、決める、試合、決して、昔、準備、場合、連絡、戦争、調べる、夫、漸と
-- **gramática** (6): gp-115, gp-84, gp-85, koto-ga-dekiru, nakanaka-nai, rareru
+- **kanji** (11): 心 思 正 世 家 教 文 界 野 以 院
+- **vocab** (45, amostra): 事、仕舞う、光る、寝坊、捨てる、柔道、決して、決める、漸と、為さる、痩せる、行う、試合、調べる、足りる
+- **gramática** (6): gp-115, rareru, koto-ga-dekiru, gp-84, gp-85, nakanaka-nai
 
 ### 25. Volitivo e intenção
-- **kanji** (13): 元 重 近 考 画 海 売 知 道 集 別 物 使
-- **vocab** (45, amostra): 始める、心、事故、許り、親切、驚く、泣く、場所、選ぶ、立てる、一度、残る、赤ん坊、答え、確か
-- **gramática** (15): gp-127, gp-147, gp-71, gp-78, gp-83, ikou-kei-volitional-form, koto-ni-naru, koto-ni-suru, nasai, to-omou, yotei-da, you-da
+- **kanji** (12): 元 別 知 考 物 海 近 重 画 集 使 売
+- **vocab** (45, amostra): 場所、増える、始める、届ける、心、暮れる、残る、知らせる、立てる、答え、辞典、選ぶ、事故、勿論、原因
+- **gramática** (15): gp-147, ikou-kei-volitional-form, you-da, to-omou, gp-78, you-to-omou, koto-ni-naru, koto-ni-suru, yotei-da, you-ni-suru, gp-127, nasai
 
 ### 26. Transitivos × intransitivos
-- **kanji** (13): 品 計 死 特 私 始 朝 運 終 台 広 住 無
-- **vocab** (45, amostra): 運転、探す、予定、進む、楽しむ、思い出す、火、連れる、すっかり、森、招待、用、通う、法律、石
+- **kanji** (13): 始 無 私 終 品 死 住 台 広 朝 運 特 計
+- **vocab** (45, amostra): 乾く、塗る、思い出す、探す、楽しむ、育てる、踊る、連れる、進む、オーバー、ジャム、ステーキ、消しゴム、火、石
 - **gramática** (2): gp-64, tadoushi-jidoushi
 
 ### 27. Dar e receber
-- **kanji** (14): 真 有 口 少 町 料 工 建 空 急 止 送 可 港
-- **vocab** (40, amostra): 試験、気持ち、興味、今夜、喜ぶ、反対、はっきり、亡くなる、空気、空港、予約、味、泊まる、祖父、会話
-- **gramática** (9): gp-106, gp-108, gp-109, gp-152, te-ageru, te-hoshii, te-kureru, te-morau, te-yaru
+- **kanji** (11): 町 真 可 急 止 送 工 建 料 有 港
+- **vocab** (40, amostra): ご馳走、はっきり、凄い、喜ぶ、差し上げる、手袋、気持ち、真面目、祖父、踊り、お釣り、予約、今夜、会話、店員
+- **gramática** (9): te-ageru, te-yaru, te-kureru, te-morau, gp-106, gp-152, te-hoshii, gp-108, gp-109
 
 ### 28. Experiência e mudança
-- **kanji** (14): 米 身 切 転 研 足 究 楽 起 着 店 病 質 待
-- **vocab** (40, amostra): 彼ら、亜米利加、最近、女性、続ける、夢、理由、あんな、ちゃん、男性、パソコン、教育、教会、歴史、一杯
-- **gramática** (21): gp-122, gp-126, gp-58, gp-59, gp-69, gp-70, gp-79, gp-80, gp-81, gp-87, gp-88, gp-95
+- **kanji** (12): 切 待 質 転 楽 着 研 究 身 病 起 米
+- **vocab** (40, amostra): 不便、周り、喉、夢、昼間、最近、毛、片付ける、理由、続ける、血、邪魔、酷い、隅、パソコン
+- **gramática** (21): gp-79, gp-80, ku-suru, gp-58, gp-59, you-ni-naru, koto-ga-aru, ni-ki-ga-tsuku, te-yokatta, gp-122, kara-tsukuru, gp-126
 
 ### 29. Obrigação e permissão
-- **kanji** (14): 市 試 族 銀 早 映 親 験 英 医 仕 去 味 写
-- **vocab** (40, amostra): 見える、計画、子、通り、音、正しい、十分、変わる、変える、屹度、以外、上手い、遠く、市、特に
-- **gramática** (7): ga-hitsuyou, gp-117, gp-62, hitsuyou-ga-aru, made-ni, nakereba-ikenai, nakereba-naranai
+- **kanji** (14): 市 銀 仕 試 験 医 去 族 親 味 早 写 映 英
+- **vocab** (40, amostra): サンダル、下着、引き出し、押入れ、通り、随分、電灯、音、変える、変わる、支度、正しい、済む、為、経済
+- **gramática** (7): ga-hitsuyou, hitsuyou-ga-aru, nakereba-ikenai, nakereba-naranai, gp-117, made-ni, gp-62
 
 ### 30. Tentar, preparar, completar
-- **kanji** (13): 字 答 夜 音 注 帰 古 歌 買 悪 図 週 室
-- **vocab** (40, amostra): 彼女、間、以上、送る、説明、危険、妻、伝える、其れで、髪、返事、尋ねる、プレゼント、負ける、島
-- **gramática** (22): bakari, dasu, gp-151, gp-65, gp-72, hajimeru, nikui, owaru, ta-bakari, ta-tokoro, te-iku, te-ita
+- **kanji** (10): 帰 音 歌 夜 悪 字 注 図 室 答
+- **vocab** (40, amostra): 伝える、其れで、尋ねる、帰り、返事、送る、それ程、以上、儘、滑る、間、騒ぐ、プレゼント、具合、卒業
+- **gramática** (22): dasu, hajimeru, te-kuru, te-iku, te-ita, tsuzukeru, gp-151, owaru, te-shimau-chau, gp-65, te-miru, te-oku
 
 ### 31. Aparência e suposição
-- **kanji** (13): 歩 風 紙 黒 花 春 赤 青 館 屋 色 走 秋
-- **vocab** (40, amostra): 下さる、息子、手伝う、見つける、そんなに、笑う、合う、最後、最も、席、似る、慣れる、普通、運ぶ、様
-- **gramática** (27): ga-suru, gari, garu-gatteiru, gp-110, gp-130, gp-131, gp-132, gp-136, gp-153, gp-154, gp-75, gp-76
+- **kanji** (12): 紙 春 秋 色 赤 青 黒 歩 走 屋 館 風
+- **vocab** (40, amostra): ご存知、字、息子、承知、文学、日記、訳、講義、高校、高校生、世、亜細亜、割合、寺、普通
+- **gramática** (27): gp-136, sou-da-1, to-iwarete-iru, to-kiita, gp-110, rashii, gp-76, mitai-da, mitai-na, mitai-ni, gp-153, gp-154
 
 ### 32. Voz passiva
-- **kanji** (13): 夏 習 駅 洋 旅 服 夕 借 曜 飲 肉 貸 堂
-- **vocab** (40, amostra): 君、遅れる、出発、約束、最初、払う、続く、数学、習慣、世話、将来、様、見つかる、落とす、直す
-- **gramática** (9): amari-nai, gp-102, gp-103, gp-104, gp-137, gp-63, gp-74, ukemi-kei, zenzen-nai
+- **kanji** (11): 夏 夕 曜 服 堂 習 肉 旅 借 洋 貸
+- **vocab** (39, amostra): 冷える、割れる、太る、点く、焼ける、直す、直る、落とす、見つかる、集める、先輩、召し上がる、君、将来、御
+- **gramática** (9): gp-63, ukemi-kei, gp-137, amari-nai, gp-74, zenzen-nai, gp-102, gp-103, gp-104
 
 ### 33. Causativa e causativa-passiva
-- **kanji** (13): 鳥 飯 勉 冬 昼 茶 弟 牛 魚 兄 犬 妹 姉
-- **vocab** (40, amostra): 君、考える、失敗、船、勝つ、向かう、自由、経験、動く、けれど、コンサート、優しい、代わり、工場、首
-- **gramática** (4): gp-105, saserareru, saseru, sasete-kudasai
+- **kanji** (12): 兄 勉 妹 姉 弟 牛 茶 飯 鳥 冬 昼 犬
+- **vocab** (39, amostra): 仕方、倒れる、動く、勝つ、向かう、回る、植える、汚れる、濡れる、移る、考える、自由、苛める、アクセサリー、コンサート
+- **gramática** (4): gp-105, saseru, sasete-kudasai, saserareru
 
 ### 34. Keigo básico
 - **kanji** (1): 漢
-- **vocab** (40, amostra): 戻る、生活、テニス、娘、急ぐ、簡単、食事、警察、会議、眠る、間に合う、ケーキ、全然、研究、途中
-- **gramática** (13): de-gozaimasu, gozaimasu, gp-111, gp-112, gp-148, gp-149, irassharu, itashimasu, nasaru, o-kudasai-2, o-ni-naru, te-itadakemasen-ka
+- **vocab** (40, amostra): この頃、会議、全然、復習、特別、生活、相談、研究、簡単、食事、乗り換える、別れる、急ぐ、戻る、眠る
+- **gramática** (13): de-gozaimasu, gozaimasu, gp-149, gp-148, te-sumimasen, irassharu, nasaru, o-kudasai-2, o-ni-naru, gp-111, gp-112, itashimasu
 
 ### 35. Conectores avançados
 - **kanji** (0): —
-- **vocab** (34, amostra): 関係、金持ち、ピアノ、楽しみ、嬉しい、急、趣味、社会、付く、尤も、指、タイプ、偶に、矢っ張り、棚
-- **gramática** (22): gp-114, gp-119, gp-121, gp-124, gp-125, gp-128, gp-134, gp-61, gp-66, gp-67, mama, matawa
+- **vocab** (34, amostra): ピアノ、二階建て、急、指、格好、棚、為る、琴、番組、糸、ソフト、タイプ、偶に、大分、嬉しい
+- **gramática** (22): gp-134, gp-66, gp-67, sore-ni, gp-114, matawa, nado, toka-toka, gp-119, gp-121, shi, gp-61
 
 ### 36. Revisão N4 e can-do
 - **kanji** (0): —
@@ -105,7 +105,7 @@ _Gerado 2026-08-26. Colocação P4 (1ª passada); lições autoradas em P6 refer
 - **gramática** (0): —
 
 ### 37. Kanji do exame N4: reforço
-- **kanji** (13): 区 県 村 低 門 森 林 短 軽 池 弱 菜 暑
+- **kanji** (36): 乗 低 便 働 光 区 合 声 太 好 寒 引 弱 所 暑 暗 村 林 森 民
 - **vocab** (1, amostra): 献花
 - **gramática** (0): —
 

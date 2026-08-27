@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [cha-ikenai-ja-ikenai, naide, naide-kudasai] · vocabulário [半, 半分, 左, 張る, 晩, 晩御飯, 東, 番] · kanji [半] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-f1c08a8693dc`, `sent:tatoeba-144418`, `sent:tatoeba-125387`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-125387`, `sent:tatoeba-144418`, `sent:gen-f1c08a8693dc`
 
 ---
 
@@ -44,7 +44,7 @@ Compare os dois lados da forma て: 電気を消して ("apague a luz e...") afi
 
 #### Pedir educadamente "não faça": 〜ないでください
 Acrescente ください ao 〜ないで e você tem a naide-kudasai: o oposto exato de 〜てください. É o "por favor, NÃO faça X", presente em avisos e na vida diária.
-Molde: [verbo na forma negativa em ない] でください
+Molde: [verbo na forma negativa em ない] で ください
 - ここで写真を撮らないでください = "por favor, não tire fotos aqui".
 - ここに張らないでください = "por favor, não cole (nada) aqui". Aqui entra o verbo 張る (はる), "colar, grudar, fixar", desses de cartaz e adesivo.
 
@@ -80,28 +80,28 @@ Repare no ん final dessas leituras: はん, ばん, はんぶん. O ん é uma 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que 〜ちゃいけない expressa, e em que registro?'}
+### 1. (recognition) O que 〜ちゃいけない expressa, e em que registro?
 - **Resposta:** `{"choices": ["um pedido educado e formal", "uma proibição casual ('não pode'), entre amigos", "uma ação em andamento"], "correct": "uma proibição casual ('não pode'), entre amigos"}`
-- {'pt-BR': "〜ちゃいけない é a contração casual de 〜てはいけない: 'não pode', 'é proibido', usado na fala descontraída."}
+- 〜ちゃいけない é a contração casual de 〜てはいけない: 'não pode', 'é proibido', usado na fala descontraída.
 
 
-### 2. (cloze) {'pt-BR': "Complete a contração casual: 飲む → 飲ん＿いけない ('não pode beber')."}
+### 2. (cloze) Complete a contração casual: 飲む → 飲ん＿いけない ('não pode beber').
 - **Resposta:** `{"text": "じゃ", "full": "飲んじゃいけない"}`
-- {'pt-BR': 'A forma て de 飲む é 飲んで (termina em で), então a contração usa じゃ: 飲んじゃいけない.'}
+- A forma て de 飲む é 飲んで (termina em で), então a contração usa じゃ: 飲んじゃいけない.
 
 
-### 3. (particle_choice) {'pt-BR': "Complete para dizer 'fui à escola SEM tomar café': 朝ごはんを食べ＿で学校に行った。"}
+### 3. (particle_choice) Complete para dizer 'fui à escola SEM tomar café': 朝ごはんを食べ＿で学校に行った。
 - **Resposta:** `{"choices": ["ない", "たい", "まし"], "correct": "ない"}`
-- {'pt-BR': "〜ないで liga as ações negando a primeira. A forma curta negativa de 食べる é 食べない; + で = 食べないで ('sem comer')."}
+- 〜ないで liga as ações negando a primeira. A forma curta negativa de 食べる é 食べない; + で = 食べないで ('sem comer').
 - frases: `sent:gen-f1c08a8693dc`
 
-### 4. (sentence_build) {'pt-BR': "Monte o pedido educado 'Por favor, não cole (nada) aqui.' com as peças: [ください] [張ら] [ここに] [ないで]"}
+### 4. (sentence_build) Monte o pedido educado 'Por favor, não cole (nada) aqui.' com as peças: [ください] [張ら] [ここに] [ないで]
 - **Resposta:** `{"order": ["ここに", "張ら", "ないで", "ください"], "text": "ここに張らないでください。"}`
-- {'pt-BR': "張る → forma curta negativa 張らない → 張らないで + ください = 'por favor, não cole'."}
+- 張る → forma curta negativa 張らない → 張らないで + ください = 'por favor, não cole'.
 
 
-### 5. (production) {'pt-BR': 'Peça educadamente para alguém NÃO TIRAR FOTOS aqui (use 〜ないでください). Verbo: 撮る (とる).'}
+### 5. (production) Peça educadamente para alguém NÃO TIRAR FOTOS aqui (use 〜ないでください). Verbo: 撮る (とる).
 - **Resposta:** `{"text": "ここで写真を撮らないでください。", "accept": ["ここで写真を撮らないでください", "ここで写真をとらないでください", "写真を撮らないでください", "写真をとらないでください"]}`
-- {'pt-BR': "撮る → forma curta negativa 撮らない → 撮らないで + ください = 'por favor, não tire fotos'."}
+- 撮る → forma curta negativa 撮らない → 撮らないで + ください = 'por favor, não tire fotos'.
 
 

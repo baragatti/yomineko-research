@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [n3-kiri, n3-tokoro-datta] · vocabulário [いらっしゃい, インク, 一体, 以来, 何時でも, 何時までも, 偉大, 否, 所謂, 苛々, 言わば, 頂きます] · kanji [報 指 支 権 点] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-149072`
 
 ---
 
@@ -76,33 +76,33 @@ Resolva os exercícios finais do tópico e confira cada explicação.
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': '彼は出かけた___帰ってこない。 (Ele saiu e nunca mais voltou.)'}
+### 1. (particle_choice) 彼は出かけた___帰ってこない。 (Ele saiu e nunca mais voltou.)
 - **Resposta:** `{"choices": ["きり", "以来", "とたん", "ついでに"], "correct": "きり"}`
-- {'pt-BR': 'きり marca o ponto (sair) a partir do qual o estado esperado (voltar) nunca se concretizou, com o típico tom de algo pendente.'}
+- きり marca o ponto (sair) a partir do qual o estado esperado (voltar) nunca se concretizou, com o típico tom de algo pendente.
 
 
-### 2. (recognition) {'pt-BR': "Qual a forma correta de 'Quase caí'?"}
+### 2. (recognition) Qual a forma correta de 'Quase caí'?
 - **Resposta:** `{"choices": ["転ぶところだった", "転んだところだった", "転ぶところだ", "転んだきり"], "correct": "転ぶところだった"}`
-- {'pt-BR': 'O verbo antes de ところだった fica na forma de dicionário (転ぶ), pois descreve o evento iminente; só ところだった carrega o passado.'}
+- O verbo antes de ところだった fica na forma de dicionário (転ぶ), pois descreve o evento iminente; só ところだった carrega o passado.
 
 
-### 3. (cloze) {'pt-BR': 'Complete: もう少しで___ところだった。 (Por pouco eu não esquecia. / verbo 忘れる)'}
-- **Resposta:** `{"text": "もう少しで___ところだった", "full": "もう少しで忘れるところだった"}`
-- {'pt-BR': "もう少しで reforça o 'por pouco', e o verbo fica na forma de dicionário 忘れる antes de ところだった."}
+### 3. (cloze) Complete: もう少しで___ところだった。 (Por pouco eu não esquecia. / verbo 忘れる)
+- **Resposta:** `{"text": "忘れる", "full": "もう少しで忘れるところだった"}`
+- もう少しで reforça o 'por pouco', e o verbo fica na forma de dicionário 忘れる antes de ところだった.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu sentido.'}
+### 4. (matching) Associe cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["以来", "desde"], ["一体", "afinal de contas"], ["所謂", "o chamado"], ["偉大", "grandioso"]]}`
-- {'pt-BR': '以来 いらい desde; 一体 いったい afinal de contas; 所謂 いわゆる o chamado; 偉大 いだい grandioso.'}
+- 以来 いらい desde; 一体 いったい afinal de contas; 所謂 いわゆる o chamado; 偉大 いだい grandioso.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Desde que o encontrei de manhã, não tive mais notícias.' (use きり e 連絡がない)"}
+### 5. (production) Escreva em japonês: 'Desde que o encontrei de manhã, não tive mais notícias.' (use きり e 連絡がない)
 - **Resposta:** `{"text": "朝会ったきり連絡がない", "accept": ["朝会ったきり連絡がない", "朝会ったきり、連絡がない", "あさあったきりれんらくがない"]}`
-- {'pt-BR': 'Verbo no passado 会った + きり + frase negativa 連絡がない: desde o encontro, o estado esperado (ter notícias) nunca veio.'}
+- Verbo no passado 会った + きり + frase negativa 連絡がない: desde o encontro, o estado esperado (ter notícias) nunca veio.
 
 
-### 6. (sentence_build) {'pt-BR': "Ordene para formar 'Quase caí (por um triz)': [危なく / 転ぶ / ところだった]"}
+### 6. (sentence_build) Ordene para formar 'Quase caí (por um triz)': [危なく / 転ぶ / ところだった]
 - **Resposta:** `{"order": ["危なく", "転ぶ", "ところだった"], "text": "危なく転ぶところだった"}`
-- {'pt-BR': "O advérbio 危なく ('por um triz') vem primeiro, o verbo na forma de dicionário 転ぶ depois, e ところだった fecha carregando o tempo passado."}
+- O advérbio 危なく ('por um triz') vem primeiro, o verbo na forma de dicionário 転ぶ depois, e ところだった fecha carregando o tempo passado.
 
 

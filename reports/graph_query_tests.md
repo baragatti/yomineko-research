@@ -11,7 +11,7 @@ JOIN family_member fm  ON fm.member_type='vocab' AND fm.member_id = sv.vocab_id
 JOIN family f          ON f.id = fm.family_id AND f.slug = 'grp:godan'
 WHERE s.level = 'n5'
 ```
-**43 rows.** PASS ✓
+**44 rows.** PASS ✓
 - 大学を出てから10年になります。
 - デパートで来年のカレンダーを買いました。
 - 名前を書くだけでいいです

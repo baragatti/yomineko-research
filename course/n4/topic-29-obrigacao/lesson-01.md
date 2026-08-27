@@ -15,7 +15,7 @@
 ---
 
 ### Precisar de algo: が必要
-Em português a gente diz "preciso de" com um verbo ("precisar"). O japonês tem um caminho ainda mais simples para a ideia de necessidade: a palavrinha ga-hitsuyou. Com ela você monta o molde Xが必要です e já diz que algo é necessário ou que você precisa de uma coisa, sem usar verbo nenhum.
+Em português a gente diz "preciso de" com um verbo ("precisar"). O japonês tem um caminho ainda mais simples para a ideia de necessidade: a palavrinha ga-hitsuyou. Com ela você monta o molde X が必要です e já diz que algo é necessário ou que você precisa de uma coisa, sem usar verbo nenhum.
 
 #### O que é 必要
 A palavra 必要 é um substantivo (e também um adjetivo-な) que significa "necessidade, necessário". Ela carrega sozinha o sentido de "ser preciso". Então, em vez de procurar um verbo "precisar", você só aponta o que é necessário e fecha com です.
@@ -26,7 +26,7 @@ A palavra 必要 é um substantivo (e também um adjetivo-な) que significa "ne
 Repare numa pegadinha boa de notar: o que você precisa NÃO leva o nosso "de". Em japonês essa coisa vem marcada por が, como se fosse o sujeito de "ser necessário". Pense assim: "[coisa]が é-necessária". Não tente colar um "de" ali.
 
 > **[l1-pitfall]**
-O reflexo em português é dizer "preciso de X". Em japonês não há esse "de": é Xが必要, literalmente "X é necessário". Quem precisa (você) costuma ficar subentendido pelo contexto.
+O reflexo em português é dizer "preciso de X". Em japonês não há esse "de": é X が必要, literalmente "X é necessário". Quem precisa (você) costuma ficar subentendido pelo contexto.
 
 #### Exemplos reais
 Veja o padrão em frases que japoneses realmente dizem. Aqui o だ é a versão casual de です(mesmo sentido, tom mais informal).
@@ -73,28 +73,28 @@ Como 必要 já significa "necessário", você não precisa conjugar verbo algum
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que significa a palavra 必要 (ひつよう)?'}
+### 1. (recognition) O que significa a palavra 必要 (ひつよう)?
 - **Resposta:** `{"choices": ["necessário / necessidade", "possível", "proibido"], "correct": "necessário / necessidade"}`
-- {'pt-BR': "必要 é um substantivo/adjetivo-な que quer dizer 'necessidade, necessário'. Por isso X が必要 já diz 'X é necessário / preciso de X', sem precisar de verbo."}
+- 必要 é um substantivo/adjetivo-な que quer dizer 'necessidade, necessário'. Por isso X が必要 já diz 'X é necessário / preciso de X', sem precisar de verbo.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete: サンダル＿必要です。 (Preciso de sandália.)'}
+### 2. (particle_choice) Complete: サンダル＿必要です。 (Preciso de sandália.)
 - **Resposta:** `{"choices": ["が", "を", "で"], "correct": "が"}`
-- {'pt-BR': "No padrão X が必要, a coisa de que se precisa é marcada por が, como se fosse o sujeito de 'ser necessário'. Cuidado: não há um 'de' nem o uso de を aqui."}
+- No padrão X が必要, a coisa de que se precisa é marcada por が, como se fosse o sujeito de 'ser necessário'. Cuidado: não há um 'de' nem o uso de を aqui.
 
 
-### 3. (cloze) {'pt-BR': "Complete com a palavra de 'necessidade': 電灯が＿です。 (Preciso de uma luz / a luz é necessária.)"}
+### 3. (cloze) Complete com a palavra de 'necessidade': 電灯が＿です。 (Preciso de uma luz / a luz é necessária.)
 - **Resposta:** `{"text": "必要", "full": "電灯が必要です"}`
-- {'pt-BR': "必要 (ひつよう) carrega o sentido de 'necessário'. O molde fica 電灯 (luz elétrica) が 必要 です. A leitura é ひつよう, mas escreva 必要 em kanji para a resposta ser aceita."}
+- 必要 (ひつよう) carrega o sentido de 'necessário'. O molde fica 電灯 (luz elétrica) が 必要 です. A leitura é ひつよう, mas escreva 必要 em kanji para a resposta ser aceita.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Preciso de roupa de baixo.' com as peças: [です] [下着] [必要] [が]"}
+### 4. (sentence_build) Monte 'Preciso de roupa de baixo.' com as peças: [です] [下着] [必要] [が]
 - **Resposta:** `{"order": ["下着", "が", "必要", "です"], "text": "下着が必要です。"}`
-- {'pt-BR': "Molde X が必要です: 下着 (したぎ, roupa de baixo) + が (marca o que se precisa) + 必要 (necessário) + です (fecha educado). Sem verbo e sem 'de'."}
+- Molde X が必要です: 下着 (したぎ, roupa de baixo) + が (marca o que se precisa) + 必要 (necessário) + です (fecha educado). Sem verbo e sem 'de'.
 
 
-### 5. (production) {'pt-BR': "Pergunte em japonês 'Do que você precisa?' usando 何 (o quê), a partícula が, 必要 e a cópula educada com か."}
+### 5. (production) Pergunte em japonês 'Do que você precisa?' usando 何 (o quê), a partícula が, 必要 e a cópula educada com か.
 - **Resposta:** `{"text": "何が必要ですか。", "accept": ["何が必要ですか", "何が必要ですか？", "なにが必要ですか", "なにがひつようですか", "何がひつようですか"]}`
-- {'pt-BR': "Basta pôr 何 (なに, 'o quê') no lugar do X do molde: 何 が 必要 です か. É o padrão X が必要 em forma de pergunta educada."}
+- Basta pôr 何 (なに, 'o quê') no lugar do X do molde: 何 が 必要 です か. É o padrão X が必要 em forma de pergunta educada.
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:opinions",
   "order": 2,
   "title": {
-    "pt-BR": "Dizer o que você acha — parte 2"
+    "pt-BR": "Dizer o que você acha, parte 2"
   },
   "say_now": [
     "sent:tatoeba-11692639",
@@ -27,9 +27,9 @@
     "gram:hazu-ga-nai",
     "gram:hazu-da",
     "gram:to-iu",
-    "gram:da-desu",
-    "gram:gp",
-    "gram:gp-2"
+    "gram:wa-yori-desu",
+    "gram:gp-2",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
     "正",
@@ -52,6 +52,127 @@
   "cumulative_known_vocab": 518,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:hazu-ga-nai",
+      "examples": [
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784",
+        "sent:tatoeba-195794"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:hazu-da",
+      "examples": [
+        "sent:tatoeba-519050",
+        "sent:tatoeba-198131",
+        "sent:tatoeba-11173182"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-83621",
+        "sent:tatoeba-80590"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-90ed9f56e125",
+        "sent:gen-e97b8aeb1456"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-2",
+      "examples": [
+        "sent:tatoeba-171785",
+        "sent:tatoeba-171784",
+        "sent:tatoeba-171787"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O trem deve sair daqui a cinco minutos.",
+      "answer_key": "列車はあと５分で出発するはずです。",
+      "accepted_variants": [
+        "れっしゃわあとごふんでしゅっぱつするはずです",
+        "れっしゃわあとごふんでしゅっぱつするはずです。",
+        "列車はあと５分で出発するはずです",
+        "列車はあと５分で出発するはずです。"
+      ],
+      "sentence": "sent:tatoeba-77522",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele pode ter perdido o trem.",
+      "answer_key": "列車に乗り遅れたのかもしれない。",
+      "accepted_variants": [
+        "れっしゃにのりおくれたのかもしれない",
+        "れっしゃにのりおくれたのかもしれない。",
+        "列車に乗り遅れたのかもしれない",
+        "列車に乗り遅れたのかもしれない。"
+      ],
+      "sentence": "sent:tatoeba-77555",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O trem era pra chegar às seis.",
+      "answer_key": "列車は６時到着のはずだった。",
+      "accepted_variants": [
+        "れっしゃわろくじとうちゃくのはずだった",
+        "れっしゃわろくじとうちゃくのはずだった。",
+        "列車は６時到着のはずだった",
+        "列車は６時到着のはずだった。"
+      ],
+      "sentence": "sent:tatoeba-77523",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-162311",
+      "sent:tatoeba-81566",
+      "sent:tatoeba-84069",
+      "sent:tatoeba-226794",
+      "sent:tatoeba-9812759",
+      "sent:tatoeba-10117518"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:132",
@@ -103,120 +224,5 @@
         "日"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:hazu-ga-nai",
-      "examples": [
-        "sent:tatoeba-81586",
-        "sent:tatoeba-141784",
-        "sent:tatoeba-195794"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:hazu-da",
-      "examples": [
-        "sent:tatoeba-519050",
-        "sent:tatoeba-198131",
-        "sent:tatoeba-11173182"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-83621",
-        "sent:tatoeba-80590"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-5078",
-        "sent:tatoeba-75192"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-2",
-      "examples": [
-        "sent:tatoeba-171785",
-        "sent:tatoeba-171784",
-        "sent:tatoeba-171787"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O trem deve sair daqui a cinco minutos.",
-      "answer_key": "列車はあと５分で出発するはずです。",
-      "accepted_variants": [
-        "列車はあと５分で出発するはずです",
-        "列車はあと５分で出発するはずです。"
-      ],
-      "sentence": "sent:tatoeba-77522",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ele pode ter perdido o trem.",
-      "answer_key": "列車に乗り遅れたのかもしれない。",
-      "accepted_variants": [
-        "列車に乗り遅れたのかもしれない",
-        "列車に乗り遅れたのかもしれない。"
-      ],
-      "sentence": "sent:tatoeba-77555",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "O trem era pra chegar às seis.",
-      "answer_key": "列車は６時到着のはずだった。",
-      "accepted_variants": [
-        "列車は６時到着のはずだった",
-        "列車は６時到着のはずだった。"
-      ],
-      "sentence": "sent:tatoeba-77523",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
-    "items": [
-      "sent:tatoeba-162311",
-      "sent:tatoeba-81566",
-      "sent:tatoeba-84069",
-      "sent:tatoeba-226794",
-      "sent:tatoeba-9812759",
-      "sent:tatoeba-10117518"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 29,
-    "fluency": 6
-  }
+  ]
 }

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-kake, n3-tate, n3-te-iru] · vocabulário [価格, 係, 化学, 学, 学習, 学者, 家具, 掛かる, 確実, 覚悟, 輝く, 限る] · kanji [位 局 格 流 疑 置 過] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-78016`, `sent:tatoeba-79761`
 
 ---
 
@@ -85,28 +85,28 @@ O kanji 局 significa "repartição, escritório, setor". Aparece em 郵便局 (
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Na frase 窓が開いている, qual é o sentido de ～ている aqui?'}
+### 1. (recognition) Na frase 窓が開いている, qual é o sentido de ～ている aqui?
 - **Resposta:** `{"choices": ["Alguém está abrindo a janela neste exato momento", "A janela está aberta: é o estado que ficou depois de alguém abrir", "A janela vai ser aberta amanhã", "A janela nunca foi aberta"], "correct": "A janela está aberta: é o estado que ficou depois de alguém abrir"}`
-- {'pt-BR': "Com verbos de mudança/resultado como 開く, ～ている marca o ESTADO resultante, não a ação em curso. 窓が開いている = a janela está (e continua) aberta. Para 'alguém está abrindo a janela agora' usa-se o transitivo: 窓を開けている."}
+- Com verbos de mudança/resultado como 開く, ～ている marca o ESTADO resultante, não a ação em curso. 窓が開いている = a janela está (e continua) aberta. Para 'alguém está abrindo a janela agora' usa-se o transitivo: 窓を開けている.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete: 机の上に読みかけ＿＿本がある (tem um livro começado em cima da mesa). Qual partícula liga 読みかけ ao 本?'}
+### 2. (particle_choice) Complete: 机の上に読みかけ＿＿本がある (tem um livro começado em cima da mesa). Qual partícula liga 読みかけ ao 本?
 - **Resposta:** `{"choices": ["の", "を", "で", "に"], "correct": "の"}`
-- {'pt-BR': "～かけ funciona como substantivo, então liga ao substantivo seguinte com の: 読みかけの本 = 'um livro começado/pela metade'."}
+- ～かけ funciona como substantivo, então liga ao substantivo seguinte com の: 読みかけの本 = 'um livro começado/pela metade'.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'pão recém-assado é gostoso' com a forma de 焼く: 焼き＿＿のパンはおいしい。"}
+### 3. (cloze) Complete 'pão recém-assado é gostoso' com a forma de 焼く: 焼き＿＿のパンはおいしい。
 - **Resposta:** `{"text": "たて", "full": "焼きたてのパンはおいしい"}`
-- {'pt-BR': "焼く vira o radical 焼き + たて = 焼きたて ('recém-assado'). Para qualificar パン, intercala-se の: 焼きたてのパン. O ～たて destaca que está fresquinho, no auge."}
+- 焼く vira o radical 焼き + たて = 焼きたて ('recém-assado'). Para qualificar パン, intercala-se の: 焼きたてのパン. O ～たて destaca que está fresquinho, no auge.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada forma ao seu sentido.'}
+### 4. (matching) Ligue cada forma ao seu sentido.
 - **Resposta:** `{"pairs": [["食べかけ", "comido pela metade, largado"], ["食べている", "está comendo agora"], ["焼きたて", "recém-assado, fresquinho"], ["知っている", "eu sei (estado)"]]}`
-- {'pt-BR': "かけ = ação interrompida pela metade; ている (ação durativa) = em curso; たて = recém-concluído e fresco; ている com 知る = estado ('eu sei'), não ação."}
+- かけ = ação interrompida pela metade; ている (ação durativa) = em curso; たて = recém-concluído e fresco; ている com 知る = estado ('eu sei'), não ação.
 
 
-### 5. (production) {'pt-BR': "Diga 'as estrelas estão brilhando' usando 星 (ほし), 輝く e ～ている."}
+### 5. (production) Diga 'as estrelas estão brilhando' usando 星 (ほし), 輝く e ～ている.
 - **Resposta:** `{"text": "星が輝いている", "accept": ["星が輝いている", "ほしがかがやいている", "星が輝いてる", "ほしがかがやいてる"]}`
-- {'pt-BR': "輝く vira a forma て 輝いて + いる = 輝いている ('está brilhando', ação em curso/contínua). Na fala casual também vale 輝いてる. A partícula が marca o sujeito 星."}
+- 輝く vira a forma て 輝いて + いる = 輝いている ('está brilhando', ação em curso/contínua). Na fala casual também vale 輝いてる. A partícula が marca o sujeito 星.
 
 

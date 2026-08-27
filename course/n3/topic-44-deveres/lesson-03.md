@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-nai-koto-wa-nai, n3-sete-kudasai, n3-wake-ni-wa-ikanai] · vocabulário [切れ, 切れる, 奇妙, 嫌う, 局, 巨大, 強力, 急速, 恐怖, 救助, 旧, 機能, 気味, 級, 許可, 貴重, 逆, 霧] · kanji [察 差 望 末 段 渡 福 美 若 観] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-127098`, `sent:tatoeba-84279`
 
 ---
 
@@ -97,33 +97,33 @@ Veja como 観 e 察 se unem em 観察 ('observação'): 'ver' mais 'deduzir' é 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Você quer pedir permissão para explicar algo ('deixe-me explicar'). Qual frase usar?"}
+### 1. (recognition) Você quer pedir permissão para explicar algo ('deixe-me explicar'). Qual frase usar?
 - **Resposta:** `{"choices": ["説明させてください", "説明してください", "説明することだ", "説明するわけにはいかない"], "correct": "説明させてください"}`
-- {'pt-BR': "～せてください pede permissão para VOCÊ fazer ('deixe-me explicar'). 説明してください pediria que o OUTRO explicasse ('explique, por favor'), e as outras duas não são pedidos de permissão."}
+- ～せてください pede permissão para VOCÊ fazer ('deixe-me explicar'). 説明してください pediria que o OUTRO explicasse ('explique, por favor'), e as outras duas não são pedidos de permissão.
 
 
-### 2. (recognition) {'pt-BR': "Qual frase significa 'deixe-me ver' (pedir permissão para você olhar), e não 'me mostre'?"}
+### 2. (recognition) Qual frase significa 'deixe-me ver' (pedir permissão para você olhar), e não 'me mostre'?
 - **Resposta:** `{"choices": ["見させてください", "見せてください", "見てください", "見てごらん"], "correct": "見させてください"}`
-- {'pt-BR': "見させてください é o causativo de 見る ('ver') + てください = 'deixe-me ver'. 見せてください vem de 見せる ('mostrar') = 'me mostre'. São parecidos, mas pedem coisas opostas."}
+- 見させてください é o causativo de 見る ('ver') + てください = 'deixe-me ver'. 見せてください vem de 見せる ('mostrar') = 'me mostre'. São parecidos, mas pedem coisas opostas.
 
 
-### 3. (particle_choice) {'pt-BR': "Complete 'amanhã tem prova, então não dá para sair': 明日試験だから遊びに行く＿。"}
+### 3. (particle_choice) Complete 'amanhã tem prova, então não dá para sair': 明日試験だから遊びに行く＿。
 - **Resposta:** `{"choices": ["わけにはいかない", "ことはない", "べきだ", "てください"], "correct": "わけにはいかない"}`
-- {'pt-BR': "～わけにはいかない = 'não dá para' por dever/pressão. ことはない seria 'não precisa sair', べきだ seria 'deveria sair' e てください não encaixa aqui."}
+- ～わけにはいかない = 'não dá para' por dever/pressão. ことはない seria 'não precisa sair', べきだ seria 'deveria sair' e てください não encaixa aqui.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada estrutura ao seu sentido.'}
+### 4. (matching) Ligue cada estrutura ao seu sentido.
 - **Resposta:** `{"pairs": [["～せてください", "deixe-me, permita-me fazer"], ["～わけにはいかない", "não dá (por dever ou pressão social)"], ["～ないわけにはいかない", "sou obrigado a, não tenho escolha"], ["～ないことはない", "até que dá, não é que não dê"]]}`
-- {'pt-BR': "Note o jogo de negativas: わけにはいかない ('não dá') vira o oposto na negativa (ないわけにはいかない = 'sou obrigado a'); e ないことはない é a dupla negação hesitante 'até que dá'."}
+- Note o jogo de negativas: わけにはいかない ('não dá') vira o oposto na negativa (ないわけにはいかない = 'sou obrigado a'); e ないことはない é a dupla negação hesitante 'até que dá'.
 
 
-### 5. (cloze) {'pt-BR': "Complete a dupla negação 'não é que eu não consiga consertar, mas vai levar tempo': 直せ＿ことはないが、時間がかかる。"}
+### 5. (cloze) Complete a dupla negação 'não é que eu não consiga consertar, mas vai levar tempo': 直せ＿ことはないが、時間がかかる。
 - **Resposta:** `{"text": "ない", "full": "直せないことはないが、時間がかかる"}`
-- {'pt-BR': "～ないことはない = 'até que dá'. O verbo na forma ない (直せない, 'não consigo consertar') + ことはない vira a dupla negação reservada: 'não é que eu não consiga, mas...'."}
+- ～ないことはない = 'até que dá'. O verbo na forma ない (直せない, 'não consigo consertar') + ことはない vira a dupla negação reservada: 'não é que eu não consiga, mas...'.
 
 
-### 6. (production) {'pt-BR': "Peça permissão educada para ir embora ('deixe-me ir embora') a partir do verbo 帰る, montando causativo + て + ください."}
+### 6. (production) Peça permissão educada para ir embora ('deixe-me ir embora') a partir do verbo 帰る, montando causativo + て + ください.
 - **Resposta:** `{"text": "帰らせてください", "accept": ["帰らせてください", "かえらせてください", "帰らせて"]}`
-- {'pt-BR': "帰る (grupo 1) vira o causativo 帰らせる, depois 帰らせて, depois 帰らせてください ('deixe-me ir embora'). É o pedido de permissão para VOCÊ fazer a ação."}
+- 帰る (grupo 1) vira o causativo 帰らせる, depois 帰らせて, depois 帰らせてください ('deixe-me ir embora'). É o pedido de permissão para VOCÊ fazer a ação.
 
 

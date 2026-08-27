@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [hazu-da, hazu-ga-nai, kamo-shirenai, kitto] · vocabulário [値段] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-198131`, `sent:tatoeba-11692639`, `sent:tatoeba-225989`, `sent:tatoeba-2684823`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-2684823`, `sent:tatoeba-198131`, `sent:tatoeba-11692639`, `sent:tatoeba-225989`
 
 ---
 
@@ -30,7 +30,7 @@ Aqui 雨 (chuva) vem seguido direto de かもしれない: "amanhã, talvez chuv
 #### はずです: a conclusão que era de se esperar
 hazu-da sobe um degrau na escala. Não é certeza absoluta, mas uma conclusão lógica: pelo que eu sei, isto deve ser o caso. Cuidado para não confundir com o "dever" de obrigação; aqui é expectativa, "é de se esperar que".
 > 🗣 バスはすぐ来るはずです。 — O ônibus deve chegar logo.
-O raciocínio por trás do molde 来るはずです é claro: o horário diz que o バス (ônibus) passa agora, logo "deve chegar logo". Com adjetivo-na entra o な antes de はず: 静か vira 静かなはずです. Com substantivo, no lugar do な entra o の: 学生 vira 学生のはずです.
+O raciocínio por trás do molde 来る はずです é claro: o horário diz que o バス (ônibus) passa agora, logo "deve chegar logo". Com adjetivo-na entra o な antes de はず: 静か vira 静かなはずです. Com substantivo, no lugar do な entra o の: 学生 vira 学生のはずです.
 
 > **[l1-pitfall]**
 Não traduza はず por "tem que" no sentido de regra. 行くはずです é "deve ir / é esperado que vá" (eu deduzo), não "tem a obrigação de ir". Para obrigação você usaria outras formas, como なければならない.
@@ -68,28 +68,28 @@ Decore a escala como uma régua: かもしれない (talvez) vai para はずで�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual destas formas mostra a MAIOR certeza do falante de que algo é verdade?'}
+### 1. (recognition) Qual destas formas mostra a MAIOR certeza do falante de que algo é verdade?
 - **Resposta:** `{"choices": ["かもしれない", "きっと", "はずがない（negativo）"], "correct": "きっと"}`
-- {'pt-BR': "きっと ('com certeza') marca forte convicção de que algo É o caso. かもしれない é só 'talvez' (certeza baixa) e はずがない é a convicção do lado negativo ('é impossível que')."}
+- きっと ('com certeza') marca forte convicção de que algo É o caso. かもしれない é só 'talvez' (certeza baixa) e はずがない é a convicção do lado negativo ('é impossível que').
 
 
-### 2. (recognition) {'pt-BR': "Você vê a rua molhada e conclui: '雨が降った＿' ('pelo meu raciocínio, choveu; era de se esperar'). Qual forma encaixa?"}
+### 2. (recognition) Você vê a rua molhada e conclui: '雨が降った＿' ('pelo meu raciocínio, choveu; era de se esperar'). Qual forma encaixa?
 - **Resposta:** `{"choices": ["かもしれない", "はずです", "はずがない"], "correct": "はずです"}`
-- {'pt-BR': "はずです é a conclusão lógica 'deve ser / é de se esperar': você junta a evidência (rua molhada) e deduz. かもしれない seria um palpite fraco demais e はずがない negaria a ideia."}
+- はずです é a conclusão lógica 'deve ser / é de se esperar': você junta a evidência (rua molhada) e deduz. かもしれない seria um palpite fraco demais e はずがない negaria a ideia.
 
 
-### 3. (cloze) {'pt-BR': "Complete com 'talvez': 明日は雨＿。 (Amanhã talvez chova.)"}
+### 3. (cloze) Complete com 'talvez': 明日は雨＿。 (Amanhã talvez chova.)
 - **Resposta:** `{"text": "かもしれない", "full": "明日は雨かもしれない"}`
-- {'pt-BR': "かもしれない liga-se direto ao substantivo 雨 (sem だ) e abre uma possibilidade: 'talvez chuva amanhã'. É o degrau mais baixo da escala de certeza."}
+- かもしれない liga-se direto ao substantivo 雨 (sem だ) e abre uma possibilidade: 'talvez chuva amanhã'. É o degrau mais baixo da escala de certeza.
 - frases: `sent:tatoeba-2684823`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Não tem como estar certo!' com as peças: [はずがない] [正しい] [よ]"}
+### 4. (sentence_build) Monte 'Não tem como estar certo!' com as peças: [はずがない] [正しい] [よ]
 - **Resposta:** `{"order": ["正しい", "はずがない", "よ"], "text": "正しいはずがないよ。"}`
-- {'pt-BR': "正しい (estar certo) + はずがない (é impossível que) + よ (reforço): 'não tem como estar certo!'. はずがない é a negação categórica de はず, no extremo da escala."}
+- 正しい (estar certo) + はずがない (é impossível que) + よ (reforço): 'não tem como estar certo!'. はずがない é a negação categórica de はず, no extremo da escala.
 - frases: `sent:tatoeba-11692639`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Com certeza o preço é caro.' usando o advérbio きっと, a palavra 値段 (preço) e 高い (caro)."}
+### 5. (production) Diga em japonês 'Com certeza o preço é caro.' usando o advérbio きっと, a palavra 値段 (preço) e 高い (caro).
 - **Resposta:** `{"text": "値段はきっと高いです。", "accept": ["値段はきっと高いです", "値段はきっと高い", "ねだんはきっとたかいです", "ねだんはきっとたかい", "きっと値段は高いです", "きっと値段が高い"]}`
-- {'pt-BR': "きっと ('com certeza') é advérbio, então fica antes do que ele reforça: 値段 (preço) は + きっと + 高い (caro). Ele transmite forte convicção numa previsão pessoal."}
+- きっと ('com certeza') é advérbio, então fica antes do que ele reforça: 値段 (preço) は + きっと + 高い (caro). Ele transmite forte convicção numa previsão pessoal.
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:past_stories",
   "order": 5,
   "title": {
-    "pt-BR": "Contar o que aconteceu — parte 5"
+    "pt-BR": "Contar o que aconteceu, parte 5"
   },
   "say_now": [
     "sent:tatoeba-84089",
@@ -31,7 +31,6 @@
     "gram:gp-80",
     "gram:nasai",
     "gram:gp-12",
-    "gram:ni-suru",
     "gram:koto"
   ],
   "kanji_recognition": [
@@ -55,6 +54,120 @@
   "cumulative_known_vocab": 449,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-19"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-11960481",
+        "sent:tatoeba-1897537",
+        "sent:tatoeba-235631"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-80",
+      "examples": [
+        "sent:tatoeba-141431",
+        "sent:tatoeba-189474",
+        "sent:tatoeba-215746"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nasai",
+      "examples": [
+        "sent:tatoeba-78287",
+        "sent:tatoeba-79943",
+        "sent:tatoeba-78855"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:koto",
+      "examples": [
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Qual é o motivo da sua viagem?",
+      "answer_key": "旅行の目的は何ですか。",
+      "accepted_variants": [
+        "りょこうのもくてきわなんですか",
+        "りょこうのもくてきわなんですか。",
+        "旅行の目的は何ですか",
+        "旅行の目的は何ですか。"
+      ],
+      "sentence": "sent:tatoeba-78160",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Mas você parece tão feliz toda manhã...",
+      "answer_key": "毎朝とても楽しそうだけど。",
+      "accepted_variants": [
+        "まいあさとてもたのしそうだけど",
+        "まいあさとてもたのしそうだけど。",
+        "毎朝とても楽しそうだけど",
+        "毎朝とても楽しそうだけど。"
+      ],
+      "sentence": "sent:tatoeba-81342",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A viagem foi como você esperava?",
+      "answer_key": "旅行は期待通りでしたか。",
+      "accepted_variants": [
+        "りょこうわきたいとおりでしたか",
+        "りょこうわきたいとおりでしたか。",
+        "旅行は期待通りでしたか",
+        "旅行は期待通りでしたか。"
+      ],
+      "sentence": "sent:tatoeba-78156",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-147605",
+      "sent:tatoeba-11706794",
+      "sent:tatoeba-214558",
+      "sent:jec-0319",
+      "sent:tatoeba-5118",
+      "sent:tatoeba-78134"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 24,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "cf:n4:463:1000",
@@ -96,120 +209,5 @@
         "たずねる"
       ]
     }
-  ],
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:koto-ga-aru",
-      "examples": [
-        "sent:tatoeba-11960481",
-        "sent:tatoeba-1897537",
-        "sent:tatoeba-235631"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-80",
-      "examples": [
-        "sent:tatoeba-141431",
-        "sent:tatoeba-189474",
-        "sent:tatoeba-215746"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-78287",
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78855"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ni-suru",
-      "examples": [
-        "sent:gen-6bab4422cee3",
-        "sent:tatoeba-223815",
-        "sent:tatoeba-232235"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Qual é o motivo da sua viagem?",
-      "answer_key": "旅行の目的は何ですか。",
-      "accepted_variants": [
-        "旅行の目的は何ですか",
-        "旅行の目的は何ですか。"
-      ],
-      "sentence": "sent:tatoeba-78160",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Mas você parece tão feliz toda manhã...",
-      "answer_key": "毎朝とても楽しそうだけど。",
-      "accepted_variants": [
-        "毎朝とても楽しそうだけど",
-        "毎朝とても楽しそうだけど。"
-      ],
-      "sentence": "sent:tatoeba-81342",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "A viagem foi como você esperava?",
-      "answer_key": "旅行は期待通りでしたか。",
-      "accepted_variants": [
-        "旅行は期待通りでしたか",
-        "旅行は期待通りでしたか。"
-      ],
-      "sentence": "sent:tatoeba-78156",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
-    "items": [
-      "sent:tatoeba-147605",
-      "sent:tatoeba-11706794",
-      "sent:tatoeba-214558",
-      "sent:jec-0319",
-      "sent:tatoeba-5118",
-      "sent:tatoeba-78134"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 30,
-    "fluency": 6
-  }
+  ]
 }

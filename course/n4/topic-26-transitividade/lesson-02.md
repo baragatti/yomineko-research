@@ -67,28 +67,28 @@ O adjetivo 細かい (pequeno, miúdo) aparece bastante em casa: para falar de �
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual objeto da casa é uma 鏡 (かがみ)?'}
+### 1. (recognition) Qual objeto da casa é uma 鏡 (かがみ)?
 - **Resposta:** `{"choices": ["um espelho", "uma borracha de apagar", "um casacão"], "correct": "um espelho"}`
-- {'pt-BR': '鏡 (かがみ) é o espelho. A borracha de apagar é 消しゴム e o casacão é オーバー.'}
+- 鏡 (かがみ) é o espelho. A borracha de apagar é 消しゴム e o casacão é オーバー.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete com a partícula certa: 火＿消えました。 (O fogo apagou sozinho.); 消える é intransitivo.'}
+### 2. (particle_choice) Complete com a partícula certa: 火＿消えました。 (O fogo apagou sozinho.); 消える é intransitivo.
 - **Resposta:** `{"choices": ["が", "を", "に"], "correct": "が"}`
-- {'pt-BR': "消える é intransitivo (a coisa muda por si), então o sujeito 火 leva が. Se fosse 消す (transitivo, 'apagar'), aí sim usaríamos を."}
+- 消える é intransitivo (a coisa muda por si), então o sujeito 火 leva が. Se fosse 消す (transitivo, 'apagar'), aí sim usaríamos を.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a partícula do objeto direto: パンにジャム＿塗ります。 (Passo geleia no pão.); 塗る é transitivo.'}
+### 3. (cloze) Complete com a partícula do objeto direto: パンにジャム＿塗ります。 (Passo geleia no pão.); 塗る é transitivo.
 - **Resposta:** `{"text": "を", "full": "パンにジャムを塗ります"}`
-- {'pt-BR': '塗る (passar, espalhar) é transitivo: o que você espalha (ジャム) leva を. O に marca a superfície (パン).'}
+- 塗る (passar, espalhar) é transitivo: o que você espalha (ジャム) leva を. O に marca a superfície (パン).
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Eu apaguei o fogo.' com as peças: [消しました] [を] [私は] [火]"}
+### 4. (sentence_build) Monte 'Eu apaguei o fogo.' com as peças: [消しました] [を] [私は] [火]
 - **Resposta:** `{"order": ["私は", "火", "を", "消しました"], "text": "私は火を消しました。"}`
-- {'pt-BR': '消す é transitivo: há um agente (私) que age sobre o objeto (火), então o objeto leva を. 私は (tópico) + 火 (fogo) + を + 消しました (apaguei).'}
+- 消す é transitivo: há um agente (私) que age sobre o objeto (火), então o objeto leva を. 私は (tópico) + 火 (fogo) + を + 消しました (apaguei).
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'O casaco secou.' usando オーバー (casacão), a partícula do intransitivo e 乾く (secar) no passado educado."}
+### 5. (production) Diga em japonês 'O casaco secou.' usando オーバー (casacão), a partícula do intransitivo e 乾く (secar) no passado educado.
 - **Resposta:** `{"text": "オーバーが乾きました。", "accept": ["オーバーが乾きました", "オーバーがかわきました"]}`
-- {'pt-BR': "乾く é intransitivo (a coisa seca sozinha), então オーバー é o sujeito e leva が. No passado educado: 乾く → 乾きました. (O par transitivo seria 乾かす, 'secar algo', com を.)"}
+- 乾く é intransitivo (a coisa seca sozinha), então オーバー é o sujeito e leva が. No passado educado: 乾く → 乾きました. (O par transitivo seria 乾かす, 'secar algo', com を.)
 
 

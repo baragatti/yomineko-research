@@ -4,7 +4,7 @@
   "stage": "speak:health",
   "order": 2,
   "title": {
-    "pt-BR": "Emergência e saúde — parte 2"
+    "pt-BR": "Emergência e saúde, parte 2"
   },
   "say_now": [
     "sent:tatoeba-83934",
@@ -27,7 +27,8 @@
   "patterns": [
     "gram:nasai",
     "gram:gp-81",
-    "gram:kana"
+    "gram:kana",
+    "gram:gp-14"
   ],
   "kanji_recognition": [
     "意",
@@ -50,6 +51,112 @@
   "cumulative_known_vocab": 381,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:you-ni-you-na",
+    "gram:tara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:nasai",
+      "examples": [
+        "sent:tatoeba-79943",
+        "sent:tatoeba-78287",
+        "sent:tatoeba-78855"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-81",
+      "examples": [
+        "sent:gen-20f9f43c9339",
+        "sent:gen-e5bc8ecc1fc4",
+        "sent:gen-f416c28a18c3"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-72c52ba4dd08"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74036",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Acho que você deveria ser examinado por um médico.",
+      "answer_key": "医者に見てもらうべきだと思う。",
+      "accepted_variants": [
+        "いしゃにみてもらうべきだとおもう",
+        "いしゃにみてもらうべきだとおもう。",
+        "医者に見てもらうべきだと思う",
+        "医者に見てもらうべきだと思う。"
+      ],
+      "sentence": "sent:tatoeba-190894",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu pai quer fazer de mim um médico.",
+      "answer_key": "父は私を医者にしたがっている。",
+      "accepted_variants": [
+        "ちちわわたしをいしゃにしたがっている",
+        "ちちわわたしをいしゃにしたがっている。",
+        "父は私を医者にしたがっている",
+        "父は私を医者にしたがっている。"
+      ],
+      "sentence": "sent:tatoeba-84479",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você deveria se consultar com um médico, viu?",
+      "answer_key": "医者に診てもらうべきですよ。",
+      "accepted_variants": [
+        "いしゃにみてもらうべきですよ",
+        "いしゃにみてもらうべきですよ。",
+        "医者に診てもらうべきですよ",
+        "医者に診てもらうべきですよ。"
+      ],
+      "sentence": "sent:tatoeba-190902",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
+    "items": [
+      "sent:tatoeba-3263386",
+      "sent:tatoeba-171774",
+      "sent:tatoeba-226765",
+      "sent:tatoeba-1590321",
+      "sent:tatoeba-179620",
+      "sent:tatoeba-1699768"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 20,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n4:1104",
@@ -96,97 +203,5 @@
         "おっと"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-128",
-    "gram:you-ni-you-na",
-    "gram:tara"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78287",
-        "sent:tatoeba-78855"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-81",
-      "examples": [
-        "sent:gen-20f9f43c9339",
-        "sent:gen-e5bc8ecc1fc4",
-        "sent:gen-f416c28a18c3"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kana",
-      "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Acho que você deveria ser examinado por um médico.",
-      "answer_key": "医者に見てもらうべきだと思う。",
-      "accepted_variants": [
-        "医者に見てもらうべきだと思う",
-        "医者に見てもらうべきだと思う。"
-      ],
-      "sentence": "sent:tatoeba-190894",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Meu pai quer fazer de mim um médico.",
-      "answer_key": "父は私を医者にしたがっている。",
-      "accepted_variants": [
-        "父は私を医者にしたがっている",
-        "父は私を医者にしたがっている。"
-      ],
-      "sentence": "sent:tatoeba-84479",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Você deveria se consultar com um médico, viu?",
-      "answer_key": "医者に診てもらうべきですよ。",
-      "accepted_variants": [
-        "医者に診てもらうべきですよ",
-        "医者に診てもらうべきですよ。"
-      ],
-      "sentence": "sent:tatoeba-190902",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
-    "items": [
-      "sent:tatoeba-3263386",
-      "sent:tatoeba-171774",
-      "sent:tatoeba-226765",
-      "sent:tatoeba-1590321",
-      "sent:tatoeba-179620",
-      "sent:tatoeba-1699768"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 23,
-    "fluency": 6
-  }
+  ]
 }

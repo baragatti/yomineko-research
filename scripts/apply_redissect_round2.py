@@ -1,6 +1,23 @@
 #!/usr/bin/env python3
 """Apply the FOUR re-dissection fixes that survived adversarial verification.
 
+!!! APPLIED ONE-SHOT — DO NOT RE-RUN WITH --apply. !!!
+================================================================================================
+The four fixes below were APPLIED to db/corpus.sqlite on 2026-08-19 (commit c9d54f0) and each is
+guarded by an expected-current-value check, so a re-run would only SKIP them. What must NEVER run
+again is the `DELETE FROM sentence_vocab` + rebuild block at the bottom of main(). It rebuilds the
+table as a projection of token.vocab_id, which it never was: sentence_vocab was the UNION of three
+rules (token links, relink_vocab.py's contiguous-token runs, and the July-2026 n3 lemma tagger).
+That DELETE — here and in scripts/fix_homophone_vocab_links.py — thinned it from ~31,789 rows to
+exactly the 20,357-row token subset and destroyed 436 (sentence_id, vocab_id) pairs the COMMITTED
+exam banks depend on; n3_context_fill collapses from 400 items to 97 on a rebuild.
+
+Repaired 2026-08-26 by scripts/ingest/build_sentence_vocab.py, which is now the ONLY writer of
+sentence_vocab (INSERT OR IGNORE, all three rules, per-row link_rule/reading_verified provenance).
+If token.vocab_id ever moves again, run THAT after the edit — never this DELETE.
+================================================================================================
+
+
 The re-dissection queue proposed 28 fixes. Independent verification kept 4. What killed the rest is
 worth recording, because the same reasoning applies to any future queue of this shape:
 

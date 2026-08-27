@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [mo, no] · vocabulário [お兄さん, お姉さん, お母さん, お父さん, 兄, 叔父, 大きな, 妹, 姉, 弟] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-85538`, `sent:tatoeba-1596597`, `sent:tatoeba-1057336`, `sent:tatoeba-4789`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1596597`, `sent:tatoeba-85538`, `sent:tatoeba-1057336`, `sent:tatoeba-4789`
 
 ---
 
@@ -76,28 +76,28 @@ Bônus de vocabulário:大きな(おおきな) quer dizer "grande" e vem antes d
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Na frase 私の本 ('meu livro'), o que a partícula の faz?"}
+### 1. (recognition) Na frase 私の本 ('meu livro'), o que a partícula の faz?
 - **Resposta:** `{"choices": ["liga dois substantivos, marcando posse/relação", "transforma a frase em pergunta", "marca o objeto direto"], "correct": "liga dois substantivos, marcando posse/relação"}`
-- {'pt-BR': "の cola dois substantivos na ordem dono + の + coisa: 私 (eu) + の + 本 (livro) = 'meu livro'."}
+- の cola dois substantivos na ordem dono + の + coisa: 私 (eu) + の + 本 (livro) = 'meu livro'.
 
 
-### 2. (cloze) {'pt-BR': "Complete com a partícula de posse: 姉＿犬 ('o cachorro da minha irmã mais velha')."}
+### 2. (cloze) Complete com a partícula de posse: 姉＿犬 ('o cachorro da minha irmã mais velha').
 - **Resposta:** `{"text": "の", "full": "姉の犬"}`
-- {'pt-BR': '姉 (irmã mais velha) é o dono, 犬 (cachorro) é a coisa; の liga os dois: 姉の犬.'}
+- 姉 (irmã mais velha) é o dono, 犬 (cachorro) é a coisa; の liga os dois: 姉の犬.
 
 
-### 3. (particle_choice) {'pt-BR': 'Complete: 私＿学生です。 (Eu TAMBÉM sou estudante.)'}
+### 3. (particle_choice) Complete: 私＿学生です。 (Eu TAMBÉM sou estudante.)
 - **Resposta:** `{"choices": ["も", "は", "の"], "correct": "も"}`
-- {'pt-BR': "Para dizer 'também', troca-se は por も: 私は学生です ('Eu sou estudante') → 私も学生です ('Eu também sou estudante')."}
+- Para dizer 'também', troca-se は por も: 私は学生です ('Eu sou estudante') → 私も学生です ('Eu também sou estudante').
 - frases: `sent:tatoeba-85538`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'a mãe do meu amigo' com as peças: [お母さん] [友だち] [の]"}
+### 4. (sentence_build) Monte 'a mãe do meu amigo' com as peças: [お母さん] [友だち] [の]
 - **Resposta:** `{"order": ["友だち", "の", "お母さん"], "text": "友だちのお母さん"}`
-- {'pt-BR': 'O dono (友だち, amigo) vem antes do の, a coisa/pessoa (お母さん, mãe) vem depois: 友だちのお母さん.'}
+- O dono (友だち, amigo) vem antes do の, a coisa/pessoa (お母さん, mãe) vem depois: 友だちのお母さん.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Meu irmão mais velho também é médico.' (use 兄, も e 医者 = いしゃ, médico)."}
+### 5. (production) Diga em japonês 'Meu irmão mais velho também é médico.' (use 兄, も e 医者 = いしゃ, médico).
 - **Resposta:** `{"text": "兄も医者です。", "accept": ["兄も医者です", "あにもいしゃです", "兄も医者です。"]}`
-- {'pt-BR': "兄 (meu irmão mais velho) + も ('também', no lugar de は) + 医者 (médico) + です: 兄も医者です。"}
+- 兄 (meu irmão mais velho) + も ('também', no lugar de は) + 医者 (médico) + です: 兄も医者です。
 
 

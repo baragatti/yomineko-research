@@ -4,7 +4,7 @@
   "stage": "speak:shopping",
   "order": 1,
   "title": {
-    "pt-BR": "Isto, aquilo, quanto custa — parte 1"
+    "pt-BR": "Isto, aquilo, quanto custa, parte 1"
   },
   "say_now": [
     "sent:tatoeba-229628",
@@ -23,10 +23,7 @@
     "vocab:1078630",
     "vocab:1628530"
   ],
-  "patterns": [
-    "gram:da-desu",
-    "gram:gp"
-  ],
+  "patterns": [],
   "kanji_recognition": [
     "何",
     "小"
@@ -44,6 +41,77 @@
   "cumulative_known_vocab": 43,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:yori",
+    "gram:wa-yori-desu",
+    "gram:gp-2",
+    "gram:gp-4"
+  ],
+  "drills": [],
+  "production": [
+    {
+      "prompt_pt": "O setor de reservas, por favor.",
+      "answer_key": "予約係をお願いします。",
+      "accepted_variants": [
+        "よやくかかりをおねがいします",
+        "よやくかかりをおねがいします。",
+        "予約係をお願いします",
+        "予約係をお願いします。"
+      ],
+      "sentence": "sent:tatoeba-78964",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Eu gostaria de experimentar outros sapatos diferentes desses.",
+      "answer_key": "それより他の靴をはいてみたいのですが。",
+      "accepted_variants": [
+        "それよりほかのくつをはいてみたいのですが",
+        "それよりほかのくつをはいてみたいのですが。",
+        "それより他の靴をはいてみたいのですが",
+        "それより他の靴をはいてみたいのですが。"
+      ],
+      "sentence": "sent:tatoeba-204778",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Desculpe pelo atraso.",
+      "answer_key": "遅れてすみません。",
+      "accepted_variants": [
+        "おくれてすみません",
+        "おくれてすみません。",
+        "遅れてすみません",
+        "遅れてすみません。"
+      ],
+      "sentence": "sent:tatoeba-126710",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
+    "items": [
+      "sent:tatoeba-229460",
+      "sent:tatoeba-1874351",
+      "sent:tatoeba-229425",
+      "sent:tatoeba-9559301",
+      "sent:tatoeba-4971",
+      "sent:tatoeba-1576172"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 43,
+    "meaning-output": 11,
+    "language-focused": 25,
+    "fluency": 21
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 7,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:26",
@@ -95,89 +163,5 @@
         "テーブル"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:yori",
-    "gram:gp-2",
-    "gram:gp-4",
-    "gram:wa-yori-desu"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5057",
-        "sent:tatoeba-120747",
-        "sent:tatoeba-75188"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-4708",
-        "sent:tatoeba-5332",
-        "sent:tatoeba-5078"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O setor de reservas, por favor.",
-      "answer_key": "予約係をお願いします。",
-      "accepted_variants": [
-        "予約係をお願いします",
-        "予約係をお願いします。"
-      ],
-      "sentence": "sent:tatoeba-78964",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu gostaria de experimentar outros sapatos diferentes desses.",
-      "answer_key": "それより他の靴をはいてみたいのですが。",
-      "accepted_variants": [
-        "それより他の靴をはいてみたいのですが",
-        "それより他の靴をはいてみたいのですが。"
-      ],
-      "sentence": "sent:tatoeba-204778",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Desculpe pelo atraso.",
-      "answer_key": "遅れてすみません。",
-      "accepted_variants": [
-        "遅れてすみません",
-        "遅れてすみません。"
-      ],
-      "sentence": "sent:tatoeba-126710",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
-    "items": [
-      "sent:tatoeba-229460",
-      "sent:tatoeba-1874351",
-      "sent:tatoeba-229425",
-      "sent:tatoeba-9559301",
-      "sent:tatoeba-4971",
-      "sent:tatoeba-1576172"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 45,
-    "fluency": 16
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 17,
-    "fluency": 6
-  }
+  ]
 }

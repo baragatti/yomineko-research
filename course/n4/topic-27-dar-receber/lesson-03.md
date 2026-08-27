@@ -8,9 +8,9 @@
 - Negar o desejo com ～ないでほしい (quero que você NÃO faça)
 - Usar a variante indireta ように～てほしい para pedir uma mudança de hábito ou de estado
 
-**Introduz:** gramática [gp-106, gp-152, te-hoshii] · vocabulário [ご覧になる, 亡くなる, 入学, 宜しい, 校長, 申す, 科学, 興味, 試験] · kanji [工 建 料 有] · kana [—]
+**Introduz:** gramática [gp-106, gp-152, te-hoshii] · vocabulário [ご覧になる, 亡くなる, 入学, 宜しい, 居る, 校長, 申す, 科学, 興味, 試験] · kanji [工 建 料 有] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-9c98c3debc99`, `sent:gen-d0193ca6b4d8`, `sent:gen-19bb4adab2c3`, `sent:tatoeba-1152237`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1152237`, `sent:gen-19bb4adab2c3`, `sent:gen-d0193ca6b4d8`, `sent:gen-9c98c3debc99`
 
 ---
 
@@ -80,28 +80,28 @@ Hoje você ganha quatro kanji. Para cada um, a forma e um truque para fixar:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase significa 'Quero que VOCÊ cante' (e não 'eu quero cantar')?"}
+### 1. (recognition) Qual frase significa 'Quero que VOCÊ cante' (e não 'eu quero cantar')?
 - **Resposta:** `{"choices": ["歌いたい", "歌ってほしい", "歌っている"], "correct": "歌ってほしい"}`
-- {'pt-BR': "～てほしい (歌ってほしい) expressa o desejo de que OUTRA pessoa faça a ação. 歌いたい seria 'EU quero cantar' (～たい). A pessoa que age é diferente em cada um."}
+- ～てほしい (歌ってほしい) expressa o desejo de que OUTRA pessoa faça a ação. 歌いたい seria 'EU quero cantar' (～たい). A pessoa que age é diferente em cada um.
 - frases: `sent:tatoeba-1152237`
 
-### 2. (particle_choice) {'pt-BR': 'Complete: 友だち＿来てほしい。 (Quero que meus amigos venham.)'}
+### 2. (particle_choice) Complete: 友だち＿来てほしい。 (Quero que meus amigos venham.)
 - **Resposta:** `{"choices": ["に", "を", "が"], "correct": "に"}`
-- {'pt-BR': "A pessoa de quem você deseja a ação leva に em ～てほしい: 友だちに来てほしい. Pense em に como 'apontar' para quem você quer que aja."}
+- A pessoa de quem você deseja a ação leva に em ～てほしい: 友だちに来てほしい. Pense em に como 'apontar' para quem você quer que aja.
 - frases: `sent:gen-19bb4adab2c3`
 
-### 3. (cloze) {'pt-BR': "Complete com a forma negativa de ～てほしい para 'não quero que você vá': 行か＿＿ほしい。"}
+### 3. (cloze) Complete com a forma negativa de ～てほしい para 'não quero que você vá': 行か＿＿ほしい。
 - **Resposta:** `{"text": "ないで", "full": "行かないでほしい"}`
-- {'pt-BR': "Para pedir que alguém NÃO faça algo, usa-se ～ないでほしい: 行かないでほしい = 'não quero que você vá'. É a versão negativa de ～てほしい."}
+- Para pedir que alguém NÃO faça algo, usa-se ～ないでほしい: 行かないでほしい = 'não quero que você vá'. É a versão negativa de ～てほしい.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Quero que você passe a comer verdura.' com as peças: [ほしい] [野菜を] [食べるように] [して]"}
+### 4. (sentence_build) Monte 'Quero que você passe a comer verdura.' com as peças: [ほしい] [野菜を] [食べるように] [して]
 - **Resposta:** `{"order": ["野菜を", "食べるように", "して", "ほしい"], "text": "野菜を食べるようにしてほしい"}`
-- {'pt-BR': 'A variante indireta ように～てほしい pede uma mudança de hábito: 野菜を + 食べるように (de modo que coma) + して + ほしい. O verbo antes de ように fica na forma de dicionário (食べる).'}
+- A variante indireta ように～てほしい pede uma mudança de hábito: 野菜を + 食べるように (de modo que coma) + して + ほしい. O verbo antes de ように fica na forma de dicionário (食べる).
 - frases: `sent:gen-d0193ca6b4d8`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Quero que meu irmão mais novo estude mais.' usando 弟 (irmão mais novo), もっと (mais), 勉強する e ～てほしい."}
+### 5. (production) Diga em japonês 'Quero que meu irmão mais novo estude mais.' usando 弟 (irmão mais novo), もっと (mais), 勉強する e ～てほしい.
 - **Resposta:** `{"text": "弟にもっと勉強してほしい。", "accept": ["弟にもっと勉強してほしい", "おとうとにもっと勉強してほしい", "弟にもっと勉強してほしいです", "弟にもっと勉強してほしいんだ"]}`
-- {'pt-BR': '弟 (irmão) + に (a pessoa de quem se deseja a ação) + もっと (mais) + 勉強して (て-forma de estudar) + ほしい (desejo). É o molde (pessoa)に + て-forma + ほしい.'}
+- 弟 (irmão) + に (a pessoa de quem se deseja a ação) + もっと (mais) + 勉強して (て-forma de estudar) + ほしい (desejo). É o molde (pessoa)に + て-forma + ほしい.
 
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-koto] · vocabulário [上等, 上達, 人生, 信じる, 冗談, 処理, 少々, 徐々に, 情報, 承認, 新鮮, 状態, 生じる, 症状, 真剣, 証明, 進学, 食欲] · kanji [忙 才 泳 疲 眠] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-77944`
 
 ---
 
@@ -85,33 +85,33 @@ O kanji 才 significa "talento" e também conta "anos de idade" (五才, "cinco 
 ---
 
 ## Exercícios
-### 1. (cloze) {'pt-BR': "Complete 'consigo falar japonês' com o nominalizador que falta: 日本語を話す＿ができます"}
+### 1. (cloze) Complete 'consigo falar japonês' com o nominalizador que falta: 日本語を話す＿ができます
 - **Resposta:** `{"text": "こと", "full": "日本語を話すことができます"}`
-- {'pt-BR': "〜ことができる = 'conseguir fazer'. O こと é obrigatório entre o verbo simples (話す) e できる. Em português a gente não usa marcador nenhum, e é justamente aí que o brasileiro esquece o こと."}
+- 〜ことができる = 'conseguir fazer'. O こと é obrigatório entre o verbo simples (話す) e できる. Em português a gente não usa marcador nenhum, e é justamente aí que o brasileiro esquece o こと.
 
 
-### 2. (particle_choice) {'pt-BR': "Para dizer 'eu vi ele nadando' (彼が泳ぐ＿を見た), com percepção direta, qual nominalizador entra?"}
+### 2. (particle_choice) Para dizer 'eu vi ele nadando' (彼が泳ぐ＿を見た), com percepção direta, qual nominalizador entra?
 - **Resposta:** `{"choices": ["こと", "の", "から", "まで"], "correct": "の"}`
-- {'pt-BR': "Com verbos de percepção direta (見る ver, 聞く ouvir), o japonês prefere の, mais concreto e ligado ao que se percebe na hora. 彼が泳ぐのを見た = 'vi ele nadando'. こと soaria abstrato demais aqui."}
+- Com verbos de percepção direta (見る ver, 聞く ouvir), o japonês prefere の, mais concreto e ligado ao que se percebe na hora. 彼が泳ぐのを見た = 'vi ele nadando'. こと soaria abstrato demais aqui.
 
 
-### 3. (recognition) {'pt-BR': "Qual frase usa こと corretamente para um fato geral ('nadar é importante')?"}
+### 3. (recognition) Qual frase usa こと corretamente para um fato geral ('nadar é importante')?
 - **Resposta:** `{"choices": ["泳ぐことは大切だ", "泳ぐのを大切だ", "泳ぐは大切だこと", "大切だ泳ぐこと"], "correct": "泳ぐことは大切だ"}`
-- {'pt-BR': "Para princípios e fatos gerais usamos こと. 泳ぐ vira 泳ぐこと (o ato de nadar), recebe a partícula は e fecha com 大切だ (é importante): 'nadar é importante'."}
+- Para princípios e fatos gerais usamos こと. 泳ぐ vira 泳ぐこと (o ato de nadar), recebe a partícula は e fecha com 大切だ (é importante): 'nadar é importante'.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra desta lição ao seu significado.'}
+### 4. (matching) Associe cada palavra desta lição ao seu significado.
 - **Resposta:** `{"pairs": [["上達", "progresso"], ["情報", "informação"], ["真剣", "sério"], ["徐々に", "gradualmente"]]}`
-- {'pt-BR': '上達 (じょうたつ) = progresso numa habilidade; 情報 (じょうほう) = informação; 真剣 (しんけん) = sério/empenhado; 徐々に (じょじょに) = gradualmente. 徐々に é advérbio, ótimo para descrever um 上達 que vem aos poucos.'}
+- 上達 (じょうたつ) = progresso numa habilidade; 情報 (じょうほう) = informação; 真剣 (しんけん) = sério/empenhado; 徐々に (じょじょに) = gradualmente. 徐々に é advérbio, ótimo para descrever um 上達 que vem aos poucos.
 
 
-### 5. (production) {'pt-BR': "Diga 'consigo nadar' em japonês, na forma educada, usando 泳ぐ (nadar) e 〜ことができます."}
+### 5. (production) Diga 'consigo nadar' em japonês, na forma educada, usando 泳ぐ (nadar) e 〜ことができます.
 - **Resposta:** `{"text": "泳ぐことができます", "accept": ["泳ぐことができます", "およぐことができます", "泳ぐ事ができます"]}`
-- {'pt-BR': "泳ぐ (forma simples) + ことができます = 'consigo nadar'. Lembre que o こと liga o verbo a できる; sem ele a frase fica agramatical."}
+- 泳ぐ (forma simples) + ことができます = 'consigo nadar'. Lembre que o こと liga o verbo a できる; sem ele a frase fica agramatical.
 
 
-### 6. (sentence_build) {'pt-BR': "Monte 'acredito que vou progredir no japonês' com as peças: [信じる] [こと] [日本語が] [上達する] [を]"}
+### 6. (sentence_build) Monte 'acredito que vou progredir no japonês' com as peças: [信じる] [こと] [日本語が] [上達する] [を]
 - **Resposta:** `{"order": ["日本語が", "上達する", "こと", "を", "信じる"], "text": "日本語が上達することを信じる"}`
-- {'pt-BR': "A frase 日本語が上達する ('progredir no japonês') é empacotada por こと para virar substantivo, recebe を como objeto e fecha com 信じる ('acredito'). O verbo principal vai no fim, como sempre em japonês."}
+- A frase 日本語が上達する ('progredir no japonês') é empacotada por こと para virar substantivo, recebe を como objeto e fecha com 信じる ('acredito'). O verbo principal vai no fim, como sempre em japonês.
 
 

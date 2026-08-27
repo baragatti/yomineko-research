@@ -65,28 +65,28 @@ Um belo par de verbos com seus substantivos derivados.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'esforço / empenho'?"}
+### 1. (recognition) Qual palavra significa 'esforço / empenho'?
 - **Resposta:** `{"choices": ["努力", "内容", "仲間"], "correct": "努力"}`
-- {'pt-BR': "努力 (どりょく) é esforço. 内容 é 'conteúdo' e 仲間, 'companheiro'."}
+- 努力 (どりょく) é esforço. 内容 é 'conteúdo' e 仲間, 'companheiro'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["泥", "lama"], ["トンネル", "túnel"], ["眺め", "vista/panorama"], ["仲", "relação"]]}`
-- {'pt-BR': '泥=lama, トンネル=túnel, 眺め=vista, 仲=relação.'}
+- 泥=lama, トンネル=túnel, 眺め=vista, 仲=relação.
 
 
-### 3. (cloze) {'pt-BR': "Complete com o intransitivo: 'A correnteza do rio é rápida.' 川の＿＿が速い。"}
+### 3. (cloze) Complete com o intransitivo: 'A correnteza do rio é rápida.' 川の＿＿が速い。
 - **Resposta:** `{"text": "流れ", "full": "川の流れが速い。"}`
-- {'pt-BR': "流れ (substantivo de 流れる, 'fluir') é a correnteza. 流し viria de 流す ('despejar')."}
+- 流れ (substantivo de 流れる, 'fluir') é a correnteza. 流し viria de 流す ('despejar').
 
 
-### 4. (particle_choice) {'pt-BR': "Escolha a palavra: 'Por mais que eu me esforce...' ＿＿努力しても…"}
+### 4. (particle_choice) Escolha a palavra: 'Por mais que eu me esforce...' ＿＿努力しても…
 - **Resposta:** `{"choices": ["どんなに", "とんでもない", "なお"], "correct": "どんなに"}`
-- {'pt-BR': "どんなに…ても = 'por mais que...'. とんでもない seria 'absurdo'."}
+- どんなに…ても = 'por mais que...'. とんでもない seria 'absurdo'.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês: 'Tomara que o esforço dê frutos.' (use 努力 e ～といいなあ)"}
-- **Resposta:** `{"text": "努力が実るといいなあ", "accept": ["どりょくが実るといいなあ", "努力がみのるといいなあ", "努力が報われるといいなあ"]}`
-- {'pt-BR': "努力 (どりょく) é o esforço; ～といいなあ expressa o desejo 'tomara que...'."}
+### 5. (production) Diga em japonês: 'Tomara que o esforço dê frutos.' (use 努力 e ～といいなあ)
+- **Resposta:** `{"text": "努力が実るといいなあ", "accept": ["努力が実るといいなあ", "どりょくが実るといいなあ", "努力がみのるといいなあ", "努力が報われるといいなあ"]}`
+- 努力 (どりょく) é o esforço; ～といいなあ expressa o desejo 'tomara que...'.
 
 

@@ -69,28 +69,28 @@ Repare como, no exemplo acima, 残り (o substantivo "resto") e 残す (o verbo 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é o significado de 年齢 (ねんれい)?'}
+### 1. (recognition) Qual é o significado de 年齢 (ねんれい)?
 - **Resposta:** `{"choices": ["a idade de uma pessoa", "o ano inteiro, sem parar", "uma época ou período histórico", "um intervalo contado de anos"], "correct": "a idade de uma pessoa"}`
-- {'pt-BR': '年齢 (ねんれい) é a idade de uma pessoa. "O ano inteiro" é 年中, "época/período" é 年代 e "intervalo de anos" é 年間.'}
+- 年齢 (ねんれい) é a idade de uma pessoa. "O ano inteiro" é 年中, "época/período" é 年代 e "intervalo de anos" é 年間.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra japonesa ao seu significado em português.'}
+### 2. (matching) Associe cada palavra japonesa ao seu significado em português.
 - **Resposta:** `{"pairs": [["農業", "agricultura (a atividade)"], ["農家", "família de agricultores"], ["農民", "camponês (a pessoa)"], ["能力", "capacidade, habilidade"]]}`
-- {'pt-BR': '農業 é a atividade da lavoura; 農家 é a casa ou a família de agricultores; 農民 é o trabalhador rural; e 能力 é a capacidade ou habilidade de alguém.'}
+- 農業 é a atividade da lavoura; 農家 é a casa ou a família de agricultores; 農民 é o trabalhador rural; e 能力 é a capacidade ou habilidade de alguém.
 
 
-### 3. (cloze) {'pt-BR': 'Complete: 傷んだところだけ____ました (Removi só a parte estragada). Use a forma do verbo 除く no passado polido.'}
+### 3. (cloze) Complete: 傷んだところだけ____ました (Removi só a parte estragada). Use a forma do verbo 除く no passado polido.
 - **Resposta:** `{"text": "除き", "full": "傷んだところだけ除きました。"}`
-- {'pt-BR': '除く (のぞく) significa remover, eliminar, tirar. No passado polido fica 除きました. A frase completa é 傷んだところだけ除きました (Removi só a parte estragada).'}
+- 除く (のぞく) significa remover, eliminar, tirar. No passado polido fica 除きました. A frase completa é 傷んだところだけ除きました (Removi só a parte estragada).
 
 
-### 4. (production) {'pt-BR': 'Traduza para o japonês: "Esta casa tem rato o ano todo, e mesmo assim o aluguel é caro." (use 年中, 鼠 e a estrutura くせに).'}
+### 4. (production) Traduza para o japonês: "Esta casa tem rato o ano todo, e mesmo assim o aluguel é caro." (use 年中, 鼠 e a estrutura くせに).
 - **Resposta:** `{"text": "この家は年中鼠が出るくせに、家賃は高い", "accept": ["この家は年中ネズミが出るくせに、家賃は高い", "この家は年中鼠が出るくせに家賃は高い", "この家は年中ねずみが出るくせに、家賃は高い"]}`
-- {'pt-BR': '年中 indica "o ano todo"; 鼠 (ネズミ) é o rato; e くせに carrega a crítica de "mesmo assim". Uma versão natural é この家は年中鼠が出るくせに、家賃は高い.'}
+- 年中 indica "o ano todo"; 鼠 (ネズミ) é o rato; e くせに carrega a crítica de "mesmo assim". Uma versão natural é この家は年中鼠が出るくせに、家賃は高い.
 
 
-### 5. (recognition) {'pt-BR': 'Numa frase você quer dizer que alguém está totalmente "imerso/empolgado" com um jogo. Qual palavra usar?'}
+### 5. (recognition) Numa frase você quer dizer que alguém está totalmente "imerso/empolgado" com um jogo. Qual palavra usar?
 - **Resposta:** `{"choices": ["熱中 (ねっちゅう)", "熱帯 (ねったい)", "年代 (ねんだい)", "残り (のこり)"], "correct": "熱中 (ねっちゅう)"}`
-- {'pt-BR': '熱中 (ねっちゅう) é estar imerso ou muito empolgado com algo. 熱帯 são os trópicos, 年代 é uma época e 残り é o resto/sobra.'}
+- 熱中 (ねっちゅう) é estar imerso ou muito empolgado com algo. 熱帯 são os trópicos, 年代 é uma época e 残り é o resto/sobra.
 
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-n-datte, n3-rashii] · vocabulário [ジュース, 上京, 主婦, 住宅, 修理, 収穫, 宿泊, 州, 手術, 正午, 渋滞, 週, 銃, 霜, 順] · kanji [寝 晴 盗 酒] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-100541`, `sent:tatoeba-9240812`
 
 ---
 
@@ -98,28 +98,28 @@ Repare que 晴 e 暗 compartilham o radical do sol (日) à esquerda, mas levam 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Como se diz 'parece que ele está com gripe' (informação ouvida) com らしい?"}
+### 1. (recognition) Como se diz 'parece que ele está com gripe' (informação ouvida) com らしい?
 - **Resposta:** `{"choices": ["彼はインフルエンザらしい", "彼はインフルエンザだらしい", "彼はインフルエンザならしい", "彼はインフルエンザらしいだ"], "correct": "彼はインフルエンザらしい"}`
-- {'pt-BR': 'Substantivo liga-se DIRETO a らしい, sem だ: インフルエンザらしい. As formas com だ (インフルエンザだらしい) e com な (インフルエンザならしい) estão erradas para o substantivo nesse padrão.'}
+- Substantivo liga-se DIRETO a らしい, sem だ: インフルエンザらしい. As formas com だ (インフルエンザだらしい) e com な (インフルエンザならしい) estão erradas para o substantivo nesse padrão.
 
 
-### 2. (cloze) {'pt-BR': "Complete o boato casual 'dizem que ela é cantora': 彼女は歌手___んだって。"}
+### 2. (cloze) Complete o boato casual 'dizem que ela é cantora': 彼女は歌手___んだって。
 - **Resposta:** `{"text": "な", "full": "彼女は歌手なんだって"}`
-- {'pt-BR': 'Com substantivo, o padrão んだって pede o な de ligação: 歌手 + な + んだって. (Compare com らしい, onde o substantivo liga direto, sem nada no meio.)'}
+- Com substantivo, o padrão んだって pede o な de ligação: 歌手 + な + んだって. (Compare com らしい, onde o substantivo liga direto, sem nada no meio.)
 
 
-### 3. (recognition) {'pt-BR': 'Você VIU o céu cheio de nuvens escuras e conclui pela SUA própria observação que vai chover. Qual forma é a mais adequada?'}
+### 3. (recognition) Você VIU o céu cheio de nuvens escuras e conclui pela SUA própria observação que vai chover. Qual forma é a mais adequada?
 - **Resposta:** `{"choices": ["雨が降りそうだ / 降りそうです", "雨が降るらしい", "雨が降るんだって", "雨が降るということだ"], "correct": "雨が降りそうだ / 降りそうです"}`
-- {'pt-BR': 'Quando a conclusão vem da SUA observação direta (ou de uma impressão), usa-se そうだ de aparência (降りそう) ou ようだ/みたいだ. らしい e んだって são para informação OUVIDA de outra fonte, que não é o caso aqui.'}
+- Quando a conclusão vem da SUA observação direta (ou de uma impressão), usa-se そうだ de aparência (降りそう) ou ようだ/みたいだ. らしい e んだって são para informação OUVIDA de outra fonte, que não é o caso aqui.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada forma à sua fonte/nuance.'}
+### 4. (matching) Ligue cada forma à sua fonte/nuance.
 - **Resposta:** `{"pairs": [["らしい", "ouvi/li de outra fonte, com leve avaliação"], ["んだって", "boato casual, conversa entre amigos"], ["ようだ / みたいだ", "impressão a partir do que eu mesmo percebo"]]}`
-- {'pt-BR': 'らしい repassa informação indireta com um tempero de avaliação; んだって faz o mesmo num registro bem casual; ようだ/みたいだ parte da SUA própria percepção, não de algo ouvido. O contexto da fonte decide qual usar.'}
+- らしい repassa informação indireta com um tempero de avaliação; んだって faz o mesmo num registro bem casual; ようだ/みたいだ parte da SUA própria percepção, não de algo ouvido. O contexto da fonte decide qual usar.
 
 
-### 5. (production) {'pt-BR': "Repasse para um amigo, de forma casual, 'Ouvi dizer que aquela loja já fechou.' usando んだって. (あの店 = aquela loja, もう = já, 閉まる = fechar)"}
+### 5. (production) Repasse para um amigo, de forma casual, 'Ouvi dizer que aquela loja já fechou.' usando んだって. (あの店 = aquela loja, もう = já, 閉まる = fechar)
 - **Resposta:** `{"text": "あの店、もう閉まったんだって", "accept": ["あの店、もう閉まったんだって", "あのみせ、もうしまったんだって", "あの店もう閉まったんだって", "あの店、もう閉まったんだって。"]}`
-- {'pt-BR': "閉まる no passado casual (閉まった) + んだって repassa o boato no registro informal. O んだ dá o tom 'pelo que me contaram' e って é a marca de fala alheia. Em contexto polido, seria 閉まったそうです."}
+- 閉まる no passado casual (閉まった) + んだって repassa o boato no registro informal. O んだ dá o tom 'pelo que me contaram' e って é a marca de fala alheia. Em contexto polido, seria 閉まったそうです.
 
 

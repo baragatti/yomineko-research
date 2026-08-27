@@ -2371,7 +2371,7 @@ _Generated 2026-08-26. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-10094172 | それは言いにくいな。 | Isso é difícil de dizer, né. | n4 |
 | sent:tatoeba-10107238 | 私はあんたのお姉ちゃんだもん。 | É que eu sou a sua irmã mais velha, ué. | n4 |
 | sent:tatoeba-10107417 | 車のキーはどこかしら？ | Onde será que estão as chaves do carro? | n4 |
-| sent:tatoeba-101164 | 彼は彼らにその旅館に泊まるように言った。 | Ele disse a eles para se hospedarem naquela pousada. | n2 |
+| sent:tatoeba-101164 | 彼は彼らにその旅館に泊まるように言った。 | Ele disse a eles para se hospedarem nessa pousada. | n2 |
 | sent:tatoeba-10117518 | サラダをお召し上がりください。 | Sirva-se da salada, por favor. | n2 |
 | sent:tatoeba-10117954 | 服に血がべっとり付いてるよ。 | Você está com sangue grudado na roupa, viu. | n2 |
 | sent:tatoeba-101234 | 彼は抜け目がないというよりついているのだ。 | Mais do que esperto, ele tem é sorte. | n3 |
@@ -2698,7 +2698,7 @@ _Generated 2026-08-26. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-11163401 | もうすぐ、外出できるようになるよ。 | Logo, logo você vai poder sair de casa. | n4 |
 | sent:tatoeba-11169170 | あなたみたいにカッコよくなりたいな。 | Queria ser tão descolado quanto você. | n4 |
 | sent:tatoeba-11171012 | 明後日は火曜日です。 | Depois de amanhã é terça-feira. | n4 |
-| sent:tatoeba-11173182 | そのタオルはきれいなはずです。 | Essa toalha deve estar limpa. (and translation_literal.pt-BR: "Essa toalha quanto-a, limpa é-de-se-esperar-que é.") | n4 |
+| sent:tatoeba-11173182 | そのタオルはきれいなはずです。 | Essa toalha deve estar limpa. | n4 |
 | sent:tatoeba-111775 | 彼はドアの後ろに立っていました。 | Ele estava de pé atrás da porta. | n3 |
 | sent:tatoeba-111877 | 彼はつまりだまされたのだ。 | Ou seja, ele foi enganado. | n3 |
 | sent:tatoeba-11195050 | なでなでしてごらん。 | Faz carinho nele. | n5 |
@@ -2762,7 +2762,7 @@ _Generated 2026-08-26. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-11545589 | 今着いたところよ。 | Acabei de chegar agora. | n4 |
 | sent:tatoeba-115590 | 彼は、英語がクラスのなかでかなり遅れている。 | Em inglês, ele está bastante atrasado em relação ao resto da turma. | n3 |
 | sent:tatoeba-11561274 | キッチン用品は、地下一階でございます。 | Os utensílios de cozinha ficam no primeiro subsolo. | n2 |
-| sent:tatoeba-11561754 | ポーチにスカンクがいます。 | Tem um cangambá na varanda. (and lit: "Na varanda, cangambá (sujeito) existe/está.") | n5 |
+| sent:tatoeba-11561754 | ポーチにスカンクがいます。 | Tem um cangambá na varanda. | n5 |
 | sent:tatoeba-115629 | 彼は、どちらかというと、分別のある人だ。 | Ele, se for para escolher um lado, é um homem sensato. | n3 |
 | sent:tatoeba-11570955 | 本棚にはまだ読んでいない本が山のようにある。 | Na estante há montanhas de livros que ainda não li. | n1 |
 | sent:tatoeba-11571318 | さすがだな！ | Você é demais! | n5 |
@@ -4253,7 +4253,7 @@ _Generated 2026-08-26. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:tatoeba-218501 | これはわたしに母を思い出させる。 | Isto me faz lembrar da minha mãe. | n4 |
 | sent:tatoeba-218527 | これはペンですかそれとも鉛筆ですか。 | Isto é uma caneta ou um lápis? | n1 |
 | sent:tatoeba-218540 | これはなんと重い机なのだろう。 | Nossa, que escrivaninha pesada! | n2 |
-| sent:tatoeba-218592 | これはその箱をあける鍵です。 | Esta é a chave que abre essa caixa. (and correspondingly 'essa caixa' in translation_literal.pt-BR and in the structure_explanation.pt-BR gloss of その箱をあける) | n1 |
+| sent:tatoeba-218592 | これはその箱をあける鍵です。 | Esta é a chave que abre essa caixa. | n1 |
 | sent:tatoeba-218631 | これはお茶のような味だ。 | Isto tem um gosto parecido com o de chá. | n4 |
 | sent:tatoeba-218647 | これはあれよりも小さい。 | Este é menor do que aquele. | n4 |
 | sent:tatoeba-218724 | これには複雑な気持ちだ。 | Sobre isto eu tenho sentimentos complicados. | n2 |

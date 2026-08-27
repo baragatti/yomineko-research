@@ -4,7 +4,7 @@
   "stage": "speak:eating",
   "order": 3,
   "title": {
-    "pt-BR": "Comer e beber fora — parte 3"
+    "pt-BR": "Comer e beber fora, parte 3"
   },
   "say_now": [
     "sent:tatoeba-179074",
@@ -55,6 +55,104 @@
   "cumulative_known_vocab": 110,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:gp-110",
+    "gram:darou",
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-109",
+      "examples": [
+        "sent:tatoeba-81063",
+        "sent:tatoeba-3367992",
+        "sent:tatoeba-83711"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-4856",
+        "sent:tatoeba-77812",
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:issho-ni",
+      "examples": [
+        "sent:tatoeba-774809",
+        "sent:tatoeba-190532",
+        "sent:tatoeba-190545"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O que você quer beber?",
+      "answer_key": "何飲みたい？",
+      "accepted_variants": [
+        "なんのみたい",
+        "なんのみたい?",
+        "何飲みたい",
+        "何飲みたい？"
+      ],
+      "sentence": "sent:tatoeba-2633467",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não come tanto assim!",
+      "answer_key": "そんなに食べないの！",
+      "accepted_variants": [
+        "そんなにたべないの",
+        "そんなにたべないの!",
+        "そんなに食べないの",
+        "そんなに食べないの！"
+      ],
+      "sentence": "sent:tatoeba-10657609",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Vamos conversar enquanto tomamos um chá.",
+      "answer_key": "お茶を飲みながら話しましょう。",
+      "accepted_variants": [
+        "おちゃをのみながらはなしましょう",
+        "おちゃをのみながらはなしましょう。",
+        "お茶を飲みながら話しましょう",
+        "お茶を飲みながら話しましょう。"
+      ],
+      "sentence": "sent:tatoeba-226845",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-226844",
+      "sent:tatoeba-10899775",
+      "sent:tatoeba-171644",
+      "sent:tatoeba-200661",
+      "sent:tatoeba-1115376",
+      "sent:tatoeba-196349"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n5:5176",
@@ -101,97 +199,5 @@
         "おしえる"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-110",
-    "gram:darou",
-    "gram:gp-36"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-109",
-      "examples": [
-        "sent:tatoeba-81063",
-        "sent:tatoeba-3367992",
-        "sent:tatoeba-83711"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-4856",
-        "sent:tatoeba-77812",
-        "sent:tatoeba-83623"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:issho-ni",
-      "examples": [
-        "sent:tatoeba-774809",
-        "sent:tatoeba-190532",
-        "sent:tatoeba-190545"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O que você quer beber?",
-      "answer_key": "何飲みたい？",
-      "accepted_variants": [
-        "何飲みたい",
-        "何飲みたい？"
-      ],
-      "sentence": "sent:tatoeba-2633467",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Não come tanto assim!",
-      "answer_key": "そんなに食べないの！",
-      "accepted_variants": [
-        "そんなに食べないの",
-        "そんなに食べないの！"
-      ],
-      "sentence": "sent:tatoeba-10657609",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Vamos conversar enquanto tomamos um chá.",
-      "answer_key": "お茶を飲みながら話しましょう。",
-      "accepted_variants": [
-        "お茶を飲みながら話しましょう",
-        "お茶を飲みながら話しましょう。"
-      ],
-      "sentence": "sent:tatoeba-226845",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
-    "items": [
-      "sent:tatoeba-226844",
-      "sent:tatoeba-10899775",
-      "sent:tatoeba-171644",
-      "sent:tatoeba-200661",
-      "sent:tatoeba-1115376",
-      "sent:tatoeba-196349"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  }
+  ]
 }

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-sono-ue, n3-sore-to, n3-sore-tomo] · vocabulário [アイスクリーム, アイロン, アルバム, 合図, 委員, 安定, 意外, 愛, 愛する, 愛情, 或いは, 握手, 明かり, 明らか, 暗記, 案, 相手] · kanji [定 案 相] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-208980`, `sent:tatoeba-8938683`
 
 ---
 
@@ -45,7 +45,7 @@ Palavras frequentes que começam com os sons da linha あ (mostradas em kana):
 - 明らか (あきらか) = "claro, evidente, obvio". E um adjetivo な.
 - 意外 (いがい) = "inesperado, surpreendente".
 - 案 (あん) = "ideia, plano, proposta". Combina perfeito com その上 ao defender um plano.
-- 暗記 (あんき) = "memorizacao, decorar". Outras: 安定 (あんてい, "estabilidade"), 握手 (あくしゅ, "aperto de mao"), 委員 (いいん, "membro de comissao").
+- 暗記 (あんき) = "memorização, decorar". Outras: 安定 (あんてい, "estabilidade"), 握手 (あくしゅ, "aperto de mão"), 委員 (いいん, "membro de comissão").
 - Do cotidiano: アイスクリーム (sorvete), アイロン (ferro de passar), アルバム (album), 明かり (あかり, "luz, claridade").
 - 或いは (あるいは) = "ou", um "ou" mais formal e escrito do que それとも.
 
@@ -73,28 +73,28 @@ O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual conector usar para somar um segundo elogio ao primeiro, na frase 'Este restaurante e barato. ___ a comida e gostosa'?"}
+### 1. (recognition) Qual conector usar para somar um segundo elogio ao primeiro, na frase 'Este restaurante e barato. ___ a comida e gostosa'?
 - **Resposta:** `{"choices": ["その上", "それとも", "ところで", "なぜなら"], "correct": "その上"}`
-- {'pt-BR': 'その上 soma um segundo ponto na MESMA direção (dois elogios). それとも abriria uma escolha; ところで mudaria de assunto; なぜなら daria uma causa.'}
+- その上 soma um segundo ponto na MESMA direção (dois elogios). それとも abriria uma escolha; ところで mudaria de assunto; なぜなら daria uma causa.
 
 
-### 2. (particle_choice) {'pt-BR': "Você está perguntando 'Vai tomar café ou chá?'. Complete: コーヒーを飲む？___ 紅茶を飲む？"}
+### 2. (particle_choice) Você está perguntando 'Vai tomar café ou chá?'. Complete: コーヒーを飲む？___ 紅茶を飲む？
 - **Resposta:** `{"choices": ["それとも", "それと", "その上", "つまり"], "correct": "それとも"}`
-- {'pt-BR': "Como são duas alternativas em perguntas, usa-se それとも ('ou então'). それと seria soma ('e também'), o que não faz sentido aqui."}
+- Como são duas alternativas em perguntas, usa-se それとも ('ou então'). それと seria soma ('e também'), o que não faz sentido aqui.
 
 
-### 3. (cloze) {'pt-BR': "Complete a soma 'Vou fazer compras. E também preciso ir ao correio': 買い物に行く。___、郵便局にも行かなきゃ。"}
+### 3. (cloze) Complete a soma 'Vou fazer compras. E também preciso ir ao correio': 買い物に行く。___、郵便局にも行かなきゃ。
 - **Resposta:** `{"text": "それと", "full": "買い物に行く。それと、郵便局にも行かなきゃ。"}`
-- {'pt-BR': "それと acrescenta mais uma tarefa em tom falado ('e também'). Cuidado para não escrever それとも, que viraria uma escolha ('ou então')."}
+- それと acrescenta mais uma tarefa em tom falado ('e também'). Cuidado para não escrever それとも, que viraria uma escolha ('ou então').
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada conector ao seu sentido.'}
+### 4. (matching) Ligue cada conector ao seu sentido.
 - **Resposta:** `{"pairs": [["その上", "além disso / ainda por cima (soma)"], ["それと", "e também (soma, conversa)"], ["それとも", "ou então (escolha)"]]}`
-- {'pt-BR': 'その上 e それと somam na mesma direção; その上 reforca um argumento, それと so adiciona mais um item. それとも abre uma escolha entre alternativas.'}
+- その上 e それと somam na mesma direção; その上 reforca um argumento, それと so adiciona mais um item. それとも abre uma escolha entre alternativas.
 
 
-### 5. (production) {'pt-BR': "Diga: 'Este plano (案) e barato. E ainda por cima e estável (安定).' Use その上."}
+### 5. (production) Diga: 'Este plano (案) e barato. E ainda por cima e estável (安定).' Use その上.
 - **Resposta:** `{"text": "この案は安い。その上、安定している。", "accept": ["この案は安い。その上、安定している", "このあんはやすい。そのうえ、あんていしている。", "この案は安い。その上、安定している。", "この案は安いです。その上、安定しています。"]}`
-- {'pt-BR': "Duas vantagens na mesma direção (barato + estável), então その上 e o conector certo. 安定する vira 安定している para descrever um estado atual ('e/esta estável')."}
+- Duas vantagens na mesma direção (barato + estável), então その上 e o conector certo. 安定する vira 安定している para descrever um estado atual ('e/esta estável').
 
 

@@ -70,28 +70,28 @@ Mais um, com また aditivo: このカフェは静かです また コーヒー�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Na frase 彼は親切です それに頭もいいです, o que それに está fazendo?'}
+### 1. (recognition) Na frase 彼は親切です それに頭もいいです, o que それに está fazendo?
 - **Resposta:** `{"choices": ["Acrescentando outra qualidade no mesmo sentido (além disso)", "Marcando um contraste (mas, porém)", "Indicando causa e consequência (por isso)"], "correct": "Acrescentando outra qualidade no mesmo sentido (além disso)"}`
-- {'pt-BR': "それに é um conector ADITIVO: ele soma uma informação que reforça a anterior. Aqui 'é gentil' + それに + 'e ainda por cima é inteligente'. Os dois elogios puxam para o mesmo lado."}
+- それに é um conector ADITIVO: ele soma uma informação que reforça a anterior. Aqui 'é gentil' + それに + 'e ainda por cima é inteligente'. Os dois elogios puxam para o mesmo lado.
 - frases: `sent:gen-04b97adbf861`
 
-### 2. (recognition) {'pt-BR': 'Em また明日会いましょう, qual é o sentido de また?'}
+### 2. (recognition) Em また明日会いましょう, qual é o sentido de また?
 - **Resposta:** `{"choices": ["de novo / outra vez", "além disso", "mesmo assim"], "correct": "de novo / outra vez"}`
-- {'pt-BR': "Como また vem junto de um verbo de ação (会う, 'encontrar'), o sentido é 'de novo': 'vamos nos ver de novo amanhã'. Quando abre uma nova ideia, aí sim seria 'além disso'."}
+- Como また vem junto de um verbo de ação (会う, 'encontrar'), o sentido é 'de novo': 'vamos nos ver de novo amanhã'. Quando abre uma nova ideia, aí sim seria 'além disso'.
 - frases: `sent:gen-c30bb4ed15da`
 
-### 3. (cloze) {'pt-BR': "Complete com o conector aditivo 'além disso': 宿題が多いです ＿ 難しいです。 (Tem muita lição e ainda por cima é difícil.)"}
+### 3. (cloze) Complete com o conector aditivo 'além disso': 宿題が多いです ＿ 難しいです。 (Tem muita lição e ainda por cima é difícil.)
 - **Resposta:** `{"text": "それに", "full": "宿題が多いです それに難しいです"}`
-- {'pt-BR': "それに soma uma segunda informação no mesmo sentido (aqui, duas reclamações). 'Tem muita lição' + それに + 'e ainda por cima é difícil'."}
+- それに soma uma segunda informação no mesmo sentido (aqui, duas reclamações). 'Tem muita lição' + それに + 'e ainda por cima é difícil'.
 - frases: `sent:gen-9e22bc1d7301`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Meu hobby é música. Além disso, também gosto de filme.' com as peças: [それに] [趣味は音楽です] [映画も好きです]"}
+### 4. (sentence_build) Monte 'Meu hobby é música. Além disso, também gosto de filme.' com as peças: [それに] [趣味は音楽です] [映画も好きです]
 - **Resposta:** `{"order": ["趣味は音楽です", "それに", "映画も好きです"], "text": "趣味は音楽です それに映画も好きです"}`
-- {'pt-BR': "Primeiro a frase base (趣味は音楽です), depois それに abrindo a soma, e por fim a segunda informação no mesmo sentido (映画も好きです). O も reforça o 'também'."}
+- Primeiro a frase base (趣味は音楽です), depois それに abrindo a soma, e por fim a segunda informação no mesmo sentido (映画も好きです). O も reforça o 'também'.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Ele é gentil e, além disso, cheio de energia.' usando また como conector aditivo (彼 = ele, 親切 = gentil, 元気 = cheio de energia)."}
+### 5. (production) Diga em japonês 'Ele é gentil e, além disso, cheio de energia.' usando また como conector aditivo (彼 = ele, 親切 = gentil, 元気 = cheio de energia).
 - **Resposta:** `{"text": "彼は親切で、また元気だ", "accept": ["彼は親切で、また元気だ", "彼は親切で また元気だ", "かれはしんせつで、またげんきだ", "彼は親切です。また元気です", "彼は親切です また元気です"]}`
-- {'pt-BR': "Aqui また é aditivo ('além disso'). A forma で liga 'é gentil' à segunda qualidade, e また soma 'cheio de energia'. Tanto a versão casual (だ) quanto a educada (です) funcionam."}
+- Aqui また é aditivo ('além disso'). A forma で liga 'é gentil' à segunda qualidade, e また soma 'cheio de energia'. Tanto a versão casual (だ) quanto a educada (です) funcionam.
 - frases: `sent:gen-2983acf2a91a`
 

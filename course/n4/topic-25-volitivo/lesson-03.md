@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-78, you-to-omou] · vocabulário [一度, 怪我, 歯医者, 治る, 熱, 祖母] · kanji [海 近 重] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-5049`, `sent:tatoeba-3313205`, `sent:tatoeba-146821`, `sent:tatoeba-11801342`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-5049`, `sent:tatoeba-11801342`, `sent:tatoeba-3313205`, `sent:tatoeba-146821`
 
 ---
 
@@ -18,7 +18,7 @@ Nas duas lições anteriores você montou duas peças separadas: a forma volitiv
 
 #### Como se monta
 Pegue a forma volitiva do verbo, acrescente a partícula と (que aqui marca o conteúdo do pensamento, como nas citações) e termine com 思う. O resultado é o molde abaixo.
-Molde: [verbo na forma volitiva] と思う
+Molde: [verbo na forma volitiva] と 思う
 - Verbos ichidan e irregulares (〜ようと思う): 寝る → 寝よう → 寝ようと思う ("acho que vou dormir").
 - Verbos godan (〜おうと思う): 買う → 買おう → 買おうと思う ("estou pensando em comprar").
 
@@ -72,28 +72,28 @@ Três kanji que aparecem em palavras de intenção e descrição:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que 〜ようと思う acrescenta à simples forma volitiva (〜よう)?'}
+### 1. (recognition) O que 〜ようと思う acrescenta à simples forma volitiva (〜よう)?
 - **Resposta:** `{"choices": ["Uma ordem direta a outra pessoa", "A ideia de intenção/decisão pessoal: 'pretendo / acho que vou'", "Uma pergunta sobre o futuro"], "correct": "A ideia de intenção/decisão pessoal: 'pretendo / acho que vou'"}`
-- {'pt-BR': "Sozinha, 〜よう é só 'vamos/vou'. Com と思う, o 思う ('pensar') transforma a frase numa intenção pessoal do falante: 'estou pensando em fazer', 'acho que vou fazer'."}
+- Sozinha, 〜よう é só 'vamos/vou'. Com と思う, o 思う ('pensar') transforma a frase numa intenção pessoal do falante: 'estou pensando em fazer', 'acho que vou fazer'.
 - frases: `sent:tatoeba-5049`
 
-### 2. (recognition) {'pt-BR': "Qual é a forma correta de 買う ('comprar') neste molde de intenção?"}
+### 2. (recognition) Qual é a forma correta de 買う ('comprar') neste molde de intenção?
 - **Resposta:** `{"choices": ["買ようと思う", "買おうと思う", "買るうと思う"], "correct": "買おうと思う"}`
-- {'pt-BR': "買う é verbo godan (う), então a volitiva é 買おう (〜おう), e não 〜よう. Daí 買おうと思う = 'estou pensando em comprar'. 〜ようと思う só serve para verbos る e irregulares."}
+- 買う é verbo godan (う), então a volitiva é 買おう (〜おう), e não 〜よう. Daí 買おうと思う = 'estou pensando em comprar'. 〜ようと思う só serve para verbos る e irregulares.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a intenção: 今日は早めに寝＿と思う。 (Estou pensando em dormir mais cedo hoje.)'}
+### 3. (cloze) Complete a intenção: 今日は早めに寝＿と思う。 (Estou pensando em dormir mais cedo hoje.)
 - **Resposta:** `{"text": "よう", "full": "今日は早めに寝ようと思う"}`
-- {'pt-BR': "寝る é verbo ichidan (る), então a volitiva é 寝よう. Com と思う forma 寝ようと思う = 'acho que vou dormir'. Esta é exatamente uma frase real do nosso banco."}
+- 寝る é verbo ichidan (る), então a volitiva é 寝よう. Com と思う forma 寝ようと思う = 'acho que vou dormir'. Esta é exatamente uma frase real do nosso banco.
 - frases: `sent:tatoeba-3313205`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Acho que vou ficar aqui.' com as peças: [思う] [いよう] [ここ] [と] [に]"}
+### 4. (sentence_build) Monte 'Acho que vou ficar aqui.' com as peças: [思う] [いよう] [ここ] [と] [に]
 - **Resposta:** `{"order": ["ここ", "に", "いよう", "と", "思う"], "text": "ここにいようと思う。"}`
-- {'pt-BR': 'ここ (aqui) + に (lugar) + いよう (volitiva de いる) + と + 思う. É uma frase real do nosso banco. O molde é sempre forma volitiva + と + 思う.'}
+- ここ (aqui) + に (lugar) + いよう (volitiva de いる) + と + 思う. É uma frase real do nosso banco. O molde é sempre forma volitiva + と + 思う.
 - frases: `sent:tatoeba-11801342`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Amanhã estou pensando em ir ao dentista.' usando 明日 (amanhã), 歯医者 (dentista), a partícula に e 行く ('ir') no molde 〜おうと思う."}
+### 5. (production) Diga em japonês 'Amanhã estou pensando em ir ao dentista.' usando 明日 (amanhã), 歯医者 (dentista), a partícula に e 行く ('ir') no molde 〜おうと思う.
 - **Resposta:** `{"text": "明日歯医者に行こうと思う。", "accept": ["明日歯医者に行こうと思う", "あした歯医者に行こうと思う", "明日はいしゃに行こうと思う", "あしたはいしゃにいこうとおもう", "明日歯医者へ行こうと思う"]}`
-- {'pt-BR': "行く é godan, então a volitiva é 行こう (〜おう); com と思う vira 行こうと思う = 'pretendo ir'. 歯医者に行く = 'ir ao dentista', com に marcando o destino."}
+- 行く é godan, então a volitiva é 行こう (〜おう); com と思う vira 行こうと思う = 'pretendo ir'. 歯医者に行く = 'ir ao dentista', com に marcando o destino.
 
 

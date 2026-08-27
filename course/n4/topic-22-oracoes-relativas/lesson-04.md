@@ -18,7 +18,7 @@ Você já viu 間("o tempo todo, em paralelo") e 間に("em algum momento dentro
 
 #### 〜ているあいだに: enquanto algo está em andamento
 gp-107 pega um verbo na forma 〜ている(ação em andamento) e adiciona 間に. O resultado diz "enquanto a ação A estava acontecendo, a ação B ocorreu em algum momento". O に é a peça-chave: ele marca que B é pontual, acontece num instante daquele intervalo, e não o tempo inteiro.
-Molde: [ação em andamento] ている間に [ação pontual]
+Molde: [ação em andamento] ている 間に [ação pontual]
 > 🗣 電車を待っている間に本を読んだ — Enquanto esperava o trem, li um livro.
 Repare na estrutura: 待っている ("estar esperando") marca a ação em andamento, 間に abre o intervalo, e 本を読んだ ("li um livro") é a ação pontual que cabe nele. A espera durava; ler o livro foi o que preencheu aquele tempo. Veja outro caso com a mesma forma:
 > 🗣 子供が遊んでいる間に夕食を作った — Enquanto as crianças brincavam, fiz o jantar.
@@ -69,28 +69,28 @@ Esses quatro últimos são substantivos de descrição que você usará nas ora�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Em 〜ているあいだに, qual é o papel da partícula に?'}
+### 1. (recognition) Em 〜ているあいだに, qual é o papel da partícula に?
 - **Resposta:** `{"choices": ["Marca que a ação principal dura o tempo todo", "Marca que a ação principal acontece em algum ponto pontual do intervalo", "Transforma a frase em pergunta"], "correct": "Marca que a ação principal acontece em algum ponto pontual do intervalo"}`
-- {'pt-BR': 'O に de 間に sinaliza uma ação pontual: ela ocorre em um instante dentro do período em andamento, e não o tempo inteiro. Sem に (só 間), a ideia seria de duração paralela.'}
+- O に de 間に sinaliza uma ação pontual: ela ocorre em um instante dentro do período em andamento, e não o tempo inteiro. Sem に (só 間), a ideia seria de duração paralela.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete: 電車を待っている間＿本を読んだ。 (Enquanto esperava o trem, li um livro.)'}
+### 2. (particle_choice) Complete: 電車を待っている間＿本を読んだ。 (Enquanto esperava o trem, li um livro.)
 - **Resposta:** `{"choices": ["に", "で", "を"], "correct": "に"}`
-- {'pt-BR': '間に: ler o livro foi uma ação pontual que coube no tempo da espera. O に é o que marca esse ponto dentro do intervalo.'}
+- 間に: ler o livro foi uma ação pontual que coube no tempo da espera. O に é o que marca esse ponto dentro do intervalo.
 - frases: `sent:gen-4590c1e65a70`
 
-### 3. (cloze) {'pt-BR': "Complete com 'depois': その仕事は＿やります。 (Esse trabalho eu faço depois.)"}
+### 3. (cloze) Complete com 'depois': その仕事は＿やります。 (Esse trabalho eu faço depois.)
 - **Resposta:** `{"text": "後で", "full": "その仕事は後でやります"}`
-- {'pt-BR': "後で (あとで) sozinho significa 'depois / mais tarde', perfeito para adiar uma tarefa. É o mesmo 後で de 後でやって ('faz isso depois')."}
+- 後で (あとで) sozinho significa 'depois / mais tarde', perfeito para adiar uma tarefa. É o mesmo 後で de 後でやって ('faz isso depois').
 - frases: `sent:tatoeba-2581794`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Enquanto as crianças brincavam, fiz o jantar.' com as peças: [間に] [子供が] [夕食を] [遊んでいる] [作った]"}
+### 4. (sentence_build) Monte 'Enquanto as crianças brincavam, fiz o jantar.' com as peças: [間に] [子供が] [夕食を] [遊んでいる] [作った]
 - **Resposta:** `{"order": ["子供が", "遊んでいる", "間に", "夕食を", "作った"], "text": "子供が遊んでいる間に夕食を作った"}`
-- {'pt-BR': "Estrutura 〜ているあいだに: 子供が遊んでいる (estar brincando, em andamento) + 間に (ponto no intervalo) + 夕食を作った (ação pontual, 'fiz o jantar')."}
+- Estrutura 〜ているあいだに: 子供が遊んでいる (estar brincando, em andamento) + 間に (ponto no intervalo) + 夕食を作った (ação pontual, 'fiz o jantar').
 - frases: `sent:gen-b2c4b3ced962`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Eu estudo enquanto espero o trem.' usando 電車を待っている (estar esperando o trem), 間に e 勉強する (estudar) no presente educado."}
+### 5. (production) Diga em japonês 'Eu estudo enquanto espero o trem.' usando 電車を待っている (estar esperando o trem), 間に e 勉強する (estudar) no presente educado.
 - **Resposta:** `{"text": "電車を待っている間に勉強します。", "accept": ["電車を待っている間に勉強します", "電車を待っている間に勉強します。", "でんしゃをまっている間に勉強します", "電車を待っているあいだに勉強します", "でんしゃをまっているあいだにべんきょうします"]}`
-- {'pt-BR': "電車を待っている (em andamento) + 間に (ponto no intervalo) + 勉強します (ação pontual, 'estudo'). É o mesmo molde da frase anterior, trocando 'ler' por 'estudar'."}
+- 電車を待っている (em andamento) + 間に (ponto no intervalo) + 勉強します (ação pontual, 'estudo'). É o mesmo molde da frase anterior, trocando 'ler' por 'estudar'.
 - frases: `sent:gen-4590c1e65a70`
 

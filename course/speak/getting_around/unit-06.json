@@ -4,7 +4,7 @@
   "stage": "speak:getting_around",
   "order": 6,
   "title": {
-    "pt-BR": "Chegar aonde você quer — parte 6"
+    "pt-BR": "Chegar aonde você quer, parte 6"
   },
   "say_now": [
     "sent:tatoeba-10263746",
@@ -30,8 +30,6 @@
   ],
   "patterns": [
     "gram:gp-49",
-    "gram:da-desu",
-    "gram:gp",
     "gram:gp-39",
     "gram:gp-8"
   ],
@@ -56,6 +54,103 @@
   "cumulative_known_vocab": 202,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:no-naka-de",
+    "gram:wa-yori-desu"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-49",
+      "examples": [
+        "sent:tatoeba-201028",
+        "sent:gen-a0241d2a988e",
+        "sent:gen-4b81bb2c6fa6"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-39",
+      "examples": [
+        "sent:tatoeba-5115",
+        "sent:tatoeba-192503",
+        "sent:tatoeba-192553"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-150175",
+        "sent:tatoeba-11795596"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Meu pai tem previsão de chegar à estação às cinco horas.",
+      "answer_key": "父は５時に駅に着く予定だ。",
+      "accepted_variants": [
+        "ちちわごじにえきにつくよていだ",
+        "ちちわごじにえきにつくよていだ。",
+        "父は５時に駅に着く予定だ",
+        "父は５時に駅に着く予定だ。"
+      ],
+      "sentence": "sent:tatoeba-84766",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por essa rua não dá, viu. É que está em obras.",
+      "answer_key": "この道を行ってもダメですよ。工事中ですから。",
+      "accepted_variants": [
+        "このみちをいってもだめですよ。こうじちゅうですから",
+        "このみちをいってもだめですよ。こうじちゅうですから。",
+        "この道を行ってもダメですよ。工事中ですから",
+        "この道を行ってもダメですよ。工事中ですから。"
+      ],
+      "sentence": "sent:tatoeba-220272",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "A universidade fica longe da estação.",
+      "answer_key": "大学は駅から遠いんです。",
+      "accepted_variants": [
+        "だいがくわえきからとおいんです",
+        "だいがくわえきからとおいんです。",
+        "大学は駅から遠いんです",
+        "大学は駅から遠いんです。"
+      ],
+      "sentence": "sent:tatoeba-137633",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:jec-0673",
+      "sent:tatoeba-234850",
+      "sent:tatoeba-141381",
+      "sent:tatoeba-158256",
+      "sent:tatoeba-200926",
+      "sent:tatoeba-193061"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:431",
@@ -107,113 +202,5 @@
         "円"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:no-naka-de"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-49",
-      "examples": [
-        "sent:tatoeba-201028",
-        "sent:gen-a0241d2a988e",
-        "sent:gen-4b81bb2c6fa6"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp",
-      "examples": [
-        "sent:tatoeba-75140",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-39",
-      "examples": [
-        "sent:tatoeba-5115",
-        "sent:tatoeba-192503",
-        "sent:tatoeba-192553"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-150175",
-        "sent:tatoeba-11795596"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Meu pai tem previsão de chegar à estação às cinco horas.",
-      "answer_key": "父は５時に駅に着く予定だ。",
-      "accepted_variants": [
-        "父は５時に駅に着く予定だ",
-        "父は５時に駅に着く予定だ。"
-      ],
-      "sentence": "sent:tatoeba-84766",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Por essa rua não dá, viu. É que está em obras.",
-      "answer_key": "この道を行ってもダメですよ。工事中ですから。",
-      "accepted_variants": [
-        "この道を行ってもダメですよ。工事中ですから",
-        "この道を行ってもダメですよ。工事中ですから。"
-      ],
-      "sentence": "sent:tatoeba-220272",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "A universidade fica longe da estação.",
-      "answer_key": "大学は駅から遠いんです。",
-      "accepted_variants": [
-        "大学は駅から遠いんです",
-        "大学は駅から遠いんです。"
-      ],
-      "sentence": "sent:tatoeba-137633",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
-    "items": [
-      "sent:jec-0673",
-      "sent:tatoeba-234850",
-      "sent:tatoeba-141381",
-      "sent:tatoeba-158256",
-      "sent:tatoeba-200926",
-      "sent:tatoeba-193061"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 32,
-    "fluency": 6
-  }
+  ]
 }

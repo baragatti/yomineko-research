@@ -18,7 +18,7 @@ Para fechar o tópico, vamos a um padrão que você vai usar no primeiro dia no 
 
 #### O molde [coisa] を ください
 A ideia é simples: você nomeia a coisa que quer, marca ela com を e termina com ください. A palavra ください dá o tom de pedido educado, algo entre "me dê" e "por favor". Quem aponta o que está sendo pedido continua sendo a partícula を, a mesma que marca o objeto direto dos verbos.
-Molde: [coisa] をください
+Molde: [coisa] を ください
 - これをください = "me dê isto, por favor".
 - お茶をください = "me dê お茶, por favor" (pedido bem comum num restaurante).
 - 水をください = "me dê água, por favor".
@@ -63,28 +63,28 @@ Detalhe importante: com 会う a pessoa que você encontra costuma vir marcada p
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'No pedido これをください, o que faz a palavra ください no fim?'}
+### 1. (recognition) No pedido これをください, o que faz a palavra ください no fim?
 - **Resposta:** `{"choices": ["Dá o tom educado de pedido ('por favor / me dê')", "Marca o objeto da frase", "Indica passado"], "correct": "Dá o tom educado de pedido ('por favor / me dê')"}`
-- {'pt-BR': "ください é a parte que torna o pedido educado: 'me dê ~, por favor'. Quem marca o objeto pedido é a partícula を, que vem antes."}
+- ください é a parte que torna o pedido educado: 'me dê ~, por favor'. Quem marca o objeto pedido é a partícula を, que vem antes.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete o pedido: 水＿ください。 (Me dê água, por favor.)'}
+### 2. (particle_choice) Complete o pedido: 水＿ください。 (Me dê água, por favor.)
 - **Resposta:** `{"choices": ["を", "は", "が"], "correct": "を"}`
-- {'pt-BR': 'を marca a coisa que você está pedindo (水 = água). O molde é [coisa] を ください, reaproveitando a mesma partícula de objeto que você já estudou.'}
+- を marca a coisa que você está pedindo (水 = água). O molde é [coisa] を ください, reaproveitando a mesma partícula de objeto que você já estudou.
 
 
-### 3. (sentence_build) {'pt-BR': "Monte 'Me dê isto, por favor.' com as peças: [ください] [を] [これ]"}
+### 3. (sentence_build) Monte 'Me dê isto, por favor.' com as peças: [ください] [を] [これ]
 - **Resposta:** `{"order": ["これ", "を", "ください"], "text": "これをください。"}`
-- {'pt-BR': 'Molde [coisa] を ください: これ (isto) + を (marca o objeto) + ください (por favor). A coisa vem antes de を e ください fica sempre no fim.'}
+- Molde [coisa] を ください: これ (isto) + を (marca o objeto) + ください (por favor). A coisa vem antes de を e ください fica sempre no fim.
 
 
-### 4. (recognition) {'pt-BR': 'Qual a leitura do número 千 (mil)?'}
+### 4. (recognition) Qual a leitura do número 千 (mil)?
 - **Resposta:** `{"choices": ["せん", "ゼロ", "ひゃく"], "correct": "せん"}`
-- {'pt-BR': "千 lê-se せん e significa 'mil' (1.000). ゼロ é 'zero'. É um número que aparece direto em preços no Japão."}
+- 千 lê-se せん e significa 'mil' (1.000). ゼロ é 'zero'. É um número que aparece direto em preços no Japão.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Me dê chá, por favor.' usando お茶 (chá), a partícula de objeto e ください."}
+### 5. (production) Diga em japonês 'Me dê chá, por favor.' usando お茶 (chá), a partícula de objeto e ください.
 - **Resposta:** `{"text": "お茶をください。", "accept": ["お茶をください", "おちゃをください", "お茶をください。", "おちゃをください。"]}`
-- {'pt-BR': 'お茶 (chá) + を (marca o que se pede) + ください (por favor). É o molde [coisa] を ください aplicado a um pedido de restaurante.'}
+- お茶 (chá) + を (marca o que se pede) + ください (por favor). É o molde [coisa] を ください aplicado a um pedido de restaurante.
 
 

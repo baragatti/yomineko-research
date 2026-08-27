@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-kesshite-nai, n3-mattaku-nai, n3-sukoshimo-nai] · vocabulário [個人, 克服, 国会, 国境, 国家, 国民, 小包, 断る, 異なる, 穀物, 粉, 腰, 諺, 越す, 骨折] · kanji [妻 宿 熱 背 険 頼] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-127122`
 
 ---
 
@@ -90,33 +90,33 @@ O kanji 妻 tem o radical da mulher (女) embaixo e significa "esposa". O kanji 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase diz corretamente 'não estou nem um pouco preocupado'?"}
+### 1. (recognition) Qual frase diz corretamente 'não estou nem um pouco preocupado'?
 - **Resposta:** `{"choices": ["少しも心配している", "少しも心配していない", "少しだけ心配する", "全部心配している"], "correct": "少しも心配していない"}`
-- {'pt-BR': "すこしも sempre puxa um predicado negativo: 少しも心配していない = 'não estou nem um pouco preocupado'. A primeira opção está afirmativa (erro clássico), e すこしも nunca aparece com verbo afirmativo."}
+- すこしも sempre puxa um predicado negativo: 少しも心配していない = 'não estou nem um pouco preocupado'. A primeira opção está afirmativa (erro clássico), e すこしも nunca aparece com verbo afirmativo.
 
 
-### 2. (particle_choice) {'pt-BR': "Para um aviso categórico 'de modo algum toque, por favor', qual advérbio abre a frase 決して/まったく/すこしも 触らないでください?"}
+### 2. (particle_choice) Para um aviso categórico 'de modo algum toque, por favor', qual advérbio abre a frase 決して/まったく/すこしも 触らないでください?
 - **Resposta:** `{"choices": ["決して", "少しも", "まったく", "ばかり"], "correct": "決して"}`
-- {'pt-BR': "決して〜ないでください é o padrão de proibição firme em avisos: 決して触らないでください = 'de modo algum toque, por favor'. 決して expressa recusa/regra que não admite exceção, ideal para avisos."}
+- 決して〜ないでください é o padrão de proibição firme em avisos: 決して触らないでください = 'de modo algum toque, por favor'. 決して expressa recusa/regra que não admite exceção, ideal para avisos.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'ele não lembra absolutamente nada': 彼は＿＿＿＿覚えていない。"}
+### 3. (cloze) Complete 'ele não lembra absolutamente nada': 彼は＿＿＿＿覚えていない。
 - **Resposta:** `{"text": "まったく", "full": "彼はまったく覚えていない"}`
-- {'pt-BR': "まったく〜ない leva a negação ao extremo com carga emocional: 彼はまったく覚えていない = 'ele não lembra absolutamente nada'. Note que o verbo precisa estar no negativo (覚えていない); まったく sozinho não fecha a frase."}
+- まったく〜ない leva a negação ao extremo com carga emocional: 彼はまったく覚えていない = 'ele não lembra absolutamente nada'. Note que o verbo precisa estar no negativo (覚えていない); まったく sozinho não fecha a frase.
 
 
-### 4. (recognition) {'pt-BR': 'Em japonês, o que é OBRIGATÓRIO quando você usa まったく, すこしも ou 決して?'}
+### 4. (recognition) Em japonês, o que é OBRIGATÓRIO quando você usa まったく, すこしも ou 決して?
 - **Resposta:** `{"choices": ["O verbo no fim precisa estar no negativo", "O advérbio precisa vir no fim da frase", "O verbo precisa estar no afirmativo", "Usar a partícula を"], "correct": "O verbo no fim precisa estar no negativo"}`
-- {'pt-BR': "Esses três advérbios sempre exigem o predicado no negativo. Ao contrário do português coloquial ('totalmente esqueci'), em japonês não basta o advérbio: a negação recai sobre o verbo (覚えていない, 言わない, etc.)."}
+- Esses três advérbios sempre exigem o predicado no negativo. Ao contrário do português coloquial ('totalmente esqueci'), em japonês não basta o advérbio: a negação recai sobre o verbo (覚えていない, 言わない, etc.).
 
 
-### 5. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em pt-BR.'}
+### 5. (matching) Associe cada palavra ao seu significado em pt-BR.
 - **Resposta:** `{"pairs": [["国境", "fronteira entre países"], ["断る", "recusar, declinar"], ["諺", "provérbio, ditado"], ["骨折", "fratura óssea"], ["異なる", "diferir, ser diferente"]]}`
-- {'pt-BR': '国境 (こっきょう) = fronteira; 断る (ことわる) = recusar; 諺 (ことわざ) = provérbio; 骨折 (こっせつ) = fratura; 異なる (ことなる) = diferir. Cuidado para não confundir 断る (ことわる, recusar) com 異なる (ことなる, diferir): o kana muda em uma só sílaba (わ/な), mas o sentido é totalmente outro.'}
+- 国境 (こっきょう) = fronteira; 断る (ことわる) = recusar; 諺 (ことわざ) = provérbio; 骨折 (こっせつ) = fratura; 異なる (ことなる) = diferir. Cuidado para não confundir 断る (ことわる, recusar) com 異なる (ことなる, diferir): o kana muda em uma só sílaba (わ/な), mas o sentido é totalmente outro.
 
 
-### 6. (production) {'pt-BR': "Faça uma promessa firme: 'Jamais vou me atrasar.' usando 決して e o verbo 遅刻する (atrasar-se)."}
-- **Resposta:** `{"text": "決して遅刻しない", "accept": ["決して遅刻しません", "けっしてちこくしない", "決して遅刻したりしない"]}`
-- {'pt-BR': "決して abre a frase e o verbo fica no negativo: 決して遅刻しない = 'jamais me atraso'. A versão polida 決して遅刻しません também está correta. O ない (ou ません) é obrigatório com 決して."}
+### 6. (production) Faça uma promessa firme: 'Jamais vou me atrasar.' usando 決して e o verbo 遅刻する (atrasar-se).
+- **Resposta:** `{"text": "決して遅刻しない", "accept": ["決して遅刻しない", "決して遅刻しません", "けっしてちこくしない", "決して遅刻したりしない"]}`
+- 決して abre a frase e o verbo fica no negativo: 決して遅刻しない = 'jamais me atraso'. A versão polida 決して遅刻しません também está correta. O ない (ou ません) é obrigatório com 決して.
 
 

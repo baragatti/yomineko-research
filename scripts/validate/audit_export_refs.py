@@ -23,7 +23,10 @@ ROOT = Path(__file__).resolve().parents[2]
 COURSE = ROOT / "course"
 CORPUS = ROOT / "corpus"
 LOC = "pt-BR"
+# `ref=` on content chips AND `item-ref=` on checklist/flashcard rows: the first version matched
+# only the former, so 80 checklist refs in the retired vocab:<headword> scheme passed as '0 FAIL'.
 REF_RX = re.compile(r'<(kanji|vocab|grammar|sentence|reading)\s+ref="([^"]+)"')
+ITEMREF_RX = re.compile(r'<check\s+item-ref="((?:kanji|vocab|grammar|gram|kana|sent|read)[^"]*)"')
 
 
 def _load(sub: str, key: str) -> set:
@@ -87,6 +90,15 @@ def main() -> int:
         for kind, ref in REF_RX.findall(d.get("body", "") or ""):
             if ref not in body_pool[kind]:
                 fails.append(f"{lid}: body <{kind} ref='{ref}'/> not in exported corpus")
+        # checklist item-refs resolve too — and vocab item-refs must be slugs, never headwords
+        for ref in ITEMREF_RX.findall(d.get("body", "") or ""):
+            ns = ref.split(":", 1)[0]
+            pool = {"kanji": kanji, "vocab": vocab, "gram": grammar, "grammar": grammar,
+                    "kana": kana, "sent": sents, "read": readings}.get(ns)
+            if pool is not None and ref not in pool:
+                fails.append(f"{lid}: body <check item-ref='{ref}'> not in exported corpus")
+            if ns == "vocab" and not ref.split(":", 1)[1].isdigit():
+                fails.append(f"{lid}: body <check item-ref='{ref}'> uses the retired headword scheme")
     print(f"export-ref audit: {n} lesson leaves; corpus kanji={len(kanji)} vocab={len(vocab)} "
           f"grammar={len(grammar)} sentences={len(sents)} readings={len(readings)} kana={len(kana)}")
     if fails:

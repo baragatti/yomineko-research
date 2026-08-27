@@ -27,7 +27,8 @@ def main() -> int:
               if con.execute("SELECT name FROM sqlite_master WHERE name='reading'").fetchone() else set())
     fails = 0
     tot = 0
-    for f in sorted(BANKS.glob("*_*.json")):
+    # Banks are named <level>_<section>.json; sidecars (removed_items.json) are not banks.
+    for f in sorted(BANKS.glob("n[0-9]_*.json")):
         items = json.loads(f.read_text(encoding="utf-8"))
         bad = []
         for it in items:

@@ -62,23 +62,23 @@ Repare em 含む, um verbo bem útil, e em 夫婦 para falar de um casal.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa estar são e salvo, sem nenhum incidente?'}
+### 1. (recognition) Qual palavra significa estar são e salvo, sem nenhum incidente?
 - **Resposta:** `{"choices": ["無事 (ぶじ)", "不幸 (ふこう)", "不安 (ふあん)"], "correct": "無事 (ぶじ)"}`
-- {'pt-BR': '無事 (ぶじ) usa o prefixo 無 (nada) com 事 (acontecimento): sem incidentes, em segurança.'}
+- 無事 (ぶじ) usa o prefixo 無 (nada) com 事 (acontecimento): sem incidentes, em segurança.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra à sua tradução.'}
+### 2. (matching) Associe cada palavra à sua tradução.
 - **Resposta:** `{"pairs": [["夫婦", "casal"], ["武器", "arma"], ["袋", "saco, sacola"], ["風景", "paisagem"]]}`
-- {'pt-BR': 'Quatro substantivos concretos da lição: casal, arma, sacola e paisagem.'}
+- Quatro substantivos concretos da lição: casal, arma, sacola e paisagem.
 
 
-### 3. (cloze) {'pt-BR': 'Complete a frase: <jp>この値段は税金を＿＿でいる</jp> (Este preço inclui os impostos.)'}
+### 3. (cloze) Complete a frase: この値段は税金を＿＿でいる (Este preço inclui os impostos.)
 - **Resposta:** `{"text": "含ん", "full": "この値段は税金を含んでいる。"}`
-- {'pt-BR': '含む (ふくむ) significa conter ou incluir; na forma te fica 含んで.'}
+- 含む (ふくむ) significa conter ou incluir; na forma te fica 含んで.
 
 
-### 4. (production) {'pt-BR': 'Escreva uma frase em japonês dizendo que você ficou ansioso (use 不安) por causa da prova de amanhã.'}
-- **Resposta:** `{"text": "明日の試験が不安です", "accept": ["明日の試験で不安だ", "試験が不安です", "明日のテストが不安です"]}`
-- {'pt-BR': '不安 (ふあん) expressa ansiedade ou insegurança diante de algo que vem por aí.'}
+### 4. (production) Escreva uma frase em japonês dizendo que você ficou ansioso (use 不安) por causa da prova de amanhã.
+- **Resposta:** `{"text": "明日の試験が不安です", "accept": ["明日の試験が不安です", "明日の試験で不安だ", "試験が不安です", "明日のテストが不安です"]}`
+- 不安 (ふあん) expressa ansiedade ou insegurança diante de algo que vem por aí.
 
 

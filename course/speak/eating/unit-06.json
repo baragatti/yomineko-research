@@ -4,7 +4,7 @@
   "stage": "speak:eating",
   "order": 6,
   "title": {
-    "pt-BR": "Comer e beber fora — parte 6"
+    "pt-BR": "Comer e beber fora, parte 6"
   },
   "say_now": [
     "sent:tatoeba-191220",
@@ -55,6 +55,104 @@
   "cumulative_known_vocab": 143,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:nakute-wa-naranai",
+    "gram:no-naka-de",
+    "gram:nara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:itashimasu",
+      "examples": [
+        "sent:tatoeba-10982402",
+        "sent:tatoeba-126195",
+        "sent:tatoeba-9226991"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-62",
+      "examples": [
+        "sent:tatoeba-174749",
+        "sent:tatoeba-182548",
+        "sent:tatoeba-174748"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-4714",
+        "sent:tatoeba-85319",
+        "sent:tatoeba-83696"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Durante a viagem, a gente quase não conseguiu comer arroz.",
+      "answer_key": "旅行中はほとんど米は食べられなかった。",
+      "accepted_variants": [
+        "りょこうちゅうわほとんどこめわたべられなかった",
+        "りょこうちゅうわほとんどこめわたべられなかった。",
+        "旅行中はほとんど米は食べられなかった",
+        "旅行中はほとんど米は食べられなかった。"
+      ],
+      "sentence": "sent:tatoeba-78125",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É difícil comer com hashis (pauzinhos)?",
+      "answer_key": "お箸で食べるのは難しいですか？",
+      "accepted_variants": [
+        "おはしでたべるのわむずかしいですか",
+        "おはしでたべるのわむずかしいですか?",
+        "お箸で食べるのは難しいですか",
+        "お箸で食べるのは難しいですか？"
+      ],
+      "sentence": "sent:tatoeba-8775094",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Uma grande canoa avançava cortando a água.",
+      "answer_key": "大きなカヌーが水をきって進んでいた。",
+      "accepted_variants": [
+        "おおきなかぬーがみずをきってすすんでいた",
+        "おおきなかぬーがみずをきってすすんでいた。",
+        "大きなカヌーが水をきって進んでいた",
+        "大きなカヌーが水をきって進んでいた。"
+      ],
+      "sentence": "sent:tatoeba-137747",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
+    "items": [
+      "sent:tatoeba-202470",
+      "sent:tatoeba-182254",
+      "sent:tatoeba-13440729",
+      "sent:tatoeba-10617667",
+      "sent:tatoeba-179391",
+      "sent:tatoeba-5329"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 23,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:207",
@@ -101,97 +199,5 @@
         "できる"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:nakute-wa-naranai",
-    "gram:no-naka-de",
-    "gram:nara"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:itashimasu",
-      "examples": [
-        "sent:tatoeba-10982402",
-        "sent:tatoeba-126195",
-        "sent:tatoeba-9226991"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-62",
-      "examples": [
-        "sent:tatoeba-174749",
-        "sent:tatoeba-182548",
-        "sent:tatoeba-174748"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-4714",
-        "sent:tatoeba-85319",
-        "sent:tatoeba-83696"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Durante a viagem, a gente quase não conseguiu comer arroz.",
-      "answer_key": "旅行中はほとんど米は食べられなかった。",
-      "accepted_variants": [
-        "旅行中はほとんど米は食べられなかった",
-        "旅行中はほとんど米は食べられなかった。"
-      ],
-      "sentence": "sent:tatoeba-78125",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "É difícil comer com hashis (pauzinhos)?",
-      "answer_key": "お箸で食べるのは難しいですか？",
-      "accepted_variants": [
-        "お箸で食べるのは難しいですか",
-        "お箸で食べるのは難しいですか？"
-      ],
-      "sentence": "sent:tatoeba-8775094",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Uma grande canoa avançava cortando a água.",
-      "answer_key": "大きなカヌーが水をきって進んでいた。",
-      "accepted_variants": [
-        "大きなカヌーが水をきって進んでいた",
-        "大きなカヌーが水をきって進んでいた。"
-      ],
-      "sentence": "sent:tatoeba-137747",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
-    "items": [
-      "sent:tatoeba-202470",
-      "sent:tatoeba-182254",
-      "sent:tatoeba-13440729",
-      "sent:tatoeba-10617667",
-      "sent:tatoeba-179391",
-      "sent:tatoeba-5329"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  }
+  ]
 }

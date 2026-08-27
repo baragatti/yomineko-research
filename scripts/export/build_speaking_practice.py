@@ -87,11 +87,17 @@ STRAND = {
 PUNCT = "。、！？!?…，,．. 　"
 
 
-def variants(jp: str) -> list[str]:
+def variants(jp: str, kana: str | None = None) -> list[str]:
     """Accepted answers for a production item (R45). Graded by string match, so the learner must not be
-    failed for punctuation they cannot type or spacing the bank happens to carry."""
-    bare = re.sub(r"[\s　]", "", jp)
-    out = {jp, bare, bare.rstrip(PUNCT), jp.rstrip(PUNCT)}
+    failed for punctuation they cannot type or spacing the bank happens to carry — nor for writing in
+    kana: the path's own contract (design/speaking_path.md section 1) is kanji RECOGNITION ONLY, never
+    written, so the bank sentence's kana reading is always an accepted way to type the answer."""
+    out = set()
+    for base in (jp, kana):
+        if not base:
+            continue
+        bare = re.sub(r"[\s　]", "", base)
+        out |= {base, bare, bare.rstrip(PUNCT), base.rstrip(PUNCT)}
     return sorted(x for x in out if x)
 
 
@@ -101,8 +107,8 @@ def main() -> int:
     args = ap.parse_args()
     con = sqlite3.connect(DB)
 
-    sent = {sid: {"id": sid, "slug": slug, "jp": jp} for sid, slug, jp in
-            con.execute("SELECT id,slug,jp FROM sentence")}
+    sent = {sid: {"id": sid, "slug": slug, "jp": jp, "kana": kana} for sid, slug, jp, kana in
+            con.execute("SELECT id,slug,jp,kana FROM sentence")}
     by_slug = {s["slug"]: s for s in sent.values()}
     pt = {sid: v for sid, v in con.execute(
         "SELECT entity_id,value FROM localized_text WHERE entity_type='sentence' "
@@ -151,7 +157,7 @@ def main() -> int:
                 production.append({
                     "prompt_pt": pt[s["id"]],
                     "answer_key": s["jp"],
-                    "accepted_variants": variants(s["jp"]),
+                    "accepted_variants": variants(s["jp"], s.get("kana")),
                     "sentence": slug,
                     "strand": "meaning-output",
                 })

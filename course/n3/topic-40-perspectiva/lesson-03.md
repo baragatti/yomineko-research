@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-ni-kawatte, n3-ni-kurabete] · vocabulário [エンジン, 大いに, 大家, 応じる, 援助, 横断, 演奏, 演技, 演説, 王, 王子, 王様, 終える, 老い, 覆う, 追いつく, 追う] · kanji [件 任 信 側 利 在 組] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11013866`
 
 ---
 
@@ -83,28 +83,28 @@ Combine substituição e comparação:王にかわって王子が演説をする
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': '"No lugar dele, eu vou à reunião." Qual frase expressa a substituição de quem realiza a ação?'}
+### 1. (recognition) "No lugar dele, eu vou à reunião." Qual frase expressa a substituição de quem realiza a ação?
 - **Resposta:** `{"choices": ["彼にかわって会議に出席します", "彼に変わって会議に出席します", "彼に比べて会議に出席します"], "correct": "彼にかわって会議に出席します"}`
-- {'pt-BR': 'にかわって significa agir no lugar de alguém. に変わって (do verbo 変わる) significaria transformar-se nele, e に比べて é comparação. A pronúncia de にかわって e に変わって é idêntica; só o kanji distingue os dois sentidos, que são bem diferentes.'}
+- にかわって significa agir no lugar de alguém. に変わって (do verbo 変わる) significaria transformar-se nele, e に比べて é comparação. A pronúncia de にかわって e に変わって é idêntica; só o kanji distingue os dois sentidos, que são bem diferentes.
 
 
-### 2. (particle_choice) {'pt-BR': '"Comparado com o verão, o inverno é frio": 夏＿＿＿＿冬は寒い. Qual completa a comparação, marcando o verão como referência?'}
+### 2. (particle_choice) "Comparado com o verão, o inverno é frio": 夏＿＿＿＿冬は寒い. Qual completa a comparação, marcando o verão como referência?
 - **Resposta:** `{"choices": ["に比べて", "にかわって", "にとって"], "correct": "に比べて"}`
-- {'pt-BR': 'に比べて marca o ponto de referência (o verão) e a frase diz que o inverno é frio em relação a ele. にかわって seria substituição e にとって seria perspectiva.'}
+- に比べて marca o ponto de referência (o verão) e a frase diz que o inverno é frio em relação a ele. にかわって seria substituição e にとって seria perspectiva.
 
 
-### 3. (cloze) {'pt-BR': 'Complete com a expressão de comparação para "comparado ao ano passado, a atuação está boa": 去年＿＿＿＿＿演技がうまい'}
+### 3. (cloze) Complete com a expressão de comparação para "comparado ao ano passado, a atuação está boa": 去年＿＿＿＿＿演技がうまい
 - **Resposta:** `{"text": "に比べて", "full": "去年に比べて演技がうまい"}`
-- {'pt-BR': 'O ano passado (去年) é o ponto de referência e leva に比べて; depois a frase diz que a atuação (演技) está boa. Lembre que a referência vem ANTES, ao contrário do português.'}
+- O ano passado (去年) é o ponto de referência e leva に比べて; depois a frase diz que a atuação (演技) está boa. Lembre que a referência vem ANTES, ao contrário do português.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada kanji ao seu sentido central.'}
+### 4. (matching) Associe cada kanji ao seu sentido central.
 - **Resposta:** `{"pairs": [["利", "lucro / vantagem"], ["信", "confiança / fé"], ["任", "responsabilidade / confiar"], ["引", "puxar / atrair"]]}`
-- {'pt-BR': '利 (arroz e faca, colher o ganho), 信 (pessoa fiel à sua palavra), 任 (pessoa a quem se confia uma tarefa), 引 (arco cuja corda se puxa). 引 aparece em 引退 (aposentadoria).'}
+- 利 (arroz e faca, colher o ganho), 信 (pessoa fiel à sua palavra), 任 (pessoa a quem se confia uma tarefa), 引 (arco cuja corda se puxa). 引 aparece em 引退 (aposentadoria).
 
 
-### 5. (production) {'pt-BR': 'Escreva "No lugar do rei, o príncipe faz o discurso" usando 王 (おう), にかわって, 王子 (おうじ) e 演説 (えんぜつ).'}
+### 5. (production) Escreva "No lugar do rei, o príncipe faz o discurso" usando 王 (おう), にかわって, 王子 (おうじ) e 演説 (えんぜつ).
 - **Resposta:** `{"text": "王にかわって王子が演説をする", "accept": ["王にかわって王子が演説をする", "おうにかわっておうじがえんぜつをする", "王にかわって王子が演説をします", "おうにかわっておうじがえんぜつをします"]}`
-- {'pt-BR': '王にかわって abre a substituição (no lugar do rei), 王子が é quem age de fato, e 演説をする é a ação. にかわって marca exatamente a troca de quem realiza a ação.'}
+- 王にかわって abre a substituição (no lugar do rei), 王子が é quem age de fato, e 演説をする é a ação. にかわって marca exatamente a troca de quem realiza a ação.
 
 

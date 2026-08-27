@@ -9,7 +9,8 @@
     "packing": "list",
     "glob": "corpus/kana/[hk]*.json",
     "stable_id_field": "id",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -37,7 +38,12 @@
         "long-vowel",
         "sokuon",
         "yoon"
-      ]
+      ],
+      "description": "How this kana group relates to the base chart. Vocabulary owner: curated — contracts/kana_family.schema.json (the hand-authored kana chart contract). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "curated",
+        "source": "contracts/kana_family.schema.json (the hand-authored kana chart contract)"
+      }
     }
   },
   "additionalProperties": false,

@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-51, hou-ga-ii, tte] · vocabulário [スリッパ, 呼ぶ, 洋服, 渡す, 渡る, 良く, Ｙシャツ] · kanji [右 左] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-216787`, `sent:tatoeba-1484928`, `sent:tatoeba-214854`, `sent:tatoeba-4888`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-214854`, `sent:tatoeba-4888`, `sent:tatoeba-216787`, `sent:tatoeba-1484928`
 
 ---
 
@@ -83,28 +83,28 @@ Os dois compartilham o "telhado" de mão lá em cima, mudando só a base (口 à
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'No conselho afirmativo ～ほうがいい (ex.: すぐに寝たほうがいい), em que forma o verbo aparece antes de ほうがいい?'}
+### 1. (recognition) No conselho afirmativo ～ほうがいい (ex.: すぐに寝たほうがいい), em que forma o verbo aparece antes de ほうがいい?
 - **Resposta:** `{"choices": ["na forma passado (た), como 寝た", "na forma presente (dicionário), como 寝る", "na forma negativa ない, como 寝ない"], "correct": "na forma passado (た), como 寝た"}`
-- {'pt-BR': "A pegadinha clássica: o conselho AFIRMATIVO usa o verbo no passado (た), mesmo falando do futuro. 寝た + ほうがいい = 'é melhor dormir'. É uma forma fixa, não um erro."}
+- A pegadinha clássica: o conselho AFIRMATIVO usa o verbo no passado (た), mesmo falando do futuro. 寝た + ほうがいい = 'é melhor dormir'. É uma forma fixa, não um erro.
 - frases: `sent:tatoeba-214854`
 
-### 2. (cloze) {'pt-BR': "Complete o conselho NEGATIVO 'é melhor não ir': 行＿ないほうがいい。"}
+### 2. (cloze) Complete o conselho NEGATIVO 'é melhor não ir': 行＿ないほうがいい。
 - **Resposta:** `{"text": "か", "full": "行かないほうがいい"}`
-- {'pt-BR': 'O negativo usa a forma ～ない (presente negativo): 行く → 行かない → 行かないほうがいい. Note que NÃO se usa passado negativo (行かなかった) para conselho geral.'}
+- O negativo usa a forma ～ない (presente negativo): 行く → 行かない → 行かないほうがいい. Note que NÃO se usa passado negativo (行かなかった) para conselho geral.
 
 
-### 3. (particle_choice) {'pt-BR': "Para puxar o assunto de forma coloquial em 'O que é (esse tal) sushi?', complete: すし＿何ですか。"}
+### 3. (particle_choice) Para puxar o assunto de forma coloquial em 'O que é (esse tal) sushi?', complete: すし＿何ですか。
 - **Resposta:** `{"choices": ["って", "でも", "から"], "correct": "って"}`
-- {'pt-BR': "って introduz um tópico de modo casual ('falando de sushi...'), funcionando como は/というのは. É linguagem falada e informal; no formal usaríamos とは ou というのは."}
+- って introduz um tópico de modo casual ('falando de sushi...'), funcionando como は/というのは. É linguagem falada e informal; no formal usaríamos とは ou というのは.
 - frases: `sent:tatoeba-4888`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'É melhor ir dormir agora mesmo.' com as peças: [ほうがいい] [すぐに] [寝た]"}
+### 4. (sentence_build) Monte 'É melhor ir dormir agora mesmo.' com as peças: [ほうがいい] [すぐに] [寝た]
 - **Resposta:** `{"order": ["すぐに", "寝た", "ほうがいい"], "text": "すぐに寝たほうがいい。"}`
-- {'pt-BR': "すぐに (agora mesmo) + 寝た (passado de 'dormir') + ほうがいい (é melhor) = conselho afirmativo. O verbo fica no passado た, como manda a fórmula."}
+- すぐに (agora mesmo) + 寝た (passado de 'dormir') + ほうがいい (é melhor) = conselho afirmativo. O verbo fica no passado た, como manda a fórmula.
 - frases: `sent:tatoeba-214854`
 
-### 5. (production) {'pt-BR': "Dê o conselho 'É melhor não fumar.' usando たばこを吸う (fumar) na forma negativa + ほうがいい."}
+### 5. (production) Dê o conselho 'É melhor não fumar.' usando たばこを吸う (fumar) na forma negativa + ほうがいい.
 - **Resposta:** `{"text": "たばこを吸わないほうがいい。", "accept": ["たばこを吸わないほうがいい", "たばこをすわないほうがいい", "タバコを吸わないほうがいい", "タバコをすわないほうがいい", "たばこを吸わないほうがいいです"]}`
-- {'pt-BR': "吸う → 吸わない (negativo) + ほうがいい = 'é melhor não fumar'. O conselho negativo usa a forma ～ない, diferente do afirmativo que usa o passado た."}
+- 吸う → 吸わない (negativo) + ほうがいい = 'é melhor não fumar'. O conselho negativo usa a forma ～ない, diferente do afirmativo que usa o passado た.
 
 

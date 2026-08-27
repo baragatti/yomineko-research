@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-nado, n3-nanka] · vocabulário [凡ゆる, 哀れ, 有難う, 泡, 行き, 行けない, ＯＵＴ] · kanji [全 化 最 約] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3507342`, `sent:tatoeba-3367124`
 
 ---
 
@@ -40,7 +40,7 @@ Palavras frequentes (em kana):
 - 凡ゆる (あらゆる) = "todo, cada, qualquer". Otima para o sentido oposto de など: aqui se inclui TUDO, sem deixar de fora.
 - 有難う (ありがとう) = "obrigado, valeu". A escrita em kanji e rara; quase sempre se ve em kana.
 - 或る (ある) = "um certo, algum". Como em "um certo dia".
-- 哀れ (あわれ) = "pena, compaixao, tristeza".
+- 哀れ (あわれ) = "pena, compaixão, tristeza".
 - 泡 (あわ) = "bolha, espuma, creme (da cerveja)".
 - 行き (いき) = "ida, trajeto de ida"; o oposto e 帰り ("volta").
 - 行けない (いけない) = "não pode, e proibido, e ruim". Muito usado em avisos.
@@ -71,28 +71,28 @@ O kanji 約 significa "promessa" e também "aproximadamente". O radical da esque
 ---
 
 ## Exercícios
-### 1. (cloze) {'pt-BR': "Complete 'Comprei peixe, frutas e coisas assim': 魚、果物___を買いました。"}
+### 1. (cloze) Complete 'Comprei peixe, frutas e coisas assim': 魚、果物___を買いました。
 - **Resposta:** `{"text": "など", "full": "魚、果物などを買いました。"}`
-- {'pt-BR': "など lista exemplos sem fechar a lista ('e coisas assim') e vem colado ao último item (果物など), recebendo a partícula を logo depois."}
+- など lista exemplos sem fechar a lista ('e coisas assim') e vem colado ao último item (果物など), recebendo a partícula を logo depois.
 
 
-### 2. (recognition) {'pt-BR': 'Em お金なんかいらない, qual e o sentido mais provavel de なんか?'}
+### 2. (recognition) Em お金なんかいらない, qual e o sentido mais provavel de なんか?
 - **Resposta:** `{"choices": ["desdem: 'nem ligo para dinheiro'", "soma: 'e também dinheiro'", "contraste: 'mas dinheiro'", "causa: 'porque dinheiro'"], "correct": "desdem: 'nem ligo para dinheiro'"}`
-- {'pt-BR': "Com いらない ('não quero'), なんか carrega desprezo: 'dinheiro? Nem ligo'. Esse tom depreciativo não existe em など, que e neutro."}
+- Com いらない ('não quero'), なんか carrega desprezo: 'dinheiro? Nem ligo'. Esse tom depreciativo não existe em など, que e neutro.
 
 
-### 3. (recognition) {'pt-BR': 'Você esta escrevendo um texto formal e quer listar exemplos sem desdem. Qual marcador escolher?'}
+### 3. (recognition) Você esta escrevendo um texto formal e quer listar exemplos sem desdem. Qual marcador escolher?
 - **Resposta:** `{"choices": ["など", "なんか", "なんて", "それとも"], "correct": "など"}`
-- {'pt-BR': 'など e neutro e seguro para a escrita e a fala educada. なんか e informal e pode soar depreciativo; なんて e exclamativo; それとも abre escolha, não lista exemplos.'}
+- など e neutro e seguro para a escrita e a fala educada. なんか e informal e pode soar depreciativo; なんて e exclamativo; それとも abre escolha, não lista exemplos.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada marcador ao seu perfil de uso.'}
+### 4. (matching) Ligue cada marcador ao seu perfil de uso.
 - **Resposta:** `{"pairs": [["など", "exemplos, neutro/formal"], ["なんか (exemplo)", "exemplos, coloquial"], ["なんか (desdem)", "desvaloriza algo ('nem ligo')"]]}`
-- {'pt-BR': 'など e a forma neutra; なんか e o irmao coloquial que, conforme o contexto e a entonação, ou lista exemplos ou expressa desprezo.'}
+- など e a forma neutra; なんか e o irmão coloquial que, conforme o contexto e a entonação, ou lista exemplos ou expressa desprezo.
 
 
-### 5. (production) {'pt-BR': "Diga 'Comi sorvete, bolo e coisas assim' usando など (sorvete = アイス, bolo = ケーキ, comer no passado = 食べました)."}
+### 5. (production) Diga 'Comi sorvete, bolo e coisas assim' usando など (sorvete = アイス, bolo = ケーキ, comer no passado = 食べました).
 - **Resposta:** `{"text": "アイスやケーキなどを食べました。", "accept": ["アイスやケーキなどを食べました", "アイス、ケーキなどを食べました。", "アイス、ケーキなどを食べました", "アイスやケーキなどを食べました。"]}`
-- {'pt-BR': "など vem colado ao último exemplo (ケーキなど) e recebe を + 食べました. Os itens podem ser ligados por や ('e, entre outros') ou por virgula; など fecha a ideia de 'e coisas assim'."}
+- など vem colado ao último exemplo (ケーキなど) e recebe を + 食べました. Os itens podem ser ligados por や ('e, entre outros') ou por virgula; など fecha a ideia de 'e coisas assim'.
 
 

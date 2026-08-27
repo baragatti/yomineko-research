@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-furi-wo-suru] · vocabulário [ジェット, ジーンズ, 失業] · kanji [君 恐 息 戻 抱 探 束 欲 犯 痛 越 逃 閉] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-127076`
 
 ---
 
@@ -63,28 +63,28 @@ O 君 (きみ) é um "você" informal e carinhoso, usado entre amigos próximos 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Como dizer 'fingir que não sabe'?"}
+### 1. (recognition) Como dizer 'fingir que não sabe'?
 - **Resposta:** `{"choices": ["知らないふりをする", "知らないみたいだ", "知らないはずだ", "知らないかもしれない"], "correct": "知らないふりをする"}`
-- {'pt-BR': "ふりをする é a encenação deliberada: 'fingir que não sabe'. みたいだ seria uma impressão captada ('parece que não sabe'), はずだ uma dedução e かもしれない um 'talvez'. Só ふりをする expressa o fingir de propósito."}
+- ふりをする é a encenação deliberada: 'fingir que não sabe'. みたいだ seria uma impressão captada ('parece que não sabe'), はずだ uma dedução e かもしれない um 'talvez'. Só ふりをする expressa o fingir de propósito.
 
 
-### 2. (cloze) {'pt-BR': "Complete 'fingir estar doente' com o conector certo (substantivo + ふりをする): 病気＿＿ふりをする。"}
+### 2. (cloze) Complete 'fingir estar doente' com o conector certo (substantivo + ふりをする): 病気＿＿ふりをする。
 - **Resposta:** `{"text": "の", "full": "病気のふりをする"}`
-- {'pt-BR': 'Com substantivo, o conector antes de ふりをする é の: 病気のふりをする. Compare: com adjetivo な seria な (元気なふり), e com verbo nada (知らないふり).'}
+- Com substantivo, o conector antes de ふりをする é の: 病気のふりをする. Compare: com adjetivo な seria な (元気なふり), e com verbo nada (知らないふり).
 
 
-### 3. (particle_choice) {'pt-BR': 'Qual partícula está fixa na expressão, logo antes de する?'}
+### 3. (particle_choice) Qual partícula está fixa na expressão, logo antes de する?
 - **Resposta:** `{"choices": ["を", "が", "に", "で"], "correct": "を"}`
-- {'pt-BR': 'A forma padrão é ふりをする, com を antes de する (ふり funciona como objeto de する). A versão sem を aparece na fala bem informal, mas o padrão a fixar é ふりをする.'}
+- A forma padrão é ふりをする, com を antes de する (ふり funciona como objeto de する). A versão sem を aparece na fala bem informal, mas o padrão a fixar é ふりをする.
 
 
-### 4. (recognition) {'pt-BR': 'Qual frase descreve uma POSE deliberada, e não uma impressão captada?'}
+### 4. (recognition) Qual frase descreve uma POSE deliberada, e não uma impressão captada?
 - **Resposta:** `{"choices": ["彼は元気なふりをした (ele fez de conta que estava bem)", "彼は元気みたいだ (ele parece estar bem)", "彼は元気なはずだ (ele deve estar bem)", "彼は元気だろう (ele provavelmente está bem)"], "correct": "彼は元気なふりをした (ele fez de conta que estava bem)"}`
-- {'pt-BR': 'ふりをする marca a encenação proposital (a realidade pode ser o contrário). As outras três descrevem impressão (みたいだ), dedução (はずだ) ou probabilidade (だろう), não fingimento.'}
+- ふりをする marca a encenação proposital (a realidade pode ser o contrário). As outras três descrevem impressão (みたいだ), dedução (はずだ) ou probabilidade (だろう), não fingimento.
 
 
-### 5. (production) {'pt-BR': "Diga 'fiz de conta que não estava ouvindo' usando 聞こえない (não ouvir) + ふりをする no passado."}
+### 5. (production) Diga 'fiz de conta que não estava ouvindo' usando 聞こえない (não ouvir) + ふりをする no passado.
 - **Resposta:** `{"text": "聞こえないふりをした", "accept": ["聞こえないふりをした", "きこえないふりをした", "聞こえないふりをしました", "聞こえないフリをした"]}`
-- {'pt-BR': "Verbo na forma simples liga direto a ふりをする (sem conector); o passado vai no する: ふりをした. 聞こえないふりをした = 'fingi que não estava ouvindo'. Em registro polido, ふりをしました."}
+- Verbo na forma simples liga direto a ふりをする (sem conector); o passado vai no する: ふりをした. 聞こえないふりをした = 'fingi que não estava ouvindo'. Em registro polido, ふりをしました.
 
 

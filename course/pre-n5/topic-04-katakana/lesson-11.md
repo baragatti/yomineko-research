@@ -47,23 +47,23 @@ Leia estes empréstimos em voz alta, todos com o ン no fim:パン(pan, pão),�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual katakana representa o som 'n' (o que fecha a sílaba)?"}
+### 1. (recognition) Qual katakana representa o som 'n' (o que fecha a sílaba)?
 - **Resposta:** `{"choices": ["ン", "ソ", "シ", "ツ"], "correct": "ン"}`
-- {'pt-BR': 'ン = n. O traço grande sobe de baixo para cima e fica mais deitado; é o que o diferencia do ソ.'}
+- ン = n. O traço grande sobe de baixo para cima e fica mais deitado; é o que o diferencia do ソ.
 
 
-### 2. (recognition) {'pt-BR': 'Em ソ, para qual direção vai o traço comprido?'}
+### 2. (recognition) Em ソ, para qual direção vai o traço comprido?
 - **Resposta:** `{"choices": ["desce de cima para baixo (mais em pé)", "sobe de baixo para cima (mais deitado)", "fica totalmente na horizontal"], "correct": "desce de cima para baixo (mais em pé)"}`
-- {'pt-BR': 'No ソ (so) o traço grande desce e fica mais em pé. No ン (n) ele faz o contrário: sobe e fica mais deitado.'}
+- No ソ (so) o traço grande desce e fica mais em pé. No ン (n) ele faz o contrário: sobe e fica mais deitado.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada kana do quarteto confundido ao seu som.'}
+### 3. (matching) Ligue cada kana do quarteto confundido ao seu som.
 - **Resposta:** `{"pairs": [["シ", "shi"], ["ツ", "tsu"], ["ソ", "so"], ["ン", "n"]]}`
-- {'pt-BR': 'シ=shi e ツ=tsu (pinguinhos verticais vs. horizontais); ソ=so e ン=n (traço desce vs. sobe).'}
+- シ=shi e ツ=tsu (pinguinhos verticais vs. horizontais); ソ=so e ン=n (traço desce vs. sobe).
 
 
-### 4. (production) {'pt-BR': "Escreva o katakana do som 'n' (o que aparece no fim de パン)."}
+### 4. (production) Escreva o katakana do som 'n' (o que aparece no fim de パン).
 - **Resposta:** `{"text": "ン", "accept": ["ン"]}`
-- {'pt-BR': "'n' = ン. Lembre: o traço grande sobe de baixo para cima, ao contrário do ソ."}
+- 'n' = ン. Lembre: o traço grande sobe de baixo para cima, ao contrário do ソ.
 
 

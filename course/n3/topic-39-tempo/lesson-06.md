@@ -78,28 +78,28 @@ Resolva os exercícios abaixo e confira cada explicação com atenção.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual verbo significa 'agarrar / segurar com as mãos'?"}
+### 1. (recognition) Qual verbo significa 'agarrar / segurar com as mãos'?
 - **Resposta:** `{"choices": ["掴む", "注ぐ", "勤め", "続き"], "correct": "掴む"}`
-- {'pt-BR': '掴む (つかむ) é agarrar/segurar. 注ぐ (つぐ) é despejar, 勤め (つとめ) é dever/emprego e 続き (つづき) é continuação.'}
+- 掴む (つかむ) é agarrar/segurar. 注ぐ (つぐ) é despejar, 勤め (つとめ) é dever/emprego e 続き (つづき) é continuação.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra ao seu sentido.'}
+### 2. (matching) Associe cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["次々", "um após o outro"], ["常に", "sempre"], ["包み", "embrulho"], ["罪", "crime"]]}`
-- {'pt-BR': '次々 つぎつぎ um após o outro; 常に つねに sempre; 包み つつみ embrulho/pacote; 罪 つみ crime/pecado.'}
+- 次々 つぎつぎ um após o outro; 常に つねに sempre; 包み つつみ embrulho/pacote; 罪 つみ crime/pecado.
 
 
-### 3. (cloze) {'pt-BR': 'Complete: 客が___に入ってくる。 (Os clientes vão entrando um atrás do outro. / つぎつぎ)'}
+### 3. (cloze) Complete: 客が___に入ってくる。 (Os clientes vão entrando um atrás do outro. / つぎつぎ)
 - **Resposta:** `{"text": "次々", "full": "客が次々に入ってくる"}`
-- {'pt-BR': '次々 (つぎつぎ) com に descreve uma sucessão contínua: um cliente atrás do outro.'}
+- 次々 (つぎつぎ) com に descreve uma sucessão contínua: um cliente atrás do outro.
 
 
-### 4. (particle_choice) {'pt-BR': 'お茶をもう一杯___でください。 (Por favor, sirva mais uma xícara de chá.)'}
+### 4. (particle_choice) お茶をもう一杯___でください。 (Por favor, sirva mais uma xícara de chá.)
 - **Resposta:** `{"choices": ["注い", "掴ん", "繋い", "就い"], "correct": "注い"}`
-- {'pt-BR': '注ぐ (つぐ) é despejar/servir um líquido; na forma て fica 注いで. 掴む (agarrar), 繋ぐ (conectar) e 就く (assumir cargo) não cabem aqui.'}
+- 注ぐ (つぐ) é despejar/servir um líquido; na forma て fica 注いで. 掴む (agarrar), 繋ぐ (conectar) e 就く (assumir cargo) não cabem aqui.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Ele está sempre calmo.' (use 常に e 冷静)"}
+### 5. (production) Escreva em japonês: 'Ele está sempre calmo.' (use 常に e 冷静)
 - **Resposta:** `{"text": "彼は常に冷静だ", "accept": ["彼は常に冷静だ", "彼は常に冷静です", "かれはつねにれいせいだ"]}`
-- {'pt-BR': "常に (つねに) significa 'sempre, constantemente'; 冷静 (れいせい) é 'calmo, sereno'. 彼は常に冷静だ = 'Ele está sempre calmo.'"}
+- 常に (つねに) significa 'sempre, constantemente'; 冷静 (れいせい) é 'calmo, sereno'. 彼は常に冷静だ = 'Ele está sempre calmo.'
 
 

@@ -36,7 +36,7 @@
     {
       "entity": "conjugation",
       "title": "conjugation",
-      "description": "The full inflection table for one verb or adjective, keyed by the vocab entry it belongs to.",
+      "description": "The full inflection table for one verb or adjective. It is addressed by the vocab entry it belongs to, so `slug` here is a foreign key into vocab, not a new address.",
       "schema": "conjugation.schema.json",
       "files": "corpus/conjugations/*.json",
       "packing": "list",
@@ -76,9 +76,9 @@
     {
       "entity": "exam_item",
       "title": "exam_item",
-      "description": "One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson.",
+      "description": "One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. The id prefix names the section, and each section has its own required shape.",
       "schema": "exam_item.schema.json",
-      "files": "corpus/exam_banks/*.json",
+      "files": "corpus/exam_banks/n[0-9]_*.json",
       "packing": "list",
       "stable_id_field": "id",
       "id_namespace": [
@@ -98,7 +98,7 @@
         "us"
       ],
       "natural_key": null,
-      "records": 6166
+      "records": 6073
     },
     {
       "entity": "exercise_conjugation",
@@ -173,7 +173,7 @@
     {
       "entity": "kana_family",
       "title": "kana_family",
-      "description": "The kana chart as ordered groups. Keyed by script, so unlike the capability map its keys are a fixed enum rather than stable IDs — which is why the two map-packed files cannot share one generated shape.",
+      "description": "The kana chart as ordered groups. Keyed by script, so unlike the capability map its keys are a fixed enum rather than stable IDs — which is why the two map-packed files cannot share one generated shape. The script is not just a label: every id under `hiragana` must be a hiragana id, and the per-script patternProperties below are what ties the two together, so a katakana glyph filed under the wrong script fails instead of validating.",
       "schema": "kana_family.schema.json",
       "files": "corpus/kana/families.json",
       "packing": "map",

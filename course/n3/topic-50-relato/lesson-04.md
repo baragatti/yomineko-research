@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-kke, n3-to-shite] · vocabulário [主要, 占める, 小, 章, 賞] · kanji [到 吸 吹 娘 忘 悲 掛 暮 歯 礼 緒 陽 雪] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-110065`, `sent:tatoeba-11270411`
 
 ---
 
@@ -90,28 +90,28 @@ São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão v
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': "Complete 'Ele trabalha como advogado': 彼は弁護士___働いている。"}
+### 1. (particle_choice) Complete 'Ele trabalha como advogado': 彼は弁護士___働いている。
 - **Resposta:** `{"choices": ["として", "のように", "というと", "らしい"], "correct": "として"}`
-- {'pt-BR': "として afirma o PAPEL real em que ele atua ('na condição de advogado'). のように seria comparação ('feito um advogado', sem ser um), que não é o caso aqui."}
+- として afirma o PAPEL real em que ele atua ('na condição de advogado'). のように seria comparação ('feito um advogado', sem ser um), que não é o caso aqui.
 
 
-### 2. (recognition) {'pt-BR': "Qual frase significa COMPARAÇÃO ('ele correu feito um doido'), e não um papel real?"}
+### 2. (recognition) Qual frase significa COMPARAÇÃO ('ele correu feito um doido'), e não um papel real?
 - **Resposta:** `{"choices": ["彼はばかのように走った", "彼はばかとして走った", "彼はばかというと走った", "彼はばからしく走った"], "correct": "彼はばかのように走った"}`
-- {'pt-BR': "Comparação ('feito um...') usa のように. として afirmaria um papel real (o que não faz sentido aqui: ninguém atua 'na condição de doido'). Esta é justamente a armadilha do 'como' ambíguo do português."}
+- Comparação ('feito um...') usa のように. として afirmaria um papel real (o que não faz sentido aqui: ninguém atua 'na condição de doido'). Esta é justamente a armadilha do 'como' ambíguo do português.
 
 
-### 3. (cloze) {'pt-BR': "Você esqueceu e tenta lembrar 'a reunião não era amanhã mesmo?': あれ、会議は明日じゃなかった___?"}
+### 3. (cloze) Você esqueceu e tenta lembrar 'a reunião não era amanhã mesmo?': あれ、会議は明日じゃなかった___?
 - **Resposta:** `{"text": "っけ", "full": "あれ、会議は明日じゃなかったっけ"}`
-- {'pt-BR': "っけ marca a tentativa de resgatar da memória algo que você sabia mas esqueceu ('era... mesmo?'). Diferente de ね, que seria só uma confirmação social ('né?')."}
+- っけ marca a tentativa de resgatar da memória algo que você sabia mas esqueceu ('era... mesmo?'). Diferente de ね, que seria só uma confirmação social ('né?').
 
 
-### 4. (recognition) {'pt-BR': 'Qual a diferença entre 明日休みだね e 明日休みだっけ?'}
+### 4. (recognition) Qual a diferença entre 明日休みだね e 明日休みだっけ?
 - **Resposta:** `{"choices": ["だね busca concordância social ('amanhã é folga, né?'); だっけ tenta puxar da memória ('amanhã era folga mesmo?')", "São idênticas; っけ é só uma forma mais educada de ね", "だっけ é formal e usado com superiores; だね é casual", "だっけ afirma com certeza; だね expressa dúvida total"], "correct": "だね busca concordância social ('amanhã é folga, né?'); だっけ tenta puxar da memória ('amanhã era folga mesmo?')"}`
-- {'pt-BR': 'ね pede concordância sobre algo que ambos já sabem; っけ sinaliza que VOCÊ esqueceu e está tentando lembrar/confirmar. Ambos são casuais; っけ não é mais formal nem se usa com superiores.'}
+- ね pede concordância sobre algo que ambos já sabem; っけ sinaliza que VOCÊ esqueceu e está tentando lembrar/confirmar. Ambos são casuais; っけ não é mais formal nem se usa com superiores.
 
 
-### 5. (production) {'pt-BR': "Diga, classificando algo, 'Isto pode ser comido como lanche.' usando として. (これ = isto, おやつ = lanche, 食べられる = pode ser comido)"}
+### 5. (production) Diga, classificando algo, 'Isto pode ser comido como lanche.' usando として. (これ = isto, おやつ = lanche, 食べられる = pode ser comido)
 - **Resposta:** `{"text": "これはおやつとして食べられる", "accept": ["これはおやつとして食べられる", "これはおやつとして食べられます", "これはおやつとしてたべられる", "これ、おやつとして食べられる"]}`
-- {'pt-BR': "として classifica isto NA CONDIÇÃO de lanche: おやつとして ('como lanche') + 食べられる ('pode ser comido'). Aqui として indica a função/categoria atribuída ao item, não uma comparação."}
+- として classifica isto NA CONDIÇÃO de lanche: おやつとして ('como lanche') + 食べられる ('pode ser comido'). Aqui として indica a função/categoria atribuída ao item, não uma comparação.
 
 

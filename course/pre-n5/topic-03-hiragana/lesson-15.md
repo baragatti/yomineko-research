@@ -59,23 +59,23 @@ Tente ler em voz alta, juntando o que você já sabe:りょこう(ryokou, "viage
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual contraído representa o som 'ja' (o 'dj' de 'dia')?"}
+### 1. (recognition) Qual contraído representa o som 'ja' (o 'dj' de 'dia')?
 - **Resposta:** `{"choices": ["じゃ", "ぎゃ", "びゃ"], "correct": "じゃ"}`
-- {'pt-BR': "じゃ = ja (じ + ゃ pequeno), o 'dj' de 'dia'"}
+- じゃ = ja (じ + ゃ pequeno), o 'dj' de 'dia'
 
 
-### 2. (recognition) {'pt-BR': 'O que o っ pequeno faz numa palavra como きって?'}
+### 2. (recognition) O que o っ pequeno faz numa palavra como きって?
 - **Resposta:** `{"choices": ["Dobra a consoante seguinte, com uma pausa de uma mora", "Soa como 'tsu'", "Soa como 'i'"], "correct": "Dobra a consoante seguinte, com uma pausa de uma mora"}`
-- {'pt-BR': 'O っ não tem som próprio: ele dobra a consoante seguinte. きって = ki(pausa)te.'}
+- O っ não tem som próprio: ele dobra a consoante seguinte. きって = ki(pausa)te.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada contraído ao seu som.'}
+### 3. (matching) Ligue cada contraído ao seu som.
 - **Resposta:** `{"pairs": [["みゃ", "mya"], ["りゅ", "ryu"], ["ぎょ", "gyo"], ["びゃ", "bya"], ["ぴゅ", "pyu"]]}`
-- {'pt-BR': 'Os contraídos que faltavam: consoante da coluna do i + ゃ/ゅ/ょ pequeno.'}
+- Os contraídos que faltavam: consoante da coluna do i + ゃ/ゅ/ょ pequeno.
 
 
-### 4. (production) {'pt-BR': "Escreva em hiragana a palavra 'ryokou' (viagem)."}
+### 4. (production) Escreva em hiragana a palavra 'ryokou' (viagem).
 - **Resposta:** `{"text": "りょこう", "accept": ["りょこう"]}`
-- {'pt-BR': 'りょ (ryo, contraído) + こ (ko) + う (u) = りょこう.'}
+- りょ (ryo, contraído) + こ (ko) + う (u) = りょこう.
 
 

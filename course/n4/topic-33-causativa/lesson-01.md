@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-105, saseru] · vocabulário [仕方, 倒れる, 動く, 勝つ, 向かう, 回る, 植える, 汚れる, 濡れる, 移る, 考える, 自由, 苛める] · kanji [兄 勉 妹 姉 弟] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-157461`, `sent:tatoeba-189160`, `sent:tatoeba-218501`, `sent:tatoeba-1804152`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-157461`, `sent:tatoeba-218501`, `sent:tatoeba-1804152`, `sent:tatoeba-189160`
 
 ---
 
@@ -69,28 +69,28 @@ Os exemplos de obrigação usam muito a família. Aproveite para fixar os quatro
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Como se forma o causativo de um verbo do grupo 2 (ichidan) como 考える (pensar)?'}
+### 1. (recognition) Como se forma o causativo de um verbo do grupo 2 (ichidan) como 考える (pensar)?
 - **Resposta:** `{"choices": ["Tira o る e põe させる → 考えさせる", "Troca o final -u por -a e põe せる → 考えあせる", "Não muda nada → 考える"], "correct": "Tira o る e põe させる → 考えさせる"}`
-- {'pt-BR': "Nos verbos do grupo 2 (ichidan) a regra do causativo é mecânica: tira-se o る final e acrescenta-se させる. Por isso 考える vira 考えさせる ('fazer/deixar pensar'). A troca -u→-a com せる é a regra do grupo 1."}
+- Nos verbos do grupo 2 (ichidan) a regra do causativo é mecânica: tira-se o る final e acrescenta-se させる. Por isso 考える vira 考えさせる ('fazer/deixar pensar'). A troca -u→-a com せる é a regra do grupo 1.
 
 
-### 2. (recognition) {'pt-BR': 'No grupo 1 (godan), o causativo de 勝つ (かつ, vencer) é:'}
+### 2. (recognition) No grupo 1 (godan), o causativo de 勝つ (かつ, vencer) é:
 - **Resposta:** `{"choices": ["勝たせる (かたせる)", "勝てせる (かてせる)", "勝たさせる (かたさせる)"], "correct": "勝たせる (かたせる)"}`
-- {'pt-BR': 'No grupo 1 troca-se o som final -u pelo som -a e soma-se せる. つ (tsu) na linha -a vira た (ta), então 勝つ → 勝たせる. させる só entra nos verbos do grupo 2 e nos irregulares.'}
+- No grupo 1 troca-se o som final -u pelo som -a e soma-se せる. つ (tsu) na linha -a vira た (ta), então 勝つ → 勝たせる. させる só entra nos verbos do grupo 2 e nos irregulares.
 
 
-### 3. (cloze) {'pt-BR': 'Complete o causativo de 食べる (comer). 母は弟に野菜を食べ＿。 (A mãe fez o irmão mais novo comer verduras.)'}
+### 3. (cloze) Complete o causativo de 食べる (comer). 母は弟に野菜を食べ＿。 (A mãe fez o irmão mais novo comer verduras.)
 - **Resposta:** `{"text": "させた", "full": "母は弟に野菜を食べさせた"}`
-- {'pt-BR': '食べる é grupo 2: tira-se o る e entra させる → 食べさせる; no passado, 食べさせた. Como 食べる já tem seu objeto com を (野菜), a pessoa obrigada só pode vir com に; quem indica a obrigação aqui é o contexto, não a partícula.'}
+- 食べる é grupo 2: tira-se o る e entra させる → 食べさせる; no passado, 食べさせた. Como 食べる já tem seu objeto com を (野菜), a pessoa obrigada só pode vir com に; quem indica a obrigação aqui é o contexto, não a partícula.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'A mãe deixou a criança brincar livremente.' com as peças: [遊ばせた] [子供を] [母は] [自由に]"}
+### 4. (sentence_build) Monte 'A mãe deixou a criança brincar livremente.' com as peças: [遊ばせた] [子供を] [母は] [自由に]
 - **Resposta:** `{"order": ["母は", "子供を", "自由に", "遊ばせた"], "text": "母は子供を自由に遊ばせた。"}`
-- {'pt-BR': "Ordem japonesa: sujeito (母は) → quem foi autorizado (子供を) → como (自由に, livremente) → verbo causativo no fim (遊ばせた). Aqui é o 自由に (livremente) que empurra o sentido para 'deixar/permitir'; a partícula を sozinha não garante a leitura de permissão."}
+- Ordem japonesa: sujeito (母は) → quem foi autorizado (子供を) → como (自由に, livremente) → verbo causativo no fim (遊ばせた). Aqui é o 自由に (livremente) que empurra o sentido para 'deixar/permitir'; a partícula を sozinha não garante a leitura de permissão.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Deixe-me pensar.' usando o causativo de 考える (pensar) na forma 〜てください (deixe-me...)."}
+### 5. (production) Diga em japonês 'Deixe-me pensar.' usando o causativo de 考える (pensar) na forma 〜てください (deixe-me...).
 - **Resposta:** `{"text": "考えさせてください。", "accept": ["考えさせてください", "考えさせてください。", "かんがえさせてください", "かんがえさせてください。"]}`
-- {'pt-BR': "考える é grupo 2 → causativo 考えさせる; na forma て + ください pede-se permissão para si mesmo: 考えさせてください ('deixe-me pensar'). É o causativo no sentido de permissão aplicado a quem fala."}
+- 考える é grupo 2 → causativo 考えさせる; na forma て + ください pede-se permissão para si mesmo: 考えさせてください ('deixe-me pensar'). É o causativo no sentido de permissão aplicado a quem fala.
 
 

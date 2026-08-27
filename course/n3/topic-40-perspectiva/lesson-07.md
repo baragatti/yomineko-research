@@ -61,28 +61,28 @@ Cuidado: ライター (raitaa) pode ser 'escritor' (writer) OU 'isqueiro' (light
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'folga, margem' (de tempo, dinheiro ou calma)?"}
+### 1. (recognition) Qual palavra significa 'folga, margem' (de tempo, dinheiro ou calma)?
 - **Resposta:** `{"choices": ["余裕", "余分", "利益", "理解"], "correct": "余裕"}`
-- {'pt-BR': "余裕 (よゆう) é folga/margem. 余分 é 'excedente', 利益 é 'lucro' e 理解 é 'compreensão'."}
+- 余裕 (よゆう) é folga/margem. 余分 é 'excedente', 利益 é 'lucro' e 理解 é 'compreensão'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["利益", "lucro"], ["理解", "compreensão"], ["予防", "prevenção"], ["離婚", "divórcio"]]}`
-- {'pt-BR': '利益 é ganho/lucro, 理解 é entendimento, 予防 é prevenção e 離婚 é divórcio.'}
+- 利益 é ganho/lucro, 理解 é entendimento, 予防 é prevenção e 離婚 é divórcio.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'Ela é esperta e entendeu na hora': 彼女は＿＿で、説明をすぐに理解した。"}
+### 3. (cloze) Complete 'Ela é esperta e entendeu na hora': 彼女は＿＿で、説明をすぐに理解した。
 - **Resposta:** `{"text": "利口", "full": "彼女は利口で、説明をすぐに理解した。"}`
-- {'pt-BR': '利口 (りこう) significa esperto/inteligente; combina bem com 理解する (entender).'}
+- 利口 (りこう) significa esperto/inteligente; combina bem com 理解する (entender).
 
 
-### 4. (recognition) {'pt-BR': 'Você vai consultar se vai chover amanhã. Que palavra usa?'}
+### 4. (recognition) Você vai consultar se vai chover amanhã. Que palavra usa?
 - **Resposta:** `{"choices": ["予報", "予防", "余分", "喜び"], "correct": "予報"}`
-- {'pt-BR': '予報 (よほう) é previsão (天気予報, previsão do tempo). 予防 é prevenção, 余分 é excedente e 喜び é alegria.'}
+- 予報 (よほう) é previsão (天気予報, previsão do tempo). 予防 é prevenção, 余分 é excedente e 喜び é alegria.
 
 
-### 5. (production) {'pt-BR': "Diga 'Como há folga no horário, dá para ir tranquilo' usando 余裕 e 楽 (horário = 時間, ir = 行ける)."}
+### 5. (production) Diga 'Como há folga no horário, dá para ir tranquilo' usando 余裕 e 楽 (horário = 時間, ir = 行ける).
 - **Resposta:** `{"text": "時間に余裕があるから、楽に行ける", "accept": ["時間に余裕があるから、楽に行ける。", "時間に余裕があるから楽に行ける", "時間に余裕があるので、楽に行ける", "時間に余裕があるので、楽に行ける。"]}`
-- {'pt-BR': "余裕がある é 'ter folga' e 楽に行ける é 'dá para ir tranquilo/sem esforço'."}
+- 余裕がある é 'ter folga' e 楽に行ける é 'dá para ir tranquilo/sem esforço'.
 
 

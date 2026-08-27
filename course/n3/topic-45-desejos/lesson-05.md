@@ -67,28 +67,28 @@ O kanji 貧 ('pobreza, pobre') aparece em 貧乏 ('pobreza') e 貧しい ('pobre
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual conectivo significa 'mesmo assim, ainda assim'?"}
+### 1. (recognition) Qual conectivo significa 'mesmo assim, ainda assim'?
 - **Resposta:** `{"choices": ["其れでも", "其処で", "其れとも", "其れ其れ"], "correct": "其れでも"}`
-- {'pt-BR': "其れでも (それでも) é 'mesmo assim'. 其処で é 'então/por isso', 其れとも é 'ou então' e 其れ其れ é 'cada um'."}
+- 其れでも (それでも) é 'mesmo assim'. 其処で é 'então/por isso', 其れとも é 'ou então' e 其れ其れ é 'cada um'.
 
 
-### 2. (recognition) {'pt-BR': 'Você quer servir água no copo. Qual verbo usar?'}
+### 2. (recognition) Você quer servir água no copo. Qual verbo usar?
 - **Resposta:** `{"choices": ["注ぐ", "育つ", "備える", "損"], "correct": "注ぐ"}`
-- {'pt-BR': "注ぐ (そそぐ) é 'despejar/servir líquido'. 育つ é 'crescer', 備える é 'preparar/equipar' e 損 é 'prejuízo'."}
+- 注ぐ (そそぐ) é 'despejar/servir líquido'. 育つ é 'crescer', 備える é 'preparar/equipar' e 損 é 'prejuízo'.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu sentido.'}
+### 3. (matching) Ligue cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["尊敬", "respeito, admiração"], ["損害", "dano, prejuízo"], ["組織", "organização"], ["袖", "manga (da roupa)"]]}`
-- {'pt-BR': '尊敬=respeito, 損害=dano, 組織=organização, 袖=manga. Repare que 損害 é mais formal que 損.'}
+- 尊敬=respeito, 損害=dano, 組織=organização, 袖=manga. Repare que 損害 é mais formal que 損.
 
 
-### 4. (cloze) {'pt-BR': "Complete 'Meu filho segurou o bebê com cuidado': 息子は赤ちゃんを＿＿抱いた。"}
+### 4. (cloze) Complete 'Meu filho segurou o bebê com cuidado': 息子は赤ちゃんを＿＿抱いた。
 - **Resposta:** `{"text": "そっと", "full": "息子は赤ちゃんをそっと抱いた"}`
-- {'pt-BR': "そっと é 'de leve, com cuidado'. Descreve uma ação feita com delicadeza e sem barulho."}
+- そっと é 'de leve, com cuidado'. Descreve uma ação feita com delicadeza e sem barulho.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Eu admiro meu pai.' (use 尊敬)"}
+### 5. (production) Escreva em japonês: 'Eu admiro meu pai.' (use 尊敬)
 - **Resposta:** `{"text": "私は父を尊敬している", "accept": ["私は父を尊敬している", "わたしはちちをそんけいしている", "父を尊敬しています"]}`
-- {'pt-BR': "尊敬する significa 'respeitar/admirar'. A forma ている indica esse sentimento como um estado contínuo."}
+- 尊敬する significa 'respeitar/admirar'. A forma ている indica esse sentimento como um estado contínuo.
 
 

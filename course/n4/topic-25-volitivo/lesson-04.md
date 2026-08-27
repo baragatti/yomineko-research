@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [koto-ni-naru, koto-ni-suru, yotei-da] · vocabulário [スクリーン, ベル, 以下, 又は, 受付, 員, 挨拶, 水道] · kanji [画 集] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-29b86688b927`, `sent:tatoeba-84326`, `sent:tatoeba-11669238`, `sent:tatoeba-9489164`
+**Frases (por ID, do banco dissecado):** `sent:gen-29b86688b927`, `sent:tatoeba-11669238`, `sent:tatoeba-84326`, `sent:tatoeba-9489164`
 
 ---
 
@@ -74,28 +74,28 @@ Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした =
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual estrutura indica que a decisão foi tomada por VOCÊ mesmo(a), por vontade própria?'}
+### 1. (recognition) Qual estrutura indica que a decisão foi tomada por VOCÊ mesmo(a), por vontade própria?
 - **Resposta:** `{"choices": ["〜ことになる", "〜ことにする", "〜予定だ"], "correct": "〜ことにする"}`
-- {'pt-BR': "〜ことにする usa する ('fazer'): a decisão é sua. 〜ことになる (com なる, 'tornar-se') indica decisão por circunstâncias, e 〜予定だ é um plano agendado."}
+- 〜ことにする usa する ('fazer'): a decisão é sua. 〜ことになる (com なる, 'tornar-se') indica decisão por circunstâncias, e 〜予定だ é um plano agendado.
 
 
-### 2. (recognition) {'pt-BR': '今日からタバコをやめることにした。; quem tomou a decisão de parar de fumar?'}
+### 2. (recognition) 今日からタバコをやめることにした。; quem tomou a decisão de parar de fumar?
 - **Resposta:** `{"choices": ["A própria pessoa que fala", "A empresa dela", "O médico, por obrigação"], "correct": "A própria pessoa que fala"}`
-- {'pt-BR': 'ことにした (com する no passado) marca decisão própria. A pessoa resolveu por conta própria parar de fumar a partir de hoje.'}
+- ことにした (com する no passado) marca decisão própria. A pessoa resolveu por conta própria parar de fumar a partir de hoje.
 - frases: `sent:gen-29b86688b927`
 
-### 3. (cloze) {'pt-BR': "Complete com a forma de 'ficou decidido (pela empresa)': 来月、大阪に転勤する＿＿＿＿。 (Ficou decidido que serei transferido para Osaka mês que vem.)"}
+### 3. (cloze) Complete com a forma de 'ficou decidido (pela empresa)': 来月、大阪に転勤する＿＿＿＿。 (Ficou decidido que serei transferido para Osaka mês que vem.)
 - **Resposta:** `{"text": "ことになった", "full": "来月、大阪に転勤することになった"}`
-- {'pt-BR': "Uma transferência decidida pela empresa não é vontade sua: usa-se なる. No passado, ことになった = 'ficou decidido (que)'."}
+- Uma transferência decidida pela empresa não é vontade sua: usa-se なる. No passado, ことになった = 'ficou decidido (que)'.
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Meu pai tem planos de ir para o exterior na semana que vem.' com as peças: [予定だ] [父は] [海外へ] [来週] [行く]"}
+### 4. (sentence_build) Monte 'Meu pai tem planos de ir para o exterior na semana que vem.' com as peças: [予定だ] [父は] [海外へ] [来週] [行く]
 - **Resposta:** `{"order": ["父は", "来週", "海外へ", "行く", "予定だ"], "text": "父は来週海外へ行く予定だ。"}`
-- {'pt-BR': '父は (tópico) + 来週 (quando) + 海外へ (para onde) + 行く (verbo na forma de dicionário) + 予定だ (está previsto). 予定だ vem sempre depois do verbo em forma de dicionário.'}
+- 父は (tópico) + 来週 (quando) + 海外へ (para onde) + 行く (verbo na forma de dicionário) + 予定だ (está previsto). 予定だ vem sempre depois do verbo em forma de dicionário.
 - frases: `sent:tatoeba-84326`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Decidi estudar japonês todo dia.' usando 毎日 (todo dia), 日本語を勉強する e a forma de decisão própria no passado."}
+### 5. (production) Diga em japonês 'Decidi estudar japonês todo dia.' usando 毎日 (todo dia), 日本語を勉強する e a forma de decisão própria no passado.
 - **Resposta:** `{"text": "毎日日本語を勉強することにした。", "accept": ["毎日日本語を勉強することにした", "毎日日本語を勉強することにしました", "まいにちにほんごをべんきょうすることにした"]}`
-- {'pt-BR': "勉強する (forma de dicionário) + ことにした = 'decidi estudar'. Como foi uma escolha sua, usa-se する (ことにした), não なる."}
+- 勉強する (forma de dicionário) + ことにした = 'decidi estudar'. Como foi uma escolha sua, usa-se する (ことにした), não なる.
 
 

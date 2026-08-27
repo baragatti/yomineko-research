@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [n3-ta-tokoro, n3-ta-totan, n3-te-hajimete] · vocabulário [依頼, 医療, 印刷, 印象, 岩, 悪戯, 抱く, 痛み, 祝い, 祝う, 稲, 至る, 衣服, 違反] · kanji [初 受 数 続 記] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-187075`, `sent:tatoeba-188870`
 
 ---
 
@@ -77,28 +77,28 @@ Resolva e confira cada explicação.
 ---
 
 ## Exercícios
-### 1. (particle_choice) {'pt-BR': 'ドアを開けた___猫が逃げた。 (Assim que abri a porta, o gato fugiu.)'}
+### 1. (particle_choice) ドアを開けた___猫が逃げた。 (Assim que abri a porta, o gato fugiu.)
 - **Resposta:** `{"choices": ["とたん", "ところ", "たびに", "ついでに"], "correct": "とたん"}`
-- {'pt-BR': 'たとたん marca o instante abrupto e surpreendente: no exato momento em que a porta abriu, o gato (involuntariamente) escapou.'}
+- たとたん marca o instante abrupto e surpreendente: no exato momento em que a porta abriu, o gato (involuntariamente) escapou.
 
 
-### 2. (cloze) {'pt-BR': 'Complete: 日本に行って___文化の違いが分かった。 (Só depois de ir ao Japão entendi a diferença cultural.)'}
-- **Resposta:** `{"text": "日本に行って___文化の違いが分かった", "full": "日本に行ってはじめて文化の違いが分かった"}`
-- {'pt-BR': "Forma て + はじめて: a percepção (entender a diferença) só ocorreu depois da ação de ir. É tomada de consciência tardia, não 'pela primeira vez' literal."}
+### 2. (cloze) Complete: 日本に行って___文化の違いが分かった。 (Só depois de ir ao Japão entendi a diferença cultural.)
+- **Resposta:** `{"text": "はじめて", "full": "日本に行ってはじめて文化の違いが分かった"}`
+- Forma て + はじめて: a percepção (entender a diferença) só ocorreu depois da ação de ir. É tomada de consciência tardia, não 'pela primeira vez' literal.
 
 
-### 3. (recognition) {'pt-BR': 'Em 先生に聞いたところ、丁寧に教えてくれた, qual o sentido de ところ?'}
+### 3. (recognition) Em 先生に聞いたところ、丁寧に教えてくれた, qual o sentido de ところ?
 - **Resposta:** `{"choices": ["ao perguntar (e então descobri o resultado)", "o lugar onde perguntei", "estou prestes a perguntar", "estou no meio de perguntar"], "correct": "ao perguntar (e então descobri o resultado)"}`
-- {'pt-BR': "たところ liga a ação concluída (perguntar) à descoberta que veio em seguida. Não é 'lugar' nem ação em curso."}
+- たところ liga a ação concluída (perguntar) à descoberta que veio em seguida. Não é 'lugar' nem ação em curso.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada palavra ao seu sentido.'}
+### 4. (matching) Associe cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["依頼", "pedido"], ["医療", "tratamento médico"], ["印象", "impressão (que se causa)"], ["痛み", "dor"]]}`
-- {'pt-BR': '依頼 いらい pedido; 医療 いりょう tratamento médico; 印象 いんしょう impressão; 痛み いたみ dor.'}
+- 依頼 いらい pedido; 医療 いりょう tratamento médico; 印象 いんしょう impressão; 痛み いたみ dor.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'No instante em que me levantei, fiquei tonto.' (use とたん e めまいがする)"}
+### 5. (production) Escreva em japonês: 'No instante em que me levantei, fiquei tonto.' (use とたん e めまいがする)
 - **Resposta:** `{"text": "立ったとたんめまいがした", "accept": ["立ったとたんめまいがした", "立ったとたんにめまいがした", "たったとたんめまいがした"]}`
-- {'pt-BR': 'Forma た + とたん: 立ったとたん. O segundo evento (a tontura) é involuntário e surpreendente, exatamente o que とたん exige.'}
+- Forma た + とたん: 立ったとたん. O segundo evento (a tontura) é involuntário e surpreendente, exatamente o que とたん exige.
 
 

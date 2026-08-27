@@ -9,12 +9,21 @@
     "packing": "list",
     "glob": "corpus/families/families.json",
     "stable_id_field": "slug",
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
     "description": {
-      "type": "null"
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/LocaleText"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Authorable Layer-C prose. Empty on every record today; typed as the locale object it will hold rather than pinned to null."
     },
     "governing_rule": {
       "anyOf": [
@@ -27,10 +36,12 @@
       ]
     },
     "id": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "importance_rank": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     },
     "label": {
       "$ref": "common.schema.json#/$defs/LocaleText"
@@ -41,10 +52,12 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "intra_order": {
-            "type": "integer"
+            "type": "integer",
+            "minimum": 0
           },
           "is_core": {
             "type": "boolean"
@@ -55,13 +68,29 @@
               "grammar",
               "kanji",
               "vocab"
-            ]
+            ],
+            "description": "Which registry the member id belongs to. Vocabulary owner: curated — scripts/ingest/migrations/001_init.sql (the `family_member.member_type` column comment). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "curated",
+              "source": "scripts/ingest/migrations/001_init.sql (the `family_member.member_type` column comment)"
+            }
           },
           "note": {
-            "type": "null"
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/LocaleText"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Authorable Layer-C prose. Empty on every record today; typed as the locale object it will hold rather than pinned to null."
           },
           "ref": {
             "type": "string"
+          },
+          "slug": {
+            "$ref": "common.schema.json#/$defs/StableId"
           }
         },
         "additionalProperties": false
@@ -73,11 +102,7 @@
     "spans_levels": {
       "type": "array",
       "items": {
-        "type": "string",
-        "enum": [
-          "n4",
-          "n5"
-        ]
+        "$ref": "common.schema.json#/$defs/Level"
       }
     },
     "type": {
@@ -88,14 +113,19 @@
         "function_set",
         "kanji_component",
         "particle_set",
+        "phonetic_series",
         "semantic_field",
         "word_family"
-      ]
+      ],
+      "description": "What kind of grouping this family is. Vocabulary owner: curated — scripts/ingest/migrations/001_init.sql (the `family.type` column comment). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "curated",
+        "source": "scripts/ingest/migrations/001_init.sql (the `family.type` column comment)"
+      }
     }
   },
   "additionalProperties": false,
   "required": [
-    "description",
     "governing_rule",
     "id",
     "importance_rank",

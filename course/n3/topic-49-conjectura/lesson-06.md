@@ -69,28 +69,28 @@ Repare como muitas dessas palavras começam com o som はい: 灰 (はい, cinza
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual palavra significa ator, artista?'}
+### 1. (recognition) Qual palavra significa ator, artista?
 - **Resposta:** `{"choices": ["俳優 (はいゆう)", "配達 (はいたつ)", "パイロット (パイロット)"], "correct": "俳優 (はいゆう)"}`
-- {'pt-BR': '俳優 (はいゆう) é ator; 配達 é entrega e パイロット é piloto. As três começam com sons parecidos, mas têm significados bem diferentes.'}
+- 俳優 (はいゆう) é ator; 配達 é entrega e パイロット é piloto. As três começam com sons parecidos, mas têm significados bem diferentes.
 
 
-### 2. (matching) {'pt-BR': 'Relacione cada palavra à sua tradução em português.'}
+### 2. (matching) Relacione cada palavra à sua tradução em português.
 - **Resposta:** `{"pairs": [["望む", "desejar"], ["述べる", "declarar"], ["伸ばす", "deixar crescer"], ["墓", "túmulo"]]}`
-- {'pt-BR': '望む é desejar, 述べる é declarar, 伸ばす é deixar crescer e 墓 é túmulo.'}
+- 望む é desejar, 述べる é declarar, 伸ばす é deixar crescer e 墓 é túmulo.
 
 
-### 3. (cloze) {'pt-BR': 'Complete: <jp>休みの日は、家で＿＿過ごすのが好きだ。</jp> (Nos dias de folga, gosto de passar o tempo relaxando em casa.)'}
+### 3. (cloze) Complete: 休みの日は、家で＿＿過ごすのが好きだ。 (Nos dias de folga, gosto de passar o tempo relaxando em casa.)
 - **Resposta:** `{"text": "のんびり", "full": "休みの日は、家でのんびり過ごすのが好きだ。"}`
-- {'pt-BR': 'のんびり descreve passar o tempo de forma tranquila e relaxada, exatamente o que a tradução pede.'}
+- のんびり descreve passar o tempo de forma tranquila e relaxada, exatamente o que a tradução pede.
 
 
-### 4. (cloze) {'pt-BR': 'Complete: <jp>来週には桜の花が咲く＿＿だ。</jp> (Na semana que vem as flores de cerejeira devem desabrochar.)'}
+### 4. (cloze) Complete: 来週には桜の花が咲く＿＿だ。 (Na semana que vem as flores de cerejeira devem desabrochar.)
 - **Resposta:** `{"text": "はず", "full": "来週には桜の花が咲くはずだ。"}`
-- {'pt-BR': 'はずだ expressa a expectativa de que algo deve acontecer com base na lógica ou na situação, que é justamente o sentido de deve aqui.'}
+- はずだ expressa a expectativa de que algo deve acontecer com base na lógica ou na situação, que é justamente o sentido de deve aqui.
 
 
-### 5. (production) {'pt-BR': 'Escreva uma frase dizendo que você quer deixar o cabelo crescer, usando 伸ばす.'}
-- **Resposta:** `{"text": "髪を伸ばしたいです", "accept": ["髪を伸ばしたい", "かみを伸ばしたいです", "髪の毛を伸ばしたい", "私は髪を伸ばしたいです"]}`
-- {'pt-BR': '伸ばす (のばす) é o verbo transitivo usado para deixar crescer cabelo ou unhas; com ～たい ele vira o desejo de fazer isso.'}
+### 5. (production) Escreva uma frase dizendo que você quer deixar o cabelo crescer, usando 伸ばす.
+- **Resposta:** `{"text": "髪を伸ばしたいです", "accept": ["髪を伸ばしたいです", "髪を伸ばしたい", "かみを伸ばしたいです", "髪の毛を伸ばしたい", "私は髪を伸ばしたいです"]}`
+- 伸ばす (のばす) é o verbo transitivo usado para deixar crescer cabelo ou unhas; com ～たい ele vira o desejo de fazer isso.
 
 

@@ -64,28 +64,28 @@ Cuidado: 態と (わざと, de propósito) tem som parecido com わざわざ ('d
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'artigo acadêmico, tese'?"}
+### 1. (recognition) Qual palavra significa 'artigo acadêmico, tese'?
 - **Resposta:** `{"choices": ["論文", "論争", "話題", "悪口"], "correct": "論文"}`
-- {'pt-BR': "論文 (ろんぶん) é um texto acadêmico. 論争 é 'polêmica', 話題 é 'assunto' e 悪口 é 'falar mal'."}
+- 論文 (ろんぶん) é um texto acadêmico. 論争 é 'polêmica', 話題 é 'assunto' e 悪口 é 'falar mal'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["分ける", "dividir/separar"], ["別れ", "despedida"], ["我儘", "egoísta"], ["話題", "assunto"]]}`
-- {'pt-BR': '分ける é separar em partes, 別れ é uma despedida, 我儘 é egoísta e 話題 é o tema da conversa.'}
+- 分ける é separar em partes, 別れ é uma despedida, 我儘 é egoísta e 話題 é o tema da conversa.
 
 
-### 3. (cloze) {'pt-BR': "Complete 'Ele fala mal dos outros de propósito': 彼は＿＿人の悪口を言う。"}
+### 3. (cloze) Complete 'Ele fala mal dos outros de propósito': 彼は＿＿人の悪口を言う。
 - **Resposta:** `{"text": "わざと", "full": "彼はわざと人の悪口を言う。"}`
-- {'pt-BR': "態と (わざと) é 'de propósito'; aqui qualifica a ação de 悪口を言う (falar mal)."}
+- 態と (わざと) é 'de propósito'; aqui qualifica a ação de 悪口を言う (falar mal).
 
 
-### 4. (recognition) {'pt-BR': "Para 'dividir o bolo em três partes', qual verbo usar?"}
+### 4. (recognition) Para 'dividir o bolo em três partes', qual verbo usar?
 - **Resposta:** `{"choices": ["分ける", "論じる", "笑い", "割る"], "correct": "分ける"}`
-- {'pt-BR': "分ける (わける) é separar em partes/grupos, o sentido aqui. 割る é quebrar ou dividir números, 論じる é discutir e 笑い é 'riso'."}
+- 分ける (わける) é separar em partes/grupos, o sentido aqui. 割る é quebrar ou dividir números, 論じる é discutir e 笑い é 'riso'.
 
 
-### 5. (production) {'pt-BR': "Diga 'Aquele artigo provocou uma grande polêmica' usando 論文 e 論争 (aquele = その, provocou = 呼んだ)."}
+### 5. (production) Diga 'Aquele artigo provocou uma grande polêmica' usando 論文 e 論争 (aquele = その, provocou = 呼んだ).
 - **Resposta:** `{"text": "その論文は大きな論争を呼んだ", "accept": ["その論文は大きな論争を呼んだ。", "その論文は大きな論争を呼びました", "その論文は大きな論争を呼びました。"]}`
-- {'pt-BR': "論文 é o sujeito e 論争を呼んだ é a expressão 'provocou polêmica'."}
+- 論文 é o sujeito e 論争を呼んだ é a expressão 'provocou polêmica'.
 
 

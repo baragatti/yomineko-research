@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-maru-de-you, n3-mitai-da] · vocabulário [仕舞った, 凝乎と, 刺激, 姉妹, 屡々, 然も, 直, 直に, 自動, 自慢, 自身, 芝居, 芝生, 親しい, 頻りに] · kanji [互 似 笑 絵 遊] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-80952`, `sent:tatoeba-158843`
 
 ---
 
@@ -68,28 +68,28 @@ O kanji 遊 significa "brincar, divertir-se, passear". O radical da esquerda (�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Como dizer 'ele é tipo uma criança' com みたいだ (substantivo + みたいだ)?"}
+### 1. (recognition) Como dizer 'ele é tipo uma criança' com みたいだ (substantivo + みたいだ)?
 - **Resposta:** `{"choices": ["彼は子供みたいだ", "彼は子供のみたいだ", "彼は子供なみたいだ", "彼は子供だみたいだ"], "correct": "彼は子供みたいだ"}`
-- {'pt-BR': 'Com substantivo, みたいだ liga-se DIRETO, sem の e sem だ: 子供みたいだ. Isso é o contrário de ようだ, que pede の (子供のようだ). Essa é a armadilha número um deste ponto.'}
+- Com substantivo, みたいだ liga-se DIRETO, sem の e sem だ: 子供みたいだ. Isso é o contrário de ようだ, que pede の (子供のようだ). Essa é a armadilha número um deste ponto.
 
 
-### 2. (cloze) {'pt-BR': "Complete a comparação 'linda como um anjo': まるで天使＿＿＿に美しい。"}
+### 2. (cloze) Complete a comparação 'linda como um anjo': まるで天使＿＿＿に美しい。
 - **Resposta:** `{"text": "のよう", "full": "まるで天使のように美しい"}`
-- {'pt-BR': 'Com substantivo, a estrutura é まるで + nome + の + ように/ようだ. Como modifica o adjetivo 美しい (linda), usa-se ように: まるで天使のように美しい. O まるで avisa que vem comparação intensa.'}
+- Com substantivo, a estrutura é まるで + nome + の + ように/ようだ. Como modifica o adjetivo 美しい (linda), usa-se ように: まるで天使のように美しい. O まるで avisa que vem comparação intensa.
 
 
-### 3. (recognition) {'pt-BR': 'Em qual frase ようだ é COMPARAÇÃO (igual a まるで〜よう), e não suposição?'}
+### 3. (recognition) Em qual frase ようだ é COMPARAÇÃO (igual a まるで〜よう), e não suposição?
 - **Resposta:** `{"choices": ["雨が降るようだ (parece que vai chover)", "彼は疲れているようだ (parece que ele está cansado)", "まるで夢のようだ (parece até um sonho)", "熱があるようだ (parece que tem febre)"], "correct": "まるで夢のようだ (parece até um sonho)"}`
-- {'pt-BR': "Com まるで, o sentido é sempre semelhança/figura de linguagem: 'parece até um sonho' (mas não é). As outras três são suposição por indícios ('parece que...'), o outro uso de ようだ."}
+- Com まるで, o sentido é sempre semelhança/figura de linguagem: 'parece até um sonho' (mas não é). As outras três são suposição por indícios ('parece que...'), o outro uso de ようだ.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada palavra à sua tradução.'}
+### 4. (matching) Ligue cada palavra à sua tradução.
 - **Resposta:** `{"pairs": [["親しい", "próximo/íntimo"], ["芝居", "peça teatral"], ["自慢", "orgulho/gabolice"], ["しばしば", "frequentemente"]]}`
-- {'pt-BR': '親しい (したしい) = próximo/íntimo; 芝居 (しばい) = peça teatral; 自慢 (じまん) = orgulho/gabolice; しばしば = frequentemente/muitas vezes. Cuidado para não confundir 芝居 (しばい) com 芝生 (しばふ, gramado).'}
+- 親しい (したしい) = próximo/íntimo; 芝居 (しばい) = peça teatral; 自慢 (じまん) = orgulho/gabolice; しばしば = frequentemente/muitas vezes. Cuidado para não confundir 芝居 (しばい) com 芝生 (しばふ, gramado).
 
 
-### 5. (production) {'pt-BR': "Diga 'ele ri feito criança' usando 子供 (criança), みたいに e 笑う (rir)."}
+### 5. (production) Diga 'ele ri feito criança' usando 子供 (criança), みたいに e 笑う (rir).
 - **Resposta:** `{"text": "彼は子供みたいに笑う", "accept": ["彼は子供みたいに笑う", "かれはこどもみたいにわらう", "子供みたいに笑う", "彼は子供みたいにわらう"]}`
-- {'pt-BR': "Para modificar um verbo (笑う), usa-se みたいに: 子供みたいに笑う ('rir feito criança'). Note que aqui também não entra の depois do substantivo. みたいだ/みたいに/みたいな mudam conforme o que vem depois."}
+- Para modificar um verbo (笑う), usa-se みたいに: 子供みたいに笑う ('rir feito criança'). Note que aqui também não entra の depois do substantivo. みたいだ/みたいに/みたいな mudam conforme o que vem depois.
 
 

@@ -4,7 +4,7 @@
   "stage": "speak:time_plans",
   "order": 3,
   "title": {
-    "pt-BR": "Quando, que horas, combinar — parte 3"
+    "pt-BR": "Quando, que horas, combinar, parte 3"
   },
   "say_now": [
     "sent:tatoeba-171531",
@@ -28,7 +28,7 @@
   ],
   "patterns": [
     "gram:gp-149",
-    "gram:gp-142",
+    "gram:gp-45",
     "gram:gp-93",
     "gram:kana"
   ],
@@ -53,6 +53,110 @@
   "cumulative_known_vocab": 349,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:tsuzukeru",
+    "gram:gp-19"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-45",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-93",
+      "examples": [
+        "sent:gen-a81f2084ea99",
+        "sent:gen-e1c2cfd5e350",
+        "sent:gen-0877b1b2f764"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kana",
+      "examples": [
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-72c52ba4dd08"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "\"Quando você acorda?\" \"Às oito da manhã.\"",
+      "answer_key": "「いつ起きるの？」「朝八時だよ」",
+      "accepted_variants": [
+        "「いつおきるの?」「あさはちじだよ」",
+        "「いつ起きるの？」「朝八時だよ」"
+      ],
+      "sentence": "sent:tatoeba-1037362",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Conheci uma pessoa chamada Kimura na festa.",
+      "answer_key": "木村さんという人にパーティーで会ったよ。",
+      "accepted_variants": [
+        "きむらさんというひとにぱーてぃーであったよ",
+        "きむらさんというひとにぱーてぃーであったよ。",
+        "木村さんという人にパーティーで会ったよ",
+        "木村さんという人にパーティーで会ったよ。"
+      ],
+      "sentence": "sent:tatoeba-80068",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Encontrar com ele a gente deixa para a próxima vez.",
+      "answer_key": "彼に会うのはこの次にしましょう。",
+      "accepted_variants": [
+        "かれにあうのわこのつぎにしましょう",
+        "かれにあうのわこのつぎにしましょう。",
+        "彼に会うのはこの次にしましょう",
+        "彼に会うのはこの次にしましょう。"
+      ],
+      "sentence": "sent:tatoeba-118653",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
+    "items": [
+      "sent:tatoeba-152614",
+      "sent:tatoeba-150577",
+      "sent:tatoeba-80460",
+      "sent:tatoeba-78588",
+      "sent:tatoeba-185449",
+      "sent:tatoeba-79537"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "so:n3:722",
@@ -104,104 +208,5 @@
         "てつだう"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:tsuzukeru",
-    "gram:gp-45"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-142",
-      "examples": [
-        "sent:tatoeba-78454",
-        "sent:tatoeba-137678",
-        "sent:tatoeba-83221"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-93",
-      "examples": [
-        "sent:gen-a81f2084ea99",
-        "sent:gen-e1c2cfd5e350",
-        "sent:gen-0877b1b2f764"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kana",
-      "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "\"Quando você acorda?\" \"Às oito da manhã.\"",
-      "answer_key": "「いつ起きるの？」「朝八時だよ」",
-      "accepted_variants": [
-        "「いつ起きるの？」「朝八時だよ」"
-      ],
-      "sentence": "sent:tatoeba-1037362",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Conheci uma pessoa chamada Kimura na festa.",
-      "answer_key": "木村さんという人にパーティーで会ったよ。",
-      "accepted_variants": [
-        "木村さんという人にパーティーで会ったよ",
-        "木村さんという人にパーティーで会ったよ。"
-      ],
-      "sentence": "sent:tatoeba-80068",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Encontrar com ele a gente deixa para a próxima vez.",
-      "answer_key": "彼に会うのはこの次にしましょう。",
-      "accepted_variants": [
-        "彼に会うのはこの次にしましょう",
-        "彼に会うのはこの次にしましょう。"
-      ],
-      "sentence": "sent:tatoeba-118653",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
-    "items": [
-      "sent:tatoeba-152614",
-      "sent:tatoeba-150577",
-      "sent:tatoeba-80460",
-      "sent:tatoeba-78588",
-      "sent:tatoeba-185449",
-      "sent:tatoeba-79537"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  }
+  ]
 }

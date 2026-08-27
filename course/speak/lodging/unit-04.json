@@ -4,7 +4,7 @@
   "stage": "speak:lodging",
   "order": 4,
   "title": {
-    "pt-BR": "Dormir e resolver problemas — parte 4"
+    "pt-BR": "Dormir e resolver problemas, parte 4"
   },
   "say_now": [
     "sent:tatoeba-78606",
@@ -32,8 +32,9 @@
   ],
   "patterns": [
     "gram:gp-78",
-    "gram:you-to-omou",
-    "gram:gp-115"
+    "gram:gp-115",
+    "gram:te-oku",
+    "gram:to-omou"
   ],
   "kanji_recognition": [
     "建",
@@ -56,6 +57,112 @@
   "cumulative_known_vocab": 239,
   "layer": "C",
   "needs_review": true,
+  "patterns_chunked": [
+    "gram:you-ni-you-na",
+    "gram:nasai"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-78",
+      "examples": [
+        "sent:tatoeba-5049",
+        "sent:tatoeba-222659",
+        "sent:tatoeba-166326"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-115",
+      "examples": [
+        "sent:gen-4c4eb1f80410",
+        "sent:gen-b5467a55ded1",
+        "sent:gen-7506a021dd5b"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:te-oku",
+      "examples": [
+        "sent:tatoeba-173469",
+        "sent:tatoeba-175176",
+        "sent:tatoeba-10712752"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-omou",
+      "examples": [
+        "sent:tatoeba-199355",
+        "sent:tatoeba-187786",
+        "sent:tatoeba-160737"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "O quarto estava tão cheio de fumaça que quase não dava pra respirar.",
+      "answer_key": "部屋は煙でいっぱいで、ほとんど息ができないくらいだった。",
+      "accepted_variants": [
+        "へやわけむりでいっぱいで、ほとんどいきができないくらいだった",
+        "へやわけむりでいっぱいで、ほとんどいきができないくらいだった。",
+        "部屋は煙でいっぱいで、ほとんど息ができないくらいだった",
+        "部屋は煙でいっぱいで、ほとんど息ができないくらいだった。"
+      ],
+      "sentence": "sent:tatoeba-84148",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Quantos meninos estão no quarto?",
+      "answer_key": "部屋には何人の少年がいますか。",
+      "accepted_variants": [
+        "へやにわなんにんのしょうねんがいますか",
+        "へやにわなんにんのしょうねんがいますか。",
+        "部屋には何人の少年がいますか",
+        "部屋には何人の少年がいますか。"
+      ],
+      "sentence": "sent:tatoeba-84224",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "No hotel há muitos estrangeiros.",
+      "answer_key": "ホテルには外国人が多い。",
+      "accepted_variants": [
+        "ほてるにわがいこくじんがおおい",
+        "ほてるにわがいこくじんがおおい。",
+        "ホテルには外国人が多い",
+        "ホテルには外国人が多い。"
+      ],
+      "sentence": "sent:tatoeba-4562257",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
+    "items": [
+      "sent:tatoeba-126245",
+      "sent:tatoeba-84229",
+      "sent:tatoeba-84158",
+      "sent:tatoeba-84222",
+      "sent:tatoeba-84142",
+      "sent:jec-3201"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  },
   "checkpoint": [
     {
       "id": "cf:n3:415:2926",
@@ -97,97 +204,5 @@
         "やすい"
       ]
     }
-  ],
-  "patterns_chunked": [
-    "gram:gp-128",
-    "gram:gp-63",
-    "gram:nasai"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-78",
-      "examples": [
-        "sent:tatoeba-5049",
-        "sent:tatoeba-222659",
-        "sent:tatoeba-166326"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:you-to-omou",
-      "examples": [
-        "sent:tatoeba-3313205",
-        "sent:tatoeba-202096",
-        "sent:tatoeba-3313203"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-115",
-      "examples": [
-        "sent:gen-4c4eb1f80410",
-        "sent:gen-b5467a55ded1",
-        "sent:gen-7506a021dd5b"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O quarto estava tão cheio de fumaça que quase não dava pra respirar.",
-      "answer_key": "部屋は煙でいっぱいで、ほとんど息ができないくらいだった。",
-      "accepted_variants": [
-        "部屋は煙でいっぱいで、ほとんど息ができないくらいだった",
-        "部屋は煙でいっぱいで、ほとんど息ができないくらいだった。"
-      ],
-      "sentence": "sent:tatoeba-84148",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Quantos meninos estão no quarto?",
-      "answer_key": "部屋には何人の少年がいますか。",
-      "accepted_variants": [
-        "部屋には何人の少年がいますか",
-        "部屋には何人の少年がいますか。"
-      ],
-      "sentence": "sent:tatoeba-84224",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "No hotel há muitos estrangeiros.",
-      "answer_key": "ホテルには外国人が多い。",
-      "accepted_variants": [
-        "ホテルには外国人が多い",
-        "ホテルには外国人が多い。"
-      ],
-      "sentence": "sent:tatoeba-4562257",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
-    "items": [
-      "sent:tatoeba-126245",
-      "sent:tatoeba-84229",
-      "sent:tatoeba-84158",
-      "sent:tatoeba-84222",
-      "sent:tatoeba-84142",
-      "sent:jec-3201"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  }
+  ]
 }

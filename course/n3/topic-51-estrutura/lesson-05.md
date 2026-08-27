@@ -77,28 +77,28 @@ Cuidado com 離す e 放す: as duas se leem はなす, mas 離す é separar/af
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Qual é o significado de 発見 (はっけん)?'}
+### 1. (recognition) Qual é o significado de 発見 (はっけん)?
 - **Resposta:** `{"choices": ["descoberta, achado", "invenção", "anúncio, divulgação", "publicação"], "correct": "descoberta, achado"}`
-- {'pt-BR': '発見 (はっけん) é descoberta ou achado: encontrar algo que já existia mas ainda não se conhecia. Não confunda com 発明 (はつめい), que é inventar algo novo.'}
+- 発見 (はっけん) é descoberta ou achado: encontrar algo que já existia mas ainda não se conhecia. Não confunda com 発明 (はつめい), que é inventar algo novo.
 
 
-### 2. (matching) {'pt-BR': 'Associe cada palavra ao seu significado em português.'}
+### 2. (matching) Associe cada palavra ao seu significado em português.
 - **Resposta:** `{"pairs": [["発表", "anúncio, divulgação"], ["発展", "desenvolvimento, expansão"], ["畑", "lavoura, horta"], ["働き", "ação, função, trabalho"]]}`
-- {'pt-BR': '発表 é tornar algo público; 発展 é o crescimento ou a expansão de uma cidade ou país; 畑 é a terra cultivada; e 働き é o trabalho ou a função que algo desempenha, substantivo derivado do verbo 働く.'}
+- 発表 é tornar algo público; 発展 é o crescimento ou a expansão de uma cidade ou país; 畑 é a terra cultivada; e 働き é o trabalho ou a função que algo desempenha, substantivo derivado do verbo 働く.
 
 
-### 3. (particle_choice) {'pt-BR': 'Escolha o verbo correto: 鳥かごを開けて小鳥を____。 (Abri a gaiola e soltei o passarinho.)'}
+### 3. (particle_choice) Escolha o verbo correto: 鳥かごを開けて小鳥を____。 (Abri a gaiola e soltei o passarinho.)
 - **Resposta:** `{"choices": ["放した", "離した"], "correct": "放した"}`
-- {'pt-BR': '放す (はなす) significa soltar ou largar, deixar algo ir, então 放した é a forma certa para libertar o passarinho. 離す (também はなす) seria separar ou afastar uma coisa da outra, o que não cabe aqui.'}
+- 放す (はなす) significa soltar ou largar, deixar algo ir, então 放した é a forma certa para libertar o passarinho. 離す (também はなす) seria separar ou afastar uma coisa da outra, o que não cabe aqui.
 
 
-### 4. (cloze) {'pt-BR': 'Complete com a palavra que significa publicada (no passivo): この雑誌は毎月____されている。'}
+### 4. (cloze) Complete com a palavra que significa publicada (no passivo): この雑誌は毎月____されている。
 - **Resposta:** `{"text": "発行", "full": "この雑誌は毎月発行されている。"}`
-- {'pt-BR': '発行 (はっこう) é a publicação ou edição de um jornal, revista ou documento. Com されている forma a voz passiva: a revista é publicada todo mês.'}
+- 発行 (はっこう) é a publicação ou edição de um jornal, revista ou documento. Com されている forma a voz passiva: a revista é publicada todo mês.
 
 
-### 5. (production) {'pt-BR': 'Traduza para o japonês: A pele do bebê é muito macia.'}
-- **Resposta:** `{"text": "赤ちゃんの肌はとても柔らかい", "accept": ["赤ちゃんの肌はとても柔らかいです", "あかちゃんの肌はとても柔らかい", "赤ちゃんのはだはとても柔らかい"]}`
-- {'pt-BR': '肌 (はだ) é pele. A frase usa a partícula の para ligar 赤ちゃん (bebê) a 肌 (a pele do bebê) e o adjetivo 柔らかい (macio). A forma com です é a versão polida.'}
+### 5. (production) Traduza para o japonês: A pele do bebê é muito macia.
+- **Resposta:** `{"text": "赤ちゃんの肌はとても柔らかい", "accept": ["赤ちゃんの肌はとても柔らかい", "赤ちゃんの肌はとても柔らかいです", "あかちゃんの肌はとても柔らかい", "赤ちゃんのはだはとても柔らかい"]}`
+- 肌 (はだ) é pele. A frase usa a partícula の para ligar 赤ちゃん (bebê) a 肌 (a pele do bebê) e o adjetivo 柔らかい (macio). A forma com です é a versão polida.
 
 

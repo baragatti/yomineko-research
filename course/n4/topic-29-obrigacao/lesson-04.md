@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [gp-117, made-ni] · vocabulário [先ず, 大体, 屹度, 是非, 暫く, 特に, 遠く] · kanji [味 早] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-722c83579913`, `sent:gen-dd6d7f3ff4d2`, `sent:tatoeba-150563`, `sent:tatoeba-147666`
+**Frases (por ID, do banco dissecado):** `sent:gen-dd6d7f3ff4d2`, `sent:gen-722c83579913`, `sent:tatoeba-147666`, `sent:tatoeba-150563`
 
 ---
 
@@ -81,28 +81,28 @@ Por exemplo: 遊びに行く前に宿題をしないと ("antes de sair pra brin
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'A forma coloquial 〜ないと é uma abreviação de qual estrutura completa?'}
+### 1. (recognition) A forma coloquial 〜ないと é uma abreviação de qual estrutura completa?
 - **Resposta:** `{"choices": ["〜ないといけない / 〜ないとだめ ('se não fizer, não pode')", "〜たい ('querer fazer')", "〜てもいい ('pode fazer')"], "correct": "〜ないといけない / 〜ないとだめ ('se não fizer, não pode')"}`
-- {'pt-BR': "〜ないと é o começo de 〜ないといけない / 〜ないとだめ. Na fala, corta-se o final e deixa só o ないと, mas o sentido continua sendo 'tenho que'. O 'não pode' fica subentendido."}
+- 〜ないと é o começo de 〜ないといけない / 〜ないとだめ. Na fala, corta-se o final e deixa só o ないと, mas o sentido continua sendo 'tenho que'. O 'não pode' fica subentendido.
 
 
-### 2. (cloze) {'pt-BR': 'Complete com a obrigação coloquial: 薬を飲ま＿。 (Tenho que tomar o remédio.)'}
+### 2. (cloze) Complete com a obrigação coloquial: 薬を飲ま＿。 (Tenho que tomar o remédio.)
 - **Resposta:** `{"text": "ないと", "full": "薬を飲まないと"}`
-- {'pt-BR': "飲む → negativa casual 飲まない → 飲まないと ('tenho que tomar'). Note que a base é a forma negativa (飲まない), e o と vem logo depois. O final 'não pode' fica no ar."}
+- 飲む → negativa casual 飲まない → 飲まないと ('tenho que tomar'). Note que a base é a forma negativa (飲まない), e o と vem logo depois. O final 'não pode' fica no ar.
 - frases: `sent:gen-dd6d7f3ff4d2`
 
-### 3. (recognition) {'pt-BR': "Qual frase usa o 'até' de PRAZO-LIMITE (ação pontual antes de um momento)?"}
+### 3. (recognition) Qual frase usa o 'até' de PRAZO-LIMITE (ação pontual antes de um momento)?
 - **Resposta:** `{"choices": ["5時までに帰る (volto até as 5, em algum momento antes)", "5時まで待つ (espero até as 5, o tempo todo)", "5時から始まる (começa a partir das 5)"], "correct": "5時までに帰る (volto até as 5, em algum momento antes)"}`
-- {'pt-BR': "までに marca prazo-limite para uma ação pontual: a ação acontece em algum momento ANTES do limite. Já まで (sem に) é o 'até' contínuo (esperar o tempo todo). から é 'a partir de'."}
+- までに marca prazo-limite para uma ação pontual: a ação acontece em algum momento ANTES do limite. Já まで (sem に) é o 'até' contínuo (esperar o tempo todo). から é 'a partir de'.
 - frases: `sent:tatoeba-147666`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Amanhã tenho que acordar cedo.' com as peças: [早く] [あした] [起きないと]"}
+### 4. (sentence_build) Monte 'Amanhã tenho que acordar cedo.' com as peças: [早く] [あした] [起きないと]
 - **Resposta:** `{"order": ["あした", "早く", "起きないと"], "text": "あした早く起きないと。"}`
-- {'pt-BR': 'Ordem natural: あした (amanhã) + 早く (cedo) + 起きないと (tenho que acordar). 起きる → 起きない → 起きないと. O ないと sozinho já carrega toda a obrigação, sem precisar do いけない.'}
+- Ordem natural: あした (amanhã) + 早く (cedo) + 起きないと (tenho que acordar). 起きる → 起きない → 起きないと. O ないと sozinho já carrega toda a obrigação, sem precisar do いけない.
 - frases: `sent:gen-722c83579913`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Tenho que enviar (isto) até sexta.' usando 金曜日 (きんようび, sexta), までに e 送る (おくる, enviar) na forma coloquial 〜ないと."}
+### 5. (production) Diga em japonês 'Tenho que enviar (isto) até sexta.' usando 金曜日 (きんようび, sexta), までに e 送る (おくる, enviar) na forma coloquial 〜ないと.
 - **Resposta:** `{"text": "金曜日までに送らないと。", "accept": ["金曜日までに送らないと", "きんようびまでに送らないと", "きんようびまでにおくらないと", "金曜日までにおくらないと"]}`
-- {'pt-BR': "金曜日 (sexta) + までに (prazo-limite) + 送る → 送らない → 送らないと ('tenho que enviar'). É a combinação típica: までに marca o prazo e ないと a obrigação. O 'não pode' fica subentendido."}
+- 金曜日 (sexta) + までに (prazo-limite) + 送る → 送らない → 送らないと ('tenho que enviar'). É a combinação típica: までに marca o prazo e ないと a obrigação. O 'não pode' fica subentendido.
 
 

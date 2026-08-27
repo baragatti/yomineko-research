@@ -66,28 +66,28 @@ Marcadores de discurso e palavras de transação.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'imposto, tributo'?"}
+### 1. (recognition) Qual palavra significa 'imposto, tributo'?
 - **Resposta:** `{"choices": ["税金 (ぜいきん)", "請求 (せいきゅう)", "世紀 (せいき)"], "correct": "税金 (ぜいきん)"}`
-- {'pt-BR': '税金 = imposto. 請求 = cobrança; 世紀 = século.'}
+- 税金 = imposto. 請求 = cobrança; 世紀 = século.
 
 
-### 2. (recognition) {'pt-BR': "性格 e 正確 são lidos せいかく. Qual significa 'preciso, correto, exato'?"}
+### 2. (recognition) 性格 e 正確 são lidos せいかく. Qual significa 'preciso, correto, exato'?
 - **Resposta:** `{"choices": ["性格", "正確", "as duas significam personalidade"], "correct": "正確"}`
-- {'pt-BR': "正確 (com 正 'correto') = preciso. 性格 (com 性 'índole') = personalidade."}
+- 正確 (com 正 'correto') = preciso. 性格 (com 性 'índole') = personalidade.
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra do bloco せい/す à tradução.'}
+### 3. (matching) Associe cada palavra do bloco せい/す à tradução.
 - **Resposta:** `{"pairs": [["頭痛", "dor de cabeça"], ["鋭い", "afiado"], ["即ち", "ou seja"], ["素敵", "maravilhoso"]]}`
-- {'pt-BR': '頭痛 = dor de cabeça; 鋭い = afiado; 即ち = ou seja; 素敵 = maravilhoso.'}
+- 頭痛 = dor de cabeça; 鋭い = afiado; 即ち = ou seja; 素敵 = maravilhoso.
 
 
-### 4. (cloze) {'pt-BR': "Complete com a palavra para 'imposto': 会計を済ませてから＿＿の話をした。"}
+### 4. (cloze) Complete com a palavra para 'imposto': 会計を済ませてから＿＿の話をした。
 - **Resposta:** `{"text": "税金", "full": "会計を済ませてから税金の話をした。"}`
-- {'pt-BR': '税金 (ぜいきん) é imposto. A frase fala em conversar sobre impostos.'}
+- 税金 (ぜいきん) é imposto. A frase fala em conversar sobre impostos.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Estou com dor de cabeça desde a manhã' usando 頭痛 e ずっと."}
+### 5. (production) Diga em japonês 'Estou com dor de cabeça desde a manhã' usando 頭痛 e ずっと.
 - **Resposta:** `{"text": "朝からずっと頭痛がする", "accept": ["朝からずっと頭痛がする", "あさからずっとずつうがする", "朝からずっと頭痛がします", "朝からずっと頭痛だ"]}`
-- {'pt-BR': '朝から (desde a manhã) + ずっと (sem parar) + 頭痛がする (estar com dor de cabeça).'}
+- 朝から (desde a manhã) + ずっと (sem parar) + 頭痛がする (estar com dor de cabeça).
 
 

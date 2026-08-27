@@ -66,28 +66,28 @@ O kanji 頂 ('topo, cume; receber') aparece em 頂上 ('cume, topo') e em 頂く
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'presidente (de um país)'?"}
+### 1. (recognition) Qual palavra significa 'presidente (de um país)'?
 - **Resposta:** `{"choices": ["大統領", "代表", "代理", "態度"], "correct": "大統領"}`
-- {'pt-BR': "大統領 (だいとうりょう) é 'presidente de um país'. 代表 é 'representante', 代理 é 'procuração' e 態度 é 'atitude'."}
+- 大統領 (だいとうりょう) é 'presidente de um país'. 代表 é 'representante', 代理 é 'procuração' e 態度 é 'atitude'.
 
 
-### 2. (recognition) {'pt-BR': "Você quer dizer 'a maioria dos estudantes'. Qual palavra usar?"}
+### 2. (recognition) Você quer dizer 'a maioria dos estudantes'. Qual palavra usar?
 - **Resposta:** `{"choices": ["大半", "太陽", "大陸", "逮捕"], "correct": "大半"}`
-- {'pt-BR': "大半 (たいはん) é 'a maioria, mais da metade'. 太陽 é 'sol', 大陸 é 'continente' e 逮捕 é 'prisão'."}
+- 大半 (たいはん) é 'a maioria, mais da metade'. 太陽 é 'sol', 大陸 é 'continente' e 逮捕 é 'prisão'.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu sentido.'}
+### 3. (matching) Ligue cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["太陽", "sol"], ["大陸", "continente"], ["タオル", "toalha"], ["互い", "um ao outro"]]}`
-- {'pt-BR': '太陽=sol, 大陸=continente, タオル=toalha, 互い=mutuamente. São palavras de campos bem diferentes.'}
+- 太陽=sol, 大陸=continente, タオル=toalha, 互い=mutuamente. São palavras de campos bem diferentes.
 
 
-### 4. (cloze) {'pt-BR': "Complete 'Ele foi escolhido representante da turma': 彼はクラスの＿＿に選ばれた。"}
+### 4. (cloze) Complete 'Ele foi escolhido representante da turma': 彼はクラスの＿＿に選ばれた。
 - **Resposta:** `{"text": "代表", "full": "彼はクラスの代表に選ばれた"}`
-- {'pt-BR': "代表 (だいひょう) é 'representante'. ～に選ばれた significa 'foi escolhido como'."}
+- 代表 (だいひょう) é 'representante'. ～に選ばれた significa 'foi escolhido como'.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Me esforcei, mas o resultado não veio.' (use だが)"}
+### 5. (production) Escreva em japonês: 'Me esforcei, mas o resultado não veio.' (use だが)
 - **Resposta:** `{"text": "努力した。だが結果は出なかった", "accept": ["努力した。だが結果は出なかった", "どりょくしただがけっかはでなかった", "努力した。だが、結果は出なかった"]}`
-- {'pt-BR': "だが é um 'mas' firme que liga duas frases. Aqui contrasta o esforço com a falta de resultado."}
+- だが é um 'mas' firme que liga duas frases. Aqui contrasta o esforço com a falta de resultado.
 
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-to-ittemo, n3-to-iu-yori, n3-tokoro-ga] · vocabulário [さっぱり, ざっと, 作品, 作家, 作曲, 参考, 最中, 最低, 最終, 最高, 覚ます, 覚める, 騒ぎ] · kanji [喜 曲 浮 精 絶 遅] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-108845`, `sent:tatoeba-141760`
 
 ---
 
@@ -80,28 +80,28 @@ O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na ág
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual frase significa 'Isto, mais do que azul, é verde' (escolhendo o rótulo mais certeiro)?"}
+### 1. (recognition) Qual frase significa 'Isto, mais do que azul, é verde' (escolhendo o rótulo mais certeiro)?
 - **Resposta:** `{"choices": ["これは青より緑が好きだ", "これは青というより緑だ", "これは青といっても緑だ"], "correct": "これは青というより緑だ"}`
-- {'pt-BR': "〜というより escolhe qual rótulo descreve melhor a mesma coisa: '青というより緑' = 'mais do que azul, é verde'. A primeira opção usa より sozinho (comparação de grau/preferência) e a terceira usa といっても, que tem outro sentido."}
+- 〜というより escolhe qual rótulo descreve melhor a mesma coisa: '青というより緑' = 'mais do que azul, é verde'. A primeira opção usa より sozinho (comparação de grau/preferência) e a terceira usa といっても, que tem outro sentido.
 
 
-### 2. (cloze) {'pt-BR': "Complete: 'Falo que sei cozinhar, mas só faço omelete.' 料理ができる＿＿＿＿＿卵焼きだけだ。"}
+### 2. (cloze) Complete: 'Falo que sei cozinhar, mas só faço omelete.' 料理ができる＿＿＿＿＿卵焼きだけだ。
 - **Resposta:** `{"text": "といっても", "full": "料理ができるといっても卵焼きだけだ"}`
-- {'pt-BR': "〜といっても reconhece a palavra ('sei cozinhar') e logo a relativiza ('mas só omelete'). É o recurso típico para frear exageros e ajustar a expectativa do ouvinte."}
+- 〜といっても reconhece a palavra ('sei cozinhar') e logo a relativiza ('mas só omelete'). É o recurso típico para frear exageros e ajustar a expectativa do ouvinte.
 
 
-### 3. (particle_choice) {'pt-BR': "Escolha o conector de surpresa: 'Achei que seria fácil. ____ não consegui de jeito nenhum.' 簡単だと思った。____全然できなかった。"}
+### 3. (particle_choice) Escolha o conector de surpresa: 'Achei que seria fácil. ____ não consegui de jeito nenhum.' 簡単だと思った。____全然できなかった。
 - **Resposta:** `{"choices": ["ところが", "だから", "それで", "つまり"], "correct": "ところが"}`
-- {'pt-BR': "ところが abre uma nova frase e marca um resultado inesperado e surpreendente, ao contrário de だから/それで (consequência esperada) e つまり ('ou seja')."}
+- ところが abre uma nova frase e marca um resultado inesperado e surpreendente, ao contrário de だから/それで (consequência esperada) e つまり ('ou seja').
 
 
-### 4. (matching) {'pt-BR': 'Associe cada recurso ao seu uso:'}
+### 4. (matching) Associe cada recurso ao seu uso:
 - **Resposta:** `{"pairs": [["〜というより", "escolher o rótulo mais preciso (mais para Y)"], ["〜といっても", "manter o rótulo, mas enfraquecê-lo"], ["ところが", "ligar frases com desfecho surpreendente"], ["より", "comparar grau (A maior que B)"]]}`
-- {'pt-BR': 'というより troca o rótulo; といっても mantém o rótulo, mas avisa que é mais fraco do que parece; ところが marca surpresa entre frases; より sozinho é só comparação de grau.'}
+- というより troca o rótulo; といっても mantém o rótulo, mas avisa que é mais fraco do que parece; ところが marca surpresa entre frases; より sozinho é só comparação de grau.
 
 
-### 5. (production) {'pt-BR': "Diga 'Eu ia sair. No entanto, começou a chover.' usando ところが no começo da segunda frase."}
+### 5. (production) Diga 'Eu ia sair. No entanto, começou a chover.' usando ところが no começo da segunda frase.
 - **Resposta:** `{"text": "出かけようとした。ところが雨が降ってきた", "accept": ["でかけようとした。ところがあめがふってきた", "出かけようとした ところが雨が降ってきた", "出かけようとしました。ところが雨が降ってきました"]}`
-- {'pt-BR': 'ところが encabeça a segunda frase para marcar o desfecho inesperado: 出かけようとした (ia sair) + ところが + 雨が降ってきた (começou a chover). Note que ところが não se cola ao verbo da primeira oração; ele abre uma frase nova.'}
+- ところが encabeça a segunda frase para marcar o desfecho inesperado: 出かけようとした (ia sair) + ところが + 雨が降ってきた (começou a chover). Note que ところが não se cola ao verbo da primeira oração; ele abre uma frase nova.
 
 

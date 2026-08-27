@@ -67,28 +67,28 @@ E os dois kanji desta lição, ambos ligados a governo e debate:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra serve para fazer uma transição no discurso, no sentido de 'bem, pois bem, então'?"}
+### 1. (recognition) Qual palavra serve para fazer uma transição no discurso, no sentido de 'bem, pois bem, então'?
 - **Resposta:** `{"choices": ["偖 (さて)", "市 (いち)", "柄 (がら)"], "correct": "偖 (さて)"}`
-- {'pt-BR': "偖 (さて) abre um novo tópico, como nosso 'pois bem'. 市 é mercado e 柄 é estampa."}
+- 偖 (さて) abre um novo tópico, como nosso 'pois bem'. 市 é mercado e 柄 é estampa.
 
 
-### 2. (recognition) {'pt-BR': 'Na frase <jp reading="このグラスはからだ">このグラスは空だ</jp>, o que significa 空 (から)?'}
+### 2. (recognition) Na frase このグラスは空だ, o que significa 空 (から)?
 - **Resposta:** `{"choices": ["céu", "vazio", "azul"], "correct": "vazio"}`
-- {'pt-BR': "Lido から, o kanji 空 vira o adjetivo 'vazio'. O copo está sem nada dentro."}
+- Lido から, o kanji 空 vira o adjetivo 'vazio'. O copo está sem nada dentro.
 
 
-### 3. (matching) {'pt-BR': 'Associe cada palavra à sua tradução em português.'}
+### 3. (matching) Associe cada palavra à sua tradução em português.
 - **Resposta:** `{"pairs": [["何れ", "qual / qualquer um"], ["柄", "estampa"], ["市", "mercado"], ["金", "ouro"]]}`
-- {'pt-BR': '何れ (いずれ) = qual; 柄 (がら) = estampa; 市 (いち) = mercado; 金 (きん) = ouro.'}
+- 何れ (いずれ) = qual; 柄 (がら) = estampa; 市 (いち) = mercado; 金 (きん) = ouro.
 
 
-### 4. (cloze) {'pt-BR': "Complete com a leitura alternativa de 上 que significa 'curso superior do rio': この川の＿＿には小さな村がある。"}
+### 4. (cloze) Complete com a leitura alternativa de 上 que significa 'curso superior do rio': この川の＿＿には小さな村がある。
 - **Resposta:** `{"text": "かみ", "full": "この川の上には小さな村がある。"}`
-- {'pt-BR': "Aqui 上 lê-se かみ (curso superior do rio), diferente do うえ ('em cima')."}
+- Aqui 上 lê-se かみ (curso superior do rio), diferente do うえ ('em cima').
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'À noite ouço música clássica' usando クラシック e 聞く (きく)."}
+### 5. (production) Diga em japonês 'À noite ouço música clássica' usando クラシック e 聞く (きく).
 - **Resposta:** `{"text": "夜はクラシックを聞く", "accept": ["夜はクラシックを聞く", "よるはクラシックをきく", "夜はクラシックを聴く", "夜クラシックを聞く"]}`
-- {'pt-BR': '夜は (à noite) + クラシックを (música clássica, objeto) + 聞く (ouvir).'}
+- 夜は (à noite) + クラシックを (música clássica, objeto) + 聞く (ouvir).
 
 

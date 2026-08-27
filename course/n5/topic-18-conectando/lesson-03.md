@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [demo, shikashi, sore-kara, soshite] · vocabulário [レストラン, 冷蔵庫, 廊下, 横, 然うして, 郵便局, 風呂] · kanji [休] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-85538`, `sent:tatoeba-10588050`, `sent:tatoeba-2469096`, `sent:tatoeba-213512`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10588050`, `sent:tatoeba-2469096`, `sent:tatoeba-85538`, `sent:tatoeba-213512`
 
 ---
 
@@ -74,28 +74,28 @@ Encadeando tudo:郵便局に行きます。それから、レストランで食�
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual conectivo marca CONTRASTE ('mas / porém') no início de uma frase?"}
+### 1. (recognition) Qual conectivo marca CONTRASTE ('mas / porém') no início de uma frase?
 - **Resposta:** `{"choices": ["そして", "それから", "しかし"], "correct": "しかし"}`
-- {'pt-BR': "しかし é 'porém / contudo', um conectivo de contraste (mesma função de でも, só mais formal). Já そして e それから somam ou sequenciam ideias, não as contrariam."}
+- しかし é 'porém / contudo', um conectivo de contraste (mesma função de でも, só mais formal). Já そして e それから somam ou sequenciam ideias, não as contrariam.
 
 
-### 2. (cloze) {'pt-BR': "Complete com o conectivo de sequência no tempo ('e depois disso'): 郵便局に行きます。＿、レストランで食べます。 (Vou aos correios. E depois como no restaurante.)"}
+### 2. (cloze) Complete com o conectivo de sequência no tempo ('e depois disso'): 郵便局に行きます。＿、レストランで食べます。 (Vou aos correios. E depois como no restaurante.)
 - **Resposta:** `{"text": "それから", "full": "郵便局に行きます。それから、レストランで食べます。"}`
-- {'pt-BR': "それから = 'e depois disso', perfeito para marcar a ordem das ações no tempo: primeiro os correios (郵便局), depois o restaurante (レストラン)."}
+- それから = 'e depois disso', perfeito para marcar a ordem das ações no tempo: primeiro os correios (郵便局), depois o restaurante (レストラン).
 
 
-### 3. (recognition) {'pt-BR': "Você está escrevendo um texto formal e quer dizer 'porém'. Qual conectivo soa mais adequado?"}
+### 3. (recognition) Você está escrevendo um texto formal e quer dizer 'porém'. Qual conectivo soa mais adequado?
 - **Resposta:** `{"choices": ["でも", "しかし", "そして"], "correct": "しかし"}`
-- {'pt-BR': 'でも e しかし têm o mesmo sentido de contraste, mas でも é do dia a dia e しかし é mais formal/escrito. Num texto formal, prefira しかし. (そして é adição, não serve aqui.)'}
+- でも e しかし têm o mesmo sentido de contraste, mas でも é do dia a dia e しかし é mais formal/escrito. Num texto formal, prefira しかし. (そして é adição, não serve aqui.)
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Limpo o corredor. E então tomo banho.' com as peças: [掃除します] [風呂に入ります] [廊下を] [。] [そして、]"}
+### 4. (sentence_build) Monte 'Limpo o corredor. E então tomo banho.' com as peças: [掃除します] [風呂に入ります] [廊下を] [。] [そして、]
 - **Resposta:** `{"order": ["廊下を", "掃除します", "。", "そして、", "風呂に入ります"], "text": "廊下を掃除します。そして、風呂に入ります。"}`
-- {'pt-BR': "Primeira frase: 廊下を (corredor) + 掃除します (limpo). Ponto final, e a segunda frase começa com そして、 ('e então') ligando à mesma linha de ação: 風呂に入ります (tomo banho)."}
+- Primeira frase: 廊下を (corredor) + 掃除します (limpo). Ponto final, e a segunda frase começa com そして、 ('e então') ligando à mesma linha de ação: 風呂に入ります (tomo banho).
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'É caro. Mas vou comprar.' usando 高いです / 買います e o conectivo de contraste do dia a dia."}
+### 5. (production) Diga em japonês 'É caro. Mas vou comprar.' usando 高いです / 買います e o conectivo de contraste do dia a dia.
 - **Resposta:** `{"text": "高いです。でも、買います。", "accept": ["高いです。でも、買います。", "高いです。でも買います。", "たかいです。でも、かいます。", "たかいです。でも買います。", "高いです。でも、買います", "たかいです。でも、買います。"]}`
-- {'pt-BR': "でも é o 'mas' coloquial, no início da segunda frase: 高いです (é caro) → ponto → でも、 → 買います (vou comprar). Note que でも fica grudado no começo da frase nova, não no fim da anterior."}
+- でも é o 'mas' coloquial, no início da segunda frase: 高いです (é caro) → ponto → でも、 → 買います (vou comprar). Note que でも fica grudado no começo da frase nova, não no fim da anterior.
 
 

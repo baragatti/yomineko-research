@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-ageru, n3-chatta, n3-kirenai] · vocabulário [加減, 囲む, 学問, 影, 拡大, 欠ける, 火災, 確認, 籠, 過去, 陰, 隠す, 隠れる] · kanji [与 供 常 放 状 球 職] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-80374`, `sent:tatoeba-94359`
 
 ---
 
@@ -80,28 +80,28 @@ O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻)
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que 一日でレポートを書き上げた enfatiza, comparado a レポートを書き終わった?'}
+### 1. (recognition) O que 一日でレポートを書き上げた enfatiza, comparado a レポートを書き終わった?
 - **Resposta:** `{"choices": ["Que o relatório foi escrito até o fim, com esforço e resultado completo", "Que o relatório foi levantado fisicamente", "Que o relatório ainda está pela metade", "Que o relatório foi dado a alguém"], "correct": "Que o relatório foi escrito até o fim, com esforço e resultado completo"}`
-- {'pt-BR': "～上げる destaca a conclusão total e o esforço por trás dela, enquanto 終わる só registra que a ação terminou. Como auxiliar, 上げる perde os sentidos de 'levantar' ou 'dar'."}
+- ～上げる destaca a conclusão total e o esforço por trás dela, enquanto 終わる só registra que a ação terminou. Como auxiliar, 上げる perde os sentidos de 'levantar' ou 'dar'.
 
 
-### 2. (cloze) {'pt-BR': "Complete 'não dou conta de comer toda essa quantidade': この量は食べ＿＿＿＿。"}
+### 2. (cloze) Complete 'não dou conta de comer toda essa quantidade': この量は食べ＿＿＿＿。
 - **Resposta:** `{"text": "切れない", "full": "この量は食べ切れない"}`
-- {'pt-BR': "食べる vira o radical 食べ + 切れない = 食べ切れない. É a negativa de ～切る ('fazer até o fim'), então nega justamente o 'terminar por completo', não o ato de comer em si."}
+- 食べる vira o radical 食べ + 切れない = 食べ切れない. É a negativa de ～切る ('fazer até o fim'), então nega justamente o 'terminar por completo', não o ato de comer em si.
 
 
-### 3. (particle_choice) {'pt-BR': 'Qual é a contração coloquial correta de 飲んでしまった?'}
+### 3. (particle_choice) Qual é a contração coloquial correta de 飲んでしまった?
 - **Resposta:** `{"choices": ["飲んじゃった", "飲んちゃった", "飲みちゃった", "飲んでった"], "correct": "飲んじゃった"}`
-- {'pt-BR': 'Verbos cuja forma て/で termina em で usam じゃった: 飲んでしまった vira 飲んじゃった. Os que terminam em て usam ちゃった (食べてしまった vira 食べちゃった).'}
+- Verbos cuja forma て/で termina em で usam じゃった: 飲んでしまった vira 飲んじゃった. Os que terminam em て usam ちゃった (食べてしまった vira 食べちゃった).
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'acabei comendo o bolo todo' (coloquial, com arrependimento) com as peças: [全部] [ケーキを] [食べちゃった]"}
+### 4. (sentence_build) Monte 'acabei comendo o bolo todo' (coloquial, com arrependimento) com as peças: [全部] [ケーキを] [食べちゃった]
 - **Resposta:** `{"order": ["ケーキを", "全部", "食べちゃった"], "text": "ケーキを全部食べちゃった"}`
-- {'pt-BR': "Ordem SOV: objeto ケーキを, depois o advérbio 全部 ('tudo'), e o verbo no fim 食べちゃった ('acabei comendo'). O ～ちゃった dá o tom coloquial de 'opa, comi tudo'."}
+- Ordem SOV: objeto ケーキを, depois o advérbio 全部 ('tudo'), e o verbo no fim 食べちゃった ('acabei comendo'). O ～ちゃった dá o tom coloquial de 'opa, comi tudo'.
 
 
-### 5. (production) {'pt-BR': "Diga 'terminei de escrever o relatório' usando レポート, 書く e ～上げる no passado."}
+### 5. (production) Diga 'terminei de escrever o relatório' usando レポート, 書く e ～上げる no passado.
 - **Resposta:** `{"text": "レポートを書き上げた", "accept": ["レポートを書き上げた", "レポートをかきあげた", "レポートを書き上げました", "レポートをかきあげました"]}`
-- {'pt-BR': "書く vira o radical 書き + 上げる, no passado 上げた: 書き上げた ('terminei de escrever, por completo'). A versão polida é 書き上げました."}
+- 書く vira o radical 書き + 上げる, no passado 上げた: 書き上げた ('terminei de escrever, por completo'). A versão polida é 書き上げました.
 
 

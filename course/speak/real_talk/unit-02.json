@@ -4,7 +4,7 @@
   "stage": "speak:real_talk",
   "order": 2,
   "title": {
-    "pt-BR": "Conversa de verdade — parte 2"
+    "pt-BR": "Conversa de verdade, parte 2"
   },
   "say_now": [
     "sent:tatoeba-80952",
@@ -53,48 +53,6 @@
   "cumulative_known_vocab": 556,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:5550:1966",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "珈琲",
-        "来る",
-        "寝る"
-      ]
-    },
-    {
-      "id": "cf:n3:1277:1966",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "咖哩",
-        "食事",
-        "家族"
-      ]
-    },
-    {
-      "id": "kr:n4:703",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ようい",
-        "かかり",
-        "うごく"
-      ]
-    },
-    {
-      "id": "kr:n4:800",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ふん",
-        "まど",
-        "なぜ"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-36"
   ],
@@ -150,6 +108,8 @@
       "prompt_pt": "Não posso deixar você fazer uma coisa dessas.",
       "answer_key": "お前にそんなこと、させるわけにはいかないよ。",
       "accepted_variants": [
+        "おまえにそんなこと、させるわけにわいかないよ",
+        "おまえにそんなこと、させるわけにわいかないよ。",
         "お前にそんなこと、させるわけにはいかないよ",
         "お前にそんなこと、させるわけにはいかないよ。"
       ],
@@ -160,6 +120,8 @@
       "prompt_pt": "No entanto, é caro demais.",
       "answer_key": "しかしながら、高すぎる。",
       "accepted_variants": [
+        "しかしながら、たかすぎる",
+        "しかしながら、たかすぎる。",
         "しかしながら、高すぎる",
         "しかしながら、高すぎる。"
       ],
@@ -170,6 +132,8 @@
       "prompt_pt": "Bom, afinal o Japão também viveu fechado para o mundo, né.",
       "answer_key": "まぁ、日本も鎖国していたわけだしなあ。",
       "accepted_variants": [
+        "まぁ、にっぽんもさこくしていたわけだしなあ",
+        "まぁ、にっぽんもさこくしていたわけだしなあ。",
         "まぁ、日本も鎖国していたわけだしなあ",
         "まぁ、日本も鎖国していたわけだしなあ。"
       ],
@@ -192,15 +156,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 23,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:5550:1966",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "珈琲",
+        "来る",
+        "寝る"
+      ]
+    },
+    {
+      "id": "cf:n3:1277:1966",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "咖哩",
+        "食事",
+        "家族"
+      ]
+    },
+    {
+      "id": "kr:n4:703",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ようい",
+        "かかり",
+        "うごく"
+      ]
+    },
+    {
+      "id": "kr:n4:800",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ふん",
+        "まど",
+        "なぜ"
+      ]
+    }
+  ]
 }

@@ -66,28 +66,28 @@ Mais um par de verbos com a mesma raiz e papéis opostos.
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'luz do sol'?"}
+### 1. (recognition) Qual palavra significa 'luz do sol'?
 - **Resposta:** `{"choices": ["日光", "日中", "日常"], "correct": "日光"}`
-- {'pt-BR': "日光 (にっこう) é a luz do sol. 日中 é 'durante o dia' e 日常, 'cotidiano'."}
+- 日光 (にっこう) é a luz do sol. 日中 é 'durante o dia' e 日常, 'cotidiano'.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado.'}
+### 2. (matching) Ligue cada palavra ao seu significado.
 - **Resposta:** `{"pairs": [["人間", "ser humano"], ["人気", "popularidade"], ["布", "tecido"], ["握る", "segurar firme"]]}`
-- {'pt-BR': '人間=ser humano, 人気=popularidade, 布=tecido, 握る=segurar firme.'}
+- 人間=ser humano, 人気=popularidade, 布=tecido, 握る=segurar firme.
 
 
-### 3. (cloze) {'pt-BR': "Complete com o intransitivo: 'Até o cabelo cai.' 髪の毛さえ＿＿。"}
+### 3. (cloze) Complete com o intransitivo: 'Até o cabelo cai.' 髪の毛さえ＿＿。
 - **Resposta:** `{"text": "抜ける", "full": "髪の毛さえ抜ける。"}`
-- {'pt-BR': "抜ける é o intransitivo ('cair/soltar-se por si'). 抜く seria 'arrancar' (você faz)."}
+- 抜ける é o intransitivo ('cair/soltar-se por si'). 抜く seria 'arrancar' (você faz).
 
 
-### 4. (particle_choice) {'pt-BR': "Escolha o advérbio: 'Ela sorriu docemente.' 彼女は＿＿笑った。"}
+### 4. (particle_choice) Escolha o advérbio: 'Ela sorriu docemente.' 彼女は＿＿笑った。
 - **Resposta:** `{"choices": ["にっこり", "にちじょう", "にっちゅう"], "correct": "にっこり"}`
-- {'pt-BR': "にっこり descreve um sorriso doce. 日常 é 'cotidiano' e 日中, 'durante o dia'."}
+- にっこり descreve um sorriso doce. 日常 é 'cotidiano' e 日中, 'durante o dia'.
 
 
-### 5. (production) {'pt-BR': "Diga em japonês: 'É justamente no dia a dia que a natureza humana aparece.' (use 日常, 人間 e ～こそ)"}
-- **Resposta:** `{"text": "日常の中でこそ人間の本性が出る", "accept": ["にちじょうの中でこそ人間の本性が出る", "日常でこそ人間の本性が出る", "日常の中でこそ人間らしさが出る"]}`
-- {'pt-BR': "～こそ enfatiza ('justamente'); 日常 é 'cotidiano' e 人間, 'ser humano'."}
+### 5. (production) Diga em japonês: 'É justamente no dia a dia que a natureza humana aparece.' (use 日常, 人間 e ～こそ)
+- **Resposta:** `{"text": "日常の中でこそ人間の本性が出る", "accept": ["日常の中でこそ人間の本性が出る", "にちじょうの中でこそ人間の本性が出る", "日常でこそ人間の本性が出る", "日常の中でこそ人間らしさが出る"]}`
+- ～こそ enfatiza ('justamente'); 日常 é 'cotidiano' e 人間, 'ser humano'.
 
 

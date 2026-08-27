@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-desu-kara, n3-nazenara] · vocabulário [与える, 医師, 嵐, 息, 悪魔, 扱う, 汗, 油, 生き物, 生憎, 穴, 空き, 胃, 集まり, 預ける] · kanji [実 決 関] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-111483`, `sent:tatoeba-236769`
 
 ---
 
@@ -23,7 +23,7 @@ Forma: a primeira frase termina de modo educado (com です ou ます) e recebe 
 No começo de uma frase nova, ですから retoma um motivo ja dado e puxa a conclusão: "portanto, então".
 
 > **[tip]**
-Dica: から marca um motivo mais subjetivo (sua opiniao, sua justificativa), enquanto ので soa mais neutro e suave. Para recusar ou pedir algo com delicadeza, ので costuma ser preferido.
+Dica: から marca um motivo mais subjetivo (sua opinião, sua justificativa), enquanto ので soa mais neutro e suave. Para recusar ou pedir algo com delicadeza, ので costuma ser preferido.
 
 > **[l1-pitfall]**
 Armadilha PT: não confunda este から (causa, "porque") com a partícula から de "a partir de / desde" (9時から, "a partir das 9"). Aqui ele liga FRASES e significa motivo, não ponto de partida.
@@ -42,7 +42,7 @@ Substantivos e verbos de uso diário (em kana):
 - Saude: 医師 (いし, "medico, doutor"). Combina com causa: "Vou ao medico, porque o estomago doi".
 - Natureza: 嵐 (あらし, "tempestade"), 生き物 (いきもの, "ser vivo, criatura"), 穴 (あな, "buraco"), 油 (あぶら, "oleo").
 - Ações: 与える (あたえる, "dar, conceder"), 扱う (あつかう, "tratar, lidar com"), 預ける (あずける, "deixar aos cuidados de, depositar").
-- Outros: 集まり (あつまり, "reuniao, encontro"), 空き (あき, "espaço, vaga, brecha"), 悪魔 (あくま, "diabo, demonio").
+- Outros: 集まり (あつまり, "reunião, encontro"), 空き (あき, "espaço, vaga, brecha"), 悪魔 (あくま, "diabo, demonio").
 - 生憎 (あいにく) = "infelizmente, que pena". Otimo para abrir uma recusa educada antes do motivo.
 - 意外 (いがい) = "inesperado". Lembrete: não confunda com 以外 ("exceto"), que se le igual mas se escreve diferente.
 
@@ -51,7 +51,7 @@ Armadilha PT: 息 (いき, "folego") e 行き (いき, "ida") soam iguais. So o 
 
 #### Quatro kanji novos
 O kanji 決 significa "decidir, resolver". O radical da esquerda e a água (氵): pense em decidir o curso da água, abrir o caminho. Aparece em 決定 ("decisão") e 決める ("decidir").
-O kanji 関 significa "relação, barreira, portao". O radical externo e o portao (門). Forma 関係 ("relação, ligação") e 関心 ("interesse"). Útil ao explicar causas e conexoes.
+O kanji 関 significa "relação, barreira, portão". O radical externo e o portão (門). Forma 関係 ("relação, ligação") e 関心 ("interesse"). Útil ao explicar causas e conexões.
 O kanji 実 significa "realidade, verdade, fruto". Sob o teto (宀) cresce o que e real, o fruto. Aparece em 実は ("na verdade") e 実験 ("experimento").
 O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com cabelo em cima. Aparece em 首相 ("primeiro-ministro", a "cabeça mútua" do governo, com o 相 que você já viu).
 
@@ -71,28 +71,28 @@ O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com c
 ---
 
 ## Exercícios
-### 1. (cloze) {'pt-BR': "Complete 'Porque esta frio, vamos fechar a janela' (tom educado): 寒い___から、窓を閉めましょう。"}
+### 1. (cloze) Complete 'Porque esta frio, vamos fechar a janela' (tom educado): 寒い___から、窓を閉めましょう。
 - **Resposta:** `{"text": "です", "full": "寒いですから、窓を閉めましょう。"}`
-- {'pt-BR': 'ですから e a versão educada de から: a primeira frase termina com です e recebe から. O motivo (frio) vem antes da consequência (fechar a janela).'}
+- ですから e a versão educada de から: a primeira frase termina com です e recebe から. O motivo (frio) vem antes da consequência (fechar a janela).
 
 
-### 2. (recognition) {'pt-BR': 'Na estrutura なぜなら, o que NUNCA pode faltar para amarrar a explicação?'}
+### 2. (recognition) Na estrutura なぜなら, o que NUNCA pode faltar para amarrar a explicação?
 - **Resposta:** `{"choices": ["o から (ou からだ) no fim do motivo", "um そして no meio", "um ところで antes", "a partícula を"], "correct": "o から (ou からだ) no fim do motivo"}`
-- {'pt-BR': 'Em japonês a causa fica abraçada entre なぜなら (na frente) e から/からだ (no fim). Mesmo com なぜなら já dito, esquecer o から deixa a frase incompleta. Mesmo com なぜなら ja dito, esquecer o から deixa a frase incompleta.'}
+- Em japonês a causa fica abraçada entre なぜなら (na frente) e から/からだ (no fim). Mesmo com なぜなら já dito, esquecer o から deixa a frase incompleta. Mesmo com なぜなら ja dito, esquecer o から deixa a frase incompleta.
 
 
-### 3. (particle_choice) {'pt-BR': 'Você vai abrir uma frase inteira so para justificar, num texto escrito formal. Qual conector usar? 今日は行かない。___、雨が降っているからだ。'}
+### 3. (particle_choice) Você vai abrir uma frase inteira so para justificar, num texto escrito formal. Qual conector usar? 今日は行かない。___、雨が降っているからだ。
 - **Resposta:** `{"choices": ["なぜなら", "ですから", "それとも", "つまり"], "correct": "なぜなら"}`
-- {'pt-BR': "なぜなら abre uma frase dedicada a justificar a anterior, com tom estruturado/escrito, e fecha com からだ. ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo, e por isso não cabe aqui, onde a segunda frase é a justificativa."}
+- なぜなら abre uma frase dedicada a justificar a anterior, com tom estruturado/escrito, e fecha com からだ. ですから, no início de frase, puxa a CONCLUSÃO ('portanto'), não o motivo, e por isso não cabe aqui, onde a segunda frase é a justificativa.
 
 
-### 4. (matching) {'pt-BR': 'Ligue cada elemento ao seu sentido.'}
+### 4. (matching) Ligue cada elemento ao seu sentido.
 - **Resposta:** `{"pairs": [["ですから (liga frases)", "porque / portanto (causa, educado)"], ["9時から", "a partir das 9 (partícula, ponto de partida)"], ["なぜなら ... からだ", "isso porque ... (explicação estruturada)"]]}`
-- {'pt-BR': 'O mesmo から tem dois papeis: causa entre frases (ですから) e ponto de partida apos um substantivo (9時から). なぜなら abraca o motivo com からだ no fim.'}
+- O mesmo から tem dois papeis: causa entre frases (ですから) e ponto de partida apos um substantivo (9時から). なぜなら abraca o motivo com からだ no fim.
 
 
-### 5. (production) {'pt-BR': "Diga: 'Hoje não vou, porque estou ocupado' usando ですから (adjetivo 'ocupado' = 忙しい)."}
+### 5. (production) Diga: 'Hoje não vou, porque estou ocupado' usando ですから (adjetivo 'ocupado' = 忙しい).
 - **Resposta:** `{"text": "忙しいですから、今日は行きません。", "accept": ["忙しいですから、今日は行きません", "いそがしいですから、きょうはいきません。", "いそがしいですから、きょうはいきません", "忙しいですから今日は行きません"]}`
-- {'pt-BR': "O motivo (忙しいですから, 'porque estou ocupado') vem antes da consequência (今日は行きません, 'hoje não vou'). O です mantem o tom educado, combinando bem com a recusa em ません."}
+- O motivo (忙しいですから, 'porque estou ocupado') vem antes da consequência (今日は行きません, 'hoje não vou'). O です mantem o tom educado, combinando bem com a recusa em ません.
 
 

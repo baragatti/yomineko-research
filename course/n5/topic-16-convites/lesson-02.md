@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [mashou] · vocabulário [ベッド, ペット, ポケット, ポスト, 冬, 帽子, 服, 釦] · kanji [土 木] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-139208`, `sent:tatoeba-198378`, `sent:tatoeba-200934`, `sent:tatoeba-197681`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-139208`, `sent:tatoeba-198378`, `sent:tatoeba-197681`, `sent:tatoeba-200934`
 
 ---
 
@@ -42,7 +42,7 @@ O はい é "sim", e em seguida vem o ましょう aceitando: "Sim, vamos". É e
 Para dizer onde vamos, junte o destino com a partícula に:
 > 🗣 ビーチに行きましょう。 — Vamos à praia.
 Aqui ビーチ é "praia" (do inglês beach),に marca o destino, e 行きましょう propõe: "Vamos à praia". O molde geral é simples e você vai reusá-lo muito:
-Molde: [lugar] に行きましょう = "vamos a [lugar]".
+Molde: [lugar] に 行きましょう = "vamos a [lugar]".
 No 冬 trocaríamos a praia por outro lugar, claro.
 E se ainda não decidiram o lugar, pergunte:
 > 🗣 どこに行きましょう？ — Para onde vamos?
@@ -85,28 +85,28 @@ Dois kanji simples de traços, ligados à natureza:
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Como se forma 〜ましょう ('vamos fazer') a partir da forma polida 行きます ('vou')?"}
+### 1. (recognition) Como se forma 〜ましょう ('vamos fazer') a partir da forma polida 行きます ('vou')?
 - **Resposta:** `{"choices": ["Troca ます por ましょう → 行きましょう", "Troca ます por ません → 行きません", "Acrescenta です → 行きますです"], "correct": "Troca ます por ましょう → 行きましょう"}`
-- {'pt-BR': "A regra é mecânica: pega a forma polida e troca só a terminação ます por ましょう. Assim 行きます ('vou') vira 行きましょう ('vamos'). A raiz do verbo nunca muda. ません seria a forma negativa ('não vou'), outro caminho."}
+- A regra é mecânica: pega a forma polida e troca só a terminação ます por ましょう. Assim 行きます ('vou') vira 行きましょう ('vamos'). A raiz do verbo nunca muda. ません seria a forma negativa ('não vou'), outro caminho.
 
 
-### 2. (recognition) {'pt-BR': "Alguém te convida: 一緒に行きませんか ('não quer ir junto?'). Qual é a resposta natural para ACEITAR?"}
+### 2. (recognition) Alguém te convida: 一緒に行きませんか ('não quer ir junto?'). Qual é a resposta natural para ACEITAR?
 - **Resposta:** `{"choices": ["はい、行きましょう。", "はい、行きません。", "はい、行きますか。"], "correct": "はい、行きましょう。"}`
-- {'pt-BR': "〜ましょう é a resposta natural para aceitar um convite feito com 〜ませんか. はい ('sim') + 行きましょう ('vamos') fecha o combinado. 行きません significaria 'não vou' (recusa), e 行きますか é uma pergunta, não uma aceitação."}
+- 〜ましょう é a resposta natural para aceitar um convite feito com 〜ませんか. はい ('sim') + 行きましょう ('vamos') fecha o combinado. 行きません significaria 'não vou' (recusa), e 行きますか é uma pergunta, não uma aceitação.
 - frases: `sent:tatoeba-198378`
 
-### 3. (cloze) {'pt-BR': 'Complete a proposta: ビーチに行き＿。 (Vamos à praia.)'}
+### 3. (cloze) Complete a proposta: ビーチに行き＿。 (Vamos à praia.)
 - **Resposta:** `{"text": "ましょう", "full": "ビーチに行きましょう"}`
-- {'pt-BR': "Para propor 'vamos (ir)', a forma polida 行きます vira 行きましょう. O destino ビーチ ('praia') leva a partícula に, e o verbo com ましょう fecha a frase. É exatamente a frase real da lição."}
+- Para propor 'vamos (ir)', a forma polida 行きます vira 行きましょう. O destino ビーチ ('praia') leva a partícula に, e o verbo com ましょう fecha a frase. É exatamente a frase real da lição.
 - frases: `sent:tatoeba-197681`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Para onde vamos?' com as peças: [行きましょう] [どこ] [に]"}
+### 4. (sentence_build) Monte 'Para onde vamos?' com as peças: [行きましょう] [どこ] [に]
 - **Resposta:** `{"order": ["どこ", "に", "行きましょう"], "text": "どこに行きましょう。"}`
-- {'pt-BR': "Ordem japonesa: どこ ('onde') + に (marca o destino) + 行きましょう (proposta, no fim). O verbo sempre fecha a frase. É a estrutura da pergunta real どこに行きましょう？."}
+- Ordem japonesa: どこ ('onde') + に (marca o destino) + 行きましょう (proposta, no fim). O verbo sempre fecha a frase. É a estrutura da pergunta real どこに行きましょう？.
 - frases: `sent:tatoeba-200934`
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Vamos comer juntos.' usando 一緒に (juntos), 食べる (comer) na forma 〜ましょう."}
+### 5. (production) Diga em japonês 'Vamos comer juntos.' usando 一緒に (juntos), 食べる (comer) na forma 〜ましょう.
 - **Resposta:** `{"text": "一緒に食べましょう。", "accept": ["一緒に食べましょう", "いっしょに食べましょう", "いっしょにたべましょう", "一緒にたべましょう", "一緒に食べましょう。", "いっしょにたべましょう。"]}`
-- {'pt-BR': "食べる é verbo る: a forma polida 食べます vira 食べましょう ('vamos comer'). 一緒に ('juntos') vem antes do verbo, que fecha a frase: 一緒に食べましょう. É assim que se propõe uma ação em conjunto."}
+- 食べる é verbo る: a forma polida 食べます vira 食べましょう ('vamos comer'). 一緒に ('juntos') vem antes do verbo, que fecha a frase: 一緒に食べましょう. É assim que se propõe uma ação em conjunto.
 
 

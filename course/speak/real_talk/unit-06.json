@@ -4,7 +4,7 @@
   "stage": "speak:real_talk",
   "order": 6,
   "title": {
-    "pt-BR": "Conversa de verdade — parte 6"
+    "pt-BR": "Conversa de verdade, parte 6"
   },
   "say_now": [
     "sent:tatoeba-77972",
@@ -52,53 +52,6 @@
   "cumulative_known_vocab": 584,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:498",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:5393:2639",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "新聞",
-        "休む",
-        "出席"
-      ]
-    },
-    {
-      "id": "cf:n3:5522:1979",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "ビル",
-        "少年",
-        "引く"
-      ]
-    },
-    {
-      "id": "kr:n5:62",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "うたう",
-        "みせる",
-        "こんな"
-      ]
-    },
-    {
-      "id": "kr:n4:1037",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "かいもの",
-        "ともだち",
-        "さんせい"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-36"
   ],
@@ -154,6 +107,8 @@
       "prompt_pt": "Ele tem um quê de acadêmico.",
       "answer_key": "学者らしいところがある。",
       "accepted_variants": [
+        "がくしゃらしいところがある",
+        "がくしゃらしいところがある。",
         "学者らしいところがある",
         "学者らしいところがある。"
       ],
@@ -164,6 +119,8 @@
       "prompt_pt": "O que significa \"UN\"?",
       "answer_key": "ＵＮというのは何を表わしていますか。",
       "accepted_variants": [
+        "ゆーえぬというのわなにをあらわしていますか",
+        "ゆーえぬというのわなにをあらわしていますか。",
         "ＵＮというのは何を表わしていますか",
         "ＵＮというのは何を表わしていますか。"
       ],
@@ -174,6 +131,8 @@
       "prompt_pt": "Parece que você já terminou, né?",
       "answer_key": "済んだみたいだね。",
       "accepted_variants": [
+        "すんだみたいだね",
+        "すんだみたいだね。",
         "済んだみたいだね",
         "済んだみたいだね。"
       ],
@@ -196,15 +155,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:498",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5393:2639",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "新聞",
+        "休む",
+        "出席"
+      ]
+    },
+    {
+      "id": "cf:n3:5522:1979",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "ビル",
+        "少年",
+        "引く"
+      ]
+    },
+    {
+      "id": "kr:n5:62",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "うたう",
+        "みせる",
+        "こんな"
+      ]
+    },
+    {
+      "id": "kr:n4:1037",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "かいもの",
+        "ともだち",
+        "さんせい"
+      ]
+    }
+  ]
 }

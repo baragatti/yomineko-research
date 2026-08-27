@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [te-ageru, te-yaru] · vocabulário [ご馳走, はっきり, 凄い, 喜ぶ, 差し上げる, 手袋, 気持ち, 真面目, 祖父, 踊り] · kanji [町 真] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-137941`, `sent:tatoeba-4766`, `sent:tatoeba-229406`, `sent:tatoeba-11059892`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11059892`, `sent:tatoeba-137941`, `sent:tatoeba-229406`, `sent:tatoeba-4766`
 
 ---
 
@@ -67,28 +67,28 @@ Resuma assim: te-ageru = faço o favor (educado, neutro); te-yaru = mesmo favor,
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O que 〜てあげる expressa?'}
+### 1. (recognition) O que 〜てあげる expressa?
 - **Resposta:** `{"choices": ["alguém faz um favor PARA MIM", "EU faço um favor em benefício de outra pessoa", "eu recebo um presente"], "correct": "EU faço um favor em benefício de outra pessoa"}`
-- {'pt-BR': "〜てあげる indica que você (ou alguém do seu lado) faz uma ação de bom grado em benefício de outra pessoa. A direção é 'de mim para fora'."}
+- 〜てあげる indica que você (ou alguém do seu lado) faz uma ação de bom grado em benefício de outra pessoa. A direção é 'de mim para fora'.
 - frases: `sent:tatoeba-11059892`
 
-### 2. (recognition) {'pt-BR': 'Você vai ler um livro para o seu irmão mais novo, fazendo um favor a ele. Qual forma combina melhor?'}
+### 2. (recognition) Você vai ler um livro para o seu irmão mais novo, fazendo um favor a ele. Qual forma combina melhor?
 - **Resposta:** `{"choices": ["本を読んであげます", "本を読んでやる", "本を読んでくれる"], "correct": "本を読んでやる"}`
-- {'pt-BR': "Para irmãos mais novos, crianças, animais e plantas, em tom informal, usa-se 〜てやる: 弟に本を読んでやる. É a versão 'de cima para baixo' do mesmo favor. 本を読んであげます soa formal demais entre irmãos, e 本を読んでくれる inverteria a direção (alguém lendo para mim)."}
+- Para irmãos mais novos, crianças, animais e plantas, em tom informal, usa-se 〜てやる: 弟に本を読んでやる. É a versão 'de cima para baixo' do mesmo favor. 本を読んであげます soa formal demais entre irmãos, e 本を読んでくれる inverteria a direção (alguém lendo para mim).
 - frases: `sent:tatoeba-4766`
 
-### 3. (particle_choice) {'pt-BR': 'Complete: 友だち＿日本語を教えてあげる。 (Ensino japonês para o meu amigo.)'}
+### 3. (particle_choice) Complete: 友だち＿日本語を教えてあげる。 (Ensino japonês para o meu amigo.)
 - **Resposta:** `{"choices": ["に", "は", "で"], "correct": "に"}`
-- {'pt-BR': "A pessoa que recebe o favor de 〜てあげる costuma vir com に: 友だちに日本語を教えてあげる = 'ensino japonês para o meu amigo'. Atenção: a partícula vem do verbo de base, e 手伝う marca a pessoa com を (友だちを手伝ってあげる)."}
+- A pessoa que recebe o favor de 〜てあげる costuma vir com に: 友だちに日本語を教えてあげる = 'ensino japonês para o meu amigo'. Atenção: a partícula vem do verbo de base, e 手伝う marca a pessoa com を (友だちを手伝ってあげる).
 
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Vou te contar uma coisa boa.' com as peças: [やる] [教えて] [いいことを]"}
+### 4. (sentence_build) Monte 'Vou te contar uma coisa boa.' com as peças: [やる] [教えて] [いいことを]
 - **Resposta:** `{"order": ["いいことを", "教えて", "やる"], "text": "いいことを教えてやる。"}`
-- {'pt-BR': 'いいことを (uma coisa boa) + 教えて (forma て de 教える) + やる = favor informal, de cima para baixo. É a estrutura da frase em destaque.'}
+- いいことを (uma coisa boa) + 教えて (forma て de 教える) + やる = favor informal, de cima para baixo. É a estrutura da frase em destaque.
 - frases: `sent:tatoeba-229406`
 
-### 5. (production) {'pt-BR': "Diga, em tom educado e neutro, 'Eu te espero / Vou esperar por você.' usando 待つ na forma て + あげる."}
+### 5. (production) Diga, em tom educado e neutro, 'Eu te espero / Vou esperar por você.' usando 待つ na forma て + あげる.
 - **Resposta:** `{"text": "待ってあげる。", "accept": ["待ってあげる", "まってあげる", "待ってあげるよ", "待ってあげます"]}`
-- {'pt-BR': "待つ (godan em つ) → forma て 待って; + あげる = 'faço o favor de esperar por você'. Acrescentar よ deixa mais natural na fala."}
+- 待つ (godan em つ) → forma て 待って; + あげる = 'faço o favor de esperar por você'. Acrescentar よ deixa mais natural na fala.
 - frases: `sent:tatoeba-137941`
 

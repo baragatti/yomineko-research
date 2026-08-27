@@ -7,9 +7,9 @@
 - Escolher ごろ para um ponto no tempo e ころ para um período mais amplo
 - Falar do passado recente com さっき
 
-**Introduz:** gramática [gp-68, koro-goro] · vocabulário [予習, 医学, 正月, 発音, 規則] · kanji [発] · kana [—]
+**Introduz:** gramática [gp-68, koro-goro] · vocabulário [予習, 先, 医学, 正月, 発音, 規則] · kanji [発] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-e00af1726629`, `sent:gen-86b281bbdbef`, `sent:tatoeba-148071`, `sent:tatoeba-235061`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-148071`, `sent:tatoeba-235061`, `sent:gen-86b281bbdbef`, `sent:gen-e00af1726629`
 
 ---
 
@@ -50,7 +50,7 @@ Em português "há pouco" às vezes pede preposição ("de", "há"); em japonês
 Cuidado com o っ pequeno de さっき: ele é uma pausa de UM tempo, em silêncio, antes do き. Em português a gente tende a encurtar essa parada. Segure a batida: さ-(pausa)-き. Sem segurar, soa como outra coisa.
 
 #### Kanji em foco: 発
-O kanji 発 carrega as ideias de partida, "emitir", "disparar", "partir de". Na leitura onハツ ele forma a palavra 発音 (発音, "pronúncia"): algo que "sai/é emitido" pela boca. Mnemônico de forma: imagine duas perninhas (癶) prontas no bloco de partida, com o corpo se lançando para frente, um corredor que "parte". Som que parte da boca = 発音.
+O kanji 発 carrega as ideias de partida, "emitir", "disparar", "partir de". Na leitura on ハツ ele forma a palavra 発音 (発音, "pronúncia"): algo que "sai/é emitido" pela boca. Mnemônico de forma: imagine duas perninhas (癶) prontas no bloco de partida, com o corpo se lançando para frente, um corredor que "parte". Som que parte da boca = 発音.
 
 > **[culture]**
 O 正月 (Ano-Novo, sobretudo os três primeiros dias de janeiro) é a época mais marcante do calendário japonês. Você vai ouvir muito 正月頃 ("lá pela época do Ano-Novo"): tempo aproximado ligado a uma temporada inteira, então a leitura é ごろ por estar preso a um ponto nomeado do ano.
@@ -76,28 +76,28 @@ Frases-modelo para guardar: 予習はたいてい夜する ("costumo fazer a pre
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'Em 子供の頃よく川で遊んだ ("quando criança, brincava muito no rio"), como se LÊ o kanji 頃?'}
+### 1. (recognition) Em 子供の頃よく川で遊んだ ("quando criança, brincava muito no rio"), como se LÊ o kanji 頃?
 - **Resposta:** `{"choices": ["ごろ", "ころ", "とき"], "correct": "ころ"}`
-- {'pt-BR': "Quando 頃 se refere a um período amplo da vida (a infância), lê-se ころ (sem tenten). É o caso de 子供の頃 = 'quando criança'."}
+- Quando 頃 se refere a um período amplo da vida (a infância), lê-se ころ (sem tenten). É o caso de 子供の頃 = 'quando criança'.
 - frases: `sent:gen-e00af1726629`
 
-### 2. (recognition) {'pt-BR': "Você quer dizer 'por volta das sete horas'. Qual leitura de 頃 entra em 七時頃?"}
+### 2. (recognition) Você quer dizer 'por volta das sete horas'. Qual leitura de 頃 entra em 七時頃?
 - **Resposta:** `{"choices": ["ごろ", "ころ", "だい"], "correct": "ごろ"}`
-- {'pt-BR': "Colado a um ponto específico no tempo (uma hora exata), 頃 sonoriza e vira ごろ. Por isso 七時頃 = しちじごろ ('por volta das sete')."}
+- Colado a um ponto específico no tempo (uma hora exata), 頃 sonoriza e vira ごろ. Por isso 七時頃 = しちじごろ ('por volta das sete').
 - frases: `sent:gen-86b281bbdbef`
 
-### 3. (cloze) {'pt-BR': 'Complete com o sufixo de aproximação de tempo: 六時＿に起きた。 (Levantei por volta das seis.)'}
+### 3. (cloze) Complete com o sufixo de aproximação de tempo: 六時＿に起きた。 (Levantei por volta das seis.)
 - **Resposta:** `{"text": "ごろ", "full": "六時ごろに起きた"}`
-- {'pt-BR': "ごろ gruda direto na hora para dizer 'por volta de'. Não use ぐらい aqui: ぐらい seria duração ('umas seis horas'), e o que queremos é o momento ('lá pelas seis')."}
+- ごろ gruda direto na hora para dizer 'por volta de'. Não use ぐらい aqui: ぐらい seria duração ('umas seis horas'), e o que queremos é o momento ('lá pelas seis').
 - frases: `sent:tatoeba-235061`
 
-### 4. (sentence_build) {'pt-BR': "Monte 'Aconteceu alguma coisa há pouco?' com as peças: [何か] [さっき] [あった] [？]"}
+### 4. (sentence_build) Monte 'Aconteceu alguma coisa há pouco?' com as peças: [何か] [さっき] [あった] [？]
 - **Resposta:** `{"order": ["さっき", "何か", "あった", "？"], "text": "さっき何かあった？"}`
-- {'pt-BR': "さっき ('há pouco') é um advérbio inteiriço que abre a frase, sem partícula atrás. Depois vem 何か (alguma coisa) + あった (aconteceu) + ？ (pergunta casual)."}
+- さっき ('há pouco') é um advérbio inteiriço que abre a frase, sem partícula atrás. Depois vem 何か (alguma coisa) + あった (aconteceu) + ？ (pergunta casual).
 
 
-### 5. (production) {'pt-BR': "Diga em japonês 'Vamos nos encontrar na estação por volta das três.' usando 三時 (três horas), ごろ, 駅 (estação) e 会いましょう (vamos nos encontrar)."}
+### 5. (production) Diga em japonês 'Vamos nos encontrar na estação por volta das três.' usando 三時 (três horas), ごろ, 駅 (estação) e 会いましょう (vamos nos encontrar).
 - **Resposta:** `{"text": "三時ごろに駅で会いましょう。", "accept": ["三時ごろに駅で会いましょう", "三時ごろ駅で会いましょう", "さんじごろに駅で会いましょう", "三時頃に駅で会いましょう", "三時頃駅で会いましょう"]}`
-- {'pt-BR': '三時 (três horas) + ごろ (por volta de) marca o momento aproximado; 駅で (na estação) + 会いましょう (vamos nos encontrar) fecham a frase. Escrever 頃 no lugar de ごろ também está certo.'}
+- 三時 (três horas) + ごろ (por volta de) marca o momento aproximado; 駅で (na estação) + 会いましょう (vamos nos encontrar) fecham a frase. Escrever 頃 no lugar de ごろ também está certo.
 
 

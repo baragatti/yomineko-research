@@ -53,23 +53,23 @@ Repare na diferença entre おとこのこ(menino) e おんなのこ(menina): o 
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual palavra significa 'de agora em diante'?"}
+### 1. (recognition) Qual palavra significa 'de agora em diante'?
 - **Resposta:** `{"choices": ["これから", "それから", "どうして"], "correct": "これから"}`
-- {'pt-BR': 'これから (kore kara) = de agora em diante; olha para o futuro. それから = e depois; どうして = por quê.'}
+- これから (kore kara) = de agora em diante; olha para o futuro. それから = e depois; どうして = por quê.
 
 
-### 2. (matching) {'pt-BR': 'Ligue cada palavra ao seu significado em português.'}
+### 2. (matching) Ligue cada palavra ao seu significado em português.
 - **Resposta:** `{"pairs": [["それから", "e depois"], ["どうして", "por quê"], ["おとこのこ", "menino"], ["おんなのこ", "menina"], ["みそ", "missô"], ["くさ", "capim/grama"]]}`
-- {'pt-BR': 'それから = e depois; どうして = por quê; おとこのこ = menino; おんなのこ = menina; みそ = missô; くさ = capim/grama.'}
+- それから = e depois; どうして = por quê; おとこのこ = menino; おんなのこ = menina; みそ = missô; くさ = capim/grama.
 
 
-### 3. (production) {'pt-BR': "Escreva em kana a palavra para 'por quê'."}
+### 3. (production) Escreva em kana a palavra para 'por quê'.
 - **Resposta:** `{"text": "どうして", "accept": ["どうして"]}`
-- {'pt-BR': "'por quê' = どうして (dōshite)."}
+- 'por quê' = どうして (dōshite).
 
 
-### 4. (production) {'pt-BR': "Complete a fórmula 'sobre X': X____. Escreva em kana o que falta na lacuna."}
-- **Resposta:** `{"text": "について", "accept": ["について", "について"]}`
-- {'pt-BR': "A fórmula é Xについて = 'sobre X'. A palavra-chave é ついて (a respeito de), usada como について."}
+### 4. (production) Complete a fórmula 'sobre X': X____. Escreva em kana o que falta na lacuna.
+- **Resposta:** `{"text": "について", "accept": ["について"]}`
+- A fórmula é Xについて = 'sobre X'. A palavra-chave é ついて (a respeito de), usada como について.
 
 

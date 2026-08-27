@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-okagede, n3-sei-de] · vocabulário [お喋り, 丘, 劣る, 収める, 奥, 幼い, 恐らく, 恐れる, 恐ろしい, 汚染, 男の人, 穏やか, 贈る, 起こる] · kanji [官 昨 次 求 論] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-4760435`, `sent:tatoeba-10561332`
 
 ---
 
@@ -17,13 +17,13 @@
 Quando algo dá certo, a gente quer agradecer a quem ajudou. Quando dá errado, a gente quer apontar o culpado. O japonês tem duas estruturas-irmãs para isso, e a escolha entre elas já revela se você considera o resultado bom ou ruim. A primeira é n3-okagede e a segunda é n3-sei-de.
 
 #### ～おかげで: graças a (resultado bom)
-Use n3-okagede para atribuir um bom resultadoa uma pessoa, coisa ou circunstância, com tom de gratidão. Equivale ao nosso graças a.
+Use n3-okagede para atribuir um bom resultado a uma pessoa, coisa ou circunstância, com tom de gratidão. Equivale ao nosso graças a.
 - Substantivo: nome + の + おかげで. Ex.: 先生のおかげで (graças ao professor).
 - Verbo: forma comum + おかげで. Ex.: 勉強したおかげで (graças a ter estudado).
 あなたのおかげで助かりました significa "graças a você, me salvei".
 
 #### ～せいで: por culpa de (resultado ruim)
-Use n3-sei-de para atribuir um resultado ruima uma causa, jogando a responsabilidade nela. Equivale a por culpa de ou "por causa de" (no mau sentido).
+Use n3-sei-de para atribuir um resultado ruim a uma causa, jogando a responsabilidade nela. Equivale a por culpa de ou "por causa de" (no mau sentido).
 雨のせいで試合が中止になった quer dizer "o jogo foi cancelado por causa da chuva". A construção é igual à de おかげで, só trocando a palavra: nome + の + せいで; verbo na forma comum + せいで.
 
 > **[l1-pitfall]**
@@ -63,28 +63,28 @@ Armadilha PT: em せいで e おかげで, mantenha o e final limpo. O brasileir
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': 'O resultado da frase é POSITIVO. Qual conector cabe? 友達＿＿＿、引っ越しが楽だった。 (...a mudança foi tranquila.)'}
+### 1. (recognition) O resultado da frase é POSITIVO. Qual conector cabe? 友達＿＿＿、引っ越しが楽だった。 (...a mudança foi tranquila.)
 - **Resposta:** `{"choices": ["のおかげで", "のせいで", "のために"], "correct": "のおかげで"}`
-- {'pt-BR': "Resultado bom (a mudança foi tranquila) pede ～おかげで, 'graças a'. せいで só serve para resultados ruins."}
+- Resultado bom (a mudança foi tranquila) pede ～おかげで, 'graças a'. せいで só serve para resultados ruins.
 
 
-### 2. (particle_choice) {'pt-BR': 'Complete: 雨＿せいで試合が中止になった。 (Por causa da chuva, o jogo foi cancelado.)'}
+### 2. (particle_choice) Complete: 雨＿せいで試合が中止になった。 (Por causa da chuva, o jogo foi cancelado.)
 - **Resposta:** `{"choices": ["の", "が", "に"], "correct": "の"}`
-- {'pt-BR': 'Depois de um substantivo, せいで exige a partícula の: 雨のせいで. Vale o mesmo para おかげで (雨のおかげで).'}
+- Depois de um substantivo, せいで exige a partícula の: 雨のせいで. Vale o mesmo para おかげで (雨のおかげで).
 
 
-### 3. (cloze) {'pt-BR': 'Complete com o conector de RESULTADO RUIM: 寝坊した＿＿＿、電車に乗り遅れた。 (Por ter dormido demais, perdi o trem.)'}
+### 3. (cloze) Complete com o conector de RESULTADO RUIM: 寝坊した＿＿＿、電車に乗り遅れた。 (Por ter dormido demais, perdi o trem.)
 - **Resposta:** `{"text": "せいで", "full": "寝坊したせいで、電車に乗り遅れた。"}`
-- {'pt-BR': 'Perder o trem é um resultado ruim, então usamos せいで. Depois de verbo na forma comum (寝坊した), せいで vem direto, sem の.'}
+- Perder o trem é um resultado ruim, então usamos せいで. Depois de verbo na forma comum (寝坊した), せいで vem direto, sem の.
 
 
-### 4. (matching) {'pt-BR': 'Associe cada conector ao seu sentido.'}
+### 4. (matching) Associe cada conector ao seu sentido.
 - **Resposta:** `{"pairs": [["おかげで", "graças a (bom)"], ["せいで", "por culpa de (ruim)"]]}`
-- {'pt-BR': 'おかげで dá crédito por algo bom; せいで joga a culpa por algo ruim. A escolha revela a avaliação do falante.'}
+- おかげで dá crédito por algo bom; せいで joga a culpa por algo ruim. A escolha revela a avaliação do falante.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Graças ao professor, passei na prova.' (use ～おかげで; prova = 試験 しけん, passar = 合格する ごうかくする)"}
+### 5. (production) Escreva em japonês: 'Graças ao professor, passei na prova.' (use ～おかげで; prova = 試験 しけん, passar = 合格する ごうかくする)
 - **Resposta:** `{"text": "先生のおかげで試験に合格しました。", "accept": ["先生のおかげで試験に合格しました", "先生のおかげで試験に合格できました", "先生のおかげで、試験に合格しました"]}`
-- {'pt-BR': 'Substantivo (先生) + の + おかげで marca a causa positiva; 試験に合格する = passar na prova. O resultado é bom, então おかげで é a escolha certa.'}
+- Substantivo (先生) + の + おかげで marca a causa positiva; 試験に合格する = passar na prova. O resultado é bom, então おかげで é a escolha certa.
 
 

@@ -67,28 +67,28 @@ O kanji 寒 ('frio') aparece em 寒い ('frio') e 寒気 ('ar frio, frio intenso
 ---
 
 ## Exercícios
-### 1. (recognition) {'pt-BR': "Qual verbo significa 'confirmar, verificar'?"}
+### 1. (recognition) Qual verbo significa 'confirmar, verificar'?
 - **Resposta:** `{"choices": ["確かめる", "助ける", "戦う", "叩く"], "correct": "確かめる"}`
-- {'pt-BR': "確かめる (たしかめる) é 'confirmar/verificar'. 助ける é 'ajudar', 戦う é 'lutar' e 叩く é 'bater'."}
+- 確かめる (たしかめる) é 'confirmar/verificar'. 助ける é 'ajudar', 戦う é 'lutar' e 叩く é 'bater'.
 
 
-### 2. (recognition) {'pt-BR': "Você quer dizer que 'os soldados lutaram'. Qual verbo usar?"}
+### 2. (recognition) Você quer dizer que 'os soldados lutaram'. Qual verbo usar?
 - **Resposta:** `{"choices": ["戦った", "助けた", "確かめた", "経った"], "correct": "戦った"}`
-- {'pt-BR': "戦う (たたかう) é 'lutar/combater', e 戦った é o passado. 助けた é 'ajudou', 確かめた é 'confirmou' e 経った é '(tempo) passou'."}
+- 戦う (たたかう) é 'lutar/combater', e 戦った é o passado. 助けた é 'ajudou', 確かめた é 'confirmou' e 経った é '(tempo) passou'.
 
 
-### 3. (matching) {'pt-BR': 'Ligue cada palavra ao seu sentido.'}
+### 3. (matching) Ligue cada palavra ao seu sentido.
 - **Resposta:** `{"pairs": [["立場", "posição, ponto de vista"], ["宝", "tesouro"], ["多少", "um pouco, em certo grau"], ["直ちに", "imediatamente"]]}`
-- {'pt-BR': '立場=posição, 宝=tesouro, 多少=um pouco, 直ちに=imediatamente. 直ちに é mais formal que すぐに.'}
+- 立場=posição, 宝=tesouro, 多少=um pouco, 直ちに=imediatamente. 直ちに é mais formal que すぐに.
 
 
-### 4. (cloze) {'pt-BR': "Complete 'Tempo é o que não falta, então não precisa ter pressa': 時間は＿＿あるから焦らなくていい。"}
+### 4. (cloze) Complete 'Tempo é o que não falta, então não precisa ter pressa': 時間は＿＿あるから焦らなくていい。
 - **Resposta:** `{"text": "たっぷり", "full": "時間はたっぷりあるから焦らなくていい"}`
-- {'pt-BR': "たっぷり é 'em abundância, com folga'. Combina com ある para dizer 'há de sobra'."}
+- たっぷり é 'em abundância, com folga'. Combina com ある para dizer 'há de sobra'.
 
 
-### 5. (production) {'pt-BR': "Escreva em japonês: 'Desde então se passaram três anos.' (use 経つ)"}
+### 5. (production) Escreva em japonês: 'Desde então se passaram três anos.' (use 経つ)
 - **Resposta:** `{"text": "あれから三年が経った", "accept": ["あれから三年が経った", "あれからさんねんがたった", "三年が経った", "あれから三年経った"]}`
-- {'pt-BR': "経つ (たつ) é 'passar (o tempo)'. O passado 経った fecha a ideia de tempo decorrido."}
+- 経つ (たつ) é 'passar (o tempo)'. O passado 経った fecha a ideia de tempo decorrido.
 
 

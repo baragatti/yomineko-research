@@ -9,7 +9,8 @@
     "packing": "single",
     "glob": "course/manifest.json",
     "stable_id_field": null,
-    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json"
+    "generated_by": "scripts/contracts/build_schemas.py from contracts/_shapes.json",
+    "vocabulary_policy": "Types, nesting and `required` are measured from the data. Value sets are not: every `enum` here is either declared in a design document, parsed from the code that produces the value, or curated in build_schemas.py with its source named in x-vocabulary. See contracts/README.md."
   },
   "type": "object",
   "properties": {
@@ -23,67 +24,45 @@
           },
           "lesson_count": {
             "type": "integer",
-            "enum": [
-              101,
-              41,
-              84,
-              96
-            ]
+            "minimum": 0
           },
           "level": {
             "$ref": "common.schema.json#/$defs/Level"
           },
           "order": {
             "type": "integer",
-            "enum": [
-              1,
-              2,
-              3,
-              4
-            ]
+            "minimum": 0
           },
           "path": {
             "type": "string",
-            "enum": [
-              "n3/course.json",
-              "n4/course.json",
-              "n5/course.json",
-              "pre-n5/course.json"
-            ]
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9._-]+(/[A-Za-z0-9._-]+)*$",
+            "description": "A repository-relative path to the referenced file."
           },
           "title": {
             "$ref": "common.schema.json#/$defs/LocaleText"
           },
           "topic_count": {
             "type": "integer",
-            "enum": [
-              14,
-              15,
-              17,
-              6
-            ]
+            "minimum": 0
           }
         },
         "additionalProperties": false
       }
     },
     "enums_ref": {
-      "type": "string",
-      "enum": [
-        "design/unlock_enums.json"
-      ]
+      "type": "string"
     },
     "generated": {
       "type": "string",
-      "enum": [
-        "2026-08-26"
-      ]
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "The date this artifact was exported. Was once enumed to the day it happened to be built, which failed the gate on every later export."
     },
     "schema_version": {
       "type": "string",
-      "enum": [
-        "1.0"
-      ]
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "MAJOR.MINOR of the record format. A version field exists to be bumped; an enum over the current value means it never can be."
     }
   },
   "additionalProperties": false,
