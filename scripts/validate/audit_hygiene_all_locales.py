@@ -135,6 +135,18 @@ PT_PT = re.compile(r"(?i)\b(ecrã|autocarro|telemóvel|comboio|casa de banho|rap
 # generic-English-imperative family is pt-BR-only because en explanations legitimately say "replace the
 # final い with くても", and '(and also …)' was dropped from the parenthetical family for the same reason.
 LEAK_FAMILIES: list[tuple[str, re.Pattern[str], str]] = [
+    # Corpus BOOKKEEPING shown to the learner: which words this record existed to cover is a
+    # production fact, not pedagogy. 380 structure explanations carried it ("O alvo aqui é cobertura
+    # de vocabulário N4:", "the focus of the N4 coverage target"). The pattern matches the
+    # CONSTRUCTION, never the bare word: "cobertura" is ordinary Portuguese for a food topping, a
+    # penthouse, a lid and journalistic coverage, and 10 legitimate uses of it live in the corpus
+    # (tartine com cobertura, terraço/cobertura de prédio, cobertura jornalística) which must not fire.
+    ("corpus-bookkeeping", re.compile(
+        r"(?i)cobertura\s+(de\s+(vocabul|estrutura|gram)|N[1-5])"
+        r"|alvo\s+(é|e|aqui\s+é)\s+cobertura"
+        r"|N[1-5]\s+coverage|coverage\s+(target|sentence|item)"
+        r"|vocabulary\s+coverage|alvo\s+lexical"
+        r"|frase\s+de\s+cobertura"), "both"),
     ("schema-field-name", re.compile(
         r"\b(gloss|expl|explanation|role|label|note|translation|conjugation_note|function|prompt|answer)"
         r"_(pt|en)\b"
