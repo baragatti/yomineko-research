@@ -2815,7 +2815,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "Two-slot frame whose closing half is an open clause, not a fixed token. The record specifies the opening half exactly (noun / number / plain verb + くらい + は) but then says the frame closes with a negative clause OR with 〜ないと, i.e. free material no append token can stand for. A sequence ending at くらいは would emit 週に一度くらいは and silently drop the obligatory negative that carries this point's whole meaning, teaching plain くらい + は instead. Note also that this record's structure_pattern and forms[0].form are corrupted with an editing instruction in place of the pattern (failure mode F6); only the formation prose was usable.",
+    "steps_unavailable": "Two-slot frame whose closing half is an open clause, not a fixed token. The record specifies the opening half exactly (noun / number / plain verb + くらい + は) but then says the frame closes with a negative clause OR with 〜ないと, i.e. free material no append token can stand for. A sequence ending at くらいは would emit 週に一度くらいは and silently drop the obligatory negative that carries this point's whole meaning, teaching plain くらい + は instead.",
     "nuance": {
       "pt-BR": "O は é o que cria o realce do mínimo; sem ele, perde-se o sentido de 'ao menos isto'. Armadilha PT: o brasileiro tende a traduzir 'pelo menos' por せめて, que é parecido mas mais enfático e emotivo; くらいは soa mais natural ao apontar um patamar trivial.",
       "en": "The は is what creates the emphasis on the minimum; without it, the sense of 'at least this much' is lost. PT trap: Brazilians tend to translate 'at least' as せめて, which is similar but more emphatic and emotional; くらいは sounds more natural when pointing to a trivial threshold."
@@ -5653,14 +5653,14 @@
           "steps": [
             {
               "base": "verb",
-              "op": "to-dictionary"
+              "op": "to-te-form"
             },
             {
               "op": "append",
-              "token": "おかげで"
+              "token": "いるおかげで"
             }
           ],
-          "example": "勉強するおかげで"
+          "example": "勉強しているおかげで"
         },
         {
           "base": "verb",
@@ -6639,11 +6639,11 @@
     },
     "forms": [
       {
-        "form": "～そのために",
+        "form": "そのために",
         "meaning": null
       }
     ],
-    "structure_pattern": "～そのために",
+    "structure_pattern": "そのために",
     "register": [
       "neutral"
     ],
@@ -6839,11 +6839,11 @@
     },
     "forms": [
       {
-        "form": "すこしもない",
+        "form": "すこしも～ない",
         "meaning": null
       }
     ],
-    "structure_pattern": "すこしもない",
+    "structure_pattern": "すこしも～ない",
     "register": [
       "neutral"
     ],
@@ -7196,7 +7196,7 @@
       "spoken",
       "written"
     ],
-    "steps_unavailable": "Circumfix around a fixed pre-clause adverb: たとえ sits BEFORE the clause and the op enum has no prepend operation. Any single sequence would emit only the ても half - 降っても / 寒くても / 静かであっても - which is the plain ても concessive (gram:n3-temo, same batch), not this point; emitting it under this label would teach the wrong pattern. Same decision as gram:n3-donna-ni-temo. (Record defect noted separately: this point's structure_pattern field contains an editing instruction instead of a value.)",
+    "steps_unavailable": "Circumfix around a fixed pre-clause adverb: たとえ sits BEFORE the clause and the op enum has no prepend operation. Any single sequence would emit only the ても half - 降っても / 寒くても / 静かであっても - which is the plain ても concessive (gram:n3-temo, same batch), not this point; emitting it under this label would teach the wrong pattern. Same decision as gram:n3-donna-ni-temo.",
     "nuance": {
       "pt-BR": "O たとえ é opcional do ponto de vista gramatical, mas dá ênfase e antecipa o tom hipotético; soa um pouco mais formal e enfático que um simples ても. Armadilha PT: em pt-BR usamos 'mesmo que' com o subjuntivo ('mesmo que chova'); cuidado para não traduzir mecanicamente como 'mesmo se chove', que soa errado.",
       "en": "The たとえ is grammatically optional, but it adds emphasis and foreshadows the hypothetical tone; it sounds slightly more formal and emphatic than a simple ても. PT trap: in pt-BR we use 'mesmo que' with the subjunctive ('even if it rains'); be careful not to translate it mechanically as 'even if it rains' with the indicative, which sounds wrong."
@@ -11134,10 +11134,27 @@
       "pt-BR": "Pega-se o verbo na forma negativa simples (forma ～ない), remove-se o ない e acrescenta-se ずに: 笑う vira 笑わずに (\"sem rir\"), 飲む vira 飲まずに (\"sem beber\"). Exceção importante: する não vira *しずに, e sim せずに.",
       "en": "Take the verb in the plain negative form (the 〜ない form), remove the ない and add ずに: 笑う becomes 笑わずに (\"without laughing\"), 飲む becomes 飲まずに (\"without drinking\"). Important exception: する does not become *しずに, but せずに."
     },
-    "formation_steps": null,
+    "formation_steps": {
+      "variants": [
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "replace-ending",
+              "token": "な→ずに"
+            }
+          ],
+          "example": "飲まずに"
+        }
+      ]
+    },
     "nuance_tags": [],
     "usage_contexts": [],
-    "steps_unavailable": "NOT AUTHORED: the roadmap-E campaign covered 495 of the 496 registered points (33 batches of 15) and this one fell outside every batch range. This is a coverage gap, not a judgement that the record is too vague to state.",
+    "steps_unavailable": null,
     "nuance": {
       "pt-BR": "〜ずに soa mais formal e literário que o ～ないで do dia a dia, então combina mais com texto escrito e fala cuidada. Armadilha PT: não confunda \"sem comer\" (食べずに, ação ausente que acompanha outra) com \"em vez de comer\" (食べないで pode ter esse segundo sentido, mas ～ずに quase sempre fica só no \"sem fazer\").",
       "en": "〜ずに sounds more formal and literary than the everyday ～ないで, so it fits better with written text and careful speech. PT trap: don't confuse 'without eating' (食べずに, an absent action accompanying another) with 'instead of eating' (食べないで can have this second sense, but ～ずに almost always stays just at 'without doing')."

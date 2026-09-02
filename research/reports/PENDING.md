@@ -11,6 +11,14 @@ what the decision unblocks. Detail lives in the report named at the end of each 
 
 ## A. Decisions only you can make
 
+> **DECIDED 2026-09-01 (owner):**
+> A1 → (a): author real passages, best effort; do NOT drop the sections. A2 → GO, best possible
+> quality. A3 → merge, verifying no content is lost. A4 → OK (restate the formula, recompute).
+> A5 → only if 100% certain it is a defect — verify first, then fix. A6 → OK to both. A7 → OK to
+> all three; more data as long as it makes sense. A8 → yes; must not impact the lessons.
+> A9 → OK; must not degrade the lessons. A10 and the B follow-ups → OK as recommended.
+> Execution order and the readiness audit that precedes it: `research/reports/APP_PLAN.md`.
+
 ### A1. Exam reading passages are not passages
 **Question.** What should `text_grammar` and `reading_comp` sections be built from?
 **Evidence.** The n5 and n3 banks (n5: 33 + 43 items; n3: 94 + 152) draw on "passages" that are
