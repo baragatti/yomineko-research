@@ -164,6 +164,10 @@ def main() -> int:
         for stem, cnt in new_counts.items():
             text = re.sub(rf"(`{re.escape(stem)}\.json`[^|\n]*\|\s*)(\d+)", rf"\g<1>{cnt}", text)
             text = re.sub(rf"(\|\s*)(\d+)(\s*\|[^|\n]*`{re.escape(stem)}\.json`)", rf"\g<1>{cnt}\g<3>", text)
+            # INDEX.md is a bullet list ("- `n4_x.json` — 370 items"), not a table. The two table
+            # patterns above never matched it, so the counts it showed were the pre-migration ones:
+            # 88 where the file held 62 (the QA audit caught three stale n4 rows). Bullet form:
+            text = re.sub(rf"(`{re.escape(stem)}\.json`\s*[—-]+\s*)(\d+)(\s*items?)", rf"\g<1>{cnt}\g<3>", text)
         total = sum(new_counts.values())
         text = re.sub(r"\b6,?166\b", f"{total:,}", text)
         index.write_text(text, encoding="utf-8")

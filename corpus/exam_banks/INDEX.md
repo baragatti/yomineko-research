@@ -2,7 +2,7 @@
 
 Per-level, per-type item banks DERIVED from verified corpus facts (vocab readings, real bank sentences, grammar forms) — deterministic types have no AI-generated Japanese; distractors are rule-built (same level/lexeme class, similar length, wrong by construction). Real JLPT papers are © JEES and were used only as FORMAT reference; zero copied text. The app's exam simulator randomly samples these per attempt — picker spec: `design/exam_simulator.md`. Item: {id, level, stem, correct, distractors|pieces, source refs}. Deterministic types are Layer B; the AUTHORED types (`paraphrase`, `usage`, `reading_comp`, `listening_*`) are Layer C (authored + adversarially verified, needs_review). `reading_comp` items reference their passage by `read:` slug — the app renders the passage from `corpus/readings` (single source of truth). `listening_*` items are voice-ready TEXT scripts (speaker-tagged turns, `audio: "pending"` — spec: `design/listening.md`); `listening_reply` prompts are REAL bank sentences verbatim (`sentence` ref).
 
-- `n3_context_fill.json` — 400 items
+- `n3_context_fill.json` — 389 items
 - `n3_grammar_form.json` — 300 items
 - `n3_kanji_reading.json` — 400 items
 - `n3_listening_gist.json` — 9 items
@@ -14,10 +14,10 @@ Per-level, per-type item banks DERIVED from verified corpus facts (vocab reading
 - `n3_paraphrase.json` — 71 items
 - `n3_reading_comp.json` — 152 items
 - `n3_sentence_order.json` — 300 items
-- `n3_text_grammar.json` — 137 items
+- `n3_text_grammar.json` — 94 items
 - `n3_usage.json` — 71 items
-- `n4_context_fill.json` — 370 items
-- `n4_grammar_form.json` — 300 items
+- `n4_context_fill.json` — 368 items
+- `n4_grammar_form.json` — 299 items
 - `n4_kanji_reading.json` — 400 items
 - `n4_listening_point.json` — 21 items
 - `n4_listening_reply.json` — 24 items
@@ -26,19 +26,19 @@ Per-level, per-type item banks DERIVED from verified corpus facts (vocab reading
 - `n4_orthography.json` — 400 items
 - `n4_paraphrase.json` — 60 items
 - `n4_reading_comp.json` — 91 items
-- `n4_sentence_order.json` — 300 items
-- `n4_text_grammar.json` — 88 items
+- `n4_sentence_order.json` — 298 items
+- `n4_text_grammar.json` — 62 items
 - `n4_usage.json` — 60 items
-- `n5_context_fill.json` — 241 items
+- `n5_context_fill.json` — 235 items
 - `n5_grammar_form.json` — 129 items
 - `n5_kanji_reading.json` — 400 items
 - `n5_listening_point.json` — 18 items
 - `n5_listening_reply.json` — 17 items
 - `n5_listening_say.json` — 15 items
 - `n5_listening_task.json` — 21 items
-- `n5_orthography.json` — 400 items
+- `n5_orthography.json` — 379 items
 - `n5_paraphrase.json` — 52 items
 - `n5_reading_comp.json` — 43 items
 - `n5_sentence_order.json` — 273 items
-- `n5_text_grammar.json` — 37 items
+- `n5_text_grammar.json` — 33 items
 - `n5_usage.json` — 52 items
