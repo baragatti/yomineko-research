@@ -58,6 +58,31 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-01 (ah) — ALL B AND C CAMPAIGNS LANDED, OWNER DECISIONS TAKEN, APP-READINESS AUDIT IN
+> FLIGHT. Gate green at 39 hard validators on every commit. Next: write research/reports/APP_PLAN.md
+> from the audit, then execute the decisions in dependency order.**
+>
+> - Commits since (ag): `7592cc28` exam per-item fixes + stage tags + PENDING.md; `f8ea9647` seven
+>   campaigns (vocab glosses 204, kanji selection at its ceiling, readings composition + 286 titles,
+>   speak builder R85–R87, 231 translation repairs, 31 text_grammar stems re-cut); `3bfecf38` grammar
+>   records 255 + kanji notes 88 + rule 6 + the placeholder-aware form matcher
+>   (scripts/export/pattern_forms.py — 135 of 536 forms carry ～ and had NEVER matched); `2a8f783e`
+>   52 orphaned sentences retagged + 20 column fixes.
+> - Every repair table is TRACKED under research/derived/repairs/ with its apply script beside the
+>   others; every script proves idempotency; every validator added was plant-proved on a copied tree
+>   (copy the validator + its scripts/export imports into the fixture, or the plant reads the real tree).
+> - **Owner decisions (2026-09-01), recorded at the top of research/reports/PENDING.md:** A1 author real
+>   passages (keep sections); A2 exam regen GO, best quality; A3 merge, no content loss; A4 restate the
+>   formula and recompute; A5 only if 100% certain (an auditor is verifying); A6 both; A7 all three;
+>   A8 yes, must not touch lessons; A9 yes, must not degrade lessons; A10 + B follow-ups as recommended.
+> - **Running:** app-readiness audit, 9 Opus auditors → research/reports/readiness/*.md (JLPT path,
+>   speak path, FSRS data, exams/simulations, in-lesson tests, per-level coverage, teacher-review loop,
+>   platform contract, A5 certainty). Their reports feed APP_PLAN.md; nothing else is in flight.
+> - Cross-campaign interactions the gate caught today, worth remembering: 大変's new na_adj tag made
+>   the graph gate demand a conjugation table; the readings repair invalidated 31 exam stems cut from
+>   the old passages; the grammar forms edits exposed the form matcher's blindness. A class-level gate
+>   sees what no single campaign can.
+
 > **2026-09-01 (ag) — QA WAVES COMPLETE (26/26 auditors, 20 reports), SIX REPAIR CAMPAIGNS LANDED,
 > GATE GREEN AT 39 HARD VALIDATORS. The bottleneck has moved from finding defects to deciding on them.**
 >
