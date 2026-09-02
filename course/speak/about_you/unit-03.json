@@ -10,9 +10,9 @@
     "sent:tatoeba-189285",
     "sent:tatoeba-74693",
     "sent:tatoeba-172440",
-    "sent:tatoeba-142954",
-    "sent:tatoeba-11727272",
-    "sent:tatoeba-233401"
+    "sent:tatoeba-157990",
+    "sent:tatoeba-79320",
+    "sent:jec-0320"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,15 +20,13 @@
     "vocab:1173720",
     "vocab:1217730",
     "vocab:1328190",
-    "vocab:1192150",
-    "vocab:1413660",
-    "vocab:1378860",
+    "vocab:1194500",
+    "vocab:1156530",
     "vocab:1593480",
-    "vocab:1589590",
-    "vocab:1365850",
+    "vocab:1010150",
     "vocab:1289140",
-    "vocab:1000940",
-    "vocab:1377030"
+    "vocab:1556370",
+    "vocab:1000940"
   ],
   "patterns": [
     "gram:deshou",
@@ -47,19 +45,61 @@
     "sent:tatoeba-189285",
     "sent:tatoeba-74693",
     "sent:tatoeba-172440",
-    "sent:tatoeba-142954",
-    "sent:tatoeba-11727272",
-    "sent:tatoeba-233401"
+    "sent:tatoeba-157990",
+    "sent:tatoeba-79320",
+    "sent:jec-0320"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 290,
+  "cumulative_known_vocab": 293,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:5245:1908",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "通り",
+        "仕事",
+        "来年"
+      ]
+    },
+    {
+      "id": "kr:n4:1065",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おぼえる",
+        "いちばん",
+        "メートル"
+      ]
+    },
+    {
+      "id": "kr:n4:1166",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はっきり",
+        "もんだい",
+        "せんぱい"
+      ]
+    },
+    {
+      "id": "cf:n3:3586:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "頁",
+        "分",
+        "力"
+      ]
+    }
+  ],
   "patterns_chunked": [
+    "gram:gp-114",
     "gram:gp-153",
-    "gram:gp-77",
-    "gram:gp-128"
+    "gram:gp-77"
   ],
   "drills": [
     {
@@ -99,6 +139,7 @@
         "先輩がまだ会社にいました"
       ],
       "sentence": "sent:jec-1094",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -113,10 +154,11 @@
         "彼は若いわりにはとてもいい仕事をした。"
       ],
       "sentence": "sent:tatoeba-104573",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças (SP).",
+      "prompt_pt": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças.",
       "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
       "accepted_variants": [
         "SPの仕事の様子が今日テレビで放送されました",
@@ -124,6 +166,7 @@
         "ＳＰの仕事の様子が今日テレビで放送されました"
       ],
       "sentence": "sent:jec-4753",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -132,10 +175,10 @@
     "items": [
       "sent:tatoeba-11386733",
       "sent:tatoeba-9553773",
-      "sent:tatoeba-172198",
-      "sent:jec-0320",
       "sent:tatoeba-184254",
-      "sent:tatoeba-84568"
+      "sent:tatoeba-78968",
+      "sent:tatoeba-78961",
+      "sent:tatoeba-204702"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -143,57 +186,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:197:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "煙",
-        "港",
-        "外"
-      ]
-    },
-    {
-      "id": "cf:n3:5245:1908",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "通り",
-        "仕事",
-        "来年"
-      ]
-    },
-    {
-      "id": "kr:n4:1166",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はっきり",
-        "もんだい",
-        "せんぱい"
-      ]
-    },
-    {
-      "id": "kr:n4:1310",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けいかく",
-        "ひつよう",
-        "テーブル"
-      ]
-    }
-  ]
+  }
 }

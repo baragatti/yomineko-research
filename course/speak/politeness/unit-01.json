@@ -8,50 +8,102 @@
   },
   "say_now": [
     "sent:tatoeba-4854",
-    "sent:tatoeba-8467948",
     "sent:tatoeba-183277",
     "sent:tatoeba-147431",
-    "sent:tatoeba-5109",
-    "sent:tatoeba-226013"
+    "sent:tatoeba-146817",
+    "sent:tatoeba-226794",
+    "sent:tatoeba-5109"
   ],
   "chunk_phrases": [
-    "sent:tatoeba-4854",
-    "sent:tatoeba-8467948"
+    "sent:tatoeba-4854"
   ],
   "untranslated": [],
   "words": [
     "vocab:1221520",
     "vocab:1343950",
+    "vocab:1348870",
     "vocab:1012620",
-    "vocab:1327720",
-    "vocab:1003430",
-    "vocab:1587290"
+    "vocab:1448580",
+    "vocab:1587290",
+    "vocab:1501660"
   ],
   "patterns": [
     "gram:te-kudasai",
-    "gram:kitto",
     "gram:gp-8"
   ],
   "kanji_recognition": [
     "気",
     "書",
-    "話",
-    "紙",
-    "手"
+    "休",
+    "少",
+    "湯",
+    "沸"
   ],
   "shadowing": [
     "sent:tatoeba-4854",
-    "sent:tatoeba-8467948",
     "sent:tatoeba-183277",
     "sent:tatoeba-147431",
-    "sent:tatoeba-5109",
-    "sent:tatoeba-226013"
+    "sent:tatoeba-146817",
+    "sent:tatoeba-226794",
+    "sent:tatoeba-5109"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 461,
+  "cumulative_known_vocab": 455,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:2",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:2",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:5019:736",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "鼾",
+        "箸",
+        "千"
+      ]
+    },
+    {
+      "id": "cf:n4:1160:736",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "数",
+        "園",
+        "誰"
+      ]
+    },
+    {
+      "id": "kr:n4:736",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ど",
+        "し",
+        "に"
+      ]
+    },
+    {
+      "id": "kr:n4:921",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "けいけん",
+        "きょねん"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:te-ita"
   ],
@@ -62,15 +114,6 @@
         "sent:tatoeba-124708",
         "sent:tatoeba-74723",
         "sent:tatoeba-146189"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kitto",
-      "examples": [
-        "sent:tatoeba-225989",
-        "sent:tatoeba-80474",
-        "sent:tatoeba-225992"
       ],
       "strand": "language-focused"
     },
@@ -86,55 +129,58 @@
   ],
   "production": [
     {
-      "prompt_pt": "Já vá pensando nas lembrancinhas para a volta da viagem.",
-      "answer_key": "旅行から帰るときの土産のことを考えておきなさい。",
+      "prompt_pt": "Converse com os seus pais sobre a viagem, por favor.",
+      "answer_key": "旅行についてはご両親と相談してください。",
       "accepted_variants": [
-        "りょこうからかえるときのみやげのことをかんがえておきなさい",
-        "りょこうからかえるときのみやげのことをかんがえておきなさい。",
-        "旅行から帰るときの土産のことを考えておきなさい",
-        "旅行から帰るときの土産のことを考えておきなさい。"
+        "りょこうについてはごりょうしんとそうだんしてください",
+        "りょこうについてはごりょうしんとそうだんしてください。",
+        "りょこうについてわごりょうしんとそうだんしてください",
+        "りょこうについてわごりょうしんとそうだんしてください。",
+        "旅行についてはご両親と相談してください",
+        "旅行についてはご両親と相談してください。"
       ],
-      "sentence": "sent:tatoeba-78190",
+      "sentence": "sent:tatoeba-78177",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Isso porque ontem eu estudei por muito tempo.",
-      "answer_key": "なぜなら私は昨日長い間勉強したからです。",
+      "prompt_pt": "Como é perigoso, por favor não vá para lá.",
+      "answer_key": "危ないので、そちらへ行かないでください。",
       "accepted_variants": [
-        "なぜならわたしはきのうながいあいだべんきょうしたからです",
-        "なぜならわたしはきのうながいあいだべんきょうしたからです。",
-        "なぜならわたしわきのうながいあいだべんきょうしたからです",
-        "なぜならわたしわきのうながいあいだべんきょうしたからです。",
-        "なぜなら私は昨日長い間勉強したからです",
-        "なぜなら私は昨日長い間勉強したからです。"
+        "あぶないので、そちらえいかないでください",
+        "あぶないので、そちらえいかないでください。",
+        "あぶないので、そちらへいかないでください",
+        "あぶないので、そちらへいかないでください。",
+        "危ないので、そちらへ行かないでください",
+        "危ないので、そちらへ行かないでください。"
       ],
-      "sentence": "sent:tatoeba-199229",
+      "sentence": "sent:tatoeba-10901645",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Essa viagem custa de mil a dois mil dólares.",
-      "answer_key": "その旅行には千ドルから二千ドルかかります。",
+      "prompt_pt": "Por favor, cancele a minha reserva.",
+      "answer_key": "予約を取り消してください。",
       "accepted_variants": [
-        "そのりょこうにはせんどるからにせんどるかかります",
-        "そのりょこうにはせんどるからにせんどるかかります。",
-        "そのりょこうにわせんどるからにせんどるかかります",
-        "そのりょこうにわせんどるからにせんどるかかります。",
-        "その旅行には千ドルから二千ドルかかります",
-        "その旅行には千ドルから二千ドルかかります。"
+        "よやくをとりけしてください",
+        "よやくをとりけしてください。",
+        "予約を取り消してください",
+        "予約を取り消してください。"
       ],
-      "sentence": "sent:tatoeba-1783174",
+      "sentence": "sent:tatoeba-78968",
+      "kind": "on-topic",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
+      "sent:tatoeba-83999",
       "sent:tatoeba-792555",
       "sent:tatoeba-228002",
-      "sent:tatoeba-5217",
-      "sent:tatoeba-78160",
-      "sent:tatoeba-78156",
-      "sent:tatoeba-147605"
+      "sent:tatoeba-147605",
+      "sent:tatoeba-11706794",
+      "sent:tatoeba-214558"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -152,57 +198,5 @@
     "meaning-output": 3,
     "language-focused": 23,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:2",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:2",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:5019:736",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "箸",
-        "千",
-        "所"
-      ]
-    },
-    {
-      "id": "cf:n4:1160:736",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "数",
-        "園",
-        "誰"
-      ]
-    },
-    {
-      "id": "kr:n4:1101",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "やすむ",
-        "ごぜん",
-        "やっと"
-      ]
-    },
-    {
-      "id": "kr:n4:736",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ど",
-        "し",
-        "に"
-      ]
-    }
-  ]
+  }
 }

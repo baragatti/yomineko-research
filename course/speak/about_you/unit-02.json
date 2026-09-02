@@ -9,7 +9,7 @@
   "say_now": [
     "sent:tatoeba-9553773",
     "sent:tatoeba-11386733",
-    "sent:tatoeba-168944",
+    "sent:tatoeba-236934",
     "sent:jec-4753",
     "sent:tatoeba-104573",
     "sent:jec-1094"
@@ -19,12 +19,10 @@
   "words": [
     "vocab:1221270",
     "vocab:1419990",
-    "vocab:1307550",
-    "vocab:1252090",
+    "vocab:1576150",
     "vocab:1080510",
     "vocab:1324300",
     "vocab:1198550",
-    "vocab:1551530",
     "vocab:1516750",
     "vocab:1388410",
     "vocab:1527110"
@@ -33,9 +31,9 @@
     "gram:ta-bakari",
     "gram:no-ga-suki",
     "gram:bakari",
-    "gram:hajimeru",
-    "gram:nasai",
-    "gram:totemo"
+    "gram:gp-89",
+    "gram:totemo",
+    "gram:temo"
   ],
   "kanji_recognition": [
     "帰",
@@ -43,21 +41,63 @@
     "事",
     "好",
     "男",
-    "画"
+    "一"
   ],
   "shadowing": [
     "sent:tatoeba-9553773",
     "sent:tatoeba-11386733",
-    "sent:tatoeba-168944",
+    "sent:tatoeba-236934",
     "sent:jec-4753",
     "sent:tatoeba-104573",
     "sent:jec-1094"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 278,
+  "cumulative_known_vocab": 283,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n5:14:115",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "所",
+        "水",
+        "間"
+      ]
+    },
+    {
+      "id": "cf:n5:2348:548",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "豚肉",
+        "半分",
+        "家内"
+      ]
+    },
+    {
+      "id": "kr:n4:1208",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くださる",
+        "りょこう",
+        "わすれる"
+      ]
+    },
+    {
+      "id": "kr:n5:115",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "なれる",
+        "ビール",
+        "うしろ"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -88,58 +128,34 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:hajimeru",
+      "pattern": "gram:gp-89",
       "examples": [
-        "sent:tatoeba-945909",
-        "sent:tatoeba-79849",
-        "sent:tatoeba-231822"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-78287",
-        "sent:tatoeba-78855",
-        "sent:tatoeba-79943"
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:totemo",
       "examples": [
-        "sent:gen-2b1fccae756f",
         "sent:tatoeba-5074",
-        "sent:tatoeba-4947"
+        "sent:tatoeba-4947",
+        "sent:tatoeba-5092"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:gen-fd723f8599f2",
+        "sent:tatoeba-5000"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "O professor novo é mais um amigo do que um professor.",
-      "answer_key": "今度来た先生は、先生というより友達みたいだ。",
-      "accepted_variants": [
-        "こんどきたせんせいは、せんせいというよりともだちみたいだ",
-        "こんどきたせんせいは、せんせいというよりともだちみたいだ。",
-        "こんどきたせんせいわ、せんせいというよりともだちみたいだ",
-        "こんどきたせんせいわ、せんせいというよりともだちみたいだ。",
-        "今度来た先生は、先生というより友達みたいだ",
-        "今度来た先生は、先生というより友達みたいだ。"
-      ],
-      "sentence": "sent:tatoeba-172198",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ele diz com clareza a sua própria opinião para os professores e os amigos.",
-      "answer_key": "彼が先生や友達にはっきり自分の意見を言う",
-      "accepted_variants": [
-        "かれがせんせいやともだちにはっきりじぶんのいけんをゆう",
-        "彼が先生や友達にはっきり自分の意見を言う"
-      ],
-      "sentence": "sent:jec-0320",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "O professor chamou todos os alunos pelo nome.",
       "answer_key": "先生は生徒みんなを名前で呼んだ。",
@@ -152,18 +168,47 @@
         "先生は生徒みんなを名前で呼んだ。"
       ],
       "sentence": "sent:tatoeba-141544",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não só os alunos, como também o professor veio.",
+      "answer_key": "学生はもちろん先生も来た。",
+      "accepted_variants": [
+        "がくせいはもちろんせんせいもきた",
+        "がくせいはもちろんせんせいもきた。",
+        "がくせいわもちろんせんせいもきた",
+        "がくせいわもちろんせんせいもきた。",
+        "学生はもちろん先生も来た",
+        "学生はもちろん先生も来た。"
+      ],
+      "sentence": "sent:tatoeba-184254",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Até uma criancinha sabe esse nome.",
+      "answer_key": "小さな子どもでもその名前を知っている。",
+      "accepted_variants": [
+        "ちいさなこどもでもそのなまえをしっている",
+        "ちいさなこどもでもそのなまえをしっている。",
+        "小さな子どもでもその名前を知っている",
+        "小さな子どもでもその名前を知っている。"
+      ],
+      "sentence": "sent:tatoeba-147013",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
     "items": [
-      "sent:tatoeba-184254",
       "sent:tatoeba-84568",
+      "sent:tatoeba-186900",
       "sent:tatoeba-1046077",
-      "sent:tatoeba-3313203",
-      "sent:tatoeba-84126",
-      "sent:tatoeba-84180"
+      "sent:tatoeba-11953118",
+      "sent:tatoeba-82875",
+      "sent:tatoeba-10723441"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -171,57 +216,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 60,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 31,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n4:3717:902",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "外国人",
-        "教える",
-        "上がる"
-      ]
-    },
-    {
-      "id": "cf:n4:1299:1082",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "生産",
-        "叔父",
-        "いい"
-      ]
-    },
-    {
-      "id": "kr:n4:1082",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せいさん",
-        "でんしゃ",
-        "おしえる"
-      ]
-    },
-    {
-      "id": "kr:n4:1208",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くださる",
-        "りょこう",
-        "わすれる"
-      ]
-    }
-  ]
+  }
 }

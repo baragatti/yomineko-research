@@ -7,56 +7,129 @@
     "pt-BR": "Conversa de verdade, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-80952",
+    "sent:jec-4908",
     "sent:tatoeba-78052",
     "sent:tatoeba-9938017",
     "sent:tatoeba-90133",
     "sent:tatoeba-10050266",
-    "sent:tatoeba-1227292"
+    "sent:tatoeba-11264620"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1529410",
+    "vocab:1487400",
     "vocab:1378520",
     "vocab:1080000",
     "vocab:1594060",
     "vocab:1172400",
-    "vocab:1581930",
-    "vocab:1216280"
+    "vocab:1002590"
   ],
   "patterns": [
+    "gram:gp-76",
+    "gram:mitai-ni",
     "gram:ta-bakari",
     "gram:janai-dewa-nai",
     "gram:bakari",
-    "gram:mitai-da",
-    "gram:rashii"
+    "gram:mitai-da"
   ],
   "kanji_recognition": [
-    "夢",
-    "親",
-    "生",
-    "両",
-    "始",
-    "幸"
+    "気",
+    "症",
+    "同",
+    "発",
+    "必",
+    "病"
   ],
   "shadowing": [
-    "sent:tatoeba-80952",
+    "sent:jec-4908",
     "sent:tatoeba-78052",
     "sent:tatoeba-9938017",
     "sent:tatoeba-90133",
     "sent:tatoeba-10050266",
-    "sent:tatoeba-1227292"
+    "sent:tatoeba-11264620"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 556,
+  "cumulative_known_vocab": 553,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:gp-36"
+  "checkpoint": [
+    {
+      "id": "so:n5:3830",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5550:1966",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "珈琲",
+        "来る",
+        "寝る"
+      ]
+    },
+    {
+      "id": "cf:n5:3830:113",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "ステーキ",
+        "パソコン",
+        "美味しい"
+      ]
+    },
+    {
+      "id": "pp:n4:717",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "負ける",
+        "兎も角",
+        "為さる"
+      ]
+    },
+    {
+      "id": "kr:n4:703",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ようい",
+        "かかり",
+        "うごく"
+      ]
+    },
+    {
+      "id": "kr:n4:717",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "でんぽう",
+        "たずねる",
+        "ちいさな"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:gp-76",
+      "examples": [
+        "sent:tatoeba-11041688",
+        "sent:tatoeba-220740",
+        "sent:tatoeba-3458976"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-ni",
+      "examples": [
+        "sent:tatoeba-9846192",
+        "sent:tatoeba-11044901",
+        "sent:tatoeba-11516169"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:ta-bakari",
       "examples": [
@@ -92,18 +165,22 @@
         "sent:gen-1d94a829f09c"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:rashii",
-      "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-e9700d108b4a",
-        "sent:gen-dbc3c7fb8b46"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt_pt": "Parece um sonho.",
+      "answer_key": "夢みたいだ。",
+      "accepted_variants": [
+        "ゆめみたいだ",
+        "ゆめみたいだ。",
+        "夢みたいだ",
+        "夢みたいだ。"
+      ],
+      "sentence": "sent:tatoeba-80952",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt_pt": "Não posso deixar você fazer uma coisa dessas.",
       "answer_key": "お前にそんなこと、させるわけにはいかないよ。",
@@ -116,18 +193,7 @@
         "お前にそんなこと、させるわけにはいかないよ。"
       ],
       "sentence": "sent:tatoeba-10274623",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "No entanto, é caro demais.",
-      "answer_key": "しかしながら、高すぎる。",
-      "accepted_variants": [
-        "しかしながら、たかすぎる",
-        "しかしながら、たかすぎる。",
-        "しかしながら、高すぎる",
-        "しかしながら、高すぎる。"
-      ],
-      "sentence": "sent:tatoeba-216263",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -140,6 +206,7 @@
         "まぁ、日本も鎖国していたわけだしなあ。"
       ],
       "sentence": "sent:tatoeba-76419",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -147,11 +214,11 @@
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
       "sent:tatoeba-230514",
-      "sent:tatoeba-79019",
-      "sent:tatoeba-74350",
-      "sent:tatoeba-79047",
-      "sent:tatoeba-80630",
-      "sent:tatoeba-235244"
+      "sent:tatoeba-235244",
+      "sent:jec-0517",
+      "sent:tatoeba-4827",
+      "sent:tatoeba-89607",
+      "sent:tatoeba-78366"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -159,57 +226,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 56,
+    "language-focused": 59,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:5550:1966",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "珈琲",
-        "来る",
-        "寝る"
-      ]
-    },
-    {
-      "id": "cf:n3:1277:1966",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "咖哩",
-        "食事",
-        "家族"
-      ]
-    },
-    {
-      "id": "kr:n4:703",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ようい",
-        "かかり",
-        "うごく"
-      ]
-    },
-    {
-      "id": "kr:n4:800",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ふん",
-        "まど",
-        "なぜ"
-      ]
-    }
-  ]
+  }
 }

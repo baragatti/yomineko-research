@@ -49,139 +49,9 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 518,
+  "cumulative_known_vocab": 519,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:hazu-ga-nai",
-      "examples": [
-        "sent:tatoeba-81586",
-        "sent:tatoeba-141784",
-        "sent:tatoeba-195794"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:hazu-da",
-      "examples": [
-        "sent:tatoeba-519050",
-        "sent:tatoeba-198131",
-        "sent:tatoeba-11173182"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-83621",
-        "sent:tatoeba-80590"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-5078",
-        "sent:tatoeba-75192"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-2",
-      "examples": [
-        "sent:tatoeba-171785",
-        "sent:tatoeba-171784",
-        "sent:tatoeba-171787"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-150175"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O trem deve sair daqui a cinco minutos.",
-      "answer_key": "列車はあと５分で出発するはずです。",
-      "accepted_variants": [
-        "れっしゃはあとごふんでしゅっぱつするはずです",
-        "れっしゃはあとごふんでしゅっぱつするはずです。",
-        "れっしゃわあとごふんでしゅっぱつするはずです",
-        "れっしゃわあとごふんでしゅっぱつするはずです。",
-        "列車はあと5分で出発するはずです",
-        "列車はあと5分で出発するはずです。",
-        "列車はあと５分で出発するはずです",
-        "列車はあと５分で出発するはずです。"
-      ],
-      "sentence": "sent:tatoeba-77522",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ele pode ter perdido o trem.",
-      "answer_key": "列車に乗り遅れたのかもしれない。",
-      "accepted_variants": [
-        "れっしゃにのりおくれたのかもしれない",
-        "れっしゃにのりおくれたのかもしれない。",
-        "列車に乗り遅れたのかもしれない",
-        "列車に乗り遅れたのかもしれない。"
-      ],
-      "sentence": "sent:tatoeba-77555",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "O trem era pra chegar às seis.",
-      "answer_key": "列車は６時到着のはずだった。",
-      "accepted_variants": [
-        "れっしゃはろくじとうちゃくのはずだった",
-        "れっしゃはろくじとうちゃくのはずだった。",
-        "れっしゃわろくじとうちゃくのはずだった",
-        "れっしゃわろくじとうちゃくのはずだった。",
-        "列車は6時到着のはずだった",
-        "列車は6時到着のはずだった。",
-        "列車は６時到着のはずだった",
-        "列車は６時到着のはずだった。"
-      ],
-      "sentence": "sent:tatoeba-77523",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
-    "items": [
-      "sent:tatoeba-162311",
-      "sent:tatoeba-81566",
-      "sent:tatoeba-84069",
-      "sent:tatoeba-226794",
-      "sent:tatoeba-9812759",
-      "sent:tatoeba-10117518"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "situation",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 29,
-    "fluency": 6
-  },
   "checkpoint": [
     {
       "id": "so:n3:132",
@@ -224,14 +94,143 @@
       ]
     },
     {
-      "id": "cf:n3:5046:2453",
+      "id": "cf:n3:5539:2453",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "口",
-        "点",
-        "日"
+        "人",
+        "間",
+        "誰"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:hazu-ga-nai",
+      "examples": [
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784",
+        "sent:tatoeba-195794"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:hazu-da",
+      "examples": [
+        "sent:tatoeba-235244",
+        "sent:tatoeba-519050",
+        "sent:tatoeba-198131"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:to-iu",
+      "examples": [
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-2",
+      "examples": [
+        "sent:tatoeba-171785",
+        "sent:tatoeba-171784",
+        "sent:tatoeba-171787"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ele pode ter perdido o trem.",
+      "answer_key": "列車に乗り遅れたのかもしれない。",
+      "accepted_variants": [
+        "れっしゃにのりおくれたのかもしれない",
+        "れっしゃにのりおくれたのかもしれない。",
+        "列車に乗り遅れたのかもしれない",
+        "列車に乗り遅れたのかもしれない。"
+      ],
+      "sentence": "sent:tatoeba-77555",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "O trem era pra chegar às seis.",
+      "answer_key": "列車は６時到着のはずだった。",
+      "accepted_variants": [
+        "れっしゃはろくじとうちゃくのはずだった",
+        "れっしゃはろくじとうちゃくのはずだった。",
+        "れっしゃわろくじとうちゃくのはずだった",
+        "れっしゃわろくじとうちゃくのはずだった。",
+        "列車は6時到着のはずだった",
+        "列車は6時到着のはずだった。",
+        "列車は６時到着のはずだった",
+        "列車は６時到着のはずだった。"
+      ],
+      "sentence": "sent:tatoeba-77523",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "É impossível que aquela menina tenha feito uma coisa dessas.",
+      "answer_key": "その女の子がそんなことをしたはずがない。",
+      "accepted_variants": [
+        "そのおんなのこがそんなことをしたはずがない",
+        "そのおんなのこがそんなことをしたはずがない。",
+        "その女の子がそんなことをしたはずがない",
+        "その女の子がそんなことをしたはずがない。"
+      ],
+      "sentence": "sent:tatoeba-209394",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-162311",
+      "sent:tatoeba-81566",
+      "sent:tatoeba-74350",
+      "sent:tatoeba-11561274",
+      "sent:tatoeba-76813",
+      "sent:tatoeba-1490062"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "situation",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

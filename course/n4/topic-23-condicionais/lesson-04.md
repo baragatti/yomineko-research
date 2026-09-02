@@ -28,7 +28,7 @@ Pense em もし como o nosso "e se..." no início de uma suposição. Ele combin
 A estrutura gp-138 exprime arrependimento sobre o passado: "eu devia ter feito" ou "que pena que eu não fiz". Você pega o verbo na forma condicional 〜ば e acrescenta よかった (o passado de いい, "bom"). Ao pé da letra é "teria sido bom se...", e é exatamente esse o sentimento: olhar para trás e desejar ter agido diferente.
 > 🗣 電話すればよかったのに。 — Você devia ter ligado.
 Aqui 電話 ("telefone/ligação") vira 電話すれば ("se ligasse") + よかった. O のに no fim adiciona um toque de "que pena, e você não fez": a frase deixa de ser um lamento sobre si mesmo e vira uma reclamação gentil dirigida à outra pessoa, "você devia ter ligado".
-> 🗣 コート着てくればよかった。 — Eu devia ter trazido um casaco.
+> 🗣 コート着てくればよかった。 — Eu devia ter vindo de casaco.
 Esta é um lamento sobre si mesmo: 着てくれば ("se eu tivesse vindo vestindo") + よかった = "eu devia ter vindo de casaco". A pessoa passou frio e agora se arrepende.
 
 > **[l1-pitfall]**
@@ -54,7 +54,7 @@ O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente espera
 #### Hora de praticar
 
 #### Leitura
-> 📖 きのう来ればよかったのに。電話すればよかったのに。もしわからなかったら聞いてねもしあした雨なら行きません — Você devia ter vindo ontem. Você devia ter ligado. Se não entender, pergunta, tá? Se amanhã chover, eu não vou.
+> 📖 きのう来ればよかったのに。電話すればよかったのに。もしわからなかったら聞いてね。もしあした雨なら行きません — Você devia ter vindo ontem. Você devia ter ligado. Se não entender, pergunta, tá? Se amanhã chover, eu não vou.
 - Sei usar もし no começo para anunciar uma hipótese (o "se" real fica no verbo).
 - Consigo lamentar o passado com 〜ばよかった ("eu devia ter...").
 - Sei a diferença entre 〜ばよかった ("devia ter feito") e 〜なければよかった ("não devia ter feito").

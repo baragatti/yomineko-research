@@ -7,117 +7,170 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 3"
   },
   "say_now": [
-    "sent:tatoeba-199394",
-    "sent:tatoeba-76098",
-    "sent:tatoeba-160737",
-    "sent:tatoeba-10307857",
-    "sent:tatoeba-2123447",
-    "sent:tatoeba-166326"
+    "sent:tatoeba-160972",
+    "sent:tatoeba-229628",
+    "sent:tatoeba-229723",
+    "sent:tatoeba-229742",
+    "sent:tatoeba-229731",
+    "sent:jec-0436"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1580640",
-    "vocab:1589350",
-    "vocab:1009330",
-    "vocab:1509430",
-    "vocab:1153670",
-    "vocab:1352290",
-    "vocab:1600160",
-    "vocab:1184170"
+    "vocab:1483070",
+    "vocab:1000580",
+    "vocab:1577100",
+    "vocab:1473740",
+    "vocab:1342550",
+    "vocab:1148520"
   ],
   "patterns": [
-    "gram:koto-ga-dekiru"
+    "gram:da-desu",
+    "gram:gp-14"
   ],
   "kanji_recognition": [
-    "人",
-    "安",
-    "思",
     "私",
-    "自",
-    "明"
+    "手",
+    "段",
+    "値",
+    "買",
+    "何"
   ],
   "shadowing": [
-    "sent:tatoeba-199394",
-    "sent:tatoeba-76098",
-    "sent:tatoeba-160737",
-    "sent:tatoeba-10307857",
-    "sent:tatoeba-2123447",
-    "sent:tatoeba-166326"
+    "sent:tatoeba-160972",
+    "sent:tatoeba-229628",
+    "sent:tatoeba-229723",
+    "sent:tatoeba-229742",
+    "sent:tatoeba-229731",
+    "sent:jec-0436"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 57,
+  "cumulative_known_vocab": 73,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n5:4336:473",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "話",
+        "彼",
+        "番"
+      ]
+    },
+    {
+      "id": "cf:n5:1506:144",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "キロ",
+        "始め",
+        "結構"
+      ]
+    },
+    {
+      "id": "kr:n4:758",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ふる",
+        "それ",
+        "くる"
+      ]
+    },
+    {
+      "id": "kr:n5:144",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "この",
+        "あう",
+        "ふる"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:gp-78",
-    "gram:you-to-omou",
-    "gram:gp-89",
-    "gram:to-omou",
-    "gram:donna"
+    "gram:gp-68",
+    "gram:gp-3",
+    "gram:gp-4",
+    "gram:wa-yori-desu"
   ],
   "drills": [
     {
-      "pattern": "gram:koto-ga-dekiru",
+      "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-155347",
-        "sent:tatoeba-8795030",
-        "sent:tatoeba-13179916"
+        "sent:tatoeba-5332",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-74498"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-14",
+      "examples": [
+        "sent:tatoeba-74036",
+        "sent:tatoeba-76735",
+        "sent:tatoeba-76749"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Então isso quer dizer que você não vem?",
-      "answer_key": "それでは、あなたは来ないということですか。",
+      "prompt_pt": "Os preços dos alimentos vão cair logo, não é?",
+      "answer_key": "食料品の値段はすぐに下がるでしょうね。",
       "accepted_variants": [
-        "それでは、あなたはこないということですか",
-        "それでは、あなたはこないということですか。",
-        "それでは、あなたは来ないということですか",
-        "それでは、あなたは来ないということですか。",
-        "それでわ、あなたわこないということですか",
-        "それでわ、あなたわこないということですか。"
+        "しょくりょうひんのねだんはすぐにさがるでしょうね",
+        "しょくりょうひんのねだんはすぐにさがるでしょうね。",
+        "しょくりょうひんのねだんわすぐにさがるでしょうね",
+        "しょくりょうひんのねだんわすぐにさがるでしょうね。",
+        "食料品の値段はすぐに下がるでしょうね",
+        "食料品の値段はすぐに下がるでしょうね。"
       ],
-      "sentence": "sent:tatoeba-205771",
+      "sentence": "sent:tatoeba-145755",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por mais que eu agradeça, nunca será o bastante.",
-      "answer_key": "いくらお礼を言っても言い切れない。",
+      "prompt_pt": "O pagamento, por favor, faça no caixa da saída.",
+      "answer_key": "会計はお帰りのレジでおねがいします。",
       "accepted_variants": [
-        "いくらおれいをいってもいいきれない",
-        "いくらおれいをいってもいいきれない。",
-        "いくらお礼を言っても言い切れない",
-        "いくらお礼を言っても言い切れない。"
+        "かいけいはおかえりのれじでおねがいします",
+        "かいけいはおかえりのれじでおねがいします。",
+        "かいけいわおかえりのれじでおねがいします",
+        "かいけいわおかえりのれじでおねがいします。",
+        "会計はお帰りのレジでおねがいします",
+        "会計はお帰りのレジでおねがいします。"
       ],
-      "sentence": "sent:tatoeba-229178",
+      "sentence": "sent:tatoeba-185332",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Ué, o que mesmo que eu ia dizer?",
-      "answer_key": "あれ、私何言おうとしたんだっけ？",
+      "prompt_pt": "Eu pago a você ou pago no caixa?",
+      "answer_key": "あなたに払うのか、レジで払うのか。",
       "accepted_variants": [
-        "あれ、わたしなにいおうとしたんだっけ",
-        "あれ、わたしなにいおうとしたんだっけ?",
-        "あれ、私何言おうとしたんだっけ",
-        "あれ、私何言おうとしたんだっけ?",
-        "あれ、私何言おうとしたんだっけ？"
+        "あなたにはらうのか、れじではらうのか",
+        "あなたにはらうのか、れじではらうのか。",
+        "あなたに払うのか、レジで払うのか",
+        "あなたに払うのか、レジで払うのか。"
       ],
-      "sentence": "sent:tatoeba-2941029",
+      "sentence": "sent:tatoeba-233659",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-79848",
-      "sent:tatoeba-8938683",
-      "sent:tatoeba-10094172",
-      "sent:tatoeba-218647",
-      "sent:tatoeba-229736",
-      "sent:tatoeba-229742"
+      "sent:jec-2434",
+      "sent:tatoeba-190094",
+      "sent:tatoeba-2123447",
+      "sent:tatoeba-137848",
+      "sent:tatoeba-84094",
+      "sent:tatoeba-229460"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -125,72 +178,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 20,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:520",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:4068:805",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "言う",
-        "今晩",
-        "待つ"
-      ]
-    },
-    {
-      "id": "cf:n4:4967:730",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "何",
-        "話",
-        "彼"
-      ]
-    },
-    {
-      "id": "pp:n4:730",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "言う",
-        "待つ",
-        "今晩"
-      ]
-    },
-    {
-      "id": "kr:n4:1287",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あなた",
-        "あがる",
-        "いくら"
-      ]
-    },
-    {
-      "id": "kr:n4:1300",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ズボン",
-        "じかん",
-        "ねだん"
-      ]
-    }
-  ]
+  }
 }

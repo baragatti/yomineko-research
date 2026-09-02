@@ -7,67 +7,102 @@
     "pt-BR": "Chegar e cumprimentar, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-125944",
-    "sent:tatoeba-226507",
-    "sent:tatoeba-125913",
-    "sent:tatoeba-125967",
-    "sent:tatoeba-11831400",
-    "sent:tatoeba-214119"
+    "sent:tatoeba-126710",
+    "sent:tatoeba-78964",
+    "sent:tatoeba-84087",
+    "sent:tatoeba-11267683",
+    "sent:tatoeba-79526",
+    "sent:tatoeba-886104"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1313580",
-    "vocab:1600900",
-    "vocab:1410590",
-    "vocab:1281020",
-    "vocab:1184280",
-    "vocab:1215230",
-    "vocab:1429750",
-    "vocab:1579210",
-    "vocab:1073900"
+    "vocab:1589040",
+    "vocab:1217950",
+    "vocab:1320760",
+    "vocab:1538130",
+    "vocab:1002650",
+    "vocab:1309260",
+    "vocab:1543750",
+    "vocab:1532800",
+    "vocab:1589840",
+    "vocab:1586820",
+    "vocab:1188890"
   ],
   "patterns": [
-    "gram:gp-108",
     "gram:gp-149",
     "gram:gp-32"
   ],
   "kanji_recognition": [
-    "事",
-    "待",
-    "長",
-    "最",
-    "中",
-    "話"
+    "遅",
+    "願",
+    "係",
+    "約",
+    "予",
+    "屋"
   ],
   "shadowing": [
-    "sent:tatoeba-125944",
-    "sent:tatoeba-226507",
-    "sent:tatoeba-125913",
-    "sent:tatoeba-125967",
-    "sent:tatoeba-11831400",
-    "sent:tatoeba-214119"
+    "sent:tatoeba-126710",
+    "sent:tatoeba-78964",
+    "sent:tatoeba-84087",
+    "sent:tatoeba-11267683",
+    "sent:tatoeba-79526",
+    "sent:tatoeba-886104"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 28,
+  "cumulative_known_vocab": 40,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "kr:n3:1396",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さいちゅう",
+        "かんがえる",
+        "おかあさん"
+      ]
+    },
+    {
+      "id": "kr:n3:1583",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いいえ",
+        "こんな",
+        "よやく"
+      ]
+    },
+    {
+      "id": "cf:n3:5061:1921",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "聞く",
+        "始め",
+        "願う"
+      ]
+    },
+    {
+      "id": "cf:n3:5063:1921",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "余り",
+        "結構",
+        "時間"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:te-sumimasen",
-    "gram:te-kudasai",
-    "gram:gp-148"
+    "gram:bakari",
+    "gram:gp-148",
+    "gram:nasai"
   ],
   "drills": [
-    {
-      "pattern": "gram:gp-108",
-      "examples": [
-        "sent:tatoeba-78721",
-        "sent:tatoeba-10355885",
-        "sent:tatoeba-11858059"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-149",
       "examples": [
@@ -89,51 +124,53 @@
   ],
   "production": [
     {
-      "prompt_pt": "Desculpe por não poder me encontrar com você hoje à noite.",
-      "answer_key": "今晩お会いできなくてすみません。",
+      "prompt_pt": "Não, não chove muito.",
+      "answer_key": "いいえ、あまり降りません。",
       "accepted_variants": [
-        "こんばんおあいできなくてすみません",
-        "こんばんおあいできなくてすみません。",
-        "今晩お会いできなくてすみません",
-        "今晩お会いできなくてすみません。"
+        "いいえ、あまりふりません",
+        "いいえ、あまりふりません。",
+        "いいえ、あまり降りません",
+        "いいえ、あまり降りません。"
       ],
-      "sentence": "sent:tatoeba-171272",
+      "sentence": "sent:tatoeba-229460",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Obrigado por me escutar!",
-      "answer_key": "聞いてくれてありがとう！",
+      "prompt_pt": "Obrigado por me avisar.",
+      "answer_key": "教えてくれてありがとう。",
       "accepted_variants": [
-        "きいてくれてありがとう",
-        "きいてくれてありがとう!",
-        "聞いてくれてありがとう",
-        "聞いてくれてありがとう!",
-        "聞いてくれてありがとう！"
+        "おしえてくれてありがとう",
+        "おしえてくれてありがとう。",
+        "教えてくれてありがとう",
+        "教えてくれてありがとう。"
       ],
-      "sentence": "sent:tatoeba-11858059",
+      "sentence": "sent:tatoeba-8579832",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Obrigado por me escutar.",
-      "answer_key": "聞いてくれてありがとう。",
+      "prompt_pt": "Desculpe por tê-lo feito esperar tanto tempo.",
+      "answer_key": "長い間、お待たせしてすみませんでした。",
       "accepted_variants": [
-        "きいてくれてありがとう",
-        "きいてくれてありがとう。",
-        "聞いてくれてありがとう",
-        "聞いてくれてありがとう。"
+        "ながいあいだ、おまたせしてすみませんでした",
+        "ながいあいだ、おまたせしてすみませんでした。",
+        "長い間、お待たせしてすみませんでした",
+        "長い間、お待たせしてすみませんでした。"
       ],
-      "sentence": "sent:tatoeba-10355885",
+      "sentence": "sent:tatoeba-125967",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
     "items": [
-      "sent:tatoeba-1874351",
+      "sent:tatoeba-373351",
+      "sent:tatoeba-1598216",
       "sent:tatoeba-229425",
-      "sent:tatoeba-9559301",
+      "sent:tatoeba-1874351",
       "sent:tatoeba-4971",
-      "sent:tatoeba-1576172",
       "sent:tatoeba-335372"
     ],
     "seconds_target": 48,
@@ -142,67 +179,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:1035",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3420",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3520:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "私",
-        "事",
-        "彼"
-      ]
-    },
-    {
-      "id": "cf:n3:5060:1921",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "余り",
-        "時間",
-        "無い"
-      ]
-    },
-    {
-      "id": "kr:n4:1132",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あかい",
-        "あまり",
-        "できる"
-      ]
-    },
-    {
-      "id": "kr:n4:1168",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おぼえる",
-        "けっこう",
-        "こんばん"
-      ]
-    }
-  ]
+  }
 }

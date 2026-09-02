@@ -67,7 +67,7 @@ Resolva e confira cada explicação.
 > 🗣 駅へ行って来たところだ。 — Acabei de ir até a estação.
 
 #### Leitura
-> 📖 バスはちょうど出たところだった。銀行へ行ってきたところです。今やっと始めたところです。バスは今出発したところだ。たった今帰ったところだよ。 — O ônibus tinha acabado de sair. Acabei de ir ao banco. Acabei de começar agora mesmo. O ônibus acabou de sair agora. Acabei de chegar em casa agora mesmo, viu.
+> 📖 バスはちょうど出たところだった。銀行へ行ってきたところです。今やっと始めたところです。夏休みまで、あと一週間です。たった今帰ったところだよ。 — O ônibus tinha acabado de sair. Acabei de ir ao banco. Acabei de começar agora mesmo. Falta uma semana para as férias de verão. Acabei de chegar em casa agora mesmo, viu.
 - Uso ～たとたん para o instante abrupto e surpreendente
 - Uso ～たところ para a descoberta que segue uma ação
 - Sei que aqui ところ não é 'lugar', mas marcador temporal

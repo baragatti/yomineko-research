@@ -109,12 +109,26 @@ class Repairs:
         toks = self.tokens(slug)
         if toks is None:
             self.skip(label, "no such reading, or tokens JSON is not byte-reproducible"); return
-        if not 0 <= idx < len(toks):
-            self.skip(label, f"index out of range (box has {len(toks)} tokens)"); return
-        t = toks[idx]
-        if t.get("s") != surface:
-            self.skip(label, f"surface at this index is {t.get('s')!r}, not {surface!r} -- token stream moved")
-            return
+        t = toks[idx] if 0 <= idx < len(toks) else None
+        if t is None or t.get("s") != surface:
+            # The token stream moved: the readings composition repair (scripts/
+            # apply_readings_composition_repairs.py) inserted 。 tokens at glued sentence junctions
+            # in 32 boxes AFTER these rows were written by absolute index. The data those rows
+            # repaired travelled with the token objects and is intact; only the index is stale. So
+            # fall back to the box itself: the token with this surface that still carries the
+            # broken reading is the target, and one that already carries the repaired reading means
+            # this row is done. Anything ambiguous stays a loud skip.
+            hits_old = [x for x in toks if x.get("s") == surface and x.get("r") == old_r and x.get("ro") == old_ro]
+            hits_new = [x for x in toks if x.get("s") == surface and x.get("r") == new_r and x.get("ro") == new_ro]
+            if not hits_old and len(hits_new) >= 1:
+                self.noop += 1; return
+            if len(hits_old) == 1:
+                t = hits_old[0]
+                label += f" (found at a shifted index; the box gained punctuation tokens)"
+            else:
+                self.skip(label, f"index {idx} no longer holds {surface!r} and the box has "
+                                 f"{len(hits_old)} token(s) with the broken reading -- token stream moved")
+                return
         if t.get("r") == new_r and t.get("ro") == new_ro:
             self.noop += 1; return
         if t.get("r") != old_r or t.get("ro") != old_ro:

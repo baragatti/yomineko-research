@@ -10,9 +10,9 @@
     "sent:tatoeba-78177",
     "sent:tatoeba-171398",
     "sent:tatoeba-223949",
+    "sent:tatoeba-78171",
     "sent:tatoeba-156748",
-    "sent:tatoeba-78134",
-    "sent:tatoeba-5118"
+    "sent:tatoeba-198088"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,19 +20,18 @@
     "vocab:1602710",
     "vocab:1158880",
     "vocab:1191320",
+    "vocab:1335080",
     "vocab:1378690",
-    "vocab:1501620",
-    "vocab:1260720",
-    "vocab:1401210",
-    "vocab:1348410"
+    "vocab:1414340",
+    "vocab:1401210"
   ],
   "patterns": [
-    "gram:temo-ii-desu",
+    "gram:ga-arimasu",
     "gram:te-kudasai",
     "gram:janai-dewa-nai",
-    "gram:temo",
-    "gram:da-desu",
-    "gram:gp-14"
+    "gram:gp-14",
+    "gram:gp-8",
+    "gram:tte"
   ],
   "kanji_recognition": [
     "行",
@@ -46,23 +45,70 @@
     "sent:tatoeba-78177",
     "sent:tatoeba-171398",
     "sent:tatoeba-223949",
+    "sent:tatoeba-78171",
     "sent:tatoeba-156748",
-    "sent:tatoeba-78134",
-    "sent:tatoeba-5118"
+    "sent:tatoeba-198088"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 427,
+  "cumulative_known_vocab": 419,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n4:981",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:1452:1099",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "注意",
+        "一寸",
+        "自分"
+      ]
+    },
+    {
+      "id": "cf:n4:2952:1099",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "正月",
+        "学校",
+        "言う"
+      ]
+    },
+    {
+      "id": "kr:n4:1099",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しゅうかん",
+        "りょうきん",
+        "しょうせつ"
+      ]
+    },
+    {
+      "id": "kr:n4:1296",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かのじょ",
+        "めざめる",
+        "ほんとう"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:temo-ii-desu",
+      "pattern": "gram:ga-arimasu",
       "examples": [
-        "sent:tatoeba-13158601",
-        "sent:tatoeba-2242416",
-        "sent:tatoeba-4147428"
+        "sent:tatoeba-150175",
+        "sent:tatoeba-150639",
+        "sent:tatoeba-122353"
       ],
       "strand": "language-focused"
     },
@@ -85,29 +131,29 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:tatoeba-78150",
-        "sent:gen-a1d5b47d31e9"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:gp-14",
       "examples": [
         "sent:tatoeba-74036",
         "sent:tatoeba-74498",
         "sent:tatoeba-76735"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-11795596"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-fee342a8016b",
+        "sent:gen-5412a2ccf468",
+        "sent:gen-000fc485400b"
       ],
       "strand": "language-focused"
     }
@@ -125,6 +171,7 @@
         "旅行は楽しい。"
       ],
       "sentence": "sent:tatoeba-78158",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -137,6 +184,7 @@
         "とても楽しい。"
       ],
       "sentence": "sent:tatoeba-13537670",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -151,6 +199,7 @@
         "人生は楽しい。"
       ],
       "sentence": "sent:tatoeba-143986",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -158,11 +207,11 @@
     "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
     "items": [
       "sent:tatoeba-142423",
-      "sent:tatoeba-121897",
-      "sent:tatoeba-10901645",
-      "sent:tatoeba-212666",
       "sent:jec-1326",
-      "sent:tatoeba-10587764"
+      "sent:tatoeba-10587764",
+      "sent:tatoeba-145552",
+      "sent:jec-3163",
+      "sent:tatoeba-79502"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -180,47 +229,5 @@
     "meaning-output": 3,
     "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "kr:n4:1296",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かのじょ",
-        "ほんとう",
-        "たくさん"
-      ]
-    },
-    {
-      "id": "kr:n5:235",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おおい",
-        "あたま",
-        "つれる"
-      ]
-    },
-    {
-      "id": "cf:n3:4093:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "熱",
-        "箸",
-        "道"
-      ]
-    },
-    {
-      "id": "cf:n3:4234:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "人",
-        "他",
-        "男"
-      ]
-    }
-  ]
+  }
 }

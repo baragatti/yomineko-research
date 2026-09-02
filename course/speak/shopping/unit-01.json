@@ -7,106 +7,181 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 1"
   },
   "say_now": [
-    "sent:tatoeba-229628",
-    "sent:tatoeba-229723",
-    "sent:tatoeba-229742",
-    "sent:tatoeba-229731",
-    "sent:tatoeba-229736",
-    "sent:tatoeba-218647"
+    "sent:tatoeba-5332",
+    "sent:tatoeba-9930561",
+    "sent:tatoeba-127122",
+    "sent:tatoeba-84094",
+    "sent:tatoeba-137848",
+    "sent:tatoeba-2123447"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1000580",
-    "vocab:1577100",
-    "vocab:1347750",
-    "vocab:1078630",
-    "vocab:1628530"
+    "vocab:1589350",
+    "vocab:1283190",
+    "vocab:1254130",
+    "vocab:1501620",
+    "vocab:1600160",
+    "vocab:1184170",
+    "vocab:1219980",
+    "vocab:1145130"
   ],
   "patterns": [
-    "gram:da-desu"
+    "gram:o-kudasai",
+    "gram:da-desu",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
-    "何",
-    "小"
+    "決",
+    "高",
+    "段",
+    "値",
+    "屋",
+    "代"
   ],
   "shadowing": [
-    "sent:tatoeba-229628",
-    "sent:tatoeba-229723",
-    "sent:tatoeba-229742",
-    "sent:tatoeba-229731",
-    "sent:tatoeba-229736",
-    "sent:tatoeba-218647"
+    "sent:tatoeba-5332",
+    "sent:tatoeba-9930561",
+    "sent:tatoeba-127122",
+    "sent:tatoeba-84094",
+    "sent:tatoeba-137848",
+    "sent:tatoeba-2123447"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 43,
+  "cumulative_known_vocab": 56,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:520",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:564",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3049:805",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "知る",
+        "見る",
+        "幾ら"
+      ]
+    },
+    {
+      "id": "cf:n4:3622:805",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "半分",
+        "迷惑",
+        "此れ"
+      ]
+    },
+    {
+      "id": "kr:n4:1287",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いくら",
+        "じかん",
+        "できる"
+      ]
+    },
+    {
+      "id": "kr:n4:805",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "いくら",
+        "わたし"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:yori",
-    "gram:gp-2",
-    "gram:gp-4",
+    "gram:gp-3",
     "gram:wa-yori-desu"
   ],
   "drills": [
     {
+      "pattern": "gram:o-kudasai",
+      "examples": [
+        "sent:tatoeba-150556",
+        "sent:tatoeba-197657",
+        "sent:tatoeba-143718"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:da-desu",
       "examples": [
         "sent:tatoeba-5057",
-        "sent:tatoeba-120747",
+        "sent:tatoeba-74498",
         "sent:tatoeba-75188"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-150175",
+        "sent:tatoeba-11795596",
+        "sent:tatoeba-5320"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "O setor de reservas, por favor.",
-      "answer_key": "予約係をお願いします。",
+      "prompt_pt": "Obrigado. Assim está bom.",
+      "answer_key": "ありがとう。これでけっこうです。",
       "accepted_variants": [
-        "よやくかかりをおねがいします",
-        "よやくかかりをおねがいします。",
-        "予約係をお願いします",
-        "予約係をお願いします。"
+        "ありがとう。これでけっこうです",
+        "ありがとう。これでけっこうです。"
       ],
-      "sentence": "sent:tatoeba-78964",
+      "sentence": "sent:tatoeba-10901919",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Eu gostaria de experimentar outros sapatos diferentes desses.",
-      "answer_key": "それより他の靴をはいてみたいのですが。",
+      "prompt_pt": "Obrigado, é só isso.",
+      "answer_key": "ありがとう、それだけだよ。",
       "accepted_variants": [
-        "それよりほかのくつをはいてみたいのですが",
-        "それよりほかのくつをはいてみたいのですが。",
-        "それより他の靴をはいてみたいのですが",
-        "それより他の靴をはいてみたいのですが。"
+        "ありがとう、それだけだよ",
+        "ありがとう、それだけだよ。"
       ],
-      "sentence": "sent:tatoeba-204778",
+      "sentence": "sent:tatoeba-5057",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Desculpe pelo atraso.",
-      "answer_key": "遅れてすみません。",
+      "prompt_pt": "Muito obrigado por aquele dia.",
+      "answer_key": "この間は本当にありがとう",
       "accepted_variants": [
-        "おくれてすみません",
-        "おくれてすみません。",
-        "遅れてすみません",
-        "遅れてすみません。"
+        "このあいだはほんとうにありがとう",
+        "このあいだわほんとうにありがとう",
+        "この間は本当にありがとう"
       ],
-      "sentence": "sent:tatoeba-126710",
+      "sentence": "sent:gen-1d921e8b2ad3",
+      "kind": "review",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
+      "sent:tatoeba-335372",
+      "sent:tatoeba-373351",
+      "sent:tatoeba-1598216",
       "sent:tatoeba-229460",
-      "sent:tatoeba-1874351",
       "sent:tatoeba-229425",
-      "sent:tatoeba-9559301",
-      "sent:tatoeba-4971",
-      "sent:tatoeba-1576172"
+      "sent:tatoeba-1874351"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -114,67 +189,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 33,
-    "meaning-output": 8,
-    "language-focused": 42,
-    "fluency": 17
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 15,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:26",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:26",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:4336:473",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "話",
-        "彼",
-        "靴"
-      ]
-    },
-    {
-      "id": "cf:n5:2435:473",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "係",
-        "私",
-        "話"
-      ]
-    },
-    {
-      "id": "kr:n5:261",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きく",
-        "いつ",
-        "ふる"
-      ]
-    },
-    {
-      "id": "kr:n5:389",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "スリッパ",
-        "おしえる",
-        "テーブル"
-      ]
-    }
-  ]
+  }
 }

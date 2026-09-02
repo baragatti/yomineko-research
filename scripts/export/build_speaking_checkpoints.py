@@ -36,7 +36,7 @@ distractors (see that file's `spread`).
 Usage: build_speaking_checkpoints.py [--dry-run]
 """
 from __future__ import annotations
-import argparse, hashlib, json, sqlite3, sys
+import argparse, hashlib, json, re, sqlite3, sys
 from collections import Counter
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
@@ -51,8 +51,15 @@ EXCLUDED = {"orthography", "reading_comp", "text_grammar",
             "listening_task", "listening_point", "listening_gist", "listening_say", "listening_reply"}
 PER_UNIT = 6
 MAX_PER_TYPE = 2          # no unit may be all one format
+# i+1 on the item's STEM. Every option a checkpoint shows is already forced inside the known set, but
+# nothing constrained the sentence the question is asked ABOUT, so an item could pose a known choice
+# over a stem carrying words the learner has never met. validate_speaking_path has enforced this budget
+# since it was written; the builder merely happened to satisfy it, and the first reshuffle of the path
+# broke that luck. Enforced here so the constraint is a rule instead of a coincidence.
+MAX_UNKNOWN_IN_STEM = 3   # = validate_speaking_path.MAX_UNKNOWN_IN_STEM
 # Which field of a known word can stand in as a wrong answer for each format.
 DISTRACTOR_FIELD = {"kanji_reading": "kana", "context_fill": "hw", "paraphrase": "hw"}
+KANJI = re.compile(r"[一-鿿㐀-䶿]")
 
 
 def spread(anchor: str, value: str) -> str:
@@ -67,6 +74,24 @@ def main() -> int:
     vid_of = {slug: i for slug, i in con.execute("SELECT slug,id FROM vocab")}
     # every headword/kana we know, to test whether an item's visible strings are inside the known set
     forms = {i: (hw, kana) for i, hw, kana in con.execute("SELECT id,headword,kana FROM vocab")}
+
+    # A stem sentence's vocabulary, under exactly build_speaking_path.link_ok — the same acceptance rule
+    # the path used to build the known set, so "unknown" means the same thing in both files.
+    kana_count: Counter = Counter(k for _, k in con.execute("SELECT id,kana FROM vocab"))
+    slug_of = {i: s for i, s in con.execute("SELECT id,slug FROM sentence")}
+    stem_vocab: dict[str, set[int]] = {}
+    for sid, vid, surface, lemma in con.execute(
+            "SELECT DISTINCT sentence_id,vocab_id,surface,lemma FROM token "
+            "WHERE split_mode='C' AND vocab_id IS NOT NULL"):
+        hw, kana = forms.get(vid, ("", ""))
+        surface, lemma = surface or "", lemma or ""
+        if not (hw in (lemma, surface)
+                or any(ch in surface for ch in hw if KANJI.match(ch))
+                or (kana == lemma and kana_count[kana] == 1)):
+            continue
+        s = slug_of.get(sid)
+        if s:
+            stem_vocab.setdefault(s, set()).add(vid)
 
     items: list[dict] = []
     # Banks are named <level>_<section>.json; sidecars (removed_items.json, INDEX.md) are not banks.
@@ -154,6 +179,9 @@ def main() -> int:
                     continue
                 if per_type[it["_type"]] >= MAX_PER_TYPE:
                     continue
+                stem = it.get("sentence")
+                if stem and len(stem_vocab.get(stem, set()) - known) > MAX_UNKNOWN_IN_STEM:
+                    continue                               # i+1 on the sentence the item asks about
                 entry = {"id": it["id"], "type": it["_type"], "via":
                          ("phrase" if prio == 0 else "new-word" if prio == 1 else "review")}
                 if it["_type"] == "sentence_order":

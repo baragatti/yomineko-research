@@ -62,7 +62,7 @@ Três palavras lidas ぜん, fáceis de confundir.
 #### Hora de praticar
 
 #### Leitura
-> 📖 ヘッドライン開放システムを利用していますよくもまぁ、毎日毎日同じことができるね。人は自分の体に気をつけなければならない。なぜなら私は昨日長い間勉強したからです。こんな朝っぱらから、みんなどこ行くんだ？年を取り過ぎて学べないということはない。 — Eu uso o sistema de manchete aberta. Como é que você consegue fazer a mesma coisa todo santo dia, hein? As pessoas precisam cuidar do próprio corpo. Isso porque ontem eu estudei por muito tempo. Aonde é que todo mundo vai tão cedo de manhã? Nunca se é velho demais para aprender.
+> 📖 ヘッドライン開放システムを利用しています。よくもまぁ、毎日毎日同じことができるね。人は自分の体に気をつけなければならない。なぜなら私は昨日長い間勉強したからです。こんな朝っぱらから、みんなどこ行くんだ？年を取り過ぎて学べないということはない。 — Eu uso o sistema de manchete aberta. Como é que você consegue fazer a mesma coisa todo santo dia, hein? As pessoas precisam cuidar do próprio corpo. Isso porque ontem eu estudei por muito tempo. Aonde é que todo mundo vai tão cedo de manhã? Nunca se é velho demais para aprender.
 > 📖 自信を持ちなさい、あなたなら出来ますよ。もっと注意していればどんなによかったか！ぼくの自動車はずいぶんガソリンをくう。食事の最後にすばらしいデザートがでた。私はふつう旅行するときは日記をつける。残念ながら今日はこれで終わりにします。 — Tenha confiança, você consegue! Como teria sido bom se eu tivesse tomado mais cuidado! Meu carro consome muita gasolina. No final da refeição, veio uma sobremesa maravilhosa. Eu costumo escrever um diário quando viajo. Infelizmente, por hoje vamos encerrar por aqui.
 - Reconheço e uso palavras sobre responsabilidade, energia e ambiente.
 - Distingo 善 (bem) de 全 (todo) e 責任 (responsabilidade) de 責める (culpar).

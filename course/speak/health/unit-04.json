@@ -7,63 +7,115 @@
     "pt-BR": "Emergência e saúde, parte 4"
   },
   "say_now": [
+    "sent:tatoeba-192750",
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
     "sent:jec-3163",
     "sent:tatoeba-5001",
-    "sent:tatoeba-145552",
-    "sent:tatoeba-85337"
+    "sent:tatoeba-145552"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1529390",
     "vocab:1414150",
     "vocab:1365040",
     "vocab:1369940",
     "vocab:2853889",
-    "vocab:1257540",
-    "vocab:1559290",
-    "vocab:1269410",
     "vocab:1407980",
-    "vocab:1171010"
+    "vocab:1171010",
+    "vocab:1414920"
   ],
   "patterns": [
     "gram:wa-dou-desu-ka",
     "gram:te-kuru",
-    "gram:gp-17",
-    "gram:gp-31",
-    "gram:ndesu",
-    "gram:da-desu"
+    "gram:da-desu",
+    "gram:gp-20",
+    "gram:wa-yori-desu"
   ],
   "kanji_recognition": [
+    "気",
+    "分",
+    "眠",
     "丈",
     "大",
-    "夫",
-    "右",
-    "左",
-    "院"
+    "夫"
   ],
   "shadowing": [
+    "sent:tatoeba-192750",
     "sent:tatoeba-203344",
     "sent:tatoeba-74743",
     "sent:jec-3163",
     "sent:tatoeba-5001",
-    "sent:tatoeba-145552",
-    "sent:tatoeba-85337"
+    "sent:tatoeba-145552"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 398,
+  "cumulative_known_vocab": 396,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
+  "checkpoint": [
+    {
+      "id": "so:n3:183",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:414",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:2310:1325",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "今夜",
+        "言う",
+        "出る"
+      ]
+    },
+    {
+      "id": "cf:n4:2311:1325",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "関係",
+        "計画",
+        "張る"
+      ]
+    },
+    {
+      "id": "kr:n4:1140",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "うしなう",
+        "たとえば",
+        "ばんごう"
+      ]
+    },
+    {
+      "id": "kr:n4:1325",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たてる",
+        "あした",
+        "すすむ"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:tara"
+  ],
   "drills": [
     {
       "pattern": "gram:wa-dou-desu-ka",
       "examples": [
         "sent:tatoeba-125116",
-        "sent:tatoeba-4751207",
-        "sent:tatoeba-214357"
+        "sent:tatoeba-2436329",
+        "sent:tatoeba-4751207"
       ],
       "strand": "language-focused"
     },
@@ -77,33 +129,6 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-31",
-      "examples": [
-        "sent:tatoeba-778974",
-        "sent:tatoeba-1057336",
-        "sent:tatoeba-4789"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ndesu",
-      "examples": [
-        "sent:gen-d354f1465606",
-        "sent:tatoeba-80973",
-        "sent:tatoeba-137685"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:da-desu",
       "examples": [
         "sent:tatoeba-5332",
@@ -111,59 +136,78 @@
         "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-20",
+      "examples": [
+        "sent:tatoeba-77564",
+        "sent:tatoeba-95997",
+        "sent:tatoeba-198119"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-e97b8aeb1456",
+        "sent:gen-90ed9f56e125"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Daqui até o hospital são nada menos que dez milhas.",
-      "answer_key": "病院まで１０マイルもある。",
+      "prompt_pt": "De vez em quando, vamos mudar de ares e comer fora.",
+      "answer_key": "たまには気分を変えて外食をしよう。",
       "accepted_variants": [
-        "びょういんまでじゅうまいるもある",
-        "びょういんまでじゅうまいるもある。",
-        "病院まで10マイルもある",
-        "病院まで10マイルもある。",
-        "病院まで１０マイルもある",
-        "病院まで１０マイルもある。"
+        "たまにはきぶんをかえてがいしょくをしよう",
+        "たまにはきぶんをかえてがいしょくをしよう。",
+        "たまには気分を変えて外食をしよう",
+        "たまには気分を変えて外食をしよう。",
+        "たまにわきぶんをかえてがいしょくをしよう",
+        "たまにわきぶんをかえてがいしょくをしよう。"
       ],
-      "sentence": "sent:tatoeba-85328",
+      "sentence": "sent:tatoeba-203287",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Minha mãe vai ao hospital de manhã.",
-      "answer_key": "母は午前中病院に行きます。",
+      "prompt_pt": "A tosse estava terrível, então tomei um remédio amargo.",
+      "answer_key": "せきがひどかったので、苦い薬を飲んだ。",
       "accepted_variants": [
-        "はははごぜんちゅうびょういんにいきます",
-        "はははごぜんちゅうびょういんにいきます。",
-        "ははわごぜんちゅうびょういんにいきます",
-        "ははわごぜんちゅうびょういんにいきます。",
-        "母は午前中病院に行きます",
-        "母は午前中病院に行きます。"
+        "せきがひどかったので、にがいくすりをのんだ",
+        "せきがひどかったので、にがいくすりをのんだ。",
+        "せきがひどかったので、苦い薬を飲んだ",
+        "せきがひどかったので、苦い薬を飲んだ。"
       ],
-      "sentence": "sent:tatoeba-83003",
+      "sentence": "sent:tatoeba-214052",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Depois que dormi bem, me senti bem melhor.",
-      "answer_key": "よく眠ったらだいぶ気分がよくなった。",
+      "prompt_pt": "Se você ficar resfriado, tome este remédio, viu?",
+      "answer_key": "かぜをひいたらこの薬を飲むんだよ。",
       "accepted_variants": [
-        "よくねむったらだいぶきぶんがよくなった",
-        "よくねむったらだいぶきぶんがよくなった。",
-        "よく眠ったらだいぶ気分がよくなった",
-        "よく眠ったらだいぶ気分がよくなった。"
+        "かぜをひいたらこのくすりをのむんだよ",
+        "かぜをひいたらこのくすりをのむんだよ。",
+        "かぜをひいたらこの薬を飲むんだよ",
+        "かぜをひいたらこの薬を飲むんだよ。"
       ],
-      "sentence": "sent:tatoeba-192750",
+      "sentence": "sent:tatoeba-226387",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
-      "sent:tatoeba-226387",
       "sent:tatoeba-79502",
       "sent:tatoeba-11270411",
-      "sent:tatoeba-90106",
-      "sent:tatoeba-190894",
-      "sent:tatoeba-190902"
+      "sent:tatoeba-171774",
+      "sent:tatoeba-10263746",
+      "sent:tatoeba-1699768",
+      "sent:tatoeba-143418"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -171,62 +215,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 32,
+    "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:414",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:245:802",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "雨",
-        "靴",
-        "点"
-      ]
-    },
-    {
-      "id": "cf:n4:5461:802",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "雨",
-        "父",
-        "米"
-      ]
-    },
-    {
-      "id": "kr:n4:1140",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "うしなう",
-        "コーヒー",
-        "アパート"
-      ]
-    },
-    {
-      "id": "kr:n4:802",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はち",
-        "くる",
-        "きみ"
-      ]
-    }
-  ]
+  }
 }

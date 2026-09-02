@@ -7,53 +7,95 @@
     "pt-BR": "Conversa de verdade, parte 5"
   },
   "say_now": [
+    "sent:tatoeba-10901570",
+    "sent:tatoeba-214502",
+    "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
     "sent:tatoeba-8988161",
-    "sent:tatoeba-118031",
-    "sent:tatoeba-10153751",
-    "sent:tatoeba-234789",
-    "sent:tatoeba-184333"
+    "sent:tatoeba-118031"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1313830",
+    "vocab:1526960",
+    "vocab:1271290",
     "vocab:1376760",
     "vocab:1332650",
     "vocab:1179330",
-    "vocab:1295070",
-    "vocab:1263490",
-    "vocab:1206800",
     "vocab:1499830"
   ],
   "patterns": [
     "gram:gp-33",
     "gram:janai-dewa-nai",
+    "gram:gp-89",
     "gram:mitai-da",
     "gram:rashii",
-    "gram:to-iu",
-    "gram:tokoro"
+    "gram:to-iu"
   ],
   "kanji_recognition": [
-    "絵",
-    "確",
-    "景",
-    "写",
-    "心",
-    "正"
+    "件",
+    "事",
+    "終",
+    "味",
+    "誤",
+    "青"
   ],
   "shadowing": [
+    "sent:tatoeba-10901570",
+    "sent:tatoeba-214502",
+    "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
     "sent:tatoeba-8988161",
-    "sent:tatoeba-118031",
-    "sent:tatoeba-10153751",
-    "sent:tatoeba-234789",
-    "sent:tatoeba-184333"
+    "sent:tatoeba-118031"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 578,
+  "cumulative_known_vocab": 576,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:5503:2178",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "持つ",
+        "週間",
+        "到着"
+      ]
+    },
+    {
+      "id": "cf:n3:5504:1977",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "放送",
+        "引く",
+        "風景"
+      ]
+    },
+    {
+      "id": "kr:n3:1388",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ひつよう",
+        "いただく",
+        "らいねん"
+      ]
+    },
+    {
+      "id": "kr:n4:1006",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "その",
+        "つぎ",
+        "ふろ"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -71,6 +113,15 @@
         "sent:tatoeba-229343",
         "sent:tatoeba-228269",
         "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
       ],
       "strand": "language-focused"
     },
@@ -96,74 +147,68 @@
       "pattern": "gram:to-iu",
       "examples": [
         "sent:tatoeba-80587",
-        "sent:tatoeba-83621",
-        "sent:tatoeba-80590"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tokoro",
-      "examples": [
-        "sent:gen-ad64679f3372",
-        "sent:gen-9756e3d4a90a",
-        "sent:tatoeba-84696"
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Dizer que a neve é azul é um erro.",
-      "answer_key": "雪が青いというのは誤りだ。",
+      "prompt_pt": "O que é a felicidade?",
+      "answer_key": "幸福というのは何ですか。",
       "accepted_variants": [
-        "ゆきがあおいというのはあやまりだ",
-        "ゆきがあおいというのはあやまりだ。",
-        "ゆきがあおいというのわあやまりだ",
-        "ゆきがあおいというのわあやまりだ。",
-        "雪が青いというのは誤りだ",
-        "雪が青いというのは誤りだ。"
+        "こうふくというのはなんですか",
+        "こうふくというのはなんですか。",
+        "こうふくというのわなんですか",
+        "こうふくというのわなんですか。",
+        "幸福というのは何ですか",
+        "幸福というのは何ですか。"
       ],
-      "sentence": "sent:tatoeba-142020",
+      "sentence": "sent:tatoeba-423387",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Como é o sabor do especial?",
-      "answer_key": "スペシャルというのはどんな味ですか。",
+      "prompt_pt": "Os homens querem parecer masculinos.",
+      "answer_key": "男性は男らしく見せたがる。",
       "accepted_variants": [
-        "すぺしゃるというのはどんなあじですか",
-        "すぺしゃるというのはどんなあじですか。",
-        "すぺしゃるというのわどんなあじですか",
-        "すぺしゃるというのわどんなあじですか。",
-        "スペシャルというのはどんな味ですか",
-        "スペシャルというのはどんな味ですか。"
+        "だんせいはおとこらしくみせたがる",
+        "だんせいはおとこらしくみせたがる。",
+        "だんせいわおとこらしくみせたがる",
+        "だんせいわおとこらしくみせたがる。",
+        "男性は男らしく見せたがる",
+        "男性は男らしく見せたがる。"
       ],
-      "sentence": "sent:tatoeba-214502",
+      "sentence": "sent:tatoeba-127148",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Não é que o caso tenha acabado.",
-      "answer_key": "事件は終わったわけではない。",
+      "prompt_pt": "Infelizmente, por hoje vamos encerrar por aqui.",
+      "answer_key": "残念ながら今日はこれで終わりにします。",
       "accepted_variants": [
-        "じけんはおわったわけではない",
-        "じけんはおわったわけではない。",
-        "じけんわおわったわけでわない",
-        "じけんわおわったわけでわない。",
-        "事件は終わったわけではない",
-        "事件は終わったわけではない。"
+        "ざんねんながらきょうはこれでおわりにします",
+        "ざんねんながらきょうはこれでおわりにします。",
+        "ざんねんながらきょうわこれでおわりにします",
+        "ざんねんながらきょうわこれでおわりにします。",
+        "残念ながら今日はこれで終わりにします",
+        "残念ながら今日はこれで終わりにします。"
       ],
-      "sentence": "sent:tatoeba-10901570",
+      "sentence": "sent:tatoeba-169225",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-423387",
-      "sent:tatoeba-127148",
+      "sent:tatoeba-172198",
       "sent:tatoeba-143985",
       "sent:tatoeba-211899",
-      "sent:tatoeba-120314",
-      "sent:tatoeba-123542"
+      "sent:tatoeba-216263",
+      "sent:tatoeba-9938017",
+      "sent:tatoeba-80952"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -181,47 +226,5 @@
     "meaning-output": 3,
     "language-focused": 29,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:5450:1591",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "料金",
-        "動く",
-        "寝る"
-      ]
-    },
-    {
-      "id": "cf:n3:5503:2178",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "持つ",
-        "週間",
-        "到着"
-      ]
-    },
-    {
-      "id": "kr:n3:1393",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いっしょ",
-        "だんせい",
-        "おくれる"
-      ]
-    },
-    {
-      "id": "kr:n3:1591",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "シャワー",
-        "パソコン",
-        "しつもん"
-      ]
-    }
-  ]
+  }
 }

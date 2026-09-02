@@ -95,7 +95,36 @@ classical or business-letter register (心熱けれど肉体は弱し as a produ
 mechanical (seed + known set), so nothing filters register or content.
 **Recommendation.** A register filter plus a small reviewed blocklist. I build the mechanism; the
 list is yours.
+**Update (speak builder campaign, 2026-09-01).** The filter cannot be built yet: there is NO
+sentence-level register field in the corpus (`vocab.register` is not a DB column and exports null;
+the only register vocabulary is on grammar points, neutral/polite/casual/formal). The builder now
+prints a census — 645 say_now/production items, 383 with no register signal at all — so the zero it
+reports for archaic/epistolary/vulgar means *unrecordable*, not *absent*. First decision is
+therefore schema: add `register` to `sentence` (values to be fixed in `design/schema_v2.md`), then
+populate it (JMdict misc tags cover part of it; the rest is authored), then the filter. Also left
+open by that campaign: idiom-frame misfires lemma matching cannot catch (いくら…ても still lands in
+the shopping stage) — a per-stage idiom stoplist is the suggested mechanism.
 Detail: `qa_sweep/speak_content_1.md`, `speak_content_2.md`.
+
+### A9. 22 vocab records point at the wrong JMdict entry
+**Question.** Re-point in place, or deprecate-and-add?
+**Evidence.** The gloss audit's critical finding, re-derived independently against JMdict 3.6.2 and
+the three consensus lists: 21 n5/n4 records (plus 尾/お at lower confidence) resolve to a different
+JMdict entry than their headword and reading name. Because `vocab:<jmdict_id>` IS the published
+address, fixing them is a migration, not an edit: 5,955 slug occurrences across the 543 committed
+export files, 1,415 sentence_vocab rows, 766 token links, 22 lesson unlocks, 24 family memberships.
+Collateral checked: none of the intended targets already exists as a duplicate record.
+**Options.** (a) Re-point in place — the slug changes, every reference rewritten in one migration,
+old slug kept as an alias in a redirect table. (b) Deprecate-and-add — old record marked
+`deprecated_by`, new record inserted, references migrated lazily. (a) is cleaner for a corpus this
+young; (b) is what you do once external consumers hold the old ids.
+**Recommendation.** (a), as one migration script with a plant-proved validator, before any external
+consumer exists.
+Detail: `qa_sweep/vocab_identity_queue.md` (per-record evidence and reference counts). The same
+file records four SYSTEMIC gloss findings deferred with reasons: `headword` is itself an address
+(unlock refs use it), `register` is derived from a JMdict sense alignment the corpus does not have
+(451 of 1,947 senses unresolvable), `vocab_form` has no tag column, and the romaji convention for
+ー and final っ is the corpus's own stated rule.
 
 ---
 
@@ -109,6 +138,27 @@ Detail: `qa_sweep/speak_content_1.md`, `speak_content_2.md`.
 | Kanji selection | example selector prefers N1/N2 over owned N5 words (48 records); `introduced_at_level` seeding contradicts its documented rule (44); 2 duplicate example words; 屋 telhado; 少 alignment; 台 "p/"; 文 note; nanori ordering | `kanji_records_1.md` |
 | Speak selection | stage-opening production and fluency drawn from the previous stage (builder cold start); seed matching はい to 履く; shopping never asks a price; lodging 25/36 from one block; fluency lists repeated verbatim; おめでとう twice in one unit | `speak_content_1..2.md` |
 | Vocab glosses | 15 findings | `vocab_glosses.md` |
+
+### B-followups raised BY the campaigns (small, well-defined; next pass)
+
+- **Translation campaign** (`qa_sweep/translation_repairs_skipped.md`): 3 same-record literal
+  siblings now disagree with the repaired natural field (gen-fb07d83b3e0c "A orelha",
+  gen-790b6cf52284 "está quente" for 暖かい, tatoeba-10083431 "ramo" for つる); 5 generated records
+  whose pt-BR is now 1st-person present while the en anchor still reads imperative/gerund; 7 defects
+  living in `particles[].explanation` (unreachable by the sentence/token repair schema — needs a
+  particle-scoped pass); 1 kana defect (gen-9f80f08cc644 reads 辛い as つらい); 1 table row that
+  arrived with new == old (gen-960d7cee0887, 〜とみえて direction) and needs a corrected string.
+- **Human rulings, not repairs:** gender-inclusive parentheses "(a)" in 9 natural translations —
+  house style says natural speech, but the alternative is choosing a gender the Japanese does not
+  state; and 5 subject-less sentences where pt and en chose different persons.
+- **Readings composition:** `reading.uses` is a build-time snapshot — recomputing it from today's
+  sentence links would push 149/286 boxes out of their lesson's known set. Either freeze it as the
+  documented contract or re-select those boxes; not both.
+- **Kanji:** 京 has no at-or-below-level example because 東京/京都 are absent from the vocab registry
+  entirely — vocab authoring, not selection. The report's K1–K4, K7, K10, K12 were out of the
+  campaign's scope and remain open.
+- **Speak:** `getting_around-01` has zero on-topic prior material at its opening (structural until
+  a mining pass); idiom-frame misfires need the per-stage stoplist.
 
 ## C. Mechanical items — done by hand today
 

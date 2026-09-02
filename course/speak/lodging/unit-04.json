@@ -7,142 +7,209 @@
     "pt-BR": "Dormir e resolver problemas, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-78606",
-    "sent:tatoeba-84203",
-    "sent:tatoeba-13059182",
-    "sent:tatoeba-77964",
-    "sent:tatoeba-84147",
-    "sent:tatoeba-84181"
+    "sent:tatoeba-121103",
+    "sent:tatoeba-79903",
+    "sent:tatoeba-10587984",
+    "sent:tatoeba-82875",
+    "sent:tatoeba-12324657",
+    "sent:tatoeba-78975"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1361490",
-    "vocab:1087820",
-    "vocab:1293780",
-    "vocab:1604570",
-    "vocab:1194500",
-    "vocab:1401400",
-    "vocab:1508590",
-    "vocab:1548220",
-    "vocab:1257330",
-    "vocab:1554280",
-    "vocab:1327660",
-    "vocab:1157090"
+    "vocab:1000590",
+    "vocab:1212670",
+    "vocab:1387210",
+    "vocab:1559290",
+    "vocab:1604550",
+    "vocab:1205900",
+    "vocab:1474850",
+    "vocab:1535350",
+    "vocab:1190860"
   ],
   "patterns": [
-    "gram:gp-78",
-    "gram:you-to-omou",
-    "gram:gp-115"
+    "gram:gp-89",
+    "gram:te-kara",
+    "gram:gp-8",
+    "gram:kara",
+    "gram:tte"
   ],
   "kanji_recognition": [
-    "建",
-    "新",
-    "年",
-    "来",
+    "安",
+    "泊",
+    "彼",
     "屋",
-    "入"
+    "覚",
+    "慣"
   ],
   "shadowing": [
-    "sent:tatoeba-78606",
-    "sent:tatoeba-84203",
-    "sent:tatoeba-13059182",
-    "sent:tatoeba-77964",
-    "sent:tatoeba-84147",
-    "sent:tatoeba-84181"
+    "sent:tatoeba-121103",
+    "sent:tatoeba-79903",
+    "sent:tatoeba-10587984",
+    "sent:tatoeba-82875",
+    "sent:tatoeba-12324657",
+    "sent:tatoeba-78975"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 239,
+  "cumulative_known_vocab": 248,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:gp-128",
-    "gram:nasai",
-    "gram:rareru"
+  "checkpoint": [
+    {
+      "id": "so:n3:11",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:11",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:11:827",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "港",
+        "犬",
+        "間"
+      ]
+    },
+    {
+      "id": "cf:n4:1345:1195",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "見つける",
+        "思い出す",
+        "成るべく"
+      ]
+    },
+    {
+      "id": "kr:n3:1595",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっこう",
+        "メートル",
+        "まいにち"
+      ]
+    },
+    {
+      "id": "kr:n4:911",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まっくら",
+        "ほとんど",
+        "だいがく"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:gp-78",
+      "pattern": "gram:gp-89",
       "examples": [
-        "sent:tatoeba-5049",
-        "sent:tatoeba-222659",
-        "sent:tatoeba-166326"
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:you-to-omou",
+      "pattern": "gram:te-kara",
       "examples": [
-        "sent:tatoeba-3313205",
-        "sent:tatoeba-202096",
-        "sent:tatoeba-3313203"
+        "sent:tatoeba-10617667",
+        "sent:tatoeba-124665",
+        "sent:tatoeba-10175894"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-115",
+      "pattern": "gram:gp-8",
       "examples": [
-        "sent:gen-4c4eb1f80410",
-        "sent:gen-b5467a55ded1",
-        "sent:gen-7506a021dd5b"
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kara",
+      "examples": [
+        "sent:tatoeba-76156",
+        "sent:tatoeba-4772",
+        "sent:gen-671b7aebf53d"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-5412a2ccf468",
+        "sent:gen-fee342a8016b",
+        "sent:gen-48c455d520ba"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "O quarto estava tão cheio de fumaça que quase não dava pra respirar.",
-      "answer_key": "部屋は煙でいっぱいで、ほとんど息ができないくらいだった。",
+      "prompt_pt": "Meu pai não estava nem no quarto nem no jardim.",
+      "answer_key": "父は部屋にも庭にも見当たらなかった。",
       "accepted_variants": [
-        "へやはけむりでいっぱいで、ほとんどいきができないくらいだった",
-        "へやはけむりでいっぱいで、ほとんどいきができないくらいだった。",
-        "へやわけむりでいっぱいで、ほとんどいきができないくらいだった",
-        "へやわけむりでいっぱいで、ほとんどいきができないくらいだった。",
-        "部屋は煙でいっぱいで、ほとんど息ができないくらいだった",
-        "部屋は煙でいっぱいで、ほとんど息ができないくらいだった。"
+        "ちちはへやにもにわにもみあたらなかった",
+        "ちちはへやにもにわにもみあたらなかった。",
+        "ちちわへやにもにわにもみあたらなかった",
+        "ちちわへやにもにわにもみあたらなかった。",
+        "父は部屋にも庭にも見当たらなかった",
+        "父は部屋にも庭にも見当たらなかった。"
       ],
-      "sentence": "sent:tatoeba-84148",
+      "sentence": "sent:tatoeba-84383",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Quantos meninos estão no quarto?",
-      "answer_key": "部屋には何人の少年がいますか。",
+      "prompt_pt": "Posso usar o banheiro?",
+      "answer_key": "トイレをお借りしていい？",
       "accepted_variants": [
-        "へやにはなんにんのしょうねんがいますか",
-        "へやにはなんにんのしょうねんがいますか。",
-        "へやにわなんにんのしょうねんがいますか",
-        "へやにわなんにんのしょうねんがいますか。",
-        "部屋には何人の少年がいますか",
-        "部屋には何人の少年がいますか。"
+        "といれをおかりしていい",
+        "といれをおかりしていい?",
+        "トイレをお借りしていい",
+        "トイレをお借りしていい?",
+        "トイレをお借りしていい？"
       ],
-      "sentence": "sent:tatoeba-84224",
+      "sentence": "sent:tatoeba-76532",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "No hotel há muitos estrangeiros.",
-      "answer_key": "ホテルには外国人が多い。",
+      "prompt_pt": "Meu irmão mais velho toma banho de chuveiro todos os dias.",
+      "answer_key": "兄は毎日シャワーを浴びます。",
       "accepted_variants": [
-        "ほてるにはがいこくじんがおおい",
-        "ほてるにはがいこくじんがおおい。",
-        "ほてるにわがいこくじんがおおい",
-        "ほてるにわがいこくじんがおおい。",
-        "ホテルには外国人が多い",
-        "ホテルには外国人が多い。"
+        "あにはまいにちしゃわーをあびます",
+        "あにはまいにちしゃわーをあびます。",
+        "あにわまいにちしゃわーをあびます",
+        "あにわまいにちしゃわーをあびます。",
+        "兄は毎日シャワーを浴びます",
+        "兄は毎日シャワーを浴びます。"
       ],
-      "sentence": "sent:tatoeba-4562257",
+      "sentence": "sent:tatoeba-10723441",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
     "items": [
-      "sent:tatoeba-126245",
-      "sent:tatoeba-84229",
-      "sent:tatoeba-84158",
-      "sent:tatoeba-84222",
+      "sent:tatoeba-3313203",
+      "sent:tatoeba-77964",
+      "sent:tatoeba-218592",
       "sent:tatoeba-84142",
-      "sent:jec-3201"
+      "sent:tatoeba-234850",
+      "sent:tatoeba-141381"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -150,57 +217,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 57,
+    "language-focused": 60,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 31,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:415:2926",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "問題",
-        "お金",
-        "ご飯"
-      ]
-    },
-    {
-      "id": "cf:n4:157:756",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "下げる",
-        "そんな",
-        "積もり"
-      ]
-    },
-    {
-      "id": "kr:n4:1057",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しょくじ",
-        "まいにち",
-        "こんばん"
-      ]
-    },
-    {
-      "id": "kr:n4:756",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "よやく",
-        "つかう",
-        "やすい"
-      ]
-    }
-  ]
+  }
 }

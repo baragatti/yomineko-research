@@ -7,54 +7,105 @@
     "pt-BR": "Emergência e saúde, parte 5"
   },
   "say_now": [
+    "sent:tatoeba-85337",
     "sent:tatoeba-10587764",
     "sent:jec-1326",
-    "sent:tatoeba-145398",
-    "sent:tatoeba-5147343",
     "sent:tatoeba-3454872",
-    "sent:tatoeba-198568"
+    "sent:tatoeba-198568",
+    "sent:tatoeba-83003"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1257540",
     "vocab:1002610",
     "vocab:1228560",
-    "vocab:1308090",
-    "vocab:1479890",
     "vocab:1599400",
     "vocab:1600280",
-    "vocab:1218380"
+    "vocab:1269060"
   ],
   "patterns": [
     "gram:gp-12",
     "gram:gp-17",
+    "gram:gp-31",
     "gram:ndesu",
     "gram:da-desu"
   ],
   "kanji_recognition": [
-    "休",
-    "今",
-    "痛",
-    "日",
-    "腹",
-    "急"
+    "院",
+    "建",
+    "後",
+    "病",
+    "物",
+    "休"
   ],
   "shadowing": [
+    "sent:tatoeba-85337",
     "sent:tatoeba-10587764",
     "sent:jec-1326",
-    "sent:tatoeba-145398",
-    "sent:tatoeba-5147343",
     "sent:tatoeba-3454872",
-    "sent:tatoeba-198568"
+    "sent:tatoeba-198568",
+    "sent:tatoeba-83003"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 405,
+  "cumulative_known_vocab": 402,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:761",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:947",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:223:1315",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "人",
+        "顔",
+        "三"
+      ]
+    },
+    {
+      "id": "cf:n4:3802:1315",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "君",
+        "箸",
+        "力"
+      ]
+    },
+    {
+      "id": "kr:n4:1315",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "タイプ",
+        "おおい",
+        "おれい"
+      ]
+    },
+    {
+      "id": "kr:n5:120",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やすい",
+        "パート",
+        "かえり"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:kyuu-ni",
-    "gram:tara"
+    "gram:kyuu-ni"
   ],
   "drills": [
     {
@@ -76,11 +127,20 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:gp-31",
+      "examples": [
+        "sent:tatoeba-778974",
+        "sent:tatoeba-1057336",
+        "sent:tatoeba-4789"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:ndesu",
       "examples": [
         "sent:gen-d354f1465606",
         "sent:tatoeba-80973",
-        "sent:tatoeba-137685"
+        "sent:gen-f83463ff3681"
       ],
       "strand": "language-focused"
     },
@@ -96,20 +156,6 @@
   ],
   "production": [
     {
-      "prompt_pt": "O que é aquele prédio que fica atrás do hospital?",
-      "answer_key": "病院の後ろにあるあの建物はなんですか。",
-      "accepted_variants": [
-        "びょういんのうしろにあるあのたてものはなんですか",
-        "びょういんのうしろにあるあのたてものはなんですか。",
-        "びょういんのうしろにあるあのたてものわなんですか",
-        "びょういんのうしろにあるあのたてものわなんですか。",
-        "病院の後ろにあるあの建物はなんですか",
-        "病院の後ろにあるあの建物はなんですか。"
-      ],
-      "sentence": "sent:tatoeba-85337",
-      "strand": "meaning-output"
-    },
-    {
       "prompt_pt": "O espírito está pronto, mas a carne é fraca.",
       "answer_key": "心熱けれど肉体は弱し。",
       "accepted_variants": [
@@ -121,6 +167,7 @@
         "心熱けれど肉体は弱し。"
       ],
       "sentence": "sent:tatoeba-145552",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -135,18 +182,31 @@
         "「気分はどうですか」と彼は尋ねた。"
       ],
       "sentence": "sent:tatoeba-5001",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Os pais levam os filhos ao hospital logo de cara.",
+      "answer_key": "親はすぐにこどもを病院に連れてくる",
+      "accepted_variants": [
+        "おやはすぐにこどもをびょういんにつれてくる",
+        "おやわすぐにこどもをびょういんにつれてくる",
+        "親はすぐにこどもを病院に連れてくる"
+      ],
+      "sentence": "sent:jec-3163",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
-      "sent:jec-3163",
       "sent:tatoeba-203344",
-      "sent:tatoeba-83003",
       "sent:tatoeba-226387",
-      "sent:tatoeba-79502",
-      "sent:tatoeba-11270411"
+      "sent:tatoeba-90106",
+      "sent:tatoeba-190902",
+      "sent:tatoeba-174391",
+      "sent:tatoeba-1190209"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -154,62 +214,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:761",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:157:1430",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "船",
-        "数",
-        "園"
-      ]
-    },
-    {
-      "id": "cf:n4:1917:1094",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "八",
-        "方",
-        "暇"
-      ]
-    },
-    {
-      "id": "kr:n4:1094",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ど",
-        "め",
-        "に"
-      ]
-    },
-    {
-      "id": "kr:n4:1315",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "タイプ",
-        "いれる",
-        "おおい"
-      ]
-    }
-  ]
+  }
 }

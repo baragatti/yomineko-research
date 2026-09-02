@@ -32,6 +32,9 @@ ROOT = Path(__file__).resolve().parents[2]
 JLPT = ROOT / "research" / "datasets" / "jlpt"
 DB = ROOT / "db" / "corpus.sqlite"
 VALID = ROOT / "reports" / "validation.md"
+# Rank order for "which of these levels comes first". Level is data, not structure (CLAUDE.md §1.6):
+# a further level is one more row here.
+LEVEL_ORD = {lv: i for i, lv in enumerate(["pre-n5", "n5", "n4", "n3", "n2", "n1"], start=1)}
 
 
 def log(m: str) -> None:
@@ -264,41 +267,55 @@ def reconcile_vocab(con: sqlite3.Connection) -> dict:
             "vocab_lists": {k: len(v) for k, v in lists.items()}}
 
 
-def seed_reading_tiers(con: sqlite3.Connection) -> int:
-    """Heuristic seed (needs_review=1; SudachiPy gives the exact realized reading per token in P5).
-    A kanji's on/kun reading is introduced at the earliest level of a leveled vocab that contains the
-    kanji AND whose kana contains the reading fragment (base+okurigana). Conservative to cut noise:
-    nanori are skipped; a fragment must be >=2 morae to match as a substring, or exactly equal the
-    whole vocab kana if it is a single mora (single-kanji word)."""
+def derive_reading_tiers(con: sqlite3.Connection) -> int:
+    """`introduced_at_level` exactly as design/schema_v2.md documents it — "derived from example vocab":
+    the level of the EASIEST word that uses the reading, i.e. min(level) over `example_vocab_ids`, and
+    NULL for a reading no example word is filed under.
+
+    What stood here was a DIFFERENT rule, and both halves of it failed. It scanned every leveled vocab
+    containing the kanji for the reading fragment as a substring of the kana — a test that never asks
+    which kanji owns that span — and then collapsed the answer to n5-or-n4. So 65 readings carried a
+    tag no example of theirs supports, 254 readings that DO have example words stayed NULL, and 24
+    contradicted their own record: 子 こ was tagged n4 while holding 子供, 女の子 and 男の子, all n5.
+
+    Deriving from the grouping instead makes the field answerable from the record a reader is looking
+    at — the words shown under the reading ARE the evidence for the tag — and level-agnostic by
+    construction (CLAUDE.md §1.6): it reads whatever level the vocab carries, so N3..N1 need no code
+    change, only rows.
+
+    Nanori are not special-cased. They never hold example vocab (validate_kanji_reading_groups gates
+    that), so the rule leaves them NULL on its own; a filter here would only hide a violation.
+
+    `needs_review` is deliberately left alone. merge_kanji_reading_notes owns that flag for the Layer-C
+    reading NOTES a teacher still has to sign off, and the previous version cleared all of them on
+    every run. A tier read straight off the grouping is mechanical, not an opinion, so it adds no
+    review work of its own.
+
+    Idempotent: every row is recomputed from the grouping, so a second run changes nothing.
+    """
     cur = con.cursor()
-    cur.execute("UPDATE kanji_reading SET introduced_at_level=NULL, needs_review=0")  # reset heuristic seed
-    rows = con.execute(
-        "SELECT vk.kanji_id, v.level, v.kana FROM vocab_kanji vk JOIN vocab v ON v.id=vk.vocab_id "
-        "WHERE v.level IS NOT NULL").fetchall()
-    by_kanji: dict[int, list[tuple[str, str]]] = defaultdict(list)
-    for kid, lvl, kana in rows:
-        by_kanji[kid].append((lvl, hira(kana)))
+    vlevel = dict(con.execute("SELECT id, level FROM vocab WHERE level IS NOT NULL"))
+    cur.execute("UPDATE kanji_reading SET introduced_at_level=NULL WHERE introduced_at_level IS NOT NULL")
     n = 0
-    for kid, vocs in by_kanji.items():
-        for rid, reading, okuri, rtype in con.execute(
-                "SELECT id, reading, okurigana, reading_type FROM kanji_reading WHERE kanji_id=?", (kid,)):
-            if rtype == "nanori":
-                continue
-            base = hira(reading).strip("-").strip(".").strip("-")
-            frag = base + (hira(okuri).strip("-") if okuri else "")
-            if not frag:
-                continue
-            if len(frag) >= 2:
-                hits = [lvl for lvl, kana in vocs if frag in kana]
-            else:  # single mora: only if the vocab kana is exactly this mora
-                hits = [lvl for lvl, kana in vocs if kana == frag]
-            if hits:
-                lvl = "n5" if "n5" in hits else "n4"
-                cur.execute("UPDATE kanji_reading SET introduced_at_level=?, needs_review=1 WHERE id=?",
-                            (lvl, rid))
-                n += cur.rowcount
+    for rid, ev in con.execute("SELECT id, example_vocab_ids FROM kanji_reading "
+                               "WHERE example_vocab_ids IS NOT NULL").fetchall():
+        levels = [vlevel[v] for v in (json.loads(ev) or []) if v in vlevel]
+        if not levels:
+            continue
+        cur.execute("UPDATE kanji_reading SET introduced_at_level=? WHERE id=?",
+                    (min(levels, key=lambda lv: LEVEL_ORD.get(lv, 99)), rid))
+        n += 1
     con.commit()
-    log(f"  per-reading tiers seeded (heuristic, on/kun only): {n}")
+    return n
+
+
+def seed_reading_tiers(con: sqlite3.Connection) -> int:
+    """P2's hook into the rule above. At this point in the pipeline the grouping usually does not exist
+    yet — it is built in roadmap step D (build_kanji_reading_groups -> merge_kanji_reading_notes), which
+    is why that step re-runs the derivation once `example_vocab_ids` are final. Running it here keeps
+    P2's own report honest about what is derivable from the data P2 has."""
+    n = derive_reading_tiers(con)
+    log(f"  per-reading tiers derived from example vocab: {n}")
     return n
 
 

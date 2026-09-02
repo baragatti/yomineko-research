@@ -8,61 +8,137 @@
   },
   "say_now": [
     "sent:tatoeba-11706794",
-    "sent:tatoeba-78182",
     "sent:tatoeba-147605",
-    "sent:tatoeba-78156",
     "sent:tatoeba-81342",
-    "sent:tatoeba-78160"
+    "sent:tatoeba-84089",
+    "sent:tatoeba-10056979",
+    "sent:tatoeba-157573"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1228260",
-    "vocab:1518070",
     "vocab:1341000",
-    "vocab:1220570",
     "vocab:1524700",
-    "vocab:1535560",
+    "vocab:1244680",
+    "vocab:1092820",
+    "vocab:1242350",
+    "vocab:1198880",
     "vocab:1222840",
-    "vocab:1597150"
+    "vocab:1597150",
+    "vocab:1009290"
   ],
   "patterns": [
+    "gram:koto-ga-aru",
     "gram:n3-dakedo",
+    "gram:gp-80",
+    "gram:gp-12",
     "gram:gp-25",
-    "gram:gp-32",
-    "gram:totemo",
-    "gram:koto",
-    "gram:temo"
+    "gram:ni-suru"
   ],
   "kanji_recognition": [
     "吸",
     "初",
-    "言",
-    "行",
-    "市",
-    "訪"
+    "楽",
+    "季",
+    "春",
+    "節"
   ],
   "shadowing": [
     "sent:tatoeba-11706794",
-    "sent:tatoeba-78182",
     "sent:tatoeba-147605",
-    "sent:tatoeba-78156",
     "sent:tatoeba-81342",
-    "sent:tatoeba-78160"
+    "sent:tatoeba-84089",
+    "sent:tatoeba-10056979",
+    "sent:tatoeba-157573"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 441,
+  "cumulative_known_vocab": 435,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:822",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:463:1000",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "張る",
+        "無い",
+        "お礼"
+      ]
+    },
+    {
+      "id": "cf:n4:4657:1211",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "映画",
+        "毎日",
+        "送る"
+      ]
+    },
+    {
+      "id": "kr:n4:1000",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しごと",
+        "おわる",
+        "ようい"
+      ]
+    },
+    {
+      "id": "kr:n4:1211",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こうがい",
+        "おくれる",
+        "たずねる"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-11960481",
+        "sent:tatoeba-1897537",
+        "sent:tatoeba-235631"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:n3-dakedo",
       "examples": [
         "sent:tatoeba-3366905",
         "sent:tatoeba-8575497",
         "sent:tatoeba-171648"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-80",
+      "examples": [
+        "sent:tatoeba-141431",
+        "sent:tatoeba-189474",
+        "sent:tatoeba-215746"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
       ],
       "strand": "language-focused"
     },
@@ -76,38 +152,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-32",
+      "pattern": "gram:ni-suru",
       "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-78700",
-        "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:totemo",
-      "examples": [
-        "sent:gen-25da035589e0",
-        "sent:gen-2b1fccae756f",
-        "sent:tatoeba-5074"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:tatoeba-78150",
-        "sent:gen-a1d5b47d31e9"
+        "sent:gen-6bab4422cee3",
+        "sent:tatoeba-223815",
+        "sent:tatoeba-232235"
       ],
       "strand": "language-focused"
     }
@@ -123,6 +172,7 @@
         "すばらしい食事を経験下さい。"
       ],
       "sentence": "sent:tatoeba-214558",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -133,6 +183,7 @@
         "やはり経験がものを言います"
       ],
       "sentence": "sent:jec-0319",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -143,6 +194,7 @@
         "誰もが経験をする"
       ],
       "sentence": "sent:jec-0071",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -150,11 +202,11 @@
     "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
     "items": [
       "sent:tatoeba-5118",
-      "sent:tatoeba-78134",
-      "sent:tatoeba-171398",
-      "sent:tatoeba-78158",
-      "sent:tatoeba-13537670",
-      "sent:tatoeba-143986"
+      "sent:tatoeba-142423",
+      "sent:tatoeba-83003",
+      "sent:jec-1326",
+      "sent:tatoeba-10587764",
+      "sent:tatoeba-145552"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -162,62 +214,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 22,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 33,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:822",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n3:1688",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "よやく",
-        "おわる",
-        "およぐ"
-      ]
-    },
-    {
-      "id": "kr:n4:1286",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "らいねん",
-        "はじめて",
-        "シャワー"
-      ]
-    },
-    {
-      "id": "cf:n3:4373:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "夜",
-        "薬",
-        "本"
-      ]
-    },
-    {
-      "id": "cf:n3:4391:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "役",
-        "君",
-        "次"
-      ]
-    }
-  ]
+  }
 }

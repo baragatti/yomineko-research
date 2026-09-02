@@ -58,7 +58,7 @@ O kanji 貧 ('pobreza, pobre') aparece em 貧乏 ('pobreza') e 貧しい ('pobre
 #### Hora de praticar
 
 #### Leitura
-> 📖 違う違う。オリジナリティがあるっていうか。インスタントの割にはけっこういけるじゃん。もちろん無料で全てのサービスが利用できますこう書いたほうがはっきりと相手に伝わります昨日になってはじめて私はそのことを知った。その会は特に出席がよいわけではなかった。 — Não, não. É tipo, tem originalidade, sabe. Pra ser instantâneo, é bem gostosinho, né? Claro que todos os serviços podem ser usados gratuitamente. Escrevendo assim, a mensagem chega ao outro de forma mais clara. Só ontem fiquei sabendo disso. A reunião não teve uma presença especialmente boa.
+> 📖 違う違う。オリジナリティがあるっていうか。インスタントの割にはけっこういけるじゃん。もちろん無料で全てのサービスが利用できます。こう書いたほうがはっきりと相手に伝わります。昨日になってはじめて私はそのことを知った。その会は特に出席がよいわけではなかった。 — Não, não. É tipo, tem originalidade, sabe. Pra ser instantâneo, é bem gostosinho, né? Claro que todos os serviços podem ser usados gratuitamente. Escrevendo assim, a mensagem chega ao outro de forma mais clara. Só ontem fiquei sabendo disso. A reunião não teve uma presença especialmente boa.
 > 📖 試験に通るには６０点取らないといけない。小学校の前を通ると子供のころを思いだす。私たちは好天を利用してテニスを楽しんだ。あなたの学生生活も間もなく終わりになる。たいていの国では女性は男性より長生きだ。この間違い以外、これは良いレポートです。 — Para passar na prova, é preciso tirar 60 pontos. Quando passo em frente à escola primária, lembro da época em que eu era criança. Nós aproveitamos o bom tempo e jogamos tênis. A sua vida de estudante também vai chegar ao fim em breve. Na maioria dos países, as mulheres vivem mais que os homens. Exceto por este erro, este é um bom relatório.
 - Reconheço e uso conectivos N3 como それでも e そこで em frases.
 - Emprego verbos e advérbios de modo ligados a cuidar, servir e crescer.

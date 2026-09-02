@@ -7,58 +7,110 @@
     "pt-BR": "Quando, que horas, combinar, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-1590321",
-    "sent:tatoeba-226765",
-    "sent:tatoeba-171774",
-    "sent:tatoeba-80616",
-    "sent:tatoeba-184394",
-    "sent:tatoeba-3263386"
+    "sent:tatoeba-150509",
+    "sent:tatoeba-83926",
+    "sent:tatoeba-1190209",
+    "sent:tatoeba-161057",
+    "sent:tatoeba-174391",
+    "sent:tatoeba-1699768"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1273270",
-    "vocab:1002650",
-    "vocab:1002590",
-    "vocab:1222590",
-    "vocab:1307500",
-    "vocab:1293810",
-    "vocab:1384830",
-    "vocab:1477950",
-    "vocab:1269060",
-    "vocab:1559380"
+    "vocab:1316140",
+    "vocab:1579350",
+    "vocab:1228650",
+    "vocab:1174340",
+    "vocab:1268990",
+    "vocab:1310620"
   ],
   "patterns": [
+    "gram:amari-nai",
     "gram:masen-ka",
     "gram:gp-149",
+    "gram:darou",
     "gram:gp-17",
-    "gram:da-desu",
-    "gram:kara",
-    "gram:node"
+    "gram:ndesu"
   ],
   "kanji_recognition": [
-    "園",
-    "午",
-    "後",
-    "公",
-    "行",
-    "今"
+    "間",
+    "計",
+    "止",
+    "時",
+    "三",
+    "治"
   ],
   "shadowing": [
-    "sent:tatoeba-1590321",
-    "sent:tatoeba-226765",
-    "sent:tatoeba-171774",
-    "sent:tatoeba-80616",
-    "sent:tatoeba-184394",
-    "sent:tatoeba-3263386"
+    "sent:tatoeba-150509",
+    "sent:tatoeba-83926",
+    "sent:tatoeba-1190209",
+    "sent:tatoeba-161057",
+    "sent:tatoeba-174391",
+    "sent:tatoeba-1699768"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 373,
+  "cumulative_known_vocab": 363,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n4:3623",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3623:1300",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "どんな",
+        "食べる",
+        "コピー"
+      ]
+    },
+    {
+      "id": "cf:n5:3181:280",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "歯",
+        "線",
+        "頭"
+      ]
+    },
+    {
+      "id": "kr:n4:1272",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かえる",
+        "おわり",
+        "こわい"
+      ]
+    },
+    {
+      "id": "kr:n5:131",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とまる",
+        "つかう",
+        "うしろ"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:amari-nai",
+      "examples": [
+        "sent:tatoeba-171507",
+        "sent:tatoeba-1874351",
+        "sent:tatoeba-10908739"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:masen-ka",
       "examples": [
@@ -73,7 +125,16 @@
       "examples": [
         "sent:tatoeba-77812",
         "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:darou",
+      "examples": [
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
       ],
       "strand": "language-focused"
     },
@@ -87,87 +148,69 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:ndesu",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kara",
-      "examples": [
-        "sent:tatoeba-76156",
-        "sent:gen-061ed9aa1785",
-        "sent:gen-5b9e3ecfbcaf"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:node",
-      "examples": [
-        "sent:gen-82b26ffb3d46",
-        "sent:tatoeba-85318",
-        "sent:tatoeba-82538"
+        "sent:gen-d354f1465606",
+        "sent:tatoeba-80973",
+        "sent:gen-f83463ff3681"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Você está livre na sexta-feira à tarde?",
-      "answer_key": "金曜日の午後はお暇ですか。",
+      "prompt_pt": "Faremos a entrega dentro de uma semana.",
+      "answer_key": "1週間以内にお届けします。",
       "accepted_variants": [
-        "きんようびのごごはおひまですか",
-        "きんようびのごごはおひまですか。",
-        "きんようびのごごわおひまですか",
-        "きんようびのごごわおひまですか。",
-        "金曜日の午後はお暇ですか",
-        "金曜日の午後はお暇ですか。"
+        "1週間以内にお届けします",
+        "1週間以内にお届けします。",
+        "いっしゅうかんいないにおとどけします",
+        "いっしゅうかんいないにおとどけします。"
       ],
-      "sentence": "sent:tatoeba-179620",
+      "sentence": "sent:tatoeba-190565",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Será que vai melhorar à tarde?",
-      "answer_key": "午後には上がるだろうか？",
+      "prompt_pt": "A gente se encontra a cada três semanas.",
+      "answer_key": "３週間ごとに会ってます。",
       "accepted_variants": [
-        "ごごにはあがるだろうか",
-        "ごごにはあがるだろうか?",
-        "ごごにわあがるだろうか",
-        "ごごにわあがるだろうか?",
-        "午後には上がるだろうか",
-        "午後には上がるだろうか?",
-        "午後には上がるだろうか？"
+        "3週間ごとに会ってます",
+        "3週間ごとに会ってます。",
+        "さんしゅうかんごとにあってます",
+        "さんしゅうかんごとにあってます。",
+        "３週間ごとに会ってます",
+        "３週間ごとに会ってます。"
       ],
-      "sentence": "sent:tatoeba-1699768",
+      "sentence": "sent:tatoeba-10303648",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "À tarde não quero sair de casa.",
-      "answer_key": "午後は外へ出たくない。",
+      "prompt_pt": "Hoje está ventando bastante, né?",
+      "answer_key": "今日はけっこう風が強いね。",
       "accepted_variants": [
-        "ごごはそとへでたくない",
-        "ごごはそとへでたくない。",
-        "ごごわそとえでたくない",
-        "ごごわそとえでたくない。",
-        "午後は外へ出たくない",
-        "午後は外へ出たくない。"
+        "きょうはけっこうかぜがつよいね",
+        "きょうはけっこうかぜがつよいね。",
+        "きょうわけっこうかぜがつよいね",
+        "きょうわけっこうかぜがつよいね。",
+        "今日はけっこう風が強いね",
+        "今日はけっこう風が強いね。"
       ],
-      "sentence": "sent:tatoeba-174391",
+      "sentence": "sent:tatoeba-536767",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
-      "sent:tatoeba-536767",
       "sent:tatoeba-143418",
       "sent:tatoeba-154767",
-      "sent:tatoeba-9777117",
-      "sent:tatoeba-171531",
-      "sent:tatoeba-1037362"
+      "sent:tatoeba-10014826",
+      "sent:tatoeba-79849",
+      "sent:tatoeba-80668",
+      "sent:tatoeba-2684823"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -175,67 +218,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 34,
+    "language-focused": 29,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:558",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:665",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:665:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "二",
-        "足",
-        "分"
-      ]
-    },
-    {
-      "id": "cf:n4:3700:848",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "漸と",
-        "説明",
-        "大学"
-      ]
-    },
-    {
-      "id": "pp:n5:100",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "昼",
-        "箸",
-        "駅"
-      ]
-    },
-    {
-      "id": "kr:n4:1129",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はこ",
-        "けす",
-        "いつ"
-      ]
-    }
-  ]
+  }
 }

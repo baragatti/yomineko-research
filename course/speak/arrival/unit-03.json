@@ -7,112 +7,182 @@
     "pt-BR": "Chegar e cumprimentar, parte 3"
   },
   "say_now": [
-    "sent:tatoeba-4971",
-    "sent:tatoeba-9559301",
-    "sent:tatoeba-103106",
-    "sent:tatoeba-219058",
-    "sent:tatoeba-198378",
-    "sent:tatoeba-229458"
+    "sent:tatoeba-229425",
+    "sent:tatoeba-10355885",
+    "sent:tatoeba-171272",
+    "sent:tatoeba-125944",
+    "sent:tatoeba-226507",
+    "sent:tatoeba-125913"
   ],
-  "chunk_phrases": [
-    "sent:tatoeba-4971",
-    "sent:tatoeba-9559301"
-  ],
+  "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1483070",
-    "vocab:1311110",
-    "vocab:1578850",
-    "vocab:1259290",
-    "vocab:1383240",
-    "vocab:1254760",
-    "vocab:1583250",
-    "vocab:1074260"
+    "vocab:1420470",
+    "vocab:1591110",
+    "vocab:1198180",
+    "vocab:1313580",
+    "vocab:1600900",
+    "vocab:1410590",
+    "vocab:1429750",
+    "vocab:1340450",
+    "vocab:1206050",
+    "vocab:1188760",
+    "vocab:1289470",
+    "vocab:1579210"
   ],
   "patterns": [
-    "gram:mashou"
+    "gram:gp-149",
+    "gram:gp-32"
   ],
   "kanji_recognition": [
-    "赤",
-    "彼",
-    "私",
-    "行",
-    "見"
+    "覚",
+    "知",
+    "聞",
+    "会",
+    "今",
+    "晩"
   ],
   "shadowing": [
-    "sent:tatoeba-4971",
-    "sent:tatoeba-9559301",
-    "sent:tatoeba-103106",
-    "sent:tatoeba-219058",
-    "sent:tatoeba-198378",
-    "sent:tatoeba-229458"
+    "sent:tatoeba-229425",
+    "sent:tatoeba-10355885",
+    "sent:tatoeba-171272",
+    "sent:tatoeba-125944",
+    "sent:tatoeba-226507",
+    "sent:tatoeba-125913"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 8,
+  "cumulative_known_vocab": 21,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:756",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3419",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5060:1921",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "余り",
+        "時間",
+        "無い"
+      ]
+    },
+    {
+      "id": "cf:n4:3517:887",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "私",
+        "話",
+        "長い"
+      ]
+    },
+    {
+      "id": "kr:n4:887",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いく",
+        "あう",
+        "ない"
+      ]
+    },
+    {
+      "id": "kr:n5:127",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こんばん",
+        "けっこう",
+        "さいちゅう"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:gp-42",
-    "gram:dake-de",
-    "gram:nasai",
-    "gram:te-ita",
-    "gram:gp-36"
+    "gram:gp-108",
+    "gram:te-sumimasen",
+    "gram:gp-148",
+    "gram:gp-62"
   ],
   "drills": [
     {
-      "pattern": "gram:mashou",
+      "pattern": "gram:gp-149",
       "examples": [
-        "sent:tatoeba-139208",
-        "sent:tatoeba-173392",
-        "sent:tatoeba-197681"
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-85319",
+        "sent:tatoeba-83696",
+        "sent:tatoeba-4714"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Bom dia!",
-      "answer_key": "おはようございます！",
+      "prompt_pt": "Desculpe. É que não tenho muito tempo.",
+      "answer_key": "ごめんなさい。時間があまりないんです。",
       "accepted_variants": [
-        "おはようございます",
-        "おはようございます!",
-        "おはようございます！"
+        "ごめんなさい。じかんがあまりないんです",
+        "ごめんなさい。じかんがあまりないんです。",
+        "ごめんなさい。時間があまりないんです",
+        "ごめんなさい。時間があまりないんです。"
       ],
-      "sentence": "sent:tatoeba-1576172",
+      "sentence": "sent:tatoeba-1874351",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Bom dia!",
-      "answer_key": "おはようございます。",
+      "prompt_pt": "Obrigado por ter vindo.",
+      "answer_key": "来てくれてありがとう。",
       "accepted_variants": [
-        "おはようございます",
-        "おはようございます。"
+        "きてくれてありがとう",
+        "きてくれてありがとう。",
+        "来てくれてありがとう",
+        "来てくれてありがとう。"
       ],
-      "sentence": "sent:tatoeba-335372",
+      "sentence": "sent:tatoeba-78721",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Com licença!",
-      "answer_key": "すみません！",
+      "prompt_pt": "Não, obrigado. É que estou só olhando.",
+      "answer_key": "いいえ、けっこうです。見ているだけですから。",
       "accepted_variants": [
-        "すみません",
-        "すみません!",
-        "すみません！"
+        "いいえ、けっこうです。みているだけですから",
+        "いいえ、けっこうです。みているだけですから。",
+        "いいえ、けっこうです。見ているだけですから",
+        "いいえ、けっこうです。見ているだけですから。"
       ],
-      "sentence": "sent:tatoeba-13174949",
+      "sentence": "sent:tatoeba-229458",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
     "items": [
-      "sent:tatoeba-640569",
+      "sent:tatoeba-4971",
+      "sent:tatoeba-335372",
       "sent:tatoeba-426889",
-      "sent:tatoeba-1531875",
       "sent:tatoeba-1532832",
-      "sent:tatoeba-3480287",
-      "sent:tatoeba-373351"
+      "sent:tatoeba-373351",
+      "sent:tatoeba-1598216"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -120,67 +190,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:743",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:4347",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2375:47",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "洋袴",
-        "見る",
-        "結構"
-      ]
-    },
-    {
-      "id": "cf:n5:2461:627",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "結構",
-        "行く",
-        "洋袴"
-      ]
-    },
-    {
-      "id": "kr:n4:758",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いく",
-        "みる",
-        "ズボン"
-      ]
-    },
-    {
-      "id": "kr:n5:231",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いいえ",
-        "ズボン",
-        "あかい"
-      ]
-    }
-  ]
+  }
 }

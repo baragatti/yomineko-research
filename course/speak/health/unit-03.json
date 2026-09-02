@@ -8,52 +8,103 @@
   },
   "say_now": [
     "sent:tatoeba-83924",
-    "sent:tatoeba-189575",
-    "sent:tatoeba-203287",
-    "sent:tatoeba-192750",
-    "sent:tatoeba-83003",
-    "sent:tatoeba-85328"
+    "sent:tatoeba-11270411",
+    "sent:tatoeba-79502",
+    "sent:tatoeba-226387",
+    "sent:tatoeba-214052",
+    "sent:tatoeba-203287"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1423000",
-    "vocab:1588120",
+    "vocab:1538160",
     "vocab:1510650",
-    "vocab:1529390",
-    "vocab:1490220",
     "vocab:2842174",
     "vocab:1634500",
-    "vocab:1414920"
+    "vocab:1244310",
+    "vocab:1602060"
   ],
   "patterns": [
     "gram:kana",
-    "gram:gp-8"
+    "gram:gp-14",
+    "gram:node"
   ],
   "kanji_recognition": [
     "引",
     "邪",
     "着",
     "風",
-    "雨",
-    "歌"
+    "飲",
+    "薬"
   ],
   "shadowing": [
     "sent:tatoeba-83924",
-    "sent:tatoeba-189575",
-    "sent:tatoeba-203287",
-    "sent:tatoeba-192750",
-    "sent:tatoeba-83003",
-    "sent:tatoeba-85328"
+    "sent:tatoeba-11270411",
+    "sent:tatoeba-79502",
+    "sent:tatoeba-226387",
+    "sent:tatoeba-214052",
+    "sent:tatoeba-203287"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 389,
+  "cumulative_known_vocab": 388,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:184",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:1104",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n4:1075",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "コピー",
+        "たべる",
+        "おえる"
+      ]
+    },
+    {
+      "id": "kr:n4:1332",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つくる",
+        "まもる",
+        "どんな"
+      ]
+    },
+    {
+      "id": "cf:n3:4391:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "君",
+        "次",
+        "力"
+      ]
+    },
+    {
+      "id": "cf:n3:4450:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "間",
+        "道",
+        "人"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-128",
-    "gram:no-naka-de",
     "gram:you-ni-you-na",
     "gram:tara"
   ],
@@ -68,51 +119,64 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-8",
+      "pattern": "gram:gp-14",
       "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-150175"
+        "sent:tatoeba-74036",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:node",
+      "examples": [
+        "sent:gen-82b26ffb3d46",
+        "sent:tatoeba-85318",
+        "sent:tatoeba-82538"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Se você ficar resfriado, tome este remédio, viu?",
-      "answer_key": "かぜをひいたらこの薬を飲むんだよ。",
+      "prompt_pt": "Estou com vontade de cantar na chuva.",
+      "answer_key": "雨の中で歌いたい気分だ。",
       "accepted_variants": [
-        "かぜをひいたらこのくすりをのむんだよ",
-        "かぜをひいたらこのくすりをのむんだよ。",
-        "かぜをひいたらこの薬を飲むんだよ",
-        "かぜをひいたらこの薬を飲むんだよ。"
+        "あめのなかでうたいたいきぶんだ",
+        "あめのなかでうたいたいきぶんだ。",
+        "雨の中で歌いたい気分だ",
+        "雨の中で歌いたい気分だ。"
       ],
-      "sentence": "sent:tatoeba-226387",
+      "sentence": "sent:tatoeba-189575",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "O seu remédio ficou pronto, viu?",
-      "answer_key": "お薬ができましたよ。",
+      "prompt_pt": "Hoje estou me sentindo muito melhor.",
+      "answer_key": "今日はずっと気分がよい。",
       "accepted_variants": [
-        "おくすりができましたよ",
-        "おくすりができましたよ。",
-        "お薬ができましたよ",
-        "お薬ができましたよ。"
+        "きょうはずっときぶんがよい",
+        "きょうはずっときぶんがよい。",
+        "きょうわずっときぶんがよい",
+        "きょうわずっときぶんがよい。",
+        "今日はずっと気分がよい",
+        "今日はずっと気分がよい。"
       ],
-      "sentence": "sent:tatoeba-79502",
+      "sentence": "sent:tatoeba-171774",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Será que eu já tomei o remédio?",
-      "answer_key": "薬飲んだっけ？",
+      "prompt_pt": "Meu pé esquerdo está doendo.",
+      "answer_key": "左の足が痛いです。",
       "accepted_variants": [
-        "くすりのんだっけ",
-        "くすりのんだっけ?",
-        "薬飲んだっけ",
-        "薬飲んだっけ?",
-        "薬飲んだっけ？"
+        "ひだりのあしがいたいです",
+        "ひだりのあしがいたいです。",
+        "左の足が痛いです",
+        "左の足が痛いです。"
       ],
-      "sentence": "sent:tatoeba-11270411",
+      "sentence": "sent:tatoeba-10263746",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -120,11 +184,11 @@
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
       "sent:tatoeba-90106",
-      "sent:tatoeba-190894",
       "sent:tatoeba-190902",
-      "sent:tatoeba-3263386",
-      "sent:tatoeba-171774",
-      "sent:tatoeba-226765"
+      "sent:tatoeba-174391",
+      "sent:tatoeba-1190209",
+      "sent:tatoeba-10303648",
+      "sent:tatoeba-536767"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -132,67 +196,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 53,
+    "language-focused": 54,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:183",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:184",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3876:848",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "約束",
-        "有名",
-        "話す"
-      ]
-    },
-    {
-      "id": "cf:n4:2310:1325",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "今夜",
-        "言う",
-        "出る"
-      ]
-    },
-    {
-      "id": "kr:n4:1075",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "コピー",
-        "たべる",
-        "おえる"
-      ]
-    },
-    {
-      "id": "kr:n4:1325",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たてる",
-        "あした",
-        "すすむ"
-      ]
-    }
-  ]
+  }
 }

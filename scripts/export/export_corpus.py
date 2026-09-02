@@ -30,6 +30,46 @@ BANK_LEVELS = ["n2", "n1"]
 KV_LEVELS = LEVELS + BANK_LEVELS
 LOC = DEFAULT_LOCALE  # "pt-BR"
 
+# Rank order for "is this word at or below that record's own level?". Level is DATA, not structure
+# (CLAUDE.md §1.6): a new level is a new row here, never a schema change. Unleveled rows sort last.
+LEVEL_ORD = {lv: i for i, lv in enumerate(["pre-n5", "n5", "n4", "n3", "n2", "n1"], start=1)}
+UNLEVELED_ORD = 99
+# The same ladder as a SQL expression, so ORDER BY can band rows without a temp table.
+LEVEL_ORD_SQL = ("CASE v.level " + " ".join(f"WHEN '{lv}' THEN {o}" for lv, o in LEVEL_ORD.items())
+                 + f" ELSE {UNLEVELED_ORD} END")
+
+# Example words are a TEACHING slot, not a dump of the vocab_kanji join, so the 10 that fit are ranked:
+#   1. NOT a proper name. Names teach nothing about the character's everyday use, so they sink below
+#      every ordinary word and surface only when a kanji has nothing else (spec §3 keeps JMnedict out
+#      for exactly this reason). `pos` is a JSON list, hence the quoted LIKE — '%"n-pr"%' must not
+#      also match "n-pref".
+#   2. At or below the kanji's OWN level first. 名 was spending 6 of its 10 slots on N1/N2 compounds
+#      while 平仮名 and 片仮名 — n5, already in this corpus — were not shown at all, and 何 omitted
+#      eight n5 words. Above-level words then fill whatever is left, so nothing gets thinner.
+#   3. Inside each band, the old ordering: common first, then frequency rank, nulls last.
+#   4. `v.slug` last, so the LIMIT cut is REPRODUCIBLE. 不 and 主 tie on every other key (all common,
+#      all freq_rank null), so the previous cut fell on undefined row order and could change per build.
+# DISTINCT via the IN-subquery because vocab_kanji is keyed per OCCURRENCE — 日曜日 joins 日 twice and
+# 滅茶苦茶 joins 茶 twice, which spent a real slot on a byte-identical repeat.
+EXAMPLE_WORDS_SQL = f"""
+SELECT v.headword, v.kana, v.id, v.slug
+  FROM vocab v
+ WHERE v.id IN (SELECT vocab_id FROM vocab_kanji WHERE kanji_id = ?)
+ ORDER BY (SELECT CASE WHEN COUNT(*) > 0
+                        AND SUM(CASE WHEN s.pos LIKE '%"n-pr"%' THEN 1 ELSE 0 END) = COUNT(*)
+                       THEN 1 ELSE 0 END
+             FROM vocab_sense s WHERE s.vocab_id = v.id),
+          CASE WHEN {LEVEL_ORD_SQL} <= ? THEN 0 ELSE 1 END,
+          v.common DESC, v.freq_rank IS NULL, v.freq_rank, v.slug
+ LIMIT 10
+"""
+
+# kun -> on -> nanori. `ORDER BY reading_type` was a plain string sort, and 'kun' < 'nanori' < 'on'
+# alphabetically, so the name-readings block wedged itself between the two groups a learner needs:
+# 理's single on reading リ (料理, 理由, 無理) sat at index 17 of 18, behind 16 nanori. `kr.id` keeps
+# the within-group order stable across rebuilds.
+READING_ORDER_SQL = "ORDER BY CASE kr.reading_type WHEN 'kun' THEN 0 WHEN 'on' THEN 1 ELSE 2 END, kr.id"
+
 # JMdict misc tag -> neutral register/usage enum (Layer A; what you can rely on for tone/UX warnings).
 REGISTER_MAP = {
     "col": "colloquial", "sl": "slang", "net-sl": "internet-slang", "vulg": "vulgar",
@@ -148,19 +188,18 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                     "kr.example_vocab_ids,"
                     "(SELECT value FROM localized_text WHERE entity_type='kanji_reading' "
                     " AND entity_id=kr.id AND field='note' AND locale='pt-BR') "
-                    "FROM kanji_reading kr WHERE kr.kanji_id=? ORDER BY kr.reading_type", (kid,))
+                    f"FROM kanji_reading kr WHERE kr.kanji_id=? {READING_ORDER_SQL}", (kid,))
             ]
             irr_note = con.execute(
                 "SELECT value FROM localized_text WHERE entity_type='kanji' AND entity_id=? "
                 "AND field='irregular_note' AND locale='pt-BR'", (kid,)).fetchone()
             components = [r[0] for r in con.execute(
                 "SELECT component FROM kanji_component WHERE kanji_id=?", (kid,))]
-            # example words: vocab written with this kanji (common first), with kana + meaning
+            # example words: vocab written with this kanji, ranked by EXAMPLE_WORDS_SQL (see there),
+            # with kana + meaning
             example_words = []
             for vhw, vkana, vid, vslug in con.execute(
-                    "SELECT v.headword,v.kana,v.id,v.slug FROM vocab_kanji vk JOIN vocab v ON v.id=vk.vocab_id "
-                    "WHERE vk.kanji_id=? ORDER BY v.common DESC, v.freq_rank IS NULL, v.freq_rank LIMIT 10",
-                    (kid,)):
+                    EXAMPLE_WORDS_SQL, (kid, LEVEL_ORD.get(level, UNLEVELED_ORD))):
                 fs = first_sense.get(vid)
                 # `slug` is the published address; `vocab_id` is the storage row and is kept only
                 # because existing consumers read it. A reader linking to the word wants the slug —

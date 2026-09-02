@@ -7,142 +7,191 @@
     "pt-BR": "Quando, que horas, combinar, parte 3"
   },
   "say_now": [
-    "sent:tatoeba-171531",
-    "sent:tatoeba-9777117",
-    "sent:tatoeba-154767",
-    "sent:tatoeba-125943",
-    "sent:tatoeba-11013726",
-    "sent:tatoeba-4905"
+    "sent:tatoeba-234998",
+    "sent:tatoeba-79849",
+    "sent:tatoeba-10014826",
+    "sent:tatoeba-152614",
+    "sent:tatoeba-118653",
+    "sent:tatoeba-80068"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1582310",
-    "vocab:1155120",
-    "vocab:1483740",
-    "vocab:1405800",
-    "vocab:1386460",
-    "vocab:1310460",
-    "vocab:1372800",
-    "vocab:1163940"
+    "vocab:1255430",
+    "vocab:1307550",
+    "vocab:1310730",
+    "vocab:1316380",
+    "vocab:1100760",
+    "vocab:1554370"
   ],
   "patterns": [
-    "gram:gp-149",
-    "gram:gp-142",
-    "gram:gp-93",
-    "gram:kana"
+    "gram:kamo-shirenai",
+    "gram:mashou",
+    "gram:to-iu",
+    "gram:tsumori"
   ],
   "kanji_recognition": [
+    "月",
     "今",
-    "頭",
     "日",
-    "痛",
-    "以",
-    "間"
+    "始",
+    "題",
+    "問"
   ],
   "shadowing": [
-    "sent:tatoeba-171531",
-    "sent:tatoeba-9777117",
-    "sent:tatoeba-154767",
-    "sent:tatoeba-125943",
-    "sent:tatoeba-11013726",
-    "sent:tatoeba-4905"
+    "sent:tatoeba-234998",
+    "sent:tatoeba-79849",
+    "sent:tatoeba-10014826",
+    "sent:tatoeba-152614",
+    "sent:tatoeba-118653",
+    "sent:tatoeba-80068"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 349,
+  "cumulative_known_vocab": 340,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n5:5462",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4791:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "初めて",
+        "小さな",
+        "泊まる"
+      ]
+    },
+    {
+      "id": "cf:n4:4792:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "建てる",
+        "泊まる",
+        "覚える"
+      ]
+    },
+    {
+      "id": "kr:n5:162",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こと",
+        "はは",
+        "かず"
+      ]
+    },
+    {
+      "id": "kr:n5:295",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ぼく",
+        "なに",
+        "いい"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:tsuzukeru",
-    "gram:gp-45"
+    "gram:gp-91",
+    "gram:hajimeru"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-149",
+      "pattern": "gram:kamo-shirenai",
       "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-189633"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-142",
+      "pattern": "gram:mashou",
       "examples": [
-        "sent:tatoeba-78454",
-        "sent:tatoeba-137678",
-        "sent:tatoeba-83221"
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-200934"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-93",
+      "pattern": "gram:to-iu",
       "examples": [
-        "sent:gen-a81f2084ea99",
-        "sent:gen-e1c2cfd5e350",
-        "sent:gen-0877b1b2f764"
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:kana",
+      "pattern": "gram:tsumori",
       "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
+        "sent:gen-f48e05df2b74",
+        "sent:tatoeba-80364",
+        "sent:tatoeba-137646"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "\"Quando você acorda?\" \"Às oito da manhã.\"",
-      "answer_key": "「いつ起きるの？」「朝八時だよ」",
+      "prompt_pt": "Tomara que chova amanhã.",
+      "answer_key": "明日、雨が降ればいいのに。",
       "accepted_variants": [
-        "「いつおきるの?」「あさはちじだよ」",
-        "「いつ起きるの?」「朝八時だよ」",
-        "「いつ起きるの？」「朝八時だよ」"
+        "あす、あめがふればいいのに",
+        "あす、あめがふればいいのに。",
+        "明日、雨が降ればいいのに",
+        "明日、雨が降ればいいのに。"
       ],
-      "sentence": "sent:tatoeba-1037362",
+      "sentence": "sent:tatoeba-80668",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Conheci uma pessoa chamada Kimura na festa.",
-      "answer_key": "木村さんという人にパーティーで会ったよ。",
+      "prompt_pt": "Se chover amanhã, fico em casa.",
+      "answer_key": "明日雨なら、家にいます。",
       "accepted_variants": [
-        "きむらさんというひとにぱーてぃーであったよ",
-        "きむらさんというひとにぱーてぃーであったよ。",
-        "木村さんという人にパーティーで会ったよ",
-        "木村さんという人にパーティーで会ったよ。"
+        "あすあめなら、いえにいます",
+        "あすあめなら、いえにいます。",
+        "明日雨なら、家にいます",
+        "明日雨なら、家にいます。"
       ],
-      "sentence": "sent:tatoeba-80068",
+      "sentence": "sent:tatoeba-80338",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Encontrar com ele a gente deixa para a próxima vez.",
-      "answer_key": "彼に会うのはこの次にしましょう。",
+      "prompt_pt": "Amanhã talvez chova.",
+      "answer_key": "明日は雨かもしれない。",
       "accepted_variants": [
-        "かれにあうのはこのつぎにしましょう",
-        "かれにあうのはこのつぎにしましょう。",
-        "かれにあうのわこのつぎにしましょう",
-        "かれにあうのわこのつぎにしましょう。",
-        "彼に会うのはこの次にしましょう",
-        "彼に会うのはこの次にしましょう。"
+        "あすはあめかもしれない",
+        "あすはあめかもしれない。",
+        "あすわあめかもしれない",
+        "あすわあめかもしれない。",
+        "明日は雨かもしれない",
+        "明日は雨かもしれない。"
       ],
-      "sentence": "sent:tatoeba-118653",
+      "sentence": "sent:tatoeba-2684823",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
-      "sent:tatoeba-152614",
-      "sent:tatoeba-150577",
+      "sent:tatoeba-80474",
+      "sent:tatoeba-80452",
       "sent:tatoeba-80460",
       "sent:tatoeba-78588",
-      "sent:tatoeba-185449",
-      "sent:tatoeba-79537"
+      "sent:jec-1876",
+      "sent:tatoeba-163381"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -150,67 +199,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:722",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:759",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3684:1118",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "少年",
-        "十分",
-        "悪い"
-      ]
-    },
-    {
-      "id": "cf:n4:1180:1113",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "死ぬ",
-        "以下",
-        "仕事"
-      ]
-    },
-    {
-      "id": "kr:n4:1062",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けいかく",
-        "ほとんど",
-        "かんけい"
-      ]
-    },
-    {
-      "id": "kr:n4:1067",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こんばん",
-        "コーヒー",
-        "てつだう"
-      ]
-    }
-  ]
+  }
 }

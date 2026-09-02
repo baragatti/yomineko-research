@@ -10,22 +10,25 @@
     "sent:tatoeba-83934",
     "sent:tatoeba-83953",
     "sent:tatoeba-90106",
-    "sent:tatoeba-11270411",
-    "sent:tatoeba-79502",
-    "sent:tatoeba-226387"
+    "sent:tatoeba-10263746",
+    "sent:tatoeba-171774",
+    "sent:tatoeba-189575"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1426530",
     "vocab:1229840",
-    "vocab:1538160",
+    "vocab:1404630",
+    "vocab:1222590",
     "vocab:1583720",
+    "vocab:1588120",
     "vocab:1169250",
+    "vocab:1290800",
+    "vocab:1157090",
     "vocab:1305380"
   ],
   "patterns": [
-    "gram:nasai",
     "gram:gp-81",
     "gram:kana"
   ],
@@ -41,36 +44,75 @@
     "sent:tatoeba-83934",
     "sent:tatoeba-83953",
     "sent:tatoeba-90106",
-    "sent:tatoeba-11270411",
-    "sent:tatoeba-79502",
-    "sent:tatoeba-226387"
+    "sent:tatoeba-10263746",
+    "sent:tatoeba-171774",
+    "sent:tatoeba-189575"
   ],
   "audio": "pending",
   "real_phrases": 6,
   "cumulative_known_vocab": 381,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:760",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3700:848",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "漸と",
+        "大学",
+        "地図"
+      ]
+    },
+    {
+      "id": "cf:n4:3876:848",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "約束",
+        "有名",
+        "話す"
+      ]
+    },
+    {
+      "id": "kr:n4:765",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くださる",
+        "いっしょ",
+        "しょくじ"
+      ]
+    },
+    {
+      "id": "kr:n4:848",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さがる",
+        "ひだり",
+        "おとこ"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-128",
-    "gram:you-ni-you-na",
-    "gram:tara"
+    "gram:nasai",
+    "gram:no-naka-de",
+    "gram:you-ni-you-na"
   ],
   "drills": [
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78287",
-        "sent:tatoeba-78855"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-81",
       "examples": [
         "sent:gen-20f9f43c9339",
-        "sent:gen-e5bc8ecc1fc4",
-        "sent:gen-f416c28a18c3"
+        "sent:gen-f416c28a18c3",
+        "sent:gen-68448be6940b"
       ],
       "strand": "language-focused"
     },
@@ -86,32 +128,6 @@
   ],
   "production": [
     {
-      "prompt_pt": "Acho que você deveria ser examinado por um médico.",
-      "answer_key": "医者に見てもらうべきだと思う。",
-      "accepted_variants": [
-        "いしゃにみてもらうべきだとおもう",
-        "いしゃにみてもらうべきだとおもう。",
-        "医者に見てもらうべきだと思う",
-        "医者に見てもらうべきだと思う。"
-      ],
-      "sentence": "sent:tatoeba-190894",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Meu pai quer fazer de mim um médico.",
-      "answer_key": "父は私を医者にしたがっている。",
-      "accepted_variants": [
-        "ちちはわたしをいしゃにしたがっている",
-        "ちちはわたしをいしゃにしたがっている。",
-        "ちちわわたしをいしゃにしたがっている",
-        "ちちわわたしをいしゃにしたがっている。",
-        "父は私を医者にしたがっている",
-        "父は私を医者にしたがっている。"
-      ],
-      "sentence": "sent:tatoeba-84479",
-      "strand": "meaning-output"
-    },
-    {
       "prompt_pt": "Você deveria se consultar com um médico, viu?",
       "answer_key": "医者に診てもらうべきですよ。",
       "accepted_variants": [
@@ -121,18 +137,49 @@
         "医者に診てもらうべきですよ。"
       ],
       "sentence": "sent:tatoeba-190902",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele é incompetente como médico.",
+      "answer_key": "彼は医者として無能だ。",
+      "accepted_variants": [
+        "かれはいしゃとしてむのうだ",
+        "かれはいしゃとしてむのうだ。",
+        "かれわいしゃとしてむのうだ",
+        "かれわいしゃとしてむのうだ。",
+        "彼は医者として無能だ",
+        "彼は医者として無能だ。"
+      ],
+      "sentence": "sent:tatoeba-110066",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele é famoso como médico.",
+      "answer_key": "彼は医者として有名だ。",
+      "accepted_variants": [
+        "かれはいしゃとしてゆうめいだ",
+        "かれはいしゃとしてゆうめいだ。",
+        "かれわいしゃとしてゆうめいだ",
+        "かれわいしゃとしてゆうめいだ。",
+        "彼は医者として有名だ",
+        "彼は医者として有名だ。"
+      ],
+      "sentence": "sent:tatoeba-110065",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
-      "sent:tatoeba-3263386",
-      "sent:tatoeba-171774",
-      "sent:tatoeba-226765",
-      "sent:tatoeba-1590321",
-      "sent:tatoeba-179620",
-      "sent:tatoeba-1699768"
+      "sent:tatoeba-1699768",
+      "sent:tatoeba-143418",
+      "sent:tatoeba-154767",
+      "sent:tatoeba-9777117",
+      "sent:tatoeba-80068",
+      "sent:tatoeba-152614"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -140,62 +187,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:1104",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3849:765",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "子供",
-        "風邪",
-        "もう"
-      ]
-    },
-    {
-      "id": "cf:n4:5458:765",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "趣味",
-        "小説",
-        "電車"
-      ]
-    },
-    {
-      "id": "kr:n4:765",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くださる",
-        "いっしょ",
-        "しょくじ"
-      ]
-    },
-    {
-      "id": "kr:n4:875",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "およぐ",
-        "ごぜん",
-        "おっと"
-      ]
-    }
-  ]
+  }
 }

@@ -7,148 +7,190 @@
     "pt-BR": "Dormir e resolver problemas, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-84124",
-    "sent:tatoeba-218592",
-    "sent:tatoeba-84114",
-    "sent:tatoeba-84216",
-    "sent:tatoeba-84162",
-    "sent:tatoeba-84243"
+    "sent:tatoeba-145652",
+    "sent:tatoeba-11953118",
+    "sent:tatoeba-10171288",
+    "sent:tatoeba-10990458",
+    "sent:tatoeba-204702",
+    "sent:tatoeba-78967"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1269320",
-    "vocab:1202450",
-    "vocab:1487400",
-    "vocab:1580820",
-    "vocab:1210360",
-    "vocab:1576900",
-    "vocab:1591150",
-    "vocab:1260490",
-    "vocab:1585650",
-    "vocab:1350110",
-    "vocab:1586210"
+    "vocab:1313000",
+    "vocab:1269410",
+    "vocab:1242130",
+    "vocab:1500100",
+    "vocab:1511040",
+    "vocab:1203090",
+    "vocab:1523940",
+    "vocab:1381100"
   ],
   "patterns": [
-    "gram:da-desu",
-    "gram:gp-15",
-    "gram:gp-2",
-    "gram:kara"
+    "gram:gp-82",
+    "gram:gp-149",
+    "gram:gp-61",
+    "gram:gp-62"
   ],
   "kanji_recognition": [
-    "屋",
+    "歯",
+    "寝",
+    "前",
+    "階",
     "後",
-    "出",
-    "部",
-    "閉",
-    "鍵"
+    "段"
   ],
   "shadowing": [
-    "sent:tatoeba-84124",
-    "sent:tatoeba-218592",
-    "sent:tatoeba-84114",
-    "sent:tatoeba-84216",
-    "sent:tatoeba-84162",
-    "sent:tatoeba-84243"
+    "sent:tatoeba-145652",
+    "sent:tatoeba-11953118",
+    "sent:tatoeba-10171288",
+    "sent:tatoeba-10990458",
+    "sent:tatoeba-204702",
+    "sent:tatoeba-78967"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 250,
+  "cumulative_known_vocab": 256,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n4:1580:804",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "貴方",
+        "此れ",
+        "以前"
+      ]
+    },
+    {
+      "id": "kr:n4:804",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ほとんど",
+        "がくせい",
+        "シャワー"
+      ]
+    },
+    {
+      "id": "kr:n5:142",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おぼえる",
+        "みつかる",
+        "でんしゃ"
+      ]
+    },
+    {
+      "id": "cf:n3:3552:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "船",
+        "力",
+        "私"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:nasai",
-    "gram:te-ita"
+    "gram:nakute-wa-ikenai",
+    "gram:te-wa-ikenai"
   ],
   "drills": [
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:gp-82",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-1323453",
+        "sent:tatoeba-192500",
+        "sent:gen-20c037b79cad"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-15",
+      "pattern": "gram:gp-149",
       "examples": [
-        "sent:gen-6fe6c769a3a7",
-        "sent:tatoeba-84712",
-        "sent:tatoeba-84720"
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-2",
+      "pattern": "gram:gp-61",
       "examples": [
-        "sent:tatoeba-171785",
-        "sent:tatoeba-171784",
-        "sent:tatoeba-171787"
+        "sent:tatoeba-164952",
+        "sent:tatoeba-182128",
+        "sent:tatoeba-148953"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:kara",
+      "pattern": "gram:gp-62",
       "examples": [
-        "sent:tatoeba-76156",
-        "sent:tatoeba-4772",
-        "sent:gen-671b7aebf53d"
+        "sent:tatoeba-174749",
+        "sent:tatoeba-174748",
+        "sent:tatoeba-182548"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Deixe as janelas do quarto fechadas.",
-      "answer_key": "部屋の窓は閉めておくように。",
+      "prompt_pt": "A reserva está confirmada.",
+      "answer_key": "予約は確認されています。",
       "accepted_variants": [
-        "へやのまどはしめておくように",
-        "へやのまどはしめておくように。",
-        "へやのまどわしめておくように",
-        "へやのまどわしめておくように。",
-        "部屋の窓は閉めておくように",
-        "部屋の窓は閉めておくように。"
+        "よやくはかくにんされています",
+        "よやくはかくにんされています。",
+        "よやくわかくにんされています",
+        "よやくわかくにんされています。",
+        "予約は確認されています",
+        "予約は確認されています。"
       ],
-      "sentence": "sent:tatoeba-84181",
+      "sentence": "sent:tatoeba-78975",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "O quarto está cheio de flores.",
-      "answer_key": "部屋は花でいっぱいです。",
+      "prompt_pt": "Como não consegui achar um hotel para ficar, dormi ao relento.",
+      "answer_key": "泊まるホテルが見つからなかったから野宿した。",
       "accepted_variants": [
-        "へやははなでいっぱいです",
-        "へやははなでいっぱいです。",
-        "へやわはなでいっぱいです",
-        "へやわはなでいっぱいです。",
-        "部屋は花でいっぱいです",
-        "部屋は花でいっぱいです。"
+        "とまるほてるがみつからなかったからのじゅくした",
+        "とまるほてるがみつからなかったからのじゅくした。",
+        "泊まるホテルが見つからなかったから野宿した",
+        "泊まるホテルが見つからなかったから野宿した。"
       ],
-      "sentence": "sent:tatoeba-84147",
+      "sentence": "sent:tatoeba-12324657",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por favor, ache um hotel com preço acessível.",
-      "answer_key": "料金の手ごろなホテルを見つけて下さい。",
+      "prompt_pt": "Minha mãe trouxe ele para o meu quarto.",
+      "answer_key": "母は彼を私の部屋につれてきた。",
       "accepted_variants": [
-        "りょうきんのてごろなほてるをみつけてください",
-        "りょうきんのてごろなほてるをみつけてください。",
-        "料金の手ごろなホテルを見つけて下さい",
-        "料金の手ごろなホテルを見つけて下さい。"
+        "はははかれをわたしのへやにつれてきた",
+        "はははかれをわたしのへやにつれてきた。",
+        "ははわかれをわたしのへやにつれてきた",
+        "ははわかれをわたしのへやにつれてきた。",
+        "母は彼を私の部屋につれてきた",
+        "母は彼を私の部屋につれてきた。"
       ],
-      "sentence": "sent:tatoeba-77964",
+      "sentence": "sent:tatoeba-82875",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você chegou no hotel. Faça o check-in e resolva um problema no quarto.",
     "items": [
-      "sent:tatoeba-84203",
+      "sent:tatoeba-10587984",
+      "sent:tatoeba-121103",
+      "sent:tatoeba-84383",
+      "sent:tatoeba-10723441",
       "sent:tatoeba-4562257",
-      "sent:tatoeba-126245",
-      "sent:tatoeba-84229",
-      "sent:tatoeba-84158",
-      "sent:tatoeba-84222"
+      "sent:tatoeba-126245"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -156,67 +198,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:3991:1369",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "真っ暗",
-        "ホテル",
-        "為さる"
-      ]
-    },
-    {
-      "id": "cf:n3:4077:1369",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "遅れる",
-        "開ける",
-        "積もり"
-      ]
-    },
-    {
-      "id": "pp:n3:1369",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "飲む",
-        "息子",
-        "作る"
-      ]
-    },
-    {
-      "id": "kr:n3:1369",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あがる",
-        "あなた",
-        "あるく"
-      ]
-    },
-    {
-      "id": "kr:n3:1611",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たつ",
-        "べつ",
-        "くつ"
-      ]
-    }
-  ]
+  }
 }

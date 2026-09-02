@@ -66,7 +66,7 @@ Esses padrões são a trilha sonora do atendimento japonês. Ao entrar numa loja
 > 🗣 ゆっくりお休みください — Descanse bastante.
 
 #### Leitura
-> 📖 社長はこの本をお読みになりますかこちらにお名前をお書きくださいこちらで少々お待ちください何時にお出かけになりますか — O senhor (presidente) vai ler este livro? Por favor, escreva seu nome aqui. Aguarde um momento aqui, por favor. A que horas o senhor vai sair?
+> 📖 社長はこの本をお読みになりますか。こちらにお名前をお書きください。こちらで少々お待ちください。何時にお出かけになりますか — O senhor (presidente) vai ler este livro? Por favor, escreva seu nome aqui. Aguarde um momento aqui, por favor. A que horas o senhor vai sair?
 - Monto お + raiz ます + になる para falar com respeito das ações do outro.
 - Peço com elegância usando お + raiz ます + ください, mais polido que 〜てください.
 - Sei que verbos com honorífico próprio (行く→いらっしゃる, 見る→ご覧になる) não entram na fórmula.

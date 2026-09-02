@@ -208,6 +208,18 @@
           "answer_key": {
             "type": "string"
           },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "on-topic",
+              "review",
+              "same-stage"
+            ],
+            "x-vocabulary": {
+              "owner": "measured",
+              "source": "contracts/_shapes.json — no design document or producer owns this field, and the observed set is small, closed and free of prose, ids and paths."
+            }
+          },
           "prompt_pt": {
             "type": "string"
           },

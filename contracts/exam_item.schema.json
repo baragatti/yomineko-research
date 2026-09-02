@@ -5,7 +5,7 @@
   "description": "One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. The id prefix names the section, and each section has its own required shape.",
   "x-yomineko": {
     "entity": "exam_item",
-    "records": 6073,
+    "records": 6048,
     "packing": "list",
     "glob": "corpus/exam_banks/n[0-9]_*.json",
     "stable_id_field": "id",
@@ -137,7 +137,7 @@
     },
     {
       "title": "word-level multiple choice",
-      "description": "kanji_reading / orthography: a word in isolation, four options. Applies to ids prefixed kr, or (2400 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "description": "kanji_reading / orthography: a word in isolation, four options. Applies to ids prefixed kr, or (2379 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
       "if": {
         "required": [
           "id"
@@ -194,7 +194,7 @@
     },
     {
       "title": "ordering",
-      "description": "sentence_order: the learner rebuilds the sentence from shuffled pieces. Applies to ids prefixed so (873 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "description": "sentence_order: the learner rebuilds the sentence from shuffled pieces. Applies to ids prefixed so (871 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
       "if": {
         "required": [
           "id"
@@ -221,7 +221,7 @@
     },
     {
       "title": "passage multiple choice",
-      "description": "text_grammar / reading_comp: the item hangs off a reading passage, and the prompt is carried by `stem` or by `question` depending on the section. Applies to ids prefixed tg, rc (475 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "description": "text_grammar / reading_comp: the item hangs off a reading passage, and the prompt is carried by `stem` or by `question` depending on the section. Applies to ids prefixed tg, rc (473 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
       "if": {
         "required": [
           "id"

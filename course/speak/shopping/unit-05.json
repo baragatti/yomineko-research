@@ -7,123 +7,167 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-74146",
-    "sent:tatoeba-149750",
-    "sent:tatoeba-76061",
-    "sent:tatoeba-149971",
-    "sent:jec-1593",
-    "sent:tatoeba-9240812"
+    "sent:tatoeba-199394",
+    "sent:tatoeba-8687007",
+    "sent:tatoeba-3488181",
+    "sent:tatoeba-8748248",
+    "sent:tatoeba-4562312",
+    "sent:tatoeba-199061"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:2020680",
-    "vocab:1318610",
-    "vocab:1191730",
-    "vocab:1473740",
-    "vocab:1468060",
-    "vocab:1554820",
-    "vocab:1251100",
-    "vocab:1282490",
-    "vocab:1012980"
+    "vocab:1580640",
+    "vocab:2820690",
+    "vocab:1358280",
+    "vocab:1009330",
+    "vocab:1153670",
+    "vocab:1375620"
   ],
   "patterns": [
-    "gram:dake",
-    "gram:demo"
+    "gram:koto-ga-dekiru"
   ],
   "kanji_recognition": [
-    "経",
-    "高",
-    "時",
-    "年",
-    "自",
-    "分"
+    "人",
+    "食",
+    "安"
   ],
   "shadowing": [
-    "sent:tatoeba-74146",
-    "sent:tatoeba-149750",
-    "sent:tatoeba-76061",
-    "sent:tatoeba-149971",
-    "sent:jec-1593",
-    "sent:tatoeba-9240812"
+    "sent:tatoeba-199394",
+    "sent:tatoeba-8687007",
+    "sent:tatoeba-3488181",
+    "sent:tatoeba-8748248",
+    "sent:tatoeba-4562312",
+    "sent:tatoeba-199061"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 70,
+  "cumulative_known_vocab": 83,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:56",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3603",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2422:317",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "係",
+        "何",
+        "私"
+      ]
+    },
+    {
+      "id": "cf:n5:4186:383",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "食料品",
+        "出来る",
+        "何時も"
+      ]
+    },
+    {
+      "id": "kr:n5:383",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あがる",
+        "いくら",
+        "わたし"
+      ]
+    },
+    {
+      "id": "kr:n4:1194",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "けっして",
+        "いちばん",
+        "しつもん"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:nakereba-naranai",
-    "gram:dake-de",
-    "gram:gp-150",
-    "gram:nara"
+    "gram:gp-51",
+    "gram:naku-temo-ii",
+    "gram:hou-ga-ii",
+    "gram:gp-71",
+    "gram:gp-134"
   ],
   "drills": [
     {
-      "pattern": "gram:dake",
+      "pattern": "gram:koto-ga-dekiru",
       "examples": [
-        "sent:tatoeba-4767",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-78717"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:demo",
-      "examples": [
-        "sent:tatoeba-4781",
-        "sent:tatoeba-85538",
-        "sent:tatoeba-74951"
+        "sent:tatoeba-155347",
+        "sent:tatoeba-8795030",
+        "sent:tatoeba-13179916"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "É melhor você fazer isso agora mesmo, viu.",
-      "answer_key": "今すぐそれをしたほうがいいよ。",
+      "prompt_pt": "Então isso quer dizer que você não vem?",
+      "answer_key": "それでは、あなたは来ないということですか。",
       "accepted_variants": [
-        "いますぐそれをしたほうがいいよ",
-        "いますぐそれをしたほうがいいよ。",
-        "今すぐそれをしたほうがいいよ",
-        "今すぐそれをしたほうがいいよ。"
+        "それでは、あなたはこないということですか",
+        "それでは、あなたはこないということですか。",
+        "それでは、あなたは来ないということですか",
+        "それでは、あなたは来ないということですか。",
+        "それでわ、あなたわこないということですか",
+        "それでわ、あなたわこないということですか。"
       ],
-      "sentence": "sent:tatoeba-172832",
+      "sentence": "sent:tatoeba-205771",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "De preferência, o mais barato possível.",
-      "answer_key": "なるべく安いほうがいいです。",
+      "prompt_pt": "Por mais que eu agradeça, nunca será o bastante.",
+      "answer_key": "いくらお礼を言っても言い切れない。",
       "accepted_variants": [
-        "なるべくやすいほうがいいです",
-        "なるべくやすいほうがいいです。",
-        "なるべく安いほうがいいです",
-        "なるべく安いほうがいいです。"
+        "いくらおれいをいってもいいきれない",
+        "いくらおれいをいってもいいきれない。",
+        "いくらお礼を言っても言い切れない",
+        "いくらお礼を言っても言い切れない。"
       ],
-      "sentence": "sent:tatoeba-199061",
+      "sentence": "sent:tatoeba-229178",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "É melhor não fazer isso!",
-      "answer_key": "それをしないほうがいいよ！",
+      "prompt_pt": "Ué, o que mesmo que eu ia dizer?",
+      "answer_key": "あれ、私何言おうとしたんだっけ？",
       "accepted_variants": [
-        "それをしないほうがいいよ",
-        "それをしないほうがいいよ!",
-        "それをしないほうがいいよ！"
+        "あれ、わたしなにいおうとしたんだっけ",
+        "あれ、わたしなにいおうとしたんだっけ?",
+        "あれ、私何言おうとしたんだっけ",
+        "あれ、私何言おうとしたんだっけ?",
+        "あれ、私何言おうとしたんだっけ？"
       ],
-      "sentence": "sent:tatoeba-4562312",
+      "sentence": "sent:tatoeba-2941029",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-8748248",
-      "sent:tatoeba-3488181",
-      "sent:tatoeba-8687007",
-      "sent:tatoeba-2123447",
-      "sent:tatoeba-10307857",
-      "sent:tatoeba-160737"
+      "sent:tatoeba-79848",
+      "sent:tatoeba-8938683",
+      "sent:tatoeba-10094172",
+      "sent:jec-0436",
+      "sent:tatoeba-229742",
+      "sent:jec-2434"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -131,67 +175,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 45,
+    "fluency": 16
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 17,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3369",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3495",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3369:846",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "他",
-        "間",
-        "時"
-      ]
-    },
-    {
-      "id": "cf:n4:3522:846",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "他",
-        "年",
-        "靴"
-      ]
-    },
-    {
-      "id": "kr:n4:740",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "スリッパ",
-        "けっこう",
-        "くださる"
-      ]
-    },
-    {
-      "id": "kr:n4:846",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おれい",
-        "こんな",
-        "あいだ"
-      ]
-    }
-  ]
+  }
 }

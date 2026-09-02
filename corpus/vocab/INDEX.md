@@ -1,6 +1,6 @@
 # Corpus — Vocabulary (leveled)
 
-_Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
+_Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
 
 | headword | kana | level | meaning |
 |----------|------|-------|---------|
@@ -49,7 +49,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | シャツ | シャツ | n5 | camisa, camiseta |
 | シャワー | シャワー | n5 | chuveiro, banho de chuveiro |
 | スカート | スカート | n5 | saia |
-| ストーブ | ストーブ | n5 | aquecedor, estufa |
+| ストーブ | ストーブ | n5 | aquecedor, aquecedor a gás ou querosene |
 | スプーン | スプーン | n5 | colher |
 | スポーツ | スポーツ | n5 | esporte, esportes |
 | スリッパ | スリッパ | n5 | chinelo, pantufa |
@@ -58,8 +58,8 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | テスト | テスト | n5 | prova, teste |
 | テレビ | テレビ | n5 | televisão, TV |
 | テーブル | テーブル | n5 | mesa |
-| テープ | テープ | n5 | fita, durex |
-| デパート | デパート | n5 | loja de departamentos, magazine |
+| テープ | テープ | n5 | fita, fita adesiva |
+| デパート | デパート | n5 | loja de departamentos, grande loja |
 | トイレ | トイレ | n5 | banheiro, privada |
 | ドア | ドア | n5 | porta |
 | ナイフ | ナイフ | n5 | faca |
@@ -113,7 +113,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 下 | した | n5 | embaixo, sob |
 | 下さい | ください | n5 | por favor, faça o favor de |
 | 下手 | へた | n5 | ruim (em algo), sem jeito |
-| 不味い | まずい | n5 | sem graça (comida), ruim de sabor |
+| 不味い | まずい | n5 | ruim (de gosto), horrível (de sabor) |
 | 両親 | りょうしん | n5 | pais |
 | 並ぶ | ならぶ | n5 | enfileirar-se, ficar em fila |
 | 並べる | ならべる | n5 | enfileirar, arrumar (em fila) |
@@ -140,7 +140,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 今週 | こんしゅう | n5 | esta semana |
 | 仕事 | しごと | n5 | trabalho, emprego |
 | 他 | ほか | n5 | outro, os outros |
-| 休み | やすみ | n5 | descanso, folga |
+| 休み | やすみ | n5 | descanso, pausa |
 | 休む | やすむ | n5 | descansar, fazer uma pausa |
 | 会う | あう | n5 | encontrar, encontrar-se com |
 | 会社 | かいしゃ | n5 | empresa, companhia |
@@ -151,8 +151,8 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 体 | からだ | n5 | corpo |
 | 何 | なに | n5 | o que, que |
 | 何 | なん | n5 | o quê, que |
-| 何の | どの | n5 | qual (entre vários) |
-| 何れ | どれ | n5 | qual (entre vários) |
+| 何の | どの | n5 | qual (+ substantivo), que (livro, pessoa etc.) |
+| 何れ | どれ | n5 | qual deles, qual (entre vários) |
 | 何処 | どこ | n5 | onde, que lugar |
 | 何故 | なぜ | n5 | por que, por qual motivo |
 | 何方 | どちら | n5 | qual (dos dois) |
@@ -299,7 +299,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 始まる | はじまる | n5 | começar, iniciar-se |
 | 始め | はじめ | n5 | início, começo |
 | 嫌 | いや | n5 | desagradável, chato |
-| 嫌い | きらい | n5 | detestado, que se detesta |
+| 嫌い | きらい | n5 | não gostar de, detestável |
 | 子供 | こども | n5 | criança |
 | 字引 | じびき | n5 | dicionário |
 | 学校 | がっこう | n5 | escola |
@@ -343,7 +343,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 張る | はる | n5 | armar (tenda), esticar |
 | 強い | つよい | n5 | forte, poderoso |
 | 弾く | ひく | n5 | tocar (instrumento de cordas/teclas) |
-| 彼 | あれ | n5 | aquela pessoa, aquele (pessoa distante de ambos) |
+| 彼 | あれ | n5 | aquilo, aquele (ali) |
 | 彼の | あの | n5 | aquele, aquela |
 | 彼処 | あそこ | n5 | ali, lá |
 | 彼方 | あちら | n5 | ali, lá |
@@ -432,7 +432,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 横 | よこ | n5 | lado, ao lado |
 | 橋 | はし | n5 | ponte |
 | 次 | つぎ | n5 | próximo, seguinte |
-| 欲しい | ほしい | n5 | desejado, que se quer (ter) |
+| 欲しい | ほしい | n5 | querer (ter), desejar |
 | 歌 | うた | n5 | canção, música |
 | 歌う | うたう | n5 | cantar |
 | 止まる | とまる | n5 | parar |
@@ -462,11 +462,11 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 洋杯 | コップ | n5 | copo |
 | 洋袴 | ズボン | n5 | calça, calças |
 | 洗う | あらう | n5 | lavar |
-| 洗濯 | せんたく | n5 | lavar roupa, lavagem de roupa |
+| 洗濯 | せんたく | n5 | lavagem de roupa, ato de lavar roupa |
 | 浴びる | あびる | n5 | tomar (banho/ducha), banhar-se |
 | 海 | うみ | n5 | mar, oceano |
 | 消える | きえる | n5 | apagar-se (luz, fogo), desligar-se |
-| 消す | けす | n5 | apagar, desligar |
+| 消す | けす | n5 | desligar, apagar (luz, fogo) |
 | 涼しい | すずしい | n5 | fresco, agradável (clima) |
 | 渡す | わたす | n5 | entregar, passar (algo a alguém) |
 | 渡る | わたる | n5 | atravessar, cruzar |
@@ -562,7 +562,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 肉 | にく | n5 | carne |
 | 肺 | はい | n5 | pulmão, pulmões |
 | 背 | せい | n5 | altura (de uma pessoa), estatura |
-| 背 | せ | n5 | altura (de uma pessoa), estatura |
+| 背 | せ | n5 | costas, dorso |
 | 背広 | せびろ | n5 | terno |
 | 脱ぐ | ぬぐ | n5 | tirar (roupa/sapato), despir |
 | 自分 | じぶん | n5 | si mesmo, eu mesmo |
@@ -720,7 +720,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | お釣り | おつり | n4 | troco |
 | けれど | けれど | n4 | mas, porém |
 | この間 | このあいだ | n4 | outro dia, esses dias |
-| この頃 | このごろ | n4 | ultimamente, hoje em dia, atualmente |
+| この頃 | このごろ | n4 | ultimamente, hoje em dia |
 | ご主人 | ごしゅじん | n4 | marido (de outra pessoa), esposo |
 | ご存知 | ごぞんじ | n4 | conhecimento (forma respeitosa), estar a par de |
 | ご覧になる | ごらんになる | n4 | ver (respeitoso), olhar (respeitoso) |
@@ -783,7 +783,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 上がる | あがる | n4 | subir, aumentar |
 | 上手い | うまい | n4 | habilidoso, bom (em algo) |
 | 下がる | さがる | n4 | descer, baixar |
-| 下げる | さげる | n4 | abaixar, baixar, reduzir |
+| 下げる | さげる | n4 | abaixar, baixar |
 | 下さる | くださる | n4 | dar (a mim, forma honorífica), fazer por mim (forma honorífica) |
 | 下宿 | げしゅく | n4 | pensão, quarto alugado |
 | 下着 | したぎ | n4 | roupa íntima, roupa de baixo |
@@ -842,7 +842,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 僕 | ぼく | n4 | eu (informal, masculino) |
 | 億 | おく | n4 | cem milhões, 100.000.000 |
 | 儘 | まま | n4 | do jeito que está, como está |
-| 優しい | やさしい | n4 | gentil, bondoso, amável |
+| 優しい | やさしい | n4 | gentil, bondoso |
 | 先 | さっき | n4 | agora há pouco, há pouco |
 | 先ず | まず | n4 | primeiro, antes de mais nada |
 | 先輩 | せんぱい | n4 | veterano (na escola ou trabalho), sênior |
@@ -924,7 +924,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 変 | へん | n4 | estranho, esquisito |
 | 変える | かえる | n4 | mudar, alterar |
 | 変わる | かわる | n4 | mudar, transformar-se |
-| 夢 | ゆめ | n4 | sonho, aspiração |
+| 夢 | ゆめ | n4 | sonho (durante o sono) |
 | 大事 | だいじ | n4 | importante, valioso |
 | 大体 | だいたい | n4 | mais ou menos, aproximadamente |
 | 大分 | だいぶ | n4 | bastante, consideravelmente |
@@ -934,8 +934,8 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 太る | ふとる | n4 | engordar, ganhar peso |
 | 夫 | おっと | n4 | marido, esposo |
 | 失敗 | しっぱい | n4 | fracasso, erro |
-| 失礼 | しつれい | n4 | grosseria, falta de educação |
-| 女性 | じょせい | n4 | mulher, indivíduo do sexo feminino |
+| 失礼 | しつれい | n4 | grosseiro, mal-educado |
+| 女性 | じょせい | n4 | mulher, pessoa do sexo feminino |
 | 妻 | つま | n4 | esposa, mulher |
 | 始める | はじめる | n4 | começar, iniciar |
 | 娘 | むすめ | n4 | filha |
@@ -985,7 +985,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 引き出す | ひきだす | n4 | extrair, fazer aflorar |
 | 引っ越す | ひっこす | n4 | mudar-se, mudar de casa |
 | 形 | かたち | n4 | forma, formato |
-| 役に立つ | やくにたつ | n4 | ser útil, servir, ajudar |
+| 役に立つ | やくにたつ | n4 | ser útil, servir |
 | 彼 | かれ | n4 | ele |
 | 彼ら | かれら | n4 | eles |
 | 彼女 | かのじょ | n4 | ela |
@@ -1037,7 +1037,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 探す | さがす | n4 | procurar, buscar |
 | 揺れる | ゆれる | n4 | balançar, tremer |
 | 支度 | したく | n4 | preparativos, preparação |
-| 放送 | ほうそう | n4 | transmissão, transmitir |
+| 放送 | ほうそう | n4 | transmissão, difusão |
 | 政治 | せいじ | n4 | política, governo |
 | 故障 | こしょう | n4 | defeito, pane |
 | 教会 | きょうかい | n4 | igreja |
@@ -1113,12 +1113,12 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 法律 | ほうりつ | n4 | lei, legislação |
 | 泣く | なく | n4 | chorar |
 | 泥棒 | どろぼう | n4 | ladrão, assaltante |
-| 注射 | ちゅうしゃ | n4 | injeção, picada (vacina) |
+| 注射 | ちゅうしゃ | n4 | injeção, aplicação (de vacina) |
 | 注意 | ちゅうい | n4 | cuidado, atenção |
 | 浅い | あさい | n4 | raso |
 | 海岸 | かいがん | n4 | litoral, costa |
 | 消しゴム | けしゴム | n4 | borracha (de apagar) |
-| 深い | ふかい | n4 | fundo, profundo |
+| 深い | ふかい | n4 | fundo, profundo (água, buraco) |
 | 済む | すむ | n4 | terminar, concluir-se |
 | 港 | みなと | n4 | porto, ancoradouro |
 | 湖 | みずうみ | n4 | lago |
@@ -1163,7 +1163,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 田舎 | いなか | n4 | campo, zona rural |
 | 申し上げる | もうしあげる | n4 | dizer (humilde), falar (humilde) |
 | 申す | もうす | n4 | dizer (humilde), falar |
-| 男性 | だんせい | n4 | homem, indivíduo do sexo masculino |
+| 男性 | だんせい | n4 | homem, pessoa do sexo masculino |
 | 留守 | るす | n4 | ausência, estar fora (de casa) |
 | 番組 | ばんぐみ | n4 | programa (de TV/rádio) |
 | 畳 | たたみ | n4 | tatame, esteira de tatame |
@@ -1236,7 +1236,7 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 自由 | じゆう | n4 | liberdade |
 | 致す | いたす | n4 | fazer (humilde) |
 | 興味 | きょうみ | n4 | interesse, curiosidade |
-| 船 | ふね | n4 | navio, barco, embarcação |
+| 船 | ふね | n4 | navio, barco |
 | 花見 | はなみ | n4 | contemplação das flores (esp. de cerejeira) |
 | 苛める | いじめる | n4 | maltratar, atormentar |
 | 若し | もし | n4 | se, caso |
@@ -1281,12 +1281,12 @@ _Generated 2026-08-27. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 貿易 | ぼうえき | n4 | comércio (exterior), intercâmbio comercial |
 | 贈り物 | おくりもの | n4 | presente, brinde |
 | 赤ちゃん | あかちゃん | n4 | bebê, neném |
-| 赤ん坊 | あかんぼう | n4 | bebê, nenê |
+| 赤ん坊 | あかんぼう | n4 | bebê, neném |
 | 起こす | おこす | n4 | acordar (alguém), despertar |
 | 趣味 | しゅみ | n4 | hobby, passatempo |
 | 足す | たす | n4 | somar, adicionar |
 | 足りる | たりる | n4 | bastar, ser suficiente |
-| 踊り | おどり | n4 | dança, dança (tradicional) |
+| 踊り | おどり | n4 | dança, o ato de dançar |
 | 踊る | おどる | n4 | dançar |
 | 踏む | ふむ | n4 | pisar (em), pisar |
 | 軒 | のき | n4 | beiral, aba do telhado |

@@ -55,7 +55,7 @@ Cuidado para não confundir 食堂 (食堂, refeitório) com a ideia de "restaur
 #### Hora de praticar
 
 #### Leitura
-> 📖 おはよう。おはよう！ — Bom dia. Bom dia!
+> 📖 おはよう。おやすみ。 — Bom dia. Boa noite (ao se despedir para dormir).
 - Sei que ご飯 (ごはん) é "arroz cozido" e também "refeição".
 - Reconheço 魚 (さかな) como "peixe".
 - Sei dizer 塩 (sal), 砂糖 (açúcar) e 醤油 (shoyu).

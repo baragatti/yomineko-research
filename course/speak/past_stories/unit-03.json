@@ -7,9 +7,9 @@
     "pt-BR": "Contar o que aconteceu, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-5118",
     "sent:tatoeba-1897537",
     "sent:tatoeba-225041",
-    "sent:tatoeba-78126",
     "sent:jec-0071",
     "sent:jec-0319",
     "sent:tatoeba-214558"
@@ -17,45 +17,111 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1260720",
     "vocab:1576250",
     "vocab:1355810",
-    "vocab:1106010",
     "vocab:1251270",
     "vocab:1397300",
     "vocab:2772770"
   ],
   "patterns": [
+    "gram:ta-koto-ga-aru",
     "gram:koto-ga-aru",
     "gram:rashii",
     "gram:gp-12",
-    "gram:gp-32",
     "gram:koto"
   ],
   "kanji_recognition": [
-    "一",
-    "会",
-    "度",
-    "経",
-    "験",
-    "言"
+    "気",
+    "元",
+    "行",
+    "旅",
+    "良",
+    "一"
   ],
   "shadowing": [
+    "sent:tatoeba-5118",
     "sent:tatoeba-1897537",
     "sent:tatoeba-225041",
-    "sent:tatoeba-78126",
     "sent:jec-0071",
     "sent:jec-0319",
     "sent:tatoeba-214558"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 433,
+  "cumulative_known_vocab": 425,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:259",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4843:896",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "貴方",
+        "寝る",
+        "着く"
+      ]
+    },
+    {
+      "id": "cf:n4:3356:852",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "弾く",
+        "会社",
+        "余り"
+      ]
+    },
+    {
+      "id": "kr:n4:1267",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かくにん",
+        "おくれる",
+        "さいきん"
+      ]
+    },
+    {
+      "id": "kr:n4:891",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おかあさん",
+        "びょういん",
+        "りょうしん"
+      ]
+    },
+    {
+      "id": "pp:n5:42",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "素晴らしい",
+        "パーティー",
+        "レストラン"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:ta-koto-ga-aru"
+    "gram:gp-19"
   ],
   "drills": [
+    {
+      "pattern": "gram:ta-koto-ga-aru",
+      "examples": [
+        "sent:gen-52a2e8482686",
+        "sent:tatoeba-9387697",
+        "sent:tatoeba-11956323"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:koto-ga-aru",
       "examples": [
@@ -84,15 +150,6 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-78700",
-        "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:koto",
       "examples": [
         "sent:gen-9059903a891d",
@@ -104,31 +161,18 @@
   ],
   "production": [
     {
-      "prompt_pt": "Tudo bem? A viagem foi boa?",
-      "answer_key": "元気？旅行は良かった？",
+      "prompt_pt": "O passaporte é importante durante a viagem.",
+      "answer_key": "パスポートは旅行中大切である。",
       "accepted_variants": [
-        "げんき?りょこうはよかった",
-        "げんき?りょこうはよかった?",
-        "げんき?りょこうわよかった",
-        "げんき?りょこうわよかった?",
-        "元気?旅行は良かった",
-        "元気?旅行は良かった?",
-        "元気？旅行は良かった",
-        "元気？旅行は良かった？"
+        "ぱすぽーとはりょこうちゅうたいせつである",
+        "ぱすぽーとはりょこうちゅうたいせつである。",
+        "ぱすぽーとわりょこうちゅうたいせつである",
+        "ぱすぽーとわりょこうちゅうたいせつである。",
+        "パスポートは旅行中大切である",
+        "パスポートは旅行中大切である。"
       ],
-      "sentence": "sent:tatoeba-5118",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Posso pagar com cheque de viagem?",
-      "answer_key": "旅行小切手で払ってもいいですか。",
-      "accepted_variants": [
-        "りょこうこぎってではらってもいいですか",
-        "りょこうこぎってではらってもいいですか。",
-        "旅行小切手で払ってもいいですか",
-        "旅行小切手で払ってもいいですか。"
-      ],
-      "sentence": "sent:tatoeba-78134",
+      "sentence": "sent:tatoeba-198088",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -143,6 +187,20 @@
         "私は昨日生まれたわけではない。"
       ],
       "sentence": "sent:tatoeba-156748",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você tem dinheiro suficiente para a viagem?",
+      "answer_key": "旅行に十分なお金がありますか。",
+      "accepted_variants": [
+        "りょこうにじゅうぶんなおかねがありますか",
+        "りょこうにじゅうぶんなおかねがありますか。",
+        "旅行に十分なお金がありますか",
+        "旅行に十分なお金がありますか。"
+      ],
+      "sentence": "sent:tatoeba-78171",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -153,8 +211,8 @@
       "sent:tatoeba-78158",
       "sent:tatoeba-13537670",
       "sent:tatoeba-143986",
-      "sent:tatoeba-142423",
-      "sent:tatoeba-121897"
+      "sent:tatoeba-121897",
+      "sent:tatoeba-10901645"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -172,62 +230,5 @@
     "meaning-output": 3,
     "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:259",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:4843:896",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "説明",
-        "貴方",
-        "寝る"
-      ]
-    },
-    {
-      "id": "cf:n4:3356:852",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "弾く",
-        "会社",
-        "必ず"
-      ]
-    },
-    {
-      "id": "kr:n4:1267",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こうえん",
-        "おくれる",
-        "さいきん"
-      ]
-    },
-    {
-      "id": "kr:n4:891",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おかあさん",
-        "びょういん",
-        "りょうしん"
-      ]
-    },
-    {
-      "id": "pp:n5:42",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "素晴らしい",
-        "パーティー",
-        "レストラン"
-      ]
-    }
-  ]
+  }
 }

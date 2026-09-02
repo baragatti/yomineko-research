@@ -51,9 +51,61 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 419,
+  "cumulative_known_vocab": 412,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "kr:n4:935",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まもる",
+        "からい",
+        "ピアノ"
+      ]
+    },
+    {
+      "id": "kr:n5:375",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おじ",
+        "その",
+        "くる"
+      ]
+    },
+    {
+      "id": "cf:n3:5046:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "口",
+        "日",
+        "犬"
+      ]
+    },
+    {
+      "id": "cf:n3:5058:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "傘",
+        "歯",
+        "分"
+      ]
+    },
+    {
+      "id": "pp:n3:1422",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "昼",
+        "心",
+        "薬"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -61,7 +113,7 @@
       "examples": [
         "sent:tatoeba-77812",
         "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
+        "sent:tatoeba-79091"
       ],
       "strand": "language-focused"
     },
@@ -69,8 +121,8 @@
       "pattern": "gram:totemo",
       "examples": [
         "sent:gen-25da035589e0",
-        "sent:gen-2b1fccae756f",
-        "sent:tatoeba-5074"
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947"
       ],
       "strand": "language-focused"
     },
@@ -97,7 +149,7 @@
       "examples": [
         "sent:gen-ff6004963148",
         "sent:tatoeba-78150",
-        "sent:gen-a1d5b47d31e9"
+        "sent:gen-fd723f8599f2"
       ],
       "strand": "language-focused"
     },
@@ -113,51 +165,60 @@
   ],
   "production": [
     {
-      "prompt_pt": "Tomara que você não pegue um resfriado.",
-      "answer_key": "風邪をひきませんように。",
+      "prompt_pt": "Este ano há menos alunos na turma do que no ano passado.",
+      "answer_key": "去年より今年のクラスには学生が少ない。",
       "accepted_variants": [
-        "かぜをひきませんように",
-        "かぜをひきませんように。",
-        "風邪をひきませんように",
-        "風邪をひきませんように。"
+        "きょねんよりことしのくらすにはがくせいがすくない",
+        "きょねんよりことしのくらすにはがくせいがすくない。",
+        "きょねんよりことしのくらすにわがくせいがすくない",
+        "きょねんよりことしのくらすにわがくせいがすくない。",
+        "去年より今年のクラスには学生が少ない",
+        "去年より今年のクラスには学生が少ない。"
       ],
-      "sentence": "sent:tatoeba-83950",
+      "sentence": "sent:tatoeba-1590863",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A febre subiu.",
-      "answer_key": "熱が上がった。",
+      "prompt_pt": "Meu pai faltou no trabalho ontem.",
+      "answer_key": "父は昨日仕事を休んだ。",
       "accepted_variants": [
-        "ねつがあがった",
-        "ねつがあがった。",
-        "熱が上がった",
-        "熱が上がった。"
+        "ちちはきのうしごとをやすんだ",
+        "ちちはきのうしごとをやすんだ。",
+        "ちちわきのうしごとをやすんだ",
+        "ちちわきのうしごとをやすんだ。",
+        "父は昨日仕事を休んだ",
+        "父は昨日仕事を休んだ。"
       ],
-      "sentence": "sent:tatoeba-121897",
+      "sentence": "sent:tatoeba-84568",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A tosse estava terrível, então tomei um remédio amargo.",
-      "answer_key": "せきがひどかったので、苦い薬を飲んだ。",
+      "prompt_pt": "Durante a viagem, a gente quase não conseguiu comer arroz.",
+      "answer_key": "旅行中はほとんど米は食べられなかった。",
       "accepted_variants": [
-        "せきがひどかったので、にがいくすりをのんだ",
-        "せきがひどかったので、にがいくすりをのんだ。",
-        "せきがひどかったので、苦い薬を飲んだ",
-        "せきがひどかったので、苦い薬を飲んだ。"
+        "りょこうちゅうはほとんどこめはたべられなかった",
+        "りょこうちゅうはほとんどこめはたべられなかった。",
+        "りょこうちゅうわほとんどこめわたべられなかった",
+        "りょこうちゅうわほとんどこめわたべられなかった。",
+        "旅行中はほとんど米は食べられなかった",
+        "旅行中はほとんど米は食べられなかった。"
       ],
-      "sentence": "sent:tatoeba-214052",
+      "sentence": "sent:tatoeba-78125",
+      "kind": "on-topic",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
+      "sent:tatoeba-121897",
       "sent:tatoeba-10901645",
-      "sent:tatoeba-212666",
-      "sent:jec-1326",
-      "sent:tatoeba-10587764",
-      "sent:tatoeba-145552",
-      "sent:jec-3163"
+      "sent:tatoeba-83003",
+      "sent:tatoeba-203344",
+      "sent:tatoeba-226387",
+      "sent:tatoeba-171774"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -175,57 +236,5 @@
     "meaning-output": 3,
     "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "kr:n4:935",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まもる",
-        "からい",
-        "ピアノ"
-      ]
-    },
-    {
-      "id": "kr:n5:375",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おじ",
-        "その",
-        "くる"
-      ]
-    },
-    {
-      "id": "cf:n3:3701:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "男",
-        "為",
-        "車"
-      ]
-    },
-    {
-      "id": "cf:n3:3705:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "駅",
-        "傘",
-        "間"
-      ]
-    },
-    {
-      "id": "pp:n3:1422",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "昼",
-        "点",
-        "心"
-      ]
-    }
-  ]
+  }
 }

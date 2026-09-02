@@ -7,82 +7,116 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 2"
   },
   "say_now": [
+    "sent:tatoeba-226013",
+    "sent:tatoeba-78628",
     "sent:tatoeba-146189",
-    "sent:tatoeba-2045915",
-    "sent:tatoeba-229187",
-    "sent:tatoeba-123440",
-    "sent:tatoeba-188640",
-    "sent:tatoeba-78565"
+    "sent:tatoeba-147801",
+    "sent:tatoeba-1882978",
+    "sent:tatoeba-146860"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1327720",
+    "vocab:1326980",
     "vocab:1355120",
-    "vocab:1320760",
-    "vocab:1554310",
-    "vocab:1591430",
-    "vocab:1548370",
-    "vocab:1455280",
-    "vocab:1178450",
-    "vocab:1219960",
-    "vocab:1238840",
+    "vocab:1087820",
+    "vocab:1386460",
+    "vocab:1576900",
+    "vocab:1347750",
+    "vocab:1548010",
+    "vocab:1070650",
     "vocab:1224880"
   ],
   "patterns": [
     "gram:sasete-kudasai",
-    "gram:gozaimasu",
-    "gram:ga-arimasu",
     "gram:te-kudasai",
     "gram:deshou",
-    "gram:mitai-da"
+    "gram:kitto",
+    "gram:temo",
+    "gram:tte"
   ],
   "kanji_recognition": [
-    "乗",
-    "質",
-    "問",
-    "特",
-    "別",
-    "理"
+    "紙",
+    "手",
+    "休",
+    "取",
+    "週",
+    "来"
   ],
   "shadowing": [
+    "sent:tatoeba-226013",
+    "sent:tatoeba-78628",
     "sent:tatoeba-146189",
-    "sent:tatoeba-2045915",
-    "sent:tatoeba-229187",
-    "sent:tatoeba-123440",
-    "sent:tatoeba-188640",
-    "sent:tatoeba-78565"
+    "sent:tatoeba-147801",
+    "sent:tatoeba-1882978",
+    "sent:tatoeba-146860"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 471,
+  "cumulative_known_vocab": 465,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:569",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:569",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:569:1553",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "物",
+        "父",
+        "為"
+      ]
+    },
+    {
+      "id": "cf:n4:5263:1113",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "近く",
+        "出る",
+        "仕事"
+      ]
+    },
+    {
+      "id": "kr:n4:1100",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ふね",
+        "はち",
+        "きく"
+      ]
+    },
+    {
+      "id": "kr:n4:1113",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おおきな",
+        "けいかく",
+        "かのじょ"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:sasete-kudasai",
       "examples": [
         "sent:tatoeba-3957479",
-        "sent:tatoeba-164807",
-        "sent:tatoeba-195599"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gozaimasu",
-      "examples": [
-        "sent:tatoeba-335372",
-        "sent:tatoeba-1576172",
-        "sent:tatoeba-8467948"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ga-arimasu",
-      "examples": [
-        "sent:tatoeba-150175",
-        "sent:tatoeba-150639",
-        "sent:tatoeba-122353"
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
       ],
       "strand": "language-focused"
     },
@@ -105,28 +139,34 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:mitai-da",
+      "pattern": "gram:kitto",
       "examples": [
-        "sent:tatoeba-4216208",
-        "sent:tatoeba-774692",
-        "sent:gen-1d94a829f09c"
+        "sent:tatoeba-225989",
+        "sent:tatoeba-80474",
+        "sent:tatoeba-226023"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-ff6004963148",
+        "sent:tatoeba-78150",
+        "sent:gen-fd723f8599f2"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-fee342a8016b",
+        "sent:gen-5412a2ccf468",
+        "sent:gen-000fc485400b"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Não deixe de me escrever, viu?",
-      "answer_key": "きっと手紙くださいね。",
-      "accepted_variants": [
-        "きっとてがみくださいね",
-        "きっとてがみくださいね。",
-        "きっと手紙くださいね",
-        "きっと手紙くださいね。"
-      ],
-      "sentence": "sent:tatoeba-226013",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Fale mais devagar, por favor!",
       "answer_key": "もっとゆっくり話してください！",
@@ -138,30 +178,45 @@
         "もっとゆっくり話してください！"
       ],
       "sentence": "sent:tatoeba-5109",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Você poderia escrever isso, por favor?",
-      "answer_key": "書いてくださいますか。",
+      "prompt_pt": "Por favor, ferva um pouco de água.",
+      "answer_key": "お湯を少し沸かしてください。",
       "accepted_variants": [
-        "かいてくださいますか",
-        "かいてくださいますか。",
-        "書いてくださいますか",
-        "書いてくださいますか。"
+        "おゆをすこしわかしてください",
+        "おゆをすこしわかしてください。",
+        "お湯を少し沸かしてください",
+        "お湯を少し沸かしてください。"
       ],
-      "sentence": "sent:tatoeba-147431",
+      "sentence": "sent:tatoeba-226794",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Me deixa descansar um pouco.",
+      "answer_key": "少し休ませてください。",
+      "accepted_variants": [
+        "すこしやすませてください",
+        "すこしやすませてください。",
+        "少し休ませてください",
+        "少し休ませてください。"
+      ],
+      "sentence": "sent:tatoeba-146817",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
     "items": [
-      "sent:tatoeba-8467948",
+      "sent:tatoeba-147431",
       "sent:tatoeba-4854",
-      "sent:tatoeba-792555",
-      "sent:tatoeba-228002",
       "sent:tatoeba-5217",
-      "sent:tatoeba-78160"
+      "sent:jec-0319",
+      "sent:tatoeba-5118",
+      "sent:tatoeba-171398"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -179,62 +234,5 @@
     "meaning-output": 3,
     "language-focused": 34,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3408",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3408:1276",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "近く",
-        "入院",
-        "見る"
-      ]
-    },
-    {
-      "id": "cf:n4:1274:1021",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "終わり",
-        "手ごろ",
-        "迎える"
-      ]
-    },
-    {
-      "id": "kr:n4:1016",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "らいねん",
-        "なるべく",
-        "もくてき"
-      ]
-    },
-    {
-      "id": "kr:n4:1021",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かかり",
-        "かりる",
-        "じぶん"
-      ]
-    },
-    {
-      "id": "pp:n4:717",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "為さる",
-        "真っ暗",
-        "入れる"
-      ]
-    }
-  ]
+  }
 }

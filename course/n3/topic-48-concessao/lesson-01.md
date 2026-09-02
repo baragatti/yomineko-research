@@ -75,7 +75,7 @@ A persistência apesar das dificuldades é um valor muito presente no Japão, re
 #### Hora de praticar
 
 #### Leitura
-> 📖 どんなに安く見積もっても３万円はかかる。どんなに長い日でも終わりがあるはずだ。どんなに長い日にも必ず終わりがある。いくら考えても、わかりません。付いて行ってもいいですか。 — Por mais barato que se calcule, vai custar 30 mil ienes. Por mais longo que seja o dia, ele deve ter um fim. Por mais longo que seja o dia, ele sempre tem um fim. Por mais que eu pense, não consigo entender. Posso ir junto com você?
+> 📖 どんなに安く見積もっても３万円はかかる。どんなに長い日でも終わりがあるはずだ。来るなといっても彼女は来るよ。いくら考えても、わかりません。付いて行ってもいいですか。 — Por mais barato que se calcule, vai custar 30 mil ienes. Por mais longo que seja o dia, ele deve ter um fim. Mesmo que você diga para ela não vir, ela vem. Por mais que eu pense, não consigo entender. Posso ir junto com você?
 - Sei formar 〜ても a partir da forma-て (verbo), de くても (adjetivo-い) e de でも (adjetivo-な / substantivo).
 - Uso たとえ no começo para anunciar uma suposição extrema, com o ても fazendo o trabalho real.
 - Digo 'por mais que...' com どんなに〜ても, focando no grau.

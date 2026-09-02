@@ -45,6 +45,17 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
 SPEAK = ROOT / "course" / "speak"
+# The stage seed lexicons, imported rather than restated: production ranks by how relevant an
+# already-known phrase is to the situation the learner is now in, and a second copy of the seeds here
+# would drift from the one that actually built the stages.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_speaking_path import STAGES  # noqa: E402
+STAGE_SEEDS: dict[str, tuple[str, ...]] = {s[0]: s[3] for s in STAGES}
+
+# Registers a phrase can carry that make it wrong to put in a traveller's mouth. Reported, never
+# filtered: what to do about them is an owner decision (PENDING.md A8), and a builder that silently
+# dropped them would make the size of the problem invisible.
+MARKED_REGISTERS = {"archaic", "classical", "epistolary", "literary", "vulgar", "written"}
 
 DRILLS_PER_PATTERN = 3        # R80/R81 minimum for a pattern to count as productive
 # A drill sentence may carry ONE word outside the known set, the same i+1 allowance a say_now phrase
@@ -130,10 +141,17 @@ def main() -> int:
     # Orthographic kana: the reading of every token EXCEPT particles, which keep their surface, so
     # the topic は stays は instead of collapsing to its sound わ. See variants().
     _ortho: dict = {}
-    for sid, surface, reading, pos in con.execute(
-            "SELECT sentence_id, surface, reading, pos FROM token WHERE split_mode='C' "
+    for sid, surface, reading, pos, lemma in con.execute(
+            "SELECT sentence_id, surface, reading, pos, lemma FROM token WHERE split_mode='C' "
             "ORDER BY sentence_id, position"):
         piece = surface if pos == "particle" else (reading or surface)
+        # 言う is the one common verb whose ANALYZER reading is not its spelling: SudachiPy emits
+        # ユウ for the dictionary form (verified: 物を言う -> ユウ, 言わなかった -> イワ), so the bank
+        # stores ゆう and validate.py §7.2 rightly holds it there as Layer A. But ゆう is how the word
+        # sounds, not how it is written — no IME accepts it — so for the orthographic answer form the
+        # ゆ-initial readings of this lemma become い-initial (ゆう -> いう). 14 bank tokens.
+        if lemma == "言う" and pos != "particle" and piece.startswith("ゆ"):
+            piece = "い" + piece[1:]
         _ortho[sid] = _ortho.get(sid, "") + (piece or "")
     for sid, rec in sent.items():
         rec["kana_written"] = _ortho.get(sid) or None
@@ -151,11 +169,36 @@ def main() -> int:
     gram_sents: dict[int, list[int]] = {}
     for sid, gid in con.execute("SELECT sentence_id,grammar_id FROM sentence_grammar"):
         gram_sents.setdefault(gid, []).append(sid)
+    # token lemmas per sentence — the same key build_speaking_path.py matches its seeds on.
+    slem: dict[int, set[str]] = {}
+    for sid, surf, lem in con.execute(
+            "SELECT sentence_id,surface,lemma FROM token WHERE split_mode='C'"):
+        slem.setdefault(sid, set()).add(lem or surf)
+    # Register, wherever the corpus records one. There is no sentence-level register column today, so
+    # the only signal available is the register of the grammar points a sentence is tagged with.
+    gram_register = {gid: (reg or "") for gid, reg in
+                     con.execute("SELECT id,register FROM grammar_point")}
+    sent_register: dict[int, set[str]] = {}
+    for gid, sids in gram_sents.items():
+        r = gram_register.get(gid, "")
+        for sid in sids:
+            sent_register.setdefault(sid, set()).add(r)
+
+    def stage_relevant(slug: str, stage_key: str) -> bool:
+        """Is an already-known phrase about the situation this stage puts the learner in?"""
+        s = by_slug.get(slug)
+        if not s:
+            return False
+        lems = slem.get(s["id"], ())
+        return any(k in lems or (len(k) >= 4 and k in s["jp"])
+                   for k in STAGE_SEEDS.get(stage_key, ()))
 
     course = json.loads((SPEAK / "course.json").read_text(encoding="utf-8"))
     known: set[int] = set()
     seen_phrases: list[str] = []          # every say_now slug from PRIOR units, in order
+    prev_fluency: list[str] = []          # the immediately preceding unit's fluency items
     stats, demoted = Counter(), []
+    register_seen: Counter = Counter()    # register of say_now + production material, reported below
 
     for stage in course["stages"]:
         key = stage["slug"].split(":", 1)[1]
@@ -175,8 +218,32 @@ def main() -> int:
 
             # ---- production (R44, R45) --------------------------------------------------------
             # Only prior-unit phrases: the learner has seen each modelled and tested already.
+            #
+            # COLD START AT A STAGE OPENING, and why the ORDER moves rather than the rule. A stage's
+            # first unit has no prior phrases from its own stage, so production filled from the tail of
+            # the PREVIOUS stage: health-01 asked "Quando foi a última vez que você cortou o cabelo?"
+            # of a learner who had just been told to explain what hurts (own-stage 0/3 in all eleven
+            # non-first stages).
+            #
+            # The tempting fix is to let the unit's OWN say_now in — and it is wrong for the same reason
+            # the same fix was wrong for fluency (commit 92b833c5). R44 forbids production being an
+            # item's FIRST retrieval and fixes the order model -> recognition/checkpoint -> production;
+            # inside a unit `production` is scheduled BEFORE `checkpoint`, so a same-unit item is
+            # exactly the first retrieval R44 names, and validate_speaking_path rejects it. The rule is
+            # right and stays.
+            #
+            # What was actually broken is the RANKING: recency alone, which at a stage boundary means
+            # "whatever the last stage happened to end on". Prior phrases are now ordered by how close
+            # they are to the situation the learner is in — this stage's phrases, then earlier phrases
+            # that carry one of this stage's seeds, then the rest by recency. health-01 now produces
+            # 今日はちょっと頭が痛いの instead of a haircut. Every item is still strictly prior-known.
+            pool = list(reversed(prior))               # most recent first: still fresh, not yet cold
+            same = [s for s in pool if s in stage_phrases]
+            topical = [s for s in pool if s not in stage_phrases and stage_relevant(s, key)]
+            rest = [s for s in pool if s not in stage_phrases and s not in set(topical)]
+            topical_set = set(topical)
             production = []
-            for slug in reversed(prior):               # most recent first: still fresh, not yet cold
+            for slug in same + topical + rest:
                 if len(production) >= PRODUCTION_PER_UNIT:
                     break
                 s = by_slug.get(slug)
@@ -187,6 +254,10 @@ def main() -> int:
                     "answer_key": s["jp"],
                     "accepted_variants": variants(s["jp"], s.get("kana"), s.get("kana_written")),
                     "sentence": slug,
+                    # Say which of the three the item is, so the app can label a carried-over item as
+                    # review instead of presenting it as part of the new situation.
+                    "kind": ("same-stage" if slug in stage_phrases else
+                             "on-topic" if slug in topical_set else "review"),
                     "strand": "meaning-output",
                 })
 
@@ -207,7 +278,16 @@ def main() -> int:
             same_stage = [s for s in reversed(prior) if s in stage_phrases and eligible(s)]
             other = [s for s in reversed(prior) if s not in stage_phrases and eligible(s)]
 
-            fluency_items = (same_stage + other)[:FLUENCY_PER_UNIT]
+            # R79 wants repetition, but not the SAME six sentences in the same order twice running —
+            # that is one rehearsal presented as two. Three units (arrival-06, about_you-04,
+            # time_plans-05) shipped their predecessor's list verbatim, because the ranking is pure
+            # recency and nothing had changed between them. The previous unit's items go to the back of
+            # the queue rather than out of it: they are still legal fluency material, and starving a
+            # block below six items to avoid a repeat would break R79(d) to fix a smaller problem.
+            ranked = same_stage + other
+            fresh = [s for s in ranked if s not in prev_fluency]
+            repeat = [s for s in ranked if s in prev_fluency]
+            fluency_items = (fresh + repeat)[:FLUENCY_PER_UNIT]
 
             # COLD START, and why the PROMPT moves rather than the items. At a stage's opening unit
             # `prior` holds nothing from this stage, so the block fills from earlier scenarios — and
@@ -278,12 +358,23 @@ def main() -> int:
             stats["drills"] += len(drills)
             stats["patterns_kept"] += len(kept)
             stats["patterns_chunked"] += len(chunked)
+            for slug in set(u["say_now"]) | {x["sentence"] for x in production}:
+                s = by_slug.get(slug)
+                regs = sent_register.get(s["id"], set()) if s else set()
+                marked = regs & MARKED_REGISTERS
+                register_seen["items"] += 1
+                if marked:
+                    for r in marked:
+                        register_seen[r] += 1
+                elif not regs or regs == {""}:
+                    register_seen["unrecorded"] += 1
             if not args.dry_run:
                 p.write_text(json.dumps(u, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
             known |= {vid_of[w] for w in u["words"] if w in vid_of}
             seen_phrases.extend(u["say_now"])
             stage_phrases.update(u["say_now"])
+            prev_fluency = list(fluency_items)
 
     course["totals"].update({k: v for k, v in stats.items()})
     if not args.dry_run:
@@ -294,6 +385,18 @@ def main() -> int:
     if demoted:
         print(f"  patterns demoted to chunks (fewer than {DRILLS_PER_PATTERN} known-set examples): "
               f"{len(demoted)}")
+    # Register census over say_now + production. Reported, never filtered — deciding what to do about a
+    # marked-register phrase is an owner call (PENDING.md A8), and this is the number that call needs.
+    marked = {k: v for k, v in register_seen.items()
+              if k in MARKED_REGISTERS}
+    print(f"  register census: {register_seen['items']} say_now/production items, "
+          + (", ".join(f"{k}={v}" for k, v in sorted(marked.items())) if marked
+             else "0 archaic/epistolary/vulgar")
+          + f"; {register_seen['unrecorded']} carry no register signal at all. NOTE: the corpus has no "
+            f"sentence-level `register` field — the only signal available is the register of the "
+            f"grammar points a sentence is tagged with, whose vocabulary is "
+            f"neutral/polite/casual/formal, so archaic, epistolary and vulgar are currently "
+            f"UNRECORDABLE rather than absent.")
     con.close()
     return 0
 

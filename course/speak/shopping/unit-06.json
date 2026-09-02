@@ -7,101 +7,178 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-217663",
-    "sent:tatoeba-81631",
-    "sent:tatoeba-1484928",
-    "sent:tatoeba-159849",
-    "sent:tatoeba-196365",
-    "sent:tatoeba-196349"
+    "sent:tatoeba-74146",
+    "sent:tatoeba-149750",
+    "sent:tatoeba-76061",
+    "sent:tatoeba-149971",
+    "sent:jec-1593",
+    "sent:tatoeba-9240812"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1416830",
-    "vocab:1522150",
-    "vocab:1521400",
-    "vocab:1456360",
-    "vocab:1199890",
-    "vocab:1415870",
-    "vocab:1610870",
-    "vocab:1176240"
+    "vocab:2020680",
+    "vocab:1318610",
+    "vocab:1191730",
+    "vocab:1468060",
+    "vocab:1554820",
+    "vocab:1251100",
+    "vocab:1282490",
+    "vocab:1012980"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:dake",
+    "gram:demo"
+  ],
   "kanji_recognition": [
-    "壊",
-    "買",
-    "本",
-    "読",
-    "悔",
-    "後"
+    "経",
+    "高",
+    "時",
+    "年",
+    "自",
+    "分"
   ],
   "shadowing": [
-    "sent:tatoeba-217663",
-    "sent:tatoeba-81631",
-    "sent:tatoeba-1484928",
-    "sent:tatoeba-159849",
-    "sent:tatoeba-196365",
-    "sent:tatoeba-196349"
+    "sent:tatoeba-74146",
+    "sent:tatoeba-149750",
+    "sent:tatoeba-76061",
+    "sent:tatoeba-149971",
+    "sent:jec-1593",
+    "sent:tatoeba-9240812"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 78,
+  "cumulative_known_vocab": 91,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:hou-ga-ii",
-    "gram:gp-43",
-    "gram:nowa-da",
-    "gram:gp-13",
-    "gram:gp-81",
-    "gram:yori"
+  "checkpoint": [
+    {
+      "id": "so:n4:3369",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3495",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3369:846",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "間",
+        "時",
+        "何"
+      ]
+    },
+    {
+      "id": "cf:n4:3522:846",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "年",
+        "私",
+        "家"
+      ]
+    },
+    {
+      "id": "kr:n4:740",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっして",
+        "どんどん",
+        "ワープロ"
+      ]
+    },
+    {
+      "id": "kr:n4:846",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "おれい",
+        "あした"
+      ]
+    }
   ],
-  "drills": [],
+  "patterns_chunked": [
+    "gram:nakereba-naranai",
+    "gram:dake-de",
+    "gram:gp-150",
+    "gram:nara"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:dake",
+      "examples": [
+        "sent:tatoeba-4767",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-78717"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:demo",
+      "examples": [
+        "sent:tatoeba-4781",
+        "sent:tatoeba-85538",
+        "sent:tatoeba-74951"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
-      "prompt_pt": "Soube que você comprou uma casa, né.",
-      "answer_key": "家を買ったんだってね。",
+      "prompt_pt": "De preferência, o mais barato possível.",
+      "answer_key": "なるべく安いほうがいいです。",
       "accepted_variants": [
-        "いえをかったんだってね",
-        "いえをかったんだってね。",
-        "家を買ったんだってね",
-        "家を買ったんだってね。"
+        "なるべくやすいほうがいいです",
+        "なるべくやすいほうがいいです。",
+        "なるべく安いほうがいいです",
+        "なるべく安いほうがいいです。"
       ],
-      "sentence": "sent:tatoeba-9240812",
+      "sentence": "sent:tatoeba-199061",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Ele comprou uma casa no subúrbio.",
-      "answer_key": "彼が郊外に家を買った",
+      "prompt_pt": "É melhor não fazer isso!",
+      "answer_key": "それをしないほうがいいよ！",
       "accepted_variants": [
-        "かれがこうがいにいえをかった",
-        "彼が郊外に家を買った"
+        "それをしないほうがいいよ",
+        "それをしないほうがいいよ!",
+        "それをしないほうがいいよ！"
       ],
-      "sentence": "sent:jec-1593",
+      "sentence": "sent:tatoeba-4562312",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Você tem que fazer isso sozinho.",
-      "answer_key": "自分でそれをしなければならない。",
+      "prompt_pt": "Tudo bem se eu não comer isto?",
+      "answer_key": "これ、食べなくてもいい？",
       "accepted_variants": [
-        "じぶんでそれをしなければならない",
-        "じぶんでそれをしなければならない。",
-        "自分でそれをしなければならない",
-        "自分でそれをしなければならない。"
+        "これ、たべなくてもいい",
+        "これ、たべなくてもいい?",
+        "これ、食べなくてもいい",
+        "これ、食べなくてもいい?",
+        "これ、食べなくてもいい？"
       ],
-      "sentence": "sent:tatoeba-149971",
+      "sentence": "sent:tatoeba-8748248",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-76061",
-      "sent:tatoeba-149750",
-      "sent:tatoeba-74146",
-      "sent:tatoeba-8748248",
       "sent:tatoeba-3488181",
-      "sent:tatoeba-8687007"
+      "sent:tatoeba-8687007",
+      "sent:tatoeba-205771",
+      "sent:tatoeba-229178",
+      "sent:tatoeba-229723",
+      "sent:tatoeba-229628"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -109,67 +186,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 24,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n5:4355",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:4412",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:4355:591",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "靴",
-        "何",
-        "他"
-      ]
-    },
-    {
-      "id": "cf:n5:4412:591",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "話",
-        "係",
-        "時"
-      ]
-    },
-    {
-      "id": "pp:n4:716",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "別",
-        "年",
-        "本"
-      ]
-    },
-    {
-      "id": "kr:n4:718",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ちから",
-        "どんな",
-        "あいだ"
-      ]
-    }
-  ]
+  }
 }

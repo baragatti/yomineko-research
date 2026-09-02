@@ -72,7 +72,7 @@ Repare que 神社 (じんじゃ) é o santuário do xintoísmo, diferente do tem
 - とか～とか: enumeração solta e coloquial, "tipo X e Y".
 
 #### Leitura
-> 📖 一日または二日ください。お茶などいかがでしょう。むずかしいことばがあります たとえばこの漢字スポーツをします たとえばサッカーやテニス — Me dê um ou dois dias, por favor. Que tal um chá ou algo assim? Tem palavras difíceis, por exemplo este kanji. Eu pratico esportes, por exemplo futebol e tênis.
+> 📖 一日または二日ください。お茶などいかがでしょう。むずかしいことばがあります たとえばこの漢字。スポーツをします たとえばサッカーやテニス — Me dê um ou dois dias, por favor. Que tal um chá ou algo assim? Tem palavras difíceis, por exemplo este kanji. Eu pratico esportes, por exemplo futebol e tênis.
 - Sei escolher entre alternativas com または.
 - Consigo abrir um exemplo concreto com たとえば depois de uma ideia geral.
 - Uso など no fim de uma lista para dizer "etc., coisas como".

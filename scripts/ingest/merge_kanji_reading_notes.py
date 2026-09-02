@@ -27,6 +27,8 @@ from __future__ import annotations
 import argparse, glob, json, re, sqlite3, sys
 from collections import Counter
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from reconcile_levels import derive_reading_tiers  # noqa: E402
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -113,6 +115,10 @@ def main() -> int:
                     "(SELECT entity_id FROM localized_text WHERE entity_type='kanji_reading' "
                     "AND field='note')")
         con.commit()
+        # `introduced_at_level` is documented as derived FROM the example vocab (design/schema_v2.md),
+        # and the line above is where that vocab becomes final — so the tier is re-derived here rather
+        # than left at whatever P2 could guess before any grouping existed.
+        stats["tiers_derived"] = derive_reading_tiers(con)
     print(f"merge ({'APPLIED' if args.apply else 'dry-run'}): {dict(stats)}")
     if dropped:
         print(f"  dropped: {dict(dropped)}")

@@ -7,54 +7,94 @@
     "pt-BR": "Conversa de verdade, parte 6"
   },
   "say_now": [
+    "sent:tatoeba-10153751",
+    "sent:tatoeba-234789",
+    "sent:tatoeba-184333",
     "sent:tatoeba-77972",
     "sent:tatoeba-77973",
-    "sent:tatoeba-87071",
-    "sent:tatoeba-95365",
-    "sent:tatoeba-886104",
-    "sent:tatoeba-95747"
+    "sent:tatoeba-87071"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1295070",
+    "vocab:1263490",
+    "vocab:1206800",
     "vocab:1554010",
-    "vocab:1486530",
-    "vocab:1317770",
-    "vocab:1532800",
-    "vocab:1302070",
-    "vocab:1188890"
+    "vocab:1486530"
   ],
   "patterns": [
     "gram:janai-dewa-nai",
     "gram:bakari",
     "gram:mitai-da",
-    "gram:nasai",
-    "gram:to-iu"
+    "gram:rashii",
+    "gram:to-iu",
+    "gram:tokoro"
   ],
   "kanji_recognition": [
-    "好",
-    "方",
-    "両",
-    "気",
-    "女",
-    "人"
+    "済",
+    "何",
+    "表",
+    "学",
+    "者",
+    "好"
   ],
   "shadowing": [
+    "sent:tatoeba-10153751",
+    "sent:tatoeba-234789",
+    "sent:tatoeba-184333",
     "sent:tatoeba-77972",
     "sent:tatoeba-77973",
-    "sent:tatoeba-87071",
-    "sent:tatoeba-95365",
-    "sent:tatoeba-886104",
-    "sent:tatoeba-95747"
+    "sent:tatoeba-87071"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 584,
+  "cumulative_known_vocab": 581,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:gp-36"
+  "checkpoint": [
+    {
+      "id": "cf:n3:5393:2639",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "新聞",
+        "休む",
+        "出席"
+      ]
+    },
+    {
+      "id": "cf:n3:5450:1591",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "料金",
+        "動く",
+        "寝る"
+      ]
+    },
+    {
+      "id": "kr:n3:1393",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いっしょ",
+        "だんせい",
+        "へんこう"
+      ]
+    },
+    {
+      "id": "kr:n3:1591",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "シャワー",
+        "パソコン",
+        "しつもん"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:janai-dewa-nai",
@@ -84,11 +124,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:nasai",
+      "pattern": "gram:rashii",
       "examples": [
-        "sent:tatoeba-78287",
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78855"
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
       ],
       "strand": "language-focused"
     },
@@ -96,63 +136,73 @@
       "pattern": "gram:to-iu",
       "examples": [
         "sent:tatoeba-80587",
-        "sent:tatoeba-83621",
-        "sent:tatoeba-80590"
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tokoro",
+      "examples": [
+        "sent:gen-ad64679f3372",
+        "sent:tatoeba-84696",
+        "sent:gen-a3656907ff28"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Ele tem um quê de acadêmico.",
-      "answer_key": "学者らしいところがある。",
+      "prompt_pt": "A esposa dele parece ser estrangeira.",
+      "answer_key": "彼の奥さんは外国人らしい。",
       "accepted_variants": [
-        "がくしゃらしいところがある",
-        "がくしゃらしいところがある。",
-        "学者らしいところがある",
-        "学者らしいところがある。"
+        "かれのおくさんはがいこくじんらしい",
+        "かれのおくさんはがいこくじんらしい。",
+        "かれのおくさんわがいこくじんらしい",
+        "かれのおくさんわがいこくじんらしい。",
+        "彼の奥さんは外国人らしい",
+        "彼の奥さんは外国人らしい。"
       ],
-      "sentence": "sent:tatoeba-184333",
+      "sentence": "sent:tatoeba-118031",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "O que significa \"UN\"?",
-      "answer_key": "ＵＮというのは何を表わしていますか。",
+      "prompt_pt": "Não parece que é outono, hein.",
+      "answer_key": "秋じゃないみたいだな。",
       "accepted_variants": [
-        "UNというのは何を表わしていますか",
-        "UNというのは何を表わしていますか。",
-        "ゆーえぬというのはなにをあらわしていますか",
-        "ゆーえぬというのはなにをあらわしていますか。",
-        "ゆーえぬというのわなにをあらわしていますか",
-        "ゆーえぬというのわなにをあらわしていますか。",
-        "ＵＮというのは何を表わしていますか",
-        "ＵＮというのは何を表わしていますか。"
+        "あきじゃないみたいだな",
+        "あきじゃないみたいだな。",
+        "秋じゃないみたいだな",
+        "秋じゃないみたいだな。"
       ],
-      "sentence": "sent:tatoeba-234789",
+      "sentence": "sent:tatoeba-8988161",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Parece que você já terminou, né?",
-      "answer_key": "済んだみたいだね。",
+      "prompt_pt": "Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão.",
+      "answer_key": "絵心がないから、風景を正確に写せるわけがない。",
       "accepted_variants": [
-        "すんだみたいだね",
-        "すんだみたいだね。",
-        "済んだみたいだね",
-        "済んだみたいだね。"
+        "えごころがないから、ふうけいをせいかくにうつせるわけがない",
+        "えごころがないから、ふうけいをせいかくにうつせるわけがない。",
+        "絵心がないから、風景を正確に写せるわけがない",
+        "絵心がないから、風景を正確に写せるわけがない。"
       ],
-      "sentence": "sent:tatoeba-10153751",
+      "sentence": "sent:tatoeba-12776411",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa.",
     "items": [
-      "sent:tatoeba-118031",
-      "sent:tatoeba-8988161",
-      "sent:tatoeba-12776411",
       "sent:tatoeba-142020",
       "sent:tatoeba-214502",
-      "sent:tatoeba-10901570"
+      "sent:tatoeba-10901570",
+      "sent:tatoeba-423387",
+      "sent:tatoeba-127148",
+      "sent:tatoeba-120314"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -170,52 +220,5 @@
     "meaning-output": 3,
     "language-focused": 27,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:498",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:5393:2639",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "新聞",
-        "休む",
-        "出席"
-      ]
-    },
-    {
-      "id": "cf:n3:5522:1979",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "ビル",
-        "少年",
-        "引く"
-      ]
-    },
-    {
-      "id": "kr:n5:62",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "うたう",
-        "みせる",
-        "こんな"
-      ]
-    },
-    {
-      "id": "kr:n4:1037",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "かいもの",
-        "ともだち",
-        "さんせい"
-      ]
-    }
-  ]
+  }
 }

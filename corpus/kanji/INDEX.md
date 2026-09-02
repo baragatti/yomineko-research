@@ -1,6 +1,6 @@
 # Corpus — Kanji (leveled)
 
-_Generated 2026-08-27. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `common` (nanori=false)._
+_Generated 2026-09-02. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `common` (nanori=false)._
 
 | kanji | level | strokes | #readings | meanings |
 |-------|-------|--------:|----------:|----------|
@@ -73,7 +73,7 @@ _Generated 2026-08-27. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 西 | n5 | 6 | 7 | oeste, ocidente |
 | 電 | n5 | 13 | 1 | eletricidade |
 | 口 | n5 | 3 | 3 | boca, abertura |
-| 少 | n5 | 4 | 3 | pouco, escasso, poucos |
+| 少 | n5 | 4 | 3 | poucos, pouco, escasso |
 | 校 | n5 | 10 | 3 | escola |
 | 語 | n5 | 14 | 3 | língua, palavra, contar |
 | 空 | n5 | 8 | 12 | céu, vazio, ar |
@@ -179,7 +179,7 @@ _Generated 2026-08-27. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 村 | n4 | 7 | 5 | aldeia, vila |
 | 運 | n4 | 12 | 2 | transportar, carregar, sorte |
 | 終 | n4 | 11 | 8 | terminar, acabar, concluir |
-| 台 | n4 | 5 | 5 | suporte, plataforma, contador (sufixo p/ máquinas e veículos) |
+| 台 | n4 | 5 | 5 | suporte, plataforma, contador (sufixo para máquinas e veículos) |
 | 広 | n4 | 5 | 6 | largo, espaçoso, espalhar |
 | 住 | n4 | 7 | 9 | morar, residir, habitar |
 | 真 | n4 | 10 | 19 | verdadeiro, real |
@@ -242,7 +242,7 @@ _Generated 2026-08-27. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `
 | 青 | n4 | 8 | 6 | azul, verde, jovem |
 | 森 | n4 | 12 | 3 | floresta, bosque |
 | 館 | n4 | 16 | 4 | edifício, salão, prédio |
-| 屋 | n4 | 9 | 3 | loja, estabelecimento, prédio |
+| 屋 | n4 | 9 | 3 | telhado, loja, estabelecimento |
 | 色 | n4 | 6 | 5 | cor |
 | 走 | n4 | 7 | 3 | correr |
 | 秋 | n4 | 9 | 4 | outono |

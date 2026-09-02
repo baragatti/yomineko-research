@@ -7,121 +7,127 @@
     "pt-BR": "Chegar aonde você quer, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-200926",
-    "sent:tatoeba-158256",
-    "sent:tatoeba-124791",
-    "sent:tatoeba-198112",
-    "sent:tatoeba-4939",
-    "sent:tatoeba-222010"
+    "sent:tatoeba-193061",
+    "sent:tatoeba-141127",
+    "sent:tatoeba-11545589",
+    "sent:tatoeba-157014",
+    "sent:tatoeba-187339",
+    "sent:tatoeba-84766"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1291800",
-    "vocab:1402540",
-    "vocab:1340000",
-    "vocab:1206900",
-    "vocab:1266440",
+    "vocab:1422970",
+    "vocab:1543240",
+    "vocab:1602800",
     "vocab:1343100",
-    "vocab:1592970",
-    "vocab:1582920"
+    "vocab:1012800",
+    "vocab:1279990"
   ],
   "patterns": [
-    "gram:tara-ii-desu-ka",
-    "gram:ta-tokoro",
-    "gram:masen-ka",
-    "gram:gp-149"
+    "gram:ta-bakari",
+    "gram:bakari"
   ],
   "kanji_recognition": [
-    "座",
-    "駅",
+    "着",
+    "港",
+    "船",
+    "今",
     "私",
-    "走",
-    "車",
-    "電"
+    "何"
   ],
   "shadowing": [
-    "sent:tatoeba-200926",
-    "sent:tatoeba-158256",
-    "sent:tatoeba-124791",
-    "sent:tatoeba-198112",
-    "sent:tatoeba-4939",
-    "sent:tatoeba-222010"
+    "sent:tatoeba-193061",
+    "sent:tatoeba-141127",
+    "sent:tatoeba-11545589",
+    "sent:tatoeba-157014",
+    "sent:tatoeba-187339",
+    "sent:tatoeba-84766"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 180,
+  "cumulative_known_vocab": 191,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:483",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3363",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4098:2453",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "二",
+        "年",
+        "所"
+      ]
+    },
+    {
+      "id": "kr:n5:405",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はし",
+        "あう",
+        "ひる"
+      ]
+    },
+    {
+      "id": "kr:n5:444",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おなじ",
+        "ごはん",
+        "さげる"
+      ]
+    },
+    {
+      "id": "cf:n3:3431:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "家",
+        "円",
+        "本"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:gp-70",
-    "gram:tokoro"
+    "gram:ta-tokoro",
+    "gram:tokoro",
+    "gram:yatto",
+    "gram:yotei-da"
   ],
   "drills": [
     {
-      "pattern": "gram:tara-ii-desu-ka",
+      "pattern": "gram:ta-bakari",
       "examples": [
-        "sent:tatoeba-187548",
-        "sent:tatoeba-10140817",
-        "sent:tatoeba-4713"
+        "sent:tatoeba-11009581",
+        "sent:tatoeba-9553773",
+        "sent:tatoeba-159565"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ta-tokoro",
+      "pattern": "gram:bakari",
       "examples": [
-        "sent:tatoeba-11545589",
-        "sent:tatoeba-12440070",
-        "sent:tatoeba-12574555"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:masen-ka",
-      "examples": [
-        "sent:gen-4595bdeb6907",
-        "sent:gen-a94929c3a847",
-        "sent:tatoeba-172871"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
+        "sent:tatoeba-169015",
+        "sent:tatoeba-144050",
+        "sent:tatoeba-84608"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Finalmente chegamos.",
-      "answer_key": "やっと着いた。",
-      "accepted_variants": [
-        "やっとついた",
-        "やっとついた。",
-        "やっと着いた",
-        "やっと着いた。"
-      ],
-      "sentence": "sent:tatoeba-193061",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Você vai a pé? Ou vai de ônibus?",
-      "answer_key": "歩いていく？それともバスで行く？",
-      "accepted_variants": [
-        "あるいていく?それともばすでいく",
-        "あるいていく?それともばすでいく?",
-        "歩いていく?それともバスで行く",
-        "歩いていく?それともバスで行く?",
-        "歩いていく？それともバスで行く",
-        "歩いていく？それともバスで行く？"
-      ],
-      "sentence": "sent:tatoeba-9145503",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "As duas estradas se cruzam ali.",
       "answer_key": "二本の道はそこでクロスしている。",
@@ -134,18 +140,45 @@
         "二本の道はそこでクロスしている。"
       ],
       "sentence": "sent:tatoeba-75827",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Andar a pé deve ser mais rápido do que pegar um táxi.",
+      "answer_key": "タクシーよりも歩くほうがはやいだろう。",
+      "accepted_variants": [
+        "たくしーよりもあるくほうがはやいだろう",
+        "たくしーよりもあるくほうがはやいだろう。",
+        "タクシーよりも歩くほうがはやいだろう",
+        "タクシーよりも歩くほうがはやいだろう。"
+      ],
+      "sentence": "sent:tatoeba-203709",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ontem esqueci o guarda-chuva no trem.",
+      "answer_key": "きのう電車に傘を忘れました。",
+      "accepted_variants": [
+        "きのうでんしゃにかさをわすれました",
+        "きのうでんしゃにかさをわすれました。",
+        "きのう電車に傘を忘れました",
+        "きのう電車に傘を忘れました。"
+      ],
+      "sentence": "sent:tatoeba-10899657",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
+      "sent:tatoeba-10725053",
+      "sent:tatoeba-182700",
       "sent:tatoeba-179327",
-      "sent:tatoeba-5115",
-      "sent:tatoeba-4802",
-      "sent:tatoeba-198139",
-      "sent:tatoeba-201017",
-      "sent:tatoeba-162318"
+      "sent:tatoeba-162318",
+      "sent:jec-2741",
+      "sent:tatoeba-162347"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -153,62 +186,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 22,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3598",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3598:2713",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "二",
-        "人",
-        "事"
-      ]
-    },
-    {
-      "id": "cf:n4:5027:1226",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "出る",
-        "壊す",
-        "最中"
-      ]
-    },
-    {
-      "id": "kr:n4:1226",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しょくどう",
-        "ひるごはん",
-        "さいちゅう"
-      ]
-    },
-    {
-      "id": "kr:n5:151",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おくれる",
-        "メートル",
-        "でかける"
-      ]
-    }
-  ]
+  }
 }

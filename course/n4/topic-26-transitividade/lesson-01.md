@@ -63,7 +63,7 @@ Por fim, 無 significa "nada / nenhum / inexistência" (leituras な.い, on ム
 #### Hora de praticar
 
 #### Leitura
-> 📖 私はドアを開けましたドアを開けるこのページはリンクフリーです。あのチームはつわものぞろいだ。 — Eu abri a porta. Abrir a porta. Esta página é livre para colocar links. Aquele time é só de gente forte.
+> 📖 私はドアを開けました。ドアが開く。このページはリンクフリーです。あのチームはつわものぞろいだ。 — Eu abri a porta. A porta abre. Esta página é livre para colocar links. Aquele time é só de gente forte.
 - Sei que o transitivo (他動詞) leva objeto com を porque há um agente agindo.
 - Sei que o intransitivo (自動詞) leva が porque algo muda por si só.
 - Escolho o verbo certo do par (ex.: 開ける × 開く, 消す × 消える) conforme a partícula.

@@ -7,55 +7,99 @@
     "pt-BR": "Conversa de verdade, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
     "sent:tatoeba-120314",
+    "sent:tatoeba-216263",
     "sent:tatoeba-211899",
-    "sent:tatoeba-213957",
-    "sent:tatoeba-143985",
-    "sent:tatoeba-186754"
+    "sent:tatoeba-213957"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1581930",
     "vocab:1218760",
     "vocab:1313960",
+    "vocab:1195970",
     "vocab:1339460",
-    "vocab:1207250",
-    "vocab:1193610",
+    "vocab:1216280",
     "vocab:1454670",
     "vocab:1198170",
-    "vocab:1542070"
+    "vocab:1505990"
   ],
   "patterns": [
     "gram:gp-73",
-    "gram:bakari",
+    "gram:mitai-da",
     "gram:nagara",
-    "gram:te-ita",
     "gram:to-iu",
     "gram:gp-17"
   ],
   "kanji_recognition": [
-    "喜",
     "君",
+    "弟",
+    "彼",
+    "喜",
     "道",
-    "理",
-    "支",
-    "事"
+    "理"
   ],
   "shadowing": [
+    "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
     "sent:tatoeba-120314",
+    "sent:tatoeba-216263",
     "sent:tatoeba-211899",
-    "sent:tatoeba-213957",
-    "sent:tatoeba-143985",
-    "sent:tatoeba-186754"
+    "sent:tatoeba-213957"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 564,
+  "cumulative_known_vocab": 562,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
+  "checkpoint": [
+    {
+      "id": "cf:n3:5538:1980",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "時計",
+        "洋杯",
+        "一人"
+      ]
+    },
+    {
+      "id": "kr:n4:1081",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きっと",
+        "むかし",
+        "スーツ"
+      ]
+    },
+    {
+      "id": "kr:n4:713",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とる",
+        "いか",
+        "これ"
+      ]
+    },
+    {
+      "id": "cf:n3:1277:1966",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "咖哩",
+        "食事",
+        "西洋"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:shikashi"
+  ],
   "drills": [
     {
       "pattern": "gram:gp-73",
@@ -67,11 +111,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:mitai-da",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
+        "sent:tatoeba-4216208",
+        "sent:tatoeba-774692",
+        "sent:gen-1d94a829f09c"
       ],
       "strand": "language-focused"
     },
@@ -85,20 +129,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:te-ita",
-      "examples": [
-        "sent:gen-fd3b6a8cb10e",
-        "sent:tatoeba-79051",
-        "sent:gen-de693fb350bb"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:to-iu",
       "examples": [
         "sent:tatoeba-80587",
-        "sent:tatoeba-83621",
-        "sent:tatoeba-80590"
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
       ],
       "strand": "language-focused"
     },
@@ -114,17 +149,16 @@
   ],
   "production": [
     {
-      "prompt_pt": "Ele parece até o seu irmão mais novo.",
-      "answer_key": "彼はまるで君の弟みたいだよ。",
+      "prompt_pt": "Quero virar piloto, igual ao meu pai.",
+      "answer_key": "お父さんみたいに、パイロットになりたい。",
       "accepted_variants": [
-        "かれはまるできみのおとうとみたいだよ",
-        "かれはまるできみのおとうとみたいだよ。",
-        "かれわまるできみのおとうとみたいだよ",
-        "かれわまるできみのおとうとみたいだよ。",
-        "彼はまるで君の弟みたいだよ",
-        "彼はまるで君の弟みたいだよ。"
+        "おとうさんみたいに、ぱいろっとになりたい",
+        "おとうさんみたいに、ぱいろっとになりたい。",
+        "お父さんみたいに、パイロットになりたい",
+        "お父さんみたいに、パイロットになりたい。"
       ],
-      "sentence": "sent:tatoeba-1227292",
+      "sentence": "sent:tatoeba-11264620",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -137,6 +171,7 @@
         "彼女が嘘をつくわけがない。"
       ],
       "sentence": "sent:tatoeba-10050266",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -151,6 +186,7 @@
         "彼女は幸せらしい。"
       ],
       "sentence": "sent:tatoeba-90133",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -159,10 +195,10 @@
     "items": [
       "sent:tatoeba-9938017",
       "sent:tatoeba-80952",
-      "sent:tatoeba-216263",
-      "sent:tatoeba-230514",
       "sent:tatoeba-79019",
-      "sent:tatoeba-74350"
+      "sent:tatoeba-79047",
+      "sent:tatoeba-80630",
+      "sent:tatoeba-80432"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -170,62 +206,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
+    "language-focused": 58,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 29,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:502",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:5538:1980",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "時計",
-        "洋杯",
-        "一人"
-      ]
-    },
-    {
-      "id": "cf:n4:4858:969",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "数",
-        "顔",
-        "役"
-      ]
-    },
-    {
-      "id": "kr:n4:1081",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きっと",
-        "むかし",
-        "スーツ"
-      ]
-    },
-    {
-      "id": "kr:n4:1096",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ようい",
-        "そちら",
-        "よてい"
-      ]
-    }
-  ]
+  }
 }

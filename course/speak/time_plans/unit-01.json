@@ -7,22 +7,20 @@
     "pt-BR": "Quando, que horas, combinar, parte 1"
   },
   "say_now": [
+    "sent:tatoeba-196300",
+    "sent:tatoeba-196299",
     "sent:tatoeba-79537",
-    "sent:tatoeba-185449",
     "sent:tatoeba-143547",
     "sent:tatoeba-78588",
-    "sent:tatoeba-80608",
-    "sent:tatoeba-80460"
+    "sent:tatoeba-80608"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1521400",
     "vocab:1516925",
-    "vocab:1523060",
     "vocab:1512670",
     "vocab:1604890",
-    "vocab:1171900",
-    "vocab:1538130",
     "vocab:1327120",
     "vocab:1372980",
     "vocab:1529330"
@@ -30,31 +28,83 @@
   "patterns": [
     "gram:deshou",
     "gram:gp-62",
-    "gram:ka-shira",
     "gram:gp-115",
+    "gram:gp-81",
     "gram:koto"
   ],
   "kanji_recognition": [
-    "守",
-    "束",
-    "方",
-    "約",
     "会",
-    "人"
+    "父",
+    "休",
+    "日",
+    "明",
+    "守"
   ],
   "shadowing": [
+    "sent:tatoeba-196300",
+    "sent:tatoeba-196299",
     "sent:tatoeba-79537",
-    "sent:tatoeba-185449",
     "sent:tatoeba-143547",
     "sent:tatoeba-78588",
-    "sent:tatoeba-80608",
-    "sent:tatoeba-80460"
+    "sent:tatoeba-80608"
   ],
   "audio": "pending",
   "real_phrases": 6,
   "cumulative_known_vocab": 332,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "pp:n4:716",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "顔",
+        "年",
+        "口"
+      ]
+    },
+    {
+      "id": "kr:n4:1214",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あちこち",
+        "なるべく",
+        "かのじょ"
+      ]
+    },
+    {
+      "id": "kr:n5:159",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とし",
+        "そと",
+        "ふね"
+      ]
+    },
+    {
+      "id": "cf:n3:4234:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "人",
+        "男",
+        "目"
+      ]
+    },
+    {
+      "id": "cf:n3:4373:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "夜",
+        "本",
+        "頁"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:te-ita"
   ],
@@ -72,17 +122,8 @@
       "pattern": "gram:gp-62",
       "examples": [
         "sent:tatoeba-174749",
-        "sent:tatoeba-182548",
-        "sent:tatoeba-174748"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ka-shira",
-      "examples": [
-        "sent:tatoeba-11510681",
-        "sent:tatoeba-12296518",
-        "sent:tatoeba-11162294"
+        "sent:tatoeba-174748",
+        "sent:tatoeba-182548"
       ],
       "strand": "language-focused"
     },
@@ -90,8 +131,17 @@
       "pattern": "gram:gp-115",
       "examples": [
         "sent:gen-4c4eb1f80410",
-        "sent:tatoeba-123138",
-        "sent:gen-b5467a55ded1"
+        "sent:gen-7506a021dd5b",
+        "sent:tatoeba-123138"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-81",
+      "examples": [
+        "sent:gen-20f9f43c9339",
+        "sent:gen-f416c28a18c3",
+        "sent:gen-68448be6940b"
       ],
       "strand": "language-focused"
     },
@@ -107,45 +157,45 @@
   ],
   "production": [
     {
-      "prompt_pt": "Infelizmente, muitos japoneses morreram.",
-      "answer_key": "悲しいことに多くの日本人が亡くなりました。",
+      "prompt_pt": "Até amanhã eu já devo ter terminado o trabalho.",
+      "answer_key": "明日までには仕事をやり終えているでしょう。",
       "accepted_variants": [
-        "かなしいことにおおくのにほんじんがなくなりました",
-        "かなしいことにおおくのにほんじんがなくなりました。",
-        "悲しいことに多くの日本人が亡くなりました",
-        "悲しいことに多くの日本人が亡くなりました。"
+        "あすまでにはしごとをやりおえているでしょう",
+        "あすまでにはしごとをやりおえているでしょう。",
+        "あすまでにわしごとをやりおえているでしょう",
+        "あすまでにわしごとをやりおえているでしょう。",
+        "明日までには仕事をやり終えているでしょう",
+        "明日までには仕事をやり終えているでしょう。"
       ],
-      "sentence": "sent:tatoeba-789591",
+      "sentence": "sent:tatoeba-80379",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Meu marido geralmente sai para o trabalho às 8 horas.",
-      "answer_key": "夫は大抵８時には仕事に出かけます。",
+      "prompt_pt": "No Ano-Novo, a gente passa bastante tempo com a família.",
+      "answer_key": "正月は家族と過ごす時間が長いのです。",
       "accepted_variants": [
-        "おっとはたいていはちじにはしごとにでかけます",
-        "おっとはたいていはちじにはしごとにでかけます。",
-        "おっとわたいていはちじにわしごとにでかけます",
-        "おっとわたいていはちじにわしごとにでかけます。",
-        "夫は大抵8時には仕事に出かけます",
-        "夫は大抵8時には仕事に出かけます。",
-        "夫は大抵８時には仕事に出かけます",
-        "夫は大抵８時には仕事に出かけます。"
+        "しょうがつはかぞくとすごすじかんがながいのです",
+        "しょうがつはかぞくとすごすじかんがながいのです。",
+        "しょうがつわかぞくとすごすじかんがながいのです",
+        "しょうがつわかぞくとすごすじかんがながいのです。",
+        "正月は家族と過ごす時間が長いのです",
+        "正月は家族と過ごす時間が長いのです。"
       ],
-      "sentence": "sent:tatoeba-10050538",
+      "sentence": "sent:tatoeba-142954",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Há muitos estudantes na biblioteca.",
-      "answer_key": "図書館にはたくさんの学生がいます。",
+      "prompt_pt": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças.",
+      "answer_key": "ＳＰの仕事の様子が今日テレビで放送されました",
       "accepted_variants": [
-        "としょかんにはたくさんのがくせいがいます",
-        "としょかんにはたくさんのがくせいがいます。",
-        "としょかんにわたくさんのがくせいがいます",
-        "としょかんにわたくさんのがくせいがいます。",
-        "図書館にはたくさんの学生がいます",
-        "図書館にはたくさんの学生がいます。"
+        "SPの仕事の様子が今日テレビで放送されました",
+        "えすぴーのしごとのようすがきょうてれびでほうそうされました",
+        "ＳＰの仕事の様子が今日テレビで放送されました"
       ],
-      "sentence": "sent:tatoeba-143880",
+      "sentence": "sent:jec-4753",
+      "kind": "on-topic",
       "strand": "meaning-output"
     }
   ],
@@ -167,55 +217,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 58,
+    "language-focused": 57,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n5:3047:36",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "所",
-        "音",
-        "別"
-      ]
-    },
-    {
-      "id": "cf:n5:3581:36",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "花",
-        "話",
-        "夫"
-      ]
-    },
-    {
-      "id": "kr:n4:1214",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "なるべく",
-        "かのじょ",
-        "でかける"
-      ]
-    },
-    {
-      "id": "kr:n5:159",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とし",
-        "そと",
-        "ふね"
-      ]
-    }
-  ]
+  }
 }

@@ -56,7 +56,7 @@ O arroz é tão central na cultura japonesa que 米 também aparece, por leitura
 #### Hora de praticar
 
 #### Leitura
-> 📖 そのおもちゃはプラスチックでできているワインはぶどうから作りますこのいすは木でできているワインはぶどうからできる — Aquele brinquedo é feito de plástico. O vinho é feito a partir da uva. Esta cadeira é feita de madeira. O vinho é feito de uva.
+> 📖 そのおもちゃはプラスチックでできている。ワインはぶどうから作ります。このいすは木でできている。このパンは米から作りました — Aquele brinquedo é feito de plástico. O vinho é feito a partir da uva. Esta cadeira é feita de madeira. Este pão foi feito de arroz.
 - Uso 〜でできる para material visível e 〜からできる para matéria-prima transformada.
 - Sei que 〜から作る foca a ação de fabricar, sempre com から quando há transformação.
 - Leio e reconheço 米 (こめ, "arroz") e a palavra 生産.

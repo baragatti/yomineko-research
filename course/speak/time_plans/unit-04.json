@@ -7,133 +7,191 @@
     "pt-BR": "Quando, que horas, combinar, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-80417",
-    "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767",
-    "sent:tatoeba-80373"
+    "sent:tatoeba-1037362",
+    "sent:tatoeba-171531",
+    "sent:tatoeba-9777117",
+    "sent:tatoeba-154767",
+    "sent:tatoeba-125943",
+    "sent:tatoeba-11013726"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1386500",
-    "vocab:1542160",
-    "vocab:1373860",
-    "vocab:1236070",
-    "vocab:1337270",
-    "vocab:1438690",
-    "vocab:1499720"
+    "vocab:1223640",
+    "vocab:1582310",
+    "vocab:1155120",
+    "vocab:1483740",
+    "vocab:1405800",
+    "vocab:1432680",
+    "vocab:1583090",
+    "vocab:1163940"
   ],
   "patterns": [
-    "gram:gp-42",
-    "gram:made-ni",
-    "gram:owaru"
+    "gram:gp-149",
+    "gram:gp-142",
+    "gram:node"
   ],
   "kanji_recognition": [
-    "思",
-    "雪",
-    "日",
-    "明",
-    "新",
-    "聞"
+    "起",
+    "時",
+    "朝",
+    "八",
+    "今",
+    "頭"
   ],
   "shadowing": [
-    "sent:tatoeba-80417",
-    "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767",
-    "sent:tatoeba-80373"
+    "sent:tatoeba-1037362",
+    "sent:tatoeba-171531",
+    "sent:tatoeba-9777117",
+    "sent:tatoeba-154767",
+    "sent:tatoeba-125943",
+    "sent:tatoeba-11013726"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 356,
+  "cumulative_known_vocab": 348,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:722",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:759",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:891:2453",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "為",
+        "誰",
+        "日"
+      ]
+    },
+    {
+      "id": "cf:n4:3684:1118",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "悪い",
+        "小説",
+        "関係"
+      ]
+    },
+    {
+      "id": "kr:n4:1062",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ほとんど",
+        "かんけい",
+        "とりけす"
+      ]
+    },
+    {
+      "id": "kr:n4:1118",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "がっこう",
+        "ガソリン"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:nakereba-naranai",
-    "gram:gp-110",
-    "gram:sou-da-1"
+    "gram:tsuzukeru",
+    "gram:gp-45",
+    "gram:naru"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-42",
+      "pattern": "gram:gp-149",
       "examples": [
-        "sent:tatoeba-227007",
-        "sent:tatoeba-994640",
-        "sent:tatoeba-229458"
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:made-ni",
+      "pattern": "gram:gp-142",
       "examples": [
-        "sent:tatoeba-150564",
-        "sent:tatoeba-218050",
-        "sent:tatoeba-147666"
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:owaru",
+      "pattern": "gram:node",
       "examples": [
-        "sent:tatoeba-228649",
-        "sent:tatoeba-8727067",
-        "sent:tatoeba-10206436"
+        "sent:tatoeba-85318",
+        "sent:tatoeba-82538",
+        "sent:gen-82b26ffb3d46"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Explicar para você por que não vai dar certo ia levar um tempão.",
-      "answer_key": "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。",
+      "prompt_pt": "Conheci uma pessoa chamada Kimura na festa.",
+      "answer_key": "木村さんという人にパーティーで会ったよ。",
       "accepted_variants": [
-        "なんでうまくいかないかきみにせつめいするにはずいぶんじかんがかかりそうだ",
-        "なんでうまくいかないかきみにせつめいするにはずいぶんじかんがかかりそうだ。",
-        "なんでうまくいかないかきみにせつめいするにわずいぶんじかんがかかりそうだ",
-        "なんでうまくいかないかきみにせつめいするにわずいぶんじかんがかかりそうだ。",
-        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ",
-        "何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。"
+        "きむらさんというひとにぱーてぃーであったよ",
+        "きむらさんというひとにぱーてぃーであったよ。",
+        "木村さんという人にパーティーで会ったよ",
+        "木村さんという人にパーティーで会ったよ。"
       ],
-      "sentence": "sent:tatoeba-4905",
+      "sentence": "sent:tatoeba-80068",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Se você continua todos os dias, isso vira força.",
-      "answer_key": "毎日続けると力になる。",
+      "prompt_pt": "Encontrar com ele a gente deixa para a próxima vez.",
+      "answer_key": "彼に会うのはこの次にしましょう。",
       "accepted_variants": [
-        "まいにちつづけるとちからになる",
-        "まいにちつづけるとちからになる。",
-        "毎日続けると力になる",
-        "毎日続けると力になる。"
+        "かれにあうのはこのつぎにしましょう",
+        "かれにあうのはこのつぎにしましょう。",
+        "かれにあうのわこのつぎにしましょう",
+        "かれにあうのわこのつぎにしましょう。",
+        "彼に会うのはこの次にしましょう",
+        "彼に会うのはこの次にしましょう。"
       ],
-      "sentence": "sent:tatoeba-11013726",
+      "sentence": "sent:tatoeba-118653",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Como caminhamos por muito tempo, ficamos exaustos.",
-      "answer_key": "長い時間歩いたので疲れきった。",
+      "prompt_pt": "Eu talvez morra amanhã.",
+      "answer_key": "私は明日死ぬかもしれない。",
       "accepted_variants": [
-        "ながいじかんあるいたのでつかれきった",
-        "ながいじかんあるいたのでつかれきった。",
-        "長い時間歩いたので疲れきった",
-        "長い時間歩いたので疲れきった。"
+        "わたしはあすしぬかもしれない",
+        "わたしはあすしぬかもしれない。",
+        "わたしわあすしぬかもしれない",
+        "わたしわあすしぬかもしれない。",
+        "私は明日死ぬかもしれない",
+        "私は明日死ぬかもしれない。"
       ],
-      "sentence": "sent:tatoeba-125943",
+      "sentence": "sent:tatoeba-152614",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
-      "sent:tatoeba-154767",
-      "sent:tatoeba-9777117",
-      "sent:tatoeba-171531",
-      "sent:tatoeba-1037362",
-      "sent:tatoeba-80068",
-      "sent:tatoeba-152614"
+      "sent:tatoeba-10014826",
+      "sent:tatoeba-79849",
+      "sent:tatoeba-80668",
+      "sent:tatoeba-2684823",
+      "sent:tatoeba-79537",
+      "sent:tatoeba-196299"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -141,62 +199,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3427",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3427:859",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "明日",
-        "趣味",
-        "何時"
-      ]
-    },
-    {
-      "id": "cf:n5:4163:426",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "洋袴",
-        "電気",
-        "同じ"
-      ]
-    },
-    {
-      "id": "kr:n4:859",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あたま",
-        "おえる",
-        "わるい"
-      ]
-    },
-    {
-      "id": "kr:n5:157",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きく",
-        "ひく",
-        "かわ"
-      ]
-    }
-  ]
+  }
 }

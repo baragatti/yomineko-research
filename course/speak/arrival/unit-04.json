@@ -7,106 +7,187 @@
     "pt-BR": "Chegar e cumprimentar, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-229425",
-    "sent:tatoeba-78721",
-    "sent:tatoeba-1874351",
-    "sent:tatoeba-10355885",
-    "sent:tatoeba-11858059",
-    "sent:tatoeba-171272"
+    "sent:tatoeba-11831400",
+    "sent:tatoeba-229449",
+    "sent:tatoeba-231454",
+    "sent:tatoeba-125967",
+    "sent:tatoeba-8579832",
+    "sent:tatoeba-229460"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1420470",
-    "vocab:1547720",
-    "vocab:1315920",
-    "vocab:1591110",
-    "vocab:1198180",
-    "vocab:1340450",
-    "vocab:1206050",
-    "vocab:1188760",
-    "vocab:1529520",
-    "vocab:1289470",
-    "vocab:1584930"
+    "vocab:1281020",
+    "vocab:1184280",
+    "vocab:1215230",
+    "vocab:1236900",
+    "vocab:1282790",
+    "vocab:1004880",
+    "vocab:2022640",
+    "vocab:1342540"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:gp-108",
+    "gram:gp-149",
+    "gram:gp-32"
+  ],
   "kanji_recognition": [
-    "覚",
-    "知",
-    "来",
+    "考",
+    "下",
+    "番",
     "間",
-    "時",
-    "聞"
+    "待",
+    "長"
   ],
   "shadowing": [
-    "sent:tatoeba-229425",
-    "sent:tatoeba-78721",
-    "sent:tatoeba-1874351",
-    "sent:tatoeba-10355885",
-    "sent:tatoeba-11858059",
-    "sent:tatoeba-171272"
+    "sent:tatoeba-11831400",
+    "sent:tatoeba-229449",
+    "sent:tatoeba-231454",
+    "sent:tatoeba-125967",
+    "sent:tatoeba-8579832",
+    "sent:tatoeba-229460"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 19,
+  "cumulative_known_vocab": 29,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:gp-108",
-    "gram:te-sumimasen",
-    "gram:amari-nai",
-    "gram:gp-148",
-    "gram:gp-149",
-    "gram:gp-62"
+  "checkpoint": [
+    {
+      "id": "so:n3:697",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:757",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3519:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "話",
+        "私",
+        "事"
+      ]
+    },
+    {
+      "id": "cf:n3:3520:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "私",
+        "事",
+        "番"
+      ]
+    },
+    {
+      "id": "kr:n4:1132",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "できる",
+        "はじめ"
+      ]
+    },
+    {
+      "id": "kr:n4:1168",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おしえる",
+        "おぼえる",
+        "けっこう"
+      ]
+    }
   ],
-  "drills": [],
+  "patterns_chunked": [
+    "gram:te-sumimasen",
+    "gram:gp-148",
+    "gram:gp-89"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-108",
+      "examples": [
+        "sent:tatoeba-78721",
+        "sent:tatoeba-10355885",
+        "sent:tatoeba-11858059"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-32",
+      "examples": [
+        "sent:tatoeba-85319",
+        "sent:tatoeba-83696",
+        "sent:tatoeba-4714"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
-      "prompt_pt": "Não, obrigado. É que estou só olhando.",
-      "answer_key": "いいえ、けっこうです。見ているだけですから。",
+      "prompt_pt": "Desculpe por tê-lo feito esperar tanto tempo.",
+      "answer_key": "長くお待たせしてすみませんでした。",
       "accepted_variants": [
-        "いいえ、けっこうです。みているだけですから",
-        "いいえ、けっこうです。みているだけですから。",
-        "いいえ、けっこうです。見ているだけですから",
-        "いいえ、けっこうです。見ているだけですから。"
+        "ながくおまたせしてすみませんでした",
+        "ながくおまたせしてすみませんでした。",
+        "長くお待たせしてすみませんでした",
+        "長くお待たせしてすみませんでした。"
       ],
-      "sentence": "sent:tatoeba-229458",
+      "sentence": "sent:tatoeba-125913",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Sim, vamos.",
-      "answer_key": "はい、行きましょう。",
+      "prompt_pt": "Desculpe interromper a conversa de vocês.",
+      "answer_key": "お話の最中にすみません。",
       "accepted_variants": [
-        "はい、いきましょう",
-        "はい、いきましょう。",
-        "はい、行きましょう",
-        "はい、行きましょう。"
+        "おはなしのさいちゅうにすみません",
+        "おはなしのさいちゅうにすみません。",
+        "お話の最中にすみません",
+        "お話の最中にすみません。"
       ],
-      "sentence": "sent:tatoeba-198378",
+      "sentence": "sent:tatoeba-226507",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Desculpe. A culpa é minha.",
-      "answer_key": "ごめんなさい。私のせいです。",
+      "prompt_pt": "Desculpe por tê-lo feito esperar tanto tempo.",
+      "answer_key": "長い事お待たせしてすみません。",
       "accepted_variants": [
-        "ごめんなさい。わたしのせいです",
-        "ごめんなさい。わたしのせいです。",
-        "ごめんなさい。私のせいです",
-        "ごめんなさい。私のせいです。"
+        "ながいことおまたせしてすみません",
+        "ながいことおまたせしてすみません。",
+        "長い事お待たせしてすみません",
+        "長い事お待たせしてすみません。"
       ],
-      "sentence": "sent:tatoeba-219058",
+      "sentence": "sent:tatoeba-125944",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
     "items": [
-      "sent:tatoeba-9559301",
+      "sent:tatoeba-229425",
+      "sent:tatoeba-1874351",
       "sent:tatoeba-4971",
-      "sent:tatoeba-1576172",
       "sent:tatoeba-335372",
-      "sent:tatoeba-640569",
-      "sent:tatoeba-426889"
+      "sent:tatoeba-426889",
+      "sent:tatoeba-1532832"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -114,67 +195,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:756",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3417",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:3348:286",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "赤い",
-        "聞く",
-        "結構"
-      ]
-    },
-    {
-      "id": "cf:n5:1069:58",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "見る",
-        "来る",
-        "会う"
-      ]
-    },
-    {
-      "id": "kr:n5:127",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こんばん",
-        "けっこう",
-        "あかい"
-      ]
-    },
-    {
-      "id": "kr:n5:188",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いつ",
-        "みる",
-        "いく"
-      ]
-    }
-  ]
+  }
 }

@@ -7,65 +7,115 @@
     "pt-BR": "Chegar e cumprimentar, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-8579832",
-    "sent:tatoeba-229460",
-    "sent:tatoeba-231454",
-    "sent:tatoeba-126710",
-    "sent:tatoeba-204778",
-    "sent:tatoeba-78964"
+    "sent:tatoeba-80492",
+    "sent:tatoeba-203979",
+    "sent:tatoeba-76482",
+    "sent:tatoeba-5057",
+    "sent:tatoeba-10901919",
+    "sent:gen-1d921e8b2ad3"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1236900",
-    "vocab:1282790",
-    "vocab:1004880",
-    "vocab:1589040",
-    "vocab:1203260",
-    "vocab:1217950",
-    "vocab:1246700",
-    "vocab:1543750",
-    "vocab:1589840",
-    "vocab:1006970"
+    "vocab:1523060",
+    "vocab:1584660",
+    "vocab:1536350",
+    "vocab:1530970",
+    "vocab:1479890",
+    "vocab:1006970",
+    "vocab:1582920",
+    "vocab:1628530"
   ],
   "patterns": [
-    "gram:gp-108",
-    "gram:gp-149"
+    "gram:gp-42",
+    "gram:gp-149",
+    "gram:da-desu",
+    "gram:dake"
   ],
   "kanji_recognition": [
-    "教",
-    "降",
-    "間",
-    "待",
-    "長",
-    "遅"
+    "願",
+    "日",
+    "明",
+    "夜",
+    "約",
+    "予"
   ],
   "shadowing": [
-    "sent:tatoeba-8579832",
-    "sent:tatoeba-229460",
-    "sent:tatoeba-231454",
-    "sent:tatoeba-126710",
-    "sent:tatoeba-204778",
-    "sent:tatoeba-78964"
+    "sent:tatoeba-80492",
+    "sent:tatoeba-203979",
+    "sent:tatoeba-76482",
+    "sent:tatoeba-5057",
+    "sent:tatoeba-10901919",
+    "sent:gen-1d921e8b2ad3"
   ],
   "audio": "pending",
-  "real_phrases": 6,
-  "cumulative_known_vocab": 38,
+  "real_phrases": 5,
+  "cumulative_known_vocab": 48,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:61",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:1063",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n5:16",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "よやく",
+        "じかん",
+        "ねがう"
+      ]
+    },
+    {
+      "id": "kr:n5:257",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "みる",
+        "いく",
+        "ない"
+      ]
+    },
+    {
+      "id": "cf:n4:1111:1132",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "夜",
+        "事",
+        "係"
+      ]
+    },
+    {
+      "id": "cf:n4:1172:1132",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "私",
+        "係",
+        "夜"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:te-sumimasen",
-    "gram:gp-148",
-    "gram:gp-61",
-    "gram:gp-89"
+    "gram:gp-148"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-108",
+      "pattern": "gram:gp-42",
       "examples": [
-        "sent:tatoeba-78721",
-        "sent:tatoeba-10355885",
-        "sent:tatoeba-11831400"
+        "sent:tatoeba-994640",
+        "sent:tatoeba-227007",
+        "sent:tatoeba-229458"
       ],
       "strand": "language-focused"
     },
@@ -77,55 +127,76 @@
         "sent:tatoeba-79091"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-75188",
+        "sent:tatoeba-4708",
+        "sent:tatoeba-4973"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:dake",
+      "examples": [
+        "sent:gen-10932a1910b5",
+        "sent:gen-fec0529a3037",
+        "sent:tatoeba-4767"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Por favor, calce os chinelos.",
-      "answer_key": "スリッパをはいてください。",
+      "prompt_pt": "Mãe, desculpa por estar sempre te dando trabalho.",
+      "answer_key": "お母さん、いつも迷惑ばかりかけてごめんなさい。",
       "accepted_variants": [
-        "すりっぱをはいてください",
-        "すりっぱをはいてください。",
-        "スリッパをはいてください",
-        "スリッパをはいてください。"
+        "おかあさん、いつもめいわくばかりかけてごめんなさい",
+        "おかあさん、いつもめいわくばかりかけてごめんなさい。",
+        "お母さん、いつも迷惑ばかりかけてごめんなさい",
+        "お母さん、いつも迷惑ばかりかけてごめんなさい。"
       ],
-      "sentence": "sent:tatoeba-214119",
+      "sentence": "sent:tatoeba-886104",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Obrigado por pensar nisso.",
-      "answer_key": "考えてくれてありがとう。",
+      "prompt_pt": "Muito obrigado por me lembrar da promessa.",
+      "answer_key": "約束を思い出させてくれてどうもありがとう。",
       "accepted_variants": [
-        "かんがえてくれてありがとう",
-        "かんがえてくれてありがとう。",
-        "考えてくれてありがとう",
-        "考えてくれてありがとう。"
+        "やくそくをおもいださせてくれてどうもありがとう",
+        "やくそくをおもいださせてくれてどうもありがとう。",
+        "約束を思い出させてくれてどうもありがとう",
+        "約束を思い出させてくれてどうもありがとう。"
       ],
-      "sentence": "sent:tatoeba-11831400",
+      "sentence": "sent:tatoeba-79526",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Desculpe por tê-lo feito esperar tanto tempo.",
-      "answer_key": "長い間、お待たせしてすみませんでした。",
+      "prompt_pt": "Desculpe por tê-lo bombardeado com tantas perguntas.",
+      "answer_key": "質問攻めにしてすみませんでした。",
       "accepted_variants": [
-        "ながいあいだ、おまたせしてすみませんでした",
-        "ながいあいだ、おまたせしてすみませんでした。",
-        "長い間、お待たせしてすみませんでした",
-        "長い間、お待たせしてすみませんでした。"
+        "しつもんぜめにしてすみませんでした",
+        "しつもんぜめにしてすみませんでした。",
+        "質問攻めにしてすみませんでした",
+        "質問攻めにしてすみませんでした。"
       ],
-      "sentence": "sent:tatoeba-125967",
+      "sentence": "sent:tatoeba-11267683",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
     "items": [
-      "sent:tatoeba-1874351",
+      "sent:tatoeba-229460",
+      "sent:tatoeba-426889",
+      "sent:tatoeba-1532832",
       "sent:tatoeba-229425",
-      "sent:tatoeba-9559301",
-      "sent:tatoeba-4971",
-      "sent:tatoeba-1576172",
-      "sent:tatoeba-335372"
+      "sent:tatoeba-1874351",
+      "sent:tatoeba-4971"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -133,67 +204,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:757",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3418",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3519:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "話",
-        "私",
-        "事"
-      ]
-    },
-    {
-      "id": "cf:n3:798:2257",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "係",
-        "彼",
-        "間"
-      ]
-    },
-    {
-      "id": "kr:n3:1583",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いいえ",
-        "こんな",
-        "よやく"
-      ]
-    },
-    {
-      "id": "kr:n4:1194",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こんばん",
-        "おしえる",
-        "くださる"
-      ]
-    }
-  ]
+  }
 }

@@ -8,19 +8,22 @@
   },
   "say_now": [
     "sent:tatoeba-10899775",
+    "sent:tatoeba-171644",
+    "sent:tatoeba-172639",
     "sent:tatoeba-11009755",
     "sent:tatoeba-226844",
-    "sent:tatoeba-226845",
-    "sent:tatoeba-10657609",
-    "sent:tatoeba-2633467"
+    "sent:tatoeba-226845"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1012480",
+    "vocab:1579110",
+    "vocab:1288850",
     "vocab:1562350",
-    "vocab:1007130",
     "vocab:1169870",
+    "vocab:1151260",
+    "vocab:1578010",
     "vocab:1426250",
     "vocab:1358550"
   ],
@@ -28,40 +31,87 @@
     "gram:masen-ka",
     "gram:mashou",
     "gram:gp-149",
-    "gram:gp-89",
-    "gram:mitai-da"
+    "gram:gp-17"
   ],
   "kanji_recognition": [
     "食",
     "昼",
     "堂",
-    "話",
-    "飲",
-    "茶"
+    "悪",
+    "魚",
+    "今"
   ],
   "shadowing": [
     "sent:tatoeba-10899775",
+    "sent:tatoeba-171644",
+    "sent:tatoeba-172639",
     "sent:tatoeba-11009755",
     "sent:tatoeba-226844",
-    "sent:tatoeba-226845",
-    "sent:tatoeba-10657609",
-    "sent:tatoeba-2633467"
+    "sent:tatoeba-226845"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 99,
+  "cumulative_known_vocab": 113,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n4:956",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:1510:64",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "家",
+        "人",
+        "私"
+      ]
+    },
+    {
+      "id": "cf:n5:2900:498",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "結構",
+        "会う",
+        "キロ"
+      ]
+    },
+    {
+      "id": "kr:n5:199",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つくる",
+        "じかん",
+        "はらう"
+      ]
+    },
+    {
+      "id": "kr:n5:270",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いつも",
+        "ごはん",
+        "はらう"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:sonna-ni"
+    "gram:nagara",
+    "gram:ndesu"
   ],
   "drills": [
     {
       "pattern": "gram:masen-ka",
       "examples": [
-        "sent:tatoeba-172871",
         "sent:gen-4595bdeb6907",
-        "sent:gen-4e948f2f75b0"
+        "sent:gen-4e948f2f75b0",
+        "sent:tatoeba-172871"
       ],
       "strand": "language-focused"
     },
@@ -84,39 +134,16 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-89",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-164675",
-        "sent:tatoeba-10541587"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:mitai-da",
-      "examples": [
-        "sent:tatoeba-4216208",
-        "sent:gen-1d94a829f09c",
-        "sent:gen-380cdfd700cc"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-144227",
+        "sent:tatoeba-80132"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Hoje os peixes não estão mordendo a isca.",
-      "answer_key": "今日は魚の食いが悪い。",
-      "accepted_variants": [
-        "きょうはさかなのくいがわるい",
-        "きょうはさかなのくいがわるい。",
-        "きょうわさかなのくいがわるい",
-        "きょうわさかなのくいがわるい。",
-        "今日は魚の食いが悪い",
-        "今日は魚の食いが悪い。"
-      ],
-      "sentence": "sent:tatoeba-171644",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Está muito gostoso!",
       "answer_key": "とてもおいしいよ。",
@@ -125,6 +152,21 @@
         "とてもおいしいよ。"
       ],
       "sentence": "sent:tatoeba-200661",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por que ninguém quer comer o que eu fiz?",
+      "answer_key": "どうして誰も私が作ったものを食べようとしないの？",
+      "accepted_variants": [
+        "どうしてだれもわたしがつくったものをたべようとしないの",
+        "どうしてだれもわたしがつくったものをたべようとしないの?",
+        "どうして誰も私が作ったものを食べようとしないの",
+        "どうして誰も私が作ったものを食べようとしないの?",
+        "どうして誰も私が作ったものを食べようとしないの？"
+      ],
+      "sentence": "sent:tatoeba-9819543",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -139,6 +181,7 @@
         "夕食の用意はできているから、いつでも食べたいときに食べられるよ。"
       ],
       "sentence": "sent:tatoeba-79093",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -146,11 +189,11 @@
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
       "sent:tatoeba-1115376",
-      "sent:tatoeba-196349",
-      "sent:tatoeba-81631",
-      "sent:tatoeba-217663",
       "sent:tatoeba-9240812",
-      "sent:jec-1593"
+      "sent:jec-1593",
+      "sent:tatoeba-8748248",
+      "sent:tatoeba-3488181",
+      "sent:tatoeba-8687007"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -158,57 +201,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n5:3820:473",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "年",
-        "本",
-        "私"
-      ]
-    },
-    {
-      "id": "cf:n5:2900:498",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "壊す",
-        "結構",
-        "会う"
-      ]
-    },
-    {
-      "id": "kr:n5:313",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さいちゅう",
-        "かんがえる",
-        "レストラン"
-      ]
-    },
-    {
-      "id": "kr:n4:1240",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "しょくどう",
-        "さいちゅう",
-        "レストラン"
-      ]
-    }
-  ]
+  }
 }

@@ -7,166 +7,195 @@
     "pt-BR": "Falar de você, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-11005020",
+    "sent:tatoeba-11021418",
+    "sent:tatoeba-163367",
+    "sent:tatoeba-113170",
+    "sent:tatoeba-212988",
     "sent:tatoeba-163381",
-    "sent:jec-1876",
-    "sent:tatoeba-143880",
-    "sent:tatoeba-10050538",
-    "sent:tatoeba-789591"
+    "sent:jec-1876"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1582120",
+    "vocab:1381820",
+    "vocab:1348430",
+    "vocab:1319750",
     "vocab:1106400",
     "vocab:1344930",
-    "vocab:1370420",
-    "vocab:1496480",
-    "vocab:1518540",
     "vocab:1419370",
-    "vocab:1483190",
+    "vocab:1329000",
     "vocab:1075940",
-    "vocab:1219680",
-    "vocab:1221250",
-    "vocab:1414580"
+    "vocab:1017760",
+    "vocab:1591900"
   ],
   "patterns": [
-    "gram:ga-imasu",
-    "gram:gp-43",
-    "gram:koto",
-    "gram:da-desu",
-    "gram:gp-21",
-    "gram:gp-8"
+    "gram:kamo-shirenai",
+    "gram:gp-142",
+    "gram:kana"
   ],
   "kanji_recognition": [
-    "下",
-    "会",
-    "寄",
-    "帰",
-    "社",
-    "調"
+    "住",
+    "静",
+    "私",
+    "趣",
+    "小",
+    "説"
   ],
   "shadowing": [
-    "sent:tatoeba-11005020",
+    "sent:tatoeba-11021418",
+    "sent:tatoeba-163367",
+    "sent:tatoeba-113170",
+    "sent:tatoeba-212988",
     "sent:tatoeba-163381",
-    "sent:jec-1876",
-    "sent:tatoeba-143880",
-    "sent:tatoeba-10050538",
-    "sent:tatoeba-789591"
+    "sent:jec-1876"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 323,
+  "cumulative_known_vocab": 325,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
+  "checkpoint": [
+    {
+      "id": "cf:n3:5111:1479",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "値段",
+        "出る",
+        "意見"
+      ]
+    },
+    {
+      "id": "pp:n5:30",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "嫌い",
+        "来る",
+        "今日"
+      ]
+    },
+    {
+      "id": "kr:n3:1479",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "せんぱい",
+        "おこなう",
+        "ぶたにく"
+      ]
+    },
+    {
+      "id": "kr:n4:1327",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あした",
+        "どんな",
+        "じぶん"
+      ]
+    },
+    {
+      "id": "cf:n3:4093:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "熱",
+        "箸",
+        "六"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:koto-ni-naru",
+    "gram:gp-45",
+    "gram:gp-120"
+  ],
   "drills": [
     {
-      "pattern": "gram:ga-imasu",
+      "pattern": "gram:kamo-shirenai",
       "examples": [
-        "sent:tatoeba-176635",
-        "sent:tatoeba-11795596",
-        "sent:tatoeba-187375"
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-152614"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-43",
+      "pattern": "gram:gp-142",
       "examples": [
-        "sent:tatoeba-112055",
-        "sent:tatoeba-81631",
-        "sent:tatoeba-79299"
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:koto",
+      "pattern": "gram:kana",
       "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-21",
-      "examples": [
-        "sent:tatoeba-5052",
-        "sent:tatoeba-4852",
-        "sent:tatoeba-77212"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-150175",
-        "sent:tatoeba-150639"
+        "sent:gen-a57fa0b2f6c3",
+        "sent:gen-f626c3374153",
+        "sent:gen-72c52ba4dd08"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Por causa disso, ele perdeu o emprego.",
-      "answer_key": "彼はそのために仕事を失った。",
+      "prompt_pt": "O professor entregou ao aluno uma cópia do jornal.",
+      "answer_key": "先生は学生に新聞のコピーを渡しました。",
       "accepted_variants": [
-        "かれはそのためにしごとをうしなった",
-        "かれはそのためにしごとをうしなった。",
-        "かれわそのためにしごとをうしなった",
-        "かれわそのためにしごとをうしなった。",
-        "彼はそのために仕事を失った",
-        "彼はそのために仕事を失った。"
+        "せんせいはがくせいにしんぶんのこぴーをわたしました",
+        "せんせいはがくせいにしんぶんのこぴーをわたしました。",
+        "せんせいわがくせいにしんぶんのこぴーをわたしました",
+        "せんせいわがくせいにしんぶんのこぴーをわたしました。",
+        "先生は学生に新聞のコピーを渡しました",
+        "先生は学生に新聞のコピーを渡しました。"
       ],
-      "sentence": "sent:tatoeba-113170",
+      "sentence": "sent:tatoeba-10899831",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Meu hobby é ler romances.",
-      "answer_key": "私の趣味は小説を読むことです。",
+      "prompt_pt": "Este ano há menos alunos na turma do que no ano passado.",
+      "answer_key": "去年より今年のクラスには学生が少ない。",
       "accepted_variants": [
-        "わたしのしゅみはしょうせつをよむことです",
-        "わたしのしゅみはしょうせつをよむことです。",
-        "わたしのしゅみわしょうせつをよむことです",
-        "わたしのしゅみわしょうせつをよむことです。",
-        "私の趣味は小説を読むことです",
-        "私の趣味は小説を読むことです。"
+        "きょねんよりことしのくらすにはがくせいがすくない",
+        "きょねんよりことしのくらすにはがくせいがすくない。",
+        "きょねんよりことしのくらすにわがくせいがすくない",
+        "きょねんよりことしのくらすにわがくせいがすくない。",
+        "去年より今年のクラスには学生が少ない",
+        "去年より今年のクラスには学生が少ない。"
       ],
-      "sentence": "sent:tatoeba-163367",
+      "sentence": "sent:tatoeba-1590863",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Eu moro num apartamento bonito e silencioso.",
-      "answer_key": "きれいで静かなアパートに住んでいます。",
+      "prompt_pt": "Até amanhã eu já devo ter terminado o trabalho.",
+      "answer_key": "明日までには仕事をやり終えているでしょう。",
       "accepted_variants": [
-        "きれいでしずかなあぱーとにすんでいます",
-        "きれいでしずかなあぱーとにすんでいます。",
-        "きれいで静かなアパートに住んでいます",
-        "きれいで静かなアパートに住んでいます。"
+        "あすまでにはしごとをやりおえているでしょう",
+        "あすまでにはしごとをやりおえているでしょう。",
+        "あすまでにわしごとをやりおえているでしょう",
+        "あすまでにわしごとをやりおえているでしょう。",
+        "明日までには仕事をやり終えているでしょう",
+        "明日までには仕事をやり終えているでしょう。"
       ],
-      "sentence": "sent:tatoeba-11021418",
+      "sentence": "sent:tatoeba-80379",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
     "items": [
-      "sent:tatoeba-10899831",
-      "sent:tatoeba-1590863",
       "sent:tatoeba-10899638",
-      "sent:tatoeba-196355",
       "sent:tatoeba-10760527",
-      "sent:tatoeba-11727272"
+      "sent:tatoeba-184254",
+      "sent:tatoeba-84568",
+      "sent:tatoeba-186900",
+      "sent:tatoeba-1046077"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -174,62 +203,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 21,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 35,
+    "language-focused": 27,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:906",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:1447:1123",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "降る",
-        "買う",
-        "早い"
-      ]
-    },
-    {
-      "id": "cf:n4:3810:1123",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "住む",
-        "聞く",
-        "ご飯"
-      ]
-    },
-    {
-      "id": "kr:n4:1123",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はしる",
-        "くらい",
-        "わるい"
-      ]
-    },
-    {
-      "id": "kr:n4:698",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ほうそう",
-        "くうこう",
-        "てつだう"
-      ]
-    }
-  ]
+  }
 }

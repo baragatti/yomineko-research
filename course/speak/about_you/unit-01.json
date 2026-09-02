@@ -8,156 +8,54 @@
   },
   "say_now": [
     "sent:tatoeba-1046077",
+    "sent:tatoeba-186900",
     "sent:tatoeba-84568",
+    "sent:tatoeba-147013",
     "sent:tatoeba-184254",
-    "sent:tatoeba-141544",
-    "sent:jec-0320",
-    "sent:tatoeba-172198"
+    "sent:tatoeba-141544"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1487660",
+    "vocab:1465590",
     "vocab:1579260",
+    "vocab:1307850",
     "vocab:1387990",
     "vocab:1531710",
-    "vocab:1156530",
     "vocab:1379380",
+    "vocab:2136180",
     "vocab:1227560",
-    "vocab:1289370",
-    "vocab:1010150",
+    "vocab:1100810",
+    "vocab:1192420",
     "vocab:1535780"
   ],
   "patterns": [
-    "gram:mitai-da",
-    "gram:to-iu",
-    "gram:tai"
+    "gram:demo",
+    "gram:gp-15",
+    "gram:tte"
   ],
   "kanji_recognition": [
     "仕",
     "事",
     "必",
     "要",
-    "休",
-    "昨"
+    "家",
+    "金"
   ],
   "shadowing": [
     "sent:tatoeba-1046077",
+    "sent:tatoeba-186900",
     "sent:tatoeba-84568",
+    "sent:tatoeba-147013",
     "sent:tatoeba-184254",
-    "sent:tatoeba-141544",
-    "sent:jec-0320",
-    "sent:tatoeba-172198"
+    "sent:tatoeba-141544"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 267,
+  "cumulative_known_vocab": 274,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:ga-hitsuyou",
-    "gram:yori"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:mitai-da",
-      "examples": [
-        "sent:tatoeba-4216208",
-        "sent:gen-1d94a829f09c",
-        "sent:tatoeba-774692"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tai",
-      "examples": [
-        "sent:tatoeba-83633",
-        "sent:tatoeba-83634",
-        "sent:tatoeba-84964"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Havia quatro móveis no quarto.",
-      "answer_key": "部屋には家具が４点あった。",
-      "accepted_variants": [
-        "へやにはかぐがよんてんあった",
-        "へやにはかぐがよんてんあった。",
-        "へやにわかぐがよんてんあった",
-        "へやにわかぐがよんてんあった。",
-        "部屋には家具が4点あった",
-        "部屋には家具が4点あった。",
-        "部屋には家具が４点あった",
-        "部屋には家具が４点あった。"
-      ],
-      "sentence": "sent:tatoeba-84223",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Estou pensando em dormir mais cedo hoje à noite.",
-      "answer_key": "今夜は早めに寝ようと思う。",
-      "accepted_variants": [
-        "こんやははやめにねようとおもう",
-        "こんやははやめにねようとおもう。",
-        "こんやわはやめにねようとおもう",
-        "こんやわはやめにねようとおもう。",
-        "今夜は早めに寝ようと思う",
-        "今夜は早めに寝ようと思う。"
-      ],
-      "sentence": "sent:tatoeba-3313203",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Poderia me mostrar o quarto?",
-      "answer_key": "部屋を見せていただけますか。",
-      "accepted_variants": [
-        "へやをみせていただけますか",
-        "へやをみせていただけますか。",
-        "部屋を見せていただけますか",
-        "部屋を見せていただけますか。"
-      ],
-      "sentence": "sent:tatoeba-84126",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
-    "items": [
-      "sent:tatoeba-84180",
-      "sent:tatoeba-84132",
-      "sent:tatoeba-84114",
-      "sent:tatoeba-218592",
-      "sent:tatoeba-84124",
-      "sent:tatoeba-77964"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "recap",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 27,
-    "fluency": 6
-  },
   "checkpoint": [
     {
       "id": "so:n3:677",
@@ -165,44 +63,151 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n4:153:754",
+      "id": "cf:n5:2548:475",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "電気",
-        "何処",
-        "生産"
+        "番号",
+        "必要",
+        "買う"
       ]
     },
     {
-      "id": "cf:n4:3790:754",
+      "id": "cf:n5:4187:346",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "読む",
-        "急ぐ",
-        "聞く"
+        "致す",
+        "払う",
+        "何時"
       ]
     },
     {
-      "id": "kr:n4:706",
+      "id": "kr:n4:1329",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ようい",
-        "ねだん",
-        "そんな"
+        "あなた",
+        "ページ",
+        "くるま"
       ]
     },
     {
-      "id": "kr:n4:754",
+      "id": "kr:n5:195",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "おくる",
-        "きらい",
-        "なまえ"
+        "こども",
+        "さげる",
+        "たかい"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:ga-hitsuyou",
+    "gram:gp-36"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:demo",
+      "examples": [
+        "sent:tatoeba-4781",
+        "sent:tatoeba-74951",
+        "sent:tatoeba-76060"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-15",
+      "examples": [
+        "sent:gen-6fe6c769a3a7",
+        "sent:tatoeba-84720",
+        "sent:gen-353c01dbf76e"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-5412a2ccf468",
+        "sent:gen-fee342a8016b",
+        "sent:gen-48c455d520ba"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "\"Será que já não nos encontramos em algum lugar antes?\", perguntou o estudante.",
+      "answer_key": "「以前にどこかで会ったことがありませんか」とその学生はたずねた。",
+      "accepted_variants": [
+        "「いぜんにどこかであったことがありませんか」とそのがくせいはたずねた",
+        "「いぜんにどこかであったことがありませんか」とそのがくせいはたずねた。",
+        "「いぜんにどこかであったことがありませんか」とそのがくせいわたずねた",
+        "「いぜんにどこかであったことがありませんか」とそのがくせいわたずねた。",
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた",
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた。"
+      ],
+      "sentence": "sent:tatoeba-4939",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu tio mora perto da escola.",
+      "answer_key": "おじは学校の近くに住んでいる。",
+      "accepted_variants": [
+        "おじはがっこうのちかくにすんでいる",
+        "おじはがっこうのちかくにすんでいる。",
+        "おじは学校の近くに住んでいる",
+        "おじは学校の近くに住んでいる。",
+        "おじわがっこうのちかくにすんでいる",
+        "おじわがっこうのちかくにすんでいる。"
+      ],
+      "sentence": "sent:tatoeba-227716",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu pai costumava ir de ônibus para o trabalho.",
+      "answer_key": "父は以前はバスで仕事に行ったものだ。",
+      "accepted_variants": [
+        "ちちはいぜんはばすでしごとにいったものだ",
+        "ちちはいぜんはばすでしごとにいったものだ。",
+        "ちちわいぜんわばすでしごとにいったものだ",
+        "ちちわいぜんわばすでしごとにいったものだ。",
+        "父は以前はバスで仕事に行ったものだ",
+        "父は以前はバスで仕事に行ったものだ。"
+      ],
+      "sentence": "sent:tatoeba-84645",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
+    "items": [
+      "sent:tatoeba-78968",
+      "sent:tatoeba-78961",
+      "sent:tatoeba-204702",
+      "sent:tatoeba-10587984",
+      "sent:tatoeba-121103",
+      "sent:tatoeba-84383"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "recap",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 29,
+    "fluency": 6
+  }
 }

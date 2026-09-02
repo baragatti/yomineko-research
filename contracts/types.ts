@@ -465,6 +465,7 @@ export interface SpeakUnit {
   production: {
       accepted_variants?: string[];
       answer_key?: string;
+      kind?: "on-topic" | "review" | "same-stage";
       prompt_pt?: string;
       sentence?: string;
       strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";

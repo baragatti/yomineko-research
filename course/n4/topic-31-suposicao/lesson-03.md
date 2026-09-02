@@ -29,7 +29,7 @@ Essa é uma suposição sua, baseada nos seus próprios sentidos. É diferente d
 #### みたいな + substantivo: "que parece um..."
 Quando a comparação vem antes de um substantivo, use mitai-na. É a versão que qualifica um nome.
 Molde: [substantivo A] みたいな [substantivo B] = "[B] que parece [A]". Exemplo: 氷みたいな手 = "mãos que parecem gelo".
-> 🗣 夢みたいな話だね — É uma história de sonho, né?
+> 🗣 夢みたいな話だね — Parece história de sonho, né?
 Repare na frase acima: 夢 ("sonho") entra como o substantivo A, 話 ("história, conversa") é o substantivo B, e o resultado é "uma história que parece um sonho". O な existe justamente porque vem um substantivo logo atrás, igual aos adjetivos-な.
 
 #### みたいに + verbo/adjetivo: "como / feito"
@@ -63,7 +63,7 @@ Mais alguns vocábulos que combinam bem com comparações:
 > 🗣 バカみたい。 — Que ridículo.
 
 #### Leitura
-> 📖 お前みたいになりたいよ。バカみたい。あの店は今日休みみたいだ私は早く起きることにしている。 — Quero ser igual a você. Que ridículo. Parece que aquela loja está fechada hoje. Faço questão de acordar cedo.
+> 📖 お前みたいになりたいよ。バカみたい。あの店は今日休みみたいだ。私は早く起きることにしている。 — Quero ser igual a você. Que ridículo. Parece que aquela loja está fechada hoje. Faço questão de acordar cedo.
 - Faço uma suposição informal com 〜みたいだ a partir do que vejo ou sinto.
 - Uso みたいな antes de substantivo para dizer "que parece um...".
 - Uso みたいに antes de verbo/adjetivo para dizer "como / feito".

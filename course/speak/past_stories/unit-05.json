@@ -7,74 +7,102 @@
     "pt-BR": "Contar o que aconteceu, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-84089",
-    "sent:tatoeba-10056979",
-    "sent:tatoeba-157573",
     "sent:tatoeba-84567",
     "sent:tatoeba-5217",
-    "sent:tatoeba-170105"
+    "sent:tatoeba-170105",
+    "sent:tatoeba-159016",
+    "sent:tatoeba-228002",
+    "sent:tatoeba-792555"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1244680",
-    "vocab:1092820",
-    "vocab:1242350",
-    "vocab:1198880",
     "vocab:1465720",
     "vocab:1451490",
     "vocab:1172870",
-    "vocab:1009290"
+    "vocab:1463930",
+    "vocab:1001140",
+    "vocab:1039140"
   ],
   "patterns": [
-    "gram:koto-ga-aru",
-    "gram:gp-80",
     "gram:nasai",
-    "gram:gp-12",
-    "gram:ni-suru",
-    "gram:koto"
+    "gram:da-desu",
+    "gram:gp-14",
+    "gram:toki"
   ],
   "kanji_recognition": [
-    "屋",
-    "苦",
-    "探",
-    "部",
-    "労",
-    "昨"
+    "院",
+    "昨",
+    "日",
+    "入",
+    "父",
+    "園"
   ],
   "shadowing": [
-    "sent:tatoeba-84089",
-    "sent:tatoeba-10056979",
-    "sent:tatoeba-157573",
     "sent:tatoeba-84567",
     "sent:tatoeba-5217",
-    "sent:tatoeba-170105"
+    "sent:tatoeba-170105",
+    "sent:tatoeba-159016",
+    "sent:tatoeba-228002",
+    "sent:tatoeba-792555"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 449,
+  "cumulative_known_vocab": 441,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
+  "checkpoint": [
+    {
+      "id": "so:n3:841",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3562:1290",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "急ぐ",
+        "彼女",
+        "強い"
+      ]
+    },
+    {
+      "id": "kr:n4:727",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "だいじょうぶ",
+        "がいこくじん",
+        "どうぶつえん"
+      ]
+    },
+    {
+      "id": "cf:n3:5126:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "雪",
+        "口",
+        "心"
+      ]
+    },
+    {
+      "id": "kr:n4:1094",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "ど",
+        "め",
+        "は"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:gp-19",
+    "gram:gp-9"
+  ],
   "drills": [
-    {
-      "pattern": "gram:koto-ga-aru",
-      "examples": [
-        "sent:tatoeba-11960481",
-        "sent:tatoeba-1897537",
-        "sent:tatoeba-235631"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-80",
-      "examples": [
-        "sent:tatoeba-141431",
-        "sent:tatoeba-189474",
-        "sent:tatoeba-215746"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:nasai",
       "examples": [
@@ -85,72 +113,74 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-12",
+      "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ni-suru",
+      "pattern": "gram:gp-14",
       "examples": [
-        "sent:gen-6bab4422cee3",
-        "sent:tatoeba-223815",
-        "sent:tatoeba-232235"
+        "sent:tatoeba-74036",
+        "sent:tatoeba-74498",
+        "sent:tatoeba-76735"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:koto",
+      "pattern": "gram:toki",
       "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
+        "sent:gen-ff96cd61eb0b",
+        "sent:gen-18f49dd92c9f",
+        "sent:gen-ebd7d352d5d4"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Qual é o motivo da sua viagem?",
-      "answer_key": "旅行の目的は何ですか。",
+      "prompt_pt": "Tive uma conversa agradável com meu vizinho.",
+      "answer_key": "私は近所の人と楽しい会話をしました。",
       "accepted_variants": [
-        "りょこうのもくてきはなんですか",
-        "りょこうのもくてきはなんですか。",
-        "りょこうのもくてきわなんですか",
-        "りょこうのもくてきわなんですか。",
-        "旅行の目的は何ですか",
-        "旅行の目的は何ですか。"
+        "わたしはきんじょのひととたのしいかいわをしました",
+        "わたしはきんじょのひととたのしいかいわをしました。",
+        "わたしわきんじょのひととたのしいかいわをしました",
+        "わたしわきんじょのひととたのしいかいわをしました。",
+        "私は近所の人と楽しい会話をしました",
+        "私は近所の人と楽しい会話をしました。"
       ],
-      "sentence": "sent:tatoeba-78160",
+      "sentence": "sent:tatoeba-157573",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Mas você parece tão feliz toda manhã...",
-      "answer_key": "毎朝とても楽しそうだけど。",
+      "prompt_pt": "\"Qual gravata você vai escolher?\" \"A que comprei ontem.\"",
+      "answer_key": "「ネクタイどれにするの？」「昨日買ったの」",
       "accepted_variants": [
-        "まいあさとてもたのしそうだけど",
-        "まいあさとてもたのしそうだけど。",
-        "毎朝とても楽しそうだけど",
-        "毎朝とても楽しそうだけど。"
+        "「ねくたいどれにするの?」「きのうかったの」",
+        "「ネクタイどれにするの?」「昨日買ったの」",
+        "「ネクタイどれにするの？」「昨日買ったの」"
       ],
-      "sentence": "sent:tatoeba-81342",
+      "sentence": "sent:tatoeba-10056979",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A viagem foi como você esperava?",
-      "answer_key": "旅行は期待通りでしたか。",
+      "prompt_pt": "Às vezes dá trabalho achar um lugar para morar.",
+      "answer_key": "部屋探しは苦労することがある。",
       "accepted_variants": [
-        "りょこうはきたいとおりでしたか",
-        "りょこうはきたいとおりでしたか。",
-        "りょこうわきたいとおりでしたか",
-        "りょこうわきたいとおりでしたか。",
-        "旅行は期待通りでしたか",
-        "旅行は期待通りでしたか。"
+        "へやさがしはくろうすることがある",
+        "へやさがしはくろうすることがある。",
+        "へやさがしわくろうすることがある",
+        "へやさがしわくろうすることがある。",
+        "部屋探しは苦労することがある",
+        "部屋探しは苦労することがある。"
       ],
-      "sentence": "sent:tatoeba-78156",
+      "sentence": "sent:tatoeba-84089",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -161,8 +191,8 @@
       "sent:tatoeba-11706794",
       "sent:tatoeba-214558",
       "sent:jec-0319",
-      "sent:tatoeba-5118",
-      "sent:tatoeba-78134"
+      "sent:tatoeba-171398",
+      "sent:tatoeba-78158"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -170,57 +200,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n4:463:1000",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "張る",
-        "無い",
-        "お礼"
-      ]
-    },
-    {
-      "id": "cf:n4:3562:1290",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "急ぐ",
-        "彼女",
-        "目的"
-      ]
-    },
-    {
-      "id": "kr:n4:1000",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しごと",
-        "おわる",
-        "ようい"
-      ]
-    },
-    {
-      "id": "kr:n4:1211",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こうがい",
-        "おくれる",
-        "たずねる"
-      ]
-    }
-  ]
+  }
 }

@@ -11,8 +11,8 @@
     "sent:tatoeba-1115376",
     "sent:tatoeba-10364750",
     "sent:tatoeba-79093",
-    "sent:tatoeba-200661",
-    "sent:tatoeba-171644"
+    "sent:tatoeba-9819543",
+    "sent:tatoeba-200661"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -21,11 +21,9 @@
     "vocab:1000420",
     "vocab:1277450",
     "vocab:1315840",
+    "vocab:1416830",
     "vocab:1008630",
-    "vocab:1579110",
-    "vocab:1151260",
-    "vocab:1342550",
-    "vocab:1578010",
+    "vocab:1597890",
     "vocab:1103090",
     "vocab:1145310",
     "vocab:1486650",
@@ -34,7 +32,7 @@
     "vocab:1270590"
   ],
   "patterns": [
-    "gram:demo"
+    "gram:temo"
   ],
   "kanji_recognition": [
     "救",
@@ -49,103 +47,14 @@
     "sent:tatoeba-1115376",
     "sent:tatoeba-10364750",
     "sent:tatoeba-79093",
-    "sent:tatoeba-200661",
-    "sent:tatoeba-171644"
+    "sent:tatoeba-9819543",
+    "sent:tatoeba-200661"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 93,
+  "cumulative_known_vocab": 104,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:gp-115",
-    "gram:rareru",
-    "gram:gp-36",
-    "gram:totemo",
-    "gram:temo"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:demo",
-      "examples": [
-        "sent:tatoeba-4781",
-        "sent:tatoeba-74951",
-        "sent:tatoeba-76884"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Eu só sei isto.",
-      "answer_key": "ぼくはこれだけしか知らない。",
-      "accepted_variants": [
-        "ぼくはこれだけしかしらない",
-        "ぼくはこれだけしかしらない。",
-        "ぼくはこれだけしか知らない",
-        "ぼくはこれだけしか知らない。",
-        "ぼくわこれだけしかしらない",
-        "ぼくわこれだけしかしらない。"
-      ],
-      "sentence": "sent:tatoeba-196349",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu preciso de dinheiro.",
-      "answer_key": "ぼくはお金がいる。",
-      "accepted_variants": [
-        "ぼくはおかねがいる",
-        "ぼくはおかねがいる。",
-        "ぼくはお金がいる",
-        "ぼくはお金がいる。",
-        "ぼくわおかねがいる",
-        "ぼくわおかねがいる。"
-      ],
-      "sentence": "sent:tatoeba-196365",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Assim que comprei aquele livro, me arrependi.",
-      "answer_key": "私はその本を買ったとたんに後悔した。",
-      "accepted_variants": [
-        "わたしはそのほんをかったとたんにこうかいした",
-        "わたしはそのほんをかったとたんにこうかいした。",
-        "わたしわそのほんをかったとたんにこうかいした",
-        "わたしわそのほんをかったとたんにこうかいした。",
-        "私はその本を買ったとたんに後悔した",
-        "私はその本を買ったとたんに後悔した。"
-      ],
-      "sentence": "sent:tatoeba-159849",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
-    "items": [
-      "sent:tatoeba-81631",
-      "sent:tatoeba-217663",
-      "sent:tatoeba-9240812",
-      "sent:jec-1593",
-      "sent:tatoeba-76061",
-      "sent:tatoeba-149750"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "recap",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 29,
-    "fluency": 6
-  },
   "checkpoint": [
     {
       "id": "so:n3:714",
@@ -162,9 +71,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "本",
         "何",
-        "彼"
+        "彼",
+        "事"
       ]
     },
     {
@@ -174,7 +83,7 @@
       "distractors": [
         "年",
         "私",
-        "本"
+        "力"
       ]
     },
     {
@@ -183,19 +92,104 @@
       "via": "new-word",
       "distractors": [
         "もんだい",
-        "テーブル",
-        "けっこう"
+        "けっこう",
+        "こんばん"
       ]
     },
     {
-      "id": "kr:n5:199",
+      "id": "kr:n5:258",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "じかん",
-        "とたん",
-        "あなた"
+        "こんな",
+        "しまる",
+        "じかん"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:doushite",
+    "gram:gp-115",
+    "gram:rareru",
+    "gram:gp-36",
+    "gram:totemo"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:temo",
+      "examples": [
+        "sent:gen-fd723f8599f2",
+        "sent:gen-ff6004963148",
+        "sent:tatoeba-5000"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Tudo bem se eu não comer isto?",
+      "answer_key": "これ、食べなくてもいい？",
+      "accepted_variants": [
+        "これ、たべなくてもいい",
+        "これ、たべなくてもいい?",
+        "これ、食べなくてもいい",
+        "これ、食べなくてもいい?",
+        "これ、食べなくてもいい？"
+      ],
+      "sentence": "sent:tatoeba-8748248",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Soube que você comprou uma casa, né.",
+      "answer_key": "家を買ったんだってね。",
+      "accepted_variants": [
+        "いえをかったんだってね",
+        "いえをかったんだってね。",
+        "家を買ったんだってね",
+        "家を買ったんだってね。"
+      ],
+      "sentence": "sent:tatoeba-9240812",
+      "kind": "review",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele comprou uma casa no subúrbio.",
+      "answer_key": "彼が郊外に家を買った",
+      "accepted_variants": [
+        "かれがこうがいにいえをかった",
+        "彼が郊外に家を買った"
+      ],
+      "sentence": "sent:jec-1593",
+      "kind": "review",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
+    "items": [
+      "sent:tatoeba-76061",
+      "sent:tatoeba-149750",
+      "sent:tatoeba-74146",
+      "sent:tatoeba-79848",
+      "sent:tatoeba-8938683",
+      "sent:tatoeba-10094172"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "recap",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  }
 }

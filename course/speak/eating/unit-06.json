@@ -27,7 +27,8 @@
     "vocab:1172660",
     "vocab:1472630",
     "vocab:1155060",
-    "vocab:1421900"
+    "vocab:1421900",
+    "vocab:1176240"
   ],
   "patterns": [
     "gram:itashimasu",
@@ -52,9 +53,56 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 143,
+  "cumulative_known_vocab": 155,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:207",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2778:92",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "彼",
+        "何",
+        "私"
+      ]
+    },
+    {
+      "id": "cf:n5:3370:214",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "外",
+        "話",
+        "係"
+      ]
+    },
+    {
+      "id": "kr:n4:1083",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "よやく",
+        "ねがう"
+      ]
+    },
+    {
+      "id": "kr:n4:796",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなし",
+        "ほしい",
+        "できる"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:nakute-wa-naranai",
     "gram:no-naka-de",
@@ -102,45 +150,45 @@
         "旅行中はほとんど米は食べられなかった。"
       ],
       "sentence": "sent:tatoeba-78125",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "É difícil comer com hashis (pauzinhos)?",
-      "answer_key": "お箸で食べるのは難しいですか？",
+      "prompt_pt": "Produção sob encomenda é fabricar só depois de receber o pedido.",
+      "answer_key": "注文を受けてから作るのが受注生産です。",
       "accepted_variants": [
-        "おはしでたべるのはむずかしいですか",
-        "おはしでたべるのはむずかしいですか?",
-        "おはしでたべるのわむずかしいですか",
-        "おはしでたべるのわむずかしいですか?",
-        "お箸で食べるのは難しいですか",
-        "お箸で食べるのは難しいですか?",
-        "お箸で食べるのは難しいですか？"
+        "ちゅうもんをうけてからつくるのがじゅちゅうせいさんです",
+        "ちゅうもんをうけてからつくるのがじゅちゅうせいさんです。",
+        "注文を受けてから作るのが受注生産です",
+        "注文を受けてから作るのが受注生産です。"
       ],
-      "sentence": "sent:tatoeba-8775094",
+      "sentence": "sent:tatoeba-13440729",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Uma grande canoa avançava cortando a água.",
-      "answer_key": "大きなカヌーが水をきって進んでいた。",
+      "prompt_pt": "Eu faço o almoço todo dia, viu.",
+      "answer_key": "毎日お昼ご飯を作っているよ。",
       "accepted_variants": [
-        "おおきなかぬーがみずをきってすすんでいた",
-        "おおきなかぬーがみずをきってすすんでいた。",
-        "大きなカヌーが水をきって進んでいた",
-        "大きなカヌーが水をきって進んでいた。"
+        "まいにちおひるごはんをつくっているよ",
+        "まいにちおひるごはんをつくっているよ。",
+        "毎日お昼ご飯を作っているよ",
+        "毎日お昼ご飯を作っているよ。"
       ],
-      "sentence": "sent:tatoeba-137747",
+      "sentence": "sent:tatoeba-5220",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
+      "sent:tatoeba-8775094",
       "sent:tatoeba-202470",
-      "sent:tatoeba-182254",
-      "sent:tatoeba-13440729",
       "sent:tatoeba-10617667",
-      "sent:tatoeba-179391",
-      "sent:tatoeba-5329"
+      "sent:tatoeba-10657609",
+      "sent:tatoeba-226845",
+      "sent:tatoeba-226844"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -150,60 +198,13 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 57,
+    "language-focused": 58,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 29,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:207",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2778:92",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "彼",
-        "何",
-        "私"
-      ]
-    },
-    {
-      "id": "cf:n5:3370:214",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "外",
-        "話",
-        "係"
-      ]
-    },
-    {
-      "id": "kr:n4:1083",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "よやく",
-        "ねがう",
-        "あがる"
-      ]
-    },
-    {
-      "id": "kr:n4:796",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はなし",
-        "ほしい",
-        "できる"
-      ]
-    }
-  ]
+  }
 }

@@ -71,7 +71,7 @@ Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか)
 - の次に: depois de, em seguida a, ao lado de.
 
 #### Leitura
-> 📖 どうやって作るか聞いてみたなんにん来るか分かりませんどんなにがんばってみても。これはあれよりも小さい。 — Resolvi perguntar como se faz. Não sei quantas pessoas vão vir. Por mais que eu me esforce... Este é menor do que aquele.
+> 📖 どうやって作るか聞いてみた。なんにん来るか分かりません。どんなにがんばってみても。これはあれよりも小さい。 — Resolvi perguntar como se faz. Não sei quantas pessoas vão vir. Por mais que eu me esforce... Este é menor do que aquele.
 - Comparo dois itens e pergunto qual ganha com AとB、どちらが〜.
 - Embuto uma pergunta dentro da frase com 疑問詞 + か.
 - Uso 以上 para dizer "X ou mais" (incluindo X).

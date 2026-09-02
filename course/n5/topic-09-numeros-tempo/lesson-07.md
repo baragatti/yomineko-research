@@ -63,7 +63,7 @@ Mnemônico de forma: imagine uma muralha quadrada (囗) cercando um rei (王) e 
 #### Hora de praticar
 
 #### Leitura
-> 📖 もしもし。ようこそ！ようこそ。 — Alô. Bem-vindo! Bem-vindo.
+> 📖 もしもし。ようこそ！ありがとう。 — Alô. Bem-vindo! Obrigado.
 - Sei que じしょ (e o antigo じびき) é "dicionário".
 - Diferencio ことば (palavra/língua) do sufixo ご (-ês, como em 日本語).
 - Reconheço ざっし (revista), しんぶん (jornal) e しゃしん (foto).

@@ -7,66 +7,128 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-123440",
+    "sent:tatoeba-206210",
+    "sent:tatoeba-188640",
     "sent:tatoeba-223665",
-    "sent:tatoeba-199509",
-    "sent:tatoeba-8989567",
-    "sent:tatoeba-78628",
-    "sent:tatoeba-201345",
-    "sent:tatoeba-222508"
+    "sent:tatoeba-78565",
+    "sent:tatoeba-124654"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1554310",
+    "vocab:1259210",
+    "vocab:1591430",
+    "vocab:1588730",
+    "vocab:1548370",
     "vocab:1284430",
-    "vocab:1421970",
-    "vocab:1548010",
-    "vocab:1189130",
-    "vocab:1549660",
-    "vocab:1223660",
-    "vocab:1220800",
-    "vocab:1227500",
+    "vocab:1384830",
+    "vocab:1061520",
+    "vocab:1455280",
+    "vocab:1178450",
     "vocab:1066680",
-    "vocab:1374530",
-    "vocab:1593590"
+    "vocab:1555300",
+    "vocab:1238840"
   ],
   "patterns": [
-    "gram:sasete-kudasai",
+    "gram:gozaimasu",
+    "gram:ga-arimasu",
     "gram:te-kudasai",
     "gram:deshou",
-    "gram:gp-89",
-    "gram:donna"
+    "gram:mitai-da",
+    "gram:koto"
   ],
   "kanji_recognition": [
-    "合",
-    "選",
-    "起",
-    "遅",
-    "週",
-    "食"
+    "特",
+    "別",
+    "理",
+    "料",
+    "見",
+    "緑"
   ],
   "shadowing": [
+    "sent:tatoeba-123440",
+    "sent:tatoeba-206210",
+    "sent:tatoeba-188640",
     "sent:tatoeba-223665",
-    "sent:tatoeba-199509",
-    "sent:tatoeba-8989567",
-    "sent:tatoeba-78628",
-    "sent:tatoeba-201345",
-    "sent:tatoeba-222508"
+    "sent:tatoeba-78565",
+    "sent:tatoeba-124654"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 482,
+  "cumulative_known_vocab": 478,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:te-ita"
+  "checkpoint": [
+    {
+      "id": "so:n3:238",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3408",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3408:1276",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "近く",
+        "入院",
+        "見る"
+      ]
+    },
+    {
+      "id": "cf:n4:1274:1021",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "終わり",
+        "手ごろ",
+        "迎える"
+      ]
+    },
+    {
+      "id": "kr:n4:1016",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "らいねん",
+        "なるべく",
+        "せいよう"
+      ]
+    },
+    {
+      "id": "kr:n4:1021",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かかり",
+        "かりる",
+        "じぶん"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:sasete-kudasai",
+      "pattern": "gram:gozaimasu",
       "examples": [
-        "sent:tatoeba-3957479",
-        "sent:tatoeba-2045915",
-        "sent:tatoeba-164807"
+        "sent:tatoeba-335372",
+        "sent:tatoeba-1576172",
+        "sent:tatoeba-8467948"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:ga-arimasu",
+      "examples": [
+        "sent:tatoeba-150175",
+        "sent:tatoeba-150639",
+        "sent:tatoeba-122353"
       ],
       "strand": "language-focused"
     },
@@ -89,60 +151,62 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-89",
+      "pattern": "gram:mitai-da",
       "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
+        "sent:tatoeba-4216208",
+        "sent:tatoeba-774692",
+        "sent:gen-1d94a829f09c"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:donna",
+      "pattern": "gram:koto",
       "examples": [
-        "sent:tatoeba-199382",
-        "sent:tatoeba-171732",
-        "sent:tatoeba-199480"
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Tenho um pedido a fazer. Será que eu poderia pedir um favor?",
-      "answer_key": "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？",
+      "prompt_pt": "Abaixa um pouco o volume do som, por favor.",
+      "answer_key": "少しステレオの音を小さくしてください。",
       "accepted_variants": [
-        "たのみたいことがあります。ちょっとおねがいしてもよろしいでしょうか",
-        "たのみたいことがあります。ちょっとおねがいしてもよろしいでしょうか?",
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか",
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか?",
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？"
+        "すこしすてれおのおとをちいさくしてください",
+        "すこしすてれおのおとをちいさくしてください。",
+        "少しステレオの音を小さくしてください",
+        "少しステレオの音を小さくしてください。"
       ],
-      "sentence": "sent:tatoeba-78565",
+      "sentence": "sent:tatoeba-146860",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por favor, diga o que sente sem cerimônia.",
-      "answer_key": "遠慮なく気持ちをおっしゃってください。",
+      "prompt_pt": "Deixe-me explicar.",
+      "answer_key": "説明させてください。",
       "accepted_variants": [
-        "えんりょなくきもちをおっしゃってください",
-        "えんりょなくきもちをおっしゃってください。",
-        "遠慮なく気持ちをおっしゃってください",
-        "遠慮なく気持ちをおっしゃってください。"
+        "せつめいさせてください",
+        "せつめいさせてください。",
+        "説明させてください",
+        "説明させてください。"
       ],
-      "sentence": "sent:tatoeba-188640",
+      "sentence": "sent:tatoeba-1882978",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Nós temos um prato especial (para o senhor)...",
-      "answer_key": "特別料理がございますが。",
+      "prompt_pt": "Por favor, tranque a porta antes de sair.",
+      "answer_key": "出かける前に、ドアにかぎをかけてください。",
       "accepted_variants": [
-        "とくべつりょうりがございますが",
-        "とくべつりょうりがございますが。",
-        "特別料理がございますが",
-        "特別料理がございますが。"
+        "でかけるまえに、どあにかぎをかけてください",
+        "でかけるまえに、どあにかぎをかけてください。",
+        "出かける前に、ドアにかぎをかけてください",
+        "出かける前に、ドアにかぎをかけてください。"
       ],
-      "sentence": "sent:tatoeba-123440",
+      "sentence": "sent:tatoeba-147801",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -150,11 +214,11 @@
     "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
     "items": [
       "sent:tatoeba-146189",
+      "sent:tatoeba-78628",
       "sent:tatoeba-226013",
       "sent:tatoeba-5109",
-      "sent:tatoeba-147431",
-      "sent:tatoeba-8467948",
-      "sent:tatoeba-4854"
+      "sent:tatoeba-226794",
+      "sent:tatoeba-146817"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -162,67 +226,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
-    "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "meaning-input": 21,
+    "meaning-output": 5,
+    "language-focused": 64,
+    "fluency": 10
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 37,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:238",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:476",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:476:1010",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "借りる",
-        "小さな",
-        "危ない"
-      ]
-    },
-    {
-      "id": "cf:n4:475:1010",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "入れる",
-        "新しい",
-        "起こす"
-      ]
-    },
-    {
-      "id": "kr:n4:1010",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せんぱい",
-        "すうがく",
-        "しょくじ"
-      ]
-    },
-    {
-      "id": "kr:n4:1087",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ため",
-        "やく",
-        "いち"
-      ]
-    }
-  ]
+  }
 }

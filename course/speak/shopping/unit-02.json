@@ -7,127 +7,181 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-10094172",
-    "sent:tatoeba-8938683",
-    "sent:tatoeba-79848",
-    "sent:tatoeba-2941029",
-    "sent:tatoeba-229178",
-    "sent:tatoeba-205771"
+    "sent:tatoeba-220250",
+    "sent:tatoeba-190094",
+    "sent:jec-2434",
+    "sent:tatoeba-233659",
+    "sent:tatoeba-185332",
+    "sent:tatoeba-145755"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1587040",
-    "vocab:1536010",
-    "vocab:1001820",
+    "vocab:1323080",
+    "vocab:1165970",
+    "vocab:1352290",
+    "vocab:1042610",
+    "vocab:1184160",
     "vocab:1223615",
-    "vocab:1270810",
-    "vocab:1219980"
+    "vocab:1009320",
+    "vocab:1221250",
+    "vocab:1040250",
+    "vocab:1457440",
+    "vocab:1358680"
   ],
   "patterns": [
-    "gram:gp-134",
-    "gram:nikui"
+    "gram:deshou",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "言",
-    "金",
-    "題",
-    "問",
-    "何",
-    "私"
+    "豚",
+    "肉",
+    "一",
+    "高",
+    "車",
+    "番"
   ],
   "shadowing": [
-    "sent:tatoeba-10094172",
-    "sent:tatoeba-8938683",
-    "sent:tatoeba-79848",
-    "sent:tatoeba-2941029",
-    "sent:tatoeba-229178",
-    "sent:tatoeba-205771"
+    "sent:tatoeba-220250",
+    "sent:tatoeba-190094",
+    "sent:jec-2434",
+    "sent:tatoeba-233659",
+    "sent:tatoeba-185332",
+    "sent:tatoeba-145755"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 49,
+  "cumulative_known_vocab": 67,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:210",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:500:1123",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "会う",
+        "此れ",
+        "半分"
+      ]
+    },
+    {
+      "id": "cf:n4:1447:1123",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "降る",
+        "高い",
+        "始め"
+      ]
+    },
+    {
+      "id": "kr:n4:1123",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ねだん",
+        "くるま",
+        "あまり"
+      ]
+    },
+    {
+      "id": "kr:n4:1178",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ねがう",
+        "よやく",
+        "あまり"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:to-iu-koto",
-    "gram:gp-117",
-    "gram:to-iu",
-    "gram:gp-147"
+    "gram:gp-59",
+    "gram:gari",
+    "gram:garu-gatteiru",
+    "gram:gp-75"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-134",
+      "pattern": "gram:deshou",
       "examples": [
-        "sent:tatoeba-8687007",
-        "sent:tatoeba-8719362",
-        "sent:tatoeba-3488181"
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454",
+        "sent:tatoeba-98793"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:nikui",
+      "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-9458223",
-        "sent:tatoeba-10006818",
-        "sent:tatoeba-11995722"
+        "sent:tatoeba-5332",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-74498"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Este é menor do que aquele.",
-      "answer_key": "これはあれよりも小さい。",
+      "prompt_pt": "Eu acho que devíamos baixar o preço.",
+      "answer_key": "値段を下げるべきだと思います。",
       "accepted_variants": [
-        "これはあれよりもちいさい",
-        "これはあれよりもちいさい。",
-        "これはあれよりも小さい",
-        "これはあれよりも小さい。",
-        "これわあれよりもちいさい",
-        "これわあれよりもちいさい。"
+        "ねだんをさげるべきだとおもいます",
+        "ねだんをさげるべきだとおもいます。",
+        "値段を下げるべきだと思います",
+        "値段を下げるべきだと思います。"
       ],
-      "sentence": "sent:tatoeba-218647",
+      "sentence": "sent:tatoeba-2123447",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Aquilo é uma mesa.",
-      "answer_key": "あれはテーブルです。",
+      "prompt_pt": "O pagamento deve ser feito no caixa, por favor.",
+      "answer_key": "代金はレジでお払い下さい。",
       "accepted_variants": [
-        "あれはてーぶるです",
-        "あれはてーぶるです。",
-        "あれはテーブルです",
-        "あれはテーブルです。",
-        "あれわてーぶるです",
-        "あれわてーぶるです。"
+        "だいきんはれじでおはらいください",
+        "だいきんはれじでおはらいください。",
+        "だいきんわれじでおはらいください",
+        "だいきんわれじでおはらいください。",
+        "代金はレジでお払い下さい",
+        "代金はレジでお払い下さい。"
       ],
-      "sentence": "sent:tatoeba-229736",
+      "sentence": "sent:tatoeba-137848",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Aquilo é um gato?",
-      "answer_key": "あれはネコですか。",
+      "prompt_pt": "Quanto custa o quarto?",
+      "answer_key": "部屋代はいくらですか？",
       "accepted_variants": [
-        "あれはねこですか",
-        "あれはねこですか。",
-        "あれはネコですか",
-        "あれはネコですか。",
-        "あれわねこですか",
-        "あれわねこですか。"
+        "へやだいはいくらですか",
+        "へやだいはいくらですか?",
+        "へやだいわいくらですか",
+        "へやだいわいくらですか?",
+        "部屋代はいくらですか",
+        "部屋代はいくらですか?",
+        "部屋代はいくらですか？"
       ],
-      "sentence": "sent:tatoeba-229731",
+      "sentence": "sent:tatoeba-84094",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-229742",
-      "sent:tatoeba-229723",
-      "sent:tatoeba-229628",
-      "sent:tatoeba-229460",
-      "sent:tatoeba-1874351",
-      "sent:tatoeba-229425"
+      "sent:tatoeba-127122",
+      "sent:tatoeba-9930561",
+      "sent:tatoeba-5332",
+      "sent:gen-1d921e8b2ad3",
+      "sent:tatoeba-10901919",
+      "sent:tatoeba-5057"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -135,62 +189,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n5:4968",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2501:102",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "願う",
-        "無い",
-        "見る"
-      ]
-    },
-    {
-      "id": "cf:n5:4093:44",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "問題",
-        "願う",
-        "見る"
-      ]
-    },
-    {
-      "id": "kr:n4:897",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いくら",
-        "かかり",
-        "はなし"
-      ]
-    },
-    {
-      "id": "kr:n5:102",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "わたし",
-        "かかり",
-        "ズボン"
-      ]
-    }
-  ]
+  }
 }

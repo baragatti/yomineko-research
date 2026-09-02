@@ -7,149 +7,215 @@
     "pt-BR": "Chegar aonde você quer, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-10263746",
-    "sent:tatoeba-141046",
-    "sent:tatoeba-141127",
-    "sent:tatoeba-79250",
-    "sent:tatoeba-163785",
-    "sent:jec-3201"
+    "sent:tatoeba-126861",
+    "sent:tatoeba-141381",
+    "sent:tatoeba-234850",
+    "sent:jec-0673",
+    "sent:tatoeba-137633",
+    "sent:tatoeba-220272"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1404630",
-    "vocab:1588730",
-    "vocab:1602800",
-    "vocab:1432680",
-    "vocab:1541620",
-    "vocab:1249900",
-    "vocab:1323560",
-    "vocab:1318720",
-    "vocab:1290800",
-    "vocab:1279990"
+    "vocab:1390020",
+    "vocab:1402730",
+    "vocab:1445160",
+    "vocab:1413240",
+    "vocab:1589060",
+    "vocab:1381390",
+    "vocab:1177800",
+    "vocab:2394370",
+    "vocab:1467710",
+    "vocab:1427900",
+    "vocab:1391780",
+    "vocab:1108180"
   ],
   "patterns": [
-    "gram:gp-49",
-    "gram:da-desu",
-    "gram:gp-39",
-    "gram:gp-8"
+    "gram:te-itadakemasen-ka",
+    "gram:masen-ka",
+    "gram:gp-149",
+    "gram:to-iu",
+    "gram:gp-17"
   ],
   "kanji_recognition": [
-    "左",
-    "足",
-    "痛",
-    "死",
-    "自",
-    "選"
+    "図",
+    "青",
+    "川",
+    "線",
+    "地",
+    "表"
   ],
   "shadowing": [
-    "sent:tatoeba-10263746",
-    "sent:tatoeba-141046",
-    "sent:tatoeba-141127",
-    "sent:tatoeba-79250",
-    "sent:tatoeba-163785",
-    "sent:jec-3201"
+    "sent:tatoeba-126861",
+    "sent:tatoeba-141381",
+    "sent:tatoeba-234850",
+    "sent:jec-0673",
+    "sent:tatoeba-137633",
+    "sent:tatoeba-220272"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 202,
+  "cumulative_known_vocab": 209,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:771",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:771",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4691:2312",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "分",
+        "頃",
+        "円"
+      ]
+    },
+    {
+      "id": "cf:n5:12:362",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "迚も",
+        "帰り",
+        "青い"
+      ]
+    },
+    {
+      "id": "kr:n4:1138",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなし",
+        "くるま",
+        "くうき"
+      ]
+    },
+    {
+      "id": "kr:n4:855",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やくそく",
+        "かんけい",
+        "はんぶん"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:no-naka-de",
-    "gram:wa-yori-desu"
+    "gram:te-ita"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-49",
+      "pattern": "gram:te-itadakemasen-ka",
       "examples": [
-        "sent:tatoeba-201028",
-        "sent:gen-a0241d2a988e",
-        "sent:gen-4b81bb2c6fa6"
+        "sent:tatoeba-146797",
+        "sent:tatoeba-148943",
+        "sent:tatoeba-124645"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:masen-ka",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:gen-4595bdeb6907",
+        "sent:gen-a94929c3a847",
+        "sent:tatoeba-172871"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-39",
+      "pattern": "gram:gp-149",
       "examples": [
-        "sent:tatoeba-5115",
-        "sent:tatoeba-192503",
-        "sent:tatoeba-192553"
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-83623"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-8",
+      "pattern": "gram:to-iu",
       "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-150175",
-        "sent:tatoeba-11795596"
+        "sent:tatoeba-80587",
+        "sent:tatoeba-80590",
+        "sent:tatoeba-76549"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Meu pai tem previsão de chegar à estação às cinco horas.",
-      "answer_key": "父は５時に駅に着く予定だ。",
+      "prompt_pt": "Como se chama este cruzamento?",
+      "answer_key": "この交差点は何と呼ばれていますか。",
       "accepted_variants": [
-        "ちちはごじにえきにつくよていだ",
-        "ちちはごじにえきにつくよていだ。",
-        "ちちわごじにえきにつくよていだ",
-        "ちちわごじにえきにつくよていだ。",
-        "父は5時に駅に着く予定だ",
-        "父は5時に駅に着く予定だ。",
-        "父は５時に駅に着く予定だ",
-        "父は５時に駅に着く予定だ。"
+        "このこうさてんはなんとよばれていますか",
+        "このこうさてんはなんとよばれていますか。",
+        "このこうさてんわなんとよばれていますか",
+        "このこうさてんわなんとよばれていますか。",
+        "この交差点は何と呼ばれていますか",
+        "この交差点は何と呼ばれていますか。"
       ],
-      "sentence": "sent:tatoeba-84766",
+      "sentence": "sent:tatoeba-222010",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por essa rua não dá, viu. É que está em obras.",
-      "answer_key": "この道を行ってもダメですよ。工事中ですから。",
+      "prompt_pt": "\"Será que já não nos encontramos em algum lugar antes?\", perguntou o estudante.",
+      "answer_key": "「以前にどこかで会ったことがありませんか」とその学生はたずねた。",
       "accepted_variants": [
-        "このみちをいってもだめですよ。こうじちゅうですから",
-        "このみちをいってもだめですよ。こうじちゅうですから。",
-        "この道を行ってもダメですよ。工事中ですから",
-        "この道を行ってもダメですよ。工事中ですから。"
+        "「いぜんにどこかであったことがありませんか」とそのがくせいはたずねた",
+        "「いぜんにどこかであったことがありませんか」とそのがくせいはたずねた。",
+        "「いぜんにどこかであったことがありませんか」とそのがくせいわたずねた",
+        "「いぜんにどこかであったことがありませんか」とそのがくせいわたずねた。",
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた",
+        "「以前にどこかで会ったことがありませんか」とその学生はたずねた。"
       ],
-      "sentence": "sent:tatoeba-220272",
+      "sentence": "sent:tatoeba-4939",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A universidade fica longe da estação.",
-      "answer_key": "大学は駅から遠いんです。",
+      "prompt_pt": "O ônibus acabou de sair agora.",
+      "answer_key": "バスは今出発したところだ。",
       "accepted_variants": [
-        "だいがくはえきからとおいんです",
-        "だいがくはえきからとおいんです。",
-        "だいがくわえきからとおいんです",
-        "だいがくわえきからとおいんです。",
-        "大学は駅から遠いんです",
-        "大学は駅から遠いんです。"
+        "ばすはいましゅっぱつしたところだ",
+        "ばすはいましゅっぱつしたところだ。",
+        "ばすわいましゅっぱつしたところだ",
+        "ばすわいましゅっぱつしたところだ。",
+        "バスは今出発したところだ",
+        "バスは今出発したところだ。"
       ],
-      "sentence": "sent:tatoeba-137633",
+      "sentence": "sent:tatoeba-198112",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
-      "sent:jec-0673",
-      "sent:tatoeba-234850",
-      "sent:tatoeba-141381",
       "sent:tatoeba-158256",
       "sent:tatoeba-200926",
-      "sent:tatoeba-193061"
+      "sent:tatoeba-187339",
+      "sent:tatoeba-157014",
+      "sent:tatoeba-10725053",
+      "sent:tatoeba-182700"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -157,67 +223,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 34,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:431",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:483",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n4:1242",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ちから",
-        "さげる",
-        "とおい"
-      ]
-    },
-    {
-      "id": "kr:n4:933",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いくら",
-        "じゆう",
-        "ビール"
-      ]
-    },
-    {
-      "id": "cf:n3:20:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "米",
-        "傘",
-        "本"
-      ]
-    },
-    {
-      "id": "cf:n3:3431:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "靴",
-        "家",
-        "円"
-      ]
-    }
-  ]
+  }
 }

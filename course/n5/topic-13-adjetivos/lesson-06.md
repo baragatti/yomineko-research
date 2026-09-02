@@ -44,7 +44,7 @@ De きらい nasce um primo curtinho e muito usado:嫌, lido いや. É um adjet
 
 > **[example]**
 Veja uma frase real, curtinha e carregada de emoção, usando すき no negativo:
-> 🗣 もう好きじゃない。 — Não gosto mais (de você).
+> 🗣 もう好きじゃない。 — Não gosto mais de você.
 Aqui もう é "já" e, junto com a negação, vira "já não / não mais". A forma すきじゃない é o negativo casual de すき(= "não é agradável"). O alvo do gosto ("você") fica subentendido pelo contexto, bem japonês.
 
 #### 好き e 上手 andam juntos

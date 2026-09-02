@@ -21,8 +21,7 @@
     "vocab:1215790",
     "vocab:1480670",
     "vocab:1346150",
-    "vocab:1242970",
-    "vocab:1019420"
+    "vocab:1242970"
   ],
   "patterns": [
     "gram:kamo-shirenai",
@@ -53,130 +52,6 @@
   "cumulative_known_vocab": 524,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
-  "drills": [
-    {
-      "pattern": "gram:kamo-shirenai",
-      "examples": [
-        "sent:tatoeba-2684823",
-        "sent:tatoeba-188036",
-        "sent:tatoeba-152614"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:hazu-ga-nai",
-      "examples": [
-        "sent:tatoeba-11692639",
-        "sent:tatoeba-81586",
-        "sent:tatoeba-141784"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:masen-ka",
-      "examples": [
-        "sent:gen-4595bdeb6907",
-        "sent:gen-24bb23e4256e",
-        "sent:gen-a94929c3a847"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-83623"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-89",
-      "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Não consigo compreender o motivo.",
-      "answer_key": "理由がわかりかねます。",
-      "accepted_variants": [
-        "りゆうがわかりかねます",
-        "りゆうがわかりかねます。",
-        "理由がわかりかねます",
-        "理由がわかりかねます。"
-      ],
-      "sentence": "sent:tatoeba-78366",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Não é possível que eles tenham perdido a partida.",
-      "answer_key": "試合に負けたはずがない。",
-      "accepted_variants": [
-        "しあいにまけたはずがない",
-        "しあいにまけたはずがない。",
-        "試合に負けたはずがない",
-        "試合に負けたはずがない。"
-      ],
-      "sentence": "sent:tatoeba-151044",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Sobre isto, eu devo estar certo.",
-      "answer_key": "これについては、私は正しいはずです。",
-      "accepted_variants": [
-        "これについては、わたしはただしいはずです",
-        "これについては、わたしはただしいはずです。",
-        "これについては、私は正しいはずです",
-        "これについては、私は正しいはずです。",
-        "これについてわ、わたしわただしいはずです",
-        "これについてわ、わたしわただしいはずです。"
-      ],
-      "sentence": "sent:tatoeba-5348453",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
-    "items": [
-      "sent:tatoeba-119734",
-      "sent:tatoeba-11692639",
-      "sent:tatoeba-77555",
-      "sent:tatoeba-162311",
-      "sent:tatoeba-81566",
-      "sent:tatoeba-84069"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "situation",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  },
   "checkpoint": [
     {
       "id": "cf:n4:3764:1348",
@@ -218,5 +93,132 @@
         "かぜ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:kamo-shirenai",
+      "examples": [
+        "sent:tatoeba-2684823",
+        "sent:tatoeba-188036",
+        "sent:tatoeba-152614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:hazu-ga-nai",
+      "examples": [
+        "sent:tatoeba-11692639",
+        "sent:tatoeba-81586",
+        "sent:tatoeba-141784"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:masen-ka",
+      "examples": [
+        "sent:gen-4595bdeb6907",
+        "sent:gen-24bb23e4256e",
+        "sent:gen-a94929c3a847"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-149",
+      "examples": [
+        "sent:tatoeba-77812",
+        "sent:tatoeba-4856",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-97605"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Não consigo compreender o motivo.",
+      "answer_key": "理由がわかりかねます。",
+      "accepted_variants": [
+        "りゆうがわかりかねます",
+        "りゆうがわかりかねます。",
+        "理由がわかりかねます",
+        "理由がわかりかねます。"
+      ],
+      "sentence": "sent:tatoeba-78366",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não é possível que eles tenham perdido a partida.",
+      "answer_key": "試合に負けたはずがない。",
+      "accepted_variants": [
+        "しあいにまけたはずがない",
+        "しあいにまけたはずがない。",
+        "試合に負けたはずがない",
+        "試合に負けたはずがない。"
+      ],
+      "sentence": "sent:tatoeba-151044",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Sobre isto, eu devo estar certo.",
+      "answer_key": "これについては、私は正しいはずです。",
+      "accepted_variants": [
+        "これについては、わたしはただしいはずです",
+        "これについては、わたしはただしいはずです。",
+        "これについては、私は正しいはずです",
+        "これについては、私は正しいはずです。",
+        "これについてわ、わたしわただしいはずです",
+        "これについてわ、わたしわただしいはずです。"
+      ],
+      "sentence": "sent:tatoeba-5348453",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
+    "items": [
+      "sent:tatoeba-119734",
+      "sent:tatoeba-11692639",
+      "sent:tatoeba-77555",
+      "sent:tatoeba-77523",
+      "sent:tatoeba-84229",
+      "sent:tatoeba-224121"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "situation",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 27,
+    "fluency": 6
+  }
 }

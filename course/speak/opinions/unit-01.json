@@ -7,51 +7,95 @@
     "pt-BR": "Dizer o que você acha, parte 1"
   },
   "say_now": [
+    "sent:tatoeba-74350",
     "sent:tatoeba-81566",
     "sent:tatoeba-162311",
     "sent:tatoeba-209394",
     "sent:tatoeba-77523",
-    "sent:tatoeba-77555",
-    "sent:tatoeba-77522"
+    "sent:tatoeba-77555"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1465610",
     "vocab:1359070",
     "vocab:1394800",
     "vocab:1344970",
     "vocab:1558370",
     "vocab:1449870",
+    "vocab:1562670",
     "vocab:1476430"
   ],
   "patterns": [
     "gram:kamo-shirenai",
-    "gram:hazu-da",
     "gram:gp-89",
+    "gram:darou",
     "gram:gp-32",
-    "gram:gp-120"
+    "gram:gp-115"
   ],
   "kanji_recognition": [
+    "早",
+    "方",
     "信",
     "当",
-    "方",
     "本",
-    "意",
-    "見"
+    "意"
   ],
   "shadowing": [
+    "sent:tatoeba-74350",
     "sent:tatoeba-81566",
     "sent:tatoeba-162311",
     "sent:tatoeba-209394",
     "sent:tatoeba-77523",
-    "sent:tatoeba-77555",
-    "sent:tatoeba-77522"
+    "sent:tatoeba-77555"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 513,
+  "cumulative_known_vocab": 514,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:4260:2932",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "必要",
+        "送る",
+        "食堂"
+      ]
+    },
+    {
+      "id": "cf:n5:2809:71",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "終わる",
+        "初めて",
+        "何時も"
+      ]
+    },
+    {
+      "id": "kr:n5:136",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "りょうしん",
+        "おもいだす",
+        "ありがとう"
+      ]
+    },
+    {
+      "id": "kr:n5:71",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "てがみ",
+        "むかし",
+        "しずか"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:hazu-ga-nai"
   ],
@@ -66,20 +110,20 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:hazu-da",
-      "examples": [
-        "sent:tatoeba-519050",
-        "sent:tatoeba-198131",
-        "sent:tatoeba-11173182"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:gp-89",
       "examples": [
         "sent:tatoeba-4855",
         "sent:tatoeba-144038",
         "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:darou",
+      "examples": [
+        "sent:tatoeba-80452",
+        "sent:tatoeba-85312",
+        "sent:tatoeba-84837"
       ],
       "strand": "language-focused"
     },
@@ -93,62 +137,69 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-120",
+      "pattern": "gram:gp-115",
       "examples": [
-        "sent:tatoeba-193408",
-        "sent:gen-40a736aa4ac8",
-        "sent:gen-5bccb5134f4a"
+        "sent:gen-7506a021dd5b",
+        "sent:gen-4c4eb1f80410",
+        "sent:tatoeba-123138"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Me dá um envelope, por favor.",
-      "answer_key": "封筒をください。",
+      "prompt_pt": "Provavelmente está tudo bem.",
+      "answer_key": "たぶん大丈夫だ。",
       "accepted_variants": [
-        "ふうとうをください",
-        "ふうとうをください。",
-        "封筒をください",
-        "封筒をください。"
+        "たぶんだいじょうぶだ",
+        "たぶんだいじょうぶだ。",
+        "たぶん大丈夫だ",
+        "たぶん大丈夫だ。"
       ],
-      "sentence": "sent:tatoeba-84069",
+      "sentence": "sent:tatoeba-203344",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por favor, ferva um pouco de água.",
-      "answer_key": "お湯を少し沸かしてください。",
+      "prompt_pt": "Eu talvez morra amanhã.",
+      "answer_key": "私は明日死ぬかもしれない。",
       "accepted_variants": [
-        "おゆをすこしわかしてください",
-        "おゆをすこしわかしてください。",
-        "お湯を少し沸かしてください",
-        "お湯を少し沸かしてください。"
+        "わたしはあすしぬかもしれない",
+        "わたしはあすしぬかもしれない。",
+        "わたしわあすしぬかもしれない",
+        "わたしわあすしぬかもしれない。",
+        "私は明日死ぬかもしれない",
+        "私は明日死ぬかもしれない。"
       ],
-      "sentence": "sent:tatoeba-226794",
+      "sentence": "sent:tatoeba-152614",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Decida-se: ou sai, ou entra.",
-      "answer_key": "出るか入るかどちらかにしてください。",
+      "prompt_pt": "Amanhã talvez chova.",
+      "answer_key": "明日は雨かもしれない。",
       "accepted_variants": [
-        "でるかはいるかどちらかにしてください",
-        "でるかはいるかどちらかにしてください。",
-        "出るか入るかどちらかにしてください",
-        "出るか入るかどちらかにしてください。"
+        "あすはあめかもしれない",
+        "あすはあめかもしれない。",
+        "あすわあめかもしれない",
+        "あすわあめかもしれない。",
+        "明日は雨かもしれない",
+        "明日は雨かもしれない。"
       ],
-      "sentence": "sent:tatoeba-147768",
+      "sentence": "sent:tatoeba-2684823",
+      "kind": "on-topic",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
-      "sent:tatoeba-9812759",
-      "sent:tatoeba-10117518",
+      "sent:tatoeba-84229",
       "sent:tatoeba-224121",
-      "sent:tatoeba-80618",
+      "sent:tatoeba-80049",
       "sent:tatoeba-214616",
-      "sent:tatoeba-220381"
+      "sent:tatoeba-220381",
+      "sent:tatoeba-9969670"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -156,57 +207,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:4260:2932",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "必要",
-        "送る",
-        "食堂"
-      ]
-    },
-    {
-      "id": "cf:n5:726:136",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "分かる",
-        "昼ご飯",
-        "嬉しい"
-      ]
-    },
-    {
-      "id": "kr:n5:136",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おとうさん",
-        "りょうしん",
-        "しょうねん"
-      ]
-    },
-    {
-      "id": "kr:n4:1185",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "なに",
-        "ため",
-        "もう"
-      ]
-    }
-  ]
+  }
 }

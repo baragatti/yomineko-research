@@ -64,7 +64,7 @@ Na segunda frase,間違えた("errei") +名前("nome") +書きなおす: errou, 
 #### Hora de praticar
 
 #### Leitura
-> 📖 やってみるつもりだ。もう一度やってみる。トライしてみる。やってみる。 — Pretendo experimentar fazer. Vou tentar mais uma vez. Vou tentar. Vou tentar fazer.
+> 📖 やってみるつもりだ。もう一度やってみる。トライしてみる。新しく始めてみようと思う。 — Pretendo experimentar fazer. Vou tentar mais uma vez. Vou tentar. Acho que vou tentar começar de novo (do zero).
 - Sei formar 〜てみる com a forma て e usar para "experimentar / tentar pra ver".
 - Sei usar 〜ておく (e a contração 〜とく) para deixar algo feito de antemão.
 - Sei colar 〜なおす ao radical do verbo para "refazer / corrigir".

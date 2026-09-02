@@ -7,73 +7,129 @@
     "pt-BR": "Chegar aonde você quer, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-182700",
+    "sent:tatoeba-10725053",
     "sent:tatoeba-4786026",
     "sent:tatoeba-10899657",
     "sent:tatoeba-203709",
-    "sent:tatoeba-75827",
-    "sent:tatoeba-9145503",
-    "sent:tatoeba-193061"
+    "sent:tatoeba-75827"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1382980",
     "vocab:1519210",
     "vocab:1404975",
     "vocab:1461140",
     "vocab:1514320",
-    "vocab:1422970",
     "vocab:1454080",
     "vocab:1301940",
-    "vocab:1012800",
-    "vocab:1076190"
+    "vocab:1076190",
+    "vocab:1227500"
   ],
   "patterns": [
-    "gram:te-iku",
-    "gram:gp-10"
+    "gram:darou",
+    "gram:gp-18",
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "傘",
+    "休",
+    "中",
+    "行",
     "車",
     "電",
-    "忘",
-    "歩",
-    "道"
+    "傘"
   ],
   "shadowing": [
+    "sent:tatoeba-182700",
+    "sent:tatoeba-10725053",
     "sent:tatoeba-4786026",
     "sent:tatoeba-10899657",
     "sent:tatoeba-203709",
-    "sent:tatoeba-75827",
-    "sent:tatoeba-9145503",
-    "sent:tatoeba-193061"
+    "sent:tatoeba-75827"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 172,
+  "cumulative_known_vocab": 185,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:755",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2498:649",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "致す",
+        "以前",
+        "何時"
+      ]
+    },
+    {
+      "id": "cf:n5:2757:480",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "事",
+        "係",
+        "日"
+      ]
+    },
+    {
+      "id": "kr:n4:739",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "すすむ",
+        "はこぶ"
+      ]
+    },
+    {
+      "id": "kr:n5:155",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あの",
+        "いえ",
+        "よむ"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:yatto",
-    "gram:darou",
     "gram:gp-36",
+    "gram:tsumori",
     "gram:yori"
   ],
   "drills": [
     {
-      "pattern": "gram:te-iku",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:tatoeba-12642529",
-        "sent:tatoeba-7298759",
-        "sent:tatoeba-157850"
+        "sent:tatoeba-84837",
+        "sent:tatoeba-80452",
+        "sent:tatoeba-81544"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-10",
+      "pattern": "gram:gp-18",
       "examples": [
-        "sent:tatoeba-97651",
-        "sent:tatoeba-99799",
-        "sent:tatoeba-78316"
+        "sent:gen-caa85f6bf50a",
+        "sent:gen-145d7fcd0d32",
+        "sent:tatoeba-97651"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     }
@@ -89,6 +145,7 @@
         "空港まで父を迎えに行きました。"
       ],
       "sentence": "sent:tatoeba-179327",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -103,6 +160,7 @@
         "駅へはどのように行けばよいですか。"
       ],
       "sentence": "sent:tatoeba-188877",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -117,6 +175,7 @@
         "おじわがっこうのちかくにすんでいる。"
       ],
       "sentence": "sent:tatoeba-227716",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
@@ -127,8 +186,8 @@
       "sent:tatoeba-4802",
       "sent:tatoeba-198139",
       "sent:tatoeba-201017",
-      "sent:tatoeba-162318",
-      "sent:tatoeba-10725053"
+      "sent:tatoeba-191220",
+      "sent:tatoeba-78125"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -136,62 +195,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:755",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2757:480",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "事",
-        "係",
-        "日"
-      ]
-    },
-    {
-      "id": "cf:n5:2810:480",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "僕",
-        "道",
-        "円"
-      ]
-    },
-    {
-      "id": "kr:n5:155",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あの",
-        "いえ",
-        "よむ"
-      ]
-    },
-    {
-      "id": "kr:n5:40",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "うける",
-        "つもり",
-        "さげる"
-      ]
-    }
-  ]
+  }
 }

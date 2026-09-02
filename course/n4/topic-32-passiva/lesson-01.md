@@ -30,7 +30,7 @@ Todo verbo na passiva vira um ichidan terminado em れる. Por isso você o conj
 O receptor vira o tópico, e quem fez a ação (o agente) ganha a partícula に("por"). O molde é (receptor) は (agente) に (verbo passivo).
 > 🗣 先生にほめられた — Fui elogiado pelo professor.
 Compare com a ativa 先生は私を褒めた("o professor me elogiou"). Na passiva, eu passo a ser o tópico e o professor recebe に:先生に褒められた.
-> 🗣 先生に名前を呼ばれた — O professor me chamou pelo nome.
+> 🗣 先生に名前を呼ばれた — O professor chamou o meu nome.
 Repare que 名前("nome") ainda leva を: a ação ainda recai sobre o nome, mas quem é afetado por isso sou eu. Ao pé da letra, "(eu) tive o nome chamado pelo professor".
 
 #### A passiva sofrida: quando algo te prejudica

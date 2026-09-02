@@ -7,133 +7,201 @@
     "pt-BR": "Falar de você, parte 4"
   },
   "say_now": [
+    "sent:tatoeba-142954",
+    "sent:tatoeba-11727272",
+    "sent:tatoeba-233401",
     "sent:tatoeba-164626",
-    "sent:tatoeba-10760527",
-    "sent:tatoeba-196355",
-    "sent:tatoeba-10899638",
-    "sent:tatoeba-217273",
-    "sent:tatoeba-80379"
+    "sent:tatoeba-11005020",
+    "sent:tatoeba-84216"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1192150",
+    "vocab:1413660",
+    "vocab:1378860",
     "vocab:1582670",
-    "vocab:1593670",
-    "vocab:1333500",
-    "vocab:1533580",
-    "vocab:1214330",
-    "vocab:1332760",
-    "vocab:1091500",
-    "vocab:1155180"
+    "vocab:1582120",
+    "vocab:1580820",
+    "vocab:1589590",
+    "vocab:1157080",
+    "vocab:1365850",
+    "vocab:1219680",
+    "vocab:1377030"
   ],
   "patterns": [
-    "gram:deshou",
-    "gram:made-ni",
-    "gram:gp-81"
+    "gram:gp-142",
+    "gram:gp-17",
+    "gram:koto",
+    "gram:da-desu",
+    "gram:gp-21"
   ],
   "kanji_recognition": [
-    "外",
-    "国",
-    "私",
-    "人",
-    "達",
-    "友"
+    "家",
+    "過",
+    "間",
+    "月",
+    "時",
+    "正"
   ],
   "shadowing": [
+    "sent:tatoeba-142954",
+    "sent:tatoeba-11727272",
+    "sent:tatoeba-233401",
     "sent:tatoeba-164626",
-    "sent:tatoeba-10760527",
-    "sent:tatoeba-196355",
-    "sent:tatoeba-10899638",
-    "sent:tatoeba-217273",
-    "sent:tatoeba-80379"
+    "sent:tatoeba-11005020",
+    "sent:tatoeba-84216"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 298,
+  "cumulative_known_vocab": 304,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:197:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "頁",
+        "六",
+        "港"
+      ]
+    },
+    {
+      "id": "cf:n4:5456:894",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "何時も",
+        "そんな",
+        "有難う"
+      ]
+    },
+    {
+      "id": "kr:n3:1611",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たつ",
+        "だす",
+        "あっ"
+      ]
+    },
+    {
+      "id": "kr:n4:1089",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ころ",
+        "いか",
+        "はこ"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:gp-36",
-    "gram:gp-120",
-    "gram:nara"
+    "gram:gp-45"
   ],
   "drills": [
     {
-      "pattern": "gram:deshou",
+      "pattern": "gram:gp-142",
       "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:made-ni",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-150564",
-        "sent:tatoeba-218050",
-        "sent:tatoeba-147666"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-81",
+      "pattern": "gram:koto",
       "examples": [
-        "sent:gen-20f9f43c9339",
-        "sent:gen-e5bc8ecc1fc4",
-        "sent:gen-f416c28a18c3"
+        "sent:gen-9059903a891d",
+        "sent:tatoeba-77163",
+        "sent:gen-4ba78a648388"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-21",
+      "examples": [
+        "sent:tatoeba-5052",
+        "sent:tatoeba-4852",
+        "sent:tatoeba-77212"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "A sua vida de estudante também vai chegar ao fim em breve.",
-      "answer_key": "あなたの学生生活も間もなく終わりになる。",
+      "prompt_pt": "Ele diz com clareza a sua própria opinião para os professores e os amigos.",
+      "answer_key": "彼が先生や友達にはっきり自分の意見を言う",
       "accepted_variants": [
-        "あなたのがくせいせいかつもまもなくおわりになる",
-        "あなたのがくせいせいかつもまもなくおわりになる。",
-        "あなたの学生生活も間もなく終わりになる",
-        "あなたの学生生活も間もなく終わりになる。"
+        "かれがせんせいやともだちにはっきりじぶんのいけんをいう",
+        "かれがせんせいやともだちにはっきりじぶんのいけんをゆう",
+        "彼が先生や友達にはっきり自分の意見を言う"
       ],
-      "sentence": "sent:tatoeba-233401",
+      "sentence": "sent:jec-0320",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "\"Comida picante, você gosta?\" \"Adoro.\"",
-      "answer_key": "「辛いものって、好き？」「大好き」",
+      "prompt_pt": "Como amigo, eu dei a minha opinião.",
+      "answer_key": "友達として私は意見を言った。",
       "accepted_variants": [
-        "「からいものって、すき?」「だいすき」",
-        "「辛いものって、好き?」「大好き」",
-        "「辛いものって、好き？」「大好き」"
+        "ともだちとしてわたしはいけんをいった",
+        "ともだちとしてわたしはいけんをいった。",
+        "ともだちとしてわたしわいけんをいった",
+        "ともだちとしてわたしわいけんをいった。",
+        "友達として私は意見を言った",
+        "友達として私は意見を言った。"
       ],
-      "sentence": "sent:tatoeba-11727272",
+      "sentence": "sent:tatoeba-79320",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "No Ano-Novo, a gente passa bastante tempo com a família.",
-      "answer_key": "正月は家族と過ごす時間が長いのです。",
+      "prompt_pt": "Eu gosto de flores; por exemplo, gosto de rosas.",
+      "answer_key": "私は花が好きで、たとえばばらが好きだ。",
       "accepted_variants": [
-        "しょうがつはかぞくとすごすじかんがながいのです",
-        "しょうがつはかぞくとすごすじかんがながいのです。",
-        "しょうがつわかぞくとすごすじかんがながいのです",
-        "しょうがつわかぞくとすごすじかんがながいのです。",
-        "正月は家族と過ごす時間が長いのです",
-        "正月は家族と過ごす時間が長いのです。"
+        "わたしははながすきで、たとえばばらがすきだ",
+        "わたしははながすきで、たとえばばらがすきだ。",
+        "わたしわはながすきで、たとえばばらがすきだ",
+        "わたしわはながすきで、たとえばばらがすきだ。",
+        "私は花が好きで、たとえばばらが好きだ",
+        "私は花が好きで、たとえばばらが好きだ。"
       ],
-      "sentence": "sent:tatoeba-142954",
+      "sentence": "sent:tatoeba-157990",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
     "items": [
-      "sent:tatoeba-11386733",
-      "sent:tatoeba-9553773",
-      "sent:tatoeba-172198",
-      "sent:jec-0320",
-      "sent:tatoeba-184254",
-      "sent:tatoeba-84568"
+      "sent:tatoeba-84568",
+      "sent:tatoeba-186900",
+      "sent:tatoeba-1046077",
+      "sent:tatoeba-11953118",
+      "sent:tatoeba-82875",
+      "sent:tatoeba-10587984"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -141,62 +209,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 31,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:680",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:3595:307",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "此の",
-        "消す",
-        "必要"
-      ]
-    },
-    {
-      "id": "kr:n3:1521",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はいる",
-        "こんや",
-        "いれる"
-      ]
-    },
-    {
-      "id": "kr:n4:1273",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さいきん",
-        "せんぱい",
-        "おこなう"
-      ]
-    },
-    {
-      "id": "cf:n3:3449:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "夜",
-        "鍵",
-        "朝"
-      ]
-    }
-  ]
+  }
 }

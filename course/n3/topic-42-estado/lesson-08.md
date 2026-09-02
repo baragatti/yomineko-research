@@ -55,7 +55,7 @@ Cuidado: 態と (わざと, de propósito) tem som parecido com わざわざ ('d
 #### Hora de praticar
 
 #### Leitura
-> 📖 この期間が３ヶ月と言われています今日はいたずらばかりしているね。もっとお金をためようと思うんだ。１度に２つの事をしようと思うな。問題はお金がないということです。英語の勉強のやる気をおこさせる。 — Dizem que esse período dura três meses. Você só está fazendo travessuras hoje, hein. Estou pensando em juntar mais dinheiro. Não tente fazer duas coisas ao mesmo tempo. O problema é que não temos dinheiro. Despertar a vontade de estudar inglês.
+> 📖 この期間が３ヶ月と言われています。今日はいたずらばかりしているね。もっとお金をためようと思うんだ。１度に２つの事をしようと思うな。問題はお金がないということです。英語の勉強のやる気をおこさせる。 — Dizem que esse período dura três meses. Você só está fazendo travessuras hoje, hein. Estou pensando em juntar mais dinheiro. Não tente fazer duas coisas ao mesmo tempo. O problema é que não temos dinheiro. Despertar a vontade de estudar inglês.
 > 📖 これはわたしに母を思い出させる。つまり、父は母より２歳年上です。テレビによれば明日は雨だそうだ。私は６時に起きることにしている。５時に駅で会うことになっている。ひょっとしたら勝つかもしれない。 — Isto me faz lembrar da minha mãe. Ou seja, meu pai é dois anos mais velho que minha mãe. Segundo a televisão, amanhã vai chover. Faço questão de acordar às seis. Está combinado que vou encontrá-lo às cinco na estação. Pode ser que eu ganhe, por sorte.
 - Argumento e produzo texto acadêmico com 論じる, 論争 e 論文.
 - Falo de dividir e separar com 分ける, 割る e 別れ.

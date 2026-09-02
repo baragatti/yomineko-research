@@ -7,60 +7,99 @@
     "pt-BR": "Emergência e saúde, parte 1"
   },
   "say_now": [
+    "sent:tatoeba-190909",
+    "sent:tatoeba-145398",
     "sent:tatoeba-190906",
     "sent:tatoeba-110065",
     "sent:tatoeba-110066",
-    "sent:tatoeba-190902",
-    "sent:tatoeba-84479",
-    "sent:tatoeba-190894"
+    "sent:tatoeba-190902"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1247250",
+    "vocab:1252090",
     "vocab:1159980",
+    "vocab:1541620",
+    "vocab:1490220",
+    "vocab:1308090",
+    "vocab:1241490",
     "vocab:1535910"
   ],
   "patterns": [
-    "gram:garu-gatteiru",
     "gram:gp-87",
-    "gram:to-omou",
+    "gram:darou",
     "gram:gp-57"
   ],
   "kanji_recognition": [
     "医",
-    "者",
-    "彼",
-    "名",
-    "有",
-    "能"
+    "煙",
+    "禁",
+    "君",
+    "言",
+    "者"
   ],
   "shadowing": [
+    "sent:tatoeba-190909",
+    "sent:tatoeba-145398",
     "sent:tatoeba-190906",
     "sent:tatoeba-110065",
     "sent:tatoeba-110066",
-    "sent:tatoeba-190902",
-    "sent:tatoeba-84479",
-    "sent:tatoeba-190894"
+    "sent:tatoeba-190902"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 375,
+  "cumulative_known_vocab": 371,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:157:1430",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "船",
+        "数",
+        "園"
+      ]
+    },
+    {
+      "id": "cf:n4:1299:1082",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "生産",
+        "叔父",
+        "いい"
+      ]
+    },
+    {
+      "id": "kr:n3:1746",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "はじめる",
+        "がくせい"
+      ]
+    },
+    {
+      "id": "kr:n4:1082",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "せいさん",
+        "きんえん",
+        "いちばん"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:te-morau",
-    "gram:gp-36"
+    "gram:gp-128",
+    "gram:you-ni-you-na"
   ],
   "drills": [
-    {
-      "pattern": "gram:garu-gatteiru",
-      "examples": [
-        "sent:gen-a0d367f9d037",
-        "sent:gen-2424c6ff626d",
-        "sent:gen-0ce029328959"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-87",
       "examples": [
@@ -71,11 +110,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:to-omou",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:tatoeba-199355",
-        "sent:tatoeba-187786",
-        "sent:tatoeba-160737"
+        "sent:tatoeba-80452",
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544"
       ],
       "strand": "language-focused"
     },
@@ -91,58 +130,58 @@
   ],
   "production": [
     {
-      "prompt_pt": "Quando foi a última vez que você cortou o cabelo?",
-      "answer_key": "最後に髪切ったのいつですか？",
+      "prompt_pt": "Hoje estou com um pouco de dor de cabeça.",
+      "answer_key": "今日はちょっと頭が痛いの。",
       "accepted_variants": [
-        "さいごにかみきったのいつですか",
-        "さいごにかみきったのいつですか?",
-        "最後に髪切ったのいつですか",
-        "最後に髪切ったのいつですか?",
-        "最後に髪切ったのいつですか？"
+        "きょうはちょっとあたまがいたいの",
+        "きょうはちょっとあたまがいたいの。",
+        "きょうわちょっとあたまがいたいの",
+        "きょうわちょっとあたまがいたいの。",
+        "今日はちょっと頭が痛いの",
+        "今日はちょっと頭が痛いの。"
       ],
-      "sentence": "sent:tatoeba-3263386",
+      "sentence": "sent:tatoeba-9777117",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A escola começa às 8h10 da manhã.",
-      "answer_key": "学校は午前８時１０分から始まる。",
+      "prompt_pt": "Num piscar de olhos, a febre subiu para quase 40 graus.",
+      "answer_key": "あっという間に４０度近くまで熱が出た",
       "accepted_variants": [
-        "がっこうはごぜんはちじじゅっぷんからはじまる",
-        "がっこうはごぜんはちじじゅっぷんからはじまる。",
-        "がっこうわごぜんはちじじゅっぷんからはじまる",
-        "がっこうわごぜんはちじじゅっぷんからはじまる。",
-        "学校は午前8時10分から始まる",
-        "学校は午前8時10分から始まる。",
-        "学校は午前８時１０分から始まる",
-        "学校は午前８時１０分から始まる。"
+        "あっというまによんじゅうどちかくまでねつがでた",
+        "あっという間に40度近くまで熱が出た",
+        "あっという間に４０度近くまで熱が出た"
       ],
-      "sentence": "sent:tatoeba-184394",
+      "sentence": "sent:jec-0673",
+      "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Amanhã começa um feriadão de cinco dias, então todo mundo tá animado, né?",
-      "answer_key": "明日から５連休だから、みんなルンルン気分だね。",
+      "prompt_pt": "Será que vai melhorar à tarde?",
+      "answer_key": "午後には上がるだろうか？",
       "accepted_variants": [
-        "あすからごれんきゅうだから、みんなるんるんきぶんだね",
-        "あすからごれんきゅうだから、みんなるんるんきぶんだね。",
-        "明日から5連休だから、みんなルンルン気分だね",
-        "明日から5連休だから、みんなルンルン気分だね。",
-        "明日から５連休だから、みんなルンルン気分だね",
-        "明日から５連休だから、みんなルンルン気分だね。"
+        "ごごにはあがるだろうか",
+        "ごごにはあがるだろうか?",
+        "ごごにわあがるだろうか",
+        "ごごにわあがるだろうか?",
+        "午後には上がるだろうか",
+        "午後には上がるだろうか?",
+        "午後には上がるだろうか？"
       ],
-      "sentence": "sent:tatoeba-80616",
+      "sentence": "sent:tatoeba-1699768",
+      "kind": "review",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
-      "sent:tatoeba-171774",
-      "sent:tatoeba-226765",
-      "sent:tatoeba-1590321",
-      "sent:tatoeba-179620",
-      "sent:tatoeba-1699768",
-      "sent:tatoeba-174391"
+      "sent:tatoeba-174391",
+      "sent:tatoeba-1190209",
+      "sent:tatoeba-10303648",
+      "sent:tatoeba-536767",
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -150,62 +189,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 24,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3402",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:4009:805",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "良い",
-        "バス",
-        "洋袴"
-      ]
-    },
-    {
-      "id": "kr:n5:51",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あそぶ",
-        "てんき",
-        "すわる"
-      ]
-    },
-    {
-      "id": "cf:n3:3572:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "左",
-        "何",
-        "暇"
-      ]
-    },
-    {
-      "id": "kr:n4:1074",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "しゅみ",
-        "やすむ",
-        "いしゃ"
-      ]
-    }
-  ]
+  }
 }

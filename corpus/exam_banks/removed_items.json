@@ -1,6 +1,6 @@
 {
  "why": "Items removed from the committed banks by scripts/contracts/migrate_exam_banks_p7.py, kept here in full so nothing is silently lost. They are eligible to return when the banks are regenerated with the fixed builder.",
- "count": 116,
+ "count": 118,
  "items": [
   {
    "file": "n3_context_fill.json",
@@ -2106,6 +2106,46 @@
     "ai_generated": false,
     "source": "sentence-tokens",
     "layer": "B",
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n3_text_grammar.json",
+   "reason": "text_grammar passage changed; its answer no longer occurs in the passage (the sentence carrying it was replaced by the readings composition repair)",
+   "item": {
+    "id": "tg:n3:n3-relato-06-01",
+    "level": "n3",
+    "stem": "きのうデパートで白い靴を買いました。カメラにフィルムを入れるのを忘れた。カメラにフィルムを入れ忘れ（　）。月曜日から金曜日まで雪だったんだよ。あなたは絵を書くのがじょうずですね。とても寒かったけれども私は外出した。",
+    "correct": "ちゃった",
+    "distractors": [
+     "に対して",
+     "てくれと",
+     "たところ"
+    ],
+    "reading": "read:n3-relato-06-01",
+    "source": "reading+grammar",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n4_text_grammar.json",
+   "reason": "text_grammar passage changed; its answer no longer occurs in the passage (the sentence carrying it was replaced by the readings composition repair)",
+   "item": {
+    "id": "tg:n4:n4-experiencia-04-01",
+    "level": "n4",
+    "stem": "そのおもちゃはプラスチックでできているワインはぶどうから作りますこのいすは木でできているワインはぶどう（　）",
+    "correct": "からできる",
+    "distractors": [
+     "がみられる",
+     "るところだ",
+     "いたします"
+    ],
+    "reading": "read:n4-experiencia-04-01",
+    "source": "reading+grammar",
+    "layer": "B",
+    "ai_generated": false,
     "needs_review": false
    }
   }

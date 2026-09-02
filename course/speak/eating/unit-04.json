@@ -8,31 +8,30 @@
   },
   "say_now": [
     "sent:tatoeba-179391",
+    "sent:tatoeba-10092041",
+    "sent:tatoeba-83083",
     "sent:tatoeba-10617667",
-    "sent:tatoeba-5220",
-    "sent:tatoeba-13440729",
     "sent:tatoeba-83169",
-    "sent:tatoeba-182254"
+    "sent:tatoeba-187939"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1451750",
+    "vocab:1338180",
     "vocab:1360010",
-    "vocab:1597890",
     "vocab:1514990",
-    "vocab:1524720",
-    "vocab:1329590",
+    "vocab:1547330",
     "vocab:1215810",
     "vocab:1358490",
-    "vocab:1245470",
-    "vocab:1231690",
-    "vocab:1378990",
-    "vocab:1602340"
+    "vocab:1245470"
   ],
   "patterns": [
-    "gram:totemo",
-    "gram:da-desu"
+    "gram:ga-hoshii",
+    "gram:naide",
+    "gram:kara",
+    "gram:tai",
+    "gram:tte"
   ],
   "kanji_recognition": [
     "間",
@@ -44,56 +43,120 @@
   ],
   "shadowing": [
     "sent:tatoeba-179391",
+    "sent:tatoeba-10092041",
+    "sent:tatoeba-83083",
     "sent:tatoeba-10617667",
-    "sent:tatoeba-5220",
-    "sent:tatoeba-13440729",
     "sent:tatoeba-83169",
-    "sent:tatoeba-182254"
+    "sent:tatoeba-187939"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 122,
+  "cumulative_known_vocab": 130,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n5:4186",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n5:5176",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:5176:617",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "夜",
+        "力",
+        "何"
+      ]
+    },
+    {
+      "id": "cf:n4:208:1302",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "聞く",
+        "時間",
+        "願う"
+      ]
+    },
+    {
+      "id": "kr:n4:1001",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなす",
+        "あした",
+        "ねだん"
+      ]
+    },
+    {
+      "id": "kr:n4:1302",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっこう",
+        "はじめて",
+        "かのじょ"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:kara-tsukuru",
-    "gram:gp-36",
-    "gram:te-kara",
-    "gram:temo"
+    "gram:te-kara"
   ],
   "drills": [
     {
-      "pattern": "gram:totemo",
+      "pattern": "gram:ga-hoshii",
       "examples": [
-        "sent:tatoeba-5074",
-        "sent:tatoeba-4947",
-        "sent:tatoeba-5092"
+        "sent:tatoeba-1484951",
+        "sent:tatoeba-13126478",
+        "sent:tatoeba-149136"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:naide",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-120747"
+        "sent:tatoeba-125387",
+        "sent:tatoeba-145933",
+        "sent:tatoeba-144418"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kara",
+      "examples": [
+        "sent:tatoeba-76156",
+        "sent:tatoeba-4772",
+        "sent:gen-671b7aebf53d"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tai",
+      "examples": [
+        "sent:tatoeba-83633",
+        "sent:tatoeba-83634",
+        "sent:tatoeba-84964"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-5412a2ccf468",
+        "sent:gen-fee342a8016b",
+        "sent:gen-48c455d520ba"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Não deixe a água correndo.",
-      "answer_key": "水を出しっぱなしにしないで。",
-      "accepted_variants": [
-        "みずをだしっぱなしにしないで",
-        "みずをだしっぱなしにしないで。",
-        "水を出しっぱなしにしないで",
-        "水を出しっぱなしにしないで。"
-      ],
-      "sentence": "sent:tatoeba-10092041",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Hoje à noite não posso ir ao restaurante com você.",
       "answer_key": "今晩あなたと一緒にレストランにいけません。",
@@ -104,6 +167,7 @@
         "今晩あなたと一緒にレストランにいけません。"
       ],
       "sentence": "sent:tatoeba-236798",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -118,18 +182,33 @@
         "私は友達とビールを飲みに行った。"
       ],
       "sentence": "sent:tatoeba-5329",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Será que existe mesmo cachorro que come peixe cru?",
+      "answer_key": "生の魚を食べる犬なんているのだろうか？",
+      "accepted_variants": [
+        "なまのさかなをたべるいぬなんているのだろうか",
+        "なまのさかなをたべるいぬなんているのだろうか?",
+        "生の魚を食べる犬なんているのだろうか",
+        "生の魚を食べる犬なんているのだろうか?",
+        "生の魚を食べる犬なんているのだろうか？"
+      ],
+      "sentence": "sent:tatoeba-412068",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom.",
     "items": [
-      "sent:tatoeba-2633467",
       "sent:tatoeba-10657609",
       "sent:tatoeba-226845",
       "sent:tatoeba-226844",
-      "sent:tatoeba-10899775",
-      "sent:tatoeba-171644"
+      "sent:tatoeba-1115376",
+      "sent:tatoeba-9240812",
+      "sent:jec-1593"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -137,62 +216,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 56,
+    "language-focused": 59,
     "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:930",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:208:1302",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "聞く",
-        "時間",
-        "願う"
-      ]
-    },
-    {
-      "id": "cf:n4:3494:1302",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "来る",
-        "言う",
-        "去年"
-      ]
-    },
-    {
-      "id": "kr:n4:1001",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はなす",
-        "ねだん",
-        "ちから"
-      ]
-    },
-    {
-      "id": "kr:n4:1039",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "すくない",
-        "まいにち",
-        "スリッパ"
-      ]
-    }
-  ]
+  }
 }

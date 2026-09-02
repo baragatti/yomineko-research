@@ -7,53 +7,120 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 6"
   },
   "say_now": [
+    "sent:tatoeba-220381",
+    "sent:tatoeba-214616",
+    "sent:tatoeba-80049",
     "sent:tatoeba-224121",
-    "sent:tatoeba-10117518",
-    "sent:tatoeba-9812759",
-    "sent:tatoeba-147768",
-    "sent:tatoeba-226794",
-    "sent:tatoeba-84069"
+    "sent:tatoeba-84229",
+    "sent:tatoeba-147768"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1408810",
+    "vocab:1350600",
+    "vocab:1243320",
     "vocab:1050390",
-    "vocab:1346370",
+    "vocab:1093920",
     "vocab:1189360",
-    "vocab:1448580",
-    "vocab:1057850",
-    "vocab:1499690",
-    "vocab:1501660"
+    "vocab:1529560",
+    "vocab:1070280",
+    "vocab:1443760",
+    "vocab:1534890"
   ],
   "patterns": [
+    "gram:naide-kudasai",
     "gram:o-kudasai",
-    "gram:te-kudasai"
+    "gram:te-kudasai",
+    "gram:naide",
+    "gram:yori"
   ],
   "kanji_recognition": [
-    "水",
-    "杯",
-    "召",
-    "上",
-    "自",
-    "由"
+    "打",
+    "電",
+    "報",
+    "位",
+    "焼",
+    "中"
   ],
   "shadowing": [
+    "sent:tatoeba-220381",
+    "sent:tatoeba-214616",
+    "sent:tatoeba-80049",
     "sent:tatoeba-224121",
-    "sent:tatoeba-10117518",
-    "sent:tatoeba-9812759",
-    "sent:tatoeba-147768",
-    "sent:tatoeba-226794",
-    "sent:tatoeba-84069"
+    "sent:tatoeba-84229",
+    "sent:tatoeba-147768"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 507,
+  "cumulative_known_vocab": 506,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:254",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:933",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n4:1044",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ひる",
+        "あの",
+        "はし"
+      ]
+    },
+    {
+      "id": "kr:n4:1328",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ネクタイ",
+        "けいかく",
+        "くださる"
+      ]
+    },
+    {
+      "id": "cf:n3:5216:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "三",
+        "頃",
+        "米"
+      ]
+    },
+    {
+      "id": "cf:n3:5349:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "月",
+        "肉",
+        "港"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:gari"
+    "gram:te-ita"
   ],
   "drills": [
+    {
+      "pattern": "gram:naide-kudasai",
+      "examples": [
+        "sent:tatoeba-2006378",
+        "sent:tatoeba-1200727",
+        "sent:tatoeba-6704205"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:o-kudasai",
       "examples": [
@@ -71,57 +138,79 @@
         "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:naide",
+      "examples": [
+        "sent:tatoeba-125387",
+        "sent:tatoeba-142115",
+        "sent:tatoeba-145933"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:yori",
+      "examples": [
+        "sent:tatoeba-105626",
+        "sent:tatoeba-76098",
+        "sent:tatoeba-79991"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Amanhã vou visitá-lo na sua casa.",
-      "answer_key": "明日お宅に伺います。",
+      "prompt_pt": "Eu poderia perguntar o seu nome e o seu endereço?",
+      "answer_key": "お名前とご住所を伺ってもよろしいでしょうか？",
       "accepted_variants": [
-        "あすおたくにうかがいます",
-        "あすおたくにうかがいます。",
-        "明日お宅に伺います",
-        "明日お宅に伺います。"
+        "おなまえとごじゅうしょをうかがってもよろしいでしょうか",
+        "おなまえとごじゅうしょをうかがってもよろしいでしょうか?",
+        "お名前とご住所を伺ってもよろしいでしょうか",
+        "お名前とご住所を伺ってもよろしいでしょうか?",
+        "お名前とご住所を伺ってもよろしいでしょうか？"
       ],
-      "sentence": "sent:tatoeba-80618",
+      "sentence": "sent:tatoeba-9969670",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por favor, faça o bife ao ponto.",
-      "answer_key": "ステーキは中位で焼いてください。",
+      "prompt_pt": "Com licença, posso me retirar?",
+      "answer_key": "失礼してもよろしいですか。",
       "accepted_variants": [
-        "すてーきはちゅういでやいてください",
-        "すてーきはちゅういでやいてください。",
-        "すてーきわちゅういでやいてください",
-        "すてーきわちゅういでやいてください。",
-        "ステーキは中位で焼いてください",
-        "ステーキは中位で焼いてください。"
+        "しつれいしてもよろしいですか",
+        "しつれいしてもよろしいですか。",
+        "失礼してもよろしいですか",
+        "失礼してもよろしいですか。"
       ],
-      "sentence": "sent:tatoeba-214616",
+      "sentence": "sent:tatoeba-149583",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Eu gostaria que você enviasse este telegrama imediatamente.",
-      "answer_key": "この電報をすぐに打っていただきたい。",
+      "prompt_pt": "Os utensílios de cozinha ficam no primeiro subsolo.",
+      "answer_key": "キッチン用品は、地下一階でございます。",
       "accepted_variants": [
-        "このでんぽうをすぐにうっていただきたい",
-        "このでんぽうをすぐにうっていただきたい。",
-        "この電報をすぐに打っていただきたい",
-        "この電報をすぐに打っていただきたい。"
+        "きっちんようひんは、ちかいっかいでございます",
+        "きっちんようひんは、ちかいっかいでございます。",
+        "きっちんようひんわ、ちかいっかいでございます",
+        "きっちんようひんわ、ちかいっかいでございます。",
+        "キッチン用品は、地下一階でございます",
+        "キッチン用品は、地下一階でございます。"
       ],
-      "sentence": "sent:tatoeba-220381",
+      "sentence": "sent:tatoeba-11561274",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
     "items": [
-      "sent:tatoeba-9969670",
-      "sent:tatoeba-11561274",
-      "sent:tatoeba-206210",
       "sent:tatoeba-76813",
       "sent:tatoeba-1490062",
-      "sent:tatoeba-78723"
+      "sent:tatoeba-78723",
+      "sent:tatoeba-121505",
+      "sent:tatoeba-123791",
+      "sent:tatoeba-188640"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -129,57 +218,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 32,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:4725:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "店",
-        "船",
-        "家"
-      ]
-    },
-    {
-      "id": "cf:n3:4865:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "頃",
-        "私",
-        "君"
-      ]
-    },
-    {
-      "id": "kr:n4:1113",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "おおきな",
-        "けいかく",
-        "かのじょ"
-      ]
-    },
-    {
-      "id": "kr:n4:1118",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "かいもの",
-        "でんぽう",
-        "しんぶん"
-      ]
-    }
-  ]
+  }
 }

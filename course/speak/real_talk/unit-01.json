@@ -11,8 +11,8 @@
     "sent:tatoeba-235190",
     "sent:tatoeba-115333",
     "sent:tatoeba-76419",
-    "sent:tatoeba-216263",
-    "sent:tatoeba-10274623"
+    "sent:tatoeba-10274623",
+    "sent:tatoeba-80952"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,17 +20,16 @@
     "vocab:1013190",
     "vocab:1315720",
     "vocab:1582710",
-    "vocab:1283190",
     "vocab:1002290",
-    "vocab:1195970",
-    "vocab:1505990"
+    "vocab:1529410"
   ],
   "patterns": [
     "gram:bakari",
     "gram:gp-105",
     "gram:gp-89",
-    "gram:nagara",
-    "gram:rashii"
+    "gram:mitai-da",
+    "gram:rashii",
+    "gram:saseru"
   ],
   "kanji_recognition": [
     "人",
@@ -45,140 +44,23 @@
     "sent:tatoeba-235190",
     "sent:tatoeba-115333",
     "sent:tatoeba-76419",
-    "sent:tatoeba-216263",
-    "sent:tatoeba-10274623"
+    "sent:tatoeba-10274623",
+    "sent:tatoeba-80952"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 549,
+  "cumulative_known_vocab": 547,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:saseru"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:bakari",
-      "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-105",
-      "examples": [
-        "sent:tatoeba-157461",
-        "sent:tatoeba-189160",
-        "sent:tatoeba-218501"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-89",
-      "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nagara",
-      "examples": [
-        "sent:tatoeba-83211",
-        "sent:tatoeba-83210",
-        "sent:tatoeba-226844"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:rashii",
-      "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-e9700d108b4a",
-        "sent:gen-dbc3c7fb8b46"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Os pais podem acabar favorecendo o filho mais novo.",
-      "answer_key": "両親は、末っ子をえこひいきするかもしれない。",
-      "accepted_variants": [
-        "りょうしんは、すえっこをえこひいきするかもしれない",
-        "りょうしんは、すえっこをえこひいきするかもしれない。",
-        "りょうしんわ、すえっこをえこひいきするかもしれない",
-        "りょうしんわ、すえっこをえこひいきするかもしれない。",
-        "両親は、末っ子をえこひいきするかもしれない",
-        "両親は、末っ子をえこひいきするかもしれない。"
-      ],
-      "sentence": "sent:tatoeba-78026",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "É melhor você começar a estudar a matéria antes (da aula), viu?",
-      "answer_key": "予習を始めた方がいいですよ。",
-      "accepted_variants": [
-        "よしゅうをはじめたほうがいいですよ",
-        "よしゅうをはじめたほうがいいですよ。",
-        "予習を始めた方がいいですよ",
-        "予習を始めた方がいいですよ。"
-      ],
-      "sentence": "sent:tatoeba-79019",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Se for pedir desculpas, quanto antes melhor.",
-      "answer_key": "わびをいれるなら早い方がいいだろう。",
-      "accepted_variants": [
-        "わびをいれるならはやいほうがいいだろう",
-        "わびをいれるならはやいほうがいいだろう。",
-        "わびをいれるなら早い方がいいだろう",
-        "わびをいれるなら早い方がいいだろう。"
-      ],
-      "sentence": "sent:tatoeba-74350",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
-    "items": [
-      "sent:tatoeba-79047",
-      "sent:tatoeba-80630",
-      "sent:tatoeba-235244",
-      "sent:jec-0517",
-      "sent:tatoeba-4827",
-      "sent:tatoeba-89607"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "recap",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 28,
-    "fluency": 6
-  },
   "checkpoint": [
     {
       "id": "cf:n3:5290:1544",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "目的",
         "正月",
-        "到着"
+        "到着",
+        "半分"
       ]
     },
     {
@@ -206,20 +88,150 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "あんな",
         "てがみ",
-        "くうき",
-        "おこす"
+        "いびき"
       ]
     },
     {
-      "id": "kr:n4:769",
+      "id": "kr:n4:1234",
       "type": "kanji_reading",
-      "via": "new-word",
+      "via": "review",
       "distractors": [
-        "しまる",
-        "うしろ",
-        "ちがう"
+        "ひるごはん",
+        "しゅっぱつ",
+        "にゅういん"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [],
+  "drills": [
+    {
+      "pattern": "gram:bakari",
+      "examples": [
+        "sent:tatoeba-169015",
+        "sent:tatoeba-157014",
+        "sent:tatoeba-144050"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-105",
+      "examples": [
+        "sent:tatoeba-218501",
+        "sent:tatoeba-157461",
+        "sent:tatoeba-189160"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-89",
+      "examples": [
+        "sent:tatoeba-4855",
+        "sent:tatoeba-144038",
+        "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-da",
+      "examples": [
+        "sent:tatoeba-4216208",
+        "sent:tatoeba-774692",
+        "sent:gen-1d94a829f09c"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:rashii",
+      "examples": [
+        "sent:tatoeba-189533",
+        "sent:gen-e9700d108b4a",
+        "sent:gen-dbc3c7fb8b46"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:saseru",
+      "examples": [
+        "sent:tatoeba-152239",
+        "sent:tatoeba-1804152",
+        "sent:tatoeba-187784"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Ele deve ter quase 40 anos.",
+      "answer_key": "４０近いはずだ。",
+      "accepted_variants": [
+        "40近いはずだ",
+        "40近いはずだ。",
+        "よんじゅうちかいはずだ",
+        "よんじゅうちかいはずだ。",
+        "４０近いはずだ",
+        "４０近いはずだ。"
+      ],
+      "sentence": "sent:tatoeba-235244",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você vai se surpreender com o tanto que dá para aprender em uma semana!",
+      "answer_key": "一週間でどれほどのことが学べるか、自分でもびっくりするはずだよ！",
+      "accepted_variants": [
+        "いちしゅうかんでどれほどのことがまなべるか、じぶんでもびっくりするはずだよ",
+        "いちしゅうかんでどれほどのことがまなべるか、じぶんでもびっくりするはずだよ!",
+        "一週間でどれほどのことが学べるか、自分でもびっくりするはずだよ",
+        "一週間でどれほどのことが学べるか、自分でもびっくりするはずだよ!",
+        "一週間でどれほどのことが学べるか、自分でもびっくりするはずだよ！"
+      ],
+      "sentence": "sent:tatoeba-4891",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você deve chegar lá em menos de cinco minutos a pé.",
+      "answer_key": "徒歩５分以内に着くはずです。",
+      "accepted_variants": [
+        "とほごふんいないにつくはずです",
+        "とほごふんいないにつくはずです。",
+        "徒歩5分以内に着くはずです",
+        "徒歩5分以内に着くはずです。",
+        "徒歩５分以内に着くはずです",
+        "徒歩５分以内に着くはずです。"
+      ],
+      "sentence": "sent:tatoeba-75200",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
+    "items": [
+      "sent:tatoeba-79019",
+      "sent:tatoeba-79047",
+      "sent:tatoeba-80630",
+      "sent:tatoeba-80432",
+      "sent:tatoeba-5070",
+      "sent:tatoeba-179684"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "recap",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 28,
+    "fluency": 6
+  }
 }

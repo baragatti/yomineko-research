@@ -66,7 +66,7 @@ Combine tudo:冷房をつけてくれない？("você não poderia ligar o ar-co
 #### Hora de praticar
 
 #### Leitura
-> 📖 分けて出してもらえますか。教えてくれてありがとう。聞いてくれてありがとう。聞いてくれてありがとう！ — Você poderia servir separado (em pratos diferentes)? Obrigado por me avisar. Obrigado por me escutar. Obrigado por me escutar!
+> 📖 分けて出してもらえますか。教えてくれてありがとう。聞いてくれてありがとう。ついでに私のも買ってきてくれますか。 — Você poderia servir separado (em pratos diferentes)? Obrigado por me avisar. Obrigado por me escutar. Já que você vai, aproveita e compra um pra mim também?
 - Sei agradecer por um favor com ～てくれてありがとう.
 - Consigo pedir com jeitinho usando ～てくれない？ e ～てもらえない？.
 - Entendo que a negativa interrogativa deixa o pedido mais cortês.

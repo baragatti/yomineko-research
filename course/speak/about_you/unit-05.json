@@ -7,146 +7,180 @@
     "pt-BR": "Falar de você, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-147013",
+    "sent:tatoeba-10760527",
+    "sent:tatoeba-10899638",
+    "sent:tatoeba-217273",
+    "sent:tatoeba-80379",
     "sent:tatoeba-1590863",
-    "sent:tatoeba-10899831",
-    "sent:tatoeba-11021418",
-    "sent:tatoeba-163367",
-    "sent:tatoeba-113170"
+    "sent:tatoeba-10899831"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:2136180",
+    "vocab:1593670",
+    "vocab:1533580",
+    "vocab:1214330",
+    "vocab:1332760",
     "vocab:1044070",
     "vocab:1362360",
-    "vocab:1381820",
     "vocab:1579130",
-    "vocab:1348430",
-    "vocab:1319750",
-    "vocab:1329000",
-    "vocab:1017760",
-    "vocab:1591900",
+    "vocab:1091500",
+    "vocab:1231690",
     "vocab:1444610",
-    "vocab:1157080",
     "vocab:1050590"
   ],
   "patterns": [
-    "gram:kana",
-    "gram:koto",
-    "gram:da-desu",
-    "gram:demo"
+    "gram:deshou",
+    "gram:made-ni"
   ],
   "kanji_recognition": [
-    "子",
-    "小",
-    "前",
-    "知",
-    "名",
-    "学"
+    "仕",
+    "事",
+    "探",
+    "達",
+    "聞",
+    "友"
   ],
   "shadowing": [
-    "sent:tatoeba-147013",
+    "sent:tatoeba-10760527",
+    "sent:tatoeba-10899638",
+    "sent:tatoeba-217273",
+    "sent:tatoeba-80379",
     "sent:tatoeba-1590863",
-    "sent:tatoeba-10899831",
-    "sent:tatoeba-11021418",
-    "sent:tatoeba-163367",
-    "sent:tatoeba-113170"
+    "sent:tatoeba-10899831"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 311,
+  "cumulative_known_vocab": 315,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:680",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n3:1521",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はいる",
+        "こんや",
+        "テレビ"
+      ]
+    },
+    {
+      "id": "kr:n4:1273",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さいきん",
+        "せんぱい",
+        "ばんごう"
+      ]
+    },
+    {
+      "id": "cf:n3:3701:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "男",
+        "為",
+        "車"
+      ]
+    },
+    {
+      "id": "cf:n3:3705:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "駅",
+        "傘",
+        "間"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-36",
+    "gram:gp-120",
+    "gram:nara",
     "gram:yori"
   ],
   "drills": [
     {
-      "pattern": "gram:kana",
+      "pattern": "gram:deshou",
       "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:koto",
+      "pattern": "gram:made-ni",
       "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:demo",
-      "examples": [
-        "sent:tatoeba-4781",
-        "sent:tatoeba-74951",
-        "sent:tatoeba-76060"
+        "sent:tatoeba-150564",
+        "sent:tatoeba-218050",
+        "sent:tatoeba-147666"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Até amanhã eu já devo ter terminado o trabalho.",
-      "answer_key": "明日までには仕事をやり終えているでしょう。",
+      "prompt_pt": "Havia vários estudantes no quarto.",
+      "answer_key": "部屋には数人の学生がいた。",
       "accepted_variants": [
-        "あすまでにはしごとをやりおえているでしょう",
-        "あすまでにはしごとをやりおえているでしょう。",
-        "あすまでにわしごとをやりおえているでしょう",
-        "あすまでにわしごとをやりおえているでしょう。",
-        "明日までには仕事をやり終えているでしょう",
-        "明日までには仕事をやり終えているでしょう。"
+        "へやにはすうにんのがくせいがいた",
+        "へやにはすうにんのがくせいがいた。",
+        "へやにわすうにんのがくせいがいた",
+        "へやにわすうにんのがくせいがいた。",
+        "部屋には数人の学生がいた",
+        "部屋には数人の学生がいた。"
       ],
-      "sentence": "sent:tatoeba-80379",
+      "sentence": "sent:tatoeba-84216",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Se for um computador, dá pra fazer esse trabalho com facilidade.",
-      "answer_key": "コンピューターならその仕事を簡単にできる。",
+      "prompt_pt": "Decidi passar na loja na volta do trabalho para dar uma olhada antes.",
+      "answer_key": "店の下調べのため会社帰りに寄ることにした。",
       "accepted_variants": [
-        "こんぴゅーたーならそのしごとをかんたんにできる",
-        "こんぴゅーたーならそのしごとをかんたんにできる。",
-        "コンピューターならその仕事を簡単にできる",
-        "コンピューターならその仕事を簡単にできる。"
+        "みせのしたしらべのためかいしゃがえりによることにした",
+        "みせのしたしらべのためかいしゃがえりによることにした。",
+        "店の下調べのため会社帰りに寄ることにした",
+        "店の下調べのため会社帰りに寄ることにした。"
       ],
-      "sentence": "sent:tatoeba-217273",
+      "sentence": "sent:tatoeba-11005020",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Ontem fiquei sabendo de uma notícia interessante com um amigo.",
-      "answer_key": "きのう友達におもしろいニュースを聞きました。",
+      "prompt_pt": "Eu tenho dois amigos estrangeiros.",
+      "answer_key": "私には外国人の友達が２人います。",
       "accepted_variants": [
-        "きのうともだちにおもしろいにゅーすをききました",
-        "きのうともだちにおもしろいにゅーすをききました。",
-        "きのう友達におもしろいニュースを聞きました",
-        "きのう友達におもしろいニュースを聞きました。"
+        "わたしにはがいこくじんのともだちがふたりいます",
+        "わたしにはがいこくじんのともだちがふたりいます。",
+        "わたしにわがいこくじんのともだちがふたりいます",
+        "わたしにわがいこくじんのともだちがふたりいます。",
+        "私には外国人の友達が2人います",
+        "私には外国人の友達が2人います。",
+        "私には外国人の友達が２人います",
+        "私には外国人の友達が２人います。"
       ],
-      "sentence": "sent:tatoeba-10899638",
+      "sentence": "sent:tatoeba-164626",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
     "items": [
-      "sent:tatoeba-196355",
-      "sent:tatoeba-10760527",
       "sent:tatoeba-11727272",
       "sent:tatoeba-142954",
+      "sent:jec-0320",
+      "sent:tatoeba-157990",
       "sent:tatoeba-11386733",
       "sent:tatoeba-9553773"
     ],
@@ -156,67 +190,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 32,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:5111:1479",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "値段",
-        "出る",
-        "週間"
-      ]
-    },
-    {
-      "id": "pp:n5:30",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "嫌い",
-        "来る",
-        "今日"
-      ]
-    },
-    {
-      "id": "kr:n3:1479",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せんぱい",
-        "おこなう",
-        "ちいさな"
-      ]
-    },
-    {
-      "id": "kr:n4:1089",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ころ",
-        "いか",
-        "はこ"
-      ]
-    },
-    {
-      "id": "cf:n3:3552:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "船",
-        "力",
-        "私"
-      ]
-    }
-  ]
+  }
 }

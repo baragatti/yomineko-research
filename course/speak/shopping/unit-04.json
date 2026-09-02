@@ -7,100 +7,171 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-8687007",
-    "sent:tatoeba-3488181",
-    "sent:tatoeba-8748248",
-    "sent:tatoeba-4562312",
-    "sent:tatoeba-199061",
-    "sent:tatoeba-172832"
+    "sent:tatoeba-10094172",
+    "sent:tatoeba-8938683",
+    "sent:tatoeba-79848",
+    "sent:tatoeba-2941029",
+    "sent:tatoeba-229178",
+    "sent:tatoeba-205771"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:2820690",
-    "vocab:1358280",
-    "vocab:1288850",
-    "vocab:1375620"
+    "vocab:1587040",
+    "vocab:1536010",
+    "vocab:1001820",
+    "vocab:1270810"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:gp-134",
+    "gram:nikui"
+  ],
   "kanji_recognition": [
-    "食",
-    "安",
-    "今"
+    "言",
+    "金",
+    "題",
+    "問",
+    "何",
+    "私"
   ],
   "shadowing": [
-    "sent:tatoeba-8687007",
-    "sent:tatoeba-3488181",
-    "sent:tatoeba-8748248",
-    "sent:tatoeba-4562312",
-    "sent:tatoeba-199061",
-    "sent:tatoeba-172832"
+    "sent:tatoeba-10094172",
+    "sent:tatoeba-8938683",
+    "sent:tatoeba-79848",
+    "sent:tatoeba-2941029",
+    "sent:tatoeba-229178",
+    "sent:tatoeba-205771"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 61,
+  "cumulative_known_vocab": 77,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:gp-51",
-    "gram:gp-50",
-    "gram:naku-temo-ii",
-    "gram:hou-ga-ii",
-    "gram:gp-71",
-    "gram:gp-134"
+  "checkpoint": [
+    {
+      "id": "so:n5:4968",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2501:102",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "本当",
+        "思う",
+        "願う"
+      ]
+    },
+    {
+      "id": "cf:n5:4093:44",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "問題",
+        "願う",
+        "見る"
+      ]
+    },
+    {
+      "id": "kr:n4:897",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さげる",
+        "いくら",
+        "かかり"
+      ]
+    },
+    {
+      "id": "kr:n5:102",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "わたし",
+        "かかり",
+        "あがる"
+      ]
+    }
   ],
-  "drills": [],
+  "patterns_chunked": [
+    "gram:to-iu-koto",
+    "gram:gp-117",
+    "gram:to-iu",
+    "gram:gp-147"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:gp-134",
+      "examples": [
+        "sent:tatoeba-8687007",
+        "sent:tatoeba-8719362",
+        "sent:tatoeba-3488181"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nikui",
+      "examples": [
+        "sent:tatoeba-9458223",
+        "sent:tatoeba-10006818",
+        "sent:tatoeba-11995722"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
-      "prompt_pt": "Nós pretendemos tornar isso público.",
-      "answer_key": "私たちはそれを公にしようと思う。",
+      "prompt_pt": "Ele viu aquilo pela primeira vez.",
+      "answer_key": "彼が初めてそれを見た",
       "accepted_variants": [
-        "わたしたちはそれをおおやけにしようとおもう",
-        "わたしたちはそれをおおやけにしようとおもう。",
-        "わたしたちわそれをおおやけにしようとおもう",
-        "わたしたちわそれをおおやけにしようとおもう。",
-        "私たちはそれを公にしようと思う",
-        "私たちはそれを公にしようと思う。"
+        "かれがはじめてそれをみた",
+        "彼が初めてそれを見た"
       ],
-      "sentence": "sent:tatoeba-166326",
+      "sentence": "sent:jec-0436",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Eu acho que devíamos baixar o preço.",
-      "answer_key": "値段を下げるべきだと思います。",
+      "prompt_pt": "Aquilo é um gato?",
+      "answer_key": "あれはネコですか。",
       "accepted_variants": [
-        "ねだんをさげるべきだとおもいます",
-        "ねだんをさげるべきだとおもいます。",
-        "値段を下げるべきだと思います",
-        "値段を下げるべきだと思います。"
+        "あれはねこですか",
+        "あれはねこですか。",
+        "あれはネコですか",
+        "あれはネコですか。",
+        "あれわねこですか",
+        "あれわねこですか。"
       ],
-      "sentence": "sent:tatoeba-2123447",
+      "sentence": "sent:tatoeba-229731",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Acho que isso e isto são coisas separadas.",
-      "answer_key": "それとこれとは別だと思うよ。",
+      "prompt_pt": "Aquilo é um faisão.",
+      "answer_key": "あれはキジです。",
       "accepted_variants": [
-        "それとこれとはべつだとおもうよ",
-        "それとこれとはべつだとおもうよ。",
-        "それとこれとは別だと思うよ",
-        "それとこれとは別だと思うよ。",
-        "それとこれとわべつだとおもうよ",
-        "それとこれとわべつだとおもうよ。"
+        "あれはきじです",
+        "あれはきじです。",
+        "あれはキジです",
+        "あれはキジです。",
+        "あれわきじです",
+        "あれわきじです。"
       ],
-      "sentence": "sent:tatoeba-10307857",
+      "sentence": "sent:tatoeba-229742",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-160737",
-      "sent:tatoeba-76098",
-      "sent:tatoeba-205771",
-      "sent:tatoeba-229178",
-      "sent:tatoeba-79848",
-      "sent:tatoeba-8938683"
+      "sent:tatoeba-229723",
+      "sent:tatoeba-229628",
+      "sent:tatoeba-160972",
+      "sent:tatoeba-145755",
+      "sent:tatoeba-233659",
+      "sent:tatoeba-127122"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -108,67 +179,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 35,
-    "meaning-output": 9,
-    "language-focused": 38,
-    "fluency": 18
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 13,
+    "language-focused": 19,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:56",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3603",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:1510:64",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "人",
-        "私",
-        "係"
-      ]
-    },
-    {
-      "id": "cf:n5:3204:64",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "話",
-        "他",
-        "別"
-      ]
-    },
-    {
-      "id": "kr:n5:383",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あがる",
-        "いくら",
-        "わたし"
-      ]
-    },
-    {
-      "id": "kr:n5:64",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "これ",
-        "みる",
-        "あう"
-      ]
-    }
-  ]
+  }
 }

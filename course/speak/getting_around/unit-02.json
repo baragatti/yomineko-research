@@ -52,9 +52,61 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 163,
+  "cumulative_known_vocab": 176,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:471",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:989",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3453:1422",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "時間",
+        "半分",
+        "毎日"
+      ]
+    },
+    {
+      "id": "cf:n3:5372:1422",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "結構",
+        "約束",
+        "自分"
+      ]
+    },
+    {
+      "id": "kr:n3:1422",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かかり",
+        "はらう",
+        "おなじ"
+      ]
+    },
+    {
+      "id": "kr:n4:1007",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おぼえる",
+        "しつもん",
+        "おいしい"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-154",
     "gram:gp-77",
@@ -83,6 +135,21 @@
   ],
   "production": [
     {
+      "prompt_pt": "Há quanto tempo o ônibus saiu?",
+      "answer_key": "バスはどのくらい前に出ましたか。",
+      "accepted_variants": [
+        "ばすはどのくらいまえにでましたか",
+        "ばすはどのくらいまえにでましたか。",
+        "ばすわどのくらいまえにでましたか",
+        "ばすわどのくらいまえにでましたか。",
+        "バスはどのくらい前に出ましたか",
+        "バスはどのくらい前に出ましたか。"
+      ],
+      "sentence": "sent:tatoeba-198125",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
       "prompt_pt": "O ônibus sai a cada quinze minutos.",
       "answer_key": "バスは１５分ごとにでます。",
       "accepted_variants": [
@@ -96,6 +163,7 @@
         "バスは１５分ごとにでます。"
       ],
       "sentence": "sent:tatoeba-198139",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -108,32 +176,19 @@
         "どこから出るんですか。"
       ],
       "sentence": "sent:tatoeba-201017",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu vou para a escola de ônibus.",
-      "answer_key": "私は、バスで学校に行く。",
-      "accepted_variants": [
-        "わたしは、ばすでがっこうにいく",
-        "わたしは、ばすでがっこうにいく。",
-        "わたしわ、ばすでがっこうにいく",
-        "わたしわ、ばすでがっこうにいく。",
-        "私は、バスで学校に行く",
-        "私は、バスで学校に行く。"
-      ],
-      "sentence": "sent:tatoeba-162318",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
     "items": [
-      "sent:tatoeba-10725053",
-      "sent:tatoeba-10107417",
+      "sent:tatoeba-162318",
       "sent:jec-2741",
       "sent:tatoeba-162347",
-      "sent:tatoeba-191220",
-      "sent:tatoeba-78125"
+      "sent:tatoeba-8775094",
+      "sent:tatoeba-202470",
+      "sent:tatoeba-10617667"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -151,57 +206,5 @@
     "meaning-output": 3,
     "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:471",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:989",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3453:1422",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "時間",
-        "壊す",
-        "毎日"
-      ]
-    },
-    {
-      "id": "cf:n3:5372:1422",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "結構",
-        "自分",
-        "食堂"
-      ]
-    },
-    {
-      "id": "kr:n3:1422",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かかり",
-        "おなじ",
-        "あいだ"
-      ]
-    },
-    {
-      "id": "kr:n4:1007",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おぼえる",
-        "おいしい",
-        "せいさん"
-      ]
-    }
-  ]
+  }
 }

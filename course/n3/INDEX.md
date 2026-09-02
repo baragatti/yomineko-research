@@ -1,6 +1,6 @@
 # Curso — Módulo N3: Ponte para a fluência (n3)
 
-_Gerado 2026-08-27. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
+_Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|

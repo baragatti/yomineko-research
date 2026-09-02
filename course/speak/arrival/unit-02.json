@@ -7,79 +7,163 @@
     "pt-BR": "Chegar e cumprimentar, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-426889",
-    "sent:tatoeba-640569",
-    "sent:tatoeba-408301",
-    "sent:tatoeba-13174949",
-    "sent:tatoeba-335372",
-    "sent:tatoeba-1576172"
+    "sent:tatoeba-4971",
+    "sent:tatoeba-219058",
+    "sent:tatoeba-198378",
+    "sent:tatoeba-229458",
+    "sent:tatoeba-78721",
+    "sent:tatoeba-1874351"
   ],
   "chunk_phrases": [
-    "sent:tatoeba-426889",
-    "sent:tatoeba-640569",
-    "sent:tatoeba-408301",
-    "sent:tatoeba-13174949",
-    "sent:tatoeba-335372",
-    "sent:tatoeba-1576172"
+    "sent:tatoeba-4971"
   ],
   "untranslated": [],
-  "words": [],
-  "patterns": [],
-  "kanji_recognition": [],
+  "words": [
+    "vocab:1311110",
+    "vocab:1578850",
+    "vocab:1259290",
+    "vocab:1547720",
+    "vocab:1315920",
+    "vocab:1529520",
+    "vocab:1254760",
+    "vocab:1583250",
+    "vocab:1584930"
+  ],
+  "patterns": [
+    "gram:mashou"
+  ],
+  "kanji_recognition": [
+    "私",
+    "行",
+    "見",
+    "来",
+    "間",
+    "時"
+  ],
   "shadowing": [
-    "sent:tatoeba-426889",
-    "sent:tatoeba-640569",
-    "sent:tatoeba-408301",
-    "sent:tatoeba-13174949",
-    "sent:tatoeba-335372",
-    "sent:tatoeba-1576172"
+    "sent:tatoeba-4971",
+    "sent:tatoeba-219058",
+    "sent:tatoeba-198378",
+    "sent:tatoeba-229458",
+    "sent:tatoeba-78721",
+    "sent:tatoeba-1874351"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 0,
+  "cumulative_known_vocab": 9,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
-  "drills": [],
+  "checkpoint": [
+    {
+      "id": "so:n4:3417",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n5:3348",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:3348:286",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "結構",
+        "行く",
+        "余り"
+      ]
+    },
+    {
+      "id": "cf:n5:1088:286",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "余り",
+        "行く",
+        "結構"
+      ]
+    },
+    {
+      "id": "kr:n5:224",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ない",
+        "みる",
+        "いく"
+      ]
+    },
+    {
+      "id": "kr:n5:231",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "じかん",
+        "いいえ",
+        "あまり"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:gp-108",
+    "gram:amari-nai",
+    "gram:gp-42",
+    "gram:dake-de",
+    "gram:nasai"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:mashou",
+      "examples": [
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-197681"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
-      "prompt_pt": "Obrigado!",
-      "answer_key": "ありがとう！",
+      "prompt_pt": "Bom dia!",
+      "answer_key": "おはようございます。",
       "accepted_variants": [
-        "ありがとう",
-        "ありがとう!",
-        "ありがとう！"
+        "おはようございます",
+        "おはようございます。"
       ],
-      "sentence": "sent:tatoeba-1531875",
+      "sentence": "sent:tatoeba-335372",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Obrigado.",
-      "answer_key": "ありがとう。",
+      "prompt_pt": "Desculpe.",
+      "answer_key": "すみません。",
       "accepted_variants": [
-        "ありがとう",
-        "ありがとう。"
+        "すみません",
+        "すみません。"
       ],
-      "sentence": "sent:tatoeba-1532832",
+      "sentence": "sent:tatoeba-408301",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Olá!",
-      "answer_key": "こんにちは！",
+      "prompt_pt": "Tchau!",
+      "answer_key": "さようなら！",
       "accepted_variants": [
-        "こんにちは",
-        "こんにちは!",
-        "こんにちは！"
+        "さようなら",
+        "さようなら!",
+        "さようなら！"
       ],
-      "sentence": "sent:tatoeba-3480287",
+      "sentence": "sent:tatoeba-426889",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença — em voz alta, sem ler.",
     "items": [
+      "sent:tatoeba-1532832",
       "sent:tatoeba-373351",
-      "sent:tatoeba-3553332",
       "sent:tatoeba-1598216"
     ],
     "seconds_target": 24,
@@ -88,16 +172,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 67,
-    "meaning-output": 17,
-    "language-focused": 0,
-    "fluency": 17
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 56,
+    "fluency": 7
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 0,
+    "language-focused": 23,
     "fluency": 3
-  },
-  "checkpoint": []
+  }
 }

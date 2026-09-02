@@ -7,119 +7,121 @@
     "pt-BR": "Quando, que horas, combinar, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-234998",
-    "sent:tatoeba-150577",
-    "sent:tatoeba-152614",
-    "sent:tatoeba-118653",
-    "sent:tatoeba-80068",
-    "sent:tatoeba-1037362"
+    "sent:tatoeba-80460",
+    "sent:tatoeba-80452",
+    "sent:tatoeba-80474",
+    "sent:tatoeba-2684823",
+    "sent:tatoeba-80338",
+    "sent:tatoeba-80668"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1255430",
-    "vocab:1165970",
-    "vocab:1310730",
-    "vocab:1316380",
-    "vocab:1100760",
-    "vocab:1223640",
-    "vocab:1414340",
-    "vocab:1583090",
-    "vocab:1554370"
+    "vocab:1171900",
+    "vocab:1003430"
   ],
   "patterns": [
     "gram:kamo-shirenai",
-    "gram:mashou",
-    "gram:to-iu",
-    "gram:gp-120",
-    "gram:gp-14"
+    "gram:ka-shira",
+    "gram:darou"
   ],
   "kanji_recognition": [
-    "月",
-    "今",
+    "雨",
     "日",
-    "一",
-    "間",
-    "時"
+    "明",
+    "家",
+    "降"
   ],
   "shadowing": [
-    "sent:tatoeba-234998",
-    "sent:tatoeba-150577",
-    "sent:tatoeba-152614",
-    "sent:tatoeba-118653",
-    "sent:tatoeba-80068",
-    "sent:tatoeba-1037362"
+    "sent:tatoeba-80460",
+    "sent:tatoeba-80452",
+    "sent:tatoeba-80474",
+    "sent:tatoeba-2684823",
+    "sent:tatoeba-80338",
+    "sent:tatoeba-80668"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 341,
+  "cumulative_known_vocab": 334,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n4:3854:811",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "物",
+        "度",
+        "一"
+      ]
+    },
+    {
+      "id": "cf:n5:3047:36",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "所",
+        "日",
+        "女"
+      ]
+    },
+    {
+      "id": "kr:n4:1101",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やすむ",
+        "やっと",
+        "はなし"
+      ]
+    },
+    {
+      "id": "kr:n5:36",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かた",
+        "いつ",
+        "あう"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:gp-91"
+    "gram:kitto",
+    "gram:gp-120",
+    "gram:gp-150"
   ],
   "drills": [
     {
       "pattern": "gram:kamo-shirenai",
       "examples": [
-        "sent:tatoeba-2684823",
         "sent:tatoeba-188036",
-        "sent:tatoeba-189633"
+        "sent:tatoeba-152614",
+        "sent:tatoeba-179684"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:mashou",
+      "pattern": "gram:ka-shira",
       "examples": [
-        "sent:tatoeba-139208",
-        "sent:tatoeba-173392",
-        "sent:tatoeba-200934"
+        "sent:tatoeba-11510681",
+        "sent:tatoeba-12296518",
+        "sent:tatoeba-11162294"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:to-iu",
+      "pattern": "gram:darou",
       "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-120",
-      "examples": [
-        "sent:tatoeba-193408",
-        "sent:gen-40a736aa4ac8",
-        "sent:gen-5bccb5134f4a"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-14",
-      "examples": [
-        "sent:tatoeba-74036",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-76735"
+        "sent:tatoeba-84837",
+        "sent:tatoeba-81544",
+        "sent:tatoeba-85312"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Será que amanhã vai chover?",
-      "answer_key": "明日は雨かしら。",
-      "accepted_variants": [
-        "あすはあめかしら",
-        "あすはあめかしら。",
-        "あすわあめかしら",
-        "あすわあめかしら。",
-        "明日は雨かしら",
-        "明日は雨かしら。"
-      ],
-      "sentence": "sent:tatoeba-80460",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Amanhã preciso me encontrar com você sobre isso.",
       "answer_key": "明日このことについてお目にかからなくてはと思います。",
@@ -130,6 +132,7 @@
         "明日このことについてお目にかからなくてはと思います。"
       ],
       "sentence": "sent:tatoeba-80608",
+      "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
@@ -144,18 +147,34 @@
         "来年はお目にかかれるでしょう。"
       ],
       "sentence": "sent:tatoeba-78588",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Quando eu estava estudando matemática por cerca de uma hora, fiquei com sono.",
+      "answer_key": "数学を１時間ほど勉強していたら、眠くなった。",
+      "accepted_variants": [
+        "すうがくをいちじかんほどべんきょうしていたら、ねむくなった",
+        "すうがくをいちじかんほどべんきょうしていたら、ねむくなった。",
+        "数学を1時間ほど勉強していたら、眠くなった",
+        "数学を1時間ほど勉強していたら、眠くなった。",
+        "数学を１時間ほど勉強していたら、眠くなった",
+        "数学を１時間ほど勉強していたら、眠くなった。"
+      ],
+      "sentence": "sent:tatoeba-143547",
+      "kind": "same-stage",
       "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
-      "sent:tatoeba-185449",
       "sent:tatoeba-79537",
-      "sent:tatoeba-789591",
-      "sent:jec-1876",
-      "sent:tatoeba-163381",
-      "sent:tatoeba-113170"
+      "sent:tatoeba-196299",
+      "sent:tatoeba-196300",
+      "sent:tatoeba-10899638",
+      "sent:tatoeba-10760527",
+      "sent:tatoeba-11727272"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -163,62 +182,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 45,
+    "fluency": 16
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 17,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n5:5462",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:891:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "為",
-        "誰",
-        "日"
-      ]
-    },
-    {
-      "id": "cf:n5:5462:162",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "左",
-        "傘",
-        "雨"
-      ]
-    },
-    {
-      "id": "kr:n5:103",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かかり",
-        "でんき",
-        "まもる"
-      ]
-    },
-    {
-      "id": "kr:n5:162",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こと",
-        "はは",
-        "かず"
-      ]
-    }
-  ]
+  }
 }

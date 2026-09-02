@@ -47,11 +47,25 @@ decides which of two equally-relevant words is taught first.
 Everything below is computed by `scripts/export/build_speaking_path.py`. No hand-picked lists beyond
 the seed lexicons in §5, so the path can be rebuilt and diffed.
 
+Rules 7-9 carry **R-numbers continuing `learning_science.md`'s series** (which ends at R84), so an
+auditor grepping for `R85` finds exactly one definition. They are enforced in
+`build_speaking_path.py`, not merely described here.
+
 1. **Phrases are real.** A unit's `say_now` phrases are drawn from the sentence bank with
    `ai_generated = 0` (real human-written Tatoeba/JEC text) preferred; generated sentences fill only
    when a scenario is otherwise empty, and stay marked. Spec §1.2, selection over generation.
-2. **Scenario match.** A sentence belongs to a stage when it contains a term from that stage's seed
-   lexicon (§5). Seeds are Japanese surface forms, so the match is checkable by eye.
+2. **Scenario match.** A sentence belongs to a stage when one of its tokens carries a term from that
+   stage's seed lexicon (§5) as its **lemma**; seeds of 4+ characters may also match as a substring,
+   which is how frozen expressions the analyzer shreds (すみません → すみ+ませ+ん) still find their
+   sentences.
+
+   Matching anything looser has failed twice, and both failures shipped. Raw substring matching put
+   夕食は**いり**ません ("I don't need dinner") in the greetings stage on the seed はい. Matching the
+   token **surface** as well as the lemma was the fix for that and was still wrong: it put three
+   footwear sentences in greetings (彼は赤いズボンをはいていた, スリッパをはいてください,
+   それより他の靴をはいてみたいのですが) because 履く's te-form is written はいて and tokenises to the
+   surface はい with the lemma はく. A surface is whatever inflection the sentence happened to use;
+   only the lemma says which word it is.
 3. **i+1 load.** A sentence qualifies only if the number of its words *not* in the cumulative known
    set is **≤ 3** (`MAX_NEW`), and a unit may not stack six such sentences: the budget is recomputed
    against what the unit has already introduced. The known set grows as units are completed, exactly
@@ -73,6 +87,70 @@ the seed lexicons in §5, so the path can be rebuilt and diffed.
 6. **Nothing is invented.** If a stage cannot be filled to target from the bank, the builder emits a
    short unit and records the shortfall in the manifest. A thin stage is a visible data gap to fix
    by mining more Tatoeba, not something to paper over with generated sentences.
+7. **R85 — no stage quotes one exercise.** At most **4** `say_now` phrases per stage may be selected
+   while 4 or more of that stage's existing picks already sit within **±200 consecutive source ids**
+   of the candidate. Tatoeba carries whole textbook exercises as consecutive id runs, and one of them
+   — `sent:tatoeba-84114`…`84243`, "the room" — supplied **25 of `lodging`'s 36 slots**: 部屋には家具が
+   ４点あった, 部屋には何人の少年がいますか, 部屋に入ったらドアを閉めなさい. Third-person descriptions
+   and commands to a child; a hotel guest says none of them, and the stage's own seeds 泊まる, トイレ,
+   風呂 appeared in zero phrases. Contiguity is the machine-checkable signature of quoting one exercise
+   instead of sampling the language. The cap is evaluated per candidate, so a long chain of picks
+   spaced just over the window can still cluster slightly above 4; measured worst case after the rule
+   is 6 of 36 (`time_plans`), against 25 before.
+8. **R86 — punctuation is not a phrase.** Two bank sentences whose Japanese is identical once
+   punctuation and spacing are stripped are **one phrase** and compete for **one** slot, path-wide.
+   おはよう！ and おはよう。 are the same thing said out loud, and `arrival` spent **8 of its 36 slots**
+   teaching four greetings twice over; `politeness-01` taught おめでとうございます。 and
+   おめでとうございます！ side by side. The duplication propagated: `arrival-03` shipped two production
+   items with the identical prompt "Bom dia!". This path is scored on speech, where the difference is
+   inaudible.
+9. **R87 — the survival core outranks frequency.** A stage may declare a small set of **survival
+   terms**: the phrases it exists to teach. They sort ahead of the frequency ranking (still behind
+   real-over-generated, still under the same i+1 budget), and inside that bucket **shortest first**, so
+   the bare canonical act leads the stage. §2 already said scenario beats frequency when they conflict;
+   nothing in the code enforced it, so the sort quietly overruled the stage title. `shopping`, titled
+   *"Isto, aquilo, quanto custa"*, is the proof: いくらですか？ (`sent:tatoeba-5332`) matched its いくら
+   seed from the first build, but 幾ら has `freq_rank` 4100, so it lost all 36 slots to commoner words
+   and the stage taught あれはキジです ("that is a pheasant") and **never a price question in 36
+   phrases** — while the same sentence served as a grammar drill in four other stages.
+
+   Survival terms are written as **phrases** wherever the bare word is ambiguous. Bare いくら was tried
+   and promoted the concessive frame instead (いくらお礼を言っても言い切れない, いくら考えても、わかり
+   ません — いくら…ても is a different word wearing the same spelling); 円 was tried and promoted the
+   foreign exchange desk (ドルは円に対して下がった). The plain words stay in the seed lexicon, where
+   frequency ranks them like anything else.
+
+### 3a. Ranking the already-known material (`production`, `fluency`)
+
+Not new rules — this is how `build_speaking_practice.py` chooses **among** the material R44 and R79
+already permit, and it is written down because the obvious shortcut is wrong in a way that has now
+been tried twice.
+
+`production` and `fluency` may only use phrases modelled in an **earlier** unit. At a stage's opening
+unit that means nothing from the new stage exists yet, so both blocks fill from the previous scenario:
+`health-01` told the learner to explain what hurts and then asked them to produce *"Quando foi a última
+vez que você cortou o cabelo?"*. Own-stage share was 0/6 fluency and 0/3 production in **every**
+non-first stage.
+
+**The tempting fix — letting the unit's own `say_now` in — is wrong for both blocks.** R79(a) wants
+already-known material, and a sentence met sixty seconds ago is still being acquired; R44 forbids
+production being an item's first retrieval and fixes the order model → recognition/checkpoint →
+production, while the unit template schedules `production` *before* `checkpoint`, so a same-unit item
+is exactly the first retrieval R44 names. `validate_speaking_path.py` rejects both, and it is right to
+(commit 92b833c5).
+
+So the rule holds and what moves is everything around it:
+
+- **`fluency`** keeps strictly prior-known items, and the **prompt** stops lying: a block with nothing
+  from its own stage is `kind: "recap"` and says so, instead of presenting the new stage's situation.
+  A unit also may not reopen with its predecessor's list in the same order — the previous unit's items
+  go to the back of the queue, never out of it, since starving a block below six would break R79(d) to
+  fix the smaller problem.
+- **`production`** keeps strictly prior-known items and re-ranks them by **relevance to the situation
+  the learner is now in**: own-stage phrases, then earlier phrases carrying one of this stage's seeds,
+  then the rest by recency. Each item records which it is (`kind`: `same-stage` / `on-topic` /
+  `review`) so the app can label a carried-over item as review. `health-01` now produces
+  今日はちょっと頭が痛いの; 26 of the 33 stage-opening items are on-topic, against 0 before.
 
 ## 4. Unit shape
 
@@ -87,6 +165,13 @@ checkpoint     exam-bank item IDs, with distractors re-drawn from the known set.
                See §7 — this is how the JLPT bank feeds the speaking path.
 shadowing      the same sentence IDs, flagged for audio (audio: "pending" until the
                owner's voice-over pass — see design/listening.md).
+production      pt-BR prompt → Japanese answer, drawn ONLY from prior units (R44) and
+               string-gradeable (R45). Each carries `kind` — same-stage / on-topic /
+               review — see §3a.
+fluency        ≥6 already-known sentence IDs under a situational prompt with a speed
+               target (R79). `kind: "recap"` when nothing in it comes from this stage.
+drills         per surviving `pattern`, 3 known-set example IDs (R80/R81); a pattern
+               that cannot find 3 is demoted to `patterns_chunked`.
 kanji_recognition  every kanji appearing in the unit's phrases, capped at 6. RECOGNITION
                ONLY — this path never asks the learner to write kanji. It was named
                `signage_kanji` and described here as "入口 出口 男 女 駅 円 …", which was
@@ -94,11 +179,12 @@ kanji_recognition  every kanji appearing in the unit's phrases, capped at 6. REC
                18 are classic signage. Renamed to say what it contains.
 ```
 
-An earlier draft of this section specified a `drills` field holding mechanically-derived substitution
-drills (one slot of a `say_now` phrase swapped for other known vocab). Nothing generated it, and
-`checkpoint` now covers the retrieval role using audited bank items instead of synthesised ones.
-Substitution drills remain worth building as a SPEAKING exercise rather than a retrieval one, since
-they are the only unit component that would make the learner produce a novel sentence aloud.
+`production`, `fluency` and `drills` were added by `build_speaking_practice.py` after this section was
+first written; the paragraph that used to stand here said `drills` had never been generated, which
+stopped being true. `drills` is not the substitution drill originally sketched (one slot of a `say_now`
+phrase swapped for other known vocab): it is R80's pattern test — a pattern that cannot show 3 distinct
+known-set examples is not a pattern in this unit and moves to `patterns_chunked`. A genuine substitution
+drill, the only component that would make the learner produce a *novel* sentence aloud, is still unbuilt.
 
 `needs_review: true` on every unit: sequencing is Layer C.
 
@@ -109,7 +195,7 @@ Approximate JLPT bands are shown for orientation only — **the path never gates
 | # | Stage | Slug | Seeds (excerpt) | ≈band |
 |---|---|---|---|---|
 | 1 | Chegar e cumprimentar | `arrival` | こんにちは ありがとう すみません はい いいえ お願い はじめまして | pre-N5 |
-| 2 | Isto, aquilo, quanto custa | `shopping` | いくら 買う 円 ください 店 これ 安い 高い お金 | pre-N5/N5 |
+| 2 | Isto, aquilo, quanto custa | `shopping` | いくら 買う 円 店 これ 安い 高い お金 をください 会計 レジ | pre-N5/N5 |
 | 3 | Comer e beber fora | `eating` | 食べる 飲む おいしい レストラン 注文 水 お茶 ご飯 | N5 |
 | 4 | Chegar aonde você quer | `getting_around` | どこ 駅 行く 左 右 近く 道 電車 バス | N5 |
 | 5 | Dormir e resolver problemas | `lodging` | ホテル 部屋 泊まる 鍵 予約 トイレ 風呂 | N5 |
@@ -121,8 +207,14 @@ Approximate JLPT bands are shown for orientation only — **the path never gates
 | 11 | Dizer o que você acha | `opinions` | と思う から でも たぶん かもしれない 方が | N4/N3 |
 | 12 | Conversa de verdade | `real_talk` | らしい そうです ば たら のに ながら わけ | N3 |
 
-Full seed lexicons live in the builder, not here, so they stay executable rather than drifting from
-the prose.
+Full seed lexicons — and the per-stage survival cores of R87 — live in the builder, not here, so they
+stay executable rather than drifting from the prose.
+
+**`ください` vs `をください`.** Bare `ください` was a `shopping` seed once and filled the whole stage with
+〜てください drills ("close the door", "wait here") — the polite imperative on a *verb*, which is not
+shopping. `をください` is the other construction entirely: ask for an **object**, それをください. A seed
+that appears in every other sentence selects for the seed, not the theme; the same mistake put
+obligation forms in `getting_around` via 行く.
 
 ## 6. Known gaps (measured 2026-08-05, before the first build)
 
@@ -138,6 +230,12 @@ generation**: `raw_tatoeba_sentence` holds 248,705 sentences already ingested an
 `raw_tatoeba_translation` holds 285,215 translations to pair them with. Mining those two stages up
 to parity is the follow-up task; it needs a pt-BR authoring pass (Layer B) per new sentence, which
 is why it is queued rather than done inline. Until then the builder emits short units and says so.
+
+**This gap did not stay visible, which is why R85 exists.** The builder filled all 36 `lodging` slots
+anyway, 25 of them from one contiguous "the room" id-run — a thin stage papered over with a textbook
+exercise instead of reported as thin. R85 caps that at source; the honest remedy is still the mining
+pass, and the remaining `lodging` phrases still lean on `coverage`/`mined` tags rather than on things a
+guest says. Content quality inside a stage is a review queue, not something selection alone can fix.
 
 ## 7. How the exam bank feeds this path
 
