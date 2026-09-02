@@ -58,6 +58,80 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-01 (ag) — QA WAVES COMPLETE (26/26 auditors, 20 reports), SIX REPAIR CAMPAIGNS LANDED,
+> GATE GREEN AT 39 HARD VALIDATORS. The bottleneck has moved from finding defects to deciding on them.**
+>
+> **Landed since (af), each a commit with the gate green:**
+> - `ac033368` readings: 69 furigana/romaji corrections (ruby that rendered wrong: 上手→かみて, 言う→ゆう,
+>   ５００００→ごれいれいれいれい), an English reviewer note stripped from a learner-visible translation, 140/286
+>   real titles (all n5, 46 n4, 51 n3 — the rest still show "Leitura").
+> - `c7048fe6` 324 Layer-A English anchors restored from the miner's own artifact, verified against the
+>   raw Tatoeba dumps; root cause was one dropped dict key in the pt-BR authoring pass, ingest patched.
+>   12 records DELIBERATELY left en-less (a prior verified audit unlinked them — 77972 is a partial
+>   negation vs a total one); 6 are generated. Residual 18, all explained. pt_validated_against stays
+>   'dict' — re-validating against the restored anchors is queued, not claimed.
+> - `92b833c5` speak: 92/213 production items rejected the correctly-spelled kana (my regression — the
+>   bank's `kana` is phonetic, は→わ); orthographic form now derived from tokens, NFKC twins for
+>   fullwidth keys. Fluency cold-start: items stay strictly prior-known (R79a), the PROMPT now says
+>   "recap" instead of lying — my first fix let own-unit phrases in and the validator correctly killed it.
+> - `2dec386e` grammar: gp-105/gp-63/saseru/saserareru stated the godan あ-row rule without the う→わ
+>   exception (×買あせる). Fixed in gp-7's own phrasing; validate_grammar_formation now gates the class,
+>   plant-proved (the first plant test was invalid — validator resolves ROOT from its own path, so copy
+>   the validator into the fixture).
+> - `5cca48c5` + `2911ff68` sentence text: 717 fields. 318 translation_literal scaffolds taught the
+>   wrong particle ("Quanto ao gato (が marca o sujeito)"); 51 こ/そ/あ mis-mappings; 380 structure
+>   explanations exposed corpus bookkeeping. audit_hygiene_all_locales gates the construction (not the
+>   word — "cobertura de chocolate" is legitimate). Rewrite tables TRACKED under research/derived/repairs/.
+>
+> **Still running: nothing.** All workflows completed or were recovered from disk (agents write their
+> report before a connection drop kills them — always check research/reports/ before resuming).
+>
+> **PROCESS DEFECTS to fix:** (1) every commit this session carries a `Co-Authored-By: Claude` trailer,
+> which the global CLAUDE.md forbids — stop; the commits are local/unpushed, rewriting is the owner's
+> call. (2) STATE.md fell six commits behind the atomic-unit rule — this entry closes it.
+>
+> **PENDING, in the order I would run it:**
+>
+> A. Owner decisions (each has a prepared proposal in research/reports/; several block other work):
+>   1. Exam reading passages: n5/n3 text_grammar + reading_comp "passages" are unrelated Tatoeba
+>      sentences concatenated (「ネズミでした。こんにちは。」). Per-item repair cannot fix this and neither can
+>      regeneration — the BUILDER concatenates. Options: author real passages (Layer C, needs_review),
+>      or drop those sections until real passages exist. Decide before the regen.
+>   2. Exam regen: NO-GO as-is, GO after nine builder fixes (exam_bank_regen_review.md). Add: the n3
+>      linker matched written form and ignored reading (空/から for sky ×6, 時/とき for じ ×26, 金/きん for
+>      かね) — same homograph class as the vocab resolver, 135 items. sentence_order should chunk by
+>      bunsetsu, not morpheme (45 items accept a second ordering). ~1,700 flagged items ride on this.
+>   3. Grammar identity merges: gp→da-desu (840 refs), gp-152→te-hoshii (591). Blocks family rebuild.
+>   4. Level-confidence formula: 132 grammar records pair '1/1' with 0.34, 207 with 1.0. Retires L4-L6.
+>   5. Family layer rebuild (staged plan; 74.7% of grammar function_set memberships name the wrong topic).
+>   6. Homograph placements: 4 exported refs provably wrong; implement the prose-reading resolver rule.
+>   7. needs[] prerequisite model (empty everywhere); furigana coverage policy (875 spans); ateji list.
+>   8. Contract gap: bank.json cannot distinguish a Layer-A en anchor (3,529) from Layer-B derived en
+>      (2,342) — a consumer sees one `translation.en`.
+>
+> B. Repair campaigns ready to run (exact ids in the reports; per-item judgement, so workflow-shaped):
+>   - Grammar per-record (all 4 slices in hand): 一人 said to count animals; くれる ます-form called
+>     irregular; n3-ppai keyed っぽい but contains でいっぱい; 19 duplicate pairs; sentence links that
+>     illustrate the sense the record EXCLUDES (n3-ta-tokoro 6/6, ようだ ×5 showing ようと思う, passive
+>     gp-63 illustrated by potentials). Highest learner impact per token.
+>   - Translation individual defects (~100 named: meaning shifts, explanatory parentheses in the
+>     natural field ×45, orthography slips, さようなら→"Adeus", one leaked conjugation_note).
+>   - Readings selection: 25 duplicate-sentence boxes, 32 run-on boxes, 146 titles, length_band semantics.
+>   - Kanji selection side: example selector prefers N1/N2 over owned N5 words (48 records),
+>     introduced_at_level seeded against its own rule (44), 2 duplicate example words, 屋 lacks telhado.
+>   - Speak selection: stage-opening production from the previous stage, shopping never asks a price,
+>     lodging 25/36 from one block, insults/stereotype/痔 as drill items, はい matching 履く.
+>   - Vocab glosses: 15 findings.
+>
+> C. Small mechanical items (me, cheap): bank 言う=ゆう on 5 source tokens (touches the re-dissection
+>   gate — check validate.py first); empty `stage:` tag on 324 records (same bug as the en anchor);
+>   3 stale n4 INDEX.md counts; 2 exact duplicate pairs in n4_sentence_order; lt:n5:004 and the two n3
+>   listening defects; 37 n5 orthography items keyed ambiguously (あつい ×3 with identical options).
+>
+> D. DEFER: further broad QA sweeps. Two waves produced more confirmed findings than the decision
+>   queue can absorb; another sweep now would be the wasteful kind.
+
+
 > **2026-08-27 (af) — THE SUITE IS NOW 39 HARD VALIDATORS, EVERY ONE LANDED WITH A PLANTED-VIOLATION
 > PROOF, AND EVERY CONFIRMED DEFECT FROM THE TWO 13-PANEL REVIEWS IS REPAIRED OR HELD BY A NAMED
 > RATCHET. Gate green end to end; scripts/validate/README.md documents the whole gate.**
