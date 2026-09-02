@@ -58,6 +58,26 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-01 (ai) — THE PLAN OF RECORD IS `research/reports/APP_PLAN.md` (v2, Fable-reviewed).
+> Work is tracked there by unit id (W01–W44) in four lanes behind milestones M0–M7. Resume = open
+> APP_PLAN.md §3, find the first ☐ in the current lane, check §4 for its decision, run it as §1 says.**
+>
+> - **Model policy (owner, 2026-09-01):** Fable 5.1 plans, reviews plans and results, and draws
+>   random samples for quality (30 rows per campaign before commit; a failure widens to 100).
+>   Opus 5 does the work — every campaign is an Opus workflow with a deterministic work list, an
+>   independent verifier per batch, and an idempotent apply script with a tracked table.
+> - **Readiness audit (9 Opus auditors):** research/reports/readiness/*.md. Verdict: content spine
+>   production-grade; practice depth, real passages, level-gated exams, the review loop, user-state
+>   contracts and audio are thin or absent. A5 family layer: DEFECT CERTAIN (272/364). The finding
+>   that outranks the rest: nothing proves db/corpus.sqlite rebuilds from JSON + tracked scripts —
+>   W01 is first for that reason.
+> - **Owner decisions A1–A10** at the top of PENDING.md; the audit's new decisions are APP_PLAN §4
+>   (defaults I proceed with vs BLOCKING ones: D1 N2/N1 scope, D2 completion/placement policy,
+>   D3 TTS/ASR/romaji, D4 a named reviewer, D8 real DB, D9 two licence rulings, D12 third level source).
+> - **Started:** W01 (DB rebuildability), W02 (repair-replay gate), W03 (exam level gate), W04
+>   (practice-coverage gate) as parallel Opus agents. W05–W07 follow W01 (W05 edits the exporter).
+> - Last commits: `2a8f783e` grammar retag + column fixes; `b7231149` STATE (ah).
+
 > **2026-09-01 (ah) — ALL B AND C CAMPAIGNS LANDED, OWNER DECISIONS TAKEN, APP-READINESS AUDIT IN
 > FLIGHT. Gate green at 39 hard validators on every commit. Next: write research/reports/APP_PLAN.md
 > from the audit, then execute the decisions in dependency order.**
