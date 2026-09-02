@@ -26,10 +26,8 @@
   ],
   "patterns": [
     "gram:ta-koto-ga-aru",
-    "gram:koto-ga-aru",
-    "gram:rashii",
-    "gram:gp-12",
-    "gram:koto"
+    "gram:n3-rashii",
+    "gram:gp-12"
   ],
   "kanji_recognition": [
     "気",
@@ -52,64 +50,9 @@
   "cumulative_known_vocab": 425,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:259",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:4843:896",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "貴方",
-        "寝る",
-        "着く"
-      ]
-    },
-    {
-      "id": "cf:n4:3356:852",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "弾く",
-        "会社",
-        "余り"
-      ]
-    },
-    {
-      "id": "kr:n4:1267",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かくにん",
-        "おくれる",
-        "さいきん"
-      ]
-    },
-    {
-      "id": "kr:n4:891",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おかあさん",
-        "びょういん",
-        "りょうしん"
-      ]
-    },
-    {
-      "id": "pp:n5:42",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "素晴らしい",
-        "パーティー",
-        "レストラン"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:koto-ga-aru",
+    "gram:n3-koto",
     "gram:gp-19"
   ],
   "drills": [
@@ -123,20 +66,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:koto-ga-aru",
+      "pattern": "gram:n3-rashii",
       "examples": [
-        "sent:tatoeba-11960481",
-        "sent:tatoeba-235631",
-        "sent:tatoeba-433648"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:rashii",
-      "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-dbc3c7fb8b46",
-        "sent:tatoeba-189629"
+        "sent:tatoeba-100541",
+        "sent:tatoeba-108826",
+        "sent:tatoeba-107636"
       ],
       "strand": "language-focused"
     },
@@ -146,15 +80,6 @@
         "sent:tatoeba-84959",
         "sent:tatoeba-78451",
         "sent:tatoeba-97605"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
       ],
       "strand": "language-focused"
     }
@@ -220,15 +145,72 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 18,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:259",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4843:896",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "貴方",
+        "寝る",
+        "着く"
+      ]
+    },
+    {
+      "id": "cf:n4:3356:852",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "弾く",
+        "会社",
+        "余り"
+      ]
+    },
+    {
+      "id": "kr:n4:1267",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かくにん",
+        "おくれる",
+        "さいきん"
+      ]
+    },
+    {
+      "id": "kr:n4:891",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おかあさん",
+        "びょういん",
+        "りょうしん"
+      ]
+    },
+    {
+      "id": "pp:n5:42",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "素晴らしい",
+        "パーティー",
+        "レストラン"
+      ]
+    }
+  ]
 }

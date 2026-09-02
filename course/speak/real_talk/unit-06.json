@@ -24,12 +24,10 @@
     "vocab:1486530"
   ],
   "patterns": [
-    "gram:janai-dewa-nai",
-    "gram:bakari",
-    "gram:mitai-da",
-    "gram:rashii",
-    "gram:to-iu",
-    "gram:tokoro"
+    "gram:n3-wake-dewa-nai",
+    "gram:n3-to-iu-no-wa",
+    "gram:n3-mitai-da",
+    "gram:n3-to-iu-no"
   ],
   "kanji_recognition": [
     "済",
@@ -52,101 +50,44 @@
   "cumulative_known_vocab": 581,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:5393:2639",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "新聞",
-        "休む",
-        "出席"
-      ]
-    },
-    {
-      "id": "cf:n3:5450:1591",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "料金",
-        "動く",
-        "寝る"
-      ]
-    },
-    {
-      "id": "kr:n3:1393",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いっしょ",
-        "だんせい",
-        "へんこう"
-      ]
-    },
-    {
-      "id": "kr:n3:1591",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "シャワー",
-        "パソコン",
-        "しつもん"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-mo",
+    "gram:n3-tokoro-ga"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:janai-dewa-nai",
+      "pattern": "gram:n3-wake-dewa-nai",
       "examples": [
-        "sent:tatoeba-229343",
-        "sent:tatoeba-228269",
-        "sent:tatoeba-227828"
+        "sent:tatoeba-10901570",
+        "sent:tatoeba-156748",
+        "sent:tatoeba-78052"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:n3-to-iu-no-wa",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
+        "sent:tatoeba-423387",
+        "sent:tatoeba-142020",
+        "sent:tatoeba-168168"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:mitai-da",
+      "pattern": "gram:n3-mitai-da",
       "examples": [
-        "sent:tatoeba-4216208",
-        "sent:tatoeba-774692",
-        "sent:gen-1d94a829f09c"
+        "sent:tatoeba-80952",
+        "sent:tatoeba-11281222",
+        "sent:tatoeba-184879"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:rashii",
+      "pattern": "gram:n3-to-iu-no",
       "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-e9700d108b4a",
-        "sent:gen-dbc3c7fb8b46"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tokoro",
-      "examples": [
-        "sent:gen-ad64679f3372",
-        "sent:tatoeba-84696",
-        "sent:gen-a3656907ff28"
+        "sent:tatoeba-220804",
+        "sent:tatoeba-234151",
+        "sent:tatoeba-214502"
       ],
       "strand": "language-focused"
     }
@@ -210,15 +151,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:5393:2639",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "新聞",
+        "休む",
+        "出席"
+      ]
+    },
+    {
+      "id": "cf:n3:5450:1591",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "料金",
+        "動く",
+        "寝る"
+      ]
+    },
+    {
+      "id": "kr:n3:1393",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いっしょ",
+        "だんせい",
+        "へんこう"
+      ]
+    },
+    {
+      "id": "kr:n3:1591",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "シャワー",
+        "パソコン",
+        "しつもん"
+      ]
+    }
+  ]
 }

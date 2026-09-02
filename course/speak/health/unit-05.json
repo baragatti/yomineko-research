@@ -25,11 +25,12 @@
     "vocab:1269060"
   ],
   "patterns": [
+    "gram:gp-98",
     "gram:gp-12",
     "gram:gp-17",
     "gram:gp-31",
     "gram:ndesu",
-    "gram:da-desu"
+    "gram:gp-121"
   ],
   "kanji_recognition": [
     "院",
@@ -52,62 +53,17 @@
   "cumulative_known_vocab": 402,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:761",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:947",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:223:1315",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "人",
-        "顔",
-        "三"
-      ]
-    },
-    {
-      "id": "cf:n4:3802:1315",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "君",
-        "箸",
-        "力"
-      ]
-    },
-    {
-      "id": "kr:n4:1315",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "タイプ",
-        "おおい",
-        "おれい"
-      ]
-    },
-    {
-      "id": "kr:n5:120",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "やすい",
-        "パート",
-        "かえり"
-      ]
-    }
-  ],
-  "patterns_chunked": [
-    "gram:kyuu-ni"
-  ],
+  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:gp-98",
+      "examples": [
+        "sent:gen-f4a52d78b938",
+        "sent:gen-f384f4213f18",
+        "sent:gen-802fed6cb267"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-12",
       "examples": [
@@ -145,11 +101,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:gp-121",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
       ],
       "strand": "language-focused"
     }
@@ -214,15 +170,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 24,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:761",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:947",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:223:1315",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "人",
+        "顔",
+        "三"
+      ]
+    },
+    {
+      "id": "cf:n4:3802:1315",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "君",
+        "箸",
+        "力"
+      ]
+    },
+    {
+      "id": "kr:n4:1315",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "タイプ",
+        "おおい",
+        "おれい"
+      ]
+    },
+    {
+      "id": "kr:n5:120",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やすい",
+        "パート",
+        "かえり"
+      ]
+    }
+  ]
 }

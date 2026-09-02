@@ -26,10 +26,7 @@
     "vocab:1282490",
     "vocab:1012980"
   ],
-  "patterns": [
-    "gram:dake",
-    "gram:demo"
-  ],
+  "patterns": [],
   "kanji_recognition": [
     "経",
     "高",
@@ -51,84 +48,15 @@
   "cumulative_known_vocab": 91,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3369",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3495",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3369:846",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "間",
-        "時",
-        "何"
-      ]
-    },
-    {
-      "id": "cf:n4:3522:846",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "年",
-        "私",
-        "家"
-      ]
-    },
-    {
-      "id": "kr:n4:740",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けっして",
-        "どんどん",
-        "ワープロ"
-      ]
-    },
-    {
-      "id": "kr:n4:846",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たかい",
-        "おれい",
-        "あした"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:nakereba-naranai",
+    "gram:n3-n-datte",
     "gram:dake-de",
+    "gram:gp-121",
     "gram:gp-150",
     "gram:nara"
   ],
-  "drills": [
-    {
-      "pattern": "gram:dake",
-      "examples": [
-        "sent:tatoeba-4767",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-78717"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:demo",
-      "examples": [
-        "sent:tatoeba-4781",
-        "sent:tatoeba-85538",
-        "sent:tatoeba-74951"
-      ],
-      "strand": "language-focused"
-    }
-  ],
+  "drills": [],
   "production": [
     {
       "prompt_pt": "De preferência, o mais barato possível.",
@@ -186,15 +114,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "meaning-input": 34,
+    "meaning-output": 9,
+    "language-focused": 40,
+    "fluency": 17
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 14,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3369",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3495",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3369:846",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "間",
+        "時",
+        "何"
+      ]
+    },
+    {
+      "id": "cf:n4:3522:846",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "年",
+        "私",
+        "家"
+      ]
+    },
+    {
+      "id": "kr:n4:740",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっして",
+        "どんどん",
+        "ワープロ"
+      ]
+    },
+    {
+      "id": "kr:n4:846",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "おれい",
+        "あした"
+      ]
+    }
+  ]
 }

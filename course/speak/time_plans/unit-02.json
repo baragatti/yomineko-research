@@ -45,52 +45,10 @@
   "cumulative_known_vocab": 334,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n4:3854:811",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "物",
-        "度",
-        "一"
-      ]
-    },
-    {
-      "id": "cf:n5:3047:36",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "所",
-        "日",
-        "女"
-      ]
-    },
-    {
-      "id": "kr:n4:1101",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "やすむ",
-        "やっと",
-        "はなし"
-      ]
-    },
-    {
-      "id": "kr:n5:36",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かた",
-        "いつ",
-        "あう"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-ba-noni",
     "gram:kitto",
-    "gram:gp-120",
-    "gram:gp-150"
+    "gram:gp-120"
   ],
   "drills": [
     {
@@ -182,15 +140,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 45,
-    "fluency": 16
+    "meaning-input": 35,
+    "meaning-output": 9,
+    "language-focused": 38,
+    "fluency": 18
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 17,
+    "language-focused": 13,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n4:3854:811",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "物",
+        "度",
+        "一"
+      ]
+    },
+    {
+      "id": "cf:n5:3047:36",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "所",
+        "日",
+        "女"
+      ]
+    },
+    {
+      "id": "kr:n4:1101",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やすむ",
+        "やっと",
+        "はなし"
+      ]
+    },
+    {
+      "id": "kr:n5:36",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かた",
+        "いつ",
+        "あう"
+      ]
+    }
+  ]
 }

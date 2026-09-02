@@ -26,7 +26,7 @@
   ],
   "patterns": [
     "gram:tara-ii-desu-ka",
-    "gram:ta-tokoro",
+    "gram:n3-ta-tokoro",
     "gram:masen-ka",
     "gram:gp-149"
   ],
@@ -51,56 +51,9 @@
   "cumulative_known_vocab": 197,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3598",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3598:2713",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "二",
-        "人",
-        "事"
-      ]
-    },
-    {
-      "id": "cf:n4:5027:1226",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "出る",
-        "最中",
-        "無い"
-      ]
-    },
-    {
-      "id": "kr:n4:1226",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しょくどう",
-        "ひるごはん",
-        "さいちゅう"
-      ]
-    },
-    {
-      "id": "kr:n5:151",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けっして",
-        "めいわく",
-        "おくれる"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:gp-70",
-    "gram:tokoro"
+    "gram:gp-36",
+    "gram:gp-70"
   ],
   "drills": [
     {
@@ -113,11 +66,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ta-tokoro",
+      "pattern": "gram:n3-ta-tokoro",
       "examples": [
-        "sent:tatoeba-11545589",
-        "sent:tatoeba-12440070",
-        "sent:tatoeba-12574555"
+        "sent:tatoeba-188870",
+        "sent:tatoeba-172554",
+        "sent:tatoeba-203585"
       ],
       "strand": "language-focused"
     },
@@ -203,15 +156,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3598",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3598:2713",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "二",
+        "人",
+        "事"
+      ]
+    },
+    {
+      "id": "cf:n4:5027:1226",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "出る",
+        "最中",
+        "無い"
+      ]
+    },
+    {
+      "id": "kr:n4:1226",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しょくどう",
+        "ひるごはん",
+        "さいちゅう"
+      ]
+    },
+    {
+      "id": "kr:n5:151",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっして",
+        "めいわく",
+        "おくれる"
+      ]
+    }
+  ]
 }

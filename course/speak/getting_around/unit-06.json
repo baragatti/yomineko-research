@@ -32,10 +32,10 @@
   ],
   "patterns": [
     "gram:te-itadakemasen-ka",
+    "gram:n3-desu-kara",
     "gram:masen-ka",
-    "gram:gp-149",
-    "gram:to-iu",
-    "gram:gp-17"
+    "gram:n3-to-iu",
+    "gram:gp-149"
   ],
   "kanji_recognition": [
     "図",
@@ -58,58 +58,6 @@
   "cumulative_known_vocab": 209,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:771",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:771",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:4691:2312",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "分",
-        "頃",
-        "円"
-      ]
-    },
-    {
-      "id": "cf:n5:12:362",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "迚も",
-        "帰り",
-        "青い"
-      ]
-    },
-    {
-      "id": "kr:n4:1138",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はなし",
-        "くるま",
-        "くうき"
-      ]
-    },
-    {
-      "id": "kr:n4:855",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "やくそく",
-        "かんけい",
-        "はんぶん"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:te-ita"
   ],
@@ -124,6 +72,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-desu-kara",
+      "examples": [
+        "sent:tatoeba-111483",
+        "sent:tatoeba-173817",
+        "sent:tatoeba-6453904"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:masen-ka",
       "examples": [
         "sent:gen-4595bdeb6907",
@@ -133,29 +90,20 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-to-iu",
+      "examples": [
+        "sent:tatoeba-194344",
+        "sent:tatoeba-229142",
+        "sent:tatoeba-89857"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-149",
       "examples": [
         "sent:tatoeba-77812",
         "sent:tatoeba-4856",
         "sent:tatoeba-83623"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     }
@@ -223,15 +171,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 34,
+    "language-focused": 28,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:771",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:771",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4691:2312",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "分",
+        "頃",
+        "円"
+      ]
+    },
+    {
+      "id": "cf:n5:12:362",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "迚も",
+        "帰り",
+        "青い"
+      ]
+    },
+    {
+      "id": "kr:n4:1138",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなし",
+        "くるま",
+        "くうき"
+      ]
+    },
+    {
+      "id": "kr:n4:855",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やくそく",
+        "かんけい",
+        "はんぶん"
+      ]
+    }
+  ]
 }

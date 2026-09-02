@@ -27,9 +27,8 @@
     "vocab:1535910"
   ],
   "patterns": [
-    "gram:gp-87",
-    "gram:darou",
-    "gram:gp-57"
+    "gram:n3-beki-da",
+    "gram:gp-87"
   ],
   "kanji_recognition": [
     "医",
@@ -52,78 +51,28 @@
   "cumulative_known_vocab": 371,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:157:1430",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "船",
-        "数",
-        "園"
-      ]
-    },
-    {
-      "id": "cf:n4:1299:1082",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "生産",
-        "叔父",
-        "いい"
-      ]
-    },
-    {
-      "id": "kr:n3:1746",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しんぶん",
-        "はじめる",
-        "がくせい"
-      ]
-    },
-    {
-      "id": "kr:n4:1082",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せいさん",
-        "きんえん",
-        "いちばん"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-you-ni-iu",
     "gram:te-morau",
-    "gram:gp-128",
-    "gram:you-ni-you-na"
+    "gram:n3-to-shite",
+    "gram:n3-you-ni"
   ],
   "drills": [
+    {
+      "pattern": "gram:n3-beki-da",
+      "examples": [
+        "sent:tatoeba-144981",
+        "sent:tatoeba-149720",
+        "sent:tatoeba-169806"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-87",
       "examples": [
         "sent:tatoeba-11390339",
         "sent:tatoeba-11390341",
         "sent:tatoeba-198201"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-57",
-      "examples": [
-        "sent:gen-562d87af7052",
-        "sent:gen-eed85beda3d6",
-        "sent:gen-2dec37775f62"
       ],
       "strand": "language-focused"
     }
@@ -189,15 +138,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 18,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:157:1430",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "船",
+        "数",
+        "園"
+      ]
+    },
+    {
+      "id": "cf:n4:1299:1082",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "生産",
+        "叔父",
+        "いい"
+      ]
+    },
+    {
+      "id": "kr:n3:1746",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "はじめる",
+        "がくせい"
+      ]
+    },
+    {
+      "id": "kr:n4:1082",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "せいさん",
+        "きんえん",
+        "いちばん"
+      ]
+    }
+  ]
 }

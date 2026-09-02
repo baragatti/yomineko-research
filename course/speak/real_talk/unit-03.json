@@ -28,11 +28,11 @@
     "vocab:1505990"
   ],
   "patterns": [
+    "gram:n3-to-iu-no-wa",
+    "gram:n3-mitai-da",
+    "gram:n3-to-iu-no",
     "gram:gp-73",
-    "gram:mitai-da",
-    "gram:nagara",
-    "gram:to-iu",
-    "gram:gp-17"
+    "gram:n3-to-iu"
   ],
   "kanji_recognition": [
     "君",
@@ -55,52 +55,37 @@
   "cumulative_known_vocab": 562,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:5538:1980",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "時計",
-        "洋杯",
-        "一人"
-      ]
-    },
-    {
-      "id": "kr:n4:1081",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きっと",
-        "むかし",
-        "スーツ"
-      ]
-    },
-    {
-      "id": "kr:n4:713",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とる",
-        "いか",
-        "これ"
-      ]
-    },
-    {
-      "id": "cf:n3:1277:1966",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "咖哩",
-        "食事",
-        "西洋"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:shikashi"
+    "gram:n3-wake-da"
   ],
   "drills": [
+    {
+      "pattern": "gram:n3-to-iu-no-wa",
+      "examples": [
+        "sent:tatoeba-168168",
+        "sent:tatoeba-119734",
+        "sent:tatoeba-423387"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-mitai-da",
+      "examples": [
+        "sent:tatoeba-80952",
+        "sent:tatoeba-11281222",
+        "sent:tatoeba-184879"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-to-iu-no",
+      "examples": [
+        "sent:tatoeba-220804",
+        "sent:tatoeba-234151",
+        "sent:tatoeba-138773"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-73",
       "examples": [
@@ -111,38 +96,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:mitai-da",
+      "pattern": "gram:n3-to-iu",
       "examples": [
-        "sent:tatoeba-4216208",
-        "sent:tatoeba-774692",
-        "sent:gen-1d94a829f09c"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nagara",
-      "examples": [
-        "sent:tatoeba-83211",
-        "sent:tatoeba-83210",
-        "sent:tatoeba-226844"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
+        "sent:tatoeba-194344",
+        "sent:tatoeba-229142",
+        "sent:tatoeba-88068"
       ],
       "strand": "language-focused"
     }
@@ -206,15 +164,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:5538:1980",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "時計",
+        "洋杯",
+        "一人"
+      ]
+    },
+    {
+      "id": "kr:n4:1081",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きっと",
+        "むかし",
+        "スーツ"
+      ]
+    },
+    {
+      "id": "kr:n4:713",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とる",
+        "いか",
+        "これ"
+      ]
+    },
+    {
+      "id": "cf:n3:1277:1966",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "咖哩",
+        "食事",
+        "西洋"
+      ]
+    }
+  ]
 }

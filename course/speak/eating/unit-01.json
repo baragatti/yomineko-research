@@ -31,9 +31,7 @@
     "vocab:1436560",
     "vocab:1270590"
   ],
-  "patterns": [
-    "gram:temo"
-  ],
+  "patterns": [],
   "kanji_recognition": [
     "救",
     "出",
@@ -55,76 +53,15 @@
   "cumulative_known_vocab": 104,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:714",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:714",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:1312:2453",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "何",
-        "彼",
-        "事"
-      ]
-    },
-    {
-      "id": "cf:n3:1313:2453",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "年",
-        "私",
-        "力"
-      ]
-    },
-    {
-      "id": "kr:n4:1131",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "もんだい",
-        "けっこう",
-        "こんばん"
-      ]
-    },
-    {
-      "id": "kr:n5:258",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こんな",
-        "しまる",
-        "じかん"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-you-to-shinai",
+    "gram:n3-te-hajimete",
     "gram:doushite",
-    "gram:gp-115",
-    "gram:rareru",
     "gram:gp-36",
-    "gram:totemo"
+    "gram:gp-115",
+    "gram:rareru"
   ],
-  "drills": [
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-fd723f8599f2",
-        "sent:gen-ff6004963148",
-        "sent:tatoeba-5000"
-      ],
-      "strand": "language-focused"
-    }
-  ],
+  "drills": [],
   "production": [
     {
       "prompt_pt": "Tudo bem se eu não comer isto?",
@@ -181,15 +118,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:714",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:714",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:1312:2453",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "何",
+        "彼",
+        "事"
+      ]
+    },
+    {
+      "id": "cf:n3:1313:2453",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "年",
+        "私",
+        "力"
+      ]
+    },
+    {
+      "id": "kr:n4:1131",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "もんだい",
+        "けっこう",
+        "こんばん"
+      ]
+    },
+    {
+      "id": "kr:n5:258",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こんな",
+        "しまる",
+        "じかん"
+      ]
+    }
+  ]
 }

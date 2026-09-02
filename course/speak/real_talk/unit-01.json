@@ -24,12 +24,10 @@
     "vocab:1529410"
   ],
   "patterns": [
-    "gram:bakari",
-    "gram:gp-105",
-    "gram:gp-89",
-    "gram:mitai-da",
-    "gram:rashii",
-    "gram:saseru"
+    "gram:n3-wake-ni-wa-ikanai",
+    "gram:n3-mitai-da",
+    "gram:n3-bakari",
+    "gram:n3-rashii"
   ],
   "kanji_recognition": [
     "人",
@@ -52,111 +50,44 @@
   "cumulative_known_vocab": 547,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:5290:1544",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "正月",
-        "到着",
-        "半分"
-      ]
-    },
-    {
-      "id": "cf:n3:3624:1544",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "季節",
-        "小説",
-        "地図"
-      ]
-    },
-    {
-      "id": "pp:n3:1544",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "喉",
-        "時",
-        "女"
-      ]
-    },
-    {
-      "id": "kr:n3:1544",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あんな",
-        "てがみ",
-        "いびき"
-      ]
-    },
-    {
-      "id": "kr:n4:1234",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "ひるごはん",
-        "しゅっぱつ",
-        "にゅういん"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-mo",
+    "gram:gp-36"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:n3-wake-ni-wa-ikanai",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
+        "sent:tatoeba-84279",
+        "sent:tatoeba-187476",
+        "sent:tatoeba-10125747"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-105",
+      "pattern": "gram:n3-mitai-da",
       "examples": [
-        "sent:tatoeba-218501",
-        "sent:tatoeba-157461",
-        "sent:tatoeba-189160"
+        "sent:tatoeba-11281222",
+        "sent:tatoeba-184879",
+        "sent:tatoeba-10153751"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-89",
+      "pattern": "gram:n3-bakari",
       "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
+        "sent:tatoeba-113980",
+        "sent:tatoeba-147558",
+        "sent:tatoeba-88247"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:mitai-da",
+      "pattern": "gram:n3-rashii",
       "examples": [
-        "sent:tatoeba-4216208",
-        "sent:tatoeba-774692",
-        "sent:gen-1d94a829f09c"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:rashii",
-      "examples": [
-        "sent:tatoeba-189533",
-        "sent:gen-e9700d108b4a",
-        "sent:gen-dbc3c7fb8b46"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:saseru",
-      "examples": [
-        "sent:tatoeba-152239",
-        "sent:tatoeba-1804152",
-        "sent:tatoeba-187784"
+        "sent:tatoeba-100541",
+        "sent:tatoeba-107636",
+        "sent:tatoeba-108826"
       ],
       "strand": "language-focused"
     }
@@ -223,15 +154,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:5290:1544",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "正月",
+        "到着",
+        "半分"
+      ]
+    },
+    {
+      "id": "cf:n3:3624:1544",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "季節",
+        "小説",
+        "地図"
+      ]
+    },
+    {
+      "id": "pp:n3:1544",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "喉",
+        "時",
+        "女"
+      ]
+    },
+    {
+      "id": "kr:n3:1544",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あんな",
+        "てがみ",
+        "いびき"
+      ]
+    },
+    {
+      "id": "kr:n4:1234",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "ひるごはん",
+        "しゅっぱつ",
+        "にゅういん"
+      ]
+    }
+  ]
 }

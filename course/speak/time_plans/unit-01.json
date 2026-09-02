@@ -28,9 +28,8 @@
   "patterns": [
     "gram:deshou",
     "gram:gp-62",
-    "gram:gp-115",
-    "gram:gp-81",
-    "gram:koto"
+    "gram:gp-98",
+    "gram:n3-hodo"
   ],
   "kanji_recognition": [
     "会",
@@ -53,59 +52,8 @@
   "cumulative_known_vocab": 332,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "pp:n4:716",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "顔",
-        "年",
-        "口"
-      ]
-    },
-    {
-      "id": "kr:n4:1214",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あちこち",
-        "なるべく",
-        "かのじょ"
-      ]
-    },
-    {
-      "id": "kr:n5:159",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とし",
-        "そと",
-        "ふね"
-      ]
-    },
-    {
-      "id": "cf:n3:4234:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "人",
-        "男",
-        "目"
-      ]
-    },
-    {
-      "id": "cf:n3:4373:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "夜",
-        "本",
-        "頁"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-ni-tsuite",
     "gram:te-ita"
   ],
   "drills": [
@@ -114,7 +62,7 @@
       "examples": [
         "sent:tatoeba-98793",
         "sent:tatoeba-79089",
-        "sent:tatoeba-5347"
+        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     },
@@ -128,29 +76,20 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-115",
+      "pattern": "gram:gp-98",
       "examples": [
-        "sent:gen-4c4eb1f80410",
-        "sent:gen-7506a021dd5b",
-        "sent:tatoeba-123138"
+        "sent:gen-f4a52d78b938",
+        "sent:gen-f384f4213f18",
+        "sent:gen-802fed6cb267"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-81",
+      "pattern": "gram:n3-hodo",
       "examples": [
-        "sent:gen-20f9f43c9339",
-        "sent:gen-f416c28a18c3",
-        "sent:gen-68448be6940b"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
+        "sent:tatoeba-107679",
+        "sent:tatoeba-79954",
+        "sent:tatoeba-110162"
       ],
       "strand": "language-focused"
     }
@@ -215,15 +154,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "pp:n4:716",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "顔",
+        "年",
+        "口"
+      ]
+    },
+    {
+      "id": "kr:n4:1214",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あちこち",
+        "なるべく",
+        "かのじょ"
+      ]
+    },
+    {
+      "id": "kr:n5:159",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とし",
+        "そと",
+        "ふね"
+      ]
+    },
+    {
+      "id": "cf:n3:4234:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "人",
+        "男",
+        "目"
+      ]
+    },
+    {
+      "id": "cf:n3:4373:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "夜",
+        "本",
+        "頁"
+      ]
+    }
+  ]
 }

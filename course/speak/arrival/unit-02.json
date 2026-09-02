@@ -53,64 +53,12 @@
   "cumulative_known_vocab": 9,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3417",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:3348",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:3348:286",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "結構",
-        "行く",
-        "余り"
-      ]
-    },
-    {
-      "id": "cf:n5:1088:286",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "余り",
-        "行く",
-        "結構"
-      ]
-    },
-    {
-      "id": "kr:n5:224",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ない",
-        "みる",
-        "いく"
-      ]
-    },
-    {
-      "id": "kr:n5:231",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "じかん",
-        "いいえ",
-        "あまり"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-108",
     "gram:amari-nai",
+    "gram:n3-desu-kara",
     "gram:gp-42",
-    "gram:dake-de",
-    "gram:nasai"
+    "gram:n3-sei-de"
   ],
   "drills": [
     {
@@ -172,15 +120,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 56,
-    "fluency": 7
+    "meaning-input": 34,
+    "meaning-output": 9,
+    "language-focused": 49,
+    "fluency": 9
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 17,
     "fluency": 3
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3417",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n5:3348",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:3348:286",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "結構",
+        "行く",
+        "余り"
+      ]
+    },
+    {
+      "id": "cf:n5:1088:286",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "余り",
+        "行く",
+        "結構"
+      ]
+    },
+    {
+      "id": "kr:n5:224",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ない",
+        "みる",
+        "いく"
+      ]
+    },
+    {
+      "id": "kr:n5:231",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "じかん",
+        "いいえ",
+        "あまり"
+      ]
+    }
+  ]
 }

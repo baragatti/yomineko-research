@@ -54,53 +54,6 @@
   "cumulative_known_vocab": 113,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:956",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:1510:64",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "家",
-        "人",
-        "私"
-      ]
-    },
-    {
-      "id": "cf:n5:2900:498",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "結構",
-        "会う",
-        "キロ"
-      ]
-    },
-    {
-      "id": "kr:n5:199",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "つくる",
-        "じかん",
-        "はらう"
-      ]
-    },
-    {
-      "id": "kr:n5:270",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いつも",
-        "ごはん",
-        "はらう"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:nagara",
     "gram:ndesu"
@@ -201,15 +154,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 23,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:956",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:1510:64",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "家",
+        "人",
+        "私"
+      ]
+    },
+    {
+      "id": "cf:n5:2900:498",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "結構",
+        "会う",
+        "キロ"
+      ]
+    },
+    {
+      "id": "kr:n5:199",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つくる",
+        "じかん",
+        "はらう"
+      ]
+    },
+    {
+      "id": "kr:n5:270",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いつも",
+        "ごはん",
+        "はらう"
+      ]
+    }
+  ]
 }

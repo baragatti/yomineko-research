@@ -52,62 +52,10 @@
   "cumulative_known_vocab": 29,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:697",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:757",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3519:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "話",
-        "私",
-        "事"
-      ]
-    },
-    {
-      "id": "cf:n3:3520:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "私",
-        "事",
-        "番"
-      ]
-    },
-    {
-      "id": "kr:n4:1132",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あまり",
-        "できる",
-        "はじめ"
-      ]
-    },
-    {
-      "id": "kr:n4:1168",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おしえる",
-        "おぼえる",
-        "けっこう"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:te-sumimasen",
     "gram:gp-148",
-    "gram:gp-89"
+    "gram:gp-89",
+    "gram:n3-kake"
   ],
   "drills": [
     {
@@ -195,15 +143,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:697",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:757",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3519:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "話",
+        "私",
+        "事"
+      ]
+    },
+    {
+      "id": "cf:n3:3520:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "私",
+        "事",
+        "番"
+      ]
+    },
+    {
+      "id": "kr:n4:1132",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "できる",
+        "はじめ"
+      ]
+    },
+    {
+      "id": "kr:n4:1168",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おしえる",
+        "おぼえる",
+        "けっこう"
+      ]
+    }
+  ]
 }

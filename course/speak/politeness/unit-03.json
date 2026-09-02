@@ -32,12 +32,11 @@
     "vocab:1238840"
   ],
   "patterns": [
+    "gram:n3-sete-kudasai",
     "gram:gozaimasu",
+    "gram:o-kudasai-2",
     "gram:ga-arimasu",
-    "gram:te-kudasai",
-    "gram:deshou",
-    "gram:mitai-da",
-    "gram:koto"
+    "gram:te-kudasai"
   ],
   "kanji_recognition": [
     "特",
@@ -60,66 +59,34 @@
   "cumulative_known_vocab": 478,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:238",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3408",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3408:1276",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "近く",
-        "入院",
-        "見る"
-      ]
-    },
-    {
-      "id": "cf:n4:1274:1021",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "終わり",
-        "手ごろ",
-        "迎える"
-      ]
-    },
-    {
-      "id": "kr:n4:1016",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "らいねん",
-        "なるべく",
-        "せいよう"
-      ]
-    },
-    {
-      "id": "kr:n4:1021",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かかり",
-        "かりる",
-        "じぶん"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-ni-oite"
   ],
-  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:n3-sete-kudasai",
+      "examples": [
+        "sent:tatoeba-127098",
+        "sent:tatoeba-10697477",
+        "sent:tatoeba-3661468"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gozaimasu",
       "examples": [
         "sent:tatoeba-335372",
         "sent:tatoeba-1576172",
         "sent:tatoeba-8467948"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:o-kudasai-2",
+      "examples": [
+        "sent:gen-0e95f64b542d",
+        "sent:gen-96ce440b58e0",
+        "sent:gen-574302901ae7"
       ],
       "strand": "language-focused"
     },
@@ -138,33 +105,6 @@
         "sent:tatoeba-146189",
         "sent:tatoeba-124708",
         "sent:tatoeba-5109"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:deshou",
-      "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-5347"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:mitai-da",
-      "examples": [
-        "sent:tatoeba-4216208",
-        "sent:tatoeba-774692",
-        "sent:gen-1d94a829f09c"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
       ],
       "strand": "language-focused"
     }
@@ -226,15 +166,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 21,
-    "meaning-output": 5,
-    "language-focused": 64,
-    "fluency": 10
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 37,
+    "language-focused": 29,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:238",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3408",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3408:1276",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "近く",
+        "入院",
+        "見る"
+      ]
+    },
+    {
+      "id": "cf:n4:1274:1021",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "終わり",
+        "手ごろ",
+        "迎える"
+      ]
+    },
+    {
+      "id": "kr:n4:1016",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "らいねん",
+        "なるべく",
+        "せいよう"
+      ]
+    },
+    {
+      "id": "kr:n4:1021",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かかり",
+        "かりる",
+        "じぶん"
+      ]
+    }
+  ]
 }

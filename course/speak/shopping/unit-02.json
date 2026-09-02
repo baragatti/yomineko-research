@@ -30,8 +30,7 @@
     "vocab:1358680"
   ],
   "patterns": [
-    "gram:deshou",
-    "gram:da-desu"
+    "gram:deshou"
   ],
   "kanji_recognition": [
     "豚",
@@ -54,57 +53,11 @@
   "cumulative_known_vocab": 67,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:210",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:500:1123",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "会う",
-        "此れ",
-        "半分"
-      ]
-    },
-    {
-      "id": "cf:n4:1447:1123",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "降る",
-        "高い",
-        "始め"
-      ]
-    },
-    {
-      "id": "kr:n4:1123",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ねだん",
-        "くるま",
-        "あまり"
-      ]
-    },
-    {
-      "id": "kr:n4:1178",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ねがう",
-        "よやく",
-        "あまり"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-59",
     "gram:gari",
     "gram:garu-gatteiru",
+    "gram:gp-121",
     "gram:gp-75"
   ],
   "drills": [
@@ -114,15 +67,6 @@
         "sent:tatoeba-79089",
         "sent:tatoeba-78454",
         "sent:tatoeba-98793"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-5057",
-        "sent:tatoeba-74498"
       ],
       "strand": "language-focused"
     }
@@ -189,15 +133,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:210",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:500:1123",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "会う",
+        "此れ",
+        "半分"
+      ]
+    },
+    {
+      "id": "cf:n4:1447:1123",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "降る",
+        "高い",
+        "始め"
+      ]
+    },
+    {
+      "id": "kr:n4:1123",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ねだん",
+        "くるま",
+        "あまり"
+      ]
+    },
+    {
+      "id": "kr:n4:1178",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ねがう",
+        "よやく",
+        "あまり"
+      ]
+    }
+  ]
 }

@@ -27,6 +27,22 @@ whatever produced it:
      ("em 病気, 天気 e 元気 quem aparece e a leitura sino-japonesa キ"), so what fails is naming one
      WITHOUT saying where it belongs. That is failure mode F1 -- a general claim the entry's own
      examples contradict -- and it is the defect this corpus produces most.
+  6. NOTES DO NOT NAME WORDS THE RECORD NEVER SHOWS. Rule 5 asks WHICH READING a named word sits
+     under, so it can only see words that are on the record at all: it matches the note against the
+     kanji's own example words, and a word that is nowhere in that list is invisible to it. The
+     example-word selector was later re-ranked, which dropped words off records without touching the
+     prose, and nine notes were left pointing at 年寄り, 勇気, 書物, 物語, 論議, 一定, 取り扱う, 正常
+     /正解/訂正 and 仲直り -- words a learner cannot find anywhere on the page they are reading. Rule 5
+     passed all nine. So this one reads the note the other way round: pull every Japanese word OUT of
+     the text and require the record to display it.
+
+     There is no "but the note says it is irregular" escape hatch, and that is deliberate. The two
+     cases where naming an absent word is legitimate both resolve to a word that IS displayed: the
+     irregular bucket is printed on the record (物's 果物 sits there, and the note may say so), and a
+     note declaring its own group empty names nothing it does not have. Exempting a whole note on the
+     EMPTY_CLAIMS / 熟字訓 phrasing would have re-opened the hole for two of the nine defects above --
+     年's とし note ends "a leitura pertence à palavra inteira" and 物's もの note says 果物 "fica entre
+     os irregulares", so both would have been waved through while still citing a phantom.
 
 Usage: validate_kanji_reading_groups.py [--list]
 """
@@ -40,7 +56,38 @@ from kanji_align import (hira, bare, variants, masu_stem, explains_placement,  #
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
 LEVELS = ("n5", "n4", "n3")
-JP = re.compile(r"[一-鿿][一-鿿぀-ヿ]*")
+# A Japanese word as it is written inside pt-BR prose: opens on a kanji, then runs through kanji, kana,
+# 々 (踊り字: 色々, 時々) and ー. Both 々 and ー sit outside the CJK and kana blocks, so without them the
+# run stops early and 色々 comes out as the bare 色.
+JP = re.compile(r"[一-鿿][一-鿿぀-ヿ々ー]*")
+# 「」 is the corpus's own quoting for a cited word; a quoted span is scanned the same way, so a note
+# that writes 「年寄り」 is read as naming it exactly like a bare 年寄り.
+QUOTED = re.compile(r"「([^」]+)」")
+
+
+def cited_words(note: str, character: str, citation: str, shown: set[str]) -> set[str]:
+    """Every word a note WRITES OUT that is a claim about this kanji, for rule 6.
+
+    The mirror image of kanji_align.named_compounds: that one starts from the words the record holds
+    and asks which the note mentions, which is blind to a word the record does not hold. This starts
+    from the text.
+
+    Three things are not claims and are dropped:
+      * a single character, which is the kanji being talked about rather than a word built on it, and
+        anything that does not contain this kanji at all (a note may mention a neighbouring word while
+        explaining a contrast);
+      * the reading's own CITATION FORM (kanji + okurigana) -- 回's -まわ.る note writes 回る as the
+        NAME of the reading, not as a member of the group. Same exemption rule 5 makes;
+      * a fragment cut out of a longer word the note also writes. The regex anchors on a kanji, so
+        お菓子 yields 菓子, もう一度 yields 一度 and お待たせしました yields 待たせしました -- 21 of them
+        across the corpus, every one a prefix the anchor could not reach back over. A candidate that
+        only ever occurs inside a longer word the record DOES display is that word, not a new claim.
+    """
+    cands = set(JP.findall(note))
+    for q in QUOTED.findall(note):
+        cands |= set(JP.findall(q))
+    cands = {c for c in cands if len(c) >= 2 and character in c and c != citation}
+    return {c for c in cands if not any(w != c and c in w and w in note for w in shown)}
 
 
 def forms(reading: str, okurigana: str) -> list[str]:
@@ -145,6 +192,15 @@ def main() -> int:
                     if unplaced:
                         fails.append(f"{ch} {slot}: note names {unplaced} as examples of this reading "
                                      f"without saying where they belong")
+                    # Rule 6: the same prose, read from the text side, so a word the record dropped
+                    # entirely cannot hide from the membership question by not being a member.
+                    # `all_hw` is every word the record prints for this kanji -- all the reading
+                    # groups plus the irregular bucket -- which is exactly what a learner can find.
+                    phantom = sorted(w for w in cited_words(note, ch, citation, all_hw)
+                                     if w not in all_hw)
+                    if phantom:
+                        fails.append(f"{ch} {slot}: note names {phantom}, which this record does not "
+                                     f"show under any reading nor among its irregular words")
 
             dupes = sorted(hw_of[v] for v, n in seen.items() if n > 1)
             if dupes:

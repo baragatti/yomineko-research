@@ -55,62 +55,10 @@
   "cumulative_known_vocab": 176,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:471",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:989",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3453:1422",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "時間",
-        "半分",
-        "毎日"
-      ]
-    },
-    {
-      "id": "cf:n3:5372:1422",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "結構",
-        "約束",
-        "自分"
-      ]
-    },
-    {
-      "id": "kr:n3:1422",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かかり",
-        "はらう",
-        "おなじ"
-      ]
-    },
-    {
-      "id": "kr:n4:1007",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おぼえる",
-        "しつもん",
-        "おいしい"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-154",
     "gram:gp-77",
-    "gram:gp-128",
+    "gram:n3-you-ni",
     "gram:you-ni-you-na"
   ],
   "drills": [
@@ -196,15 +144,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:471",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:989",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3453:1422",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "時間",
+        "半分",
+        "毎日"
+      ]
+    },
+    {
+      "id": "cf:n3:5372:1422",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "結構",
+        "約束",
+        "自分"
+      ]
+    },
+    {
+      "id": "kr:n3:1422",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かかり",
+        "はらう",
+        "おなじ"
+      ]
+    },
+    {
+      "id": "kr:n4:1007",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おぼえる",
+        "しつもん",
+        "おいしい"
+      ]
+    }
+  ]
 }

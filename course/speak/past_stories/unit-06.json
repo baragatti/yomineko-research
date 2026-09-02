@@ -28,9 +28,8 @@
   "patterns": [
     "gram:gp-142",
     "gram:gp-32",
-    "gram:nara",
-    "gram:da-desu",
-    "gram:gp-15"
+    "gram:gp-121",
+    "gram:nara"
   ],
   "kanji_recognition": [
     "行",
@@ -53,54 +52,8 @@
   "cumulative_known_vocab": 448,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:339",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:4997:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "何",
-        "日",
-        "誰"
-      ]
-    },
-    {
-      "id": "kr:n5:252",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "そんな",
-        "わかる",
-        "ねがう"
-      ]
-    },
-    {
-      "id": "kr:n5:343",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "すう",
-        "かぜ",
-        "あに"
-      ]
-    },
-    {
-      "id": "cf:n3:5182:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "市",
-        "二",
-        "頃"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-nazenara",
     "gram:gp-45"
   ],
   "drills": [
@@ -123,29 +76,20 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:gp-121",
+      "examples": [
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:nara",
       "examples": [
         "sent:tatoeba-80337",
         "sent:tatoeba-80586",
         "sent:tatoeba-80338"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-15",
-      "examples": [
-        "sent:gen-6fe6c769a3a7",
-        "sent:gen-353c01dbf76e",
-        "sent:tatoeba-84720"
       ],
       "strand": "language-focused"
     }
@@ -209,15 +153,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:339",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4997:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "何",
+        "日",
+        "誰"
+      ]
+    },
+    {
+      "id": "kr:n5:252",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "そんな",
+        "わかる",
+        "ねがう"
+      ]
+    },
+    {
+      "id": "kr:n5:343",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "すう",
+        "かぜ",
+        "あに"
+      ]
+    },
+    {
+      "id": "cf:n3:5182:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "市",
+        "二",
+        "頃"
+      ]
+    }
+  ]
 }

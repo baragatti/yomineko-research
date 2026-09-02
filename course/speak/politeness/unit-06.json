@@ -30,10 +30,10 @@
   ],
   "patterns": [
     "gram:naide-kudasai",
+    "gram:o-kudasai-2",
     "gram:o-kudasai",
     "gram:te-kudasai",
-    "gram:naide",
-    "gram:yori"
+    "gram:n3-naide"
   ],
   "kanji_recognition": [
     "打",
@@ -56,58 +56,6 @@
   "cumulative_known_vocab": 506,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:254",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:933",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n4:1044",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ひる",
-        "あの",
-        "はし"
-      ]
-    },
-    {
-      "id": "kr:n4:1328",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ネクタイ",
-        "けいかく",
-        "くださる"
-      ]
-    },
-    {
-      "id": "cf:n3:5216:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "三",
-        "頃",
-        "米"
-      ]
-    },
-    {
-      "id": "cf:n3:5349:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "月",
-        "肉",
-        "港"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:te-ita"
   ],
@@ -118,6 +66,15 @@
         "sent:tatoeba-2006378",
         "sent:tatoeba-1200727",
         "sent:tatoeba-6704205"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:o-kudasai-2",
+      "examples": [
+        "sent:gen-0114d50c684c",
+        "sent:gen-0e95f64b542d",
+        "sent:gen-96ce440b58e0"
       ],
       "strand": "language-focused"
     },
@@ -140,20 +97,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:naide",
+      "pattern": "gram:n3-naide",
       "examples": [
-        "sent:tatoeba-125387",
-        "sent:tatoeba-142115",
-        "sent:tatoeba-145933"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:yori",
-      "examples": [
-        "sent:tatoeba-105626",
-        "sent:tatoeba-76098",
-        "sent:tatoeba-79991"
+        "sent:tatoeba-123792",
+        "sent:tatoeba-152171",
+        "sent:tatoeba-123791"
       ],
       "strand": "language-focused"
     }
@@ -218,15 +166,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 32,
+    "language-focused": 26,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:254",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:933",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n4:1044",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ひる",
+        "あの",
+        "はし"
+      ]
+    },
+    {
+      "id": "kr:n4:1328",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ネクタイ",
+        "けいかく",
+        "くださる"
+      ]
+    },
+    {
+      "id": "cf:n3:5216:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "三",
+        "頃",
+        "米"
+      ]
+    },
+    {
+      "id": "cf:n3:5349:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "月",
+        "肉",
+        "港"
+      ]
+    }
+  ]
 }

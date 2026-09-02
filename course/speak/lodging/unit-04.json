@@ -29,10 +29,10 @@
   ],
   "patterns": [
     "gram:gp-89",
+    "gram:gp-98",
     "gram:te-kara",
     "gram:gp-8",
-    "gram:kara",
-    "gram:tte"
+    "gram:kara"
   ],
   "kanji_recognition": [
     "安",
@@ -55,59 +55,9 @@
   "cumulative_known_vocab": 248,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:11",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:11",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:11:827",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "港",
-        "犬",
-        "間"
-      ]
-    },
-    {
-      "id": "cf:n4:1345:1195",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "見つける",
-        "思い出す",
-        "成るべく"
-      ]
-    },
-    {
-      "id": "kr:n3:1595",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けっこう",
-        "メートル",
-        "まいにち"
-      ]
-    },
-    {
-      "id": "kr:n4:911",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まっくら",
-        "ほとんど",
-        "だいがく"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:gp-121"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:gp-89",
@@ -115,6 +65,15 @@
         "sent:tatoeba-4855",
         "sent:tatoeba-144038",
         "sent:tatoeba-164675"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-98",
+      "examples": [
+        "sent:gen-f4a52d78b938",
+        "sent:gen-f384f4213f18",
+        "sent:gen-802fed6cb267"
       ],
       "strand": "language-focused"
     },
@@ -142,15 +101,6 @@
         "sent:tatoeba-76156",
         "sent:tatoeba-4772",
         "sent:gen-671b7aebf53d"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tte",
-      "examples": [
-        "sent:gen-5412a2ccf468",
-        "sent:gen-fee342a8016b",
-        "sent:gen-48c455d520ba"
       ],
       "strand": "language-focused"
     }
@@ -217,15 +167,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:11",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:11",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:11:827",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "港",
+        "犬",
+        "間"
+      ]
+    },
+    {
+      "id": "cf:n4:1345:1195",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "見つける",
+        "思い出す",
+        "成るべく"
+      ]
+    },
+    {
+      "id": "kr:n3:1595",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっこう",
+        "メートル",
+        "まいにち"
+      ]
+    },
+    {
+      "id": "kr:n4:911",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まっくら",
+        "ほとんど",
+        "だいがく"
+      ]
+    }
+  ]
 }

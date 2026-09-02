@@ -28,10 +28,10 @@
   "patterns": [
     "gram:kamo-shirenai",
     "gram:hazu-da",
+    "gram:n3-hazu-da",
     "gram:nasai",
     "gram:gp-115",
-    "gram:gp-120",
-    "gram:da-desu"
+    "gram:gp-120"
   ],
   "kanji_recognition": [
     "何",
@@ -54,48 +54,6 @@
   "cumulative_known_vocab": 537,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "kr:n3:1398",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "つかれる",
-        "まいにち",
-        "やくそく"
-      ]
-    },
-    {
-      "id": "kr:n4:779",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "コーヒー",
-        "ニュース",
-        "ゆうがた"
-      ]
-    },
-    {
-      "id": "cf:n3:36:1571",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "致す",
-        "昨日",
-        "気分"
-      ]
-    },
-    {
-      "id": "cf:n3:3991:1369",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "どうぞ",
-        "嬉しい",
-        "真っ暗"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -113,6 +71,15 @@
         "sent:tatoeba-235244",
         "sent:tatoeba-519050",
         "sent:tatoeba-198131"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-hazu-da",
+      "examples": [
+        "sent:tatoeba-8579878",
+        "sent:tatoeba-10631706",
+        "sent:tatoeba-3552030"
       ],
       "strand": "language-focused"
     },
@@ -140,15 +107,6 @@
         "sent:tatoeba-193408",
         "sent:gen-40a736aa4ac8",
         "sent:gen-5bccb5134f4a"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     }
@@ -214,15 +172,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "kr:n3:1398",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つかれる",
+        "まいにち",
+        "やくそく"
+      ]
+    },
+    {
+      "id": "kr:n4:779",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "コーヒー",
+        "ニュース",
+        "ゆうがた"
+      ]
+    },
+    {
+      "id": "cf:n3:36:1571",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "致す",
+        "昨日",
+        "気分"
+      ]
+    },
+    {
+      "id": "cf:n3:3991:1369",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "どうぞ",
+        "嬉しい",
+        "真っ暗"
+      ]
+    }
+  ]
 }

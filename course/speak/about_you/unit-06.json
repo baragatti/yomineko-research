@@ -30,8 +30,7 @@
   ],
   "patterns": [
     "gram:kamo-shirenai",
-    "gram:gp-142",
-    "gram:kana"
+    "gram:gp-142"
   ],
   "kanji_recognition": [
     "住",
@@ -54,62 +53,11 @@
   "cumulative_known_vocab": 325,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:5111:1479",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "値段",
-        "出る",
-        "意見"
-      ]
-    },
-    {
-      "id": "pp:n5:30",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "嫌い",
-        "来る",
-        "今日"
-      ]
-    },
-    {
-      "id": "kr:n3:1479",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せんぱい",
-        "おこなう",
-        "ぶたにく"
-      ]
-    },
-    {
-      "id": "kr:n4:1327",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あした",
-        "どんな",
-        "じぶん"
-      ]
-    },
-    {
-      "id": "cf:n3:4093:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "熱",
-        "箸",
-        "六"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-sono-tame-ni",
     "gram:koto-ni-naru",
     "gram:gp-45",
-    "gram:gp-120"
+    "gram:n3-koto"
   ],
   "drills": [
     {
@@ -127,15 +75,6 @@
         "sent:tatoeba-78454",
         "sent:tatoeba-137678",
         "sent:tatoeba-83221"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kana",
-      "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
       ],
       "strand": "language-focused"
     }
@@ -203,15 +142,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:5111:1479",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "値段",
+        "出る",
+        "意見"
+      ]
+    },
+    {
+      "id": "pp:n5:30",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "嫌い",
+        "来る",
+        "今日"
+      ]
+    },
+    {
+      "id": "kr:n3:1479",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "せんぱい",
+        "おこなう",
+        "ぶたにく"
+      ]
+    },
+    {
+      "id": "kr:n4:1327",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あした",
+        "どんな",
+        "じぶん"
+      ]
+    },
+    {
+      "id": "cf:n3:4093:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "熱",
+        "箸",
+        "六"
+      ]
+    }
+  ]
 }

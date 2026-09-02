@@ -55,63 +55,11 @@
   "cumulative_known_vocab": 143,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "kr:n4:1039",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "コーヒー",
-        "すくない",
-        "まいにち"
-      ]
-    },
-    {
-      "id": "kr:n4:847",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たべる",
-        "こんな",
-        "あまり"
-      ]
-    },
-    {
-      "id": "cf:n3:201:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "誰",
-        "彼",
-        "水"
-      ]
-    },
-    {
-      "id": "cf:n3:20:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "米",
-        "夜",
-        "彼"
-      ]
-    },
-    {
-      "id": "pp:n5:100",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "昼",
-        "箸",
-        "話"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-88",
+    "gram:gp-36",
     "gram:gp-94",
     "gram:owaru",
-    "gram:gp-36",
     "gram:te-kara"
   ],
   "drills": [
@@ -182,15 +130,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "kr:n4:1039",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "コーヒー",
+        "すくない",
+        "まいにち"
+      ]
+    },
+    {
+      "id": "kr:n4:847",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たべる",
+        "こんな",
+        "あまり"
+      ]
+    },
+    {
+      "id": "cf:n3:201:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "誰",
+        "彼",
+        "水"
+      ]
+    },
+    {
+      "id": "cf:n3:20:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "米",
+        "夜",
+        "彼"
+      ]
+    },
+    {
+      "id": "pp:n5:100",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "昼",
+        "箸",
+        "話"
+      ]
+    }
+  ]
 }

@@ -30,8 +30,7 @@
   "patterns": [
     "gram:gp-42",
     "gram:gp-70",
-    "gram:owaru",
-    "gram:darou"
+    "gram:owaru"
   ],
   "kanji_recognition": [
     "新",
@@ -54,60 +53,9 @@
   "cumulative_known_vocab": 357,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3427",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:3595",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3427:859",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "明日",
-        "趣味",
-        "何時"
-      ]
-    },
-    {
-      "id": "cf:n5:3595:307",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "キロ",
-        "静か",
-        "此の"
-      ]
-    },
-    {
-      "id": "kr:n4:859",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あたま",
-        "おえる",
-        "わるい"
-      ]
-    },
-    {
-      "id": "kr:n4:944",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いくら",
-        "てごろ",
-        "おなじ"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-110",
+    "gram:n3-ni-yoreba",
     "gram:sou-da-1"
   ],
   "drills": [
@@ -135,15 +83,6 @@
         "sent:tatoeba-228649",
         "sent:tatoeba-8727067",
         "sent:tatoeba-10206436"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
       ],
       "strand": "language-focused"
     }
@@ -207,15 +146,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3427",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n5:3595",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3427:859",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "明日",
+        "趣味",
+        "何時"
+      ]
+    },
+    {
+      "id": "cf:n5:3595:307",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "キロ",
+        "静か",
+        "此の"
+      ]
+    },
+    {
+      "id": "kr:n4:859",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あたま",
+        "おえる",
+        "わるい"
+      ]
+    },
+    {
+      "id": "kr:n4:944",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いくら",
+        "てごろ",
+        "おなじ"
+      ]
+    }
+  ]
 }

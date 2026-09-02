@@ -30,8 +30,7 @@
   ],
   "patterns": [
     "gram:deshou",
-    "gram:mashou",
-    "gram:gp-105"
+    "gram:mashou"
   ],
   "kanji_recognition": [
     "映",
@@ -54,49 +53,8 @@
   "cumulative_known_vocab": 293,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:5245:1908",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "通り",
-        "仕事",
-        "来年"
-      ]
-    },
-    {
-      "id": "kr:n4:1065",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おぼえる",
-        "いちばん",
-        "メートル"
-      ]
-    },
-    {
-      "id": "kr:n4:1166",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はっきり",
-        "もんだい",
-        "せんぱい"
-      ]
-    },
-    {
-      "id": "cf:n3:3586:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "頁",
-        "分",
-        "力"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-you-ni-shimashou",
     "gram:gp-114",
     "gram:gp-153",
     "gram:gp-77"
@@ -117,15 +75,6 @@
         "sent:tatoeba-139208",
         "sent:tatoeba-173392",
         "sent:tatoeba-200934"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-105",
-      "examples": [
-        "sent:tatoeba-218501",
-        "sent:tatoeba-188156",
-        "sent:tatoeba-189203"
       ],
       "strand": "language-focused"
     }
@@ -186,15 +135,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:5245:1908",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "通り",
+        "仕事",
+        "来年"
+      ]
+    },
+    {
+      "id": "kr:n4:1065",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おぼえる",
+        "いちばん",
+        "メートル"
+      ]
+    },
+    {
+      "id": "kr:n4:1166",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はっきり",
+        "もんだい",
+        "せんぱい"
+      ]
+    },
+    {
+      "id": "cf:n3:3586:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "頁",
+        "分",
+        "力"
+      ]
+    }
+  ]
 }

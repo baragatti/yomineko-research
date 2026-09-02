@@ -26,12 +26,11 @@
     "vocab:1542070"
   ],
   "patterns": [
-    "gram:bakari",
-    "gram:mitai-da",
-    "gram:nagara",
-    "gram:tagaru",
-    "gram:te-ita",
-    "gram:to-iu"
+    "gram:n3-to-iu-no-wa",
+    "gram:n3-mitai-da",
+    "gram:n3-to-iu-no",
+    "gram:n3-bakari",
+    "gram:n3-to-iu"
   ],
   "kanji_recognition": [
     "楽",
@@ -54,116 +53,52 @@
   "cumulative_known_vocab": 569,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:502",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:5534:1868",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "電車",
-        "引く",
-        "休み"
-      ]
-    },
-    {
-      "id": "cf:n4:4858:969",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "数",
-        "顔",
-        "役"
-      ]
-    },
-    {
-      "id": "pp:n3:1868",
-      "type": "paraphrase",
-      "via": "phrase",
-      "distractors": [
-        "あっ",
-        "会話",
-        "余り"
-      ]
-    },
-    {
-      "id": "kr:n4:1037",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かいもの",
-        "ともだち",
-        "さんせい"
-      ]
-    },
-    {
-      "id": "kr:n4:1096",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ようい",
-        "そちら",
-        "よてい"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-to-iu-yori"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:n3-to-iu-no-wa",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
+        "sent:tatoeba-168168",
+        "sent:tatoeba-119734",
+        "sent:tatoeba-120314"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:mitai-da",
+      "pattern": "gram:n3-mitai-da",
       "examples": [
-        "sent:tatoeba-4216208",
-        "sent:tatoeba-774692",
-        "sent:gen-1d94a829f09c"
+        "sent:tatoeba-80952",
+        "sent:tatoeba-11281222",
+        "sent:tatoeba-184879"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:nagara",
+      "pattern": "gram:n3-to-iu-no",
       "examples": [
-        "sent:tatoeba-83211",
-        "sent:tatoeba-83210",
-        "sent:tatoeba-226844"
+        "sent:tatoeba-220804",
+        "sent:tatoeba-234151",
+        "sent:tatoeba-138773"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:tagaru",
+      "pattern": "gram:n3-bakari",
       "examples": [
-        "sent:tatoeba-9971758",
-        "sent:tatoeba-163525",
-        "sent:tatoeba-4117192"
+        "sent:tatoeba-113980",
+        "sent:tatoeba-147558",
+        "sent:tatoeba-88247"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:te-ita",
+      "pattern": "gram:n3-to-iu",
       "examples": [
-        "sent:gen-fd3b6a8cb10e",
-        "sent:tatoeba-79051",
-        "sent:tatoeba-79053"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
+        "sent:tatoeba-194344",
+        "sent:tatoeba-229142",
+        "sent:tatoeba-88068"
       ],
       "strand": "language-focused"
     }
@@ -229,15 +164,72 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 23,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:502",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5534:1868",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "電車",
+        "引く",
+        "休み"
+      ]
+    },
+    {
+      "id": "cf:n4:4858:969",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "数",
+        "顔",
+        "役"
+      ]
+    },
+    {
+      "id": "pp:n3:1868",
+      "type": "paraphrase",
+      "via": "phrase",
+      "distractors": [
+        "あっ",
+        "会話",
+        "余り"
+      ]
+    },
+    {
+      "id": "kr:n4:1037",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かいもの",
+        "ともだち",
+        "さんせい"
+      ]
+    },
+    {
+      "id": "kr:n4:1096",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ようい",
+        "そちら",
+        "よてい"
+      ]
+    }
+  ]
 }

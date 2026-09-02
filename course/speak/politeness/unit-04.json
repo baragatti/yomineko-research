@@ -30,10 +30,10 @@
   ],
   "patterns": [
     "gram:naide-kudasai",
+    "gram:o-kudasai-2",
     "gram:te-kudasai",
-    "gram:gp-89",
-    "gram:donna",
-    "gram:naide"
+    "gram:n3-tsuide-ni",
+    "gram:n3-naide"
   ],
   "kanji_recognition": [
     "起",
@@ -56,50 +56,8 @@
   "cumulative_known_vocab": 488,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n4:5250:1257",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "家内",
-        "説明",
-        "何時"
-      ]
-    },
-    {
-      "id": "kr:n4:1242",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ちから",
-        "やすむ",
-        "さげる"
-      ]
-    },
-    {
-      "id": "kr:n4:1257",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きれい",
-        "しまる",
-        "かない"
-      ]
-    },
-    {
-      "id": "cf:n3:5209:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "港",
-        "八",
-        "彼"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:te-ita"
+    "gram:n3-donna-ni-temo"
   ],
   "drills": [
     {
@@ -108,6 +66,15 @@
         "sent:tatoeba-2006378",
         "sent:tatoeba-1200727",
         "sent:tatoeba-6704205"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:o-kudasai-2",
+      "examples": [
+        "sent:gen-0e95f64b542d",
+        "sent:gen-96ce440b58e0",
+        "sent:gen-574302901ae7"
       ],
       "strand": "language-focused"
     },
@@ -121,29 +88,20 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-89",
+      "pattern": "gram:n3-tsuide-ni",
       "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
+        "sent:tatoeba-10914932",
+        "sent:tatoeba-202687",
+        "sent:tatoeba-202686"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:donna",
+      "pattern": "gram:n3-naide",
       "examples": [
-        "sent:tatoeba-199382",
-        "sent:tatoeba-171732",
-        "sent:tatoeba-199480"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:naide",
-      "examples": [
-        "sent:tatoeba-125387",
-        "sent:tatoeba-142115",
-        "sent:tatoeba-145933"
+        "sent:tatoeba-152171",
+        "sent:tatoeba-123792",
+        "sent:tatoeba-80886"
       ],
       "strand": "language-focused"
     }
@@ -206,15 +164,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 26,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n4:5250:1257",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "家内",
+        "説明",
+        "何時"
+      ]
+    },
+    {
+      "id": "kr:n4:1242",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ちから",
+        "やすむ",
+        "さげる"
+      ]
+    },
+    {
+      "id": "kr:n4:1257",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きれい",
+        "しまる",
+        "かない"
+      ]
+    },
+    {
+      "id": "cf:n3:5209:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "港",
+        "八",
+        "彼"
+      ]
+    }
+  ]
 }

@@ -26,9 +26,9 @@
     "vocab:1602060"
   ],
   "patterns": [
-    "gram:kana",
-    "gram:gp-14",
-    "gram:node"
+    "gram:n3-kke",
+    "gram:gp-121",
+    "gram:kana"
   ],
   "kanji_recognition": [
     "引",
@@ -51,88 +51,36 @@
   "cumulative_known_vocab": 388,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:184",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:1104",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n4:1075",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "コピー",
-        "たべる",
-        "おえる"
-      ]
-    },
-    {
-      "id": "kr:n4:1332",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "つくる",
-        "まもる",
-        "どんな"
-      ]
-    },
-    {
-      "id": "cf:n3:4391:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "君",
-        "次",
-        "力"
-      ]
-    },
-    {
-      "id": "cf:n3:4450:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "間",
-        "道",
-        "人"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:gp-128",
+    "gram:n3-you-ni",
     "gram:you-ni-you-na",
     "gram:tara"
   ],
   "drills": [
+    {
+      "pattern": "gram:n3-kke",
+      "examples": [
+        "sent:tatoeba-11831595",
+        "sent:tatoeba-10913720",
+        "sent:tatoeba-423650"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-121",
+      "examples": [
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:kana",
       "examples": [
         "sent:gen-a57fa0b2f6c3",
         "sent:gen-f626c3374153",
         "sent:gen-72c52ba4dd08"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-14",
-      "examples": [
-        "sent:tatoeba-74036",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-76735"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:node",
-      "examples": [
-        "sent:gen-82b26ffb3d46",
-        "sent:tatoeba-85318",
-        "sent:tatoeba-82538"
       ],
       "strand": "language-focused"
     }
@@ -196,15 +144,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:184",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:1104",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n4:1075",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "コピー",
+        "たべる",
+        "おえる"
+      ]
+    },
+    {
+      "id": "kr:n4:1332",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つくる",
+        "まもる",
+        "どんな"
+      ]
+    },
+    {
+      "id": "cf:n3:4391:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "君",
+        "次",
+        "力"
+      ]
+    },
+    {
+      "id": "cf:n3:4450:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "間",
+        "道",
+        "人"
+      ]
+    }
+  ]
 }

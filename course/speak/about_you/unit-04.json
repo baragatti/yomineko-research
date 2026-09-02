@@ -32,7 +32,6 @@
   "patterns": [
     "gram:gp-142",
     "gram:gp-17",
-    "gram:koto",
     "gram:da-desu",
     "gram:gp-21"
   ],
@@ -57,50 +56,9 @@
   "cumulative_known_vocab": 304,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:197:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "頁",
-        "六",
-        "港"
-      ]
-    },
-    {
-      "id": "cf:n4:5456:894",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "何時も",
-        "そんな",
-        "有難う"
-      ]
-    },
-    {
-      "id": "kr:n3:1611",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たつ",
-        "だす",
-        "あっ"
-      ]
-    },
-    {
-      "id": "kr:n4:1089",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ころ",
-        "いか",
-        "はこ"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:gp-45"
+    "gram:gp-45",
+    "gram:n3-koto"
   ],
   "drills": [
     {
@@ -118,15 +76,6 @@
         "sent:tatoeba-124633",
         "sent:tatoeba-172639",
         "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:koto",
-      "examples": [
-        "sent:gen-9059903a891d",
-        "sent:tatoeba-77163",
-        "sent:gen-4ba78a648388"
       ],
       "strand": "language-focused"
     },
@@ -209,15 +158,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:197:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "頁",
+        "六",
+        "港"
+      ]
+    },
+    {
+      "id": "cf:n4:5456:894",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "何時も",
+        "そんな",
+        "有難う"
+      ]
+    },
+    {
+      "id": "kr:n3:1611",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たつ",
+        "だす",
+        "あっ"
+      ]
+    },
+    {
+      "id": "kr:n4:1089",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ころ",
+        "いか",
+        "はこ"
+      ]
+    }
+  ]
 }

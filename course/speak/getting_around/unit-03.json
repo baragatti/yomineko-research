@@ -28,9 +28,9 @@
     "vocab:1227500"
   ],
   "patterns": [
+    "gram:n3-sore-tomo",
     "gram:darou",
-    "gram:gp-18",
-    "gram:da-desu"
+    "gram:gp-18"
   ],
   "kanji_recognition": [
     "休",
@@ -53,59 +53,21 @@
   "cumulative_known_vocab": 185,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:755",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2498:649",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "致す",
-        "以前",
-        "何時"
-      ]
-    },
-    {
-      "id": "cf:n5:2757:480",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "事",
-        "係",
-        "日"
-      ]
-    },
-    {
-      "id": "kr:n4:739",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あまり",
-        "すすむ",
-        "はこぶ"
-      ]
-    },
-    {
-      "id": "kr:n5:155",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あの",
-        "いえ",
-        "よむ"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-sore-to",
     "gram:gp-36",
-    "gram:tsumori",
-    "gram:yori"
+    "gram:tsumori"
   ],
   "drills": [
+    {
+      "pattern": "gram:n3-sore-tomo",
+      "examples": [
+        "sent:tatoeba-8938683",
+        "sent:tatoeba-9145503",
+        "sent:tatoeba-10556983"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:darou",
       "examples": [
@@ -121,15 +83,6 @@
         "sent:gen-caa85f6bf50a",
         "sent:gen-145d7fcd0d32",
         "sent:tatoeba-97651"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     }
@@ -195,15 +148,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:755",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2498:649",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "致す",
+        "以前",
+        "何時"
+      ]
+    },
+    {
+      "id": "cf:n5:2757:480",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "事",
+        "係",
+        "日"
+      ]
+    },
+    {
+      "id": "kr:n4:739",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "すすむ",
+        "はこぶ"
+      ]
+    },
+    {
+      "id": "kr:n5:155",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あの",
+        "いえ",
+        "よむ"
+      ]
+    }
+  ]
 }

@@ -32,6 +32,7 @@ from __future__ import annotations
 import argparse, json, re, sqlite3, sys
 from collections import Counter
 from pathlib import Path
+from pattern_forms import form_key, matched_length  # noqa: E402  (same directory)
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 ROOT = Path(__file__).resolve().parents[2]
 DB = ROOT / "db" / "corpus.sqlite"
@@ -357,9 +358,12 @@ def main() -> int:
             jp_all = "".join(s["jp"] for s in picked if not s["chunk"])
             patterns = []
             for g in grammar:
-                hits = [f for f in g["forms"] if len(f) >= 2 and f in jp_all]
+                # Forms carry textbook placeholders (たり～たりする, お～ください): match their
+                # literal pieces in order, never the raw string. See scripts/export/pattern_forms.py.
+                hits = [matched_length(f, jp_all) for f in g["forms"] if len(form_key(f)) >= 2]
+                hits = [h for h in hits if h]
                 if hits:
-                    patterns.append((max(len(h) for h in hits), g))
+                    patterns.append((max(hits), g))
             patterns.sort(key=lambda t: (-t[0], t[1]["level"], t[1]["key"]))
             patterns = [g for _, g in patterns]
             # No unit teaches one grammar point twice under two identities: when two candidates'
@@ -379,10 +383,10 @@ def main() -> int:
             # the same forms.
             kept: list = []
             for g in patterns:
-                fs = {f for f in g["forms"] if len(f) >= 2}
+                fs = {form_key(f) for f in g["forms"] if len(form_key(f)) >= 2}
                 replaced = False
                 for i, k in enumerate(kept):
-                    ks = {f for f in k["forms"] if len(f) >= 2}
+                    ks = {form_key(f) for f in k["forms"] if len(form_key(f)) >= 2}
                     if fs and fs == ks:
                         if richness(g) < richness(k):
                             kept[i] = g

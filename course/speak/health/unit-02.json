@@ -29,8 +29,8 @@
     "vocab:1305380"
   ],
   "patterns": [
-    "gram:gp-81",
-    "gram:kana"
+    "gram:gp-121",
+    "gram:gp-81"
   ],
   "kanji_recognition": [
     "意",
@@ -53,75 +53,28 @@
   "cumulative_known_vocab": 381,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:760",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3700:848",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "漸と",
-        "大学",
-        "地図"
-      ]
-    },
-    {
-      "id": "cf:n4:3876:848",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "約束",
-        "有名",
-        "話す"
-      ]
-    },
-    {
-      "id": "kr:n4:765",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くださる",
-        "いっしょ",
-        "しょくじ"
-      ]
-    },
-    {
-      "id": "kr:n4:848",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さがる",
-        "ひだり",
-        "おとこ"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:gp-128",
+    "gram:n3-you-ni",
     "gram:nasai",
     "gram:no-naka-de",
     "gram:you-ni-you-na"
   ],
   "drills": [
     {
+      "pattern": "gram:gp-121",
+      "examples": [
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-81",
       "examples": [
         "sent:gen-20f9f43c9339",
         "sent:gen-f416c28a18c3",
         "sent:gen-68448be6940b"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kana",
-      "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
       ],
       "strand": "language-focused"
     }
@@ -187,15 +140,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:760",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3700:848",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "漸と",
+        "大学",
+        "地図"
+      ]
+    },
+    {
+      "id": "cf:n4:3876:848",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "約束",
+        "有名",
+        "話す"
+      ]
+    },
+    {
+      "id": "kr:n4:765",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くださる",
+        "いっしょ",
+        "しょくじ"
+      ]
+    },
+    {
+      "id": "kr:n4:848",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さがる",
+        "ひだり",
+        "おとこ"
+      ]
+    }
+  ]
 }

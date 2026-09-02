@@ -27,8 +27,7 @@
   "patterns": [
     "gram:kamo-shirenai",
     "gram:mashou",
-    "gram:to-iu",
-    "gram:tsumori"
+    "gram:n3-to-iu"
   ],
   "kanji_recognition": [
     "月",
@@ -51,54 +50,8 @@
   "cumulative_known_vocab": 340,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n5:5462",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:4791:902",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "初めて",
-        "小さな",
-        "泊まる"
-      ]
-    },
-    {
-      "id": "cf:n4:4792:902",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "建てる",
-        "泊まる",
-        "覚える"
-      ]
-    },
-    {
-      "id": "kr:n5:162",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こと",
-        "はは",
-        "かず"
-      ]
-    },
-    {
-      "id": "kr:n5:295",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ぼく",
-        "なに",
-        "いい"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-ni-shite-wa",
     "gram:gp-91",
     "gram:hajimeru"
   ],
@@ -122,20 +75,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:to-iu",
+      "pattern": "gram:n3-to-iu",
       "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tsumori",
-      "examples": [
-        "sent:gen-f48e05df2b74",
-        "sent:tatoeba-80364",
-        "sent:tatoeba-137646"
+        "sent:tatoeba-194344",
+        "sent:tatoeba-229142",
+        "sent:tatoeba-88068"
       ],
       "strand": "language-focused"
     }
@@ -199,15 +143,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 18,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n5:5462",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4791:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "初めて",
+        "小さな",
+        "泊まる"
+      ]
+    },
+    {
+      "id": "cf:n4:4792:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "建てる",
+        "泊まる",
+        "覚える"
+      ]
+    },
+    {
+      "id": "kr:n5:162",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こと",
+        "はは",
+        "かず"
+      ]
+    },
+    {
+      "id": "kr:n5:295",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ぼく",
+        "なに",
+        "いい"
+      ]
+    }
+  ]
 }

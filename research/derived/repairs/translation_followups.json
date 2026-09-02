@@ -1,0 +1,110 @@
+[
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-fb07d83b3e0c",
+    "field": "translation_literal",
+    "locale": "pt-BR",
+    "old": "A orelha (が, sujeito) dói um pouco.",
+    "new": "O ouvido (が, sujeito) dói um pouco.",
+    "why": "耳が少し痛いです — 耳 in a pain context is the ear as an organ. In pt-BR \"orelha\" is only the outer ear (the pinna), which is not what 痛い predicates here; the part that hurts is the \"ouvido\". The natural field was repaired to \"Meu ouvido está doendo um pouco.\" and this literal still said \"orelha\", so one record taught two different body parts. Only the noun changes: the (が, sujeito) case scaffold is what makes this the structural layer and it stays."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-790b6cf52284",
+    "field": "translation_literal",
+    "locale": "pt-BR",
+    "old": "Quanto a hoje, tendo aberto o tempo, está quente.",
+    "new": "Quanto a hoje, tendo aberto o tempo, está quentinho.",
+    "why": "今日は晴れて暖かい — 暖かい is agreeable warmth and is the pair member opposite 暑い (hot); \"quente\" collapses that distinction, which is the whole point of the word being taught. The natural field was repaired to \"está quentinho\" and the record's own token gloss reads \"quente / morno (agradável)\". Only the adjective changes: 今日は is a genuine topic は, so the \"Quanto a hoje\" scaffold is correct for this field and stays, as does the て-chain mirror \"tendo aberto o tempo\"."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:tatoeba-10083431",
+    "field": "translation_literal",
+    "locale": "pt-BR",
+    "old": "Quanto a isso, de uva o ramo é, viu.",
+    "new": "Quanto a isso, de uva a trepadeira é, viu.",
+    "why": "それは葡萄のつるだよ。 — つる is the climbing stem of a vine, not a branch. \"Ramo\" is what grows off a trunk and names the wrong part of the wrong kind of plant; the Layer-A en (\"That's a grapevine.\") and the repaired natural field (\"Isso é uma parreira, viu.\") both name the climbing plant. \"Trepadeira\" is the pt-BR word for that. Only the head noun changes: それは is a real topic は and 葡萄の is a real genitive, so the \"Quanto a isso\" scaffold and the reversed \"de uva ... é\" genitive mirror both stay."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-30b970cffa4a",
+    "field": "translation",
+    "locale": "en",
+    "old": "Close the box with tape.",
+    "new": "I close the box with tape.",
+    "why": "テープで箱を閉じる is a plain non-past clause with no explicit subject; it is not 閉じろ / 閉じなさい / 閉じてください, so nothing in the Japanese marks a command. The pt-BR was repaired to the 1st-person present \"Fecho a caixa com fita.\", leaving the en anchor reading as an order while the pt-BR read as a statement — one record teaching two different moods. sentence.en is NULL, so this string is Layer-B derived and may be re-authored. Only the verb form changes."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-56d495bbcf16",
+    "field": "translation",
+    "locale": "en",
+    "old": "Reserving the table by phone.",
+    "new": "I reserve the table by phone.",
+    "why": "電話で席を予約する is a plain non-past clause. The old en was not even a finite sentence — a bare gerund phrase, which renders neither the tense nor the predication the Japanese has — while the pt-BR reads \"Reservo a mesa por telefone.\" sentence.en is NULL, so this string is Layer-B derived. \"Table\" is kept: 席 covers seat/place/table and the pt-BR already chose \"mesa\"."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-7ea63d9fd0ad",
+    "field": "translation",
+    "locale": "en",
+    "old": "Pour water into the glass.",
+    "new": "I pour water into the glass.",
+    "why": "コップに水を入れる is a plain non-past clause, not an instruction; the pt-BR reads \"Ponho água no copo.\" sentence.en is NULL, so this string is Layer-B derived. Only the verb form changes — \"pour\" is left alone, since it is the idiomatic English for 入れる with water into a glass the same way \"pôr\" is the idiomatic pt-BR, and the natural field is allowed to differ lexically between locales."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-c19dfc37c744",
+    "field": "translation",
+    "locale": "en",
+    "old": "Stick a poster on the wall.",
+    "new": "I stick a poster on the wall.",
+    "why": "壁にポスターを張る is a plain non-past clause; the record's own structure note calls it \"a dictionary-style sentence (verb in dictionary form, no explicit subject)\", which the imperative en contradicted. The pt-BR reads \"Colo um pôster na parede.\" sentence.en is NULL, so this string is Layer-B derived. Only the verb form changes."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-db21e4d29aa3",
+    "field": "translation",
+    "locale": "en",
+    "old": "Put milk in the tea.",
+    "new": "I put milk in the tea.",
+    "why": "紅茶にミルクを入れる is a plain non-past clause, not a recipe step; the pt-BR reads \"Coloco leite no chá preto.\" sentence.en is NULL, so this string is Layer-B derived. Only the verb form changes: \"tea\" for 紅茶 is a looser but defensible English rendering and was not part of the named defect."
+  },
+  {
+    "store": "localized_text",
+    "entity": "sentence",
+    "slug": "sent:gen-960d7cee0887",
+    "field": "translation",
+    "locale": "pt-BR",
+    "old": "Pelo visto ele está ocupado, porque não responde.",
+    "new": "Pelo visto ele está ocupado, e por isso não responde.",
+    "why": "彼は忙しいとみえて、返事が来ない — 〜とみえて states an inference and then what follows from it. A て-form clause can only ever be the antecedent of what comes after it; it can never mean \"because of the clause that follows\". \"Porque não responde\" therefore ran the sentence backwards, turning the missing reply into the reason for the guess instead of its consequence. The record's own て particle note already reads \"pelo visto está ocupado, e por isso...\", so the two fields disagreed. The が-marked subject 返事 stays in translation_literal (\"e a resposta não vem\"), where the structural mirror belongs; the natural field keeps the human subject, which is how a Brazilian says it."
+  },
+  {
+    "store": "column",
+    "entity": "sentence",
+    "slug": "sent:gen-9f80f08cc644",
+    "field": "kana",
+    "old": "このみそわちょっとつらいです",
+    "new": "このみそわちょっとからいです",
+    "why": "この味噌はちょっと辛いです — 辛い modifying a miso paste, graded by ちょっと, is からい (spicy/salty). つらい means painful or hard to bear and cannot predicate of a foodstuff. Every other field of the record already says so: both translations read \"salgado\"/\"salty\", the token gloss reads \"picante, apimentado/salgado (leitura からい no contexto de comida)\", the conjugation note spells out \"辛い (からい)\", and the structure_explanation states outright that the tokenizer misread it. The kana line was the one place the misreading was still presented to the learner as the sentence's reading. The house pattern for the corpus's other two 辛い food sentences (sent:tatoeba-10901867 このかれーわとてもからいです。, sent:tatoeba-11727272 「からいものって、すき?」) is からい."
+  },
+  {
+    "store": "column",
+    "entity": "sentence",
+    "slug": "sent:gen-9f80f08cc644",
+    "field": "romaji",
+    "old": "konomisowachottotsuraidesu",
+    "new": "konomisowachottokaraidesu",
+    "why": "sentence.romaji is a mechanical transliteration of sentence.kana: the stored value is exactly kana2romaji(kana) under the corpus scheme (verified against scripts/validate/validate_groundtruth.py before and after). Correcting the kana without it would leave the romaji printing a reading the kana line no longer has, and romaji is shown to learners on its own via <sentence show=\"romaji\">. The two precedent 辛い sentences likewise carry \"karai\" in romaji."
+  }
+]

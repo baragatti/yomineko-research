@@ -64,6 +64,12 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+# The matcher lives beside the builder so the two can never disagree; it is found relative to THIS
+# file, not --root, because --root points at a tree under test (a plant fixture copies this
+# validator and must copy scripts/export/pattern_forms.py with it).
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "export"))
+from pattern_forms import form_in, form_key  # noqa: E402
+
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 
 MAX_REPORT = 15
@@ -411,6 +417,7 @@ def main() -> int:
                     # forms (wa-yori-desu carries yori AND desu), so subset marks two DIFFERENT
                     # points as one. Two records are the same point only when they claim the same
                     # effective forms.
+                    fa, fb = {form_key(f) for f in fa}, {form_key(f) for f in fb}
                     if fa and fa == fb:
                         fails.append(f"{u['id']}: {a} {sorted(fa)} and {b} {sorted(fb)} are the same "
                                      f"point taught twice under two identities")
@@ -523,10 +530,12 @@ def main() -> int:
             for ps in named:
                 if ps not in grammar:
                     continue
-                long_forms = {f for f in grammar_forms(grammar[ps]) if len(f) >= 2}
+                long_forms = {f for f in grammar_forms(grammar[ps]) if len(form_key(f)) >= 2}
                 if not long_forms:
                     continue
-                matched = {f for f in long_forms if f in open_text}
+                # Placeholder-aware, and the SAME function the builder uses, so the two cannot
+                # disagree about what a form matches (scripts/export/pattern_forms.py).
+                matched = {f for f in long_forms if form_in(f, open_text)}
                 if not matched:
                     fails.append(f"{u['id']}: pattern {ps} has none of its forms {sorted(long_forms)} "
                                  f"in the unit's own phrases")

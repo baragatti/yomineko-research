@@ -24,12 +24,11 @@
     "vocab:1414470"
   ],
   "patterns": [
+    "gram:n3-to-iu-no-wa",
     "gram:hazu-ga-nai",
-    "gram:hazu-da",
-    "gram:to-iu",
-    "gram:da-desu",
-    "gram:gp-2",
-    "gram:gp-8"
+    "gram:n3-ni-tsuite",
+    "gram:n3-to-iu-no",
+    "gram:hazu-da"
   ],
   "kanji_recognition": [
     "正",
@@ -52,60 +51,19 @@
   "cumulative_known_vocab": 519,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:132",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:196",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:2068:889",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "十分",
-        "行く",
-        "頼む"
-      ]
-    },
-    {
-      "id": "kr:n4:1104",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はじめて",
-        "ステーキ",
-        "けっこう"
-      ]
-    },
-    {
-      "id": "kr:n4:1106",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おおきな",
-        "たのしい",
-        "さいきん"
-      ]
-    },
-    {
-      "id": "cf:n3:5539:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "人",
-        "間",
-        "誰"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-ni-oite"
   ],
-  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:n3-to-iu-no-wa",
+      "examples": [
+        "sent:tatoeba-168168",
+        "sent:tatoeba-423387",
+        "sent:tatoeba-142020"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:hazu-ga-nai",
       "examples": [
@@ -116,47 +74,29 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-ni-tsuite",
+      "examples": [
+        "sent:tatoeba-77936",
+        "sent:tatoeba-123701",
+        "sent:tatoeba-80136"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-to-iu-no",
+      "examples": [
+        "sent:tatoeba-220804",
+        "sent:tatoeba-234151",
+        "sent:tatoeba-138773"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:hazu-da",
       "examples": [
         "sent:tatoeba-235244",
         "sent:tatoeba-519050",
         "sent:tatoeba-198131"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:to-iu",
-      "examples": [
-        "sent:tatoeba-80587",
-        "sent:tatoeba-80590",
-        "sent:tatoeba-76549"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:da-desu",
-      "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-2",
-      "examples": [
-        "sent:tatoeba-171785",
-        "sent:tatoeba-171784",
-        "sent:tatoeba-171787"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-150175"
       ],
       "strand": "language-focused"
     }
@@ -222,15 +162,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:132",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:196",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:2068:889",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "十分",
+        "行く",
+        "頼む"
+      ]
+    },
+    {
+      "id": "kr:n4:1104",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はじめて",
+        "ステーキ",
+        "けっこう"
+      ]
+    },
+    {
+      "id": "kr:n4:1106",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おおきな",
+        "たのしい",
+        "さいきん"
+      ]
+    },
+    {
+      "id": "cf:n3:5539:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "人",
+        "間",
+        "誰"
+      ]
+    }
+  ]
 }

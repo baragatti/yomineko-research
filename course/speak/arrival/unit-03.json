@@ -31,8 +31,7 @@
     "vocab:1579210"
   ],
   "patterns": [
-    "gram:gp-149",
-    "gram:gp-32"
+    "gram:gp-149"
   ],
   "kanji_recognition": [
     "覚",
@@ -55,62 +54,11 @@
   "cumulative_known_vocab": 21,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:756",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3419",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:5060:1921",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "余り",
-        "時間",
-        "無い"
-      ]
-    },
-    {
-      "id": "cf:n4:3517:887",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "私",
-        "話",
-        "長い"
-      ]
-    },
-    {
-      "id": "kr:n4:887",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いく",
-        "あう",
-        "ない"
-      ]
-    },
-    {
-      "id": "kr:n5:127",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こんばん",
-        "けっこう",
-        "さいちゅう"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-108",
-    "gram:te-sumimasen",
     "gram:gp-148",
+    "gram:n3-naide",
+    "gram:n3-saichuu-ni",
     "gram:gp-62"
   ],
   "drills": [
@@ -120,15 +68,6 @@
         "sent:tatoeba-4856",
         "sent:tatoeba-83623",
         "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-83696",
-        "sent:tatoeba-4714"
       ],
       "strand": "language-focused"
     }
@@ -190,15 +129,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:756",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3419",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5060:1921",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "余り",
+        "時間",
+        "無い"
+      ]
+    },
+    {
+      "id": "cf:n4:3517:887",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "私",
+        "話",
+        "長い"
+      ]
+    },
+    {
+      "id": "kr:n4:887",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いく",
+        "あう",
+        "ない"
+      ]
+    },
+    {
+      "id": "kr:n5:127",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こんばん",
+        "けっこう",
+        "さいちゅう"
+      ]
+    }
+  ]
 }

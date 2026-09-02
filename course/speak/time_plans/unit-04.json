@@ -28,8 +28,7 @@
   ],
   "patterns": [
     "gram:gp-149",
-    "gram:gp-142",
-    "gram:node"
+    "gram:gp-142"
   ],
   "kanji_recognition": [
     "起",
@@ -52,61 +51,10 @@
   "cumulative_known_vocab": 348,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:722",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:759",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:891:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "為",
-        "誰",
-        "日"
-      ]
-    },
-    {
-      "id": "cf:n4:3684:1118",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "悪い",
-        "小説",
-        "関係"
-      ]
-    },
-    {
-      "id": "kr:n4:1062",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ほとんど",
-        "かんけい",
-        "とりけす"
-      ]
-    },
-    {
-      "id": "kr:n4:1118",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しんぶん",
-        "がっこう",
-        "ガソリン"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:tsuzukeru",
     "gram:gp-45",
+    "gram:n3-sae",
     "gram:naru"
   ],
   "drills": [
@@ -125,15 +73,6 @@
         "sent:tatoeba-78454",
         "sent:tatoeba-137678",
         "sent:tatoeba-83221"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:node",
-      "examples": [
-        "sent:tatoeba-85318",
-        "sent:tatoeba-82538",
-        "sent:gen-82b26ffb3d46"
       ],
       "strand": "language-focused"
     }
@@ -199,15 +138,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 18,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:722",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:759",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:891:2453",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "為",
+        "誰",
+        "日"
+      ]
+    },
+    {
+      "id": "cf:n4:3684:1118",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "悪い",
+        "小説",
+        "関係"
+      ]
+    },
+    {
+      "id": "kr:n4:1062",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ほとんど",
+        "かんけい",
+        "とりけす"
+      ]
+    },
+    {
+      "id": "kr:n4:1118",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "がっこう",
+        "ガソリン"
+      ]
+    }
+  ]
 }

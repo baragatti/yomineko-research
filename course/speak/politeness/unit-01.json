@@ -28,8 +28,10 @@
     "vocab:1501660"
   ],
   "patterns": [
+    "gram:n3-sete-kudasai",
+    "gram:o-kudasai-2",
     "gram:te-kudasai",
-    "gram:gp-8"
+    "gram:gp-121"
   ],
   "kanji_recognition": [
     "気",
@@ -52,62 +54,29 @@
   "cumulative_known_vocab": 455,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:2",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:2",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:5019:736",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "鼾",
-        "箸",
-        "千"
-      ]
-    },
-    {
-      "id": "cf:n4:1160:736",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "数",
-        "園",
-        "誰"
-      ]
-    },
-    {
-      "id": "kr:n4:736",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ど",
-        "し",
-        "に"
-      ]
-    },
-    {
-      "id": "kr:n4:921",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しんぶん",
-        "けいけん",
-        "きょねん"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:te-ita"
+    "gram:te-ita",
+    "gram:n3-kake"
   ],
   "drills": [
+    {
+      "pattern": "gram:n3-sete-kudasai",
+      "examples": [
+        "sent:tatoeba-127098",
+        "sent:tatoeba-10697477",
+        "sent:tatoeba-3661468"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:o-kudasai-2",
+      "examples": [
+        "sent:gen-0e95f64b542d",
+        "sent:gen-96ce440b58e0",
+        "sent:gen-0114d50c684c"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:te-kudasai",
       "examples": [
@@ -118,11 +87,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-8",
+      "pattern": "gram:gp-121",
       "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-150175"
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
       ],
       "strand": "language-focused"
     }
@@ -188,15 +157,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 52,
+    "language-focused": 50,
     "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:2",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:2",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:5019:736",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "鼾",
+        "箸",
+        "千"
+      ]
+    },
+    {
+      "id": "cf:n4:1160:736",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "数",
+        "園",
+        "誰"
+      ]
+    },
+    {
+      "id": "kr:n4:736",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ど",
+        "し",
+        "に"
+      ]
+    },
+    {
+      "id": "kr:n4:921",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "けいけん",
+        "きょねん"
+      ]
+    }
+  ]
 }

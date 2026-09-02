@@ -22,10 +22,7 @@
     "vocab:1001820",
     "vocab:1270810"
   ],
-  "patterns": [
-    "gram:gp-134",
-    "gram:nikui"
-  ],
+  "patterns": [],
   "kanji_recognition": [
     "言",
     "金",
@@ -47,79 +44,15 @@
   "cumulative_known_vocab": 77,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n5:4968",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2501:102",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "本当",
-        "思う",
-        "願う"
-      ]
-    },
-    {
-      "id": "cf:n5:4093:44",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "問題",
-        "願う",
-        "見る"
-      ]
-    },
-    {
-      "id": "kr:n4:897",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さげる",
-        "いくら",
-        "かかり"
-      ]
-    },
-    {
-      "id": "kr:n5:102",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "わたし",
-        "かかり",
-        "あがる"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:to-iu-koto",
-    "gram:gp-117",
-    "gram:to-iu",
-    "gram:gp-147"
+    "gram:n3-kirenai",
+    "gram:n3-sore-tomo",
+    "gram:n3-uto-shita",
+    "gram:n3-nai-to",
+    "gram:n3-sore-to"
   ],
-  "drills": [
-    {
-      "pattern": "gram:gp-134",
-      "examples": [
-        "sent:tatoeba-8687007",
-        "sent:tatoeba-8719362",
-        "sent:tatoeba-3488181"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nikui",
-      "examples": [
-        "sent:tatoeba-9458223",
-        "sent:tatoeba-10006818",
-        "sent:tatoeba-11995722"
-      ],
-      "strand": "language-focused"
-    }
-  ],
+  "drills": [],
   "production": [
     {
       "prompt_pt": "Ele viu aquilo pela primeira vez.",
@@ -179,15 +112,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 30,
-    "meaning-output": 8,
-    "language-focused": 48,
-    "fluency": 15
+    "meaning-input": 39,
+    "meaning-output": 10,
+    "language-focused": 32,
+    "fluency": 19
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 19,
+    "language-focused": 10,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n5:4968",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2501:102",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "本当",
+        "思う",
+        "願う"
+      ]
+    },
+    {
+      "id": "cf:n5:4093:44",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "問題",
+        "願う",
+        "見る"
+      ]
+    },
+    {
+      "id": "kr:n4:897",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さげる",
+        "いくら",
+        "かかり"
+      ]
+    },
+    {
+      "id": "kr:n5:102",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "わたし",
+        "かかり",
+        "あがる"
+      ]
+    }
+  ]
 }

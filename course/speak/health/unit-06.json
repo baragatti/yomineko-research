@@ -23,9 +23,9 @@
   ],
   "patterns": [
     "gram:naide-kudasai",
-    "gram:gp-149",
-    "gram:naide",
-    "gram:kana"
+    "gram:o-kudasai-2",
+    "gram:n3-naide",
+    "gram:gp-149"
   ],
   "kanji_recognition": [
     "危",
@@ -48,55 +48,8 @@
   "cumulative_known_vocab": 405,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:863",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n5:33",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くうこう",
-        "まいにち",
-        "タクシー"
-      ]
-    },
-    {
-      "id": "kr:n5:353",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かりる",
-        "だいぶ",
-        "あそぶ"
-      ]
-    },
-    {
-      "id": "cf:n3:4615:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "三",
-        "園",
-        "外"
-      ]
-    },
-    {
-      "id": "cf:n3:4865:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "先",
-        "頃",
-        "私"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:gp-128",
+    "gram:n3-you-ni",
     "gram:you-ni-you-na"
   ],
   "drills": [
@@ -110,29 +63,29 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:o-kudasai-2",
+      "examples": [
+        "sent:gen-0e95f64b542d",
+        "sent:gen-0114d50c684c",
+        "sent:gen-96ce440b58e0"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-naide",
+      "examples": [
+        "sent:tatoeba-152171",
+        "sent:tatoeba-123792",
+        "sent:tatoeba-80886"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-149",
       "examples": [
         "sent:tatoeba-77812",
         "sent:tatoeba-4856",
         "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:naide",
-      "examples": [
-        "sent:tatoeba-125387",
-        "sent:tatoeba-145933",
-        "sent:tatoeba-144418"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kana",
-      "examples": [
-        "sent:gen-a57fa0b2f6c3",
-        "sent:gen-f626c3374153",
-        "sent:gen-72c52ba4dd08"
       ],
       "strand": "language-focused"
     }
@@ -197,15 +150,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 45,
+    "fluency": 16
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 17,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:863",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n5:33",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くうこう",
+        "まいにち",
+        "タクシー"
+      ]
+    },
+    {
+      "id": "kr:n5:353",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かりる",
+        "だいぶ",
+        "あそぶ"
+      ]
+    },
+    {
+      "id": "cf:n3:4615:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "三",
+        "園",
+        "外"
+      ]
+    },
+    {
+      "id": "cf:n3:4865:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "先",
+        "頃",
+        "私"
+      ]
+    }
+  ]
 }

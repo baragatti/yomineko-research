@@ -26,10 +26,8 @@
   "patterns": [
     "gram:kamo-shirenai",
     "gram:hazu-ga-nai",
-    "gram:masen-ka",
-    "gram:gp-149",
-    "gram:gp-89",
-    "gram:gp-12"
+    "gram:n3-ni-totte",
+    "gram:masen-ka"
   ],
   "kanji_recognition": [
     "身",
@@ -52,49 +50,10 @@
   "cumulative_known_vocab": 524,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n4:3764:1348",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "少ない",
-        "手伝う",
-        "ホテル"
-      ]
-    },
-    {
-      "id": "cf:n4:3751:1348",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "買い物",
-        "女の子",
-        "小さい"
-      ]
-    },
-    {
-      "id": "kr:n3:1663",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まいあさ",
-        "けいけん",
-        "りょうり"
-      ]
-    },
-    {
-      "id": "kr:n4:1268",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いぬ",
-        "せん",
-        "かぜ"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-ni-kanshite",
+    "gram:n3-to-shitara"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:kamo-shirenai",
@@ -115,38 +74,20 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-ni-totte",
+      "examples": [
+        "sent:tatoeba-164771",
+        "sent:tatoeba-164781",
+        "sent:tatoeba-205147"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:masen-ka",
       "examples": [
         "sent:gen-4595bdeb6907",
         "sent:gen-24bb23e4256e",
         "sent:gen-a94929c3a847"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-77812",
-        "sent:tatoeba-4856",
-        "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-89",
-      "examples": [
-        "sent:tatoeba-4855",
-        "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
       ],
       "strand": "language-focused"
     }
@@ -210,15 +151,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n4:3764:1348",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "少ない",
+        "手伝う",
+        "ホテル"
+      ]
+    },
+    {
+      "id": "cf:n4:3751:1348",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "買い物",
+        "女の子",
+        "小さい"
+      ]
+    },
+    {
+      "id": "kr:n3:1663",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まいあさ",
+        "けいけん",
+        "りょうり"
+      ]
+    },
+    {
+      "id": "kr:n4:1268",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いぬ",
+        "せん",
+        "かぜ"
+      ]
+    }
+  ]
 }

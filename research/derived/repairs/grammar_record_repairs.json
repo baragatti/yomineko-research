@@ -1,0 +1,2050 @@
+[
+ {
+  "key": "gp-101",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Para pessoas ou animais, use 一人 (ひとり) no lugar de 一つ.",
+  "new": "Para pessoas, use 一人 (ひとり) no lugar de 一つ (山田さんは友達の一人だ). Para animais o contador muda conforme o bicho (一匹, 一頭, 一羽), e 一つ não serve nesses casos.",
+  "why": "A2. 一人 counts human beings only; the rule as written licenses ×犬の一人. It also contradicted the record's own nuance.pt-BR, which already restricts 一人 to people. Verified against the live record: nuance says \"para pessoas, use 一人 (ひとり), não 一つ\"."
+ },
+ {
+  "key": "gp-101",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "For people or animals, use 一人 (ひとり) in place of 一つ.",
+  "new": "For people, use 一人 (ひとり) in place of 一つ (山田さんは友達の一人だ). For animals the counter changes with the animal (一匹, 一頭, 一羽), and 一つ does not work there.",
+  "why": "A2, en counterpart of the pt-BR fix above; same factual error, changed in step."
+ },
+ {
+  "key": "gp-56",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Conjuga como る-verbo, mas com a forma ます um pouco irregular: くれる→くれます→くれない→くれて.",
+  "new": "Conjuga como る-verbo: くれる→くれます→くれない→くれて. A irregularidade fica no imperativo, que é くれ e não ×くれろ (ちょっと待ってくれ). A versão respeitosa くださる também foge do padrão no ます: くださいます, não ×くださります.",
+  "why": "A3. Every form the old line lists (くれ+ます, くれ+ない, くれ+て) is the regular ichidan output, so the record flagged a difficulty that does not exist. くれる is irregular, but in the imperative (くれ, not ×くれろ) and in くださる→くださいます, neither of which the record mentioned. The × marker matches house usage for wrong forms (e.g. ×高いだ, ×学生んです)."
+ },
+ {
+  "key": "gp-56",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "It conjugates like a ru-verb, but with a slightly irregular ます-form: くれる→くれます→くれない→くれて.",
+  "new": "It conjugates like a ru-verb: くれる→くれます→くれない→くれて. The irregularity is in the imperative, which is くれ and not ×くれろ (ちょっと待ってくれ). The respectful counterpart くださる also breaks the pattern in the ます-form: くださいます, not ×くださります.",
+  "why": "A3, en counterpart of the pt-BR fix above; changed in step."
+ },
+ {
+  "key": "n3-ni-shite-wa",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "verbo-simples + にしては, adjetivo-い + にしては, adjetivo-な (sem な) + にしては, substantivo + にしては. Ex.: 安いにしては美味しい (\"para algo barato, é gostoso\").",
+  "new": "verbo-simples + にしては, adjetivo-い + にしては, substantivo + にしては. Ex.: 安いにしては美味しい (\"para algo barato, é gostoso\"). Com adjetivo-な esse padrão não se usa: 静かにしては se lê como 静かに + して + は (a forma て de 静かにする), então nesse caso prefira 静かなわりに.",
+  "why": "A4. The record's own steps_unavailable already diagnosed the な-adjective line as generating 静かにしては, whose live reading is 静かに+して+は, and suppressed the step list to avoid emitting it, but the learner-facing prose still carried the bad rule. I checked the branch myself and agree it is not a usable teaching case; dropped it and named わりに, which the record's own nuance already recommends when にしては does not apply."
+ },
+ {
+  "key": "n3-ni-shite-wa",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "plain-verb + にしては, い-adjective + にしては, な-adjective (without な) + にしては, noun + にしては. E.g.: 安いにしては美味しい (\"for something cheap, it's tasty\").",
+  "new": "plain-verb + にしては, い-adjective + にしては, noun + にしては. E.g.: 安いにしては美味しい (\"for something cheap, it's tasty\"). With a な-adjective the pattern is not used: 静かにしては reads as 静かに + して + は (the て-form of 静かにする), so use 静かなわりに instead.",
+  "why": "A4, en counterpart of the pt-BR fix above; changed in step."
+ },
+ {
+  "key": "gp-105",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "待(ま)つ→待たせる. Group 2 verbs (ichidan)",
+  "new": "待(ま)つ→待たせる. Exception: verbs ending in -う take -わ (買(か)う→買わせる, not ×買あせる). Group 2 verbs (ichidan)",
+  "why": "A1 residue. scripts/apply_godan_u_exception.py wrote only the pt-BR row, so formation.en still gives the あ-row rule with no う exception and still picks 行く・飲む・待つ, the examples that hide the gap. Wording mirrors the pt-BR clause the script landed, so the two locales say the same thing."
+ },
+ {
+  "key": "gp-63",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "書く→書かれる, 読む→読まれる, 話す→話される. Group 2 (ichidan)",
+  "new": "書く→書かれる, 読む→読まれる, 話す→話される. Exception: verbs ending in -う take -わ (買う→買われる, not ×買あれる). Group 2 (ichidan)",
+  "why": "A1 residue, same as gp-105: pt-BR carries the exception after the earlier campaign, en does not. Changed in step."
+ },
+ {
+  "key": "saserareru",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "the あ row + せられる (書く → 書かせられる)",
+  "new": "the あ row + せられる (書く → 書かせられる; exception: verbs ending in -う take -わ, 買う → 買わせられる)",
+  "why": "A1 residue, same as gp-105: pt-BR carries the exception after the earlier campaign, en does not. Changed in step."
+ },
+ {
+  "key": "gp-34",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "is では (ではなかった). Remember",
+  "new": "is では (ではなかった). Remember that じゃ is the colloquial contraction of では.",
+  "why": "D1. formation.en stops dead on the word \"Remember\". The pt-BR counterpart completes the thought (\"Lembre que じゃ é a contração coloquial de では\"), so the missing clause is recoverable from the record itself."
+ },
+ {
+  "key": "gp-143",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "(読んだ → 読んだり, 行った → 行ったり, 話した → 話したり. Também funciona com adjetivos e nomes: adjetivo-い → 安かったり; adjetivo-な e nome → 静かだったり / 学生だったり. Padrão típico: AたりBたり + する.)",
+  "new": "(読んだ → 読んだり, 行った → 行ったり, 話した → 話したり). Também funciona com adjetivos e nomes: adjetivo-い → 安かったり; adjetivo-な e nome → 静かだったり / 学生だったり. Padrão típico: AたりBたり + する.",
+  "why": "D2. The parenthesis that opens on the godan example list closes at the very end of the field, swallowing the adjective/noun rule and the typical pattern into the example aside. Closed at its real end after 話したり."
+ },
+ {
+  "key": "gp-143",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "(読んだ → 読んだり, 行った → 行ったり, 話した → 話したり. It also works with adjectives and nouns: i-adjective → 安かったり; na-adjective and noun → 静かだったり / 学生だったり. Typical pattern: AたりBたり + する.)",
+  "new": "(読んだ → 読んだり, 行った → 行ったり, 話した → 話したり). It also works with adjectives and nouns: i-adjective → 安かったり; na-adjective and noun → 静かだったり / 学生だったり. Typical pattern: AたりBたり + する.",
+  "why": "D2, en counterpart of the same misplaced parenthesis; changed in step."
+ },
+ {
+  "key": "gp-8",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "don't use 'you' constantly (Japanese prefers to omit the subject.)",
+  "new": "don't use 'you' constantly (Japanese prefers to omit the subject).",
+  "why": "D2. Closing parenthesis landed after the period. pt-BR is already punctuated correctly, so only en changes."
+ },
+ {
+  "key": "ya",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "や only links nouns (don't use it to link clauses or verbs. It's a neutral register, fitting speech and writing.)",
+  "new": "や only links nouns (don't use it to link clauses or verbs). It's a neutral register, fitting speech and writing.",
+  "why": "D2. The register note was swallowed into the parenthetical about clause-linking. The pt-BR counterpart punctuates it correctly and shows the intended shape, so only en changes."
+ },
+ {
+  "key": "gp-148",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "(não tente colocar o verbo no passado antes do て. Em situações sérias ou no trabalho, すみません pode ser fraco demais; prefira 申し訳ありません.)",
+  "new": "(não tente colocar o verbo no passado antes do て). Em situações sérias ou no trabalho, すみません pode ser fraco demais; prefira 申し訳ありません.",
+  "why": "D2. The register advice about 申し訳ありません was pulled inside the parenthetical about tense. en is already correct here, so only pt-BR changes."
+ },
+ {
+  "key": "gp-63",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "don't translate it literally (capture the sense of 'to suffer/be harmed by.' Remember that the agent takes に, not を.)",
+  "new": "don't translate it literally (capture the sense of 'to suffer/be harmed by'). Remember that the agent takes に, not を.",
+  "why": "D2. The particle warning (に, not を) was swallowed into the translation aside. pt-BR is already punctuated correctly, so only en changes."
+ },
+ {
+  "key": "gp-67",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "geralmente seguido de vírgula (〜。また、〜。 É comum em texto escrito e formal para encadear ideias.)",
+  "new": "geralmente seguido de vírgula: 〜。また、〜。 É comum em texto escrito e formal para encadear ideias.",
+  "why": "D2. Both locales are broken here. The parenthesis opens on the 〜。また、〜。 example and closes at the end of the field, swallowing the register note. Replaced the opening bracket with a colon rather than closing it after 〜。, since a parenthesis around a bare example reads worse than the colon."
+ },
+ {
+  "key": "gp-67",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "usually followed by a comma (〜。また、〜。 It is common in written and formal text to chain ideas.)",
+  "new": "usually followed by a comma: 〜。また、〜。 It is common in written and formal text to chain ideas.",
+  "why": "D2, en counterpart of the same misplaced parenthesis; changed in step."
+ },
+ {
+  "key": "o-kudasai-2",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "sino-japonesas) (errar isso chama atenção. Não confunda com a forma humilde お〜する, que é para as próprias ações de quem fala, não para pedidos ao outro. Registro polido/formal.)",
+  "new": "sino-japonesas) (errar isso chama atenção). Não confunda com a forma humilde お〜する, que é para as próprias ações de quem fala, não para pedidos ao outro. Registro polido/formal.",
+  "why": "D2. The お〜する warning and the register line were swallowed into the aside about the お/ご rule. Closed the parenthetical where en already closes it, keeping the two locales parallel."
+ },
+ {
+  "key": "gp-152",
+  "action": "text",
+  "field": "explanation",
+  "locale": "pt-BR",
+  "old": "passa a significar \"querer que se faça algo\". A grafia \"のようてほしい\" do material tem um erro de digitação; o ponto real é 〜てほしい.",
+  "new": "passa a significar \"querer que se faça algo\".",
+  "why": "D3. The closing sentence points at an upstream ingestion artefact (\"o material\", the string のようてほしい) that the learner cannot see or act on. Nothing in the explanation depends on it."
+ },
+ {
+  "key": "gp-152",
+  "action": "text",
+  "field": "explanation",
+  "locale": "en",
+  "old": "comes to mean \"to want someone to do something.\" The spelling \"のようてほしい\" in the material is a typo; the actual point is 〜てほしい.",
+  "new": "comes to mean \"to want someone to do something.\"",
+  "why": "D3, en counterpart of the same pipeline residue; changed in step."
+ },
+ {
+  "key": "gp-152",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"てほしい\": \"querer que alguém faça (na verdade 〜てほしい; a grafia tem erro de digitação)\"}",
+  "new": "{\"てほしい\": \"querer que alguém faça (algo)\"}",
+  "why": "D3. The same ingestion note occupies the forms-table gloss, so the residue renders in the compact forms view and not just in prose."
+ },
+ {
+  "key": "gp-152",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"てほしい\": \"to want someone to do (actually 〜てほしい; the spelling has a typo)\"}",
+  "new": "{\"てほしい\": \"to want someone to do (something)\"}",
+  "why": "D3, en counterpart of the forms-table gloss; changed in step."
+ },
+ {
+  "key": "n3-tokoro-ga",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Atenção ao seed: ところが encabeça uma nova frase ('..., porém...'), não se cola ao verbo de uma única oração como em 'いつも遅刻するところが'. Diferente de でも/しかし (contraste neutro), ところが quase sempre carrega surpresa com o desfecho. Para o sentido de 'estive a ponto de', veja ところだった (gid 428).",
+  "new": "Atenção: ところが encabeça uma nova frase ('..., porém...'), não se cola ao verbo de uma única oração como em 'いつも遅刻するところが'. Diferente de でも/しかし (contraste neutro), ところが quase sempre carrega surpresa com o desfecho. Para o sentido de 'estive a ponto de', veja ところだった.",
+  "why": "D3. Two pieces of pipeline residue in one field: \"seed\" is the ingestion pipeline's own vocabulary, and \"(gid 428)\" exposes an internal numeric row id to the learner. Removing the gid leaves the cross-reference readable by name; populating `related` is an owner decision (C2) and is not touched here."
+ },
+ {
+  "key": "n3-tokoro-ga",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Pay attention to the seed: ところが heads a new sentence ('..., however...'), it does not attach to the verb of a single clause as in 'いつも遅刻するところが'. Unlike でも/しかし (neutral contrast), ところが almost always carries surprise at the outcome. For the sense of 'I was about to', see ところだった (gid 428).",
+  "new": "Note: ところが heads a new sentence ('..., however...'), it does not attach to the verb of a single clause as in 'いつも遅刻するところが'. Unlike でも/しかし (neutral contrast), ところが almost always carries surprise at the outcome. For the sense of 'I was about to', see ところだった.",
+  "why": "D3, en counterpart of the same residue (\"seed\", \"gid 428\"); changed in step."
+ },
+ {
+  "key": "gp-105",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "を pode soar mais como \"forçar\"",
+  "new": "Pega o brasileiro: a escolha entre に e を muda o tom. を pode soar mais como \"forçar\"",
+  "why": "D6. pt-BR opens on a contrast whose subject was never introduced; en carries the lead sentence (\"It catches Brazilians: the choice between に and を changes the tone\") and pt-BR lost it. Phrased with the house formula \"Pega o brasileiro\", which already appears in gp-30's nuance.pt-BR."
+ },
+ {
+  "key": "n3-bakari",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "(ばかりだ apos forma-ta = 'acabou de', e ばかりに = 'so por causa de')",
+  "new": "(ばかりだ após forma-ta = 'acabou de', e ばかりに = 'só por causa de')",
+  "why": "D5. Missing diacritics: \"apos\" is not a word and \"so\" is not Portuguese (the word is \"só\"). pt-BR only; en is unaffected."
+ },
+ {
+  "key": "n3-bakari",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "O tom costuma ser de reprovação, parecido com o 'so faz' ou 'vive de' em português, com leve carga negativa. Armadilha PT: não confunda com だけ, que também e 'so/apenas' mas e neutro e objetivo; ばかり sugere excesso, repetição incomoda ou predominancia, não apenas exclusividade fria.",
+  "new": "O tom costuma ser de reprovação, parecido com o 'só faz' ou 'vive de' em português, com leve carga negativa. Armadilha PT: não confunda com だけ, que também é 'só/apenas' mas é neutro e objetivo; ばかり sugere excesso, repetição incômoda ou predominância, não apenas exclusividade fria.",
+  "why": "D5. Six missing diacritics in one field, two of which change the word: \"e\" (and) for \"é\" (is), and \"so\" for \"só\". pt-BR only."
+ },
+ {
+  "key": "n3-ni-kanshite",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "quase sinonima: について.",
+  "new": "quase sinônima: について.",
+  "why": "D5. Missing diacritic. pt-BR only."
+ },
+ {
+  "key": "n3-ni-kanshite",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "que e o equivalente mais neutro do dia a dia. Armadilha PT: o português usa 'sobre' para tópico e também para posição fisica ('sobre a mesa'); aqui o sentido e exclusivamente o de tema ou assunto, nunca de localização.",
+  "new": "que é o equivalente mais neutro do dia a dia. Armadilha PT: o português usa 'sobre' para tópico e também para posição física ('sobre a mesa'); aqui o sentido é exclusivamente o de tema ou assunto, nunca de localização.",
+  "why": "D5. \"e\" for \"é\" twice plus \"fisica\". pt-BR only."
+ },
+ {
+  "key": "n3-temo",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "o nucleo e a ideia de contrariedade",
+  "new": "o núcleo é a ideia de contrariedade",
+  "why": "D5. Missing diacritics; \"e\" reads as the conjunction and breaks the sentence. pt-BR only."
+ },
+ {
+  "key": "n3-to-iu-koto-da",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "No sentido de boato e mais formal e impessoal que って ou そうだ, comum em noticias e textos. No sentido de conclusão, equivale a つまり...ということだ. Armadilha PT: cuidado para não confundir com ということだから ('ja que e assim'); aqui ということだ encerra a frase relatando ou concluindo.",
+  "new": "No sentido de boato é mais formal e impessoal que って ou そうだ, comum em notícias e textos. No sentido de conclusão, equivale a つまり...ということだ. Armadilha PT: cuidado para não confundir com ということだから ('já que é assim'); aqui ということだ encerra a frase relatando ou concluindo.",
+  "why": "D5. Four missing diacritics, including two \"e\" for \"é\". pt-BR only."
+ },
+ {
+  "key": "n3-to-iu-yori",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Armadilha PT: não e uma comparação de grau como より sozinho ('mais X que Y'); aqui compara-se qual rotulo descreve melhor a mesma coisa, não qual e maior.",
+  "new": "Armadilha PT: não é uma comparação de grau como より sozinho ('mais X que Y'); aqui compara-se qual rótulo descreve melhor a mesma coisa, não qual é maior.",
+  "why": "D5. \"e\" for \"é\" twice plus \"rotulo\". pt-BR only."
+ },
+ {
+  "key": "n3-tokoro-ga",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "E uma conjunção no inicio de oração",
+  "new": "É uma conjunção no início de oração",
+  "why": "D5. The sentence opens on \"E\" (and) where it means \"É\" (it is), plus \"inicio\". pt-BR only."
+ },
+ {
+  "key": "gp-101",
+  "action": "forms",
+  "old": "[\"はの一つだ\"]",
+  "new": "[\"～は～の一つだ\"]",
+  "why": "D4. forms[].form is structure_pattern with the medial placeholder stripped, so the string a forms table or flashcard renders as \"the form\" is ×はの一つだ, which is not Japanese. Restored the pattern with its own ～ (U+FF5E, as in this record's structure_pattern)."
+ },
+ {
+  "key": "gp-101",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"はの一つだ\": \"(X) é um(a) dos/das (Y)\"}",
+  "new": "{\"～は～の一つだ\": \"(X) é um(a) dos/das (Y)\"}",
+  "why": "D4. form_meanings is keyed by the form string, so the key has to be renamed with the form or the gloss column goes blank."
+ },
+ {
+  "key": "gp-101",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"はの一つだ\": \"(X) is one of the (Y)\"}",
+  "new": "{\"～は～の一つだ\": \"(X) is one of the (Y)\"}",
+  "why": "D4. Key rename paired with the forms edit; changed in step with pt-BR."
+ },
+ {
+  "key": "gp-121",
+  "action": "forms",
+  "old": "[\"しし\"]",
+  "new": "[\"し～し\"]",
+  "why": "D4. ×しし is not the form; the pattern is し～し (this record's own structure_pattern)."
+ },
+ {
+  "key": "gp-121",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"しし\": \"...e ainda... (enumera motivos)\"}",
+  "new": "{\"し～し\": \"...e ainda... (enumera motivos)\"}",
+  "why": "D4. Key rename paired with the forms edit."
+ },
+ {
+  "key": "gp-121",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"しし\": \"...and also... (enumerates reasons)\"}",
+  "new": "{\"し～し\": \"...and also... (enumerates reasons)\"}",
+  "why": "D4. Key rename paired with the forms edit; changed in step with pt-BR."
+ },
+ {
+  "key": "gp-41",
+  "action": "forms",
+  "old": "[\"たりたりする\"]",
+  "new": "[\"たり～たりする\"]",
+  "why": "D4. ×たりたりする is not the form; the pattern is たり～たりする (this record's own structure_pattern)."
+ },
+ {
+  "key": "gp-41",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"たりたりする\": \"fazer coisas como ... e ... (lista não exaustiva)\"}",
+  "new": "{\"たり～たりする\": \"fazer coisas como ... e ... (lista não exaustiva)\"}",
+  "why": "D4. Key rename paired with the forms edit."
+ },
+ {
+  "key": "gp-41",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"たりたりする\": \"to do things like ... and ... (non-exhaustive list)\"}",
+  "new": "{\"たり～たりする\": \"to do things like ... and ... (non-exhaustive list)\"}",
+  "why": "D4. Key rename paired with the forms edit; changed in step with pt-BR."
+ },
+ {
+  "key": "no-naka-de-a-ga-ichiban",
+  "action": "forms",
+  "old": "[\"の中でが一番\"]",
+  "new": "[\"の中で[A]が一番\"]",
+  "why": "D4. ×の中でが一番 is not the form; the [A] slot was stripped. Used the pattern without the trailing kana reading, since forms[].form is the rendered form string, not the label."
+ },
+ {
+  "key": "no-naka-de-a-ga-ichiban",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"の中でが一番\": \"o mais ... de (dentro de um grupo)\"}",
+  "new": "{\"の中で[A]が一番\": \"o mais ... de (dentro de um grupo)\"}",
+  "why": "D4. Key rename paired with the forms edit."
+ },
+ {
+  "key": "no-naka-de-a-ga-ichiban",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"の中でが一番\": \"the most ... of (within a group)\"}",
+  "new": "{\"の中で[A]が一番\": \"the most ... of (within a group)\"}",
+  "why": "D4. Key rename paired with the forms edit; changed in step with pt-BR."
+ },
+ {
+  "key": "gp-133",
+  "action": "forms",
+  "old": "[\"でも でも\"]",
+  "new": "[\"〜でも〜でも\"]",
+  "why": "D4. The form carried a stray space where the placeholder was stripped. Wrote it the way both labels already write it, 〜でも〜でも (U+301C, this record's own tilde)."
+ },
+ {
+  "key": "gp-133",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"でも でも\": \"tanto... quanto... / seja... seja...\"}",
+  "new": "{\"〜でも〜でも\": \"tanto... quanto... / seja... seja...\"}",
+  "why": "D4. Key rename paired with the forms edit."
+ },
+ {
+  "key": "gp-133",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"でも でも\": \"both... and... / whether... or...\"}",
+  "new": "{\"〜でも〜でも\": \"both... and... / whether... or...\"}",
+  "why": "D4. Key rename paired with the forms edit; changed in step with pt-BR."
+ },
+ {
+  "key": "gp-148",
+  "action": "forms",
+  "old": "[\"てすみ\"]",
+  "new": "[\"～てすみません\"]",
+  "why": "D4. \"てすみ\" is a truncated non-word: the stripper cut the pattern at the placeholder and lost ません. Restored the record's own structure_pattern."
+ },
+ {
+  "key": "gp-148",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"てすみ\": \"desculpa por (ter feito)... (〜てすみません)\"}",
+  "new": "{\"～てすみません\": \"desculpa por (ter feito)... (〜てすみません)\"}",
+  "why": "D4. Key rename paired with the forms edit."
+ },
+ {
+  "key": "gp-148",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"てすみ\": \"sorry for (having done)... (〜てすみません)\"}",
+  "new": "{\"～てすみません\": \"sorry for (having done)... (〜てすみません)\"}",
+  "why": "D4. Key rename paired with the forms edit; changed in step with pt-BR."
+ },
+ {
+  "key": "o-kudasai-2",
+  "action": "forms",
+  "old": "[\"おください\"]",
+  "new": "[\"お～ください\"]",
+  "why": "D4. The circumfix collapsed: ×おください is not a form, and it is exactly the string the record's formation warns you cannot build. Restored the record's own structure_pattern."
+ },
+ {
+  "key": "o-kudasai-2",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "pt-BR",
+  "old": "{\"おください\": \"por favor, faça (pedido honorífico) (お〜ください)\"}",
+  "new": "{\"お～ください\": \"por favor, faça (pedido honorífico) (お〜ください)\"}",
+  "why": "D4. Key rename paired with the forms edit."
+ },
+ {
+  "key": "o-kudasai-2",
+  "action": "text",
+  "field": "form_meanings",
+  "locale": "en",
+  "old": "{\"おください\": \"please do (honorific request) (お〜ください)\"}",
+  "new": "{\"お～ください\": \"please do (honorific request) (お〜ください)\"}",
+  "why": "D4. Key rename paired with the forms edit; changed in step with pt-BR."
+ },
+ {
+  "key": "gp-95",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-171774",
+  "why": "B1. 今日はずっと気分がよい is the comparative intensifier (\"muito melhor\"), the sense this record's nuance explicitly excludes; its own translation_literal reads \"muito mais\". Leaves gp-95 with 2 durative sentences (tatoeba-158256, tatoeba-191155)."
+ },
+ {
+  "key": "gp-95",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-173719",
+  "why": "B1. 工場よりずっといいよ is より + ずっと + adjective, the comparative sense the record excludes, not the durative one it teaches."
+ },
+ {
+  "key": "gp-95",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-179724",
+  "why": "B1. 金は水よりずっと重い is より + ずっと + adjective, the comparative sense the record excludes."
+ },
+ {
+  "key": "you-da",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-11801342",
+  "why": "B2. ここにいようと思う is volitional + と思う, the exact confusable the record's nuance warns against. Already correctly tagged to you-to-omou; the you-da tag is a surface よう match."
+ },
+ {
+  "key": "you-da",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-193348",
+  "why": "B2. もっとお金をためようと思うんだ is volitional + と思う, not ようだ. Keeps its you-to-omou tag."
+ },
+ {
+  "key": "you-da",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-235716",
+  "why": "B2. １度に２つの事をしようと思うな is volitional + と思う, not ようだ. Keeps its you-to-omou tag."
+ },
+ {
+  "key": "you-da",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-79760",
+  "why": "B2. 夜が明けようとしている is 〜ようとしている (\"on the point of\"), not the ようだ conjecture this record teaches."
+ },
+ {
+  "key": "you-da",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-81579",
+  "why": "B2. 本題からそれないようにしましょう is 〜ようにしましょう, not ようだ. Keeps its you-ni-suru / you-ni-you-na tags. Leaves you-da with tatoeba-74772, its one genuine ようだ example."
+ },
+ {
+  "key": "gp-63",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-161847",
+  "why": "B3. 手に入れられると思いますよ is the potential (\"você consegue\"), not the passive; attaching it to the passive record makes the record's own potential/passive warning unlearnable. The report suggests moving it to gram:rareru, which this campaign cannot do."
+ },
+ {
+  "key": "gp-63",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-188098",
+  "why": "B3. 何かすぐ食べられるものある？ is the potential (\"que dê pra comer\"), not the passive."
+ },
+ {
+  "key": "gp-63",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-84315",
+  "why": "B3. 父上、何をしておられるのか is honorific おられる (おる + れる), not the passive. Leaves gp-63 with 4 genuine passives (gen-113cd2b42397, gen-41c59e916001, gen-b724a8178171, tatoeba-186610)."
+ },
+ {
+  "key": "gp-83",
+  "action": "unlink",
+  "sentence": "sent:gen-38247e47e14c",
+  "why": "B4. 彼女は天使のようにやさしい contains no まい at all. The record's own steps_unavailable says the 〜のように half was identified as a concatenation bug and stripped from the prose and structure_pattern; the sentence links were left behind. Leaves gp-83 with 3 genuine まい sentences."
+ },
+ {
+  "key": "gp-83",
+  "action": "unlink",
+  "sentence": "sent:gen-c1a790a4c31e",
+  "why": "B4. 雪のように白い花が咲いた contains no まい; same half-repaired のように contamination the record's own note orders stripped."
+ },
+ {
+  "key": "cha-ikenai-ja-ikenai",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-3357795",
+  "why": "B5. 今日売らなくちゃいけないんだ is 〜なくちゃいけない, which derives from なくては (not from the て-form via て→ちゃ) and means the opposite of this record: obligation, not prohibition. The corpus has gp-145 / nakucha / gp-52 for it."
+ },
+ {
+  "key": "cha-ikenai-ja-ikenai",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-8883784",
+  "why": "B5. 本当に行かなくちゃいけないの？ is obligation (なくちゃいけない), not the prohibition this record teaches."
+ },
+ {
+  "key": "cha-ikenai-ja-ikenai",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-9101504",
+  "why": "B5. それをしなくちゃいけないって… is obligation (なくちゃいけない), not prohibition."
+ },
+ {
+  "key": "cha-ikenai-ja-ikenai",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-9781663",
+  "why": "B5. そこには俺が行かなくちゃいけないんだ is obligation (なくちゃいけない), not prohibition. Leaves the record with tatoeba-174758 (言っちゃいけないんだけど), its one genuine prohibition example."
+ },
+ {
+  "key": "de",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-1057336",
+  "why": "B6. でもなんで？ has no particle で: でも is \"but\" and なんで is the fixed interrogative. Tagged by substring match. Keeps its gp-31 and mo tags."
+ },
+ {
+  "key": "de",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-778974",
+  "why": "B6. なんで？ is the fixed interrogative, not the particle で. Keeps its gp-31 tag."
+ },
+ {
+  "key": "de",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-125387",
+  "why": "B6. 諦めないで is the negative て-form ないで, a different point entirely, and it is already tagged to gram:naide. Leaves gram:de with 5 sentences."
+ },
+ {
+  "key": "n3-you-ni-shimashou",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-123214",
+  "why": "B7. 内訳はどのようにしましょう？ is どのように (\"in what way\") + しましょう, a question about how, not the 〜ようにしましょう habit proposal; the pt translation (\"Como você gostaria...\") confirms it. Leaves the record with 5 sentences."
+ },
+ {
+  "key": "n3-you-ni-3",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Verbo na forma comum + ように; adjetivo-い + ように; adjetivo-な + に (não leva だ aqui); substantivo + のように.",
+  "new": "Verbo na forma comum + ように; adjetivo-い + ように; adjetivo-な + な + ように (静かなように; nunca 静かだように, e nunca 静かに, que é só o advérbio); substantivo + のように.",
+  "why": "F-1 BLOCKER: a linha do adjetivo-na mandava juntar 'adjetivo-な + に', o que produz 静かに (o advérbio comum) e não este ponto. O padrão exige a forma atributiva な antes de ように."
+ },
+ {
+  "key": "n3-you-ni-3",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Verb in plain form + ように; い-adjective + ように; な-adjective + に (it does not take だ here); noun + のように.",
+  "new": "Verb in plain form + ように; い-adjective + ように; な-adjective + な + ように (静かなように; never 静かだように, and never 静かに, which is just the adverb); noun + のように.",
+  "why": "F-1 BLOCKER: EN carried the same wrong na-adjective rule; changed in step with pt-BR."
+ },
+ {
+  "key": "n3-you-ni-3",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Atenção ao adjetivo-な: ele se liga com に, não com だ. Quando é comparação (\"canta como um pássaro\"), o sentido é de semelhança; quando é finalidade (\"esforço-me para me dar bem com os amigos\"), o sentido é de objetivo. O contexto define qual leitura vale.",
+  "new": "Atenção ao adjetivo-な: antes de ように ele entra na forma atributiva com な (静かなように), nunca com だ e nunca como 静かに, que é só o advérbio \"silenciosamente\". Quando é comparação (\"canta como um pássaro\"), o sentido é de semelhança; quando é finalidade (\"esforço-me para me dar bem com os amigos\"), o sentido é de objetivo. O contexto define qual leitura vale.",
+  "why": "F-1: a nuance repetia a regra errada ('ele se liga com に'); agora repete a regra correta da formation."
+ },
+ {
+  "key": "n3-you-ni-3",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Watch the na-adjective: it links with に, not with だ. When it is a comparison ('sings like a bird'), the sense is one of likeness; when it is purpose ('I make an effort to get along with my friends'), the sense is one of a goal. Context determines which reading applies.",
+  "new": "Watch the na-adjective: before ように it takes the attributive form with な (静かなように), never だ and never 静かに, which is just the adverb 'quietly'. When it is a comparison ('sings like a bird'), the sense is one of likeness; when it is purpose ('I make an effort to get along with my friends'), the sense is one of a goal. Context determines which reading applies.",
+  "why": "F-1: EN repeated the same wrong rule; changed in step with pt-BR."
+ },
+ {
+  "key": "gp-102",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "O padrão encaixa duas negações na mesma frase. A primeira aparece dentro de uma oração que modifica um substantivo: [verbo/adjetivo na forma negativa 〜ない] + substantivo. Depois esse substantivo é seguido por は + ない (não há). Esquema: 〜ない + [substantivo] + はない. Ex.: 食べられないものはない = \"não há nada que não se possa comer\" (= dá pra comer tudo). Para \"existir/haver\", use ない (informal) ou ありません (formal).",
+  "new": "O padrão encaixa duas negações na mesma frase. A primeira aparece dentro de uma oração que modifica um substantivo: [verbo/adjetivo na forma negativa 〜ない] + substantivo. Depois esse substantivo é seguido por は + ない (não há). Esquema: 〜ない + [substantivo] + はない. Ex.: 食べられないものはない = \"não há nada que não se possa comer\" (= dá pra comer tudo). Atenção ao substantivo: はない é o negativo de ある e só vale para coisas; com pessoa ou animal o negativo é いない, então o padrão vira 〜ない + [substantivo animado] + はいない (この問題が解けない学生はいない, nunca 学生はない). Para \"existir/haver\", use ない/いない (informal) ou ありません/いません (formal).",
+  "why": "F-2 BLOCKER: a restrição de animacidade só existia na nota interna steps_unavailable, então a formation que o aluno lê autorizava ×学生はない."
+ },
+ {
+  "key": "gp-102",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "The pattern fits two negations into the same sentence. The first appears within a clause that modifies a noun: [verb/adjective in the negative 〜ない-form] + noun. Then that noun is followed by は + ない (there is no). Schema: 〜ない + [noun] + はない. Ex.: 食べられないものはない = 'there is nothing that can't be eaten' (= you can eat everything). For 'to exist/there to be', use ない (informal) or ありません (formal).",
+  "new": "The pattern fits two negations into the same sentence. The first appears within a clause that modifies a noun: [verb/adjective in the negative 〜ない-form] + noun. Then that noun is followed by は + ない (there is no). Schema: 〜ない + [noun] + はない. Ex.: 食べられないものはない = 'there is nothing that can't be eaten' (= you can eat everything). Watch the noun: はない is the negative of ある and covers things only; with a person or an animal the negative is いない, so the pattern becomes 〜ない + [animate noun] + はいない (この問題が解けない学生はいない, never 学生はない). For 'to exist/there to be', use ない/いない (informal) or ありません/いません (formal).",
+  "why": "F-2: EN changed in step with pt-BR."
+ },
+ {
+  "key": "gp-138",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Literalmente é \"teria sido bom se...\", então o tom é de lamento pessoal, não de conselho a outra pessoa. Cuidado: em português \"deveria ter\" também serve para criticar os outros, mas 〜ばよかった quase sempre fala do próprio arrependimento de quem está falando. Para o sentido negativo, lembre que 行けばよかった (\"deveria ter ido\") e 行かなければよかった (\"não deveria ter ido\") são opostos (não confunda a partícula なければ.)",
+  "new": "Literalmente é \"teria sido bom se...\", então o tom é de lamento pessoal, não de conselho a outra pessoa. Cuidado: em português \"deveria ter\" também serve para criticar os outros, mas 〜ばよかった quase sempre fala do próprio arrependimento de quem está falando. Para o sentido negativo, lembre que 行けばよかった (\"deveria ter ido\", quem fala não foi) e 行かなければよかった (\"não deveria ter ido\", quem fala foi) são opostos: não troque 〜ば, o condicional afirmativo, por 〜なければ, que é o condicional da negativa ない.",
+  "why": "F-3: なければ não é partícula (é a forma ば da negativa ない, derivada na própria formation) e o aviso estava truncado, sem dizer com o que não confundir."
+ },
+ {
+  "key": "gp-138",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Literally it's 'it would have been good if...,' so the tone is one of personal regret, not advice to another person. Note: in Portuguese 'deveria ter' also serves to criticize others, but 〜ばよかった almost always speaks of the speaker's own regret. For the negative sense, remember that 行けばよかった ('I should have gone') and 行かなければよかった ('I shouldn't have gone') are opposites (don't confuse the なければ particle).",
+  "new": "Literally it's 'it would have been good if...,' so the tone is one of personal regret, not advice to another person. Note: in Portuguese 'deveria ter' also serves to criticize others, but 〜ばよかった almost always speaks of the speaker's own regret. For the negative sense, remember that 行けばよかった ('I should have gone', the speaker did not go) and 行かなければよかった ('I shouldn't have gone', the speaker did go) are opposites: don't swap 〜ば, the affirmative conditional, for 〜なければ, which is the conditional of the negative ない.",
+  "why": "F-3: EN carried the same 'なければ particle' error and the same dangling warning."
+ },
+ {
+  "key": "douyatte",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "どうやって + verbo/frase de ação. Ex.: どうやって作（つく）りますか ('como se faz?'); どうやって駅（えき）まで行きますか ('como você vai até a estação?'). Literalmente é どう (como) + やって (forma て de やる/する, 'fazendo'), ou seja, 'fazendo de que forma'.",
+  "new": "どうやって + verbo/frase de ação. Ex.: どうやって作（つく）りますか ('como se faz?'); どうやって駅（えき）まで行きますか ('como você vai até a estação?'). Literalmente é どう (como) + やって (forma て de やる, 'fazendo'), ou seja, 'fazendo de que forma'. やる é o equivalente coloquial de する, mas a forma て de する é して: só やる produz やって.",
+  "why": "F-4: 'forma て de やる/する' faz o aluno concluir que する vira やって; a forma て de する é して."
+ },
+ {
+  "key": "douyatte",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "どうやって + verb/action clause. Ex.: どうやって作（つく）りますか ('how do you make it?'); どうやって駅（えき）まで行きますか ('how do you get to the station?'). Literally it is どう (how) + やって (the て-form of やる/する, 'doing'), that is, 'doing in what way'.",
+  "new": "どうやって + verb/action clause. Ex.: どうやって作（つく）りますか ('how do you make it?'); どうやって駅（えき）まで行きますか ('how do you get to the station?'). Literally it is どう (how) + やって (the て-form of やる, 'doing'), that is, 'doing in what way'. やる is the colloquial equivalent of する, but the て-form of する is して: only やる gives やって.",
+  "why": "F-4: EN attributed やって to する as well."
+ },
+ {
+  "key": "gp-126",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro escrito/formal: na fala cotidiana se prefere expressões mais simples. Cuidado: 化する só combina bem com substantivos abstratos ou kanji compostos, não se diz 化する com palavras casuais ou empréstimos do dia a dia(para esses usa-se 〜になる/〜にする). Brasileiros tendem a achar que \"-izar\" sempre vira 化する, mas muitos verbos do português têm equivalentes próprios em japonês.",
+  "new": "Registro escrito/formal: na fala cotidiana se prefere expressões mais simples. 化する é mais produtivo com compostos de kanji (漢語) e com empréstimos já firmados como termo técnico (データ化, デジタル化, グローバル化). O que não funciona é forçar 化する sobre gíria ou palavra solta do dia a dia; nesses casos use 〜になる/〜にする. Brasileiros tendem a achar que \"-izar\" sempre vira 化する, mas muitos verbos do português têm equivalentes próprios em japonês.",
+  "why": "F-5: a proibição de empréstimos é falsa e a primeira frase ligada ao ponto (データ化しています) a contradiz; virou questão de produtividade. Corrige de passagem o espaço faltando antes do parêntese (T-7)."
+ },
+ {
+  "key": "gp-126",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Written/formal register: in everyday speech simpler expressions are preferred. Note: 化する pairs well only with abstract nouns or kanji compounds; you don't say 化する with casual words or everyday loanwords (for those, use 〜になる/〜にする). Brazilians tend to think '-ize' always becomes 化する, but many Portuguese verbs have their own equivalents in Japanese.",
+  "new": "Written/formal register: in everyday speech simpler expressions are preferred. 化する is most productive with kanji compounds (kango) and with loanwords already established as technical terms (データ化, デジタル化, グローバル化). What does not work is forcing 化する onto slang or a casual everyday word; for those, use 〜になる/〜にする. Brazilians tend to think '-ize' always becomes 化する, but many Portuguese verbs have their own equivalents in Japanese.",
+  "why": "F-5: EN carried the same false loanword ban."
+ },
+ {
+  "key": "gp-24",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Armadilha para brasileiros: tratar todo adjetivo igual e tentar negar com じゃない. Lembre: adjetivo-い → 〜くない; adjetivo-な e substantivo → 〜じゃない. Outro reflexo a evitar: não coloque です antes do negativo (高くないです está certo, mas 高いじゃない está errado). E nunca esqueça a irregularidade いい → よくない.",
+  "new": "Armadilha para brasileiros: tratar todo adjetivo igual e tentar negar com じゃない. Lembre: adjetivo-い → 〜くない (nunca ×高いじゃない); adjetivo-な e substantivo → 〜じゃない. Outro reflexo a evitar: o です vem depois do negativo, nunca antes (高くないです está certo, ×高いですない está errado). E nunca esqueça a irregularidade いい → よくない.",
+  "why": "F-6: a regra falava da posição do です mas o contraexemplo 高いじゃない não tem です nenhum; separei as duas coisas e pus cada exemplo junto da sua regra."
+ },
+ {
+  "key": "gp-24",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Trap for Brazilians: treating every adjective alike and trying to negate with じゃない. Remember: i-adjective → 〜くない; na-adjective and noun → 〜じゃない. Another reflex to avoid: don't put です before the negative (高くないです is correct, but 高いじゃない is wrong). And never forget the irregular いい → よくない.",
+  "new": "Trap for Brazilians: treating every adjective alike and trying to negate with じゃない. Remember: i-adjective → 〜くない (never 高いじゃない); na-adjective and noun → 〜じゃない. Another reflex to avoid: です comes after the negative, never before (高くないです is correct, 高いですない is wrong). And never forget the irregular いい → よくない.",
+  "why": "F-6: EN had the same mismatched counter-example."
+ },
+ {
+  "key": "n3-ba-hodo",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Repete-se o mesmo verbo: forma condicional ば + forma simples + ほど (ex.: 起きれば起きるほど). Com adjetivo-i: forma condicional + adjetivo + ほど (ex.: 高ければ高いほど). Com adjetivo-na: であれば + な-adjetivo + ほど, ou o padrão であればあるほど.",
+  "new": "Repete-se o mesmo verbo: forma condicional ば + forma simples + ほど (ex.: 起きれば起きるほど). Com adjetivo-i: forma condicional + adjetivo + ほど (ex.: 高ければ高いほど). Com adjetivo-な: 〜であれば + o mesmo adjetivo + な + ほど (便利であれば便利なほど), ou o padrão fixo 〜であればあるほど (便利であればあるほど).",
+  "why": "F-7: a linha do adjetivo-na omitia o な atributivo e, lida ao pé da letra, dava ×便利であれば便利ほど."
+ },
+ {
+  "key": "n3-ba-hodo",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "The same verb is repeated: conditional form ば + plain form + ほど (e.g.: 起きれば起きるほど). With an い-adjective: conditional form + adjective + ほど (e.g.: 高ければ高いほど). With a な-adjective: であれば + な-adjective + ほど, or the pattern であればあるほど.",
+  "new": "The same verb is repeated: conditional form ば + plain form + ほど (e.g.: 起きれば起きるほど). With an い-adjective: conditional form + adjective + ほど (e.g.: 高ければ高いほど). With a な-adjective: 〜であれば + the same adjective + な + ほど (便利であれば便利なほど), or the fixed pattern 〜であればあるほど (便利であればあるほど).",
+  "why": "F-7: EN left the same connector unstated."
+ },
+ {
+  "key": "sou-ni-sou-na",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Raiz do adjetivo/verbo + そう, depois conjuga como adjetivo な. Adjetivos い: 高い → 高そう (cai o い). Adjetivos な: 元気 → 元気そう. Verbos: forma ます sem o ます: 降る → 降りそう, 泣く → 泣きそう. Daí: + な antes de substantivo (おいしそうなパン), + に antes de verbo (悲しそうに話す). Exceções: いい → よさそう; ない → なさそう.",
+  "new": "Raiz do adjetivo/verbo + そう, depois conjuga como adjetivo な. Adjetivos い: 高い → 高そう (cai o い). Adjetivos な: 元気 → 元気そう. Verbos: forma ます sem o ます: 降る → 降りそう, 泣く → 泣きそう. Daí: + な antes de substantivo (おいしそうなパン), + に antes de verbo (悲しそうに話す). Exceções: いい → よさそう; ない → なさそう. Na negativa, o adjetivo-い leva o さ (高くなさそう) e o verbo tem duas formas: 降らなそう (a prescritiva) e 降らなさそう (a mais comum na fala).",
+  "why": "F-8: os formation_steps emitem 降らなさそうな/降らなさそうに sem que a prosa introduza a negativa; agora a regra está escrita e a diferença de registro entre 降らなそう e 降らなさそう fica clara."
+ },
+ {
+  "key": "sou-ni-sou-na",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Stem of the adjective/verb + そう, then it conjugates like a な-adjective. い-adjectives: 高い → 高そう (the い drops). な-adjectives: 元気 → 元気そう. Verbs: ます-form without the ます: 降る → 降りそう, 泣く → 泣きそう. Hence: + な before a noun (おいしそうなパン), + に before a verb (悲しそうに話す). Exceptions: いい → よさそう; ない → なさそう.",
+  "new": "Stem of the adjective/verb + そう, then it conjugates like a な-adjective. い-adjectives: 高い → 高そう (the い drops). な-adjectives: 元気 → 元気そう. Verbs: ます-form without the ます: 降る → 降りそう, 泣く → 泣きそう. Hence: + な before a noun (おいしそうなパン), + に before a verb (悲しそうに話す). Exceptions: いい → よさそう; ない → なさそう. In the negative, an い-adjective takes the さ (高くなさそう) and a verb has two shapes: 降らなそう (the prescriptive one) and 降らなさそう (the more common one in speech).",
+  "why": "F-8: EN changed in step with pt-BR."
+ },
+ {
+  "key": "yatto",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Também acompanha o presente para algo que dá só na medida: やっと間に合う (やっとまにあう) = \"chego bem em cima da hora\".",
+  "new": "É um advérbio invariável: basta colocá-lo antes do verbo ou da oração, em geral no início ou perto do verbo. やっと + oração, normalmente com o verbo no passado (〜た) para algo já conseguido: やっと家に着いた (やっといえについた) = \"finalmente cheguei em casa\". Também acompanha o presente para algo que dá só na medida: やっと間に合う (やっとまにあう) = \"chego bem em cima da hora\".",
+  "why": "T-1 HIGH: o campo pt-BR estava truncado no próprio rodapé, abrindo com 'Também' sem nada antes; restaurei as duas frases iniciais que só existiam em en."
+ },
+ {
+  "key": "gp-134",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Vem no início da segunda frase, depois de um ponto ou pausa: [Frase 1 (causa]。それで、[Frase 2) resultado]. Não conecta partes dentro de uma mesma oração; é um conector entre sentenças. Vem de それ (\"isso\") + で.",
+  "new": "Vem no início da segunda frase, depois de um ponto ou pausa: [Frase 1 (causa)]。それで、[Frase 2 (resultado)]. Não conecta partes dentro de uma mesma oração; é um conector entre sentenças. Vem de それ (\"isso\") + で.",
+  "why": "T-2: parênteses e colchetes entrelaçados errado ([Frase 1 (causa]。それで、[Frase 2) resultado]); en já estava correto."
+ },
+ {
+  "key": "mae-ni",
+  "action": "text",
+  "field": "explanation",
+  "locale": "pt-BR",
+  "old": "Indica que uma ação acontece ANTES de outra ação ou de um momento no tempo. Equivale ao nosso \"antes de\". Pode se referir a um verbo na forma de dicionário; sempre no dicionário, mesmo que a oração principal esteja no passado (食べる前に手を洗いました = lavei as mãos antes de comer) ;, a um substantivo de tempo com の (授業の前に, 昼ごはんの前に) ou a uma quantidade de tempo, aí sem の (三年前に = três anos atrás) ou a uma quantidade de tempo (\"três anos atrás\"). A oração principal vem depois e diz o que acontece em seguida.",
+  "new": "Indica que uma ação acontece ANTES de outra ação ou de um momento no tempo. Equivale ao nosso \"antes de\". Pode se referir a um verbo, sempre na forma de dicionário, mesmo que a oração principal esteja no passado (食べる前に手を洗いました = lavei as mãos antes de comer); a um substantivo de tempo com の (授業の前に, 昼ごはんの前に); ou a uma quantidade de tempo, aí sem の (三年前に = três anos atrás). A oração principal vem depois e diz o que acontece em seguida.",
+  "why": "T-3: tirei a pontuação órfã ' ;,' e a repetição de 'ou a uma quantidade de tempo', mantendo o detalhe pt-only de que o verbo fica sempre no dicionário."
+ },
+ {
+  "key": "no-naka-de",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Não confunda com の中に (\"dentro de\", localização física, com に de existência). Aqui で marca o escopo da comparação, não \"dentro de\" no sentido espacial. O brasileiro tende a omitir o の ou trocar で por に (fique atento a isso. Para grupos de pessoas/lugares também se usa 〜のうちで. Registro neutro.)",
+  "new": "Não confunda com の中に (\"dentro de\", localização física, com に de existência). Aqui で marca o escopo da comparação, não \"dentro de\" no sentido espacial. O brasileiro tende a omitir o の ou trocar で por に (fique atento a isso). Para grupos de pessoas/lugares também se usa 〜のうちで. Registro neutro.",
+  "why": "T-4: parêntese sem fechar engolia as duas últimas frases; en já estava correto."
+ },
+ {
+  "key": "gp-140",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "A + のほうが + B + より + adjetivo. Também é muito comum a ordem invertida: B + より + A + のほうが + adjetivo. Após substantivo usa-se の antes de ほう; a ordem dos dois blocos (のほうが e より) é flexível. Atenção: o japonês não tem palavra para 'mais' (como em 'mais rápido') (a comparação está toda na estrutura, e o adjetivo fica na forma normal.)",
+  "new": "A + のほうが + B + より + adjetivo. Também é muito comum a ordem invertida: B + より + A + のほうが + adjetivo. Após substantivo usa-se の antes de ほう; a ordem dos dois blocos (のほうが e より) é flexível. Atenção: o japonês não tem palavra para 'mais' (como em 'mais rápido'): a comparação está toda na estrutura, e o adjetivo fica na forma normal.",
+  "why": "T-5: a frase final tinha sido engolida por um parêntese, com o ponto final dentro dele."
+ },
+ {
+  "key": "gp-140",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "A + のほうが + B + より + adjective. The inverted order is also very common: B + より + A + のほうが + adjective. After a noun you use の before ほう; the order of the two blocks (のほうが and より) is flexible. Note: Japanese has no word for 'more' (as in 'faster') (the comparison is entirely in the structure, and the adjective stays in its normal form.)",
+  "new": "A + のほうが + B + より + adjective. The inverted order is also very common: B + より + A + のほうが + adjective. After a noun you use の before ほう; the order of the two blocks (のほうが and より) is flexible. Note: Japanese has no word for 'more' (as in 'faster'): the comparison is entirely in the structure, and the adjective stays in its normal form.",
+  "why": "T-5: same swallowed closing sentence in EN."
+ },
+ {
+  "key": "gp-5",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "The most common beginner error is conjugating from いい (いくない, いかった): that's always wrong (every inflection uses the stem よ-. Think of いい/よい as two faces of the same word: いい is colloquial and valid only in the affirmative present, よい is more formal and serves as the base for everything. Unlike Portuguese 'bom,' which changes only for gender and number, here the adjective carries tense and negation in its own ending.)",
+  "new": "The most common beginner error is conjugating from いい (いくない, いかった): that's always wrong, every inflection uses the stem よ-. Think of いい/よい as two faces of the same word: いい is colloquial and valid only in the affirmative present, よい is more formal and serves as the base for everything. Unlike Portuguese 'bom,' which changes only for gender and number, here the adjective carries tense and negation in its own ending.",
+  "why": "T-5: an unclosed parenthesis turned the whole passage into an aside; pt-BR was already clean, so this is an EN-only repair."
+ },
+ {
+  "key": "naa",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Being informal and emotional, avoid it in formal situations or with superiors. Unlike ね, which tends to seek the listener's agreement ('right?'), なあ is more introspective (it's the sentence's 'sigh.' Portuguese speakers tend to underuse it; dropping a なあ at the right moment makes your speech sound more natural and expressive.)",
+  "new": "Being informal and emotional, avoid it in formal situations or with superiors. Unlike ね, which tends to seek the listener's agreement ('right?'), なあ is more introspective: it's the sentence's 'sigh'. Portuguese speakers tend to underuse it; dropping a なあ at the right moment makes your speech sound more natural and expressive.",
+  "why": "T-5: the parenthesis opened mid-clause and closed two sentences later; pt-BR was already clean."
+ },
+ {
+  "key": "toki",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Oração + とき, com a parte final no modo simples (plain). Verbo: 行(い)くとき (quando for / na hora de ir) vs. 行ったとき (quando fui / depois de ir). い-adjetivo: 小(ちい)さいとき (quando era pequeno). な-adjetivo: 元気(げんき)なとき. Substantivo: 子(こ)どものとき (quando era criança) (note o の.)",
+  "new": "Oração + とき, com a parte final no modo simples (plain). Verbo: 行(い)くとき (quando for / na hora de ir) vs. 行ったとき (quando fui / depois de ir). い-adjetivo: 小(ちい)さいとき (quando era pequeno). な-adjetivo: 元気(げんき)なとき. Substantivo: 子(こ)どものとき (quando era criança); note o の.",
+  "why": "T-5: parêntese que engolia a observação final, com o ponto dentro."
+ },
+ {
+  "key": "toki",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Clause + とき, with the final part in the plain form. Verb: 行(い)くとき (when going / at the time of going) vs. 行ったとき (when I went / after going). I-adjective: 小(ちい)さいとき (when I was small). Na-adjective: 元気(げんき)なとき. Noun: 子(こ)どものとき (when I was a child) (note the の.)",
+  "new": "Clause + とき, with the final part in the plain form. Verb: 行(い)くとき (when going / at the time of going) vs. 行ったとき (when I went / after going). I-adjective: 小(ちい)さいとき (when I was small). Na-adjective: 元気(げんき)なとき. Noun: 子(こ)どものとき (when I was a child); note the の.",
+  "why": "T-5: same in EN."
+ },
+ {
+  "key": "toki",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "The big trap for Brazilians is the tense of the verb before とき: 食(た)べるとき = before/at the time of eating; 食べたとき = after having already eaten. Another point: with a noun and na-adjective you insert の/な (子どものとき, 元気なとき) (don't use a 'bare' とき as in Portuguese. The verb within the clause stays in plain form even in a polite sentence; politeness goes on the final verb.)",
+  "new": "The big trap for Brazilians is the tense of the verb before とき: 食(た)べるとき = before/at the time of eating; 食べたとき = after having already eaten. Another point: with a noun and na-adjective you insert の/な (子どものとき, 元気なとき); don't use a 'bare' とき as in Portuguese. The verb within the clause stays in plain form even in a polite sentence; politeness goes on the final verb.",
+  "why": "T-5: the parenthesis swallowed the last two sentences; pt-BR was already clean."
+ },
+ {
+  "key": "gp-118",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "A maior armadilha para brasileiros: o verbo precisa estar no negativo mesmo a frase tendo sentido \"positivo\" (\"só\"). Compare com だけ, que também é \"só\" mas usa verbo afirmativo (千円だけある) e é neutro; já しか〜ない carrega um tom de \"é pouco / é insuficiente / só isso e nada mais\". Não diga 千円しかある (está errado; tem que ser 千円しかない.)",
+  "new": "A maior armadilha para brasileiros: o verbo precisa estar no negativo mesmo a frase tendo sentido \"positivo\" (\"só\"). Compare com だけ, que também é \"só\" mas usa verbo afirmativo (千円だけある) e é neutro; já しか〜ない carrega um tom de \"é pouco / é insuficiente / só isso e nada mais\". Não diga 千円しかある (está errado; tem que ser 千円しかない).",
+  "why": "T-5: ponto final dentro do parêntese; en já estava correto."
+ },
+ {
+  "key": "gp-122",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "A escolha で vs から depende de o material ainda ser perceptível (で) ou já estar transformado (から) (em português dizemos \"de\" nos dois casos, então essa distinção é uma armadilha. Note também que できる aqui significa \"ser composto/formado\", e não \"conseguir/poder\", outro sentido comum do mesmo verbo; deixe o contexto guiar.)",
+  "new": "A escolha で vs から depende de o material ainda ser perceptível (で) ou já estar transformado (から); em português dizemos \"de\" nos dois casos, então essa distinção é uma armadilha. Note também que できる aqui significa \"ser composto/formado\", e não \"conseguir/poder\", outro sentido comum do mesmo verbo; deixe o contexto guiar.",
+  "why": "T-5: o parêntese engolia a observação sobre できる; en já estava correto."
+ },
+ {
+  "key": "koto",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Existe outro nominalizador, の, e nem sempre dá para trocar um pelo outro: prefira こと para ideias abstratas/gerais e com verbos como 〜は〜です; use の para ações concretas que se veem ou ouvem (子供が走るのを見た, vi a criança correndo). Brasileiros tendem a montar frases com \"que\" (\"é difícil que eu fale\"); em japonês não existe esse \"que\" (a nominalização com こと faz esse papel.)",
+  "new": "Existe outro nominalizador, の, e nem sempre dá para trocar um pelo outro: prefira こと para ideias abstratas/gerais e com verbos como 〜は〜です; use の para ações concretas que se veem ou ouvem (子供が走るのを見た, vi a criança correndo). Brasileiros tendem a montar frases com \"que\" (\"é difícil que eu fale\"); em japonês não existe esse \"que\": a nominalização com こと faz esse papel.",
+  "why": "T-5: ponto final dentro do parêntese; en já estava correto."
+ },
+ {
+  "key": "mitai-ni",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "[Substantivo / verbo ou adjetivo na forma simples] + みたいに + verbo ou adjetivo. Exemplos: 雪みたいに白い (\"branco como neve\"), 知らなかったみたいに話す (\"falar como se não soubesse\"). Use みたいに antes de verbos/adjetivos e みたいな antes de substantivos (é a mesma diferença de に vs な dos adjetivos-な.)",
+  "new": "[Substantivo / verbo ou adjetivo na forma simples] + みたいに + verbo ou adjetivo. Exemplos: 雪みたいに白い (\"branco como neve\"), 知らなかったみたいに話す (\"falar como se não soubesse\"). Use みたいに antes de verbos/adjetivos e みたいな antes de substantivos (é a mesma diferença de に vs な dos adjetivos-な).",
+  "why": "T-5: ponto final dentro do parêntese."
+ },
+ {
+  "key": "mitai-ni",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "[Noun / verb or adjective in plain form] + みたいに + verb or adjective. Examples: 雪みたいに白い (\"white like snow\"), 知らなかったみたいに話す (\"to speak as if one didn't know\"). Use みたいに before verbs/adjectives and みたいな before nouns (it's the same に vs な distinction as with な-adjectives.)",
+  "new": "[Noun / verb or adjective in plain form] + みたいに + verb or adjective. Examples: 雪みたいに白い (\"white like snow\"), 知らなかったみたいに話す (\"to speak as if one didn't know\"). Use みたいに before verbs/adjectives and みたいな before nouns (it's the same に vs な distinction as with な-adjectives).",
+  "why": "T-5: same in EN."
+ },
+ {
+  "key": "nakereba-ikenai",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Cuidado com a dupla negação: o brasileiro estranha porque a estrutura literal é \"se não fizer, não pode\", mas o sentido final é positivo (\"tenho que fazer\"). Não traduza ao pé da letra. いけない soa um pouco mais subjetivo/situacional que ならない; ambos são neutros, e a forma polida acrescenta です/ます (〜なければいけません / 〜なければなりません). A contração 〜なきゃ é bem casual (evite em contexto formal.)",
+  "new": "Cuidado com a dupla negação: o brasileiro estranha porque a estrutura literal é \"se não fizer, não pode\", mas o sentido final é positivo (\"tenho que fazer\"). Não traduza ao pé da letra. いけない soa um pouco mais subjetivo/situacional que ならない; ambos são neutros, e a forma polida acrescenta です/ます (〜なければいけません / 〜なければなりません). A contração 〜なきゃ é bem casual (evite em contexto formal).",
+  "why": "T-5: ponto final dentro do parêntese; en já estava correto."
+ },
+ {
+  "key": "n3-to-ii-naa",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "E coloquial e cheio de sentimento; em fala mais neutra usa-se so といい ou といいですね. Quando o desejo recai sobre o próprio falante e algo que ele controla, costuma-se preferir ばいい. Armadilha PT: o と aqui não e o 'e' de junção nem o de citação; ele introduz a condição desejada ('seria bom se...').",
+  "new": "É coloquial e cheio de sentimento; em fala mais neutra usa-se só といい ou といいですね. Quando o desejo recai sobre o próprio falante e algo que ele controla, costuma-se preferir ばいい. Armadilha PT: o と aqui não é o 'e' de junção nem o de citação; ele introduz a condição desejada ('seria bom se...').",
+  "why": "T-6: acentos comidos ('E coloquial', 'usa-se so', 'não e o')."
+ },
+ {
+  "key": "n3-ni-yoreba",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Como a informação e de segunda mão, e natural fechar a frase com uma expressão de relato (そうだ, ということだ) ou de probabilidade (でしょう). Diferença útil: によって aponta agente ou meio; によれば aponta fonte de informação, e não se confundem apesar de partilharem o によ.",
+  "new": "Como a informação é de segunda mão, é natural fechar a frase com uma expressão de relato (そうだ, ということだ) ou de probabilidade (でしょう). Diferença útil: によって aponta agente ou meio; によれば aponta fonte de informação, e não se confundem apesar de partilharem o によ.",
+  "why": "T-6: acentos comidos ('a informação e de segunda mão, e natural')."
+ },
+ {
+  "key": "n3-to-iu-no",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Soa explicativo e levemente enfatico, mais comum na fala e na escrita expositiva do que numa conversa neutra. Atenção: não confunda com というのは (que define um termo, gid 422); aqui o foco e justificar um motivo, não definir uma palavra.",
+  "new": "Soa explicativo e levemente enfático, mais comum na fala e na escrita expositiva do que numa conversa neutra. Atenção: não confunda com というのは, que define um termo; aqui o foco é justificar um motivo, não definir uma palavra.",
+  "why": "T-6 + L-2: acentos comidos ('enfatico', 'o foco e justificar') e o id interno 'gid 422' exposto ao aluno."
+ },
+ {
+  "key": "n3-to-iu-no",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "It sounds explanatory and slightly emphatic, more common in speech and expository writing than in neutral conversation. Note: don't confuse it with というのは (which defines a term, gid 422); here the focus is justifying a reason, not defining a word.",
+  "new": "It sounds explanatory and slightly emphatic, more common in speech and expository writing than in neutral conversation. Note: don't confuse it with というのは, which defines a term; here the focus is justifying a reason, not defining a word.",
+  "why": "L-2: the raw internal id 'gid 422' was exposed in EN too."
+ },
+ {
+  "key": "te-morau",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "A armadilha para brasileiros é a partícula com o sujeito: o sujeito é quem RECEBE o favor, e quem PRÁTICA a ação leva に, o contrário da intuição de \"quem faz é o sujeito\". Compare a família: 〜てくれる (a outra pessoa faz por mim, foco nela) vs 〜てもらう (eu recebo, foco em mim) vs 〜てあげる (eu faço por outro). Use 〜てもらう quando há a ideia de que você pediu ou queria o favor; em situação de respeito, prefira 〜ていただく.",
+  "new": "A armadilha para brasileiros é a partícula com o sujeito: o sujeito é quem RECEBE o favor, e quem PRATICA a ação leva に, o contrário da intuição de \"quem faz é o sujeito\". Compare a família: 〜てくれる (a outra pessoa faz por mim, foco nela) vs 〜てもらう (eu recebo, foco em mim) vs 〜てあげる (eu faço por outro). Use 〜てもらう quando há a ideia de que você pediu ou queria o favor; em situação de respeito, prefira 〜ていただく.",
+  "why": "T-7: o verbo 'PRATICA' estava escrito 'PRÁTICA' (substantivo)."
+ },
+ {
+  "key": "gp-28",
+  "action": "text",
+  "field": "explanation",
+  "locale": "pt-BR",
+  "old": "Esta construção expressa o PROPÓSITO de um deslocamento: \"ir (a algum lugar) para fazer X\". É o nosso \"ir comprar\", \"ir comer\", \"ir estudar\". A partícula に aqui marca a finalidade da ida. Também funciona com 来る (vir) e 帰る (voltar) para indicar o objetivo do movimento.",
+  "new": "Esta construção expressa o PROPÓSITO de um deslocamento: \"ir (a algum lugar) para fazer X\". É o nosso \"ir comprar\", \"ir comer\", \"ir estudar\". A partícula に aqui marca a finalidade da ida. Antes de に o verbo vai na raiz da forma ます (a forma ます sem o ます): 食べに行く \"ir comer\", nunca 食べるに行く. Um substantivo que nomeia uma atividade também serve: 買い物に行く \"ir fazer compras\". Também funciona com 来る (vir) e 帰る (voltar) para indicar o objetivo do movimento.",
+  "why": "T-8: quebra de paridade, o aviso ×食べるに行く e o caso do substantivo de atividade só existiam em en."
+ },
+ {
+  "key": "gp-28",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Há duas formações conforme o que vem antes do に. Primeira: raiz da forma ます (a forma masu sem o ます) + に行く → 食べる→食べに行く (ir comer); 見る→見に行く (ir ver). Segunda: substantivo de ação (verbal) + に行く → 買い物に行く (ir fazer compras); 勉強しに行く / 勉強に行く (ir estudar). O lugar de destino costuma vir com へ ou に: 日本へ寿司を食べに行く (ir ao Japão comer sushi).",
+  "new": "Há duas formações conforme o que vem antes do に. Primeira: raiz da forma ます (a forma masu sem o ます) + に行く → 食べる→食べに行く (ir comer); 見る→見に行く (ir ver); 勉強する→勉強しに行く (ir estudar). Segunda: substantivo de ação (verbal) + に行く → 買い物に行く (ir fazer compras); 勉強に行く (ir estudar). O lugar de destino costuma vir com へ ou に: 日本へ寿司を食べに行く (ir ao Japão comer sushi).",
+  "why": "T-8: 勉強しに行く estava listado na segunda formação, mas ele vem da raiz ます de 勉強する, ou seja, é a primeira."
+ },
+ {
+  "key": "gp-28",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "There are two formations depending on what comes before に. First: the masu-form stem (the masu-form without ます) + に行く → 食べる→食べに行く (go to eat); 見る→見に行く (go to see). Second: an action noun (verbal noun) + に行く → 買い物に行く (go shopping); 勉強しに行く / 勉強に行く (go to study). The destination usually comes with へ or に: 日本へ寿司を食べに行く (go to Japan to eat sushi).",
+  "new": "There are two formations depending on what comes before に. First: the masu-form stem (the masu-form without ます) + に行く → 食べる→食べに行く (go to eat); 見る→見に行く (go to see); 勉強する→勉強しに行く (go to study). Second: an action noun (verbal noun) + に行く → 買い物に行く (go shopping); 勉強に行く (go to study). The destination usually comes with へ or に: 日本へ寿司を食べに行く (go to Japan to eat sushi).",
+  "why": "T-8: same misfiling of 勉強しに行く in EN."
+ },
+ {
+  "key": "n3-kanaa",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Informal register, typical of inner monologue or close conversation; don't use it in formal situations. The lengthening (なあ instead of な) increases the reflective tone or one of mild hope. PT trap: the seed formation that suggests だかなあ sounds forced in real speech; with nouns and な-adjectives, the Brazilian should omit the だ in most cases.",
+  "new": "Informal register, typical of inner monologue or close conversation; don't use it in formal situations. The lengthening (なあ instead of な) increases the reflective tone or one of mild hope. PT trap: the construction だかなあ sounds forced in real speech; with nouns and な-adjectives, the Brazilian should omit the だ in most cases.",
+  "why": "L-1: 'the seed formation that suggests' is build-pipeline vocabulary; pt-BR already reads 'a construção'."
+ },
+ {
+  "key": "n3-nado",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "など é neutro e cabe bem na escrita e na fala educada; a versão coloquial e mais informal é なんか (veja o ponto seguinte). Armadilha PT: não traduza por \"etc.\" seco no fim da frase, porque など já carrega a ideia de \"e coisas do gênero\" e costuma vir colado ao último exemplo, não isolado.",
+  "new": "など é neutro e cabe bem na escrita e na fala educada; a versão coloquial e mais informal é なんか. Armadilha PT: não traduza por \"etc.\" seco no fim da frase, porque など já carrega a ideia de \"e coisas do gênero\" e costuma vir colado ao último exemplo, não isolado.",
+  "why": "L-3: 'veja o ponto seguinte' não quer dizer nada num corpus acessado por id; esse cruzamento pertence ao campo related."
+ },
+ {
+  "key": "n3-nado",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "など is neutral and fits well in writing and polite speech; the colloquial, more informal version is なんか (see the next point). PT trap: don't translate it as a dry 'etc.' at the end of the sentence, because など already carries the idea of 'and things of the sort' and usually comes attached to the last example, not standing alone.",
+  "new": "など is neutral and fits well in writing and polite speech; the colloquial, more informal version is なんか. PT trap: don't translate it as a dry 'etc.' at the end of the sentence, because など already carries the idea of 'and things of the sort' and usually comes attached to the last example, not standing alone.",
+  "why": "L-3: same positional cross-reference in EN."
+ },
+ {
+  "key": "te-kudasai",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Verbo na forma て + ください. A formação da forma-て está no ponto 〜ている. Negativo (\"não faça por favor\"): forma negativa 〜ない + で + ください, ex.: 飲まないでください (\"não beba, por favor\"). Versão mais casual: só a forma-te, sem ください (待って = \"espera aí\").",
+  "new": "Verbo na forma て + ください. A formação da forma-て está no ponto da forma て dos verbos. Negativo (\"não faça por favor\"): forma negativa 〜ない + で + ください, ex.: 飲まないでください (\"não beba, por favor\"). Versão mais casual: só a forma-te, sem ください (待って = \"espera aí\").",
+  "why": "L-4: apontava para 'o ponto 〜ている', que não deriva a forma て; quem deriva é o ponto da própria forma て dos verbos."
+ },
+ {
+  "key": "te-kudasai",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Verb in the て-form + ください. The formation of the て-form is in the 〜ている entry. Negative ('please don't do'): negative form 〜ない + で + ください, e.g., 飲まないでください ('please don't drink'). More casual version: just the て-form, without ください (待って = 'wait up').",
+  "new": "Verb in the て-form + ください. The formation of the て-form is in the entry for the て form of verbs. Negative ('please don't do'): negative form 〜ない + で + ください, e.g., 飲まないでください ('please don't drink'). More casual version: just the て-form, without ください (待って = 'wait up').",
+  "why": "L-4: same dangling pointer in EN."
+ },
+ {
+  "key": "n3-ni-kawatte",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Armadilha PT: existe um に変わって parecido na pronúncia que significa \"transformar-se em / mudar para\" (de 変わる, mudar), sentido totalmente diferente de \"em vez de\". Não confunda também com にかわって (substituir alguém) e にかわり no sentido de revezamento. Em contexto de \"em troca de algo material\", prefira ～と引き換えに.",
+  "new": "Armadilha PT: existe um に変わって parecido na pronúncia que significa \"transformar-se em / mudar para\" (de 変わる, mudar), sentido totalmente diferente de \"em vez de\". Já as variantes にかわり e に代わって são este mesmo ponto em registro mais formal, não um ponto novo. Em contexto de \"em troca de algo material\", prefira ～と引き換えに.",
+  "why": "N-1: a nuance mandava não confundir にかわって com にかわって, que é o próprio ponto; agora separa 変わる (transformar-se) de 代わる (substituir) e trata にかわり como variante de registro."
+ },
+ {
+  "key": "n3-ni-kawatte",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "PT trap: there is a similar-sounding に変わって that means 'to turn into / change into' (from 変わる, to change), a meaning totally different from 'instead of'. Also don't confuse it with にかわって (to substitute for someone) and にかわり in the sense of taking turns. In the context of 'in exchange for something material', prefer ～と引き換えに.",
+  "new": "PT trap: there is a similar-sounding に変わって that means 'to turn into / change into' (from 変わる, to change), a meaning totally different from 'instead of'. The variants にかわり and に代わって, on the other hand, are this same point in a more formal register, not a new one. In the context of 'in exchange for something material', prefer ～と引き換えに.",
+  "why": "N-1: EN repeated the self-reference verbatim."
+ },
+ {
+  "key": "gp-31",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Armadilha para brasileiros, o registro: なんで é casual demais para chefes, clientes ou situações formais; nesses casos prefira なぜ／どうして. Não confunda com なに（何）\"o quê\": なんで não é \"com o quê\" no sentido neutro, é \"por quê\". E lembre que, ao contrário do português, a resposta geralmente termina em ～から (\"porque\"), sem repetir a palavra \"por quê\".",
+  "new": "Armadilha para brasileiros, o registro: なんで é casual demais para chefes, clientes ou situações formais; nesses casos prefira なぜ／どうして. Não confunda com なに（何）\"o quê\": na fala casual, なんで é lido como \"por quê\" por padrão, e para \"com o quê\" (instrumento) o japonês prefere 何で (なにで) ou 何を使って, justamente para evitar a ambiguidade. E lembre que, ao contrário do português, a resposta geralmente termina em ～から (\"porque\"), sem repetir a palavra \"por quê\".",
+  "why": "N-2: a nuance negava o que a explanation concede um campo antes (que なんで também pode ser 'com o quê'); agora a regra é de leitura padrão, não de proibição."
+ },
+ {
+  "key": "gp-31",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Trap for Brazilians, the register: なんで is too casual for bosses, clients, or formal situations; in those cases prefer なぜ／どうして. Don't confuse it with なに（何）'what': なんで is not 'with what' in a neutral sense, it's 'why.' And remember that, unlike Portuguese, the answer usually ends in 〜から ('because'), without repeating the word 'why.'",
+  "new": "Trap for Brazilians, the register: なんで is too casual for bosses, clients, or formal situations; in those cases prefer なぜ／どうして. Don't confuse it with なに（何）'what': in casual speech なんで is read as 'why' by default, and for 'with what' (instrument) Japanese prefers 何で (nani de) or 何を使って, precisely to avoid the ambiguity. And remember that, unlike Portuguese, the answer usually ends in 〜から ('because'), without repeating the word 'why.'",
+  "why": "N-2: EN carried the same flat denial."
+ },
+ {
+  "key": "node",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Armadilha para brasileiros: em japonês o motivo vem ANTES do resultado, ao contrário de \"não vou porque chove\". Não use ので no fim de uma frase isolada como justificativa seca; para isso existe から. Lembre do な com substantivo e adjetivo-na (学生なので, nunca 学生だので). ので soa mais polido e neutro que から, ótimo para pedidos e explicações educadas.",
+  "new": "Armadilha para brasileiros: em japonês o motivo vem ANTES do resultado, ao contrário de \"não vou porque chove\". Como resposta seca a um なんで？, não use ので sozinho; aí quem responde é から. Coisa diferente é o 〜ますので educado que fica no ar (お先に失礼します、用事がありますので), em que a segunda metade fica subentendida. Lembre do な com substantivo e adjetivo-na (学生なので, nunca 学生だので). ので soa mais polido e neutro que から, ótimo para pedidos e explicações educadas.",
+  "why": "N-3: a proibição de ので em fim de frase contradizia a própria formation, que registra 行きますので; escopei a regra para a posição de resposta."
+ },
+ {
+  "key": "node",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Trap for Brazilians: in Japanese the reason comes BEFORE the result, unlike 'I won't go because it's raining.' Don't use ので at the end of a standalone sentence as a bare justification; for that there's から. Remember the な with a noun and na-adjective (学生なので, never 学生だので). ので sounds more polite and neutral than から, great for polite requests and explanations.",
+  "new": "Trap for Brazilians: in Japanese the reason comes BEFORE the result, unlike 'I won't go because it's raining.' As a bare answer to a なんで？, don't use ので on its own; that is から's job. A trailing polite 〜ますので is a different matter (お先に失礼します、用事がありますので), where the second half is left understood. Remember the な with a noun and na-adjective (学生なので, never 学生だので). ので sounds more polite and neutral than から, great for polite requests and explanations.",
+  "why": "N-3: EN carried the same over-absolute ban."
+ },
+ {
+  "key": "n3-nanka",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Anexa-se a substantivos (substantivo + なんか) e também a verbos e adjetivos na forma simples (informal): verbo-simples + なんか, adjetivo-い + なんか, adjetivo-な + なんか. Costuma aparecer com も ou outras partículas, como em ピアノなんかも弾ける (\"toca até coisas como piano\").",
+  "new": "Anexa-se a substantivos: substantivo + なんか (私なんか, ピアノなんか). Costuma aparecer com も ou outras partículas, como em ピアノなんかも弾ける (\"toca até coisas como piano\"). Com verbo e adjetivo ele entra na negativa enfática, e não direto na forma simples: verbo na forma て + なんか + negativo (びびってなんかない, \"com medo é que eu não estou\"), adjetivo-い em 〜くなんかない (高くなんかない), adjetivo-な em 〜でなんかない (静かでなんかない). Depois de uma frase inteira quem entra é なんて (行くなんて), nunca ×行くなんか. Na fala existe ainda o なんか solto no começo da frase, como hesitação: なんかおかしくない？ (\"sei lá, não tá estranho?\").",
+  "why": "Corrige a licença 'verbo-simples + なんか, adjetivo-い + なんか, adjetivo-な + なんか', que autoriza ×行くなんか e ×高いなんか (nessa posição quem entra é なんて), e passa a documentar os dois usos que as três frases ligadas ao ponto realmente mostram (X-12): 〜てなんかない e o なんか de hesitação."
+ },
+ {
+  "key": "n3-nanka",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "It attaches to nouns (noun + なんか) and also to verbs and adjectives in plain (informal) form: plain-verb + なんか, い-adjective + なんか, な-adjective + なんか. It usually appears with も or other particles, as in ピアノなんかも弾ける (\"can even play things like the piano\").",
+  "new": "It attaches to nouns: noun + なんか (私なんか, ピアノなんか). It usually appears with も or other particles, as in ピアノなんかも弾ける (\"can even play things like the piano\"). With a verb or an adjective it goes into the emphatic negative rather than straight onto the plain form: verb in the て-form + なんか + negative (びびってなんかない, \"scared is the one thing I am not\"), い-adjective as 〜くなんかない (高くなんかない), な-adjective as 〜でなんかない (静かでなんかない). After a full clause the item is なんて (行くなんて), never 行くなんか. In speech there is also a standalone なんか at the start of a sentence, as hesitation: なんかおかしくない？ (\"I dunno, isn't something off?\").",
+  "why": "Same wrong licensing in EN, plus the two uses its own linked sentences actually show."
+ },
+ {
+  "key": "n3-tsumari",
+  "action": "forms",
+  "old": "[\"～つまり\"]",
+  "new": "[\"つまり\"]",
+  "why": "T-7: o ～ inicial afirma que algo se prende antes de つまり, mas o próprio registro diz que ele abre a segunda frase; structure_pattern já é 'つまり' sem til."
+ },
+ {
+  "key": "demo",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-74951",
+  "why": "X-5: 万人の友は誰の友でもない é o で da cópula + も + ない, exatamente a confusão que a nuance deste registro manda evitar ('não confunda este でも (conjunção) com o で de lugar/meio + も'). Sobram 2 frases ligadas."
+ },
+ {
+  "key": "demo",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-76060",
+  "why": "X-5: 自分でもわかってるくせに é 自分で + も ('até eu mesmo'), o で + も que a nuance exclui, e não a conjunção でも nem o でも de sugestão que a explanation documenta."
+ },
+ {
+  "key": "demo",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-85538",
+  "why": "X-5: 美人でもある é でもある (cópula + も), não a conjunção でも nem 'substantivo + でも' de sugestão. Fica ligada a gram:mo, onde o も aditivo ('também é bonita') é o ponto."
+ },
+ {
+  "key": "mo",
+  "action": "unlink",
+  "sentence": "sent:gen-50ec2f620020",
+  "why": "X-6: 先日はどうも usa o どうも lexical (advérbio fixo), não a partícula も. A frase continua ligada a wa-topic-marker."
+ },
+ {
+  "key": "mo",
+  "action": "unlink",
+  "sentence": "sent:gen-f4bf90e98fad",
+  "why": "X-6: 雨でも行きます é o concessivo 〜ても/でも ('mesmo com chuva'), que tem registro próprio; não é も substituindo は/が nem número + も, as duas formações deste ponto."
+ },
+ {
+  "key": "mo",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-1057336",
+  "why": "X-6: でもなんで？ abre com a conjunção でも ('mas'), que pertence a gram:demo. Continua ligada a de e gp-31."
+ },
+ {
+  "key": "to-kiita",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-1395419",
+  "why": "X-7: a nuance diz que aqui 聞く é 'ouvir', e esta frase é 'perguntar' pela própria tradução ('Perguntei se as flores estavam florescendo'). Sobram 3 frases."
+ },
+ {
+  "key": "to-kiita",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-229897",
+  "why": "X-7: 駅がどこにあるかと聞いた é 聞く no sentido de perguntar ('me perguntou onde ficava a estação'), o sentido que a nuance exclui."
+ },
+ {
+  "key": "to-kiita",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-99954",
+  "why": "X-7: 外国へ行きたいかどうかと聞いた é 'me perguntou', o sentido excluído pela nuance."
+ },
+ {
+  "key": "gp-134",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-205726",
+  "why": "X-8: それで十分だよ é それ ('isso') + で instrumental ('com isso já basta'), não o conector causal que a formation define como abertura da segunda frase. Sobram as 3 frases geradas, todas com o conector."
+ },
+ {
+  "key": "gp-134",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-3488181",
+  "why": "X-8: それでいいよ é それ + で ('assim está bom'), não o conector それで. Continua ligada a yo."
+ },
+ {
+  "key": "gp-134",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-8687007",
+  "why": "X-8: それでいい？ é それ + で, não o conector それで. Continua ligada a de."
+ },
+ {
+  "key": "gp-134",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-8719362",
+  "why": "X-8: それで十分？ é それ + で, não o conector それで. Continua ligada a de."
+ },
+ {
+  "key": "gp-72",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-10774565",
+  "why": "X-10: 今、勉強してるところだよ é 〜ているところ ('no meio da ação'), que a própria formation deste ponto distingue de 〜るところだ e que tem registro próprio (teiru-tokoro). Sobram 2 frases com 〜るところ."
+ },
+ {
+  "key": "gp-72",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-10906796",
+  "why": "X-10: 夕食を待っているところだ é 〜ているところ, o membro vizinho da família, não 〜るところだ."
+ },
+ {
+  "key": "gp-72",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-146207",
+  "why": "X-10: 上着を今着ているところだ é 〜ているところ, não 〜るところだ."
+ },
+ {
+  "key": "te-de",
+  "action": "unlink",
+  "sentence": "sent:gen-790b6cf52284",
+  "why": "X-11: 今日は晴れて暖かい é a forma て do verbo 晴れる, e a formation deste ponto diz literalmente que a escolha entre て e で 'não tem a ver com a forma て dos verbos'. Sobram 4 frases (adjetivo-い, adjetivo-な e substantivo)."
+ },
+ {
+  "key": "gp-5",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-5996",
+  "why": "X-13: あしたは、来なくていいよ é 〜なくていい (dispensa), ponto próprio; não mostra nenhuma flexão do paradigma よ- que este registro existe para ensinar. Sobram 3 frases com いい (いい天気, いい人, かっこいい)."
+ },
+ {
+  "key": "gp-5",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-75458",
+  "why": "X-13: 電話してもいいですか é 〜てもいい (permissão), que tem registro próprio, e não a conjugação de いい."
+ },
+ {
+  "key": "gp-5",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-77189",
+  "why": "X-13: 話してもいいですか é 〜てもいい (permissão), não a conjugação de いい."
+ },
+ {
+  "key": "gp-5",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-79201",
+  "why": "X-13: 遊びに行ってもいい？ é 〜てもいい (permissão), não a conjugação de いい."
+ },
+ {
+  "key": "dewa-nai-ka",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-218082",
+  "why": "X-14: これは本物のダイヤではないかもしれない é ではない + かもしれない ('pode não ser'), negação comum, não a tag retórica de confirmação. Sobram 3 frases."
+ },
+ {
+  "key": "dewa-nai-ka",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-910460",
+  "why": "X-14: 病気で動かれなくなったのではないかな é のではないか (conjectura), outro ponto, não o ではないか de ênfase/confirmação."
+ },
+ {
+  "key": "gp-102",
+  "action": "unlink",
+  "sentence": "sent:gen-a1650baf4ac0",
+  "why": "F-2: この問題が解けない学生はない usa exatamente o はない com substantivo animado que o próprio registro declara agramatical (o japonês pede 学生はいない). Desliguei para não deixar o modelo errado à vista; a frase precisa ser reparada para 〜学生はいない e então pode voltar. Sobram 4 frases, todas com núcleo inanimado."
+ },
+ {
+  "key": "naide",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Basta acrescentar なあ ao fim de uma frase ou palavra: いいなあ (\"ah, que bom... / que inveja...\"), 寒いなあ (\"nossa, que frio\"), 食べたいなあ (\"ah, como eu queria comer...\"), 来ればいいなあ (\"tomara que venha\"). É a partícula な esticada para soar mais emotiva; na escrita aparece como なあ ou só な.",
+  "new": "Pegue a forma negativa curta do verbo (forma ない) e acrescente で: 食べる→食べない→食べないで; 行く→行かない→行かないで; する→しない→しないで; くる→こない→こないで. A estrutura é: Verbo[ない] + で + (oração principal).",
+  "why": "F1 (critical). The pt-BR formation was gram:naa's text pasted in verbatim, so a pt-BR learner was told that 〜ないで is built by appending なあ. Replaced with the pt-BR counterpart of this record's own en formation, which is correct and matches its formation_steps (to-nai-stem + いで). No matching en edit: en was already right and is exactly what the new pt-BR mirrors."
+ },
+ {
+  "key": "naide",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Cuidado: existe também 〜なくて, que é a negativa de causa/motivo (寒くて = porque estava frio), enquanto 〜ないで indica modo/circunstância (\"sem fazer\"). Quem fala português tende a traduzir tudo como \"não... e\", mas em japonês a escolha entre ないで e なくて muda o sentido. Use ないで para \"sem fazer X\" e para acompanhar uma ação concreta. É uma forma neutra que vive dentro da frase; quem decide o nível de polidez é o verbo final.",
+  "new": "Cuidado: existe também 〜なくて, que é a negativa de causa/motivo (意味が分からなくて困った = \"não entendi e fiquei perdido\"), enquanto 〜ないで indica modo/circunstância (\"sem fazer\"). Quem fala português tende a traduzir tudo como \"não... e\", mas em japonês a escolha entre ないで e なくて muda o sentido. Use ないで para \"sem fazer X\" e para acompanhar uma ação concreta. É uma forma neutra que vive dentro da frase; quem decide o nível de polidez é o verbo final.",
+  "why": "F18. 寒くて is the plain て-form of the い-adjective 寒い, not a negative of anything, so the one paragraph whose job is to separate ないで from なくて was illustrating なくて with a form that is not なくて, teaching the exact confusion it exists to prevent. Swapped for a real 〜なくて."
+ },
+ {
+  "key": "naide",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Note: there's also 〜なくて, the negative of cause/reason (寒くて = because it was cold), while 〜ないで indicates manner/circumstance ('without doing'). Portuguese speakers tend to translate everything as 'not... and,' but in Japanese the choice between ないで and なくて changes the meaning. Use ないで for 'without doing X' and to accompany a concrete action. It's a neutral form that lives inside the sentence; the final verb decides the politeness level.",
+  "new": "Note: there's also 〜なくて, the negative of cause/reason (意味が分からなくて困った = I didn't understand and got lost), while 〜ないで indicates manner/circumstance ('without doing'). Portuguese speakers tend to translate everything as 'not... and,' but in Japanese the choice between ないで and なくて changes the meaning. Use ないで for 'without doing X' and to accompany a concrete action. It's a neutral form that lives inside the sentence; the final verb decides the politeness level.",
+  "why": "F18. en carried the same non-negative example (寒くて); mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "n3-koto-wa-ga",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Repete-se o predicado em volta de ことは: verbo casual + ことは + verbo + が; adjetivo-い + ことは + adjetivo-い + が; adjetivo-な + な + ことは + adjetivo-な + だが; substantivo + ことは + substantivo + だが.",
+  "new": "Repete-se o predicado em volta de ことは: verbo casual + ことは + verbo + が; adjetivo-い + ことは + adjetivo-い + が; adjetivo-な + な + ことは + adjetivo-な + だが; substantivo + であることは + substantivo + だが (学生であることは学生だが; na fala, o mais comum é a paráfrase 学生は学生だが).",
+  "why": "F2. A noun cannot sit directly before こと here, so the old noun line licensed ×学生ことは学生だが. Added である plus the colloquial paraphrase. The record's own steps_unavailable already diagnosed this exact defect; only the learner-facing field was left broken, and the record has zero example sentences to contradict it. Verb / い-adj / な-adj lines were correct and are untouched."
+ },
+ {
+  "key": "n3-koto-wa-ga",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "The predicate is repeated around ことは: casual verb + ことは + verb + が; い-adjective + ことは + い-adjective + が; な-adjective + な + ことは + な-adjective + だが; noun + ことは + noun + だが.",
+  "new": "The predicate is repeated around ことは: casual verb + ことは + verb + が; い-adjective + ことは + い-adjective + が; な-adjective + な + ことは + な-adjective + だが; noun + であることは + noun + だが (学生であることは学生だが; in speech the usual paraphrase is 学生は学生だが).",
+  "why": "F2. Same broken noun line in en; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "ta-bakari",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Verbo na forma た (passado simples) + ばかり (+ だ/です ou + な antes de substantivo). Ex.: 食べた + ばかり = 食べたばかり; 買ったばかりの車 (carro que acabei de comprar; note o の de ligação: 〜たばかりの + substantivo).",
+  "new": "Verbo na forma た (passado simples) + ばかり. Ex.: 食べた + ばかり = 食べたばかり. Para fechar a frase, acrescente だ/です: 食べたばかりです. Para ligar a um substantivo, o elo é sempre の, nunca な: 買ったばかりの車 (\"o carro que acabei de comprar\"), 生まれたばかりの赤ちゃん (\"o bebê recém-nascido\").",
+  "why": "F17. ばかり is a formal noun here, so the attributive linker is の and only の (×買ったばかりな車 is ungrammatical). The old line said '+ な antes de substantivo' and then contradicted itself nine words later with the の example, so a learner who stops at the rule produces the wrong form. formation_steps were already correct and are untouched."
+ },
+ {
+  "key": "ta-bakari",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Verb in た-form (plain past) + ばかり (+ だ/です or + な before a noun). E.g.: 食べた + ばかり = 食べたばかり; 買ったばかりの車 (a car I just bought; note the linking の: 〜たばかりの + noun).",
+  "new": "Verb in た-form (plain past) + ばかり. E.g.: 食べた + ばかり = 食べたばかり. To close the sentence, add だ/です: 食べたばかりです. To link it to a noun the connector is always の, never な: 買ったばかりの車 (\"the car I just bought\"), 生まれたばかりの赤ちゃん (\"a newborn baby\").",
+  "why": "F17. en carried the same self-contradicting な/の pair; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "gp-61",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Usados no início de uma nova frase (です/だ + が como conector) ou anexados ao fim de uma oração: [oração 1]+ですが、[oração 2]. Versões: です/だ + が. Equivalem em sentido a でも e しかし, mas o が gruda na oração anterior. Forma neutra/coloquial: 〜けど / 〜けれども.",
+  "new": "Usados no início de uma nova frase (です/だ + が como conector) ou anexados ao fim de uma oração: [oração 1]+ですが、[oração 2]. Atenção ao que vem antes do が: だ só depois de substantivo ou adjetivo-な (学生だが, 静かだが); com verbo e adjetivo-い o が vem direto (行くが, 高いが), ou use ますが / ですが no registro polido. Equivalem em sentido a でも e しかし, mas o が gruda na oração anterior. Forma neutra/coloquial: 〜けど / 〜けれども.",
+  "why": "F9. 'Versões: です/だ + が', read literally, licenses ×行くだが and ×高いだが: だ attaches to nouns and な-adjectives only. Stated the part-of-speech split that the record's own steps_unavailable already spells out but that the learner-facing field never carried."
+ },
+ {
+  "key": "gp-61",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Used at the beginning of a new sentence (です/だ + が as a connector) or attached to the end of a clause: [clause 1]+ですが、[clause 2]. Versions: です/だ + が. They are equivalent in meaning to でも and しかし, but が attaches to the preceding clause. Neutral/colloquial form: 〜けど / 〜けれども.",
+  "new": "Used at the beginning of a new sentence (です/だ + が as a connector) or attached to the end of a clause: [clause 1]+ですが、[clause 2]. Watch what comes before が: だ only after a noun or な-adjective (学生だが, 静かだが); with a verb or い-adjective, が attaches directly (行くが, 高いが), or use ますが / ですが in the polite register. They are equivalent in meaning to でも and しかし, but が attaches to the preceding clause. Neutral/colloquial form: 〜けど / 〜けれども.",
+  "why": "F9. Same under-specified rule in en; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "gp-6",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Nem todo verbo terminado em る é る-verbo. Vários terminam em -aru/-uru/-oru e são う-verbos (ある, 分かる, 帰る, 走る, este último uma exceção \"disfarçada\"). A regra do som -i/-e antes de る ajuda, mas há exceções que você aprende com o tempo. A boa notícia: estes verbos têm conjugação totalmente regular, sem as mudanças sonoras dos う-verbos (cuja forma て/た sofre onbin; a dos る-verbos não).",
+  "new": "Nem todo verbo terminado em る é る-verbo. Os que terminam em -aru/-uru/-oru são sempre う-verbos: ある, 分かる, 作る, 乗る. Existem ainda as \"exceções disfarçadas\", que terminam em -iru/-eru mas conjugam como う-verbos: 帰る, 走る, 入る, 切る, 知る. A regra do som -i/-e antes de る ajuda, mas essas exceções você aprende uma a uma. A boa notícia: os る-verbos de verdade têm conjugação totalmente regular, sem as mudanças sonoras dos う-verbos (cuja forma て/た sofre onbin; a dos る-verbos não).",
+  "why": "F3. 帰る is kaeru (-eru) and 走る is hashiru (-iru), so neither ends in -aru/-uru/-oru; both were filed as examples of a rule they contradict, and 帰る was listed unqualified. Split the one list into the two real groups so the -i/-e heuristic this very record teaches is not mis-applied to 帰る (which would yield ×帰ない / ×帰て). Also disambiguated 'estes verbos' in the closing line, which now follows a う-verb list."
+ },
+ {
+  "key": "gp-6",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Not every verb ending in る is a る-verb. Several end in -aru/-uru/-oru and are う-verbs (ある, 分かる, 帰る, 走る, the last a 'disguised' exception). The rule about an -i/-e sound before る helps, but there are exceptions you learn over time. The good news: these verbs have fully regular conjugation, without the sound changes of う-verbs (whose て/た form undergoes onbin; that of る-verbs doesn't).",
+  "new": "Not every verb ending in る is a る-verb. The ones ending in -aru/-uru/-oru are always う-verbs: ある, 分かる, 作る, 乗る. There are also the 'disguised exceptions', which end in -iru/-eru but conjugate as う-verbs: 帰る, 走る, 入る, 切る, 知る. The rule about an -i/-e sound before る helps, but you learn those exceptions one at a time. The good news: the true る-verbs have fully regular conjugation, without the sound changes of う-verbs (whose て/た form undergoes onbin; that of る-verbs doesn't).",
+  "why": "F3. en listed the same two counterexamples under the -aru/-uru/-oru rule; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "itsumo",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Pegadinha de ordem das palavras: advérbios de frequência como いつも vão ANTES do verbo, nunca no fim da frase como às vezes fazemos em português (\"eu vou sempre\"). Diferente do português, いつも não precisa de negação para significar \"nunca\": quem dá esse sentido é o verbo no negativo; sozinho, いつも é positivo. Para frequências menores, compare com よく (\"frequentemente\"), ときどき (\"às vezes\"), たまに (\"raramente\").",
+  "new": "Pegadinha de ordem das palavras: advérbios de frequência como いつも vão ANTES do verbo, nunca no fim da frase como às vezes fazemos em português (\"eu vou sempre\"). Sozinho, いつも é sempre positivo (\"sempre\"). O sentido de \"nunca\" só aparece quando o VERBO está no negativo: いつも来ない (\"nunca vem\"). Em português temos um advérbio próprio para isso (\"nunca\"); em japonês quem nega é o verbo, e いつも só marca a frequência. Para frequências menores, compare com よく (\"frequentemente\"), ときどき (\"às vezes\"), たまに (\"raramente\").",
+  "why": "F4. The sentence said いつも needs no negation to mean 'nunca' and then said the negative verb is precisely what produces that sense; both cannot hold. The contrast with Portuguese was also drawn backwards, since pt-BR is the language that has a dedicated negative adverb. The record's own formation already states the rule correctly."
+ },
+ {
+  "key": "itsumo",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Word-order trap: frequency adverbs like いつも go BEFORE the verb, never at the end of the sentence as we sometimes do in Portuguese ('eu vou sempre'). Unlike Portuguese, いつも doesn't need negation to mean 'never': that sense comes from the verb being negative; on its own, いつも is positive. For lower frequencies, compare よく ('often'), ときどき ('sometimes'), たまに ('rarely').",
+  "new": "Word-order trap: frequency adverbs like いつも go BEFORE the verb, never at the end of the sentence as we sometimes do in Portuguese ('eu vou sempre'). On its own, いつも is always positive ('always'). The 'never' sense only appears when the VERB is negative: いつも来ない ('never comes'). Portuguese has a dedicated adverb for that ('nunca'); in Japanese it is the verb that negates, and いつも only marks frequency. For lower frequencies, compare よく ('often'), ときどき ('sometimes'), たまに ('rarely').",
+  "why": "F4. en carried the same internal contradiction and the same backwards contrast; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "n3-kirenai",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "É a forma negativa de ～切る (fazer algo completamente/até o fim), então 切れない nega justamente o 'concluir por completo', não a ação em si. Armadilha PT: não traduza por um simples 'não consigo ler'; o ponto é 'não consigo terminar de ler / não dou conta de tudo', a ideia de esgotar a tarefa.",
+  "new": "É a negativa do potencial de ～切る (fazer algo completamente/até o fim): 切る → 切れる ('conseguir concluir') → 切れない. Por isso o que se nega é justamente o 'concluir por completo', não a ação em si. Armadilha PT: não traduza por um simples 'não consigo ler'; o ponto é 'não consigo terminar de ler / não dou conta de tudo', a ideia de esgotar a tarefa.",
+  "why": "F19. The negative of 切る is 切らない; 切れない is the negative of the potential 切れる, which is exactly where the 'cannot finish' meaning comes from. The old wording was wrong morphologically and hid the one step that explains the meaning. formation is unaffected and untouched."
+ },
+ {
+  "key": "n3-kirenai",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "It is the negative form of ～切る (to do something completely/to the end), so 切れない negates precisely the 'finishing completely', not the action itself. PT trap: don't translate it as a simple 'I can't read'; the point is 'I can't finish reading / I can't get through it all', the idea of exhausting the task.",
+  "new": "It is the negative of the potential of ～切る (to do something completely/to the end): 切る → 切れる ('to manage to finish') → 切れない. That is why what gets negated is precisely the 'finishing completely', not the action itself. PT trap: don't translate it as a simple 'I can't read'; the point is 'I can't finish reading / I can't get through it all', the idea of exhausting the task.",
+  "why": "F19. en carried the same wrong morphology; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "o-go",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Não saia colocando お/ご em tudo: muitas palavras estrangeiras (katakana) e termos técnicos não levam prefixo, e exagerar soa afetado ou irônico. Armadilha para brasileiros: não use お/ご em coisas que são só suas, de forma humilde (não diga お私...). Algumas palavras já \"colaram\" com o お e quase sempre aparecem com ele (ご飯（はん）, お茶（ちゃ）, お金（かね）). Na dúvida, お vai com kun'yomi e ご com on'yomi.",
+  "new": "Não saia colocando お/ご em tudo: muitas palavras estrangeiras (katakana) e termos técnicos não levam prefixo, e exagerar soa afetado ou irônico. Armadilha para brasileiros: não use お/ご em coisas que são só suas, de forma humilde (não diga お私...). Algumas palavras já \"colaram\" com o prefixo e quase sempre aparecem com ele (ご飯（はん）, お茶（ちゃ）, お金（かね）). Na dúvida, お vai com kun'yomi e ご com on'yomi.",
+  "why": "F15. ご飯 takes ご, not お, and it was the first item in a list introduced as words fused 'com o お', inside the very record whose job is teaching the お/ご split. Saying 'com o prefixo' keeps the (correct) list intact and stops the record contradicting itself."
+ },
+ {
+  "key": "o-go",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Don't go putting お/ご on everything: many loanwords (katakana) and technical terms take no prefix, and overdoing it sounds affected or ironic. Trap for Brazilians: don't use お/ご humbly on things that are only yours (don't say お私...). Some words have 'fused' with the お and almost always appear with it (ご飯（はん）, お茶（ちゃ）, お金（かね）). When in doubt, お goes with kun'yomi and ご with on'yomi.",
+  "new": "Don't go putting お/ご on everything: many loanwords (katakana) and technical terms take no prefix, and overdoing it sounds affected or ironic. Trap for Brazilians: don't use お/ご humbly on things that are only yours (don't say お私...). Some words have 'fused' with the prefix and almost always appear with it (ご飯（はん）, お茶（ちゃ）, お金（かね）). When in doubt, お goes with kun'yomi and ご with on'yomi.",
+  "why": "F15. en attributed ご飯 to the お prefix in the same way; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "n3-to-ittemo",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Tipico para suavizar: 'falei que cozinho, mas so faço o básico'. Armadilha PT: não e um 'embora' qualquer; ele especificamente questiona a força da palavra usada antes. Diferente de ところが (gid 427), que apresenta um resultado inesperado entre dois fatos, e não um ajuste do que foi dito.",
+  "new": "Típico para suavizar: 'falei que cozinho, mas só faço o básico'. Armadilha PT: não é um 'embora' qualquer; ele especificamente questiona a força da palavra usada antes. Diferente de ところが, que apresenta um resultado inesperado entre dois fatos, e não um ajuste do que foi dito.",
+  "why": "F10 + F11. Dropped the raw internal row id ('gid 427') that a learner would read on the nuance card, and restored the three missing diacritics named by the report (Tipico / so / e). The cross-reference now reads as plain prose; populating `related` is an owner decision and is left alone."
+ },
+ {
+  "key": "n3-to-ittemo",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Typical for softening: 'I said I cook, but I only do the basics'. PT trap: it is not just any 'although'; it specifically questions the strength of the word used before. Different from ところが (gid 427), which presents an unexpected result between two facts, and not an adjustment of what was said.",
+  "new": "Typical for softening: 'I said I cook, but I only do the basics'. PT trap: it is not just any 'although'; it specifically questions the strength of the word used before. Different from ところが, which presents an unexpected result between two facts, and not an adjustment of what was said.",
+  "why": "F10. Same raw internal row id in en; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "n3-to-iu-no-wa",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Tom didatico e expositivo, otimo para dar definições em sala de aula ou em textos. Armadilha PT: o brasileiro tende a traduzir literalmente por 'aquilo de que falamos e...'; prefira o natural 'ou seja' ou 'quer dizer'. Diferente de というの (gid 421), que justifica um motivo em vez de definir.",
+  "new": "Tom didático e expositivo, ótimo para dar definições em sala de aula ou em textos. Armadilha PT: o brasileiro tende a traduzir literalmente por 'aquilo de que falamos é...'; prefira o natural 'ou seja' ou 'quer dizer'. Diferente de というの, que justifica um motivo em vez de definir.",
+  "why": "F10 + F11. Dropped the raw internal row id ('gid 421') and restored the missing diacritics (didatico / otimo / falamos e)."
+ },
+ {
+  "key": "n3-to-iu-no-wa",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Didactic and expository tone, great for giving definitions in the classroom or in texts. PT trap: Brazilians tend to translate it literally as 'that of which we spoke is...'; prefer the natural 'that is' or 'in other words'. Different from というの (gid 421), which justifies a reason rather than defining.",
+  "new": "Didactic and expository tone, great for giving definitions in the classroom or in texts. PT trap: Brazilians tend to translate it literally as 'that of which we spoke is...'; prefer the natural 'that is' or 'in other words'. Different from というの, which justifies a reason rather than defining.",
+  "why": "F10. Same raw internal row id in en; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "n3-to-iu-no-wa",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Palavra, expressão ou frase + というのは + a definição ou explicação. Quando se define um substantivo simples, e comum 'Substantivo + とは', uma forma mais condensada do mesmo padrão.",
+  "new": "Palavra, expressão ou frase + というのは + a definição ou explicação. Quando se define um substantivo simples, é comum 'Substantivo + とは', uma forma mais condensada do mesmo padrão.",
+  "why": "F11. Missing diacritic in learner-facing pt-BR ('e comum' for 'é comum'). en carries no counterpart defect, so no en edit."
+ },
+ {
+  "key": "nakereba-naranai",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Igual à anterior: forma negativa 〜ない do verbo → troca 〜ない por 〜なければ + ならない. Ex.: 払う → 払わない → 払わなければならない (tenho que pagar); 寝る → 寝ない → 寝なければならない; 来る → 来ない → 来なければならない. Forma polida: 〜なければなりません. Contração casual: 〜なきゃ(ならない). Existe também a variante mais formal/escrita 〜ねばならない.",
+  "new": "Igual a 〜なければいけない: forma negativa 〜ない do verbo → troca 〜ない por 〜なければ + ならない. Ex.: 払う → 払わない → 払わなければならない (tenho que pagar); 寝る → 寝ない → 寝なければならない; 来る → 来ない → 来なければならない. Forma polida: 〜なければなりません. Contração casual: 〜なきゃ(ならない). Existe também a variante mais formal/escrita 〜ねばならない.",
+  "why": "F14. 'Igual à anterior' points at nothing: records are addressed by stable id and render standalone. Named the target pattern (〜なければいけない, the sibling record gram:nakereba-ikenai) directly in the prose; adding it to `related` is an owner decision and is left alone."
+ },
+ {
+  "key": "nakereba-naranai",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Same as the previous one: plain negative form 〜ない of the verb → replace 〜ない with 〜なければ + ならない. E.g.: 払う → 払わない → 払わなければならない (I have to pay); 寝る → 寝ない → 寝なければならない; 来る → 来ない → 来なければならない. Polite form: 〜なければなりません. Casual contraction: 〜なきゃ(ならない). There is also the more formal/written variant 〜ねばならない.",
+  "new": "Same as 〜なければいけない: plain negative form 〜ない of the verb → replace 〜ない with 〜なければ + ならない. E.g.: 払う → 払わない → 払わなければならない (I have to pay); 寝る → 寝ない → 寝なければならない; 来る → 来ない → 来なければならない. Polite form: 〜なければなりません. Casual contraction: 〜なきゃ(ならない). There is also the more formal/written variant 〜ねばならない.",
+  "why": "F14. Same dangling 'the previous one' in en; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "gp-54",
+  "action": "text",
+  "field": "explanation",
+  "locale": "pt-BR",
+  "old": "Diz que alguém é bom, habilidoso ou tem talento para uma atividade. じょうず (上手) significa \"habilidoso, bom em algo\". Como em へた, o の nominaliza o verbo (transforma a ação em \"coisa\") e が marca a atividade em que a pessoa se destaca. Ex.: 彼は歌を歌うのがじょうずです = \"Ele canta bem / é bom em cantar\".",
+  "new": "Diz que alguém é bom, habilidoso ou tem talento para uma atividade. じょうず (上手) significa \"habilidoso, bom em algo\". O の nominaliza o verbo (transforma a ação em \"coisa\") e が marca a atividade em que a pessoa se destaca. A mesma estrutura vale para o oposto, へた (下手, \"ruim em algo\"). Ex.: 彼は歌を歌うのがじょうずです = \"Ele canta bem / é bom em cantar\".",
+  "why": "F14. 'Como em へた' opened the explanation by leaning on a sibling point the learner may not have met, with no link to follow. Made the record self-contained and moved へた to a closing aside that says what it is."
+ },
+ {
+  "key": "gp-54",
+  "action": "text",
+  "field": "explanation",
+  "locale": "en",
+  "old": "Says that someone is good, skilled, or talented at an activity. じょうず (上手) means \"skilled, good at something\". As in へた, the の nominalizes the verb (turns the action into a \"thing\") and が marks the activity the person excels at. E.g.: 彼は歌を歌うのがじょうずです = \"He sings well / is good at singing\".",
+  "new": "Says that someone is good, skilled, or talented at an activity. じょうず (上手) means \"skilled, good at something\". The の nominalizes the verb (turns the action into a \"thing\") and が marks the activity the person excels at. The same structure works for its opposite, へた (下手, \"bad at something\"). E.g.: 彼は歌を歌うのがじょうずです = \"He sings well / is good at singing\".",
+  "why": "F14. Same forward reference in en; mirrors the pt-BR fix in step."
+ },
+ {
+  "key": "n3-desu-kara",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Frase A (terminada de forma educada, com です ou ます) + から, seguida da Frase B. Com adjetivos い e na/substantivos no estilo cortes: ...です + から. Ex.: 寒いですから (porque esta frio).",
+  "new": "Frase A (terminada de forma educada, com です ou ます) + から, seguida da Frase B. Com adjetivos い e na/substantivos no estilo cortês: ...です + から. Ex.: 寒いですから (porque está frio).",
+  "why": "F11. Missing diacritics in learner-facing pt-BR: 'esta frio' for 'está frio' (named by the report) and 'cortes' for 'cortês' in the same field. en carries no counterpart defect, so no en edit."
+ },
+ {
+  "key": "n3-ni-kurabete",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro neutro a levemente formal; na fala bem casual costuma-se preferir より. Armadilha PT: o ponto de referência (o 'do que' da comparação) e quem leva に比べて, ordem inversa a do português, onde a referência costuma vir depois ('mais frio do que o verão'). Cuidado: 夏に比べて冬は寒い literalmente põe o verão como base e diz que o inverno e frio em relação a ele.",
+  "new": "Registro neutro a levemente formal; na fala bem casual costuma-se preferir より. Armadilha PT: o ponto de referência (o 'do que' da comparação) é quem leva に比べて, ordem inversa à do português, onde a referência costuma vir depois ('mais frio do que o verão'). Cuidado: 夏に比べて冬は寒い literalmente põe o verão como base e diz que o inverno é frio em relação a ele.",
+  "why": "F11. Three missing diacritics in learner-facing pt-BR ('e quem leva', 'inversa a do português', 'o inverno e frio'). en carries no counterpart defect, so no en edit."
+ },
+ {
+  "key": "n3-ni-taishite",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Não confunda com に対する, que e a forma usada para modificar um substantivo logo a seguir (ex.: 質問に対する答え, 'a resposta a pergunta'). Armadilha PT: para o sentido de 'sobre/a respeito de' um tema, prefira に関して ou について; に対して carrega a ideia de direcionar algo a um alvo ou de confrontar/contrastar.",
+  "new": "Não confunda com に対する, que é a forma usada para modificar um substantivo logo a seguir (ex.: 質問に対する答え, 'a resposta à pergunta'). Armadilha PT: para o sentido de 'sobre/a respeito de' um tema, prefira に関して ou について; に対して carrega a ideia de direcionar algo a um alvo ou de confrontar/contrastar.",
+  "why": "F11. Two missing diacritics in learner-facing pt-BR ('que e a forma', 'a resposta a pergunta'). en carries no counterpart defect, so no en edit."
+ },
+ {
+  "key": "n3-ni-yotte",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Liga-se basicamente a substantivo: Substantivo + によって. Em registro mais formal ou escrito, a partícula muda para により, e a forma adjetiva (que modifica substantivo) e による.",
+  "new": "Liga-se basicamente a substantivo: Substantivo + によって. Em registro mais formal ou escrito, a partícula muda para により, e a forma adjetiva (que modifica substantivo) é による.",
+  "why": "F11. Missing diacritic in learner-facing pt-BR ('e による' for 'é による'). en carries no counterpart defect, so no en edit."
+ },
+ {
+  "key": "n3-ni-yotte",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro formal ou escrito, comum em noticias, textos academicos e relatorios; na fala cotidiana soa empolado. Armadilha PT: o português usa um único 'por' para agente e causa, mas em japonês によって cobre vários sentidos de uma vez (agente da passiva, meio e variação conforme fator), então identifique pelo contexto qual leitura cabe.",
+  "new": "Registro formal ou escrito, comum em notícias, textos acadêmicos e relatórios; na fala cotidiana soa empolado. Armadilha PT: o português usa um único 'por' para agente e causa, mas em japonês によって cobre vários sentidos de uma vez (agente da passiva, meio e variação conforme fator), então identifique pelo contexto qual leitura cabe.",
+  "why": "F11. Three missing diacritics in learner-facing pt-BR (noticias / academicos / relatorios). en carries no counterpart defect, so no en edit."
+ },
+ {
+  "key": "n3-toku",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "So para fala casual e mensagens informais; em situação formal use ておく por extenso. Armadilha PT: quando a forma -te termina em で (verbos como 読む → 読んで), a contração vira ど (読んどく), não とく; preste atenção a forma -te do verbo de origem. Soa muito natural entre amigos.",
+  "new": "Só para fala casual e mensagens informais; em situação formal use ておく por extenso. Armadilha PT: quando a forma -te termina em で (verbos como 読む → 読んで), a contração vira ど (読んどく), não とく; preste atenção à forma -te do verbo de origem. Soa muito natural entre amigos.",
+  "why": "F11. Two missing diacritics in learner-facing pt-BR ('So para' for 'Só para', 'atenção a forma' for 'atenção à forma'). en carries no counterpart defect, so no en edit."
+ },
+ {
+  "key": "n3-ba-noni",
+  "action": "text",
+  "field": "explanation",
+  "locale": "pt-BR",
+  "old": "Expressa arrependimento, frustração ou um desejo contrário ao que de fato aconteceu. A primeira parte (ば) põe a condição que não se cumpriu e o のに final carrega o tom de lamento: 'se ao menos tivesse..., então...'. Usa-se quando o falante olha para trás e lamenta o resultado real.",
+  "new": "Expressa arrependimento, frustração ou um desejo contrário à realidade. A primeira parte (ば) põe a condição que não se cumpriu e o のに final carrega o tom de lamento: 'se ao menos tivesse..., então...'. Olhando para trás, lamenta o resultado real (ここにいればよかったのに = 'você devia ter ficado aqui'); olhando para a frente, vira desejo com 〜ばいいのに (明日、雨が降ればいいのに = 'tomara que chova amanhã').",
+  "why": "F5. The explanation scoped the point to regret over what already happened, but the record's remaining sentences include the forward-looking 〜ばいいのに wish, a standard and very common use of the same frame. The report offered 'widen the explanation or retag'; widening is the better fix here, since retagging 明日、雨が降ればいいのに would strip a canonical example and leave the record with one sentence."
+ },
+ {
+  "key": "n3-ba-noni",
+  "action": "text",
+  "field": "explanation",
+  "locale": "en",
+  "old": "Expresses regret, frustration, or a wish contrary to what actually happened. The first part (ば) sets the condition that was not met, and the final のに carries the tone of lament: 'if only I had..., then...'. It is used when the speaker looks back and laments the actual result.",
+  "new": "Expresses regret, frustration, or a wish contrary to reality. The first part (ば) sets the condition that was not met, and the final のに carries the tone of lament: 'if only I had..., then...'. Looking back, it laments the actual result (ここにいればよかったのに = 'you should have stayed here'); looking forward, it becomes a wish with 〜ばいいのに (明日、雨が降ればいいのに = 'I hope it rains tomorrow').",
+  "why": "F5. Mirrors the pt-BR widening in step."
+ },
+ {
+  "key": "gp-13",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-3576174",
+  "why": "F5. 「さあ、ピザがいる人ー！」 uses 要る ('to need'), not the existence verb, and ピザ is inanimate, which this record states is impossible with いる. The record's own steps_unavailable names this exact homophone trap. 5 links → 4 remaining, so the record is not emptied."
+ },
+ {
+  "key": "ni-iku",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-162318",
+  "why": "F5. 「私は、バスで学校に行く。」 is destination に + 行く (plain noun + に), not the masu-stem purpose construction; the record explicitly restricts this に to purpose with movement verbs. 5 links → 2 remaining after all three ni-iku unlinks (友だちに会いに行く and ハイキングに行く stay)."
+ },
+ {
+  "key": "ni-iku",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-182675",
+  "why": "F5. 「休暇はどこに行くの？」 is destination に + 行く, not the purpose construction this record teaches."
+ },
+ {
+  "key": "ni-iku",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-187532",
+  "why": "F5. 「何駅に行くのですか。」 is destination に + 行く with a plain noun, the very shape the record's nuance rules out ('é a raiz-ます, NUNCA a forma de dicionário' / purpose only)."
+ },
+ {
+  "key": "koto-ga-aru",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-2197773",
+  "why": "F5. 「何か言いたいことがあるの？」 is the ordinary noun こと ('things you want to say') plus がある, neither the experiential 〜たことがある nor the occasional 〜ることがある. 7 links → 5 remaining."
+ },
+ {
+  "key": "koto-ga-aru",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-11960481",
+  "why": "F5. 「やることがあるんだ。」 is the ordinary noun こと ('things to do') plus がある, not either sense this record teaches."
+ },
+ {
+  "key": "n3-koto",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-5324",
+  "why": "F5. 「彼のことを知らない。」 is the 〜のこと 'about (a person)' idiom; no verb is nominalized, which is the entire point of the record. 5 links → 2 remaining after the three n3-koto unlinks."
+ },
+ {
+  "key": "n3-koto",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-5008",
+  "why": "F5. 「いつか私のことは忘れちゃうわ。」 is the same 〜のこと idiom, not the nominalizer."
+ },
+ {
+  "key": "n3-ba-noni",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-4812",
+  "why": "F5. 「日本へ行けたらいいのに。」 is built on たら, not ば, so it does not instantiate this record's ～ば～のに pattern at all. 3 links → 2 remaining."
+ },
+ {
+  "key": "deshou",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-5347",
+  "why": "F5. 「あなたって、なんてきれいなんでしょう！」 is the exclamatory なんて〜でしょう, a third use this record does not cover (it lists only probability and confirmation-seeking), and it was example #1 in the set. 6 links → 5 remaining."
+ },
+ {
+  "key": "toka-toka",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "[substantivo / verbo / frase] + とか + [substantivo / verbo / frase] + とか. Pode aparecer com só um item (寿司とか食べたい, \"queria comer sushi e tal\") ou com vários encadeados. Muitas vezes o último とか é seguido de um verbo ou de な que resume a lista.",
+  "new": "[substantivo / verbo / frase] + とか + [substantivo / verbo / frase] + とか. Pode aparecer com só um item (寿司とか食べたい, \"queria comer sushi e tal\") ou com vários encadeados. Muitas vezes o último とか é seguido de する (ou de outro verbo) que fecha a lista: 本を読むとか映画を見るとかする. Antes de um substantivo, entra の: りんごとかバナナとかの果物.",
+  "why": "F-01. とか is never followed by な; the rule as written licenses the ungrammatical ×りんごとかバナナとかな果物. The two real continuations are する/another verb closing the list (which is exactly what the record's own carrier sent:gen-09f7ea57423c 週末は本を読むとか映画を見るとかする does) and の before a modified noun. な was a typo for の."
+ },
+ {
+  "key": "toka-toka",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "[noun / verb / clause] + とか + [noun / verb / clause] + とか. It can appear with just one item (寿司とか食べたい, \"I'd like to eat sushi and the like\") or with several chained together. Often the last とか is followed by a verb or by な that sums up the list.",
+  "new": "[noun / verb / clause] + とか + [noun / verb / clause] + とか. It can appear with just one item (寿司とか食べたい, \"I'd like to eat sushi and the like\") or with several chained together. Often the last とか is followed by する (or another verb) that closes the list: 本を読むとか映画を見るとかする. Before a noun, の comes in: りんごとかバナナとかの果物.",
+  "why": "F-01, en counterpart of the pt-BR formation fix; same wrong な rule."
+ },
+ {
+  "key": "sasuga",
+  "action": "text",
+  "field": "explanation",
+  "locale": "pt-BR",
+  "old": "さすが exprime admiração reconhecendo que algo ou alguém correspondeu à boa reputação ou à expectativa que se tinha. Equivale a 'como era de se esperar (de você)', 'não é à toa', 'é impressionante mesmo'. Ex.: さすが田中さん、すぐに問題を解決した (como era de se esperar do Tanaka, resolveu o problema na hora). Sempre tem tom positivo e elogioso.",
+  "new": "さすが exprime admiração reconhecendo que algo ou alguém correspondeu à boa reputação ou à expectativa que se tinha. Equivale a 'como era de se esperar (de você)', 'não é à toa', 'é impressionante mesmo'. Ex.: さすが田中さん、すぐに問題を解決した (como era de se esperar do Tanaka, resolveu o problema na hora). Na forma さすが (+ substantivo/nome) o tom é sempre elogioso; já さすがに tem um segundo uso de ressalva ('convenhamos', 'mesmo assim'), que não é elogio.",
+  "why": "F-03. \"Sempre tem tom positivo e elogioso\" is contradicted three times inside the same record: its own formation (さすがに疲れた as a ressalva), its own nuance (\"Atenção à dupla função de さすがに\"), and 2 of its 5 carriers (sent:tatoeba-10993926 さすがにそれはやりすぎだ, sent:tatoeba-11022996 これはさすがにヤバすぎる), neither of which is praise. Rewritten to scope the praise claim to さすが and name the さすがに concessive use, matching the wording already in nuance."
+ },
+ {
+  "key": "sasuga",
+  "action": "text",
+  "field": "explanation",
+  "locale": "en",
+  "old": "さすが expresses admiration, recognizing that something or someone lived up to the good reputation or expectation one had. Equivalent to 'as expected (of you),' 'no wonder,' 'truly impressive.' Ex.: さすが田中さん、すぐに問題を解決した (as expected of Tanaka, he solved the problem right away). It always has a positive, complimentary tone.",
+  "new": "さすが expresses admiration, recognizing that something or someone lived up to the good reputation or expectation one had. Equivalent to 'as expected (of you),' 'no wonder,' 'truly impressive.' Ex.: さすが田中さん、すぐに問題を解決した (as expected of Tanaka, he solved the problem right away). In the form さすが (+ noun/name) the tone is always complimentary; さすがに has a second, concessive use ('honestly', 'even so'), which is not praise.",
+  "why": "F-03, en counterpart of the pt-BR explanation fix."
+ },
+ {
+  "key": "i-adjectives",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Pegadinha número um para brasileiros: NÃO use です para formar passado ou negativo. 高いでした e 高くないです como passado estão errados; o tempo já está dentro do adjetivo (高かった). O です só entra no fim para deixar educado o presente afirmativo (高いです), e a negação educada é 高くないです ou 高くありません. Cuidado também para não confundir com os adjetivos な, que se conjugam de outro jeito.",
+  "new": "Pegadinha número um para brasileiros: NÃO use です para formar passado ou negativo. 高いでした e 高くないでした estão errados; o tempo já está dentro do adjetivo, então o passado é 高かった (educado: 高かったです) e o passado negativo é 高くなかった (educado: 高くなかったです). O です só entra no fim para deixar a frase educada (高いです), e a negação educada do presente é 高くないです ou 高くありません. Cuidado também para não confundir com os adjetivos な, que se conjugam de outro jeito.",
+  "why": "F-05. The paragraph listed 高くないです among the errors and then recommended it two sentences later, and never named the error learners actually make (×高くないでした). A beginner scanning the list will avoid the correct polite negative. Swapped the wrong form into the error list and spelled out both past forms with their polite variants."
+ },
+ {
+  "key": "i-adjectives",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Number-one trap for Brazilians: do NOT use です to form the past or negative. 高いでした and 高くないです as past are wrong; the tense is already inside the adjective (高かった). です only goes at the end to make the affirmative present polite (高いです), and the polite negation is 高くないです or 高くありません. Be careful too not to confuse this with na-adjectives, which conjugate differently.",
+  "new": "Number-one trap for Brazilians: do NOT use です to form the past or negative. 高いでした and 高くないでした are wrong; the tense is already inside the adjective, so the past is 高かった (polite: 高かったです) and the negative past is 高くなかった (polite: 高くなかったです). です only goes at the end to make the sentence polite (高いです), and the polite negation of the present is 高くないです or 高くありません. Be careful too not to confuse this with na-adjectives, which conjugate differently.",
+  "why": "F-05, en counterpart of the pt-BR nuance fix; same self-contradicting error list."
+ },
+ {
+  "key": "wa-ga-wa",
+  "action": "text",
+  "field": "explanation",
+  "locale": "en",
+  "old": "It is a pattern that This is the CONTRAST pattern: you mention two elements and set one against the other. The structure is \"[X]は … が、[Y]は …\", where each は highlights (topicalizes) one element and が joins the two halves with the meaning \"but\"; it is not the subject が. E.g.: 日本語は話せますが、中国語は話せません (にほんごははなせますが、ちゅうごくごははなせません) = \"Japanese I can speak, Chinese I can't\"; コーヒーは飲みますが、お茶は飲みません = \"coffee I drink, tea I don't.\" This contrastive は can take the place of the を or the が of the element being highlighted. Careful not to confuse this が with the sub-subject が of 象は鼻が長い (ぞうははながながい) = \"the elephant has a long trunk,\" which is a different structure. to talk about ONE theme and, within it, contrast two things. The typical structure is 'Topic は A が [quality], B は [opposite quality].' Classic example: 象は鼻が長い (ぞうははながながい) = 'The elephant has a long trunk,' where は marks the general theme (elephant) and が marks the sub-subject (the trunk). When a second は appears, it usually creates contrast: 日本語は話せますが、中国語は話せません (にほんごははなせますが、ちゅうごくごははなせません) = 'Japanese I can speak, Chinese I can't.'.",
+  "new": "This is the CONTRAST pattern: you mention two elements and set one against the other. The structure is \"[X]は … が、[Y]は …\", where each は highlights (topicalizes) one element and が joins the two halves with the meaning \"but\"; it is not the subject が. E.g.: 日本語は話せますが、中国語は話せません (にほんごははなせますが、ちゅうごくごははなせません) = \"Japanese I can speak, Chinese I can't\"; コーヒーは飲みますが、お茶は飲みません = \"coffee I drink, tea I don't.\" This contrastive は can take the place of the を or the が of the element being highlighted. Careful not to confuse this が with the sub-subject が of 象は鼻が長い (ぞうははながながい) = \"the elephant has a long trunk,\" which is a different structure.",
+  "why": "F-02.1. The field is textually damaged: two drafts welded together. It opens with the orphan fragment \"It is a pattern that\", runs the complete contrast description, then resumes mid-sentence with the lowercase fragment \"to talk about ONE theme and...\" and re-describes the 象は鼻が長い frame the first draft had just excluded. Kept the clean draft (which is the exact counterpart of the undamaged explanation.pt-BR) and dropped the orphan head and the spliced tail. No pt-BR edit: that locale is already clean and this restores parity with it."
+ },
+ {
+  "key": "wa-ga-wa",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Tema/tópico + は, seguido de subsujeito + が e seu predicado; depois um segundo elemento + は para o contraste. Esquema: [X]は [Y]が [predicado1]、[Z]は [predicado2]. O は de contraste pode substituir o を ou o が de um elemento que se quer destacar (ex.: コーヒーは飲みますが、お茶は飲みません = \"café eu bebo, chá não\"). O は é sempre escrito com o caractere は, mas lido \"wa\".",
+  "new": "Primeiro elemento + は com seu predicado, seguido de が (aqui com o sentido de \"mas\"); depois o segundo elemento + は com o predicado oposto. Esquema: [X]は [predicado1]が、[Z]は [predicado2]. O は de contraste pode substituir o を ou o が de um elemento que se quer destacar (ex.: コーヒーは飲みますが、お茶は飲みません = \"café eu bebo, chá não\"). O は é sempre escrito com o caractere は, mas lido \"wa\".",
+  "why": "F-02.2 and F-02.3. The formation described the 象は鼻が長い topic/sub-subject frame while the record's own explanation says explicitly \"não é o が de sujeito\", and the schema with a [Y]が slot does not generate 4 of the record's 5 carriers (日本語は話せるが英語は話せない, コーヒーは飲むがお茶は飲まない, 肉は好きだが魚は嫌いだ, 夏は暑いが冬は寒い have no sub-subject at all). A learner following the schema produces ×日本語は話が話せるが. Scoped the record to the contrastive frame its explanation and examples actually teach; splitting it into two points is an owner decision and is left alone."
+ },
+ {
+  "key": "wa-ga-wa",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "Theme/topic + は, followed by a sub-subject + が and its predicate; then a second element + は for contrast. Schema: [X]は [Y]が [predicate1]、[Z]は [predicate2]. The contrastive は can replace the を or the が of an element you want to highlight (e.g.: コーヒーは飲みますが、お茶は飲みません = \"coffee I drink, tea I don't\"). The は is always written with the character は, but read \"wa\".",
+  "new": "First element + は with its predicate, followed by が (here meaning \"but\"); then the second element + は with the opposite predicate. Schema: [X]は [predicate1]が、[Z]は [predicate2]. The contrastive は can replace the を or the が of an element you want to highlight (e.g.: コーヒーは飲みますが、お茶は飲みません = \"coffee I drink, tea I don't\"). The は is always written with the character は, but read \"wa\".",
+  "why": "F-02.2/F-02.3, en counterpart of the pt-BR formation fix; same unusable sub-subject schema."
+ },
+ {
+  "key": "n3-da-mono-da",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro bem informal e emotivo; a variante だもん soa ainda mais coloquial e é típica da fala feminina e infantil, então evite em situações formais ou de trabalho. Armadilha PT: não é uma justificativa neutra como から sozinho; carrega um tom de birra, desculpa ou apelo afetivo, como o 'aí é que tá' ou 'ué, mas é porque...' do português falado.",
+  "new": "Registro bem informal e emotivo; だもん é a contração corriqueira, usada por qualquer falante, enquanto だもの (e ですもの) soa mais marcado e carrega o tom feminino e infantil, então evite os dois em situações formais ou de trabalho. Armadilha PT: não é uma justificativa neutra como から sozinho; carrega um tom de birra, desculpa ou apelo afetivo, como o 'aí é que tá' ou 'ué, mas é porque...' do português falado.",
+  "why": "F-04. This record calls だもん the feminine/childish variant while gram:n3-nda-mon's formation says the opposite (\"もの (mais formal/feminina) e もん (mais coloquial)\"). The two records covering the same point give the learner contradictory advice about which form to use. The standard description is n3-nda-mon's: もの/だもの (and ですもの) carries the feminine and childish colouring, もん is the general contracted colloquial form used by all speakers. Aligned this record on that."
+ },
+ {
+  "key": "n3-da-mono-da",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Very informal and emotional register; the variant だもん sounds even more colloquial and is typical of female and child speech, so avoid it in formal or work situations. PT trap: it is not a neutral justification like から alone; it carries a tone of sulking, excuse, or emotional appeal, like the 'that's the thing' or 'well, it's because...' of spoken Portuguese.",
+  "new": "Very informal and emotional register; だもん is the everyday contraction, used by any speaker, while だもの (and ですもの) sounds more marked and carries the feminine, childlike tone, so avoid both in formal or work situations. PT trap: it is not a neutral justification like から alone; it carries a tone of sulking, excuse, or emotional appeal, like the 'that's the thing' or 'well, it's because...' of spoken Portuguese.",
+  "why": "F-04, en counterpart of the pt-BR nuance fix; same reversed gender register."
+ },
+ {
+  "key": "yotei-da",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Verbo na forma de dicionário (presente/futuro) + 予定だ／予定です: 行く予定です (tenho planos de ir).",
+  "new": "Verbo na forma de dicionário (presente/futuro) + 予定だ／予定です: 行く予定です (tenho planos de ir). Também aparece com substantivo + の: 会議は3時の予定です (a reunião está marcada para as 3). Para o passado ou o cancelamento, usa-se 予定だった (estava previsto). Negativa: 行かない予定です (tenho planos de não ir) ou, mais comum, 行く予定はありません (não tenho planos de ir).",
+  "why": "F-21. formation.pt-BR (87 chars) was a truncation of formation.en (313 chars): the noun + の form, the past 予定だった and both negatives existed only in English. pt-BR is the learner locale, so the Brazilian student was getting strictly less than the English reader. Translated the three missing sentences in; no en edit needed since en already carries them."
+ },
+ {
+  "key": "gp-116",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Aqui けど/が quase nunca significa \"mas\" de oposição (é um conector que deixa a frase em aberto e convida o interlocutor a reagir; traduzir sempre por \"mas\" engana. É uma das ferramentas mais úteis de polidez japonesa: começar pedidos com 〜んですが soa bem mais educado do que ir direto ao ponto. んですが é polido e んだけど é casual) não misture os dois na mesma fala.",
+  "new": "Aqui けど/が quase nunca significa \"mas\" de oposição (é um conector que deixa a frase em aberto e convida o interlocutor a reagir); traduzir sempre por \"mas\" engana. É uma das ferramentas mais úteis de polidez japonesa: começar pedidos com 〜んですが soa bem mais educado do que ir direto ao ponto. んですが é polido e んだけど é casual (não misture os dois na mesma fala).",
+  "why": "F-22, worst instance. One open parenthesis swallowed three sentences and closed only before a final clause that then had no punctuation at all (\"...んだけど é casual) não misture os dois na mesma fala.\"). Re-punctuated to the shape nuance.en already has; no en edit, en is already correct."
+ },
+ {
+  "key": "gp-120",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Cuidado com a falsa equivalência: em português o \"se\" basta sozinho, mas em japonês もし não substitui a marca condicional no verbo (você ainda precisa de 〜たら/〜ば/〜なら/〜と no final da oração. Pense em もし como um \"e se...\" que prepara o ouvido; esquecer a terminação condicional é o erro mais frequente de lusófonos.)",
+  "new": "Cuidado com a falsa equivalência: em português o \"se\" basta sozinho, mas em japonês もし não substitui a marca condicional no verbo (você ainda precisa de 〜たら/〜ば/〜なら/〜と no final da oração). Pense em もし como um \"e se...\" que prepara o ouvido; esquecer a terminação condicional é o erro mais frequente de lusófonos.",
+  "why": "F-22. The parenthesis opened mid-sentence and closed only after the end of the paragraph, swallowing a whole further sentence. Closed it where nuance.en already closes it; no en edit needed."
+ },
+ {
+  "key": "gp-132",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro neutro a formal, típico de linguagem escrita e expositiva (soa mais impessoal e objetivo do que dizer simplesmente \"existe\". Cuidado: aqui が見られる não significa \"alguém consegue olhar\" no sentido de permissão pessoal; o foco é o fenômeno que se apresenta/se constata. Brasileiros podem cair na armadilha de usar を: o correto é が, pois X é o sujeito do que é observado, não o objeto.)",
+  "new": "Registro neutro a formal, típico de linguagem escrita e expositiva (soa mais impessoal e objetivo do que dizer simplesmente \"existe\"). Cuidado: aqui が見られる não significa \"alguém consegue olhar\" no sentido de permissão pessoal; o foco é o fenômeno que se apresenta/se constata. Brasileiros podem cair na armadilha de usar を: o correto é が, pois X é o sujeito do que é observado, não o objeto.",
+  "why": "F-22. The parenthesis opened after \"expositiva\" and closed only at the end of the field, putting the whole \"não significa alguém consegue olhar\" warning and the を trap inside an aside. Closed it where nuance.en already closes it; no en edit needed."
+ },
+ {
+  "key": "mitai-da",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro coloquial; em contextos formais ou escritos prefira 〜ようだ. Cuidado: みたい não é o verbo 見たい (\"querer ver\") (a みたい de comparação cola direto no substantivo sem だ, enquanto 〜たい de desejo vem de 見る. Para o brasileiro, evite traduzir sempre como \"parecer\" no sentido visual; muitas vezes equivale ao nosso \"tipo\" ou \"feito\".)",
+  "new": "Registro coloquial; em contextos formais ou escritos prefira 〜ようだ. Cuidado: みたい não é o verbo 見たい (\"querer ver\") (a みたい de comparação cola direto no substantivo sem だ, enquanto 〜たい de desejo vem de 見る). Para o brasileiro, evite traduzir sempre como \"parecer\" no sentido visual; muitas vezes equivale ao nosso \"tipo\" ou \"feito\".",
+  "why": "F-22. The inner parenthesis ran past its own full stop and swallowed the following advice sentence. Closed it after 見る, exactly as nuance.en does; no en edit needed."
+ },
+ {
+  "key": "gp-142",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Atenção à partícula: com substantivo e adjetivo-な usa-se に (になる); com adjetivo-い usa-se く (くなる), misturar é o erro mais frequente. Diferente de する (que indica que alguém decide e faz a mudança ativamente), なる sugere mudança que acontece por si, então soa mais natural e suave (útil para falar de mudanças de tempo, idade, profissão e estados.)",
+  "new": "Atenção à partícula: com substantivo e adjetivo-な usa-se に (になる); com adjetivo-い usa-se く (くなる), misturar é o erro mais frequente. Diferente de する (que indica que alguém decide e faz a mudança ativamente), なる sugere mudança que acontece por si, então soa mais natural e suave (útil para falar de mudanças de tempo, idade, profissão e estados).",
+  "why": "F-22, mildest instance: the closing parenthesis sat after the final full stop, leaving the paragraph without a terminating period outside the aside. Moved the stop outside, matching nuance.en; no en edit needed."
+ },
+ {
+  "key": "gp-22",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Same particle trap as 好き: use が, never を. Watch the tone: きらい sounds stronger than the softened 'I don't like' of Portuguese; to soften it, Japanese speakers prefer あまり好きじゃない ('I don't like it much'). Despite ending in い, きらい is not an i-adjective (it's a na-adjective, so it doesn't conjugate like さむい/たかい. This confuses many beginners.)",
+  "new": "Same particle trap as 好き: use が, never を. Watch the tone: きらい sounds stronger than the softened 'I don't like' of Portuguese; to soften it, Japanese speakers prefer あまり好きじゃない ('I don't like it much'). Despite ending in い, きらい is not an i-adjective; it's a na-adjective, so it doesn't conjugate like さむい/たかい. This confuses many beginners.",
+  "why": "F-22. The parenthesis opened after \"i-adjective\" and closed only after a further complete sentence, with the stop trapped inside. nuance.pt-BR has the correct shape with no parentheses at all; matched it. No pt-BR edit, that locale is already clean."
+ },
+ {
+  "key": "gp-48",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "The point that most confuses Brazilians: なにも REQUIRES a negative verb. There's no standalone 'nothing' like in Portuguese; in Japanese you can't say 'I ate nothing' (it has to be 'I didn't eat anything.' And here the double negative is not an error: なにも たべません is the correct, natural form. Remember that with なにか and なにも the particle を is usually dropped.)",
+  "new": "The point that most confuses Brazilians: なにも REQUIRES a negative verb. There's no standalone 'nothing' like in Portuguese; in Japanese you can't say 'I ate nothing'; it has to be 'I didn't eat anything.' And here the double negative is not an error: なにも たべません is the correct, natural form. Remember that with なにか and なにも the particle を is usually dropped.",
+  "why": "F-22. One parenthesis swallowed the rest of the field, three sentences deep. nuance.pt-BR runs the same content with plain punctuation and no parentheses; matched it. No pt-BR edit, that locale is already clean."
+ },
+ {
+  "key": "te-iru",
+  "action": "text",
+  "field": "nuance",
+  "locale": "en",
+  "old": "Note: not every 〜ている is 'to be -ing.' Verbs of instantaneous change like 行く (to go), 来る (to come), 死ぬ (to die) indicate a STATE, not an action in progress: 行っている = 'has gone (and is there),' not 'is going'; 死んでいる = 'is dead,' not 'is dying.' This is the biggest stumbling block for Brazilians, who tend to translate everything as a gerund. Another trap: the particle before the verb stays を/が (it doesn't change because of ている.)",
+  "new": "Note: not every 〜ている is 'to be -ing.' Verbs of instantaneous change like 行く (to go), 来る (to come), 死ぬ (to die) indicate a STATE, not an action in progress: 行っている = 'has gone (and is there),' not 'is going'; 死んでいる = 'is dead,' not 'is dying.' This is the biggest stumbling block for Brazilians, who tend to translate everything as a gerund. Another trap: the particle before the verb stays を/が; it doesn't change because of ている.",
+  "why": "F-22. Trailing aside with the full stop trapped inside the parenthesis. nuance.pt-BR runs the clause with a comma and no parentheses; matched it. No pt-BR edit, that locale is already clean."
+ },
+ {
+  "key": "n3-mo",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Liga-se a forma curta: verbo na forma comum, adjetivo-i, na+adjetivo ou substantivo (estes ultimos podem levar である) + ばかりか; o segundo membro recebe a partícula も. Padrão: A ばかりか B も.",
+  "new": "Liga-se à forma curta: verbo na forma comum, adjetivo-i, na+adjetivo ou substantivo (estes últimos podem levar である) + ばかりか; o segundo membro recebe a partícula も. Padrão: A ばかりか B も.",
+  "why": "F-23. Missing diacritics in learner-facing pt-BR: \"ultimos\" to \"últimos\" (named in the report) and the crase \"Liga-se a forma\" to \"à forma\", the same defect class in the same sentence. Diacritics are pt-BR only, so no en edit. Left \"na+adjetivo\" alone: it reads as a typo for \"adjetivo-na\" but is not a diacritic and is not named by the report."
+ },
+ {
+  "key": "n3-mo",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro formal e mais escrito; na conversa cotidiana e mais natural だけでなく...も. Sinonimos proximos com pequenas diferenças: ばかりでなく (neutro) e のみならず (bem formal, literário). Armadilha PT: o segundo elemento costuma escalar em intensidade ou surpresa em relação ao primeiro, então a tradução 'não so... como também' deve preservar essa ideia de algo a mais, e não de mera soma de itens equivalentes.",
+  "new": "Registro formal e mais escrito; na conversa cotidiana é mais natural だけでなく...も. Sinônimos próximos com pequenas diferenças: ばかりでなく (neutro) e のみならず (bem formal, literário). Armadilha PT: o segundo elemento costuma escalar em intensidade ou surpresa em relação ao primeiro, então a tradução 'não só... como também' deve preservar essa ideia de algo a mais, e não de mera soma de itens equivalentes.",
+  "why": "F-23. Missing diacritics: \"Sinonimos proximos\" to \"Sinônimos próximos\", \"não so\" to \"não só\" (both named), plus \"e mais natural\" to \"é mais natural\", the identical defect in the same field. pt-BR only, no en edit."
+ },
+ {
+  "key": "n3-to-iu",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Nome ou citação + という + substantivo (ハリー・ポッターという本, um livro chamado Harry Potter). Também frase casual + という + substantivo para reportar conteudo ou reputação (親切だという評判, fama de ser gentil).",
+  "new": "Nome ou citação + という + substantivo (ハリー・ポッターという本, um livro chamado Harry Potter). Também frase casual + という + substantivo para reportar conteúdo ou reputação (親切だという評判, fama de ser gentil).",
+  "why": "F-23. \"conteudo\" to \"conteúdo\". pt-BR only, no en edit."
+ },
+ {
+  "key": "n3-to-iu",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Na fala vira frequentemente っていう ou só って. Quando o conteudo e algo ouvido ('dizem que'), aproxima-se de という evidencial; ja para simplesmente nomear, fica claro pelo substantivo que vem depois. Armadilha PT: não precisa traduzir sempre por 'chamado'; muitas vezes a tradução natural omite a palavra ('o livro Harry Potter').",
+  "new": "Na fala vira frequentemente っていう ou só って. Quando o conteúdo é algo ouvido ('dizem que'), aproxima-se de という evidencial; já para simplesmente nomear, fica claro pelo substantivo que vem depois. Armadilha PT: não precisa traduzir sempre por 'chamado'; muitas vezes a tradução natural omite a palavra ('o livro Harry Potter').",
+  "why": "F-23. \"conteudo e\" to \"conteúdo é\" and \"ja\" to \"já\". pt-BR only, no en edit."
+ },
+ {
+  "key": "n3-to-iu-to",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "といえば e quase intercambiável e um pouco mais comum na fala; というと pode também pedir confirmação ('você quer dizer que...?'). Difere de について ('a respeito de', mais neutro e descritivo), pois というと puxa a associação espontanea. Armadilha PT: não confunda este と (de citação/tópico) com o と condicional 'se/quando' de outros padrões.",
+  "new": "といえば é quase intercambiável e um pouco mais comum na fala; というと pode também pedir confirmação ('você quer dizer que...?'). Difere de について ('a respeito de', mais neutro e descritivo), pois というと puxa a associação espontânea. Armadilha PT: não confunda este と (de citação/tópico) com o と condicional 'se/quando' de outros padrões.",
+  "why": "F-23. \"といえば e quase\" to \"é quase\" and \"espontanea\" to \"espontânea\". pt-BR only, no en edit."
+ },
+ {
+  "key": "n3-tokoro-datta",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Armadilha PT: em português 'quase cai' usa o passado, mas em japonês o verbo antes de ところだった fica na forma de dicionário (presente), pois descreve o evento que estava na iminencia. So o ところだった carrega o tempo passado. Diferente de ところだ ('estou prestes a'), que e situação real em curso.",
+  "new": "Armadilha PT: em português 'quase cai' usa o passado, mas em japonês o verbo antes de ところだった fica na forma de dicionário (presente), pois descreve o evento que estava na iminência. Só o ところだった carrega o tempo passado. Diferente de ところだ ('estou prestes a'), que é situação real em curso.",
+  "why": "F-23. \"iminencia\" to \"iminência\", \"So\" to \"Só\", \"que e\" to \"que é\". pt-BR only, no en edit."
+ },
+ {
+  "key": "n3-toori",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Registro neutro, útil tanto na fala quanto em textos. Detalhe sonoro: colado direto a um substantivo, とおり vira どおり (sonorização), então 'conforme a regra' e 規則どおり. Use a forma passada do verbo quando a instrução ja foi dada ('como o professor disse').",
+  "new": "Registro neutro, útil tanto na fala quanto em textos. Detalhe sonoro: colado direto a um substantivo, とおり vira どおり (sonorização), então 'conforme a regra' é 規則どおり. Use a forma passada do verbo quando a instrução já foi dada ('como o professor disse').",
+  "why": "F-23. \"'conforme a regra' e\" to \"é\" and \"ja\" to \"já\". pt-BR only, no en edit."
+ },
+ {
+  "key": "n3-no",
+  "action": "text",
+  "field": "nuance",
+  "locale": "pt-BR",
+  "old": "Atenção a ordem: o possuidor vem antes do の e o possuido depois, ou seja, o inverso do português ('私の傘' = 'meu guarda-chuva', literalmente 'eu-de-guarda-chuva'). Armadilha PT: não traduza の sempre por 'de'; em pares como 日本語の本 ('livro em japonês') ou 三時の電車 ('o trem das três'), o sentido exige outra preposição.",
+  "new": "Atenção à ordem: o possuidor vem antes do の e o possuído depois, ou seja, o inverso do português ('私の傘' = 'meu guarda-chuva', literalmente 'eu-de-guarda-chuva'). Armadilha PT: não traduza の sempre por 'de'; em pares como 日本語の本 ('livro em japonês') ou 三時の電車 ('o trem das três'), o sentido exige outra preposição.",
+  "why": "F-23. Missing crase \"Atenção a ordem\" to \"Atenção à ordem\" and \"possuido\" to \"possuído\". pt-BR only, no en edit."
+ },
+ {
+  "key": "kata",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "Pega-se a forma ます do verbo (forma polida), tira-se o ます e acrescenta-se 方. Ex.: 食べます → 食べ方（たべかた, jeito de comer); 使います → 使い方（つかいかた, modo de usar); 書きます → 書き方（かきかた, como escrever). Em alguns casos a partícula を vira の antes do substantivo com 方: 漢字の書き方 (o jeito de escrever kanji), em vez de 漢字を書く.",
+  "new": "Pega-se a forma ます do verbo (forma polida), tira-se o ます e acrescenta-se 方. Ex.: 食べます → 食べ方（たべかた, jeito de comer）; 使います → 使い方（つかいかた, modo de usar）; 書きます → 書き方（かきかた, como escrever）. Em alguns casos a partícula を vira の antes do substantivo com 方: 漢字の書き方 (o jeito de escrever kanji), em vez de 漢字を書く.",
+  "why": "F-24. Three parentheses open full-width （ (U+FF08) and close ASCII ) (U+0029), which renders inconsistently and breaks any paren-balance check. Closed them with ）. The last pair (o jeito de escrever kanji) is a matched ASCII pair and was left as is."
+ },
+ {
+  "key": "kata",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "You take the verb's ます-form (polite form), drop the ます, and add 方. Ex.: 食べます → 食べ方（たべかた, the way to eat); 使います → 使い方（つかいかた, how to use); 書きます → 書き方（かきかた, how to write). In some cases the particle を becomes の before the noun with 方: 漢字の書き方 (the way to write kanji), instead of 漢字を書く.",
+  "new": "You take the verb's ます-form (polite form), drop the ます, and add 方. Ex.: 食べます → 食べ方（たべかた, the way to eat）; 使います → 使い方（つかいかた, how to use）; 書きます → 書き方（かきかた, how to write）. In some cases the particle を becomes の before the noun with 方: 漢字の書き方 (the way to write kanji), instead of 漢字を書く.",
+  "why": "F-24, en counterpart: the same three mismatched （ ... ) pairs."
+ },
+ {
+  "key": "n3-donna-ni-koto-ka",
+  "action": "text",
+  "field": "formation",
+  "locale": "pt-BR",
+  "old": "どんなに + adjetivo ou verbo (em forma simples) + ことか. Ex.: どんなに疲れたことか ('como eu estava cansado'). O ことか fecha a estrutura dando o tom exclamativo.",
+  "new": "どんなに + adjetivo ou verbo (em forma simples) + ことか. Ex.: どんなに疲れたことか ('como eu estava cansado'). O ことか fecha a estrutura dando o tom exclamativo. A variante ことだろう／ことでしょう é a mesma estrutura, com tom um pouco mais suave e literário: 彼はどんなに苦しんだことだろう ('como ele deve ter sofrido').",
+  "why": "F-14, the report's second repair option. All 3 carriers lacked ことか. Two are unlinked below; the survivor sent:tatoeba-111460 彼はどんなに苦しんだことだろう is the ことだろう variant, which is the same rhetorical-exclamation construction and is standardly taught alongside ことか. Naming it in the formation makes the remaining carrier a legitimate instance instead of a silent mismatch, and keeps the record from ending with zero sentences."
+ },
+ {
+  "key": "n3-donna-ni-koto-ka",
+  "action": "text",
+  "field": "formation",
+  "locale": "en",
+  "old": "どんなに + adjective or verb (in plain form) + ことか. E.g.: どんなに疲れたことか ('how tired I was'). The ことか closes the structure giving it an exclamatory tone.",
+  "new": "どんなに + adjective or verb (in plain form) + ことか. E.g.: どんなに疲れたことか ('how tired I was'). The ことか closes the structure giving it an exclamatory tone. The variant ことだろう／ことでしょう is the same structure with a slightly softer, more literary tone: 彼はどんなに苦しんだことだろう ('how he must have suffered').",
+  "why": "F-14, en counterpart of the pt-BR formation widening."
+ },
+ {
+  "key": "n3-donna-ni-koto-ka",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-11056202",
+  "why": "F-14. どんなに愛してるか、分かってる？ is a genuine embedded question (\"do you know how much I love you?\"), which directly contradicts the record's own explanation: \"Não é uma pergunta de verdade, e sim uma exclamação disfarçada de pergunta.\" It also has no こと. Record keeps 1 carrier after both unlinks."
+ },
+ {
+  "key": "n3-donna-ni-koto-ka",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-10979954",
+  "why": "F-14. これが自動化されたらどんなにいいか is どんなに...か with no こと at all, so it does not instantiate the pattern the record states (どんなに〜ことか) even after the ことだろう widening."
+ },
+ {
+  "key": "gp-128",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-4930",
+  "why": "F-13. またいつか風のように走るんだ is the simile ように (\"run like the wind\"), a sense this record explicitly does not cover: it teaches only (1) purpose and (2) wish/prayer. Belongs with gram:you-ni-you-na. Record keeps sent:tatoeba-80880 無理をしないように, a real instance of sense (2)."
+ },
+ {
+  "key": "gp-128",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-80192",
+  "why": "F-13. 面白いように思います is 〜ように思う (\"it seems to me\"), a distinct pattern, neither purpose nor wish."
+ },
+ {
+  "key": "gp-128",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-82971",
+  "why": "F-13. 母は私に外出しないようにいった is 〜ように言う, the indirect-command pattern that has its own record gram:gp-124, not the purpose or wish sense taught here."
+ },
+ {
+  "key": "gp-128",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-84691",
+  "why": "F-13. 父はついてくるように私をせきたてた is a reported command (\"urged me to follow\"), the same 〜ように + verb-of-telling pattern as gp-124, not purpose or wish."
+ },
+ {
+  "key": "ni-mieru",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-123754",
+  "why": "F-15. 動物はでたらめに動くように見える is clause + ように見える, not the [noun/な-adj]に見える or [い-adj]く見える formation this record teaches. Record keeps 2 correct carriers (ばかに見える, 同じに見える)."
+ },
+ {
+  "key": "ni-mieru",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-12653680",
+  "why": "F-15. 学がないように見えるね is likewise clause + ように見える, a different construction from the one in the record's formation."
+ },
+ {
+  "key": "ni-mieru",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-144020",
+  "why": "F-15. 人生には目に見える以上のものがある uses 目に見える in its literal \"visible to the eye\" sense, which is the plain verb 見える, not the \"appears to be X\" pattern."
+ },
+ {
+  "key": "n3-moshimo-nara",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-11038521",
+  "why": "F-16. あなたなら、どうする？ has no もしも and is the generic なら conditional, the exact mislabelling the record's own steps_unavailable note warns against. Belongs with gram:nara. Record keeps sent:tatoeba-193787 もしも私が生まれ変わるなら、鳥になりたい."
+ },
+ {
+  "key": "n3-moshimo-nara",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-233819",
+  "why": "F-16. あなたなら、これをどう考えますか。 has no もしも; generic なら."
+ },
+ {
+  "key": "n3-moshimo-nara",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-4268785",
+  "why": "F-16. あなたなら、どうしますか？ has no もしも; generic なら."
+ },
+ {
+  "key": "n3-moshimo-nara",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-5348486",
+  "why": "F-16, extending the finding. The report named three あなたなら carriers; sent:tatoeba-5348486 あなたなら良い先生になるでしょう is the fourth, identical in kind (no もしも, generic なら). Unlinking it too leaves the record with the one genuine もしも carrier."
+ },
+ {
+  "key": "n3-sono-kekka",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-211124",
+  "why": "F-18. その結果はどうなのか。 is the noun 結果 marked by は (\"as for the result\"), not the sentence-initial connective その結果、 that the record describes ([situação 1]。その結果、[resultado]). Record keeps sent:tatoeba-211110 その結果何が起こったのか。"
+ },
+ {
+  "key": "n3-sono-kekka",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-211125",
+  "why": "F-18. その結果はどうなったのか。 is likewise 結果 + は, the plain noun, not the connective."
+ },
+ {
+  "key": "ni-suru",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-197763",
+  "why": "F-19. パンダはささをえさにする is the three-place XをYにする (\"make X into Y\"), a sense the record's explanation and formation never introduce: they teach only choice/decision (コーヒーにします). A learner reading \"decidir-se por / escolher\" gets no usable signal from the panda sentence. Record keeps 5 carriers."
+ },
+ {
+  "key": "ni-suru",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-201971",
+  "why": "F-19. テレビをつけっぱなしにするな！ is the same XをYにする use, not \"decide on\"."
+ },
+ {
+  "key": "gp-139",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-173416",
+  "why": "F-20. 行かなくてはいけません。 is 〜なくてはいけない (obligation, \"I have to go\"), which is the mirror record gram:nakute-wa-ikenai. This record teaches prohibition 〜てはいけません, and its own text warns against confusing the two, so the trap was sitting in its example list. Record keeps 4 genuine prohibition carriers."
+ },
+ {
+  "key": "tara-dou",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-81125",
+  "why": "F-20. 万一病気になったらどうする？ is a real question (\"what would you do if you got sick?\"), not the fixed suggestion 〜たらどう？ (\"why don't you...?\") this record teaches. Record keeps 4 correct suggestion carriers."
+ },
+ {
+  "key": "kitto",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-226013",
+  "why": "F-20. きっと手紙くださいね。 is きっと with a request, meaning \"without fail\", which the record's own nuance explicitly assigns to 必ず and not to きっと (\"きっと é mais uma aposta confiante\"). Record keeps 4 carriers of the subjective-certainty sense."
+ },
+ {
+  "key": "n3-you-ni-natta",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-180353",
+  "why": "F-20. 教育のおかげで私は今日のようになった is のように + なる (simile, \"became what I am today\"), not the 〜ようになった \"came to be able to\" pattern. Record keeps 4 correct carriers (話せるようになった, 歩けるようになった, 動くようになった, 乗れるようになった)."
+ },
+ {
+  "key": "n3-koto-wa-nai",
+  "action": "unlink",
+  "sentence": "sent:tatoeba-8842279",
+  "why": "F-09, partial. 見たことはないよ。 (\"I've never seen it\") is precisely the 〜たことがない experience pattern the record's own nuance tells the learner not to confuse this point with. The other four carriers are also wrong (existential [clause こと] + は + ない rather than the modal \"no need to\"), but unlinking all five would leave the record with zero sentences, so only the flat contradiction is removed here; see the report note."
+ }
+]

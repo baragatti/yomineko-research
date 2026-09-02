@@ -26,9 +26,9 @@
   "patterns": [
     "gram:kamo-shirenai",
     "gram:hazu-da",
+    "gram:n3-hazu-da",
     "gram:gp-142",
-    "gram:tsumori",
-    "gram:gp-120"
+    "gram:tsumori"
   ],
   "kanji_recognition": [
     "以",
@@ -51,53 +51,6 @@
   "cumulative_known_vocab": 542,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:583",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:583:2731",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "車",
-        "夜",
-        "父"
-      ]
-    },
-    {
-      "id": "cf:n3:4077:1369",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "遅れる",
-        "ピアノ",
-        "シャツ"
-      ]
-    },
-    {
-      "id": "kr:n4:1185",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "なに",
-        "ため",
-        "もう"
-      ]
-    },
-    {
-      "id": "kr:n4:1219",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "つく",
-        "よぶ",
-        "とる"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-45"
   ],
@@ -121,6 +74,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-hazu-da",
+      "examples": [
+        "sent:tatoeba-8579878",
+        "sent:tatoeba-10631706",
+        "sent:tatoeba-3552030"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-142",
       "examples": [
         "sent:tatoeba-78454",
@@ -135,15 +97,6 @@
         "sent:gen-f48e05df2b74",
         "sent:tatoeba-80364",
         "sent:tatoeba-137646"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-120",
-      "examples": [
-        "sent:tatoeba-193408",
-        "sent:gen-40a736aa4ac8",
-        "sent:gen-5bccb5134f4a"
       ],
       "strand": "language-focused"
     }
@@ -209,15 +162,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:583",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:583:2731",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "車",
+        "夜",
+        "父"
+      ]
+    },
+    {
+      "id": "cf:n3:4077:1369",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "遅れる",
+        "ピアノ",
+        "シャツ"
+      ]
+    },
+    {
+      "id": "kr:n4:1185",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "なに",
+        "ため",
+        "もう"
+      ]
+    },
+    {
+      "id": "kr:n4:1219",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "つく",
+        "よぶ",
+        "とる"
+      ]
+    }
+  ]
 }

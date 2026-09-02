@@ -29,9 +29,7 @@
   ],
   "patterns": [
     "gram:gp-149",
-    "gram:gp-89",
-    "gram:nagara",
-    "gram:darou"
+    "gram:gp-89"
   ],
   "kanji_recognition": [
     "飲",
@@ -54,51 +52,11 @@
   "cumulative_known_vocab": 122,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:693:2525",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "年",
-        "時",
-        "誰"
-      ]
-    },
-    {
-      "id": "cf:n5:3006:617",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "犬",
-        "昼",
-        "誰"
-      ]
-    },
-    {
-      "id": "kr:n5:324",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かのじょ",
-        "おいしい",
-        "おしえる"
-      ]
-    },
-    {
-      "id": "kr:n5:60",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けっこう",
-        "はんぶん",
-        "くださる"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-110",
-    "gram:sonna-ni"
+    "gram:sonna-ni",
+    "gram:gp-36",
+    "gram:gp-98"
   ],
   "drills": [
     {
@@ -116,24 +74,6 @@
         "sent:tatoeba-4855",
         "sent:tatoeba-164675",
         "sent:tatoeba-10541587"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nagara",
-      "examples": [
-        "sent:tatoeba-226844",
-        "sent:tatoeba-226845",
-        "sent:tatoeba-83210"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-81544",
-        "sent:tatoeba-85312"
       ],
       "strand": "language-focused"
     }
@@ -195,15 +135,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:693:2525",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "年",
+        "時",
+        "誰"
+      ]
+    },
+    {
+      "id": "cf:n5:3006:617",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "犬",
+        "昼",
+        "誰"
+      ]
+    },
+    {
+      "id": "kr:n5:324",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かのじょ",
+        "おいしい",
+        "おしえる"
+      ]
+    },
+    {
+      "id": "kr:n5:60",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっこう",
+        "はんぶん",
+        "くださる"
+      ]
+    }
+  ]
 }

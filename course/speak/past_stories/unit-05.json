@@ -26,9 +26,9 @@
   ],
   "patterns": [
     "gram:nasai",
+    "gram:gp-121",
     "gram:da-desu",
-    "gram:gp-14",
-    "gram:toki"
+    "gram:gp-14"
   ],
   "kanji_recognition": [
     "院",
@@ -51,53 +51,6 @@
   "cumulative_known_vocab": 441,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:841",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3562:1290",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "急ぐ",
-        "彼女",
-        "強い"
-      ]
-    },
-    {
-      "id": "kr:n4:727",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "だいじょうぶ",
-        "がいこくじん",
-        "どうぶつえん"
-      ]
-    },
-    {
-      "id": "cf:n3:5126:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "雪",
-        "口",
-        "心"
-      ]
-    },
-    {
-      "id": "kr:n4:1094",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "ど",
-        "め",
-        "は"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:gp-19",
     "gram:gp-9"
@@ -109,6 +62,15 @@
         "sent:tatoeba-78287",
         "sent:tatoeba-79943",
         "sent:tatoeba-78855"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-121",
+      "examples": [
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
       ],
       "strand": "language-focused"
     },
@@ -127,15 +89,6 @@
         "sent:tatoeba-74036",
         "sent:tatoeba-74498",
         "sent:tatoeba-76735"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:toki",
-      "examples": [
-        "sent:gen-ff96cd61eb0b",
-        "sent:gen-18f49dd92c9f",
-        "sent:gen-ebd7d352d5d4"
       ],
       "strand": "language-focused"
     }
@@ -200,15 +153,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:841",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3562:1290",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "急ぐ",
+        "彼女",
+        "強い"
+      ]
+    },
+    {
+      "id": "kr:n4:727",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "だいじょうぶ",
+        "がいこくじん",
+        "どうぶつえん"
+      ]
+    },
+    {
+      "id": "cf:n3:5126:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "雪",
+        "口",
+        "心"
+      ]
+    },
+    {
+      "id": "kr:n4:1094",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "ど",
+        "め",
+        "は"
+      ]
+    }
+  ]
 }

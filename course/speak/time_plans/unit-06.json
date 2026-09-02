@@ -29,8 +29,7 @@
     "gram:masen-ka",
     "gram:gp-149",
     "gram:darou",
-    "gram:gp-17",
-    "gram:ndesu"
+    "gram:gp-17"
   ],
   "kanji_recognition": [
     "間",
@@ -53,54 +52,9 @@
   "cumulative_known_vocab": 363,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3623",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3623:1300",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "どんな",
-        "食べる",
-        "コピー"
-      ]
-    },
-    {
-      "id": "cf:n5:3181:280",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "歯",
-        "線",
-        "頭"
-      ]
-    },
-    {
-      "id": "kr:n4:1272",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かえる",
-        "おわり",
-        "こわい"
-      ]
-    },
-    {
-      "id": "kr:n5:131",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とまる",
-        "つかう",
-        "うしろ"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-da-mono-da"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:amari-nai",
@@ -144,15 +98,6 @@
         "sent:tatoeba-124633",
         "sent:tatoeba-172639",
         "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ndesu",
-      "examples": [
-        "sent:gen-d354f1465606",
-        "sent:tatoeba-80973",
-        "sent:gen-f83463ff3681"
       ],
       "strand": "language-focused"
     }
@@ -218,15 +163,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3623",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3623:1300",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "どんな",
+        "食べる",
+        "コピー"
+      ]
+    },
+    {
+      "id": "cf:n5:3181:280",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "歯",
+        "線",
+        "頭"
+      ]
+    },
+    {
+      "id": "kr:n4:1272",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かえる",
+        "おわり",
+        "こわい"
+      ]
+    },
+    {
+      "id": "kr:n5:131",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とまる",
+        "つかう",
+        "うしろ"
+      ]
+    }
+  ]
 }

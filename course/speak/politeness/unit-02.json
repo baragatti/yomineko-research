@@ -30,11 +30,10 @@
   ],
   "patterns": [
     "gram:sasete-kudasai",
+    "gram:n3-sete-kudasai",
     "gram:te-kudasai",
     "gram:deshou",
-    "gram:kitto",
-    "gram:temo",
-    "gram:tte"
+    "gram:kitto"
   ],
   "kanji_recognition": [
     "紙",
@@ -57,59 +56,9 @@
   "cumulative_known_vocab": 465,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:569",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:569",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:569:1553",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "物",
-        "父",
-        "為"
-      ]
-    },
-    {
-      "id": "cf:n4:5263:1113",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "近く",
-        "出る",
-        "仕事"
-      ]
-    },
-    {
-      "id": "kr:n4:1100",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ふね",
-        "はち",
-        "きく"
-      ]
-    },
-    {
-      "id": "kr:n4:1113",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おおきな",
-        "けいかく",
-        "かのじょ"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-kake"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:sasete-kudasai",
@@ -117,6 +66,15 @@
         "sent:tatoeba-3957479",
         "sent:tatoeba-2045915",
         "sent:tatoeba-164807"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-sete-kudasai",
+      "examples": [
+        "sent:tatoeba-127098",
+        "sent:tatoeba-10697477",
+        "sent:tatoeba-3661468"
       ],
       "strand": "language-focused"
     },
@@ -134,7 +92,7 @@
       "examples": [
         "sent:tatoeba-98793",
         "sent:tatoeba-79089",
-        "sent:tatoeba-5347"
+        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     },
@@ -144,24 +102,6 @@
         "sent:tatoeba-225989",
         "sent:tatoeba-80474",
         "sent:tatoeba-226023"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:tatoeba-78150",
-        "sent:gen-fd723f8599f2"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tte",
-      "examples": [
-        "sent:gen-fee342a8016b",
-        "sent:gen-5412a2ccf468",
-        "sent:gen-000fc485400b"
       ],
       "strand": "language-focused"
     }
@@ -224,15 +164,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
-    "meaning-output": 5,
-    "language-focused": 62,
-    "fluency": 11
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 34,
+    "language-focused": 26,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:569",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:569",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:569:1553",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "物",
+        "父",
+        "為"
+      ]
+    },
+    {
+      "id": "cf:n4:5263:1113",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "近く",
+        "出る",
+        "仕事"
+      ]
+    },
+    {
+      "id": "kr:n4:1100",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ふね",
+        "はち",
+        "きく"
+      ]
+    },
+    {
+      "id": "kr:n4:1113",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おおきな",
+        "けいかく",
+        "かのじょ"
+      ]
+    }
+  ]
 }

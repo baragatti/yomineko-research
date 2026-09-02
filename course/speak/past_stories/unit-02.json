@@ -27,11 +27,7 @@
   ],
   "patterns": [
     "gram:ga-arimasu",
-    "gram:te-kudasai",
-    "gram:janai-dewa-nai",
-    "gram:gp-14",
-    "gram:gp-8",
-    "gram:tte"
+    "gram:te-kudasai"
   ],
   "kanji_recognition": [
     "行",
@@ -54,54 +50,12 @@
   "cumulative_known_vocab": 419,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:981",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:1452:1099",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "注意",
-        "一寸",
-        "自分"
-      ]
-    },
-    {
-      "id": "cf:n4:2952:1099",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "正月",
-        "学校",
-        "言う"
-      ]
-    },
-    {
-      "id": "kr:n4:1099",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しゅうかん",
-        "りょうきん",
-        "しょうせつ"
-      ]
-    },
-    {
-      "id": "kr:n4:1296",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かのじょ",
-        "めざめる",
-        "ほんとう"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-mattaku-nai",
+    "gram:n3-wake-dewa-nai",
+    "gram:n3-ni-totte",
+    "gram:n3-ni-tsuite"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:ga-arimasu",
@@ -118,42 +72,6 @@
         "sent:tatoeba-124708",
         "sent:tatoeba-74723",
         "sent:tatoeba-146189"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:janai-dewa-nai",
-      "examples": [
-        "sent:tatoeba-229343",
-        "sent:tatoeba-228269",
-        "sent:tatoeba-227828"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-14",
-      "examples": [
-        "sent:tatoeba-74036",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-76735"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-11795596"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tte",
-      "examples": [
-        "sent:gen-fee342a8016b",
-        "sent:gen-5412a2ccf468",
-        "sent:gen-000fc485400b"
       ],
       "strand": "language-focused"
     }
@@ -219,15 +137,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 45,
+    "fluency": 16
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 17,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:981",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:1452:1099",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "注意",
+        "一寸",
+        "自分"
+      ]
+    },
+    {
+      "id": "cf:n4:2952:1099",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "正月",
+        "学校",
+        "言う"
+      ]
+    },
+    {
+      "id": "kr:n4:1099",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しゅうかん",
+        "りょうきん",
+        "しょうせつ"
+      ]
+    },
+    {
+      "id": "kr:n4:1296",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かのじょ",
+        "めざめる",
+        "ほんとう"
+      ]
+    }
+  ]
 }

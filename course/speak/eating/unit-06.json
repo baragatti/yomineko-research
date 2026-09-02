@@ -56,57 +56,10 @@
   "cumulative_known_vocab": 155,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:207",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2778:92",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "彼",
-        "何",
-        "私"
-      ]
-    },
-    {
-      "id": "cf:n5:3370:214",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "外",
-        "話",
-        "係"
-      ]
-    },
-    {
-      "id": "kr:n4:1083",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たかい",
-        "よやく",
-        "ねがう"
-      ]
-    },
-    {
-      "id": "kr:n4:796",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はなし",
-        "ほしい",
-        "できる"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:nakute-wa-naranai",
     "gram:no-naka-de",
-    "gram:nara"
+    "gram:n3-kake"
   ],
   "drills": [
     {
@@ -196,15 +149,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 24,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:207",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2778:92",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "彼",
+        "何",
+        "私"
+      ]
+    },
+    {
+      "id": "cf:n5:3370:214",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "外",
+        "話",
+        "係"
+      ]
+    },
+    {
+      "id": "kr:n4:1083",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "よやく",
+        "ねがう"
+      ]
+    },
+    {
+      "id": "kr:n4:796",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなし",
+        "ほしい",
+        "できる"
+      ]
+    }
+  ]
 }

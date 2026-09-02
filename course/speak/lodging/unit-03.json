@@ -58,50 +58,8 @@
   "cumulative_known_vocab": 239,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:415:2926",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "問題",
-        "お金",
-        "ご飯"
-      ]
-    },
-    {
-      "id": "cf:n4:157:756",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "下げる",
-        "何時も",
-        "そんな"
-      ]
-    },
-    {
-      "id": "kr:n4:756",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "よやく",
-        "つかう",
-        "やすい"
-      ]
-    },
-    {
-      "id": "kr:n4:997",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "つもり",
-        "はなし",
-        "とおい"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:you-to-omou"
+    "gram:n3-you-to-omou"
   ],
   "drills": [
     {
@@ -213,15 +171,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 11
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 32,
+    "language-focused": 28,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:415:2926",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "問題",
+        "お金",
+        "ご飯"
+      ]
+    },
+    {
+      "id": "cf:n4:157:756",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "下げる",
+        "何時も",
+        "そんな"
+      ]
+    },
+    {
+      "id": "kr:n4:756",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "よやく",
+        "つかう",
+        "やすい"
+      ]
+    },
+    {
+      "id": "kr:n4:997",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つもり",
+        "はなし",
+        "とおい"
+      ]
+    }
+  ]
 }

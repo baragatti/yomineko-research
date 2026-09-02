@@ -29,7 +29,7 @@
   ],
   "patterns": [
     "gram:ga-hoshii",
-    "gram:gp-17"
+    "gram:n3-kurai"
   ],
   "kanji_recognition": [
     "私",
@@ -52,63 +52,11 @@
   "cumulative_known_vocab": 164,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n4:3596",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:4372",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3596:2713",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "口",
-        "事",
-        "彼"
-      ]
-    },
-    {
-      "id": "cf:n5:4372:424",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "何処",
-        "長い",
-        "以下"
-      ]
-    },
-    {
-      "id": "kr:n5:163",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ともだち",
-        "おぼえる",
-        "こんばん"
-      ]
-    },
-    {
-      "id": "kr:n5:395",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いぬ",
-        "あの",
-        "くち"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:gp-36",
     "gram:gp-70",
     "gram:no-naka-de",
-    "gram:oki-ni",
-    "gram:gp-36"
+    "gram:oki-ni"
   ],
   "drills": [
     {
@@ -121,11 +69,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-17",
+      "pattern": "gram:n3-kurai",
       "examples": [
-        "sent:tatoeba-172639",
-        "sent:tatoeba-124633",
-        "sent:tatoeba-144227"
+        "sent:tatoeba-115111",
+        "sent:tatoeba-97215",
+        "sent:tatoeba-106368"
       ],
       "strand": "language-focused"
     }
@@ -191,15 +139,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 19,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n4:3596",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n5:4372",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3596:2713",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "口",
+        "事",
+        "彼"
+      ]
+    },
+    {
+      "id": "cf:n5:4372:424",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "何処",
+        "長い",
+        "以下"
+      ]
+    },
+    {
+      "id": "kr:n5:163",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ともだち",
+        "おぼえる",
+        "こんばん"
+      ]
+    },
+    {
+      "id": "kr:n5:395",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いぬ",
+        "あの",
+        "くち"
+      ]
+    }
+  ]
 }

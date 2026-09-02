@@ -25,12 +25,11 @@
     "vocab:1002590"
   ],
   "patterns": [
+    "gram:n3-wake-dewa-nai",
     "gram:gp-76",
     "gram:mitai-ni",
     "gram:ta-bakari",
-    "gram:janai-dewa-nai",
-    "gram:bakari",
-    "gram:mitai-da"
+    "gram:janai-dewa-nai"
   ],
   "kanji_recognition": [
     "気",
@@ -53,65 +52,19 @@
   "cumulative_known_vocab": 553,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n5:3830",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:5550:1966",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "珈琲",
-        "来る",
-        "寝る"
-      ]
-    },
-    {
-      "id": "cf:n5:3830:113",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "ステーキ",
-        "パソコン",
-        "美味しい"
-      ]
-    },
-    {
-      "id": "pp:n4:717",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "負ける",
-        "兎も角",
-        "為さる"
-      ]
-    },
-    {
-      "id": "kr:n4:703",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ようい",
-        "かかり",
-        "うごく"
-      ]
-    },
-    {
-      "id": "kr:n4:717",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "でんぽう",
-        "たずねる",
-        "ちいさな"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-wake-ga-nai"
   ],
-  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:n3-wake-dewa-nai",
+      "examples": [
+        "sent:tatoeba-156748",
+        "sent:tatoeba-10901570",
+        "sent:tatoeba-77972"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-76",
       "examples": [
@@ -145,24 +98,6 @@
         "sent:tatoeba-229343",
         "sent:tatoeba-228269",
         "sent:tatoeba-227828"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:bakari",
-      "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:mitai-da",
-      "examples": [
-        "sent:tatoeba-4216208",
-        "sent:tatoeba-774692",
-        "sent:gen-1d94a829f09c"
       ],
       "strand": "language-focused"
     }
@@ -226,15 +161,72 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n5:3830",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5550:1966",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "珈琲",
+        "来る",
+        "寝る"
+      ]
+    },
+    {
+      "id": "cf:n5:3830:113",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "ステーキ",
+        "パソコン",
+        "美味しい"
+      ]
+    },
+    {
+      "id": "pp:n4:717",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "負ける",
+        "兎も角",
+        "為さる"
+      ]
+    },
+    {
+      "id": "kr:n4:703",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ようい",
+        "かかり",
+        "うごく"
+      ]
+    },
+    {
+      "id": "kr:n4:717",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "でんぽう",
+        "たずねる",
+        "ちいさな"
+      ]
+    }
+  ]
 }

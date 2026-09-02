@@ -30,10 +30,9 @@
   "patterns": [
     "gram:ta-bakari",
     "gram:no-ga-suki",
-    "gram:bakari",
+    "gram:n3-bakari",
     "gram:gp-89",
-    "gram:totemo",
-    "gram:temo"
+    "gram:totemo"
   ],
   "kanji_recognition": [
     "帰",
@@ -56,49 +55,9 @@
   "cumulative_known_vocab": 283,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n5:14:115",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "所",
-        "水",
-        "間"
-      ]
-    },
-    {
-      "id": "cf:n5:2348:548",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "豚肉",
-        "半分",
-        "家内"
-      ]
-    },
-    {
-      "id": "kr:n4:1208",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くださる",
-        "りょこう",
-        "わすれる"
-      ]
-    },
-    {
-      "id": "kr:n5:115",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "なれる",
-        "ビール",
-        "うしろ"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-wari-ni-wa"
   ],
-  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:ta-bakari",
@@ -119,11 +78,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:n3-bakari",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-157014",
-        "sent:tatoeba-144050"
+        "sent:tatoeba-113980",
+        "sent:tatoeba-147558",
+        "sent:tatoeba-88247"
       ],
       "strand": "language-focused"
     },
@@ -142,15 +101,6 @@
         "sent:tatoeba-5074",
         "sent:tatoeba-4947",
         "sent:tatoeba-5092"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:gen-fd723f8599f2",
-        "sent:tatoeba-5000"
       ],
       "strand": "language-focused"
     }
@@ -216,15 +166,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 25,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n5:14:115",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "所",
+        "水",
+        "間"
+      ]
+    },
+    {
+      "id": "cf:n5:2348:548",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "豚肉",
+        "半分",
+        "家内"
+      ]
+    },
+    {
+      "id": "kr:n4:1208",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くださる",
+        "りょこう",
+        "わすれる"
+      ]
+    },
+    {
+      "id": "kr:n5:115",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "なれる",
+        "ビール",
+        "うしろ"
+      ]
+    }
+  ]
 }

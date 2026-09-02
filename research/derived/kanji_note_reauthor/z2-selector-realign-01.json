@@ -1,0 +1,377 @@
+{
+ "batch": 100,
+ "source": "research/derived/kanji_stale_notes.json (74 rows: 69 lost, 5 emptied)",
+ "why": "The example-word selector was re-ranked to put at-or-below-level words first, which changed which compounds each kanji record DISPLAYS under each reading. These 74 notes still named a compound the record no longer shows. Every one of the 85 departed words left the record entirely (none is in the irregular bucket, none moved to a sibling reading), so no contrast wording can save them: naming a word the learner cannot see on the page explains nothing. Each note keeps the sentence about what the reading IS and re-anchors the example claim on words the record now shows under that same reading. The six slots whose group is now empty say so with a phrase from kanji_align.EMPTY_CLAIMS, which is the exact string set the emptiness gates test.",
+ "notes": [
+  {
+   "character": "一",
+   "slot": "イチ.",
+   "note_pt": "Leitura sino-japonesa do número um. Vale sozinha, 一 (いち), abre compostos como 一番 (いちばん) e 一日 (いちにち), e aparece no meio da palavra em もう一度; em 一緒 (いっしょ) ela encurta para いっ."
+  },
+  {
+   "character": "人",
+   "slot": "ジン.",
+   "note_pt": "Leitura sino-japonesa. Fecha compostos que nomeiam um tipo de pessoa (友人) e funciona como sufixo de gentílico, em 人 (じん) e em 外国人 (がいこくじん); em 人生 ela abre a palavra."
+  },
+  {
+   "character": "人",
+   "slot": "ニン.",
+   "note_pt": "Outra leitura sino-japonesa. Abre 人間 e fecha 他人; qual das duas leituras entra em cada palavra se aprende caso a caso."
+  },
+  {
+   "character": "年",
+   "slot": "ネン.",
+   "note_pt": "Leitura sino-japonesa. Fecha compostos (少年, 去年, 来年, 再来年), fica no meio de 万年筆 (まんねんひつ), a caneta-tinteiro, e vale sozinha como palavra: 年 (ねん), ano."
+  },
+  {
+   "character": "大",
+   "slot": "ダイ.",
+   "note_pt": "Leitura sino-japonesa. Nesta entrada ela abre a palavra em 大学 (だいがく), 大好き (だいすき) e 大丈夫 (だいじょうぶ)."
+  },
+  {
+   "character": "本",
+   "slot": "ホン.",
+   "note_pt": "Leitura sino-japonesa e a única com exemplos nesta entrada. Abre a maioria das palavras (本当, 本の, 本気, 本物, 本人, 本棚, 本島), fecha em 日本 e 基本, e vale sozinha em 本 (ほん), livro."
+  },
+  {
+   "character": "出",
+   "slot": "で.る",
+   "note_pt": "Leitura nativa do verbo 出る, sair. É também a que abre 出かける (でかける), sair de casa, 出来る (できる) e o substantivo 出口 (でぐち), a saída."
+  },
+  {
+   "character": "時",
+   "slot": "ジ.",
+   "note_pt": "Leitura sino-japonesa. Abre compostos (時間, 時代) e fecha outros (当時); 時 (じ) sozinho é o sufixo que marca as horas do relógio."
+  },
+  {
+   "character": "生",
+   "slot": "う.まれ",
+   "note_pt": "base nativa う com o okurigana まれ; nesta lista ela ficou sem exemplo."
+  },
+  {
+   "character": "生",
+   "slot": "ショウ.",
+   "note_pt": "segunda leitura sino-japonesa, bem mais rara; aqui ela aparece só em 誕生日 (たんじょうび), onde ela sonoriza e vira じょう."
+  },
+  {
+   "character": "上",
+   "slot": "ジョウ.",
+   "note_pt": "leitura sino-japonesa. Ela abre 上手 (じょうず), fecha 以上 (いじょう) e também aparece sozinha em 上 (じょう), do ponto de vista de."
+  },
+  {
+   "character": "今",
+   "slot": "コン.",
+   "note_pt": "leitura sino-japonesa. Ela abre todos os compostos do grupo, sempre com a ideia de agora, este ou desta vez: 今夜, 今晩, 今週, 今月, 今度 e 今回."
+  },
+  {
+   "character": "入",
+   "slot": "ニュウ.",
+   "note_pt": "leitura sino-japonesa; é a dos compostos, ora abrindo a palavra (入院), ora fechando (収入, 購入, 記入, 輸入)."
+  },
+  {
+   "character": "立",
+   "slot": "た.ち-",
+   "note_pt": "forma たち, que abre verbos compostos: 立ち寄る (たちよる) e 立ち去る (たちさる), e também 立場 (たちば), a posição de alguém."
+  },
+  {
+   "character": "手",
+   "slot": "て.",
+   "note_pt": "leitura nativa; é mão como palavra solta (手) e aparece tanto no começo (手紙, 手伝う) quanto no fim (相手, 切手) e no meio de お手洗い (おてあらい), o banheiro."
+  },
+  {
+   "character": "手",
+   "slot": "シュ.",
+   "note_pt": "leitura sino-japonesa; fecha compostos que nomeiam quem faz algo, como 選手 (せんしゅ), atleta, o único exemplo desta lista."
+  },
+  {
+   "character": "学",
+   "slot": "ガク.",
+   "note_pt": "leitura sino-japonesa; é a leitura de todos os compostos da lista, abrindo a palavra (学校, que encolhe para がっ antes de こ, 学生, 学者), fechando (大学, 数学, 科学, 留学, 文学) ou ficando no meio (留学生)."
+  },
+  {
+   "character": "下",
+   "slot": "カ.",
+   "note_pt": "leitura sino-japonesa; fica no meio de 地下鉄 (ちかてつ) e fecha 以下 (いか) e 廊下 (ろうか)."
+  },
+  {
+   "character": "来",
+   "slot": "き.",
+   "note_pt": "Leitura nativa (kun) curta, sem okurigana. Nesta entrada ela só aparece dentro de 出来: 出来る (できる) e 出来事 (できごと), onde 出 vale で e 来 vale き."
+  },
+  {
+   "character": "名",
+   "slot": "メイ.",
+   "note_pt": "Leitura sino-japonesa (on), a mais comum nos compostos: abre 名誉 (めいよ), honra, e fecha 有名 (famoso) e 署名 (assinar o nome)."
+  },
+  {
+   "character": "何",
+   "slot": "なに.",
+   "note_pt": "Leitura nativa completa. Vale para 何 sozinho, no sentido de o que, e é a forma que aparece antes das partículas か e も."
+  },
+  {
+   "character": "何",
+   "slot": "なん.",
+   "note_pt": "Variante nasal da leitura nativa. Aparece no próprio 何 lido なん, a forma que vem antes dos contadores e diante de sons de t e d."
+  },
+  {
+   "character": "事",
+   "slot": "ジ.",
+   "note_pt": "Leitura sino-japonesa dos compostos, e ela cai nos dois lados da palavra: abre em 事故, 事実 e 事務所, e fecha em 食事, 返事, 大事, 火事 e 用事."
+  },
+  {
+   "character": "地",
+   "slot": "チ.",
+   "note_pt": "Leitura sino-japonesa mais frequente do caractere: abre a maior parte das palavras (地図, 地球, 地域, 地理, 地下鉄, 地位) e fecha em 土地 e 余地."
+  },
+  {
+   "character": "合",
+   "slot": "あ.う",
+   "note_pt": "Leitura nativa: forma o verbo 合う (あう), combinar, bater certo, e fecha verbos compostos como 間に合う (まにあう) e 付き合う (つきあう)."
+  },
+  {
+   "character": "合",
+   "slot": "あ.わせる",
+   "note_pt": "Leitura nativa registrada com o okurigana わせる. A lista desta leitura está vazia, então não há exemplo para mostrar."
+  },
+  {
+   "character": "方",
+   "slot": "かた.",
+   "note_pt": "leitura nativa; vale sozinha como 方 (かた), jeito respeitoso de dizer pessoa, e fecha 仕方 (しかた), maneira de fazer."
+  },
+  {
+   "character": "方",
+   "slot": "ホウ.",
+   "note_pt": "leitura sino-japonesa, a de direção ou lado; nesta lista ela aparece só em 両方 (りょうほう), os dois lados."
+  },
+  {
+   "character": "場",
+   "slot": "ば.",
+   "note_pt": "Leitura nativa: vale sozinha em 場 (ば), lugar, e tanto abre palavras (場所, 場合) quanto as fecha (立場, 市場, 売り場)."
+  },
+  {
+   "character": "動",
+   "slot": "ドウ.",
+   "note_pt": "leitura sino-japonesa dos compostos; abre 動物 e 動物園, fecha 行動, 運動, 感動 e 活動, e fica no meio em 自動車."
+  },
+  {
+   "character": "理",
+   "slot": "リ.",
+   "note_pt": "leitura sino-japonesa e a única com exemplos aqui; abre 理解, 理由 e 理論 e fecha 料理, 無理, 修理, 処理, 整理, 管理 e 地理."
+  },
+  {
+   "character": "主",
+   "slot": "シュ.",
+   "note_pt": "leitura sino-japonesa; abre quase todos os compostos listados (主張, 主人, 主要, 主義, 主婦), fica no meio de ご主人 (ごしゅじん), o marido de outra pessoa, e ainda vale sozinha em 主 (senhor, dono)."
+  },
+  {
+   "character": "用",
+   "slot": "ヨウ.",
+   "note_pt": "leitura sino-japonesa; fecha a maioria dos compostos (利用, 信用, 使用, 費用, 採用, 活用), abre 用意 e 用事 e vale sozinha em 用 (afazer, compromisso)."
+  },
+  {
+   "character": "度",
+   "slot": "ド.",
+   "note_pt": "leitura sino-japonesa mais comum; vale sozinha em 度 (grau) e fecha todos os compostos listados: 一度, もう一度, 今度, 丁度, 態度 e 程度."
+  },
+  {
+   "character": "度",
+   "slot": "ト.",
+   "note_pt": "leitura sino-japonesa secundária; no único exemplo deste grupo, 屹度 (きっと), ela aparece em uma grafia que na prática se escreve em kana."
+  },
+  {
+   "character": "家",
+   "slot": "カ.",
+   "note_pt": "Leitura sino-japonesa, presente na maior parte dos compostos. Abre a palavra em 家族, 家庭, 家具, 家事 e 家内, e fecha em 作家, 画家 e 国家."
+  },
+  {
+   "character": "文",
+   "slot": "ブン.",
+   "note_pt": "leitura sino-japonesa principal; vale para 文 sozinho (frase) e aparece tanto no começo (文化, 文章, 文学, 文法) quanto no fim (作文)."
+  },
+  {
+   "character": "知",
+   "slot": "チ.",
+   "note_pt": "leitura sino-japonesa; abre 知識 (ちしき), conhecimento, e 知恵 (ちえ), sabedoria, e fecha 無知 e 承知."
+  },
+  {
+   "character": "物",
+   "slot": "ブツ.",
+   "note_pt": "leitura sino-japonesa; nesta lista ela aparece em 動物 (どうぶつ), animal, e em 動物園 (どうぶつえん), o zoológico."
+  },
+  {
+   "character": "引",
+   "slot": "ひ.く",
+   "note_pt": "leitura nativa do verbo 引く (puxar); abre 引き起こす, 引き出し e 引き受ける, e vira ひっ em 引っ越す e 引っ張る. Em 取引 (とりひき) e 字引 (じびき) ela fecha a palavra, e em 字引 ainda sonoriza para びき."
+  },
+  {
+   "character": "引",
+   "slot": "イン.",
+   "note_pt": "leitura sino-japonesa; nesta lista ela abre uma palavra só, 引用 (いんよう), citar."
+  },
+  {
+   "character": "品",
+   "slot": "しな.",
+   "note_pt": "Leitura nativa (kun). Vale com o kanji sozinho, na palavra 品 (mercadoria), e abre 品物 (しなもの), artigo, objeto."
+  },
+  {
+   "character": "特",
+   "slot": "トク.",
+   "note_pt": "Leitura sino-japonesa (on) e a única deste kanji com palavras aqui. Quase sempre abre o composto (特に, 特別, 特徴, 特有, 特定, 特売, 特技); em 特権 e 特急 o som encurta para とっ (とっけん, とっきゅう), e só em 独特 ela fecha a palavra."
+  },
+  {
+   "character": "真",
+   "slot": "シン.",
+   "note_pt": "Leitura sino-japonesa (on), a dos compostos: abre em 真実, 真相, 真剣 e 真理, e fecha em 写真 (foto)."
+  },
+  {
+   "character": "着",
+   "slot": "き.る",
+   "note_pt": "Leitura nativa (kun) do verbo 着る (vestir, pôr roupa). Abre 着物 e 着替える e fecha 上着 e 下着, onde sonoriza e vira ぎ."
+  },
+  {
+   "character": "仕",
+   "slot": "シ.",
+   "note_pt": "Leitura sino-japonesa e a que domina o kanji: abre todas as palavras daqui (仕事, 仕方, 仕上げる, 仕組み, 仕様, 仕舞う)."
+  },
+  {
+   "character": "味",
+   "slot": "ミ.",
+   "note_pt": "Leitura sino-japonesa: fecha quase todos os compostos (意味, 興味, 趣味, 気味), onde o sentido é figurado e não tem nada a ver com comida, e abre 味方 (みかた), aliado, e 味噌 (みそ), o missô."
+  },
+  {
+   "character": "字",
+   "slot": "ジ.",
+   "note_pt": "Leitura sino-japonesa e a que aparece em quase todo o vocabulário do caractere: vale para o 字 sozinho (letra) e fecha 漢字, 文字, 数字, 赤字, 苗字 e 黒字. Ela abre 字体 (じたい), tipo de letra, e 字引 (じびき), dicionário."
+  },
+  {
+   "character": "部",
+   "slot": "ブ.",
+   "note_pt": "Leitura sino-japonesa e a única com vocabulário nesta lista. Ela cai em qualquer posição: no começo (部分, 部下, 部長), no fim (全部, 一部, 学部), no meio (大部分) e sozinha em 部 (ぶ), parte ou seção."
+  },
+  {
+   "character": "実",
+   "slot": "ジツ.",
+   "note_pt": "Leitura sino-japonesa principal, do lado fato e realidade: fecha 事実, 現実 e 確実, e abre todos os outros compostos desta lista. Ela encurta para じっ em 実際 (じっさい), 実行 (じっこう) e 実験 (じっけん)."
+  },
+  {
+   "character": "関",
+   "slot": "カン.",
+   "note_pt": "Leitura sino-japonesa principal e a mais frequente. Abre 関係 (relação), 関心 (interesse), 関連 (conexão), 関税 (tarifa alfandegária), 関与 (envolvimento) e o verbo 関する, e fecha 玄関 (a entrada da casa) e 機関 (きかん), instituição ou mecanismo."
+  },
+  {
+   "character": "全",
+   "slot": "ゼン.",
+   "note_pt": "Única leitura sino-japonesa do kanji nesta entrada. Abre 全部 (tudo), 全然, 全員 (todos), 全体 (o todo) e 全国 (o país inteiro), fecha 完全 (completo) e 安全 (segurança), e vale sozinha em 全 (ぜん)."
+  },
+  {
+   "character": "通",
+   "slot": "ツウ.",
+   "note_pt": "Leitura sino-japonesa principal. Fecha 普通 (comum), 交通 (trânsito) e 共通 (em comum), e abre 通学 (o trajeto até a escola), 通過 (passagem) e 通信 (comunicação)."
+  },
+  {
+   "character": "化",
+   "slot": "カ.",
+   "note_pt": "Leitura sino-japonesa (on) e a mais frequente aqui: fecha a palavra na maioria dos compostos, muitas vezes com a ideia de virar ou transformar (変化, 進化, 悪化, 軟化, 同化), e abre 化学 (かがく), a química."
+  },
+  {
+   "character": "当",
+   "slot": "あ.たり",
+   "note_pt": "Mesma leitura あ com o okurigana たり. A lista de compostos desta leitura está vazia, então não há exemplo para citar."
+  },
+  {
+   "character": "当",
+   "slot": "あ.て",
+   "note_pt": "Leitura あ registrada com o okurigana て. A lista de compostos desta leitura está vazia, sem exemplo aqui."
+  },
+  {
+   "character": "成",
+   "slot": "セイ.",
+   "note_pt": "Leitura sino-japonesa (on) dos compostos: abre a palavra em 成功, 成長, 成績 e 成人, e fecha em 完成, 構成 e 賛成."
+  },
+  {
+   "character": "公",
+   "slot": "コウ.",
+   "note_pt": "Leitura sino-japonesa (on) dos compostos: quase sempre abre a palavra (公園, 公開, 公平, 公式, 公害, 公正, 公衆, 公務員), e em 主人公 (protagonista) ela fecha."
+  },
+  {
+   "character": "機",
+   "slot": "キ.",
+   "note_pt": "Leitura sino-japonesa que carrega todo o vocabulário desta entrada. Ela abre palavras (機械 máquina, 機会 oportunidade, 機能 função, 機嫌 humor, 機関 instituição), fecha outras (飛行機 avião, 危機 crise, 動機 motivação, 扇風機 ventilador) e vale por máquina ou aparelho quando 機 aparece sozinho."
+  },
+  {
+   "character": "平",
+   "slot": "ヘイ.",
+   "note_pt": "Leitura sino-japonesa mais comum de 平. Abre 平和 (paz), 平均 (média) e 平気 (tranquilo); fecha 不平 (queixa) e 公平 (justo, imparcial); e fica no meio de 地平線 e 水平線 (horizonte)."
+  },
+  {
+   "character": "点",
+   "slot": "テン.",
+   "note_pt": "Leitura sino-japonesa que carrega todo o vocabulário desta entrada. Ela quase sempre fecha a palavra (欠点 defeito, 要点 ponto principal, 弱点 ponto fraco, 観点 ponto de vista, 満点 nota máxima, 交差点 cruzamento); abre em 点数 (nota, pontuação) e vale por ponto ou nota quando 点 aparece sozinho."
+  },
+  {
+   "character": "原",
+   "slot": "ゲン.",
+   "note_pt": "Leitura sino-japonesa (on) que abre todos os compostos reunidos aqui, como 原因, 原料 e 原則. Em 原文 e 原作 ela marca justamente o texto ou a obra original."
+  },
+  {
+   "character": "交",
+   "slot": "まじ.わる",
+   "note_pt": "Base nativa まじ com o okurigana わる. Nenhuma palavra ficou listada neste grupo."
+  },
+  {
+   "character": "交",
+   "slot": "コウ.",
+   "note_pt": "Leitura sino-japonesa (on) que abre quase todos os compostos reunidos aqui, como 交通, 交換 e 交差点, e fecha 外交 (がいこう), diplomacia."
+  },
+  {
+   "character": "面",
+   "slot": "メン.",
+   "note_pt": "Leitura sino-japonesa (on) que abre a palavra em 面倒 e 面接, fecha em 地面, 直面, 表面 e 場面, e vale sozinha em 面 (めん), rosto ou máscara."
+  },
+  {
+   "character": "論",
+   "slot": "ロン.",
+   "note_pt": "Leitura sino-japonesa e a única do vocabulário deste kanji: abre 論文, 論争 e os verbos 論ずる e 論じる, e fecha 議論, 理論, 結論, 討論, 世論 (よろん) e 勿論 (もちろん)."
+  },
+  {
+   "character": "直",
+   "slot": "なお.す",
+   "note_pt": "Leitura nativa (kun) なお do verbo 直す (なおす), consertar ou arrumar, com o okurigana す, o único exemplo desta lista."
+  },
+  {
+   "character": "直",
+   "slot": "チョク.",
+   "note_pt": "Leitura sino-japonesa (on) dos compostos: abre a palavra em 直面 e 直接, com o sentido de direto."
+  },
+  {
+   "character": "無",
+   "slot": "ブ.",
+   "note_pt": "Leitura sino-japonesa menos frequente, também no começo da palavra. Nesta entrada ela só aparece em 無事 (ぶじ), são e salvo."
+  },
+  {
+   "character": "可",
+   "slot": "カ.",
+   "note_pt": "Leitura sino-japonesa (on) カ, que aparece em 可能, 許可, 不可, 不可欠 e no próprio 可 sozinho, quase sempre com a ideia de permitido ou viável. Em 可也 (かなり), bastante, o kanji entra só pelo som, sem esse sentido."
+  },
+  {
+   "character": "消",
+   "slot": "ショウ.",
+   "note_pt": "Leitura sino-japonesa; nos compostos desta entrada ela sempre abre a palavra (消費, 消化, 消息, 消極的, 消防, 消防署). O sentido vai de consumir, como em 消費, a extinguir, como em 消防, o combate a incêndios."
+  },
+  {
+   "character": "然",
+   "slot": "ゼン.",
+   "note_pt": "Leitura sino-japonesa presente na maioria dos compostos listados, sempre no fim da palavra: 全然, 突然, 偶然, 自然, 断然 e 依然."
+  },
+  {
+   "character": "命",
+   "slot": "ミョウ.",
+   "note_pt": "Segunda leitura sino-japonesa, bem mais rara. Nenhum composto desta entrada foi agrupado nela."
+  },
+  {
+   "character": "処",
+   "slot": "ショ.",
+   "note_pt": "Leitura sino-japonesa ligada a tratar de algo, dar encaminhamento: abre 処理, 処分 e 処置, e fecha 対処."
+  }
+ ]
+}

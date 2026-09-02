@@ -28,10 +28,8 @@
   ],
   "patterns": [
     "gram:ga-hoshii",
-    "gram:naide",
-    "gram:kara",
-    "gram:tai",
-    "gram:tte"
+    "gram:n3-naide",
+    "gram:kara"
   ],
   "kanji_recognition": [
     "間",
@@ -54,60 +52,10 @@
   "cumulative_known_vocab": 130,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n5:4186",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:5176",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:5176:617",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "夜",
-        "力",
-        "何"
-      ]
-    },
-    {
-      "id": "cf:n4:208:1302",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "聞く",
-        "時間",
-        "願う"
-      ]
-    },
-    {
-      "id": "kr:n4:1001",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はなす",
-        "あした",
-        "ねだん"
-      ]
-    },
-    {
-      "id": "kr:n4:1302",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けっこう",
-        "はじめて",
-        "かのじょ"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:te-kara"
+    "gram:n3-ppanashi",
+    "gram:te-kara",
+    "gram:gp-121"
   ],
   "drills": [
     {
@@ -120,11 +68,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:naide",
+      "pattern": "gram:n3-naide",
       "examples": [
-        "sent:tatoeba-125387",
-        "sent:tatoeba-145933",
-        "sent:tatoeba-144418"
+        "sent:tatoeba-152171",
+        "sent:tatoeba-123792",
+        "sent:tatoeba-80886"
       ],
       "strand": "language-focused"
     },
@@ -134,24 +82,6 @@
         "sent:tatoeba-76156",
         "sent:tatoeba-4772",
         "sent:gen-671b7aebf53d"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tai",
-      "examples": [
-        "sent:tatoeba-83633",
-        "sent:tatoeba-83634",
-        "sent:tatoeba-84964"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tte",
-      "examples": [
-        "sent:gen-5412a2ccf468",
-        "sent:gen-fee342a8016b",
-        "sent:gen-48c455d520ba"
       ],
       "strand": "language-focused"
     }
@@ -216,15 +146,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n5:4186",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n5:5176",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:5176:617",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "夜",
+        "力",
+        "何"
+      ]
+    },
+    {
+      "id": "cf:n4:208:1302",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "聞く",
+        "時間",
+        "願う"
+      ]
+    },
+    {
+      "id": "kr:n4:1001",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はなす",
+        "あした",
+        "ねだん"
+      ]
+    },
+    {
+      "id": "kr:n4:1302",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっこう",
+        "はじめて",
+        "かのじょ"
+      ]
+    }
+  ]
 }

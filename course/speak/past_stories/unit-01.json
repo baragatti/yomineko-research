@@ -26,12 +26,11 @@
     "vocab:1039920"
   ],
   "patterns": [
+    "gram:n3-sei-de",
     "gram:gp-149",
     "gram:totemo",
-    "gram:gp-120",
-    "gram:kyuu-ni",
-    "gram:temo",
-    "gram:gp-14"
+    "gram:n3-temo",
+    "gram:gp-120"
   ],
   "kanji_recognition": [
     "気",
@@ -54,60 +53,19 @@
   "cumulative_known_vocab": 412,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "kr:n4:935",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まもる",
-        "からい",
-        "ピアノ"
-      ]
-    },
-    {
-      "id": "kr:n5:375",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おじ",
-        "その",
-        "くる"
-      ]
-    },
-    {
-      "id": "cf:n3:5046:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "口",
-        "日",
-        "犬"
-      ]
-    },
-    {
-      "id": "cf:n3:5058:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "傘",
-        "歯",
-        "分"
-      ]
-    },
-    {
-      "id": "pp:n3:1422",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "昼",
-        "心",
-        "薬"
-      ]
-    }
+  "patterns_chunked": [
+    "gram:n3-moshi-temo"
   ],
-  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:n3-sei-de",
+      "examples": [
+        "sent:tatoeba-10561332",
+        "sent:tatoeba-219058",
+        "sent:tatoeba-1147155"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-149",
       "examples": [
@@ -127,38 +85,20 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-temo",
+      "examples": [
+        "sent:tatoeba-6015",
+        "sent:tatoeba-85028",
+        "sent:tatoeba-199554"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-120",
       "examples": [
         "sent:tatoeba-193408",
         "sent:gen-40a736aa4ac8",
         "sent:gen-5bccb5134f4a"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:kyuu-ni",
-      "examples": [
-        "sent:tatoeba-182469",
-        "sent:tatoeba-182472",
-        "sent:tatoeba-182471"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:temo",
-      "examples": [
-        "sent:gen-ff6004963148",
-        "sent:tatoeba-78150",
-        "sent:gen-fd723f8599f2"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-14",
-      "examples": [
-        "sent:tatoeba-74036",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-76735"
       ],
       "strand": "language-focused"
     }
@@ -226,15 +166,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 23,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "kr:n4:935",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まもる",
+        "からい",
+        "ピアノ"
+      ]
+    },
+    {
+      "id": "kr:n5:375",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おじ",
+        "その",
+        "くる"
+      ]
+    },
+    {
+      "id": "cf:n3:5046:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "口",
+        "日",
+        "犬"
+      ]
+    },
+    {
+      "id": "cf:n3:5058:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "傘",
+        "歯",
+        "分"
+      ]
+    },
+    {
+      "id": "pp:n3:1422",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "昼",
+        "心",
+        "薬"
+      ]
+    }
+  ]
 }

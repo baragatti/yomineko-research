@@ -28,6 +28,7 @@
   ],
   "patterns": [
     "gram:o-kudasai",
+    "gram:n3-beki-da",
     "gram:da-desu",
     "gram:gp-8"
   ],
@@ -52,61 +53,9 @@
   "cumulative_known_vocab": 56,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:520",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:564",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3049:805",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "知る",
-        "見る",
-        "幾ら"
-      ]
-    },
-    {
-      "id": "cf:n4:3622:805",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "半分",
-        "迷惑",
-        "此れ"
-      ]
-    },
-    {
-      "id": "kr:n4:1287",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いくら",
-        "じかん",
-        "できる"
-      ]
-    },
-    {
-      "id": "kr:n4:805",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あまり",
-        "いくら",
-        "わたし"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:gp-3",
-    "gram:wa-yori-desu"
+    "gram:n3-kesshite-nai",
+    "gram:gp-3"
   ],
   "drills": [
     {
@@ -115,6 +64,15 @@
         "sent:tatoeba-150556",
         "sent:tatoeba-197657",
         "sent:tatoeba-143718"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-beki-da",
+      "examples": [
+        "sent:tatoeba-149720",
+        "sent:tatoeba-144981",
+        "sent:tatoeba-169806"
       ],
       "strand": "language-focused"
     },
@@ -189,15 +147,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:520",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:564",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3049:805",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "知る",
+        "見る",
+        "幾ら"
+      ]
+    },
+    {
+      "id": "cf:n4:3622:805",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "半分",
+        "迷惑",
+        "此れ"
+      ]
+    },
+    {
+      "id": "kr:n4:1287",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いくら",
+        "じかん",
+        "できる"
+      ]
+    },
+    {
+      "id": "kr:n4:805",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "いくら",
+        "わたし"
+      ]
+    }
+  ]
 }

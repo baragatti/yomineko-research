@@ -29,9 +29,9 @@
   "patterns": [
     "gram:wa-dou-desu-ka",
     "gram:te-kuru",
+    "gram:gp-121",
     "gram:da-desu",
-    "gram:gp-20",
-    "gram:wa-yori-desu"
+    "gram:gp-20"
   ],
   "kanji_recognition": [
     "気",
@@ -54,58 +54,6 @@
   "cumulative_known_vocab": 396,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:183",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:414",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:2310:1325",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "今夜",
-        "言う",
-        "出る"
-      ]
-    },
-    {
-      "id": "cf:n4:2311:1325",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "関係",
-        "計画",
-        "張る"
-      ]
-    },
-    {
-      "id": "kr:n4:1140",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "うしなう",
-        "たとえば",
-        "ばんごう"
-      ]
-    },
-    {
-      "id": "kr:n4:1325",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たてる",
-        "あした",
-        "すすむ"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:tara"
   ],
@@ -129,6 +77,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:gp-121",
+      "examples": [
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:da-desu",
       "examples": [
         "sent:tatoeba-5332",
@@ -143,15 +100,6 @@
         "sent:tatoeba-77564",
         "sent:tatoeba-95997",
         "sent:tatoeba-198119"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:wa-yori-desu",
-      "examples": [
-        "sent:gen-bb02a0ac267e",
-        "sent:gen-e97b8aeb1456",
-        "sent:gen-90ed9f56e125"
       ],
       "strand": "language-focused"
     }
@@ -215,15 +163,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 24,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:183",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:414",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:2310:1325",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "今夜",
+        "言う",
+        "出る"
+      ]
+    },
+    {
+      "id": "cf:n4:2311:1325",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "関係",
+        "計画",
+        "張る"
+      ]
+    },
+    {
+      "id": "kr:n4:1140",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "うしなう",
+        "たとえば",
+        "ばんごう"
+      ]
+    },
+    {
+      "id": "kr:n4:1325",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たてる",
+        "あした",
+        "すすむ"
+      ]
+    }
+  ]
 }

@@ -126,6 +126,24 @@ file records four SYSTEMIC gloss findings deferred with reasons: `headword` is i
 (451 of 1,947 senses unresolvable), `vocab_form` has no tag column, and the romaji convention for
 ー and final っ is the corpus's own stated rule.
 
+### A10. Should a speaking-path stage's patterns be capped at its level band?
+**Question.** A unit's `patterns` are the grammar points whose forms occur in the unit's own
+phrases. The builder has never filtered them by the stage's `approx_band`; the phrases are gated by
+the vocabulary known set, so a pattern label names grammar the learner has just produced. Today's
+placeholder-aware form matcher (135 of 536 forms carry ～ — every N3 record — and none of them had
+ever matched) made this visible: N3 points now appear where their forms genuinely occur.
+**Evidence (patterns by level per stage, after the fix).** arrival (pre-n5): n5 6, n4 5 — the n4
+were already there at HEAD. eating (n5): n5 6, n4 6, n3 1. getting_around (n5): n5 6, n4 6, n3 7.
+health (n4): n4 11, n5 8, n3 3. real_talk (n3): n3 23, n4 4, n5 2. The practice builder already
+demotes any pattern with fewer than three known-set example sentences, which is itself evidence the
+survivors are within reach.
+**Options.** (a) No cap — a pattern describes the phrase; keep, and let the label carry the level so
+the learner sees it. (b) Cap at the band's upper level (pre-n5 counts as n5) — removes ~1/3 of
+today's patterns, including N4 points in N5 stages that predate this session. (c) Cap at band+1.
+**Recommendation.** (a), with the level shown on the label. A pattern the learner just said aloud
+is not "above their level".
+Detail: scripts/export/pattern_forms.py (the matcher and its runnable proof); this census.
+
 ---
 
 ## B. Repair campaigns — running now (per-item judgement, workflow-shaped)
@@ -148,6 +166,14 @@ file records four SYSTEMIC gloss findings deferred with reasons: `headword` is i
   living in `particles[].explanation` (unreachable by the sentence/token repair schema — needs a
   particle-scoped pass); 1 kana defect (gen-9f80f08cc644 reads 辛い as つらい); 1 table row that
   arrived with new == old (gen-960d7cee0887, 〜とみえて direction) and needs a corrected string.
+- **Reading-override ledger:** `research/derived/fable5_validation/verified_reading_overrides.json`
+  is the sanctioned escape hatch when the analyzer's reading is wrong in context, and it already
+  registers 辛い→からい for two food sentences (tatoeba-10901867, tatoeba-11727272). gen-9f80f08cc644
+  (このみそはちょっと辛いです) now has からい in kana and romaji but its token still carries the
+  analyzer's つらい — the only 辛い food sentence whose token disagrees. The ledger's own note
+  certifies every entry as 2-vote verified, so the follow-up pass refused to add a row on its own
+  authority. Needs the same verification, then one row. The 言う→ゆう case (14 tokens) is the same
+  mechanism if a display override is ever wanted there.
 - **Human rulings, not repairs:** gender-inclusive parentheses "(a)" in 9 natural translations —
   house style says natural speech, but the alternative is choosing a gender the Japanese does not
   state; and 5 subject-less sentences where pt and en chose different persons.

@@ -28,9 +28,9 @@
   ],
   "patterns": [
     "gram:gp-82",
+    "gram:n3-naide",
     "gram:gp-149",
-    "gram:gp-61",
-    "gram:gp-62"
+    "gram:gp-61"
   ],
   "kanji_recognition": [
     "歯",
@@ -53,48 +53,6 @@
   "cumulative_known_vocab": 256,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n4:1580:804",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "貴方",
-        "此れ",
-        "以前"
-      ]
-    },
-    {
-      "id": "kr:n4:804",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ほとんど",
-        "がくせい",
-        "シャワー"
-      ]
-    },
-    {
-      "id": "kr:n5:142",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おぼえる",
-        "みつかる",
-        "でんしゃ"
-      ]
-    },
-    {
-      "id": "cf:n3:3552:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "船",
-        "力",
-        "私"
-      ]
-    }
-  ],
   "patterns_chunked": [
     "gram:nakute-wa-ikenai",
     "gram:te-wa-ikenai"
@@ -106,6 +64,15 @@
         "sent:tatoeba-1323453",
         "sent:tatoeba-192500",
         "sent:gen-20c037b79cad"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-naide",
+      "examples": [
+        "sent:tatoeba-152171",
+        "sent:tatoeba-123792",
+        "sent:tatoeba-80886"
       ],
       "strand": "language-focused"
     },
@@ -124,15 +91,6 @@
         "sent:tatoeba-164952",
         "sent:tatoeba-182128",
         "sent:tatoeba-148953"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-62",
-      "examples": [
-        "sent:tatoeba-174749",
-        "sent:tatoeba-174748",
-        "sent:tatoeba-182548"
       ],
       "strand": "language-focused"
     }
@@ -198,15 +156,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n4:1580:804",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "貴方",
+        "此れ",
+        "以前"
+      ]
+    },
+    {
+      "id": "kr:n4:804",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ほとんど",
+        "がくせい",
+        "シャワー"
+      ]
+    },
+    {
+      "id": "kr:n5:142",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おぼえる",
+        "みつかる",
+        "でんしゃ"
+      ]
+    },
+    {
+      "id": "cf:n3:3552:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "船",
+        "力",
+        "私"
+      ]
+    }
+  ]
 }

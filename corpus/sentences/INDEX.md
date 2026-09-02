@@ -1318,7 +1318,7 @@ _Generated 2026-09-02. Full §6 dissection. `translation` = {"pt-BR":…,"en":�
 | sent:gen-95efe8a4cf03 | 今日の点数は零でした | A nota de hoje foi zero. | n2 |
 | sent:gen-96054e83dfbe | これは私の好きな歌の一つだ | Essa é uma das minhas músicas favoritas. | n4 |
 | sent:gen-960cef5443b3 | １日から新しい仕事が始まる | O trabalho novo começa no dia 1. | n4 |
-| sent:gen-960d7cee0887 | 彼は忙しいとみえて、返事が来ない | Pelo visto ele está ocupado, porque não responde. | n3 |
+| sent:gen-960d7cee0887 | 彼は忙しいとみえて、返事が来ない | Pelo visto ele está ocupado, e por isso não responde. | n3 |
 | sent:gen-9647cdb85f04 | 姉は音楽の先生だ | Minha irmã mais velha é professora de música. | n4 |
 | sent:gen-965968e92ef9 | この町はバスが少なくて不便だ | Esta cidade tem poucos ônibus, então é inconveniente. | n4 |
 | sent:gen-965e1e9de008 | 今日は非常に暑いです | Hoje está extremamente quente. | n3 |

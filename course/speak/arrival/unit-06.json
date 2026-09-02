@@ -53,61 +53,9 @@
   "cumulative_known_vocab": 48,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:61",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:1063",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n5:16",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "よやく",
-        "じかん",
-        "ねがう"
-      ]
-    },
-    {
-      "id": "kr:n5:257",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "みる",
-        "いく",
-        "ない"
-      ]
-    },
-    {
-      "id": "cf:n4:1111:1132",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "夜",
-        "事",
-        "係"
-      ]
-    },
-    {
-      "id": "cf:n4:1172:1132",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "私",
-        "係",
-        "夜"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:te-sumimasen",
-    "gram:gp-148"
+    "gram:gp-148",
+    "gram:gp-121"
   ],
   "drills": [
     {
@@ -204,15 +152,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:61",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:1063",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n5:16",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "よやく",
+        "じかん",
+        "ねがう"
+      ]
+    },
+    {
+      "id": "kr:n5:257",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "みる",
+        "いく",
+        "ない"
+      ]
+    },
+    {
+      "id": "cf:n4:1111:1132",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "夜",
+        "事",
+        "係"
+      ]
+    },
+    {
+      "id": "cf:n4:1172:1132",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "私",
+        "係",
+        "夜"
+      ]
+    }
+  ]
 }

@@ -28,8 +28,7 @@
     "gram:te-kudasai",
     "gram:nikui",
     "gram:gp-12",
-    "gram:da-desu",
-    "gram:gp-15"
+    "gram:da-desu"
   ],
   "kanji_recognition": [
     "時",
@@ -52,50 +51,9 @@
   "cumulative_known_vocab": 262,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "kr:n3:1381",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ほとんど",
-        "すくない",
-        "まいにち"
-      ]
-    },
-    {
-      "id": "cf:n3:3572:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "何",
-        "線",
-        "頁"
-      ]
-    },
-    {
-      "id": "cf:n3:3585:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "事",
-        "鼾",
-        "物"
-      ]
-    },
-    {
-      "id": "kr:n4:1240",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "しょくどう",
-        "あたらしい",
-        "さいちゅう"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:te-ita"
+    "gram:te-ita",
+    "gram:gp-121"
   ],
   "drills": [
     {
@@ -131,15 +89,6 @@
         "sent:tatoeba-5332",
         "sent:tatoeba-75192",
         "sent:tatoeba-5057"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-15",
-      "examples": [
-        "sent:gen-6fe6c769a3a7",
-        "sent:tatoeba-84720",
-        "sent:gen-353c01dbf76e"
       ],
       "strand": "language-focused"
     }
@@ -203,15 +152,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 20,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "kr:n3:1381",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ほとんど",
+        "すくない",
+        "まいにち"
+      ]
+    },
+    {
+      "id": "cf:n3:3572:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "何",
+        "線",
+        "頁"
+      ]
+    },
+    {
+      "id": "cf:n3:3585:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "事",
+        "鼾",
+        "物"
+      ]
+    },
+    {
+      "id": "kr:n4:1240",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "しょくどう",
+        "あたらしい",
+        "さいちゅう"
+      ]
+    }
+  ]
 }

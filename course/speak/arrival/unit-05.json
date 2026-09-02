@@ -54,53 +54,11 @@
   "cumulative_known_vocab": 40,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "kr:n3:1396",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さいちゅう",
-        "かんがえる",
-        "おかあさん"
-      ]
-    },
-    {
-      "id": "kr:n3:1583",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いいえ",
-        "こんな",
-        "よやく"
-      ]
-    },
-    {
-      "id": "cf:n3:5061:1921",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "聞く",
-        "始め",
-        "願う"
-      ]
-    },
-    {
-      "id": "cf:n3:5063:1921",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "余り",
-        "結構",
-        "時間"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:te-sumimasen",
-    "gram:bakari",
     "gram:gp-148",
-    "gram:nasai"
+    "gram:n3-bakari",
+    "gram:nasai",
+    "gram:itsumo"
   ],
   "drills": [
     {
@@ -179,15 +137,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 29,
     "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 21,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "kr:n3:1396",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さいちゅう",
+        "かんがえる",
+        "おかあさん"
+      ]
+    },
+    {
+      "id": "kr:n3:1583",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いいえ",
+        "こんな",
+        "よやく"
+      ]
+    },
+    {
+      "id": "cf:n3:5061:1921",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "聞く",
+        "始め",
+        "願う"
+      ]
+    },
+    {
+      "id": "cf:n3:5063:1921",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "余り",
+        "結構",
+        "時間"
+      ]
+    }
+  ]
 }

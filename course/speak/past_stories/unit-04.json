@@ -57,61 +57,14 @@
   "cumulative_known_vocab": 435,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:822",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:463:1000",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "張る",
-        "無い",
-        "お礼"
-      ]
-    },
-    {
-      "id": "cf:n4:4657:1211",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "映画",
-        "毎日",
-        "送る"
-      ]
-    },
-    {
-      "id": "kr:n4:1000",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しごと",
-        "おわる",
-        "ようい"
-      ]
-    },
-    {
-      "id": "kr:n4:1211",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こうがい",
-        "おくれる",
-        "たずねる"
-      ]
-    }
-  ],
   "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:koto-ga-aru",
       "examples": [
-        "sent:tatoeba-11960481",
         "sent:tatoeba-1897537",
-        "sent:tatoeba-235631"
+        "sent:tatoeba-235631",
+        "sent:tatoeba-433648"
       ],
       "strand": "language-focused"
     },
@@ -214,15 +167,62 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 33,
+    "language-focused": 28,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:822",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:463:1000",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "張る",
+        "無い",
+        "お礼"
+      ]
+    },
+    {
+      "id": "cf:n4:4657:1211",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "映画",
+        "毎日",
+        "送る"
+      ]
+    },
+    {
+      "id": "kr:n4:1000",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しごと",
+        "おわる",
+        "ようい"
+      ]
+    },
+    {
+      "id": "kr:n4:1211",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こうがい",
+        "おくれる",
+        "たずねる"
+      ]
+    }
+  ]
 }

@@ -26,7 +26,8 @@
   ],
   "patterns": [
     "gram:ta-bakari",
-    "gram:bakari"
+    "gram:n3-bakari",
+    "gram:n3-kurai"
   ],
   "kanji_recognition": [
     "着",
@@ -49,63 +50,10 @@
   "cumulative_known_vocab": 191,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:483",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3363",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:4098:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "二",
-        "年",
-        "所"
-      ]
-    },
-    {
-      "id": "kr:n5:405",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はし",
-        "あう",
-        "ひる"
-      ]
-    },
-    {
-      "id": "kr:n5:444",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おなじ",
-        "ごはん",
-        "さげる"
-      ]
-    },
-    {
-      "id": "cf:n3:3431:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "家",
-        "円",
-        "本"
-      ]
-    }
-  ],
   "patterns_chunked": [
-    "gram:ta-tokoro",
+    "gram:n3-ta-tokoro",
     "gram:tokoro",
-    "gram:yatto",
-    "gram:yotei-da"
+    "gram:yatto"
   ],
   "drills": [
     {
@@ -118,11 +66,20 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:bakari",
+      "pattern": "gram:n3-bakari",
       "examples": [
-        "sent:tatoeba-169015",
-        "sent:tatoeba-144050",
-        "sent:tatoeba-84608"
+        "sent:tatoeba-113980",
+        "sent:tatoeba-147558",
+        "sent:tatoeba-88247"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-kurai",
+      "examples": [
+        "sent:tatoeba-115111",
+        "sent:tatoeba-97215",
+        "sent:tatoeba-106368"
       ],
       "strand": "language-focused"
     }
@@ -186,15 +143,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 31,
+    "meaning-output": 8,
+    "language-focused": 46,
+    "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 18,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:483",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3363",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4098:2453",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "二",
+        "年",
+        "所"
+      ]
+    },
+    {
+      "id": "kr:n5:405",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はし",
+        "あう",
+        "ひる"
+      ]
+    },
+    {
+      "id": "kr:n5:444",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おなじ",
+        "ごはん",
+        "さげる"
+      ]
+    },
+    {
+      "id": "cf:n3:3431:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "家",
+        "円",
+        "本"
+      ]
+    }
+  ]
 }

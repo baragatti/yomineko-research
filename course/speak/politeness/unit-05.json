@@ -29,6 +29,7 @@
   "patterns": [
     "gram:de-gozaimasu",
     "gram:gozaimasu",
+    "gram:o-kudasai-2",
     "gram:te-kudasai",
     "gram:deshou",
     "gram:totemo"
@@ -54,61 +55,7 @@
   "cumulative_known_vocab": 496,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "so:n3:306",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:832",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n4:1321",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とくべつ",
-        "かくにん",
-        "すずしい"
-      ]
-    },
-    {
-      "id": "kr:n4:714",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "でんしゃ",
-        "かいしゃ",
-        "アパート"
-      ]
-    },
-    {
-      "id": "cf:n3:5211:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "庭",
-        "兄",
-        "市"
-      ]
-    },
-    {
-      "id": "cf:n3:5213:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "年",
-        "鼾",
-        "熱"
-      ]
-    }
-  ],
-  "patterns_chunked": [
-    "gram:gp-150"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:de-gozaimasu",
@@ -129,6 +76,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:o-kudasai-2",
+      "examples": [
+        "sent:gen-0114d50c684c",
+        "sent:gen-0e95f64b542d",
+        "sent:gen-96ce440b58e0"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:te-kudasai",
       "examples": [
         "sent:tatoeba-146189",
@@ -142,7 +98,7 @@
       "examples": [
         "sent:tatoeba-98793",
         "sent:tatoeba-79089",
-        "sent:tatoeba-5347"
+        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     },
@@ -215,15 +171,67 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 59,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 26,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "so:n3:306",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:832",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n4:1321",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とくべつ",
+        "かくにん",
+        "すずしい"
+      ]
+    },
+    {
+      "id": "kr:n4:714",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "でんしゃ",
+        "かいしゃ",
+        "アパート"
+      ]
+    },
+    {
+      "id": "cf:n3:5211:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "庭",
+        "兄",
+        "市"
+      ]
+    },
+    {
+      "id": "cf:n3:5213:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "年",
+        "鼾",
+        "熱"
+      ]
+    }
+  ]
 }

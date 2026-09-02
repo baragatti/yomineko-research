@@ -28,10 +28,9 @@
   ],
   "patterns": [
     "gram:kamo-shirenai",
+    "gram:n3-hazu-da",
     "gram:gp-89",
-    "gram:darou",
-    "gram:gp-32",
-    "gram:gp-115"
+    "gram:darou"
   ],
   "kanji_recognition": [
     "早",
@@ -54,49 +53,8 @@
   "cumulative_known_vocab": 514,
   "layer": "C",
   "needs_review": true,
-  "checkpoint": [
-    {
-      "id": "cf:n3:4260:2932",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "必要",
-        "送る",
-        "食堂"
-      ]
-    },
-    {
-      "id": "cf:n5:2809:71",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "終わる",
-        "初めて",
-        "何時も"
-      ]
-    },
-    {
-      "id": "kr:n5:136",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "りょうしん",
-        "おもいだす",
-        "ありがとう"
-      ]
-    },
-    {
-      "id": "kr:n5:71",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "てがみ",
-        "むかし",
-        "しずか"
-      ]
-    }
-  ],
   "patterns_chunked": [
+    "gram:n3-mattaku-nai",
     "gram:hazu-ga-nai"
   ],
   "drills": [
@@ -106,6 +64,15 @@
         "sent:tatoeba-2684823",
         "sent:tatoeba-188036",
         "sent:tatoeba-152614"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-hazu-da",
+      "examples": [
+        "sent:tatoeba-8579878",
+        "sent:tatoeba-10631706",
+        "sent:tatoeba-3552030"
       ],
       "strand": "language-focused"
     },
@@ -124,24 +91,6 @@
         "sent:tatoeba-80452",
         "sent:tatoeba-85312",
         "sent:tatoeba-84837"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-32",
-      "examples": [
-        "sent:tatoeba-85319",
-        "sent:tatoeba-78700",
-        "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-115",
-      "examples": [
-        "sent:gen-7506a021dd5b",
-        "sent:gen-4c4eb1f80410",
-        "sent:tatoeba-123138"
       ],
       "strand": "language-focused"
     }
@@ -207,15 +156,57 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
-    "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 22,
     "fluency": 6
-  }
+  },
+  "checkpoint": [
+    {
+      "id": "cf:n3:4260:2932",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "必要",
+        "送る",
+        "食堂"
+      ]
+    },
+    {
+      "id": "cf:n5:2809:71",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "終わる",
+        "初めて",
+        "何時も"
+      ]
+    },
+    {
+      "id": "kr:n5:136",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "りょうしん",
+        "おもいだす",
+        "ありがとう"
+      ]
+    },
+    {
+      "id": "kr:n5:71",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "てがみ",
+        "むかし",
+        "しずか"
+      ]
+    }
+  ]
 }
