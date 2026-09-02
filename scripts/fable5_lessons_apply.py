@@ -26,8 +26,17 @@ import argparse, json, re, sqlite3, sys
 from collections import Counter
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target, out_root  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 FD = ROOT / "research" / "derived" / "fable5_validation"
+# W01: the patch inputs are read from the repo, but the skipped-report is OUTPUT — it follows
+# --out-root / $YOMINEKO_OUT_ROOT so a rebuild does not overwrite the tracked one with a
+# report derived from its scratch database. Unset, it is the same path it always was.
+REPORTS = out_root(ROOT) / "research" / "derived" / "fable5_validation"
 INSTRUCTION = re.compile(
     r"^(replace|change|set|update|remove|delete|drop|add|apply|keep|rewrite|fix|minimal|split|trocar|"
     r"corrigir|no body|just |only )\b|->|→|\bshould be\b|\bmust be\b", re.I)
@@ -51,7 +60,7 @@ def main() -> int:
     args = ap.parse_args()
     conf = [f for f in json.loads((FD / "phase6_lessons_partial.json").read_text(encoding="utf-8"))["findings"]
             if f["verdict"] == "confirmed"]
-    con = sqlite3.connect(ROOT / "db" / "corpus.sqlite")
+    con = sqlite3.connect(db_target(ROOT / "db" / "corpus.sqlite"))
     lid = {slug: i for i, slug in con.execute("SELECT id, slug FROM lesson")}
     applied, skipped = Counter(), []
     con.execute("BEGIN")
@@ -152,7 +161,8 @@ def main() -> int:
         con.rollback()
     else:
         con.commit()
-    (FD / "phase6_skipped.json").write_text(json.dumps(
+    REPORTS.mkdir(parents=True, exist_ok=True)
+    (REPORTS / "phase6_skipped.json").write_text(json.dumps(
         {"note": "Phase-6 findings NOT auto-applied; each needs a human/agent pass. Nothing was guessed.",
          "skipped": [{"slug": s, "field": f, "why": w} for s, f, w in skipped]},
         ensure_ascii=False, indent=1), encoding="utf-8")

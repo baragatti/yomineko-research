@@ -31,9 +31,17 @@ import sys
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target, out_root  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "db" / "corpus.sqlite"
-SRC = ROOT / "research" / "derived" / "lessons"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
+# W01: the lesson authoring layer is both read and rewritten by the rebuild chain, so it
+# follows --out-root / $YOMINEKO_OUT_ROOT: a redirected rebuild works on its own copy and
+# never edits the repo's tracked lessons. Unset, this is the same path it always was.
+SRC = out_root(ROOT) / "research" / "derived" / "lessons"
 
 # (lesson slug, headword ref, expected resolved slug, expected level)
 ADDS = [

@@ -714,7 +714,9 @@ not stimulus vs retrieval.)*
   *Why:* a hard "refuse to emit for anything not new or due" rule would zero out task repetition
   (guidelines line 31), the speaking path's `drills` and `shadowing` blocks (known by construction), and
   successive relearning to criterion (Rawson, Vaughn, Walsh & Dunlosky 2018, d≈1.52-4.19); and
-  `srs_design.md` ships no FSRS cards for kana (skill track) and no production cards at launch.
+  ~~`srs_design.md` ships no FSRS cards for kana (skill track) and no production cards at launch.~~
+  **[premise stale — corrected 2026-09-02, §7.1 item 9: kana ARE FSRS cards and all 4,133 cards declare
+  `production`. The rule above is unaffected and stands — it never depended on that premise.]**
   Confidence high.
 
 - **R76 [app] DO** offer if-then implementation-intention planning at the FIRST LAPSE (≥2 consecutive
@@ -835,9 +837,11 @@ any of the production rules can be turned on; until then they are authoring guid
 
 ---
 
-## 4. Using the 6,166-item exam bank without becoming a JLPT course
+## 4. Using the 6,048-item exam bank without becoming a JLPT course
 
-The bank is 6,166 items across 40 files. `speaking_path.md` §7 already reuses it for `checkpoint` and
+The bank is **6,048** items across 40 files (counted from `corpus/exam_banks/*.json` on 2026-09-02;
+this said 6,166, which was the total before 118 items were withdrawn into `removed_items.json`).
+`speaking_path.md` §7 already reuses it for `checkpoint` and
 already re-draws distractors from the known set. Four constraints keep it a retrieval instrument rather
 than a syllabus.
 
@@ -1107,6 +1111,53 @@ so the next research pass does not re-derive them.
    rewritten as default-off-and-measured, with the warrant restated as the redundancy effect plus pt-BR
    grapheme interference rather than Okuyama 2007 (a null, not evidence of harm), and Marugoto recorded
    as the counter-precedent. Logging the reveal rate is an app task, not a corpus one.
+9. ~~**R75's *Why*, and `srs_design.md` §1/§4/§6: "no FSRS cards for kana (skill track) and no
+   production cards at launch".**~~ **RESOLVED 2026-09-02 — decision D6.** The premise was stale in both
+   directions and the export settles it. Authored for **W26** of `research/reports/APP_PLAN.md`; the
+   binding contract is [`design/user_state.md`](user_state.md) §10, and the same entry is recorded in
+   [`design/srs_design.md`](srs_design.md) §7. Nothing above is deleted — R75's *Why* clause is struck
+   through in place.
+
+   **Owner decision D6 — kana in FSRS:** *keep*; **one glyph per card** (`APP_PLAN` §4).
+
+   **The decision, in one line:** kana cards stay FSRS cards, and W29 splits the 57 family cards into
+   211 one-glyph cards; production cards ship at launch, not in phase 2.
+
+   | claim | where | what the export holds | verdict |
+   |---|---|---|---|
+   | "Kana handled by the skill track, **not FSRS cards**" | `srs_design.md` §1 | **57 kana cards**: `deck:kana-hiragana` 28 + `deck:kana-katakana` 29, each with `recognition` + `production` + `handwriting`. Exported, and hard-gated by `validate_srs_decks`. | **doc stale** |
+   | "recognition-only at launch; production cards are phase 2" | `srs_design.md` §6 | **All 4,133 cards declare `production`.** Also 4,133 `recognition`, 691 `handwriting`, 496 `cloze`, 0 `listening`. | **doc stale** |
+   | "`srs_design.md` ships no FSRS cards for kana (skill track) and no production cards at launch" | R75, *Why* | Repeats both stale claims as a premise. R75's own rule — reward decay past the first correct retrieval, and a 20% cap on reward from items with retrievability > 0.95 — is **unaffected** and stands. | **premise stale, rule stands** |
+   | "Cards: derived from lesson unlocks: **vocab** and **kanji**" | `srs_design.md` §1 | vocab 2,946 · kanji 634 · **grammar 496** · **kana 57**. Grammar decks exist at all three levels. | **doc incomplete** |
+   | "Stable refs: `vocab:<headword>`, `kanji:<char>`, `cap:<key>`" | `srs_design.md` §4 | Every card `item` is a published slug: `vocab:1580640`, not `vocab:人`. A headword is **not** an address — 93 headwords are shared by 193 records (`contracts/README.md`). | **doc stale and dangerous** |
+   | "`review_log(user, ref, grade, elapsed, ts)`" keyed on the *item* | `srs_design.md` §4 | Each item fans out to up to 5 kinds; 4,133 items → **9,453 card instances**. An item-keyed log merges a recognition answer with a handwriting answer into one memory trace. | **wrong granularity** |
+   | "daily new-card cap default 15" | `srs_design.md` §1 | `design/unlock_enums.json#_deck_defaults.new_per_day` = **10**. Two design docs, two numbers. | **conflict → 10 wins** |
+   | retention band 0.80–0.95 | `srs_design.md` §1, `unlock_enums.json` | Agree. `srs_fsrs` §5 proposed widening to 0.70–0.97. | **rejected, band stays 0.80–0.95** |
+
+   The rule applied throughout: **the data is right and the docs are stale.** The card set is exported,
+   gated by `validate_srs_decks`, and derived with zero drift from the unlock ledger; the two design
+   docs are prose that nothing checks. Where the two disagree, the checked artifact wins. The one
+   exception is `new_per_day`, where both sources are prose — there `unlock_enums.json` wins because it
+   is the file the loader and the validators already import.
+
+   **What follows.** (1) `card.kind` keeps all five values including `production` and `listening`;
+   nothing in the schema marks production as phase 2. (2) `card.item` accepts `kana:` ids at **either**
+   granularity — the family form `kana:hiragana-a` (57 cards today) and the glyph form
+   `kana:hiragana-あ` (211 glyph records already exist in `corpus/kana/`, and `validate_srs_decks`
+   already accepts them as legal targets); W29 migrates 57 → 211, and the contract must validate both
+   because it has to hold across that migration. (3) That migration is a **re-mint, not a rename**:
+   `kana:hiragana-a` and `kana:hiragana-あ` are different memory facts, so FSRS state is discarded
+   rather than carried — splitting a conflated card is the one card-set change where carrying history
+   would poison D/S, which is why the minimum information principle sits in
+   `design/fsrs_integration.md`. (4) The `desired_retention` band stays **0.80–0.95**; the `srs_fsrs`
+   §5 proposal of 0.70–0.97 is rejected because `unlock_enums.json` already warns ">0.97 retention
+   discouraged". (5) `daily_new_cap` default is **10**. (6) `review_log` is keyed on `card_id`, never on
+   the item.
+
+   **Still the teacher's call.** Whether kana *should* be in FSRS is a pedagogy question; D6 is the
+   owner's engineering default so W29 can proceed. Reversing it means deleting rows from
+   `srs.introduces_cards[]` for two decks — a content edit, not a schema change. Nothing in
+   `contracts/user_state/` moves either way.
 
 ### 7.2 What would change our mind
 

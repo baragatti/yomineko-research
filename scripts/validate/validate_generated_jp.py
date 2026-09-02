@@ -15,16 +15,33 @@ Checks (all deterministic, no model calls):
 
 Returns a structured verdict + composite trust score (§9.4). HARD checks (1-4) gate accept; known-set + low
 attestation are soft (down-score / quarantine). Usage:
+  validate_generated_jp.py                  # --selftest: assert the gate is OPERATIONAL (suite mode)
   validate_generated_jp.py "猫が魚を食べた"
   validate_generated_jp.py --file gen.txt [--known-lesson <lesson_slug>] [--json]
-Importable: from validate_generated_jp import validate_jp ; validate_jp(text, known=None) -> dict"""
+Importable: from validate_generated_jp import validate_jp ; validate_jp(text, known=None) -> dict
+
+SUITE MODE (--selftest, and the no-argument default). This file gates every generated sentence the
+project will ever ship, and until 2026-09-02 it was in no suite at all: nothing noticed that under
+the system interpreter it raised `ModuleNotFoundError: Package sudachidict_core does not exist`
+before reaching a single check. A gate that cannot run is indistinguishable from a gate that passes,
+so the no-argument run asserts the machinery and its data sources are alive, with floors far below
+the live counts: Sudachi tokenizes a control string with zero OOV, the kanji registry and the
+attested-reading table are populated, the Tatoeba/JEC attestation corpus answers, and two control
+strings still classify the way §9.5 says they must. `run_golden.py` is the behavioural regression on
+top of this; this is the pulse check underneath it. Deleting the kanji rows, dropping the FTS
+tables, or loading the wrong Sudachi dictionary each fail it."""
 from __future__ import annotations
 import argparse, json, re, sqlite3, sys
 from functools import lru_cache
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 KANJI_RE = re.compile(r"[一-鿿㐀-䶿]")
 # POS (Sudachi top-level) that are pure grammar — always allowed, never "content vocab" for the known-set gate
 GRAMMAR_POS = {"助詞", "助動詞", "補助記号", "空白", "記号"}
@@ -158,21 +175,83 @@ def validate_jp(text: str, known: dict | None = None) -> dict:
             "tokens": [m.surface() for m in morphs]}
 
 
+# --- suite mode: is the gate alive? -----------------------------------------------------------------
+# Floors sit far below the live values (10,384 kanji / 10,108 with readings at the 2026-09-02 index)
+# so growth never trips them while a vanished table does.
+KANJI_FLOOR = 5000
+READING_FLOOR = 5000
+CONTROL_PARSE = "今日はいい天気ですね"          # must tokenize with zero OOV
+CONTROL_ATTESTED = ["図書館", "コーヒー", "食べた"]  # real corpus n-grams; ≥2 must be found
+CONTROL_GOOD = "毎朝コーヒーを飲みます"           # §9.5 'good': must NOT reject
+CONTROL_BAD = "わたしはabcを食べる"              # §9.5 'bad':  MUST reject
+
+
+def selftest() -> int:
+    fails: list[str] = []
+    try:
+        tk, mode = _sudachi()
+        morphs = list(tk.tokenize(CONTROL_PARSE, mode))
+    except Exception as exc:  # the exact class of rot that hid this gate — surface it, do not swallow
+        print(f"[FAIL] sudachi: dictionary unavailable ({type(exc).__name__}: {exc})")
+        print("selftest: 1 FAIL — the generation gate cannot run")
+        return 1
+    oov = [m.surface() for m in morphs if m.is_oov()]
+    print(f"[{'OK  ' if morphs and not oov else 'FAIL'}] sudachi: {len(morphs)} morphemes, "
+          f"{len(oov)} OOV on «{CONTROL_PARSE}»")
+    if not morphs or oov:
+        fails.append(f"sudachi tokenized «{CONTROL_PARSE}» into {len(morphs)} morphemes, OOV={oov}")
+
+    n_kanji, n_read = len(_kanji_set()), len(_kanji_readings())
+    print(f"[{'OK  ' if n_kanji >= KANJI_FLOOR else 'FAIL'}] kanji registry: {n_kanji} "
+          f"(floor {KANJI_FLOOR})")
+    print(f"[{'OK  ' if n_read >= READING_FLOOR else 'FAIL'}] attested readings: {n_read} chars "
+          f"(floor {READING_FLOOR})")
+    if n_kanji < KANJI_FLOOR:
+        fails.append(f"kanji registry holds {n_kanji} characters, under the floor {KANJI_FLOOR}")
+    if n_read < READING_FLOOR:
+        fails.append(f"reading table covers {n_read} characters, under the floor {READING_FLOOR}")
+
+    con = sqlite3.connect(DB)
+    found = [p for p in CONTROL_ATTESTED if _attested(con, p)]
+    con.close()
+    print(f"[{'OK  ' if len(found) >= 2 else 'FAIL'}] attestation corpus: {len(found)}/"
+          f"{len(CONTROL_ATTESTED)} control phrases found {found}")
+    if len(found) < 2:
+        fails.append(f"attestation corpus answered for {len(found)} of {len(CONTROL_ATTESTED)} "
+                     "control phrases — the Tatoeba/JEC FTS tables are missing or empty")
+
+    for text, must_reject in ((CONTROL_GOOD, False), (CONTROL_BAD, True)):
+        verdict = validate_jp(text)["verdict"]
+        ok = (verdict == "reject") if must_reject else (verdict != "reject")
+        print(f"[{'OK  ' if ok else 'FAIL'}] control {'bad ' if must_reject else 'good'}: "
+              f"verdict={verdict} on «{text}»")
+        if not ok:
+            fails.append(f"control {'bad' if must_reject else 'good'} «{text}» -> {verdict}")
+
+    for f in fails:
+        print(f"  FAIL {f}")
+    print(f"selftest: {len(fails)} FAIL — the generation gate is "
+          f"{'BROKEN' if fails else 'operational'}")
+    return 1 if fails else 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("text", nargs="?")
     ap.add_argument("--file")
     ap.add_argument("--known-lesson")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--selftest", action="store_true",
+                    help="assert the gate is operational (the no-argument default; suite mode)")
     args = ap.parse_args()
+    if args.selftest or not (args.text or args.file):
+        return selftest()
     known = load_known(args.known_lesson) if args.known_lesson else None
     items = []
     if args.file:
         items = [ln.strip() for ln in Path(args.file).read_text(encoding="utf-8").splitlines() if ln.strip()]
-    elif args.text:
-        items = [args.text]
     else:
-        ap.error("give TEXT or --file")
+        items = [args.text]
     results = [validate_jp(t, known) for t in items]
     if args.json:
         print(json.dumps(results, ensure_ascii=False, indent=2))

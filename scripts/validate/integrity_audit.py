@@ -34,8 +34,13 @@ from dissect import POS_MAP, INFLECTION_MAP, PARTICLE_FUNCTION_MAP  # noqa: E402
 _ap = argparse.ArgumentParser()
 _ap.add_argument("--root", default=str(Path(__file__).resolve().parents[2]),
                  help="tree to audit (default: repo root)")
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(_ap.parse_args().root).resolve()
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 LV = {"pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
 # Sentences whose declared level sits below a component's level fall back to computed_level in the app, so
 # a handful are tolerable; the count is frozen here so the tolerance cannot quietly grow into the corpus.

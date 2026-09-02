@@ -1,0 +1,44 @@
+{
+  "_why": "Frozen ceilings for validate_practice_coverage.py: the number of items each course level unlocks that its own lesson never asks about. These are known CONTENT debt (W04/W20 in research/reports/APP_PLAN.md), not passing checks. A count may SHRINK freely — lower the ceiling in the same commit that authors the practice — but GROWTH FAILS, because a lesson that gains an unlock without gaining a question is exactly the regression this gate exists to catch. An entry matching no (level, kind) in the data is itself a failure, so this file cannot rot into decoration. `unlocked` is context, not a gated number.",
+  "_definition": "See the module docstring of scripts/validate/validate_practice_coverage.py. Changing the matching rules invalidates these ceilings on purpose: re-freeze with --write-baseline in the same commit.",
+  "absent": {
+    "pre-n5": {
+      "vocab": 4
+    },
+    "n5": {
+      "vocab": 535,
+      "kanji": 92,
+      "grammar": 17
+    },
+    "n4": {
+      "vocab": 591,
+      "kanji": 173,
+      "grammar": 12
+    },
+    "n3": {
+      "vocab": 1191,
+      "kanji": 316,
+      "grammar": 6
+    }
+  },
+  "unlocked": {
+    "pre-n5": {
+      "vocab": 24
+    },
+    "n5": {
+      "vocab": 684,
+      "kanji": 103,
+      "grammar": 151
+    },
+    "n4": {
+      "vocab": 642,
+      "kanji": 187,
+      "grammar": 213
+    },
+    "n3": {
+      "vocab": 1596,
+      "kanji": 344,
+      "grammar": 132
+    }
+  }
+}

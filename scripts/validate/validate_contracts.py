@@ -17,6 +17,24 @@ Three checks, in the order a defect matters:
 Plus one structural check: an entity whose glob matches nothing is a FAILURE, not a quiet `0 records`.
 A stopped exporter and a moved directory both look like a passing gate otherwise.
 
+ENTITY CLASSES, AND THE ONE ENTITY THAT IS ALLOWED TO HAVE NO DATA
+------------------------------------------------------------------
+`content` entities are committed JSON under corpus/ or course/ and the paragraph above governs them.
+`runtime` entities (contracts/user_state/, specified by design/user_state.md) are the user-state
+contracts: `card`, `review_log`, `lesson_progress`, `exam_attempt`, `feature_state`, `skill_state`,
+`user`. They have a contract and no committed records — a card row exists only once a learner has one
+— so zero records is CORRECT and must not fail.
+
+The exemption is keyed on the DECLARED class in x-yomineko plus the absence of a glob, never on the
+absence of a glob alone, and it is checked in both directions:
+
+  * a `runtime` entity that also declares a glob falls through into the content path and fails on its
+    0 matches, so a content entity whose exporter stopped cannot relabel itself `runtime` and go quiet;
+  * a `content` entity with no glob now FAILS, where it used to print an advisory note and pass;
+  * a `runtime` entity is still checked — its schema must compile as Draft 2020-12 and every `$ref` in
+    it must resolve — because a contract nobody can validate against records is exactly the kind that
+    rots unnoticed.
+
 WHAT DECLARES AN ADDRESS, AND WHAT POINTS AT ONE
 ------------------------------------------------
 This used to be decided by the key name: any id-shaped string under a key called `id` or `slug` was
@@ -77,13 +95,40 @@ DECLARATIONS: dict[str, set[str]] = {
 ROOT_ID_IS_FOREIGN = {"conjugation": "slug"}
 
 
+def collect_refs(node: object, acc: set[str] | None = None) -> set[str]:
+    """Every `$ref` string anywhere in a schema document."""
+    acc = set() if acc is None else acc
+    if isinstance(node, dict):
+        ref = node.get("$ref")
+        if isinstance(ref, str):
+            acc.add(ref)
+        for v in node.values():
+            collect_refs(v, acc)
+    elif isinstance(node, list):
+        for v in node:
+            collect_refs(v, acc)
+    return acc
+
+
+def all_schemas() -> list[Path]:
+    """Every entity contract: the content ones flat in contracts/, the runtime ones one level down in
+    contracts/user_state/. Sorted by relative POSIX path so the report order is stable everywhere."""
+    found = [*CONTRACTS.glob("*.schema.json"), *CONTRACTS.glob("*/*.schema.json")]
+    return sorted(found, key=lambda p: p.relative_to(CONTRACTS).as_posix())
+
+
 def load_registry() -> Registry:
-    """Make common.schema.json resolvable by its relative filename, the way the schemas $ref it."""
+    """Make common.schema.json resolvable by its relative filename, the way the schemas $ref it.
+
+    The runtime contracts sit a directory down and $ref `../common.schema.json`; that resolves against
+    their own `$id` to the same absolute URI common.schema.json declares, so registering every document
+    under its `$id` is what makes the subdirectory work at all."""
     reg = Registry()
-    for path in sorted(CONTRACTS.glob("*.schema.json")):
+    for path in all_schemas():
         doc = json.loads(path.read_text(encoding="utf-8"))
         res = Resource.from_contents(doc)
         reg = reg.with_resource(uri=path.name, resource=res)
+        reg = reg.with_resource(uri=path.relative_to(CONTRACTS).as_posix(), resource=res)
         if "$id" in doc:
             reg = reg.with_resource(uri=doc["$id"], resource=res)
     return reg
@@ -132,13 +177,18 @@ def main() -> int:
     args = ap.parse_args()
 
     registry = load_registry()
-    schemas = sorted(p for p in CONTRACTS.glob("*.schema.json") if p.name != "common.schema.json")
+    schemas = [p for p in all_schemas() if p.name != "common.schema.json"]
     if not schemas:
         print("no contracts found — run scripts/contracts/build_schemas.py", file=sys.stderr)
         return 2
 
     fails: list[str] = []
     notes: list[str] = []
+    runtime: list[str] = []
+    # Entities whose FAILURE is structural rather than per-record: nothing validated, a class that
+    # contradicts its glob, a contract that does not compile. Without this the summary table printed
+    # [OK ] beside an entity the gate had just failed, because its per-record counters were zero.
+    structural: set[str] = set()
     known_ids: dict[str, str] = {}            # stable id -> entity that owns it
     all_refs: list[tuple[str, str, str]] = []  # (entity, locator, referenced id)
     total_records = 0
@@ -151,8 +201,48 @@ def main() -> int:
         if args.entity and entity != args.entity:
             continue
         glob, packing = meta.get("glob"), meta.get("packing", "list")
+        cls = meta.get("class", "content")
+
+        # ---- the runtime class ------------------------------------------------------------------
+        # A runtime entity (design/user_state.md §12) has a contract and NO committed records: a card
+        # row exists only once a learner has one. Zero records is CORRECT for it, so the zero-record
+        # failure below must not fire — but the exemption is keyed on the DECLARED class *and* the
+        # absence of a glob, never on the absence of a glob alone. A runtime entity that declares a
+        # glob falls straight through into the content path, where its 0 matches fail exactly as a
+        # stopped exporter would: a content entity must not be able to hide as runtime.
+        if cls == "runtime" and not glob:
+            # There is nothing to shape-check, so check the CONTRACT instead: it must be a legal
+            # Draft 2020-12 schema and every $ref in it must resolve. That is what stops a contract
+            # nobody can validate against records from rotting unnoticed for the year before the app
+            # exists.
+            try:
+                Draft202012Validator.check_schema(doc)
+            except Exception as e:                              # noqa: BLE001
+                fails.append(f"{entity}: runtime contract is not a legal Draft 2020-12 schema — "
+                             f"{str(e).splitlines()[0][:160]}")
+                structural.add(entity)
+            resolver = registry.resolver(base_uri=doc.get("$id", ""))
+            for ref in sorted(collect_refs(doc)):
+                try:
+                    resolver.lookup(ref)
+                except Exception as e:                          # noqa: BLE001
+                    fails.append(f"{entity}: unresolvable $ref {ref!r} — "
+                                 f"{str(e).splitlines()[0][:120]}")
+                    structural.add(entity)
+            runtime.append(entity)
+            summary.append((entity, 0, 0, 0))
+            continue
+        if cls == "runtime":
+            fails.append(f"{entity}: declared class 'runtime' but also declares a files glob {glob!r} "
+                         f"— a runtime entity holds no committed records. Either drop the glob, or the "
+                         f"entity is content and must say so.")
+            structural.add(entity)
         if not glob:
-            notes.append(f"{entity}: schema declares no glob; nothing validated")
+            fails.append(f"{entity}: class {cls!r} declares no glob, so nothing was validated. Only a "
+                         f"'runtime' entity may have no data; anything else with no glob is an entity "
+                         f"the catalogue cannot locate.")
+            structural.add(entity)
+            summary.append((entity, 0, 0, 0))
             continue
 
         validator = Draft202012Validator(doc, registry=registry)
@@ -216,6 +306,7 @@ def main() -> int:
         if n_rec == 0:
             fails.append(f"{entity}: glob {glob!r} matched 0 records — the data moved, the exporter "
                          f"stopped, or the glob is wrong. Nothing was validated.")
+            structural.add(entity)
 
     # ---- aliases: the second, legacy way to address a vocab record -----------------------------
     # corpus/vocab publishes `vocab:<jmdict_id>` (vocab:1580640), and after the vocab_identity migration
@@ -248,14 +339,19 @@ def main() -> int:
             dangling[rid] += 1
             examples.setdefault(rid, (entity, locator))
 
+    runtime_set = set(runtime)
     print("================ CONTRACT GATE ================")
     for entity, n, bad, dup in summary:
-        mark = "OK " if not (bad or dup) else "FAIL"
+        mark = "OK " if not (bad or dup or entity in structural) else "FAIL"
+        if entity in runtime_set:
+            print(f"  [{mark}] {entity:22} {'runtime':>6}  no committed records by contract; "
+                  f"schema compiles and every $ref resolves")
+            continue
         detail = "".join([f", {bad} invalid" if bad else "",
                           f", {dup} duplicate id" if dup else ""])
         print(f"  [{mark}] {entity:22} {n:>6} records{detail}")
     print(f"  ---- {total_records} records, {len(known_ids)} distinct stable ids, "
-          f"{len(all_refs)} references")
+          f"{len(all_refs)} references, {len(runtime)} runtime contracts")
 
     if fails:
         print("\nSHAPE / IDENTITY failures:")

@@ -3,13 +3,13 @@
 _Phase P2 — level reconciliation._
 
 ## Lists used (≥3 each — PLAN_REVIEW D1/D2)
-- kanji lists: {}
+- kanji lists: {'davidluzgouveia': 245, 'kanjiapi': 245, 'anchori': 250, 'bluskyo': 245}
 - vocab lists: {'elzup': 1386, 'openanki': 1386, 'bluskyo': 1349, 'jlptvocabapi': 1294}
 
 ## Reconciliation results
-- kanji leveled: — by level {}
+- kanji leveled: 250 by level {'n4': 170, 'n5': 80}
 - vocab promoted: 1359 by level {'n4': 653, 'n5': 706}
-- per-reading tiers seeded (heuristic, needs_review): 1633
+- per-reading tiers seeded (heuristic, needs_review): 0
 
 ## Kanji level disagreements across lists (0)
 _Assigned the earliest voted level; review these._

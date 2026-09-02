@@ -19,6 +19,17 @@ HERE = Path(__file__).resolve().parent
 PY = Path(sys.executable)
 ENV = {**os.environ, "PYTHONIOENCODING": "utf-8"}
 
+# Some validators need the PROJECT venv, not whatever interpreter launched this file. The scripts
+# have said "Run with venv python" in their docstrings since P5, but this runner used sys.executable
+# for all of them, so the requirement was documentation only. It bites on the Sudachi gates: the
+# system 3.13 carries sudachidict_full but not sudachidict_core, and validate_generated_jp.py builds
+# `dictionary.Dictionary()` (which defaults to core), so run_golden.py died with
+# `ModuleNotFoundError: Package sudachidict_core does not exist` before its first assertion —
+# invisible, because neither script was in the suite. Route them explicitly; a missing venv is a
+# hard failure rather than a silent downgrade to an interpreter that cannot run the check.
+VENV_PY = HERE.parents[1] / ".venv" / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
+NEEDS_VENV = {"run_golden.py", "validate_generated_jp.py"}
+
 # (script, mode) — mode: "code" gate on exit code, "grep-fail" gate if output has [FAIL], "advisory" never gates
 SUITE = [
     ("validate_lessons.py", "code"),
@@ -30,6 +41,7 @@ SUITE = [
     ("audit_coverage.py", "code"),
     ("audit_jlpt_coverage.py", "code"),
     ("validate_exam_banks.py", "code"),
+    ("validate_exam_level_gate.py", "code"),   # item Japanese inside the level's taught set; ratchet
     ("validate_conjugation_exercises.py", "code"),
     ("validate_role_exercises.py", "code"),
     ("validate_sentence_structure.py", "code"),
@@ -49,6 +61,7 @@ SUITE = [
     ("validate_unlock_ledger.py", "code"),       # slug-space introduce-once + coverage + exemptions
     ("validate_lesson_bodies.py", "code"),       # markup, all ref kinds, furigana, no-markup-in-prose
     ("validate_exercise_contracts.py", "code"),  # body binding, per-type answer keys grade as rendered
+    ("validate_practice_coverage.py", "code"),   # every unlocked item asked by its own lesson (ratchet)
     ("validate_srs_decks.py", "code"),           # deck registry + lesson-level filing + no dup cards
     ("validate_lesson_gating.py", "code"),       # item refs inside own cks; i+1 sentence ratchet
     ("validate_sentence_manifest.py", "code"),   # sentence_refs == what the body renders
@@ -56,6 +69,9 @@ SUITE = [
                                                  # deprecated audit_lesson_hygiene.py, which read a
                                                  # stale staging dir — F5/STRUCT-08)
     ("validate_provenance_json.py", "code"),     # layer/source/ai_generated/needs_review semantics
+    # W02 (G7): replays all six tracked repair tables against the export. Clean, no ratchet; the 7
+    # superseded rows carry `superseded_by` markers this validator re-proves on every run.
+    ("validate_repairs_applied.py", "code"),     # every repair row's `new` is what the export carries
     ("validate_stable_addresses.py", "code"),    # integer FKs always beside their published slug
     ("validate_stroke_integrity.py", "code"),    # stroke coverage + count agreement + exemptions
     ("validate_level_consensus.py", "code"),     # spec-1.5 evidence well-formedness (+L4-L6 ratchet)
@@ -71,6 +87,17 @@ SUITE = [
     # Was advisory while 49 furigana gaps were open (32 empty reading="" + 17 truncated over 7 lesson
     # records). Those are repaired, so it gates: a regression is now a hard failure.
     ("validate_furigana.py", "code"),
+    # ---- W07 gate hygiene (2026-09-02). Two of these existed and were in no suite at all, which is
+    # why nobody noticed run_golden.py could not start; both run under the project venv (NEEDS_VENV).
+    ("validate_exam_stem_collisions.py", "code"),  # same printed stem, different key (ratchet at 94)
+    ("run_golden.py", "code"),                     # §9.5 golden set classifies as specified
+    ("validate_generated_jp.py", "code"),          # no-arg selftest: the generation gate can still run
+    # ---- W01. Rebuilds the git-ignored index from the datasets + the tracked scripts and diffs the
+    # re-export against what is committed, so "the DB is regenerable" stops being an untested claim.
+    # --quick does the grammar family only (~2 s), which is what a per-commit gate can afford. The
+    # full run — all 75 runnable manifest steps, all 787 exported files, ~90 s — is not in the suite:
+    # run it before a release and whenever a step is added to the manifest (see README.md).
+    ("validate_index_rebuildable.py --quick", "code"),
 ]
 
 
@@ -87,7 +114,18 @@ def main() -> int:
     rows = []
     hard_fail = False
     for script, mode in SUITE:
-        p = subprocess.run([str(PY), str(HERE / script)], capture_output=True, text=True,
+        # A SUITE entry may carry arguments ("validate_index_rebuildable.py --quick"): the file name is
+        # the first token, the rest go through to the validator.
+        name, *extra = script.split()
+        interp = VENV_PY if name in NEEDS_VENV else PY
+        if not interp.exists():
+            rows.append(("FAIL", script, f"interpreter not found: {interp}"))
+            if mode != "advisory":
+                hard_fail = True
+            if not quiet:
+                print(f"{script}: needs the project venv at {interp}, which does not exist")
+            continue
+        p = subprocess.run([str(interp), str(HERE / name), *extra], capture_output=True, text=True,
                            encoding="utf-8", errors="replace", env=ENV)
         out = (p.stdout or "") + (p.returncode and ("\n" + (p.stderr or "")) or "")
         if mode == "code":

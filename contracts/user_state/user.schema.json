@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/user.schema.json",
+  "title": "user",
+  "description": "One learner account, plus the scheduler settings that are one-to-one with it. RUNTIME class: minted per learner, never committed to this repo — see design/user_state.md §12. Holds no email, no password, no password hash, no IP and no third-party identifier; `user_id` is opaque and `display_name` is learner-set prose, not an identity. Authentication lives outside this contract and owner decision D8 decides where.",
+  "x-yomineko": {
+    "entity": "user",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/user_state.md#4-user",
+    "stable_id_field": "user_id",
+    "key_namespace": ["usr"],
+    "note": "The scheduler block is deliberately NOT a separate entity (research/reports/readiness/srs_fsrs.md §5 sketched a USER_SCHEDULER row): it is one-to-one with the account and read on every queue build."
+  },
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "$ref": "../common.schema.json#/$defs/StableId",
+      "pattern": "^usr:[A-Za-z0-9_-]+$",
+      "description": "The opaque account address, `usr:<opaque>`. The only identifier that appears anywhere else in the runtime model. No colon inside the opaque part — every card_id is parsed by splitting on ':' (design/user_state.md §2)."
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "locale": {
+      "$ref": "../common.schema.json#/$defs/Locale",
+      "description": "Interface language. pt-BR is the only locale authored today, and that is a content fact, not a structural one (design/i18n.md)."
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 1,
+      "description": "IANA time-zone name, e.g. `America/Sao_Paulo`. The daily queue rolls over on the learner's LOCAL day, not on UTC, so this is scheduler input and not a display preference."
+    },
+    "display_name": { "type": "string", "description": "Learner-set. Not an identity and never used as a key." },
+    "entitlement": {
+      "type": "string",
+      "enum": ["comp", "free", "paid", "trial"],
+      "description": "What the account is allowed to reach. The corpus is private paid content, so this gates content, not chrome. Vocabulary owner: design — design/user_state.md#4-user. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#4-user" }
+    },
+    "scheduler": {
+      "type": "object",
+      "description": "FSRS-6 settings. Defaults come from design/unlock_enums.json#_deck_defaults, which is the authority for the retention band and the new-card cap.",
+      "properties": {
+        "fsrs_version": {
+          "type": "string",
+          "enum": ["fsrs-6"],
+          "description": "Which algorithm this account is scheduled by. FSRS-6 -> FSRS-7 is a replay of review_log, not a migration (design/user_state.md §3). Vocabulary owner: design — design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": { "owner": "design", "source": "design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache" }
+        },
+        "desired_retention": {
+          "type": "number",
+          "minimum": 0.8,
+          "maximum": 0.95,
+          "default": 0.9,
+          "description": "Target recall probability. Band from design/unlock_enums.json#_deck_defaults.retention_band. The 0.70-0.97 band proposed in research/reports/readiness/srs_fsrs.md §5 is REJECTED: the same defaults block calls >0.97 discouraged, and a band should not reach a value its own defaults warn against (design/user_state.md §10.2)."
+        },
+        "params": {
+          "type": ["array", "null"],
+          "items": { "type": "number" },
+          "minItems": 21,
+          "maxItems": 21,
+          "description": "The learner's optimized FSRS-6 weight vector, 21 numbers. Null means ship defaults. Trained OFFLINE, monthly, once the account has roughly 400 reviews — never at request time."
+        },
+        "params_trained_at": { "type": ["string", "null"], "format": "date-time" },
+        "reviews_at_training": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "How many review_log rows produced `params`. A weight vector with no sample size behind it cannot be audited, and 21 parameters fitted on 40 reviews is noise."
+        },
+        "learning_steps": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1 },
+          "description": "Same-day learning steps, in minutes."
+        },
+        "daily_new_cap": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 10,
+          "description": "New cards admitted per day. Default 10 from design/unlock_enums.json#_deck_defaults.new_per_day. design/srs_design.md §1 said 15; the two prose sources conflicted and unlock_enums.json wins because it is the file the loader and the validators already import (design/user_state.md §10.1)."
+        },
+        "daily_review_cap": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 120,
+          "description": "Reviews admitted per day. Overflow spills to tomorrow; FSRS handles late reviews natively through its stability/retrievability math."
+        }
+      },
+      "required": ["fsrs_version", "desired_retention", "daily_new_cap", "daily_review_cap"],
+      "additionalProperties": false
+    },
+    "session": {
+      "type": "object",
+      "description": "Daily-queue budget (design/srs_design.md §3): memory cards fill up to 80% of the budget, skill exercises take the remainder.",
+      "properties": {
+        "target_minutes": { "type": "integer", "minimum": 5, "maximum": 30, "default": 15 }
+      },
+      "required": ["target_minutes"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["user_id", "created_at", "locale", "timezone", "entitlement", "scheduler"],
+  "additionalProperties": false
+}

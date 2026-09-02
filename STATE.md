@@ -58,6 +58,35 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-02 (aj) — M0 COMPLETE (durable and measurable), plus W19, W26, W38-queue, W40-design,
+> W21-derivation. Gate green. Next: W05+W06 (exporter/contracts lane), W08 A3 merges (data lane),
+> then the held workflow resumes (W27, W13, W31) as concurrency allows; W15/W20 resumes in flight.**
+>
+> - **The M0 finding:** "the DB is regenerable from JSON + scripts" was FALSE — 137 of 787 export
+>   files reproduce; 650 are ratcheted with a diagnosed cause each (research/derived/rebuild_baseline).
+>   Root causes fixed: a June topic renumbering applied by hand and never scripted (145 course files
+>   under uncommitted paths — now scripts/ingest/renumber_topics.py); the rebuild wrote into
+>   research/derived/lessons and read its own damage back (paths now go through dbtarget.out_root);
+>   a step-order defect; a crash. D16 (un-ignore ~38 MB of research/derived/tr + reauthor so 9
+>   steps can run) is the owner's. 111-step manifest; full run 91 s; quick mode in the gate.
+> - New hard gates: validate_index_rebuildable (--quick), validate_repairs_applied (1,299 rows,
+>   0 FAIL, markers are assertions), validate_exam_level_gate (6,048 items: 2,483 level-appropriate;
+>   93% of failures are kanji alone; orthography IS buildable at every level), validate_practice_
+>   coverage (27.9% of unlocked items practised; a Fable sample caught a kana-tiling false positive,
+>   fixed with a positive-control plant), validate_exam_stem_collisions (94, per-bank ratchet),
+>   run_golden + validate_generated_jp under the venv, audit_coverage over the export.
+> - Also landed: W19 simulator (得点区分 scoring, honest approximation label, study mode); W26 seven
+>   runtime user-state contracts + a declared `runtime` manifest class; W38 review queue over the
+>   export (8,328 records, N5 slice listed, hash-anchored subtraction); W40 locale scope table +
+>   `translation_layer` map spec (D15 pending); W21 needs[] derived (700 direct edges, acyclic) with
+>   601 FORWARD references found → new unit W21b.
+> - **Process lessons:** a dead verifier in my pipeline scripts passed rows through unverified —
+>   fixed in all five scripts before resuming; pending (not-yet-applied) tables live in
+>   research/derived/pending/, never in repairs/ (the replay gate owns repairs/); agents leave
+>   deliverables on disk before a session-limit death — inventory first, resume second.
+> - Excluded from this commit because their workflows are still writing them: research/derived/
+>   passages/ (W15, 154+ of 286) and research/derived/pending/ (W31 partial).
+
 > **2026-09-01 (ai) — THE PLAN OF RECORD IS `research/reports/APP_PLAN.md` (v2, Fable-reviewed).
 > Work is tracked there by unit id (W01–W44) in four lanes behind milestones M0–M7. Resume = open
 > APP_PLAN.md §3, find the first ☐ in the current lane, check §4 for its decision, run it as §1 says.**

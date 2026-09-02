@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/feature_state.schema.json",
+  "title": "feature_state",
+  "description": "One row per (user, app feature) over the sixteen features declared in design/unlock_enums.json#feature. RUNTIME class: minted per learner, never committed to this repo. Separates being ALLOWED to use a feature from having it turned ON, because furigana-toggle and romaji-toggle are settings and one boolean cannot hold both facts. See design/user_state.md §9.",
+  "x-yomineko": {
+    "entity": "feature_state",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/user_state.md#9-feature_state",
+    "stable_id_field": null,
+    "natural_key": ["user_id", "feature"],
+    "key_namespace": null,
+    "note": "`source` is not decoration: only 4 of the 16 features are unlocked by any lesson today (srs-reviews, conjugation-drill, jlpt-sim-n5, jlpt-sim-n4, one lesson each), and needs[] is empty on all 322 lessons. A model with `lesson` as the only source would make the other twelve permanently unreachable and would encode today's gap as the contract."
+  },
+  "type": "object",
+  "properties": {
+    "user_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^usr:[A-Za-z0-9_-]+$" },
+    "feature": {
+      "type": "string",
+      "enum": [
+        "feat:conjugation-drill", "feat:find-correct-kanji", "feat:find-correct-particle",
+        "feat:furigana-toggle", "feat:handwriting-input", "feat:jlpt-sim-n4", "feat:jlpt-sim-n5",
+        "feat:kana-input", "feat:kanji-lookup", "feat:listening", "feat:particle-drill",
+        "feat:phrase-builder", "feat:romaji-toggle", "feat:srs-reviews", "feat:visual-novel",
+        "feat:voice-mode"
+      ],
+      "description": "The app capability, as a feat: stable id. Vocabulary owner: design — design/unlock_enums.json#feature. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/unlock_enums.json#feature" }
+    },
+    "unlocked": { "type": "boolean", "description": "Whether the learner may reach the feature at all." },
+    "unlocked_at": { "type": ["string", "null"], "format": "date-time" },
+    "unlocked_by": {
+      "anyOf": [
+        { "$ref": "../common.schema.json#/$defs/IdRef", "pattern": "^les:" },
+        { "type": "null" }
+      ],
+      "description": "The lesson whose feature_unlocks granted it. Null whenever `source` is anything but `lesson`."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["admin", "default", "entitlement", "lesson"],
+      "description": "How the feature became reachable. `lesson` is the course path; `default` is on from day one; `entitlement` is gated by the account's plan; `admin` is a support override. Vocabulary owner: design — design/user_state.md#9-feature_state. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#9-feature_state" }
+    },
+    "enabled": {
+      "type": "boolean",
+      "description": "The learner's own switch, separate from the unlock. A feature can be unlocked and switched off; it can never be enabled while locked (enforced by the branch below)."
+    }
+  },
+  "required": ["user_id", "feature", "unlocked", "source", "enabled"],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": { "properties": { "unlocked": { "const": false } }, "required": ["unlocked"] },
+      "then": { "properties": { "enabled": { "const": false } } }
+    },
+    {
+      "if": { "properties": { "source": { "const": "lesson" } }, "required": ["source"] },
+      "then": { "properties": { "unlocked_by": { "type": "string" } }, "required": ["unlocked_by"] },
+      "else": { "properties": { "unlocked_by": { "type": "null" } } }
+    }
+  ]
+}

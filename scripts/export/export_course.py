@@ -153,10 +153,15 @@ def _deref_body(con, body: str, lesson_id=None) -> str:
         r'((?:ref|item-ref)=")((?:vocab|kanji):[^"]+)(")',
         lambda m: m.group(1) + _deref(con, m.group(2), lesson_id, where="body") + m.group(3), body)
 
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target, out_root, build_date  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
-COURSE = ROOT / "course"
-_dt_today = _dt.date.today().isoformat()
+DB = db_target(ROOT / "db" / "corpus.sqlite")
+COURSE = out_root(ROOT) / "course"
+_dt_today = build_date()
 
 
 class _Flatten(HTMLParser):
@@ -480,7 +485,7 @@ def main() -> int:
     for mod in outline:
         lvl = mod["level"]
         lines = [f"# Curso — Módulo {mod['title']} ({lvl})", "",
-                 f"_Gerado {_dt.date.today().isoformat()}. Colocação P4 (1ª passada); lições autoradas em P6 "
+                 f"_Gerado {build_date()}. Colocação P4 (1ª passada); lições autoradas em P6 "
                  f"referenciam o corpus por ID._", "",
                  "| # | tópico | tema | vocab | kanji | gramática |",
                  "|--:|--------|------|------:|------:|----------:|"]
@@ -509,7 +514,7 @@ def main() -> int:
             for k in ("vocab", "kanji", "grammar"):
                 tot[mod["level"]][k] += t["counts"][k]
     lines = ["# Courseware layer — outline (P4 placement)", "",
-             f"_Generated {_dt.date.today().isoformat()}. `course/outline.json` is the machine-readable "
+             f"_Generated {build_date()}. `course/outline.json` is the machine-readable "
              f"Module→Topic→introducing-item map; per-level `INDEX.md` are readable. Lessons (P6) will hold "
              f"dense pt-BR text + exercises + corpus refs BY ID._", "",
              "| module | topics | vocab | kanji | grammar |",

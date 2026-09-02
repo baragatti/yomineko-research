@@ -25,8 +25,13 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from dissect import Dissector  # noqa: E402
 from i18n_text import get_text  # noqa: E402
 
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 LEVEL_ORDER = {"pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
 JP_RUN = re.compile(r"[ぁ-んァ-ヶ一-龯]{2,}")
 

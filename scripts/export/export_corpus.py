@@ -20,9 +20,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from i18n_text import get_all, DEFAULT_LOCALE  # noqa: E402
 
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target, out_root, build_date  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
-CORPUS = ROOT / "corpus"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
+CORPUS = out_root(ROOT) / "corpus"
 LEVELS = ["n5", "n4", "n3"]
 # N2/N1 are BANK-ONLY (kanji + vocab for FSRS study; no sentences/grammar/lessons/conjugations). Kanji and
 # vocab export over LEVELS + BANK_LEVELS; everything else stays on LEVELS.
@@ -236,7 +241,7 @@ def export_kanji(con: sqlite3.Connection) -> dict:
         jw(CORPUS / "kanji" / f"{lvl}.json", records)
         out_counts[lvl] = len(records)
     lines = ["# Corpus — Kanji (leveled)", "",
-             f"_Generated {_dt.date.today().isoformat()}. `meanings` = {{\"{LOC}\":[…],\"en\":[…]}}; "
+             f"_Generated {build_date()}. `meanings` = {{\"{LOC}\":[…],\"en\":[…]}}; "
              f"readings carry `common` (nanori=false)._", "",
              "| kanji | level | strokes | #readings | meanings |",
              "|-------|-------|--------:|----------:|----------|"]
@@ -297,7 +302,7 @@ def export_vocab(con: sqlite3.Connection) -> dict:
         jw(CORPUS / "vocab" / f"{lvl}.json", records)
         out_counts[lvl] = len(records)
     lines = ["# Corpus — Vocabulary (leveled)", "",
-             f"_Generated {_dt.date.today().isoformat()}. `gloss` = {{\"{LOC}\":[…],\"en\":[…]}} (en = JMdict "
+             f"_Generated {build_date()}. `gloss` = {{\"{LOC}\":[…],\"en\":[…]}} (en = JMdict "
              f"source); `register` = neutral usage enum from JMdict misc._", "",
              "| headword | kana | level | meaning |", "|----------|------|-------|---------|"]
     for hw, kana, lvl, mn in index_rows:
@@ -366,7 +371,7 @@ def export_grammar(con: sqlite3.Connection) -> dict:
         jw(CORPUS / "grammar" / f"{lvl}.json", records)
         out_counts[lvl] = len(records)
     lines = ["# Corpus — Grammar points", "",
-             f"_Generated {_dt.date.today().isoformat()}. `label`/`explanation`/`formation`/`nuance` are "
+             f"_Generated {build_date()}. `label`/`explanation`/`formation`/`nuance` are "
              f"locale-objects ({LOC}, Layer C, needs_review)._", "",
              "| key | pattern | level | explanation |", "|-----|---------|-------|-------------|"]
     for key, pat, lvl, st in index_rows:
@@ -452,7 +457,7 @@ def export_families(con: sqlite3.Connection) -> int:
         index_rows.append((slug, ftype, lbl, len(members)))
     jw(CORPUS / "families" / "families.json", records)
     lines = ["# Corpus — Families / groups", "",
-             f"_Generated {_dt.date.today().isoformat()}. `label`/`description`/`governing_rule` = locale-objects "
+             f"_Generated {build_date()}. `label`/`description`/`governing_rule` = locale-objects "
              f"({LOC})._", "",
              "| family | type | label | #members |", "|--------|------|-------|---------:|"]
     for slug, ftype, label, n in index_rows:
@@ -532,7 +537,7 @@ def export_sentences(con: sqlite3.Connection) -> int:
         index_rows.append((s["slug"], s["jp"], tr, s["level"]))
     jw(CORPUS / "sentences" / "bank.json", records)
     lines = ["# Corpus — Dissected sentence bank", "",
-             f"_Generated {_dt.date.today().isoformat()}. Full §6 dissection. `translation` = "
+             f"_Generated {build_date()}. Full §6 dissection. `translation` = "
              f"{{\"{LOC}\":…,\"en\":…}}; tokens carry mechanical `pos`/`inflection`; particles carry "
              f"`function_type`. Lessons reference these BY `slug` (the stable id)._", "",
              "| slug | jp | translation | level |", "|------|----|----|-------|"]
@@ -546,7 +551,7 @@ def write_corpus_index(kc, vc, gc=None, fc=0, sc=0) -> None:
     gc = gc or {}
     lines = [
         "# Corpus layer (LLM-readable, canonical)", "",
-        f"_Generated {_dt.date.today().isoformat()} from `db/corpus.sqlite` (regenerable index). "
+        f"_Generated {build_date()} from `db/corpus.sqlite` (regenerable index). "
         f"**These JSON/MD files are the source of truth.** Localized content uses locale-objects keyed by "
         f"`{LOC}` (+ `en` source); mechanical enums are neutral. See `design/i18n.md`._", "",
         "| entity | files | n5 | n4 |", "|--------|-------|---:|---:|",

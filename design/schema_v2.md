@@ -129,9 +129,64 @@ audio_ref, audio_source, # tatoeba:<audioId> | tts:<voice> | none
 structure_explanation_pt,# Layer C
 difficulty,              # numeric (length, rare items, grammar load)
 tags[],                  # greetings|shopping|work|...
+register,                # ONE value from the set below (§B.register) — Layer B
+register_flags[],        # orthogonal content warnings, 0..n — Layer B
+register_confidence,     # 0..1
+register_evidence,       # one line: the token / JMdict tag / ending that decided it
 flags: ai_generated, needs_review, verified
 + provenance
 ```
+
+#### sentence.register — the D7 value set (A8, added 2026-09-02 for W31)
+
+**Why the field exists.** Selection into the speaking path is mechanical (seed lemma + known set),
+so nothing could tell a polite request from a Bible verse: `course/speak/` shipped 心熱けれど肉体は弱し
+as a production prompt, お前は脳の半分があったら，危ない! as a drill, and 痔があります in `health`.
+`vocab.register` is a word-level JMdict tag and exports null; grammar points carry a multi-value
+`register`, which is a property of the *point*, not of a sentence. This is the sentence-level one.
+
+**Exactly one primary register per sentence** — the register a learner would hear the whole
+utterance in. Values are neutral English enums (locale-agnostic, spec §1 "internals are
+language-AGNOSTIC"); the pt-BR label lives in the UI locale module, never here.
+
+| value | definition (one line) | example from the bank |
+|---|---|---|
+| `neutral` | plain form, unmarked for politeness or intimacy: expository or narrative, no stance toward a listener | 兄は背が高いが弟は低い (`sent:gen-43ac7e47316c`) |
+| `polite` | です／ます (or a fixed polite set phrase) addressed to a listener, no keigo | あれはキジです (`sent:tatoeba-229742`) |
+| `casual` | plain form **plus** a marker of informal speech: 〜ぜ／ぞ／な／わ／かしら, soft よ／ね／の, 〜てる／〜ちゃう contractions, お前／あんた, colloquial って | 学校は何時に終わるの？ (`sent:tatoeba-10206436`) |
+| `formal` | keigo or written-formal: 伺う／申す／いたす／拝見, ご〜になる, ございます outside a fixed greeting, である | 係の者がご案内いたします (`sent:gen-64fec9fcc687`) |
+| `vulgar` | carries a JMdict `vulg`/`X` lexeme or a coarse address form (てめえ／貴様) | ちくしょう！わるくないなあ！ (`sent:tatoeba-135763`) |
+| `archaic` | classical morphology no longer productive: clause-final 〜し／〜べし／〜けり, 〜たまえ, 候 | 心熱けれど肉体は弱し (`sent:tatoeba-145552`) |
+| `epistolary` | letter or formal-notice formulae: 拝啓／敬具／前略／草々／取り急ぎ／〜の候 | none in the bank today — the value is defined so the filter can reject one on arrival |
+| `dialect` | non-standard regional forms: JMdict `ksb`/`osb`/`kyu`…, あかん／おおきに／ほんま, clause-final 〜やねん／〜だべ | おおきに！ (`sent:tatoeba-9462381`) |
+| `slang` | current in-group vocabulary, JMdict `sl`: めっちゃ, やばい, きもい | これ触ってみて。めっちゃ柔らかいよ。 (`sent:tatoeba-3718388`) |
+
+**Precedence when several fire** (a single value must come out): `epistolary` → `archaic` →
+`vulgar` → `dialect` → `slang` → `formal` → `polite` → `casual` → `neutral`. A vulgar lexeme
+outranks です／ます because it is what the listener reacts to; `polite` outranks `casual` because
+the です／ます frame sets the relationship.
+
+**`register_flags[]` — orthogonal content warnings**, independent of the register and of each
+other. A sentence may carry none or several. They describe *content*, never politeness:
+
+`insult` (JMdict `derog` or an abusive lexeme: 無能, ばか, あいつ) · `sexual` (JMdict `X`/`vulg`
+or explicit vocabulary) · `violence` (殺す, 殴る, 戦争, 自殺) · `stereotype` (a demonym
+topicalised or generalised — 日本人は…, ドイツ人はとてもずる賢い) · `medical-intimate` (痔, 生理,
+性病) · `proper-name` (a 固有名詞 token: a person, place or brand a learner has no reason to drill).
+
+**Layer and review.** `register` is **Layer B** — derived from Layer-A material (JMdict misc tags,
+Sudachi morphology) and machine-validated, never free authoring. The deterministic first pass is
+`scripts/derive_sentence_register.py`; anything it decides on absence of evidence, or on a
+grammar point's authored register, carries `register_confidence < 0.8` and `needs_review: true`
+for the LLM pass and the teacher queue. `register_evidence` must name the deciding token, tag or
+ending, so a reviewer can check the call without re-reading the sentence.
+
+**The lessons never filter on it (A8, owner: "yes; must not impact the lessons").** `register` is
+consumed by the **speaking path only** — `scripts/export/build_speaking_path.py` and the drill,
+production and fluency selectors under it, including `drills[].examples`. `course/` lesson
+selection, exercise generation and the exam banks must produce byte-identical output with the
+field present and absent; that is the gate on W31. Corpus consumers may read it; no courseware
+builder outside `course/speak/` may branch on it.
 
 ### token   ← (skeleton from SudachiPy; glosses from LLM)
 ```
@@ -349,3 +404,31 @@ grammaticality gate (dissection agent `faithful`; ungrammatical AI dropped). No 
 **Pipeline (replay-safe):** durable AI output = `research/derived/*_result.json`; `replay_all.py` rebuilds the
 whole bank from them at zero token cost (re-derives skeleton + relink_vocab + particle_link + repair_glosses).
 Validators: `validate.py` (§7), `integrity_audit.py` (full-stack cross-checks), `graph_queries.py` (§1.7).
+
+## W40 addendum (2026-09-02) — `translation_layer` on `sentence`
+
+One field is added to the sentence record. It carries no content: it says which **provenance layer** the
+English in `translation` came from, because the exporter coalesces two storage locations into one key and the
+distinction is lost on the way out.
+
+```jsonc
+"translation":       { "pt-BR": "…", "en": "…" },   // unchanged
+"translation_layer": { "en": "A" }                  // NEW, optional, sibling
+```
+
+- **Type:** `LocaleLayerMap` — a new `$defs` entry in `contracts/common.schema.json`, an object keyed by
+  locale whose values `$ref` the existing `Layer` enum. **No new enum.**
+- **Emitted iff** `translation` has an `en` key. `"A"` when the `sentence.en` column holds it (Tatoeba/JEC
+  verbatim, 3,529 records); `"B"` when it comes from a `localized_text` row (derived English, 2,342);
+  absent for the 18 anchorless records.
+- **`pt-BR` gets no key.** Its layer is a constant `B` for this field, and constants live in the scope table,
+  not in 5,889 copies.
+- **`sentence.translation` is the only field in the corpus that mixes layers.** Every `localized_text` row
+  with `locale='en'` is `layer='B'` without exception (109,976 rows, 15 field pairs), and the three Layer-A
+  registry fields (`kanji.meanings`, `vocab.senses[].gloss`, `kanji.example_words[].gloss`) read a dedicated
+  column with no derived fallback. So no other entity gets a `*_layer` sibling, and none should until a
+  measurement says a second field has started mixing.
+
+The full shape rationale, the exporter rule, the locale scope table it belongs to, and the
+`validate_locale_parity.py` spec are in [`i18n.md`](i18n.md) (W40 sections). This entry exists so the data
+model catalogue is not silently behind the contract.

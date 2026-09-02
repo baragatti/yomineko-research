@@ -10,8 +10,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "ingest"))
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from i18n_text import set_text, get_text  # noqa: E402
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 TDIR = ROOT / "research" / "derived" / "tr" / "full"
 DIRTY = re.compile(r"\S\s+/\s+\S|\((ou |isto é|i\.e\.|do tipo |a saber)", re.I)
 FIELD = {"natural": "translation", "literal": "translation_literal"}

@@ -23,8 +23,13 @@ from dissect import Dissector  # noqa: E402
 from persist_batch import persist_pair  # noqa: E402
 from reset_sentences import main as reset_main  # noqa: E402
 
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 DERIVED = ROOT / "derived" if (ROOT / "derived").exists() else ROOT / "research" / "derived"
 
 

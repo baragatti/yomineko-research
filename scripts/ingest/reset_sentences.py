@@ -5,7 +5,12 @@ import sqlite3
 import sys
 from pathlib import Path
 
-DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
+DB = db_target(Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite")
 TABLES = ["exercise_sentence", "exercise_item", "exercise", "lesson_sentence", "lesson_introduces",
           "lesson", "sentence_grammar", "sentence_kanji", "sentence_vocab", "particle", "token",
           "sentence"]

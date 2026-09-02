@@ -899,3 +899,63 @@ a.ym-chip[data-gloss]:focus-visible, a.ym-chip[data-reading]:focus-visible {
   background: var(--surface-container); border-left: 4px solid var(--primary);
   border-radius: 0 12px 12px 0; padding: 14px 16px; margin: 8px 0 14px; white-space: pre-wrap;
 }
+
+/* ---- /simulado/:level — the result, in the shape a score report actually has ----------------------
+   A JLPT result is not a percentage. It is one estimated number per 得点区分, each with its own
+   minimum, and a verdict that needs BOTH the total and every minimum (design/exam_scoring.md §2).
+   The meter is what makes that legible: the fill is the estimate, the tick is the sectional minimum,
+   so "the total is fine but listening is under the line" is visible without reading a table.
+
+   The estimate is never printed alone. `.ym-score-note` carries the label that says it is a house
+   approximation, and it is not optional chrome. */
+.ym-score {
+  background: var(--surface-container); border: 1px solid var(--outline-variant);
+  border-radius: 20px; padding: 20px; margin: 0 0 22px;
+}
+.ym-score-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.ym-score-total {
+  font-family: var(--font-display); font-weight: 700; font-size: 34px; line-height: 1;
+  font-variant-numeric: tabular-nums; color: var(--on-surface);
+}
+.ym-score-total small { font-size: 17px; font-weight: 600; color: var(--on-surface-variant); }
+.ym-verdict { font-size: 13px; padding: 4px 12px; }
+.ym-verdict.is-pass { background: var(--success-container); color: var(--on-success-container); }
+.ym-verdict.is-fail { background: var(--error-container); color: var(--on-error-container); }
+.ym-verdict.is-incomplete {
+  background: color-mix(in srgb, var(--gold) 28%, var(--surface-container-highest));
+  color: var(--on-surface);
+}
+.ym-score-why { color: var(--on-surface-variant); font-size: 15px; margin: 10px 0 0; max-width: 68ch; }
+.ym-score-note {
+  color: var(--on-surface-variant); font-size: 13px; line-height: 1.6;
+  margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--outline-variant);
+}
+.ym-secs { display: grid; gap: 12px; margin-top: 18px; }
+.ym-sec {
+  background: var(--surface); border: 1px solid var(--outline-variant);
+  border-radius: 16px; padding: 14px 16px;
+}
+.ym-sec.is-under { border-color: var(--error); }
+.ym-sec.is-off { opacity: .72; }
+.ym-sec-h { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.ym-sec-h .ym-jp { font-weight: 600; }
+.ym-sec-n {
+  margin-left: auto; font-family: var(--font-display); font-weight: 700; font-size: 22px;
+  font-variant-numeric: tabular-nums; color: var(--on-surface);
+}
+.ym-sec-n small { font-size: 14px; font-weight: 600; color: var(--on-surface-variant); }
+/* The track is the 0–max range; the fill is the estimate; the tick sits on the 基準点. */
+.ym-meter {
+  position: relative; height: 10px; border-radius: 999px; margin: 12px 0 8px;
+  background: var(--surface-container-highest); overflow: hidden;
+}
+.ym-meter-fill { height: 100%; border-radius: 999px; background: var(--success); }
+.ym-sec.is-under .ym-meter-fill { background: var(--error); }
+.ym-meter-min { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--on-surface); }
+.ym-sec-foot { display: flex; gap: 10px; flex-wrap: wrap; font-size: 13px; color: var(--on-surface-variant); }
+/* Question-by-question review: right and wrong, marked on the rail rather than by colour alone. */
+.ym-body .ym-list .ym-ok, .ym-body .ym-list .ym-bad {
+  border-left: 3px solid var(--success); border-radius: 0 10px 10px 0;
+  padding: 8px 12px; background: var(--surface-container);
+}
+.ym-body .ym-list .ym-bad { border-left-color: var(--error); }

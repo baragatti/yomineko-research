@@ -5,9 +5,14 @@ Idempotent. Usage: fix_n3_lesson_refs.py"""
 import json, re, sqlite3, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
 LDIR = ROOT / "research" / "derived" / "lessons"
-con = sqlite3.connect(ROOT / "db" / "corpus.sqlite")
+con = sqlite3.connect(db_target(ROOT / "db" / "corpus.sqlite"))
 VOCAB = {r[0] for r in con.execute("SELECT headword FROM vocab")} | {str(r[0]) for r in con.execute("SELECT id FROM vocab")}
 KANJI = {r[0] for r in con.execute("SELECT character FROM kanji")}
 GRAM = {r[0] for r in con.execute("SELECT key FROM grammar_point")}

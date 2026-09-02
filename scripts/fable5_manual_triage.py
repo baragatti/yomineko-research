@@ -26,6 +26,11 @@ import json, re, sqlite3, sys
 from collections import Counter
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 FD = ROOT / "research" / "derived" / "fable5_validation"
 PATCH = FD / "phase3_sentences_patch.json"
@@ -39,7 +44,7 @@ TOKEN_FIELD_RE = re.compile(r"^tokens\[\d+\]")
 def main() -> int:
     patch = json.loads(PATCH.read_text(encoding="utf-8"))
     manual = patch["manual"]
-    con = sqlite3.connect(ROOT / "db" / "corpus.sqlite")
+    con = sqlite3.connect(db_target(ROOT / "db" / "corpus.sqlite"))
 
     cache: dict = {}
 

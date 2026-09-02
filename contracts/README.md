@@ -11,9 +11,26 @@ form a machine can enforce, and that an API server can read to mount its routes.
 |---|---|
 | `manifest.json` | The catalogue. One row per entity: where its files are, how records are packed, which field is its public address, which namespace that address uses, how many records exist, which schema validates it. **An API reads this first.** |
 | `common.schema.json` | The shared vocabulary — `StableId`, `IdRef`, `LocaleText`, `LocaleTextList`, `Level`, `Locale`, `Layer`, `Provenance`, `LevelTag`, `LevelSources`. **Hand-authored.** Entity schemas `$ref` these instead of restating them, which is also what stops a regeneration narrowing them. |
-| `<entity>.schema.json` | One JSON Schema (draft 2020-12) per entity, 23 of them. |
-| `types.ts` | The same contract as TypeScript interfaces, generated from the schemas. |
-| `_shapes.json` | The measured field inventory the schemas were derived from. Regenerate it, not by hand. |
+| `<entity>.schema.json` | One JSON Schema (draft 2020-12) per **content** entity, 23 of them. |
+| `user_state/<entity>.schema.json` | One schema per **runtime** entity, 7 of them: `user`, `card`, `review_log`, `lesson_progress`, `exam_attempt`, `skill_state`, `feature_state`. **Hand-authored**, specified by [`design/user_state.md`](../design/user_state.md). |
+| `types.ts` | The same contract as TypeScript interfaces, generated from the schemas — content and runtime alike. |
+| `_shapes.json` | The measured field inventory the schemas were derived from. Regenerate it, not by hand. Only content entities appear in it. |
+
+### Two entity classes
+
+`manifest.json` labels every entity with a `class`, and the class decides what "healthy" looks like:
+
+| class | `files` | `records` | means |
+|---|---|---|---|
+| `content` | a glob that matches | an exact count | committed JSON under `corpus/` or `course/`. **23** entities, flat in this directory. An entity whose glob matches zero records is a FAILURE, not an empty entity. |
+| `runtime` | **`null`** | **`null`** | minted per learner by the app; no record is committed here and none ever will be. **7** entities, under `user_state/`. |
+
+The class is **declared** in each schema's `x-yomineko.class`, never inferred from a missing glob — a
+stopped exporter also produces a missing glob, and the two must not look alike to a validator. Both
+directions are gated: a `runtime` entity that declares a glob fails, so a content entity cannot relabel
+itself and go quiet; a `content` entity with no glob fails, where it used to pass with a note. A runtime
+schema is still checked — it must compile as draft 2020-12 and every `$ref` in it must resolve — and
+`build_schemas.py` will never write one, so a regeneration cannot narrow it.
 
 ## The rules the contract encodes
 
@@ -101,7 +118,15 @@ Every `enum` in a generated schema carries an `x-vocabulary` block naming its ow
 - **`curated`** — genuinely closed, owned by no document, written out in `build_schemas.py` with its
   source named (kana group types, KANJIDIC reading classes, the `family.type` column comment in
   `001_init.sql`).
-- **`measured`** — a field that survived every filter below. There are currently **none**.
+- **`measured`** — a field that survived every filter below. There are currently **two**, both in
+  `speak_unit.schema.json`: `fluency.kind` → `["recap", "situation"]` and `production[].kind` →
+  `["on-topic", "review", "same-stage"]`. They are the only enums in the contracts carrying no
+  "Vocabulary owner:" line, which is how you find them. Both are in fact **builder-owned**:
+  `scripts/export/build_speaking_practice.py` writes them literally (`"kind": "recap" if is_recap else
+  "situation"`, and `"same-stage" / "on-topic" / "review"`), so they belong under `producer` — the
+  generator simply does not parse that builder, so the values were derived from the data instead. Until
+  it does, treat them as closed only for as long as that one file says they are. (This section said
+  "there are currently none" until 2026-09-02, when the readiness sweep counted them.)
 
 A field with no such source gets a plain `string`. That is deliberate: `nuance_tags`, `usage_contexts`,
 `pattern[].role`, `clause_structure`, `theme`, `pos_coarse`/`pos_fine` (third-party analyzer output the

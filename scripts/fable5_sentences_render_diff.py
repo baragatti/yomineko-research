@@ -27,6 +27,11 @@ import argparse, json, re, sqlite3, sys
 from collections import Counter
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts" / "validate"))
 from validate_groundtruth import kana2romaji  # noqa: E402  (project romanizer, single source of truth)
@@ -180,7 +185,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--per-batch", type=int, default=25)
     args = ap.parse_args()
-    con = sqlite3.connect(ROOT / "db" / "corpus.sqlite")
+    con = sqlite3.connect(db_target(ROOT / "db" / "corpus.sqlite"))
 
     auto = json.loads((FD / "phase3_sentences_patch.json").read_text(encoding="utf-8"))["sentences"]
     manual = json.loads((FD / "phase3_manual_apply.json").read_text(encoding="utf-8"))["sentences"]

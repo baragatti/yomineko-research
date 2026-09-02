@@ -11,7 +11,15 @@ interface cannot drift from the data the way a hand-written one does — the pro
 declared `ai?: number` for months after the field had been renamed, and nothing caught it because
 only the bundler knew.
 
-Reads:  contracts/*.schema.json
+Entities come in two CLASSES, declared per schema in x-yomineko.class:
+
+  content  — committed JSON under corpus/ or course/. `files` is a glob that matches and `records` is
+             an exact count. 23 of them, flat in contracts/.
+  runtime  — a contract with no committed records: user state, minted per learner by the app. `files`
+             and `records` are null, and that is correct rather than a stopped exporter. 7 of them,
+             under contracts/user_state/, specified by design/user_state.md.
+
+Reads:  contracts/*.schema.json, contracts/*/*.schema.json
 Writes: contracts/manifest.json, contracts/types.ts
 """
 from __future__ import annotations
@@ -52,10 +60,20 @@ def ts_name(entity: str) -> str:
     return "".join(p.capitalize() for p in entity.split("_"))
 
 
-def ts_type(node: dict, depth: int = 0) -> str:
-    """Render one schema node as a TypeScript type."""
+def ts_type(node: dict, depth: int = 0, defs: dict | None = None, seen: frozenset = frozenset()) -> str:
+    """Render one schema node as a TypeScript type.
+
+    `defs` is the owning document's `$defs` block. A local `#/$defs/<name>` reference is inlined from
+    it rather than falling through to `unknown`: a schema that factors a value set out into `$defs`
+    (exam_attempt's fourteen paper sections) would otherwise reach types.ts as `unknown`, which is
+    precisely the silent drift this generator exists to prevent. `seen` breaks a recursive $def.
+    """
     ref = node.get("$ref")
     if ref:
+        if ref.startswith("#/$defs/") and defs is not None:
+            name = ref.split("/")[-1]
+            if name in defs and name not in seen:
+                return ts_type(defs[name], depth, defs, seen | {name})
         tail = ref.split("/")[-1]
         if tail in ("LocaleText", "LocaleTextList", "StableId", "Level", "Layer"):
             return tail
@@ -80,15 +98,15 @@ def ts_type(node: dict, depth: int = 0) -> str:
         return "unknown"
 
     if "anyOf" in node:
-        return " | ".join(dict.fromkeys(ts_type(x, depth) for x in node["anyOf"]))
+        return " | ".join(dict.fromkeys(ts_type(x, depth, defs, seen) for x in node["anyOf"]))
 
     t = node.get("type")
     if isinstance(t, list):
         return " | ".join(dict.fromkeys(
-            ts_type({**node, "type": one}, depth) for one in t))
+            ts_type({**node, "type": one}, depth, defs, seen) for one in t))
 
     if t == "array":
-        return f"{ts_type(node.get('items', {}), depth + 1)}[]"
+        return f"{ts_type(node.get('items', {}), depth + 1, defs, seen)}[]"
 
     if t == "object" or "properties" in node:
         props = node.get("properties")
@@ -99,7 +117,7 @@ def ts_type(node: dict, depth: int = 0) -> str:
         fields = []
         for k, v in props.items():
             key = k if k.isidentifier() else json.dumps(k)
-            fields.append(f"{pad}{key}{'' if k in req else '?'}: {ts_type(v, depth + 1)};")
+            fields.append(f"{pad}{key}{'' if k in req else '?'}: {ts_type(v, depth + 1, defs, seen)};")
         close = "  " * (depth + 1)
         return "{\n" + "\n".join(fields) + f"\n{close}}}"
 
@@ -107,6 +125,27 @@ def ts_type(node: dict, depth: int = 0) -> str:
         return " | ".join("null" if x is None else json.dumps(x) for x in node["enum"])
 
     return SCALAR.get(t, "unknown")
+
+
+def ts_interface(entity: str, doc: dict) -> str:
+    """One entity's TypeScript declaration, from its schema's root properties."""
+    name = ts_name(entity)
+    desc = doc.get("description", "").strip()
+    block = []
+    if desc:
+        block.append("/** " + desc + " */")
+    defs = doc.get("$defs", {})
+    props = doc.get("properties", {})
+    if props:
+        req = set(doc.get("required", []))
+        block.append(f"export interface {name} {{")
+        for k, v in props.items():
+            key = k if k.isidentifier() else json.dumps(k)
+            block.append(f"  {key}{'' if k in req else '?'}: {ts_type(v, 0, defs)};")
+        block.append("}")
+    else:
+        block.append(f"export type {name} = {ts_type(doc, 0, defs)};")
+    return "\n".join(block)
 
 
 def namespaces_of(glob: str | None, packing: str, id_field: str | None):
@@ -132,7 +171,12 @@ def namespaces_of(glob: str | None, packing: str, id_field: str | None):
 
 
 def main() -> int:
-    schemas = sorted(p for p in CONTRACTS.glob("*.schema.json") if p.name != "common.schema.json")
+    # Content entities are flat in contracts/; the runtime class (contracts/user_state/) is one level
+    # down, so the glob has to descend exactly one directory. `sorted` over the relative POSIX path
+    # keeps the output stable across platforms.
+    schemas = sorted((p for p in [*CONTRACTS.glob("*.schema.json"), *CONTRACTS.glob("*/*.schema.json")]
+                      if p.name != "common.schema.json"),
+                     key=lambda p: p.relative_to(CONTRACTS).as_posix())
     if not schemas:
         print("no schemas — run build_schemas.py first", file=sys.stderr)
         return 2
@@ -143,6 +187,32 @@ def main() -> int:
         meta = doc.get("x-yomineko", {})
         entity = meta.get("entity", path.name.split(".")[0])
         id_field = meta.get("stable_id_field")
+        # Entity CLASS. `content` = committed JSON under corpus/ or course/, located by a glob and
+        # counted exactly. `runtime` = a contract with no committed records and no glob, because the
+        # records are minted per learner by the app (design/user_state.md §12). The class is DECLARED
+        # in the schema, never inferred from a missing glob: an exporter that stopped also produces a
+        # missing glob, and the two must not look the same to a validator.
+        cls = meta.get("class", "content")
+        if cls == "runtime":
+            # `files`, `packing` and `records` are reported as DECLARED, not normalized to null. A
+            # runtime schema that declares a glob is a contradiction, and the catalogue's job is to
+            # show it so validate_schema_generation_is_current.py can fail on it — a generator that
+            # quietly wrote null here would launder the very mistake the class exists to catch.
+            entities.append({
+                "entity": entity,
+                "class": cls,
+                "title": doc.get("title", entity),
+                "description": doc.get("description", ""),
+                "schema": path.relative_to(CONTRACTS).as_posix(),
+                "files": meta.get("glob"),
+                "packing": meta.get("packing"),
+                "stable_id_field": id_field,
+                "id_namespace": meta.get("key_namespace"),
+                "natural_key": meta.get("natural_key"),
+                "records": meta.get("records"),
+            })
+            ts_blocks.append(ts_interface(entity, doc))
+            continue
         # The namespace is read off the DATA rather than off the schema: the generated schemas point
         # `id`/`slug` at the shared StableId definition, whose pattern is deliberately generic, so the
         # schema alone cannot say that kanji ids start with "kanji:" and exam items with "cf:"/"kr:"/…
@@ -151,17 +221,18 @@ def main() -> int:
         # they draw, and the two keyed files by their key. Recording the natural key is honest about
         # the gap — an API can still route on it, but these records cannot be linked to from the graph
         # the way every other record can.
-        natural = None
-        if not id_field and meta.get("packing") != "map":
+        natural = meta.get("natural_key")
+        if natural is None and not id_field and meta.get("packing") != "map":
             for cand in ("character", "char"):
                 if cand in doc.get("properties", {}):
                     natural = cand
                     break
         entities.append({
             "entity": entity,
+            "class": cls,
             "title": doc.get("title", entity),
             "description": doc.get("description", ""),
-            "schema": path.name,
+            "schema": path.relative_to(CONTRACTS).as_posix(),
             "files": meta.get("glob"),
             "packing": meta.get("packing", "list"),
             "stable_id_field": id_field,
@@ -169,23 +240,7 @@ def main() -> int:
             "natural_key": natural,
             "records": meta.get("records"),
         })
-
-        name = ts_name(entity)
-        desc = doc.get("description", "").strip()
-        block = []
-        if desc:
-            block.append("/** " + desc + " */")
-        props = doc.get("properties", {})
-        if props:
-            req = set(doc.get("required", []))
-            block.append(f"export interface {name} {{")
-            for k, v in props.items():
-                key = k if k.isidentifier() else json.dumps(k)
-                block.append(f"  {key}{'' if k in req else '?'}: {ts_type(v, 0)};")
-            block.append("}")
-        else:
-            block.append(f"export type {name} = {ts_type(doc, 0)};")
-        ts_blocks.append("\n".join(block))
+        ts_blocks.append(ts_interface(entity, doc))
 
     manifest = {
         "schema_version": "1.0",
@@ -196,9 +251,20 @@ def main() -> int:
         "id_convention": "Every record is addressed by a prefixed stable id — <namespace>:<identifier>. "
                          "Some registries also carry an integer `id`; that is a storage row number, it "
                          "is NOT stable across a rebuild, and it must never be used as an API key.",
+        "classes": {
+            "content": "Committed JSON under corpus/ or course/. `files` is a glob that matches and "
+                       "`records` is an exact count; an entity whose glob matches zero records is a "
+                       "FAILURE, not an empty entity.",
+            "runtime": "A contract with no committed records and no `files` glob, because the records "
+                       "are minted per learner by the app — user state, not corpus content. `files` "
+                       "and `records` are null and that is CORRECT. The class is declared in the "
+                       "schema's x-yomineko block, never inferred from an absent glob, so a content "
+                       "entity whose exporter stopped cannot relabel itself and go quiet. "
+                       "Specified by design/user_state.md.",
+        },
         "common_schema": "common.schema.json",
         "types": "types.ts",
-        "entities": sorted(entities, key=lambda e: e["entity"]),
+        "entities": sorted(entities, key=lambda e: (e["class"] != "content", e["entity"])),
     }
     (CONTRACTS / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -206,10 +272,14 @@ def main() -> int:
         TS_HEADER + "\n" + "\n\n".join(ts_blocks) + "\n", encoding="utf-8")
 
     total = sum(e["records"] or 0 for e in entities)
-    print(f"{len(entities)} entities, {total} records -> contracts/manifest.json + contracts/types.ts")
+    n_runtime = sum(1 for e in entities if e["class"] == "runtime")
+    print(f"{len(entities)} entities ({len(entities) - n_runtime} content, {n_runtime} runtime), "
+          f"{total} records -> contracts/manifest.json + contracts/types.ts")
     for e in manifest["entities"]:
-        print(f"  {e['entity']:22} {str(e['records'] or ''):>6}  id={e['stable_id_field'] or '(key)':<6} "
-              f"ns={','.join(e['id_namespace']) if e['id_namespace'] else '-'}")
+        count = "runtime" if e["class"] == "runtime" else str(e["records"] or "")
+        ns = e["id_namespace"]
+        print(f"  {e['entity']:22} {count:>7}  id={e['stable_id_field'] or '(key)':<6} "
+              f"ns={','.join(ns) if isinstance(ns, list) else (ns or '-')}")
     return 0
 
 

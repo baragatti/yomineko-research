@@ -175,8 +175,9 @@ drills         per surviving `pattern`, 3 known-set example IDs (R80/R81); a pat
 kanji_recognition  every kanji appearing in the unit's phrases, capped at 6. RECOGNITION
                ONLY — this path never asks the learner to write kanji. It was named
                `signage_kanji` and described here as "入口 出口 男 女 駅 円 …", which was
-               untrue: the field holds 212 distinct kanji across the path, of which about
-               18 are classic signage. Renamed to say what it contains.
+               untrue: the field holds 227 distinct kanji across the path (counted over the
+               72 exported units, 2026-09-02; this said 212), of which about 18 are classic
+               signage. Renamed to say what it contains.
 ```
 
 `production`, `fluency` and `drills` were added by `build_speaking_practice.py` after this section was
@@ -207,8 +208,16 @@ Approximate JLPT bands are shown for orientation only — **the path never gates
 | 11 | Dizer o que você acha | `opinions` | と思う から でも たぶん かもしれない 方が | N4/N3 |
 | 12 | Conversa de verdade | `real_talk` | らしい そうです ば たら のに ながら わけ | N3 |
 
-Full seed lexicons — and the per-stage survival cores of R87 — live in the builder, not here, so they
-stay executable rather than drifting from the prose.
+Full seed lexicons live in the builder, not here, so they stay executable rather than drifting from the
+prose. **The survival cores of R87 do not exist per stage yet.** `SURVIVAL_SEEDS` in
+`scripts/export/build_speaking_path.py` holds exactly **one** entry — `shopping`, with 8 terms
+(いくらですか / いくらぐらい / これをください / それをください / あれをください / 値段 / 会計 / レジ)
+— and the other **eleven stages have none**, so in those eleven the frequency axis still decides the
+whole stage, which is the failure R87 was written to stop. Reading this section as "each stage declares
+its core, the list just lives in code" is wrong; writing the eleven missing cores is a queued unit
+(readiness G2). The R87 example itself is only half-fixed: `shopping` now leads with a price question,
+but あれはキジです (`sent:tatoeba-229742`, "that is a pheasant") is **still shipped** in
+`speak:shopping-03` (checked in the export, 2026-09-02).
 
 **`ください` vs `をください`.** Bare `ください` was a `shopping` seed once and filled the whole stage with
 〜てください drills ("close the door", "wait here") — the polite imperative on a *verb*, which is not
@@ -216,20 +225,29 @@ shopping. `をください` is the other construction entirely: ask for an **obj
 that appears in every other sentence selects for the seed, not the theme; the same mistake put
 obligation forms in `getting_around` via 行く.
 
-## 6. Known gaps (measured 2026-08-05, before the first build)
+## 6. Known gaps (re-measured 2026-09-02 against the exported bank)
 
-Real-sentence yield in the current 5,565-sentence bank (3,352 real):
+Real-sentence yield per stage — sentences in `corpus/sentences` with `ai_generated: false` whose token
+lemmas hit one of the stage's seeds (or whose Japanese contains a 4+ character seed), i.e. the same
+`seed_hit` rule the builder uses, run over the **5,889-sentence bank (3,676 real)**:
 
 ```
-arrival 136   shopping 209   eating 97   getting_around 148
-lodging  18   about_you 115  health 38   time_plans 368
+arrival  48   shopping 277   eating 115   getting_around 129
+lodging 140   about_you 99   health  50   time_plans     263
+past_stories 90   politeness 87   opinions 82   real_talk 131
 ```
 
-`lodging` (18) and `health` (38) are too thin for five units each. The fix is **selection, not
-generation**: `raw_tatoeba_sentence` holds 248,705 sentences already ingested and licensed, and
-`raw_tatoeba_translation` holds 285,215 translations to pair them with. Mining those two stages up
-to parity is the follow-up task; it needs a pt-BR authoring pass (Layer B) per new sentence, which
-is why it is queued rather than done inline. Until then the builder emits short units and says so.
+Every figure in this block moved. It previously read "the current 5,565-sentence bank (3,352 real)"
+with `lodging 18` and `health 38` named as the thin stages, and said the mining fix was "queued rather
+than done". **The mining happened**: 324 sentences carry the `mined` tag and are stage-tagged
+`lodging` 111, `opinions` 108, `past_stories` 105, which is what took `lodging` from 18 to 140.
+
+The thin stages are now **`arrival` (48)** and **`health` (50)** — both below the next-thinnest by a
+wide margin, and `arrival` is the *first* stage a learner meets. Mining them to parity is the same
+`raw_tatoeba_sentence` / `raw_tatoeba_translation` pass (248,705 sentences and 285,215 translations
+already ingested and licensed) that produced the 324, and it still needs a pt-BR authoring pass
+(Layer B) per new sentence. All twelve stages currently fill all 36 `say_now` slots, so the shortfall
+no longer shows up as short units — it shows up as thinner choice behind the same slot count.
 
 **This gap did not stay visible, which is why R85 exists.** The builder filled all 36 `lodging` slots
 anyway, 25 of them from one contiguous "the room" id-run — a thin stage papered over with a textbook
@@ -243,11 +261,15 @@ The path does not feed the **simulator** (`design/exam_simulator.md` samples who
 not part of this route), but it does reuse the **bank**. Bank items carry the same corpus IDs the path
 does, so they join without any new authoring:
 
+Counts below are `checkpoint[].via` over the 72 exported units, recounted 2026-09-02 (the table read
+120 / 177 / 24 before, from an earlier build):
+
 | Link | Meaning | Count |
 |---|---|---|
-| `phrase` | the item is built from a phrase this unit just practised | 120 |
-| `new-word` | the item tests a word this unit introduces | 177 |
-| `review` | spaced review of a word from the cumulative known set | 24 |
+| `phrase` | the item is built from a phrase this unit just practised | 125 |
+| `new-word` | the item tests a word this unit introduces | 196 |
+| `review` | spaced review of a word from the cumulative known set | 44 |
+| | **total checkpoint items** | **365** |
 
 Type selection follows what the path is for, not what the bank offers. `orthography` is excluded
 outright: it asks the learner to produce kanji, and this path is recognition-only. `reading_comp` and

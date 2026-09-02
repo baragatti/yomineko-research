@@ -1,8 +1,9 @@
 # Yomineko Prototype (SSR)
 
 A server-rendered prototype that drives the original Yomineko UI design system with **real corpus data**
-from this research project (213 lessons, full N5/N4 corpus). Built with **React Router v7 (framework mode,
-SSR-only)** so the private corpus is never shipped to the browser.
+from this research project (**322 lessons** across four courses — pre-N5 41, N5 84, N4 96, N3 101 —
+counted from `course/*/topic-*/lesson-*.json` on 2026-09-02). Built with **React Router v7 (framework
+mode, SSR-only)** so the private corpus is never shipped to the browser.
 
 > This lives inside `yomineko-research/prototype` for development. When we want to publish, we copy it back
 > into the standalone `yomineko-prototype` repo and deploy from there (see **Copy-back workflow** below).
@@ -21,11 +22,12 @@ The corpus is private, paid content. It must not be fetchable/scrapable from the
   (`<heading>`, `<sentence ref=…>`, `<vocab ref=…>`, etc.) and the corpus internals never reach the client —
   only the final styled markup does.
 
-Build-time proof (run after `npm run build`):
+Build-time proof (run after `npm run build`; sizes below measured 2026-09-02 from a fresh build of the
+current `app/data`, and they move with the corpus — re-measure rather than trusting them):
 
 ```
-build/client  ~465 KB   # no corpus — class names + UI chrome only
-build/server  ~10.8 MB  # corpus JSON is bundled HERE, server-side only
+build/client   526 KB   # 45 files; no corpus — class names + UI chrome only
+build/server  61.5 MB   # one index.js; corpus JSON is bundled HERE, server-side only
 ```
 
 Searching `build/client` for corpus sentences / translations / data JSON returns nothing. The only
@@ -69,9 +71,14 @@ npm run build         # production build (client + server bundles)
 npm run start         # serve the production build (PORT/HOST from env)
 ```
 
-`npm run sync-data` reads the corpus/courseware under the research repo and writes a consolidated,
-**reference-filtered** snapshot into `app/data/` (only sentences actually referenced by a lesson are
-included, keeping the snapshot ~2 MB instead of ~21 MB).
+`npm run sync-data` reads the corpus/courseware under the research repo and writes a consolidated
+snapshot into `app/data/`: **58.6 MB over 16 files** (measured 2026-09-02; largest are `sentences.json`
+14.2 MB, `lessons.json` 11.4 MB, `conjugationBank.json` 7.9 MB, `strokes.json` 7.1 MB).
+
+This README used to say the snapshot was "~2 MB instead of ~21 MB" because only lesson-referenced
+sentences were included. **That filter is gone** — `sync-data.mjs` now ships the whole sentence bank
+(all 5,889 records) *slimmed* to display fields, so detail pages can show examples anywhere a sentence
+appears. It is still server-only, so nothing about the SSR guarantee changes; the size does.
 
 ---
 

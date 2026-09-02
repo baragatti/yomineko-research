@@ -545,6 +545,160 @@ export interface Topic {
   title: LocaleText;
 }
 
+/** One memory fact a learner is scheduled on: one row per (user, unlocked item, card kind). Minted when the lesson that unlocks the item is completed, from that lesson's srs.introduces_cards[] entry fanned out one row per card_type — 4,133 cards over 322 lessons, 9,453 card instances, no item enrolled twice anywhere. RUNTIME class: minted per learner, never committed to this repo. This record is a version-tagged DERIVED CACHE: every scheduling field on it can be recomputed by replaying the card's review_log rows, which is what makes an FSRS version bump or a re-optimized weight vector a replay rather than a migration. See design/user_state.md §5. */
+export interface Card {
+  card_id: StableId;
+  user_id: StableId;
+  deck: "deck:grammar-n3" | "deck:grammar-n4" | "deck:grammar-n5" | "deck:kana-hiragana" | "deck:kana-katakana" | "deck:kanji-n3" | "deck:kanji-n4" | "deck:kanji-n5" | "deck:phrases" | "deck:vocab-n3" | "deck:vocab-n4" | "deck:vocab-n5";
+  item: StableId;
+  kind: "cloze" | "handwriting" | "listening" | "production" | "recognition";
+  cloze_target?: string | null;
+  introduced_by: StableId;
+  state: "learning" | "new" | "relearning" | "review";
+  step?: number | null;
+  stability?: number | null;
+  difficulty?: number | null;
+  due: string;
+  last_review?: string | null;
+  reps: number;
+  lapses: number;
+  suspended_at?: string | null;
+  buried_until?: string | null;
+  leech_state: "flagged" | "none" | "suspended";
+  tags?: string[];
+  fsrs_version: "fsrs-6";
+  params_version: string;
+}
+
+/** One sat JLPT-simulation paper: one row per (user, level, attempt number). That triple IS the seed (design/exam_simulator.md §5), so the same learner asking for the same attempt number at the same level gets the same paper — which is what makes a support request answerable months later. RUNTIME class: minted per learner, never committed to this repo. See design/user_state.md §7. */
+export interface ExamAttempt {
+  attempt_id: StableId;
+  user_id: StableId;
+  level: Level;
+  attempt_no: number;
+  seed: string;
+  seed_algorithm: string;
+  mode: "full" | "section" | "study";
+  started_at: string;
+  submitted_at?: string | null;
+  time_limit_seconds?: number | null;
+  elapsed_seconds?: number | null;
+  items: {
+      item: StableId;
+      section: "context_fill" | "grammar_form" | "kanji_reading" | "listening_gist" | "listening_point" | "listening_reply" | "listening_say" | "listening_task" | "orthography" | "paraphrase" | "reading_comp" | "sentence_order" | "text_grammar" | "usage";
+      position: number;
+      presented_options?: string[];
+      answer_given?: string | null;
+      correct_answer?: string;
+      correct: boolean;
+      response_ms?: number | null;
+    }[];
+  sections: {
+      section: "context_fill" | "grammar_form" | "kanji_reading" | "listening_gist" | "listening_point" | "listening_reply" | "listening_say" | "listening_task" | "orthography" | "paraphrase" | "reading_comp" | "sentence_order" | "text_grammar" | "usage";
+      raw: number;
+      possible: number;
+      minimum_met?: boolean | null;
+    }[];
+  total_raw: number;
+  total_possible: number;
+  scaled?: {
+    score: number;
+    max: number;
+    pass_mark: number;
+    sectional_minima_met: boolean;
+  };
+  passed?: boolean | null;
+}
+
+/** One row per (user, app feature) over the sixteen features declared in design/unlock_enums.json#feature. RUNTIME class: minted per learner, never committed to this repo. Separates being ALLOWED to use a feature from having it turned ON, because furigana-toggle and romaji-toggle are settings and one boolean cannot hold both facts. See design/user_state.md §9. */
+export interface FeatureState {
+  user_id: StableId;
+  feature: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode";
+  unlocked: boolean;
+  unlocked_at?: string | null;
+  unlocked_by?: StableId | null;
+  source: "admin" | "default" | "entitlement" | "lesson";
+  enabled: boolean;
+}
+
+/** One row per (user, lesson) — 322 lessons. Records what the learner DID (`status`, the counts, the score) separately from what the data SAYS (`mastery`), because collapsing the two makes "completed" unfalsifiable. RUNTIME class: minted per learner, never committed to this repo. The mastery THRESHOLD is a named parameter block, not a constant, and it is PENDING owner decision D2 — see design/user_state.md §6.1. */
+export interface LessonProgress {
+  user_id: StableId;
+  lesson: StableId;
+  status: "completed" | "not_started" | "opened";
+  opened_at?: string | null;
+  completed_at?: string | null;
+  attempts: number;
+  exercises_total?: number;
+  exercises_attempted?: number;
+  exercises_correct?: number;
+  score?: number | null;
+  cards_seeded: boolean;
+  mastery: {
+    state: "met" | "not_met" | "unknown";
+    criterion: "MASTERY_V1";
+    observed?: number | null;
+    evaluated_at?: string | null;
+  };
+}
+
+/** One graded answer. APPEND-ONLY: never updated, never deleted, and kept when its card is deleted (marked orphaned instead) — this table is the only asset in the runtime model that cannot be regenerated, because it is the FSRS optimizer's entire training set and every scheduling field on `card` is replayable from it. FSRS-6 needs nothing per card beyond a stable id and this history: `Scheduler.review_card(card, rating, review_datetime)` in both reference implementations reads only (card, rating, timestamp), and the optimizer trains on the ordered (rating, elapsed) sequence per card. Everything beyond that here is stored to make a scheduling complaint debuggable. RUNTIME class: minted per learner, never committed to this repo. See design/user_state.md §3. */
+export interface ReviewLog {
+  log_id: StableId;
+  user_id: StableId;
+  card_id: string;
+  rating: number;
+  review_datetime: string;
+  elapsed_days: number;
+  scheduled_days: number;
+  state: "learning" | "new" | "relearning" | "review";
+  stability_after?: number | null;
+  difficulty_after?: number | null;
+  due_after?: string | null;
+  review_duration_ms?: number | null;
+  source: "daily_queue" | "exam_sim" | "lesson_drill" | "manual_cram";
+  fsrs_version: "fsrs-6";
+  params_version: string;
+  orphaned?: boolean;
+}
+
+/** One row per (user, capability) over the 74 capabilities in corpus/capabilities/registry.json — the SKILL track, deliberately not FSRS. Its signal is binary and capability-level, so a 21-parameter model would fit noise; a bounded-ease ladder is robust, explainable and cheap (design/srs_design.md §5). RUNTIME class: minted per learner, never committed to this repo. See design/user_state.md §8. */
+export interface SkillState {
+  user_id: StableId;
+  capability: StableId;
+  ease: number;
+  streak: number;
+  due_at: string;
+  last_result?: "correct" | "incorrect" | null;
+  last_reviewed_at?: string | null;
+  reps: number;
+  correct: number;
+  recent_items?: StableId[];
+}
+
+/** One learner account, plus the scheduler settings that are one-to-one with it. RUNTIME class: minted per learner, never committed to this repo — see design/user_state.md §12. Holds no email, no password, no password hash, no IP and no third-party identifier; `user_id` is opaque and `display_name` is learner-set prose, not an identity. Authentication lives outside this contract and owner decision D8 decides where. */
+export interface User {
+  user_id: StableId;
+  created_at: string;
+  locale: string;
+  timezone: string;
+  display_name?: string;
+  entitlement: "comp" | "free" | "paid" | "trial";
+  scheduler: {
+    fsrs_version: "fsrs-6";
+    desired_retention: number;
+    params?: number[] | null;
+    params_trained_at?: string | null;
+    reviews_at_training?: number | null;
+    learning_steps?: number[];
+    daily_new_cap: number;
+    daily_review_cap: number;
+  };
+  session?: {
+    target_minutes: number;
+  };
+}
+
 /** One dictionary word, keyed by its JMdict entry. Carries senses, pitch, inflection class and the consensus level. */
 export interface Vocab {
   adj_class: "i_adj" | "na_adj" | null;

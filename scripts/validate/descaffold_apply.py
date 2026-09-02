@@ -7,8 +7,13 @@ from __future__ import annotations
 import argparse, json, re, sqlite3, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 # locale-aware guard: in pt-BR "target"/"candidato" are leaks; in en they are legitimate English words
 PT_LEAK = re.compile(r"gp-\d+|candidat[oae]s?\b|candidate\b|tari-tari|cand-\w+|(?<![0-9])\d{5,6}(?![0-9])"
                      r"|\btarget\b|\bjec\b|位置\s*\d|posi[çc][ãa]o\s*\d", re.I)

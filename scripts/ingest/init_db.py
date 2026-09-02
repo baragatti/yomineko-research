@@ -11,8 +11,13 @@ import sqlite3
 import sys
 from pathlib import Path
 
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 MIG = ROOT / "scripts" / "ingest" / "migrations"
 
 
@@ -34,7 +39,25 @@ def main() -> int:
             print(f"  [skip] {f.name}")
             continue
         print(f"  [apply] {f.name}")
-        con.executescript(f.read_text(encoding="utf-8"))
+        # Statement at a time rather than executescript, so a column that a hand-run ALTER already
+        # added to the live DB does not abort a migration that legitimately declares it (009). Only
+        # the duplicate-column case is swallowed; every other error still stops the run.
+        # sqlite3.complete_statement does the splitting, because it knows a ';' inside a comment or a
+        # string literal is not the end of anything — the naive split does not.
+        buf = ""
+        for line in f.read_text(encoding="utf-8").splitlines(keepends=True):
+            buf += line
+            if not sqlite3.complete_statement(buf):
+                continue
+            stmt, buf = buf.strip(), ""
+            try:
+                con.execute(stmt)
+            except sqlite3.OperationalError as e:
+                if "duplicate column name" not in str(e):
+                    raise
+                print(f"    [have] {str(e).split(':')[-1].strip()}")
+        if buf.strip():
+            raise SystemExit(f"{f.name}: trailing text with no statement terminator")
         con.execute(
             "INSERT INTO schema_migration(filename, applied_at) VALUES (?, ?)",
             (f.name, _dt.datetime.now().isoformat(timespec="seconds")),
@@ -46,7 +69,8 @@ def main() -> int:
             "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name"
         )
     ]
-    print(f"\nDB ready: {DB.relative_to(ROOT)}  ({len(tables)} tables)")
+    shown = DB.relative_to(ROOT) if DB.is_relative_to(ROOT) else DB
+    print(f"\nDB ready: {shown}  ({len(tables)} tables)")
     print("tables:", ", ".join(tables))
     con.close()
     return 0

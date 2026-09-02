@@ -151,6 +151,11 @@ def main() -> int:
 
     for ent in entities:
         entity, packing, glob = ent["entity"], ent.get("packing", "list"), ent["files"]
+        if not glob:
+            # A `runtime` entity (W26: user-state contracts such as card / review_log) has a schema
+            # and no committed records by contract — there is no provenance to check. Content
+            # entities without a glob are validate_contracts' failure, not ours.
+            continue
         seen: list[tuple[str, dict]] = []
         declared: set[str] = set()
         for path in sorted(root.glob(glob)):

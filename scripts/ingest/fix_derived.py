@@ -13,7 +13,12 @@ from pathlib import Path
 
 import jaconv
 
-DB = Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite"
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
+DB = db_target(Path(__file__).resolve().parents[2] / "db" / "corpus.sqlite")
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 
 

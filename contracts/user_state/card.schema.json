@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/card.schema.json",
+  "title": "card",
+  "description": "One memory fact a learner is scheduled on: one row per (user, unlocked item, card kind). Minted when the lesson that unlocks the item is completed, from that lesson's srs.introduces_cards[] entry fanned out one row per card_type — 4,133 cards over 322 lessons, 9,453 card instances, no item enrolled twice anywhere. RUNTIME class: minted per learner, never committed to this repo. This record is a version-tagged DERIVED CACHE: every scheduling field on it can be recomputed by replaying the card's review_log rows, which is what makes an FSRS version bump or a re-optimized weight vector a replay rather than a migration. See design/user_state.md §5.",
+  "x-yomineko": {
+    "entity": "card",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/user_state.md#5-card",
+    "stable_id_field": "card_id",
+    "key_namespace": ["usr"],
+    "note": "card_id is COMPOSED from ids that already exist — f\"{user_id}:{deck}:{item}:{kind}\" — so no counter and no server round-trip is needed to name a card. It parses back by splitting on ':' into exactly seven segments, because user_id, deck and item are two segments each and kind is one; no corpus stable id carries a second colon (verified across corpus/**). Putting `deck` in the key means a refile is a migration, not an edit: see design/user_state.md §2."
+  },
+  "type": "object",
+  "properties": {
+    "card_id": {
+      "$ref": "../common.schema.json#/$defs/StableId",
+      "pattern": "^usr:[A-Za-z0-9_-]+:deck:[a-z0-9-]+:[a-z][a-z0-9_]*:[^\\s:]+:(recognition|production|listening|handwriting|cloze)$",
+      "description": "f\"{user_id}:{deck}:{item}:{kind}\" — e.g. `usr:7f3a91:deck:vocab-n5:vocab:1580640:recognition`. The pattern is the composition rule made enforceable; the four components are also stored as their own fields below, because an index on a substring is not an index.",
+      "examples": [
+        "usr:7f3a91:deck:vocab-n5:vocab:1580640:recognition",
+        "usr:7f3a91:deck:kana-hiragana:kana:hiragana-a:handwriting",
+        "usr:7f3a91:deck:grammar-n4:gram:te-hoshii:cloze"
+      ]
+    },
+    "user_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^usr:[A-Za-z0-9_-]+$" },
+    "deck": {
+      "type": "string",
+      "enum": [
+        "deck:grammar-n3", "deck:grammar-n4", "deck:grammar-n5",
+        "deck:kana-hiragana", "deck:kana-katakana",
+        "deck:kanji-n3", "deck:kanji-n4", "deck:kanji-n5",
+        "deck:phrases",
+        "deck:vocab-n3", "deck:vocab-n4", "deck:vocab-n5"
+      ],
+      "description": "The SRS deck this card lands in, copied from the minting lesson. A deck's `level` is a CURRICULUM POSITION, not a JLPT claim about its contents: filing follows the lesson's level, not the item's, and 23 cards already sit in a deck whose level differs from the item's own corpus level. Vocabulary owner: design — design/unlock_enums.json#deck. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/unlock_enums.json#deck" }
+    },
+    "item": {
+      "$ref": "../common.schema.json#/$defs/IdRef",
+      "pattern": "^(vocab|kanji|gram|kana|sent):",
+      "description": "The corpus record this card tests, by published stable id. `vocab:` ids are SLUGS (`vocab:1580640`), never headwords — a headword is not an address, 93 of them are shared by 193 records. `kana:` is accepted at BOTH granularities: the family form `kana:hiragana-a` (57 cards today) and the glyph form `kana:hiragana-あ` (211 glyph records already exist and validate_srs_decks already accepts them). W29 migrates 57 -> 211 under decision D6; the contract has to hold across that migration, so it validates both. `sent:` becomes reachable when deck:phrases is populated (W30)."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["cloze", "handwriting", "listening", "production", "recognition"],
+      "description": "What is being retrieved. All five kinds are contracted and nothing here marks production as phase 2: the export declares `production` on all 4,133 cards, so design/srs_design.md §6's \"recognition-only at launch\" is stale (design/user_state.md §10.1). `listening` is legal and has zero cards until audio lands (W35). Vocabulary owner: design — design/unlock_enums.json#card_type. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/unlock_enums.json#card_type" }
+    },
+    "cloze_target": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z][a-z0-9_]*:[^\\s]+#\\d+$",
+      "description": "`<sentence stable id>#<token index>` — which token of which sentence is blanked. REQUIRED when kind is `cloze` and null otherwise (enforced by the branch below). Required rather than optional because re-picking the sentence at review time silently changes the fact being tested, and a card whose content moves is not one memory fact: its difficulty and stability estimates become noise."
+    },
+    "introduced_by": {
+      "$ref": "../common.schema.json#/$defs/IdRef",
+      "pattern": "^les:",
+      "description": "The lesson whose srs.introduces_cards[] minted this card. It is also the route a leech takes back to remediation, which is the only reason the app can answer \"where did I learn this\"."
+    },
+    "state": {
+      "type": "string",
+      "enum": ["learning", "new", "relearning", "review"],
+      "description": "FSRS-6 card state. Neutral English per design/i18n.md — the learner-facing labels are pt-BR content, not enum values. Vocabulary owner: design — design/user_state.md#5-card. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#5-card" }
+    },
+    "step": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Position in the learning or relearning steps. Null outside those two states."
+    },
+    "stability": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "FSRS S, in days: the interval at which recall probability falls to the desired retention. Derived from the review history, never authored. Null while state is `new`."
+    },
+    "difficulty": {
+      "type": ["number", "null"],
+      "minimum": 1,
+      "maximum": 10,
+      "description": "FSRS D. Derived from the review history, never authored. Null while state is `new`."
+    },
+    "due": { "type": "string", "format": "date-time" },
+    "last_review": { "type": ["string", "null"], "format": "date-time" },
+    "reps": { "type": "integer", "minimum": 0, "description": "Total reviews. UX only — not an FSRS input." },
+    "lapses": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Times this card was rated Again from `review`. UX only as far as the scheduler is concerned, but it drives the R33 furigana fade and the leech rule."
+    },
+    "suspended_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Out of the queue indefinitely — learner action, or the leech rule."
+    },
+    "buried_until": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Out of the queue until this instant. Sibling burying: seeing the recognition card should not hand you the answer to the production card an hour later."
+    },
+    "leech_state": {
+      "type": "string",
+      "enum": ["flagged", "none", "suspended"],
+      "description": "The remediation hook. design/srs_design.md §6 leaves leeches as an open owner question and no design doc carries a field for them; this is it. Vocabulary owner: design — design/user_state.md#5-card. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#5-card" }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "description": "Corpus-derived card tags (homophone, homograph, confusable, irregular-reading — W28) plus learner-added ones. This is what an Anki-grade user filters, suspends and buries by, and no field for it exists anywhere in the corpus today. Deliberately NOT an enum: the learner-added half is open by construction."
+    },
+    "fsrs_version": {
+      "type": "string",
+      "enum": ["fsrs-6"],
+      "description": "Which algorithm produced the cached state/stability/difficulty/due. Vocabulary owner: design — design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache" }
+    },
+    "params_version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Which weight vector produced them. A card whose params_version is behind the user's is STALE, not wrong — recompute it lazily on the next review rather than rewriting every row on an optimizer run."
+    }
+  },
+  "required": [
+    "card_id", "user_id", "deck", "item", "kind", "introduced_by",
+    "state", "due", "reps", "lapses", "leech_state", "fsrs_version", "params_version"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "cloze" } }, "required": ["kind"] },
+      "then": {
+        "properties": { "cloze_target": { "type": "string" } },
+        "required": ["cloze_target"]
+      },
+      "else": { "properties": { "cloze_target": { "type": "null" } } }
+    },
+    {
+      "if": { "properties": { "state": { "const": "new" } }, "required": ["state"] },
+      "then": {
+        "properties": {
+          "stability": { "type": "null" },
+          "difficulty": { "type": "null" },
+          "last_review": { "type": "null" }
+        }
+      },
+      "else": {
+        "properties": {
+          "stability": { "type": "number" },
+          "difficulty": { "type": "number" },
+          "last_review": { "type": "string" }
+        },
+        "required": ["stability", "difficulty", "last_review"]
+      }
+    }
+  ]
+}

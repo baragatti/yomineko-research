@@ -27,12 +27,23 @@ are redirected, so the working tree is byte-for-byte untouched whether the run p
 CHECKS
   1  _shapes.json is current      — re-infer from the data; byte-diff against the committed file.
   2  generated schemas are current — rebuild the 21 from the COMMITTED _shapes.json; byte-diff each.
-  3  hand-authored schemas untouched — build_schemas must not emit capability_lesson_map/kana_family,
-                                       and both files must exist on disk.
+  3  hand-authored schemas untouched — build_schemas must not emit capability_lesson_map/kana_family
+                                       or any of the seven runtime contracts under contracts/user_state/,
+                                       and every one of those files must exist on disk.
+  3b runtime entities are unmeasurable — none of them may appear in _shapes.json. Its name there means
+                                       records were committed for an entity contracted to have none,
+                                       and the next regeneration would overwrite the hand-authored
+                                       contract with whatever those records happen to look like.
   4  every FAMILIES entity has a schema — the map-entity blind spot F15 describes.
   5  manifest.json + types.ts are current — rebuild from the committed schemas; byte-diff.
   6  manifest counts match reality — recount each entity from its declared glob + packing, and
                                      enforce a nonzero floor so a glob that stops matching fails.
+                                     The `runtime` CLASS is the one exemption: null files and null
+                                     records are correct there (design/user_state.md §12). It is
+                                     granted on the declared class, and policed both ways — a runtime
+                                     row that carries a glob FAILS even though the glob matches
+                                     nothing, so a content entity whose exporter stopped cannot
+                                     relabel itself `runtime` and go quiet.
   7  hand-authored schemas still describe their data — every object key in lesson_map.json and
                                      kana/families.json is a property the schema declares, so a new
                                      field in the data forces a deliberate schema edit.
@@ -246,6 +257,20 @@ def main() -> int:
         print("\nvalidate_schema_generation_is_current: FAIL 1 (generators unavailable)")
         return 1
     handwritten = set(getattr(gens["build_schemas"], "HANDWRITTEN", ()))
+    runtime_entities = set(getattr(gens["build_schemas"], "RUNTIME", ()))
+    runtime_dir = getattr(gens["build_schemas"], "RUNTIME_DIR", "user_state")
+
+    def committed_paths(base: Path) -> dict[str, Path]:
+        """entity -> its schema file, across both the flat content dir and the runtime subdirectory."""
+        found = [*base.glob("*.schema.json"), *base.glob("*/*.schema.json")]
+        return {p.stem.split(".")[0]: p for p in found if p.name != "common.schema.json"}
+
+    def mirror(src_root: Path, dst_root: Path) -> None:
+        """Copy every contract into a scratch tree, keeping the runtime subdirectory."""
+        for p in [*src_root.glob("*.schema.json"), *src_root.glob("*/*.schema.json")]:
+            dst = dst_root / p.relative_to(src_root)
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(p, dst)
 
     with tempfile.TemporaryDirectory(prefix="yomineko-contracts-") as tmpname:
         tmp = Path(tmpname)
@@ -270,19 +295,20 @@ def main() -> int:
         # output directory (it asserts them rather than trusting a `continue` deep in the loop), so
         # seed the temp dir with the committed copies. They are then expected NOT to be rewritten —
         # check 3 below is what proves the generator left them alone.
+        committed_schemas = committed_paths(contracts)
         seeded = {}
         for entity in sorted(handwritten):
-            src = contracts / f"{entity}.schema.json"
-            if src.exists():
-                shutil.copy2(src, schema_dir / src.name)
-                seeded[entity] = (schema_dir / src.name).read_bytes()
+            src = committed_schemas.get(entity)
+            if src and src.exists():
+                dst = schema_dir / src.relative_to(contracts)
+                dst.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(src, dst)
+                seeded[entity] = dst.read_bytes()
         rc, _ = run_generator(bs, ["build_schemas.py"],
                               OUT=schema_dir, SHAPES=contracts / "_shapes.json")
         if rc != 0:
             fails.append(f"build_schemas.py exited {rc} — see its stderr; the contracts cannot be "
                          f"regenerated at all, so nothing below could be diffed")
-        committed_schemas = {p.stem.split(".")[0]: p for p in contracts.glob("*.schema.json")
-                             if p.name != "common.schema.json"}
         regenerated = {p.stem.split(".")[0]: p for p in schema_dir.glob("*.schema.json")
                        if p.stem.split(".")[0] not in handwritten}
         for entity, path in sorted(regenerated.items()):
@@ -293,14 +319,29 @@ def main() -> int:
             fails.append(f"contracts/{entity}.schema.json: committed but no longer generated — either "
                          f"the entity left infer_shapes.FAMILIES or the file is an orphan")
 
-        # 3 — the hand-authored pair must come through untouched
+        # 3 — the hand-authored schemas must come through untouched (the two map-packed content
+        # entities, plus the seven runtime contracts under contracts/user_state/)
         for entity in sorted(handwritten):
             checked += 1
+            expected = (f"contracts/{runtime_dir}/{entity}.schema.json" if entity in runtime_entities
+                        else f"contracts/{entity}.schema.json")
             if entity not in committed_schemas:
-                fails.append(f"contracts/{entity}.schema.json: hand-authored schema is missing")
-            elif (schema_dir / f"{entity}.schema.json").read_bytes() != seeded[entity]:
-                fails.append(f"{entity}: build_schemas.py OVERWROTE a hand-authored schema — the "
-                             f"map-packing guard no longer protects it")
+                fails.append(f"{expected}: hand-authored schema is missing")
+            elif (schema_dir / committed_schemas[entity].relative_to(contracts)).read_bytes() \
+                    != seeded[entity]:
+                fails.append(f"{entity}: build_schemas.py OVERWROTE a hand-authored schema — the guard "
+                             f"that keeps generation from narrowing it no longer holds")
+
+        # 3b — a runtime entity must NOT be measurable. Its name appearing in _shapes.json means
+        # records were committed for an entity contracted to have none, and the next regeneration
+        # would replace the hand-authored contract with whatever those records look like.
+        checked += 1
+        shapes_doc = json.loads((contracts / "_shapes.json").read_text(encoding="utf-8")) \
+            if (contracts / "_shapes.json").exists() else {"entities": {}}
+        leaked = sorted(runtime_entities & set(shapes_doc.get("entities", {})))
+        if leaked:
+            fails.append(f"runtime entities {leaked} appear in contracts/_shapes.json — records exist "
+                         f"for an entity design/user_state.md contracts as record-free")
 
         # 4 — every FAMILIES entity has a schema (F15's map blind spot) ---------------------------
         families = [f["entity"] for f in getattr(gens["infer_shapes"], "FAMILIES", [])]
@@ -312,8 +353,7 @@ def main() -> int:
         checked += 1
 
         # 5 — manifest.json + types.ts, rebuilt from the COMMITTED schemas -------------------------
-        for p in contracts.glob("*.schema.json"):
-            shutil.copy2(p, manifest_dir / p.name)
+        mirror(contracts, manifest_dir)
         rc, _ = run_generator(gens["build_manifest"], ["build_manifest.py"], CONTRACTS=manifest_dir)
         if rc != 0:
             fails.append(f"build_manifest.py exited {rc}")
@@ -327,12 +367,34 @@ def main() -> int:
     if manifest_path.exists():
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         for e in manifest.get("entities", []):
-            actual = count_records(root, e.get("files"), e.get("packing", "list"))
+            actual = count_records(root, e.get("files"), e.get("packing") or "list")
             declared_records = e.get("records")
+            cls = e.get("class", "content")
             checked += 1
+            # The runtime class (design/user_state.md §12) is the ONE case where null files and null
+            # records are correct: those records are minted per learner and none is committed here.
+            # The exemption is granted on the declared class, and it is policed in both directions —
+            # a runtime row carrying a glob fails even though the glob matches nothing, which is what
+            # stops a content entity whose exporter stopped from relabelling itself and going quiet.
+            if cls == "runtime":
+                if e.get("files") is not None or e.get("packing") is not None:
+                    fails.append(f"manifest {e['entity']}: class 'runtime' but it declares files "
+                                 f"{e.get('files')!r} (matching {actual} record(s)) / packing "
+                                 f"{e.get('packing')!r}. A runtime entity holds no committed records; "
+                                 f"an entity with data is content and must be counted like one.")
+                if declared_records is not None:
+                    fails.append(f"manifest {e['entity']}: class 'runtime' but declares "
+                                 f"{declared_records} records — nothing measured it, so the count is "
+                                 f"an assertion nobody can check")
+                if e["entity"] not in runtime_entities:
+                    fails.append(f"manifest {e['entity']}: class 'runtime' but it is not in "
+                                 f"build_schemas.RUNTIME, so build_schemas.py would regenerate and "
+                                 f"narrow its hand-authored contract")
+                continue
             if actual is None:
-                fails.append(f"manifest {e['entity']}: no `files` glob — the catalogue cannot be used "
-                             f"to locate its data")
+                fails.append(f"manifest {e['entity']}: class {cls!r} declares no `files` glob — the "
+                             f"catalogue cannot be used to locate its data. Only class 'runtime' may "
+                             f"have none.")
             elif actual == 0:
                 fails.append(f"manifest {e['entity']}: its glob {e.get('files')!r} matches 0 records "
                              f"— the data moved and every count downstream is now fiction")

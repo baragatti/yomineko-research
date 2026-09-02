@@ -25,6 +25,9 @@ export default [
   route("pratica/papeis", "routes/roleDrill.tsx"),
   route("pratica/:mode", "routes/practiceSession.tsx"),
   route("simulado", "routes/exam.tsx"),
+  // Static segment before the dynamic one: "estudo" is three segments deep, so it can never be
+  // mistaken for a level by `simulado/:level`.
+  route("simulado/estudo/:lessonId", "routes/examStudy.tsx"),
   route("simulado/:level", "routes/examPaper.tsx"),
   route("falar", "routes/redirectFalar.ts"),
   route("falar/:stage/:unit", "routes/speakUnit.tsx"),

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/skill_state.schema.json",
+  "title": "skill_state",
+  "description": "One row per (user, capability) over the 74 capabilities in corpus/capabilities/registry.json — the SKILL track, deliberately not FSRS. Its signal is binary and capability-level, so a 21-parameter model would fit noise; a bounded-ease ladder is robust, explainable and cheap (design/srs_design.md §5). RUNTIME class: minted per learner, never committed to this repo. See design/user_state.md §8.",
+  "x-yomineko": {
+    "entity": "skill_state",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/user_state.md#8-skill_state",
+    "stable_id_field": null,
+    "natural_key": ["user_id", "capability"],
+    "key_namespace": null,
+    "note": "Capabilities are skills, not memories. Scheduling them with FSRS was considered and rejected on granularity: the exam feed would double-count against the memory track."
+  },
+  "type": "object",
+  "properties": {
+    "user_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^usr:[A-Za-z0-9_-]+$" },
+    "capability": {
+      "$ref": "../common.schema.json#/$defs/IdRef",
+      "pattern": "^cap:",
+      "description": "The capability, by stable id — something the learner can DO once a set of lessons is complete."
+    },
+    "ease": {
+      "type": "number",
+      "minimum": 1.3,
+      "maximum": 3.0,
+      "default": 2.2,
+      "description": "SM-2-flavoured ease. Correct: +0.06, capped at 3.0. Incorrect: -0.25, floored at 1.3. The floor and the cap are both load-bearing — the cap is what keeps even a mastered capability resurfacing."
+    },
+    "streak": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Consecutive correct answers. Drives the interval: round(ease^streak) days, capped at 21. Reset to 0 on an incorrect answer, whose interval is 1 day."
+    },
+    "due_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Never zeroed out: even an ease-3.0 capability comes back at least every 21 days."
+    },
+    "last_result": {
+      "type": ["string", "null"],
+      "enum": ["correct", "incorrect", null],
+      "description": "The signal is binary by design. Null before the first answer. Vocabulary owner: design — design/user_state.md#8-skill_state. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#8-skill_state" }
+    },
+    "last_reviewed_at": { "type": ["string", "null"], "format": "date-time" },
+    "reps": { "type": "integer", "minimum": 0 },
+    "correct": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "With `reps`, the denominator behind any \"you are weak at X\" claim shown to the learner."
+    },
+    "recent_items": {
+      "type": "array",
+      "items": { "$ref": "../common.schema.json#/$defs/StableId" },
+      "maxItems": 10,
+      "uniqueItems": true,
+      "description": "The no-repeat window: an item drilled for this capability may not return for 10 sessions (design/srs_design.md §2). Bounded at 10 on purpose — it is state, not a log, and a log of drilled items belongs nowhere near a row read on every queue build."
+    }
+  },
+  "required": ["user_id", "capability", "ease", "streak", "due_at", "reps", "correct"],
+  "additionalProperties": false
+}

@@ -1,8 +1,10 @@
 # JLPT exam simulator — picker algorithm spec (v1, 2026-07-05)
 
-> Data = `corpus/exam_banks/{level}_{type}.json` (4,359 items, all derived from verified corpus facts,
-> validated by `validate_exam_banks.py`). The APP implements this picker at runtime; the corpus run ships
-> data + this spec only. Real JLPT papers are © JEES — this mirrors only the (non-copyrightable) FORMAT.
+> Data = `corpus/exam_banks/{level}_{type}.json` (**6,048 items across 40 bank files**, counted from the
+> files on 2026-09-02; the doc said 4,359 until then, and `corpus/exam_banks/removed_items.json` holds a
+> further 118 withdrawn items that are deliberately not in any bank). All derived from verified corpus
+> facts, validated by `validate_exam_banks.py`. The APP implements this picker at runtime; the corpus run
+> ships data + this spec only. Real JLPT papers are © JEES — this mirrors only the (non-copyrightable) FORMAT.
 
 ## Paper structure (per attempt)
 Mirror the real Language-Knowledge sections (listening deferred). Item counts follow the real exams:
@@ -54,19 +56,34 @@ sections enter a paper only once their items have audio.
 ## Sampling rules
 1. **Uniform random without replacement** within each section's bank for the level.
 2. **No-repeat window:** exclude items answered in the user's last 3 attempts of that level (fall back to full
-   bank if it would starve the section). This + bank sizes (≥240 per choice-type at N5/N4) makes every retake
-   feel fresh — the anti-memorization requirement.
+   bank if it would starve the section). How fresh a retake actually feels depends on the bank, and the banks
+   are uneven — this doc claimed "≥240 per choice-type at N5/N4" and **8 of the 17 non-listening N5/N4 banks
+   reach it** (counted 2026-09-02). The four recognition formats are deep (`kanji_reading` 400 at all three
+   levels, `orthography` 379/400/400, `sentence_order` 273/298/300, `context_fill` 235/368/389); the rest are
+   not, and the floor is `n5_text_grammar` **33** items against 2 per paper, `n5_reading_comp` **43** against
+   3, `n5_paraphrase` **52** against 3 — roughly 14–17 distinct papers deep before the no-repeat window has
+   nothing left to exclude. Listening is thinner still (`n3_listening_gist` 9 items against 3 per paper).
+   Anti-memorization is therefore a property of the recognition sections today, and a gap in the rest; the
+   bank regeneration (APP_PLAN W18) is where it gets fixed.
 3. **Option shuffle:** per attempt, shuffle [correct + 3 distractors] with the attempt seed. For
    sentence_order, shuffle `pieces` (reshuffle if identity order).
 4. **Real-first:** items carry an explicit `ai_generated` boolean (false = real bank sentence). Prefer `ai_generated=false` when a section has enough;
    verified-generated items (§9-gated, needs_review) fill the rest.
 5. **Seeded:** seed = (userId, level, attemptNo) → reproducible papers for support/review.
 6. **Scoring:** 1 point/item; section + total percentages; per-type breakdown feeds the capability tracker
-   (roadmap D) as right/wrong signals.
+   (roadmap D) as right/wrong signals. **The raw count is not the result the learner is shown.** A JLPT
+   verdict needs the 得点区分 model — an estimated score per scoring section, each with its own minimum,
+   and a pass that requires the total AND every minimum. That model, its sources and the reason its
+   number is an approximation and never a JLPT score live in [`exam_scoring.md`](exam_scoring.md);
+   this rule stays as-is because the raw layer underneath it is unchanged.
 
 ## Study mode
 Same banks, untimed, immediate feedback; filter items to the learner's cumulative known-set
-(lesson.cumulative_known_set) so practice never shows untaught material.
+(lesson.cumulative_known_set) so practice never shows untaught material. Implemented at
+`/simulado/estudo/:lessonId` (`prototype/app/lib/examStudy.server.ts`), which ports the level gate of
+`validate_exam_level_gate.py` to an arbitrary lesson's known set — one definition of
+"level-appropriate", two call sites. Listening items stay out until they have audio, for the same
+reason a paper excludes them: without the recording a 聴解 item drills reading, not listening.
 
 ## Known gaps (backlog)
 - DONE 2026-07-06: N3 link-enrichment landed — all deterministic banks full (context_fill 400, grammar_form 300).

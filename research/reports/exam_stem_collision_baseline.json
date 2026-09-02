@@ -1,0 +1,17 @@
+{
+  "why": "Frozen ceiling for exam items that print the same stem and key different answers (readiness finding G12). These are known CONTENT defects awaiting the bank regeneration (APP_PLAN W17/W18), not passing checks: validate_exam_stem_collisions.py fails when any bank exceeds its count here, and prints the new number when one drops so the baseline can be lowered. Scope is one bank file = one (level, section); normalization is NFKC + answer-blank sentinel + punctuation/separator/control stripping.",
+  "total": 94,
+  "per_bank": {
+    "n3_grammar_form.json": 2,
+    "n3_kanji_reading.json": 6,
+    "n3_orthography.json": 44,
+    "n4_context_fill.json": 4,
+    "n4_grammar_form.json": 4,
+    "n4_kanji_reading.json": 2,
+    "n4_orthography.json": 16,
+    "n4_paraphrase.json": 2,
+    "n5_context_fill.json": 6,
+    "n5_grammar_form.json": 4,
+    "n5_kanji_reading.json": 4
+  }
+}

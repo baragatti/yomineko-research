@@ -118,7 +118,8 @@ async function main() {
   // sentences: ship the WHOLE bank but SLIM — drop the heavy per-token / per-particle analysis (the UI
   // never shows it), keep the display fields + grammar tags + literal/structure so EVERY detail page can
   // surface example sentences. Server-only (corpus.server imports this); pages render only a handful each,
-  // so the no-leak rule still holds. Full slim bank is ~3.5MB.
+  // so the no-leak rule still holds. Full slim bank is 14.2 MB over 5,889 records (measured 2026-09-02;
+  // it said ~3.5MB from before the per-token breakdown below was added back in).
   // rebuild a SPACE-SEPARATED romaji from the per-token romaji (the bank's `romaji` field is glued together,
   // e.g. "ikuradesuka?"); fall back to the raw field. Tighten spaces before punctuation.
   const spacedRomaji = (s) => {

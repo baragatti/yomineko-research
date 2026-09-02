@@ -2,7 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { Form, Link, useLoaderData, useActionData, useNavigation } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { LEVELS, buildPaper, gradePaper, type Level } from "~/lib/exam.server";
+import {
+  LEVELS, attemptSeed, buildPaper, noRepeatExclude, scorePaper,
+  type ExamAttempt, type Level, type Verdict,
+} from "~/lib/exam.server";
 
 export function meta({ params }: { params: { level?: string } }) {
   return [{ title: `Yomineko — Simulado ${(params.level ?? "").toUpperCase()}` }];
@@ -12,15 +15,40 @@ function levelOf(v?: string): Level {
   const lv = (v ?? "").toLowerCase() as Level;
   return LEVELS.includes(lv) ? lv : "n5";
 }
-/** A fresh attempt gets a fresh seed; ?seed= keeps a paper reproducible (support/review, rule 5). */
-function seedFrom(url: URL): string {
-  return url.searchParams.get("seed") || String(Date.now() % 100000);
+
+/**
+ * ATTEMPT HISTORY — in memory, per server process, and deliberately not more than that.
+ *
+ * design/exam_simulator.md rule 2 (no-repeat window) and rule 5 (seed = userId, level, attemptNo)
+ * both need a stored attempt, and readiness G5 recorded that neither was implemented: `buildPaper`
+ * has always taken an `exclude` set that no caller passed, and the seed was `Date.now() % 100000`.
+ * The logical contract now exists (`ExamAttempt`, design/user_state.md §7); the PHYSICAL store waits
+ * on owner decision D8, so this map is the smallest thing that lets the two rules actually run.
+ * It is per-process, it is lost on restart, and there is no identity yet — one anonymous learner.
+ */
+const ATTEMPTS = new Map<string, ExamAttempt[]>();
+const ANON_USER = "anon";
+function historyOf(userId: string): ExamAttempt[] {
+  return ATTEMPTS.get(userId) ?? [];
+}
+function nextAttemptNo(userId: string, level: Level): number {
+  return historyOf(userId).filter((a) => a.level === level).length + 1;
+}
+
+/**
+ * Rule 5's seed, `(userId, level, attemptNo)` — reproducible for support and review, which is the
+ * point of the rule. `?seed=` still wins so an existing paper can be re-opened by its number.
+ */
+function seedFrom(url: URL, level: Level): string {
+  return url.searchParams.get("seed") || attemptSeed(ANON_USER, level, nextAttemptNo(ANON_USER, level));
 }
 
 export async function loader({ params, request }: { params: { level?: string }; request: Request }) {
   const level = levelOf(params.level);
-  const seed = seedFrom(new URL(request.url));
-  const paper = buildPaper(level, seed);
+  const seed = seedFrom(new URL(request.url), level);
+  // Rule 2, finally passed instead of merely declared: items from the last 3 attempts of this level
+  // are excluded. `buildPaper` falls back to the full bank if honouring it would starve a section.
+  const paper = buildPaper(level, seed, noRepeatExclude(historyOf(ANON_USER), level));
   // `correct` is never part of this payload — the answer key stays server-side until grading.
   return { paper, seed };
 }
@@ -33,13 +61,32 @@ export async function action({ params, request }: { params: { level?: string }; 
   for (const [k, v] of fd.entries()) {
     if (k.startsWith("q:")) answers[k.slice(2)] = String(v);
   }
-  // Grading rebuilds the paper from (level, seed): the request supplies choices, never the key.
-  return { result: gradePaper(level, seed, answers) };
+  // Grading rebuilds the paper from (level, seed): the request supplies choices, never the key. The
+  // same exclude set has to go in, or the rebuilt paper would not be the paper that was sat.
+  const exclude = noRepeatExclude(historyOf(ANON_USER), level);
+  return { result: scorePaper(level, seed, answers, exclude) };
 }
 
 function mmss(sec: number): string {
   const s = Math.max(0, sec);
   return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+}
+
+/**
+ * The three verdicts, in the learner's words. None of them says "sua nota JLPT", and the pass label
+ * is deliberately not "Aprovado": what the app computed is an estimate of where the learner would
+ * land, and design/exam_scoring.md §5 is explicit that near the line the estimate says nothing.
+ */
+const VERDICT_LABEL: Record<Verdict, string> = {
+  pass: "Dentro do corte",
+  fail: "Fora do corte",
+  incomplete: "Incompleto",
+};
+
+/** "a, b e c" — pt-BR joins the last item with "e", never with a comma. */
+function listOf(parts: string[]): string {
+  if (parts.length <= 1) return parts[0] ?? "";
+  return `${parts.slice(0, -1).join(", ")} e ${parts[parts.length - 1]}`;
 }
 
 /**
@@ -183,24 +230,119 @@ export default function ExamPaper() {
   }
 
   if (result) {
+    const score = result.score;
+    const notTested = score.sections.filter((s) => !s.attempted);
+    const underMinimum = score.sections.filter((s) => s.attempted && !s.meetsMinimum);
+    // The reason for the verdict, in one sentence, because a bare "Fora do corte" hides WHICH of the
+    // two rules was broken — and missing a sectional minimum is a different problem to fix than a
+    // low total. exam_scoring.md §2: a pass needs both.
+    const why =
+      score.verdict === "incomplete"
+        ? `Esta prova não teve ${listOf(notTested.map((s) => s.label.toLowerCase()))}. No exame, quem `
+          + `deixa de fazer uma das partes é reprovado e não recebe nota nenhuma, então aqui não dá `
+          + `para dizer aprovado nem reprovado — só mostrar o que foi respondido.`
+        : score.verdict === "pass"
+          ? `A estimativa ficou acima da nota de corte (${score.passMark}) e nenhuma seção ficou `
+            + `abaixo do seu mínimo. Perto da linha, porém, a estimativa não diz muita coisa.`
+          : underMinimum.length > 0 && !score.meetsPassMark
+            ? `A estimativa ficou abaixo da nota de corte (${score.passMark}) e `
+              + `${listOf(underMinimum.map((s) => s.label.toLowerCase()))} ficou abaixo do mínimo.`
+            : underMinimum.length > 0
+              ? `O total até passou de ${score.passMark}, mas `
+                + `${listOf(underMinimum.map((s) => s.label.toLowerCase()))} ficou abaixo do mínimo `
+                + `da seção — e isso sozinho já reprova, por mais alto que seja o total.`
+              : `A estimativa ficou abaixo da nota de corte (${score.passMark}).`;
+
     return (
       <AppShell active="exam" title="Resultado" back="/simulado">
         <div className="ym-page-wide">
           <h1 className="ym-h1">Resultado — {result.level.toUpperCase()}</h1>
           <p className="ym-sub">
-            <strong>{result.right} de {result.total}</strong> ({result.percent}%) · prova nº {result.seed}
+            <strong>{result.right} de {result.total}</strong> questões certas ({result.percent}%) ·
+            prova nº {result.seed}
           </p>
 
+          {/*
+            THE 得点区分 REPORT. The JLPT reports one number per scoring section plus a total, and a
+            pass needs the total AND every sectional minimum — so this block, not the percentage
+            above it, is the result in the exam's own shape. Every number in it is an estimate and
+            `score.note` is what says so; it is a contract, not decoration (exam_scoring.md §5).
+          */}
+          <section className="ym-score">
+            <div className="ym-score-head">
+              <span className={`ym-pill ym-verdict is-${score.verdict}`}>
+                {VERDICT_LABEL[score.verdict]}
+              </span>
+              <div className="ym-score-total">
+                {score.scaledTotal}<small> / {score.attemptedMax}</small>
+              </div>
+              <span className="ym-tile-sub">
+                pontuação estimada
+                {score.attemptedMax < score.scaledMax && (
+                  <> · uma prova completa vale {score.scaledMax}</>
+                )}
+                {" · corte: "}{score.passMark}
+              </span>
+            </div>
+
+            <p className="ym-score-why">{why}</p>
+
+            <div className="ym-secs">
+              {score.sections.map((s) => {
+                const pct = s.scaled === null ? 0 : Math.round((s.scaled / s.max) * 100);
+                const minPct = Math.round((s.minimum / s.max) * 100);
+                const cls = !s.attempted ? " is-off" : s.meetsMinimum ? "" : " is-under";
+                return (
+                  <div key={s.key} className={`ym-sec${cls}`}>
+                    <div className="ym-sec-h">
+                      <strong>{s.label}</strong>
+                      <span className="ym-jp">{s.jp}</span>
+                      <span className="ym-sec-n">
+                        {s.attempted ? s.scaled : "—"}<small> / {s.max}</small>
+                      </span>
+                    </div>
+                    <div className="ym-meter">
+                      {s.attempted && (
+                        <div className="ym-meter-fill" style={{ width: `${pct}%` }} />
+                      )}
+                      <div className="ym-meter-min" style={{ left: `${minPct}%` }}
+                           title={`mínimo da seção: ${s.minimum}`} />
+                    </div>
+                    <div className="ym-sec-foot">
+                      {s.attempted ? (
+                        <>
+                          <span>{s.right} de {s.of} certas ({s.rawPercent}%)</span>
+                          <span>·</span>
+                          <span>
+                            mínimo {s.minimum}
+                            {s.meetsMinimum ? " — atingido" : " — não atingido"}
+                          </span>
+                        </>
+                      ) : (
+                        <span>
+                          Não avaliada nesta prova: o áudio das questões ainda não foi gravado.
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <p className="ym-score-note">{score.note}</p>
+          </section>
+
+          <h2 className="ym-h2">Por seção da prova</h2>
           <div className="ym-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(220px,1fr))" }}>
             {result.perSection.map((s) => (
-              <div key={s.type} className="ym-card ym-card-tight">
+              <div key={s.type} className="ym-card-plain">
                 <strong>{s.label}</strong>
-                <div className="ym-muted">{s.right} / {s.of}</div>
+                <div className="ym-tile-sub">{s.right} / {s.of}</div>
               </div>
             ))}
           </div>
 
-          <h2 className="ym-h2" style={{ marginTop: "1.5rem" }}>Revisão</h2>
+          <h2 className="ym-h2">Revisão</h2>
           <ol className="ym-list">
             {result.questions.map((q) => (
               <li key={q.key} className={q.correct ? "ym-ok" : "ym-bad"}>

@@ -8,9 +8,14 @@ from __future__ import annotations
 import json, sqlite3, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
 LDIR = ROOT / "research" / "derived" / "lessons"
-con = sqlite3.connect(ROOT / "db" / "corpus.sqlite")
+con = sqlite3.connect(db_target(ROOT / "db" / "corpus.sqlite"))
 unplaced = {r[0]: (r[1], r[2]) for r in con.execute(
     "SELECT id,headword,kana FROM vocab WHERE level='n3' AND introducing_topic_id IS NULL")}
 con.close()

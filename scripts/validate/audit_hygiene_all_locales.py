@@ -59,10 +59,18 @@ DEFAULT_ROOT = Path(__file__).resolve().parents[2]
 # --------------------------------------------------------------------------------------------------
 # A string is learner-facing if its json-path passes through a `pt-BR` (or `en`) locale key, or if its
 # terminal key is one of the locale-less prose fields (lesson `body`, grammar `structure_pattern`).
+#
+# `prompt_pt` (readiness finding G13, research/reports/readiness/speak_fast_path.md): the speak units
+# write the learner's instruction as a FLAT `prompt_pt` string rather than a `{"pt-BR": …}` locale
+# object, and the key was absent here, so this gate saw 86 of the ~370 learner-facing strings under
+# course/speak/ (85 title + 1 description) and reported 0 FAIL while em dashes shipped in
+# fluency.prompt_pt. The locale-less prose fields are the exception the comment above describes; a
+# `_pt` suffix is one more spelling of the same exception, so it is named explicitly rather than
+# matched by a suffix rule (a suffix rule would silently swallow future fields nobody vetted).
 LEARNER_KEYS = {
-    "body", "title", "description", "prompt", "explanation", "label", "nuance", "note", "objectives",
-    "gloss", "meaning", "formation", "structure_pattern", "role", "function", "translation",
-    "structure_explanation",
+    "body", "title", "description", "prompt", "prompt_pt", "explanation", "label", "nuance", "note",
+    "objectives", "gloss", "meaning", "formation", "structure_pattern", "role", "function",
+    "translation", "structure_explanation",
 }
 # Identifier and Japanese-content keys. ASCII identifiers legitimately live in `ref`, romaji in `ro`,
 # and the accent/em-dash rules are about pt-BR prose, not about 漢字 or slugs.

@@ -36,8 +36,13 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from i18n_text import get_text  # noqa: E402
 import enums  # noqa: E402
 
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 
 
 def resolve_meta_ref(typ: str, ref: str, sets: dict, extra: dict) -> str | None:
@@ -356,7 +361,7 @@ def main() -> int:
     ap.add_argument("--root", default=str(ROOT), help="tree to validate (default: repo root)")
     args = ap.parse_args()
     root = Path(args.root).resolve()
-    con = sqlite3.connect(root / "db" / "corpus.sqlite")
+    con = sqlite3.connect(db_target(root / "db" / "corpus.sqlite"))
     con.row_factory = sqlite3.Row
     if not con.execute("SELECT COUNT(*) FROM lesson").fetchone()[0]:
         # The exported course tree is the artifact; if it has lessons while the DB has none, the DB

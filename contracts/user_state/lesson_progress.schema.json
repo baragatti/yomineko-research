@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/lesson_progress.schema.json",
+  "title": "lesson_progress",
+  "description": "One row per (user, lesson) — 322 lessons. Records what the learner DID (`status`, the counts, the score) separately from what the data SAYS (`mastery`), because collapsing the two makes \"completed\" unfalsifiable. RUNTIME class: minted per learner, never committed to this repo. The mastery THRESHOLD is a named parameter block, not a constant, and it is PENDING owner decision D2 — see design/user_state.md §6.1.",
+  "x-yomineko": {
+    "entity": "lesson_progress",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/user_state.md#6-lesson_progress",
+    "stable_id_field": null,
+    "natural_key": ["user_id", "lesson"],
+    "key_namespace": null,
+    "note": "Composite key. There is no synthesized id: (user_id, lesson) is already unique and minting a surrogate would create a second address for one fact."
+  },
+  "type": "object",
+  "properties": {
+    "user_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^usr:[A-Za-z0-9_-]+$" },
+    "lesson": {
+      "$ref": "../common.schema.json#/$defs/IdRef",
+      "pattern": "^les:",
+      "description": "The lesson leaf, by stable id."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["completed", "not_started", "opened"],
+      "description": "What the learner did. The timestamps below carry the when; this is what a query filters on. Deliberately independent of `mastery`: a learner can finish a lesson without meeting the mastery criterion, and pretending otherwise hides the case the criterion exists to find. Vocabulary owner: design — design/user_state.md#6-lesson_progress. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#6-lesson_progress" }
+    },
+    "opened_at": { "type": ["string", "null"], "format": "date-time" },
+    "completed_at": { "type": ["string", "null"], "format": "date-time" },
+    "attempts": { "type": "integer", "minimum": 0, "description": "How many times the lesson was sat. A lesson may be re-sat." },
+    "exercises_total": { "type": "integer", "minimum": 0, "description": "Exercises the lesson holds." },
+    "exercises_attempted": { "type": "integer", "minimum": 0 },
+    "exercises_correct": { "type": "integer", "minimum": 0 },
+    "score": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "exercises_correct / exercises_attempted, frozen at completion. Null until then — a running score reported as a result is a lie about what was measured."
+    },
+    "cards_seeded": {
+      "type": "boolean",
+      "description": "Whether completing this lesson minted its cards. FALSE after a successful test-out: passing marks the stage's words known WITHOUT seeding them as new FSRS cards (design/learning_science.md §4.5). Without this flag, \"completed\" and \"carded\" are indistinguishable and the daily new-card cap gets spent on material the learner demonstrably already knew."
+    },
+    "mastery": {
+      "type": "object",
+      "description": "One evaluated verdict plus the parameters that produced it. `criterion` is stored on the row rather than assumed by the reader precisely so that D2 can change the threshold without invalidating rows already evaluated under the old one.",
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": ["met", "not_met", "unknown"],
+          "description": "`unknown` is the honest default: no evaluation has run. It is NOT the same as not_met. Vocabulary owner: design — design/user_state.md#6-lesson_progress. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": { "owner": "design", "source": "design/user_state.md#6-lesson_progress" }
+        },
+        "criterion": {
+          "type": "string",
+          "enum": ["MASTERY_V1"],
+          "description": "Which parameter block produced the verdict. MASTERY_V1 = retrieval_threshold 0.90, min_interval_days 1, scope prior_stage_items, counts_kinds [recognition] — from design/learning_science.md §4.5 (\">=90% of the prior stage's words reaching a first successful review at interval >=1 day\"). PENDING owner decision D2: what \"lesson complete\" means and whether placement seeds cards. A changed threshold is a NEW value here (MASTERY_V2), never a redefinition of this one. Vocabulary owner: design — design/user_state.md#61-mastery-one-evaluated-verdict-plus-the-parameters-that-produced-it. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": { "owner": "design", "source": "design/user_state.md#61-mastery-one-evaluated-verdict-plus-the-parameters-that-produced-it" }
+        },
+        "observed": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "The measured fraction the verdict was read off, so `met` can be audited instead of trusted."
+        },
+        "evaluated_at": { "type": ["string", "null"], "format": "date-time" }
+      },
+      "required": ["state", "criterion"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["user_id", "lesson", "status", "attempts", "cards_seeded", "mastery"],
+  "additionalProperties": false
+}

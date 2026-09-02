@@ -26,7 +26,9 @@
     "vocab:1282490",
     "vocab:1012980"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:nara"
+  ],
   "kanji_recognition": [
     "経",
     "高",
@@ -53,10 +55,19 @@
     "gram:n3-n-datte",
     "gram:dake-de",
     "gram:gp-121",
-    "gram:gp-150",
-    "gram:nara"
+    "gram:gp-150"
   ],
-  "drills": [],
+  "drills": [
+    {
+      "pattern": "gram:nara",
+      "examples": [
+        "sent:tatoeba-80586",
+        "sent:tatoeba-80337",
+        "sent:tatoeba-233819"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
       "prompt_pt": "De preferência, o mais barato possível.",
@@ -114,15 +125,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 34,
-    "meaning-output": 9,
-    "language-focused": 40,
-    "fluency": 17
+    "meaning-input": 32,
+    "meaning-output": 8,
+    "language-focused": 43,
+    "fluency": 16
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 14,
+    "language-focused": 16,
     "fluency": 6
   },
   "checkpoint": [

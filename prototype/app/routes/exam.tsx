@@ -1,7 +1,11 @@
 import { Link, useLoaderData } from "react-router";
 import { AppShell } from "~/ui/AppShell";
 import { Icon } from "~/ui/Icon";
-import { LEVELS, MINUTES, PARTS, SECTIONS, GAP_NOTE, bankStats, type Level } from "~/lib/exam.server";
+import {
+  LEVELS, SCORING_MODEL, GAP_NOTE, bankStats, fullMinutesFor, minutesFor, partsFor, sectionsFor,
+  type Level,
+} from "~/lib/exam.server";
+import { lastLessonOfLevel } from "~/lib/examStudy.server";
 
 export function meta() {
   return [{ title: "Yomineko — Simulado JLPT" }];
@@ -9,25 +13,40 @@ export function meta() {
 
 export async function loader() {
   // Only aggregate numbers cross the wire here; the bank itself stays on the server.
+  //
+  // Everything below is built from `sectionsFor` / `partsFor` — the RUNNABLE shape of the paper —
+  // rather than the declared tables. Reading the declared ones would advertise a 90-minute N5 with
+  // 聴解 in it and then hand the learner a 60-minute paper without one.
   return {
     gapNote: GAP_NOTE,
-    levels: LEVELS.map((lv: Level) => ({
-      level: lv,
-      minutes: MINUTES[lv],
-      questions: SECTIONS.reduce((a, s) => a + s.counts[lv], 0),
-      parts: PARTS.map((p) => ({
-        jp: p.jp,
-        label: p.label,
-        minutes: p.minutes[lv],
-        questions: p.types.reduce(
-          (a, t) => a + (SECTIONS.find((s) => s.type === t)?.counts[lv] ?? 0), 0),
-        sections: p.types
-          .map((t) => SECTIONS.find((s) => s.type === t))
-          .filter((s): s is NonNullable<typeof s> => !!s && s.counts[lv] > 0)
-          .map((s) => ({ label: s.label, jp: s.jp, n: s.counts[lv] })),
-      })).filter((p) => p.questions > 0),
-      ...bankStats(lv),
-    })),
+    levels: LEVELS.map((lv: Level) => {
+      const secs = sectionsFor(lv);
+      const model = SCORING_MODEL[lv];
+      return {
+        level: lv,
+        minutes: minutesFor(lv),
+        fullMinutes: fullMinutesFor(lv),
+        questions: secs.reduce((a, s) => a + s.counts[lv], 0),
+        parts: partsFor(lv).map((p) => ({
+          jp: p.jp,
+          label: p.label,
+          minutes: p.minutes[lv],
+          questions: p.types.reduce(
+            (a, t) => a + (secs.find((s) => s.type === t)?.counts[lv] ?? 0), 0),
+          sections: p.types
+            .map((t) => secs.find((s) => s.type === t))
+            .filter((s): s is NonNullable<typeof s> => !!s && s.counts[lv] > 0)
+            .map((s) => ({ label: s.label, jp: s.jp, n: s.counts[lv] })),
+        })).filter((p) => p.questions > 0),
+        passMark: model.passMark,
+        // The 得点区分 the paper cannot test today. Named, so the page says which one is missing.
+        missing: model.sections
+          .filter((s) => !s.types.some((t) => secs.some((x) => x.type === t)))
+          .map((s) => ({ label: s.label, jp: s.jp, max: s.max })),
+        study: lastLessonOfLevel(lv),
+        ...bankStats(lv),
+      };
+    }),
   };
 }
 
@@ -98,14 +117,33 @@ export default function Exam() {
                 </div>
               ))}
 
+              <p className="ym-tile-sub">
+                Nota de corte oficial: <strong>{lv.passMark} de 180</strong>, e cada seção tem um
+                mínimo próprio.{" "}
+                {lv.missing.length > 0 && (
+                  <>
+                    Como {lv.missing.map((m) => m.label.toLowerCase()).join(" e ")} ainda não entra na
+                    prova, o resultado aqui sai como <strong>incompleto</strong> — sem aprovado nem
+                    reprovado.
+                  </>
+                )}
+              </p>
+
               <footer style={{ display: "flex", alignItems: "center", justifyContent: "space-between",
-                               gap: 10, marginTop: "auto" }}>
+                               gap: 10, marginTop: "auto", flexWrap: "wrap" }}>
                 <span className="ym-tile-sub">
                   banco: {lv.items.toLocaleString("pt-BR")} questões
                 </span>
-                <Link className="ym-btn ym-btn-primary" to={`/simulado/${lv.level}`}>
-                  <Icon name="play_arrow" /> Começar
-                </Link>
+                <span style={{ display: "flex", gap: 8 }}>
+                  {lv.study && (
+                    <Link className="ym-btn" to={`/simulado/estudo/${lv.study.id}`}>
+                      <Icon name="school" /> Estudar
+                    </Link>
+                  )}
+                  <Link className="ym-btn ym-btn-primary" to={`/simulado/${lv.level}`}>
+                    <Icon name="play_arrow" /> Começar
+                  </Link>
+                </span>
               </footer>
             </article>
           ))}

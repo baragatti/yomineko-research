@@ -59,8 +59,29 @@ SHAPES = ROOT / "contracts" / "_shapes.json"
 OUT = ROOT / "contracts"
 COMMON = "common.schema.json"
 
-# Two schemas are hand-authored and this generator must never write them (see main()).
-HANDWRITTEN = {"capability_lesson_map", "kana_family"}
+# Hand-authored schemas this generator must never write (see main()). Two groups:
+#
+#   HANDWRITTEN_MAPS — the two map-packed CONTENT entities. Their contract is about a key space, which
+#                      the record-shape generator has no idiom for, and the two disagree about what
+#                      their keys mean.
+#   RUNTIME          — the seven user-state entities (W26). They have a contract and NO committed
+#                      records: a card row exists only once a learner has one. Nothing measures them,
+#                      so nothing may regenerate them either — a regeneration of a zero-record entity
+#                      would narrow it to `{}`. They live one directory down, under contracts/user_state/,
+#                      so that contracts/ stays a flat list of the things that ship with the data.
+#                      Specified by design/user_state.md.
+HANDWRITTEN_MAPS = {"capability_lesson_map", "kana_family"}
+RUNTIME_DIR = "user_state"
+RUNTIME = {"card", "exam_attempt", "feature_state", "lesson_progress", "review_log",
+           "skill_state", "user"}
+HANDWRITTEN = HANDWRITTEN_MAPS | RUNTIME
+
+
+def schema_path(entity: str) -> Path:
+    """Where an entity's contract lives. Runtime entities sit under contracts/user_state/."""
+    if entity in RUNTIME:
+        return OUT / RUNTIME_DIR / f"{entity}.schema.json"
+    return OUT / f"{entity}.schema.json"
 
 LEVELS = ["pre-n5", "n5", "n4", "n3", "n2", "n1"]
 LEVEL_SET = set(LEVELS)
@@ -681,14 +702,25 @@ def main() -> int:
     # `continue` deep in the loop: a new map entity would otherwise get no schema at all and become
     # invisible to both validate_contracts.py and build_manifest.py, which glob contracts/*.schema.json.
     map_entities = {e for e, v in shapes.items() if v["kind"] == "map"}
-    if map_entities != HANDWRITTEN:
+    if map_entities != HANDWRITTEN_MAPS:
         print(f"map-packed entities {sorted(map_entities)} do not match the hand-authored set "
-              f"{sorted(HANDWRITTEN)}. Write the missing schema by hand (a map's contract is about its "
-              f"key space) and add it to HANDWRITTEN.", file=sys.stderr)
+              f"{sorted(HANDWRITTEN_MAPS)}. Write the missing schema by hand (a map's contract is about "
+              f"its key space) and add it to HANDWRITTEN_MAPS.", file=sys.stderr)
+        return 2
+    # The mirror check for the runtime class: a runtime entity is contracted to hold NO committed
+    # records, so its name appearing in the measured shapes means records were committed for it. Fail
+    # rather than regenerate — regenerating would replace the hand-authored contract with whatever
+    # those records happen to look like, which is exactly the narrowing HANDWRITTEN exists to prevent.
+    leaked = RUNTIME & set(shapes)
+    if leaked:
+        print(f"runtime entities {sorted(leaked)} appear in contracts/_shapes.json — records have been "
+              f"committed for an entity that design/user_state.md contracts as having none. Either the "
+              f"data does not belong in this repo, or the entity is content and must leave RUNTIME.",
+              file=sys.stderr)
         return 2
     for e in sorted(HANDWRITTEN):
-        if not (OUT / f"{e}.schema.json").exists():
-            print(f"hand-authored contract contracts/{e}.schema.json is missing", file=sys.stderr)
+        if not schema_path(e).exists():
+            print(f"hand-authored contract {schema_path(e)} is missing", file=sys.stderr)
             return 2
 
     written = []
@@ -748,8 +780,8 @@ def main() -> int:
     for e, p, r, b in written:
         extra = f", {b} shape branches" if b else ""
         print(f"  {e:22} {p:>3} properties, {r:>3} required{extra}")
-    print(f"\n{len(written)} schemas -> contracts/  "
-          f"({len(HANDWRITTEN)} hand-authored, untouched: {', '.join(sorted(HANDWRITTEN))})")
+    print(f"\n{len(written)} schemas -> contracts/  ({len(HANDWRITTEN)} hand-authored, untouched: "
+          f"{', '.join(sorted(HANDWRITTEN_MAPS))} + {len(RUNTIME)} runtime under contracts/{RUNTIME_DIR}/)")
     return 0
 
 

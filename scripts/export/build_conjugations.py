@@ -19,8 +19,13 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 from conjugate import (conjugate_verb, conjugate_adjective, apply_lexeme_overrides,  # noqa: E402
                        VERB_FORMS, ADJ_FORMS)
 
+# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+import sys as _sys, pathlib as _pl  # noqa: E402
+_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
+from dbtarget import db_target, build_date  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
-DB = ROOT / "db" / "corpus.sqlite"
+DB = db_target(ROOT / "db" / "corpus.sqlite")
 OUT = ROOT / "corpus" / "conjugations"
 LEVELS = ["n5", "n4", "n3"]
 
@@ -57,7 +62,7 @@ def main() -> int:
         index_rows.append((lvl, len(records), sum(1 for r in records if r["kind"] == "verb"),
                            sum(1 for r in records if r["kind"] == "adjective")))
     lines = ["# Corpus — Conjugation bank (deterministic, Layer A)", "",
-             f"_Generated {_dt.date.today().isoformat()}. Rule-based conjugations for the exercise bank; "
+             f"_Generated {build_date()}. Rule-based conjugations for the exercise bank; "
              f"each form has surface/kana/romaji. Form keys are neutral enums._", "",
              "| level | items | verbs | adjectives |", "|-------|------:|------:|-----------:|"]
     for lvl, n, nv, na in index_rows:

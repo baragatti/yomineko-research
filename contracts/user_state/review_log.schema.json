@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/review_log.schema.json",
+  "title": "review_log",
+  "description": "One graded answer. APPEND-ONLY: never updated, never deleted, and kept when its card is deleted (marked orphaned instead) — this table is the only asset in the runtime model that cannot be regenerated, because it is the FSRS optimizer's entire training set and every scheduling field on `card` is replayable from it. FSRS-6 needs nothing per card beyond a stable id and this history: `Scheduler.review_card(card, rating, review_datetime)` in both reference implementations reads only (card, rating, timestamp), and the optimizer trains on the ordered (rating, elapsed) sequence per card. Everything beyond that here is stored to make a scheduling complaint debuggable. RUNTIME class: minted per learner, never committed to this repo. See design/user_state.md §3.",
+  "x-yomineko": {
+    "entity": "review_log",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache",
+    "stable_id_field": "log_id",
+    "key_namespace": ["rev"],
+    "note": "Keyed on card_id, NEVER on the corpus item: an item fans out to up to five kinds (4,133 items -> 9,453 card instances), so design/srs_design.md §4's item-keyed review_log(user, ref, grade, elapsed, ts) would merge a recognition answer with a handwriting answer into one memory trace."
+  },
+  "type": "object",
+  "properties": {
+    "log_id": {
+      "$ref": "../common.schema.json#/$defs/StableId",
+      "pattern": "^rev:[A-Za-z0-9_-]+$",
+      "description": "`rev:<opaque>`. Opaque and unordered on purpose — an ordering guarantee belongs to review_datetime, not to a key."
+    },
+    "user_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^usr:[A-Za-z0-9_-]+$" },
+    "card_id": {
+      "type": "string",
+      "pattern": "^usr:[A-Za-z0-9_-]+:deck:[a-z0-9-]+:[a-z][a-z0-9_]*:[^\\s:]+:(recognition|production|listening|handwriting|cloze)$",
+      "description": "The card that was answered. Not declared as an IdRef because the card it names is runtime state, not a corpus record — the graph check has nothing to resolve it against."
+    },
+    "rating": {
+      "type": "integer",
+      "enum": [1, 2, 3, 4],
+      "description": "The FSRS grade: 1 Again, 2 Hard, 3 Good, 4 Easy. This and review_datetime are the ONLY two fields the algorithm requires. Kept as the integer the libraries use rather than as a word, so a log row can be handed to py-fsrs or ts-fsrs without a mapping table."
+    },
+    "review_datetime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the answer was graded, UTC. The second and last required FSRS input."
+    },
+    "elapsed_days": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Days since this card's previous review; 0 on the first. DERIVABLE from the review_datetime history and stored anyway, for two reasons: it is the column shape the Anki-format revlog and the FSRS optimizer's CSV both expect, and a stored value makes a replay's arithmetic checkable against what the scheduler actually saw."
+    },
+    "scheduled_days": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The interval the scheduler had asked for. `elapsed_days` minus this is how late or early the review was — the quantity FSRS handles natively and the one a scheduling complaint is almost always about."
+    },
+    "state": {
+      "type": "string",
+      "enum": ["learning", "new", "relearning", "review"],
+      "description": "The card's state AT REVIEW TIME, before this answer was applied. This is what lets a history be replayed exactly rather than approximately, and it is absent from both design sketches. Vocabulary owner: design — design/user_state.md#5-card. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#5-card" }
+    },
+    "stability_after": {
+      "type": ["number", "null"],
+      "exclusiveMinimum": 0,
+      "description": "The post-review S snapshot. Not an algorithm input — a witness. Without it, a replay that disagrees with the stored card cannot be localized to a review."
+    },
+    "difficulty_after": {
+      "type": ["number", "null"],
+      "minimum": 1,
+      "maximum": 10,
+      "description": "The post-review D snapshot. Same purpose as stability_after."
+    },
+    "due_after": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "The next due date this answer produced."
+    },
+    "review_duration_ms": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "How long the answer took. Optional FSRS input (some variants use it); also the honest denominator for any time-per-card estimate in the daily budget."
+    },
+    "source": {
+      "type": "string",
+      "enum": ["daily_queue", "exam_sim", "lesson_drill", "manual_cram"],
+      "description": "Where the review came from. Costs nothing to store and is the difference between being able to debug a scheduling complaint and not: FSRS-6 models same-day reviews crudely, so same-day lesson drills must be distinguishable from queue reviews when training. Vocabulary owner: design — design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache" }
+    },
+    "fsrs_version": {
+      "type": "string",
+      "enum": ["fsrs-6"],
+      "description": "Which algorithm graded this review. Rows from different versions coexist; a replay picks the scheduler by this field. Vocabulary owner: design — design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": { "owner": "design", "source": "design/user_state.md#3-what-fsrs-6-actually-needs-and-why-card-is-a-cache" }
+    },
+    "params_version": { "type": "string", "minLength": 1, "description": "Which weight vector was in force." },
+    "orphaned": {
+      "type": "boolean",
+      "default": false,
+      "description": "The card this row names no longer exists (content retired, or a kana card re-minted per glyph under D6). The row is KEPT and flagged rather than deleted: an optimizer's training set is not something to prune for tidiness."
+    }
+  },
+  "required": [
+    "log_id", "user_id", "card_id", "rating", "review_datetime",
+    "elapsed_days", "scheduled_days", "state", "source", "fsrs_version", "params_version"
+  ],
+  "additionalProperties": false
+}

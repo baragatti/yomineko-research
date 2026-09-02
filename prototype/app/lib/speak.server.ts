@@ -44,7 +44,7 @@ for (const g of allGrammar()) if (g?.slug) grammarBySlug.set(g.slug, g);
 
 /**
  * Checkpoint items are exam-bank rows referenced by id. Index them once so a unit can resolve its
- * handful without scanning 6,166 rows, and note that the unit may OVERRIDE the bank's distractors with
+ * handful without scanning 6,048 rows, and note that the unit may OVERRIDE the bank's distractors with
  * ones drawn from the learner's known set (build_speaking_checkpoints.py explains why).
  */
 interface BankItem {
