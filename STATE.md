@@ -58,6 +58,19 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-03 (ao) — W13 authoring recovered and committed; STILL PAUSED (owner: "just this for
+> now"). Nothing is in flight. Next on the lean track when resumed: W11, then the applies
+> (W15/W20/W21), W27 Fable 100-row sample, W13b → W13 apply → W12, W16–W18.**
+>
+> - W13's Assemble agent died on the session limit after all 33 verifiers finished; assembly re-done
+>   deterministically from the workflow journal (verdicts paired by row content). 4,197 real + 26
+>   generated sentences, 1,511/1,638 targets covered; artifact `research/derived/n3_mined/`, report
+>   `research/reports/w13_authoring_report.md`. Fable 30-row sample: pass.
+> - The apply is blocked on **W13b** (Layer-B glosses/particles/structure the ingest requires — W13
+>   authored pt/pt_literal only); also needs a unit tag on the ingest, register normalization
+>   (7 values used vs 4), generation for 101 uncovered targets, then W12 relink.
+> - Pushed to origin/main at the owner's request (first push of this plan's commits).
+
 > **2026-09-03 (an) — W09 landed and committed during the pause (protective wrap-up only). Still
 > PAUSED; W13 is the last thing in flight. A9b (14 refused re-points = cross-lesson merges) is a new
 > owner decision in PENDING.md.**
