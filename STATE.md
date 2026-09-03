@@ -69,6 +69,9 @@ appearance and reuse only.
 >   達/たち and vocab:1002500 now at 0/3, real supply work for W12/W13); the quick rebuild baseline
 >   (only the grammar index's generated-date line moved — the validator should ignore that line).
 > - Gate green on every hard validator after export + post-export contracts regen + sync.
+> - **The three pending tables are now tracked** (`research/derived/pending/`: W15 kanji exercises
+>   899 verified, W27 card production keys 2,946 authored-only, W31 sentence register partial) —
+>   they had been sitting untracked on one machine. Authored, NOT applied; W02 does not replay them.
 
 > **2026-09-03 (am) — PAUSED by the owner after ~a week of Max 20X. Plan progress ≈ 35% (M0 done;
 > M1 ≈ 60%; M2 ≈ 30%; M3 ≈ 15%). Nothing new may be launched until the owner resumes.**
