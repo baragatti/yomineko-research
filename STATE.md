@@ -58,6 +58,31 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-03 (am) — PAUSED by the owner after ~a week of Max 20X. Plan progress ≈ 35% (M0 done;
+> M1 ≈ 60%; M2 ≈ 30%; M3 ≈ 15%). Nothing new may be launched until the owner resumes.**
+>
+> **In flight at pause time (let them finish, never kill mid-way):** W09 vocab re-point finisher
+> (DB migration — a kill could leave a half-applied re-point) and the W13 resume (authors 26–32,
+> 33 verifiers, assemble → research/derived/n3_mined/accepted.json). When they land: export
+> (contracts regenerated AFTER, before validate_contracts), full gate, one commit, STATE.
+>
+> **Resume on the LEAN track, in this order (each one agent, content already paid for):**
+> 1. W11 — A6 homograph refs + prose-reading resolver rule, then A5 family rebuild stages 0–3.
+> 2. Applies of authored tables: W15 passages (286 under research/derived/passages, 258 verified;
+>    13 are W21b course-data gaps), W20 kanji practice (899 rows, research/derived/pending/), W21
+>    needs[] (research/derived/needs_edges.json).
+> 3. W27 card keys: NOT a 30-agent re-verify — a Fable sample of 100 rows; ≥98% clean → ship as
+>    `verified: sampled`, the teacher queue catches the rest (table is marked authored-only today).
+> 4. W13 apply via the mined-stage pipeline once its artifact exists; W12 relink (568 records, cheapest
+>    coverage in the project); W16 + W17/W18 exam regeneration (A2 GO; A1 passages first).
+> DEFERRED until a teacher is reviewing N5: speak path (W31 register, W32, W33, W35, W36), platform
+> (W37, W40 apply, W43), N3 rebalance (W25), W08b, W21b beyond the unlock fixes W15 needs.
+>
+> **Cost lessons (do not repeat):** ~35 concurrent Opus agents ≈ 1.5–2 h of a 5-hour window; a CTX
+> edit on a workflow invalidates every cached prompt (W27 re-authored 2,946 cards for nothing);
+> verdicts must be keyed by stable id, not batch index; no more broad audits; larger batches, fewer,
+> longer-lived agents; every agent re-reads the plan/state — keep briefs pointed at one file each.
+
 > **2026-09-03 (al) — W41, W42-sections, W34 landed; W20 kanji table verified by simulation; W27
 > table AUTHORED ONLY (re-verify W27v pending). W09 finisher and the W13 resume relaunched.**
 >
