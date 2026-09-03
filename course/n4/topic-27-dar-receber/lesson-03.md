@@ -8,7 +8,7 @@
 - Negar o desejo com ～ないでほしい (quero que você NÃO faça)
 - Usar a variante indireta ように～てほしい para pedir uma mudança de hábito ou de estado
 
-**Introduz:** gramática [gp-106, gp-152, te-hoshii] · vocabulário [ご覧になる, 亡くなる, 入学, 宜しい, 居る, 校長, 申す, 科学, 興味, 試験] · kanji [工 建 料 有] · kana [—]
+**Introduz:** gramática [gp-106, te-hoshii] · vocabulário [ご覧になる, 亡くなる, 入学, 宜しい, 居る, 校長, 申す, 科学, 興味, 試験] · kanji [工 建 料 有] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-1152237`, `sent:gen-19bb4adab2c3`, `sent:gen-d0193ca6b4d8`, `sent:gen-9c98c3debc99`
 
@@ -22,7 +22,7 @@ A fórmula é simples: pegue o verbo na て-forma e cole ほしい. A て-forma 
 - [pessoa] に [verbo na て-forma] ほしい = "quero que [pessoa] faça…"
 Veja numa frase de verdade:
 > 🗣 あなたに歌ってほしい。 — Quero que você cante.
-Aqui あなたに marca de quem você quer a ação ("de você"), 歌って é a て-forma de "cantar" e ほしい fecha com o desejo: "quero que você cante". Repare que gp-152 trata exatamente desse padrão.
+Aqui あなたに marca de quem você quer a ação ("de você"), 歌って é a て-forma de "cantar" e ほしい fecha com o desejo: "quero que você cante". Repare que te-hoshii trata exatamente desse padrão.
 
 > **[l1-pitfall]**
 Não confunda ～たい com ～てほしい. 歌いたい = "eu quero cantar" (eu faço a ação). 歌ってほしい = "quero que outra pessoa cante" (ela faz a ação). Quem age muda: em ～たい sou eu; em ～てほしい é o outro.

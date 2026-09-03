@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/review_ledger.schema.json",
+  "title": "review_ledger",
+  "description": "The approval ledger: every human review verdict recorded against the corpus, one entry per (record, field, locale), anchored to the sha256 of the exact text the reviewer read. HAND-AUTHORED. It is not measured from the data and build_schemas.py will never write it, because an empty ledger is the correct starting state and a generator pointed at zero entries would narrow the contract to {}. The addressing rules and the decision behind them are in design/review_ledger.md (APP_PLAN D4); the reader/writer is scripts/review_ledger.py.",
+
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "MAJOR.MINOR of the ledger format."
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What this file is, for whoever opens it first. Internal prose, never learner-facing."
+    },
+    "entries": {
+      "type": "array",
+      "description": "The verdicts. An empty array is VALID and is the state before any teacher has signed anything off — the ledger's job is to make the difference between 'nobody has reviewed this' and 'somebody reviewed it once' checkable, and it can only do that by existing while still empty.",
+      "items": { "$ref": "#/$defs/Entry" }
+    }
+  },
+  "required": ["entries"],
+  "additionalProperties": false,
+
+  "$defs": {
+    "Entry": {
+      "type": "object",
+      "description": "One verdict. It addresses (slug, field, locale) and anchors to content_hash. There is NO expiry field and there will not be one: an approval is invalidated by a rewrite, not by the calendar (D4). A rewrite makes the entry STALE — it stops being exported and is reported — and staleness is computed, never stored.",
+      "properties": {
+        "slug": {
+          "$ref": "common.schema.json#/$defs/StableId",
+          "description": "The published address of the record reviewed. The integer `id` some registries carry is a storage row number and must never appear here."
+        },
+        "entity": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional. The entity the slug belongs to, as contracts/manifest.json names it. Redundant with the slug's namespace and kept only so a hand-written entry can say what it means; when present it must agree with the record actually found."
+        },
+        "field": {
+          "type": "string",
+          "minLength": 1,
+          "default": "*",
+          "description": "The reviewed field, or \"*\" for the whole record. A field-level entry is what makes an approval survivable: a campaign that rewrites `translation` invalidates exactly that approval and leaves the `structure_explanation` sign-off standing. `dissection` is a virtual field — the per-token glosses reviewed as one artefact, exactly as scripts/review_queue.py presents them."
+        },
+        "locale": {
+          "$ref": "common.schema.json#/$defs/Locale",
+          "description": "The locale reviewed. Absent (or \"*\") means locale-agnostic — correct for a mechanical field, wrong for prose: approving a pt-BR translation must not bless the `en` anchor beside it, which is why D4 makes the locale part of the address."
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^(sha256:)?[0-9a-fA-F]{8,64}$",
+          "description": "sha256 (NFC-normalised) of the exact value the reviewer read, as scripts/review_queue.py computes it: sha(text) for one locale of a locale-object, sha_json(value) for an aggregate, and the record hash minus its own review_status stamp for field \"*\". A truncated prefix of at least 8 hex characters joins a full digest, so a ledger written from the queue's 24-character short hash and a hash recomputed from the export still meet. An entry with no anchor is refused, not tolerated."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["approved", "rejected"],
+          "description": "The verdict. Two values, because a ledger with six spellings of \"yes\" is a ledger nobody can audit; scripts/review_queue.py accepts a wider historical set on READ and this is what we WRITE. Vocabulary owner: design — design/review_ledger.md. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/review_ledger.md"
+          }
+        },
+        "reviewed_by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Who reviewed it. Required: an anonymous approval is not a review, and the correction-rate metric (W39) is per reviewer. A stable handle, not a mailbox — no PII beyond what the owner chooses to record."
+        },
+        "approved_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}([T ].*)?$",
+          "description": "When. Kept for provenance and ordering, NOT for expiry — nothing reads this to decide whether an approval still holds."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional internal note from the reviewer. Not learner-facing and never exported into a record."
+        }
+      },
+      "required": ["slug", "field", "content_hash", "status", "reviewed_by", "approved_at"],
+      "additionalProperties": false
+    }
+  },
+
+  "x-yomineko": {
+    "entity": "review_ledger",
+    "class": "content",
+    "records": null,
+    "packing": "single",
+    "glob": "research/derived/review_ledger.json",
+    "stable_id_field": null,
+    "natural_key": null,
+    "generated_by": "HAND-AUTHORED — build_schemas.py lists it in LEDGER (part of HANDWRITTEN) and must never write it.",
+    "vocabulary_policy": "Every value set here is design-owned and carries x-vocabulary naming design/review_ledger.md. Nothing in this file was measured, because there is nothing to measure until a teacher starts working."
+  }
+}

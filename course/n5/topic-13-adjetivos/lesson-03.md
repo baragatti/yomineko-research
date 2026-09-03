@@ -27,7 +27,7 @@ O segredo está sempre na última sílaba: …い vira …くない. A raiz (a p
 Em português, negar muda o verbo ("é" → "não é") e mantém o adjetivo igual. Em japonês é o contrário: não existe verbo separado, o próprio adjetivo carrega a negação na ponta. Uma regra única (い → くない) resolve TODOS os adjetivos-い, sem exceções de gênero ou número.
 
 #### Informal e polido: くない e くないです
-Sozinho, くない já é uma frase completa, mas soa informal, do tipo que você usa com amigos. Para soar polido, é só grudar a cópula gp no fim. Pense nisso como uma soma simples de peças:
+Sozinho, くない já é uma frase completa, mas soa informal, do tipo que você usa com amigos. Para soar polido, é só grudar a cópula da-desu no fim. Pense nisso como uma soma simples de peças:
 Molde: くない mais です resulta em くないです.
 - Informal: 忙しくない = "não estou ocupado" (entre amigos).
 - Polido: 忙しくないです = mesma coisa, mas educado.

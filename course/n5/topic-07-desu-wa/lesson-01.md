@@ -7,14 +7,14 @@
 - Usar a partícula は para marcar o tópico (sobre o que a frase fala)
 - Diferenciar a cópula educada です da casual だ
 
-**Introduz:** gramática [da-desu, gp, wa-topic-marker] · vocabulário [お巡りさん, お金, 会社, 円, 医者, 外国人, 女, 椅子, 歌, 男, 絵, 英語, 貴方, 鍵, 音楽] · kanji [—] · kana [—]
+**Introduz:** gramática [da-desu, wa-topic-marker] · vocabulário [お巡りさん, お金, 会社, 円, 医者, 外国人, 女, 椅子, 歌, 男, 絵, 英語, 貴方, 鍵, 音楽] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-5332`, `sent:tatoeba-5078`
 
 ---
 
 ### É isto: は e です
-Esta é a frase mais simples (e mais útil) do japonês: dizer que uma coisa é outra. Para isso você só precisa de duas peças: a partícula wa-topic-marker, que marca o tópico, e a cópula gp, que faz o papel do nosso "ser/estar". Com elas você já monta o molde abaixo, que significa "A é B".
+Esta é a frase mais simples (e mais útil) do japonês: dizer que uma coisa é outra. Para isso você só precisa de duas peças: a partícula wa-topic-marker, que marca o tópico, e a cópula da-desu, que faz o papel do nosso "ser/estar". Com elas você já monta o molde abaixo, que significa "A é B".
 Molde: [A] は [B] です
 
 #### A partícula は: sobre o que a frase fala
@@ -27,7 +27,7 @@ Escreve-se com o kana は (que sozinho seria "ha"), mas quando é partícula lê
 A partícula vem depois da palavra que ela marca, nunca antes. Em português a gente sinaliza com a ordem e com palavrinhas na frente ("a casa", "para você"); em japonês a marca gruda atrás: 私 + は. Primeiro a palavra, depois a partícula.
 
 #### A cópula です: "é / ser"
-A cópula gp liga o tópico ao que ele é, como o nosso verbo "ser/estar". Ela fica sempre no fim da frase. Repare numa coisa que facilita a sua vida: o japonês não tem artigo. Não existe "um/uma/o/a", então nada de se preocupar em escolher entre eles.
+A cópula da-desu liga o tópico ao que ele é, como o nosso verbo "ser/estar". Ela fica sempre no fim da frase. Repare numa coisa que facilita a sua vida: o japonês não tem artigo. Não existe "um/uma/o/a", então nada de se preocupar em escolher entre eles.
 - あなたは会社の人です não precisa de "um"; é só 会社 + pessoa.
 - これは鍵です = "isto é uma 鍵" (sem "uma").
 

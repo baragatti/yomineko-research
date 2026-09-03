@@ -42,6 +42,18 @@ exported rather than the day someone remembers to add it here.
        - listening lt/lp/ls/lr/lg-> true (the scripts are generated Japanese);
        - layer per the FAMILY table; an unknown id prefix is a failure, not a default.
 
+  g) NESTED provenance. A record is not the only thing that carries a flag. W05 exported the
+     14,958 `needs_review` flags the working index had been holding on `vocab_sense`,
+     `kanji_reading` and `family` — 14,923 of them reach the published levels — and two of those
+     three live one level down, on `vocab.senses[]` and `kanji.readings[]`. A gate that only ever
+     looked at the record root would have counted the family flag and been blind to 14,527 others,
+     which is the same blindness that let 5,275 exam items ship with no flag at all.
+     So every list-of-objects field on every record is walked one level deep and the SAME rules
+     apply: real booleans, ai_generated => needs_review, layer C => needs_review, and a field
+     present on ANY sub-record of that (entity, collection) is expected on ALL of them. The
+     expectation is INFERRED, exactly as it is at the root, so a new nested flag is covered the
+     day it is exported rather than the day someone remembers to add it here.
+
 Reads the exported JSON only. Never db/corpus.sqlite.
 Exit 1 on any failure. Usage: validate_provenance_json.py [--root PATH] [--list]
 """
@@ -74,6 +86,24 @@ REQUIRED_PROVENANCE: dict[str, tuple[str, ...]] = {
 # Empty on purpose: today every entity is all-or-nothing, and that is the property worth defending.
 # An entry here is a written decision, not a silencer — give the reason in the value.
 PARTIAL_PROVENANCE: dict[str, dict[str, str]] = {}
+
+# The same escape hatch one level down, keyed "<entity>.<collection>" — also empty on purpose.
+PARTIAL_NESTED_PROVENANCE: dict[str, dict[str, str]] = {}
+
+
+def nested_collections(rec: dict) -> list[tuple[str, list[dict]]]:
+    """Every list-of-objects field on a record: `vocab.senses`, `kanji.readings`, `family.members`,
+    `sentence.tokens`, … Discovered rather than listed, so a nested flag exported tomorrow is
+    checked tomorrow. Only one level deep: below that the meaning of a flag stops being obvious,
+    and a gate that guesses is worse than one that says what it covers."""
+    out: list[tuple[str, list[dict]]] = []
+    for key, val in rec.items():
+        if not isinstance(val, list):
+            continue
+        subs = [v for v in val if isinstance(v, dict)]
+        if subs:
+            out.append((key, subs))
+    return out
 
 
 def load_derivation_contract():
@@ -146,8 +176,12 @@ def main() -> int:
             sent_ai[r["slug"]] = bool(r.get("provenance", {}).get("ai_generated"))
 
     fails: list[str] = []
-    rows: list[tuple[str, int, int, int, int, int, int]] = []
+    rows: list[tuple[str, int, int, int, int, int, int, int, int]] = []
     total_records = 0
+    total_nested = 0
+    # (entity.collection, field) -> [carrying, true] — what W05 added, counted where it landed.
+    nested_tally: Counter = Counter()
+    nested_true: Counter = Counter()
 
     for ent in entities:
         entity, packing, glob = ent["entity"], ent.get("packing", "list"), ent["files"]
@@ -167,16 +201,73 @@ def main() -> int:
         if not seen:
             continue
 
+        # ---- g) what the sub-records of this entity declare ------------------------------------
+        # Inferred the same way the root set is: a field on ANY sub-record of this (entity,
+        # collection) is expected on ALL of them. Collected in a first pass over every record so
+        # the expectation is not built from whichever file happened to be read first.
+        nested_declared: dict[str, set[str]] = {}
+        nested_count: dict[str, int] = {}
+        for _loc, rec in seen:
+            for coll, subs in nested_collections(rec):
+                nested_count[coll] = nested_count.get(coll, 0) + len(subs)
+                for sub in subs:
+                    got = {f for f in FIELDS if f in sub}
+                    if got:
+                        nested_declared.setdefault(coll, set()).update(got)
+        for coll, fset in nested_declared.items():
+            fset -= set(PARTIAL_NESTED_PROVENANCE.get(f"{entity}.{coll}", {}))
+
         pinned = REQUIRED_PROVENANCE.get(entity)
         expected = set(pinned) if pinned else {q.split(".")[-1] for q in declared}
         expected -= set(PARTIAL_PROVENANCE.get(entity, {}))
         # Keep the qualified form so a nested-provenance entity reports `provenance.needs_review`.
         qualify = {q.split(".")[-1]: q for q in declared}
 
-        n_ai = n_c = n_type = n_missing = n_layer = n_deriv = 0
+        n_ai = n_c = n_type = n_missing = n_layer = n_deriv = n_nested = n_flag = 0
         for locator, rec in seen:
             view = prov_view(rec)
             get = {f: v for f, (_, v) in view.items()}
+            # W05 counts the flag WHEREVER it lands. `family` carries needs_review at the record
+            # root, not in a sub-record, so a report that only tallied nested flags would print
+            # two of the three collections W05 exported and stay silent about the third — and a
+            # gate whose report cannot show the thing it was extended for is a gate nobody will
+            # trust the next time the flags go missing.
+            if get.get("needs_review") is True:
+                n_flag += 1
+
+            # ---- g) the nested flags, under exactly the root rules ----------------------------
+            for coll, subs in nested_collections(rec):
+                want = nested_declared.get(coll)
+                if not want:
+                    continue
+                for j, sub in enumerate(subs):
+                    where = f"{locator}.{coll}[{j}]"
+                    n_nested += 1
+                    for f in sorted(want):
+                        if f not in sub:
+                            n_missing += 1
+                            fails.append(f"{entity}: {where}: missing {f} (other {entity}.{coll} "
+                                         f"sub-records carry it)")
+                            continue
+                        nested_tally[(f"{entity}.{coll}", f)] += 1
+                        if sub[f] is True:
+                            nested_true[(f"{entity}.{coll}", f)] += 1
+                    for f in BOOL_FIELDS:
+                        if f in sub and not isinstance(sub[f], bool):
+                            n_type += 1
+                            fails.append(f"{entity}: {where}: {f} is {type(sub[f]).__name__} "
+                                         f"{sub[f]!r}, must be a JSON boolean")
+                    if sub.get("ai_generated") is True and sub.get("needs_review") is not True:
+                        n_ai += 1
+                        fails.append(f"{entity}: {where}: ai_generated true but needs_review is "
+                                     f"{sub.get('needs_review')!r} (spec §1.2)")
+                    if sub.get("layer") == "C" and sub.get("needs_review") is not True:
+                        n_c += 1
+                        fails.append(f"{entity}: {where}: layer C but needs_review is "
+                                     f"{sub.get('needs_review')!r} (Layer C always needs review)")
+                    if "layer" in sub and sub["layer"] not in LAYERS:
+                        n_layer += 1
+                        fails.append(f"{entity}: {where}: layer {sub['layer']!r} is not A/B/C")
 
             for f in BOOL_FIELDS:
                 if f in get and not isinstance(get[f], bool):
@@ -238,7 +329,9 @@ def main() -> int:
                                      f"got {get.get('ai_generated')!r}")
 
         total_records += len(seen)
-        rows.append((entity, len(seen), n_ai, n_c, n_type, n_missing, n_layer + n_deriv))
+        total_nested += n_nested
+        rows.append((entity, len(seen), n_ai, n_c, n_type, n_missing, n_layer + n_deriv, n_nested,
+                     n_flag))
 
     # An exemption that matches nothing is itself a failure — it hides a rule that no longer applies.
     for entity, optouts in PARTIAL_PROVENANCE.items():
@@ -246,12 +339,25 @@ def main() -> int:
             fails.append(f"PARTIAL_PROVENANCE names entity {entity!r}, which exported no records")
 
     print("============== PROVENANCE GATE ==============")
-    print(f"  {'entity':22} {'records':>7} {'ai&!rev':>8} {'C&!rev':>7} {'non-bool':>9} "
-          f"{'missing':>8} {'derived':>8}")
-    for entity, n, a, c, t, m, d in rows:
+    print(f"  {'entity':22} {'records':>7} {'nested':>7} {'flagged':>8} {'ai&!rev':>8} "
+          f"{'C&!rev':>7} {'non-bool':>9} {'missing':>8} {'derived':>8}")
+    total_flag = 0
+    for entity, n, a, c, t, m, d, nest, flag in rows:
         mark = " " if not (a or c or t or m or d) else "!"
-        print(f" {mark}{entity:22} {n:>7} {a:>8} {c:>7} {t:>9} {m:>8} {d:>8}")
-    print(f"  ---- {total_records} records across {len(rows)} entities")
+        total_flag += flag
+        print(f" {mark}{entity:22} {n:>7} {nest:>7} {flag:>8} {a:>8} {c:>7} {t:>9} {m:>8} {d:>8}")
+    print(f"  ---- {total_records} records across {len(rows)} entities, "
+          f"{total_nested} sub-records with provenance, {total_flag} records flagged "
+          f"needs_review at their root")
+
+    # W05: the flags that used to live only in db/corpus.sqlite, counted where they now land. A
+    # zero here after the exporter has run means the flags were dropped again.
+    if nested_tally:
+        print("  nested provenance (W05 — flags the export used to drop; `family` is the third of "
+              "the three and carries its flag at the root, in `flagged` above):")
+        for (where, field), carrying in sorted(nested_tally.items()):
+            print(f"    {where + '[].' + field:44} {carrying:>7,} carried, "
+                  f"{nested_true[(where, field)]:>7,} true")
 
     if fails:
         print()

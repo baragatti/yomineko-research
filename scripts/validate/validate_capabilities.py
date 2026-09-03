@@ -21,7 +21,11 @@ def main() -> int:
     reg = json.loads((CAPD / "registry.json").read_text(encoding="utf-8"))
     lmap = json.loads((CAPD / "lesson_map.json").read_text(encoding="utf-8"))
     con = sqlite3.connect(db_target(ROOT / "db" / "corpus.sqlite"))
-    gkeys = {r[0] for r in con.execute("SELECT key FROM grammar_point")}
+    # A merged loser keeps its row as a redirect (deprecated_by = survivor, W08) and is not
+    # an active point: no capability should map it, and the survivor carries its coverage.
+    cols = {r[1] for r in con.execute("PRAGMA table_info(grammar_point)")}
+    where = " WHERE deprecated_by IS NULL" if "deprecated_by" in cols else ""
+    gkeys = {r[0] for r in con.execute("SELECT key FROM grammar_point" + where)}
     lslugs = {r[0] for r in con.execute("SELECT slug FROM lesson")}
     fails = []
     ids = [c["id"] for c in reg]

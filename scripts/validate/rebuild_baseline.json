@@ -2,25 +2,25 @@
  "quick": {
   "known": {
    "corpus/grammar/INDEX.md": {
-    "rebuilt_sha256": "cd070f3fb1204d6c44831f5bb694061c31d55bc9cfd64cf3a61283a755fee4b1",
+    "rebuilt_sha256": "9dd4cead64b9a0f7374357f51e0270e2a7f7769868cf47962e529853878d6406",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n3.json": {
-    "rebuilt_sha256": "6ca2feda5ff2f378dc355d2226cde0ed9615e848089a8362f59348f2dfd9b85d",
+    "rebuilt_sha256": "e04f8f6330bea50807f046034ae94577e1c664cdab79f3c40f5dc93d2fd13872",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n4.json": {
-    "rebuilt_sha256": "390543e9e1be494f65df796e6669a1db332bbfba4bc781e07414a5a36abc5207",
+    "rebuilt_sha256": "6f97444deedc3cef4824b4ca7b914804ace7a2eaba20cec59b0f13daaef3b112",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n5.json": {
-    "rebuilt_sha256": "bc984513838dbfcf61d9efe98dcbd10d802af920f7e323a797a3e2b38d3edd33",
+    "rebuilt_sha256": "820c5871589fc5ee8dab28c4cd6eddd2ea8fcece75b071478d00c9b435cb963f",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    }
   },
   "recorded_at": "2026-09-02"
  },
- "_why": "Files the rebuild does not reproduce byte-for-byte yet, per mode, each pinned to the bytes the rebuild currently produces. An entry may be deleted when the file starts matching; adding one needs a written cause. Each entry's cause starts with a key from _causes: the diagnosis, followed by the measured difference for that file.",
+ "_why": "Files the rebuild does not reproduce byte-for-byte yet, per mode, each pinned to the bytes the rebuild currently produces. An entry may be deleted when the file starts matching; adding one needs a written cause. Each cause starts with a key from _causes — the diagnosis — followed by the measured difference for that file; a re-record keeps the cause an entry already carries, so those keys survive.",
  "full": {
   "known": {
    "corpus/INDEX.md": {

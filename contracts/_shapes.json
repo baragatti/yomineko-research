@@ -228,7 +228,8 @@
       "1/1",
       "1/4",
       "3/3",
-      "4/4"
+      "4/4",
+      "anchor"
      ]
     },
     "level_confidence": {
@@ -461,6 +462,14 @@
       "n3",
       "n4",
       "n5"
+     ]
+    },
+    "readings[].needs_review": {
+     "present": 9340,
+     "pct": 438.3,
+     "required": false,
+     "types": [
+      "boolean"
      ]
     },
     "readings[].note": {
@@ -716,7 +725,7 @@
      "types": [
       "number"
      ],
-     "min": 0.34,
+     "min": 0.0,
      "max": 1.0
     },
     "level_sources": {
@@ -953,6 +962,14 @@
       "hum"
      ]
     },
+    "senses[].needs_review": {
+     "present": 10592,
+     "pct": 143.1,
+     "required": false,
+     "types": [
+      "boolean"
+     ]
+    },
     "senses[].order": {
      "present": 10592,
      "pct": 143.1,
@@ -1032,10 +1049,10 @@
     "corpus/grammar/n4.json",
     "corpus/grammar/n5.json"
    ],
-   "records": 496,
+   "records": 494,
    "fields": {
     "caution": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1048,7 +1065,7 @@
      ]
     },
     "explanation": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1056,7 +1073,7 @@
      ]
     },
     "explanation.en": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1064,7 +1081,7 @@
      ]
     },
     "explanation.pt-BR": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1072,7 +1089,7 @@
      ]
     },
     "families": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1080,15 +1097,15 @@
      ]
     },
     "families[]": {
-     "present": 375,
-     "pct": 75.6,
+     "present": 374,
+     "pct": 75.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "formation": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1096,7 +1113,7 @@
      ]
     },
     "formation.en": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1104,7 +1121,7 @@
      ]
     },
     "formation.pt-BR": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1112,7 +1129,7 @@
      ]
     },
     "formation_steps": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1121,15 +1138,15 @@
      ]
     },
     "formation_steps.variants": {
-     "present": 367,
-     "pct": 74.0,
+     "present": 365,
+     "pct": 73.9,
      "required": false,
      "types": [
       "array"
      ]
     },
     "formation_steps.variants[].base": {
-     "present": 1025,
+     "present": 1021,
      "pct": 206.7,
      "required": false,
      "types": [
@@ -1144,7 +1161,7 @@
      ]
     },
     "formation_steps.variants[].example": {
-     "present": 1025,
+     "present": 1021,
      "pct": 206.7,
      "required": false,
      "types": [
@@ -1152,7 +1169,7 @@
      ]
     },
     "formation_steps.variants[].steps": {
-     "present": 1025,
+     "present": 1021,
      "pct": 206.7,
      "required": false,
      "types": [
@@ -1160,7 +1177,7 @@
      ]
     },
     "forms": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1168,7 +1185,7 @@
      ]
     },
     "forms[].form": {
-     "present": 537,
+     "present": 535,
      "pct": 108.3,
      "required": false,
      "types": [
@@ -1176,7 +1193,7 @@
      ]
     },
     "forms[].meaning": {
-     "present": 537,
+     "present": 535,
      "pct": 108.3,
      "required": false,
      "types": [
@@ -1185,7 +1202,7 @@
      ]
     },
     "forms[].meaning.en": {
-     "present": 403,
+     "present": 401,
      "pct": 81.2,
      "required": false,
      "types": [
@@ -1193,7 +1210,7 @@
      ]
     },
     "forms[].meaning.pt-BR": {
-     "present": 403,
+     "present": 401,
      "pct": 81.2,
      "required": false,
      "types": [
@@ -1201,7 +1218,7 @@
      ]
     },
     "id": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1211,7 +1228,7 @@
      "max": 496
     },
     "key": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1219,7 +1236,7 @@
      ]
     },
     "label": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1227,7 +1244,7 @@
      ]
     },
     "label.en": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1235,7 +1252,7 @@
      ]
     },
     "label.pt-BR": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1243,7 +1260,7 @@
      ]
     },
     "level": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1256,7 +1273,7 @@
      ]
     },
     "level_agreement": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1273,7 +1290,7 @@
      ]
     },
     "level_confidence": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1283,7 +1300,7 @@
      "max": 1.0
     },
     "level_sources": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1291,8 +1308,8 @@
      ]
     },
     "level_sources.bunpro": {
-     "present": 272,
-     "pct": 54.8,
+     "present": 271,
+     "pct": 54.9,
      "required": false,
      "types": [
       "string"
@@ -1304,7 +1321,7 @@
     },
     "level_sources.hanabira": {
      "present": 132,
-     "pct": 26.6,
+     "pct": 26.7,
      "required": false,
      "types": [
       "string"
@@ -1315,7 +1332,7 @@
     },
     "level_sources.jlptsensei": {
      "present": 209,
-     "pct": 42.1,
+     "pct": 42.3,
      "required": false,
      "types": [
       "string"
@@ -1338,7 +1355,7 @@
     },
     "level_sources.tanos": {
      "present": 90,
-     "pct": 18.1,
+     "pct": 18.2,
      "required": false,
      "types": [
       "string"
@@ -1349,7 +1366,7 @@
      ]
     },
     "needs_review": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1357,7 +1374,7 @@
      ]
     },
     "nuance": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1365,7 +1382,7 @@
      ]
     },
     "nuance.en": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1373,7 +1390,7 @@
      ]
     },
     "nuance.pt-BR": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1381,7 +1398,7 @@
      ]
     },
     "nuance_tags": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1389,8 +1406,8 @@
      ]
     },
     "nuance_tags[]": {
-     "present": 476,
-     "pct": 96.0,
+     "present": 473,
+     "pct": 95.7,
      "required": false,
      "types": [
       "string"
@@ -1420,7 +1437,7 @@
      ]
     },
     "refs": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1429,40 +1446,40 @@
      ]
     },
     "refs.also_known_as": {
-     "present": 363,
-     "pct": 73.2,
+     "present": 361,
+     "pct": 73.1,
      "required": false,
      "types": [
       "array"
      ]
     },
     "refs.also_known_as[]": {
-     "present": 334,
-     "pct": 67.3,
+     "present": 336,
+     "pct": 68.0,
      "required": false,
      "types": [
       "string"
      ]
     },
     "refs.label_en": {
-     "present": 364,
-     "pct": 73.4,
+     "present": 362,
+     "pct": 73.3,
      "required": false,
      "types": [
       "string"
      ]
     },
     "refs.level_sources": {
-     "present": 363,
-     "pct": 73.2,
+     "present": 361,
+     "pct": 73.1,
      "required": false,
      "types": [
       "object"
      ]
     },
     "refs.level_sources.bunpro": {
-     "present": 272,
-     "pct": 54.8,
+     "present": 271,
+     "pct": 54.9,
      "required": false,
      "types": [
       "string"
@@ -1474,7 +1491,7 @@
     },
     "refs.level_sources.jlptsensei": {
      "present": 209,
-     "pct": 42.1,
+     "pct": 42.3,
      "required": false,
      "types": [
       "string"
@@ -1486,7 +1503,7 @@
     },
     "refs.level_sources.tanos": {
      "present": 90,
-     "pct": 18.1,
+     "pct": 18.2,
      "required": false,
      "types": [
       "string"
@@ -1497,7 +1514,7 @@
      ]
     },
     "register": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1505,8 +1522,8 @@
      ]
     },
     "register[]": {
-     "present": 639,
-     "pct": 128.8,
+     "present": 638,
+     "pct": 129.1,
      "required": false,
      "types": [
       "string"
@@ -1527,7 +1544,7 @@
      ]
     },
     "related": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1549,7 +1566,7 @@
      ]
     },
     "slug": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1557,7 +1574,7 @@
      ]
     },
     "steps_unavailable": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1566,7 +1583,7 @@
      ]
     },
     "structure_pattern": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1574,7 +1591,7 @@
      ]
     },
     "usage_contexts": {
-     "present": 496,
+     "present": 494,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -1582,8 +1599,8 @@
      ]
     },
     "usage_contexts[]": {
-     "present": 1067,
-     "pct": 215.1,
+     "present": 1063,
+     "pct": 215.2,
      "required": false,
      "types": [
       "string"
@@ -1640,8 +1657,8 @@
      ]
     },
     "grammar[]": {
-     "present": 2622,
-     "pct": 44.5,
+     "present": 2616,
+     "pct": 44.4,
      "required": false,
      "types": [
       "string"
@@ -2380,8 +2397,8 @@
      ]
     },
     "members[].id": {
-     "present": 2572,
-     "pct": 649.5,
+     "present": 2571,
+     "pct": 649.2,
      "required": false,
      "types": [
       "integer"
@@ -2390,8 +2407,8 @@
      "max": 2949
     },
     "members[].intra_order": {
-     "present": 2572,
-     "pct": 649.5,
+     "present": 2571,
+     "pct": 649.2,
      "required": false,
      "types": [
       "integer"
@@ -2400,16 +2417,16 @@
      "max": 176
     },
     "members[].is_core": {
-     "present": 2572,
-     "pct": 649.5,
+     "present": 2571,
+     "pct": 649.2,
      "required": false,
      "types": [
       "boolean"
      ]
     },
     "members[].member_type": {
-     "present": 2572,
-     "pct": 649.5,
+     "present": 2571,
+     "pct": 649.2,
      "required": false,
      "types": [
       "string"
@@ -2421,27 +2438,35 @@
      ]
     },
     "members[].note": {
-     "present": 2572,
-     "pct": 649.5,
+     "present": 2571,
+     "pct": 649.2,
      "required": false,
      "types": [
       "null"
      ]
     },
     "members[].ref": {
-     "present": 2572,
-     "pct": 649.5,
+     "present": 2571,
+     "pct": 649.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "members[].slug": {
-     "present": 2572,
-     "pct": 649.5,
+     "present": 2571,
+     "pct": 649.2,
      "required": false,
      "types": [
       "string"
+     ]
+    },
+    "needs_review": {
+     "present": 396,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "boolean"
      ]
     },
     "slug": {
@@ -3358,8 +3383,8 @@
      ]
     },
     "grammar_keys[]": {
-     "present": 496,
-     "pct": 670.3,
+     "present": 494,
+     "pct": 667.6,
      "required": false,
      "types": [
       "string"
@@ -3422,8 +3447,8 @@
      ]
     },
     "[value][]": {
-     "present": 562,
-     "pct": 211.3,
+     "present": 561,
+     "pct": 210.9,
      "required": false,
      "types": [
       "string"
@@ -4718,16 +4743,16 @@
      ]
     },
     "lessons[].unlocks[].ref": {
-     "present": 4137,
-     "pct": 7955.8,
+     "present": 4135,
+     "pct": 7951.9,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].unlocks[].type": {
-     "present": 4137,
-     "pct": 7955.8,
+     "present": 4135,
+     "pct": 7951.9,
      "required": false,
      "types": [
       "string"
@@ -5168,8 +5193,8 @@
      ]
     },
     "cumulative_known_set.grammar[]": {
-     "present": 75695,
-     "pct": 23507.8,
+     "present": 75257,
+     "pct": 23371.7,
      "required": false,
      "types": [
       "string"
@@ -5529,16 +5554,16 @@
      ]
     },
     "srs.introduces_cards[].card_types": {
-     "present": 4133,
-     "pct": 1283.5,
+     "present": 4131,
+     "pct": 1282.9,
      "required": false,
      "types": [
       "array"
      ]
     },
     "srs.introduces_cards[].deck": {
-     "present": 4133,
-     "pct": 1283.5,
+     "present": 4131,
+     "pct": 1282.9,
      "required": false,
      "types": [
       "string"
@@ -5558,8 +5583,8 @@
      ]
     },
     "srs.introduces_cards[].item": {
-     "present": 4133,
-     "pct": 1283.5,
+     "present": 4131,
+     "pct": 1282.9,
      "required": false,
      "types": [
       "string"
@@ -5598,16 +5623,16 @@
      ]
     },
     "unlocks[].ref": {
-     "present": 4137,
-     "pct": 1284.8,
+     "present": 4135,
+     "pct": 1284.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "unlocks[].type": {
-     "present": 4137,
-     "pct": 1284.8,
+     "present": 4135,
+     "pct": 1284.2,
      "required": false,
      "types": [
       "string"

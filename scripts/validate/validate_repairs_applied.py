@@ -5,8 +5,9 @@ WHY THIS EXISTS
 ---------------
 `research/reports/readiness/quality_provenance_review.md` finding **G7**: *"no gate replays the
 repair tables against the export — 16 grammar `form_meanings` repairs silently no-oped and only the
-audit noticed."* Six campaigns wrote 1,299 rows of `old`/`new`/`why` under
-`research/derived/repairs/`, every applier is DB-only, and the exporter republishes afterwards.
+audit noticed."* Seven campaigns wrote 1,499 rows of `old`/`new`/`why` under
+`research/derived/repairs/` (the level-evidence table spells the three `old_agreement` /
+`new_agreement` / `reason`), every applier is DB-only, and the exporter republishes afterwards.
 Between the apply script's "repaired N fields" line and the JSON a learner is served there was no
 check at all: a row could match nothing, be shadowed by a Layer-A column, be reverted by a later
 campaign, or address a field the exporter does not project — and the suite stayed green while the
@@ -18,10 +19,12 @@ what the export actually carries at the address the row names.
 
 WHAT IT CHECKS, TABLE BY TABLE
 ------------------------------
-The six tables are REGISTERED below with the addressing their applier uses (learned from
+The seven tables are REGISTERED below with the addressing their applier uses (learned from
 `scripts/apply_*.py`). A `.json` file appearing in `research/derived/repairs/` that is not
 registered here is itself a FAILURE — a new campaign joins this gate the day it lands, not the day
-someone remembers.
+someone remembers. (That rule is what caught W10's `level_evidence_repairs.json`: the campaign had
+applied and exported, every other gate was green, and this one refused the run until the table was
+registered with an addressing of its own.)
 
   * `sentence_text_repairs.json`      {slug, field, locale}      sentence[field][locale] == new
   * `jargon_pass2_repairs.json`       {slug, field, locale}      sentence[field][locale] == new
@@ -50,6 +53,13 @@ someone remembers.
         `json`       -> forms_json -> grammar["forms"] form list; references_json -> grammar["refs"];
                         formation_steps_json -> grammar["formation_steps"]; compared PARSED
         `ltext_json` -> form_meanings map, per form
+  * `level_evidence_repairs.json`     {address, entity, file, level}
+        the levelled record at `address` carries BOTH `new_agreement` and `new_confidence`, and is
+        still the record the campaign put to the panel: same entity, same registry file, same level.
+        The pair is asserted TOGETHER because the defect W10 fixed was precisely the two halves
+        disagreeing — a record whose string says `1/1` while its number says 0.34 passes either
+        half-check on its own and is still self-contradictory. This table is DICT-shaped: it carries
+        the formula it applied and its class counts alongside the rows, which live under `rows`.
 
 `form_meanings` has no field of its own in the export. `scripts/export/export_corpus.py` builds
 `forms` by iterating `forms_json` and looking the meaning up BY FORM STRING, so a meaning keyed on a
@@ -59,7 +69,7 @@ no-ops fell through, so a `form_meanings` row is checked per (form, meaning) pai
 
 MARKED SKIPS — a marking is an assertion, never an excuse
 ---------------------------------------------------------
-Two markings exist, and NEITHER is taken on trust: each is a claim this validator proves before it
+Three markings exist, and NONE is taken on trust: each is a claim this validator proves before it
 lets the row out of the gate. That is the whole design rule here — a marker that stops being true
 becomes a FAILURE, so marking a row can never hide a regression.
 
@@ -82,6 +92,24 @@ The seven marked rows are `translation_literal` [pt-BR], six superseded by
 collision. An UNMARKED row in the same shape is still a failure
 (`superseded-by-a-later-tracked-row`): `successor()` finds the chain and the report names the row
 that needs the marker, so the marking stays a deliberate act.
+
+  * MERGED AWAY (W08, owner decision A3) — `corpus/grammar_deprecated.json` maps the slug of a
+    grammar record that was merged into another to its survivor. A repair row addressing a merged
+    loser is neither a pass nor a failure: the record it repaired still exists (nothing is deleted;
+    it keeps its row and gains `grammar_point.deprecated_by`) but no longer has a published address,
+    so the export cannot carry the row's `new` and `address-does-not-resolve` would be a false
+    finding. SKIP, and the redirect is asserted the way `superseded_by` is — against the export, on
+    every run: it must not point at itself and its survivor must be a record the export actually
+    carries, or the row fails `merged-away-redirect-broken`. The 4 rows this covers today are
+    `grammar_record_repairs.json` 19-22 (`gp-152`, merged into `te-hoshii`).
+
+    The claim is retired, NOT transferred. Re-asserting `gp-152`'s repaired explanation against
+    `te-hoshii` would be false: `te-hoshii`'s prose was authored independently and never carried the
+    build-commentary leak that repair removed. For the same reason the marker is NOT written into
+    `grammar_record_repairs.json` as a `superseded_by`: a repair table is the historical record of
+    what one campaign changed, and a later migration does not get to edit it. A `link` row is the one
+    case that RESOLVES rather than retires — the sentence really does still illustrate the point, at
+    the survivor's address, so the row skips only when the sentence carries the survivor.
 
 Every other campaign's deliberate non-changes live in a report (`grammar_repairs_skipped.md`,
 `translation_repairs_skipped.md`) or in a `DEFERRED` constant inside the apply script, NOT in the
@@ -124,7 +152,7 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 REPO = Path(__file__).resolve().parents[2]
 
 # Floors far below the real counts, so growth never trips them but a vanished input always does.
-MIN_TABLES = 6
+MIN_TABLES = 7
 MIN_ROWS_TOTAL = 1_000
 MIN_SENTENCES = 5_000
 MIN_GRAMMAR = 400
@@ -149,6 +177,8 @@ C_NO_FIELD = "field-absent-from-export"
 C_NO_RECORD = "address-does-not-resolve"
 C_LINK_PRESENT = "link-still-present"
 C_LINK_ABSENT = "link-absent"
+C_MERGED_REDIRECT = "merged-away-redirect-broken"
+C_LEVEL_EVIDENCE = "level-evidence-mismatch"
 
 FIXES = {
     C_FORM_KEY_ABSENT:
@@ -195,6 +225,19 @@ FIXES = {
         "to stdout and to grammar_repairs_skipped.md but is not marked in the table.",
     C_LINK_ABSENT:
         "a `link` row's grammar key is missing from the sentence's `grammar` list.",
+    C_MERGED_REDIRECT:
+        "the row addresses a grammar key that corpus/grammar_deprecated.json says was merged into "
+        "another record, but the redirect does not hold: it names a survivor the export does not "
+        "carry, or it points at itself. The redirect is regenerated by export_corpus.py on every "
+        "run, so this means the export is half-written — re-export before reading anything else here.",
+    C_LEVEL_EVIDENCE:
+        "the record's (level_agreement, level_confidence) pair is neither what the row repaired it "
+        "TO nor what it repaired it FROM, so something after scripts/apply_level_evidence.py "
+        "rewrote the evidence. The pair is not free text: it is produced by "
+        "scripts/ingest/reconcile_levels.py :: assign() and restated in design/schema_v2.md — "
+        "`n_for/consulted` as a string and the same ratio rounded to 3 places as a number, or one "
+        "of the two documented sentinels ('0' with 0.0, 'anchor' with 1.0). Re-run the applier "
+        "against db/corpus.sqlite and re-export, or re-derive the row; never edit one half.",
 }
 
 # No ratchet, no ceiling, no exemption file: this gate is clean and any failure exits 1. The debt it
@@ -229,10 +272,84 @@ def load_export(root: Path) -> tuple[dict, dict, int]:
             f"{MIN_GRAMMAR}")
     by_key = {g["key"]: g for g in grammar}
 
+    # W08. A grammar record merged into another (owner decision A3) leaves the published registry but
+    # keeps its row and its repairs. Rows that address it are not failures and are not passes: they
+    # are RETIRED, and the redirect is what proves it. Loaded here so the check is data-driven and
+    # re-proved on every run, exactly like the `superseded_by` markers.
+    #
+    # The alternative — writing `superseded_by` into grammar_record_repairs.json — was rejected twice
+    # over: a repair table is the historical record of what a campaign changed and a later migration
+    # does not get to edit it, and re-asserting `gp-152`'s repaired text against `te-hoshii` would be
+    # false, because te-hoshii's prose was authored independently and never carried the defect the
+    # repair removed. The redirect retires the claim; it does not transfer it.
+    dpath = root / "corpus" / "grammar_deprecated.json"
+    if dpath.is_file():
+        raw = json.loads(dpath.read_text(encoding="utf-8"))
+        if not isinstance(raw, dict):
+            die(f"{dpath.name} is a {type(raw).__name__}, expected an object {{old slug: survivor slug}}")
+        REDIRECT.clear()
+        REDIRECT.update({k.split(":", 1)[-1]: v.split(":", 1)[-1] for k, v in raw.items()})
+
     course = list((root / "course").rglob("*.json"))
     if len(course) < MIN_COURSE_FILES:
         die(f"course tier has {len(course)} JSON files, floor is {MIN_COURSE_FILES}")
     return by_slug, by_key, len(course)
+
+
+# W10 (owner decision A4). address -> (entity, registry file, record), over the three registries that
+# carry a level at all. Built once in main() and read by handle_level_evidence, so the handler stays
+# 1:1 with its table and no row re-walks the export.
+LEVELLED: dict[str, tuple[str, str, dict]] = {}
+LEVEL_REGISTRIES = ("grammar", "kanji", "vocab")
+
+
+def load_levelled(root: Path) -> dict[str, tuple[str, str, dict]]:
+    """Every levelled record in the export, by published slug, with the file it was found in.
+
+    `level_agreement` / `level_confidence` live at the record root of exactly these three registries
+    and nowhere else in the export. The FILE is carried alongside because a level_evidence row names
+    one: a record that has since moved to another level's file is not the record the campaign put to
+    the consensus panel, and re-asserting the panel's verdict against it would be false.
+    """
+    out: dict[str, tuple[str, str, dict]] = {}
+    for entity in LEVEL_REGISTRIES:
+        for path in sorted((root / "corpus" / entity).glob("*.json")):
+            records = json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(records, list):
+                continue
+            for rec in records:
+                slug = rec.get("slug") if isinstance(rec, dict) else None
+                if isinstance(slug, str):
+                    out.setdefault(slug, (entity, path.name, rec))
+    return out
+
+
+def read_table(path: Path, name: str) -> list[dict]:
+    """The rows of one repair table, whichever of the two shapes it is written in.
+
+    Six tables ARE the list. `level_evidence_repairs.json` is an object that keeps the formula it
+    applied, the classes it sorted its 200 findings into and a `row_count` in the same file as the
+    rows — the campaign's audit trail, which belongs with the rows rather than in a sibling nobody
+    would open — and puts the rows under `rows`. Both shapes are read here so the shape stays a
+    detail of the table instead of a branch in every consumer.
+
+    A `row_count` that disagrees with the rows it counts FAILS: a header that can drift from its own
+    table is a header nobody can cite, and this gate's whole premise is that a campaign's ledger and
+    the shipped data have to be re-provable against each other.
+    """
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(doc, dict):
+        rows = doc.get("rows")
+        declared = doc.get("row_count")
+        if isinstance(declared, int) and isinstance(rows, list) and declared != len(rows):
+            die(f"{name}: the header says row_count={declared}, the table holds {len(rows)} rows")
+    else:
+        rows = doc
+    if not isinstance(rows, list) or not rows:
+        die(f"{name}: table is empty or not a list")
+    if not all(isinstance(r, dict) for r in rows):
+        die(f"{name}: every row must be an object")
+    return rows
 
 
 def course_scalar_values(root: Path) -> set[str]:
@@ -329,6 +446,59 @@ def check_form_meanings(rec, locale, new) -> tuple[str, str]:
 CHAINS: dict[tuple, list[tuple]] = {}
 # table name -> its rows, for resolving `superseded_by`. Built once in main().
 TABLES: dict[str, list[dict]] = {}
+# W08: merged-away grammar key -> survivor key, read from the published redirect by load_export().
+# Keyed on the bare key (`gp-152`), which is how every repair table addresses a grammar record.
+REDIRECT: dict[str, str] = {}
+
+
+def redirect_target(key: str, gram: dict) -> tuple[str, str]:
+    """("", "") when `key` is live; ("", survivor) when its redirect holds; (class, note) when not."""
+    survivor = REDIRECT.get(key)
+    if survivor is None:
+        return "", ""
+    if survivor == key:
+        return C_MERGED_REDIRECT, f"corpus/grammar_deprecated.json points {key!r} at itself"
+    if survivor not in gram:
+        return C_MERGED_REDIRECT, (f"corpus/grammar_deprecated.json redirects {key!r} to {survivor!r}, "
+                                   f"which the exported grammar registry does not carry")
+    return "", survivor
+
+
+def retired_gate(key: str, gram: dict, addr: str) -> tuple | None:
+    """None when `key` still has a published address; otherwise this row's final result.
+
+    Checked, not trusted: the redirect has to resolve against THIS export or the row fails. Same
+    contract as `marker_gate` — a marking that stops being true becomes a failure.
+    """
+    cls, note = redirect_target(key, gram)
+    if cls:
+        return ("fail", cls, addr, note)
+    if not note:
+        return None
+    return ("skip", "", addr,
+            f"retired: merged into {note!r} (corpus/grammar_deprecated.json; the survivor is in the "
+            f"export). The repair landed on a record that keeps its row and loses its published "
+            f"address; the claim is retired, not transferred to {note!r}")
+
+
+def retired_link_gate(key: str, links: list, gram: dict, addr: str) -> tuple | None:
+    """A `link` row whose grammar key was merged away RESOLVES through the redirect.
+
+    Unlike a text repair, the claim survives the merge: the sentence still illustrates the point, at
+    the survivor's address. So the redirect must not merely hold — the sentence has to carry the
+    survivor, or the link really is gone and the row fails.
+    """
+    cls, note = redirect_target(key, gram)
+    if cls:
+        return ("fail", cls, addr, note)
+    if not note:
+        return None
+    if note in links:
+        return ("skip", "", addr, f"resolved through the redirect: {key!r} merged into {note!r} and "
+                                  f"the sentence carries {note!r}")
+    return ("fail", C_LINK_ABSENT, addr,
+            f"{key!r} was merged into {note!r} and the sentence carries neither; "
+            f"sentence.grammar = {links!r:.160}")
 
 
 def row_address(r) -> tuple:
@@ -464,6 +634,11 @@ def handle_grammar_record_repairs(rows, sents, gram, table):
     for i, r in enumerate(rows):
         key, act = r["key"], r["action"]
         g = gram.get(key)
+        if g is None:
+            gate = retired_gate(key, gram, f"{table} row {i}: {key} [{act}]")
+            if gate:
+                out.append(gate)
+                continue
         if act == "unlink":
             addr = f"{table} row {i}: unlink {r['sentence']} -/-> {key}"
             s = sents.get(r["sentence"])
@@ -524,8 +699,12 @@ def handle_grammar_followups(rows, sents, gram, table):
                 continue
             links = s.get("grammar") or []
             if act == "link":
-                out.append(("ok", "", addr, "link present") if key in links
-                           else ("fail", C_LINK_ABSENT, addr, f"sentence.grammar = {links!r:.160}"))
+                if key in links:
+                    out.append(("ok", "", addr, "link present"))
+                else:
+                    out.append(retired_link_gate(key, links, gram, addr)
+                               or ("fail", C_LINK_ABSENT, addr,
+                                   f"sentence.grammar = {links!r:.160}"))
             else:
                 # MARKED SKIP: the applier never writes these. The judgement is still asserted.
                 out.append(("skip", "", addr, "marked no-link; sentence untagged as recorded")
@@ -536,8 +715,9 @@ def handle_grammar_followups(rows, sents, gram, table):
         key = r["key"]
         g = gram.get(key)
         if g is None:
-            out.append(("fail", C_NO_RECORD, f"{table} row {i}: {key}",
-                        "no such grammar point in the export"))
+            gate = retired_gate(key, gram, f"{table} row {i}: {key} [{act}]")
+            out.append(gate or ("fail", C_NO_RECORD, f"{table} row {i}: {key}",
+                                "no such grammar point in the export"))
             continue
         if act == "str":
             col = r["column"]
@@ -568,6 +748,78 @@ def handle_grammar_followups(rows, sents, gram, table):
     return out
 
 
+def _conf_eq(got, want) -> bool:
+    """`level_confidence` is a ratio rounded to 3 places, so compare it as one.
+
+    `0.34` in the export and `0.34` in the table are the same claim; a float `==` that happened to
+    disagree in the 17th decimal would report a repair as lost when nothing had moved. A bool is
+    rejected outright — `True` is not a confidence, and Python would otherwise read it as 1.
+    """
+    if isinstance(got, bool) or not isinstance(got, (int, float)):
+        return False
+    if isinstance(want, bool) or not isinstance(want, (int, float)):
+        return False
+    return round(float(got), 3) == round(float(want), 3)
+
+
+def handle_level_evidence(rows, sents, gram, table):
+    """W10's level-evidence repairs (owner decision A4), replayed against the export.
+
+    A row here is a claim about EVIDENCE rather than about prose. `level_agreement` is the string
+    that says how many of the consulted community lists placed the record at the level it is taught
+    at, and `level_confidence` is that same ratio as a number; §1.5 makes the pair the whole of what
+    a level tag is allowed to assert, because there is no official JLPT list to appeal to. The
+    campaign found 200 records where the two halves disagreed with the formula that produced them
+    and restated the string (or the documented sentinel).
+
+    Both halves are asserted TOGETHER. A record whose string reads `1/1` while its number reads 0.34
+    satisfies either half-check alone and is still self-contradictory, which is the exact defect the
+    campaign existed to remove — so a run that checked one field would certify the thing it was
+    written to catch.
+
+    The `entity`, `file` and `level` a row names are asserted too. They are not decoration: they
+    identify WHICH panel the ratio came from, and a record that has since moved level (or moved to
+    another registry file) is a different record from the one that was put to it.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        address = r["address"]
+        addr = f"{table} row {i}: {address}.level_agreement+level_confidence"
+        found = LEVELLED.get(address)
+        if found is None:
+            out.append(("fail", C_NO_RECORD, addr,
+                        f"no levelled record in the export has the address {address!r} "
+                        f"(the row files it under {r.get('entity')}/{r.get('file')})"))
+            continue
+        entity, fname, rec = found
+        if entity != r.get("entity") or fname != r.get("file"):
+            out.append(("fail", C_NO_RECORD, addr,
+                        f"the row addresses {r.get('entity')}/{r.get('file')}, but {address} is "
+                        f"published in corpus/{entity}/{fname} — the record moved, so the panel "
+                        f"this row quotes is not the panel that levelled it"))
+            continue
+        if rec.get("level") != r.get("level"):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"the row's evidence is for level {r.get('level')!r}; the export teaches "
+                        f"this record at {rec.get('level')!r}"))
+            continue
+        got_a, got_c = rec.get("level_agreement"), rec.get("level_confidence")
+        if got_a is None or got_c is None:
+            out.append(("fail", C_NO_FIELD, addr,
+                        f"level_agreement={got_a!r}, level_confidence={got_c!r} — the exporter is "
+                        f"not projecting the evidence pair for this record at all"))
+            continue
+        if got_a == r["new_agreement"] and _conf_eq(got_c, r["new_confidence"]):
+            out.append(("ok", "", addr, "exact"))
+            continue
+        reverted = got_a == r["old_agreement"] and _conf_eq(got_c, r["old_confidence"])
+        out.append(("fail", C_NOT_APPLIED if reverted else C_LEVEL_EVIDENCE, addr,
+                    f"export carries ({got_a!r}, {got_c!r}); the row repaired "
+                    f"({r['old_agreement']!r}, {r['old_confidence']!r}) -> "
+                    f"({r['new_agreement']!r}, {r['new_confidence']!r})"))
+    return out
+
+
 # name -> (handler, required keys per row)
 REGISTRY = {
     "sentence_text_repairs.json": handle_sentence_text_repairs,
@@ -576,6 +828,7 @@ REGISTRY = {
     "translation_followups.json": handle_translation_followups,
     "grammar_record_repairs.json": handle_grammar_record_repairs,
     "grammar_followups.json": handle_grammar_followups,
+    "level_evidence_repairs.json": handle_level_evidence,
 }
 
 
@@ -610,12 +863,14 @@ def main() -> int:
     print(f"export: {len(sents)} sentences, {len(gram)} grammar points, {ncourse} course files "
           f"(root {root})")
 
-    tables: dict[str, list[dict]] = {}
-    for name in present:
-        rows = json.loads((rdir / name).read_text(encoding="utf-8"))
-        if not isinstance(rows, list) or not rows:
-            die(f"{name}: table is empty or not a list")
-        tables[name] = rows
+    LEVELLED.update(load_levelled(root))
+    print(f"        {len(LEVELLED)} levelled records across "
+          f"corpus/{{{','.join(LEVEL_REGISTRIES)}}} (level-evidence replay)")
+    if not LEVELLED:
+        die(f"no levelled record found under {root}/corpus/{{{','.join(LEVEL_REGISTRIES)}}} — the "
+            f"level-evidence table cannot be replayed against a registry that is not there")
+
+    tables: dict[str, list[dict]] = {name: read_table(rdir / name, name) for name in present}
     total_rows = sum(len(v) for v in tables.values())
     if total_rows < MIN_ROWS_TOTAL:
         die(f"{total_rows} repair rows across {len(tables)} tables, floor is {MIN_ROWS_TOTAL}")
@@ -708,7 +963,7 @@ def main() -> int:
         return 1
 
     print(f"\nRESULT: PASS — {grand_ok} rows replayed clean, {grand_skip} checked skips "
-          f"(no-link + superseded_by), 0 FAIL")
+          f"(no-link + superseded_by + merged-away), 0 FAIL")
     return 0
 
 

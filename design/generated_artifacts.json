@@ -2,6 +2,10 @@
   "why": "Published *.json under course/ and corpus/ that contracts/manifest.json deliberately does NOT catalogue as an entity, each with the reason it is not schema'd. validate_course_chain.py fails on any published JSON that is neither matched by an entity glob nor listed here, and an entry here that matches no file on disk is ALSO a failure — so this list cannot rot into a blanket amnesty. Paths are repo-relative, forward slashes, no globs. Adding a real learner-facing entity here instead of to contracts/manifest.json is the abuse this file is watched for: a derived projection, a review queue or a quarantine log qualifies; a registry does not.",
   "files": [
     {
+      "path": "corpus/grammar_deprecated.json",
+      "reason": "Redirect map {old grammar slug: survivor slug} written by export_corpus.py for the records that scripts/migrate_grammar_merge.py merged into another (owner decision A3). A tombstone index, not a record set: it publishes no content, only the address a retired identity now resolves to. It sits beside corpus/grammar/ rather than inside it because the grammar entity glob is corpus/grammar/*.json and check_catalogue refuses a non-list sidecar in a registry glob."
+    },
+    {
       "path": "course/outline.json",
       "reason": "Flat derived projection of the whole course tree for navigation UI. Every field in it is recomputed from the lesson leaves and gated for exact equality by validate_course_chain.py itself, so a schema would restate a shape that is already pinned by derivation."
     },

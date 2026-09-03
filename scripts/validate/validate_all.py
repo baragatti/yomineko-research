@@ -69,6 +69,13 @@ SUITE = [
                                                  # deprecated audit_lesson_hygiene.py, which read a
                                                  # stale staging dir — F5/STRUCT-08)
     ("validate_provenance_json.py", "code"),     # layer/source/ai_generated/needs_review semantics
+    # W05: the >=3-sentences-per-word / >=5-per-grammar claim, over the EXPORT, as a gate. It was
+    # two advisory lines in completeness_audit.py over db/corpus.sqlite for four phases; those two
+    # lines now point here. Per-(level, kind) ratchet — growth fails.
+    ("validate_sentence_coverage.py", "code"),   # taught items are exemplified (ratchet)
+    # W06: the approval ledger and the export agree about who approved what. Empty ledger passes;
+    # a review_status no live entry justifies does not.
+    ("validate_review_ledger.py", "code"),       # approvals chain, anchors live, no unjustified stamp
     # W02 (G7): replays all six tracked repair tables against the export. Clean, no ratchet; the 7
     # superseded rows carry `superseded_by` markers this validator re-proves on every run.
     ("validate_repairs_applied.py", "code"),     # every repair row's `new` is what the export carries

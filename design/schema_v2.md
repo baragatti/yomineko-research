@@ -17,7 +17,7 @@
 | 4 | **`vocab_sense` table** (pt-BR meaning tied to a specific JMdict sense). | §1.3 separate fact/explanation; JMdict words have multiple senses, each needing its own gloss + POS. |
 | 5 | **Sentence provenance split into THREE axes:** `jp_source`, `pt_source`, `audio_source` (+ `pt_validated_against`, `translation_confidence`). | R3 headline: only 1.8% of JP sentences have PT. We **select the Japanese** (Layer A) but **generate the pt-BR** (Layer B) — the translation's provenance is independent of the sentence's, and audio is mostly TTS (2.5% Tatoeba). The single `source` field of §5.4 can't express this. |
 | 6 | **`token` stores BOTH split modes** (`split_mode` A/C) with `parent_token_id` linking mode-A subunits to their mode-C word. | §3.6 wants A+C; the "one word built from these parts" teaching needs the parent link. |
-| 7 | **Level reconciliation fields standardized**: `level`, `level_confidence` (0–1), `level_agreement` (`"2/3"`), `level_sources[]` on every leveled entity. | §1.5 consensus-based leveling across ≥3 lists. |
+| 7 | **Level reconciliation fields standardized**: `level`, `level_confidence` (0–1), `level_agreement` (`"2/3"`), `level_sources[]` on every leveled entity. The arithmetic tying the three together, and the two sentinels that replace the ratio, are spelled out in the [W10 addendum](#w10-addendum-2026-09-02--level-evidence-the-confidence-formula-written-down). | §1.5 consensus-based leveling across ≥3 lists. |
 | 8 | **Explicit link tables** for every graph edge (sentence↔vocab/kanji/grammar with per-link notes, kanji-component graph, grammar contrasts, group membership, lesson/exercise refs). | §1.7 graph + the by-ID rule (§5.5 hard rule: courseware holds IDs only). |
 | 9 | **`pitch_accent` modeled per reading** (array of accent positions), not a scalar. | Words can have multiple accepted accents; speaking focus (§3.7). |
 
@@ -432,3 +432,54 @@ distinction is lost on the way out.
 The full shape rationale, the exporter rule, the locale scope table it belongs to, and the
 `validate_locale_parity.py` spec are in [`i18n.md`](i18n.md) (W40 sections). This entry exists so the data
 model catalogue is not silently behind the contract.
+
+## W10 addendum (2026-09-02) — level evidence: the confidence formula, written down
+
+`level_confidence` has always been *derived* from `level_agreement` — `contracts/common.schema.json`
+(`LevelTag`) says so, and says it is "never asserted on its own". What it never said was the arithmetic,
+so when the two disagreed nobody could tell which one was the typo. It lived in one function,
+`scripts/ingest/reconcile_levels.py :: assign()` (P2, policy PLAN_REVIEW D1), and this is it:
+
+```python
+level      = the EARLIEST level any consulted list assigns   # teach earlier, spec §1.6 ladder
+n_for      = |{ list : list places the item at `level` }|     # the AGREEING lists
+consulted  = the size of the panel the campaign put the item to
+level_agreement  = f"{n_for}/{consulted}"                     # e.g. "4/4", "1/3"
+level_confidence = round(n_for / consulted, 3)                # e.g. 1.0, 0.333
+```
+
+Three consequences, all of which the corpus had violated somewhere:
+
+1. **The numerator is a tally of `level_sources`.** It counts the entries whose value is *this record's*
+   level. A ratio that agrees with nothing is not evidence; `validate_level_consensus.py` check (i)/L9
+   now gates it.
+2. **The denominator is the panel, not the survivors.** A list that has no opinion on an item was still
+   consulted, and dropping it from the denominator inflates the fraction. This is why `level_sources`
+   may legitimately hold fewer entries than the denominator names — 1,596 N3 vocab record
+   `{"bluskyo": "n3"}` beside `"1/3"` because two of the three N3 lineages are silent on that word, and
+   162 N2/N1 kanji record one list beside `"1/4"`. It is also the *only* honest reading of the 132 N3
+   grammar records that stored `"1/1"` beside `0.34`: `0.34` is one lineage in three, and reading the
+   string instead would have raised the weakest evidence in the corpus to a claim of certainty. The
+   string was the defect (owner decision A4, W10).
+3. **Two sentinels replace the ratio when no list was consulted at all**, and they are not
+   interchangeable — collapsing them "would report editorial certainty as a guess":
+
+   | `level_agreement` | means | `level_confidence` | `level_sources` must carry |
+   |---|---|---|---|
+   | `"0"` | author-added; no consensus list contains the item; we are guessing | **0.0** | `lists` (why it is here) and/or `note` / `correction` |
+   | `"anchor"` | deliberate course placement; we are certain; there is simply no list to cite | **1.0** | `anchor` (a stable id, e.g. `jlpt_anchor:n4`) and/or `note` |
+
+   A record whose *taught* level is an editorial override keeps the list votes in `level_sources` as
+   history, but its agreement is `anchor` — not the tally for the level the lists preferred. 67 kanji
+   moved onto the sentinel in W10 for exactly this reason.
+
+**Rounding.** `level_confidence` is stored rounded, and one third reached the corpus as both `0.333`
+(the formula's own `round(n/d, 3)`) and `0.34` (two decimals, typed by the N3/N2/N1 campaigns). They are
+one number; the validator compares confidences at `TOLERANCE = 0.02` and reports the cosmetic split as
+advisory rather than gating on it. Normalising the 6,178 records that carry `0.34` is a cleanup nobody
+has asked for; if it ever happens it must not move any value by more than the tolerance.
+
+**Not settled here.** Whether N3/N2/N1 may keep resting on a single lineage (spec §1.5 mandates ≥3), and
+whether the collapsed `jlpt-lists` key on 4,446 N2/N1 vocab is a list name at all, are gap **G5** in
+`research/reports/readiness/content_coverage_levels.md`. This addendum fixes what the numbers *mean*, not
+how many lists produced them.

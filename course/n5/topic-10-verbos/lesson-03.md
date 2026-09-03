@@ -15,7 +15,7 @@
 ---
 
 ### Ir e vir: verbos de deslocamento e o irregular くる
-Agora que você já sabe montar verbos no gp polido, vamos sair de casa. Esta lição reúne os verbos de deslocamento (ir, voltar, andar, nadar) e de atividade (brincar, sentar, morar) e apresenta uma estrela à parte:来る, um dos dois únicos verbos irregulares do japonês.
+Agora que você já sabe montar verbos no da-desu polido, vamos sair de casa. Esta lição reúne os verbos de deslocamento (ir, voltar, andar, nadar) e de atividade (brincar, sentar, morar) e apresenta uma estrela à parte:来る, um dos dois únicos verbos irregulares do japonês.
 
 #### O time do movimento
 Comece pelos dois pilares.行く é "ir" (afastar-se de você) e 帰る é "voltar (para casa)". A partícula de destino você verá a fundo depois; por ora, repare que o lugar costuma vir antes do verbo.

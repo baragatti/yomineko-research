@@ -4,7 +4,7 @@ _Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
-| 7 | Frases básicas: o tópico は e o copula です | identificação | 60 | 0 | 12 |
+| 7 | Frases básicas: o tópico は e o copula です | identificação | 60 | 0 | 11 |
 | 8 | Perguntas e demonstrativos | perguntar | 55 | 0 | 18 |
 | 9 | Números, horas e datas | tempo/dinheiro | 60 | 8 | 2 |
 | 10 | Verbos: dicionário + ます; partículas を e が | ações | 72 | 8 | 8 |
@@ -24,7 +24,7 @@ _Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 7. Frases básicas: o tópico は e o copula です
 - **kanji** (0): —
 - **vocab** (60, amostra): お巡りさん、お金、会社、円、医者、外国人、女、椅子、歌、男、絵、英語、貴方、鍵、音楽
-- **gramática** (12): da-desu, gp, wa-topic-marker, gp-2, gp-3, gp-4, gp-33, janai-dewa-nai, ka, mo, no, o-go
+- **gramática** (11): da-desu, wa-topic-marker, gp-2, gp-3, gp-4, gp-33, janai-dewa-nai, ka, mo, no, o-go
 
 ### 8. Perguntas e demonstrativos
 - **kanji** (0): —

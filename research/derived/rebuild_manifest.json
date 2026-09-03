@@ -2,8 +2,8 @@
  "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
  "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
  "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
- "step_count": 111,
- "enabled_count": 75,
+ "step_count": 113,
+ "enabled_count": 77,
  "steps": [
   {
    "n": 1,
@@ -1735,6 +1735,50 @@
     "sentence_vocab"
    ],
    "note": "re-run last: the token-level repairs above move token.vocab_id, and this is the single writer that restores all three linking rules"
+  },
+  {
+   "n": 112,
+   "phase": "repair",
+   "quick_family": "grammar",
+   "script": "scripts/apply_level_evidence.py",
+   "args": [
+    "--db-only"
+   ],
+   "enabled": true,
+   "first_commit": null,
+   "first_commit_date": "2026-09-02",
+   "writes": [
+    "grammar_point",
+    "kanji",
+    "vocab"
+   ],
+   "note": "W10 / owner decision A4: level_agreement repairs from the tracked table research/derived/repairs/level_evidence_repairs.json. --db-only because the rebuild exports the tree itself afterwards; run without it by hand and the script also patches the committed JSON. Placed last: nothing downstream reads level_agreement, and the level fields it touches are written by steps far earlier in the chain"
+  },
+  {
+   "n": 113,
+   "phase": "repair",
+   "quick_family": "grammar",
+   "script": "scripts/migrate_grammar_merge.py",
+   "args": [
+    "--apply"
+   ],
+   "enabled": true,
+   "first_commit": null,
+   "first_commit_date": "2026-09-02",
+   "writes": [
+    "grammar_point",
+    "localized_text",
+    "sentence",
+    "sentence_grammar",
+    "lesson",
+    "lesson_unlocks",
+    "lesson_introduces",
+    "lesson_needs",
+    "family_member",
+    "exercise_item",
+    "grammar_related"
+   ],
+   "note": "W08 / owner decision A3: merges the two duplicate-identity grammar points (gram:gp -> gram:da-desu, gram:gp-152 -> gram:te-hoshii) with no content loss. Runs LAST, and has to: it consumes the finished graph, and every earlier step that writes grammar_point, sentence_grammar, family_member or a lesson body would otherwise re-introduce the loser's edges after the merge. Idempotent -- a second run reads grammar_point.deprecated_by and does nothing. It also rewrites the authoring source under research/derived/lessons/, which the rebuild does not re-read, so on a rebuild that part is a no-op re-proof rather than a change. Its EXACT preconditions (MERGES[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of merging blind"
   }
  ],
  "excluded": {

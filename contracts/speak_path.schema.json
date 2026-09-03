@@ -29,6 +29,66 @@
     "ordering": {
       "type": "string"
     },
+    "review_status": {
+      "type": "array",
+      "description": "Human review verdicts that are still LIVE for this record: each one's content hash still matches the text it approved. Written by the exporter from research/derived/review_ledger.json, never by hand — an entry whose text was rewritten afterwards is stale and exports nothing, and a review_status the ledger does not justify is a hard failure (scripts/validate/validate_review_ledger.py). Absent on a record nobody has reviewed, which is why it is never required. See design/review_ledger.md.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The reviewed field, or \"*\" for the whole record."
+          },
+          "locale": {
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/Locale"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "The locale reviewed; null for a locale-agnostic verdict."
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "approved",
+              "rejected"
+            ],
+            "description": "The verdict a named reviewer recorded. Vocabulary owner: design — design/review_ledger.md. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/review_ledger.md"
+            }
+          },
+          "reviewed_by": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Who reviewed it. An anonymous approval is not a review, and the correction-rate metric is per person."
+          },
+          "approved_at": {
+            "type": "string",
+            "minLength": 1,
+            "description": "When. Provenance and ordering only — approvals do not expire (APP_PLAN D4): a rewrite invalidates them, the calendar does not."
+          },
+          "content_hash": {
+            "type": "string",
+            "pattern": "^(sha256:)?[0-9a-fA-F]{8,64}$",
+            "description": "The sha256 of exactly what was reviewed, so a reader can tell WHICH text was approved without the ledger."
+          }
+        },
+        "required": [
+          "field",
+          "status",
+          "reviewed_by",
+          "approved_at",
+          "content_hash"
+        ],
+        "additionalProperties": false
+      }
+    },
     "schema_version": {
       "type": "string",
       "pattern": "^\\d+\\.\\d+$",

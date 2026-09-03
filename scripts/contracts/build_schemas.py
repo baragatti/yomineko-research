@@ -70,11 +70,17 @@ COMMON = "common.schema.json"
 #                      would narrow it to `{}`. They live one directory down, under contracts/user_state/,
 #                      so that contracts/ stays a flat list of the things that ship with the data.
 #                      Specified by design/user_state.md.
+#   LEDGER           — the W06 approval ledger (design/review_ledger.md). It is committed and it is
+#                      CORRECTLY EMPTY until a teacher signs something off, so there is nothing to
+#                      measure and a regeneration would narrow it to `{}` exactly as it would a
+#                      runtime entity. Unlike those it lives in contracts/ flat, because it ships
+#                      with the data rather than being minted per learner.
 HANDWRITTEN_MAPS = {"capability_lesson_map", "kana_family"}
 RUNTIME_DIR = "user_state"
 RUNTIME = {"card", "exam_attempt", "feature_state", "lesson_progress", "review_log",
            "skill_state", "user"}
-HANDWRITTEN = HANDWRITTEN_MAPS | RUNTIME
+LEDGER = {"review_ledger"}
+HANDWRITTEN = HANDWRITTEN_MAPS | RUNTIME | LEDGER
 
 
 def schema_path(entity: str) -> Path:
@@ -146,6 +152,57 @@ def design(key: str, source: str, doc: str, prefix: str = "") -> dict:
 def plain(doc: str) -> dict:
     """No vocabulary exists for this field, so the contract does not invent one."""
     return {"type": "string", "description": doc}
+
+
+# --- properties DECLARED on every generated entity, measured on none of them ---------------------
+# W06. `review_status` is the exporter's stamp of a LIVE approval out of
+# research/derived/review_ledger.json (design/review_ledger.md). It is absent from every record until
+# a teacher approves one, and every generated record root is `additionalProperties: false` — so a
+# contract that only ever measured the data would make the FIRST approval in the project's history a
+# build failure, which is the one moment the gate must not fire. Declaring it is the point: the shape
+# is a decision, not an observation, and it is never `required`.
+#
+# `needs_review` beside it stays MEASURED, because the exporter writes it on every record of the
+# families that carry it (W05 added vocab `senses[]`, kanji `readings[]` and `family`), and REF_BY_NAME
+# already points every occurrence of the name at the one definition of the Layer-C flag in
+# common.schema.json — so a new place carrying the flag inherits its meaning instead of restating it.
+def review_status_property() -> dict:
+    return {
+        "type": "array",
+        "description": "Human review verdicts that are still LIVE for this record: each one's content "
+                       "hash still matches the text it approved. Written by the exporter from "
+                       "research/derived/review_ledger.json, never by hand — an entry whose text was "
+                       "rewritten afterwards is stale and exports nothing, and a review_status the "
+                       "ledger does not justify is a hard failure "
+                       "(scripts/validate/validate_review_ledger.py). Absent on a record nobody has "
+                       "reviewed, which is why it is never required. See design/review_ledger.md.",
+        "items": {
+            "type": "object",
+            "properties": {
+                "field": {"type": "string", "minLength": 1,
+                          "description": "The reviewed field, or \"*\" for the whole record."},
+                "locale": {"anyOf": [{"$ref": f"{COMMON}#/$defs/Locale"}, {"type": "null"}],
+                           "description": "The locale reviewed; null for a locale-agnostic verdict."},
+                "status": vocabulary(["approved", "rejected"], "design", "design/review_ledger.md",
+                                     "The verdict a named reviewer recorded."),
+                "reviewed_by": {"type": "string", "minLength": 1,
+                                "description": "Who reviewed it. An anonymous approval is not a "
+                                               "review, and the correction-rate metric is per person."},
+                "approved_at": {"type": "string", "minLength": 1,
+                                "description": "When. Provenance and ordering only — approvals do not "
+                                               "expire (APP_PLAN D4): a rewrite invalidates them, the "
+                                               "calendar does not."},
+                "content_hash": {"type": "string", "pattern": "^(sha256:)?[0-9a-fA-F]{8,64}$",
+                                 "description": "The sha256 of exactly what was reviewed, so a reader "
+                                                "can tell WHICH text was approved without the ledger."},
+            },
+            "required": ["field", "status", "reviewed_by", "approved_at", "content_hash"],
+            "additionalProperties": False,
+        },
+    }
+
+
+ALWAYS_PROPERTIES = {"review_status": review_status_property}
 
 
 # --- semantics: what a field NAME means wherever it appears -------------------------------------
@@ -735,6 +792,10 @@ def main() -> int:
             props[k] = emit(child, k, k, entity, v["records"], 0)
             if child.info and child.info.get("required") and not all_null(child.info):
                 required.append(k)
+        # Declared, not measured, and never required — see ALWAYS_PROPERTIES above.
+        for k, make in sorted(ALWAYS_PROPERTIES.items()):
+            props.setdefault(k, make())
+        props = dict(sorted(props.items()))
 
         # Which field holds this record's OWN address? `id` when it is a prefixed string — on
         # exercise_conjugation the `slug` is the vocab the drill is about, a foreign key, and treating
@@ -781,7 +842,8 @@ def main() -> int:
         extra = f", {b} shape branches" if b else ""
         print(f"  {e:22} {p:>3} properties, {r:>3} required{extra}")
     print(f"\n{len(written)} schemas -> contracts/  ({len(HANDWRITTEN)} hand-authored, untouched: "
-          f"{', '.join(sorted(HANDWRITTEN_MAPS))} + {len(RUNTIME)} runtime under contracts/{RUNTIME_DIR}/)")
+          f"{', '.join(sorted(HANDWRITTEN_MAPS | LEDGER))} + {len(RUNTIME)} runtime under "
+          f"contracts/{RUNTIME_DIR}/)")
     return 0
 
 

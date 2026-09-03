@@ -5948,100 +5948,6 @@
     ]
   },
   {
-    "id": 212,
-    "slug": "gram:gp-152",
-    "key": "gp-152",
-    "label": {
-      "pt-BR": "〜てほしい (querer que alguém faça)",
-      "en": "〜てほしい (to want someone to do)"
-    },
-    "forms": [
-      {
-        "form": "てほしい",
-        "meaning": {
-          "pt-BR": "querer que alguém faça (algo)",
-          "en": "to want someone to do (something)"
-        }
-      }
-    ],
-    "structure_pattern": "～てほしい",
-    "register": [
-      "plain"
-    ],
-    "caution": null,
-    "level": "n4",
-    "level_confidence": 1.0,
-    "level_agreement": "1/1",
-    "level_sources": {
-      "tanos": "n4"
-    },
-    "explanation": {
-      "pt-BR": "〜てほしい expressa o desejo de que OUTRA pessoa faça (ou não faça) algo. É diferente de 〜たい (\"eu quero fazer\"): aqui quem age é um terceiro, e você é quem deseja esse comportamento (来てほしい = \"quero que você venha\"). ほしい significa \"querer (algo)\" e, combinado com a forma て, passa a significar \"querer que se faça algo\".",
-      "en": "〜てほしい expresses the wish that ANOTHER person do (or not do) something. It is different from 〜たい (\"I want to do\"): here a third party is the one acting, and you are the one who wishes for that behavior (来てほしい = \"I want you to come\"). ほしい means \"to want (something)\" and, combined with the て form, comes to mean \"to want someone to do something.\""
-    },
-    "formation": {
-      "pt-BR": "Verbo na forma て + ほしい. A pessoa de quem você deseja a ação leva に (ou às vezes は em frases negativas/contrastivas): 田中さんに手伝ってほしい = \"quero que o Tanaka me ajude\". Para \"querer que NÃO faça\", use a forma negativa 〜ないで + ほしい: 行かないでほしい = \"quero que você não vá\". Como ほしい é adjetivo-い, conjuga como tal: ほしくない, ほしかった.",
-      "en": "Verb in て-form + ほしい. The person from whom you want the action takes に (or sometimes は in negative/contrastive sentences): 田中さんに手伝ってほしい = \"I want Tanaka to help me.\" For \"want someone NOT to do,\" use the negative form 〜ないで + ほしい: 行かないでほしい = \"I want you not to go.\" Since ほしい is an い-adjective, it conjugates as such: ほしくない, ほしかった."
-    },
-    "formation_steps": {
-      "variants": [
-        {
-          "base": "verb",
-          "steps": [
-            {
-              "base": "verb",
-              "op": "to-te-form"
-            },
-            {
-              "op": "append",
-              "token": "ほしい"
-            }
-          ],
-          "example": "書いてほしい"
-        },
-        {
-          "base": "verb",
-          "steps": [
-            {
-              "base": "verb",
-              "op": "to-nai-stem"
-            },
-            {
-              "op": "append",
-              "token": "いでほしい"
-            }
-          ],
-          "example": "行かないでほしい"
-        }
-      ]
-    },
-    "nuance_tags": [
-      "desire",
-      "request"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "casual-friends"
-    ],
-    "steps_unavailable": null,
-    "nuance": {
-      "pt-BR": "A grande armadilha para brasileiros é confundir com 〜たい: \"eu quero ir\" = 行きたい, mas \"quero que ele vá\" = 行ってほしい. Quem deve agir vem com に, não com を. ほしい descreve um desejo seu, então o sujeito costuma ser a 1ª pessoa; para o desejo de terceiros use 〜てほしがっている. Por ser bem direto, em situação formal prefira pedidos mais polidos como 〜ていただけませんか.",
-      "en": "The big trap for Brazilians is confusing it with 〜たい: 'I want to go' = 行きたい, but 'I want him to go' = 行ってほしい. The one who should act takes に, not を. ほしい describes your own desire, so the subject is usually the 1st person; for a third party's desire, use 〜てほしがっている. Being quite direct, in formal situations prefer more polite requests like 〜ていただけませんか."
-    },
-    "related": [],
-    "refs": {
-      "label_en": "てほしい",
-      "also_known_as": [],
-      "level_sources": {
-        "tanos": "n4"
-      }
-    },
-    "needs_review": true,
-    "families": [
-      "grp:gram-n4-volitivo"
-    ]
-  },
-  {
     "id": 213,
     "slug": "gram:gp-153",
     "key": "gp-153",
@@ -16499,15 +16405,17 @@
     "structure_pattern": "てほしい",
     "register": [
       "casual",
-      "colloquial"
+      "colloquial",
+      "plain"
     ],
     "caution": "rough",
     "level": "n4",
     "level_confidence": 1.0,
-    "level_agreement": "2/2",
+    "level_agreement": "3/3",
     "level_sources": {
       "jlptsensei": "n4",
-      "bunpro": "n4"
+      "bunpro": "n4",
+      "tanos": "n4"
     },
     "explanation": {
       "pt-BR": "〜てほしい expressa o desejo de que outra pessoa faça (ou não faça) alguma ação. É diferente de 〜たい ('eu quero fazer algo eu mesmo'): aqui quem deseja é você, mas quem realiza a ação é outra pessoa. Ex.: 来てほしい = 'quero que você venha'; 手伝ってほしい = 'quero que alguém me ajude'.",
@@ -16560,6 +16468,20 @@
             }
           ],
           "example": "来てほしかった"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-nai-stem"
+            },
+            {
+              "op": "append",
+              "token": "いでほしい"
+            }
+          ],
+          "example": "行かないでほしい"
         }
       ]
     },
@@ -16580,16 +16502,19 @@
     "refs": {
       "label_en": "te hoshii",
       "also_known_as": [
-        "te hoshii"
+        "te hoshii",
+        "てほしい"
       ],
       "level_sources": {
         "jlptsensei": "n4",
-        "bunpro": "n4"
+        "bunpro": "n4",
+        "tanos": "n4"
       }
     },
     "needs_review": true,
     "families": [
-      "grp:gram-n4-condicionais"
+      "grp:gram-n4-condicionais",
+      "grp:gram-n4-volitivo"
     ]
   },
   {

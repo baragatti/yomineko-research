@@ -23,6 +23,14 @@ export interface Capability {
   id: StableId;
   level: Level;
   name: LocaleText;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
 }
 
 /** Which capabilities each lesson contributes to. A keyed collection rather than a record list: the lesson id IS the key, so there is no id field inside the value. Hand-authored — a map's contract is about its key space and value shape, which the record-shape generator has no idiom for. */
@@ -41,6 +49,14 @@ export interface Conjugation {
   kana: string;
   kind: "adjective" | "verb";
   level: Level;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   slug: StableId;
   vocab_id: number;
 }
@@ -51,6 +67,14 @@ export interface Course {
   level: Level;
   order: number;
   overview: LocaleText;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   title: LocaleText;
   topics: {
       id?: StableId;
@@ -80,6 +104,14 @@ export interface CourseManifest {
     }[];
   enums_ref: string;
   generated: string;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   schema_version: string;
 }
 
@@ -98,6 +130,14 @@ export interface ExamItem {
   pieces?: string[];
   question?: string;
   reading?: string;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   script?: {
       speaker?: "F1" | "F2" | "M1" | "M2" | "N";
       text?: string;
@@ -127,6 +167,14 @@ export interface ExerciseConjugation {
   level: Level;
   needs_review: boolean;
   prompt: string;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   romaji: string;
   slug: StableId;
   source: string;
@@ -144,6 +192,14 @@ export interface ExerciseRole {
   needs_review: boolean;
   particle: string | null;
   prompt: LocaleText;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   role: "direction" | "from" | "modifier" | "object" | "predicate" | "subject" | "topic";
   sentence: string;
   source: string;
@@ -164,6 +220,15 @@ export interface Family {
       note?: LocaleText | null;
       ref?: string;
       slug?: StableId;
+    }[];
+  needs_review: boolean;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
     }[];
   slug: StableId;
   spans_levels: Level[];
@@ -204,6 +269,14 @@ export interface Grammar {
   };
   register: "casual" | "colloquial" | "dated" | "feminine" | "formal" | "honorific" | "humble" | "literary" | "masculine" | "neutral" | "plain" | "polite" | "slang" | "written"[];
   related: string[];
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   slug: StableId;
   steps_unavailable: string | null;
   structure_pattern: string;
@@ -216,6 +289,14 @@ export interface Kana {
   family: string;
   family_label: LocaleText;
   id: StableId;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   romaji: string;
   type: "base" | "dakuten" | "handakuten" | "long-vowel" | "sokuon" | "yoon";
 }
@@ -254,10 +335,19 @@ export interface Kanji {
       example_vocab?: string[];
       example_vocab_ids?: number[] | null;
       introduced_at_level?: Level | null;
+      needs_review?: boolean;
       note?: LocaleText | null;
       okurigana?: string | null;
       reading?: string;
       type?: "kun" | "nanori" | "on";
+    }[];
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
     }[];
   slug: StableId;
   strokes: number;
@@ -300,6 +390,14 @@ export interface Lesson {
   needs_review: boolean;
   objectives: LocaleText[];
   order: number;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   schema_version: string;
   sentence_refs: string[];
   srs: {
@@ -326,6 +424,14 @@ export interface Reading {
   length_band: "long" | "paragraph" | "short";
   level: Level;
   needs_review: boolean;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   slug: StableId;
   source_slugs: string[];
   title: LocaleText;
@@ -340,6 +446,23 @@ export interface Reading {
     kanji: string[];
     vocab: string[];
   };
+}
+
+/** The approval ledger: every human review verdict recorded against the corpus, one entry per (record, field, locale), anchored to the sha256 of the exact text the reviewer read. HAND-AUTHORED. It is not measured from the data and build_schemas.py will never write it, because an empty ledger is the correct starting state and a generator pointed at zero entries would narrow the contract to {}. The addressing rules and the decision behind them are in design/review_ledger.md (APP_PLAN D4); the reader/writer is scripts/review_ledger.py. */
+export interface ReviewLedger {
+  schema_version?: string;
+  note?: string;
+  entries: {
+      slug: StableId;
+      entity?: string;
+      field: string;
+      locale?: string;
+      content_hash: string;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      note?: string;
+    }[];
 }
 
 /** One fully dissected example sentence — the unit the whole corpus is built on. A sentence lives here ONCE and everything else references it by id. */
@@ -371,6 +494,14 @@ export interface Sentence {
     tier: string;
     translation_confidence: number;
   };
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   romaji: string;
   slug: StableId;
   structure_explanation: LocaleText;
@@ -404,6 +535,14 @@ export interface SpeakPath {
   layer: Layer;
   needs_review: boolean;
   ordering: string;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   schema_version: string;
   shortfall: unknown[];
   spec: string;
@@ -471,6 +610,14 @@ export interface SpeakUnit {
       strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";
     }[];
   real_phrases: number;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   say_now: string[];
   schema_version: string;
   shadowing: string[];
@@ -497,6 +644,14 @@ export interface StrokeKana {
   char: string;
   kind: "hiragana" | "katakana";
   license: string;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   shadows: unknown[][];
   "shadows[]"?: Record<string, unknown>;
   source: string;
@@ -508,6 +663,14 @@ export interface StrokeKana {
 export interface StrokeLines {
   character: string;
   license: string;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   source: string;
   strokes: string[];
 }
@@ -516,6 +679,14 @@ export interface StrokeLines {
 export interface StrokeOrder {
   character: string;
   license: string;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   source: string;
   steps: string[];
   total_strokes: number;
@@ -541,6 +712,14 @@ export interface Topic {
   level: Level;
   objectives: LocaleText[];
   order: number;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   theme: string;
   title: LocaleText;
 }
@@ -726,11 +905,20 @@ export interface Vocab {
       reading?: string;
     }[];
   register: "archaic" | "colloquial" | "familiar" | "honorific" | "humble" | "polite" | "slang" | "vulgar"[] | null;
+  review_status?: {
+      field: string;
+      locale?: string | null;
+      status: "approved" | "rejected";
+      reviewed_by: string;
+      approved_at: string;
+      content_hash: string;
+    }[];
   romaji: string;
   senses: {
       field?: unknown[];
       gloss?: LocaleTextList;
       misc?: string[];
+      needs_review?: boolean;
       order?: number;
       pos?: string[];
       register?: "archaic" | "colloquial" | "familiar" | "honorific" | "humble" | "polite" | "slang" | "vulgar"[] | null;

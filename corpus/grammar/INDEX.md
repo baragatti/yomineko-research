@@ -18,7 +18,6 @@ _Generated 2026-09-02. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | ga-arimasu | ～があります | n5 | authored |
 | ga-hoshii | ～がほしい | n5 | authored |
 | ga-imasu | ～がいます | n5 | authored |
-| gp | です | n5 | authored |
 | gp-10 | そこ | n5 | authored |
 | gp-11 | あそこ | n5 | authored |
 | gp-12 | がある | n5 | authored |
@@ -216,7 +215,6 @@ _Generated 2026-09-02. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | gp-149 | ません | n4 | authored |
 | gp-150 | ～れば | n4 | authored |
 | gp-151 | ～てしまう | n4 | authored |
-| gp-152 | ～てほしい | n4 | authored |
 | gp-153 | ～のような | n4 | authored |
 | gp-154 | ～のように | n4 | authored |
 | gp-58 | だんだん | n4 | authored |
@@ -500,3 +498,5 @@ _Generated 2026-09-02. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | n3-you-to-omou | ～ようと思う | n3 | authored |
 | n3-you-to-shinai | ～ようとしない | n3 | authored |
 | n3-zu-ni | ～ずに | n3 | authored |
+
+**Deprecated:** 2 record(s) merged into another and dropped from the lists above; `../grammar_deprecated.json` maps each old slug to its survivor.

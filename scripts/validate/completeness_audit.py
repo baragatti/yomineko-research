@@ -1,6 +1,20 @@
 #!/usr/bin/env python3
 """Completeness audit — checks the corpus against spec §6 (dissection standard), §10 (acceptance),
-and schema_v2, reporting what's complete vs missing so P5+ can proceed with confidence."""
+and schema_v2, reporting what's complete vs missing so P5+ can proceed with confidence.
+
+ADVISORY, and over db/corpus.sqlite — the regenerable working index, not the committed JSON that
+CLAUDE.md names the source of truth. Read every number here as "what the index holds", never as a
+statement about what ships.
+
+Two of these lines used to be the only statement of the §6 coverage floors — "vocab w/ >=3
+dissected sentences" and "grammar w/ >=5 dissected examples", labelled "(P5 target)" since P5. A
+target printed in an advisory report cannot fail a build, cannot name the items that are short, and
+was counting a different artifact from the one that ships. W05 moved that claim to
+scripts/validate/validate_sentence_coverage.py, which is HARD, reads the export, ratchets the
+shortfall per (level, kind) and writes the work list. The two lines below stay as an INDEX-SIDE
+cross-check — when they disagree with the gate, the index and the export have diverged and the
+exporter is what to look at — but they are no longer the check.
+"""
 from __future__ import annotations
 
 import sqlite3
@@ -85,7 +99,7 @@ line("vocab w/ pos (sense)", n("SELECT count(DISTINCT vocab_id) FROM vocab_sense
 line("vocab w/ pitch", n("SELECT count(DISTINCT vocab_id) FROM vocab_pitch"), V, "(89.8% expected)")
 line("vocab w/ >=1 form", n("SELECT count(DISTINCT vocab_id) FROM vocab_form"), V)
 line("vocab w/ level conf/sources", n("SELECT count(*) FROM vocab WHERE level IS NOT NULL AND level_sources IS NOT NULL"), V)
-line("vocab w/ >=3 dissected sentences", n("SELECT count(*) FROM (SELECT vocab_id FROM sentence_vocab GROUP BY vocab_id HAVING count(*)>=3)"), V, "(P5 target)")
+line("vocab w/ >=3 dissected sentences", n("SELECT count(*) FROM (SELECT vocab_id FROM sentence_vocab GROUP BY vocab_id HAVING count(*)>=3)"), V, "(INDEX-SIDE COUNT — the GATE is validate_sentence_coverage.py)")
 
 print("\n" + "=" * 70)
 print("D. GRAMMAR (§5.3 / acceptance #3)")
@@ -95,7 +109,7 @@ for f in ("label", "explanation", "formation", "nuance"):
     line(f"{f} (pt)", Lc("grammar_point", f, "grammar_point"), G)
 line("register", n("SELECT count(*) FROM grammar_point WHERE register IS NOT NULL"), G)
 line("grammar w/ related_point links", n("SELECT count(DISTINCT grammar_id) FROM grammar_related"), G, "(GAP — only via contrast families)")
-line("grammar w/ >=5 dissected examples", n("SELECT count(*) FROM (SELECT grammar_id FROM sentence_grammar GROUP BY grammar_id HAVING count(*)>=5)"), G, "(P5 target)")
+line("grammar w/ >=5 dissected examples", n("SELECT count(*) FROM (SELECT grammar_id FROM sentence_grammar GROUP BY grammar_id HAVING count(*)>=5)"), G, "(INDEX-SIDE COUNT — the GATE is validate_sentence_coverage.py)")
 
 print("\n" + "=" * 70)
 print("E. FAMILIES (§5.6 / acceptance #9)")

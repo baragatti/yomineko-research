@@ -196,6 +196,20 @@ def sha_json(value: object) -> str:
     return sha(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")))
 
 
+# The exporter writes a live approval back onto the record as `review_status` (W06,
+# scripts/review_ledger.py). A whole-record approval is anchored to the hash of the record, so that
+# stamp has to be excluded from it — otherwise writing the approval changes the very hash the approval
+# quotes, and the next export reports every approval it has just made as stale.
+STAMP_KEY = "review_status"
+
+
+def sha_record(rec: object) -> str:
+    """Content hash of a whole record, ignoring the exporter's own review_status stamp."""
+    if isinstance(rec, dict) and STAMP_KEY in rec:
+        rec = {k: v for k, v in rec.items() if k != STAMP_KEY}
+    return sha_json(rec)
+
+
 def one_line(text: str, limit: int = PREVIEW_CHARS) -> str:
     flat = re.sub(r"\s+", " ", str(text)).strip()
     return flat if len(flat) <= limit else flat[: limit - 1] + "…"
@@ -545,8 +559,14 @@ def collect_sentences(root: Path) -> Iterator[Row]:
             payload = _dissection_payload(rec, locale)
             if payload:
                 add_aggregate_target(row, "dissection", payload, locale)
-        row.record_hash = sha_json(rec)
+        row.record_hash = sha_record(rec)
         yield row
+
+
+def dissection_payload(rec: dict[str, Any], locale: str) -> list[object]:
+    """Public alias: scripts/review_ledger.py rebuilds this exact payload to re-anchor a `dissection`
+    approval, and the two must never drift into two definitions of the same target."""
+    return _dissection_payload(rec, locale)
 
 
 def _dissection_payload(rec: dict[str, Any], locale: str) -> list[object]:
@@ -591,7 +611,7 @@ def collect_grammar(root: Path) -> Iterator[Row]:
                          for f in rec.get("forms") or () if isinstance(f, dict)]
                 if any(f["meaning"] for f in forms):
                     add_aggregate_target(row, "forms", forms, locale)
-            row.record_hash = sha_json(rec)
+            row.record_hash = sha_record(rec)
             yield row
 
 
@@ -615,7 +635,7 @@ def collect_readings(root: Path) -> Iterator[Row]:
             add_aggregate_target(row, "jp", rec.get("jp"), "ja", preview=str(rec.get("jp", "")))
             for fname in ("title", "translation"):
                 add_locale_targets(row, fname, rec.get(fname))
-            row.record_hash = sha_json(rec)
+            row.record_hash = sha_record(rec)
             row.extra = {"gated_to_lesson": rec["gated_to_lesson"]} if rec.get("gated_to_lesson") else {}
             yield row
 
@@ -659,7 +679,7 @@ def collect_exam_items(root: Path) -> Iterator[Row]:
             for key, value in rec.items():
                 if is_locale_object(value):
                     add_locale_targets(row, key, value)
-            row.record_hash = sha_json(rec)
+            row.record_hash = sha_record(rec)
             if rec.get("sentence"):
                 row.extra = {"sentence": rec["sentence"]}
             yield row
@@ -702,7 +722,7 @@ def collect_lessons(root: Path) -> Iterator[Row]:
                 row, f"exercise:{ex['id']}", payload, "pt-BR",
                 preview=str((ex.get("prompt") or {}).get("pt-BR", ex.get("id", ""))),
             )
-        row.record_hash = sha_json(rec)
+        row.record_hash = sha_record(rec)
         yield row
 
 
@@ -731,7 +751,7 @@ def collect_speak(root: Path) -> Iterator[Row]:
         if isinstance(fluency_prompt, str) and fluency_prompt.strip():
             row.targets.append(Target("fluency", "pt-BR", sha(fluency_prompt),
                                       one_line(fluency_prompt, TARGET_PREVIEW_CHARS)))
-        row.record_hash = sha_json(rec)
+        row.record_hash = sha_record(rec)
         row.extra = {"stage": rec.get("stage")} if rec.get("stage") else {}
         yield row
 
@@ -751,7 +771,7 @@ def collect_speak(root: Path) -> Iterator[Row]:
             for key, value in rec.items():
                 if is_locale_object(value):
                     add_locale_targets(row, key, value)
-            row.record_hash = sha_json(rec)
+            row.record_hash = sha_record(rec)
             yield row
 
 
@@ -778,7 +798,7 @@ def collect_vocab_disambiguation(root: Path) -> Iterator[Row]:
         )
         add_aggregate_target(row, "placement", rec, None,
                              preview=str(rec.get("evidence", "")))
-        row.record_hash = sha_json(rec)
+        row.record_hash = sha_record(rec)
         row.extra = {"lesson": lesson, "chosen": rec.get("chosen")}
         yield row
 

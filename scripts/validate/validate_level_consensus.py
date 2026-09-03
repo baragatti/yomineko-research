@@ -13,10 +13,19 @@ those three fields at all, and that the evidence contradicts itself where nobody
     collapsing them "would report editorial certainty as a guess") and one record ignores them.
   * 170 kanji / 6,145 vocab / 444 grammar cite fewer than the three independent lists §1.5 mandates.
 
-Checks (a)-(f) gate hard; (g) and (h) are ratchets against the baselines measured on 2026-08-26 — the
-counts are CONTENT debt, so the validator freezes them and fails only on growth. This is deliberately
-stricter than contracts/*.schema.json, whose `required`/nullability were inferred by measuring the same
-data and therefore cannot object to it.
+W10 (owner decision A4) SETTLED the first two, so L4-L6 are no longer frozen — they gate. The formula
+is restated in design/schema_v2.md ("Level evidence — the confidence formula") from its only
+implementation, scripts/ingest/reconcile_levels.py :: assign(): the numerator counts the lists that
+place the item at `level`, the denominator counts the lists CONSULTED, and level_confidence is their
+quotient. Under it the 132 grammar records had the STRING wrong (one of the three N3 lineages, i.e.
+"1/3") and the confidence right; 67 re-tagged kanji were carrying a list tally for a level no cited
+list gives them and belong on the `anchor` sentinel; `vocab:1385390` paired the `0` sentinel with 0.5.
+scripts/apply_level_evidence.py landed all 200 from a tracked table. No confidence was recomputed.
+
+Checks (a)-(f) and (i) gate hard; (g) and (h) are ratchets against baselines measured on 2026-08-26
+and re-measured after W10 — those counts are CONTENT debt, so the validator freezes them and fails
+only on growth. This is deliberately stricter than contracts/*.schema.json, whose `required`/
+nullability were inferred by measuring the same data and therefore cannot object to it.
 
 Reads corpus/kanji/*.json, corpus/vocab/*.json, corpus/grammar/*.json only — never db/corpus.sqlite.
 Exit 1 on any hard failure. Usage: validate_level_consensus.py [--root PATH]"""
@@ -39,13 +48,20 @@ TOLERANCE = 0.02          # level_confidence is stored rounded (1/3 -> 0.34 and 
 MIN_LISTS = 3             # spec §1.5: cross-reference >= 3 independent community lists
 MAX_SHOWN = 15
 
-# Ratchets: measured 2026-08-26 on the committed corpus. These may only go DOWN. (F12 reports
-# 170/6145/444 for the first row; it counted sentinel-keyed entries as sources, this counts votes.)
-BASELINE_FEW_LISTS = {"kanji": 167, "vocab": 6144, "grammar": 443}
-# Records whose level_sources cardinality disagrees with the agreement denominator. F12: the dict means
-# "agreeing lists" in one place and "consulted lists" in another, and which one it should be is an open
-# owner decision — so this is frozen, not gated on a rule that has not been written yet.
-BASELINE_CARDINALITY = {"kanji": 162, "vocab": 6042, "grammar": 0}
+# Ratchets: measured 2026-08-26 on the committed corpus, re-measured after W10. These may only go
+# DOWN. (F12 reports 170/6145/444 for the first row; it counted sentinel-keyed entries as sources,
+# this counts votes.) kanji 167 -> 163: the four re-tagged kanji that cited one list now carry the
+# `anchor` sentinel, and a sentinel cites no list by definition, so they leave this count.
+BASELINE_FEW_LISTS = {"kanji": 163, "vocab": 6144, "grammar": 443}
+# Records whose level_sources cardinality disagrees with the agreement denominator. F12 froze this
+# because the dict meant "agreeing lists" in one place and "consulted lists" in another. W10 settled
+# it — the denominator is the CONSULTED panel, and level_sources records only the lists that had an
+# opinion, so a gap between them is the NORMAL shape of a record some list stayed silent on, not a
+# defect. What remains gateable is (i) below. grammar 0 -> 132 is therefore not new debt: the same 132
+# N3 records rested on the same single list before and after, and the repair only stopped the string
+# from hiding it behind a denominator of 1. The count is kept as a size ratchet until G5 decides
+# whether to re-ingest the per-list votes these records never stored.
+BASELINE_CARDINALITY = {"kanji": 162, "vocab": 6042, "grammar": 132}
 
 ENTITIES = ("kanji", "vocab", "grammar")
 
@@ -87,6 +103,8 @@ def main() -> int:
     few_counts: dict[str, int] = {}
     card_counts: dict[str, int] = {}
     multi: list[str] = []
+    tally_bad: list[str] = []      # (i) the numerator is not the number of lists that agree
+    rounding: list[str] = []       # advisory: one agreement string stored at two roundings
 
     for ent in ENTITIES:
         by_agreement: dict[str, dict[float, list[str]]] = defaultdict(lambda: defaultdict(list))
@@ -143,7 +161,7 @@ def main() -> int:
                                     f"evidence key ({sorted(SENTINEL_EVIDENCE)})")
 
             # (f) level_sources value shapes
-            votes = 0
+            votes = agreeing = 0
             if isinstance(src, dict):
                 for k, v in src.items():
                     if k == "lists":
@@ -161,6 +179,8 @@ def main() -> int:
                                              f"(and {k!r} is not a documented key)")
                         else:
                             votes += 1
+                            if v == lvl:
+                                agreeing += 1
 
             # (g)/(h) ratchets — sentinels are placements we made, not list consensus
             if isinstance(agr, str) and agr not in SENTINEL_CONFIDENCE:
@@ -169,33 +189,62 @@ def main() -> int:
                 if den is not None and den != votes:
                     card += 1
 
+            # (i) the ratio has to be a TALLY OF THE RECORDED VOTES, hard. This is the check the
+            # cardinality ratchet was groping at and could not express: (h) only ever compared two
+            # counts, so it slept through 67 kanji whose "4/4 · 1.0" was the tally for the level the
+            # LISTS chose after a re-tag moved the record somewhere none of them puts it — evidence
+            # that read as unanimous while agreeing with nothing. W10 moved those onto the `anchor`
+            # sentinel. The rule that survives: the numerator counts level_sources entries whose value
+            # IS this record's level, and the denominator — the consulted panel — can never be smaller
+            # than the number of lists actually recorded. A campaign that stores only the agreeing
+            # lists (N3/N2/N1) still passes; a stale tally cannot.
+            if num is not None and den:
+                if num != agreeing:
+                    tally_bad.append(f"{ent} {a}: level_agreement {agr} claims {num} list(s) place it at "
+                                     f"{lvl!r}, but level_sources records {agreeing} that do "
+                                     f"({sorted(k for k, v in src.items() if v == lvl) if isinstance(src, dict) else src})")
+                elif den < votes:
+                    tally_bad.append(f"{ent} {a}: level_agreement {agr} consulted {den} list(s) but "
+                                     f"level_sources records {votes} votes")
+
         few_counts[ent] = few
         card_counts[ent] = card
         for agr, confs in sorted(by_agreement.items()):
-            if len(confs) > 1:
-                pairs = ", ".join(f"{c}×{len(v)}" for c, v in sorted(confs.items()))
-                sample = sorted(min(confs.items(), key=lambda kv: len(kv[1]))[1])[:3]
-                multi.append(f"{ent}: level_agreement {agr!r} maps to {len(confs)} confidences ({pairs}) "
+            if len(confs) == 1:
+                continue
+            # Cluster at TOLERANCE before judging. level_confidence is STORED rounded, so one third
+            # reaches the corpus as both 0.333 (round(n/d, 3) — reconcile_levels, ingest_grammar) and
+            # 0.34 (the two decimals the N3/N2/N1 campaigns typed). Those are the same number, and this
+            # file already declares that tolerance for check (c); refusing it here would have made the
+            # W10 repair fail on a rounding artefact. What F12 caught — "1/1" carrying 0.34 and 1.0 at
+            # once — is 0.66 apart and still fails. The cosmetic split stays visible below, ungated.
+            pairs = ", ".join(f"{c}×{len(v)}" for c, v in sorted(confs.items()))
+            sample = sorted(min(confs.items(), key=lambda kv: len(kv[1]))[1])[:3]
+            clusters: list[list[float]] = []
+            for c in sorted(confs):
+                if clusters and c - clusters[-1][-1] <= TOLERANCE:
+                    clusters[-1].append(c)
+                else:
+                    clusters.append([c])
+            if len(clusters) > 1:
+                multi.append(f"{ent}: level_agreement {agr!r} maps to {len(clusters)} confidences ({pairs}) "
                              f"— e.g. {sample}")
+            else:
+                rounding.append(f"{ent}: level_agreement {agr!r} is stored at {len(confs)} roundings "
+                                f"({pairs}) — one value, written two ways")
 
     check("L1 level/level_confidence/level_agreement/level_sources present and typed", present)
     check("L2 level_confidence within [0,1]", rng)
     check("L3 level_agreement is a ratio or a documented sentinel", wellformed)
-    # L4-L6 are demoted to a frozen ratchet, not because the findings are wrong but because the
-    # RIGHT values need the owner's original confidence formula (STATE.md owner queue): 132 grammar
-    # records pair '1/1' with 0.34 while 207 pair it with 1.0 — one of the two groups records its
-    # agreement string wrongly, and only the reconciliation history says which. Growth still fails.
-    L456_CEILING = {"L4": 133, "L5": 6, "L6": 1}
-    for name, bad in (("L4 level_confidence equals the agreement ratio", ratio_bad),
-                      ("L5 one agreement string never carries two confidences", multi),
-                      ("L6 sentinels carry their documented confidence + evidence", sent_bad)):
-        key = name.split(" ", 1)[0]
-        if len(bad) > L456_CEILING[key]:
-            check(name + f" (ratchet {L456_CEILING[key]} exceeded)", bad)
-        else:
-            print(f"  [held] {name}: {len(bad)} known inconsistencies frozen pending the owner's "
-                  f"confidence-formula decision (ceiling {L456_CEILING[key]})")
+    # L4-L6 were a frozen ratchet (ceilings 133 / 6 / 1) only because the RIGHT values needed the
+    # owner's confidence formula. W10 recovered it, wrote it down in design/schema_v2.md and repaired
+    # all 200 records that contradicted it, so all three gate hard now — the ceilings are gone rather
+    # than lowered, which is the difference between a debt that is paid and a debt that is capped.
+    check("L4 level_confidence equals the agreement ratio", ratio_bad)
+    check("L5 one agreement string never carries two confidences", multi)
+    check("L6 sentinels carry their documented confidence + evidence", sent_bad)
     check("L7 level_sources values are Levels or the documented lists/anchor/note/correction shapes", shape_bad)
+    check("L9 the agreement ratio tallies the votes level_sources actually records", tally_bad)
 
     ratchet: list[str] = []
     for ent in ENTITIES:
@@ -208,6 +257,8 @@ def main() -> int:
     check("L8 spec-§1.5 evidence debt did not grow (ratchet)", ratchet)
 
     print("  --- advisory (frozen by L8, not repaired here) ---")
+    for r in rounding:
+        print(f"  [rounding] {r}")
     for ent in ENTITIES:
         print(f"  {ent:8} {len(records[ent]):5} records · < {MIN_LISTS} lists: {few_counts[ent]:5} "
               f"(baseline {BASELINE_FEW_LISTS.get(ent, 0)}) · sources≠denominator: {card_counts[ent]:5} "

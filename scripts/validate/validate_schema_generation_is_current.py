@@ -35,7 +35,14 @@ CHECKS
                                        and the next regeneration would overwrite the hand-authored
                                        contract with whatever those records happen to look like.
   4  every FAMILIES entity has a schema — the map-entity blind spot F15 describes.
-  5  manifest.json + types.ts are current — rebuild from the committed schemas; byte-diff.
+  5  manifest.json + types.ts are current — rebuild from the committed schemas; byte-diff. The
+                                     ONLY two fields exempt are `build.date` and `build.git_head`
+                                     (W06 release identity): they say WHEN and FROM WHAT the
+                                     catalogue was cut, so a regeneration tomorrow or on another
+                                     commit differs in them for a reason that has nothing to do
+                                     with the contract. `build.entities` — one content hash per
+                                     entity — is compared EXACTLY: a hash that moved means the
+                                     data moved and the committed manifest is stale.
   6  manifest counts match reality — recount each entity from its declared glob + packing, and
                                      enforce a nonzero floor so a glob that stops matching fails.
                                      The `runtime` CLASS is the one exemption: null files and null
@@ -190,6 +197,49 @@ def compare_file(committed: Path, regenerated: Path, label: str, fails: list[str
         else:
             detail = f"{len(ca)} lines committed, {len(rb)} regenerated"
     fails.append(f"{label}: committed content differs from a fresh regeneration — {detail}")
+
+
+# W06 release identity. These two, and only these two, may differ between the committed manifest
+# and a fresh regeneration. Everything else in `build` is data-derived and must match.
+IGNORED_MANIFEST_KEYS = ("date", "git_head")
+
+
+def compare_manifest(committed: Path, regenerated: Path, label: str, fails: list[str]) -> None:
+    """Like compare_file, with the two release-identity stamps redacted from both sides.
+
+    Redacting a field from a freshness check is how a freshness check dies, so the redaction is as
+    narrow as it can be: two scalars, named here, inside one block. `build.entities` stays under
+    the exact diff — it is the half that says WHICH corpus this catalogue describes, and a stale
+    hash there is the failure the block was added for. Key ORDER is still compared (no sort_keys),
+    so a generator that starts emitting the same values differently is still caught.
+    """
+    if not committed.exists():
+        fails.append(f"{label}: committed file is missing ({committed.name}) — run the generator")
+        return
+    if not regenerated.exists():
+        fails.append(f"{label}: the generator did not produce it")
+        return
+    if committed.read_bytes() == regenerated.read_bytes():
+        return
+    try:
+        a = json.loads(committed.read_text(encoding="utf-8"))
+        b = json.loads(regenerated.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        fails.append(f"{label}: unparseable: {exc}")
+        return
+    ignored: list[str] = []
+    for doc in (a, b):
+        build = doc.get("build") if isinstance(doc, dict) else None
+        if isinstance(build, dict):
+            for k in IGNORED_MANIFEST_KEYS:
+                if build.pop(k, None) is not None:
+                    ignored.append(k)
+    dump = lambda d: json.dumps(d, ensure_ascii=False, indent=2)  # noqa: E731
+    if dump(a) == dump(b):
+        return
+    detail = " · ".join(json_diff(a, b)) or "byte-level difference with no structural diff"
+    fails.append(f"{label}: committed content differs from a fresh regeneration — {detail} "
+                 f"(build.{{{', '.join(IGNORED_MANIFEST_KEYS)}}} exempt)")
 
 
 def count_records(root: Path, glob: str | None, packing: str) -> int | None:
@@ -357,8 +407,8 @@ def main() -> int:
         rc, _ = run_generator(gens["build_manifest"], ["build_manifest.py"], CONTRACTS=manifest_dir)
         if rc != 0:
             fails.append(f"build_manifest.py exited {rc}")
-        compare_file(contracts / "manifest.json", manifest_dir / "manifest.json",
-                     "contracts/manifest.json", fails)
+        compare_manifest(contracts / "manifest.json", manifest_dir / "manifest.json",
+                         "contracts/manifest.json", fails)
         compare_file(contracts / "types.ts", manifest_dir / "types.ts", "contracts/types.ts", fails)
         checked += 2
 

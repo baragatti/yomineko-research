@@ -74,7 +74,14 @@ KANJI_CAP = ("kanji-recognition", "Reconhecimento de kanji", "n5")
 def main() -> int:
     con = sqlite3.connect(DB)
     OUT.mkdir(parents=True, exist_ok=True)
-    gkeys = {k: (gid, lvl) for gid, k, lvl in con.execute("SELECT id,key,level FROM grammar_point")}
+    # W08: a grammar point merged into another (grammar_point.deprecated_by, owner decision A3) is not
+    # a language feature of its own any more — its capability is the survivor's. Leaving it in would
+    # put a key in grammar_keys[] that the exported registry no longer carries, which is exactly what
+    # validate_graph_edges.capability_coverage fails on. Guarded on the column so a DB built before
+    # scripts/migrate_grammar_merge.py still builds.
+    _dep = "deprecated_by" in {r[1] for r in con.execute("PRAGMA table_info(grammar_point)")}
+    gkeys = {k: (gid, lvl) for gid, k, lvl in con.execute(
+        "SELECT id,key,level FROM grammar_point" + (" WHERE deprecated_by IS NULL" if _dep else ""))}
     key2cap: dict[str, str] = {}
     for cap, (_, _, keys) in CAPS.items():
         for k in keys:

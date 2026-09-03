@@ -58,6 +58,29 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-02 (ak) — M1 HALF DONE: A3 merges, A4 level evidence, the sentence-coverage gate, the
+> approval ledger and release identity all landed; gate green. Next: W09 (A9 re-point, launched),
+> then W11 (A6 homographs + A5 families), then the authoring applies (W15 passages, W20 kanji
+> practice, W27 card keys) as their tables land.**
+>
+> - `W08` gp→da-desu, gp-152→te-hoshii: content salvaged verbatim into survivors, 297/298 + 177/178
+>   live refs re-pointed, losers kept as `deprecated_by` redirects (corpus/grammar_deprecated.json;
+>   active grammar 494). Eight more certain pairs triaged → W08b (authoring choice, not migration).
+> - `W10` formula restated (agreement = agreeing/consulted; the denominator is the panel); 200 repairs
+>   (132 N3 grammar '1/1'→'1/3', 67 kanji → anchor sentinel, one vocab sentinel), no confidence
+>   recomputed; L4–L6 ratchet retired; new hard check L9.
+> - `W05` sentence-coverage gate (3,442 taught; 1,763 under floor, 1,562 at zero) + the 14,958 DB-only
+>   needs_review flags now exported. `W06` review ledger (hash-anchored, stale never exports as
+>   approved) + `manifest.build` release identity. RULE: after any export, regenerate contracts
+>   BEFORE validate_contracts.
+> - Quick-rebuild scoping: apply scripts treat an EMPTY family table as out of scope (W10) and the
+>   merge migration skips preconditions on a partial index (W08); the quick baseline re-recorded.
+> - Authoring tables in flight (research/derived/pending/, excluded from this commit): W20 kanji
+>   practice (806 verified rows, assembling), W27 card keys (resumed). W15 passages: 286 authored
+>   under research/derived/passages/ (258 verified ok; 13 are course-data gaps for W21b).
+> - Session-limit lesson: ~50 concurrent Opus agents exhaust a 5-hour window in ~2 h; run one large
+>   workflow at a time plus ≤3 lane agents. Dead agents leave their work on disk — inventory first.
+
 > **2026-09-02 (aj) — M0 COMPLETE (durable and measurable), plus W19, W26, W38-queue, W40-design,
 > W21-derivation. Gate green. Next: W05+W06 (exporter/contracts lane), W08 A3 merges (data lane),
 > then the held workflow resumes (W27, W13, W31) as concurrency allows; W15/W20 resumes in flight.**

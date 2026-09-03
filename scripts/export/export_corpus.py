@@ -24,6 +24,7 @@ from i18n_text import get_all, DEFAULT_LOCALE  # noqa: E402
 import sys as _sys, pathlib as _pl  # noqa: E402
 _sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
 from dbtarget import db_target, out_root, build_date  # noqa: E402
+from review_ledger import Ledger  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
@@ -87,7 +88,17 @@ REGISTER_MAP = {
 }
 
 
+# W06. The approval ledger is applied HERE, at the single point every record file leaves this
+# script, so no future export path can forget it. `apply_all` stamps `review_status` onto exactly
+# the records a LIVE entry covers — one whose content hash still matches the text it approved — and
+# writes nothing at all onto the rest, so an empty ledger leaves the export byte-identical. A stale
+# entry exports nothing and is counted; design/review_ledger.md has the three states.
+LEDGER: Ledger | None = None
+
+
 def jw(path: Path, obj) -> None:
+    if LEDGER is not None:
+        LEDGER.apply_all(obj)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
@@ -187,12 +198,18 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                  # the published address form of the same edge; the row ids stay for compatibility
                  "example_vocab": [VOCAB_SLUG_BY_ID[v] for v in (jloads(r[4]) or [])
                                    if v in VOCAB_SLUG_BY_ID],
-                 "note": loc(pt=r[5]) if r[5] else None}
+                 "note": loc(pt=r[5]) if r[5] else None,
+                 # W05. 3,970 of these 33,785 rows are flagged in the working index and the flag
+                 # never reached the export, so a teacher reading corpus/kanji/*.json could not see
+                 # that a reading NOTE is unreviewed Layer-C prose. It means here exactly what it
+                 # means everywhere else (common.schema.json -> Provenance.needs_review).
+                 "needs_review": bool(r[6])}
                 for r in con.execute(
                     "SELECT kr.reading,kr.reading_type,kr.okurigana,kr.introduced_at_level,"
                     "kr.example_vocab_ids,"
                     "(SELECT value FROM localized_text WHERE entity_type='kanji_reading' "
-                    " AND entity_id=kr.id AND field='note' AND locale='pt-BR') "
+                    " AND entity_id=kr.id AND field='note' AND locale='pt-BR'),"
+                    "kr.needs_review "
                     f"FROM kanji_reading kr WHERE kr.kanji_id=? {READING_ORDER_SQL}", (kid,))
             ]
             irr_note = con.execute(
@@ -266,13 +283,18 @@ def export_vocab(con: sqlite3.Connection) -> dict:
              level, lconf, lagree, lsrc) = v
             senses = []
             for s in con.execute(
-                    "SELECT id,sense_order,pos,field_tags,misc_tags,gloss_en FROM vocab_sense "
-                    "WHERE vocab_id=? ORDER BY sense_order", (vid,)):
+                    "SELECT id,sense_order,pos,field_tags,misc_tags,gloss_en,needs_review "
+                    "FROM vocab_sense WHERE vocab_id=? ORDER BY sense_order", (vid,)):
                 misc = jloads(s[4])
                 senses.append({
                     "order": s[1], "pos": jloads(s[2]), "field": jloads(s[3]), "misc": misc,
                     "register": register_of(misc),
                     "gloss": loc(pt=SL.get((s[0], "gloss")), en=jloads(s[5])),
+                    # W05. The pt-BR gloss is Layer B — derived by a model from the JMdict `en`
+                    # beside it — and all 10,592 senses are flagged unreviewed in the working
+                    # index. Dropping the flag on the way out published 10,592 unreviewed
+                    # translations that looked, to any consumer, exactly like approved ones.
+                    "needs_review": bool(s[6]),
                 })
             forms = [
                 {"form": f[0], "is_kana": bool(f[1]), "is_common": bool(f[2]), "is_primary": bool(f[3])}
@@ -317,17 +339,21 @@ def export_grammar(con: sqlite3.Connection) -> dict:
     L = get_all(con, "grammar_point")
     Len = get_all(con, "grammar_point", "en")
     out_counts, index_rows = {}, []
+    gcols = [r[1] for r in con.execute("PRAGMA table_info(grammar_point)")]
     for lvl in LEVELS:
         records = []
-        gcols = [r[1] for r in con.execute("PRAGMA table_info(grammar_point)")]
         # Roadmap E added four; guarded by `if c in gcols` so an un-migrated DB still exports.
         GEXTRA = ("forms_json", "register_json", "caution",
                  "formation_steps_json", "nuance_tags_json", "usage_contexts_json",
                  "steps_unavailable")
         extra = "".join(f",{c}" for c in GEXTRA if c in gcols)
+        # W08 (owner decision A3): a record merged into another keeps its row but leaves the ACTIVE
+        # registry. `deprecated_by` holds the survivor's slug; NULL means live. Guarded on the column
+        # so a DB built before scripts/migrate_grammar_merge.py still exports.
+        live = " AND deprecated_by IS NULL" if "deprecated_by" in gcols else ""
         for g in con.execute(
             "SELECT id,slug,key,structure_pattern,register,references_json,level,level_confidence,"
-            f"level_agreement,level_sources,needs_review{extra} FROM grammar_point WHERE level=? "
+            f"level_agreement,level_sources,needs_review{extra} FROM grammar_point WHERE level=?{live} "
             "ORDER BY key", (lvl,)
         ):
             (gid, slug, key, pattern, reg, refs, level, lconf, lagree, lsrc, nr) = g[:11]
@@ -376,6 +402,23 @@ def export_grammar(con: sqlite3.Connection) -> dict:
              "| key | pattern | level | explanation |", "|-----|---------|-------|-------------|"]
     for key, pat, lvl, st in index_rows:
         lines.append(f"| {key} | {pat} | {lvl} | {st} |")
+    # W08: the redirect. Every address that used to resolve to a merged-away record resolves through
+    # this map instead, so a consumer holding an old slug is never left guessing. Written on every
+    # export (empty object when nothing is deprecated) so its absence always means "not exported yet",
+    # never "nothing was merged".
+    # It lives BESIDE corpus/grammar/, not inside it: validate_course_chain.check_catalogue refuses a
+    # sidecar that the grammar glob (`corpus/grammar/*.json`, packing 'list') would match — "a sidecar
+    # inside a registry glob poisons every consumer; move it out" — after the unregistered_chars.json
+    # incident broke four gates. corpus/exam_banks/ solves the same problem by narrowing its glob to
+    # n[0-9]_*.json; the grammar glob is not narrowed, so the file moves instead. Listed in
+    # design/generated_artifacts.json, as that gate also requires.
+    dep = {}
+    if "deprecated_by" in gcols:
+        dep = {slug: by for slug, by in con.execute(
+            "SELECT slug, deprecated_by FROM grammar_point WHERE deprecated_by IS NOT NULL ORDER BY slug")}
+    jw(CORPUS / "grammar_deprecated.json", dep)
+    lines += ["", f"**Deprecated:** {len(dep)} record(s) merged into another and dropped from the "
+                  f"lists above; `../grammar_deprecated.json` maps each old slug to its survivor."]
     (CORPUS / "grammar" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return out_counts
 
@@ -418,9 +461,10 @@ def export_families(con: sqlite3.Connection) -> int:
     Len = get_all(con, "family", "en")
     records, index_rows = [], []
     for f in con.execute(
-        "SELECT id,slug,type,importance_rank,spans_levels FROM family ORDER BY importance_rank, slug"
+        "SELECT id,slug,type,importance_rank,spans_levels,needs_review FROM family "
+        "ORDER BY importance_rank, slug"
     ):
-        fid, slug, ftype, rank, spans = f
+        fid, slug, ftype, rank, spans, needs_review = f
         members = []
         for m in con.execute(
             "SELECT member_type,member_id,intra_order,is_core,note_pt FROM family_member "
@@ -451,6 +495,10 @@ def export_families(con: sqlite3.Connection) -> int:
             # because the column froze at authoring time and the membership moved. A derived claim
             # cannot go stale. Order follows the teaching sequence.
             "spans_levels": _member_span(con, fid),
+            # W05. Every one of the 396 families is authored Layer-C grouping — the label, the
+            # description and the governing rule are pedagogy — and all 396 are flagged in the
+            # working index. The flag belongs on the record a teacher actually opens.
+            "needs_review": bool(needs_review),
             "members": members,
         })
         lbl = L.get((fid, "label"))
@@ -588,6 +636,10 @@ def _fill_link_caches(con: sqlite3.Connection) -> None:
 
 
 def main() -> int:
+    global LEDGER
+    # A malformed ledger raises rather than exporting a partial set of approvals: an export that
+    # silently drops the entries it could not parse claims fewer reviews than a teacher made.
+    LEDGER = Ledger.load(ROOT)
     con = sqlite3.connect(DB)
     _fill_link_caches(con)
     kc = export_kanji(con)
@@ -598,6 +650,15 @@ def main() -> int:
     write_corpus_index(kc, vc, gc, fc, sc)
     con.close()
     print(f"exported kanji={kc} vocab={vc} grammar={gc} families={fc} sentences={sc} -> corpus/")
+    rep = LEDGER.report
+    if rep.entries:
+        print(f"review ledger: {rep.entries} entr(y/ies), {rep.live} live verdict(s) stamped onto "
+              f"{rep.stamped_records} record(s), {rep.stale} STALE (rewritten after review, "
+              f"exported as nothing)")
+        for line in rep.stale_examples:
+            print(f"  stale: {line}")
+    else:
+        print("review ledger: empty — no record carries a review_status yet (design/review_ledger.md)")
     return 0
 
 

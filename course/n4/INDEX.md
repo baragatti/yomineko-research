@@ -10,7 +10,7 @@ _Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 24 | Potencial | capacidade | 45 | 11 | 6 |
 | 25 | Volitivo e intenção | intenção | 45 | 12 | 15 |
 | 26 | Transitivos × intransitivos | pares verbais | 45 | 13 | 2 |
-| 27 | Dar e receber | favores | 40 | 11 | 9 |
+| 27 | Dar e receber | favores | 40 | 11 | 8 |
 | 28 | Experiência e mudança | experiência | 40 | 12 | 21 |
 | 29 | Obrigação e permissão | deveres | 40 | 14 | 7 |
 | 30 | Tentar, preparar, completar | aspecto | 40 | 10 | 22 |
@@ -57,7 +57,7 @@ _Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 27. Dar e receber
 - **kanji** (11): 町 真 可 急 止 送 工 建 料 有 港
 - **vocab** (40, amostra): ご馳走、はっきり、凄い、喜ぶ、差し上げる、手袋、気持ち、真面目、祖父、踊り、お釣り、予約、今夜、会話、店員
-- **gramática** (9): te-ageru, te-yaru, te-kureru, te-morau, gp-106, gp-152, te-hoshii, gp-108, gp-109
+- **gramática** (8): te-ageru, te-yaru, te-kureru, te-morau, gp-106, te-hoshii, gp-108, gp-109
 
 ### 28. Experiência e mudança
 - **kanji** (12): 切 待 質 転 楽 着 研 究 身 病 起 米

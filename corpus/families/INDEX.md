@@ -65,7 +65,7 @@ _Generated 2026-09-02. `label`/`description`/`governing_rule` = locale-objects (
 | grp:kanji-comp-91cc | kanji_component | Família do componente 里 | 5 |
 | grp:kanji-comp-9580 | kanji_component | Família do componente 門 | 4 |
 | grp:kanji-comp-ff5c | kanji_component | Família do componente ｜ | 22 |
-| grp:gram-n5-desu-wa | function_set | Gramática: Frases básicas: o tópico は e a cópula です | 64 |
+| grp:gram-n5-desu-wa | function_set | Gramática: Frases básicas: o tópico は e a cópula です | 63 |
 | grp:gram-n5-perguntas | function_set | Gramática: Perguntas e demonstrativos | 8 |
 | grp:gram-n5-verbos | function_set | Gramática: Verbos: dicionário + ます; partículas を e が | 7 |
 | grp:gram-n5-particulas-lugar | function_set | Gramática: Lugar, tempo e direção: で/に/へ/と | 31 |

@@ -1,0 +1,3267 @@
+{
+ "generated_for": "W10 -- owner decision A4, level evidence (research/reports/APP_PLAN.md)",
+ "what_this_is": "Every levelled record whose level_agreement string disagrees with the formula that produced its level_confidence. Recomputed from corpus/{kanji,vocab,grammar}/*.json over all 10,028 levelled records; applied to db/corpus.sqlite and to the exported JSON by scripts/apply_level_evidence.py.",
+ "formula": {
+  "source": "scripts/ingest/reconcile_levels.py :: assign() (P2), restated in design/schema_v2.md",
+  "level": "the EARLIEST level any consulted list assigns (teach earlier)",
+  "numerator": "n_for -- the number of consulted lists that place the item at `level`",
+  "denominator": "consulted -- the size of the panel the campaign put the item to",
+  "level_agreement": "f\"{n_for}/{consulted}\"",
+  "level_confidence": "round(n_for / consulted, 3)",
+  "sentinels": {
+   "0": "author-added, no consensus list contains the item -> level_confidence 0.0",
+   "anchor": "deliberate course placement, no list to cite -> level_confidence 1.0"
+  },
+  "tolerance": 0.02
+ },
+ "classes": {
+  "a": "agreement string wrong, confidence right -> FIXED here",
+  "b": "confidence wrong, agreement right -> REPORTED, never changed (0 found)",
+  "c": "sentinel paired with a confidence the contract does not give it -> FIXED here"
+ },
+ "groups": {
+  "denominator-restate": "class (a) -- N3 grammar: '1/1' -> '1/3', confidence untouched",
+  "anchor-restate": "class (a) -- JLPT-re-tagged kanji: list ratio -> the 'anchor' sentinel, confidence untouched",
+  "sentinel-confidence": "class (c) -- the '0' sentinel must carry confidence 0.0"
+ },
+ "row_count": 200,
+ "by_group": {
+  "anchor-restate": 67,
+  "sentinel-confidence": 1,
+  "denominator-restate": 132
+ },
+ "rows": [
+  {
+   "entity": "kanji",
+   "address": "kanji:通",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:的",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "anchori": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:公",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:正",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:無",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "anchori": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:可",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "anchori": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:身",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "anchori": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:歩",
+   "file": "n3.json",
+   "group": "anchor-restate",
+   "level": "n3",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:not-in-n5n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:民",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:合",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:首",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:都",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:区",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:県",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:進",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:産",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:引",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:所",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:村",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:説",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:乗",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:声",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:働",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:好",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:頭",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:低",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:門",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:光",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:太",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:森",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:林",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:顔",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:短",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:薬",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:便",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:軽",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:池",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:遠",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:弱",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:暗",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:洗",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:菜",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n2",
+    "anchori": "n2",
+    "kanjiapi": "n2",
+    "bluskyo": "n2",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:暑",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n1",
+    "anchori": "n1",
+    "kanjiapi": "n1",
+    "bluskyo": "n1",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:寒",
+   "file": "n4.json",
+   "group": "anchor-restate",
+   "level": "n4",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n4"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:会",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:社",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:新",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:立",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:手",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:目",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:言",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:多",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:安",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:道",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:口",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:少",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:空",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:足",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:店",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:古",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:買",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:週",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:花",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:駅",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:飲",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:魚",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "4/4",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n4",
+    "kanjiapi": "n4",
+    "anchori": "n4",
+    "bluskyo": "n4",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "kanji",
+   "address": "kanji:耳",
+   "file": "n5.json",
+   "group": "anchor-restate",
+   "level": "n5",
+   "old_agreement": "3/3",
+   "new_agreement": "anchor",
+   "old_confidence": 1.0,
+   "new_confidence": 1.0,
+   "level_sources": {
+    "davidluzgouveia": "n3",
+    "kanjiapi": "n3",
+    "bluskyo": "n3",
+    "anchor": "jlpt_anchor:n5"
+   },
+   "reason": "class (a) string wrong / confidence right: not one of the consulted lists places this character at its taught level -- the stored ratio is the tally for the level the LISTS chose, left behind when the JLPT re-tag moved the record. The placement is deliberate and level_sources.anchor already names it, so the documented 'anchor' sentinel is the true string. Confidence is unchanged (1.0 already, 1.0 is what 'anchor' carries)."
+  },
+  {
+   "entity": "vocab",
+   "address": "vocab:1385390",
+   "file": "n1.json",
+   "group": "sentinel-confidence",
+   "level": "n1",
+   "old_agreement": "0",
+   "new_agreement": "0",
+   "old_confidence": 0.5,
+   "new_confidence": 0.0,
+   "level_sources": {
+    "correction": "2026-07-09 kana-collision fix: bluskyo/jlptvocabapi せっけん n5 rows mean 石鹸 (soap, vocab:1382590); 接見 is unlisted in every ingested JLPT list -> conservative n1 (advanced formal/legal term)"
+   },
+   "reason": "class (c) sentinel misuse: the '0' sentinel is documented as \"author-added, we are guessing\" and carries level_confidence 0.0 (contracts/common.schema.json -> LevelTag). This record is a hand correction with no list behind it, so the sentinel is right and the 0.5 beside it is not: 0.5 is the midpoint of a scale nobody consulted. The level itself is NOT touched."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ageru",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ba-hodo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ba-noni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ba-yokatta",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-bakari",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-beki-da",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-chatta",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-da-mono-da",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-dake-shika",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-dakedo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-desu-kara",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-donna-ni-koto-ka",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-donna-ni-temo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-furi-wo-suru",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-hazu-da",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-hodo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kake",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kanaa",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kanarazushimo-towa-kagiranai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kara-ni-kakete",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kawari-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kesshite-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kirenai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kiri",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kke",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-koso",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-koto",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-koto-da",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-koto-ni-natte-iru",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-koto-ni-shite-iru",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-koto-wa-ga",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-koto-wa-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kurai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kurai-wa-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-kuse-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-made",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-mama",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-maru-de-you",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-masu-you-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-mattaku-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-metta-ni-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-metta-ni-nai-2",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-mitai-da",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-mo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-moshi-tanara",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-moshi-temo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-moshikasuru-to-kamoshirenai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-moshimo-nara",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-n-datte",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-nado",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-nai-koto-wa-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-nai-to",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-naide",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-nanka",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-nazenara",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-nda-mon",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-kanshite",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-kawatte",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-kurabete",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-oite",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-shite-wa",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-shitemo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-taishite",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-totte",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-tsuite",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-yoreba",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ni-yotte",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-no",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-okagede",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ppai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ppanashi",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-rareta",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-rashii",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sa",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sae",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-saichuu-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sei-de",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sete-kudasai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-shika-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sono-kekka",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sono-tame-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sono-ue",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sore-to",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sore-tomo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-sukoshimo-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ta-tokoro",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-ta-totan",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tabi-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tate",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tatoe-temo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-te-goran",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-te-hajimete",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-te-hoshii",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-te-iru",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-te-kureto",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-te-miru",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-temo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-ii-naa",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-ittemo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-iu",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-iu-koto-da",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-iu-no",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-iu-no-wa",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-iu-to",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-iu-yori",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-shitara",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-to-shite",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tokoro-datta",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tokoro-ga",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tokorode",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-toku",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-toori",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tsuide-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tsumari",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-tsumori-deshita",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-uchi-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-uto-shita",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-wa-mochiron-mo",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-wake-da",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-wake-dewa-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-wake-ga-nai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-wake-ni-wa-ikanai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-wari-ni-wa",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-ni-2",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-ni-3",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-ni-iu",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-ni-natta",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-ni-shimashou",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-to-omou",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-you-to-shinai",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  },
+  {
+   "entity": "grammar",
+   "address": "gram:n3-zu-ni",
+   "file": "n3.json",
+   "group": "denominator-restate",
+   "level": "n3",
+   "old_agreement": "1/1",
+   "new_agreement": "1/3",
+   "old_confidence": 0.34,
+   "new_confidence": 0.34,
+   "level_sources": {
+    "hanabira": "n3"
+   },
+   "reason": "class (a) string wrong / confidence right: the confidence 0.34 is one list out of the three N3 lineages the campaign consulted, which is what the record has always meant and what its 1,596 N3 vocab siblings already write as '1/3'. The denominator '1' counts the lists that had an OPINION, not the panel; under the contract's own words (\"agreed/consulted\") that is the wrong number. Confidence is NOT recomputed -- reading '1/1' as 1.0 would turn the weakest level evidence in the corpus into a claim of certainty (owner decision A4, research/reports/readiness/content_coverage_levels.md 2.3)."
+  }
+ ]
+}

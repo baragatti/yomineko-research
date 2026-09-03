@@ -1,0 +1,180 @@
+{
+ "generated_by": "scripts/migrate_grammar_merge.py",
+ "what_this_is": "Owner decision A3 (W08): duplicate-identity grammar points merged with no content loss. The loser row is never deleted — it keeps every field it had and gains grammar_point.deprecated_by. `appended` is what this migration wrote onto the survivor; `salvage` is loser content a machine must not fold in on its own, kept verbatim for the teacher-review loop; `refused` is what the migration declined to append, with the reason.",
+ "declined_collisions": [
+  {
+   "pair": "gram:gp-36 / gram:te-iru",
+   "why": "KEEP BOTH — relative clause (Verb[た・ている] + Noun) vs the ている aspect. The collision is a wrong forms[] on gp-36, not one point. §2.2."
+  },
+  {
+   "pair": "gram:gp-63 / gram:gp-115",
+   "why": "KEEP BOTH — passive vs potential. The collision is manufactured by a wrong gp-115.forms[0]. §2.3."
+  },
+  {
+   "pair": "gram:gp-100 / gram:gp-118  {しかない}",
+   "why": "UNTRIAGED — no evidence pass has been run. §3.4."
+  },
+  {
+   "pair": "gram:gp-103 / gram:n3-sukoshimo-nai  {すこしもない}",
+   "why": "UNTRIAGED — cross-level near-duplicate; merging across N4/N3 is an owner decision. §3.4."
+  },
+  {
+   "pair": "gram:n3-you-ni / n3-you-ni-2 / n3-you-ni-3  {～ように}",
+   "why": "UNTRIAGED — three-way collision; needs a sense split before any merge. §3.4."
+  },
+  {
+   "pair": "gram:n3-te-iru vs te-iru, gram:n3-te-hoshii vs te-hoshii",
+   "why": "NOT MERGED — the ～ prefix hides them from the forms index and both pairs are already co-listed inside one capability, so an N3 extension of an N5/N4 point is defensible. Untriaged. §3.4."
+  }
+ ],
+ "merges": [
+  {
+   "loser": "gram:gp",
+   "loser_key": "gp",
+   "winner": "gram:da-desu",
+   "winner_key": "da-desu",
+   "verdict": "MERGE",
+   "why": "One copula registered twice. `gp` is the です half of `da-desu` {だ, です}: same topic (top:n5-desu-wa), same family (grp:gram-n5-desu-wa), same lesson (les:n5-desu-wa-01) unlocks both, and all six of `gp`'s sentences already carry `da-desu` too. grammar_identity_merges.md §2.1.",
+   "appended": {
+    "usage_contexts_json": "[\"spoken\", \"written\", \"casual-friends\", \"business\"]",
+    "level_sources": "{\"jlptsensei\": \"n5\", \"bunpro\": \"n5\", \"tanos\": \"n5\"}",
+    "level_agreement": "3/3",
+    "level_confidence": 1.0,
+    "references_json": "{\"label_en\": \"da / desu\", \"also_known_as\": [\"だ\", \"da / desu\", \"です\"], \"level_sources\": {\"jlptsensei\": \"n5\", \"bunpro\": \"n5\", \"tanos\": \"n5\"}}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['です'] ⊆ ['だ', 'です'])",
+    "register_json: loser adds nothing (['polite'] ⊆ ['plain', 'polite'])",
+    "usage_contexts_json: appended ['business'] -> ['spoken', 'written', 'casual-friends', 'business']",
+    "nuance_tags_json: loser adds nothing (['politeness'] ⊆ ['politeness'])",
+    "level_sources: merged {'tanos': 'n5'} -> {'jlptsensei': 'n5', 'bunpro': 'n5', 'tanos': 'n5'}; level_agreement '2/2' -> '3/3'",
+    "refs: also_known_as += ['です'], level_sources += {'tanos': 'n5'}",
+    "formation_steps: every loser variant already has a survivor variant with the same (base, step chain)",
+    "structure_pattern: 'です' is already inside survivor 'だ / です'",
+    "register: 'polite' carried by the survivor's register list",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['です']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "explanation/pt-BR",
+     "value": "です é a cópula educada — a palavrinha que liga o sujeito a um substantivo ou adjetivo, mais ou menos como o verbo 'ser/estar' em frases como 'isto É um livro' ou 'ele É gentil'. Ex.: これは本です (kore wa hon desu, 'isto é um livro'). Ela também deixa a frase mais polida e fecha a oração de forma neutra e respeitosa, boa para a maioria das situações.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"です\": \"ser/estar — cópula educada\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "Substantivo + です  /  Adjetivo-な + です  /  Adjetivo-い + です. Exemplos: 学生です ('sou estudante'), きれいです ('é bonito'), たかいです ('é caro'). Negativo: 〜じゃないです / 〜じゃありません (para substantivos e adjetivos-な). Passado: 〜でした ('foi/era'). A versão casual de です é だ (mas com adjetivo-い não se usa だ).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "です (cópula educada)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "Pontos de atenção: (1) です não é verbo de ação, não significa 'fazer'; serve só para ligar e afirmar; (2) com adjetivos-い, o です só adiciona polidez (たかいです), e a negação e o passado vão no próprio adjetivo (たかくないです / たかかったです), não no です; (3) não confunda です (afirmar) com ます (que educa verbos de ação). É a forma educada padrão, segura para falar com estranhos, professores e em situações formais.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 0,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [],
+    "lesson_unlocks_dropped_as_duplicate": 0,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 0,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [],
+    "exercise_item_repointed": 0,
+    "exercise_item_dropped_as_duplicate": 0,
+    "lesson_body_addresses_repointed": {},
+    "cumulative_known_set_lessons": 0
+   }
+  },
+  {
+   "loser": "gram:gp-152",
+   "loser_key": "gp-152",
+   "winner": "gram:te-hoshii",
+   "winner_key": "te-hoshii",
+   "verdict": "MERGE",
+   "why": "Same point, same form 〜てほしい, same topic (top:n4-dar-receber), same lesson (les:n4-dar-receber-03) unlocks both and issues two SRS cards for one pattern. `gp-152` additionally carried authoring commentary leaked into learner-facing pt-BR; `grammar_record_repairs.json` already removed it (4 rows), so the leak is not a reason to prefer either record today — the duplicate identity is. §2.4.",
+   "appended": {
+    "register_json": "[\"casual\", \"colloquial\", \"plain\"]",
+    "level_sources": "{\"jlptsensei\": \"n4\", \"bunpro\": \"n4\", \"tanos\": \"n4\"}",
+    "level_agreement": "3/3",
+    "level_confidence": 1.0,
+    "references_json": "{\"label_en\": \"te hoshii\", \"also_known_as\": [\"te hoshii\", \"のようてほしい\"], \"level_sources\": {\"jlptsensei\": \"n4\", \"bunpro\": \"n4\", \"tanos\": \"n4\"}}",
+    "formation_steps_json": "{\"variants\": [{\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-te-form\"}, {\"op\": \"append\", \"token\": \"ほしい\"}], \"example\": \"来てほしい\"}, {\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-te-form\"}, {\"op\": \"append\", \"token\": \"ほしくない\"}], \"example\": \"来てほしくない\"}, {\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-te-form\"}, {\"op\": \"append\", \"token\": \"ほしかった\"}], \"example\": \"来てほしかった\"}, {\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-nai-stem\"}, {\"op\": \"append\", \"token\": \"いでほしい\"}], \"example\": \"行かないでほしい\"}]}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['てほしい'] ⊆ ['てほしい'])",
+    "register_json: appended ['plain'] -> ['casual', 'colloquial', 'plain']",
+    "usage_contexts_json: loser adds nothing (['spoken', 'casual-friends'] ⊆ ['spoken', 'casual-friends'])",
+    "nuance_tags_json: loser adds nothing (['desire', 'request'] ⊆ ['desire', 'request'])",
+    "level_sources: merged {'tanos': 'n4'} -> {'jlptsensei': 'n4', 'bunpro': 'n4', 'tanos': 'n4'}; level_agreement '2/2' -> '3/3'",
+    "refs: also_known_as += ['のようてほしい'], level_sources += {'tanos': 'n4'}",
+    "formation_steps: appended 1 variant(s) ['行かないでほしい'] (signature = base + step chain; `example` is not part of it, so two variants differing only in the example word stay one rule)",
+    "structure_pattern: '～てほしい' is already inside survivor 'てほしい'",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['てほしい']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "register",
+     "value": "neutral",
+     "why": "survivor has its own value; picking between them is authoring"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "〜てほしい expressa o desejo de que OUTRA pessoa faça (ou não faça) algo. É diferente de 〜たい (\"eu quero fazer\"): aqui quem age é um terceiro, e você é quem deseja esse comportamento (来てほしい = \"quero que você venha\"). ほしい significa \"querer (algo)\" e, combinado com a forma て, passa a significar \"querer que se faça algo\". A grafia \"のようてほしい\" do material tem um erro de digitação; o ponto real é 〜てほしい.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"てほしい\": \"querer que alguém faça (na verdade 〜てほしい; a grafia tem erro de digitação)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "Verbo na forma て + ほしい. A pessoa de quem você deseja a ação leva に (ou às vezes は em frases negativas/contrastivas): 田中さんに手伝ってほしい = \"quero que o Tanaka me ajude\". Para \"querer que NÃO faça\", use a forma negativa 〜ないで + ほしい: 行かないでほしい = \"quero que você não vá\". Como ほしい é adjetivo-い, conjuga como tal: ほしくない, ほしかった.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "〜てほしい (querer que alguém faça)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "A grande armadilha para brasileiros é confundir com 〜たい: \"eu quero ir\" = 行きたい, mas \"quero que ele vá\" = 行ってほしい. Quem deve agir vem com に, não com を. ほしい descreve um desejo seu, então o sujeito costuma ser a 1ª pessoa; para o desejo de terceiros use 〜てほしがっている. Por ser bem direto, em situação formal prefira pedidos mais polidos como 〜ていただけませんか.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 0,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [],
+    "lesson_unlocks_dropped_as_duplicate": 0,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 0,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [],
+    "exercise_item_repointed": 0,
+    "exercise_item_dropped_as_duplicate": 0,
+    "lesson_body_addresses_repointed": {},
+    "cumulative_known_set_lessons": 0
+   }
+  }
+ ],
+ "authoring_source": []
+}
