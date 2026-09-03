@@ -105,6 +105,13 @@ SUITE = [
     # full run — all 75 runnable manifest steps, all 787 exported files, ~90 s — is not in the suite:
     # run it before a release and whenever a step is added to the manifest (see README.md).
     ("validate_index_rebuildable.py --quick", "code"),
+    # ---- W34 (readiness G4/G10/G11). Three enforceable rules over `course/speak/` that were
+    # enforced by nothing: validate_speaking_path.py checks the strand histogram sums to 100 and
+    # never what it sums to, and neither R83 nor anything above R86's punctuation-equality had a
+    # gate at all. Each carries its own frozen baseline beside this file and its own --record.
+    ("validate_speak_strands.py", "code"),     # R78 budget per stage (ratchet: distance from band)
+    ("validate_speak_spiral.py", "code"),      # R83 early seeds reaching stages 7-12 (ratchet: reach)
+    ("validate_speak_duplicates.py", "code"),  # R86 hard + semantic near-duplicates (ratchet: pairs)
 ]
 
 

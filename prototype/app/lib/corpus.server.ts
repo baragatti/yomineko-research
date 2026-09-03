@@ -15,8 +15,32 @@ import strokesData from "../data/strokes.json";
 import kanaStrokesData from "../data/kanaStrokes.json";
 import strokeLinesData from "../data/strokeLines.json";
 import readingsData from "../data/readings.json";
+import buildData from "../data/_build.json";
 
 export const PT = "pt-BR";
+
+/**
+ * Release identity of the data this server is running, copied out of contracts/manifest.json by
+ * scripts/sync-data.mjs: the build date, the commit it was cut from, and the entity -> id-namespace
+ * map. Printable, and the reason no prefix is hardcoded below.
+ */
+export const build = {
+  date: buildData.date,
+  gitHead: buildData.git_head,
+  entities: buildData.entities as Readonly<Record<string, string | null>>,
+} as const;
+const NAMESPACES: Readonly<Record<string, string>> = buildData.namespaces;
+
+/**
+ * Route parameters carry the identifier, the data maps are keyed by the stable id: `/kanji/食` has
+ * to become "kanji:食" before a lookup. The prefix comes from the manifest's `id_namespace` via
+ * _build.json — the app never restates it. A value that is already qualified is returned unchanged.
+ */
+function stableId(entity: string, ident: string): string {
+  if (ident.includes(":")) return ident;
+  const ns = NAMESPACES[entity];
+  return ns ? `${ns}:${ident}` : ident;
+}
 
 /** localized value -> pt-BR string (falls back to en, then raw). */
 export function loc(v: unknown): string {
@@ -80,7 +104,8 @@ export function kanjiRomaji(k: any): string {
 }
 
 type Dict<T = any> = Record<string, T>;
-export const courses = coursesData as any[];
+// app/data maps are keyed by stable id now (courses by "mod:…"), so the ordered list is a values view.
+export const courses = Object.values(coursesData) as any[];
 const topics = topicsData as Dict;
 const lessons = lessonsData as Dict;
 const kanji = kanjiData as Dict;
@@ -112,9 +137,12 @@ export const getSentence = (slug: string) => sentences[slug];
 const readings = readingsData as Dict;
 /** an in-lesson reading-practice box (corpus/readings, our SELECTION format) by slug, or undefined. */
 export const getReading = (slug: string) => readings[slug];
-export const getKanji = (ch: string) => kanji[ch];
-export const getVocab = (hw: string) => vocab[hw];
-export const getGrammar = (key: string) => grammar[key];
+/** by character ("食") or by stable id ("kanji:食"). */
+export const getKanji = (ch: string) => kanji[stableId("kanji", ch)];
+/** by JMdict identifier ("1580640") or by stable id ("vocab:1580640") — never by headword. */
+export const getVocab = (id: string) => vocab[stableId("vocab", id)];
+/** by grammar key ("te-hoshii") or by stable id ("gram:te-hoshii"). */
+export const getGrammar = (key: string) => grammar[stableId("grammar", key)];
 
 export const allKanji = () => Object.values(kanji);
 export const allVocab = () => Object.values(vocab);

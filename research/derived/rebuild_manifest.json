@@ -1,1791 +1,1821 @@
 {
- "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
- "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
- "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
- "step_count": 113,
- "enabled_count": 77,
- "steps": [
-  {
-   "n": 1,
-   "phase": "schema",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/init_db.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "5318e7e2",
-   "first_commit_date": "2026-06-13",
-   "writes": [
-    "schema_migration"
-   ],
-   "note": "applies scripts/ingest/migrations/*.sql in filename order"
-  },
-  {
-   "n": 2,
-   "phase": "ingest",
-   "quick_family": null,
-   "script": "scripts/ingest/ingest_all.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "280ceb46",
-   "first_commit_date": "2026-06-13",
-   "writes": [
-    "dataset_source",
-    "kanji",
-    "kanji_component",
-    "kanji_reading",
-    "raw_jmdict_entry",
-    "raw_jmdict_form",
-    "raw_tatoeba_fts",
-    "raw_tatoeba_sentence",
-    "raw_tatoeba_translation"
-   ],
-   "note": "KANJIDIC2 + Kradfile + KanjiVG + JMdict + Tatoeba"
-  },
-  {
-   "n": 3,
-   "phase": "ingest",
-   "quick_family": null,
-   "script": "scripts/ingest/ingest_jec.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "18ad4d08",
-   "first_commit_date": "2026-06-15",
-   "writes": [
-    "dataset_source",
-    "raw_jec",
-    "raw_jec_fts"
-   ],
-   "note": "second real sentence source (CC-BY 3.0)"
-  },
-  {
-   "n": 4,
-   "phase": "ingest",
-   "quick_family": null,
-   "script": "scripts/ingest/unihan_radical.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "c84fc36f",
-   "first_commit_date": "2026-06-26",
-   "writes": [
-    "kanji"
-   ],
-   "note": "permissive Kangxi radical replaces the KANJIDIC one"
-  },
-  {
-   "n": 5,
-   "phase": "ingest",
-   "quick_family": null,
-   "script": "scripts/ingest/kanjialive_strokes.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "c9d81e05",
-   "first_commit_date": "2026-06-26",
-   "writes": [
-    "kanji_stroke"
-   ],
-   "note": ""
-  },
-  {
-   "n": 6,
-   "phase": "ingest",
-   "quick_family": null,
-   "script": "scripts/ingest/strokesvg_kana.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "1b5160a9",
-   "first_commit_date": "2026-06-26",
-   "writes": [
-    "kana_stroke"
-   ],
-   "note": ""
-  },
-  {
-   "n": 7,
-   "phase": "ingest",
-   "quick_family": null,
-   "script": "scripts/ingest/glyphwiki_strokes.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "31c8e160",
-   "first_commit_date": "2026-07-04",
-   "writes": [
-    "kanji_stroke_line"
-   ],
-   "note": "per-stroke centrelines from the KAGE dump"
-  },
-  {
-   "n": 8,
-   "phase": "ingest",
-   "quick_family": null,
-   "script": "scripts/ingest/build_kana.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "47f37ff7",
-   "first_commit_date": "2026-06-16",
-   "writes": [
-    "kana",
-    "kana_family"
-   ],
-   "note": "kana registry for the pre-N5 lessons"
-  },
-  {
-   "n": 9,
-   "phase": "levels",
-   "quick_family": null,
-   "script": "scripts/ingest/reconcile_levels.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "d0ff851f",
-   "first_commit_date": "2026-06-13",
-   "writes": [
-    "kanji",
-    "kanji_reading",
-    "vocab",
-    "vocab_form",
-    "vocab_kanji",
-    "vocab_sense"
-   ],
-   "note": "N5/N4 consensus + vocab promotion; SKIPS if already populated"
-  },
-  {
-   "n": 10,
-   "phase": "levels",
-   "quick_family": null,
-   "script": "scripts/ingest/ingest_n3.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "2851db53",
-   "first_commit_date": "2026-06-24",
-   "writes": [
-    "kanji",
-    "vocab",
-    "vocab_form",
-    "vocab_kanji",
-    "vocab_sense"
-   ],
-   "note": "additive N3 kanji+vocab"
-  },
-  {
-   "n": 11,
-   "phase": "levels",
-   "quick_family": null,
-   "script": "scripts/ingest/ingest_n2_n1.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "4620f925",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "kanji",
-    "vocab",
-    "vocab_form",
-    "vocab_kanji",
-    "vocab_sense"
-   ],
-   "note": "additive bank-only N2/N1"
-  },
-  {
-   "n": 12,
-   "phase": "levels",
-   "quick_family": null,
-   "script": "scripts/ingest/align_jlpt_kanji.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "163275eb",
-   "first_commit_date": "2026-07-05",
-   "writes": [
-    "kanji",
-    "sentence"
-   ],
-   "note": "exam-alignment kanji re-tag"
-  },
-  {
-   "n": 13,
-   "phase": "levels",
-   "quick_family": null,
-   "script": "scripts/ingest/build_frequency.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "84ef08fb",
-   "first_commit_date": "2026-08-05",
-   "writes": [
-    "vocab"
-   ],
-   "note": "vocab.freq_rank from the raw Tatoeba corpus"
-  },
-  {
-   "n": 14,
-   "phase": "levels",
-   "quick_family": null,
-   "script": "scripts/ingest/ingest_pitch.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "7bff196f",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "vocab_pitch"
-   ],
-   "note": "kanjium pitch accent; MUST follow the vocab promotion — it divides by the vocab count"
-  },
-  {
-   "n": 15,
-   "phase": "grammar",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/ingest_grammar.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "bccd7046",
-   "first_commit_date": "2026-06-13",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": ""
-  },
-  {
-   "n": 16,
-   "phase": "grammar",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/build_grammar_forms.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "5af4d87e",
-   "first_commit_date": "2026-06-15",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": "parses structure_pattern into forms_json"
-  },
-  {
-   "n": 17,
-   "phase": "grammar",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/persist_grammar.py",
-   "args": [
-    "--result",
-    "research/derived/grammar_n5_result.json"
-   ],
-   "enabled": true,
-   "first_commit": "19cf804a",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": ""
-  },
-  {
-   "n": 18,
-   "phase": "grammar",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/persist_grammar.py",
-   "args": [
-    "--result",
-    "research/derived/grammar_pc_result.json"
-   ],
-   "enabled": true,
-   "first_commit": "19cf804a",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": ""
-  },
-  {
-   "n": 19,
-   "phase": "grammar",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/persist_grammar.py",
-   "args": [
-    "--result",
-    "research/derived/grammar_pc2_result.json"
-   ],
-   "enabled": true,
-   "first_commit": "19cf804a",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": ""
-  },
-  {
-   "n": 20,
-   "phase": "grammar",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/persist_grammar_enrich.py",
-   "args": [
-    "--result",
-    "research/derived/grammar_enrich_result.json"
-   ],
-   "enabled": true,
-   "first_commit": "d5eb2991",
-   "first_commit_date": "2026-06-15",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": ""
-  },
-  {
-   "n": 21,
-   "phase": "grammar",
-   "quick_family": "grammar",
-   "script": "scripts/ingest/ingest_n3_grammar.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "2851db53",
-   "first_commit_date": "2026-06-24",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": "runs after build_grammar_forms: it writes forms_json, which that script used to add lazily"
-  },
-  {
-   "n": 22,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/ingest/persist_meanings.py",
-   "args": [
-    "--result",
-    "research/derived/meanings_run1_result.json"
-   ],
-   "enabled": true,
-   "first_commit": "19cf804a",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "vocab_sense"
-   ],
-   "note": ""
-  },
-  {
-   "n": 23,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/ingest/persist_meanings.py",
-   "args": [
-    "--result",
-    "research/derived/meanings_n4b_result.json"
-   ],
-   "enabled": true,
-   "first_commit": "19cf804a",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "vocab_sense"
-   ],
-   "note": ""
-  },
-  {
-   "n": 24,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/ingest/persist_meanings.py",
-   "args": [
-    "--result",
-    "research/derived/meanings_n4c_result.json"
-   ],
-   "enabled": true,
-   "first_commit": "19cf804a",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "vocab_sense"
-   ],
-   "note": ""
-  },
-  {
-   "n": 25,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/ingest/load_n3_ptbr.py",
-   "args": [
-    "kanji",
-    "research/derived/n3_kanji_ptbr_result.json"
-   ],
-   "enabled": false,
-   "first_commit": "2851db53",
-   "first_commit_date": "2026-06-24",
-   "writes": [
-    "kanji",
-    "localized_text",
-    "vocab_sense"
-   ],
-   "note": "the N3 pt-BR workflow output was never committed under a stable name; args unrecoverable from git"
-  },
-  {
-   "n": 26,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/ingest/load_n3_ptbr.py",
-   "args": [
-    "vocab",
-    "research/derived/n3_vocab_ptbr_result.json"
-   ],
-   "enabled": false,
-   "first_commit": "2851db53",
-   "first_commit_date": "2026-06-24",
-   "writes": [
-    "kanji",
-    "localized_text",
-    "vocab_sense"
-   ],
-   "note": "same as the kanji half: the workflow output file is not tracked"
-  },
-  {
-   "n": 27,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/ingest/load_n3_grammar_ptbr.py",
-   "args": [
-    "research/derived/n3_grammar_ptbr_result.json"
-   ],
-   "enabled": false,
-   "first_commit": "2851db53",
-   "first_commit_date": "2026-06-24",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "workflow output file is not tracked"
-  },
-  {
-   "n": 28,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/validate/reauthor_kanji_apply.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "ed1b7230",
-   "first_commit_date": "2026-06-26",
-   "writes": [
-    "kanji",
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/reauthor/, which .gitignore excludes: a clean clone cannot run this step"
-  },
-  {
-   "n": 29,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/validate/reauthor_vocab_apply.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "bd22a639",
-   "first_commit_date": "2026-06-26",
-   "writes": [
-    "localized_text",
-    "vocab_sense"
-   ],
-   "note": "inputs live under research/derived/reauthor/, which .gitignore excludes: a clean clone cannot run this step"
-  },
-  {
-   "n": 30,
-   "phase": "meanings",
-   "quick_family": null,
-   "script": "scripts/ingest/migrate_i18n.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "e662f684",
-   "first_commit_date": "2026-06-14",
-   "writes": [],
-   "note": "moves the legacy *_pt columns into localized_text; idempotent"
-  },
-  {
-   "n": 31,
-   "phase": "placement",
-   "quick_family": null,
-   "script": "scripts/ingest/place_items.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "69f03404",
-   "first_commit_date": "2026-06-13",
-   "writes": [
-    "course_module",
-    "grammar_point",
-    "kanji",
-    "topic",
-    "vocab"
-   ],
-   "note": "modules/topics + first-pass placement"
-  },
-  {
-   "n": 32,
-   "phase": "placement",
-   "quick_family": null,
-   "script": "scripts/ingest/create_n3_topics.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "2851db53",
-   "first_commit_date": "2026-06-24",
-   "writes": [
-    "course_module",
-    "grammar_point",
-    "topic"
-   ],
-   "note": ""
-  },
-  {
-   "n": 33,
-   "phase": "placement",
-   "quick_family": null,
-   "script": "scripts/ingest/build_exam_kanji_lessons.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "163275eb",
-   "first_commit_date": "2026-07-05",
-   "writes": [
-    "topic"
-   ],
-   "note": ""
-  },
-  {
-   "n": 34,
-   "phase": "placement",
-   "quick_family": null,
-   "script": "scripts/ingest/renumber_topics.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "topic"
-   ],
-   "note": "W01: the renumbering that put the two kanji-exame topics inside their own levels (n4 +1, n3 +2, see scripts/contracts/archive_orphan_topics.py) was applied to the DB and never scripted; this is that step"
-  },
-  {
-   "n": 35,
-   "phase": "placement",
-   "quick_family": null,
-   "script": "scripts/ingest/reset_n3_placements.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "253c5dc1",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "kanji",
-    "vocab"
-   ],
-   "note": "clears N3 placement so load_lessons re-derives it"
-  },
-  {
-   "n": 36,
-   "phase": "placement",
-   "quick_family": null,
-   "script": "scripts/ingest/add_objectives.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "4175ca66",
-   "first_commit_date": "2026-06-14",
-   "writes": [],
-   "note": "pt-BR topic objectives + module overviews (Layer C)"
-  },
-  {
-   "n": 37,
-   "phase": "families",
-   "quick_family": null,
-   "script": "scripts/ingest/build_families.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "f1de6407",
-   "first_commit_date": "2026-06-13",
-   "writes": [
-    "family",
-    "family_member"
-   ],
-   "note": ""
-  },
-  {
-   "n": 38,
-   "phase": "families",
-   "quick_family": null,
-   "script": "scripts/ingest/build_families_full.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "336872b3",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "family",
-    "family_member"
-   ],
-   "note": ""
-  },
-  {
-   "n": 39,
-   "phase": "families",
-   "quick_family": null,
-   "script": "scripts/ingest/fix_contrasts.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "4175ca66",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "family",
-    "family_member",
-    "grammar_related"
-   ],
-   "note": ""
-  },
-  {
-   "n": 40,
-   "phase": "families",
-   "quick_family": null,
-   "script": "scripts/ingest/fix_derived.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "1468ebba",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "grammar_related",
-    "kanji_reading"
-   ],
-   "note": ""
-  },
-  {
-   "n": 41,
-   "phase": "bank",
-   "quick_family": null,
-   "script": "scripts/ingest/replay_all.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "297ca184",
-   "first_commit_date": "2026-06-15",
-   "writes": [
-    "sentence_vocab"
-   ],
-   "note": "wraps reset_sentences, persist_batch x42, relink_vocab, particle_link --target 8, repair_glosses, clean_emdash --apply, load_lessons, build_sentence_vocab"
-  },
-  {
-   "n": 42,
-   "phase": "bank",
-   "quick_family": null,
-   "script": "scripts/ingest/ingest_mined_stages.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "126ca96d",
-   "first_commit_date": "2026-08-06",
-   "writes": [],
-   "note": "the 323 mined Tatoeba sentences behind the speaking stages; missed by the first writer sweep because it persists through persist_dissection rather than its own INSERT"
-  },
-  {
-   "n": 43,
-   "phase": "bank",
-   "quick_family": null,
-   "script": "scripts/ingest/apply_punchlist.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "ac715792",
-   "first_commit_date": "2026-06-14",
-   "writes": [
-    "grammar_point",
-    "lesson_introduces",
-    "sentence_grammar"
-   ],
-   "note": "te-form anchor + recompute sentence.level"
-  },
-  {
-   "n": 44,
-   "phase": "bank",
-   "quick_family": null,
-   "script": "scripts/ingest/build_readings.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "c957e20b",
-   "first_commit_date": "2026-06-26",
-   "writes": [
-    "reading"
-   ],
-   "note": "in-lesson reading boxes, selected from the bank"
-  },
-  {
-   "n": 45,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/ingest/tr_load.py",
-   "args": [
-    "grammar_en"
-   ],
-   "enabled": false,
-   "first_commit": "bdbc513c",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task grammar_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
-  },
-  {
-   "n": 46,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/ingest/tr_load.py",
-   "args": [
-    "n2n1_pt"
-   ],
-   "enabled": false,
-   "first_commit": "bdbc513c",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task n2n1_pt; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
-  },
-  {
-   "n": 47,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/ingest/tr_load.py",
-   "args": [
-    "sent_trans_en"
-   ],
-   "enabled": false,
-   "first_commit": "bdbc513c",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task sent_trans_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
-  },
-  {
-   "n": 48,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/ingest/tr_load.py",
-   "args": [
-    "sentence_en"
-   ],
-   "enabled": false,
-   "first_commit": "bdbc513c",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task sentence_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
-  },
-  {
-   "n": 49,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/ingest/tr_form_meanings.py",
-   "args": [
-    "load"
-   ],
-   "enabled": false,
-   "first_commit": "bdbc513c",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step. MUST run after the tr_load steps above: grammar_en carries form_meanings through the generic string/list pipeline, which flattens the {form: meaning} dict this step reassembles"
-  },
-  {
-   "n": 50,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/accent_sweep_localized.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "deterministic diacritic restore"
-  },
-  {
-   "n": 51,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "family.label"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class family.label; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 52,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "grammar.explanation"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.explanation; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 53,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "grammar.formation"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.formation; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 54,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "grammar.label"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.label; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 55,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "grammar.nuance"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.nuance; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 56,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "kanji.meanings"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class kanji.meanings; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 57,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "particle.explanation"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class particle.explanation; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 58,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "particle.function"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class particle.function; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 59,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "sentence.structure_explanation"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class sentence.structure_explanation; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 60,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "token.conjugation_note"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.conjugation_note; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 61,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "token.gloss"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.gloss; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 62,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "token.role"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.role; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 63,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/gt_audit_apply.py",
-   "args": [
-    "vocab.gloss"
-   ],
-   "enabled": false,
-   "first_commit": "f9a29f06",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class vocab.gloss; the recorded '<key>' was a placeholder)"
-  },
-  {
-   "n": 64,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/descaffold_strip.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "1d1d254c",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "deterministic tier-1 de-scaffolder"
-  },
-  {
-   "n": 65,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/descaffold_apply.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "1d1d254c",
-   "first_commit_date": "2026-06-25",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step"
-  },
-  {
-   "n": 66,
-   "phase": "translation",
-   "quick_family": null,
-   "script": "scripts/validate/apply_full_audit.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "f6fbbc7a",
-   "first_commit_date": "2026-06-25",
-   "writes": [],
-   "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step"
-  },
-  {
-   "n": 67,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/ingest/fix_notation_db.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "7a69ae77",
-   "first_commit_date": "2026-06-18",
-   "writes": [
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 68,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/ingest/modernize_nurse_term.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "7a69ae77",
-   "first_commit_date": "2026-06-18",
-   "writes": [
-    "localized_text",
-    "sentence",
-    "token",
-    "vocab",
-    "vocab_form",
-    "vocab_kanji",
-    "vocab_pitch",
-    "vocab_sense"
-   ],
-   "note": ""
-  },
-  {
-   "n": 69,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fable5_kanji_apply.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "ec85e311",
-   "first_commit_date": "2026-07-01",
-   "writes": [
-    "kanji",
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 70,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fable5_fix_romaji.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "aeec3ace",
-   "first_commit_date": "2026-07-02",
-   "writes": [
-    "reading",
-    "sentence",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 71,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fable5_fix_sekken_level.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "e91e8f12",
-   "first_commit_date": "2026-07-09",
-   "writes": [
-    "vocab"
-   ],
-   "note": ""
-  },
-  {
-   "n": 72,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fable5_vocab_apply.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "e91e8f12",
-   "first_commit_date": "2026-07-09",
-   "writes": [
-    "localized_text",
-    "vocab",
-    "vocab_sense"
-   ],
-   "note": ""
-  },
-  {
-   "n": 73,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fable5_fix_whitespace_tokens.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "64876297",
-   "first_commit_date": "2026-07-27",
-   "writes": [
-    "sentence",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 74,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fable5_sentences_apply.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "cfca6277",
-   "first_commit_date": "2026-08-05",
-   "writes": [
-    "localized_text",
-    "sentence",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 75,
-   "phase": "repair",
-   "quick_family": "grammar",
-   "script": "scripts/fable5_grammar_apply.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "a9772e7a",
-   "first_commit_date": "2026-08-05",
-   "writes": [
-    "grammar_point",
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 76,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fable5_lessons_apply.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "921ba95c",
-   "first_commit_date": "2026-08-05",
-   "writes": [
-    "exercise",
-    "localized_text",
-    "reading"
-   ],
-   "note": ""
-  },
-  {
-   "n": 77,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fix_sokuon_romaji.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "53d0d540",
-   "first_commit_date": "2026-08-06",
-   "writes": [
-    "reading",
-    "sentence",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 78,
-   "phase": "repair",
-   "quick_family": "grammar",
-   "script": "scripts/fix_instruction_leak_grammar.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "3a152cf6",
-   "first_commit_date": "2026-08-06",
-   "writes": [
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 79,
-   "phase": "repair",
-   "quick_family": "grammar",
-   "script": "scripts/apply_phase4_grammar.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "59ebe13c",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "grammar_point",
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 80,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fix_homophone_vocab_links.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "294fe901",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "sentence_vocab",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 81,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_ptliteral_round2.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "c9d54f0e",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 82,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_redissect_round2.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "c9d54f0e",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "sentence_vocab",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 83,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fix_stale_token_romaji.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "ad36f655",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 84,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_layer_a_pairing.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "c9c82ca4",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "sentence"
-   ],
-   "note": ""
-  },
-  {
-   "n": 85,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_romaji_disputes.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "c9c82ca4",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "sentence",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 86,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_escalated_sentences.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "c6ed35e3",
-   "first_commit_date": "2026-08-19",
-   "writes": [
-    "localized_text",
-    "particle",
-    "sentence",
-    "token"
-   ],
-   "note": ""
-  },
-  {
-   "n": 87,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/ingest/merge_kanji_reading_notes.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "d2f82d7c",
-   "first_commit_date": "2026-08-20",
-   "writes": [
-    "kanji_reading",
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 88,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/fix_particle_function_type.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "632d05db",
-   "first_commit_date": "2026-08-20",
-   "writes": [
-    "particle"
-   ],
-   "note": ""
-  },
-  {
-   "n": 89,
-   "phase": "repair",
-   "quick_family": "grammar",
-   "script": "scripts/merge_grammar_formation.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "632d05db",
-   "first_commit_date": "2026-08-20",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": ""
-  },
-  {
-   "n": 90,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/merge_sentence_structure.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "632d05db",
-   "first_commit_date": "2026-08-20",
-   "writes": [
-    "sentence"
-   ],
-   "note": ""
-  },
-  {
-   "n": 91,
-   "phase": "repair",
-   "quick_family": "grammar",
-   "script": "scripts/apply_grammar_formation_repairs.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": "c130ec82",
-   "first_commit_date": "2026-08-21",
-   "writes": [
-    "grammar_point"
-   ],
-   "note": ""
-  },
-  {
-   "n": 92,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_qa_instruction_leaks.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "8e0d9af2",
-   "first_commit_date": "2026-08-26",
-   "writes": [
-    "localized_text",
-    "the"
-   ],
-   "note": "--check is the dry run; bare invocation applies"
-  },
-  {
-   "n": 93,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_missing_homograph_unlocks.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "8b101ac6",
-   "first_commit_date": "2026-08-26",
-   "writes": [
-    "lesson_unlocks"
-   ],
-   "note": ""
-  },
-  {
-   "n": 94,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_phase7_content_repairs.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "8b101ac6",
-   "first_commit_date": "2026-08-26",
-   "writes": [
-    "exercise",
-    "grammar_point",
-    "localized_text",
-    "reading",
-    "sentence_kanji",
-    "tokens"
-   ],
-   "note": ""
-  },
-  {
-   "n": 95,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_readings_furigana_repairs.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "ac033368",
-   "first_commit_date": "2026-08-27",
-   "writes": [
-    "reading"
-   ],
-   "note": ""
-  },
-  {
-   "n": 96,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_en_anchor_backfill.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "c7048fe6",
-   "first_commit_date": "2026-08-27",
-   "writes": [
-    "matched",
-    "sentence"
-   ],
-   "note": "cannot apply in a rebuild: it recomputes its own targets from the database ('every sentence the exporter would ship with no en anchor'), and with the translation steps off that set is 135 records wider than research/derived/tatoeba_mined_stages.json can answer for, so it refuses all of them and exits 2. 37 stay unanswerable even with the tr/ trees restored"
-  },
-  {
-   "n": 97,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_godan_u_exception.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "2dec386e",
-   "first_commit_date": "2026-08-27",
-   "writes": [
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 98,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_sentence_text_repairs.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "5cca48c5",
-   "first_commit_date": "2026-08-27",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "cannot apply in a rebuild: 135 of its anchors are localized_text rows the rebuild does not have (109 sentence structure_explanation, the rest translation_literal), so it refuses them and exits 2"
-  },
-  {
-   "n": 99,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_jargon_pass2.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "2911ff68",
-   "first_commit_date": "2026-08-27",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "cannot apply in a rebuild: 90 anchors are structure_explanation rows the rebuild does not have"
-  },
-  {
-   "n": 100,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_stage_tag_backfill.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "7592cc28",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "sentence"
-   ],
-   "note": ""
-  },
-  {
-   "n": 101,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_kanji_record_repairs.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "f8ea9647",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "kanji_reading",
-    "localized_text"
-   ],
-   "note": ""
-  },
-  {
-   "n": 102,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_reading_titles.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "f8ea9647",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "reading"
-   ],
-   "note": "cannot apply in a rebuild: 189 of the reading slugs it names do not exist. db/corpus.sqlite holds 286 reading rows accumulated over every historical run of build_readings.py; one replay of today's script over today's lessons builds 130"
-  },
-  {
-   "n": 103,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_readings_composition_repairs.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "f8ea9647",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "reading"
-   ],
-   "note": ""
-  },
-  {
-   "n": 104,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_translation_defect_repairs.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "f8ea9647",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "localized_text"
-   ],
-   "note": "cannot apply in a rebuild: 10 anchors are en-locale localized_text rows the translation steps write"
-  },
-  {
-   "n": 105,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_vocab_gloss_repairs.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "f8ea9647",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "localized_text",
-    "vocab",
-    "vocab_sense"
-   ],
-   "note": "cannot apply in a rebuild: 184 sense anchors differ — vocab senses come from reauthor_vocab_apply.py (step 29), which a clean clone cannot run"
-  },
-  {
-   "n": 106,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_grammar_record_repairs.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "3bfecf38",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "grammar_point",
-    "localized_text",
-    "sentence_grammar"
-   ],
-   "note": "cannot apply in a rebuild: 70 anchors (grammar nuance/formation/explanation, both locales) are missing or hold different text"
-  },
-  {
-   "n": 107,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_translation_followups.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "3bfecf38",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "localized_text",
-    "sentence"
-   ],
-   "note": "cannot apply in a rebuild without the en locale; it passes as soon as the tr_load steps can run"
-  },
-  {
-   "n": 108,
-   "phase": "repair",
-   "quick_family": null,
-   "script": "scripts/apply_grammar_followups.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "2a8f783e",
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "grammar_point",
-    "localized_text",
-    "sentence_grammar"
-   ],
-   "note": "cannot apply in a rebuild: 12 sentences carry different grammar tags than the pass was written against, and it refuses to re-judge them"
-  },
-  {
-   "n": 109,
-   "phase": "export_layer",
-   "quick_family": null,
-   "script": "scripts/contracts/normalize_booleans.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "6de5daa0",
-   "first_commit_date": "2026-08-26",
-   "writes": [],
-   "note": "rewrites the committed JSON, not the DB; its producers were fixed at source, so a re-export should reproduce it — that claim is what this validator now measures"
-  },
-  {
-   "n": 110,
-   "phase": "export_layer",
-   "quick_family": null,
-   "script": "scripts/contracts/migrate_exam_banks_p7.py",
-   "args": [],
-   "enabled": false,
-   "first_commit": "8b101ac6",
-   "first_commit_date": "2026-08-26",
-   "writes": [],
-   "note": "rewrites the committed exam banks in place and says so: the banks cannot be regenerated yet (W17/W18). Out of scope here; the exam builders are not run by the rebuild validator"
-  },
-  {
-   "n": 111,
-   "phase": "finalise",
-   "quick_family": null,
-   "script": "scripts/ingest/build_sentence_vocab.py",
-   "args": [],
-   "enabled": true,
-   "first_commit": "8b101ac6",
-   "first_commit_date": "2026-08-26",
-   "writes": [
-    "sentence_vocab"
-   ],
-   "note": "re-run last: the token-level repairs above move token.vocab_id, and this is the single writer that restores all three linking rules"
-  },
-  {
-   "n": 112,
-   "phase": "repair",
-   "quick_family": "grammar",
-   "script": "scripts/apply_level_evidence.py",
-   "args": [
-    "--db-only"
-   ],
-   "enabled": true,
-   "first_commit": null,
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "grammar_point",
-    "kanji",
-    "vocab"
-   ],
-   "note": "W10 / owner decision A4: level_agreement repairs from the tracked table research/derived/repairs/level_evidence_repairs.json. --db-only because the rebuild exports the tree itself afterwards; run without it by hand and the script also patches the committed JSON. Placed last: nothing downstream reads level_agreement, and the level fields it touches are written by steps far earlier in the chain"
-  },
-  {
-   "n": 113,
-   "phase": "repair",
-   "quick_family": "grammar",
-   "script": "scripts/migrate_grammar_merge.py",
-   "args": [
-    "--apply"
-   ],
-   "enabled": true,
-   "first_commit": null,
-   "first_commit_date": "2026-09-02",
-   "writes": [
-    "grammar_point",
-    "localized_text",
-    "sentence",
-    "sentence_grammar",
-    "lesson",
-    "lesson_unlocks",
-    "lesson_introduces",
-    "lesson_needs",
-    "family_member",
-    "exercise_item",
-    "grammar_related"
-   ],
-   "note": "W08 / owner decision A3: merges the two duplicate-identity grammar points (gram:gp -> gram:da-desu, gram:gp-152 -> gram:te-hoshii) with no content loss. Runs LAST, and has to: it consumes the finished graph, and every earlier step that writes grammar_point, sentence_grammar, family_member or a lesson body would otherwise re-introduce the loser's edges after the merge. Idempotent -- a second run reads grammar_point.deprecated_by and does nothing. It also rewrites the authoring source under research/derived/lessons/, which the rebuild does not re-read, so on a rebuild that part is a no-op re-proof rather than a change. Its EXACT preconditions (MERGES[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of merging blind"
+  "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
+  "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
+  "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
+  "step_count": 114,
+  "enabled_count": 78,
+  "steps": [
+    {
+      "n": 1,
+      "phase": "schema",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/init_db.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "5318e7e2",
+      "first_commit_date": "2026-06-13",
+      "writes": [
+        "schema_migration"
+      ],
+      "note": "applies scripts/ingest/migrations/*.sql in filename order"
+    },
+    {
+      "n": 2,
+      "phase": "ingest",
+      "quick_family": null,
+      "script": "scripts/ingest/ingest_all.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "280ceb46",
+      "first_commit_date": "2026-06-13",
+      "writes": [
+        "dataset_source",
+        "kanji",
+        "kanji_component",
+        "kanji_reading",
+        "raw_jmdict_entry",
+        "raw_jmdict_form",
+        "raw_tatoeba_fts",
+        "raw_tatoeba_sentence",
+        "raw_tatoeba_translation"
+      ],
+      "note": "KANJIDIC2 + Kradfile + KanjiVG + JMdict + Tatoeba"
+    },
+    {
+      "n": 3,
+      "phase": "ingest",
+      "quick_family": null,
+      "script": "scripts/ingest/ingest_jec.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "18ad4d08",
+      "first_commit_date": "2026-06-15",
+      "writes": [
+        "dataset_source",
+        "raw_jec",
+        "raw_jec_fts"
+      ],
+      "note": "second real sentence source (CC-BY 3.0)"
+    },
+    {
+      "n": 4,
+      "phase": "ingest",
+      "quick_family": null,
+      "script": "scripts/ingest/unihan_radical.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "c84fc36f",
+      "first_commit_date": "2026-06-26",
+      "writes": [
+        "kanji"
+      ],
+      "note": "permissive Kangxi radical replaces the KANJIDIC one"
+    },
+    {
+      "n": 5,
+      "phase": "ingest",
+      "quick_family": null,
+      "script": "scripts/ingest/kanjialive_strokes.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "c9d81e05",
+      "first_commit_date": "2026-06-26",
+      "writes": [
+        "kanji_stroke"
+      ],
+      "note": ""
+    },
+    {
+      "n": 6,
+      "phase": "ingest",
+      "quick_family": null,
+      "script": "scripts/ingest/strokesvg_kana.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "1b5160a9",
+      "first_commit_date": "2026-06-26",
+      "writes": [
+        "kana_stroke"
+      ],
+      "note": ""
+    },
+    {
+      "n": 7,
+      "phase": "ingest",
+      "quick_family": null,
+      "script": "scripts/ingest/glyphwiki_strokes.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "31c8e160",
+      "first_commit_date": "2026-07-04",
+      "writes": [
+        "kanji_stroke_line"
+      ],
+      "note": "per-stroke centrelines from the KAGE dump"
+    },
+    {
+      "n": 8,
+      "phase": "ingest",
+      "quick_family": null,
+      "script": "scripts/ingest/build_kana.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "47f37ff7",
+      "first_commit_date": "2026-06-16",
+      "writes": [
+        "kana",
+        "kana_family"
+      ],
+      "note": "kana registry for the pre-N5 lessons"
+    },
+    {
+      "n": 9,
+      "phase": "levels",
+      "quick_family": null,
+      "script": "scripts/ingest/reconcile_levels.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "d0ff851f",
+      "first_commit_date": "2026-06-13",
+      "writes": [
+        "kanji",
+        "kanji_reading",
+        "vocab",
+        "vocab_form",
+        "vocab_kanji",
+        "vocab_sense"
+      ],
+      "note": "N5/N4 consensus + vocab promotion; SKIPS if already populated"
+    },
+    {
+      "n": 10,
+      "phase": "levels",
+      "quick_family": null,
+      "script": "scripts/ingest/ingest_n3.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "2851db53",
+      "first_commit_date": "2026-06-24",
+      "writes": [
+        "kanji",
+        "vocab",
+        "vocab_form",
+        "vocab_kanji",
+        "vocab_sense"
+      ],
+      "note": "additive N3 kanji+vocab"
+    },
+    {
+      "n": 11,
+      "phase": "levels",
+      "quick_family": null,
+      "script": "scripts/ingest/ingest_n2_n1.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "4620f925",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "kanji",
+        "vocab",
+        "vocab_form",
+        "vocab_kanji",
+        "vocab_sense"
+      ],
+      "note": "additive bank-only N2/N1"
+    },
+    {
+      "n": 12,
+      "phase": "levels",
+      "quick_family": null,
+      "script": "scripts/ingest/align_jlpt_kanji.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "163275eb",
+      "first_commit_date": "2026-07-05",
+      "writes": [
+        "kanji",
+        "sentence"
+      ],
+      "note": "exam-alignment kanji re-tag"
+    },
+    {
+      "n": 13,
+      "phase": "levels",
+      "quick_family": null,
+      "script": "scripts/ingest/build_frequency.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "84ef08fb",
+      "first_commit_date": "2026-08-05",
+      "writes": [
+        "vocab"
+      ],
+      "note": "vocab.freq_rank from the raw Tatoeba corpus"
+    },
+    {
+      "n": 14,
+      "phase": "levels",
+      "quick_family": null,
+      "script": "scripts/ingest/ingest_pitch.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "7bff196f",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "vocab_pitch"
+      ],
+      "note": "kanjium pitch accent; MUST follow the vocab promotion — it divides by the vocab count"
+    },
+    {
+      "n": 15,
+      "phase": "grammar",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/ingest_grammar.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "bccd7046",
+      "first_commit_date": "2026-06-13",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": ""
+    },
+    {
+      "n": 16,
+      "phase": "grammar",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/build_grammar_forms.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "5af4d87e",
+      "first_commit_date": "2026-06-15",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": "parses structure_pattern into forms_json"
+    },
+    {
+      "n": 17,
+      "phase": "grammar",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/persist_grammar.py",
+      "args": [
+        "--result",
+        "research/derived/grammar_n5_result.json"
+      ],
+      "enabled": true,
+      "first_commit": "19cf804a",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": ""
+    },
+    {
+      "n": 18,
+      "phase": "grammar",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/persist_grammar.py",
+      "args": [
+        "--result",
+        "research/derived/grammar_pc_result.json"
+      ],
+      "enabled": true,
+      "first_commit": "19cf804a",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": ""
+    },
+    {
+      "n": 19,
+      "phase": "grammar",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/persist_grammar.py",
+      "args": [
+        "--result",
+        "research/derived/grammar_pc2_result.json"
+      ],
+      "enabled": true,
+      "first_commit": "19cf804a",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": ""
+    },
+    {
+      "n": 20,
+      "phase": "grammar",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/persist_grammar_enrich.py",
+      "args": [
+        "--result",
+        "research/derived/grammar_enrich_result.json"
+      ],
+      "enabled": true,
+      "first_commit": "d5eb2991",
+      "first_commit_date": "2026-06-15",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": ""
+    },
+    {
+      "n": 21,
+      "phase": "grammar",
+      "quick_family": "grammar",
+      "script": "scripts/ingest/ingest_n3_grammar.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "2851db53",
+      "first_commit_date": "2026-06-24",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": "runs after build_grammar_forms: it writes forms_json, which that script used to add lazily"
+    },
+    {
+      "n": 22,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/ingest/persist_meanings.py",
+      "args": [
+        "--result",
+        "research/derived/meanings_run1_result.json"
+      ],
+      "enabled": true,
+      "first_commit": "19cf804a",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "vocab_sense"
+      ],
+      "note": ""
+    },
+    {
+      "n": 23,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/ingest/persist_meanings.py",
+      "args": [
+        "--result",
+        "research/derived/meanings_n4b_result.json"
+      ],
+      "enabled": true,
+      "first_commit": "19cf804a",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "vocab_sense"
+      ],
+      "note": ""
+    },
+    {
+      "n": 24,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/ingest/persist_meanings.py",
+      "args": [
+        "--result",
+        "research/derived/meanings_n4c_result.json"
+      ],
+      "enabled": true,
+      "first_commit": "19cf804a",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "vocab_sense"
+      ],
+      "note": ""
+    },
+    {
+      "n": 25,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/ingest/load_n3_ptbr.py",
+      "args": [
+        "kanji",
+        "research/derived/n3_kanji_ptbr_result.json"
+      ],
+      "enabled": false,
+      "first_commit": "2851db53",
+      "first_commit_date": "2026-06-24",
+      "writes": [
+        "kanji",
+        "localized_text",
+        "vocab_sense"
+      ],
+      "note": "the N3 pt-BR workflow output was never committed under a stable name; args unrecoverable from git"
+    },
+    {
+      "n": 26,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/ingest/load_n3_ptbr.py",
+      "args": [
+        "vocab",
+        "research/derived/n3_vocab_ptbr_result.json"
+      ],
+      "enabled": false,
+      "first_commit": "2851db53",
+      "first_commit_date": "2026-06-24",
+      "writes": [
+        "kanji",
+        "localized_text",
+        "vocab_sense"
+      ],
+      "note": "same as the kanji half: the workflow output file is not tracked"
+    },
+    {
+      "n": 27,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/ingest/load_n3_grammar_ptbr.py",
+      "args": [
+        "research/derived/n3_grammar_ptbr_result.json"
+      ],
+      "enabled": false,
+      "first_commit": "2851db53",
+      "first_commit_date": "2026-06-24",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "workflow output file is not tracked"
+    },
+    {
+      "n": 28,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/validate/reauthor_kanji_apply.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "ed1b7230",
+      "first_commit_date": "2026-06-26",
+      "writes": [
+        "kanji",
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/reauthor/, which .gitignore excludes: a clean clone cannot run this step"
+    },
+    {
+      "n": 29,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/validate/reauthor_vocab_apply.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "bd22a639",
+      "first_commit_date": "2026-06-26",
+      "writes": [
+        "localized_text",
+        "vocab_sense"
+      ],
+      "note": "inputs live under research/derived/reauthor/, which .gitignore excludes: a clean clone cannot run this step"
+    },
+    {
+      "n": 30,
+      "phase": "meanings",
+      "quick_family": null,
+      "script": "scripts/ingest/migrate_i18n.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "e662f684",
+      "first_commit_date": "2026-06-14",
+      "writes": [],
+      "note": "moves the legacy *_pt columns into localized_text; idempotent"
+    },
+    {
+      "n": 31,
+      "phase": "placement",
+      "quick_family": null,
+      "script": "scripts/ingest/place_items.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "69f03404",
+      "first_commit_date": "2026-06-13",
+      "writes": [
+        "course_module",
+        "grammar_point",
+        "kanji",
+        "topic",
+        "vocab"
+      ],
+      "note": "modules/topics + first-pass placement"
+    },
+    {
+      "n": 32,
+      "phase": "placement",
+      "quick_family": null,
+      "script": "scripts/ingest/create_n3_topics.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "2851db53",
+      "first_commit_date": "2026-06-24",
+      "writes": [
+        "course_module",
+        "grammar_point",
+        "topic"
+      ],
+      "note": ""
+    },
+    {
+      "n": 33,
+      "phase": "placement",
+      "quick_family": null,
+      "script": "scripts/ingest/build_exam_kanji_lessons.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "163275eb",
+      "first_commit_date": "2026-07-05",
+      "writes": [
+        "topic"
+      ],
+      "note": ""
+    },
+    {
+      "n": 34,
+      "phase": "placement",
+      "quick_family": null,
+      "script": "scripts/ingest/renumber_topics.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "topic"
+      ],
+      "note": "W01: the renumbering that put the two kanji-exame topics inside their own levels (n4 +1, n3 +2, see scripts/contracts/archive_orphan_topics.py) was applied to the DB and never scripted; this is that step"
+    },
+    {
+      "n": 35,
+      "phase": "placement",
+      "quick_family": null,
+      "script": "scripts/ingest/reset_n3_placements.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "253c5dc1",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "kanji",
+        "vocab"
+      ],
+      "note": "clears N3 placement so load_lessons re-derives it"
+    },
+    {
+      "n": 36,
+      "phase": "placement",
+      "quick_family": null,
+      "script": "scripts/ingest/add_objectives.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "4175ca66",
+      "first_commit_date": "2026-06-14",
+      "writes": [],
+      "note": "pt-BR topic objectives + module overviews (Layer C)"
+    },
+    {
+      "n": 37,
+      "phase": "families",
+      "quick_family": null,
+      "script": "scripts/ingest/build_families.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "f1de6407",
+      "first_commit_date": "2026-06-13",
+      "writes": [
+        "family",
+        "family_member"
+      ],
+      "note": ""
+    },
+    {
+      "n": 38,
+      "phase": "families",
+      "quick_family": null,
+      "script": "scripts/ingest/build_families_full.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "336872b3",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "family",
+        "family_member"
+      ],
+      "note": ""
+    },
+    {
+      "n": 39,
+      "phase": "families",
+      "quick_family": null,
+      "script": "scripts/ingest/fix_contrasts.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "4175ca66",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "family",
+        "family_member",
+        "grammar_related"
+      ],
+      "note": ""
+    },
+    {
+      "n": 40,
+      "phase": "families",
+      "quick_family": null,
+      "script": "scripts/ingest/fix_derived.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "1468ebba",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "grammar_related",
+        "kanji_reading"
+      ],
+      "note": ""
+    },
+    {
+      "n": 41,
+      "phase": "bank",
+      "quick_family": null,
+      "script": "scripts/ingest/replay_all.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "297ca184",
+      "first_commit_date": "2026-06-15",
+      "writes": [
+        "sentence_vocab"
+      ],
+      "note": "wraps reset_sentences, persist_batch x42, relink_vocab, particle_link --target 8, repair_glosses, clean_emdash --apply, load_lessons, build_sentence_vocab"
+    },
+    {
+      "n": 42,
+      "phase": "bank",
+      "quick_family": null,
+      "script": "scripts/ingest/ingest_mined_stages.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "126ca96d",
+      "first_commit_date": "2026-08-06",
+      "writes": [],
+      "note": "the 323 mined Tatoeba sentences behind the speaking stages; missed by the first writer sweep because it persists through persist_dissection rather than its own INSERT"
+    },
+    {
+      "n": 43,
+      "phase": "bank",
+      "quick_family": null,
+      "script": "scripts/ingest/apply_punchlist.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "ac715792",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "grammar_point",
+        "lesson_introduces",
+        "sentence_grammar"
+      ],
+      "note": "te-form anchor + recompute sentence.level"
+    },
+    {
+      "n": 44,
+      "phase": "bank",
+      "quick_family": null,
+      "script": "scripts/ingest/build_readings.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "c957e20b",
+      "first_commit_date": "2026-06-26",
+      "writes": [
+        "reading"
+      ],
+      "note": "in-lesson reading boxes, selected from the bank"
+    },
+    {
+      "n": 45,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/ingest/tr_load.py",
+      "args": [
+        "grammar_en"
+      ],
+      "enabled": false,
+      "first_commit": "bdbc513c",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task grammar_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
+    },
+    {
+      "n": 46,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/ingest/tr_load.py",
+      "args": [
+        "n2n1_pt"
+      ],
+      "enabled": false,
+      "first_commit": "bdbc513c",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task n2n1_pt; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
+    },
+    {
+      "n": 47,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/ingest/tr_load.py",
+      "args": [
+        "sent_trans_en"
+      ],
+      "enabled": false,
+      "first_commit": "bdbc513c",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task sent_trans_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
+    },
+    {
+      "n": 48,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/ingest/tr_load.py",
+      "args": [
+        "sentence_en"
+      ],
+      "enabled": false,
+      "first_commit": "bdbc513c",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task sentence_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
+    },
+    {
+      "n": 49,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/ingest/tr_form_meanings.py",
+      "args": [
+        "load"
+      ],
+      "enabled": false,
+      "first_commit": "bdbc513c",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step. MUST run after the tr_load steps above: grammar_en carries form_meanings through the generic string/list pipeline, which flattens the {form: meaning} dict this step reassembles"
+    },
+    {
+      "n": 50,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/accent_sweep_localized.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "deterministic diacritic restore"
+    },
+    {
+      "n": 51,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "family.label"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class family.label; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 52,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "grammar.explanation"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.explanation; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 53,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "grammar.formation"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.formation; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 54,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "grammar.label"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.label; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 55,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "grammar.nuance"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.nuance; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 56,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "kanji.meanings"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class kanji.meanings; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 57,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "particle.explanation"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class particle.explanation; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 58,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "particle.function"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class particle.function; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 59,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "sentence.structure_explanation"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class sentence.structure_explanation; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 60,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "token.conjugation_note"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.conjugation_note; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 61,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "token.gloss"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.gloss; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 62,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "token.role"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.role; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 63,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/gt_audit_apply.py",
+      "args": [
+        "vocab.gloss"
+      ],
+      "enabled": false,
+      "first_commit": "f9a29f06",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class vocab.gloss; the recorded '<key>' was a placeholder)"
+    },
+    {
+      "n": 64,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/descaffold_strip.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "1d1d254c",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "deterministic tier-1 de-scaffolder"
+    },
+    {
+      "n": 65,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/descaffold_apply.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "1d1d254c",
+      "first_commit_date": "2026-06-25",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step"
+    },
+    {
+      "n": 66,
+      "phase": "translation",
+      "quick_family": null,
+      "script": "scripts/validate/apply_full_audit.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "f6fbbc7a",
+      "first_commit_date": "2026-06-25",
+      "writes": [],
+      "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step"
+    },
+    {
+      "n": 67,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/ingest/fix_notation_db.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "7a69ae77",
+      "first_commit_date": "2026-06-18",
+      "writes": [
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 68,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/ingest/modernize_nurse_term.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "7a69ae77",
+      "first_commit_date": "2026-06-18",
+      "writes": [
+        "localized_text",
+        "sentence",
+        "token",
+        "vocab",
+        "vocab_form",
+        "vocab_kanji",
+        "vocab_pitch",
+        "vocab_sense"
+      ],
+      "note": ""
+    },
+    {
+      "n": 69,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fable5_kanji_apply.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "ec85e311",
+      "first_commit_date": "2026-07-01",
+      "writes": [
+        "kanji",
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 70,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fable5_fix_romaji.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "aeec3ace",
+      "first_commit_date": "2026-07-02",
+      "writes": [
+        "reading",
+        "sentence",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 71,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fable5_fix_sekken_level.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "e91e8f12",
+      "first_commit_date": "2026-07-09",
+      "writes": [
+        "vocab"
+      ],
+      "note": ""
+    },
+    {
+      "n": 72,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fable5_vocab_apply.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "e91e8f12",
+      "first_commit_date": "2026-07-09",
+      "writes": [
+        "localized_text",
+        "vocab",
+        "vocab_sense"
+      ],
+      "note": ""
+    },
+    {
+      "n": 73,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fable5_fix_whitespace_tokens.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "64876297",
+      "first_commit_date": "2026-07-27",
+      "writes": [
+        "sentence",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 74,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fable5_sentences_apply.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "cfca6277",
+      "first_commit_date": "2026-08-05",
+      "writes": [
+        "localized_text",
+        "sentence",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 75,
+      "phase": "repair",
+      "quick_family": "grammar",
+      "script": "scripts/fable5_grammar_apply.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "a9772e7a",
+      "first_commit_date": "2026-08-05",
+      "writes": [
+        "grammar_point",
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 76,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fable5_lessons_apply.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "921ba95c",
+      "first_commit_date": "2026-08-05",
+      "writes": [
+        "exercise",
+        "localized_text",
+        "reading"
+      ],
+      "note": ""
+    },
+    {
+      "n": 77,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fix_sokuon_romaji.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "53d0d540",
+      "first_commit_date": "2026-08-06",
+      "writes": [
+        "reading",
+        "sentence",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 78,
+      "phase": "repair",
+      "quick_family": "grammar",
+      "script": "scripts/fix_instruction_leak_grammar.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "3a152cf6",
+      "first_commit_date": "2026-08-06",
+      "writes": [
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 79,
+      "phase": "repair",
+      "quick_family": "grammar",
+      "script": "scripts/apply_phase4_grammar.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "59ebe13c",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "grammar_point",
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 80,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fix_homophone_vocab_links.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "294fe901",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "sentence_vocab",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 81,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_ptliteral_round2.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "c9d54f0e",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 82,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_redissect_round2.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "c9d54f0e",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "sentence_vocab",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 83,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fix_stale_token_romaji.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "ad36f655",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 84,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_layer_a_pairing.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "c9c82ca4",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "sentence"
+      ],
+      "note": ""
+    },
+    {
+      "n": 85,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_romaji_disputes.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "c9c82ca4",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "sentence",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 86,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_escalated_sentences.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "c6ed35e3",
+      "first_commit_date": "2026-08-19",
+      "writes": [
+        "localized_text",
+        "particle",
+        "sentence",
+        "token"
+      ],
+      "note": ""
+    },
+    {
+      "n": 87,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/ingest/merge_kanji_reading_notes.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "d2f82d7c",
+      "first_commit_date": "2026-08-20",
+      "writes": [
+        "kanji_reading",
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 88,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/fix_particle_function_type.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "632d05db",
+      "first_commit_date": "2026-08-20",
+      "writes": [
+        "particle"
+      ],
+      "note": ""
+    },
+    {
+      "n": 89,
+      "phase": "repair",
+      "quick_family": "grammar",
+      "script": "scripts/merge_grammar_formation.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "632d05db",
+      "first_commit_date": "2026-08-20",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": ""
+    },
+    {
+      "n": 90,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/merge_sentence_structure.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "632d05db",
+      "first_commit_date": "2026-08-20",
+      "writes": [
+        "sentence"
+      ],
+      "note": ""
+    },
+    {
+      "n": 91,
+      "phase": "repair",
+      "quick_family": "grammar",
+      "script": "scripts/apply_grammar_formation_repairs.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": "c130ec82",
+      "first_commit_date": "2026-08-21",
+      "writes": [
+        "grammar_point"
+      ],
+      "note": ""
+    },
+    {
+      "n": 92,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_qa_instruction_leaks.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "8e0d9af2",
+      "first_commit_date": "2026-08-26",
+      "writes": [
+        "localized_text",
+        "the"
+      ],
+      "note": "--check is the dry run; bare invocation applies"
+    },
+    {
+      "n": 93,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_missing_homograph_unlocks.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "8b101ac6",
+      "first_commit_date": "2026-08-26",
+      "writes": [
+        "lesson_unlocks"
+      ],
+      "note": ""
+    },
+    {
+      "n": 94,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_phase7_content_repairs.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "8b101ac6",
+      "first_commit_date": "2026-08-26",
+      "writes": [
+        "exercise",
+        "grammar_point",
+        "localized_text",
+        "reading",
+        "sentence_kanji",
+        "tokens"
+      ],
+      "note": ""
+    },
+    {
+      "n": 95,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_readings_furigana_repairs.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "ac033368",
+      "first_commit_date": "2026-08-27",
+      "writes": [
+        "reading"
+      ],
+      "note": ""
+    },
+    {
+      "n": 96,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_en_anchor_backfill.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "c7048fe6",
+      "first_commit_date": "2026-08-27",
+      "writes": [
+        "matched",
+        "sentence"
+      ],
+      "note": "cannot apply in a rebuild: it recomputes its own targets from the database ('every sentence the exporter would ship with no en anchor'), and with the translation steps off that set is 135 records wider than research/derived/tatoeba_mined_stages.json can answer for, so it refuses all of them and exits 2. 37 stay unanswerable even with the tr/ trees restored"
+    },
+    {
+      "n": 97,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_godan_u_exception.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "2dec386e",
+      "first_commit_date": "2026-08-27",
+      "writes": [
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 98,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_sentence_text_repairs.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "5cca48c5",
+      "first_commit_date": "2026-08-27",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "cannot apply in a rebuild: 135 of its anchors are localized_text rows the rebuild does not have (109 sentence structure_explanation, the rest translation_literal), so it refuses them and exits 2"
+    },
+    {
+      "n": 99,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_jargon_pass2.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "2911ff68",
+      "first_commit_date": "2026-08-27",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "cannot apply in a rebuild: 90 anchors are structure_explanation rows the rebuild does not have"
+    },
+    {
+      "n": 100,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_stage_tag_backfill.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "7592cc28",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "sentence"
+      ],
+      "note": ""
+    },
+    {
+      "n": 101,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_kanji_record_repairs.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "f8ea9647",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "kanji_reading",
+        "localized_text"
+      ],
+      "note": ""
+    },
+    {
+      "n": 102,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_reading_titles.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "f8ea9647",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "reading"
+      ],
+      "note": "cannot apply in a rebuild: 189 of the reading slugs it names do not exist. db/corpus.sqlite holds 286 reading rows accumulated over every historical run of build_readings.py; one replay of today's script over today's lessons builds 130"
+    },
+    {
+      "n": 103,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_readings_composition_repairs.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "f8ea9647",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "reading"
+      ],
+      "note": ""
+    },
+    {
+      "n": 104,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_translation_defect_repairs.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "f8ea9647",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "localized_text"
+      ],
+      "note": "cannot apply in a rebuild: 10 anchors are en-locale localized_text rows the translation steps write"
+    },
+    {
+      "n": 105,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_vocab_gloss_repairs.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "f8ea9647",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "localized_text",
+        "vocab",
+        "vocab_sense"
+      ],
+      "note": "cannot apply in a rebuild: 184 sense anchors differ — vocab senses come from reauthor_vocab_apply.py (step 29), which a clean clone cannot run"
+    },
+    {
+      "n": 106,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_grammar_record_repairs.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "3bfecf38",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "grammar_point",
+        "localized_text",
+        "sentence_grammar"
+      ],
+      "note": "cannot apply in a rebuild: 70 anchors (grammar nuance/formation/explanation, both locales) are missing or hold different text"
+    },
+    {
+      "n": 107,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_translation_followups.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "3bfecf38",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "localized_text",
+        "sentence"
+      ],
+      "note": "cannot apply in a rebuild without the en locale; it passes as soon as the tr_load steps can run"
+    },
+    {
+      "n": 108,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_grammar_followups.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "2a8f783e",
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "grammar_point",
+        "localized_text",
+        "sentence_grammar"
+      ],
+      "note": "cannot apply in a rebuild: 12 sentences carry different grammar tags than the pass was written against, and it refuses to re-judge them"
+    },
+    {
+      "n": 109,
+      "phase": "export_layer",
+      "quick_family": null,
+      "script": "scripts/contracts/normalize_booleans.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "6de5daa0",
+      "first_commit_date": "2026-08-26",
+      "writes": [],
+      "note": "rewrites the committed JSON, not the DB; its producers were fixed at source, so a re-export should reproduce it — that claim is what this validator now measures"
+    },
+    {
+      "n": 110,
+      "phase": "export_layer",
+      "quick_family": null,
+      "script": "scripts/contracts/migrate_exam_banks_p7.py",
+      "args": [],
+      "enabled": false,
+      "first_commit": "8b101ac6",
+      "first_commit_date": "2026-08-26",
+      "writes": [],
+      "note": "rewrites the committed exam banks in place and says so: the banks cannot be regenerated yet (W17/W18). Out of scope here; the exam builders are not run by the rebuild validator"
+    },
+    {
+      "n": 111,
+      "phase": "finalise",
+      "quick_family": null,
+      "script": "scripts/ingest/build_sentence_vocab.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "8b101ac6",
+      "first_commit_date": "2026-08-26",
+      "writes": [
+        "sentence_vocab"
+      ],
+      "note": "re-run last: the token-level repairs above move token.vocab_id, and this is the single writer that restores all three linking rules"
+    },
+    {
+      "n": 112,
+      "phase": "repair",
+      "quick_family": "grammar",
+      "script": "scripts/apply_level_evidence.py",
+      "args": [
+        "--db-only"
+      ],
+      "enabled": true,
+      "first_commit": null,
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "grammar_point",
+        "kanji",
+        "vocab"
+      ],
+      "note": "W10 / owner decision A4: level_agreement repairs from the tracked table research/derived/repairs/level_evidence_repairs.json. --db-only because the rebuild exports the tree itself afterwards; run without it by hand and the script also patches the committed JSON. Placed last: nothing downstream reads level_agreement, and the level fields it touches are written by steps far earlier in the chain"
+    },
+    {
+      "n": 113,
+      "phase": "repair",
+      "quick_family": "grammar",
+      "script": "scripts/migrate_grammar_merge.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": null,
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "grammar_point",
+        "localized_text",
+        "sentence",
+        "sentence_grammar",
+        "lesson",
+        "lesson_unlocks",
+        "lesson_introduces",
+        "lesson_needs",
+        "family_member",
+        "exercise_item",
+        "grammar_related"
+      ],
+      "note": "W08 / owner decision A3: merges the two duplicate-identity grammar points (gram:gp -> gram:da-desu, gram:gp-152 -> gram:te-hoshii) with no content loss. Runs LAST, and has to: it consumes the finished graph, and every earlier step that writes grammar_point, sentence_grammar, family_member or a lesson body would otherwise re-introduce the loser's edges after the merge. Idempotent -- a second run reads grammar_point.deprecated_by and does nothing. It also rewrites the authoring source under research/derived/lessons/, which the rebuild does not re-read, so on a rebuild that part is a no-op re-proof rather than a change. Its EXACT preconditions (MERGES[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of merging blind"
+    },
+    {
+      "n": 114,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/migrate_vocab_repoint.py",
+      "args": [
+        "--apply"
+      ],
+      "enabled": true,
+      "first_commit": null,
+      "first_commit_date": "2026-09-02",
+      "writes": [
+        "vocab",
+        "vocab_form",
+        "vocab_sense",
+        "vocab_kanji",
+        "vocab_pitch",
+        "localized_text",
+        "sentence_vocab",
+        "token",
+        "family_member",
+        "lesson",
+        "lesson_unlocks",
+        "lesson_needs",
+        "reading",
+        "raw_jmdict_entry",
+        "raw_jmdict_form"
+      ],
+      "note": "W09 / owner decision A9: re-points the eight vocab records whose slug named the wrong JMdict entry onto the entry their JLPT list slot names (vocab:1472870 -> vocab:1010080 はい, and seven more), and re-verifies every sentence_vocab / token link against the new entry instead of carrying it over. Runs after 113 and has to: it consumes the finished graph, and step 111 (build_sentence_vocab) would otherwise rebuild the links this step corrects. Idempotent -- a second run reads vocab.repointed_from and does nothing. Its EXACT preconditions (REPOINTS[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of re-pointing blind. It also edits two things the rebuild does not re-read: the authoring source under research/derived/lessons/ and corpus/exam_banks/*.json (the banks are not regenerable until W17/W18), so on a rebuild those parts are a no-op re-proof. The 14 records the queue lists that are NOT re-pointed are in REFUSED with the measured reason for each -- thirteen because the intended entry is already another record's published address (a merge, not a re-point) and one (434 動/どう) because its intended headword 如何 is already record 46's published headword, which would collapse the cumulative_known_set of 239 lessons"
+    }
+  ],
+  "excluded": {
+    "scripts/ingest/reset_sentences.py": "called by replay_all.py, never standalone in a rebuild",
+    "scripts/ingest/relink_vocab.py": "replay_all.py post-step",
+    "scripts/ingest/particle_link.py": "replay_all.py post-step (--target 8)",
+    "scripts/ingest/clean_emdash.py": "replay_all.py post-step (--apply)",
+    "scripts/ingest/load_lessons.py": "replay_all.py post-step"
   }
- ],
- "excluded": {
-  "scripts/ingest/reset_sentences.py": "called by replay_all.py, never standalone in a rebuild",
-  "scripts/ingest/relink_vocab.py": "replay_all.py post-step",
-  "scripts/ingest/particle_link.py": "replay_all.py post-step (--target 8)",
-  "scripts/ingest/clean_emdash.py": "replay_all.py post-step (--apply)",
-  "scripts/ingest/load_lessons.py": "replay_all.py post-step"
- }
 }

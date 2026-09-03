@@ -1,0 +1,253 @@
+{
+  "note": "W34 ratchet (readiness G10). Per (stage, strand): `pct` is context, `dist` is the DEBT — the distance in percentage points from R78's 15/30/25/30 speaking-path budget — and may only shrink. A stage moving further from band is a hard failure: the rebalance may not make one stage worse to improve another. `stale_histograms` counts units whose shipped `strand_counts` disagrees with the components they actually hold (today: every unit that has checkpoints, because build_speaking_practice.py computes the field before build_speaking_checkpoints.py writes them). Re-record with --record only after a deliberate rebalance, never to silence a failure you have not explained. Retired when all twelve stages are inside ±10 on all four strands and R78 gates hard.",
+  "budget": {
+    "meaning-input": 15,
+    "meaning-output": 30,
+    "language-focused": 25,
+    "fluency": 30
+  },
+  "tolerance": 10.0,
+  "stale_histograms": 71,
+  "ceilings": {
+    "about_you|fluency": {
+      "n": 36,
+      "pct": 12.4,
+      "dist": 17.6
+    },
+    "about_you|language-focused": {
+      "n": 164,
+      "pct": 56.6,
+      "dist": 31.6
+    },
+    "about_you|meaning-input": {
+      "n": 72,
+      "pct": 24.8,
+      "dist": 9.8
+    },
+    "about_you|meaning-output": {
+      "n": 18,
+      "pct": 6.2,
+      "dist": 23.8
+    },
+    "arrival|fluency": {
+      "n": 27,
+      "pct": 11.2,
+      "dist": 18.8
+    },
+    "arrival|language-focused": {
+      "n": 128,
+      "pct": 52.9,
+      "dist": 27.9
+    },
+    "arrival|meaning-input": {
+      "n": 72,
+      "pct": 29.8,
+      "dist": 14.8
+    },
+    "arrival|meaning-output": {
+      "n": 15,
+      "pct": 6.2,
+      "dist": 23.8
+    },
+    "eating|fluency": {
+      "n": 36,
+      "pct": 12.7,
+      "dist": 17.3
+    },
+    "eating|language-focused": {
+      "n": 157,
+      "pct": 55.5,
+      "dist": 30.5
+    },
+    "eating|meaning-input": {
+      "n": 72,
+      "pct": 25.4,
+      "dist": 10.4
+    },
+    "eating|meaning-output": {
+      "n": 18,
+      "pct": 6.4,
+      "dist": 23.6
+    },
+    "getting_around|fluency": {
+      "n": 36,
+      "pct": 12.5,
+      "dist": 17.5
+    },
+    "getting_around|language-focused": {
+      "n": 162,
+      "pct": 56.2,
+      "dist": 31.2
+    },
+    "getting_around|meaning-input": {
+      "n": 72,
+      "pct": 25.0,
+      "dist": 10.0
+    },
+    "getting_around|meaning-output": {
+      "n": 18,
+      "pct": 6.2,
+      "dist": 23.8
+    },
+    "health|fluency": {
+      "n": 36,
+      "pct": 12.7,
+      "dist": 17.3
+    },
+    "health|language-focused": {
+      "n": 158,
+      "pct": 55.6,
+      "dist": 30.6
+    },
+    "health|meaning-input": {
+      "n": 72,
+      "pct": 25.4,
+      "dist": 10.4
+    },
+    "health|meaning-output": {
+      "n": 18,
+      "pct": 6.3,
+      "dist": 23.7
+    },
+    "lodging|fluency": {
+      "n": 36,
+      "pct": 12.0,
+      "dist": 18.0
+    },
+    "lodging|language-focused": {
+      "n": 173,
+      "pct": 57.9,
+      "dist": 32.9
+    },
+    "lodging|meaning-input": {
+      "n": 72,
+      "pct": 24.1,
+      "dist": 9.1
+    },
+    "lodging|meaning-output": {
+      "n": 18,
+      "pct": 6.0,
+      "dist": 24.0
+    },
+    "opinions|fluency": {
+      "n": 36,
+      "pct": 12.7,
+      "dist": 17.3
+    },
+    "opinions|language-focused": {
+      "n": 158,
+      "pct": 55.6,
+      "dist": 30.6
+    },
+    "opinions|meaning-input": {
+      "n": 72,
+      "pct": 25.4,
+      "dist": 10.4
+    },
+    "opinions|meaning-output": {
+      "n": 18,
+      "pct": 6.3,
+      "dist": 23.7
+    },
+    "past_stories|fluency": {
+      "n": 36,
+      "pct": 12.7,
+      "dist": 17.3
+    },
+    "past_stories|language-focused": {
+      "n": 158,
+      "pct": 55.6,
+      "dist": 30.6
+    },
+    "past_stories|meaning-input": {
+      "n": 72,
+      "pct": 25.4,
+      "dist": 10.4
+    },
+    "past_stories|meaning-output": {
+      "n": 18,
+      "pct": 6.3,
+      "dist": 23.7
+    },
+    "politeness|fluency": {
+      "n": 36,
+      "pct": 11.5,
+      "dist": 18.5
+    },
+    "politeness|language-focused": {
+      "n": 188,
+      "pct": 59.9,
+      "dist": 34.9
+    },
+    "politeness|meaning-input": {
+      "n": 72,
+      "pct": 22.9,
+      "dist": 7.9
+    },
+    "politeness|meaning-output": {
+      "n": 18,
+      "pct": 5.7,
+      "dist": 24.3
+    },
+    "real_talk|fluency": {
+      "n": 36,
+      "pct": 12.5,
+      "dist": 17.5
+    },
+    "real_talk|language-focused": {
+      "n": 162,
+      "pct": 56.2,
+      "dist": 31.2
+    },
+    "real_talk|meaning-input": {
+      "n": 72,
+      "pct": 25.0,
+      "dist": 10.0
+    },
+    "real_talk|meaning-output": {
+      "n": 18,
+      "pct": 6.2,
+      "dist": 23.8
+    },
+    "shopping|fluency": {
+      "n": 36,
+      "pct": 14.3,
+      "dist": 15.7
+    },
+    "shopping|language-focused": {
+      "n": 126,
+      "pct": 50.0,
+      "dist": 25.0
+    },
+    "shopping|meaning-input": {
+      "n": 72,
+      "pct": 28.6,
+      "dist": 13.6
+    },
+    "shopping|meaning-output": {
+      "n": 18,
+      "pct": 7.1,
+      "dist": 22.9
+    },
+    "time_plans|fluency": {
+      "n": 36,
+      "pct": 13.3,
+      "dist": 16.7
+    },
+    "time_plans|language-focused": {
+      "n": 144,
+      "pct": 53.3,
+      "dist": 28.3
+    },
+    "time_plans|meaning-input": {
+      "n": 72,
+      "pct": 26.7,
+      "dist": 11.7
+    },
+    "time_plans|meaning-output": {
+      "n": 18,
+      "pct": 6.7,
+      "dist": 23.3
+    }
+  }
+}

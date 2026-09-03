@@ -1,0 +1,47 @@
+{
+  "note": "W34 ratchet (readiness G11), INVERTED POLARITY. Per (early stage, surface): the number of late-stage (7-12) slots carrying one of that stage's seeds. This is REACH, not debt, so it is a FLOOR: a decrease is a hard failure and an increase asks for the floor to be raised. `denominators` freezes the late-slot counts the reach is measured against, because a count that holds while its denominator shrinks is not the same reach. Re-record with --record only after deliberately reseeding the late stages, never to silence a failure. Retired when every early stage reaches the late path on say_now and fluency, not only on drills.",
+  "early_max": 6,
+  "denominators": {
+    "say_now": 216,
+    "fluency": 216,
+    "drills": 468
+  },
+  "floors": {
+    "about_you": {
+      "say_now": 4,
+      "fluency": 13,
+      "drills": 10,
+      "late_units": 15
+    },
+    "arrival": {
+      "say_now": 0,
+      "fluency": 0,
+      "drills": 11,
+      "late_units": 7
+    },
+    "eating": {
+      "say_now": 5,
+      "fluency": 8,
+      "drills": 22,
+      "late_units": 20
+    },
+    "getting_around": {
+      "say_now": 4,
+      "fluency": 1,
+      "drills": 12,
+      "late_units": 12
+    },
+    "lodging": {
+      "say_now": 3,
+      "fluency": 2,
+      "drills": 1,
+      "late_units": 5
+    },
+    "shopping": {
+      "say_now": 11,
+      "fluency": 8,
+      "drills": 31,
+      "late_units": 27
+    }
+  }
+}

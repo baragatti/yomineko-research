@@ -58,6 +58,25 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-03 (al) — W41, W42-sections, W34 landed; W20 kanji table verified by simulation; W27
+> table AUTHORED ONLY (re-verify W27v pending). W09 finisher and the W13 resume relaunched.**
+>
+> - `W41` manifest-driven prototype sync + design/api_contract.md; `_build.json` hashes make a stale
+>   sync detectable. `W42` attribution sections; Kanji Alive licence archived (SHA in sources.md);
+>   strokesvg kana is OFL 1.1 (full licence text per copy required — D9 evidence measured).
+>   `W34` three speak gates (R78 strand budget, R83 spiral, near-duplicates) — recomputed from
+>   components: meaning-output is 6.3% not 7.1%, and 71 of 72 units under-report language-focused
+>   by their checkpoint count (builder ordering bug, ratcheted).
+> - `W20` kanji half: 899 verified exercises (research/derived/pending/) — simulated apply takes
+>   kanji absent to 0 at every level; apply waits on W09. `W27`: 2,946 authored rows; the assembly
+>   ignored the verified list and index-keyed verdicts could not be paired → marked authored-only;
+>   W27v re-verifies keyed by (lesson, vocab). Rule recorded in memory.
+> - Excluded from this commit (in progress): scripts/migrate_vocab_repoint.py, W09's exporter edit
+>   and its pre-registered corpus/vocab_redirects.json in design/generated_artifacts.json;
+>   research/derived/pending/ (W20/W27/W31 tables); research/derived/n3_mined (W13).
+> - Session-limit budget: ~35 concurrent Opus agents ≈ 1.5–2 h of a 5-hour window. One large
+>   workflow + ≤3 lane agents at a time; inventory the disk before any relaunch.
+
 > **2026-09-02 (ak) — M1 HALF DONE: A3 merges, A4 level evidence, the sentence-coverage gate, the
 > approval ledger and release identity all landed; gate green. Next: W09 (A9 re-point, launched),
 > then W11 (A6 homographs + A5 families), then the authoring applies (W15 passages, W20 kanji

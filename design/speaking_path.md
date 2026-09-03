@@ -20,11 +20,19 @@ dissected once. If a word's gloss is fixed in `corpus/vocab`, both paths get the
 | ordering axis | exam syllabus, pre-N5 → N5 → N4 → N3 | what you need to **say** soonest |
 | success test | passes the exam | handles the situation out loud |
 | kanji | full production, per level | **recognition only**, never written |
-| stopping point | mid-level = incomplete | **every stage is a usable stopping point** |
+| stopping point | mid-level = incomplete | **every stage is meant to be a usable stopping point** |
 | grammar order | by level | by whether it lets you vary a phrase you already say |
 
 Both paths stay. This is for the learner with a trip in eight weeks; the JLPT path is for the
 learner with an exam in December.
+
+**"Every stage is a usable stopping point" is the goal, not yet a measured property of what ships** —
+the same correction §5 already carries about the survival cores. Eleven of the twelve stages declare
+no survival core (§5); no stage is inside R78's strand budget (§6a); `arrival` teaches four ways to
+apologise for a delay and two ways to say good morning (§6b), and is never said again after week one
+(§6c). What the ordering *does* satisfy is the constraint the sentence is really about: no stage
+depends on a later one, which is what makes stopping possible. The three sections below measure the
+distance from possible to usable, and each now has a gate.
 
 ## 2. The two ordering axes
 
@@ -104,6 +112,12 @@ auditor grepping for `R85` finds exactly one definition. They are enforced in
    おめでとうございます！ side by side. The duplication propagated: `arrival-03` shipped two production
    items with the identical prompt "Bom dia!". This path is scored on speech, where the difference is
    inaudible.
+
+   **Status, measured 2026-09-02: R86 holds — 0 punctuation-normalised duplicate groups across all
+   432 phrase slots — and it is a hard gate now rather than a builder-only rule
+   (`scripts/validate/validate_speak_duplicates.py`).** It is also the weakest possible version of
+   its own argument, and §6b measures what it cannot see: 24 pairs of same-stage phrases a listener
+   hears as one utterance, 13 of them in `arrival`.
 9. **R87 — the survival core outranks frequency.** A stage may declare a small set of **survival
    terms**: the phrases it exists to teach. They sort ahead of the frequency ranking (still behind
    real-over-generated, still under the same i+1 budget), and inside that bucket **shortest first**, so
@@ -254,6 +268,98 @@ anyway, 25 of them from one contiguous "the room" id-run — a thin stage papere
 exercise instead of reported as thin. R85 caps that at source; the honest remedy is still the mining
 pass, and the remaining `lodging` phrases still lean on `coverage`/`mined` tags rather than on things a
 guest says. Content quality inside a stage is a review queue, not something selection alone can fix.
+
+### 6a. R78's strand budget: no stage is inside it (`validate_speak_strands.py`)
+
+`learning_science.md` **R78** declares the budget as a constant and requires each stage to sit within
+**±10 points of 15/30/25/30** (meaning-input / meaning-output / language-focused / fluency). Nothing
+enforced it until W34: `validate_speaking_path.py` checked that the histogram sums to 100 and never
+what it summed to. Recomputed 2026-09-02 from the components each unit actually holds (`say_now` +
+`shadowing` / `production` / `words` + `patterns` + `kanji_recognition` + `checkpoint` + `drills` /
+`fluency.items`), 3,378 components over 72 units:
+
+```
+stage             input  output   lang    flu    worst    out of band
+budget               15      30     25     30        —              —
+arrival            29.8     6.2   52.9   11.2   27.9pt          4 of 4
+shopping           28.6     7.1   50.0   14.3   25.0pt          4 of 4
+eating             25.4     6.4   55.5   12.7   30.5pt          4 of 4
+getting_around     25.0     6.2   56.2   12.5   31.2pt          3 of 4
+lodging            24.1     6.0   57.9   12.0   32.9pt          3 of 4
+about_you          24.8     6.2   56.6   12.4   31.6pt          3 of 4
+time_plans         26.7     6.7   53.3   13.3   28.3pt          4 of 4
+health             25.4     6.3   55.6   12.7   30.6pt          4 of 4
+past_stories       25.4     6.3   55.6   12.7   30.6pt          4 of 4
+politeness         22.9     5.7   59.9   11.5   34.9pt          3 of 4
+opinions           25.4     6.3   55.6   12.7   30.6pt          4 of 4
+real_talk          25.0     6.2   56.2   12.5   31.2pt          3 of 4
+path-wide          25.6     6.3   55.6   12.5
+```
+
+**Twelve of twelve stages are out of band, on three or four of the four strands.** Meaning-output —
+the learner opening their mouth, which is the entire premise of this path — runs at **6.3% against a
+budget of 30**, and language-focused runs at 55.6% against 25. R77's own diagnostic in the same file
+says "Duolingo is ~80% language-focused" as a reason to distrust a product; this path is at 55.6%.
+The mechanical cause is that every unit gets exactly 3 production items against 6 phrases, 6 fluency
+items and 2-5 drills of 3 examples each, so the fix is upstream of the histogram: more prior-known
+material per stage (§6, the mining pass) is what lets `build_speaking_practice.py` emit more than 3.
+
+Two numbers here differ from the readiness audit's, and the difference is the finding. The audit read
+each unit's shipped `strand_counts` and got a path-wide meaning-output of 7.1%; recomputing from the
+components gives 6.3%, because `build_speaking_practice.py` includes `len(u["checkpoint"])` in the
+field it writes but runs **before** `build_speaking_checkpoints.py` writes any checkpoints. **71 of
+the 72 units therefore ship a `language-focused` count short by exactly their own checkpoint items —
+365 components the manifest histogram does not know about.** The validator recomputes rather than
+reads, and ratchets that disagreement at 71 so the rebalance has a counter to drive to zero.
+
+### 6b. Near-duplicates above R86: 24 pairs, 13 of them in `arrival` (`validate_speak_duplicates.py`)
+
+R86 (§3.8) holds at zero and cannot see this class. Two `say_now` phrases in the same stage are
+counted as near-duplicates when
+
+    mean( ratio(jp_a, jp_b), ratio(pt_a, pt_b) )  >=  0.72
+
+with `difflib.SequenceMatcher`, the Japanese stripped by R86's own punctuation class and the pt-BR
+NFKD-folded, lowercased, accent-dropped and reduced to `[a-z0-9]`. Both halves are needed, and this
+corpus shows why either alone fails: おはよう vs おはようございます scores 0.615 on Japanese with an
+*identical* pt-BR prompt, while 教えてくれてありがとう vs 来てくれてありがとう scores 0.857 on
+Japanese with translations that differ by a verb.
+
+```
+arrival 13   shopping 4   health 2   eating 1   getting_around 1
+time_plans 1   past_stories 1   real_talk 1   (lodging, about_you, politeness, opinions: 0)
+```
+
+`arrival`'s 13 are two clusters and nothing else: four ways to apologise for a delay (長い事お待たせ
+してすみません / 長くお待たせしてすみませんでした / こんなに長い間待たせてすみません / 長い間、お待
+たせしてすみませんでした — three sharing the identical pt-BR prompt) and four 〜てくれてありがとう
+variants. Meanwhile the stage teaches neither はじめまして nor よろしくお願いします, neither of which
+is in the bank at all (readiness G5). This is a 75% take rate — 36 slots drawn from 48 candidates —
+showing up as redundancy rather than as a shortfall, which is the same failure mode R85 was written
+for. The remedy is the `arrival`/`health` mining pass, not a tighter selection rule; the pair list is
+the work list at `research/reports/speak_near_duplicates.json`.
+
+### 6c. R83's spiral: `arrival` is met in week one and never said again (`validate_speak_spiral.py`)
+
+**R83** — "every stage 1-6 seed lexicon must reappear in at least one stage 7-12 unit". Measured over
+the three surfaces a late unit can re-present early material on (216 `say_now` slots, 216 `fluency`
+slots, 468 `drills` example slots across stages 7-12):
+
+| stage 1-6 | `say_now` | `fluency` | `drills` | late units reached |
+|---|---|---|---|---|
+| **arrival** | **0** | **0** | 11 | 7 |
+| shopping | 11 | 8 | 31 | 27 |
+| eating | 5 | 8 | 22 | 20 |
+| getting_around | 4 | 1 | 12 | 12 |
+| lodging | 3 | 2 | 1 | 5 |
+| about_you | 4 | 13 | 10 | 15 |
+
+R83 as written is satisfied by all six, `arrival` included — 11 drill examples is "at least one stage
+7-12 unit". Read per surface it plainly is not: **the greeting, thanks and apology lexicon, the most
+reusable material on the path, reaches 0 of 216 late phrase slots and 0 of 216 late fluency slots**,
+and survives only as grammar evidence the learner reads. That is why the three counts are frozen
+separately rather than summed — summing them turns the finding into coverage. Seeding the late stages
+is Size M and depends on nothing.
 
 ## 7. How the exam bank feeds this path
 

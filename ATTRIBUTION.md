@@ -122,6 +122,79 @@ P2 added the extra lists for the ≥3-list reconciliation; all are recorded with
   re-source needed. No clearly-permissive bulk pitch source exists (OJAD research-use, NHK proprietary), so
   re-sourcing would trade one credited fact-source for none.
 
+### Kanji Alive — kanji stroke order (static step outlines)
+
+Upstream licence archived 2026-09-02: `research/datasets/kanjialive/LICENSE.md` (970 bytes, SHA256 `abc0a00defc51659a8b5d58d80aa9a6c443b5bbefed617dd989cf601a0f5f657`), which itself declares CC BY 4.0 — the earlier caveat that the licence was recorded from an unarchived reading is closed.
+- **What:** per-kanji stroke-order drawing data. Raw source = cumulative filled-outline step SVGs
+  (`kanji_strokes.zip`, `{kname}_{N}.svg`) + `ka_data.csv` (kanji↔kname, stroke count, radical). Adapted into
+  our own schema (`kanji_stroke` → `corpus/strokes/n5..n1.json`) as `{viewbox, transform, steps:[path_d,…]}`.
+  **We do not ship the raw Kanji Alive files.**
+- **Ships:** **1,233 records** measured over `corpus/strokes/` — N5 103, N4 177, N3 350, N2 357, N1 246; every
+  one carries `source: "kanjialive"`, `license: "CC-BY-4.0"`.
+- **Owner:** Kanji alive (https://kanjialive.com), repo `kanjialive/kanji-data-media`.
+- **License (as recorded, see the evidence caveat below):** **Creative Commons Attribution 4.0 International
+  (CC BY 4.0)** — attribution required, **NO ShareAlike**. (The separate *Japanese Radicals* font is Apache 2.0
+  and is **not** used.)
+- **Attribution text (to display):** *"Kanji stroke-order data © Kanji alive (https://kanjialive.com),
+  licensed CC BY 4.0."*
+- **Commercial note:** **commercial-OK with attribution, no share-alike, no copyleft on our app.** CC BY 4.0
+  permits redistribution of adapted material provided the credit above, a licence link, and an indication that
+  changes were made are given — our records ARE an adaptation (re-expressed format), so the credits screen must
+  say so, not merely name the source. This is the source that made the stroke layer proprietary-safe (D-LIC-2,
+  `design/license_audit.md`); it replaced CC BY-SA KanjiVG for shipped stroke data.
+- **⚠ Evidence caveat (W42, 2026-09-02):** **no upstream licence text is archived in this repo** — there is no
+  `LICENSE`/`COPYING` file under `research/datasets/kanjialive/`, none inside `kanji_strokes.zip` (11,933
+  members, zero licence-named entries), and none anywhere else in the tree. The CC BY 4.0 claim rests on three
+  *second-hand, in-repo* records: `research/datasets/kanjialive/MANIFEST.md` ("Verified from repo `LICENSE.md`
+  (2026-06-26)"), the `license` value the ingest script stamps on every row
+  (`scripts/ingest/kanjialive_strokes.py`), and the D-LIC-2 ruling in `design/license_audit.md`. **To close:**
+  archive the upstream `LICENSE.md` beside the dump and record its SHA256.
+- **Version / date / checksums (re-verified 2026-09-02):** fetched **2026-06-26**; no upstream commit or tag is
+  pinned on disk.
+  - `kanji_strokes.zip` — 12,977,338 bytes, SHA256 `ad1327b57ded0db7a4d325b83d63bbd4f5af6379f22db5e2b020ea869b1deb71`
+  - `ka_data.csv` — 765,855 bytes, SHA256 `7e7f7098609bff4c26c01772157ea507c9bc09669ce777dbd62bc21d3e135d80`
+  - `MANIFEST.md` — SHA256 `2d3d6e3ae373a9f795c3f3444235d7dc96477676e6727b298772b0ebfd5a74bc`
+
+### strokesvg / Klee One — kana stroke order
+- **What:** hiragana + katakana stroke-order data. Raw source = `dist/**/*.svg`, whose
+  `<g data-strokesvg="strokes">` group holds ordered per-stroke centerline `<path d>` clipped to per-stroke
+  shadow outlines. Parsed into our own schema (`kana_stroke` → `corpus/strokes/kana.json`) as
+  `{char, viewbox, strokes[], shadows[]}` and animated with a dash-offset pen draw. **We do not ship the raw
+  strokesvg files.** Kana only — strokesvg carries no kanji.
+- **Ships:** **162 records** measured over `corpus/strokes/kana.json` — 160 parsed from the 160 dist SVGs
+  (79 hiragana + 81 katakana) plus **2 derived** (っ and ッ, reusing the つ/ツ glyph, `source` records the
+  derivation); all carry `license: "OFL-1.1+MIT"`.
+- **Owner:** `zhengkyl/strokesvg` (https://github.com/zhengkyl/strokesvg) — **Copyright (c) 2024 Kyle**; the
+  glyph shapes derive from the **Klee One** font, **Copyright 2020 The Klee Project Authors**
+  (https://github.com/fontworks-fonts/Klee).
+- **License (verified from the bundled `research/datasets/strokesvg/LICENSE`, 5,799 bytes, SHA256
+  `034fbffd797849ae2717ae2f167315a59b0fc65b5c8339771e100341223fb881`):** its NOTICE splits the repo in two —
+  *"The hiragana/katakana SVG files are derived from the Klee One font which is licensed under the SIL Open
+  Font License"* (full **OFL 1.1** text included in that file), and *"All other files are under MIT license"*
+  (MIT text included, © 2024 Kyle). **The files we ingested are exactly the SVG half → OFL 1.1 governs our
+  kana stroke data**; MIT covers only the build tooling we did not use. **No Reserved Font Name is declared**
+  in the bundled OFL copyright line.
+- **Attribution text (to display):** *"Kana stroke-order from strokesvg (© 2024 Kyle, MIT), glyph shapes
+  derived from the Klee One font © 2020 The Klee Project Authors, licensed under the SIL Open Font License 1.1."*
+- **Commercial note:** **commercial-OK, and OFL's copyleft is font-scoped — it does not reach our app.** OFL §2
+  permits bundling, redistributing and *selling* the (modified) Font Software **with** software, on condition
+  that **each copy carries the copyright notice and the licence text**. OFL §1 forbids selling it *by itself*
+  (we don't), and §5 requires modified Font Software to stay under OFL. Since our kana records are a
+  re-expression of Klee-One-derived glyph outlines, the conservative reading is that they are a **Modified
+  Version of the Font Software**: the practical obligation is that the shipped app **carry the full OFL 1.1
+  text plus both copyright lines**, not just a one-line credit — a credits-screen bullet alone does not satisfy
+  §2. ⚠ Whether our derived centerline data counts as Font Software is an owner legal call; complying is cheap
+  either way. Also note an **upstream inconsistency**: `package.json` declares `"license": "ISC"`, which
+  contradicts the repo's own `LICENSE`; the NOTICE is the specific and later statement about the SVG files and
+  is what we rely on.
+- **Version / date / checksums (measured 2026-09-02):** fetched **2026-06-26**; no upstream commit or tag is
+  pinned on disk (`package.json` says `version: 1.0.0`).
+  - `dist/**/*.svg` — 160 files (79 hiragana + 81 katakana), aggregate SHA256 over sorted `relpath + bytes` =
+    `7d1deb8f32d8f4b3856bbab6f10a073293f223b3bebfe9e29096a25eef78b27c`
+  - `LICENSE` — 5,799 bytes, SHA256 `034fbffd797849ae2717ae2f167315a59b0fc65b5c8339771e100341223fb881`
+  - `README.md` — SHA256 `108d3b423118519768f9e0a83bb4243ce5d0ec6115fdb595fa7870a80be37cbd`;
+    `MANIFEST.md` — SHA256 `db61b8b10efd9e56e83352d3cbd03206a8a09117b0713a1123fd88fe066d65ce`
+
 ### GlyphWiki — kanji per-stroke centerlines (stroke animation)
 - **What:** per-stroke centerline paths for ALL registry kanji, derived from GlyphWiki **KAGE** glyph data
   (`kanji_stroke_line` → `corpus/strokes/lines_*.json`); powers the pen+ball stroke animation. Kanji Alive
@@ -138,4 +211,6 @@ P2 added the extra lists for the ≥3-list reconciliation; all are recorded with
 
 ---
 
-_Last updated: P0 (2026-06-13). Update this file whenever a source is added, removed, or its license confirmed._
+_Last updated: W42 (2026-09-02) — Kanji Alive and strokesvg/Klee One sections added, record counts measured over
+`corpus/strokes/`, checksums re-verified on disk. Previously: P0 (2026-06-13). Update this file whenever a source
+is added, removed, or its license confirmed._
