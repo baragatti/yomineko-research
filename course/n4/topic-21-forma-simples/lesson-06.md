@@ -43,9 +43,9 @@ Não se preocupe em prever a leitura de cabeça: por enquanto, decore cada palav
 > **[l1-pitfall]** Em português a gente diz "branquinho" só pra ficar carinhoso, mas 真っ白 não é diminutivo: é "branco de verdade, branco puro". O 真っ reforça a cor, não amacia. Cuidado para não traduzir como se fosse algo pequeno ou fofo.
 
 ### Vocabulário de apoio
-Para usar bem esses moldes em frases reais, junte algumas palavras de movimento, sorte e ações:
+Para usar bem esses moldes em frases reais, junte algumas palavras de movimento, conversa e ações:
 - 運転手(うんてんしゅ): motorista, chofer.
-- 運(うん): sorte, fortuna.
+- うん(うん): sim, é (resposta informal, entre amigos).
 - すっと(すっと): direto, rapidinho, de uma vez.
 - 非常に(ひじょうに): muito, extremamente.
 - 矢張り(やはり): como esperado, de fato.

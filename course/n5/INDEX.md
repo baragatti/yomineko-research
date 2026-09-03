@@ -1,6 +1,6 @@
 # Curso — Módulo N5 (n5)
 
-_Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
+_Gerado 2026-09-03. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
@@ -43,7 +43,7 @@ _Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 11. Lugar, tempo e direção: で/に/へ/と
 - **kanji** (8): 上 間 生 分 前 後 月 五
-- **vocab** (59, amostra): 其れ、卵、台、台所、大使館、大学、建物、煙草、盾、食べ物、其処、其方、園、外、空
+- **vocab** (59, amostra): 其れ、卵、台、台所、大使館、大学、建物、煙草、盾、食べ物、其の、其処、其方、外、空
 - **gramática** (18): ga-arimasu, ga-imasu, gp-12, gp-13, de, ni, gp-18, gp-27, ni-e, gp-28, ni-iku, gp-55
 
 ### 12. Passado polido e nuances

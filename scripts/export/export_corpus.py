@@ -323,12 +323,32 @@ def export_vocab(con: sqlite3.Connection) -> dict:
             index_rows.append((hw, kana, level, ", ".join(first[:2])))
         jw(CORPUS / "vocab" / f"{lvl}.json", records)
         out_counts[lvl] = len(records)
+    # W09: the redirect. `vocab:<jmdict_id>` is a published address, and owner decision A9 re-pointed
+    # eight records IN PLACE — the row survived, its identity did not — so eight addresses that used
+    # to resolve stopped existing. This map is where they land instead, so a consumer holding an old
+    # slug is never left guessing. Written on every export (empty object when nothing was re-pointed)
+    # so its absence always means "not exported yet", never "nothing moved".
+    # It sits BESIDE corpus/vocab/ for the reason corpus/grammar_deprecated.json does: the vocab
+    # entity glob packs every corpus/vocab/*.json as a list, and a non-list sidecar inside a registry
+    # glob poisons check_catalogue and every consumer that walks it. Listed in
+    # design/generated_artifacts.json, as that gate also requires.
+    vcols = [r[1] for r in con.execute("PRAGMA table_info(vocab)")]
+    redirects = {}
+    if "repointed_from" in vcols:
+        for slug, old in con.execute("SELECT slug, repointed_from FROM vocab "
+                                     "WHERE repointed_from IS NOT NULL ORDER BY slug"):
+            for o in (jloads(old) or []):
+                redirects[o] = slug
+    jw(CORPUS / "vocab_redirects.json", dict(sorted(redirects.items())))
     lines = ["# Corpus — Vocabulary (leveled)", "",
              f"_Generated {build_date()}. `gloss` = {{\"{LOC}\":[…],\"en\":[…]}} (en = JMdict "
              f"source); `register` = neutral usage enum from JMdict misc._", "",
              "| headword | kana | level | meaning |", "|----------|------|-------|---------|"]
     for hw, kana, lvl, mn in index_rows:
         lines.append(f"| {hw} | {kana} | {lvl} | {mn} |")
+    lines += ["", f"**Re-pointed:** {len(redirects)} address(es) named a different JMdict entry and "
+                  f"were corrected in place (owner decision A9); `../vocab_redirects.json` maps each "
+                  f"old slug to the record that now answers for it."]
     (CORPUS / "vocab" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return out_counts
 

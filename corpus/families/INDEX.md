@@ -1,6 +1,6 @@
 # Corpus — Families / groups
 
-_Generated 2026-09-02. `label`/`description`/`governing_rule` = locale-objects (pt-BR)._
+_Generated 2026-09-03. `label`/`description`/`governing_rule` = locale-objects (pt-BR)._
 
 | family | type | label | #members |
 |--------|------|-------|---------:|
@@ -283,8 +283,8 @@ _Generated 2026-09-02. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-793e | word_family | Família de palavras com 社 | 2 |
 | grp:word-7956 | word_family | Família de palavras com 祖 | 2 |
 | grp:word-7a7a | word_family | Família de palavras com 空 | 4 |
-| grp:word-7acb | word_family | Família de palavras com 立 | 4 |
-| grp:word-7b49 | word_family | Família de palavras com 等 | 2 |
+| grp:word-7acb | word_family | Família de palavras com 立 | 3 |
+| grp:word-7b49 | word_family | Família de palavras com 等 | 1 |
 | grp:word-7b54 | word_family | Família de palavras com 答 | 2 |
 | grp:word-7c73 | word_family | Família de palavras com 米 | 2 |
 | grp:word-7d30 | word_family | Família de palavras com 細 | 2 |
@@ -355,7 +355,7 @@ _Generated 2026-09-02. `label`/`description`/`governing_rule` = locale-objects (
 | grp:word-9023 | word_family | Família de palavras com 連 | 2 |
 | grp:word-9045 | word_family | Família de palavras com 遅 | 2 |
 | grp:word-904a | word_family | Família de palavras com 遊 | 2 |
-| grp:word-904b | word_family | Família de palavras com 運 | 5 |
+| grp:word-904b | word_family | Família de palavras com 運 | 4 |
 | grp:word-904e | word_family | Família de palavras com 過 | 2 |
 | grp:word-9053 | word_family | Família de palavras com 道 | 2 |
 | grp:word-9060 | word_family | Família de palavras com 遠 | 3 |

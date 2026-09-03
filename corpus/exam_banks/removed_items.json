@@ -1,6 +1,6 @@
 {
  "why": "Items removed from the committed banks by scripts/contracts/migrate_exam_banks_p7.py, kept here in full so nothing is silently lost. They are eligible to return when the banks are regenerated with the fixed builder.",
- "count": 118,
+ "count": 129,
  "items": [
   {
    "file": "n3_context_fill.json",
@@ -2144,6 +2144,241 @@
     ],
     "reading": "read:n4-experiencia-04-01",
     "source": "reading+grammar",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n4_context_fill.json",
+   "reason": "the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090",
+   "item": {
+    "id": "cf:n4:530:745",
+    "level": "n4",
+    "stem": "（　）よく誰も濡れることはなかったんだ。",
+    "correct": "運",
+    "distractors": [
+     "家",
+     "味",
+     "隅"
+    ],
+    "sentence": "sent:tatoeba-9795520",
+    "vocab_id": 745,
+    "ai_generated": false,
+    "source": "sentence+vocab",
+    "vocab": "vocab:1172610",
+    "layer": "B",
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n4_kanji_reading.json",
+   "reason": "kanji_reading item on vocab:1001090, whose headword うん carries no kanji after the re-point",
+   "item": {
+    "id": "kr:n4:745",
+    "level": "n4",
+    "stem": "運",
+    "correct": "うん",
+    "distractors": [
+     "はず",
+     "みそ",
+     "ガス"
+    ],
+    "vocab_id": 745,
+    "source": "vocab",
+    "vocab": "vocab:1172610",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n4_kanji_reading.json",
+   "reason": "kanji_reading item on vocab:1004310: the stem 斯う ends in okurigana that only the correct answer こう carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
+   "item": {
+    "id": "kr:n4:1086",
+    "level": "n4",
+    "stem": "侯",
+    "correct": "こう",
+    "distractors": [
+     "せい",
+     "ふむ",
+     "ゆび"
+    ],
+    "vocab_id": 1086,
+    "source": "vocab",
+    "vocab": "vocab:1272630",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n4_orthography.json",
+   "reason": "orthography item on vocab:1001090, whose headword and kana are both うん after the re-point",
+   "item": {
+    "id": "or:n4:745",
+    "level": "n4",
+    "stem": "うん",
+    "correct": "運",
+    "distractors": [
+     "壁",
+     "髪",
+     "君"
+    ],
+    "vocab_id": 745,
+    "source": "vocab",
+    "vocab": "vocab:1172610",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n4_orthography.json",
+   "reason": "orthography item on vocab:1004310: the stem こう prints the okurigana of the answer 斯う, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
+   "item": {
+    "id": "or:n4:1086",
+    "level": "n4",
+    "stem": "こう",
+    "correct": "侯",
+    "distractors": [
+     "君",
+     "踏む",
+     "訳"
+    ],
+    "vocab_id": 1086,
+    "source": "vocab",
+    "vocab": "vocab:1272630",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n4_paraphrase.json",
+   "reason": "the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090",
+   "item": {
+    "id": "pp:n4:745",
+    "level": "n4",
+    "stem": "本当に運が良かった",
+    "target": "運",
+    "correct": "ついていた",
+    "distractors": [
+     "困っていた",
+     "疲れていた",
+     "怒っていた"
+    ],
+    "vocab_id": 745,
+    "sentence": "sent:jec-0498",
+    "layer": "C",
+    "needs_review": true,
+    "source": "authored+verified",
+    "vocab": "vocab:1172610",
+    "ai_generated": false
+   }
+  },
+  {
+   "file": "n4_usage.json",
+   "reason": "the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090",
+   "item": {
+    "id": "us:n4:745",
+    "level": "n4",
+    "target": "運",
+    "correct": "本当に運が良かった",
+    "wrong": [
+     "車の運ができますか。",
+     "毎朝、公園で運をしています。",
+     "明日は運が悪いので、会議に出られません。"
+    ],
+    "vocab_id": 745,
+    "sentence": "sent:jec-0498",
+    "layer": "C",
+    "needs_review": true,
+    "source": "authored+verified(real-correct)",
+    "vocab": "vocab:1172610",
+    "ai_generated": false
+   }
+  },
+  {
+   "file": "n5_kanji_reading.json",
+   "reason": "kanji_reading item on vocab:2137720: the stem 然う ends in okurigana that only the correct answer そう carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
+   "item": {
+    "id": "kr:n5:349",
+    "level": "n5",
+    "stem": "総",
+    "correct": "そう",
+    "distractors": [
+     "ずつ",
+     "いち",
+     "まち"
+    ],
+    "vocab_id": 349,
+    "source": "vocab",
+    "vocab": "vocab:1401470",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n5_kanji_reading.json",
+   "reason": "kanji_reading item on vocab:1006830: the stem 其の ends in okurigana that only the correct answer その carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
+   "item": {
+    "id": "kr:n5:355",
+    "level": "n5",
+    "stem": "園",
+    "correct": "その",
+    "distractors": [
+     "いす",
+     "かわ",
+     "すぎ"
+    ],
+    "vocab_id": 355,
+    "source": "vocab",
+    "vocab": "vocab:1176240",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n5_orthography.json",
+   "reason": "orthography item on vocab:2137720: the stem そう prints the okurigana of the answer 然う, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
+   "item": {
+    "id": "or:n5:349",
+    "level": "n5",
+    "stem": "そう",
+    "correct": "総",
+    "distractors": [
+     "待つ",
+     "箸",
+     "七"
+    ],
+    "vocab_id": 349,
+    "source": "vocab",
+    "vocab": "vocab:1401470",
+    "layer": "B",
+    "ai_generated": false,
+    "needs_review": false
+   }
+  },
+  {
+   "file": "n5_orthography.json",
+   "reason": "orthography item on vocab:1006830: the stem その prints the okurigana of the answer 其の, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
+   "item": {
+    "id": "or:n5:355",
+    "level": "n5",
+    "stem": "その",
+    "correct": "園",
+    "distractors": [
+     "何処",
+     "等",
+     "兄"
+    ],
+    "vocab_id": 355,
+    "source": "vocab",
+    "vocab": "vocab:1176240",
     "layer": "B",
     "ai_generated": false,
     "needs_review": false

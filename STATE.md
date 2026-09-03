@@ -58,6 +58,18 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-03 (an) — W09 landed and committed during the pause (protective wrap-up only). Still
+> PAUSED; W13 is the last thing in flight. A9b (14 refused re-points = cross-lesson merges) is a new
+> owner decision in PENDING.md.**
+>
+> - 8 of 22 vocab records re-pointed (the rest are merges A9's premise did not anticipate); every
+>   reference followed; `corpus/vocab_redirects.json`; a real degradation the JSON diff missed
+>   (authored glosses beside re-pointed chips) caught by rendering and fixed in both layers.
+> - Ratchets re-recorded with cause: n4|vocab `below` 39→40 (W09 dropped 10 wrong sentence links —
+>   達/たち and vocab:1002500 now at 0/3, real supply work for W12/W13); the quick rebuild baseline
+>   (only the grammar index's generated-date line moved — the validator should ignore that line).
+> - Gate green on every hard validator after export + post-export contracts regen + sync.
+
 > **2026-09-03 (am) — PAUSED by the owner after ~a week of Max 20X. Plan progress ≈ 35% (M0 done;
 > M1 ≈ 60%; M2 ≈ 30%; M3 ≈ 15%). Nothing new may be launched until the owner resumes.**
 >

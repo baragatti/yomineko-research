@@ -7,7 +7,7 @@
 - Usar a partícula に para marcar o destinatário (com あげる/くれる) e a origem (com もらう)
 - Entender por que o japonês usa dois verbos diferentes para 'dar' dependendo de quem ganha
 
-**Introduz:** gramática [gp-55, gp-56, gp-57] · vocabulário [総, 而して] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-55, gp-56, gp-57] · vocabulário [然う, 而して] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-11059892`, `sent:tatoeba-145739`
 

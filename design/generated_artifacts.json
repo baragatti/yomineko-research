@@ -6,6 +6,10 @@
       "reason": "Redirect map {old grammar slug: survivor slug} written by export_corpus.py for the records that scripts/migrate_grammar_merge.py merged into another (owner decision A3). A tombstone index, not a record set: it publishes no content, only the address a retired identity now resolves to. It sits beside corpus/grammar/ rather than inside it because the grammar entity glob is corpus/grammar/*.json and check_catalogue refuses a non-list sidecar in a registry glob."
     },
     {
+      "path": "corpus/vocab_redirects.json",
+      "reason": "Redirect map {old vocab slug: current slug} written by export_corpus.py for the records scripts/migrate_vocab_repoint.py re-pointed onto the JMdict entry their JLPT list slot names (owner decision A9). A forwarding index, not a record set: it publishes no content, only the address a corrected identity now answers to. It sits beside corpus/vocab/ rather than inside it because the vocab entity glob is corpus/vocab/*.json and check_catalogue refuses a non-list sidecar in a registry glob — the same reason corpus/grammar_deprecated.json sits where it does."
+    },
+    {
       "path": "course/outline.json",
       "reason": "Flat derived projection of the whole course tree for navigation UI. Every field in it is recomputed from the lesson leaves and gated for exact equality by validate_course_chain.py itself, so a schema would restate a shape that is already pinned by derivation."
     },

@@ -134,6 +134,21 @@ file records four SYSTEMIC gloss findings deferred with reasons: `headword` is i
 (451 of 1,947 senses unresolvable), `vocab_form` has no tag column, and the romaji convention for
 ー and final っ is the corpus's own stated rule.
 
+### A9b. The 14 vocab records W09 refused — merges, not re-points
+**Finding.** A9 assumed no intended target existed as another record. W09 verified each against
+JMdict 3.6.2 and re-pointed the 8 clean cases (はい, その, そう, たち, 杯/はい, こう, とうとう, うん).
+For 13, the intended entry IS already another published record — 成る (n3), 為る (n4), 掛かる (n3),
+掛ける (n5), 履く (n3), 縦 (n3), 方 (already unlocked by n5-perguntas-01), 本当 (n5), 格好 (n4),
+事 (n4), 喧嘩 (two records collide), 御 (n3) — so each is a MERGE spanning two lessons or two levels,
+the conditions W08 refused; the 14th (動→如何) would collapse two words 239 lessons keep apart.
+**Options.** Per pair: merge into the existing record (its lesson keeps the introduction; the
+other lesson loses an unlock — a curriculum edit), or keep both and mark the wrong one deprecated
+with no survivor (learner never sees it). Ledger with per-record evidence:
+`research/reports/w09_repoint_ledger.md`. Two should also be re-ingested at their attested level
+(運/うん n3, 園/その n1). 11 exam items quarantined pending W17/W18.
+**Recommendation.** Decide pair by pair with the teacher when N5 review starts; nothing ships wrong
+today because every one of the 14 keeps its current (mis-)address consistently.
+
 ### A10. Should a speaking-path stage's patterns be capped at its level band?
 **Question.** A unit's `patterns` are the grammar points whose forms occur in the unit's own
 phrases. The builder has never filtered them by the stage's `approx_band`; the phrases are gated by

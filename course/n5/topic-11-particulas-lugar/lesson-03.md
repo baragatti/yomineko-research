@@ -7,7 +7,7 @@
 - Distinguir で (lugar da ação) de に (lugar onde algo existe)
 - Usar で também para o meio de transporte (ir DE táxi)
 
-**Introduz:** gramática [de] · vocabulário [タクシー, 出す, 掃除, 洗濯, 立ち, 立つ, 頼む, 食べる] · kanji [生] · kana [—]
+**Introduz:** gramática [de] · vocabulário [タクシー, 出す, 掃除, 洗濯, 立つ, 達, 頼む, 食べる] · kanji [生] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-778974`, `sent:tatoeba-195443`, `sent:tatoeba-1057336`, `sent:tatoeba-125387`
 
@@ -49,7 +49,7 @@ Na cidade, dá para chamar um タクシー erguendo a mão; a porta de trás abr
 Para praticar, vale ter alguns verbos à mão. Repare como cada ação combina com um lugar marcado por で:
 - 頼む ("pedir, fazer um pedido"): 店で頼む = "pedir na loja".
 - 出す ("pôr para fora, enviar"): 郵便局で出す = "postar uma carta no correio".
-- 立つ ("ficar de pé"): 駅で立つ = "ficar de pé na estação". O substantivo 立ち ("partida, início") vem do mesmo verbo.
+- 立つ ("ficar de pé"): 駅で立つ = "ficar de pé na estação". Não confunda com o sufixo 達, que marca plural de pessoas ("nós", "vocês") e não vem desse verbo.
 
 #### Kanji da lição: 生
 O kanji 生 carrega as ideias de vida, nascimento e "cru / genuíno". Tem muitas leituras; uma das mais comuns é せい, que aparece em 学生 ("estudante") e em 先生 ("professor").

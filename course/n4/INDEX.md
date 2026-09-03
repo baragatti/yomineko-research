@@ -1,6 +1,6 @@
 # Curso — Módulo N4 (n4)
 
-_Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
+_Gerado 2026-09-03. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
@@ -26,7 +26,7 @@ _Gerado 2026-09-02. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 21. Forma simples e registro casual
 - **kanji** (10): 員 方 者 事 同 自 地 発 場 業
-- **vocab** (56, amostra): ステレオ、テキスト、会、僕、別、大学生、失礼、床屋、心配、意見、気、漫画、オートバイ、ガソリン、怒る
+- **vocab** (56, amostra): ステレオ、テキスト、会、僕、別、大学生、失礼、床屋、心配、意見、気、漫画、うん、オートバイ、ガソリン
 - **gramática** (18): ka-shira, kai, kana, dewa-nai-ka, gp-129, janai-ka, gp-100, gp-118, gp-68, koro-goro, gp-94, sa
 
 ### 22. Orações relativas

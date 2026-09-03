@@ -8,7 +8,7 @@
 - Aplicar o padrão a quantidades e números (千円しかない = 'só tenho mil ienes')
 - Reconhecer e usar advérbios de quantidade como 殆ど e 大抵
 
-**Introduz:** gramática [gp-100, gp-118] · vocabulário [壊す, 大抵, 必ず, 折る, 拾う, 止む, 殆ど, 沸く, 焼く, 盗む, 等々, 踏む] · kanji [地] · kana [—]
+**Introduz:** gramática [gp-100, gp-118] · vocabulário [到頭, 壊す, 大抵, 必ず, 折る, 拾う, 止む, 殆ど, 沸く, 焼く, 盗む, 踏む] · kanji [地] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-4849`, `sent:tatoeba-172845`, `sent:tatoeba-2464847`, `sent:tatoeba-179727`
 
@@ -43,7 +43,7 @@ Para falar de "quanto" no dia a dia, vale conhecer alguns advérbios úteis. Ele
 - 殆ど: quase, praticamente
 - 大抵: em geral, normalmente
 - 必ず: sempre, sem falta
-- 等々: etc., e assim por diante (serve para encerrar listas)
+- 到頭: finalmente, afinal (depois de muita espera)
 Aproveite também para fixar vários verbos do cotidiano, úteis para descrever ações comuns:
 - 拾う: pegar do chão
 - 盗む: roubar

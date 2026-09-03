@@ -1,0 +1,1876 @@
+{
+  "why": "W09 / owner decision A9. Every record re-pointed to the JMdict entry its JLPT list slot names, with the complete pre-migration record kept here because a re-point IN PLACE overwrites the old lexeme rather than retiring it to a row of its own.",
+  "generated_by": "scripts/migrate_vocab_repoint.py",
+  "repointed": [
+    {
+      "vocab_id": 502,
+      "old_slug": "vocab:1472870",
+      "new_slug": "vocab:1010080",
+      "old": "肺/はい",
+      "new": "はい/はい",
+      "list_says": "n5.csv / openanki_vocab_n5.csv line 386: `はい,はい,yes` (Genki Ln.1)",
+      "evidence": "Every n5 list row keyed はい is the interjection; 肺 is carried only at n1 (jlptvocabapi_n1, bluskyo_kanji_n1) and n3 (openanki_vocab_n3 肺 'lung'). The 4/4 n5 agreement is agreement about はい, not about 肺. はい 'sim' is absent from all 7,401 records and is week-1 material.",
+      "retired_lexeme_belongs_at": "n3 (openanki_vocab_n3 / jlptvocabapi_n1 both carry 肺)",
+      "retired_record": {
+        "row": {
+          "id": 502,
+          "slug": "vocab:1472870",
+          "headword": "肺",
+          "kana": "はい",
+          "romaji": "hai",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": 8158,
+          "jmdict_ref": "1472870",
+          "notes_pt": null,
+          "level": "n5",
+          "level_confidence": 1.0,
+          "level_agreement": "4/4",
+          "level_sources": "{\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n5\", \"jlptvocabapi\": \"n5\"}",
+          "source": "jmdict:1472870",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 15,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 1593,
+            "vocab_id": 502,
+            "form": "肺",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1594,
+            "vocab_id": 502,
+            "form": "はい",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 17378,
+            "vocab_id": 502,
+            "sense_order": 0,
+            "pos": "[\"n\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"lung\", \"lungs\"]",
+            "gloss_pt": "[\"pulmão\", \"pulmões\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 17378,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"pulmão\", \"pulmões\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 1038,
+            "vocab_id": 502,
+            "reading": "はい",
+            "accent_positions": "[0]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "肺"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"n\"]: en=['lung', 'lungs'] pt=['pulmão', 'pulmões']",
+        "localized_text gloss/pt-BR: [\"pulmão\", \"pulmões\"]",
+        "vocab_kanji ['肺'] — kanji the new headword does not contain",
+        "freq_rank 8158 -> 1000 (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
+      ],
+      "carried_unchanged": [
+        "level = n5",
+        "level_confidence = 1.0",
+        "level_agreement = 4/4",
+        "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n5\", \"jlptvocabapi\": \"n5\"}",
+        "introducing_topic_id = 15"
+      ],
+      "freq_rank": {
+        "old": 8158,
+        "new": 1000,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 0,
+          "misc": [
+            "pol"
+          ],
+          "field": [],
+          "info": []
+        },
+        {
+          "sense": 2,
+          "misc": [],
+          "field": [],
+          "info": [
+            "as a response to a roll call"
+          ]
+        },
+        {
+          "sense": 3,
+          "misc": [
+            "col"
+          ],
+          "field": [],
+          "info": [
+            "with rising intonation"
+          ]
+        },
+        {
+          "sense": 4,
+          "misc": [],
+          "field": [],
+          "info": [
+            "used when calling for someone's attention or when handing something to someone"
+          ]
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 10,
+        "sentence_vocab_dropped": [
+          {
+            "sentence_id": 3085,
+            "jp": "たばこは肺によくない",
+            "link_rule": "token",
+            "evidence": "token"
+          }
+        ],
+        "token_kept": 3,
+        "token_dropped": [
+          {
+            "token_id": 25399,
+            "sentence_id": 3085,
+            "surface": "肺",
+            "lemma": "肺",
+            "reading": "はい"
+          }
+        ],
+        "lesson_unlocks": [
+          [
+            16578,
+            "vocab"
+          ]
+        ],
+        "lesson_needs": [],
+        "lesson_bodies": [
+          [
+            "lesson",
+            16578,
+            "body",
+            "pt-BR",
+            1
+          ]
+        ],
+        "cumulative_known_set": 224,
+        "family_kept": [
+          [
+            372,
+            "grp:theme-n5-te-form",
+            "semantic_field"
+          ]
+        ],
+        "family_dropped": [],
+        "reading_uses_dropped": [],
+        "kanji_reading_examples_dropped": [],
+        "pitch_dropped": [],
+        "old_ref": "vocab:肺",
+        "new_ref": "vocab:はい"
+      }
+    },
+    {
+      "vocab_id": 355,
+      "old_slug": "vocab:1176240",
+      "new_slug": "vocab:1006830",
+      "old": "園/その",
+      "new": "其の/その",
+      "list_says": "n5.csv / openanki_vocab_n5.csv: `その,その,that`",
+      "evidence": "The demonstrative その is absent from the corpus while この (257) and あの (31) are present. 園 read その is an n1 word (bluskyo_vocab_n1 `園,その`), and 園/えん is n1 in jlptvocabapi. The n5 4/4 agreement is agreement about その.",
+      "retired_lexeme_belongs_at": "n1 (bluskyo_vocab_n1 `園,その`; jlptvocabapi_n1 園/えん)",
+      "retired_record": {
+        "row": {
+          "id": 355,
+          "slug": "vocab:1176240",
+          "headword": "園",
+          "kana": "その",
+          "romaji": "sono",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": 11700,
+          "jmdict_ref": "1176240",
+          "notes_pt": null,
+          "level": "n5",
+          "level_confidence": 1.0,
+          "level_agreement": "4/4",
+          "level_sources": "{\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n5\", \"jlptvocabapi\": \"n5\"}",
+          "source": "jmdict:1176240",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 11,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 1161,
+            "vocab_id": 355,
+            "form": "園",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1162,
+            "vocab_id": 355,
+            "form": "苑",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1163,
+            "vocab_id": 355,
+            "form": "薗",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1164,
+            "vocab_id": 355,
+            "form": "その",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 17170,
+            "vocab_id": 355,
+            "sense_order": 0,
+            "pos": "[\"n\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"garden\", \"park\", \"grounds\"]",
+            "gloss_pt": "[\"jardim\", \"parque\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 17170,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"jardim\", \"parque\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 910,
+            "vocab_id": 355,
+            "reading": "その",
+            "accent_positions": "[1]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "園"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"n\"]: en=['garden', 'park', 'grounds'] pt=['jardim', 'parque']",
+        "localized_text gloss/pt-BR: [\"jardim\", \"parque\"]",
+        "vocab_kanji ['園'] — kanji the new headword does not contain",
+        "freq_rank 11700 -> 11609 (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
+      ],
+      "carried_unchanged": [
+        "level = n5",
+        "level_confidence = 1.0",
+        "level_agreement = 4/4",
+        "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n5\", \"jlptvocabapi\": \"n5\"}",
+        "introducing_topic_id = 11"
+      ],
+      "freq_rank": {
+        "old": 11700,
+        "new": 11609,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 0,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": [
+            "something or someone distant from the speaker, close to the listener; actions of the listener, or ideas expressed or understood by the listener"
+          ]
+        },
+        {
+          "sense": 1,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": [
+            "preceding a number"
+          ]
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 150,
+        "sentence_vocab_dropped": [],
+        "token_kept": 150,
+        "token_dropped": [],
+        "lesson_unlocks": [
+          [
+            16549,
+            "vocab"
+          ]
+        ],
+        "lesson_needs": [],
+        "lesson_bodies": [
+          [
+            "lesson",
+            16549,
+            "body",
+            "pt-BR",
+            1
+          ]
+        ],
+        "cumulative_known_set": 254,
+        "family_kept": [
+          [
+            364,
+            "grp:theme-n5-particulas-lugar",
+            "semantic_field"
+          ]
+        ],
+        "family_dropped": [],
+        "reading_uses_dropped": [],
+        "kanji_reading_examples_dropped": [
+          "園 / その"
+        ],
+        "pitch_dropped": [],
+        "old_ref": "vocab:園",
+        "new_ref": "vocab:其の"
+      }
+    },
+    {
+      "vocab_id": 349,
+      "old_slug": "vocab:1401470",
+      "new_slug": "vocab:2137720",
+      "old": "総/そう",
+      "new": "然う/そう",
+      "list_says": "n5.csv line 359 `そう; そうです,そう; そうです,\"yes; appears, to be the case\"` and n4.csv line 78 `そう,そう,\"really, (is that) so; yes, right\"`",
+      "evidence": "Both n5 votes and both n4 votes are rows for the adverb そう; 総/そう is n1 (jlptvocabapi_n1, bluskyo_vocab_n1) and 総 is an n2 kanji. The record is already level-split n5/n4 at 2/4 — that split is a split about そう.",
+      "retired_lexeme_belongs_at": "n1 (jlptvocabapi_n1 総/そう; bluskyo_vocab_n1 総/そう)",
+      "retired_record": {
+        "row": {
+          "id": 349,
+          "slug": "vocab:1401470",
+          "headword": "総",
+          "kana": "そう",
+          "romaji": "sou",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": 10050,
+          "jmdict_ref": "1401470",
+          "notes_pt": null,
+          "level": "n5",
+          "level_confidence": 0.5,
+          "level_agreement": "2/4",
+          "level_sources": "{\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+          "source": "jmdict:1401470",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 11,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 1144,
+            "vocab_id": 349,
+            "form": "総",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1145,
+            "vocab_id": 349,
+            "form": "そう",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 17162,
+            "vocab_id": 349,
+            "sense_order": 0,
+            "pos": "[\"pref\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"total\", \"general\", \"overall (prefix)\"]",
+            "gloss_pt": "[\"total\", \"geral (prefixo)\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 17162,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"total\", \"geral (prefixo)\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 905,
+            "vocab_id": 349,
+            "reading": "そう",
+            "accent_positions": "[0, 1]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "総"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"pref\"]: en=['total', 'general', 'overall (prefix)'] pt=['total', 'geral (prefixo)']",
+        "localized_text gloss/pt-BR: [\"total\", \"geral (prefixo)\"]",
+        "vocab_kanji ['総'] — kanji the new headword does not contain",
+        "freq_rank 10050 -> None (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
+      ],
+      "carried_unchanged": [
+        "level = n5",
+        "level_confidence = 0.5",
+        "level_agreement = 2/4",
+        "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+        "introducing_topic_id = 11"
+      ],
+      "freq_rank": {
+        "old": 10050,
+        "new": null,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 0,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": [
+            "concerning the actions of the listener or concerning the ideas expressed or understood by the listener; with a neg. sentence, implies that something isn't as much as one might think"
+          ]
+        },
+        {
+          "sense": 1,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": [
+            "used to express agreement with something said"
+          ]
+        },
+        {
+          "sense": 2,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": [
+            "used to express doubt with something said"
+          ]
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 77,
+        "sentence_vocab_dropped": [],
+        "token_kept": 77,
+        "token_dropped": [],
+        "lesson_unlocks": [
+          [
+            16554,
+            "vocab"
+          ]
+        ],
+        "lesson_needs": [],
+        "lesson_bodies": [],
+        "cumulative_known_set": 249,
+        "family_kept": [
+          [
+            364,
+            "grp:theme-n5-particulas-lugar",
+            "semantic_field"
+          ]
+        ],
+        "family_dropped": [],
+        "reading_uses_dropped": [],
+        "kanji_reading_examples_dropped": [],
+        "pitch_dropped": [],
+        "old_ref": "vocab:総",
+        "new_ref": "vocab:然う"
+      }
+    },
+    {
+      "vocab_id": 374,
+      "old_slug": "vocab:1551240",
+      "new_slug": "vocab:1416220",
+      "old": "立ち/たち",
+      "new": "達/たち",
+      "list_says": "n5.csv / openanki_vocab_n5.csv line 385: `～たち,～たち,plural suffix`",
+      "evidence": "The row is the pluralising suffix, written with a leading ～ that the ingest's own norm_candidates strips; the bare たち then matched 立ち by reading. 達 does not exist in any of the 7,401 records, so 私たち is unbuildable. JMdict 1416220 is `達 / たち / suf / pluralizing suffix` — the row exactly.",
+      "retired_lexeme_belongs_at": "unattested at n5/n4 in any list carried in the repo",
+      "retired_record": {
+        "row": {
+          "id": 374,
+          "slug": "vocab:1551240",
+          "headword": "立ち",
+          "kana": "たち",
+          "romaji": "tachi",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": 13665,
+          "jmdict_ref": "1551240",
+          "notes_pt": null,
+          "level": "n5",
+          "level_confidence": 1.0,
+          "level_agreement": "2/2",
+          "level_sources": "{\"elzup\": \"n5\", \"openanki\": \"n5\"}",
+          "source": "jmdict:1551240",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 11,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 1222,
+            "vocab_id": 374,
+            "form": "立ち",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1223,
+            "vocab_id": 374,
+            "form": "たち",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 26345,
+            "vocab_id": 374,
+            "sense_order": 0,
+            "pos": "[\"n\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"departure\", \"setting off\", \"start\"]",
+            "gloss_pt": "[\"partida\", \"saída\", \"início\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 26345,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"partida\", \"saída\", \"início\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 925,
+            "vocab_id": 374,
+            "reading": "たち",
+            "accent_positions": "[2]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "立"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"n\"]: en=['departure', 'setting off', 'start'] pt=['partida', 'saída', 'início']",
+        "localized_text gloss/pt-BR: [\"partida\", \"saída\", \"início\"]",
+        "vocab_kanji ['立'] — kanji the new headword does not contain",
+        "freq_rank 13665 -> 365 (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
+      ],
+      "carried_unchanged": [
+        "level = n5",
+        "level_confidence = 1.0",
+        "level_agreement = 2/2",
+        "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\"}",
+        "introducing_topic_id = 11"
+      ],
+      "freq_rank": {
+        "old": 13665,
+        "new": 365,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 0,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": []
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 13,
+        "sentence_vocab_dropped": [
+          {
+            "sentence_id": 3858,
+            "jp": "立ちなさい。",
+            "link_rule": "run",
+            "evidence": "surface"
+          },
+          {
+            "sentence_id": 5174,
+            "jp": "私は立ちっぱなしだった。",
+            "link_rule": "run",
+            "evidence": "surface"
+          }
+        ],
+        "token_kept": 0,
+        "token_dropped": [],
+        "lesson_unlocks": [
+          [
+            16550,
+            "vocab"
+          ]
+        ],
+        "lesson_needs": [],
+        "lesson_bodies": [
+          [
+            "lesson",
+            16550,
+            "body",
+            "pt-BR",
+            1
+          ]
+        ],
+        "cumulative_known_set": 253,
+        "family_kept": [],
+        "family_dropped": [
+          [
+            279,
+            "grp:word-7acb",
+            "word_family"
+          ]
+        ],
+        "reading_uses_dropped": [
+          "read:n4-volitivo-06-01"
+        ],
+        "kanji_reading_examples_dropped": [
+          "立 / た"
+        ],
+        "pitch_dropped": [],
+        "old_ref": "vocab:立ち",
+        "new_ref": "vocab:達"
+      }
+    },
+    {
+      "vocab_id": 503,
+      "old_slug": "vocab:1472630",
+      "new_slug": "vocab:2019640",
+      "old": "杯/さかずき",
+      "new": "杯/はい",
+      "list_says": "n5.csv / openanki_vocab_n5.csv line 521: `～杯,～はい,counter for cupfuls`",
+      "evidence": "The n5 slot is the COUNTER 杯/はい, not the sake cup 杯/さかずき — which the same lists carry at n1 (openanki_vocab_n1 `杯,さかずき,wine cup`; jlptvocabapi_n1). JMdict separates them: 1472630 is さかずき (12 forms, no counter sense) and 2019640 is 杯・盃/はい with three `ctr` senses.",
+      "retired_lexeme_belongs_at": "n1 (openanki_vocab_n1 / jlptvocabapi_n1 杯/さかずき)",
+      "retired_record": {
+        "row": {
+          "id": 503,
+          "slug": "vocab:1472630",
+          "headword": "杯",
+          "kana": "さかずき",
+          "romaji": "sakazuki",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": 1199,
+          "jmdict_ref": "1472630",
+          "notes_pt": null,
+          "level": "n5",
+          "level_confidence": 1.0,
+          "level_agreement": "2/2",
+          "level_sources": "{\"elzup\": \"n5\", \"openanki\": \"n5\"}",
+          "source": "jmdict:1472630",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 15,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 1595,
+            "vocab_id": 503,
+            "form": "杯",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1596,
+            "vocab_id": 503,
+            "form": "盃",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1597,
+            "vocab_id": 503,
+            "form": "坏",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1598,
+            "vocab_id": 503,
+            "form": "觴",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1599,
+            "vocab_id": 503,
+            "form": "盞",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1600,
+            "vocab_id": 503,
+            "form": "觚",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1601,
+            "vocab_id": 503,
+            "form": "巵",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1602,
+            "vocab_id": 503,
+            "form": "卮",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1603,
+            "vocab_id": 503,
+            "form": "酒盃",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1604,
+            "vocab_id": 503,
+            "form": "さかずき",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1605,
+            "vocab_id": 503,
+            "form": "さかづき",
+            "is_kana": 1,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 1606,
+            "vocab_id": 503,
+            "form": "うき",
+            "is_kana": 1,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 26337,
+            "vocab_id": 503,
+            "sense_order": 0,
+            "pos": "[\"n\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"sake cup\", \"small cup for alcoholic drinks\"]",
+            "gloss_pt": "[\"cálice de saquê\", \"taça para bebidas alcoólicas\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 26337,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"cálice de saquê\", \"taça para bebidas alcoólicas\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 1039,
+            "vocab_id": 503,
+            "reading": "さかずき",
+            "accent_positions": "[0, 4]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "杯"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"n\"]: en=['sake cup', 'small cup for alcoholic drinks'] pt=['cálice de saquê', 'taça para bebidas alcoólicas']",
+        "localized_text gloss/pt-BR: [\"cálice de saquê\", \"taça para bebidas alcoólicas\"]",
+        "vocab_pitch さかずき [0, 4] (kanjium) — the accent of a reading the record no longer has"
+      ],
+      "carried_unchanged": [
+        "level = n5",
+        "level_confidence = 1.0",
+        "level_agreement = 2/2",
+        "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\"}",
+        "introducing_topic_id = 15"
+      ],
+      "freq_rank": {
+        "old": 1199,
+        "new": 1199,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 4,
+          "misc": [],
+          "field": [
+            "sports"
+          ],
+          "info": []
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 3,
+        "sentence_vocab_dropped": [
+          {
+            "sentence_id": 3086,
+            "jp": "父に杯を渡した",
+            "link_rule": "token",
+            "evidence": "token"
+          },
+          {
+            "sentence_id": 3087,
+            "jp": "小さな杯でお酒を飲む",
+            "link_rule": "token",
+            "evidence": "token"
+          },
+          {
+            "sentence_id": 3088,
+            "jp": "テーブルの上に杯が並んでいる",
+            "link_rule": "token",
+            "evidence": "token"
+          }
+        ],
+        "token_kept": 3,
+        "token_dropped": [
+          {
+            "token_id": 25405,
+            "sentence_id": 3086,
+            "surface": "杯",
+            "lemma": "杯",
+            "reading": "さかずき"
+          },
+          {
+            "token_id": 25410,
+            "sentence_id": 3087,
+            "surface": "杯",
+            "lemma": "杯",
+            "reading": "さかずき"
+          },
+          {
+            "token_id": 25420,
+            "sentence_id": 3088,
+            "surface": "杯",
+            "lemma": "杯",
+            "reading": "さかずき"
+          }
+        ],
+        "lesson_unlocks": [],
+        "lesson_needs": [],
+        "lesson_bodies": [],
+        "cumulative_known_set": 0,
+        "family_kept": [
+          [
+            372,
+            "grp:theme-n5-te-form",
+            "semantic_field"
+          ]
+        ],
+        "family_dropped": [],
+        "reading_uses_dropped": [],
+        "kanji_reading_examples_dropped": [],
+        "pitch_dropped": [
+          1039
+        ],
+        "old_ref": "vocab:杯",
+        "new_ref": "vocab:杯"
+      }
+    },
+    {
+      "vocab_id": 1086,
+      "old_slug": "vocab:1272630",
+      "new_slug": "vocab:1004310",
+      "old": "侯/こう",
+      "new": "斯う/こう",
+      "list_says": "n4.csv / openanki_vocab_n4.csv: `こう,こう,\"like this, this way\"`",
+      "evidence": "All four n4 votes are rows for the adverb こう; 侯 is an n1 kanji and appears in no vocabulary list at n4. こう is absent from the corpus.",
+      "retired_lexeme_belongs_at": "n1 (bluskyo_kanji_n1 / kanjiapi_kanji_n1 侯)",
+      "retired_record": {
+        "row": {
+          "id": 1086,
+          "slug": "vocab:1272630",
+          "headword": "侯",
+          "kana": "こう",
+          "romaji": "kou",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": null,
+          "jmdict_ref": "1272630",
+          "notes_pt": null,
+          "level": "n4",
+          "level_confidence": 1.0,
+          "level_agreement": "4/4",
+          "level_sources": "{\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+          "source": "jmdict:1272630",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 28,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 3290,
+            "vocab_id": 1086,
+            "form": "侯",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 3291,
+            "vocab_id": 1086,
+            "form": "こう",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 16275,
+            "vocab_id": 1086,
+            "sense_order": 0,
+            "pos": "[\"n\", \"n-suf\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"marquis\", \"feudal lord\"]",
+            "gloss_pt": "[\"marquês\", \"senhor feudal\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 16275,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"marquês\", \"senhor feudal\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 350,
+            "vocab_id": 1086,
+            "reading": "こう",
+            "accent_positions": "[1]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "侯"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"n\", \"n-suf\"]: en=['marquis', 'feudal lord'] pt=['marquês', 'senhor feudal']",
+        "localized_text gloss/pt-BR: [\"marquês\", \"senhor feudal\"]",
+        "vocab_kanji ['侯'] — kanji the new headword does not contain"
+      ],
+      "carried_unchanged": [
+        "level = n4",
+        "level_confidence = 1.0",
+        "level_agreement = 4/4",
+        "level_sources = {\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+        "introducing_topic_id = 28"
+      ],
+      "freq_rank": {
+        "old": null,
+        "new": null,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 0,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": [
+            "used for something or someone close to the speaker, including the speaker himself, or for the opinions of the speaker"
+          ]
+        },
+        {
+          "sense": 1,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": []
+        },
+        {
+          "sense": 2,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": [
+            "interjection used as a verbal pause"
+          ]
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 6,
+        "sentence_vocab_dropped": [],
+        "token_kept": 6,
+        "token_dropped": [],
+        "lesson_unlocks": [
+          [
+            16465,
+            "vocab"
+          ]
+        ],
+        "lesson_needs": [],
+        "lesson_bodies": [
+          [
+            "lesson",
+            16465,
+            "body",
+            "pt-BR",
+            1
+          ]
+        ],
+        "cumulative_known_set": 145,
+        "family_kept": [
+          [
+            357,
+            "grp:theme-n4-obrigacao",
+            "semantic_field"
+          ]
+        ],
+        "family_dropped": [],
+        "reading_uses_dropped": [],
+        "kanji_reading_examples_dropped": [],
+        "pitch_dropped": [],
+        "old_ref": "vocab:侯",
+        "new_ref": "vocab:斯う"
+      }
+    },
+    {
+      "vocab_id": 699,
+      "old_slug": "vocab:1855690",
+      "new_slug": "vocab:1449890",
+      "old": "等々/とうとう",
+      "new": "到頭/とうとう",
+      "list_says": "n4.csv / openanki_vocab_n4.csv: `とうとう,とうとう,\"finally, at last\"`",
+      "evidence": "All four n4 votes are rows for 到頭/とうとう 'finally'; 等々 'and so on' is a different word and the only other とうとう in the lists is 丁々 at n1. 到頭 is absent from the corpus.",
+      "retired_lexeme_belongs_at": "unattested at n5/n4 in any list carried in the repo",
+      "retired_record": {
+        "row": {
+          "id": 699,
+          "slug": "vocab:1855690",
+          "headword": "等々",
+          "kana": "とうとう",
+          "romaji": "toutou",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": 1768,
+          "jmdict_ref": "1855690",
+          "notes_pt": null,
+          "level": "n4",
+          "level_confidence": 1.0,
+          "level_agreement": "4/4",
+          "level_sources": "{\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+          "source": "jmdict:1855690",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 20,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 2200,
+            "vocab_id": 699,
+            "form": "等々",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 2201,
+            "vocab_id": 699,
+            "form": "等等",
+            "is_kana": 0,
+            "is_common": 0,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 2202,
+            "vocab_id": 699,
+            "form": "とうとう",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 15713,
+            "vocab_id": 699,
+            "sense_order": 0,
+            "pos": "[\"suf\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"and so on\", \"etc.\"]",
+            "gloss_pt": "[\"e assim por diante\", \"etc.\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 15713,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"e assim por diante\", \"etc.\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 5,
+            "vocab_id": 699,
+            "reading": "とうとう",
+            "accent_positions": "[1]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "等"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"suf\"]: en=['and so on', 'etc.'] pt=['e assim por diante', 'etc.']",
+        "localized_text gloss/pt-BR: [\"e assim por diante\", \"etc.\"]",
+        "vocab_kanji ['等'] — kanji the new headword does not contain",
+        "freq_rank 1768 -> None (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
+      ],
+      "carried_unchanged": [
+        "level = n4",
+        "level_confidence = 1.0",
+        "level_agreement = 4/4",
+        "level_sources = {\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+        "introducing_topic_id = 20"
+      ],
+      "freq_rank": {
+        "old": 1768,
+        "new": null,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 0,
+          "misc": [
+            "uk"
+          ],
+          "field": [],
+          "info": []
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 5,
+        "sentence_vocab_dropped": [],
+        "token_kept": 5,
+        "token_dropped": [],
+        "lesson_unlocks": [
+          [
+            16445,
+            "vocab"
+          ]
+        ],
+        "lesson_needs": [],
+        "lesson_bodies": [
+          [
+            "lesson",
+            16445,
+            "body",
+            "pt-BR",
+            1
+          ]
+        ],
+        "cumulative_known_set": 195,
+        "family_kept": [],
+        "family_dropped": [
+          [
+            280,
+            "grp:word-7b49",
+            "word_family"
+          ]
+        ],
+        "reading_uses_dropped": [],
+        "kanji_reading_examples_dropped": [
+          "等 / トウ"
+        ],
+        "pitch_dropped": [],
+        "old_ref": "vocab:等々",
+        "new_ref": "vocab:到頭"
+      }
+    },
+    {
+      "vocab_id": 745,
+      "old_slug": "vocab:1172610",
+      "new_slug": "vocab:1001090",
+      "old": "運/うん",
+      "new": "うん/うん",
+      "list_says": "n4.csv / openanki_vocab_n4.csv: `うん,うん,\"yes (informal), all right (ok)\"` (Genki Ln.8); bluskyo_vocab_n4 `うん,うん`; jlptvocabapi_n4 `うん (informal) yes`",
+      "evidence": "The queue records 運 as defensible vocabulary whose SLOT was うん, and the lists settle it: every list that carries 運/うん puts it at n3 (n3.csv, openanki_vocab_n3, jlptvocabapi_n3, bluskyo_vocab_n3), and every n4 row keyed うん is the interjection. So the record's n4 4/4 was never evidence for 運. うん is absent from the corpus.",
+      "retired_lexeme_belongs_at": "n3 — all four lists carry 運/うん there (it is NOT at n3 today)",
+      "retired_record": {
+        "row": {
+          "id": 745,
+          "slug": "vocab:1172610",
+          "headword": "運",
+          "kana": "うん",
+          "romaji": "un",
+          "lexeme_type": "word",
+          "base_vocab_id": null,
+          "verb_class": null,
+          "adj_class": null,
+          "common": 1,
+          "freq_rank": 1712,
+          "jmdict_ref": "1172610",
+          "notes_pt": null,
+          "level": "n4",
+          "level_confidence": 1.0,
+          "level_agreement": "4/4",
+          "level_sources": "{\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+          "source": "jmdict:1172610",
+          "created_by": "dataset",
+          "layer": "A",
+          "needs_review": 0,
+          "introducing_topic_id": 20,
+          "repointed_from": null
+        },
+        "forms": [
+          {
+            "id": 2319,
+            "vocab_id": 745,
+            "form": "運",
+            "is_kana": 0,
+            "is_common": 1,
+            "is_primary": 1,
+            "applies_to_reading": null,
+            "variant_condition": null
+          },
+          {
+            "id": 2320,
+            "vocab_id": 745,
+            "form": "うん",
+            "is_kana": 1,
+            "is_common": 1,
+            "is_primary": 0,
+            "applies_to_reading": null,
+            "variant_condition": null
+          }
+        ],
+        "senses": [
+          {
+            "id": 15784,
+            "vocab_id": 745,
+            "sense_order": 0,
+            "pos": "[\"n\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"luck\", \"fortune\"]",
+            "gloss_pt": "[\"sorte\", \"fortuna\"]",
+            "needs_review": 1
+          },
+          {
+            "id": 15785,
+            "vocab_id": 745,
+            "sense_order": 1,
+            "pos": "[\"n\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"fate\", \"destiny\"]",
+            "gloss_pt": "[\"destino\", \"sina\"]",
+            "needs_review": 1
+          }
+        ],
+        "sense_localized": [
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 15784,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"sorte\", \"fortuna\"]",
+            "is_list": 1,
+            "layer": "B"
+          },
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 15785,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"destino\", \"sina\"]",
+            "is_list": 1,
+            "layer": "B"
+          }
+        ],
+        "vocab_localized": [],
+        "pitch": [
+          {
+            "id": 47,
+            "vocab_id": 745,
+            "reading": "うん",
+            "accent_positions": "[1]",
+            "source": "kanjium"
+          }
+        ],
+        "kanji": [
+          "運"
+        ]
+      },
+      "content_loss": [
+        "sense 0 [\"n\"]: en=['luck', 'fortune'] pt=['sorte', 'fortuna']",
+        "sense 1 [\"n\"]: en=['fate', 'destiny'] pt=['destino', 'sina']",
+        "localized_text gloss/pt-BR: [\"sorte\", \"fortuna\"]",
+        "localized_text gloss/pt-BR: [\"destino\", \"sina\"]",
+        "vocab_kanji ['運'] — kanji the new headword does not contain",
+        "freq_rank 1712 -> 1104 (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
+      ],
+      "carried_unchanged": [
+        "level = n4",
+        "level_confidence = 1.0",
+        "level_agreement = 4/4",
+        "level_sources = {\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
+        "introducing_topic_id = 20"
+      ],
+      "freq_rank": {
+        "old": 1712,
+        "new": 1104,
+        "rule": "re-derived from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule"
+      },
+      "target_tags_not_stored": [
+        {
+          "sense": 2,
+          "misc": [],
+          "field": [],
+          "info": [
+            "moan or groan (of pain)"
+          ]
+        }
+      ],
+      "references": {
+        "sentence_vocab_kept": 1,
+        "sentence_vocab_dropped": [
+          {
+            "sentence_id": 372,
+            "jp": "運悪く電話が故障していた。",
+            "link_rule": "token",
+            "evidence": "token"
+          },
+          {
+            "sentence_id": 530,
+            "jp": "運よく誰も濡れることはなかったんだ。",
+            "link_rule": "token",
+            "evidence": "token"
+          },
+          {
+            "sentence_id": 4666,
+            "jp": "本当に運が良かった",
+            "link_rule": "token",
+            "evidence": "token"
+          },
+          {
+            "sentence_id": 5695,
+            "jp": "ケイちゃんはとても運がいいのよ。お産の時から、そうだったわ。",
+            "link_rule": "token",
+            "evidence": "token"
+          }
+        ],
+        "token_kept": 1,
+        "token_dropped": [
+          {
+            "token_id": 3586,
+            "sentence_id": 372,
+            "surface": "運",
+            "lemma": "運",
+            "reading": "うん"
+          },
+          {
+            "token_id": 5178,
+            "sentence_id": 530,
+            "surface": "運",
+            "lemma": "運",
+            "reading": "うん"
+          },
+          {
+            "token_id": 38091,
+            "sentence_id": 4666,
+            "surface": "運",
+            "lemma": "運",
+            "reading": "うん"
+          },
+          {
+            "token_id": 47611,
+            "sentence_id": 5695,
+            "surface": "運",
+            "lemma": "運",
+            "reading": "うん"
+          }
+        ],
+        "lesson_unlocks": [
+          [
+            16444,
+            "vocab"
+          ]
+        ],
+        "lesson_needs": [],
+        "lesson_bodies": [
+          [
+            "lesson",
+            16448,
+            "body",
+            "pt-BR",
+            1
+          ]
+        ],
+        "cumulative_known_set": 196,
+        "family_kept": [],
+        "family_dropped": [
+          [
+            323,
+            "grp:word-904b",
+            "word_family"
+          ]
+        ],
+        "reading_uses_dropped": [],
+        "kanji_reading_examples_dropped": [
+          "運 / ウン"
+        ],
+        "pitch_dropped": [],
+        "old_ref": "vocab:運",
+        "new_ref": "vocab:うん"
+      }
+    }
+  ],
+  "refused": [
+    {
+      "record": "479 vocab:1611000 生る/なる  →  成る (1375610)",
+      "why": "MERGE, NOT A RE-POINT — 1375610 is already `vocab:1375610` = record 2517 成る at n3, unlocked by les:n3-limites-06 while 479 is unlocked by les:n5-comparacoes-05. Merging would put an n5 lesson's unlock on an n3 record (or move that record's level) and leave two lessons unlocking one word: the two conditions W08 refused (U2 cross-level, D1 two lessons). 253 sentence_vocab and 263 token links ride on it — 516 edges, the largest link burden of the thirteen."
+    },
+    {
+      "record": "334 vocab:1298670 刷る/する  →  為る (1157170)",
+      "why": "MERGE — 1157170 is record 1358 為る at n4, unlocked by les:n4-conectores-01, with 729 sentence_vocab and 738 token links of its own. Cross-level (n5 slot onto an n4 record)."
+    },
+    {
+      "record": "148 vocab:1609500 罹る/かかる  →  掛かる (1207590)",
+      "why": "MERGE — 1207590 is record 1584 掛かる at n3 (les:n3-estado-01). The n5 evidence is real, so the fix is a level move on 1584 plus dropping the n3 unlock: a course-placement decision."
+    },
+    {
+      "record": "154 vocab:1570710 翔る/かける  →  掛ける (1207610)",
+      "why": "MERGE — 1207610 is record 153 掛ける, already at n5 with 29 sentences, but unlocked by les:n5-verbos-01 while 154 is unlocked by les:n5-verbos-03. Two lessons, one word."
+    },
+    {
+      "record": "507 vocab:1474240 伯/はく  →  履く (1607260)",
+      "why": "MERGE — 1607260 is record 2581 履く at n3 (穿く is a form of the same entry, not a free one)."
+    },
+    {
+      "record": "376 vocab:1341840 盾/たて  →  縦 (1335640)",
+      "why": "MERGE — 1335640 is record 2306 縦 at n3."
+    },
+    {
+      "record": "1347 vocab:1515620 報/ほう  →  方 (1516930)",
+      "why": "MERGE — 1516930 is record 2731 方, level n3 but ALREADY unlocked by les:n5-perguntas-01, so the n5 course already teaches it through another ref. A second n5 unlock is a duplicate card."
+    },
+    {
+      "record": "1343 vocab:1523040 本島/ほんとう  →  本当 (1523060)",
+      "why": "MERGE — 1523060 is record 593 本当, already at n5, unlocked by les:n5-convites-06 while 1343 is unlocked by les:n5-conectando-04. Two lessons, one word."
+    },
+    {
+      "record": "1223 vocab:1208680 滑降/かっこう  →  格好 (1590480)",
+      "why": "MERGE — 1590480 is record 1334 格好, already at n4 (les:n4-conectores-01)."
+    },
+    {
+      "record": "1350 vocab:1241450 琴/こと  →  事 (1313580)",
+      "why": "MERGE — 1313580 is record 887 事, already at n4 with 206 sentence links. 1350 carries 268 sentence_vocab links of its own that were made on こと, so the merge is also the largest link reconciliation of the thirteen."
+    },
+    {
+      "record": "1359 vocab:1630770 献花/けんか  →  喧嘩 (1257040)",
+      "why": "MERGE — 1257040 is record 1825 喧嘩 at n3."
+    },
+    {
+      "record": "842 vocab:1258830 県下/けんか  →  喧嘩 (1257040)",
+      "why": "MERGE, AND A COLLISION WITH 1359 — both records were resolved out of the same けんか list slot and both name the same target, so at most one could ever be re-pointed onto it."
+    },
+    {
+      "record": "94 vocab:1485770 尾/お  →  御 (2826528)  [the queue's lower-confidence 23rd]",
+      "why": "REFUSED ON THE EVIDENCE, AND MERGE ANYWAY — no list row carried in the repo is keyed by a bare お (2/4 agreement, from elzup + openanki), so there is no slot to re-point INTO; and 2826528 is already record 1512 御 at n3. The queue asked for a decision with evidence: the evidence is absent, so 尾 stays."
+    },
+    {
+      "record": "434 vocab:1451160 動/どう  →  如何 (1008910)",
+      "why": "REFUSED ON THE LESSON-DEGRADATION CONDITION — the target slug is free, but under the corpus's own ingest rule (headword = first kanji form) its headword is 如何, which is already the published headword of record 46 (如何/いかが, n5). The courseware addresses vocabulary by `vocab:<headword>`, and 239 lessons carry BOTH `vocab:動` and `vocab:如何` in their stored cumulative_known_set: after the rewrite those 239 lists would hold one ref twice and lose the other word. That is a measured degradation of 239 lessons, which A9's condition forbids. It needs a headword-shape decision first (a kana headword beside kanji forms is a shape 0 of 7,401 records have today) or the row-id ref form."
+    }
+  ],
+  "exam_banks": [
+    {
+      "file": "corpus/exam_banks/n4_context_fill.json",
+      "actions": [
+        "quarantined cf:n4:530:745: the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090"
+      ]
+    },
+    {
+      "file": "corpus/exam_banks/n4_kanji_reading.json",
+      "actions": [
+        "quarantined kr:n4:745: kanji_reading item on vocab:1001090, whose headword うん carries no kanji after the re-point",
+        "quarantined kr:n4:1086: kanji_reading item on vocab:1004310: the stem 斯う ends in okurigana that only the correct answer こう carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
+        "kr:n4:699: {'vocab': 'vocab:1855690', 'stem': '等々', 'correct': 'とうとう'} -> {'vocab': 'vocab:1449890', 'stem': '到頭', 'correct': 'とうとう'}"
+      ]
+    },
+    {
+      "file": "corpus/exam_banks/n4_orthography.json",
+      "actions": [
+        "quarantined or:n4:745: orthography item on vocab:1001090, whose headword and kana are both うん after the re-point",
+        "quarantined or:n4:1086: orthography item on vocab:1004310: the stem こう prints the okurigana of the answer 斯う, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
+        "or:n4:699: {'vocab': 'vocab:1855690', 'stem': 'とうとう', 'correct': '等々'} -> {'vocab': 'vocab:1449890', 'stem': 'とうとう', 'correct': '到頭'}"
+      ]
+    },
+    {
+      "file": "corpus/exam_banks/n4_paraphrase.json",
+      "actions": [
+        "quarantined pp:n4:745: the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090"
+      ]
+    },
+    {
+      "file": "corpus/exam_banks/n4_usage.json",
+      "actions": [
+        "quarantined us:n4:745: the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090"
+      ]
+    },
+    {
+      "file": "corpus/exam_banks/n5_kanji_reading.json",
+      "actions": [
+        "kr:n5:503: {'vocab': 'vocab:1472630', 'stem': '杯', 'correct': 'さかずき'} -> {'vocab': 'vocab:2019640', 'stem': '杯', 'correct': 'はい'}",
+        "quarantined kr:n5:349: kanji_reading item on vocab:2137720: the stem 然う ends in okurigana that only the correct answer そう carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
+        "quarantined kr:n5:355: kanji_reading item on vocab:1006830: the stem 其の ends in okurigana that only the correct answer その carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
+        "kr:n5:374: {'vocab': 'vocab:1551240', 'stem': '立ち', 'correct': 'たち'} -> {'vocab': 'vocab:1416220', 'stem': '達', 'correct': 'たち'}"
+      ]
+    },
+    {
+      "file": "corpus/exam_banks/n5_orthography.json",
+      "actions": [
+        "or:n5:503: {'vocab': 'vocab:1472630', 'stem': 'さかずき', 'correct': '杯'} -> {'vocab': 'vocab:2019640', 'stem': 'はい', 'correct': '杯'}",
+        "quarantined or:n5:349: orthography item on vocab:2137720: the stem そう prints the okurigana of the answer 然う, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
+        "quarantined or:n5:355: orthography item on vocab:1006830: the stem その prints the okurigana of the answer 其の, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
+        "or:n5:374: {'vocab': 'vocab:1551240', 'stem': 'たち', 'correct': '立ち'} -> {'vocab': 'vocab:1416220', 'stem': 'たち', 'correct': '達'}"
+      ]
+    }
+  ],
+  "speak_units": [
+    {
+      "file": "course/speak/eating/unit-06.json",
+      "actions": [
+        ".words[]: vocab:1472630 -> vocab:2019640",
+        ".words[]: vocab:1176240 -> vocab:1006830"
+      ]
+    },
+    {
+      "file": "course/speak/health/unit-01.json",
+      "actions": [
+        ".checkpoint[].distractors[]: '園' -> '其の'"
+      ]
+    },
+    {
+      "file": "course/speak/health/unit-06.json",
+      "actions": [
+        ".checkpoint[].distractors[]: '園' -> '其の'"
+      ]
+    },
+    {
+      "file": "course/speak/politeness/unit-01.json",
+      "actions": [
+        ".checkpoint[].distractors[]: '園' -> '其の'"
+      ]
+    }
+  ],
+  "authoring_source": [
+    {
+      "file": "research/derived/lessons/n4-forma-simples-02.json",
+      "actions": [
+        "unlocks: vocab:運 -> vocab:うん"
+      ]
+    },
+    {
+      "file": "research/derived/lessons/n4-forma-simples-03.json",
+      "actions": [
+        "unlocks: vocab:等々 -> vocab:到頭",
+        "body: 1x ref=\"vocab:等々\" -> \"vocab:到頭\""
+      ]
+    },
+    {
+      "file": "research/derived/lessons/n4-obrigacao-05.json",
+      "actions": [
+        "unlocks: vocab:侯 -> vocab:斯う",
+        "body: 1x ref=\"vocab:侯\" -> \"vocab:斯う\""
+      ]
+    },
+    {
+      "file": "research/derived/lessons/n5-particulas-lugar-02.json",
+      "actions": [
+        "unlocks: vocab:園 -> vocab:其の",
+        "body: 1x ref=\"vocab:園\" -> \"vocab:其の\""
+      ]
+    },
+    {
+      "file": "research/derived/lessons/n5-particulas-lugar-03.json",
+      "actions": [
+        "unlocks: vocab:立ち -> vocab:達",
+        "body: 1x ref=\"vocab:立ち\" -> \"vocab:達\""
+      ]
+    },
+    {
+      "file": "research/derived/lessons/n5-particulas-lugar-07.json",
+      "actions": [
+        "unlocks: vocab:総 -> vocab:然う"
+      ]
+    },
+    {
+      "file": "research/derived/lessons/n5-te-form-05.json",
+      "actions": [
+        "unlocks: vocab:肺 -> vocab:はい",
+        "body: 1x ref=\"vocab:肺\" -> \"vocab:はい\""
+      ]
+    }
+  ],
+  "prose_fixes": [
+    {
+      "lesson": "les:n5-te-form-05",
+      "why": "the はいる/はい/さかずき homophone list — 502 is no longer 肺 and 503 is no longer さかずき",
+      "old": "Não confunda o verbo com estes dois substantivos:",
+      "new": "Não confunda o verbo com estas duas palavras, que se leem só はい:"
+    },
+    {
+      "lesson": "les:n5-te-form-05",
+      "why": "502 now holds the interjection はい, not 肺 'pulmão'",
+      "old": "<vocab ref=\"vocab:はい\"/><text>: pulmão</text>",
+      "new": "<vocab ref=\"vocab:はい\"/><text>: sim, isso mesmo (a resposta)</text>"
+    },
+    {
+      "lesson": "les:n5-te-form-05",
+      "why": "503 now holds the counter 杯/はい, not the sake cup 杯/さかずき",
+      "old": "<vocab ref=\"vocab:杯\"/><text>: taça de saquê</text>",
+      "new": "<vocab ref=\"vocab:杯\"/><text>: contador de copos e tigelas (一杯, 二杯…)</text>"
+    },
+    {
+      "lesson": "les:n5-particulas-lugar-02",
+      "why": "355 now holds the demonstrative その, not 園 'jardim'; the list is the そ-series already",
+      "old": "<vocab ref=\"vocab:其の\"/><text>: jardim, parque</text>",
+      "new": "<vocab ref=\"vocab:其の\"/><text>: esse, essa (aquilo que está perto de quem ouve)</text>"
+    },
+    {
+      "lesson": "les:n5-particulas-lugar-03",
+      "why": "374 now holds the pluralising suffix たち, which does NOT derive from 立つ — the sentence claiming it did is false about the new word",
+      "old": "= \"ficar de pé na estação\". O substantivo </text><vocab ref=\"vocab:達\"/><text> (\"partida, início\") vem do mesmo verbo.</text>",
+      "new": "= \"ficar de pé na estação\". Não confunda com o sufixo </text><vocab ref=\"vocab:達\"/><text>, que marca plural de pessoas (\"nós\", \"vocês\") e não vem desse verbo.</text>"
+    },
+    {
+      "lesson": "les:n4-obrigacao-05",
+      "why": "1086 now holds the adverb こう, not 侯 'marquês'",
+      "old": "<vocab ref=\"vocab:斯う\"/><text>(こう) = \"marquês\" (título de nobreza).</text>",
+      "new": "<vocab ref=\"vocab:斯う\"/><text>(こう) = \"assim, deste jeito\".</text>"
+    },
+    {
+      "lesson": "les:n4-forma-simples-03",
+      "why": "699 now holds とうとう 'finally', not 等々 'and so on'; the list is adverbs already",
+      "old": "<vocab ref=\"vocab:到頭\"/><text>: etc., e assim por diante (serve para encerrar listas)</text>",
+      "new": "<vocab ref=\"vocab:到頭\"/><text>: finalmente, afinal (depois de muita espera)</text>"
+    },
+    {
+      "lesson": "les:n4-forma-simples-06",
+      "why": "745 now holds the interjection うん, so the list is no longer about 'sorte'",
+      "old": "junte algumas palavras de movimento, sorte e ações:",
+      "new": "junte algumas palavras de movimento, conversa e ações:"
+    },
+    {
+      "lesson": "les:n4-forma-simples-06",
+      "why": "745 now holds the interjection うん 'yeah', not 運 'sorte'",
+      "old": "<vocab ref=\"vocab:うん\"/><text>(</text><jp>うん</jp><text>): sorte, fortuna.</text>",
+      "new": "<vocab ref=\"vocab:うん\"/><text>(</text><jp>うん</jp><text>): sim, é (resposta informal, entre amigos).</text>"
+    }
+  ],
+  "kanji_example_rule": "A record demonstrates a kanji reading only if the new headword contains the kanji AND, for a one-kanji word, the record's kana IS that reading. Containment alone kept 503 on 杯's kun reading さかずき after the record started reading はい.",
+  "kanji_example_edges_dropped_this_run": []
+}

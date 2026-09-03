@@ -2,7 +2,7 @@
  "quick": {
   "known": {
    "corpus/grammar/INDEX.md": {
-    "rebuilt_sha256": "9dd4cead64b9a0f7374357f51e0270e2a7f7769868cf47962e529853878d6406",
+    "rebuilt_sha256": "004abefda140b46215291c4f83a8589065d0e64ccfe144ed2847d934b41d5f4b",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n3.json": {
@@ -18,7 +18,7 @@
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    }
   },
-  "recorded_at": "2026-09-02"
+  "recorded_at": "2026-09-03"
  },
  "_why": "Files the rebuild does not reproduce byte-for-byte yet, per mode, each pinned to the bytes the rebuild currently produces. An entry may be deleted when the file starts matching; adding one needs a written cause. Each cause starts with a key from _causes — the diagnosis — followed by the measured difference for that file; a re-record keeps the cause an entry already carries, so those keys survive.",
  "full": {

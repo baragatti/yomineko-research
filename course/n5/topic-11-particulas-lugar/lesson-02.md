@@ -7,7 +7,7 @@
 - Usar いる (casual) para dizer que um SER VIVO existe
 - Situar a existência num lugar e usar vocabulário de lugar/direção próxima (そこ, そちら, そば, そと)
 
-**Introduz:** gramática [gp-12, gp-13] · vocabulário [其処, 其方, 園, 外, 空, 誰, 誰か] · kanji [間] · kana [—]
+**Introduz:** gramática [gp-12, gp-13] · vocabulário [其の, 其処, 其方, 外, 空, 誰, 誰か] · kanji [間] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78451`, `sent:tatoeba-6828199`, `sent:tatoeba-198627`, `sent:tatoeba-6828196`
 
@@ -44,7 +44,7 @@ Você escolhe ある ou いる pela mesma regra de sempre: coisa inanimada fica 
 - 其方: por aí, nessa direção (do lado de quem ouve)
 - 側: ao lado, pertinho
 - 外: fora, do lado de fora
-- 園: jardim, parque
+- 其の: esse, essa (aquilo que está perto de quem ouve)
 - 空: céu
 Exemplos curtos no molde: そこにネコがいる ("tem um gato aí") e 外に犬がいる ("tem um cachorro lá fora"). Para gente, 誰 ("quem") e 誰か ("alguém") combinam direto com いる: そこに誰かいる = "tem alguém aí".
 

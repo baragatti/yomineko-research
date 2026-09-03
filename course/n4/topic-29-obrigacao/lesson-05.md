@@ -7,7 +7,7 @@
 - Ligar duas orações com 〜なくて (causa ou estado negativo)
 - Dizer que algo NÃO precisa ser feito com 〜なくてもいい / 〜なくていい
 
-**Introduz:** gramática [gp-62] · vocabulário [ハンバーグ, レジ, 以外, 侯, 十分, 吃驚, 市, 裏, 講堂] · kanji [写 映 英] · kana [—]
+**Introduz:** gramática [gp-62] · vocabulário [ハンバーグ, レジ, 以外, 十分, 吃驚, 市, 斯う, 裏, 講堂] · kanji [写 映 英] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-174749`, `sent:tatoeba-182548`, `sent:tatoeba-183273`, `sent:tatoeba-122086`
 
@@ -59,7 +59,7 @@ Esta lição recolhe palavras variadas que combinam com a ideia de dispensa e de
 - レジ= "caixa registradora" (o caixa da loja).
 - 講堂(こうどう) = "auditório".
 - 吃驚(びっくり) = "surpreender-se, assustar-se".
-- 侯(こう) = "marquês" (título de nobreza).
+- 斯う(こう) = "assim, deste jeito".
 
 #### Três kanji novos
 Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.

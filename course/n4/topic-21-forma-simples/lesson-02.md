@@ -7,7 +7,7 @@
 - Reconhecer ではないか como a versão neutra/mais formal de じゃないか
 - Transmitir a impressão ou a 'vibe' de algo com って感じ
 
-**Introduz:** gramática [dewa-nai-ka, gp-129, janai-ka] · vocabulário [オートバイ, ガソリン, 怒る, 柔らかい, 生きる, 聞こえる, 苦い, 運, 運動, 運転手, 駄目, 鳴る] · kanji [事 同 自] · kana [—]
+**Introduz:** gramática [dewa-nai-ka, gp-129, janai-ka] · vocabulário [うん, オートバイ, ガソリン, 怒る, 柔らかい, 生きる, 聞こえる, 苦い, 運動, 運転手, 駄目, 鳴る] · kanji [事 同 自] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-5b8afca2e28a`, `sent:tatoeba-228724`, `sent:tatoeba-200192`, `sent:gen-238f14601cdc`
 

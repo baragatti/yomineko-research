@@ -5,7 +5,7 @@
   "description": "One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. The id prefix names the section, and each section has its own required shape.",
   "x-yomineko": {
     "entity": "exam_item",
-    "records": 6048,
+    "records": 6037,
     "packing": "list",
     "glob": "corpus/exam_banks/n[0-9]_*.json",
     "stable_id_field": "id",
@@ -197,7 +197,7 @@
     },
     {
       "title": "word-level multiple choice",
-      "description": "kanji_reading / orthography: a word in isolation, four options. Applies to ids prefixed kr, or (2379 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "description": "kanji_reading / orthography: a word in isolation, four options. Applies to ids prefixed kr, or (2371 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
       "if": {
         "required": [
           "id"
@@ -226,7 +226,7 @@
     },
     {
       "title": "multiple choice inside a sentence",
-      "description": "context_fill / grammar_form: the gap sits in a real corpus sentence. Applies to ids prefixed cf, gf (1720 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "description": "context_fill / grammar_form: the gap sits in a real corpus sentence. Applies to ids prefixed cf, gf (1719 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
       "if": {
         "required": [
           "id"
@@ -320,7 +320,7 @@
     },
     {
       "title": "paraphrase",
-      "description": "paraphrase: pick the sentence that means the same thing. Applies to ids prefixed pp (183 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "description": "paraphrase: pick the sentence that means the same thing. Applies to ids prefixed pp (182 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
       "if": {
         "required": [
           "id"
@@ -351,7 +351,7 @@
     },
     {
       "title": "usage",
-      "description": "usage: pick the sentence that uses the target word correctly. Applies to ids prefixed us (183 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
+      "description": "usage: pick the sentence that uses the target word correctly. Applies to ids prefixed us (182 items). `required` is measured at 100% presence per prefix; the branch itself is declared in build_schemas.py.",
       "if": {
         "required": [
           "id"

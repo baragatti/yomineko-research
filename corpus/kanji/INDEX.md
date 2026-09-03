@@ -1,6 +1,6 @@
 # Corpus — Kanji (leveled)
 
-_Generated 2026-09-02. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `common` (nanori=false)._
+_Generated 2026-09-03. `meanings` = {"pt-BR":[…],"en":[…]}; readings carry `common` (nanori=false)._
 
 | kanji | level | strokes | #readings | meanings |
 |-------|-------|--------:|----------:|----------|

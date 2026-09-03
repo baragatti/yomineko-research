@@ -1,6 +1,6 @@
 # Corpus — Vocabulary (leveled)
 
-_Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
+_Generated 2026-09-03. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source); `register` = neutral usage enum from JMdict misc._
 
 | headword | kana | level | meaning |
 |----------|------|-------|---------|
@@ -31,6 +31,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | どうぞ | どうぞ | n5 | por favor, fique à vontade |
 | どうも | どうも | n5 | obrigado, valeu |
 | どんな | どんな | n5 | que tipo de, que espécie de |
+| はい | はい | n5 | sim, isso mesmo |
 | もう | もう | n5 | já |
 | もう一度 | もういちど | n5 | mais uma vez, de novo |
 | もしもし | もしもし | n5 | alô, oi |
@@ -187,6 +188,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 公園 | こうえん | n5 | parque, praça |
 | 六 | ろく | n5 | seis |
 | 六つ | むっつ | n5 | seis (coisas) |
+| 其の | その | n5 | esse, essa |
 | 其れ | それ | n5 | isso, esse |
 | 其れから | それから | n5 | depois disso, e então |
 | 其れでは | それでは | n5 | então, nesse caso |
@@ -258,7 +260,6 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 困る | こまる | n5 | ter problemas, ficar em apuros |
 | 図書館 | としょかん | n5 | biblioteca |
 | 国 | くに | n5 | país, nação |
-| 園 | その | n5 | jardim, parque |
 | 土曜日 | どようび | n5 | sábado |
 | 地下鉄 | ちかてつ | n5 | metrô |
 | 地図 | ちず | n5 | mapa |
@@ -423,7 +424,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 来年 | らいねん | n5 | ano que vem, próximo ano |
 | 来月 | らいげつ | n5 | mês que vem, próximo mês |
 | 来週 | らいしゅう | n5 | semana que vem, próxima semana |
-| 杯 | さかずき | n5 | cálice de saquê, taça para bebidas alcoólicas |
+| 杯 | はい | n5 | cálice de saquê, taça para bebidas alcoólicas |
 | 東 | ひがし | n5 | leste, oriente |
 | 枚 | まい | n5 | contador para objetos planos e finos (folhas, pratos, camisas) |
 | 果物 | くだもの | n5 | fruta |
@@ -477,6 +478,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 点ける | つける | n5 | ligar, acender |
 | 無い | ない | n5 | não haver, não ter |
 | 無くす | なくす | n5 | perder, extraviar |
+| 然う | そう | n5 | assim, desse jeito |
 | 然うして | そうして | n5 | e então, e assim |
 | 然し | しかし | n5 | mas, porém |
 | 煙草 | タバコ | n5 | cigarro, tabaco |
@@ -530,7 +532,6 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 秋 | あき | n5 | outono |
 | 空 | そら | n5 | céu |
 | 窓 | まど | n5 | janela |
-| 立ち | たち | n5 | partida, saída |
 | 立つ | たつ | n5 | ficar de pé, levantar-se |
 | 立派 | りっぱ | n5 | esplêndido, admirável |
 | 等 | など | n5 | e coisas assim, etc. |
@@ -547,7 +548,6 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 結構 | けっこう | n5 | bom, está bom assim |
 | 絵 | え | n5 | desenho, pintura |
 | 綺麗 | きれい | n5 | bonito, lindo |
-| 総 | そう | n5 | total, geral (prefixo) |
 | 緑 | みどり | n5 | verde |
 | 締める | しめる | n5 | amarrar, apertar |
 | 練習 | れんしゅう | n5 | prática, treino |
@@ -560,7 +560,6 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 耳 | みみ | n5 | orelha, ouvido |
 | 聞く | きく | n5 | ouvir, escutar |
 | 肉 | にく | n5 | carne |
-| 肺 | はい | n5 | pulmão, pulmões |
 | 背 | せい | n5 | altura (de uma pessoa), estatura |
 | 背 | せ | n5 | costas, dorso |
 | 背広 | せびろ | n5 | terno |
@@ -628,6 +627,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 遊ぶ | あそぶ | n5 | brincar, se divertir |
 | 過ぎ | すぎ | n5 | passado (das horas), depois de |
 | 道 | みち | n5 | rua, estrada |
+| 達 | たち | n5 | sufixo de plural (pessoas e animais) |
 | 違う | ちがう | n5 | ser diferente, diferir |
 | 遠い | とおい | n5 | longe, distante |
 | 遣る | やる | n5 | fazer, realizar |
@@ -711,6 +711,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | Ｙシャツ | ワイシャツ | n5 | camisa social, camisa de botão |
 | あっ | あっ | n4 | ah!, ih! |
 | あんな | あんな | n4 | daquele tipo, assim (como aquilo) |
+| うん | うん | n4 | sim, é |
 | お土産 | おみやげ | n4 | lembrança, souvenir |
 | お嬢さん | おじょうさん | n4 | senhorita, moça |
 | お宅 | おたく | n4 | a sua casa (polido), residência (de outrem, polido) |
@@ -834,7 +835,6 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 似る | にる | n4 | parecer-se, assemelhar-se |
 | 住所 | じゅうしょ | n4 | endereço |
 | 例えば | たとえば | n4 | por exemplo |
-| 侯 | こう | n4 | marquês, senhor feudal |
 | 倍 | ばい | n4 | dobro, o dobro |
 | 倒れる | たおれる | n4 | cair, tombar |
 | 値段 | ねだん | n4 | preço, valor |
@@ -867,6 +867,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 別 | べつ | n4 | outro, diferente |
 | 別れる | わかれる | n4 | separar-se, despedir-se |
 | 利用 | りよう | n4 | uso, utilização |
+| 到頭 | とうとう | n4 | finalmente, afinal |
 | 割れる | われる | n4 | quebrar, estilhaçar |
 | 割合 | わりあい | n4 | proporção, porcentagem |
 | 力 | ちから | n4 | força, poder |
@@ -1046,6 +1047,7 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 文化 | ぶんか | n4 | cultura |
 | 文学 | ぶんがく | n4 | literatura |
 | 文法 | ぶんぽう | n4 | gramática |
+| 斯う | こう | n4 | assim, deste jeito |
 | 新聞社 | しんぶんしゃ | n4 | jornal (empresa), editora de jornal |
 | 旅館 | りょかん | n4 | pousada japonesa, ryokan |
 | 日記 | にっき | n4 | diário |
@@ -1208,7 +1210,6 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 競争 | きょうそう | n4 | competição, concorrência |
 | 笑う | わらう | n4 | rir, sorrir |
 | 筈 | はず | n4 | deve ser (o caso), era de se esperar |
-| 等々 | とうとう | n4 | e assim por diante, etc. |
 | 答え | こたえ | n4 | resposta |
 | 簡単 | かんたん | n4 | simples, fácil |
 | 米 | こめ | n4 | arroz (cru, em grão) |
@@ -1309,7 +1310,6 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 進む | すすむ | n4 | avançar, seguir em frente |
 | 遅れる | おくれる | n4 | atrasar-se, estar atrasado |
 | 遊び | あそび | n4 | brincadeira, diversão |
-| 運 | うん | n4 | sorte, fortuna |
 | 運ぶ | はこぶ | n4 | carregar, transportar |
 | 運動 | うんどう | n4 | exercício físico, atividade física |
 | 運転 | うんてん | n4 | direção, ato de dirigir |
@@ -7405,3 +7405,5 @@ _Generated 2026-09-02. `gloss` = {"pt-BR":[…],"en":[…]} (en = JMdict source)
 | 齎す | もたらす | n1 | trazer, ocasionar |
 | Ｇパン | ジーパン | n1 | jeans, calça jeans |
 | ＯＫ | オッケー | n1 | OK, tudo bem |
+
+**Re-pointed:** 8 address(es) named a different JMdict entry and were corrected in place (owner decision A9); `../vocab_redirects.json` maps each old slug to the record that now answers for it.
