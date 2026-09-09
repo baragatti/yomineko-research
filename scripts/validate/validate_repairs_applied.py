@@ -1313,6 +1313,66 @@ def handle_practice_exercises(rows, sents, gram, table):
     return out
 
 
+def handle_card_production_keys(rows, sents, gram, table):
+    """W27. Every production card must carry EXACTLY the key the table names, in the shipped export.
+
+    Four claims per row, and three of them fail silently if the apply half-lands: the lesson exists
+    and declares a card for this item, that card is a `production` card at all (a key on a card the
+    learner is never asked to produce is a key nobody reads), it carries a `production_key`, and the
+    prompt, the accept set (ORDER included — the table is exact-match, and a reordered set means the
+    export was built from something other than this table), the sense index and the `verified` /
+    `verified_by` stamps are the row's.
+
+    The accept set is checked as a list rather than a set on purpose. It is derived, in a fixed
+    order, from the record's `forms[]` minus the JMdict-tag strip; a difference in order can only
+    come from a different derivation, and the point of an exact-match table is to catch that.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} / {r['item']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        cards = [c for c in (lesson.get("srs") or {}).get("introduces_cards") or []
+                 if c.get("item") == r["item"]]
+        if len(cards) != 1:
+            out.append(("fail", C_NO_RECORD, addr,
+                        f"the lesson declares {len(cards)} card(s) for {r['item']}, expected 1"))
+            continue
+        card = cards[0]
+        if "production" not in (card.get("card_types") or []):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"card_types are {card.get('card_types')!r}: not a production card, so an "
+                        f"answer key on it is unreachable"))
+            continue
+        key = card.get("production_key")
+        if not key:
+            out.append(("fail", C_NOT_APPLIED, addr, "the card carries no production_key"))
+            continue
+        if (key.get("prompt") or {}).get("pt-BR") != r["prompt"]["pt-BR"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"prompt is {(key.get('prompt') or {}).get('pt-BR')!r}, the row's is "
+                        f"{r['prompt']['pt-BR']!r}"))
+            continue
+        if list(key.get("accept") or []) != list(r["accept"]):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"accept is {key.get('accept')!r}, the row's is {r['accept']!r}"))
+            continue
+        if key.get("sense_index") != r["sense_index"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"sense_index is {key.get('sense_index')!r}, the row's is "
+                        f"{r['sense_index']!r}"))
+            continue
+        if key.get("verified") != r["verified"] or key.get("verified_by") != r["verified_by"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"verified is {key.get('verified')!r}/{key.get('verified_by')!r}, the "
+                        f"row's is {r['verified']!r}/{r['verified_by']!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
@@ -1328,6 +1388,7 @@ REGISTRY = {
     "lesson_furigana.json": handle_lesson_furigana,
     "reading_passages.json": handle_reading_passages,
     "practice_kanji_exercises.json": handle_practice_exercises,
+    "card_production_keys.json": handle_card_production_keys,
 }
 
 

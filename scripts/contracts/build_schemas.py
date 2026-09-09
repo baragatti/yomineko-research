@@ -306,6 +306,69 @@ _register({
         prefix="feat:"),
     "lesson.srs.introduces_cards[].deck": design(
         "deck", "design/unlock_enums.json#deck", "The SRS deck these cards land in."),
+    # W27. The card SET is derived from the unlock ledger; what a `production` card ASKS and what a
+    # grader must accept is authored, and it belongs to the card — (lesson, item) — because the sense
+    # a prompt names is the sense the INTRODUCING LESSON teaches. design/srs_design.md §8.
+    # Registered as ONE object rather than as four leaf paths: infer_shapes walks two levels
+    # (`srs.introduces_cards[].production_key` is where it stops), so leaf paths under it would be
+    # rules nothing ever looks up. Kept in step with `scripts/validate/validate_card_content.py`,
+    # which is what actually enforces the parts a JSON Schema cannot state (that `accept` holds this
+    # record's forms and no other entry's).
+    "lesson.srs.introduces_cards[].production_key": {
+        "type": "object",
+        "description": (
+            "The answer key for a `production` card: what the learner is asked and what a grader "
+            "must accept. Present only on production cards, and today only on the 2,951 vocabulary "
+            "ones — grammar, kanji and kana production cards are later work, which is why this is "
+            "optional by measurement rather than by exception. Authored, never derived: the card "
+            "SET comes from the unlock ledger, the card's CONTENT does not. See design/srs_design.md "
+            "§8 and scripts/validate/validate_card_content.py."),
+        "properties": {
+            "prompt": {
+                "$ref": "common.schema.json#/$defs/LocaleText",
+                "description": "What the learner is shown. A locale object, never a bare "
+                               "`prompt_pt`: design/i18n.md records the PT-suffixed bare string on "
+                               "speak_unit as a contract violation and this field must not repeat "
+                               "it.",
+            },
+            "accept": {
+                "type": "array",
+                "items": {"type": "string", "minLength": 1},
+                "uniqueItems": True,
+                "minItems": 1,
+                "description": "Every Japanese surface a grader must take as correct: the record's "
+                               "headword, its common kanji variants and its kana, minus the forms "
+                               "JMdict tags rare, out-dated, search-only or irregular (a learner "
+                               "typing み for \"mar\" used to be marked right). A bare array, "
+                               "not a locale object: Japanese here is the material under test, so "
+                               "it is locale-invariant — the same ruling design/i18n.md gives "
+                               "exam_item.answer. It states WHICH surfaces are correct and nothing "
+                               "about how the app normalises what was typed.",
+            },
+            "sense_index": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Which senses[] entry of the item the prompt glosses, so a reviewer "
+                               "can check the cue against the record rather than against memory.",
+            },
+            "verified": {
+                "type": "string",
+                "enum": ["sampled"],
+                "description": "How the key was checked. `sampled` is a claim about the TABLE — "
+                               "one verifier per batch at authoring time, then a random sample read "
+                               "against the records before apply (APP_PLAN §1 \"verify once\") "
+                               "— never a claim that a human read this row.",
+                "x-vocabulary": {"owner": "design", "source": "design/srs_design.md#8"},
+            },
+            "verified_by": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The report carrying the evidence for `verified`.",
+            },
+        },
+        "required": ["prompt", "accept", "verified", "verified_by"],
+        "additionalProperties": False,
+    },
     "grammar.register[]": _grammar_register,
     "grammar.caution": vocabulary(
         ["none", "rough", "offensive", "sensitive"],

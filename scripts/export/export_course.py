@@ -282,14 +282,49 @@ def flatten_body(con, body: str) -> str:
         return body  # fall back to raw on any parse issue
 
 
-def _srs_cards(unlocks: list, level: str) -> list:
+_PROD_KEYS: dict[tuple[int, str], dict] | None = None
+
+
+def _production_keys(con) -> dict[tuple[int, str], dict]:
+    """W27. (lesson_id, item) -> the authored production answer key, or {} if the table is absent.
+
+    The card set is DERIVED from the unlock ledger, but what a production card asks and what a grader
+    must accept is authored (`card_production_key`, migration 016, written by
+    `scripts/apply_card_production_keys.py`). It is joined on here rather than stored in the ledger
+    because a card is (lesson, item): the sense a prompt names is the sense the INTRODUCING LESSON
+    teaches, not a property of the vocabulary entry.
+    """
+    global _PROD_KEYS
+    if _PROD_KEYS is None:
+        if not con.execute(
+                "SELECT name FROM sqlite_master WHERE name='card_production_key'").fetchone():
+            _PROD_KEYS = {}
+            return _PROD_KEYS
+        _PROD_KEYS = {
+            (lid, item): {"prompt": {LOC: prompt}, "accept": json.loads(accept),
+                          "sense_index": sense, "verified": verified, "verified_by": by}
+            for lid, item, prompt, accept, sense, verified, by in con.execute(
+                "SELECT lesson_id,item,prompt_pt,accept_json,sense_index,verified,verified_by "
+                "FROM card_production_key")}
+    return _PROD_KEYS
+
+
+def _srs_cards(con, lesson_id: int, unlocks: list, level: str) -> list:
     """Derive the FSRS cards a lesson enrolls from its item unlocks (deck by skill; card types per deck)."""
+    keys = _production_keys(con)
     cards = []
     for u in unlocks:
         deck = enums.deck_for(u["type"], u["ref"], level)
         if deck and deck in enums.DECK_REGISTRY:
-            cards.append({"deck": deck, "item": u["ref"],
-                          "card_types": enums.DECK_REGISTRY[deck]["card_types"]})
+            card = {"deck": deck, "item": u["ref"],
+                    "card_types": enums.DECK_REGISTRY[deck]["card_types"]}
+            key = keys.get((lesson_id, u["ref"]))
+            # Only a `production` card can carry one, and only some do yet — recognition, cloze,
+            # handwriting and listening render the record itself and need no key. The field is
+            # therefore optional in the contract, by measurement.
+            if key and "production" in card["card_types"]:
+                card["production_key"] = key
+            cards.append(card)
     return cards
 
 
@@ -349,7 +384,7 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
             "order": L["ord"], "title": {LOC: title}, "description": {LOC: description},
             "objectives": [{LOC: o} for o in objectives],
             "needs": needs, "unlocks": unlocks, "feature_unlocks": feature_unlocks,
-            "srs": {"introduces_cards": _srs_cards(unlocks, L["level"])},
+            "srs": {"introduces_cards": _srs_cards(con, L["id"], unlocks, L["level"])},
             "cumulative_known_set": cks, "sentence_refs": srefs, "exercises": exercises,
             "body": body, "needs_review": bool(L["needs_review"]),
         }

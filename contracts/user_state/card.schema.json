@@ -10,7 +10,8 @@
     "design": "design/user_state.md#5-card",
     "stable_id_field": "card_id",
     "key_namespace": ["usr"],
-    "note": "card_id is COMPOSED from ids that already exist — f\"{user_id}:{deck}:{item}:{kind}\" — so no counter and no server round-trip is needed to name a card. It parses back by splitting on ':' into exactly seven segments, because user_id, deck and item are two segments each and kind is one; no corpus stable id carries a second colon (verified across corpus/**). Putting `deck` in the key means a refile is a migration, not an edit: see design/user_state.md §2."
+    "note": "card_id is COMPOSED from ids that already exist — f\"{user_id}:{deck}:{item}:{kind}\" — so no counter and no server round-trip is needed to name a card. It parses back by splitting on ':' into exactly seven segments, because user_id, deck and item are two segments each and kind is one; no corpus stable id carries a second colon (verified across corpus/**). Putting `deck` in the key means a refile is a migration, not an edit: see design/user_state.md §2.",
+    "content_note": "This record is the learner's SCHEDULING state and carries no card content — not the prompt, not the answer key, not the example. Content lives once, in the courseware, and is read through (introduced_by, item): a `production` card's answer key is `lesson.srs.introduces_cards[].production_key` — `{prompt: LocaleText, accept: string[], sense_index, verified, verified_by}` on the lesson named by `introduced_by` (W27, design/srs_design.md §8, 2,951 of them). Copying it here would give a corpus string a second home per learner, which is the one thing a version-tagged cache must not do: a repaired prompt would have to be migrated across every user's rows instead of being re-read."
   },
   "type": "object",
   "properties": {

@@ -2,8 +2,8 @@
   "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
   "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
   "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
-  "step_count": 121,
-  "enabled_count": 85,
+  "step_count": 122,
+  "enabled_count": 86,
   "steps": [
     {
       "n": 1,
@@ -1860,6 +1860,20 @@
       "n": 118,
       "phase": "repair",
       "quick_family": null,
+      "script": "scripts/apply_card_production_keys.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": null,
+      "first_commit_date": "2026-09-09",
+      "writes": [
+        "card_production_key"
+      ],
+      "note": "W27 production answer keys. Applies research/derived/repairs/card_production_keys.json: the pt-BR prompt and the accepted Japanese answers for all 2,951 vocabulary production cards, into card_production_key (migration 016), which export_course.py joins onto the derived srs.introduces_cards[] entry. 2,938 rows are the W27 campaign's, resolved through corpus/vocab_redirects.json; 13 are the authoring residue the Fable sample asked for. Runs after the practice apply because it addresses cards by (lesson, item) and the item is dereferenced with export_course._deref, so every earlier step that re-points a ref must already have run; before the family builders, which read the unlock ledger. Touches no lesson body, no unlock and no exercise."
+    },
+    {
+      "n": 119,
+      "phase": "repair",
+      "quick_family": null,
       "script": "scripts/apply_lesson_furigana.py",
       "args": [],
       "enabled": true,
@@ -1871,7 +1885,7 @@
       "note": "W21 furigana apply. Applies research/derived/repairs/lesson_furigana.json: the `reading` attribute on 611 of the 875 lesson-body <jp> spans that carried kanji and no reading (PENDING A7), in BOTH layers -- the pt-BR body in localized_text here and research/derived/lessons/<slug>.json. 315 spans are settled by the lesson's own vocabulary record, 296 by SudachiPy verified against the vocab and kanji registries and the whole-word aligner; the 264 the registries cannot settle are carried in the same table as residue and are NOT written. Adds an attribute only: the rendered text of every lesson is byte-identical afterwards. validate_lesson_bodies ratchets the residue."
     },
     {
-      "n": 119,
+      "n": 120,
       "phase": "families",
       "quick_family": null,
       "script": "scripts/ingest/build_families.py",
@@ -1886,7 +1900,7 @@
       "note": "W11b: RECOMPUTES the class families (six conjugation/adjective classes + counters) over the levels course_module declares taught, instead of the old `if COUNT(*) FROM family > 0: skip` guard that made it a permanent no-op after its first run. Owner decision D14 also retires the 51 materialized kanji_component families here (family.deprecated_by = 'kanji.components'): they were a cache of the store kanji.components is exported from, 0 of 51 still matched it, and design/schema_v2.md answers the component query from that store directly. MOVED from step 37 in the pre-W11b numbering to after the lesson chain: the family layer is now derived from lesson_unlocks, which replay_all.py (load_lessons) does not populate until step 37 and which steps 90, 110, 111, 112 and 113 then correct. Built at 37 it would have derived every topic-bound family from an empty ledger."
     },
     {
-      "n": 120,
+      "n": 121,
       "phase": "families",
       "quick_family": null,
       "script": "scripts/ingest/build_families_full.py",
@@ -1901,7 +1915,7 @@
       "note": "W11b: RECOMPUTES the topic-bound families from the LIVE unlock ledger (lesson_unlocks) instead of the frozen grammar_point.introducing_topic_id snapshot that put 272 of 364 grammar memberships in the wrong family, and drops the hardcoded `level IN ('n5','n4')` in favour of course_module.level. Renames the two types that lied about themselves: function_set -> topic_set and semantic_field -> topic_residual (the slugs, which are published addresses, do not change). Must run after the lesson chain and after the three identity migrations, for the same reason as the step before it."
     },
     {
-      "n": 121,
+      "n": 122,
       "phase": "families",
       "quick_family": null,
       "script": "scripts/ingest/fix_contrasts.py",

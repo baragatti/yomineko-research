@@ -139,3 +139,47 @@ blocked on it. If the teacher review reverses it, the change is deleting rows fr
 `srs.introduces_cards[]` for two decks — a content edit, not a schema change. Nothing in
 `contracts/user_state/` has to move either way, which is the point of recording the decision here
 instead of encoding it in the schema.
+
+## 8. The card's content: `srs.introduces_cards[].production_key` (W27, 2026-09-09)
+
+Everything above describes the SCHEDULING of a card. Nothing in this document, in
+`design/user_state.md` or in `contracts/user_state/card.schema.json` said what a card **shows** — and
+for four of the five kinds that was fine, because the app renders the record the card names. For
+`production` it is not: the learner is shown a pt-BR cue and has to write the Japanese, so the cue and
+the accepted answers ARE the card. 2,951 vocabulary production cards had neither. This section is the
+schema that fixes it, and the decision that goes with it.
+
+**Where it lives.** On the courseware side, as an optional object on the card the lesson declares:
+
+```json
+{"deck": "deck:vocab-n5", "item": "vocab:1423310", "card_types": ["recognition", "production"],
+ "production_key": {"prompt": {"pt-BR": "dentro, o interior de alguma coisa (lê-se なか)"},
+                    "accept": ["中", "なか"], "sense_index": 0,
+                    "verified": "sampled", "verified_by": "research/reports/w27_sample_report.md"}}
+```
+
+| field | type | meaning |
+|---|---|---|
+| `prompt` | `LocaleText` | What the learner is asked. A locale object, never a bare `prompt_pt`: `design/i18n.md` already records the PT-suffixed bare string on `speak_unit` as a contract violation and this field must not repeat it. |
+| `accept` | `string[]` | Every Japanese surface a grader must take. Japanese is the material under test, so it is locale-invariant and stays a bare array — the same ruling `design/i18n.md` gives `exam_item.answer`. |
+| `sense_index` | `integer` | Which `senses[]` entry of the item the prompt glosses, so a reviewer can check the cue against the record instead of against their memory. |
+| `verified` | `string` | How the key was checked. `"sampled"` is a claim about the TABLE, not the row. |
+| `verified_by` | `string` | The report that carries the evidence. |
+
+**Why on the card and not on the vocabulary record.** A card is (lesson, item, kind). The sense a
+prompt names is the sense the **introducing lesson** teaches: 中 is "dentro" where
+`les:n5-comparacoes-02` unlocks it and would be something else in a lesson that taught ちゅう. Putting
+the key on the entry would force one prompt per record and lose that. It is stored in the index as
+`card_production_key(lesson_id, item, …)` (migration 016) and joined onto the derived card at export;
+`introduces_cards` itself stays derived from the unlock ledger, so nothing about the card SET moved.
+
+**Why optional.** Only a `production` card can carry one and only vocabulary cards have one today.
+Grammar (494), kanji (634) and kana (57) production cards are W28-and-later work, and the field is
+`required: false` by measurement, not by exception.
+
+**What it does not settle.** `accept` is an exact-string set. Nothing here says how a grader
+normalises what the learner typed (okurigana slips, fullwidth digits, は/わ); that is the app's rule
+and it belongs with the grader, not in the corpus. The corpus's job is to state which surfaces are
+correct, and `scripts/validate/validate_card_content.py` gates exactly that: a non-empty prompt, an
+`accept` that contains the record's headword or its kana, and nothing in it that is not a form of that
+record.

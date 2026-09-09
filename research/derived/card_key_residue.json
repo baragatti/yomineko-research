@@ -1,0 +1,255 @@
+{
+  "why": "W27 apply. `research/derived/pending/card_production_keys.json` was authored before W09 re-pointed eight vocab records and before W11a created five unlocks, so 2,946 authored rows do not cover the 2,951 production cards the course actually issues today. The Fable 100-row sample (research/reports/w27_sample_report.md) found exactly that gap and made it the apply's only authoring: 8 rows dropped and re-authored for the record their card now addresses, plus 5 rows for the cards that never had one. These 13 rows are that residue and nothing else in the W27 apply is authored.",
+  "definition": "Same row shape as the campaign table: one row per (lesson, vocab slug) production card. `prompt` is a locale object because a bare `prompt_pt` is the contract violation design/i18n.md already names on speak_unit; `accept` is target-language Japanese and therefore locale-invariant. `accept` is NOT authored here either: it is the record's own forms[] minus the JMdict-tag strip the sample report ordered, computed by scripts/build_card_key_table.py exactly as it is for the other 2,938 rows, and repeated in `accept_expected` only so a reviewer can read the row without running the builder.",
+  "generated_by": "W27 apply (hand-authored against corpus/vocab/*.json, the lesson body that issues the card, and research/derived/vocab_repoint_ledger.json for the list slot each re-point was made to).",
+  "sense_rule": "`sense_index` names the sense the introducing lesson teaches, read out of the lesson's own prose where the lesson names it. For the eight re-pointed records the lesson prose predates the re-point in one case (les:n5-particulas-lugar-07 still describes 総, the retired lexeme), and there the sense is taken from the JLPT list row W09 re-pointed to, which is the evidence the re-point itself was made on.",
+  "prompt_overrides_why": "One campaign row is rewritten here rather than in the campaign artifact, so the artifact stays the record of what W27 authored and the change stays visible. `audit_hygiene_all_locales.py` failed the apply on it: the prompt used `comboio`, which is pt-PT for a train and means a convoy in pt-BR (CLAUDE.md, Appendix B). One word, no change of sense, no change of accept set. Not authoring: a hygiene repair a hard gate forced.",
+  "prompt_overrides": [
+    {
+      "lesson": "les:n3-causa-08",
+      "vocab": "vocab:1558370",
+      "record": "列車/れっしゃ",
+      "was": "trem, composição ferroviária (o comboio inteiro, inclusive de longa distância)",
+      "prompt": {
+        "pt-BR": "trem, composição ferroviária (o conjunto inteiro de vagões, inclusive de longa distância)"
+      },
+      "why": "pt-PT `comboio` -> pt-BR. audit_hygiene_all_locales pt-PT check."
+    }
+  ],
+  "row_count": 13,
+  "rows": [
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n5-particulas-lugar-02",
+      "vocab": "vocab:1006830",
+      "replaces": {
+        "vocab": "vocab:1176240",
+        "prompt_pt": "jardim, parque (termo literário)"
+      },
+      "record": "其の/その",
+      "prompt": {
+        "pt-BR": "esse, essa (vem antes de um substantivo: esse livro)"
+      },
+      "accept_expected": [
+        "其の",
+        "その",
+        "そん"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 3 (adj-pn). The lesson's own list reads 'その: esse, essa'. Distinguished from 其処/そこ and 其方/そちら, both unlocked by this same lesson, by the fact that その attaches to a following noun instead of standing alone."
+    },
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n5-particulas-lugar-03",
+      "vocab": "vocab:1416220",
+      "replaces": {
+        "vocab": "vocab:1551240",
+        "prompt_pt": "partida, saída (substantivo derivado do verbo たつ)"
+      },
+      "record": "達/たち",
+      "prompt": {
+        "pt-BR": "sufixo que forma o plural de pessoas e animais (nós, vocês)"
+      },
+      "accept_expected": [
+        "達",
+        "たち"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 1 (suf). The lesson says it outright: 'o sufixo 達, que marca plural de pessoas' e 'não vem desse verbo', separando-o de 立つ, que a mesma lição ensina."
+    },
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n5-particulas-lugar-07",
+      "vocab": "vocab:2137720",
+      "replaces": {
+        "vocab": "vocab:1401470",
+        "prompt_pt": "total, geral (prefixo que se junta a um substantivo)"
+      },
+      "record": "然う/そう",
+      "prompt": {
+        "pt-BR": "é isso mesmo, exato (confirma o que a outra pessoa acabou de dizer)"
+      },
+      "accept_expected": [
+        "然う",
+        "そう"
+      ],
+      "sense_index": 1,
+      "why": "sense 1 of 3 (int). The lesson body still describes 総 'total/geral', the lexeme W09 retired, so it cannot settle the sense; the two list rows the re-point was made on can, and both name the interjection: n5.csv line 359 `そう; そうです, \"yes; appears, to be the case\"` and n4.csv line 78 `そう, \"really, (is that) so; yes, right\"`. The stale prose is recorded in research/reports/w27_apply_report.md as a W21b-class course-data item; it is not touched here."
+    },
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n5-te-form-05",
+      "vocab": "vocab:2019640",
+      "replaces": {
+        "vocab": "vocab:1472630",
+        "prompt_pt": "cálice de saquê, a taça de bebida alcoólica"
+      },
+      "record": "杯/はい",
+      "prompt": {
+        "pt-BR": "contador de copos, xícaras e tigelas cheias"
+      },
+      "accept_expected": [
+        "杯",
+        "盃",
+        "はい"
+      ],
+      "sense_index": 1,
+      "why": "sense 1 of 5 (ctr). The lesson lists it as 'contador de copos e tigelas (一杯, 二杯…)', not as the sake cup of sense 0, and the list row the re-point was made on says `～杯,～はい,counter for cupfuls`. The same lesson also issues はい 'sim', so the two prompts have to separate the homophone, which they do by meaning."
+    },
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n5-te-form-05",
+      "vocab": "vocab:1010080",
+      "replaces": {
+        "vocab": "vocab:1472870",
+        "prompt_pt": "pulmão, o órgão da respiração"
+      },
+      "record": "はい/はい",
+      "prompt": {
+        "pt-BR": "sim, isso mesmo (a resposta afirmativa formal: professor, cliente, chamada)"
+      },
+      "accept_expected": [
+        "はい"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 6 (int). The lesson says 'はい: sim, isso mesmo (a resposta)'. The register cue separates it from ええ 'sim (resposta afirmativa curta em conversa)', which pre-n5-saudacoes-02 already issues."
+    },
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n4-forma-simples-02",
+      "vocab": "vocab:1001090",
+      "replaces": {
+        "vocab": "vocab:1172610",
+        "prompt_pt": "sorte, boa ou má (o acaso que decide as coisas)"
+      },
+      "record": "うん/うん",
+      "prompt": {
+        "pt-BR": "sim, aham (a resposta afirmativa informal, entre amigos)"
+      },
+      "accept_expected": [
+        "うん",
+        "ウン",
+        "うむ",
+        "ううむ"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 3 (int). The list row the re-point was made on is `うん,うん,\"yes (informal), all right (ok)\"` (Genki Ln.8), and the lesson is the plain-form lesson, where the informal 'sim' is the point. Sense 1 is the hesitating 'hum'."
+    },
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n4-forma-simples-03",
+      "vocab": "vocab:1449890",
+      "replaces": {
+        "vocab": "vocab:1855690",
+        "prompt_pt": "e assim por diante, etc. (o sufixo que fecha uma lista)"
+      },
+      "record": "到頭/とうとう",
+      "prompt": {
+        "pt-BR": "finalmente, no fim das contas (o desfecho que veio depois de todo um processo, bom ou ruim)"
+      },
+      "accept_expected": [
+        "到頭",
+        "とうとう"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 1 (adv). Separated from やっと 'finalmente, enfim (depois de muita espera ou esforço)', which les:n4-potencial-01 issues, by the fact that とうとう admits an unwanted outcome and やっと does not."
+    },
+    {
+      "origin": "w09-repoint",
+      "lesson": "les:n4-obrigacao-05",
+      "vocab": "vocab:1004310",
+      "replaces": {
+        "vocab": "vocab:1272630",
+        "prompt_pt": "marquês, senhor feudal"
+      },
+      "record": "斯う/こう",
+      "prompt": {
+        "pt-BR": "assim, deste jeito (o modo que está aqui, do lado de quem fala)"
+      },
+      "accept_expected": [
+        "斯う",
+        "こう"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 3 (adv). The lesson spells it out: '斯う (こう) = \"assim, deste jeito\"'. The こ/そ contrast in the cue separates it from そう, which les:n5-particulas-lugar-07 issues."
+    },
+    {
+      "origin": "w11a-unlock",
+      "lesson": "les:n4-condicionais-01",
+      "vocab": "vocab:1310670",
+      "record": "止める/とめる",
+      "prompt": {
+        "pt-BR": "parar alguma coisa, estacionar, desligar (verbo transitivo, lê-se とめる)"
+      },
+      "accept_expected": [
+        "止める",
+        "留める",
+        "停める",
+        "とめる"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 2 (v1, vt), with sense 1 'desligar' named in the cue because the lesson names both: '(parar, desligar) → 止めたら'. The reading is in the prompt because 止める is also read やめる, a different record, and 止まる/止む are the intransitive neighbours the course teaches separately."
+    },
+    {
+      "origin": "w11a-unlock",
+      "lesson": "les:n5-comparacoes-02",
+      "vocab": "vocab:1423310",
+      "record": "中/なか",
+      "prompt": {
+        "pt-BR": "dentro, o interior de alguma coisa (lê-se なか)"
+      },
+      "accept_expected": [
+        "中",
+        "なか"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 2 (n). The lesson says 'A peça 中 (なか) quer dizer \"dentro/interior\"' ao montar 〜の中で. The reading is in the prompt because 中 is also read ちゅう, whose card already carries '(lê-se ちゅう)', and because 内/うち glosses as 'dentro' too."
+    },
+    {
+      "origin": "w11a-unlock",
+      "lesson": "les:n5-conectando-01",
+      "vocab": "vocab:2846738",
+      "record": "何/なん",
+      "prompt": {
+        "pt-BR": "o quê (o interrogativo na leitura なん)"
+      },
+      "accept_expected": [
+        "何",
+        "なん"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 2 (pn). The lesson's list says '\"o quê / que\", para perguntar \"por quê?\"'. The reading is the whole disambiguator: 何/なに is a separate record with the prompt 'o que, que coisa (pronome interrogativo)'."
+    },
+    {
+      "origin": "w11a-unlock",
+      "lesson": "les:n5-particulas-lugar-02",
+      "vocab": "vocab:1403830",
+      "record": "側/そば",
+      "prompt": {
+        "pt-BR": "ao lado, pertinho de (lê-se そば)"
+      },
+      "accept_expected": [
+        "側",
+        "傍",
+        "そば"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 1 (n). The lesson's list reads 'ao lado, pertinho'. The reading is in the prompt because 側 is also read がわ ('o lado de', a different record)."
+    },
+    {
+      "origin": "w11a-unlock",
+      "lesson": "les:n5-passado-05",
+      "vocab": "vocab:1189370",
+      "record": "何方/どなた",
+      "prompt": {
+        "pt-BR": "quem (a forma educada de perguntar, lê-se どなた)"
+      },
+      "accept_expected": [
+        "何方",
+        "どなた"
+      ],
+      "sense_index": 0,
+      "why": "sense 0 of 1 (pn). The lesson says it in the body: '何方, o mesmo kanji lido de outro jeito, é a maneira polida de perguntar \"quem é?\"'. The same lesson issues 何方/どちら 'qual dos dois', so the reading has to be in the prompt; 誰 carries the bare prompt 'quem'."
+    }
+  ]
+}

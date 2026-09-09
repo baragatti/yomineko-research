@@ -58,6 +58,43 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-09 (au) — W27 APPLIED (§6 step 6) and the replay regression (at) named is FIXED. All
+> 2,951 vocabulary production cards carry an answer key; `validate_card_content.py` is the 40th hard
+> validator. Gate green, full replay green and re-recorded. NOT COMMITTED (the run was told to touch
+> no git state). Next DB writer: W31 apply.**
+>
+> - **The step-116 abort.** `apply_reading_passages.py` refused 114 boxes in a from-scratch replay
+>   because its `old.jp` precondition is a drift check on THIS index: a replay builds 116 reading
+>   boxes where the live index has 286, and 0 of the 114 it addresses held either `old` or `new`.
+>   Not drift, a different selection of the same slug. `old.jp` is now enforced only when the target
+>   is `db/corpus.sqlite` (the `migrate_grammar_merge.py` idiom); elsewhere the mismatch is printed
+>   per box and the authored passage is applied. Live guard plant-proved on a copy, still exit 2.
+>   **Full mode runs to the end again and the baseline was re-recorded: byte-identical 147/790 →
+>   222/790, held 643 → 568.** All 75 newly-identical files are N3 lesson `.md` renders whose reading
+>   line now matches, across topics 38-52.
+> - **W27 apply.** 2,946 campaign rows resolved through `corpus/vocab_redirects.json`; 8 addressed a
+>   record W09 re-pointed and were dropped and RE-AUTHORED; 5 W11a unlock cards were keyed. That
+>   13-row residue (`research/derived/card_key_residue.json`) is the unit's only authoring and is
+>   listed in full in the report. **1,396 accept forms stripped** over 831 rows by JMdict tag
+>   (sK 508, rK 484, sk 205, ok 102, oK 56, ik 21, iK 14, rk 4) plus 2 that are no form of the record
+>   (それでわ, じつわ); `ateji`/`gikun`/`io` deliberately kept, `arch` tags no form; NFKC twins
+>   (`5日` for `５日`) kept. 96 tagged headwords kept by the report's own "keep the headword" rule.
+> - **The schema edit the W27 row implied**: `srs.introduces_cards[].production_key` =
+>   `{prompt: LocaleText, accept: string[], sense_index, verified, verified_by}`, written up as
+>   `design/srs_design.md` §8, generated into `contracts/lesson.schema.json`, scoped in
+>   `design/i18n.md`, and pointed at from `contracts/user_state/card.schema.json` (the runtime card
+>   keeps no content copy). Index: `card_production_key`, migration 016, manifest **step 118**
+>   (furigana → 119, families → 120-122). Every row `verified: "sampled"` → the sample report.
+> - **Lesson prose did not move, measured**: the course tree re-exported from an index with the key
+>   table emptied differs in 0 `.md` files and in nothing but `production_key`.
+> - **`validate_card_content.py`** (the gate W26 left pending): item resolves and is not retired,
+>   every production card has a prompt and an accept set holding its record's name and nothing
+>   foreign, key only on a production card, structure. Ratchet vocab **0** / gram 494 / kanji 634 /
+>   kana 57. 11 plants, 11 caught, control green.
+> - Report: `research/reports/w27_apply_report.md` (counts, the 13 rows in full, 6 open items —
+>   `les:n5-particulas-lugar-07` still teaches the retired 総 beside a そう card; three rows have no
+>   card in a replay because 背/年/献花 resolve differently there).
+
 > **2026-09-09 (at) — W20 kanji half APPLIED and committed (§6 step 5): 899 exercises in 178 lessons,
 > kanji absent 0 at every level, practised 28% → 42.7%. Also today: W15/W16 (282 passages), W21,
 > W12, W11. Parallel file-only work in flight: W13b workflow (Layer-B for 4,223 N3 sentences), W17

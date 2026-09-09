@@ -82,6 +82,10 @@ SUITE = [
     ("validate_exercise_contracts.py", "code"),  # body binding, per-type answer keys grade as rendered
     ("validate_practice_coverage.py", "code"),   # every unlocked item asked by its own lesson (ratchet)
     ("validate_srs_decks.py", "code"),           # deck registry + lesson-level filing + no dup cards
+    # W26 declared this gate and left it pending; W27 authored the content it gates. srs_decks
+    # proves the card SET; this proves a card can be SHOWN and GRADED — prompt, accept set inside
+    # the record's own forms, item resolves and is not retired. Ratcheted per namespace.
+    ("validate_card_content.py", "code"),        # a production card renders and grades (ratchet)
     ("validate_lesson_gating.py", "code"),       # item refs inside own cks; i+1 sentence ratchet
     ("validate_sentence_manifest.py", "code"),   # sentence_refs == what the body renders
     ("audit_hygiene_all_locales.py", "code"),    # every pt-BR string, corpus-wide (replaces the

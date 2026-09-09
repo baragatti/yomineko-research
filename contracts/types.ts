@@ -416,6 +416,13 @@ export interface Lesson {
         card_types?: unknown[];
         deck?: "deck:grammar-n3" | "deck:grammar-n4" | "deck:grammar-n5" | "deck:kana-hiragana" | "deck:kana-katakana" | "deck:kanji-n3" | "deck:kanji-n4" | "deck:kanji-n5" | "deck:phrases" | "deck:vocab-n3" | "deck:vocab-n4" | "deck:vocab-n5";
         item?: string;
+        production_key?: {
+          prompt: LocaleText;
+          accept: string[];
+          sense_index?: number;
+          verified: "sampled";
+          verified_by: string;
+        };
       }[];
   };
   title: LocaleText;

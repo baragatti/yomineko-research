@@ -55,6 +55,26 @@ IDEMPOTENT. A row whose box already holds `new.jp` is recognised as applied. A r
 neither `old.jp` nor `new.jp` has DRIFTED: it is skipped LOUDLY, nothing is written for it, and the
 run reports a non-zero problem count instead of guessing.
 
+`old.jp` IS A DRIFT CHECK ON THE LIVE INDEX, AND ONLY THERE (W27)
+-----------------------------------------------------------------
+`old.jp` is the selection-era concatenation `build_readings.py` produced on THIS machine, from the
+whole 5,890-sentence bank, when the table was built. A from-scratch replay
+(`scripts/rebuild_index.py` into a scratch DB) does not have that bank at step 41: it builds 116
+boxes where the live index carries 286, and the i+0 sentences it concatenates for a slug are a
+DIFFERENT, thinner selection — 0 of the 114 replay-built boxes the table addresses held either
+`old.jp` or `new.jp`. That is not drift; it is a different selection of the same slug, and the
+authored passage does not depend on it: a row is keyed by the box SLUG and carries its own `jp`,
+`jp_sentences`, `uses`, titles and translations. Refusing there made the applier a hard abort in the
+middle of a replay (step 116), which is what kept `validate_index_rebuildable.py --record` from
+running at all between W15 and W27.
+
+So the exact-match precondition is enforced when the target is `db/corpus.sqlite` and nowhere else,
+which is the idiom `migrate_grammar_merge.py` already uses for its `expect` block. Off the live
+index the mismatch is still PRINTED per box, so a human replaying sees exactly what differed, and
+the authored passage is written over whatever that replay built — which is the only behaviour that
+can ever make `corpus/readings/*.json` reproducible. What checks a replay is not this precondition
+but the byte diff in `validate_index_rebuildable.py`, which is strictly stronger.
+
 Run `scripts/export/export_readings.py` (or `export_corpus.py`) afterwards.
 Usage: apply_reading_passages.py [--check]
 """
@@ -75,6 +95,9 @@ from dissect import Dissector                      # noqa: E402
 
 ROOT = _HERE.parents[1]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
+# True only when this run targets db/corpus.sqlite — the index `old.jp` was measured against. See the
+# docstring section "`old.jp` IS A DRIFT CHECK ON THE LIVE INDEX, AND ONLY THERE".
+LIVE_INDEX = Path(DB).resolve() == (ROOT / "db" / "corpus.sqlite").resolve()
 # The table and the exam banks are read from the REPO, never from a redirected out-root: they are
 # committed inputs to the rebuild, not artefacts a rebuild produces.
 TABLE = ROOT / "research" / "derived" / "repairs" / "reading_passages.json"
@@ -147,6 +170,7 @@ def main() -> int:
     d = Dissector(db=Path(DB))
 
     problems: list[str] = []
+    offselection: list[str] = []
     changed_boxes = 0
     stamped = 0
     applied_now = 0
@@ -155,9 +179,15 @@ def main() -> int:
         replaced = row is not None
         target_jp = row["new"]["jp"] if replaced else jp
         if replaced and jp not in (row["old"]["jp"], row["new"]["jp"]):
-            problems.append(f"{slug}: the box holds neither the table's `old` nor its `new` jp — "
-                            f"it drifted after the table was built; SKIPPED")
-            continue
+            if LIVE_INDEX:
+                problems.append(f"{slug}: the box holds neither the table's `old` nor its `new` jp "
+                                f"— it drifted after the table was built; SKIPPED")
+                continue
+            # Not the live index: a replay's build_readings.py selected different sentences for this
+            # slug, so `old.jp` cannot match and never could. Report it and apply the passage.
+            offselection.append(f"{slug}: box built {len(jp)} char(s) of a different selection; the "
+                                f"table's `old` is {len(row['old']['jp'])} — precondition NOT "
+                                f"ENFORCED (target is not db/corpus.sqlite), passage applied")
 
         fields: dict = {}
         if replaced:
@@ -236,6 +266,10 @@ def main() -> int:
         miss = ", ".join(f"{m['ref']}" + (f" ({m.get('headword')})" if m.get("headword") else "")
                          for m in h["missing_unlocks"]) or "; ".join(h["reasons"])
         print(f"  HELD {h['slug']} -> {h['lesson']} needs {miss}")
+    for o in offselection[:5]:
+        print(f"  [replay] {o}")
+    if len(offselection) > 5:
+        print(f"  [replay] … and {len(offselection) - 5} more box(es) off this index's selection")
     for p in problems[:15]:
         print(f"  ! {p}")
     if len(problems) > 15:
