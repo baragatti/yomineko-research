@@ -99,3 +99,13 @@ As palavras de tempo combinam por família. Repare como o 先 traz a ideia de "a
 - うち (casa) + へ (direção, lida 'e') + 帰ります (voltar, educado). 帰る é verbo de movimento, então へ encaixa perfeitamente. Aceita-se também に no lugar de へ, já que são intercambiáveis para destino.
 
 
+### 6. (recognition) O kanji 月 também vale como palavra sozinha, com o sentido de 'lua'. Como se lê essa palavra?
+- **Resposta:** `{"choices": ["つき", "とし", "とき", "ひ"], "correct": "つき"}`
+- Sozinho, 月 usa a leitura nativa つき ('lua'). As outras opções são leituras nativas de kanji que você já viu: とし é 年 ('ano'), とき é 時 ('hora') e ひ é 日 ('dia'). Nas palavras de calendário, 月 troca para a leitura sino-japonesa ゲツ.
+
+
+### 7. (production) Escreva em japonês a palavra que significa 'lua', usando o kanji novo desta lição.
+- **Resposta:** `{"text": "月", "accept": ["月", "つき"]}`
+- 月 lido つき é a lua no céu. O mesmo caractere conta os meses, mas ali ele muda de leitura e vira ゲツ ou ガツ, por isso vale guardar つき como a leitura do kanji sozinho.
+
+

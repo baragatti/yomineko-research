@@ -97,3 +97,13 @@ Estas palavras de movimento e comunicação combinam bem com as formas de hoje:
 - 出かける (sair) na forma て + くる = 出かけてくる: 'saio E volto'. É o que se fala ao sair de casa; o よ dá o tom de aviso amigável.
 - frases: `sent:tatoeba-8736595`
 
+### 6. (recognition) O kanji 音 aparece em 音楽 ('música') e em 発音 ('pronúncia'). Como ele se lê nessas duas palavras?
+- **Resposta:** `{"choices": ["おん", "がく", "はつ", "えい"], "correct": "おん"}`
+- Nos dois compostos 音 entra com a leitura sino-japonesa おん: 音楽 (おんがく) e 発音 (はつおん). がく e はつ são as leituras das outras metades, 学 e 発; えい é a leitura de 映.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra 'som, ruído', aquilo que você ouve.
+- **Resposta:** `{"text": "音", "accept": ["音", "おと"]}`
+- Sozinho, o kanji vale como palavra: 音 (おと) é o som. Em composto ele troca de leitura e vira おん, como em 音楽.
+
+

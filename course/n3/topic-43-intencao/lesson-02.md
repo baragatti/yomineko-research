@@ -100,3 +100,28 @@ Decisões coletivas vivem no mundo do trabalho e das instituições. Guarde este
 - Para o que você decide NÃO fazer, use a negativa casual 飲まない + ことにしている: 飲まないことにしている = 'faço questão de não tomar'. O tema 夜 leva は e o objeto コーヒー leva を.
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["例", "exemplo"], ["宅", "residência"], ["席", "assento"], ["番", "número"], ["規", "regra"], ["配", "distribuir"]]}`
+- São seis kanji de palavras muito usadas: 例えば ('por exemplo'), お宅 ('a sua casa'), 出席 ('comparecimento'), 一番 ('o mais') e 心配 ('preocupação'). 規 é o kanji das regras e das normas.
+
+
+### 7. (production) Escreva em japonês 'por exemplo', com kanji.
+- **Resposta:** `{"text": "例えば", "accept": ["例えば", "たとえば"]}`
+- 例えば (たとえば) abre um exemplo no meio da fala. Vem de 例 ('exemplo') com o okurigana えば.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra 'presença, comparecimento', usada para presença em aula ou reunião.
+- **Resposta:** `{"text": "出席", "accept": ["出席", "しゅっせき"]}`
+- 出席 (しゅっせき) é comparecer: 出 ('sair') mais 席 ('assento'), ou seja, sair de casa e ocupar o seu lugar.
+
+
+### 9. (production) Escreva em japonês a palavra 'preocupação', com kanji.
+- **Resposta:** `{"text": "心配", "accept": ["心配", "しんぱい"]}`
+- 心配 (しんぱい) é a preocupação: 心 ('coração') mais 配 ('dispor'). A leitura sino-japonesa de 配 é はい, mas depois do ん ela vira ぱい, e por isso しんぱい.
+
+
+### 10. (production) Escreva em japonês, com kanji, a palavra que forma o superlativo e significa 'o melhor, o mais'.
+- **Resposta:** `{"text": "一番", "accept": ["一番", "いちばん"]}`
+- 一番 (いちばん) é literalmente 'número um': 一 mais 番 ('número, vez'). Antes de um adjetivo, vira o superlativo.
+
+

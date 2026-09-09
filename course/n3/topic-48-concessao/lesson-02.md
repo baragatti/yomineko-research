@@ -108,3 +108,58 @@ O kanji 招 ('convidar') também tem a mão (扌): a mão que acena chamando alg
 - 社長 (substantivo) + の代わりに ('no lugar de') + 私が行きます. Lembre-se do の obrigatório depois do substantivo e de manter o verbo no fim da frase.
 
 
+### 7. (recognition) Qual destes kanji significa "casamento"?
+- **Resposta:** `{"choices": ["婚", "好", "妹", "姉"], "correct": "婚"}`
+- 婚 é casamento. Ele começa pelo mesmo bloco da esquerda de 好, gostar, 妹, irmã mais nova, e 姉, irmã mais velha, mas só ele é o casar.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra "noivado".
+- **Resposta:** `{"text": "婚約", "accept": ["婚約", "こんやく"]}`
+- 婚約 se lê こんやく: 婚, casamento, mais 約, promessa. O noivado é a promessa de casamento.
+
+
+### 9. (recognition) O kanji 居 aparece em 居間 e no verbo 居る. Que ideia ele traz?
+- **Resposta:** `{"choices": ["estar, morar", "pagar", "convidar", "crime"], "correct": "estar, morar"}`
+- 居 é estar, morar: a presença de alguém num lugar. 居間 é justamente o cômodo onde a família fica.
+
+
+### 10. (production) Escreva em japonês, com kanji, a palavra "sala de estar".
+- **Resposta:** `{"text": "居間", "accept": ["居間", "いま"]}`
+- 居間 se lê いま: 居, estar, mais 間, espaço. É o espaço da casa onde as pessoas ficam.
+
+
+### 11. (recognition) Como se lê o verbo 払う?
+- **Resposta:** `{"choices": ["はらう", "もらう", "はいる", "ならう"], "correct": "はらう"}`
+- 払う se lê はらう e é pagar. O kanji tem a mão reduzida na esquerda: a mão que entrega o dinheiro.
+
+
+### 12. (production) Escreva em japonês, com kanji, o verbo "pagar" na forma de dicionário.
+- **Resposta:** `{"text": "払う", "accept": ["払う", "はらう"]}`
+- 払う se lê はらう. Só o 払 é kanji; う é a terminação do verbo.
+
+
+### 13. (recognition) Qual destes kanji significa "convidar"?
+- **Resposta:** `{"choices": ["招", "払", "持", "待"], "correct": "招"}`
+- 招 é convidar, chamar alguém para perto. Ele divide com 払, pagar, e 持, segurar, a mão reduzida na esquerda; 待 é esperar.
+
+
+### 14. (production) Escreva em japonês, com kanji, a palavra "convite".
+- **Resposta:** `{"text": "招待", "accept": ["招待", "しょうたい"]}`
+- 招待 se lê しょうたい: 招, convidar, mais 待, receber. É o convite formal, o que se manda para alguém.
+
+
+### 15. (recognition) O kanji 罪, lido つみ, significa o quê?
+- **Resposta:** `{"choices": ["crime, culpa", "casamento", "pagar", "misturado"], "correct": "crime, culpa"}`
+- 罪 é crime, pecado, culpa, e sozinho se lê つみ. Serve tanto para o sentido legal quanto para o moral.
+
+
+### 16. (production) Escreva em japonês, com kanji, a palavra "crime, culpa", lida つみ.
+- **Resposta:** `{"text": "罪", "accept": ["罪", "つみ"]}`
+- 罪 se lê つみ quando aparece sozinho. Vale guardar essa leitura, porque em palavras compostas ele muda de som.
+
+
+### 17. (recognition) Qual destes kanji significa "misturado, diverso"?
+- **Resposta:** `{"choices": ["雑", "集", "進", "曜"], "correct": "雑"}`
+- 雑 é misturado, diverso. O mesmo bloco da direita reaparece em 集, juntar, 進, avançar, e 曜, o dia da semana: a parte comum não dá o sentido, é só o desenho.
+
+

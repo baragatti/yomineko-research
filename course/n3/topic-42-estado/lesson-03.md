@@ -119,3 +119,63 @@ O kanji 由 significa "motivo, razão, origem". Aparece em 理由 ("motivo, raz�
 - 見る vira a negativa 見ない + でください = 見ないでください ('por favor, não olhe'). É o uso de ～ないで como pedido suave de não fazer algo. A versão curta 見ないで é mais informal.
 
 
+### 7. (recognition) Qual destes kanji significa "fixar, anexar"?
+- **Resposta:** `{"choices": ["付", "着", "側", "働"], "correct": "付"}`
+- 付 é grudar, prender, vir junto de alguma coisa. 着 também se lê つ- e fala de chegar ou vestir, o que confunde bastante; 側 e 働 trazem o mesmo radical de pessoa à esquerda que 付.
+
+
+### 8. (production) Escreva em japonês, com kanji, o verbo que significa "fixar, prender, colocar" e se lê つける.
+- **Resposta:** `{"text": "付ける", "accept": ["付ける", "つける"]}`
+- 付ける é o transitivo: você prende ou coloca alguma coisa em algum lugar. O par intransitivo é 付く (つく), quando algo gruda sozinho.
+
+
+### 9. (recognition) Qual destes kanji significa "dividir, rachar"?
+- **Resposta:** `{"choices": ["割", "別", "分", "活"], "correct": "割"}`
+- 割 é partir ao meio, rachar, e daí também proporção. 分 e 別 são os vizinhos de sentido, repartir e separar, e 別 ainda divide com 割 a faca à direita; 活 divide a leitura カツ.
+
+
+### 10. (production) Escreva em japonês, com kanji, a palavra que significa "proporção, porcentagem" e se lê わりあい.
+- **Resposta:** `{"text": "割合", "accept": ["割合", "わりあい"]}`
+- 割合 junta 割 (dividir) e 合 (juntar): o quanto uma parte representa do todo. Da mesma família vem 割れる (われる), quebrar-se.
+
+
+### 11. (recognition) Qual destes kanji significa "papel, função"?
+- **Resposta:** `{"choices": ["役", "駅", "約", "薬"], "correct": "役"}`
+- 役 é o papel que alguém representa ou a função que uma coisa cumpre. 約 e 薬 se leem ヤク como ele; 駅 se lê エキ, que é justamente a outra leitura de 役.
+
+
+### 12. (production) Escreva em japonês, com kanji, a expressão que significa "ser útil, servir" e se lê やくにたつ.
+- **Resposta:** `{"text": "役に立つ", "accept": ["役に立つ", "やくにたつ"]}`
+- 役に立つ é literalmente ficar de pé no papel: a coisa cumpre a função que se espera dela. É a expressão comum para dizer que algo foi útil.
+
+
+### 13. (recognition) Qual destes kanji significa "estrutura, importar-se"?
+- **Resposta:** `{"choices": ["構", "校", "格", "高"], "correct": "構"}`
+- 構 fala de armar uma estrutura e, por extensão, de se pôr em guarda, importar-se. 校 e 格 têm a mesma árvore (木) à esquerda; 高 fecha o grupo dos que se leem コウ.
+
+
+### 14. (production) Escreva em japonês, com kanji, o verbo que significa "importar-se, ligar para" e se lê かまう.
+- **Resposta:** `{"text": "構う", "accept": ["構う", "かまう"]}`
+- 構う aparece quase sempre na negativa, para dizer que não faz mal, que você não se importa. O kanji é o mesmo de estrutura: quem se importa é quem se põe em guarda.
+
+
+### 15. (recognition) Qual destes kanji significa "motivo, causa"?
+- **Resposta:** `{"choices": ["由", "田", "有", "世"], "correct": "由"}`
+- 由 é o motivo, a origem de onde a coisa vem. 田 (campo de arroz) é o desenho mais parecido: 由 é 田 com um traço saindo por cima; 有 divide a leitura ユウ e 世 divide a leitura よ.
+
+
+### 16. (production) Escreva em japonês, com kanji, a palavra que significa "razão, motivo" e se lê りゆう.
+- **Resposta:** `{"text": "理由", "accept": ["理由", "りゆう"]}`
+- 理由 é a razão de alguma coisa: 理 (lógica) mais 由 (origem). Com o mesmo 由 você já conhece 自由 (じゆう), liberdade.
+
+
+### 17. (recognition) Qual destes kanji significa "despesa, custo"?
+- **Resposta:** `{"choices": ["費", "貸", "資", "質"], "correct": "費"}`
+- 費 é o gasto, o dinheiro que sai. Os quatro trazem embaixo o mesmo desenho de concha, que era o dinheiro na China antiga, e por isso todos falam de valor: 貸 é emprestar, 資 é recurso e 質 é qualidade.
+
+
+### 18. (production) Escreva em japonês, com kanji, a palavra que significa "custo, despesa" e se lê ひよう.
+- **Resposta:** `{"text": "費用", "accept": ["費用", "ひよう"]}`
+- 費用 é 費 (gasto) mais 用 (uso): o dinheiro que se usa para uma coisa acontecer. É a palavra de orçamento, mais formal do que falar só em dinheiro.
+
+

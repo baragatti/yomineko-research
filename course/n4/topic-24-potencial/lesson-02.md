@@ -115,3 +115,48 @@ Não confunda 世界 ("mundo", せかい) com 線 ("linha", せん): começam co
 - 私は (tópico) + 少し (um pouco) + 英語を (inglês, objeto com を) + 話す (falar, dicionário) + ことができる. Versão educada: ...ことができます.
 - frases: `sent:tatoeba-155872`
 
+### 6. (recognition) O que significa 世界?
+- **Resposta:** `{"choices": ["mundo", "país", "casa", "escrita"], "correct": "mundo"}`
+- 世界 se lê せかい e é o mundo. Os dois kanji empurram para o mesmo lado: 世 é mundo, era; 界 é reino, limite.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra "mundo".
+- **Resposta:** `{"text": "世界", "accept": ["世界", "せかい"]}`
+- 世界 se lê せかい. 世 sozinho já é mundo, geração; 界 é reino, limite. A dupla é a forma normal de dizer o mundo.
+
+
+### 8. (recognition) Em 世界, o que o segundo kanji, 界, acrescenta?
+- **Resposta:** `{"choices": ["reino, limite", "ensinar", "casa, lar", "escrita, frase"], "correct": "reino, limite"}`
+- 界 traz a ideia de reino, limite: o campo demarcado onde algo existe. Colado em 世, fecha o mundo inteiro.
+
+
+### 9. (recognition) Qual destes kanji significa "casa, lar"?
+- **Resposta:** `{"choices": ["家", "安", "店", "会"], "correct": "家"}`
+- 家 é a casa onde se mora e, sozinho, se lê いえ. O 安 divide com ele o telhado lá em cima, mas quer dizer barato; 店 é loja e 会 é encontro.
+
+
+### 10. (production) Escreva em japonês, com kanji, a palavra "casa" lida いえ.
+- **Resposta:** `{"text": "家", "accept": ["家", "いえ"]}`
+- 家 sozinho se lê いえ. Dentro de palavras maiores ele muda de som, mas a ideia de lar continua a mesma.
+
+
+### 11. (recognition) O verbo 教える significa o quê?
+- **Resposta:** `{"choices": ["ensinar", "aprender", "perguntar", "escrever"], "correct": "ensinar"}`
+- 教える se lê おしえる e é ensinar. Não troque com 学, que é aprender, o outro lado da mesma cena; 聞 é perguntar e 書 é escrever.
+
+
+### 12. (production) Escreva em japonês, com kanji, o verbo "ensinar" na forma de dicionário.
+- **Resposta:** `{"text": "教える", "accept": ["教える", "おしえる"]}`
+- 教える se lê おしえる. Só o 教 é kanji; える fica em hiragana porque é a terminação do verbo ru.
+
+
+### 13. (recognition) O kanji 文 aparece em 作文. Que ideia ele traz?
+- **Resposta:** `{"choices": ["escrita, texto", "ensinar", "mundo", "casa"], "correct": "escrita, texto"}`
+- 文 é escrita, texto. Por isso 作文 é a redação: 作 é fazer e 文 é o texto, o texto que se faz.
+
+
+### 14. (production) Escreva em japonês, com kanji, a palavra "redação", o texto que se escreve na aula.
+- **Resposta:** `{"text": "作文", "accept": ["作文", "さくぶん"]}`
+- 作文 se lê さくぶん e junta 作 com 文. É a palavra usada para a redação escolar.
+
+

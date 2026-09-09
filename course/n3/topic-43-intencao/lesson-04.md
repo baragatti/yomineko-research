@@ -94,3 +94,23 @@ Note que 助 e 労 compartilham o mesmo radical de "força". Quando um kanji nov
 - Para um hábito a EVITAR, use a negativa しない + ようにしましょう: 夜更かしをしないようにしましょう = 'vamos fazer questão de não virar a noite'. A ênfase é no esforço contínuo de evitar.
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["備", "preparar, equipar"], ["助", "ajudar, auxiliar"], ["労", "trabalho, labuta"], ["育", "criar, crescer"], ["訪", "visitar, ir ver"]]}`
+- 備 (そなえる) é preparar-se e equipar; 助 (たすける) é ajudar; 労 (ロウ) é o trabalho pesado, a labuta; 育 (そだてる) é criar e fazer crescer; 訪 (たずねる) é visitar.
+
+
+### 7. (production) Escreva em japonês a palavra que significa 'trabalho (físico), labor', juntando o kanji novo 労 com 働 ('trabalhar').
+- **Resposta:** `{"text": "労働", "accept": ["労働", "ろうどう"]}`
+- 労働 (ろうどう) soma a labuta de 労 ao trabalhar de 働. Nesta palavra 労 usa a leitura sino-japonesa ロウ e 働 usa ドウ.
+
+
+### 8. (production) Escreva em japonês o verbo que significa 'criar, educar (alguém)', na forma de dicionário, com o kanji novo 育.
+- **Resposta:** `{"text": "育てる", "accept": ["育てる", "そだてる"]}`
+- 育てる (そだてる) é o transitivo: alguém cria, alguém educa outro. Nos compostos, 育 troca para イク, como em 教育 ('educação').
+
+
+### 9. (production) Escreva em japonês o verbo que significa 'visitar', na forma de dicionário, com o kanji novo 訪.
+- **Resposta:** `{"text": "訪ねる", "accept": ["訪ねる", "たずねる"]}`
+- 訪ねる (たずねる) é ir à casa ou ao lugar de alguém. Nos compostos, 訪 lê-se ホウ.
+
+

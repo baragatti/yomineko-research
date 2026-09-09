@@ -108,3 +108,23 @@ Aproveite o tema desta lição para guardar dois kanji que não estão nas palav
 - 中古 (ちゅうこ, 'usado') liga-se a 車 ('carro') pela partícula の: 中古の車. Em seguida, を買った ('comprei'). A forma cortês 買いました também está correta.
 
 
+### 6. (recognition) Nas palavras 幾つ e 幾ら, qual é a leitura do kanji 幾?
+- **Resposta:** `{"choices": ["いく", "なん", "かず", "すう"], "correct": "いく"}`
+- 幾 lê-se いく nas duas perguntas de quantidade. As opções erradas são leituras de 何 (なん) e de 数 (かず e すう), que também falam de número.
+
+
+### 7. (production) Escreva em japonês a pergunta que significa quanto custa, quanto é.
+- **Resposta:** `{"text": "幾ら", "accept": ["幾ら", "いくら"]}`
+- 幾ら (いくら) pergunta o quanto de um preço ou de uma quantidade. No dia a dia costuma aparecer só em kana, mas o kanji é este.
+
+
+### 8. (recognition) O que significa o kanji 猫?
+- **Resposta:** `{"choices": ["gato", "cachorro", "pássaro", "cavalo"], "correct": "gato"}`
+- 猫 é o gato. À esquerda fica o radical dos animais, o mesmo de 犬 (cachorro); as outras opções são 鳥 (pássaro) e 馬 (cavalo).
+
+
+### 9. (production) Escreva em japonês a palavra que significa gato.
+- **Resposta:** `{"text": "猫", "accept": ["猫", "ねこ"]}`
+- 猫 sozinho já é a palavra: ねこ. É um dos exemplos preferidos das explicações de voz passiva, então vale ter o kanji na ponta da língua.
+
+

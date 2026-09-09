@@ -101,3 +101,23 @@ Quatro caracteres concretos para fixar agora.
 - 待つ é do grupo 1: causativo-passivo 待たせられる, com a forma curta comum 待たされる. No passado: 待たされた ('fui feito esperar / fui obrigado a esperar').
 
 
+### 6. (matching) Ligue cada kanji ao seu significado.
+- **Resposta:** `{"pairs": [["冬", "inverno"], ["夏", "verão"], ["昼", "meio-dia"], ["犬", "cachorro"]]}`
+- 冬 e 夏 são as duas estações opostas; 昼 é o miolo do dia, o horário do almoço; 犬 é o cachorro.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra 'almoço', a refeição do meio do dia.
+- **Resposta:** `{"text": "昼ご飯", "accept": ["昼ご飯", "ひるごはん"]}`
+- 昼ご飯 (ひるごはん) é o almoço: 昼 ('meio-dia') mais a palavra de refeição. O mesmo 昼 aparece em 昼休み, a pausa do almoço.
+
+
+### 8. (production) Escreva em japonês a palavra 'cachorro', com kanji.
+- **Resposta:** `{"text": "犬", "accept": ["犬", "いぬ"]}`
+- 犬 (いぬ) é o cachorro. É o traço solto no canto superior direito que separa 犬 de 大 ('grande').
+
+
+### 9. (production) Escreva em japonês a palavra 'inverno', com kanji.
+- **Resposta:** `{"text": "冬", "accept": ["冬", "ふゆ"]}`
+- 冬 (ふゆ) é o inverno. Os dois pinguinhos embaixo são o radical do gelo, e é essa peça que dá a pista do sentido.
+
+

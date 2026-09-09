@@ -91,3 +91,23 @@ O kanji 煙 ('fumaça, fumo') aparece em 煙 ('fumaça') e 煙草 ('cigarro'). T
 - 対象 (público-alvo) marca quem é o foco do evento. A estrutura ～が対象だ diz 'tem X como alvo'.
 
 
+### 6. (recognition) Em 禁煙 (きんえん, "proibido fumar"), qual é o sentido do kanji 煙?
+- **Resposta:** `{"choices": ["fumaça", "fogo", "água", "flor"], "correct": "fumaça"}`
+- 煙 tem o fogo à esquerda e, à direita, algo parecido com uma chaminé: é a fumaça subindo. Em 禁煙 a proibição é literalmente a da fumaça.
+
+
+### 7. (production) Escreva em japonês a palavra para "fumaça" (leitura けむり).
+- **Resposta:** `{"text": "煙", "accept": ["煙", "けむり"]}`
+- Sozinho, 煙 lê-se けむり. Nos compostos ele muda para a leitura chinesa えん, como em 禁煙.
+
+
+### 8. (recognition) Em 祖父 (そふ) e 祖母 (そぼ), qual é o sentido do kanji 祖?
+- **Resposta:** `{"choices": ["ancestral, avô/avó", "pai", "mãe", "casa, lar"], "correct": "ancestral, avô/avó"}`
+- 祖 é o kanji dos antepassados: colado a 父 ou a 母, ele empurra a geração um degrau para trás. Por isso 祖父 e 祖母 são os avós.
+
+
+### 9. (production) Escreva em japonês a palavra para "avô" (leitura そふ).
+- **Resposta:** `{"text": "祖父", "accept": ["祖父", "そふ"]}`
+- 祖 tem uma única leitura em uso, そ, e quase sempre abre a palavra. Repare que 祖父 é a forma humilde, usada para falar do próprio avô.
+
+

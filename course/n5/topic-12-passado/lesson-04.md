@@ -104,3 +104,13 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 - いい (bom) + なあ vira o suspiro 'que inveja!' / 'ah, que bom...'. Na escrita, なあ ou só な representam a mesma partícula (a vogal esticada).
 - frases: `sent:tatoeba-3488338`
 
+### 6. (recognition) Na palavra お金 (dinheiro), como se lê o kanji 金?
+- **Resposta:** `{"choices": ["かね", "かみ", "くに", "とし"], "correct": "かね"}`
+- Em お金 vale a leitura nativa かね; o prefixo de cortesia vem só na frente. A leitura sino-japonesa キン é a dos compostos: é ela que abre きんようび, sexta-feira.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa 'dinheiro' e se lê おかね.
+- **Resposta:** `{"text": "お金", "accept": ["お金", "おかね"]}`
+- お金 é o jeito cotidiano e educado de dizer dinheiro. O kanji 金 carrega ouro, metal e dinheiro; sozinho ele também se lê かね.
+
+

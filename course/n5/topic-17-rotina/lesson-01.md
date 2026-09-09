@@ -95,3 +95,23 @@ Recusar com けっこうです soa firme, porém educado: é o jeito japonês de
 - 見ている (de 見る, 'estar olhando') + だけ ('só') + です. É a frase padrão para recusar ajuda numa loja, junto de いいえ、けっこうです.
 - frases: `sent:tatoeba-229458`
 
+### 6. (recognition) O que significa o kanji 何?
+- **Resposta:** `{"choices": ["o quê", "perguntar", "hora", "pessoa"], "correct": "o quê"}`
+- 何 é o kanji da pergunta: o quê, quantos. As opções erradas são o sentido de 聞 (perguntar), de 時 (hora, o mesmo 時 de 何時) e de 人 (pessoa), que é o radical à esquerda de 何.
+
+
+### 7. (production) Escreva em japonês a palavra interrogativa que significa o quê.
+- **Resposta:** `{"text": "何", "accept": ["何", "なに"]}`
+- 何 sozinho lê-se なに. Diante de certos sons ele vira なん, mas a forma solta que você usa para perguntar é なに.
+
+
+### 8. (recognition) Na palavra 電車 (trem), qual é a leitura do kanji 車?
+- **Resposta:** `{"choices": ["しゃ", "でん", "じ", "せん"], "correct": "しゃ"}`
+- Colado a outro kanji, 車 usa a leitura sino-japonesa しゃ. As opções erradas são as leituras de 電 (でん), 時 (じ) e 川 (せん).
+
+
+### 9. (production) Escreva em japonês a palavra que significa carro.
+- **Resposta:** `{"text": "車", "accept": ["車", "くるま"]}`
+- Sozinho, 車 lê-se くるま e já é a palavra carro. É o contraste com 電車 (でんしゃ): solto vale a leitura japonesa, acompanhado vale a sino-japonesa.
+
+

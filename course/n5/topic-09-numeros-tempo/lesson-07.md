@@ -99,3 +99,13 @@ Mnemônico de forma: imagine uma muralha quadrada (囗) cercando um rei (王) e 
 - これ (isto) + は (tópico) + 写真 (しゃしん, foto) + です (cópula educada). É o molde A は B です com o vocabulário de leitura desta lição.
 
 
+### 6. (recognition) Sozinho, 国 é a palavra para "país". Como se lê nesse uso?
+- **Resposta:** `{"choices": ["くに", "ひと", "とし", "とお"], "correct": "くに"}`
+- Sozinho, 国 usa a leitura nativa くに. As outras opções são leituras nativas de kanji já vistos nesta trilha: 人 (ひと), 年 (とし) e 十 (とお).
+
+
+### 7. (production) Escreva em japonês a palavra "país", que se lê くに, usando o kanji desta lição.
+- **Resposta:** `{"text": "国", "accept": ["国", "くに"]}`
+- 国 (くに) é "país". A moldura fechada ao redor do kanji ajuda a lembrar: é um território com fronteira, e dentro dela fica tudo o que o país tem.
+
+

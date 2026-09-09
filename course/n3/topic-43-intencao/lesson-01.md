@@ -111,3 +111,28 @@ Armadilha PT: em 行こう e 寝よう, o final おう/よう traz uma vogal lon
 - 勉強する é irregular: a volitiva é 勉強しよう. Some と思います ('pretendo'): 勉強しようと思います. O objeto 日本語 leva を. A volitiva 〜よう aqui é a intenção do falante, não um convite.
 
 
+### 6. (matching) Ligue cada palavra ao seu sentido em português.
+- **Resposta:** `{"pairs": [["残念", "lamentável"], ["残る", "restar"], ["理想", "ideal"], ["天然", "natural"], ["追いつく", "alcançar"], ["制限", "limite"]]}`
+- 残念 ざんねん lamentável; 残る のこる restar; 理想 りそう ideal; 天然 てんねん natural; 追いつく おいつく alcançar; 制限 せいげん limite.
+
+
+### 7. (cloze) Complete com o kanji que falta: 残___ (ざんねん) é 'que pena'.
+- **Resposta:** `{"text": "念", "full": "残念"}`
+- 念 é o pensamento que fica preso, o sentimento guardado. Com 残 ('restar') na frente forma 残念: o que sobra é a pena de algo não ter dado certo.
+
+
+### 8. (production) Escreva em japonês o verbo 'perseguir, ir atrás de', que se lê おう.
+- **Resposta:** `{"text": "追う", "accept": ["追う", "おう"]}`
+- 追う (おう) é ir atrás de alguém ou de alguma coisa. O mesmo kanji abre 追いつく (おいつく), alcançar quem estava na frente.
+
+
+### 9. (production) Escreva em japonês o verbo 'limitar, restringir', que se lê かぎる.
+- **Resposta:** `{"text": "限る", "accept": ["限る", "かぎる"]}`
+- 限る (かぎる) é pôr limite. Na leitura chinesa げん o mesmo kanji fecha 制限 (せいげん), o limite imposto por alguém.
+
+
+### 10. (recognition) O kanji 想 aparece em 理想 (りそう, 'ideal'). Qual é o seu sentido?
+- **Resposta:** `{"choices": ["ideia", "limite", "restar", "perseguir"], "correct": "ideia"}`
+- 想 é a ideia que se forma na cabeça: 理想 é a ideia perfeita de alguma coisa, e 連想 (れんそう) é ligar uma ideia a outra. Ele anda perto de 念, mas 念 puxa mais para o sentimento.
+
+

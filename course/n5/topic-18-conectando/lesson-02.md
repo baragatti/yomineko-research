@@ -101,3 +101,8 @@ E o vocabulário 留学生(estudante estrangeiro, de intercâmbio) rende ótimos
 - 留学生 é substantivo, então o contraste pede だけど (留学生だけど = 'é estudante de intercâmbio, mas...'). A segunda parte traz a ressalva positiva: 日本語が上手です ('fala japonês muito bem').
 
 
+### 6. (recognition) Qual destes kanji significa 'amigo' e abre a palavra ともだち?
+- **Resposta:** `{"choices": ["友", "母", "男", "女"], "correct": "友"}`
+- 友 é 'amigo' e lê-se とも quando vem sozinho; é o 友 de ともだち. 母 (mãe), 男 (homem) e 女 (mulher) dizem quem a pessoa é; 友 é o único dos quatro que nomeia uma relação entre pessoas.
+
+

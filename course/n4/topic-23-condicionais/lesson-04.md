@@ -88,3 +88,18 @@ O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente espera
 - もし anuncia a hipótese; 時間があったら ('se tiver tempo', com 〜たら) é a condição; 電話してください ('me liga, por favor') é o pedido. O もし é opcional, mas deixa o tom hipotético bem claro.
 
 
+### 6. (recognition) Qual destes kanji, colocado na frente de uma palavra, nega o que vem depois, como o nosso 'in-' de 'inconveniente'?
+- **Resposta:** `{"choices": ["不", "下", "一", "大"], "correct": "不"}`
+- 不 é um prefixo de negação: ele derruba o sentido do que vem depois. Os outros três são kanji de traçado parecido que você já conhece: 下 ('embaixo'), 一 ('um') e 大 ('grande').
+
+
+### 7. (recognition) Na palavra 意見 ('opinião'), como se lê o kanji 意?
+- **Resposta:** `{"choices": ["い", "き", "じ", "しゃ"], "correct": "い"}`
+- 意 tem uma única leitura viva nos compostos, a sino-japonesa イ, e ela vale tanto quando 意 abre a palavra quanto quando fecha. き é 気, じ é 時 e しゃ é 者: outros kanji, outros sons.
+
+
+### 8. (production) Escreva em japonês a palavra que significa 'opinião, ponto de vista', juntando o kanji de 'intenção' com 見 ('ver').
+- **Resposta:** `{"text": "意見", "accept": ["意見", "いけん"]}`
+- 意見 (いけん) é o que alguém acha: 意 é a intenção, o que se pensa, e 見 é o ver, o modo de enxergar a coisa.
+
+

@@ -98,3 +98,13 @@ O kanji 定 significa "determinar, fixar, decidir". Aparece em 安定 (安定, "
 - Duas vantagens na mesma direção (barato + estável), então その上 e o conector certo. 安定する vira 安定している para descrever um estado atual ('e/esta estável').
 
 
+### 6. (recognition) O kanji 相 aparece em 相手 (a outra pessoa, o parceiro). Que ideia ele carrega?
+- **Resposta:** `{"choices": ["mútuo, um ao outro", "mão", "olho", "árvore"], "correct": "mútuo, um ao outro"}`
+- 相 é feito de 木 (árvore) e 目 (olho), mas o sentido que ele carrega é o de mútuo, de um lado voltado para o outro. Por isso 相手 (あいて) é a pessoa do outro lado: o parceiro, o adversário, quem está com você na conversa.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa 'a outra pessoa, o parceiro' e se lê あいて.
+- **Resposta:** `{"text": "相手", "accept": ["相手", "あいて"]}`
+- 相手 junta 相 (mútuo) e 手 (mão): quem está do outro lado da interação. Serve para o parceiro de conversa e também para o adversário no jogo.
+
+

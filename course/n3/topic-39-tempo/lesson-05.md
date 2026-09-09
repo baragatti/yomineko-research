@@ -92,3 +92,13 @@ Dois kanji que voltarão muito em palavras de N3:
 - 親友を (amigo íntimo, objeto) + 信頼している (confio, no aspecto contínuo).
 
 
+### 6. (recognition) No verbo 連れる ('levar alguém junto'), qual é a leitura do kanji 連?
+- **Resposta:** `{"choices": ["つ", "おく", "かよ", "はこ"], "correct": "つ"}`
+- 連れる lê-se つれる: o kanji entra com つ e o okurigana れる completa o verbo. 送, 通 e 運 dividem com 連 o radical do caminho, mas cada um tem a sua leitura: おく, かよ e はこ.
+
+
+### 7. (production) Escreva em japonês o verbo 'levar (alguém) junto', na forma de dicionário.
+- **Resposta:** `{"text": "連れる", "accept": ["連れる", "つれる"]}`
+- 連れる é levar uma pessoa com você. O kanji 連 traz a ideia de ligar e de enfileirar, e daí vem o sentido de ir acompanhado.
+
+

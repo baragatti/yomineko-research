@@ -117,3 +117,38 @@ Encadeie fonte e perspectiva:噂によれば彼は引退するそうだ (segundo
 - 私にとって abre a perspectiva, 栄養は é o que se avalia, e 大切だ (ou 大切です) traz o juízo de valor. にとって sempre acompanha um julgamento como este.
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado (parte 1).
+- **Resposta:** `{"pairs": [["判", "julgar, decidir"], ["勝", "vencer, vitória"], ["参", "participar"], ["反", "contra, oposto"], ["向", "direção"]]}`
+- 判 (ハン) é julgar e também o carimbo de nome; 勝 (かつ) é vencer; 参 (まいる) é participar e o ir e vir na forma humilde; 反 (ハン) é o contra, o oposto; 向 (むく) é voltar-se para alguma direção. Repare que 判 e 反 dividem a mesma leitura ハン.
+
+
+### 7. (matching) Ligue cada kanji novo desta lição ao seu significado (parte 2).
+- **Resposta:** `{"pairs": [["告", "anunciar, avisar"], ["認", "reconhecer, admitir"], ["際", "ocasião, momento de"], ["面", "rosto, superfície"]]}`
+- 告 (コク) é anunciar e avisar; 認 (みとめる) é reconhecer e admitir; 際 (サイ) é a ocasião, o momento de fazer algo; 面 (メン) é o rosto e, por extensão, a superfície e o aspecto de alguma coisa.
+
+
+### 8. (production) Escreva em japonês o verbo que significa 'vencer, ganhar', na forma de dicionário, com o kanji novo 勝.
+- **Resposta:** `{"text": "勝つ", "accept": ["勝つ", "かつ"]}`
+- 勝つ (かつ) usa a leitura nativa か mais つ. Nos compostos, 勝 troca para a leitura sino-japonesa ショウ.
+
+
+### 9. (production) Escreva em japonês o verbo humilde para 'ir' e 'vir', na forma de dicionário, com o kanji novo 参.
+- **Resposta:** `{"text": "参る", "accept": ["参る", "まいる"]}`
+- 参る (まいる) é a forma humilde de 行く e 来る: você a usa falando de si mesmo diante de alguém a quem deve respeito. Nos compostos, 参 lê-se サン.
+
+
+### 10. (production) Escreva em japonês a palavra que significa 'o outro lado, lá', com o kanji novo 向.
+- **Resposta:** `{"text": "向こう", "accept": ["向こう", "むこう"]}`
+- 向こう (むこう) é o lado de lá, aquele para onde a gente se volta. O mesmo kanji forma 向かう ('dirigir-se a'), que você já conhece.
+
+
+### 11. (production) Escreva em japonês a palavra que significa 'internacional', juntando 国 ('país') com o kanji novo 際.
+- **Resposta:** `{"text": "国際", "accept": ["国際", "こくさい"]}`
+- 国際 (こくさい) é literalmente a borda entre países, daí 'internacional'. Aqui 際 usa a leitura sino-japonesa サイ; sozinho, さい é a ocasião, o momento de fazer algo.
+
+
+### 12. (production) Escreva em japonês a palavra que significa 'cena, situação', juntando 場 ('lugar') com o kanji novo 面.
+- **Resposta:** `{"text": "場面", "accept": ["場面", "ばめん"]}`
+- 場面 (ばめん) é a cena: o lugar visto pela sua superfície, por aquilo que aparece. Aqui 面 lê-se メン.
+
+

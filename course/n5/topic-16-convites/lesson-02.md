@@ -110,3 +110,18 @@ Dois kanji simples de traços, ligados à natureza:
 - 食べる é verbo る: a forma polida 食べます vira 食べましょう ('vamos comer'). 一緒に ('juntos') vem antes do verbo, que fecha a frase: 一緒に食べましょう. É assim que se propõe uma ação em conjunto.
 
 
+### 6. (recognition) Qual destes kanji significa 'terra, solo, chão' e se lê つち quando aparece sozinho?
+- **Resposta:** `{"choices": ["土", "木", "川", "山"], "correct": "土"}`
+- 土 é um montinho de terra apoiado no chão: uma cruz em cima de uma linha. Sozinho ele é つち ('terra'); nos compostos entra com a leitura ド, que é a que abre o nome do sábado.
+
+
+### 7. (recognition) O kanji 木 também funciona sozinho como palavra. Qual é a leitura dele nesse uso, com o sentido de 'árvore'?
+- **Resposta:** `{"choices": ["き", "みず", "やま", "かわ"], "correct": "き"}`
+- Sozinho, 木 se lê き e quer dizer 'árvore'. Nos compostos ele costuma usar モク, a leitura que aparece no nome da quinta-feira.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra que significa 'árvore' e se lê き.
+- **Resposta:** `{"text": "木", "accept": ["木", "き"]}`
+- 木 é o desenho de uma árvore: o tronco no meio, os galhos abertos em cima e as raízes embaixo. Sozinho ele já é a palavra き.
+
+

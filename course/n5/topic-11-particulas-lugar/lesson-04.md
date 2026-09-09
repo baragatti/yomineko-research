@@ -96,3 +96,33 @@ O par 前 (antes) e 後 (depois) é um casal: 午前 (manhã) e 午後 (tarde) d
 - Aqui に aparece duas vezes, nos seus dois papéis: 月曜日に (ponto no tempo, 'na segunda') e 学校に (destino, 'para a escola') + 行きます (vou). Para o destino, へ também seria aceitável.
 
 
+### 6. (recognition) Qual destes kanji significa "dividir, parte, minuto"?
+- **Resposta:** `{"choices": ["分", "前", "後", "間"], "correct": "分"}`
+- 分 mostra uma faca cortando alguma coisa em duas partes: daí vêm "dividir" e "parte". O minuto entra pela mesma porta, porque cada minuto é um pedaço da hora.
+
+
+### 7. (recognition) Como se lê o kanji 分 quando ele conta os minutos?
+- **Resposta:** `{"choices": ["ふん", "ぶん", "まえ", "あと"], "correct": "ふん"}`
+- Nos minutos, 分 lê-se ふん; com o sentido de "parte", lê-se ぶん. Duas leituras chinesas para o mesmo kanji, separadas pelo sentido e não pela gramática.
+
+
+### 8. (recognition) Em japonês, "antes" no tempo e "à frente" no espaço moram no mesmo kanji. Qual é ele?
+- **Resposta:** `{"choices": ["前", "後", "上", "中"], "correct": "前"}`
+- 前 é quem está na frente da fila, e quem chega primeiro também chega antes. Por isso o mesmo kanji cobre lugar e tempo.
+
+
+### 9. (recognition) Como se lê o kanji 前 quando ele aparece sozinho, com o sentido de "antes, na frente"?
+- **Resposta:** `{"choices": ["まえ", "ぜん", "あと", "ご"], "correct": "まえ"}`
+- Sozinho, 前 usa a leitura nativa まえ. A leitura chinesa ぜん fica guardada para os compostos escritos só com kanji.
+
+
+### 10. (recognition) Qual destes kanji é o par oposto de 前 e significa "depois, atrás"?
+- **Resposta:** `{"choices": ["後", "分", "長", "間"], "correct": "後"}`
+- 後 é o outro lado de 前: o que vem depois fica atrás. Aprender os dois juntos custa o mesmo esforço de um só.
+
+
+### 11. (recognition) O kanji 後 tem várias leituras nativas. Qual delas fala de "atrás" no espaço, e não de "depois" no tempo?
+- **Resposta:** `{"choices": ["うしろ", "あと", "のち", "まえ"], "correct": "うしろ"}`
+- うしろ é o "atrás" físico, o que fica nas suas costas; あと e のち são o "depois" do relógio. Mesmo kanji, dois eixos diferentes.
+
+

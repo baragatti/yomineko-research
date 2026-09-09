@@ -90,3 +90,23 @@ O condicional 〜ば é o coração de muitos provérbios. Um clássico:塵も�
 - 怖い → 怖ければ (adjetivo-い: い → ければ) e 逃げる → 逃げる (verbo principal no resultado). 怖ければ逃げる = 'se for assustador, eu fujo'. Uma reação lógica, bem no espírito do 〜ば.
 
 
+### 6. (recognition) Em 作る (つくる), qual é o sentido do kanji 作?
+- **Resposta:** `{"choices": ["fazer, criar", "mover, movimento", "corpo, forma", "comprar"], "correct": "fazer, criar"}`
+- 作 traz uma pessoa do lado esquerdo: é alguém fabricando alguma coisa. Daí vêm tanto o verbo 作る quanto a ideia de "obra".
+
+
+### 7. (production) Escreva em japonês o verbo "fazer, criar, construir" (leitura つくる).
+- **Resposta:** `{"text": "作る", "accept": ["作る", "つくる"]}`
+- O kanji 作 carrega a base つく e o る fica de fora, como okurigana. É esse る solto que permite conjugar o verbo sem mexer no kanji.
+
+
+### 8. (recognition) Em 強い (つよい), qual é o sentido do kanji 強?
+- **Resposta:** `{"choices": ["forte, força", "longo, comprido", "mover, movimento", "comprar"], "correct": "forte, força"}`
+- 強 é o kanji da força: com okurigana ele vira o adjetivo 強い, forte. Nos compostos passa à leitura chinesa きょう.
+
+
+### 9. (production) Escreva em japonês o adjetivo "forte" (leitura つよい).
+- **Resposta:** `{"text": "強い", "accept": ["強い", "つよい"]}`
+- A base つよ mora no kanji e o い fica visível como okurigana. É esse い que você troca ao negar ou ao pôr o adjetivo no passado.
+
+

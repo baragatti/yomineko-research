@@ -103,3 +103,23 @@ E adjetivos de medida como 深い ("fundo") e 浅い ("raso") ajudam a completar
 - 電車の中で ('dentro do trem') situa a ação; 読む ('(que se) lê') descreve 本 ('livro'); 〜がほしい ('quero'). Uma ação inteira (読む) passando a descrever um substantivo (本): é a base das orações relativas.
 - frases: `sent:tatoeba-154919`
 
+### 6. (recognition) Qual é o significado do kanji 力 (ちから)?
+- **Resposta:** `{"choices": ["poder", "pessoa", "nove", "homem"], "correct": "poder"}`
+- 力 é 'força, poder': dois traços que desenham um braço dobrado. Ele também está dentro de 男 (homem), que é 'força no campo de arroz'.
+
+
+### 7. (production) Escreva só o kanji que significa 'força, poder' e que já vale como palavra sozinho.
+- **Resposta:** `{"text": "力", "accept": ["力", "ちから"]}`
+- Sozinho ele é 力 (ちから). Nos compostos a leitura muda para りょく, que é a que fecha palavras sobre capacidade e empenho.
+
+
+### 8. (recognition) No verbo 通る (とおる), o que o kanji 通 significa?
+- **Resposta:** `{"choices": ["passar", "estrada", "semana", "ir"], "correct": "passar"}`
+- 通 é 'passar, atravessar'. Repare no radical de deslocamento embaixo, o mesmo de 道 (estrada) e 週 (semana). No verbo 通る ele usa a leitura nativa とお.
+
+
+### 9. (production) Escreva em japonês, com kanji e okurigana, o verbo 'passar (por), atravessar'.
+- **Resposta:** `{"text": "通る", "accept": ["通る", "とおる"]}`
+- É 通る: o kanji carrega o sentido e る fecha o verbo. Trocando o okurigana muda o verbo: 通う (かよう) é 'frequentar, ir e voltar toda vez'.
+
+

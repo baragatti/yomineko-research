@@ -105,3 +105,23 @@ O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na ág
 - ところが encabeça a segunda frase para marcar o desfecho inesperado: 出かけようとした (ia sair) + ところが + 雨が降ってきた (começou a chover). Note que ところが não se cola ao verbo da primeira oração; ele abre uma frase nova.
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["喜", "alegrar-se"], ["曲", "melodia"], ["浮", "flutuar"], ["精", "refinado"], ["絶", "interromper"], ["遅", "atrasado"]]}`
+- 喜 é a alegria; 曲 é o que dobra, e por isso também a melodia, a linha que faz curvas; 浮 é boiar; 精 é o que foi refinado até virar essência; 絶 é cortar de vez; 遅 é chegar depois da hora.
+
+
+### 7. (matching) Agora ligue cada palavra ao seu significado e repare onde o kanji novo entrou.
+- **Resposta:** `{"pairs": [["作曲", "composição musical"], ["精神", "espírito"], ["絶対", "com certeza"], ["遅い", "lento"]]}`
+- 作曲 é fazer a melodia; 精神 é o espírito no sentido de mente; 絶対 é o que não admite corte nem exceção; 遅い descreve o que vai devagar ou chega tarde.
+
+
+### 8. (production) Escreva em japonês, na forma de dicionário, o verbo alegrar-se, ficar feliz.
+- **Resposta:** `{"text": "喜ぶ", "accept": ["喜ぶ", "よろこぶ"]}`
+- 喜ぶ (よろこぶ) é a alegria de quem recebe alguma coisa boa. Trocando o okurigana por び você tem o substantivo 喜び, a alegria.
+
+
+### 9. (production) Escreva o kanji que significa flutuar, boiar, vir à tona.
+- **Resposta:** `{"text": "浮", "accept": ["浮", "ふ"]}`
+- 浮 tem o radical da água à esquerda: é o que fica por cima dela. A leitura sino-japonesa é ふ, e as japonesas começam todas por う.
+
+

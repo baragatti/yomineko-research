@@ -110,3 +110,13 @@ Não confunda os dois で: o desta lição (lugar/meio da ação) é uma partíc
 - 学校 (escola) + で (lugar da ação) + 勉強します (estudo). Como estudar é uma ação, o lugar leva で e não に.
 
 
+### 7. (recognition) No verbo 生まれる (nascer), qual é a leitura do kanji 生?
+- **Resposta:** `{"choices": ["う", "み", "で", "ま"], "correct": "う"}`
+- Em 生まれる o kanji entra com a leitura nativa う, e まれる é o okurigana que fecha o verbo. As outras opções são leituras de kanji que você já viu: み de 見, で de 出 e ま de 間.
+
+
+### 8. (production) Escreva em japonês o verbo 'nascer', na forma de dicionário, usando o kanji 生.
+- **Resposta:** `{"text": "生まれる", "accept": ["生まれる", "うまれる"]}`
+- 生まれる (うまれる) é 'nascer'. O kanji 生 carrega o sentido de vida; o okurigana まれる é o que o transforma nesse verbo.
+
+

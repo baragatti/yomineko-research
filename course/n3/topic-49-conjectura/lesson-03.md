@@ -93,3 +93,43 @@ O kanji 遊 significa "brincar, divertir-se, passear". O radical da esquerda (�
 - Para modificar um verbo (笑う), usa-se みたいに: 子供みたいに笑う ('rir feito criança'). Note que aqui também não entra の depois do substantivo. みたいだ/みたいに/みたいな mudam conforme o que vem depois.
 
 
+### 6. (recognition) Como se lê 互い, 'um ao outro, mútuo'?
+- **Resposta:** `{"choices": ["たがい", "たかい", "にがい", "ながい"], "correct": "たがい"}`
+- 互 traz a leitura nativa たが e o okurigana fecha a palavra: たがい. O dakuten é o que separa たがい de たかい (高い, alto).
+
+
+### 7. (production) Escreva em japonês 'um ao outro, mútuo', たがい, com o kanji.
+- **Resposta:** `{"text": "互い", "accept": ["互い", "たがい"]}`
+- 互 tem traços que se encaixam de cima e de baixo, a imagem de duas partes trocando de lugar. Em composto ele vira ゴ.
+
+
+### 8. (recognition) Como se lê 似合う, 'cair bem, combinar (com alguém)'?
+- **Resposta:** `{"choices": ["にあう", "であう", "まにあう", "あらう"], "correct": "にあう"}`
+- 似 traz a leitura nativa に: にあう. É o mesmo に de 似る (parecer-se), e nos dois o 似 abre a palavra.
+
+
+### 9. (production) Escreva em japonês o verbo 'parecer-se, assemelhar-se' na forma de dicionário, にる.
+- **Resposta:** `{"text": "似る", "accept": ["似る", "にる"]}`
+- 似 traz o elemento de pessoa à esquerda: parecer-se é coisa de gente. É um verbo ichidan, e a pessoa com quem se parece vem marcada por に.
+
+
+### 10. (recognition) Como se lê 絵画, 'pintura, quadro'?
+- **Resposta:** `{"choices": ["かいが", "かいわ", "かいぎ", "かがく"], "correct": "かいが"}`
+- Aqui 絵 usa a leitura sino-japonesa カイ e 画 usa ガ: かいが. É o 絵 mais formal; no dia a dia ele aparece sozinho, lido え.
+
+
+### 11. (production) Escreva em japonês 'desenho, pintura' na palavra de uma mora só, え, com o kanji.
+- **Resposta:** `{"text": "絵", "accept": ["絵", "え"]}`
+- 絵 traz o fio à esquerda, como quem borda a imagem no tecido. Sozinho o kanji é え; em 絵画 ele passa a カイ.
+
+
+### 12. (recognition) Como se lê 遊ぶ, 'brincar, se divertir'?
+- **Resposta:** `{"choices": ["あそぶ", "えらぶ", "ならぶ", "あらう"], "correct": "あそぶ"}`
+- 遊 traz a leitura nativa あそ e o okurigana fecha o verbo: あそぶ. Embaixo dele está o mesmo traço de movimento de 道: brincar é andar por aí.
+
+
+### 13. (production) Escreva em japonês 'brincadeira, diversão', あそび, com o kanji.
+- **Resposta:** `{"text": "遊び", "accept": ["遊び", "あそび"]}`
+- Trocando o okurigana de 遊ぶ você tem o substantivo 遊び. A leitura nativa あそ fica igual nos dois.
+
+

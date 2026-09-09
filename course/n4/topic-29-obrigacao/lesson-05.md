@@ -113,3 +113,33 @@ Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.
 - 気にする → negativa 気にしない → forma て 気にしなくて → + (も)いい = 気にしなくていい, 'não precisa se preocupar'. É a frase real 気にしなくていいんですよ sem o tom んです.
 - frases: `sent:tatoeba-183273`
 
+### 6. (recognition) Qual é o significado do kanji 写, que abre a palavra 写真?
+- **Resposta:** `{"choices": ["copiar", "refletir", "língua", "ouvir"], "correct": "copiar"}`
+- 写 é copiar, reproduzir, e daí fotografar. 映 também fala de imagem, mas no sentido de projetar e refletir.
+
+
+### 7. (production) Escreva em japonês 'foto', palavra que se lê しゃしん.
+- **Resposta:** `{"text": "写真", "accept": ["写真", "しゃしん"]}`
+- 写真 junta 写 ('copiar') e 真 ('verdadeiro, real'): a cópia do real. A leitura é しゃしん, com 写 na leitura chinesa しゃ.
+
+
+### 8. (recognition) Em 映画 (えいが, 'filme'), qual é a leitura do kanji 映?
+- **Resposta:** `{"choices": ["えい", "が", "しゃ", "うつ"], "correct": "えい"}`
+- Em 映画 o 映 lê-se えい e o 画 lê-se が. うつ é a leitura nativa do próprio 映 e しゃ é a de 写, dois vizinhos que vivem trocando de lugar na cabeça de quem estuda.
+
+
+### 9. (production) Escreva em japonês 'filme', palavra que se lê えいが.
+- **Resposta:** `{"text": "映画", "accept": ["映画", "えいが"]}`
+- 映画 é 映 ('projetar') mais 画 ('imagem'): a imagem projetada. Guarde a leitura えいが inteira, porque as duas metades usam a leitura chinesa.
+
+
+### 10. (recognition) Qual é o significado do kanji 英?
+- **Resposta:** `{"choices": ["Inglaterra", "imagem", "copiar", "verdadeiro"], "correct": "Inglaterra"}`
+- 英 é a forma abreviada de Inglaterra em japonês. Por isso 英語 (えいご) é 'a língua inglesa': 英 mais 語, 'língua'.
+
+
+### 11. (production) Escreva em japonês 'inglês (o idioma)', palavra que se lê えいご.
+- **Resposta:** `{"text": "英語", "accept": ["英語", "えいご"]}`
+- 英語 é 英 ('Inglaterra') mais 語 ('língua'). O mesmo 語 fecha o nome de qualquer idioma em japonês.
+
+

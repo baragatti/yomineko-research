@@ -90,3 +90,13 @@ O primeiro aparece em 書いた("que escreveu") e em 葉書:
 - 買う → forma た 買った ('que comprei'), colocada direto antes de 箱 (caixa): 買った箱.
 
 
+### 6. (recognition) Em 名前 (なまえ, "nome"), qual é o sentido do kanji 名?
+- **Resposta:** `{"choices": ["nome, fama", "frente, antes", "escrever, livro", "conversar, falar"], "correct": "nome, fama"}`
+- 名 é o kanji do nome e, por extensão, da fama: ter nome é ser conhecido. Em 名前 ele se junta a 前 (frente), o nome que você põe à frente ao se apresentar.
+
+
+### 7. (production) Escreva em japonês a palavra que significa "nome" (leitura なまえ).
+- **Resposta:** `{"text": "名前", "accept": ["名前", "なまえ"]}`
+- 名前 usa as duas leituras nativas: な em 名 e まえ em 前. Guarde a palavra inteira como bloco, porque é assim que ela aparece em toda apresentação.
+
+

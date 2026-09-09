@@ -1251,6 +1251,68 @@ def handle_reading_passages(rows, sents, gram, table):
     return out
 
 
+def handle_practice_exercises(rows, sents, gram, table):
+    """W20. Every authored kanji exercise must BE in the lesson that unlocks the kanji, and rendered.
+
+    The row is addressed by CONTENT, not by id: `{lesson, exercise}` where `exercise` is a whole
+    lesson-schema exercise object. Content addressing is deliberate — three lessons gained an
+    exercise between authoring and apply, so six ids were shifted by one to keep continuing their
+    lesson's numbering (`apply_id_remap` in the table), and a replay keyed on the authored id would
+    fail on a renumber that is correct. Prompt + answer is unique within a lesson by
+    `validate_exercise_contracts.py` check 4, so the match is exactly one exercise or it is a
+    failure.
+
+    Four claims per row, and the last one is the one that is silent when it breaks: the exported
+    lesson holds an exercise with this type, this prompt, this answer key and this explanation; the
+    match is unique; the lesson BODY references it exactly once (the app renders exercises only from
+    `<exercise ref>` nodes, so an exercise nobody references is authored practice the learner never
+    sees); and its `sentence_refs` are the row's.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        want = r["exercise"]
+        addr = (f"{table} row {i}: {r['lesson']} {want['id']} ({want['type']}, "
+                f"targets {' '.join(r.get('targets') or []) or '-'})")
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        hit = [e for e in (lesson.get("exercises") or [])
+               if e.get("type") == want["type"] and e.get("prompt") == want.get("prompt")
+               and e.get("answer") == want.get("answer")]
+        if not hit:
+            same_prompt = [e["id"] for e in (lesson.get("exercises") or [])
+                           if e.get("prompt") == want.get("prompt")]
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        "the exported lesson carries no exercise with this type, prompt and answer"
+                        + (f" (same prompt, different type/answer: {same_prompt})" if same_prompt else "")))
+            continue
+        if len(hit) > 1:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"{len(hit)} exported exercises share this prompt and answer: "
+                        f"{[e['id'] for e in hit]}"))
+            continue
+        got = hit[0]
+        if got.get("explanation") != want.get("explanation"):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"{got['id']}: the exported explanation is {got.get('explanation')!r}, the "
+                        f"row's is {want.get('explanation')!r}"))
+            continue
+        if list(got.get("sentence_refs") or []) != list(want.get("sentence_refs") or []):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"{got['id']}: sentence_refs are {got.get('sentence_refs')!r}, the row's are "
+                        f"{want.get('sentence_refs')!r}"))
+            continue
+        n = (lesson.get("body") or "").count(f'<exercise ref="{got["id"]}"/>')
+        if n != 1:
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        f"the lesson body references {got['id']} {n} time(s) — the app renders an "
+                        f"exercise only from an <exercise ref> node"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
@@ -1265,6 +1327,7 @@ REGISTRY = {
     "lesson_needs.json": handle_lesson_needs,
     "lesson_furigana.json": handle_lesson_furigana,
     "reading_passages.json": handle_reading_passages,
+    "practice_kanji_exercises.json": handle_practice_exercises,
 }
 
 

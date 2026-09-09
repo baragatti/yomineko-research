@@ -91,3 +91,13 @@ Dois kanji deste bloco de vocabulário:
 - 一緒に (juntos) + 昼ご飯 を (o almoço, alvo da ação) + 食べませんか (não quer comer?). É o molde 一緒に + verbo + ませんか em ação, um convite gentil para almoçar.
 
 
+### 6. (recognition) Você já viu 東 (leste). Qual destes kanji é o oeste, lido にし?
+- **Resposta:** `{"choices": ["西", "東", "北", "中"], "correct": "西"}`
+- 西 é o oeste (にし) e faz par com 東, o leste (ひがし). 北 é o norte e 中 é meio, dentro. Em compostos, 西 muda para せい.
+
+
+### 7. (production) Escreva em kanji a palavra oeste (にし).
+- **Resposta:** `{"text": "西", "accept": ["西", "にし"]}`
+- 西 (にし) é o ponto cardeal oeste. Sozinho lê-se にし; dentro de compostos aparece como せい.
+
+

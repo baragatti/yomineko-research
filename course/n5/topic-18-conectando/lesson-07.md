@@ -94,3 +94,13 @@ Cuidado: ４日 (dia 4) e ８日 (dia 8) têm leituras parecidas, mas diferentes
 - Cada ação ganha たり (読んだり, 休んだり) e a frase fecha com します, que carrega tempo e polidez. Não pare em 休む: a marca da lista 'entre outras' é justamente o たり no último item antes de する/します.
 
 
+### 6. (recognition) Qual destes kanji significa "fogo" e dá nome à terça-feira no calendário japonês?
+- **Resposta:** `{"choices": ["火", "水", "木", "金"], "correct": "火"}`
+- 火 é o desenho de uma chama. Os dias da semana japoneses seguem os elementos, e a terça-feira é o dia do fogo.
+
+
+### 7. (recognition) Como se lê o kanji 火 quando ele aparece sozinho, com o sentido de "fogo"?
+- **Resposta:** `{"choices": ["ひ", "か", "みず", "き"], "correct": "ひ"}`
+- Sozinho, 火 lê-se ひ. A leitura chinesa か é a que aparece nos compostos, inclusive no nome da terça-feira.
+
+

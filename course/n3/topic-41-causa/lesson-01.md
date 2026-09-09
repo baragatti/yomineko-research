@@ -88,3 +88,53 @@ Armadilha PT: em せいで e おかげで, mantenha o e final limpo. O brasileir
 - Substantivo (先生) + の + おかげで marca a causa positiva; 試験に合格する = passar na prova. O resultado é bom, então おかげで é a escolha certa.
 
 
+### 6. (recognition) Qual destes kanji, lido かん, significa funcionário público, órgão oficial?
+- **Resposta:** `{"choices": ["官", "館", "寒", "関"], "correct": "官"}`
+- 官 é o funcionário público, o órgão oficial. 館 (edifício, salão), 寒 (frio) e 関 (relação) se leem かん igualzinho: o som não distingue, só o kanji.
+
+
+### 7. (production) Escreva o kanji que significa funcionário público, órgão oficial (leitura かん).
+- **Resposta:** `{"text": "官", "accept": ["官", "かん"]}`
+- 官 tem o mesmo telhado de 家 (casa) e 室 (sala): a repartição sob o teto do Estado. Só tem a leitura on かん.
+
+
+### 8. (recognition) Qual destas palavras significa anteontem?
+- **Resposta:** `{"choices": ["一昨日", "昨日", "昨夜", "一昨年"], "correct": "一昨日"}`
+- 昨 marca o tempo que já passou: 昨日 (きのう) é ontem, 昨夜 (ゆうべ) é ontem à noite, 一昨日 (おととい) é anteontem e 一昨年 (おととし) é o ano retrasado. O 一 na frente dá mais um passo para trás.
+
+
+### 9. (production) Escreva em kanji a palavra ontem (きのう).
+- **Resposta:** `{"text": "昨日", "accept": ["昨日", "きのう"]}`
+- 昨日 (きのう) tem leitura irregular: os dois kanji juntos valem きのう. O 昨 não aparece sozinho, sempre encabeça uma palavra de tempo passado.
+
+
+### 10. (recognition) Qual destes kanji significa o próximo, o seguinte, e se lê つぎ?
+- **Resposta:** `{"choices": ["次", "連", "通", "支"], "correct": "次"}`
+- 次 é o próximo. 連 (conectar) e 通 (passar) também carregam a leitura つ, e 支 (apoiar) divide com ele o som し. Em compostos, 次 vira じ.
+
+
+### 11. (production) Escreva em kanji a palavra o próximo, o seguinte (つぎ).
+- **Resposta:** `{"text": "次", "accept": ["次", "つぎ"]}`
+- 次 (つぎ) é o que vem depois. Repetido, 次々 (つぎつぎ) significa um após o outro.
+
+
+### 12. (recognition) Qual kanji completa 要＿ para formar exigência, reivindicação (ようきゅう)?
+- **Resposta:** `{"choices": ["求", "究", "急", "休"], "correct": "求"}`
+- 要求 (ようきゅう) é exigir aquilo que se considera devido: 要 (necessário) mais 求 (pedir, buscar). 究 (investigar), 急 (urgente) e 休 (descansar) também se leem きゅう.
+
+
+### 13. (production) Escreva em kanji a palavra que significa exigir, reivindicar (ようきゅう).
+- **Resposta:** `{"text": "要求", "accept": ["要求", "ようきゅう"]}`
+- 要求 (ようきゅう) é a exigência formal. Sozinho, 求 carrega a leitura kun もと.
+
+
+### 14. (recognition) Qual destes kanji significa argumento, teoria, discutir, e se lê ろん?
+- **Resposta:** `{"choices": ["論", "議", "認", "記"], "correct": "論"}`
+- 論 é o argumento, a tese. Os quatro têm 言 (palavra) à esquerda: 議 é deliberar, 認 é reconhecer e 記 é registrar. Só 論 se lê ろん.
+
+
+### 15. (production) Escreva o kanji que significa argumento, teoria (leitura ろん).
+- **Resposta:** `{"text": "論", "accept": ["論", "ろん"]}`
+- 論 junta 言 (palavra) ao elemento que sugere pôr em fileiras: a palavra ordenada, ou seja, o raciocínio.
+
+

@@ -95,3 +95,23 @@ O kanji 場 significa lugar, localização. À esquerda o radical de "terra"; à
 - 肉以外 ('tirando carne / exceto carne') exclui a carne e aponta para todo o resto; 何でも食べます ('como de tudo') é o que sobra. 以外 cola direto no substantivo 肉, e o は de tópico costuma vir logo depois.
 
 
+### 6. (recognition) O que significa o kanji 場?
+- **Resposta:** `{"choices": ["lugar", "loja", "coisa", "intervalo"], "correct": "lugar"}`
+- 場 é o kanji do lugar, do ponto onde algo acontece. As outras opções são o sentido de 店 (loja), 事 (coisa) e 間 (intervalo).
+
+
+### 7. (production) Escreva o kanji que significa lugar, local, o ponto onde alguma coisa acontece.
+- **Resposta:** `{"text": "場", "accept": ["場", "ば"]}`
+- 場 é o lugar em que alguma coisa acontece. Ele tem duas leituras que vale a pena separar: ば, a japonesa, que fecha palavras como うりば, o setor de vendas de uma loja, e じょう, a sino-japonesa, que fecha as palavras de origem chinesa.
+
+
+### 8. (recognition) Qual é a leitura sino-japonesa do kanji 業, a que ele usa dentro das palavras compostas?
+- **Resposta:** `{"choices": ["ぎょう", "じ", "かん", "てん"], "correct": "ぎょう"}`
+- 業 lê-se ぎょう em quase toda palavra composta em que aparece, como じゅぎょう (aula). As opções erradas são as leituras de 事 (じ), 間 (かん) e 店 (てん).
+
+
+### 9. (production) Escreva o kanji que significa trabalho, negócio, ramo de atividade.
+- **Resposta:** `{"text": "業", "accept": ["業", "ぎょう"]}`
+- 業 é o kanji do ofício e do ramo de atividade, quase sempre lido ぎょう dentro de palavras compostas.
+
+

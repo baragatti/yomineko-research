@@ -107,3 +107,43 @@ Verbos e adjetivos úteis para montar suas próprias obrigações. Leia tudo em 
 - Verbo 行く → negativa 行かない → 行かなければ + いけない = 行かなければいけない. Na fala casual, 行かなきゃ(いけない) é uma forma encurtada muito comum. Não esqueça do bloco なければ no meio.
 
 
+### 7. (recognition) Qual destes kanji significa 'medicina, médico'?
+- **Resposta:** `{"choices": ["医", "族", "去", "親"], "correct": "医"}`
+- 医 guarda uma flecha dentro de uma caixa aberta à direita, a imagem antiga de tratar quem foi ferido. Lê-se イ e abre 医者 e 医学. 族, que entra nesta mesma lição, esconde a mesma flecha e é a troca mais provável.
+
+
+### 8. (production) Escreva 'médico' em japonês, com kanji.
+- **Resposta:** `{"text": "医者", "accept": ["医者", "いしゃ"]}`
+- 医者 é 医 (medicina) + 者 (pessoa): a pessoa da medicina. Lê-se いしゃ, com os dois kanji na leitura chinesa.
+
+
+### 9. (recognition) Qual destes kanji traz a ideia de 'ir embora, ficar no passado' e entra em きょねん (ano passado)?
+- **Resposta:** `{"choices": ["去", "先", "前", "後"], "correct": "去"}`
+- 去 é 'partir, ir embora', e daí 'passado'. Em 去年 ele lê-se キョ. 先 e 前 também apontam para trás no tempo e 後 aponta para a frente, mas só 去 diz que aquilo já se foi.
+
+
+### 10. (production) Escreva 'ano passado' em japonês, com kanji.
+- **Resposta:** `{"text": "去年", "accept": ["去年", "きょねん"]}`
+- 去年 é 去 (que se foi) + 年 (ano), lido きょねん. É a palavra padrão para o ano anterior.
+
+
+### 11. (recognition) Qual destes kanji fecha a palavra かぞく (família)?
+- **Resposta:** `{"choices": ["族", "家", "方", "医"], "correct": "族"}`
+- 族 significa 'clã, gente do mesmo sangue' e fecha 家族. A metade esquerda é 方, e por dentro ele guarda a mesma flecha de 医. 家 é a outra metade da palavra: sozinho, 'casa'.
+
+
+### 12. (production) Escreva 'família' em japonês, com kanji.
+- **Resposta:** `{"text": "家族", "accept": ["家族", "かぞく"]}`
+- 家族 é 家 (casa) + 族 (clã): as pessoas da mesma casa. Lê-se かぞく; 族 só tem leitura chinesa, ゾク.
+
+
+### 13. (recognition) Qual destes kanji significa 'pai ou mãe' e também 'íntimo, próximo'?
+- **Resposta:** `{"choices": ["親", "新", "見", "近"], "correct": "親"}`
+- 親 é formado por 立, 木 e 見. Sozinho lê-se おや, 'pai ou mãe'; em compostos vira シン, e daí o segundo sentido, 'próximo, íntimo', como em 親切. O vizinho perigoso é 新: a metade esquerda é a mesma, mas no lugar de 見 entra outro elemento.
+
+
+### 14. (production) Escreva 'gentil, atencioso' em japonês, com kanji.
+- **Resposta:** `{"text": "親切", "accept": ["親切", "しんせつ"]}`
+- 親切 usa 親 na leitura シン e se lê しんせつ. É adjetivo-な: tratar alguém como se fosse próximo.
+
+

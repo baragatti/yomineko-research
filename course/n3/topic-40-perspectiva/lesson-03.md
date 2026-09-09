@@ -108,3 +108,23 @@ Combine substituição e comparação:王にかわって王子が演説をする
 - 王にかわって abre a substituição (no lugar do rei), 王子が é quem age de fato, e 演説をする é a ação. にかわって marca exatamente a troca de quem realiza a ação.
 
 
+### 6. (recognition) Qual destes kanji significa 'assunto, caso'?
+- **Resposta:** `{"choices": ["件", "任", "信", "側"], "correct": "件"}`
+- 件 (ケン) é o assunto ou caso de que se trata. Ele junta o radical de pessoa com 牛, e não deve ser confundido com 任 (encarregar) nem com 信 (confiar).
+
+
+### 7. (recognition) Qual destes kanji se lê がわ e significa 'lado'?
+- **Resposta:** `{"choices": ["側", "面", "方", "所"], "correct": "側"}`
+- 側 (がわ) é o lado de algo, inclusive o lado de quem fala em uma discussão. 面 (めん) é face ou aspecto, 方 (ほう) é direção e 所 (ところ) é lugar.
+
+
+### 8. (recognition) Qual destes kanji carrega a ideia de 'existir, estar presente'?
+- **Resposta:** `{"choices": ["在", "場", "立", "住"], "correct": "在"}`
+- 在 (ザイ) é existir ou estar situado em algum lugar, e o verbo ある às vezes aparece escrito 在る com esse kanji. 場 é o lugar em si, 立 é ficar de pé e 住 é morar.
+
+
+### 9. (recognition) Qual destes kanji significa 'grupo, equipe'?
+- **Resposta:** `{"choices": ["組", "集", "会", "族"], "correct": "組"}`
+- 組 (くみ) é o grupo, a turma que se monta. O radical do fio, à esquerda, traz a ideia de coisas trançadas juntas. 集 é juntar, 会 é reunir e 族 é o clã, a família.
+
+

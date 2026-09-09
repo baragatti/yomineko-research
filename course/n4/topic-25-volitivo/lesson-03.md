@@ -97,3 +97,33 @@ Três kanji que aparecem em palavras de intenção e descrição:
 - 行く é godan, então a volitiva é 行こう (〜おう); com と思う vira 行こうと思う = 'pretendo ir'. 歯医者に行く = 'ir ao dentista', com に marcando o destino.
 
 
+### 6. (recognition) Qual destes kanji significa 'mar'?
+- **Resposta:** `{"choices": ["海", "水", "母", "毎"], "correct": "海"}`
+- 海 tem o radical de água à esquerda e 毎 à direita. Sozinho lê-se うみ; em compostos, カイ. 水 é 'água' em geral, e 毎 e 母 são as peças que formam o lado direito do próprio 海.
+
+
+### 7. (production) Escreva 'mar' em japonês, com kanji.
+- **Resposta:** `{"text": "海", "accept": ["海", "うみ"]}`
+- 海 sozinho já é a palavra うみ, 'mar'. Não leva okurigana.
+
+
+### 8. (recognition) Qual destes kanji significa 'perto, próximo'?
+- **Resposta:** `{"choices": ["近", "道", "通", "週"], "correct": "近"}`
+- 近 traz o radical de deslocamento, aquele traço que envolve o kanji por baixo e pela esquerda: a distância que se vence em pouco caminho. A leitura nativa é ちか, como em 近い; em compostos, キン. 道, 通 e 週 carregam o mesmo radical, que é o que mais se repete neste grupo.
+
+
+### 9. (production) Escreva 'perto, próximo' como adjetivo い em japonês, com kanji.
+- **Resposta:** `{"text": "近い", "accept": ["近い", "ちかい"]}`
+- 近い é adjetivo-い: 近 guarda a raiz ちか e い fica como okurigana. Trocando い por く sai 近く, 'as proximidades'.
+
+
+### 10. (recognition) Qual destes kanji significa 'pesado'?
+- **Resposta:** `{"choices": ["重", "動", "東", "本"], "correct": "重"}`
+- 重 é 'pesado'. Repare que ele mora dentro de 動 (mover), porque mover é justamente deslocar algo que tem peso. Na forma adjetiva lê-se おも; em compostos vira ジュウ. 東 e 本 entram na confusão pela silhueta de traços cruzados.
+
+
+### 11. (production) Escreva 'pesado' como adjetivo い em japonês, com kanji.
+- **Resposta:** `{"text": "重い", "accept": ["重い", "おもい"]}`
+- 重い é adjetivo-い: 重 guarda a raiz おも e い é okurigana. Serve tanto para peso físico quanto para algo 'grave, sério'.
+
+

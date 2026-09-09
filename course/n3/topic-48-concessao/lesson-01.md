@@ -109,3 +109,33 @@ A persistência apesar das dificuldades é um valor muito presente no Japão, re
 - どんなに reforça o grau ('por mais que'); 叫ぶ na forma-て é 叫んで, e com も vira 叫んでも ('mesmo gritando'); 誰も来なかった = 'ninguém veio'. Repare que o verbo fica no fim da frase.
 
 
+### 6. (recognition) O kanji 倒 aparece em 倒れる (cair, tombar) e 倒す (derrubar). Que ideia ele carrega?
+- **Resposta:** `{"choices": ["cair, derrubar", "empurrar, pressionar", "segurar, pegar", "bater, golpear"], "correct": "cair, derrubar"}`
+- 倒 é o kanji de tombar. Com れる forma o intransitivo 倒れる (a pessoa cai sozinha) e com す o transitivo 倒す (alguém derruba). É o par que o japonês separa e o português junta em cair e derrubar.
+
+
+### 7. (recognition) Na palavra 努力 (esforço, empenho), como se lê o kanji 努?
+- **Resposta:** `{"choices": ["ド", "ト", "ジョ", "リョク"], "correct": "ド"}`
+- 努力 se lê どりょく: 努 traz ド e 力 traz りょく. O kanji 努 é o empenho, e traz 力 (força) na base.
+
+
+### 8. (recognition) O kanji 押 aparece no verbo 押す (おす). Que ideia ele carrega?
+- **Resposta:** `{"choices": ["empurrar, apertar", "puxar", "abrir", "fechar"], "correct": "empurrar, apertar"}`
+- 押 é empurrar, apertar: é o que está escrito na porta que se empurra e no botão que se aperta. O oposto é 引 (puxar).
+
+
+### 9. (recognition) Na palavra 散歩 (passeio, caminhada), como se lê o kanji 散?
+- **Resposta:** `{"choices": ["サン", "シン", "セン", "ザン"], "correct": "サン"}`
+- 散歩 se lê さんぽ: 散 traz サン e 歩 (andar) fecha a palavra. O sentido do kanji é espalhar, dispersar; no passeio, é o andar sem destino fixo.
+
+
+### 10. (recognition) O kanji 欠 aparece em 欠席 (falta, ausência) e 欠点 (defeito). Que ideia ele carrega?
+- **Resposta:** `{"choices": ["faltar, estar ausente", "chegar, vestir", "juntar, reunir", "continuar, seguir"], "correct": "faltar, estar ausente"}`
+- 欠 é a falta: 欠席 (けっせき) é faltar à aula ou à reunião, e 欠点 (けってん) é o ponto que falta em alguém, o defeito. Quando a leitura ケツ abre a palavra, o つ costuma virar a consoante dobrada.
+
+
+### 11. (matching) Ligue cada palavra ao seu significado.
+- **Resposta:** `{"pairs": [["倒れる", "cair, tombar"], ["努力", "esforço, empenho"], ["押す", "empurrar, apertar"], ["散歩", "passeio, caminhada"], ["欠点", "defeito, ponto fraco"]]}`
+- Os cinco kanji novos em palavras do dia a dia: 倒 em 倒れる, 努 em 努力, 押 em 押す, 散 em 散歩 e 欠 em 欠点.
+
+

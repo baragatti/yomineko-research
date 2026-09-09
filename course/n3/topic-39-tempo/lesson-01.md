@@ -109,3 +109,63 @@ Faça os exercícios abaixo. Cada resposta vem com explicação.
 - Adjetivo い + うちに: 明るいうちに. A janela de luz vai se fechar, então aproveite-a antes que escureça.
 
 
+### 6. (recognition) Qual destes kanji significa "controle, sistema"?
+- **Resposta:** `{"choices": ["制", "政", "性", "成"], "correct": "制"}`
+- 制 é controlar, regular: a ideia de sistema e de regra imposta. 政 (política), 性 (natureza) e 成 (tornar-se) se leem todos セイ, como 制, e é por isso que se misturam.
+
+
+### 7. (recognition) Qual destes kanji significa "dever, trabalho"?
+- **Resposta:** `{"choices": ["務", "勉", "無", "動"], "correct": "務"}`
+- 務 é o dever, o serviço que cabe a alguém. 勉 traz o mesmo 力 (força) embaixo e a mesma leitura つと- de esforçar-se; 動 também termina em 力, mas é mover; 無 divide a leitura chinesa ム.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra que significa "escritório" e se lê じむしょ.
+- **Resposta:** `{"text": "事務所", "accept": ["事務所", "じむしょ"]}`
+- 事務所 é o lugar (所) do trabalho administrativo (事務). Aqui 務 aparece com a leitura chinesa む, que é a que ele usa em quase todos os compostos.
+
+
+### 9. (recognition) Qual destes kanji significa "natureza, caráter" e também marca o sexo de uma pessoa?
+- **Resposta:** `{"choices": ["性", "生", "青", "正"], "correct": "性"}`
+- 性 fala da natureza de algo e do sexo de alguém. À direita está 生, que lhe empresta a leitura セイ; 青 e 正 também se leem セイ e completam a confusão.
+
+
+### 10. (production) Escreva em japonês, com kanji, a palavra que significa "mulher, pessoa do sexo feminino" e se lê じょせい.
+- **Resposta:** `{"text": "女性", "accept": ["女性", "じょせい"]}`
+- 女性 é a palavra neutra e formal para mulher, a que aparece em formulários e notícias. O par dela é 男性 (だんせい), homem: os dois terminam em 性.
+
+
+### 11. (recognition) Qual destes kanji significa "tornar-se, formar"?
+- **Resposta:** `{"choices": ["成", "生", "制", "乗"], "correct": "成"}`
+- 成 é vir a ser, formar-se, dar certo. 生 (vida, nascer) divide com ele a leitura セイ e a ideia de passar a existir; 制 e 乗 fecham o grupo de sons parecidos.
+
+
+### 12. (recognition) Qual destes kanji significa "curar, governar"?
+- **Resposta:** `{"choices": ["治", "池", "知", "漢"], "correct": "治"}`
+- 治 quer dizer curar e também governar: quem cuida da água cuida da terra e da gente. 池 (lagoa) tem as mesmas três gotas à esquerda e divide a leitura チ; 漢 é outro da família da água; 知 é saber.
+
+
+### 13. (production) Escreva em japonês, com kanji, a palavra que significa "política, governo" e se lê せいじ.
+- **Resposta:** `{"text": "政治", "accept": ["政治", "せいじ"]}`
+- 政治 junta 政 (administrar) e 治 (governar). Aqui 治 usa a leitura chinesa じ; no verbo 治る (なおる), sarar, ele volta para a leitura japonesa.
+
+
+### 14. (recognition) Qual destes kanji significa "lei, método"?
+- **Resposta:** `{"choices": ["法", "注", "決", "方"], "correct": "法"}`
+- 法 é a lei e também o método, a regra de como fazer. 注 e 決 trazem as mesmas três gotas de água à esquerda; 方 divide com 法 a leitura ホウ e a ideia de jeito, maneira.
+
+
+### 15. (production) Escreva em japonês, com kanji, a palavra que significa "gramática" e se lê ぶんぽう.
+- **Resposta:** `{"text": "文法", "accept": ["文法", "ぶんぽう"]}`
+- 文法 é a lei (法) do texto (文): o conjunto de regras da língua. É a palavra que dá nome à seção de gramática de qualquer prova.
+
+
+### 16. (recognition) Qual destes kanji significa "precisar, exigir"?
+- **Resposta:** `{"choices": ["要", "用", "洋", "曜"], "correct": "要"}`
+- 要 é precisar, ser essencial, o ponto sem o qual a coisa não se sustenta. 用, 洋 e 曜 se leem todos ヨウ, então o ouvido não separa os quatro: quem decide é a escrita.
+
+
+### 17. (production) Escreva em japonês, com kanji, o verbo que significa "precisar, necessitar" e se lê いる.
+- **Resposta:** `{"text": "要る", "accept": ["要る", "いる"]}`
+- 要る é precisar de alguma coisa, e o kanji guarda o sentido de essencial. Cuidado para não confundir com o いる de estar, que se escreve sem kanji.
+
+

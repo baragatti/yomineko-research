@@ -97,3 +97,23 @@ Cinco kanji ligados a viagem, tempo e moradia:
 - 通う (かよう) carrega a ideia de vaivém habitual, então 学校に通います = 'frequento a escola' (vou e volto regularmente), diferente de uma ida pontual com 行く. A partícula に marca o destino do trajeto.
 
 
+### 6. (matching) Associe cada palavra ao seu significado em pt-BR.
+- **Resposta:** `{"pairs": [["台", "suporte, plataforma"], ["広い", "amplo, espaçoso"], ["今朝", "esta manhã"], ["運動", "exercício físico"]]}`
+- 台 (だい) suporte, 広い (ひろい) amplo, 今朝 (けさ) esta manhã e 運動 (うんどう) exercício físico. Preste atenção em 今朝: a leitura é irregular, けさ, e não いまあさ.
+
+
+### 7. (recognition) Qual destes adjetivos significa 'amplo, espaçoso'?
+- **Resposta:** `{"choices": ["広い", "大きい", "高い", "古い"], "correct": "広い"}`
+- 広い (ひろい) fala de área, de espaço que se estende. 大きい é grande em tamanho, 高い é alto ou caro e 古い é velho.
+
+
+### 8. (recognition) Qual destas palavras significa 'toda manhã'?
+- **Resposta:** `{"choices": ["毎朝", "毎日", "今朝", "毎週"], "correct": "毎朝"}`
+- 毎朝 (まいあさ) é 毎 (cada) mais 朝 (manhã). 今朝 (けさ) é apenas a manhã de hoje, 毎日 é todo dia e 毎週 é toda semana.
+
+
+### 9. (production) Diga 'faço exercício toda manhã', na forma educada.
+- **Resposta:** `{"text": "毎朝運動します", "accept": ["毎朝運動します", "まいあさうんどうします"]}`
+- 毎朝 abre a frase marcando a frequência e 運動する vira 運動します no educado. O kanji 運 usa aqui a leitura on ウン.
+
+

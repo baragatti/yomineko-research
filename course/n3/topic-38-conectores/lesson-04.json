@@ -2467,8 +2467,153 @@
         "pt-BR": "など vem colado ao último exemplo (ケーキなど) e recebe を + 食べました. Os itens podem ser ligados por や ('e, entre outros') ou por virgula; など fecha a ideia de 'e coisas assim'."
       },
       "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-6",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Na palavra 安全 (segurança), o que o kanji 全 traz?"
+      },
+      "answer": {
+        "choices": [
+          "todo",
+          "barato",
+          "juntar",
+          "encontrar"
+        ],
+        "correct": "todo"
+      },
+      "explanation": {
+        "pt-BR": "全 é 'todo, inteiro' e aqui se lê ぜん. 安全 é 安 (tranquilo) + 全 (inteiro): a segurança é estar tranquilo por completo."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-7",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Qual é o kanji que falta em 'segurança' (あんぜん), escrita 安＿?"
+      },
+      "answer": {
+        "text": "全",
+        "full": "安全"
+      },
+      "explanation": {
+        "pt-BR": "安全 é 安 (tranquilo) + 全 (inteiro). O kanji que faltava é 全, lido ぜん."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-8",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Na palavra 文化 (cultura), qual ideia o kanji 化 carrega?"
+      },
+      "answer": {
+        "choices": [
+          "mudança",
+          "flor",
+          "fogo",
+          "o quê"
+        ],
+        "correct": "mudança"
+      },
+      "explanation": {
+        "pt-BR": "化 é 'mudança, transformar-se': em 文化 é a escrita que se transforma em cultura. As outras três opções também se leem か, então aqui o que decide é o sentido, não o som."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-9",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Qual é o kanji que falta em 'cultura' (ぶんか), escrita 文＿?"
+      },
+      "answer": {
+        "text": "化",
+        "full": "文化"
+      },
+      "explanation": {
+        "pt-BR": "文化 é 文 (escrita) + 化 (transformar): a cultura como aquilo em que a escrita se converte. O kanji que faltava é 化, lido か."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-10",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Em 最後 (o último, o fim) e 最近 (recentemente), o que o kanji 最 acrescenta?"
+      },
+      "answer": {
+        "choices": [
+          "mais",
+          "depois",
+          "perto",
+          "juntar"
+        ],
+        "correct": "mais"
+      },
+      "explanation": {
+        "pt-BR": "最 é o superlativo: 'o mais', levado ao grau máximo. Quem diz para que lado é o segundo kanji, 後 (depois) em 最後 e 近 (perto) em 最近; 最 sempre abre a palavra, lido さい."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-11",
+      "type": "production",
+      "prompt": {
+        "pt-BR": "Escreva em japonês, com os dois kanji, o advérbio 'recentemente, ultimamente'."
+      },
+      "answer": {
+        "text": "最近",
+        "accept": [
+          "最近",
+          "さいきん"
+        ]
+      },
+      "explanation": {
+        "pt-BR": "É 最近: 'o mais perto' no tempo, ou seja, o passado recente. Os dois kanji ficam na leitura sino-japonesa, さい + きん."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-12",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "O kanji 約, lido やく, aparece em palavras de compromisso e também antes de um número, com o sentido de 'mais ou menos'. Qual é o significado dele?"
+      },
+      "answer": {
+        "choices": [
+          "promessa",
+          "esperar",
+          "enviar",
+          "cortar"
+        ],
+        "correct": "promessa"
+      },
+      "explanation": {
+        "pt-BR": "約 é a 'promessa, o combinado': uma reserva ou um contrato é sempre um compromisso firmado. Antes de um número o mesmo kanji vira 'aproximadamente'."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n3-conectores-04-13",
+      "type": "production",
+      "prompt": {
+        "pt-BR": "Escreva só o kanji lido やく que significa 'promessa, combinado'."
+      },
+      "answer": {
+        "text": "約",
+        "accept": [
+          "約"
+        ]
+      },
+      "explanation": {
+        "pt-BR": "É 約, nove traços, com o fio de seda à esquerda: a ideia de amarrar um acordo. Lido やく, ele fecha as palavras de compromisso e também abre a palavra da promessa."
+      },
+      "sentence_refs": []
     }
   ],
-  "body": "<heading level=\"2\"><text>Dando exemplos: listar sem fechar a lista</text></heading>\n\n<p><text>Para fechar nossa caixa de conectores, faltam os marcadores de EXEMPLO. Em português a gente joga um \"etc.\" no fim, mas o japonês tem ferramentas mais elegantes: </text><grammar ref=\"gram:n3-nado\"/><text> (neutro, \"tais como\") e </text><grammar ref=\"gram:n3-nanka\"/><text> (coloquial, e às vezes depreciativo). Os dois dizem \"esses são só alguns exemplos entre muitos\".</text></p>\n\n<heading level=\"3\"><text>など: tais como, coisas como</text></heading>\n<p><text>O marcador </text><grammar ref=\"gram:n3-nado\"/><text> da uma lista de exemplos que NÃO e completa: os itens citados são so alguns entre muitos possíveis, deixando subentendido o \"e outros\". Liga-se direto a substantivos.</text></p>\n<p><jp reading=\"さかなくだものなどをかいました\">魚、果物などを買いました</jp><text> = \"Comprei peixe, frutas e coisas assim.\"</text></p>\n<p><text>Pode aparecer com partícula depois (</text><jp>などを</jp><text>, </text><jp>などの</jp><text>, </text><jp>などが</jp><text>) conforme o papel do conjunto na frase:</text></p>\n<p><jp reading=\"かいがちょうこくなどのさくひん\">絵画、彫刻などの作品</jp><text> = \"obras como pinturas, esculturas e outras\".</text></p>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: não traduza </text><jp>など</jp><text> por um \"etc.\" seco e solto no fim da frase. Ele ja carrega a ideia de \"e coisas do genero\" e vem COLADO ao último exemplo, não isolado. </text><jp>など</jp><text> e neutro e cabe bem na escrita e na fala educada.</text></p></note>\n\n<heading level=\"3\"><text>なんか: coisas como... ou sei la, nem ligo</text></heading>\n<p><text>O marcador </text><grammar ref=\"gram:n3-nanka\"/><text> e a versão coloquial de </text><jp>など</jp><text>: lista exemplos (\"coisas como\"), mas TAMBÉM serve para diminuir ou desvalorizar algo, com tom de desdem. O contexto e a entonação decidem qual dos dois e.</text></p>\n<p><text>Como exemplo (igual a </text><jp>など</jp><text>, mais relaxado):</text></p>\n<p><jp reading=\"ピアノなんかもひける\">ピアノなんかも弾ける</jp><text> = \"Ele toca ate coisas como piano.\"</text></p>\n<p><text>Como desdem:</text></p>\n<p><jp reading=\"おかねなんかいらない\">お金なんかいらない</jp><text> = \"Não quero saber de dinheiro / Dinheiro? Nem ligo.\"</text></p>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: o tom depreciativo de </text><jp>なんか</jp><text> não tem equivalente exato em português; dependendo da frase vira \"que nada\", \"nem ligo para\", \"sei la\" ou um \"isso de\" carregado de desdem. </text><jp>なんか</jp><text> e bem informal: evite com superiores ou em texto formal, onde </text><jp>など</jp><text> e a escolha segura. E não confunda com </text><jp>なんて</jp><text>, que e mais exclamativo e enfatico.</text></p></note>\n\n<heading level=\"3\"><text>Vocabulário para fechar a serie</text></heading>\n<p><text>Palavras frequentes (em kana):</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1586780\"/><text> (</text><jp>あらゆる</jp><text>) = \"todo, cada, qualquer\". Otima para o sentido oposto de など: aqui se inclui TUDO, sem deixar de fora.</text></item>\n <item><vocab ref=\"vocab:1586820\"/><text> (</text><jp>ありがとう</jp><text>) = \"obrigado, valeu\". A escrita em kanji e rara; quase sempre se ve em kana.</text></item>\n <item><vocab ref=\"vocab:1586840\"/><text> (</text><jp>ある</jp><text>) = \"um certo, algum\". Como em \"um certo dia\".</text></item>\n <item><vocab ref=\"vocab:1150110\"/><text> (</text><jp>あわれ</jp><text>) = \"pena, compaixão, tristeza\".</text></item>\n <item><vocab ref=\"vocab:1517510\"/><text> (</text><jp>あわ</jp><text>) = \"bolha, espuma, creme (da cerveja)\".</text></item>\n <item><vocab ref=\"vocab:1578790\"/><text> (</text><jp>いき</jp><text>) = \"ida, trajeto de ida\"; o oposto e </text><jp reading=\"かえり\">帰り</jp><text> (\"volta\").</text></item>\n <item><vocab ref=\"vocab:1000730\"/><text> (</text><jp>いけない</jp><text>) = \"não pode, e proibido, e ruim\". Muito usado em avisos.</text></item>\n <item><vocab ref=\"vocab:1014680\"/><text> (</text><jp>アウト</jp><text>) = \"fora, bola fora\" (do beisebol e do inglês).</text></item>\n</list>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: em </text><jp>アウト</jp><text>, cada som tem uma batida: \"a-u-to\". Não engula o \"u\" do meio nem encurte o \"o\" final para \"u\". O </text><jp>う</jp><text> japonês tem labios neutros, sem empurrar para frente como no \"u\" de \"tudo\".</text></p></note>\n\n<heading level=\"3\"><text>Quatro kanji novos</text></heading>\n<p><text>O kanji </text><kanji ref=\"kanji:全\"/><text> significa \"inteiro, todo, completo\". Combina bem com a ideia de </text><jp>あらゆる</jp><text> (tudo). Aparece em </text><jp reading=\"ぜんぶ\">全部</jp><text> (\"tudo, todas as partes\") e </text><jp reading=\"あんぜん\">安全</jp><text> (\"seguranca\").</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:化\"/><text> significa \"mudança, transformar\". E um sufixo muito produtivo: </text><jp reading=\"ぶんか\">文化</jp><text> (\"cultura\") e </text><jp reading=\"へんか\">変化</jp><text> (\"mudança, variação\"). Mnemônico de forma: uma pessoa em pe e outra de cabeca para baixo, ou seja, algo virando outra coisa.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:最\"/><text> significa \"o máximo, o mais\". Forma superlativos: </text><jp reading=\"さいこう\">最高</jp><text> (\"o melhor, otimo\") e </text><jp reading=\"さいご\">最後</jp><text> (\"o último, o fim\").</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:約\"/><text> significa \"promessa\" e também \"aproximadamente\". O radical da esquerda e o fio (</text><jp reading=\"いと\">糸</jp><text>): amarrar um acordo. Aparece em </text><jp reading=\"やくそく\">約束</jp><text> (\"promessa, combinado\") e em </text><jp reading=\"やくごふん\">約五分</jp><text> (\"cerca de cinco minutos\").</text></p>\n\n<heading level=\"3\"><text>Exemplos do banco</text></heading>\n<sentence ref=\"sent:tatoeba-3507342\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-3367124\" show=\"furigana\" mode=\"card\"/>\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n3-conectores-04-1\"/>\n<exercise ref=\"ex:n3-conectores-04-2\"/>\n<exercise ref=\"ex:n3-conectores-04-3\"/>\n<exercise ref=\"ex:n3-conectores-04-4\"/>\n<exercise ref=\"ex:n3-conectores-04-5\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n3-conectores-04-01\"/><checklist>\n <check><text>Listo exemplos com など colado ao último item ('tais como', sem fechar a lista).</text></check>\n <check><text>Sei que なんか e a versão coloquial de など e pode carregar desdem.</text></check>\n <check><text>Reconheço quando お金なんか significa 'nem ligo para dinheiro'.</text></check>\n <check><text>Uso など (e não なんか) em contextos formais ou com superiores.</text></check>\n</checklist>",
+  "body": "<heading level=\"2\"><text>Dando exemplos: listar sem fechar a lista</text></heading>\n\n<p><text>Para fechar nossa caixa de conectores, faltam os marcadores de EXEMPLO. Em português a gente joga um \"etc.\" no fim, mas o japonês tem ferramentas mais elegantes: </text><grammar ref=\"gram:n3-nado\"/><text> (neutro, \"tais como\") e </text><grammar ref=\"gram:n3-nanka\"/><text> (coloquial, e às vezes depreciativo). Os dois dizem \"esses são só alguns exemplos entre muitos\".</text></p>\n\n<heading level=\"3\"><text>など: tais como, coisas como</text></heading>\n<p><text>O marcador </text><grammar ref=\"gram:n3-nado\"/><text> da uma lista de exemplos que NÃO e completa: os itens citados são so alguns entre muitos possíveis, deixando subentendido o \"e outros\". Liga-se direto a substantivos.</text></p>\n<p><jp reading=\"さかなくだものなどをかいました\">魚、果物などを買いました</jp><text> = \"Comprei peixe, frutas e coisas assim.\"</text></p>\n<p><text>Pode aparecer com partícula depois (</text><jp>などを</jp><text>, </text><jp>などの</jp><text>, </text><jp>などが</jp><text>) conforme o papel do conjunto na frase:</text></p>\n<p><jp reading=\"かいがちょうこくなどのさくひん\">絵画、彫刻などの作品</jp><text> = \"obras como pinturas, esculturas e outras\".</text></p>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: não traduza </text><jp>など</jp><text> por um \"etc.\" seco e solto no fim da frase. Ele ja carrega a ideia de \"e coisas do genero\" e vem COLADO ao último exemplo, não isolado. </text><jp>など</jp><text> e neutro e cabe bem na escrita e na fala educada.</text></p></note>\n\n<heading level=\"3\"><text>なんか: coisas como... ou sei la, nem ligo</text></heading>\n<p><text>O marcador </text><grammar ref=\"gram:n3-nanka\"/><text> e a versão coloquial de </text><jp>など</jp><text>: lista exemplos (\"coisas como\"), mas TAMBÉM serve para diminuir ou desvalorizar algo, com tom de desdem. O contexto e a entonação decidem qual dos dois e.</text></p>\n<p><text>Como exemplo (igual a </text><jp>など</jp><text>, mais relaxado):</text></p>\n<p><jp reading=\"ピアノなんかもひける\">ピアノなんかも弾ける</jp><text> = \"Ele toca ate coisas como piano.\"</text></p>\n<p><text>Como desdem:</text></p>\n<p><jp reading=\"おかねなんかいらない\">お金なんかいらない</jp><text> = \"Não quero saber de dinheiro / Dinheiro? Nem ligo.\"</text></p>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: o tom depreciativo de </text><jp>なんか</jp><text> não tem equivalente exato em português; dependendo da frase vira \"que nada\", \"nem ligo para\", \"sei la\" ou um \"isso de\" carregado de desdem. </text><jp>なんか</jp><text> e bem informal: evite com superiores ou em texto formal, onde </text><jp>など</jp><text> e a escolha segura. E não confunda com </text><jp>なんて</jp><text>, que e mais exclamativo e enfatico.</text></p></note>\n\n<heading level=\"3\"><text>Vocabulário para fechar a serie</text></heading>\n<p><text>Palavras frequentes (em kana):</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1586780\"/><text> (</text><jp>あらゆる</jp><text>) = \"todo, cada, qualquer\". Otima para o sentido oposto de など: aqui se inclui TUDO, sem deixar de fora.</text></item>\n <item><vocab ref=\"vocab:1586820\"/><text> (</text><jp>ありがとう</jp><text>) = \"obrigado, valeu\". A escrita em kanji e rara; quase sempre se ve em kana.</text></item>\n <item><vocab ref=\"vocab:1586840\"/><text> (</text><jp>ある</jp><text>) = \"um certo, algum\". Como em \"um certo dia\".</text></item>\n <item><vocab ref=\"vocab:1150110\"/><text> (</text><jp>あわれ</jp><text>) = \"pena, compaixão, tristeza\".</text></item>\n <item><vocab ref=\"vocab:1517510\"/><text> (</text><jp>あわ</jp><text>) = \"bolha, espuma, creme (da cerveja)\".</text></item>\n <item><vocab ref=\"vocab:1578790\"/><text> (</text><jp>いき</jp><text>) = \"ida, trajeto de ida\"; o oposto e </text><jp reading=\"かえり\">帰り</jp><text> (\"volta\").</text></item>\n <item><vocab ref=\"vocab:1000730\"/><text> (</text><jp>いけない</jp><text>) = \"não pode, e proibido, e ruim\". Muito usado em avisos.</text></item>\n <item><vocab ref=\"vocab:1014680\"/><text> (</text><jp>アウト</jp><text>) = \"fora, bola fora\" (do beisebol e do inglês).</text></item>\n</list>\n<note type=\"l1-pitfall\"><p><text>Armadilha PT: em </text><jp>アウト</jp><text>, cada som tem uma batida: \"a-u-to\". Não engula o \"u\" do meio nem encurte o \"o\" final para \"u\". O </text><jp>う</jp><text> japonês tem labios neutros, sem empurrar para frente como no \"u\" de \"tudo\".</text></p></note>\n\n<heading level=\"3\"><text>Quatro kanji novos</text></heading>\n<p><text>O kanji </text><kanji ref=\"kanji:全\"/><text> significa \"inteiro, todo, completo\". Combina bem com a ideia de </text><jp>あらゆる</jp><text> (tudo). Aparece em </text><jp reading=\"ぜんぶ\">全部</jp><text> (\"tudo, todas as partes\") e </text><jp reading=\"あんぜん\">安全</jp><text> (\"seguranca\").</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:化\"/><text> significa \"mudança, transformar\". E um sufixo muito produtivo: </text><jp reading=\"ぶんか\">文化</jp><text> (\"cultura\") e </text><jp reading=\"へんか\">変化</jp><text> (\"mudança, variação\"). Mnemônico de forma: uma pessoa em pe e outra de cabeca para baixo, ou seja, algo virando outra coisa.</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:最\"/><text> significa \"o máximo, o mais\". Forma superlativos: </text><jp reading=\"さいこう\">最高</jp><text> (\"o melhor, otimo\") e </text><jp reading=\"さいご\">最後</jp><text> (\"o último, o fim\").</text></p>\n<p><text>O kanji </text><kanji ref=\"kanji:約\"/><text> significa \"promessa\" e também \"aproximadamente\". O radical da esquerda e o fio (</text><jp reading=\"いと\">糸</jp><text>): amarrar um acordo. Aparece em </text><jp reading=\"やくそく\">約束</jp><text> (\"promessa, combinado\") e em </text><jp reading=\"やくごふん\">約五分</jp><text> (\"cerca de cinco minutos\").</text></p>\n\n<heading level=\"3\"><text>Exemplos do banco</text></heading>\n<sentence ref=\"sent:tatoeba-3507342\" show=\"furigana\" mode=\"card\"/>\n<sentence ref=\"sent:tatoeba-3367124\" show=\"furigana\" mode=\"card\"/>\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n3-conectores-04-1\"/>\n<exercise ref=\"ex:n3-conectores-04-2\"/>\n<exercise ref=\"ex:n3-conectores-04-3\"/>\n<exercise ref=\"ex:n3-conectores-04-4\"/>\n<exercise ref=\"ex:n3-conectores-04-5\"/>\n<exercise ref=\"ex:n3-conectores-04-6\"/>\n<exercise ref=\"ex:n3-conectores-04-7\"/>\n<exercise ref=\"ex:n3-conectores-04-8\"/>\n<exercise ref=\"ex:n3-conectores-04-9\"/>\n<exercise ref=\"ex:n3-conectores-04-10\"/>\n<exercise ref=\"ex:n3-conectores-04-11\"/>\n<exercise ref=\"ex:n3-conectores-04-12\"/>\n<exercise ref=\"ex:n3-conectores-04-13\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n3-conectores-04-01\"/><checklist>\n <check><text>Listo exemplos com など colado ao último item ('tais como', sem fechar a lista).</text></check>\n <check><text>Sei que なんか e a versão coloquial de など e pode carregar desdem.</text></check>\n <check><text>Reconheço quando お金なんか significa 'nem ligo para dinheiro'.</text></check>\n <check><text>Uso など (e não なんか) em contextos formais ou com superiores.</text></check>\n</checklist>",
   "needs_review": true
 }

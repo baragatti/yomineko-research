@@ -103,3 +103,23 @@ Os dois juntam-se à gramática de hoje: 鳥のように走る ("correr como um 
 - いつものように ('como de costume') usa のように para indicar modo, antes do verbo. Estrutura: いつものように + 早く (cedo) + 起きた (acordei). いつものように é uma expressão pronta que vale a pena decorar.
 
 
+### 6. (recognition) Qual destes kanji significa "andar, caminhar"?
+- **Resposta:** `{"choices": ["歩", "走", "止", "足"], "correct": "歩"}`
+- 歩 é andar. Ele guarda o 止 na parte de cima, o pé que pousa a cada passo. 走 é correr e 足 é o pé.
+
+
+### 7. (production) Escreva em japonês, com kanji, o verbo "andar, caminhar" na forma de dicionário.
+- **Resposta:** `{"text": "歩く", "accept": ["歩く", "あるく"]}`
+- 歩く se lê あるく. Só o 歩 é kanji; く é a terminação do verbo.
+
+
+### 8. (recognition) Como se lê o verbo 走る?
+- **Resposta:** `{"choices": ["はしる", "あるく", "おわる", "はいる"], "correct": "はしる"}`
+- 走る se lê はしる e é correr. Cuidado com あるく, que é 歩く, andar: as duas ações são vizinhas, mas só o 走 tem pressa.
+
+
+### 9. (production) Escreva em japonês, com kanji, o verbo "correr" na forma de dicionário.
+- **Resposta:** `{"text": "走る", "accept": ["走る", "はしる"]}`
+- 走る se lê はしる. O kanji 走 desenha uma pessoa em movimento sobre o chão; る é a terminação.
+
+

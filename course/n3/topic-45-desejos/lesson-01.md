@@ -109,3 +109,43 @@ Em templos e santuários, os japoneses penduram um 絵馬 (plaquinha de madeira)
 - O negativo de 〜てほしい é 〜ないでほしい: 帰る vira 帰らない + でほしい = 'queria que você não fosse'. É direto e informal; em contexto formal usaríamos 帰らないでいただきたい.
 
 
+### 6. (recognition) Qual destes kanji significa "chamar"?
+- **Resposta:** `{"choices": ["呼", "口", "名", "声"], "correct": "呼"}`
+- 呼 é chamar. Ele traz o 口 na esquerda, a boca que grita o nome de alguém. 名 é nome e 声 é voz.
+
+
+### 7. (production) Escreva em japonês, com kanji, o verbo "chamar" na forma de dicionário.
+- **Resposta:** `{"text": "呼ぶ", "accept": ["呼ぶ", "よぶ"]}`
+- 呼ぶ se lê よぶ. Só o 呼 é kanji; ぶ é a terminação do verbo.
+
+
+### 8. (recognition) O kanji 様 aparece no tratamento 様 e na palavra 様子. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["senhor(a) (honorífico)", "chamar, convocar", "dizer (humilde)", "bom, bem"], "correct": "senhor(a) (honorífico)"}`
+- 様 é o tratamento respeitoso, um degrau acima de さん, e também aparência, modo, como em 様子.
+
+
+### 9. (production) Escreva em japonês, com kanji, a palavra "aparência, estado de algo".
+- **Resposta:** `{"text": "様子", "accept": ["様子", "ようす"]}`
+- 様子 se lê ようす. Aqui o 様 não é o tratamento respeitoso: é o modo, o jeito como algo se apresenta.
+
+
+### 10. (recognition) O kanji 申 aparece em 申す e em 申し上げる. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["dizer (humilde)", "chamar, convocar", "bom, bem", "senhor(a) (honorífico)"], "correct": "dizer (humilde)"}`
+- 申 é dizer na versão humilde: você o usa para falar de si mesmo diante de alguém superior.
+
+
+### 11. (production) Escreva em japonês, com kanji, o verbo humilde para "dizer" na forma de dicionário.
+- **Resposta:** `{"text": "申す", "accept": ["申す", "もうす"]}`
+- 申す se lê もうす. É o verbo de quem se rebaixa por educação; す é a terminação.
+
+
+### 12. (recognition) Qual destes kanji significa "bom"?
+- **Resposta:** `{"choices": ["良", "好", "悪", "楽"], "correct": "良"}`
+- 良 é bom, bem: é o kanji por trás de よい. 好 é gostar, 悪 é ruim e 楽 é agradável.
+
+
+### 13. (production) Escreva em japonês, com kanji, o adjetivo "bom" na forma よい.
+- **Resposta:** `{"text": "良い", "accept": ["良い", "よい"]}`
+- 良い se lê よい, a forma mais formal de いい. O 良 é o kanji; い é a terminação do adjetivo.
+
+

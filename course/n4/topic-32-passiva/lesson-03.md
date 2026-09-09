@@ -119,3 +119,13 @@ Dois kanji ligados a lugares e deslocamento, que aparecem o tempo todo quando vo
 - あまり pede uma negação: aqui 遅れる vira 遅れません (não atrasa) na forma polida. あまり baixa o grau → 'não atrasa MUITO' (atrasa pouco). Com ぜんぜん seria 'não atrasa nada'.
 
 
+### 7. (recognition) Qual destes kanji significa "viagem, viajar"?
+- **Resposta:** `{"choices": ["旅", "族", "方", "度"], "correct": "旅"}`
+- 旅 é a viagem. 族 (família, tribo) é o vizinho mais parecido: os dois começam pelo mesmo 方 à esquerda e só mudam do meio para a direita. 度 divide com 旅 a leitura たび.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra que significa "viagem" e se lê りょこう.
+- **Resposta:** `{"text": "旅行", "accept": ["旅行", "りょこう"]}`
+- 旅行 é 旅 (viagem) mais 行 (ir): a viagem que se faz saindo de casa. Guarde na mesma prateleira 旅館 (りょかん), a pousada tradicional japonesa.
+
+

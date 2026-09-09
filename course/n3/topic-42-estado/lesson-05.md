@@ -93,3 +93,23 @@ Repare na diferença entre 成人 (せいじん, 'adulto' no sentido legal, maio
 - 政府は (o governo) + 新しい制度を (um novo sistema) + 始めた (iniciou).
 
 
+### 6. (recognition) Como se lê 回る, 'girar, dar voltas'?
+- **Resposta:** `{"choices": ["まわる", "まがる", "まける", "まいる"], "correct": "まわる"}`
+- 回 traz a leitura nativa まわ e o okurigana fecha o verbo: まわる. Repare no desenho: um quadrado dentro do outro, a volta que se fecha.
+
+
+### 7. (production) Escreva em japonês o contador de vezes, o que entra em 'uma vez', 'duas vezes' e se lê かい.
+- **Resposta:** `{"text": "回", "accept": ["回", "かい"]}`
+- O mesmo 回 tem dois usos: まわる (girar), com leitura nativa, e かい (vezes), com a sino-japonesa カイ. Como contador ele vem depois do número.
+
+
+### 8. (recognition) Como se lê 選ぶ, 'escolher, selecionar'?
+- **Resposta:** `{"choices": ["えらぶ", "ならぶ", "はこぶ", "あそぶ"], "correct": "えらぶ"}`
+- 選 traz a leitura nativa えら e o okurigana fecha o verbo: えらぶ. Os quatro terminam igual, então a pista está na primeira mora.
+
+
+### 9. (production) Escreva em japonês o verbo 'escolher' na forma de dicionário, えらぶ.
+- **Resposta:** `{"text": "選ぶ", "accept": ["選ぶ", "えらぶ"]}`
+- 選 traz embaixo o mesmo traço de movimento de 道 e 通: escolher é ir buscar entre várias opções. Em composto ele passa a セン, a leitura das eleições.
+
+

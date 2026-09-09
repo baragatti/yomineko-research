@@ -92,3 +92,13 @@ Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana
 - もう (já) + 行く → 行かない → 行かなきゃ (ou 行かなくちゃ). O いけない some na fala.
 - frases: `sent:tatoeba-528350`
 
+### 6. (recognition) No par 男 / 女, qual é o significado de 男?
+- **Resposta:** `{"choices": ["homem", "mulher", "criança", "pessoa"], "correct": "homem"}`
+- 男 quer dizer homem e 女, mulher. Sozinho, 男 se lê おとこ, e em 男の子 (menino) a leitura é a mesma.
+
+
+### 7. (production) Escreva em japonês "menino", com os kanji 男 e 子 e a leitura おとこのこ.
+- **Resposta:** `{"text": "男の子", "accept": ["男の子", "おとこのこ"]}`
+- 男の子 junta 男 (homem) e 子 (criança) com a partícula の no meio. Os dois kanji ficam com a leitura kun: おとこ e こ.
+
+

@@ -99,3 +99,23 @@ Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした =
 - 勉強する (forma de dicionário) + ことにした = 'decidi estudar'. Como foi uma escolha sua, usa-se する (ことにした), não なる.
 
 
+### 6. (recognition) Qual destes kanji significa 'imagem, desenho' (leitura ガ)?
+- **Resposta:** `{"choices": ["画", "田", "界", "用"], "correct": "画"}`
+- 画 é 'imagem, desenho' e se lê ガ nesse sentido. 田 e 界 guardam mesmo o bloco 田, e 用 só se parece com ele, então repare no contorno: só 画 fica emoldurado em cima e embaixo.
+
+
+### 7. (production) Escreva o kanji de 'imagem, desenho', lido ガ.
+- **Resposta:** `{"text": "画", "accept": ["画", "ガ", "が"]}`
+- 画 tem dois lados: lido ガ é imagem e desenho; lido カク é o traço do kanji e o plano traçado. Aqui vale o primeiro.
+
+
+### 8. (recognition) Qual destes kanji significa 'reunir, juntar' (leitura シュウ)?
+- **Resposta:** `{"choices": ["集", "会", "同", "者"], "correct": "集"}`
+- 集 é 'reunir, juntar': a imagem é a de um bando de pássaros pousando sobre a árvore 木. 会 é encontrar-se, 同 é ser igual e 者 é a pessoa: vizinhos no sentido, diferentes na forma.
+
+
+### 9. (production) Escreva o kanji de 'reunir, coletar', lido シュウ.
+- **Resposta:** `{"text": "集", "accept": ["集", "シュウ", "しゅう"]}`
+- 集 se lê シュウ nos compostos e あつ nas formas nativas. A imagem ajuda a fixar: pássaros pousados sobre a árvore 木, e logo vem o bando todo.
+
+

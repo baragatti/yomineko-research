@@ -107,3 +107,13 @@ O keigo é cheio de cortesia, mas a escrita não foge dos kanji. Hoje você ganh
 - O negativo polido se forma trocando ます por ません: 食べます → 食べません ('não como / não vou comer'). Mesma regra para todos os verbos em ます.
 
 
+### 6. (recognition) Em 漢字 (かんじ), o kanji 漢 tem uma única leitura em uso. Qual é ela?
+- **Resposta:** `{"choices": ["かん", "じ", "ご", "くに"], "correct": "かん"}`
+- 漢 só aparece com a leitura chinesa かん e quase sempre abre a palavra: 漢字 é literalmente "caractere dos Han", o povo da China antiga.
+
+
+### 7. (production) Escreva em japonês a palavra que nomeia os caracteres de origem chinesa (leitura かんじ).
+- **Resposta:** `{"text": "漢字", "accept": ["漢字", "かんじ"]}`
+- 漢 traz o radical da água à esquerda, herdado do nome de um rio da China. Junto de 字 (caractere), forma o nome do próprio sistema que você está aprendendo.
+
+

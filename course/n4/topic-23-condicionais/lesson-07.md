@@ -113,3 +113,13 @@ O kanji 田 significa campo de arroz, arrozal. A forma é fácil de gravar: é u
 - 水がほしい ('quero água') + んだけど amacia o pedido: 'é que eu queria água...'. O んだけど deixa a frase em aberto, esperando o outro oferecer. A versão educada seria んですが.
 - frases: `sent:tatoeba-9524565`
 
+### 7. (recognition) Qual destes kanji é o arrozal, o quadrado dividido em quatro canteiros?
+- **Resposta:** `{"choices": ["田", "電", "男", "地"], "correct": "田"}`
+- 田 é o arrozal (た; でん em compostos). Ele aparece dentro de 男 (homem, com 力 embaixo) e de 電 (eletricidade). 地 é terra, lugar: sentido próximo, kanji diferente.
+
+
+### 8. (production) Escreva o kanji que significa arrozal, campo de arroz (leitura た).
+- **Resposta:** `{"text": "田", "accept": ["田", "た"]}`
+- 田 são cinco traços: a moldura e a cruz que divide os canteiros. Sozinho lê-se た; em compostos, でん.
+
+

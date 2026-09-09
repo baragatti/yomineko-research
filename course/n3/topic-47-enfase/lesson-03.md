@@ -120,3 +120,48 @@ O kanji 妻 tem o radical da mulher (女) embaixo e significa "esposa". O kanji 
 - 決して abre a frase e o verbo fica no negativo: 決して遅刻しない = 'jamais me atraso'. A versão polida 決して遅刻しません também está correta. O ない (ou ません) é obrigatório com 決して.
 
 
+### 7. (recognition) Qual kanji significa "esposa"?
+- **Resposta:** `{"choices": ["妻", "母", "姉", "女"], "correct": "妻"}`
+- 妻 é a esposa: o kanji fecha com 女 (mulher) na base. Sozinho se lê つま.
+
+
+### 8. (recognition) Qual kanji significa "hospedagem, pousada"?
+- **Resposta:** `{"choices": ["宿", "家", "屋", "館"], "correct": "宿"}`
+- 宿 é a pousada, o lugar onde se passa a noite. Sozinho lê-se やど; a leitura on シュク aparece em 宿題 (dever de casa).
+
+
+### 9. (recognition) Qual kanji significa "febre"?
+- **Resposta:** `{"choices": ["熱", "暑", "寒", "冷"], "correct": "熱"}`
+- 熱 é o calor do corpo: a febre. 暑 é o calor do tempo, e 冷 e 寒 ficam do lado frio. Sozinho, 熱 se lê ねつ.
+
+
+### 10. (recognition) Qual kanji significa "costas"?
+- **Resposta:** `{"choices": ["背", "首", "頭", "顔"], "correct": "背"}`
+- 背 são as costas, e também a estatura de uma pessoa. Ele entra em 背中 (costas) e em 背広 (terno), a roupa que veste as costas.
+
+
+### 11. (recognition) Qual palavra significa "perigo, risco"?
+- **Resposta:** `{"choices": ["危険", "経験", "試験", "経済"], "correct": "危険"}`
+- 危険 junta 危 (perigoso) e 険 (íngreme, severo): o perigo. Não confunda com 経験 (experiência) nem 試験 (prova), que trazem 験, um kanji quase igual a 険.
+
+
+### 12. (recognition) Qual kanji significa "pedir um favor, confiar"?
+- **Resposta:** `{"choices": ["頼", "求", "信", "助"], "correct": "頼"}`
+- 頼 é pedir um favor e também contar com alguém: 頼む (pedir) e 信頼 (confiar em). A leitura kun é たのむ.
+
+
+### 13. (production) Escreva em japonês "esposa", com o kanji 妻 e a leitura つま.
+- **Resposta:** `{"text": "妻", "accept": ["妻", "つま"]}`
+- 妻 sozinho é つま, a esposa. A leitura on サイ só aparece em palavras compostas.
+
+
+### 14. (production) Escreva em japonês o adjetivo "quente (ao toque)", com o kanji 熱 e a leitura あつい.
+- **Resposta:** `{"text": "熱い", "accept": ["熱い", "あつい"]}`
+- 熱い é o quente que se sente na mão ou na boca. O kanji 熱 traz o sentido e a terminação em hiragana marca o adjetivo.
+
+
+### 15. (production) Escreva em japonês o verbo "pedir, solicitar", com o kanji 頼 e a leitura たのむ.
+- **Resposta:** `{"text": "頼む", "accept": ["頼む", "たのむ"]}`
+- 頼む guarda a leitura kun たのむ. Em palavras compostas como 信頼 o kanji passa para a leitura on ライ.
+
+

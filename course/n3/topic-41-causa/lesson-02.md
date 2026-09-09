@@ -89,3 +89,38 @@ O pronome お前 é bruto e íntimo. O japonês prefere omitir o sujeito sempre 
 - A primeira frase traz a meta (住みたい), e そのために introduz a ação tomada para alcançá-la. O verbo fica no fim de cada frase (japonês é SOV).
 
 
+### 6. (production) Escreva em japonês, com kanji, o substantivo que significa 'relação, relacionamento' e se lê かんけい.
+- **Resposta:** `{"text": "関係", "accept": ["関係", "かんけい"]}`
+- 関係 junta 関 ('ligar-se') e 係, o kanji da relação: à esquerda a pessoa, à direita o fio que a amarra a alguma coisa. Sozinho e lido かかり, 係 é a pessoa responsável por uma tarefa.
+
+
+### 7. (recognition) Qual destes verbos significa 'aumentar, crescer', com o número subindo sozinho, e se lê ふえる?
+- **Resposta:** `{"choices": ["増える", "変える", "変わる", "投げる"], "correct": "増える"}`
+- 増 tem 土 ('terra') à esquerda: é terra empilhada, o monte que cresce. 増える é o lado intransitivo, aquele em que a quantidade sobe por conta própria, sem ninguém empurrar. Nos compostos o kanji lê ゾウ e abre o vocabulário de aumento.
+
+
+### 8. (production) Escreva em japonês, com kanji, o verbo que significa 'mudar, transformar-se' (a coisa muda sozinha) e se lê かわる.
+- **Resposta:** `{"text": "変わる", "accept": ["変わる", "かわる"]}`
+- 変 é o kanji da mudança. Com わる a coisa muda sozinha; com える (変える) é você que muda alguma coisa. Sozinho e lido へん, o mesmo kanji vira o adjetivo 'estranho'.
+
+
+### 9. (recognition) Qual destas palavras significa 'amizade' e se lê ゆうじょう?
+- **Resposta:** `{"choices": ["友情", "表情", "関係", "大変"], "correct": "友情"}`
+- 情 tem à esquerda o radical do coração e 青 à direita: é o sentimento que transparece. Ele fecha as palavras de emoção. 友情 é o sentimento entre amigos e 表情 é o sentimento que aparece no rosto.
+
+
+### 10. (recognition) Todos estes kanji trazem 心 ('coração'). Qual deles significa 'sentir, sensação' e se lê カン?
+- **Resposta:** `{"choices": ["感", "意", "思", "心"], "correct": "感"}`
+- 感 põe 心 embaixo de tudo: é o que o coração registra. Ele tem uma leitura só, カン, e abre quase todos os seus compostos, do agradecer ao emocionar-se.
+
+
+### 11. (production) Escreva em japonês, com kanji, o verbo que significa 'jogar, arremessar' e se lê なげる.
+- **Resposta:** `{"text": "投げる", "accept": ["投げる", "なげる"]}`
+- 投 tem a mão à esquerda, o mesmo lado de 持 e de 指: é a mão que lança. Nos compostos a leitura トウ estende esse 'lançar' até dinheiro e votos.
+
+
+### 12. (recognition) Qual destes kanji significa 'mostrar, indicar'?
+- **Resposta:** `{"choices": ["示", "社", "紙", "市"], "correct": "示"}`
+- 示 é o altar antigo visto de frente, o lugar onde a oferenda fica à vista. Ele é o radical que aparece à esquerda de 社, e sozinho carrega a ideia de apontar e deixar exposto.
+
+

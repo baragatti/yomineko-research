@@ -92,3 +92,18 @@ O kanji 貧 ('pobreza, pobre') aparece em 貧乏 ('pobreza') e 貧しい ('pobre
 - 尊敬する significa 'respeitar/admirar'. A forma ている indica esse sentimento como um estado contínuo.
 
 
+### 6. (recognition) Qual destes kanji significa "paisagem, vista"?
+- **Resposta:** `{"choices": ["景", "京", "経", "警"], "correct": "景"}`
+- 景 é a paisagem, aquilo que se vê de um ponto. Ele carrega 京 dentro do desenho, e daí vem a leitura ケイ, que 経 e 警 também usam.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa "paisagem, vista" e se lê けしき.
+- **Resposta:** `{"text": "景色", "accept": ["景色", "けしき"]}`
+- 景色 tem leitura irregular: não dá para montá-la somando as leituras de 景 e de 色, então vale decorar a palavra inteira. Para a paisagem em tom mais formal existe 風景 (ふうけい).
+
+
+### 8. (recognition) Qual destes kanji significa "pobre, pobreza"?
+- **Resposta:** `{"choices": ["貧", "費", "財", "貸"], "correct": "貧"}`
+- 貧 é a pobreza: em cima está a ideia de repartir e embaixo a concha que valia dinheiro, ou seja, o que sobra quando se divide o dinheiro em partes pequenas demais. 費 é despesa, 財 é riqueza e 貸 é emprestar.
+
+

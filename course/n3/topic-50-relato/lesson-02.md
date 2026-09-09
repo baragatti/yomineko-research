@@ -119,3 +119,28 @@ Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar 
 - 早く来る vira 来てくれ (forma て + くれ, imperativo casual) + と (aspas) + 頼まれた ('me pediram'). O くれ preserva o tom direto do pedido original, mesmo com o verbo final educado. A pessoa que pediu leva に (上司に).
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["御", "prefixo honorífico"], ["慣", "acostumar-se, habituar-se"], ["折", "dobrar, quebrar"], ["誤", "erro, engano"]]}`
+- 御 (ゴ) é o prefixo de cortesia que vem antes de substantivos; 慣 (なれる) é acostumar-se; 折 (おる) é dobrar e quebrar; 誤 (ゴ) é o erro. Repare que 御 e 誤 dividem a leitura ゴ.
+
+
+### 7. (production) Escreva em japonês a palavra que significa 'jantar', formada por 晩 ('noite'), o kanji novo 御 e 飯 ('refeição').
+- **Resposta:** `{"text": "晩御飯", "accept": ["晩御飯", "ばんごはん"]}`
+- 晩御飯 (ばんごはん) traz o 御 de cortesia colado no meio da palavra, lido ご. É o mesmo ご que você põe na frente de substantivos para soar educado.
+
+
+### 8. (production) Escreva em japonês o verbo que significa 'acostumar-se, habituar-se', na forma de dicionário, com o kanji novo 慣.
+- **Resposta:** `{"text": "慣れる", "accept": ["慣れる", "なれる"]}`
+- 慣れる (なれる) é ir ficando à vontade com alguma coisa. Nos compostos, 慣 troca para カン, como em 習慣 ('hábito').
+
+
+### 9. (production) Escreva em japonês o verbo transitivo que significa 'dobrar, curvar', na forma de dicionário, com o kanji novo 折.
+- **Resposta:** `{"text": "折る", "accept": ["折る", "おる"]}`
+- 折る (おる) é alguém dobrar ou quebrar alguma coisa. O par intransitivo é 折れる (おれる), quando a coisa quebra sozinha.
+
+
+### 10. (production) Escreva em japonês o substantivo que significa 'erro, engano', formado pelo kanji novo 誤 mais り.
+- **Resposta:** `{"text": "誤り", "accept": ["誤り", "あやまり"]}`
+- 誤り (あやまり) é o erro em si. Nos compostos, 誤 troca para a leitura sino-japonesa ゴ, como em 誤解 ('entender mal').
+
+

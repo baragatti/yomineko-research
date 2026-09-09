@@ -99,3 +99,13 @@ Encadeando tudo:郵便局に行きます。それから、レストランで食�
 - でも é o 'mas' coloquial, no início da segunda frase: 高いです (é caro) → ponto → でも、 → 買います (vou comprar). Note que でも fica grudado no começo da frase nova, não no fim da anterior.
 
 
+### 6. (recognition) Como se lê 休み, 'descanso, folga'?
+- **Resposta:** `{"choices": ["やすみ", "やすい", "やさい", "くすり"], "correct": "やすみ"}`
+- 休 traz a leitura nativa やす e o okurigana fecha o substantivo: やすみ. Não confunda com やすい, 'barato', que é escrito com outro kanji e começa igual.
+
+
+### 7. (production) Escreva em japonês o verbo 'descansar' na forma de dicionário, やすむ.
+- **Resposta:** `{"text": "休む", "accept": ["休む", "やすむ"]}`
+- 休 é 人 (pessoa) encostado em 木 (árvore): alguém à sombra, descansando. Com um okurigana ele vira o verbo 休む; com outro, o substantivo 休み.
+
+

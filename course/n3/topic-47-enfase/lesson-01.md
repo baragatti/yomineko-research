@@ -111,3 +111,48 @@ O kanji 亡 significa "falecido, perecer". O kanji 舞 significa "dança, rodopi
 - 君さえいれば ('desde que eu tenha você', com さえ + condicional いれば) é a condição suficiente; 幸福だ ('sou feliz') é o resultado. O padrão さえ...ば transmite 'basta isso e tudo fica bem'.
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado (parte 1).
+- **Resposta:** `{"pairs": [["亡", "morrer, falecido"], ["冷", "frio, gelado"], ["婦", "mulher casada, senhora"], ["寄", "aproximar-se, dar uma passada"]]}`
+- 亡 (ボウ) fala de morte e de quem já partiu; 冷 (レイ) é o frio; 婦 (フ) é a mulher casada, a senhora; 寄 (よる) é chegar perto e dar uma passada em algum lugar.
+
+
+### 7. (matching) Ligue cada kanji novo desta lição ao seu significado (parte 2).
+- **Resposta:** `{"pairs": [["未", "ainda não, não-"], ["舞", "dançar, dança"], ["適", "adequado, apropriado"]]}`
+- 未 (ミ) nega o que vem depois com o sentido de 'ainda não'; 舞 (ブ) é a dança; 適 (テキ) é o que serve, o que cai bem para a situação.
+
+
+### 8. (production) Escreva em japonês o verbo respeitoso para dizer que alguém 'faleceu, morreu', na forma de dicionário, com o kanji novo 亡.
+- **Resposta:** `{"text": "亡くなる", "accept": ["亡くなる", "なくなる"]}`
+- 亡くなる (なくなる) é o jeito respeitoso de falar da morte de uma pessoa, bem mais usado na conversa do que 死ぬ. A leitura nativa な carrega a ideia de 'não estar mais'.
+
+
+### 9. (production) Escreva em japonês o adjetivo que significa 'frio ao toque, gelado', com o kanji novo 冷.
+- **Resposta:** `{"text": "冷たい", "accept": ["冷たい", "つめたい"]}`
+- 冷たい (つめたい) é o frio que se sente ao encostar: uma bebida, uma mão. Para o frio do ambiente você já usa 寒い.
+
+
+### 10. (production) Escreva em japonês a palavra que significa 'casal, marido e mulher', juntando 夫 ('marido') com o kanji novo 婦.
+- **Resposta:** `{"text": "夫婦", "accept": ["夫婦", "ふうふ"]}`
+- 夫婦 (ふうふ) põe lado a lado o marido e a mulher casada. Os dois kanji usam a leitura sino-japonesa フ, e a primeira alonga: ふう.
+
+
+### 11. (production) Escreva em japonês o verbo que significa 'dar uma passada, parar em um lugar', na forma de dicionário, com o kanji novo 寄.
+- **Resposta:** `{"text": "寄る", "accept": ["寄る", "よる"]}`
+- 寄る (よる) é desviar um pouco do caminho para passar rapidinho em algum lugar. Cuidado com o som: ele é igual ao de 夜 ('noite'), mas o kanji é outro.
+
+
+### 12. (production) Escreva em japonês, com kanji, o advérbio que significa 'ainda', formado pelo kanji novo 未 mais だ.
+- **Resposta:** `{"text": "未だ", "accept": ["未だ", "まだ"]}`
+- 未だ (まだ) é o 'ainda' do dia a dia, quase sempre escrito só em kana. O kanji ajuda a fixar o sentido de 未: aquilo que ainda não aconteceu.
+
+
+### 13. (production) Escreva em japonês a palavra que significa 'palco', juntando o kanji novo 舞 com 台 ('plataforma').
+- **Resposta:** `{"text": "舞台", "accept": ["舞台", "ぶたい"]}`
+- 舞台 (ぶたい) é a plataforma onde se dança e se atua. Aqui 舞 usa a leitura sino-japonesa ブ, e não a nativa ま.
+
+
+### 14. (production) Escreva em japonês a palavra que significa 'adequado, apropriado', juntando o kanji novo 適 com 当.
+- **Resposta:** `{"text": "適当", "accept": ["適当", "てきとう"]}`
+- 適当 (てきとう) é o que cai bem para a situação. Atenção ao duplo sentido: na fala descontraída ela também vira 'de qualquer jeito', então o contexto é que manda.
+
+

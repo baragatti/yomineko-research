@@ -120,3 +120,63 @@ O kanji 落 ('cair, queda') tem o radical de planta (艹) no topo, como folha qu
 - A forma negativa do verbo + ことだ vira conselho de 'não fazer X'. 無理をする ('forçar-se') na negativa é 無理をしない, e com ことだ fica 無理をしないことだ ('o melhor é não se forçar').
 
 
+### 7. (recognition) Qual destes kanji significa vida e se lê いのち quando está sozinho?
+- **Resposta:** `{"choices": ["命", "名", "明", "品"], "correct": "命"}`
+- 命 é a vida (いのち) e também a ordem que se dá (めい). 名 (nome) e 明 (claro) repetem as leituras めい e みょう, e 品 (mercadoria) traz o mesmo 口.
+
+
+### 8. (production) Escreva em kanji a palavra vida (いのち).
+- **Resposta:** `{"text": "命", "accept": ["命", "いのち"]}`
+- 命 (いのち) é a vida de um ser. Em compostos lê-se めい, como em 生命 (せいめい), a vida no sentido biológico.
+
+
+### 9. (recognition) Qual destes kanji significa perder, fracassar?
+- **Resposta:** `{"choices": ["失", "実", "質", "室"], "correct": "失"}`
+- 失 é perder. 実 (real), 質 (qualidade) e 室 (sala) também se leem しつ: a leitura não separa, o kanji sim. Repare que 失 é 大 com um traço escapando por cima.
+
+
+### 10. (production) Escreva em kanji o verbo perder algo ou alguém (うしなう).
+- **Resposta:** `{"text": "失う", "accept": ["失う", "うしなう"]}`
+- 失う (うしなう) é perder algo que se tinha. Em compostos o kanji lê-se しつ.
+
+
+### 11. (recognition) Qual destes kanji significa cair, deixar cair?
+- **Resposta:** `{"choices": ["落", "薬", "菜", "茶"], "correct": "落"}`
+- 落 é cair: a folha que se solta da planta, daí o radical de planta em cima, o mesmo de 薬 (remédio), 菜 (verdura) e 茶 (chá).
+
+
+### 12. (production) Escreva em kanji o verbo intransitivo cair (おちる).
+- **Resposta:** `{"text": "落ちる", "accept": ["落ちる", "おちる"]}`
+- 落ちる (おちる) é cair sozinho; o par transitivo é 落とす (おとす), deixar cair. O kanji é o mesmo, muda a okurigana.
+
+
+### 13. (recognition) Qual destes kanji significa perder uma disputa, ser derrotado?
+- **Resposta:** `{"choices": ["負", "買", "貸", "質"], "correct": "負"}`
+- 負 é perder numa disputa e também arcar com um peso. 買 (comprar), 貸 (emprestar) e 質 (qualidade) dividem com ele o elemento de baixo, ligado a dinheiro.
+
+
+### 14. (production) Escreva em kanji o verbo perder, ser derrotado (まける).
+- **Resposta:** `{"text": "負ける", "accept": ["負ける", "まける"]}`
+- 負ける (まける) é sair derrotado. O mesmo kanji, lido お, aparece no sentido de carregar nas costas.
+
+
+### 15. (recognition) Qual kanji completa 引＿ para formar aposentar-se, retirar-se da carreira (いんたい)?
+- **Resposta:** `{"choices": ["退", "進", "違", "運"], "correct": "退"}`
+- 引退 (いんたい) é puxar-se (引) para trás (退), encerrar a carreira. 進 (avançar) é o oposto exato; 違 (diferir) e 運 (transportar) só compartilham o radical de movimento.
+
+
+### 16. (production) Escreva em kanji a palavra alta hospitalar (たいいん).
+- **Resposta:** `{"text": "退院", "accept": ["退院", "たいいん"]}`
+- 退院 (たいいん) é retirar-se (退) do hospital (院), o oposto de dar entrada. Aqui 退 lê-se たい.
+
+
+### 17. (recognition) Qual destes kanji, lido ひ, entra em 非常 e nega o que vem depois dele?
+- **Resposta:** `{"choices": ["非", "費", "引", "表"], "correct": "非"}`
+- 非 é o prefixo de negação e forma 非常 (ひじょう), literalmente fora do comum, ou seja, emergência. 費 (despesa) e 引 (puxar) também trazem o som ひ, e 表 divide com ele a leitura あら.
+
+
+### 18. (production) Escreva em kanji o advérbio muito, extremamente (ひじょうに).
+- **Resposta:** `{"text": "非常に", "accept": ["非常に", "ひじょうに"]}`
+- 非常に (ひじょうに) é extremamente: o que não (非) é comum (常). Sem o に, 非常 é o substantivo emergência.
+
+

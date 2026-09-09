@@ -115,3 +115,83 @@ São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão v
 - として classifica isto NA CONDIÇÃO de lanche: おやつとして ('como lanche') + 食べられる ('pode ser comido'). Aqui として indica a função/categoria atribuída ao item, não uma comparação.
 
 
+### 6. (recognition) Qual kanji significa "chegar, alcançar"?
+- **Resposta:** `{"choices": ["到", "進", "退", "送"], "correct": "到"}`
+- 到 é chegar ao ponto final, alcançar. Ele aparece em 到着 (chegada), ao lado de 着. A leitura on é トウ.
+
+
+### 7. (recognition) Qual kanji significa "inalar, sugar"?
+- **Resposta:** `{"choices": ["吸", "吹", "飲", "食"], "correct": "吸"}`
+- 吸 é puxar para dentro. Ele tem 口 (boca) à esquerda, como 吹, e aparece tanto em 吸う (fumar) quanto em 呼吸 (respiração).
+
+
+### 8. (recognition) Qual kanji significa "soprar"?
+- **Resposta:** `{"choices": ["吹", "吸", "風", "飲"], "correct": "吹"}`
+- 吹 é soprar para fora, o contrário de 吸. O verbo 吹く é o que o 風 (vento) faz.
+
+
+### 9. (recognition) Qual kanji significa "filha"?
+- **Resposta:** `{"choices": ["娘", "妻", "母", "姉"], "correct": "娘"}`
+- 娘 é a filha, e também a moça. Ele traz 女 (mulher) à esquerda e sozinho se lê むすめ.
+
+
+### 10. (recognition) Qual kanji significa "esquecer"?
+- **Resposta:** `{"choices": ["忘", "悲", "心", "思"], "correct": "忘"}`
+- 忘 tem 心 (coração) embaixo: o que sai do coração se perde. O verbo é 忘れる, com a leitura kun わすれる.
+
+
+### 11. (recognition) Qual kanji significa "triste"?
+- **Resposta:** `{"choices": ["悲", "楽", "心", "忘"], "correct": "悲"}`
+- 悲 também tem 心 (coração) embaixo, como 忘. Ele é a tristeza: o adjetivo 悲しい se lê かなしい.
+
+
+### 12. (recognition) Qual kanji significa "pendurar, colocar"?
+- **Resposta:** `{"choices": ["掛", "持", "手", "打"], "correct": "掛"}`
+- 掛 tem a mão 手 à esquerda, como 持 e 打. O verbo 掛ける quer dizer pendurar ou colocar, e 掛かる, levar tempo ou custar.
+
+
+### 13. (recognition) Qual kanji significa "anoitecer, levar a vida"?
+- **Resposta:** `{"choices": ["暮", "夜", "昼", "朝"], "correct": "暮"}`
+- 暮 tem 日 (sol) embaixo: o sol que se põe. Daí vem 暮れる (anoitecer) e também 暮らす (viver, levar a vida).
+
+
+### 14. (recognition) Qual kanji significa "dente"?
+- **Resposta:** `{"choices": ["歯", "口", "首", "目"], "correct": "歯"}`
+- 歯 é o dente. Ele guarda 止 em cima e 米 embaixo, o desenho da fileira de dentes; sozinho se lê は.
+
+
+### 15. (recognition) Qual kanji significa "cortesia, agradecimento"?
+- **Resposta:** `{"choices": ["礼", "失", "様", "申"], "correct": "礼"}`
+- 礼 é a cortesia e o agradecimento. Ele aparece em お礼 (agradecimento) e em 失礼 (grosseria), literalmente a cortesia perdida (失).
+
+
+### 16. (recognition) Qual palavra significa "junto, juntos"?
+- **Resposta:** `{"choices": ["一緒", "一生", "一種", "一体"], "correct": "一緒"}`
+- 一緒 é estar junto: 緒 é o cordão que amarra e 一 é um só. A leitura いっしょ chega perto de いっしょう, de 一生 (a vida toda), e o que muda é só o alongamento.
+
+
+### 17. (recognition) Qual palavra significa "sol"?
+- **Resposta:** `{"choices": ["太陽", "陽気", "天気", "空気"], "correct": "太陽"}`
+- 太陽 é o sol, e o 陽 que fecha a palavra é justamente a luz solar. O mesmo 陽 volta em 陽気 (alegre, animado).
+
+
+### 18. (recognition) Qual kanji significa "neve"?
+- **Resposta:** `{"choices": ["雪", "雨", "風", "冬"], "correct": "雪"}`
+- 雪 tem 雨 (chuva) em cima: é a água que cai congelada. Sozinho se lê ゆき, e no 冬 (inverno) ele aparece bastante.
+
+
+### 19. (production) Escreva em japonês o verbo "esquecer", com o kanji 忘 e a leitura わすれる.
+- **Resposta:** `{"text": "忘れる", "accept": ["忘れる", "わすれる"]}`
+- 忘れる guarda a leitura kun わすれる. O kanji 忘 traz o sentido e a terminação em hiragana marca o verbo.
+
+
+### 20. (production) Escreva em japonês "dente", com o kanji 歯 e a leitura は.
+- **Resposta:** `{"text": "歯", "accept": ["歯", "は"]}`
+- 歯 sozinho é は, e continua は em 歯医者 (dentista).
+
+
+### 21. (production) Escreva em japonês "neve", com o kanji 雪 e a leitura ゆき.
+- **Resposta:** `{"text": "雪", "accept": ["雪", "ゆき"]}`
+- 雪 sozinho é ゆき. A leitura on セツ aparece em palavras compostas.
+
+

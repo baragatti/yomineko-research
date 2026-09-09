@@ -91,3 +91,13 @@ O número 千 (せん) significa "mil". É o passo seguinte depois de 百 ("cem"
 - 乗る → negativo 乗らない → troca い por くて: 乗らなくて + はいけない. バスに marca o veículo.
 
 
+### 6. (recognition) Qual destes kanji vale mil?
+- **Resposta:** `{"choices": ["千", "百", "十", "九"], "correct": "千"}`
+- 千 (せん) é mil. 百 é cem, 十 é dez e 九 é nove. O desenho de 千 é o de 十 com um traço curto por cima, como se o dez ganhasse mais uma casa.
+
+
+### 7. (production) Escreva 'dois mil ienes' em japonês, usando os kanji dos números.
+- **Resposta:** `{"text": "二千円", "accept": ["二千円", "にせんえん"]}`
+- 二千円 lê-se にせんえん. O kanji 千 mantém aqui a leitura on せん, que é a que aparece em quase todos os múltiplos de mil.
+
+

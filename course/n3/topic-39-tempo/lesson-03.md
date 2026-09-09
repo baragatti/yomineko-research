@@ -102,3 +102,53 @@ Resolva e confira cada explicação.
 - Forma た + とたん: 立ったとたん. O segundo evento (a tontura) é involuntário e surpreendente, exatamente o que とたん exige.
 
 
+### 6. (recognition) Como se lê 最初, 'o começo, o primeiro'?
+- **Resposta:** `{"choices": ["さいしょ", "さいきん", "いっしょ", "じむしょ"], "correct": "さいしょ"}`
+- 最 traz サイ e 初 traz ショ, a leitura sino-japonesa: さいしょ. Quando 初 vem com okurigana ele muda de som: 初めて é はじめて.
+
+
+### 7. (production) Escreva em japonês 'pela primeira vez', はじめて, com o kanji.
+- **Resposta:** `{"text": "初めて", "accept": ["初めて", "はじめて"]}`
+- 初 tem duas caras: はじ nas formas nativas (初めて) e ショ nos compostos (最初). O okurigana é o que avisa qual delas usar.
+
+
+### 8. (recognition) Como se lê 受ける, 'receber, obter'?
+- **Resposta:** `{"choices": ["うける", "うえる", "あける", "まける"], "correct": "うける"}`
+- 受 traz a leitura nativa う e o okurigana completa o verbo: うける. Os quatro são ichidan com a mesma terminação, então o que decide é a primeira mora.
+
+
+### 9. (production) Escreva em japonês o verbo 'receber, obter' na forma de dicionário, うける.
+- **Resposta:** `{"text": "受ける", "accept": ["受ける", "うける"]}`
+- 受 desenha uma mão que entrega em cima e outra que recebe embaixo. Daí 受ける, receber, inclusive no sentido de 'fazer' uma prova.
+
+
+### 10. (recognition) Como se lê 数学, 'matemática'?
+- **Resposta:** `{"choices": ["すうがく", "つうがく", "だいがく", "ぶんがく"], "correct": "すうがく"}`
+- 数 traz スウ e 学 traz ガク: すうがく, o estudo dos números. Sozinho, o mesmo 数 é かず (quantidade).
+
+
+### 11. (production) Escreva em japonês 'matemática', すうがく, com os dois kanji.
+- **Resposta:** `{"text": "数学", "accept": ["数学", "すうがく"]}`
+- 数 é 'número, contar'; ao lado de 学 (estudo) dá a matéria escolar. A leitura de composto é スウ, e é ela que abre a palavra.
+
+
+### 12. (recognition) Como se lê 続ける, 'continuar (alguma coisa)'?
+- **Resposta:** `{"choices": ["つづける", "つとめる", "つたえる", "みつける"], "correct": "つづける"}`
+- 続 tem a leitura nativa つづ, com dakuten na segunda sílaba. O okurigana marca a forma transitiva: alguém continua alguma coisa.
+
+
+### 13. (production) Escreva em japonês o verbo 'continuar, durar', o par em que a coisa segue sozinha, つづく, na forma de dicionário.
+- **Resposta:** `{"text": "続く", "accept": ["続く", "つづく"]}`
+- 続く é o par intransitivo de 続ける: em 続く a coisa segue por si, em 続ける alguém a mantém. O kanji é o mesmo; muda só o okurigana.
+
+
+### 14. (recognition) Como se lê 日記, 'diário'?
+- **Resposta:** `{"choices": ["にっき", "でんき", "てんき", "げんき"], "correct": "にっき"}`
+- Em 日記 a leitura ニチ de 日 encurta e se encaixa em キ de 記: にっき. O 記 traz 言 (falar) à esquerda: a fala que fica registrada.
+
+
+### 15. (production) Escreva em japonês 'memorização, decorar', あんき, com os dois kanji.
+- **Resposta:** `{"text": "暗記", "accept": ["暗記", "あんき"]}`
+- 暗 é 'escuro' e 記 é 'registrar': gravar no escuro, ou seja, de cabeça. Em 日記 e em 暗記 o 記 mantém a mesma leitura キ.
+
+

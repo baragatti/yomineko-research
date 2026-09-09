@@ -86,3 +86,13 @@ Em かかってこい, o かかって é uma forma て colada a 来い: a mesma 
 - 話す (godan, す) → forma て 話して; encadeia com 働きます. A forma て liga as duas ações em sequência.
 
 
+### 6. (recognition) Em 先生 (せんせい, 'professor'), qual é a leitura do kanji 先?
+- **Resposta:** `{"choices": ["せん", "さき", "まえ", "ぜん"], "correct": "せん"}`
+- Em compostos como 先生 e 先月, 先 usa a leitura chinesa せん. Sozinho o mesmo kanji lê-se さき. As opções まえ e ぜん são leituras de 前, que também fala de 'antes', e é por isso que confundem tanto.
+
+
+### 7. (production) Escreva em japonês 'professor', palavra que se lê せんせい.
+- **Resposta:** `{"text": "先生", "accept": ["先生", "せんせい"]}`
+- 先生 é 先 ('antes, à frente') mais 生 ('vida, nascer'): literalmente quem nasceu antes, e daí 'professor'.
+
+

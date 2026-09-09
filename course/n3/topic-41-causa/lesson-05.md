@@ -91,3 +91,13 @@ Marcadores de discurso e palavras de transação.
 - 朝から (desde a manhã) + ずっと (sem parar) + 頭痛がする (estar com dor de cabeça).
 
 
+### 6. (recognition) Na palavra 以内 (dentro de, em até), qual é a leitura do kanji 内?
+- **Resposta:** `{"choices": ["ない", "がい", "かん", "ちゅう"], "correct": "ない"}`
+- 内 lê-se ない nas palavras compostas. As opções erradas são as leituras de 外 (がい), que é justamente o oposto, 間 (かん) e 中 (ちゅう).
+
+
+### 7. (production) Escreva em japonês a expressão que significa dentro de, em até certo limite de tempo, distância ou quantidade.
+- **Resposta:** `{"text": "以内", "accept": ["以内", "いない"]}`
+- 以内 (いない) marca o teto de um intervalo: tudo o que cabe dentro do limite. Sozinho e lido うち, 内 já quer dizer dentro.
+
+

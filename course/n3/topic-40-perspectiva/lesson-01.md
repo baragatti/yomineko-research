@@ -121,3 +121,28 @@ Junte tema e contexto:この映画について会議で訴える (apelar sobre e
 - Para ligar o tema a um substantivo, について vira についての: 宇宙についての本. A variante mais formal 宇宙に関する本 também está correta.
 
 
+### 6. (production) Escreva em japonês a palavra para "plano, programação, agenda" (leitura よてい).
+- **Resposta:** `{"text": "予定", "accept": ["予定", "よてい"]}`
+- 予 carrega sempre a ideia de antecipação, e a leitura chinesa よ é a única em uso: 予定 é o que já ficou decidido de antemão.
+
+
+### 7. (recognition) Qual destas palavras se lê こうつう e significa "trânsito, transporte"?
+- **Resposta:** `{"choices": ["交通", "予定", "生活", "予約"], "correct": "交通"}`
+- 交 é o kanji de cruzar e misturar; com 通 (passar), o trânsito é justamente o vaivém que se cruza na rua.
+
+
+### 8. (production) Escreva em japonês a palavra para "campo, planície" (leitura はら).
+- **Resposta:** `{"text": "原", "accept": ["原", "はら"]}`
+- Sozinho e lido はら, 原 é o campo aberto. Nos compostos ele passa à leitura chinesa げん e vira "origem, original", o campo de onde as coisas partem.
+
+
+### 9. (production) Escreva em japonês o verbo "obter, conseguir" (leitura える).
+- **Resposta:** `{"text": "得る", "accept": ["得る", "える"]}`
+- 得 é o kanji de ganhar e obter. Cuidado com a leitura: 得る lido える é "obter", enquanto o mesmo 得る lido うる funciona como sufixo de "poder".
+
+
+### 10. (recognition) Qual destas palavras se lê せいかつ e significa "vida, cotidiano"?
+- **Resposta:** `{"choices": ["生活", "交通", "予約", "予定"], "correct": "生活"}`
+- 活 tem o radical da água e fala de vida em movimento, não de existência abstrata. Por isso 生活 é a vida do dia a dia, a rotina.
+
+

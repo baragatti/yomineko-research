@@ -98,3 +98,23 @@ Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irri
 - 夜 (noite) + なかなか + 眠れない (potencial negativa de 眠る = "não conseguir dormir"). É a combinação exata do tópico: なかなか〜ない com a forma potencial.
 - frases: `sent:gen-b347563062a8`
 
+### 6. (recognition) O kanji 以, lido イ nos compostos, marca sempre um ponto de referência. Qual é o significado dele?
+- **Resposta:** `{"choices": ["a partir de", "metade", "mundo", "principal"], "correct": "a partir de"}`
+- 以 marca o limite a partir do qual se conta: é ele que abre as palavras de 'daqui para cima', 'daqui para baixo' e 'daqui em diante'. Sozinho ele quase nunca aparece: vive no começo desses pares.
+
+
+### 7. (production) Escreva só o kanji lido イ que marca o ponto de referência ('a partir de') no começo dos compostos.
+- **Resposta:** `{"text": "以", "accept": ["以"]}`
+- É 以, cinco traços. Ele é sempre a primeira metade da palavra: o que vem depois é que diz para que lado se conta.
+
+
+### 8. (recognition) O kanji 院, lido イン, fecha o nome de hospitais, templos e faculdades. Qual é o significado dele?
+- **Resposta:** `{"choices": ["instituição", "casa", "escola", "estação"], "correct": "instituição"}`
+- 院 é a 'instituição': um lugar cercado com gente trabalhando dentro, do hospital ao templo. Ele vem sempre no fim da palavra e mantém a leitura いん.
+
+
+### 9. (production) Escreva só o kanji lido イン que significa 'instituição', o que fecha a palavra japonesa para hospital.
+- **Resposta:** `{"text": "院", "accept": ["院"]}`
+- É 院, dez traços, com o radical de colina à esquerda. Guarde-o pelo som: sempre que a palavra terminar em いん nesse sentido, o kanji é este.
+
+

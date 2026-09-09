@@ -96,3 +96,13 @@ Mnemônico de forma: o componente de fora é 門 (um portão de duas folhas) e d
 - Molde 〜の側に + [ser vivo] + が + いる. 側 (そば) é 'ao lado de, pertinho de', e o lugar da existência vem sempre marcado por に. Como 犬 é ser vivo, o verbo é いる, aqui na forma casual.
 
 
+### 7. (recognition) O kanji 間 aparece em 時間 (じかん, 'tempo'). Qual é o sentido básico de 間 sozinho?
+- **Resposta:** `{"choices": ["intervalo", "meio", "topo", "longo"], "correct": "intervalo"}`
+- 間 é o intervalo, o espaço que fica entre duas coisas. Em 時間 é o intervalo de tempo. Não confunda com 中, que é o meio, o lado de dentro de algo.
+
+
+### 8. (production) Escreva em japonês a palavra que significa 'tempo, hora' e se lê じかん.
+- **Resposta:** `{"text": "時間", "accept": ["時間", "じかん"]}`
+- 時 (tempo) somado a 間 (intervalo) dá 時間: o intervalo de tempo. Nesse composto 間 usa a leitura chinesa, que soa かん.
+
+

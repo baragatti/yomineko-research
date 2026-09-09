@@ -104,3 +104,48 @@ Resolva os exercícios; confira a explicação de cada um.
 - A saída para compras é a ação com propósito; ついでに encaixa a tarefa secundária de postar a carta.
 
 
+### 6. (recognition) Qual destes kanji significa 'adicionar, somar'?
+- **Resposta:** `{"choices": ["加", "力", "合", "集"], "correct": "加"}`
+- 加 é 力 (força) ao lado de 口 (boca): pôr força e voz junto ao que já existe. Em compostos lê-se カ. 合 é 'juntar, combinar' e 集 é 'reunir num só lugar'; 加 é o gesto de acrescentar mais um.
+
+
+### 7. (recognition) Qual destes kanji significa 'pegar, tomar'?
+- **Resposta:** `{"choices": ["取", "聞", "耳", "持"], "correct": "取"}`
+- 取 é 耳 (orelha) ao lado do desenho de uma mão: a mão que pega. A leitura nativa é と, como em 取る. 聞 também carrega 耳, e 持 é 'segurar o que já está com você', enquanto 取 é o ato de pegar.
+
+
+### 8. (production) Escreva 'pegar, tomar' na forma de dicionário, com kanji.
+- **Resposta:** `{"text": "取る", "accept": ["取る", "とる"]}`
+- Em 取る o kanji guarda a raiz と e o resto fica como okurigana. Serve para pegar um objeto, tirar férias ou obter uma nota.
+
+
+### 9. (recognition) Qual destes kanji significa 'harmonia, paz'?
+- **Resposta:** `{"choices": ["和", "平", "話", "合"], "correct": "和"}`
+- 和 põe uma espiga de arroz ao lado de 口 (boca): comida repartida, ou seja, harmonia. Lê-se ワ (a mesma leitura que 話 tem em compostos) e também nomeia aquilo que é japonês. 平, que entra nesta mesma lição, cobre o lado de 'plano, nivelado'.
+
+
+### 10. (recognition) Qual destes kanji significa 'plano, nivelado'?
+- **Resposta:** `{"choices": ["平", "半", "千", "和"], "correct": "平"}`
+- 平 desenha uma superfície equilibrada: 'plano, nivelado' e, por extensão, 'paz'. Em compostos lê-se ヘイ. 半 e 千 confundem pela silhueta parecida, e 和, também desta lição, fica com o lado de 'harmonia'.
+
+
+### 11. (recognition) Qual destes kanji significa 'período, prazo'?
+- **Resposta:** `{"choices": ["期", "時", "間", "代"], "correct": "期"}`
+- 期 lê-se キ e sempre traz um trecho de tempo com começo e fim, como em 長期. 時 é a hora, 間 é o intervalo entre dois pontos e 代 é a era ou o turno de alguém.
+
+
+### 12. (production) Escreva 'de longo prazo' em japonês, com kanji.
+- **Resposta:** `{"text": "長期", "accept": ["長期", "ちょうき"]}`
+- 長期 é 長 (longo) + 期 (período), lido ちょうき. Os dois kanji entram na leitura chinesa, e a de 期 é キ.
+
+
+### 13. (recognition) Qual destes kanji significa 'máquina' e também 'oportunidade, ocasião'?
+- **Resposta:** `{"choices": ["機", "期", "会", "場"], "correct": "機"}`
+- 機 lê-se キ, igual a 期, e essa é a troca mais fácil de cometer. Ele nomeia o mecanismo e também o momento em que as peças se encaixam: 機会. 会 é a outra metade dessa palavra e 場 é o lugar onde algo acontece.
+
+
+### 14. (production) Escreva 'oportunidade, ocasião' em japonês, com kanji.
+- **Resposta:** `{"text": "機会", "accept": ["機会", "きかい"]}`
+- 機会 é 機 (momento em que as peças se encaixam) + 会 (encontro): a ocasião que aparece. Lê-se きかい.
+
+

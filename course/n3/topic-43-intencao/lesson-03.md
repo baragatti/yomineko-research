@@ -102,3 +102,38 @@ Armadilha PT: palavras como 観光 (かんこう) têm DUAS coisas de duração 
 - O potencial 読める ('conseguir ler') é um resultado não controlado, então usa-se ように (não ために). O alvo do potencial leva が: 漢字が読めるように. Depois vem 毎日勉強する.
 
 
+### 6. (production) Escreva em japonês a palavra que significa "dano, prejuízo" (leitura がい).
+- **Resposta:** `{"text": "害", "accept": ["害", "がい"]}`
+- 害 tem uma única leitura, がい, e ela vale tanto sozinha quanto no fim dos compostos. Uma leitura só é boa notícia: não há o que escolher.
+
+
+### 7. (production) Escreva em japonês o verbo "apagar, desligar (a luz)" (leitura けす).
+- **Resposta:** `{"text": "消す", "accept": ["消す", "けす"]}`
+- 消 vem em par: 消す é alguém que apaga, 消える é a luz que se apaga sozinha. O す marca o lado de quem age.
+
+
+### 8. (recognition) Qual destes kanji significa "pedra, rocha"?
+- **Resposta:** `{"choices": ["石", "害", "神", "術"], "correct": "石"}`
+- 石 desenha uma pedra caída ao pé de um penhasco. Sozinho lê-se いし, a palavra do dia a dia para pedra.
+
+
+### 9. (recognition) Qual destas palavras se lê じんじゃ e nomeia o santuário xintoísta?
+- **Resposta:** `{"choices": ["神社", "会社", "警官", "違反"], "correct": "神社"}`
+- 神 lê-se かみ quando está sozinho ("deus"), mas em 神社 usa a leitura chinesa sonorizada じん. Repare no par 神社 e 会社: o mesmo 社 fecha as duas palavras, aqui como recinto sagrado, ali como empresa.
+
+
+### 10. (recognition) E qual destes kanji significa "técnica, arte, habilidade"?
+- **Resposta:** `{"choices": ["術", "警", "害", "神"], "correct": "術"}`
+- 術 tem no contorno o radical de "ir pela rua", a ideia de caminho: uma técnica é o caminho que se aprende a percorrer. Nos compostos lê-se じゅつ e quase sempre fecha a palavra.
+
+
+### 11. (production) Escreva em japonês a palavra para "policial, guarda" (leitura けいかん).
+- **Resposta:** `{"text": "警官", "accept": ["警官", "けいかん"]}`
+- 警 junta o radical da fala com a ideia de advertir: quem avisa e vigia. Com a leitura けい ele abre todo o vocabulário de polícia e alerta.
+
+
+### 12. (production) Escreva em japonês o verbo "ser diferente" (leitura ちがう).
+- **Resposta:** `{"text": "違う", "accept": ["違う", "ちがう"]}`
+- 違 carrega o radical de movimento e a ideia de sair do lugar certo: daí vêm tanto "ser diferente" quanto "errar". A base ちが reaparece igual em 間違える.
+
+

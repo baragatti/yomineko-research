@@ -116,3 +116,28 @@ Junte os dois assuntos da lição numa frase só:大人になる("virar adulto")
 - 寒い é adjetivo-い: 寒い → 寒く + なる = 寒くなる ('ficar frio / esfriar'). A forma polida 寒くなります também vale. Nada de に aqui, pois o く já ocupa esse lugar.
 
 
+### 7. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["下", "embaixo"], ["外", "fora"], ["来", "vir"], ["気", "espírito"]]}`
+- 下 é o que fica por baixo, 外 é o que fica do lado de fora, 来 é o movimento de vir na direção de quem fala e 気 é o espírito, o ânimo de alguém ou de um lugar.
+
+
+### 8. (production) Escreva em japonês a palavra que significa embaixo, a parte de baixo de alguma coisa.
+- **Resposta:** `{"text": "下", "accept": ["下", "した"]}`
+- Sozinho e lido した, 下 já é uma palavra inteira: a parte de baixo. É a leitura kun, a japonesa.
+
+
+### 9. (production) Escreva em japonês a palavra que significa país estrangeiro.
+- **Resposta:** `{"text": "外国", "accept": ["外国", "がいこく"]}`
+- 外国 (がいこく) é literalmente o país de fora. Aqui 外 usa a leitura がい, a sino-japonesa, que é a de sempre quando ele se junta a outro kanji.
+
+
+### 10. (production) Escreva em japonês, na forma de dicionário, o verbo vir.
+- **Resposta:** `{"text": "来る", "accept": ["来る", "くる"]}`
+- 来る (くる) guarda o kanji 来 e deixa o resto em kana. A leitura く só vale nessa forma: 来 muda de som conforme a conjugação, por isso o okurigana る é obrigatório.
+
+
+### 11. (production) Escreva o kanji que significa espírito, ânimo, aquele que aparece nas palavras sobre disposição e clima.
+- **Resposta:** `{"text": "気", "accept": ["気", "き"]}`
+- 気, lido き, é o kanji do ânimo. Ele quase nunca vem sozinho: mora dentro de palavras que dizem como alguém está ou como o dia está.
+
+

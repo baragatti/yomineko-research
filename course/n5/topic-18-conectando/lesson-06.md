@@ -106,3 +106,13 @@ Mnemônico de forma: imagine dois braços cruzados em X por cima de duas pernas 
 - 来週 (semana que vem) + 両親に会う (encontrar os pais) no dicionário + つもりです = 'pretendo encontrar meus pais'. A partícula に marca a pessoa que você encontra com 会う.
 
 
+### 7. (recognition) O kanji 父 aparece em 父 e em お父さん. O que ele significa?
+- **Resposta:** `{"choices": ["pai", "mãe", "amigo", "filho"], "correct": "pai"}`
+- 父 é 'pai'. As outras opções são significados de kanji que você já viu: 母 é 'mãe', 友 é 'amigo' e 子 é 'filho'.
+
+
+### 8. (production) Você está falando do seu próprio pai com um amigo. Escreva a palavra em japonês, com kanji.
+- **Resposta:** `{"text": "父", "accept": ["父", "ちち"]}`
+- Do próprio pai você fala 父 (ちち), sem お e sem さん. お父さん (おとうさん) fica para o pai dos outros e para chamar o seu.
+
+

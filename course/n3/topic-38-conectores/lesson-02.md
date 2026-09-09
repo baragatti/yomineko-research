@@ -101,3 +101,33 @@ O kanji 当 significa "acertar, apropriado, corresponder". Aparece nos verbos �
 - Dentro de uma so frase, けど gruda no fim da primeira oração (頑張った + けど) e liga ao contraste うまくいかなかった ('não deu certo'). Se fossem duas frases separadas, você comecaria a segunda com だけど.
 
 
+### 6. (recognition) O kanji 当 aparece em 本当 e no verbo 当たる. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["acertar, corresponder", "aparecer", "expressar", "esperar"], "correct": "acertar, corresponder"}`
+- 当 é acertar, bater no alvo. Em 本当 isso vira aquilo que bate com o real, ou seja, a verdade.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra "verdade".
+- **Resposta:** `{"text": "本当", "accept": ["本当", "ほんとう"]}`
+- 本当 se lê ほんとう: 本, a origem, mais 当, acertar. É o que corresponde ao real.
+
+
+### 8. (recognition) Qual destes kanji significa "aparecer, surgir"?
+- **Resposta:** `{"choices": ["現", "見", "親", "表"], "correct": "現"}`
+- 現 é aparecer. Ele carrega o 見 do lado direito: aquilo que se mostra para ser visto. 親 também esconde um 見, mas é pai, próximo; 表 é expressar.
+
+
+### 9. (production) Escreva em japonês, com kanji, o verbo "aparecer, surgir" na forma de dicionário.
+- **Resposta:** `{"text": "現れる", "accept": ["現れる", "あらわれる"]}`
+- 現れる se lê あらわれる. Só o 現 é kanji; o final fica em hiragana. É o verbo de algo que vem à tona sozinho.
+
+
+### 10. (recognition) Qual destes kanji significa "a frente, a superfície" e, por extensão, "expressar"?
+- **Resposta:** `{"choices": ["表", "外", "中", "上"], "correct": "表"}`
+- 表 é a frente, a superfície, e daí expressar: pôr para fora o que estava dentro. 外 é fora, 中 é dentro e 上 é em cima.
+
+
+### 11. (production) Escreva em japonês, com kanji, o verbo "expressar, representar" na forma de dicionário.
+- **Resposta:** `{"text": "表す", "accept": ["表す", "あらわす"]}`
+- 表す se lê あらわす. É o par transitivo de 現れる: 現れる é algo que aparece sozinho, 表す é alguém que põe algo à mostra.
+
+

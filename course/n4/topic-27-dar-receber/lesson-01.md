@@ -92,3 +92,23 @@ Resuma assim: te-ageru = faço o favor (educado, neutro); te-yaru = mesmo favor,
 - 待つ (godan em つ) → forma て 待って; + あげる = 'faço o favor de esperar por você'. Acrescentar よ deixa mais natural na fala.
 - frases: `sent:tatoeba-137941`
 
+### 6. (recognition) Qual destes kanji significa cidade pequena, vila, e se lê まち?
+- **Resposta:** `{"choices": ["町", "場", "長", "朝"], "correct": "町"}`
+- 町 é a vila, o bairro: tem 田 (arrozal) à esquerda, a cidadezinha que cresce ao lado das plantações. 場 (lugar), 長 (longo) e 朝 (manhã) também se leem ちょう.
+
+
+### 7. (production) Escreva em kanji a palavra cidade pequena, vila (まち).
+- **Resposta:** `{"text": "町", "accept": ["町", "まち"]}`
+- 町 (まち) é a cidade pequena. Dentro de endereços e nomes de bairro a leitura vira ちょう.
+
+
+### 8. (recognition) Qual destes kanji significa verdadeiro, real, e se lê しん?
+- **Resposta:** `{"choices": ["真", "新", "心", "目"], "correct": "真"}`
+- 真 é verdadeiro, real. 新 (novo) e 心 (coração) também se leem しん; 目 (olho) é justamente o elemento que aparece dentro de 真.
+
+
+### 9. (production) Escreva o kanji que significa verdadeiro, real (leitura しん).
+- **Resposta:** `{"text": "真", "accept": ["真", "しん"]}`
+- 真 tem 目 (olho) no meio: o que se vê de verdade. Lê-se しん em compostos e ま quando reforça outra palavra.
+
+

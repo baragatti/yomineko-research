@@ -88,3 +88,43 @@ O 君 (きみ) é um "você" informal e carinhoso, usado entre amigos próximos 
 - Verbo na forma simples liga direto a ふりをする (sem conector); o passado vai no する: ふりをした. 聞こえないふりをした = 'fingi que não estava ouvindo'. Em registro polido, ふりをしました.
 
 
+### 6. (matching) Ligue cada palavra ao que ela descreve no corpo ou no ânimo.
+- **Resposta:** `{"pairs": [["恐ろしい", "terrível"], ["痛い", "dolorido"], ["欲しい", "desejar"], ["息", "respiração"]]}`
+- 恐ろしい おそろしい terrível; 痛い いたい dolorido; 欲しい ほしい desejar; 息 いき respiração. Quatro kanji do que o corpo e o ânimo sentem.
+
+
+### 7. (matching) Ligue cada verbo de movimento ao seu sentido em português.
+- **Resposta:** `{"pairs": [["戻る", "voltar"], ["逃げる", "fugir"], ["越える", "atravessar"], ["探す", "procurar"]]}`
+- 戻る もどる voltar; 逃げる にげる fugir; 越える こえる atravessar; 探す さがす procurar.
+
+
+### 8. (matching) Ligue cada palavra ao seu sentido em português.
+- **Resposta:** `{"pairs": [["君", "você (informal)"], ["約束", "promessa"], ["犯人", "criminoso"], ["抱える", "carregar"], ["閉める", "fechar (algo)"]]}`
+- 君 きみ você (informal); 約束 やくそく promessa; 犯人 はんにん criminoso; 抱える かかえる carregar; 閉める しめる fechar.
+
+
+### 9. (production) Escreva em japonês o adjetivo 'querer ter alguma coisa', que se lê ほしい.
+- **Resposta:** `{"text": "欲しい", "accept": ["欲しい", "ほしい"]}`
+- 欲しい (ほしい) é um adjetivo-い, não um verbo: aquilo que se quer leva が, não を. O kanji 欲 sozinho é o desejo.
+
+
+### 10. (production) Escreva em japonês o verbo 'procurar, buscar', que se lê さがす.
+- **Resposta:** `{"text": "探す", "accept": ["探す", "さがす"]}`
+- 探す (さがす) é procurar alguma coisa que você quer achar. À esquerda do kanji está a mão, o mesmo componente de 抱える (かかえる): procurar e segurar são gestos.
+
+
+### 11. (cloze) Complete com o kanji que falta: 約___ (やくそく) é 'promessa'.
+- **Resposta:** `{"text": "束", "full": "約束"}`
+- 束 é o maço, o feixe, a ideia de amarrar. Com 約 ('acordo') forma 約束: o acordo que amarra as duas pessoas.
+
+
+### 12. (recognition) O verbo 閉める quer dizer 'fechar alguma coisa'. Como ele se lê?
+- **Resposta:** `{"choices": ["しめる", "とじる", "しまる", "たてる"], "correct": "しめる"}`
+- 閉 tem várias leituras nativas. 閉める (しめる) é fechar algo, 閉まる (しまる) é a porta que se fecha sozinha e 閉じる (とじる) serve para livros e olhos.
+
+
+### 13. (production) Escreva em japonês o adjetivo 'dolorido, que dói', que se lê いたい.
+- **Resposta:** `{"text": "痛い", "accept": ["痛い", "いたい"]}`
+- 痛い (いたい) é o que dói. O mesmo kanji forma 痛み (いたみ), a dor como substantivo, e 頭痛 (ずつう), a dor de cabeça.
+
+

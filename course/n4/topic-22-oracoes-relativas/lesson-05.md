@@ -107,3 +107,13 @@ Por exemplo: どんなアフリカ料理 = "que tipo de comida africana?".
 - 京 significa "capital" e tem a leitura きょう (kyō), como em 東京 (Tóquio) e 京都 (Quioto).
 
 
+### 7. (recognition) Qual destes kanji significa 'capital' (leitura キョウ)?
+- **Resposta:** `{"choices": ["京", "高", "立", "場"], "correct": "京"}`
+- 京 é 'capital'. Ele se parece muito com 高 (alto), porque os dois têm o mesmo telhado em cima; a diferença está embaixo, onde 京 termina em 小.
+
+
+### 8. (production) Escreva o kanji de 'capital', lido キョウ.
+- **Resposta:** `{"text": "京", "accept": ["京", "キョウ", "きょう"]}`
+- 京 vale 'capital' e carrega a leitura キョウ nos nomes de cidade. A leitura nativa みやこ significa a mesma coisa, mas soa antiga.
+
+

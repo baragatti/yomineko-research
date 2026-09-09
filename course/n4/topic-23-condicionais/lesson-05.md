@@ -93,3 +93,18 @@ A grande diferença de なら: nas outras três, a condição costuma vir antes 
 - また会える (forma de dicionário) + といいですね = 'tomara que a gente possa se ver de novo, né'. É a expressão de desejo といいです com ね para torcer junto com a pessoa.
 - frases: `sent:tatoeba-10365237`
 
+### 6. (recognition) Qual destes kanji significa 'público, oficial'?
+- **Resposta:** `{"choices": ["公", "会", "社", "国"], "correct": "公"}`
+- 公 (コウ) traz a ideia do que é público, de todos. 会 é reunir, 社 é companhia e 国 é país, todos ligados a coletivo, mas nenhum é o público em si.
+
+
+### 7. (recognition) Qual destas palavras significa 'problema, questão'?
+- **Resposta:** `{"choices": ["問題", "意見", "時間", "電話"], "correct": "問題"}`
+- 問題 (もんだい) é 問 (perguntar) mais 題 (tema): a questão que se coloca. A leitura on de 題 é ダイ e aparece em praticamente todas as palavras com esse kanji.
+
+
+### 8. (production) Diga em japonês 'não entendo este problema', na forma educada.
+- **Resposta:** `{"text": "この問題が分かりません", "accept": ["この問題が分かりません", "このもんだいがわかりません", "この問題がわかりません"]}`
+- この問題 aponta o problema de que se fala e 分かりません é a negativa educada de 分かる. Com 分かる, aquilo que se entende costuma vir marcado por が, não por を.
+
+

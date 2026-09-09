@@ -89,3 +89,13 @@ O kanji 死 tem peso emocional forte. Evite usá-lo de forma leve ou em brincade
 - 私 (わたし, eu) + は (tópico, lê-se 'wa') + 公務員 (こうむいん, funcionário público) + です (cópula educada). O kanji 私 é o 'eu' mais comum do japonês.
 
 
+### 6. (recognition) Como se lê o verbo 死ぬ, que significa 'morrer'?
+- **Resposta:** `{"choices": ["しぬ", "しる", "つかう", "おもう"], "correct": "しぬ"}`
+- 死ぬ lê-se しぬ. しる é 知る ('saber'), つかう é 使う ('usar') e おもう é 思う ('pensar'), verbos de kanji que você já viu; o primeiro deles começa igual.
+
+
+### 7. (production) Escreva em japonês o verbo que significa 'morrer', na forma de dicionário, usando o kanji novo desta lição.
+- **Resposta:** `{"text": "死ぬ", "accept": ["死ぬ", "しぬ"]}`
+- 死ぬ (しぬ) é o único verbo do japonês cuja forma de dicionário termina em ぬ, então vale guardá-lo à parte. A leitura sino-japonesa シ é a que aparece nos compostos.
+
+

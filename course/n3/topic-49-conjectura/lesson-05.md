@@ -91,3 +91,18 @@ O kanji 靴 ('sapato, calçado') aparece em 靴 ('sapato') e 靴下 ('meia'). Te
 - 頼る (たよる) é 'depender de/contar com'. A partícula に marca em quem se confia: 友達に頼る.
 
 
+### 6. (recognition) Como se lê o kanji 靴, que significa 'sapato'?
+- **Resposta:** `{"choices": ["くつ", "かみ", "くび", "くすり"], "correct": "くつ"}`
+- 靴 lê-se くつ. As outras opções são leituras de kanji já ensinados: かみ é 髪, くび é 首 e くすり é 薬.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra 'meia', a peça que se usa dentro do sapato.
+- **Resposta:** `{"text": "靴下", "accept": ["靴下", "くつした"]}`
+- 靴下 (くつした) é 'meia': 靴 ('sapato') mais 下 ('embaixo'), ou seja, o que fica debaixo do sapato.
+
+
+### 8. (production) Escreva em japonês a palavra 'cabelo', com kanji.
+- **Resposta:** `{"text": "髪", "accept": ["髪", "かみ"]}`
+- 髪 (かみ) é o cabelo da cabeça. Cuidado com os homófonos já vistos: 紙 também é かみ ('papel') e 上 tem a leitura かみ ('acima').
+
+

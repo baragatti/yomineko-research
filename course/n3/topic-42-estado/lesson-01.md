@@ -110,3 +110,73 @@ O kanji 局 significa "repartição, escritório, setor". Aparece em 郵便局 (
 - 輝く vira a forma て 輝いて + いる = 輝いている ('está brilhando', ação em curso/contínua). Na fala casual também vale 輝いてる. A partícula が marca o sujeito 星.
 
 
+### 6. (recognition) Na palavra 位置 (posição, localização), o que o kanji 位 traz?
+- **Resposta:** `{"choices": ["posição", "significado", "corpo", "morar"], "correct": "posição"}`
+- 位 é a 'posição, o grau, a colocação'. Em 位置 ele se junta a 置 (colocar) e forma o lugar onde algo está posto; a leitura aqui é い.
+
+
+### 7. (production) Escreva em japonês 'posição, localização', a palavra que junta o kanji de posição ao de colocar.
+- **Resposta:** `{"text": "位置", "accept": ["位置", "いち"]}`
+- É 位置, lido いち. Repare que os dois kanji usam aqui a leitura sino-japonesa curta: い + ち.
+
+
+### 8. (recognition) O kanji 局, lido キョク, nomeia órgãos e agências. Qual é o significado dele?
+- **Resposta:** `{"choices": ["repartição", "lugar", "loja", "casa"], "correct": "repartição"}`
+- 局 é a 'repartição, a agência': o setor de uma organização, não um lugar qualquer nem um comércio. Ele fecha o nome dessas instituições e mantém a leitura きょく.
+
+
+### 9. (production) Escreva só o kanji lido キョク que significa 'repartição, agência'.
+- **Resposta:** `{"text": "局", "accept": ["局"]}`
+- É 局, sete traços, com a 'tampa' do radical de corpo curvado por cima. Sempre que o nome de um órgão terminar em きょく, é este o kanji.
+
+
+### 10. (recognition) Em 性格 (personalidade) e 格好 (aparência), o que o kanji 格 traz?
+- **Resposta:** `{"choices": ["status", "escola", "alto", "juntar"], "correct": "status"}`
+- 格 é o 'status, a categoria, o padrão' de alguma coisa: em 性格 é o padrão do temperamento, em 格好 é o padrão da aparência. Os distratores dividem som com ele, 校 e 高 na leitura こう e 合 na leitura ごう, mas não dividem o sentido.
+
+
+### 11. (production) Escreva em japonês, com os dois kanji, a palavra 'personalidade, temperamento'.
+- **Resposta:** `{"text": "性格", "accept": ["性格", "せいかく"]}`
+- É 性格: 性 (natureza) + 格 (padrão), o padrão da natureza de alguém. Em 格好 (かっこう) esse mesmo 格 encurta para かっ.
+
+
+### 12. (recognition) Na palavra 流行 (estar na moda), qual ideia o kanji 流 carrega?
+- **Resposta:** `{"choices": ["fluir", "ir", "mar", "azul"], "correct": "fluir"}`
+- 流 é 'fluir, correr'. Repare nas três gotas de água à esquerda. 流行 é literalmente 'correr e ir', a moda que se espalha; aqui o kanji se lê りゅう.
+
+
+### 13. (production) Escreva em japonês, com os dois kanji, a palavra 'estar na moda, virar tendência'.
+- **Resposta:** `{"text": "流行", "accept": ["流行", "りゅうこう"]}`
+- É 流行, りゅうこう. Os mesmos dois kanji, lidos à moda nativa, dão o verbo 流行る (はやる), 'fazer sucesso'.
+
+
+### 14. (recognition) No verbo 疑う (うたがう), o que o kanji 疑 significa?
+- **Resposta:** `{"choices": ["duvidar", "saber", "responder", "pensar"], "correct": "duvidar"}`
+- 疑 é 'duvidar, suspeitar', o oposto exato de 知 (saber). Na leitura nativa ele fica うたが, com o okurigana う fechando o verbo.
+
+
+### 15. (production) Escreva em japonês, com kanji e okurigana, o verbo 'duvidar, pôr em dúvida'.
+- **Resposta:** `{"text": "疑う", "accept": ["疑う", "うたがう"]}`
+- É 疑う: só o う fica em kana, o resto da leitura うたが está dentro do kanji. Na leitura sino-japonesa ele vira ぎ e abre palavras como 疑問, a dúvida.
+
+
+### 16. (recognition) No verbo 置く (おく), o que o kanji 置 significa?
+- **Resposta:** `{"choices": ["colocar", "segurar", "passar", "duvidar"], "correct": "colocar"}`
+- 置 é 'colocar, pôr, deixar em algum lugar', o contrário de 持つ, que é ter na mão. É esse kanji que aparece em 位置, a posição onde algo foi posto.
+
+
+### 17. (cloze) Qual é o kanji que falta no verbo 'colocar, deixar' (おく), escrito ＿く?
+- **Resposta:** `{"text": "置", "full": "置く"}`
+- O verbo é 置く: o kanji guarda a leitura お e o okurigana く fecha. É ele que forma a estrutura 〜ておく, deixar algo feito de antemão.
+
+
+### 18. (recognition) Em 過ぎる (すぎる) e 通過 (つうか), qual é o sentido do kanji 過?
+- **Resposta:** `{"choices": ["passar (tempo)", "esperar", "adicionar", "fluir"], "correct": "passar (tempo)"}`
+- 過 é o passar: o tempo que decorre em 過ぎる e o corpo que atravessa em 通過. Repare no radical de deslocamento embaixo, o mesmo de 通.
+
+
+### 19. (production) Escreva em japonês, com kanji e okurigana, o verbo transitivo 'passar (o tempo), gastar tempo'.
+- **Resposta:** `{"text": "過ごす", "accept": ["過ごす", "すごす"]}`
+- É 過ごす, quando você passa o tempo de propósito. O par intransitivo é 過ぎる (すぎる), quando o tempo passa sozinho: mesmo kanji, okurigana diferente.
+
+

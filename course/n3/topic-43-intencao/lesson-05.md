@@ -96,3 +96,18 @@ Três palavras lidas ぜん, fáceis de confundir.
 - 全員が (todos os membros) + 会議に (na reunião) + 出席した (compareceram).
 
 
+### 6. (recognition) Qual destas palavras significa 'guerra'?
+- **Resposta:** `{"choices": ["戦争", "経済", "政治", "文化"], "correct": "戦争"}`
+- 戦争 (せんそう) é guerra: 戦 (batalhar) mais 争 (disputar), dois kanji de conflito na mesma palavra. A leitura on de 戦 é セン.
+
+
+### 7. (recognition) Qual destas palavras significa 'experiência'?
+- **Resposta:** `{"choices": ["経験", "試験", "経済", "研究"], "correct": "経験"}`
+- 経験 (けいけん) é a experiência de quem já passou por algo: 経 (passar por) mais 験 (prova, verificação). Não confunda com 試験 (しけん), que é a prova de escola.
+
+
+### 8. (production) Diga 'tenho experiência de trabalho', na forma educada.
+- **Resposta:** `{"text": "仕事の経験があります", "accept": ["仕事の経験があります", "しごとのけいけんがあります"]}`
+- 仕事の経験 liga com の o tipo de experiência, e があります diz que ela existe. Nessa palavra o kanji 経 lê-se ケイ.
+
+

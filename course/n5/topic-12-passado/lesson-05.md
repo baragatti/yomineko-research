@@ -114,3 +114,13 @@ Mnemônico de forma: imagine uma criança (o componente 子, 'filho/criança') s
 - どなた é a forma educada de 誰 ('quem'). Vem do mesmo kanji de どちら, 何方: muda só a leitura. どちら pergunta 'qual dos dois' ou 'para onde'; どなた pergunta 'quem é'. Na recepção ou no telefone, どなたですか soa bem mais cortês do que 誰ですか.
 
 
+### 8. (recognition) O kanji 学 aparece em 学生 e em 大学. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["estudo, aprender", "pessoa, gente", "grande, amplo", "vida"], "correct": "estudo, aprender"}`
+- 学 é o kanji do estudo: ele está em 学生, o estudante, e em 大学, literalmente o estudo maior. Os outros três também aparecem nessas palavras, mas com outros papéis.
+
+
+### 9. (production) Escreva em japonês, com kanji, a palavra "universidade".
+- **Resposta:** `{"text": "大学", "accept": ["大学", "だいがく"]}`
+- 大学 se lê だいがく e junta 大 com 学: o lugar do estudo maior. Serve tanto para universidade quanto para faculdade.
+
+

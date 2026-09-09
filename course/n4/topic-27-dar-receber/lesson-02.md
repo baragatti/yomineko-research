@@ -98,3 +98,28 @@ Quatro kanji que aparecem muito em serviços e pedidos.
 - 店員 + が (quem faz o favor é o sujeito) + お釣り + を + 渡して (て-forma de 渡す) + くれた ('me deu, para o meu lado'). Como o favor chega até mim, escolhemos くれる, não あげる.
 
 
+### 6. (recognition) Qual destes kanji significa 'possível, aceitável' e se lê カ nos compostos de permissão?
+- **Resposta:** `{"choices": ["可", "何", "右", "古"], "correct": "可"}`
+- 可 é o 口 ('boca') com uma linha e um gancho em cima: a boca que aprova, que diz 'pode'. Repare que 何 é justamente 可 com uma pessoa do lado esquerdo.
+
+
+### 7. (recognition) Todos estes kanji trazem 心 ('coração'). Qual deles significa 'apressar-se, urgente'?
+- **Resposta:** `{"choices": ["急", "思", "意", "心"], "correct": "急"}`
+- 急 põe 心 embaixo de uma mão que agarra: o coração acelerado de quem tem pressa. A leitura キュウ é a que aparece tanto no sentido de 'de repente' quanto no nome do trem expresso.
+
+
+### 8. (recognition) 止まる (とまる), 止める (やめる) e 止む (やむ) usam o mesmo kanji 止. Que sentido esse kanji carrega nos três?
+- **Resposta:** `{"choices": ["parar", "correto", "pé", "quatro"], "correct": "parar"}`
+- 止 é a pegada de um pé parado no chão, e por isso ele aparece dentro de 正 e de 足. Quem separa os três verbos é o okurigana: 止まる é a coisa que para sozinha, 止める é largar uma atividade e 止む é a chuva ou o vento que cessa.
+
+
+### 9. (production) Escreva em japonês, com kanji, o verbo que significa 'parar' quando é a própria coisa que para (o ônibus no ponto) e se lê とまる.
+- **Resposta:** `{"text": "止まる", "accept": ["止まる", "とまる"]}`
+- 止まる é o lado intransitivo: ninguém age, a coisa simplesmente para. O kanji 止 fica igual e só o okurigana muda quando você quer o outro sentido.
+
+
+### 10. (recognition) Todos estes kanji trazem embaixo, à esquerda, o radical do caminho. Qual deles significa 'enviar, mandar'?
+- **Resposta:** `{"choices": ["送", "通", "道", "近"], "correct": "送"}`
+- 送 carrega alguma coisa pela estrada, com o mesmo radical que aparece em 通 e em 道. A leitura nativa おく faz o verbo de mandar algo, e ソウ abre o vocabulário de transporte e entrega.
+
+

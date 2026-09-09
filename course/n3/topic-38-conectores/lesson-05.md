@@ -92,3 +92,18 @@ E os dois kanji desta lição, ambos ligados a governo e debate:
 - 夜は (à noite) + クラシックを (música clássica, objeto) + 聞く (ouvir).
 
 
+### 6. (recognition) Em 会議 ("reunião"), qual é a leitura do kanji 議?
+- **Resposta:** `{"choices": ["ギ", "キ", "ジ", "シ"], "correct": "ギ"}`
+- 議 é "discutir, deliberar" e se lê ギ: 会議 (かいぎ) é o encontro onde se delibera. Ele traz o radical da fala à esquerda, o mesmo de 話 e 語, que sozinho é o kanji 言. As outras opções são leituras de 気 (キ), 時 (ジ) e 四 (シ).
+
+
+### 7. (production) Escreva em japonês "sala de reunião" (かいぎしつ), com os kanji.
+- **Resposta:** `{"text": "会議室", "accept": ["会議室", "かいぎしつ"]}`
+- 会議室 encadeia 会 ("encontrar"), 議 ("deliberar") e 室 ("sala"): a sala onde se reúne. Tirando 室, sobra 会議 (かいぎ), a reunião em si.
+
+
+### 8. (recognition) Qual destes kanji significa "política, governo" e se lê セイ nos compostos?
+- **Resposta:** `{"choices": ["政", "西", "生", "教"], "correct": "政"}`
+- 政 é "política, governo" e se lê セイ. 西 e 生 também se leem セイ, mas querem dizer "oeste" e "vida"; 教 ("ensinar") é o kanji que divide com 政 o mesmo radical à direita.
+
+

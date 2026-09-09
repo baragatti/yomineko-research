@@ -115,3 +115,23 @@ Encadeando as três fases num dia de viagem:特急に乗るところです(estou
 - 都 (capital) + に (destino) + 着いた (cheguei, passado) + ところだ/です = 'acabei de chegar à capital'. O 〜た antes de ところ marca a chegada recém-concluída.
 
 
+### 7. (recognition) Em 地図 (mapa), como se lê o kanji 図?
+- **Resposta:** `{"choices": ["ズ", "チ", "ジ", "シュ"], "correct": "ズ"}`
+- Em 地図 o 図 fica com a leitura on ズ, e 地 com チ: ちず. ズ é a leitura mais comum de 図 em palavras compostas.
+
+
+### 8. (production) Escreva em japonês "mapa", com os kanji 地 e 図 e a leitura ちず.
+- **Resposta:** `{"text": "地図", "accept": ["地図", "ちず"]}`
+- 地図 é o desenho (図) do terreno (地). O 図 sozinho já quer dizer diagrama, figura.
+
+
+### 9. (recognition) Qual é o significado do kanji 室?
+- **Resposta:** `{"choices": ["sala", "casa", "lugar", "barato"], "correct": "sala"}`
+- 室 é a sala, o cômodo. Ele reparte o mesmo telhado com 家 (casa) e 安 (barato), e sua leitura on シツ aparece em 教室 (sala de aula).
+
+
+### 10. (production) Escreva em japonês "sala de aula", com os kanji 教 e 室 e a leitura きょうしつ.
+- **Resposta:** `{"text": "教室", "accept": ["教室", "きょうしつ"]}`
+- 教室 é a sala (室) onde se ensina (教). Os dois kanji entram com a leitura on, e o resultado é きょうしつ.
+
+

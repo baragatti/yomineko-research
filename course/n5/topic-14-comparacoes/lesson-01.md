@@ -109,3 +109,13 @@ O kanji 小 significa pequeno, reduzido. Suas leituras principais são ちい (e
 - Diferente do português, não há um 'mais' avulso: 速い já significa 'rápido', e o sentido comparativo nasce do par より…のほうが. O adjetivo não muda de forma.
 
 
+### 7. (recognition) Em 小さい ("pequeno"), como se lê a parte escrita com kanji?
+- **Resposta:** `{"choices": ["ちい", "おお", "たか", "なが"], "correct": "ちい"}`
+- 小さい se lê ちいさい: o kanji carrega ちい e a terminação さい fica em hiragana. As outras opções são as leituras nativas de 大 (おお), 高 (たか) e 長 (なが), os adjetivos de tamanho com que 小さい costuma ser comparado.
+
+
+### 8. (production) Escreva em japonês o adjetivo "pequeno" (ちいさい), usando o kanji.
+- **Resposta:** `{"text": "小さい", "accept": ["小さい", "ちいさい"]}`
+- 小さい: o kanji 小 guarda a raiz ちい e a terminação さい vai em hiragana. Guarde o par: 小さな, com な, faz o mesmo trabalho quando vem antes de um substantivo.
+
+

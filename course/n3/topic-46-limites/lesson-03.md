@@ -105,3 +105,18 @@ Faça os exercícios abaixo e confira cada explicação.
 - Adjetivo-い na estrutura proporcional: condicional 高ければ + 高い + ほど. 高ければ高いほどいい = 'quanto mais caro, melhor'.
 
 
+### 6. (recognition) Qual destes kanji significa 'quebrar, romper'?
+- **Resposta:** `{"choices": ["降", "破", "支", "友"], "correct": "破"}`
+- 破 é quebrar, rasgar, romper. À esquerda dele está 石 ('pedra'), e a imagem é a de algo duro que se parte. É a única das quatro opções com 石, então dá para achá-lo de longe.
+
+
+### 7. (recognition) No verbo 降る, que fala da chuva caindo, como se lê o kanji 降?
+- **Resposta:** `{"choices": ["ふ", "お", "こう", "くだ"], "correct": "ふ"}`
+- 降 tem duas leituras nativas de uso diário: 降る (ふる) é cair, para chuva e neve, e 降りる (おりる) é descer de um veículo. こう é a leitura chinesa, que fica para os compostos.
+
+
+### 8. (production) Escreva em japonês o verbo 'descer (de um veículo)', que se lê おりる.
+- **Resposta:** `{"text": "降りる", "accept": ["降りる", "おりる"]}`
+- 降りる (おりる) é descer do trem, do ônibus, do carro. É o mesmo kanji de 降る (ふる), mas com outro okurigana e outro sentido, então vale prestar atenção no que vem depois do kanji.
+
+

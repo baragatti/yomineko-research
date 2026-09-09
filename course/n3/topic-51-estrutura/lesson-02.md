@@ -115,3 +115,28 @@ O kanji 才 significa "talento" e também conta "anos de idade" (五才, "cinco 
 - A frase 日本語が上達する ('progredir no japonês') é empacotada por こと para virar substantivo, recebe を como objeto e fecha com 信じる ('acredito'). O verbo principal vai no fim, como sempre em japonês.
 
 
+### 7. (recognition) O adjetivo 忙しい se lê いそがしい. O que ele significa?
+- **Resposta:** `{"choices": ["ocupado, atarefado", "cansado", "com sono", "alegre"], "correct": "ocupado, atarefado"}`
+- 忙しい é estar sem tempo, com a agenda cheia. O kanji 忙 traz o coração 心 do lado esquerdo, na forma estreita: um coração que se perde de tanta coisa.
+
+
+### 8. (recognition) Na palavra 才能 (talento, dom), como se lê o kanji 才?
+- **Resposta:** `{"choices": ["サイ", "ザイ", "シ", "セイ"], "correct": "サイ"}`
+- 才 tem uma leitura só, サイ, e ela abre 才能 (さいのう), o talento. O mesmo サイ serve de contador de idade.
+
+
+### 9. (production) Escreva em japonês, com kanji, o verbo que significa 'cansar-se' e se lê つかれる.
+- **Resposta:** `{"text": "疲れる", "accept": ["疲れる", "つかれる"]}`
+- 疲れる é ficar cansado. O kanji 疲 fica dentro do radical de doença, o mesmo de 病; o substantivo 疲れ (つかれ) é o cansaço.
+
+
+### 10. (recognition) No adjetivo 眠い (com sono), como se lê o kanji 眠?
+- **Resposta:** `{"choices": ["ねむ", "ね", "み", "ねが"], "correct": "ねむ"}`
+- 眠 se lê ねむ: 眠い (ねむい) é estar com sono e 眠る (ねむる) é dormir. O kanji tem 目 (olho) do lado esquerdo, o olho que vai fechando.
+
+
+### 11. (matching) Ligue cada palavra ao seu significado.
+- **Resposta:** `{"pairs": [["忙しい", "ocupado, atarefado"], ["才能", "talento, dom"], ["眠る", "dormir"], ["疲れ", "cansaço"]]}`
+- Quatro kanji novos em palavras que descrevem como a pessoa está: 忙 (ocupado), 才 (talento), 眠 (dormir) e 疲 (cansado).
+
+

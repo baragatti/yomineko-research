@@ -98,3 +98,13 @@ Três kanji ligados à natureza e às estações, que casam com o らしい de "
 - 世界 (mundo) + は + 終わる (acabar, forma simples) + のだろうか (será que...?). É uma reflexão em voz alta, não uma pergunta dirigida a outra pessoa.
 
 
+### 6. (recognition) O kanji 秋 funciona sozinho como o nome de uma estação. Qual é a leitura dele nesse uso?
+- **Resposta:** `{"choices": ["あき", "はる", "なつ", "ふゆ"], "correct": "あき"}`
+- 秋 põe 火 ('fogo') ao lado do pé de arroz: o arroz maduro e as folhas cor de fogo. Sozinho ele é あき, 'outono', o par de 春 (はる), que esta lição apresenta junto. As outras opções são as estações que faltam, なつ e ふゆ.
+
+
+### 7. (production) Escreva em japonês, com kanji, o nome da estação que significa 'outono' e se lê あき.
+- **Resposta:** `{"text": "秋", "accept": ["秋", "あき"]}`
+- 秋 sozinho já é a palavra あき. O kanji também tem a leitura sino-japonesa シュウ, mas nenhuma palavra deste banco a usa, então あき é a única que você precisa guardar por enquanto.
+
+

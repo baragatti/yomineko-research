@@ -93,3 +93,23 @@ Palavras que combinam com cenas que a gente observa e interpreta:
 - Estrutura [conclusão] とみえて、[o que vejo]: 寒い (conclusão) + とみえて + みんなコートを着ている (a evidência). Você infere o frio a partir dos casacos que vê.
 
 
+### 6. (recognition) Na palavra 八百屋 (quitanda), qual é a leitura do kanji 屋?
+- **Resposta:** `{"choices": ["や", "てん", "しつ", "いん"], "correct": "や"}`
+- No fim do nome de um estabelecimento, 屋 lê-se や e funciona como o nosso sufixo -eiro: 八百屋 é o verdureiro. As opções erradas são as leituras de 店 (てん), 室 (しつ) e 院 (いん).
+
+
+### 7. (production) Escreva em japonês a palavra que significa terraço, a cobertura no alto de um prédio.
+- **Resposta:** `{"text": "屋上", "accept": ["屋上", "おくじょう"]}`
+- 屋上 (おくじょう) é o telhado 屋 mais o em cima 上. Repare que aqui 屋 não é や, e sim おく: é a leitura que ele assume quando abre a palavra.
+
+
+### 8. (recognition) O que significa o kanji 館?
+- **Resposta:** `{"choices": ["edifício", "loja", "sala", "instituição"], "correct": "edifício"}`
+- 館 é o edifício grande, o salão que abriga alguma coisa. As outras opções são o sentido de 店 (loja), 室 (sala) e 院 (instituição).
+
+
+### 9. (production) Escreva em japonês a palavra que significa biblioteca.
+- **Resposta:** `{"text": "図書館", "accept": ["図書館", "としょかん"]}`
+- 図書館 (としょかん) fecha com 館 na leitura かん, que é a de sempre. Vale como regra prática: prédio público terminado em かん costuma terminar em 館.
+
+

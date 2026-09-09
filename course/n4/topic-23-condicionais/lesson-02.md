@@ -101,3 +101,23 @@ Juntando tudo numa conversa: você pergunta 何をしたらいいですか ("o q
 - 何 (o quê) + を + 食べたら (se comer, de 食べる) + いいですか = "o que eu devo comer?". É o esqueleto [pergunta] + verbo たら + いいですか para pedir conselho.
 - frases: `sent:tatoeba-187548`
 
+### 7. (recognition) Em 今度 ('desta vez') e em もう一度 ('mais uma vez'), como se lê o kanji 度?
+- **Resposta:** `{"choices": ["ど", "かい", "だい", "じ"], "correct": "ど"}`
+- Nos dois compostos 度 entra com a leitura sino-japonesa ど: 今度 (こんど) e もう一度 (もういちど). O sentido é 'vez, ocasião'.
+
+
+### 8. (production) Escreva em japonês 'desta vez' (a ocasião que vem agora), com kanji.
+- **Resposta:** `{"text": "今度", "accept": ["今度", "こんど"]}`
+- 今度 (こんど) junta 今 ('agora') e 度 ('vez'): a vez que vem agora. Serve tanto para 'desta vez' quanto para 'da próxima vez', e quem decide é o contexto.
+
+
+### 9. (recognition) 用事 significa 'compromisso, afazer'. Como se lê o kanji 用 nessa palavra?
+- **Resposta:** `{"choices": ["よう", "どう", "こう", "じゅう"], "correct": "よう"}`
+- 用 lê-se よう nesse composto: 用事 (ようじ). As outras são leituras de kanji já ensinados: どう de 道, こう de 行 e じゅう de 十.
+
+
+### 10. (production) Escreva em japonês, com kanji, a palavra 'afazer, compromisso', aquilo que você precisa resolver.
+- **Resposta:** `{"text": "用事", "accept": ["用事", "ようじ"]}`
+- 用事 (ようじ) é o compromisso concreto: 用 ('tarefa') mais 事 ('coisa, assunto').
+
+

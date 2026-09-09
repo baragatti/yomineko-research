@@ -92,3 +92,13 @@ O adjetivo 細かい (pequeno, miúdo) aparece bastante em casa: para falar de �
 - 乾く é intransitivo (a coisa seca sozinha), então オーバー é o sujeito e leva が. No passado educado: 乾く → 乾きました. (O par transitivo seria 乾かす, 'secar algo', com を.)
 
 
+### 6. (recognition) Em 品物 (しなもの), qual é o sentido do kanji 品?
+- **Resposta:** `{"choices": ["mercadoria, artigo", "coisa, objeto", "vender", "usar, empregar"], "correct": "mercadoria, artigo"}`
+- 品 é feito de três caixinhas empilhadas, como mercadoria na prateleira. O 物 ao lado é o "coisa" genérico; juntos formam "artigo, produto".
+
+
+### 7. (production) Escreva em japonês a palavra para "mercadoria, artigo, produto" (leitura しなもの).
+- **Resposta:** `{"text": "品物", "accept": ["品物", "しなもの"]}`
+- Aqui 品 usa a leitura nativa しな e 物 usa もの. Nos compostos só de leitura chinesa, 品 vira ひん e costuma fechar a palavra.
+
+

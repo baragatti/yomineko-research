@@ -111,3 +111,43 @@ Quatro kanji para fixar, três deles ligados a números e direções.
 - 夏休み (férias de verão) + が (marca o desejado) + ほしいです (querer, educado). Lembre: com ほしい a coisa vem sempre com が. Sem です fica casual, e também é aceito.
 
 
+### 6. (recognition) Como se lê 七つ, 'sete (coisas)'?
+- **Resposta:** `{"choices": ["ななつ", "いつつ", "いくつ", "なつ"], "correct": "ななつ"}`
+- Na contagem nativa 七 se lê なな e ganha o okurigana つ: ななつ. Cuidado com いつつ (cinco coisas) e com いくつ (quantos?), que seguem exatamente o mesmo molde.
+
+
+### 7. (production) Escreva em japonês 'sete (coisas)', ななつ, usando o kanji do número.
+- **Resposta:** `{"text": "七つ", "accept": ["七つ", "ななつ"]}`
+- 七つ é a contagem nativa de sete. O mesmo kanji lido シチ dá o número solto 七 (しち), o das horas e dos telefones.
+
+
+### 8. (recognition) Como se lê 北, o ponto cardeal 'norte'?
+- **Resposta:** `{"choices": ["きた", "した", "うた", "かた"], "correct": "きた"}`
+- Sozinho, 北 usa a leitura nativa きた. A leitura sino-japonesa ホク fica guardada para os compostos, que vêm mais adiante.
+
+
+### 9. (production) Escreva em japonês 'norte', きた, com o kanji.
+- **Resposta:** `{"text": "北", "accept": ["北", "きた"]}`
+- 北 desenha duas pessoas de costas uma para a outra, dando as costas ao sol do sul. Como palavra solta ele é きた.
+
+
+### 10. (recognition) Como se lê 午前, 'de manhã' (antes do meio-dia)?
+- **Resposta:** `{"choices": ["ごぜん", "ごはん", "ぜんぶ", "じぶん"], "correct": "ごぜん"}`
+- 午 traz a leitura sino-japonesa ゴ e 前 traz ぜん: ごぜん, 'antes do meio-dia'. O 午 sozinho quase não aparece: ele vive nesses dois compostos.
+
+
+### 11. (production) Escreva em japonês 'à tarde, depois do meio-dia', ごご.
+- **Resposta:** `{"text": "午後", "accept": ["午後", "ごご"]}`
+- 午 (meio-dia) mais 後 (depois) dá 午後, a tarde. Trocando 後 por 前 você tem 午前, a manhã, com o mesmo 午 nos dois.
+
+
+### 12. (recognition) Qual destes kanji significa 'cem' (leitura ヒャク)?
+- **Resposta:** `{"choices": ["百", "十", "九", "六"], "correct": "百"}`
+- 百 é 'cem'. Os outros três também são números (十 dez, 九 nove e 六 seis), mas de outra ordem de grandeza.
+
+
+### 13. (production) Escreva o kanji do número 'cem', lido ヒャク.
+- **Resposta:** `{"text": "百", "accept": ["百", "ヒャク", "ひゃく"]}`
+- 百 se lê ヒャク e é o cem que aparece em preços e contagens. Repare que ele nasce de um traço a mais sobre o kanji de 'branco'.
+
+

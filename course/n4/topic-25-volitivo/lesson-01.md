@@ -122,3 +122,23 @@ E alguns substantivos úteis do tópico:
 - A volitiva casual 始めよう soa íntima demais para quem você não conhece bem. Com colegas mais distantes ou superiores, use a forma polida 〜ましょう. 始めるよう nem é forma volitiva.
 
 
+### 7. (matching) Relacione cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["元", "origem, fonte"], ["別", "separado, diferente"], ["知", "saber, conhecer"], ["考", "pensar, considerar"]]}`
+- 元 é a origem de onde algo vem; 別 marca o que está apartado do resto; 知 é o saber que se recebe de fora; 考 é o pensar que se elabora por dentro. Os dois últimos são os kanji de cabeça do grupo: um para o que já se sabe, outro para o que ainda se está pensando.
+
+
+### 8. (production) Escreva em japonês "bem (de saúde), saudável" (げんき), usando o kanji novo desta lição.
+- **Resposta:** `{"text": "元気", "accept": ["元気", "げんき"]}`
+- 元気 junta 元 ("origem, fonte") a 気 ("ânimo"): a energia ainda na origem, ou seja, estar bem. A leitura de 元 aqui é ゲン.
+
+
+### 9. (production) Escreva em japonês o verbo "saber, conhecer" (しる), usando o kanji.
+- **Resposta:** `{"text": "知る", "accept": ["知る", "しる"]}`
+- 知る tem o kanji 知 com a leitura nativa し e a terminação る em hiragana. O par 知らせる (しらせる) é o mesmo kanji no sentido de "fazer saber", isto é, avisar.
+
+
+### 10. (production) Escreva em japonês "outro, à parte" (べつ), com o kanji.
+- **Resposta:** `{"text": "別", "accept": ["別", "べつ"]}`
+- 別 (べつ) marca o que fica separado do resto. A leitura ベツ é a chinesa; o radical de faca à direita ajuda a lembrar de algo cortado ao meio.
+
+

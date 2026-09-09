@@ -105,3 +105,18 @@ Resolva os exercícios e leia cada explicação com calma.
 - 必ずしも + 幸せ (adjetivo-な/substantivo) + とは限らない relativiza a generalização: 'não necessariamente feliz', deixando espaço para exceções.
 
 
+### 6. (matching) Ligue cada kanji ao seu significado.
+- **Resposta:** `{"pairs": [["彼", "ele"], ["捕", "pegar"], ["殺", "matar"], ["危", "perigoso"]]}`
+- 彼 é 'ele' e reaparece em 彼女 ('ela'); 捕 é pegar, como em 捕まえる; 殺 é matar; 危 é perigoso, o kanji de 危ない.
+
+
+### 7. (production) Escreva em japonês o pronome 'ela', com kanji.
+- **Resposta:** `{"text": "彼女", "accept": ["彼女", "かのじょ"]}`
+- 彼女 (かのじょ) é 'ela'; 彼 (かれ) sozinho é 'ele'. O mesmo 彼 está em 彼ら ('eles').
+
+
+### 8. (production) Escreva em japonês o verbo transitivo 'pegar, agarrar' que faz par com 捕まる, na forma de dicionário.
+- **Resposta:** `{"text": "捕まえる", "accept": ["捕まえる", "つかまえる"]}`
+- 捕まえる é transitivo: alguém pega algo ou alguém. 捕まる é o intransitivo, 'ser pego', com o mesmo kanji 捕 e outro okurigana.
+
+

@@ -97,3 +97,23 @@ Por fim, 無 significa "nada / nenhum / inexistência" (leituras な.い, on ム
 - Como HÁ um agente (você) agindo sobre a porta, use o transitivo 開ける com を: ドアを開けました. Não use 開く aqui: ドアを開く mistura objeto com を e verbo intransitivo, o que soa errado.
 - frases: `sent:gen-5c7d35fc5548`
 
+### 6. (matching) Ligue cada verbo ao seu sentido. Três acontecem por si; um tem alguém fazendo.
+- **Resposta:** `{"pairs": [["始まる", "iniciar-se"], ["終わる", "terminar"], ["無くなる", "sumir"], ["無くす", "perder"]]}`
+- 始まる, 終わる e 無くなる são intransitivos: a coisa começa, termina ou some sozinha. 無くす é o transitivo do último par, em que alguém perde algo marcado por を. O kanji não muda: quem muda o sentido é o okurigana.
+
+
+### 7. (production) No par 始まる / 始める, escreva em japonês, na forma de dicionário, o verbo transitivo: aquele em que alguém começa alguma coisa.
+- **Resposta:** `{"text": "始める", "accept": ["始める", "はじめる"]}`
+- 始める é o lado transitivo: alguém começa alguma coisa, marcada por を. 始まる é o intransitivo, em que a coisa começa por si.
+
+
+### 8. (production) Escreva em japonês o verbo 'terminar, acabar' que faz par com 始まる, na forma de dicionário.
+- **Resposta:** `{"text": "終わる", "accept": ["終わる", "おわる"]}`
+- 終わる é 'acabar' visto de dentro: a coisa termina sozinha. O kanji 終 traz o sentido de fim, e わる é o okurigana que fecha o verbo.
+
+
+### 9. (production) Escreva em japonês o verbo transitivo 'perder, extraviar' que faz par com 無くなる, na forma de dicionário.
+- **Resposta:** `{"text": "無くす", "accept": ["無くす", "なくす"]}`
+- 無くす é transitivo: alguém perde alguma coisa, marcada por を. Já 無くなる é intransitivo, e nele a coisa some sem culpado. O 無 é a mesma ausência nos dois.
+
+

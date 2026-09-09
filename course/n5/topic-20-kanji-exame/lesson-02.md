@@ -41,3 +41,48 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 ---
 
 ## Exercícios
+### 1. (recognition) Qual destas palavras significa 'jornal'?
+- **Resposta:** `{"choices": ["新聞", "本", "話", "名前"], "correct": "新聞"}`
+- 新聞 (しんぶん) junta 新 (novo) e 聞 (ouvir): o que se ouve de novo, ou seja, a notícia. Aqui 新 usa a leitura on シン.
+
+
+### 2. (recognition) Qual destes kanji significa 'olho'?
+- **Resposta:** `{"choices": ["目", "日", "口", "手"], "correct": "目"}`
+- 目 (め) é olho. Cuidado com 日 (dia), muito parecido no traçado: 目 tem duas linhas internas e 日 tem só uma.
+
+
+### 3. (recognition) Qual destas palavras significa 'empresa'?
+- **Resposta:** `{"choices": ["会社", "学校", "大学", "店"], "correct": "会社"}`
+- 会社 (かいしゃ) é empresa: 会 (reunir) mais 社, que aqui vale companhia. A leitura on de 社 é シャ.
+
+
+### 4. (recognition) Qual destes kanji se lê そら e significa 'céu'?
+- **Resposta:** `{"choices": ["空", "雨", "山", "川"], "correct": "空"}`
+- 空 (そら) é o céu. O mesmo kanji também carrega a ideia de vazio, que é justamente o que o céu tem de sobra.
+
+
+### 5. (recognition) Qual destes verbos significa 'ficar de pé, levantar-se'?
+- **Resposta:** `{"choices": ["立つ", "休む", "行く", "見る"], "correct": "立つ"}`
+- 立つ (たつ) é ficar de pé. O kanji 立 desenha uma pessoa firmada sobre uma linha do chão.
+
+
+### 6. (recognition) Qual destes kanji significa 'orelha, ouvido'?
+- **Resposta:** `{"choices": ["耳", "聞", "口", "手"], "correct": "耳"}`
+- 耳 (みみ) é a orelha, o órgão em si. O verbo ouvir, 聞く, traz esse mesmo 耳 dentro do kanji, e é justamente aí que os dois se confundem.
+
+
+### 7. (recognition) Qual destes kanji significa 'flor'?
+- **Resposta:** `{"choices": ["花", "木", "空", "山"], "correct": "花"}`
+- 花 (はな) é flor. Os traços curtos no alto do kanji são o sinal de planta, presente em muitos kanji de vegetais e flores.
+
+
+### 8. (recognition) Qual destes verbos significa 'dizer, falar'?
+- **Resposta:** `{"choices": ["言う", "読む", "聞く", "見る"], "correct": "言う"}`
+- 言う (いう) é dizer. O kanji 言 tem a boca embaixo e as linhas da fala saindo dela, e reaparece em quase toda palavra ligada a falar.
+
+
+### 9. (matching) Associe cada palavra ao seu significado em pt-BR.
+- **Resposta:** `{"pairs": [["空", "céu"], ["立つ", "ficar de pé, levantar-se"], ["耳", "orelha, ouvido"], ["花", "flor"]]}`
+- 空 (そら) céu, 立つ (たつ) ficar de pé, 耳 (みみ) orelha e 花 (はな) flor. São quatro kanji deste bloco nas palavras mais diretas que os usam.
+
+

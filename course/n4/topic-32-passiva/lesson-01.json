@@ -2191,8 +2191,154 @@
         "pt-BR": "Quando o foco é só o resultado e não importa quem agiu, o japonês prefere o intransitivo 見つかる ('ser encontrado'): 鍵が見つかった. Não é preciso uma passiva aqui."
       },
       "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-6",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual é o significado do kanji 夏 (なつ)?"
+      },
+      "answer": {
+        "choices": [
+          "verão",
+          "primavera",
+          "outono",
+          "vento"
+        ],
+        "correct": "verão"
+      },
+      "explanation": {
+        "pt-BR": "夏 é o 'verão', lido なつ. Ele abre palavras do dia a dia do calor, como 夏休み (なつやすみ), as férias de verão."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-7",
+      "type": "production",
+      "prompt": {
+        "pt-BR": "Escreva em japonês 'férias de verão', juntando o kanji do verão à palavra de descanso, 休み."
+      },
+      "answer": {
+        "text": "夏休み",
+        "accept": [
+          "夏休み",
+          "なつやすみ"
+        ]
+      },
+      "explanation": {
+        "pt-BR": "夏休み é 夏 (verão) + 休み (descanso), e as duas partes ficam na leitura nativa: なつ + やすみ. O mesmo molde vale para as férias de outras estações."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-8",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Em 夕方 (ゆうがた, fim de tarde), o que o kanji 夕 traz?"
+      },
+      "answer": {
+        "choices": [
+          "entardecer",
+          "manhã",
+          "noite",
+          "meio-dia"
+        ],
+        "correct": "entardecer"
+      },
+      "explanation": {
+        "pt-BR": "夕 é o 'entardecer', a hora em que a tarde vira noite, e se lê ゆう. Ele abre todas as palavras desse momento do dia."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-9",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Qual é o kanji que falta em 'fim de tarde' (ゆうがた), escrito ＿方?"
+      },
+      "answer": {
+        "text": "夕",
+        "full": "夕方"
+      },
+      "explanation": {
+        "pt-BR": "夕方 é 夕 (entardecer) + 方 (lado, direção): literalmente 'o lado do entardecer'. O primeiro kanji é o que você precisa escrever, lido ゆう."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-10",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Nos nomes dos dias (月曜日, 火曜日, 水曜日), o que o kanji do meio, 曜, marca?"
+      },
+      "answer": {
+        "choices": [
+          "dia da semana",
+          "dia",
+          "lua",
+          "fogo"
+        ],
+        "correct": "dia da semana"
+      },
+      "explanation": {
+        "pt-BR": "曜 é o 'dia da semana' e fica sempre no meio, lido よう. Quem diz qual dia é o kanji da frente (月, 火, 水) e 日 fecha a palavra."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-11",
+      "type": "cloze",
+      "prompt": {
+        "pt-BR": "Qual é o kanji que falta em 'segunda-feira' (げつようび), escrita 月＿日?"
+      },
+      "answer": {
+        "text": "曜",
+        "full": "月曜日"
+      },
+      "explanation": {
+        "pt-BR": "Todo dia da semana tem a mesma forma: elemento + 曜 + 日. Aqui é 月曜日 (げつようび), e o que faltava era o 曜 do meio."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-12",
+      "type": "recognition",
+      "prompt": {
+        "pt-BR": "Qual é o significado do kanji 服 (ふく)?"
+      },
+      "answer": {
+        "choices": [
+          "roupa",
+          "vestir",
+          "corpo",
+          "cor"
+        ],
+        "correct": "roupa"
+      },
+      "explanation": {
+        "pt-BR": "服 é a 'roupa': a peça em si, não o ato de vestir, que é 着る. Ele mantém a leitura ふく sozinho e nos compostos de vestuário."
+      },
+      "sentence_refs": []
+    },
+    {
+      "id": "ex:n4-passiva-01-13",
+      "type": "production",
+      "prompt": {
+        "pt-BR": "Escreva em japonês, com kanji, a palavra 'roupa'."
+      },
+      "answer": {
+        "text": "服",
+        "accept": [
+          "服",
+          "ふく"
+        ]
+      },
+      "explanation": {
+        "pt-BR": "É 服, oito traços, lido ふく. Sozinho ele já é a palavra 'roupa'; nos compostos de vestuário ele fica no fim, com a mesma leitura."
+      },
+      "sentence_refs": []
     }
   ],
-  "body": "<heading level=\"2\"><text>A voz passiva: 〜れる・られる</text></heading>\n\n<p><text>Até agora suas frases falavam de quem</text><text weight=\"bold\"> faz</text><text> a ação. Nesta lição o holofote muda de lugar: a </text><grammar ref=\"gram:ukemi-kei\"/><text>(lê-se </text><emphasis>ukemi-kei</emphasis><text>) coloca no centro quem</text><text weight=\"bold\"> recebe</text><text> ou</text><text weight=\"bold\"> sofre</text><text> a ação. É a mesma ideia do nosso \"foi elogiado\", \"levou uma bronca\", \"foi cortada\". A peça que faz isso é o sufixo </text><grammar ref=\"gram:gp-63\"/><text>.</text></p>\n\n<heading level=\"3\"><text>Como se forma</text></heading>\n<p><text>A passiva depende do grupo do verbo:</text></p>\n<list ordered=\"false\">\n <item><text weight=\"bold\">Verbos ichidan (る):</text><text> tire </text><jp>る</jp><text> e acrescente </text><jp>られる</jp><text>:</text><jp reading=\"たべる\">食べる</jp><text>→</text><jp reading=\"たべられる\">食べられる</jp><text>(\"ser comido\");</text><jp reading=\"ほめる\">褒める</jp><text>→</text><jp reading=\"ほめられる\">褒められる</jp><text>(\"ser elogiado\").</text></item>\n <item><text weight=\"bold\">Verbos godan (う):</text><text> troque o som final da fila </text><emphasis>-u</emphasis><text> pela fila </text><emphasis>-a</emphasis><text> e some </text><jp>れる</jp><text>:</text><jp reading=\"よむ\">読む</jp><text>→</text><jp reading=\"よまれる\">読まれる</jp><text>;</text><jp reading=\"しかる\">叱る</jp><text>→</text><jp reading=\"しかられる\">叱られる</jp><text>;</text><jp reading=\"よぶ\">呼ぶ</jp><text>→</text><jp reading=\"よばれる\">呼ばれる</jp><text>.</text></item>\n <item><text weight=\"bold\">Irregulares:</text><jp reading=\"する\">する</jp><text>→</text><jp reading=\"される\">される</jp><text>;</text><jp reading=\"くる\">来る</jp><text>→</text><jp reading=\"こられる\">来られる</jp><text>.</text></item>\n</list>\n\n<note type=\"tip\"><p><text>Todo verbo na passiva vira um</text><text weight=\"bold\"> ichidan terminado em </text><jp>れる</jp><text>. Por isso você o conjuga depois como qualquer verbo ru: passado </text><jp>〜れた</jp><text>, presente contínuo </text><jp>〜れている</jp><text>.</text><jp reading=\"ほめられる\">褒められる</jp><text>→</text><jp reading=\"ほめられた\">褒められた</jp><text>(\"foi elogiado\").</text></p></note>\n\n<heading level=\"3\"><text>Passiva regular: quem recebe a ação</text></heading>\n<p><text>O receptor vira o tópico, e quem fez a ação (o </text><term define=\"quem executa a ação na voz passiva\">agente</term><text>) ganha a partícula </text><jp>に</jp><text>(\"por\"). O molde é </text><jp>(receptor) は (agente) に (verbo passivo)</jp><text>.</text></p>\n<sentence ref=\"sent:gen-113cd2b42397\" show=\"furigana\" mode=\"featured\"/>\n<p><text>Compare com a ativa </text><jp reading=\"せんせいはわたしをほめた\">先生は私を褒めた</jp><text>(\"o professor me elogiou\"). Na passiva, </text><emphasis>eu</emphasis><text> passo a ser o tópico e o professor recebe </text><jp>に</jp><text>:</text><jp reading=\"せんせいにほめられた\">先生に褒められた</jp><text>.</text></p>\n<sentence ref=\"sent:gen-3de9af165938\" show=\"furigana\" mode=\"card\"/>\n<p><text>Repare que </text><jp reading=\"なまえ\">名前</jp><text>(\"nome\") ainda leva </text><jp>を</jp><text>: a ação ainda recai sobre o nome, mas quem é afetado por isso sou eu. Ao pé da letra, \"(eu) tive o nome chamado pelo professor\".</text></p>\n\n<heading level=\"3\"><text>A passiva sofrida: quando algo te prejudica</text></heading>\n<p><text>Aqui está uma joia do japonês que o português não tem em forma fixa. A</text><text weight=\"bold\"> passiva sofrida</text><text> marca que o sujeito foi</text><text weight=\"bold\"> incomodado ou prejudicado</text><text> por algo, mesmo quando ninguém agiu contra ele de propósito.</text></p>\n<sentence ref=\"sent:gen-7db6be25f9be\" show=\"furigana\" mode=\"featured\"/>\n<p><text>A mãe agiu (deu a bronca) e eu saí prejudicado. O sentimento de \"levei\", de algo que caiu sobre mim, está embutido na própria passiva.</text></p>\n<note type=\"l1-advantage\"><p><text>Em português você precisa de palavras extras para passar o desconforto (\"acabei levando\", \"fui pego de surpresa\"). Em japonês a passiva já carrega essa carga emocional sozinha.</text><jp reading=\"あめにふられた\">雨に降られた</jp><text>= \"fui pego pela chuva\" (e me incomodei), enquanto </text><jp reading=\"あめがふった\">雨が降った</jp><text> só relata \"choveu\".</text></p></note>\n<note type=\"l1-pitfall\"><p><text>Não force </text><jp>によって</jp><text> nem traduções literais de \"por\" em toda frase. Com agente pessoa, use só </text><jp>に</jp><text>. E cuidado: nem toda frase com \"foi/ficou\" é passiva. Muitas vezes o japonês prefere um verbo intransitivo pronto.</text></p></note>\n\n<heading level=\"3\"><text>Passiva x verbos intransitivos de mudança de estado</text></heading>\n<p><text>Muito do que em português vira passiva (\"o copo foi quebrado\", \"a comida esfriou\") o japonês resolve com um verbo </text><term define=\"verbo que descreve algo acontecendo por si, sem objeto direto\">intransitivo</term><text> que já significa a mudança. Saber essa dupla evita passivas desnecessárias.</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1208020\"/><text>(\"quebrar-se\") é o par intransitivo:</text><jp reading=\"さらがわれた\">皿が割れた</jp><text>(\"o prato quebrou\"), sem dizer quem quebrou.</text></item>\n <item><vocab ref=\"vocab:1556630\"/><text>(\"esfriar\") e </text><vocab ref=\"vocab:1350610\"/><text>(\"queimar / pegar fogo\") descrevem o resultado por si só.</text></item>\n <item><vocab ref=\"vocab:2846390\"/><text>(\"ser consertado\") é o intransitivo de </text><vocab ref=\"vocab:1599390\"/><text>(\"consertar\");</text><vocab ref=\"vocab:1604550\"/><text>(\"ser encontrado\") aparece o tempo todo:</text><jp reading=\"かぎがみつかった\">鍵が見つかった</jp><text>(\"a chave foi encontrada\").</text></item>\n <item><text>Cuidado com os opostos:</text><vocab ref=\"vocab:1589260\"/><text>(\"deixar cair / perder\") é transitivo,</text><vocab ref=\"vocab:1333560\"/><text>(\"reunir\") também; já </text><vocab ref=\"vocab:1441400\"/><text>(\"acender-se\") e </text><vocab ref=\"vocab:1408220\"/><text>(\"engordar\") são intransitivos.</text></item>\n</list>\n<p><text>Quando o foco é só o resultado e quem agiu não importa, o intransitivo ganha. A passiva entra quando você quer marcar o agente ou o desconforto de quem recebeu.</text></p>\n<sentence ref=\"sent:tatoeba-143650\" show=\"furigana\" mode=\"card\"/>\n<p><text>Esta é uma passiva real:</text><jp reading=\"みず\">水</jp><text>(\"água\") é o tópico e </text><jp reading=\"とめられた\">止められた</jp><text>(\"foi cortada/parada\") mostra que alguém (a companhia) interrompeu o fornecimento. Com coisas inanimadas, é normal o sujeito levar </text><jp>が</jp><text>.</text></p>\n\n<heading level=\"3\"><text>Os kanji da lição</text></heading>\n<p><text>Quatro kanji do cotidiano, ligados a roupa, estações e calendário:</text></p>\n<list ordered=\"false\">\n <item><kanji ref=\"kanji:服\"/><text>(\"roupa\", leitura </text><jp>フク</jp><text>). À esquerda </text><jp reading=\"つき\">月</jp><text>(corpo/carne) e à direita uma mão que ajusta: a roupa que veste o corpo. Aparece em </text><jp reading=\"ふく\">服</jp><text>(\"roupa\") e </text><jp reading=\"ようふく\">洋服</jp><text>(\"roupa ocidental\").</text></item>\n <item><kanji ref=\"kanji:夏\"/><text>(\"verão\", leitura kun </text><jp>なつ</jp><text>). Imagine alguém andando devagar (o traço de pé embaixo,</text><jp>夂</jp><text>) sob o sol forte do </text><jp reading=\"なつ\">夏</jp><text>(\"verão\"); daí </text><jp reading=\"なつやすみ\">夏休み</jp><text>(\"férias de verão\").</text></item>\n <item><kanji ref=\"kanji:夕\"/><text>(\"entardecer\", leitura kun </text><jp>ゆう</jp><text>). É a lua </text><jp reading=\"つき\">月</jp><text> com um traço a menos: a luz já está sumindo, é a </text><jp reading=\"ゆうがた\">夕方</jp><text>(\"anoitecer\", início da noite).</text></item>\n <item><kanji ref=\"kanji:曜\"/><text>(\"dia da semana\", leitura </text><jp>ヨウ</jp><text>). Tem o sol </text><jp reading=\"ひ\">日</jp><text> à esquerda e fecha todos os dias:</text><jp reading=\"げつようび\">月曜日</jp><text>(\"segunda\"),</text><jp reading=\"どようび\">土曜日</jp><text>(\"sábado\").</text></item>\n</list>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n4-passiva-01-1\"/>\n<exercise ref=\"ex:n4-passiva-01-2\"/>\n<exercise ref=\"ex:n4-passiva-01-3\"/>\n<exercise ref=\"ex:n4-passiva-01-4\"/>\n<exercise ref=\"ex:n4-passiva-01-5\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n4-passiva-01-01\"/><checklist>\n <check item-ref=\"gram:gp-63\"><text>Sei formar a passiva 〜れる・られる nos três grupos de verbos.</text></check>\n <check item-ref=\"gram:ukemi-kei\"><text>Distingo a passiva regular da passiva sofrida (quando o sujeito é prejudicado).</text></check>\n <check><text>Uso に para marcar o agente (quem faz a ação) na passiva.</text></check>\n <check><text>Escolho entre passiva e verbo intransitivo (割れる, 冷える, 見つかる) conforme o foco.</text></check>\n</checklist>",
+  "body": "<heading level=\"2\"><text>A voz passiva: 〜れる・られる</text></heading>\n\n<p><text>Até agora suas frases falavam de quem</text><text weight=\"bold\"> faz</text><text> a ação. Nesta lição o holofote muda de lugar: a </text><grammar ref=\"gram:ukemi-kei\"/><text>(lê-se </text><emphasis>ukemi-kei</emphasis><text>) coloca no centro quem</text><text weight=\"bold\"> recebe</text><text> ou</text><text weight=\"bold\"> sofre</text><text> a ação. É a mesma ideia do nosso \"foi elogiado\", \"levou uma bronca\", \"foi cortada\". A peça que faz isso é o sufixo </text><grammar ref=\"gram:gp-63\"/><text>.</text></p>\n\n<heading level=\"3\"><text>Como se forma</text></heading>\n<p><text>A passiva depende do grupo do verbo:</text></p>\n<list ordered=\"false\">\n <item><text weight=\"bold\">Verbos ichidan (る):</text><text> tire </text><jp>る</jp><text> e acrescente </text><jp>られる</jp><text>:</text><jp reading=\"たべる\">食べる</jp><text>→</text><jp reading=\"たべられる\">食べられる</jp><text>(\"ser comido\");</text><jp reading=\"ほめる\">褒める</jp><text>→</text><jp reading=\"ほめられる\">褒められる</jp><text>(\"ser elogiado\").</text></item>\n <item><text weight=\"bold\">Verbos godan (う):</text><text> troque o som final da fila </text><emphasis>-u</emphasis><text> pela fila </text><emphasis>-a</emphasis><text> e some </text><jp>れる</jp><text>:</text><jp reading=\"よむ\">読む</jp><text>→</text><jp reading=\"よまれる\">読まれる</jp><text>;</text><jp reading=\"しかる\">叱る</jp><text>→</text><jp reading=\"しかられる\">叱られる</jp><text>;</text><jp reading=\"よぶ\">呼ぶ</jp><text>→</text><jp reading=\"よばれる\">呼ばれる</jp><text>.</text></item>\n <item><text weight=\"bold\">Irregulares:</text><jp reading=\"する\">する</jp><text>→</text><jp reading=\"される\">される</jp><text>;</text><jp reading=\"くる\">来る</jp><text>→</text><jp reading=\"こられる\">来られる</jp><text>.</text></item>\n</list>\n\n<note type=\"tip\"><p><text>Todo verbo na passiva vira um</text><text weight=\"bold\"> ichidan terminado em </text><jp>れる</jp><text>. Por isso você o conjuga depois como qualquer verbo ru: passado </text><jp>〜れた</jp><text>, presente contínuo </text><jp>〜れている</jp><text>.</text><jp reading=\"ほめられる\">褒められる</jp><text>→</text><jp reading=\"ほめられた\">褒められた</jp><text>(\"foi elogiado\").</text></p></note>\n\n<heading level=\"3\"><text>Passiva regular: quem recebe a ação</text></heading>\n<p><text>O receptor vira o tópico, e quem fez a ação (o </text><term define=\"quem executa a ação na voz passiva\">agente</term><text>) ganha a partícula </text><jp>に</jp><text>(\"por\"). O molde é </text><jp>(receptor) は (agente) に (verbo passivo)</jp><text>.</text></p>\n<sentence ref=\"sent:gen-113cd2b42397\" show=\"furigana\" mode=\"featured\"/>\n<p><text>Compare com a ativa </text><jp reading=\"せんせいはわたしをほめた\">先生は私を褒めた</jp><text>(\"o professor me elogiou\"). Na passiva, </text><emphasis>eu</emphasis><text> passo a ser o tópico e o professor recebe </text><jp>に</jp><text>:</text><jp reading=\"せんせいにほめられた\">先生に褒められた</jp><text>.</text></p>\n<sentence ref=\"sent:gen-3de9af165938\" show=\"furigana\" mode=\"card\"/>\n<p><text>Repare que </text><jp reading=\"なまえ\">名前</jp><text>(\"nome\") ainda leva </text><jp>を</jp><text>: a ação ainda recai sobre o nome, mas quem é afetado por isso sou eu. Ao pé da letra, \"(eu) tive o nome chamado pelo professor\".</text></p>\n\n<heading level=\"3\"><text>A passiva sofrida: quando algo te prejudica</text></heading>\n<p><text>Aqui está uma joia do japonês que o português não tem em forma fixa. A</text><text weight=\"bold\"> passiva sofrida</text><text> marca que o sujeito foi</text><text weight=\"bold\"> incomodado ou prejudicado</text><text> por algo, mesmo quando ninguém agiu contra ele de propósito.</text></p>\n<sentence ref=\"sent:gen-7db6be25f9be\" show=\"furigana\" mode=\"featured\"/>\n<p><text>A mãe agiu (deu a bronca) e eu saí prejudicado. O sentimento de \"levei\", de algo que caiu sobre mim, está embutido na própria passiva.</text></p>\n<note type=\"l1-advantage\"><p><text>Em português você precisa de palavras extras para passar o desconforto (\"acabei levando\", \"fui pego de surpresa\"). Em japonês a passiva já carrega essa carga emocional sozinha.</text><jp reading=\"あめにふられた\">雨に降られた</jp><text>= \"fui pego pela chuva\" (e me incomodei), enquanto </text><jp reading=\"あめがふった\">雨が降った</jp><text> só relata \"choveu\".</text></p></note>\n<note type=\"l1-pitfall\"><p><text>Não force </text><jp>によって</jp><text> nem traduções literais de \"por\" em toda frase. Com agente pessoa, use só </text><jp>に</jp><text>. E cuidado: nem toda frase com \"foi/ficou\" é passiva. Muitas vezes o japonês prefere um verbo intransitivo pronto.</text></p></note>\n\n<heading level=\"3\"><text>Passiva x verbos intransitivos de mudança de estado</text></heading>\n<p><text>Muito do que em português vira passiva (\"o copo foi quebrado\", \"a comida esfriou\") o japonês resolve com um verbo </text><term define=\"verbo que descreve algo acontecendo por si, sem objeto direto\">intransitivo</term><text> que já significa a mudança. Saber essa dupla evita passivas desnecessárias.</text></p>\n<list ordered=\"false\">\n <item><vocab ref=\"vocab:1208020\"/><text>(\"quebrar-se\") é o par intransitivo:</text><jp reading=\"さらがわれた\">皿が割れた</jp><text>(\"o prato quebrou\"), sem dizer quem quebrou.</text></item>\n <item><vocab ref=\"vocab:1556630\"/><text>(\"esfriar\") e </text><vocab ref=\"vocab:1350610\"/><text>(\"queimar / pegar fogo\") descrevem o resultado por si só.</text></item>\n <item><vocab ref=\"vocab:2846390\"/><text>(\"ser consertado\") é o intransitivo de </text><vocab ref=\"vocab:1599390\"/><text>(\"consertar\");</text><vocab ref=\"vocab:1604550\"/><text>(\"ser encontrado\") aparece o tempo todo:</text><jp reading=\"かぎがみつかった\">鍵が見つかった</jp><text>(\"a chave foi encontrada\").</text></item>\n <item><text>Cuidado com os opostos:</text><vocab ref=\"vocab:1589260\"/><text>(\"deixar cair / perder\") é transitivo,</text><vocab ref=\"vocab:1333560\"/><text>(\"reunir\") também; já </text><vocab ref=\"vocab:1441400\"/><text>(\"acender-se\") e </text><vocab ref=\"vocab:1408220\"/><text>(\"engordar\") são intransitivos.</text></item>\n</list>\n<p><text>Quando o foco é só o resultado e quem agiu não importa, o intransitivo ganha. A passiva entra quando você quer marcar o agente ou o desconforto de quem recebeu.</text></p>\n<sentence ref=\"sent:tatoeba-143650\" show=\"furigana\" mode=\"card\"/>\n<p><text>Esta é uma passiva real:</text><jp reading=\"みず\">水</jp><text>(\"água\") é o tópico e </text><jp reading=\"とめられた\">止められた</jp><text>(\"foi cortada/parada\") mostra que alguém (a companhia) interrompeu o fornecimento. Com coisas inanimadas, é normal o sujeito levar </text><jp>が</jp><text>.</text></p>\n\n<heading level=\"3\"><text>Os kanji da lição</text></heading>\n<p><text>Quatro kanji do cotidiano, ligados a roupa, estações e calendário:</text></p>\n<list ordered=\"false\">\n <item><kanji ref=\"kanji:服\"/><text>(\"roupa\", leitura </text><jp>フク</jp><text>). À esquerda </text><jp reading=\"つき\">月</jp><text>(corpo/carne) e à direita uma mão que ajusta: a roupa que veste o corpo. Aparece em </text><jp reading=\"ふく\">服</jp><text>(\"roupa\") e </text><jp reading=\"ようふく\">洋服</jp><text>(\"roupa ocidental\").</text></item>\n <item><kanji ref=\"kanji:夏\"/><text>(\"verão\", leitura kun </text><jp>なつ</jp><text>). Imagine alguém andando devagar (o traço de pé embaixo,</text><jp>夂</jp><text>) sob o sol forte do </text><jp reading=\"なつ\">夏</jp><text>(\"verão\"); daí </text><jp reading=\"なつやすみ\">夏休み</jp><text>(\"férias de verão\").</text></item>\n <item><kanji ref=\"kanji:夕\"/><text>(\"entardecer\", leitura kun </text><jp>ゆう</jp><text>). É a lua </text><jp reading=\"つき\">月</jp><text> com um traço a menos: a luz já está sumindo, é a </text><jp reading=\"ゆうがた\">夕方</jp><text>(\"anoitecer\", início da noite).</text></item>\n <item><kanji ref=\"kanji:曜\"/><text>(\"dia da semana\", leitura </text><jp>ヨウ</jp><text>). Tem o sol </text><jp reading=\"ひ\">日</jp><text> à esquerda e fecha todos os dias:</text><jp reading=\"げつようび\">月曜日</jp><text>(\"segunda\"),</text><jp reading=\"どようび\">土曜日</jp><text>(\"sábado\").</text></item>\n</list>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n4-passiva-01-1\"/>\n<exercise ref=\"ex:n4-passiva-01-2\"/>\n<exercise ref=\"ex:n4-passiva-01-3\"/>\n<exercise ref=\"ex:n4-passiva-01-4\"/>\n<exercise ref=\"ex:n4-passiva-01-5\"/>\n<exercise ref=\"ex:n4-passiva-01-6\"/>\n<exercise ref=\"ex:n4-passiva-01-7\"/>\n<exercise ref=\"ex:n4-passiva-01-8\"/>\n<exercise ref=\"ex:n4-passiva-01-9\"/>\n<exercise ref=\"ex:n4-passiva-01-10\"/>\n<exercise ref=\"ex:n4-passiva-01-11\"/>\n<exercise ref=\"ex:n4-passiva-01-12\"/>\n<exercise ref=\"ex:n4-passiva-01-13\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n4-passiva-01-01\"/><checklist>\n <check item-ref=\"gram:gp-63\"><text>Sei formar a passiva 〜れる・られる nos três grupos de verbos.</text></check>\n <check item-ref=\"gram:ukemi-kei\"><text>Distingo a passiva regular da passiva sofrida (quando o sujeito é prejudicado).</text></check>\n <check><text>Uso に para marcar o agente (quem faz a ação) na passiva.</text></check>\n <check><text>Escolho entre passiva e verbo intransitivo (割れる, 冷える, 見つかる) conforme o foco.</text></check>\n</checklist>",
   "needs_review": true
 }

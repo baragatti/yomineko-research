@@ -96,3 +96,13 @@ Estas palavras combinam bem com a família という, porque você costuma citar
 - A frase この問題は複雑だ ("esse problema é complexo") é empacotada com ということ e marcada com が, entregue a 分かった ("descobri/entendi"): "descobri o fato de que esse problema é complexo". Note 複雑 + だ antes de という.
 
 
+### 6. (recognition) Qual destes kanji significa "substituir, geração, era" e se lê ダイ nos compostos?
+- **Resposta:** `{"choices": ["代", "大", "休", "会"], "correct": "代"}`
+- 代 é o kanji de "substituir, geração" e se lê ダイ. Ele traz o radical de pessoa à esquerda, como 休 e 会; cuidado com 大, que também se lê ダイ mas significa "grande".
+
+
+### 7. (recognition) Qual destes kanji significa "razão, lógica, princípio" e se lê リ?
+- **Resposta:** `{"choices": ["理", "事", "気", "力"], "correct": "理"}`
+- 理 é "razão, lógica" e se lê リ: é a segunda metade de りょうり ("prato, culinária"). 事 ("coisa"), 気 ("ânimo") e 力 ("força") também são abstratos, mas nenhum carrega a ideia de princípio que 理 traz.
+
+

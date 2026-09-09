@@ -104,3 +104,13 @@ Na segunda frase,間違えた("errei") +名前("nome") +書きなおす: errou, 
 - 字がきたないから書きなおす = "como a letra está feia, vou reescrever". 書き (radical) + なおす = refazer porque não ficou bom. きたない (汚い) = "sujo/feio"; から/ので = "porque". O kanji 字 = letra/caractere.
 
 
+### 7. (recognition) Qual destas palavras significa 'cuidado, atenção'?
+- **Resposta:** `{"choices": ["注意", "用意", "意味", "元気"], "correct": "注意"}`
+- 注意 (ちゅうい) é atenção ou cuidado. Compare com 用意 (ようい), preparativo, e 意味 (いみ), significado: as três compartilham 意, e o que muda o sentido é o outro kanji.
+
+
+### 8. (production) Diga 'preste atenção aos carros', na forma educada com てください.
+- **Resposta:** `{"text": "車に注意してください", "accept": ["車に注意してください", "くるまにちゅういしてください"]}`
+- 注意する pede に para marcar aquilo a que se presta atenção. Nessa palavra o kanji 注 usa a leitura on チュウ.
+
+

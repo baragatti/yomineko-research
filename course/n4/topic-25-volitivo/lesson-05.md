@@ -103,3 +103,23 @@ Os dois entram fácil numa meta: 日本語を使うようにする ("vou procura
 - 食べる (dicionário) + ように + しています forma 'tenho procurado comer / procuro comer'. A forma contínua ようにしています é a mais natural para um hábito que já está em andamento; ようにする também é aceito como 'vou passar a me esforçar'.
 
 
+### 6. (recognition) O kanji 使 aparece no verbo 使う. Qual é o seu sentido?
+- **Resposta:** `{"choices": ["usar", "comprar", "segurar", "fazer"], "correct": "usar"}`
+- 使 é usar, empregar. Sozinho ele quase não aparece; o que você vê o tempo todo é o verbo 使う (つかう).
+
+
+### 7. (production) Escreva em japonês o verbo 'usar', que se lê つかう.
+- **Resposta:** `{"text": "使う", "accept": ["使う", "つかう"]}`
+- 使う é um verbo do grupo 1: o kanji 使 carrega a raiz つか e o う final fica como okurigana.
+
+
+### 8. (recognition) No verbo 売る, como se lê o kanji 売?
+- **Resposta:** `{"choices": ["う", "か", "つか", "も"], "correct": "う"}`
+- 売る (うる) é vender e 買う (かう) é comprar: leituras curtíssimas que só se distinguem pelo kanji. つか é de 使 e も é de 持.
+
+
+### 9. (production) Escreva em japonês o verbo 'vender', que se lê うる.
+- **Resposta:** `{"text": "売る", "accept": ["売る", "うる"]}`
+- 売る é vender. O mesmo kanji aparece em 売り場 (うりば), a seção da loja onde alguma coisa é vendida.
+
+

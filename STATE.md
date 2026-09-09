@@ -58,6 +58,14 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-09 (at) — W20 kanji half APPLIED and committed (§6 step 5): 899 exercises in 178 lessons,
+> kanji absent 0 at every level, practised 28% → 42.7%. Also today: W15/W16 (282 passages), W21,
+> W12, W11. Parallel file-only work in flight: W13b workflow (Layer-B for 4,223 N3 sentences), W17
+> builder fixes in a scratch copy (patch for W18), W32 survival cores. **Regression to fix first in
+> the next DB-writer unit:** full-mode `validate_index_rebuildable` aborts at step 116 (W15's
+> `apply_reading_passages` refuses rows in a replay), so `rebuild_baseline.json` is stale for 337
+> entries and cannot be re-recorded. Next DB writer: W27 apply (+ that fix), then W31 apply.**
+
 > **2026-09-09 (at) — W15 APPLIED + W16 code (§6 step 4): 282 of 286 authored passages are in the
 > reading boxes of 232 lessons; the ください→下さる lemma trap is fixed with a test; the coherence
 > check is a plant-proved validator. Gate green. NOT COMMITTED (the run was told to touch no git

@@ -102,3 +102,23 @@ Três kanji para reconhecer, dois deles um par fácil de confundir:
 - すこしも intensifica a negação 寒くない ('não está frio') até zerá-la: 'nem um pouco frio'. A partícula は marca 今日 como tópico. Aceita-se a versão polida com です.
 - frases: `sent:gen-e9bb12279da1`
 
+### 6. (recognition) Qual destes kanji significa 'pegar emprestado'?
+- **Resposta:** `{"choices": ["借", "貸", "使", "買"], "correct": "借"}`
+- 借 é o lado de quem recebe: 'pegar emprestado, alugar de alguém'. 貸 é o lado oposto, emprestar a alguém, e o par 借りる／貸す anda sempre junto. 使 (usar) e 買 (comprar) ficam perto no sentido, mas não envolvem devolução.
+
+
+### 7. (production) Escreva 'pegar emprestado' na forma de dicionário, com kanji.
+- **Resposta:** `{"text": "借りる", "accept": ["借りる", "かりる"]}`
+- Em 借りる o kanji guarda a raiz か e o resto da palavra fica como okurigana. É o verbo de quem recebe; quem entrega usa 貸す.
+
+
+### 8. (recognition) Qual destes kanji significa 'ocidental, do Ocidente'?
+- **Resposta:** `{"choices": ["洋", "海", "西", "服"], "correct": "洋"}`
+- 洋 tem o radical de água e nasceu como 'oceano', o mar largo que separa o Japão do Ocidente; daí passou a significar 'ocidental'. É o 洋 de 洋服 e de 西洋. 海 divide o mesmo radical de água, e 西 é 'oeste' como direção.
+
+
+### 9. (production) Escreva 'roupa (de corte ocidental)' em japonês, com kanji.
+- **Resposta:** `{"text": "洋服", "accept": ["洋服", "ようふく"]}`
+- 洋服 é 洋 (ocidental) + 服 (roupa), lido ようふく. É a roupa do dia a dia, por oposição à roupa tradicional japonesa.
+
+

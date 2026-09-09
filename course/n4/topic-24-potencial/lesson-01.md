@@ -103,3 +103,23 @@ Três kanji do campo da mente e do juízo, úteis para falar de capacidade.
 - 見る é ichidan: 見る → 見られる → 見られます. O objeto 海 leva が, típico da potencial, e ここから indica o ponto de onde se vê. É a frase modelo do tópico.
 - frases: `sent:gen-f5d1890aeb80`
 
+### 7. (recognition) Qual destes kanji significa 'coração, mente'?
+- **Resposta:** `{"choices": ["心", "思", "意", "気"], "correct": "心"}`
+- 心 (こころ) é o coração no sentido de mente e sentimento: os quatro traços desenham o órgão. Ele também é o radical que aparece embaixo de 思 e de 意.
+
+
+### 8. (recognition) O kanji 思 aparece no verbo 思う. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["pensar, achar", "ver, olhar", "falar, conversar", "ouvir, escutar"], "correct": "pensar, achar"}`
+- 思 é pensar e achar: em cima 田 (o campo) e embaixo 心, o coração. A imagem é a de algo que passa pela cabeça e pelo peito, e 思う é o verbo do 'eu acho que...'.
+
+
+### 9. (recognition) Na palavra 正月 (しょうがつ, Ano-Novo), como se lê o kanji 正?
+- **Resposta:** `{"choices": ["ショウ", "セイ", "ジョウ", "チョウ"], "correct": "ショウ"}`
+- 正 tem duas leituras sino-japonesas: ショウ, a de 正月, e セイ, a dos compostos mais formais. A leitura nativa ただ é a que aparece quando 正 forma adjetivo.
+
+
+### 10. (matching) Ligue cada palavra ao seu significado.
+- **Resposta:** `{"pairs": [["思う", "achar, pensar"], ["正月", "Ano-Novo"], ["時間", "tempo, hora"]]}`
+- 思う é o verbo de opinião; 正月 é o Ano-Novo, com 正 lido ショウ; 時間 entra aqui como termo já conhecido, para dar contraste.
+
+

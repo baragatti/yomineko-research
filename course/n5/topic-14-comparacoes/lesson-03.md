@@ -111,3 +111,13 @@ Um kanji curto e muito frequente fecha a lição.
 - コーヒー (café) + に (marca da escolha) + します ('decido-me por'). É o molde X に します em ação: 'vou de café'. Não traduza します como 'fazer' aqui.
 
 
+### 7. (recognition) Qual destes kanji significa 'mulher'?
+- **Resposta:** `{"choices": ["女", "子", "人", "小"], "correct": "女"}`
+- 女 (おんな) é 'mulher' e se escreve com apenas três traços. 子 é 'criança', 人 é 'pessoa' e 小 é 'pequeno': os três convivem com 女 em palavras sobre gente, mas só 女 marca o feminino.
+
+
+### 8. (production) Escreva 'menina' em japonês, com kanji.
+- **Resposta:** `{"text": "女の子", "accept": ["女の子", "おんなのこ"]}`
+- 女の子 junta 女 (mulher) e 子 (criança), ligados pela partícula do meio, e se lê おんなのこ. Repare que 女 sozinho já é おんな.
+
+

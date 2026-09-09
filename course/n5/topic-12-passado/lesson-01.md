@@ -111,3 +111,23 @@ Mesma frase, versão polida: 雨でした = "era chuva / chovia". Trocar だっ�
 - 雨 (chuva, substantivo) + だった (passado casual da cópula) = "era chuva / chovia". É exatamente o coração da frase real 来る日も来る日も雨だった。
 - frases: `sent:tatoeba-78700`
 
+### 6. (recognition) Qual é o significado do kanji 入?
+- **Resposta:** `{"choices": ["entrar", "sair", "ver", "ir"], "correct": "entrar"}`
+- 入 é o kanji de 入れる (colocar dentro): a ideia é entrar, pôr para dentro. O contrário dele é 出 (sair).
+
+
+### 7. (production) Escreva em japonês o verbo "colocar dentro", com o kanji 入 e a leitura いれる.
+- **Resposta:** `{"text": "入れる", "accept": ["入れる", "いれる"]}`
+- 入れる guarda a leitura kun いれる do kanji 入 (entrar): o kanji traz o sentido e o hiragana final marca a flexão do verbo.
+
+
+### 8. (recognition) Qual destes kanji significa "leste"?
+- **Resposta:** `{"choices": ["東", "本", "中", "上"], "correct": "東"}`
+- 東 significa leste e carrega 日 (sol) dentro da forma. A leitura kun é ひがし e a leitura on é トウ.
+
+
+### 9. (production) Escreva o kanji que significa "leste" e se lê ひがし.
+- **Resposta:** `{"text": "東", "accept": ["東", "ひがし"]}`
+- 東 é o kanji de leste. A leitura kun ひがし é a que aparece quando ele vem sozinho.
+
+

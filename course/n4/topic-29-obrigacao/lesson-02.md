@@ -103,3 +103,28 @@ Palavras que combinam direto com este padrão, porque planejar e preparar é jus
 - 計画 (plano) + を + 変える (mudar, forma de dicionário) + 必要がある. É a 'necessidade de fazer uma ação', não uma coisa, por isso o verbo vem na frente.
 
 
+### 6. (recognition) Qual destes kanji significa "servir, fazer" e abre a palavra 仕事 (trabalho, emprego)?
+- **Resposta:** `{"choices": ["仕", "使", "事", "私"], "correct": "仕"}`
+- 仕 traz a ideia de servir, de prestar serviço a alguém. 使 é quase igual à esquerda, também se lê つか- e significa usar; 事 é coisa, assunto, e fecha 仕事; 私 divide a leitura シ.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa "trabalho, emprego" e se lê しごと.
+- **Resposta:** `{"text": "仕事", "accept": ["仕事", "しごと"]}`
+- 仕事 é 仕 (servir) mais 事 (coisa, assunto): a coisa que se faz para servir. Vale tanto para o emprego quanto para a tarefa que está na sua mesa agora.
+
+
+### 8. (recognition) Qual destes kanji significa "tentar, testar"?
+- **Resposta:** `{"choices": ["試", "験", "思", "始"], "correct": "試"}`
+- 試 é experimentar, pôr à prova. Ele abre 試験 (prova, exame) junto com 験, que esta mesma lição apresenta. 思 (pensar) e 始 (começar) dividem com 試 a leitura chinesa シ.
+
+
+### 9. (production) Escreva em japonês, com kanji, a palavra que significa "prova, exame" e se lê しけん.
+- **Resposta:** `{"text": "試験", "accept": ["試験", "しけん"]}`
+- 試験 junta 試 (experimentar) e 験 (verificar): põe-se alguém à prova para conferir o que sabe. Serve para a prova da escola e para o exame de proficiência.
+
+
+### 10. (recognition) Qual destes kanji significa "teste, verificar" e fecha a palavra 試験 (prova, exame)?
+- **Resposta:** `{"choices": ["験", "研", "駅", "見"], "correct": "験"}`
+- 験 é verificar, comprovar, e quase só aparece em compostos como 試験. 駅 (estação) traz o mesmo cavalo do lado esquerdo; 研 (pesquisar) e 見 (ver) dividem com ele a leitura chinesa ケン.
+
+

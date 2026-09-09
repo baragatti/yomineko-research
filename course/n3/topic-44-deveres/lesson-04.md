@@ -91,3 +91,23 @@ O kanji 商 ('comércio, negociar, comerciante') aparece em 商人 ('comerciante
 - 速度 (velocidade) + 増加する (aumentar) descreve o carro acelerando. O passado 増加した fecha a ideia.
 
 
+### 6. (recognition) Qual destes kanji significa 'comércio, negócio'?
+- **Resposta:** `{"choices": ["商", "店", "品", "売"], "correct": "商"}`
+- 商 é o comércio como atividade: ele abre as palavras de negócio e de loja. Os vizinhos que vale separar são 店 (a loja como lugar), 品 (o artigo) e 売 (vender).
+
+
+### 7. (recognition) No verbo 調べる (investigar, checar), como se lê o kanji 調?
+- **Resposta:** `{"choices": ["しら", "たし", "なお", "なが"], "correct": "しら"}`
+- 調 se lê しら com o okurigana べる: 調べる (しらべる) é investigar, checar, ir atrás da informação. A leitura sino-japonesa チョウ é a dos compostos, como em 調子 (ちょうし), o estado ou a forma de alguma coisa.
+
+
+### 8. (production) Escreva em japonês, com kanji, o verbo que significa 'investigar, checar' e se lê しらべる.
+- **Resposta:** `{"text": "調べる", "accept": ["調べる", "しらべる"]}`
+- 調べる junta o kanji 調 com o okurigana べる. É o verbo de ir atrás da informação: no dicionário, na internet, num documento.
+
+
+### 9. (recognition) O kanji 商 tem uma leitura sino-japonesa só. Qual é?
+- **Resposta:** `{"choices": ["ショウ", "ソウ", "チョウ", "ジョウ"], "correct": "ショウ"}`
+- 商 se lê sempre ショウ. Ela vale para o kanji sozinho e abre todas as palavras de comércio construídas com ele.
+
+

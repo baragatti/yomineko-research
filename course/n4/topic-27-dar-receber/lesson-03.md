@@ -105,3 +105,28 @@ Hoje você ganha quatro kanji. Para cada um, a forma e um truque para fixar:
 - 弟 (irmão) + に (a pessoa de quem se deseja a ação) + もっと (mais) + 勉強して (て-forma de estudar) + ほしい (desejo). É o molde (pessoa)に + て-forma + ほしい.
 
 
+### 6. (recognition) Qual destes kanji significa 'ofício, obra, indústria'?
+- **Resposta:** `{"choices": ["工", "土", "力", "木"], "correct": "工"}`
+- 工 tem só três traços e desenha uma ferramenta de carpinteiro. Ele quase sempre traz a leitura コウ e abre o vocabulário de obra e indústria. Cuidado com 土 (terra), que é quase igual mas tem a barra de cima menor.
+
+
+### 7. (recognition) O kanji 建 aparece em 建物 (prédio) e 建てる (construir). Que ideia ele carrega?
+- **Resposta:** `{"choices": ["construir, erguer", "comprar, adquirir", "enviar, mandar", "usar, empregar"], "correct": "construir, erguer"}`
+- 建 é o kanji de construir. Com o okurigana てる vira o verbo 建てる (たてる), erguer uma construção; sem o る, o mesmo kanji abre 建物 (たてもの), o prédio já pronto.
+
+
+### 8. (recognition) Na palavra 料理 (comida, culinária), como se lê o kanji 料?
+- **Resposta:** `{"choices": ["リョウ", "リ", "ヨウ", "チョウ"], "correct": "リョウ"}`
+- 料 tem uma leitura só, リョウ. Ela abre 料理 (culinária) e reaparece no meio de 食料品 (mantimentos). Repare que o 理 do lado se lê リ: as duas juntas dão りょうり.
+
+
+### 9. (recognition) Na palavra 有名 (famoso), como se lê o kanji 有?
+- **Resposta:** `{"choices": ["ユウ", "ヨウ", "ニュウ", "シュウ"], "correct": "ユウ"}`
+- 有 se lê ユウ nos compostos: 有名 é literalmente 'ter nome'. A leitura nativa あ aparece no verbo 有る (ある), haver, existir.
+
+
+### 10. (matching) Ligue cada palavra ao seu significado.
+- **Resposta:** `{"pairs": [["建物", "prédio, edifício"], ["料理", "comida, culinária"], ["有名", "famoso, conhecido"]]}`
+- Cada palavra traz um kanji novo da lição: 建 (construir) em 建物, 料 (material, taxa) em 料理 e 有 (ter, existir) em 有名.
+
+

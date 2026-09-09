@@ -97,3 +97,23 @@ Quer responder rápido em japonês? Para uma pergunta como "já comeu?", o lado 
 - 宿題 (lição) + を + まだ (ainda) + していません (negativo de しています). A forma まだ〜ていません transmite 'ainda não fiz (mas ainda pode fazer)'. まだ também aceita aparecer antes de 宿題.
 
 
+### 6. (recognition) Qual é o significado do kanji 万 (まん)?
+- **Resposta:** `{"choices": ["dez mil", "mil", "cem", "dez"], "correct": "dez mil"}`
+- 万 é 'dez mil', o degrau de contagem acima de 千 (mil). O japonês agrupa os números de quatro em quatro casas, então 10.000 ganha um kanji próprio.
+
+
+### 7. (production) Escreva em japonês, com kanji, o número 'dez mil'.
+- **Resposta:** `{"text": "万", "accept": ["万", "まん"]}`
+- São três traços: 万, lido まん. É por isso que 10.000 ienes se escreve com 万 e não com uma fila de zeros lidos um a um.
+
+
+### 8. (recognition) Em 毎日 (todo dia) e 毎月 (todo mês), o que o kanji 毎 acrescenta?
+- **Resposta:** `{"choices": ["cada", "dia", "mês", "ano"], "correct": "cada"}`
+- 毎 quer dizer 'cada, todo' e vem sempre na frente, transformando a unidade de tempo seguinte em rotina. Nesse papel de prefixo ele se lê まい: まいにち, まいつき.
+
+
+### 9. (cloze) Qual é o kanji que falta em 'todo dia' (まいにち), escrito ＿日?
+- **Resposta:** `{"text": "毎", "full": "毎日"}`
+- O prefixo da rotina é 毎, lido まい. Ele encaixa do mesmo jeito em 毎月 (まいつき) e 毎年 (まいとし).
+
+

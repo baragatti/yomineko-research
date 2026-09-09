@@ -103,3 +103,23 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 - かえる (voltar para casa) é godan, então o polido é かえります. Cuidado: apesar de terminar em る, NÃO é 'かえます'. O destino (うちに = para casa) é opcional, pois かえる já carrega a ideia de 'para casa'.
 
 
+### 6. (recognition) Qual destes kanji significa 'meio, dentro'? Pense num quadrado atravessado por um traço vertical bem no centro.
+- **Resposta:** `{"choices": ["中", "日", "国", "出"], "correct": "中"}`
+- 中 é um quadrado cortado por um traço que passa exatamente pelo meio, e daí vem o sentido de 'meio, dentro, centro'. Sozinho lê-se なか; em palavras de origem chinesa vira チュウ. 日 e 国 confundem porque também são fechados por uma moldura, e 出 aponta para o lado contrário: sair.
+
+
+### 7. (recognition) Qual destes kanji significa 'longo, comprido'?
+- **Resposta:** `{"choices": ["長", "大", "本", "中"], "correct": "長"}`
+- 長 é 'longo, comprido'. A leitura nativa é なが; em compostos vira チョウ, e daí o segundo sentido, 'chefe' (quem está à frente há mais tempo). A troca mais comum é com 大, que é 'grande' em tamanho, não em comprimento.
+
+
+### 8. (recognition) Qual destes kanji escreve o verbo いく (ir)?
+- **Resposta:** `{"choices": ["行", "出", "見", "長"], "correct": "行"}`
+- 行 é o kanji de 行く (いく, ir) e carrega a ideia de caminho e deslocamento. 見 (ver) e 出 (sair) são kanji de verbos que você já conhece, e 長 entrou nesta mesma lição, mas quem escreve いく é 行.
+
+
+### 9. (production) Escreva o verbo 'ir' em japonês, na forma de dicionário e com kanji.
+- **Resposta:** `{"text": "行く", "accept": ["行く", "いく"]}`
+- Em 行く, o kanji 行 guarda a raiz い e o く fica de fora, em hiragana. Essa terminação solta ao lado do kanji chama-se okurigana. A leitura é いく, e escrever só em kana (いく) também é comum.
+
+

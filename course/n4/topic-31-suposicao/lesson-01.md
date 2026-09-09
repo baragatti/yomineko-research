@@ -103,3 +103,13 @@ Mnemônico de forma: à esquerda fica o radical de fio/linha 糸 (papel antigo e
 - 先生は + 来週 + 休む (forma de dicionário) + と + 聞いた. O と cita a frase inteira e 聞いた marca que você OUVIU isso de alguém, não está afirmando por conta própria.
 
 
+### 6. (recognition) Qual kanji completa 手＿ para formar carta (てがみ)?
+- **Resposta:** `{"choices": ["紙", "終", "私", "市"], "correct": "紙"}`
+- 手紙 (てがみ) é 手 (mão) mais 紙 (papel): o papel escrito à mão. Repare que かみ sonoriza e vira がみ dentro da palavra. 終 tem o mesmo radical de fio à esquerda; 私 e 市 também se leem し.
+
+
+### 7. (production) Escreva em kanji a palavra carta (てがみ).
+- **Resposta:** `{"text": "手紙", "accept": ["手紙", "てがみ"]}`
+- 手紙 (てがみ) junta 手 e 紙. Sozinho, 紙 lê-se かみ (papel); a leitura on é し.
+
+

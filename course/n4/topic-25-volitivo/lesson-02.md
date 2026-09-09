@@ -95,3 +95,13 @@ Não confunda 考 ("ponderar", com a perna comprida embaixo) com 老 ("velho"): 
 - いい ('é bom', forma casual) + と思う = 'acho que é bom'. Adjetivos-i entram na forma de dicionário, sem です/だ antes do と.
 
 
+### 6. (recognition) Qual destes kanji significa "coisa, objeto" no sentido concreto, de algo que se pega?
+- **Resposta:** `{"choices": ["物", "者", "事", "持"], "correct": "物"}`
+- 物 é a coisa concreta. 事 é a coisa abstrata, o assunto, e esse par é o mais importante de separar. 者 também se lê もの, mas significa pessoa; 持 é segurar.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa "comida, alimento" e se lê たべもの.
+- **Resposta:** `{"text": "食べ物", "accept": ["食べ物", "たべもの"]}`
+- 食べ物 é a coisa (物) que se come. O mesmo molde dá 飲み物 (bebida) e 買い物 (compras): verbo na base mais 物.
+
+

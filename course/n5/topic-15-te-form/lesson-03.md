@@ -102,3 +102,18 @@ Na primavera (春), os japoneses fazem hanami: sentam sob as cerejeiras para ver
 - 冷やす (gelar) → forma て 冷やして + ある = estado intencional. ビール marcado por が; 冷蔵庫に indica o lugar.
 - frases: `sent:gen-47206ec62227`
 
+### 6. (recognition) Qual é a leitura do kanji 川, que significa 'rio'?
+- **Resposta:** `{"choices": ["かわ", "みず", "やま", "つき"], "correct": "かわ"}`
+- 川 lê-se かわ. As outras opções são leituras de vizinhos de tema que você já conhece: みず é 水, やま é 山 e つき é 月.
+
+
+### 7. (production) Escreva em japonês a palavra 'rio', com kanji.
+- **Resposta:** `{"text": "川", "accept": ["川", "かわ"]}`
+- 川 (かわ) é 'rio'. Os três traços desenham a água correndo entre as margens, e é essa forma que torna o kanji fácil de reconhecer.
+
+
+### 8. (recognition) Qual destes kanji significa 'água' e se lê みず?
+- **Resposta:** `{"choices": ["水", "川", "山", "月"], "correct": "水"}`
+- 水 (みず) é 'água'. Os outros três são kanji de natureza que você já viu: 川 é o rio, 山 é a montanha e 月 é a lua.
+
+

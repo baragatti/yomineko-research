@@ -94,3 +94,13 @@ Esses quatro últimos são substantivos de descrição que você usará nas ora�
 - 電車を待っている (em andamento) + 間に (ponto no intervalo) + 勉強します (ação pontual, 'estudo'). É o mesmo molde da frase anterior, trocando 'ler' por 'estudar'.
 - frases: `sent:gen-4590c1e65a70`
 
+### 6. (recognition) Qual destes kanji junta 日 (sol) e 月 (lua) e significa 'claro, brilhante'?
+- **Resposta:** `{"choices": ["明", "時", "間", "開"], "correct": "明"}`
+- 明 é literalmente 日 (sol) ao lado de 月 (lua): as duas fontes de luz, daí 'claro, brilhante'. Ele aparece em 明るい e, com o sentido de 'seguinte', em 明日. 時 e 間 também carregam 日, e 開 é parecido com 間, mas só 明 tem sol e lua lado a lado.
+
+
+### 7. (production) Esta lição encadeia ações no tempo. Escreva 'amanhã' em japonês, com kanji.
+- **Resposta:** `{"text": "明日", "accept": ["明日", "あした"]}`
+- 明日 é 明 (seguinte) + 日 (dia): o dia que vem depois. No dia a dia lê-se あした.
+
+

@@ -104,3 +104,53 @@ Um provérbio (諺) famoso usa essa ideia de raridade ao contrário: 七転び�
 - 彼が怒る ('ele se irritar') + ことは (nominaliza a oração) + めったにない ('quase não existe') = 'é raríssimo ele se irritar'. A negação fica no ない final; o verbo 怒る permanece na forma curta antes de こと.
 
 
+### 6. (recognition) Qual destes kanji significa tirar, arrancar, extrair?
+- **Resposta:** `{"choices": ["抜", "指", "持", "打"], "correct": "抜"}`
+- 抜 é arrancar, extrair: traz o radical de mão à esquerda, o mesmo de 指 (dedo), 持 (segurar) e 打 (bater). A leitura kun é ぬ.
+
+
+### 7. (production) Escreva o kanji que significa tirar, arrancar, extrair (leitura on ばつ).
+- **Resposta:** `{"text": "抜", "accept": ["抜", "ばつ"]}`
+- 抜 tem o radical de mão à esquerda: é a mão que puxa algo para fora. Kun ぬ, on ばつ.
+
+
+### 8. (recognition) Qual destes kanji significa navio, barco, e se lê ふね?
+- **Resposta:** `{"choices": ["船", "川", "選", "洗"], "correct": "船"}`
+- 船 é o navio (ふね; せん em compostos). 川 (rio), 選 (escolher) e 洗 (lavar) também se leem せん, e dois deles têm água por perto, o que torna a confusão fácil.
+
+
+### 9. (production) Escreva em kanji a palavra navio, barco (ふね).
+- **Resposta:** `{"text": "船", "accept": ["船", "ふね"]}`
+- 船 (ふね) é a embarcação. Dentro de compostos a leitura vira せん.
+
+
+### 10. (recognition) Qual destes kanji significa memorizar, dar-se conta, despertar?
+- **Resposta:** `{"choices": ["覚", "見", "観", "親"], "correct": "覚"}`
+- 覚 é guardar na memória e também acordar. Os quatro trazem 見 (ver): 観 é observar e 親 é pai ou mãe, íntimo. Em compostos, 覚 lê-se かく.
+
+
+### 11. (production) Escreva em kanji o verbo memorizar, decorar (おぼえる).
+- **Resposta:** `{"text": "覚える", "accept": ["覚える", "おぼえる"]}`
+- 覚える (おぼえる) é fixar algo na memória. O mesmo kanji, em 感覚 (かんかく), o sentido ou a sensação, lê-se かく.
+
+
+### 12. (recognition) Qual kanji completa ＿可 para formar permissão, autorização (きょか)?
+- **Resposta:** `{"choices": ["許", "認", "議", "調"], "correct": "許"}`
+- 許可 (きょか) é a permissão formal: 許 (permitir) mais 可 (poder, ser possível). 認 (reconhecer), 議 (deliberar) e 調 (investigar) têm o mesmo radical 言 à esquerda.
+
+
+### 13. (production) Escreva em kanji o verbo perdoar, desculpar (ゆるす).
+- **Resposta:** `{"text": "許す", "accept": ["許す", "ゆるす"]}`
+- 許す (ゆるす) é tanto perdoar quanto dar licença. Em compostos o kanji lê-se きょ, como em 許可.
+
+
+### 14. (recognition) Qual kanji completa ＿中 para formar no caminho, a caminho (とちゅう)?
+- **Resposta:** `{"choices": ["途", "道", "都", "進"], "correct": "途"}`
+- 途中 (とちゅう) é o meio do percurso. 途 e 道 (estrada) são quase sinônimos, mas 途 nunca aparece sozinho; 都 divide com ele a leitura と e 進 é avançar.
+
+
+### 15. (production) Escreva em kanji a expressão no caminho, a caminho (とちゅう).
+- **Resposta:** `{"text": "途中", "accept": ["途中", "とちゅう"]}`
+- 途中 (とちゅう) é 途 (percurso) mais 中 (meio). Serve para o caminho físico e também para algo interrompido pela metade.
+
+

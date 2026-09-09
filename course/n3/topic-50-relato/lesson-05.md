@@ -106,3 +106,23 @@ Os dois se parecem à primeira vista, mas o lado direito é bem diferente. Assoc
 - 担当 (responsável) + チーム (equipe) + ということだ ('ou seja / pelo que dizem'). A estrutura だということだ relata uma informação ouvida de terceiros.
 
 
+### 6. (recognition) Qual kanji completa ＿大 para formar grandioso, admirável (いだい)?
+- **Resposta:** `{"choices": ["偉", "位", "以", "違"], "correct": "偉"}`
+- 偉大 (いだい) é grandioso. 位 (posição), 以 (a partir de) e 違 (diferir) também se leem い, e 違 chega a repetir o elemento da direita de 偉.
+
+
+### 7. (production) Escreva em kanji a palavra grandioso, grande em mérito (いだい).
+- **Resposta:** `{"text": "偉大", "accept": ["偉大", "いだい"]}`
+- 偉大 (いだい) junta 偉 (admirável) e 大 (grande). O 偉 traz o radical de pessoa à esquerda: é grandeza de alguém, não de tamanho.
+
+
+### 8. (recognition) Qual destes kanji, lido ぐう, significa casual, por acaso?
+- **Resposta:** `{"choices": ["偶", "側", "備", "位"], "correct": "偶"}`
+- 偶 é o acaso: 偶然 (ぐうぜん) é coincidência. 側 (lado), 備 (preparar) e 位 (posição) repetem o radical de pessoa à esquerda, mas nenhum se lê ぐう.
+
+
+### 9. (production) Escreva em kanji a palavra coincidência, acaso (ぐうぜん).
+- **Resposta:** `{"text": "偶然", "accept": ["偶然", "ぐうぜん"]}`
+- 偶然 (ぐうぜん) é o que acontece sem ser planejado. O mesmo 偶, lido たま, aparece em 偶に (たまに), de vez em quando.
+
+

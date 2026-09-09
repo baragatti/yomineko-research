@@ -106,3 +106,38 @@ O molde do gosto é sempre o mesmo: troque a coisa e a partícula が faz o rest
 - 円 (えん) é 'iene' (a moeda do Japão) e também 'círculo/redondo'. Pense numa moeda redonda dentro de uma moldura. Já 八 é 'oito', 六 é 'seis' e 子 é 'criança'.
 
 
+### 7. (recognition) Qual é o significado do kanji 八?
+- **Resposta:** `{"choices": ["oito", "seis", "dez", "nove"], "correct": "oito"}`
+- 八 é o número oito, dois traços que se abrem como um leque. Cuidado para não trocar com 六 (seis), que tem a mesma 'perninha' embaixo mas ganha um traço em cima.
+
+
+### 8. (production) Escreva em kanji o número oito.
+- **Resposta:** `{"text": "八", "accept": ["八", "はち"]}`
+- O oito é 八, só dois traços, e sozinho se lê はち. Na contagem de unidades ele vira 八つ (やっつ), com a leitura nativa.
+
+
+### 9. (recognition) Qual é o significado do kanji 六?
+- **Resposta:** `{"choices": ["seis", "oito", "cinco", "quatro"], "correct": "seis"}`
+- 六 é o número seis, lido ろく quando aparece sozinho. Ele é 八 com um traço e um pinguinho por cima, e é aí que mora a diferença.
+
+
+### 10. (production) Escreva em kanji o número seis.
+- **Resposta:** `{"text": "六", "accept": ["六", "ろく"]}`
+- O seis é 六 e sozinho se lê ろく. Na contagem de unidades ele muda para 六つ (むっつ), com a leitura nativa.
+
+
+### 11. (production) Escreva em japonês, com kanji, a moeda do Japão: o iene.
+- **Resposta:** `{"text": "円", "accept": ["円", "えん"]}`
+- O iene é 円, lido えん, e é sempre esse kanji que fecha um preço. O desenho ajuda: uma moldura fechada com a ideia de 'redondo' dentro.
+
+
+### 12. (recognition) Qual é o significado do kanji 子, lido こ?
+- **Resposta:** `{"choices": ["criança", "pessoa", "grande", "estudo"], "correct": "criança"}`
+- 子 é 'criança, filho'. São três traços, e é ele que fecha as palavras de menino e de menina, sempre com a leitura nativa こ.
+
+
+### 13. (production) Escreva só o kanji que significa 'criança, filho'.
+- **Resposta:** `{"text": "子", "accept": ["子", "こ"]}`
+- É 子, três traços, o desenho de um bebê de braços abertos. Na leitura sino-japonesa ele vira し e fecha muitas palavras que já nem falam de criança.
+
+

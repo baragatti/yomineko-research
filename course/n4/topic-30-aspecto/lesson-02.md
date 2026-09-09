@@ -96,3 +96,13 @@ O 週 de 週末 (fim de semana) carrega aquele radical de caminho ⻌: a ideia j
 - 勉強 (estudo) + を (objeto) + 続ける (continuar) + ことにしました (decidi). 続ける aqui carrega a ideia de manter, dar continuidade à ação.
 - frases: `sent:tatoeba-12462035`
 
+### 6. (recognition) Em 歌う (うたう), qual é o sentido do kanji 歌?
+- **Resposta:** `{"choices": ["canção, cantar", "som, ruído", "ouvir, escutar", "divertido, prazer"], "correct": "canção, cantar"}`
+- 歌 é ao mesmo tempo a canção e o ato de cantá-la: sozinho, lido うた, é o substantivo; com o okurigana う, vira o verbo.
+
+
+### 7. (production) Escreva em japonês o verbo "cantar" (leitura うたう).
+- **Resposta:** `{"text": "歌う", "accept": ["歌う", "うたう"]}`
+- A leitura うた fica dentro do kanji e o う aparece como okurigana. Sem esse う a palavra seria o substantivo 歌, a canção.
+
+

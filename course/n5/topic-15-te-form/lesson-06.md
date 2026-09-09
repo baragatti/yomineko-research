@@ -105,3 +105,13 @@ Repare no ん final dessas leituras: はん, ばん, はんぶん. O ん é uma 
 - 撮る → forma curta negativa 撮らない → 撮らないで + ください = 'por favor, não tire fotos'.
 
 
+### 6. (recognition) Na palavra 半分 ('metade'), como se lê o kanji 半?
+- **Resposta:** `{"choices": ["はん", "ぶん", "じゅう", "ご"], "correct": "はん"}`
+- 半 usa aqui a leitura sino-japonesa ハン, que abre a palavra: 半分 lê-se はんぶん. ぶん é a leitura do segundo kanji, 分; じゅう é 十, que aparece dentro do traçado de 半; e ご é 午, o kanji de meio-dia.
+
+
+### 7. (production) Escreva em japonês a palavra que significa 'metade, meio', formada pelo kanji novo desta lição mais 分 ('parte').
+- **Resposta:** `{"text": "半分", "accept": ["半分", "はんぶん"]}`
+- 半分 (はんぶん) é literalmente 'a parte da metade'. O 半 sozinho, lido はん, também vale por 'metade' e é o que você acrescenta às horas para dizer 'e meia'.
+
+

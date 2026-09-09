@@ -86,3 +86,48 @@ Armadilha PT: os empréstimos カー e カード têm vogais de duração inteir
 - Adjetivo-na (上手) + な + わけだ marca a conclusão lógica que agora faz sentido. だから no começo reforça o encadeamento.
 
 
+### 6. (recognition) Na palavra 両親 (りょうしん, os pais), como se lê o kanji 両?
+- **Resposta:** `{"choices": ["リョウ", "ジョウ", "ヨウ", "チョウ"], "correct": "リョウ"}`
+- 両 tem uma leitura só, リョウ, e ela abre praticamente todas as suas palavras: 両親 (os pais) e 両方 (ambos). O sentido é sempre o dos dois lados.
+
+
+### 7. (recognition) Qual destes kanji carrega a ideia de 'conter, conteúdo, forma'?
+- **Resposta:** `{"choices": ["容", "家", "室", "官"], "correct": "容"}`
+- 容 tem em cima o mesmo telhado de 家 e 室, mas o que ele guarda é o conteúdo: é o kanji de conter, daquilo que cabe dentro. A leitura sino-japonesa ヨウ vale em quase todas as suas palavras.
+
+
+### 8. (recognition) Como se lê a palavra 式 (cerimônia, estilo)?
+- **Resposta:** `{"choices": ["しき", "しょく", "ちょく", "そく"], "correct": "しき"}`
+- 式 vale sozinho como palavra, しき: a cerimônia, e também o estilo ou a fórmula. Nos compostos ele costuma fechar a palavra.
+
+
+### 9. (recognition) O kanji 打 aparece no verbo 打つ (うつ). Que ideia ele carrega?
+- **Resposta:** `{"choices": ["bater, golpear", "segurar, ter", "apontar, dedo", "apoiar, sustentar"], "correct": "bater, golpear"}`
+- 打 tem o radical da mão do lado esquerdo, como 持 e 指, e é a mão que bate: 打つ (うつ) é bater, golpear, e também bater as horas.
+
+
+### 10. (recognition) O kanji 果 aparece em 果物 (くだもの, fruta) e fecha as palavras que falam de resultado. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["fruta, resultado", "árvore, madeira", "campo, arrozal", "flor"], "correct": "fruta, resultado"}`
+- 果 desenha 田 em cima de 木, o fruto pendurado na árvore. Daí saem os dois sentidos: a fruta, em 果物, e o resultado, o que uma ação dá no fim.
+
+
+### 11. (recognition) No verbo 直す (consertar, arrumar), como se lê o kanji 直?
+- **Resposta:** `{"choices": ["なお", "ただ", "なが", "たか"], "correct": "なお"}`
+- 直 tem várias leituras nativas. Com o okurigana す vale なお: 直す (なおす) é alguém consertar alguma coisa; com る, 直る (なおる) é a coisa que fica boa sozinha.
+
+
+### 12. (recognition) Na palavra 確か (certo, seguro), como se lê o kanji 確?
+- **Resposta:** `{"choices": ["たし", "たか", "ただ", "たび"], "correct": "たし"}`
+- 確 se lê たし com o okurigana か: 確か (たしか) é 'certo, seguro' e também o 'se não me engano' de quem quase tem certeza. A leitura sino-japonesa カク é a dos compostos.
+
+
+### 13. (matching) Ligue cada palavra ao seu significado.
+- **Resposta:** `{"pairs": [["両親", "os pais"], ["式", "cerimônia, estilo"], ["打つ", "bater, golpear"], ["果物", "fruta"]]}`
+- Quatro kanji novos desta lição em palavras do dia a dia: 両 (os dois lados) em 両親, 式 sozinho, 打 em 打つ e 果 em 果物.
+
+
+### 14. (matching) Ligue cada palavra ao seu significado.
+- **Resposta:** `{"pairs": [["直す", "consertar, arrumar"], ["真っ直ぐ", "reto, em frente"], ["確か", "certo, seguro"]]}`
+- 直 e 確 falam de acerto: 直す conserta o que estava errado, 真っ直ぐ é o que segue reto sem desviar, e 確か é aquilo de que se tem certeza.
+
+

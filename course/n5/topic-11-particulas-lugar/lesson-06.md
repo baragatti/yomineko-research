@@ -108,3 +108,13 @@ Mais três palavrinhas úteis para suas frases:
 - 月曜日に (na segunda; に de tempo) + 買い (raiz de 買う) + に行きます (finalidade). Os dois に têm papéis diferentes: o primeiro marca o dia, o segundo marca o objetivo da ida.
 
 
+### 6. (recognition) Qual destes kanji é o número cinco?
+- **Resposta:** `{"choices": ["五", "三", "二", "十"], "correct": "五"}`
+- 五 (ご, いつ) é cinco. Os outros são 三 (três), 二 (dois) e 十 (dez). Repare que 五 é fechado por um traço horizontal em cima e outro embaixo, o que o separa dos vizinhos.
+
+
+### 7. (production) Escreva em japonês 'cinco (coisas)', a contagem geral com o contador つ.
+- **Resposta:** `{"text": "五つ", "accept": ["五つ", "いつつ"]}`
+- 五つ lê-se いつつ, com a leitura kun いつ do kanji 五. Sozinho, o número cinco usa a leitura on ご.
+
+

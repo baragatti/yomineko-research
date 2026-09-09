@@ -112,3 +112,8 @@ Já que vimos 以下, repare no mesmo kanji 下 ("abaixo") em 県下 (けんか)
 - 何人 ('quantas pessoas?') + か vira 何人か ('algumas pessoas'): o か transforma a pergunta de quantidade exata numa quantidade vaga. + 来ました ('vieram').
 
 
+### 7. (recognition) Qual destes kanji é o sufixo que se lê テキ e transforma um substantivo em adjetivo, como o nosso '-ico'?
+- **Resposta:** `{"choices": ["的", "白", "百", "国"], "correct": "的"}`
+- 的 tem 白 ('branco') do lado esquerdo: era o alvo branco de tiro, e daí vêm os sentidos de 'alvo, mira'. Colado no fim de um substantivo, ele vira o sufixo テキ e forma adjetivos.
+
+

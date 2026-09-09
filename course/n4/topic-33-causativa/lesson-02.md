@@ -108,3 +108,28 @@ Quatro kanji do dia a dia, todos ligados a comida e animais:
 - 紹介 + する → 紹介させる (causativo) → 紹介させて (forma て) + ください. 紹介させてください = 'deixe-me apresentar', um pedido educado para você mesmo fazer a apresentação.
 
 
+### 6. (matching) Ligue cada palavra ao seu sentido em português.
+- **Resposta:** `{"pairs": [["牛肉", "carne bovina"], ["お茶", "chá"], ["ご飯", "arroz cozido"], ["鳥", "pássaro"]]}`
+- 牛肉 ぎゅうにく carne bovina; お茶 おちゃ chá; ご飯 ごはん arroz cozido; 鳥 とり pássaro. São quatro kanji do vocabulário de casa e de mesa.
+
+
+### 7. (recognition) Qual é o significado do kanji 茶?
+- **Resposta:** `{"choices": ["chá", "carne", "arroz cozido", "peixe"], "correct": "chá"}`
+- 茶 é chá. Ele quase não anda sozinho: aparece em お茶 (おちゃ), a bebida, e em 茶色 (ちゃいろ), o marrom, que é a cor do chá.
+
+
+### 8. (production) Escreva em japonês 'carne bovina', palavra que se lê ぎゅうにく.
+- **Resposta:** `{"text": "牛肉", "accept": ["牛肉", "ぎゅうにく"]}`
+- 牛 ('boi') mais 肉 ('carne') dá 牛肉, a carne de boi. Aqui 牛 usa a leitura chinesa ぎゅう.
+
+
+### 9. (cloze) Complete com o kanji que falta: 小___ (ことり) é 'passarinho'.
+- **Resposta:** `{"text": "鳥", "full": "小鳥"}`
+- 小 ('pequeno') mais 鳥 ('pássaro') dá 小鳥 (ことり). Sozinho, 鳥 lê-se とり e vale para qualquer ave.
+
+
+### 10. (production) Escreva em japonês 'arroz cozido, refeição', palavra que se lê ごはん.
+- **Resposta:** `{"text": "ご飯", "accept": ["ご飯", "ごはん"]}`
+- ご飯 é o arroz cozido e, por extensão, a própria refeição. O 飯 lê-se はん logo depois do prefixo de cortesia ご.
+
+

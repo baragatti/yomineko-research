@@ -99,3 +99,23 @@ No Japão, o número 四 (quatro) costuma ser evitado porque uma de suas leitura
 - １日 (primeiro dia do mês, lê-se ついたち) + じゃなかった (não era / não foi, casual) = 'Não era o primeiro dia do mês.' É o molde B じゃなかった em ação.
 
 
+### 6. (recognition) Qual destes kanji é o número nove, lido きゅう?
+- **Resposta:** `{"choices": ["九", "五", "三", "十"], "correct": "九"}`
+- 九 é o nove (きゅう, e く diante de alguns contadores). 五 é o cinco (ご), 三 é o três (さん) e 十 é o dez (じゅう). O 九 tem só dois traços.
+
+
+### 7. (production) Escreva em kanji o número nove (きゅう).
+- **Resposta:** `{"text": "九", "accept": ["九", "きゅう"]}`
+- 九 é o nove. Sozinho lê-se きゅう; diante de alguns contadores a leitura vira く. São dois traços apenas.
+
+
+### 8. (recognition) Qual destes kanji é o número quatro, lido し ou よん?
+- **Resposta:** `{"choices": ["四", "国", "九", "二"], "correct": "四"}`
+- 四 é o quatro. 国 (país) tem a mesma moldura quadrada e é o vizinho mais fácil de confundir; 九 é o nove e 二 é o dois.
+
+
+### 9. (production) Escreva em kanji o número quatro (し).
+- **Resposta:** `{"text": "四", "accept": ["四", "し", "よん"]}`
+- 四 é o quatro. A leitura on é し, mas no dia a dia costuma-se dizer よん, para fugir da confusão com outra palavra de mesmo som.
+
+

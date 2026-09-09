@@ -102,3 +102,23 @@ Quatro kanji desta vez, ligados a hábitos, lugares e comida.
 - これ (isto) + は (tópico) + 文化 (cultura) + とされている (é tido como). É o molde 'X とされている' para apresentar algo como consenso cultural.
 
 
+### 6. (recognition) Em 食堂 ("refeitório, cantina"), qual é a leitura do kanji 堂?
+- **Resposta:** `{"choices": ["ドウ", "トウ", "ホウ", "コウ"], "correct": "ドウ"}`
+- 堂 é o "salão" e se lê ドウ: 食堂 (しょくどう) é o salão de comer. As outras opções são as leituras de 東 (トウ), 方 (ホウ) e 高 (コウ).
+
+
+### 7. (production) Escreva em japonês "refeitório, cantina" (しょくどう), com os kanji.
+- **Resposta:** `{"text": "食堂", "accept": ["食堂", "しょくどう"]}`
+- 食堂 é 食 ("comer") mais 堂 ("salão"): o salão onde se come. A leitura é しょくどう.
+
+
+### 8. (recognition) Sozinho, 肉 é a palavra para "carne". Como se lê?
+- **Resposta:** `{"choices": ["ニク", "ニチ", "モク", "ソク"], "correct": "ニク"}`
+- 肉 se lê ニク mesmo sozinho: é um dos kanji cuja leitura chinesa virou a palavra do dia a dia. As outras opções são leituras de 日 (ニチ), 木 (モク) e 足 (ソク).
+
+
+### 9. (production) Escreva em japonês "carne" (にく), com o kanji.
+- **Resposta:** `{"text": "肉", "accept": ["肉", "にく"]}`
+- 肉 (にく) é a carne. O desenho fechado, com dois traços marcados por dentro, lembra um pedaço de carne com as fibras à mostra.
+
+

@@ -92,3 +92,13 @@ O kanji 寒 ('frio') aparece em 寒い ('frio') e 寒気 ('ar frio, frio intenso
 - 経つ (たつ) é 'passar (o tempo)'. O passado 経った fecha a ideia de tempo decorrido.
 
 
+### 6. (recognition) Em 今晩 ("hoje à noite"), qual é a leitura do kanji 晩?
+- **Resposta:** `{"choices": ["バン", "ハン", "マン", "ネン"], "correct": "バン"}`
+- 晩 tem uma leitura só, バン: 今晩 (こんばん) é "esta noite" e 毎晩 (まいばん) é "toda noite". As outras opções são as leituras de 半 (ハン), 万 (マン) e 年 (ネン).
+
+
+### 7. (production) Escreva em japonês "toda noite, todas as noites" (まいばん), com os kanji.
+- **Resposta:** `{"text": "毎晩", "accept": ["毎晩", "まいばん"]}`
+- 毎晩 é 毎 ("cada") mais 晩 ("noite"). O kanji 晩 traz 日 ("sol, dia") à esquerda, o sinal de que ele marca uma hora do dia.
+
+

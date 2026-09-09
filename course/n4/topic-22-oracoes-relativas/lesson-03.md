@@ -84,3 +84,23 @@ Dois kanji de movimento e abertura aparecem nas frases de exemplo deste tópico.
 - Ficar em casa durou o tufão inteiro (duração paralela), por isso 間 sem に, reforçado por ずっと ('o tempo todo'). Se fosse 間に, daria a ideia de uma ação única dentro do tufão.
 
 
+### 6. (recognition) Qual destes kanji significa "mover"?
+- **Resposta:** `{"choices": ["動", "同", "道", "力"], "correct": "動"}`
+- 動 é mover-se: à direita está 力 (força), que é o que tira a coisa do lugar. A leitura chinesa ドウ é a mesma de 同 (mesmo) e de 道 (estrada), e os três vivem se misturando no ouvido.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa "carro, automóvel" e se lê じどうしゃ.
+- **Resposta:** `{"text": "自動車", "accept": ["自動車", "じどうしゃ"]}`
+- 自動車 é o veículo (車) que anda (動) por si mesmo (自), exatamente o raciocínio de automóvel em português. Aqui 動 usa a leitura chinesa どう.
+
+
+### 8. (recognition) Qual destes kanji significa "abrir, começar"?
+- **Resposta:** `{"choices": ["開", "会", "間", "空"], "correct": "開"}`
+- 開 mostra duas mãos empurrando para os lados as folhas de um portão. 間 traz o mesmo portão no desenho, mas quer dizer intervalo; 会 divide com 開 a leitura あ- e significa encontrar; 空 é céu ou vazio.
+
+
+### 9. (production) Escreva em japonês, com kanji, o verbo que significa "abrir (algo)" e se lê あける.
+- **Resposta:** `{"text": "開ける", "accept": ["開ける", "あける"]}`
+- 開ける é o verbo transitivo: alguém abre alguma coisa. O par intransitivo é 開く (あく), quando a coisa abre sozinha. É o mesmo kanji, muda só a okurigana.
+
+

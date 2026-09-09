@@ -92,3 +92,23 @@ Um lote de katakana, vários do mundo esportivo.
 - 冬は (no inverno) + スキーとスケートを (esqui e patinação) + 楽しむ (curtir).
 
 
+### 6. (recognition) Qual é o significado do kanji 対?
+- **Resposta:** `{"choices": ["oposto", "esperar", "especial", "escrita"], "correct": "oposto"}`
+- 対 é a ideia de estar de frente, em oposição: é o 対 de 反対 (oposição). A leitura on タイ também é a de 待 (esperar), então vale separar os dois pela forma.
+
+
+### 7. (production) Escreva em japonês "oposição, ser contra", com os kanji 反 e 対 e a leitura はんたい.
+- **Resposta:** `{"text": "反対", "accept": ["反対", "はんたい"]}`
+- 反対 junta 反 (contra) e 対 (oposto): os dois kanji dizem a mesma coisa, e o par reforça o sentido de ir contra.
+
+
+### 8. (recognition) Em 全部 (tudo) e 学部 (faculdade), como se lê o kanji 部?
+- **Resposta:** `{"choices": ["ブ", "フン", "ブン", "モン"], "correct": "ブ"}`
+- 部 tem uma leitura on só, ブ: 全部 (ぜんぶ), 学部 (がくぶ). Ela se parece com ブン, de 分 e 文, mas 部 para no ブ e não leva o ン.
+
+
+### 9. (production) Escreva em japonês "tudo, o todo", com os kanji 全 e 部 e a leitura ぜんぶ.
+- **Resposta:** `{"text": "全部", "accept": ["全部", "ぜんぶ"]}`
+- 全部 é 全 (inteiro) mais 部 (parte): todas as partes, ou seja, tudo.
+
+

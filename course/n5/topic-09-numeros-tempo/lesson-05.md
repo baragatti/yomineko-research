@@ -101,3 +101,23 @@ Na fala rápida, じゃあ encurta para じゃ. É super comum na despedida: じ
 - 週間 (しゅうかん) é o contador de semanas. 'Um' + 週間 = いっしゅうかん ('uma semana'), com o ち de いち virando っ antes de し.
 
 
+### 6. (recognition) Esta lição conta durações com o kanji 年. Qual é o significado dele?
+- **Resposta:** `{"choices": ["ano", "dia", "pessoa", "grande"], "correct": "ano"}`
+- 年 é o 'ano': ele fecha as contagens de duração que você viu aqui e se lê ネン nos compostos. Os outros três já são conhecidos: 日 é 'dia', 人 é 'pessoa' e 大 é 'grande'.
+
+
+### 7. (production) Escreva só o kanji que significa 'ano', o que fecha as contagens de duração desta lição.
+- **Resposta:** `{"text": "年", "accept": ["年", "とし"]}`
+- São seis traços e o kanji é 年. Sozinho ele se lê とし; nos compostos de duração ele vira ネン.
+
+
+### 8. (recognition) Na data ９日 (ここのか, dia 9 do mês), o que o kanji 日 significa?
+- **Resposta:** `{"choices": ["dia", "ano", "dez", "um"], "correct": "dia"}`
+- 日 é 'dia' (e também 'sol'), por isso ele fecha toda data do mês. Nas datas de 1 a 10 ele usa a leitura nativa -か, como em ９日 (ここのか).
+
+
+### 9. (cloze) Qual é o kanji que falta na data 'dia 9' (ここのか), escrita ９＿?
+- **Resposta:** `{"text": "日", "full": "９日"}`
+- Toda data do mês termina em 日. Aqui ele não se lê にち: nas dez primeiras datas vale a leitura nativa -か, e ９日 sai ここのか.
+
+

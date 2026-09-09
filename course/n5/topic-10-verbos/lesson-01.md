@@ -108,3 +108,8 @@ O verbo 見る traz o seu primeiro kanji de ação.
 - 開ける é verbo る: tira o る, põe ます → 開けます. A janela (まど) é o objeto, então leva を, e o verbo vai para o fim: まどを開けます. Sem artigo: não se diz 'uma janela'.
 
 
+### 6. (recognition) Entre os kanji que você já conhece, qual significa "sair, aparecer"?
+- **Resposta:** `{"choices": ["出", "見", "日", "大"], "correct": "出"}`
+- 出 é sair, vir para fora: imagine um broto empurrando a terra e aparecendo na superfície. 見 é o outro kanji novo desta lição e significa ver; 日 é sol ou dia e 大 é grande.
+
+

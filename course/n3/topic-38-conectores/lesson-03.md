@@ -96,3 +96,23 @@ O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com c
 - O motivo (忙しいですから, 'porque estou ocupado') vem antes da consequência (今日は行きません, 'hoje não vou'). O です mantem o tom educado, combinando bem com a recusa em ません.
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["実", "verdade"], ["決", "decidir"], ["関", "relação"]]}`
+- 実 é o que é real, o fruto que a coisa deu; 決 é bater o martelo e decidir; 関 é a ligação entre duas coisas, e antigamente era a barreira na estrada.
+
+
+### 7. (production) Escreva em japonês, na forma de dicionário, o verbo transitivo decidir, escolher.
+- **Resposta:** `{"text": "決める", "accept": ["決める", "きめる"]}`
+- 決める (きめる) é a versão transitiva: alguém decide alguma coisa. O par intransitivo 決まる (きまる) usa o mesmo kanji e só troca o okurigana.
+
+
+### 8. (production) Escreva o kanji que significa real, verdade, e que também quer dizer fruto.
+- **Resposta:** `{"text": "実", "accept": ["実", "じつ"]}`
+- 実 tem o radical do teto em cima: é o que a casa realmente guarda, o fruto que a planta realmente deu. Em palavras compostas lê-se じつ.
+
+
+### 9. (production) Escreva o kanji que significa relação, o de estar ligado a alguma coisa.
+- **Resposta:** `{"text": "関", "accept": ["関", "かん"]}`
+- 関 é o portão 門 com uma tranca dentro: a barreira que liga e separa dois lados. Em palavras compostas lê-se かん.
+
+

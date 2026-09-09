@@ -92,3 +92,33 @@ Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配
 - 元気 (bem/disposto) + かい (pergunta casual e afetuosa). かい dá aquele tom acolhedor, diferente do か mais neutro.
 
 
+### 6. (recognition) Qual destes kanji significa membro, integrante, e se lê いん?
+- **Resposta:** `{"choices": ["員", "名", "口", "飲"], "correct": "員"}`
+- 員 é o membro, o integrante de um grupo. 飲 (beber) também se lê いん; 名 é nome e 口 é boca. Repare no 口 no alto de 員.
+
+
+### 7. (production) Escreva o kanji que significa membro, integrante (leitura いん).
+- **Resposta:** `{"text": "員", "accept": ["員", "いん"]}`
+- 員 tem 口 em cima e só a leitura いん. Ele nunca aparece sozinho: é o kanji que fecha as palavras que nomeiam quem faz parte de um grupo.
+
+
+### 8. (recognition) Qual destes kanji se lê かた e é o jeito educado de dizer pessoa?
+- **Resposta:** `{"choices": ["方", "語", "本", "間"], "correct": "方"}`
+- 方 lê-se かた quando fala de gente, num registro mais educado que 人. 語 também carrega a leitura かた, mas significa língua, palavra. Com a leitura ほう, o próprio 方 passa a ser lado, direção.
+
+
+### 9. (production) Escreva em kanji o modo educado de dizer pessoa (かた).
+- **Resposta:** `{"text": "方", "accept": ["方", "かた"]}`
+- 方 (かた) é pessoa em registro educado, quatro traços. O mesmo kanji, lido ほう, marca lado, direção.
+
+
+### 10. (recognition) Qual destes kanji significa pessoa, aquele que, e fecha os nomes de profissão?
+- **Resposta:** `{"choices": ["者", "車", "社", "書"], "correct": "者"}`
+- 者 é a pessoa que faz algo: もの sozinho, しゃ dentro de compostos. 車 (carro) e 社 (empresa) também se leem しゃ, e 書 (escrever) tem forma parecida. Só o kanji distingue.
+
+
+### 11. (production) Escreva o kanji que significa pessoa, aquele que (leitura もの).
+- **Resposta:** `{"text": "者", "accept": ["者", "もの"]}`
+- 者 lê-se もの sozinho e しゃ dentro de compostos. É o kanji que transforma uma atividade em quem a exerce.
+
+

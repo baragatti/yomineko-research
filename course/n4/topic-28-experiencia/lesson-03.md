@@ -98,3 +98,23 @@ E estas palavras dão o tom ou o tema à experiência:
 - 教会 (igreja) + に (destino) + 行った (forma た de ir) + ことがある (experiência) = 'já fui à igreja'. Para deixar educado, troque ある por あります.
 
 
+### 6. (recognition) Em 病気 (doença) e 病院 (hospital), o que o kanji 病 significa?
+- **Resposta:** `{"choices": ["doença", "corpo", "instituição", "espírito"], "correct": "doença"}`
+- 病 é a 'doença', e nos dois compostos ele se lê びょう. Repare no encaixe: 病 + 気 (ânimo) é o estado de estar doente; 病 + 院 (instituição) é o lugar onde se trata.
+
+
+### 7. (cloze) Qual é o kanji que falta em 'doença' (びょうき), escrita ＿気?
+- **Resposta:** `{"text": "病", "full": "病気"}`
+- A palavra é 病気: o kanji da doença mais o do ânimo. Trocando 気 por 院 você sai da doença e chega ao hospital.
+
+
+### 8. (recognition) No verbo 起きる (おきる), o que o kanji 起 significa?
+- **Resposta:** `{"choices": ["levantar-se", "esperar", "girar", "estudar"], "correct": "levantar-se"}`
+- 起 é 'levantar-se': o radical de correr à esquerda dá a ideia do corpo que se põe de pé. O mesmo kanji também serve para um fato que 'se levanta', ou seja, que acontece.
+
+
+### 9. (production) Escreva em japonês, com kanji e okurigana, o verbo 'levantar-se, acordar'.
+- **Resposta:** `{"text": "起きる", "accept": ["起きる", "おきる"]}`
+- É 起きる, quem acorda é você mesmo. Com outro okurigana o sentido vira transitivo: 起こす (おこす) é acordar outra pessoa.
+
+

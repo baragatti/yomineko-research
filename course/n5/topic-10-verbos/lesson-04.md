@@ -118,3 +118,13 @@ Mnemônico de forma: 時 junta 日 (sol/dia) à esquerda com 寺 (templo) à dir
 - 授業 (aula) + が (sujeito) + 終わります (acaba, educado, de 終わる). Note que 終わる NÃO precisa de する: já é um verbo próprio.
 
 
+### 7. (recognition) Qual destes kanji significa 'tempo, hora' e tem as leituras とき e ジ?
+- **Resposta:** `{"choices": ["時", "日", "年", "中"], "correct": "時"}`
+- 時 é 'tempo, hora': lê-se とき sozinho e ジ nos compostos. Os outros também aparecem no calendário, 日 (dia) e 年 (ano), ou marcam posição, como 中 (meio), mas nenhum deles é a palavra 'hora'.
+
+
+### 8. (production) Escreva o kanji de 'tempo, momento', o que se lê とき quando aparece sozinho.
+- **Resposta:** `{"text": "時", "accept": ["時", "とき"]}`
+- 時 tem 日 (sol, dia) do lado esquerdo: é o tempo medido pelo sol. Sozinho ele é とき (momento); em composto vira ジ.
+
+

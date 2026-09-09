@@ -86,3 +86,28 @@ Em português a gente sempre lê "dez" do mesmo jeito, mas no japonês o som de 
 - 3 = 三 (さん), 9 = 九 (きゅう) e 10 = 十 (じゅう). São três dos números desta lição; o きゅう leva o som kyu esticado.
 
 
+### 6. (recognition) Na contagem japonesa, como se lê o kanji 一?
+- **Resposta:** `{"choices": ["いち", "に", "じゅう", "とお"], "correct": "いち"}`
+- 一 é o número um e, na leitura de contagem, soa いち. に é o 二 e じゅう é o 十; とお é a outra leitura do 十, a que se usa para contar objetos.
+
+
+### 7. (production) Escreva o kanji do número 1, aquele que se lê いち na contagem.
+- **Resposta:** `{"text": "一", "accept": ["一"]}`
+- 一 é um traço horizontal e nada mais: um risco, um dedo levantado, o número um.
+
+
+### 8. (recognition) Contando 1, 2, 3 em japonês, qual é a leitura do kanji 二?
+- **Resposta:** `{"choices": ["に", "ふた", "いち", "じゅう"], "correct": "に"}`
+- Na contagem, 二 soa に. ふた é a outra leitura do mesmo kanji, a de contar coisas; いち é o 一 e じゅう é o 十.
+
+
+### 9. (production) Escreva o kanji do número 2, o que se lê に na contagem.
+- **Resposta:** `{"text": "二", "accept": ["二"]}`
+- 二 são dois traços horizontais, um sobre o outro. É o 一 com um risco a mais.
+
+
+### 10. (production) Escreva em japonês, com kanji, o número 10.
+- **Resposta:** `{"text": "十", "accept": ["十", "じゅう"]}`
+- 十 se lê じゅう. O desenho é uma cruz, como dez dedos cruzados na frente do corpo.
+
+

@@ -122,3 +122,33 @@ Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade r
 - A fórmula de nomear é Nome + という + substantivo: 坊っちゃんという本 = 'um livro chamado Botchan'. Depois vem を読みました ('li'). Repare que em pt-BR natural dá para traduzir só por 'li o livro Botchan', sem o 'chamado'.
 
 
+### 6. (recognition) O kanji 昔, lido むかし, vale como palavra sozinha. Qual é o sentido dele?
+- **Resposta:** `{"choices": ["antigamente, tempos antigos", "agora, presente", "ano, idade", "tempo, hora"], "correct": "antigamente, tempos antigos"}`
+- 昔 tem o sol embaixo e camadas empilhadas em cima: são os muitos dias acumulados que viraram passado. É a palavra com que começam as histórias, o nosso "era uma vez".
+
+
+### 7. (production) Escreva em japonês a palavra para "antigamente, tempos antigos" (leitura むかし).
+- **Resposta:** `{"text": "昔", "accept": ["昔", "むかし"]}`
+- むかし sai inteira do kanji, sem okurigana. É a leitura nativa e, na prática, a única que você vai usar.
+
+
+### 8. (recognition) Qual é o sentido do kanji 窓, lido まど?
+- **Resposta:** `{"choices": ["janela", "portão", "casa, lar", "flor"], "correct": "janela"}`
+- 窓 tem em cima o radical do buraco na parede e embaixo o do coração: a abertura por onde a casa respira. A leitura útil é a nativa まど.
+
+
+### 9. (production) Escreva em japonês a palavra para "janela" (leitura まど).
+- **Resposta:** `{"text": "窓", "accept": ["窓", "まど"]}`
+- まど vale sozinha e também abre compostos do dia a dia, como o guichê de atendimento. A leitura chinesa deste kanji quase não aparece.
+
+
+### 10. (recognition) Qual destes kanji significa "grama, erva"?
+- **Resposta:** `{"choices": ["草", "花", "木", "葉"], "correct": "草"}`
+- 草 tem em cima o radical das plantas rasteiras, o mesmo que aparece em 花. Embaixo fica a parte que só empresta o som.
+
+
+### 11. (production) Escreva em japonês a palavra para "grama, capim" (leitura くさ).
+- **Resposta:** `{"text": "草", "accept": ["草", "くさ"]}`
+- Sozinho, 草 lê-se くさ. No fim de um composto essa mesma leitura pode sonorizar e virar ぐさ; a leitura chinesa そう aparece pouco.
+
+

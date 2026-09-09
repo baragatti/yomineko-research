@@ -84,3 +84,58 @@ Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pod
 - Adjetivo-na (嫌い) + な + んだもん dá o tom infantil e manhoso. O だって inicial ('é que...') combina perfeitamente com essa justificativa afetiva.
 
 
+### 6. (recognition) Qual destes kanji significa "disputar, brigar"?
+- **Resposta:** `{"choices": ["争", "勝", "力", "決"], "correct": "争"}`
+- 争 é disputar, brigar: duas mãos puxando a mesma coisa. 勝 é vencer, 力 é força e 決 é decidir. Todos rondam a mesma cena, mas só 争 é o conflito em si.
+
+
+### 7. (recognition) O kanji 必 aparece em 必ず e em 必要. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["certo, necessário", "disputar", "capacidade", "conversa"], "correct": "certo, necessário"}`
+- 必 é o kanji daquilo que não pode faltar: 必ず, sem falta, e 必要, necessário, saem os dois dele.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra "necessário".
+- **Resposta:** `{"text": "必要", "accept": ["必要", "ひつよう"]}`
+- 必要 se lê ひつよう: 必, sem falta, mais 要, essencial. A dupla vira o adjetivo de tudo o que é necessário.
+
+
+### 9. (recognition) Qual destes kanji é o contador de idade, o que vem depois do número para dizer quantos anos alguém tem?
+- **Resposta:** `{"choices": ["歳", "年", "歩", "期"], "correct": "歳"}`
+- 歳 é o contador de idade. 年 é o ano do calendário e não serve aqui; 歩 divide com 歳 o bloco de cima, e 期 é período.
+
+
+### 10. (production) Escreva o kanji do contador de idade, o que se lê さい logo depois do número.
+- **Resposta:** `{"text": "歳", "accept": ["歳", "さい"]}`
+- 歳 se lê さい e vem colado depois do número. É o contador que responde a quantos anos alguém tem.
+
+
+### 11. (recognition) O kanji 演 aparece em 演説. Que ideia ele traz?
+- **Resposta:** `{"choices": ["atuar, representar", "conversa, discussão", "capacidade", "idade"], "correct": "atuar, representar"}`
+- 演 é atuar, apresentar-se diante de alguém. Em 演説 isso vira o discurso: a fala feita em público.
+
+
+### 12. (production) Escreva em japonês, com kanji, a palavra "discurso".
+- **Resposta:** `{"text": "演説", "accept": ["演説", "えんぜつ"]}`
+- 演説 se lê えんぜつ: 演, apresentar-se, mais 説, explicar. É a fala preparada para um público.
+
+
+### 13. (recognition) Qual destes kanji significa "capacidade, habilidade"?
+- **Resposta:** `{"choices": ["能", "力", "勝", "知"], "correct": "能"}`
+- 能 é a capacidade, aquilo que a pessoa consegue fazer. 力 é a força bruta, 知 é saber e 勝 é vencer.
+
+
+### 14. (production) Escreva em japonês, com kanji, o adjetivo "competente, capaz".
+- **Resposta:** `{"text": "有能", "accept": ["有能", "ゆうのう"]}`
+- 有能 se lê ゆうのう: 有, ter, mais 能, capacidade. Quem tem capacidade é competente.
+
+
+### 15. (recognition) O kanji 談 aparece em 相談. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["conversa, discussão", "atuar", "capacidade", "sem falta"], "correct": "conversa, discussão"}`
+- 談 é conversa. Ele traz o 言 do lado esquerdo, o falar; por isso 相談 é a conversa em que se pede conselho.
+
+
+### 16. (production) Escreva em japonês, com kanji, a palavra que nomeia a conversa em que se pede conselho a alguém.
+- **Resposta:** `{"text": "相談", "accept": ["相談", "そうだん"]}`
+- 相談 se lê そうだん: 相, mútuo, mais 談, conversa. É a conversa de mão dupla em que um pede e o outro aconselha.
+
+

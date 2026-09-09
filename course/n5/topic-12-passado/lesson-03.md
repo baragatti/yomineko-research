@@ -98,3 +98,13 @@ Mnemônico de forma: imagine um telhadinho (o tampo ⼈ por cima) cobrindo um pe
 - 高い ('caro') já funciona sozinho como predicado, e ね no fim pede a concordância do amigo ('né?'). Como vocês dois estão olhando o mesmo relógio e compartilham a impressão, ね é a escolha natural (não よ).
 
 
+### 6. (recognition) O kanji 今 acabou de aparecer. Como se lê a palavra 今日, que quer dizer 'hoje'?
+- **Resposta:** `{"choices": ["きょう", "いま", "ことし", "こんげつ"], "correct": "きょう"}`
+- 今日 é uma das leituras especiais de 今: não vale いま (o kanji sozinho) nem コン (a leitura dos compostos). 今日 se decora inteiro como きょう, do mesmo jeito que 今年 (ことし).
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa 'hoje' e se lê きょう.
+- **Resposta:** `{"text": "今日", "accept": ["今日", "きょう"]}`
+- 今日 junta 今 ('agora') e 日 ('dia'): o dia de agora. O telhadinho em cima de 今 abriga o instante presente, e a leitura きょう é especial, então decore a palavra inteira.
+
+

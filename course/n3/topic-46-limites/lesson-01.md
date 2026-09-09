@@ -110,3 +110,33 @@ Faça os exercícios abaixo. Confira a explicação de cada um depois de respond
 - O segundo uso de くらい marca grau ('a ponto de'): 泣きたいくらい嬉しい = 'feliz a ponto de querer chorar'. ぐらい também é aceito.
 
 
+### 6. (recognition) Qual destes kanji significa 'ferramenta, utensílio'?
+- **Resposta:** `{"choices": ["具", "道", "家", "目"], "correct": "具"}`
+- 具 tem 目 em cima de uma base apoiada em dois pés. Lê-se グ e fecha 道具 e 家具; nessas palavras, 道 e 家 são só a primeira metade.
+
+
+### 7. (production) Escreva 'ferramenta, instrumento' em japonês, com kanji.
+- **Resposta:** `{"text": "道具", "accept": ["道具", "どうぐ"]}`
+- 道具 é 道 (caminho, ofício) + 具 (utensílio): o instrumento de um ofício. Lê-se どうぐ.
+
+
+### 8. (recognition) Qual destes kanji significa 'fácil, simples'?
+- **Resposta:** `{"choices": ["易", "難", "優", "安"], "correct": "易"}`
+- 易しい e 優しい têm a mesma leitura, やさしい, mas não dizem a mesma coisa: 易 é 'fácil', pouca dificuldade, e 優 é 'gentil', trato delicado. O contrário de 易 é 難. Em compostos, 易 lê-se イ, como em 容易.
+
+
+### 9. (production) Escreva 'fácil', no sentido de 'pouco difícil', como adjetivo い em japonês, com kanji.
+- **Resposta:** `{"text": "易しい", "accept": ["易しい", "やさしい"]}`
+- 易しい é adjetivo-い: 易 guarda a raiz やさ e しい é okurigana. Cuidado ao escolher o kanji, porque com 優 a mesma leitura vira 'gentil'.
+
+
+### 10. (recognition) Qual destes kanji abre a palavra じしょ (dicionário)?
+- **Resposta:** `{"choices": ["辞", "書", "語", "話"], "correct": "辞"}`
+- 辞 é 'palavra, expressão' e abre 辞書; 書 é a segunda metade, o que está escrito. 語 (língua) e 話 (fala) cobrem o mesmo campo, mas quem entra em 辞書 é 辞. Num segundo sentido, 辞 também é 'demitir-se'.
+
+
+### 11. (production) Escreva 'dicionário' em japonês, com kanji.
+- **Resposta:** `{"text": "辞書", "accept": ["辞書", "じしょ"]}`
+- 辞書 é 辞 (palavra) + 書 (escrito): o livro das palavras. Lê-se じしょ.
+
+

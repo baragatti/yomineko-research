@@ -107,3 +107,23 @@ O kanji 類 significa "tipo, espécie, categoria", como em 種類 ("tipo, varied
 - 数学はもちろん ('matemática, claro') parte do item esperado; 英語も得意だ ('também em inglês sou bom') acrescenta o segundo. O も no segundo elemento é obrigatório para fechar o padrão はもちろん...も.
 
 
+### 6. (matching) Associe cada palavra ao seu significado em pt-BR.
+- **Resposta:** `{"pairs": [["余分", "extra, excedente"], ["王子", "príncipe"], ["人類", "humanidade, gênero humano"], ["返事", "resposta"]]}`
+- 余分 (よぶん) é o que sobra, 王子 (おうじ) é príncipe, 人類 (じんるい) é a humanidade e 返事 (へんじ) é resposta. Cada uma traz um dos kanji novos desta lição.
+
+
+### 7. (recognition) Qual destes verbos descreve um trem cheio de gente?
+- **Resposta:** `{"choices": ["込む", "入る", "出る", "乗る"], "correct": "込む"}`
+- 込む (こむ) é estar lotado, cheio. 入る é entrar, 出る é sair e 乗る é embarcar: todos cabem na cena do trem, mas nenhum fala da lotação.
+
+
+### 8. (recognition) Qual destes verbos significa 'devolver'?
+- **Resposta:** `{"choices": ["返す", "貸す", "借りる", "使う"], "correct": "返す"}`
+- 返す (かえす) é devolver o que se pegou. 貸す é emprestar para alguém, 借りる é pegar emprestado e 使う é usar.
+
+
+### 9. (production) Diga 'de manhã o trem fica lotado', na forma curta.
+- **Resposta:** `{"text": "朝は電車が込む", "accept": ["朝は電車が込む", "あさはでんしゃがこむ", "朝は電車がこむ"]}`
+- 朝は abre com o tema (de manhã) e 電車が込む diz o que acontece. 込む é intransitivo, então o trem entra na frase marcado por が.
+
+

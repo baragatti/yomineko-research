@@ -113,3 +113,23 @@ Mnemônico de forma:天 é a pessoa 大(braços abertos) com um traço reto por 
 - 本を読んだり (ler livros) + 映画を見たり (ver filmes) + します fecha a ideia de 'leio, vejo filmes, etc.'. Como é uma amostra sem ordem fixa, inverter os dois exemplos também é aceitável.
 
 
+### 7. (recognition) Qual destes kanji significa "céu, firmamento"?
+- **Resposta:** `{"choices": ["天", "大", "白", "気"], "correct": "天"}`
+- 天 é 大 (uma pessoa de braços abertos) com um traço por cima: o céu acima da cabeça. Ele abre 天気 (tempo, clima), que se lê てんき. 気 é o segundo kanji dessa mesma palavra, 大 é grande e 白 é branco.
+
+
+### 8. (production) Escreva em japonês, com kanji, a palavra que significa "tempo (clima)" e se lê てんき.
+- **Resposta:** `{"text": "天気", "accept": ["天気", "てんき"]}`
+- 天気 junta 天 (céu) e 気 (ar, energia): o estado do ar lá em cima. É a palavra que os japoneses usam o tempo todo para puxar conversa sobre o dia.
+
+
+### 9. (recognition) Qual destes kanji significa "branco"?
+- **Resposta:** `{"choices": ["白", "百", "日", "天"], "correct": "白"}`
+- 白 é branco. 百 (cem) é 白 com um traço a mais em cima e traz 白 como radical; até as leituras chinesas são vizinhas, ハク em 白 e ヒャク em 百. 日 (sol, dia) é 白 sem o traço de cima; 天 é o outro kanji novo desta lição.
+
+
+### 10. (production) Escreva em japonês, com kanji, o adjetivo que significa "branco" e se lê しろい.
+- **Resposta:** `{"text": "白い", "accept": ["白い", "しろい"]}`
+- O adjetivo 白い vem do substantivo 白 (a cor branca) com a terminação dos adjetivos-i. A leitura しろ do kanji aparece nos dois.
+
+

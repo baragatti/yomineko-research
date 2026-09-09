@@ -98,3 +98,18 @@ Como 必要 já significa "necessário", você não precisa conjugar verbo algum
 - Basta pôr 何 (なに, 'o quê') no lugar do X do molde: 何 が 必要 です か. É o padrão X が必要 em forma de pergunta educada.
 
 
+### 6. (recognition) Em 銀行 ("banco"), qual é a leitura do kanji 銀?
+- **Resposta:** `{"choices": ["ギン", "キン", "セン", "ハン"], "correct": "ギン"}`
+- 銀 é "prata" e se lê ギン. Não confunda com 金 (キン), "ouro, dinheiro": os dois compartilham o radical de metal. Os outros distratores são as leituras de 千 (セン) e 半 (ハン).
+
+
+### 7. (production) Escreva em japonês "banco" (ぎんこう), com os kanji.
+- **Resposta:** `{"text": "銀行", "accept": ["銀行", "ぎんこう"]}`
+- 銀行 junta 銀 ("prata") a 行 ("ir, conduzir"): a casa por onde o dinheiro circula. A leitura é ぎんこう.
+
+
+### 8. (recognition) Qual destes kanji significa "cidade" e é o que fecha o nome das cidades japonesas?
+- **Resposta:** `{"choices": ["市", "店", "場", "地"], "correct": "市"}`
+- 市 é "cidade, mercado" e se lê シ no fim dos nomes de cidade. 店 é a loja, 場 é o lugar onde algo acontece e 地 é o solo; todos falam de espaço, mas só 市 nomeia a divisão administrativa.
+
+

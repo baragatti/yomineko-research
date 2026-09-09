@@ -111,3 +111,33 @@ O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯
 - Encadeamos do maior possuidor ao objeto final: 女王 (rainha) の 城 (castelo) の 門 (portão). Lendo de trás para frente: o portão, do castelo, da rainha. Cada の adiciona uma camada de posse.
 
 
+### 6. (recognition) Em 一杯 o som de 杯 muda. Como se lê essa palavra, que quer dizer 'cheio, um monte'?
+- **Resposta:** `{"choices": ["いっぱい", "さかずき", "はこ", "みな"], "correct": "いっぱい"}`
+- 杯 traz 木 ('madeira') à esquerda: o copo era de madeira. Sozinho ele é さかずき, o cálice de saquê; como contador de bebidas ele fecha a palavra e sonoriza, e por isso 一杯 sai いっぱい.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa 'cheio, um monte' e se lê いっぱい.
+- **Resposta:** `{"text": "一杯", "accept": ["一杯", "いっぱい"]}`
+- 一杯 é literalmente 'um copo', e foi daí que veio o sentido de cheio até a borda. 杯 é o contador que se usa para copos e tigelas de bebida.
+
+
+### 8. (recognition) Qual destas palavras é o tratamento educado para um grupo, 'pessoal, todos vocês', e se lê みなさん?
+- **Resposta:** `{"choices": ["皆さん", "皆", "一杯", "箱"], "correct": "皆さん"}`
+- 皆 sozinho é みな, 'todos'. Com さん ele vira 皆さん, o tratamento educado com que se abre um aviso ou um discurso.
+
+
+### 9. (production) Escreva em japonês, com kanji, a palavra que significa 'todos, todo mundo' e se lê みな.
+- **Resposta:** `{"text": "皆", "accept": ["皆", "みな"]}`
+- 皆 tem 白 ('branco') embaixo e, em cima, duas pessoas lado a lado: todo mundo junto. Na fala do dia a dia a mesma palavra costuma sair como みんな.
+
+
+### 10. (recognition) O kanji 箱 funciona sozinho como palavra. Qual é a leitura dele nesse uso, com o sentido de 'caixa'?
+- **Resposta:** `{"choices": ["はこ", "さかずき", "みなさん", "いっぱい"], "correct": "はこ"}`
+- 箱 tem em cima o radical do bambu, o mesmo de 答 e de 笑: as caixas eram trançadas de bambu. Sozinho ele é はこ, a caixa de todo dia.
+
+
+### 11. (production) Escreva em japonês, com kanji, a palavra que significa 'caixa' e se lê はこ.
+- **Resposta:** `{"text": "箱", "accept": ["箱", "はこ"]}`
+- 箱 sozinho já é a palavra はこ. Com a partícula の ela entra direto nas ligações que esta lição treina: a caixa de alguém, o conteúdo da caixa.
+
+

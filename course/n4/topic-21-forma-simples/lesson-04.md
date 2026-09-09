@@ -101,3 +101,8 @@ Frases-modelo para guardar: 予習はたいてい夜する ("costumo fazer a pre
 - 三時 (três horas) + ごろ (por volta de) marca o momento aproximado; 駅で (na estação) + 会いましょう (vamos nos encontrar) fecham a frase. Escrever 頃 no lugar de ごろ também está certo.
 
 
+### 6. (recognition) Nos painéis de horário de trem, um kanji marca a hora da partida. Qual é ele?
+- **Resposta:** `{"choices": ["発", "出", "来", "立"], "correct": "発"}`
+- 発 é partir, sair em viagem, e é o que aparece nos painéis de partida. 出 também é sair, mas de um lugar qualquer; 来 é vir e 立 é ficar de pé.
+
+

@@ -129,3 +129,53 @@ Repare quantos kanji de sentimento trazem o coração (心 ou 忄): 怒 (raiva),
 - 盗む (verbo u) vira a passiva 盗まれた no passado. O 財布 (carteira) é quem sofreu a ação, marcado com が. A frase carrega o tom de prejuízo para a vítima, bem típico da passiva japonesa.
 
 
+### 7. (recognition) Qual destes kanji significa "ficar bravo"?
+- **Resposta:** `{"choices": ["怒", "怖", "恥", "思"], "correct": "怒"}`
+- 怒 é ficar bravo. Os quatro carregam o coração 心: 怖 é medo, 恥 é vergonha e 思 é pensar. O sentimento mora todo na mesma peça.
+
+
+### 8. (production) Escreva em japonês, com kanji, o verbo "ficar bravo" na forma de dicionário.
+- **Resposta:** `{"text": "怒る", "accept": ["怒る", "おこる"]}`
+- 怒る se lê おこる. É a forma de dicionário do verbo que vira passiva quando alguém leva bronca.
+
+
+### 9. (recognition) O kanji 怖, no adjetivo 怖い, carrega qual ideia?
+- **Resposta:** `{"choices": ["medo", "vergonha", "barriga", "raiva"], "correct": "medo"}`
+- 怖 é o medo: 怖い é aquilo que assusta. Ele também tem o coração espremido na esquerda, como 怒 tem embaixo.
+
+
+### 10. (production) Escreva em japonês, com kanji, o adjetivo "assustador, que dá medo".
+- **Resposta:** `{"text": "怖い", "accept": ["怖い", "こわい"]}`
+- 怖い se lê こわい. O 怖 é o kanji; い é a terminação do adjetivo.
+
+
+### 11. (recognition) Qual destes kanji significa "vergonha"?
+- **Resposta:** `{"choices": ["恥", "耳", "心", "怒"], "correct": "恥"}`
+- 恥 é vergonha, e é feito de 耳 mais 心: a orelha que esquenta quando o coração se envergonha. As duas peças existem sozinhas, mas nenhuma delas é a resposta.
+
+
+### 12. (production) Escreva em japonês, com kanji, o adjetivo "envergonhado, constrangedor".
+- **Resposta:** `{"text": "恥ずかしい", "accept": ["恥ずかしい", "はずかしい"]}`
+- 恥ずかしい se lê はずかしい. Só o 恥 é kanji; ずかしい vai todo em hiragana.
+
+
+### 13. (recognition) O kanji 腹 aparece em お腹. O que ele nomeia?
+- **Resposta:** `{"choices": ["barriga", "vergonha", "medo", "raiva"], "correct": "barriga"}`
+- 腹 é a barriga. お腹 é como se fala do próprio estômago no dia a dia, inclusive na hora de dizer que se está com fome.
+
+
+### 14. (production) Escreva em japonês, com kanji, a palavra do dia a dia para "barriga, estômago".
+- **Resposta:** `{"text": "お腹", "accept": ["お腹", "おなか"]}`
+- お腹 se lê おなか. O お da frente é o prefixo de polidez, e só o 腹 é kanji.
+
+
+### 15. (recognition) Qual destes kanji quer dizer "soar, tocar" e também "cantar", falando de um bicho?
+- **Resposta:** `{"choices": ["鳴", "鳥", "口", "音"], "correct": "鳴"}`
+- 鳴 junta 口 e 鳥: o bicho que abre a boca e faz som. Daí sai tanto o piar quanto o tocar de uma campainha. 音 é o som em si.
+
+
+### 16. (production) Escreva em japonês, com kanji, o verbo "tocar, soar", o que uma campainha faz, na forma de dicionário.
+- **Resposta:** `{"text": "鳴る", "accept": ["鳴る", "なる"]}`
+- 鳴る se lê なる e é o soar de campainhas e telefones. O par 鳴く, com o mesmo kanji, é o som que os animais fazem.
+
+

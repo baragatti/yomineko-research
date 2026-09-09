@@ -111,3 +111,63 @@ Resolva os exercícios e leia a explicação de cada resposta.
 - Verbo dicionário + しかない transmite resignação ('não há outro jeito senão'). 歩くしかない = 'não resta outra senão ir a pé'.
 
 
+### 6. (recognition) Como se lê 危ない, 'perigoso'?
+- **Resposta:** `{"choices": ["あぶない", "あんない", "すくない", "きたない"], "correct": "あぶない"}`
+- 危 traz a leitura nativa あぶ e o okurigana completa o adjetivo: あぶない. Cuidado com あんない (案内, orientar), que só se parece no som.
+
+
+### 7. (production) Escreva em japonês o adjetivo 'perigoso', あぶない, com o kanji.
+- **Resposta:** `{"text": "危ない", "accept": ["危ない", "あぶない"]}`
+- 危 desenha alguém à beira de um penhasco, daí o perigo. Com okurigana ele é あぶない; em composto vira キ, a leitura das palavras de risco.
+
+
+### 8. (recognition) Como se lê 原因, 'causa, origem'?
+- **Resposta:** `{"choices": ["げんいん", "げんかい", "げんかん", "かいがん"], "correct": "げんいん"}`
+- 原 traz ゲン e 因 traz イン: げんいん. Nos compostos o 因 fecha a palavra e carrega sempre o sentido de causa.
+
+
+### 9. (production) Escreva em japonês 'causa, origem (de um problema)', げんいん, com os dois kanji.
+- **Resposta:** `{"text": "原因", "accept": ["原因", "げんいん"]}`
+- 因 é 大 (pessoa de braços abertos) dentro de uma moldura fechada: aquilo em que a coisa se apoia. Ao lado de 原 (origem) forma 原因, a causa.
+
+
+### 10. (recognition) Como se lê ご存知, a forma respeitosa de 'saber, estar a par'?
+- **Resposta:** `{"choices": ["ごぞんじ", "ごしゅじん", "ごちそう", "ごぜん"], "correct": "ごぞんじ"}`
+- 存 tem duas leituras sino-japonesas: ソン e a sonorizada ゾン. Em ご存知 vale a segunda, e o 知 fecha a palavra. As outras três também levam o ご de cortesia, mas nenhuma delas traz 存.
+
+
+### 11. (production) Escreva em japonês a fórmula respeitosa de 'o senhor sabe, estar a par', ごぞんじ.
+- **Resposta:** `{"text": "ご存知", "accept": ["ご存知", "ごぞんじ"]}`
+- 存 é 'existir, ser' e, no registro humilde, também 'saber'. O prefixo de cortesia e o 知 (saber) fecham a fórmula ご存知.
+
+
+### 12. (recognition) Como se lê 完全, 'completo, perfeito'?
+- **Resposta:** `{"choices": ["かんぜん", "かんたん", "かいぜん", "かんけい"], "correct": "かんぜん"}`
+- 完 traz カン e 全 traz ゼン: かんぜん. O 完 tem uma leitura só, カン, e ela sempre abre a palavra.
+
+
+### 13. (production) Escreva em japonês 'conclusão, término (de uma obra)', かんせい, com os dois kanji.
+- **Resposta:** `{"text": "完成", "accept": ["完成", "かんせい"]}`
+- 完 é um telhado sobre 元 (origem): a casa terminada. Ele abre 完全 e 完成 com a mesma leitura カン.
+
+
+### 14. (recognition) Como se lê 苦い, 'amargo (de sabor)'?
+- **Resposta:** `{"choices": ["にがい", "にくい", "ながい", "におい"], "correct": "にがい"}`
+- 苦 tem duas leituras nativas: にが para o gosto amargo (苦い) e くる para o sofrimento (苦しい). O okurigana aqui pede にが.
+
+
+### 15. (production) Escreva em japonês o adjetivo 'doloroso, sofrido', くるしい, com o kanji.
+- **Resposta:** `{"text": "苦しい", "accept": ["苦しい", "くるしい"]}`
+- O mesmo 苦 vale 'amargo' e 'sofrido': 苦い (にがい) é o gosto, 苦しい (くるしい) é o aperto. O okurigana é o que separa os dois.
+
+
+### 16. (recognition) Qual destes kanji significa 'remover, excluir' (leitura ジョ)?
+- **Resposta:** `{"choices": ["除", "院", "際", "限"], "correct": "除"}`
+- 除 é 'remover, excluir'. Os quatro trazem o mesmo elemento à esquerda, então o que decide é sempre o lado direito.
+
+
+### 17. (production) Escreva o kanji de 'remover, excluir', lido ジョ.
+- **Resposta:** `{"text": "除", "accept": ["除", "ジョ", "じょ"]}`
+- 除 se lê ジョ na maioria dos compostos, sempre com o sentido de tirar algo de dentro. A leitura nativa のぞ é a do verbo que significa 'excluir'.
+
+

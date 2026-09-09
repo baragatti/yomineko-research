@@ -108,3 +108,23 @@ Os dois compartilham o "telhado" de mão lá em cima, mudando só a base (口 à
 - 吸う → 吸わない (negativo) + ほうがいい = 'é melhor não fumar'. O conselho negativo usa a forma ～ない, diferente do afirmativo que usa o passado た.
 
 
+### 6. (recognition) Qual é o significado do kanji 右?
+- **Resposta:** `{"choices": ["direita", "esquerda", "norte", "sul"], "correct": "direita"}`
+- 右 é a direita e 左 é a esquerda. A metade de cima dos dois é bem parecida; o que separa um do outro é a parte de baixo, então olhe sempre para lá antes de decidir.
+
+
+### 7. (production) Escreva em japonês 'direita', palavra que se lê みぎ.
+- **Resposta:** `{"text": "右", "accept": ["右", "みぎ"]}`
+- 右 sozinho lê-se みぎ. É um dos kanji que você escreve sem nenhum okurigana, igual a 左 (ひだり).
+
+
+### 8. (recognition) Como se lê o kanji 左 quando aparece sozinho?
+- **Resposta:** `{"choices": ["ひだり", "みぎ", "した", "きた"], "correct": "ひだり"}`
+- 左 sozinho é ひだり. みぎ é 右, した é 下 e きた é 北: quatro palavras de posição que rendem mais se você decorar juntas.
+
+
+### 9. (production) Escreva em japonês 'esquerda', palavra que se lê ひだり.
+- **Resposta:** `{"text": "左", "accept": ["左", "ひだり"]}`
+- 左 é ひだり. Treine sempre em par com 右 (みぎ): a diferença entre os dois está só na parte de baixo do kanji.
+
+

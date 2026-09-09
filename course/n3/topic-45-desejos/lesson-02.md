@@ -103,3 +103,28 @@ O kanji 識 significa 'conhecer, discernir, consciência'. Tem a palavra (言) �
 - 休み é substantivo, então entra o だ: 休みだとしたら ('supondo que seja folga'). A conclusão lógica vem depois: 旅行したい ('queria viajar').
 
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["値", "valor"], ["程", "grau"], ["識", "conhecimento"], ["財", "riqueza"]]}`
+- 値 é quanto uma coisa vale, 程 é o quanto de alguma coisa, 識 é o saber acumulado e 財 são os bens que alguém tem.
+
+
+### 7. (production) Escreva em japonês a palavra que significa preço.
+- **Resposta:** `{"text": "値段", "accept": ["値段", "ねだん"]}`
+- 値段 (ねだん) é o preço pedido. Aqui 値 usa a leitura ね, a japonesa, que sozinha já quer dizer o valor de uma coisa.
+
+
+### 8. (production) Escreva em japonês a palavra que significa grau, nível, extensão de alguma coisa.
+- **Resposta:** `{"text": "程度", "accept": ["程度", "ていど"]}`
+- 程度 (ていど) junta dois kanji de medida. Repare na troca de leitura: sozinho 程 é ほど, aqui vira てい.
+
+
+### 9. (production) Escreva em japonês a palavra que significa consciência, percepção.
+- **Resposta:** `{"text": "意識", "accept": ["意識", "いしき"]}`
+- 意識 (いしき) é a intenção 意 mais o saber 識: dar-se conta de alguma coisa. 識 lê-se しき.
+
+
+### 10. (production) Escreva o kanji que significa riqueza, bens, propriedade.
+- **Resposta:** `{"text": "財", "accept": ["財", "ざい"]}`
+- 財 traz à esquerda o radical da concha, que era o dinheiro antigo e hoje marca quase tudo o que fala de valor. Em palavras compostas lê-se ざい.
+
+

@@ -108,3 +108,13 @@ Dois kanji de traçado simples e muito usados aparecem aqui.
 - くだもの + の中で (dentre as frutas) + りんご + が (o item destacado) + 一番好きです (o que mais gosto). Lembre: o vencedor leva が, não は.
 - frases: `sent:gen-f7cec4b420ec`
 
+### 7. (recognition) Qual destes kanji significa "montanha"?
+- **Resposta:** `{"choices": ["山", "出", "三", "上"], "correct": "山"}`
+- 山 desenha três picos lado a lado. Repare que 出 (sair) é feito de dois 山 empilhados, e por isso os dois se confundem; 三 divide com 山 a leitura chinesa サン; 上 é em cima.
+
+
+### 8. (recognition) Qual destes kanji significa "conversar, falar"?
+- **Resposta:** `{"choices": ["話", "見", "来", "行"], "correct": "話"}`
+- 話 traz o radical da palavra à esquerda e o desenho da língua à direita: quem fala usa a língua. 見 é ver, 来 é vir e 行 é ir. Todos são ações do dia a dia, mas nenhum deles é falar.
+
+

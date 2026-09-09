@@ -120,3 +120,43 @@ Repare como vários destes kanji compartilham o radical da pessoa イ à esquerd
 - 記入する ('preencher') na forma て é 記入して; contraída com おく fica 記入しとく ('já deixo preenchido'). É o sentido de fazer antes, por garantia, no registro casual.
 
 
+### 6. (recognition) Qual é o significado do kanji 伝?
+- **Resposta:** `{"choices": ["transmitir", "ajudar", "confiar", "dizer"], "correct": "transmitir"}`
+- 伝 é passar adiante: 伝える (transmitir, avisar). Ele aparece também em 手伝う (ajudar), onde a mão 手 passa o trabalho adiante.
+
+
+### 7. (production) Escreva em japonês o verbo "transmitir, avisar", com o kanji 伝 e a leitura つたえる.
+- **Resposta:** `{"text": "伝える", "accept": ["伝える", "つたえる"]}`
+- 伝える guarda a leitura kun つたえる. Em palavras compostas o kanji passa para a leitura on デン.
+
+
+### 8. (recognition) Qual é o significado do kanji 形?
+- **Resposta:** `{"choices": ["forma", "escrita", "cor", "luz"], "correct": "forma"}`
+- 形 é a forma, o formato. Sozinho lê-se かたち; em 人形 (boneca) ele entra com a leitura on ギョウ.
+
+
+### 9. (production) Escreva em japonês "boneca, boneco", com os kanji 人 e 形 e a leitura にんぎょう.
+- **Resposta:** `{"text": "人形", "accept": ["人形", "にんぎょう"]}`
+- 人形 é a figura (形) de uma pessoa (人). Os dois kanji entram com leitura on, e o resultado é にんぎょう.
+
+
+### 10. (recognition) Qual é o significado do kanji 種?
+- **Resposta:** `{"choices": ["tipo", "parte", "forma", "coisa"], "correct": "tipo"}`
+- 種 é o tipo, a espécie, e também a semente, de onde a ideia vem. Em 一種 (um tipo) ele entra com a leitura on シュ.
+
+
+### 11. (production) Escreva em japonês "um tipo, uma espécie", com os kanji 一 e 種 e a leitura いっしゅ.
+- **Resposta:** `{"text": "一種", "accept": ["一種", "いっしゅ"]}`
+- 一種 é 一 (um) mais 種 (tipo), e a leitura いっしゅ vem com a consoante dobrada, um encontro comum depois de 一.
+
+
+### 12. (recognition) Qual é o significado original do kanji 葉?
+- **Resposta:** `{"choices": ["folha", "flor", "árvore", "semente"], "correct": "folha"}`
+- 葉 é a folha da planta e traz 木 (árvore) na base. Em 言葉 (palavra) ele ganha o sentido figurado: as palavras são as folhas da fala.
+
+
+### 13. (production) Escreva em japonês "palavra, expressão", com os kanji 言 e 葉 e a leitura ことば.
+- **Resposta:** `{"text": "言葉", "accept": ["言葉", "ことば"]}`
+- 言葉 junta 言 (dizer) e 葉 (folha), e se lê ことば. Os dois kanji ficam com leitura kun, e o segundo sonoriza no meio da palavra.
+
+

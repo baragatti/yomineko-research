@@ -94,3 +94,43 @@ Os exemplos de obrigação usam muito a família. Aproveite para fixar os quatro
 - 考える é grupo 2 → causativo 考えさせる; na forma て + ください pede-se permissão para si mesmo: 考えさせてください ('deixe-me pensar'). É o causativo no sentido de permissão aplicado a quem fala.
 
 
+### 6. (recognition) Como se lê 兄弟, 'irmãos'?
+- **Resposta:** `{"choices": ["きょうだい", "きょうしつ", "きょうかい", "きょういく"], "correct": "きょうだい"}`
+- Em 兄弟 o 兄 usa a leitura sino-japonesa キョウ e o 弟 sonoriza: きょうだい. Sozinho, o mesmo 兄 é あに.
+
+
+### 7. (production) Escreva em japonês 'meu irmão mais velho', a forma que você usa ao falar da própria família, あに.
+- **Resposta:** `{"text": "兄", "accept": ["兄", "あに"]}`
+- 兄 sozinho é あに, o irmão mais velho de quem fala. Para o irmão dos outros, ou para chamá-lo, usa-se お兄さん, que tem leitura irregular.
+
+
+### 8. (recognition) Como se lê 勉強, 'estudo'?
+- **Resposta:** `{"choices": ["べんきょう", "ぶんしょう", "にんぎょう", "さんぎょう"], "correct": "べんきょう"}`
+- 勉 traz ベン e 強 traz キョウ: べんきょう. O 勉 quase só aparece aqui, então vale decorar a dupla inteira.
+
+
+### 9. (production) Escreva em japonês 'estudo', べんきょう, com os dois kanji.
+- **Resposta:** `{"text": "勉強", "accept": ["勉強", "べんきょう"]}`
+- 勉 é 'empenho' e traz 力 (força) embaixo; ao lado de 強 (forte) forma 勉強, o estudo como esforço. É a palavra que vira verbo com する.
+
+
+### 10. (recognition) Como se lê 妹, 'irmã mais nova'?
+- **Resposta:** `{"choices": ["いもうと", "おとうと", "おねえさん", "おにいさん"], "correct": "いもうと"}`
+- 妹 sozinho é いもうと. Cuidado com おとうと (弟), o irmão mais novo: os dois são 'mais novos', mas um é ela e o outro é ele.
+
+
+### 11. (production) Escreva em japonês 'minha irmã mais nova', いもうと, com o kanji.
+- **Resposta:** `{"text": "妹", "accept": ["妹", "いもうと"]}`
+- 妹 tem 女 (mulher) à esquerda: é a irmã caçula. Sozinho ele é いもうと, sem nenhum okurigana.
+
+
+### 12. (recognition) Como se lê 姉, 'irmã mais velha'?
+- **Resposta:** `{"choices": ["あね", "あに", "あさ", "あし"], "correct": "あね"}`
+- 姉 é あね e 兄 é あに: muda só a última mora. A pista visual é o 女 (mulher) à esquerda de 姉.
+
+
+### 13. (production) Escreva em japonês 'irmã mais velha' na forma de tratamento, a que você usa para chamá-la ou para falar da irmã dos outros, おねえさん.
+- **Resposta:** `{"text": "お姉さん", "accept": ["お姉さん", "おねえさん"]}`
+- Em お姉さん o 姉 tem leitura irregular, diferente de あね. É o mesmo padrão de お兄さん (おにいさん): a forma cortês estica a vogal.
+
+

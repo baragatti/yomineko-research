@@ -86,3 +86,13 @@ Três kanji que aparecem em palavras de paisagem e do dia a dia.
 - 雲 (nuvem) + が (o que aparece à vista) + 見える (estar visível). É o mesmo molde de 星が見える e 家が見える: a coisa entra no seu campo de visão sozinha, então 見える, e o que se vê leva が.
 
 
+### 6. (recognition) O que significa o kanji 野?
+- **Resposta:** `{"choices": ["campo", "arrozal", "montanha", "céu"], "correct": "campo"}`
+- 野 é o campo aberto, a planície, e por extensão o que é selvagem. As outras opções são o sentido de 田 (arrozal), 山 (montanha) e 空 (céu).
+
+
+### 7. (production) Escreva o kanji que significa campo aberto, planície.
+- **Resposta:** `{"text": "野", "accept": ["野", "の", "や"]}`
+- 野 tem duas leituras que valem a pena guardar: の, a japonesa, que aparece em nomes de lugar e em sobrenomes, e や, a sino-japonesa, que aparece em palavras compostas.
+
+

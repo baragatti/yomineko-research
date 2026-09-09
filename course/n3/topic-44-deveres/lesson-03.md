@@ -127,3 +127,53 @@ Veja como 観 e 察 se unem em 観察 ('observação'): 'ver' mais 'deduzir' é 
 - 帰る (grupo 1) vira o causativo 帰らせる, depois 帰らせて, depois 帰らせてください ('deixe-me ir embora'). É o pedido de permissão para VOCÊ fazer a ação.
 
 
+### 7. (recognition) Qual destas palavras significa 'a polícia' e se lê けいさつ?
+- **Resposta:** `{"choices": ["警察", "観察", "観光", "交差点"], "correct": "警察"}`
+- 察 tem um telhado em cima e, embaixo, a ideia de examinar com cuidado o que está guardado. Ele fecha 警察 (quem vigia) e 観察 (observar de perto), sempre com a leitura サツ.
+
+
+### 8. (production) Escreva em japonês, com kanji, o verbo humilde que significa 'dar a um superior, oferecer' e se lê さしあげる.
+- **Resposta:** `{"text": "差し上げる", "accept": ["差し上げる", "さしあげる"]}`
+- 差し上げる põe 差, a mão que estende alguma coisa, na frente do verbo de erguer. É a forma humilde de 'dar': você se abaixa e oferece a quem está acima. A mesma leitura さ aparece em 差す.
+
+
+### 9. (recognition) Todos estes kanji trazem 月. Qual deles significa 'esperança, desejar' e se lê ボウ nos compostos?
+- **Resposta:** `{"choices": ["望", "期", "朝", "服"], "correct": "望"}`
+- 望 mostra alguém em pé olhando a lua ao longe: daí vêm 'olhar para a distância' e 'desejar'. A leitura nativa のぞ faz o verbo, e nos compostos o kanji lê ボウ.
+
+
+### 10. (production) Escreva em japonês, com kanji, o substantivo que significa 'fim, final' e se lê すえ.
+- **Resposta:** `{"text": "末", "accept": ["末", "すえ"]}`
+- 末 é 木 ('árvore') com um traço largo em cima: a ponta mais alta dos galhos, onde a árvore acaba. Compare com 本, que marca a base do tronco, a origem.
+
+
+### 11. (production) Escreva em japonês, com kanji, o advérbio que significa 'gradualmente, aos poucos' e se lê だんだん.
+- **Resposta:** `{"text": "段々", "accept": ["段々", "だんだん"]}`
+- 段 é o degrau, a escada vista de lado. 段々 repete o kanji com o sinal 々 e vira o advérbio 'degrau a degrau': aos poucos, gradualmente.
+
+
+### 12. (production) Escreva em japonês, com kanji, o verbo que significa 'entregar, passar algo a alguém' e se lê わたす.
+- **Resposta:** `{"text": "渡す", "accept": ["渡す", "わたす"]}`
+- 渡 traz a água à esquerda, o mesmo lado de 海 e de 洗, com a ideia de passar de uma margem à outra. 渡る é você atravessar; 渡す é fazer alguma coisa atravessar até a mão do outro.
+
+
+### 13. (recognition) Qual destes kanji significa 'sorte, felicidade' e se lê フク?
+- **Resposta:** `{"choices": ["福", "神", "社", "電"], "correct": "福"}`
+- 福 traz à esquerda o radical do altar, o mesmo de 神 e de 社: coisas do sagrado. À direita fica o depósito cheio, a fartura. Junto, o kanji quer dizer 'sorte, bênção', sempre com a leitura フク.
+
+
+### 14. (production) Escreva em japonês, com kanji, o adjetivo que significa 'belo, bonito' e se lê うつくしい.
+- **Resposta:** `{"text": "美しい", "accept": ["美しい", "うつくしい"]}`
+- 美 é o desenho de um carneiro graúdo sobre 大 ('grande'): para quem criou o kanji, o animal bem-criado era a imagem do que é bonito. Cuidado com 美味しい: essa palavra se lê おいしい e não usa nenhuma leitura de 美.
+
+
+### 15. (production) Escreva em japonês, com kanji, o adjetivo que significa 'jovem' e se lê わかい.
+- **Resposta:** `{"text": "若い", "accept": ["若い", "わかい"]}`
+- 若 é uma planta nova brotando por cima de 口: o que ainda está crescendo. 若い é 'jovem'. O mesmo kanji, lido もし, escreve 若し, o 'se' que abre uma condição.
+
+
+### 16. (recognition) Qual destas palavras significa 'turismo, passeio turístico' e se lê かんこう?
+- **Resposta:** `{"choices": ["観光", "観察", "警察", "交差点"], "correct": "観光"}`
+- 観 termina em 見 ('ver'), mas é um ver demorado: contemplar, observar. 観光 é ir ver a luz de um lugar, ou seja, passear para conhecer; 観察 é olhar de perto para estudar.
+
+

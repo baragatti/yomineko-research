@@ -106,3 +106,33 @@ Juntando tudo: 毎日研究を続けて、日本語がだんだん分かるよ�
 - だんだん (aos poucos) + 分かる (entender) + ようになった (passou a). A estrutura 〜ようになる marca a mudança gradual; だんだん reforça o ritmo lento.
 - frases: `sent:tatoeba-10680231`
 
+### 6. (matching) Ligue cada kanji novo desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["楽", "divertido"], ["着", "vestir"], ["研", "estudar"], ["究", "investigar"], ["身", "corpo"]]}`
+- 楽 é o prazer e também a música, 着 é vestir e chegar, 研 é estudar a fundo, 究 é investigar até o fim e 身 é o corpo, a própria pessoa.
+
+
+### 7. (production) Escreva em japonês o adjetivo que significa divertido, agradável.
+- **Resposta:** `{"text": "楽しい", "accept": ["楽しい", "たのしい"]}`
+- 楽しい (たのしい) guarda o kanji 楽 e deixa しい em kana. Esse okurigana é o que separa o adjetivo 楽しい do verbo 楽しむ.
+
+
+### 8. (production) Escreva em japonês a palavra que significa quimono, a vestimenta tradicional japonesa.
+- **Resposta:** `{"text": "着物", "accept": ["着物", "きもの"]}`
+- 着物 (きもの) é a coisa que se veste: 着 na leitura き mais 物. O sentido literal ajuda a fixar o kanji.
+
+
+### 9. (production) Escreva o kanji que significa estudar a fundo, pesquisar, e que também quer dizer afiar.
+- **Resposta:** `{"text": "研", "accept": ["研", "けん"]}`
+- 研 tem à esquerda o radical da pedra: afiar uma lâmina na pedra virou a imagem de estudar até deixar afiado. Em palavras compostas lê-se けん.
+
+
+### 10. (production) Escreva o kanji que significa investigar até o fim, dominar um assunto.
+- **Resposta:** `{"text": "究", "accept": ["究", "きゅう"]}`
+- 究 tem em cima o radical da caverna e embaixo o 九 que você já conhece: é o gesto de ir até o fundo do buraco. Em palavras compostas lê-se きゅう.
+
+
+### 11. (production) Escreva o kanji que diz o corpo e a pessoa ao mesmo tempo. Não é 体, que é só o corpo físico, nem 自, que é só a ideia de próprio.
+- **Resposta:** `{"text": "身", "accept": ["身", "み"]}`
+- 身 desenha um corpo de perfil e, sozinho, lê-se み. Ele guarda os dois sentidos de uma vez: o corpo físico e a pessoa que mora nele. 体 dá conta só do primeiro, 自 só do segundo.
+
+

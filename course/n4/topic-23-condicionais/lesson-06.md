@@ -109,3 +109,23 @@ Em だけで, o verbo que vem antes fica na forma simples (dicionário), não na
 - 雨 + の + 場合は ('no caso de chuva') + 中止です ('é cancelamento'). É o molde 'X の場合は Y' usado em avisos e regras.
 
 
+### 6. (recognition) Qual é o significado do kanji 主?
+- **Resposta:** `{"choices": ["dono", "país", "razão", "trabalho"], "correct": "dono"}`
+- 主 quer dizer principal, dono. A leitura on シュ é a mais comum, e a kun ぬし aparece quando ele vem sozinho.
+
+
+### 7. (production) Escreva o kanji que significa "principal, dono", de leitura on シュ.
+- **Resposta:** `{"text": "主", "accept": ["主", "ぬし", "シュ", "しゅ"]}`
+- 主 tem cinco traços e sozinho lê-se ぬし: o dono. Em palavras compostas ele passa para a leitura on シュ.
+
+
+### 8. (recognition) Qual é o significado do kanji 持?
+- **Resposta:** `{"choices": ["segurar", "mão", "tempo", "lugar"], "correct": "segurar"}`
+- 持 tem 手 (mão) do lado esquerdo: a mão que segura. Ele fica perto de 時 (tempo) na escrita, mas 時 começa com 日.
+
+
+### 9. (production) Escreva em japonês o verbo "segurar, carregar", com o kanji 持 e a leitura もつ.
+- **Resposta:** `{"text": "持つ", "accept": ["持つ", "もつ"]}`
+- 持つ guarda a leitura kun もつ. Em palavras compostas o kanji passa para a leitura on ジ.
+
+

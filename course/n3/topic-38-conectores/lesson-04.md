@@ -96,3 +96,43 @@ O kanji 約 significa "promessa" e também "aproximadamente". O radical da esque
 - など vem colado ao último exemplo (ケーキなど) e recebe を + 食べました. Os itens podem ser ligados por や ('e, entre outros') ou por virgula; など fecha a ideia de 'e coisas assim'.
 
 
+### 6. (recognition) Na palavra 安全 (segurança), o que o kanji 全 traz?
+- **Resposta:** `{"choices": ["todo", "barato", "juntar", "encontrar"], "correct": "todo"}`
+- 全 é 'todo, inteiro' e aqui se lê ぜん. 安全 é 安 (tranquilo) + 全 (inteiro): a segurança é estar tranquilo por completo.
+
+
+### 7. (cloze) Qual é o kanji que falta em 'segurança' (あんぜん), escrita 安＿?
+- **Resposta:** `{"text": "全", "full": "安全"}`
+- 安全 é 安 (tranquilo) + 全 (inteiro). O kanji que faltava é 全, lido ぜん.
+
+
+### 8. (recognition) Na palavra 文化 (cultura), qual ideia o kanji 化 carrega?
+- **Resposta:** `{"choices": ["mudança", "flor", "fogo", "o quê"], "correct": "mudança"}`
+- 化 é 'mudança, transformar-se': em 文化 é a escrita que se transforma em cultura. As outras três opções também se leem か, então aqui o que decide é o sentido, não o som.
+
+
+### 9. (cloze) Qual é o kanji que falta em 'cultura' (ぶんか), escrita 文＿?
+- **Resposta:** `{"text": "化", "full": "文化"}`
+- 文化 é 文 (escrita) + 化 (transformar): a cultura como aquilo em que a escrita se converte. O kanji que faltava é 化, lido か.
+
+
+### 10. (recognition) Em 最後 (o último, o fim) e 最近 (recentemente), o que o kanji 最 acrescenta?
+- **Resposta:** `{"choices": ["mais", "depois", "perto", "juntar"], "correct": "mais"}`
+- 最 é o superlativo: 'o mais', levado ao grau máximo. Quem diz para que lado é o segundo kanji, 後 (depois) em 最後 e 近 (perto) em 最近; 最 sempre abre a palavra, lido さい.
+
+
+### 11. (production) Escreva em japonês, com os dois kanji, o advérbio 'recentemente, ultimamente'.
+- **Resposta:** `{"text": "最近", "accept": ["最近", "さいきん"]}`
+- É 最近: 'o mais perto' no tempo, ou seja, o passado recente. Os dois kanji ficam na leitura sino-japonesa, さい + きん.
+
+
+### 12. (recognition) O kanji 約, lido やく, aparece em palavras de compromisso e também antes de um número, com o sentido de 'mais ou menos'. Qual é o significado dele?
+- **Resposta:** `{"choices": ["promessa", "esperar", "enviar", "cortar"], "correct": "promessa"}`
+- 約 é a 'promessa, o combinado': uma reserva ou um contrato é sempre um compromisso firmado. Antes de um número o mesmo kanji vira 'aproximadamente'.
+
+
+### 13. (production) Escreva só o kanji lido やく que significa 'promessa, combinado'.
+- **Resposta:** `{"text": "約", "accept": ["約"]}`
+- É 約, nove traços, com o fio de seda à esquerda: a ideia de amarrar um acordo. Lido やく, ele fecha as palavras de compromisso e também abre a palavra da promessa.
+
+

@@ -91,3 +91,13 @@ O kanji 頂 ('topo, cume; receber') aparece em 頂上 ('cume, topo') e em 頂く
 - だが é um 'mas' firme que liga duas frases. Aqui contrasta o esforço com a falta de resultado.
 
 
+### 6. (recognition) 頂上 e 頂く usam o mesmo kanji com leituras diferentes. Como se lê 頂上, a palavra que quer dizer 'cume, topo'?
+- **Resposta:** `{"choices": ["ちょうじょう", "いただく", "いただき", "いただきます"], "correct": "ちょうじょう"}`
+- 頂 tem duas vidas. Com a leitura sino-japonesa チョウ ele abre 頂上, o ponto mais alto de uma montanha. Com a leitura nativa いただ ele faz 頂く, 'receber' na forma humilde, e é daí que vem o 頂きます da hora da refeição.
+
+
+### 7. (production) Escreva em japonês, com kanji, o verbo humilde que significa 'receber' e se lê いただく.
+- **Resposta:** `{"text": "頂く", "accept": ["頂く", "いただく"]}`
+- 頂く é receber levantando a coisa até o alto da cabeça, o mesmo kanji do cume 頂上. É a forma humilde: quem recebe se abaixa diante de quem dá.
+
+

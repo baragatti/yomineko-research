@@ -106,3 +106,43 @@ O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de
 - Com substantivo, o conector é の: 休みのはずだ. はずだ marca a expectativa lógica baseada no que você sabe (a escala, o calendário). É dedução, não obrigação.
 
 
+### 7. (recognition) Qual destes kanji significa 'fila, fileira'?
+- **Resposta:** `{"choices": ["列", "別", "死", "切"], "correct": "列"}`
+- 列 divide a metade esquerda com 死 e a faca da direita com 別 e 切. Lê-se レツ e significa 'fila': 列車 é o trem, os vagões enfileirados.
+
+
+### 8. (production) Escreva 'trem' em japonês, com kanji.
+- **Resposta:** `{"text": "列車", "accept": ["列車", "れっしゃ"]}`
+- 列車 é 列 (fila) + 車 (veículo): os vagões em fila. A leitura é れっしゃ; repare que o primeiro kanji encurta antes do segundo.
+
+
+### 9. (recognition) Qual destes kanji significa 'entalhar, gravar' e, por extensão, 'instante'?
+- **Resposta:** `{"choices": ["刻", "時", "列", "別"], "correct": "刻"}`
+- 刻 tem a faca à direita, a mesma de 列 e 別: marcar entalhando. Marcar o tempo em pequenos cortes deu o sentido de 'instante', e por isso 時刻 é a hora exata, mais precisa do que 時 sozinho.
+
+
+### 10. (production) Escreva 'hora exata (do relógio)' em japonês, com kanji.
+- **Resposta:** `{"text": "時刻", "accept": ["時刻", "じこく"]}`
+- 時刻 é 時 (tempo) + 刻 (marca gravada): o ponto exato no relógio. Lê-se じこく.
+
+
+### 11. (recognition) Qual destes kanji significa 'ainda mais, além disso'?
+- **Resposta:** `{"choices": ["更", "変", "最", "増"], "correct": "更"}`
+- 更 lê-se さら quando vem sozinho, em 更に, e コウ em compostos, como 変更. 最 marca o grau máximo e 増 é aumentar em quantidade; 更 acrescenta mais um passo ao que já havia.
+
+
+### 12. (production) Escreva 'mudança, alteração' em japonês, com kanji.
+- **Resposta:** `{"text": "変更", "accept": ["変更", "へんこう"]}`
+- 変更 é 変 (mudar) + 更 (renovar): trocar o que já estava definido. Lê-se へんこう.
+
+
+### 13. (recognition) Qual destes kanji significa 'concordar, aprovar'?
+- **Resposta:** `{"choices": ["賛", "買", "質", "成"], "correct": "賛"}`
+- 賛 termina com a mesma concha que serve de pé a 買 e a 質. Lê-se サン e significa 'aprovar': 賛成 é concordar com uma proposta, e 成 é a segunda metade dessa palavra.
+
+
+### 14. (production) Escreva 'concordar, aprovação' em japonês, com kanji.
+- **Resposta:** `{"text": "賛成", "accept": ["賛成", "さんせい"]}`
+- 賛成 é 賛 (aprovar) + 成 (concretizar-se), lido さんせい. Anda com する: 賛成する é dizer que se concorda.
+
+

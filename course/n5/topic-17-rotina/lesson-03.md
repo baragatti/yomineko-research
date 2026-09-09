@@ -104,3 +104,23 @@ Em お母さん, o かあ é uma vogal longa: segure por DOIS tempos (duas palma
 - 夕飯を食べる (jantar) vira 食べてから (depois de jantar) + 休みます (descanso). A forma て + から coloca o descanso DEPOIS da refeição.
 
 
+### 6. (recognition) Sozinho, 南 nomeia um dos pontos cardeais. Como se lê?
+- **Resposta:** `{"choices": ["みなみ", "きた", "ひがし", "にし"], "correct": "みなみ"}`
+- 南 sozinho é みなみ, "sul". Os outros três pontos cardeais já vistos são 北 (きた), 東 (ひがし) e 西 (にし); vale decorar os quatro juntos.
+
+
+### 7. (production) Escreva em japonês "sul" (みなみ), com o kanji.
+- **Resposta:** `{"text": "南", "accept": ["南", "みなみ"]}`
+- 南 (みなみ) fecha o quarteto dos pontos cardeais ao lado de 北, 東 e 西. Em compostos ele muda para a leitura chinesa ナン.
+
+
+### 8. (recognition) Ao falar da própria mãe com outra pessoa, o japonês usa 母. Como se lê essa palavra?
+- **Resposta:** `{"choices": ["はは", "おんな", "おとこ", "ひと"], "correct": "はは"}`
+- 母, falando da própria mãe, lê-se はは. As outras opções são as leituras nativas de 女 (おんな), 男 (おとこ) e 人 (ひと).
+
+
+### 9. (production) Escreva em japonês o tratamento respeitoso para "mãe" (おかあさん), com o kanji.
+- **Resposta:** `{"text": "お母さん", "accept": ["お母さん", "おかあさん"]}`
+- お母さん junta o prefixo de respeito お, o kanji 母 e o sufixo さん. Use-o para chamar a sua mãe ou para falar da mãe de outra pessoa; 母 (はは) sozinho é como você fala da sua própria mãe para fora de casa.
+
+

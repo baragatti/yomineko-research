@@ -105,3 +105,43 @@ Estas palavras combinam muito com なる e する. Repare em como cada uma escol
 - 明るい (adjetivo-い) → 明るく + する porque VOCÊ provoca a mudança. Com なる ('部屋が明るくなる') seria o quarto clareando sozinho.
 - frases: `sent:gen-f1534c9baa43`
 
+### 7. (recognition) O kanji 切 aparece em 切る e em 大切. Qual é a ideia central dele?
+- **Resposta:** `{"choices": ["cortar", "esperar", "girar", "perguntar"], "correct": "cortar"}`
+- 切 é cortar, a lâmina que separa. Em 大切 a ideia gira para outro lado: algo importante, aquilo que se guarda com cuidado.
+
+
+### 8. (production) Escreva em japonês, com kanji, o verbo "cortar" na forma de dicionário.
+- **Resposta:** `{"text": "切る", "accept": ["切る", "きる"]}`
+- 切る se lê きる. Só o 切 é kanji; る é a terminação do verbo.
+
+
+### 9. (recognition) Qual destes kanji significa "esperar"?
+- **Resposta:** `{"choices": ["待", "持", "特", "時"], "correct": "待"}`
+- 待 é esperar. Ele anda com um bando parecidíssimo: 持 é segurar, 特 é especial e 時 é hora. Todos repetem o mesmo bloco à direita; o que muda é a peça da esquerda.
+
+
+### 10. (production) Escreva em japonês, com kanji, o verbo "esperar" na forma de dicionário.
+- **Resposta:** `{"text": "待つ", "accept": ["待つ", "まつ"]}`
+- 待つ se lê まつ. Só o 待 é kanji; つ é a terminação do verbo.
+
+
+### 11. (recognition) Como se lê a palavra 質問?
+- **Resposta:** `{"choices": ["しつもん", "もんだい", "でんわ", "かいわ"], "correct": "しつもん"}`
+- 質問 se lê しつもん e é a pergunta. 質 traz natureza, qualidade, e 問 é perguntar; もんだい é 問題, que repete o 問, e かいわ é 会話, que repete o 話 de 電話.
+
+
+### 12. (production) Escreva em japonês, com kanji, a palavra "pergunta".
+- **Resposta:** `{"text": "質問", "accept": ["質問", "しつもん"]}`
+- 質問 se lê しつもん. O 質 aqui não é qualidade solta: ele forma dupla com 問 e o par inteiro vira a pergunta que alguém faz.
+
+
+### 13. (recognition) O kanji 転 aparece em 自転車 e em 運転. Que ideia ele carrega?
+- **Resposta:** `{"choices": ["girar, rolar", "cortar", "esperar", "enviar"], "correct": "girar, rolar"}`
+- 転 é girar, rolar. Daí 自転車 ser a bicicleta, o veículo que gira por conta própria, e 運転 ser o ato de dirigir.
+
+
+### 14. (production) Escreva em japonês, com kanji, a palavra "bicicleta".
+- **Resposta:** `{"text": "自転車", "accept": ["自転車", "じてんしゃ"]}`
+- 自転車 se lê じてんしゃ: 自 mais 転 mais 車, o veículo que gira sozinho.
+
+

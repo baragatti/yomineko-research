@@ -104,3 +104,13 @@ Não traduza "vezes" e "anos" como palavras soltas. Em japonês eles são sufixo
 - 二 (dois) + 回 (かい, contador de vezes) = 二回 (にかい), 'duas vezes'. Lembre que 回 conta ocorrências, não objetos.
 
 
+### 6. (recognition) O kanji 大 aparece na palavra 大きな. O que ele significa?
+- **Resposta:** `{"choices": ["grande", "pessoa", "dez", "dois"], "correct": "grande"}`
+- 大 é o desenho de alguém de braços abertos: quer dizer grande. As outras opções são o sentido de 人 (pessoa), 十 (dez) e 二 (dois), kanji que você já viu.
+
+
+### 7. (production) Escreva em japonês a palavra que significa grande e que gruda direto antes do substantivo.
+- **Resposta:** `{"text": "大きな", "accept": ["大きな", "おおきな"]}`
+- 大きな (おおきな) usa a leitura おお de 大. Ela só existe antes de um substantivo, então aparece sempre colada na coisa que descreve.
+
+

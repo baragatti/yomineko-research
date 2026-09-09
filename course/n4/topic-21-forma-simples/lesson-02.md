@@ -102,3 +102,28 @@ Use って感じ só no casual. Para soar mais neutro, dá para dizer という�
 - トム + ではないか marca a descoberta ('ora, não é o Tom?!'). A versão ainda mais casual seria トムじゃないか; a mesma ideia, só mais coloquial.
 - frases: `sent:tatoeba-200192`
 
+### 6. (recognition) Qual destes kanji significa 'coisa, assunto' e se lê こと quando aparece sozinho?
+- **Resposta:** `{"choices": ["事", "言", "名", "話"], "correct": "事"}`
+- 事 (こと) é a coisa abstrata: um assunto, um fato, algo que acontece, nunca um objeto que se pega na mão. Dentro dos compostos ele troca a leitura para ジ.
+
+
+### 7. (recognition) O adjetivo 同じ (おなじ) aparece o tempo todo em constatações. O que ele quer dizer?
+- **Resposta:** `{"choices": ["mesmo", "velho", "nome", "direita"], "correct": "mesmo"}`
+- 同 tem 口 ('boca') dentro de uma moldura: todo mundo falando a mesma coisa. Sozinho, com okurigana, ele lê おな (同じ); nos compostos vira ドウ.
+
+
+### 8. (production) Escreva em japonês, com kanji, o adjetivo que significa 'mesmo, igual' e se lê おなじ.
+- **Resposta:** `{"text": "同じ", "accept": ["同じ", "おなじ"]}`
+- 同じ mantém o kanji 同 e deixa o じ em hiragana. É esse じ que marca o adjetivo; sem ele, 同 sozinho só aparece dentro de compostos.
+
+
+### 9. (recognition) 自分 (じぶん) aparece sempre que alguém fala da própria pessoa. O que essa palavra significa?
+- **Resposta:** `{"choices": ["si mesmo", "olho", "orelha", "carro"], "correct": "si mesmo"}`
+- 自 é o 目 ('olho') com um traço em cima, o dedo apontando para o próprio nariz, que no Japão é o gesto de dizer 'eu'. Com 分 ('parte'), 自分 é a parte que é minha: si mesmo.
+
+
+### 10. (production) Escreva em japonês, com kanji, o pronome que significa 'si mesmo, eu mesmo' e se lê じぶん.
+- **Resposta:** `{"text": "自分", "accept": ["自分", "じぶん"]}`
+- 自分 abre com 自, e é aí que mora a leitura ジ. Ela é a leitura mais produtiva do caractere: quase todo composto de 自 começa por ela.
+
+

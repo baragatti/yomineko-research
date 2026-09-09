@@ -94,3 +94,43 @@ O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o 
 - ～といいかなあ é o jeito natural de soltar um desejo brando: 'tomara que dê certo de eu ficar feliz'. O かなあ alongado dá o tom de quem fala consigo mesmo. Mantenha o registro informal.
 
 
+### 6. (recognition) Qual destes kanji significa "sonho"?
+- **Resposta:** `{"choices": ["夢", "無", "望", "暗"], "correct": "夢"}`
+- 夢 é o sonho. 無 divide com ele a leitura chinesa ム; 望 fala de esperança e de desejar, vizinho de sentido; 暗 (escuro) divide a leitura くら, e é no escuro que se sonha.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra que significa "sonho (durante o sono)" e se lê ゆめ.
+- **Resposta:** `{"text": "夢", "accept": ["夢", "ゆめ"]}`
+- 夢 é o sonho que se tem dormindo, e é também a palavra usada para o sonho no sentido de projeto de vida; o contexto decide qual dos dois.
+
+
+### 8. (recognition) Qual destes kanji significa "afundar, submergir"?
+- **Resposta:** `{"choices": ["沈", "深", "消", "静"], "correct": "沈"}`
+- 沈 é afundar, ir para o fundo. 深 (profundo) e 消 (apagar) trazem as mesmas três gotas de água à esquerda; 静 divide com 沈 a leitura しず e é o mais fácil de trocar.
+
+
+### 9. (production) Escreva em japonês, com kanji, o verbo que significa "afundar, submergir" e se lê しずむ.
+- **Resposta:** `{"text": "沈む", "accept": ["沈む", "しずむ"]}`
+- 沈む serve tanto para o navio que afunda quanto para o sol que se põe no mar. É intransitivo: a coisa afunda sozinha, ninguém a afunda.
+
+
+### 10. (recognition) Qual destes kanji significa "perder-se, desviar"?
+- **Resposta:** `{"choices": ["迷", "違", "進", "遅"], "correct": "迷"}`
+- 迷 é perder o caminho e, por extensão, ficar na dúvida. Os quatro trazem o mesmo radical de caminho embaixo e à esquerda, que marca movimento: 違 é diferir, 進 é avançar e 遅 é atrasar-se.
+
+
+### 11. (production) Escreva em japonês, com kanji, a palavra que significa "criança perdida" e se lê まいご.
+- **Resposta:** `{"text": "迷子", "accept": ["迷子", "まいご"]}`
+- 迷子 é quem se perdeu: 迷 (perder-se) mais 子 (criança). A leitura まいご é irregular, então guarde a palavra inteira e não kanji por kanji.
+
+
+### 12. (recognition) Qual destes kanji significa "desejar, pedir"?
+- **Resposta:** `{"choices": ["願", "顔", "頼", "頭"], "correct": "願"}`
+- 願 é desejar de coração, quase rogar. Os quatro terminam no mesmo radical de cabeça à direita: 顔 é rosto, 頭 é cabeça e 頼 é pedir um favor. 顔 ainda divide com 願 a leitura ガン.
+
+
+### 13. (production) Escreva em japonês, com kanji, o verbo que significa "desejar, almejar" e se lê ねがう.
+- **Resposta:** `{"text": "願う", "accept": ["願う", "ねがう"]}`
+- 願う é desejar com força, quase pedir a alguém. O substantivo da mesma família é 願い (ねがい), o desejo em si.
+
+

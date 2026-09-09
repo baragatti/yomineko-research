@@ -105,3 +105,28 @@ O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻)
 - 書く vira o radical 書き + 上げる, no passado 上げた: 書き上げた ('terminei de escrever, por completo'). A versão polida é 書き上げました.
 
 
+### 6. (matching) Relacione cada kanji ao seu significado.
+- **Resposta:** `{"pairs": [["与", "dar, conceder"], ["供", "oferecer, acompanhar"], ["常", "habitual, constante"], ["放", "soltar, liberar"]]}`
+- 与 é entregar algo a alguém; 供 é oferecer e acompanhar; 常 é o que se repete sempre; 放 é soltar, deixar ir. 与 e 常 ganham okurigana e viram palavras (与える, 常に); 供 e 放 vivem dentro de compostos.
+
+
+### 7. (matching) Relacione os três kanji restantes desta lição ao seu significado.
+- **Resposta:** `{"pairs": [["状", "condição, estado"], ["球", "bola, esfera"], ["職", "emprego, profissão"]]}`
+- 状 descreve em que estado algo está; 球 é a bola, a esfera; 職 é o emprego, a ocupação de alguém. 状 e 職 aparecem quase sempre em compostos, nunca sozinhos.
+
+
+### 8. (production) Escreva em japonês "criança" (こども), com o kanji.
+- **Resposta:** `{"text": "子供", "accept": ["子供", "子ども", "こども"]}`
+- 子供 junta 子 ("criança") a 供, que aqui funciona como sufixo; a leitura é こども. A grafia 子ども, com ども em hiragana, é igualmente comum no dia a dia.
+
+
+### 9. (production) Escreva em japonês "transmissão (de rádio ou TV)" (ほうそう), com os kanji.
+- **Resposta:** `{"text": "放送", "accept": ["放送", "ほうそう"]}`
+- 放送 é 放 ("soltar, lançar") mais 送 ("enviar"): lançar no ar e mandar longe. A leitura de 放 aqui é ホウ.
+
+
+### 10. (production) Escreva em japonês o advérbio "sempre, constantemente" (つねに), com o kanji.
+- **Resposta:** `{"text": "常に", "accept": ["常に", "つねに"]}`
+- 常 (つね) é aquilo que é habitual; com に vira o advérbio 常に, "sempre". Na leitura chinesa o mesmo kanji é ジョウ.
+
+

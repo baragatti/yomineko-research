@@ -85,3 +85,23 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 - すっかり (completamente) vai antes do verbo: すっかり + 忘れました (esqueci). O advérbio reforça que a ação se completou por inteiro, sem sobrar nada.
 
 
+### 6. (recognition) Qual é o significado do kanji 特?
+- **Resposta:** `{"choices": ["especial", "coisa", "solo", "lugar"], "correct": "especial"}`
+- 特 quer dizer especial, particular. Ele não tem leitura kun: só a on トク, então aparece sempre dentro de palavras compostas.
+
+
+### 7. (production) Escreva o kanji que significa "especial, particular", de leitura トク.
+- **Resposta:** `{"text": "特", "accept": ["特", "トク", "とく"]}`
+- 特 tem dez traços e uma leitura só, トク. Como não existe leitura kun, ele nunca aparece sozinho como palavra.
+
+
+### 8. (recognition) Qual é o significado do kanji 計?
+- **Resposta:** `{"choices": ["calcular", "dizer", "língua", "ler"], "correct": "calcular"}`
+- 計 junta 言 (dizer) com 十 (dez): contar em voz alta. Ele significa medir, calcular, e é o 計 de 時計 (relógio).
+
+
+### 9. (production) Escreva em japonês "relógio", com os kanji 時 e 計 e a leitura とけい.
+- **Resposta:** `{"text": "時計", "accept": ["時計", "とけい"]}`
+- 時計 é o aparelho que mede (計) o tempo (時). A leitura とけい vem pronta: não se monta somando as leituras dos dois kanji.
+
+

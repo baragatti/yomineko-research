@@ -92,3 +92,33 @@ O par 師 + 走 forma 師走, o nome poético de dezembro: 'até o mestre corre'
 - 積む vira 積めば (condicional ば) + よかった = 'eu devia ter acumulado'. もっと ('mais') reforça o arrependimento. É sempre sobre o passado e sobre você mesmo.
 
 
+### 6. (matching) Relacione cada um destes seis kanji novos ao seu significado.
+- **Resposta:** `{"pairs": [["候", "clima, estação"], ["客", "convidado, cliente"], ["師", "professor, mestre"], ["敗", "derrota, perder"], ["横", "lateral, lado"], ["深", "profundo"]]}`
+- 候 é o tempo que faz numa região; 客 é quem chega de fora; 師 é quem domina um ofício; 敗 é perder; 横 é o que está de lado; 深 é o que vai fundo.
+
+
+### 7. (matching) Relacione cada um destes cinco kanji novos ao seu significado.
+- **Resposta:** `{"pairs": [["満", "cheio, encher"], ["登", "subir, escalar"], ["科", "departamento, disciplina"], ["路", "estrada, caminho"], ["達", "alcançar, atingir"]]}`
+- 満 é encher até a borda; 登 é subir com esforço; 科 divide o saber em áreas; 路 é a estrada; 達 é chegar aonde se queria.
+
+
+### 8. (production) Escreva em japonês "clima" (きこう), com os kanji.
+- **Resposta:** `{"text": "気候", "accept": ["気候", "きこう"]}`
+- 気候 é 気 ("ar, ânimo") mais 候 ("estação, tempo"): o padrão de tempo de uma região. 候 se lê コウ aqui, como em 天候 (てんこう), o tempo de um dia.
+
+
+### 9. (production) Escreva em japonês "professor, docente" (きょうし), com os kanji.
+- **Resposta:** `{"text": "教師", "accept": ["教師", "きょうし"]}`
+- 教師 junta 教 ("ensinar") a 師 ("mestre"). O mesmo 師 fecha 医師 (いし), "médico": ele marca quem domina um ofício.
+
+
+### 10. (production) Escreva em japonês "amigo" (ともだち), com os kanji.
+- **Resposta:** `{"text": "友達", "accept": ["友達", "友だち", "ともだち"]}`
+- 友達 é 友 ("amigo") com 達, que aqui funciona como marca de plural; a leitura nativa たち sonoriza dentro da palavra. Sozinho, 達 quer dizer "alcançar".
+
+
+### 11. (production) Escreva em japonês "estrada, via" (どうろ), com os kanji.
+- **Resposta:** `{"text": "道路", "accept": ["道路", "どうろ"]}`
+- 道路 é 道 ("caminho") mais 路 ("estrada"): dois kanji de caminho reforçando um ao outro. 路 se lê ロ nesse composto.
+
+

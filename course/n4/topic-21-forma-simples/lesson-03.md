@@ -98,3 +98,13 @@ Juntando tudo: 新しい傘は千円しかしなかった = "o guarda-chuva novo
 - 今 ('agora') + しか + ない. しか substitui partículas como は/が, então não se diz 今がしか; só 今しか. O negativo ない fecha o sentido 'é agora ou nunca'.
 
 
+### 6. (recognition) Qual é a leitura sino-japonesa mais frequente do kanji 地 (solo, terra, região), a que abre a maioria das palavras dele?
+- **Resposta:** `{"choices": ["チ", "ジ", "シ", "ト"], "correct": "チ"}`
+- 地 tem duas leituras sino-japonesas: チ, a comum, que abre ちず (mapa) e ちかてつ (metrô), e ジ, presa a poucas palavras. ト é a leitura do 土 que aparece dentro dele, e não vale para 地.
+
+
+### 7. (production) Escreva o kanji que significa 'solo, terra, região', o de ちず (mapa) e ちかてつ (metrô).
+- **Resposta:** `{"text": "地", "accept": ["地"]}`
+- 地 é a terra como lugar e região. Ele leva o radical 土 (terra) do lado esquerdo, e é daí que vem a confusão: 土 sozinho é o solo, o chão.
+
+

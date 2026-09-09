@@ -115,3 +115,83 @@ O 桜 (flor de cerejeira) tem o seu 盛り ('auge') por poucos dias na primavera
 - 年 (substantivo) + のわりには ('para a idade') + 若く見える ('parece jovem'). Lembre-se do の depois do substantivo; a estrutura marca a desproporção entre a idade e a aparência.
 
 
+### 7. (recognition) No verbo 勤める (つとめる), o que o kanji 勤 significa?
+- **Resposta:** `{"choices": ["trabalhar (emprego)", "dever", "esforçar-se", "passar por"], "correct": "trabalhar (emprego)"}`
+- 勤 é trabalhar num emprego, estar empregado em algum lugar. Repare no 力 (força) à direita. Os distratores também se leem つと ou きん, mas 務 é o dever e 努 é o esforço.
+
+
+### 8. (production) Escreva em japonês, com kanji e okurigana, o verbo 'trabalhar (num emprego), estar empregado em'.
+- **Resposta:** `{"text": "勤める", "accept": ["勤める", "つとめる"]}`
+- É 勤める. O substantivo que sai dele perde o る: 勤め (つとめ), o trabalho, o serviço.
+
+
+### 9. (recognition) Em 幸福 (felicidade) e 不幸 (infelicidade), o que o kanji 幸 traz?
+- **Resposta:** `{"choices": ["felicidade", "transportar", "sofrimento", "belo"], "correct": "felicidade"}`
+- 幸 é a 'felicidade, a boa sorte'. Quem inverte o sinal é o 不 da frente: 不幸 é a mesma felicidade negada. Nos compostos ele se lê こう; sozinho, 幸せ (しあわせ).
+
+
+### 10. (cloze) Qual é o kanji que falta em 'infelicidade, infortúnio' (ふこう), escrita 不＿?
+- **Resposta:** `{"text": "幸", "full": "不幸"}`
+- 不幸 é 不 (negativo) + 幸 (felicidade). Trocando 不 por 福 você tem 幸福 (こうふく), a felicidade afirmada.
+
+
+### 11. (recognition) Em 庭 (にわ) e 家庭 (かてい, lar), o que o kanji 庭 significa?
+- **Resposta:** `{"choices": ["jardim", "casa", "assento", "sentar"], "correct": "jardim"}`
+- 庭 é o 'jardim, o quintal', o espaço aberto que fica sob o beiral da casa. Sozinho lê-se にわ; em 家庭 ele vira てい.
+
+
+### 12. (production) Escreva em japonês, com os dois kanji, a palavra 'lar, família'.
+- **Resposta:** `{"text": "家庭", "accept": ["家庭", "かてい"]}`
+- É 家庭: 家 (casa) + 庭 (jardim), a casa com o seu terreno virou o nome do lar. Note a troca de leitura: にわ sozinho, てい no composto.
+
+
+### 13. (recognition) Na palavra 生徒 (せいと), o que o kanji 徒 traz?
+- **Resposta:** `{"choices": ["aluno", "vida", "terra", "alcançar"], "correct": "aluno"}`
+- 徒 é o 'seguidor, o aluno', quem vai atrás de um mestre, com o radical de caminhar à esquerda. Em 生徒 ele se lê と e nomeia o estudante da escola.
+
+
+### 14. (production) Escreva em japonês, com os dois kanji, a palavra 'aluno, estudante (de escola)'.
+- **Resposta:** `{"text": "生徒", "accept": ["生徒", "せいと"]}`
+- É 生徒, せいと. O mesmo 徒 aparece em 徒歩 (とほ), ir a pé: a ideia comum é a de quem caminha atrás.
+
+
+### 15. (recognition) Em 留学 (estudar no exterior) e 留守 (estar fora de casa), o que o kanji 留 traz?
+- **Resposta:** `{"choices": ["permanecer", "fluir", "estudo", "girar"], "correct": "permanecer"}`
+- 留 é 'permanecer, ficar retido': em 留学 é ficar num país para estudar, e em 留守 é a casa que fica guardada sem você. Cuidado com 流 (fluir), que também se lê りゅう e ocupa o mesmo lugar em muitos compostos.
+
+
+### 16. (production) Escreva em japonês, com os dois kanji, a palavra 'estudar no exterior, intercâmbio'.
+- **Resposta:** `{"text": "留学", "accept": ["留学", "りゅうがく"]}`
+- É 留学: permanecer (留) para estudar (学). Acrescentando 生 você tem 留学生 (りゅうがくせい), o estudante de intercâmbio.
+
+
+### 17. (recognition) Em 平等 (igualdade) e no adjetivo 等しい (ひとしい), o que o kanji 等 significa?
+- **Resposta:** `{"choices": ["igual", "responder", "alcançar", "curto"], "correct": "igual"}`
+- 等 é 'igual, do mesmo nível'. Cuidado com 答 (responder): os dois têm o bambu no topo e se leem とう, mas só 等 fala de igualdade. É o mesmo kanji do など das listas.
+
+
+### 18. (production) Escreva em japonês, com os dois kanji, a palavra 'igualdade'.
+- **Resposta:** `{"text": "平等", "accept": ["平等", "びょうどう"]}`
+- É 平等: 平 (plano) + 等 (igual), tudo no mesmo nível. Repare que aqui 等 sonoriza e vira どう, não とう.
+
+
+### 19. (recognition) Na palavra 老人 (ろうじん), o que o kanji 老 significa?
+- **Resposta:** `{"choices": ["velho", "pessoa", "pensar", "morrer"], "correct": "velho"}`
+- 老 é 'velho, idoso'. Quem é a pessoa é o 人 do fim; 老 só diz a idade. Repare que ele tem o mesmo topo de 考 (pensar), e a diferença está embaixo.
+
+
+### 20. (production) Escreva em japonês, com os dois kanji, a palavra 'idoso, pessoa idosa'.
+- **Resposta:** `{"text": "老人", "accept": ["老人", "ろうじん"]}`
+- É 老人, ろうじん. Na leitura nativa o mesmo kanji dá 老い (おい), a velhice, e o verbo 老ける (ふける), envelhecer.
+
+
+### 21. (recognition) Em 静か (しずか) e 冷静 (れいせい, de cabeça fria), o que o kanji 静 significa?
+- **Resposta:** `{"choices": ["quieto", "azul", "sentimento", "lugar"], "correct": "quieto"}`
+- 静 é 'quieto, calmo, imóvel'. O 青 fica à esquerda dele e só empresta o som せい; em 情 (sentimento) esse mesmo 青 aparece à direita, e é por isso que os dois se parecem tanto e significam coisas diferentes.
+
+
+### 22. (production) Escreva em japonês, com kanji e okurigana, o adjetivo-な 'quieto, calmo, silencioso'.
+- **Resposta:** `{"text": "静か", "accept": ["静か", "しずか"]}`
+- É 静か, um adjetivo-な: o か fica em kana e a leitura しず mora no kanji. Nos compostos ele muda para せい, como em 冷静 (れいせい).
+
+

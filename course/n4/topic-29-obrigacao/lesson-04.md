@@ -106,3 +106,13 @@ Por exemplo: 遊びに行く前に宿題をしないと ("antes de sair pra brin
 - 金曜日 (sexta) + までに (prazo-limite) + 送る → 送らない → 送らないと ('tenho que enviar'). É a combinação típica: までに marca o prazo e ないと a obrigação. O 'não pode' fica subentendido.
 
 
+### 6. (recognition) Como se lê 意味, 'significado'?
+- **Resposta:** `{"choices": ["いみ", "いま", "いち", "いろ"], "correct": "いみ"}`
+- 意 traz イ e 味 traz ミ: いみ. Repare que aqui 味 não tem nada a ver com comida: em composto ele vira o 'sabor' figurado, o sentido de uma coisa.
+
+
+### 7. (production) Escreva em japonês 'sabor, gosto (de uma comida)', あじ, com o kanji.
+- **Resposta:** `{"text": "味", "accept": ["味", "あじ"]}`
+- Sozinho, 味 é あじ, o sabor concreto da comida, e não à toa ele traz 口 (boca) à esquerda. Em composto ele passa a ミ e ganha sentido figurado, como em 意味.
+
+

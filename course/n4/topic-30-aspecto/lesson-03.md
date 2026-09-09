@@ -105,3 +105,23 @@ Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei 
 - 負ける → forma て 負けて + しまった = 負けてしまった (acabamos perdendo, que pena). Na fala vira 負けちゃった. O 〜てしまう aqui carrega o tom de algo indesejado.
 
 
+### 6. (recognition) Como se lê a palavra 夜 quando ela aparece sozinha, com o sentido de 'noite'?
+- **Resposta:** `{"choices": ["よる", "あさ", "ひ", "とし"], "correct": "よる"}`
+- Sozinho, 夜 lê-se よる ('noite'). あさ é 朝 ('manhã'), ひ é 日 ('dia') e とし é 年 ('ano'). Dentro de compostos, 夜 costuma virar ヤ.
+
+
+### 7. (production) Escreva em japonês a expressão que significa 'esta noite, hoje à noite', juntando 今 ('agora') com o kanji de 'noite'.
+- **Resposta:** `{"text": "今夜", "accept": ["今夜", "こんや"]}`
+- 今夜 (こんや) é 'hoje à noite'. Repare que 夜 muda de leitura conforme a companhia: sozinho é よる, no composto com 今 vira や.
+
+
+### 8. (recognition) Como se lê o adjetivo 悪い, que significa 'ruim, mau'?
+- **Resposta:** `{"choices": ["わるい", "たかい", "つよい", "あかるい"], "correct": "わるい"}`
+- 悪い lê-se わるい, com a leitura nativa わる mais o okurigana い. たかい é 高い ('alto, caro'), つよい é 強い ('forte') e あかるい vem de 明 ('claro'), todos adjetivos de kanji já conhecidos.
+
+
+### 9. (production) Escreva em japonês o adjetivo que significa 'ruim, mau', usando o kanji novo desta lição.
+- **Resposta:** `{"text": "悪い", "accept": ["悪い", "わるい"]}`
+- 悪い (わるい) é 'ruim' no sentido amplo: qualidade, comportamento, tempo. Nos compostos, 悪 troca para a leitura sino-japonesa アク.
+
+

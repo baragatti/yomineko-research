@@ -123,7 +123,7 @@ steps into a scratch DB (about 85 s, most of it `replay_all.py` re-dissecting th
 `export_corpus.py`, `export_course.py` and `export_readings.py` against it, and diffs the 790 files
 they write.
 
-**Steps 112-117 are replayed by the FULL mode only, and cannot join `--quick` (W11c, measured; W15's `apply_reading_passages.py` joined them at step 116).**
+**Steps 112-118 are replayed by the FULL mode only, and cannot join `--quick` (W11c, measured; W15's `apply_reading_passages.py` joined them at step 116 and W20's `apply_practice_exercises.py` at step 117).**
 `--quick` reconstructs the grammar family alone, so its scratch index has no `lesson` and no
 `vocab` rows: run under that step set, `apply_lesson_ref_addresses.py` and
 `apply_homograph_rulings.py` refuse every row ("no such lesson") and exit non-zero, and the three

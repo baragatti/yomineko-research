@@ -106,3 +106,28 @@ Resolva os exercícios finais do tópico e confira cada explicação.
 - O advérbio 危なく ('por um triz') vem primeiro, o verbo na forma de dicionário 転ぶ depois, e ところだった fecha carregando o tempo passado.
 
 
+### 7. (cloze) Complete com o kanji que falta: 電___ (でんぽう) é 'telegrama'.
+- **Resposta:** `{"text": "報", "full": "電報"}`
+- 報 é a notícia, aquilo que se comunica. Com 電 ('eletricidade') na frente vira 電報, a notícia mandada pelo fio. Repare que ほう soa ぽう depois de でん.
+
+
+### 8. (production) Escreva em japonês 'dedo (da mão)', palavra que se lê ゆび.
+- **Resposta:** `{"text": "指", "accept": ["指", "ゆび"]}`
+- 指 sozinho lê-se ゆび. À esquerda dele está a mão, o componente que marca vários kanji de gesto, e é por ela que 指 se separa de 支, com quem divide a leitura chinesa し.
+
+
+### 9. (production) Escreva em japonês 'preparativos', palavra que se lê したく.
+- **Resposta:** `{"text": "支度", "accept": ["支度", "したく"]}`
+- 支 traz a ideia de escorar, sustentar, e 度 é a medida. Juntos formam 支度 (したく), os preparativos que dão base ao que vem depois.
+
+
+### 10. (recognition) Qual destes kanji significa 'direito, autoridade'?
+- **Resposta:** `{"choices": ["支", "権", "報", "指"], "correct": "権"}`
+- 権 é o direito e a autoridade: o poder reconhecido de fazer alguma coisa. É o único dos quatro escrito com 木 à esquerda, e essa metade basta para achá-lo numa lista.
+
+
+### 11. (production) Escreva em japonês 'ponto, nota (de prova)', palavra que se lê てん.
+- **Resposta:** `{"text": "点", "accept": ["点", "てん"]}`
+- 点 (てん) é o ponto e também a nota de uma prova. O mesmo kanji aparece em 点ける (つける), acender: pôr um ponto de luz.
+
+

@@ -102,3 +102,23 @@ Um aviso de tom: dar conselho direto a alguém de status superior (chefe, profes
 - 早く (cedo) + 寝た (forma た de 寝る) + ほうがいい. Acrescentar です no fim deixa mais polido, mas o miolo é o mesmo: verbo na forma た + ほうがいい.
 
 
+### 6. (recognition) Como se lê o verbo 聞く?
+- **Resposta:** `{"choices": ["きく", "みる", "はなす", "いく"], "correct": "きく"}`
+- 聞く se lê きく e quer dizer ouvir, e também perguntar. O kanji desenha uma orelha dentro de um portão: alguém escutando atrás da porta.
+
+
+### 7. (production) Escreva em japonês, com kanji, o verbo "ouvir, escutar" na forma de dicionário.
+- **Resposta:** `{"text": "聞く", "accept": ["聞く", "きく"]}`
+- 聞く se lê きく. Só o 聞 é kanji; o く fica em hiragana porque é a terminação do verbo.
+
+
+### 8. (recognition) O kanji 電 aparece em 電気 e em 電話. Que ideia ele traz?
+- **Resposta:** `{"choices": ["eletricidade", "água", "dinheiro", "ar"], "correct": "eletricidade"}`
+- 電 é eletricidade. Por isso 電気 é a luz da casa e 電話 é o telefone: a fala que corre pela eletricidade.
+
+
+### 9. (production) Escreva em japonês, com kanji, a palavra "telefone".
+- **Resposta:** `{"text": "電話", "accept": ["電話", "でんわ"]}`
+- 電話 se lê でんわ: 電 mais 話, a conversa que viaja pela eletricidade. Guardar essa soma evita a troca com 電気, que é a eletricidade em si.
+
+

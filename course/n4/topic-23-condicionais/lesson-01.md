@@ -104,3 +104,13 @@ Dois kanji simples e muito frequentes entram aqui, um deles direto do vocabulár
 - たら sai do passado simples: 止める → 止めた → 止めたら. 止める (とめる) é o transitivo, o que age sobre algo: 車を止める, 音を止める ('parar o carro', 'desligar o som'). O par intransitivo é 止まる (とまる), quando algo para sozinho, e daria 止まったら.
 
 
+### 7. (recognition) Qual é o significado do kanji 体?
+- **Resposta:** `{"choices": ["corpo", "descansar", "árvore", "pessoa"], "correct": "corpo"}`
+- 体 é o corpo. Cuidado com 休 ('descansar'): os dois têm a mesma coluna de traços à esquerda, mas 体 traz 本 à direita e 休 traz 木.
+
+
+### 8. (production) Escreva em japonês 'corpo', palavra que se lê からだ.
+- **Resposta:** `{"text": "体", "accept": ["体", "からだ"]}`
+- 体 sozinho lê-se からだ e é o corpo, inclusive no sentido de saúde. Em compostos ele troca para a leitura chinesa たい.
+
+

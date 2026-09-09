@@ -116,3 +116,53 @@ O kanji 断 significa "cortar, recusar, decisão". À direita o machado (斤): C
 - Usa-se a forma PASSADA do verbo + とおり porque a instrução já foi dada: 言ったとおり ('como disse'). O に torna advérbio (とおりに) e した é 'fiz'. Resultado: '(eu) fiz conforme o professor disse'.
 
 
+### 7. (recognition) Qual destes kanji significa 'gentil, delicado' e, num segundo sentido, 'superior'?
+- **Resposta:** `{"choices": ["優", "側", "働", "親"], "correct": "優"}`
+- 優 traz o radical de pessoa à esquerda e significa 'gentil, delicado'; no sentido de 'superior' ele aparece em 優勝. Sozinho lê-se やさ, em 優しい; em compostos, ユウ. 側 e 働 dividem o mesmo radical, e 親 fica no campo do 'próximo, íntimo'.
+
+
+### 8. (production) Escreva 'gentil, delicado' como adjetivo い em japonês, com kanji.
+- **Resposta:** `{"text": "優しい", "accept": ["優しい", "やさしい"]}`
+- 優しい é adjetivo-い: 優 guarda a raiz やさ e しい fica como okurigana. Vale para uma pessoa gentil e também para algo suave, como uma luz fraca.
+
+
+### 9. (recognition) Qual destes kanji significa 'recolher, guardar'?
+- **Resposta:** `{"choices": ["収", "取", "受", "集"], "correct": "収"}`
+- 収 tem só quatro traços e termina com o mesmo desenho de mão que aparece em 取. Significa 'recolher, guardar no lugar certo'. 受 é receber o que vem de fora e 集 é reunir várias coisas.
+
+
+### 10. (production) Escreva 'guardar, recolher' na forma de dicionário, com kanji.
+- **Resposta:** `{"text": "収める", "accept": ["収める", "おさめる"]}`
+- Em 収める o kanji guarda a raiz おさ e o resto fica como okurigana. Usa-se para guardar algo num espaço e também para obter um resultado.
+
+
+### 11. (recognition) Qual destes kanji significa 'marido'?
+- **Resposta:** `{"choices": ["夫", "大", "天", "父"], "correct": "夫"}`
+- 夫, 大 e 天 são quase o mesmo desenho. 大 é a base; 天 acrescenta uma linha por cima dela; em 夫 essa linha de cima é atravessada pelo traço que desce da esquerda. Sozinho lê-se おっと, 'marido'; em compostos, フ.
+
+
+### 12. (production) Escreva 'marido' em japonês, com kanji.
+- **Resposta:** `{"text": "夫", "accept": ["夫", "おっと"]}`
+- 夫 sozinho é おっと e é como se fala do próprio marido. Não leva okurigana.
+
+
+### 13. (recognition) Qual destes kanji significa 'interromper, cortar' e também 'decidir'?
+- **Resposta:** `{"choices": ["断", "切", "決", "新"], "correct": "断"}`
+- 断 tem à direita o mesmo elemento de machado que aparece em 新, e por isso 'cortar, interromper'. Quando o que se corta é a hesitação, o sentido vira 'decidir': 判断 é o julgamento ponderado. 切 corta fisicamente e 決 decide sem a ideia de corte.
+
+
+### 14. (production) Escreva 'julgamento, decisão' em japonês, com kanji.
+- **Resposta:** `{"text": "判断", "accept": ["判断", "はんだん"]}`
+- 判断 é 判 (julgar) + 断 (cortar a dúvida), lido はんだん. É a palavra para uma avaliação ponderada.
+
+
+### 15. (recognition) Qual destes kanji significa 'difícil'?
+- **Resposta:** `{"choices": ["難", "集", "進", "悪"], "correct": "難"}`
+- 難 termina com o mesmo elemento de pássaro que aparece em 集 e em 進, e é por aí que a confusão de forma acontece. A leitura nativa é むずか, como em 難しい; em compostos vira ナン e significa 'dificuldade'.
+
+
+### 16. (production) Escreva 'difícil' como adjetivo い em japonês, com kanji.
+- **Resposta:** `{"text": "難しい", "accept": ["難しい", "むずかしい"]}`
+- 難しい é adjetivo-い: 難 guarda a raiz むずか e しい é okurigana. É a palavra do dia a dia para 'difícil, complicado'.
+
+

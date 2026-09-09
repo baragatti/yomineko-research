@@ -100,3 +100,43 @@ O kanji 突 significa 'perfurar, cravar, de repente'. Tem a abertura (穴) em ci
 - 禁止する na passiva 禁止される + ても = 'mesmo que seja proibido'. O resultado (やる人がいる, 'tem gente que faz') acontece apesar da proibição: concessão típica de 〜ても.
 
 
+### 6. (recognition) Na palavra 他 (ほか), qual é o significado do kanji?
+- **Resposta:** `{"choices": ["outro", "fora", "lugar", "valor"], "correct": "outro"}`
+- 他 é 'outro, o restante', o que sobra fora do que já foi citado. Sozinho ele se lê ほか; na leitura sino-japonesa vira た e abre 他人 (たにん), os outros.
+
+
+### 7. (production) Escreva em japonês, com kanji, a palavra 'outro, o restante'.
+- **Resposta:** `{"text": "他", "accept": ["他", "ほか"]}`
+- É 他, cinco traços, com o radical de pessoa à esquerda. Lido ほか ele já é a palavra inteira.
+
+
+### 8. (recognition) Em 何処 (どこ, onde) e 何処か (どこか, em algum lugar), o que o kanji 処 marca?
+- **Resposta:** `{"choices": ["lugar", "o quê", "dentro", "fora"], "correct": "lugar"}`
+- 処 é o 'lugar': quem diz qual lugar é o 何 da frente. Na prática esses demonstrativos aparecem quase sempre em kana, mas reconhecer o kanji ajuda a ler textos.
+
+
+### 9. (cloze) Qual é o kanji que falta em 'onde' (どこ), escrito 何＿?
+- **Resposta:** `{"text": "処", "full": "何処"}`
+- 何処 é 何 (qual) + 処 (lugar): literalmente 'qual lugar'. O mesmo 処 fecha os outros demonstrativos de lugar, como o de 'aqui' e o de 'aí'.
+
+
+### 10. (recognition) Na palavra 否定 (negar, desmentir), o que o kanji 否 traz?
+- **Resposta:** `{"choices": ["não", "fixar", "proibir", "separado"], "correct": "não"}`
+- 否 é o 'não' que nega: em 否定 ele se junta a 定 (fixar) e forma 'fixar que não'. Cuidado para não confundir com 禁, que é proibir, e com 不, o outro prefixo de negação.
+
+
+### 11. (production) Escreva em japonês, com os dois kanji, a palavra 'negar, desmentir'.
+- **Resposta:** `{"text": "否定", "accept": ["否定", "ひてい"]}`
+- É 否定: 否 (não) + 定 (fixar), lido ひてい. Sozinho o mesmo kanji vale como a interjeição 否 (いや), 'não'.
+
+
+### 12. (recognition) Na palavra 突然 (de repente), qual ideia o kanji 突 carrega?
+- **Resposta:** `{"choices": ["espetar", "céu", "casa", "real"], "correct": "espetar"}`
+- 突 é 'espetar, perfurar', e daí vem o sentido de algo que fura a rotina e chega de supetão. Em 突然 ele se lê とつ.
+
+
+### 13. (production) Escreva em japonês, com os dois kanji, a palavra 'de repente, repentino'.
+- **Resposta:** `{"text": "突然", "accept": ["突然", "とつぜん"]}`
+- É 突然, とつぜん. O 然 do fim é o mesmo de 全然: nessas palavras ele funciona como um sufixo de 'estado, jeito'.
+
+
