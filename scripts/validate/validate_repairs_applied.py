@@ -167,7 +167,7 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 REPO = Path(__file__).resolve().parents[2]
 
 # Floors far below the real counts, so growth never trips them but a vanished input always does.
-MIN_TABLES = 8
+MIN_TABLES = 10
 MIN_ROWS_TOTAL = 1_000
 MIN_SENTENCES = 5_000
 MIN_GRAMMAR = 400
@@ -1111,6 +1111,82 @@ def handle_orthographic_relinks(rows: list[dict], sents: dict, gram: dict, table
     return out
 
 
+def handle_lesson_needs(rows, sents, gram, table):
+    """W21. Every prerequisite edge must be in the SHIPPED lesson record, with its own note.
+
+    Three claims per row and all three matter: the edge is stored (a `needs` entry whose ref is the
+    row's), the note the learner reads is the one the fixed pt-BR template produced (a hand-edited
+    note is drift, and drift is what this table exists to prevent), and the edge points STRICTLY
+    BACKWARDS in course order. The last one duplicates validate_lesson_gating C1 on purpose: this
+    gate replays the table against the export without loading the derivation at all, so it stays
+    honest even if the derivation itself is what breaks.
+    """
+    out = []
+    order = list(LESSONS.keys())
+    pos = {lid: i for i, lid in enumerate(order)}
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} needs {r['ref']} ({r['origin']})"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        got = [n for n in (lesson.get("needs") or [])
+               if isinstance(n, dict) and n.get("ref") == r["ref"]]
+        if not got:
+            out.append(("fail", C_NOT_APPLIED, addr, "the exported lesson stores no such need"))
+            continue
+        if got[0].get("note") != r["note"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"the exported note is {got[0].get('note')!r}, the row says {r['note']!r}"))
+            continue
+        if r["ref"] not in pos:
+            out.append(("fail", C_NO_RECORD, addr, f"{r['ref']} is not an exported lesson"))
+            continue
+        if pos[r["ref"]] >= pos[r["lesson"]]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"{r['ref']} is at position {pos[r['ref']]}, not before "
+                        f"{pos[r['lesson']]} — a prerequisite that comes later is not one"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
+def handle_lesson_furigana(rows, sents, gram, table):
+    """W21. Every derived reading must be on the span in the SHIPPED body, and the bare form gone.
+
+    The row is (lesson, surface) -> reading. The replay asserts the annotated span is present as
+    many times as the row counted and that no bare `<jp>surface</jp>` survives in that lesson: a
+    half-applied substitution would leave some occurrences silent, which is exactly the state this
+    campaign was built to end.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} <jp>{r['surface']}</jp> -> {r['reading']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        body = lesson.get("body") or ""
+        want = f'<jp reading="{r["reading"]}">{r["surface"]}</jp>'
+        n = body.count(want)
+        # `occurrences` counts the spans that were BARE when the table was built; a lesson may also
+        # have printed the same base with the same reading already, so the assertion is "at least
+        # that many, and none left bare" rather than an equality that would fail on the lesson's own
+        # earlier annotations.
+        if n < r["occurrences"]:
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        f"the exported body carries {n} annotated span(s), the row derived "
+                        f"{r['occurrences']}"))
+            continue
+        if f"<jp>{r['surface']}</jp>" in body:
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        "a bare <jp> span with the same base survives — the reading landed on "
+                        "some occurrences and not others"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
@@ -1122,6 +1198,8 @@ REGISTRY = {
     "grammar_followups.json": handle_grammar_followups,
     "level_evidence_repairs.json": handle_level_evidence,
     "homograph_rulings.json": handle_homograph_rulings,
+    "lesson_needs.json": handle_lesson_needs,
+    "lesson_furigana.json": handle_lesson_furigana,
 }
 
 

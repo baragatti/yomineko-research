@@ -393,7 +393,11 @@ export interface Lesson {
   feature_unlocks: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode"[];
   id: StableId;
   level: Level;
-  needs: unknown[];
+  needs: {
+      note?: string;
+      ref?: string;
+      type?: "lesson";
+    }[];
   needs_review: boolean;
   objectives: LocaleText[];
   order: number;
@@ -713,7 +717,11 @@ export interface Topic {
   lessons: {
       description?: LocaleText;
       id?: StableId;
-      needs?: unknown[];
+      needs?: {
+          note?: string;
+          ref?: string;
+          type?: "lesson";
+        }[];
       order?: number;
       path?: string;
       title?: LocaleText;

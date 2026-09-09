@@ -4,22 +4,22 @@
   "need_shape": "{type:'lesson', ref:'les:<id>', note:<why>} — need_type 'lesson' per design/unlock_enums.json; ref is the exported lesson id, which is what validate_lesson_gating check C and validate_lessons.py linearity both resolve against.",
   "counts": {
     "lessons": 322,
-    "edges_raw": 7912,
-    "edges_reduced": 700,
-    "edges_removed_by_reduction": 7212,
-    "forward_edge_defects": 601,
+    "edges_raw": 7932,
+    "edges_reduced": 696,
+    "edges_removed_by_reduction": 7236,
+    "forward_edge_defects": 607,
     "roots": 60,
     "acyclic": true,
     "max_depth": 52,
     "max_ancestors": 227,
     "order_agrees_with_outline": true,
     "unlock_refs_with_multiple_introducers": 0,
-    "self_references_skipped": 3985,
-    "referenced_items_no_lesson_unlocks": 54,
+    "self_references_skipped": 3988,
+    "referenced_items_no_lesson_unlocks": 49,
     "dangling_sentence_refs": 0,
     "dangling_reading_refs": 0,
-    "annex_bare_prose_kanji_extra_edges": 3023,
-    "annex_bare_prose_kanji_extra_forward_edges": 1276,
+    "annex_bare_prose_kanji_extra_edges": 3028,
+    "annex_bare_prose_kanji_extra_forward_edges": 1278,
     "gate_c_unresolved_refs": 0,
     "gate_c_not_strictly_earlier": 0,
     "lessons_with_needs_or_listed_root": 322,
@@ -98,23 +98,23 @@
   },
   "channel_yield": {
     "body-chip": {
-      "references": 4116,
-      "distinct_edges_carried": 117
+      "references": 4115,
+      "distinct_edges_carried": 118
     },
     "body-sentence": {
-      "references": 3098,
-      "distinct_edges_carried": 2409
+      "references": 3125,
+      "distinct_edges_carried": 2442
     },
     "lesson-sentence-refs": {
-      "references": 3098,
-      "distinct_edges_carried": 2409
+      "references": 3125,
+      "distinct_edges_carried": 2442
     },
     "exercise-sentence": {
-      "references": 1566,
-      "distinct_edges_carried": 1216
+      "references": 1581,
+      "distinct_edges_carried": 1232
     },
     "body-reading": {
-      "references": 9056,
+      "references": 9055,
       "distinct_edges_carried": 6816
     }
   },
@@ -2117,6 +2117,20 @@
       ]
     },
     {
+      "lesson": "les:n5-desu-wa-04",
+      "lesson_position": 44,
+      "needs_lesson": "les:n5-conectando-01",
+      "needs_lesson_position": 112,
+      "distance": 68,
+      "refs": [
+        "vocab:2846738"
+      ],
+      "channels": [
+        "body-sentence",
+        "lesson-sentence-refs"
+      ]
+    },
+    {
       "lesson": "les:n3-tempo-01",
       "lesson_position": 229,
       "needs_lesson": "les:n3-concessao-03",
@@ -2255,6 +2269,21 @@
       "distance": 64,
       "refs": [
         "vocab:1157170"
+      ],
+      "channels": [
+        "body-sentence",
+        "exercise-sentence",
+        "lesson-sentence-refs"
+      ]
+    },
+    {
+      "lesson": "les:n5-perguntas-04",
+      "lesson_position": 49,
+      "needs_lesson": "les:n5-conectando-01",
+      "needs_lesson_position": 112,
+      "distance": 63,
+      "refs": [
+        "vocab:2846738"
       ],
       "channels": [
         "body-sentence",
@@ -2666,6 +2695,20 @@
       ]
     },
     {
+      "lesson": "les:n4-oracoes-relativas-05",
+      "lesson_position": 136,
+      "needs_lesson": "les:n4-suposicao-07",
+      "needs_lesson_position": 191,
+      "distance": 55,
+      "refs": [
+        "vocab:2008740"
+      ],
+      "channels": [
+        "body-sentence",
+        "lesson-sentence-refs"
+      ]
+    },
+    {
       "lesson": "les:n5-perguntas-04",
       "lesson_position": 49,
       "needs_lesson": "les:n5-convites-03",
@@ -2805,6 +2848,20 @@
       "distance": 52,
       "refs": [
         "kanji:風"
+      ],
+      "channels": [
+        "body-sentence",
+        "lesson-sentence-refs"
+      ]
+    },
+    {
+      "lesson": "les:n4-potencial-01",
+      "lesson_position": 147,
+      "needs_lesson": "les:n4-causativa-03",
+      "needs_lesson_position": 199,
+      "distance": 52,
+      "refs": [
+        "vocab:1436510"
       ],
       "channels": [
         "body-sentence",
@@ -3289,6 +3346,20 @@
       "channels": [
         "body-sentence",
         "exercise-sentence",
+        "lesson-sentence-refs"
+      ]
+    },
+    {
+      "lesson": "les:n5-particulas-lugar-03",
+      "lesson_position": 69,
+      "needs_lesson": "les:n5-conectando-01",
+      "needs_lesson_position": 112,
+      "distance": 43,
+      "refs": [
+        "vocab:2846738"
+      ],
+      "channels": [
+        "body-sentence",
         "lesson-sentence-refs"
       ]
     },
@@ -5606,7 +5677,7 @@
       "needs_lesson_position": 68,
       "distance": 21,
       "refs": [
-        "vocab:1176240"
+        "vocab:1006830"
       ],
       "channels": [
         "body-sentence",
@@ -8640,6 +8711,20 @@
       ]
     },
     {
+      "lesson": "les:n5-perguntas-03",
+      "lesson_position": 48,
+      "needs_lesson": "les:n5-perguntas-05",
+      "needs_lesson_position": 50,
+      "distance": 2,
+      "refs": [
+        "vocab:1154340"
+      ],
+      "channels": [
+        "body-sentence",
+        "lesson-sentence-refs"
+      ]
+    },
+    {
       "lesson": "les:n5-te-form-02",
       "lesson_position": 95,
       "needs_lesson": "les:n5-te-form-04",
@@ -9335,7 +9420,7 @@
       "level": "pre-n5",
       "depth": 0,
       "ancestors": 0,
-      "dependents": 182,
+      "dependents": 190,
       "skippable_if_placed_here": 40,
       "needs": [],
       "roots_reason": "self-contained: all 3 referenced taught item(s) are introduced by this lesson itself, and it displays no sentence or reading that would pull in others"
@@ -9432,7 +9517,7 @@
       "level": "n5",
       "depth": 0,
       "ancestors": 0,
-      "dependents": 232,
+      "dependents": 248,
       "skippable_if_placed_here": 47,
       "needs": [],
       "roots_reason": "NOT a real root: every one of its 10 dependencies points FORWARD in course order, so all were withheld as defects. Fixing the forward references (see forward_edge_defects) gives this lesson prerequisites"
@@ -9480,7 +9565,7 @@
       "level": "n5",
       "depth": 1,
       "ancestors": 1,
-      "dependents": 226,
+      "dependents": 246,
       "skippable_if_placed_here": 49,
       "needs": [
         {
@@ -9526,15 +9611,20 @@
       "id": "les:n5-numeros-tempo-02",
       "position": 53,
       "level": "n5",
-      "depth": 1,
-      "ancestors": 2,
+      "depth": 2,
+      "ancestors": 4,
       "dependents": 245,
-      "skippable_if_placed_here": 51,
+      "skippable_if_placed_here": 49,
       "needs": [
         {
           "type": "lesson",
           "ref": "les:n5-desu-wa-01",
           "note": "introduces vocab:1175570; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
+        },
+        {
+          "type": "lesson",
+          "ref": "les:n5-perguntas-05",
+          "note": "introduces vocab:1154340; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
         },
         {
           "type": "lesson",
@@ -9579,10 +9669,10 @@
       "id": "les:n5-numeros-tempo-05",
       "position": 56,
       "level": "n5",
-      "depth": 2,
-      "ancestors": 3,
+      "depth": 3,
+      "ancestors": 5,
       "dependents": 244,
-      "skippable_if_placed_here": 53,
+      "skippable_if_placed_here": 51,
       "needs": [
         {
           "type": "lesson",
@@ -9682,9 +9772,9 @@
       "position": 63,
       "level": "n5",
       "depth": 4,
-      "ancestors": 11,
+      "ancestors": 13,
       "dependents": 243,
-      "skippable_if_placed_here": 52,
+      "skippable_if_placed_here": 50,
       "needs": [
         {
           "type": "lesson",
@@ -9708,9 +9798,9 @@
       "position": 64,
       "level": "n5",
       "depth": 5,
-      "ancestors": 13,
+      "ancestors": 15,
       "dependents": 241,
-      "skippable_if_placed_here": 51,
+      "skippable_if_placed_here": 49,
       "needs": [
         {
           "type": "lesson",
@@ -9729,9 +9819,9 @@
       "position": 65,
       "level": "n5",
       "depth": 6,
-      "ancestors": 14,
+      "ancestors": 16,
       "dependents": 240,
-      "skippable_if_placed_here": 51,
+      "skippable_if_placed_here": 49,
       "needs": [
         {
           "type": "lesson",
@@ -9745,9 +9835,9 @@
       "position": 66,
       "level": "n5",
       "depth": 7,
-      "ancestors": 15,
+      "ancestors": 17,
       "dependents": 182,
-      "skippable_if_placed_here": 51,
+      "skippable_if_placed_here": 49,
       "needs": [
         {
           "type": "lesson",
@@ -9767,11 +9857,6 @@
       "needs": [
         {
           "type": "lesson",
-          "ref": "les:n5-perguntas-05",
-          "note": "introduces vocab:1534520; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
-        },
-        {
-          "type": "lesson",
           "ref": "les:n5-verbos-05",
           "note": "introduces gram:ga, vocab:1296400, vocab:1577980; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
         }
@@ -9782,15 +9867,10 @@
       "position": 68,
       "level": "n5",
       "depth": 7,
-      "ancestors": 16,
+      "ancestors": 17,
       "dependents": 226,
-      "skippable_if_placed_here": 52,
+      "skippable_if_placed_here": 51,
       "needs": [
-        {
-          "type": "lesson",
-          "ref": "les:n5-perguntas-02",
-          "note": "introduces vocab:1206730; seen via body-sentence/lesson-sentence-refs"
-        },
         {
           "type": "lesson",
           "ref": "les:n5-verbos-05",
@@ -9819,9 +9899,9 @@
       "position": 70,
       "level": "n5",
       "depth": 7,
-      "ancestors": 16,
+      "ancestors": 18,
       "dependents": 232,
-      "skippable_if_placed_here": 54,
+      "skippable_if_placed_here": 52,
       "needs": [
         {
           "type": "lesson",
@@ -9840,9 +9920,9 @@
       "position": 71,
       "level": "n5",
       "depth": 7,
-      "ancestors": 15,
+      "ancestors": 17,
       "dependents": 181,
-      "skippable_if_placed_here": 56,
+      "skippable_if_placed_here": 54,
       "needs": [
         {
           "type": "lesson",
@@ -9856,9 +9936,9 @@
       "position": 72,
       "level": "n5",
       "depth": 8,
-      "ancestors": 19,
+      "ancestors": 20,
       "dependents": 174,
-      "skippable_if_placed_here": 53,
+      "skippable_if_placed_here": 52,
       "needs": [
         {
           "type": "lesson",
@@ -9919,9 +9999,9 @@
       "position": 75,
       "level": "n5",
       "depth": 5,
-      "ancestors": 12,
+      "ancestors": 14,
       "dependents": 232,
-      "skippable_if_placed_here": 63,
+      "skippable_if_placed_here": 61,
       "needs": [
         {
           "type": "lesson",
@@ -9951,9 +10031,9 @@
       "position": 77,
       "level": "n5",
       "depth": 8,
-      "ancestors": 18,
+      "ancestors": 20,
       "dependents": 231,
-      "skippable_if_placed_here": 59,
+      "skippable_if_placed_here": 57,
       "needs": [
         {
           "type": "lesson",
@@ -9988,9 +10068,9 @@
       "position": 79,
       "level": "n5",
       "depth": 9,
-      "ancestors": 20,
+      "ancestors": 22,
       "dependents": 227,
-      "skippable_if_placed_here": 59,
+      "skippable_if_placed_here": 57,
       "needs": [
         {
           "type": "lesson",
@@ -10009,9 +10089,9 @@
       "position": 80,
       "level": "n5",
       "depth": 9,
-      "ancestors": 19,
+      "ancestors": 21,
       "dependents": 222,
-      "skippable_if_placed_here": 61,
+      "skippable_if_placed_here": 59,
       "needs": [
         {
           "type": "lesson",
@@ -10025,9 +10105,9 @@
       "position": 81,
       "level": "n5",
       "depth": 10,
-      "ancestors": 22,
+      "ancestors": 24,
       "dependents": 219,
-      "skippable_if_placed_here": 59,
+      "skippable_if_placed_here": 57,
       "needs": [
         {
           "type": "lesson",
@@ -10051,15 +10131,10 @@
       "position": 82,
       "level": "n5",
       "depth": 10,
-      "ancestors": 23,
+      "ancestors": 24,
       "dependents": 221,
-      "skippable_if_placed_here": 59,
+      "skippable_if_placed_here": 58,
       "needs": [
-        {
-          "type": "lesson",
-          "ref": "les:n5-perguntas-02",
-          "note": "introduces vocab:1206730; seen via body-sentence/lesson-sentence-refs"
-        },
         {
           "type": "lesson",
           "ref": "les:n5-particulas-lugar-03",
@@ -10077,9 +10152,9 @@
       "position": 83,
       "level": "n5",
       "depth": 11,
-      "ancestors": 25,
+      "ancestors": 26,
       "dependents": 218,
-      "skippable_if_placed_here": 58,
+      "skippable_if_placed_here": 57,
       "needs": [
         {
           "type": "lesson",
@@ -10124,9 +10199,9 @@
       "position": 85,
       "level": "n5",
       "depth": 10,
-      "ancestors": 22,
+      "ancestors": 24,
       "dependents": 219,
-      "skippable_if_placed_here": 63,
+      "skippable_if_placed_here": 61,
       "needs": [
         {
           "type": "lesson",
@@ -10202,9 +10277,9 @@
       "position": 88,
       "level": "n5",
       "depth": 11,
-      "ancestors": 23,
+      "ancestors": 25,
       "dependents": 216,
-      "skippable_if_placed_here": 65,
+      "skippable_if_placed_here": 63,
       "needs": [
         {
           "type": "lesson",
@@ -10445,7 +10520,7 @@
         {
           "type": "lesson",
           "ref": "les:n5-te-form-05",
-          "note": "introduces vocab:1472870; seen via body-reading"
+          "note": "introduces vocab:1010080; seen via body-reading"
         }
       ]
     },
@@ -10514,7 +10589,7 @@
         {
           "type": "lesson",
           "ref": "les:n5-te-form-05",
-          "note": "introduces vocab:1472870; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
+          "note": "introduces vocab:1010080; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
         }
       ]
     },
@@ -10618,9 +10693,9 @@
       "position": 109,
       "level": "n5",
       "depth": 7,
-      "ancestors": 16,
+      "ancestors": 18,
       "dependents": 192,
-      "skippable_if_placed_here": 93,
+      "skippable_if_placed_here": 91,
       "needs": [
         {
           "type": "lesson",
@@ -10692,7 +10767,7 @@
       "level": "n5",
       "depth": 14,
       "ancestors": 40,
-      "dependents": 190,
+      "dependents": 193,
       "skippable_if_placed_here": 72,
       "needs": [
         {
@@ -10723,10 +10798,15 @@
       "position": 114,
       "level": "n5",
       "depth": 18,
-      "ancestors": 49,
+      "ancestors": 51,
       "dependents": 187,
-      "skippable_if_placed_here": 65,
+      "skippable_if_placed_here": 63,
       "needs": [
+        {
+          "type": "lesson",
+          "ref": "les:pre-n5-saudacoes-03",
+          "note": "introduces vocab:1006980; seen via body-sentence/lesson-sentence-refs"
+        },
         {
           "type": "lesson",
           "ref": "les:n5-desu-wa-04",
@@ -10746,6 +10826,11 @@
           "type": "lesson",
           "ref": "les:n5-rotina-02",
           "note": "introduces vocab:1524930; seen via body-sentence/lesson-sentence-refs"
+        },
+        {
+          "type": "lesson",
+          "ref": "les:n5-conectando-01",
+          "note": "introduces vocab:2846738; seen via body-sentence/lesson-sentence-refs"
         }
       ]
     },
@@ -10837,9 +10922,9 @@
       "position": 118,
       "level": "n5",
       "depth": 19,
-      "ancestors": 51,
+      "ancestors": 53,
       "dependents": 186,
-      "skippable_if_placed_here": 67,
+      "skippable_if_placed_here": 65,
       "needs": [
         {
           "type": "lesson",
@@ -11146,7 +11231,7 @@
         {
           "type": "lesson",
           "ref": "les:n4-forma-simples-02",
-          "note": "introduces vocab:1172610, vocab:1172870; seen via body-chip"
+          "note": "introduces vocab:1001090, vocab:1172870; seen via body-chip"
         }
       ]
     },
@@ -11171,9 +11256,9 @@
       "position": 132,
       "level": "n4",
       "depth": 20,
-      "ancestors": 63,
+      "ancestors": 64,
       "dependents": 177,
-      "skippable_if_placed_here": 69,
+      "skippable_if_placed_here": 68,
       "needs": [
         {
           "type": "lesson",
@@ -11194,11 +11279,6 @@
           "type": "lesson",
           "ref": "les:n5-rotina-03",
           "note": "introduces vocab:1227500; seen via body-reading"
-        },
-        {
-          "type": "lesson",
-          "ref": "les:n5-conectando-01",
-          "note": "introduces kanji:雨, vocab:1311110, vocab:1515620; seen via body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
         },
         {
           "type": "lesson",
@@ -11229,7 +11309,7 @@
         {
           "type": "lesson",
           "ref": "les:n5-particulas-lugar-07",
-          "note": "introduces vocab:1401470; seen via body-sentence/lesson-sentence-refs"
+          "note": "introduces vocab:2137720; seen via body-sentence/lesson-sentence-refs"
         },
         {
           "type": "lesson",
@@ -11279,9 +11359,9 @@
       "position": 135,
       "level": "n4",
       "depth": 20,
-      "ancestors": 60,
+      "ancestors": 62,
       "dependents": 180,
-      "skippable_if_placed_here": 75,
+      "skippable_if_placed_here": 73,
       "needs": [
         {
           "type": "lesson",
@@ -11310,15 +11390,10 @@
       "position": 136,
       "level": "n4",
       "depth": 21,
-      "ancestors": 62,
+      "ancestors": 63,
       "dependents": 0,
-      "skippable_if_placed_here": 74,
+      "skippable_if_placed_here": 73,
       "needs": [
-        {
-          "type": "lesson",
-          "ref": "les:n5-conectando-01",
-          "note": "introduces kanji:雨, vocab:1515620; seen via body-reading"
-        },
         {
           "type": "lesson",
           "ref": "les:n4-oracoes-relativas-04",
@@ -11331,15 +11406,10 @@
       "position": 137,
       "level": "n4",
       "depth": 21,
-      "ancestors": 67,
+      "ancestors": 68,
       "dependents": 0,
-      "skippable_if_placed_here": 70,
+      "skippable_if_placed_here": 69,
       "needs": [
-        {
-          "type": "lesson",
-          "ref": "les:n5-conectando-01",
-          "note": "introduces kanji:雨, vocab:1311110; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
-        },
         {
           "type": "lesson",
           "ref": "les:n5-conectando-06",
@@ -11429,9 +11499,9 @@
       "position": 140,
       "level": "n4",
       "depth": 21,
-      "ancestors": 67,
+      "ancestors": 68,
       "dependents": 170,
-      "skippable_if_placed_here": 73,
+      "skippable_if_placed_here": 72,
       "needs": [
         {
           "type": "lesson",
@@ -11502,19 +11572,14 @@
       "position": 143,
       "level": "n4",
       "depth": 21,
-      "ancestors": 63,
+      "ancestors": 64,
       "dependents": 119,
-      "skippable_if_placed_here": 80,
+      "skippable_if_placed_here": 79,
       "needs": [
         {
           "type": "lesson",
           "ref": "les:n5-verbos-06",
           "note": "introduces vocab:1198180; seen via body-reading"
-        },
-        {
-          "type": "lesson",
-          "ref": "les:n5-conectando-01",
-          "note": "introduces kanji:雨; seen via body-reading/body-sentence/lesson-sentence-refs"
         },
         {
           "type": "lesson",
@@ -11667,11 +11732,6 @@
           "type": "lesson",
           "ref": "les:n5-rotina-04",
           "note": "introduces kanji:天; seen via body-reading"
-        },
-        {
-          "type": "lesson",
-          "ref": "les:n5-conectando-01",
-          "note": "introduces vocab:1536350; seen via body-sentence/exercise-sentence/lesson-sentence-refs"
         },
         {
           "type": "lesson",
@@ -11901,7 +11961,7 @@
         {
           "type": "lesson",
           "ref": "les:n4-forma-simples-03",
-          "note": "introduces vocab:1855690; seen via body-reading"
+          "note": "introduces vocab:1449890; seen via body-reading"
         },
         {
           "type": "lesson",
@@ -12178,7 +12238,7 @@
         {
           "type": "lesson",
           "ref": "les:n4-forma-simples-03",
-          "note": "introduces vocab:1522050, vocab:1855690; seen via body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
+          "note": "introduces vocab:1449890, vocab:1522050; seen via body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
         },
         {
           "type": "lesson",
@@ -12527,7 +12587,7 @@
       "level": "n4",
       "depth": 31,
       "ancestors": 109,
-      "dependents": 116,
+      "dependents": 117,
       "skippable_if_placed_here": 78,
       "needs": [
         {
@@ -12688,7 +12748,7 @@
       "level": "n4",
       "depth": 32,
       "ancestors": 114,
-      "dependents": 102,
+      "dependents": 103,
       "skippable_if_placed_here": 79,
       "needs": [
         {
@@ -12712,10 +12772,10 @@
       "id": "les:n4-passiva-02",
       "position": 194,
       "level": "n4",
-      "depth": 31,
-      "ancestors": 120,
+      "depth": 32,
+      "ancestors": 121,
       "dependents": 62,
-      "skippable_if_placed_here": 74,
+      "skippable_if_placed_here": 73,
       "needs": [
         {
           "type": "lesson",
@@ -12729,8 +12789,8 @@
         },
         {
           "type": "lesson",
-          "ref": "les:n4-suposicao-02",
-          "note": "introduces vocab:1605810; seen via body-reading"
+          "ref": "les:n4-suposicao-03",
+          "note": "introduces vocab:1545790; seen via body-chip"
         }
       ]
     },
@@ -12761,7 +12821,7 @@
       "level": "n4",
       "depth": 33,
       "ancestors": 133,
-      "dependents": 87,
+      "dependents": 88,
       "skippable_if_placed_here": 63,
       "needs": [
         {
@@ -12834,7 +12894,7 @@
       "level": "n4",
       "depth": 34,
       "ancestors": 135,
-      "dependents": 66,
+      "dependents": 67,
       "skippable_if_placed_here": 64,
       "needs": [
         {
@@ -14916,10 +14976,15 @@
       "position": 282,
       "level": "n3",
       "depth": 35,
-      "ancestors": 136,
+      "ancestors": 139,
       "dependents": 15,
-      "skippable_if_placed_here": 146,
+      "skippable_if_placed_here": 143,
       "needs": [
+        {
+          "type": "lesson",
+          "ref": "les:n4-causativa-03",
+          "note": "introduces vocab:1436510; seen via body-sentence/lesson-sentence-refs"
+        },
         {
           "type": "lesson",
           "ref": "les:n3-intencao-02",
@@ -15454,7 +15519,7 @@
         {
           "type": "lesson",
           "ref": "les:n3-perspectiva-06",
-          "note": "introduces vocab:2648780; seen via body-chip"
+          "note": "introduces vocab:1583470; seen via body-chip"
         },
         {
           "type": "lesson",

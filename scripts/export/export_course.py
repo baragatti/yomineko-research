@@ -317,8 +317,11 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
             _dups = sorted({x for x in _pairs if _pairs.count(x) > 1})
             raise SystemExit(f"duplicate unlock ref(s) in {L['slug']}: {_dups} -- "
                              f"two source refs resolved to the same record")
-        needs = [{"type": u[0], "ref": u[1]} for u in con.execute(
-            "SELECT need_type, ref FROM lesson_needs WHERE lesson_id=? ORDER BY need_type, ref", (L["id"],))]
+        # W21: the note is the learner-facing reason ("antes desta lição"); omitted when absent so
+        # a pre-W21 row does not start publishing a null field.
+        needs = [{"type": u[0], "ref": u[1], **({"note": u[2]} if u[2] else {})} for u in con.execute(
+            "SELECT need_type, ref, note FROM lesson_needs WHERE lesson_id=? ORDER BY need_type, ref",
+            (L["id"],))]
         feature_unlocks = [u["ref"] for u in unlocks if u["type"] == "feature"]
         # sentence_refs is a MANIFEST of what the lesson displays, so it is derived from the
         # body, not from the lesson_sentence staging table: N3's 96 rendered sentences had no rows

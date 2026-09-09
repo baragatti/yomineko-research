@@ -12,13 +12,13 @@ Lesson L needs lesson M iff M != L and L references at least one corpus item tha
 | | count |
 |---|---:|
 | lessons | 322 |
-| raw edges (every referenced-item -> introducer pair, backward) | 7912 |
-| reduced edges (transitive reduction — what `needs[]` should hold) | 700 |
-| edges removed as transitively implied | 7212 |
-| forward-edge defects (excluded from `needs`, listed below) | 601 |
+| raw edges (every referenced-item -> introducer pair, backward) | 7932 |
+| reduced edges (transitive reduction — what `needs[]` should hold) | 696 |
+| edges removed as transitively implied | 7236 |
+| forward-edge defects (excluded from `needs`, listed below) | 607 |
 | lessons with no prerequisite (roots) | 60 |
 
-The reduction removes 7212 of 7912 raw edges (91.2%): a late lesson
+The reduction removes 7236 of 7932 raw edges (91.2%): a late lesson
 references hundreds of items whose introducers are already reachable through a nearer
 prerequisite. Only the direct ones survive.
 
@@ -26,11 +26,11 @@ prerequisite. Only the direct ones survive.
 
 | channel | references harvested | distinct edges it can carry |
 |---|---:|---:|
-| `body-chip` | 4116 | 117 |
-| `body-sentence` | 3098 | 2409 |
-| `lesson-sentence-refs` | 3098 | 2409 |
-| `exercise-sentence` | 1566 | 1216 |
-| `body-reading` | 9056 | 6816 |
+| `body-chip` | 4115 | 118 |
+| `body-sentence` | 3125 | 2442 |
+| `lesson-sentence-refs` | 3125 | 2442 |
+| `exercise-sentence` | 1581 | 1232 |
+| `body-reading` | 9055 | 6816 |
 
 Channels overlap, so the column does not sum to the edge total. `body-sentence` and
 `lesson-sentence-refs` are identical by construction — `export_course.py` derives the
@@ -66,7 +66,7 @@ is known to pass before anyone writes it into a lesson record.
 
 ## Forward-edge defects
 
-601 lesson->lesson dependencies point FORWARD: the lesson puts an item in front
+607 lesson->lesson dependencies point FORWARD: the lesson puts an item in front
 of the learner before the course introduces it. These are content defects, not
 derivation defects. They are **excluded from `needs[]`** — check C hard-fails on any
 need that is not strictly earlier, so shipping them would turn a content bug into a red
@@ -75,17 +75,17 @@ dropped; the full ledger is below.
 
 | tier | edges | what it means |
 |---|---:|---|
-| same topic | 27 | a lesson uses what the next lesson in its own topic teaches — the cheapest to fix, usually by swapping two lesson orders or one example |
-| same level, different topic | 426 | a topic leans on a later topic at the same level |
+| same topic | 28 | a lesson uses what the next lesson in its own topic teaches — the cheapest to fix, usually by swapping two lesson orders or one example |
+| same level, different topic | 431 | a topic leans on a later topic at the same level |
 | across levels | 148 | an N5 lesson displays an N4/N3 item; this is the sentence-level i+1 backlog check D already freezes |
 
-Driving refs by namespace: `kanji` 360, `vocab` 251, `gram` 27.
+Driving refs by namespace: `kanji` 360, `vocab` 257, `gram` 27.
 
 ### Worst offenders by lesson
 
 | lesson | pos | level | forward edges |
 |---|---:|---|---:|
-| `les:n5-perguntas-03` | 48 | n5 | 15 |
+| `les:n5-perguntas-03` | 48 | n5 | 16 |
 | `les:n5-numeros-tempo-02` | 53 | n5 | 14 |
 | `les:n4-oracoes-relativas-03` | 134 | n4 | 12 |
 | `les:n5-perguntas-01` | 46 | n5 | 10 |
@@ -98,12 +98,12 @@ Driving refs by namespace: `kanji` 360, `vocab` 251, `gram` 27.
 | `les:n5-verbos-01` | 61 | n5 | 9 |
 | `les:n4-experiencia-01` | 167 | n4 | 9 |
 | `les:n5-desu-wa-02` | 42 | n5 | 8 |
+| `les:n5-desu-wa-04` | 44 | n5 | 8 |
 | `les:n5-particulas-lugar-08` | 74 | n5 | 8 |
-| `les:n5-comparacoes-01` | 88 | n5 | 8 |
 
 ### Complete ledger
 
-All 601 edges, sorted by how far forward they reach.
+All 607 edges, sorted by how far forward they reach.
 
 | lesson | pos | depends forward on | pos | gap | driving refs | channels |
 |---|---:|---|---:|---:|---|---|
@@ -244,6 +244,7 @@ All 601 edges, sorted by how far forward they reach.
 | `les:n3-causa-04` | 247 | `les:n3-estrutura-02` | 316 | 69 | `kanji:泳` | body-sentence/lesson-sentence-refs |
 | `les:n5-perguntas-04` | 49 | `les:n5-conectando-07` | 118 | 69 | `kanji:読`, `vocab:1456360` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-oracoes-relativas-07` | 138 | `les:n4-conectores-01` | 206 | 68 | `vocab:1157170` | body-sentence/exercise-sentence/lesson-sentence-refs |
+| `les:n5-desu-wa-04` | 44 | `les:n5-conectando-01` | 112 | 68 | `vocab:2846738` | body-sentence/lesson-sentence-refs |
 | `les:n3-tempo-01` | 229 | `les:n3-concessao-03` | 296 | 67 | `vocab:1579210` | body-sentence/lesson-sentence-refs |
 | `les:n4-condicionais-01` | 139 | `les:n4-conectores-01` | 206 | 67 | `vocab:1157170` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-volitivo-04` | 154 | `les:n3-conectores-01` | 221 | 67 | `kanji:定` | body-sentence/exercise-sentence/lesson-sentence-refs |
@@ -254,6 +255,7 @@ All 601 edges, sorted by how far forward they reach.
 | `les:n4-passiva-03` | 195 | `les:n3-intencao-01` | 260 | 65 | `kanji:然` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n5-desu-wa-03` | 43 | `les:n5-rotina-01` | 108 | 65 | `kanji:何`, `vocab:1502390` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-condicionais-04` | 142 | `les:n4-conectores-01` | 206 | 64 | `vocab:1157170` | body-sentence/exercise-sentence/lesson-sentence-refs |
+| `les:n5-perguntas-04` | 49 | `les:n5-conectando-01` | 112 | 63 | `vocab:2846738` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-condicionais-06` | 144 | `les:n4-conectores-01` | 206 | 62 | `vocab:1157170` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n5-perguntas-06` | 51 | `les:n5-conectando-02` | 113 | 62 | `vocab:2820690` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n3-conectores-01` | 221 | `les:n3-limites-03` | 282 | 61 | `kanji:降` | body-sentence/lesson-sentence-refs |
@@ -282,6 +284,7 @@ All 601 edges, sorted by how far forward they reach.
 | `les:n5-perguntas-02` | 47 | `les:n5-convites-02` | 103 | 56 | `kanji:木` | body-sentence/lesson-sentence-refs |
 | `les:n4-conectores-01` | 206 | `les:n3-intencao-02` | 261 | 55 | `kanji:席` | body-sentence/lesson-sentence-refs |
 | `les:n4-obrigacao-02` | 174 | `les:n3-tempo-01` | 229 | 55 | `kanji:要` | body-sentence/exercise-sentence/lesson-sentence-refs |
+| `les:n4-oracoes-relativas-05` | 136 | `les:n4-suposicao-07` | 191 | 55 | `vocab:2008740` | body-sentence/lesson-sentence-refs |
 | `les:n5-perguntas-04` | 49 | `les:n5-convites-03` | 104 | 55 | `vocab:1522150` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-dar-receber-03` | 165 | `les:n4-kanji-exame-04` | 219 | 54 | `kanji:菜` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-volitivo-02` | 152 | `les:n4-conectores-01` | 206 | 54 | `vocab:1157170` | body-sentence/lesson-sentence-refs |
@@ -292,6 +295,7 @@ All 601 edges, sorted by how far forward they reach.
 | `les:n4-condicionais-08` | 146 | `les:n4-causativa-02` | 198 | 52 | `kanji:飯` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-experiencia-01` | 167 | `les:n4-kanji-exame-04` | 219 | 52 | `kanji:薬` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-oracoes-relativas-07` | 138 | `les:n4-suposicao-06` | 190 | 52 | `kanji:風` | body-sentence/lesson-sentence-refs |
+| `les:n4-potencial-01` | 147 | `les:n4-causativa-03` | 199 | 52 | `vocab:1436510` | body-sentence/lesson-sentence-refs |
 | `les:n4-volitivo-04` | 154 | `les:n4-conectores-01` | 206 | 52 | `vocab:1157170` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n5-passado-05` | 79 | `les:n4-forma-simples-07` | 131 | 52 | `gram:sasuga` | body-sentence/lesson-sentence-refs |
 | `les:n4-volitivo-05` | 155 | `les:n4-conectores-01` | 206 | 51 | `vocab:1157170` | body-sentence/exercise-sentence/lesson-sentence-refs |
@@ -325,6 +329,7 @@ All 601 edges, sorted by how far forward they reach.
 | `les:n4-dar-receber-01` | 163 | `les:n4-conectores-01` | 206 | 43 | `vocab:1157170` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-obrigacao-04` | 176 | `les:n4-kanji-exame-04` | 219 | 43 | `kanji:薬` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-oracoes-relativas-07` | 138 | `les:n4-aspecto-04` | 181 | 43 | `kanji:注` | body-sentence/exercise-sentence/lesson-sentence-refs |
+| `les:n5-particulas-lugar-03` | 69 | `les:n5-conectando-01` | 112 | 43 | `vocab:2846738` | body-sentence/lesson-sentence-refs |
 | `les:n5-particulas-lugar-05` | 71 | `les:n5-conectando-03` | 114 | 43 | `kanji:休` | body-sentence/lesson-sentence-refs |
 | `les:n5-verbos-02` | 62 | `les:n5-convites-04` | 105 | 43 | `kanji:電` | body-sentence/lesson-sentence-refs |
 | `les:n4-oracoes-relativas-06` | 137 | `les:n4-aspecto-02` | 179 | 42 | `kanji:歌` | body-sentence/exercise-sentence/lesson-sentence-refs |
@@ -483,7 +488,7 @@ All 601 edges, sorted by how far forward they reach.
 | `les:n5-desu-wa-02` | 42 | `les:n5-verbos-03` | 63 | 21 | `vocab:1547720` | body-sentence/lesson-sentence-refs |
 | `les:n5-desu-wa-03` | 43 | `les:n5-verbos-04` | 64 | 21 | `kanji:時` | body-sentence/lesson-sentence-refs |
 | `les:n5-desu-wa-04` | 44 | `les:n5-verbos-05` | 65 | 21 | `vocab:1296400` | body-sentence/exercise-sentence/lesson-sentence-refs |
-| `les:n5-perguntas-02` | 47 | `les:n5-particulas-lugar-02` | 68 | 21 | `vocab:1176240` | body-sentence/lesson-sentence-refs |
+| `les:n5-perguntas-02` | 47 | `les:n5-particulas-lugar-02` | 68 | 21 | `vocab:1006830` | body-sentence/lesson-sentence-refs |
 | `les:n5-perguntas-03` | 48 | `les:n5-particulas-lugar-03` | 69 | 21 | `kanji:生` | body-sentence/lesson-sentence-refs |
 | `les:n4-condicionais-06` | 144 | `les:n4-dar-receber-02` | 164 | 20 | `kanji:止` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n4-oracoes-relativas-01` | 132 | `les:n4-volitivo-02` | 152 | 20 | `kanji:物` | body-sentence/exercise-sentence/lesson-sentence-refs |
@@ -691,6 +696,7 @@ All 601 edges, sorted by how far forward they reach.
 | `les:n5-conectando-05` | 116 | `les:n5-conectando-07` | 118 | 2 | `kanji:読`, `vocab:1456360` | body-sentence/lesson-sentence-refs |
 | `les:n5-desu-wa-01` | 41 | `les:n5-desu-wa-03` | 43 | 2 | `gram:ka` | body-sentence/lesson-sentence-refs |
 | `les:n5-numeros-tempo-03` | 54 | `les:n5-numeros-tempo-05` | 56 | 2 | `kanji:日` | body-sentence/lesson-sentence-refs |
+| `les:n5-perguntas-03` | 48 | `les:n5-perguntas-05` | 50 | 2 | `vocab:1154340` | body-sentence/lesson-sentence-refs |
 | `les:n5-te-form-02` | 95 | `les:n5-te-form-04` | 97 | 2 | `vocab:1486720` | body-sentence/lesson-sentence-refs |
 | `les:n5-verbos-05` | 65 | `les:n5-particulas-lugar-01` | 67 | 2 | `gram:ga-arimasu`, `gram:ga-imasu` | body-sentence/exercise-sentence/lesson-sentence-refs |
 | `les:n3-causa-02` | 245 | `les:n3-causa-03` | 246 | 1 | `kanji:果` | body-sentence/lesson-sentence-refs |
@@ -802,8 +808,8 @@ placing into that lesson can legitimately skip, which a linear course cannot exp
 | level | lessons | max depth | mean ancestors | max ancestors | mean skippable |
 |---|---:|---:|---:|---:|---:|
 | pre-n5 | 41 | 0 | 0.0 | 0 | 20.0 |
-| n5 | 84 | 20 | 20.7 | 59 | 61.8 |
-| n4 | 96 | 36 | 94.2 | 141 | 78.3 |
+| n5 | 84 | 20 | 21.1 | 59 | 61.4 |
+| n4 | 96 | 36 | 94.3 | 141 | 78.2 |
 | n3 | 101 | 52 | 168.6 | 227 | 102.4 |
 
 ### Longest chain per level
@@ -812,9 +818,9 @@ The critical path: the deepest lesson at each level and the chain of direct prer
 behind it. Nothing shortens this — it is the true minimum path to that lesson.
 
 - **pre-n5** — depth 0, 1 lesson(s) — degenerate: no pre-N5 lesson has a derived prerequisite at all, see "What the reference graph cannot see" below: `les:pre-n5-orientacao-01`
-- **n5** — depth 20, 21 lesson(s): `les:n5-desu-wa-02` -> `les:n5-desu-wa-03` -> `les:n5-perguntas-04` -> `les:n5-verbos-02` -> `les:n5-verbos-03` -> `les:n5-verbos-04` -> `les:n5-verbos-05` -> `les:n5-particulas-lugar-04` -> `les:n5-passado-03` -> `les:n5-passado-05` -> `les:n5-adjetivos-03` -> `les:n5-adjetivos-04` -> `les:n5-comparacoes-02` -> `les:n5-comparacoes-04` -> `les:n5-comparacoes-05` -> `les:n5-te-form-02` -> `les:n5-te-form-05` -> `les:n5-convites-02` -> `les:n5-convites-03` -> `les:n5-rotina-04` -> `les:n5-conectando-05`
-- **n4** — depth 36, 37 lesson(s): `les:n5-desu-wa-02` -> `les:n5-desu-wa-03` -> `les:n5-perguntas-04` -> `les:n5-verbos-02` -> `les:n5-verbos-03` -> `les:n5-verbos-04` -> `les:n5-verbos-05` -> `les:n5-particulas-lugar-04` -> `les:n5-passado-03` -> `les:n5-passado-05` -> `les:n5-adjetivos-03` -> `les:n5-adjetivos-04` -> `les:n5-comparacoes-02` -> `les:n5-comparacoes-04` -> `les:n5-comparacoes-05` -> `les:n5-te-form-02` -> `les:n5-te-form-03` -> `les:n5-rotina-01` -> `les:n5-conectando-06` -> `les:n4-forma-simples-02` -> `les:n4-forma-simples-06` -> `les:n4-condicionais-01` -> `les:n4-condicionais-03` -> `les:n4-potencial-01` -> `les:n4-potencial-02` -> `les:n4-volitivo-03` -> `les:n4-transitividade-05` -> `les:n4-experiencia-01` -> `les:n4-experiencia-02` -> `les:n4-obrigacao-04` -> `les:n4-obrigacao-05` -> `les:n4-suposicao-06` -> `les:n4-passiva-03` -> `les:n4-passiva-04` -> `les:n4-causativa-03` -> `les:n4-conectores-04` -> `les:n4-revisao-02`
-- **n3** — depth 52, 53 lesson(s): `les:n5-desu-wa-02` -> `les:n5-desu-wa-03` -> `les:n5-perguntas-04` -> `les:n5-verbos-02` -> `les:n5-verbos-03` -> `les:n5-verbos-04` -> `les:n5-verbos-05` -> `les:n5-particulas-lugar-04` -> `les:n5-passado-03` -> `les:n5-passado-05` -> `les:n5-adjetivos-03` -> `les:n5-adjetivos-04` -> `les:n5-comparacoes-02` -> `les:n5-comparacoes-04` -> `les:n5-comparacoes-05` -> `les:n5-te-form-02` -> `les:n5-te-form-03` -> `les:n5-rotina-01` -> `les:n5-conectando-06` -> `les:n4-forma-simples-02` -> `les:n4-forma-simples-06` -> `les:n4-condicionais-01` -> `les:n4-condicionais-03` -> `les:n4-potencial-01` -> `les:n4-potencial-02` -> `les:n4-volitivo-03` -> `les:n4-transitividade-05` -> `les:n4-experiencia-01` -> `les:n4-experiencia-02` -> `les:n4-obrigacao-04` -> `les:n4-suposicao-02` -> `les:n4-suposicao-03` -> `les:n4-passiva-01` -> `les:n4-causativa-02` -> `les:n3-conectores-01` -> `les:n3-conectores-03` -> `les:n3-conectores-04` -> `les:n3-tempo-01` -> `les:n3-tempo-04` -> `les:n3-perspectiva-01` -> `les:n3-perspectiva-02` -> `les:n3-causa-05` -> `les:n3-intencao-04` -> `les:n3-limites-01` -> `les:n3-limites-02` -> `les:n3-limites-04` -> `les:n3-enfase-04` -> `les:n3-concessao-03` -> `les:n3-conjectura-04` -> `les:n3-relato-03` -> `les:n3-relato-04` -> `les:n3-estrutura-01` -> `les:n3-estrutura-06`
+- **n5** — depth 20, 21 lesson(s): `les:n5-perguntas-02` -> `les:n5-perguntas-05` -> `les:n5-numeros-tempo-02` -> `les:n5-numeros-tempo-05` -> `les:n5-verbos-03` -> `les:n5-verbos-04` -> `les:n5-verbos-05` -> `les:n5-particulas-lugar-04` -> `les:n5-passado-03` -> `les:n5-passado-05` -> `les:n5-adjetivos-03` -> `les:n5-adjetivos-04` -> `les:n5-comparacoes-02` -> `les:n5-comparacoes-04` -> `les:n5-comparacoes-05` -> `les:n5-te-form-02` -> `les:n5-te-form-05` -> `les:n5-convites-02` -> `les:n5-convites-03` -> `les:n5-rotina-04` -> `les:n5-conectando-05`
+- **n4** — depth 36, 37 lesson(s): `les:n5-perguntas-02` -> `les:n5-perguntas-05` -> `les:n5-numeros-tempo-02` -> `les:n5-numeros-tempo-05` -> `les:n5-verbos-03` -> `les:n5-verbos-04` -> `les:n5-verbos-05` -> `les:n5-particulas-lugar-04` -> `les:n5-passado-03` -> `les:n5-passado-05` -> `les:n5-adjetivos-03` -> `les:n5-adjetivos-04` -> `les:n5-comparacoes-02` -> `les:n5-comparacoes-04` -> `les:n5-comparacoes-05` -> `les:n5-te-form-02` -> `les:n5-te-form-03` -> `les:n5-rotina-01` -> `les:n5-conectando-06` -> `les:n4-forma-simples-02` -> `les:n4-forma-simples-06` -> `les:n4-condicionais-01` -> `les:n4-condicionais-03` -> `les:n4-potencial-01` -> `les:n4-potencial-02` -> `les:n4-volitivo-03` -> `les:n4-transitividade-05` -> `les:n4-experiencia-01` -> `les:n4-experiencia-02` -> `les:n4-obrigacao-04` -> `les:n4-obrigacao-05` -> `les:n4-suposicao-06` -> `les:n4-passiva-03` -> `les:n4-passiva-04` -> `les:n4-causativa-03` -> `les:n4-conectores-04` -> `les:n4-revisao-02`
+- **n3** — depth 52, 53 lesson(s): `les:n5-perguntas-02` -> `les:n5-perguntas-05` -> `les:n5-numeros-tempo-02` -> `les:n5-numeros-tempo-05` -> `les:n5-verbos-03` -> `les:n5-verbos-04` -> `les:n5-verbos-05` -> `les:n5-particulas-lugar-04` -> `les:n5-passado-03` -> `les:n5-passado-05` -> `les:n5-adjetivos-03` -> `les:n5-adjetivos-04` -> `les:n5-comparacoes-02` -> `les:n5-comparacoes-04` -> `les:n5-comparacoes-05` -> `les:n5-te-form-02` -> `les:n5-te-form-03` -> `les:n5-rotina-01` -> `les:n5-conectando-06` -> `les:n4-forma-simples-02` -> `les:n4-forma-simples-06` -> `les:n4-condicionais-01` -> `les:n4-condicionais-03` -> `les:n4-potencial-01` -> `les:n4-potencial-02` -> `les:n4-volitivo-03` -> `les:n4-transitividade-05` -> `les:n4-experiencia-01` -> `les:n4-experiencia-02` -> `les:n4-obrigacao-04` -> `les:n4-suposicao-02` -> `les:n4-suposicao-03` -> `les:n4-passiva-01` -> `les:n4-causativa-02` -> `les:n3-conectores-01` -> `les:n3-conectores-03` -> `les:n3-conectores-04` -> `les:n3-tempo-01` -> `les:n3-tempo-04` -> `les:n3-perspectiva-01` -> `les:n3-perspectiva-02` -> `les:n3-causa-05` -> `les:n3-intencao-04` -> `les:n3-limites-01` -> `les:n3-limites-02` -> `les:n3-limites-04` -> `les:n3-enfase-04` -> `les:n3-concessao-03` -> `les:n3-conjectura-04` -> `les:n3-relato-03` -> `les:n3-relato-04` -> `les:n3-estrutura-01` -> `les:n3-estrutura-06`
 
 ### Hub lessons
 
@@ -828,9 +834,11 @@ Skipping a hub in placement is what breaks a learner downstream.
 | `les:n5-desu-wa-01` | 41 | n5 | 250 | 5 |
 | `les:n5-desu-wa-03` | 43 | n5 | 250 | 2 |
 | `les:n5-numeros-tempo-03` | 54 | n5 | 249 | 2 |
+| `les:n5-perguntas-02` | 47 | n5 | 248 | 2 |
 | `les:n5-perguntas-04` | 49 | n5 | 248 | 3 |
 | `les:n5-numeros-tempo-01` | 52 | n5 | 247 | 2 |
 | `les:n5-verbos-01` | 61 | n5 | 247 | 2 |
+| `les:n5-perguntas-05` | 50 | n5 | 246 | 1 |
 | `les:pre-n5-saudacoes-01` | 38 | pre-n5 | 245 | 2 |
 | `les:n5-numeros-tempo-02` | 53 | n5 | 245 | 1 |
 | `les:n5-verbos-02` | 62 | n5 | 245 | 2 |
@@ -840,21 +848,19 @@ Skipping a hub in placement is what breaks a learner downstream.
 | `les:n5-verbos-04` | 64 | n5 | 241 | 1 |
 | `les:n5-verbos-05` | 65 | n5 | 240 | 6 |
 | `les:n5-numeros-tempo-04` | 55 | n5 | 233 | 1 |
-| `les:n5-perguntas-02` | 47 | n5 | 232 | 4 |
 | `les:n5-particulas-lugar-04` | 70 | n5 | 232 | 1 |
 | `les:n5-passado-01` | 75 | n5 | 232 | 1 |
-| `les:n5-passado-03` | 77 | n5 | 231 | 2 |
 
 ### Skip potential
 
-Summed over all 322 lessons, 23875 (lesson, earlier-lesson) pairs are *not*
-prerequisite pairs — a mean of 74.1 skippable lessons per
+Summed over all 322 lessons, 23824 (lesson, earlier-lesson) pairs are *not*
+prerequisite pairs — a mean of 74.0 skippable lessons per
 placement target. Where placement pays most, among lessons that actually have
 prerequisites (roots are excluded here; see the caveat below):
 
 | placing into | pos | ancestors (must have) | skippable |
 |---|---:|---:|---:|
-| `les:n3-limites-03` | 282 | 136 | 146 |
+| `les:n3-limites-03` | 282 | 139 | 143 |
 | `les:n3-conjectura-01` | 301 | 158 | 143 |
 | `les:n3-conjectura-02` | 302 | 169 | 133 |
 | `les:n3-deveres-02` | 268 | 138 | 130 |
@@ -895,8 +901,8 @@ supports would be indistinguishable from the ones that are evidence-backed.
    through `extra['les']` (lesson slugs, which carry the `les:` prefix) and then checks
    membership in the already-seen set. The driving items survive in `note`.
 2. **Bare prose kanji is measured, not shipped.** A kanji inside a `<jp>` span or an
-   exercise answer string is text, not an address. Counting it would add 3023 more edges and
-   1276 more forward defects, most of them
+   exercise answer string is text, not an address. Counting it would add 3028 more edges and
+   1278 more forward defects, most of them
    the sentence-level i+1 backlog that `validate_lesson_gating.py` check D already holds
    frozen in `research/reports/lesson_sentence_baseline.json`. Check B scopes "reference"
    to addressed item tags for the same reason; this derivation matches it rather than
@@ -907,11 +913,11 @@ supports would be indistinguishable from the ones that are evidence-backed.
    plain text, so the "answers" channel the brief names is real but nearly empty. Making
    it carry weight needs `item_refs` on exercises (the field exists in the authoring
    source `research/derived/lessons/*.json` and is empty), not a fuzzier matcher here.
-4. **Items no lesson teaches produce no edge.** 54 distinct referenced refs are unlocked by no
+4. **Items no lesson teaches produce no edge.** 49 distinct referenced refs are unlocked by no
    lesson at all — overwhelmingly vocabulary appearing inside displayed sentences that the
    course never formally introduces. There is no lesson to depend on, so they are counted
    here rather than turned into a dangling need.
-5. **Self-references are dropped.** 3985 (lesson, ref) pairs
+5. **Self-references are dropped.** 3988 (lesson, ref) pairs
    point at an item the lesson itself introduces — the normal case for a lesson teaching
    its own material, and not a dependency.
 6. **The reduction is exact, not heuristic.** Because every edge runs backward in course
@@ -923,7 +929,7 @@ supports would be indistinguishable from the ones that are evidence-backed.
 ## What this unblocks
 
 - Check C of `validate_lesson_gating.py` stops printing its standing ADVISORY and starts
-  proving something: 700 prerequisites to verify instead of 0.
+  proving something: 696 prerequisites to verify instead of 0.
 - G11's remediation edges become expressible: a failed checkpoint can name the exact
   lesson to return to.
 - D2 placement gets its input — the ancestor closure per lesson, and the skip set.

@@ -88,10 +88,19 @@ least reliable rule. 5 exemptions have certain placements needing no new content
 Detail: `homograph_recommendations.md`.
 
 ### A7. Three design gaps
-- `needs[]` prerequisite model is empty everywhere; the linearity gate prints an unconditional
-  notice. Populate it (from cumulative-known-set deltas?) or remove the field.
-- 875 lesson-body `<jp>` spans contain kanji and carry no reading — furigana coverage policy:
-  every span, or only the first occurrence per lesson?
+- ~~`needs[]` prerequisite model is empty everywhere; the linearity gate prints an unconditional
+  notice.~~ **CLOSED 2026-09-09 (W21).** 747 edges in both layers; check C is now C1-C4 and C4
+  re-derives the whole model on the tree being validated, so it cannot drift. 8 lessons legitimately
+  declare no prerequisite and are held in `course/needs_root_exemptions.json` (ratchet, shrink-only).
+  Report: `w21_apply_report.md`.
+- ~~875 lesson-body `<jp>` spans contain kanji and carry no reading — furigana coverage policy:
+  every span, or only the first occurrence per lesson?~~ **ANSWERED 2026-09-09 (W21): every span,
+  wherever a registry can settle it.** 611 written (315 from the lesson's own vocabulary record, 296
+  from SudachiPy verified against the vocab and kanji registries and the whole-word aligner); 264
+  refused and listed with both candidates. The validator regex is now
+  kanji-implies-reading-ATTRIBUTE, ratcheted at 264. **Still open, and it is a teacher pass:** the
+  264 residue, of which the cheapest slice is 74 spans over ~20 radical/component characters the
+  kanji registry does not carry (亻 氵 宀 艹 頁 …) — a name each, not a derivation.
 - `bank.json` exposes one `translation.en` but 3,529 are Layer-A anchors and 2,342 are Layer-B
   *derived* English; a consumer cannot tell them apart. Add an `en_layer` field to the contract?
 Detail: `en_anchor_backfill.md` (third item); STATE (af).
@@ -148,6 +157,9 @@ with no survivor (learner never sees it). Ledger with per-record evidence:
 (運/うん n3, 園/その n1). 11 exam items quarantined pending W17/W18.
 **Recommendation.** Decide pair by pair with the teacher when N5 review starts; nothing ships wrong
 today because every one of the 14 keeps its current (mis-)address consistently.
+**Priority raised (2026-09-09, W21):** the 事 case now shows in eleven learner-facing needs notes
+("Apresenta a palavra 琴 (こと)") because les:n4-conectores-01 unlocks the instrument record; every
+lesson downstream of it repeats the headword. Decide this one first.
 
 ### A10. Should a speaking-path stage's patterns be capped at its level band?
 **Question.** A unit's `patterns` are the grammar points whose forms occur in the unit's own

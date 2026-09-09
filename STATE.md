@@ -58,6 +58,34 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-09 (as) — W21 APPLIED (§6 step 3): `needs[]` written and the linearity gate made
+> real; 611 of 875 silent `<jp>` spans given a derived reading. Gate green, full manifest replay
+> green. Next: §6 step 4.**
+>
+> - **747 prerequisite edges in both layers** (696 derived on the CURRENT tree — the committed
+>   artifact was four edges stale after W11/W12 — plus 40 chaining the pre-N5 strand and 11 chaining
+>   the deep review/kanji-exame roots, both BY RULE, no authoring). `lesson_needs` gained the `note`
+>   column the schema always specified (migration 013); the note is learner-facing pt-BR from a
+>   fixed template per reason class. Manifest steps 115/116; the family builders moved to 117-119.
+> - **`validate_lesson_gating` check C is now C1-C4**: refs resolve and precede (C1), every lesson
+>   but the opener declares a prerequisite unless held in `course/needs_root_exemptions.json`
+>   (C2, ratchet 8, shrink-only), the graph is acyclic by Kahn sort (C3), and **the stored edges are
+>   exactly what `build_needs_table.py` derives from the tree being validated (C4)** — so `needs[]`
+>   cannot drift from the references it came from. 11 plants, 11 caught, control green.
+> - **A7 furigana: 611 written / 264 residue**, split measured before writing. Rule i (the lesson's
+>   own vocabulary record) 315, rule ii (SudachiPy verified against both registries and the
+>   whole-word aligner) 296. The residue is listed with BOTH candidates and is ratcheted in
+>   `validate_lesson_bodies`, whose regex is now kanji-implies-reading-ATTRIBUTE (it could only see
+>   spans that already had one, which is how 875 shipped silent).
+> - **Prose did not move: 322/322 lessons render byte-identical text against `git HEAD`**; 319
+>   changed structurally. Two regressions the FULL replay caught and I fixed: a compact `needs` block
+>   broke the canonical-JSON invariant `apply_qa_instruction_leaks.py` (step 89) depends on, and a
+>   furigana row can address a span a regenerated source does not have.
+> - Open and named in `research/reports/w21_apply_report.md`: no `placement` field exists, so the 11
+>   review lessons go to **D2**; the 8 held roots are W21b's forward-reference ledger (607 edges);
+>   the 264-span residue is a teacher pass (the cheapest slice is ~20 radical names); eleven notes
+>   name 琴 where the lesson means こと (a vocab re-point, same class as W11/W12).
+
 > **2026-09-09 (ar) — W12 DONE and committed (§6 step 2): 663 reading-verified relinks, 57 N5/N4
 > records over the sentence floor (the audit's 568 was a substring artefact — recorded), exporter now
 > ships sentence.vocab[] and 343 cards regained their example; lessons untouched. Next: §6 step 3,

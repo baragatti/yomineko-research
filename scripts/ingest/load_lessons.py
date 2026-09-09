@@ -149,8 +149,11 @@ def persist_lesson(con, rec: dict, warns: list) -> int | None:
     for pre in rec.get("prerequisites", []):
         needs.append({"type": "lesson", "ref": pre if ":" in str(pre) else f"les:{pre}"})
     for n in needs:
-        con.execute("INSERT OR IGNORE INTO lesson_needs (lesson_id,need_type,ref) VALUES (?,?,?)",
-                    (lid, n["type"], _norm_ref(n["type"], n["ref"])))
+        # W21: `note` is the learner-facing reason design/lesson_schema.md has always specified on
+        # `needs`; before migration 013 there was no column for it and the ingest silently dropped it.
+        con.execute("INSERT OR IGNORE INTO lesson_needs (lesson_id,need_type,ref,note) "
+                    "VALUES (?,?,?,?)",
+                    (lid, n["type"], _norm_ref(n["type"], n["ref"]), n.get("note")))
     for sl in rec.get("sentence_refs", []):
         s = _sid(con, sl)
         if s is None:

@@ -74,6 +74,18 @@ REF_NS = {
 DEFERRED_NS = {"img", "aud", "vid"}
 
 JPTAG = re.compile(r'<jp\s+reading="([^"]*)"\s*>(.*?)</jp>', re.S)
+# W21: the regex above is kanji-implies-nothing — it only sees a span that ALREADY carries the
+# attribute, so an EMPTY reading was a hard failure while a MISSING one was invisible, and 875
+# kanji-bearing spans were shipping with no pronunciation at all. JPANY sees every span; the
+# furigana rule is now kanji-implies-reading-ATTRIBUTE, ratcheted at the residue W21 could not
+# derive mechanically (research/derived/repairs/lesson_furigana.json).
+JPANY = re.compile(r'<jp\b([^>]*)>(.*?)</jp>', re.S)
+JPATTR = re.compile(r'(\w+)="([^"]*)"')
+# Every kanji-bearing <jp> span with no `reading`, as measured when the model landed: the 264
+# spans no registry could settle (a radical printed inside a decomposition, a homograph the
+# lesson itself does not disambiguate, a reading Sudachi and the registry disagree on). Each is
+# listed with BOTH candidates in that table. The count may only shrink.
+FURIGANA_RESIDUE_RATCHET = 264
 TAGS = re.compile(r"<[^>]+>")
 HIRA = re.compile(r"[ぁ-ん]")            # deliberately excludes ー and katakana
 KANJI = re.compile(r"[一-鿿々〆]")
@@ -233,6 +245,18 @@ def bad_reading_chars(reading: str, base: str) -> list[str]:
     return bad
 
 
+def check_missing_furigana(stats: Counter, where: str, text: str, missing: list[str]) -> None:
+    """kanji in the base implies a `reading` attribute. Counted, not failed per span: the residue is
+    held by FURIGANA_RESIDUE_RATCHET so it can only shrink."""
+    for attrs, base in JPANY.findall(text or ""):
+        if "reading" in dict(JPATTR.findall(attrs)):
+            continue
+        plain = TAGS.sub("", base)
+        if KANJI.search(plain):
+            stats["no_reading_attr"] += 1
+            missing.append(f"{where}: <jp>{plain}</jp> carries kanji and no reading")
+
+
 def check_furigana(fails: list[str], stats: Counter, where: str, text: str) -> None:
     for reading, base in JPTAG.findall(text or ""):
         stats["spans"] += 1
@@ -279,6 +303,7 @@ def main() -> int:
     fail: dict[str, list[str]] = {k: [] for k in
                                   ("wellformed", "refs", "vocab-slug", "furigana", "plaintext")}
     warns: list[str] = []
+    missing_reading: list[str] = []          # W21: kanji base, no `reading` attribute
     stats: Counter = Counter()
     by_kind: Counter = Counter()
 
@@ -355,6 +380,7 @@ def main() -> int:
 
         # --- furigana in the body -------------------------------------------
         check_furigana(fail["furigana"], stats, lid, body)
+        check_missing_furigana(stats, lid, body, missing_reading)
 
         # --- plain-text fields carry no markup ------------------------------
         plain_fields: list[tuple[str, object]] = [
@@ -394,6 +420,7 @@ def main() -> int:
         for sub, s in walk_strings(d):
             if "<jp" in s:
                 check_furigana(fail["furigana"], stats, f"{extra.name}/{sub}", s)
+                check_missing_furigana(stats, f"{extra.name}/{sub}", s, missing_reading)
 
     # --- every whole-string vocab identifier in course/ is a numeric slug -----
     for f in sorted(course.rglob("*.json")):
@@ -415,10 +442,21 @@ def main() -> int:
                 fail["vocab-slug"].append(
                     f"{d.get('id')}: body {attr}=\"{val}\" uses the retired vocab:<headword> scheme")
 
+    # --- W21 ratchet: kanji-implies-reading-attribute, allowed to shrink and nothing else ----
+    n_missing = len(missing_reading)
+    if n_missing > FURIGANA_RESIDUE_RATCHET:
+        fail["furigana"].append(
+            f"<jp> spans with kanji and NO reading attribute GREW: {FURIGANA_RESIDUE_RATCHET} -> "
+            f"{n_missing}. The first new ones: " + "; ".join(missing_reading[:3]))
+
     total = sum(len(v) for v in fail.values())
     print(f"lesson bodies: {stats['lessons']} lessons, {stats['refs']} refs, {stats['spans']} furigana "
           f"spans, {stats['plain_fields']} plain-text fields, {stats['vocab_ids']} vocab ids — "
           f"{total} FAIL {dict((k, len(v)) for k, v in fail.items() if v)} , {len(warns)} warn")
+    print(f"  furigana: {n_missing}/{FURIGANA_RESIDUE_RATCHET} kanji-bearing <jp> spans still carry no "
+          f"`reading` (residue of scripts/build_furigana_table.py)"
+          + ("" if n_missing == FURIGANA_RESIDUE_RATCHET else
+             " — SHRANK, lower FURIGANA_RESIDUE_RATCHET"))
     if stats["empty_kana_base"]:
         print(f"  note  {stats['empty_kana_base']} <jp reading=\"\"> spans on kana-only bases "
               f"(redundant, not a defect)")

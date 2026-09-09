@@ -1,0 +1,47 @@
+{
+  "why": "Lessons that legitimately declare NO prerequisite. validate_lesson_gating.py check C2 requires every lesson except the course opener (les:pre-n5-orientacao-01) to carry at least one `needs` entry; a lesson listed here is held instead, with the reason the W21 derivation gave for it. An entry whose lesson HAS needs is a failure, so this list can only shrink. Two shapes are here and both are course-order debt rather than a prerequisite model gap: a `forward-only` root uses items the course teaches LATER (the 601-edge ledger in research/reports/w21_needs_report.md, unit W21b), and a `self-contained` root references only what it unlocks itself, which for an early-N5 numbers lesson is honest and for a review lesson deep in the course is not (those 11 are chained by rule instead - see scripts/build_needs_table.py).",
+  "retires_when": "W21b moves or rewrites the forward references; owner decision D2 rules on placement.",
+  "count": 8,
+  "lessons": [
+    {
+      "lesson": "les:n5-desu-wa-01",
+      "position": 41,
+      "reason": "NOT a real root: every one of its 2 dependencies points FORWARD in course order, so all were withheld as defects. Fixing the forward references (see forward_edge_defects) gives this lesson prerequisites"
+    },
+    {
+      "lesson": "les:n5-desu-wa-02",
+      "position": 42,
+      "reason": "NOT a real root: every one of its 8 dependencies points FORWARD in course order, so all were withheld as defects. Fixing the forward references (see forward_edge_defects) gives this lesson prerequisites"
+    },
+    {
+      "lesson": "les:n5-perguntas-02",
+      "position": 47,
+      "reason": "NOT a real root: every one of its 10 dependencies points FORWARD in course order, so all were withheld as defects. Fixing the forward references (see forward_edge_defects) gives this lesson prerequisites"
+    },
+    {
+      "lesson": "les:n5-numeros-tempo-01",
+      "position": 52,
+      "reason": "self-contained: all 9 referenced taught item(s) are introduced by this lesson itself, and it displays no sentence or reading that would pull in others"
+    },
+    {
+      "lesson": "les:n5-numeros-tempo-03",
+      "position": 54,
+      "reason": "NOT a real root: every one of its 10 dependencies points FORWARD in course order, so all were withheld as defects. Fixing the forward references (see forward_edge_defects) gives this lesson prerequisites"
+    },
+    {
+      "lesson": "les:n5-numeros-tempo-06",
+      "position": 57,
+      "reason": "self-contained: all 9 referenced taught item(s) are introduced by this lesson itself, and it displays no sentence or reading that would pull in others"
+    },
+    {
+      "lesson": "les:n5-numeros-tempo-08",
+      "position": 59,
+      "reason": "self-contained: all 7 referenced taught item(s) are introduced by this lesson itself, and it displays no sentence or reading that would pull in others"
+    },
+    {
+      "lesson": "les:n5-numeros-tempo-09",
+      "position": 60,
+      "reason": "self-contained: all 8 referenced taught item(s) are introduced by this lesson itself, and it displays no sentence or reading that would pull in others"
+    }
+  ]
+}

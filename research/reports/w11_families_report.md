@@ -440,7 +440,7 @@ warns against.
 | `scripts/validate/graph_queries.py` | Q1 resolves the "daily-routine family" over `semantic_field` **or** `topic_residual`, so the rename cannot turn a documented waiver into "the family does not exist"; the waiver text now names what actually fixes it (W39) |
 | `scripts/validate/validate_all.py`, `scripts/validate/README.md` | `validate_families.py` advisory to **code**, with the eight checks written out |
 | `scripts/validate/rebuild_baseline.json` | one quick-mode hash re-recorded (§8.1) |
-| `research/derived/rebuild_manifest.json` | the three family steps moved to the end with their reasons (113-115, now 114-116 after W11c inserted step 112); cross-references renumbered |
+| `research/derived/rebuild_manifest.json` | the three family steps moved to the end with their reasons (113-115, then 115-117 after W11c inserted step 112, and 117-119 after W21 inserted 115-116); cross-references renumbered |
 | `design/schema_v2.md` | §B records what shipped against what the section promised, including the two fields still deliberately empty |
 | `design/generated_artifacts.json` | `corpus/families_deprecated.json` registered |
 | `corpus/families/families.json`, `corpus/families_deprecated.json`, `corpus/families/INDEX.md`, the registries' `families[]` back-pointers, 52 `topic.json` | the export |

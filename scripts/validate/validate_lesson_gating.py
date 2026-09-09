@@ -26,9 +26,24 @@ Checks, in order:
                <stroke ref="kanji:…">, <check item-ref> — is a member of that lesson's
                cumulative_known_set for its kind, or is listed in course/gating_exemptions.json
                with a reason. An exemption that matches nothing is itself a failure.
-  C  HARD      every `needs` prerequisite resolves to a lesson strictly earlier in course order;
-               plus a loud ADVISORY when the whole course declares zero prerequisites, so an empty
-               model can never be mistaken for a passing linearity gate.
+  C  HARD      the linearity gate, in four parts. Until W21 the model was EMPTY — 322 lessons, 0
+               `needs` entries — so C could only print an advisory saying it proved nothing. It now
+               proves four things:
+                 C1  every `needs[].ref` resolves to an exported lesson and is STRICTLY EARLIER in
+                     course order (the original check).
+                 C2  every lesson except the course opener carries at least one need, unless it is
+                     held in course/needs_root_exemptions.json with a reason. An entry there whose
+                     lesson HAS needs is itself a failure, and the count is ratcheted, so the list
+                     of prerequisite-less lessons can only shrink.
+                 C3  the graph is ACYCLIC, by Kahn topological sort over the stored edges. C1 makes
+                     a cycle unrepresentable, which is an argument about the data; C3 is the check
+                     of the built graph, and it is what survives a future change to C1.
+                 C4  the stored edges are EXACTLY what scripts/build_needs_table.py derives from
+                     this tree: derive_needs.py's transitive reduction plus the two documented rule
+                     sets (the pre-N5 chain and the 11 deep review roots). Without C4 the stored
+                     model is free to drift away from the references it was derived from - a lesson
+                     could gain a chip whose introducer is not in its `needs` and nothing would say
+                     so. This is the check that makes `needs[]` DATA rather than a snapshot.
   D  FROZEN    sentence level fit + i+1 budget, compared against the checked-in baseline.
 
 Scope note: the readings half of the i+0 rule (corpus/readings/*.json `uses` vs `gated_to_lesson`)
@@ -58,6 +73,10 @@ ITEM_ATTR = re.compile(r'\b(item-ref|ref)="([^"]+)"')
 SENT_REF = re.compile(r'<sentence\s+[^>]*ref="([^"]+)"')
 
 BASELINE_REL = "research/reports/lesson_sentence_baseline.json"
+# W21: lessons that legitimately declare no prerequisite. The ratchet is the count at the
+# moment the model landed; C2 fails on growth, so the list can only shrink.
+ROOT_EXEMPT_REL = "course/needs_root_exemptions.json"
+ROOT_RATCHET = 8
 REVIEW_REL = "research/reports/lesson_sentence_review.json"
 EXEMPT_REL = "course/gating_exemptions.json"
 
@@ -157,19 +176,96 @@ def main() -> int:
             fails.append(f"{EXEMPT_REL}: exemption {key[0]} / {key[1]} matches nothing "
                          f"(reason was {reason[:60]!r}) — delete it")
 
-    # ---- C: prerequisites resolve and are strictly earlier ----------------------------
+    # ---- C: the linearity gate (C1 resolve+earlier, C2 coverage, C3 acyclic, C4 no drift) ----
     needs_total = c_fails = 0
+    succ: dict[str, set[str]] = {d["id"]: set() for d in lessons}
     for d in lessons:
         for n in d.get("needs") or []:
             needs_total += 1
             ref = n.get("ref") if isinstance(n, dict) else n
             if ref not in pos:
                 c_fails += 1
-                fails.append(f"{d['id']} needs {ref!r}: not an exported lesson")
-            elif pos[ref] >= pos[d["id"]]:
+                fails.append(f"C1 {d['id']} needs {ref!r}: not an exported lesson")
+                continue
+            succ[ref].add(d["id"])
+            if pos[ref] >= pos[d["id"]]:
                 c_fails += 1
-                fails.append(f"{d['id']} needs {ref}: not strictly earlier "
+                fails.append(f"C1 {d['id']} needs {ref}: not strictly earlier "
                              f"(position {pos[ref]} vs {pos[d['id']]})")
+
+    # C2 — coverage. Everything but the course opener needs a prerequisite or a held reason.
+    root_exempt: dict[str, str] = {}
+    rf = root / ROOT_EXEMPT_REL
+    if rf.exists():
+        rdoc = json.loads(rf.read_text(encoding="utf-8"))
+        for i, e in enumerate(rdoc.get("lessons") or []):
+            if not (e.get("lesson") and (e.get("reason") or "").strip()):
+                c_fails += 1
+                fails.append(f"C2 {ROOT_EXEMPT_REL}[{i}]: entry needs a lesson and a non-empty reason")
+                continue
+            root_exempt[e["lesson"]] = e["reason"]
+        if rdoc.get("count") != len(rdoc.get("lessons") or []):
+            c_fails += 1
+            fails.append(f"C2 {ROOT_EXEMPT_REL}: count {rdoc.get('count')} != "
+                         f"{len(rdoc.get('lessons') or [])} entries")
+    opener = lessons[0]["id"] if lessons else ""
+    rootless = [d["id"] for d in lessons if not (d.get("needs") or []) and d["id"] != opener]
+    for lid in rootless:
+        if lid not in root_exempt:
+            c_fails += 1
+            fails.append(f"C2 {lid} declares no prerequisite and is not held in {ROOT_EXEMPT_REL}")
+    for lid in root_exempt:
+        if lid not in rootless:
+            c_fails += 1
+            fails.append(f"C2 {ROOT_EXEMPT_REL}: {lid} now declares prerequisites — delete the entry")
+    if len(rootless) > ROOT_RATCHET:
+        c_fails += 1
+        fails.append(f"C2 prerequisite-less lessons GREW: {ROOT_RATCHET} -> {len(rootless)}")
+
+    # C3 — acyclic, by Kahn over the stored edges (not over the argument for them).
+    indeg = {d["id"]: len([n for n in (d.get("needs") or []) if (n.get("ref") if isinstance(n, dict)
+                                                                else n) in pos]) for d in lessons}
+    queue = [lid for lid, k in indeg.items() if k == 0]
+    drained = 0
+    while queue:
+        cur = queue.pop()
+        drained += 1
+        for nxt in succ.get(cur, ()):
+            indeg[nxt] -= 1
+            if indeg[nxt] == 0:
+                queue.append(nxt)
+    if drained != len(lessons):
+        c_fails += 1
+        fails.append(f"C3 the prerequisite graph has a CYCLE: the topological sort drained "
+                     f"{drained} of {len(lessons)} lessons")
+
+    # C4 — the stored edges are exactly what the derivation produces on THIS tree.
+    try:
+        sys.path.insert(0, str(root / "scripts"))
+        import build_needs_table                                   # noqa: PLC0415
+        want = {(r["lesson"], r["ref"]): r["note"] for r in build_needs_table.build(root)["rows"]}
+    except Exception as e:                                          # noqa: BLE001
+        c_fails += 1
+        fails.append(f"C4 could not re-derive the prerequisite model from this tree: {e}")
+        want = None
+    if want is not None:
+        have = {(d["id"], n["ref"]): n.get("note")
+                for d in lessons for n in (d.get("needs") or []) if isinstance(n, dict)}
+        for key in sorted(have.keys() - want.keys())[:5]:
+            c_fails += 1
+            fails.append(f"C4 {key[0]} stores a need on {key[1]} the derivation does not produce")
+        for key in sorted(want.keys() - have.keys())[:5]:
+            c_fails += 1
+            fails.append(f"C4 {key[0]} does not store the derived need on {key[1]}")
+        extra, gone = len(have.keys() - want.keys()), len(want.keys() - have.keys())
+        if extra > 5 or gone > 5:
+            fails.append(f"C4 … {extra} stored-but-underived and {gone} derived-but-unstored in total")
+        for key in sorted(have.keys() & want.keys()):
+            if have[key] != want[key]:
+                c_fails += 1
+                fails.append(f"C4 {key[0]} -> {key[1]}: the stored note is not the derived one "
+                             f"({have[key]!r} vs {want[key]!r})")
+                break
 
     # ---- D: sentence level fit + i+1 budget (frozen, not clean) -----------------------
     bank = {s["slug"]: s for s in
@@ -311,6 +407,11 @@ def main() -> int:
     if needs_total == 0:
         print(f"  ADVISORY: 0 `needs` entries across {len(lessons)} lessons — the prerequisite model "
               f"is empty, so check C proves nothing about linearity.")
+    else:
+        print(f"  needs: {needs_total} edge(s) over {len({d['id'] for d in lessons if d.get('needs')})} "
+              f"lessons; {len(rootless)}/{ROOT_RATCHET} prerequisite-less and held, "
+              f"1 course opener, graph acyclic ({drained}/{len(lessons)} drained), "
+              f"re-derivation {'agrees' if want is not None and not (set(have) ^ set(want)) else 'DISAGREES'}")
     print(f"  ADVISORY: sentence fit {n_above}/{pairs} above lesson level, {n_over}/{pairs} over the "
           f"i+1 budget ({n_new_kanji} with new kanji, {n_new_vocab} with new vocab) — "
           f"{len(offenders)} pairs queued in {REVIEW_REL}")
