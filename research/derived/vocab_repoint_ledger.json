@@ -34,7 +34,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 15,
+          "introducing_topic_id": 17,
           "repointed_from": null
         },
         "forms": [
@@ -61,24 +61,24 @@
         ],
         "senses": [
           {
-            "id": 17378,
+            "id": 1611,
             "vocab_id": 502,
             "sense_order": 0,
             "pos": "[\"n\"]",
             "field_tags": "[]",
             "misc_tags": "[]",
-            "gloss_en": "[\"lung\", \"lungs\"]",
-            "gloss_pt": "[\"pulmão\", \"pulmões\"]",
+            "gloss_en": "[\"lung\"]",
+            "gloss_pt": null,
             "needs_review": 1
           }
         ],
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 17378,
+            "entity_id": 1611,
             "field": "gloss",
             "locale": "pt-BR",
-            "value": "[\"pulmão\", \"pulmões\"]",
+            "value": "[\"pulmão\"]",
             "is_list": 1,
             "layer": "B"
           }
@@ -98,8 +98,8 @@
         ]
       },
       "content_loss": [
-        "sense 0 [\"n\"]: en=['lung', 'lungs'] pt=['pulmão', 'pulmões']",
-        "localized_text gloss/pt-BR: [\"pulmão\", \"pulmões\"]",
+        "sense 0 [\"n\"]: en=['lung'] pt=(locale row)",
+        "localized_text gloss/pt-BR: [\"pulmão\"]",
         "vocab_kanji ['肺'] — kanji the new headword does not contain",
         "freq_rank 8158 -> 1000 (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
       ],
@@ -108,7 +108,7 @@
         "level_confidence = 1.0",
         "level_agreement = 4/4",
         "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n5\", \"jlptvocabapi\": \"n5\"}",
-        "introducing_topic_id = 15"
+        "introducing_topic_id = 17"
       ],
       "freq_rank": {
         "old": 8158,
@@ -171,33 +171,16 @@
             "reading": "はい"
           }
         ],
-        "lesson_unlocks": [
-          [
-            16578,
-            "vocab"
-          ]
-        ],
+        "lesson_unlocks": [],
         "lesson_needs": [],
-        "lesson_bodies": [
-          [
-            "lesson",
-            16578,
-            "body",
-            "pt-BR",
-            1
-          ]
-        ],
-        "cumulative_known_set": 224,
-        "family_kept": [
-          [
-            372,
-            "grp:theme-n5-te-form",
-            "semantic_field"
-          ]
-        ],
+        "lesson_bodies": [],
+        "cumulative_known_set": 0,
+        "family_kept": [],
         "family_dropped": [],
         "reading_uses_dropped": [],
-        "kanji_reading_examples_dropped": [],
+        "kanji_reading_examples_dropped": [
+          "肺 / ハイ"
+        ],
         "pitch_dropped": [],
         "old_ref": "vocab:肺",
         "new_ref": "vocab:はい"
@@ -235,7 +218,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 11,
+          "introducing_topic_id": 18,
           "repointed_from": null
         },
         "forms": [
@@ -282,24 +265,44 @@
         ],
         "senses": [
           {
-            "id": 17170,
+            "id": 1102,
             "vocab_id": 355,
             "sense_order": 0,
             "pos": "[\"n\"]",
             "field_tags": "[]",
             "misc_tags": "[]",
-            "gloss_en": "[\"garden\", \"park\", \"grounds\"]",
-            "gloss_pt": "[\"jardim\", \"parque\"]",
+            "gloss_en": "[\"garden\", \"orchard\", \"park\"]",
+            "gloss_pt": null,
+            "needs_review": 1
+          },
+          {
+            "id": 1103,
+            "vocab_id": 355,
+            "sense_order": 1,
+            "pos": "[\"n\"]",
+            "field_tags": "[]",
+            "misc_tags": "[]",
+            "gloss_en": "[\"place\", \"world\", \"environment\"]",
+            "gloss_pt": null,
             "needs_review": 1
           }
         ],
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 17170,
+            "entity_id": 1102,
             "field": "gloss",
             "locale": "pt-BR",
-            "value": "[\"jardim\", \"parque\"]",
+            "value": "[\"jardim\", \"pomar\", \"parque\"]",
+            "is_list": 1,
+            "layer": "B"
+          },
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 1103,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"lugar\", \"mundo\", \"ambiente\"]",
             "is_list": 1,
             "layer": "B"
           }
@@ -319,8 +322,10 @@
         ]
       },
       "content_loss": [
-        "sense 0 [\"n\"]: en=['garden', 'park', 'grounds'] pt=['jardim', 'parque']",
-        "localized_text gloss/pt-BR: [\"jardim\", \"parque\"]",
+        "sense 0 [\"n\"]: en=['garden', 'orchard', 'park'] pt=(locale row)",
+        "sense 1 [\"n\"]: en=['place', 'world', 'environment'] pt=(locale row)",
+        "localized_text gloss/pt-BR: [\"jardim\", \"pomar\", \"parque\"]",
+        "localized_text gloss/pt-BR: [\"lugar\", \"mundo\", \"ambiente\"]",
         "vocab_kanji ['園'] — kanji the new headword does not contain",
         "freq_rank 11700 -> 11609 (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
       ],
@@ -329,7 +334,7 @@
         "level_confidence = 1.0",
         "level_agreement = 4/4",
         "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n5\", \"jlptvocabapi\": \"n5\"}",
-        "introducing_topic_id = 11"
+        "introducing_topic_id = 18"
       ],
       "freq_rank": {
         "old": 11700,
@@ -363,30 +368,11 @@
         "sentence_vocab_dropped": [],
         "token_kept": 150,
         "token_dropped": [],
-        "lesson_unlocks": [
-          [
-            16549,
-            "vocab"
-          ]
-        ],
+        "lesson_unlocks": [],
         "lesson_needs": [],
-        "lesson_bodies": [
-          [
-            "lesson",
-            16549,
-            "body",
-            "pt-BR",
-            1
-          ]
-        ],
-        "cumulative_known_set": 254,
-        "family_kept": [
-          [
-            364,
-            "grp:theme-n5-particulas-lugar",
-            "semantic_field"
-          ]
-        ],
+        "lesson_bodies": [],
+        "cumulative_known_set": 0,
+        "family_kept": [],
         "family_dropped": [],
         "reading_uses_dropped": [],
         "kanji_reading_examples_dropped": [
@@ -429,7 +415,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 11,
+          "introducing_topic_id": 18,
           "repointed_from": null
         },
         "forms": [
@@ -456,24 +442,24 @@
         ],
         "senses": [
           {
-            "id": 17162,
+            "id": 1087,
             "vocab_id": 349,
             "sense_order": 0,
             "pos": "[\"pref\"]",
             "field_tags": "[]",
             "misc_tags": "[]",
-            "gloss_en": "[\"total\", \"general\", \"overall (prefix)\"]",
-            "gloss_pt": "[\"total\", \"geral (prefixo)\"]",
+            "gloss_en": "[\"whole\", \"total\", \"gross\", \"entire\", \"overall\", \"general (election, manager, etc.)\"]",
+            "gloss_pt": null,
             "needs_review": 1
           }
         ],
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 17162,
+            "entity_id": 1087,
             "field": "gloss",
             "locale": "pt-BR",
-            "value": "[\"total\", \"geral (prefixo)\"]",
+            "value": "[\"total\", \"geral\", \"bruto\"]",
             "is_list": 1,
             "layer": "B"
           }
@@ -493,8 +479,8 @@
         ]
       },
       "content_loss": [
-        "sense 0 [\"pref\"]: en=['total', 'general', 'overall (prefix)'] pt=['total', 'geral (prefixo)']",
-        "localized_text gloss/pt-BR: [\"total\", \"geral (prefixo)\"]",
+        "sense 0 [\"pref\"]: en=['whole', 'total', 'gross', 'entire', 'overall', 'general (election, manager, etc.)'] pt=(locale row)",
+        "localized_text gloss/pt-BR: [\"total\", \"geral\", \"bruto\"]",
         "vocab_kanji ['総'] — kanji the new headword does not contain",
         "freq_rank 10050 -> None (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
       ],
@@ -503,7 +489,7 @@
         "level_confidence = 0.5",
         "level_agreement = 2/4",
         "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
-        "introducing_topic_id = 11"
+        "introducing_topic_id = 18"
       ],
       "freq_rank": {
         "old": 10050,
@@ -547,25 +533,16 @@
         "sentence_vocab_dropped": [],
         "token_kept": 77,
         "token_dropped": [],
-        "lesson_unlocks": [
-          [
-            16554,
-            "vocab"
-          ]
-        ],
+        "lesson_unlocks": [],
         "lesson_needs": [],
         "lesson_bodies": [],
-        "cumulative_known_set": 249,
-        "family_kept": [
-          [
-            364,
-            "grp:theme-n5-particulas-lugar",
-            "semantic_field"
-          ]
-        ],
+        "cumulative_known_set": 0,
+        "family_kept": [],
         "family_dropped": [],
         "reading_uses_dropped": [],
-        "kanji_reading_examples_dropped": [],
+        "kanji_reading_examples_dropped": [
+          "総 / ソウ"
+        ],
         "pitch_dropped": [],
         "old_ref": "vocab:総",
         "new_ref": "vocab:然う"
@@ -603,7 +580,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 11,
+          "introducing_topic_id": 18,
           "repointed_from": null
         },
         "forms": [
@@ -630,7 +607,7 @@
         ],
         "senses": [
           {
-            "id": 26345,
+            "id": 15736,
             "vocab_id": 374,
             "sense_order": 0,
             "pos": "[\"n\"]",
@@ -644,7 +621,7 @@
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 26345,
+            "entity_id": 15736,
             "field": "gloss",
             "locale": "pt-BR",
             "value": "[\"partida\", \"saída\", \"início\"]",
@@ -677,7 +654,7 @@
         "level_confidence = 1.0",
         "level_agreement = 2/2",
         "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\"}",
-        "introducing_topic_id = 11"
+        "introducing_topic_id = 18"
       ],
       "freq_rank": {
         "old": 13665,
@@ -704,7 +681,7 @@
             "evidence": "surface"
           },
           {
-            "sentence_id": 5174,
+            "sentence_id": 4961,
             "jp": "私は立ちっぱなしだった。",
             "link_rule": "run",
             "evidence": "surface"
@@ -712,34 +689,13 @@
         ],
         "token_kept": 0,
         "token_dropped": [],
-        "lesson_unlocks": [
-          [
-            16550,
-            "vocab"
-          ]
-        ],
+        "lesson_unlocks": [],
         "lesson_needs": [],
-        "lesson_bodies": [
-          [
-            "lesson",
-            16550,
-            "body",
-            "pt-BR",
-            1
-          ]
-        ],
-        "cumulative_known_set": 253,
+        "lesson_bodies": [],
+        "cumulative_known_set": 0,
         "family_kept": [],
-        "family_dropped": [
-          [
-            279,
-            "grp:word-7acb",
-            "word_family"
-          ]
-        ],
-        "reading_uses_dropped": [
-          "read:n4-volitivo-06-01"
-        ],
+        "family_dropped": [],
+        "reading_uses_dropped": [],
         "kanji_reading_examples_dropped": [
           "立 / た"
         ],
@@ -780,7 +736,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 15,
+          "introducing_topic_id": 12,
           "repointed_from": null
         },
         "forms": [
@@ -907,7 +863,7 @@
         ],
         "senses": [
           {
-            "id": 26337,
+            "id": 15728,
             "vocab_id": 503,
             "sense_order": 0,
             "pos": "[\"n\"]",
@@ -921,7 +877,7 @@
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 26337,
+            "entity_id": 15728,
             "field": "gloss",
             "locale": "pt-BR",
             "value": "[\"cálice de saquê\", \"taça para bebidas alcoólicas\"]",
@@ -953,7 +909,7 @@
         "level_confidence = 1.0",
         "level_agreement = 2/2",
         "level_sources = {\"elzup\": \"n5\", \"openanki\": \"n5\"}",
-        "introducing_topic_id = 15"
+        "introducing_topic_id = 12"
       ],
       "freq_rank": {
         "old": 1199,
@@ -1020,16 +976,12 @@
         "lesson_needs": [],
         "lesson_bodies": [],
         "cumulative_known_set": 0,
-        "family_kept": [
-          [
-            372,
-            "grp:theme-n5-te-form",
-            "semantic_field"
-          ]
-        ],
+        "family_kept": [],
         "family_dropped": [],
         "reading_uses_dropped": [],
-        "kanji_reading_examples_dropped": [],
+        "kanji_reading_examples_dropped": [
+          "杯 / さかずき"
+        ],
         "pitch_dropped": [
           1039
         ],
@@ -1069,7 +1021,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 28,
+          "introducing_topic_id": 34,
           "repointed_from": null
         },
         "forms": [
@@ -1096,24 +1048,44 @@
         ],
         "senses": [
           {
-            "id": 16275,
+            "id": 3299,
             "vocab_id": 1086,
             "sense_order": 0,
             "pos": "[\"n\", \"n-suf\"]",
             "field_tags": "[]",
-            "misc_tags": "[]",
-            "gloss_en": "[\"marquis\", \"feudal lord\"]",
-            "gloss_pt": "[\"marquês\", \"senhor feudal\"]",
+            "misc_tags": "[\"hist\"]",
+            "gloss_en": "[\"marquis\", \"second highest rank of the five ranks of nobility\"]",
+            "gloss_pt": null,
+            "needs_review": 1
+          },
+          {
+            "id": 3300,
+            "vocab_id": 1086,
+            "sense_order": 1,
+            "pos": "[\"n\", \"n-suf\"]",
+            "field_tags": "[]",
+            "misc_tags": "[\"hist\"]",
+            "gloss_en": "[\"daimyo\"]",
+            "gloss_pt": null,
             "needs_review": 1
           }
         ],
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 16275,
+            "entity_id": 3299,
             "field": "gloss",
             "locale": "pt-BR",
-            "value": "[\"marquês\", \"senhor feudal\"]",
+            "value": "[\"marquês\", \"segundo título mais alto da nobreza\"]",
+            "is_list": 1,
+            "layer": "B"
+          },
+          {
+            "entity_type": "vocab_sense",
+            "entity_id": 3300,
+            "field": "gloss",
+            "locale": "pt-BR",
+            "value": "[\"daimyo (senhor feudal)\"]",
             "is_list": 1,
             "layer": "B"
           }
@@ -1133,8 +1105,10 @@
         ]
       },
       "content_loss": [
-        "sense 0 [\"n\", \"n-suf\"]: en=['marquis', 'feudal lord'] pt=['marquês', 'senhor feudal']",
-        "localized_text gloss/pt-BR: [\"marquês\", \"senhor feudal\"]",
+        "sense 0 [\"n\", \"n-suf\"]: en=['marquis', 'second highest rank of the five ranks of nobility'] pt=(locale row)",
+        "sense 1 [\"n\", \"n-suf\"]: en=['daimyo'] pt=(locale row)",
+        "localized_text gloss/pt-BR: [\"marquês\", \"segundo título mais alto da nobreza\"]",
+        "localized_text gloss/pt-BR: [\"daimyo (senhor feudal)\"]",
         "vocab_kanji ['侯'] — kanji the new headword does not contain"
       ],
       "carried_unchanged": [
@@ -1142,7 +1116,7 @@
         "level_confidence = 1.0",
         "level_agreement = 4/4",
         "level_sources = {\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
-        "introducing_topic_id = 28"
+        "introducing_topic_id = 34"
       ],
       "freq_rank": {
         "old": null,
@@ -1184,33 +1158,16 @@
         "sentence_vocab_dropped": [],
         "token_kept": 6,
         "token_dropped": [],
-        "lesson_unlocks": [
-          [
-            16465,
-            "vocab"
-          ]
-        ],
+        "lesson_unlocks": [],
         "lesson_needs": [],
-        "lesson_bodies": [
-          [
-            "lesson",
-            16465,
-            "body",
-            "pt-BR",
-            1
-          ]
-        ],
-        "cumulative_known_set": 145,
-        "family_kept": [
-          [
-            357,
-            "grp:theme-n4-obrigacao",
-            "semantic_field"
-          ]
-        ],
+        "lesson_bodies": [],
+        "cumulative_known_set": 0,
+        "family_kept": [],
         "family_dropped": [],
         "reading_uses_dropped": [],
-        "kanji_reading_examples_dropped": [],
+        "kanji_reading_examples_dropped": [
+          "侯 / コウ"
+        ],
         "pitch_dropped": [],
         "old_ref": "vocab:侯",
         "new_ref": "vocab:斯う"
@@ -1248,7 +1205,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 20,
+          "introducing_topic_id": 27,
           "repointed_from": null
         },
         "forms": [
@@ -1285,24 +1242,24 @@
         ],
         "senses": [
           {
-            "id": 15713,
+            "id": 2237,
             "vocab_id": 699,
             "sense_order": 0,
             "pos": "[\"suf\"]",
             "field_tags": "[]",
             "misc_tags": "[]",
-            "gloss_en": "[\"and so on\", \"etc.\"]",
-            "gloss_pt": "[\"e assim por diante\", \"etc.\"]",
+            "gloss_en": "[\"etc.\", \"et cetera\", \"and so on\"]",
+            "gloss_pt": null,
             "needs_review": 1
           }
         ],
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 15713,
+            "entity_id": 2237,
             "field": "gloss",
             "locale": "pt-BR",
-            "value": "[\"e assim por diante\", \"etc.\"]",
+            "value": "[\"etc.\", \"e assim por diante\"]",
             "is_list": 1,
             "layer": "B"
           }
@@ -1322,8 +1279,8 @@
         ]
       },
       "content_loss": [
-        "sense 0 [\"suf\"]: en=['and so on', 'etc.'] pt=['e assim por diante', 'etc.']",
-        "localized_text gloss/pt-BR: [\"e assim por diante\", \"etc.\"]",
+        "sense 0 [\"suf\"]: en=['etc.', 'et cetera', 'and so on'] pt=(locale row)",
+        "localized_text gloss/pt-BR: [\"etc.\", \"e assim por diante\"]",
         "vocab_kanji ['等'] — kanji the new headword does not contain",
         "freq_rank 1768 -> None (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
       ],
@@ -1332,7 +1289,7 @@
         "level_confidence = 1.0",
         "level_agreement = 4/4",
         "level_sources = {\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
-        "introducing_topic_id = 20"
+        "introducing_topic_id = 27"
       ],
       "freq_rank": {
         "old": 1768,
@@ -1354,31 +1311,12 @@
         "sentence_vocab_dropped": [],
         "token_kept": 5,
         "token_dropped": [],
-        "lesson_unlocks": [
-          [
-            16445,
-            "vocab"
-          ]
-        ],
+        "lesson_unlocks": [],
         "lesson_needs": [],
-        "lesson_bodies": [
-          [
-            "lesson",
-            16445,
-            "body",
-            "pt-BR",
-            1
-          ]
-        ],
-        "cumulative_known_set": 195,
+        "lesson_bodies": [],
+        "cumulative_known_set": 0,
         "family_kept": [],
-        "family_dropped": [
-          [
-            280,
-            "grp:word-7b49",
-            "word_family"
-          ]
-        ],
+        "family_dropped": [],
         "reading_uses_dropped": [],
         "kanji_reading_examples_dropped": [
           "等 / トウ"
@@ -1420,7 +1358,7 @@
           "created_by": "dataset",
           "layer": "A",
           "needs_review": 0,
-          "introducing_topic_id": 20,
+          "introducing_topic_id": 26,
           "repointed_from": null
         },
         "forms": [
@@ -1447,44 +1385,24 @@
         ],
         "senses": [
           {
-            "id": 15784,
+            "id": 2370,
             "vocab_id": 745,
             "sense_order": 0,
             "pos": "[\"n\"]",
             "field_tags": "[]",
             "misc_tags": "[]",
-            "gloss_en": "[\"luck\", \"fortune\"]",
-            "gloss_pt": "[\"sorte\", \"fortuna\"]",
-            "needs_review": 1
-          },
-          {
-            "id": 15785,
-            "vocab_id": 745,
-            "sense_order": 1,
-            "pos": "[\"n\"]",
-            "field_tags": "[]",
-            "misc_tags": "[]",
-            "gloss_en": "[\"fate\", \"destiny\"]",
-            "gloss_pt": "[\"destino\", \"sina\"]",
+            "gloss_en": "[\"fortune\", \"luck\", \"chance\"]",
+            "gloss_pt": null,
             "needs_review": 1
           }
         ],
         "sense_localized": [
           {
             "entity_type": "vocab_sense",
-            "entity_id": 15784,
+            "entity_id": 2370,
             "field": "gloss",
             "locale": "pt-BR",
-            "value": "[\"sorte\", \"fortuna\"]",
-            "is_list": 1,
-            "layer": "B"
-          },
-          {
-            "entity_type": "vocab_sense",
-            "entity_id": 15785,
-            "field": "gloss",
-            "locale": "pt-BR",
-            "value": "[\"destino\", \"sina\"]",
+            "value": "[\"sorte\", \"fortuna\", \"destino\"]",
             "is_list": 1,
             "layer": "B"
           }
@@ -1504,10 +1422,8 @@
         ]
       },
       "content_loss": [
-        "sense 0 [\"n\"]: en=['luck', 'fortune'] pt=['sorte', 'fortuna']",
-        "sense 1 [\"n\"]: en=['fate', 'destiny'] pt=['destino', 'sina']",
-        "localized_text gloss/pt-BR: [\"sorte\", \"fortuna\"]",
-        "localized_text gloss/pt-BR: [\"destino\", \"sina\"]",
+        "sense 0 [\"n\"]: en=['fortune', 'luck', 'chance'] pt=(locale row)",
+        "localized_text gloss/pt-BR: [\"sorte\", \"fortuna\", \"destino\"]",
         "vocab_kanji ['運'] — kanji the new headword does not contain",
         "freq_rank 1712 -> 1104 (re-derived for the new written form from research/derived/frequency/tatoeba_lemma_freq.json; the old number ranked the retired form)"
       ],
@@ -1516,7 +1432,7 @@
         "level_confidence = 1.0",
         "level_agreement = 4/4",
         "level_sources = {\"elzup\": \"n4\", \"openanki\": \"n4\", \"bluskyo\": \"n4\", \"jlptvocabapi\": \"n4\"}",
-        "introducing_topic_id = 20"
+        "introducing_topic_id = 26"
       ],
       "freq_rank": {
         "old": 1712,
@@ -1592,31 +1508,20 @@
             "reading": "うん"
           }
         ],
-        "lesson_unlocks": [
-          [
-            16444,
-            "vocab"
-          ]
-        ],
+        "lesson_unlocks": [],
         "lesson_needs": [],
         "lesson_bodies": [
           [
             "lesson",
-            16448,
+            142,
             "body",
             "pt-BR",
             1
           ]
         ],
-        "cumulative_known_set": 196,
+        "cumulative_known_set": 0,
         "family_kept": [],
-        "family_dropped": [
-          [
-            323,
-            "grp:word-904b",
-            "word_family"
-          ]
-        ],
+        "family_dropped": [],
         "reading_uses_dropped": [],
         "kanji_reading_examples_dropped": [
           "運 / ウン"
@@ -1687,134 +1592,34 @@
   ],
   "exam_banks": [
     {
-      "file": "corpus/exam_banks/n4_context_fill.json",
-      "actions": [
-        "quarantined cf:n4:530:745: the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090"
-      ]
-    },
-    {
       "file": "corpus/exam_banks/n4_kanji_reading.json",
       "actions": [
-        "quarantined kr:n4:745: kanji_reading item on vocab:1001090, whose headword うん carries no kanji after the re-point",
-        "quarantined kr:n4:1086: kanji_reading item on vocab:1004310: the stem 斯う ends in okurigana that only the correct answer こう carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
-        "kr:n4:699: {'vocab': 'vocab:1855690', 'stem': '等々', 'correct': 'とうとう'} -> {'vocab': 'vocab:1449890', 'stem': '到頭', 'correct': 'とうとう'}"
+        "kr:n4:699: {'vocab': 'vocab:1449890', 'stem': '到頭', 'correct': 'とうとう'} -> {'vocab': 'vocab:1449890', 'stem': '到頭', 'correct': 'とうとう'}"
       ]
     },
     {
       "file": "corpus/exam_banks/n4_orthography.json",
       "actions": [
-        "quarantined or:n4:745: orthography item on vocab:1001090, whose headword and kana are both うん after the re-point",
-        "quarantined or:n4:1086: orthography item on vocab:1004310: the stem こう prints the okurigana of the answer 斯う, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
-        "or:n4:699: {'vocab': 'vocab:1855690', 'stem': 'とうとう', 'correct': '等々'} -> {'vocab': 'vocab:1449890', 'stem': 'とうとう', 'correct': '到頭'}"
-      ]
-    },
-    {
-      "file": "corpus/exam_banks/n4_paraphrase.json",
-      "actions": [
-        "quarantined pp:n4:745: the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090"
-      ]
-    },
-    {
-      "file": "corpus/exam_banks/n4_usage.json",
-      "actions": [
-        "quarantined us:n4:745: the item's Japanese was selected for 運, the lexeme vocab:1172610 retired in the re-point to vocab:1001090"
+        "or:n4:699: {'vocab': 'vocab:1449890', 'stem': 'とうとう', 'correct': '到頭'} -> {'vocab': 'vocab:1449890', 'stem': 'とうとう', 'correct': '到頭'}"
       ]
     },
     {
       "file": "corpus/exam_banks/n5_kanji_reading.json",
       "actions": [
-        "kr:n5:503: {'vocab': 'vocab:1472630', 'stem': '杯', 'correct': 'さかずき'} -> {'vocab': 'vocab:2019640', 'stem': '杯', 'correct': 'はい'}",
-        "quarantined kr:n5:349: kanji_reading item on vocab:2137720: the stem 然う ends in okurigana that only the correct answer そう carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
-        "quarantined kr:n5:355: kanji_reading item on vocab:1006830: the stem 其の ends in okurigana that only the correct answer その carries, which the bank's own okurigana_giveaway rule counts as solvable by shape",
-        "kr:n5:374: {'vocab': 'vocab:1551240', 'stem': '立ち', 'correct': 'たち'} -> {'vocab': 'vocab:1416220', 'stem': '達', 'correct': 'たち'}"
+        "kr:n5:503: {'vocab': 'vocab:2019640', 'stem': '杯', 'correct': 'はい'} -> {'vocab': 'vocab:2019640', 'stem': '杯', 'correct': 'はい'}",
+        "kr:n5:374: {'vocab': 'vocab:1416220', 'stem': '達', 'correct': 'たち'} -> {'vocab': 'vocab:1416220', 'stem': '達', 'correct': 'たち'}"
       ]
     },
     {
       "file": "corpus/exam_banks/n5_orthography.json",
       "actions": [
-        "or:n5:503: {'vocab': 'vocab:1472630', 'stem': 'さかずき', 'correct': '杯'} -> {'vocab': 'vocab:2019640', 'stem': 'はい', 'correct': '杯'}",
-        "quarantined or:n5:349: orthography item on vocab:2137720: the stem そう prints the okurigana of the answer 然う, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
-        "quarantined or:n5:355: orthography item on vocab:1006830: the stem その prints the okurigana of the answer 其の, which the bank's own okurigana_giveaway rule counts as solvable without knowing the word",
-        "or:n5:374: {'vocab': 'vocab:1551240', 'stem': 'たち', 'correct': '立ち'} -> {'vocab': 'vocab:1416220', 'stem': 'たち', 'correct': '達'}"
+        "or:n5:503: {'vocab': 'vocab:2019640', 'stem': 'はい', 'correct': '杯'} -> {'vocab': 'vocab:2019640', 'stem': 'はい', 'correct': '杯'}",
+        "or:n5:374: {'vocab': 'vocab:1416220', 'stem': 'たち', 'correct': '達'} -> {'vocab': 'vocab:1416220', 'stem': 'たち', 'correct': '達'}"
       ]
     }
   ],
-  "speak_units": [
-    {
-      "file": "course/speak/eating/unit-06.json",
-      "actions": [
-        ".words[]: vocab:1472630 -> vocab:2019640",
-        ".words[]: vocab:1176240 -> vocab:1006830"
-      ]
-    },
-    {
-      "file": "course/speak/health/unit-01.json",
-      "actions": [
-        ".checkpoint[].distractors[]: '園' -> '其の'"
-      ]
-    },
-    {
-      "file": "course/speak/health/unit-06.json",
-      "actions": [
-        ".checkpoint[].distractors[]: '園' -> '其の'"
-      ]
-    },
-    {
-      "file": "course/speak/politeness/unit-01.json",
-      "actions": [
-        ".checkpoint[].distractors[]: '園' -> '其の'"
-      ]
-    }
-  ],
-  "authoring_source": [
-    {
-      "file": "research/derived/lessons/n4-forma-simples-02.json",
-      "actions": [
-        "unlocks: vocab:運 -> vocab:うん"
-      ]
-    },
-    {
-      "file": "research/derived/lessons/n4-forma-simples-03.json",
-      "actions": [
-        "unlocks: vocab:等々 -> vocab:到頭",
-        "body: 1x ref=\"vocab:等々\" -> \"vocab:到頭\""
-      ]
-    },
-    {
-      "file": "research/derived/lessons/n4-obrigacao-05.json",
-      "actions": [
-        "unlocks: vocab:侯 -> vocab:斯う",
-        "body: 1x ref=\"vocab:侯\" -> \"vocab:斯う\""
-      ]
-    },
-    {
-      "file": "research/derived/lessons/n5-particulas-lugar-02.json",
-      "actions": [
-        "unlocks: vocab:園 -> vocab:其の",
-        "body: 1x ref=\"vocab:園\" -> \"vocab:其の\""
-      ]
-    },
-    {
-      "file": "research/derived/lessons/n5-particulas-lugar-03.json",
-      "actions": [
-        "unlocks: vocab:立ち -> vocab:達",
-        "body: 1x ref=\"vocab:立ち\" -> \"vocab:達\""
-      ]
-    },
-    {
-      "file": "research/derived/lessons/n5-particulas-lugar-07.json",
-      "actions": [
-        "unlocks: vocab:総 -> vocab:然う"
-      ]
-    },
-    {
-      "file": "research/derived/lessons/n5-te-form-05.json",
-      "actions": [
-        "unlocks: vocab:肺 -> vocab:はい",
-        "body: 1x ref=\"vocab:肺\" -> \"vocab:はい\""
-      ]
-    }
-  ],
+  "speak_units": [],
+  "authoring_source": [],
   "prose_fixes": [
     {
       "lesson": "les:n5-te-form-05",
@@ -1870,6 +1675,9 @@
       "old": "<vocab ref=\"vocab:うん\"/><text>(</text><jp>うん</jp><text>): sorte, fortuna.</text>",
       "new": "<vocab ref=\"vocab:うん\"/><text>(</text><jp>うん</jp><text>): sim, é (resposta informal, entre amigos).</text>"
     }
+  ],
+  "prose_fixes_applied_this_run": [
+    "les:n4-forma-simples-06 [pt-BR]: 745 now holds the interjection うん 'yeah', not 運 'sorte'"
   ],
   "kanji_example_rule": "A record demonstrates a kanji reading only if the new headword contains the kanji AND, for a one-kanji word, the record's kana IS that reading. Containment alone kept 503 on 杯's kun reading さかずき after the record started reading はい.",
   "kanji_example_edges_dropped_this_run": []

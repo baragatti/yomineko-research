@@ -220,6 +220,36 @@ group_member:   group_id (FK), member_type (kanji|vocab|grammar), member_id,
                 intra_order, is_core (bool), note_pt
 ```
 
+**W11b (A5), 2026-09-09 — what shipped, and where this text was aspirational.**
+`research/reports/family_layer_rebuild.md` measured this section against the data: `group_related`
+was 0 rows and not exported, `topic.family_ids[]` was 0 of 52 and not even a property of
+`contracts/topic.schema.json`, `primary_module_id` and `description_pt` were empty on all 396
+families, and the C3 example edge below (`grp:wa-vs-ga` -> `grp:particles-core`) — the one concrete
+edge this document names, both of whose endpoints were live — did not exist. The rebuild:
+
+* **`related[]` is exported on every family**, `[]` when empty, and the C3 edge is one of its two
+  rows. `relation` keeps the vocabulary above; `contrast_pair` is symmetric and `sub_family` is
+  directed and acyclic, asserted by `scripts/validate/validate_families.py` F5.
+* **`topic.family_ids[]` is exported on all 52 topics**, as the COMPUTED INVERSE of
+  `lesson.unlocks[]` x `family.members[]` rather than a stored list. A stored list is the shape that
+  broke the layer: `grammar_point.introducing_topic_id` was written once by a placement pass, the
+  course moved, and 272 of 364 grammar memberships silently named the wrong topic. The
+  `topic.family_ids` COLUMN in the index is therefore deliberately not the source; F7 asserts the
+  published list equals the recomputation.
+* **Two type names were wrong and are renamed.** A grouping keyed on the introducing topic is not a
+  `function_set` (a communicative function is independent of topic order) and a bucket holding the
+  vocabulary that fell through every other rule is not a `semantic_field`. They are `topic_set` and
+  `topic_residual`. Both original names stay in the vocabulary, instantiated by nothing, because the
+  AUTHORED families of W39 are what earn them. The slugs did not change: `grp:gram-*`, `grp:theme-*`
+  and `grp:kanji-topic-*` are published addresses.
+* **`kanji_component` families are retired** (owner decision D14). They were a cache of the store
+  `kanji.components` is exported from, 0 of 51 still equalled it, and §C's own §1.7 feasibility check
+  already answers the component query from that store. `family.slug` is a published address, so the
+  51 are redirected through `corpus/families_deprecated.json`, not deleted.
+* **`primary_module_id` and `description_pt` are still empty** and are still not exported. A family
+  spanning pre-n5..n3 has no single primary module, and `description` is authored Layer-C prose that
+  W39 owns. Recorded here so the next reader knows they were considered, not overlooked.
+
 ### Courseware: course_module → topic → lesson → exercise
 ```
 course_module: id, level (pre-n5|n5|n4|...), order, title_pt, overview_pt, + provenance(C)

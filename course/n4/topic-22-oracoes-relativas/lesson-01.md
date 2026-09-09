@@ -7,7 +7,7 @@
 - Usar a ação nominalizada como sujeito ou objeto de outra frase
 - Situar algo dentro de um conjunto com の中で／のなかで ('entre', 'dentre', 'no meio de')
 
-**Introduz:** gramática [gp-97, koto, no-naka-de] · vocabulário [今度, 厳しい, 大事, 建てる, 彼, 必要, 悲しい, 機会, 止める, 浅い, 深い, 点, 落ちる, 起こす, 通る, 過ぎる] · kanji [力 通] · kana [—]
+**Introduz:** gramática [gp-97, koto, no-naka-de] · vocabulário [止める, 今度, 厳しい, 大事, 建てる, 彼, 必要, 悲しい, 機会, 浅い, 深い, 点, 落ちる, 起こす, 通る, 過ぎる] · kanji [力 通] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-9059903a891d`, `sent:gen-82ddc26749ff`, `sent:tatoeba-155677`, `sent:tatoeba-154919`
 

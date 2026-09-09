@@ -47,6 +47,11 @@ SUITE = [
     ("validate_sentence_structure.py", "code"),
     ("validate_grammar_formation.py", "code"),
     ("test_kanji_align.py", "code"),
+    # W11a (A6). Unit test of the homograph resolver's `reading` tier: the kana a lesson
+    # PRINTS beside a chip is the lesson's own answer, and it is the signal that separates
+    # two records the same lesson unlocks. Four shipped cards contradicted their own
+    # sentence before it existed. Plant-proved on a copied tree (see its docstring).
+    ("test_vocab_identity_reading.py", "code"),
     ("validate_kanji_reading_groups.py", "code"),
     ("validate_speaking_path.py", "code"),
     ("validate_capabilities.py", "code"),
@@ -83,6 +88,13 @@ SUITE = [
     ("validate_stroke_integrity.py", "code"),    # stroke coverage + count agreement + exemptions
     ("validate_level_consensus.py", "code"),     # spec-1.5 evidence well-formedness (+L4-L6 ratchet)
     ("validate_graph_edges.py", "code"),         # 550k cross-entity edges + family/capability layers
+    # W11b (A5). The family layer as a DERIVATION: a membership must name the topic the item is
+    # actually taught under, a conjugation class and a word family must hold every record they
+    # derive, and the topic<->family edge must exist in both directions. Landed ADVISORY on the
+    # un-rebuilt tree — 1,932 problems, 272 of them the wrong-topic grammar memberships of
+    # family_layer_rebuild.md §2.4 — and promoted to a hard gate here, once the builders recompute
+    # instead of refusing to run. Plant-proved on a copied tree (see its docstring).
+    ("validate_families.py", "code"),            # topic binding, derived-set equality, related
     ("validate_prototype_sync.py", "code"),      # app/data is the current projection
     ("validate_no_client_leak.py", "code"),      # SSR-only: no corpus content in build/client
     ("validate_md_views.py", "code"),            # .md views re-render identical to their .json

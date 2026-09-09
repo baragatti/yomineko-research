@@ -8,7 +8,7 @@
 - Montar frases A→B do cotidiano: condição com たら na primeira oração, resultado na segunda
 - Reconhecer os kanji 体 (corpo) e 力 (força)
 
-**Introduz:** gramática [gp-60, tara] · vocabulário [だから, 力, 寄る, 思う, 残念, 決まる, 開く] · kanji [体] · kana [—]
+**Introduz:** gramática [gp-60, tara] · vocabulário [止める, だから, 力, 寄る, 思う, 残念, 決まる, 開く] · kanji [体] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-5d330e502fe3`, `sent:gen-54d978e882ca`, `sent:gen-4f79637ba175`, `sent:tatoeba-4713`
 
@@ -97,5 +97,10 @@ Dois kanji simples e muito frequentes entram aqui, um deles direto do vocabulár
 ### 5. (production) Diga em japonês 'Quando eu chegar em casa, ligo na hora.' usando 家 (うち, casa), 帰る (かえる, voltar) na forma たら, e 電話する (telefonar).
 - **Resposta:** `{"text": "家に帰ったらすぐ電話する。", "accept": ["家に帰ったらすぐ電話する", "うちに帰ったらすぐ電話する", "家に帰ったら電話する", "うちにかえったらすぐ電話する", "家にかえったらすぐ電話する", "うちに帰ったら電話する"]}`
 - 帰る → passado 帰った → 帰ったら ('quando voltar'). A condição (家に帰ったら) vem primeiro e o resultado (電話する) depois. すぐ ('na hora') é opcional. Como voltar pra casa é certo, o sentido natural é 'quando', não 'se'.
+
+
+### 6. (recognition) A lição forma 止めたら a partir de qual forma de dicionário?
+- **Resposta:** `{"choices": ["止める", "止まる", "止む"], "correct": "止める"}`
+- たら sai do passado simples: 止める → 止めた → 止めたら. 止める (とめる) é o transitivo, o que age sobre algo: 車を止める, 音を止める ('parar o carro', 'desligar o som'). O par intransitivo é 止まる (とまる), quando algo para sozinho, e daria 止まったら.
 
 

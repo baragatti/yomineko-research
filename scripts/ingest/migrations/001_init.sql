@@ -255,7 +255,19 @@ CREATE TABLE IF NOT EXISTS family (
   slug              TEXT UNIQUE NOT NULL,        -- e.g. 'grp:godan'
   type              TEXT NOT NULL,               -- semantic_field|kanji_component|phonetic_series|
                                                  --   word_family|conjugation_class|particle_set|
-                                                 --   contrast_pair|function_set
+                                                 --   contrast_pair|function_set|topic_set|
+                                                 --   topic_residual
+                                                 -- W11b: `topic_set` (the grammar/kanji a topic
+                                                 --   introduces) and `topic_residual` (the vocab a
+                                                 --   topic introduces that no other family claims)
+                                                 --   replaced the misuse of `function_set` and
+                                                 --   `semantic_field` for topic-keyed buckets.
+                                                 --   Those two names are now free for the AUTHORED
+                                                 --   families (W39). `kanji_component` is retired
+                                                 --   by owner decision D14 but kept in the
+                                                 --   vocabulary: the redirects were written under
+                                                 --   it. This comment is the vocabulary owner for
+                                                 --   contracts/family.schema.json.
   label_pt          TEXT,
   description_pt    TEXT,                         -- Layer C
   importance_rank   INTEGER,
@@ -283,6 +295,11 @@ CREATE TABLE IF NOT EXISTS family_related (
   family_id         INTEGER NOT NULL REFERENCES family(id),
   related_family_id INTEGER NOT NULL REFERENCES family(id),
   relation          TEXT NOT NULL,                -- contrast_pair | sub_family
+                                                  --   `contrast_pair` is SYMMETRIC (both rows must
+                                                  --   exist); `sub_family` is DIRECTED, from the
+                                                  --   narrower family to the broader one, and must
+                                                  --   stay acyclic. Vocabulary owner for
+                                                  --   contracts/family.schema.json `related[].relation`.
   PRIMARY KEY (family_id, related_family_id, relation)
 );
 

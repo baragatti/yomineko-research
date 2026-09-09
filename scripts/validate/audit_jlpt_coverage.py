@@ -53,11 +53,26 @@ def main() -> int:
     # OLD-OFFICIAL anchors (4kyuu=728, 3kyuu=1409; N3 = community consensus range). Our tags already merge
     # every legitimate list inclusively (min-level rule), so bands — not padding — are the correct check.
     VBANDS = {"n5": (650, 830), "n4": (1250, 1560), "n3": (2600, 3800)}
+    # A lesson ref addresses a word in one of three forms — the published slug, the headword, or a
+    # storage row number — and this comparison is against HEADWORDS, so every form is dereferenced
+    # to one before it is compared. Joining on the raw ident is what made the check wrong the moment
+    # W11c wrote 39 refs as `vocab:<jmdict_id>`: 中, 何, 側 and 止める are taught in the same lessons
+    # they always were, and this gate reported them untaught.
+    ident_to_headword: dict[str, str] = {}
+    for vid, slug, hw in con.execute("SELECT id, slug, headword FROM vocab"):
+        ident_to_headword.setdefault(hw, hw)
+        ident_to_headword[slug.split(":", 1)[1]] = hw
+        ident_to_headword.setdefault(str(vid), hw)
+
     def vtaught(prefixes):
         q = " OR ".join("l.slug LIKE ?" for _ in prefixes)
-        return {r[0].split(":", 1)[1] for r in con.execute(
-            f"SELECT u.ref FROM lesson_unlocks u JOIN lesson l ON l.id=u.lesson_id "
-            f"WHERE u.unlock_type='vocab' AND ({q})", tuple(f"les:{p}-%" for p in prefixes))}
+        out = set()
+        for (ref,) in con.execute(
+                f"SELECT u.ref FROM lesson_unlocks u JOIN lesson l ON l.id=u.lesson_id "
+                f"WHERE u.unlock_type='vocab' AND ({q})", tuple(f"les:{p}-%" for p in prefixes)):
+            ident = ref.split(":", 1)[1]
+            out.add(ident_to_headword.get(ident, ident))
+        return out
     cumsets = {"n5": ("n5",), "n4": ("n5", "n4"), "n3": ("n5", "n4", "n3")}
     prefixes = {"n5": ("pre-n5", "n5"), "n4": ("pre-n5", "n5", "n4"), "n3": ("pre-n5", "n5", "n4", "n3")}
     for lvl, (lo, hi) in VBANDS.items():

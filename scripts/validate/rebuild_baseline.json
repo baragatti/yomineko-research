@@ -2,7 +2,7 @@
  "quick": {
   "known": {
    "corpus/grammar/INDEX.md": {
-    "rebuilt_sha256": "004abefda140b46215291c4f83a8589065d0e64ccfe144ed2847d934b41d5f4b",
+    "rebuilt_sha256": "50a23144d98dcb07e212ed2a6fc48c9ccb387b37aee533042d12294b36c2aabd",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n3.json": {
@@ -18,113 +18,117 @@
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    }
   },
-  "recorded_at": "2026-09-03"
+  "recorded_at": "2026-09-09"
  },
  "_why": "Files the rebuild does not reproduce byte-for-byte yet, per mode, each pinned to the bytes the rebuild currently produces. An entry may be deleted when the file starts matching; adding one needs a written cause. Each cause starts with a key from _causes — the diagnosis — followed by the measured difference for that file; a re-record keeps the cause an entry already carries, so those keys survive.",
  "full": {
   "known": {
    "corpus/INDEX.md": {
-    "rebuilt_sha256": "1f4cddaead458432af6c726f4bbb6d9c51e4341a7741c05b59b4390093a379f9",
+    "rebuilt_sha256": "f8e495af6b50d4d9e42ceb903d858f128ccce44a3b0bceed93a4bbaa6abc45ce",
     "cause": "rollup — rebuilt 648 bytes vs committed 788; first difference at byte 558"
    },
    "corpus/families/INDEX.md": {
-    "rebuilt_sha256": "71251df49e49ac46fe4a713eec8e4ae5838084b79db338a62e4ba863018c760f",
+    "rebuilt_sha256": "7d19c1e11fe87fbddb2e9395192ffc88a9c3e25183fb2efd9f6a856d7a37ee41",
     "cause": "rollup — rebuilt 27,399 bytes vs committed 29,591; first difference at byte 236"
    },
    "corpus/families/families.json": {
-    "rebuilt_sha256": "a0bfc4089d14170fcae81d2db06ea6e2a128a6d90c7c605917362974a45105d0",
+    "rebuilt_sha256": "baa96ff59beb5f1b1e951cc708884189965764ab40eb7919e58bcfee67170959",
     "cause": "families-order — rebuilt 2,779,608 bytes vs committed 717,538; first difference at byte 95"
    },
+   "corpus/families_deprecated.json": {
+    "rebuilt_sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f",
+    "cause": "rebuilt 4 bytes vs committed 2,400; first difference at byte 1"
+   },
    "corpus/grammar/INDEX.md": {
-    "rebuilt_sha256": "6ec3c590260e53a45005d1ad41865100f0b3185f429a432e65edb1e0e6266193",
+    "rebuilt_sha256": "bd46ab752edad384c7de07c263a4a669119c1be1869afe910add2a0704b44d4e",
     "cause": "rollup — rebuilt 23,840 bytes vs committed 24,329; first difference at byte 6,314"
    },
    "corpus/grammar/n3.json": {
-    "rebuilt_sha256": "0563d3c1975dacc70f6f1a31464871214945543e548648a1bee022231ddaa55a",
+    "rebuilt_sha256": "8be879bc9cd1965963712a265d7a0dcb23635cf613baeb8b16a5e525b701b2e5",
     "cause": "tr-untracked — rebuilt 232,136 bytes vs committed 490,685; first difference at byte 20"
    },
    "corpus/grammar/n4.json": {
-    "rebuilt_sha256": "33837f370da5131e01689271742a374e50233d3449167252f6f59e14ed5b90ff",
+    "rebuilt_sha256": "baf944c6699bbc5147e07fc096cabf0db6494f3297757dd32714be0ee534501f",
     "cause": "tr-untracked — rebuilt 698,709 bytes vs committed 990,712; first difference at byte 139"
    },
    "corpus/grammar/n5.json": {
-    "rebuilt_sha256": "817bc97371d8fbea60fb149530079162a3695eb7c641801bc5e1fd2c2abd7d24",
+    "rebuilt_sha256": "474fef94b643616c3980d0ac07b66d4f38a6c9f19a0a2d4c68b408c4244f33ff",
     "cause": "tr-untracked — rebuilt 446,846 bytes vs committed 649,801; first difference at byte 204"
    },
    "corpus/kanji/INDEX.md": {
-    "rebuilt_sha256": "1588c2091ebeef21ae01f14908d34464e1912e1790b5feb2cbaa5f8d3a28e9f7",
+    "rebuilt_sha256": "062b71615977ae0ba09379cc9c7bb7d6a74aceed6a5cca6b6271f26d5f5bc42e",
     "cause": "rollup — rebuilt 100,740 bytes vs committed 102,239; first difference at byte 310"
    },
    "corpus/kanji/n1.json": {
-    "rebuilt_sha256": "387162a2182aa0134cc941278513ec50e2785c65c078344559db344480fd8740",
+    "rebuilt_sha256": "00c6b046a5c2388ab764c3027a098d349aa2e552f697055150f08325b93276c8",
     "cause": "reauthor-untracked — rebuilt 2,723,228 bytes vs committed 2,787,188; first difference at byte 453"
    },
    "corpus/kanji/n2.json": {
-    "rebuilt_sha256": "ceb97c229eb011260857012ab8714af5543eafb9a3400948abde8f1ba1ba86fb",
+    "rebuilt_sha256": "9153b4574d6a6c71d5bcbf2bdd79c5211b35c98157591fd102cbbe6a29436358",
     "cause": "reauthor-untracked — rebuilt 1,181,092 bytes vs committed 1,253,263; first difference at byte 454"
    },
    "corpus/kanji/n3.json": {
-    "rebuilt_sha256": "fe471a700a62507c278efef34212ffd5cb8c741a439fe528688b3363cc8f48a4",
+    "rebuilt_sha256": "aa083ab8d285d982a69d74936f6c955d71aad50e9a4b2a4834d6648d83b9f0c6",
     "cause": "reauthor-untracked — rebuilt 2,053,567 bytes vs committed 2,198,732; first difference at byte 429"
    },
    "corpus/kanji/n4.json": {
-    "rebuilt_sha256": "1ce70a419da2f92ba24d5153ee9bc0ae183a61eb50bff6033c159d3ad54cfc20",
+    "rebuilt_sha256": "136eb3ec20b99dbf3c95085625e86477df687f8304fbaab1ddb0e23670897c56",
     "cause": "reauthor-untracked — rebuilt 1,099,042 bytes vs committed 1,160,633; first difference at byte 453"
    },
    "corpus/kanji/n5.json": {
-    "rebuilt_sha256": "4e7b047ba15874611c37558db39f45e8023f940b123e9f0e585fcf09a0556e14",
+    "rebuilt_sha256": "d607bb6b9e7072a3474ea8fd9af1588e3cd4a5af5aeb6db309a392556d519e34",
     "cause": "reauthor-untracked — rebuilt 753,561 bytes vs committed 778,115; first difference at byte 452"
    },
    "corpus/readings/INDEX.md": {
-    "rebuilt_sha256": "7d6d8a8fa93cc790733dd0892feb0cf79f9dfb0b7d627f51116204ff65250346",
+    "rebuilt_sha256": "57d649371db19e6d432269cd826215f1be7dfbd5420dc934b23551200df9d57d",
     "cause": "rollup — rebuilt 981 bytes vs committed 1,033; first difference at byte 971"
    },
    "corpus/readings/n3.json": {
-    "rebuilt_sha256": "c80e804cc095b525a0eb62e3b11ccbcc95e4ae556d192a58838ef63d0f0dcd70",
+    "rebuilt_sha256": "db1d3d8373b04a5f81351dc089f64c1717b1eb36a13e51409b6a0f93e49d32cd",
     "cause": "readings-accumulated — rebuilt 482,072 bytes vs committed 869,964; first difference at byte 106"
    },
    "corpus/sentences/INDEX.md": {
-    "rebuilt_sha256": "4d553004f2679bf2d79bcc73eed64ca3e2fafbd57046776bd17944241ba61eae",
+    "rebuilt_sha256": "29b4b3558074026c3f6e1a8401ef3eff45b75948eff24f9a8d122c53cee8a2a7",
     "cause": "rollup — rebuilt 665,760 bytes vs committed 664,136; first difference at byte 424"
    },
    "corpus/sentences/bank.json": {
-    "rebuilt_sha256": "a44993b7a74fcc057eebe53ea3c45d402683e50068b6698ed348abac8662ceb2",
+    "rebuilt_sha256": "ce277e3b86b8eb57033728f0b0bf48c101ed3e3a773f8b600f6b78825c849935",
     "cause": "tr-untracked — rebuilt 42,846,536 bytes vs committed 50,999,856; first difference at byte 267"
    },
    "corpus/vocab/INDEX.md": {
-    "rebuilt_sha256": "3bb478f3c8de2222fbeca4c61e87572a09b207141e943723a9b240c329445457",
+    "rebuilt_sha256": "d82f78df869656e51da55a9c6b7c9a2f563cba1597f2d90a1ada614b8b091a43",
     "cause": "rollup — rebuilt 416,879 bytes vs committed 422,378; first difference at byte 281"
    },
    "corpus/vocab/n1.json": {
-    "rebuilt_sha256": "abe85d6ea22e3346d1ad4f077405d1d0337e88db792f6b8989d4b653f247bd7e",
+    "rebuilt_sha256": "a7b9213a4a912fb9ba36989f13606e2e1be08f07704a775a66d76d1c16d45529",
     "cause": "reauthor-untracked — rebuilt 4,012,970 bytes vs committed 4,065,092; first difference at byte 408"
    },
    "corpus/vocab/n2.json": {
-    "rebuilt_sha256": "c361f04d9bd85e28b423902ea4529bb792662696283e3f70fcd22a91ae6fa008",
+    "rebuilt_sha256": "93e79fcb508e33224d5222878d79da4ca8e0d6ade8c37d32e4e620dbc72d7e93",
     "cause": "reauthor-untracked — rebuilt 2,743,865 bytes vs committed 2,618,440; first difference at byte 1,131"
    },
    "corpus/vocab/n3.json": {
-    "rebuilt_sha256": "869652b71c0fc1322b525976a05be29950e392466634b8a43f56e4c48acb0135",
+    "rebuilt_sha256": "5ad4e09120a34bb4248a29dd779fec9397b1ba9a092d03694a6b322bdd948a65",
     "cause": "reauthor-untracked — rebuilt 2,652,191 bytes vs committed 2,369,406; first difference at byte 407"
    },
    "corpus/vocab/n4.json": {
-    "rebuilt_sha256": "cef60678ecea6f744fa8646f673ffe312ca2b926fa755edfd9090b64c4184e30",
+    "rebuilt_sha256": "85851fbc037cb02f98b978c8e3d1e3fb2b6e0019ecb376c17bc196dd1b24e4d3",
     "cause": "reauthor-untracked — rebuilt 1,481,590 bytes vs committed 1,134,651; first difference at byte 1,415"
    },
    "corpus/vocab/n5.json": {
-    "rebuilt_sha256": "e330398847a846c4998b582ddd13cb738de2f338f8e8a2bddc7e34863069ed65",
+    "rebuilt_sha256": "48a35ba70ce83bd8e337138405dc677f2ce2f5db1150d03948393f43c0ec3e62",
     "cause": "reauthor-untracked — rebuilt 1,724,100 bytes vs committed 1,184,741; first difference at byte 956"
    },
    "course/INDEX.md": {
-    "rebuilt_sha256": "78524dd98b2e3c9fd614f2c50e2679bfd13b83e11be9e5dc453d73ef8c318766",
+    "rebuilt_sha256": "fb00ff3b4b3c69cfb8dc384e859dc651524964af239d9b739c65517a9aff35e2",
     "cause": "rollup — rebuilt 537 bytes vs committed 549; first difference at byte 365"
    },
    "course/manifest.json": {
-    "rebuilt_sha256": "d1f8dd6fa8531bdc150158be8062f82ffe76f6e7440b1e1f638a88640f3a7c6f",
+    "rebuilt_sha256": "4713ddaad87572e9c6b53a17059430ebfd23c8594b50605bb54a003be6259f22",
     "cause": "rollup — rebuilt 1,026 bytes vs committed 1,043; first difference at byte 191"
    },
    "course/n3/INDEX.md": {
-    "rebuilt_sha256": "8ded3bd2d74e9c2d3f85a970ca66072b81c8d9252ac5a5a56e7be6d161e0d318",
+    "rebuilt_sha256": "d15d7069b11937b046c812249af12d2ebc3969174b38380af48637336910943d",
     "cause": "rollup — rebuilt 8,053 bytes vs committed 8,052; first difference at byte 22"
    },
    "course/n3/course.json": {
@@ -132,7 +136,7 @@
     "cause": "rollup — rebuilt 5,465 bytes vs committed 5,617; first difference at byte 85"
    },
    "course/n3/topic-38-conectores/lesson-01.json": {
-    "rebuilt_sha256": "e358cf29eac35ae72b1c8f41e67e4fbc5a453996390d73b5b4a5a2f41a3569cc",
+    "rebuilt_sha256": "e2ae2aaa799191ab22e9629d8fa39eaaacc61cff6751bd84e4eab48fa1a23ca5",
     "cause": "course-identity — rebuilt 68,273 bytes vs committed 68,297; first difference at byte 10,415"
    },
    "course/n3/topic-38-conectores/lesson-01.md": {
@@ -140,7 +144,7 @@
     "cause": "course-identity — rebuilt 8,652 bytes vs committed 8,740; first difference at byte 5,632"
    },
    "course/n3/topic-38-conectores/lesson-02.json": {
-    "rebuilt_sha256": "6711d7b27612bc485beb813d2c14a0d875609e5c56076142d172f806f9a5830a",
+    "rebuilt_sha256": "57fae0642025a884f96b99c9121aa72ed74d4dc93efead472cce931aa6daf8b8",
     "cause": "course-identity — rebuilt 68,010 bytes vs committed 68,034; first difference at byte 10,087"
    },
    "course/n3/topic-38-conectores/lesson-02.md": {
@@ -148,39 +152,39 @@
     "cause": "course-identity — rebuilt 8,177 bytes vs committed 8,306; first difference at byte 5,352"
    },
    "course/n3/topic-38-conectores/lesson-03.json": {
-    "rebuilt_sha256": "50ee17a7cd876ca71015ac31ce8456cac5b1820d5aaff5611a32b463f4a313ad",
+    "rebuilt_sha256": "114e4c8b1807f135a08ee1cd3bc7d6f7f686a318911f8da0b9ee65a04b2174c6",
     "cause": "course-identity — rebuilt 68,391 bytes vs committed 68,415; first difference at byte 9,631"
    },
    "course/n3/topic-38-conectores/lesson-03.md": {
-    "rebuilt_sha256": "f6c659b6f78004c940067eab0be8a3ed7e01360d0cc94369c3a43cbd8448c7a4",
+    "rebuilt_sha256": "4885579000a84865432cfdef9c501aa7ac2c149496e8223189a87940bafed8ef",
     "cause": "course-identity — rebuilt 8,319 bytes vs committed 8,586; first difference at byte 5,170"
    },
    "course/n3/topic-38-conectores/lesson-04.json": {
-    "rebuilt_sha256": "0d44ae936c7c02eab4a2f971161bfa1dcc848d1db18e2760c78f7eb766d0043e",
+    "rebuilt_sha256": "11148af3c746c3e2f04c333dc279492a24be7b8e987371130a15e729229df46f",
     "cause": "course-identity — rebuilt 65,219 bytes vs committed 65,243; first difference at byte 7,899"
    },
    "course/n3/topic-38-conectores/lesson-04.md": {
-    "rebuilt_sha256": "72e075067553418838ee27da96ff5209e99baf4bea7f09e2dce43c2d6aedd6e2",
+    "rebuilt_sha256": "b469186772d6c1a68d24eb6b171e674323db57deedfba095048442fda1934507",
     "cause": "course-identity — rebuilt 7,316 bytes vs committed 7,753; first difference at byte 4,547"
    },
    "course/n3/topic-38-conectores/lesson-05.json": {
-    "rebuilt_sha256": "cf5497a0f87f67515f82cd2eca0f060f8b6aea36b9d0a54159fe7be403181a61",
+    "rebuilt_sha256": "1acd9c540b2bf57450f26731069f78db8898f13a8048be1044cad8160ba59698",
     "cause": "course-identity — rebuilt 66,848 bytes vs committed 66,812; first difference at byte 10,251"
    },
    "course/n3/topic-38-conectores/lesson-05.md": {
-    "rebuilt_sha256": "ff33fd0de8bc0b43b49744c674666e9f0f2bb5f60c215eeee579e53638e555d7",
+    "rebuilt_sha256": "c63d441f421196f02a96f1eadc58443da94052087407d8ffa80999d126bb9d3f",
     "cause": "course-identity — rebuilt 7,457 bytes vs committed 7,792; first difference at byte 3,212"
    },
    "course/n3/topic-38-conectores/lesson-06.json": {
-    "rebuilt_sha256": "069b22c0a2c5f37cb48c0c6337fa37b717a7c224fbaa7074b1a7e396ecdf282e",
+    "rebuilt_sha256": "3d5ecd1d1458ce14654fafbd359dfe13488bff2611565c3d0579fd1c01f7082a",
     "cause": "course-identity — rebuilt 64,604 bytes vs committed 64,628; first difference at byte 8,977"
    },
    "course/n3/topic-38-conectores/lesson-06.md": {
-    "rebuilt_sha256": "a0773bd1da621c4ab4d9cd213cbf72addec160c5f2af1e7f7f0e20ff13e62bf9",
+    "rebuilt_sha256": "59a5a37958d4747d59edbd215fae62849815a08ed5d77126363847fd2e95691d",
     "cause": "course-identity — rebuilt 6,013 bytes vs committed 6,530; first difference at byte 3,421"
    },
    "course/n3/topic-38-conectores/lesson-07.json": {
-    "rebuilt_sha256": "9d2550274f82e39cd76dc944aea47ba02899da7782169ddf8e90a90da61ba850",
+    "rebuilt_sha256": "240a5ab18e9f3e9105580f49b0b0d5e586ed1805b62a2c4e33b4eb7f4b451e25",
     "cause": "course-identity — rebuilt 68,044 bytes vs committed 68,068; first difference at byte 9,218"
    },
    "course/n3/topic-38-conectores/lesson-07.md": {
@@ -188,7 +192,7 @@
     "cause": "course-identity — rebuilt 7,177 bytes vs committed 8,212; first difference at byte 4,725"
    },
    "course/n3/topic-38-conectores/lesson-08.json": {
-    "rebuilt_sha256": "300456528284fca53a8fc460aa60040e513b5dc756135e5a17033a28444e106d",
+    "rebuilt_sha256": "eade9fee06be118f7bcedea45856a8c03d79b8502fff09e1e8af43f58a43512c",
     "cause": "course-identity — rebuilt 64,782 bytes vs committed 64,806; first difference at byte 8,727"
    },
    "course/n3/topic-38-conectores/lesson-08.md": {
@@ -196,7 +200,7 @@
     "cause": "course-identity — rebuilt 5,236 bytes vs committed 6,185; first difference at byte 3,150"
    },
    "course/n3/topic-39-tempo/lesson-01.json": {
-    "rebuilt_sha256": "6b99ceebaf06eb5c6ed2cd8778111a16498c6680129e16516b27ecab99a0486d",
+    "rebuilt_sha256": "38fdea43d37eb1ae26cb3f867880555639758fd1f2dd811dd77926197e299634",
     "cause": "course-identity — rebuilt 69,803 bytes vs committed 69,827; first difference at byte 10,899"
    },
    "course/n3/topic-39-tempo/lesson-01.md": {
@@ -204,7 +208,7 @@
     "cause": "course-identity — rebuilt 6,796 bytes vs committed 6,940; first difference at byte 4,419"
    },
    "course/n3/topic-39-tempo/lesson-02.json": {
-    "rebuilt_sha256": "b7eaac48c04af5538d3f0b898361ef6e8d7a59cc04b78f8527ab92404dd72a31",
+    "rebuilt_sha256": "f374ad9cafd0ee3ab86494943e8b9fafb306e9a9f2cd55938d4636dfac481ee7",
     "cause": "course-identity — rebuilt 69,724 bytes vs committed 69,748; first difference at byte 10,342"
    },
    "course/n3/topic-39-tempo/lesson-02.md": {
@@ -212,31 +216,31 @@
     "cause": "course-identity — rebuilt 6,801 bytes vs committed 7,119; first difference at byte 4,145"
    },
    "course/n3/topic-39-tempo/lesson-03.json": {
-    "rebuilt_sha256": "23a84c520adb0134048f766a41b0ec0802b48e558d8484ed551e5857c3e26cbb",
+    "rebuilt_sha256": "3180cd863ddca25f33d23a4d6e44f6573c8797f28f432a721f8226fc7691e4d8",
     "cause": "course-identity — rebuilt 70,164 bytes vs committed 70,188; first difference at byte 10,301"
    },
    "course/n3/topic-39-tempo/lesson-03.md": {
-    "rebuilt_sha256": "9c86a8aa6fc0bed55c586a55b43a29b0d328de67896bbda098f53a5346757e80",
+    "rebuilt_sha256": "6e775b9e5413042b533f857246c9a75acb408379de50338a5a612383410d4d82",
     "cause": "course-identity — rebuilt 6,657 bytes vs committed 6,880; first difference at byte 4,109"
    },
    "course/n3/topic-39-tempo/lesson-04.json": {
-    "rebuilt_sha256": "fb0f9b1ed8a7cdb1e37f0295a9282dcfb440fb1f7447779f272ab477a77ce88d",
+    "rebuilt_sha256": "fb0d0c54ed339b0cd047989ad53968c04dc5c17ca6f8056c1e5ebc79e830ac20",
     "cause": "course-identity — rebuilt 69,824 bytes vs committed 69,848; first difference at byte 9,575"
    },
    "course/n3/topic-39-tempo/lesson-04.md": {
-    "rebuilt_sha256": "1ca867126f42e1555607b624741e2302942533c4417d7169438b73e0da2ee2d3",
+    "rebuilt_sha256": "855bd3d0ce5a7252792b21276c3c8e435f95bd8b6a21b04fb360fc7a691e766b",
     "cause": "course-identity — rebuilt 7,618 bytes vs committed 7,849; first difference at byte 3,899"
    },
    "course/n3/topic-39-tempo/lesson-05.json": {
-    "rebuilt_sha256": "013dd5500b889ac256bf96233e8d6163b27ca0ad09b48ff00f9a0703f0314cfb",
+    "rebuilt_sha256": "20827a5a4daed1b3a010b24e71e087c3331643e5fab40c76a5193f8b8681a736",
     "cause": "course-identity — rebuilt 68,592 bytes vs committed 68,616; first difference at byte 9,168"
    },
    "course/n3/topic-39-tempo/lesson-05.md": {
-    "rebuilt_sha256": "711dce4afeda26c12e6b6be006ae36602af1b10ae256fa484b4ff84b617ca56c",
+    "rebuilt_sha256": "9e48a0d6fd075af3f30e950f40dea17ac718eecfb7b10166aa16f73645d138b4",
     "cause": "course-identity — rebuilt 6,447 bytes vs committed 6,862; first difference at byte 3,701"
    },
    "course/n3/topic-39-tempo/lesson-06.json": {
-    "rebuilt_sha256": "0a1862e7afded167818f2770823207b0009305958a160df07e7a8251ea27a920",
+    "rebuilt_sha256": "96b7ae371a6edb453cba9377096091649e1f5202cbb89d37b0bfc7b1bedd9181",
     "cause": "course-identity — rebuilt 70,630 bytes vs committed 70,654; first difference at byte 9,534"
    },
    "course/n3/topic-39-tempo/lesson-06.md": {
@@ -244,7 +248,7 @@
     "cause": "course-identity — rebuilt 6,537 bytes vs committed 7,658; first difference at byte 4,380"
    },
    "course/n3/topic-39-tempo/lesson-07.json": {
-    "rebuilt_sha256": "28654bb3e6f288f101bd2483d225ff5389fa3ccb59fe89bc12ef8e9da8c57c50",
+    "rebuilt_sha256": "4c317277d154f9288edc15b0dfdbe4064686a015221279bfcbbfeeb5baa3d5cd",
     "cause": "course-identity — rebuilt 70,849 bytes vs committed 70,873; first difference at byte 9,382"
    },
    "course/n3/topic-39-tempo/lesson-07.md": {
@@ -252,7 +256,7 @@
     "cause": "course-identity — rebuilt 6,793 bytes vs committed 7,891; first difference at byte 4,410"
    },
    "course/n3/topic-39-tempo/lesson-08.json": {
-    "rebuilt_sha256": "48ed21560c8f7dec638cbd5462f3d5620c69f333eaee8cd1b298385fdad28846",
+    "rebuilt_sha256": "5ac5b32b2960ebde6aba30d06aaf6a051eac3c4301f7709a37e810617e3f0854",
     "cause": "course-identity — rebuilt 68,832 bytes vs committed 68,856; first difference at byte 8,924"
    },
    "course/n3/topic-39-tempo/lesson-08.md": {
@@ -260,7 +264,7 @@
     "cause": "course-identity — rebuilt 5,201 bytes vs committed 6,231; first difference at byte 3,102"
    },
    "course/n3/topic-40-perspectiva/lesson-01.json": {
-    "rebuilt_sha256": "c2dda4e556d331b92ad2bb54211cfaeb2cdd693dfe8189e7f62942ea0fbe0fbf",
+    "rebuilt_sha256": "c1865a6b218cd68d97a6f9322d42ce76180d4c7da4982b899494c94e2e90ee32",
     "cause": "course-identity — rebuilt 78,035 bytes vs committed 78,059; first difference at byte 12,254"
    },
    "course/n3/topic-40-perspectiva/lesson-01.md": {
@@ -268,7 +272,7 @@
     "cause": "course-identity — rebuilt 8,822 bytes vs committed 9,059; first difference at byte 5,834"
    },
    "course/n3/topic-40-perspectiva/lesson-02.json": {
-    "rebuilt_sha256": "e4edb2c9be16f751d487f015c39b7fcfbaa490e18e7d3510ee163e8fd5003dfb",
+    "rebuilt_sha256": "4be396fcea9f7d460ffe1c9ec3b3140bb7fbd9b6da2e40f4a12440b716d0bffe",
     "cause": "course-identity — rebuilt 78,548 bytes vs committed 78,572; first difference at byte 12,073"
    },
    "course/n3/topic-40-perspectiva/lesson-02.md": {
@@ -276,31 +280,31 @@
     "cause": "course-identity — rebuilt 8,748 bytes vs committed 9,003; first difference at byte 5,695"
    },
    "course/n3/topic-40-perspectiva/lesson-03.json": {
-    "rebuilt_sha256": "7ef539675d4963f6b706482772673044816cca5cb3a5b5a0f58c1a869bd5a7b3",
+    "rebuilt_sha256": "0f8b7d87a51ec0b437b86c57b9d20869b15a2f1f44741eb30e228c1f4b6d06b5",
     "cause": "course-identity — rebuilt 77,345 bytes vs committed 77,369; first difference at byte 11,474"
    },
    "course/n3/topic-40-perspectiva/lesson-03.md": {
-    "rebuilt_sha256": "42fe81dfef3f230f4510ad778e2219ca1de677ff167e6e28862adcbc14fa36c0",
+    "rebuilt_sha256": "9d575f665e1ed0c64b509cb6822503f3b0aac5ed417864ffd92180ae484e62d5",
     "cause": "course-identity — rebuilt 8,186 bytes vs committed 8,611; first difference at byte 5,031"
    },
    "course/n3/topic-40-perspectiva/lesson-04.json": {
-    "rebuilt_sha256": "b0e1d71a65749e7082735cdb88d1e26e45aa14d0e38c5eecf5d19ed4d0086e14",
+    "rebuilt_sha256": "de2ba91a8776564b349524ca458ba572b280369478dd189c83253a0bbefe89d9",
     "cause": "course-identity — rebuilt 72,773 bytes vs committed 72,797; first difference at byte 9,708"
    },
    "course/n3/topic-40-perspectiva/lesson-04.md": {
-    "rebuilt_sha256": "efa80dfcab8bcca07dfa07ee72d3b74f19c1492d004f8528cc601400db1de9df",
+    "rebuilt_sha256": "febc48282eb4af67cb29c9a51483a1a09b9d83710f4cf3a819667e86baf39f12",
     "cause": "course-identity — rebuilt 6,733 bytes vs committed 6,918; first difference at byte 3,626"
    },
    "course/n3/topic-40-perspectiva/lesson-05.json": {
-    "rebuilt_sha256": "6987265e6ed3ea4b8a2dce5569e67765e98222b8c07fa2defb653a28779b3d34",
+    "rebuilt_sha256": "4bc51356965c4937b9b6c3d29fea39bb9725de7ccace4c3e9e2ad4f60cda5de3",
     "cause": "course-identity — rebuilt 77,191 bytes vs committed 77,159; first difference at byte 9,131"
    },
    "course/n3/topic-40-perspectiva/lesson-05.md": {
-    "rebuilt_sha256": "d6294330ed4ce7878565c88d7e185801375758dc14fe5a503d8f3cacbff68485",
+    "rebuilt_sha256": "95f7fb5ea96d4245de8ae72d491d5bf77af30b8b0c2b23a4adf3b1baf77ea0c7",
     "cause": "course-identity — rebuilt 9,492 bytes vs committed 10,143; first difference at byte 5,711"
    },
    "course/n3/topic-40-perspectiva/lesson-06.json": {
-    "rebuilt_sha256": "78f718a87a9438951c2425d1cd0c7df5a1d9e461f1c4c5a62eedc7f701ce9148",
+    "rebuilt_sha256": "54e39a9f6e084fe05c37b17720582fe1dcde1deac2ce1553f6cea9828f7ab216",
     "cause": "course-identity — rebuilt 72,339 bytes vs committed 72,363; first difference at byte 9,223"
    },
    "course/n3/topic-40-perspectiva/lesson-06.md": {
@@ -308,7 +312,7 @@
     "cause": "course-identity — rebuilt 5,280 bytes vs committed 6,362; first difference at byte 3,586"
    },
    "course/n3/topic-40-perspectiva/lesson-07.json": {
-    "rebuilt_sha256": "fcb2c4937818be0984de6aee5071d6711208e12b113568ceb7565670d0256173",
+    "rebuilt_sha256": "da3b6e962b192c09a66290c0cd1d52253d3ad12cead10101ae78010447a67e44",
     "cause": "course-identity — rebuilt 72,523 bytes vs committed 72,547; first difference at byte 8,941"
    },
    "course/n3/topic-40-perspectiva/lesson-07.md": {
@@ -316,7 +320,7 @@
     "cause": "course-identity — rebuilt 5,090 bytes vs committed 6,098; first difference at byte 3,027"
    },
    "course/n3/topic-41-causa/lesson-01.json": {
-    "rebuilt_sha256": "87013bd870676bb1a8cd03265edc27935d6d3e2edb1fe4369a3ce336c1463e2b",
+    "rebuilt_sha256": "62f60b87d59b30115313a442742d128c4b22c190e07d9ebe9e6d79baa74fac1f",
     "cause": "course-identity — rebuilt 75,112 bytes vs committed 75,136; first difference at byte 9,804"
    },
    "course/n3/topic-41-causa/lesson-01.md": {
@@ -324,7 +328,7 @@
     "cause": "course-identity — rebuilt 6,335 bytes vs committed 6,250; first difference at byte 3,562"
    },
    "course/n3/topic-41-causa/lesson-02.json": {
-    "rebuilt_sha256": "bbd3a0111dbc9027bb0fcd01ca06cdcc4a9370213af11cfcf52c67ea017033f7",
+    "rebuilt_sha256": "ffe3081634326f6968b1c6145538b1f2a27871beac271520ece8ae1f75f9230d",
     "cause": "course-identity — rebuilt 77,175 bytes vs committed 77,199; first difference at byte 10,599"
    },
    "course/n3/topic-41-causa/lesson-02.md": {
@@ -332,39 +336,39 @@
     "cause": "course-identity — rebuilt 6,931 bytes vs committed 7,154; first difference at byte 4,129"
    },
    "course/n3/topic-41-causa/lesson-03.json": {
-    "rebuilt_sha256": "440cc898411332a1b306bc8859fd9d0669c147a175001a537a8d59bd4e005a47",
+    "rebuilt_sha256": "facd3ec0d5b7039ac48c5536f5a863443eadbdc12b371a3f9570381d5be5099d",
     "cause": "course-identity — rebuilt 76,613 bytes vs committed 76,637; first difference at byte 10,038"
    },
    "course/n3/topic-41-causa/lesson-03.md": {
-    "rebuilt_sha256": "eeb6e21227a596e86ebc47c1ef0f77888c4780dee6b79075067d8520f9354ac6",
+    "rebuilt_sha256": "f60e86e8141672d3f3f38a53b25431e33d2f70bc685756aa56de01c674b9a27e",
     "cause": "course-identity — rebuilt 6,115 bytes vs committed 6,268; first difference at byte 3,549"
    },
    "course/n3/topic-41-causa/lesson-04.json": {
-    "rebuilt_sha256": "e0cfbf94de6b3d03362d57699998f86a295f8e33f0643aec12a04991fc8291cb",
+    "rebuilt_sha256": "cb4dcf6efe1fb7aa9d136437d502d4376cb958dc560e47e6d8963250f2848cc0",
     "cause": "course-identity — rebuilt 76,293 bytes vs committed 76,317; first difference at byte 9,808"
    },
    "course/n3/topic-41-causa/lesson-04.md": {
-    "rebuilt_sha256": "da7d58dab2ba048f57e6d7fedf47a26667094adf133cf8d87fac91e278d809f4",
+    "rebuilt_sha256": "fa0052c353a8f13c1232c1bcbd8e5885849d70b8fb81585c3198a2c7879e657a",
     "cause": "course-identity — rebuilt 6,038 bytes vs committed 6,408; first difference at byte 3,568"
    },
    "course/n3/topic-41-causa/lesson-05.json": {
-    "rebuilt_sha256": "c095e63f83788eef8dc65eb28c88ef980aa9d485225448eae7a3c7b19dad1f73",
+    "rebuilt_sha256": "7cc31384ec1b8aff8f107c896460519f3ec231d9696517c76d3684010a9c8f22",
     "cause": "course-identity — rebuilt 75,823 bytes vs committed 75,847; first difference at byte 9,149"
    },
    "course/n3/topic-41-causa/lesson-05.md": {
-    "rebuilt_sha256": "bc434e1d5b68447a949977e6aafde596f208a7bd1d10b9c34af80df6d6956a2d",
+    "rebuilt_sha256": "f5ff70bf2cbfe1c7e1a80116268a5e4712e56fe70f410147911fceb0a1b2a00f",
     "cause": "course-identity — rebuilt 6,499 bytes vs committed 6,779; first difference at byte 3,530"
    },
    "course/n3/topic-41-causa/lesson-06.json": {
-    "rebuilt_sha256": "971f74a8312a416b4e5b359733384e0a89e494a37f8124757f72d01429cd76a0",
+    "rebuilt_sha256": "535fa62f8288908f319f2faa0983f77e4b1edf2314e1aab7e8d689249b430f00",
     "cause": "course-identity — rebuilt 76,488 bytes vs committed 76,512; first difference at byte 9,010"
    },
    "course/n3/topic-41-causa/lesson-06.md": {
-    "rebuilt_sha256": "c8e4b4603a39239efb19e7d6d36286e96d82548c05838bec5be5ecd3fa837580",
+    "rebuilt_sha256": "225e5ade265c55370236bbcc59869e7a2ea8e703b3033942ea77e7976253ea9e",
     "cause": "course-identity — rebuilt 6,774 bytes vs committed 7,122; first difference at byte 3,825"
    },
    "course/n3/topic-41-causa/lesson-07.json": {
-    "rebuilt_sha256": "4c1abfcad2b7c1d05a0d11ad082dd8bcc3ceb0f1613735366a8fa8ba214a1a66",
+    "rebuilt_sha256": "57cb0f4fe2f0147eda6ee446c5c6c183a47061abfc92e03c7931b6a40b0b5417",
     "cause": "course-identity — rebuilt 74,538 bytes vs committed 74,562; first difference at byte 8,424"
    },
    "course/n3/topic-41-causa/lesson-07.md": {
@@ -372,7 +376,7 @@
     "cause": "course-identity — rebuilt 4,657 bytes vs committed 5,798; first difference at byte 3,101"
    },
    "course/n3/topic-41-causa/lesson-08.json": {
-    "rebuilt_sha256": "a65baf598c4bb9461bd8efe2d0dd0edbd45c5e91873ab60cf617504d6eadedc1",
+    "rebuilt_sha256": "e2f834737a24003bfab86f75d60826f697a7dfc81660ecc160cd54a6e8d83c91",
     "cause": "course-identity — rebuilt 75,815 bytes vs committed 75,839; first difference at byte 8,918"
    },
    "course/n3/topic-41-causa/lesson-08.md": {
@@ -380,55 +384,55 @@
     "cause": "course-identity — rebuilt 4,704 bytes vs committed 5,673; first difference at byte 2,884"
    },
    "course/n3/topic-42-estado/lesson-01.json": {
-    "rebuilt_sha256": "e56c21dc6d839a36dc1b72dae8bc10e7cb07c1b92c224d290f2a3995352c2a1c",
+    "rebuilt_sha256": "7eb5164b07043684c0474f81ed0468652febc485a33861af872d3d621365cb6e",
     "cause": "course-identity — rebuilt 84,484 bytes vs committed 84,508; first difference at byte 10,301"
    },
    "course/n3/topic-42-estado/lesson-01.md": {
-    "rebuilt_sha256": "6dc2d068444d6377ade7ef414c4a567ed66a15727840de9d21483f64c9848dda",
+    "rebuilt_sha256": "e980df6f3a24e349eaae5317670911ab85d55119ca5370ce8b0350c49b039229",
     "cause": "course-identity — rebuilt 9,154 bytes vs committed 9,176; first difference at byte 5,937"
    },
    "course/n3/topic-42-estado/lesson-02.json": {
-    "rebuilt_sha256": "7dd041c864b968253e8d0d556d969ebccee36af2cbef6b33505e94007c006072",
+    "rebuilt_sha256": "a1b2e4215e165fb11ed81efdb551acab6fad15ee9a9b1b34bef46a431cfb40b7",
     "cause": "course-identity — rebuilt 84,566 bytes vs committed 84,590; first difference at byte 10,476"
    },
    "course/n3/topic-42-estado/lesson-02.md": {
-    "rebuilt_sha256": "df87ad30f734f798c1e78e0aa3c5be745d09f9a277c6671c0869095d3fe9d467",
+    "rebuilt_sha256": "62e97e3da2050c1396ef2b23c77088b62cb4187deccdd4afb727611335aea320",
     "cause": "course-identity — rebuilt 8,762 bytes vs committed 8,836; first difference at byte 5,487"
    },
    "course/n3/topic-42-estado/lesson-03.json": {
-    "rebuilt_sha256": "130046a1bde5636d412d353b2851559384ddb447bb73c2fa4f494aa7c5c97428",
+    "rebuilt_sha256": "4560787c76606d9c8e9da1826e898d1f8f38a4f6f3678533ae75a2fdf3334b75",
     "cause": "course-identity — rebuilt 85,221 bytes vs committed 85,245; first difference at byte 9,933"
    },
    "course/n3/topic-42-estado/lesson-03.md": {
-    "rebuilt_sha256": "8f328b76064fa05a0f998103f2367166543f89545cd0f968945b29ef23e1f897",
+    "rebuilt_sha256": "db1d059d0bbfb558441ff90bb839902be2991a36f56f96bfa5e817f6d30f58e1",
     "cause": "course-identity — rebuilt 8,604 bytes vs committed 8,828; first difference at byte 5,308"
    },
    "course/n3/topic-42-estado/lesson-04.json": {
-    "rebuilt_sha256": "9c36082ad4592a223096e1f60adb3e8f2638a1de2887ac60a55cd7b1aaa9be4a",
+    "rebuilt_sha256": "ab1d28d7681f286c55fed973946e3765d00a78462b3a705b28723cf8bbca73c3",
     "cause": "course-identity — rebuilt 86,600 bytes vs committed 86,624; first difference at byte 10,434"
    },
    "course/n3/topic-42-estado/lesson-04.md": {
-    "rebuilt_sha256": "728b7fdcf9eebd5b980f0812050400155f75e02c12ea6d80989bca1d3e769373",
+    "rebuilt_sha256": "3632c06300b4e06fb43117502f713fe646d9c9050d64ffb383ff1ec31f26740b",
     "cause": "course-identity — rebuilt 10,414 bytes vs committed 9,626; first difference at byte 5,561"
    },
    "course/n3/topic-42-estado/lesson-05.json": {
-    "rebuilt_sha256": "c0dead92b7e527e3cae8e8df434c2599143b8d9695b675ccfbc322e156aeab10",
+    "rebuilt_sha256": "c6c0cfd1ed9a0fa05089ab2dfbf0ed9367ff485dd8dd814f060585bf165319d8",
     "cause": "course-identity — rebuilt 80,003 bytes vs committed 80,027; first difference at byte 9,460"
    },
    "course/n3/topic-42-estado/lesson-05.md": {
-    "rebuilt_sha256": "3fac080a7a83038ed5012adaa57292439d57944c5a35b5ba4559609556f766a8",
+    "rebuilt_sha256": "9ca556eb71d1d93694845a380dfba24976443d6af54a22f9160b7bc0e5f0abdf",
     "cause": "course-identity — rebuilt 6,107 bytes vs committed 6,604; first difference at byte 3,395"
    },
    "course/n3/topic-42-estado/lesson-06.json": {
-    "rebuilt_sha256": "d75a0408565e65392e84abf2029a54a4ebd4c90b10bf10bc407ba3ad63f8b803",
+    "rebuilt_sha256": "ee2d5ddb352a869660175ed8e1b7f6ccb6aaa611485e10d1737413e17d6a4ced",
     "cause": "course-identity — rebuilt 79,871 bytes vs committed 79,895; first difference at byte 9,005"
    },
    "course/n3/topic-42-estado/lesson-06.md": {
-    "rebuilt_sha256": "754eb1b7c57086bfabc90102ddc83f8fb875fd7c0656e2960032830a6fb1e3b9",
+    "rebuilt_sha256": "d05b7319b0267477dfd68af8867996be0e222e370172f712fa7f0ca8e5fc1896",
     "cause": "course-identity — rebuilt 5,479 bytes vs committed 6,448; first difference at byte 3,628"
    },
    "course/n3/topic-42-estado/lesson-07.json": {
-    "rebuilt_sha256": "fcb32ec2923865a98cd4e78f38c53ccf556eb6d77d6da634f95c60378d241c6b",
+    "rebuilt_sha256": "19982e38f1df32ad2f1cb196e9caa7116b7ecf402b63ccbfc683f70704ff47af",
     "cause": "course-identity — rebuilt 79,149 bytes vs committed 79,173; first difference at byte 8,936"
    },
    "course/n3/topic-42-estado/lesson-07.md": {
@@ -436,7 +440,7 @@
     "cause": "course-identity — rebuilt 4,915 bytes vs committed 5,950; first difference at byte 3,306"
    },
    "course/n3/topic-42-estado/lesson-08.json": {
-    "rebuilt_sha256": "dcb8d52d578a423fa27b0c35bd3ce31cee658c8bd0d475dee183eceb099e02a3",
+    "rebuilt_sha256": "bec8b8cbb40db468b3eab4837f9df3e74b21a62e832840a233e0d52a3ceb2085",
     "cause": "course-identity — rebuilt 80,035 bytes vs committed 80,059; first difference at byte 8,935"
    },
    "course/n3/topic-42-estado/lesson-08.md": {
@@ -444,47 +448,47 @@
     "cause": "course-identity — rebuilt 5,126 bytes vs committed 6,188; first difference at byte 3,134"
    },
    "course/n3/topic-43-intencao/lesson-01.json": {
-    "rebuilt_sha256": "8eebf05c4a092ec46199e1739ff4858a0b37b25c85c8fefd5788f7b468ee4257",
+    "rebuilt_sha256": "af20bcd51175d8b26257384d0be12f2f3fce27e567181e67ffbde6049e6a8466",
     "cause": "course-identity — rebuilt 89,494 bytes vs committed 89,518; first difference at byte 10,680"
    },
    "course/n3/topic-43-intencao/lesson-01.md": {
-    "rebuilt_sha256": "65d95cfe2b442fab4f036d405719c2f32c499cd4e1fd481285602884fcd8f02d",
+    "rebuilt_sha256": "045f8fc57a5682634b15e5271729906e5f80f19fff2d9b8d96016c63eeb84523",
     "cause": "course-identity — rebuilt 10,001 bytes vs committed 10,123; first difference at byte 6,673"
    },
    "course/n3/topic-43-intencao/lesson-02.json": {
-    "rebuilt_sha256": "578b6a4e1eb8c6783adbd5619500717c10e9b49c280a48dca95086bd907fdce9",
+    "rebuilt_sha256": "f59e7c90ff661067e70a55af4e21b7313de56073f7ede5249a821f6a4bd822a8",
     "cause": "course-identity — rebuilt 88,467 bytes vs committed 88,558; first difference at byte 10,740"
    },
    "course/n3/topic-43-intencao/lesson-02.md": {
-    "rebuilt_sha256": "280d4a7ed4154c5008b3e6910c1e6cf2e23a2745664e28f56110d8103e273aca",
+    "rebuilt_sha256": "0ada7f21004a9d04c1a8fd6612c1cdc867fc6223990c70b80a64d06f3016bf00",
     "cause": "course-identity — rebuilt 9,294 bytes vs committed 9,525; first difference at byte 3,458"
    },
    "course/n3/topic-43-intencao/lesson-03.json": {
-    "rebuilt_sha256": "3c57585080c1628a969f51c0c1f014a8c46cefcbd1a8bccfd7a628342f94b957",
+    "rebuilt_sha256": "7ccf22bcaa37ea7aaf053418a878fb0c79436d3c972052d99d42d66546504fb0",
     "cause": "course-identity — rebuilt 88,617 bytes vs committed 88,641; first difference at byte 10,417"
    },
    "course/n3/topic-43-intencao/lesson-03.md": {
-    "rebuilt_sha256": "7d814f272c725c00d24882732f85ed375e2c5f2a71560173be2a42bc3f2b23ea",
+    "rebuilt_sha256": "9bef05531438d70f85eee821c9b2c8e7778a1e6bd169fe8410fe61fb923a4950",
     "cause": "course-identity — rebuilt 8,679 bytes vs committed 9,038; first difference at byte 5,592"
    },
    "course/n3/topic-43-intencao/lesson-04.json": {
-    "rebuilt_sha256": "fdcd804af3055917328f40b5dc7463cff3d8bd6f34e0c19e13f227dd6b49ee2a",
+    "rebuilt_sha256": "3bdf62f5292e74c5f719111fb9f17452d1b794dccaca2bd1c6cfdf60a0212eae",
     "cause": "course-identity — rebuilt 87,348 bytes vs committed 87,372; first difference at byte 9,927"
    },
    "course/n3/topic-43-intencao/lesson-04.md": {
-    "rebuilt_sha256": "c2c152198f713f15a45986546bff49a6388a6fc2fdcb2794765adf5f47795f49",
+    "rebuilt_sha256": "b426ff6da73342c252d124ae31567f67c6fac25f5c728b4b1324b1d813cda147",
     "cause": "course-identity — rebuilt 9,671 bytes vs committed 9,609; first difference at byte 5,103"
    },
    "course/n3/topic-43-intencao/lesson-05.json": {
-    "rebuilt_sha256": "b515d50974967ce20acdac3e305d06227a1f53c1646eb836b0ca8e3c9a7024b1",
+    "rebuilt_sha256": "93b48789fd00c072eaba2a6e2b36f4943aad2a310df6b2f90deb0fbd9110d388",
     "cause": "course-identity — rebuilt 84,065 bytes vs committed 84,089; first difference at byte 9,432"
    },
    "course/n3/topic-43-intencao/lesson-05.md": {
-    "rebuilt_sha256": "55c418d2f42933dec8b64c3f5a00273a595530447984434149366de8a93773aa",
+    "rebuilt_sha256": "d6b4f68e3aa6bdb116f3a92e57876fc14200f21eb08b8034139198407bce86e4",
     "cause": "course-identity — rebuilt 6,322 bytes vs committed 6,809; first difference at byte 3,694"
    },
    "course/n3/topic-43-intencao/lesson-06.json": {
-    "rebuilt_sha256": "a52bb34d0178068256d9a87e17be96e039e14ae3ef19fd74e05e71044b5247f5",
+    "rebuilt_sha256": "19d0757939eac10c3657812d0b340c6ef2e61b915f4351e41c6380ce451e1776",
     "cause": "course-identity — rebuilt 83,959 bytes vs committed 83,983; first difference at byte 8,923"
    },
    "course/n3/topic-43-intencao/lesson-06.md": {
@@ -492,7 +496,7 @@
     "cause": "course-identity — rebuilt 5,312 bytes vs committed 6,438; first difference at byte 3,413"
    },
    "course/n3/topic-43-intencao/lesson-07.json": {
-    "rebuilt_sha256": "b938901cb8871c6186b17c0b4b783b9d7749ab39bd516513fe8a2906aa4a60a4",
+    "rebuilt_sha256": "89b2ea1e32821f368a1b01e08dae0117150abfa5408b220ad04f629bc52899f8",
     "cause": "course-identity — rebuilt 82,730 bytes vs committed 82,754; first difference at byte 8,923"
    },
    "course/n3/topic-43-intencao/lesson-07.md": {
@@ -500,55 +504,55 @@
     "cause": "course-identity — rebuilt 4,696 bytes vs committed 5,762; first difference at byte 2,996"
    },
    "course/n3/topic-44-deveres/lesson-01.json": {
-    "rebuilt_sha256": "bcb7d3314a51cd55fa4848c70ebbef88ddfb1be4fa40bcc9d1bc777be11ca8e1",
+    "rebuilt_sha256": "4b345c1c0138240dd1c3abdffbad49e570b9c892319a623ebbba6dce3d4153a5",
     "cause": "course-identity — rebuilt 93,240 bytes vs committed 93,264; first difference at byte 10,946"
    },
    "course/n3/topic-44-deveres/lesson-01.md": {
-    "rebuilt_sha256": "7c6afc71f2a91c32cf2ee3d6ec60898730be8ae760edb97e287e03feabe7423e",
+    "rebuilt_sha256": "37767461190c3ecd52c0f069ab7054a726ed97e413597524c398641c3dfa4a2d",
     "cause": "course-identity — rebuilt 9,735 bytes vs committed 9,680; first difference at byte 6,735"
    },
    "course/n3/topic-44-deveres/lesson-02.json": {
-    "rebuilt_sha256": "0cb8cb60699decfa62f45464bff4653f578df6c0d102229283e1ffab097e455a",
+    "rebuilt_sha256": "19730197b0fd4d3e523cbf6b1b5f5699c8864a105c42917c24942474ca0ce43f",
     "cause": "course-identity — rebuilt 94,648 bytes vs committed 94,672; first difference at byte 11,740"
    },
    "course/n3/topic-44-deveres/lesson-02.md": {
-    "rebuilt_sha256": "906442ad929fb1710adb3f9a81dcf31a5f723cbbaff05a4cb4db7ce0a95d8d64",
+    "rebuilt_sha256": "ddef62322ead36d2337a65b6a9fee794e58171d9c59ff9194d5fecf1a5451513",
     "cause": "course-identity — rebuilt 9,952 bytes vs committed 10,035; first difference at byte 6,476"
    },
    "course/n3/topic-44-deveres/lesson-03.json": {
-    "rebuilt_sha256": "57e8a68e30edd5804ecb75f0bc800cf242668bb3bdc720f32ea30e73db6f7b6e",
+    "rebuilt_sha256": "a8afd553db8dcb52fd025473adaa8144ae3dd50649cb632f9b638b6bd53e92b0",
     "cause": "course-identity — rebuilt 98,620 bytes vs committed 98,644; first difference at byte 12,640"
    },
    "course/n3/topic-44-deveres/lesson-03.md": {
-    "rebuilt_sha256": "19264af40125278ed7b56bd27f9303ea08206eca1f64d22c62d0ef2f750a9276",
+    "rebuilt_sha256": "21d15ae763f66dc4fde885a112b6a7a576199e996f643b7ac13313b77255bbba",
     "cause": "course-identity — rebuilt 11,188 bytes vs committed 11,396; first difference at byte 7,409"
    },
    "course/n3/topic-44-deveres/lesson-04.json": {
-    "rebuilt_sha256": "720484d1d1c579e56db5cc0bbd0e7767514a48262f691291e32e368f13abb09e",
+    "rebuilt_sha256": "a4dba9de67d0ab12457267348c8c9ab165a4cc8dfe3414aca6a41c2bcf78ef55",
     "cause": "course-identity — rebuilt 87,372 bytes vs committed 87,396; first difference at byte 9,524"
    },
    "course/n3/topic-44-deveres/lesson-04.md": {
-    "rebuilt_sha256": "723bf4490c19145f2cb78e8f6858d675bb37c22b64c9042d78023c2882137ac8",
+    "rebuilt_sha256": "8407cc48c8b78383dc494539b545566e3456cb13d8301e6db092706a9e819f4e",
     "cause": "course-identity — rebuilt 5,584 bytes vs committed 6,047; first difference at byte 3,527"
    },
    "course/n3/topic-44-deveres/lesson-05.json": {
-    "rebuilt_sha256": "6ac5982ef7ef4e0530fe1d6bd86ee00180cee51b435e5bf04d357566eb2db782",
+    "rebuilt_sha256": "464c321a64ef5f125fc2846b7f7ffa98e8fae37d031c211e5468f4095cf538f2",
     "cause": "course-identity — rebuilt 86,231 bytes vs committed 86,255; first difference at byte 8,882"
    },
    "course/n3/topic-44-deveres/lesson-05.md": {
-    "rebuilt_sha256": "52d5d2d5bfbcb4298226041ab9fffc47d6b45e024dad826ac775884f56cbc546",
+    "rebuilt_sha256": "d06f0eff677ad4a7bdbc379e3d26a96dc5e1fe3d50d9521e7a6c6d909fb5f7e7",
     "cause": "course-identity — rebuilt 5,556 bytes vs committed 6,037; first difference at byte 3,222"
    },
    "course/n3/topic-44-deveres/lesson-06.json": {
-    "rebuilt_sha256": "d4ece6f451f1bb3c0ea6da28c063d9570ae92d31b735910346a0b1428c2a6f11",
+    "rebuilt_sha256": "f1a2ef1b90c7ef1f6b54f54e1e239386e1fecee68be122cf3677c6975c5a0e8a",
     "cause": "course-identity — rebuilt 86,293 bytes vs committed 86,317; first difference at byte 8,925"
    },
    "course/n3/topic-44-deveres/lesson-06.md": {
-    "rebuilt_sha256": "0ac738fa0ca5149bb169cef78d7a8790ec1dac4b17b9b5fddf7630a4a6236ff3",
+    "rebuilt_sha256": "9ca98554bf6b852225f00e6abcb43de33c521bdb69fdbc5212c874366ba0e75a",
     "cause": "course-identity — rebuilt 5,564 bytes vs committed 6,131; first difference at byte 3,253"
    },
    "course/n3/topic-45-desejos/lesson-01.json": {
-    "rebuilt_sha256": "5725948c9645485661c05b5a67a13099deaaaccc1a224a40f5a16825f230dc4e",
+    "rebuilt_sha256": "d5884ed1b8bbc3fcd3b38c2946775de02104412771b180560fcbfdcf5ad30b5f",
     "cause": "course-identity — rebuilt 96,186 bytes vs committed 96,210; first difference at byte 11,313"
    },
    "course/n3/topic-45-desejos/lesson-01.md": {
@@ -556,47 +560,47 @@
     "cause": "course-identity — rebuilt 9,629 bytes vs committed 9,597; first difference at byte 6,457"
    },
    "course/n3/topic-45-desejos/lesson-02.json": {
-    "rebuilt_sha256": "a5a300ee16e98126ff87dee0f9e06a69bc2c2e9bd350cf33c63265a62ac6be48",
+    "rebuilt_sha256": "c2da6e98de9787d26606875f53cad219a191948bbb979976fdc2055597545143",
     "cause": "course-identity — rebuilt 95,149 bytes vs committed 95,173; first difference at byte 10,642"
    },
    "course/n3/topic-45-desejos/lesson-02.md": {
-    "rebuilt_sha256": "e5bc7013c30b1ec067676ff7d04ccacb742021938f7c6ba622f9e0f828aafc74",
+    "rebuilt_sha256": "af1af274b89c7c6de51d1467e47c9939d7806009f289f4b99aad3706c8ede2a5",
     "cause": "course-identity — rebuilt 8,867 bytes vs committed 8,982; first difference at byte 5,593"
    },
    "course/n3/topic-45-desejos/lesson-03.json": {
-    "rebuilt_sha256": "52f3a5f9e97e097fe8112e58b8eca59718543c00d7c6582b18df0aa1b7941b94",
+    "rebuilt_sha256": "6ac0206e0405e4aa7bd92768c555241d2db0c9a835d59cbcf8dbd282b7fe61f0",
     "cause": "course-identity — rebuilt 94,855 bytes vs committed 94,879; first difference at byte 10,093"
    },
    "course/n3/topic-45-desejos/lesson-03.md": {
-    "rebuilt_sha256": "9cf1a7dff58d54157778aaa304063e3b721f7d053da76940d76c4d830c3c186e",
+    "rebuilt_sha256": "6ea072f3cd5e24c3a7010b000951e13da67ac08252f4e03c55977a543ff9ecda",
     "cause": "course-identity — rebuilt 8,622 bytes vs committed 8,941; first difference at byte 5,382"
    },
    "course/n3/topic-45-desejos/lesson-04.json": {
-    "rebuilt_sha256": "e8ff5c76c85a40df3fb33bded5338e4884f246334e7320465d52b1f4139a1b24",
+    "rebuilt_sha256": "e5a3355127e242b3a1d79097724f7d2e733474df94d31fa81c3d68c43b3733a8",
     "cause": "course-identity — rebuilt 92,388 bytes vs committed 92,412; first difference at byte 8,531"
    },
    "course/n3/topic-45-desejos/lesson-04.md": {
-    "rebuilt_sha256": "c5e21adc49c4f442a7facf5c6d4bba2c0d07242275e74a0f572c7dd874c13b29",
+    "rebuilt_sha256": "dd8c4b18054c14f3e8f01971fd229eb738e9dbcf8372e7f7c1f3ecf45fb465dd",
     "cause": "course-identity — rebuilt 8,061 bytes vs committed 8,238; first difference at byte 4,725"
    },
    "course/n3/topic-45-desejos/lesson-05.json": {
-    "rebuilt_sha256": "dd52f0867a8c69cbef8f92169aae6750b8dcd9adcad014ed0f5eb38e75214d6c",
+    "rebuilt_sha256": "7339acbffb8b17ee8ab300b853ecfa48a25f57ee54873195d3ffc0d5e463af06",
     "cause": "course-identity — rebuilt 90,331 bytes vs committed 90,355; first difference at byte 9,238"
    },
    "course/n3/topic-45-desejos/lesson-05.md": {
-    "rebuilt_sha256": "cff6747fc865d6a66452b3384b29180e84b6ed14ab03b8e691882a8891734d57",
+    "rebuilt_sha256": "3613ede068b68c5364de86622531260b43dcb5dce1dbe22c90dd11e5845796c2",
     "cause": "course-identity — rebuilt 6,323 bytes vs committed 6,714; first difference at byte 3,427"
    },
    "course/n3/topic-45-desejos/lesson-06.json": {
-    "rebuilt_sha256": "e4afa7ce1bfaf9163b31b4b2183dbfe2904edfbee3b57531f5c885f918e036c8",
+    "rebuilt_sha256": "7ac6706eb6f3df0982a21cfecdbdbbec2eaa7530236c43ae70e773e0969c4d9a",
     "cause": "course-identity — rebuilt 89,680 bytes vs committed 89,704; first difference at byte 8,930"
    },
    "course/n3/topic-45-desejos/lesson-06.md": {
-    "rebuilt_sha256": "55342064df5157f4e603574970d9f1b3d29fe511790eeec30dc2f72d7af01c26",
+    "rebuilt_sha256": "cd2c706ba41bd9750f8080020a62f89b5c6ec17757d063676aaa1c7f890de461",
     "cause": "course-identity — rebuilt 5,615 bytes vs committed 6,090; first difference at byte 3,009"
    },
    "course/n3/topic-45-desejos/lesson-07.json": {
-    "rebuilt_sha256": "7a28545696fd14ee6e9fcc65efb0a3e41dc0ff6b292bca18bbce8cfc1282ad50",
+    "rebuilt_sha256": "f40c24db2dd644d864d7c2d7b96b5ab9a5351ff6d2ed0bb21f36658c159c4a01",
     "cause": "course-identity — rebuilt 89,297 bytes vs committed 89,321; first difference at byte 8,929"
    },
    "course/n3/topic-45-desejos/lesson-07.md": {
@@ -604,7 +608,7 @@
     "cause": "course-identity — rebuilt 4,567 bytes vs committed 5,714; first difference at byte 3,065"
    },
    "course/n3/topic-46-limites/lesson-01.json": {
-    "rebuilt_sha256": "d9feb5a5c5eb6a271a8be2f1ff8a7d6602d30cd549cd13953452a59aae73358c",
+    "rebuilt_sha256": "12ac096f44b4ffc904690709d62d5eef862095ef15db17d1523856ee825a12a0",
     "cause": "course-identity — rebuilt 96,785 bytes vs committed 96,809; first difference at byte 10,732"
    },
    "course/n3/topic-46-limites/lesson-01.md": {
@@ -612,47 +616,47 @@
     "cause": "course-identity — rebuilt 7,397 bytes vs committed 7,411; first difference at byte 4,689"
    },
    "course/n3/topic-46-limites/lesson-02.json": {
-    "rebuilt_sha256": "acbbb880b9cab0679e179d9ae19b5e4309d50d058573d0b01dda61201e5195d5",
+    "rebuilt_sha256": "52dd0ec40bc6ebc9b729c20180a2d2fe666e25f4807680858c2855bf9ab50038",
     "cause": "course-identity — rebuilt 96,788 bytes vs committed 96,812; first difference at byte 10,446"
    },
    "course/n3/topic-46-limites/lesson-02.md": {
-    "rebuilt_sha256": "484aaaeb0a7ea4e2a80757e2a695d172ba75bdc2b45574aaac9b35f894431671",
+    "rebuilt_sha256": "0d8ba5fbecad4d1039edde763784bcf6f1028a0a20e9815abc36c50982d8e65a",
     "cause": "course-identity — rebuilt 7,432 bytes vs committed 7,531; first difference at byte 4,646"
    },
    "course/n3/topic-46-limites/lesson-03.json": {
-    "rebuilt_sha256": "ea63ac5f8837731df4741c858ca0ea17ce0cda2b486b6b5bf7d5f32f4c2bd3a2",
+    "rebuilt_sha256": "3d3a2e54a499625f4a989e97eb0daeaf797be7746bf4123e44e4116f26d8e15a",
     "cause": "course-identity — rebuilt 96,087 bytes vs committed 96,111; first difference at byte 10,109"
    },
    "course/n3/topic-46-limites/lesson-03.md": {
-    "rebuilt_sha256": "ef6ea70b333dac0292c188c75237e30d517deedb7100aac623046bb16eeb1049",
+    "rebuilt_sha256": "651e0e23c9c5a20388bc9dd40ee980510fa23fddf58068d1b91bcc7028d6df7e",
     "cause": "course-identity — rebuilt 6,548 bytes vs committed 6,743; first difference at byte 3,948"
    },
    "course/n3/topic-46-limites/lesson-04.json": {
-    "rebuilt_sha256": "983e5fe261900c77dcfd2dd49db5aa9d1e84721bf825a431d233a272b7615edf",
+    "rebuilt_sha256": "951d8b283602166e844a2aaa821eb8b15d8150a2beb1e95359b13bb6710d4e81",
     "cause": "course-identity — rebuilt 96,908 bytes vs committed 96,932; first difference at byte 10,039"
    },
    "course/n3/topic-46-limites/lesson-04.md": {
-    "rebuilt_sha256": "ece729c920f9d7baf2415e433eabc247a6f41027357acd13ce6cc9c4c3c7864b",
+    "rebuilt_sha256": "4d43fa5120858ab4e9daadafa1510837424408646ce7375f1545ee98458cb999",
     "cause": "course-identity — rebuilt 8,366 bytes vs committed 8,100; first difference at byte 4,360"
    },
    "course/n3/topic-46-limites/lesson-05.json": {
-    "rebuilt_sha256": "8268ddd51e951e9dce82c80bb6e72ea08fb4a1e77a4327f7c1a7a233da07d122",
+    "rebuilt_sha256": "36a60fdf130f138a0783e61bb4e4f35370b02adac77c3000d1a9d5ba06b6fa88",
     "cause": "course-identity — rebuilt 93,756 bytes vs committed 93,780; first difference at byte 9,462"
    },
    "course/n3/topic-46-limites/lesson-05.md": {
-    "rebuilt_sha256": "3b5aa387cb39904e322f8fbb20355dcf5f7bbc56cd87d60b37e4354258c83e9f",
+    "rebuilt_sha256": "c39454ace049125c42f2e5721e1b1f5f06e5cdd0ef7b8b05111d3914d83177b3",
     "cause": "course-identity — rebuilt 6,045 bytes vs committed 6,462; first difference at byte 3,194"
    },
    "course/n3/topic-46-limites/lesson-06.json": {
-    "rebuilt_sha256": "ae15bd0d230fa9b97bece9451371d39ce2da81b50291226dc026d0c9edffe6b8",
+    "rebuilt_sha256": "37f81319eb8ce3e781ce760e1f78cd1c2d2c2031165577e0e1378cb3d31520b1",
     "cause": "course-identity — rebuilt 93,697 bytes vs committed 93,721; first difference at byte 8,903"
    },
    "course/n3/topic-46-limites/lesson-06.md": {
-    "rebuilt_sha256": "a321c6e50e48e6c73195747fbdca86ba88d3aa9a43350e4144988dda57d2b916",
+    "rebuilt_sha256": "bdc9b3deed396d0f154c4834db9c865e8f569ca4d819f946ccace4dd24dfa131",
     "cause": "course-identity — rebuilt 5,382 bytes vs committed 6,257; first difference at byte 3,182"
    },
    "course/n3/topic-46-limites/lesson-07.json": {
-    "rebuilt_sha256": "ec0a9a37a7632edd9606e5d3f47b49899d64daf3974d57057c2e46f3809d4b63",
+    "rebuilt_sha256": "4287aa10e71bf835736d99147e3cdad89348e2459d396b3dcabec541dffd2134",
     "cause": "course-identity — rebuilt 95,034 bytes vs committed 95,058; first difference at byte 9,007"
    },
    "course/n3/topic-46-limites/lesson-07.md": {
@@ -660,15 +664,15 @@
     "cause": "course-identity — rebuilt 5,932 bytes vs committed 6,936; first difference at byte 3,795"
    },
    "course/n3/topic-47-enfase/lesson-01.json": {
-    "rebuilt_sha256": "2a958aa3d771c733c3dd9b47851529349fe113b3ef5242cb96b08eeb3625b9bb",
+    "rebuilt_sha256": "adb499c6e1005547376a9d379fc924316143e35c299def1bca9ed82922c73e4d",
     "cause": "course-identity — rebuilt 101,757 bytes vs committed 101,781; first difference at byte 10,644"
    },
    "course/n3/topic-47-enfase/lesson-01.md": {
-    "rebuilt_sha256": "97ba3182c4e322f103a9dd7fb21e0b3a5d04f28daccd87af8a0e7907657641db",
+    "rebuilt_sha256": "7ecc6abbb93282975cf6924cb89d77d582c3f0e6744b4f5b0d03f8472b88bb1a",
     "cause": "course-identity — rebuilt 8,876 bytes vs committed 9,085; first difference at byte 5,878"
    },
    "course/n3/topic-47-enfase/lesson-02.json": {
-    "rebuilt_sha256": "df3fe2730f3efe3d84619c1eb4effafd35e7174a32574eff0275799b0b7ca0ce",
+    "rebuilt_sha256": "3fcf353c35d5a071bd4e7f882bcc2ebbfd307e1f6140e152382337d37523d98a",
     "cause": "course-identity — rebuilt 101,488 bytes vs committed 101,492; first difference at byte 10,162"
    },
    "course/n3/topic-47-enfase/lesson-02.md": {
@@ -676,47 +680,47 @@
     "cause": "course-identity — rebuilt 9,286 bytes vs committed 9,441; first difference at byte 1,742"
    },
    "course/n3/topic-47-enfase/lesson-03.json": {
-    "rebuilt_sha256": "bb9e330acf1061432996acdda01424ea93deefdbf95520fcb76dbbb9d6f23e6e",
+    "rebuilt_sha256": "97a88fcae936b10ad8780454b58bc8e0dee9e1bbfd965c41279696d554cb1d8f",
     "cause": "course-identity — rebuilt 104,558 bytes vs committed 104,582; first difference at byte 10,782"
    },
    "course/n3/topic-47-enfase/lesson-03.md": {
-    "rebuilt_sha256": "176d585b1df4fd0c2ae25a19c2063f08f61c28dffa4373b159f0550f72601502",
+    "rebuilt_sha256": "866784b68c9f66689c19309bb4a372cff46c7b30efd926064e14675868466374",
     "cause": "course-identity — rebuilt 10,231 bytes vs committed 10,373; first difference at byte 6,353"
    },
    "course/n3/topic-47-enfase/lesson-04.json": {
-    "rebuilt_sha256": "78bbe47bb7693290d35828f9fb9740db9642d414d6c67d09e82a877ad2d350fa",
+    "rebuilt_sha256": "d22f250f2cd1c067e2bd6f68e6daf2262069dff2777ba6fb96696e50c2cce71e",
     "cause": "course-identity — rebuilt 99,820 bytes vs committed 99,844; first difference at byte 8,967"
    },
    "course/n3/topic-47-enfase/lesson-04.md": {
-    "rebuilt_sha256": "4371fe4c78c43600c2795bebe5000640c9999f33a8daf252575e3a67d81f1de9",
+    "rebuilt_sha256": "6e784da4184f9f1dda70cc59b9b07927a108c6955c81fc62e81249d580b87950",
     "cause": "course-identity — rebuilt 8,195 bytes vs committed 8,476; first difference at byte 4,954"
    },
    "course/n3/topic-47-enfase/lesson-05.json": {
-    "rebuilt_sha256": "c07861765c04d5dac47f2ee73d20fd3696552a16e95406a522456928aca1e648",
+    "rebuilt_sha256": "16cbe4b9eed1bbda14577f3db5c64e1090dad1fbb645320d95e8313dd215061a",
     "cause": "course-identity — rebuilt 96,604 bytes vs committed 96,628; first difference at byte 9,204"
    },
    "course/n3/topic-47-enfase/lesson-05.md": {
-    "rebuilt_sha256": "9cad6d0bdde05610308ef94b5bbe9b3304e9e5d5cbc81beda3b2fada171d2fbd",
+    "rebuilt_sha256": "35da9f7110884aa576d57fbbe7219f7a4ba35360ea69adbcbf3249add2cd4e9b",
     "cause": "course-identity — rebuilt 6,047 bytes vs committed 6,382; first difference at byte 3,093"
    },
    "course/n3/topic-47-enfase/lesson-06.json": {
-    "rebuilt_sha256": "8ed2bad022a4f5ea4fe5b7248f18be8c528af74b85e6be6ea30ce8f959c76c1b",
+    "rebuilt_sha256": "8e40aae11ba6dae545b9782e2d8b8281b642c7b38ed8590cdcd4faf11e768082",
     "cause": "course-identity — rebuilt 96,713 bytes vs committed 96,776; first difference at byte 8,877"
    },
    "course/n3/topic-47-enfase/lesson-06.md": {
-    "rebuilt_sha256": "ff41fb688c2fba3430d2a30f7464c464197ba430749e079f57059774669639f6",
+    "rebuilt_sha256": "9e6f415299c3cbdf3b9bc56787f82704b8015ad3c0bc7cfb1c1d78b13ae07135",
     "cause": "course-identity — rebuilt 5,367 bytes vs committed 6,131; first difference at byte 3,091"
    },
    "course/n3/topic-47-enfase/lesson-07.json": {
-    "rebuilt_sha256": "49c137093e259ea58e336338ad6d38552fef060e2d2064ae7f0572fcf8f00231",
+    "rebuilt_sha256": "554a903a6ccdd7fe5757f266c7c1170ea5bc2e7cfaa7d9b67900e6a12c4b6589",
     "cause": "course-identity — rebuilt 97,610 bytes vs committed 97,634; first difference at byte 9,067"
    },
    "course/n3/topic-47-enfase/lesson-07.md": {
-    "rebuilt_sha256": "81817124432886ba15cf42e7e49cd9c23b640b2f96469d71b7f4a6474db34905",
+    "rebuilt_sha256": "bcba934e1b8fcf7c15385d029fd6592a531a5fccf6e5ff14f4c5e423ad35b6fa",
     "cause": "course-identity — rebuilt 5,717 bytes vs committed 6,602; first difference at byte 3,474"
    },
    "course/n3/topic-48-concessao/lesson-01.json": {
-    "rebuilt_sha256": "c612c9dd51ebe73be3e8c0c359803e9815988540afb8e5b8d6008d3dbae9d956",
+    "rebuilt_sha256": "056cf2649b9c49dbd6041d4e5bde41840472090eac8459e3512350d2f77f1085",
     "cause": "course-identity — rebuilt 104,558 bytes vs committed 104,582; first difference at byte 10,264"
    },
    "course/n3/topic-48-concessao/lesson-01.md": {
@@ -724,7 +728,7 @@
     "cause": "course-identity — rebuilt 9,302 bytes vs committed 9,321; first difference at byte 5,827"
    },
    "course/n3/topic-48-concessao/lesson-02.json": {
-    "rebuilt_sha256": "3ad25d986243f37ef42b5bc6277e9f9a70685b2be41507b67ded2a032badce40",
+    "rebuilt_sha256": "326f6a326febf9736d2f195dddea1b530aea890925c24ba6f7592e0f178e349d",
     "cause": "course-identity — rebuilt 104,811 bytes vs committed 104,835; first difference at byte 10,273"
    },
    "course/n3/topic-48-concessao/lesson-02.md": {
@@ -732,7 +736,7 @@
     "cause": "course-identity — rebuilt 8,834 bytes vs committed 9,035; first difference at byte 5,198"
    },
    "course/n3/topic-48-concessao/lesson-03.json": {
-    "rebuilt_sha256": "533817128915244d3fb1a67f1979ae90fced6a012838e02a917603158406068c",
+    "rebuilt_sha256": "b8f321cc30c5c5e1ddd3778997d8718c49fe14d0925dbc066f19a48053062d8c",
     "cause": "course-identity — rebuilt 104,800 bytes vs committed 104,824; first difference at byte 10,324"
    },
    "course/n3/topic-48-concessao/lesson-03.md": {
@@ -740,7 +744,7 @@
     "cause": "course-identity — rebuilt 8,827 bytes vs committed 9,080; first difference at byte 5,472"
    },
    "course/n3/topic-48-concessao/lesson-04.json": {
-    "rebuilt_sha256": "5a4fa138c96d990b9b69626a66a122fdfd0ef9cc6e7fe5cba623ef31b01597c7",
+    "rebuilt_sha256": "6d92273d7c689deeee415c0e7abe4359f9c266ae3e58c47cbd534d686dbbf85c",
     "cause": "course-identity — rebuilt 107,699 bytes vs committed 107,723; first difference at byte 11,097"
    },
    "course/n3/topic-48-concessao/lesson-04.md": {
@@ -748,31 +752,31 @@
     "cause": "course-identity — rebuilt 9,276 bytes vs committed 9,527; first difference at byte 5,732"
    },
    "course/n3/topic-48-concessao/lesson-05.json": {
-    "rebuilt_sha256": "8cdf25d2b29c288b7d4932d50c1b78a6776e57cd6ae5ce19b3d27e36ce98913d",
+    "rebuilt_sha256": "8f0764b49dacb2948694d4c4ce140bcd196e47c2750194eda0c8ba73ac154d03",
     "cause": "course-identity — rebuilt 100,511 bytes vs committed 100,535; first difference at byte 9,193"
    },
    "course/n3/topic-48-concessao/lesson-05.md": {
-    "rebuilt_sha256": "c39e33f829e593eee796fa857f088c4c5dee6ae25d2fb86f72b28467f9a77ff1",
+    "rebuilt_sha256": "8fd7d6150a11281ae114620f0c9bfad3c5479b6e6e539f344aa4cc56b6c1b712",
     "cause": "course-identity — rebuilt 6,527 bytes vs committed 6,704; first difference at byte 3,278"
    },
    "course/n3/topic-48-concessao/lesson-06.json": {
-    "rebuilt_sha256": "d320b12d0d1fd1cbacc65366d0787a84cabcca5d24d45dfbad8a8d84115b9562",
+    "rebuilt_sha256": "01dfef87d2d7880295b4a452ec76eb99584173fcd9ca5bd041ab4d5940783f50",
     "cause": "course-identity — rebuilt 104,167 bytes vs committed 104,071; first difference at byte 9,302"
    },
    "course/n3/topic-48-concessao/lesson-06.md": {
-    "rebuilt_sha256": "968cf0b3c03674d8784dfba07347067f88bc9fc28492e55ccd09144b2e87dd6b",
+    "rebuilt_sha256": "1e448ca0731f72d42af757bc2375cb6abe54f3cb50b78c2ccf103d1293c35280",
     "cause": "course-identity — rebuilt 8,471 bytes vs committed 8,840; first difference at byte 3,561"
    },
    "course/n3/topic-48-concessao/lesson-07.json": {
-    "rebuilt_sha256": "1a110a9416835ea8beff3afd1fa4f9b5e795e79007d429ae08ac34453898c00e",
+    "rebuilt_sha256": "a85fdc3cdc56f1e187fb74a48a0a92f017964db9bf5becfaa8d00e2087c94e12",
     "cause": "course-identity — rebuilt 101,358 bytes vs committed 101,382; first difference at byte 9,057"
    },
    "course/n3/topic-48-concessao/lesson-07.md": {
-    "rebuilt_sha256": "751c1193fe9027555da9c0f4e3d8b73b929cbb8fc5529978e259f78e5cc420b2",
+    "rebuilt_sha256": "23980f1a77e620179044dfda3be730840711278cb0b2cb354191ffea7047e2f4",
     "cause": "course-identity — rebuilt 6,671 bytes vs committed 6,905; first difference at byte 3,686"
    },
    "course/n3/topic-49-conjectura/lesson-01.json": {
-    "rebuilt_sha256": "84ad28619eacc63617aec41e9ee800276160d9bb1a3eaae1d774c03fa9c4aeb8",
+    "rebuilt_sha256": "88d058546ba60490285873eae204d4bfef5ac7e20993d2f830bc19846f2af666",
     "cause": "course-identity — rebuilt 107,957 bytes vs committed 107,981; first difference at byte 10,718"
    },
    "course/n3/topic-49-conjectura/lesson-01.md": {
@@ -780,7 +784,7 @@
     "cause": "course-identity — rebuilt 9,014 bytes vs committed 8,845; first difference at byte 5,470"
    },
    "course/n3/topic-49-conjectura/lesson-02.json": {
-    "rebuilt_sha256": "c432a82b27f13178d98242b0f2750bc22bbec1b2e0c7cd866face3213706a17c",
+    "rebuilt_sha256": "731d47187c501f26105e6ddd5003a66667b5b1f6bee77ccb92c7264b37ced32f",
     "cause": "course-identity — rebuilt 111,411 bytes vs committed 111,435; first difference at byte 10,955"
    },
    "course/n3/topic-49-conjectura/lesson-02.md": {
@@ -788,47 +792,47 @@
     "cause": "course-identity — rebuilt 10,654 bytes vs committed 10,655; first difference at byte 6,447"
    },
    "course/n3/topic-49-conjectura/lesson-03.json": {
-    "rebuilt_sha256": "d55a38c53398b9cd79217414929c15bd8e8684808f9f55fc8bf33a6ea55f6cd1",
+    "rebuilt_sha256": "af3bddafffa6ca19010cc724064be03d44cc077d233449f91a5456995799de19",
     "cause": "course-identity — rebuilt 108,815 bytes vs committed 108,839; first difference at byte 10,216"
    },
    "course/n3/topic-49-conjectura/lesson-03.md": {
-    "rebuilt_sha256": "b604379884956296b511763d05faf623da8f570fe766d335cb9e6860e9fdb359",
+    "rebuilt_sha256": "74ab1bdfedbb05c41f7497f5ccb403af6bd81887e9a06ca0805dd840216d7e96",
     "cause": "course-identity — rebuilt 8,743 bytes vs committed 8,755; first difference at byte 5,365"
    },
    "course/n3/topic-49-conjectura/lesson-04.json": {
-    "rebuilt_sha256": "04ef0f161fbfffbaf768ae0c2876f6d35a9ca3e002dfbe1677dfc1db06091499",
+    "rebuilt_sha256": "5f05401f0c6fab789d490e5c377a873d61c068fc52da57d00d09e21e1c1cb95f",
     "cause": "course-identity — rebuilt 106,302 bytes vs committed 106,326; first difference at byte 9,092"
    },
    "course/n3/topic-49-conjectura/lesson-04.md": {
-    "rebuilt_sha256": "cb4977815f122083e41c93d7d316bd060fb975dcf0bffadfb94162c09bca1c53",
+    "rebuilt_sha256": "627a85f8cc1ba366af972bac0b3e4e51318de9e40ff303e649160a1038a0aa48",
     "cause": "course-identity — rebuilt 7,703 bytes vs committed 7,895; first difference at byte 4,555"
    },
    "course/n3/topic-49-conjectura/lesson-05.json": {
-    "rebuilt_sha256": "14c276dae5ed11dbeec2cba81feb30c4369b4626d696a9ae15119df4d388c5d4",
+    "rebuilt_sha256": "845d5cf1836fa6ef48a2160381ff3340017b8124b084b06eb771dd36a2b22fb2",
     "cause": "course-identity — rebuilt 103,784 bytes vs committed 103,808; first difference at byte 9,460"
    },
    "course/n3/topic-49-conjectura/lesson-05.md": {
-    "rebuilt_sha256": "a553e2d27eab268074960f34ee894f227a56902c63558804ac752ec6ce41b86c",
+    "rebuilt_sha256": "d0dcf70a8a4b3d56d47247c92918b59fc578b29d299844df0c640c4868bd88b9",
     "cause": "course-identity — rebuilt 6,301 bytes vs committed 6,305; first difference at byte 3,043"
    },
    "course/n3/topic-49-conjectura/lesson-06.json": {
-    "rebuilt_sha256": "d32c50f0eaecba294f7a631d74728f45e47b5380b4aec74b72b110300c63055b",
+    "rebuilt_sha256": "c0cef61532dc3fd0969d754442a1b489ef4f28e636ba1bcc787df86d42e71aa0",
     "cause": "course-identity — rebuilt 104,594 bytes vs committed 104,618; first difference at byte 8,984"
    },
    "course/n3/topic-49-conjectura/lesson-06.md": {
-    "rebuilt_sha256": "08128efb2fcac8404f59b911958d219a9dfc64e8d26480711b80db0329d48f0e",
+    "rebuilt_sha256": "6cc4b723d61b39c07889642a32a5f221130fa8702c56c1c05c3a66a0c9ef3162",
     "cause": "course-identity — rebuilt 7,128 bytes vs committed 7,496; first difference at byte 4,079"
    },
    "course/n3/topic-49-conjectura/lesson-07.json": {
-    "rebuilt_sha256": "eab7a7408167c929c0ef2c5ab85925d1ca6cbc6bf531c3436fc416e1c5cc639e",
+    "rebuilt_sha256": "0e05b6844e38c5009595fa602f7e1cd1c6b68dc9cad8a650fa08e8fd1a49418c",
     "cause": "course-identity — rebuilt 105,312 bytes vs committed 105,336; first difference at byte 9,027"
    },
    "course/n3/topic-49-conjectura/lesson-07.md": {
-    "rebuilt_sha256": "f42441e58c43bdcee1feabf4b92ccc06220c9e16a95df1d67a0185c5656cf8ae",
+    "rebuilt_sha256": "984ede007c2f9346f89a473d828856018ddc528861228112bb18633775516ae4",
     "cause": "course-identity — rebuilt 6,747 bytes vs committed 7,227; first difference at byte 4,037"
    },
    "course/n3/topic-50-relato/lesson-01.json": {
-    "rebuilt_sha256": "98b292a10239969cdbfc827c51df29e38a01e66c6bf7874f33c4cc5ff14240c5",
+    "rebuilt_sha256": "d74288902bd38ab831214a3ea86131712807ddacf06bec6204fdd7192d6a9bba",
     "cause": "course-identity — rebuilt 113,121 bytes vs committed 113,145; first difference at byte 10,417"
    },
    "course/n3/topic-50-relato/lesson-01.md": {
@@ -836,55 +840,55 @@
     "cause": "course-identity — rebuilt 10,356 bytes vs committed 10,416; first difference at byte 6,688"
    },
    "course/n3/topic-50-relato/lesson-02.json": {
-    "rebuilt_sha256": "6b83a730a07c73676120f433a224c0b693ae347cc4722b1d8d414fa859173e26",
+    "rebuilt_sha256": "77fa053dda9479a7b3bc53af257bdb0cb2e0a4c76ed94a408efcc89585df4a56",
     "cause": "course-identity — rebuilt 113,351 bytes vs committed 113,375; first difference at byte 10,463"
    },
    "course/n3/topic-50-relato/lesson-02.md": {
-    "rebuilt_sha256": "214e4aaef0c0eeed32e69585dcbb707de3793b4f9182038bf41d916696810f8e",
+    "rebuilt_sha256": "da8cfa02b2a828a190e1f75d060cc600fc9e996c7cafe2fb96d5a7dfef6abc96",
     "cause": "course-identity — rebuilt 10,241 bytes vs committed 10,431; first difference at byte 6,457"
    },
    "course/n3/topic-50-relato/lesson-03.json": {
-    "rebuilt_sha256": "bb1ab5e8e285b8313984bfc6b7698b66841ae376e134142209dbd0a98be2ea04",
+    "rebuilt_sha256": "683bed678baba747770de8c9d52e772a90863a2d6ddccd44d03046025d5bb5c9",
     "cause": "course-identity — rebuilt 113,732 bytes vs committed 113,756; first difference at byte 9,982"
    },
    "course/n3/topic-50-relato/lesson-03.md": {
-    "rebuilt_sha256": "50f70a300059f7a1e4d9d90343ab297885384cc07bcb314fea5c64990c913dc7",
+    "rebuilt_sha256": "cc6cc7ca6a4378ddf863b0f130eb51ebbe00a83ae098447b1b0edd8c11896246",
     "cause": "course-identity — rebuilt 9,999 bytes vs committed 10,050; first difference at byte 6,421"
    },
    "course/n3/topic-50-relato/lesson-04.json": {
-    "rebuilt_sha256": "4333f83fd3a5adb520f1278e8036bcd7475e77c941c5e21e5dbccbac0e065559",
+    "rebuilt_sha256": "497e4110db50f3a30937e517efc4aff0fc81dc5c456dae22813234d5c823a008",
     "cause": "course-identity — rebuilt 113,336 bytes vs committed 113,360; first difference at byte 9,814"
    },
    "course/n3/topic-50-relato/lesson-04.md": {
-    "rebuilt_sha256": "9280f19584c9b1a2f0e5bfad8d64affbc8215c09771683426272c1c58d178571",
+    "rebuilt_sha256": "1386e38e8ac90b874f6e7d0f2ecb8b562da78c032c7ac1b67d3a593158a6892f",
     "cause": "course-identity — rebuilt 10,495 bytes vs committed 10,311; first difference at byte 6,129"
    },
    "course/n3/topic-50-relato/lesson-05.json": {
-    "rebuilt_sha256": "ba2941df1fc9dbea3f720085cb9e80ac565f45e0b121e5fcc2eea64d884ee3c8",
+    "rebuilt_sha256": "deb701bb84da74e6d8869c54855e3bcd5a8ce5a0d9d0f71c503836a0f60483e3",
     "cause": "course-identity — rebuilt 112,107 bytes vs committed 112,131; first difference at byte 9,845"
    },
    "course/n3/topic-50-relato/lesson-05.md": {
-    "rebuilt_sha256": "a66fe5f3de7a8dfbd386f109c5b4ca7c1ea6d1f8816a12ed813ade4e09a8078a",
+    "rebuilt_sha256": "84cf536a9c600c4add39651c23540e411c36ca53c140545ce2bc5f19dc88cbc8",
     "cause": "course-identity — rebuilt 9,894 bytes vs committed 10,134; first difference at byte 5,910"
    },
    "course/n3/topic-50-relato/lesson-06.json": {
-    "rebuilt_sha256": "7a6b19c196e454ed4d1b7e1821da822cd502e50cf8c33938e25e9733f9582bf5",
+    "rebuilt_sha256": "de0e9c7d88d40094aaed9e1a34ae7253e5d064deaf471d757b26c7ae46c20dd4",
     "cause": "course-identity — rebuilt 108,223 bytes vs committed 108,286; first difference at byte 9,154"
    },
    "course/n3/topic-50-relato/lesson-06.md": {
-    "rebuilt_sha256": "010e38b98fdb0cf2585331d62eefb54bece600a5226cce7032cd7285a396acf6",
+    "rebuilt_sha256": "c9499754cff1a3c590f8ab466c6f2d405be65b15b33aca46d82ec9730e359442",
     "cause": "course-identity — rebuilt 6,431 bytes vs committed 7,149; first difference at byte 3,698"
    },
    "course/n3/topic-50-relato/lesson-07.json": {
-    "rebuilt_sha256": "33b0319aa048d5ea870be102bc22f1b4f56fcb257636c14fd94ab7d49c16d118",
+    "rebuilt_sha256": "84a0fe24e253171f15e4b6c3499884ff35b5c6d19496da2aba0181ab311a48af",
     "cause": "course-identity — rebuilt 108,707 bytes vs committed 108,770; first difference at byte 9,026"
    },
    "course/n3/topic-50-relato/lesson-07.md": {
-    "rebuilt_sha256": "f97a5091d03c190d84f144780c23a1168d4e1adfb90c4670d5fbe293940a9b24",
+    "rebuilt_sha256": "1a4ef481f5c71ea91799540a563130bf51fe5ee1ab34a3cbbf1d78c0c6669042",
     "cause": "course-identity — rebuilt 6,524 bytes vs committed 7,249; first difference at byte 3,981"
    },
    "course/n3/topic-51-estrutura/lesson-01.json": {
-    "rebuilt_sha256": "b90549f9e6c95e12e4c52e8e34921dff4358d5dfe7f1057752e1ce428d61b973",
+    "rebuilt_sha256": "c3b811abae61888d69149f1dbe5086a78b8bda18c0241957caa8c03f7d177b72",
     "cause": "course-identity — rebuilt 113,579 bytes vs committed 113,603; first difference at byte 10,101"
    },
    "course/n3/topic-51-estrutura/lesson-01.md": {
@@ -892,63 +896,63 @@
     "cause": "course-identity — rebuilt 8,761 bytes vs committed 8,784; first difference at byte 5,483"
    },
    "course/n3/topic-51-estrutura/lesson-02.json": {
-    "rebuilt_sha256": "d8b147c785f54906d11ae4ceb6c6de0a45eb149411e0c99134e12f0b858b0950",
+    "rebuilt_sha256": "eb5f4e883a9b37032fc814725aa8e37cc94bf6c21ef6a9c25ee5fa63be3f30f6",
     "cause": "course-identity — rebuilt 115,475 bytes vs committed 115,499; first difference at byte 10,646"
    },
    "course/n3/topic-51-estrutura/lesson-02.md": {
-    "rebuilt_sha256": "0441e5474bb47b5d0053c99633d2a78053f74a19a41f47c42b4519af93e41714",
+    "rebuilt_sha256": "99aeb21f8e78c5ca2aa4e996331694bab9a87df85077eb8cd8069579ab99909c",
     "cause": "course-identity — rebuilt 9,204 bytes vs committed 9,302; first difference at byte 5,668"
    },
    "course/n3/topic-51-estrutura/lesson-03.json": {
-    "rebuilt_sha256": "7d9d404f1c6eeb61483870d393f52fc6e5de21970391b65f1f01b5643ace80c1",
+    "rebuilt_sha256": "53c2265c864d05ed37fce89ead3adecfb2fac9be001dec7117597d20f3965bc9",
     "cause": "course-identity — rebuilt 117,311 bytes vs committed 117,335; first difference at byte 11,132"
    },
    "course/n3/topic-51-estrutura/lesson-03.md": {
-    "rebuilt_sha256": "7c627dc7eae1e116116c1fef469437b0c686b2381bc7c40479befef041829292",
+    "rebuilt_sha256": "a39699998374b74415992d98af2175db8c50a6c9161f2792e58e057bd391612e",
     "cause": "course-identity — rebuilt 9,538 bytes vs committed 9,525; first difference at byte 6,215"
    },
    "course/n3/topic-51-estrutura/lesson-04.json": {
-    "rebuilt_sha256": "61a4661a139af7d09661c9e2f2da48f76f7844c6d0d28c19d52fbac18937eb29",
+    "rebuilt_sha256": "4ac1c1d51403937c23a67e94ddc5163d588e25bfffb868850735ffc6ded10a46",
     "cause": "course-identity — rebuilt 113,106 bytes vs committed 113,130; first difference at byte 9,753"
    },
    "course/n3/topic-51-estrutura/lesson-04.md": {
-    "rebuilt_sha256": "13d8b6ef55a239f375dadd6c6a4b15c30920d30397da4716c1cc7599c147d5fa",
+    "rebuilt_sha256": "6c59d6714a978993fdd52475bd8787c9d2ac08cce983510b213a2fe4244172cd",
     "cause": "course-identity — rebuilt 7,498 bytes vs committed 8,275; first difference at byte 4,460"
    },
    "course/n3/topic-51-estrutura/lesson-05.json": {
-    "rebuilt_sha256": "09011744011b4e3df67ba84ac70a4161a77f57db76243a5e83dc27d526269480",
+    "rebuilt_sha256": "f78c1f7c2768cb6cd41fafaacd8734d916c74786c3e59e56e0c7c9629d2afac6",
     "cause": "course-identity — rebuilt 114,413 bytes vs committed 114,437; first difference at byte 9,386"
    },
    "course/n3/topic-51-estrutura/lesson-05.md": {
-    "rebuilt_sha256": "9610d42f73c97ec848187e8e38da4c0f2fd14ad548c51e7dfac36734bc7719c1",
+    "rebuilt_sha256": "addedf597c71c86dd733fe474a39512220b1d9943a8fd9764e2fbce7b513d848",
     "cause": "course-identity — rebuilt 9,177 bytes vs committed 9,477; first difference at byte 5,375"
    },
    "course/n3/topic-51-estrutura/lesson-06.json": {
-    "rebuilt_sha256": "2f32924f15e12b8f6fe9e19fb44f46c1337ffe73adfe02b02120dc1a3757995c",
+    "rebuilt_sha256": "10c95cc9ba522becd41b4cef6d35ee827f73e98e3d0e37df433e4083ae7f677d",
     "cause": "course-identity — rebuilt 111,631 bytes vs committed 111,655; first difference at byte 8,984"
    },
    "course/n3/topic-51-estrutura/lesson-06.md": {
-    "rebuilt_sha256": "95ec07db50bb62fcca9ea51c7e4440ee8249c8d20fa1c7618769120834edaf09",
+    "rebuilt_sha256": "35541f317b65d4e414ee59e7441b47f78938fa050e50a51eda89171beb57a8a9",
     "cause": "course-identity — rebuilt 6,916 bytes vs committed 7,173; first difference at byte 3,919"
    },
    "course/n3/topic-52-revisao/lesson-01.json": {
-    "rebuilt_sha256": "f662caa556b38ab113b61e35349cba17745f20af88015c374d4cc271ca6e7726",
+    "rebuilt_sha256": "f918044c22234e94b8075359058ac043095715cb9959afd4bd1010e7b7421ae8",
     "cause": "course-identity — rebuilt 104,114 bytes vs committed 104,138; first difference at byte 5,453"
    },
    "course/n3/topic-52-revisao/lesson-01.md": {
-    "rebuilt_sha256": "e6eb34d6cc9b01af98d314165ce5260cd6a522f65e4adb5ce16f499716e8c351",
+    "rebuilt_sha256": "356bf43f77b518efb51603dde9417fa0d3519c21a9a69d496f99c5c01abdaec8",
     "cause": "course-identity — rebuilt 3,850 bytes vs committed 4,110; first difference at byte 1,683"
    },
    "course/n4/INDEX.md": {
-    "rebuilt_sha256": "01f8da0dbd566c6437aa2518c9f49083c282e7cc657b4dcdcd6652a62b1bd4b3",
+    "rebuilt_sha256": "ee18df795998fce88ce3c7923ec59c59a97d04893d332a05ad68fa19519fef85",
     "cause": "rollup — rebuilt 6,681 bytes vs committed 7,390; first difference at byte 21"
    },
    "course/n4/course.json": {
-    "rebuilt_sha256": "2c31b5e974554e44fbfa92f60eaa545e3d6cf8b3e3fb3c99fb6ff2da69149313",
+    "rebuilt_sha256": "0aaab652414de83c0a33542fd2e568c103dfe3fc559db82daf6ee46049e17809",
     "cause": "rollup — rebuilt 5,812 bytes vs committed 6,235; first difference at byte 82"
    },
    "course/n4/topic-21-forma-simples/lesson-01.json": {
-    "rebuilt_sha256": "b152b6af8b4c65a8983080c329f6ea22de6bd9a4d25d1f9acb06bc60683cc53b",
+    "rebuilt_sha256": "3be17cd08949809651e97d3a8aaaa27228ed87f9c783fe87326714bf0d2d048d",
     "cause": "course-identity — same length (42,354 bytes), content differs; first difference at byte 9,310"
    },
    "course/n4/topic-21-forma-simples/lesson-01.md": {
@@ -956,23 +960,23 @@
     "cause": "course-identity — rebuilt 7,854 bytes vs committed 8,118; first difference at byte 5,461"
    },
    "course/n4/topic-21-forma-simples/lesson-02.json": {
-    "rebuilt_sha256": "b749d03fd2dc864061290e7dd19bb1f133fa68e37a7f53ee6f963f56c85d52f7",
+    "rebuilt_sha256": "e27ac04658a740222ce805aa698666d82e4e696cb79f604b4ec90c635fdf94e5",
     "cause": "course-identity — same length (43,897 bytes), content differs; first difference at byte 9,133"
    },
    "course/n4/topic-21-forma-simples/lesson-02.md": {
-    "rebuilt_sha256": "0fb73d32b2cb00df65287bdb2d9b876d20d2abb5abf17165b2584c6aa1824650",
+    "rebuilt_sha256": "b21c079064446ede1236f5b0a01216b6863c35cd365b9bac8aefeaede3d7da10",
     "cause": "course-identity — rebuilt 9,151 bytes vs committed 9,410; first difference at byte 6,246"
    },
    "course/n4/topic-21-forma-simples/lesson-03.json": {
-    "rebuilt_sha256": "d4f6594f6661cca1ad897617fa4b51f14884efa5c916317fdfc61684a809266b",
+    "rebuilt_sha256": "0de6e147b160d38112593a87d776f963377cc5d7649db75168b393476df03585",
     "cause": "course-identity — same length (41,386 bytes), content differs; first difference at byte 8,614"
    },
    "course/n4/topic-21-forma-simples/lesson-03.md": {
-    "rebuilt_sha256": "02690567c0155e44a8503e0af0ae9221df46ab4d229f76b1882d539648e8b340",
+    "rebuilt_sha256": "ea1b6b3ca688006f54ad72dca883691a99a9047d34eb9debafb477a4a992c72b",
     "cause": "course-identity — rebuilt 7,083 bytes vs committed 7,271; first difference at byte 4,806"
    },
    "course/n4/topic-21-forma-simples/lesson-04.json": {
-    "rebuilt_sha256": "902a3742e354de22e9fce131f38c2ce1a257ab55eb212ee4600b648811631660",
+    "rebuilt_sha256": "86d672760a77c7dda0f9301631517f9f843d88425148a7dfd0e64bcde51b7820",
     "cause": "course-identity — same length (41,476 bytes), content differs; first difference at byte 7,011"
    },
    "course/n4/topic-21-forma-simples/lesson-04.md": {
@@ -980,7 +984,7 @@
     "cause": "course-identity — rebuilt 8,100 bytes vs committed 8,339; first difference at byte 5,405"
    },
    "course/n4/topic-21-forma-simples/lesson-05.json": {
-    "rebuilt_sha256": "58a1f15d1335416d061787be77676087630cc555b9c7533cc3fbadb2b33c4857",
+    "rebuilt_sha256": "5c7fecd21a413988099eb45e3b354b874c7b76f7c558bde92a8a38a060a80f4b",
     "cause": "course-identity — same length (42,818 bytes), content differs; first difference at byte 7,766"
    },
    "course/n4/topic-21-forma-simples/lesson-05.md": {
@@ -988,15 +992,15 @@
     "cause": "course-identity — rebuilt 8,489 bytes vs committed 8,754; first difference at byte 5,425"
    },
    "course/n4/topic-21-forma-simples/lesson-06.json": {
-    "rebuilt_sha256": "d6184b83b0b76ea28352ade486fd32dfdcca60ec4d2e30c34cd80671daf52c18",
+    "rebuilt_sha256": "d381fe893a04aa43f0b8b285a9ac985986ba9abcea73f095af0fc8aaf56c7d85",
     "cause": "course-identity — same length (39,857 bytes), content differs; first difference at byte 6,833"
    },
    "course/n4/topic-21-forma-simples/lesson-06.md": {
-    "rebuilt_sha256": "98f38b7e23e56a3273f8a999d1ffc2d95778747a63d3867f629cbd46f4ee298c",
+    "rebuilt_sha256": "b7267bbdec5ae56f7683fa188e5055dbbf317299a0bdb790a3d0736d1f684b2a",
     "cause": "course-identity — rebuilt 7,272 bytes vs committed 7,527; first difference at byte 4,365"
    },
    "course/n4/topic-21-forma-simples/lesson-07.json": {
-    "rebuilt_sha256": "2bf7043839f3a50375512f3efcf9e26153402b270f3a7b0004c7fdd800e2aa3a",
+    "rebuilt_sha256": "1239e868623e1eec63e30d2e141b8467aac9bd8aaeae1d50139e0c1d8cb83456",
     "cause": "course-identity — same length (37,694 bytes), content differs; first difference at byte 5,741"
    },
    "course/n4/topic-21-forma-simples/lesson-07.md": {
@@ -1004,19 +1008,19 @@
     "cause": "course-identity — rebuilt 6,664 bytes vs committed 6,815; first difference at byte 2,251"
    },
    "course/n4/topic-21-forma-simples/topic.json": {
-    "rebuilt_sha256": "526ac83bf3207d39bff4b7809adcd2c75c651232962357202446046612e1d15a",
+    "rebuilt_sha256": "da51370907bc3b15923b4c16a18368550135771234de1dccfb1bfc49ef5ac27e",
     "cause": "course-identity — rebuilt 11,903 bytes vs committed 11,938; first difference at byte 97"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-01.json": {
-    "rebuilt_sha256": "e0cccdc4872500451a391a5d7c2109144d75e67f1a75ed26a646affe404853e5",
+    "rebuilt_sha256": "5831ce829e6d98b9b92834cf8ebaa371f9fcb91b6f67de7164e6735fdafbdffa",
     "cause": "course-identity — same length (46,016 bytes), content differs; first difference at byte 1,785"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-01.md": {
-    "rebuilt_sha256": "22030979e72330a220e43c8d56af1c4a1388677506f6557235fd09762a2b8015",
+    "rebuilt_sha256": "c83a67e98d26faf81398f835d8d2e6194b29f9a5a18fb6c61d52128c6b8b34cd",
     "cause": "course-identity — rebuilt 9,071 bytes vs committed 9,375; first difference at byte 6,118"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-02.json": {
-    "rebuilt_sha256": "eb9525e0a2283ef99a550b629a5374d5bf44574beffa94e720bbb9c872675da5",
+    "rebuilt_sha256": "31610404d569b1e2e9e9d8424ade7465825d2a90fb274b170d6dc3454f1f4c1c",
     "cause": "course-identity — same length (44,712 bytes), content differs; first difference at byte 8,615"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-02.md": {
@@ -1024,7 +1028,7 @@
     "cause": "course-identity — rebuilt 8,630 bytes vs committed 8,902; first difference at byte 1,849"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-03.json": {
-    "rebuilt_sha256": "6a276658507ba52e6d55e3519ffbe19da78aad0bc60152c9adae4ccf51639dd9",
+    "rebuilt_sha256": "5b572ebfbdaa10b029354edcb39e192c52fb890cc5597cdc7880b59f556b519d",
     "cause": "course-identity — same length (44,201 bytes), content differs; first difference at byte 8,695"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-03.md": {
@@ -1032,7 +1036,7 @@
     "cause": "course-identity — rebuilt 8,192 bytes vs committed 8,474; first difference at byte 5,066"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-04.json": {
-    "rebuilt_sha256": "a091269b7289f512b8f9c8a43abeaba3658fce320c4416a369e7ed283477c5be",
+    "rebuilt_sha256": "6b1d40fe5316503793e459fe9b4512376fe9470f2bf3901cfa178035db5a8e00",
     "cause": "course-identity — same length (44,329 bytes), content differs; first difference at byte 8,020"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-04.md": {
@@ -1040,7 +1044,7 @@
     "cause": "course-identity — rebuilt 8,132 bytes vs committed 8,282; first difference at byte 5,141"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-05.json": {
-    "rebuilt_sha256": "b3814bf04524f1cb1832560d6331dd85327a6c0c8ba5c65c64e8a0d14a1439d5",
+    "rebuilt_sha256": "d68d59ecdc9643ecca281f444f9ed5932497d6e6b2e2f1562ff8bfd01aa4c255",
     "cause": "course-identity — same length (41,698 bytes), content differs; first difference at byte 5,865"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-05.md": {
@@ -1048,7 +1052,7 @@
     "cause": "course-identity — rebuilt 7,916 bytes vs committed 8,143; first difference at byte 5,201"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-06.json": {
-    "rebuilt_sha256": "f11d91c535a175878f99aec8f859493ca8a0ba9e8be4f9987f6e33d6ff088520",
+    "rebuilt_sha256": "81861c574ae9a77c22c2c184b2127cdba0bfe88f1903dce13f233a7f65b3a9e4",
     "cause": "course-identity — same length (41,035 bytes), content differs; first difference at byte 5,922"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-06.md": {
@@ -1056,7 +1060,7 @@
     "cause": "course-identity — rebuilt 7,273 bytes vs committed 7,490; first difference at byte 2,569"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-07.json": {
-    "rebuilt_sha256": "8a0204c6be3cfead87882a0cea97e50c5ebe2967a9982508eb1a784f03f22cd8",
+    "rebuilt_sha256": "a6e3cffd602cfe414ba8dc1ee87c3ae7dd898b8d21bdfa745d110f21b3c8838f",
     "cause": "course-identity — same length (40,295 bytes), content differs; first difference at byte 5,282"
    },
    "course/n4/topic-22-oracoes-relativas/lesson-07.md": {
@@ -1064,19 +1068,19 @@
     "cause": "course-identity — rebuilt 7,287 bytes vs committed 7,563; first difference at byte 4,675"
    },
    "course/n4/topic-22-oracoes-relativas/topic.json": {
-    "rebuilt_sha256": "ffcf776e96fc3355da4e573f547cc8408eebc4bdeecfece77d9384d46b5208a6",
+    "rebuilt_sha256": "6c04dc67120c3e01e4e50f5bd166312e0894e700085bbfcf6dc3cf39224e2634",
     "cause": "course-identity — rebuilt 10,855 bytes vs committed 10,879; first difference at byte 101"
    },
    "course/n4/topic-23-condicionais/lesson-01.json": {
-    "rebuilt_sha256": "927de3d6a85c83608899f5a61356fce7bc399cec61446888758d78d32ec929b5",
+    "rebuilt_sha256": "8e89cca1f2957abf2a8d2c5c9375f3361e903a553e5c192c656f4c85f9d22967",
     "cause": "course-identity — same length (44,809 bytes), content differs; first difference at byte 7,363"
    },
    "course/n4/topic-23-condicionais/lesson-01.md": {
-    "rebuilt_sha256": "5d6358dc8ca391a647f05b2e8702209ecd35ff10f149a0ccd9349d540a1ec723",
+    "rebuilt_sha256": "05577204551aaf22f826576e95d41d1b295cb142808cf04977a3b75611e9c938",
     "cause": "course-identity — rebuilt 8,499 bytes vs committed 8,797; first difference at byte 5,161"
    },
    "course/n4/topic-23-condicionais/lesson-02.json": {
-    "rebuilt_sha256": "f65d9d5e0d8de4e1a25e8206eb6073666b3d1ebcbe1eeed84f5f6d52fce679d5",
+    "rebuilt_sha256": "546d460510997fb1122728cf8748d938d7e9905f8d1f18c2b34a17e2242cc84a",
     "cause": "course-identity — same length (45,848 bytes), content differs; first difference at byte 7,843"
    },
    "course/n4/topic-23-condicionais/lesson-02.md": {
@@ -1084,7 +1088,7 @@
     "cause": "course-identity — rebuilt 8,909 bytes vs committed 9,186; first difference at byte 5,687"
    },
    "course/n4/topic-23-condicionais/lesson-03.json": {
-    "rebuilt_sha256": "8377dc200fc3779348d30284d4279c64d97f6c2d1fff28d0d747012d1d4007fe",
+    "rebuilt_sha256": "93c06bb6da64357ecedb96fb60255f9fee4365af25be8792f689e54f82f44057",
     "cause": "course-identity — same length (43,231 bytes), content differs; first difference at byte 7,487"
    },
    "course/n4/topic-23-condicionais/lesson-03.md": {
@@ -1092,7 +1096,7 @@
     "cause": "course-identity — rebuilt 6,877 bytes vs committed 7,180; first difference at byte 4,273"
    },
    "course/n4/topic-23-condicionais/lesson-04.json": {
-    "rebuilt_sha256": "b5dff0a6a5c210e91fc805e13c89ad384f1e984203a088ec9bee898c16bcd65f",
+    "rebuilt_sha256": "4fa29e5f67fc9dfa81927a63617f49cb1fe9c5790a3c0d624c70aaf94eacd98f",
     "cause": "course-identity — same length (43,795 bytes), content differs; first difference at byte 6,758"
    },
    "course/n4/topic-23-condicionais/lesson-04.md": {
@@ -1100,7 +1104,7 @@
     "cause": "course-identity — rebuilt 8,500 bytes vs committed 8,751; first difference at byte 2,989"
    },
    "course/n4/topic-23-condicionais/lesson-05.json": {
-    "rebuilt_sha256": "0b55bf4c86e873c46d747e87972290abe2a3f8be8af3b5cd9c0e8bbbabc8a161",
+    "rebuilt_sha256": "a3714c3dccfc09516d7a83fd42ec6af1af993ec3bb6b2bd9bd9cab5db5d579ee",
     "cause": "course-identity — same length (44,122 bytes), content differs; first difference at byte 7,377"
    },
    "course/n4/topic-23-condicionais/lesson-05.md": {
@@ -1108,7 +1112,7 @@
     "cause": "course-identity — rebuilt 7,623 bytes vs committed 7,871; first difference at byte 4,895"
    },
    "course/n4/topic-23-condicionais/lesson-06.json": {
-    "rebuilt_sha256": "2a803f335cbb73aa4186d271d9314f0a789f41d8a325921e1049b8e68df5286f",
+    "rebuilt_sha256": "1dc610a0378a2099124fe723cbf11eabf19d6d0a6097ea67d086c75da9923faf",
     "cause": "course-identity — same length (46,742 bytes), content differs; first difference at byte 7,758"
    },
    "course/n4/topic-23-condicionais/lesson-06.md": {
@@ -1116,7 +1120,7 @@
     "cause": "course-identity — rebuilt 8,646 bytes vs committed 8,917; first difference at byte 6,099"
    },
    "course/n4/topic-23-condicionais/lesson-07.json": {
-    "rebuilt_sha256": "e7f51b54bbf52b43d364f0b4eef66511f567c6785c7c3ded3f5ae1d667532f15",
+    "rebuilt_sha256": "028911b37e9eaa4a030a6714981991e4a220f8342e0a1dece4f1aa4db23947c4",
     "cause": "course-identity — same length (48,730 bytes), content differs; first difference at byte 7,619"
    },
    "course/n4/topic-23-condicionais/lesson-07.md": {
@@ -1124,7 +1128,7 @@
     "cause": "course-identity — rebuilt 10,396 bytes vs committed 10,620; first difference at byte 4,524"
    },
    "course/n4/topic-23-condicionais/lesson-08.json": {
-    "rebuilt_sha256": "7a02770a58a4612e60b126a895bb0fa7081af5b5b7e5a2fb287999b17f78eaae",
+    "rebuilt_sha256": "4cb292231ef9b1d739d13d83e5d50a799a0053b65d83c36ecdd1a5f323ecd04c",
     "cause": "course-identity — same length (47,488 bytes), content differs; first difference at byte 6,965"
    },
    "course/n4/topic-23-condicionais/lesson-08.md": {
@@ -1132,11 +1136,11 @@
     "cause": "course-identity — rebuilt 9,097 bytes vs committed 9,346; first difference at byte 3,777"
    },
    "course/n4/topic-23-condicionais/topic.json": {
-    "rebuilt_sha256": "71177d258997134305fec9cb4ed0671b531cb1469301a7c8add0415ac56da49e",
+    "rebuilt_sha256": "be1684afb797e3bc91d9877d9ddfd8f28cccd9a5e0c6122f4d218399faa74e56",
     "cause": "course-identity — rebuilt 12,204 bytes vs committed 12,246; first difference at byte 96"
    },
    "course/n4/topic-24-potencial/lesson-01.json": {
-    "rebuilt_sha256": "9521341ff9bb5eca637276f5cd0346e8c65c5d625cf8065fef83934fea68194a",
+    "rebuilt_sha256": "52df9dcdb683b1f6961c7d00c8cb1a4680d366a1e933765cfb0d80e442262218",
     "cause": "course-identity — same length (49,745 bytes), content differs; first difference at byte 9,603"
    },
    "course/n4/topic-24-potencial/lesson-01.md": {
@@ -1144,7 +1148,7 @@
     "cause": "course-identity — rebuilt 8,532 bytes vs committed 8,837; first difference at byte 5,251"
    },
    "course/n4/topic-24-potencial/lesson-02.json": {
-    "rebuilt_sha256": "5f14f43ef403f83f9c0aa1e847be048da0e4f41f92f4d098daebf498362cd16a",
+    "rebuilt_sha256": "a93540009ee8f57bf9165c5b192f2a7389c6da1120c36bd5221c2b77a57d0aba",
     "cause": "course-identity — same length (50,331 bytes), content differs; first difference at byte 10,169"
    },
    "course/n4/topic-24-potencial/lesson-02.md": {
@@ -1152,7 +1156,7 @@
     "cause": "course-identity — rebuilt 8,691 bytes vs committed 8,964; first difference at byte 5,943"
    },
    "course/n4/topic-24-potencial/lesson-03.json": {
-    "rebuilt_sha256": "c608c9b0b68605d2e5fb557443a00f8fe2e8a624ac51eca28268f457903b34ed",
+    "rebuilt_sha256": "e8ac29d4923a570edff780588062b68c9d35b414e98108c61149ab6500b239ac",
     "cause": "course-identity — same length (45,975 bytes), content differs; first difference at byte 8,108"
    },
    "course/n4/topic-24-potencial/lesson-03.md": {
@@ -1160,7 +1164,7 @@
     "cause": "course-identity — rebuilt 6,854 bytes vs committed 7,089; first difference at byte 1,591"
    },
    "course/n4/topic-24-potencial/lesson-04.json": {
-    "rebuilt_sha256": "96eabb448e7f423426855ebf1f5987b334e4af94eeb106215e03f4ca67b191dc",
+    "rebuilt_sha256": "21e5b48435ff34998df6738292b043e7fd802ebb8468aedfcc927c64343fba46",
     "cause": "course-identity — same length (45,873 bytes), content differs; first difference at byte 6,722"
    },
    "course/n4/topic-24-potencial/lesson-04.md": {
@@ -1168,11 +1172,11 @@
     "cause": "course-identity — rebuilt 7,868 bytes vs committed 8,148; first difference at byte 5,089"
    },
    "course/n4/topic-24-potencial/topic.json": {
-    "rebuilt_sha256": "d6cc24b2e14bc35dfb539da81d16704aa30e7119fca38276cab04f034a714a00",
+    "rebuilt_sha256": "c3d693f9fb37613887005f29ca9b745764fbcea94277888bba01ff26db0567f4",
     "cause": "course-identity — rebuilt 7,944 bytes vs committed 7,959; first difference at byte 93"
    },
    "course/n4/topic-25-volitivo/lesson-01.json": {
-    "rebuilt_sha256": "e7363a64f534778989ca83f3daf6f32939cf367c3be88404e7f5e1815d314f04",
+    "rebuilt_sha256": "41fdc229b02fa4c48609d4143b23b6c76515a3352fb6c0ee308b40a4ca0d7691",
     "cause": "course-identity — same length (51,863 bytes), content differs; first difference at byte 9,664"
    },
    "course/n4/topic-25-volitivo/lesson-01.md": {
@@ -1180,7 +1184,7 @@
     "cause": "course-identity — rebuilt 8,750 bytes vs committed 8,956; first difference at byte 5,702"
    },
    "course/n4/topic-25-volitivo/lesson-02.json": {
-    "rebuilt_sha256": "fa991e9cd045b5c3725fdafc66287d391c367ce1ec47163d5fb65428eba24b70",
+    "rebuilt_sha256": "dea69407e309dbdd8bce4683bfbcb1d38807071adb2817b5480e220acdb7c39a",
     "cause": "course-identity — same length (47,003 bytes), content differs; first difference at byte 7,152"
    },
    "course/n4/topic-25-volitivo/lesson-02.md": {
@@ -1188,7 +1192,7 @@
     "cause": "course-identity — rebuilt 7,611 bytes vs committed 7,866; first difference at byte 5,146"
    },
    "course/n4/topic-25-volitivo/lesson-03.json": {
-    "rebuilt_sha256": "7bbd098e4eea0527bfe8d513185e02c3379da20c5a2c6869d95c56ff0cb77f97",
+    "rebuilt_sha256": "25d41cc1a95fb405222f943763b6ef333a2e0a23e11a7fa2107b732b0a404fa1",
     "cause": "course-identity — same length (47,864 bytes), content differs; first difference at byte 7,479"
    },
    "course/n4/topic-25-volitivo/lesson-03.md": {
@@ -1196,7 +1200,7 @@
     "cause": "course-identity — rebuilt 7,639 bytes vs committed 7,949; first difference at byte 4,777"
    },
    "course/n4/topic-25-volitivo/lesson-04.json": {
-    "rebuilt_sha256": "9e32b225c352e0dc4271bb5a5189ee02d3beaa1dee1ad70652e21fb9f1ce9cc0",
+    "rebuilt_sha256": "4507ad2d046f0ee4d86419a7a03f8db13f0a80c297e1fe995700c5e28606ca89",
     "cause": "course-identity — same length (49,383 bytes), content differs; first difference at byte 8,098"
    },
    "course/n4/topic-25-volitivo/lesson-04.md": {
@@ -1204,7 +1208,7 @@
     "cause": "course-identity — rebuilt 8,535 bytes vs committed 8,822; first difference at byte 5,768"
    },
    "course/n4/topic-25-volitivo/lesson-05.json": {
-    "rebuilt_sha256": "0e0a58dffa6c2c87934cd1899268f895fe464c3dfe9f435dee508f906b593116",
+    "rebuilt_sha256": "0058be1b8c8d479e61c6a546e6f3692334fccc931f665283ee14ca183a3d8f56",
     "cause": "course-identity — same length (49,745 bytes), content differs; first difference at byte 7,642"
    },
    "course/n4/topic-25-volitivo/lesson-05.md": {
@@ -1212,7 +1216,7 @@
     "cause": "course-identity — rebuilt 8,696 bytes vs committed 8,952; first difference at byte 5,435"
    },
    "course/n4/topic-25-volitivo/lesson-06.json": {
-    "rebuilt_sha256": "b39fbb78d1fa2f37ddb70691267439ea5fa586b3985c1220a2f5db489e360b17",
+    "rebuilt_sha256": "514b69c153afda63520bb2e661281145ce56c4bb4870f35a604c279fc90b1262",
     "cause": "course-identity — same length (47,768 bytes), content differs; first difference at byte 5,737"
    },
    "course/n4/topic-25-volitivo/lesson-06.md": {
@@ -1220,7 +1224,7 @@
     "cause": "course-identity — rebuilt 8,424 bytes vs committed 8,597; first difference at byte 5,210"
    },
    "course/n4/topic-25-volitivo/lesson-07.json": {
-    "rebuilt_sha256": "80c54541b6188d55cbf48d4aa4be27f4e8547051625f069178d1bdd8ddaae4bd",
+    "rebuilt_sha256": "2bda48818b71973066311e9e28ca13c508dda0d3cd8cd07268ecb21a74cce086",
     "cause": "course-identity — same length (46,075 bytes), content differs; first difference at byte 6,064"
    },
    "course/n4/topic-25-volitivo/lesson-07.md": {
@@ -1228,11 +1232,11 @@
     "cause": "course-identity — rebuilt 7,481 bytes vs committed 7,757; first difference at byte 4,597"
    },
    "course/n4/topic-25-volitivo/topic.json": {
-    "rebuilt_sha256": "7b2c093c9bead5ac96858637089c8eeae986440a5adfa60b702d99ef79437520",
+    "rebuilt_sha256": "857fa0e44d58cd772716210ed8b61fd71ff016f2d228655580ea6392f168d7b3",
     "cause": "course-identity — rebuilt 10,676 bytes vs committed 10,703; first difference at byte 92"
    },
    "course/n4/topic-26-transitividade/lesson-01.json": {
-    "rebuilt_sha256": "5f54381b7cc057131ba198503e021248e853e632212ae5e23563599736e84dfa",
+    "rebuilt_sha256": "687607091c351a528ab76dee5f6e3de7c5361e95ee7bfbadf0deaf1ce13ba404",
     "cause": "course-identity — same length (50,639 bytes), content differs; first difference at byte 8,570"
    },
    "course/n4/topic-26-transitividade/lesson-01.md": {
@@ -1240,7 +1244,7 @@
     "cause": "course-identity — rebuilt 8,108 bytes vs committed 8,331; first difference at byte 5,460"
    },
    "course/n4/topic-26-transitividade/lesson-02.json": {
-    "rebuilt_sha256": "3d32f42155aafe16f84fdbe3dcaee5eef6dacd3174ac793cfd1db1f08edc5c29",
+    "rebuilt_sha256": "c53ccd3d625158db52d1fd5675fdaf4f29ced0228d38dc9ed167e963190e5c83",
     "cause": "course-identity — same length (47,423 bytes), content differs; first difference at byte 7,098"
    },
    "course/n4/topic-26-transitividade/lesson-02.md": {
@@ -1248,7 +1252,7 @@
     "cause": "course-identity — rebuilt 6,489 bytes vs committed 6,804; first difference at byte 4,191"
    },
    "course/n4/topic-26-transitividade/lesson-03.json": {
-    "rebuilt_sha256": "61fd30265805a15bd699041c8d20ee921e2f9715d6f05ba2d58a75e42a09e9c4",
+    "rebuilt_sha256": "66f69fd3e0ca5d078e3e2678b2ee2bcc810fba3d2cacc04b059845ef2d3cc2a3",
     "cause": "course-identity — same length (47,260 bytes), content differs; first difference at byte 7,093"
    },
    "course/n4/topic-26-transitividade/lesson-03.md": {
@@ -1256,7 +1260,7 @@
     "cause": "course-identity — rebuilt 6,723 bytes vs committed 7,017; first difference at byte 4,258"
    },
    "course/n4/topic-26-transitividade/lesson-04.json": {
-    "rebuilt_sha256": "ed01d707c40af391e8417575f5bc54b144e028f5096a5740d3dad87b7d0a9b32",
+    "rebuilt_sha256": "d0615e2b88a5498bbdf724c984d826707321b3546ef9d394915faf913a7aba2a",
     "cause": "course-identity — same length (49,144 bytes), content differs; first difference at byte 8,231"
    },
    "course/n4/topic-26-transitividade/lesson-04.md": {
@@ -1264,7 +1268,7 @@
     "cause": "course-identity — rebuilt 6,498 bytes vs committed 6,760; first difference at byte 4,049"
    },
    "course/n4/topic-26-transitividade/lesson-05.json": {
-    "rebuilt_sha256": "2fb91b85ecb65eec33929f1d8c4fd230fd8a6cf424baa3e030a9178061fa6f3a",
+    "rebuilt_sha256": "6ab8b515b02714df99b56832dd92530c05bf6ed3c9cfa3e10dbc6c4f1f2ae105",
     "cause": "course-identity — same length (48,322 bytes), content differs; first difference at byte 7,332"
    },
    "course/n4/topic-26-transitividade/lesson-05.md": {
@@ -1272,11 +1276,11 @@
     "cause": "course-identity — rebuilt 6,301 bytes vs committed 6,555; first difference at byte 3,778"
    },
    "course/n4/topic-26-transitividade/topic.json": {
-    "rebuilt_sha256": "9298e082615a49d0ead96f37e9f516e179dfb681ef5c9c8ce6ba03b9595ba166",
+    "rebuilt_sha256": "835aa0570282db251a1b5f0b496d847f95a43680716e8e16e8e5a1c709e8a08b",
     "cause": "course-identity — rebuilt 8,128 bytes vs committed 8,165; first difference at byte 98"
    },
    "course/n4/topic-27-dar-receber/lesson-01.json": {
-    "rebuilt_sha256": "7718cee79b992edc0574b71d344276298c2370781062b1ad2c0669c13e35b813",
+    "rebuilt_sha256": "3ba58909d8debb13a1898c4a90d4924a36c8c2b64687064174210fd3ffd93fdb",
     "cause": "course-identity — same length (51,167 bytes), content differs; first difference at byte 8,390"
    },
    "course/n4/topic-27-dar-receber/lesson-01.md": {
@@ -1284,7 +1288,7 @@
     "cause": "course-identity — rebuilt 8,210 bytes vs committed 8,400; first difference at byte 1,940"
    },
    "course/n4/topic-27-dar-receber/lesson-02.json": {
-    "rebuilt_sha256": "9997a6b8aebaf8ed8b49edc59af6c1416749971d4f33c4c43cbfc2308eca1839",
+    "rebuilt_sha256": "a4b66abe274368fc62d2a6e2c90fde10cc5b7f0fcc6ad210261e3d53ababe8fb",
     "cause": "course-identity — same length (53,141 bytes), content differs; first difference at byte 9,042"
    },
    "course/n4/topic-27-dar-receber/lesson-02.md": {
@@ -1292,15 +1296,15 @@
     "cause": "course-identity — rebuilt 8,523 bytes vs committed 8,785; first difference at byte 5,757"
    },
    "course/n4/topic-27-dar-receber/lesson-03.json": {
-    "rebuilt_sha256": "ad93d05c18b06c0d2f46e69e6533b38bb8b418fca89d1a52501543678e6e19ad",
+    "rebuilt_sha256": "65c4fc3165e2e9f75586c80ba6327abdcf668d9796d86f1635109bb26f9e290d",
     "cause": "course-identity — same length (54,406 bytes), content differs; first difference at byte 9,266"
    },
    "course/n4/topic-27-dar-receber/lesson-03.md": {
-    "rebuilt_sha256": "fbc63ba2a71cd01276e4adda145fd3f539c0a6a7937248005ad9a2b88188cf09",
+    "rebuilt_sha256": "8b180b15079cd0798a2b79e12385889e08437121eab3fdf8cca3edba755bb7cf",
     "cause": "course-identity — rebuilt 8,556 bytes vs committed 8,836; first difference at byte 5,823"
    },
    "course/n4/topic-27-dar-receber/lesson-04.json": {
-    "rebuilt_sha256": "00dccffae9257eb3e2bfb1cdbbb9834010c5599fe3318667fbf60894e492aa97",
+    "rebuilt_sha256": "9b8dcb38b35baf0b7114a49b9560aa30667fbae22b7b176dd2520d33f18d805d",
     "cause": "course-identity — same length (52,200 bytes), content differs; first difference at byte 8,200"
    },
    "course/n4/topic-27-dar-receber/lesson-04.md": {
@@ -1308,11 +1312,11 @@
     "cause": "course-identity — rebuilt 8,375 bytes vs committed 8,678; first difference at byte 5,242"
    },
    "course/n4/topic-27-dar-receber/topic.json": {
-    "rebuilt_sha256": "b86036c37918c79952316194d3c5a0d30479aa6f11d3aa3f9f8c42f4e7a0c8c4",
+    "rebuilt_sha256": "ceaa3d09b2393e74c3a7b65d64d3d46060515c630d28a625aa08c92a2285018f",
     "cause": "course-identity — rebuilt 8,364 bytes vs committed 8,380; first difference at byte 95"
    },
    "course/n4/topic-28-experiencia/lesson-01.json": {
-    "rebuilt_sha256": "0730b80696e9e99f0eed25c7bcb4f8a3f99dbd60e16b62dea95bd297307c9d6e",
+    "rebuilt_sha256": "ddc1eb4eacde98ff5a50895a005302a98adc6b156442583a71e6470845d5e765",
     "cause": "course-identity — same length (56,829 bytes), content differs; first difference at byte 10,169"
    },
    "course/n4/topic-28-experiencia/lesson-01.md": {
@@ -1320,7 +1324,7 @@
     "cause": "course-identity — rebuilt 8,642 bytes vs committed 8,937; first difference at byte 5,818"
    },
    "course/n4/topic-28-experiencia/lesson-02.json": {
-    "rebuilt_sha256": "2d0fa51a2ec5c85ed7cde38f870b01851d919b566f0d75fe8bb54fdf49918a23",
+    "rebuilt_sha256": "658e03bc2b59287334d2b57cd4dec7d52ce4fac8de59beba861f6295ecafc427",
     "cause": "course-identity — same length (55,343 bytes), content differs; first difference at byte 9,626"
    },
    "course/n4/topic-28-experiencia/lesson-02.md": {
@@ -1328,7 +1332,7 @@
     "cause": "course-identity — rebuilt 8,420 bytes vs committed 8,728; first difference at byte 5,779"
    },
    "course/n4/topic-28-experiencia/lesson-03.json": {
-    "rebuilt_sha256": "240dd1d31ff4cebb733ca45cd0066ad080eb5beb6581d51c0a5b17fed39adddc",
+    "rebuilt_sha256": "14ff83ce838898b29aa106ff0a963fab22b662235de216a22d68fd975b2582ea",
     "cause": "course-identity — same length (52,949 bytes), content differs; first difference at byte 8,539"
    },
    "course/n4/topic-28-experiencia/lesson-03.md": {
@@ -1336,7 +1340,7 @@
     "cause": "course-identity — rebuilt 7,458 bytes vs committed 7,661; first difference at byte 4,813"
    },
    "course/n4/topic-28-experiencia/lesson-04.json": {
-    "rebuilt_sha256": "a3f5437eec40e9702edc4bc4b8c4380769ac0575a05d167eca0d4bf15772221a",
+    "rebuilt_sha256": "bb586fb5d5e67cd423fdc61b58c421a76296893606ad7eca50416fea52f22edb",
     "cause": "course-identity — same length (51,423 bytes), content differs; first difference at byte 6,976"
    },
    "course/n4/topic-28-experiencia/lesson-04.md": {
@@ -1344,7 +1348,7 @@
     "cause": "course-identity — rebuilt 7,763 bytes vs committed 8,058; first difference at byte 5,104"
    },
    "course/n4/topic-28-experiencia/lesson-05.json": {
-    "rebuilt_sha256": "27318197717476bcc83ac874978b2e5d06ac5652176e04aba8ab3dd5a4ff847a",
+    "rebuilt_sha256": "249ab0375583fbf753359e2afa72d4784e3e2c3c30f0eb82a949c0116b20b1b6",
     "cause": "course-identity — same length (50,744 bytes), content differs; first difference at byte 5,967"
    },
    "course/n4/topic-28-experiencia/lesson-05.md": {
@@ -1352,7 +1356,7 @@
     "cause": "course-identity — rebuilt 7,491 bytes vs committed 7,758; first difference at byte 4,507"
    },
    "course/n4/topic-28-experiencia/lesson-06.json": {
-    "rebuilt_sha256": "e0e582d9de2c0d067cebd682d66772f7100cad16b8b8b8522964dd08e0925fb2",
+    "rebuilt_sha256": "7e30941b6faa0a30aacaa7dc83fb3b60ccb4b1acb063e3a4504a64a8d4d28d43",
     "cause": "course-identity — same length (52,376 bytes), content differs; first difference at byte 6,445"
    },
    "course/n4/topic-28-experiencia/lesson-06.md": {
@@ -1360,11 +1364,11 @@
     "cause": "course-identity — rebuilt 8,058 bytes vs committed 8,325; first difference at byte 5,091"
    },
    "course/n4/topic-28-experiencia/topic.json": {
-    "rebuilt_sha256": "c9242c985ab9b856c0f63368788b76d8bf5eeb0373f5dd93e4c8a9aff692c724",
+    "rebuilt_sha256": "2566b2fc8a01561a3f4d6d620f578848d557266b00b2b4e0b0d9e0723e745db0",
     "cause": "course-identity — rebuilt 10,206 bytes vs committed 10,237; first difference at byte 95"
    },
    "course/n4/topic-29-obrigacao/lesson-01.json": {
-    "rebuilt_sha256": "e1753fba4cf056270ec076c716f8c6d5ab43aea6b4ba36aa280d8370dfd70c4d",
+    "rebuilt_sha256": "fe135ce40fe8f8d18062fbba783d2ef624b244d4d0a247362906f1a0733c4f6b",
     "cause": "course-identity — same length (52,314 bytes), content differs; first difference at byte 7,582"
    },
    "course/n4/topic-29-obrigacao/lesson-01.md": {
@@ -1372,7 +1376,7 @@
     "cause": "course-identity — rebuilt 6,903 bytes vs committed 7,216; first difference at byte 4,561"
    },
    "course/n4/topic-29-obrigacao/lesson-02.json": {
-    "rebuilt_sha256": "635282b8e42bf393afaf7f63045c56e33cdf0749d4974699faaaf4779a0ab38f",
+    "rebuilt_sha256": "89e72a3c416f146926e7d3071bb59fc5608c40c7ef343486d4dba377b3fb65e8",
     "cause": "course-identity — same length (53,979 bytes), content differs; first difference at byte 7,711"
    },
    "course/n4/topic-29-obrigacao/lesson-02.md": {
@@ -1380,7 +1384,7 @@
     "cause": "course-identity — rebuilt 7,699 bytes vs committed 8,020; first difference at byte 5,079"
    },
    "course/n4/topic-29-obrigacao/lesson-03.json": {
-    "rebuilt_sha256": "81c31430c730e26902f84d51a61210f7ce8b2bc9494da72107e7d893fe5b7bed",
+    "rebuilt_sha256": "941cca849bcedb6edb9f74ad1d3d55059137f5fac3c6e8fe1afc64aec209a726",
     "cause": "course-identity — same length (54,825 bytes), content differs; first difference at byte 8,443"
    },
    "course/n4/topic-29-obrigacao/lesson-03.md": {
@@ -1388,7 +1392,7 @@
     "cause": "course-identity — rebuilt 8,576 bytes vs committed 8,836; first difference at byte 5,124"
    },
    "course/n4/topic-29-obrigacao/lesson-04.json": {
-    "rebuilt_sha256": "c5d3cc137ae3a07ab43bfa13102eda60ab2d68f84c81fa139faf912dff366e78",
+    "rebuilt_sha256": "5685245606d9a21ef1bd72a122e6a6cc50645e024e5033339b56fdb46d3f581f",
     "cause": "course-identity — same length (56,202 bytes), content differs; first difference at byte 7,727"
    },
    "course/n4/topic-29-obrigacao/lesson-04.md": {
@@ -1396,19 +1400,19 @@
     "cause": "course-identity — rebuilt 8,789 bytes vs committed 9,076; first difference at byte 5,590"
    },
    "course/n4/topic-29-obrigacao/lesson-05.json": {
-    "rebuilt_sha256": "fc5e453a0ae4181dde2d0a4ffc7d337f5cf0ac4a96d608139de2e3712db8f09d",
+    "rebuilt_sha256": "274e45efdb3156f577911d963f9cd31c547e19a565431d14842914e46b18adf0",
     "cause": "course-identity — same length (55,526 bytes), content differs; first difference at byte 7,945"
    },
    "course/n4/topic-29-obrigacao/lesson-05.md": {
-    "rebuilt_sha256": "d9697ef41d7561e15ec086119846779d54ae82ec51f3e7aa51d0424b3511ab35",
+    "rebuilt_sha256": "fabc64e08bc854fd9f0300359b23146c2d719dbdc143d7e9ade9bf846d263e29",
     "cause": "course-identity — rebuilt 8,143 bytes vs committed 8,421; first difference at byte 5,384"
    },
    "course/n4/topic-29-obrigacao/topic.json": {
-    "rebuilt_sha256": "b786382326eae86e965ad989044e41209480ec9e3d1af15b72c93e13f9651c06",
+    "rebuilt_sha256": "3a2a6799ef351449a5a075d843f72d2a7dea2ed00c2d13b4815d2339fc6a28b2",
     "cause": "course-identity — rebuilt 8,507 bytes vs committed 8,534; first difference at byte 93"
    },
    "course/n4/topic-30-aspecto/lesson-01.json": {
-    "rebuilt_sha256": "aa46ecdfd4c4414dc73cb23eda7b42be9f81b778bddaedab41612c625306b0fe",
+    "rebuilt_sha256": "2a3ba2bd70075bcba941abcc8fbeb42d1df4d886b3419b3750538e4a964ab543",
     "cause": "course-identity — same length (54,729 bytes), content differs; first difference at byte 7,938"
    },
    "course/n4/topic-30-aspecto/lesson-01.md": {
@@ -1416,7 +1420,7 @@
     "cause": "course-identity — rebuilt 7,469 bytes vs committed 7,713; first difference at byte 4,711"
    },
    "course/n4/topic-30-aspecto/lesson-02.json": {
-    "rebuilt_sha256": "757a56f9b9318da26e3de956e73cb3b7abd51b2cf8576593ff1e97c6d9217733",
+    "rebuilt_sha256": "4a1662f8084077786997b1568fd337224c665a909e10f3454e4e4dc39af9ee60",
     "cause": "course-identity — same length (55,644 bytes), content differs; first difference at byte 7,246"
    },
    "course/n4/topic-30-aspecto/lesson-02.md": {
@@ -1424,7 +1428,7 @@
     "cause": "course-identity — rebuilt 8,279 bytes vs committed 8,508; first difference at byte 5,644"
    },
    "course/n4/topic-30-aspecto/lesson-03.json": {
-    "rebuilt_sha256": "042851b0be569c698ff44e764a18b65d59fab0b32ed2b2ee3de6ae072fc07d2f",
+    "rebuilt_sha256": "69e3cbeea85c4ebf3ae780d9d1856a9bdd75e9566b11feaa867623c4507a8e98",
     "cause": "course-identity — same length (56,327 bytes), content differs; first difference at byte 7,752"
    },
    "course/n4/topic-30-aspecto/lesson-03.md": {
@@ -1432,7 +1436,7 @@
     "cause": "course-identity — rebuilt 8,281 bytes vs committed 8,527; first difference at byte 5,484"
    },
    "course/n4/topic-30-aspecto/lesson-04.json": {
-    "rebuilt_sha256": "064bf0f3d11849b4c740189647e0921b91e111567719215d0caff647aecc4ff6",
+    "rebuilt_sha256": "c5d18c573573b17c42579c3c2614aba7d8f6b86db59561b8180a46a44f7ab7b6",
     "cause": "course-identity — same length (57,104 bytes), content differs; first difference at byte 7,858"
    },
    "course/n4/topic-30-aspecto/lesson-04.md": {
@@ -1440,7 +1444,7 @@
     "cause": "course-identity — rebuilt 8,420 bytes vs committed 8,638; first difference at byte 5,168"
    },
    "course/n4/topic-30-aspecto/lesson-05.json": {
-    "rebuilt_sha256": "a9ee592390db9f131c8d1eeb0316d29ba385b37ed8220992d13087014a4084f0",
+    "rebuilt_sha256": "3bacd83c67df21172710b1217867c36b2d308662559679528af84492ef026a27",
     "cause": "course-identity — same length (58,908 bytes), content differs; first difference at byte 8,089"
    },
    "course/n4/topic-30-aspecto/lesson-05.md": {
@@ -1448,7 +1452,7 @@
     "cause": "course-identity — rebuilt 9,542 bytes vs committed 9,786; first difference at byte 6,170"
    },
    "course/n4/topic-30-aspecto/lesson-06.json": {
-    "rebuilt_sha256": "3b75d1f4773fa57af57e9265834ae7ee8789a3269d322531b08a315e9317d732",
+    "rebuilt_sha256": "06092e9f8adb6ae7e518a6ec30360b2874b6b1428bc58e6c5b3895bf91faa0d6",
     "cause": "course-identity — same length (55,748 bytes), content differs; first difference at byte 7,181"
    },
    "course/n4/topic-30-aspecto/lesson-06.md": {
@@ -1456,7 +1460,7 @@
     "cause": "course-identity — rebuilt 7,751 bytes vs committed 7,952; first difference at byte 5,023"
    },
    "course/n4/topic-30-aspecto/lesson-07.json": {
-    "rebuilt_sha256": "af20bc70ae3e352617495510160813328fc3d45a81c17c01bb3c62e45e6f9d3b",
+    "rebuilt_sha256": "821d957bf65fdc65c9c2e3c7cf3947e67a443f9f7441cc5dbc3cc3f828a4f359",
     "cause": "course-identity — same length (55,181 bytes), content differs; first difference at byte 7,063"
    },
    "course/n4/topic-30-aspecto/lesson-07.md": {
@@ -1464,11 +1468,11 @@
     "cause": "course-identity — rebuilt 7,365 bytes vs committed 7,602; first difference at byte 4,509"
    },
    "course/n4/topic-30-aspecto/topic.json": {
-    "rebuilt_sha256": "b070064a57e512cdfdf8bd14442f88a587a00255dddfef9aeeae0849ed733289",
+    "rebuilt_sha256": "e738dc467ef48863a8c8b03c4760a0f3d84626d5c0afb033c2b7aceb14003427",
     "cause": "course-identity — rebuilt 11,274 bytes vs committed 11,304; first difference at byte 91"
    },
    "course/n4/topic-31-suposicao/lesson-01.json": {
-    "rebuilt_sha256": "0b545fd448075754eb0418944fbf6bce4bbd7081d9c984434b104d121d649bc5",
+    "rebuilt_sha256": "419b34cb155be9a5b221fed1718def444342338ada92e4dfdfd982d8f8657807",
     "cause": "course-identity — same length (58,226 bytes), content differs; first difference at byte 8,630"
    },
    "course/n4/topic-31-suposicao/lesson-01.md": {
@@ -1476,7 +1480,7 @@
     "cause": "course-identity — rebuilt 8,468 bytes vs committed 8,794; first difference at byte 5,531"
    },
    "course/n4/topic-31-suposicao/lesson-02.json": {
-    "rebuilt_sha256": "d46e0fa7234b979f8d481e68f835674bce0b12e112426282d518aab8ea3a5e2b",
+    "rebuilt_sha256": "dd106cc1605815708e3162db9926b20f4ee11bc9b38b43ec22730fbe3b91e31c",
     "cause": "course-identity — same length (55,882 bytes), content differs; first difference at byte 7,218"
    },
    "course/n4/topic-31-suposicao/lesson-02.md": {
@@ -1484,7 +1488,7 @@
     "cause": "course-identity — rebuilt 8,129 bytes vs committed 8,348; first difference at byte 5,338"
    },
    "course/n4/topic-31-suposicao/lesson-03.json": {
-    "rebuilt_sha256": "55e3bcfa916cc5e301b63a227bdc7f87d9c2158524271f30565ba627f0339f63",
+    "rebuilt_sha256": "020ae446c14ad1f6f4de9bac3f1f7c46cb31361c23e13ee044b2f9acc6f0deef",
     "cause": "course-identity — same length (57,655 bytes), content differs; first difference at byte 8,146"
    },
    "course/n4/topic-31-suposicao/lesson-03.md": {
@@ -1492,7 +1496,7 @@
     "cause": "course-identity — rebuilt 8,032 bytes vs committed 8,264; first difference at byte 2,613"
    },
    "course/n4/topic-31-suposicao/lesson-04.json": {
-    "rebuilt_sha256": "433053d70632e6d1d55d2315d1fe400d9185795ee974be6cfba885b15c43530c",
+    "rebuilt_sha256": "053f4d12fbb879129c36443789ddbdffb01e6c69795967291cb819de4bdfcaa3",
     "cause": "course-identity — same length (57,210 bytes), content differs; first difference at byte 7,082"
    },
    "course/n4/topic-31-suposicao/lesson-04.md": {
@@ -1500,7 +1504,7 @@
     "cause": "course-identity — rebuilt 8,165 bytes vs committed 8,512; first difference at byte 5,307"
    },
    "course/n4/topic-31-suposicao/lesson-05.json": {
-    "rebuilt_sha256": "6d3cce80ed9d5d8ecc33f58c515468c1576579d3e491abd3daa2f58c87424534",
+    "rebuilt_sha256": "05372a4f8ac2d829225241e47c665545ff16c6e37ab1f7130c317c30c8905fac",
     "cause": "course-identity — same length (58,683 bytes), content differs; first difference at byte 7,369"
    },
    "course/n4/topic-31-suposicao/lesson-05.md": {
@@ -1508,7 +1512,7 @@
     "cause": "course-identity — rebuilt 8,900 bytes vs committed 9,189; first difference at byte 5,732"
    },
    "course/n4/topic-31-suposicao/lesson-06.json": {
-    "rebuilt_sha256": "4217071fe661f5471847938acfcd902facd1405372356adf2ca9d7bd43a14c05",
+    "rebuilt_sha256": "b8c958e451ecf7ea643f57230cebb556339aa4661e871d880ce98afad801190e",
     "cause": "course-identity — same length (58,906 bytes), content differs; first difference at byte 7,064"
    },
    "course/n4/topic-31-suposicao/lesson-06.md": {
@@ -1516,7 +1520,7 @@
     "cause": "course-identity — rebuilt 8,902 bytes vs committed 9,233; first difference at byte 5,943"
    },
    "course/n4/topic-31-suposicao/lesson-07.json": {
-    "rebuilt_sha256": "6d14123dd44b69a3d72bf34de97faf64c748e6686b46668fdef7d4bdd0b289ab",
+    "rebuilt_sha256": "3c930259a2298f7d19eee38a8f808e82864d5fa7805bd5474750dea9c81fcaa2",
     "cause": "course-identity — same length (56,941 bytes), content differs; first difference at byte 6,959"
    },
    "course/n4/topic-31-suposicao/lesson-07.md": {
@@ -1524,7 +1528,7 @@
     "cause": "course-identity — rebuilt 8,035 bytes vs committed 8,285; first difference at byte 4,521"
    },
    "course/n4/topic-31-suposicao/lesson-08.json": {
-    "rebuilt_sha256": "4560761ab99cb4c153fbc75cbe6d9b67859d2a81660f2e2784530c597288cb4e",
+    "rebuilt_sha256": "93356e204cf129c529ffdd5deecd3b9d49e208f48d9e2e30644e98dcc3f72562",
     "cause": "course-identity — same length (56,016 bytes), content differs; first difference at byte 6,234"
    },
    "course/n4/topic-31-suposicao/lesson-08.md": {
@@ -1532,11 +1536,11 @@
     "cause": "course-identity — rebuilt 7,892 bytes vs committed 8,120; first difference at byte 5,137"
    },
    "course/n4/topic-31-suposicao/topic.json": {
-    "rebuilt_sha256": "b0506d6de306e6181b23a65ba32296ecebc52e6ce7cb2c7c58ee36a134626712",
+    "rebuilt_sha256": "51a2efd63e780782bc34f9776a1756403412b6ec9c61835dc19aed8c411b2675",
     "cause": "course-identity — rebuilt 11,481 bytes vs committed 11,508; first difference at byte 93"
    },
    "course/n4/topic-32-passiva/lesson-01.json": {
-    "rebuilt_sha256": "44ddee465431bd8b2a5e1ef288590bc6b8af2edb26b63f6ff9c3bbce7d49fd44",
+    "rebuilt_sha256": "b0be0a1ec6e55cebf8f664bff45857986b1db1c740026e2fe2b215c5341a94bf",
     "cause": "course-identity — same length (61,135 bytes), content differs; first difference at byte 9,044"
    },
    "course/n4/topic-32-passiva/lesson-01.md": {
@@ -1544,7 +1548,7 @@
     "cause": "course-identity — rebuilt 8,041 bytes vs committed 8,327; first difference at byte 2,355"
    },
    "course/n4/topic-32-passiva/lesson-02.json": {
-    "rebuilt_sha256": "a0fdf745192a323a0f7e59f40f7b3952d93242e91e37d99fb93b0808281cddfb",
+    "rebuilt_sha256": "348670bdb8e8757664a8a01162dd38c530c36e7f3c71c2a1c8b2e52b4ad93dfa",
     "cause": "course-identity — same length (58,664 bytes), content differs; first difference at byte 7,982"
    },
    "course/n4/topic-32-passiva/lesson-02.md": {
@@ -1552,7 +1556,7 @@
     "cause": "course-identity — rebuilt 7,896 bytes vs committed 8,217; first difference at byte 5,211"
    },
    "course/n4/topic-32-passiva/lesson-03.json": {
-    "rebuilt_sha256": "a42fe9a7f18313a8cd60c125c8601f661dded573196e4f61c2db6a29a3f4c1d5",
+    "rebuilt_sha256": "5d2a0fc19076ae762a88e3cf66be64d4ad1b8fbd8e390805ffe003150fa99445",
     "cause": "course-identity — same length (63,980 bytes), content differs; first difference at byte 8,624"
    },
    "course/n4/topic-32-passiva/lesson-03.md": {
@@ -1560,7 +1564,7 @@
     "cause": "course-identity — rebuilt 9,841 bytes vs committed 10,132; first difference at byte 6,333"
    },
    "course/n4/topic-32-passiva/lesson-04.json": {
-    "rebuilt_sha256": "cb369a35af55a5b9846652f2f7740d40b8972dfce1e7b728ade2fbea73b28941",
+    "rebuilt_sha256": "507785e58b642202f6c8daabb4b62005a7552c900c0b7fd18fcbf1d2dcf9020b",
     "cause": "course-identity — same length (60,684 bytes), content differs; first difference at byte 9,145"
    },
    "course/n4/topic-32-passiva/lesson-04.md": {
@@ -1568,11 +1572,11 @@
     "cause": "course-identity — rebuilt 8,573 bytes vs committed 8,895; first difference at byte 5,552"
    },
    "course/n4/topic-32-passiva/topic.json": {
-    "rebuilt_sha256": "f74ff138d25552e04239d03702bf35c009c17425898c0551fb55a33de8b060ef",
+    "rebuilt_sha256": "21fd3fbdc5ff7a13230a292f930fbc360d45f5133a05a772e8db1db06985a5c9",
     "cause": "course-identity — rebuilt 8,044 bytes vs committed 8,058; first difference at byte 91"
    },
    "course/n4/topic-33-causativa/lesson-01.json": {
-    "rebuilt_sha256": "e32e602d059ba62abb728741a9622ae2403694c0f680f34ac0d7f50fe96e8f56",
+    "rebuilt_sha256": "f84c50358278b8003370de48a3b17af54f70f30db853e54bf40d16f5d6ecc5d2",
     "cause": "course-identity — same length (63,057 bytes), content differs; first difference at byte 9,960"
    },
    "course/n4/topic-33-causativa/lesson-01.md": {
@@ -1580,7 +1584,7 @@
     "cause": "course-identity — rebuilt 8,338 bytes vs committed 8,644; first difference at byte 5,274"
    },
    "course/n4/topic-33-causativa/lesson-02.json": {
-    "rebuilt_sha256": "7c23a7d8e2c60ae89f1d7993042ddbaabe74f3f89f55efeb401df93abfabc35f",
+    "rebuilt_sha256": "4d6885563a3516dd75e9e11f273d9427e141e3cae8ed97c5f32d5891b42417ac",
     "cause": "course-identity — same length (62,066 bytes), content differs; first difference at byte 9,317"
    },
    "course/n4/topic-33-causativa/lesson-02.md": {
@@ -1588,7 +1592,7 @@
     "cause": "course-identity — rebuilt 7,791 bytes vs committed 8,074; first difference at byte 5,207"
    },
    "course/n4/topic-33-causativa/lesson-03.json": {
-    "rebuilt_sha256": "da6fbe5868620b2ed2c6bff8bd0fa4518c3bcbc86ac5af22b5fbecf99aa062c1",
+    "rebuilt_sha256": "d79bd259472ab28b888567b14b51a5531d2510460de6782112eecba82ad69a56",
     "cause": "course-identity — same length (62,515 bytes), content differs; first difference at byte 9,086"
    },
    "course/n4/topic-33-causativa/lesson-03.md": {
@@ -1596,11 +1600,11 @@
     "cause": "course-identity — rebuilt 8,011 bytes vs committed 8,359; first difference at byte 5,317"
    },
    "course/n4/topic-33-causativa/topic.json": {
-    "rebuilt_sha256": "6ca135db2226628502f31021d6cb8b554a13ea72ce09d84efb82b5f4fd0150b8",
+    "rebuilt_sha256": "90bb2c2f916b12559f57ed47769f37e5c8b78fdb34f8ab7d95a1e555b5f9c81d",
     "cause": "course-identity — rebuilt 7,106 bytes vs committed 7,137; first difference at byte 93"
    },
    "course/n4/topic-34-keigo/lesson-01.json": {
-    "rebuilt_sha256": "ccddcae98e905f9b9b6d10500ac6dbc5f10589cbc4a4bde80e8628ff5f4ac836",
+    "rebuilt_sha256": "d5e70e1f04d9db37bcfb80437e267be36c4e41fa78196c770093dd10f9063f16",
     "cause": "course-identity — same length (63,159 bytes), content differs; first difference at byte 8,493"
    },
    "course/n4/topic-34-keigo/lesson-01.md": {
@@ -1608,7 +1612,7 @@
     "cause": "course-identity — rebuilt 8,555 bytes vs committed 8,757; first difference at byte 5,816"
    },
    "course/n4/topic-34-keigo/lesson-02.json": {
-    "rebuilt_sha256": "b9eff57ea1398e12d47a5d950ba5746831056017e78465737b62cddcdc1e1345",
+    "rebuilt_sha256": "a2ba56639997e310ba390dd227287b96cc71792cef3fe2bf7f0f4c6286469a01",
     "cause": "course-identity — same length (60,274 bytes), content differs; first difference at byte 7,354"
    },
    "course/n4/topic-34-keigo/lesson-02.md": {
@@ -1616,7 +1620,7 @@
     "cause": "course-identity — rebuilt 7,757 bytes vs committed 8,086; first difference at byte 5,007"
    },
    "course/n4/topic-34-keigo/lesson-03.json": {
-    "rebuilt_sha256": "ee017093efb42b3b62495b3607f8ab5923b9b60e10f3cf47a376aee452685931",
+    "rebuilt_sha256": "92177898c5194a95c42e42d0664825ea273fd93910a535ff7fd840ec834a82ae",
     "cause": "course-identity — same length (61,211 bytes), content differs; first difference at byte 7,271"
    },
    "course/n4/topic-34-keigo/lesson-03.md": {
@@ -1624,7 +1628,7 @@
     "cause": "course-identity — rebuilt 7,910 bytes vs committed 8,193; first difference at byte 5,173"
    },
    "course/n4/topic-34-keigo/lesson-04.json": {
-    "rebuilt_sha256": "a2098198488b400fc02317ecb5eb8490b8df7aab3bf372b8eaecc17ae7dc771b",
+    "rebuilt_sha256": "ec27e1fb2daccc9d3b9eccabd50f829b59994886aa19eb1d5491e4f135c464a1",
     "cause": "course-identity — same length (63,564 bytes), content differs; first difference at byte 7,647"
    },
    "course/n4/topic-34-keigo/lesson-04.md": {
@@ -1632,7 +1636,7 @@
     "cause": "course-identity — rebuilt 8,746 bytes vs committed 9,052; first difference at byte 5,894"
    },
    "course/n4/topic-34-keigo/lesson-05.json": {
-    "rebuilt_sha256": "f4d23d424aec3c67473434845385312ac54ce26431e5ae64c79347333e6bb0b0",
+    "rebuilt_sha256": "02aad1d85d531357d3f4d7893e3188a25181f6bf4de498fa618a55939efa1203",
     "cause": "course-identity — same length (60,446 bytes), content differs; first difference at byte 6,481"
    },
    "course/n4/topic-34-keigo/lesson-05.md": {
@@ -1640,7 +1644,7 @@
     "cause": "course-identity — rebuilt 7,550 bytes vs committed 7,812; first difference at byte 4,858"
    },
    "course/n4/topic-34-keigo/lesson-06.json": {
-    "rebuilt_sha256": "f3803a2e300b7e1770d5ee5b5bcf41d188b2154913acc0e26eb79082bc627d85",
+    "rebuilt_sha256": "ec3edcf2bc96370fa90768f8b7922c94dd9ffb1293fad95ba4fe5022c890adbd",
     "cause": "course-identity — same length (58,714 bytes), content differs; first difference at byte 5,413"
    },
    "course/n4/topic-34-keigo/lesson-06.md": {
@@ -1648,11 +1652,11 @@
     "cause": "course-identity — rebuilt 7,713 bytes vs committed 8,053; first difference at byte 4,467"
    },
    "course/n4/topic-34-keigo/topic.json": {
-    "rebuilt_sha256": "f7f4fbdd983ab8b085b67c123943c69a4ff0591e5c56e3c3d7c4c68bfc02b565",
+    "rebuilt_sha256": "e4da8b3377e31cf4f2ae557d2a1d3969d5666a3d04b2fdabde823fa2783942a0",
     "cause": "course-identity — rebuilt 9,047 bytes vs committed 9,067; first difference at byte 89"
    },
    "course/n4/topic-35-conectores/lesson-01.json": {
-    "rebuilt_sha256": "ae785b9591abd3021a6c08c067b3eb17e5a3a5b6475dc36df7df26f7269584a4",
+    "rebuilt_sha256": "460219a8da3e9757bffab21d9d995cf2e5bc3abf1ce32e9b8a2d57ae65f09d11",
     "cause": "course-identity — same length (60,980 bytes), content differs; first difference at byte 7,798"
    },
    "course/n4/topic-35-conectores/lesson-01.md": {
@@ -1660,7 +1664,7 @@
     "cause": "course-identity — rebuilt 6,989 bytes vs committed 7,172; first difference at byte 4,214"
    },
    "course/n4/topic-35-conectores/lesson-02.json": {
-    "rebuilt_sha256": "9a9fdd9fb11766e81ee6f1ec3c47c22fa7e3e7044f3f109e9aca9669fbfc0cee",
+    "rebuilt_sha256": "41a21f57384b871be5565432a9ff575d3d9dc0a319a31f359c54ace8840b77ed",
     "cause": "course-identity — same length (61,780 bytes), content differs; first difference at byte 7,737"
    },
    "course/n4/topic-35-conectores/lesson-02.md": {
@@ -1668,7 +1672,7 @@
     "cause": "course-identity — rebuilt 7,849 bytes vs committed 8,119; first difference at byte 4,821"
    },
    "course/n4/topic-35-conectores/lesson-03.json": {
-    "rebuilt_sha256": "31a038f0dc88c5adad0652bde17ac2af6930a0b55c154af0bd59c1790f69a1eb",
+    "rebuilt_sha256": "34716f6992e18da97aa5128ef340f4e775525a827b7ee43744caf8922ca9c62e",
     "cause": "course-identity — same length (64,858 bytes), content differs; first difference at byte 8,330"
    },
    "course/n4/topic-35-conectores/lesson-03.md": {
@@ -1676,7 +1680,7 @@
     "cause": "course-identity — rebuilt 8,658 bytes vs committed 9,001; first difference at byte 4,960"
    },
    "course/n4/topic-35-conectores/lesson-04.json": {
-    "rebuilt_sha256": "b620e00093477e23061a856f1c09a804c9b6230236e3b896e72cbffcdeb3ab45",
+    "rebuilt_sha256": "adf102ea65589a5de081304fc4c545e9c5707fba67b827c415e1c22c753a7ab5",
     "cause": "course-identity — same length (60,085 bytes), content differs; first difference at byte 6,467"
    },
    "course/n4/topic-35-conectores/lesson-04.md": {
@@ -1684,7 +1688,7 @@
     "cause": "course-identity — rebuilt 6,971 bytes vs committed 7,318; first difference at byte 4,174"
    },
    "course/n4/topic-35-conectores/lesson-05.json": {
-    "rebuilt_sha256": "804162e124c53a12b65a5a65b0dccb796541b5cb91678b41b79d46f817fa43a6",
+    "rebuilt_sha256": "cbc45efd8207e4c4596133d0dc99a158b070db10566b2c0551b8763ad412bd04",
     "cause": "course-identity — same length (61,140 bytes), content differs; first difference at byte 5,619"
    },
    "course/n4/topic-35-conectores/lesson-05.md": {
@@ -1692,7 +1696,7 @@
     "cause": "course-identity — rebuilt 7,996 bytes vs committed 8,251; first difference at byte 5,151"
    },
    "course/n4/topic-35-conectores/lesson-06.json": {
-    "rebuilt_sha256": "bc01525497b5b18e86a3644cf3da3cfc49ba26f4fb531558391b1b028dea02f3",
+    "rebuilt_sha256": "d7a31424fb13f6cd2aaff3061bb37bb30a5cad11b1e445edbaed07dca6b318bb",
     "cause": "course-identity — same length (61,414 bytes), content differs; first difference at byte 6,105"
    },
    "course/n4/topic-35-conectores/lesson-06.md": {
@@ -1700,7 +1704,7 @@
     "cause": "course-identity — rebuilt 7,709 bytes vs committed 7,959; first difference at byte 4,153"
    },
    "course/n4/topic-35-conectores/lesson-07.json": {
-    "rebuilt_sha256": "bc92a595d474f89a16010b033f17d11159904cef7c541e9092a0d0354e82f66c",
+    "rebuilt_sha256": "fa8057da93a47ec8ad0d13e33436d51b5f8190eb8d50995b0f8a29fbd5004cbe",
     "cause": "course-identity — same length (61,378 bytes), content differs; first difference at byte 5,848"
    },
    "course/n4/topic-35-conectores/lesson-07.md": {
@@ -1708,11 +1712,11 @@
     "cause": "course-identity — rebuilt 8,091 bytes vs committed 8,387; first difference at byte 5,173"
    },
    "course/n4/topic-35-conectores/topic.json": {
-    "rebuilt_sha256": "f47ee815f6b40877fe75ccb9afa7792686c54590bdc5268ee16f6ae709ec91f0",
+    "rebuilt_sha256": "a25edd5a2b3f14700233d9005d273c323c5678d0bcd823edacd660e5f6571976",
     "cause": "course-identity — rebuilt 9,410 bytes vs committed 9,435; first difference at byte 94"
    },
    "course/n4/topic-36-revisao/lesson-01.json": {
-    "rebuilt_sha256": "8775b5210638729eaf95dce8c8fec8f4cbf5ecaebb9d5159d7611d29c5a1aff2",
+    "rebuilt_sha256": "66908fd94a395da2d04aaea6ba967f8afcb7d7d52715bb836a2b1012840f4d4e",
     "cause": "course-identity — same length (61,278 bytes), content differs; first difference at byte 4,830"
    },
    "course/n4/topic-36-revisao/lesson-01.md": {
@@ -1720,7 +1724,7 @@
     "cause": "course-identity — rebuilt 8,252 bytes vs committed 8,576; first difference at byte 4,637"
    },
    "course/n4/topic-36-revisao/lesson-02.json": {
-    "rebuilt_sha256": "7b6358e8cc097b38a2f869655c27f303875edab65a127d1ec4929e739c2df607",
+    "rebuilt_sha256": "553d26cc60dc0c473e897d2fab9cbebb02b4db08ed006685086855f9cfb7cf4d",
     "cause": "course-identity — same length (61,531 bytes), content differs; first difference at byte 5,024"
    },
    "course/n4/topic-36-revisao/lesson-02.md": {
@@ -1728,7 +1732,7 @@
     "cause": "course-identity — rebuilt 7,746 bytes vs committed 8,096; first difference at byte 4,750"
    },
    "course/n4/topic-36-revisao/lesson-03.json": {
-    "rebuilt_sha256": "38c5bf4288417e27cd952c88fa4926d06448527d52c18a1c4d798f7766019ede",
+    "rebuilt_sha256": "21083d1fa775720dcab833c1dd1c2f81fcb9ae0fbedb2f37c3837433ff767ab6",
     "cause": "course-identity — same length (63,626 bytes), content differs; first difference at byte 5,132"
    },
    "course/n4/topic-36-revisao/lesson-03.md": {
@@ -1736,11 +1740,11 @@
     "cause": "course-identity — rebuilt 8,982 bytes vs committed 9,300; first difference at byte 5,313"
    },
    "course/n4/topic-36-revisao/topic.json": {
-    "rebuilt_sha256": "4a53206dee1dae8276ee2c24d3ea8b4092c19f6f34da2facd385845b451da052",
+    "rebuilt_sha256": "d42d902a636815df357d4e73a88d91602103b555635eeaff550a667a8b86284f",
     "cause": "course-identity — rebuilt 2,020 bytes vs committed 2,044; first difference at byte 91"
    },
    "course/n4/topic-37-kanji-exame/lesson-01.json": {
-    "rebuilt_sha256": "3f5dd3d07443004de1b8ac65bef74a8919105590c00d30290ca664dfbcf9453c",
+    "rebuilt_sha256": "f909f21c3be9a05d6b5645445389503ba28888f8da4c98b00b7f643804285114",
     "cause": "course-identity — rebuilt 52,369 bytes vs committed 52,509; first difference at byte 372"
    },
    "course/n4/topic-37-kanji-exame/lesson-01.md": {
@@ -1748,7 +1752,7 @@
     "cause": "course-identity — same length (1,334 bytes), content differs; first difference at byte 190"
    },
    "course/n4/topic-37-kanji-exame/lesson-02.json": {
-    "rebuilt_sha256": "a1a58f57e1a2733a39143e06b52eb237852e76aabaaa05b6d11f2f816c2e06ab",
+    "rebuilt_sha256": "4e5a834ba0e9c268d19fae1e76154fb7047d7969a11d1c23e553131f3307efcd",
     "cause": "course-identity — rebuilt 52,409 bytes vs committed 52,669; first difference at byte 371"
    },
    "course/n4/topic-37-kanji-exame/lesson-02.md": {
@@ -1756,7 +1760,7 @@
     "cause": "course-identity — same length (1,334 bytes), content differs; first difference at byte 189"
    },
    "course/n4/topic-37-kanji-exame/lesson-03.json": {
-    "rebuilt_sha256": "eb3eb22c87352b06e028e975ec084fd5a41e013611e514b4055d688e9258b257",
+    "rebuilt_sha256": "4661c1abe5e6385761c313da6e7a646fecd8be0871b3cbc1dc9e844784daf79c",
     "cause": "course-identity — rebuilt 52,449 bytes vs committed 52,829; first difference at byte 371"
    },
    "course/n4/topic-37-kanji-exame/lesson-03.md": {
@@ -1764,7 +1768,7 @@
     "cause": "course-identity — same length (1,334 bytes), content differs; first difference at byte 189"
    },
    "course/n4/topic-37-kanji-exame/lesson-04.json": {
-    "rebuilt_sha256": "d0e3df1043ca126cab0f050b8f61bfe7ce39b819a044e486d979624d81cce6e6",
+    "rebuilt_sha256": "22ad3b6b0c13ab7a36d9d92ad62ad5545bd512cf0886163c1fef6a13786f5036",
     "cause": "course-identity — rebuilt 52,489 bytes vs committed 52,989; first difference at byte 371"
    },
    "course/n4/topic-37-kanji-exame/lesson-04.md": {
@@ -1772,7 +1776,7 @@
     "cause": "course-identity — same length (1,334 bytes), content differs; first difference at byte 189"
    },
    "course/n4/topic-37-kanji-exame/lesson-05.json": {
-    "rebuilt_sha256": "f7a7dee52b1c4b2c78be6706e4d8379230b0f9786fcfd55bf9b3f3c5e46297c1",
+    "rebuilt_sha256": "615fbed36beae63e11d592915a5a7d93b1e289c869cfd88ebb830b00f77ca103",
     "cause": "course-identity — rebuilt 52,489 bytes vs committed 51,676; first difference at byte 371"
    },
    "course/n4/topic-37-kanji-exame/lesson-05.md": {
@@ -1780,7 +1784,7 @@
     "cause": "course-identity — rebuilt 1,334 bytes vs committed 1,193; first difference at byte 189"
    },
    "course/n4/topic-37-kanji-exame/lesson-06.json": {
-    "rebuilt_sha256": "f385bde2735525a150094eb5279e5aeacf67246e2090ad376115d6f4ce75fc11",
+    "rebuilt_sha256": "da7160fd0234f645b1ced33ebea6f060867adb79e8243eaa9cf1118a4ea46112",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-06.md": {
@@ -1788,7 +1792,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-07.json": {
-    "rebuilt_sha256": "14fe5d88749ddfb894d86a5fcdc8ed8ec259c19b83f5f93637f4c8456601ac5c",
+    "rebuilt_sha256": "7a9629ecc6a9da03435cd0dc7fe62931fc141da744cc52c549f0500bfe3b5849",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-07.md": {
@@ -1796,7 +1800,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-08.json": {
-    "rebuilt_sha256": "058c5f326ad4c6791d5144a836771f56c727bb1e8f53752e007257a0aeb6113a",
+    "rebuilt_sha256": "d0d0beca8e5b44b6ab5e749bd638cb63f0295ec97c5563dcaf982fef26d1a461",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-08.md": {
@@ -1804,7 +1808,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-09.json": {
-    "rebuilt_sha256": "6f6239eaaae8c3a5c0fd21071d894f3627ef971b96b208f0d9cc4de9b6c29293",
+    "rebuilt_sha256": "3d27e224c44298f7a0d1a5b99adb0ecd7fd38ae13d65d9a9fabf39664b1c0860",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-09.md": {
@@ -1812,7 +1816,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-10.json": {
-    "rebuilt_sha256": "bccd27578b5fb1470703387668f1fa67be102b090500fa273a2e188248516145",
+    "rebuilt_sha256": "43dfbfda21cc8182634db7dae3b905245227bef0de3ae26d794479f12ff6c915",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-10.md": {
@@ -1820,7 +1824,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-11.json": {
-    "rebuilt_sha256": "1b441ec72d52985c14ed44c60969054d2c94acadb15f932c1bbb369029d0bfca",
+    "rebuilt_sha256": "dbe24c61c5aa43e1e0e81413eda471f769362e2c5ac1f101dd62f117188b3db8",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-11.md": {
@@ -1828,7 +1832,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-12.json": {
-    "rebuilt_sha256": "65439f7b4538fdd911a469e1a164826188dbe71c34ff9f1bb5332fdf11298152",
+    "rebuilt_sha256": "83eb5d47e2618a5384a65e473b252fa4fc7710895ffaa36a08251523a3afc58c",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-12.md": {
@@ -1836,7 +1840,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-13.json": {
-    "rebuilt_sha256": "a9fc7863fa435ff089f0b661114d37936326daa200d6bf0ec13464507e272827",
+    "rebuilt_sha256": "f40de21a27a3951e2e565442fb814ff9e69e5c9790bb3bb8f70b51d0b48eaf4c",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-13.md": {
@@ -1844,7 +1848,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-14.json": {
-    "rebuilt_sha256": "92001c4f5fec5c6a176f805f029c62e14bfdb7bc83884708f8f4d65190b81a80",
+    "rebuilt_sha256": "9960ee6845cc32af636ea0d87b71fd260e63316ce2c6a4f0aae721351deca0a6",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-14.md": {
@@ -1852,7 +1856,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-15.json": {
-    "rebuilt_sha256": "2a2bead5fea3482feffede0ca50c618ba7bf2559aa64de571d425429a11bc5b6",
+    "rebuilt_sha256": "573e536295e2600fea541de3a64537fe5e99a0082b95ca4729e4b62772068265",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-15.md": {
@@ -1860,7 +1864,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-16.json": {
-    "rebuilt_sha256": "5074f917474e86f0a1530ae36d155da137a3281806123ea26cd8d7ef63729203",
+    "rebuilt_sha256": "cf1c6c44c0ea6becdfd7a9e0dea30f8965b13f453d837594f1ed316024a62f5e",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-16.md": {
@@ -1868,7 +1872,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-17.json": {
-    "rebuilt_sha256": "9f3bbc17f83e451d443678038c327a61bef9af8925336c9ee87d482842883990",
+    "rebuilt_sha256": "77864d677514992aa8c81349402d429cf36f8d53763d5f0daf48367a1b53ceb8",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-17.md": {
@@ -1876,7 +1880,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-18.json": {
-    "rebuilt_sha256": "c3fed265f3f53e141195e797e15de954512d580fc72c25b8f86849672ed3893e",
+    "rebuilt_sha256": "9ab88d1179821cfb7da8512817c9addadb382e33c640549a6eb2a6018ec2cd66",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-18.md": {
@@ -1884,7 +1888,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-19.json": {
-    "rebuilt_sha256": "6675bb64b9e140b2b0457049797943c531d3bb1e7f15013e53ecf18b82f5284f",
+    "rebuilt_sha256": "3739babd91a380eec5e4598328a90819779e2bec5d856f3cc298ffca8f9d1857",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-19.md": {
@@ -1892,7 +1896,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-20.json": {
-    "rebuilt_sha256": "8247a52832a1f04d9cde59876fdb41b933a47c381d68113a4344aa831f82c658",
+    "rebuilt_sha256": "b32513c26f13e79cd1c8790aa6a6dc8f0a4da9f12c322ff981468f98427e1fe3",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-20.md": {
@@ -1900,7 +1904,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-21.json": {
-    "rebuilt_sha256": "68fe7e81eaf2df45ce4ba6a164e13194ec9849d2255bfc1027901585afb1ff1b",
+    "rebuilt_sha256": "fa03769fc795e94add754f4369a15aca350fe97d0e270330cb5c2bcdc4fe6b6b",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-21.md": {
@@ -1908,7 +1912,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-22.json": {
-    "rebuilt_sha256": "5dc6d82db1162f5df646aecf9db2cdc0a5ad35fd7aca53727430b1c65edfdf3d",
+    "rebuilt_sha256": "d1eb4478c1b77f71628eeff97034df7e09359c6e74b565a6659345bbdf1fdb31",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-22.md": {
@@ -1916,7 +1920,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-23.json": {
-    "rebuilt_sha256": "6f7511d78a9b84d3df6c4f0b9f1693572acf342fa0ebecc87a89d4e20cdecbcd",
+    "rebuilt_sha256": "92f0c33dc66679edf77a85e93306b1b37eb93e8f1114be6a1da299f65f49be1c",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/lesson-23.md": {
@@ -1924,15 +1928,15 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n4/topic-37-kanji-exame/topic.json": {
-    "rebuilt_sha256": "b94073c5b1124eb75e93b8f8f04834eb6a122f4d50200ff00d356446710a5e8f",
+    "rebuilt_sha256": "c1233df52c6becab28991bb68912e74482d6d47beeda64713d040fad372498f0",
     "cause": "course-identity — rebuilt 23,187 bytes vs committed 5,073; first difference at byte 613"
    },
    "course/n5/INDEX.md": {
-    "rebuilt_sha256": "a3aa515c026b81b5a6ad49ff168bcc8c71d2601d1b280b18e9ed769eeda33717",
+    "rebuilt_sha256": "d315091a9ab875e909fa40df06230e178d7dc179eab6ecdf26740d7b4166d6e4",
     "cause": "rollup — rebuilt 4,922 bytes vs committed 5,772; first difference at byte 21"
    },
    "course/n5/course.json": {
-    "rebuilt_sha256": "8ebf4efdce330ae8895cfb4cadb8fb1c47a378325ce1b67c9c3998c3ff45d288",
+    "rebuilt_sha256": "9b30d34222b41856a21e07c701df5ce366ceebcc940a42c1fe2a77aebb51eec7",
     "cause": "rollup — rebuilt 4,778 bytes vs committed 5,267; first difference at byte 82"
    },
    "course/n5/topic-07-desu-wa/lesson-04.md": {
@@ -1944,71 +1948,39 @@
     "cause": "course-identity — rebuilt 5,590 bytes vs committed 5,623; first difference at byte 3,426"
    },
    "course/n5/topic-07-desu-wa/topic.json": {
-    "rebuilt_sha256": "5b7b3a53ae68f788071be1bbdd70996bbc4fdefb2e4d6d82d3433958d61efb90",
+    "rebuilt_sha256": "2e74a60403a03fea86367846d4a7ddacb2f9062903a3d2cca47581dddfc0879c",
     "cause": "course-identity — rebuilt 8,394 bytes vs committed 8,453; first difference at byte 90"
-   },
-   "course/n5/topic-08-perguntas/lesson-01.json": {
-    "rebuilt_sha256": "2132dacdb735ed18500127f82cc66386f0640b408b5deaf3b54b5e99e6e77417",
-    "cause": "course-identity — same length (20,849 bytes), content differs; first difference at byte 1,180"
-   },
-   "course/n5/topic-08-perguntas/lesson-02.json": {
-    "rebuilt_sha256": "0f08dc0fcefa60c2fe2070a81e96a93e5297a79b732d001ee8d32ae5618d6dec",
-    "cause": "course-identity — same length (18,220 bytes), content differs; first difference at byte 7,997"
-   },
-   "course/n5/topic-08-perguntas/lesson-03.json": {
-    "rebuilt_sha256": "d5db45c32b07e92b959eeeb5e1f91eb9eee883232ede72a4ad381b9517a86b9c",
-    "cause": "course-identity — same length (18,735 bytes), content differs; first difference at byte 7,527"
    },
    "course/n5/topic-08-perguntas/lesson-03.md": {
     "rebuilt_sha256": "7e582624fea8ec00b9d39b2a2509eed3c3d1ed6a6de82364f4a8e642b37642c5",
     "cause": "course-identity — rebuilt 6,072 bytes vs committed 6,048; first difference at byte 3,902"
    },
-   "course/n5/topic-08-perguntas/lesson-04.json": {
-    "rebuilt_sha256": "f05187f88c60cf452329c05b38fcda5bbc4959f25fdb4a726ccfeaa71efb840e",
-    "cause": "course-identity — same length (20,745 bytes), content differs; first difference at byte 8,244"
-   },
    "course/n5/topic-08-perguntas/lesson-04.md": {
     "rebuilt_sha256": "7b6c625db0cea5bc80ea321269a8555aad48a34184535f27be74281f09b78bae",
     "cause": "course-identity — rebuilt 6,467 bytes vs committed 6,509; first difference at byte 4,205"
    },
-   "course/n5/topic-08-perguntas/lesson-05.json": {
-    "rebuilt_sha256": "bbd3a8a44a9ee8b184b69a98d4c8a2c7ff135599b00285dc0e224c5de709fc3c",
-    "cause": "course-identity — same length (19,702 bytes), content differs; first difference at byte 7,510"
-   },
    "course/n5/topic-08-perguntas/lesson-05.md": {
     "rebuilt_sha256": "61d6c02d2496bba14cf353bcb88e5c108a9002b4d94df5f77a0ad5d4cb7101f4",
     "cause": "course-identity — rebuilt 6,360 bytes vs committed 6,410; first difference at byte 4,189"
-   },
-   "course/n5/topic-08-perguntas/lesson-06.json": {
-    "rebuilt_sha256": "88f3d634a7cbfd3f59e1184ecce129101a78f71f0883777c6a9a89fb1fd3d4a8",
-    "cause": "course-identity — same length (17,762 bytes), content differs; first difference at byte 5,567"
    },
    "course/n5/topic-08-perguntas/lesson-06.md": {
     "rebuilt_sha256": "37af81e1ebdf416d3baca52d48eeeb51134a5c3f0c5d05aff13a1c55a83b2fa3",
     "cause": "course-identity — rebuilt 6,430 bytes vs committed 6,495; first difference at byte 4,165"
    },
    "course/n5/topic-08-perguntas/topic.json": {
-    "rebuilt_sha256": "f966ea29a9e63ba253e5e6fbddecef044cfb3c89e934235085c91bd2bc091990",
+    "rebuilt_sha256": "278e6119d7978fe90087df26472dc1e65f136e42ab343b759b0a81c19d5c524a",
     "cause": "course-identity — rebuilt 9,079 bytes vs committed 9,110; first difference at byte 92"
-   },
-   "course/n5/topic-09-numeros-tempo/lesson-01.json": {
-    "rebuilt_sha256": "47692b42291fbf16573ca19efd568da4ffda026b90fb0a8b4b42f2d1c58a5317",
-    "cause": "course-identity — same length (18,083 bytes), content differs; first difference at byte 6,856"
-   },
-   "course/n5/topic-09-numeros-tempo/lesson-02.json": {
-    "rebuilt_sha256": "2609a19c3f5397f96c9b3b2ed5a6d0c954fd7e4644ee4a9649f189d0466790d9",
-    "cause": "course-identity — same length (19,378 bytes), content differs; first difference at byte 5,672"
    },
    "course/n5/topic-09-numeros-tempo/lesson-02.md": {
     "rebuilt_sha256": "afa09bc378483064d06654853651ccf08c5816a4ba766c715672c40f8f5c149b",
     "cause": "course-identity — rebuilt 7,105 bytes vs committed 7,083; first difference at byte 4,678"
    },
    "course/n5/topic-09-numeros-tempo/lesson-03.json": {
-    "rebuilt_sha256": "6973c9771422eb3510d24e449898f1b773fb47ad1b57288e5ce89cdf8345efaa",
+    "rebuilt_sha256": "d8504597a999f6ccf40196c5187fac057cc7904916331b41f1eacc74dc7ec11d",
     "cause": "course-identity — same length (19,068 bytes), content differs; first difference at byte 1,202"
    },
    "course/n5/topic-09-numeros-tempo/lesson-04.json": {
-    "rebuilt_sha256": "f1bac06ef65d5e300ebd870d2e4a590d60c4c88ab2569f80ae28c4bcbe213cb9",
+    "rebuilt_sha256": "73f80b54c4d15ba4830c6b241578a69e4dae93f25852027ecbdf897099db9b8c",
     "cause": "course-identity — same length (19,827 bytes), content differs; first difference at byte 930"
    },
    "course/n5/topic-09-numeros-tempo/lesson-04.md": {
@@ -2016,7 +1988,7 @@
     "cause": "course-identity — rebuilt 6,164 bytes vs committed 6,246; first difference at byte 4,149"
    },
    "course/n5/topic-09-numeros-tempo/lesson-05.json": {
-    "rebuilt_sha256": "03fec732fb1a639692ccde73447ffcc27f8f96069ac49f40590b944c572b7c91",
+    "rebuilt_sha256": "92e655de08eb3c32b4a912421c273b8b45604730b006469f6aac34588a554779",
     "cause": "course-identity — same length (20,514 bytes), content differs; first difference at byte 6,589"
    },
    "course/n5/topic-09-numeros-tempo/lesson-05.md": {
@@ -2024,7 +1996,7 @@
     "cause": "course-identity — rebuilt 6,959 bytes vs committed 6,987; first difference at byte 4,825"
    },
    "course/n5/topic-09-numeros-tempo/lesson-06.json": {
-    "rebuilt_sha256": "628f6a7d05d9c751cda11f1d9d5b7ad88d22f91e707310d01893a88949db3050",
+    "rebuilt_sha256": "29d357f2b4bdb542f24ff2c3d1c8ec55321ede24730eec239510ae2c02b8554a",
     "cause": "course-identity — same length (19,102 bytes), content differs; first difference at byte 6,822"
    },
    "course/n5/topic-09-numeros-tempo/lesson-06.md": {
@@ -2032,7 +2004,7 @@
     "cause": "course-identity — rebuilt 5,493 bytes vs committed 5,547; first difference at byte 3,526"
    },
    "course/n5/topic-09-numeros-tempo/lesson-07.json": {
-    "rebuilt_sha256": "b4e50a6afd84de8ccc89e9e6de2832cfbda7832b77de330f50ae41c6bd7dfc01",
+    "rebuilt_sha256": "d62bcc2a6f3e39063927f0b5dc2a7cfdde19f82843bf88be9cb85cb3b2f83c9b",
     "cause": "course-identity — same length (21,265 bytes), content differs; first difference at byte 7,048"
    },
    "course/n5/topic-09-numeros-tempo/lesson-07.md": {
@@ -2040,35 +2012,35 @@
     "cause": "course-identity — rebuilt 6,799 bytes vs committed 6,849; first difference at byte 4,348"
    },
    "course/n5/topic-09-numeros-tempo/lesson-08.json": {
-    "rebuilt_sha256": "148c4f653b92628ac4f1f5f86bbc62eb55ee3fe345a68b5319fd7834115c05a2",
+    "rebuilt_sha256": "3a40c1c8c62f7a05fb6385540b01a4dc5ea4c45811055edd64c14987635d7e1b",
     "cause": "course-identity — same length (18,287 bytes), content differs; first difference at byte 6,284"
    },
    "course/n5/topic-09-numeros-tempo/lesson-09.json": {
-    "rebuilt_sha256": "ccea1c01939c79754782507169430f18c93854c4caee76aee555d1376206b4ea",
+    "rebuilt_sha256": "b2a0a4391c542b5104ba0b07cacaaf1d9a57ff02fc170f62bcd8ed71ceb148c7",
     "cause": "course-identity — same length (21,041 bytes), content differs; first difference at byte 6,952"
    },
    "course/n5/topic-09-numeros-tempo/topic.json": {
-    "rebuilt_sha256": "65f32a585e517e6c1aa97d18ccc46e26533e52c3d129e3feef666923b5ae7c3e",
+    "rebuilt_sha256": "b187323065b8cf0d32bcefa4b58ab713f0f296d4a482f8b6299e7d87ac5d4f75",
     "cause": "course-identity — rebuilt 10,729 bytes vs committed 10,762; first difference at byte 96"
    },
    "course/n5/topic-10-verbos/lesson-01.json": {
-    "rebuilt_sha256": "4409f2f470f5dacb6f2491e15b54e60a1209e3f389a39d7751ee17327ac970de",
+    "rebuilt_sha256": "8f62cc53188489c232a88b5ec7cd812c3573337336349ded77a9b9ae825c878f",
     "cause": "course-identity — same length (26,861 bytes), content differs; first difference at byte 9,820"
    },
    "course/n5/topic-10-verbos/lesson-02.json": {
-    "rebuilt_sha256": "1c0b9f3bfb8623eed5a4c45e8b7f87d66b80bb51e8036632876ca910de40db6c",
+    "rebuilt_sha256": "e89f0e7ee2222bbe76dd9bc455b45ecc4abf7840aa48a2284bf37ccde2ffcaf5",
     "cause": "course-identity — same length (25,034 bytes), content differs; first difference at byte 9,240"
    },
    "course/n5/topic-10-verbos/lesson-03.json": {
-    "rebuilt_sha256": "a1cae05f6c283e9781a2b5d59046ea2a6851748188b5504ef7abc84e3813fe5b",
+    "rebuilt_sha256": "fbdbf6a9957d363d2270d41e9d415484aabd8f3f8fe7b8586719c83fb635cc82",
     "cause": "course-identity — same length (27,357 bytes), content differs; first difference at byte 9,813"
    },
    "course/n5/topic-10-verbos/lesson-03.md": {
-    "rebuilt_sha256": "4e46bcece8b9b83ff67ab8853129e6f274e382126ee9fba33272e9198c8f4b60",
+    "rebuilt_sha256": "a10cedf9731360eafcd713b8ba3060e9feb930ce7158ead35e79d76dd469bf34",
     "cause": "course-identity — rebuilt 7,927 bytes vs committed 8,010; first difference at byte 5,283"
    },
    "course/n5/topic-10-verbos/lesson-04.json": {
-    "rebuilt_sha256": "f87243f1ab64ddf237739190bd60b60c509128601120236845fde294eb092a6b",
+    "rebuilt_sha256": "771488dd35e4f72c42e1bea22768c268f2961930a91a15146d4f8f9da7d8b47d",
     "cause": "course-identity — same length (27,462 bytes), content differs; first difference at byte 8,785"
    },
    "course/n5/topic-10-verbos/lesson-04.md": {
@@ -2076,7 +2048,7 @@
     "cause": "course-identity — rebuilt 7,923 bytes vs committed 7,978; first difference at byte 5,399"
    },
    "course/n5/topic-10-verbos/lesson-05.json": {
-    "rebuilt_sha256": "ae6fd77bfc15f91f1831a28c45a2f591e394c16ecb7fc248c424a7d218d3d479",
+    "rebuilt_sha256": "855339c8109a9fa3a2d129a0b1b13abaecf87cb534e2a734044e1d048af1d889",
     "cause": "course-identity — same length (25,273 bytes), content differs; first difference at byte 6,864"
    },
    "course/n5/topic-10-verbos/lesson-05.md": {
@@ -2084,7 +2056,7 @@
     "cause": "course-identity — rebuilt 8,182 bytes vs committed 8,254; first difference at byte 5,602"
    },
    "course/n5/topic-10-verbos/lesson-06.json": {
-    "rebuilt_sha256": "49e6debe43f453f49ed204f1504f621f3fd9287b2a6f39744d8298e6498eba62",
+    "rebuilt_sha256": "cc677e9658e7f93d4918034e0280f9b512a53475ab30e16c7b99c1c814cc3114",
     "cause": "course-identity — same length (20,357 bytes), content differs; first difference at byte 5,504"
    },
    "course/n5/topic-10-verbos/lesson-06.md": {
@@ -2092,23 +2064,23 @@
     "cause": "course-identity — rebuilt 5,959 bytes vs committed 6,033; first difference at byte 3,775"
    },
    "course/n5/topic-10-verbos/topic.json": {
-    "rebuilt_sha256": "0128f69979f40c34ea0dd21da44b7c5efc6a3260760895606ff850b8af3227ec",
+    "rebuilt_sha256": "9f807307f313daafd148bdbdd6b744dc83f285ee5840656a69459e9484fe132d",
     "cause": "course-identity — rebuilt 10,985 bytes vs committed 11,039; first difference at byte 90"
    },
    "course/n5/topic-11-particulas-lugar/lesson-01.json": {
-    "rebuilt_sha256": "96713bd046439207cc3e7b69dec38927963bcdcea5e6206271be4a2cbb0656b7",
+    "rebuilt_sha256": "051c2faa9024db8dfe4fbe46dcb8ece33d7d982dc1a32c3d98fd0ba926837ae9",
     "cause": "course-identity — same length (26,632 bytes), content differs; first difference at byte 8,048"
    },
    "course/n5/topic-11-particulas-lugar/lesson-02.json": {
-    "rebuilt_sha256": "739b89f02faa24f57e5bc4ee532955499f0a2785c35e4a6ed9706fa692aefd32",
+    "rebuilt_sha256": "2cb7dc1d71a8403785edc779d6c0eb701f030a76b9449b83197011dc7b3e530b",
     "cause": "course-identity — same length (24,326 bytes), content differs; first difference at byte 7,157"
    },
    "course/n5/topic-11-particulas-lugar/lesson-03.json": {
-    "rebuilt_sha256": "2fac9db2ccd99ac4813d7717049f15c5b7637cf6fe971139b8dc32c46714c3ee",
+    "rebuilt_sha256": "a3a319ac6f6c25a4b133e339d01af2d3c4a073693c01ae9b6cc9617dcb56d4d6",
     "cause": "course-identity — same length (25,976 bytes), content differs; first difference at byte 7,019"
    },
    "course/n5/topic-11-particulas-lugar/lesson-04.json": {
-    "rebuilt_sha256": "215b0de613e016eebbcb41633c6a3b600d7f5db07c49e69a03b9620e5bdc92b2",
+    "rebuilt_sha256": "0959f05c5442e65bd5410f4f36b2795ad5acd2f0b2dd2f1febd17ce96d87cadb",
     "cause": "course-identity — same length (27,365 bytes), content differs; first difference at byte 8,121"
    },
    "course/n5/topic-11-particulas-lugar/lesson-04.md": {
@@ -2116,7 +2088,7 @@
     "cause": "course-identity — rebuilt 7,901 bytes vs committed 7,990; first difference at byte 5,093"
    },
    "course/n5/topic-11-particulas-lugar/lesson-05.json": {
-    "rebuilt_sha256": "485ad8e30e958c3eb07a9e7bc0dad6bb1c7ea5cd6e069f92335daa8ed8bc3126",
+    "rebuilt_sha256": "1574610f8dcbbe81da04dfda92f1c31581dc3427dd330121811dfbc79230a33c",
     "cause": "course-identity — same length (27,389 bytes), content differs; first difference at byte 8,231"
    },
    "course/n5/topic-11-particulas-lugar/lesson-05.md": {
@@ -2124,7 +2096,7 @@
     "cause": "course-identity — rebuilt 7,010 bytes vs committed 7,084; first difference at byte 4,276"
    },
    "course/n5/topic-11-particulas-lugar/lesson-06.json": {
-    "rebuilt_sha256": "875a8fdb8795bac04bdc3f0ef0f02381287bba8638a659aba8c8c7d9cf48f937",
+    "rebuilt_sha256": "b1b8ad08c89b4ff067117581b6af09e39d6e00b7dea5cd9f6af5c1acfe1e893f",
     "cause": "course-identity — same length (28,033 bytes), content differs; first difference at byte 7,782"
    },
    "course/n5/topic-11-particulas-lugar/lesson-06.md": {
@@ -2132,15 +2104,15 @@
     "cause": "course-identity — rebuilt 7,700 bytes vs committed 7,783; first difference at byte 4,942"
    },
    "course/n5/topic-11-particulas-lugar/lesson-07.json": {
-    "rebuilt_sha256": "9c1419e65e7bf6bf50982ac0d59d3a431a3784fc4c8323bedc7d2836ef870610",
+    "rebuilt_sha256": "88e4a31478ec6606371e2891f85a34f20a101708b198fb82280b206ce2454d4a",
     "cause": "course-identity — same length (26,024 bytes), content differs; first difference at byte 6,047"
    },
    "course/n5/topic-11-particulas-lugar/lesson-07.md": {
-    "rebuilt_sha256": "10a5de6eeec18494b386093d02329732e7f00d25310ddf7bb72d601dc3ca7081",
+    "rebuilt_sha256": "9e978c6d3f66f6cb49a7e749cfb18df07ec9bbdbaac325f9e76cd31f6c0a0908",
     "cause": "course-identity — rebuilt 7,320 bytes vs committed 7,356; first difference at byte 4,511"
    },
    "course/n5/topic-11-particulas-lugar/lesson-08.json": {
-    "rebuilt_sha256": "d29ff3566ce00895a18aaffb83b88a1d153dfb766a71f263d9a0b3d87cd3332a",
+    "rebuilt_sha256": "6e703371dfc72b59021fa5f990924f33bd06a37e4efa78b1de1ec5e5d1503733",
     "cause": "course-identity — same length (25,749 bytes), content differs; first difference at byte 6,461"
    },
    "course/n5/topic-11-particulas-lugar/lesson-08.md": {
@@ -2148,23 +2120,23 @@
     "cause": "course-identity — rebuilt 6,951 bytes vs committed 7,040; first difference at byte 4,290"
    },
    "course/n5/topic-11-particulas-lugar/topic.json": {
-    "rebuilt_sha256": "f13e4a896c72d00144c957df601b20cb7911270c461b20dd9da17181a68c38e0",
+    "rebuilt_sha256": "618c1129ee17134c673fa939465422574353a279a2c24fc66d58d48c8b6a2491",
     "cause": "course-identity — rebuilt 11,998 bytes vs committed 12,040; first difference at byte 100"
    },
    "course/n5/topic-12-passado/lesson-01.json": {
-    "rebuilt_sha256": "1aba4cfb8e92e17fe045f43ff6131f8893a9664800a6ec084457cb95e0cc3d2d",
+    "rebuilt_sha256": "3bae9846c05ad80c71ddebdc29febc4825dea6719ef1dffb477c00fa8fd3cfa2",
     "cause": "course-identity — same length (28,752 bytes), content differs; first difference at byte 8,456"
    },
    "course/n5/topic-12-passado/lesson-02.json": {
-    "rebuilt_sha256": "541af0693f5d22f666403c6f1d4aab35e2181feec584f23bb6d6e57d491c2ae3",
+    "rebuilt_sha256": "a79d831c7c847456afdeec921cbd5cfa2f42969e163c76fbb4e11b3efb82fea4",
     "cause": "course-identity — same length (29,587 bytes), content differs; first difference at byte 1,638"
    },
    "course/n5/topic-12-passado/lesson-03.json": {
-    "rebuilt_sha256": "768b39a7a89dc93599caf50b999c3f812cbef585e84af4967666ced1678f47cc",
+    "rebuilt_sha256": "63c885918592fa301baca01f73b3cf05a00e9d7b4ffde46a4b5759bcbcd81cad",
     "cause": "course-identity — same length (27,004 bytes), content differs; first difference at byte 7,509"
    },
    "course/n5/topic-12-passado/lesson-04.json": {
-    "rebuilt_sha256": "f2e31143a17dd48596bc359fdd630cdc09f578d14db5cb2d966f214c49237301",
+    "rebuilt_sha256": "c671513e5ad9f2e7880c22f5525491d3bef7e72b79055092426fa530df3dd0f1",
     "cause": "course-identity — same length (28,458 bytes), content differs; first difference at byte 8,083"
    },
    "course/n5/topic-12-passado/lesson-04.md": {
@@ -2172,31 +2144,31 @@
     "cause": "course-identity — rebuilt 6,956 bytes vs committed 7,011; first difference at byte 4,569"
    },
    "course/n5/topic-12-passado/lesson-05.json": {
-    "rebuilt_sha256": "3eee5049f822e7d823e4870996c20c4b5196231680768b3dbaacf2d03083e454",
+    "rebuilt_sha256": "8a3c4e3982c0a0bff0e2236465a1880a38f3b0f6144139acd58921f6a74f8007",
     "cause": "course-identity — same length (29,248 bytes), content differs; first difference at byte 7,470"
    },
    "course/n5/topic-12-passado/lesson-05.md": {
-    "rebuilt_sha256": "b4ce85bf6f7e120ca524ad228018a8217229f98a93f100dd651e89f101fe8f76",
+    "rebuilt_sha256": "9f934a5c814c5ee8a8db10310d05842a9560860affe45a1efbacbfafee688a5c",
     "cause": "course-identity — rebuilt 8,321 bytes vs committed 8,395; first difference at byte 5,479"
    },
    "course/n5/topic-12-passado/topic.json": {
-    "rebuilt_sha256": "f4a4196a39dc532ebdb2503c699d7a391c4158fa6b2fcf36573a94dc0ec91f9e",
+    "rebuilt_sha256": "4d778523308cbac00631ddcb7725cd72039305df9d28db3e05178aa6f67d08f0",
     "cause": "course-identity — rebuilt 8,712 bytes vs committed 8,739; first difference at byte 91"
    },
    "course/n5/topic-13-adjetivos/lesson-01.json": {
-    "rebuilt_sha256": "e33b36739c7eac122fa8d1843986343eea20b7eaa382bf17afeed82b97ed2a87",
+    "rebuilt_sha256": "9052075cb66cb133003c5dde639c8b4c3369f7a73c114aa3e9ee687dda96d4db",
     "cause": "course-identity — same length (32,557 bytes), content differs; first difference at byte 9,601"
    },
    "course/n5/topic-13-adjetivos/lesson-02.json": {
-    "rebuilt_sha256": "4765b17468d072e4bad0b7f4adec48dcbe68c7ec2557a7eccb06d5da7c5c9817",
+    "rebuilt_sha256": "80e52be4cd6b8a5a5ae6f7f7e7c56130783b87287e19a91c98c6fd702caf8567",
     "cause": "course-identity — same length (31,878 bytes), content differs; first difference at byte 8,887"
    },
    "course/n5/topic-13-adjetivos/lesson-03.json": {
-    "rebuilt_sha256": "5b8a512f146cb922135628d079bbc51395678c6c84fdfa82cdba3d3f96820759",
+    "rebuilt_sha256": "05f645e9b5427e9d50eff7eb336fa52b6991ef0923ea6659e2778ff904438b19",
     "cause": "course-identity — same length (30,868 bytes), content differs; first difference at byte 7,635"
    },
    "course/n5/topic-13-adjetivos/lesson-04.json": {
-    "rebuilt_sha256": "7c46959a968cc65a7e0b69a0e111c733f723ecdaa7941760e1694407cadfd715",
+    "rebuilt_sha256": "4d83ccd4dcb2b3a1367999690e12e0b7cf7b926b9f54ec09dd87a69869321612",
     "cause": "course-identity — same length (30,270 bytes), content differs; first difference at byte 7,316"
    },
    "course/n5/topic-13-adjetivos/lesson-04.md": {
@@ -2204,7 +2176,7 @@
     "cause": "course-identity — rebuilt 7,845 bytes vs committed 7,936; first difference at byte 5,164"
    },
    "course/n5/topic-13-adjetivos/lesson-05.json": {
-    "rebuilt_sha256": "3c516f31cb0a0b5bd6fa44e82ccf867a9dc4881f2f367c44dda6130096e61ebc",
+    "rebuilt_sha256": "ee0d6f72b5014d406d735fca3f240f8984d48b10882cad77d72690fa9464d563",
     "cause": "course-identity — same length (35,286 bytes), content differs; first difference at byte 9,926"
    },
    "course/n5/topic-13-adjetivos/lesson-05.md": {
@@ -2212,7 +2184,7 @@
     "cause": "course-identity — rebuilt 8,280 bytes vs committed 8,370; first difference at byte 5,665"
    },
    "course/n5/topic-13-adjetivos/lesson-06.json": {
-    "rebuilt_sha256": "a17539b0df96926545798de0808108a2ff62750bfe5e30af62cb13eb5981d884",
+    "rebuilt_sha256": "7e9d547bd09f2ed07ec52e3bfb63e55b83036f48a1ffec6a47da4e043ebbdedc",
     "cause": "course-identity — same length (32,301 bytes), content differs; first difference at byte 7,893"
    },
    "course/n5/topic-13-adjetivos/lesson-06.md": {
@@ -2220,7 +2192,7 @@
     "cause": "course-identity — rebuilt 8,090 bytes vs committed 8,169; first difference at byte 3,235"
    },
    "course/n5/topic-13-adjetivos/lesson-07.json": {
-    "rebuilt_sha256": "1a7eab020872d6225969dd86f02abc4aff2f71478699f44f5397490ce11a0951",
+    "rebuilt_sha256": "8322e7a3a9abbb39a055d5ed12616372a8ab80a7e0f0de7ebb133f2e41b6f33d",
     "cause": "course-identity — same length (30,383 bytes), content differs; first difference at byte 5,908"
    },
    "course/n5/topic-13-adjetivos/lesson-07.md": {
@@ -2228,7 +2200,7 @@
     "cause": "course-identity — rebuilt 8,238 bytes vs committed 8,373; first difference at byte 5,338"
    },
    "course/n5/topic-13-adjetivos/lesson-08.json": {
-    "rebuilt_sha256": "6bfec268728c149400279991778092294d7ee8ba165fecb2c03579e4d24a33b3",
+    "rebuilt_sha256": "b3ead162321fdf2035eeb33cda03b1a37d6a0ce615e0349c358ca2c5d060a6b5",
     "cause": "course-identity — same length (25,527 bytes), content differs; first difference at byte 5,123"
    },
    "course/n5/topic-13-adjetivos/lesson-08.md": {
@@ -2236,23 +2208,23 @@
     "cause": "course-identity — rebuilt 5,677 bytes vs committed 5,800; first difference at byte 3,292"
    },
    "course/n5/topic-13-adjetivos/topic.json": {
-    "rebuilt_sha256": "425e1c7341303bd13bec62f589bc7d098e3b5b073dd563889208b0e609ef9004",
+    "rebuilt_sha256": "7a44e8e823bef788864d5ca3dda3ef40beca6dc0b3598ef31db3717bc1f8bf48",
     "cause": "course-identity — rebuilt 13,448 bytes vs committed 13,472; first difference at byte 93"
    },
    "course/n5/topic-14-comparacoes/lesson-01.json": {
-    "rebuilt_sha256": "94cadc3da4b8810d8aa072ec8510bab9f60fe3bd6108193a0715960e76829452",
+    "rebuilt_sha256": "4f7a4d291a41cb948ed12b743586e34f848cc4817afe741194dbbf3f1f32f1f2",
     "cause": "course-identity — same length (36,726 bytes), content differs; first difference at byte 9,943"
    },
    "course/n5/topic-14-comparacoes/lesson-02.json": {
-    "rebuilt_sha256": "4107d802d0c310fe8762b8ba4a92a43a006423a743c8d8dc027be92593b7dc1c",
+    "rebuilt_sha256": "e69070061893e0c225acbd73e4ffbcdabc3fb09c140cdcb0fde708a9781d5bdd",
     "cause": "course-identity — same length (34,446 bytes), content differs; first difference at byte 1,386"
    },
    "course/n5/topic-14-comparacoes/lesson-03.json": {
-    "rebuilt_sha256": "6946f48578c2b11978653ba352715a7720608cf3ae30e48b4a1d9d825b675662",
+    "rebuilt_sha256": "fe92397916d6fb93c6ccca6cf4437342c897e7bc2032541b8f876e5be2ddaec8",
     "cause": "course-identity — same length (32,751 bytes), content differs; first difference at byte 7,876"
    },
    "course/n5/topic-14-comparacoes/lesson-04.json": {
-    "rebuilt_sha256": "71ce8cef92694d92a4469f5c433eae854db56bfa7a169f6567b7db1c0a82de39",
+    "rebuilt_sha256": "245a68d4ef1528d48d1d6918688a6fd56622725f476d903ec84f3c204baa98c6",
     "cause": "course-identity — same length (33,821 bytes), content differs; first difference at byte 8,177"
    },
    "course/n5/topic-14-comparacoes/lesson-04.md": {
@@ -2260,7 +2232,7 @@
     "cause": "course-identity — rebuilt 7,743 bytes vs committed 7,848; first difference at byte 5,340"
    },
    "course/n5/topic-14-comparacoes/lesson-05.json": {
-    "rebuilt_sha256": "cbc5ea11c4bf60fcf417f18b417f957761e9968cd48d908874a9fb7cdb5cadf6",
+    "rebuilt_sha256": "e757d5623fe5eb0f96bd4d1b72ddc03188ff12523d5263bc46517f54fcb929a7",
     "cause": "course-identity — same length (31,586 bytes), content differs; first difference at byte 6,616"
    },
    "course/n5/topic-14-comparacoes/lesson-05.md": {
@@ -2268,7 +2240,7 @@
     "cause": "course-identity — rebuilt 7,395 bytes vs committed 7,469; first difference at byte 4,771"
    },
    "course/n5/topic-14-comparacoes/lesson-06.json": {
-    "rebuilt_sha256": "5569f8b299705a038810ee0e6de311e4ef59d1e1f37e12087113a1e91fbc0147",
+    "rebuilt_sha256": "625526cee5df822a9ddd9b613cd2126fa4a00e861be99a75338c63d336a4c932",
     "cause": "course-identity — same length (29,584 bytes), content differs; first difference at byte 5,312"
    },
    "course/n5/topic-14-comparacoes/lesson-06.md": {
@@ -2276,19 +2248,19 @@
     "cause": "course-identity — rebuilt 6,904 bytes vs committed 6,976; first difference at byte 4,254"
    },
    "course/n5/topic-14-comparacoes/topic.json": {
-    "rebuilt_sha256": "ca8b739850afe89f4d14fa4254a14bacfb55bedb493ca3126cd287c40588ca5b",
+    "rebuilt_sha256": "6ce303e253e7846314c8a998ab4bc5f2c666bef618e46b9b8eceb4964a3d3ca8",
     "cause": "course-identity — rebuilt 9,743 bytes vs committed 9,790; first difference at byte 95"
    },
    "course/n5/topic-15-te-form/lesson-01.json": {
-    "rebuilt_sha256": "d87034f6060729ffa92465480b3d14a657828195a65e5b44d686faac8552428d",
+    "rebuilt_sha256": "8223777f1ddee7c79713fc5a516de4b26f9daca2b5d6b613de9739a9ff453281",
     "cause": "course-identity — same length (26,271 bytes), content differs; first difference at byte 5,351"
    },
    "course/n5/topic-15-te-form/lesson-02.json": {
-    "rebuilt_sha256": "55d6c3360a80e7343a347d1fcc3c13d7dce941252f8f380fed5f6a7047ee520b",
+    "rebuilt_sha256": "5fa90c07e6fd6c02da3af68687751d19d3fe8273477b75633f7e37020f7b59ab",
     "cause": "course-identity — same length (30,368 bytes), content differs; first difference at byte 7,268"
    },
    "course/n5/topic-15-te-form/lesson-03.json": {
-    "rebuilt_sha256": "71ff37be3ba6702ed2c7f0c2a0298528c947aa6a9d49c480f4961f5df5dbc636",
+    "rebuilt_sha256": "fc904c8029e7f9001aadddfe36f27bae1e02ff7452094fb466e9a7f2fd82c2da",
     "cause": "course-identity — same length (32,917 bytes), content differs; first difference at byte 7,785"
    },
    "course/n5/topic-15-te-form/lesson-03.md": {
@@ -2296,7 +2268,7 @@
     "cause": "course-identity — rebuilt 7,028 bytes vs committed 7,137; first difference at byte 4,794"
    },
    "course/n5/topic-15-te-form/lesson-04.json": {
-    "rebuilt_sha256": "254da74f777393237a9a143dd11fa23741562648c8735a50d2cb74438a084c96",
+    "rebuilt_sha256": "bba4f89c61ceac2733b8c9587913b4ba0ed93077db064914de7bf01edde14e62",
     "cause": "course-identity — same length (32,085 bytes), content differs; first difference at byte 7,926"
    },
    "course/n5/topic-15-te-form/lesson-04.md": {
@@ -2304,15 +2276,15 @@
     "cause": "course-identity — rebuilt 6,093 bytes vs committed 6,184; first difference at byte 3,804"
    },
    "course/n5/topic-15-te-form/lesson-05.json": {
-    "rebuilt_sha256": "8f934b06451151f9ff8bc17290c251578e28d5f956d098ead2e976006bdeb375",
+    "rebuilt_sha256": "591ffb596b353f4f8e0522ea47f736f8b1424b4297beda06f0221f0b7418857b",
     "cause": "course-identity — same length (32,637 bytes), content differs; first difference at byte 7,951"
    },
    "course/n5/topic-15-te-form/lesson-05.md": {
-    "rebuilt_sha256": "4d865ee51bca4bac01faced332e95ede085eddbc24f1d3124987413a0a83df11",
+    "rebuilt_sha256": "18053e1a4ca84f92d773925107f6e11114dcda2d9337128c87420d303cecb16e",
     "cause": "course-identity — rebuilt 6,803 bytes vs committed 6,896; first difference at byte 4,522"
    },
    "course/n5/topic-15-te-form/lesson-06.json": {
-    "rebuilt_sha256": "4f5f4dff9976635558c4488808b7809f16251515ba05d5928f1b33859cec53ea",
+    "rebuilt_sha256": "44b80b79bc1a5f7f4b8f81a0dd5e9c46a452699947a347f674ebdf3351a6f2dc",
     "cause": "course-identity — same length (34,794 bytes), content differs; first difference at byte 7,648"
    },
    "course/n5/topic-15-te-form/lesson-06.md": {
@@ -2320,7 +2292,7 @@
     "cause": "course-identity — rebuilt 7,566 bytes vs committed 7,690; first difference at byte 5,211"
    },
    "course/n5/topic-15-te-form/lesson-07.json": {
-    "rebuilt_sha256": "d512f729946cbda8636f4fde4a759a3c12d25a9d52c35dcfcd2d4488c491c954",
+    "rebuilt_sha256": "69b6d0a9500201f1874fa4b8a459ad690b9a22aaf6c4dece0cee749114a98211",
     "cause": "course-identity — same length (31,707 bytes), content differs; first difference at byte 7,410"
    },
    "course/n5/topic-15-te-form/lesson-07.md": {
@@ -2328,7 +2300,7 @@
     "cause": "course-identity — rebuilt 5,712 bytes vs committed 5,876; first difference at byte 3,644"
    },
    "course/n5/topic-15-te-form/lesson-08.json": {
-    "rebuilt_sha256": "5b409bffbb90d51e4b5e522c16c40f9ada022d67ccd8281bffe0a5df0d5b271b",
+    "rebuilt_sha256": "e438b0872661113d7e6531181e9eec9d007b4feb8d8a8a85a8cac5141d728565",
     "cause": "course-identity — same length (33,000 bytes), content differs; first difference at byte 7,376"
    },
    "course/n5/topic-15-te-form/lesson-08.md": {
@@ -2336,23 +2308,23 @@
     "cause": "course-identity — rebuilt 6,687 bytes vs committed 6,822; first difference at byte 4,254"
    },
    "course/n5/topic-15-te-form/topic.json": {
-    "rebuilt_sha256": "5c205a20fc7bcdb3ec58a1499db3f9055b9d26e7ab97fd58b12335ab5f880f88",
+    "rebuilt_sha256": "ca980f108cf9d5eb1b926934a86d4d68e23b170d5e4262fd46c4fe5768e16c32",
     "cause": "course-identity — rebuilt 12,309 bytes vs committed 12,344; first difference at byte 91"
    },
    "course/n5/topic-16-convites/lesson-01.json": {
-    "rebuilt_sha256": "7397ccc8d77058f572bbbe651b0cc9e2d8066170570145261ffc0a5c286bf607",
+    "rebuilt_sha256": "4d156d346062d48c238b279a431adc441c963692fa39ac6e60744f52127b70ff",
     "cause": "course-identity — same length (34,416 bytes), content differs; first difference at byte 7,740"
    },
    "course/n5/topic-16-convites/lesson-02.json": {
-    "rebuilt_sha256": "edc22681061ce7a48b734b1205e81057b2a0786bf0489353009d34953396237b",
+    "rebuilt_sha256": "14125ae14e7728c7883371ef14b302f8d2e76d90ac154ac65276a88239b0674c",
     "cause": "course-identity — same length (37,116 bytes), content differs; first difference at byte 7,533"
    },
    "course/n5/topic-16-convites/lesson-03.json": {
-    "rebuilt_sha256": "022d7cec352ad75f307813ceb0b4d1cb6584e87e58357edf34135a9aed38c5b4",
+    "rebuilt_sha256": "6b37d81a177ece0072f91e80c7f330ca1d807199b9ff791bba764f0ae3e86bac",
     "cause": "course-identity — same length (33,515 bytes), content differs; first difference at byte 7,386"
    },
    "course/n5/topic-16-convites/lesson-04.json": {
-    "rebuilt_sha256": "45085d5a1a273bdf6b046afcf2f4b29a456bda0915f50d87c046d1c010799dad",
+    "rebuilt_sha256": "f928ca673243433e4483fc691cc53943ec3fc8e0cb6570d3760a43bbf68a91dd",
     "cause": "course-identity — same length (35,681 bytes), content differs; first difference at byte 7,612"
    },
    "course/n5/topic-16-convites/lesson-04.md": {
@@ -2360,7 +2332,7 @@
     "cause": "course-identity — rebuilt 7,617 bytes vs committed 7,727; first difference at byte 4,999"
    },
    "course/n5/topic-16-convites/lesson-05.json": {
-    "rebuilt_sha256": "8c0896fffdd32b1a8672787a7986e7767cc51034258fc33696597a731a4ba6d8",
+    "rebuilt_sha256": "5b0452e29431b637bd4f3ce2e38a7570ee8927cc6c644253ad01da0e4a7f24f3",
     "cause": "course-identity — same length (33,522 bytes), content differs; first difference at byte 7,369"
    },
    "course/n5/topic-16-convites/lesson-05.md": {
@@ -2368,7 +2340,7 @@
     "cause": "course-identity — rebuilt 6,182 bytes vs committed 6,290; first difference at byte 3,909"
    },
    "course/n5/topic-16-convites/lesson-06.json": {
-    "rebuilt_sha256": "4db2f207d5829672d8a51ba487881bbf4cd4f2f0f4a600c8870d54f573449bfe",
+    "rebuilt_sha256": "841a0c40137701aaa5433ff159266cb06db7d713f7fc7c15bd3176304edc69a7",
     "cause": "course-identity — same length (32,557 bytes), content differs; first difference at byte 6,399"
    },
    "course/n5/topic-16-convites/lesson-06.md": {
@@ -2376,19 +2348,19 @@
     "cause": "course-identity — rebuilt 6,165 bytes vs committed 6,248; first difference at byte 4,117"
    },
    "course/n5/topic-16-convites/topic.json": {
-    "rebuilt_sha256": "eb3ab7459592730b04a69ff7bfa6ef85240f0e02b2e7712adc2a076734867970",
+    "rebuilt_sha256": "17056fda3ad5f50a774c32c634b60e9aed442d057871e90963fe9ab474024ed7",
     "cause": "course-identity — rebuilt 8,880 bytes vs committed 8,920; first difference at byte 92"
    },
    "course/n5/topic-17-rotina/lesson-01.json": {
-    "rebuilt_sha256": "93181476b64a85ee07f52bb21f7e5caf70bdee9b428154e2ee336e2b4965c3b7",
+    "rebuilt_sha256": "48362a64e9d99a610fce0e80ce047faa0584a027b62c501fbcfc364bdf78e041",
     "cause": "course-identity — same length (37,991 bytes), content differs; first difference at byte 9,570"
    },
    "course/n5/topic-17-rotina/lesson-02.json": {
-    "rebuilt_sha256": "53963357b9f53a6fd339a448ad5e39ad8899a2977cef81a8442027b0f46ad057",
+    "rebuilt_sha256": "353867ef75d1fb5b33dd088654229c0fcd079ed0b3689009b2cc9450076b1b21",
     "cause": "course-identity — same length (38,670 bytes), content differs; first difference at byte 10,011"
    },
    "course/n5/topic-17-rotina/lesson-03.json": {
-    "rebuilt_sha256": "3273985d4cc6e1e0614558c44bfcdc7b1e3f397c6f22d8ec338a12042bc1097d",
+    "rebuilt_sha256": "9388b517c3db7415f791a116dc8222427caae979f184cdbbf12c6160b9422d99",
     "cause": "course-identity — same length (38,797 bytes), content differs; first difference at byte 9,645"
    },
    "course/n5/topic-17-rotina/lesson-03.md": {
@@ -2396,7 +2368,7 @@
     "cause": "course-identity — rebuilt 6,863 bytes vs committed 6,972; first difference at byte 4,344"
    },
    "course/n5/topic-17-rotina/lesson-04.json": {
-    "rebuilt_sha256": "b4e3a060831db76d2da154d6de09ef923c7fa79885379c73c9f0b6abac575ad2",
+    "rebuilt_sha256": "68a742d798684fa51dbff685b0bedea95910f509c82e36c800b287ed8f862afe",
     "cause": "course-identity — same length (38,474 bytes), content differs; first difference at byte 6,700"
    },
    "course/n5/topic-17-rotina/lesson-04.md": {
@@ -2404,23 +2376,23 @@
     "cause": "course-identity — rebuilt 8,882 bytes vs committed 8,988; first difference at byte 5,041"
    },
    "course/n5/topic-17-rotina/topic.json": {
-    "rebuilt_sha256": "c8c77132334d6b1a020563a6656d0d00b09aae8794826feb29651dabc90fe5e9",
+    "rebuilt_sha256": "c2e02381d39d8cc2e656f8e6127114f12f6406755beaee08bbc70b30a0e9d94f",
     "cause": "course-identity — rebuilt 8,418 bytes vs committed 8,452; first difference at byte 90"
    },
    "course/n5/topic-18-conectando/lesson-01.json": {
-    "rebuilt_sha256": "1f853bd186212fdb0430717451965a90628228a5b6499f7dbebbf01fab915c79",
+    "rebuilt_sha256": "85a4e463c02233cda1ef0079cbbf2b957d6a41fc78564c55409e78d00844188e",
     "cause": "course-identity — same length (37,032 bytes), content differs; first difference at byte 7,106"
    },
    "course/n5/topic-18-conectando/lesson-02.json": {
-    "rebuilt_sha256": "ecbea818950f6d9d0116c772b9bf3431d52a6f224259a0a16a13a978316e83d4",
+    "rebuilt_sha256": "9b7e76195727891525ad9852292bf8dc3e5e420db80df7f4ccb8153b34f72625",
     "cause": "course-identity — same length (38,178 bytes), content differs; first difference at byte 7,489"
    },
    "course/n5/topic-18-conectando/lesson-03.json": {
-    "rebuilt_sha256": "3579f3dd7bbefb193bb1d0f77c25e368fb94ebb877dd6df190c8b8d71833fd4b",
+    "rebuilt_sha256": "d55d3af638736ac67265502cd30a3a01374bc6883f07b40ac0772964c6befb81",
     "cause": "course-identity — same length (38,956 bytes), content differs; first difference at byte 7,968"
    },
    "course/n5/topic-18-conectando/lesson-04.json": {
-    "rebuilt_sha256": "b5782c25e50406f30350e86cc63786f3fd3d2d1c0f4311c14340d8adb81eaa1e",
+    "rebuilt_sha256": "bd999fd9ce27b2f8bc4643e8897f04a0a53574c17340cb3ee65fc73101640fe8",
     "cause": "course-identity — same length (38,536 bytes), content differs; first difference at byte 7,336"
    },
    "course/n5/topic-18-conectando/lesson-04.md": {
@@ -2428,7 +2400,7 @@
     "cause": "course-identity — rebuilt 8,219 bytes vs committed 8,266; first difference at byte 1,989"
    },
    "course/n5/topic-18-conectando/lesson-05.json": {
-    "rebuilt_sha256": "8cd83eaf5d425782f3966fb0150d3efa54f1125d80bd369671d9c4736632221e",
+    "rebuilt_sha256": "6af4bac2404741d11853835a4071d53c31de25eafc6b5e0dd2789980260dd74e",
     "cause": "course-identity — same length (40,249 bytes), content differs; first difference at byte 7,883"
    },
    "course/n5/topic-18-conectando/lesson-05.md": {
@@ -2436,7 +2408,7 @@
     "cause": "course-identity — rebuilt 8,540 bytes vs committed 8,654; first difference at byte 5,710"
    },
    "course/n5/topic-18-conectando/lesson-06.json": {
-    "rebuilt_sha256": "547d37a07ee5067815e03864e3772f444da20e629900c16b5a93fae2333922e1",
+    "rebuilt_sha256": "7285d6632540981cbf43f3a9763b4189337dcf603554395d8e2f7aeeb2536da4",
     "cause": "course-identity — same length (40,567 bytes), content differs; first difference at byte 7,896"
    },
    "course/n5/topic-18-conectando/lesson-06.md": {
@@ -2444,7 +2416,7 @@
     "cause": "course-identity — rebuilt 8,367 bytes vs committed 8,508; first difference at byte 4,853"
    },
    "course/n5/topic-18-conectando/lesson-07.json": {
-    "rebuilt_sha256": "3727f2cc5817d28f8091bea9d4dcd5864591417343e3354ec42b0718f8c4e13d",
+    "rebuilt_sha256": "af8940fda68ac2b263352befa8577ac978efdc925f3ce7a543dfdc35ef189674",
     "cause": "course-identity — same length (38,891 bytes), content differs; first difference at byte 7,452"
    },
    "course/n5/topic-18-conectando/lesson-07.md": {
@@ -2452,27 +2424,27 @@
     "cause": "course-identity — rebuilt 7,306 bytes vs committed 7,494; first difference at byte 4,160"
    },
    "course/n5/topic-18-conectando/topic.json": {
-    "rebuilt_sha256": "0e0a4cb82d8ea33c496e507b69ae7f5ce035e96ae4743618c4b12ee75441f81e",
+    "rebuilt_sha256": "06a6b62b4e27812d72cc9db0aa651b8910ee4925b171537c70bab0ac2318e84b",
     "cause": "course-identity — rebuilt 10,988 bytes vs committed 11,021; first difference at byte 94"
    },
    "course/n5/topic-19-revisao/lesson-01.json": {
-    "rebuilt_sha256": "8ebbacc6b584296195f64749df26618396cd212e14e7b02a6266f20e30db6e5a",
+    "rebuilt_sha256": "70932a0285ab544503d745f2acf044032d4a76ae10591b665c48461400bbab9e",
     "cause": "course-identity — same length (38,186 bytes), content differs; first difference at byte 4,883"
    },
    "course/n5/topic-19-revisao/lesson-02.json": {
-    "rebuilt_sha256": "25ec99479989741d84acfa007bfbeaf6d41151cbca1071cc2c5804d80776dd31",
+    "rebuilt_sha256": "b4b0e83b0a202cc2ff8bbcc7519c58816610d0c425e797f010cd86aece0cc01d",
     "cause": "course-identity — same length (37,184 bytes), content differs; first difference at byte 4,810"
    },
    "course/n5/topic-19-revisao/lesson-03.json": {
-    "rebuilt_sha256": "869120b67dc9b1630311f4513ba25f235f29331bbdda4751bf69b5b9fcfc3203",
+    "rebuilt_sha256": "78173bc0561a0ee062bf16a16d68e59d64615f66e6b62410e6bc6cf06a6e7d2f",
     "cause": "course-identity — same length (36,176 bytes), content differs; first difference at byte 5,132"
    },
    "course/n5/topic-19-revisao/topic.json": {
-    "rebuilt_sha256": "f0f17509f2826b7782b243422f9b6f61b9aeab91437dd52eea176f726701585d",
+    "rebuilt_sha256": "fe9fffb9ba166fbafb1e5f2c2d6c556b774d4260f5ee715545dfc05002397f09",
     "cause": "course-identity — rebuilt 1,977 bytes vs committed 2,009; first difference at byte 91"
    },
    "course/n5/topic-20-kanji-exame/lesson-01.json": {
-    "rebuilt_sha256": "184398c7c2a9247a07d94a6fb13fb12e510c01d9365fbdcf69b1492c0df227cf",
+    "rebuilt_sha256": "dd43baf9356622b742d983c351ba57e1dcaba0b5c0dea9b3f703130d250649d9",
     "cause": "course-identity — rebuilt 28,546 bytes vs committed 28,706; first difference at byte 372"
    },
    "course/n5/topic-20-kanji-exame/lesson-01.md": {
@@ -2480,7 +2452,7 @@
     "cause": "course-identity — same length (1,334 bytes), content differs; first difference at byte 190"
    },
    "course/n5/topic-20-kanji-exame/lesson-02.json": {
-    "rebuilt_sha256": "d00761424a843096c723ea05d7f7462b0e4f62f66aa824b36dd6aed083c03a08",
+    "rebuilt_sha256": "6700792c915aa1f40bbbd406c5978c1f775fa96dab043d6d7e31b1269d803126",
     "cause": "course-identity — rebuilt 28,566 bytes vs committed 28,866; first difference at byte 371"
    },
    "course/n5/topic-20-kanji-exame/lesson-02.md": {
@@ -2488,7 +2460,7 @@
     "cause": "course-identity — same length (1,334 bytes), content differs; first difference at byte 189"
    },
    "course/n5/topic-20-kanji-exame/lesson-03.json": {
-    "rebuilt_sha256": "01a6759a703ebfc1e84e9bf0d660a71c8ef86558979a6e04aaca24c4d2f00076",
+    "rebuilt_sha256": "bb8fa80781521c409cbdd6256f6e664f9bd97eb928fd6b4126a3389733056b3b",
     "cause": "course-identity — rebuilt 28,566 bytes vs committed 28,525; first difference at byte 371"
    },
    "course/n5/topic-20-kanji-exame/lesson-03.md": {
@@ -2496,7 +2468,7 @@
     "cause": "course-identity — rebuilt 1,334 bytes vs committed 1,251; first difference at byte 189"
    },
    "course/n5/topic-20-kanji-exame/lesson-04.json": {
-    "rebuilt_sha256": "679486ad936cd6f824477912e08b77f725076200540d5773deeaea22639ea260",
+    "rebuilt_sha256": "4c750156b1628d4916bcf1543e972666dac9a89a7ea4d2c0aa23d5c961216f75",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-04.md": {
@@ -2504,7 +2476,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-05.json": {
-    "rebuilt_sha256": "a3157082a9ec417ad6af6ad7bbdb94c72f32a398020b88f75bb028cee5c23ce9",
+    "rebuilt_sha256": "1fc432009261675c733672ce2512034f386b8d6df02e98e3957231ee1df95a51",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-05.md": {
@@ -2512,7 +2484,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-06.json": {
-    "rebuilt_sha256": "dc37510e96f82a32844b98a7934d2362521129b2681083ffd643e9c6679fc58a",
+    "rebuilt_sha256": "ee28016c972fc62189c992c65a0801fed52ea07a0c06d66441c772d2f3ec85a7",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-06.md": {
@@ -2520,7 +2492,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-07.json": {
-    "rebuilt_sha256": "df12702b3d12db2144fc85faf03ba19a864909700dd330ccd03f879c3036f4d2",
+    "rebuilt_sha256": "723156c6b5b9f551411bdd173d084439f2233588d497e53ad268bc5202623529",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-07.md": {
@@ -2528,7 +2500,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-08.json": {
-    "rebuilt_sha256": "e20cc6606d5e99d3098b408e15480d47a2d71081b966d25d80b8b56d677fbf22",
+    "rebuilt_sha256": "970c0e00a8ea044619247b7c6a71ae0c532a03b3fc8d32451e7807f19029bb4b",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-08.md": {
@@ -2536,7 +2508,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-09.json": {
-    "rebuilt_sha256": "0edab62910cd64a23e45d9132efa859869a0abb3ea25ef36bd818374e9feba6e",
+    "rebuilt_sha256": "86477b957609e88102ea35dd87e2586362fc436ac0f1d7fa00f708b3a501378a",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-09.md": {
@@ -2544,7 +2516,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-10.json": {
-    "rebuilt_sha256": "265824550b455b0756543544391921164299b92d96d765a04c6661a77f84f33b",
+    "rebuilt_sha256": "ee406a02ee4859175753a7edcc202dbc5c57bc758d625e2658880933a84531ad",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-10.md": {
@@ -2552,7 +2524,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-11.json": {
-    "rebuilt_sha256": "96764815f2de61162f4e8b1f7912e15cd7f6a63268a44e132b88c918b27150c0",
+    "rebuilt_sha256": "d09c0ff2f549685ea8c3643940be54f393ec3da4bf517f3b6d10f3f60315744b",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-11.md": {
@@ -2560,7 +2532,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-12.json": {
-    "rebuilt_sha256": "7525bd29df0227203960e0c8957ebf6b63c9ec01fab180e9588e428ee21f3d8b",
+    "rebuilt_sha256": "640ac187e1e0b01bb4c8654dadab092c2977b54078740d66233a07d881591d08",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-12.md": {
@@ -2568,7 +2540,7 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-13.json": {
-    "rebuilt_sha256": "7208354363467f71c4ddb950cd7742967c6b9f3787eb2b28f6ef1f96702093d4",
+    "rebuilt_sha256": "d2f9bf2b16dfb3eb3de2ae353effe7ad2eb4ef4e95d3037e23fd72b9993e7162",
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/lesson-13.md": {
@@ -2576,15 +2548,15 @@
     "cause": "not-committed — the rebuild produced a file that is not committed"
    },
    "course/n5/topic-20-kanji-exame/topic.json": {
-    "rebuilt_sha256": "762a8c83b8e0da2d0683d1b2b76b316c853d77ab4b3b3a843b8cbba09b8e1d2a",
+    "rebuilt_sha256": "3ca7456f1fab4474bec6584f53dcd63a71da41a148e878af7efcf3033aaae81e",
     "cause": "course-identity — rebuilt 13,423 bytes vs committed 3,185; first difference at byte 613"
    },
    "course/outline.json": {
-    "rebuilt_sha256": "8bb73fde735d7faef19b323049d6cf00cc18ce032da2ad6549f8111f70801aea",
+    "rebuilt_sha256": "e143cf339ec9c593e4be05d8b08667aa9bf5184e56c83a478d89d35fbebaf443",
     "cause": "rollup — rebuilt 257,207 bytes vs committed 248,364; first difference at byte 89"
    },
    "course/pre-n5/INDEX.md": {
-    "rebuilt_sha256": "ad0ada565dab3d66dc022603cc4aa254a22b10d1a479dabd0b73fe26f5b71ee0",
+    "rebuilt_sha256": "aa519e1ecb49be093ad2e7c68aeb8ecc560efd8011bc68e346f46557daeb79b3",
     "cause": "rollup — rebuilt 1,212 bytes vs committed 1,502; first difference at byte 20"
    },
    "course/pre-n5/course.json": {
@@ -2592,11 +2564,11 @@
     "cause": "rollup — rebuilt 2,203 bytes vs committed 2,385; first difference at byte 90"
    },
    "course/pre-n5/topic-01-orientacao/topic.json": {
-    "rebuilt_sha256": "a25c993bec2e20a92b32be516817511a863fbe3ab0e8b4cf224bb80ac4cecdf1",
+    "rebuilt_sha256": "3439b91f09709ccbd42b0635f98ceade598b4257bc239deb296f49123f5793bd",
     "cause": "course-identity — rebuilt 1,303 bytes vs committed 1,333; first difference at byte 101"
    },
    "course/pre-n5/topic-02-sons/topic.json": {
-    "rebuilt_sha256": "d4751852047eb519435ed6cb034c6de3cfc8e1f49e2406750cd0867f22bd0dbe",
+    "rebuilt_sha256": "112411e9315a0be70ef4ea13689923da23d2227680906b82e2afedb140e184bc",
     "cause": "course-identity — rebuilt 1,988 bytes vs committed 2,038; first difference at byte 95"
    },
    "course/pre-n5/topic-03-hiragana/lesson-15.json": {
@@ -2604,27 +2576,27 @@
     "cause": "course-identity — rebuilt 13,310 bytes vs committed 13,230; first difference at byte 10,162"
    },
    "course/pre-n5/topic-03-hiragana/topic.json": {
-    "rebuilt_sha256": "4523cced73fbbb28249684f498db46f1f8b613ab5e930baddb23123ce3269506",
+    "rebuilt_sha256": "f61237bd75f8c61694ceccae82f51c439c672b3c44d56d23bd2c5375459d4891",
     "cause": "course-identity — rebuilt 9,762 bytes vs committed 9,773; first difference at byte 99"
    },
    "course/pre-n5/topic-04-katakana/topic.json": {
-    "rebuilt_sha256": "09ba3839073ecb8c69aaeefebfbf5527d7a49adb5c2ae3bd1980910b2e3a3527",
+    "rebuilt_sha256": "9bb0df21c6cca0a56fe8d163cb4124fcd8acd299f9a007569c5f30049c6753e5",
     "cause": "course-identity — rebuilt 10,461 bytes vs committed 10,472; first difference at byte 99"
    },
    "course/pre-n5/topic-05-pronuncia/topic.json": {
-    "rebuilt_sha256": "18354d53c7654aaaffdba50a1c85c7517069c09c90c4123372ea4c6ee44ecea3",
+    "rebuilt_sha256": "997875085b5abaa700c3beab856a3db205575cb34e04e3f9897ff8d283719089",
     "cause": "course-identity — rebuilt 1,810 bytes vs committed 1,833; first difference at byte 100"
    },
    "course/pre-n5/topic-06-saudacoes/topic.json": {
-    "rebuilt_sha256": "8187fe6ef08cdf2a6afaa8d2b943c1934197d61e6a86601cd0de21732bcdfd73",
+    "rebuilt_sha256": "960bd02a7ffa141229795957e1443c06f27e327b76e8b681ac8c7bf866b285cd",
     "cause": "course-identity — rebuilt 3,868 bytes vs committed 3,906; first difference at byte 100"
    },
    "course/vocab_disambiguation_review.json": {
-    "rebuilt_sha256": "c6dccc1daefcfd48f2d2d8f8f56ebceadde70fa82b488b51b837e83d9ffff73d",
+    "rebuilt_sha256": "7a9706e3050ada3eab29912c95fe092cf65a108b649fb4cdcf731642d511460f",
     "cause": "rollup — rebuilt 18,835 bytes vs committed 9,919; first difference at byte 516"
    }
   },
-  "recorded_at": "2026-09-02"
+  "recorded_at": "2026-09-09"
  },
  "_causes": {
   "reauthor-untracked": "The two license re-authoring steps (manifest 28 reauthor_kanji_apply.py, 29 reauthor_vocab_apply.py) replace the verbatim KANJIDIC2 / JMdict text with our own authored glosses. Their inputs live under research/derived/reauthor/, which .gitignore excludes, so a rebuild ships the upstream dictionary wording and the committed export ships the authored wording: senses, their pos/misc/field/register and both locales of every gloss differ. Run against a checkout that has those trees, both steps apply cleanly (2,131 kanji, 2,678 vocab).",

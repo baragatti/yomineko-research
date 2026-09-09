@@ -5,7 +5,7 @@
   "description": "A group of items that behave alike (a conjugation class, a particle set, a semantic field), with the rule that governs the group.",
   "x-yomineko": {
     "entity": "family",
-    "records": 396,
+    "records": 707,
     "packing": "list",
     "glob": "corpus/families/families.json",
     "stable_id_field": "slug",
@@ -14,6 +14,16 @@
   },
   "type": "object",
   "properties": {
+    "created_by": {
+      "type": "string",
+      "enum": [
+        "ai"
+      ],
+      "x-vocabulary": {
+        "owner": "measured",
+        "source": "contracts/_shapes.json — no design document or producer owns this field, and the observed set is small, closed and free of prose, ids and paths."
+      }
+    },
     "description": {
       "anyOf": [
         {
@@ -26,14 +36,7 @@
       "description": "Authorable Layer-C prose. Empty on every record today; typed as the locale object it will hold rather than pinned to null."
     },
     "governing_rule": {
-      "anyOf": [
-        {
-          "$ref": "common.schema.json#/$defs/LocaleText"
-        },
-        {
-          "type": "null"
-        }
-      ]
+      "$ref": "common.schema.json#/$defs/LocaleText"
     },
     "id": {
       "type": "integer",
@@ -45,6 +48,9 @@
     },
     "label": {
       "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
     },
     "members": {
       "type": "array",
@@ -98,6 +104,30 @@
     },
     "needs_review": {
       "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relation": {
+            "type": "string",
+            "enum": [
+              "contrast_pair",
+              "sub_family"
+            ],
+            "description": "How this family relates to the one it names. `contrast_pair` is symmetric, `sub_family` is directed from the narrower family to the broader one. Vocabulary owner: curated — scripts/ingest/migrations/001_init.sql (the `family_related.relation` column comment). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "curated",
+              "source": "scripts/ingest/migrations/001_init.sql (the `family_related.relation` column comment)"
+            }
+          },
+          "slug": {
+            "$ref": "common.schema.json#/$defs/StableId"
+          }
+        },
+        "additionalProperties": false
+      }
     },
     "review_status": {
       "type": "array",
@@ -162,6 +192,9 @@
     "slug": {
       "$ref": "common.schema.json#/$defs/StableId"
     },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
     "spans_levels": {
       "type": "array",
       "items": {
@@ -178,6 +211,8 @@
         "particle_set",
         "phonetic_series",
         "semantic_field",
+        "topic_residual",
+        "topic_set",
         "word_family"
       ],
       "description": "What kind of grouping this family is. Vocabulary owner: curated — scripts/ingest/migrations/001_init.sql (the `family.type` column comment). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
@@ -189,13 +224,17 @@
   },
   "additionalProperties": false,
   "required": [
+    "created_by",
     "governing_rule",
     "id",
     "importance_rank",
     "label",
+    "layer",
     "members",
     "needs_review",
+    "related",
     "slug",
+    "source",
     "spans_levels",
     "type"
   ]

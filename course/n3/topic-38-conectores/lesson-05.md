@@ -7,7 +7,7 @@
 - Dominar leituras alternativas de kanji já conhecidos (上=かみ, 空=から, 下=もと)
 - Identificar os kanji 政 e 議 e seu campo de significado político
 
-**Introduz:** gramática [—] · vocabulário [何れ, 市, 上, 得る, 御, 音, 空, 柄, 金, 位, 下, 後, クラシック, クリーム, グラス, グランド, 今日は, 偖, 得る, 柄, 金] · kanji [政 議] · kana [—]
+**Introduz:** gramática [—] · vocabulário [位, 金, 空, 市, 上, 得る, 柄, 何れ, 下, 後, 御, 音, クラシック, クリーム, グラス, グランド, 今日は, 偖, 得る, 柄, 金] · kanji [政 議] · kana [—]
 
 **Frases (por ID, do banco dissecado):** —
 

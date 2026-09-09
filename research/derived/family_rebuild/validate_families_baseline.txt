@@ -1,0 +1,45 @@
+validate_families — the family layer as a derivation
+  families                     396
+  memberships                  2568
+  topic-derived families       74
+  unlocked grammar+kanji       1128
+  conjugation-eligible vocab   1167
+  family_related edges         0
+FAIL 1397 problem(s)
+  [F1] 277
+      grp:gram-n5-desu-wa: grammar gram:cha-ikenai-ja-ikenai is taught under top:n5-te-form, not top:n5-desu-wa
+      grp:gram-n5-desu-wa: grammar gram:dake is taught under top:n5-particulas-lugar, not top:n5-desu-wa
+      grp:gram-n5-desu-wa: grammar gram:darou is taught under top:n5-conectando, not top:n5-desu-wa
+      grp:gram-n5-desu-wa: grammar gram:demo is taught under top:n5-conectando, not top:n5-desu-wa
+      grp:gram-n5-desu-wa: grammar gram:gp-139 is taught under top:n5-te-form, not top:n5-desu-wa
+      grp:gram-n5-desu-wa: grammar gram:gp-14 is taught under top:n5-perguntas, not top:n5-desu-wa
+      grp:gram-n5-desu-wa: grammar gram:gp-140 is taught under top:n5-comparacoes, not top:n5-desu-wa
+      grp:gram-n5-desu-wa: grammar gram:gp-15 is taught under top:n5-perguntas, not top:n5-desu-wa
+      ... and 269 more
+  [F2] 718
+      grammar gram:n3-ageru (taught under top:n3-estado) is in no topic-derived family
+      grammar gram:n3-ba-hodo (taught under top:n3-limites) is in no topic-derived family
+      grammar gram:n3-ba-noni (taught under top:n3-desejos) is in no topic-derived family
+      grammar gram:n3-ba-yokatta (taught under top:n3-desejos) is in no topic-derived family
+      grammar gram:n3-bakari (taught under top:n3-limites) is in no topic-derived family
+      grammar gram:n3-beki-da (taught under top:n3-deveres) is in no topic-derived family
+      grammar gram:n3-chatta (taught under top:n3-estado) is in no topic-derived family
+      grammar gram:n3-da-mono-da (taught under top:n3-causa) is in no topic-derived family
+      ... and 710 more
+  [F3] 6
+      grp:godan: 134 eligible vocab not in the class, e.g. vocab:1152720, vocab:1153440, vocab:1155980
+      grp:ichidan: 66 eligible vocab not in the class, e.g. vocab:1170660, vocab:1179830, vocab:1189960
+      grp:suru-irregular: 316 eligible vocab not in the class, e.g. vocab:1002450, vocab:1003170, vocab:1003400
+      grp:suru-irregular: 1 member(s) the class does not derive, e.g. vocab:1385390
+      grp:i-adj: 19 eligible vocab not in the class, e.g. vocab:1000730, vocab:1003450, vocab:1008790
+      grp:na-adj: 119 eligible vocab not in the class, e.g. vocab:1007240, vocab:1096560, vocab:1155920
+  [F5] 396
+      grp:godan: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      grp:ichidan: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      grp:particles-core: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      grp:ni-vs-de: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      grp:wa-vs-ga: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      grp:i-adj: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      grp:na-adj: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      grp:suru-irregular: no `related` property — the edge list must exist (empty when there are no edges) so the shape is stable for consumers
+      ... and 388 more

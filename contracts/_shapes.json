@@ -128,8 +128,8 @@
      ]
     },
     "families[]": {
-     "present": 545,
-     "pct": 25.6,
+     "present": 634,
+     "pct": 29.8,
      "required": false,
      "types": [
       "string"
@@ -589,8 +589,8 @@
      ]
     },
     "families[]": {
-     "present": 1649,
-     "pct": 22.3,
+     "present": 3830,
+     "pct": 51.7,
      "required": false,
      "types": [
       "string"
@@ -1097,8 +1097,8 @@
      ]
     },
     "families[]": {
-     "present": 374,
-     "pct": 75.7,
+     "present": 505,
+     "pct": 102.2,
      "required": false,
      "types": [
       "string"
@@ -2309,10 +2309,21 @@
    "files": [
     "corpus/families/families.json"
    ],
-   "records": 396,
+   "records": 707,
    "fields": {
+    "created_by": {
+     "present": 707,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "ai"
+     ]
+    },
     "description": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -2320,52 +2331,51 @@
      ]
     },
     "governing_rule": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
-      "null",
       "object"
      ]
     },
     "governing_rule.en": {
-     "present": 322,
-     "pct": 81.3,
-     "required": false,
+     "present": 707,
+     "pct": 100.0,
+     "required": true,
      "types": [
       "string"
      ]
     },
     "governing_rule.pt-BR": {
-     "present": 322,
-     "pct": 81.3,
-     "required": false,
+     "present": 707,
+     "pct": 100.0,
+     "required": true,
      "types": [
       "string"
      ]
     },
     "id": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
       "integer"
      ],
      "min": 1,
-     "max": 396
+     "max": 759
     },
     "importance_rank": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
       "integer"
      ],
      "min": 1,
-     "max": 719
+     "max": 873
     },
     "label": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -2373,7 +2383,7 @@
      ]
     },
     "label.en": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -2381,15 +2391,26 @@
      ]
     },
     "label.pt-BR": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
       "string"
      ]
     },
+    "layer": {
+     "present": 707,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
+     ]
+    },
     "members": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -2397,36 +2418,36 @@
      ]
     },
     "members[].id": {
-     "present": 2568,
-     "pct": 648.5,
+     "present": 4969,
+     "pct": 702.8,
      "required": false,
      "types": [
       "integer"
      ],
      "min": 1,
-     "max": 2949
+     "max": 2955
     },
     "members[].intra_order": {
-     "present": 2568,
-     "pct": 648.5,
+     "present": 4969,
+     "pct": 702.8,
      "required": false,
      "types": [
       "integer"
      ],
      "min": 0,
-     "max": 176
+     "max": 415
     },
     "members[].is_core": {
-     "present": 2568,
-     "pct": 648.5,
+     "present": 4969,
+     "pct": 702.8,
      "required": false,
      "types": [
       "boolean"
      ]
     },
     "members[].member_type": {
-     "present": 2568,
-     "pct": 648.5,
+     "present": 4969,
+     "pct": 702.8,
      "required": false,
      "types": [
       "string"
@@ -2438,47 +2459,88 @@
      ]
     },
     "members[].note": {
-     "present": 2568,
-     "pct": 648.5,
+     "present": 4969,
+     "pct": 702.8,
      "required": false,
      "types": [
       "null"
      ]
     },
     "members[].ref": {
-     "present": 2568,
-     "pct": 648.5,
+     "present": 4969,
+     "pct": 702.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "members[].slug": {
-     "present": 2568,
-     "pct": 648.5,
+     "present": 4969,
+     "pct": 702.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "needs_review": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
       "boolean"
      ]
     },
+    "related": {
+     "present": 707,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "related[].relation": {
+     "present": 2,
+     "pct": 0.3,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "sub_family"
+     ]
+    },
+    "related[].slug": {
+     "present": 2,
+     "pct": 0.3,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "grp:particles-core"
+     ]
+    },
     "slug": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
       "string"
      ]
     },
+    "source": {
+     "present": 707,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "derived"
+     ]
+    },
     "spans_levels": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -2486,21 +2548,22 @@
      ]
     },
     "spans_levels[]": {
-     "present": 595,
-     "pct": 150.3,
+     "present": 1226,
+     "pct": 173.4,
      "required": false,
      "types": [
       "string"
      ],
      "values": [
       "n1",
+      "n2",
       "n3",
       "n4",
       "n5"
      ]
     },
     "type": {
-     "present": 396,
+     "present": 707,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -2510,9 +2573,9 @@
       "conjugation_class",
       "contrast_pair",
       "function_set",
-      "kanji_component",
       "particle_set",
-      "semantic_field",
+      "topic_residual",
+      "topic_set",
       "word_family"
      ]
     }
@@ -4652,6 +4715,22 @@
    ],
    "records": 52,
    "fields": {
+    "family_ids": {
+     "present": 52,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "family_ids[]": {
+     "present": 1812,
+     "pct": 3484.6,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
     "id": {
      "present": 52,
      "pct": 100.0,
@@ -4743,16 +4822,16 @@
      ]
     },
     "lessons[].unlocks[].ref": {
-     "present": 4135,
-     "pct": 7951.9,
+     "present": 4140,
+     "pct": 7961.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].unlocks[].type": {
-     "present": 4135,
-     "pct": 7951.9,
+     "present": 4140,
+     "pct": 7961.5,
      "required": false,
      "types": [
       "string"
@@ -5249,8 +5328,8 @@
      ]
     },
     "cumulative_known_set.vocab[]": {
-     "present": 355373,
-     "pct": 110364.3,
+     "present": 356496,
+     "pct": 110713.0,
      "required": false,
      "types": [
       "string"
@@ -5281,40 +5360,40 @@
      ]
     },
     "exercises[].answer": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "object"
      ]
     },
     "exercises[].answer.accept": {
-     "present": 308,
-     "pct": 95.7,
+     "present": 309,
+     "pct": 96.0,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].answer.choices": {
-     "present": 676,
-     "pct": 209.9,
+     "present": 677,
+     "pct": 210.2,
      "required": false,
      "types": [
       "array"
      ]
     },
     "exercises[].answer.correct": {
-     "present": 676,
-     "pct": 209.9,
+     "present": 677,
+     "pct": 210.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].answer.full": {
-     "present": 272,
-     "pct": 84.5,
+     "present": 274,
+     "pct": 85.1,
      "required": false,
      "types": [
       "string"
@@ -5345,56 +5424,56 @@
      ]
     },
     "exercises[].answer.text": {
-     "present": 754,
-     "pct": 234.2,
+     "present": 757,
+     "pct": 235.1,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].explanation": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "object"
      ]
     },
     "exercises[].explanation.pt-BR": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].id": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].prompt": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "object"
      ]
     },
     "exercises[].prompt.pt-BR": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "exercises[].sentence_refs": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "array"
@@ -5409,8 +5488,8 @@
      ]
     },
     "exercises[].type": {
-     "present": 1560,
-     "pct": 484.5,
+     "present": 1564,
+     "pct": 485.7,
      "required": false,
      "types": [
       "string"
@@ -5554,16 +5633,16 @@
      ]
     },
     "srs.introduces_cards[].card_types": {
-     "present": 4131,
-     "pct": 1282.9,
+     "present": 4136,
+     "pct": 1284.5,
      "required": false,
      "types": [
       "array"
      ]
     },
     "srs.introduces_cards[].deck": {
-     "present": 4131,
-     "pct": 1282.9,
+     "present": 4136,
+     "pct": 1284.5,
      "required": false,
      "types": [
       "string"
@@ -5583,8 +5662,8 @@
      ]
     },
     "srs.introduces_cards[].item": {
-     "present": 4131,
-     "pct": 1282.9,
+     "present": 4136,
+     "pct": 1284.5,
      "required": false,
      "types": [
       "string"
@@ -5623,16 +5702,16 @@
      ]
     },
     "unlocks[].ref": {
-     "present": 4135,
-     "pct": 1284.2,
+     "present": 4140,
+     "pct": 1285.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "unlocks[].type": {
-     "present": 4135,
-     "pct": 1284.2,
+     "present": 4140,
+     "pct": 1285.7,
      "required": false,
      "types": [
       "string"
@@ -6813,7 +6892,7 @@
       "string"
      ],
      "values": [
-      "2026-09-03"
+      "2026-09-09"
      ]
     },
     "schema_version": {

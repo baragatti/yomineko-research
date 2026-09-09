@@ -7,7 +7,7 @@
 - Usar いる (casual) para dizer que um SER VIVO existe
 - Situar a existência num lugar e usar vocabulário de lugar/direção próxima (そこ, そちら, そば, そと)
 
-**Introduz:** gramática [gp-12, gp-13] · vocabulário [其の, 其処, 其方, 外, 空, 誰, 誰か] · kanji [間] · kana [—]
+**Introduz:** gramática [gp-12, gp-13] · vocabulário [側, 其の, 其処, 其方, 外, 空, 誰, 誰か] · kanji [間] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-78451`, `sent:tatoeba-6828199`, `sent:tatoeba-198627`, `sent:tatoeba-6828196`
 
@@ -89,5 +89,10 @@ Mnemônico de forma: o componente de fora é 門 (um portão de duas folhas) e d
 ### 5. (production) Diga em japonês, no registro casual, 'Tem alguém aí.' (use そこ, に, 誰か e o verbo certo).
 - **Resposta:** `{"text": "そこに誰かいる。", "accept": ["そこに誰かいる", "そこにだれかいる", "そこに誰かがいる", "そこにだれかがいる"]}`
 - そこ (aí) + に (lugar) + 誰か (alguém) + いる (existência de ser vivo, forma casual). Como 誰か é pessoa, o verbo só pode ser いる; が depois de 誰か é opcional na fala.
+
+
+### 6. (production) Diga em japonês, no registro casual, 'Tem um cachorro do meu lado.' (use 私, 側, に, 犬 e o verbo certo).
+- **Resposta:** `{"text": "私の側に犬がいる。", "accept": ["私の側に犬がいる", "私のそばに犬がいる", "わたしの側に犬がいる", "わたしのそばに犬がいる"]}`
+- Molde 〜の側に + [ser vivo] + が + いる. 側 (そば) é 'ao lado de, pertinho de', e o lugar da existência vem sempre marcado por に. Como 犬 é ser vivo, o verbo é いる, aqui na forma casual.
 
 

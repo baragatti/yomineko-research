@@ -1,12 +1,12 @@
 # Curso — Módulo N4 (n4)
 
-_Gerado 2026-09-03. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
+_Gerado 2026-09-09. Colocação P4 (1ª passada); lições autoradas em P6 referenciam o corpus por ID._
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
 | 21 | Forma simples e registro casual | registro | 56 | 10 | 18 |
 | 22 | Orações relativas | descrever | 50 | 9 | 16 |
-| 23 | Condicionais (たら/ば/と/なら) | hipóteses | 48 | 13 | 22 |
+| 23 | Condicionais (たら/ば/と/なら) | hipóteses | 49 | 13 | 22 |
 | 24 | Potencial | capacidade | 45 | 11 | 6 |
 | 25 | Volitivo e intenção | intenção | 45 | 12 | 15 |
 | 26 | Transitivos × intransitivos | pares verbais | 45 | 13 | 2 |
@@ -31,12 +31,12 @@ _Gerado 2026-09-03. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 ### 22. Orações relativas
 - **kanji** (9): 力 通 代 問 理 動 開 明 京
-- **vocab** (50, amostra): 今度、厳しい、大事、建てる、彼、必要、悲しい、機会、止める、浅い、深い、点、落ちる、起こす、通る
+- **vocab** (50, amostra): 止める、今度、厳しい、大事、建てる、彼、必要、悲しい、機会、浅い、深い、点、落ちる、起こす、通る
 - **gramática** (16): gp-97, koto, no-naka-de, to-iu, to-iu-koto, aida, aida-ni, ato-de, gp-107, gp-73, gp-89, gp-101
 
 ### 23. Condicionais (たら/ば/と/なら)
 - **kanji** (13): 体 度 用 作 強 不 意 公 題 主 持 田 的
-- **vocab** (48, amostra): だから、力、寄る、思う、残念、決まる、開く、受ける、成るべく、気分、無理、用事、間違える、頑張る、動物園
+- **vocab** (49, amostra): 止める、だから、力、寄る、思う、残念、決まる、開く、受ける、成るべく、気分、無理、用事、間違える、頑張る
 - **gramática** (22): gp-60, tara, gp-146, tara-dou, tara-ii-desu-ka, ba, gp-150, gp-120, gp-138, gp-82, nara, baai-wa
 
 ### 24. Potencial

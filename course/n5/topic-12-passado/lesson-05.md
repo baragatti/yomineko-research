@@ -8,7 +8,7 @@
 - Não confundir esse な final com o な que liga adjetivos-な a substantivos
 - Ler e escrever o kanji 学 (estudo)
 
-**Introduz:** gramática [na] · vocabulário [何の, 何処, 何方, 出来る, 勤める, 友達, 手, 父, 疲れる] · kanji [学] · kana [—]
+**Introduz:** gramática [na] · vocabulário [何方, 何の, 何処, 何方, 出来る, 勤める, 友達, 手, 父, 疲れる] · kanji [学] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-77191`, `sent:tatoeba-11500016`, `sent:tatoeba-11571318`, `sent:tatoeba-173403`
 
@@ -54,7 +54,7 @@ Aproveite para guardar palavras de pessoas, lugares e habilidade. Várias aparec
 - 出来る: conseguir fazer, ser possível, ser permitido. O kanji 出来る é mais formal, e できる em kana é o mais comum no dia a dia.
 E o grupo dos interrogativos, para perguntar sobre lugar, pessoa e qual:
 - 何処: onde, que lugar (lê-se どこ).
-- 何方: qual direção, para onde; é também a forma educada de 'qual (dos dois)' e até de 'quem'. Lido como どなた, vira uma maneira polida de perguntar 'quem é?'.
+- 何方: qual direção, para onde; é também a forma educada de 'qual (dos dois)'. 何方, o mesmo kanji lido de outro jeito, é a maneira polida de perguntar 'quem é?'.
 - 何の: qual, que (lê-se どの), usado antes de um substantivo: 'qual livro?'.
 
 #### Kanji da lição: 学
@@ -107,5 +107,10 @@ Mnemônico de forma: imagine uma criança (o componente 子, 'filho/criança') s
 ### 6. (production) Diga em japonês 'Não venha.' usando o verbo 来る (くる) na forma de dicionário e a partícula de proibição な.
 - **Resposta:** `{"text": "来るな。", "accept": ["来るな", "来るな。", "くるな", "くるな。"]}`
 - 来る (vir, forma de dicionário) + な = 来るな, 'não venha'. Lembre-se: esse な é tom de ordem; para um 'não venha' educado, usa-se 来ないでください, que você verá mais adiante.
+
+
+### 7. (cloze) Complete a pergunta educada: ＿＿ですか。('Quem é o senhor / a senhora?')
+- **Resposta:** `{"text": "どなた", "full": "どなたですか。"}`
+- どなた é a forma educada de 誰 ('quem'). Vem do mesmo kanji de どちら, 何方: muda só a leitura. どちら pergunta 'qual dos dois' ou 'para onde'; どなた pergunta 'quem é'. Na recepção ou no telefone, どなたですか soa bem mais cortês do que 誰ですか.
 
 

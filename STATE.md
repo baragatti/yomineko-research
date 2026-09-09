@@ -58,6 +58,13 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-09 (aq) — W11 DONE and committed (§6 step 1): homographs ruled (14 + a fifth wrong ref
+> the review found), resolver reading rule in code, 5 exemptions became unlocks, family layer rebuilt
+> 396 → 707 / 2,568 → 4,969 with a hard validator that failed on the old tree, W11c row-id refs
+> gone from lesson sources, full manifest replay repaired (was aborting at the grammar-merge step
+> since W08; 147/790 byte-identical now). W13b residue MEASURED (tokens 99.1% derivable, particles
+> and paragraphs authored) — plan row updated. Next: §6 step 2, W12 orthographic relink.**
+
 > **2026-09-03 (ap) — APP_PLAN revised to v3 (lean): same goal and milestones; one campaign at a
 > time, mechanical-first units, verify once, applies first; the ordered sequence with a cost tag per
 > unit is APP_PLAN §6 and the waste ledger §7. Still PAUSED; resume at §6 step 1 (W11).**

@@ -7,7 +7,7 @@
 - Montar a moldura 〜の中で[A]が一番〜 ('dentre X, A é o número um')
 - Escolher dentro de um grupo com as interrogativas どれ (qual) e どんな (que tipo de)
 
-**Introduz:** gramática [gp-46, ichiban, no-naka-de-a-ga-ichiban] · vocabulário [どんな, 何, 何れ, 何故, 名前, 時々, 等, 習う, 賑やか, 近く] · kanji [山 話] · kana [—]
+**Introduz:** gramática [gp-46, ichiban, no-naka-de-a-ga-ichiban] · vocabulário [中, 何, どんな, 何れ, 何故, 名前, 時々, 等, 習う, 賑やか, 近く] · kanji [山 話] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-f7cec4b420ec`, `sent:gen-c94b958f1ed1`, `sent:tatoeba-223501`, `sent:tatoeba-203016`
 

@@ -207,11 +207,13 @@ export interface ExerciseRole {
 
 /** A group of items that behave alike (a conjugation class, a particle set, a semantic field), with the rule that governs the group. */
 export interface Family {
+  created_by: "ai";
   description?: LocaleText | null;
-  governing_rule: LocaleText | null;
+  governing_rule: LocaleText;
   id: number;
   importance_rank: number;
   label: LocaleText;
+  layer: Layer;
   members: {
       id?: number;
       intra_order?: number;
@@ -222,6 +224,10 @@ export interface Family {
       slug?: StableId;
     }[];
   needs_review: boolean;
+  related: {
+      relation?: "contrast_pair" | "sub_family";
+      slug?: StableId;
+    }[];
   review_status?: {
       field: string;
       locale?: string | null;
@@ -231,8 +237,9 @@ export interface Family {
       content_hash: string;
     }[];
   slug: StableId;
+  source: string;
   spans_levels: Level[];
-  type: "conjugation_class" | "contrast_pair" | "function_set" | "kanji_component" | "particle_set" | "phonetic_series" | "semantic_field" | "word_family";
+  type: "conjugation_class" | "contrast_pair" | "function_set" | "kanji_component" | "particle_set" | "phonetic_series" | "semantic_field" | "topic_residual" | "topic_set" | "word_family";
 }
 
 /** One grammar point: its forms, how it is formed, what it contrasts with, and the pedagogy around it. */
@@ -696,6 +703,7 @@ export interface StrokeOrder {
 
 /** A block of lessons that closes one theme, and the items it unlocks. */
 export interface Topic {
+  family_ids: StableId[];
   id: StableId;
   lessons: {
       description?: LocaleText;

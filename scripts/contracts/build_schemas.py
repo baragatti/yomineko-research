@@ -404,11 +404,28 @@ _register({
     "kanji.readings[].type": vocabulary(
         ["on", "kun", "nanori"], "curated", "KANJIDIC2 reading types (Layer A source vocabulary)",
         "Reading class. `nanori` readings are name-only and are not taught."),
+    # W11b renamed the two types that lied about themselves: the grouping keyed on the introducing
+    # topic was never a `function_set` (a communicative function is independent of topic order) and
+    # the leftover bucket was never a `semantic_field` (meaning judgements no Layer-A field carries).
+    # Both honest names stay in the vocabulary, unused by any record today, because the AUTHORED
+    # families of W39 are what earn them. `kanji_component` likewise stays: D14 retired the 51
+    # caches, and a type nothing instantiates is still the type the redirects were written under.
     "family.type": vocabulary(
         ["semantic_field", "kanji_component", "phonetic_series", "word_family", "conjugation_class",
-         "particle_set", "contrast_pair", "function_set"],
+         "particle_set", "contrast_pair", "function_set", "topic_set", "topic_residual"],
         "curated", "scripts/ingest/migrations/001_init.sql (the `family.type` column comment)",
         "What kind of grouping this family is."),
+    "family.related[].relation": vocabulary(
+        ["contrast_pair", "sub_family"], "curated",
+        "scripts/ingest/migrations/001_init.sql (the `family_related.relation` column comment)",
+        "How this family relates to the one it names. `contrast_pair` is symmetric, `sub_family` "
+        "is directed from the narrower family to the broader one."),
+    # W11b. `topic.family_ids[]` and the members' `slug` are ADDRESSES into the family registry, not
+    # free strings. The measured path cannot say so on its own: the value set is 707 slugs wide, far
+    # past the cut where a measured enum turns into an IdRef, so without this the edge that spec 1.7
+    # asks for in both directions would publish as `string[]`.
+    "topic.family_ids[]": {"$ref": f"{COMMON}#/$defs/StableId"},
+    "family.related[].slug": {"$ref": f"{COMMON}#/$defs/StableId"},
     "family.members[].member_type": vocabulary(
         ["kanji", "vocab", "grammar"], "curated",
         "scripts/ingest/migrations/001_init.sql (the `family_member.member_type` column comment)",

@@ -1,0 +1,437 @@
+{
+  "unit": "W11a",
+  "generated": "2026-09-09",
+  "decided_by": "owner, 2026-09-09 (\"yes to both\"), on research/reports/homograph_recommendations.md",
+  "what_this_is": "A6 homographs, settled. Three kinds of row, one file, because they are one decision: which record a lesson means when its headword names more than one, whether the sibling it does not mean is taught anywhere, and which siblings stay deliberately untaught. Every row carries the lesson's own words as its evidence; validate_repairs_applied.py replays all of them against the exported course tree on every run.",
+  "kinds": {
+    "ref": "One (headword, lesson) row of course/vocab_disambiguation_review.json. `old` is the slug the export carried before W11a, `new` the record the lesson actually means. `how: reading` = the lesson prints the kana beside the chip and scripts/export/vocab_identity.py derives it (the row asserts the rule still does; it is NOT fed back to the resolver). `how: ruling` = no reading is printed and the resolver cannot know, so the decision is loaded from here. W11c adds one row that never sat in that queue: only one record spells 様/よう there, so no queue row existed for the (headword, lesson) pair whose chip was nonetheless pointing at the wrong sibling.",
+    "unlock": "One coverage_exemptions.json row promoted to a real unlock: the lesson named already teaches the word in prose, so it introduces it. `ref_written` is what both layers carry — a published slug since W11c retired the row-id form.",
+    "hold": "A coverage exemption that STAYS, with the reason restated. The row is an assertion: the record must still be exempt and still unlocked by no lesson, so a hold cannot rot into a silent hole.",
+    "practice": "One exercise authored so a promoted unlock is actually asked by its own lesson. validate_practice_coverage.py freezes the per-(level, kind) count of unlocked items no exercise targets and FAILS on growth, and it is right to: a card the SRS schedules and the lesson never rehearsed is the hole this unit is closing, not a new one to open. The exercise content lives here so the table is the source and the apply script is data-driven. 中/なか needed none: les:n5-comparacoes-02 already drills it through 〜の中で."
+  },
+  "row_count": 28,
+  "rows": [
+    {
+      "kind": "ref",
+      "headword": "上",
+      "lesson": "les:n3-perspectiva-01",
+      "old": "vocab:1352150",
+      "new": "vocab:1352150",
+      "verdict": "keep",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body glosses the chip \"curso superior de um rio\", a sense only かみ (vocab:1352150) has; じょう has no river sense. It echoes the introducing lesson les:n3-conectores-05 («上/かみ» - curso superior de um rio) almost word for word."
+    },
+    {
+      "kind": "ref",
+      "headword": "上",
+      "lesson": "les:n3-relato-04",
+      "old": "vocab:1352150",
+      "new": "vocab:1352170",
+      "verdict": "change",
+      "how": "reading",
+      "printed_reading": "じょう",
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints <jp>じょう</jp> beside the chip, glosses it \"do ponto de vista de, em termos de\" and gives the suffix compound 法律上 — vocab:1352170 in every particular. The list around it is a しょう/じょう homophone run (章, 賞, 小). vocab:1352170 is unlocked at les:n3-tempo-05 (topic 39), before this lesson (topic 50), so the swap is gating-clean."
+    },
+    {
+      "kind": "ref",
+      "headword": "何方",
+      "lesson": "les:n5-passado-05",
+      "old": "vocab:1189360",
+      "new": "vocab:1189360",
+      "verdict": "keep",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "unlock",
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The head gloss is どちら's — \"qual direção, para onde\", \"a forma educada de 'qual (dos dois)'\". どなた is named after it, in a subordinate clause, which is why this ruling is paired with the unlock row that gives どなた its own chip and its own card rather than leaving one chip doing two jobs."
+    },
+    {
+      "kind": "ref",
+      "headword": "得る",
+      "lesson": "les:n3-perspectiva-01",
+      "old": "vocab:1454500",
+      "new": "vocab:1454500",
+      "verdict": "keep",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "body"
+      ],
+      "confidence": "probable",
+      "evidence": "The prose names BOTH readings (\"える / うる, obter; poder fazer\"), so the sentence alone does not decide. The introducing lesson does: les:n3-conectores-05 unlocks both records and writes prose for うる only («得る/うる» - poder, conseguir (fazer)), while vocab:1588760 (える) is unlocked there and appears in no lesson body anywhere. Kept on consistency with what the course actually teaches. Open curriculum question recorded in research/reports/homograph_recommendations.md §4: whether える should own the card instead — that would flip this row and row 5 together."
+    },
+    {
+      "kind": "ref",
+      "headword": "得る",
+      "lesson": "les:n3-perspectiva-02",
+      "old": "vocab:1454500",
+      "new": "vocab:1454500",
+      "verdict": "keep",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "body"
+      ],
+      "confidence": "probable",
+      "evidence": "Same pair as the row above and resolved the same way on purpose. The gloss here (\"obter; poder fazer\") blends both records and the surrounding list mixes え- and う-readings, so nothing local separates them; the introducing lesson's prose does."
+    },
+    {
+      "kind": "ref",
+      "headword": "数",
+      "lesson": "les:n3-estado-03",
+      "old": "vocab:1580820",
+      "new": "vocab:1580820",
+      "verdict": "keep",
+      "how": "reading",
+      "printed_reading": "かず",
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints <jp>かず</jp> beside the chip and glosses \"número, quantidade\". The list is a か-reading run (菓子, 貸し, 賢い, 歌手, 数, 数える, 稼ぐ) ordered where かず belongs, not すう."
+    },
+    {
+      "kind": "ref",
+      "headword": "柄",
+      "lesson": "les:n3-intencao-03",
+      "old": "vocab:1508290",
+      "new": "vocab:1508300",
+      "verdict": "change",
+      "how": "reading",
+      "printed_reading": "がら",
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints <jp>がら</jp> and glosses \"estampa, padrão\" — both belong to vocab:1508300, neither to え. The introducing lesson les:n3-conectores-05 uses the same wording. Both records are unlocked at topic 38, before this lesson (topic 43), so the swap is gating-clean. The list this sits in is deliberately about look-alikes (皮/かわ vs 革/かわ), which is exactly where a mis-pointed card does the most damage."
+    },
+    {
+      "kind": "ref",
+      "headword": "柄",
+      "lesson": "les:n3-perspectiva-02",
+      "old": "vocab:1508290",
+      "new": "vocab:1508290",
+      "verdict": "keep",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "Glossed \"cabo, punho\", which is vocab:1508290's only sense; がら has no handle sense. This row and the 柄 row above disagree deliberately: the course teaches both readings, in different lessons, and neither should be \"fixed\" to match the other."
+    },
+    {
+      "kind": "ref",
+      "headword": "注ぐ",
+      "lesson": "les:n3-desejos-05",
+      "old": "vocab:1581730",
+      "new": "vocab:1581730",
+      "verdict": "keep",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints the reading as plain text — \"(そそぐ) - despejar, servir um líquido\" — not inside <jp>, so the resolver's reading tier cannot see it and this stays a ruling. It sits under \"Cuidar, servir e crescer\" in a そ-reading run (そそぐ, 育つ そだつ, 備える そなえる). The つぐ sibling has its own home at les:n3-tempo-06."
+    },
+    {
+      "kind": "ref",
+      "headword": "額",
+      "lesson": "les:n3-estado-01",
+      "old": "vocab:1207500",
+      "new": "vocab:1207500",
+      "verdict": "keep",
+      "how": "reading",
+      "printed_reading": "がく",
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints <jp>がく</jp> and glosses \"moldura, quadro emoldurado\", がく's second sense, inside a がく homophone drill (化学, 学, 学習, 学者, 額, 覚悟). Separate authoring note for the teacher, not a disambiguation problem: the record's FIRST sense is \"quantia, montante\", which is the commoner one (金額, 総額)."
+    },
+    {
+      "kind": "ref",
+      "headword": "品",
+      "lesson": "les:n3-conjectura-03",
+      "old": "vocab:2648780",
+      "new": "vocab:1583470",
+      "verdict": "change",
+      "how": "reading",
+      "printed_reading": "しな",
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints <jp>しな</jp> and glosses \"artigo, mercadoria\" = vocab:1583470, inside a し-reading run (しきりに, しばしば, じっと, しげき, しな, しまった). The export had ひん because the frequency tier counted bank compounds (作品, 製品, 商品), not the standalone noun the lesson teaches. ひん keeps its own lesson (les:n3-perspectiva-06, \"elegância, classe\"), so the two lessons divide the work. vocab:1583470 is unlocked at topic 40, before this lesson (topic 49). This also gives しな its only body appearance in the course."
+    },
+    {
+      "kind": "ref",
+      "headword": "後",
+      "lesson": "les:n3-limites-04",
+      "old": "vocab:2147630",
+      "new": "vocab:2147630",
+      "verdict": "keep",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "Glossed \"depois, após\", a verbatim echo of the introducing lesson les:n3-conectores-05 («後/ご» - depois, após. Leitura on'yomi). Position corroborates: the list runs 憲法 → 権利 → 後 → 恋 → 濃い, which is the こ/ご slot; のち would sort under の and has its own home at les:n3-conjectura-06. The frequency tier happened to be right here, and the ruling records the prose evidence that makes it right independently."
+    },
+    {
+      "kind": "ref",
+      "headword": "金",
+      "lesson": "les:n3-deveres-03",
+      "old": "vocab:1242590",
+      "new": "vocab:1242600",
+      "verdict": "change",
+      "how": "reading",
+      "printed_reading": "きん",
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints <jp>きん</jp> and glosses 'ouro (metal)' — vocab:1242600's first sense — inside a き-reading run (級, 霧, 切れ, 切れる, 金) whose whole point is reading-alike traps. The export had かね because the frequency tier counted 46 お金 hits. Both records are unlocked at topic 38, before this lesson (topic 44)."
+    },
+    {
+      "kind": "ref",
+      "headword": "金",
+      "lesson": "les:n3-estado-04",
+      "old": "vocab:1242590",
+      "new": "vocab:1242590",
+      "verdict": "keep",
+      "how": "reading",
+      "printed_reading": "かね",
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "evidence": "The body prints <jp>かね</jp> and glosses \"dinheiro\", in a か-reading run (悲しむ, 必ずしも, かなり, 可能, 金, 株, 紙). Right on both reading and ordering. This row and the きん row above disagree deliberately, as the two 柄 rows do."
+    },
+    {
+      "kind": "ref",
+      "headword": "様",
+      "lesson": "les:n4-passiva-02",
+      "old": "vocab:1605840",
+      "new": "vocab:1545790",
+      "verdict": "change",
+      "how": "ruling",
+      "printed_reading": null,
+      "affects": [
+        "body"
+      ],
+      "confidence": "certain",
+      "unit": "W11c",
+      "evidence": "The body's honorific list glosses the chip «様» as \"sufixo de respeito, usado depois de nomes de pessoas para soar bem cortês\" and the checklist beside it reads \"Identifico o vocabulário respeitoso (召し上がる, 拝見, 御, 様) e seu tom de cortesia\". That is vocab:1545790 (さま) in every particular; vocab:1605840 (よう) is the formal noun behind のよう and is never a name suffix. No reading is printed beside the chip, so the reading tier cannot see it and the row is an explicit ruling. Gating-clean: vocab:1545790 is unlocked at les:n4-suposicao-03 (topic ord 31) and this lesson is topic ord 32, so course/gating_exemptions.json no longer needs the row it carried — this ruling removes it. vocab:1605840 stays held in course/coverage_exemptions.json: after the re-point nothing in the course renders it and nothing unlocks it, which is exactly what its `hold` row asserts. Recorded in W11a §7.2 as the fifth provably wrong ref and deliberately left out of that unit's four."
+    },
+    {
+      "kind": "unlock",
+      "lesson": "les:n5-passado-05",
+      "new": "vocab:1189370",
+      "headword": "何方",
+      "kana": "どなた",
+      "ref_written": "vocab:1189370",
+      "sibling": "vocab:1189360",
+      "confidence": "certain",
+      "body_chip": "added",
+      "evidence": "level_confidence 1.0, level_agreement 4/4, common. The lesson already TEACHES どなた in prose — \"Lido como どなた, vira uma maneira polida de perguntar 'quem é?'\" — and only the ledger did not know, so the word reached the learner and could never be scheduled. The prose is re-cut so the どなた half carries its own chip; nothing else in the lesson changes. Written as a row-id ref because this is the one lesson that must unlock BOTH siblings of one headword, which a headword ref cannot say (and the row-id ref is what makes the resolver's sibling filter settle the どちら chip beside it).",
+      "ref_written_note": "W11c: was the row-id ref `vocab:449`. research/derived/repairs/lesson_ref_addresses.json rewrote it to the published slug in both layers; the record is the same one, and it is still the only lesson that must unlock both siblings of one headword."
+    },
+    {
+      "kind": "unlock",
+      "lesson": "les:n4-condicionais-01",
+      "new": "vocab:1310670",
+      "headword": "止める",
+      "kana": "とめる",
+      "ref_written": "vocab:1310670",
+      "sibling": "vocab:1310680",
+      "confidence": "certain",
+      "body_chip": "already present",
+      "evidence": "level_confidence 1.0, 4/4, common. The たら lesson glosses and conjugates it in its own body — «止める» (parar, desligar) → 止めたら — so the chip was already rendering a record no lesson unlocked (course/gating_exemptions.json held it). とめる is the transitive half of the canonical N4 pair with 止まる. The やめる sibling keeps its unlock at les:n4-oracoes-relativas-01.",
+      "ref_written_note": "W11c: was the headword ref `止める`. Two lessons at the same level unlock that headword, so the resolver could only separate them through vocab.introducing_topic_id, a placement column a from-scratch replay recomputes; research/derived/repairs/lesson_ref_addresses.json wrote both as published slugs. Same record."
+    },
+    {
+      "kind": "unlock",
+      "lesson": "les:n5-particulas-lugar-02",
+      "new": "vocab:1403830",
+      "headword": "側",
+      "kana": "そば",
+      "ref_written": "vocab:1403830",
+      "sibling": "vocab:1581310",
+      "confidence": "certain",
+      "body_chip": "already present",
+      "evidence": "level_confidence 1.0, 4/4, common; 5 bank tokens against 3 for the taught がわ sibling. The existence lesson already lists it in a そ-reading run («側/そば»: ao lado, pertinho) directly above そこにネコがいる — the 〜のそばにある/いる frame そば needs. A core N5 position noun beside 上・下・前・後ろ・となり.",
+      "ref_written_note": "W11c: was the headword ref `vocab:側`. Two lessons unlock that headword and the resolver could only separate them through vocab.introducing_topic_id, which a from-scratch replay recomputes differently; research/derived/repairs/lesson_ref_addresses.json wrote both as published slugs. Same record."
+    },
+    {
+      "kind": "unlock",
+      "lesson": "les:n5-comparacoes-02",
+      "new": "vocab:1423310",
+      "headword": "中",
+      "kana": "なか",
+      "ref_written": "vocab:1423310",
+      "sibling": "vocab:1620400",
+      "confidence": "certain",
+      "body_chip": "already present",
+      "evidence": "level_confidence 1.0, 4/4, common; なか 70 bank tokens by reading against ちゅう 29, and 11 on this record against 0 on the taught sibling. The superlative lesson names it as the load-bearing piece of its own grammar point — \"A peça «中»(なか) quer dizer 'dentro/interior', e 〜の中で delimita o conjunto comparado\" — and les:n4-oracoes-relativas-01 depends on it later.",
+      "ref_written_note": "W11c: was the headword ref `中`. Two lessons at the same level unlock that headword, so the resolver could only separate them through vocab.introducing_topic_id, a placement column a from-scratch replay recomputes; research/derived/repairs/lesson_ref_addresses.json wrote both as published slugs. Same record."
+    },
+    {
+      "kind": "unlock",
+      "lesson": "les:n5-conectando-01",
+      "new": "vocab:2846738",
+      "headword": "何",
+      "kana": "なん",
+      "ref_written": "vocab:2846738",
+      "sibling": "vocab:1577100",
+      "confidence": "certain",
+      "body_chip": "already present",
+      "evidence": "level_confidence 1.0, common; なん 87 bank tokens by reading against なに 60 — the untaught reading was the commoner one. It is the reading in 何ですか, 何時, 何人, 何回, and the course leans on it from topic 07 (あれは何ですか, 何時ですか). This lesson already lists it (\"o quê / que, para perguntar 'por quê?'\"), so the unlock lands where the prose already is. Two open questions stay with the teacher and are NOT settled here: whether both 何 records belong at topic 07-08 rather than 14/18, and whether level_agreement 1/1 is a thin N5 tag under spec §1.5.",
+      "ref_written_note": "W11c: was the headword ref `何`. Two lessons at the same level unlock that headword, so the resolver could only separate them through vocab.introducing_topic_id, a placement column a from-scratch replay recomputes; research/derived/repairs/lesson_ref_addresses.json wrote both as published slugs. Same record."
+    },
+    {
+      "kind": "hold",
+      "new": "vocab:1247260",
+      "headword": "君",
+      "kana": "くん",
+      "sibling": "vocab:1247250",
+      "confidence": "probable",
+      "candidate_lesson": "les:n4-passiva-02",
+      "evidence": "Deserves teaching — common, 3/3, and every learner meets 〜くん in the first hour — but the placement is a judgement, not a lookup: les:n4-passiva-02 is the honorific-register lesson (召し上がる, 拝見, the ご prefix, a 様 card) and already contrasts きみ, yet the さん / 様 / くん / ちゃん ladder is currently spread over three lessons in two topics. Held because it needs a line of new prose and a decision about where the ladder lives, and because the pt-BR framing has to say that 〜くん is not simply \"male ちゃん\".",
+      "exemption_reason": "Homograph sibling of vocab:1247250 (君/きみ). W11a (owner decision A6) settled the disambiguation queue and DEFERRED this placement: the record deserves teaching, but where the さん / 様 / くん / ちゃん ladder lives is a curriculum choice and the card needs a line of new pt-BR prose. Candidate lesson and full evidence: research/derived/repairs/homograph_rulings.json."
+    },
+    {
+      "kind": "hold",
+      "new": "vocab:1605840",
+      "headword": "様",
+      "kana": "よう",
+      "sibling": "vocab:1545790",
+      "confidence": "genuinely ambiguous",
+      "candidate_lesson": "les:n4-suposicao-04",
+      "evidence": "The one row here that is a curriculum policy call rather than a lookup. さま is correct where it is: les:n4-suposicao-03 introduces it explicitly as the source of のよう and hands off to les:n4-suposicao-04. Whether よう then needs a vocab card of its own depends on a policy nobody has stated — does every grammar-bearing formal noun get a card, or only the ones a learner meets standalone? — and the answer has to apply to こと, もの and ところ too. Held until that policy exists. The fifth wrong ref this row used to flag is CLOSED: W11c re-points the les:n4-passiva-02 chip to vocab:1545790 (the `ref` row above), so vocab:1605840 is now rendered nowhere in the course and its gating exemption is gone. The coverage exemption stays, because the hold is about the card, not the chip.",
+      "exemption_reason": "Homograph sibling of vocab:1545790 (様/さま). W11a DEFERRED this one: さま is correctly taught at les:n4-suposicao-03 as the source of のよう, and whether よう also needs a card of its own depends on a policy nobody has stated — does every grammar-bearing formal noun get one, or only the ones met standalone? The answer has to cover こと, もの and ところ too. W11c re-pointed the one body chip that was captioned as an honorific, so no lesson renders this record any more. Evidence: research/derived/repairs/homograph_rulings.json."
+    },
+    {
+      "kind": "hold",
+      "new": "vocab:2084840",
+      "headword": "年",
+      "kana": "ねん",
+      "sibling": "vocab:1468060",
+      "confidence": "probable",
+      "candidate_lesson": "les:n5-numeros-tempo-05",
+      "evidence": "Must be taught — ねん 23 bank tokens by reading against とし 11, and it is the year counter (2026年, 何年, 来年) — but WHICH lesson is undecided. It is listed loose in les:n5-comparacoes-04 (topic 14) and unlocked nowhere; the better home is les:n5-numeros-tempo-05 (topic 09), which teaches the calendar and introduces kanji:年 — and that needs a line of new prose. The other half of the pair needs the same look: とし is unlocked at les:n5-passado-02 with no prose anywhere in the course.",
+      "exemption_reason": "Homograph sibling of vocab:1468060 (年/とし). W11a DEFERRED the placement, not the teaching: ねん must be taught (23 bank tokens by reading against 11, and it is the year counter), but the better home — les:n5-numeros-tempo-05, which teaches the calendar — needs a line of new prose, and とし's own unlock has no prose anywhere. Evidence: research/derived/repairs/homograph_rulings.json."
+    },
+    {
+      "kind": "hold",
+      "new": "vocab:2147990",
+      "headword": "背",
+      "kana": "せ",
+      "sibling": "vocab:1472650",
+      "confidence": "probable",
+      "candidate_lesson": "les:n5-conectando-04",
+      "evidence": "Held because the honest fix is probably the other one. les:n5-conectando-04 already lists «背/せ»: costas, so unlocking it there is easy — but all 9 bank tokens on the TAUGHT せい record actually read せ, and across the whole bank 背 never appears read せい. Repointing the \"altura, estatura\" card at les:n5-numeros-tempo-03 to this record instead would make the exemption disappear and fix the registry/tokenizer mismatch at the same time. That is a card-design decision for the teacher, so neither move is made here.",
+      "exemption_reason": "Homograph sibling of vocab:1472650 (背/せい). W11a DEFERRED it because the honest fix is probably the other one: all 9 bank tokens on the TAUGHT せい record actually read せ, so repointing the 'altura, estatura' card at les:n5-numeros-tempo-03 to this record would close the gap and fix the registry/tokenizer mismatch at once. Card-design call. Evidence: research/derived/repairs/homograph_rulings.json."
+    },
+    {
+      "kind": "practice",
+      "lesson": "les:n5-particulas-lugar-02",
+      "new": "vocab:1403830",
+      "exercise": "ex:n5-particulas-lugar-02-6",
+      "type": "production",
+      "answer_surface": "側",
+      "why": "Unlocking そば without asking about it would have grown validate_practice_coverage's (n5, vocab) debt, which is the regression that gate exists to catch: an unlock nobody drills is a card the SRS schedules and the lesson never rehearsed. The item reuses the lesson's own frame (lugar に + ser が + いる) and its own 犬, so it practises the new word and nothing else new.",
+      "prompt": "Diga em japonês, no registro casual, 'Tem um cachorro do meu lado.' (use 私, 側, に, 犬 e o verbo certo).",
+      "answer": {
+        "text": "私の側に犬がいる。",
+        "accept": [
+          "私の側に犬がいる",
+          "私のそばに犬がいる",
+          "わたしの側に犬がいる",
+          "わたしのそばに犬がいる"
+        ]
+      },
+      "explanation": "Molde 〜の側に + [ser vivo] + が + いる. 側 (そば) é 'ao lado de, pertinho de', e o lugar da existência vem sempre marcado por に. Como 犬 é ser vivo, o verbo é いる, aqui na forma casual."
+    },
+    {
+      "kind": "practice",
+      "lesson": "les:n5-passado-05",
+      "new": "vocab:1189370",
+      "exercise": "ex:n5-passado-05-7",
+      "type": "cloze",
+      "answer_surface": "どなた",
+      "why": "Same reason. The lesson's interrogative list now teaches どなた with its own chip, so the practice asks for the word it just introduced.",
+      "prompt": "Complete a pergunta educada: ＿＿ですか。('Quem é o senhor / a senhora?')",
+      "answer": {
+        "text": "どなた",
+        "full": "どなたですか。"
+      },
+      "explanation": "どなた é a forma educada de 誰 ('quem'). Vem do mesmo kanji de どちら, 何方: muda só a leitura. どちら pergunta 'qual dos dois' ou 'para onde'; どなた pergunta 'quem é'. Na recepção ou no telefone, どなたですか soa bem mais cortês do que 誰ですか."
+    },
+    {
+      "kind": "practice",
+      "lesson": "les:n5-conectando-01",
+      "new": "vocab:2846738",
+      "exercise": "ex:n5-conectando-01-6",
+      "type": "cloze",
+      "answer_surface": "何",
+      "why": "Same reason. The lesson already lists 何 as the word for asking 'por quê', and its subject is から, so the item asks the question that から answers.",
+      "prompt": "Complete a pergunta casual sobre o motivo: ＿＿で来なかったの？ ('Por que você não veio?')",
+      "answer": {
+        "text": "何",
+        "full": "何で来なかったの？"
+      },
+      "explanation": "Aqui 何 se lê なん: 何で (なんで) é o 'por quê' mais casual, irmão de どうして. A resposta volta com から, como em 熱があったから ('porque eu estava com febre'). A leitura なん vem antes de sons das linhas た, だ e な (何で なんで, 何と なんと, 何の なんの, 何です なんです) e antes de contadores (何人 なんにん, 何時 なんじ). Antes de か, 何 continua なに: 何か se lê なにか.",
+      "corrected": "W11c: the last sentence said 何 'quase sempre vira なん' before で, か and と. Wrong for か — 何か is なにか. Restated with the rule that actually holds: なん before た/だ/な-row sounds and before counters, なに before か."
+    },
+    {
+      "kind": "practice",
+      "lesson": "les:n4-condicionais-01",
+      "new": "vocab:1310670",
+      "exercise": "ex:n4-condicionais-01-6",
+      "type": "recognition",
+      "answer_surface": "止める",
+      "why": "Same reason. The lesson's own たら list conjugates 止めたら, so the item asks for the dictionary form behind it, which is also the transitivity contrast a learner needs here.",
+      "prompt": "A lição forma 止めたら a partir de qual forma de dicionário?",
+      "answer": {
+        "choices": [
+          "止める",
+          "止まる",
+          "止む"
+        ],
+        "correct": "止める"
+      },
+      "explanation": "たら sai do passado simples: 止める → 止めた → 止めたら. 止める (とめる) é o transitivo, o que age sobre algo: 車を止める, 音を止める ('parar o carro', 'desligar o som'). O par intransitivo é 止まる (とまる), quando algo para sozinho, e daria 止まったら."
+    }
+  ],
+  "exemption_headers": {
+    "coverage": "Records at taught levels that no lesson unlocks, each with the reason the gap is known and held rather than a silent regression. validate_unlock_ledger treats a taught-level record as a FAILURE unless it is unlocked exactly once or listed here; an entry matching nothing is also a failure, so this list cannot rot. W11a (owner decision A6) resolved five of the nine homograph placements into real unlocks; the four that remain are deferred with a stated reason and are re-asserted on every run by validate_repairs_applied.py against research/derived/repairs/homograph_rulings.json.",
+    "gating": "Item references a lesson BODY renders before the course unlocks them. validate_lesson_gating.py check B fails on any such reference unless it is listed here with the reason the gap is held rather than hidden; an entry that matches nothing is also a failure, so this list cannot rot. W11a closed four of the eight by unlocking the record its lesson already teaches. W11c closed a fifth by re-pointing the chip its lesson actually describes (様 @ les:n4-passiva-02, whose record the course unlocks a topic earlier). What remains is one forward reference and two homograph placements the owner deferred, which are also in course/coverage_exemptions.json."
+  },
+  "gating_reasons": [
+    {
+      "lesson": "les:n5-comparacoes-04",
+      "ref": "vocab:2084840",
+      "reason": "Homograph sibling of vocab:1468060 (年); the course unlocks とし and this body lists ねん. W11a held the placement because the better home is les:n5-numeros-tempo-05 and that needs new prose — see course/coverage_exemptions.json."
+    },
+    {
+      "lesson": "les:n5-conectando-04",
+      "ref": "vocab:2147990",
+      "reason": "Homograph sibling of vocab:1472650 (背); the course unlocks せい and this body lists せ. W11a held it because the likely fix is repointing the せい card instead — see course/coverage_exemptions.json."
+    }
+  ]
+}

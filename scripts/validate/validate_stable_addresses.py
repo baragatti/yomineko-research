@@ -29,6 +29,18 @@ WHAT IT CHECKS, over corpus/**/*.json and course/**/*.json (never db/corpus.sqli
   4. INT-ONLY  — a list of integers under a `*_ids` key is a cross-entity edge with no stable form at
                  all, so it cannot be traversed from the committed JSON. There is nothing to check the
                  sibling of; the field itself is the defect.
+  5. SOURCE     — the same rule one layer up: no ref in the LESSON AUTHORING SOURCES
+                 (`research/derived/lessons/*.json`) addresses a record by a storage row number.
+                 The export was clean here long before the authoring layer was, because
+                 `scripts/export/export_course.py` `_deref` rewrote `vocab:1421` to the published
+                 slug on the way out — so checks 1-4 passed while 31 refs across 19 lessons still
+                 named rows of `db/corpus.sqlite`, the one artefact CLAUDE.md declares regenerable.
+                 That is not a cosmetic gap: the authoring source is what a manifest replay reads,
+                 so those chips' identity depended on the row numbering surviving a rebuild. W11c
+                 converted them (`research/derived/repairs/lesson_ref_addresses.json`); this check
+                 is what stops the next one. A ref of the form `<ns>:<ascii digits>` passes only if
+                 it IS a published stable id in that namespace's registry — which is exactly how
+                 `vocab:1189370` (a JMdict id) is told apart from `vocab:449` (a row number).
   A record's own bare `id` integer is its storage row, not an edge, and is counted but not failed.
 
 Registries are built from contracts/manifest.json, so a new entity with an integer row number is
@@ -41,6 +53,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -49,6 +62,11 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 REPO = Path(__file__).resolve().parents[2]
 
 MAX_REPORT = 15
+# Check 5. A ref in a lesson authoring source, in either of the two shapes it takes in the raw file:
+# `"ref": "vocab:449"` and, inside the body string, `<vocab ref=\"vocab:449\"/>`. Only ASCII digits
+# count — `vocab:０` is a real headword (the N5 word for zero), not a row number.
+SOURCE_REF = re.compile(r'(?P<ns>[a-z][a-z0-9_]*):(?P<id>[0-9]+)(?=\\?")')
+MIN_LESSON_SOURCES = 300
 # Where a sibling stable id is accepted. Deliberately a closed list: the point is that the address
 # travels WITH the row number in a predictable place, not that one happens to exist somewhere nearby.
 SIBLING_KEYS = ("slug", "ref")           # plus `<ns>` and `<ns>_slug`, added per namespace below
@@ -183,6 +201,41 @@ def main() -> int:
             continue
         walk(json.loads(path.read_text(encoding="utf-8")), rel, family_of(rel), rel)
 
+    # ---- 5. SOURCE: the authoring layer a manifest replay reads --------------------------------
+    # Scanned as raw text on purpose: a lesson ref appears both as a structured field
+    # (`"ref": "vocab:449"`) and as an attribute inside the `body` STRING
+    # (`<vocab ref=\"vocab:449\"/>`), and only a text scan sees both without re-parsing the body's
+    # markup here. The trailing quote (escaped or not) is what bounds the id, so `vocab:449` never
+    # matches inside `vocab:4490`.
+    src_dir = root / "research" / "derived" / "lessons"
+    src_files = sorted(src_dir.glob("*.json")) if src_dir.is_dir() else []
+    src_refs = 0
+    if src_dir.is_dir():
+        if len(src_files) < MIN_LESSON_SOURCES:
+            fails.append(f"research/derived/lessons/ holds {len(src_files)} file(s); the course has "
+                         f"322 lessons, so a tree this small means the glob stopped matching and "
+                         f"this check would pass on nothing")
+        for path in src_files:
+            raw = path.read_text(encoding="utf-8")
+            for m in SOURCE_REF.finditer(raw):
+                ns, ident = m.group("ns"), m.group("id")
+                src_refs += 1
+                sid = f"{ns}:{ident}"
+                if ns not in reg:
+                    fails.append(f"research/derived/lessons/{path.name}: ref {sid!r} points into "
+                                 f"namespace {ns!r}, which publishes no registry — nothing can "
+                                 f"check it")
+                elif sid not in reg[ns]["slugs"]:
+                    named = reg[ns]["row"].get(int(ident)) if ident.isdigit() else None
+                    fails.append(
+                        f"research/derived/lessons/{path.name}: ref {sid!r} is a storage row "
+                        f"number, not an address" + (f" (row {ident} of the {ns} registry is "
+                                                     f"{named})" if named else "") +
+                        " — the authoring layer is what a manifest replay reads, so a row number "
+                        "here makes the record's identity depend on the numbering surviving a "
+                        "rebuild (contracts/manifest.json id_convention; repair table "
+                        "research/derived/repairs/lesson_ref_addresses.json)")
+
     # One failure per FIELD, not per occurrence: `example_vocab_ids` is one design defect repeated
     # 1,488 times, and 1,488 identical lines would bury every other failure under the report cap.
     for key in sorted(intonly):
@@ -212,6 +265,9 @@ def main() -> int:
           f"{sum(own_rows.values())} records carry their own row number (not an edge)")
     for rel, why in SCOPE_EXCLUSIONS.items():
         print(f"  [scope] {rel} excluded: {why.split(':')[0]}")
+    print(f"  ---- authoring sources: {len(src_files)} lesson file(s), {src_refs} numeric ref(s), "
+          f"every one a published stable id" if src_files else
+          "  ---- authoring sources: research/derived/lessons/ not under --root, check 5 SKIPPED")
 
     if fails:
         print()

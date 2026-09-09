@@ -6,7 +6,7 @@ _Acceptance #10. The four spec queries are run VERBATIM — every clause of the 
 
 **0 rows.**
 
-**WAIVED** — 0 rows is the CORRECT answer today, and it is the defect: the 28 semantic_field families hold no verbs, so (grp:godan ∩ daily-routine) is empty by construction — build_families_full.py fills a semantic field only with vocab left over after the conjugation_class assignment, and every verb is already in a conjugation class. Finding G03/G04; STATE.md line 1927 'P4b — full families' owns the rebuild of the family layer over n5–n3. Delete this waiver once a semantic field can contain a verb.
+**WAIVED** — 0 rows is the CORRECT answer today, and it is the defect: the 42 topic_residual families hold no verbs, so (grp:godan ∩ daily-routine) is empty by construction — build_families_full.py fills a residual bucket only with vocab left over after the conjugation_class and word_family assignments, and every verb is already in a conjugation class. W11b (A5) rebuilt the layer over pre-n5..n3 and renamed the type to say what it is, which does NOT fix this: the exclusion is structural, not a level scope. What fixes it is an AUTHORED semantic field that may contain a verb — finding G03/G04, owned by W39. Delete this waiver then.
 
 ## Q2 — Every vocab item using the kun-reading た.べる of 食, with its dissected sentences.
 

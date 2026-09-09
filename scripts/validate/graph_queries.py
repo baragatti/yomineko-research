@@ -60,12 +60,14 @@ class QueryError(RuntimeError):
 # the finding or the STATE.md line that owns the fix — no waiver without an owner.
 # ---------------------------------------------------------------------------------------------
 WAIVERS: dict[str, str] = {
-    "Q1": "0 rows is the CORRECT answer today, and it is the defect: the 28 semantic_field families "
+    "Q1": "0 rows is the CORRECT answer today, and it is the defect: the 42 topic_residual families "
           "hold no verbs, so (grp:godan ∩ daily-routine) is empty by construction — "
-          "build_families_full.py fills a semantic field only with vocab left over after the "
-          "conjugation_class assignment, and every verb is already in a conjugation class. "
-          "Finding G03/G04; STATE.md line 1927 'P4b — full families' owns the rebuild of the family "
-          "layer over n5–n3. Delete this waiver once a semantic field can contain a verb.",
+          "build_families_full.py fills a residual bucket only with vocab left over after the "
+          "conjugation_class and word_family assignments, and every verb is already in a "
+          "conjugation class. W11b (A5) rebuilt the layer over pre-n5..n3 and renamed the type to "
+          "say what it is, which does NOT fix this: the exclusion is structural, not a level scope. "
+          "What fixes it is an AUTHORED semantic field that may contain a verb — finding G03/G04, "
+          "owned by W39. Delete this waiver then.",
     "Q4": "The relation TYPE is not exported. grammar.related is a bare list of keys "
           "(wa-topic-marker -> ['ga']) with no 'contrast'/'synonym'/'confusable' label, and "
           "db/corpus.sqlite's grammar_related.relation is not carried into corpus/grammar/*.json, so "
@@ -148,12 +150,22 @@ def family_by_slug(db: dict, slug: str) -> dict:
     return fam
 
 
+# The family types that can answer "the daily-routine family" of §1.7. W11b renamed the topic-keyed
+# leftover buckets from `semantic_field` to `topic_residual`, because grouping whatever vocabulary
+# fell through the other rules by its introducing topic is not a semantic field. The rename does not
+# change this query's answer or its waiver — the bucket still holds no verbs, for the same structural
+# reason — but reading only `semantic_field` after it would turn a documented 0-row waiver into
+# "the family does not exist", which is a different and much less honest failure. `semantic_field`
+# stays first in the tuple: when W39 authors real semantic fields, they are what should answer this.
+FIELD_TYPES = ("semantic_field", "topic_residual")
+
+
 def semantic_field_matching(db: dict, needles: tuple[str, ...]) -> dict:
     """Resolve a family named in §1.7 by MEANING (the spec says 'the daily-routine family', it does
     not give a slug). Ambiguity is an error, not a first-match."""
     hits = []
     for f in db["families"]:
-        if f.get("type") != "semantic_field":
+        if f.get("type") not in FIELD_TYPES:
             continue
         hay = (f.get("slug", "") + " " + json.dumps(f.get("label") or {}, ensure_ascii=False)).lower()
         if any(n in hay for n in needles):

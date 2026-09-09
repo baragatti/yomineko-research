@@ -72,7 +72,23 @@ def _lesson_level(con, lesson_id) -> str | None:
     return _LEVEL_OF_LESSON.get(lesson_id)
 
 
-def _deref(con, ref: str, lesson_id=None, where: str = "unlock") -> str:
+# W11a. The reading a lesson PRINTS beside a vocab chip is the lesson's own answer to "which of
+# these homographs do I mean", and until W11a nothing read it. Shape, verbatim from the bodies:
+#
+#     <vocab ref="vocab:品"/><text> (</text><jp>しな</jp><text>) = "artigo, mercadoria"</text>
+#
+# so: the chip, then at most ONE punctuation-only <text> node, then a bare <jp> whose content is
+# kana. Attributes on the <jp> are refused on purpose — `<jp reading="ほうりつじょう">法律上</jp>`
+# is an EXAMPLE COMPOUND, not a gloss of the chip, and reading it as one would put 上 on the
+# compound's reading. The offsets this yields key into the same ref-attribute positions the
+# rewriter below matches, so the hint reaches exactly the occurrence that carries it.
+_READING_HINT = _re.compile(
+    r'<vocab\b[^>]*?\bref="(?P<ref>vocab:[^"]+)"[^>]*?/?>'
+    r'(?:<text>[\s()（）「」【】:：=、,\-–—]*</text>)?'
+    r'<jp>(?P<reading>[぀-ゟ゠-ヿー]+)</jp>')
+
+
+def _deref(con, ref: str, lesson_id=None, where: str = "unlock", reading: str | None = None) -> str:
     """Rewrite a courseware ref to the published address of the record it names.
 
     Two input forms exist and both are storage artefacts rather than addresses: `vocab:1421` is a row
@@ -92,7 +108,7 @@ def _deref(con, ref: str, lesson_id=None, where: str = "unlock") -> str:
         return f"{ns}:{val}" if val else ref
     if ns == "vocab":
         level = _lesson_level(con, lesson_id) if lesson_id else None   # also fills _LESSON_SLUG
-        slug, _how = _identity(con).resolve(ident, level, _LESSON_SLUG.get(lesson_id), where)
+        slug, _how = _identity(con).resolve(ident, level, _LESSON_SLUG.get(lesson_id), where, reading)
         return slug or ref
     return ref  # kanji:<character> is already the published address
 
@@ -145,13 +161,19 @@ def _deref_body(con, body: str, lesson_id=None) -> str:
     """
     if not body:
         return body
-    # `ref=` on <vocab>/<kanji> chips AND `item-ref=` on <check>/<flashcard> rows: the first
+    # Pass 1: where does this body print a reading beside a chip? Keyed by the offset of the ref
+    # ATTRIBUTE VALUE, which is the same offset pass 2 rewrites, so the hint can never drift onto a
+    # neighbouring occurrence of the same headword. (柄 is taught as え in one lesson and がら in
+    # another; within a lesson the same headword may legitimately appear annotated and bare.)
+    hints = {m.start("ref"): m.group("reading") for m in _READING_HINT.finditer(body)}
+    # Pass 2: `ref=` on <vocab>/<kanji> chips AND `item-ref=` on <check>/<flashcard> rows: the first
     # migration only rewrote the former, which left 80 checklist rows speaking the retired headword
     # scheme while the chips beside them spoke slugs. Any attribute carrying a vocab:/kanji: value is
     # an address and gets the same treatment.
     return _re.sub(
         r'((?:ref|item-ref)=")((?:vocab|kanji):[^"]+)(")',
-        lambda m: m.group(1) + _deref(con, m.group(2), lesson_id, where="body") + m.group(3), body)
+        lambda m: m.group(1) + _deref(con, m.group(2), lesson_id, where="body",
+                                      reading=hints.get(m.start(2))) + m.group(3), body)
 
 # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
 import sys as _sys, pathlib as _pl  # noqa: E402
@@ -399,8 +421,54 @@ def _sync_outline_with_lessons(con, outline, stubs) -> None:
             t["introduces_refs"] = dict(refs)
 
 
+def _topic_family_ids(con) -> dict:
+    """topic slug -> [family slug, ...]: the families whose members this topic's lessons unlock.
+
+    W11b stage 3. `design/schema_v2.md` §B specified `topic.family_ids[]` and 0 of 52 topics carried
+    it; the property was not even declared in `contracts/topic.schema.json`, so the family<->topic
+    edge of spec §1.7 existed in neither direction.
+
+    It is the COMPUTED INVERSE, recomputed on every export, and deliberately NOT the stored
+    `topic.family_ids` column. A stored list is the exact shape that froze the family layer for
+    months: `grammar_point.introducing_topic_id` was written once by a placement pass, the course
+    moved, and 272 memberships silently pointed at the wrong topic. Derived from
+    `lesson_unlocks` + `family_member`, the edge cannot go stale, and
+    `scripts/validate/validate_families.py` asserts the published list equals this recomputation
+    from `corpus/families/families.json` + `lesson.unlocks[]` alone.
+
+    Ordered by the family's `importance_rank` then slug, which is the order
+    `corpus/families/families.json` itself is written in.
+    """
+    _load_maps(con)
+    by_member: dict = {}
+    for fslug, mtype, mid in con.execute(
+            "SELECT f.slug, fm.member_type, fm.member_id FROM family_member fm "
+            "JOIN family f ON f.id = fm.family_id WHERE f.deprecated_by IS NULL "
+            "ORDER BY f.importance_rank, f.slug"):
+        by_member.setdefault((mtype, mid), []).append(fslug)
+    pub = {
+        "vocab": {s: i for i, s in con.execute("SELECT id, slug FROM vocab")},
+        "kanji": {s: i for i, s in con.execute("SELECT id, slug FROM kanji")},
+        "grammar": {s: i for i, s in con.execute("SELECT id, slug FROM grammar_point")},
+    }
+    rank_of = {s: (r, s) for s, r in con.execute(
+        "SELECT slug, importance_rank FROM family WHERE deprecated_by IS NULL")}
+    out: dict = {}
+    for tslug, lid, utype, ref in con.execute(
+            "SELECT t.slug, lu.lesson_id, lu.unlock_type, lu.ref FROM lesson_unlocks lu "
+            "JOIN lesson l ON l.id = lu.lesson_id JOIN topic t ON t.id = l.topic_id"):
+        if utype not in pub:
+            continue
+        mid = pub[utype].get(_deref(con, ref, lid))
+        if mid is None:
+            continue
+        out.setdefault(tslug, set()).update(by_member.get((utype, mid), ()))
+    return {t: sorted(fs, key=lambda s: rank_of.get(s, (10 ** 9, s))) for t, fs in out.items()}
+
+
 def export_manifest(con, outline, stubs) -> None:
     """Emit the required-layer manifest tiers: course/manifest.json -> <level>/course.json -> topic.json."""
+    fam_ids = _topic_family_ids(con)
     courses = []
     for mod in outline:
         lvl = mod["level"]
@@ -418,7 +486,8 @@ def export_manifest(con, outline, stubs) -> None:
                 td.mkdir(parents=True, exist_ok=True)
                 (td / "topic.json").write_text(json.dumps(
                     {"id": tslug, "order": tord, "level": lvl, "title": {LOC: t["title"]}, "theme": t["theme"],
-                     "objectives": [{LOC: o} for o in t["objectives"]], "lessons": lst},
+                     "objectives": [{LOC: o} for o in t["objectives"]],
+                     "family_ids": fam_ids.get(tslug, []), "lessons": lst},
                     ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         (COURSE / lvl).mkdir(parents=True, exist_ok=True)
         (COURSE / lvl / "course.json").write_text(json.dumps(
@@ -530,7 +599,10 @@ def main() -> int:
     # short list (the vast majority of headwords name exactly one record) but it is the part a teacher
     # has to look at, so it gets a file rather than a line of console output that scrolls away.
     ident = _IDENT
-    if ident is not None and ident.review:
+    # Written whenever the resolver ran, INCLUDING when it has nothing left to ask. `and ident.review`
+    # meant an export that settled the last open row left the previous run's file sitting on disk
+    # claiming rows that no longer exist — a review queue that can only grow is not a queue.
+    if ident is not None:
         # One row per (headword, lesson): the decision is per-lesson, and the first version of
         # this file deduplicated by headword alone, publishing 20 rows for 38 distinct decisions.
         deduped = sorted(ident.review,

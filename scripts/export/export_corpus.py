@@ -450,9 +450,13 @@ def family_backlinks(con: sqlite3.Connection) -> dict:
     family, so nothing in the published graph can reach a family from a record (spec 1.7).
     """
     out: dict = {}
+    # W11b: a RETIRED family (deprecated_by non-null) is not a group any more — D14 dropped the 51
+    # kanji-component caches — so it must not appear in a record's back-pointer either, or the
+    # published graph would point at an address corpus/families/families.json no longer lists.
     for fslug, mtype, mid in con.execute(
             "SELECT f.slug, fm.member_type, fm.member_id FROM family_member fm "
-            "JOIN family f ON f.id = fm.family_id ORDER BY f.importance_rank, f.slug"):
+            "JOIN family f ON f.id = fm.family_id WHERE f.deprecated_by IS NULL "
+            "ORDER BY f.importance_rank, f.slug"):
         out.setdefault((mtype, mid), []).append(fslug)
     return out
 
@@ -474,17 +478,37 @@ def _member_span(con: sqlite3.Connection, fid: int) -> list:
     return [lv for lv in _LEVEL_SEQ if lv in found]
 
 
+def family_related(con: sqlite3.Connection) -> dict:
+    """family row id -> [{slug, relation}, ...], both endpoints live.
+
+    W11b stage 3. `family_related` has existed as columns since 001_init.sql and nothing ever wrote
+    it or exported it, so `design/schema_v2.md` §C's one concrete example edge — `grp:wa-vs-ga` is a
+    `sub_family` of `grp:particles-core`, both of which are live families — was a promise the data
+    never kept. It is emitted on EVERY family, `[]` when there are no edges, so the shape is stable
+    for a consumer from the first export rather than appearing the day the first edge lands.
+    """
+    out: dict = {}
+    for fid, tgt, rel in con.execute(
+            "SELECT fr.family_id, t.slug, fr.relation FROM family_related fr "
+            "JOIN family f ON f.id = fr.family_id JOIN family t ON t.id = fr.related_family_id "
+            "WHERE f.deprecated_by IS NULL AND t.deprecated_by IS NULL "
+            "ORDER BY fr.family_id, fr.relation, t.slug"):
+        out.setdefault(fid, []).append({"slug": tgt, "relation": rel})
+    return out
+
+
 def export_families(con: sqlite3.Connection) -> int:
     if not con.execute("SELECT COUNT(*) FROM family").fetchone()[0]:
         return 0
     L = get_all(con, "family")
     Len = get_all(con, "family", "en")
+    REL = family_related(con)
     records, index_rows = [], []
     for f in con.execute(
-        "SELECT id,slug,type,importance_rank,spans_levels,needs_review FROM family "
-        "ORDER BY importance_rank, slug"
+        "SELECT id,slug,type,importance_rank,spans_levels,needs_review,source,created_by,layer "
+        "FROM family WHERE deprecated_by IS NULL ORDER BY importance_rank, slug"
     ):
-        fid, slug, ftype, rank, spans, needs_review = f
+        fid, slug, ftype, rank, spans, needs_review, src, created_by, layer = f
         members = []
         for m in con.execute(
             "SELECT member_type,member_id,intra_order,is_core,note_pt FROM family_member "
@@ -515,10 +539,20 @@ def export_families(con: sqlite3.Connection) -> int:
             # because the column froze at authoring time and the membership moved. A derived claim
             # cannot go stale. Order follows the teaching sequence.
             "spans_levels": _member_span(con, fid),
-            # W05. Every one of the 396 families is authored Layer-C grouping — the label, the
-            # description and the governing rule are pedagogy — and all 396 are flagged in the
-            # working index. The flag belongs on the record a teacher actually opens.
+            # W05. Every family is an authored Layer-C grouping — the label, the description and the
+            # governing rule are pedagogy — and all of them are flagged in the working index. The
+            # flag belongs on the record a teacher actually opens.
+            #
+            # W11b adds the other three provenance fields the index has always held and the export
+            # dropped. Without them a reader could not tell that these labels are template text a
+            # builder owns (`source: derived`, `created_by: ai`) rather than something a teacher
+            # wrote, which is the distinction spec §1.1 exists to make and the reason the whole
+            # layer carries needs_review.
+            "source": src,
+            "created_by": created_by,
+            "layer": layer,
             "needs_review": bool(needs_review),
+            "related": REL.get(fid, []),
             "members": members,
         })
         lbl = L.get((fid, "label"))
@@ -530,6 +564,21 @@ def export_families(con: sqlite3.Connection) -> int:
              "| family | type | label | #members |", "|--------|------|-------|---------:|"]
     for slug, ftype, label, n in index_rows:
         lines.append(f"| {slug} | {ftype} | {label} | {n} |")
+    # W11b: the redirect, same shape and same reasoning as corpus/grammar_deprecated.json. A family
+    # slug is a published address (`contracts/manifest.json` id_namespace `grp`), so the 51 caches
+    # D14 dropped and any bucket a builder stops deriving resolve THROUGH this map instead of
+    # vanishing. The value is either a surviving `grp:` slug or the exported field path that now
+    # answers the question — `kanji.components` for D14, `topic.family_ids` for an emptied residual
+    # bucket — because a retired family does not always have another family as its successor.
+    # Beside corpus/families/, not inside it: the entity glob is corpus/families/families.json, and
+    # a non-list sidecar inside a registry glob is what validate_course_chain.check_catalogue
+    # refuses. Listed in design/generated_artifacts.json, as that gate also requires.
+    dep = {slug: by for slug, by in con.execute(
+        "SELECT slug, deprecated_by FROM family WHERE deprecated_by IS NOT NULL ORDER BY slug")}
+    jw(CORPUS / "families_deprecated.json", dep)
+    lines += ["", f"**Deprecated:** {len(dep)} family address(es) retired and dropped from the "
+                  f"table above; `../families_deprecated.json` maps each one to where the answer "
+                  f"moved to."]
     (CORPUS / "families" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return len(records)
 

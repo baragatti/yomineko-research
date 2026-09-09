@@ -321,8 +321,14 @@ def resolve_sets(con):
     return {
         "sent": {r[0] for r in con.execute("SELECT slug FROM sentence")},
         "kanji": {r[0] for r in con.execute("SELECT character FROM kanji")},
+        # Three accepted vocab identifiers, and only one of them is an address: the published slug
+        # (W11c wrote 39 refs in that form), the headword (still how 322 lessons address a word),
+        # and the storage row number, kept because it is still a legal input to the loader.
+        # `validate_stable_addresses.py` check 5 is what forbids the last one in a tracked source;
+        # this gate only asks whether a ref resolves.
         "vocab": {r[0] for r in con.execute("SELECT headword FROM vocab")}
-        | {str(r[0]) for r in con.execute("SELECT id FROM vocab")},
+        | {str(r[0]) for r in con.execute("SELECT id FROM vocab")}
+        | {r[0].split(":", 1)[1] for r in con.execute("SELECT slug FROM vocab")},
         "gram": {r[0] for r in con.execute("SELECT key FROM grammar_point")},
         "ex": {r[0] for r in con.execute("SELECT slug FROM exercise")},
         "kana": {r[0] for r in con.execute("SELECT id FROM kana_family")},

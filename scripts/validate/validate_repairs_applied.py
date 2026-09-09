@@ -19,7 +19,7 @@ what the export actually carries at the address the row names.
 
 WHAT IT CHECKS, TABLE BY TABLE
 ------------------------------
-The seven tables are REGISTERED below with the addressing their applier uses (learned from
+The eight tables are REGISTERED below with the addressing their applier uses (learned from
 `scripts/apply_*.py`). A `.json` file appearing in `research/derived/repairs/` that is not
 registered here is itself a FAILURE — a new campaign joins this gate the day it lands, not the day
 someone remembers. (That rule is what caught W10's `level_evidence_repairs.json`: the campaign had
@@ -53,6 +53,21 @@ registered with an addressing of its own.)
         `json`       -> forms_json -> grammar["forms"] form list; references_json -> grammar["refs"];
                         formation_steps_json -> grammar["formation_steps"]; compared PARSED
         `ltext_json` -> form_meanings map, per form
+  * `homograph_rulings.json`          {kind, lesson, new, old?}      W11a, owner decision A6
+        kind `ref`    -> the lesson body renders `new`; a `change` row also asserts `old` is gone,
+                         and an `affects: [unlock]` row asserts the lesson unlocks `new`
+        kind `unlock` -> `new` is unlocked by that lesson and only that lesson, has an SRS card, is
+                         in the lesson's own cumulative_known_set, is rendered as a chip in its
+                         body, and is listed in NEITHER exemption file any more
+        kind `practice` -> the lesson declares that exercise, of that type, the body REFERENCES it
+                         (the app renders exercises only from <exercise ref=…/>), one of its
+                         answer surfaces carries the surface the row says it drills, and the
+                         exported `prompt`/`explanation` [pt-BR] are the row's text VERBATIM. An
+                         exercise authored for a record and not asking about it is one failure
+                         mode; the other is a corrected row that never reaches the learner (W11c)
+        kind `hold`   -> the inverse assertion: still listed in coverage_exemptions.json and still
+                         unlocked by nothing. A deferred placement that quietly became covered is a
+                         failure, so a hold cannot rot
   * `level_evidence_repairs.json`     {address, entity, file, level}
         the levelled record at `address` carries BOTH `new_agreement` and `new_confidence`, and is
         still the record the campaign put to the panel: same entity, same registry file, same level.
@@ -152,7 +167,7 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 REPO = Path(__file__).resolve().parents[2]
 
 # Floors far below the real counts, so growth never trips them but a vanished input always does.
-MIN_TABLES = 7
+MIN_TABLES = 8
 MIN_ROWS_TOTAL = 1_000
 MIN_SENTENCES = 5_000
 MIN_GRAMMAR = 400
@@ -301,6 +316,9 @@ def load_export(root: Path) -> tuple[dict, dict, int]:
 # 1:1 with its table and no row re-walks the export.
 LEVELLED: dict[str, tuple[str, str, dict]] = {}
 LEVEL_REGISTRIES = ("grammar", "kanji", "vocab")
+# W11c: the vocab registry by published slug, so lesson_ref_addresses.json can assert that a
+# rewritten ref still names the SAME word (headword + kana), not merely a record that exists.
+VOCAB_BY_SLUG: dict[str, dict] = {}
 
 
 def load_levelled(root: Path) -> dict[str, tuple[str, str, dict]]:
@@ -321,6 +339,190 @@ def load_levelled(root: Path) -> dict[str, tuple[str, str, dict]]:
                 slug = rec.get("slug") if isinstance(rec, dict) else None
                 if isinstance(slug, str):
                     out.setdefault(slug, (entity, path.name, rec))
+    return out
+
+
+# W11a (owner decision A6). lesson slug -> the exported lesson leaf, plus the two exemption files
+# the homograph rulings shrank. Built once in main(), read by handle_homograph_rulings.
+LESSONS: dict[str, dict] = {}
+EXEMPT: dict[str, set] = {}
+MIN_LESSONS = 300
+MIN_VOCAB = 5000
+
+
+def load_lessons_export(root: Path) -> dict[str, dict]:
+    """Every lesson leaf in the export, by lesson id. The homograph rulings are claims about these."""
+    out: dict[str, dict] = {}
+    for path in (root / "course").rglob("lesson-*.json"):
+        rec = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(rec, dict) and isinstance(rec.get("id"), str):
+            out[rec["id"]] = rec
+    return out
+
+
+def load_exempt(root: Path) -> dict[str, set]:
+    """The two held-back lists a `hold` row asserts membership of, read from the same files the
+    other gates read (scripts/validate/README.md: two validators consuming the same rows consume
+    the same file)."""
+    cov = root / "course" / "coverage_exemptions.json"
+    gat = root / "course" / "gating_exemptions.json"
+    out = {"coverage": set(), "gating": set()}
+    if cov.is_file():
+        doc = json.loads(cov.read_text(encoding="utf-8"))
+        out["coverage"] = {e["id"] for e in doc.get("vocab", []) if isinstance(e, dict) and e.get("id")}
+    if gat.is_file():
+        doc = json.loads(gat.read_text(encoding="utf-8"))
+        out["gating"] = {(e.get("lesson"), e.get("ref")) for e in doc.get("item_refs", [])
+                         if isinstance(e, dict)}
+    return out
+
+
+def handle_homograph_rulings(rows, sents, gram, table):
+    """W11a's A6 homograph rulings, replayed against the exported course tree.
+
+    Three kinds of row, three different claims, and each is checked as the claim it is rather than
+    reduced to a common shape — which is the point: a `hold` says a record must still be MISSING
+    from every unlock, and a check that only knew how to look things up would certify it by
+    accident.
+
+      practice one authored exercise per promoted unlock, checked as content rather than as a diff:
+              declared, referenced by the body, and actually asking about the record.
+      ref     the lesson body renders `new`. A `change` row additionally asserts `old` is GONE from
+              that body: all four of the corrected refs occurred exactly once, so a surviving `old`
+              means the export reverted (or a second occurrence appeared that nobody ruled on).
+              A row whose `affects` includes "unlock" must also be unlocked there.
+      unlock  the lesson unlocks `new` exactly once, carries an SRS card for it, has it in its own
+              cumulative_known_set, renders a chip for it in the body, and the record is NOT still
+              listed in either exemption file. That last clause is what makes the promotion
+              irreversible-by-accident: put the row back in coverage_exemptions.json and this fails.
+      hold    the opposite assertion, and it is an assertion: the record is listed in
+              coverage_exemptions.json AND no lesson unlocks it. A hold that quietly became covered
+              (or quietly lost its exemption) is a failure here, so the four deferred placements
+              cannot rot into a silent hole while the file still claims they are held.
+    """
+    unlocked_by: dict[str, list[str]] = defaultdict(list)
+    for lid, rec in LESSONS.items():
+        for u in rec.get("unlocks", []):
+            if u.get("type") == "vocab":
+                unlocked_by[u.get("ref")].append(lid)
+
+    out = []
+    for i, r in enumerate(rows):
+        kind = r.get("kind")
+        if kind == "ref":
+            addr = f"{table} row {i}: {r['headword']} @ {r['lesson']} body ref"
+            lesson = LESSONS.get(r["lesson"])
+            if lesson is None:
+                out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+                continue
+            body = lesson.get("body") or ""
+            if f'"{r["new"]}"' not in body:
+                out.append(("fail", C_NOT_APPLIED, addr,
+                            f"the body renders no ref to {r['new']} — the ruling did not land "
+                            f"(how={r['how']}, printed_reading={r.get('printed_reading')!r})"))
+                continue
+            if r["verdict"] == "change" and f'"{r["old"]}"' in body:
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            f"the body still renders the pre-ruling ref {r['old']}"))
+                continue
+            if "unlock" in (r.get("affects") or []) and r["lesson"] not in unlocked_by.get(r["new"], []):
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            f"the row says it affects an unlock, but {r['lesson']} does not unlock "
+                            f"{r['new']}"))
+                continue
+            out.append(("ok", "", addr, "exact"))
+        elif kind == "unlock":
+            addr = f"{table} row {i}: {r['lesson']} unlocks {r['new']} ({r.get('kana')})"
+            lesson = LESSONS.get(r["lesson"])
+            if lesson is None:
+                out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+                continue
+            holders = unlocked_by.get(r["new"], [])
+            if holders != [r["lesson"]]:
+                out.append(("fail", C_NOT_APPLIED, addr,
+                            f"unlocked by {holders or 'nothing'}, not by {r['lesson']} alone"))
+                continue
+            cards = [c.get("item") for c in lesson.get("srs", {}).get("introduces_cards", [])]
+            if r["new"] not in cards:
+                out.append(("fail", C_NO_FIELD, addr, "unlocked but no SRS card — it is filed nowhere"))
+                continue
+            if r["new"] not in (lesson.get("cumulative_known_set", {}).get("vocab") or []):
+                out.append(("fail", C_VALUE_MISMATCH, addr, "not in its own cumulative_known_set"))
+                continue
+            if f'"{r["new"]}"' not in (lesson.get("body") or ""):
+                out.append(("fail", C_NOT_APPLIED, addr,
+                            "the lesson unlocks it but its body renders no chip for it — an unlock "
+                            "nobody teaches is the hole this promotion was meant to close"))
+                continue
+            if r["new"] in EXEMPT["coverage"]:
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            "still listed in course/coverage_exemptions.json — promoted and held at once"))
+                continue
+            if (r["lesson"], r["new"]) in EXEMPT["gating"]:
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            "still listed in course/gating_exemptions.json — the body ref is inside "
+                            "the lesson's own cks now, so the exemption is stale"))
+                continue
+            out.append(("ok", "", addr, "exact"))
+        elif kind == "practice":
+            addr = f"{table} row {i}: {r['lesson']} asks about {r['new']} in {r['exercise']}"
+            lesson = LESSONS.get(r["lesson"])
+            if lesson is None:
+                out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+                continue
+            ex = next((e for e in lesson.get("exercises", []) if e.get("id") == r["exercise"]), None)
+            if ex is None:
+                out.append(("fail", C_NOT_APPLIED, addr, "the lesson declares no such exercise"))
+                continue
+            if ex.get("type") != r["type"]:
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            f"exercise type is {ex.get('type')!r}, the row authored {r['type']!r}"))
+                continue
+            if f'<exercise ref="{r["exercise"]}"' not in (lesson.get("body") or ""):
+                out.append(("fail", C_NOT_APPLIED, addr,
+                            "authored but not referenced by the body — the app renders exercises only "
+                            "from <exercise ref=…/> nodes, so this one reaches nobody"))
+                continue
+            # The answer key is what validate_practice_coverage.py measures, so that is what is
+            # asserted here: the surface the row says it drills must be in a string the learner has
+            # to produce or pick, not in the prompt or the explanation.
+            ans = ex.get("answer") or {}
+            surfaces = [ans.get("text"), ans.get("full"), ans.get("correct"),
+                        *(ans.get("accept") or []), *(ans.get("order") or [])]
+            if not any(isinstance(v, str) and r["answer_surface"] in v for v in surfaces):
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            f"no answer surface carries {r['answer_surface']!r} — the exercise exists "
+                            f"but does not ask about the record it was authored for"))
+                continue
+            # W11c: the learner-facing text is the row's content, so it is asserted verbatim. The
+            # review found the ex:n5-conectando-01-6 explanation teaching a false reading rule
+            # (何 before か is なに, not なん) and nothing here or in the apply script would have
+            # noticed the corrected row failing to reach the export.
+            bad_text = next(
+                ((fld, (ex.get(fld) or {}).get("pt-BR")) for fld in ("prompt", "explanation")
+                 if (ex.get(fld) or {}).get("pt-BR") != r[fld]), None)
+            if bad_text:
+                fld, got = bad_text
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            f"the exported {fld} [pt-BR] is not the row's text — the table is the "
+                            f"source of this exercise's content; export has {str(got)[:90]!r}"))
+                continue
+            out.append(("ok", "", addr, "exact"))
+        elif kind == "hold":
+            addr = f"{table} row {i}: {r['new']} ({r.get('kana')}) stays exempt"
+            if r["new"] not in EXEMPT["coverage"]:
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            "the row holds this record back, but course/coverage_exemptions.json "
+                            "does not list it"))
+                continue
+            if unlocked_by.get(r["new"]):
+                out.append(("fail", C_VALUE_MISMATCH, addr,
+                            f"held back, yet {unlocked_by[r['new']]} unlocks it — the hold and the "
+                            f"course disagree"))
+                continue
+            out.append(("ok", "", addr, "exact"))
+        else:
+            out.append(("fail", C_NO_RECORD, f"{table} row {i}", f"unknown kind {kind!r}"))
     return out
 
 
@@ -821,7 +1023,57 @@ def handle_level_evidence(rows, sents, gram, table):
 
 
 # name -> (handler, required keys per row)
+def handle_lesson_ref_addresses(rows, sents, gram, table):
+    """W11c's address rewrite, replayed against the EXPORTED course tree.
+
+    Each row says: this lesson used to address a record by `old` (a storage row number, or a
+    headword two records answer to) and now addresses it by `new`, the published slug — and the
+    record is the SAME one. Three claims, checked as three:
+
+      1. the lesson's export renders `new` — in an `unlocks[].ref` or in the body, whichever the
+         row's occurrence count implies (both, for every row here);
+      2. `new` resolves in the vocab registry, and to a record whose headword and kana are the ones
+         the row recorded. A rewrite that landed on a different word is the only way this table can
+         do damage, so it is the check that matters most;
+      3. `old` is GONE from that lesson. Not from the export as a whole — `vocab:中` is still a
+         legitimate ref in the lessons this table does not touch — but from this one, because
+         leaving it would mean the rewrite half-landed and the resolver is still guessing there.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} addresses {r['headword']}/{r['kana']} as {r['new']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        rec = VOCAB_BY_SLUG.get(r["new"])
+        if rec is None:
+            out.append(("fail", C_NO_RECORD, addr, f"{r['new']} resolves to no vocab record"))
+            continue
+        if (rec.get("headword"), rec.get("kana")) != (r["headword"], r["kana"]):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"{r['new']} is {rec.get('headword')}/{rec.get('kana')} in the registry, "
+                        f"the row recorded {r['headword']}/{r['kana']} — the rewrite landed on a "
+                        f"different word"))
+            continue
+        body = lesson.get("body") or ""
+        refs = {u.get("ref") for u in lesson.get("unlocks", []) if u.get("type") == "vocab"}
+        if r["new"] not in refs and f'"{r["new"]}"' not in body:
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        "neither the unlock list nor the body carries the published address"))
+            continue
+        if f'"{r["old"]}"' in body or r["old"] in refs:
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        f"the lesson still addresses the record as {r['old']} — a row number or an "
+                        f"ambiguous headword is not an address (contracts/manifest.json "
+                        f"id_convention)"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    "lesson_ref_addresses.json": handle_lesson_ref_addresses,
     "sentence_text_repairs.json": handle_sentence_text_repairs,
     "jargon_pass2_repairs.json": handle_jargon_pass2,
     "translation_defect_repairs.json": handle_translation_defect,
@@ -829,6 +1081,7 @@ REGISTRY = {
     "grammar_record_repairs.json": handle_grammar_record_repairs,
     "grammar_followups.json": handle_grammar_followups,
     "level_evidence_repairs.json": handle_level_evidence,
+    "homograph_rulings.json": handle_homograph_rulings,
 }
 
 
@@ -862,6 +1115,20 @@ def main() -> int:
     sents, gram, ncourse = load_export(root)
     print(f"export: {len(sents)} sentences, {len(gram)} grammar points, {ncourse} course files "
           f"(root {root})")
+
+    LESSONS.update(load_lessons_export(root))
+    EXEMPT.update(load_exempt(root))
+    if len(LESSONS) < MIN_LESSONS:
+        die(f"{len(LESSONS)} lesson leaves under {root}/course, floor is {MIN_LESSONS} — the "
+            f"homograph rulings cannot be replayed against a course tree that is not there")
+    print(f"        {len(LESSONS)} lesson leaves, {len(EXEMPT['coverage'])} coverage + "
+          f"{len(EXEMPT['gating'])} gating exemptions (homograph-ruling replay)")
+
+    VOCAB_BY_SLUG.update({slug: rec for slug, (ent, _f, rec) in load_levelled(root).items()
+                          if ent == "vocab"})
+    if len(VOCAB_BY_SLUG) < MIN_VOCAB:
+        die(f"{len(VOCAB_BY_SLUG)} vocab records under {root}/corpus/vocab, floor is {MIN_VOCAB} — "
+            f"the address rewrites cannot be replayed against a registry that is not there")
 
     LEVELLED.update(load_levelled(root))
     print(f"        {len(LEVELLED)} levelled records across "

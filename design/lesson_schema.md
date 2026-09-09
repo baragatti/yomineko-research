@@ -52,9 +52,43 @@ record is the lesson leaf.
 |--------|------------------|---------|
 | `sent:` | `sentence.slug` | `sent:tatoeba-124708` |
 | `kanji:` | `kanji.character` | `kanji:食` |
-| `vocab:` | AUTHORING accepts `vocab.headword` or a numeric row id; the EXPORT resolves both to the published `vocab:<jmdict_id>` slug (93 headwords name more than one record, so a headword is not an address — ambiguous ones are decided by sibling ref / lesson level / introducing topic, and queued in `course/vocab_disambiguation_review.json` otherwise) | authoring `vocab:食べる` -> exported `vocab:1358280` |
+| `vocab:` | AUTHORING accepts `vocab.headword` or a numeric row id; the EXPORT resolves both to the published `vocab:<jmdict_id>` slug (93 headwords name more than one record, so a headword is not an address). Resolution order and the rule that settles most of it are below | authoring `vocab:食べる` -> exported `vocab:1358280` |
 | `gram:` | `grammar_point.key` | `gram:te-kudasai` |
 | `img:` `aud:` `vid:` | `asset.id` (registry) | `img:te-form-chart` |
+
+### Which record an ambiguous `vocab:<headword>` means
+
+`scripts/export/vocab_identity.py` decides, in this order, and says which tier decided:
+
+`unique` → `ruling` → **`reading`** → sibling filter → lesson level → introducing topic → frequency → `unresolved`.
+
+**The reading rule (W11a).** *When a lesson prints `<jp>かな</jp>` immediately after a `<vocab ref>` chip —
+separated by nothing but a punctuation-only `<text>` node — that kana is the lesson's own statement of which
+record it means, and it wins.* It is the strongest signal available and it is the only one that can separate
+two records the SAME lesson unlocks, so authoring a homograph this way is how you say which one you mean:
+
+```xml
+<item><vocab ref="vocab:品"/><text> (</text><jp>しな</jp><text>) = "artigo, mercadoria".</text></item>
+```
+
+Three details are load-bearing. The tier is consulted **per occurrence**, ahead of the per-(headword, lesson)
+decision cache, because 柄 is deliberately taught as え in one lesson and がら in another and may legitimately
+be both inside one body. It **abstains** unless exactly one candidate reads that way (位 names three records
+and two of them read くらい, so a printed くらい identifies nothing). And it reads only a **bare** `<jp>` whose
+content is kana: `<jp reading="ほうりつじょう">法律上</jp>` is an example compound the lesson happens to print
+nearby, not a gloss of the chip.
+
+Measured over all 322 lessons when the rule landed: 643 chips carry such an annotation, 17 on an ambiguous
+headword, 16 identify exactly one record — 12 confirming the previous pick and **4 contradicting it**
+(上/じょう, 柄/がら, 品/しな, 金/きん, each a card whose reading and gloss contradicted the sentence beside
+it). Two of the four had been "settled by frequency", which counted 作品/製品 for 品 and お金 for 金.
+
+Anything the reading rule cannot see falls through to the heuristics, and whatever they cannot settle is
+published to `course/vocab_disambiguation_review.json` for a teacher. A row a human has settled is recorded
+with its evidence in `research/derived/repairs/homograph_rulings.json` and loaded as the `ruling` tier;
+`validate_repairs_applied.py` replays every such row against the exported course tree, and a ruling that
+contradicts a printed reading is a hard error rather than a silent override. Test:
+`scripts/validate/test_vocab_identity_reading.py`.
 
 **Metadata refs** (in `needs`/`unlocks`/`srs`, resolved by the loader/validator against the closed enum):
 `kana:<script>-<row>`→`kana_family` · `conj:<form>`→conjugation form · `fam:<slug>`→kanji family ·

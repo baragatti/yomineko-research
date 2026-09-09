@@ -10,6 +10,10 @@
       "reason": "Redirect map {old vocab slug: current slug} written by export_corpus.py for the records scripts/migrate_vocab_repoint.py re-pointed onto the JMdict entry their JLPT list slot names (owner decision A9). A forwarding index, not a record set: it publishes no content, only the address a corrected identity now answers to. It sits beside corpus/vocab/ rather than inside it because the vocab entity glob is corpus/vocab/*.json and check_catalogue refuses a non-list sidecar in a registry glob — the same reason corpus/grammar_deprecated.json sits where it does."
     },
     {
+      "path": "corpus/families_deprecated.json",
+      "reason": "Redirect map {retired family slug: where the answer moved to} written by export_corpus.py for the family addresses W11b took out of service — the 51 materialized kanji_component caches owner decision D14 dropped in favour of kanji.components, and any topic-derived bucket a builder stops deriving. A tombstone index, not a record set: it publishes no content, only the address a retired grouping now resolves to. The value is either a surviving grp: slug or the exported field path that answers the question instead, because a retired family does not always have another family as its successor. It sits beside corpus/families/ rather than inside it because the family entity glob is corpus/families/families.json and check_catalogue refuses a non-list sidecar in a registry glob — the same reason corpus/grammar_deprecated.json sits where it does."
+    },
+    {
       "path": "course/outline.json",
       "reason": "Flat derived projection of the whole course tree for navigation UI. Every field in it is recomputed from the lesson leaves and gated for exact equality by validate_course_chain.py itself, so a schema would restate a shape that is already pinned by derivation."
     },

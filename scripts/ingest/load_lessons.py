@@ -44,7 +44,22 @@ _MEMBER = {"grammar": ("grammar_point", "key"), "vocab": ("vocab", "headword"), 
 
 
 def _member_id(con, mt: str, ident: str):
+    """Resolve a lesson ref's identifier to a registry row.
+
+    Order matters and is the reverse of how these forms rank as ADDRESSES. The published slug is
+    tried first (W11c: `research/derived/repairs/lesson_ref_addresses.json` rewrote 31 row-number
+    refs to `vocab:<jmdict_id>`, and without this branch `vocab:1189370` would have fallen through
+    to the row-id lookup, looked for row 1,189,370, found nothing, and loaded the unlock with a
+    warning and no `lesson_introduces` row). Then the natural key (headword / character / grammar
+    key), then the storage row number, which is still accepted so an unconverted authoring file
+    keeps loading. There is no collision between the last two: the smallest published vocab slug is
+    1000220 and the registry holds ~7,400 rows.
+    """
     tbl, col = _MEMBER[mt]
+    if mt == "vocab":
+        r = con.execute("SELECT id FROM vocab WHERE slug=?", (f"vocab:{ident}",)).fetchone()
+        if r is not None:
+            return r[0]
     r = con.execute(f"SELECT id FROM {tbl} WHERE {col}=?", (ident,)).fetchone()
     if r is None and ident.isdigit():  # numeric ref -> resolve by row id (disambiguates homographs)
         r = con.execute(f"SELECT id FROM {tbl} WHERE id=?", (int(ident),)).fetchone()
@@ -185,7 +200,12 @@ def backfill_introducing_topic(con) -> int:
             "WHERE lu.unlock_type=? GROUP BY lu.ref", (typ,)).fetchall()
         for ref, _ck, topic_id, lv in rows:
             ident = ref.split(":", 1)[1] if ":" in ref else ref
-            r = con.execute(f"SELECT id, introducing_topic_id FROM {tbl} WHERE {col}=?", (ident,)).fetchone()
+            r = None
+            if typ == "vocab":   # published slug first — see _member_id for why the order is this
+                r = con.execute("SELECT id, introducing_topic_id FROM vocab WHERE slug=?",
+                                (f"vocab:{ident}",)).fetchone()
+            if r is None:
+                r = con.execute(f"SELECT id, introducing_topic_id FROM {tbl} WHERE {col}=?", (ident,)).fetchone()
             if r is None and ident.isdigit():  # numeric ref -> by row id (homograph disambiguation)
                 r = con.execute(f"SELECT id, introducing_topic_id FROM {tbl} WHERE id=?", (int(ident),)).fetchone()
             if r and r[1] is None and topic_id is not None:

@@ -93,6 +93,9 @@ sys.path.append(str(_sys_scripts))
 from dbtarget import db_target, take_flag  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
+# True only when this run targets db/corpus.sqlite. Every `expect` block below counts rows in THAT
+# graph; see the guard at the call site of check_preconditions for why it is enforced nowhere else.
+LIVE_INDEX = True
 
 try:
     import jaconv
@@ -1240,7 +1243,9 @@ def is_applied(con: sqlite3.Connection, row: dict) -> bool:
 
 # ==================================================================================================
 def main() -> int:
+    global LIVE_INDEX
     dbpath = db_target(ROOT / "db" / "corpus.sqlite")
+    LIVE_INDEX = Path(dbpath).resolve() == (ROOT / "db" / "corpus.sqlite").resolve()
     root_override = take_flag("--root")
     root = Path(root_override) if root_override else ROOT
     ap = argparse.ArgumentParser(description=__doc__)
@@ -1344,6 +1349,21 @@ def main() -> int:
         if partial:
             continue
         problems += check_preconditions(r, plans[r["vocab_id"]], exam)
+    # W11c — the same rule migrate_grammar_merge.py states: these counts are a DRIFT CHECK ON THE
+    # LIVE INDEX, and a from-scratch replay is not it. W09's rewrite of research/derived/lessons/
+    # is committed, so on a replay `lesson_unlocks`, `lesson_bodies` and `cks` already name the new
+    # slug and measure 0; the family builders now run at the END of the manifest, so
+    # `family_dropped` is 0; `reading` holds 130 rebuilt rows against the live index's 286 (see
+    # scripts/validate/README.md), so `reading_uses_dropped` differs; and the exam banks the plan
+    # reads live under the repo, not the work root. None of that is drift and all of it made the
+    # full replay abort here. Enforced against db/corpus.sqlite only; on any other database the
+    # lines are printed instead, and what actually checks a replay is
+    # validate_index_rebuildable.py's byte-for-byte diff of the rebuilt export.
+    if problems and not LIVE_INDEX:
+        for line in problems:
+            print(f"  precondition (NOT ENFORCED — target is {dbpath}, not the live index, where "
+                  f"these counts were measured): {line}")
+        problems = []
     for line in problems:
         print(f"  PRECONDITION {line}")
     if problems:

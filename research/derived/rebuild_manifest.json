@@ -2,8 +2,8 @@
   "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
   "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
   "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
-  "step_count": 114,
-  "enabled_count": 78,
+  "step_count": 116,
+  "enabled_count": 80,
   "steps": [
     {
       "n": 1,
@@ -576,52 +576,6 @@
       "n": 37,
       "phase": "families",
       "quick_family": null,
-      "script": "scripts/ingest/build_families.py",
-      "args": [],
-      "enabled": true,
-      "first_commit": "f1de6407",
-      "first_commit_date": "2026-06-13",
-      "writes": [
-        "family",
-        "family_member"
-      ],
-      "note": ""
-    },
-    {
-      "n": 38,
-      "phase": "families",
-      "quick_family": null,
-      "script": "scripts/ingest/build_families_full.py",
-      "args": [],
-      "enabled": true,
-      "first_commit": "336872b3",
-      "first_commit_date": "2026-06-14",
-      "writes": [
-        "family",
-        "family_member"
-      ],
-      "note": ""
-    },
-    {
-      "n": 39,
-      "phase": "families",
-      "quick_family": null,
-      "script": "scripts/ingest/fix_contrasts.py",
-      "args": [],
-      "enabled": true,
-      "first_commit": "4175ca66",
-      "first_commit_date": "2026-06-14",
-      "writes": [
-        "family",
-        "family_member",
-        "grammar_related"
-      ],
-      "note": ""
-    },
-    {
-      "n": 40,
-      "phase": "families",
-      "quick_family": null,
       "script": "scripts/ingest/fix_derived.py",
       "args": [],
       "enabled": true,
@@ -634,7 +588,7 @@
       "note": ""
     },
     {
-      "n": 41,
+      "n": 38,
       "phase": "bank",
       "quick_family": null,
       "script": "scripts/ingest/replay_all.py",
@@ -648,7 +602,7 @@
       "note": "wraps reset_sentences, persist_batch x42, relink_vocab, particle_link --target 8, repair_glosses, clean_emdash --apply, load_lessons, build_sentence_vocab"
     },
     {
-      "n": 42,
+      "n": 39,
       "phase": "bank",
       "quick_family": null,
       "script": "scripts/ingest/ingest_mined_stages.py",
@@ -662,7 +616,7 @@
       "note": "the 323 mined Tatoeba sentences behind the speaking stages; missed by the first writer sweep because it persists through persist_dissection rather than its own INSERT"
     },
     {
-      "n": 43,
+      "n": 40,
       "phase": "bank",
       "quick_family": null,
       "script": "scripts/ingest/apply_punchlist.py",
@@ -678,7 +632,7 @@
       "note": "te-form anchor + recompute sentence.level"
     },
     {
-      "n": 44,
+      "n": 41,
       "phase": "bank",
       "quick_family": null,
       "script": "scripts/ingest/build_readings.py",
@@ -692,7 +646,7 @@
       "note": "in-lesson reading boxes, selected from the bank"
     },
     {
-      "n": 45,
+      "n": 42,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/ingest/tr_load.py",
@@ -708,7 +662,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task grammar_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
     },
     {
-      "n": 46,
+      "n": 43,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/ingest/tr_load.py",
@@ -724,7 +678,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task n2n1_pt; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
     },
     {
-      "n": 47,
+      "n": 44,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/ingest/tr_load.py",
@@ -740,7 +694,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task sent_trans_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
     },
     {
-      "n": 48,
+      "n": 45,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/ingest/tr_load.py",
@@ -756,7 +710,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (task sentence_en; the recorded 'full' was never a tr_load task — there is no research/derived/tr/full/_map.json)"
     },
     {
-      "n": 49,
+      "n": 46,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/ingest/tr_form_meanings.py",
@@ -772,7 +726,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step. MUST run after the tr_load steps above: grammar_en carries form_meanings through the generic string/list pipeline, which flattens the {form: meaning} dict this step reassembles"
     },
     {
-      "n": 50,
+      "n": 47,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/accent_sweep_localized.py",
@@ -788,7 +742,7 @@
       "note": "deterministic diacritic restore"
     },
     {
-      "n": 51,
+      "n": 48,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -804,7 +758,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class family.label; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 52,
+      "n": 49,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -820,7 +774,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.explanation; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 53,
+      "n": 50,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -836,7 +790,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.formation; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 54,
+      "n": 51,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -852,7 +806,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.label; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 55,
+      "n": 52,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -868,7 +822,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class grammar.nuance; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 56,
+      "n": 53,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -884,7 +838,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class kanji.meanings; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 57,
+      "n": 54,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -900,7 +854,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class particle.explanation; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 58,
+      "n": 55,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -916,7 +870,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class particle.function; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 59,
+      "n": 56,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -932,7 +886,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class sentence.structure_explanation; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 60,
+      "n": 57,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -948,7 +902,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.conjugation_note; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 61,
+      "n": 58,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -964,7 +918,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.gloss; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 62,
+      "n": 59,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -980,7 +934,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class token.role; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 63,
+      "n": 60,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/gt_audit_apply.py",
@@ -996,7 +950,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step (field-class vocab.gloss; the recorded '<key>' was a placeholder)"
     },
     {
-      "n": 64,
+      "n": 61,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/descaffold_strip.py",
@@ -1012,7 +966,7 @@
       "note": "deterministic tier-1 de-scaffolder"
     },
     {
-      "n": 65,
+      "n": 62,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/descaffold_apply.py",
@@ -1026,7 +980,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step"
     },
     {
-      "n": 66,
+      "n": 63,
       "phase": "translation",
       "quick_family": null,
       "script": "scripts/validate/apply_full_audit.py",
@@ -1038,7 +992,7 @@
       "note": "inputs live under research/derived/tr/, which .gitignore excludes: a clean clone cannot run this step"
     },
     {
-      "n": 67,
+      "n": 64,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/ingest/fix_notation_db.py",
@@ -1052,7 +1006,7 @@
       "note": ""
     },
     {
-      "n": 68,
+      "n": 65,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/ingest/modernize_nurse_term.py",
@@ -1073,7 +1027,7 @@
       "note": ""
     },
     {
-      "n": 69,
+      "n": 66,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fable5_kanji_apply.py",
@@ -1088,7 +1042,7 @@
       "note": ""
     },
     {
-      "n": 70,
+      "n": 67,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fable5_fix_romaji.py",
@@ -1104,7 +1058,7 @@
       "note": ""
     },
     {
-      "n": 71,
+      "n": 68,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fable5_fix_sekken_level.py",
@@ -1118,7 +1072,7 @@
       "note": ""
     },
     {
-      "n": 72,
+      "n": 69,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fable5_vocab_apply.py",
@@ -1134,7 +1088,7 @@
       "note": ""
     },
     {
-      "n": 73,
+      "n": 70,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fable5_fix_whitespace_tokens.py",
@@ -1149,7 +1103,7 @@
       "note": ""
     },
     {
-      "n": 74,
+      "n": 71,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fable5_sentences_apply.py",
@@ -1165,7 +1119,7 @@
       "note": ""
     },
     {
-      "n": 75,
+      "n": 72,
       "phase": "repair",
       "quick_family": "grammar",
       "script": "scripts/fable5_grammar_apply.py",
@@ -1180,7 +1134,7 @@
       "note": ""
     },
     {
-      "n": 76,
+      "n": 73,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fable5_lessons_apply.py",
@@ -1196,7 +1150,7 @@
       "note": ""
     },
     {
-      "n": 77,
+      "n": 74,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fix_sokuon_romaji.py",
@@ -1214,7 +1168,7 @@
       "note": ""
     },
     {
-      "n": 78,
+      "n": 75,
       "phase": "repair",
       "quick_family": "grammar",
       "script": "scripts/fix_instruction_leak_grammar.py",
@@ -1230,7 +1184,7 @@
       "note": ""
     },
     {
-      "n": 79,
+      "n": 76,
       "phase": "repair",
       "quick_family": "grammar",
       "script": "scripts/apply_phase4_grammar.py",
@@ -1247,7 +1201,7 @@
       "note": ""
     },
     {
-      "n": 80,
+      "n": 77,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fix_homophone_vocab_links.py",
@@ -1264,7 +1218,7 @@
       "note": ""
     },
     {
-      "n": 81,
+      "n": 78,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_ptliteral_round2.py",
@@ -1280,7 +1234,7 @@
       "note": ""
     },
     {
-      "n": 82,
+      "n": 79,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_redissect_round2.py",
@@ -1297,7 +1251,7 @@
       "note": ""
     },
     {
-      "n": 83,
+      "n": 80,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fix_stale_token_romaji.py",
@@ -1313,7 +1267,7 @@
       "note": ""
     },
     {
-      "n": 84,
+      "n": 81,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_layer_a_pairing.py",
@@ -1329,7 +1283,7 @@
       "note": ""
     },
     {
-      "n": 85,
+      "n": 82,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_romaji_disputes.py",
@@ -1346,7 +1300,7 @@
       "note": ""
     },
     {
-      "n": 86,
+      "n": 83,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_escalated_sentences.py",
@@ -1365,7 +1319,7 @@
       "note": ""
     },
     {
-      "n": 87,
+      "n": 84,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/ingest/merge_kanji_reading_notes.py",
@@ -1382,7 +1336,7 @@
       "note": ""
     },
     {
-      "n": 88,
+      "n": 85,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/fix_particle_function_type.py",
@@ -1398,7 +1352,7 @@
       "note": ""
     },
     {
-      "n": 89,
+      "n": 86,
       "phase": "repair",
       "quick_family": "grammar",
       "script": "scripts/merge_grammar_formation.py",
@@ -1414,7 +1368,7 @@
       "note": ""
     },
     {
-      "n": 90,
+      "n": 87,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/merge_sentence_structure.py",
@@ -1430,7 +1384,7 @@
       "note": ""
     },
     {
-      "n": 91,
+      "n": 88,
       "phase": "repair",
       "quick_family": "grammar",
       "script": "scripts/apply_grammar_formation_repairs.py",
@@ -1446,7 +1400,7 @@
       "note": ""
     },
     {
-      "n": 92,
+      "n": 89,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_qa_instruction_leaks.py",
@@ -1461,7 +1415,7 @@
       "note": "--check is the dry run; bare invocation applies"
     },
     {
-      "n": 93,
+      "n": 90,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_missing_homograph_unlocks.py",
@@ -1475,7 +1429,7 @@
       "note": ""
     },
     {
-      "n": 94,
+      "n": 91,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_phase7_content_repairs.py",
@@ -1494,7 +1448,7 @@
       "note": ""
     },
     {
-      "n": 95,
+      "n": 92,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_readings_furigana_repairs.py",
@@ -1508,7 +1462,7 @@
       "note": ""
     },
     {
-      "n": 96,
+      "n": 93,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_en_anchor_backfill.py",
@@ -1523,7 +1477,7 @@
       "note": "cannot apply in a rebuild: it recomputes its own targets from the database ('every sentence the exporter would ship with no en anchor'), and with the translation steps off that set is 135 records wider than research/derived/tatoeba_mined_stages.json can answer for, so it refuses all of them and exits 2. 37 stay unanswerable even with the tr/ trees restored"
     },
     {
-      "n": 97,
+      "n": 94,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_godan_u_exception.py",
@@ -1537,7 +1491,7 @@
       "note": ""
     },
     {
-      "n": 98,
+      "n": 95,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_sentence_text_repairs.py",
@@ -1551,7 +1505,7 @@
       "note": "cannot apply in a rebuild: 135 of its anchors are localized_text rows the rebuild does not have (109 sentence structure_explanation, the rest translation_literal), so it refuses them and exits 2"
     },
     {
-      "n": 99,
+      "n": 96,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_jargon_pass2.py",
@@ -1565,7 +1519,7 @@
       "note": "cannot apply in a rebuild: 90 anchors are structure_explanation rows the rebuild does not have"
     },
     {
-      "n": 100,
+      "n": 97,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_stage_tag_backfill.py",
@@ -1579,7 +1533,7 @@
       "note": ""
     },
     {
-      "n": 101,
+      "n": 98,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_kanji_record_repairs.py",
@@ -1594,7 +1548,7 @@
       "note": ""
     },
     {
-      "n": 102,
+      "n": 99,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_reading_titles.py",
@@ -1608,7 +1562,7 @@
       "note": "cannot apply in a rebuild: 189 of the reading slugs it names do not exist. db/corpus.sqlite holds 286 reading rows accumulated over every historical run of build_readings.py; one replay of today's script over today's lessons builds 130"
     },
     {
-      "n": 103,
+      "n": 100,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_readings_composition_repairs.py",
@@ -1622,7 +1576,7 @@
       "note": ""
     },
     {
-      "n": 104,
+      "n": 101,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_translation_defect_repairs.py",
@@ -1636,7 +1590,7 @@
       "note": "cannot apply in a rebuild: 10 anchors are en-locale localized_text rows the translation steps write"
     },
     {
-      "n": 105,
+      "n": 102,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_vocab_gloss_repairs.py",
@@ -1652,7 +1606,7 @@
       "note": "cannot apply in a rebuild: 184 sense anchors differ — vocab senses come from reauthor_vocab_apply.py (step 29), which a clean clone cannot run"
     },
     {
-      "n": 106,
+      "n": 103,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_grammar_record_repairs.py",
@@ -1668,7 +1622,7 @@
       "note": "cannot apply in a rebuild: 70 anchors (grammar nuance/formation/explanation, both locales) are missing or hold different text"
     },
     {
-      "n": 107,
+      "n": 104,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_translation_followups.py",
@@ -1683,7 +1637,7 @@
       "note": "cannot apply in a rebuild without the en locale; it passes as soon as the tr_load steps can run"
     },
     {
-      "n": 108,
+      "n": 105,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_grammar_followups.py",
@@ -1699,7 +1653,7 @@
       "note": "cannot apply in a rebuild: 12 sentences carry different grammar tags than the pass was written against, and it refuses to re-judge them"
     },
     {
-      "n": 109,
+      "n": 106,
       "phase": "export_layer",
       "quick_family": null,
       "script": "scripts/contracts/normalize_booleans.py",
@@ -1711,7 +1665,7 @@
       "note": "rewrites the committed JSON, not the DB; its producers were fixed at source, so a re-export should reproduce it — that claim is what this validator now measures"
     },
     {
-      "n": 110,
+      "n": 107,
       "phase": "export_layer",
       "quick_family": null,
       "script": "scripts/contracts/migrate_exam_banks_p7.py",
@@ -1723,7 +1677,7 @@
       "note": "rewrites the committed exam banks in place and says so: the banks cannot be regenerated yet (W17/W18). Out of scope here; the exam builders are not run by the rebuild validator"
     },
     {
-      "n": 111,
+      "n": 108,
       "phase": "finalise",
       "quick_family": null,
       "script": "scripts/ingest/build_sentence_vocab.py",
@@ -1737,7 +1691,7 @@
       "note": "re-run last: the token-level repairs above move token.vocab_id, and this is the single writer that restores all three linking rules"
     },
     {
-      "n": 112,
+      "n": 109,
       "phase": "repair",
       "quick_family": "grammar",
       "script": "scripts/apply_level_evidence.py",
@@ -1755,7 +1709,7 @@
       "note": "W10 / owner decision A4: level_agreement repairs from the tracked table research/derived/repairs/level_evidence_repairs.json. --db-only because the rebuild exports the tree itself afterwards; run without it by hand and the script also patches the committed JSON. Placed last: nothing downstream reads level_agreement, and the level fields it touches are written by steps far earlier in the chain"
     },
     {
-      "n": 113,
+      "n": 110,
       "phase": "repair",
       "quick_family": "grammar",
       "script": "scripts/migrate_grammar_merge.py",
@@ -1781,7 +1735,7 @@
       "note": "W08 / owner decision A3: merges the two duplicate-identity grammar points (gram:gp -> gram:da-desu, gram:gp-152 -> gram:te-hoshii) with no content loss. Runs LAST, and has to: it consumes the finished graph, and every earlier step that writes grammar_point, sentence_grammar, family_member or a lesson body would otherwise re-introduce the loser's edges after the merge. Idempotent -- a second run reads grammar_point.deprecated_by and does nothing. It also rewrites the authoring source under research/derived/lessons/, which the rebuild does not re-read, so on a rebuild that part is a no-op re-proof rather than a change. Its EXACT preconditions (MERGES[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of merging blind"
     },
     {
-      "n": 114,
+      "n": 111,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/migrate_vocab_repoint.py",
@@ -1809,7 +1763,84 @@
         "raw_jmdict_form",
         "kanji_reading"
       ],
-      "note": "W09 / owner decision A9: re-points the eight vocab records whose slug named the wrong JMdict entry onto the entry their JLPT list slot names (vocab:1472870 -> vocab:1010080 はい, and seven more), and re-verifies every sentence_vocab / token link against the new entry instead of carrying it over. Runs after 113 and has to: it consumes the finished graph, and step 111 (build_sentence_vocab) would otherwise rebuild the links this step corrects. Idempotent -- a second run reads vocab.repointed_from and does nothing. Its EXACT preconditions (REPOINTS[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of re-pointing blind. It also edits two things the rebuild does not re-read: the authoring source under research/derived/lessons/ and corpus/exam_banks/*.json (the banks are not regenerable until W17/W18), so on a rebuild those parts are a no-op re-proof. The 14 records the queue lists that are NOT re-pointed are in REFUSED with the measured reason for each -- thirteen because the intended entry is already another record's published address (a merge, not a re-point) and one (434 動/どう) because its intended headword 如何 is already record 46's published headword, which would collapse the cumulative_known_set of 239 lessons It also re-derives vocab.freq_rank for the eight new written forms from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule (a rank measured for 肺 is not a rank for はい), and moves the vocab refs and one distractor surface inside course/speak/**/*.json, which no exporter regenerates. Two passes run AFTER the addresses move and are keyed on the data rather than on vocab.repointed_from, so they are idempotent and reach an index an earlier version migrated: BODY_FIXES re-authors the nine pt-BR gloss lines that sat beside a moved chip (a moved address left true chips carrying false sentences -- 'はい: pulmão' -- which a JSON diff of the body cannot see, only the rendered lesson-NN.md can) and marks those six lessons needs_review; and the kanji-example rule drops an example edge whose record no longer has that reading, not merely one that lost the kanji."
+      "note": "W09 / owner decision A9: re-points the eight vocab records whose slug named the wrong JMdict entry onto the entry their JLPT list slot names (vocab:1472870 -> vocab:1010080 はい, and seven more), and re-verifies every sentence_vocab / token link against the new entry instead of carrying it over. Runs after 110 and has to: it consumes the finished graph, and step 108 (build_sentence_vocab) would otherwise rebuild the links this step corrects. Idempotent -- a second run reads vocab.repointed_from and does nothing. Its EXACT preconditions (REPOINTS[].expect) are measured against the rebuilt graph before any write, so a rebuild that produced a different shape refuses here instead of re-pointing blind. It also edits two things the rebuild does not re-read: the authoring source under research/derived/lessons/ and corpus/exam_banks/*.json (the banks are not regenerable until W17/W18), so on a rebuild those parts are a no-op re-proof. The 14 records the queue lists that are NOT re-pointed are in REFUSED with the measured reason for each -- thirteen because the intended entry is already another record's published address (a merge, not a re-point) and one (434 動/どう) because its intended headword 如何 is already record 46's published headword, which would collapse the cumulative_known_set of 239 lessons It also re-derives vocab.freq_rank for the eight new written forms from research/derived/frequency/tatoeba_lemma_freq.json by build_frequency.py's own rule (a rank measured for 肺 is not a rank for はい), and moves the vocab refs and one distractor surface inside course/speak/**/*.json, which no exporter regenerates. Two passes run AFTER the addresses move and are keyed on the data rather than on vocab.repointed_from, so they are idempotent and reach an index an earlier version migrated: BODY_FIXES re-authors the nine pt-BR gloss lines that sat beside a moved chip (a moved address left true chips carrying false sentences -- 'はい: pulmão' -- which a JSON diff of the body cannot see, only the rendered lesson-NN.md can) and marks those six lessons needs_review; and the kanji-example rule drops an example edge whose record no longer has that reading, not merely one that lost the kanji."
+    },
+    {
+      "n": 112,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_lesson_ref_addresses.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": null,
+      "first_commit_date": "2026-09-09",
+      "writes": [
+        "lesson_unlocks",
+        "localized_text"
+      ],
+      "note": "W11c. Applies research/derived/repairs/lesson_ref_addresses.json: 31 lesson refs that named a row of this very database, plus the two `vocab:側` refs the resolver could only separate through vocab.introducing_topic_id, rewritten to the record's published slug in BOTH layers -- lesson_unlocks and the lesson body here, and research/derived/lessons/<slug>.json, which is what a rebuild replays. On a replay the source half is already converted, so this is a no-op re-proof; the identity is re-derived from the vocab registry before anything is written, so a renumbered index refuses instead of re-pointing a chip. Runs before 113 because apply_homograph_rulings.py asserts one of these refs (les:n5-passado-05 unlocks both siblings of 何方 and its `ref_written` is the slug form). It also fixes the reason a full replay could not finish: with `vocab:側` unresolved, both lessons that unlock it resolved to one record and familylib.unlock_topic_map() aborted at step 116."
+    },
+    {
+      "n": 113,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_homograph_rulings.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": null,
+      "first_commit_date": "2026-09-09",
+      "writes": [
+        "lesson_unlocks",
+        "localized_text",
+        "lesson"
+      ],
+      "note": "W11a / owner decision A6. Applies research/derived/repairs/homograph_rulings.json: five records that a lesson already teaches in its own body but that no lesson unlocked (held in course/coverage_exemptions.json) become real unlocks in BOTH layers -- lesson_unlocks here and research/derived/lessons/<slug>.json, which is what a rebuild replays -- and lesson.cumulative_known_set is recomputed with the ingest's own routine because build_readings.py and mine_n3_targets.py read that column. One lesson (les:n5-passado-05) also gets a one-sentence prose re-cut so どなた carries its own chip; it is the only lesson that must unlock both siblings of one headword, so its new unlock is a row-id ref. The fourteen disambiguation rulings in the same table write NOTHING: seven are derived at export time by vocab_identity.py's `reading` tier and seven are read from the table by its `ruling` tier, and this script re-runs the live resolver over the live bodies and refuses to commit anything if a row does not reproduce -- including a check that every row marked `reading` still resolves with the ruling table switched OFF, so the table can never cover for a rule that stopped working. Runs after 111 (migrate_vocab_repoint) because it asserts published slugs. It also edits course/coverage_exemptions.json and course/gating_exemptions.json, which no exporter regenerates, so on a rebuild those parts are a no-op re-proof. Idempotent."
+    },
+    {
+      "n": 114,
+      "phase": "families",
+      "quick_family": null,
+      "script": "scripts/ingest/build_families.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "f1de6407",
+      "first_commit_date": "2026-06-13",
+      "writes": [
+        "family",
+        "family_member"
+      ],
+      "note": "W11b: RECOMPUTES the class families (six conjugation/adjective classes + counters) over the levels course_module declares taught, instead of the old `if COUNT(*) FROM family > 0: skip` guard that made it a permanent no-op after its first run. Owner decision D14 also retires the 51 materialized kanji_component families here (family.deprecated_by = 'kanji.components'): they were a cache of the store kanji.components is exported from, 0 of 51 still matched it, and design/schema_v2.md answers the component query from that store directly. MOVED from step 37 in the pre-W11b numbering to after the lesson chain: the family layer is now derived from lesson_unlocks, which replay_all.py (load_lessons) does not populate until step 37 and which steps 90, 110, 111, 112 and 113 then correct. Built at 37 it would have derived every topic-bound family from an empty ledger."
+    },
+    {
+      "n": 115,
+      "phase": "families",
+      "quick_family": null,
+      "script": "scripts/ingest/build_families_full.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "336872b3",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "family",
+        "family_member"
+      ],
+      "note": "W11b: RECOMPUTES the topic-bound families from the LIVE unlock ledger (lesson_unlocks) instead of the frozen grammar_point.introducing_topic_id snapshot that put 272 of 364 grammar memberships in the wrong family, and drops the hardcoded `level IN ('n5','n4')` in favour of course_module.level. Renames the two types that lied about themselves: function_set -> topic_set and semantic_field -> topic_residual (the slugs, which are published addresses, do not change). Must run after the lesson chain and after the three identity migrations, for the same reason as the step before it."
+    },
+    {
+      "n": 116,
+      "phase": "families",
+      "quick_family": null,
+      "script": "scripts/ingest/fix_contrasts.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "4175ca66",
+      "first_commit_date": "2026-06-14",
+      "writes": [
+        "family",
+        "family_member",
+        "grammar_related"
+      ],
+      "note": "Rebuilds the two curated contrast_pair families and the core particle_set with EXACT grammar keys, and (W11b) seeds family_related with the two mechanically-derivable sub_family edges -- including design/schema_v2.md C3's one concrete example edge, grp:wa-vs-ga -> grp:particles-core, which the data had never carried. Runs last of the three so both endpoints of every edge are already live families."
     }
   ],
   "excluded": {

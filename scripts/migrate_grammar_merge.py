@@ -106,12 +106,17 @@ sys.path.append(str(_sys_scripts))
 from dbtarget import db_target, take_flag  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
+# True only when this run targets db/corpus.sqlite. `expect` below is a drift check on THAT graph;
+# see the comment beside check_preconditions' call site for why it is not enforced anywhere else.
+LIVE_INDEX = True
 
 
 # ==================================================================================================
 # The table. One row per merge; everything else in this file is generic machinery over it.
 # `expect` is an EXACT precondition, measured on the pre-merge index and re-measured before any write:
 # if the graph is not the shape the report described, this script refuses rather than guessing.
+# It is enforced against db/corpus.sqlite only — a scratch rebuild is a different graph by
+# construction and is checked, harder, by validate_index_rebuildable.py's byte diff.
 # ==================================================================================================
 MERGES: list[dict] = [
     {
@@ -726,7 +731,9 @@ def is_applied(con: sqlite3.Connection, m: dict) -> bool:
 
 
 def main() -> int:
+    global LIVE_INDEX
     dbpath = db_target(ROOT / "db" / "corpus.sqlite")
+    LIVE_INDEX = Path(dbpath).resolve() == (ROOT / "db" / "corpus.sqlite").resolve()
     root_override = take_flag("--root")
     root = Path(root_override) if root_override else ROOT
     ap = argparse.ArgumentParser(description=__doc__)
@@ -838,16 +845,36 @@ def main() -> int:
         print(f"  why: {m['why']}")
         content = diff_content(con, L, W)
         plan = plan_edges(con, L, W)
-        # A PARTIAL index (validate_index_rebuildable --quick reconstructs the grammar family only)
-        # has empty lesson / sentence / exam tables, so every row-count expectation written
-        # against the real index is out of scope there — the plan functions simply find no rows
-        # to move. Preconditions are a drift check for the REAL index and the full rebuild, both
-        # of which populate every table; a partial index is recognised by its empty lesson table.
+        # `expect` is a DRIFT CHECK ON THE LIVE INDEX — the graph these counts were measured
+        # against on 2026-09-02. Two other databases exist and neither is that graph:
+        #
+        #   * a PARTIAL index (validate_index_rebuildable --quick reconstructs the grammar family
+        #     only) has empty lesson / sentence / exam tables, so the plan functions find nothing;
+        #   * a FROM-SCRATCH REPLAY (scripts/rebuild_index.py into a scratch DB) is post-migration
+        #     on the authoring side before this step even runs. `rewrite_authoring()` re-pointed
+        #     research/derived/lessons/*.json when W08 landed and that rewrite is COMMITTED, so
+        #     load_lessons.py rebuilds `lesson_unlocks`, `lesson_introduces`, `exercise_item` and
+        #     `cumulative_known_set` already naming the survivor — every lesson-side count is 0 by
+        #     construction. W11b then moved the family builders to the end of the manifest, so
+        #     `family_member` is 0 as well, because no family exists yet at this step. Both are
+        #     "there is nothing left to move", not drift, but the script refused and the full
+        #     replay had aborted here since (the reviewer reproduced it under HEAD's manifest too).
+        #
+        # So the counts are enforced only against `db/corpus.sqlite`. That is not a hole: what
+        # checks a replay is validate_index_rebuildable.py, which diffs the rebuilt export against
+        # the committed tree BYTE FOR BYTE — strictly stronger than a row count. On any other
+        # database the measured-vs-expected lines are still PRINTED, so a human replaying sees
+        # exactly what differs.
         expect = m["expect"]
         if con.execute("SELECT COUNT(*) FROM lesson").fetchone()[0] == 0:
             print(f"  {m['loser']}: partial index (no lessons) — preconditions out of scope")
             expect = {}
         pre = check_preconditions(m["loser"], plan, expect)
+        if pre and not LIVE_INDEX:
+            for line in pre:
+                print(f"  precondition (NOT ENFORCED — target is {dbpath}, not the live index, "
+                      f"where these counts were measured): {line}")
+            pre = []
         if pre:
             for line in pre:
                 print(f"  PRECONDITION FAILED: {line}")

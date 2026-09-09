@@ -25,10 +25,20 @@ WHAT IT ASSERTS
 4. A baselined file that has started matching the committed export is reported, so the entry is deleted.
    The baseline may only shrink.
 
-WHAT THE FIRST FULL RUN SAID, 2026-09-02
-----------------------------------------
-137 of 787 exported files rebuild byte-identically; 650 do not, and the honest reading is that the
-answer to "is the index regenerable" is *not yet*. The causes are in `rebuild_baseline.json` under
+WHAT THE FULL RUN SAYS, 2026-09-09 (first recorded 2026-09-02)
+--------------------------------------------------------------
+147 of 790 exported files rebuild byte-identically; 643 do not, and the honest reading is that the
+answer to "is the index regenerable" is *not yet*. It was 137 of 787 when this was first recorded,
+and for six days in between the full mode could not run at all: it aborted at migrate_grammar_merge,
+whose `expect` preconditions count rows in the LIVE index and legitimately measure 0 in a replay
+whose authoring layer is already post-migration. W11c stopped enforcing those counts anywhere but
+`db/corpus.sqlite`, wrote 39 lesson refs as published slugs so a replay stops depending on the
+placement column `place_items.py` recomputes, and let familylib take the earliest unlocking lesson
+(with a warning) instead of aborting on the 221 duplicate kanji unlocks `build_exam_kanji_lessons.py`
+produces in a replay. The eight files that moved into the byte-identical column are the eight the
+address rewrite fixed: `course/n5/topic-08-perguntas/lesson-0{1..6}.json` and
+`course/n5/topic-09-numeros-tempo/lesson-0{1,2}.json`, where `vocab:側` and `vocab:中` used to
+resolve to the wrong sibling in a rebuild. The causes are in `rebuild_baseline.json` under
 `_causes`, keyed per file. Twelve manifest steps cannot run at all because their inputs are
 `.gitignore`d or were never written to disk; nine repair steps then refuse every row because they
 exact-match text those steps wrote. Beyond that the database is a nine-month accumulation and this is
