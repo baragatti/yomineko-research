@@ -56,8 +56,8 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 #### Hora de praticar
 
 #### Leitura
-> 📖 きのうデパートで白い靴を買いました。カメラにフィルムを入れるのを忘れた。この写真を見るたびに、父を思い出す。月曜日から金曜日まで雪だったんだよ。あなたは絵を書くのがじょうずですね。とても寒かったけれども私は外出した。 — Ontem comprei sapatos brancos em uma loja de departamentos. Esqueci de colocar o filme na câmera. Toda vez que vejo esta foto, me lembro do meu pai. Nevou de segunda a sexta-feira, viu. Você desenha muito bem, né? Embora estivesse muito frio, eu saí.
-> 📖 あっという間に４０度近くまで熱が出た。二人の生徒が１台のコンピュータを使う。話してる最中に割り込んでこないでよ。この問題に関して、３つの問題がある。問題は彼が文無しであるということだ。百歳以上生きる人はほとんどいない。 — Num piscar de olhos, a febre subiu para quase 40 graus. Dois alunos usam um computador. Não fica me interrompendo enquanto eu estou falando! A respeito dessa questão, há três problemas. O problema é que ele está sem um tostão. Quase ninguém vive mais de cem anos.
+> 📖 友だちから、あしたの会は六時からだという電話がありました。場所は駅の前の店だということです。おくれる時は電話してくれ、とも言われました。あれ、六時からだっけ。もう一度聞いてみたら、本当は七時だということでした。大事なことは二度聞いたほうがいい、ということですね。 — Recebi uma ligação de um amigo dizendo que o encontro de amanhã é a partir das seis. O lugar, segundo ele, é aquele restaurante em frente à estação. Ele disse também: se for atrasar, me liga. Peraí, era a partir das seis mesmo? Perguntei de novo e ele disse que, na verdade, é às sete. Ou seja, o melhor é confirmar duas vezes as coisas importantes, né?
+> 📖 部長から、明日の会議は午後三時からだということです。その前に、みんなに電話をしてくれと言われました。あれ、部長にはもう電話したっけ。会議のあとで、新しい店に行くということです。その店は、くつをぬいで上がる店だということです。きれいなくつしたをはいて行かないといけませんね。 — O chefe disse que a reunião de amanhã é às três da tarde. Me pediram para ligar para todo mundo antes disso. Opa, será que eu já liguei para o chefe? Falaram que depois da reunião a gente vai a um restaurante novo. Dizem que é um lugar onde você tira o sapato para entrar. Então tenho que ir de meia limpa, né.
 - Consigo ler e reconhecer as 18 palavras novas desta lição com suas leituras corretas.
 - Sei usar o vocabulário em frases de relato, citação e definição apoiado na gramática já estudada.
 - Distingo pares de mesma leitura, como 履く e 吐く (はく), pelo kanji e pelo contexto.

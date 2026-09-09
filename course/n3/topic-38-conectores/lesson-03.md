@@ -62,7 +62,7 @@ O kanji 首 significa "pescoço, cabeça". É um pictograma de uma cabeça com c
 #### Hora de praticar
 
 #### Leitura
-> 📖 この道を行ってもダメですよ。工事中ですから。私の車は、いつでも使っていいですからね。とても高いですから買いませんでした。なぜならそこにあるからさ。それをしなくちゃいけないって分かってるんだよね？ — Por essa rua não dá, viu. É que está em obras. Pode usar o meu carro quando quiser, viu. Como era muito caro, eu não comprei. Porque está lá, ora. Você sabe que precisa fazer isso, né?
+> 📖 明日の午後の集まりはありません。なぜなら、大きなあらしが来て、電車も止まるかもしれないからです。ですから、明日は外に出ないでください。あらしのあとは道もあぶないです。ですから、みなさん、気をつけてください。新しい日はあとでれんらくします。 — Não haverá encontro amanhã à tarde. Isso porque vem vindo uma tempestade grande e os trens também podem parar. Por isso, amanhã não saiam de casa. Depois da tempestade as ruas também ficam perigosas. Por isso, pessoal, tomem cuidado. Avisaremos a nova data mais para frente.
 - Justifico um pedido com ですから, com o motivo vindo antes da consequência.
 - Abro uma frase de explicação com なぜなら e fecho com から / からだ.
 - Sei a diferença entre から (causa, motivo) e から (partícula 'a partir de').

@@ -57,7 +57,7 @@ O número 千 (せん) significa "mil". É o passo seguinte depois de 百 ("cem"
 #### Hora de praticar
 
 #### Leitura
-> 📖 どんなテストですか。人ごとじゃないだろ。どこかに出かけるの？ — Que tipo de prova é essa? Não é problema dos outros, né. Você vai sair pra algum lugar?
+> 📖 あしたはテストです。今日はうちでかんじを書かないといけません。あたらしいことばもたくさんおぼえなくてはいけません。すこしつかれましたが、九時までノートを見ます。 — Amanhã tem prova. Hoje eu preciso escrever kanji em casa. Também tenho que decorar um monte de palavras novas. Estou meio cansado, mas vou olhar o caderno até as nove.
 - Sei dizer "tenho que" com 〜ないといけない.
 - Sei formar 〜なくてはいけない a partir da forma negativa.
 - Reconheço 〜なくてはならない como a forma mais formal.

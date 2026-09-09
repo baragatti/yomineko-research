@@ -57,7 +57,7 @@ Essa moderação é muito apreciada no japonês: deixar uma brecha em vez de afi
 #### Hora de praticar
 
 #### Leitura
-> 📖 今日の仕事は終わったと言ってもいい。もう春だと言ってもいい。そして、男の子はそうしました。そこには前に行ったことがある。 — Dá para dizer que o trabalho de hoje já acabou. Dá para dizer que já é primavera. E então o menino fez assim. Eu já fui lá antes.
+> 📖 日曜日にみんなで山へ行きます。雨がふらないように、いのっています。母は私に、早くねるように言いました。朝おくれないように、時計を二つ用意しました。じゅんびはもう終わったと言ってもいいです。 — No domingo vamos todos para a montanha. Estou torcendo para não chover. Minha mãe me disse para dormir cedo. Para não me atrasar de manhã, deixei dois relógios preparados. Dá para dizer que os preparativos já acabaram.
 - Uso ように para finalidade ("para que") e para expressar um desejo.
 - Relato um pedido ou ordem com ～ように言う, marcando a pessoa com に.
 - Expresso torcida ou oração com ～ように祈る.

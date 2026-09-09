@@ -65,8 +65,8 @@ Resolva os exercícios finais do tópico e confira cada explicação.
 > 🗣 車に撥ねられるところだった。 — Por pouco eu não fui atropelado por um carro.
 
 #### Leitura
-> 📖 なぜあなたは、こんなに早く起きたのですか。テーブルの上にはまだたくさんの料理がある。１日に水を少なくとも３リットルは飲みます。スプーンとフォークとナイフが要る。どうも。かわいい花のワッペンをつけた女の子を見た。英語でラブレターを書くのは、やさしくない。 — Por que você acordou tão cedo? Ainda há muita comida em cima da mesa. Bebo pelo menos três litros de água por dia. Preciso de uma colher, um garfo e uma faca. Obrigado. Vi uma menina que usava um emblema bordado com uma florzinha fofa. Escrever uma carta de amor em inglês não é fácil.
-> 📖 その本には１ページおきに地図がのっている。「映画に行きませんか」「ええ行きましょう」その旅行には千ドルから二千ドルかかります。明日の朝は早く出かけないといけないからな。人のいないところで悪口を言わないで下さい。それでは、さっそく始めることにしましょう。 — Nesse livro, há um mapa a cada duas páginas. "Não quer ir ao cinema?" "Quero sim, vamos!" Essa viagem custa de mil a dois mil dólares. É que amanhã de manhã a gente precisa sair cedo. Por favor, não fale mal dos outros onde eles não estão. Então, vamos começar logo.
+> 📖 今朝、電車に乗りおくれるところだった。走って行って、何とか間に合った。電車の中で、高校の友だちに会った。三年前に一度会ったきり、会っていなかった。話が楽しくて、駅を通りすぎるところだった。「今度はゆっくり」と言って別れたきり、まだれんらくしていない。 — Hoje de manhã quase perdi o trem. Fui correndo e consegui pegar por pouco. Dentro do trem, encontrei um amigo do ensino médio. Tínhamos nos visto uma vez, três anos atrás, e nunca mais. A conversa estava tão boa que quase passei da minha estação. Nos despedimos combinando conversar com calma na próxima, e desde então não nos falamos.
+> 📖 先月、駅で友だちに会ったきり、一度も会っていない。今朝、電車でその人からの手紙を読んだ。うれしくて、あと少しで電車をおりるのをわすれるところだった。夜、家に帰って、短い手紙を書いた。一度きりの手紙で終わらせたくない。今度こそ、たくさん話したい。 — Desde que encontrei uma amiga na estação no mês passado, não a vi mais nenhuma vez. Hoje de manhã li uma carta dela no trem. Fiquei tão feliz que quase esqueci de descer do trem. À noite voltei para casa e escrevi uma carta curta. Não quero que isso acabe numa carta só. Da próxima vez quero conversar bastante.
 - Uso ～きり para 'desde que (e nunca mais)' com nuance de pendência
 - Reconheço きり como 'só/apenas' com substantivos
 - Expresso 'quase / por pouco não' com ～ところだった

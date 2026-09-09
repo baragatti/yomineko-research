@@ -71,7 +71,7 @@ O kanji 供 significa "oferecer, servir, acompanhar". À esquerda a pessoa (亻)
 #### Hora de praticar
 
 #### Leitura
-> 📖 明日までに仕上げる必要はありません。日曜日までそれを仕上げる必要がある。右足がしびれちゃった。あ、上書きしちゃった。何かやっちゃったの？ — Você não precisa terminar isso até amanhã. Você precisa terminar isso até domingo. Meu pé direito ficou dormente. Ah, acabei salvando por cima. Você fez alguma coisa?
+> 📖 きのう、長い作文をやっと書き上げた。一日では終わらないと思っていたが、夜までに終わった。ところが、今朝、その紙をどこかに置いてきちゃった。教室にも家にもなくて、どこにもない。先生に「もう一度書きます」と言っちゃった。今度は、書き上げたら、まずかばんに入れておく。 — Ontem eu finalmente terminei de escrever uma redação longa. Achei que não daria conta em um dia, mas terminei antes da noite. Só que hoje de manhã eu acabei largando o papel em algum lugar. Não está na sala de aula nem em casa, não está em lugar nenhum. Acabei dizendo para o professor que vou escrever tudo de novo. Da próxima vez, quando eu terminar de escrever, a primeira coisa que faço é guardar na mochila.
 - Uso ～上げる para 'terminar por completo' destacando o esforço (書き上げる).
 - Uso ～切れない para 'não dar conta de terminar' por volume/limite (食べ切れない).
 - Sei que ～ちゃった é o coloquial de ～てしまった ('acabei fazendo'), e que 飲む vira 飲んじゃった.

@@ -78,7 +78,7 @@ Dois kanji ligados a lugares e deslocamento, que aparecem o tempo todo quando vo
 #### Hora de praticar
 
 #### Leitura
-> 📖 今日は風があまりない。今日はこのくらいにしておこう。今すぐそれをしたほうがいいよ。あなたがたにお話をしてあげる。 — Hoje não tem muito vento. Por hoje, vamos parar por aqui. É melhor você fazer isso agora mesmo, viu. Vou contar uma história para vocês.
+> 📖 きのうはあまりいい日ではありませんでした。朝からあめがふって、電車がなかなか来ませんでした。えきで一時間待ちましたが、いすはあまりありませんでした。会社では、もうあまり元気ではありませんでした。夜も、つかれてあまり食べられませんでした。 — Ontem não foi um dia muito bom. Choveu desde cedo e o trem custou a chegar. Esperei uma hora na estação, e não tinha muito banco livre. Na empresa, eu já não estava muito bem. À noite também, de tão cansado, não consegui comer muito.
 - Uso あまり〜ない para negar parcialmente ("não muito", "não tanto").
 - Uso ぜんぜん〜ない para negar totalmente ("de jeito nenhum", "nem um pouco").
 - Sei que 全然 é só ぜんぜん escrito em kanji: mesma palavra, mesmo som.

@@ -60,7 +60,7 @@ Os exemplos de obrigação usam muito a família. Aproveite para fixar os quatro
 > 🗣 英語の勉強のやる気をおこさせる。 — Despertar a vontade de estudar inglês.
 
 #### Leitura
-> 📖 それをさせるわけにはいかない。父は私を医者にしたがっている。バスルームは今ふさがっている。英語のほかに、ドイツ語を話す。 — Não posso permitir que isso seja feito. Meu pai quer fazer de mim um médico. O banheiro está ocupado agora. Além do inglês, ele fala alemão.
+> 📖 母は毎日、弟に勉強させます。弟はもっとあそびたいと言いますが、母は外へ行かせません。姉にはすきなだけ出かけさせます。兄はそれをおかしいと考えています。でも、だれも母に何も言いません。 — Minha mãe faz meu irmão mais novo estudar todo dia. Ele diz que queria brincar mais, mas ela não deixa ele sair. Já minha irmã mais velha, essa ela deixa sair o quanto quiser. Meu irmão mais velho acha isso estranho. Mesmo assim, ninguém fala nada com a minha mãe.
 - Sei formar o causativo: 〜せる no grupo 1 e 〜させる no grupo 2.
 - Entendo que a mesma forma cobre "obrigar/mandar" e "deixar/permitir".
 - Uso o contexto e as partículas に/を para decidir entre obrigação e permissão.

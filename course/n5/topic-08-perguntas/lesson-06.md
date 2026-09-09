@@ -54,7 +54,7 @@ Em どこかに出かけるの？, o どこか ("algum lugar") mostra o mesmo �
 > 🗣 かばんの中に何かありますか — Tem alguma coisa dentro da bolsa?
 
 #### Leitura
-> 📖 おやすみ。おおきに！ — Boa noite (ao se despedir para dormir). Muito obrigado!
+> 📖 あなたのきょうだいはおにいさんですか、おねえさんですか。あねです。おねえさんはがっこうですか、うちですか。うちです。おねえさんはコーヒーですか、ぎゅうにゅうですか。ぎゅうにゅうです。 — Você tem um irmão mais velho ou uma irmã mais velha? Uma irmã mais velha. Sua irmã está na escola ou está em casa? Está em casa. E para a sua irmã: café ou leite? Leite.
 - Sei formar indefinidos com か (なにか = algo).
 - Sei formar negativos com も + verbo negativo (だれも = ninguém).
 - Consigo oferecer uma escolha com か～か (A ou B).

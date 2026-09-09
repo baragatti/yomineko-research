@@ -58,7 +58,7 @@ Para usar bem esses moldes em frases reais, junte algumas palavras de movimento,
 ### Praticando
 
 #### Leitura
-> 📖 どうやって時間をつぶそう？木の下にベンチがあります。ちょっと話があるんだけど。来る日も来る日も雨だった。 — Como a gente vai matar o tempo? Tem um banco embaixo da árvore. Preciso falar uma coisa com você... Chovia dia após dia.
+> 📖 今月は電気だいと水だいが高かった。タクシーだいも千円かかった。だから、今日は駅からまっすぐうちまでかえった。まっすぐな道は少し長いけど、空はきれいだった。来月は、タクシーだいを出さないでバスにする。 — Este mês a conta de luz e a conta de água vieram caras. O táxi também custou mil ienes. Por isso, hoje voltei direto da estação para casa. O caminho reto é um pouco longo, mas o céu estava bonito. No mês que vem eu corto o táxi e vou de ônibus.
 - Sei colar 〜代 em um substantivo para falar do custo ou da conta de algo.
 - Reconheço que 真（っ）intensifica cores, formas e posições, e que a leitura muda (まっ／まん／ま).
 - Lembro que 真っ白 é "branco puro", não um diminutivo carinhoso.

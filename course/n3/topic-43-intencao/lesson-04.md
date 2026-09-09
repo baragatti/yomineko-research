@@ -59,8 +59,8 @@ Note que 助 e 労 compartilham o mesmo radical de "força". Quando um kanji nov
 #### Hora de praticar
 
 #### Leitura
-> 📖 スペックを上げたらサクサク動くようになった。教育のおかげで私は今日のようになった。問題点からそれないようにしましょう。その子は早くから話せるようになった。何歳で自転車に乗れるようになった？子供がやっと歩けるようになった。 — Depois que melhorei as specs, passou a rodar bem rápido. Foi a educação que me fez ser quem sou hoje. Vamos procurar não fugir do assunto. Aquela criança começou a falar cedo. Com quantos anos você passou a conseguir andar de bicicleta? A criança finalmente passou a conseguir andar.
-> 📖 安全用パーテーションに体・手・指が入れるか？この歌を聞くと私の中学校時代を思い出します。１日でどれくらいホットドッグを売るんですか？木曜日よりむしろ金曜日においでいただきたい。しかし、それはとても、とても難しいことです。この本はおもしろいだけでなく、ためにもなる。 — O corpo, a mão ou o dedo conseguem entrar na divisória de segurança? Quando ouço essa música, lembro da minha época do ginásio. Quantos cachorros-quentes você vende por dia? Eu preferiria que você viesse na sexta-feira, e não na quinta. Mas isso é uma coisa muito, muito difícil. Este livro não é só interessante, como também é proveitoso.
+> 📖 子どものころ、朝はなかなか起きられませんでした。でも、去年から早く起きられるようになりました。前は走るのがきらいでしたが、今は楽しめるようになりました。みなさんも、毎日少しずつ体を動かすようにしましょう。そして、夜は早く休むようにしましょう。続けていれば、体も心も変わります。 — Quando eu era criança, custava muito para acordar de manhã. Mas, do ano passado para cá, passei a conseguir acordar cedo. Antes eu detestava correr; agora passei a curtir. Vamos todos procurar mexer o corpo um pouquinho todo dia. E vamos procurar descansar cedo à noite. Se você mantiver isso, o corpo e a cabeça mudam.
+> 📖 去年から、毎朝三十分歩くようになりました。夜早くねるようにしてから、気分もよくなりました。前は駅まで自転車で行っていましたが、今は歩いて行けるようになりました。みなさんも、少しずつ体を動かすようにしましょう。でも、無理はしないようにしましょう。 — Desde o ano passado eu passei a andar trinta minutos toda manhã. Depois que comecei a dormir cedo, o ânimo também melhorou. Antes eu ia de bicicleta até a estação, e agora consigo ir a pé. Vocês também, vamos fazer questão de mexer o corpo aos poucos. Mas vamos evitar forçar a barra.
 - Sugiro um esforço contínuo com 〜ようにしましょう (positivo e negativo).
 - Descrevo uma mudança gradual de hábito ou capacidade com 〜ようになった.
 - Nego uma capacidade perdida com 〜なくなった, não com ようになった no negativo.

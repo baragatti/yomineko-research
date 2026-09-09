@@ -61,8 +61,8 @@ Repare no contraste sonoro entre 正に (まさに, "exatamente") e 真逆 (ま�
 #### Hora de praticar
 
 #### Leitura
-> 📖 彼女、最近まいっているみたいだ。私には外国人の友達が２人います。飛行機が西のほうへ飛んでいった。私はそこで３ヶ月間働いています。今日の午後に公園へ行きませんか。雨の場合はその試合は中止となる。 — Ela parece estar abatida ultimamente. Eu tenho dois amigos estrangeiros. O avião voou em direção ao oeste. Eu trabalho lá há três meses. Você não quer ir ao parque hoje à tarde? Em caso de chuva, a partida será cancelada.
-> 📖 パーティーを開いたらどうですか。話上手もいれば、聞き上手もいる。私はビールはぜんぜん飲みません。計画は雨でぜんぜんだめになった。私たちはそれを公にしようと思う。私は切手を手に入れる必要がある。 — Que tal dar uma festa? Há quem fale bem, assim como há quem saiba ouvir bem. Eu não bebo cerveja de jeito nenhum. O plano foi completamente arruinado pela chuva. Nós pretendemos tornar isso público. Eu preciso conseguir um selo.
+> 📖 日曜日、町の大きな公園へ行った。人が多くて、歩けないほどだった。とちゅうで、まいごの子どもを見つけた。その子はこまった顔ばかりしていて、名前も言えなかった。マイクで名前をよんでもらうと、五分ほどでお母さんが来た。お母さんは、「ありがとう」と言うばかりだった。 — No domingo fui ao parque grande da cidade. Tinha tanta gente que quase não dava para andar. No meio do caminho, encontrei uma criança perdida. Ela só ficava com cara de aflita e não conseguia nem dizer o nome. Pedi para chamarem o nome dela no microfone e, em uns cinco minutos, a mãe chegou. A mãe não parava de dizer obrigada.
+> 📖 日曜日に子どもとデパートへ行きました。人が多くて、子どもがいなくなってしまいました。たのめる人は店の人しかいませんでした。店の人にマイクで名前を呼んでもらいました。五分しかたっていませんでしたが、心配は増すばかりでした。本人はおもちゃの前に立っていて、ぜんぜん気づいていませんでした。 — No domingo fui com meu filho até a loja de departamentos. Tinha muita gente e ele sumiu. Só sobrava o pessoal da loja para eu pedir ajuda. Pedi que chamassem o nome dele no microfone. Tinham passado só cinco minutos, mas a aflição só aumentava. Ele estava parado na frente dos brinquedos e não tinha notado nada.
 - Reconheço substantivos do cotidiano como 堀, 幕, 孫, 迷子, マーケット e マイク.
 - Não confundo 本人 (a própria pessoa) com 本物 (a coisa de verdade), nem 正に com 真逆.
 - Uso verbos e advérbios de grau como 任せる, 増す e 正に em frases simples.

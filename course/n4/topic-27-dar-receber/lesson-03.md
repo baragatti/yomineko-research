@@ -70,7 +70,7 @@ Hoje você ganha quatro kanji. Para cada um, a forma e um truque para fixar:
 #### Hora de praticar
 
 #### Leitura
-> 📖 この動画を見てほしいんだ。会ってほしい人がいるんだ。友だちに来てほしい。私の言いたいことはこのことだ。 — Quero que você assista a este vídeo. Tem uma pessoa que eu quero que você conheça. Eu queria que meus amigos viessem. É isto que eu quero dizer.
+> 📖 今度の休みの日、家でみんなでごはんを食べる。六時に来てほしい。飲み物は私が買うから、何も持ってこないでほしい。家は駅から近いから、車では来ないでほしい。たのしい時間になると思う。 — No próximo dia de folga a gente vai comer junto lá em casa. Quero que você chegue às seis. As bebidas eu compro, então não quero que você traga nada. Minha casa fica perto da estação, então prefiro que você não venha de carro. Acho que vai ser bem divertido.
 - Monto ～てほしい (て-forma + ほしい) para dizer que quero que outra pessoa faça algo.
 - Marco a pessoa com に e diferencio ～てほしい de ～たい.
 - Uso ように～てほしい para pedir uma mudança de hábito ou estado.

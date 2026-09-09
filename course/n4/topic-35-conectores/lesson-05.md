@@ -51,7 +51,7 @@ Cuidado para não somar quando a ideia é opor. Se as duas metades vão no mesmo
 #### Hora de praticar
 
 #### Leitura
-> 📖 私はそれでもかまいませんよ。それでも、おまえは人間だ。それでも、リスクはある。車を借りたいのですが。 — Por mim, mesmo assim tudo bem. Mesmo assim, você é um ser humano. Mesmo assim, há riscos. Eu gostaria de alugar um carro...
+> 📖 私は毎朝六時に起きて、駅まで歩きます。雨の日は足が重いですが、それでも家を出ます。土曜日は走りますが、日曜日は休みます。母は体に悪いと言いますが、私は元気です。ですが、来週は試験の日なので、朝は少しだけ歩きます。それでも、走るのをやめる気はありません。 — Toda manhã eu acordo às seis e vou a pé até a estação. Em dia de chuva as pernas pesam, mas mesmo assim eu saio de casa. No sábado eu corro; no domingo, descanso. Minha mãe diz que faz mal para o corpo, mas eu estou bem. Só que semana que vem é dia de prova, então de manhã vou caminhar só um pouco. Ainda assim, não tenho a menor vontade de largar a corrida.
 - Ligo duas frases com だが (escrito/firme) e ですが (polido) no sentido de "mas/porém".
 - Uso それでも para um resultado contrário ao esperado ("mesmo assim").
 - Monto o contraste de tema は～が…は, opondo duas coisas com o は repetido.

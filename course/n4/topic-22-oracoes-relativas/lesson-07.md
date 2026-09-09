@@ -50,7 +50,7 @@ Repare como os dois recursos descrevem por ângulos diferentes:ように compara
 #### Hora de praticar
 
 #### Leitura
-> 📖 人をからかってはいけない。明日行くからそのつもりで。なれすぎはあなどりを生む。2月は28日までしかない。 — Não se deve zombar das pessoas. Vou amanhã, então já fique sabendo (conte com isso). O excesso de intimidade gera desprezo. Fevereiro só tem 28 dias.
+> 📖 駅の前にある店で本を買いました。父がよく読む本も、その店にありました。その店で会った人は、母がよく話していた先生でした。来週、その先生が話す会があります。いえに来るともだちも、その会に行くと言っていました。その店で買った本を読んでから行きます。 — Comprei um livro na loja que fica em frente à estação. Os livros que meu pai costuma ler também estavam lá. A pessoa que encontrei nessa loja era a professora de quem minha mãe sempre falava. Na semana que vem tem um encontro em que essa professora vai falar. O amigo que costuma ir lá em casa também disse que vai a esse encontro. Vou ler o livro que comprei nessa loja antes de ir.
 - Comparo com のような antes de substantivo e のように antes de verbo.
 - Expresso finalidade ou desejo com 〜ように ("de modo que / tomara que").
 - Distribuo por cada item com o prefixo 各 colado ao substantivo.

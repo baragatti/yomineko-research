@@ -47,7 +47,7 @@ Tanto おじいさん quanto おばあさん têm uma vogal longa de duas moras:
 #### Hora de praticar
 
 #### Leitura
-> 📖 こんにちは！ありがとう。 — Olá! Obrigado.
+> 📖 「これはあなたのおかあさんですか。」「ええ、おかあさんです。」「それもおかあさんですか。」「いいえ、それはおばあさんです。」「では、あれはおじいさんですか。」「ええ、おじいさんです。」 — "Esta aqui é a sua mãe?" "É sim, é a minha mãe." "Essa aí também é a sua mãe?" "Não, essa aí é a minha avó." "Então aquele lá é o seu avô?" "Isso, é o meu avô."
 - Reconheço os prefixos honoríficos お e ご em substantivos.
 - Sei que お vai com palavras japonesas e ご com palavras de origem chinesa.
 - Consigo falar da família dos outros de forma educada (お祖父さん, お祖母さん, 奥さん).

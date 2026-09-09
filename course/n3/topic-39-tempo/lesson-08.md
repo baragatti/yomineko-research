@@ -52,8 +52,8 @@ Cuidado: 酔う (よう, ficar bêbado) é o verbo, mas você verá muito 様 e 
 #### Hora de praticar
 
 #### Leitura
-> 📖 母は最近まで入院していました。もっと広いアパート借りたいわ。ペンが要るなら貸してあげるよ。この町は西も東も分かりません。なぜ人々は映画を見に行くのか？私はエレベーターで下におりた。 — Minha mãe esteve internada no hospital até recentemente. Eu queria alugar um apartamento mais espaçoso. Se você precisar de uma caneta, eu te empresto uma. Nesta cidade, não sei nem onde é o oeste nem onde é o leste (estou completamente perdido). Por que as pessoas vão ao cinema? Eu desci pelo elevador.
-> 📖 黒に黒をたしても白にはならぬ。夏休みまであとわずか一週間だ。おじは学校の近くに住んでいる。このゲームはフィクションです。不時にそなえなくてはいけない。こちらはサービスでございます。 — Somar preto com preto não dá branco. Falta só uma semana para as férias de verão. Meu tio mora perto da escola. Este jogo é uma ficção. É preciso se preparar para imprevistos. Isto é cortesia da casa.
+> 📖 今日の会議のようすを、みじかく書いておきます。来年の仕事について、長い話がありました。でも、要点は三点だけです。新しい店は作らない、新しい人は入れない、今の店に来る人を大切にする。つまり、来年は今年と同じようにやるということです。新しいことはしませんが、今の仕事はもっとよくしていきます。つまり、用心しながらゆっくり進む年になります。分からないことがあったら、いつでも聞いてください。 — Deixo aqui um resumo curto de como foi a reunião de hoje. Falaram longamente sobre o trabalho do ano que vem. Mas os pontos principais são só três. Não abrir loja nova, não contratar gente nova, e cuidar bem de quem já vem à loja. Ou seja, no ano que vem vamos tocar as coisas do mesmo jeito que neste ano. Não vamos começar nada novo, mas vamos melhorando o trabalho que já existe. Ou seja, vai ser um ano de andar devagar e com cuidado. Se tiver qualquer dúvida, pode perguntar a qualquer hora.
+> 📖 今週の土曜日に山へ行くつもりだった。しかし、夜中に強い雨がふるというよそくが出ている。だから、山に行くのは止すことにした。要するに、天気には用心したほうがいい。要点は一つだけだ。無理をしないことだ。 — Eu tinha planejado ir para a montanha neste sábado. Só que a previsão diz que vai cair uma chuva forte de madrugada. Então resolvi desistir de ir. Em resumo, com o tempo é melhor tomar cuidado. O ponto principal é um só. Não forçar a barra.
 - Resumo e vou ao essencial com 要するに, 要点 e 要素.
 - Falo de previsão e cautela com 予期, 予測 e 用心.
 - Reconheço palavras de estado e cotidiano como 様子, 容易, 陽気 e 夜中.

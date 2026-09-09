@@ -61,7 +61,7 @@ Juntando tudo numa conversa: você pergunta 何をしたらいいですか ("o q
 #### Hora de praticar
 
 #### Leitura
-> 📖 たばこをやめたらどうなの？言ってみたらどうだ。あなたはもう行ったほうがいい。あなたに会ってほしいのですが。 — Que tal você parar de fumar? Que tal você dizer isso? É melhor você já ir. Eu gostaria que você me encontrasse (se encontrasse comigo).
+> 📖 気分がわるいなら、今日は休んだらどうですか。くすりを飲んで、はやくねたらどうですか。くすりがないなら、どの店で買ったらいいですか。明日、何時に電話をしたらいいですか。はやくよくなるといいですね。 — Se você não está se sentindo bem, que tal descansar hoje? Que tal tomar um remédio e dormir cedo? Se você não tiver remédio, em que loja eu compro? Amanhã, a que horas eu ligo para você? Espero que você melhore logo.
 - Sei sugerir algo com 〜たらどう(ですか) ("que tal...?").
 - Uso a forma educada 〜たらどうですか com quem trato por "senhor(a)".
 - Peço orientação com [pergunta] + verbo たら + いいですか.

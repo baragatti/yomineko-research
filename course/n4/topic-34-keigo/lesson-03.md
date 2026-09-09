@@ -63,7 +63,7 @@ O erro mais comum do brasileiro é usar いらっしゃる ou なさる para si 
 > 🗣 病気が全快なさるように。 — Que o senhor se recupere completamente.
 
 #### Leitura
-> 📖 お子さんはいらっしゃるの？もし来られたら来なさい。本はそのままにしておきなさい。この本はあの本ほど大きくない。 — O senhor (a senhora) tem filhos? Se puder vir, venha. Deixe os livros como estão. Este livro não é tão grande quanto aquele livro.
+> 📖 先生、いらっしゃいませ。今日は、お一人でいらっしゃいますか。お食事は、何になさいますか。魚と肉があります。お飲み物は、コーヒーになさいますか。では、こちらで少しお待ちください。 — Professor, seja bem-vindo. Hoje o senhor veio sozinho? O que o senhor vai querer comer? Temos peixe e carne. De bebida, o senhor prefere café? Então aguarde um pouquinho aqui, por favor.
 - Sei que いらっしゃる eleva いる/行く/来る (estar/ir/vir) do interlocutor.
 - Uso なさる como honorífico de する para elevar as ações do outro.
 - Lembro que o polido é いらっしゃいます e なさいます (irregulares).

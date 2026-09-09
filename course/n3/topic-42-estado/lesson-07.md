@@ -57,8 +57,8 @@ Para fechar, pessoas e alguns verbos.
 #### Hora de praticar
 
 #### Leitura
-> 📖 ステレオをかけても構わないかい。必要なら、すぐにまいりましょう。クラブの会員は会議室に集まった。水も空気も両方とも流動体である。最初から最後までうっとりしてた。父は中学校で英語を教えています。 — Tudo bem se eu ligar o som? Se for necessário, irei imediatamente. Os membros do clube se reuniram na sala de reuniões. Tanto a água quanto o ar são fluidos. Fiquei encantado(a) do começo ao fim. Meu pai ensina inglês numa escola de ensino fundamental.
-> 📖 学校は午前８時１０分から始まる。こっちの方があっちのより安いよ。その語にはいくつかの意味がある。来月には子どもが生まれるんだよ。この犬は２ヶ月前に生まれました。あの店でノートは売っていますか？ — A escola começa às 8h10 da manhã. Este aqui é mais barato do que aquele ali, viu. Essa palavra tem vários significados. No mês que vem vai nascer um bebê, sabia? Este cachorro nasceu há dois meses. Naquela loja vendem cadernos?
+> 📖 今朝の新聞に、水の不足の話が出ていた。水の不足は、生活の大きな部分を変えるという。空気の中の物質についても、少し書いてあった。大学で物理を習った時のことを、思い出した。同じ新聞には、不正をした会社の話も出ていた。ふせげることは早くふせぐほうがいいと、今は思う。 — No jornal de hoje de manhã tinha uma matéria sobre a falta de água. Dizem que a falta de água muda boa parte da vida da gente. Falava um pouco também das substâncias que existem no ar. Lembrei da época em que estudei física na faculdade. No mesmo jornal saiu ainda o caso de uma empresa que cometeu fraude. Agora eu acho que o que dá para evitar é melhor evitar logo.
+> 📖 ふだんは気にしていないが、この町では物のねだんが今年もまた上がっている。米も野菜も、去年の同じ時より高くなっている。店の人は、雨が少なくて水が不足していると言っていた。うちでは、高い物を買わないようにしている。それだけでも、少しはちがう。ふたたびねだんが下がる日を待っている。 — Normalmente eu nem presto atenção, mas nesta cidade o preço das coisas subiu de novo este ano. Tanto o arroz quanto os legumes estão mais caros do que na mesma época do ano passado. O pessoal da loja dizia que choveu pouco e está faltando água. Lá em casa, a gente vem evitando comprar coisa cara. Só isso já faz alguma diferença. Fico esperando o dia em que os preços voltem a cair.
 - Reconheço e uso substantivos de estado e quantidade como 不足, 物価 e 部分.
 - Emprego termos de ciência e matéria como 物質, 物理 e 不正.
 - Identifico palavras de pessoas e ações como 夫人, 双子 e 防ぐ.

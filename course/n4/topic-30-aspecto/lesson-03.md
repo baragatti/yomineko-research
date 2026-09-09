@@ -71,7 +71,7 @@ Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei 
 #### Hora de praticar
 
 #### Leitura
-> 📖 ペンキがすぐはげてしまう。あっ、バスが行ってしまう。学校は三時半に終わる。学校は何時に終わるの？ — A tinta logo descasca. Ah, o ônibus está indo embora! A escola termina às três e meia. A que horas a escola termina?
+> 📖 きのうの夜、やっとレポートを書き終わった。でも今朝、そのレポートを家にわすれてしまった。学校でかばんを開けたときに、やっとわかった。今日のじゅぎょうが終わってから、家に帰った。だから、先生に出すのは明日になってしまった。 — Ontem à noite eu finalmente terminei de escrever o relatório. Mas hoje de manhã acabei deixando esse mesmo relatório em casa. Só me toquei quando abri a mochila na escola. Depois que as aulas de hoje acabaram, voltei em casa. Então entregar para o professor acabou ficando para amanhã.
 - Sei colar 〜終わる na raiz de um verbo para dizer "terminar de fazer".
 - Reconheço os dois sentidos de 〜てしまう: concluir de vez e fazer sem querer.
 - Sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.

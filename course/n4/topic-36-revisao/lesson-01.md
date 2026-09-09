@@ -58,7 +58,7 @@ As três peças juntas numa frase só:昨日買った本を読んだら面白か
 #### Hora de praticar
 
 #### Leitura
-> 📖 母に言うべきことなのだろうか？魚だけでなく、肉も食べなさい。ご飯とパンどちらがいいですか。明日ゴルフをしたらどうですか。 — Será que é algo que eu deveria contar para a minha mãe? Coma não só peixe, mas também carne. Arroz ou pão, qual você prefere? Que tal jogar golfe amanhã?
+> 📖 母が作ったカレーはとてもおいしい。早く帰れば、まだ食べられる。でも、今日は仕事が多かった。電車が止まると、歩いて帰る。駅に着いたら、母に電話をする。家に着いたら、まずカレーを食べる。 — O curry que a minha mãe fez é muito bom. Se eu voltar cedo, ainda dá para comer. Mas hoje teve muito trabalho. Quando o trem para, eu volto a pé. Quando eu chegar na estação, ligo para a minha mãe. Quando chegar em casa, a primeira coisa que eu faço é comer o curry.
 - Conjugo a forma simples nos quatro tempos e não coloco だ depois de verbo nem de adjetivo-い.
 - Monto orações relativas com o verbo na forma simples antes do substantivo, usando が para o sujeito interno.
 - Escolho entre と・ば・たら・なら conforme a situação e sei que pedidos não combinam com と.

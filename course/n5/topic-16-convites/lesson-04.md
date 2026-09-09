@@ -67,7 +67,7 @@ Um aviso de tom: dar conselho direto a alguém de status superior (chefe, profes
 #### Hora de praticar
 
 #### Leitura
-> 📖 話をつけようじゃないか。モールに行きましょうか。 — Vamos resolver essa conversa, que tal? Vamos ao shopping?
+> 📖 あした、いっしょに川へ行きませんか。でんしゃに人がたくさんいます。はやく出ましょう。パンときっぷは、今日かいます。午前八時に、学校の前であいましょう。 — Amanhã, vamos juntos até o rio? O trem fica cheio de gente. Vamos sair cedo. O pão e as passagens eu compro hoje. Às oito da manhã, vamos nos encontrar na frente da escola.
 - Sei dar um conselho com 〜たほうがいい ("é melhor você fazer X").
 - Lembro de usar a forma た do verbo, nunca a de dicionário.
 - Entendo que ほう é "lado/opção" numa comparação e いい é "bom".

@@ -61,7 +61,7 @@ Avisos públicos no Japão quase sempre usam 〜てはいけません ou só 禁
 #### Hora de praticar
 
 #### Leitura
-> 📖 出かける時間になった。あそこに先生がいます。 — Chegou a hora de sair. O professor está ali.
+> 📖 ここは、学生が入ってもいいところです。名前は書かなくてもいいです。ここでうたをうたってもいいです。ともだちと話してもいいです。じゅぎょうの時間は、ここに来てはいけません。五時まで、ここにいてもいいです。 — Aqui é um lugar onde os alunos podem entrar. Não precisa escrever o nome. Pode cantar aqui. Pode conversar com os amigos. Na hora da aula, não pode vir para cá. Pode ficar aqui até as cinco.
 - Consigo pedir e dar permissão com 〜てもいいです(か).
 - Sei dizer que algo é dispensável com 〜なくてもいい.
 - Reconheço e formo a proibição 〜てはいけない / 〜てはいけません.

@@ -59,8 +59,8 @@ O par 向く / 向ける é um clássico de transitivo e intransitivo. 向く (�
 #### Hora de praticar
 
 #### Leitura
-> 📖 火事の原因はだいたいわかっている。急がなければ、急行に乗り遅れるぞ。本日の特別料理について説明します。レポート点の上限を10点とします。世界には４０００以上の言葉がある。同じ説明がその場合にもあてはまる。 — A causa do incêndio já está praticamente esclarecida. Se você não se apressar, vai perder o expresso, viu! Vou explicar sobre o prato especial de hoje. O limite máximo de pontos do relatório será 10 pontos. No mundo existem mais de 4000 línguas. A mesma explicação também se aplica a esse caso.
-> 📖 決めるのは今でなくて構いませんよ。彼女はその着物を着ると変に見える。学生達は校長に呼ばれてあつまった。あなたに払うのか、レジで払うのか。文化は世代から世代へと伝えられる。このボタンを押すとドアが開きます。 — Não precisa decidir agora, viu? Ela fica esquisita quando veste aquele quimono. Os alunos foram chamados pelo diretor e se reuniram. Eu pago a você ou pago no caixa? A cultura é transmitida de geração em geração. Se você apertar este botão, a porta abre.
+> 📖 先週、入院した友人の見舞いに行った。部屋に入ると、彼はこちらに顔を向けてくれた。前にお土産に持って行った本を、見事に一日で読んでしまったそうだ。「あなたはいつも私の味方だ」と彼は言ってくれた。帰りは、彼のお母さんが駅まで見送りに来てくれた。 — Semana passada fui visitar um amigo que estava internado. Quando entrei no quarto, ele virou o rosto na minha direção. Parece que ele deu conta, em um único dia, do livro que eu tinha levado de presente da outra vez. "Você sempre fica do meu lado", ele me disse. Na volta, a mãe dele foi comigo até a estação para se despedir.
+> 📖 入院した友だちの見舞いに、土産を持って行った。部屋は日の光に満ちていて、思ったより明るかった。彼はいつも私の味方だから、こんな時でも元気そうだった。「未来のことは分からないけれど、今は身を大事にする」と彼は言った。その言葉は見事で、私は自分の弱さを認めた。帰りは、彼のお母さんが駅まで見送りに来てくれた。 — Fui visitar um amigo que tinha sido internado e levei uma lembrança. O quarto estava cheio de luz do sol, mais claro do que eu imaginava. Ele sempre foi meu aliado, então até numa hora dessas parecia bem. "Não dá para saber o futuro, mas por enquanto eu cuido de mim", ele disse. Aquelas palavras foram esplêndidas, e eu reconheci a minha própria fraqueza. Na volta, a mãe dele veio me acompanhar até a estação.
 - Reconheço palavras sobre pessoas e relações como 味方, 見舞い, 見送り e 土産.
 - Uso adjetivos de impressão como 見事 e 妙 e o substantivo 魅力.
 - Diferencio 向く (intransitivo) de 向ける (transitivo) e entendo 満ちる e 認める.

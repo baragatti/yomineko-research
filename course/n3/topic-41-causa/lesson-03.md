@@ -53,7 +53,7 @@ Armadilha PT: os empréstimos カー e カード têm vogais de duração inteir
 #### Hora de praticar
 
 #### Leitura
-> 📖 スペシャルというのはどんな味ですか。ＵＮというのは何を表わしていますか。あなたがやったというのは本当か。朝の5時だというのに明るい。この川は何というのですか。 — Como é o sabor do especial? O que significa "UN"? É verdade que foi você quem fez isso? Mesmo sendo cinco da manhã, já está claro. Como se chama este rio?
+> 📖 同じ会社の人は、毎朝五時に起きるというのだ。家から会社まで、電車で二時間もかかるというのだ。それで、夜は九時に休むわけだ。毎日そんな生活をしているというのだから、いつも元気なわけだ。私も明日から少し早く起きようと思う。 — Um colega da minha empresa acorda todo dia às cinco da manhã. Acontece que da casa dele até a empresa são duas horas de trem. É por isso que ele vai dormir às nove da noite. Se ele leva essa vida todos os dias, não é à toa que está sempre disposto. Amanhã eu também vou tentar acordar um pouco mais cedo.
 - Sei justificar um motivo de forma enfática com ～というのだ.
 - Sei expressar uma conclusão lógica esperada com ～わけだ.
 - Distingo ～わけだ (conclusão) de から/ので (motivo bruto).

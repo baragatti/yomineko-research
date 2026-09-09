@@ -70,7 +70,7 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 > 🗣 タフだなあ。 — Nossa, que durão...
 
 #### Leitura
-> 📖 タフだなあ。さすがだな！ — Nossa, que durão... Você é demais!
+> 📖 しごとがおわったなあ。今日はとてもあるいたなあ。でんしゃの中で、しゃしんをとったなあ。いえにかえって、ごはんをたべたいなあ。あしたもかいしゃだなあ。 — Enfim acabou o trabalho... Hoje eu andei muito, hein. Ainda tirei foto dentro do trem. Queria chegar em casa e comer alguma coisa. E amanhã tem escritório de novo, né.
 - Sei que なあ vai no fim da frase para soltar uma emoção em voz alta.
 - Consigo encaixar なあ depois de だ／だった e de adjetivos.
 - Entendo que なあ é introspectivo, diferente do ね que pede concordância.

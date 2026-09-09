@@ -60,7 +60,7 @@ Hoje quase ninguém os escreve assim; você verá essas unidades em katakana. Gu
 > 🗣 どうやって学校に来たの？ — Como você veio para a escola?
 
 #### Leitura
-> 📖 さようなら。わがままね。 — Até logo. Você é egoísta, né.
+> 📖 あの、それはどんなかばんですか。これはカメラのかばんです。どんなカメラですか。おおきなカメラです。では、そのカメラはあなたのですか。いいえ、あにのです。 — Com licença, que tipo de bolsa é essa? Esta é uma bolsa de câmera. Que tipo de câmera? Uma câmera grande. Então essa câmera é sua? Não, é do meu irmão mais velho.
 - Sei perguntar o tipo de algo com どんな + substantivo.
 - Sei perguntar o método ou o meio de uma ação com どうやって.
 - Distingo どんな (que tipo) de どうやって (de que forma) e de どうして (por quê).

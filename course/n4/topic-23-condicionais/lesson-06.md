@@ -74,7 +74,7 @@ Em だけで, o verbo que vem antes fica na forma simples (dicionário), não na
 #### Hora de praticar
 
 #### Leitura
-> 📖 名前を書くだけでいいです。これはさすがにヤバすぎる。言っちゃいけないんだけど。自分でもわかってるくせに。 — Basta escrever o nome. Convenhamos, isso já é perigoso demais. É que eu não posso contar... Olha que você mesmo sabe disso muito bem.
+> 📖 来週、学校でみんなの会があります。名前を書くだけで、だれでも入っていいです。雨のばあいは、学校の中でします。休むばあいは、前の日に電話をしたほうがいいです。持ってくるものは、かさだけでいいです。 — Semana que vem vai ter um encontro para todo mundo na escola. Basta escrever o nome e qualquer pessoa pode entrar. Em caso de chuva, o encontro acontece dentro da escola. Se for faltar, é melhor ligar no dia anterior. Basta trazer o guarda-chuva.
 - Sei usar 場合は para dizer o que fazer numa situação específica.
 - Consigo expressar "basta / só com" usando 〜だけで.
 - Reconheço o kanji 主 ("senhor, principal").

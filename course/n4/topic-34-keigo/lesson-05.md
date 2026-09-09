@@ -58,7 +58,7 @@ Mais vocabulário de trabalho e serviços para praticar (a leitura já vem na pr
 #### Hora de praticar
 
 #### Leitura
-> 📖 朝食は何時にいたしますか。事前にお知らせいたします。後でお電話いたします。お知らせいたします。 — A que horas o senhor vai tomar o café da manhã? Avisarei com antecedência. Eu ligo para o(a) senhor(a) mais tarde. Eu o(a) informarei.
+> 📖 明日は十時に駅の前でお待ちいたします。会社まで車でお送りいたします。お昼ご飯はこちらでご用意いたします。午後の仕事は着いてからお話しいたします。何かありましたら、こちらからお電話いたします。では、明日お会いいたします。 — Amanhã eu aguardo o senhor às dez, em frente à estação. Levo o senhor de carro até a empresa. O almoço eu deixo preparado aqui mesmo. Falo do trabalho da tarde assim que chegarmos. Se acontecer alguma coisa, eu ligo para o senhor. Então, até amanhã.
 - Monto o molde お + raiz + する para falar das minhas ações com modéstia.
 - Sei que いたす é o する humilde, para as MINHAS ações.
 - Troco します por いたします em contextos formais.

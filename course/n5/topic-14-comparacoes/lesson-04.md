@@ -77,7 +77,7 @@ Quatro kanji para fixar, três deles ligados a números e direções.
 > 🗣 ワインがほしいですか。 — Você quer vinho?
 
 #### Leitura
-> 📖 グリーンまでどれくらい？長くかかるんでしょうか。 — Quanto falta até o green? Será que vai demorar muito?
+> 📖 なつやすみに、ねこがほしいです。くろいねこより、しろいねこのほうがすきです。おかあさんも、しろいねこがすきです。でも、おとうさんはねこより、いぬのほうがいいといいます。あしたの午後、かぞくでデパートへ行きます。ちいさいねこのカレンダーがほしいです。 — Nas férias de verão eu quero um gato. Gosto mais de gato branco do que de gato preto. A minha mãe também gosta de gato branco. Mas o meu pai fala que cachorro é melhor que gato. Amanhã à tarde a gente vai à loja de departamentos em família. Quero um calendário de gatinho.
 - Sei dizer que quero uma coisa com o molde Substantivo が ほしい(です).
 - Marco o desejado com が, e não com を.
 - Pergunto o que alguém quer acrescentando か (〜がほしいですか).

@@ -67,7 +67,7 @@ Três kanji para reconhecer, dois deles um par fácil de confundir:
 - 〜ない〜はない= não há X que não... = todo X faz (dupla negação que afirma o universal).
 
 #### Leitura
-> 📖 この店に売っていない物はない。この町には外国人が少なくない。母が作れない料理はない。もっとゆっくり話してください！ — Não tem nada que essa loja não venda. Nesta cidade não são poucos os estrangeiros. Não existe prato que minha mãe não consiga fazer. Fale mais devagar, por favor!
+> 📖 駅の近くには、古い店が少なくない。その中で私がいちばんよく行くのは、小さな本の店だ。あの店に売っていない本はない。ねだんも高くないので、すこしも気にならない。今日も、読みたい本を三さつ買った。 — Perto da estação não são poucas as lojas antigas. Entre elas, a que eu mais frequento é uma pequena loja de livros. Não existe livro que aquela loja não venda. O preço também não é alto, então não me incomodo nem um pouco. Hoje de novo comprei três livros que eu queria ler.
 - Sei que すこしも〜ない reforça uma negação total ("nem um pouco").
 - Entendo que すくなくない nega "poucos" para dizer "são bastantes" (litotes).
 - Consigo montar 〜ない〜はない para afirmar algo universal por dupla negação.

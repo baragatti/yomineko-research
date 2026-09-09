@@ -17,6 +17,37 @@
     "ai_generated": {
       "$ref": "common.schema.json#/$defs/Provenance/properties/ai_generated"
     },
+    "comprehension": {
+      "type": "object",
+      "properties": {
+        "about_current_text": {
+          "type": "boolean"
+        },
+        "correct": {
+          "type": "string",
+          "description": "The right answer to that question."
+        },
+        "item": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "The four options, sorted so the position of the right answer carries no information; the app shuffles per attempt."
+          }
+        },
+        "question": {
+          "type": "string",
+          "description": "The 内容一致 question, copied from the exam bank item named by `item`."
+        }
+      },
+      "required": [
+        "about_current_text",
+        "item"
+      ],
+      "additionalProperties": false
+    },
     "gated_to_lesson": {
       "type": "string"
     },
@@ -105,13 +136,22 @@
         "additionalProperties": false
       }
     },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "slug": {
       "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
     },
     "source_slugs": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "common.schema.json#/$defs/IdRef"
       }
     },
     "title": {
@@ -192,13 +232,16 @@
   "additionalProperties": false,
   "required": [
     "ai_generated",
+    "comprehension",
     "gated_to_lesson",
     "jp",
     "layer",
     "length_band",
     "level",
     "needs_review",
+    "sentences",
     "slug",
+    "source",
     "source_slugs",
     "title",
     "tokens",

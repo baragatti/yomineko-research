@@ -59,8 +59,8 @@ Cuidado: どうしても pode parecer "de qualquer jeito" no sentido de descaso,
 #### Hora de praticar
 
 #### Leitura
-> 📖 ディナーはたいがいコーヒーで終わる。これについては、私は正しいはずです。先生がそんなことを言ったはずがない。マイクがそんなことをしたはずがない。これは本物のダイヤであるはずがない。フランス語を話していらっしゃるのよ。 — O jantar quase sempre termina com um café. Sobre isto, eu devo estar certo. Não tem como o professor ter dito uma coisa dessas. Não é possível que o Mike tenha feito uma coisa dessas. Isto não pode ser um diamante de verdade. Ela está falando francês, sabe.
-> 📖 人生には目に見える以上のものがある。風もないのにドアはひとりでに開いた。つながれているという思いがつのった。少しずつそうなったということですね。母は夕食の用意をしているところです。車でそこへ行くのに一時間半かかった。 — Na vida há mais do que aquilo que os olhos veem. Mesmo sem vento, a porta se abriu sozinha. Cresceu em mim o sentimento de estar preso. Então foi ficando assim aos poucos, né. Minha mãe está justamente preparando o jantar agora. Levou uma hora e meia para chegar lá de carro.
+> 📖 当時、私は学生で、政治のことをあまり知らなかった。しかし、ある日、二つの問いを同時に持った。自分はどんな社会に住みたいのか、どうしてもはっきりさせたかった。自分の意見を通すためには、まず自分で決めることが必要だった。今も、あの時と同じように、その二つの問いを持っている。 — Naquela época eu era estudante e não sabia quase nada de política. Mas um dia me vieram duas perguntas ao mesmo tempo. Eu queria, custasse o que custasse, deixar claro em que tipo de sociedade eu queria viver. Para fazer valer a minha opinião, primeiro eu precisava decidir por mim mesmo. Até hoje, igual naquele tempo, eu carrego essas duas perguntas.
+> 📖 先週、町のとうひょうに行った。前から決めていたとおり、わかい人の意見を大切にする人を選んだ。説明を聞いたとおりの計画なら、どうろも学校もよくなるはずだ。どの人の話も同じように聞こえて、どうしても決められない時もあった。それでも、自分の意見を通すには、とうひょうするしかない。同時に、これからも町の会議に出ていこうと思う。 — Semana passada fui votar na minha cidade. Como eu já tinha decidido antes, escolhi quem leva a sério a opinião dos jovens. Se o plano for mesmo o que explicaram, as ruas e as escolas devem melhorar. Teve hora em que a fala de todos soava igual e eu simplesmente não conseguia decidir. Ainda assim, votar é o único jeito de fazer valer a minha opinião. Junto com isso, quero continuar indo às reuniões da cidade.
 - Reconheço e uso vocabulário N3 de política, votação e moral.
 - Distingo 同一, 同時 e 同様 conforme o grau de igualdade.
 - Sei empregar どうしても e 通す para falar de persistência e estado das coisas.

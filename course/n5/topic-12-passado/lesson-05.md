@@ -70,7 +70,7 @@ Mnemônico de forma: imagine uma criança (o componente 子, 'filho/criança') s
 > 🗣 行きたくないのなら、行くな。 — Se você não quer ir, não vá.
 
 #### Leitura
-> 📖 見てみたいな。あなたなら、どうする？ — Queria ver isso. E você, o que faria?
+> 📖 きのう、いぬとさんぽに行った。こうえんのそとに、おとこの人がいた。「ここでいぬとあそぶな。」「こうえんの中にいぬを入れるな。」いぬといえにかえった。いぬもつかれたな。 — Ontem fui passear com o cachorro. Do lado de fora do parque tinha um homem. "Não brinque com o cachorro aqui." "E não deixe o cachorro entrar no parque." Voltei para casa com o cachorro. O cachorro também ficou cansado, né.
 - Sei formar uma proibição forte com verbo na forma de dicionário + な.
 - Reconheço o な final de ênfase/autoconfirmação, de tom mais masculino.
 - Distingo 行くな ('não vá!') de 行くね ('vou indo, tá?') e do な que liga adjetivos-な.

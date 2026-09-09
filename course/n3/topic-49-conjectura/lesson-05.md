@@ -57,8 +57,8 @@ O kanji 靴 ('sapato, calçado') aparece em 靴 ('sapato') e 靴下 ('meia'). Te
 #### Hora de praticar
 
 #### Leitura
-> 📖 絵を書くのはとても面白いし、リラックスする。彼女をしばらく遠くにおいておくことにするよ。ただ死者のみが戦争の終わりを見たのである。四十代は危険な年代だと世間では言っている。若い男と女子学生のひとりが車にのっていた。たくさんの鳥が南へ飛んでいくのを見ました。 — Desenhar é muito divertido e ainda relaxa. Resolvi manter ela a distância por um tempo, viu. Somente os mortos viram o fim da guerra. Por aí, dizem que os quarenta anos são uma fase perigosa da vida. Um homem jovem e uma das estudantes estavam dentro do carro. Vi muitos pássaros voando em direção ao sul.
-> 📖 今日は寒いのでコートのボタンをかけなさい。生徒はだれも学校のテストなど好きではない。いいえ、知らないです。いつか覚えなければ。今年のファッションは去年とはまったく違う。ここから海までどのくらい遠いのでしょうか。もっと早く返事を出さないでいてすみません。 — Hoje está frio, então abotoe o casaco. Nenhum aluno gosta de coisas como provas da escola. Não, eu não sei. Algum dia preciso aprender (isso). A moda deste ano é completamente diferente da do ano passado. Daqui até o mar, qual é a distância? Desculpe por não ter respondido mais cedo.
+> 📖 昨日、駅でたまたまむかしの友だちに会いました。髪を短く切って、新しい靴をはいていたので、はじめは分かりませんでした。元気そうでしたが、少しつかれているようでした。仕事のことはあまり話さないで、ずっとだまっていました。何かあったらしいですが、たびたび聞くのもよくないと思いました。今度、こちらから便りを出してみます。 — Ontem encontrei por acaso um amigo antigo na estação. Ele tinha cortado o cabelo curto e estava de sapato novo, então no começo eu não reconheci. Parecia bem, mas dava para ver que estava um pouco cansado. Sobre o trabalho quase não falou, ficou calado o tempo todo. Parece que aconteceu alguma coisa, mas achei que também não era bom ficar perguntando toda hora. Da próxima vez, sou eu que vou mandar notícias.
+> 📖 今朝は時間がなくて、髪も直せませんでした。古い靴で、急いで駅まで走りました。電車の中で、ぐうぜん先生に会いました。先生の靴も、私のと同じくらい古そうでした。先生も朝は急いでいるのかもしれません。明日はもう少し早く起きたほうがよさそうです。 — Hoje de manhã não deu tempo nem de ajeitar o cabelo. Corri até a estação de sapato velho. Dentro do trem, encontrei o professor por acaso. O sapato do professor parecia tão velho quanto o meu. Talvez o professor também ande com pressa de manhã. Amanhã parece melhor eu acordar um pouco mais cedo.
 - Reconheço e uso vocabulário N3 sobre acaso, frequência e outras pessoas.
 - Emprego verbos de testar e de contar com alguém em frases.
 - Leio os kanji 髪 e 靴 em palavras do dia a dia.

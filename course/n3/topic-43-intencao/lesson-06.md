@@ -57,8 +57,8 @@ Não confunda ところが com ところで. ところが introduz um contraste 
 #### Hora de praticar
 
 #### Leitura
-> 📖 今日はこれでおしまいにしておきます。おまえなんかに話すんじゃなかったよ。来たくなかったら来なくていいからね。ほらマンゴーがたくさんなっているよ。友人たちと話す時間がたくさんあった。どれくらいしたらバスはでるのですか。 — Por hoje, vamos encerrar por aqui. Eu não devia ter contado nada para alguém como você. Se você não quiser vir, não precisa vir, viu? Olha, a árvore está cheia de manga! Tive bastante tempo para conversar com os amigos. Em quanto tempo o ônibus sai?
-> 📖 もっと読みやすく書いたほうがいいよ。そうしないほうがいいんじゃないかな。もうすぐ七時だ。学校に行かなくちゃ。大学へは４年間行かなくてはいけない。名前はちょっとわからないんですけど。しかし、わたしにはお金はありません。 — É melhor você escrever de um jeito mais fácil de ler. Talvez seja melhor não fazer isso, né? Já são quase sete horas. Tenho que ir para a escola. Tem que ir à faculdade por quatro anos. É que o nome eu não sei bem... Porém, eu não tenho dinheiro.
+> 📖 来年から都会で一人で住もうと思っている。家族に相談したとき、母はとても心配していた。ところが、父は「いい経験になる」と言ってくれた。毎日、一人で住むアパートをさがすことにしている。ところで、都市の生活は思ったよりお金がかかるらしい。だから、今の仕事はもう少し続けようと思う。 — A partir do ano que vem, estou pensando em morar sozinho na cidade grande. Quando conversei com a família, minha mãe ficou bem preocupada. Só que meu pai disse que ia ser uma boa experiência. Todo dia eu dou uma olhada em apartamentos para morar sozinho. Aliás, parece que viver na cidade custa mais caro do que eu imaginava. Por isso, pretendo continuar mais um pouco no emprego atual.
+> 📖 こんにちは。先月、はじめて山にのぼりました。天気はいいと思っていました。ところが、上では雨がふってきました。かさを持っていなかったので、ずいぶんこまりました。ところが、下におりると、空はもう青くなっていました。ところで、そちらの都会の生活はどうですか。私は今、夜はゆっくり読書をしています。また書きます。 — Oi! Mês passado subi uma montanha pela primeira vez. Eu achava que o tempo ia estar bom. Só que lá em cima começou a chover. Como eu não tinha levado guarda-chuva, me vi em apuros. Só que, quando desci, o céu já estava azul de novo. Mudando de assunto, como vai a vida aí na cidade grande? Eu ando lendo com calma à noite. Depois escrevo de novo.
 - Reconheço e uso vocabulário de cidade, independência e leitura.
 - Distingo 都市 de 都会 e o par 解く / 解ける.
 - Sei usar ところが e ところで como conectores de discurso.

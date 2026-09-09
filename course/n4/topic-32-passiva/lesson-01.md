@@ -64,7 +64,7 @@ Quatro kanji do cotidiano, ligados a roupa, estações e calendário:
 #### Hora de praticar
 
 #### Leitura
-> 📖 手に入れられると思いますよ。花は切られるとすぐにしぼむ。水道の水が止められた。この本は多くの人に読まれている — Acho que você consegue, viu. As flores murcham logo depois de cortadas. A água do encanamento foi cortada. Este livro é lido por muita gente.
+> 📖 きのう、先生にほめられました。帰りに雨にふられて、服が重くなりました。うちでは、いもうとにパンを食べられました。でも、あとで新しいパンを買ってくれました。いろいろなことがありましたが、楽しい一日でした。 — Ontem o professor me elogiou. Na volta peguei chuva e a roupa ficou pesada. Em casa, minha irmã mais nova comeu o meu pão. Mas depois ela comprou outro para mim. Aconteceu de tudo, mas foi um dia divertido.
 - Sei formar a passiva 〜れる・られる nos três grupos de verbos.
 - Distingo a passiva regular da passiva sofrida (quando o sujeito é prejudicado).
 - Uso に para marcar o agente (quem faz a ação) na passiva.

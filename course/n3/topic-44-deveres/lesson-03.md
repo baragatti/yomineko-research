@@ -88,7 +88,7 @@ Veja como 観 e 察 se unem em 観察 ('observação'): 'ver' mais 'deduzir' é 
 #### Hora de praticar
 
 #### Leitura
-> 📖 どんなに年を取っても学問ができないことはない。考えさせてください。お前にそんなこと、させるわけにはいかないよ。何事も思い通りにするわけにはいかない。負け犬になるわけにはいかない。 — Por mais velho que se fique, não é que não se possa estudar. Deixe-me pensar, por favor. Não posso deixar você fazer uma coisa dessas. Não dá para fazer tudo do seu jeito. Não dá para eu virar um fracassado.
+> 📖 すみませんが、少し話をさせてください。来週までに一人でこの仕事を全部終わらせるわけにはいきません。時間をかければ、できないことはないと思います。でも、ほかの仕事もあるので、無理をするわけにはいかないのです。もう一日だけ待たせてください。 — Com licença, me deixe falar um pouco. Não dá para eu terminar este trabalho todo sozinho até a semana que vem. Se eu tiver tempo, não é que seja impossível, eu acho. Mas tenho outras tarefas, então não posso me forçar além da conta. Me dê só mais um dia, por favor.
 - Sei pedir permissão para mim mesmo com ～せてください ('deixe-me, permita-me'), montando o causativo + て + ください.
 - Distingo 見せてください ('me mostre') de 見させてください ('deixe-me ver').
 - Sei dizer que algo não dá por dever ou pressão social com ～わけにはいかない (e que a negativa vira 'sou obrigado a').

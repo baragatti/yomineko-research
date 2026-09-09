@@ -53,7 +53,7 @@ As quatro peças em uma vista só:休みなのに働く("trabalha embora seja fo
 #### Hora de praticar
 
 #### Leitura
-> 📖 天気はずっと悪いままだった。ひとつ質問してもいいですか。旅行をつづけてもいいですか。食べながら話しちゃダメだよ。 — O tempo continuou ruim o tempo todo. Posso fazer uma pergunta? Posso continuar minha viagem? Não pode falar enquanto come!
+> 📖 今日は日曜日なのに、朝から会社の仕事をした。ねむかったのに、コーヒーを飲みながら手紙を書いた。電話があっても、出なかった。まどを開けたまま、へやで一人ではたらいた。夜になっても、仕事は終わらなかった。つかれても、あしたはまた会社へ行く。 — Hoje é domingo e, mesmo assim, trabalhei desde cedo nas coisas da empresa. Estava com sono e, mesmo assim, escrevi uma carta enquanto tomava café. Mesmo quando o telefone tocou, não atendi. Trabalhei sozinha no quarto, com a janela aberta do jeito que estava. Mesmo depois que anoiteceu, o trabalho não acabou. Mesmo cansada, amanhã vou de novo para a empresa.
 - Uso のに para um contraste inesperado, com tom de surpresa ou queixa.
 - Formo ～ても/～でも a partir da forma-て e expresso "mesmo que".
 - Junto duas ações simultâneas da mesma pessoa com ～ながら na raiz -masu.

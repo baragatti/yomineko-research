@@ -66,7 +66,7 @@ O kanji 突 significa 'perfurar, cravar, de repente'. Tem a abertura (穴) em ci
 #### Hora de praticar
 
 #### Leitura
-> 📖 先ずは、格好から入らないとね。勉強しないと試験に落ちるよ。わざわざ電話をかけてくださらなくてけっこうです。「どうして行かないの？」「行きたくないからだよ」お子さんが車をおりたらすぐに車を出してください。 — Antes de tudo, a gente tem que começar pelo visual, né. Se você não estudar, vai reprovar na prova. Não precisa se dar ao trabalho de me ligar. "Por que você não vai?" "Porque eu não quero ir." Assim que a criança descer do carro, por favor saia (arranque) imediatamente.
+> 📖 来週の試験まで、あと三日しかない。今日中に漢字をおぼえないと、間に合わない。もし全部おぼえても、作文はまだ心配だ。でも、書かないと上手にならない。もしだめでも、次にもう一度受ければいい。とにかく、今夜は早くねないと。 — Faltam só três dias para a prova da semana que vem. Se eu não decorar os kanji hoje, não vai dar tempo. Mesmo que eu decore tudo, a redação ainda me preocupa. Mas, se eu não escrever, não melhoro. Mesmo que dê errado, é só prestar de novo na próxima. De qualquer jeito, hoje à noite tenho que dormir cedo.
 - Sei apontar a consequência ruim de não agir com 〜ないと e usá-la sozinha como 'tenho que'.
 - Lembro que o と de 〜ないと é o 'se' condicional, não o 'que' de citação.
 - Consigo dizer 'mesmo que / mesmo assim' com もし〜ても, com a flexão certa por tipo de palavra.

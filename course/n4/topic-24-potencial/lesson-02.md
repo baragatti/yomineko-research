@@ -80,7 +80,7 @@ Não confunda 世界 ("mundo", せかい) com 線 ("linha", せん): começam co
 > 🗣 今度は、いつ会うことができる？ — Da próxima vez, quando a gente consegue se encontrar?
 
 #### Leitura
-> 📖 食べながら読んではいけません。新しいクラスはいかがですか。人をあざわらうのはよくない。明日よりも今日行きたいんだ。 — Não se deve ler enquanto come. Como está a sua turma nova? Não é bom zombar das pessoas. Prefiro ir hoje a ir amanhã.
+> 📖 わたしは日本語を三年べんきょうしています。今は新聞を読むことができます。でも、まだ電話で話すことができません。世界の人と話すことができたら、たのしいです。来年は、日本語でてがみを書くことができるでしょう。 — Estudo japonês há três anos. Hoje já consigo ler jornal. Mas ainda não consigo falar ao telefone. Se eu conseguir conversar com gente do mundo inteiro, vai ser divertido. No ano que vem, provavelmente já vou conseguir escrever uma carta em japonês.
 - Monto 〜ことができる a partir de qualquer verbo no dicionário.
 - Sei que esta forma é mais formal e geral que 〜れる・られる.
 - Leio 世 e 界 dentro de 世界 (mundo).

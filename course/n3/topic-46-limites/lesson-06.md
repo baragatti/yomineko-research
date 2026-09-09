@@ -57,8 +57,8 @@ Atenção ao par 何も e 何でも. 何も só faz sentido com verbo negativo (
 #### Hora de praticar
 
 #### Leitura
-> 📖 どんな人でもそれをすることができる。ここに座ってトムを待つことにするよ。そうしたらひとつ問題があって・・・。テレビがなかったら生きていけないよ。母さんはロックはぴんとこないという。不安で夜中にふと目をさましてしまう。 — Qualquer pessoa consegue fazer isso. Vou ficar sentado aqui e esperar pelo Tom. Aí então tem um problema... Sem TV eu não consigo viver, viu. Minha mãe diz que rock não faz a cabeça dela. De tão ansioso, acabo acordando de repente no meio da noite.
-> 📖 彼は食べ物と、その上にお金もくれた。９時になってはじめて彼は帰ってきた。あいにく私はカメラを家においてきた。その件に関してあなたに同意しません。この問題に関しては三つの問題がある。それに関しては同意しかねます。 — Ele me deu comida e, ainda por cima, dinheiro também. Ele só voltou pra casa quando deu nove horas. Infelizmente, deixei a câmera em casa. Não concordo com você a respeito desse assunto. A respeito dessa questão, há três problemas. Quanto a isso, não posso concordar.
+> 📖 朝から雨だが、台所には何もない。なべの中も空だ。なぜなら、昨日買い物に行くのをなまけたからだ。何とかしようとなやんだが、かさをさして近くの店まで歩くしかない。外はもう、すっかり寒くなっている。こんな日は、あたたかいなべを作るしかない。 — Chove desde a manhã, e não tem nada na cozinha. A panela também está vazia. Isso porque ontem eu tive preguiça de ir ao mercado. Fiquei pensando num jeito de resolver, mas não tem outra saída senão pegar o guarda-chuva e ir a pé até a loja aqui perto. Lá fora já esfriou completamente. Num dia desses, só resta fazer um cozido bem quentinho.
+> 📖 今日は何もできなかった。なぜなら、朝からずっとなやんでいたからだ。何を食べても味がしなかった。夜、母に電話したら、なみだが出た。何も答えはないが、話せば少し楽になる。何とか明日はがんばりたい。 — Hoje eu não consegui fazer nada. É que desde cedo eu fiquei remoendo uma coisa. Comesse o que comesse, não sentia gosto nenhum. À noite liguei para a minha mãe e acabei chorando. Não tem resposta nenhuma, mas conversar já alivia um pouco. Amanhã eu dou um jeito de encarar melhor.
 - Reconheço e uso vocabulário de dúvida, sentimentos e cotidiano.
 - Distingo なし, 何も e 何でも conforme a polaridade do verbo.
 - Sei empregar なぜなら e なんとか como conectores de razão e improviso.

@@ -13,7 +13,7 @@ Deterministic (hashed sorts, no RNG) so re-runs are reproducible; the APP does t
 design/exam_simulator.md). Real JLPT papers are © JEES — format reference only; zero copied text.
 Output: corpus/exam_banks/{level}_{type}.json + INDEX.md. Usage: build_exam_banks.py"""
 from __future__ import annotations
-import hashlib, json, sqlite3, sys
+import argparse, hashlib, json, sqlite3, sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
@@ -29,6 +29,49 @@ ORD = {"n5": 0, "n4": 1, "n3": 2, "n2": 3, "n1": 4}
 allowed = lambda slvl, lvl: slvl in ORD and ORD[slvl] <= ORD[lvl]
 CAPS = {"kanji_reading": 400, "orthography": 400, "context_fill": 400, "grammar_form": 300, "sentence_order": 300, "text_grammar": 150}
 HAS_KANJI = lambda s: any("一" <= ch <= "鿿" for ch in s)
+
+
+
+_TOK = None
+_MODE_C = None
+
+
+def _tok():
+    """SudachiPy mode-C tokenizer, built on first use so a run that emits no text_grammar item never
+    pays for the dictionary."""
+    global _TOK, _MODE_C
+    if _TOK is None:
+        from sudachipy import dictionary, tokenizer
+        _TOK = dictionary.Dictionary(dict="full").create()
+        _MODE_C = tokenizer.Tokenizer.SplitMode.C
+    return _TOK
+
+
+def token_spans(tok, mode, text: str) -> tuple[set, set]:
+    """Character offsets where a SudachiPy mode-C token starts and ends, for one string.
+
+    W16. `text_grammar` used to blank a grammar form with `jp.replace(form, "（　）", 1)`, which cuts
+    wherever the characters happen to line up — inside a word as readily as around one. `のに` is a
+    form; it is also the tail of 読む**のに**時間 and the middle of たの**のに**… A stem blanked mid-word
+    is not a grammar question, it is a typo the learner has to see through, and the distractor set
+    (whole forms) can no longer fit the hole. The blank is now cut only where the form BEGINS at a
+    token start and ENDS at a token end.
+    """
+    starts, ends = set(), set()
+    for m in tok.tokenize(text, mode):
+        starts.add(m.begin())
+        ends.add(m.end())
+    return starts, ends
+
+
+def boundary_occurrence(text: str, form: str, starts: set, ends: set) -> int:
+    """Index of the first occurrence of `form` in `text` that is token-aligned, or -1."""
+    i = text.find(form)
+    while i != -1:
+        if i in starts and i + len(form) in ends:
+            return i
+        i = text.find(form, i + 1)
+    return -1
 
 
 def spread(anchor: str, value: str) -> str:
@@ -58,8 +101,14 @@ def pick_distractors(cands, correct_key, want=3):
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=None,
+                    help="write the banks here instead of corpus/exam_banks (prototype mode: "
+                         "nothing under corpus/ is touched)")
+    args = ap.parse_args()
+    out_dir = Path(args.out) if args.out else OUT
     con = sqlite3.connect(DB)
-    OUT.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     counts = {}
 
     vocab = [dict(zip(("id", "hw", "kana", "lex", "lvl"), r)) for r in con.execute(
@@ -102,6 +151,27 @@ def main() -> int:
             sgram.setdefault(sid, []).append(gid)
     gp = {gid: (key, lvl, forms) for gid, key, lvl, forms in con.execute(
         "SELECT id,key,level,forms_json FROM grammar_point")}
+
+    # W16. Kanji taught by the END of each level, from the lessons' own cumulative_known_set (which
+    # is cumulative, so an N4 lesson's set already contains pre-N5 and N5). Used to keep a
+    # text_grammar item inside the level: `grammar_point.forms_json` carries grammar METALANGUAGE
+    # (自動詞, 命令形, 受身形, が必要), and those made distractors printing 詞 / 形 / 受 / 必 in an N4
+    # paper — 15 items over the ceiling of 8 in validate_exam_level_gate. They are also poor
+    # distractors on their own terms: a grammar-term label never fits a sentence blank.
+    taught_kanji: dict = {}
+    for slug, cks in con.execute(
+            "SELECT slug,cumulative_known_set FROM lesson WHERE cumulative_known_set NOT IN ('', NULL)"):
+        m = slug.split(":", 1)[1].split("-", 1)[0]
+        if m not in LEVELS:
+            continue
+        try:
+            k = json.loads(cks)
+        except Exception:
+            continue
+        taught_kanji.setdefault(m, set()).update(
+            x.split(":", 1)[1] for x in (k.get("kanji") or []))
+    readable = lambda form, lvl: all(not HAS_KANJI(ch) or ch in taught_kanji.get(lvl, set())
+                                     for ch in form)
 
     for lvl in LEVELS:
         lv_vocab = [v for v in vocab if v["lvl"] == lvl and HAS_KANJI(v["hw"]) and v["hw"] != v["kana"]]
@@ -189,31 +259,57 @@ def main() -> int:
 
         # ---- text_grammar (文章の文法): blank a level-appropriate grammar form inside a READING passage ----
         tg = []
+        # every printed form, correct and distractor alike, has to be readable at this level
+        tg_forms = [f for f in lv_forms if readable(f, lvl)]
         if con.execute("SELECT name FROM sqlite_master WHERE name='reading'").fetchone():
             for slug, rlvl, jp in con.execute("SELECT slug,level,jp FROM reading ORDER BY slug"):
                 if rlvl != lvl or len(tg) >= CAPS["text_grammar"]:
                     continue
-                fm = next((x for x in lv_forms if x in jp), None)
+                # W16: the blank is cut at SudachiPy mode-C token boundaries, never inside a word.
+                tk = _tok()
+                starts, ends = token_spans(tk, _MODE_C, jp)
+                fm, at = None, -1
+                for cand in tg_forms:
+                    # The form must occur EXACTLY ONCE in the passage. A W15 passage is written
+                    # ABOUT its lesson's grammar target and therefore repeats it, so blanking the
+                    # first occurrence leaves the answer printed two lines down — which
+                    # validate_exam_banks check C ("stem prints its own answer outside the blank")
+                    # is there to catch. The old concatenations rarely repeated a form, so the rule
+                    # was never needed before the passages became real texts.
+                    if jp.count(cand) != 1:
+                        continue
+                    at = boundary_occurrence(jp, cand, starts, ends)
+                    if at >= 0:
+                        fm = cand
+                        break
                 if not fm:
                     continue
-                dis = [x for x in lv_forms if x != fm and x not in jp]
+                dis = [x for x in tg_forms if x != fm and x not in jp]
                 dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{slug}:{fm}", x)))
                 if len(dis) >= 3:
                     tg.append({"id": f"tg:{lvl}:{slug.split(':',1)[1]}", "level": lvl,
-                               "stem": jp.replace(fm, "（　）", 1), "correct": fm, "distractors": dis[:3],
-                               "reading": slug, "source": "reading+grammar"})
+                               "stem": jp[:at] + "（　）" + jp[at + len(fm):], "correct": fm,
+                               "distractors": dis[:3], "reading": slug, "source": "reading+grammar",
+                               # Provenance the disabled migrate_exam_banks_p7.py used to stamp
+                               # after the fact. A text_grammar stem is a REAL passage with one form
+                               # blanked, so the Japanese the learner reads is not model-generated
+                               # (ai_generated false) and the item is a derivation, not pedagogy
+                               # (layer B). Emitted here so a regenerated bank carries it: the
+                               # migration cannot run in a rebuild, and validate_provenance_json.py
+                               # requires the fields on every item.
+                               "layer": "B", "ai_generated": False, "needs_review": False})
 
         for name, items in (("kanji_reading", kr), ("orthography", ort), ("context_fill", cf),
                             ("grammar_form", gf), ("sentence_order", so), ("text_grammar", tg)):
             items = items[:CAPS[name]]
-            (OUT / f"{lvl}_{name}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
+            (out_dir / f"{lvl}_{name}.json").write_text(json.dumps(items, ensure_ascii=False), encoding="utf-8")
             counts[f"{lvl}_{name}"] = len(items)
 
     # INDEX covers ALL bank files (deterministic + authored) — glob, don't use only this run's counts,
     # so regenerating the deterministic banks never wipes the authored banks from the listing.
     all_counts = {f.stem: len(json.loads(f.read_text(encoding="utf-8")))
-                  for f in sorted(OUT.glob("*_*.json"))}
-    (OUT / "INDEX.md").write_text(
+                  for f in sorted(out_dir.glob("*_*.json"))}
+    (out_dir / "INDEX.md").write_text(
         "# corpus/exam_banks — JLPT-style question banks (our format)\n\n"
         "Per-level, per-type item banks DERIVED from verified corpus facts (vocab readings, real bank "
         "sentences, grammar forms) — deterministic types have no AI-generated Japanese; distractors are "

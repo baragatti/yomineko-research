@@ -80,8 +80,8 @@ São muitos kanji de uma vez, então não tente decorar todos agora. Eles vão v
 #### Hora de praticar
 
 #### Leitura
-> 📖 彼女は歌手として有名だ。彼女は歌手として名高い。彼は医者として有名だ。彼は医者として無能だ。幸せって何だっけ？何考えてたっけ。 — Ela é famosa como cantora. Ela é célebre como cantora. Ele é famoso como médico. Ele é incompetente como médico. O que mesmo é a felicidade? O que mesmo eu estava pensando?
-> 📖 薬飲んだっけ？今何月だっけ？祖父は、私が生まれて間もなく亡くなりました。私はその悲しい知らせを受けてひどく悲しんだ。数学の宿題は、思ってたよりもかんたんだった。今日は天気がよかったのでみんなで外で遊んだ。 — Será que eu já tomei o remédio? Em que mês a gente está mesmo? Meu avô faleceu pouco depois de eu nascer. Fiquei profundamente triste ao receber aquela notícia triste. A lição de matemática foi mais fácil do que eu pensava. Como hoje o tempo estava bom, brincamos todos juntos lá fora.
+> 📖 姉は今年から、大きい病院で医者として働いている。その病院で一番いい医者として選ばれた。あれ、いつだったっけ。たしか、先月のはじめだったっけ。姉は昔から、家族の中で一番よく働く人として知られている。今度、お礼として何か送りたい。 — Desde este ano minha irmã trabalha como médica num hospital grande. Foi escolhida a melhor médica do hospital. Peraí, quando mesmo foi isso? Acho que foi no começo do mês passado, né? Lá em casa ela sempre foi conhecida como a pessoa que mais trabalha. Qualquer dia quero mandar alguma coisa como agradecimento.
+> 📖 あれ、明日の約束は何時からだっけ。集まる場所の名前も忘れてしまった。確か駅の近くの店だったよね。先週も同じことを聞いたっけ。悪いけど、もう一度教えて。着いたら電話するね。 — Ué, o combinado de amanhã era a partir de que horas mesmo? Também esqueci o nome do lugar onde a gente vai se encontrar. Era aquele lugar perto da estação, né? Será que eu já perguntei a mesma coisa semana passada? Foi mal, me fala de novo. Quando eu chegar eu te ligo.
 - Sei afirmar o papel ou a função de algo/alguém com substantivo + として ('como', 'na condição de').
 - Não confundo o として de papel com o 'como' de comparação (que pede のように).
 - Consigo tentar lembrar algo esquecido com ～っけ no registro casual.

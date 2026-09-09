@@ -58,7 +58,7 @@ Não confunda それで com から/ので. から/ので ligam causa e efeito de
 #### Hora de praticar
 
 #### Leitura
-> 📖 そうとはまず思えない。それで十分だよ。まずは食べよう。それでいいよ。 — Eu dificilmente consigo pensar assim. Assim já é suficiente. Primeiro, vamos comer. Assim está bom.
+> 📖 今朝は電車が止まりました。朝ごはんを食べる時間もありませんでした。それで、少しつかれました。まず、駅の前で水を買いました。それで、会社まで歩きました。 — Hoje de manhã o trem parou. Nem deu tempo de tomar café da manhã. Por isso fiquei um pouco cansado. Primeiro, comprei água na frente da estação. E então fui andando até a empresa.
 - Uso それで para ligar uma causa à sua consequência entre duas frases.
 - Abro uma sequência de passos ou uma fala com まず.
 - Lembro que esses conectores ficam no começo da frase e não mudam a conjugação.

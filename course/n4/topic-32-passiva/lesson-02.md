@@ -68,7 +68,7 @@ Quatro kanji desta vez, ligados a hábitos, lugares e comida.
 > 🗣 真夜中が幽霊のうろつく時間だとされている。 — Diz-se que a meia-noite é a hora em que os fantasmas perambulam.
 
 #### Leitura
-> 📖 私にはどれも同じに見えるけど。電話を発明したのはだれですか。母が帰って来たらしかられるよ。私はたった今帰ったばかりです。 — Pra mim todos parecem iguais, mas... Quem inventou o telefone? Quando a mamãe chegar em casa, você vai levar bronca. Eu acabei de chegar em casa agora mesmo.
+> 📖 この国の学校では、そうじも大切なべんきょうだとされている。学生が自分で教室をきれいにするしゅうかんがある。これは、みんなで使うばしょを大事にする気持ちをそだてるとされている。先生からも、そうじの時間は大切だと言われた。わたしも、しょうらいこの気持ちをわすれないようにしたい。 — Nas escolas deste país, considera-se que a limpeza também é um aprendizado importante. Existe o costume de os próprios alunos deixarem a sala de aula limpa. Diz-se que isso cria o cuidado com o espaço que todo mundo usa. O professor também me disse que a hora da limpeza é importante. Eu também quero fazer o possível para não esquecer esse cuidado no futuro.
 - Sei usar X とされている para dizer "diz-se que / é tido como".
 - Reconheço される como a passiva de する dentro da expressão.
 - Identifico o vocabulário respeitoso (召し上がる, 拝見, 御, 様) e seu tom de cortesia.

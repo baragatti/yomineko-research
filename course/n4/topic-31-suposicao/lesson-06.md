@@ -66,7 +66,7 @@ Juntando os três padrões num só retrato: このカフェは和風で、静か
 > 🗣 風の音がする。 — Ouço o som do vento.
 
 #### Leitura
-> 📖 このレストランはイタリア風の料理を出す。山の上から海が見られる。帰りに買い物してきてくれる？手紙を書いているところです。 — Este restaurante serve pratos no estilo italiano. Do alto da montanha dá pra ver o mar. Na volta, você faz umas compras pra mim? Estou bem no meio de escrever uma carta.
+> 📖 今日は朝から、だいどころからいいにおいがした。母が作っていたのは、むかし風の料理だった。まどから、子どものこえがした。外には、花を見に行く人が多く見られた。母の料理は、少しあまい味がした。春の風の音がして、いい気持ちになった。 — Hoje, desde cedo, vinha um cheiro bom da cozinha. O que a minha mãe estava preparando era comida à moda antiga. Da janela chegavam vozes de criança. Lá fora dava para ver muita gente indo olhar as flores. A comida da minha mãe tinha um gostinho meio doce. Chegou o som do vento de primavera, e bateu uma sensação boa.
 - Descrevo uma percepção que chega até mim (cheiro, som, sensação) com 〜がする, usando が.
 - Digo que algo "pode ser visto" numa descrição com 〜がみられる.
 - Indico estilo ou jeito com o sufixo 〜風 (ふう) grudado a um substantivo.

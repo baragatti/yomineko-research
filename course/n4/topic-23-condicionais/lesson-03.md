@@ -56,7 +56,7 @@ O condicional 〜ば é o coração de muitos provérbios. Um clássico:塵も�
 > 🗣 無理も通れば道理となる。 — Se até o irracional passa a vingar, ele acaba virando a regra.
 
 #### Leitura
-> 📖 お母さんは目を大きく開いた。りっぱな大人になりたいです。自分の力だけでそれをできる。しかし、人間はちがっている。 — A mãe arregalou os olhos. Quero me tornar um adulto admirável. Consigo fazer isso só com as minhas próprias forças. Mas os seres humanos são diferentes.
+> 📖 毎日少しべんきょうすれば、はやく上手になります。分からないことばがあれば、先生に聞けばいいです。新しいことばは、たくさん書けばおぼえます。時間がなければ、電車の中で読んでもいいです。休まなければ、来年はもっと上手になります。 — Se você estudar um pouquinho todo dia, logo fica bom nisso. Se aparecer uma palavra que você não entende, é só perguntar ao professor. Palavra nova, se você escrever bastante, acaba decorando. Se não tiver tempo, dá para ler no trem mesmo. Se você não faltar nenhum dia, no ano que vem vai estar bem melhor.
 - Sei formar o condicional 〜ば trocando o -u dos verbos por -e + ば.
 - Conjugo ichidan com 〜れば e adjetivos-い com 〜ければ.
 - Uso 〜ば para condições lógicas, relações naturais, conselhos e provérbios.

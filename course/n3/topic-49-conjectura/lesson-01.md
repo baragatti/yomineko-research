@@ -60,7 +60,7 @@ O kanji 沈 significa "afundar", o mesmo da palavra 沈む. À esquerda está o 
 #### Hora de praticar
 
 #### Leitura
-> 📖 早く週末にならないかなあ。トム早く来ないかなあ。そうだったかなあ。天気は持つかなあ。明日は雨かもしれない。 — Será que o fim de semana não chega logo? Mal posso esperar. Será que o Tom não vem logo? Será que era assim mesmo? Será que o tempo vai aguentar? Amanhã talvez chova.
+> 📖 今日は朝から雨だ。明日も降るのかなあ。今度の日曜日に友達と海に行くやくそくをしたけど、もしかすると無理かもしれない。早くはれないかなあ。もしかすると、来週のほうが天気がいいかもしれない。雨の日に家で本を読むのも、幸せなのかなあ。 — Hoje está chovendo desde cedo. Será que amanhã também vai chover? Combinei de ir à praia com uns amigos neste domingo, mas talvez não role. Será que o tempo não abre logo? Quem sabe na semana que vem o tempo esteja melhor. Será que ficar em casa lendo num dia de chuva também é felicidade?
 - Sei usar ～かなあ para refletir em voz alta ou expressar um desejo brando, no registro informal.
 - Lembro de soltar o だ antes de かなあ com substantivo e adjetivo な (学生かなあ, não 学生だかなあ).
 - Consigo cercar uma frase de incerteza com もしかすると〜かもしれない sem dobrar o "talvez".

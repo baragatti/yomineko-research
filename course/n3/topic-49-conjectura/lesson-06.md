@@ -60,8 +60,8 @@ Repare como muitas dessas palavras começam com o som はい: 灰 (はい, cinza
 #### Hora de praticar
 
 #### Leitura
-> 📖 靴が小さいのは足がむくんだせいですね。それより他の靴をはいてみたいのですが。たいそうご無理をお願いしてすみません。一人一人がしっかりと社会のルールを守る。３６人が１８日と１９日の会議に出席する。私たちが出かけたとたん雨が降り始めた。 — O sapato está apertado porque o seu pé está inchado, né. Eu gostaria de experimentar outros sapatos diferentes desses. Desculpe por lhe pedir um favor tão grande e trabalhoso. Cada um respeita direitinho as regras da sociedade. Trinta e seis pessoas vão participar da reunião nos dias 18 e 19. Assim que saímos, começou a chover.
-> 📖 私はアメリカで医学を学ぶつもりでした。今回はテストを受けてみようと思うんだ。食べ過ぎてはいけないと医者に言われた。もしもし、何か手伝うことがありますか。どんなに遅くなっても起こしてください。このテレビがすべてのうちで一番よい。 — Eu pretendia estudar medicina nos Estados Unidos. Desta vez estou pensando em fazer a prova. O médico me disse que eu não posso comer demais. Alô, precisa de alguma ajuda? Por mais tarde que fique, me acorde, por favor. Esta TV é a melhor de todas.
+> 📖 明日はハイキングに行く予定だ。今日は朝から雨だったが、明日ははれるはずだ。朝、配達が来るのを待ってから出るので、山に着くのは昼になるはずだ。山の上でのんびりして、いい写真をとりたい。去年は雨だったので、今年は本当に楽しみだ。今夜はなかなかねられそうにない。 — Amanhã eu pretendo ir fazer uma trilha. Hoje choveu desde a manhã, mas amanhã o tempo deve abrir. De manhã vou esperar a entrega chegar antes de sair, então devo chegar na montanha só ao meio-dia. Quero ficar tranquilo lá no alto e tirar boas fotos. No ano passado choveu, então este ano estou mesmo animado. Hoje à noite acho que não vou conseguir dormir tão cedo.
+> 📖 同じクラスの人が、パイロットになりたいらしい。子どものころからの望みだそうだ。目がとてもよくて、体も強いらしい。試験はとても難しいそうだが、あの人ならだいじょうぶだろう。のんびりしている人だが、心は強い。いつか空の上で会えるといい。 — Parece que um colega da minha turma quer ser piloto. Dizem que é um sonho que ele tem desde criança. Pelo visto enxerga muito bem e é forte fisicamente. Falam que a prova é dificílima, mas com ele deve dar certo. É uma pessoa tranquila, mas por dentro é forte. Seria legal encontrar com ele lá em cima um dia.
 - Sei usar palavras sobre desejo, esperança e o ato de declarar.
 - Uso verbos como esticar, deixar crescer e afirmar.
 - Reconheço substantivos do cotidiano, como profissões e objetos.

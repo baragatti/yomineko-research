@@ -58,7 +58,7 @@ O par 師 + 走 forma 師走, o nome poético de dezembro: 'até o mestre corre'
 #### Hora de praticar
 
 #### Leitura
-> 📖 もっと英語を話せばよかった。自転車で来ればよかったなあ。生まれてこなければよかった。バレエ続けてればよかった。ここにいればよかったのに。 — Eu devia ter falado mais inglês. Ah, eu devia ter vindo de bicicleta. Eu queria nunca ter nascido. Eu devia ter continuado com o balé. Você devia ter ficado aqui.
+> 📖 昨日の試験は思ったより難しかった。もっと早く教科書を開けばよかった。時間があれば、もう一度全部読むのに。夜おそくまで友だちと話さなければよかった。今日から毎日少しずつ続けよう。 — A prova de ontem foi mais difícil do que eu esperava. Eu devia ter aberto o livro bem antes. Se eu tivesse tempo, eu leria tudo de novo. Não devia ter ficado conversando com os amigos até tarde da noite. De hoje em diante vou continuar um pouquinho todo dia.
 - Sei expressar lamento por uma condição não cumprida com ば〜のに ('se ao menos...').
 - Consigo lamentar uma escolha com 〜ばよかった ('eu devia ter...') e fazer o negativo なければよかった.
 - Não confundo o よかった de lamento (ばよかった) com o よかった de alívio ('que bom!').

@@ -76,8 +76,8 @@ O kanji 断 significa "cortar, recusar, decisão". À direita o machado (斤): C
 #### Hora de praticar
 
 #### Leitura
-> 📖 ドアを開けっぱなしにするな。水を出しっぱなしにしないで。理由は以下のとおりである。私は立ちっぱなしだった。私の言うとおりにやって。こっちはいっぱいです。 — Não deixe a porta aberta. Não deixe a água correndo. Os motivos são os seguintes. Fiquei em pé o tempo todo. Faça do jeito que eu falo. Este aqui está cheio.
-> 📖 電気つけっぱなしだよ。車がいっぱいでした。くしゃみしっぱなし。リストは次のとおり。言うとおりにして。そのとおり！ — Você deixou a luz acesa, viu. Estava cheio de carros. Não paro de espirrar. A lista é a seguinte. Faça do jeito que eu falo. Isso mesmo!
+> 📖 昨日、台所を見てがっかりした。電気はつけっぱなし、水は出しっぱなしだった。台所は洗っていないコップでいっぱいだった。前に言ったとおりにしてほしいだけなのに。私も時間がないが、決めたことは決めたことだ。今日帰ったら、もう一度話すつもりだ。 — Ontem olhei a cozinha e fiquei decepcionado. Deixaram a luz acesa e a água correndo. A cozinha estava cheia de copos sem lavar. Eu só queria que fosse feito do jeito que eu falei. Tempo eu também não tenho, mas o que foi combinado foi combinado. Hoje, quando eu chegar, pretendo conversar de novo.
+> 📖 きのう、へやの電気をつけっぱなしで出かけてしまった。まどを開けっぱなしにしたので、ゆかが雨でいっぱいになった。帰ったら、台所はカップでいっぱいだった。兄は「母の言ったとおりだろう」とわらった。私は何も言えなかった。今日は、計画のとおりにそうじをする。 — Ontem acabei saindo e deixando a luz do quarto acesa. Como deixei a janela aberta esse tempo todo, o chão ficou cheio de água da chuva. Quando cheguei, a cozinha estava cheia de xícaras. Meu irmão riu e disse: "foi bem como a mamãe falou, né?" Eu não consegui dizer nada. Hoje eu vou limpar tudo conforme o planejado.
 - Uso ～っぱなし para criticar um descuido (電気をつけっぱなし) e distingo de ～たまま (neutro).
 - Uso 〜でいっぱい para 'cheio de', lembrando que a partícula é で (部屋は荷物でいっぱいだ).
 - Uso ～とおり/～どおり para 'conforme' e sei que colado a substantivo vira どおり (予定どおり).

@@ -77,7 +77,7 @@ Armadilha PT: em 行こう e 寝よう, o final おう/よう traz uma vogal lon
 #### Hora de praticar
 
 #### Leitura
-> 📖 全部私のせいにしようとしないでよ。あれ、私何言おうとしたんだっけ？できるだけ安くあげようとした。私はその子をなだめようとした。左手で書いてみようとした。 — Não tenta jogar a culpa toda em cima de mim. Ué, o que mesmo que eu ia dizer? Tentei deixar o mais barato possível. Eu tentei acalmar aquela criança. Eu tentei escrever com a mão esquerda.
+> 📖 今年こそ、毎朝走ろうと思っていた。先週、一度だけ早く起きようとした。でも、体が動こうとしなかった。友だちもいっしょに行こうと言ってくれたが、私は行こうとしなかった。来月からは、まず近くの川まで歩こうと思う。 — Este ano eu ia mesmo correr toda manhã. Na semana passada tentei acordar cedo uma única vez. Mas o corpo não quis sair do lugar. Um amigo até me chamou para irmos juntos, mas eu não fiz o menor esforço para ir. A partir do mês que vem, pretendo começar andando até o rio aqui perto.
 - Formo a volitiva (〜よう/〜おう) e a uso com と思う para anunciar um plano meu.
 - Relato uma tentativa que não deu certo com 〜うとした, normalmente seguida de が.
 - Descrevo a recusa de outra pessoa com 〜ようとしない, sem aplicar a estrutura a mim mesmo.

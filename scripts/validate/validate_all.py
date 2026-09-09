@@ -34,6 +34,20 @@ NEEDS_VENV = {"run_golden.py", "validate_generated_jp.py"}
 SUITE = [
     ("validate_lessons.py", "code"),
     ("validate_readings.py", "code"),
+    # W15. The readability gate proves a box uses nothing untaught; it says nothing about whether the
+    # sentences belong together, which is how a box shipped as "Where are you going?" + "Thank you!".
+    # Hard checks are string equality and set containment only; the three heuristics over surface
+    # morphology (topic / tense / register drift) FLAG against a ratchet and never gate. Plant-proved
+    # on a copied tree: `validate_reading_coherence.py --selftest`, 7 plants, 7 caught, control green.
+    ("validate_reading_coherence.py", "code"),
+    # W15. Unit test of the known-set resolver's surface rule: a surface the gating lesson already
+    # teaches must not resolve to an unknown LEMMA (ください -> 下さる cost every N5 passage its
+    # てください). Both directions are pinned — the rescue AND the refusal to launder 橋 into 箸.
+    ("test_known_set_surface.py", "code"),
+    # W16. The two exam-builder rules that read the real passage: a text_grammar blank is cut at
+    # SudachiPy token boundaries (the old `jp.replace(form, …)` cut inside a word in 59 of the 286
+    # passages), and a reading_comp item is checked against the passage it is printed under.
+    ("test_exam_builders.py", "code"),
     ("validate_display_consistency.py", "code"),
     ("validate_groundtruth.py", "code"),
     ("validate_strokes.py", "code"),

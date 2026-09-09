@@ -58,7 +58,7 @@ Repare que todas essas contrações vivem em 平仮名(ひらがな). O hiragana
 #### Hora de praticar
 
 #### Leitura
-> 📖 出かけなきゃ。話があるんだけど。どこに行きますか？ — Tenho que sair. É que eu queria falar uma coisa com você... Aonde você vai?
+> 📖 あしたはとてもいそがしい。あさ八時におきなくちゃ。それから、一人でがっこうへ行かなきゃ。ばんごはんはさきにたべてね。あとででんわするよ。じゃあ、あしたね。 — Amanhã vou estar muito ocupada. Tenho que acordar às oito da manhã. Depois disso, tenho que ir sozinha para a escola. Janta antes, sem me esperar, viu. Te ligo mais tarde. Então tá, até amanhã.
 - Reconheço 〜なくちゃいけない como a versão falada de 〜なくてはいけない.
 - Sei usar 〜なくちゃ e 〜なきゃ sozinhos, deixando o '…não dá' subentendido.
 - Consigo formar a contração trocando o 〜ない do verbo por 〜なくちゃ.

@@ -75,7 +75,7 @@ Junte os dois assuntos da lição numa frase só:大人になる("virar adulto")
 > 🗣 嵐になるだろう。 — Provavelmente vai dar tempestade.
 
 #### Leitura
-> 📖 ただ見ているだけです。どこから出るんですか。 — Estou só olhando. De onde (ele/isso) parte?
+> 📖 だんだんあきになりました。あさはすずしくなりましたから、いつもこうえんをさんぽします。こうえんのくさも、だんだんきいろくなります。あしたはさむくなりますから、あたたかいコートをきます。 — Aos poucos chegou o outono. De manhã ficou mais fresco, então sempre dou uma volta no parque. A grama do parque também vai ficando amarela. Amanhã vai esfriar, então vou vestir um casaco quentinho.
 - Formo o advérbio ～く trocando o い por く (e sei que いい → よく).
 - Entendo que なる expressa mudança de estado ("tornar-se / ficar").
 - Uso ～になる com substantivos e adjetivos-な.

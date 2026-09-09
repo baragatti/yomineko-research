@@ -86,7 +86,7 @@ Repare como vários destes kanji compartilham o radical da pessoa イ à esquerd
 #### Hora de praticar
 
 #### Leitura
-> 📖 世界地図を見てごらん。あの山を見てごらん。なでなでしてごらん。信じてみるのはどう？英語で言ってみるね。 — Dá uma olhada no mapa-múndi. Olha aquela montanha. Faz carinho nele. Que tal tentar acreditar? Vou tentar dizer em inglês.
+> 📖 テーブルの上に、新しいおかしを買っといたよ。まだ食べたことがないでしょう。食べてごらん。中に、赤い葉の形のものが入っている。何が入っているかは、この紙に書いといたから、読んでごらん。おいしかったら、今度いっしょに作ってみよう。出かける前に、かぎをかけといてね。 — Comprei um doce novo e deixei em cima da mesa. Você ainda não comeu isso, né. Prova. Dentro tem um em formato de folha vermelha. O que tem dentro eu já deixei anotado neste papel, dá uma lida. Se você gostar, da próxima vez a gente faz junto. Antes de sair, deixa tudo trancado, viu.
 - Sei usar ～てみる para sugerir ou relatar uma tentativa ('experimentar, dar uma tentada').
 - Consigo incentivar alguém com carinho usando ～てごらん ('vai lá, experimenta').
 - Sei contrair ～ておく em ～とく e ～でおく em ～どく na fala casual.

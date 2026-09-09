@@ -73,7 +73,7 @@ O kanji 田 significa campo de arroz, arrozal. A forma é fácil de gravar: é u
 #### Hora de praticar
 
 #### Leitura
-> 📖 あまり出かけたくなかった。どれくらいかかるのかしら。南ターミナルはどこですか。行かなければなりませんか。 — Eu não estava muito a fim de sair. Será que vai demorar muito? Onde fica o terminal sul? Eu preciso ir?
+> 📖 今週の休みに、ちょっと話があるんだけど、時間ある？ひるでもよるでもいいから、駅の前の店で会わない？あの店はコーヒーでもサンドイッチでも安いよ。ほかに、パートの友だちもよびたいんだけど、いい？電話でもメールでもいいから、今日中におしえて。 — É que eu queria falar uma coisa com você na folga desta semana. Tem tempo? Pode ser de dia ou de noite, tanto faz. Vamos nos encontrar naquele lugar em frente à estação? Lá, tanto o café quanto o sanduíche são baratos. Fora isso, eu queria chamar uma amiga do meu trabalho de meio período. Tudo bem? Me avisa ainda hoje, por telefone ou por e-mail, tanto faz.
 - Listo alternativas equivalentes com 〜でも〜でも ("tanto X quanto Y").
 - Acrescento com ほかに(も) e excetuo com ほか(に)は.
 - Suavizo pedidos e dou contexto com 〜んだけど・〜んですが ("é que...").

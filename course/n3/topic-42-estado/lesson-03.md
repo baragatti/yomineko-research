@@ -80,7 +80,7 @@ O kanji 由 significa "motivo, razão, origem". Aparece em 理由 ("motivo, raz�
 #### Hora de praticar
 
 #### Leitura
-> 📖 ヒーターをつけたまま外出した。どうか立ったままでいて下さい。ドアを開けたままにしておくな。電話を切らずにお待ち下さい。間に人を入れずに解決しよう。 — Saí de casa com o aquecedor ligado. Por favor, permaneça de pé. Não deixe a porta aberta. Por favor, aguarde na linha (sem desligar). Vamos resolver isso sem envolver terceiros.
+> 📖 今朝は急いでいて、朝ご飯を食べずに家を出た。電気をつけたまま出かけてしまった。まども開けたままだったと思う。何も言わないで出たので、母がしんぱいしたそうだ。明日からは、何もわすれずに出かけたい。 — Hoje de manhã eu estava com pressa e saí de casa sem tomar café. Acabei saindo com a luz acesa. Acho que a janela também ficou aberta. Como saí sem falar nada, pelo visto minha mãe ficou preocupada. De amanhã em diante quero sair sem esquecer nada.
 - Uso ～ないで para 'sem fazer' (朝ご飯を食べないで出かけた) e distingo de ～なくて (causa).
 - Sei que ～ずに é o equivalente formal de ～ないで e que する vira せずに.
 - Uso ～まま para um estado inalterado (窓を開けたまま寝た) e sei que adjetivo い liga direto, sem な.

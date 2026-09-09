@@ -47,6 +47,8 @@ bodies. Every validator below reads the export unless its row says otherwise.
 | `validate_srs_decks.py` | decks exist in `design/unlock_enums.json`; cards file into the LESSON's level deck (front-loading is legal and filed where it is taught); no duplicate cards |
 | `validate_md_views.py` | every generated `.md` view re-renders byte-identical from its `.json` source (reads the DB for sentence resolution — the one sanctioned DB read in a view check) |
 | `validate_readings.py` | max_new=0: every kanji and content word of a reading is inside its gating lesson's exported cks, slug space |
+| `validate_reading_coherence.py` | W15. A reading box is a TEXT, not a pile of true sentences. HARD (string equality and set containment only): an authored passage has 3-6 sentences and its `sentences` re-concatenate to `jp`, its tokens re-concatenate to `jp`, its `uses` is inside the gating lesson's cks, and a NON-DIALOGUE passage does not mix first-person pronouns. ADVISORY against `reading_coherence_baseline.json` (may shrink, never grow): topic drift (a sentence sharing no content word and no kanji with anything before it), tense drift (>1 past/non-past switch), register drift (mixed です・ます and plain endings) — heuristics over surface morphology that a quotation, a dropped subject or a deliberate flashback can each fire on legitimately, so they flag for the teacher pass and never gate. Plant-proved on a copied tree carrying a copy of the validator: `--selftest`, 7 plants, 7 caught, control green |
+| `test_known_set_surface.py` | W15. Unit test of the known-set resolver. A surface the gating lesson already teaches must not resolve to an unknown LEMMA (ください resolves to 下さる, an N4 record, so every N5 passage using てください was reported as introducing an untaught word). Pins both directions: the rescue, the refusal to launder a same-reading neighbour (箸 for 橋), the §3 numeral carve-out, the run rule that credits お\|茶 to the taught お茶, and its refusal to spell a "word" across a 。 |
 
 ### Corpus content
 
@@ -100,7 +102,7 @@ bodies. Every validator below reads the export unless its row says otherwise.
 | `validate_index_rebuildable.py` | the git-ignored `db/corpus.sqlite` really is regenerable: replays `research/derived/rebuild_manifest.json` into a scratch DB, re-exports, and diffs the result against the committed `corpus/` and `course/` trees byte for byte |
 
 This is the only validator that builds a database instead of reading the export, because the claim it
-tests is about the database. `research/derived/rebuild_manifest.json` is the durable half: 116 steps —
+tests is about the database. `research/derived/rebuild_manifest.json` is the durable half: 120 steps —
 every script that has ever written the DB — in the order a rebuild must run them, each with its
 arguments, the commit it first landed in, the tables it writes, and (for the 36 that cannot run
 today) why not. `scripts/rebuild_index.py` executes it; `scripts/ingest/replay_all.py` is a step
@@ -121,7 +123,7 @@ steps into a scratch DB (about 85 s, most of it `replay_all.py` re-dissecting th
 `export_corpus.py`, `export_course.py` and `export_readings.py` against it, and diffs the 790 files
 they write.
 
-**Steps 112-116 are replayed by the FULL mode only, and cannot join `--quick` (W11c, measured).**
+**Steps 112-117 are replayed by the FULL mode only, and cannot join `--quick` (W11c, measured; W15's `apply_reading_passages.py` joined them at step 116).**
 `--quick` reconstructs the grammar family alone, so its scratch index has no `lesson` and no
 `vocab` rows: run under that step set, `apply_lesson_ref_addresses.py` and
 `apply_homograph_rulings.py` refuse every row ("no such lesson") and exit non-zero, and the three

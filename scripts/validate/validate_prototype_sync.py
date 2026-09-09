@@ -247,6 +247,13 @@ def _slim_reading(r: dict) -> dict:
     o["tokens"] = [_pick(t, ("s", "r", "ro", "pos")) for t in (r.get("tokens") or [])]
     o.update(_pick(r, ("length_band",)))
     o["source_slugs"] = r.get("source_slugs") or []
+    # W16: the box's own comprehension question travels only when the exporter resolved one, which
+    # it does only when the authored question was written about the text this box currently prints
+    # (`comprehension.about_current_text`). Mirrors slimReading in prototype/scripts/sync-data.mjs;
+    # the pointer-only form (item + flag, no question) is deliberately NOT shipped to the app.
+    c = r.get("comprehension") or {}
+    if c.get("question"):
+        o["comprehension"] = c
     return o
 
 

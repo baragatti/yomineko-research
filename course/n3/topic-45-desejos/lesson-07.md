@@ -58,8 +58,8 @@ Repare em 炎 para descrever fogo e em ホーム no contexto de estação de tre
 #### Hora de praticar
 
 #### Leitura
-> 📖 自由にリアルタイムに活動が出来ます。このお金は夏の旅行にとっておこう。ああ、ひょっとしたら今夜は・・・。そんなことしたらクビにするからな。例外は作るべきではないと思います。性病にかかっているかもしれません。 — É possível realizar atividades livremente e em tempo real. Vamos guardar este dinheiro para a viagem de verão. Ah... talvez esta noite... Se você fizer uma coisa dessas, eu te demito, viu. Acho que não se deve abrir exceções. Pode ser que eu esteja com uma doença sexualmente transmissível.
-> 📖 新しい自転車は５００００円もした。私は勉強するかわりにテレビを見た。私って動物にたとえると何だと思う？私たちは親をあてにしてはいけない。オフィスに時間ぴったりについた。ありがとう。これでけっこうです。 — A bicicleta nova custou nada menos que 50.000 ienes. Em vez de estudar, eu assisti televisão. Se você me comparasse a um animal, qual você acha que eu seria? Nós não devemos depender dos nossos pais. Chegamos ao escritório exatamente na hora. Obrigado. Assim está bom.
+> 📖 日曜日、友だちの家を訪問した。歩道でボールであそぶ子どもたちが、私を見てほほえんだ。家の前で犬が大きな声でほえた。友だちのお母さんは、ほおを赤くしてわらった。台所の火のほのおを見ながら、二人で長い話をした。帰り道、風でほこりが立ったが、心はあたたかかった。 — No domingo, fui visitar a casa de uma amiga. As crianças que jogavam bola na calçada me olharam e sorriram. Na frente da casa, o cachorro latiu bem alto. A mãe da minha amiga riu com as bochechas coradas. Olhando a chama do fogão, nós duas conversamos longamente. Na volta, o vento levantou poeira, mas eu estava com o coração quentinho.
+> 📖 きのう、こうえんの歩道で友だちとボールを投げてあそんだ。大きな犬が急にほえたので、びっくりして走ってしまい、けがをした。ひざのほねがいたくて、もっと気をつければよかったと思った。走らなければけがをしなかったのにと、何度も考えた。私の顔にはほこりがついたままで、友だちはしずかにほほえんでいた。写真をとっておかないと、今日のことをわすれてしまう。 — Ontem eu fiquei jogando bola com um amigo na calçada do parque. Um cachorro grande latiu de repente, eu me assustei, saí correndo e acabei me machucando. O osso do joelho doeu, e pensei que era melhor ter tomado mais cuidado. Fiquei pensando várias vezes que, se eu não tivesse corrido, não teria me machucado. Meu rosto continuava todo empoeirado, e meu amigo só sorria quietinho. Se eu não tirar uma foto, vou acabar esquecendo o dia de hoje.
 - Reconheço e uso palavras de lugar e ação como 訪問, 保存 e 歩道.
 - Identifico partes do corpo como 骨, 頬 e os verbos 微笑む e 吠える.
 - Emprego substantivos de natureza e objetos como 炎, 埃 e ボール.

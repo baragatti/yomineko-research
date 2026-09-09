@@ -2,8 +2,8 @@
   "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
   "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
   "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
-  "step_count": 119,
-  "enabled_count": 83,
+  "step_count": 120,
+  "enabled_count": 84,
   "steps": [
     {
       "n": 1,
@@ -1778,7 +1778,7 @@
         "lesson_unlocks",
         "localized_text"
       ],
-      "note": "W11c. Applies research/derived/repairs/lesson_ref_addresses.json: 31 lesson refs that named a row of this very database, plus the two `vocab:側` refs the resolver could only separate through vocab.introducing_topic_id, rewritten to the record's published slug in BOTH layers -- lesson_unlocks and the lesson body here, and research/derived/lessons/<slug>.json, which is what a rebuild replays. On a replay the source half is already converted, so this is a no-op re-proof; the identity is re-derived from the vocab registry before anything is written, so a renumbered index refuses instead of re-pointing a chip. Runs before 113 because apply_homograph_rulings.py asserts one of these refs (les:n5-passado-05 unlocks both siblings of 何方 and its `ref_written` is the slug form). It also fixes the reason a full replay could not finish: with `vocab:側` unresolved, both lessons that unlock it resolved to one record and familylib.unlock_topic_map() aborted at step 117."
+      "note": "W11c. Applies research/derived/repairs/lesson_ref_addresses.json: 31 lesson refs that named a row of this very database, plus the two `vocab:側` refs the resolver could only separate through vocab.introducing_topic_id, rewritten to the record's published slug in BOTH layers -- lesson_unlocks and the lesson body here, and research/derived/lessons/<slug>.json, which is what a rebuild replays. On a replay the source half is already converted, so this is a no-op re-proof; the identity is re-derived from the vocab registry before anything is written, so a renumbered index refuses instead of re-pointing a chip. Runs before 113 because apply_homograph_rulings.py asserts one of these refs (les:n5-passado-05 unlocks both siblings of 何方 and its `ref_written` is the slug form). It also fixes the reason a full replay could not finish: with `vocab:側` unresolved, both lessons that unlock it resolved to one record and familylib.unlock_topic_map() aborted at step 118."
     },
     {
       "n": 113,
@@ -1816,17 +1816,33 @@
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_lesson_needs.py",
-      "args": [],
+      "args": [
+        "--replace"
+      ],
       "enabled": true,
       "first_commit": "",
       "first_commit_date": "2026-09-09",
       "writes": [
         "lesson_needs"
       ],
-      "note": "W21 needs[] apply. Applies research/derived/repairs/lesson_needs.json: 747 prerequisite edges into BOTH layers -- lesson_needs here (migration 013 gave it the `note` column the schema always specified) and research/derived/lessons/<slug>.json, which is what a rebuild replays. 696 rows are scripts/derive_needs.py's transitive reduction on the current tree; 40 chain the pre-N5 kana strand and 11 the deep review/kanji-exame roots, by the two rules in scripts/build_needs_table.py. Runs AFTER the lesson loader and the unlock ledger (the edges are lesson->lesson and the loader would wipe them) and BEFORE the family builders, which read lesson_unlocks and not this table. validate_lesson_gating check C4 re-derives and fails on any drift."
+      "note": "W21 needs[] apply. Applies research/derived/repairs/lesson_needs.json: 747 prerequisite edges into BOTH layers -- lesson_needs here (migration 013 gave it the `note` column the schema always specified) and research/derived/lessons/<slug>.json, which is what a rebuild replays. 696 rows are scripts/derive_needs.py's transitive reduction on the current tree; 40 chain the pre-N5 kana strand and 11 the deep review/kanji-exame roots, by the two rules in scripts/build_needs_table.py. Runs AFTER the lesson loader and the unlock ledger (the edges are lesson->lesson and the loader would wipe them) and BEFORE the family builders, which read lesson_unlocks and not this table. validate_lesson_gating check C4 re-derives and fails on any drift. W15: runs with --replace. `needs` is 100% derived and check C4 re-derives it on the tree being validated, so a disagreement is a stale table, never hand-authored work; and in a replay the authoring sources already carry the previous run's needs, which the applier refused to overwrite."
     },
     {
       "n": 116,
+      "phase": "repair",
+      "quick_family": null,
+      "script": "scripts/apply_reading_passages.py",
+      "args": [],
+      "enabled": true,
+      "first_commit": "PENDING",
+      "first_commit_date": "2026-09-09",
+      "writes": [
+        "reading"
+      ],
+      "note": "W15 real passages. Applies research/derived/repairs/reading_passages.json: 282 authored, verified, known-set-gated Layer-C passages replace the concatenation build_readings.py assembled at step 41 (and repaired at steps 92/100, which is why this runs after both -- each of those matches the selection-era text exactly and would skip loudly if it ran on the authored text). 4 boxes are HELD in the table with the unlock their gating lesson is missing (W21b). Re-derives tokens from the new jp, writes the uses snapshot, the sentence segmentation, Layer-C provenance and the comprehension pointer. Needs migrations 014/015. Idempotent; a box that matches neither the row's old nor its new jp is skipped loudly and nothing is written."
+    },
+    {
+      "n": 117,
       "phase": "repair",
       "quick_family": null,
       "script": "scripts/apply_lesson_furigana.py",
@@ -1840,7 +1856,7 @@
       "note": "W21 furigana apply. Applies research/derived/repairs/lesson_furigana.json: the `reading` attribute on 611 of the 875 lesson-body <jp> spans that carried kanji and no reading (PENDING A7), in BOTH layers -- the pt-BR body in localized_text here and research/derived/lessons/<slug>.json. 315 spans are settled by the lesson's own vocabulary record, 296 by SudachiPy verified against the vocab and kanji registries and the whole-word aligner; the 264 the registries cannot settle are carried in the same table as residue and are NOT written. Adds an attribute only: the rendered text of every lesson is byte-identical afterwards. validate_lesson_bodies ratchets the residue."
     },
     {
-      "n": 117,
+      "n": 118,
       "phase": "families",
       "quick_family": null,
       "script": "scripts/ingest/build_families.py",
@@ -1855,7 +1871,7 @@
       "note": "W11b: RECOMPUTES the class families (six conjugation/adjective classes + counters) over the levels course_module declares taught, instead of the old `if COUNT(*) FROM family > 0: skip` guard that made it a permanent no-op after its first run. Owner decision D14 also retires the 51 materialized kanji_component families here (family.deprecated_by = 'kanji.components'): they were a cache of the store kanji.components is exported from, 0 of 51 still matched it, and design/schema_v2.md answers the component query from that store directly. MOVED from step 37 in the pre-W11b numbering to after the lesson chain: the family layer is now derived from lesson_unlocks, which replay_all.py (load_lessons) does not populate until step 37 and which steps 90, 110, 111, 112 and 113 then correct. Built at 37 it would have derived every topic-bound family from an empty ledger."
     },
     {
-      "n": 118,
+      "n": 119,
       "phase": "families",
       "quick_family": null,
       "script": "scripts/ingest/build_families_full.py",
@@ -1870,7 +1886,7 @@
       "note": "W11b: RECOMPUTES the topic-bound families from the LIVE unlock ledger (lesson_unlocks) instead of the frozen grammar_point.introducing_topic_id snapshot that put 272 of 364 grammar memberships in the wrong family, and drops the hardcoded `level IN ('n5','n4')` in favour of course_module.level. Renames the two types that lied about themselves: function_set -> topic_set and semantic_field -> topic_residual (the slugs, which are published addresses, do not change). Must run after the lesson chain and after the three identity migrations, for the same reason as the step before it."
     },
     {
-      "n": 119,
+      "n": 120,
       "phase": "families",
       "quick_family": null,
       "script": "scripts/ingest/fix_contrasts.py",

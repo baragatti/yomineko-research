@@ -60,7 +60,7 @@ Juntando tudo num minirretrato de mudança:最近ずっと勉強して、とう�
 #### Hora de praticar
 
 #### Leitura
-> 📖 あいつは、とうとう切れた。今日はずっと気分がよい。金は水よりずっと重い。以来ずっと友人です。 — Ele finalmente perdeu a paciência (explodiu). Hoje estou me sentindo muito melhor. O ouro é muito mais pesado que a água. Somos amigos desde então.
+> 📖 先週は病気で、ほとんど何もできませんでした。今週は元気になって、毎朝はやく起きています。きのうは新しい本をほとんど読み終わりました。今日はそんなに時間がありませんが、少し海まで行きます。体はもうそんなに重くはないです。 — Na semana passada fiquei doente e quase não consegui fazer nada. Esta semana melhorei e acordo cedo toda manhã. Ontem quase terminei de ler o livro novo. Hoje não tenho tanto tempo, mas vou até o mar um pouquinho. O corpo já não está tão pesado.
 - Uso とうとう para marcar o desfecho de um processo longo.
 - Sei que ほとんど vira "quase tudo" (afirmativo) ou "quase nada" (negativo).
 - Uso ずっと para "o tempo todo" e para reforçar "muito mais".

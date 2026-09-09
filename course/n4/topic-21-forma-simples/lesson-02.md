@@ -68,7 +68,7 @@ Use って感じ só no casual. Para soar mais neutro, dá para dizer という�
 #### Hora de praticar
 
 #### Leitura
-> 📖 車で来るんじゃないかな。もう時間がないじゃないか。時間があるかどうか分からない。男の子ですか？それとも女の子？ — Acho que eles vêm de carro, não é? Já não temos mais tempo, viu? Não sei se vou ter tempo. É menino? Ou menina?
+> 📖 かばんの中を見たが、さいふがないじゃないか。今日、店で出したから、そこにわすれてきたのではないか。電話したら、店の人が「ありますよ」って言った。よかった。これからは気をつける。 — Olhei dentro da bolsa e a carteira não estava lá, ué. Eu tirei ela na loja hoje, então devo ter esquecido lá, né? Liguei para lá e o pessoal da loja disse que estava com eles. Que alívio. Daqui pra frente vou tomar mais cuidado.
 - Uso じゃないか para puxar concordância ou marcar uma constatação com emoção.
 - Sei que ではないか é a mesma ideia em registro neutro, e じゃ é a contração de では.
 - Transmito a impressão ou a vibe de algo com って感じ.

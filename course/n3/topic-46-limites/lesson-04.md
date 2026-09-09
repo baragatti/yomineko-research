@@ -70,8 +70,8 @@ Vários termos de hoje se leem こうか; o kanji é que muda o sentido. Leia co
 Resolva os exercícios e leia cada explicação com calma.
 
 #### Leitura
-> 📖 これが自動化されたらどんなにいいか。彼はどんなに苦しんだことだろう。どんなに愛してるか、分かってる？彼は毎日ここへくるとは限らない。母はいつも早起きとは限らない。私達がみんな行くとは限らない。 — Como seria bom se isso fosse automatizado! Como ele deve ter sofrido! Você sabe o quanto eu te amo? Ele não vem aqui todos os dias. Minha mãe nem sempre acorda cedo. Não é certo que todos nós vamos.
-> 📖 大きいのがいいとは限らないよ。いつも勝てるとは限らないよ。きのう友達におもしろいニュースを聞きました。そうなるとかなりきつい仕事ということになる。ユーザー名またはパスワードが間違っています。やってることがストーカーみたいになってきた。 — Maior nem sempre é melhor. Você nem sempre vai ganhar. Ontem fiquei sabendo de uma notícia interessante com um amigo. Se for assim, acaba significando um trabalho bem puxado. O nome de usuário ou a senha está incorreto. O que eu ando fazendo começou a parecer coisa de stalker.
+> 📖 合格したと聞いて、どんなにうれしかったことか。この日まで、どんなに長く待ったことか。しかし、よく勉強しても、必ずしもけっかが出るとは限らない。こううんも、必ずしも待っている人のところに来るとは限らない。だから、今日のことはわすれたくない。 — Quando ouvi que tinha passado, como fiquei feliz! Até este dia, quanto tempo eu esperei! Mas, mesmo estudando bastante, nem sempre o resultado aparece. A sorte também não vem necessariamente até quem fica esperando. Por isso, o dia de hoje eu não quero esquecer.
+> 📖 高い店の料理が、必ずしもおいしいとは限らない。きのう入った小さな店の魚は、どんなにおいしかったことか。有名な人がすすめる店が、必ずしも自分に合うとは限らない。自分で食べて、自分で決めたい。そう思いながら、今日もあの小さな店に来てしまった。 — Comida de restaurante caro não é necessariamente gostosa. Como estava bom o peixe daquele restaurantezinho em que entrei ontem! O restaurante que uma pessoa famosa recomenda nem sempre combina com a gente. Quero comer eu mesmo e decidir por mim. Pensando assim, hoje acabei vindo parar naquele restaurantezinho de novo.
 - Sei exclamar o grau de um sentimento com どんなに～ことか e que não é pergunta.
 - Consigo relativizar uma generalização com 必ずしも～とは限らない.
 - Não traduzo とは限らない como negação total ('nunca').

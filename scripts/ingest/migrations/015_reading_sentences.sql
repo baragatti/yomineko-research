@@ -1,0 +1,22 @@
+-- W15 — a reading box keeps its sentence boundaries.
+--
+-- `reading.jp` is one string. Everything downstream that needs SENTENCES has been re-deriving them
+-- by splitting on 。！？, and that derivation is wrong in two directions that matter:
+--
+--   * a dialogue box is quoted, so every terminator is followed by 」 — 「これはあなたのおかあさん
+--     ですか。」「ええ、おかあさんです。」… splits into ONE unit, not six;
+--   * `design/translation_style.md` §3 drops the final 。 on GENERATED Japanese, so some segments
+--     have no terminator to split on at all.
+--
+-- The authored passages carry `jp_sentences` — the segmentation their author wrote and their
+-- verifier read. Storing it ends the re-derivation: the W15 contract "3-6 sentences" is checked
+-- against the authoring unit, W16's reading_comp derivation lifts a whole sentence as the correct
+-- answer instead of guessing where one ends, and the renderer can lay a passage out line by line.
+--
+-- JSON array of strings whose concatenation is exactly `jp` (the applier asserts it). Filled for
+-- every box: a selection-era box that W15 did not replace gets the split of its own `jp`, so the
+-- field is present on all 286 records rather than on some.
+--
+-- init_db.py treats "duplicate column name" as already-applied, so this is safe on the existing DB.
+
+ALTER TABLE reading ADD COLUMN sentences TEXT;

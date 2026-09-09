@@ -58,7 +58,7 @@ Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配
 #### Hora de praticar
 
 #### Leitura
-> 📖 見たいのかしら？車があればどんなによいだろう。二、三デメリットがありますね。バスでどのくらいかかりますか。 — Será que ele quer ver? Como seria bom se eu tivesse um carro! Há duas ou três desvantagens, né. Quanto tempo leva de ônibus?
+> 📖 もう七時だ。ともだちはまだ来ないのかな。あねは「電車がとまっているのかしら」と言った。電話をして、「今どこにいるのかい」と聞いた。駅にいると言うから、もう五分まつかな。 — Já são sete horas. Será que meu amigo ainda não vem? Minha irmã disse: "Será que o trem está parado?" Liguei para ele e perguntei: "Onde você está agora?" Como ele diz que está na estação, acho que espero mais cinco minutos.
 - Uso かな para marcar dúvida ou pensar em voz alta ("será que...?").
 - Sei que かしら tem o mesmo sentido de かな, com tom mais feminino.
 - Faço perguntas de sim/não em tom casual e afetuoso com かい.

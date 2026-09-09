@@ -74,7 +74,7 @@ Encadeando as três fases num dia de viagem:特急に乗るところです(estou
 #### Hora de praticar
 
 #### Leitura
-> 📖 上着を今着ているところだ。ちょうど出かけるところだ。今ここに来たところだ。今始めたところです。 — Ele está vestindo o casaco agora mesmo. Estou saindo agora mesmo. Acabei de chegar aqui agora. Acabei de começar agora.
+> 📖 今、買い物に出かけるところです。ごはんはちょうど作ったところです。テーブルの上においてあります。おとうとは今、へやで本を読んでいるところです。音楽を聞いているので、こえをかけても聞こえません。三時ごろ帰ります。 — Estou de saída agora para fazer compras. A comida eu acabei de preparar. Deixei em cima da mesa. Meu irmão mais novo está no quarto, no meio de um livro. Ele está ouvindo música, então não escuta mesmo se você chamar por ele. Volto por volta das três.
 - Entendo que ところ marca o estágio da ação no tempo (prestes a, no meio, acabou de).
 - Uso forma do dicionário + ところだ para "estar prestes a fazer".
 - Uso 〜ているところ para "estar bem no meio de fazer".

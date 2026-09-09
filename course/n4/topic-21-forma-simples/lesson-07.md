@@ -49,7 +49,7 @@ Os três advérbios numa só cena:さっき急に雨が降ってきた("há pouc
 #### Hora de praticar
 
 #### Leitura
-> 📖 さすがだな！さすが！時間があるか分かりません。父はついさきほど出かけた。 — Você é demais! Impressionante! Não sei se vou ter tempo. Meu pai saiu agorinha mesmo.
+> 📖 さっき、駅で友だちに会った。話していた時、雨がふった。友だちはさっき天気のニュースを見たと言って、かさをもっていた。しっかりしている人はちがう。わたしはかさがなくて、はしってかえった。 — Agora há pouco encontrei um amigo na estação. Enquanto a gente conversava, choveu. Ele disse que tinha visto a previsão do tempo agora há pouco, e estava com guarda-chuva. Quem é organizado assim é outra coisa. Eu estava sem guarda-chuva e voltei correndo.
 - Uso さっき para apontar algo que aconteceu há pouco na conversa.
 - Reajo com さすが quando algo corresponde à expectativa que eu tinha.
 - Marco mudanças repentinas com 急に antes do verbo.

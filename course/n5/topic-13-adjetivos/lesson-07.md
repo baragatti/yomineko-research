@@ -56,7 +56,7 @@ Você aprende três expressões pelo preço de uma: o esqueleto [verbo] の が 
 #### Hora de praticar
 
 #### Leitura
-> 📖 どこから来ましたか？外に出ようとしない。どのくらい大きい？ — De onde você veio? Ele não dá sinal de querer sair. Quão grande?
+> 📖 ともだちはうたをうたうのがとてもすきです。がっこうのおんがくのじかんに、クラスの前でうたいます。うたうのがじょうずですから、いつも人がききに来ます。あたらしいうたをおぼえるのもすきです。今日はいっしょにおんがくのテープをききます。 — Minha amiga gosta muito de cantar. Na aula de música da escola, ela canta na frente da turma. Como ela canta bem, sempre tem gente que vem escutar. Ela também gosta de aprender canções novas. Hoje a gente vai ouvir uma fita de música junto.
 - Sei nominalizar um verbo com の e dizer que gosto de fazer algo com 〜のが好きです.
 - Entendo que a coisa de que se gosta vem com が (não を), mesmo sendo uma ação.
 - Consigo dizer que alguém é bom em uma atividade com 〜のが上手です.

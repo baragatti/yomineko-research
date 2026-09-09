@@ -64,7 +64,7 @@ Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irri
 > 🗣 最近は仕事がなかなかないんだよ。 — Ultimamente, emprego é difícil de achar, viu.
 
 #### Leitura
-> 📖 車でどれくらいかかりますか。明日天気はどうなるだろうか。父はお金にきちょうめんです。本は友人みたいなものである。 — Quanto tempo leva de carro? Como será que vai estar o tempo amanhã? Meu pai é meticuloso com dinheiro. Um livro é como um amigo.
+> 📖 毎日かんじをべんきょうしていますが、なかなかおぼえられません。新しいことばはどんどん多くなります。さらいげつ、テストがあります。時間がなかなか作れなくて、少しこまっています。でも、毎日ノートに書いています。 — Estudo kanji todo dia, mas custo a decorar. As palavras novas vão aumentando cada vez mais. Daqui a dois meses tem uma prova. Não consigo de jeito nenhum arrumar tempo, e isso me deixa meio aflita. Mesmo assim, escrevo no caderno todo dia.
 - Uso なかなか〜ない para dizer que algo custa a acontecer.
 - Lembro que なかなか só tem esse sentido com o verbo no NEGATIVO.
 - Combino なかなか com a forma potencial negativa (ex.: 眠れない).

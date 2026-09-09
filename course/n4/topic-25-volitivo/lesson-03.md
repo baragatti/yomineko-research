@@ -64,7 +64,7 @@ Três kanji que aparecem em palavras de intenção e descrição:
 #### Hora de praticar
 
 #### Leitura
-> 📖 名前を教えていただけますか。別のを見せてもらえませんか。このあたりはよく知りません。この本はあの本よりも小さい。 — Você poderia me dizer o seu nome, por favor? Você poderia me mostrar outro, por favor? Não conheço bem esta região. Este livro é menor do que aquele livro.
+> 📖 今年のなつは海へ行こうと思っています。まだ一度も海を見たことがありません。にもつが重くなるので、少しだけ持って行こうと思います。近くのホテルにとまろうと思っています。三日ぐらい休みたいです。 — Neste verão estou pensando em ir para o mar. Nunca vi o mar, nem uma vez. Como a bagagem fica pesada, pretendo levar bem pouca coisa. Estou pensando em ficar num hotel ali perto. Quero descansar uns três dias.
 - Sei juntar a forma volitiva com 思う para dizer "pretendo / acho que vou fazer".
 - Distingo 〜ようと思う (verbos る) de 〜おうと思う (verbos う).
 - Sei que 〜ようと思っている indica uma intenção que venho mantendo, e não uma decisão de agora.

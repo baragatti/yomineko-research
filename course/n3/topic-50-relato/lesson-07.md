@@ -62,8 +62,8 @@ Duas palavras muito próximas que vale separar:
 #### Hora de praticar
 
 #### Leitura
-> 📖 前もってお礼を申しあげておきます。タバコを吸うのって、これが初めて。いくらお礼を言っても言い切れない。父は私に車を洗うように言いました。彼が支配人だというのは事実でない。ボールをできるだけ遠くに投げろ。 — Agradeço-lhe desde já. É a primeira vez que eu fumo. Por mais que eu agradeça, nunca será o bastante. Meu pai me disse para lavar o carro. Não é verdade que ele seja o gerente. Jogue a bola o mais longe possível.
-> 📖 着の身着のままで火事から逃げた。次のガソリンスタンドに寄ろうよ。私は歯医者で歯を調べてもらった。彼女は熱心に小鳥にえさをやった。人生は楽しみや遊びばかりでない。新しいアパートに引っ越したんだ。 — Fugi do incêndio só com a roupa do corpo. Vamos parar no próximo posto de gasolina. Mandei examinar meus dentes no dentista. Ela alimentava os passarinhos com dedicação. A vida não é só diversão e brincadeira. Me mudei pra um apartamento novo.
+> 📖 父は私に、早く車の運転を習うように言った。面倒だが、木曜までに申し込むことにした。受付の人は、書いた字が小さいから、もう一度書くように言った。私の目的は旅行ではなく、母を病院まで送ることだ。この夏までに一人で運転すると心に決めた。もしも試験に落ちても、また申し込むつもりだ。 — Meu pai me disse para aprender logo a dirigir. É chato, mas decidi me inscrever até quinta. A pessoa da recepção disse para eu escrever de novo, porque a letra tinha ficado pequena. Meu objetivo não é viajar, e sim levar minha mãe até o hospital. Decidi comigo mesmo que até este verão vou dirigir sozinho. Se por acaso eu não passar na prova, pretendo me inscrever de novo.
+> 📖 兄が車のめんきょを取るそうだ。来月、学校に申し込むと言っていた。目的は夏までに取ることらしい。べんきょうは面倒だそうだが、兄は毎日つづけている。うまくいったら、みんなで海へ行こうと言っていた。 — Ouvi dizer que meu irmão vai tirar carteira de motorista. Ele falou que se inscreve na autoescola no mês que vem. Pelo jeito a meta é conseguir até o verão. Dizem que estudar para isso é bem chato, mas ele não larga um dia. Se der tudo certo, ele disse que vamos todos para a praia.
 - Reconheço substantivos do cotidiano como 免許, 毛布, 文字 e メンバー.
 - Diferencio 目的 (propósito) de 目標 (meta concreta).
 - Uso verbos formais como 申し込む, 用いる, 戻す e 基づく (com に).

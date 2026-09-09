@@ -50,7 +50,7 @@ O conector すると("então", "e então", "em seguida") liga uma ação a uma c
 #### Hora de praticar
 
 #### Leitura
-> 📖 OKかどうか聞いてみた。今日はそれをやりたくない。しゃべるべきじゃなかった。今日は休みじゃなかったの？ — Perguntei se estava tudo bem. Hoje não quero fazer isso. Eu não devia ter falado. Você não estava de folga hoje?
+> 📖 来週、友だちと山へ行くかどうか、まだ分かりません。気になるのは天気です。今日、天気がいいかどうか母に聞きました。母は「来週は雨が多い」と言いました。だから、山へ行くのは来月です。 — Ainda não sei se vou à montanha com um amigo na semana que vem. O que me preocupa é o tempo. Hoje perguntei para a minha mãe se o tempo vai estar bom. Ela disse que na semana que vem chove muito. Por isso, a ida à montanha fica para o mês que vem.
 - Sei dar foco a um elemento com のは〜だ ("o que... é", "quem... foi").
 - Consigo embutir uma dúvida com 〜かどうか ("se... ou não").
 - Sei situar algo num grupo com 〜は〜の一つだ ("é um dos").

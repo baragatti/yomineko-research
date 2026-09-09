@@ -72,6 +72,9 @@ def main() -> int:
             "SELECT sentence_id,surface,reading,romaji,pos FROM token WHERE split_mode='C' ORDER BY sentence_id, id"):
         toks.setdefault(sid, []).append({"s": surf, "r": rdg, "ro": romaji, "pos": pos})
 
+    # The table is declared by migration 014 (W15) — schema is the migrations' job. This CREATE is
+    # kept so the script still runs against a database that predates the migration; on a migrated one
+    # it is a no-op, which is why `source` / `comprehension` are not repeated here.
     c.execute("""CREATE TABLE IF NOT EXISTS reading (
         slug TEXT PRIMARY KEY, level TEXT, gated_to_lesson TEXT, theme_topic TEXT, title_pt TEXT, title_en TEXT,
         jp TEXT, tokens TEXT, translation_pt TEXT, translation_en TEXT, uses TEXT, length_band TEXT,

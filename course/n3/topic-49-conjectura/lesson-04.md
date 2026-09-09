@@ -54,7 +54,7 @@ O 君 (きみ) é um "você" informal e carinhoso, usado entre amigos próximos 
 #### Hora de praticar
 
 #### Leitura
-> 📖 あごに手をあて考えるふりをするが何も浮かばない。解っていないふりをするのは止めなさい。彼女はしとやかなふりをする。知らぬふりをするな。私がお手伝いできることはあまりないと思います。 — Levo a mão ao queixo e finjo que estou pensando, mas não me ocorre nada. Pare de fingir que não entende. Ela finge ser recatada. Não finja que não sabe. Acho que não há muito que eu possa fazer para ajudar.
+> 📖 電車の中で、本を読むふりをしていた。前の人がずっとこちらを見ていたからだ。知らないふりをして、まどの外を見た。でも、その人は友だちの兄だった。きづかないふりをしたことが、少しはずかしい。 — No trem eu fingia estar lendo um livro. É que a pessoa na minha frente ficava olhando para cá. Fingi que não sabia de nada e olhei pela janela. Mas aquela pessoa era o irmão mais velho de um amigo meu. Fico meio sem graça de ter fingido não perceber.
 - Expresso uma encenação deliberada com ～ふりをする ('fingir que...').
 - Ligo certo: verbo/い direto, adjetivo な + な, substantivo + の antes de ふりをする.
 - Não esqueço a partícula を: é ふりをする, não ふりする.

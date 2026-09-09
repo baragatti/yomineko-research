@@ -69,7 +69,7 @@ E adjetivos de medida como 深い ("fundo") e 浅い ("raso") ajudam a completar
 #### Hora de praticar
 
 #### Leitura
-> 📖 もっと休みをとったほうがいい。先月インフルエンザにかかった。今からドライブに行きませんか。大雨で外出できなかったんです。 — É melhor você descansar mais. Mês passado peguei gripe. Que tal a gente dar uma volta de carro agora? É que não pude sair por causa da chuva forte.
+> 📖 わたしの一日の中で、電車で本を読むのがいちばんたのしい。会社に行く前に、駅で新しい本を買う。ともだちの中で、毎日、本を読む人は少ない。一日に一さつ読むのは、わたしにはむずかしくない。でも、その中でいちばんいい本を人におしえるのは、とてもむずかしい。 — De tudo o que faço no dia, ler no trem é o mais divertido. Antes de ir para o trabalho, compro um livro novo na estação. Entre os meus amigos, pouca gente lê todo dia. Ler um livro por dia não é difícil para mim. Difícil mesmo é dizer para alguém qual deles é o melhor.
 - Sei transformar um verbo em substantivo grudando こと na forma de dicionário.
 - Uso の中で／のなかで para dizer "entre / dentre / no meio de" um conjunto.
 - Reconheço que のなかで define o universo de uma comparação ou escolha.

@@ -68,7 +68,7 @@ Armadilha PT: palavras como 観光 (かんこう) têm DUAS coisas de duração 
 #### Hora de praticar
 
 #### Leitura
-> 📖 正規表現で空白はどのように表されるのでしょうか？聞こえるようにもっと大きな声で話して下さい。妹にあきらめるように説得してもだめだった。必要以上にお金を使わないようにしなさい。来なさいと言わない限り来ないように。 — Como o espaço em branco é representado em expressões regulares? Por favor, fale mais alto para que eu consiga ouvir. De nada adiantou tentar convencer minha irmã a desistir. Procure não gastar mais dinheiro do que o necessário. Não venha, a menos que eu mande você vir.
+> 📖 明日はみんなで出かけます。時間におくれないように、朝八時に集まってください。かぜをひかないように、あたたかい服を着てきてください。うしろの人にも見えるように、前の人はすわってください。ゴミは分けて、かんはかんのはこに入れるようにしてください。けがをしないように、道では走らないでください。 — Amanhã vamos sair todos juntos. Para ninguém se atrasar, encontrem-se às oito da manhã. Para não pegar um resfriado, venham com roupa quente. Para que quem está atrás também consiga ver, quem está na frente deve se sentar. Separem o lixo e procurem colocar as latas na caixa das latas. Para não se machucar, não corram na rua.
 - Marco finalidade com 〜ように usando なる, できる ou um verbo potencial.
 - Descrevo o modo de fazer algo com 〜ように ("de um jeito que").
 - Comparo com 〜のように, sem esquecer o の depois do substantivo.

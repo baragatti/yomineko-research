@@ -59,7 +59,7 @@ Palavras que combinam com cenas que a gente observa e interpreta:
 > 🗣 高そうには見えないよ。 — Não parece caro, viu.
 
 #### Leitura
-> 📖 この近くに映画館はありますか。リムジンを使うといいですよ。二人の間がしっくり行かない。出来れば明日までに帰ります。 — Tem algum cinema aqui perto? É melhor você usar o ônibus do aeroporto, viu. Os dois não se dão bem. Se possível, volto até amanhã.
+> 📖 きのう、駅で古い友だちに会った。前よりずいぶん元気に見えた。新しい仕事がおもしろいとみえて、とても楽しそうに話していた。こえも明るくて、少し大人に見えた。今度はもっと長く話したいと思う。 — Ontem encontrei um amigo antigo na estação. Ele parecia bem mais animado do que antes. Pelo visto o trabalho novo é interessante, porque ele falou o tempo todo com um jeito alegre. A voz também estava alegre, e ele parecia um pouco mais maduro. Da próxima vez quero conversar por mais tempo.
 - Digo que algo aparenta uma qualidade pela aparência com 〜に見える.
 - Tiro uma conclusão a partir do que vejo com 〜とみえて (pelo visto).
 - Uso そうな antes de substantivo e そうに antes de verbo para descrever a impressão.

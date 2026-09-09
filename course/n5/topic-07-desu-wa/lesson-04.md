@@ -68,7 +68,7 @@ Bônus de vocabulário:大きな(おおきな) quer dizer "grande" e vem antes d
 > 🗣 なんで聞くの？ — Por que você pergunta?
 
 #### Leitura
-> 📖 おはようございます！あなたのおかげです。 — Bom dia! É tudo graças a você.
+> 📖 あのかぎはあなたのですか。いいえ、あれはあにのかぎです。あっ、あのえんぴつもおにいさんのですか。いいえ、えんぴつはおとうとのです。あのいすもおとうとのです。 — Aquela chave é sua? Não, aquela é a chave do meu irmão mais velho. Ah, aquele lápis também é do seu irmão? Não, o lápis é do meu irmão mais novo. Aquela cadeira ali também é dele.
 - Sei ligar dois substantivos com の na ordem dono + の + coisa.
 - Reconheço palavras de família e quando usar あに/あね vs お兄さん/お姉さん.
 - Consigo dizer "também" trocando は por も.

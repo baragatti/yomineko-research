@@ -51,7 +51,7 @@ Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pod
 #### Hora de praticar
 
 #### Leitura
-> 📖 私たちはよく映画に行って楽しんだものだ。私はあんたのお姉ちゃんだもん。いつかこんなことになるって、ずっと思ってたよ。このあたりにはそんな名前の人は一人もいない。あなたのフランス語の発音って、ひどすぎるわ。 — A gente costumava ir muito ao cinema e se divertia. É que eu sou a sua irmã mais velha, ué. Eu sempre soube que um dia as coisas acabariam assim. Por aqui não há nem uma única pessoa com esse nome. A sua pronúncia do francês é horrível demais.
+> 📖 悪いけど、今日は行けない。朝から頭が重いんだもん。薬を飲んだけど、まだ治らないんだもの。明日の会合は大事だから、今日は休むね。気にしないで、明日は元気になるんだもん。また後で電話するね。 — Foi mal, hoje eu não consigo ir. É que minha cabeça está pesada desde a manhã. Tomei remédio, mas é que ainda não passou. A reunião de amanhã é importante, então hoje eu descanso. Não esquenta, amanhã eu já estou bem de novo. Depois eu te ligo.
 - Sei justificar algo de forma emotiva com ～(ん)だもの.
 - Uso a variante coloquial ～んだもん na fala íntima.
 - Reconheço que o registro é informal e o evito em contextos formais.

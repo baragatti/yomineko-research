@@ -74,7 +74,7 @@ Os dois compartilham o "telhado" de mão lá em cima, mudando só a base (口 à
 > 🗣 それより、本を読んだほうがいい。 — Em vez disso, é melhor você ler livros.
 
 #### Leitura
-> 📖 何人の子どもがいますか。千人もの人がそこにいた。 — Quantos filhos você tem? Havia nada menos que mil pessoas ali.
+> 📖 あしたはあめだってききました。かさをもって行ったほうがいいですよ。あたらしいようふくはきないほうがいいです。Ｙシャツの上にはコートをきたほうがいいですね。うちの中ではスリッパをはいたほうがいいってききました。 — Ouvi dizer que amanhã vai chover. É melhor você levar guarda-chuva. É melhor não vestir a roupa nova. Por cima da camisa social, é melhor vestir um casaco. E ouvi dizer que dentro de casa é melhor usar chinelo.
 - Dou conselho afirmativo com Verbo た + ほうがいい (lembrando que o verbo vai no passado).
 - Dou conselho negativo com Verbo ない + ほうがいい.
 - Uso って para citar uma fala e para puxar um tópico, só em conversa informal.

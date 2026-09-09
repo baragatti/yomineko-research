@@ -61,7 +61,7 @@ Para perguntar a opinião de alguém com elegância, use 如何(いかが), "que
 #### Hora de praticar
 
 #### Leitura
-> 📖 どこに行くところですか。ありがとうございます！ — Aonde você está indo? Muito obrigado(a)!
+> 📖 きのう、ともだちとえいがを見ました。えいがはおもしろくありませんでした。それから、えきでくだものをかいました。くだものはあまくありませんでしたが、とてもおいしかったです。ともだちも、ぜんぶたべました。 — Ontem assisti a um filme com uma amiga. O filme não foi interessante. Depois comprei frutas na estação. As frutas não estavam doces, mas estavam muito gostosas. Minha amiga também comeu tudo.
 - Sei trocar くない por くなかった para formar o passado negativo.
 - Consigo dizer o quadro completo: 忙しい / 忙しくない / 忙しかった / 忙しくなかった.
 - Lembro que o passado e a negação ficam dentro do adjetivo, sem でした depois.

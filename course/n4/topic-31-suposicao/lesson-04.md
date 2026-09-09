@@ -67,7 +67,7 @@ Os dois juntam-se à gramática de hoje: 鳥のように走る ("correr como um 
 #### Hora de praticar
 
 #### Leitura
-> 📖 私は今夜話すことになっている。今日はむしろ外出したくない。お安くしてもらえないかしら？親切にしてやればつけあがる。 — Está combinado que eu vou falar hoje à noite. Hoje, na verdade, eu prefiro não sair de casa. Será que você poderia fazer um descontinho pra mim? Se você for gentil com ele, ele se aproveita.
+> 📖 今朝の空は春のように青かった。私はいつものように駅まで歩いた。駅の前で、小さな子どもが歌のようなこえで話していた。その子は元気で、かぜのように走って行った。私も春のような気持ちで、しずかに会社へ歩いて行った。 — O céu desta manhã estava azul como o de primavera. Fui a pé até a estação, como sempre. Na frente da estação, uma criança pequena falava com uma voz que parecia música. A criança estava cheia de energia e saiu correndo como o vento. Eu também segui andando quieto até o trabalho, com um ânimo de primavera.
 - Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério).
 - Uso 〜のような antes de substantivo (qualifica: "um... como").
 - Uso 〜のように antes de verbo/adjetivo (modo: "do jeito que / como").

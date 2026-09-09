@@ -58,7 +58,7 @@ O kanji 商 ('comércio, negociar, comerciante') aparece em 商人 ('comerciante
 #### Hora de praticar
 
 #### Leitura
-> 📖 そういうわけだから私は出席できなかったのです。親たる者は、子供をしっかり育てるべきである。昨日ここに着いた運転手を見つけに行きなさい。警察はそれがやばい品物なのを知ってたんだよ。空気と人間との関係は水と魚との関係と同じだ。 — Sendo assim, eu não pude comparecer. Quem é pai ou mãe deve criar os filhos com firmeza. Vá procurar o motorista que chegou aqui ontem. A polícia sabia que aquilo era mercadoria roubada. A relação entre o ar e o ser humano é igual à relação entre a água e o peixe.
+> 📖 今日は店のきかいを全部調べた。数が増えて、一人では動かせないものもあった。午後は、会社の試合を見に行った。よくれんしゅうしていたので、全体の力が上がっていた。走るのがはやい人が多くて、二回勝った。 — Hoje eu revisei todas as máquinas da loja. O número aumentou, e teve máquina que eu sozinho não conseguia mover. À tarde, fui assistir aos jogos da empresa. Como tinham treinado bastante, o nível do time inteiro havia subido. Tinha muita gente que corre rápido, e a gente ganhou duas vezes.
 - Reconheço e uso substantivos N3 sobre totalidade, grupos e competições.
 - Emprego palavras de aumento, operação de máquinas e velocidade em frases naturais.
 - Leio os kanji 調 e 商 e os identifico em palavras do dia a dia.

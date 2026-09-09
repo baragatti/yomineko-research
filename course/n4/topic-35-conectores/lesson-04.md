@@ -52,7 +52,7 @@ Estas palavras aparecem o tempo todo quando descrevemos coisas que "vêm junto" 
 #### Hora de praticar
 
 #### Leitura
-> 📖 秋はいつしか冬となった。あの先生はやさしいしおもしろい。この店は安いしおいしい。あの店は安いしおいしい — O outono, sem que se percebesse, virou inverno. Aquele professor é gente boa e ainda é divertido. Esse restaurante é barato e ainda por cima é gostoso. Aquela loja é barata e ainda por cima a comida é gostosa.
+> 📖 駅の近くに新しい店ができました。安いし、おいしいし、店の人も親切です。昼だけでなく夜も開いているので、仕事の後でも行けます。中も明るいし広いし、勉強にもいいと思います。今度の土曜日に行きませんか。 — Abriu um restaurante novo perto da estação. É barato, é gostoso, e o pessoal de lá ainda é atencioso. Abre não só no almoço mas também à noite, então dá para ir até depois do trabalho. Por dentro é claro e é amplo, então acho que serve para estudar também. Vamos lá no sábado que vem?
 - Uso だけでなく para dizer "não só X, mas também Y".
 - Empilho uma razão com し no sentido de "e ainda por cima".
 - Listo várias qualidades de uma vez com し～し.

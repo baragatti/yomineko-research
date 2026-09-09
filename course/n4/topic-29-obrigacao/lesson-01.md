@@ -64,7 +64,7 @@ Como 必要 já significa "necessário", você não precisa conjugar verbo algum
 > 🗣 ナイフが必要だ。 — Preciso de uma faca.
 
 #### Leitura
-> 📖 質問は書いていただけませんか。目が口よりものを言う時がある。今日売らなくちゃいけないんだ。父さんはどこへ行ったんだろう。 — Você poderia escrever as perguntas, por favor? Às vezes os olhos falam mais do que a boca. Tenho que vender isso hoje. Para onde será que o papai foi?
+> 📖 来月、友だちと北海道へ行きます。その前に、大きいかばんがひつようです。お金もひつようですから、今週はアルバイトをします。母に、何がひつようかと聞かれました。あたたかいコートとくつがひつようだとこたえました。 — No mês que vem eu vou para Hokkaido com uns amigos. Antes disso, preciso de uma mala grande. Também preciso de dinheiro, então essa semana vou fazer um bico. Minha mãe me perguntou do que eu precisava. Respondi que precisava de um casaco quentinho e de sapatos.
 - Sei dizer que preciso de algo com o molde X が必要です, sem usar verbo.
 - Lembro que a coisa de que preciso leva が (não existe "de" em japonês aqui).
 - Consigo perguntar 何が必要ですか ("do que você precisa?").

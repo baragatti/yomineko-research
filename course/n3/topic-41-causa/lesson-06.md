@@ -59,8 +59,8 @@ Para fechar, um grupo de palavras avulsas muito usadas no dia a dia.
 #### Hora de praticar
 
 #### Leitura
-> 📖 いつまでこちらにいらっしゃるんですか？注文を受けてから作るのが受注生産です。このお金をどうしようとなさるのですか。私は話を通じさせることができなかった。どうしても自分の思い通りにしたがるね。その先生は病人だということが分かった。 — Até quando o(a) senhor(a) vai ficar aqui? Produção sob encomenda é fabricar só depois de receber o pedido. O que o senhor pretende fazer com este dinheiro? Eu não consegui me fazer entender. Você sempre faz questão de fazer tudo do seu jeito, né. Descobriu-se que aquele professor estava doente.
-> 📖 アイディアが足りないということはない。夕食にいいところを知っているんですよ。夜にそんなところへ行ってはいけません。道が２つの小道に分かれるところへ来た。３時に駅に行かなくちゃいけないんだよ。それがどこから来たのか分からなかった。 — Não é que faltem ideias. Eu conheço um bom lugar para o jantar, viu? Não vá a um lugar desses de noite. Chegamos a um ponto onde a estrada se dividia em duas trilhas. Eu tenho que ir até a estação às três horas. Eu não sabia de onde aquilo tinha vindo.
+> 📖 先週、てつどうで古い町へ行きました。前の日はてつやで仕事をしていました。ですから、電車の中ではずっとねていました。その町には、古い家がたくさんのこっています。てんこうもよくて、さんぽにてきどな日でした。手間はかかりますが、てつどうの旅行はいいものです。ですから、来月もう一度行くつもりです。 — Semana passada fui de trem até uma cidade antiga. Na véspera eu tinha virado a noite trabalhando. Por isso, dormi o caminho inteiro dentro do trem. Naquela cidade ainda restam muitas casas antigas. O tempo também estava bom, um dia na medida certa para caminhar. Dá trabalho, mas viajar de trem é uma coisa boa. Por isso, mês que vem pretendo ir mais uma vez.
+> 📖 昨日、小さな子どもに手品を見せました。手品はすぐに終わりますが、じゅんびには手間がかかります。ですから、朝から時間を取って、じゅんびをしました。子どもはとてもよろこんでくれました。手間はかかりましたが、いい一日でした。 — Ontem eu mostrei um truque de mágica para uma criança pequena. A mágica acaba rápido, mas a preparação dá trabalho. Por isso, separei um tempo desde cedo e deixei tudo pronto. A criança ficou muito contente comigo. Deu trabalho, mas foi um bom dia.
 - Reconheço e uso a família 適 de adequação (適切, 適度, 適用).
 - Distingo 鉄 (ferro), 徹 (a fundo) e 哲 (sabedoria), que se leem てつ.
 - Uso ですから e 伝統 em frases naturais do dia a dia.

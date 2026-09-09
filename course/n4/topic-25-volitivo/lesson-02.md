@@ -61,7 +61,7 @@ Não confunda 考 ("ponderar", com a perna comprida embaixo) com 老 ("velho"): 
 #### Hora de praticar
 
 #### Leitura
-> 📖 ないと思うけど。バスはもうやってくる時間だ。正月はすぐそこまで来ている。エスカレーターはどこですか？ — Acho que não. Já está na hora de o ônibus chegar. O Ano-Novo está logo aí, quase chegando. Onde fica a escada rolante?
+> 📖 きのう、駅の前の新しい店へ行った。あの店は少し高いと思う。でも、食べ物はとてもおいしいと思う。母も、あそこはいい店だと思うと言っていた。今度、友だちにも教えたいと思う。 — Ontem fui ao restaurante novo que fica em frente à estação. Acho que aquele lugar é um pouco caro. Mas acho que a comida é muito boa. A minha mãe também falou que acha aquele lugar bom. Da próxima vez, estou pensando em indicar para os meus amigos também.
 - Monto opiniões com o molde frase casual + と思う.
 - Faço a negativa colocando o "não" ANTES de と思う (…ない と思う).
 - Pergunto a opinião de alguém com …と思う？

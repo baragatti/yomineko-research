@@ -57,7 +57,7 @@ O kanji 煙 ('fumaça, fumo') aparece em 煙 ('fumaça') e 煙草 ('cigarro'). T
 #### Hora de praticar
 
 #### Leitura
-> 📖 なぜなら彼女はすばらしい先生だからです。もし負けてもあなたには別の機会が有る。本は、注意深く選ばなければなりません。食料品の値段はすぐに下がるでしょうね。この世界の教育にはがっかりしてしまう。今の場所を動かないほうがいいでしょう。 — Isso porque ela é uma professora maravilhosa. Mesmo que você perca, ainda assim tem outra chance. Os livros devem ser escolhidos com cuidado. Os preços dos alimentos vão cair logo, não é? Acabo ficando decepcionado com a educação neste mundo. É melhor não sair do lugar onde estamos agora.
+> 📖 今度の旅行は三日だけでした。二日目の朝、たいおんが少し高かったので、外に出ませんでした。でも、大したことはありませんでした。へやはたいくつだったので、大会の試合はテレビでしか見ませんでした。二対一で、好きな学校が勝ちました。三日しかなかったけれど、いい思い出になりました。 — A viagem desta vez foi de só três dias. Na manhã do segundo dia minha temperatura estava um pouco alta, então não saí. Mas não foi nada de mais. O quarto era chato, então o jogo do campeonato eu só vi pela TV. Foi dois a um, e a escola de que eu gosto ganhou. Foram só três dias, mas ficou uma boa lembrança.
 > 📖 私たちのチームが勝つのは確かだと思う。万一失敗しても、もう一度がんばります。ケーキを食べてしまったら手に残らない。コンピューター関係の仕事をしています。少しステレオの音を小さくしてください。青空を見たくなったら、屋上に行きます。 — Acho que é certo que nosso time vai ganhar. Mesmo que eu fracasse, vou me esforçar mais uma vez. Depois que você comer (todo) o bolo, não sobra nada nas mãos. Trabalho com algo relacionado a computadores. Abaixa um pouco o volume do som, por favor. Quando dá vontade de ver o céu azul, eu subo no terraço.
 - Reconheço e uso prefixos e palavras curtas N3 como 対 e 大した.
 - Emprego vocabulário sobre corpo, saúde e estadia em frases.

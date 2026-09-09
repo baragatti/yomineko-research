@@ -73,8 +73,8 @@ Aproveite o tema desta lição para guardar dois kanji que não estão nas palav
 #### Hora de praticar
 
 #### Leitura
-> 📖 そういうわけだから、私は君と一緒に行けないのだ。最近あまり寝ていないので今日は早く寝ようと思う。昔ならいざ知らず、今はＦＡＸも、メールもある。私は山に登る、なぜならそれがそこにあるからだ。絵心がないから、風景を正確に写せるわけがない。彼女は、今度はうまくやろうと心に決めている。 — Sendo assim, não posso ir com você. Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. Antigamente não sei, mas hoje a gente tem fax e e-mail. Eu escalo montanhas porque elas estão lá. Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão. Ela está decidida a se sair bem desta vez.
-> 📖 彼女は私とすっかり同意見だったわけではない。マドンナのコンサートはすごい数の客を集めた。彼女はほんのちょっとの間に食事の用意をした。もし彼女が今出発するなら、間に合うのですが。しっかり捕まえていろ、そうしないと落ちるぞ。そろそろ子供達にプレゼントを用意しなければ。 — Não é que ela concordasse totalmente comigo. O show da Madonna atraiu um número impressionante de espectadores. Ela preparou a refeição em um instante. Se ela partisse agora, daria para chegar a tempo... Segura firme, senão você vai cair. Já está na hora de preparar os presentes para as crianças.
+> 📖 今朝は電車が止まって、学校に遅刻してしまった。駅の前で車が動かなくなったことが原因らしい。先生に注意されたが、事情を説明したら分かってくれた。中学のときから、時間を守ることの大切さを教えられてきた。明日は早く家を出ることにする。ちゃんと間に合えば、父親も安心するはずだ。 — Hoje de manhã o trem parou e acabei chegando atrasado na escola. Parece que a causa foi um carro que enguiçou em frente à estação. Levei uma chamada do professor, mas quando expliquei a situação ele entendeu. Desde o fundamental me ensinaram o quanto é importante cumprir horário. Amanhã vou sair de casa mais cedo. Se eu chegar direitinho no horário, meu pai também deve ficar tranquilo.
+> 📖 きのう、近くの公園で小さな猫がすてられていた。となりの家の人に助けられて、今は元気だ。その猫はちゃんとごはんを食べることができるようになった。名前はまだないが、この地区のみんなに愛されている。小さな命を守ることが、いちばん大切だと思う。 — Ontem, no parque aqui perto, um gatinho tinha sido abandonado. O vizinho socorreu o bichinho, e agora ele está bem. O gato já consegue comer direitinho. Nome ele ainda não tem, mas é querido por todo mundo do bairro. Acho que proteger uma vida pequena é o que mais importa.
 - Reconheço e uso as 18 palavras novas, de 地球 a 駐車.
 - Leio e escrevo os kanji 猫 (gato) e 幾 (quanto, quantos).
 - Aplico o vocabulário em frases com こと, の e a passiva 〜られた.

@@ -57,8 +57,8 @@ Quase toda palavra com 通 carrega a ideia de 'algo que passa': 通過 (passar p
 #### Hora de praticar
 
 #### Leitura
-> 📖 もっと社会全体の問題に関心を持つべきだ。手をきれいにしておかなければならない。それはもっていくつもりはなかったんだ。私は自分の体などどうでもよかったのだ。いいから社長の言うことなどほっとけよ。ＦＡＸで地図を送っていただけませんか。 — A gente devia se preocupar mais com os problemas da sociedade como um todo. Temos que manter as mãos limpas. Eu não tinha a intenção de levar isso. Eu não dava a mínima para o meu próprio corpo. Ah, deixa pra lá essas coisas que o chefe fica falando. Você poderia me enviar o mapa por fax?
-> 📖 出るか入るかどちらかにしてください。そうですね、テレビを見たりしますね。あっ、ヤバ！ガソリンがなくなりそう。たまにパソコンが急に切れるんですよ。運転の仕方は、親が教えてくれたんだ。店員が「いらっしゃいませ」と言った。 — Decida-se: ou sai, ou entra. Pois é, eu faço coisas como assistir televisão, sabe. Ah, droga! A gasolina parece que vai acabar. De vez em quando o computador desliga de repente, sabe. Quem me ensinou a dirigir foram meus pais. O atendente disse: "Seja bem-vindo(a)!".
+> 📖 私は毎日、電車で通学している。朝の駅は人が多くて、通行もむずかしい。昼食は、町の中心の店でいつも同じものをちゅうもんする。お金がかかるので、ついにちょきんを始めた。家族にもちょくせつ話した。体のちょうしがいい日は、歩いて帰る。 — Eu vou de trem para a escola todos os dias. De manhã a estação fica cheia e até passar fica difícil. No almoço, peço sempre a mesma coisa num restaurante no centro da cidade. Como isso pesa no bolso, finalmente comecei a poupar. Falei direto com a minha família sobre isso. Nos dias em que estou bem disposta, volto a pé.
+> 📖 私は毎日、電車で通学している。朝の電車はとても人が多いし、その上、雨の日はもっと時間がかかる。今朝は急行が私の駅に止まらなかった。それで、駅で二十分も待つことになった。ついに教室に入ると、もう先生の話が始まっていた。ところで、先生にはちょくせつあやまったほうがいいだろうか。 — Eu vou para a escola de trem todo dia. O trem da manhã fica cheio de gente e, além disso, em dia de chuva demora mais ainda. Hoje de manhã o expresso não parou na minha estação. Aí eu acabei esperando vinte minutos na estação. Quando enfim cheguei à sala, o professor já tinha começado a falar. Aliás, será que é melhor eu me desculpar direto com ele?
 - Reconheço e uso substantivos N3 de rotina, trabalho e dinheiro (昼食, 調査, 貯金).
 - Distingo os compostos com 通: 通過, 通学, 通行, 通信.
 - Uso 直接 e 遂に em frases naturais.

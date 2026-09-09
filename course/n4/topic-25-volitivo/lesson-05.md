@@ -69,7 +69,7 @@ Os dois entram fácil numa meta: 日本語を使うようにする ("vou procura
 > 🗣 出来るだけ手紙書くようにするよ。 — Vou procurar te escrever cartas sempre que eu puder.
 
 #### Leitura
-> 📖 ちょっと見ているだけです。ちょっと気になるんだけど。いつも言ってるじゃないか。さすがにそれはやりすぎだ。 — Só estou dando uma olhada. É que estou meio preocupado(a)... Eu vivo dizendo isso, ué! Convenhamos, isso é exagero.
+> 📖 今年は、水をたくさん飲むようにしている。よるおそくには、食べないようにしている。会社の人には、いつもしんせつにするようにしている。おれいを言うようにしてから、みんながやさしくなった。使わない物は、売るようにした。少しずつ、いい一年になっている。 — Este ano estou procurando beber bastante água. Faço questão de não comer tarde da noite. Com o pessoal do trabalho, procuro ser sempre gentil. Depois que passei a agradecer, todo mundo ficou mais simpático comigo. As coisas que eu não uso, passei a vender. Aos poucos, está virando um bom ano.
 - Sei dizer que me esforço para fazer algo por hábito com 〜ようにする.
 - Formo a negativa 〜ないようにする ("procurar não fazer").
 - Diferencio 〜ようにする (esforço contínuo) de 〜ことにする (decisão pontual).

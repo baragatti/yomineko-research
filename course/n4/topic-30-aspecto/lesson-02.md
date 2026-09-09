@@ -62,7 +62,7 @@ O 週 de 週末 (fim de semana) carrega aquele radical de caminho ⻌: a ideia j
 #### Hora de praticar
 
 #### Leitura
-> 📖 外はだんだん明るくなっていく。カメラは持っていくのですか。町を通っていく。試していく。 — Lá fora vai ficando cada vez mais claro. Você vai levar a câmera? Vou passando pela cidade. Vou continuar tentando.
+> 📖 去年から毎朝、英語の本を読みつづけている。始めは、みじかい話を読むのに一週間かかっていた。でも、少しずつ早くなっていった。今朝も駅で新しい本を読んでいた。これからも毎日読みつづけていく。 — Desde o ano passado, venho lendo um livro em inglês toda manhã. No começo, eu levava uma semana para ler uma história curta. Mas fui ficando mais rápido aos poucos. Hoje de manhã eu também estava lendo um livro novo na estação. Daqui para frente vou continuar lendo todo dia.
 - Sei dizer "continuar fazendo" com radical + 続ける.
 - Uso 〜ていく para "ir fazendo" e para mudança rumo ao futuro.
 - Narro uma cena em andamento no passado com 〜ていた.

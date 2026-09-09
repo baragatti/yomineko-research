@@ -52,8 +52,8 @@ Cuidado: ライター (raitaa) pode ser 'escritor' (writer) OU 'isqueiro' (light
 #### Hora de praticar
 
 #### Leitura
-> 📖 買うかどうかはあなたしだいです。金持ちかどうかどうでもいいって！私にできるかどうか分からないよ。私は少し英語を話すことができる。私はバラやユリなどの花を買った。最近は仕事がなかなかないんだよ。 — Comprar ou não, isso depende de você. Tô nem aí se ele é rico ou não! Não sei se vou conseguir fazer isso ou não. Eu consigo falar um pouco de inglês. Comprei flores como rosas, lírios e coisas assim. Ultimamente, emprego é difícil de achar, viu.
-> 📖 十分に注意しなければいけないな。身体を大事にしなければならない。少し買い物をしなければならない。時間を大切にしなければならない。そんなことしたらばかに見えるよ。私の言う事を聞くべきだったのに。 — Precisamos tomar muito cuidado, viu. É preciso cuidar bem do próprio corpo. Preciso fazer algumas compras. Precisamos valorizar o tempo. Se você fizer uma coisa dessas, vai parecer bobo. Você devia ter me escutado.
+> 📖 今日、部長が会社のこれからの計画についてていねいに説明してくれた。その話によれば、今年は去年にくらべてお金がかかるそうだ。そのため、よぶんなお金は使わないほうがいいらしい。私にとって、時間にもお金にもよゆうがある生活がいちばん楽だ。天気予報によれば、来週は雨の日が続くそうだ。休みの日に家ですごすのも、私にとっては楽だし、お金もかからない。 — Hoje o chefe explicou direitinho os planos da empresa daqui para a frente. Pelo que ele contou, este ano vai sair mais caro do que o ano passado. Por isso, parece que é melhor não gastar dinheiro à toa. Para mim, uma vida com folga de tempo e de dinheiro é a mais confortável de todas. Segundo a previsão do tempo, na semana que vem vai chover dia após dia. Passar os dias de folga em casa, para mim, é confortável e ainda não custa nada.
+> 📖 天気予報によれば、来週は雨が多いそうです。去年にくらべて、今年の夏はすずしいです。私にとって、雨の日は本を読むいい時間です。時間によゆうがあるときは、コーヒーを入れて、ゆっくり読みます。天気予報によれば、来月からまた暑くなるそうです。それまでは、このしずかな時間を楽しみたいです。 — Segundo a previsão do tempo, semana que vem vai chover bastante. Comparado ao ano passado, o verão deste ano está fresco. Para mim, dia de chuva é uma boa hora para ler. Quando sobra tempo, eu faço um café e leio com calma. Segundo a previsão, a partir do mês que vem volta a esquentar. Até lá, quero aproveitar essas horas tranquilas.
 - Falo de margem e excesso com 余裕, 余分 e 楽.
 - Reconheço termos de proveito e razão como 利益, 利口 e 理解.
 - Identifico palavras de previsão e vida social como 予報, 予防, 世の中 e 離婚.

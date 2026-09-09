@@ -73,7 +73,7 @@ O keigo é cheio de cortesia, mas a escrita não foge dos kanji. Hoje você ganh
 #### Hora de praticar
 
 #### Leitura
-> 📖 特別料理がございますが。おめでとうございます！ありがとうございます。おはようございます。 — Nós temos um prato especial (para o senhor)... Parabéns! Muito obrigado(a). Bom dia!
+> 📖 こちらは店の食堂でございます。朝の十時から夜の八時まででございます。月曜日は開いていません。コーヒーは五百円でございます。何かございましたら、こちらの電話までどうぞ。 — Aqui é o refeitório da loja. O horário é das dez da manhã às oito da noite. Na segunda-feira não abrimos. O café custa quinhentos ienes. Se precisar de qualquer coisa, é só ligar para este telefone.
 - Reconheço ございます como forma muito cortês de ある/です em saudações.
 - Entendo でございます como o "é" de máxima cortesia no atendimento.
 - Sei formar o negativo polido: tiro ます e ponho ません.

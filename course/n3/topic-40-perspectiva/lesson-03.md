@@ -74,7 +74,7 @@ Combine substituição e comparação:王にかわって王子が演説をする
 #### Hora de praticar
 
 #### Leitura
-> 📖 10ヶ国語を話せたらどんなにかっこいいだろう！時間があまりないんです。急いでもらえませんか。母は昼食後すぐに運動しすぎてはいけないと言う。聞こえる音は時計のカチカチという音だけだった。それが私たちの生活に大きな関わりを持っています — Como seria legal se eu pudesse falar dez idiomas! É que não tenho muito tempo. Você poderia se apressar? Minha mãe diz que não se deve fazer exercício demais logo depois do almoço. O único som que se ouvia era o tique-taque do relógio. Isso tem muito a ver com a nossa vida.
+> 📖 明日の会議は、社長にかわって私が話します。社長は外国のおきゃくさんと会うことになりました。その日は、私にかわって、となりの人が電話に出ます。今年は去年にくらべて、仕事がとても多くなりました。前にくらべて時間が少ないので、みなさん早く来てください。 — Na reunião de amanhã, eu falo no lugar do presidente. Ficou decidido que ele vai atender um cliente de fora do país. Naquele dia, quem atende o telefone no meu lugar é a pessoa da mesa ao lado. Comparado ao ano passado, este ano o trabalho aumentou bastante. Comparado a antes, temos menos tempo, então cheguem cedo.
 - Uso にかわって para dizer que alguém age no lugar de outra pessoa.
 - Não confundo にかわって (em vez de) com に変わって (transformar-se em).
 - Uso に比べて pondo o ponto de referência antes, ao contrário do português.

@@ -90,7 +90,7 @@ Repare quantos kanji de sentimento trazem o coração (心 ou 忄): 怒 (raiva),
 #### Hora de praticar
 
 #### Leitura
-> 📖 彼は年金を与えられた。彼は弟と間違えられた。彼は職務を与えられた。彼女はあざけられた。彼は言質をとられた。 — Ele recebeu uma aposentadoria. Ele foi confundido com o irmão mais novo. Ele recebeu uma função. Zombaram dela. Ele foi pego pela própria palavra.
+> 📖 昨日、会社で部長にしかられました。大事な書類を忘れたからです。帰りに雨にふられて、服がぬれました。電車の中では、足をふまれました。家に着いたら、弟にケーキを食べられていました。こんな日は、早く寝るのがいちばんです。 — Ontem levei bronca do chefe no trabalho. É que eu esqueci um documento importante. Na volta peguei chuva e a minha roupa ficou molhada. No trem ainda pisaram no meu pé. Quando cheguei em casa, meu irmão mais novo já tinha comido o meu bolo. Num dia desses, o melhor é dormir cedo.
 - Sei formar a passiva no passado de verbos ru, u, する e 来る (読まれた, された).
 - Marco quem praticou a ação com a partícula に (先生に褒められた).
 - Reconheço o tom de prejuízo da passiva japonesa (財布が盗まれた, 雨に降られた).

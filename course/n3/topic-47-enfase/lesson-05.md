@@ -57,8 +57,8 @@ O kanji 頂 ('topo, cume; receber') aparece em 頂上 ('cume, topo') e em 頂く
 #### Hora de praticar
 
 #### Leitura
-> 📖 やっぱりべーラと乗馬しに行くことにするよ。彼女は医学を学ぶためにアメリカに渡った。ご返事をさし上げる前によく考えましょう。家内のパートの仕事で少々余分な金が入る。私はこのワープロを手ごろな値段で買った。危ないので、そちらへ行かないでください。 — No fim das contas, vou andar a cavalo com a Vera. Ela foi para os Estados Unidos para estudar medicina. Vamos pensar bem antes de lhe dar a resposta. Com o trabalho de meio período da minha esposa, entra um pouco de dinheiro extra. Eu comprei este processador de texto por um preço acessível. Como é perigoso, por favor não vá para lá.
-> 📖 火曜日までに本を返さなければなりません。去年トマトを作ったがとてもおいしかった。時計が止まって、時間がわからなくなった。土曜日までに本を返さなければなりません。これは本物のダイヤではないかもしれない。あなたが来る前に私たちは行ってしまうよ。 — Tenho que devolver o livro até terça-feira. No ano passado eu plantei tomates, e ficaram muito gostosos. O relógio parou e eu fiquei sem saber as horas. Eu tenho que devolver o livro até sábado. Pode ser que este não seja um diamante de verdade. Nós já teremos ido embora antes de você chegar, viu.
+> 📖 今日、クラスの代表を決めた。わたしなど、まさか選ばれるとは思わなかった。たくさんの人が手を上げてくれたのだ。先生さえ、少しおどろいた顔をしていた。今年こそ、みんなの意見をきちんと聞きたいと思う。大きな声だけでなく、小さな声こそ大切だ。 — Hoje a turma escolheu o representante. Logo eu, nunca imaginei que seria escolhida. Foi muita gente que levantou a mão por mim. Até a professora ficou com uma cara meio surpresa. Este ano eu quero mesmo ouvir direito a opinião de todo mundo. Não são só as vozes altas: as vozes baixinhas é que importam.
+> 📖 先週、クラスの代表を決める会議がありました。今年こそ自分から手をあげようと思っていました。でも、ほとんどの人が別の人の名前を出しました。やはり経験のある人こそ代表にいいと思います。来年こそ、しっかりじゅんびしてから意見を言います。 — Semana passada teve a reunião para escolher o representante da turma. Este ano, sim, eu ia levantar a mão por conta própria. Só que quase todo mundo falou o nome de outra pessoa. Pensando bem, quem tem experiência é que serve mesmo para representante. No ano que vem, aí sim, vou me preparar direito antes de dar a minha opinião.
 - Reconheço e uso palavras N3 sobre representação, liderança e maioria.
 - Emprego vocabulário sobre o mundo natural e conectivos de contraste.
 - Leio os kanji 耳 e 頂 em palavras compostas.

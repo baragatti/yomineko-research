@@ -63,7 +63,7 @@ Duas palavras desta lição mostram bem onde as ordens aparecem:
 ### Pratique
 
 #### Leitura
-> 📖 目を開けなさい。もし来られたら来なさい。立ちなさい。どうやってやるのか教えて。 — Abra os olhos. Se puder vir, venha. Levante-se. Me ensina como se faz isso.
+> 📖 かえったら、手をあらいなさい。それから、へやのそうじをしなさい。テレビを見る前に、本を読みなさい。ごはんは六時に食べなさい。母より。 — Quando chegar, lave as mãos. Depois, arrume o quarto. Antes de ver televisão, leia um livro. Jante às seis horas. Da mãe.
 - Sei formar o 命令形 dos três grupos: 行け, 食べろ, しろ, 来い.
 - Entendo que o 命令形 é bruto e só cabe em intimidade, emergência ou raiva.
 - Formo 〜なさい a partir da base ます (勉強しなさい, 立ちなさい).

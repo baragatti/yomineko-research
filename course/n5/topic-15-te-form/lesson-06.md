@@ -71,7 +71,7 @@ Repare no ん final dessas leituras: はん, ばん, はんぶん. O ん é uma 
 #### Hora de praticar
 
 #### Leitura
-> 📖 人をからかわないで。はい、行きましょう。ええ、どうぞ来てね。 — Não zoa as pessoas. Sim, vamos. Sim, pode vir, viu?
+> 📖 あしたのテスト、ちょっときいてね。テストの時は、となりの人と話さないでね。ノートは出さないで、かばんに入れてね。じしょも見ないで、じぶんで書いてね。じゃあ、九時にきょうしつで。 — Sobre a prova de amanhã, escuta só. Na hora da prova, não fica conversando com quem está do lado. Não tira o caderno, deixa ele na mochila. Também não olha o dicionário, escreve sozinho. Então tá, nove horas na sala.
 - Sei proibir de forma casual com 〜ちゃいけない／〜じゃいけない.
 - Consigo ligar ações com 〜ないで ("sem fazer" / "em vez de").
 - Sei pedir educadamente que algo NÃO seja feito com 〜ないでください.

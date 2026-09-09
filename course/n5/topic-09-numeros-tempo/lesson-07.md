@@ -63,7 +63,7 @@ Mnemônico de forma: imagine uma muralha quadrada (囗) cercando um rei (王) e 
 #### Hora de praticar
 
 #### Leitura
-> 📖 もしもし。ようこそ！ありがとう。 — Alô. Bem-vindo! Obrigado.
+> 📖 ここはがっこうのきょうしつです。このしんぶんはえいごです。あのざっしもえいごです。しかし、このじしょはかんじのじしょです。このしゃしんのことばもかんじです。しかし、あのしゃしんのことばはえいごです。あなたのじしょもかんじのじしょですか。 — Aqui é a sala de aula da escola. Este jornal é em inglês. Aquela revista ali também é em inglês. Mas este dicionário é um dicionário de kanji. As palavras desta foto também são kanji. Mas as palavras daquela foto ali são em inglês. O seu dicionário também é de kanji?
 - Sei que じしょ (e o antigo じびき) é "dicionário".
 - Diferencio ことば (palavra/língua) do sufixo ご (-ês, como em 日本語).
 - Reconheço ざっし (revista), しんぶん (jornal) e しゃしん (foto).

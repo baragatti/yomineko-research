@@ -56,7 +56,7 @@ O pronome お前 é bruto e íntimo. O japonês prefere omitir o sujeito sempre 
 #### Hora de praticar
 
 #### Leitura
-> 📖 引力によって物体が重さを持つようになる。フランス語は多くの人々によって話される。ドアはジムによって開けられます。とりあえず、あたりさわりのない話をしておいたよ。外国、たとえばアメリカへ行ったことがありますか。 — Por causa da gravidade, os objetos passam a ter peso. O francês é falado por muita gente. A porta é aberta pelo Jim. Por enquanto, só toquei em assuntos sem polêmica, viu. Você já foi a algum país estrangeiro, por exemplo, aos Estados Unidos?
+> 📖 今年の夏は、雨がとても少なかった。野菜は水によって大きくなるので、雨が少ないと高くなる。米も、作る場所によって味が変わる。野菜を作る人たちは、この夏、たいへんだった。来年は、もっといい野菜を作りたいそうだ。そのために、天気によって作る野菜を決める。 — Neste verão choveu muito pouco. Como os legumes crescem graças à água, quando chove pouco eles ficam caros. O arroz também muda de sabor conforme o lugar onde é cultivado. Quem planta legumes passou aperto neste verão. Dizem que no ano que vem querem colher legumes melhores. Para isso, vão escolher o que plantar de acordo com o tempo.
 - Sei marcar agente, meio ou variação com ～によって.
 - Sei encadear uma consequência factual com その結果.
 - Distingo finalidade (そのために) de mero resultado (その結果).

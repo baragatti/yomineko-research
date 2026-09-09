@@ -53,8 +53,8 @@ Repare em 含む, um verbo bem útil, e em 夫婦 para falar de um casal.
 #### Hora de praticar
 
 #### Leitura
-> 📖 たまには気分を変えて外食をしよう。この市には見物する所がかなりある。万一の場合はここへ電話をください。火事の場合は１１９に電話しなさい。その場合はどうすればいいでしょう？服は赤、ピンク、青色などであった。 — De vez em quando, vamos mudar de ares e comer fora. Nesta cidade há bastantes lugares para visitar. Em caso de emergência, ligue para cá. Em caso de incêndio, ligue para o 119. Nesse caso, o que eu deveria fazer? As roupas eram vermelhas, rosa, azuis e assim por diante.
-> 📖 ぬくもりなどどこにも見つからない。トレーはどこに下げたらいいですか。日本語の話せるスタッフがいますか。もしかしてフランス語できたりする？この本はあの本ほどおもしろくない。今日はこれでおしまいにしときます。 — Calor humano (aconchego), coisa nenhuma, não se encontra em lugar algum. Onde eu devo deixar a bandeja? Vocês têm algum funcionário que fale japonês? Será que, por acaso, você fala francês? Este livro não é tão interessante quanto aquele livro. Por hoje, vamos parar por aqui.
+> 📖 今週はずっと不安だった。雨が続いたせいで、旅行の予定が全部だめになった。でも、時間ができたおかげで、前から読みたかった本を読むことができた。不思議なことに、家でしずかにしているほうが気が楽だった。無理に出かけなくてもいいのだと分かった。悪い天気のおかげで、いい休みになったと思う。 — Esta semana inteira eu fiquei ansioso. Por causa da chuva que não parava, todos os planos da viagem foram por água abaixo. Mas, graças ao tempo que sobrou, consegui ler o livro que eu queria ler fazia tempo. Por estranho que pareça, ficar quieto em casa deixou meu peito mais leve. Entendi que não preciso me forçar a sair. Graças ao tempo ruim, acho que acabou virando um bom descanso.
+> 📖 昨日の夜から、不安な気持ちがきえなかった。一人で予定を見ながら、無理なことばかり考えていた。友人に電話したら、「不思議だね、試験の前はいつもそうだよ」と言われた。その声を聞いて、心が少し軽くなった。今朝は不安もなく、無事に試験に行けた。 — Desde ontem à noite, aquela aflição não passava. Sozinha, olhando a agenda, eu só pensava em coisas impossíveis. Liguei para um amigo e ele me disse: "estranho, né, antes de prova é sempre assim". Ouvir a voz dele aliviou um pouco o meu peito. Hoje de manhã, já sem aflição nenhuma, cheguei bem para a prova.
 - Reconheço e uso os prefixos de negação 不 e 無.
 - Emprego substantivos abstratos como 不安, 不幸 e 不思議.
 - Identifico palavras concretas do dia a dia como 夫婦, 武器 e 袋.

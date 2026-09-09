@@ -57,7 +57,7 @@ Pense num convite real: "Toda semana (毎週) eu vou nadar; nós dois (二人) p
 #### Hora de praticar
 
 #### Leitura
-> 📖 学校へ行くところでした。千人くらいの人がいた。 — Eu estava a caminho da escola. Havia cerca de mil pessoas.
+> 📖 まいあさ七時におきます。今日はともだちと二人で学校まであるきました。話がたのしくて、三十分もあるきました。あしたもともだちと学校まで行きます。 — Todo dia acordo às sete da manhã. Hoje eu e uma amiga fomos a pé até a escola. A conversa estava tão boa que a gente andou trinta minutos. Amanhã eu vou para a escola com ela de novo.
 - Reconheço a família 毎 e sei dizer 毎朝, 毎日, 毎週, 毎月, 毎年 e 毎晩.
 - Sei que 分 (ふん) é "minuto".
 - Lembro que ２日 lê-se ふつか ("dia 2"), com leitura irregular.

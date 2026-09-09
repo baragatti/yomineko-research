@@ -77,7 +77,7 @@ O kanji 亡 significa "falecido, perecer". O kanji 舞 significa "dança, rodopi
 #### Hora de praticar
 
 #### Leitura
-> 📖 めったにないこの機会を利用しさえすれば良い。今こそ行動する時だ。こちらこそ。来週になると、何十万人もの人がその番組を見ているだろう。サポートセンターに電話するまえにＦＡＱを読んで下さい。 — Basta você aproveitar esta oportunidade rara. Agora é que é a hora de agir. Eu é que agradeço. Na semana que vem, centenas de milhares de pessoas vão estar assistindo a esse programa. Antes de ligar para o suporte, dê uma olhada no FAQ, por favor.
+> 📖 今年こそ、毎日英語を勉強すると決めました。去年はいそがしくて、教科書さえ開きませんでした。でも、十五分さえあれば、何かはできます。少しずつでもいいから、続けることこそ大切です。来年こそ、英語で手紙を書きたいです。 — Este ano, sim, decidi estudar inglês todo dia. No ano passado eu estava tão ocupado que nem abri o livro didático. Mas basta ter quinze minutos e já dá para fazer alguma coisa. Mesmo que seja aos poucos, o que importa mesmo é continuar. No ano que vem, aí sim, quero escrever uma carta em inglês.
 - Sei usar こそ para destacar uma palavra ('esse sim', 'justamente').
 - Respondo com こちらこそ ao devolver uma gentileza.
 - Reconheço さえ no sentido de 'até mesmo' (caso extremo).

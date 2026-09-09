@@ -85,7 +85,7 @@ Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar 
 #### Hora de praticar
 
 #### Leitura
-> 📖 私が信じていることはあなたが正しいということだ。ニュースによると、明日は台風だということだ。彼女にその本を送ってくれと頼みましょうか。姉は私にその辞書を貸してくれとたのんだ。要するに彼らは若すぎるということだ。 — O que eu acredito é que você está certo. Segundo o noticiário, amanhã vai ter tufão. Que tal eu pedir a ela que envie o livro para a gente? Minha irmã me pediu pra emprestar o dicionário pra ela. Em resumo, eles são jovens demais.
+> 📖 姉から電話があった。明日は台風が来るということだ。母は私に、早く帰るように言った。姉も、駅まで車で来てくれと言っていた。つまり、今日の仕事は早く終わらせなければならないということだ。 — Minha irmã ligou. Pelo que dizem, amanhã vem um tufão. Minha mãe me mandou voltar cedo. Minha irmã também pediu que eu fosse de carro até a estação. Ou seja, hoje eu tenho que terminar o trabalho mais cedo.
 - Sei relatar uma ordem ou pedido no discurso indireto com ～ように言う (e ～ないように para 'não fazer').
 - Consigo citar um pedido feito a mim com ～てくれと ('pediram para eu...').
 - Sei usar ～ということだ tanto para boato ('pelo que dizem') quanto para conclusão ('ou seja').

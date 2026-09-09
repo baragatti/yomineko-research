@@ -58,8 +58,8 @@ O kanji 寒 ('frio') aparece em 寒い ('frio') e 寒気 ('ar frio, frio intenso
 #### Hora de praticar
 
 #### Leitura
-> 📖 そのホテルにはプールやテニスコート等がある。ＳＰの仕事の様子が今日テレビで放送されました。両親が昨晩ひそひそと話をしているのを聞いた。そのために仕事を失うことになるかもしれない。今後、あなたの仕事を手伝うようにしましょう。木がどすんと音を立てて倒れるのが聞こえた。 — Esse hotel tem piscina, quadra de tênis e coisas do tipo. Hoje passou na TV uma reportagem sobre o trabalho dos seguranças (SP). Ouvi meus pais cochichando ontem à noite. Por causa disso, talvez eu acabe perdendo o emprego. De agora em diante, vou procurar ajudar você no trabalho. Deu para ouvir a árvore cair fazendo um baque.
-> 📖 彼女は言語はもちろん、文学も研究している。赤ちゃんは病院に向かう途中で生まれました。できるだけ早いお返事をお待ちしております。このスーツに合うネクタイを選んでください。私からは特に申し上げることはございません。店の下調べのため会社帰りに寄ることにした。 — Ela pesquisa não só línguas, como também literatura. O bebê nasceu no caminho para o hospital. Aguardo a sua resposta o mais breve possível. Por favor, escolha uma gravata que combine com este terno. Da minha parte, não tenho nada em especial a dizer. Decidi passar (na loja) na volta do trabalho para fazer um reconhecimento prévio da loja.
+> 📖 あの晩、川の水が家の前まで達した。近所の人がドアをたたいて、にげるように教えてくれた。あれから三年が経ったが、今もあの晩をわすれない。たとえ夜中でも、あの人たちはまた助けてくれるだろう。たとえ立場が違っても、困っている人には手を貸したい。だけど、まず自分の家の用意を確かめておこう。 — Naquela noite, a água do rio chegou até a frente de casa. Um vizinho bateu na porta e avisou para a gente sair correndo. Já se passaram três anos, mas até hoje eu não esqueço aquela noite. Mesmo que fosse de madrugada, aquelas pessoas ajudariam de novo. Mesmo que a nossa situação seja diferente, quero dar uma mão para quem está em apuros. Mas, antes disso, vou conferir se a minha própria casa está preparada.
+> 📖 たとえ時間がなくても、この仕事は今日中に終わらせたい。だけど、一人では難しい。ともだちが、たとえ夜になっても手伝うと言ってくれた。助けてくれる人がいれば、たっぷり時間があるように感じる。あしたの朝、もう一度たしかめよう。 — Mesmo que não dê tempo, quero terminar este trabalho ainda hoje. Só que sozinho fica difícil. Um amigo me disse que ajuda, mesmo que a gente fique até de noite. Quando tem alguém para ajudar, a sensação é de que sobra tempo. Amanhã de manhã eu confiro tudo mais uma vez.
 - Reconheço e uso verbos N3 de conflito, ajuda e verificação.
 - Emprego conectivos e advérbios de grau como だって e たっぷり.
 - Leio os kanji 晩 e 寒 em palavras compostas.

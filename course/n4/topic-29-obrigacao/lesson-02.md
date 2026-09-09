@@ -69,7 +69,7 @@ Palavras que combinam direto com este padrão, porque planejar e preparar é jus
 > 🗣 なぜ死ぬ必要があるんですか？ — Por que é necessário morrer?
 
 #### Leitura
-> 📖 父はまもなく元気になるだろう。私が話しているときは私を見て！父はとても元気でやっています。まだ持ってるか分からないなあ。 — Meu pai logo vai melhorar (ficar bom de saúde). Olhe para mim quando eu estiver falando! Meu pai está indo muito bem (de saúde). Não sei se ainda tenho isso.
+> 📖 来週、学校で試験があります。学生は、八時までに来るひつようがあります。えんぴつと時計は、自分で持ってくるひつようがあります。名前は、始めに書くひつようがあります。分からないことがあったら、先生に聞いてください。試験のあとは、しずかに学校を出てください。 — Semana que vem tem prova na escola. Os alunos precisam chegar até as oito. Lápis e relógio, cada um precisa trazer o seu. O nome precisa ser escrito logo no começo. Se tiver alguma coisa que você não entender, pergunte para o professor. Depois da prova, saia da escola em silêncio.
 - Monto verbo (dicionário) + 必要がある para "há necessidade de fazer".
 - Sei separar が必要 (coisa) de 必要がある (ação).
 - Entendo que 必要がある fala de necessidade externa, não de vontade.

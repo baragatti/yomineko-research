@@ -65,7 +65,7 @@ As palavras de tempo combinam por família. Repare como o 先 traz a ideia de "a
 > 🗣 休み中にどこへいくつもりですか。 — Aonde você pretende ir durante as férias?
 
 #### Leitura
-> 📖 ケチャップってある？スペアキーってある？ — Tem ketchup? Você tem uma chave reserva?
+> 📖 あしたはがっこうへ行きません。ごぜんはうみへ行きます。うみでおよぎます。ごごはこうえんに行きます。それから、いえへかえります。 — Amanhã eu não vou para a escola. De manhã vou até o mar. Lá eu nado. De tarde vou ao parque. Depois volto para casa.
 - Sei marcar a direção/destino de um movimento com へ (e que se lê "e").
 - Monto 〜へ行く para dizer "ir para um lugar".
 - Sei que へ e に são quase intercambiáveis para destino (へ = rumo, に = chegada).

@@ -59,7 +59,7 @@ Cuidado com os pares parecidos. 並ぶ é você entrar na fila (a fila se forma 
 #### Hora de praticar
 
 #### Leitura
-> 📖 ビーチに行きましょう。でももヘチマもないわ。 — Vamos à praia. Nada de 'mas'!
+> 📖 今日はがっこうが三時におわります。そのあと、ともだちとうみへ行きたいです。うみでおよぎたいです。それから、外でごはんもたべたいです。五時前にいえへかえります。 — Hoje a escola termina às três. Depois disso, quero ir até o mar com um amigo. Quero nadar no mar. E depois quero comer alguma coisa ao ar livre também. Volto para casa antes das cinco.
 - Sei formar ～たい: tiro o ます da raiz e ponho たい.
 - Sei que ～たい não muda conforme a pessoa e que o negativo é ～たくない.
 - Uso ～たい para o meu desejo ou para perguntar o desejo de quem falo.

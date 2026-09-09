@@ -69,7 +69,7 @@ Em お母さん, o かあ é uma vogal longa: segure por DOIS tempos (duas palma
 #### Hora de praticar
 
 #### Leitura
-> 📖 クッキーをお一つどうぞ。ちょっと時間かかるかも。 — Pegue um biscoito, por favor. Talvez leve um tempinho.
+> 📖 毎日、七時におきます。あさごはんを食べるまえに、かおをあらいます。ごはんを食べてから、電車で学校へ行きます。うちにかえってから、べんきょうをします。ねるまえに、母とすこし話します。 — Todo dia eu acordo às sete. Antes de tomar café da manhã, lavo o rosto. Depois de comer, vou de trem para a escola. Depois de voltar para casa, eu estudo. Antes de dormir, converso um pouco com a minha mãe.
 - Sei dizer "antes de fazer" com verbo no dicionário + まえに.
 - Sei dizer "depois de fazer" com a forma て + から.
 - Reconheço o kanji 南 (sul, みなみ).

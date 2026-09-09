@@ -81,7 +81,7 @@ O kanji 落 ('cair, queda') tem o radical de planta (艹) no topo, como folha qu
 #### Hora de praticar
 
 #### Leitura
-> 📖 私はその本を読むべきだった。昨夜早めにねるべきだった。昨日来るべきだったのに。何かすることはないの？もはや言うことはない。 — Eu devia ter lido aquele livro. Eu devia ter ido dormir mais cedo ontem à noite. Você devia ter vindo ontem. Você não tem nada para fazer? Já não tenho mais nada a dizer.
+> 📖 試験の点が悪くても、そんなに気にすることはない。大事なのは、毎日少しずつ続けることだ。わからないところは、先生に聞くべきだ。一人で全部やろうとすることはない。今日から早くねて、朝に勉強することだ。 — Mesmo que a nota da prova tenha sido ruim, não precisa se preocupar tanto. O que importa é continuar um pouquinho todo dia. O que você não entender, o certo é perguntar ao professor. Não precisa tentar dar conta de tudo sozinho. A partir de hoje, o ideal é dormir cedo e estudar de manhã.
 - Sei dar um conselho geral com ～ことだ ('o ideal é', 'o melhor a fazer é').
 - Consigo tranquilizar alguém com ～ことはない ('não precisa, não há por que').
 - Sei afirmar uma obrigação moral com ～べきだ ('deveria, é o certo') e sua negativa べきではない.

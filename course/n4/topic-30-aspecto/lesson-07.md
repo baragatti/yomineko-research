@@ -61,7 +61,7 @@ Juntando tudo: この放送は分かりやすい = esse programa é fácil de en
 ### Pratique
 
 #### Leitura
-> 📖 それは答えづらい質問ね。この本は読みやすい。英語は学びやすい。分かりやすいね。 — Essa é uma pergunta difícil de responder, né. Este livro é fácil de ler. O inglês é fácil de aprender. É fácil de entender, né?
+> 📖 英語の新しい本を買いました。写真が多くて、英語もやさしいですから、とても読みやすいです。でも、新聞の英語はまだ読みにくいです。先生に電話で質問しましたが、こえが小さくて聞きづらかったです。明日、学校で先生に会って、もう一度聞きます。 — Comprei um livro novo de inglês. Tem muitas fotos e o inglês é simples, então é bem fácil de ler. Mesmo assim, o inglês do jornal ainda é difícil de ler. Fiz uma pergunta ao professor por telefone, mas a voz dele estava baixa e custei a ouvir. Amanhã encontro o professor na escola e pergunto de novo.
 - Sei formar 〜やすい / 〜にくい / 〜づらい a partir da raiz do verbo (forma ます sem ます).
 - Entendo que o resultado vira um adjetivo い e se conjuga como tal.
 - Distingo 〜にくい (dificuldade vem da natureza da coisa) de 〜づらい (desconforto de quem faz a ação).

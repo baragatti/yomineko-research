@@ -83,7 +83,7 @@ E alguns substantivos úteis do tópico:
 #### Hora de praticar
 
 #### Leitura
-> 📖 ここにいようと思う。また会おう！今日はこれでおしまいにしよう。時間はどのくらいかかりますか。 — Acho que vou ficar aqui. Até a próxima! Vamos parar por aqui hoje. Quanto tempo leva?
+> 📖 こんどのやすみに、ともだちとうみに行こう。あさ、はやく出よう。お金がないから、サンドイッチを作ろう。のみものは、駅で買おう。天気がよかったら、しゃしんもたくさんとろう。いい一日になると思う。 — Na próxima folga, vamos para a praia com o pessoal. De manhã, vamos sair cedo. Como estou sem dinheiro, vamos fazer sanduíche. A bebida a gente compra na estação. Se o tempo estiver bom, vamos tirar um monte de foto também. Acho que vai ser um dia bom.
 - Conjugo verbos dos grupos 1, 2 e irregulares na forma volitiva (〜よう/〜おう).
 - Uso a volitiva casual para propor "vamos fazer" entre pessoas próximas.
 - Uso a volitiva para anunciar minha intenção "vou fazer".

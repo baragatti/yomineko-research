@@ -1,0 +1,11 @@
+{
+ "what": "advisory coherence flags; may shrink, never grow",
+ "why_these_are_not_hard": "A1 counts a sentence sharing no content lemma and no kanji with anything before it. Japanese drops the subject and the object once they are established, so a perfectly coherent line like 'また後で電話するね。' shares nothing lexically with its own paragraph. A2 counts past/non-past switches: a passage that narrates yesterday and then comments on today legitimately switches. A3 counts mixed です・ます and plain endings, which a quotation inside a polite text produces on purpose. Each is a REVIEW SIGNAL for the teacher pass, not a quality verdict.",
+ "measured_on": "the W15 apply (282 authored passages + 4 held). The same validator over the pre-apply concatenations scored topic 814 / tense 86 / register 201 with 3 hard failures.",
+ "counts": {
+  "topic_drift_sentences": 670,
+  "tense_drift_passages": 102,
+  "register_drift_passages": 11,
+  "pronoun_drift_dialogues": 0
+ }
+}

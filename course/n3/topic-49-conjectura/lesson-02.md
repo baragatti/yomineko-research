@@ -67,7 +67,7 @@ O kanji 列 significa "fila, fileira, coluna". À direita está a faca (刂), de
 #### Hora de praticar
 
 #### Leitura
-> 📖 両方とも好きというわけではない。両親とも生きているわけではない。私は昨日生まれたわけではない。事件は終わったわけではない。そんな映画見るわけがない！ — Não é que eu goste dos dois. Não é que meus dois pais estejam vivos. Eu não nasci ontem. Não é que o caso tenha acabado. Não tem como eu assistir a um filme desses!
+> 📖 友だちに「漢字はむずかしいでしょう」とよく言われる。たしかにかんたんではないが、きらいなわけではない。毎日少しずつ書けば、必ず覚えられるはずだ。もちろん、一年で全部覚えられるわけがない。でも、去年より新聞がずっと読みやすくなった。だから、今年も続ける。 — Meus amigos vivem me dizendo que kanji deve ser bem difícil. Fácil não é, isso é verdade, mas não é bem que eu deteste. Se eu escrever um pouco todo dia, é de se esperar que eu acabe decorando. Claro que não tem como decorar tudo em um ano. Mesmo assim, o jornal ficou muito mais fácil de ler do que no ano passado. Por isso este ano eu continuo.
 - Uso はずだ para uma dedução fundamentada e NÃO o confundo com o 'deve' de obrigação (べきだ).
 - Descarto uma possibilidade por completo com わけがない, com o tom categórico certo.
 - Relativizo uma generalização com わけではない ('não é bem que'), sem achar que estou negando tudo.

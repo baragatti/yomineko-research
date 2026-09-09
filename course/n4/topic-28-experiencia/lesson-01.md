@@ -66,7 +66,7 @@ Estas palavras combinam muito com なる e する. Repare em como cada uma escol
 #### Hora de praticar
 
 #### Leitura
-> 📖 そのタオルはきれいなはずです。木からはいろんな物が作られる。明かりをつけていただけません？電気をつけていただけませんか。 — Aquela toalha deve estar limpa. Da madeira se fazem coisas variadas. Você poderia acender a luz? Você poderia acender a luz, por favor?
+> 📖 きのう、家の中を明るくした。古い電気を新しいものにして、白い花も買った。家がとてもきれいになった。母も元気になって、「きれいになったね」と言った。来週は、家の外もきれいにする。 — Ontem deixei a casa mais clara por dentro. Troquei a lâmpada velha por uma nova e ainda comprei flores brancas. A casa ficou bem bonita. Minha mãe também se animou e disse: "Ficou bonita, né?" Semana que vem deixo a parte de fora bonita também.
 - Sei formar 〜くなる (adjetivo-い) e 〜になる (adjetivo-な) para mudanças que acontecem sozinhas.
 - Sei usar 〜にする para dizer que alguém deixa algo de um certo jeito.
 - Sei usar 〜くする com adjetivo-い para uma mudança que eu provoco.

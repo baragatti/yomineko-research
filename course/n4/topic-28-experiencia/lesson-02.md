@@ -72,7 +72,7 @@ Juntando tudo: 毎日研究を続けて、日本語がだんだん分かるよ�
 #### Hora de praticar
 
 #### Leitura
-> 📖 それはだんだん大きくなった。先生はどんどん話しつづけた。だんだん思い出してきたぞ。だんだん地金が出てきた。 — Aquilo foi ficando cada vez maior. O professor continuou falando sem parar. Aos poucos estou começando a me lembrar. Aos poucos a verdadeira natureza dele foi aparecendo.
+> 📖 毎日、かんじのれんしゅうをしています。前は新聞が読めませんでしたが、だんだん読めるようになりました。友だちとの会話もどんどん楽しくなっています。今は本を見て、料理も作れるようになりました。来年は友だちと長く話せるようになりたいです。 — Todo dia eu treino kanji. Antes eu não conseguia ler o jornal, mas aos poucos passei a conseguir. As conversas com os amigos também estão ficando cada vez mais divertidas. Agora, com o livro na mão, já consigo preparar comida também. Ano que vem quero chegar a conversar bastante tempo com os amigos.
 - Sei dizer que passei a fazer ou a conseguir algo com 〜ようになる.
 - Uso だんだん para uma mudança lenta e progressiva (aos poucos).
 - Uso どんどん para uma mudança rápida e contínua (a todo vapor).

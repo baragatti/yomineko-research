@@ -76,7 +76,7 @@ O 桜 (flor de cerejeira) tem o seu 盛り ('auge') por poucos dias na primavera
 #### Hora de praticar
 
 #### Leitura
-> 📖 彼は若いわりにはとてもいい仕事をした。彼のお母さんは年のわりには若く見える。13にしてはすごく背が高かった。母は、年のわりには若く見えます。７月にしては今日はすずしい。 — Para alguém tão jovem, ele fez um trabalho muito bom. A mãe dele parece jovem para a idade que tem. Para alguém de 13 anos, ele era muito alto. Minha mãe parece jovem para a idade dela. Para julho, hoje está fresco.
+> 📖 新しいアルバイトの人が今日から店に来ました。十八歳にしては、ことばがとてもていねいです。初めての仕事にしては、間違いも少ないです。もちろん、まだ知らないことも多いです。人が多い日にしても、いつも元気に働いています。これからが楽しみです。 — Um funcionário novo de meio período começou hoje na loja. Para alguém de dezoito anos, ele fala de um jeito bem educado. Para quem está no primeiro emprego, comete poucos erros. Claro que ainda tem muita coisa que ele não sabe. Mesmo nos dias cheios, ele trabalha sempre com disposição. Estou animado com o que vem pela frente.
 - Uso 〜にしては para surpresa contra um padrão concreto e nomeado ('para iniciante, é bom').
 - Concedo hipóteses e fatos com 〜にしても ('mesmo que / mesmo assim').
 - Marco desproporção com 〜わりには e ponho の depois de substantivo.

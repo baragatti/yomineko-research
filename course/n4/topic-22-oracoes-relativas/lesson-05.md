@@ -68,7 +68,7 @@ Por exemplo: どんなアフリカ料理 = "que tipo de comida africana?".
 #### Hora de praticar
 
 #### Leitura
-> 📖 人生とはそんなものさ。ひょっとしたら明日は雨かも。あなたは行ったほうがいい。どんなワインがありますか。 — A vida é assim mesmo. Pode ser que amanhã chova. É melhor você ir. Que tipos de vinho vocês têm?
+> 📖 友だちに、どんな店がいいですかと聞きました。安くて、しずかな店がいいですと言われました。そんな店なら、駅の前に一つあります。そういう店は、よるも人が少ないので、話しやすいです。こんな雨の日は、あたたかいものが食べたいです。 — Perguntei para um amigo que tipo de restaurante ele prefere. Ele respondeu que gosta de um lugar barato e tranquilo. Se for um lugar assim, tem um bem na frente da estação. Nesse tipo de lugar tem pouca gente também à noite, então dá para conversar sossegado. Num dia de chuva como hoje, dá vontade de comer algo quentinho.
 - Sei usar そういう + substantivo para dizer "esse tipo de / coisa assim".
 - Conheço o sistema こんな・そんな・あんな・どんな e a distância que cada um marca.
 - Lembro que esses demonstrativos vêm antes de substantivo, mas そんなに (com に) vem antes de verbo/adjetivo com sentido de "tanto assim".

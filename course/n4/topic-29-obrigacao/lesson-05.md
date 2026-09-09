@@ -79,7 +79,7 @@ Estes três aparecem em palavras do dia a dia ligadas a imagem e idioma.
 > 🗣 入院しなくてもいいです。 — Você não precisa ser internado.
 
 #### Leitura
-> 📖 その男はとうとう立ち去った。もっと早く始めるべきだった。今日はここまでにしておこう。ここには今着いたばかりなの？ — Aquele homem por fim foi embora. Eu deveria ter começado mais cedo. Vamos parar por aqui hoje. Você acabou de chegar aqui agora?
+> 📖 あしたは休みだから、早く起きなくてもいいよ。ごはんも作らなくていい。きのうは時間がなくて、買い物に行けなかった。でも、まだ食べ物があるから、しんぱいしなくてもいい。天気がわるいから、出かけなくてもいいよ。何かあったら、電話してね。 — Amanhã é folga, então você não precisa acordar cedo. Também não precisa fazer comida. Ontem me faltou tempo e eu não consegui ir ao mercado. Mas ainda tem comida em casa, então não precisa se preocupar. O tempo está ruim, então nem precisa sair. Se acontecer alguma coisa, me liga.
 - Formo a forma て negativa trocando 〜ない por 〜なくて.
 - Ligo orações com 〜なくて (causa ou estado negativo).
 - Digo que algo não precisa ser feito com 〜なくてもいい (e a versão falada 〜なくていい).

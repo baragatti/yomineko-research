@@ -58,8 +58,8 @@ Um lote de katakana, vários do mundo esportivo.
 #### Hora de praticar
 
 #### Leitura
-> 📖 明日は、いつもみたいに早起きしなくていいの。あなたが駅に着くのにどのくらいかかりますか。子どもは同じ話を何度でも聞きたがるものです。この服、ちょっとダボっとしていて着づらいな。コンタクトを入れるというのはいかがでしょう？いいえ、けっこうです。見ているだけですから。 — Amanhã não preciso acordar cedo como sempre. Quanto tempo você leva para chegar à estação? As crianças costumam querer ouvir a mesma história várias e várias vezes. Essa roupa está meio folgada e fica difícil de vestir, sabe. Que tal usar lentes de contato? Não, obrigado. É que estou só olhando.
-> 📖 そして、木はたびたび一人ぼっちになりました。こんなことになるなんて、思ってもみなかった。あのテーブルの上においてある本を取りなさい。インフルエンザを治すのに三週間かかりました。出かける前に、ドアにかぎをかけてください。新しい市の病院を建てる計画が進行中である。 — E a árvore ficava sozinha com frequência. Eu nunca imaginei que as coisas chegariam a esse ponto. Pegue o livro que está em cima daquela mesa. Levei três semanas para me curar da gripe. Por favor, tranque a porta antes de sair. O plano de construir um novo hospital municipal está em andamento.
+> 📖 先週の土曜日は、家族と山で一日をすごした。兄は前より力がすぐれていて、いつも先を歩いていた。遠くから見た山のすがたは、写真よりうつくしかった。父はもっと先へ足を進めようと言った。母は休むことをすすめたが、だれも聞かなかった。夕方まで歩いて、みんなでいい一日をすごした。 — No sábado passado passei o dia na montanha com a família. Meu irmão mais velho está mais forte do que antes e ia sempre na frente. Vista de longe, a montanha era mais bonita do que numa foto. Meu pai disse para seguirmos mais adiante. Minha mãe recomendou parar para descansar, mas ninguém deu ouvidos. Andamos até o fim da tarde e todo mundo teve um dia bom.
+> 📖 冬の休みは山でスキーをしてすごしました。ともだちはスキーにすぐれていて、そのすがたはとてもきれいでした。山はとても寒かったですが、毎日長い時間あそびました。ともだちは、早くねてすいみんを大切にすることをすすめました。来月から、私も新しいれんしゅうを進めます。 — Passei as férias de inverno esquiando na montanha. Meu amigo é muito bom de esqui, e era lindo de ver. Na montanha fazia muito frio, mas todo dia a gente se divertiu por horas. Meu amigo recomendou dormir cedo e cuidar bem do sono. A partir do mês que vem eu também vou levar adiante um treino novo.
 - Reconheço e uso verbos e substantivos do bloco す, como 過ごす, 優れる e 姿.
 - Distingo 進める (avançar) de 勧める (recomendar) pelo kanji.
 - Identifico os kanji 対 (em relação a) e 部 (seção, parte).

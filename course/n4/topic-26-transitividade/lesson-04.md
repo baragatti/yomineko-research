@@ -62,7 +62,7 @@ Cinco kanji ligados a viagem, tempo e moradia:
 #### Hora de praticar
 
 #### Leitura
-> 📖 明日の朝に電話をいたします。たった今気づいたところです。５０００円ばかりもっている。明日雨かどうか分かりますか。 — Telefonarei amanhã de manhã. Acabei de perceber agora mesmo. Tenho uns 5.000 ienes. Você sabe se vai chover amanhã?
+> 📖 私は駅の近くに住んでいます。毎朝、電車で会社に通っています。先週の休みは、車をうんてんして海まで行きました。海の近くのりょかんに二日いました。へやが広くて、朝ごはんもおいしかったです。また車でどこかへ行きたいです。 — Eu moro perto da estação. Toda manhã vou de trem para a empresa. Na folga da semana passada, dirigi até o mar. Fiquei dois dias numa pousada perto do mar. O quarto era espaçoso e o café da manhã estava gostoso. Quero pegar o carro e ir para algum lugar de novo.
 - Sei nomear lugares de viagem: 森 (floresta) e 海岸 (litoral).
 - Diferencio 旅館 (pousada de viagem) de 下宿 (alojamento onde se mora).
 - Falo de transporte com 乗り物, 運転 e 案内.

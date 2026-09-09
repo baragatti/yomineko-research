@@ -75,7 +75,7 @@ Em templos e santuários, os japoneses penduram um 絵馬 (plaquinha de madeira)
 #### Hora de praticar
 
 #### Leitura
-> 📖 私は父にその映画を見てほしい。早く病気がよくなりますように。新年もよい年でありますように。手伝ってほしいですか。私をここから出してほしいの。 — Eu quero que meu pai assista a esse filme. Tomara que você melhore logo. Que o ano-novo também seja um bom ano. Você quer que eu ajude? Eu quero que você me tire daqui.
+> 📖 明日は妹の試験の日だ。うまくいくといいなあと、朝からずっと思っている。妹には、あまり心配しないでほしい。母も「がんばりすぎないでほしい」と言っていた。どうか、明日がいい一日になりますように。 — Amanhã é o dia da prova da minha irmã mais nova. Desde cedo eu fico pensando: tomara que dê tudo certo. Queria que ela não se preocupasse tanto. Minha mãe também falou: "Queria que ela não se esforçasse além da conta". Que amanhã seja um bom dia para ela.
 - Sei pedir que outra pessoa faça algo com 〜てほしい, marcando o agente com に (não を).
 - Consigo torcer por algo com 〜といいなあ ('tomara que...'), lembrando que o と é um 'se' embutido.
 - Sei fazer um voto sincero com 〜ますように, sem procurar um 'que' solto.

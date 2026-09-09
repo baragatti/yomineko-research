@@ -61,7 +61,7 @@ O par 前 (antes) e 後 (depois) é um casal: 午前 (manhã) e 午後 (tarde) d
 #### Hora de praticar
 
 #### Leitura
-> 📖 さあ、ピザがいる人ー！お前ら、わがままだな。 — Bem, quem quer pizza? Vocês são egoístas, hein.
+> 📖 きょうはごごにえきに行きます。あねもえきにきます。それから、えいがかんでえいがを見ます。こんばん、うちでごはんをたべます。 — Hoje à tarde eu vou até a estação. Minha irmã mais velha também vem para a estação. Depois a gente vê um filme no cinema. À noite, comemos em casa.
 - Sei usar に para marcar o ponto no tempo (五時に, 月曜日に).
 - Sei usar に para marcar o destino/alvo de um movimento.
 - Sei que tempos relativos (今日, 明日, 昨日) NÃO levam に.

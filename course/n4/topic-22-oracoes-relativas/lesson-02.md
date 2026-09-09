@@ -62,7 +62,7 @@ Estas palavras combinam bem com a família という, porque você costuma citar
 #### Hora de praticar
 
 #### Leitura
-> 📖 １３って言った？それとも３０？どうもごりっぱな言いわけだよ。それをすぐにしてもいいですか。行きたくないのなら、行くな。 — Você disse 13? Ou foi 30? Nossa, que desculpa esfarrapada. Posso fazer isso agora mesmo? Se você não quer ir, não vá.
+> 📖 駅の前に「みなみ」という新しい店ができました。友だちは、そこのコーヒーがとてもおいしいと言いました。でも、にちようびは休みだということを聞きました。だから、行くのはあしたがいいということです。あした、友だちと「みなみ」でコーヒーを飲みます。 — Abriu um lugar novo na frente da estação, chamado Minami. Um amigo meu disse que o café de lá é muito gostoso. Só que fiquei sabendo que aos domingos ele fecha. Ou seja, o melhor é ir amanhã. Amanhã vou tomar café no Minami com o meu amigo.
 - Nomeio ou cito algo com NOME + という + substantivo ("chamado de").
 - Empacoto uma frase inteira com ということ para resumir ou reformular.
 - Reconheço ということ como a ponte antes de 知っている, 分かる ou です.

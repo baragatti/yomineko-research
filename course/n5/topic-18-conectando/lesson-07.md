@@ -59,7 +59,7 @@ Cuidado: ４日 (dia 4) e ８日 (dia 8) têm leituras parecidas, mas diferentes
 #### Hora de praticar
 
 #### Leitura
-> 📖 お水だけでけっこうです。中休みしようじゃないか。いい人みたいじゃないか。 — Só água está bom, por favor. Que tal fazermos uma pausa? Ele parece ser uma boa pessoa, não acha?
+> 📖 今日は学校で、先生に日本語の読みかたを聞きました。先生の話しかたは、とてもよく分かります。うちでは、本を読んだり、テレビを見たりしました。毎日、書いたり読んだりしています。まだむずかしいですけど、とてもおもしろいです。 — Hoje, na escola, perguntei ao professor o jeito de ler o japonês. O jeito de falar do professor eu entendo muito bem. Em casa, fiz coisas como ler um livro e ver televisão. Todo dia eu escrevo um pouco, leio um pouco. Ainda é difícil, mas é bem interessante.
 - Sei listar exemplos com ～たり～たりする, pondo たり em cada item e する no fim.
 - Consigo formar o "modo de fazer" com 方, como 読み方 (como se lê).
 - Reconheço o kanji 読 (ler) em 読む e 読み方.

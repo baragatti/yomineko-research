@@ -77,7 +77,7 @@ O contador 杯 muda de leitura conforme o número: 一杯 (いっぱい), 二杯
 #### Hora de praticar
 
 #### Leitura
-> 📖 いつか私のことは忘れちゃうわ。彼のことを知らない。いよいよ１７日の国際フェアトレード・デーが近付きました。「お飲み物はいかがですか？」「すいません、いいです」私は自転車も持っていない、まして車などとんでもない。 — Um dia você vai me esquecer. Não conheço ele. Finalmente, o Dia Internacional do Comércio Justo, no dia 17, está chegando. "Aceita algo para beber?" "Não, obrigado, estou bem assim." Eu não tenho nem bicicleta, quanto mais carro.
+> 📖 これは母の友だちの家の写真です。家の前の道の右に、小さな店があります。その店の名前は「花のはこ」です。店の中の赤い紙の花は、母の友だちの弟の作品です。日本の秋の色がよく出ている写真だと思います。 — Esta é uma foto da casa de uma amiga da minha mãe. À direita da rua em frente à casa tem uma lojinha. O nome da loja é "Caixa de Flores". As flores de papel vermelhas dentro da loja são trabalho do irmão mais novo dessa amiga. Acho que é uma foto em que a cor do outono japonês aparece bem.
 - Sei ligar dois substantivos com の na ordem possuidor の possuído (私の傘).
 - Lembro que の nem sempre é 'de': pode virar 'em', 'das' ou nada (日本語の本).
 - Consigo encadear vários の e ler de trás para frente (友達の車の鍵).

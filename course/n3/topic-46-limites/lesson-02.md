@@ -77,7 +77,7 @@ Muitos termos de hoje começam com けつ ou けっ; preste atenção ao っ (um
 Resolva os exercícios e leia a explicação de cada resposta.
 
 #### Leitura
-> 📖 私は自分に関してのことだけしかいえない。手元にはこれだけしかお金がありません。私は５千円だけしか持っていません。私はこれだけしか知りません。若い時は、一度しかない。 — Só posso falar por mim mesmo. É só este dinheiro que tenho comigo. Eu só tenho cinco mil ienes. Eu só sei isto. A juventude só vem uma vez.
+> 📖 今月はもう、お金が少しだけしか残っていない。友達は毎日、「出かけよう」とばかり言っている。でも、来月まで家で本を読むしかない。けっきょく、休みの日はいつも同じことばかりしている。がまんにも限界があるが、今はこうするしかない。来月は、毎週少し出かけると決心した。 — Este mês já sobrou só um trocado. Meus amigos vivem dizendo "Bora sair". Mas até o mês que vem só me resta ficar em casa lendo. No fim das contas, nos dias de folga eu faço sempre a mesma coisa. Aguentar também tem limite, mas por enquanto não dá para fazer diferente. Decidi que no mês que vem vou sair um pouco toda semana.
 - Sei usar しかない para 'não resta outra senão' e 'só tem'.
 - Lembro que しか e だけしか sempre pedem verbo na negativa.
 - Sei criticar o excesso com ばかり ('vive fazendo') e distingui-lo de だけ.

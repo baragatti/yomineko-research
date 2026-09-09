@@ -54,7 +54,7 @@ O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente espera
 #### Hora de praticar
 
 #### Leitura
-> 📖 きのう来ればよかったのに。電話すればよかったのに。もしわからなかったら聞いてね。もしあした雨なら行きません — Você devia ter vindo ontem. Você devia ter ligado. Se não entender, pergunta, tá? Se amanhã chover, eu não vou.
+> 📖 きのう、友だちと山へ行った。もし天気がよかったら、しゃしんをたくさんとりたかった。でも、あさから雨がふって、とてもさむかった。かさをもって行けばよかった。もし今度また行ったら、天気をよく見てから出かけるつもりだ。 — Ontem fui à montanha com um amigo. Se o tempo estivesse bom, eu queria ter tirado um monte de foto. Mas choveu desde cedo e fez muito frio. Eu devia ter levado guarda-chuva. Se eu for de novo, pretendo conferir bem o tempo antes de sair.
 - Sei usar もし no começo para anunciar uma hipótese (o "se" real fica no verbo).
 - Consigo lamentar o passado com 〜ばよかった ("eu devia ter...").
 - Sei a diferença entre 〜ばよかった ("devia ter feito") e 〜なければよかった ("não devia ter feito").

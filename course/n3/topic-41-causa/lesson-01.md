@@ -55,7 +55,7 @@ Armadilha PT: em せいで e おかげで, mantenha o e final limpo. O brasileir
 #### Hora de praticar
 
 #### Leitura
-> 📖 木のおかげで雨にぬれずにすんだ。それはわたしのせいではなかった。風が強いのはビル風のせいです。私がいるのは父のおかげです。おかげで元気にしております。 — Graças às árvores, acabei não me molhando na chuva. A culpa daquilo não foi minha. O vento estar forte é por causa do efeito de túnel entre os prédios. Devo o que sou ao meu pai. Graças a você, vou indo bem.
+> 📖 昨日は朝から雨が強くて、電車がおくれました。電車がおくれたせいで、会議に間に合いませんでした。わるい天気のせいで、夜の予定もなくなりました。でも、友だちが車で送ってくれたおかげで、うちには早く帰れました。友だちのおかげで、今日は元気です。 — Ontem choveu forte desde cedo e o trem atrasou. Por causa do atraso do trem, não cheguei a tempo da reunião. Por causa do tempo ruim, os planos da noite também foram por água abaixo. Mas, graças a um amigo que me levou de carro, consegui voltar cedo para casa. Graças a ele, hoje eu estou bem.
 - Sei atribuir um bom resultado com ～おかげで.
 - Sei atribuir um resultado ruim com ～せいで.
 - Escolho おかげで ou せいで conforme avalio o desfecho como bom ou mau.

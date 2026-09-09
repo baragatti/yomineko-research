@@ -69,7 +69,7 @@ Você vai ouvir também os verbos 罹る(contrair uma doença),翔る(planar, vo
 #### Hora de praticar
 
 #### Leitura
-> 📖 ダイエットしようとした。おめでとうございます。 — Eu tentei emagrecer. Parabéns!
+> 📖 もしもし、これからいぬとこうえんへさんぽに行きます。あなたもこうえんへきますか。こうえんでいぬとあそびます。こうえんをあるきます。いぬといえへかえります。いえでシャワーをあびます。 — Alô, agora eu vou passear no parque com o cachorro. Você também vem ao parque? No parque eu brinco com o cachorro. Eu ando pelo parque. Eu volto para casa com o cachorro. Em casa eu tomo banho.
 - Uso os verbos de deslocamento (いく, かえる, あるく, およぐ, あそぶ) no presente polido.
 - Conjugo o irregular くる (きます／こない／きた) sem cair no erro "kurimasu".
 - Escolho entre いく (ir, afasta-se) e くる (vir, aproxima-se) pelo ponto de vista de quem fala.

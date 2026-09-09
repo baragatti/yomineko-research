@@ -58,7 +58,7 @@ Antes de praticar, guarde dois itens que vão aparecer em textos mais à frente.
 > 🗣 信じてくれる？ — Você acredita em mim?
 
 #### Leitura
-> 📖 かっけー！おはようございます — Que maneiro! Bom dia.
+> 📖 きのう、がっこうでえをかきました。せんせいも、そのえを見ました。きょう、そのえをいもうとにあげました。いもうとは、あねのくつも見ました。あねは、いもうとにそのくつをあげました。いもうとは、そのくつであそんでいます。 — Ontem fiz um desenho na escola. A professora também viu o desenho. Hoje dei o desenho para a minha irmã mais nova. Ela também olhou os sapatos da nossa irmã mais velha. E a mais velha deu os sapatos para ela. Agora minha irmã mais nova está brincando com esses sapatos.
 - Uso あげる quando eu (ou meu grupo) dou algo para outra pessoa.
 - Uso くれる quando alguém dá algo para mim ou pro meu círculo.
 - Uso もらう para dizer que eu recebi/ganhei algo de alguém.

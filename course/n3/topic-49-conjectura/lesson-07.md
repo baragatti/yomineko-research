@@ -66,8 +66,8 @@ A expressão 迷惑をかける (めいわくをかける, "causar incômodo a a
 #### Hora de praticar
 
 #### Leitura
-> 📖 戻ってハンドバッグを取ってくるわ。かぜをひいたらこの薬を飲むんだよ。冬は寒いので、ストーブをつけます。私はボタンを押してラジオをつけた。スキーは私の大好きなスポーツです。そうかもしれないけど、たぶん違う。 — Vou voltar e pegar a bolsa. Se você ficar resfriado, tome este remédio, viu? Como faz frio no inverno, ligamos o aquecedor. Eu apertei o botão e liguei o rádio. Esqui é o meu esporte favorito. Pode ser que sim, mas provavelmente não é.
-> 📖 今のところ別にやめる気は全然ない。どんどんガソリンの値段が上がります。親はすぐにこどもを病院に連れてくる。私が今こうして、二日分の日記を書く。中学校の２年生が職場体験をしました。子どもを連れ去る所を近所の人が見た — Por enquanto, eu não tenho a menor vontade de largar isso. O preço da gasolina não para de subir. Os pais levam os filhos ao hospital logo de cara. Agora, é assim que eu escrevo o diário de dois dias de uma vez. Os alunos do segundo ano do ensino fundamental II fizeram uma experiência de trabalho. Um vizinho viu o momento em que levaram a criança embora.
+> 📖 駅の前に、新しい店ができたらしい。今週は、飲み物が無料になるそうだ。人が多すぎて、近くの家にはめいわくだろう。わたしはあまり出かけないが、明日は行ってみようと思う。友だちも来るようだ。時間のむだにならないといい。 — Parece que abriu uma loja nova em frente à estação. Dizem que esta semana as bebidas saem de graça. Com tanta gente, deve ser um incômodo para as casas vizinhas. Eu não saio muito, mas amanhã pretendo dar uma passada lá. Pelo jeito, os meus amigos também vão. Tomara que não seja perda de tempo.
+> 📖 昨日から熱があって、あまりよくねむれませんでした。朝ごはんの前にメモを見たら、九時に予約があるはずでした。病院は駅の前にあるはずですが、なかなか見つかりませんでした。道を聞くのはむだだと思って、そのまま歩きました。かなり遅れて、先生にめいわくをかけてしまいました。 — Estava com febre desde ontem e não consegui dormir direito. Antes do café da manhã olhei o bilhete: era para eu ter consulta marcada às nove. O hospital devia ficar na frente da estação, mas eu não achava de jeito nenhum. Achei que perguntar o caminho não ia adiantar e segui andando. Cheguei bem atrasado e acabei incomodando o médico.
 - Entendo o prefixo 無 (sem) em 無視, 無駄 e 無料.
 - Reconheço palavras do cotidiano como 虫歯, 胸, 芽, 飯 e メモ.
 - Uso 命じる, 命令, 迷惑 e o advérbio 滅多に (com verbo negativo) corretamente.

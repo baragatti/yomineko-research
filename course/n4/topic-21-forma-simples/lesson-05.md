@@ -59,7 +59,7 @@ O kanji 場 significa lugar, localização. À esquerda o radical de "terra"; à
 #### Hora de praticar
 
 #### Leitura
-> 📖 先生といってもいろいろある。７月にしては今日はすずしい。あの男ももう上がったりだ。さっさと行ったほうがいい。 — Professor é professor, mas tem de tudo. Para julho, hoje está fresco. Aquele cara também já era. É melhor a gente ir logo.
+> 📖 駅の前に、新しい店ができました。前の店より、少し高いです。でも、パンの多さと新しさがちがいます。パンいがいは、前の店のほうが安いです。母は、今日からこの店で買うと言いました。 — Abriu uma loja nova em frente à estação. Ela é um pouco mais cara que a loja de antes. Mas a quantidade de pães e o frescor são diferentes. Fora os pães, a loja de antes é mais barata. Minha mãe disse que a partir de hoje compra nessa loja.
 - Comparo A e B com より e lembro que ele gruda no termo "do que".
 - Transformo adjetivos-い em substantivos de grau trocando い por さ (高い → 高さ).
 - Excluo um item e aponto para o resto com 以外 (いがい).

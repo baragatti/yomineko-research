@@ -70,7 +70,7 @@ Um provérbio (諺) famoso usa essa ideia de raridade ao contrário: 七転び�
 #### Hora de praticar
 
 #### Leitura
-> 📖 ビルは時間を違えないことはめったにない。彼女が町から出ることはめったにない。好機が二度訪れることはめったにない。今ではめったに行われません。彼女はめったに外出しない。 — É raro o Bill chegar na hora. É raro ela sair da cidade. É raro a oportunidade bater duas vezes à porta. Hoje em dia raramente se faz isso. Ela raramente sai de casa.
+> 📖 私はめったに外で食べない。好きな店はあるが、行くことはめったにない。ずっと行っていなかったが、今回はともだちに呼ばれたので行った。店はこんざつしていたが、料理はとてもおいしかった。これからも外で食べることはめったにないだろうが、今日はよかった。 — Eu quase nunca como fora. Tenho um restaurante preferido, mas raramente vou lá. Fazia tempo que eu não ia, mas dessa vez uma amiga me chamou e eu fui. Estava lotado, mas a comida estava ótima. Daqui pra frente também vou comer fora bem pouco, mas hoje valeu a pena.
 - Digo que algo é raro com めったに〜ない ('raramente, quase nunca').
 - Uso a variante [oração] ことはめったにない ('é raro que...').
 - Lembro que o verbo precisa ficar no negativo, mesmo que 'raramente' já soe negativo em português.

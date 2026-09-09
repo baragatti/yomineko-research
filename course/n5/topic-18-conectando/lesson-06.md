@@ -66,7 +66,7 @@ Mnemônico de forma: imagine dois braços cruzados em X por cima de duas pernas 
 > 🗣 ここには前に来たことがある。 — Eu já vim aqui antes.
 
 #### Leitura
-> 📖 車があればそこへ行ける。いい人だけどイマイチね。 — Se eu tiver um carro, dá para ir até lá. Ele é uma boa pessoa, mas falta alguma coisa.
+> 📖 来月、友だちと山へ行くつもりです。わたしはまだその山へ行ったことがありません。子どものとき、父とよく外でごはんを食べました。山では、外でごはんを食べるつもりです。行くとき、電車の時間を見ます。 — No mês que vem eu pretendo ir à montanha com uns amigos. Eu ainda nunca fui nessa montanha. Quando eu era criança, eu e o meu pai comíamos ao ar livre muitas vezes. Lá na montanha a ideia é comer ao ar livre. Na hora de ir, eu confiro o horário do trem.
 - Declaro um plano decidido com verbo (dicionário) + つもり (e nego no verbo: 行かないつもり).
 - Conto experiências de vida com verbo た + ことがある ("já fiz..."), negando em ありません ("nunca").
 - Situo uma ação no tempo com ～とき ("quando..."), atento ao tempo do verbo antes dele.

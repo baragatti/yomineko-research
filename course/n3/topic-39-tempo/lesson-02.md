@@ -69,7 +69,7 @@ Resolva os exercícios; confira a explicação de cada um.
 > 🗣 ついでに手紙だしてきてよ。 — Já que você vai sair, aproveita e posta a carta, vai.
 
 #### Leitura
-> 📖 ついでに私のも買ってきてくれますか。ついでに手紙だしてきてよ。少女はそんな人なことは聞いたこともないと言った。私たちはいつそこのたどり着くことになるだろうか。ドルペッグの意味は、強い国につけということです。 — Já que você vai, aproveita e compra um pra mim também? Já que você vai sair, aproveita e posta a carta, vai. A menina disse que nunca tinha ouvido falar de tal pessoa. Quando será que acabaremos chegando lá? O significado de 'dollar peg' é: atrele-se aos países fortes.
+> 📖 夜から朝にかけて、強い雨がふるそうです。私は、雨の日のたびに駅までバスに乗ります。明日は買い物に行くので、ついでに手紙も出してきます。出かけるたびに、かさをわすれてしまいます。今週は、月曜日から金曜日にかけて、かさを持って出かけます。 — Dizem que vai chover forte da noite até de manhã. Toda vez que chove, eu pego o ônibus até a estação. Amanhã eu vou fazer compras, então já aproveito e posto a carta. Toda vez que saio, acabo esquecendo o guarda-chuva. Esta semana, de segunda a sexta, vou sair de casa com o guarda-chuva.
 - Marco faixas difusas com から～にかけて e não confundo com まで
 - Uso ～たびに para repetição a cada ocorrência
 - Sei que ～ついでに exige uma ação principal com propósito próprio

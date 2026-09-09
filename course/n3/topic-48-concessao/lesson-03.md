@@ -71,7 +71,7 @@ O kanji 浮 ('flutuar, boiar') tem água (氵) à esquerda: algo que boia na ág
 #### Hora de praticar
 
 #### Leitura
-> 📖 ポーカーフェイスというより、何も考えてない。今度来た先生は、先生というより友達みたいだ。彼は抜け目がないというよりついているのだ。彼女は天使だといっても過言ではない。彼女は美しいというよりはかわいい。 — Mais do que cara de paisagem, é que não está pensando em nada. O professor novo é mais um amigo do que um professor. Mais do que esperto, ele tem é sorte. Não é exagero dizer que ela é um anjo. Ela é mais fofa do que bonita.
+> 📖 新しい部長は、部長というより友だちのような人です。話す時も、仕事の話というより、ふつうの話が多いです。きびしいというより、優しすぎるのだと思います。といっても、仕事の時は目がこわいです。ところが、昨日はみんなの前で歌を歌いました。あの人は、部長というより、やっぱり友だちです。 — O novo chefe é, mais do que um chefe, uma pessoa que parece um amigo. No jeito de falar também: em vez de conversa de trabalho, é papo comum a maior parte do tempo. Mais do que rígido, acho que ele é bonzinho demais. Dito isso, na hora do trabalho o olhar dele assusta. Só que ontem ele cantou na frente de todo mundo. Aquele cara, mais do que chefe, é amigo mesmo.
 - Uso 〜というより para escolher o rótulo que descreve melhor a mesma coisa.
 - Suavizo e ajusto expectativas com 〜といっても ('é X, mas nem por isso...').
 - Sei que ところが abre uma nova frase e marca um desfecho surpreendente.

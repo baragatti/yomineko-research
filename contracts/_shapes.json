@@ -2978,6 +2978,92 @@
       "boolean"
      ]
     },
+    "comprehension": {
+     "present": 286,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "object"
+     ]
+    },
+    "comprehension.about_current_text": {
+     "present": 286,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "boolean"
+     ]
+    },
+    "comprehension.correct": {
+     "present": 4,
+     "pct": 1.4,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "そのうち雨が降るかもしれない",
+      "コンピューターに関係する仕事",
+      "会って話す",
+      "自分の名前"
+     ]
+    },
+    "comprehension.item": {
+     "present": 286,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ]
+    },
+    "comprehension.options": {
+     "present": 4,
+     "pct": 1.4,
+     "required": false,
+     "types": [
+      "array"
+     ]
+    },
+    "comprehension.options[]": {
+     "present": 16,
+     "pct": 5.6,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "ずっと晴れるだろう",
+      "そのうち雨が降るかもしれない",
+      "もう雨が降っている",
+      "ケーキを作る仕事",
+      "コンピューターに関係する仕事",
+      "ビルを建てる仕事",
+      "メールを送る",
+      "会って話す",
+      "会社の名前",
+      "住所",
+      "手紙を書く",
+      "自分の名前",
+      "雪が降るかもしれない",
+      "電話をかける",
+      "電話番号",
+      "音楽に関係する仕事"
+     ]
+    },
+    "comprehension.question": {
+     "present": 4,
+     "pct": 1.4,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "こちらに何を書くように言っていますか。",
+      "この人はどんな仕事をしていますか。",
+      "この人は明日、何をしなくてはいけないと思っていますか。",
+      "天気について、正しいものはどれか。"
+     ]
+    },
     "gated_to_lesson": {
      "present": 286,
      "pct": 100.0,
@@ -3002,7 +3088,8 @@
       "string"
      ],
      "values": [
-      "B"
+      "B",
+      "C"
      ]
     },
     "length_band": {
@@ -3014,8 +3101,7 @@
      ],
      "values": [
       "long",
-      "paragraph",
-      "short"
+      "paragraph"
      ]
     },
     "level": {
@@ -3039,12 +3125,40 @@
       "boolean"
      ]
     },
+    "sentences": {
+     "present": 286,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "sentences[]": {
+     "present": 1553,
+     "pct": 543.0,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
     "slug": {
      "present": 286,
      "pct": 100.0,
      "required": true,
      "types": [
       "string"
+     ]
+    },
+    "source": {
+     "present": 286,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "authored:w15-passages",
+      "selection:sentence-bank"
      ]
     },
     "source_slugs": {
@@ -3056,11 +3170,32 @@
      ]
     },
     "source_slugs[]": {
-     "present": 1321,
-     "pct": 461.9,
+     "present": 19,
+     "pct": 6.6,
      "required": false,
      "types": [
       "string"
+     ],
+     "values": [
+      "sent:gen-574302901ae7",
+      "sent:gen-96ce440b58e0",
+      "sent:gen-ca41b771f616",
+      "sent:gen-e12e2080fb55",
+      "sent:tatoeba-10017344",
+      "sent:tatoeba-122353",
+      "sent:tatoeba-123701",
+      "sent:tatoeba-142578",
+      "sent:tatoeba-146860",
+      "sent:tatoeba-167102",
+      "sent:tatoeba-193130",
+      "sent:tatoeba-220401",
+      "sent:tatoeba-225298",
+      "sent:tatoeba-6119645",
+      "sent:tatoeba-76061",
+      "sent:tatoeba-80136",
+      "sent:tatoeba-80608",
+      "sent:tatoeba-81149",
+      "sent:tatoeba-83675"
      ]
     },
     "title": {
@@ -3096,8 +3231,8 @@
      ]
     },
     "tokens[].pos": {
-     "present": 12672,
-     "pct": 4430.8,
+     "present": 20216,
+     "pct": 7068.5,
      "required": false,
      "types": [
       "string"
@@ -3116,29 +3251,28 @@
       "pronoun",
       "punctuation",
       "suffix",
-      "verb",
-      "whitespace"
+      "verb"
      ]
     },
     "tokens[].r": {
-     "present": 12672,
-     "pct": 4430.8,
+     "present": 20216,
+     "pct": 7068.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "tokens[].ro": {
-     "present": 12672,
-     "pct": 4430.8,
+     "present": 20216,
+     "pct": 7068.5,
      "required": false,
      "types": [
       "string"
      ]
     },
     "tokens[].s": {
-     "present": 12672,
-     "pct": 4430.8,
+     "present": 20216,
+     "pct": 7068.5,
      "required": false,
      "types": [
       "string"
@@ -3185,8 +3319,8 @@
      ]
     },
     "uses.kanji[]": {
-     "present": 3328,
-     "pct": 1163.6,
+     "present": 5163,
+     "pct": 1805.2,
      "required": false,
      "types": [
       "string"
@@ -3201,8 +3335,8 @@
      ]
     },
     "uses.vocab[]": {
-     "present": 6306,
-     "pct": 2204.9,
+     "present": 7184,
+     "pct": 2511.9,
      "required": false,
      "types": [
       "string"
@@ -3612,10 +3746,10 @@
     "corpus/exam_banks/n5_text_grammar.json",
     "corpus/exam_banks/n5_usage.json"
    ],
-   "records": 6037,
+   "records": 6081,
    "fields": {
     "ai_generated": {
-     "present": 6037,
+     "present": 6081,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3624,7 +3758,7 @@
     },
     "answer": {
      "present": 871,
-     "pct": 14.4,
+     "pct": 14.3,
      "required": false,
      "types": [
       "string"
@@ -3632,7 +3766,7 @@
     },
     "audio": {
      "present": 239,
-     "pct": 4.0,
+     "pct": 3.9,
      "required": false,
      "types": [
       "string"
@@ -3642,24 +3776,24 @@
      ]
     },
     "correct": {
-     "present": 5166,
-     "pct": 85.6,
+     "present": 5210,
+     "pct": 85.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "distractors": {
-     "present": 4984,
-     "pct": 82.6,
+     "present": 5028,
+     "pct": 82.7,
      "required": false,
      "types": [
       "array"
      ]
     },
     "distractors[]": {
-     "present": 14842,
-     "pct": 245.9,
+     "present": 14974,
+     "pct": 246.2,
      "required": false,
      "types": [
       "string"
@@ -3667,14 +3801,14 @@
     },
     "grammar": {
      "present": 728,
-     "pct": 12.1,
+     "pct": 12.0,
      "required": false,
      "types": [
       "string"
      ]
     },
     "id": {
-     "present": 6037,
+     "present": 6081,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3682,7 +3816,7 @@
      ]
     },
     "layer": {
-     "present": 6037,
+     "present": 6081,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3694,7 +3828,7 @@
      ]
     },
     "level": {
-     "present": 6037,
+     "present": 6081,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3707,7 +3841,7 @@
      ]
     },
     "needs_review": {
-     "present": 6037,
+     "present": 6081,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3716,7 +3850,7 @@
     },
     "pieces": {
      "present": 871,
-     "pct": 14.4,
+     "pct": 14.3,
      "required": false,
      "types": [
       "array"
@@ -3724,7 +3858,7 @@
     },
     "pieces[]": {
      "present": 6072,
-     "pct": 100.6,
+     "pct": 99.9,
      "required": false,
      "types": [
       "string"
@@ -3732,15 +3866,15 @@
     },
     "question": {
      "present": 525,
-     "pct": 8.7,
+     "pct": 8.6,
      "required": false,
      "types": [
       "string"
      ]
     },
     "reading": {
-     "present": 473,
-     "pct": 7.8,
+     "present": 517,
+     "pct": 8.5,
      "required": false,
      "types": [
       "string"
@@ -3748,7 +3882,7 @@
     },
     "script": {
      "present": 239,
-     "pct": 4.0,
+     "pct": 3.9,
      "required": false,
      "types": [
       "array"
@@ -3756,7 +3890,7 @@
     },
     "script[].speaker": {
      "present": 855,
-     "pct": 14.2,
+     "pct": 14.1,
      "required": false,
      "types": [
       "string"
@@ -3771,7 +3905,7 @@
     },
     "script[].text": {
      "present": 855,
-     "pct": 14.2,
+     "pct": 14.1,
      "required": false,
      "types": [
       "string"
@@ -3779,14 +3913,14 @@
     },
     "sentence": {
      "present": 3022,
-     "pct": 50.1,
+     "pct": 49.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "source": {
-     "present": 6037,
+     "present": 6081,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3804,8 +3938,8 @@
      ]
     },
     "stem": {
-     "present": 4459,
-     "pct": 73.9,
+     "present": 4503,
+     "pct": 74.1,
      "required": false,
      "types": [
       "string"
@@ -3821,7 +3955,7 @@
     },
     "vocab": {
      "present": 3726,
-     "pct": 61.7,
+     "pct": 61.3,
      "required": false,
      "types": [
       "string"
@@ -3829,7 +3963,7 @@
     },
     "vocab_id": {
      "present": 3726,
-     "pct": 61.7,
+     "pct": 61.3,
      "required": false,
      "types": [
       "integer"
@@ -4050,7 +4184,7 @@
      ]
     },
     "tg": {
-     "records": 187,
+     "records": 231,
      "always": [
       "ai_generated",
       "correct",
@@ -4818,24 +4952,24 @@
      ]
     },
     "lessons[].needs[].note": {
-     "present": 747,
-     "pct": 1436.5,
+     "present": 758,
+     "pct": 1457.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].needs[].ref": {
-     "present": 747,
-     "pct": 1436.5,
+     "present": 758,
+     "pct": 1457.7,
      "required": false,
      "types": [
       "string"
      ]
     },
     "lessons[].needs[].type": {
-     "present": 747,
-     "pct": 1436.5,
+     "present": 758,
+     "pct": 1457.7,
      "required": false,
      "types": [
       "string"
@@ -5621,24 +5755,24 @@
      ]
     },
     "needs[].note": {
-     "present": 747,
-     "pct": 232.0,
+     "present": 758,
+     "pct": 235.4,
      "required": false,
      "types": [
       "string"
      ]
     },
     "needs[].ref": {
-     "present": 747,
-     "pct": 232.0,
+     "present": 758,
+     "pct": 235.4,
      "required": false,
      "types": [
       "string"
      ]
     },
     "needs[].type": {
-     "present": 747,
-     "pct": 232.0,
+     "present": 758,
+     "pct": 235.4,
      "required": false,
      "types": [
       "string"

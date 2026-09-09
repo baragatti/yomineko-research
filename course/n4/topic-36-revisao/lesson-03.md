@@ -56,7 +56,7 @@ Para o texto fluir, os conectores do N4 ligam ideia com ideia.それで mostra c
 #### Hora de praticar
 
 #### Leitura
-> 📖 学校まで１０分で歩いて行ける。夕食までどれくらいありますか。毎日、６時までには帰りますよ。テレビをつけっぱなしにするな！ — Dá para ir a pé até a escola em 10 minutos. Quanto tempo falta até o jantar? Todo dia eu volto para casa antes das 6 horas, viu? Não deixe a TV ligada!
+> 📖 来週の試験は問題が多いらしいです。去年の学生もみんなそう言っていました。先生には早く始めなさいと言われました。母にも毎日勉強させられています。それでも、今度はうまく行くはずです。明日、先生にお聞きします。 — Dizem que a prova da semana que vem tem muita questão. Os alunos do ano passado falavam a mesma coisa. O professor me disse para começar logo. E minha mãe me faz estudar todo dia. Mesmo assim, dessa vez tem tudo para dar certo. Amanhã eu pergunto ao professor.
 - Escolho entre そう, よう, らしい, かもしれない, でしょう e はず pela fonte da informação e pelo grau de certeza.
 - Monto a voz passiva 〜られる com o agente em に e reconheço a passiva de incômodo.
 - Distingo a causativa 〜せる・させる ('eu mando') do causativo-passivo させられる ('me obrigam').

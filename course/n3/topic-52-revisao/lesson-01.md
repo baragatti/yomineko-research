@@ -35,7 +35,7 @@ Para arredondar o N3, guarde mais algumas palavras úteis do dia a dia.
 #### Hora de praticar
 
 #### Leitura
-> 📖 この世のことは、何もかも知るというわけにはいかない。たとえばあなたの家庭のいざこざを考えてごらんなさい。きのうになってはじめて私たちはそれについて知った。父は、よく私に、物をきれいにしておくようにと言う。この事ばかりに時間をかけてるわけにはいかないんだ。 — Não dá para a gente saber tudo o que existe neste mundo. Pense, por exemplo, nas desavenças da sua própria família. Só ontem foi que a gente ficou sabendo disso. Meu pai vive me dizendo para deixar as coisas arrumadas. Eu não posso ficar gastando todo o meu tempo só com isso.
+> 📖 来週から試験が始まる。全部の科目を一度に勉強するわけにはいかない。まず苦手な数学から始めることにした。昼まで遊んでいるわけにはいかないので、朝早く起きるようにしている。たとえ点が悪くても、ここまで続けたことはむだにならないと思う。 — Semana que vem começam as provas. Não dá para estudar todas as matérias de uma vez. Decidi começar por matemática, que é onde tenho mais dificuldade. Como não posso ficar de bobeira até o meio-dia, estou tentando acordar cedo. Mesmo que a nota saia ruim, acho que o que fiz até aqui não vai ser em vão.
 - Escolho o conector certo para somar, contrastar ou concluir.
 - Sei situar uma ação numa janela de tempo (うちに, 最中に).
 - Diferencio causa boa (おかげで) de causa ruim (せいで).

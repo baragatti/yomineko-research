@@ -64,7 +64,7 @@ Juntando tudo: 新しい傘は千円しかしなかった = "o guarda-chuva novo
 #### Hora de praticar
 
 #### Leitura
-> 📖 一人で行くしかない。2時間しかないんだ。あと1日しかない。やるしかない。 — Só resta ir sozinho. É que eu só tenho duas horas. Só resta um dia. Não temos escolha a não ser fazer.
+> 📖 あたらしいくつがほしい。でも、さいふの中に千円しかない。あの店の安い日は、あと二日しかない。あしたは学校がやすみだから、あさ店へ行く。でも、くつは三千円だから、母にたのむしかない。 — Quero um sapato novo. Mas só tenho mil ienes na carteira. Os dias de desconto daquela loja são só mais dois. Amanhã não tem aula, então vou à loja de manhã. Mas o sapato custa três mil ienes, então só me resta pedir para a minha mãe.
 - Sei dizer "só / apenas" com しか e o verbo no negativo.
 - Aplico しか〜ない a números e quantidades (千円しかない).
 - Lembro que しか pede o negativo, mas o sentido é positivo-limitado.

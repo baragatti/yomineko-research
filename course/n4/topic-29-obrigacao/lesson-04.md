@@ -71,7 +71,7 @@ Por exemplo: 遊びに行く前に宿題をしないと ("antes de sair pra brin
 > 🗣 時間までに着けそうかな？ — Será que dá pra chegar a tempo (até a hora marcada)?
 
 #### Leitura
-> 📖 あした早く起きないと。おれの言うとおりではないか。水をいっぱいほしいんだけど。７時までに着きたいんだけど。 — Amanhã eu tenho que acordar cedo. Não é exatamente como eu disse? É que eu queria um copo de água... É que eu queria chegar até as 7 horas...
+> 📖 明日は朝早く起きないと。九時までに駅に着かないとだめだ。だから、今日は十二時までにねないと。かばんの中にきっぷを入れたか、もう一度見ないと。みんながまっているから、今度は早く家を出ないと。 — Amanhã tenho que acordar cedo. Preciso chegar à estação até as nove. Por isso hoje tenho que dormir antes da meia-noite. E tenho que conferir mais uma vez se guardei a passagem na bolsa. Todo mundo vai estar esperando, então dessa vez tenho que sair de casa cedo.
 - Sei usar 〜ないと como "tenho que", cortando o 〜いけない do fim.
 - Entendo que 〜ないと é a versão curta de 〜ないといけない / 〜ないとだめ.
 - Marco um prazo-limite com までに e não confundo com o まで contínuo.

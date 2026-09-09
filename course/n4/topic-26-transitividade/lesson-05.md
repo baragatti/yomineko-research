@@ -50,7 +50,7 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 #### Hora de praticar
 
 #### Leitura
-> 📖 気にかけていただいてどうも。ごめんなさい。私のせいです。海まではわずか半マイルだ。ポーチにスカンクがいます。 — Obrigado por se preocupar comigo. Desculpe. A culpa é minha. Até o mar é só meia milha. Tem um gambá na varanda.
+> 📖 明日の会は三時からです。用意はすっかりできています。みんなも来るはずです。飲み物は近くの店にあるはずです。会は四時前に終わるはずですから、そのあとでごはんを食べに行きましょう。 — A reunião de amanhã começa às três. Os preparativos já estão completamente prontos. Todo mundo deve vir também. Deve ter bebida na loja aqui perto. A reunião deve acabar antes das quatro, então depois vamos comer alguma coisa.
 - Falo de planos e agenda com 予定, e de preparativos com 用意.
 - Marco um limite de tempo ou quantidade com 以内 ("dentro de / no máximo").
 - Digo "deve ser / é de se esperar" com はず, apoiado em lógica.

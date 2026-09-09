@@ -97,18 +97,75 @@ class Dissector:
         self.con = sqlite3.connect(db)
         # lookup caches
         self._vocab_by_form: dict[str, int] = {}
+        # W15: every record a form names, not just the first-wins winner. `_vocab_by_form` keeps its
+        # first-wins semantics (the sentence bank's linkage is built on it and must not move); the
+        # owners map is what lets the known-set check choose between the records a surface genuinely
+        # names — see `vocab_candidates`.
+        self._vocab_owners: dict[str, list[int]] = {}
+
+        def _own(form: str, vid: int) -> None:
+            lst = self._vocab_owners.setdefault(form, [])
+            if vid not in lst:
+                lst.append(vid)
+
         for form, vid in self.con.execute(
                 "SELECT form, vocab_id FROM vocab_form"):
             self._vocab_by_form.setdefault(form, vid)
+            _own(form, vid)
         for hw, vid in self.con.execute("SELECT headword, id FROM vocab"):
             self._vocab_by_form.setdefault(hw, vid)
+            _own(hw, vid)
         for kana, vid in self.con.execute("SELECT kana, id FROM vocab"):
             self._vocab_by_form.setdefault(kana, vid)
+            _own(kana, vid)
         self._kanji_by_char: dict[str, int] = {
             ch: kid for ch, kid in self.con.execute("SELECT character, id FROM kanji")}
 
     def _vocab_id(self, lemma: str, surface: str) -> int | None:
         return self._vocab_by_form.get(lemma) or self._vocab_by_form.get(surface)
+
+    def vocab_candidates(self, lemma: str, surface: str) -> list[int]:
+        """Every registry record this token could name, in decreasing confidence order.
+
+        W15. `dictionary_form()` is a LEMMA, and a lemma can name a DIFFERENT registry record at a
+        DIFFERENT level than the surface the learner is actually looking at:
+
+            surface ください  ->  lemma くださる  ->  vocab:1184280 下さる (N4)
+            surface ください  ->  surface itself  ->  vocab:1184270 下さい (N5)   <- the N5 record
+
+        `_vocab_id` takes the lemma first and always has, which is right for "which lexeme is this"
+        (the sentence bank's linkage) and WRONG for "can this learner read this word": every N5
+        passage using てください was reported as introducing an N4 word the lesson never unlocks, so
+        てください was unusable in N5 reading (APP_PLAN W15: "the ください -> 下さる lemma trap").
+
+        The fix is not to change `_vocab_id` — the bank's lexeme linkage is correct as it stands —
+        but to expose the ALTERNATIVES so the known-set check can prefer a candidate the learner has
+        actually been taught (`known_set.PassageGate.resolve_token`). Order is lemma, surface,
+        kana-normalised surface — ONE record per tier, the same first-wins winner `_vocab_id`
+        resolves, so the only thing this method changes is WHICH TIER answers, never which record a
+        tier names.
+
+        Deliberately NOT every owner of the form. `間` is owned by three records (あいだ N4, ま N3,
+        かん N2) and a kana surface like ここ or そう by several more; taking "any owner the lesson
+        happens to teach" would let a same-spelling record the token does not mean be credited in
+        `uses`, and `uses` is what W16 draws exam distractors from. Missing a credit is safe (the §3
+        kana carve-out already covers those tokens); crediting the wrong record is not. Every tier is
+        a real lookup in `vocab_form`/`headword`/`kana`, so no tier can invent a record, no tier
+        reaches a record the token does not name — a same-reading neighbour like 箸 for 橋 is never a
+        candidate — and a token no form lookup answers stays unlinked.
+        """
+        out: list[int] = []
+        for form in (lemma, surface, hira(surface)):
+            vid = self._vocab_by_form.get(form) if form else None
+            if vid is not None and vid not in out:
+                out.append(vid)
+        return out
+
+    def form_owners(self, form: str) -> list[int]:
+        """Every vocab record that owns this exact surface form. Exact lookup only — used by the
+        W15 run rule, which asks whether a CONTIGUOUS RUN of tokens spells a word the learner has
+        already been taught (お|茶 -> お茶, 要する|に -> 要するに)."""
+        return list(self._vocab_owners.get(form, ()))
 
     def _is_particle(self, m) -> bool:
         return m.part_of_speech()[0] == "助詞"

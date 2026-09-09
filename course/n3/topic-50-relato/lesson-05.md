@@ -70,8 +70,8 @@ Os dois se parecem à primeira vista, mas o lado direito é bem diferente. Assoc
 #### Hora de praticar
 
 #### Leitura
-> 📖 お父さんは今朝からずっと車を洗っている。子どもたちが熱心に先生の説明を聞きました。彼らは話をしている最中に電話を切られた。彼は私に週末には一緒にいてくれと頼んだ。せきがひどかったので、苦い薬を飲んだ。お返事頂けるのを楽しみにしております。 — Meu pai está lavando o carro sem parar desde hoje de manhã. As crianças escutaram com atenção a explicação do professor. A ligação deles caiu bem no meio da conversa. Ele me pediu pra fazer companhia a ele nos fins de semana. A tosse estava terrível, então tomei um remédio amargo. Aguardo ansiosamente poder receber sua resposta.
-> 📖 私達は途中でガソリンが切れてしまった。夢は逃げない。逃げるのはいつも自分だ。寒いからオーバーを着てもかまいません。その習慣は世代から世代へと伝えられた。あなたは習慣にしばられるタイプですか？先生は学生に新聞のコピーを渡しました。 — Ficamos sem gasolina no meio do caminho. O sonho não foge. Quem sempre foge é a própria pessoa. Como está frio, você pode manter o casaco vestido. Esse costume foi transmitido de geração em geração. Você é do tipo que se deixa prender pelos hábitos? O professor entregou ao aluno uma cópia do jornal.
+> 📖 「だんたい」というのは、同じ考えを持った人の集まりのことです。ちかごろよく聞く「チーム」というのは、単なるグループではありません。一人一人にたんとうがあって、そこに大きな違いがあります。単に人が集まっただけでは、チームになりません。このちいきの男子チームが強いのは、それを分かっているからに違いありません。 — O que se chama de 'organização' é um conjunto de pessoas que têm a mesma ideia. Já 'time', palavra que se ouve muito ultimamente, não é um simples grupo. Cada pessoa tem a sua função, e é aí que está a grande diferença. Só juntar gente não faz um time. Se o time masculino desta região é forte, é sem dúvida porque eles entenderam isso.
+> 📖 ちかごろ、となりのクラスにダンスのチームができたらしい。男子だけのチームではないらしい。話を聞いただけの、単なるうわさだろう。でも、毎朝、地下の教室から音が聞こえるから、間違いない。今度、見に行ってみるつもりだ。 — Parece que ultimamente formaram um time de dança na turma do lado. Pelo que dizem, não é um time só de meninos. Deve ser um simples boato, coisa que eu só ouvi falar. Mas toda manhã dá para ouvir som vindo da sala do subsolo, então não tem erro. Qualquer dia desses eu vou lá dar uma olhada.
 - Reconheço o vocabulário de pessoas e grupos (男子, 団体, チーム, 担当, 誕生, ダンス).
 - Distingo 単なる (adjetivo, antes de substantivo) de 単に (advérbio, antes de verbo).
 - Conheço a família do kanji 地 (地, 地下, 地域, 地位) e seus diferentes sentidos.

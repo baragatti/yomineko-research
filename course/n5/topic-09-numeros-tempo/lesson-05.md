@@ -66,7 +66,7 @@ Na fala rápida, じゃあ encurta para じゃ. É super comum na despedida: じ
 #### Hora de praticar
 
 #### Leitura
-> 📖 ありがとう！さようなら！ — Obrigado! Adeus!
+> 📖 おかあさん、えいがは９日です。じかんは、さんじすぎです。５日は、えいごのクラスです。クラスは、さんじかんくらいです。じゃあ、えいがは９日です。 — Mãe, o filme é dia 9. O horário é um pouco depois das três. Dia 5 tem a aula de inglês. A aula dura umas três horas. Então o filme fica dia 9.
 - Sei usar 時間 (じかん), 週間 (しゅうかん), ヶ月 (かげつ) e 年 (ねん) para falar de durações.
 - Consigo marcar "e passados" nas horas com 過ぎ (すぎ).
 - Reconheço ９日 (ここのか) como o "dia 9" e sei que tem leitura especial.

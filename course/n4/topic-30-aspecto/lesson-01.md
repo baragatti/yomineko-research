@@ -61,7 +61,7 @@ Estas palavras de movimento e comunicação combinam bem com as formas de hoje:
 #### Hora de praticar
 
 #### Leitura
-> 📖 人は生まれるとすぐ死に始める。私はすぐに帰ってくる。問題はいつ始めるかだ。何時に帰ってくるの。 — Assim que a pessoa nasce, ela já começa a morrer. Eu já volto. A questão é quando começar. A que horas você volta?
+> 📖 三時ごろ、きゅうに雨がふり出しました。私はへやで本を読み始めました。おとうとが「さむい」と言い出して、まどをしめました。そのうちに、へやの中がくらくなってきました。母が買いものから帰ってくると、みんなでごはんを食べ始めました。 — Lá pelas três, começou a chover do nada. Comecei a ler um livro no quarto. Meu irmão mais novo desatou a dizer que estava com frio e fechou a janela. Daí a pouco, o quarto foi ficando escuro. Quando minha mãe voltou das compras, a gente começou a comer todo mundo junto.
 - Sei colar 始める ao radical de um verbo para dizer "começar a fazer".
 - Uso 出す para marcar um início súbito ("desatar a / irromper").
 - Entendo 〜てくる como movimento ou mudança que vem em direção a mim, inclusive "ir e voltar".

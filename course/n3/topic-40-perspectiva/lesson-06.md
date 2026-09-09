@@ -55,8 +55,8 @@ Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 瓶
 #### Hora de praticar
 
 #### Leitura
-> 📖 ちょっとその店によって行きませんか。正しいと思うことなら何でもしなさい。あなたの発音はほとんど正しいです。今度は妹さんを連れていらっしゃい。ステーキとサラダの食事をしました。上りのエスカレーターはどこですか？ — Que tal a gente dar uma passadinha naquela loja? Faça tudo o que você achar certo. Sua pronúncia está quase toda correta. Da próxima vez, traga a sua irmã (mais nova). Fiz uma refeição de bife com salada. Onde fica a escada rolante de subida?
-> 📖 建物でエスカレーターがありません。この青いセーターはとてもきれいだ。英語にはラテン語から来た語が多い。私は今朝バターつきのパンを食べた。朝、シャワーを使ってもいいですか。あぁ私の白いズボンが！新しいのに。 — No prédio não tem escada rolante. Este suéter azul é muito bonito. No inglês há muitas palavras que vieram do latim. Eu comi pão com manteiga hoje de manhã. De manhã, posso tomar banho de chuveiro? Ah, minha calça branca! E logo agora que era nova.
+> 📖 あの店のひょうばんはとてもいい。でも、私のひょうかはびみょうだ。料理はきれいだが、味の表現が弱い。店員のひょうじょうも、少しつかれているように見えた。ひようの半分は、あの高いびんの水だろう。ひはんばかりになったが、これは友だちだけのひみつにしておく。 — Aquele restaurante tem uma reputação ótima. Mas a minha avaliação ficou morna. Os pratos são bonitos, só que falta expressão no sabor. A expressão dos garçons também parecia meio cansada. Metade da conta deve ser aquela garrafa de água cara. Acabei só criticando, mas isso fica como segredo entre amigos.
+> 📖 友だちの店のひょうばんが、町に広がっている。新聞のひひょうもよかったが、ひょうかはびみょうだった。ひようは少し高いが、品はとてもいい。店の人のひょうじょうは、いつもやさしい。ひはんもあるが、私のひょうかは高い。一人一人の話より、自分の目で見るほうがいい。 — A fama da loja do meu amigo está se espalhando pela cidade. A resenha do jornal foi boa, mas a avaliação ficou meio morna. O custo é um pouco alto, só que os produtos são ótimos. A expressão de quem atende é sempre gentil. Tem crítica, sim, mas para mim a avaliação é alta. Em vez de escutar o que cada um fala, é melhor ver com os próprios olhos.
 - Sei reconhecer e usar palavras de avaliação e crítica como 批判, 評価 e 評判.
 - Consigo descrever expressões e impressões com 表現, 表情 e 微妙.
 - Uso substantivos cotidianos como 費用, 秘密 e 瓶 em frases naturais.

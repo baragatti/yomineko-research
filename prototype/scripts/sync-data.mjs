@@ -219,6 +219,10 @@ const slimReading = (r) => ({
   slug: r.slug, jp: r.jp, title: r.title, translation: r.translation,
   tokens: (r.tokens || []).map((t) => ({ s: t.s, r: t.r, ro: t.ro, pos: t.pos })),
   length_band: r.length_band, source_slugs: r.source_slugs || [],
+  // W16: the box's own comprehension question, carried only when the exporter resolved one — it
+  // does that only when the authored question was written about the text this box currently prints
+  // (reading.comprehension.about_current_text). Same server-only contract as `translation`.
+  ...(r.comprehension && r.comprehension.question ? { comprehension: r.comprehension } : {}),
 });
 
 /* ------------------------------------------------------------------ the read model */

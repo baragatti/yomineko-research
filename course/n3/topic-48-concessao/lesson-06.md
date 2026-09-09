@@ -59,8 +59,8 @@ Repare como, no exemplo acima, 残り (o substantivo "resto") e 残す (o verbo 
 #### Hora de praticar
 
 #### Leitura
-> 📖 テーブルの上の辞書はだれのものですか。きれいで静かなアパートに住んでいます。私は今晩あなたのパーティーに行きます。ストーブが消えたので、すぐつけました。先生は生徒に気づいてにっこりと答えた。私は花が好きで、たとえばばらが好きだ。 — De quem é o dicionário que está sobre a mesa? Eu moro num apartamento bonito e silencioso. Eu vou à sua festa hoje à noite. O aquecedor tinha apagado, então acendi de novo na hora. A professora percebeu o aluno e respondeu com um sorriso. Eu gosto de flores; por exemplo, gosto de rosas.
-> 📖 この国では、ラクダはなくてはならない。天気がよければハイキングに行くのだが。フランス語を話すのが上手になってきた。そして、そこでその男は入ってきました。母のためにときどきさらあらいをします。一人一人が今一度教育のあり方を考えます — Neste país, os camelos são indispensáveis. Se o tempo estivesse bom, a gente iria fazer uma trilha... Fui ficando bom em falar francês. E então, foi ali que aquele homem entrou. Às vezes eu lavo a louça para a minha mãe. Cada um repensa como a educação deveria ser.
+> 📖 先週、山の近くの村へ行った。そこでは、たとえ雨がふっても、みんな朝早く外に出るそうだ。一年中、田や野菜の世話で休みはほとんどないと言われた。たとえ大変でも、この仕事をやめたくないと、おじいさんはわらった。帰りの車に、野菜をたくさん乗せてくれた。残りの野菜は、近くの店に持って行くそうだ。 — Semana passada fui até um vilarejo perto da montanha. Dizem que lá, mesmo que chova, todo mundo sai cedo de manhã. Me contaram que, entre o arroz e a horta, quase não sobra folga o ano inteiro. O senhor disse, rindo, que mesmo sendo puxado não quer largar esse trabalho. Na hora de voltar, ele encheu o carro de verdura para mim. Pelo que ele contou, o resto da verdura vai para a lojinha ali perto.
+> 📖 祖父は一年間ずっと野菜を育てています。去年は天気がわるくて、米があまり取れませんでした。そのかわりに、野菜はよく育ちました。ねずみに食べられた分を除いても、おととしより残りが多かったです。今年は手伝いに行けないかわりに、毎週電話をかけようと思います。 — Meu avô passa o ano inteiro cuidando das hortaliças. No ano passado o tempo foi ruim e a colheita de arroz rendeu pouco. Em compensação, as verduras cresceram bem. Mesmo tirando a parte que os ratos comeram, sobrou mais do que no ano retrasado. Este ano não vou conseguir ir ajudar, então, em troca, pretendo ligar toda semana.
 - Reconheço e uso o vocabulário deste lote sobre natureza, tempo e campo.
 - Distingo palavras parecidas como 年間, 年中 e 年代, e como 農家, 農業 e 農民.
 - Sei empregar os verbos 残す, 残り, 乗せる e 除く em frases simples.

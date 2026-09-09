@@ -57,7 +57,7 @@ O adjetivo 細かい (pequeno, miúdo) aparece bastante em casa: para falar de �
 #### Hora de praticar
 
 #### Leitura
-> 📖 その先生は大学を出たばかりだ。火にあたりながらすわっていた。私にとってのるかそるかだった。私が持ち上げるには重すぎるよ。 — Esse professor acabou de se formar na faculdade. Ficávamos sentados nos aquecendo perto do fogo. Para mim, era tudo ou nada. É pesado demais para eu levantar.
+> 📖 あさ、まどを開けました。つよいかぜが入って、ドアがしまりました。電気をけしてから、家を出ました。駅で電車がとまって、人が出て来ました。かばんを開けて、中のてがみを出しました。 — De manhã eu abri a janela. Entrou um vento forte e a porta se fechou. Depois de apagar a luz, saí de casa. Na estação o trem parou e as pessoas saíram. Abri a bolsa e tirei a carta de dentro.
 - Reconheço objetos comuns da casa (火, 鏡, ジャム, 石…).
 - Sei dizer a mesma cena pelos dois lados: 火を消す (eu apago) × 火が消える (apaga sozinho).
 - Escolho を para o transitivo e が para o intransitivo sem trocar.

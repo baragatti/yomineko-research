@@ -69,7 +69,7 @@ O kanji 識 significa 'conhecer, discernir, consciência'. Tem a palavra (言) �
 #### Hora de praticar
 
 #### Leitura
-> 📖 もしも私が生まれ変わるなら、鳥になりたい。あなたなら、これをどう考えますか。あなたなら良い先生になるでしょう。もしできるとしたら、どうする？あなたなら、どうしますか？ — Se eu renascesse, queria ser um pássaro. E você, o que acha disto? Você daria um bom professor. Se você pudesse fazer isso, o que faria? E você, o que faria?
+> 📖 もしも今の仕事がなくなるなら、私は国に帰ると思う。いなかで小さい店を持つとしたら、何を売るだろう。パンでも作るとしたら、朝早く起きなければならない。もし十年前にこの話を聞いたなら、考えられなかっただろう。でも今は、そんな生活も悪くないと思う。 — Se, por acaso, eu ficasse sem o emprego que tenho hoje, acho que voltaria para a minha terra. Supondo que eu tivesse uma lojinha no interior, o que será que eu venderia? Se fosse fazer pão, por exemplo, eu teria que acordar cedo de manhã. Se eu tivesse ouvido isso dez anos atrás, nem conseguiria imaginar. Mas hoje eu acho que uma vida assim não é nada mal.
 - Sei levantar uma suposição e puxar a conclusão com 〜としたら ('supondo que..., então').
 - Uso もしも〜なら para hipóteses enfáticas ou improváveis, sem traduzir os dois も.
 - Entendo que o た de もし〜たなら é gramatical (a suposição), não passado real.

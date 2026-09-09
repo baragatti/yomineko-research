@@ -66,7 +66,7 @@ Frases-modelo para guardar: 予習はたいてい夜する ("costumo fazer a pre
 #### Hora de praticar
 
 #### Leitura
-> 📖 十時ごろですか。何時ごろ来たの？ちくしょう！わるくないなあ！とにかく行きたくなかったの。 — É por volta das dez horas? Por volta de que horas você chegou? Droga! Não é nada mau! De qualquer forma, eu não queria ir lá.
+> 📖 今日は八時ごろに学校へ行った。じゅぎょうは九時ごろにはじまった。子どものころは、学校へ行くのがきらいだった。三時ごろ雨がふったので、うちへかえるのがおそくなった。さっきまで友だちとべんきょうしていた。 — Hoje fui para a escola lá pelas oito. A aula começou por volta das nove. Quando eu era criança, odiava ir para a escola. Lá pelas três choveu, então demorei mais para voltar para casa. Até agorinha eu estava estudando com um amigo.
 - Sei usar ごろ depois de uma hora/ponto no tempo para dizer "por volta de".
 - Sei que 頃 se lê ごろ com ponto específico e ころ com período amplo (子供の頃).
 - Diferencio ごろ (momento) de ぐらい (quantidade/duração).

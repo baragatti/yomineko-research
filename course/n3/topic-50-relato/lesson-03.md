@@ -89,7 +89,7 @@ Repare que 晴 e 暗 compartilham o radical do sol (日) à esquerda, mas levam 
 #### Hora de praticar
 
 #### Leitura
-> 📖 ああ明日発つんだってね。仕事、探してるんだって？まだ決めてないんだって。家を買ったんだってね。彼女は幸せらしい。 — Ah, então você parte amanhã, né. Soube que você está procurando emprego, é verdade? Disseram que ela ainda não decidiu. Soube que você comprou uma casa, né. Parece que ela está feliz.
+> 📖 となりの人、来月引っこすんだって。新しい仕事が見つかったらしいよ。家族もいっしょに行くんだって。新しい家は、駅から近いらしい。さびしくなるけど、みんなは元気らしいから安心した。 — Ouvi dizer que o vizinho vai se mudar no mês que vem. Parece que ele arrumou um emprego novo. Contaram que a família vai junto também. A casa nova, pelo jeito, fica pertinho da estação. Vai dar saudade, mas parece que estão todos bem, então fiquei mais tranquila.
 - Sei repassar informação ouvida com ～らしい, lembrando que substantivo e adjetivo-な ligam DIRETO, sem だ.
 - Consigo repassar um boato casual com ～んだって e reconheço んだって? como 'é verdade que...?'.
 - Distingo らしい (boato com avaliação) de ようだ/みたいだ (minha impressão) e de そうだ de boato (mero repasse).

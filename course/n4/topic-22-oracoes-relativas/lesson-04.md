@@ -60,7 +60,7 @@ Esses quatro últimos são substantivos de descrição que você usará nas ora�
 #### Hora de praticar
 
 #### Leitura
-> 📖 後で話そうね。後でやって。また後で。あなたはどこにいたのですか。 — A gente conversa depois, tá? Faz isso depois. Até mais tarde. Onde você estava?
+> 📖 きのう、がっこうからかえった後で、へやのそうじをしました。そうじがおわった後で、父とぎゅうにゅうを飲みました。父は新聞を読んでいましたから、いぬと外に出ました。少しあるいた後で、うちに入りました。母がかいものからかえった後で、みんなでごはんを食べました。 — Ontem, depois que voltei da escola, limpei o quarto. Depois que a limpeza acabou, tomei leite com o meu pai. Meu pai estava lendo o jornal, então saí com o cachorro. Depois de andar um pouco, entrei em casa. Depois que a minha mãe voltou das compras, todo mundo jantou junto.
 - Sei usar 〜ているあいだに para uma ação pontual dentro de um período em andamento.
 - Consigo encadear ações ou dizer "mais tarde" com 後で.
 - Diferencio 間に (no meio do intervalo) de 後で (na sequência).

@@ -62,7 +62,7 @@ O kanji 約 significa "promessa" e também "aproximadamente". O radical da esque
 #### Hora de praticar
 
 #### Leitura
-> 📖 私たちはサンドイッチやケーキなどを食べた。自分の家を建てることなど私にはできない。計画を立てることと実行することは別のことだ。当分の間、私の姉はスーパーで店員をしている。私は試験の前にもう一度テキストに目を通した。 — Comemos sanduíches, bolos e coisas do tipo. Construir minha própria casa é algo que está fora do meu alcance. Fazer um plano e executá-lo são coisas diferentes. Por enquanto, minha irmã mais velha trabalha como atendente num supermercado. Antes da prova, dei mais uma olhada no material de estudo.
+> 📖 最近、写真をとるのが好きになった。山や川、花などをよく写している。でも、わたしの写真なんか、まだまだだ。友だちは「色などがきれいだ」と言ってくれた。今度は、鳥や海などもとってみたい。上手な人の写真なんかを見て、もっと考えたい。 — Ultimamente eu peguei gosto por tirar foto. Ando fotografando bastante montanha, rio, flor, essas coisas. Mas foto minha, sinceramente, ainda está longe de ser boa. Um amigo meu me disse que as cores e tal ficaram bonitas. Da próxima vez quero tentar fotografar pássaros, o mar e por aí vai. Quero olhar as fotos de quem é bom nisso e pensar mais no assunto.
 - Listo exemplos com など colado ao último item ('tais como', sem fechar a lista).
 - Sei que なんか e a versão coloquial de など e pode carregar desdem.
 - Reconheço quando お金なんか significa 'nem ligo para dinheiro'.

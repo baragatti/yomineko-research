@@ -88,7 +88,7 @@ Os mnemônicos acima são só uma rampa de entrada. Você vai fixar de verdade r
 #### Hora de praticar
 
 #### Leitura
-> 📖 彼は、どちらかというと、分別のある人だ。彼女は多く見ても２０歳というところだ。私の好みはどちらかというと牛肉ですね。彼女が病気だということは明らかだ。彼が正しいというのは私の意見です。 — Ele é, digamos assim, um homem sensato. No máximo, ela deve ter uns 20 anos. Se for para escolher, eu prefiro carne de boi. É evidente que ela está doente. Que ele tem razão é a minha opinião.
+> 📖 昨日、「草の道」という本を読み終えた。書いた人は昔、山の中の小さな村で育ったそうだ。女の子が窓から外を見る場面が一番よかった。幸せというのは、ああいう静かな時間のことかもしれない。昔の本というと、私はいつもこの本を思い出す。 — Ontem terminei de ler um livro chamado "Caminho de Capim". Dizem que quem escreveu cresceu, tempos atrás, num vilarejo pequeno no meio da montanha. A melhor parte foi a cena em que a menina olha para fora pela janela. O que a gente chama de felicidade talvez seja isso: um tempo quieto desses. Quando se fala em livro antigo, eu sempre lembro deste aqui.
 - Sei apresentar um nome ou título desconhecido com Nome + という + substantivo.
 - Consigo definir ou reformular uma ideia com というのは ('ou seja') e a forma curta とは.
 - Sei puxar a associação típica de um tema com というと ('por falar em').

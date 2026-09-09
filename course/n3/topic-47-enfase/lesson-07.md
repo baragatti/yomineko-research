@@ -56,8 +56,8 @@ Não confunda 全く (まったく, "completamente") com 丸で (まるで, "com
 #### Hora de praticar
 
 #### Leitura
-> 📖 家を出たとたんに大雨が降り出した。買い物ついでにでもお寄りください。人々は彼女が死んだものだと思った。どんなに彼をほめてもほめきれない。ログアウトするんじゃなかったよ。彼女は熱心にピアノをひきだした。 — Assim que saí de casa, começou a chover forte. Passa aqui qualquer dia, aproveitando quando for fazer compras. As pessoas achavam que ela estava morta. Por mais que eu o elogie, nunca é elogio suficiente. Eu não devia ter deslogado. Ela começou a tocar piano com entusiasmo.
-> 📖 ビルは弟を動物園へ連れていった。こういう場合には経験が物を言う。長く続いた試合がやっと終わった。私の祖父も祖母も亡くなっている。女性はふつう男性より長生きする。この通りは、空港に続いています。 — O Bill levou o irmão mais novo ao zoológico. Em casos assim, é a experiência que fala mais alto. A partida, que durou muito tempo, finalmente terminou. Tanto meu avô quanto minha avó já faleceram. As mulheres geralmente vivem mais que os homens. Esta rua leva ao aeroporto.
+> 📖 昨日、町のまつりに行った。空は真っ赤で、まるで火のようだった。子どもたちはおどりのまねをして、手を回していた。人がますます増えて、道は全く歩けなかった。わたしはまめのおかしを買って、満足した。こんな町のまつりは、これからも守っていきたい。 — Ontem fui à festa do bairro. O céu estava vermelho vivo, parecia mesmo fogo. As crianças imitavam a dança e giravam as mãos. Chegava cada vez mais gente, e não dava para andar na rua de jeito nenhum. Comprei um docinho de feijão e fiquei satisfeito. Uma festa de bairro assim é algo que eu quero continuar preservando.
+> 📖 土曜日、村のおまつりに行った。空は真っ赤で、まるで写真のようだった。弟は父のまねが上手で、まるで父が歌っているようだった。全く知らない人と、あまいまめを食べた。こんな夜は、ますます好きになる。来年もこのおまつりに来たい。 — No sábado fui ao festival do vilarejo. O céu estava todo vermelho, parecia até uma foto. Meu irmão mais novo imita bem o meu pai, parecia até que era o meu pai cantando. Comi doce de feijão com uma pessoa que eu não conhecia de nada. Eu gosto cada vez mais de noites assim. Ano que vem quero voltar a esse festival.
 - Reconheço substantivos do cotidiano como 祭り, 真似, 豆 e 丸.
 - Uso advérbios de intensidade total como 全く, 益々, 真っ赤 e 丸で no sentido certo.
 - Diferencio verbos como 守る, 招く, 学ぶ e 回す.

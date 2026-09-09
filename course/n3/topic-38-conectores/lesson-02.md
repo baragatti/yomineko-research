@@ -67,7 +67,7 @@ O kanji 当 significa "acertar, apropriado, corresponder". Aparece nos verbos �
 #### Hora de praticar
 
 #### Leitura
-> 📖 今日は休めと言われたんだけど。ねえ、元気がないみたいだけど。ちょっとよく知らないんだけど。知ってたらよかったんだけど。今日は歌いたくないんだけど。 — É que me disseram para eu folgar hoje... Ei, você parece meio sem energia, hein... É que eu não conheço muito bem isso... Ah, se eu soubesse... É que hoje eu não estou a fim de cantar...
+> 📖 今日は元気がないんだけど、まだ会社にいる。仕事が思ったより多かった。夜はどこにも行く時間がないけど、だいじょうぶだ。来週の土曜日なら、いつでも空いてる。その日にたくさん話そう。 — Hoje eu tô meio sem energia, só que ainda tô na empresa. Teve mais trabalho do que eu imaginava. Hoje à noite não tenho tempo de ir a lugar nenhum, mas tudo bem. Sábado que vem eu tô livre a qualquer hora. Nesse dia a gente conversa bastante.
 - Sei usar けど no meio da frase e だけど no começo para marcar contraste.
 - Reformulo ou resumo o que disse com つまり ('ou seja').
 - Troco de assunto com ところで ('a propósito'), sabendo que pode ser uma virada total.

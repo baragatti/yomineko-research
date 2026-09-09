@@ -73,7 +73,7 @@ O kanji 類 significa "tipo, espécie, categoria", como em 種類 ("tipo, varied
 #### Hora de praticar
 
 #### Leitura
-> 📖 彼は１００ドルばかりかそれ以上持っている。彼は私たちに着物はもちろんお金もくれた。彼は英語はもちろんのことドイツ語も話す。彼女は美人であるばかりか気立てもいい。あなたはもちろん彼も間違っている。 — Ele tem nada menos que cem dólares, e até mais. Ele nos deu não só roupas, mas também dinheiro. Ele fala não só inglês, mas também alemão. Ela não é só bonita, como também tem um bom temperamento. Não só você, mas ele também está errado.
+> 📖 駅の前に新しい店ができました。ここは魚はもちろん、肉もおいしいです。値段が安いばかりか、店の人もとても親切です。昼はもちろん、夜もいつも席がいっぱいです。私は先週、二回も行きました。味がいいばかりか、家から近いのがうれしいです。 — Abriu um restaurante novo na frente da estação. Lá o peixe nem se fala, e a carne também é boa. O preço não é só baixo: os funcionários ainda são muito atenciosos. No almoço nem se fala, mas de noite também está sempre lotado. Semana passada eu já fui lá duas vezes. Não é só o sabor que é bom: ainda fico feliz por ser pertinho de casa.
 - Sei usar A ばかりか B も para dizer 'não só A, como também B' com escalada.
 - Lembro que ばかりか é formal e que だけでなく soa mais natural na fala.
 - Sei usar S1 はもちろん S2 も para reforçar abrangência a partir de um item óbvio.

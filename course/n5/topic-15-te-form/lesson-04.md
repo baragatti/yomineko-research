@@ -57,7 +57,7 @@ O primeiro aparece em 書いた("que escreveu") e em 葉書:
 > 🗣 疲れているんだ。 — É que eu estou cansado.
 
 #### Leitura
-> 📖 ここにボールってあるの？もしもし、来ていますか。 — Tem bola aqui? Alô, você está aí?
+> 📖 今、話している人は先生です。あそこにいる女の子は、その先生の子どもです。そこにすわっている人は、学生です。外へ出た人は、もう来ません。ここに名前を書いた人は、ぜんぶで五人です。先生が書いた名前は、いちばん上です。 — A pessoa que está falando agora é o professor. A menina que está ali é filha desse professor. A pessoa que está sentada aí é estudante. A pessoa que saiu não volta mais. As pessoas que escreveram o nome aqui são cinco no total. O nome que o professor escreveu é o primeiro da lista.
 - Sei pôr o verbo direto antes do substantivo para descrevê-lo (sem "que").
 - Distingo a forma た (concluído) de 〜ている (estado contínuo) na oração.
 - Sei trocar が por の como sujeito dentro da oração sem mudar o sentido.

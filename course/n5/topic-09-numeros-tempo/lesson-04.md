@@ -68,7 +68,7 @@ Não traduza "vezes" e "anos" como palavras soltas. Em japonês eles são sufixo
 #### Hora de praticar
 
 #### Leitura
-> 📖 あなたのせいです。おやすみなさい。 — A culpa é sua. Boa noite (ao se despedir para dormir).
+> 📖 ここはがっこうのきょうしつです。きょうしつは二かいです。かいだんはげんかんのがわです。あめは十こ十えんです。くだものは二こ十えんです。コーヒーもぎゅうにゅうも十えんです。 — Aqui é a sala de aula da escola. A sala fica no segundo andar. A escada fica do lado da entrada. A bala sai dez unidades por dez ienes. A fruta sai duas unidades por dez ienes. O café e o leite também custam dez ienes.
 - Conto coisas pequenas com 個 (こ), lembrando de いっこ e ろっこ.
 - Conto livros e revistas com 冊 (さつ).
 - Digo quantas vezes algo aconteceu com 回 (かい).

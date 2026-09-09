@@ -71,7 +71,7 @@ Repare em quantos termos começam com 現 ('atual, presente') ou 検 ('examinar'
 Faça os exercícios abaixo e confira cada explicação.
 
 #### Leitura
-> 📖 旅行ほど楽しいものはない。待つほどもなく月が出た。目は口ほどに物を言う。早ければ早いほどいい。このネクタイにしましょう、一番よさそうだから。 — Não há nada tão divertido quanto viajar. Não demorou muito e a lua apareceu. Os olhos falam tanto quanto a boca. Quanto mais cedo, melhor. Vou ficar com esta gravata, já que parece ser a melhor.
+> 📖 今日は朝から体の調子が悪くて、病院へ行った。医者の話を聞けば聞くほど、心配になった。でも、薬を飲んで少し休んだら、だいぶ元気になった。やはりけんこうほど大切なものはない。これからは無理をしないで、夜は早くねるようにしよう。早ければ早いほどいい。 — Hoje eu não estava me sentindo bem desde cedo, então fui ao hospital. Quanto mais eu ouvia o que o médico dizia, mais preocupado eu ficava. Mas tomei o remédio, descansei um pouco e melhorei bastante. No fim das contas, não há nada tão importante quanto a saúde. De agora em diante eu não vou me forçar, e à noite vou tentar dormir cedo. Quanto mais cedo, melhor.
 - Consigo montar 'quanto mais..., mais...' duplicando o termo com ば... ほど.
 - Sei comparar graus com ほど + frase negativa ('não tão... quanto').
 - Reconheço ～ほど...はない como 'nada é tão... quanto'.

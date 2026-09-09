@@ -56,8 +56,8 @@ Um belo par de verbos com seus substantivos derivados.
 #### Hora de praticar
 
 #### Leitura
-> 📖 私はきっとテニスの試合に勝つと思う。レポートは会議までに間に合いますか。私はあらためて考えて気持ちを変えた。この電報をすぐに打っていただきたい。一度決まれば一気に物事は進むものだ。ここの大学生は大部分が真面目である。 — Tenho certeza de que vou ganhar a partida de tênis. O relatório vai ficar pronto a tempo para a reunião? Depois de pensar de novo, eu mudei de ideia. Eu gostaria que você enviasse este telegrama imediatamente. Uma vez decidido, as coisas costumam andar de uma só vez. Os universitários daqui são, em sua maioria, aplicados.
-> 📖 今夜あなたに会えないのは、残念です。金は安全な場所にしまっておきなさい。私は近所の人と楽しい会話をしました。都合のいいときいつでもいらっしゃい。部長はオンとオフがはっきりしている。会計はお帰りのレジでおねがいします。 — É uma pena que eu não possa te ver hoje à noite. Guarde o dinheiro num lugar seguro. Tive uma conversa agradável com meu vizinho. Venha quando for conveniente para você, a qualquer hora. O chefe de departamento separa bem o trabalho do lazer (sabe quando ligar e quando desligar). O pagamento, por favor, faça no caixa da saída.
+> 📖 なかまの一人は、どんなに寒くても毎朝川の近くを走っている。どんなに仕事がいそがしくても、その時間だけは休まないそうだ。「すごいどりょくですね」と言っても、「とんでもない」と答えるだけだ。今日は川まで歩いて行き、水の流れをしばらくながめた。私も明日から少し走ろうと決めた。 — Um dos meus companheiros corre perto do rio toda manhã, por mais frio que esteja. Por mais que o trabalho aperte, dizem que ele não abre mão desse horário. Quando falam "que esforço, hein", ele só responde "imagina". Hoje eu fui a pé até o rio e fiquei um tempo olhando a água correr. Decidi que amanhã eu também vou correr um pouco.
+> 📖 日曜日、なかまと川のそうじをした。雨の後で、水はどろの色で流れていた。どんなにどりょくしても、ごみはまた出てくる。でも、もうやめようなんてとんでもない。ごみを川に流す人がいるからだ。帰りに見た山のながめは、本当によかった。 — No domingo limpei o rio com os companheiros. Depois da chuva, a água descia da cor da lama. Por mais que a gente se esforce, o lixo volta a aparecer. Mas desistir agora? Nem pensar. É que ainda tem gente jogando lixo no rio. Na volta, a vista da montanha estava linda.
 - Reconheço e uso vocabulário de esforço, relações e natureza.
 - Distingo 流す de 流れる e os substantivos 流れ / 眺め.
 - Sei empregar とんでもない e どんなに em frases de hipótese e desejo.

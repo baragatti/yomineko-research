@@ -66,7 +66,7 @@ Decisões coletivas vivem no mundo do trabalho e das instituições. Guarde este
 #### Hora de praticar
 
 #### Leitura
-> 📖 私たちは明日７時に会うことになっている。何をすることになっているかわからない。明後日、転校生が来ることになっている。私は六時に起きることにしている。私は朝早く起きることにしている。 — Está combinado que a gente vai se encontrar amanhã às sete. Não sei o que devo fazer. Depois de amanhã, está combinado que um aluno transferido vai chegar. Faço questão de acordar às seis. Faço questão de acordar cedo de manhã.
+> 📖 私は毎朝六時に起きることにしています。今日も早く会社へ行くつもりでしたが、電車が止まりました。会議は十時から始まることになっているので、少し心配でした。明日からは、もう一本前の電車に乗ることにします。 — Eu faço questão de acordar às seis toda manhã. Hoje também pretendia chegar cedo na empresa, mas o trem parou. A reunião está marcada para começar às dez, então fiquei meio preocupado. A partir de amanhã vou pegar o trem anterior.
 - Relato um plano do passado que falhou com 〜つもりでした, normalmente seguido de が.
 - Expresso uma regra pessoal autoimposta com 〜ことにしている.
 - Descrevo uma norma ou combinação externa com 〜ことになっている.

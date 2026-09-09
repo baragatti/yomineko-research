@@ -429,6 +429,13 @@ export interface Lesson {
 /** A short reading passage gated to a lesson, with its tokens and translation. */
 export interface Reading {
   ai_generated: boolean;
+  comprehension: {
+    about_current_text: boolean;
+    correct?: string;
+    item: string;
+    options?: string[];
+    question?: string;
+  };
   gated_to_lesson: string;
   jp: string;
   layer: Layer;
@@ -443,8 +450,10 @@ export interface Reading {
       approved_at: string;
       content_hash: string;
     }[];
+  sentences: string[];
   slug: StableId;
-  source_slugs: string[];
+  source: string;
+  source_slugs: StableId[];
   title: LocaleText;
   tokens: {
       pos?: "adnominal" | "adverb" | "auxiliary" | "conjunction" | "filler" | "i-adjective" | "interjection" | "na-adjective" | "noun" | "numeral" | "particle" | "prefix" | "pronoun" | "punctuation" | "suffix" | "symbol" | "verb" | "whitespace";

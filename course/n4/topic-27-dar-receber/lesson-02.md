@@ -64,7 +64,7 @@ Quatro kanji que aparecem muito em serviços e pedidos.
 #### Hora de praticar
 
 #### Leitura
-> 📖 これは父に気に入ってもらう。テレビをつけてくれる？私に教えてくれる？父は私にどこへ行ったらいいか教えてくれた。 — Vou fazer com que meu pai goste disto. Você liga a TV pra mim? Você me ensina? Meu pai me disse pra onde eu devia ir.
+> 📖 今日、町で道がわからなくなった。近くの店の人が駅までの道を教えてくれた。その後、友だちに車を出してもらった。家では、母がごはんを作ってくれた。私も今度、だれかに同じことをしてあげたいと思う。 — Hoje eu me perdi na cidade. Uma pessoa da loja ali perto me ensinou o caminho até a estação. Depois disso, um amigo me levou de carro. Em casa, minha mãe fez comida pra mim. Da próxima vez eu também quero fazer o mesmo por alguém.
 - Uso ～てくれる quando alguém faz algo por mim (sujeito com が).
 - Uso ～てもらう quando eu recebo o benefício (a fonte vem com に).
 - Distingo as três direções: あげる (eu para fora), くれる (para mim), もらう (eu recebo).

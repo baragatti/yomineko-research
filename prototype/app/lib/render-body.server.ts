@@ -248,6 +248,30 @@ function renderReading(slug: string, show: string): string {
       ? `<details class="ym-reading-trans"><summary>${msIcon("translate")}<span>Ver tradução</span></summary>` +
         `<p class="ym-reading-pt">${esc(pt)}</p></details>`
       : "") +
+    renderComprehension(r) +
+    `</div>`
+  );
+}
+
+// W16: the box asks the comprehension question it already has. The question lives ONCE, in the
+// authored 内容一致 bank (corpus/exam_banks/<level>_reading_comp.json); the reading record carries
+// the pointer plus `about_current_text`, and the exporter resolves the text only when that flag is
+// true. It is false for every box W15 rewrote — those questions were written about the sentence
+// concatenation the box used to print — so the box asks nothing rather than asking about a passage
+// that no longer exists. W18 regenerates the bank over the new passages and the question appears
+// here with no further change.
+function renderComprehension(r: any): string {
+  const c = r?.comprehension;
+  if (!c || !c.about_current_text || !c.question || !Array.isArray(c.options)) return "";
+  const opts = c.options
+    .map((o: string) => `<li class="ym-reading-opt">${esc(o)}</li>`)
+    .join("");
+  return (
+    `<div class="ym-reading-q">` +
+    `<p class="ym-reading-q-stem" lang="ja">${esc(c.question)}</p>` +
+    `<ul class="ym-reading-opts">${opts}</ul>` +
+    `<details class="ym-reading-answer"><summary><span>Ver resposta</span></summary>` +
+    `<p class="ym-reading-correct" lang="ja">${esc(c.correct)}</p></details>` +
     `</div>`
   );
 }

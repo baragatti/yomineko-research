@@ -58,8 +58,8 @@ E os dois kanji desta lição, ambos ligados a governo e debate:
 #### Hora de praticar
 
 #### Leitura
-> 📖 あいつが言うことって、分かりづらいよなぁ。分かってるんだけど、どうしようもないのよ。それはあなたが一人になりたくないからです。モンブランはどのくらいの高さがありますか。「どいてください」「やんのか？あんちゃん」学校ではマナーやルールも学ぶことができる。 — O que aquele cara fala é bem difícil de entender, viu. Eu sei, mas não tem o que fazer mesmo. Isso é porque você não quer ficar sozinho. Que altura tem o Mont Blanc? "Saia da frente, por favor." "Quer brigar, garotão?" Na escola também dá para aprender boas maneiras e regras.
-> 📖 そんなことをすれば、人をだますことになる。みかけはそうではないのに本当は意地が悪い。父は今度の木曜日にアメリカへ出発します。あんな親切な人たちはまずめったにいない。今日の午後って、特に用事はないんでしょ？ごめんね。明日は朝からパートがあるのよ。 — Se você fizer isso, vai acabar enganando as pessoas. Não parece, mas na verdade ele tem um gênio ruim. Meu pai parte para os Estados Unidos na próxima quinta-feira. Pessoas tão gentis assim quase nunca existem. Hoje à tarde você não tem nada de especial pra fazer, né? Desculpa. Amanhã eu trabalho meio período logo de manhã, viu.
+> 📖 今日は市の会議に行った。新しい計画について、みんなが長く話した。さて、問題はやはりお金である。いずれにしても、来週までに答えを出さなければならない。会議のあとも、その話はつづいた。さて、明日からまた考えよう。 — Hoje eu fui à reunião da prefeitura. Todo mundo falou bastante sobre o plano novo. Pois bem, o problema, como sempre, é dinheiro. De todo jeito, temos que dar uma resposta até a semana que vem. Depois da reunião a conversa ainda continuou. Pois bem, amanhã eu volto a pensar nisso.
+> 📖 今日の会議では、いろいろな意見が出ました。話は長くなりましたが、答えは出ませんでした。さて、来週のことを少し話します。場所は同じ教室で、時間も前と同じです。いずれまた集まることになるでしょう。今日はここまでにします。 — Na reunião de hoje apareceram opiniões de todo tipo. A conversa se alongou, mas não chegamos a uma resposta. Pois bem, vou falar um pouco sobre a semana que vem. O lugar é a mesma sala, e o horário também é o de antes. Uma hora ou outra vamos nos reunir de novo. Por hoje, ficamos por aqui.
 - Reconheço e uso conectores e marcadores de discurso como さて e いずれ.
 - Sei ler 上 como かみ, 空 como から e 下 como もと, distinguindo do uso habitual.
 - Identifico os kanji 政 e 議 e os associo ao campo político.

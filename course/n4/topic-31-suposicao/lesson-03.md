@@ -63,7 +63,7 @@ Mais alguns vocábulos que combinam bem com comparações:
 > 🗣 バカみたい。 — Que ridículo.
 
 #### Leitura
-> 📖 お前みたいになりたいよ。バカみたい。あの店は今日休みみたいだ。私は早く起きることにしている。 — Quero ser igual a você. Que ridículo. Parece que aquela loja está fechada hoje. Faço questão de acordar cedo.
+> 📖 駅の前に、新しいコーヒーの店が出来たみたいだ。きのう行ってみた。中のいすは赤や青や黒で、子どものへやみたいな店だった。コーヒーは水みたいにうすかった。でも、店のねこはとてもかわいい。今日は休みみたいだから、明日また行ってみる。 — Parece que abriu um café novo em frente à estação. Ontem fui lá conferir. As cadeiras lá dentro eram vermelhas, azuis e pretas; era uma loja que parecia quarto de criança. O café estava fraco feito água. Mas o gato da loja é lindo demais. Hoje parece que está fechado, então amanhã eu passo lá de novo.
 - Faço uma suposição informal com 〜みたいだ a partir do que vejo ou sinto.
 - Uso みたいな antes de substantivo para dizer "que parece um...".
 - Uso みたいに antes de verbo/adjetivo para dizer "como / feito".

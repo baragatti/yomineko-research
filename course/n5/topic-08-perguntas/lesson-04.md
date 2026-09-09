@@ -70,7 +70,7 @@ Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tip
 > 🗣 なぜか？ — Por quê?
 
 #### Leitura
-> 📖 ネズミでした。こんにちは。 — Era um rato. Boa tarde.
+> 📖 ここはおばあさんのいえです。あのかたはおじです。おじはいしゃです。あちらのかたはおじのおくさんです。おくさんもいしゃですか。ええ、おじもおくさんもいしゃです。 — Aqui é a casa da vovó. Aquele senhor ali é o meu tio. Meu tio é médico. Aquela senhora ali é a esposa do meu tio. A esposa dele também é médica? Sim, tanto o meu tio quanto a esposa dele são médicos.
 - Sei perguntar "quem" com 誰 (だれ) e usar 誰が para o sujeito.
 - Sei perguntar o motivo com どうして no tom neutro.
 - Reconheço なぜ como o "por quê" mais formal/escrito.

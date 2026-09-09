@@ -64,7 +64,7 @@ E estas palavras dão o tom ou o tema à experiência:
 #### Hora de praticar
 
 #### Leitura
-> 📖 ここで会えてよかった。生まれてきてよかった。気がついてよかった。生きててよかった！ — Que bom poder te encontrar aqui. Que bom ter nascido. Ainda bem que percebi. Ainda bem que estou vivo!
+> 📖 アメリカへ行ったことがあります。古い教会を見て、その町のれきしに気がつきました。その日、近くで火事があったことを後で知りました。だれもけがをしなくてよかったです。あのとき、外に出ていてよかったと思います。 — Eu já fui aos Estados Unidos. Vendo uma igreja antiga, me dei conta da história daquela cidade. Só depois fiquei sabendo que naquele dia tinha havido um incêndio ali perto. Ainda bem que ninguém se machucou. E ainda bem que, naquela hora, eu estava na rua.
 - Conto experiências de vida com verbo た + ことがある.
 - Digo que notei algo com 〜に気がつく.
 - Expresso alívio com verbo て + よかった.

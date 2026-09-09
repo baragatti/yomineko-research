@@ -51,8 +51,8 @@ Dica: ユーモア (humor, graça) tem quatro batidas: ユ-ー-モ-ア, e o ー 
 #### Hora de praticar
 
 #### Leitura
-> 📖 雨になっちゃうんじゃないかなあ。ウスターソースがいいんじゃない？今すぐいかなければなりませんか。ここにいなくてはいけないんです。電話を一本かけなくてはいけない。インクで書かなくてはならないか？ — Acho que vai acabar virando chuva, né... Que tal molho inglês? Acho que fica bom. Preciso ir agora mesmo? Eu tenho que ficar aqui. Tenho que dar um telefonema. Preciso escrever com tinta?
-> 📖 マイクは日本語を話すのが上手だ。二本の道はそこでクロスしている。その男とつきあってはいけないよ。多くの学生が、アルバイトをします。父がもっと長生きしていたらなあ。自分でそれをしなければならない。 — O Mike é bom em falar japonês. As duas estradas se cruzam ali. Você não deve se envolver com aquele homem. Muitos estudantes fazem bico. Ah, quem dera meu pai tivesse vivido mais tempo. Você tem que fazer isso sozinho.
+> 📖 いい友だちはどんな人だろうと、時々考える。お金や品物などより、大切なものがあると思う。たとえば、ゆうきやユーモアなどだ。たいへんな時に、明るい話やユーモアなんかでみんなを元気にしてくれる人は少ない。話をゆっくり聞いて、こちらに道をゆずってくれる友人は、本当にりっぱだと思う。そういう人が近くにいるから、毎日がゆかいになる。 — De vez em quando eu me pergunto que tipo de pessoa é um bom amigo. Acho que existe algo mais importante do que dinheiro ou coisas materiais. Coragem e senso de humor, por exemplo. Nas horas difíceis, é raro alguém que anime todo mundo com uma conversa leve, um pouco de humor, essas coisas. Acho que um amigo que escuta com calma e cede a vez para você é uma pessoa admirável. Como tenho pessoas assim por perto, meus dias ficam divertidos.
+> 📖 今朝、電車でわかい人が私にせきをゆずってくれた。気持ちが明るくなって、学生のころの友人を思い出した。その友人はゆうしゅうで、ユーモアもある人だった。頭がいいことより、人にやさしいことのほうが大切だと、よく言っていた。夜明けまでゆっくり話したあの日のことを、今でもよく思い出す。 — Hoje de manhã, no trem, um rapaz me cedeu o lugar. Meu ânimo ficou mais leve, e eu me lembrei de um amigo da época de estudante. Esse amigo era brilhante e ainda tinha senso de humor. Ele vivia dizendo que ser gentil com as pessoas vale mais do que ser inteligente. Ainda me lembro bem daquele dia em que a gente conversou sem pressa até o amanhecer.
 - Reconheço e uso adjetivos de qualidade e mérito como 優秀, 有効 e 有利.
 - Falo de amizade e convívio com 友情, 友人 e 譲る.
 - Identifico os empréstimos e palavras de modo do bloco, como ユーモア, ゆっくり e 夜明け.

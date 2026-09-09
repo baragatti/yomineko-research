@@ -73,7 +73,7 @@ Mnemônico de forma:天 é a pessoa 大(braços abertos) com um traço reto por 
 > 🗣 他人を見下したりするな。 — Não fique menosprezando os outros.
 
 #### Leitura
-> 📖 どうやって学校に来たの？どうやってできましたか。 — Como você veio para a escola? Como isso foi feito?
+> 📖 今日は学校がやすみでした。あさは、テレビを見たり、そうじをしたりしました。午後は母といっしょにデパートへ行きました。そこで、かばんを見たり、コーヒーをのんだりしました。たのしい一日でした。 — Hoje não teve aula. De manhã, fiquei vendo televisão, arrumando a casa, essas coisas. À tarde, fui com a minha mãe até a loja de departamentos. Lá a gente ficou olhando bolsas, tomando café. Foi um dia gostoso.
 - Monto a forma 〜たり a partir do passado casual (見た → 見たり, 読んだ → 読んだり).
 - Encadeio dois exemplos com 〜たり〜たり, ciente de que não é lista fechada nem ordem fixa.
 - Fecho sempre com する/します/しました, que leva o tempo e a polidez.

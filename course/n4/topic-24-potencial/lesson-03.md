@@ -52,7 +52,7 @@ Três kanji que aparecem em palavras de paisagem e do dia a dia.
 #### Hora de praticar
 
 #### Leitura
-> 📖 モロに聞こえる。もうこれよりほかに手はない。ほかにご用はございませんか。明日は雨になるかもしれない。 — Dá pra ouvir tudo perfeitamente. Agora não há outro jeito senão este. O senhor deseja mais alguma coisa? Amanhã talvez chova.
+> 📖 けさ、うちの外から子どものこえが聞こえました。天気がよかったので、外へ出ました。男の子が四人、花の前でうたっていました。少しとおかったですが、うたはよく聞こえました。 — Hoje de manhã dava para ouvir a voz de uma criança lá fora. O tempo estava bom, então saí. Quatro meninos cantavam na frente das flores. Estavam um pouco longe, mas dava para ouvir bem a música.
 - Sei usar 聞こえる para um som que chega sozinho aos ouvidos.
 - Sei usar 見える para algo que está à vista, sem eu procurar.
 - Distingo 聞こえる/見える (espontâneo) de 聞く/見る (de propósito).

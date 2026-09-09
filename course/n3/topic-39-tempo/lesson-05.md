@@ -58,8 +58,8 @@ Dois kanji que voltarão muito em palavras de N3:
 #### Hora de praticar
 
 #### Leitura
-> 📖 病気の子どもは少しはよくなりましたか。この青のセーター、めっちゃかわいいよ。駅までタクシーで２０分かかるでしょう。パーティーはちょうど始まるところです。おじさんは今週うちにたいざいしている。ごめんなさい。時間があまりないんです。 — A criança doente melhorou um pouco? Esse suéter azul é super fofo! De táxi, deve levar uns 20 minutos até a estação. A festa está prestes a começar. Meu tio está hospedado na nossa casa esta semana. Desculpe. É que não tenho muito tempo.
-> 📖 病気で動かれなくなったのではないかな。生の魚を食べる犬なんているのだろうか？夏休みってすぐに終わってしまうんです。あの子は一体どうなってしまうのかしら。私は４時に電話をかけなおすつもりです。女の子みたいにメソメソするのはやめろ。 — Será que ela não acabou ficando impossibilitada de se mover por causa de uma doença? Será que existe mesmo cachorro que come peixe cru? As férias de verão acabam num instante, sabe. O que será que vai ser daquela criança, afinal? Eu pretendo ligar de novo às 4 horas. Para de choramingar feito menininha.
+> 📖 高校の時からの親友がいます。その人はいつもしんちょうで、私はとてもしんらいしています。身長は私より高くて、スポーツもよくできます。心理の本をよく読む人物です。先月、いい本をすいせんしてくれました。今もときどき会って、長い時間話します。 — Tenho um amigo do peito desde o colegial. Ele é sempre cauteloso, e eu confio muito nele. É mais alto do que eu e também é bom de esporte. É uma pessoa que lê bastante livro de psicologia. No mês passado ele me indicou um livro bom. Ainda hoje a gente se encontra de vez em quando e conversa por horas.
+> 📖 外国のことばの勉強を始めて、二年になる。前より読むのが早くなった。これは進歩だと思う。でも、人の前で話すと、いつも小さい声になってしまう。帰る道で、言えなかったことをいつまでも思い出してしまう。今日も新しいことばを五つ書いて、声に出して読む。 — Faz dois anos que eu comecei a estudar uma língua estrangeira. Hoje eu leio mais rápido do que antes. Acho que isso é progresso. Mas, quando falo na frente dos outros, minha voz acaba sempre saindo baixinha. No caminho de volta, fico lembrando sem parar do que não consegui dizer. Hoje também vou escrever cinco palavras novas e ler em voz alta.
 - Reconheço e uso substantivos da família しん ligados a confiança e mente.
 - Distingo homófonos como 身長 (altura) e 慎重 (cauteloso).
 - Identifico os kanji 民 (povo) e 連 (conectar).

@@ -58,6 +58,37 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-09 (at) — W15 APPLIED + W16 code (§6 step 4): 282 of 286 authored passages are in the
+> reading boxes of 232 lessons; the ください→下さる lemma trap is fixed with a test; the coherence
+> check is a plant-proved validator. Gate green. NOT COMMITTED (the run was told to touch no git
+> state). Next: §6 step 5, and W18 with the work list this unit produced.**
+>
+> - **The dissector rule** (`scripts/ingest/known_set.py`, the single implementation of the gate +
+>   `Dissector.vocab_candidates`): a surface the gating lesson teaches never resolves to an unknown
+>   LEMMA. Plus the §3 numeral carve-out the design doc had already written down, and a run rule
+>   (お|茶 → the taught お茶, 要する|に → the taught 要するに). Re-measured: **282 applicable, 4 held**,
+>   not the ~13 the plan expected — the verifiers had re-authored around most of them.
+> - **The 4 holds are W21b's**, each naming the unlock its gating lesson lacks: 間 in
+>   `n4-oracoes-relativas-03`, 関する in `n3-perspectiva-01`, 対する in `n3-limites-05`, and 読み in
+>   `n4-keigo-04` (お読みになる: prefix + the noun the lesson never unlocks). Held, never rewritten.
+> - **Both layers, one applier, exact-match table** (`research/derived/repairs/reading_passages.json`,
+>   registered in the replay gate; manifest step 116, families still last). Migrations 014/015 give
+>   the reading table `source`, `comprehension` and `sentences`, and declare the table itself.
+>   `uses` is documented as a build-time SNAPSHOT in four places, as W16 asked.
+> - **Lesson prose did not move**: 232 `.md` views changed and every changed line is a `> 📖` reading
+>   line; 233 lesson `.json` changed and `needs` is the only field that differs in any of them —
+>   `body-reading` edges come from a reading's `uses`, so the needs table was re-derived (747 → 758,
+>   root exemptions 8 → 7) and `apply_lesson_needs.py` gained `--replace` so a replay can apply a
+>   changed table. Check C4 caught this on the first unit after it landed.
+> - **W16 code**: `text_grammar` blanks are cut at Sudachi token boundaries (the old
+>   `jp.replace(form, …)` cut inside a word in 59 of the 286 passages), and `reading_comp` is checked
+>   against the passage it is printed under. Prototype-diffed old-vs-new on the same DB: every other
+>   deterministic bank identical. **One deviation, in §5.3 of the report:** the three
+>   `*_text_grammar.json` files HAD to be regenerated — a tg stem is a copy of its passage and
+>   `validate_exam_banks` check I is hard. `reading_comp` was not touched; **250 of its 286 questions
+>   are W18's authoring list**.
+> - Report: `research/reports/w15_apply_report.md` (counts, the 4 holds, 15 sample passages).
+
 > **2026-09-09 (as) — W21 APPLIED (§6 step 3): `needs[]` written and the linearity gate made
 > real; 611 of 875 silent `<jp>` spans given a derived reading. Gate green, full manifest replay
 > green. Next: §6 step 4.**

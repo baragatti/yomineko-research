@@ -54,7 +54,7 @@ Veja como essas palavras já encaixam em frases simples que você monta com o qu
 #### Hora de praticar
 
 #### Leitura
-> 📖 ワインがほしいですか。りんごがほしいですか？ — Você quer vinho? Você quer maçã?
+> 📖 あしたはいもうとのパーティーです。あたらしいかばんがほしいです。今日、いもうとと大きいデパートへ行きました。かばんは高かったですが、とてもかわいかったです。ほんとうはセーターもほしいですが、今日はかばんをかいました。 — Amanhã é a festa da minha irmã mais nova. Eu quero uma bolsa nova. Hoje fui com ela até uma loja de departamentos grande. A bolsa era cara, mas muito bonitinha. Na verdade eu também quero um suéter, mas hoje comprei a bolsa.
 - Sei que 吹く (ふく) é soprar (o vento) e 降る (ふる) é cair (chuva/neve).
 - Uso 曲がる (まがる) para "virar/dobrar" numa direção.
 - Digo o que quero com 欲しい (ほしい) e reajo com 本当 (ほんとう).

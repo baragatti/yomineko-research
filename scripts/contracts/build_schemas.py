@@ -341,6 +341,21 @@ _register({
         ["en", "dict", "both", "none"],
         "design", "design/schema_v2.md (the `sentence` table, pt_validated_against)",
         "What the Layer-B translation was machine-checked against."),
+    # W16. The box's own comprehension question, resolved from the authored 読解 bank at export time
+    # and published ONLY when it was written about the text the box currently prints. These three are
+    # free Japanese text, not a vocabulary: today they are resolved on 4 of 286 boxes (the passages
+    # W15 did not replace), which is exactly the "few distinct values" shape that makes a MEASURED
+    # enum look defensible and is not — W18 regenerates the bank over the new passages and every one
+    # of the other 282 arrives with a value no enum could have contained.
+    "reading.comprehension.question": {
+        "type": "string",
+        "description": "The 内容一致 question, copied from the exam bank item named by `item`."},
+    "reading.comprehension.correct": {
+        "type": "string", "description": "The right answer to that question."},
+    "reading.comprehension.options[]": {
+        "type": "string",
+        "description": "The four options, sorted so the position of the right answer carries no "
+                       "information; the app shuffles per attempt."},
     "speak_unit.checkpoint[].type": _exam_section,
     "speak_unit.drills[].strand": _strand,
     "speak_unit.production[].strand": _strand,

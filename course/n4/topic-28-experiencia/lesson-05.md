@@ -52,7 +52,7 @@ Aqui 都市 ("cidade") junto com 化する dá "urbanizar-se", e 急に quer diz
 #### Hora de praticar
 
 #### Leitura
-> 📖 この時計は１５分ごとになる。バスは１５分ごとにでます。２０分ごとにバスがある。バスでは時間がかかるぞ。 — Este relógio toca a cada 15 minutos. O ônibus sai a cada quinze minutos. Há um ônibus a cada 20 minutos. De ônibus leva tempo, viu.
+> 📖 家から会社まで、バスで四十分くらいかかります。朝のバスは十五分ごとに来ます。よるは三十分ごとなので、しごとがはやく終わる日は、バスを長く待ちます。朝は車が多いので、一時間かかる日もあります。電車のほうがはやいですが、駅までとおいです。ですから、毎日バスで会社に通っています。 — De casa até a empresa, o ônibus leva uns quarenta minutos. De manhã, o ônibus passa a cada quinze minutos. À noite é a cada trinta, então nos dias em que o trabalho acaba cedo eu espero bastante pelo ônibus. De manhã tem muito carro, e tem dia que leva uma hora. O trem é mais rápido, mas a estação fica longe. Por isso, vou de ônibus para a empresa todo dia.
 - Digo quanto algo leva ou custa com かかる, deixando o tempo/dinheiro como sujeito.
 - Marco intervalos regulares com ごとに ("a cada / em cada").
 - Uso おきに para intervalos com espaço entre as vezes ("dia sim, dia não").

@@ -74,7 +74,7 @@ Mais três palavrinhas úteis para suas frases:
 #### Hora de praticar
 
 #### Leitura
-> 📖 時間がありますか。やぶへびを出すな。 — Você tem um tempo? Não cutuque a onça com vara curta.
+> 📖 あしたはがっこうがありません。あさごはんをたべて、えきまであるいて行きます。それから、あねとえいがを見に行きます。ごごは、こうえんへさんぽに行きます。あねとかいものにも行きます。 — Amanhã não tenho aula. Vou tomar café da manhã e ir andando até a estação. Depois disso, vou com a minha irmã mais velha ver um filme. À tarde, vou ao parque dar uma caminhada. E com a minha irmã também vou fazer compras.
 - Expresso o objetivo de uma ida com 〜に行く ("ir fazer algo").
 - Monto o objetivo com raiz de verbo (食べに行く) ou substantivo de ação (ハイキングに行く).
 - Sei estender o padrão para 来る (vir) e 帰る (voltar).

@@ -75,8 +75,8 @@ Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa �
 #### Hora de praticar
 
 #### Leitura
-> 📖 その試験は２つのパートに分かれていた。去年より今年のクラスには学生が少ない。あの八百屋のおじさんはいつも元気です。小さな子どもでもその名前を知っている。女の子は２人とも白いスーツを着ている。コーヒーを飲むとトイレが近くなるんだ。 — A prova estava dividida em duas partes. Este ano há menos alunos na turma do que no ano passado. Aquele senhor da quitanda está sempre cheio de energia. Até uma criancinha sabe esse nome. As duas meninas estão usando ternos brancos. Quando tomo café, fico com vontade de ir ao banheiro logo.
-> 📖 ピーマンは半分に切りヘタを取っておく。タクシーよりも歩くほうがはやいだろう。お父さん、お母さんはいつ帰るのですか。このシャツで黒い色のものはありますか？図書館は午前九時から午後八時までです。今月、あのスーパーは水曜日が休みです。 — Corte os pimentões ao meio e tire o cabinho (deixando pronto). Andar a pé deve ser mais rápido do que pegar um táxi. Pai, quando a mamãe vai voltar? Tem essa camisa na cor preta? A biblioteca funciona das 9 da manhã às 8 da noite. Este mês, aquele supermercado folga às quartas-feiras.
+> 📖 先週、駅で古い友人に出会った。わたしにとって、この出会いはとてもうれしいものだった。二人で、これからの仕事について長く話した。友人は、月に一度会おうと言った。仕事のことだけでなく、家族についても話したい。今度会うまでに、話したいことを考えておく。 — Semana passada eu encontrei por acaso um velho amigo na estação. Para mim, esse encontro foi uma alegria e tanto. Nós dois conversamos longamente sobre o trabalho daqui para frente. Ele propôs que a gente se encontrasse uma vez por mês. Quero falar não só de trabalho, mas também sobre a família. Até a gente se encontrar de novo, vou pensando no que quero conversar.
+> 📖 つゆに入って、毎日雨がふっている。私にとって、この雨の毎日は少しつらい。それでも今日は、会社に出した計画についていいへんじがあった。私にとっては、今年いちばんうれしいできごとだ。雨が上がったら、ひさしぶりにつりに行こうと思う。 — Começou a estação das chuvas e chove todo dia. Para mim, essa chuva sem parar é meio pesada. Mesmo assim, hoje veio uma resposta boa sobre o plano que apresentei na empresa. Para mim, é o acontecimento mais feliz do ano. Quando a chuva der uma trégua, quero ir pescar depois de muito tempo.
 - Reconheço e uso o vocabulário de encontro e companhia (出会い, 出会う, デート, 連れ).
 - Distingo proposta, prazo e entrega (提案, 定期, 提出).
 - Aplico termos de grau, adequação e oposição (程度, 適する, 敵, 抵抗) em frases de ponto de vista.

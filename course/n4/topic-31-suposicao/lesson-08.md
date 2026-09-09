@@ -58,7 +58,7 @@ Decore a escala como uma régua: かもしれない (talvez) vai para はずで�
 #### Hora de praticar
 
 #### Leitura
-> 📖 私は明日死ぬかもしれない。バスはすぐ来るはずです。雨になるかもしれないな。これで十分なはずです。 — Eu talvez morra amanhã. O ônibus deve chegar logo. Pode ser que chova, hein. Isso deve ser suficiente.
+> 📖 友だちの山田さんは三時に駅に来るはずです。でも、もう三時半です。まだ来ません。電車がおそいのかもしれません。山田さんはわすれるはずがありません。きっとこれから来ます。 — Meu amigo Yamada deve chegar na estação às três. Mas já são três e meia. Ele ainda não apareceu. Pode ser que o trem esteja atrasado. Não tem como o Yamada ter esquecido. Com certeza ele chega daqui a pouco.
 - Sei dar um palpite incerto com かもしれない ('talvez').
 - Consigo tirar uma conclusão lógica com はずです ('deve ser').
 - Sei negar com convicção usando はずがない ('é impossível que').

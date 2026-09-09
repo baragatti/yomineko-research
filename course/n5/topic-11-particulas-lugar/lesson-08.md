@@ -60,7 +60,7 @@ A peça-chave é があります("há / existe", aqui no sentido de "ter"):が m
 > 🗣 何とか入れた。 — Consegui entrar de algum jeito.
 
 #### Leitura
-> 📖 おいくつですか？いくらですか？それだけです。 — Quantos anos você tem? Quanto custa? É só isso.
+> 📖 きょうはごごまでだいがくのじゅぎょうがあります。それから、えきまで行きます。えきでぎゅうにゅうとたまごとくだものをかいます。しんぶんやざっしも見ます。きょうはそれだけです。 — Hoje tenho aula na faculdade até a tarde. Depois disso vou até a estação. Na estação compro leite, ovos e frutas. Também dou uma olhada em jornais e revistas, entre outras coisas. Hoje é só isso.
 - Ligo substantivos numa lista fechada com と e marco companhia ("com") com a mesma partícula.
 - Listo só exemplos com や ("A, B, entre outros") e sei que sobra coisa de fora.
 - Delimito com だけ ("apenas / só").

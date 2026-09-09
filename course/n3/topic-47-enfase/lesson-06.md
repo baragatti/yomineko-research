@@ -57,8 +57,8 @@ Mais um par de verbos com a mesma raiz e papéis opostos.
 #### Hora de praticar
 
 #### Leitura
-> 📖 車が空港へ行く途中で動かなくなった。彼女は近所の人たちと会話をはじめた。友達にかわいいカップをもらいました。辞書を貸していただけないでしょうか。スリッパでロビーに降りたらだめだよ。パスワードは「Muiriel」です。 — O carro parou de funcionar no caminho para o aeroporto. Ela começou uma conversa com os vizinhos. Ganhei uma xícara fofa de um amigo. Será que você poderia me emprestar o dicionário? Não pode descer ao saguão de chinelos, viu. A senha é "Muiriel".
-> 📖 ハウスダストにアレルギーがあります。英語で話を通じさせる事ができますか。映画作りは人をわくわくさせる仕事だ。私は父だけでなくむすこも知っている。やりがいがひとつ無くなったって感じ。あなたみたいにカッコよくなりたいな。 — Tenho alergia a poeira doméstica. Você consegue se fazer entender em inglês? Fazer filme é um trabalho que deixa as pessoas empolgadas. Eu conheço não só o pai, mas também o filho. É tipo aquela sensação de ter perdido um dos motivos pra fazer as coisas. Queria ser tão descolado quanto você.
+> 📖 日曜日の朝、人気のあるパンの店に、たくさんの人がならんでいた。店の人はにっこりして、新しいパンをすすめてくれた。その味で、日常のつかれがすっと抜けるようだった。人間はやはり、こういう小さなことでうれしくなるものだ。帰り、日光の中を歩きながら、また来ようと思った。 — Domingo de manhã, tinha muita gente na fila de uma loja de pães que faz sucesso. A pessoa do balcão abriu um sorriso e me indicou um pão novo. Com aquele sabor, o cansaço do dia a dia parecia sair de uma vez. A gente fica feliz mesmo é com coisinhas assim. Na volta, andando no sol, pensei em voltar outro dia.
+> 📖 日曜の朝、日光が強くて、早く起きた。日常のことは考えないで、近くの公園まで歩いて行った。その公園は人気があるので、日中は人が多い。ベンチにすわると、力が抜けて、体が軽くなった。前を通った子どもがにっこりしてくれて、うれしかった。人間には、こういう時間が必要だと思った。 — Domingo de manhã, a luz do sol estava forte e eu acordei cedo. Sem pensar nas coisas do dia a dia, fui a pé até o parque ali perto. Esse parque é popular, então durante o dia fica cheio de gente. Quando sentei no banco, a tensão foi embora e o corpo ficou leve. Uma criança que passou na minha frente abriu um sorriso, e isso me deixou feliz. Pensei que o ser humano precisa de momentos assim.
 - Reconheço e uso vocabulário sobre dias, luz do sol e cotidiano.
 - Distingo 人気 de 人間 e o par 抜く / 抜ける.
 - Sei empregar palavras como にっこり e 日常 com ênfase no dia a dia.

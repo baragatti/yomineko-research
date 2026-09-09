@@ -51,7 +51,7 @@ Com へた você completa o conjunto que usa o molde の が: gostar de fazer (�
 > 🗣 彼は名前を覚えるのが下手だ。 — Ele é ruim de gravar nomes.
 
 #### Leitura
-> 📖 どのくらいいたの？どこから来たのか。とても大きいね。 — Quanto tempo você ficou? De onde você veio? É bem grande, né?
+> 📖 今日、おねえさんは大きいこえでうたいました。おねえさんはうたをうたうのがとてもじょうずです。おとうとはえをかくのがじょうずです。おかあさんは、うたうのもえをかくのもじょうずではありません。でも、ごはんをつくるのがいちばんじょうずです。 — Hoje minha irmã mais velha cantou bem alto. Minha irmã canta muito bem. Meu irmão mais novo desenha bem. Minha mãe não é boa nem de cantar nem de desenhar. Mas fazer comida é o que ela faz de melhor.
 - Sei dizer que sou ruim numa atividade com 〜のが下手です.
 - Marco a atividade com が (não com uma partícula de "em").
 - Sei contrastar じょうず (bom em) e へた (ruim em) no mesmo molde.

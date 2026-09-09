@@ -14,7 +14,7 @@ WHAT IT WRITES
 --------------
 `research/derived/repairs/lesson_needs.json`, produced by `scripts/build_needs_table.py`:
 
-  origin `derived`       696 rows copied from `scripts/derive_needs.py` on the current tree — the
+  origin `derived`       707 rows copied from `scripts/derive_needs.py` on the current tree — the
                          transitive reduction of "lesson L references an item lesson M unlocks".
   origin `kana-chain`     40 rows. The pre-N5 strand references nothing but its own kana family, so
                          every one of its 41 lessons derives as a root. Chained by rule: each needs
@@ -23,7 +23,7 @@ WHAT IT WRITES
                          216-220 re-drill what they unlock themselves, so they too derive as roots.
                          Each needs the lesson immediately before it in course order.
 
-9 lessons keep no `needs` and are listed in the table's `roots`: the course opener plus eight early
+8 lessons keep no `needs` and are listed in the table's `roots`: the course opener plus seven early
 N5 lessons whose every dependency points FORWARD (the W21b ledger) or that are genuinely
 self-contained. `validate_lesson_gating.py` check C2 holds them in
 `course/needs_root_exemptions.json` and the count may only shrink.
@@ -38,7 +38,7 @@ script at all — `needs` is record metadata, never body text.
 Idempotent: a second run finds every row present with the same note and reports 0 changes.
 Run `scripts/export/export_course.py` afterwards.
 
-Usage: apply_lesson_needs.py [--check]
+Usage: apply_lesson_needs.py [--check] [--replace]
 """
 from __future__ import annotations
 
@@ -82,7 +82,8 @@ def by_lesson(rows: list[dict]) -> dict[str, list[dict]]:
     return out
 
 
-def apply_sources(groups: dict[str, list[dict]], check: bool, problems: list[str]) -> int:
+def apply_sources(groups: dict[str, list[dict]], check: bool, problems: list[str],
+                  replace: bool = False) -> int:
     changed = 0
     for lesson, needs in groups.items():
         f = SRC / (lesson.split(":", 1)[1] + ".json")
@@ -96,7 +97,7 @@ def apply_sources(groups: dict[str, list[dict]], check: bool, problems: list[str
             problems.append(f"{lesson}: {f.name} is not valid JSON ({e})")
             continue
         had = obj.get("needs") or []
-        if had and had != needs:
+        if had and had != needs and not replace:
             problems.append(f"{lesson}: {f.name} already declares {len(had)} need(s) that are not "
                             f"the {len(needs)} this table says it should")
             continue
@@ -111,7 +112,8 @@ def apply_sources(groups: dict[str, list[dict]], check: bool, problems: list[str
     return changed
 
 
-def apply_db(con, groups: dict[str, list[dict]], check: bool, problems: list[str]) -> int:
+def apply_db(con, groups: dict[str, list[dict]], check: bool, problems: list[str],
+             replace: bool = False) -> int:
     changed = 0
     for lesson, needs in groups.items():
         row = con.execute("SELECT id FROM lesson WHERE slug=?", (lesson,)).fetchone()
@@ -123,7 +125,13 @@ def apply_db(con, groups: dict[str, list[dict]], check: bool, problems: list[str
             "SELECT need_type, ref, note FROM lesson_needs WHERE lesson_id=?", (lid,))}
         want = {("lesson", n["ref"]): n["note"] for n in needs}
         for key in have.keys() - want.keys():
-            problems.append(f"{lesson}: index carries a need {key[1]} this table does not")
+            if not replace:
+                problems.append(f"{lesson}: index carries a need {key[1]} this table does not")
+                continue
+            changed += 1
+            if not check:
+                con.execute("DELETE FROM lesson_needs WHERE lesson_id=? AND need_type=? AND ref=?",
+                            (lid, key[0], key[1]))
         for key, note in want.items():
             if have.get(key) == note:
                 continue
@@ -142,6 +150,15 @@ def apply_db(con, groups: dict[str, list[dict]], check: bool, problems: list[str
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="report what would change; write nothing")
+    ap.add_argument("--replace", action="store_true",
+                    help="rewrite `needs` that disagree with the table instead of refusing. "
+                         "`needs` is 100%% derived (validate_lesson_gating check C4 re-derives it on "
+                         "the tree being validated and fails on any difference), so a disagreement "
+                         "is a stale table, never hand-authored work to protect. W15 made that "
+                         "concrete: `body-reading` edges come from a reading record's `uses`, so "
+                         "replacing 282 passages moved ~470 edges, and without this flag the "
+                         "applier refused every one of them — including in a rebuild replay, where "
+                         "the authoring sources already carry the previous run's needs.")
     args = ap.parse_args()
 
     doc = load_table()
@@ -162,8 +179,8 @@ def main() -> int:
             elif pos[n["ref"]] >= pos.get(lesson, -1):
                 problems.append(f"{lesson}: needs {n['ref']}, which is not strictly earlier")
 
-    src = apply_sources(groups, args.check, problems)
-    db = apply_db(con, groups, args.check, problems)
+    src = apply_sources(groups, args.check, problems, args.replace)
+    db = apply_db(con, groups, args.check, problems, args.replace)
     if not args.check and not problems:
         con.commit()
     con.close()

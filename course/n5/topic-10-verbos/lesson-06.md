@@ -54,7 +54,7 @@ Detalhe importante: com 会う a pessoa que você encontra costuma vir marcada p
 > 🗣 水をください。 — Me dê um pouco de água, por favor.
 
 #### Leitura
-> 📖 行きましょう。うちにいます。人がいる。 — Vamos! Estou em casa. Há pessoas.
+> 📖 おかあさん、これからかいものに行きます。かぎをください。ぎゅうにゅうとくだものをかいます。ざっしもかいます。かいものは、せんえんくらいです。せんえんをください。 — Mãe, vou fazer compras agora. Me dá a chave, por favor. Vou comprar leite e fruta. Vou comprar uma revista também. As compras dão uns mil ienes. Me dá mil ienes, por favor.
 - Sei pedir uma coisa educadamente com o molde [coisa] を ください.
 - Lembro que a coisa pedida vem antes de を e ください fica no fim.
 - Reconheço ゼロ (zero) e せん (mil) em pedidos e preços.

@@ -59,7 +59,7 @@ Resuma assim: te-ageru = faço o favor (educado, neutro); te-yaru = mesmo favor,
 #### Hora de praticar
 
 #### Leitura
-> 📖 さんざん小言をいってやる。こらしめてやる。見せてあげる。どちらがほしいのか言いなさい。 — Vou dar uma boa bronca nele. Vou dar uma lição nele! Deixa eu te mostrar. Diga qual (dos dois) você quer.
+> 📖 いもうとは来週、たいせつなテストがある。だから、今日は問題を教えてやった。新しいノートも買ってあげた。母には車をあらってあげた。みんなよろこんでいた。明日の朝は、いもうとに朝ごはんを作ってやる。 — Minha irmã mais nova tem uma prova importante semana que vem. Por isso, hoje eu expliquei os exercícios para ela. Comprei um caderno novo para ela também. Para a minha mãe, lavei o carro. Todo mundo ficou contente. Amanhã de manhã eu faço o café da manhã para a minha irmã.
 - Sei usar 〜てあげる para dizer que faço um favor a outra pessoa.
 - Escolho 〜てやる para crianças, animais, plantas e iguais, em tom informal.
 - Percebo que 〜てあげる pode soar arrogante com superiores e evito isso.

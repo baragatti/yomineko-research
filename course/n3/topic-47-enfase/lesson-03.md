@@ -81,7 +81,7 @@ O kanji 妻 tem o radical da mulher (女) embaixo e significa "esposa". O kanji 
 #### Hora de praticar
 
 #### Leitura
-> 📖 彼は決して親切ではない。彼は決して学者ではない。私は決して頭が良くない。それは決して大きくない。値段は決して高くない。 — Ele não é nem um pouco gentil. Ele não é nem de longe um estudioso. Eu não sou nem um pouco inteligente. Isso não é nem um pouco grande. O preço não é nada caro.
+> 📖 新しい部長は決して大きな声を出さない。今度の仕事は少しも楽ではないが、彼はいやな顔をしない。「無理をしていませんか」と聞いても、決して「つかれた」とは言わない。だから、私も彼のように働きたいと思う。 — O novo chefe de setor jamais levanta a voz. O trabalho desta vez não é nem um pouco fácil, mas ele não faz cara feia. Mesmo quando alguém pergunta se ele não está se forçando demais, ele jamais diz que está cansado. Por isso eu também quero trabalhar como ele.
 - Reforço negações com すこしも〜ない ('nem um pouco') e まったく〜ない ('nada').
 - Expresso recusa categórica, promessa ou proibição com 決して〜ない ('jamais').
 - Lembro que em japonês o predicado precisa estar no negativo (心配していない), não só o advérbio.

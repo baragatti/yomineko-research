@@ -1187,6 +1187,70 @@ def handle_lesson_furigana(rows, sents, gram, table):
     return out
 
 
+READINGS: dict[str, dict] = {}
+MIN_READINGS = 250
+
+
+def load_readings_export(root: Path) -> dict[str, dict]:
+    """Every exported reading box, by slug. The W15 rows are claims about these."""
+    out: dict[str, dict] = {}
+    for path in sorted((root / "corpus" / "readings").glob("n*.json")):
+        for rec in json.loads(path.read_text(encoding="utf-8")):
+            out[rec["slug"]] = rec
+    return out
+
+
+def handle_reading_passages(rows, sents, gram, table):
+    """W15. Every authored passage must BE the reading box the row names, in the shipped export.
+
+    Six claims per row, because a passage apply can fail in six different ways and five of them are
+    silent: the box prints the authored Japanese (`jp`), its segmentation still concatenates to it,
+    its translations are the authored ones, `uses` is exactly the snapshot the gate computed (an
+    apply that quietly recomputed it from the link tables would drift out of the known set — the
+    failure mode `apply_readings_composition_repairs.py` records), the box is Layer C /
+    `ai_generated` / `needs_review` (authored Japanese a teacher has not signed off), and `source`
+    names the campaign. The `old` value is asserted GONE: a run that wrote nothing would otherwise
+    pass every "is the new value there" check on a box that still holds the concatenation.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']} ({r['lesson']})"
+        rec = READINGS.get(r["slug"])
+        n = r["new"]
+        if rec is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no exported reading {r['slug']}"))
+            continue
+        if rec.get("jp") != n["jp"]:
+            same_as_old = rec.get("jp") == r["old"]["jp"]
+            out.append(("fail", C_NOT_APPLIED if same_as_old else C_VALUE_MISMATCH, addr,
+                        "the box still holds the pre-W15 concatenation" if same_as_old
+                        else "the box holds neither the row's `old` nor its `new` jp"))
+            continue
+        if "".join(rec.get("sentences") or []) != n["jp"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        "`sentences` does not re-concatenate to the passage"))
+            continue
+        tr = rec.get("translation") or {}
+        if tr.get("pt-BR") != n["translation_pt"] or tr.get("en") != n["translation_en"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr, "a translation is not the authored one"))
+            continue
+        u = rec.get("uses") or {}
+        if sorted(u.get("kanji") or []) != sorted(n["uses"]["kanji"]) or \
+                sorted(u.get("vocab") or []) != sorted(n["uses"]["vocab"]):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"`uses` is {len(u.get('kanji') or [])}k/{len(u.get('vocab') or [])}v, the "
+                        f"row's snapshot is {len(n['uses']['kanji'])}k/{len(n['uses']['vocab'])}v"))
+            continue
+        if not (rec.get("layer") == "C" and rec.get("ai_generated") is True
+                and rec.get("needs_review") is True and rec.get("source") == n["source"]):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"provenance is layer={rec.get('layer')} ai={rec.get('ai_generated')} "
+                        f"nr={rec.get('needs_review')} source={rec.get('source')!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
@@ -1200,6 +1264,7 @@ REGISTRY = {
     "homograph_rulings.json": handle_homograph_rulings,
     "lesson_needs.json": handle_lesson_needs,
     "lesson_furigana.json": handle_lesson_furigana,
+    "reading_passages.json": handle_reading_passages,
 }
 
 
@@ -1241,6 +1306,12 @@ def main() -> int:
             f"homograph rulings cannot be replayed against a course tree that is not there")
     print(f"        {len(LESSONS)} lesson leaves, {len(EXEMPT['coverage'])} coverage + "
           f"{len(EXEMPT['gating'])} gating exemptions (homograph-ruling replay)")
+
+    READINGS.update(load_readings_export(root))
+    if len(READINGS) < MIN_READINGS:
+        die(f"{len(READINGS)} reading boxes under {root}/corpus/readings, floor is {MIN_READINGS} — "
+            f"the W15 passages cannot be replayed against a registry that is not there")
+    print(f"        {len(READINGS)} reading boxes (W15 passage replay)")
 
     VOCAB_BY_SLUG.update({slug: rec for slug, (ent, _f, rec) in load_levelled(root).items()
                           if ent == "vocab"})

@@ -64,7 +64,7 @@ Três kanji ligados à natureza e às estações, que casam com o らしい de "
 > 🗣 雨になるらしいよ。 — Parece que vai dar chuva, viu.
 
 #### Leitura
-> 📖 世界はいつ終わるのだろうか。夜は雨になるらしい。雨になるらしいよ。雨らしい。 — Quando será que o mundo vai acabar? À noite parece que vai dar chuva. Parece que vai dar chuva, viu. Parece que vai chover.
+> 📖 今日は朝からあたたかくて、もう春らしい天気です。でも、山田さんは学校を休んでいるらしいです。かぜをひいたらしいですが、だいじょうぶなのだろうか。電話をしたほうがいいのだろうか。明日、先生に聞いてみます。 — Hoje amanheceu quentinho, um tempo bem de primavera. Mas parece que o Yamada faltou na escola. Pelo jeito ele pegou um resfriado, mas será que está tudo bem? Será que é melhor eu ligar para ele? Amanhã eu pergunto para o professor.
 - Sei usar らしい para inferir de algo que ouvi ou observei ("parece que / pelo jeito").
 - Reconheço o segundo sentido de らしい: "típico de / a cara de" (春らしい).
 - Consigo me questionar com のだろうか ("será que...? / fico me perguntando").

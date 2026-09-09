@@ -54,7 +54,7 @@ O kanji 死 tem peso emocional forte. Evite usá-lo de forma leve ou em brincade
 #### Hora de praticar
 
 #### Leitura
-> 📖 私はとうとうタバコをやめた。なるべく安いほうがいいです。物事をありのままに見なさい。ロッジはひぎめでかりられる。 — Eu finalmente parei de fumar. De preferência, o mais barato possível. Veja as coisas como elas realmente são. O chalé pode ser alugado por diária.
+> 📖 今日は、会社のパーティーでした。私は六時にへやのまどを開けて、いすをならべました。七時になると、パーティーが始まりました。会社のみなさんから、めずらしい花をもらいました。パーティーが終わると、へやはまたしずかになりました。まどをしめて、私も家にかえりました。 — Hoje teve a festa da empresa. Às seis eu abri a janela da sala e arrumei as cadeiras. Às sete, a festa começou. O pessoal da empresa me deu umas flores bem diferentes. Quando a festa terminou, a sala ficou quieta de novo. Fechei a janela e também fui para casa.
 - Sei me referir ao marido e à filha de outra pessoa com respeito (ご主人, お嬢さん).
 - Reconheço papéis sociais como 公務員 e アナウンサー.
 - Uso o vocabulário de ocasiões: 招待, お祝い, お土産.

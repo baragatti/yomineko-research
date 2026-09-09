@@ -68,7 +68,7 @@ Na primavera (春), os japoneses fazem hanami: sentam sob as cerejeiras para ver
 #### Hora de praticar
 
 #### Leitura
-> 📖 いすの上にねこがいます。あそこのカウンターです。 — Tem um gato em cima da cadeira. É naquele balcão ali.
+> 📖 けさははれています。にわのはながきれいにさいています。ははがだいどころであさごはんをつくっています。テーブルの上にパンとバターがおいてあります。コップもならべてあります。ははといっしょに、これからこうえんまでさんぽに行きます。 — Hoje de manhã o céu está limpo. As flores do jardim estão floridas, bem bonitas. Minha mãe está fazendo o café da manhã na cozinha. O pão e a manteiga já estão postos em cima da mesa. Os copos também já estão arrumados. Daqui a pouco vou com ela dar uma volta até o parque.
 - Uso 〜ています para uma ação em curso (estou comendo).
 - Uso 〜ています para o estado que resultou de uma ação (estou com o nariz entupido).
 - Reconheço 〜てある como o estado deixado de propósito (a porta está trancada).

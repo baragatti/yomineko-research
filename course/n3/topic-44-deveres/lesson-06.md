@@ -58,8 +58,8 @@ Repare em 弁当, parte essencial do dia japonês, e em 冒険 para histórias.
 #### Hora de praticar
 
 #### Leitura
-> 📖 勝つものもいれば、負けるものもいる。正月は家族と過ごす時間が長いのです。私はデパートでオーバーをあつらえた。上着のしたにセーターを着た方がよい。いいえ、はじめに９番におかけ下さい。男の子で食べ物にうるさいのは少ない。 — Há os que vencem e há os que perdem. No Ano-Novo, a gente passa bastante tempo com a família. Eu mandei fazer meu sobretudo numa loja de departamentos. É melhor você vestir um suéter por baixo do casaco. Não, por favor disque o número nove primeiro. Entre os meninos, os que são exigentes com a comida são poucos.
-> 📖 先月、姉は６ポンドの男の子を生んだ。大きなカヌーが水をきって進んでいた。今月あのスーパーは水曜日が休みです。このスカートは体にちょうどよくあう。おなかすいたけど、ご飯ができてない。このハンカチは紙でできているんです。 — No mês passado, minha irmã mais velha deu à luz um menino de seis libras. Uma grande canoa avançava cortando a água. Este mês, aquele supermercado folga às quartas-feiras. Esta saia cai perfeitamente bem no corpo. Estou com fome, mas a comida ainda não está pronta. Este lenço é feito de papel.
+> 📖 会議の場所がへんこうになったと報告がありました。新しい場所へ行く方法が分かりません。駅を出て、どの方向へ進めばいいのでしょうか。駅からの行き方を、もう一度おしえてください。今、ベンチでべんとうを食べながら、地図の読み方を考えています。時間がへっていくので、電車とバスでは早い方をえらびます。 — Chegou o comunicado de que o local da reunião mudou. Não sei como fazer para chegar no lugar novo. Saindo da estação, em que direção eu devo seguir? Me explica de novo como se vai da estação, por favor. Agora estou num banco, comendo a marmita e pensando em como se lê um mapa. Como o tempo está acabando, entre o trem e o ônibus vou pegar o mais rápido.
+> 📖 来週の会議について、時間のへんこうを報告します。場所も変わりますので、新しい地図をよく見るべきです。駅からの方向がわかりにくいので、早く出るべきです。お昼ごはんはこちらで用意します。質問がある方は、今日中に聞いてください。 — Sobre a reunião da semana que vem, informo a mudança de horário. O local também vai mudar, então vocês devem olhar bem o mapa novo. Da estação é difícil achar o caminho, então devem sair mais cedo. O almoço nós vamos preparar aqui. Quem tiver perguntas, pergunte ainda hoje.
 - Reconheço e uso palavras de direção e método como 方, 方向 e 方法.
 - Emprego termos de mudança e relato como 変化, 変更 e 報告.
 - Identifico objetos cotidianos como ベルト, 弁当 e 宝石.

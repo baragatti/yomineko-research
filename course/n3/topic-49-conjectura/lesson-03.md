@@ -59,7 +59,7 @@ O kanji 遊 significa "brincar, divertir-se, passear". O radical da esquerda (�
 #### Hora de praticar
 
 #### Leitura
-> 📖 まるで夢を見ているようだよ。秋じゃないみたいだな。外は、夏みたいだよ。済んだみたいだね。子どもみたいだな。 — Parece até que estou sonhando. Não parece que é outono, hein. Lá fora está parecendo verão, viu. Parece que você já terminou, né? Você parece uma criança, hein.
+> 📖 あの二人は姉妹みたいだ。顔がよく似ていて、笑い方までまるで同じようだ。しばふで遊んでいるところは、まるで絵のようだ。二人はとても親しいみたいだね。見ているこっちまで、まるで子どもにもどったみたいだ。 — Aquelas duas parecem irmãs. Os rostos são muito parecidos, e até o jeito de rir é igualzinho. A cena das duas brincando no gramado parece um quadro. As duas são bem próximas, pelo jeito. Até quem está olhando sente como se tivesse voltado a ser criança.
 - Uso みたいだ para impressões e semelhanças no registro coloquial, ligando-o direto à forma simples.
 - Lembro que com substantivo みたいだ NÃO leva の (子供みたいだ), ao contrário de ようだ (子供のようだ).
 - Construo comparações vívidas com まるで〜ようだ/ように, sempre fechando o par.

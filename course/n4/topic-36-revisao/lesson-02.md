@@ -51,7 +51,7 @@ Não confunda 〜終わる(terminar de fazer) com o passado simples. "食べた"
 #### Hora de praticar
 
 #### Leitura
-> 📖 来てくださればとてもうれしい。そんなことは起きないでしょう。今度は、いつ会うことができる？そうなさるのもごもっともです。 — Eu ficaria muito feliz se você viesse. Uma coisa dessas não vai acontecer. Da próxima vez, quando a gente consegue se encontrar? É perfeitamente compreensível que o senhor faça isso.
+> 📖 来月、友だちと山に行くつもりです。去年は仕事がいそがしくて、行くことができませんでした。今年は妹が車を貸してくれるので、朝早く出ることができます。おべんとうは前の日に作っておきます。天気がよければ、山の上でみんなで食べたいです。 — No mês que vem eu pretendo ir à montanha com uns amigos. Ano passado o trabalho estava puxado e eu não consegui ir. Este ano a minha irmã mais nova vai me emprestar o carro, então dá para sair de manhã cedo. As marmitas eu já deixo prontas na véspera. Se o tempo ajudar, quero comer lá em cima com todo mundo.
 - Formo o potencial com 〜れる／られる e sei trocar 食べる por 食べられる.
 - Uso 〜ことができる como alternativa ao potencial e lembro que o objeto pode virar が.
 - Diferencio o convite 〜ましょう da intenção firme 〜つもり.

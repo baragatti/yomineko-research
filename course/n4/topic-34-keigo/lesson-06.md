@@ -52,7 +52,7 @@ Para encerrar, um adjetivo de emoção: 憎い significa "odioso, detestável, i
 > 🗣 車を貸していただけませんか。 — Você poderia me emprestar o carro, por favor?
 
 #### Leitura
-> 📖 少し待っていただけませんか。車を貸していただけませんか。電話を切らずにおいてください。時間があったら来てください。 — Você poderia esperar um pouquinho, por favor? Você poderia me emprestar o carro, por favor? Por favor, não desligue o telefone (fique na linha). Por favor, venha aqui se tiver tempo.
+> 📖 先生、少しお時間をいただけませんか。分からないところが多いです。この漢字の読み方を教えていただけませんか。テストの前に、私の作文を見ていただけませんか。電話でもいいですから、へんじをいただけませんか。私は三時までに教室に行きます。 — Professora, a senhora teria um tempinho? Tem muita coisa que eu não entendo. A senhora poderia me ensinar a leitura deste kanji? E poderia dar uma olhada na minha redação antes da prova? Pode ser pelo telefone, então a senhora poderia me dar uma resposta? Eu chego à sala de aula até as três.
 - Monto um pedido educado com verbo na forma て + いただけませんか.
 - Sei que a fórmula vem do humilde いただく no potencial negativo interrogativo.
 - Escolho entre 〜てください, お〜ください e 〜ていただけませんか conforme a situação.

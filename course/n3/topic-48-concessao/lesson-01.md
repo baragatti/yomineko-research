@@ -75,7 +75,7 @@ A persistência apesar das dificuldades é um valor muito presente no Japão, re
 #### Hora de praticar
 
 #### Leitura
-> 📖 どんなに安く見積もっても３万円はかかる。どんなに長い日でも終わりがあるはずだ。来るなといっても彼女は来るよ。いくら考えても、わかりません。付いて行ってもいいですか。 — Por mais barato que se calcule, vai custar 30 mil ienes. Por mais longo que seja o dia, ele deve ter um fim. Mesmo que você diga para ela não vir, ela vem. Por mais que eu pense, não consigo entender. Posso ir junto com você?
+> 📖 どんなに困難があっても、この仕事はやめない。たとえみんながさからっても、私は考えを変えない。さいのうがなくても、努力すれば道は開ける。様々な問題をさけても、いつかは同じところにもどってくる。だから、どんなに苦しくても、私は前に進む。 — Por mais dificuldades que apareçam, eu não largo este trabalho. Nem que todo mundo seja contra, eu não mudo de ideia. Mesmo sem talento, quem se esforça abre um caminho. Por mais que a gente desvie de todo tipo de problema, uma hora eles voltam para o mesmo lugar. Por isso, por mais duro que seja, eu sigo em frente.
 - Sei formar 〜ても a partir da forma-て (verbo), de くても (adjetivo-い) e de でも (adjetivo-な / substantivo).
 - Uso たとえ no começo para anunciar uma suposição extrema, com o ても fazendo o trabalho real.
 - Digo 'por mais que...' com どんなに〜ても, focando no grau.

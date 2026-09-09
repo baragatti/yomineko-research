@@ -55,8 +55,8 @@ Repare em 雰囲気, uma palavra muito comum, e em 震える para sensações f�
 #### Hora de praticar
 
 #### Leitura
-> 📖 朝ごはんはいつもパンを食べます。「いつ起きるの？」「朝八時だよ」長いスカートが大変流行している。いとこに千円貸してもらったんだ。近くでバスケットが作られている。来週土曜日にバスツアーをしない？ — No café da manhã eu sempre como pão. "Quando você acorda?" "Às oito da manhã." Saias longas estão muito na moda. Peguei mil ienes emprestados com meu primo. Estão fazendo cestos ali perto. Que tal a gente fazer um passeio de ônibus no próximo sábado?
-> 📖 ああ、早く夏休みにならないかな。部屋にはいろいろなものがあった。道が悪いのでスピードを出せない。父は来月のはじめに帰ってきます。どいつもこいつもばかばっかりだ。その犬はかみついたりしませんよ。 — Ah, mal posso esperar para as férias de verão chegarem logo. No quarto havia várias coisas. Como a estrada está ruim, não dá para acelerar. Meu pai volta no começo do mês que vem. Não tem um que preste, é tudo idiota. Esse cachorro não morde nem nada, viu.
+> 📖 来月から新しい分野の勉強を始めることにした。まず、プランを立てて、毎日使える時間を見てみた。一日に二時間だけというのは不利かもしれないが、続けることがプラスになる。今のところ、プロになるつもりはない。文明や平和について書かれた文を、ゆっくり読んでいくつもりだ。 — Decidi começar a estudar uma área nova a partir do mês que vem. Primeiro montei um plano e olhei quanto tempo eu tenho livre por dia. Só duas horas por dia talvez seja uma desvantagem, mas continuar já conta como ponto positivo. Por enquanto, não pretendo virar profissional. Quero ir lendo com calma os textos escritos sobre civilização e paz.
+> 📖 来年から新しいぶんやの勉強を始めようと思う。今のままでは、へいきんより下のままで終わってしまう。一週間に三日は本を読んで、読んだことをぶんせきしようと思う。一人で決めると、どうしても計画が大きくなりすぎる。だから、たまにブレーキをかけて、ゆっくり進むプランにした。しずかなふんいきの中で読む時間は、私にとって大きなプラスだ。 — A partir do ano que vem quero começar a estudar uma área nova. Do jeito que está, vou acabar parando abaixo da média. Pretendo ler três dias por semana e analisar o que li. Quando decido sozinho, o plano sempre acaba grande demais. Por isso resolvi puxar o freio de vez em quando e seguir devagar. O tempo de leitura num ambiente silencioso é um grande ganho para mim.
 - Reconheço e uso palavras de estudo e análise como 分析, 分野 e 文明.
 - Emprego empréstimos do inglês como プラス, プラン e ブレーキ.
 - Descrevo ambiente e estado com 雰囲気, 平和 e 平均.

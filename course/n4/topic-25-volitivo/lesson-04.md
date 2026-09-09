@@ -65,7 +65,7 @@ Os três lado a lado, mesmo verbo やめる: 仕事をやめることにした =
 #### Hora de praticar
 
 #### Leitura
-> 📖 それとこれとは話が別でしょ。それとこれとは別だと思うよ。あなたのせいではありません。レモンはすっぱいくだものだ。 — Isso e isto são coisas diferentes, não é? Acho que isso e isto são coisas separadas. A culpa não é sua. O limão é uma fruta azeda.
+> 📖 来月から、毎日学校まであるいて行くことにしました。電車で行くより体にいいと思ったからです。でも、雨の日はバスで行くことになります。今度の休みの日は、友だちと海へ行くよていです。その日も、家から駅まであるくことにしました。 — A partir do mês que vem, decidi ir a pé até a escola todo dia. É que achei que é melhor para o corpo do que ir de trem. Mas nos dias de chuva vai acabar sendo de ônibus. Na próxima folga, o plano é ir à praia com uns amigos. Nesse dia também decidi ir andando de casa até a estação.
 - Anuncio uma decisão minha com 〜ことにする／ことにした.
 - Digo que algo "ficou decidido" por fora com 〜ことになる／ことになった.
 - Falo de um plano já marcado com 〜予定だ.

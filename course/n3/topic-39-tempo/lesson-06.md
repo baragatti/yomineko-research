@@ -67,8 +67,8 @@ Dica de memória. Repare que quase todas essas palavras compartilham o som inici
 Resolva os exercícios abaixo e confira cada explicação com atenção.
 
 #### Leitura
-> 📖 あの店ではノートを売っていますか？図書館にはたくさんの学生がいます。どの新聞を読んでも話は同じだろう。動物に食べ物をやってはいけません。それは今では当たり前になっている。今夜は一つ語り明かそうではないか。 — Naquela loja vendem cadernos? Há muitos estudantes na biblioteca. Não importa qual jornal você leia, a história deve ser a mesma. Não se deve dar comida aos animais. Hoje em dia isso virou algo normal. Que tal a gente passar a noite de hoje conversando, hein?
-> 📖 長い間いることになるかもしれない。どのようなスポーツをなさいますか。始める前に仕事の計画を立てなさい。あなたは新たな人生を始めるべきだ。ここにはよくいらっしゃるんですか？問題は計画がうまくいくかどうかだ。 — Talvez você acabe ficando aqui por um longo tempo. Que tipo de esporte o(a) senhor(a) pratica? Faça o planejamento do seu trabalho antes de começar. Você deveria começar uma nova vida. Você costuma vir aqui com frequência? O problema é se o plano vai dar certo ou não.
+> 📖 新しい仕事についてから、毎日がつぎつぎにすぎていく。朝はお茶を注ぎながら、その日のよていを考える。夜はつかれが出るが、家族とのつきあいはつねに大切にしたい。土曜日は子どもと手をつないで、近くの道をゆっくり歩く。そうしてから、また新しい一週間が始まる。 — Desde que entrei no emprego novo, os dias passam um atrás do outro. De manhã, enquanto sirvo o chá, eu penso no que tenho para fazer no dia. À noite bate o cansaço, mas quero cuidar sempre do convívio com a família. No sábado eu ando devagar pela rua de casa de mãos dadas com meu filho. Depois disso, começa mais uma semana.
+> 📖 先月から新しい仕事についた。朝はいつも六時に起きる。会社では、つぎつぎに電話がかかってくる。昼は小さなつつみに食事を入れて持って行く。会社の人とのつきあいはまだ少ない。つまり、つかれはあっても、今の仕事は悪くないということだ。 — No mês passado assumi um trabalho novo. De manhã eu sempre acordo às seis. Na empresa, os telefonemas chegam um atrás do outro. No almoço eu ponho a comida num pacotinho e levo. O convívio com o pessoal da empresa ainda é pouco. Ou seja, mesmo com o cansaço, o trabalho de agora não é ruim.
 - Reconheço os verbos de prender e conectar (掴む, 捕まる, 付ける, 繋ぐ, 詰める)
 - Diferencio 就く, 注ぐ e 付ける, que têm sons parecidos
 - Uso as palavras de sequência e continuidade (次々, 続き, 常に, 詰まり)

@@ -55,8 +55,8 @@ Cuidado: 態と (わざと, de propósito) tem som parecido com わざわざ ('d
 #### Hora de praticar
 
 #### Leitura
-> 📖 この期間が３ヶ月と言われています。今日はいたずらばかりしているね。もっとお金をためようと思うんだ。１度に２つの事をしようと思うな。問題はお金がないということです。英語の勉強のやる気をおこさせる。 — Dizem que esse período dura três meses. Você só está fazendo travessuras hoje, hein. Estou pensando em juntar mais dinheiro. Não tente fazer duas coisas ao mesmo tempo. O problema é que não temos dinheiro. Despertar a vontade de estudar inglês.
-> 📖 これはわたしに母を思い出させる。つまり、父は母より２歳年上です。テレビによれば明日は雨だそうだ。私は６時に起きることにしている。５時に駅で会うことになっている。ひょっとしたら勝つかもしれない。 — Isto me faz lembrar da minha mãe. Ou seja, meu pai é dois anos mais velho que minha mãe. Segundo a televisão, amanhã vai chover. Faço questão de acordar às seis. Está combinado que vou encontrá-lo às cinco na estação. Pode ser que eu ganhe, por sorte.
+> 📖 来週までに、われわれは大学の論文を出します。昨日の教室では、話題を決めるだけで論争になりました。最後に、仕事を三つに分けることにしました。一人がわざとかんたんな部分を取ったので、少しわがままだと思いました。でも、だれも悪口は言わないで、みんなのわらいで会議が終わりました。時間はわずかですが、明日の朝も集まることにしました。 — Até semana que vem nós entregamos o artigo da faculdade. Ontem, na sala de aula, só de escolher o tema já virou uma discussão. No fim, decidimos dividir o trabalho em três partes. Um deles ficou de propósito com a parte fácil, e achei aquilo meio egoísta. Mesmo assim, ninguém falou mal de ninguém, e a reunião acabou no meio das risadas de todo mundo. Sobrou pouquíssimo tempo, então decidimos nos reunir amanhã de manhã também.
+> 📖 今日は新しい話題について、みんなで話しました。われわれは意見を二つに分けて、その理由について考えました。論争になりましたが、最後はわらいで終わりました。わがままな意見も、聞いてみると悪くありませんでした。この話題については、来週の論文に書くつもりです。 — Hoje conversamos todos sobre um tema novo. Nós dividimos as opiniões em dois lados e pensamos sobre as razões de cada um. Virou uma discussão, mas no fim acabou em risada. Mesmo as opiniões egoístas, quando a gente parou para escutar, não eram tão ruins. Sobre este tema, pretendo escrever no artigo da semana que vem.
 - Argumento e produzo texto acadêmico com 論じる, 論争 e 論文.
 - Falo de dividir e separar com 分ける, 割る e 別れ.
 - Reconheço atitudes e palavras do cotidiano como 我儘, 態と, 話題 e 悪口.

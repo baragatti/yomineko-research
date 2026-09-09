@@ -52,8 +52,8 @@ Dica: 礼 (れい) e 例 (れい) soam idênticos mas se escrevem diferente. 礼
 #### Hora de praticar
 
 #### Leitura
-> 📖 明日までに知っておく必要がある。フランス語を勉強する必要がある。前はよくピザを食べてたんだけど。今はそれをやりたくないんだけど。立っているのは、みんな男だった。日にちはどのくらいかかりますか。 — Preciso saber até amanhã. Preciso estudar francês. É que antes eu comia pizza com frequência... É que agora eu não quero fazer isso... Os que estavam de pé eram todos homens. Quantos dias leva?
-> 📖 バスはどのくらい前に出ましたか。でも休みはとったほうがいいわよ。お金をむだ使いしないほうがいい。もう行かなくちゃ。じゃ、またね。あれ？あなたまだここにいたのね！それより、本を読んだほうがいい。 — Há quanto tempo o ônibus saiu? Mas é melhor você tirar uma folga, viu. É melhor não desperdiçar dinheiro. Já tenho que ir. Bom, até mais! Ué? Você ainda estava aqui, hein! Em vez disso, é melhor você ler livros.
+> 📖 来月から外国の大学で勉強するので、今日は駅で、空港まで行くれっしゃの料金をしらべた。りそうは安い夜のれっしゃだが、その時間に出るれっしゃは少ない。前に高いきっぷを買ったことがあるので、今度はれいせいに決めたい。外国のお金は毎日変わるので、りょうがえは来週にする。三日連続で同じことをしらべているが、まだ決められない。明日、駅の人にれいぎ正しく聞いてみる。 — Como no mês que vem começo a estudar numa universidade no exterior, hoje fui à estação ver o preço do trem que vai até o aeroporto. O ideal seria o trem barato da noite, mas nesse horário saem poucos. Uma vez comprei uma passagem cara, então dessa vez quero decidir com a cabeça fria. O dinheiro estrangeiro muda de valor todo dia, então deixo o câmbio para a semana que vem. Faz três dias seguidos que pesquiso a mesma coisa e ainda não consigo decidir. Amanhã vou perguntar ao pessoal da estação, com toda a educação.
+> 📖 来月から外国の学校で勉強しますね。出発の前に、れっしゃの料金をしらべたほうがいいです。りそうと本当の生活はちがいますから、いつもれいせいでいたほうがいいです。国がちがえば、れいぎもちがいます。れんぞくして三か月も家族に会えませんが、時々電話をしてください。きっといい一年になります。 — Mês que vem você começa a estudar numa escola no exterior, né. Antes de viajar, é bom pesquisar o preço da passagem de trem. O ideal e a vida real são coisas diferentes, então é bom manter a cabeça fria sempre. Se o país muda, a etiqueta também muda. Você vai passar três meses seguidos sem ver a família, então ligue de vez em quando. Com certeza vai ser um ano bom.
 - Falo de ideais, taxas e quantidades com 理想, 率 e 量.
 - Reconheço termos de cortesia e ânimo como 礼, 礼儀 e 冷静.
 - Identifico palavras de estudo, transporte e sequência como 留学, 列車 e 連続.

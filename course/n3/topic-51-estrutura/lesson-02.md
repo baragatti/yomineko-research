@@ -76,7 +76,7 @@ O kanji 才 significa "talento" e também conta "anos de idade" (五才, "cinco 
 #### Hora de praticar
 
 #### Leitura
-> 📖 最近考えることが多過ぎる。彼は思ったことを口にする。料理することは面白い。問題は私が彼に何も言うことがないということだった。人々は人間しか言語を使えないと以前は考えていた。 — Ultimamente tenho coisas demais para pensar. Ele fala o que pensa. Cozinhar é interessante. O problema era que eu não tinha nada a dizer para ele. Antigamente, as pessoas pensavam que só os seres humanos conseguiam usar a linguagem.
+> 📖 私は、みんなの前で話すことがあまり得意ではありません。でも、毎日少しずつ声を出すことで、去年より上手に話すことができるようになりました。大切なのは、うまく話すことより、伝えたいことをはっきり言うことです。今では、初めての人とも話すことができます。できないと思っていたことができるようになるのは、うれしいことです。 — Falar na frente das pessoas nunca foi muito o meu forte. Mas, botando a voz para fora um pouquinho todo dia, passei a falar melhor do que no ano passado. O importante não é falar bonito: é dizer com clareza aquilo que você quer transmitir. Hoje eu já consigo conversar até com quem estou conhecendo na hora. É muito bom quando aquilo que você achava impossível vira uma coisa que você consegue fazer.
 - Sei transformar um verbo em substantivo com 〜こと (泳ぐ vira 泳ぐこと).
 - Lembro que o こと é obrigatório em 〜ことができる (não existe 話すができる).
 - Sei escolher こと (abstrato, fatos) ou の (concreto, percepção direta).
