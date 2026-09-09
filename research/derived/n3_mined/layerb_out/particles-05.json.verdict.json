@@ -1,0 +1,1239 @@
+{
+ "kind": "particles-verdict",
+ "unit": "W13b",
+ "source_work_list": "particles-05.json",
+ "verified_file": "research/derived/n3_mined/layerb_out/particles-05.json",
+ "part": 5,
+ "count": 200,
+ "reviewed": 200,
+ "ok": 195,
+ "problems": 5,
+ "status": "COMPLETE",
+ "note": "Identity is (key, position, surface). Rows absent from this list were not reviewed and must not be treated as passing. Positions are the dissector's 0-based token indices, checked against research/derived/n3_mined/layerb_residue.json (0 mismatches on all 200 rows).",
+ "rows": [
+  {
+   "key": "2092155",
+   "position": 1,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "522613",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "158219",
+   "position": 5,
+   "surface": "に",
+   "ok": false,
+   "problem": "A análise do に está certa, mas a regra colada no fim é falsa: 会う não pede に sempre, 〜と会う é igualmente gramatical e comum (e o próprio lote ensina, em 153443@3 e 106260@3, que a outra parte de uma ação recíproca vem com と). Do jeito que está, o aluno sai com um absoluto que a primeira frase com と会う desmente.",
+   "corrected": {
+    "explanation_pt": "に marca 王子その人 como a pessoa com quem o encontro aconteceu; com 会う, quem se encontra costuma vir com に."
+   }
+  },
+  {
+   "key": "167875",
+   "position": 7,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "167875",
+   "position": 8,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "110355",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "211109",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "205583",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "206497",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "206497",
+   "position": 3,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "206497",
+   "position": 8,
+   "surface": "しか",
+   "ok": true
+  },
+  {
+   "key": "112841",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "192909",
+   "position": 5,
+   "surface": "ば",
+   "ok": true
+  },
+  {
+   "key": "118735",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "118735",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "175762",
+   "position": 1,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "175762",
+   "position": 8,
+   "surface": "は",
+   "ok": false,
+   "problem": "Token errado. Na sequência do dissecador esta frase tem dois は: o de tópico na position 4 (logo depois de 制度) e o de ではなくなってきている na position 8, que é o desta linha, logo depois de 重要. O texto autorado explica o は de tópico ('は apresenta 結婚という制度 como o tema'), ou seja, o outro token; e esse は de tópico nem entra nesta lista de trabalho, então a explicação sairia colada ao token errado e o rótulo 'partícula de tópico' viria junto.",
+   "corrected": {
+    "explanation_pt": "Este は é o de ではなくなってきている: entra entre o で e a negação e marca o contraste, importante é justamente o que essa instituição vem deixando de ser.",
+    "function_pt": "partícula de contraste (dentro de ではない)"
+   }
+  },
+  {
+   "key": "8973577",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "4216075",
+   "position": 5,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "1643651",
+   "position": 5,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "101685",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "101685",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "90373",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "90373",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "12589190",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "3081092",
+   "position": 6,
+   "surface": "に",
+   "ok": false,
+   "problem": "O token citado não é o da frase: ela traz 2年前 com dígito de meia largura (この橋は2年前に建設された), e a explicação escreve ２年前 com o ２ de largura inteira. Como a explicação aparece ao lado da frase, o aluno procura ２年前 e não acha.",
+   "corrected": {
+    "explanation_pt": "に fixa 2年前 como o momento da obra: foi há dois anos que a ponte ficou pronta.",
+    "function_pt": "partícula de ponto no tempo"
+   }
+  },
+  {
+   "key": "10349168",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "10349168",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "197566",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "10769968",
+   "position": 5,
+   "surface": "な",
+   "ok": true
+  },
+  {
+   "key": "225035",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "213215",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "92068",
+   "position": 10,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "164772",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "117273",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "162459",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "156972",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "104812",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "185671",
+   "position": 12,
+   "surface": "ば",
+   "ok": true
+  },
+  {
+   "key": "151146",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "105460",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "124716",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "146019",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "115217",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "93629",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "101196",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "101196",
+   "position": 6,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "101196",
+   "position": 10,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "96978",
+   "position": 6,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "96978",
+   "position": 9,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "121465",
+   "position": 13,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "163306",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "116972",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "116972",
+   "position": 4,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "170376",
+   "position": 7,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "122991",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "188892",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "174029",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "92305",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "153443",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "106260",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "8737885",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "8737885",
+   "position": 5,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "185104",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "185104",
+   "position": 4,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "216769",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "216757",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "211192",
+   "position": 6,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "211192",
+   "position": 7,
+   "surface": "を",
+   "ok": true
+  },
+  {
+   "key": "11211792",
+   "position": 5,
+   "surface": "へ",
+   "ok": true
+  },
+  {
+   "key": "11211792",
+   "position": 8,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "9192461",
+   "position": 6,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "182180",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "163263",
+   "position": 1,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "87804",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "3402671",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "8720692",
+   "position": 3,
+   "surface": "な",
+   "ok": true
+  },
+  {
+   "key": "168814",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "94328",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "4762",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "164762",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "164762",
+   "position": 7,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "10194934",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "11870752",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "12037989",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "12037989",
+   "position": 6,
+   "surface": "ん",
+   "ok": true
+  },
+  {
+   "key": "9192466",
+   "position": 7,
+   "surface": "ん",
+   "ok": true
+  },
+  {
+   "key": "84389",
+   "position": 3,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "125274",
+   "position": 1,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "125274",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "140687",
+   "position": 4,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "140687",
+   "position": 10,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "137437",
+   "position": 2,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "137437",
+   "position": 3,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "125491",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "175680",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "2904868",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "2904868",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "12593224",
+   "position": 2,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "12593224",
+   "position": 7,
+   "surface": "だけ",
+   "ok": true
+  },
+  {
+   "key": "219438",
+   "position": 8,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "219438",
+   "position": 9,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "87543",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "145146",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "77135",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "628656",
+   "position": 1,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "2121100",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "11124419",
+   "position": 4,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "186630",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "186630",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "102689",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "102689",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "148624",
+   "position": 3,
+   "surface": "な",
+   "ok": true
+  },
+  {
+   "key": "122987",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "160196",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "1149135",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "84028",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "11024958",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "214722",
+   "position": 2,
+   "surface": "で",
+   "ok": false,
+   "problem": "Dois defeitos no pt-BR. 'tocar o carro' é uso regional e ambíguo em português do Brasil (lê-se primeiro como encostar no carro), e o carro nem está na frase: すごい勢いで飛ばしてるよ não nomeia veículo nenhum, e a tradução do banco fala só em acelerar. A explicação inventa o objeto e ainda o descreve com um verbo que atrapalha.",
+   "corrected": {
+    "explanation_pt": "で liga すごい勢い ao verbo e diz de que jeito ele acelera: com um ímpeto fora do normal.",
+    "function_pt": "partícula de modo"
+   }
+  },
+  {
+   "key": "222277",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "222277",
+   "position": 3,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "108114",
+   "position": 3,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "3595182",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "3595182",
+   "position": 6,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "97249",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "108606",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "10042609",
+   "position": 11,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "121975",
+   "position": 3,
+   "surface": "より",
+   "ok": true
+  },
+  {
+   "key": "11825711",
+   "position": 1,
+   "surface": "って",
+   "ok": true
+  },
+  {
+   "key": "122192",
+   "position": 2,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "209943",
+   "position": 2,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "170965",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "217156",
+   "position": 2,
+   "surface": "まで",
+   "ok": true
+  },
+  {
+   "key": "217156",
+   "position": 3,
+   "surface": "に",
+   "ok": false,
+   "problem": "O rótulo nomeia a construção errada. ご参考までに é a fórmula 参考まで + に adverbial; '〜までに' é outra coisa, o prazo ('faça até tal hora'), que é ponto de gramática por si só e vai ser ensinado à parte. Rotular esta ocorrência como 'dentro de 〜までに' funde as duas e planta a confusão justamente na frase que serviria de exemplo. O texto da explicação está certo e fica.",
+   "corrected": {
+    "explanation_pt": "に fecha ご参考まで e deixa a frase pronta como fórmula: dito só a título de referência.",
+    "function_pt": "partícula que fecha a fórmula ご参考までに"
+   }
+  },
+  {
+   "key": "8663463",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "200309",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "200309",
+   "position": 7,
+   "surface": "ん",
+   "ok": true
+  },
+  {
+   "key": "185966",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "224822",
+   "position": 5,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "11030947",
+   "position": 4,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "98627",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "98627",
+   "position": 3,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "98627",
+   "position": 10,
+   "surface": "だけ",
+   "ok": true
+  },
+  {
+   "key": "98627",
+   "position": 11,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "105463",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "148479",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "148479",
+   "position": 6,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "148479",
+   "position": 8,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "100526",
+   "position": 3,
+   "surface": "が",
+   "ok": true
+  },
+  {
+   "key": "155567",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "185433",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "121453",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "10647266",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "10647266",
+   "position": 6,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "185639",
+   "position": 3,
+   "surface": "へ",
+   "ok": true
+  },
+  {
+   "key": "147409",
+   "position": 1,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "220985",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "220985",
+   "position": 3,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "10588060",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "83763",
+   "position": 1,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "230292",
+   "position": 2,
+   "surface": "を",
+   "ok": true
+  },
+  {
+   "key": "230292",
+   "position": 6,
+   "surface": "な",
+   "ok": true
+  },
+  {
+   "key": "145333",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "145333",
+   "position": 6,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "145333",
+   "position": 7,
+   "surface": "を",
+   "ok": true
+  },
+  {
+   "key": "145333",
+   "position": 9,
+   "surface": "な",
+   "ok": true
+  },
+  {
+   "key": "3496789",
+   "position": 1,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "11792740",
+   "position": 3,
+   "surface": "を",
+   "ok": true
+  },
+  {
+   "key": "10320852",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "10320852",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "230554",
+   "position": 2,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "230554",
+   "position": 3,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "230554",
+   "position": 5,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "148324",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "204694",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "222172",
+   "position": 4,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "222172",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "222172",
+   "position": 8,
+   "surface": "ては",
+   "ok": true
+  },
+  {
+   "key": "110012",
+   "position": 3,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "88197",
+   "position": 6,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "11365399",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "11365399",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "8588552",
+   "position": 5,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "12988708",
+   "position": 3,
+   "surface": "ば",
+   "ok": true
+  },
+  {
+   "key": "8040033",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "8040033",
+   "position": 6,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "219821",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "222423",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "222423",
+   "position": 5,
+   "surface": "のみ",
+   "ok": true
+  },
+  {
+   "key": "372125",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "107537",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "201859",
+   "position": 3,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "97521",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "88402",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "10815502",
+   "position": 3,
+   "surface": "まで",
+   "ok": true
+  },
+  {
+   "key": "10815502",
+   "position": 7,
+   "surface": "て",
+   "ok": true
+  },
+  {
+   "key": "202418",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "202418",
+   "position": 8,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "141363",
+   "position": 3,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "141363",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  }
+ ]
+}

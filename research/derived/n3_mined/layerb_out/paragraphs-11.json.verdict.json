@@ -1,0 +1,823 @@
+{
+ "kind": "paragraphs-verdict",
+ "unit": "W13b",
+ "file": "paragraphs-11.json",
+ "input": "research/derived/n3_mined/layerb_work/paragraphs-11.json",
+ "authored": "research/derived/n3_mined/layerb_out/paragraphs-11.json",
+ "verified_by": "W13b paragraphs verifier (adversarial, independent of the author)",
+ "identity": "key (copied from the authored rows, never recomputed); map key is the sentence key",
+ "field": "structure_explanation_pt",
+ "authored_rows": 200,
+ "checked": 200,
+ "ok": 198,
+ "corrected": 2,
+ "rejected": 0,
+ "note": "A `corrected` entry carries the full replacement structure_explanation_pt; merge it in place of the authored text (verdict `fix`, verifier_structure_explanation_pt = corrected). An entry with `ok: false` and no `corrected` is a reject: drop the row, leave the slot as the derivation left it. A key absent from `verdicts` was never checked and must NOT be treated as an acceptance.",
+ "checks_run": "per-row read against jp/en/pt/pt_literal/tokens/particles; plus mechanical sweeps for em dash, pt-PT markers, >2 sentences, non-null verdict field, key drift, duplicate paragraphs, Japanese strings quoted but absent from the sentence (11 hits, all legitimate dictionary forms or contrasted pairs), transitivity claims, and は/が/を role claims cross-checked against the particle list.",
+ "verdicts": {
+  "84028": {
+   "key": "84028",
+   "ok": true
+  },
+  "214722": {
+   "key": "214722",
+   "ok": true
+  },
+  "193068": {
+   "key": "193068",
+   "ok": true
+  },
+  "225747": {
+   "key": "225747",
+   "ok": true
+  },
+  "2744726": {
+   "key": "2744726",
+   "ok": true
+  },
+  "122192": {
+   "key": "122192",
+   "ok": true
+  },
+  "209943": {
+   "key": "209943",
+   "ok": true
+  },
+  "8663463": {
+   "key": "8663463",
+   "ok": true
+  },
+  "224822": {
+   "key": "224822",
+   "ok": true
+  },
+  "175534": {
+   "key": "175534",
+   "ok": true
+  },
+  "8637439": {
+   "key": "8637439",
+   "ok": true
+  },
+  "11069520": {
+   "key": "11069520",
+   "ok": true
+  },
+  "147409": {
+   "key": "147409",
+   "ok": true
+  },
+  "193060": {
+   "key": "193060",
+   "ok": true
+  },
+  "230292": {
+   "key": "230292",
+   "ok": true
+  },
+  "145333": {
+   "key": "145333",
+   "ok": true
+  },
+  "11257875": {
+   "key": "11257875",
+   "ok": true
+  },
+  "3496789": {
+   "key": "3496789",
+   "ok": true
+  },
+  "4910": {
+   "key": "4910",
+   "ok": true
+  },
+  "8933297": {
+   "key": "8933297",
+   "ok": true
+  },
+  "190645": {
+   "key": "190645",
+   "ok": true
+  },
+  "435160": {
+   "key": "435160",
+   "ok": true
+  },
+  "7422032": {
+   "key": "7422032",
+   "ok": true
+  },
+  "201859": {
+   "key": "201859",
+   "ok": true
+  },
+  "10136116": {
+   "key": "10136116",
+   "ok": true
+  },
+  "163204": {
+   "key": "163204",
+   "ok": true
+  },
+  "178638": {
+   "key": "178638",
+   "ok": false,
+   "problem": "Papel errado para o も. Em 君にも o も não substitui nada: ele vem depois do に, que continua marcando 君. Dizer que 'も entra no lugar da partícula esperada' descreve o も que troca が/を (家事も, それも, 見当も, todos nesta mesma leva), e não é o que acontece aqui. O resto da descrição (責任 com が, ある como o 'ter' japonês) está certo.",
+   "corrected": "に marca 君 como a pessoa em quem a responsabilidade recai, e も vem logo depois dele, somando você aos que também têm parte nisso. 責任 é o sujeito com が e o predicado é ある, que é como o japonês diz 'ter' quando não se trata de posse concreta."
+  },
+  "2976538": {
+   "key": "2976538",
+   "ok": true
+  },
+  "11254025": {
+   "key": "11254025",
+   "ok": true
+  },
+  "230087": {
+   "key": "230087",
+   "ok": true
+  },
+  "80868": {
+   "key": "80868",
+   "ok": true
+  },
+  "121988": {
+   "key": "121988",
+   "ok": true
+  },
+  "179352": {
+   "key": "179352",
+   "ok": true
+  },
+  "196248": {
+   "key": "196248",
+   "ok": true
+  },
+  "2302976": {
+   "key": "2302976",
+   "ok": true
+  },
+  "11586395": {
+   "key": "11586395",
+   "ok": true
+  },
+  "143680": {
+   "key": "143680",
+   "ok": true
+  },
+  "195684": {
+   "key": "195684",
+   "ok": true
+  },
+  "1487563": {
+   "key": "1487563",
+   "ok": true
+  },
+  "172519": {
+   "key": "172519",
+   "ok": true
+  },
+  "11582485": {
+   "key": "11582485",
+   "ok": true
+  },
+  "11049486": {
+   "key": "11049486",
+   "ok": true
+  },
+  "125513": {
+   "key": "125513",
+   "ok": true
+  },
+  "11574162": {
+   "key": "11574162",
+   "ok": true
+  },
+  "9032507": {
+   "key": "9032507",
+   "ok": true
+  },
+  "79132": {
+   "key": "79132",
+   "ok": true
+  },
+  "140271": {
+   "key": "140271",
+   "ok": true
+  },
+  "10801949": {
+   "key": "10801949",
+   "ok": true
+  },
+  "209397": {
+   "key": "209397",
+   "ok": true
+  },
+  "199120": {
+   "key": "199120",
+   "ok": true
+  },
+  "83668": {
+   "key": "83668",
+   "ok": true
+  },
+  "11332035": {
+   "key": "11332035",
+   "ok": true
+  },
+  "10162789": {
+   "key": "10162789",
+   "ok": true
+  },
+  "3475208": {
+   "key": "3475208",
+   "ok": true
+  },
+  "211844": {
+   "key": "211844",
+   "ok": true
+  },
+  "10070070": {
+   "key": "10070070",
+   "ok": true
+  },
+  "144633": {
+   "key": "144633",
+   "ok": true
+  },
+  "10320223": {
+   "key": "10320223",
+   "ok": true
+  },
+  "120893": {
+   "key": "120893",
+   "ok": true
+  },
+  "218938": {
+   "key": "218938",
+   "ok": true
+  },
+  "11075393": {
+   "key": "11075393",
+   "ok": true
+  },
+  "188386": {
+   "key": "188386",
+   "ok": true
+  },
+  "119369": {
+   "key": "119369",
+   "ok": true
+  },
+  "137964": {
+   "key": "137964",
+   "ok": true
+  },
+  "189389": {
+   "key": "189389",
+   "ok": true
+  },
+  "224674": {
+   "key": "224674",
+   "ok": true
+  },
+  "142980": {
+   "key": "142980",
+   "ok": true
+  },
+  "9926770": {
+   "key": "9926770",
+   "ok": true
+  },
+  "172421": {
+   "key": "172421",
+   "ok": true
+  },
+  "11027328": {
+   "key": "11027328",
+   "ok": true
+  },
+  "231410": {
+   "key": "231410",
+   "ok": true
+  },
+  "178477": {
+   "key": "178477",
+   "ok": true
+  },
+  "123286": {
+   "key": "123286",
+   "ok": true
+  },
+  "121384": {
+   "key": "121384",
+   "ok": true
+  },
+  "2702337": {
+   "key": "2702337",
+   "ok": true
+  },
+  "137807": {
+   "key": "137807",
+   "ok": true
+  },
+  "12440001": {
+   "key": "12440001",
+   "ok": true
+  },
+  "124805": {
+   "key": "124805",
+   "ok": true
+  },
+  "183591": {
+   "key": "183591",
+   "ok": true
+  },
+  "10815546": {
+   "key": "10815546",
+   "ok": true
+  },
+  "4898060": {
+   "key": "4898060",
+   "ok": true
+  },
+  "1331104": {
+   "key": "1331104",
+   "ok": true
+  },
+  "7562227": {
+   "key": "7562227",
+   "ok": true
+  },
+  "11596184": {
+   "key": "11596184",
+   "ok": true
+  },
+  "186964": {
+   "key": "186964",
+   "ok": false,
+   "problem": "Papel errado para o primeiro に. 勤め é substantivo de ação (de 勤める), e 〜に出る com substantivo de ação marca finalidade, não destino: 勤めに出る é 'sair para trabalhar', o mesmo padrão de 見舞いに行く, que o próprio autor descreve como finalidade em outras duas frases desta leva (79343 e 147906). Chamar 勤め de destino trata um substantivo de ação como se fosse lugar.",
+   "corrected": "Duas ações são postas lado a lado: 家事をする recebe より ('do que') e 勤めに出た, onde に marca a finalidade de 出る (sair de casa para trabalhar), recebe ほう ('o lado'). ほう leva が e o predicado é 楽だ; o verbo antes de ほう aparece no passado, o que é comum nessa comparação."
+  },
+  "9764357": {
+   "key": "9764357",
+   "ok": true
+  },
+  "222304": {
+   "key": "222304",
+   "ok": true
+  },
+  "176682": {
+   "key": "176682",
+   "ok": true
+  },
+  "9001470": {
+   "key": "9001470",
+   "ok": true
+  },
+  "12696376": {
+   "key": "12696376",
+   "ok": true
+  },
+  "8587104": {
+   "key": "8587104",
+   "ok": true
+  },
+  "230091": {
+   "key": "230091",
+   "ok": true
+  },
+  "137812": {
+   "key": "137812",
+   "ok": true
+  },
+  "174578": {
+   "key": "174578",
+   "ok": true
+  },
+  "150978": {
+   "key": "150978",
+   "ok": true
+  },
+  "10025730": {
+   "key": "10025730",
+   "ok": true
+  },
+  "81036": {
+   "key": "81036",
+   "ok": true
+  },
+  "149108": {
+   "key": "149108",
+   "ok": true
+  },
+  "79568": {
+   "key": "79568",
+   "ok": true
+  },
+  "11264636": {
+   "key": "11264636",
+   "ok": true
+  },
+  "198244": {
+   "key": "198244",
+   "ok": true
+  },
+  "125416": {
+   "key": "125416",
+   "ok": true
+  },
+  "10137913": {
+   "key": "10137913",
+   "ok": true
+  },
+  "12299266": {
+   "key": "12299266",
+   "ok": true
+  },
+  "12662603": {
+   "key": "12662603",
+   "ok": true
+  },
+  "10984258": {
+   "key": "10984258",
+   "ok": true
+  },
+  "185384": {
+   "key": "185384",
+   "ok": true
+  },
+  "10655899": {
+   "key": "10655899",
+   "ok": true
+  },
+  "8667950": {
+   "key": "8667950",
+   "ok": true
+  },
+  "11505793": {
+   "key": "11505793",
+   "ok": true
+  },
+  "10561183": {
+   "key": "10561183",
+   "ok": true
+  },
+  "80968": {
+   "key": "80968",
+   "ok": true
+  },
+  "116096": {
+   "key": "116096",
+   "ok": true
+  },
+  "12423870": {
+   "key": "12423870",
+   "ok": true
+  },
+  "149668": {
+   "key": "149668",
+   "ok": true
+  },
+  "2117555": {
+   "key": "2117555",
+   "ok": true
+  },
+  "10826637": {
+   "key": "10826637",
+   "ok": true
+  },
+  "83858": {
+   "key": "83858",
+   "ok": true
+  },
+  "12957293": {
+   "key": "12957293",
+   "ok": true
+  },
+  "10550213": {
+   "key": "10550213",
+   "ok": true
+  },
+  "156782": {
+   "key": "156782",
+   "ok": true
+  },
+  "10798115": {
+   "key": "10798115",
+   "ok": true
+  },
+  "9044381": {
+   "key": "9044381",
+   "ok": true
+  },
+  "84185": {
+   "key": "84185",
+   "ok": true
+  },
+  "123614": {
+   "key": "123614",
+   "ok": true
+  },
+  "150278": {
+   "key": "150278",
+   "ok": true
+  },
+  "10990444": {
+   "key": "10990444",
+   "ok": true
+  },
+  "182859": {
+   "key": "182859",
+   "ok": true
+  },
+  "141448": {
+   "key": "141448",
+   "ok": true
+  },
+  "141474": {
+   "key": "141474",
+   "ok": true
+  },
+  "11450336": {
+   "key": "11450336",
+   "ok": true
+  },
+  "12412521": {
+   "key": "12412521",
+   "ok": true
+  },
+  "995147": {
+   "key": "995147",
+   "ok": true
+  },
+  "118499": {
+   "key": "118499",
+   "ok": true
+  },
+  "187043": {
+   "key": "187043",
+   "ok": true
+  },
+  "188685": {
+   "key": "188685",
+   "ok": true
+  },
+  "209280": {
+   "key": "209280",
+   "ok": true
+  },
+  "79343": {
+   "key": "79343",
+   "ok": true
+  },
+  "147906": {
+   "key": "147906",
+   "ok": true
+  },
+  "120672": {
+   "key": "120672",
+   "ok": true
+  },
+  "81231": {
+   "key": "81231",
+   "ok": true
+  },
+  "80930": {
+   "key": "80930",
+   "ok": true
+  },
+  "175375": {
+   "key": "175375",
+   "ok": true
+  },
+  "137189": {
+   "key": "137189",
+   "ok": true
+  },
+  "77173": {
+   "key": "77173",
+   "ok": true
+  },
+  "78455": {
+   "key": "78455",
+   "ok": true
+  },
+  "1083369": {
+   "key": "1083369",
+   "ok": true
+  },
+  "116003": {
+   "key": "116003",
+   "ok": true
+  },
+  "2432348": {
+   "key": "2432348",
+   "ok": true
+  },
+  "203803": {
+   "key": "203803",
+   "ok": true
+  },
+  "10868555": {
+   "key": "10868555",
+   "ok": true
+  },
+  "229817": {
+   "key": "229817",
+   "ok": true
+  },
+  "197127": {
+   "key": "197127",
+   "ok": true
+  },
+  "83384": {
+   "key": "83384",
+   "ok": true
+  },
+  "11574865": {
+   "key": "11574865",
+   "ok": true
+  },
+  "9849413": {
+   "key": "9849413",
+   "ok": true
+  },
+  "76719": {
+   "key": "76719",
+   "ok": true
+  },
+  "196632": {
+   "key": "196632",
+   "ok": true
+  },
+  "231251": {
+   "key": "231251",
+   "ok": true
+  },
+  "12164668": {
+   "key": "12164668",
+   "ok": true
+  },
+  "98399": {
+   "key": "98399",
+   "ok": true
+  },
+  "174442": {
+   "key": "174442",
+   "ok": true
+  },
+  "527159": {
+   "key": "527159",
+   "ok": true
+  },
+  "150591": {
+   "key": "150591",
+   "ok": true
+  },
+  "181529": {
+   "key": "181529",
+   "ok": true
+  },
+  "95333": {
+   "key": "95333",
+   "ok": true
+  },
+  "147138": {
+   "key": "147138",
+   "ok": true
+  },
+  "3565434": {
+   "key": "3565434",
+   "ok": true
+  },
+  "197966": {
+   "key": "197966",
+   "ok": true
+  },
+  "168379": {
+   "key": "168379",
+   "ok": true
+  },
+  "189360": {
+   "key": "189360",
+   "ok": true
+  },
+  "78942": {
+   "key": "78942",
+   "ok": true
+  },
+  "13155612": {
+   "key": "13155612",
+   "ok": true
+  },
+  "222236": {
+   "key": "222236",
+   "ok": true
+  },
+  "121539": {
+   "key": "121539",
+   "ok": true
+  },
+  "179744": {
+   "key": "179744",
+   "ok": true
+  },
+  "9046236": {
+   "key": "9046236",
+   "ok": true
+  },
+  "171948": {
+   "key": "171948",
+   "ok": true
+  },
+  "160973": {
+   "key": "160973",
+   "ok": true
+  },
+  "11698077": {
+   "key": "11698077",
+   "ok": true
+  },
+  "83471": {
+   "key": "83471",
+   "ok": true
+  },
+  "116449": {
+   "key": "116449",
+   "ok": true
+  },
+  "10990227": {
+   "key": "10990227",
+   "ok": true
+  },
+  "342178": {
+   "key": "342178",
+   "ok": true
+  },
+  "3573943": {
+   "key": "3573943",
+   "ok": true
+  },
+  "137876": {
+   "key": "137876",
+   "ok": true
+  },
+  "160492": {
+   "key": "160492",
+   "ok": true
+  },
+  "3241561": {
+   "key": "3241561",
+   "ok": true
+  },
+  "124393": {
+   "key": "124393",
+   "ok": true
+  },
+  "8873483": {
+   "key": "8873483",
+   "ok": true
+  },
+  "217558": {
+   "key": "217558",
+   "ok": true
+  },
+  "148276": {
+   "key": "148276",
+   "ok": true
+  },
+  "12643251": {
+   "key": "12643251",
+   "ok": true
+  },
+  "147116": {
+   "key": "147116",
+   "ok": true
+  },
+  "10790026": {
+   "key": "10790026",
+   "ok": true
+  },
+  "84057": {
+   "key": "84057",
+   "ok": true
+  },
+  "11883177": {
+   "key": "11883177",
+   "ok": true
+  },
+  "190365": {
+   "key": "190365",
+   "ok": true
+  },
+  "194393": {
+   "key": "194393",
+   "ok": true
+  },
+  "9853742": {
+   "key": "9853742",
+   "ok": true
+  }
+ }
+}

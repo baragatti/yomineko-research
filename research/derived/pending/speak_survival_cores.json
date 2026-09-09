@@ -1,0 +1,3128 @@
+{
+ "unit": "W32",
+ "phase": "authoring (R87 survival cores for the eleven stages without one)",
+ "generated_at": "2026-09-09T17:36:36",
+ "status": "authored, NOT applied - the apply is a separate DB-writer unit",
+ "method": {
+  "order": "1. select a real sentence already in corpus/sentences/bank.json; 2. otherwise mine a real Tatoeba sentence out of raw_tatoeba_sentence (248,705 rows, CC-BY, already licensed and ingested) that the bank does not yet hold; 3. only if neither exists, author the frame (spec 1.2, selection over generation).",
+  "filters": "register in ('neutral','polite') per the W31 derivation; punctuation-stripped length <= 20; exactly one communicative function; not already a say_now phrase; R86 (punctuation-normalised jp) unique path-wide and inside this table.",
+  "known_set": "KNOWN(stage) is the cumulative `words` of course/speak stages 1..N as shipped. Every row is proved on three counters: `unknown_vocab` = content lemmas with NO corpus/vocab record (hard gate, must be 0, else the learner meets a word that cannot be introduced, glossed or turned into an SRS card); `new_at_stage_start` = vocab not yet known when the stage opens (must be <= MAX_NEW = 3, the builder's i+1 budget, since an R87 phrase still passes it); `outside_stage_known_set` = the words the stage must additionally introduce once the row leads it.",
+  "vocab_resolution": "bank rows use the committed export dissection; mined and authored rows use SudachiPy(dict=full, split mode C) and resolve a content lemma against corpus/vocab by headword, any `forms[].form`, or kana. Particles, auxiliaries, punctuation and numerals are not content.",
+  "register": "reused from research/derived/pending/sentence_register_derived.json for bank rows; recomputed for mined and authored rows by importing scripts/derive_sentence_register_v2.py::decide (same predicate, same precedence, same D7 value set), so the values are comparable.",
+  "generated_rows": "jp drops the final 。; slug is gen-<sha1(jp)[:12]>; tatoeba_id is empty; ai_generated and needs_review are true; D10 caps them at one per unit of six, and this table holds at most one per stage.",
+  "byte_fidelity": "mined jp is copied verbatim from raw_tatoeba_sentence.text and the English from raw_tatoeba_translation.text for the same jp_id; a row whose English is not byte-identical to a stored translation is refused rather than paraphrased.",
+  "how_to_refute_a_row": "re-run the three known-set counters from the export; re-derive the register with scripts/derive_sentence_register_v2.py; check jp and en against the raw tables by id; check the R86 normalisation against course/speak; check that the pt-BR reads as the named function and as one act only."
+ },
+ "source": {
+  "bank": "corpus/sentences/bank.json (5,889)",
+  "raw_pool": "db/corpus.sqlite raw_tatoeba_sentence (248,705) + raw_tatoeba_translation (285,215), read from a scratch COPY, never written",
+  "path": "course/speak/course.json + 72 unit files",
+  "registers": "research/derived/pending/sentence_register_derived.json (W31)",
+  "builder": "scripts/export/build_speaking_path.py (STAGES, SURVIVAL_SEEDS, CHUNKS, PUNCT_RE, MAX_NEW)",
+  "readiness": "research/reports/readiness/speak_fast_path.md G2/G4/G5"
+ },
+ "counts": {
+  "rows": 71,
+  "stages": 11,
+  "by_source": {
+   "bank-select": 7,
+   "tatoeba-mined": 63,
+   "authored": 1
+  },
+  "real": 70,
+  "generated": 1,
+  "by_register": {
+   "neutral": 5,
+   "polite": 66
+  },
+  "per_stage": {
+   "arrival": 6,
+   "eating": 7,
+   "getting_around": 7,
+   "lodging": 8,
+   "about_you": 6,
+   "time_plans": 6,
+   "health": 7,
+   "past_stories": 6,
+   "politeness": 6,
+   "opinions": 6,
+   "real_talk": 6
+  },
+  "rows_with_unknown_vocab": 0,
+  "rows_needing_seed_extension": 20,
+  "max_new_at_stage_start": 3,
+  "max_length_no_punct": 15,
+  "with_tatoeba_audio": 11,
+  "near_duplicates_at_0_72": 0,
+  "refused": 0,
+  "canonical_frames_audited": 36
+ },
+ "frames_audit": [
+  {
+   "frame": "はじめまして",
+   "probe": "はじめまして",
+   "stage": "arrival",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-9699149",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 6,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "お名前は何ですか",
+   "probe": "お名前は",
+   "stage": "arrival",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-12889995",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 40,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "よろしくお願いします",
+   "probe": "よろしくお願い",
+   "stage": "arrival",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-806267",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 27,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "分かりません",
+   "probe": "分かりません",
+   "stage": "arrival",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-349070",
+   "real_in_bank": 3,
+   "real_in_raw_pool_with_english": 111,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "もう一度お願いします",
+   "probe": "もう一度",
+   "stage": "arrival",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-214165",
+   "real_in_bank": 5,
+   "real_in_raw_pool_with_english": 310,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "ゆっくり話してください",
+   "probe": "ゆっくり話",
+   "stage": "arrival",
+   "taught_before_w32": 1,
+   "covered_by_this_table": "sent:tatoeba-8795518",
+   "real_in_bank": 1,
+   "real_in_raw_pool_with_english": 49,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "これをください",
+   "probe": "をください",
+   "stage": "shopping",
+   "taught_before_w32": 2,
+   "covered_by_this_table": "sent:tatoeba-227004",
+   "real_in_bank": 8,
+   "real_in_raw_pool_with_english": 179,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "いくらですか",
+   "probe": "いくら",
+   "stage": "shopping",
+   "taught_before_w32": 5,
+   "covered_by_this_table": "",
+   "real_in_bank": 15,
+   "real_in_raw_pool_with_english": 497,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "お勘定お願いします",
+   "probe": "お勘定",
+   "stage": "eating",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-3452051",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 24,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "お会計お願いします",
+   "probe": "お会計",
+   "stage": "eating",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 6,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "メニューをください",
+   "probe": "メニュー",
+   "stage": "eating",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-12890046",
+   "real_in_bank": 1,
+   "real_in_raw_pool_with_english": 29,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "おすすめは何ですか",
+   "probe": "おすすめ",
+   "stage": "eating",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 28,
+   "blocked_by_missing_vocab": [
+    "おすすめ"
+   ]
+  },
+  {
+   "frame": "ベジタリアンです",
+   "probe": "ベジタリアン",
+   "stage": "eating",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 30,
+   "blocked_by_missing_vocab": [
+    "ベジタリアン"
+   ]
+  },
+  {
+   "frame": "お肉は食べられません",
+   "probe": "食べられません",
+   "stage": "eating",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-226787",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 7,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "駅はどこですか",
+   "probe": "はどこですか",
+   "stage": "getting_around",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-188894",
+   "real_in_bank": 6,
+   "real_in_raw_pool_with_english": 279,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "トイレはどこですか",
+   "probe": "トイレ",
+   "stage": "getting_around",
+   "taught_before_w32": 4,
+   "covered_by_this_table": "sent:tatoeba-201726",
+   "real_in_bank": 5,
+   "real_in_raw_pool_with_english": 190,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "駅まで行きたいです",
+   "probe": "まで行き",
+   "stage": "getting_around",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-223341",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 8,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "どこで乗り換えますか",
+   "probe": "乗り換え",
+   "stage": "getting_around",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-200960",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 34,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "切符はどこで買うのですか",
+   "probe": "切符",
+   "stage": "getting_around",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-142095",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 183,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "道に迷いました",
+   "probe": "道に迷",
+   "stage": "getting_around",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 97,
+   "blocked_by_missing_vocab": [
+    "迷う"
+   ]
+  },
+  {
+   "frame": "タクシーを呼んでください",
+   "probe": "タクシー",
+   "stage": "getting_around",
+   "taught_before_w32": 1,
+   "covered_by_this_table": "sent:tatoeba-203703",
+   "real_in_bank": 3,
+   "real_in_raw_pool_with_english": 271,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "チェックインお願いします",
+   "probe": "チェックイン",
+   "stage": "lodging",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 22,
+   "blocked_by_missing_vocab": [
+    "チェックイン"
+   ]
+  },
+  {
+   "frame": "予約してあります",
+   "probe": "予約して",
+   "stage": "lodging",
+   "taught_before_w32": 1,
+   "covered_by_this_table": "sent:tatoeba-2213120",
+   "real_in_bank": 3,
+   "real_in_raw_pool_with_english": 18,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "荷物を預かってください",
+   "probe": "荷物",
+   "stage": "lodging",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-186534",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 197,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "パスポートをなくしました",
+   "probe": "なくしました",
+   "stage": "lodging",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-10647148",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 7,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "Wi-Fiのパスワードは何ですか",
+   "probe": "Wi-Fi",
+   "stage": "lodging",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 5,
+   "blocked_by_missing_vocab": [
+    "Wi-Fi",
+    "パスワード"
+   ]
+  },
+  {
+   "frame": "今何時か分かりますか",
+   "probe": "何時",
+   "stage": "time_plans",
+   "taught_before_w32": 1,
+   "covered_by_this_table": "sent:tatoeba-172526",
+   "real_in_bank": 15,
+   "real_in_raw_pool_with_english": 622,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "助けてください",
+   "probe": "助けて",
+   "stage": "health",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-1039551",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 189,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "救急車を呼んでください",
+   "probe": "救急車",
+   "stage": "health",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 30,
+   "blocked_by_missing_vocab": [
+    "救急車"
+   ]
+  },
+  {
+   "frame": "警察を呼んでください",
+   "probe": "警察",
+   "stage": "health",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-176088",
+   "real_in_bank": 2,
+   "real_in_raw_pool_with_english": 484,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "お腹が痛いです",
+   "probe": "痛いです",
+   "stage": "health",
+   "taught_before_w32": 1,
+   "covered_by_this_table": "sent:tatoeba-10008425",
+   "real_in_bank": 1,
+   "real_in_raw_pool_with_english": 33,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "気分が悪いです",
+   "probe": "気分が悪い",
+   "stage": "health",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:tatoeba-752231",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 37,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "病院はどこですか",
+   "probe": "病院",
+   "stage": "health",
+   "taught_before_w32": 5,
+   "covered_by_this_table": "sent:tatoeba-10647294",
+   "real_in_bank": 6,
+   "real_in_raw_pool_with_english": 276,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "薬をください",
+   "probe": "薬をください",
+   "stage": "health",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "sent:gen-1c83f478ab11",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 11,
+   "blocked_by_missing_vocab": []
+  },
+  {
+   "frame": "アレルギーがあります",
+   "probe": "アレルギー",
+   "stage": "health",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 1,
+   "real_in_raw_pool_with_english": 72,
+   "blocked_by_missing_vocab": [
+    "アレルギー"
+   ]
+  },
+  {
+   "frame": "日本語で何と言いますか",
+   "probe": "何と言いますか",
+   "stage": "arrival",
+   "taught_before_w32": 0,
+   "covered_by_this_table": "",
+   "real_in_bank": 0,
+   "real_in_raw_pool_with_english": 18,
+   "blocked_by_missing_vocab": [
+    "日本語"
+   ]
+  }
+ ],
+ "near_duplicates": [],
+ "refused": [],
+ "rows": [
+  {
+   "stage": "arrival",
+   "function": "greet-on-first-meeting",
+   "sentence_slug": "sent:tatoeba-9699149",
+   "jp": "はじめまして。",
+   "en": "Nice to meet you.",
+   "pt": "Muito prazer.",
+   "register": "polite",
+   "why": "The opening move of any first contact. The builder already treats it as a CHUNK, so it costs zero vocabulary, and the path never taught it (readiness G5: 0 in bank).",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "9699149",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 6,
+   "is_chunk": true,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "はじめまして",
+   "stage_seed_hit": [
+    "はじめまして"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1307550"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1307550"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "arrival",
+   "function": "close-an-introduction",
+   "sentence_slug": "sent:tatoeba-806267",
+   "jp": "よろしくお願いします。",
+   "en": "Thank you in advance.",
+   "pt": "Desde já, obrigado.",
+   "register": "polite",
+   "why": "The fixed formula that closes an introduction. It is famously multi-function; this row pins the thank-in-advance reading, which is the one heard at a counter, and takes the Tatoeba translation that says exactly that.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "806267",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "よろしくお願い",
+   "stage_seed_hit": [
+    "お願いします"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1217950",
+     "vocab:1224890",
+     "vocab:1581900"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1224890",
+     "vocab:1581900"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 2
+  },
+  {
+   "stage": "arrival",
+   "function": "ask-someones-name",
+   "sentence_slug": "sent:tatoeba-12889995",
+   "jp": "お名前は何ですか？",
+   "en": "What is your name?",
+   "pt": "Como você se chama?",
+   "register": "polite",
+   "why": "The second turn of every introduction. The only name question on the path today is the keigo one in politeness-05, nine stages later.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "12889995",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "お名前は",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "お名前は"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1531710",
+     "vocab:1577100"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1531710",
+     "vocab:1577100"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "arrival",
+   "function": "signal-non-comprehension",
+   "sentence_slug": "sent:tatoeba-349070",
+   "jp": "分かりません。",
+   "en": "I don't understand.",
+   "pt": "Não entendi.",
+   "register": "polite",
+   "why": "The linguistic panic button. Without it the learner stalls on the first turn they miss. This id carries an English translation that says 'I don't understand' rather than 'I don't know'.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "349070",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 6,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "分かりません",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "分かりません"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1606560"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1606560"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 6
+  },
+  {
+   "stage": "arrival",
+   "function": "ask-for-repetition",
+   "sentence_slug": "sent:tatoeba-214165",
+   "jp": "もう一度お願いします。",
+   "en": "I beg your pardon?",
+   "pt": "Mais uma vez, por favor.",
+   "register": "polite",
+   "why": "Follows straight on from 'I don't understand', and hits the お願いします seed the stage already carries, so no seed extension is needed.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "214165",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "もう一度お願い",
+   "stage_seed_hit": [
+    "お願いします"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1217950",
+     "vocab:1581900",
+     "vocab:2005860"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1581900",
+     "vocab:2005860"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "arrival",
+   "function": "ask-for-slower-speech",
+   "sentence_slug": "sent:tatoeba-8795518",
+   "jp": "ゆっくり話してください。",
+   "en": "Please speak slowly.",
+   "pt": "Fale devagar, por favor.",
+   "register": "polite",
+   "why": "The path teaches this only in politeness-01 (stage 10, t5109, already used). A traveller needs it in week one.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "8795518",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 11,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "ゆっくり話し",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "ゆっくり話し"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1013050",
+     "vocab:1184280",
+     "vocab:1562350"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1013050",
+     "vocab:1562350"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "eating",
+   "function": "order-a-drink",
+   "sentence_slug": "sent:tatoeba-227004",
+   "jp": "お水をください。",
+   "en": "Can I have some water, please?",
+   "pt": "Me dê água, por favor.",
+   "register": "polite",
+   "why": "Already in the bank, real, polite, one new word and never selected. Asking for water is the most basic act at a table.",
+   "source": "bank-select",
+   "tatoeba_id": "227004",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "n4",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "お水をください",
+   "stage_seed_hit": [
+    "水"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1371260"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "export dissection (token.vocab)"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "eating",
+   "function": "ask-for-the-menu",
+   "sentence_slug": "sent:tatoeba-12890046",
+   "jp": "メニューをください。",
+   "en": "Menu, please!",
+   "pt": "O cardápio, por favor.",
+   "register": "polite",
+   "why": "First turn at a table. メニュー was already a stage seed and produced no request at all, only third-person descriptions of a lunch menu.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "12890046",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "メニューをください",
+   "stage_seed_hit": [
+    "メニュー"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1133790"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1133790"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "eating",
+   "function": "ask-what-is-good",
+   "sentence_slug": "sent:tatoeba-188145",
+   "jp": "何がおいしいですか。",
+   "en": "What do you suggest?",
+   "pt": "O que é gostoso aqui?",
+   "register": "polite",
+   "why": "The real counterpart of おすすめは何ですか. Every おすすめ sentence in the pool is 'I recommend X', which is a different speech act.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "188145",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "何がおいしい",
+   "stage_seed_hit": [
+    "おいしい"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1486650"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "eating",
+   "function": "ask-for-the-bill",
+   "sentence_slug": "sent:tatoeba-3452051",
+   "jp": "お勘定お願いします。",
+   "en": "Check, please.",
+   "pt": "A conta, por favor.",
+   "register": "polite",
+   "why": "Closes the transaction. お勘定 is in no stage seed list, so no bill sentence could ever be selected; the apply adds it as a survival term plus a seed extension.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "3452051",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "お勘定",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "お勘定"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1210750",
+     "vocab:1581900"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1210750",
+     "vocab:1581900"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "eating",
+   "function": "state-a-dietary-restriction",
+   "sentence_slug": "sent:tatoeba-226787",
+   "jp": "お肉は食べられません。",
+   "en": "I can't eat meat.",
+   "pt": "Eu não como carne.",
+   "register": "polite",
+   "why": "The one thing at a table that cannot be solved by pointing. Hits both 肉 and 食べる, seeds the stage already has.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "226787",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "食べられません",
+   "stage_seed_hit": [
+    "食べる",
+    "肉"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1463520"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1463520"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "eating",
+   "function": "compliment-the-food",
+   "sentence_slug": "sent:tatoeba-137275",
+   "jp": "大変おいしいですよ。",
+   "en": "It's really good.",
+   "pt": "Está muito bom mesmo.",
+   "register": "polite",
+   "why": "Returns the social turn after the meal, using おいしい in an utterance a person actually says rather than in a simile about air and fish. とてもおいしいですね was preferred and dropped: it scores 0.732 against the shipped とてもおいしいよ under the 6b near-duplicate rule.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "137275",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "おいしいですよ",
+   "stage_seed_hit": [
+    "おいしい"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1415000",
+     "vocab:1486650"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1415000"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "eating",
+   "function": "ask-for-an-english-menu",
+   "sentence_slug": "sent:tatoeba-3549484",
+   "jp": "英語のメニューはありますか？",
+   "en": "Do you have a menu in English?",
+   "pt": "Vocês têm cardápio em inglês?",
+   "register": "polite",
+   "why": "The real fallback when the menu has no pictures. Same メニュー family as the order row but a distinct function.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "3549484",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 13,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "英語のメニュー",
+   "stage_seed_hit": [
+    "メニュー"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1133790",
+     "vocab:1174420",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1133790",
+     "vocab:1174420",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "getting_around",
+   "function": "ask-where-something-is",
+   "sentence_slug": "sent:tatoeba-188894",
+   "jp": "駅はどこですか。",
+   "en": "Where is the railroad station?",
+   "pt": "Onde fica a estação?",
+   "register": "polite",
+   "why": "〜はどこですか is the highest-return frame on the path and appears in none of the 432 phrases. The six real bank examples hang off escalators and limousine buses.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "188894",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "はどこですか",
+   "stage_seed_hit": [
+    "どこ",
+    "駅"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1175140",
+     "vocab:1577140"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 9
+  },
+  {
+   "stage": "getting_around",
+   "function": "ask-where-the-toilet-is",
+   "sentence_slug": "sent:tatoeba-201726",
+   "jp": "トイレはどこですか。",
+   "en": "Where is the bathroom?",
+   "pt": "Onde fica o banheiro?",
+   "register": "polite",
+   "why": "Same frame with the noun a traveller needs first. Hits the どこ seed, so no seed extension.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "201726",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "トイレはどこ",
+   "stage_seed_hit": [
+    "どこ"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1084810",
+     "vocab:1577140"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1084810"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "getting_around",
+   "function": "ask-where-to-buy-a-ticket",
+   "sentence_slug": "sent:tatoeba-142095",
+   "jp": "切符はどこで買うのですか。",
+   "en": "Where can I get a ticket?",
+   "pt": "Onde eu compro a passagem?",
+   "register": "polite",
+   "why": "切符 was already a seed and all four ticket sentences in the bank are AI-generated.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "142095",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 12,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "切符はどこで",
+   "stage_seed_hit": [
+    "どこ",
+    "切符"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1385170",
+     "vocab:1577140"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1385170"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "getting_around",
+   "function": "ask-where-to-change-trains",
+   "sentence_slug": "sent:tatoeba-200960",
+   "jp": "どこで乗り換えるのでしょうか。",
+   "en": "Where do I have to change trains?",
+   "pt": "Onde eu troco de trem?",
+   "register": "polite",
+   "why": "Transfers are where a visitor stalls on the Tokyo network, and the only version in the bank is generated.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "200960",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 14,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "どこで乗り換え",
+   "stage_seed_hit": [
+    "どこ"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1577140",
+     "vocab:1600470"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1600470"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "getting_around",
+   "function": "check-a-vehicles-destination",
+   "sentence_slug": "sent:tatoeba-223341",
+   "jp": "このバスは美術館まで行きますか。",
+   "en": "Does this bus go to the museum?",
+   "pt": "Este ônibus vai até o museu?",
+   "register": "polite",
+   "why": "Confirms the destination before boarding, on the バス seed the stage already has.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "223341",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 15,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "まで行きますか",
+   "stage_seed_hit": [
+    "バス"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1098390",
+     "vocab:1486460"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1486460"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "getting_around",
+   "function": "ask-how-long-it-takes",
+   "sentence_slug": "sent:tatoeba-198204",
+   "jp": "バスでどのくらいかかりますか。",
+   "en": "How long does it take by bus?",
+   "pt": "Quanto tempo leva de ônibus?",
+   "register": "polite",
+   "why": "Already in the bank, real, polite and unused. Completes the pair 'where is it' and 'how long does it take'.",
+   "source": "bank-select",
+   "tatoeba_id": "198204",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "n5",
+   "length_no_punct": 14,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "どのくらいかかり",
+   "stage_seed_hit": [
+    "バス"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1098390",
+     "vocab:1207590",
+     "vocab:1442500"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1207590",
+     "vocab:1442500"
+    ],
+    "evidence": "export dissection (token.vocab)"
+   },
+   "survival_term_promotes_in_bank": 4
+  },
+  {
+   "stage": "getting_around",
+   "function": "ask-for-a-taxi",
+   "sentence_slug": "sent:tatoeba-203703",
+   "jp": "タクシーを呼んで下さい。",
+   "en": "Please call a taxi for me.",
+   "pt": "Chame um táxi, por favor.",
+   "register": "polite",
+   "why": "タクシー was a seed that produced no request. This is the fallback when public transport has stopped.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "203703",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 11,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "タクシーを呼ん",
+   "stage_seed_hit": [
+    "タクシー"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1076190",
+     "vocab:1266440"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "lodging",
+   "function": "state-you-have-a-reservation",
+   "sentence_slug": "sent:tatoeba-2213120",
+   "jp": "予約してあります。",
+   "en": "I have a reservation.",
+   "pt": "Eu tenho uma reserva.",
+   "register": "polite",
+   "why": "The first thing said at a front desk. The bank only had the plain 予約してある, also unused.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "2213120",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "予約してあり",
+   "stage_seed_hit": [
+    "予約"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1581900",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1581900",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "lodging",
+   "function": "ask-if-there-is-a-room",
+   "sentence_slug": "sent:tatoeba-235430",
+   "jp": "２人部屋はありますか。",
+   "en": "Do you have a double room?",
+   "pt": "Vocês têm quarto para duas pessoas?",
+   "register": "polite",
+   "why": "The no-reservation case. 部屋 was a seed, but 25 of the stage's 36 phrases came from one textbook id-run about 'the room' (R85).",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "235430",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "部屋はありますか",
+   "stage_seed_hit": [
+    "部屋"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1499320",
+     "vocab:1582670",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1582670",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "lodging",
+   "function": "ask-to-see-the-room",
+   "sentence_slug": "sent:tatoeba-11795598",
+   "jp": "部屋を見てみたいです。",
+   "en": "I'd like to see the room.",
+   "pt": "Eu queria ver o quarto.",
+   "register": "polite",
+   "why": "The next turn at the desk, in polite form and without the いただける that corpus/vocab does not record as an entry.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "11795598",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "部屋を見て",
+   "stage_seed_hit": [
+    "部屋"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1499320"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "lodging",
+   "function": "ask-for-a-cheaper-room",
+   "sentence_slug": "sent:tatoeba-193308",
+   "jp": "もっと安い部屋はありますか。",
+   "en": "Do you have a cheaper room?",
+   "pt": "Tem um quarto mais barato?",
+   "register": "polite",
+   "why": "Basic negotiation, and it reuses 安い from shopping inside the lodging scenario (R83 spiral).",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "193308",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 13,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "安い部屋",
+   "stage_seed_hit": [
+    "部屋"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1012620",
+     "vocab:1499320",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1012620",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "lodging",
+   "function": "report-a-room-problem",
+   "sentence_slug": "sent:tatoeba-226801",
+   "jp": "お湯が出ません。",
+   "en": "The hot water isn't running.",
+   "pt": "Não está saindo água quente.",
+   "register": "polite",
+   "why": "The stage title promises 'solve problems' and not one of its 36 phrases reports a room problem.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "226801",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "お湯が出ません",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "お湯が出ません"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1448580"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1448580"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "lodging",
+   "function": "report-a-lost-document",
+   "sentence_slug": "sent:tatoeba-10647148",
+   "jp": "パスポートをなくしました。",
+   "en": "I've lost my passport.",
+   "pt": "Eu perdi meu passaporte.",
+   "register": "polite",
+   "why": "The worst case of a trip, and パスポート already has a corpus/vocab record, unlike チェックイン and 救急車.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "10647148",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 12,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "をなくしました",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "をなくしました"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1101510",
+     "vocab:2835808"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1101510",
+     "vocab:2835808"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "lodging",
+   "function": "ask-to-leave-luggage",
+   "sentence_slug": "sent:tatoeba-186534",
+   "jp": "荷物を預かって欲しいのですが。",
+   "en": "Would you keep this baggage, please?",
+   "pt": "Vocês podem guardar minha bagagem?",
+   "register": "polite",
+   "why": "荷物 was a seed and produced no request. Leaving bags before check-in or after check-out is the one desk transaction a traveller cannot mime.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "186534",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 14,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "荷物を預か",
+   "stage_seed_hit": [
+    "荷物"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1195430",
+     "vocab:1544970"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1195430",
+     "vocab:1544970"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "lodging",
+   "function": "call-the-police",
+   "sentence_slug": "sent:tatoeba-176088",
+   "jp": "警察を呼んで下さい。",
+   "en": "Please call the police.",
+   "pt": "Chame a polícia, por favor.",
+   "register": "polite",
+   "why": "Filed under lodging, not health: it pairs with the lost-passport row rather than with 医者を呼んで下さい, which it scores 0.77 against under the 6b near-duplicate rule. The corpus has 484 short 警察 lines with an English pair and the path taught none of them.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "176088",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "警察を呼ん",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "警察を呼ん"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1252390"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1252390"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "about_you",
+   "function": "ask-where-someone-is-from",
+   "sentence_slug": "sent:tatoeba-5060",
+   "jp": "ご出身はどちらですか。",
+   "en": "Where do you come from?",
+   "pt": "De onde você é?",
+   "register": "polite",
+   "why": "出身 was a seed that produced no question at all. This is the turn that opens a conversation with a stranger.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "5060",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "ご出身は",
+   "stage_seed_hit": [
+    "出身"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1189360",
+     "vocab:1339260"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1189360",
+     "vocab:1339260"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "about_you",
+   "function": "ask-what-someone-does",
+   "sentence_slug": "sent:tatoeba-227125",
+   "jp": "お仕事は何ですか。",
+   "en": "What do you do?",
+   "pt": "Você trabalha com o quê?",
+   "register": "polite",
+   "why": "Zero new words at the point the stage begins, and 仕事 was already a seed.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "227125",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "お仕事は",
+   "stage_seed_hit": [
+    "仕事"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "about_you",
+   "function": "state-family-size",
+   "sentence_slug": "sent:tatoeba-186941",
+   "jp": "家族は４人です。",
+   "en": "We are a family of four.",
+   "pt": "Minha família tem quatro pessoas.",
+   "register": "polite",
+   "why": "A short reusable answer about family, on the 家族 seed.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "186941",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "家族は４人",
+   "stage_seed_hit": [
+    "家族"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1192150"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "about_you",
+   "function": "state-what-you-like",
+   "sentence_slug": "sent:tatoeba-154700",
+   "jp": "私は日本の料理が好きです。",
+   "en": "I like Japanese dishes.",
+   "pt": "Eu gosto de comida japonesa.",
+   "register": "polite",
+   "why": "〜が好きです is the engine of personal conversation and this instance links stage 6 back to stage 3.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "154700",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 12,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "料理が好き",
+   "stage_seed_hit": [
+    "好き"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1554310",
+     "vocab:1582710"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1554310",
+     "vocab:1582710"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "about_you",
+   "function": "state-where-you-live",
+   "sentence_slug": "sent:tatoeba-124907",
+   "jp": "田舎に住んでいます。",
+   "en": "I live in the country.",
+   "pt": "Eu moro no interior.",
+   "register": "polite",
+   "why": "住む was a seed and surfaced only in a sentence about someone's grandmother. This is the form the learner answers in.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "124907",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "に住んでいます",
+   "stage_seed_hit": [
+    "住む"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1442750",
+     "vocab:1465580"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1442750",
+     "vocab:1465580"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 3
+  },
+  {
+   "stage": "about_you",
+   "function": "ask-about-family",
+   "sentence_slug": "sent:tatoeba-237476",
+   "jp": "ご家族はいますか。",
+   "en": "Do you have a family?",
+   "pt": "Você tem família?",
+   "register": "polite",
+   "why": "Returning the question is what keeps a conversation alive; the natural partner of the 家族 statement row.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "237476",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "ご家族は",
+   "stage_seed_hit": [
+    "家族"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1192150",
+     "vocab:1465580"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1465580"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "time_plans",
+   "function": "ask-the-time",
+   "sentence_slug": "sent:tatoeba-172526",
+   "jp": "今何時か分かりますか。",
+   "en": "Have you got the time?",
+   "pt": "Você sabe que horas são?",
+   "register": "polite",
+   "why": "Zero new words, and it is the most frequent time question there is. The stage had none.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "172526",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "今何時",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "今何時"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "time_plans",
+   "function": "ask-when-something-starts",
+   "sentence_slug": "sent:tatoeba-189309",
+   "jp": "映画は何時からですか。",
+   "en": "When does the movie start?",
+   "pt": "O filme começa a que horas?",
+   "register": "polite",
+   "why": "Opening time serves a museum, a show and a bus. Also zero new words.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "189309",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "何時からですか",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "何時からですか"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "time_plans",
+   "function": "ask-until-when-something-is-open",
+   "sentence_slug": "sent:tatoeba-1171888",
+   "jp": "何時まで開いてますか。",
+   "en": "How late are you open?",
+   "pt": "Fica aberto até que horas?",
+   "register": "polite",
+   "why": "The other half of the pair. One mould covers a shop, a bank and a restaurant.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "1171888",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "何時まで開い",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "何時まで開い"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1202440"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1202440"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "time_plans",
+   "function": "propose-a-meeting",
+   "sentence_slug": "sent:tatoeba-80332",
+   "jp": "明日駅で会いましょう。",
+   "en": "I'll meet you down at the station tomorrow.",
+   "pt": "Amanhã a gente se encontra na estação.",
+   "register": "polite",
+   "why": "Agreeing on a time and a place is the stage title. 明日 and 会う were both seeds and produced no arrangement.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "80332",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "明日駅で会い",
+   "stage_seed_hit": [
+    "明日",
+    "会う"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "time_plans",
+   "function": "agree-on-an-hour",
+   "sentence_slug": "sent:tatoeba-235793",
+   "jp": "１時に会いましょう。",
+   "en": "Let's meet at one o'clock.",
+   "pt": "Vamos nos encontrar à uma hora.",
+   "register": "polite",
+   "why": "Settles the hour after the place is settled, with no new word.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "235793",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "時に会いましょう",
+   "stage_seed_hit": [
+    "会う"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "time_plans",
+   "function": "state-the-day",
+   "sentence_slug": "sent:tatoeba-11171012",
+   "jp": "明後日は火曜日です。",
+   "en": "The day after tomorrow is Tuesday.",
+   "pt": "Depois de amanhã é terça-feira.",
+   "register": "polite",
+   "why": "Already in the bank, real, polite and unused. 曜日 was a seed with no sentence that actually names a day.",
+   "source": "bank-select",
+   "tatoeba_id": "11171012",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "n4",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "は火曜日です",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "は火曜日です"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1194290",
+     "vocab:1584640"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1194290",
+     "vocab:1584640"
+    ],
+    "evidence": "export dissection (token.vocab)"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "health",
+   "function": "call-for-help",
+   "sentence_slug": "sent:tatoeba-1039551",
+   "jp": "助けてください。",
+   "en": "Please help me.",
+   "pt": "Me ajuda, por favor.",
+   "register": "polite",
+   "why": "助ける was a seed while the stage opened with 'any doctor will tell you to quit smoking'. This id also carries Tatoeba audio, which the later voice pass can use.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "1039551",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "助けてください",
+   "stage_seed_hit": [
+    "助ける"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1344410"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1344410"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "health",
+   "function": "ask-for-a-doctor",
+   "sentence_slug": "sent:tatoeba-190738",
+   "jp": "医者を呼んで下さい。",
+   "en": "Please call me a doctor.",
+   "pt": "Chame um médico, por favor.",
+   "register": "polite",
+   "why": "医者 appeared only in sentences about the profession. This is the emergency request. 救急車を呼んでください was preferred and refused: 救急車 has no corpus/vocab record.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "190738",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "医者を呼ん",
+   "stage_seed_hit": [
+    "医者"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1159980"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "health",
+   "function": "say-you-feel-unwell",
+   "sentence_slug": "sent:tatoeba-752231",
+   "jp": "気分が悪いです。",
+   "en": "I don't feel so good.",
+   "pt": "Estou passando mal.",
+   "register": "polite",
+   "why": "気分 was a seed and produced no report of feeling ill.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "752231",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "気分が悪い",
+   "stage_seed_hit": [
+    "気分"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1222590"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "health",
+   "function": "say-where-it-hurts",
+   "sentence_slug": "sent:tatoeba-10008425",
+   "jp": "お腹が痛いです。",
+   "en": "My stomach hurts.",
+   "pt": "Está doendo a barriga.",
+   "register": "polite",
+   "why": "痛い was a seed and the selected sentences discussed pain in the third person. This is first person, polite.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "10008425",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "お腹が痛い",
+   "stage_seed_hit": [
+    "痛い"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1002610"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 2
+  },
+  {
+   "stage": "health",
+   "function": "ask-where-the-hospital-is",
+   "sentence_slug": "sent:tatoeba-10647294",
+   "jp": "一番近い病院はどこですか？",
+   "en": "Where's the nearest hospital?",
+   "pt": "Onde fica o hospital mais perto?",
+   "register": "polite",
+   "why": "病院 was a seed and the stage's only hospital sentence said 'it is ten miles to the hospital'.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "10647294",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 12,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "病院はどこ",
+   "stage_seed_hit": [
+    "病院"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1490220"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "health",
+   "function": "say-you-have-a-fever",
+   "sentence_slug": "sent:tatoeba-200568",
+   "jp": "とても熱があります。",
+   "en": "I feel very feverish.",
+   "pt": "Estou com muita febre.",
+   "register": "polite",
+   "why": "熱 was a seed and the stage carried no symptom sentence at all.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "200568",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "熱があります",
+   "stage_seed_hit": [
+    "熱"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "health",
+   "function": "ask-for-medicine",
+   "sentence_slug": "sent:gen-1c83f478ab11",
+   "jp": "薬をください",
+   "en": "Some medicine, please.",
+   "pt": "Um remédio, por favor.",
+   "register": "polite",
+   "why": "GENERATED. The only real 薬をください sentence bundles two acts ('I don't feel well, could you give me some medicine'), which breaks the one-function rule. The bare frame exists nowhere and costs no word outside the stage's known set.",
+   "source": "authored",
+   "tatoeba_id": "",
+   "ai_generated": true,
+   "needs_review": true,
+   "layer": "C",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 6,
+   "is_chunk": false,
+   "register_rule": "polite-request",
+   "register_confidence": 0.85,
+   "survival_term": "薬をください",
+   "stage_seed_hit": [
+    "薬"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1538160"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "past_stories",
+   "function": "ask-how-something-went",
+   "sentence_slug": "sent:tatoeba-4751193",
+   "jp": "旅行どうでしたか？",
+   "en": "How was your trip?",
+   "pt": "Como foi a viagem?",
+   "register": "polite",
+   "why": "The question that opens any account, and 旅行 was already a seed.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "4751193",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "どうでしたか",
+   "stage_seed_hit": [
+    "旅行"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1454010"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1454010"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "past_stories",
+   "function": "ask-if-it-is-a-first-time",
+   "sentence_slug": "sent:tatoeba-122452",
+   "jp": "日本は初めてですか。",
+   "en": "Is this your first visit to Japan?",
+   "pt": "É a sua primeira vez no Japão?",
+   "register": "polite",
+   "why": "初めて was a seed and produced no question.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "122452",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "は初めてですか",
+   "stage_seed_hit": [
+    "初めて"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1582710"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1582710"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "past_stories",
+   "function": "say-you-enjoyed-it",
+   "sentence_slug": "sent:tatoeba-5207944",
+   "jp": "楽しかった。",
+   "en": "I had a good time.",
+   "pt": "Foi muito bom.",
+   "register": "neutral",
+   "why": "The short answer to 'how was it', on 楽しい, a stage seed. とても楽しかったです was preferred and dropped: it scores 0.75 against the shipped とても楽しい under the 6b near-duplicate rule.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "5207944",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 5,
+   "is_chunk": false,
+   "register_rule": "plain-predicate",
+   "register_confidence": 0.8,
+   "survival_term": "楽しかった",
+   "stage_seed_hit": [
+    "楽しい"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1207240"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 7
+  },
+  {
+   "stage": "past_stories",
+   "function": "say-you-have-done-something",
+   "sentence_slug": "sent:tatoeba-921333",
+   "jp": "外国に行ったことがあります。",
+   "en": "I have been abroad.",
+   "pt": "Eu já viajei para fora.",
+   "register": "polite",
+   "why": "〜たことがあります is the engine of an experience story.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "921333",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 13,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "外国に行った",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "外国に行った"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1203620",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1203620",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "past_stories",
+   "function": "ask-if-someone-has-done-something",
+   "sentence_slug": "sent:tatoeba-122877",
+   "jp": "日光へ行ったことがありますか。",
+   "en": "Have you ever been to Nikko?",
+   "pt": "Você já foi a Nikko?",
+   "register": "polite",
+   "why": "The same frame turned into a question, which is how the conversation alternates between the two speakers.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "122877",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 14,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "行ったことがありますか",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "行ったことがありますか"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1464030",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1464030",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 2
+  },
+  {
+   "stage": "past_stories",
+   "function": "describe-a-past-state",
+   "sentence_slug": "sent:tatoeba-169967",
+   "jp": "昨日は暑かった。",
+   "en": "It was hot yesterday.",
+   "pt": "Ontem estava quente.",
+   "register": "neutral",
+   "why": "昨日 was a seed and the plain past showed up only in long third-person sentences.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "169967",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "plain-predicate",
+   "register_confidence": 0.8,
+   "survival_term": "昨日は暑かった",
+   "stage_seed_hit": [
+    "昨日"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1343460"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1343460"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "politeness",
+   "function": "apologise-formally",
+   "sentence_slug": "sent:tatoeba-13117666",
+   "jp": "申し訳ありません。",
+   "en": "Please forgive me.",
+   "pt": "Sinto muito mesmo.",
+   "register": "polite",
+   "why": "申し訳 was a seed and the stage carried no short formal apology.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "13117666",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "申し訳ありません",
+   "stage_seed_hit": [
+    "申し訳"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1363050",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1363050",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "politeness",
+   "function": "take-leave-politely",
+   "sentence_slug": "sent:tatoeba-226989",
+   "jp": "お先に失礼します。",
+   "en": "I'm leaving first.",
+   "pt": "Com licença, vou indo.",
+   "register": "polite",
+   "why": "Leaving a room or a group without sounding rude. 失礼します is a CHUNK, so the row costs zero vocabulary.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "226989",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "お先に失礼",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "お先に失礼"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1320230",
+     "vocab:1581900"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1581900"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "politeness",
+   "function": "make-a-polite-request",
+   "sentence_slug": "sent:tatoeba-78970",
+   "jp": "予約をお願いできますか。",
+   "en": "Can I make a reservation?",
+   "pt": "Posso fazer uma reserva?",
+   "register": "polite",
+   "why": "Already in the bank, real, polite, zero new words and unused. 〜をお願いできますか is the standard polite request mould.",
+   "source": "bank-select",
+   "tatoeba_id": "78970",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "n3",
+   "length_no_punct": 11,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "お願いできますか",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "お願いできますか"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "export dissection (token.vocab)"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "politeness",
+   "function": "accept-something-humbly",
+   "sentence_slug": "sent:tatoeba-11041808",
+   "jp": "これをいただきます。",
+   "en": "I'll take this.",
+   "pt": "Vou levar este.",
+   "register": "polite",
+   "why": "いただく was a seed in the sense of receiving. This is the form a customer uses at a counter.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "11041808",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "をいただきます",
+   "stage_seed_hit": [
+    "いただく"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1587290"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "politeness",
+   "function": "ask-permission-politely",
+   "sentence_slug": "sent:tatoeba-122101",
+   "jp": "入ってもよろしいですか。",
+   "en": "Might I come in?",
+   "pt": "Posso entrar?",
+   "register": "polite",
+   "why": "よろしい was a seed and produced no permission question. 明日きっと伺います was authored first and refused: the W31 predicate derives 伺う as `formal`, outside the neutral/polite filter this table runs under, and every 伺う sentence has the same problem.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "122101",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 11,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "てもよろしいですか",
+   "stage_seed_hit": [
+    "よろしい"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1224880"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 2
+  },
+  {
+   "stage": "politeness",
+   "function": "apologise-for-being-late",
+   "sentence_slug": "sent:tatoeba-126707",
+   "jp": "遅れて申し訳ありません。",
+   "en": "Please pardon me for coming late.",
+   "pt": "Desculpe pelo atraso.",
+   "register": "polite",
+   "why": "Being late is the commonest reason a learner needs the formal register at all. ありがとうございます (sent:tatoeba-9559301) was authored first and refused twice over: ござる has no corpus/vocab record, and the phrase collides with a shipped one under R86.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "126707",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 11,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "遅れて申し訳",
+   "stage_seed_hit": [
+    "申し訳"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1363050",
+     "vocab:1586840"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1363050",
+     "vocab:1586840"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "opinions",
+   "function": "ask-for-an-opinion",
+   "sentence_slug": "sent:tatoeba-1271480",
+   "jp": "どう思いますか。",
+   "en": "What do you think?",
+   "pt": "O que você acha?",
+   "register": "polite",
+   "why": "The turn that hands the floor over, and the stage had no question at all. 私も賛成です was authored first and dropped: 賛成です is already a shipped phrase in this stage and the pair scores 0.733 under the 6b near-duplicate rule.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "1271480",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": true,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "どう思いますか",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "どう思いますか"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1454010"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1454010"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "opinions",
+   "function": "disagree-with-someone",
+   "sentence_slug": "sent:tatoeba-3583428",
+   "jp": "私は反対です。",
+   "en": "I oppose it.",
+   "pt": "Eu sou contra.",
+   "register": "polite",
+   "why": "反対 was a seed with no first-person disagreement anywhere.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "3583428",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 6,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "私は反対です",
+   "stage_seed_hit": [
+    "反対"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1480670"
+    ],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "opinions",
+   "function": "state-an-opinion",
+   "sentence_slug": "sent:tatoeba-160449",
+   "jp": "私はそう思います。",
+   "en": "I think so.",
+   "pt": "Eu acho que sim.",
+   "register": "polite",
+   "why": "と思います in its shortest use, which is how a learner first enters a discussion.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "160449",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "そう思います",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "そう思います"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1398030"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1398030"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 1
+  },
+  {
+   "stage": "opinions",
+   "function": "state-a-negative-opinion",
+   "sentence_slug": "sent:tatoeba-78713",
+   "jp": "彼は来ないと思います。",
+   "en": "I think he won't come.",
+   "pt": "Acho que ele não vem.",
+   "register": "polite",
+   "why": "Already in the bank, real, polite, zero new words and unused. Denying an expectation is half the use of と思います.",
+   "source": "bank-select",
+   "tatoeba_id": "78713",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "n3",
+   "length_no_punct": 10,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "ないと思います",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "ないと思います"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "export dissection (token.vocab)"
+   },
+   "survival_term_promotes_in_bank": 5
+  },
+  {
+   "stage": "opinions",
+   "function": "give-advice",
+   "sentence_slug": "sent:tatoeba-11870768",
+   "jp": "その方がいいと思う。",
+   "en": "I think it's better that way.",
+   "pt": "Acho melhor assim.",
+   "register": "neutral",
+   "why": "方がいい was a seed and the stage taught no advice at all.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "11870768",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 9,
+   "is_chunk": false,
+   "register_rule": "plain-predicate",
+   "register_confidence": 0.8,
+   "survival_term": "方がいいと思う",
+   "stage_seed_hit": [
+    "方がいい"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "opinions",
+   "function": "hedge-a-statement",
+   "sentence_slug": "sent:tatoeba-8724557",
+   "jp": "たぶん遅れる。",
+   "en": "I may be late.",
+   "pt": "Talvez eu me atrase.",
+   "register": "neutral",
+   "why": "たぶん was a seed serving only third-person sentences. Here the learner softens their own commitment.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "8724557",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 6,
+   "is_chunk": false,
+   "register_rule": "plain-predicate",
+   "register_confidence": 0.8,
+   "survival_term": "たぶん遅れる",
+   "stage_seed_hit": [
+    "たぶん"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "real_talk",
+   "function": "report-hearsay",
+   "sentence_slug": "sent:tatoeba-171474",
+   "jp": "今日もよい天気らしいですね。",
+   "en": "Looks like another nice day.",
+   "pt": "Dizem que hoje também vai fazer tempo bom.",
+   "register": "polite",
+   "why": "らしい was a seed and produced no polite hearsay sentence.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "171474",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 13,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "らしいですね",
+   "stage_seed_hit": [
+    "らしい"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "real_talk",
+   "function": "comment-on-how-someone-looks",
+   "sentence_slug": "sent:tatoeba-1059956",
+   "jp": "忙しそうですね。",
+   "en": "You look busy.",
+   "pt": "Você parece ocupado.",
+   "register": "polite",
+   "why": "〜そうです is the commonest small-talk move and the stage never taught it addressed to a person.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "1059956",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 7,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "忙しそうですね",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "忙しそうですね"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1398030",
+     "vocab:1519290"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1398030",
+     "vocab:1519290"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "real_talk",
+   "function": "compare-to-something",
+   "sentence_slug": "sent:tatoeba-3385029",
+   "jp": "警官みたいですね。",
+   "en": "You look like a cop.",
+   "pt": "Você parece um policial.",
+   "register": "polite",
+   "why": "みたい was a seed with no comparison said to somebody.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "3385029",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 8,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "みたいですね",
+   "stage_seed_hit": [
+    "みたい"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1252330",
+     "vocab:2016410"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1252330",
+     "vocab:2016410"
+    ],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 0
+  },
+  {
+   "stage": "real_talk",
+   "function": "do-two-things-at-once",
+   "sentence_slug": "sent:tatoeba-83210",
+   "jp": "歩きながら話しましょう。",
+   "en": "Let's talk as we go along.",
+   "pt": "Vamos conversar enquanto caminhamos.",
+   "register": "polite",
+   "why": "Already in the bank, real, polite, zero new words and unused. ながら was a seed and the selected sentences were all descriptive.",
+   "source": "bank-select",
+   "tatoeba_id": "83210",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "n3",
+   "length_no_punct": 11,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "ながら話し",
+   "stage_seed_hit": [
+    "ながら"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "export dissection (token.vocab)"
+   },
+   "survival_term_promotes_in_bank": 4
+  },
+  {
+   "stage": "real_talk",
+   "function": "express-a-regret",
+   "sentence_slug": "sent:tatoeba-2718657",
+   "jp": "電話すればよかったのに。",
+   "en": "You should've called.",
+   "pt": "Você devia ter ligado.",
+   "register": "neutral",
+   "why": "Already in the bank, real and unused. のに in its regret use, which is what is actually heard in conversation.",
+   "source": "bank-select",
+   "tatoeba_id": "2718657",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "n5",
+   "length_no_punct": 11,
+   "is_chunk": false,
+   "register_rule": "plain-predicate",
+   "register_confidence": 0.8,
+   "survival_term": "ばよかったのに",
+   "stage_seed_hit": [],
+   "seed_extension_required": [
+    "ばよかったのに"
+   ],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [
+     "vocab:1581900"
+    ],
+    "outside_stage_known_set": [
+     "vocab:1581900"
+    ],
+    "evidence": "export dissection (token.vocab)"
+   },
+   "survival_term_promotes_in_bank": 5
+  },
+  {
+   "stage": "real_talk",
+   "function": "say-something-just-happened",
+   "sentence_slug": "sent:tatoeba-77494",
+   "jp": "列車は今着いたばかりです。",
+   "en": "The train has just arrived here.",
+   "pt": "O trem acabou de chegar.",
+   "register": "polite",
+   "why": "ばかり was a seed and the selected sentences were complaints ('they do nothing but complain'), not the just-completed aspect.",
+   "source": "tatoeba-mined",
+   "tatoeba_id": "77494",
+   "ai_generated": false,
+   "needs_review": true,
+   "layer": "B",
+   "has_tatoeba_audio": false,
+   "level": "",
+   "length_no_punct": 12,
+   "is_chunk": false,
+   "register_rule": "polite-predicate",
+   "register_confidence": 0.95,
+   "survival_term": "着いたばかり",
+   "stage_seed_hit": [
+    "ばかり"
+   ],
+   "seed_extension_required": [],
+   "known_set": {
+    "definition": "cumulative `words` of course/speak stages 1..N (start = through N-1, end = through N)",
+    "unknown_vocab": [],
+    "new_at_stage_start": [],
+    "outside_stage_known_set": [],
+    "evidence": "SudachiPy(full, mode C) -> corpus/vocab headword|form|kana"
+   },
+   "survival_term_promotes_in_bank": 2
+  }
+ ]
+}

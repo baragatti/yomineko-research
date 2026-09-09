@@ -25,7 +25,31 @@ Guards before anything is written, because a bad ingest is expensive to unpick:
     romaji) -- and ANY violation rolls the whole transaction back. The Phase-3 repair learned this the
     hard way: a partially-applied batch is worse than none.
 
-Usage: ingest_mined_stages.py [--apply]   (default is a dry run)
+W13b made three changes, all of them about which rows this script can carry:
+
+  * --source PATH   the accepted-rows file. It used to be hardcoded at research/derived/mined_pt/
+                    _accepted.json, which is the 360-candidate stage run; the mined N3 set lives at
+                    research/derived/n3_mined/accepted.json and every later mining unit will land
+                    somewhere else again. The default is unchanged, so existing invocations still work.
+  * --tag TAG       replaces the `stage:<stage>` tag. `stage` is a field only the stage-mining rows
+                    carry; every other source left it empty and the bank filled with `stage:` tags
+                    pointing at nothing. The unit that produced the rows is what a later query actually
+                    wants, so the tags become ["mined", "<tag>"] and the default keeps the old
+                    behaviour when --tag is not given.
+  * generated rows  a sentence with no Tatoeba id (`tatoeba_id: ""`, `generated: true`) used to collapse
+                    onto the single Layer-B key "" and the single slug `sent:tatoeba-`, and would then
+                    be dropped by the jp-vs-raw guard, which has nothing to compare against. They now
+                    key and slug as `gen-<sha1(jp)[:12]>` / `sent:gen-<sha1(jp)[:12]>`, which is the
+                    scheme prepare_generated.py already uses for the 2,213 generated sentences in the
+                    bank, and the raw-Tatoeba guard is skipped for them (there is no Layer-A row to
+                    compare to; their Japanese is ours, and is marked ai_generated).
+
+Layer-B batches are read from --layerb (default research/derived/mined_layerb/) and indexed by
+`key`, falling back to `str(tatoeba_id)` so the 324 already-authored batches, which predate the key,
+still load.
+
+Usage: ingest_mined_stages.py [--apply] [--source PATH ...] [--layerb DIR] [--tag TAG] [--db PATH]
+       (default is a dry run)
 
 DRY-RUN CAVEAT, found the hard way on the first run: persist_dissection.persist() COMMITS internally, so
 wrapping it in BEGIN/rollback here does not undo anything. The first "dry run" of this script wrote all
@@ -35,7 +59,7 @@ reports what would happen, and refuses to call persist() at all. The invariant r
 earlier persist() call, so the pre-flight is what protects the corpus, not the rollback.
 """
 from __future__ import annotations
-import argparse, json, sqlite3, sys
+import argparse, hashlib, json, sqlite3, sys
 from collections import Counter
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -48,6 +72,24 @@ from dbtarget import db_target  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
 SRC = ROOT / "research" / "derived" / "mined_pt" / "_accepted.json"
+LAYERB = ROOT / "research" / "derived" / "mined_layerb"
+
+
+def sentence_key(row: dict) -> str:
+    """The stable Layer-B key for a mined row: the Tatoeba id, or a content hash when it has none.
+
+    Kept identical to scripts/derive_layerb.py::sentence_key — the derivation and the ingest have to
+    agree on identity or the Layer-B silently lands on the wrong sentence (or, for the generated rows,
+    on all of them at once).
+    """
+    tid = row.get("tatoeba_id")
+    if not row.get("generated") and tid not in (None, ""):
+        return str(tid)
+    return "gen-" + hashlib.sha1(row["jp"].encode("utf-8")).hexdigest()[:12]
+
+
+def sentence_slug(key: str) -> str:
+    return f"sent:{key}" if key.startswith("gen-") else f"sent:tatoeba-{key}"
 
 
 def invariants(con: sqlite3.Connection, sid: int) -> list[str]:
@@ -71,13 +113,22 @@ def invariants(con: sqlite3.Connection, sid: int) -> list[str]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="write; default is dry-run")
+    ap.add_argument("--source", type=Path, action="append",
+                    help="accepted-rows json; repeatable (real + generated live in two files)")
+    ap.add_argument("--layerb", type=Path, default=LAYERB, help="dir of Layer-B batch-*.json")
+    ap.add_argument("--tag", default=None,
+                    help="unit tag written alongside 'mined'; default keeps the old stage:<stage>")
+    ap.add_argument("--db", type=Path, default=None, help="target DB (default: db_target)")
     args = ap.parse_args()
-    if not SRC.exists():
-        print(f"missing {SRC.relative_to(ROOT)} — run the authoring workflow first")
-        return 1
-    data = json.loads(SRC.read_text(encoding="utf-8"))
-    rows = [r for r in data["rows"] if not r.get("reject")]
-    print(f"{len(rows)} accepted rows to ingest")
+    sources, db = args.source or [SRC], args.db or DB
+    rows = []
+    for src in sources:
+        if not src.exists():
+            print(f"missing {src} — run the authoring workflow first")
+            return 1
+        rows += [r for r in json.loads(src.read_text(encoding="utf-8"))["rows"]
+                 if not r.get("reject")]
+    print(f"{len(rows)} accepted rows to ingest from {len(sources)} source file(s)")
 
     from dissect import Dissector
     from persist_dissection import persist
@@ -86,12 +137,13 @@ def main() -> int:
     # dissection_tier "full", which validate.py reads as a promise of a gloss on every content token, an
     # explanation on every particle, and a structure paragraph. Ingesting without these is what produced
     # 2,756 validator errors on the first trial run.
-    layerb: dict[int, dict] = {}
-    for f in sorted((ROOT / "research" / "derived" / "mined_layerb").glob("batch-*.json")):
+    layerb: dict[str, dict] = {}
+    for f in sorted(args.layerb.glob("batch-*.json")):
         for s2 in json.loads(f.read_text(encoding="utf-8")).get("sentences", []):
-            layerb[s2["tatoeba_id"]] = s2
+            # `key` is W13b's; the 324 batches authored before it carry only tatoeba_id.
+            layerb[str(s2.get("key") or s2["tatoeba_id"])] = s2
     print(f"{len(layerb)} sentences carry authored Layer-B dissection content")
-    con = sqlite3.connect(DB)
+    con = sqlite3.connect(db)
     raw = {i: t for i, t in con.execute("SELECT id,text FROM raw_tatoeba_sentence")}
     have = {s for s, in con.execute("SELECT slug FROM sentence")}
     diss = Dissector(DB)
@@ -100,25 +152,29 @@ def main() -> int:
     con.execute("BEGIN")
     for r in rows:
         tid, jp = r["tatoeba_id"], r["jp"]
-        slug = f"sent:tatoeba-{tid}"
-        if raw.get(tid) != jp:
+        key = sentence_key(r)
+        slug = sentence_slug(key)
+        generated = key.startswith("gen-")
+        if not generated and raw.get(tid) != jp:
             # The Japanese is Layer A. If it does not match the source row byte-for-byte, someone
-            # edited it, and we drop rather than ingest a silently-altered original.
+            # edited it, and we drop rather than ingest a silently-altered original. A generated row
+            # has no Layer-A original to compare against, so the guard does not apply to it — what
+            # protects those is `ai_generated` + `needs_review`, not this check.
             problems.append((slug, "jp does not match the raw Tatoeba row"))
             stats["jp-altered"] += 1
             continue
         if slug in have:
             stats["already-banked"] += 1
             continue
-        lb = layerb.get(tid, {})
+        lb = layerb.get(key, {})
         # The English anchor is Layer A and belongs to the jp id, so read it from the source of truth
         # rather than trusting it to survive the authoring round-trip. The pt-BR authoring schema
         # ({tatoeba_id, jp, pt, pt_literal, register, reject, reject_reason}) has no `en` key, so
         # `r.get("en")` silently returned None for all 324 rows of the first run and every one landed
         # with no anchor -- see research/reports/en_anchor_backfill.md.
-        anchor = r.get("en") or (con.execute(
+        anchor = r.get("en") or (None if generated else (con.execute(
             "SELECT text FROM raw_tatoeba_translation WHERE jp_id=? AND lang='eng' "
-            "ORDER BY trans_id LIMIT 1", (tid,)).fetchone() or (None,))[0]
+            "ORDER BY trans_id LIMIT 1", (tid,)).fetchone() or (None,))[0])
         rec = {
             "slug": slug, "jp": jp, "en": anchor,
             "pt": r.get("pt"), "pt_literal": r.get("pt_literal"),
@@ -126,8 +182,11 @@ def main() -> int:
             # persist() keys these by token/particle POSITION, so they must be dicts, not lists.
             "tokens": {t["position"]: t for t in lb.get("tokens", [])},
             "particles": {q["position"]: q for q in lb.get("particles", [])},
-            "jp_source": "tatoeba", "ai_generated": 0,
-            "tags": ["mined", f"stage:{r.get('stage', '')}"],
+            # "ai-generated" is prepare_generated.py's value and covers 2,207 of the 2,213 gen rows
+            # already banked; matching it keeps one convention rather than adding a second.
+            "jp_source": "ai-generated" if generated else "tatoeba",
+            "ai_generated": 1 if generated else 0,
+            "tags": ["mined", args.tag or f"stage:{r.get('stage', '')}"],
             "translation_confidence": 0.8,
         }
         if not args.apply:

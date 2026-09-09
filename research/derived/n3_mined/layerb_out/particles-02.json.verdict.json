@@ -1,0 +1,1433 @@
+{
+ "kind": "particles-verdict",
+ "unit": "W13b",
+ "source_work_list": "particles-02.json",
+ "verified_file": "research/derived/n3_mined/layerb_out/particles-02.json",
+ "part": 2,
+ "count": 200,
+ "ok": 197,
+ "problems": 3,
+ "rejected": 0,
+ "status": "complete",
+ "identity": "key + position (copied from the authored file, never recomputed)",
+ "method": "Every row read against its own sentence: (1) does the stated function match this occurrence, not the particle's commonest use; (2) is every Japanese string quoted in the explanation present in the sentence, or a legitimate lemma/pattern citation of a token that is; (3) is the pt-BR natural, pt-BR (never pt-PT), free of em dash and of literal 'Quanto a' mirroring. Identity, duplicate and coverage checks ran mechanically over all 200 rows: 200/200 matched a work row, 0 duplicates, 0 missing, 0 surface or function_type drift.",
+ "notes_on_the_three_fixes": "All three are the same defect: a correct explanation closed by an absolute rule that is false. Only the explanation_pt changes; function_pt as authored is right in each case.",
+ "checked_and_passed": "The 47 rows whose explanation quotes a Japanese string absent from the sentence were each inspected: every one is a dictionary form of a token that IS in the sentence (住む for 住んで, 着く for 着いた, あく for あいちゃった), a pattern citation (〜に慣れる, 〜たりする, 〜を必要とする), or a metalinguistic mention (ん = の, で = て sonorizado, が em oração relativa, こわい contrastado com こわがる). None is an invented token.",
+ "rows": [
+  {
+   "key": "126971",
+   "position": 5,
+   "surface": "から",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "172468",
+   "position": 5,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "172468",
+   "position": 6,
+   "surface": "を",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "191371",
+   "position": 5,
+   "surface": "ば",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "208085",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10367179",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "verdict": "fix",
+   "problem": "O corpo da explicação está certo (に de lugar de existência), mas a regra final é falsa: 'com いる e ある o lugar leva に, nunca で'. ある admite で quando fala de um acontecimento, e o próprio arquivo ensina isso na linha 171886@9 (その市で火災があった, glosada como 'lugar do acontecimento'). Deixar 'nunca で' contradiz outra linha do mesmo lote e prepara um erro no aluno.",
+   "corrected": {
+    "explanation_pt": "に marca この世 como o lugar onde a existência está sendo negada; quando いる e ある falam de alguém ou algo que está em algum lugar, esse lugar leva に."
+   },
+   "verifier_explanation_pt": "に marca この世 como o lugar onde a existência está sendo negada; quando いる e ある falam de alguém ou algo que está em algum lugar, esse lugar leva に."
+  },
+  {
+   "key": "10367179",
+   "position": 3,
+   "surface": "なんて",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "110110",
+   "position": 5,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "149911",
+   "position": 3,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "149911",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "149911",
+   "position": 8,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "5167",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "5167",
+   "position": 4,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "103881",
+   "position": 6,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "104699",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "230735",
+   "position": 5,
+   "surface": "か",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "90533",
+   "position": 3,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "13342669",
+   "position": 3,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "11589793",
+   "position": 4,
+   "surface": "から",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "11589793",
+   "position": 9,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "156214",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "118082",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "118082",
+   "position": 7,
+   "surface": "な",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "97504",
+   "position": 6,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "188789",
+   "position": 7,
+   "surface": "か",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1037435",
+   "position": 1,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1037435",
+   "position": 2,
+   "surface": "が",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1037435",
+   "position": 6,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1037435",
+   "position": 7,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "220404",
+   "position": 2,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "220404",
+   "position": 6,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "108003",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "86758",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "224905",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "201987",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "201987",
+   "position": 7,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "219701",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "219701",
+   "position": 6,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "219701",
+   "position": 8,
+   "surface": "より",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "219701",
+   "position": 9,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "219701",
+   "position": 11,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "224476",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "verdict": "fix",
+   "problem": "A regra final generaliza demais: 'verbos que deixam algo posto em algum lugar pedem に, não で'. 張る aceita で sem problema (公園でテントを張る), e a diferença é de foco, não de proibição. O aluno sai daqui achando que で está bloqueado.",
+   "corrected": {
+    "explanation_pt": "に marca ここ como o ponto onde a barraca vai ficar depois de armada: com 張る, に aponta o lugar em que a coisa fica instalada, enquanto で apontaria só onde a atividade acontece."
+   },
+   "verifier_explanation_pt": "に marca ここ como o ponto onde a barraca vai ficar depois de armada: com 張る, に aponta o lugar em que a coisa fica instalada, enquanto で apontaria só onde a atividade acontece."
+  },
+  {
+   "key": "1429078",
+   "position": 3,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1429078",
+   "position": 5,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1429078",
+   "position": 6,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1429078",
+   "position": 7,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9422893",
+   "position": 1,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9422893",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10989322",
+   "position": 4,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "74914",
+   "position": 2,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "2173972",
+   "position": 2,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "2173972",
+   "position": 4,
+   "surface": "て",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "123677",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "96453",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "369374",
+   "position": 1,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "218719",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "218719",
+   "position": 6,
+   "surface": "か",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "219401",
+   "position": 5,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "11700358",
+   "position": 6,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "8720702",
+   "position": 4,
+   "surface": "な",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "108420",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "108420",
+   "position": 7,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "182171",
+   "position": 7,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "182171",
+   "position": 9,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "174465",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "199733",
+   "position": 3,
+   "surface": "より",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "3452231",
+   "position": 1,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "85999",
+   "position": 7,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "160406",
+   "position": 4,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "160406",
+   "position": 5,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "124411",
+   "position": 1,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "124411",
+   "position": 2,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "186055",
+   "position": 4,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "205498",
+   "position": 4,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10784568",
+   "position": 5,
+   "surface": "な",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "74900",
+   "position": 6,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "74900",
+   "position": 10,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "542911",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "542911",
+   "position": 2,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "2971627",
+   "position": 9,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "137996",
+   "position": 6,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "11783475",
+   "position": 9,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "87132",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "112824",
+   "position": 7,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "112824",
+   "position": 8,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "7989417",
+   "position": 8,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "11619825",
+   "position": 1,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "11619825",
+   "position": 3,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "8879785",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "8879785",
+   "position": 5,
+   "surface": "って",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "218919",
+   "position": 4,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10157895",
+   "position": 3,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10157895",
+   "position": 4,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10765539",
+   "position": 7,
+   "surface": "たり",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "103046",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "211658",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "101155",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "101155",
+   "position": 6,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "4919848",
+   "position": 2,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "4919848",
+   "position": 3,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "4919848",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "216587",
+   "position": 1,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "216587",
+   "position": 4,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "216587",
+   "position": 7,
+   "surface": "な",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9817312",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "122186",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "77818",
+   "position": 1,
+   "surface": "より",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "143087",
+   "position": 8,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "143087",
+   "position": 12,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9300169",
+   "position": 4,
+   "surface": "て",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "222014",
+   "position": 4,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "222014",
+   "position": 5,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "199345",
+   "position": 1,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "111011",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "145237",
+   "position": 6,
+   "surface": "な",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "145239",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "126111",
+   "position": 4,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "126111",
+   "position": 7,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "220591",
+   "position": 2,
+   "surface": "に",
+   "ok": false,
+   "verdict": "fix",
+   "problem": "'com 少ない o lugar leva に' é apresentado como regência de 少ない, e não é: この地区では書店が少ない é igualmente corrente. O に daqui é o locativo de existência marcado por には, não uma exigência do adjetivo.",
+   "corrected": {
+    "explanation_pt": "に marca この地区 como o lugar onde as livrarias são poucas: 少ない fala de quanta coisa existe ali, e por isso o lugar entra com に, como acontece com ある."
+   },
+   "verifier_explanation_pt": "に marca この地区 como o lugar onde as livrarias são poucas: 少ない fala de quanta coisa existe ali, e por isso o lugar entra com に, como acontece com ある."
+  },
+  {
+   "key": "220591",
+   "position": 3,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "3579410",
+   "position": 3,
+   "surface": "な",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "86847",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "152133",
+   "position": 1,
+   "surface": "を",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "152133",
+   "position": 3,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "152133",
+   "position": 8,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "154810",
+   "position": 6,
+   "surface": "ねえ",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "222436",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "109727",
+   "position": 3,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "187672",
+   "position": 1,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "191051",
+   "position": 1,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "205060",
+   "position": 6,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "5309",
+   "position": 6,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "5309",
+   "position": 7,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "5309",
+   "position": 10,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "143921",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "208475",
+   "position": 8,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "153153",
+   "position": 3,
+   "surface": "より",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "189886",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "189886",
+   "position": 2,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "189886",
+   "position": 5,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "189886",
+   "position": 6,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10671983",
+   "position": 1,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "10671983",
+   "position": 2,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1632348",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1632348",
+   "position": 2,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1632348",
+   "position": 5,
+   "surface": "しか",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1632348",
+   "position": 8,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "94619",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "184561",
+   "position": 7,
+   "surface": "が",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "75844",
+   "position": 8,
+   "surface": "か",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "207052",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "207052",
+   "position": 7,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "207052",
+   "position": 9,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "141395",
+   "position": 1,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "141395",
+   "position": 5,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "97357",
+   "position": 6,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "203576",
+   "position": 1,
+   "surface": "って",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "203576",
+   "position": 4,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "203576",
+   "position": 6,
+   "surface": "もの",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "143461",
+   "position": 1,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "143461",
+   "position": 6,
+   "surface": "もの",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9695286",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9695286",
+   "position": 6,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "168304",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "78371",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "186719",
+   "position": 1,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "171886",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "171886",
+   "position": 5,
+   "surface": "ば",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "171886",
+   "position": 9,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "186715",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "186715",
+   "position": 4,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "186715",
+   "position": 7,
+   "surface": "へ",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "186715",
+   "position": 9,
+   "surface": "を",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "206560",
+   "position": 2,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "86328",
+   "position": 3,
+   "surface": "を",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "106249",
+   "position": 3,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "176793",
+   "position": 1,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "176793",
+   "position": 4,
+   "surface": "も",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "2230130",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "2230130",
+   "position": 7,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "160243",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "206291",
+   "position": 6,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "206291",
+   "position": 7,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9142938",
+   "position": 1,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "9142938",
+   "position": 5,
+   "surface": "ん",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "921365",
+   "position": 1,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "235574",
+   "position": 2,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "235574",
+   "position": 3,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "85103",
+   "position": 7,
+   "surface": "で",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "85103",
+   "position": 11,
+   "surface": "と",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "141990",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1170898",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1170898",
+   "position": 7,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "1170898",
+   "position": 8,
+   "surface": "は",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "232117",
+   "position": 3,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "11341128",
+   "position": 6,
+   "surface": "の",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "215039",
+   "position": 1,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "179732",
+   "position": 3,
+   "surface": "より",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "179712",
+   "position": 1,
+   "surface": "より",
+   "ok": true,
+   "verdict": "ok"
+  },
+  {
+   "key": "139436",
+   "position": 4,
+   "surface": "に",
+   "ok": true,
+   "verdict": "ok"
+  }
+ ]
+}

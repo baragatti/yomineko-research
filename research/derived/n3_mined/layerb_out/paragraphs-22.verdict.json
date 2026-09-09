@@ -1,0 +1,120 @@
+{
+ "kind": "paragraphs-verdict",
+ "unit": "W13b",
+ "file": "paragraphs-22.json",
+ "input": "research/derived/n3_mined/layerb_work/paragraphs-22.json",
+ "authored": "research/derived/n3_mined/layerb_out/paragraphs-22.json",
+ "verified_by": "W13b paragraphs verifier (adversarial, independent of the author)",
+ "identity": "key (copied from the authored rows, never recomputed); map key is the sentence key",
+ "field": "structure_explanation_pt",
+ "authored_rows": 23,
+ "checked": 23,
+ "ok": 22,
+ "corrected": 1,
+ "rejected": 0,
+ "status": "COMPLETE",
+ "note": "A `corrected` entry carries the full replacement structure_explanation_pt; merge it in place of the authored text (verdict `fix`, verifier_structure_explanation_pt = corrected). An entry with `ok: false` and no `corrected` is a reject: drop the row, leave the slot as the derivation left it. A key absent from `verdicts` was never checked and must NOT be treated as an acceptance.",
+ "checks_applied": [
+  "structure: topic/subject identity, role of the target construction, no invented elements",
+  "pt-BR only (no pt-PT lexicon or 'estar a + infinitivo')",
+  "no em dash",
+  "at most two sentences",
+  "machine labels in the work file are NOT authoritative: a paragraph that overrides a wrong clause_structure_predicted or a wrong particle function_pt is correct, not a problem"
+ ],
+ "verdicts": {
+  "91340": {
+   "key": "91340",
+   "ok": true
+  },
+  "85255": {
+   "key": "85255",
+   "ok": true
+  },
+  "189589": {
+   "key": "189589",
+   "ok": true
+  },
+  "75707": {
+   "key": "75707",
+   "ok": true
+  },
+  "121229": {
+   "key": "121229",
+   "ok": true
+  },
+  "174336": {
+   "key": "174336",
+   "ok": true
+  },
+  "173127": {
+   "key": "173127",
+   "ok": true
+  },
+  "393788": {
+   "key": "393788",
+   "ok": false,
+   "problem": "Deslize de artigo no parêntese sobre や: 'や lista exemplos, não a lista fechada' usa artigo definido onde cabe indefinido e a frase fica truncada em pt-BR. A descrição da estrutura (このため como motivo, から…にかけて como faixa de tempo, 天気 como predicado nominal fechado por でしょう) está correta; só o parêntese precisa do ajuste.",
+   "corrected": "このため retoma o que veio antes como motivo ('por isso'), e o trecho 今夜から明日にかけて delimita a faixa de tempo: から dá o ponto de início e にかけて dá o ponto final, cobrindo tudo entre os dois. O predicado é o substantivo 天気, qualificado por 曇りや雨 (や dá exemplos e deixa a lista em aberto) e fechado por でしょう, que apresenta a previsão como provável e não como certa."
+  },
+  "85291": {
+   "key": "85291",
+   "ok": true
+  },
+  "220364": {
+   "key": "220364",
+   "ok": true
+  },
+  "205802": {
+   "key": "205802",
+   "ok": true
+  },
+  "1485543": {
+   "key": "1485543",
+   "ok": true
+  },
+  "148935": {
+   "key": "148935",
+   "ok": true
+  },
+  "96813": {
+   "key": "96813",
+   "ok": true
+  },
+  "189282": {
+   "key": "189282",
+   "ok": true
+  },
+  "145617": {
+   "key": "145617",
+   "ok": true
+  },
+  "1218420": {
+   "key": "1218420",
+   "ok": true
+  },
+  "100809": {
+   "key": "100809",
+   "ok": true
+  },
+  "208662": {
+   "key": "208662",
+   "ok": true
+  },
+  "207396": {
+   "key": "207396",
+   "ok": true
+  },
+  "108232": {
+   "key": "108232",
+   "ok": true
+  },
+  "138347": {
+   "key": "138347",
+   "ok": true
+  },
+  "gen-482d7dfc9c92": {
+   "key": "gen-482d7dfc9c92",
+   "ok": true
+  }
+ }
+}

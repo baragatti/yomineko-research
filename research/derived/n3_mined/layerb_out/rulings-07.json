@@ -1,0 +1,1445 @@
+{
+ "kind": "rulings",
+ "unit": "W13b",
+ "file": "rulings-07.json",
+ "part": 7,
+ "parts": 11,
+ "count": 150,
+ "authored_by": "W13b rulings author (batch 07)",
+ "notes": "One `ruling` per (lemma, pos), as the assembler expects. Where the derived gloss was wrong for only some occurrences, `ruling` carries the gloss that covers the pair as a whole and `context_overrides` records the per-sentence gloss (keys are the work list's own sentence keys). `context_overrides` is advisory: the assembler applies `ruling` only, so a reviewer who wants the split has to emit those as `tokens` rows.",
+ "rows": [
+  {
+   "lemma": "含む",
+   "pos": "verb",
+   "ruling": "conter; incluir",
+   "derived_ok": true,
+   "note": "Registry sense 0, trimmed; all three occurrences are 'incluir/conter'."
+  },
+  {
+   "lemma": "皮",
+   "pos": "noun",
+   "ruling": "pele; couro",
+   "derived_ok": false,
+   "note": "Derived 'pele' misses the leather sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "couro",
+     "keys": [
+      "2063318"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "想像",
+   "pos": "noun",
+   "ruling": "imaginação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "言語",
+   "pos": "noun",
+   "ruling": "língua; idioma",
+   "derived_ok": true
+  },
+  {
+   "lemma": "幕",
+   "pos": "noun",
+   "ruling": "cortina; ato (de peça)",
+   "derived_ok": false,
+   "note": "Derived 'cortina (de palco)' fits only one of three; two are the counter/theatre-act sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "cortina (de palco)",
+     "keys": [
+      "81222"
+     ]
+    },
+    {
+     "gloss_pt": "ato (de peça)",
+     "keys": [
+      "222182",
+      "81223"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "越える",
+   "pos": "verb",
+   "ruling": "atravessar; ultrapassar",
+   "derived_ok": false,
+   "note": "Derived covers only the physical crossing; one occurrence is age exceeding.",
+   "context_overrides": [
+    {
+     "gloss_pt": "atravessar; transpor",
+     "keys": [
+      "125831",
+      "107256"
+     ]
+    },
+    {
+     "gloss_pt": "ultrapassar; passar de",
+     "keys": [
+      "115150"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "年中",
+   "pos": "noun",
+   "ruling": "o ano inteiro",
+   "derived_ok": false,
+   "note": "One occurrence is the 'constantly' sense, not the calendar-year one.",
+   "context_overrides": [
+    {
+     "gloss_pt": "o tempo todo",
+     "keys": [
+      "101342"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "まるで",
+   "pos": "adverb",
+   "ruling": "como se; tal qual",
+   "derived_ok": true,
+   "note": "All three are simile uses with ように/ようだ; the negative-polarity sense does not occur here."
+  },
+  {
+   "lemma": "職",
+   "pos": "noun",
+   "ruling": "emprego; cargo",
+   "derived_ok": true
+  },
+  {
+   "lemma": "信仰",
+   "pos": "noun",
+   "ruling": "fé; crença",
+   "derived_ok": false,
+   "note": "Derived is the verbal sense-0 gloss ('crer'); every occurrence here is the noun 'fé'."
+  },
+  {
+   "lemma": "発見",
+   "pos": "noun",
+   "ruling": "descoberta",
+   "derived_ok": true
+  },
+  {
+   "lemma": "捕まる",
+   "pos": "verb",
+   "ruling": "ser pego; ser preso",
+   "derived_ok": true
+  },
+  {
+   "lemma": "営業",
+   "pos": "noun",
+   "ruling": "funcionamento; expediente",
+   "derived_ok": false,
+   "note": "All three are 営業する = 'estar aberto / funcionar'; the 'atividade comercial' gloss does not read."
+  },
+  {
+   "lemma": "すませる",
+   "pos": "verb",
+   "ruling": "terminar; concluir",
+   "derived_ok": true
+  },
+  {
+   "lemma": "操作",
+   "pos": "noun",
+   "ruling": "operação; manuseio",
+   "derived_ok": true
+  },
+  {
+   "lemma": "住所",
+   "pos": "noun",
+   "ruling": "endereço",
+   "derived_ok": false,
+   "note": "The '(residencial)' qualifier is wrong for the form-filling occurrences; plain 'endereço' covers all three."
+  },
+  {
+   "lemma": "簡単",
+   "pos": "na-adjective",
+   "ruling": "simples; fácil",
+   "derived_ok": false,
+   "note": "One occurrence is 簡単に述べた = 'de forma resumida' (sense 1).",
+   "context_overrides": [
+    {
+     "gloss_pt": "breve; sucinto",
+     "keys": [
+      "86311"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "丸",
+   "pos": "noun",
+   "ruling": "círculo; inteiro",
+   "derived_ok": false,
+   "note": "Two of three are 丸+counter = 'inteiro (período)', not 'círculo'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "círculo",
+     "keys": [
+      "10125680"
+     ]
+    },
+    {
+     "gloss_pt": "inteiro (período)",
+     "keys": [
+      "80344",
+      "175448"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "材料",
+   "pos": "noun",
+   "ruling": "material; ingrediente",
+   "derived_ok": false,
+   "note": "Two are cooking ingredients, one is raw material.",
+   "context_overrides": [
+    {
+     "gloss_pt": "ingrediente",
+     "keys": [
+      "792553",
+      "5093333"
+     ]
+    },
+    {
+     "gloss_pt": "matéria-prima",
+     "keys": [
+      "122465"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "違い",
+   "pos": "noun",
+   "ruling": "diferença; distinção",
+   "derived_ok": false,
+   "note": "Derived 'engano / erro' is a bank leak from 間違い. All three occurrences mean 'diferença'."
+  },
+  {
+   "lemma": "賛成",
+   "pos": "noun",
+   "ruling": "concordância; aprovação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "信号",
+   "pos": "noun",
+   "ruling": "semáforo; sinal",
+   "derived_ok": true
+  },
+  {
+   "lemma": "発行",
+   "pos": "noun",
+   "ruling": "emissão; publicação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "譲る",
+   "pos": "verb",
+   "ruling": "ceder; transferir",
+   "derived_ok": true
+  },
+  {
+   "lemma": "予測",
+   "pos": "noun",
+   "ruling": "prever; estimar",
+   "derived_ok": true,
+   "note": "All three sit in 予測する/される; the verbal gloss reads better than the nominal one."
+  },
+  {
+   "lemma": "舞台",
+   "pos": "noun",
+   "ruling": "palco",
+   "derived_ok": true
+  },
+  {
+   "lemma": "貸す",
+   "pos": "verb",
+   "ruling": "emprestar (algo a alguém)",
+   "derived_ok": true,
+   "note": "Bank modal and registry agree; keeps the direction explicit against 借りる."
+  },
+  {
+   "lemma": "機嫌",
+   "pos": "noun",
+   "ruling": "humor; disposição",
+   "derived_ok": true
+  },
+  {
+   "lemma": "弁当",
+   "pos": "noun",
+   "ruling": "marmita; bentô",
+   "derived_ok": true
+  },
+  {
+   "lemma": "多く",
+   "pos": "noun",
+   "ruling": "muitos; grande quantidade",
+   "derived_ok": true
+  },
+  {
+   "lemma": "そっくり",
+   "pos": "na-adjective",
+   "ruling": "idêntico; igualzinho",
+   "derived_ok": true
+  },
+  {
+   "lemma": "逮捕",
+   "pos": "noun",
+   "ruling": "prisão; detenção",
+   "derived_ok": true
+  },
+  {
+   "lemma": "だれ",
+   "pos": "pronoun",
+   "ruling": "quem",
+   "derived_ok": false,
+   "note": "All three are だれでも / だれにも, i.e. the indefinite use. Plain 'quem' is still the right lemma gloss, but flag the context.",
+   "context_overrides": [
+    {
+     "gloss_pt": "qualquer um",
+     "keys": [
+      "532467",
+      "203166"
+     ]
+    },
+    {
+     "gloss_pt": "ninguém (com negação)",
+     "keys": [
+      "7562243"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "段",
+   "pos": "noun",
+   "ruling": "degrau",
+   "derived_ok": false,
+   "note": "One occurrence is 一段 = 'a degree/notch', not a stair step.",
+   "context_overrides": [
+    {
+     "gloss_pt": "grau; nível",
+     "keys": [
+      "205274"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "評価",
+   "pos": "noun",
+   "ruling": "avaliar; avaliação",
+   "derived_ok": true,
+   "context_overrides": [
+    {
+     "gloss_pt": "valorizar; dar valor",
+     "keys": [
+      "153623"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "性",
+   "pos": "noun",
+   "ruling": "natureza; índole",
+   "derived_ok": true,
+   "note": "性が合う / 人の性 all take the 'temperament, nature' sense; the 'sexo' sense does not occur."
+  },
+  {
+   "lemma": "審判",
+   "pos": "noun",
+   "ruling": "árbitro; arbitragem",
+   "derived_ok": true
+  },
+  {
+   "lemma": "安い",
+   "pos": "i-adjective",
+   "ruling": "barato",
+   "derived_ok": true
+  },
+  {
+   "lemma": "方々",
+   "pos": "noun",
+   "ruling": "pessoas (formal)",
+   "derived_ok": true
+  },
+  {
+   "lemma": "記憶",
+   "pos": "noun",
+   "ruling": "memória; lembrança",
+   "derived_ok": true
+  },
+  {
+   "lemma": "共同",
+   "pos": "noun",
+   "ruling": "cooperação; em conjunto",
+   "derived_ok": true
+  },
+  {
+   "lemma": "報告",
+   "pos": "noun",
+   "ruling": "relatório; comunicado",
+   "derived_ok": true
+  },
+  {
+   "lemma": "押す",
+   "pos": "verb",
+   "ruling": "empurrar; apertar",
+   "derived_ok": false,
+   "note": "Derived leads with 'apertar'; two of three occurrences are physical pushing.",
+   "context_overrides": [
+    {
+     "gloss_pt": "empurrar",
+     "keys": [
+      "92045",
+      "10901641"
+     ]
+    },
+    {
+     "gloss_pt": "apertar; pressionar",
+     "keys": [
+      "92765"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "まったく",
+   "pos": "adverb",
+   "ruling": "nada; nem um pouco",
+   "derived_ok": false,
+   "note": "All three occurrences are negative-polarity (まったく…ない). The 'totalmente' gloss does not read in any of them."
+  },
+  {
+   "lemma": "招く",
+   "pos": "verb",
+   "ruling": "convidar; chamar",
+   "derived_ok": false,
+   "note": "One occurrence is the 'bring about' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "provocar; acarretar",
+     "keys": [
+      "141255"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "作業",
+   "pos": "noun",
+   "ruling": "trabalho; tarefa",
+   "derived_ok": true
+  },
+  {
+   "lemma": "新た",
+   "pos": "na-adjective",
+   "ruling": "novo",
+   "derived_ok": true
+  },
+  {
+   "lemma": "一杯",
+   "pos": "adverb",
+   "ruling": "um copo; uma dose",
+   "derived_ok": true,
+   "note": "All three are the counter use (一杯注ぐ / 一杯ください), not the 'cheio' adverb."
+  },
+  {
+   "lemma": "永遠",
+   "pos": "noun",
+   "ruling": "eternidade; para sempre",
+   "derived_ok": true,
+   "note": "Every occurrence is adverbial 永遠に; the pair keeps the noun and the adverb readable."
+  },
+  {
+   "lemma": "せいぜい",
+   "pos": "adverb",
+   "ruling": "no máximo",
+   "derived_ok": false,
+   "note": "One occurrence is the 'as much as possible' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "o máximo possível",
+     "keys": [
+      "180098"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "協力",
+   "pos": "noun",
+   "ruling": "cooperação; colaboração",
+   "derived_ok": true
+  },
+  {
+   "lemma": "装置",
+   "pos": "noun",
+   "ruling": "aparelho; dispositivo",
+   "derived_ok": true
+  },
+  {
+   "lemma": "作法",
+   "pos": "noun",
+   "ruling": "boas maneiras; etiqueta",
+   "derived_ok": true
+  },
+  {
+   "lemma": "指す",
+   "pos": "verb",
+   "ruling": "apontar; indicar",
+   "derived_ok": false,
+   "note": "Two occurrences are the clock-reading and the 'refer to' senses.",
+   "context_overrides": [
+    {
+     "gloss_pt": "apontar (para)",
+     "keys": [
+      "144395"
+     ]
+    },
+    {
+     "gloss_pt": "marcar; indicar",
+     "keys": [
+      "150519"
+     ]
+    },
+    {
+     "gloss_pt": "referir-se a",
+     "keys": [
+      "210903"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "むしろ",
+   "pos": "adverb",
+   "ruling": "antes; de preferência",
+   "derived_ok": true
+  },
+  {
+   "lemma": "神経",
+   "pos": "noun",
+   "ruling": "nervo",
+   "derived_ok": false,
+   "note": "Two of three are the figurative 'nerves / sensibility' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "nervo",
+     "keys": [
+      "144887"
+     ]
+    },
+    {
+     "gloss_pt": "nervos; sensibilidade",
+     "keys": [
+      "234725",
+      "144889"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "発展",
+   "pos": "noun",
+   "ruling": "desenvolvimento; expansão",
+   "derived_ok": true
+  },
+  {
+   "lemma": "直接",
+   "pos": "adverb",
+   "ruling": "diretamente; pessoalmente",
+   "derived_ok": true
+  },
+  {
+   "lemma": "衛星",
+   "pos": "noun",
+   "ruling": "satélite",
+   "derived_ok": true
+  },
+  {
+   "lemma": "ライター",
+   "pos": "noun",
+   "ruling": "isqueiro",
+   "derived_ok": true
+  },
+  {
+   "lemma": "不可",
+   "pos": "noun",
+   "ruling": "inaceitável; ruim",
+   "derived_ok": false,
+   "note": "All three are the set phrase 可もなく不可もなく; 'proibido' does not read there."
+  },
+  {
+   "lemma": "覚悟",
+   "pos": "noun",
+   "ruling": "determinação; preparo",
+   "derived_ok": true
+  },
+  {
+   "lemma": "がっかり",
+   "pos": "adverb",
+   "ruling": "decepcionado; desanimado",
+   "derived_ok": true
+  },
+  {
+   "lemma": "キャンプ",
+   "pos": "noun",
+   "ruling": "acampamento",
+   "derived_ok": true
+  },
+  {
+   "lemma": "決まり",
+   "pos": "noun",
+   "ruling": "regra; norma",
+   "derived_ok": false,
+   "note": "One occurrence is これで決まりだ = 'está decidido'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "decidido; acertado",
+     "keys": [
+      "2154941"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "盛り",
+   "pos": "noun",
+   "ruling": "auge; pico",
+   "derived_ok": true
+  },
+  {
+   "lemma": "単純",
+   "pos": "na-adjective",
+   "ruling": "simples",
+   "derived_ok": true
+  },
+  {
+   "lemma": "申し訳",
+   "pos": "noun",
+   "ruling": "desculpa; justificativa",
+   "derived_ok": true
+  },
+  {
+   "lemma": "処理",
+   "pos": "noun",
+   "ruling": "tratar; lidar com",
+   "derived_ok": true,
+   "note": "All three are 処理する; the verbal gloss reads better than 'processamento'."
+  },
+  {
+   "lemma": "通じる",
+   "pos": "verb",
+   "ruling": "ser compreendido",
+   "derived_ok": false,
+   "note": "The three occurrences split across all three registry senses.",
+   "context_overrides": [
+    {
+     "gloss_pt": "levar a; dar acesso",
+     "keys": [
+      "218490"
+     ]
+    },
+    {
+     "gloss_pt": "ser compreendido",
+     "keys": [
+      "118928"
+     ]
+    },
+    {
+     "gloss_pt": "conectar; completar",
+     "keys": [
+      "87767"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "一時",
+   "pos": "noun",
+   "ruling": "por um tempo; temporariamente",
+   "derived_ok": false,
+   "note": "Derived 'uma hora' (一時 = ichiji, the clock reading) is wrong for all three; every occurrence is the 'temporarily' sense."
+  },
+  {
+   "lemma": "微妙",
+   "pos": "na-adjective",
+   "ruling": "sutil; delicado",
+   "derived_ok": false,
+   "note": "One occurrence is the colloquial 'iffy' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "duvidoso; meio assim",
+     "keys": [
+      "11034451"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "学習",
+   "pos": "noun",
+   "ruling": "aprendizado; estudo",
+   "derived_ok": true
+  },
+  {
+   "lemma": "器用",
+   "pos": "na-adjective",
+   "ruling": "habilidoso; jeitoso",
+   "derived_ok": false,
+   "note": "One occurrence modifies 芸 = 'clever trick', not a person's dexterity.",
+   "context_overrides": [
+    {
+     "gloss_pt": "engenhoso; bem bolado",
+     "keys": [
+      "104996"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "講演",
+   "pos": "noun",
+   "ruling": "palestra; conferência",
+   "derived_ok": false,
+   "note": "Derived is the verbal sense-0 gloss; two of three occurrences are plainly nominal."
+  },
+  {
+   "lemma": "交換",
+   "pos": "noun",
+   "ruling": "trocar; substituir",
+   "derived_ok": true
+  },
+  {
+   "lemma": "越す",
+   "pos": "verb",
+   "ruling": "atravessar; ultrapassar",
+   "derived_ok": false,
+   "note": "The three occurrences split: age exceeding, moving house, and the honorific お越し.",
+   "context_overrides": [
+    {
+     "gloss_pt": "ultrapassar; passar de",
+     "keys": [
+      "115108"
+     ]
+    },
+    {
+     "gloss_pt": "mudar-se",
+     "keys": [
+      "120461"
+     ]
+    },
+    {
+     "gloss_pt": "vir; ir (respeitoso)",
+     "keys": [
+      "76406"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "真似",
+   "pos": "noun",
+   "ruling": "imitação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "障害",
+   "pos": "noun",
+   "ruling": "obstáculo; empecilho",
+   "derived_ok": true
+  },
+  {
+   "lemma": "担当",
+   "pos": "noun",
+   "ruling": "encarregado; responsável",
+   "derived_ok": false,
+   "note": "Derived reads as an abstract noun phrase; every occurrence names the person or the act of being in charge."
+  },
+  {
+   "lemma": "承認",
+   "pos": "noun",
+   "ruling": "aprovar; reconhecer",
+   "derived_ok": true,
+   "context_overrides": [
+    {
+     "gloss_pt": "reconhecer; admitir",
+     "keys": [
+      "122506"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "発明",
+   "pos": "noun",
+   "ruling": "invenção",
+   "derived_ok": true
+  },
+  {
+   "lemma": "クラシック",
+   "pos": "noun",
+   "ruling": "música clássica",
+   "derived_ok": true
+  },
+  {
+   "lemma": "掛かる",
+   "pos": "verb",
+   "ruling": "estar pendurado",
+   "derived_ok": false,
+   "note": "Derived 'levar (tempo); custar' fits none of the three; two are 'hang' and one is 鍵が掛かる = 'estar trancado'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "estar pendurado",
+     "keys": [
+      "83461",
+      "184949"
+     ]
+    },
+    {
+     "gloss_pt": "estar trancado",
+     "keys": [
+      "8787906"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "曲がる",
+   "pos": "verb",
+   "ruling": "virar; dobrar",
+   "derived_ok": false,
+   "note": "Two of three are the 'be crooked' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "estar torto",
+     "keys": [
+      "184949",
+      "975106"
+     ]
+    },
+    {
+     "gloss_pt": "virar; dobrar",
+     "keys": [
+      "199741"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "可能",
+   "pos": "na-adjective",
+   "ruling": "possível; viável",
+   "derived_ok": true
+  },
+  {
+   "lemma": "基本",
+   "pos": "noun",
+   "ruling": "base; o básico",
+   "derived_ok": true
+  },
+  {
+   "lemma": "交際",
+   "pos": "noun",
+   "ruling": "convívio; relacionamento",
+   "derived_ok": false,
+   "note": "Derived leads with 'namorar', which fits only one of three.",
+   "context_overrides": [
+    {
+     "gloss_pt": "namorar",
+     "keys": [
+      "187869"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "文字",
+   "pos": "noun",
+   "ruling": "caractere; letra",
+   "derived_ok": true
+  },
+  {
+   "lemma": "タバコ",
+   "pos": "noun",
+   "ruling": "cigarro; tabaco",
+   "derived_ok": true
+  },
+  {
+   "lemma": "通学",
+   "pos": "noun",
+   "ruling": "ir à escola",
+   "derived_ok": true
+  },
+  {
+   "lemma": "姿",
+   "pos": "noun",
+   "ruling": "figura; aparência",
+   "derived_ok": true
+  },
+  {
+   "lemma": "請求",
+   "pos": "noun",
+   "ruling": "cobrança; reivindicação",
+   "derived_ok": false,
+   "note": "Derived is the verbal sense-0 gloss; the noun pair covers all three occurrences."
+  },
+  {
+   "lemma": "不自由",
+   "pos": "noun",
+   "ruling": "privação; falta",
+   "derived_ok": true
+  },
+  {
+   "lemma": "希望",
+   "pos": "noun",
+   "ruling": "esperança; desejo",
+   "derived_ok": true
+  },
+  {
+   "lemma": "鍋",
+   "pos": "noun",
+   "ruling": "panela",
+   "derived_ok": true
+  },
+  {
+   "lemma": "偶然",
+   "pos": "adverb",
+   "ruling": "por acaso",
+   "derived_ok": true
+  },
+  {
+   "lemma": "万一",
+   "pos": "noun",
+   "ruling": "na remota hipótese",
+   "derived_ok": false,
+   "note": "One occurrence is 万一に備えて = the 'emergency, worst case' noun.",
+   "context_overrides": [
+    {
+     "gloss_pt": "imprevisto; emergência",
+     "keys": [
+      "86608"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "酒",
+   "pos": "noun",
+   "ruling": "bebida alcoólica; saquê",
+   "derived_ok": false,
+   "note": "One occurrence is specifically saquê (酒は米で作ります).",
+   "context_overrides": [
+    {
+     "gloss_pt": "saquê",
+     "keys": [
+      "148447"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "たっぷり",
+   "pos": "adverb",
+   "ruling": "em abundância; de sobra",
+   "derived_ok": true
+  },
+  {
+   "lemma": "芝居",
+   "pos": "noun",
+   "ruling": "peça; teatro",
+   "derived_ok": false,
+   "note": "One occurrence is the 'playacting, pretence' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "encenação; fingimento",
+     "keys": [
+      "205094"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "免許",
+   "pos": "noun",
+   "ruling": "licença; habilitação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "証明",
+   "pos": "noun",
+   "ruling": "provar; comprovar",
+   "derived_ok": true
+  },
+  {
+   "lemma": "売れる",
+   "pos": "verb",
+   "ruling": "vender-se; ter saída",
+   "derived_ok": true
+  },
+  {
+   "lemma": "勘定",
+   "pos": "noun",
+   "ruling": "conta (a pagar)",
+   "derived_ok": true
+  },
+  {
+   "lemma": "機能",
+   "pos": "noun",
+   "ruling": "função; funcionalidade",
+   "derived_ok": true,
+   "context_overrides": [
+    {
+     "gloss_pt": "funcionar",
+     "keys": [
+      "10906804"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "句",
+   "pos": "noun",
+   "ruling": "frase; expressão",
+   "derived_ok": true
+  },
+  {
+   "lemma": "粗末",
+   "pos": "na-adjective",
+   "ruling": "simples; modesto",
+   "derived_ok": false,
+   "note": "One occurrence is 粗末にする = 'desperdiçar'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "desperdiçado; mal aproveitado",
+     "keys": [
+      "3416203"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "克服",
+   "pos": "noun",
+   "ruling": "superação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "乗せる",
+   "pos": "verb",
+   "ruling": "dar carona; levar",
+   "derived_ok": false,
+   "note": "Derived leads with 'colocar em cima', which fits only one of three.",
+   "context_overrides": [
+    {
+     "gloss_pt": "colocar em cima",
+     "keys": [
+      "121636"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "上達",
+   "pos": "noun",
+   "ruling": "progredir; melhorar",
+   "derived_ok": true
+  },
+  {
+   "lemma": "通信",
+   "pos": "noun",
+   "ruling": "comunicação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "裏切る",
+   "pos": "verb",
+   "ruling": "trair",
+   "derived_ok": true
+  },
+  {
+   "lemma": "課",
+   "pos": "noun",
+   "ruling": "lição; capítulo",
+   "derived_ok": false,
+   "note": "Derived 'seção (de empresa); departamento' fits none of the three; all are textbook lessons (第３課, この課, 第５課)."
+  },
+  {
+   "lemma": "割る",
+   "pos": "verb",
+   "ruling": "quebrar; partir",
+   "derived_ok": true
+  },
+  {
+   "lemma": "気味",
+   "pos": "noun",
+   "ruling": "leve tendência; sinal de",
+   "derived_ok": false,
+   "note": "One occurrence is 気味が悪い = the 'feeling, sensation' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "sensação; impressão",
+     "keys": [
+      "8549354"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "面倒",
+   "pos": "noun",
+   "ruling": "incômodo; complicação",
+   "derived_ok": false,
+   "note": "One occurrence is 面倒をみる = 'cuidar de'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "cuidado; zelo",
+     "keys": [
+      "88110"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "離す",
+   "pos": "verb",
+   "ruling": "soltar; largar",
+   "derived_ok": false,
+   "note": "Two occurrences are the 'keep away / take away from' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "soltar; largar",
+     "keys": [
+      "148613"
+     ]
+    },
+    {
+     "gloss_pt": "afastar; manter longe",
+     "keys": [
+      "79450"
+     ]
+    },
+    {
+     "gloss_pt": "afastar; desviar",
+     "keys": [
+      "100928"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "陽気",
+   "pos": "na-adjective",
+   "ruling": "alegre; animado",
+   "derived_ok": true
+  },
+  {
+   "lemma": "永久",
+   "pos": "noun",
+   "ruling": "eternidade; para sempre",
+   "derived_ok": true,
+   "note": "Every occurrence is adverbial 永久に."
+  },
+  {
+   "lemma": "広告",
+   "pos": "noun",
+   "ruling": "anúncio; publicidade",
+   "derived_ok": true
+  },
+  {
+   "lemma": "祭り",
+   "pos": "noun",
+   "ruling": "festival; festa",
+   "derived_ok": true
+  },
+  {
+   "lemma": "沈む",
+   "pos": "verb",
+   "ruling": "afundar; pôr-se",
+   "derived_ok": false,
+   "note": "Two of three are a heavenly body setting, not sinking.",
+   "context_overrides": [
+    {
+     "gloss_pt": "pôr-se (astro)",
+     "keys": [
+      "122904",
+      "175672"
+     ]
+    },
+    {
+     "gloss_pt": "afundar",
+     "keys": [
+      "141178"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "地",
+   "pos": "noun",
+   "ruling": "solo; chão",
+   "derived_ok": false,
+   "note": "One occurrence is その地 = 'aquela região'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "lugar; região",
+     "keys": [
+      "93466"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "冗談",
+   "pos": "noun",
+   "ruling": "piada; brincadeira",
+   "derived_ok": true
+  },
+  {
+   "lemma": "離れる",
+   "pos": "verb",
+   "ruling": "afastar-se; sair de",
+   "derived_ok": true
+  },
+  {
+   "lemma": "恐ろしい",
+   "pos": "i-adjective",
+   "ruling": "terrível; assustador",
+   "derived_ok": false,
+   "note": "One occurrence is the adverbial intensifier 恐ろしく.",
+   "context_overrides": [
+    {
+     "gloss_pt": "terrivelmente; muito",
+     "keys": [
+      "1144222"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "活用",
+   "pos": "noun",
+   "ruling": "aproveitamento; uso",
+   "derived_ok": false,
+   "note": "One occurrence is the grammar term 動詞の活用.",
+   "context_overrides": [
+    {
+     "gloss_pt": "conjugação (gramática)",
+     "keys": [
+      "10309031"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "歓迎",
+   "pos": "noun",
+   "ruling": "boas-vindas; acolhida",
+   "derived_ok": true
+  },
+  {
+   "lemma": "生地",
+   "pos": "noun",
+   "ruling": "tecido; pano",
+   "derived_ok": false,
+   "note": "One occurrence is the dough sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "massa (de pão)",
+     "keys": [
+      "8942698"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "毒",
+   "pos": "noun",
+   "ruling": "veneno",
+   "derived_ok": false,
+   "note": "One occurrence is 体に毒 = 'faz mal'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "algo nocivo",
+     "keys": [
+      "11790922"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "そのまま",
+   "pos": "noun",
+   "ruling": "do jeito que está",
+   "derived_ok": true
+  },
+  {
+   "lemma": "仏",
+   "pos": "noun",
+   "ruling": "Buda",
+   "derived_ok": true,
+   "note": "Proper noun; capital kept on purpose."
+  },
+  {
+   "lemma": "結論",
+   "pos": "noun",
+   "ruling": "conclusão",
+   "derived_ok": true
+  },
+  {
+   "lemma": "攻撃",
+   "pos": "noun",
+   "ruling": "ataque; ofensiva",
+   "derived_ok": true
+  },
+  {
+   "lemma": "回り",
+   "pos": "noun",
+   "ruling": "entorno; volta",
+   "derived_ok": true
+  },
+  {
+   "lemma": "さっぱり",
+   "pos": "adverb",
+   "ruling": "nada; nem um pouco",
+   "derived_ok": false,
+   "note": "Two of three are negative-polarity さっぱり…ない; one is the 'refreshed' sense.",
+   "context_overrides": [
+    {
+     "gloss_pt": "refrescado; leve",
+     "keys": [
+      "190071"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "違反",
+   "pos": "noun",
+   "ruling": "infração; violação",
+   "derived_ok": true
+  },
+  {
+   "lemma": "生まれ",
+   "pos": "noun",
+   "ruling": "nascimento",
+   "derived_ok": true
+  },
+  {
+   "lemma": "末",
+   "pos": "noun",
+   "ruling": "fim; final",
+   "derived_ok": false,
+   "note": "One occurrence is the 〜た末 pattern = 'depois de tanto'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "após; ao cabo de",
+     "keys": [
+      "192778"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "贈る",
+   "pos": "verb",
+   "ruling": "presentear; dar de presente",
+   "derived_ok": true
+  },
+  {
+   "lemma": "株",
+   "pos": "noun",
+   "ruling": "ação (de empresa)",
+   "derived_ok": false,
+   "note": "One occurrence is 株が上がる = 'reputação'.",
+   "context_overrides": [
+    {
+     "gloss_pt": "reputação; prestígio",
+     "keys": [
+      "184225"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "傷",
+   "pos": "noun",
+   "ruling": "ferida; machucado",
+   "derived_ok": false,
+   "note": "One occurrence is a scratch on merchandise.",
+   "context_overrides": [
+    {
+     "gloss_pt": "arranhão; defeito",
+     "keys": [
+      "224405"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "忙しい",
+   "pos": "i-adjective",
+   "ruling": "ocupado; atarefado",
+   "derived_ok": true
+  },
+  {
+   "lemma": "迎え",
+   "pos": "noun",
+   "ruling": "ir buscar (alguém)",
+   "derived_ok": true
+  },
+  {
+   "lemma": "場",
+   "pos": "noun",
+   "ruling": "lugar; ocasião",
+   "derived_ok": true,
+   "note": "All three are その場 = 'ali mesmo, na hora'."
+  },
+  {
+   "lemma": "周囲",
+   "pos": "noun",
+   "ruling": "arredores; entorno",
+   "derived_ok": false,
+   "note": "One occurrence is the measurement sense (周囲３メートル).",
+   "context_overrides": [
+    {
+     "gloss_pt": "circunferência",
+     "keys": [
+      "219442"
+     ]
+    }
+   ]
+  },
+  {
+   "lemma": "やがて",
+   "pos": "adverb",
+   "ruling": "logo; em breve",
+   "derived_ok": true
+  },
+  {
+   "lemma": "疲れる",
+   "pos": "verb",
+   "ruling": "cansar-se; ficar cansado",
+   "derived_ok": true
+  },
+  {
+   "lemma": "治る",
+   "pos": "verb",
+   "ruling": "sarar; curar-se",
+   "derived_ok": true
+  }
+ ]
+}

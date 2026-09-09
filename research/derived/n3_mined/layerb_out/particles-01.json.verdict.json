@@ -1,0 +1,1277 @@
+{
+ "kind": "particles-verdict",
+ "unit": "W13b",
+ "file": "particles-01.json",
+ "source_work_list": "research/derived/n3_mined/layerb_work/particles-01.json",
+ "source_authored": "research/derived/n3_mined/layerb_out/particles-01.json",
+ "verified_by": "W13b particles verifier (adversarial)",
+ "identity": "key + position, as '<key>#<position>' (copied from the work list, never renumbered)",
+ "checked": 200,
+ "ok": 188,
+ "corrected": 12,
+ "rejected": 0,
+ "method": [
+  "1:1 join work list -> authored rows on key+position: 200/200, no duplicates, no strays; surface matches on every row.",
+  "Every quoted Japanese token checked against the sentence: all citations resolve, either verbatim or as the dictionary form of a token actually present (捧げる for 捧げた, 隠す for 隠してる, 戻す for 戻して, 会う for 会えば, 悲しむ for 悲しんで, ひく for ひいた, 合格する for 合格しました, 同化する for 同化しなかった, 隠れる for 隠れて), or as a named fixed expression (実行に移す, 命令に等しい, 手に入れる, 無にする, 〜と同一視する, 〜にあう, 〜てやる, となる/になる). One citation failed and is flagged (186348#4).",
+  "Function judged as the function THIS occurrence uses, not the bank-modal label: every uncorrected row where the bank label survived was re-tested against the sentence.",
+  "function_type never altered by the author, and every function_pt change carries function_pt_corrected: checked mechanically, consistent on all 200.",
+  "pt-BR screened for pt-PT lexicon, em dash and 'Quanto a' mirrors: none found."
+ ],
+ "observations": [
+  "The author's own corrections are strong and were re-checked one by one; all hold. Notably 〜にとって (222168), 〜ことに (191278, 11912828), って as colloquial quotative (74880), と with 同じ/同一/比べる (139949, 218342, 235168), と as enumeration (173656, 2941019, 10270477, 126971), と as companion (3689547), と as result with なる (174090), で as cause/means/manner (11912828, 151414, 177842, 163448, 177419), に as time, frequency, purpose, result, agent and 〜うちに (148209, 187238, 126258, 195386, 163496, 96872, 10129724, 165303, 186939, 226674, 157380, 83076, 115975, 183620, 104056, 210750, 82003, 188334, 148867), も as concessive 〜ても / 〜てもいい / 何の〜も / よりも (203526, 77695, 92152, 106487, 193970, 173357, 148254, 144312), は inside なくてはならない (229825), まで as spatial limit (220261, 143822, 163448, 10659546), の as が-substitute in a relative clause (144724, 1196571) and の inside ので (140689).",
+  "Ten of the twelve problems are one recurring miss and two one-offs: the author corrected the bank-modal label wherever the occurrence was clearly idiomatic, but let 'destino/direção' stand on plain existential に (12074622, 11483580, 174515, 85141) and 'inclusão (também)' stand on generalizing も with an interrogative (11788796, 10135612, 149707), even though the explanations themselves describe the right function. 237406 (神の目には) is the same kind of miss on the viewpoint に.",
+  "The remaining problems are content defects, not label drift: a false statement about the て-form (91912), a citation that is not in the sentence (186348), a gloss that turns 〜に対して into cause (148082), and a non sequitur tail clause (10270477)."
+ ],
+ "entries": {
+  "222251#6": {
+   "key": "222251",
+   "position": 6,
+   "surface": "し",
+   "ok": true
+  },
+  "191278#11": {
+   "key": "191278",
+   "position": 11,
+   "surface": "に",
+   "ok": true
+  },
+  "191278#12": {
+   "key": "191278",
+   "position": 12,
+   "surface": "は",
+   "ok": true
+  },
+  "89295#3": {
+   "key": "89295",
+   "position": 3,
+   "surface": "より",
+   "ok": true
+  },
+  "218643#3": {
+   "key": "218643",
+   "position": 3,
+   "surface": "より",
+   "ok": true
+  },
+  "222168#6": {
+   "key": "222168",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "10616097#3": {
+   "key": "10616097",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  "210186#4": {
+   "key": "210186",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  "110038#3": {
+   "key": "110038",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "178180#3": {
+   "key": "178180",
+   "position": 3,
+   "surface": "くらい",
+   "ok": true
+  },
+  "10952389#4": {
+   "key": "10952389",
+   "position": 4,
+   "surface": "ぐらい",
+   "ok": true
+  },
+  "139949#4": {
+   "key": "139949",
+   "position": 4,
+   "surface": "と",
+   "ok": true
+  },
+  "143577#1": {
+   "key": "143577",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  "143577#2": {
+   "key": "143577",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "143577#7": {
+   "key": "143577",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  "143577#8": {
+   "key": "143577",
+   "position": 8,
+   "surface": "は",
+   "ok": true
+  },
+  "11788796#1": {
+   "key": "11788796",
+   "position": 1,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rótulo do bank mantido sem correção. Neste texto も segue o interrogativo どれ e forma どれも com predicado afirmativo, que quantifica o grupo inteiro ('todos, qualquer um'); não é o も de adição. A própria explicação diz 'abrange o grupo inteiro', contradizendo o rótulo.",
+   "corrected": {
+    "function_pt": "partícula de generalização com interrogativo (どれも)"
+   }
+  },
+  "118182#5": {
+   "key": "118182",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "74880#3": {
+   "key": "74880",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "74880#5": {
+   "key": "74880",
+   "position": 5,
+   "surface": "と",
+   "ok": true
+  },
+  "74880#7": {
+   "key": "74880",
+   "position": 7,
+   "surface": "って",
+   "ok": true
+  },
+  "102407#3": {
+   "key": "102407",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "112948#6": {
+   "key": "112948",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "223742#7": {
+   "key": "223742",
+   "position": 7,
+   "surface": "ん",
+   "ok": true
+  },
+  "103439#7": {
+   "key": "103439",
+   "position": 7,
+   "surface": "から",
+   "ok": true
+  },
+  "163496#6": {
+   "key": "163496",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "1200846#1": {
+   "key": "1200846",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "99772#4": {
+   "key": "99772",
+   "position": 4,
+   "surface": "へ",
+   "ok": true
+  },
+  "5961295#3": {
+   "key": "5961295",
+   "position": 3,
+   "surface": "へ",
+   "ok": true
+  },
+  "2985792#1": {
+   "key": "2985792",
+   "position": 1,
+   "surface": "か",
+   "ok": true
+  },
+  "2985792#4": {
+   "key": "2985792",
+   "position": 4,
+   "surface": "の",
+   "ok": true
+  },
+  "175642#3": {
+   "key": "175642",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "189932#2": {
+   "key": "189932",
+   "position": 2,
+   "surface": "で",
+   "ok": true
+  },
+  "10135612#4": {
+   "key": "10135612",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  "10135612#6": {
+   "key": "10135612",
+   "position": 6,
+   "surface": "も",
+   "ok": false,
+   "problem": "Dois problemas. (1) Rótulo: este も não acrescenta ('também'); ele fecha でも em どこにでも e generaliza o lugar. (2) Segmentação: 'も fecha どこにで' recorta uma sequência que não é unidade nenhuma; も se junta ao で e forma でも.",
+   "corrected": {
+    "function_pt": "partícula que compõe でも (generalização: どこにでも)",
+    "explanation_pt": "も se junta ao で de どこに e forma どこにでも ('em qualquer lugar'), estendendo a afirmação a todos eles: não há canto em que Deus não esteja."
+   }
+  },
+  "11792758#5": {
+   "key": "11792758",
+   "position": 5,
+   "surface": "から",
+   "ok": true
+  },
+  "11792758#6": {
+   "key": "11792758",
+   "position": 6,
+   "surface": "の",
+   "ok": true
+  },
+  "237406#3": {
+   "key": "237406",
+   "position": 3,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rótulo do bank mantido sem correção. Em 神の目には não há destino nem direção: に marca o ponto de vista a partir do qual a afirmação vale, o mesmo uso que o autor corrigiu em 彼の将来にとって (222168). A explicação já diz 'o ponto de vista de onde a frase é dita', contradizendo o rótulo.",
+   "corrected": {
+    "function_pt": "partícula de referência/ponto de vista ('aos olhos de')"
+   }
+  },
+  "237406#4": {
+   "key": "237406",
+   "position": 4,
+   "surface": "は",
+   "ok": true
+  },
+  "149707#1": {
+   "key": "149707",
+   "position": 1,
+   "surface": "と",
+   "ok": true
+  },
+  "149707#2": {
+   "key": "149707",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "149707#10": {
+   "key": "149707",
+   "position": 10,
+   "surface": "で",
+   "ok": true
+  },
+  "149707#11": {
+   "key": "149707",
+   "position": 11,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rótulo do bank mantido sem correção e inconsistente com a linha vizinha: o で da mesma expressão (posição 10) foi corrigido para 'partícula que compõe 何でも', mas o も que a fecha ficou como 'inclusão (também)'. Aqui も compõe 何でも e generaliza, não acrescenta; 'も fecha 何で' também recorta o que não é unidade.",
+   "corrected": {
+    "function_pt": "partícula que compõe 何でも ('seja o que for')",
+    "explanation_pt": "も se junta ao で de 何で e completa 何でも, estendendo a ação a tudo aquilo que a pessoa queira fazer."
+   }
+  },
+  "149707#14": {
+   "key": "149707",
+   "position": 14,
+   "surface": "と",
+   "ok": true
+  },
+  "218342#7": {
+   "key": "218342",
+   "position": 7,
+   "surface": "の",
+   "ok": true
+  },
+  "218342#8": {
+   "key": "218342",
+   "position": 8,
+   "surface": "と",
+   "ok": true
+  },
+  "218342#10": {
+   "key": "218342",
+   "position": 10,
+   "surface": "の",
+   "ok": true
+  },
+  "173656#1": {
+   "key": "173656",
+   "position": 1,
+   "surface": "と",
+   "ok": true
+  },
+  "173656#3": {
+   "key": "173656",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  },
+  "173656#4": {
+   "key": "173656",
+   "position": 4,
+   "surface": "が",
+   "ok": true
+  },
+  "83076#6": {
+   "key": "83076",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "106113#3": {
+   "key": "106113",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "211593#6": {
+   "key": "211593",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "207631#8": {
+   "key": "207631",
+   "position": 8,
+   "surface": "に",
+   "ok": true
+  },
+  "108753#3": {
+   "key": "108753",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "108753#5": {
+   "key": "108753",
+   "position": 5,
+   "surface": "さえ",
+   "ok": true
+  },
+  "11912828#3": {
+   "key": "11912828",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "11912828#6": {
+   "key": "11912828",
+   "position": 6,
+   "surface": "で",
+   "ok": true
+  },
+  "11912828#12": {
+   "key": "11912828",
+   "position": 12,
+   "surface": "ん",
+   "ok": true
+  },
+  "222722#4": {
+   "key": "222722",
+   "position": 4,
+   "surface": "の",
+   "ok": true
+  },
+  "96447#4": {
+   "key": "96447",
+   "position": 4,
+   "surface": "の",
+   "ok": true
+  },
+  "165303#5": {
+   "key": "165303",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "10761295#6": {
+   "key": "10761295",
+   "position": 6,
+   "surface": "ん",
+   "ok": true
+  },
+  "104624#7": {
+   "key": "104624",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  "148209#1": {
+   "key": "148209",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "148209#2": {
+   "key": "148209",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "148209#6": {
+   "key": "148209",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "213084#9": {
+   "key": "213084",
+   "position": 9,
+   "surface": "に",
+   "ok": true
+  },
+  "213084#12": {
+   "key": "213084",
+   "position": 12,
+   "surface": "の",
+   "ok": true
+  },
+  "177842#4": {
+   "key": "177842",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  "177842#6": {
+   "key": "177842",
+   "position": 6,
+   "surface": "で",
+   "ok": true
+  },
+  "144904#4": {
+   "key": "144904",
+   "position": 4,
+   "surface": "と",
+   "ok": true
+  },
+  "79969#1": {
+   "key": "79969",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "173430#7": {
+   "key": "173430",
+   "position": 7,
+   "surface": "より",
+   "ok": true
+  },
+  "235168#3": {
+   "key": "235168",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  },
+  "235168#5": {
+   "key": "235168",
+   "position": 5,
+   "surface": "と",
+   "ok": true
+  },
+  "166629#3": {
+   "key": "166629",
+   "position": 3,
+   "surface": "から",
+   "ok": true
+  },
+  "186939#6": {
+   "key": "186939",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "1527990#3": {
+   "key": "1527990",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "8657782#7": {
+   "key": "8657782",
+   "position": 7,
+   "surface": "と",
+   "ok": true
+  },
+  "203526#5": {
+   "key": "203526",
+   "position": 5,
+   "surface": "も",
+   "ok": true
+  },
+  "77695#4": {
+   "key": "77695",
+   "position": 4,
+   "surface": "も",
+   "ok": true
+  },
+  "92152#7": {
+   "key": "92152",
+   "position": 7,
+   "surface": "も",
+   "ok": true
+  },
+  "126258#3": {
+   "key": "126258",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "175149#2": {
+   "key": "175149",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  "91674#3": {
+   "key": "91674",
+   "position": 3,
+   "surface": "を",
+   "ok": true
+  },
+  "113604#3": {
+   "key": "113604",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "187238#1": {
+   "key": "187238",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "187238#2": {
+   "key": "187238",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "220261#4": {
+   "key": "220261",
+   "position": 4,
+   "surface": "まで",
+   "ok": true
+  },
+  "2941019#1": {
+   "key": "2941019",
+   "position": 1,
+   "surface": "と",
+   "ok": true
+  },
+  "2941019#7": {
+   "key": "2941019",
+   "position": 7,
+   "surface": "の",
+   "ok": true
+  },
+  "11094820#3": {
+   "key": "11094820",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "148254#1": {
+   "key": "148254",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "148254#4": {
+   "key": "148254",
+   "position": 4,
+   "surface": "は",
+   "ok": true
+  },
+  "148254#8": {
+   "key": "148254",
+   "position": 8,
+   "surface": "も",
+   "ok": true
+  },
+  "12439997#1": {
+   "key": "12439997",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "12074622#1": {
+   "key": "12074622",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rótulo do bank mantido sem correção: com あります não há deslocamento nenhum, に marca o lugar onde a galeria existe. A explicação já diz 'o lugar em que a galeria existe'. Mesmo padrão que o autor corrigiu em 彼には…があります (118887).",
+   "corrected": {
+    "function_pt": "partícula de lugar de existência (com ある/いる)"
+   }
+  },
+  "12074622#2": {
+   "key": "12074622",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "115975#5": {
+   "key": "115975",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "170622#4": {
+   "key": "170622",
+   "position": 4,
+   "surface": "ん",
+   "ok": true
+  },
+  "144312#4": {
+   "key": "144312",
+   "position": 4,
+   "surface": "より",
+   "ok": true
+  },
+  "144312#5": {
+   "key": "144312",
+   "position": 5,
+   "surface": "も",
+   "ok": true
+  },
+  "11483580#1": {
+   "key": "11483580",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rótulo do bank mantido sem correção: 屋根に穴が空いてる é existência estática, não destino nem direção; に marca onde o buraco está.",
+   "corrected": {
+    "function_pt": "partícula de lugar de existência"
+   }
+  },
+  "151414#1": {
+   "key": "151414",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  "82003#4": {
+   "key": "82003",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  "188334#2": {
+   "key": "188334",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  "148867#2": {
+   "key": "148867",
+   "position": 2,
+   "surface": "に",
+   "ok": true
+  },
+  "178461#5": {
+   "key": "178461",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "80764#6": {
+   "key": "80764",
+   "position": 6,
+   "surface": "も",
+   "ok": true
+  },
+  "11410808#10": {
+   "key": "11410808",
+   "position": 10,
+   "surface": "の",
+   "ok": true
+  },
+  "140689#8": {
+   "key": "140689",
+   "position": 8,
+   "surface": "の",
+   "ok": true
+  },
+  "174515#3": {
+   "key": "174515",
+   "position": 3,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rótulo do bank mantido sem correção: 故障はエンジンにある é existência pura, に marca o lugar e não um destino. A explicação já diz 'o lugar onde o defeito está'.",
+   "corrected": {
+    "function_pt": "partícula de lugar de existência (com ある)"
+   }
+  },
+  "85141#1": {
+   "key": "85141",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rótulo do bank mantido sem correção: 瓶に…がある é existência estática; に marca o lugar onde o leite está, não um destino.",
+   "corrected": {
+    "function_pt": "partícula de lugar de existência (com ある)"
+   }
+  },
+  "85141#2": {
+   "key": "85141",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "5845178#1": {
+   "key": "5845178",
+   "position": 1,
+   "surface": "から",
+   "ok": true
+  },
+  "5845178#4": {
+   "key": "5845178",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  "195386#3": {
+   "key": "195386",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "10270477#1": {
+   "key": "10270477",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "10270477#2": {
+   "key": "10270477",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "10270477#4": {
+   "key": "10270477",
+   "position": 4,
+   "surface": "と",
+   "ok": false,
+   "problem": "A explicação termina num non sequitur: 'e é por isso que o verbo vem depois de が'. O と que enumera 妻 e 幼い子供 não explica a posição do verbo nem a presença de が, que marca o sintagma inteiro como aquilo que existe. O trecho confunde em vez de ensinar.",
+   "corrected": {
+    "explanation_pt": "と liga 妻 a 幼い子供 numa lista fechada: são essas duas pessoas, e o par inteiro é depois marcado por が como aquilo que existe."
+   }
+  },
+  "201163#7": {
+   "key": "201163",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  "201163#10": {
+   "key": "201163",
+   "position": 10,
+   "surface": "の",
+   "ok": true
+  },
+  "104056#7": {
+   "key": "104056",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  "8691418#2": {
+   "key": "8691418",
+   "position": 2,
+   "surface": "の",
+   "ok": true
+  },
+  "8940990#1": {
+   "key": "8940990",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "12167756#3": {
+   "key": "12167756",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "12167756#5": {
+   "key": "12167756",
+   "position": 5,
+   "surface": "て",
+   "ok": true
+  },
+  "91912#4": {
+   "key": "91912",
+   "position": 4,
+   "surface": "で",
+   "ok": false,
+   "problem": "Afirmação falsa na primeira oração: 'で é a forma て de 悲しむ'. A forma て de 悲しむ é 悲しんで; で sozinho é apenas o て sonorizado que aparece depois de ん. Do jeito que está, o aluno lê que で equivale à forma て do verbo. A linha 187584#5 explica o mesmo fato corretamente.",
+   "corrected": {
+    "explanation_pt": "で é o て sonorizado que aparece depois de ん; liga 悲しん a いる e forma 悲しんでいる, a tristeza que continua valendo agora."
+   }
+  },
+  "187584#1": {
+   "key": "187584",
+   "position": 1,
+   "surface": "を",
+   "ok": true
+  },
+  "187584#5": {
+   "key": "187584",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  "187584#7": {
+   "key": "187584",
+   "position": 7,
+   "surface": "の",
+   "ok": true
+  },
+  "11156593#2": {
+   "key": "11156593",
+   "position": 2,
+   "surface": "で",
+   "ok": true
+  },
+  "97233#5": {
+   "key": "97233",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "229825#5": {
+   "key": "229825",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "229825#10": {
+   "key": "229825",
+   "position": 10,
+   "surface": "は",
+   "ok": true
+  },
+  "10934582#1": {
+   "key": "10934582",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  "79313#1": {
+   "key": "79313",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "226674#4": {
+   "key": "226674",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  "210750#4": {
+   "key": "210750",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  "219277#4": {
+   "key": "219277",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  "103686#3": {
+   "key": "103686",
+   "position": 3,
+   "surface": "から",
+   "ok": true
+  },
+  "228616#5": {
+   "key": "228616",
+   "position": 5,
+   "surface": "の",
+   "ok": true
+  },
+  "193970#2": {
+   "key": "193970",
+   "position": 2,
+   "surface": "から",
+   "ok": true
+  },
+  "193970#6": {
+   "key": "193970",
+   "position": 6,
+   "surface": "も",
+   "ok": true
+  },
+  "119118#1": {
+   "key": "119118",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "3689547#3": {
+   "key": "3689547",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  },
+  "3689547#5": {
+   "key": "3689547",
+   "position": 5,
+   "surface": "の",
+   "ok": true
+  },
+  "1585500#1": {
+   "key": "1585500",
+   "position": 1,
+   "surface": "まで",
+   "ok": true
+  },
+  "118887#1": {
+   "key": "118887",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "118887#2": {
+   "key": "118887",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "8705972#4": {
+   "key": "8705972",
+   "position": 4,
+   "surface": "の",
+   "ok": true
+  },
+  "185452#1": {
+   "key": "185452",
+   "position": 1,
+   "surface": "ば",
+   "ok": true
+  },
+  "173331#3": {
+   "key": "173331",
+   "position": 3,
+   "surface": "より",
+   "ok": true
+  },
+  "12118863#3": {
+   "key": "12118863",
+   "position": 3,
+   "surface": "ん",
+   "ok": true
+  },
+  "143822#3": {
+   "key": "143822",
+   "position": 3,
+   "surface": "まで",
+   "ok": true
+  },
+  "117825#5": {
+   "key": "117825",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "183620#3": {
+   "key": "183620",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "183620#5": {
+   "key": "183620",
+   "position": 5,
+   "surface": "と",
+   "ok": true
+  },
+  "183620#7": {
+   "key": "183620",
+   "position": 7,
+   "surface": "の",
+   "ok": true
+  },
+  "183620#9": {
+   "key": "183620",
+   "position": 9,
+   "surface": "が",
+   "ok": true
+  },
+  "173357#2": {
+   "key": "173357",
+   "position": 2,
+   "surface": "も",
+   "ok": true
+  },
+  "177419#1": {
+   "key": "177419",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  "177419#6": {
+   "key": "177419",
+   "position": 6,
+   "surface": "の",
+   "ok": true
+  },
+  "163448#3": {
+   "key": "163448",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  "163448#6": {
+   "key": "163448",
+   "position": 6,
+   "surface": "まで",
+   "ok": true
+  },
+  "10659546#1": {
+   "key": "10659546",
+   "position": 1,
+   "surface": "から",
+   "ok": true
+  },
+  "10659546#4": {
+   "key": "10659546",
+   "position": 4,
+   "surface": "まで",
+   "ok": true
+  },
+  "10659546#5": {
+   "key": "10659546",
+   "position": 5,
+   "surface": "は",
+   "ok": true
+  },
+  "10659546#7": {
+   "key": "10659546",
+   "position": 7,
+   "surface": "くらい",
+   "ok": true
+  },
+  "10659546#9": {
+   "key": "10659546",
+   "position": 9,
+   "surface": "ん",
+   "ok": true
+  },
+  "179923#3": {
+   "key": "179923",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "157380#5": {
+   "key": "157380",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  "157380#7": {
+   "key": "157380",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  "79344#3": {
+   "key": "79344",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "186348#1": {
+   "key": "186348",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "186348#2": {
+   "key": "186348",
+   "position": 2,
+   "surface": "は",
+   "ok": true
+  },
+  "186348#4": {
+   "key": "186348",
+   "position": 4,
+   "surface": "の",
+   "ok": false,
+   "problem": "Trecho citado que não está na frase: a explicação diz que の 'forma 文学の指導', mas o texto traz 文学の正式な指導, com 正式な no meio. A unidade citada não existe na sentença.",
+   "corrected": {
+    "explanation_pt": "の prende 文学 ao núcleo 指導 e forma 文学の正式な指導 ('orientação formal em literatura')."
+   }
+  },
+  "106487#7": {
+   "key": "106487",
+   "position": 7,
+   "surface": "も",
+   "ok": true
+  },
+  "174090#3": {
+   "key": "174090",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  },
+  "160174#4": {
+   "key": "160174",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  "160174#5": {
+   "key": "160174",
+   "position": 5,
+   "surface": "は",
+   "ok": true
+  },
+  "160174#7": {
+   "key": "160174",
+   "position": 7,
+   "surface": "に",
+   "ok": true
+  },
+  "144724#3": {
+   "key": "144724",
+   "position": 3,
+   "surface": "の",
+   "ok": true
+  },
+  "109195#3": {
+   "key": "109195",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  "109195#4": {
+   "key": "109195",
+   "position": 4,
+   "surface": "は",
+   "ok": true
+  },
+  "211242#6": {
+   "key": "211242",
+   "position": 6,
+   "surface": "に",
+   "ok": true
+  },
+  "148082#4": {
+   "key": "148082",
+   "position": 4,
+   "surface": "に",
+   "ok": false,
+   "problem": "Glosa errada dentro da explicação: o rótulo traz 〜に対して como 'em relação a', mas a explicação traduz 騒音に対して por 'por causa do barulho', trocando alvo por causa. A queixa é dirigida ao barulho; causa seria 騒音で.",
+   "corrected": {
+    "explanation_pt": "に prende 騒音 a 対して e forma 騒音に対して ('em relação ao barulho'), o alvo contra o qual a queixa é apresentada."
+   }
+  },
+  "96872#4": {
+   "key": "96872",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  "10129724#1": {
+   "key": "10129724",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  "10071726#2": {
+   "key": "10071726",
+   "position": 2,
+   "surface": "で",
+   "ok": true
+  },
+  "10071726#5": {
+   "key": "10071726",
+   "position": 5,
+   "surface": "ん",
+   "ok": true
+  },
+  "3507482#3": {
+   "key": "3507482",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "3507482#5": {
+   "key": "3507482",
+   "position": 5,
+   "surface": "て",
+   "ok": true
+  },
+  "10630183#3": {
+   "key": "10630183",
+   "position": 3,
+   "surface": "に",
+   "ok": true
+  },
+  "10630183#5": {
+   "key": "10630183",
+   "position": 5,
+   "surface": "て",
+   "ok": true
+  },
+  "10668448#4": {
+   "key": "10668448",
+   "position": 4,
+   "surface": "な",
+   "ok": true
+  },
+  "1196571#1": {
+   "key": "1196571",
+   "position": 1,
+   "surface": "の",
+   "ok": true
+  },
+  "175635#3": {
+   "key": "175635",
+   "position": 3,
+   "surface": "から",
+   "ok": true
+  },
+  "126971#3": {
+   "key": "126971",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  }
+ }
+}

@@ -1,0 +1,1546 @@
+diff --git a/scripts/export/build_exam_banks.py b/scripts/export/build_exam_banks.py
+index a2ca565e..ffbc8586 100644
+--- a/scripts/export/build_exam_banks.py
++++ b/scripts/export/build_exam_banks.py
+@@ -5,13 +5,74 @@ item banks derived ONLY from verified corpus facts — no AI generation, so Japa
+   orthography     (表記)      kana -> pick the correct written form            [vocab facts]
+   context_fill    (文脈規定)  bank sentence with the target word blanked        [sentence + vocab]
+   grammar_form    (文法形式)  bank sentence with the grammar form blanked       [sentence + grammar]
+-  sentence_order  (並べ替え)  reorder the sentence's tokens                     [sentence tokens]
++  sentence_order  (並べ替え)  reorder the sentence's BUNSETSU                    [sentence tokens]
++  text_grammar    (文章の文法) a reading passage with one grammar form blanked   [reading + grammar]
+ Distractors are built by RULE (same level + same lexeme class + similar length; never equal to the correct
+ answer; orthography distractors must not share the stem's reading — i.e. wrong by construction). Among
+ equally-close candidates the order is a hash of (item, candidate), NOT alphabetical — see `spread()`.
+ Deterministic (hashed sorts, no RNG) so re-runs are reproducible; the APP does the per-attempt random pick (see
+ design/exam_simulator.md). Real JLPT papers are © JEES — format reference only; zero copied text.
+-Output: corpus/exam_banks/{level}_{type}.json + INDEX.md. Usage: build_exam_banks.py"""
++Output: corpus/exam_banks/{level}_{type}.json + INDEX.md. Usage: build_exam_banks.py [--out DIR]
++
++W17 — WHAT CHANGED AND WHY (research/reports/w17_builder_report.md)
++==================================================================
++The A2 decision packet (`research/reports/exam_bank_regen_review.md` §5.1) measured that regenerating
++with the builder as it stood was a NO-GO: it stripped provenance from 5,182 items, dropped 3,392 vocab
++slugs, re-introduced all 93 answer leaks a migration had removed, and printed a citation placeholder as
++a distractor. The two QA waves then added the defects the plan had to absorb. Every change below is one
++of those findings; each is marked with the finding it closes.
++
++  1  LEAK GUARD (EB-05). `cf` skips a candidate whose headword occurs more than once in the sentence
++     (`continue`, i.e. try the next vocab — never drop the sentence); `gf`/`tg` select a form that
++     occurs EXACTLY once. Blanking only the first occurrence left the answer printed further along on
++     93 items.
++  2  PROVENANCE. `layer` / `ai_generated` / `needs_review` on every item, derived exactly as the
++     now-disabled `migrate_exam_banks_p7.py` derived them, so a rebuild carries what the migration used
++     to stamp in afterwards (and `contracts/exam_item.schema.json` REQUIRES all four).
++  3  PUBLISHED SLUGS. `vocab: vocab:<jmdict_id>` beside every `vocab_id`; `contracts/README.md` forbids
++     a row number as an address.
++  4  `reading_verified` PREFERENCE on the `cf` candidate order. A preference, never a filter:
++     `reading_verified=0` means "not confirmed", not "wrong", and filtering would discard 180 items for
++     no defect.
++  5  OKURIGANA (EB-02). `kanji_reading` distractors are ranked by whether they share the stem's kana
++     head/tail, so the item stops being solvable by matching okurigana shape.
++  6  ORTHOGRAPHY RANKING (EB-06). Rank on `len(headword)` — the string actually printed — not on
++     `len(kana)`, plus the same shape bonus and a penalty for a length longshot.
++  7  DETERMINISM. Explicit `ORDER BY` on the `sentence_vocab` scan. The stability of the old scan
++     depended on the query being answered from the PK covering index; adding one non-PK column to the
++     SELECT silently reverts it and moves 223 items.
++  8  WAVE DASH. The citation-placeholder filter tested U+FF5E only, so U+301C survived and `なん〜か`
++     shipped as a learner-visible distractor on 9 items. Now in `exam_rules.option_ok`, with the rest of
++     the option-shape rules.
++  9  INDEX. `removed_items.json` matched the bank glob and was listed as a 3-item bank; excluded now.
++ 10  READING-AWARE LINKS (qa F4, 135 items). A `cf` candidate must be proved by the sentence's own
++     dissection — lemma AND reading, W12's rule, in `exam_rules.reading_link_ok`. 空/から stood on six
++     *sky* sentences, 時/とき on the じ counter 26 times, 金/きん where the sentence says かね.
++ 11  BUNSETSU (qa F15/S4/F8, 45 ambiguous items). `sentence_order` tiles are bunsetsu, not morphemes,
++     and the item carries `accepted[]` — every meaning-preserving reordering — instead of one string.
++     Items whose tiles admit a MEANING-CHANGING reordering are refused. See `bunsetsu.py`.
++ 12  HOMOPHONE-SET DEDUPE (qa F1, 37 items). One `orthography` item per (level, kana) and one
++     `kanji_reading` item per (level, headword). あつい appeared as three byte-identical items keyed
++     暑い / 熱い / 厚い; whichever the learner picked, one of the three marked them wrong.
++ 13  THE LEVEL RULE (W03). Selection now happens against the level's taught set — every kanji in
++     stem/options/passage, the item's own vocab, the source sentence's token vocab and its grammar
++     tags. This is the rule `validate_exam_level_gate.py` measures, implemented once in
++     `exam_rules.TaughtSets` so the builder and the gate cannot disagree.
++ 14  FOUR REAL OPTIONS (qa S3, 103 items). Options are filtered by `exam_rules.option_ok`: no grammar
++     metalanguage (自動詞 / 命令形), no leaked sense index (`ずっと ①`), no slot-stripped non-word
++     (`とかとか`, `おになる`). A grammar distractor must also be ATTESTED in the level's own corpus, and
++     may not come from the same grammar point as the key (んです vs のです was offered as a wrong answer
++     to itself). `kanji_reading` distractors must be the same script class as the key — a katakana
++     loanword reading is eliminated on sight and the item is a 3-option item wearing four.
++ 15  EXPLANATIONS. Auto-graded items carry a pt-BR `explanation` assembled from the RECORD — the vocab
++     gloss and reading, the grammar point's label, the sentence's own translation — by a fixed template
++     per family. It is Layer B for that reason: no model wrote it, and there is nothing in it a
++     reviewer has to fact-check that is not already checked where it lives.
++
++DEPENDENCY THIS ADDS: the exported `course/` tree. The taught set is read from the course export, as
++the gate reads it, because the DB's `lesson.cumulative_known_set` stores `vocab:<headword>` refs that
++only the exporter resolves to `vocab:<jmdict_id>`. Run `export_course.py` before this.
++"""
+ from __future__ import annotations
+ import argparse, hashlib, json, sqlite3, sys
+ from pathlib import Path
+@@ -19,7 +80,12 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+ # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
+ import sys as _sys, pathlib as _pl  # noqa: E402
+ _sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
++_sys.path.append(str(_pl.Path(__file__).resolve().parent))
+ from dbtarget import db_target  # noqa: E402
++from exam_rules import (  # noqa: E402
++    KANJI_RE, TaughtSets, has_kanji, kana_fold, option_ok, reading_link_ok,
++)
++import bunsetsu  # noqa: E402
+ 
+ ROOT = Path(__file__).resolve().parents[2]
+ DB = db_target(ROOT / "db" / "corpus.sqlite")
+@@ -28,9 +94,11 @@ LEVELS = ("n5", "n4", "n3")
+ ORD = {"n5": 0, "n4": 1, "n3": 2, "n2": 3, "n1": 4}
+ allowed = lambda slvl, lvl: slvl in ORD and ORD[slvl] <= ORD[lvl]
+ CAPS = {"kanji_reading": 400, "orthography": 400, "context_fill": 400, "grammar_form": 300, "sentence_order": 300, "text_grammar": 150}
+-HAS_KANJI = lambda s: any("一" <= ch <= "鿿" for ch in s)
+-
++HAS_KANJI = has_kanji
+ 
++# Sidecars under corpus/exam_banks that are not banks. `removed_items.json` matched `*_*.json`, so the
++# INDEX gained the line "- removed_items.json — 3 items" (len() over its {why,count,items} dict).
++NOT_A_BANK = {"removed_items.json"}
+ 
+ _TOK = None
+ _MODE_C = None
+@@ -74,6 +142,24 @@ def boundary_occurrence(text: str, form: str, starts: set, ends: set) -> int:
+     return -1
+ 
+ 
++def hiragana_tail(s: str) -> str:
++    i = len(s)
++    while i > 0 and 0x3041 <= ord(s[i - 1]) <= 0x309F:
++        i -= 1
++    return s[i:]
++
++
++def hiragana_head(s: str) -> str:
++    i = 0
++    while i < len(s) and 0x3041 <= ord(s[i]) <= 0x309F:
++        i += 1
++    return s[:i]
++
++
++def is_hiragana_only(s: str) -> bool:
++    return bool(s) and all(0x3041 <= ord(c) <= 0x309F or c == "ー" for c in s)
++
++
+ def spread(anchor: str, value: str) -> str:
+     """Deterministic per-item tiebreak for equally-close candidates.
+ 
+@@ -84,7 +170,7 @@ def spread(anchor: str, value: str) -> str:
+     while keeping the build reproducible — this file's contract is "deterministic, no RNG", and a hash is
+     deterministic; only the *ordering* is arbitrary, which is exactly what a tiebreak should be.
+     """
+-    return hashlib.sha1(f"{anchor}{value}".encode("utf-8")).hexdigest()
++    return hashlib.sha1(f"{anchor}{value}".encode("utf-8")).hexdigest()
+ 
+ 
+ def pick_distractors(cands, correct_key, want=3):
+@@ -100,204 +186,475 @@ def pick_distractors(cands, correct_key, want=3):
+     return out
+ 
+ 
++def group_order(cands: list[dict], lvl: str) -> list[dict]:
++    """Which record represents a homophone / homograph group, best first (W17 fix 12).
++
++    Deterministic and evidence-ordered: the record whose OWN level is this bank's level first — an
++    N4 漢字読み item should test the N4 word, and 米 names both vocab:1132570 (メートル, N5) and
++    vocab:1508750 (こめ, N4), which a cumulative known set puts in the same group — then a JMdict
++    `common` spelling, then a better frequency rank, then the JMdict entry number so the choice
++    never depends on row order. The caller walks this list and takes the first record that can
++    actually be built into an item, rather than losing the whole group when the representative
++    happens to have no usable distractors.
++    """
++    return sorted(cands, key=lambda v: (0 if v["lvl"] == lvl else 1,
++                                        0 if v["common"] else 1,
++                                        v["freq"] if v["freq"] is not None else 10 ** 9,
++                                        v["slug"]))
++
++
+ def main() -> int:
+     ap = argparse.ArgumentParser()
+     ap.add_argument("--out", default=None,
+                     help="write the banks here instead of corpus/exam_banks (prototype mode: "
+                          "nothing under corpus/ is touched)")
++    ap.add_argument("--root", default=None,
++                    help="tree to read the course export from (default: the repo root)")
++    ap.add_argument("--stats", default=None, help="write per-family selection counters here (JSON)")
+     args = ap.parse_args()
+     out_dir = Path(args.out) if args.out else OUT
++    root = Path(args.root).resolve() if args.root else ROOT
+     con = sqlite3.connect(DB)
+     out_dir.mkdir(parents=True, exist_ok=True)
+     counts = {}
++    drops: dict[str, dict[str, int]] = {}
++
++    def drop(fam: str, why: str) -> None:
++        drops.setdefault(fam, {}).setdefault(why, 0)
++        drops[fam][why] += 1
+ 
+-    vocab = [dict(zip(("id", "hw", "kana", "lex", "lvl"), r)) for r in con.execute(
+-        "SELECT id,headword,kana,lexeme_type,level FROM vocab WHERE level IN ('n5','n4','n3') AND kana!=''")]
+-    kana_of = {v["hw"]: v["kana"] for v in vocab}
++    # ---- the level rule (W03), from the course export -----------------------------------------
++    taught = TaughtSets(root)
++
++    vocab = [dict(zip(("id", "slug", "hw", "kana", "lex", "lvl", "common", "freq"), r))
++             for r in con.execute(
++        "SELECT id,slug,headword,kana,lexeme_type,level,COALESCE(common,0),freq_rank FROM vocab "
++        "WHERE kana!='' ORDER BY id")]
++    vb_by_id = {v["id"]: v for v in vocab}
++    # Uncollapsed spelling -> every reading it can take. A kanji_reading distractor that is ALSO a
++    # reading of the stem is a second right answer; 93 headwords are shared by 193 records, so a
++    # dict keyed by headword would have hidden exactly the collisions this guards.
++    hw_readings: dict[str, set[str]] = {}
++    for v in vocab:
++        hw_readings.setdefault(v["hw"], set()).add(v["kana"])
++
++    # pt-BR text for the derived `explanation` (fix 15) comes from `localized_text`, the locale
++    # module (design/i18n.md) — NOT from the legacy `*_pt` columns. `sentence.pt` is NULL on all
++    # 5,889 rows and `grammar_point.label_pt` on all 496, because the pt-BR content moved to the
++    # locale table; reading the columns produced an explanation that was empty or that just
++    # repeated the answer.
++    LOC = "pt-BR"
++    gloss: dict[int, str] = {}          # vocab row id -> first gloss of sense 0
++    for vid, val in con.execute(
++            "SELECT vs.vocab_id, lt.value FROM vocab_sense vs "
++            "JOIN localized_text lt ON lt.entity_type='vocab_sense' AND lt.entity_id=vs.id "
++            "  AND lt.field='gloss' AND lt.locale=? "
++            "WHERE vs.sense_order=0 ORDER BY vs.vocab_id, vs.id", (LOC,)):
++        if vid in gloss:
++            continue
++        try:
++            g = json.loads(val or "[]")
++        except Exception:
++            g = []
++        if g:
++            gloss[vid] = str(g[0])
++    # grammar: the per-FORM meaning where the record has one, else the point's own label.
++    form_meaning: dict[str, str] = {}   # grammar key -> {form: meaning}
++    glabel: dict[str, str] = {}
++    for key, field, val in con.execute(
++            "SELECT g.key, lt.field, lt.value FROM localized_text lt "
++            "JOIN grammar_point g ON g.id = lt.entity_id "
++            "WHERE lt.entity_type='grammar_point' AND lt.locale=? "
++            "  AND lt.field IN ('form_meanings','label') ORDER BY g.key", (LOC,)):
++        if field == "label":
++            glabel[key] = val or ""
++        else:
++            try:
++                form_meaning[key] = json.loads(val or "{}")
++            except Exception:
++                pass
++    sent_pt: dict[int, str] = {sid: (v or "") for sid, v in con.execute(
++        "SELECT entity_id, value FROM localized_text WHERE entity_type='sentence' "
++        "AND field='translation' AND locale=?", (LOC,))}
+ 
+     # real sentences preferred; verified-generated (passed the §9 gen gates, needs_review) fill thin levels
+-    sents = {sid: (slug, jp, lvl, ai) for sid, slug, jp, lvl, ai in con.execute(
+-        "SELECT id,slug,jp,level,COALESCE(ai_generated,0) FROM sentence")}
++    sents = {sid: (slug, jp, lvl, ai, pt) for sid, slug, jp, lvl, ai, pt in con.execute(
++        "SELECT id,slug,jp,level,COALESCE(ai_generated,0),COALESCE(pt,'') FROM sentence ORDER BY id")}
+     svocab: dict = {}
+-    for sid, vid in con.execute("SELECT sentence_id,vocab_id FROM sentence_vocab"):
++    # W17 fix 7: an explicit ORDER BY, so stability does not depend on this query happening to be
++    # answered from the PK covering index. `reading_verified DESC` is fix 4's preference — a verified
++    # anchor wins the `break` below when a sentence links more than one eligible word.
++    for sid, vid in con.execute(
++            "SELECT sentence_id,vocab_id FROM sentence_vocab "
++            "ORDER BY sentence_id, COALESCE(reading_verified,0) DESC, vocab_id"):
+         if sid in sents:
+             svocab.setdefault(sid, []).append(vid)
+-    vb_by_id = {v["id"]: v for v in vocab}
+-    toks: dict = {}
+-    for sid, surf in con.execute("SELECT sentence_id,surface FROM token WHERE split_mode='C' ORDER BY sentence_id,id"):
+-        if sid in sents:
+-            toks.setdefault(sid, []).append(surf)
++
++    # Every token, both split modes, exactly as corpus/sentences/bank.json publishes them — that is
++    # what the level gate reads for the vocab dimension, so the builder must select on the same set.
++    slug_of_vid = {v["id"]: v["slug"] for v in vocab}
++    tok_vocab: dict[int, set[str]] = {}
++    toks_c: dict[int, list[dict]] = {}
++    for sid, sm, surf, lemma, read, pos, vid in con.execute(
++            "SELECT sentence_id,split_mode,surface,lemma,reading,pos,vocab_id FROM token "
++            "ORDER BY sentence_id, split_mode, position, id"):
++        if sid not in sents:
++            continue
++        if vid is not None and vid in slug_of_vid:
++            tok_vocab.setdefault(sid, set()).add(slug_of_vid[vid])
++        if sm == "C":
++            toks_c.setdefault(sid, []).append(
++                {"surface": surf, "lemma": lemma, "reading": read, "pos": pos})
+ 
+     def form_strs(forms_json):
+-        """forms_json entries are plain strings (or occasionally dicts) — normalize."""
++        """forms_json entries are plain strings (or occasionally dicts) — normalize, then apply the
++        option-shape guards (W17 fix 8/14, `exam_rules.option_ok`)."""
+         out = []
+         try:
+             for f in json.loads(forms_json or "[]"):
+                 fm = (f if isinstance(f, str) else (f.get("form") or "")).strip()
+                 fm = fm.lstrip("～〜").strip()  # N3 forms are cited as ～うちに; the sentence contains うちに
+-                if fm and 1 < len(fm) <= 8 and "…" not in fm and "～" not in fm and "-" not in fm:
++                if option_ok(fm):
+                     out.append(fm)
+         except Exception:
+             pass
+         return out
+ 
+-    gforms = []  # (level, key, form)
+-    for key, lvl, forms in con.execute("SELECT key,level,forms_json FROM grammar_point WHERE level IN ('n5','n4','n3')"):
++    gp = {gid: (key, lvl, forms, label) for gid, key, lvl, forms, label in con.execute(
++        "SELECT id,key,level,forms_json,COALESCE(label_pt,'') FROM grammar_point ORDER BY id")}
++    gforms = []            # (level, key, form)
++    gkey_of_form: dict[tuple[str, str], str] = {}   # (level, form) -> the grammar key that owns it
++    for key, lvl, forms in con.execute(
++            "SELECT key,level,forms_json FROM grammar_point "
++            "WHERE level IN ('n5','n4','n3') ORDER BY key"):
+         for fm in form_strs(forms):
+             gforms.append((lvl, key, fm))
++            gkey_of_form.setdefault((lvl, fm), key)
+     sgram: dict = {}
+-    for sid, gid in con.execute("SELECT sentence_id,grammar_id FROM sentence_grammar"):
++    for sid, gid in con.execute(
++            "SELECT sentence_id,grammar_id FROM sentence_grammar ORDER BY sentence_id, grammar_id"):
+         if sid in sents:
+             sgram.setdefault(sid, []).append(gid)
+-    gp = {gid: (key, lvl, forms) for gid, key, lvl, forms in con.execute(
+-        "SELECT id,key,level,forms_json FROM grammar_point")}
+-
+-    # W16. Kanji taught by the END of each level, from the lessons' own cumulative_known_set (which
+-    # is cumulative, so an N4 lesson's set already contains pre-N5 and N5). Used to keep a
+-    # text_grammar item inside the level: `grammar_point.forms_json` carries grammar METALANGUAGE
+-    # (自動詞, 命令形, 受身形, が必要), and those made distractors printing 詞 / 形 / 受 / 必 in an N4
+-    # paper — 15 items over the ceiling of 8 in validate_exam_level_gate. They are also poor
+-    # distractors on their own terms: a grammar-term label never fits a sentence blank.
+-    taught_kanji: dict = {}
+-    for slug, cks in con.execute(
+-            "SELECT slug,cumulative_known_set FROM lesson WHERE cumulative_known_set NOT IN ('', NULL)"):
+-        m = slug.split(":", 1)[1].split("-", 1)[0]
+-        if m not in LEVELS:
+-            continue
+-        try:
+-            k = json.loads(cks)
+-        except Exception:
+-            continue
+-        taught_kanji.setdefault(m, set()).update(
+-            x.split(":", 1)[1] for x in (k.get("kanji") or []))
+-    readable = lambda form, lvl: all(not HAS_KANJI(ch) or ch in taught_kanji.get(lvl, set())
+-                                     for ch in form)
++    sent_gram_slugs: dict[int, set[str]] = {}
++    for sid, gids in sgram.items():
++        sent_gram_slugs[sid] = {"gram:" + gp[g][0] for g in gids if g in gp}
++
++    readings = [(slug, rlvl, jp) for slug, rlvl, jp in con.execute(
++        "SELECT slug,level,jp FROM reading ORDER BY slug")] \
++        if con.execute("SELECT name FROM sqlite_master WHERE name='reading'").fetchone() else []
++
++    # W17 fix 14: a form may only be PRINTED if the level's own corpus attests it. A pattern label
++    # whose 〜 slots were stripped (`よりほうが`, `の中でが一番`, `のはだ`) occurs in no real Japanese,
++    # which is precisely what makes it eliminable on sight; a real form occurs in the sentences the
++    # level is built from. Cheap to compute and it needs no new vocabulary of exceptions.
++    attested: dict[str, set[str]] = {}
++    for lvl in LEVELS:
++        corpus_text = [jp for (_s, jp, slvl, _ai, _pt) in sents.values() if allowed(slvl, lvl)]
++        corpus_text += [jp for (_s, rlvl, jp) in readings if allowed(rlvl, lvl)]
++        blob = "\n".join(corpus_text)
++        attested[lvl] = {fm for (l2, _k, fm) in gforms if l2 == lvl and fm in blob}
++
++    # ---- the taught, level-clean vocabulary pool ----------------------------------------------
++    # A word may be the ANSWER or a DISTRACTOR at a level only when the course has taught the record
++    # and every kanji it prints. This is the pool W03 measured (177 level-clean N5 words against an
++    # orthography floor of 15), and it is what turns the level ceilings into 0.
++    clean_pool: dict[str, list[dict]] = {}
++    for lvl in LEVELS:
++        clean_pool[lvl] = [v for v in vocab
++                           if taught.vocab_ok(v["slug"], lvl)
++                           and HAS_KANJI(v["hw"]) and v["hw"] != v["kana"]
++                           and taught.kanji_ok(v["hw"], lvl)]
++        clean_pool[lvl].sort(key=lambda v: (v["kana"], v["hw"], v["slug"]))
+ 
+     for lvl in LEVELS:
+-        lv_vocab = [v for v in vocab if v["lvl"] == lvl and HAS_KANJI(v["hw"]) and v["hw"] != v["kana"]]
+-        lv_vocab.sort(key=lambda v: (v["kana"], v["hw"]))
++        lv_vocab = clean_pool[lvl]
++        pool_slugs = {v["slug"] for v in lv_vocab}
++
++        # ---- kanji_reading + orthography -----------------------------------------------------
++        # W17 fix 12: one item per printed STEM. 背 was two kanji_reading items keyed せ and せい;
++        # あつい was three orthography items keyed 暑い / 熱い / 厚い over an identical option set.
++        by_hw: dict[str, list[dict]] = {}
++        by_kana: dict[str, list[dict]] = {}
++        for v in lv_vocab:
++            by_hw.setdefault(v["hw"], []).append(v)
++            by_kana.setdefault(v["kana"], []).append(v)
++        kr_groups = sorted((group_order(g, lvl) for g in by_hw.values()),
++                           key=lambda g: (g[0]["kana"], g[0]["hw"]))
++        or_groups = sorted((group_order(g, lvl) for g in by_kana.values()),
++                           key=lambda g: (g[0]["kana"], g[0]["hw"]))
++        for hw, g in by_hw.items():
++            if len(g) > 1:
++                drop("kanji_reading", "homograph-group-deduped")
++        for kana, g in by_kana.items():
++            if len(g) > 1:
++                drop("orthography", "homophone-group-deduped")
+ 
+-        # ---- kanji_reading + orthography ----
+         kr, ort = [], []
+-        for v in lv_vocab:
+-            pool = [(abs(len(w["kana"]) - len(v["kana"])) * 10 + (0 if w["lex"] == v["lex"] else 5), w)
+-                    for w in lv_vocab if w["id"] != v["id"]]
+-            kc = sorted(((s, w["kana"]) for s, w in pool), key=lambda t: (t[0], spread(v["hw"], t[1])))
+-            dk = pick_distractors(kc, v["kana"])
+-            # orthography distractors: same-level kanji words, NOT homophones of the stem (wrong by construction)
+-            hc = sorted(((s, w["hw"]) for s, w in pool if w["kana"] != v["kana"]),
+-                        key=lambda t: (t[0], spread(v["kana"], t[1])))
+-            dh = pick_distractors(hc, v["hw"])
+-            if len(dk) == 3:
+-                kr.append({"id": f"kr:{lvl}:{v['id']}", "level": lvl, "stem": v["hw"], "correct": v["kana"],
+-                           "distractors": dk, "vocab_id": v["id"], "source": "vocab"})
+-            if len(dh) == 3:
+-                ort.append({"id": f"or:{lvl}:{v['id']}", "level": lvl, "stem": v["kana"], "correct": v["hw"],
+-                            "distractors": dh, "vocab_id": v["id"], "source": "vocab"})
+-
+-        # ---- context_fill ----
++        for group in kr_groups:
++            # Walk the group best-first and keep the first record that yields four real options.
++            for v in group:
++                tail, head = hiragana_tail(v["hw"]), hiragana_head(v["hw"])
++
++                def shaped(o: str, tail: str = tail, head: str = head) -> bool:
++                    """EB-02: does this reading match the stem's okurigana shape? An option that does
++                    not is eliminated without reading the kanji, which is what made 373 of 439 items
++                    shape-solvable."""
++                    return (not tail or o.endswith(tail)) and (not head or o.startswith(head))
++
++                # kanji_reading distractors: a kana reading of another level-clean word, never a
++                # reading the stem itself takes, and the same script class as the key — a katakana
++                # loanword (グラム, コーヒー) can never read a kanji stem and drops the item to three
++                # real options.
++                kc = []
++                for w in lv_vocab:
++                    if w["id"] == v["id"] or w["kana"] == v["kana"]:
++                        continue
++                    if w["kana"] in hw_readings.get(v["hw"], ()):
++                        continue
++                    if is_hiragana_only(v["kana"]) != is_hiragana_only(w["kana"]):
++                        continue
++                    s = (0 if shaped(w["kana"]) else 100)                         + abs(len(w["kana"]) - len(v["kana"])) * 10                         + (0 if w["lex"] == v["lex"] else 5)
++                    kc.append((s, w["kana"]))
++                kc.sort(key=lambda t: (t[0], spread(v["hw"], t[1])))
++                dk = pick_distractors(kc, v["kana"])
++                if len(dk) == 3 and taught.strings_kanji_ok([v["hw"], v["kana"], *dk], lvl):
++                    kr.append({"id": f"kr:{lvl}:{v['id']}", "level": lvl, "stem": v["hw"],
++                               "correct": v["kana"], "distractors": dk, "vocab": v["slug"],
++                               "vocab_id": v["id"], "source": "vocab",
++                               "explanation": {"pt-BR": explain_vocab(v, gloss)},
++                               "layer": "B", "ai_generated": False, "needs_review": False})
++                    break
++            else:
++                drop("kanji_reading", "no-clean-distractor-set")
++
++        for group in or_groups:
++            for v in group:
++                stem = v["kana"]
++
++                def fits(o: str, stem: str = stem) -> bool:
++                    """EB-06: the printed spelling's own kana head/tail has to be compatible with the
++                    stem, or it is eliminated on shape."""
++                    t, h = hiragana_tail(o), hiragana_head(o)
++                    return (not t or stem.endswith(t)) and (not h or stem.startswith(h))
++
++                hc = []
++                for w in lv_vocab:
++                    if w["id"] == v["id"] or w["kana"] == v["kana"]:
++                        continue        # a homophone spelling would be a second right answer
++                    if v["kana"] in hw_readings.get(w["hw"], ()):
++                        continue        # ... and so would any other spelling that also reads the stem
++                    s = (0 if fits(w["hw"]) else 40)                         + (30 if abs(len(w["hw"]) - len(v["hw"])) >= 2 else 0)                         + abs(len(w["hw"]) - len(v["hw"])) * 10                         + (0 if w["lex"] == v["lex"] else 5)
++                    hc.append((s, w["hw"]))
++                hc.sort(key=lambda t: (t[0], spread(v["kana"], t[1])))
++                dh = pick_distractors(hc, v["hw"])
++                if len(dh) == 3 and taught.strings_kanji_ok([v["hw"], *dh], lvl):
++                    ort.append({"id": f"or:{lvl}:{v['id']}", "level": lvl, "stem": v["kana"],
++                                "correct": v["hw"], "distractors": dh, "vocab": v["slug"],
++                                "vocab_id": v["id"], "source": "vocab",
++                                "explanation": {"pt-BR": explain_ortho(v, gloss)},
++                                "layer": "B", "ai_generated": False, "needs_review": False})
++                    break
++            else:
++                drop("orthography", "no-clean-distractor-set")
++
++        # ---- context_fill --------------------------------------------------------------------
+         cf = []
+         for sid in sorted(svocab, key=lambda x: (sents[x][3], x)):
+             if len(cf) >= CAPS["context_fill"]:
+                 break
+-            slug, jp, slvl, ai = sents[sid]
++            slug, jp, slvl, ai, pt = sents[sid]
+             if not allowed(slvl, lvl):
+                 continue
++            # the level rule, on the sentence itself: its dissection is what the gate reads
++            if not (tok_vocab.get(sid, set()) <= taught.by_level[lvl]["vocab"]):
++                drop("context_fill", "sentence-vocab-above-level")
++                continue
++            if not (sent_gram_slugs.get(sid, set()) <= taught.by_level[lvl]["grammar"]):
++                drop("context_fill", "sentence-grammar-above-level")
++                continue
++            if not taught.kanji_ok(jp, lvl):
++                drop("context_fill", "sentence-kanji-above-level")
++                continue
+             for vid in svocab[sid]:
+                 v = vb_by_id.get(vid)
+-                if not v or v["lvl"] != lvl or not HAS_KANJI(v["hw"]) or v["hw"] not in jp:
++                if not v or v["slug"] not in pool_slugs or v["hw"] not in jp:
+                     continue
+-                pool = [(abs(len(w["hw"]) - len(v["hw"])) * 10 + (0 if w["lex"] == v["lex"] else 20), w)
+-                        for w in lv_vocab if w["id"] != v["id"] and w["hw"] not in jp]
+-                pool.sort(key=lambda t: (t[0], spread(f"{sid}:{v['hw']}", t[1]["hw"])))
+-                dh = pick_distractors([(s, w["hw"]) for s, w in pool], v["hw"])
++                if jp.count(v["hw"]) > 1:
++                    drop("context_fill", "leak-guard-multiple-occurrence")
++                    continue        # EB-05: blanking one leaves the answer printed in the other
++                if not reading_link_ok([(t["surface"], t["lemma"], t["reading"])
++                                        for t in toks_c.get(sid, [])], v["hw"], v["kana"]):
++                    drop("context_fill", "reading-does-not-agree")
++                    continue        # qa F4: 空/から on a *sky* sentence, 時/とき on a clock reading
++                cands = []
++                for w in lv_vocab:
++                    if w["id"] == v["id"] or w["hw"] in jp:
++                        continue
++                    cands.append((abs(len(w["hw"]) - len(v["hw"])) * 10
++                                  + (0 if w["lex"] == v["lex"] else 20), w["hw"]))
++                cands.sort(key=lambda t: (t[0], spread(f"{sid}:{v['hw']}", t[1])))
++                dh = pick_distractors(cands, v["hw"])
+                 if len(dh) == 3:
+                     cf.append({"id": f"cf:{lvl}:{sid}:{vid}", "level": lvl,
+                                "stem": jp.replace(v["hw"], "（　）", 1), "correct": v["hw"],
+-                               "distractors": dh, "sentence": slug, "vocab_id": vid, "ai_generated": bool(ai),
++                               "distractors": dh, "sentence": slug, "vocab": v["slug"], "vocab_id": vid,
++                               "explanation": {"pt-BR": explain_vocab(v, gloss)},
++                               "layer": "B", "ai_generated": bool(ai), "needs_review": bool(ai),
+                                "source": "sentence+vocab"})
++                else:
++                    drop("context_fill", "no-clean-distractor-set")
+                 break  # one item per sentence
+ 
+-        # ---- grammar_form ----
++        # ---- grammar_form --------------------------------------------------------------------
+         gf = []
+-        lv_forms = sorted({fm for l2, _, fm in gforms if l2 == lvl})
++        # The printable form pool for this level: attested in the level's own corpus, readable at
++        # the level, and owned by a grammar point the course actually TEACHES. That last clause is
++        # not decoration — `gram:gp-152` (the A3 duplicate of `gram:te-hoshii`, which no lesson
++        # unlocks) owns a form that put an untaught grammar key on a live N4 item.
++        lv_forms = sorted({fm for l2, k, fm in gforms
++                           if l2 == lvl and fm in attested[lvl] and taught.kanji_ok(fm, lvl)
++                           and taught.grammar_ok(k, lvl)})
+         for sid in sorted(sgram, key=lambda x: (sents[x][3], x)):
+             if len(gf) >= CAPS["grammar_form"]:
+                 break
+-            slug, jp, slvl, ai = sents[sid]
++            slug, jp, slvl, ai, pt = sents[sid]
+             if not allowed(slvl, lvl):
+                 continue
++            if not (tok_vocab.get(sid, set()) <= taught.by_level[lvl]["vocab"]):
++                drop("grammar_form", "sentence-vocab-above-level")
++                continue
++            if not (sent_gram_slugs.get(sid, set()) <= taught.by_level[lvl]["grammar"]):
++                drop("grammar_form", "sentence-grammar-above-level")
++                continue
++            if not taught.kanji_ok(jp, lvl):
++                drop("grammar_form", "sentence-kanji-above-level")
++                continue
+             for gid in sgram[sid]:
+-                key, glvl, forms = gp.get(gid, (None, None, None))
+-                if glvl != lvl or not forms:
++                key, glvl, forms, _label = gp.get(gid, (None, None, None, ""))
++                if glvl != lvl or not forms or not taught.grammar_ok(key, lvl):
+                     continue
+-                fm = next((x for x in form_strs(forms) if x in jp), None)
++                # EB-05 for gf: the blanked form must occur EXACTLY ONCE, or the stem prints its own
++                # answer further along.
++                fm = next((x for x in form_strs(forms)
++                           if x in lv_forms and jp.count(x) == 1), None)
+                 if not fm:
++                    drop("grammar_form", "no-single-occurrence-form")
+                     continue
+                 # NB: this used to slice [:40] BEFORE sorting, i.e. off an alphabetically-sorted
+                 # lv_forms — so the candidate set was the same 40 forms every time. Sort the full pool.
+-                dis = [x for x in lv_forms if x != fm and x not in jp]
++                # W17 fix 14: never offer another form of the SAME grammar point as a wrong answer —
++                # んです was keyed with のです offered, and じゃない with ではない, on a point whose own
++                # key is `janai-dewa-nai`.
++                dis = [x for x in lv_forms
++                       if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key]
+                 dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{sid}:{fm}", x)))
+                 if len(dis) >= 3:
+                     gf.append({"id": f"gf:{lvl}:{sid}", "level": lvl,
+                                "stem": jp.replace(fm, "（　）", 1), "correct": fm, "distractors": dis[:3],
+-                               "sentence": slug, "grammar": key, "ai_generated": bool(ai), "source": "sentence+grammar"})
++                               "sentence": slug, "grammar": key,
++                               "explanation": {"pt-BR": explain_grammar(fm, key, form_meaning, glabel)},
++                               "layer": "B", "ai_generated": bool(ai), "needs_review": bool(ai),
++                               "source": "sentence+grammar"})
++                else:
++                    drop("grammar_form", "no-clean-distractor-set")
+                 break
+ 
+-        # ---- sentence_order ----
+-        so = []
+-        for sid in sorted(toks, key=lambda x: (sents[x][3], x)):
++        # ---- sentence_order ------------------------------------------------------------------
++        # qa F09: `so:n4:808` and `so:n4:809` were the same tiles and the same answer from two
++        # different Tatoeba sentences, and sampling is without replacement BY ID, so one paper could
++        # ask the same question twice out of its four 並べ替え slots. One item per answer string.
++        so, so_answers = [], set()
++        for sid in sorted(toks_c, key=lambda x: (sents[x][3], x)):
+             if len(so) >= CAPS["sentence_order"]:
+                 break
+-            slug, jp, slvl, ai = sents[sid]
+-            if slvl != lvl and not (lvl == "n3" and allowed(slvl, lvl)) and not (lvl in ("n5","n4") and slvl == lvl):
++            slug, jp, slvl, ai, pt = sents[sid]
++            if not allowed(slvl, lvl):
++                continue
++            if not (tok_vocab.get(sid, set()) <= taught.by_level[lvl]["vocab"]):
++                drop("sentence_order", "sentence-vocab-above-level")
++                continue
++            if not (sent_gram_slugs.get(sid, set()) <= taught.by_level[lvl]["grammar"]):
++                drop("sentence_order", "sentence-grammar-above-level")
++                continue
++            if not taught.kanji_ok(jp, lvl):
++                drop("sentence_order", "sentence-kanji-above-level")
++                continue
++            pieces = bunsetsu.chunk(toks_c[sid])
++            if pieces is None:
++                drop("sentence_order", "unchunkable")
++                continue
++            if not (4 <= len(pieces) <= 6):
++                drop("sentence_order", f"chunk-count-{len(pieces)}")
++                continue
++            accepted, why = bunsetsu.scramble(pieces)
++            if accepted is None:
++                drop("sentence_order", why)
++                continue
++            answer = "".join(pieces)
++            if answer in so_answers:
++                drop("sentence_order", "duplicate-answer")
+                 continue
+-            pieces = [t for t in toks[sid] if t.strip() and t not in "。、！？!?"]
+-            if 5 <= len(pieces) <= 9:
+-                so.append({"id": f"so:{lvl}:{sid}", "level": lvl, "pieces": pieces,
+-                           "answer": "".join(pieces), "sentence": slug, "ai_generated": bool(ai), "source": "sentence-tokens"})
++            so_answers.add(answer)
++            so.append({"id": f"so:{lvl}:{sid}", "level": lvl, "pieces": pieces,
++                       "answer": answer, "accepted": accepted, "sentence": slug,
++                       "explanation": {"pt-BR": sent_pt.get(sid, "")},
++                       "layer": "B", "ai_generated": bool(ai), "needs_review": bool(ai),
++                       "source": "sentence-tokens"})
+ 
+         # ---- text_grammar (文章の文法): blank a level-appropriate grammar form inside a READING passage ----
+         tg = []
+-        # every printed form, correct and distractor alike, has to be readable at this level
+-        tg_forms = [f for f in lv_forms if readable(f, lvl)]
+-        if con.execute("SELECT name FROM sqlite_master WHERE name='reading'").fetchone():
+-            for slug, rlvl, jp in con.execute("SELECT slug,level,jp FROM reading ORDER BY slug"):
+-                if rlvl != lvl or len(tg) >= CAPS["text_grammar"]:
+-                    continue
+-                # W16: the blank is cut at SudachiPy mode-C token boundaries, never inside a word.
+-                tk = _tok()
+-                starts, ends = token_spans(tk, _MODE_C, jp)
+-                fm, at = None, -1
+-                for cand in tg_forms:
+-                    # The form must occur EXACTLY ONCE in the passage. A W15 passage is written
+-                    # ABOUT its lesson's grammar target and therefore repeats it, so blanking the
+-                    # first occurrence leaves the answer printed two lines down — which
+-                    # validate_exam_banks check C ("stem prints its own answer outside the blank")
+-                    # is there to catch. The old concatenations rarely repeated a form, so the rule
+-                    # was never needed before the passages became real texts.
+-                    if jp.count(cand) != 1:
+-                        continue
+-                    at = boundary_occurrence(jp, cand, starts, ends)
+-                    if at >= 0:
+-                        fm = cand
+-                        break
+-                if not fm:
++        tg_forms = lv_forms          # already attested + level-readable
++        for slug, rlvl, jp in readings:
++            if rlvl != lvl or len(tg) >= CAPS["text_grammar"]:
++                continue
++            if not taught.kanji_ok(jp, lvl):
++                drop("text_grammar", "passage-kanji-above-level")
++                continue
++            # W16: the blank is cut at SudachiPy mode-C token boundaries, never inside a word.
++            tk = _tok()
++            starts, ends = token_spans(tk, _MODE_C, jp)
++            fm, at = None, -1
++            for cand in tg_forms:
++                # The form must occur EXACTLY ONCE in the passage. A W15 passage is written
++                # ABOUT its lesson's grammar target and therefore repeats it, so blanking the
++                # first occurrence leaves the answer printed two lines down — which
++                # validate_exam_banks check C ("stem prints its own answer outside the blank")
++                # is there to catch. The old concatenations rarely repeated a form, so the rule
++                # was never needed before the passages became real texts.
++                if jp.count(cand) != 1:
+                     continue
+-                dis = [x for x in tg_forms if x != fm and x not in jp]
+-                dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{slug}:{fm}", x)))
+-                if len(dis) >= 3:
+-                    tg.append({"id": f"tg:{lvl}:{slug.split(':',1)[1]}", "level": lvl,
+-                               "stem": jp[:at] + "（　）" + jp[at + len(fm):], "correct": fm,
+-                               "distractors": dis[:3], "reading": slug, "source": "reading+grammar",
+-                               # Provenance the disabled migrate_exam_banks_p7.py used to stamp
+-                               # after the fact. A text_grammar stem is a REAL passage with one form
+-                               # blanked, so the Japanese the learner reads is not model-generated
+-                               # (ai_generated false) and the item is a derivation, not pedagogy
+-                               # (layer B). Emitted here so a regenerated bank carries it: the
+-                               # migration cannot run in a rebuild, and validate_provenance_json.py
+-                               # requires the fields on every item.
+-                               "layer": "B", "ai_generated": False, "needs_review": False})
++                at = boundary_occurrence(jp, cand, starts, ends)
++                if at >= 0:
++                    fm = cand
++                    break
++            if not fm:
++                drop("text_grammar", "no-token-aligned-single-form")
++                continue
++            key = gkey_of_form.get((lvl, fm))
++            if key and not taught.grammar_ok(key, lvl):
++                drop("text_grammar", "form-owner-grammar-above-level")
++                continue
++            dis = [x for x in tg_forms
++                   if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key]
++            dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{slug}:{fm}", x)))
++            if len(dis) >= 3:
++                tg.append({"id": f"tg:{lvl}:{slug.split(':',1)[1]}", "level": lvl,
++                           "stem": jp[:at] + "（　）" + jp[at + len(fm):], "correct": fm,
++                           "distractors": dis[:3], "reading": slug, "source": "reading+grammar",
++                           "grammar": key or "",
++                           "explanation": {"pt-BR": explain_grammar(fm, key or "", form_meaning, glabel)},
++                           # Provenance the disabled migrate_exam_banks_p7.py used to stamp
++                           # after the fact. A text_grammar stem is a REAL passage with one form
++                           # blanked, so the Japanese the learner reads is not model-generated
++                           # (ai_generated false) and the item is a derivation, not pedagogy
++                           # (layer B). Emitted here so a regenerated bank carries it: the
++                           # migration cannot run in a rebuild, and validate_provenance_json.py
++                           # requires the fields on every item.
++                           "layer": "B", "ai_generated": False, "needs_review": False})
++                if not key:
++                    tg[-1].pop("grammar")
++            else:
++                drop("text_grammar", "no-clean-distractor-set")
+ 
+         for name, items in (("kanji_reading", kr), ("orthography", ort), ("context_fill", cf),
+                             ("grammar_form", gf), ("sentence_order", so), ("text_grammar", tg)):
+@@ -307,8 +664,10 @@ def main() -> int:
+ 
+     # INDEX covers ALL bank files (deterministic + authored) — glob, don't use only this run's counts,
+     # so regenerating the deterministic banks never wipes the authored banks from the listing.
++    # W17 fix 9: `removed_items.json` matches `*_*.json` and is NOT a bank — its top level is a
++    # {why, count, items} dict, so it used to be listed as a 3-item bank.
+     all_counts = {f.stem: len(json.loads(f.read_text(encoding="utf-8")))
+-                  for f in sorted(out_dir.glob("*_*.json"))}
++                  for f in sorted(out_dir.glob("*_*.json")) if f.name not in NOT_A_BANK}
+     (out_dir / "INDEX.md").write_text(
+         "# corpus/exam_banks — JLPT-style question banks (our format)\n\n"
+         "Per-level, per-type item banks DERIVED from verified corpus facts (vocab readings, real bank "
+@@ -322,11 +681,48 @@ def main() -> int:
+         "renders the passage from `corpus/readings` (single source of truth). `listening_*` items are "
+         "voice-ready TEXT scripts (speaker-tagged turns, `audio: \"pending\"` — spec: `design/listening.md`); "
+         "`listening_reply` prompts are REAL bank sentences verbatim (`sentence` ref).\n\n"
++        "Every deterministic item is selected against its level's taught set (the `cumulative_known_set` "
++        "of the last lesson of that level's module): every kanji it prints, its own vocabulary record, "
++        "and the source sentence's token vocabulary and grammar tags are inside it — the rule "
++        "`scripts/validate/validate_exam_level_gate.py` measures. `sentence_order` tiles are BUNSETSU and "
++        "the item carries `accepted[]`, every reordering that means the same thing; the app grades "
++        "against that list, not against one string. Auto-graded items carry a pt-BR `explanation` "
++        "assembled from the record (gloss + reading, or the grammar point's label), never free prose.\n\n"
++        "`removed_items.json` is a withdrawal ledger, not a bank, and is deliberately absent below.\n\n"
+         + "".join(f"- `{k}.json` — {v} items\n" for k, v in sorted(all_counts.items())), encoding="utf-8")
+     con.close()
++    if args.stats:
++        Path(args.stats).write_text(json.dumps({"counts": counts, "drops": drops},
++                                               ensure_ascii=False, indent=1), encoding="utf-8")
+     print("exam banks ->", counts)
+     return 0
+ 
+ 
++# --------------------------------------------------------------------------------------------
++# W17 fix 15: explanations are TEMPLATES over record fields. No sentence here was written for a
++# specific item; every variable is a Layer-A or Layer-B field that already has a gate of its own.
++# --------------------------------------------------------------------------------------------
++def explain_vocab(v: dict, gloss: dict[int, str]) -> str:
++    g = gloss.get(v["id"], "")
++    return f"{v['hw']}（{v['kana']}）— {g}" if g else f"{v['hw']}（{v['kana']}）"
++
++
++def explain_ortho(v: dict, gloss: dict[int, str]) -> str:
++    g = gloss.get(v["id"], "")
++    return f"{v['kana']} escreve-se {v['hw']}" + (f" — {g}" if g else "")
++
++
++def explain_grammar(fm: str, key: str, form_meaning: dict[str, dict], glabel: dict[str, str]) -> str:
++    """The FORM's own pt-BR meaning where the record carries one (364 of 496 points do), else the
++    point's pt-BR label. Never the point's Layer-C `explanation`: an item is Layer B and a
++    didactic explanation belongs to the grammar record, which the item already references by key
++    (spec 1.3 — fact and explanation never share a field)."""
++    m = (form_meaning.get(key) or {}).get(fm) or ""
++    if m:
++        return f"{fm} — {m}"
++    lb = glabel.get(key, "")
++    return f"{fm} — {lb}" if lb else fm
++
++
+ if __name__ == "__main__":
+     sys.exit(main())
+
+diff --git a/scripts/export/build_authored_banks.py b/scripts/export/build_authored_banks.py
+index b344a147..911ca817 100644
+--- a/scripts/export/build_authored_banks.py
++++ b/scripts/export/build_authored_banks.py
+@@ -4,23 +4,60 @@
+ deterministic HARD guards: Japanese-only answer fields, correct != distractors (paraphrase correct must not
+ equal the headword/kana), usage keeps the REAL example as the correct option + 3 authored wrong-usage
+ sentences (all distinct, none equal to the real one), no em dash. Items are Layer C, needs_review (teacher
+-sign-off) and carry provenance. Usage: build_authored_banks.py [--flagged '{"n5":[vids...]}']"""
++sign-off) and carry provenance.
++
++W17. Two provenance fields were only ever written by `migrate_exam_banks_p7.py`, a one-shot migration
++that is now disabled — so regenerating these banks STRIPPED them, which is the same defect the A2
++review measured on the deterministic banks (`w15_apply_report.md` §7 named it for these two):
++  * `vocab` — the published `vocab:<jmdict_id>` slug beside the storage row number. `contracts/README.md`
++    forbids a row number as an address, and `validate_exam_banks` check D fails a `vocab_id` with no
++    slug next to it.
++  * `ai_generated` — copied from the STEM SENTENCE's provenance, because on an exam item the flag means
++    "the Japanese the learner reads was model-generated rather than selected", which is what the exam
++    picker's real-first rule keys on. 42 of 366 authored items are true. Absent, the picker read every
++    one of them as real.
++`--out DIR` writes elsewhere than corpus/exam_banks so a prototype run touches nothing under corpus/.
++Usage: build_authored_banks.py [--flagged '{"n5":[vids...]}'] [--out DIR]"""
+ from __future__ import annotations
+-import argparse, json, re, sys
++import argparse, json, re, sqlite3, sys
+ from pathlib import Path
+ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
++# W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
++import sys as _sys, pathlib as _pl  # noqa: E402
++_sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.name == "scripts")))
++from dbtarget import db_target  # noqa: E402
+ ROOT = Path(__file__).resolve().parents[2]
+ SRC = ROOT / "research" / "derived" / "reauthor" / "exam_authored"
+ OUT = ROOT / "corpus" / "exam_banks"
++DB = db_target(ROOT / "db" / "corpus.sqlite")
+ JP_OK = re.compile(r"^[ぁ-んァ-ヶー一-鿿々〆0-9０-９、。！？!?（）()・\s]+$")
+ 
+ 
+ def main() -> int:
+     ap = argparse.ArgumentParser()
+-    ap.add_argument("--flagged", default="{}")
++    # W17. The verifier's rejects used to reach this script ONLY as a command-line argument, so a
++    # regeneration that forgot the flag silently re-admitted every item a verifier had thrown out
++    # (measured: 12 n5 + 8 n4 + 4 n3 paraphrase/usage items come back). The tracked table is the
++    # default now, and `--flagged` overrides it; `--flagged {}` is still how you build without it.
++    ap.add_argument("--flagged", default=None)
++    ap.add_argument("--out", default=None,
++                    help="write the banks here instead of corpus/exam_banks (prototype mode)")
+     args = ap.parse_args()
++    out_dir = Path(args.out) if args.out else OUT
++    out_dir.mkdir(parents=True, exist_ok=True)
++    con = sqlite3.connect(DB)
++    slug_of_vid = {vid: slug for vid, slug in con.execute("SELECT id, slug FROM vocab")}
++    hw_of_vid = {vid: hw for vid, hw in con.execute("SELECT id, headword FROM vocab")}
++    sent_ai = {slug: bool(ai) for slug, ai in
++               con.execute("SELECT slug, COALESCE(ai_generated,0) FROM sentence")}
++    con.close()
++    raw = args.flagged
++    if raw is None:
++        fp = SRC / "_flagged.json"
++        raw = fp.read_text(encoding="utf-8") if fp.is_file() else "{}"
++        print(f"flagged table: {fp if fp.is_file() else '(none on disk)'}")
+     flagged: dict = {}
+-    for key, v in json.loads(args.flagged).items():
++    for key, v in json.loads(raw).items():
+         lvl = key.split("_")[0]  # accepts level keys or batch keys (n5_b1)
+         flagged.setdefault(lvl, set()).update(b["vid"] if isinstance(b, dict) else b for b in v)
+     counts, skipped = {}, {}
+@@ -54,14 +91,30 @@ def main() -> int:
+                 probs.append("em dash")
+             if probs:
+                 skip.append((vid, ";".join(probs))); continue
++            vslug = slug_of_vid.get(vid)
++            if vslug is None:
++                skip.append((vid, "no vocab record for this id")); continue
++            # W17. The item's `target` must BE the record's headword — that is what
++            # validate_exam_banks checks K and L assert, and it is the guard the A9 re-point needed:
++            # the authored facts for vid 745 name 運, but vocab:1001090's headword is うん after the
++            # re-point, so `pp:n4:745` / `us:n4:745` are Japanese selected for a lexeme this row no
++            # longer is. They were pulled by hand into removed_items.json; a rule keeps them out of
++            # every future rebuild, which a ledger entry cannot.
++            if hw_of_vid.get(vid) != f["hw"]:
++                skip.append((vid, f"target {f['hw']!r} is not the headword of {vslug} "
++                                  f"({hw_of_vid.get(vid)!r}) — record re-pointed since authoring"))
++                continue
++            ai = sent_ai.get(f["ex_slug"], False)
+             para.append({"id": f"pp:{lvl}:{vid}", "level": lvl, "stem": f["example"], "target": f["hw"],
+-                         "correct": pc, "distractors": pd, "vocab_id": vid, "sentence": f["ex_slug"],
+-                         "layer": "C", "needs_review": True, "source": "authored+verified"})
++                         "correct": pc, "distractors": pd, "vocab": vslug, "vocab_id": vid,
++                         "sentence": f["ex_slug"], "layer": "C", "needs_review": True,
++                         "ai_generated": ai, "source": "authored+verified"})
+             usage.append({"id": f"us:{lvl}:{vid}", "level": lvl, "target": f["hw"],
+-                          "correct": f["example"], "wrong": uw, "vocab_id": vid, "sentence": f["ex_slug"],
+-                          "layer": "C", "needs_review": True, "source": "authored+verified(real-correct)"})
+-        (OUT / f"{lvl}_paraphrase.json").write_text(json.dumps(para, ensure_ascii=False), encoding="utf-8")
+-        (OUT / f"{lvl}_usage.json").write_text(json.dumps(usage, ensure_ascii=False), encoding="utf-8")
++                          "correct": f["example"], "wrong": uw, "vocab": vslug, "vocab_id": vid,
++                          "sentence": f["ex_slug"], "layer": "C", "needs_review": True,
++                          "ai_generated": ai, "source": "authored+verified(real-correct)"})
++        (out_dir / f"{lvl}_paraphrase.json").write_text(json.dumps(para, ensure_ascii=False), encoding="utf-8")
++        (out_dir / f"{lvl}_usage.json").write_text(json.dumps(usage, ensure_ascii=False), encoding="utf-8")
+         counts[lvl] = (len(para), len(usage))
+         skipped[lvl] = len(skip)
+         if skip[:3]:
+
+diff --git a/scripts/export/build_listening_bank.py b/scripts/export/build_listening_bank.py
+index c5e29fe3..53f3f5e5 100644
+--- a/scripts/export/build_listening_bank.py
++++ b/scripts/export/build_listening_bank.py
+@@ -4,7 +4,14 @@
+ deterministic HARD guards: JP-only text (full-width Latin ok), speaker registry, per-sub turn bounds and
+ option counts, distinct options, correct not among distractors, no em dash, reply prompts BYTE-EQUAL to
+ their real bank sentence. Items are Layer C needs_review, audio "pending" (voiced later; scripts double as
+-review-mode transcripts). Usage: build_listening_bank.py [--flagged '{"n5_task":[{"ref":"3",...}]}']"""
++review-mode transcripts).
++
++W17. `source` was the one provenance field this builder never wrote — the 239 listening items were the
++only items in the whole tree with no `source` at all, and the disabled `migrate_exam_banks_p7.py` filled
++it in afterwards from its DEFAULT_SOURCE table. `contracts/exam_item.schema.json` REQUIRES it, so a
++regeneration without this line publishes 239 contract violations. `--out DIR` writes elsewhere than
++corpus/exam_banks so a prototype run touches nothing under corpus/.
++Usage: build_listening_bank.py [--flagged '{"n5_task":[{"ref":"3",...}]}'] [--out DIR]"""
+ from __future__ import annotations
+ import argparse, json, re, sys
+ from pathlib import Path
+@@ -56,7 +63,11 @@ def check(it, sub, prompt_jp):
+ def main() -> int:
+     ap = argparse.ArgumentParser()
+     ap.add_argument("--flagged", default="{}")
++    ap.add_argument("--out", default=None,
++                    help="write the banks here instead of corpus/exam_banks (prototype mode)")
+     args = ap.parse_args()
++    out_dir = Path(args.out) if args.out else OUT
++    out_dir.mkdir(parents=True, exist_ok=True)
+     flagged: dict = {}
+     for key, v in json.loads(args.flagged).items():
+         flagged[key] = {str(b["ref"]) if isinstance(b, dict) else str(b) for b in v}
+@@ -81,12 +92,13 @@ def main() -> int:
+                    else f"{PREFIX[sub]}:{lvl}:{int(it['n']):03d}")
+             rec = {"id": iid, "level": lvl, "script": it["script"], "question": (it.get("question") or ""),
+                    "correct": it["correct"].strip(), "distractors": [x.strip() for x in it["distractors"]],
+-                   "audio": "pending", "layer": "C", "needs_review": True, "ai_generated": True}
++                   "audio": "pending", "layer": "C", "needs_review": True, "ai_generated": True,
++                   "source": "listening-script"}
+             if sub == "reply":
+                 rec["sentence"] = it["slug"]
+             items.append(rec)
+         if items:
+-            (OUT / f"{lvl}_listening_{sub}.json").write_text(
++            (out_dir / f"{lvl}_listening_{sub}.json").write_text(
+                 json.dumps(items, ensure_ascii=False), encoding="utf-8")
+         counts[key] = len(items)
+     print("listening banks:", counts)
+
+diff --git a/scripts/export/exam_rules.py b/scripts/export/exam_rules.py
+new file mode 100644
+index 00000000..7209d6c3
+--- /dev/null
++++ b/scripts/export/exam_rules.py
+@@ -0,0 +1,205 @@
++#!/usr/bin/env python3
++"""Shared selection rules for the exam-bank builders (W17).
++
++`build_exam_banks.py` (the six deterministic families) and `build_reading_comp_bank.py` (読解) must
++answer the same three questions the same way, or the level gate and the bank gate disagree with each
++other about the same item. Those questions are:
++
++  1. **Is this item inside its level?** — `TaughtSets` below is the ONE implementation of the rule
++     `validate_exam_level_gate.py` measures: every kanji of the learner-visible Japanese, the item's
++     own vocab, the source sentence's token vocab, and the item's + the sentence's grammar are all
++     in the `cumulative_known_set` of the LAST lesson of that level's course module. The gate reads
++     the exported course; so does this, for the same reason — the exported JSON is the source of
++     truth (CLAUDE.md) and reading the DB's `lesson.cumulative_known_set` would not even work: the
++     DB stores `vocab:<headword>` refs that only the exporter resolves to `vocab:<jmdict_id>`.
++
++  2. **Does this token really name that word?** — `reading_link_ok`. The n3 linker matched on
++     WRITTEN FORM and ignored reading (qa_sweep/exam_japanese_3.md F4), so 135 items point at the
++     wrong lexeme: 空/から on six *sky* sentences, 時/とき on the じ counter 26 times, 金/きん where
++     the sentence says かね. The rule here is W12's: a token links to a vocab record only when the
++     lemma (surface, or a contiguous run of surfaces) AND the reading agree.
++
++  3. **Is this string printable as an option?** — `option_ok`. 103 N4 items print a grammar-point
++     label (自動詞, 命令形), a leaked sense index (`ずっと ①`) or a slot-stripped non-word
++     (`よりほうが`, `とかとか`, `おになる`) as one of the four choices, which silently makes the item
++     3-option (qa_sweep/exam_japanese_2.md S3/F07).
++
++Imported by both builders; no side effects, no I/O beyond the course tree it is handed.
++"""
++from __future__ import annotations
++
++import json
++import re
++import unicodedata
++from pathlib import Path
++
++# CJK ideographs — Unified, Extension A and the compatibility block, EXACTLY the class
++# validate_exam_level_gate.KANJI_RE gates on. The builder used to test `"一" <= ch <= "鿿"`, which
++# misses Extension A and the compatibility block entirely, so a 㐂 or a 﫿 in an option was invisible
++# to the builder and visible to the gate.
++KANJI_RE = re.compile(r"[㐀-䶿一-鿿豈-﫿]")
++
++LEVELS = ("n5", "n4", "n3")
++MODULE_ORDER = ("pre-n5", "n5", "n4", "n3")
++ORD = {"pre-n5": -1, "n5": 0, "n4": 1, "n3": 2, "n2": 3, "n1": 4}
++
++
++def has_kanji(s: str) -> bool:
++    return bool(KANJI_RE.search(s))
++
++
++def kanji_of(s: str) -> set[str]:
++    return set(KANJI_RE.findall(s))
++
++
++def kana_fold(s: str) -> str:
++    """NFKC + katakana -> hiragana. Two readings that fold together are the same reading, which is
++    what lets a token reading (カタカナ from the analyzer) be compared with a vocab `kana` field."""
++    s = unicodedata.normalize("NFKC", s or "")
++    return "".join(chr(ord(c) - 0x60) if 0x30A1 <= ord(c) <= 0x30F6 else c for c in s)
++
++
++def gram_slug(ref: str) -> str:
++    """Exam items address grammar by bare key, the rest of the corpus by slug — normalize to slug
++    space, which is what a cumulative_known_set holds (readiness G13)."""
++    return ref if ref.startswith("gram:") else "gram:" + ref
++
++
++# --------------------------------------------------------------------------------------------
++# 1. the taught set
++# --------------------------------------------------------------------------------------------
++class TaughtSets:
++    """`cumulative_known_set` of the last lesson of each level's module, from the EXPORTED course.
++
++    Last topic by `order`, last lesson by `order` — the same walk `validate_exam_level_gate.py`
++    does. The course's cks is monotonic and cross-module cumulative, so that one lesson IS the
++    level; the gate's check T asserts that rather than assuming it, and this class trusts the gate
++    to keep doing so instead of re-deriving it.
++    """
++
++    def __init__(self, root: Path) -> None:
++        self.by_level: dict[str, dict[str, set[str]]] = {}
++        self.kanji_chars: dict[str, set[str]] = {}
++        for module in MODULE_ORDER:
++            les = self._module_lessons(root, module)
++            if module in LEVELS:
++                if not les:
++                    raise SystemExit(
++                        f"exam_rules: course/{module} has no lessons, so the taught set for {module} "
++                        f"cannot be built — a bank selected against an unknown level is not "
++                        f"level-gated, and building it would silently defeat W03.")
++                cks = les[-1][3]
++                sets = {k: set(cks.get(k) or []) for k in ("kanji", "vocab", "grammar")}
++                if not sets["vocab"]:
++                    raise SystemExit(
++                        f"exam_rules: the last {module} lesson {les[-1][2]} has an EMPTY taught "
++                        f"vocab set")
++                self.by_level[module] = sets
++                self.kanji_chars[module] = {x.split(":", 1)[1] for x in sets["kanji"]}
++
++    @staticmethod
++    def _module_lessons(root: Path, module: str):
++        cjson = root / "course" / module / "course.json"
++        if not cjson.exists():
++            return []
++        course = json.loads(cjson.read_text(encoding="utf-8"))
++        out = []
++        for topic in course.get("topics", []):
++            tdir = (root / "course" / module / topic["path"]).parent
++            for lf in sorted(tdir.glob("lesson-*.json")):
++                les = json.loads(lf.read_text(encoding="utf-8"))
++                out.append((int(topic.get("order", 0)), int(les.get("order", 0)),
++                            les.get("id", lf.name), les.get("cumulative_known_set") or {}))
++        out.sort(key=lambda r: (r[0], r[1]))
++        return out
++
++    # -- the three dimensions, each named the way the gate names it ----------------------------
++    def kanji_ok(self, text: str, lvl: str) -> bool:
++        return kanji_of(text) <= self.kanji_chars[lvl]
++
++    def strings_kanji_ok(self, strings, lvl: str) -> bool:
++        return all(self.kanji_ok(s, lvl) for s in strings if s)
++
++    def vocab_ok(self, slug: str, lvl: str) -> bool:
++        return slug in self.by_level[lvl]["vocab"]
++
++    def grammar_ok(self, ref: str, lvl: str) -> bool:
++        return gram_slug(ref) in self.by_level[lvl]["grammar"]
++
++
++# --------------------------------------------------------------------------------------------
++# 2. the reading-aware link
++# --------------------------------------------------------------------------------------------
++def reading_link_ok(tokens: list[tuple[str, str | None, str | None]], headword: str,
++                    kana: str) -> bool:
++    """True when the sentence really uses THIS lexeme, judged by lemma AND reading (W12's rule).
++
++    `tokens` is `[(surface, lemma, reading), ...]` for one sentence in analyzer order. A link is
++    accepted when a single token, or a contiguous RUN of tokens, spells the headword and reads the
++    record's kana. A token whose reading the analyzer left null cannot prove anything and is not
++    accepted — "no evidence" is not "agreement", and treating it as agreement is exactly how 時/とき
++    got attached to twenty-six clock readings.
++    """
++    want = kana_fold(kana)
++    n = len(tokens)
++    for i in range(n):
++        surf, read = "", ""
++        for j in range(i, n):
++            s, _lemma, r = tokens[j]
++            if not r:
++                break
++            surf += s
++            read += r
++            if len(surf) > len(headword):
++                break
++            if surf == headword:
++                if kana_fold(read) == want:
++                    return True
++                break
++    return False
++
++
++# --------------------------------------------------------------------------------------------
++# 3. what may be printed as an option
++# --------------------------------------------------------------------------------------------
++# Grammar METALANGUAGE. `grammar_point.forms_json` carries these as if they were forms, and the
++# builder printed them as choices: gf:n4:3360 offers 命令形 ("imperative form") as a fill-in for
++# 「その（　）どうすればいいでしょう？」. No learner picks a metalinguistic label, so the item is a
++# 3-option item wearing four options.
++METALANGUAGE = {
++    "自動詞", "他動詞", "命令形", "意向形", "受身形", "使役形", "可能形", "過去形", "否定形",
++    "連体形", "連用形", "終止形", "仮定形", "辞書形", "普通形", "丁寧形", "受動態", "使役受身",
++    "名詞化", "助数詞", "接続詞", "副詞", "形容詞", "形容動詞", "動詞", "名詞", "助詞", "助動詞",
++}
++CIRCLED = re.compile(r"[①-⑳㉑-㉟]")   # ① … ⑳ — internal sense indices
++SLOT = "～〜…‥"                                          # citation slot markers, BOTH tildes
++
++
++def option_ok(form: str) -> bool:
++    """Mechanical shape guards on a string about to be printed as a choice.
++
++    Every rejection here is a measured leak, not a precaution:
++      * a space of any width          — `くらい ①`, `でも でも` (S3(b), S3(c))
++      * a circled numeral             — `ずっと ①`, `以上 ①` (S3(b))
++      * a slot marker anywhere        — the U+FF5E filter missed U+301C, and `なん〜か` shipped as a
++                                        distractor on 9 items (regen review §4)
++      * grammar metalanguage          — 自動詞 / 命令形 / 受身形 (S3(a))
++      * an exact doubling X+X         — `かか` (from gram:ka-ka's forms[0]), `しし`, `とと`,
++                                        `たりたり`, `とかとか`, `でもでも`: the signature of a
++                                        pattern whose 〜 slots were stripped instead of filled
++    """
++    if not form or len(form) < 2 or len(form) > 8:
++        return False
++    if any(c.isspace() or c in "　" for c in form):
++        return False
++    if CIRCLED.search(form):
++        return False
++    if any(c in SLOT for c in form):
++        return False
++    if "-" in form or "－" in form:
++        return False
++    if form in METALANGUAGE:
++        return False
++    if len(form) % 2 == 0 and form[: len(form) // 2] == form[len(form) // 2:]:
++        return False
++    return True
+
+diff --git a/scripts/export/bunsetsu.py b/scripts/export/bunsetsu.py
+new file mode 100644
+index 00000000..46f4e9fc
+--- /dev/null
++++ b/scripts/export/bunsetsu.py
+@@ -0,0 +1,170 @@
++#!/usr/bin/env python3
++"""Bunsetsu chunking and scramble analysis for 並べ替え (sentence_order) items — W17.
++
++WHY (qa_sweep/exam_japanese_1.md F15, _2.md S4, _3.md F8)
++---------------------------------------------------------
++The builder shipped the sentence's bare SudachiPy mode-C morphemes as draggable tiles: 271 of 273
++N5 items expose bound morphemes (`まし`, `た`, `ん`, `が`, `を`, `ませ`, `でし`), `so:n5:2448` opens
++with the tile `ははは` (母は), and `so:n3:208` is nine tiles for a seven-word sentence. Pulling まし
++away from た is a morphology drill, not the syntax task 文の組み立て is. Real papers give
++phrase-level chunks.
++
++Morpheme tiles also multiply the ambiguity: because every particle is its own tile, 45 items across
++the three levels assemble into a SECOND grammatical sentence from the same tiles, and the app scores
++one string, so a correct learner answer is marked wrong.
++
++WHAT THIS MODULE DOES
++---------------------
++`chunk()` merges the analyzer's tokens into bunsetsu: one content word plus everything that leans on
++it (particles, auxiliaries, suffixes), with prefixes attaching forward. Chunking is done from the
++STORED Layer-A analysis (`token.pos`, the locale-neutral column) — it is not a second guess at the
++Japanese, it is a regrouping of the dissection the corpus already holds.
++
++`scramble()` then answers the two questions the ambiguity finding raises, and answers them
++differently, which is the point:
++
++  * **Meaning-preserving reorderings become `accepted[]`.** Japanese marks roles with case
++    particles, not with position, so permuting chunks that carry DISTINCT case/topic particles
++    yields the same sentence with different information structure — 「いすの上にねこがいます」 and
++    「ねこがいすの上にいます」. Grading one and rejecting the other is a scoring defect, not a
++    Japanese fact. Erring toward MORE accepted strings is safe: it can only make grading lenient,
++    never mark a correct answer wrong.
++
++  * **Meaning-CHANGING reorderings drop the item.** When two movable chunks carry the SAME particle
++    the swap exchanges their roles: 「これはあっちのより安いよ」 vs 「あっちのはこれより安いよ」 means
++    the opposite, and nothing in the prompt says which is wanted. Those items are ill-posed and are
++    refused at selection instead of being shipped with a coin-flip key.
++
++A chunk ending in の modifies the chunk after it, so the two travel together as one unit — the
++reordering that matters moves 「いすの上に」 whole, never 「上に」 away from 「いすの」. The final unit is
++the predicate and is always fixed.
++"""
++from __future__ import annotations
++
++from itertools import permutations
++
++# `token.pos` is the locale-neutral English enum (CLAUDE.md: mechanical enums are English), written
++# beside the Japanese `pos_coarse` by the dissector. Using it keeps this module readable and keeps
++# the rule in one vocabulary.
++HEAD_POS = {"noun", "pronoun", "verb", "i-adjective", "na-adjective", "adverb", "adnominal",
++            "conjunction", "interjection", "numeral"}
++CLITIC_POS = {"particle", "auxiliary", "suffix"}
++PREFIX_POS = {"prefix"}
++DROP_POS = {"whitespace"}
++
++# Sentence-final punctuation is not a tile: it is not reorderable and printing it would mark the
++# last chunk. Internal punctuation (、) STAYS, attached to the chunk it closes — without it
++# 「二、三デメリット」 reassembles as 二三 and reads にさん (F13).
++FINAL_PUNCT = "。！？!?…"
++INTERNAL_PUNCT = "、，,・「」『』（）()"
++
++# Particles that mark a chunk's ROLE, so the chunk may sit anywhere before the predicate.
++CASE_P = {"が", "を", "に", "へ", "で", "と", "から", "まで", "より"}
++TOPIC_P = {"は", "も"}
++MOVABLE_TAILS = CASE_P | TOPIC_P | {c + t for c in CASE_P for t in ("は", "も")}
++# の attaches the chunk to the NEXT one; a chunk ending in の is never movable and pins its head.
++BINDING_TAILS = {"の"}
++
++
++def chunk(tokens: list[dict]) -> list[str] | None:
++    """[{surface, pos}] in analyzer order -> bunsetsu strings, or None if the sentence is unchunkable.
++
++    None (rather than a best effort) whenever the analysis cannot support the format: a sentence
++    that starts with a clitic, or that produces a chunk with no content word, is not a sentence this
++    item type can be cut from.
++    """
++    chunks: list[str] = []
++    pending_prefix = ""
++    started = False
++    for t in tokens:
++        surf, pos = t["surface"], t["pos"]
++        if pos in DROP_POS or not surf.strip():
++            continue
++        if pos == "punctuation":
++            if surf in FINAL_PUNCT:
++                continue                       # dropped: not a tile
++            if surf in INTERNAL_PUNCT and chunks:
++                chunks[-1] += surf
++                continue
++            return None                        # a bracket or a symbol we will not guess about
++        if pos in PREFIX_POS:
++            pending_prefix += surf
++            continue
++        if pos in CLITIC_POS:
++            if not started:
++                return None                    # a sentence cannot open with a clitic
++            chunks[-1] += pending_prefix + surf
++            pending_prefix = ""
++            continue
++        if pos in HEAD_POS:
++            chunks.append(pending_prefix + surf)
++            pending_prefix = ""
++            started = True
++            continue
++        return None                            # an unknown POS is a reason to abstain
++    if pending_prefix or not chunks:
++        return None
++    return chunks
++
++
++def _tail_particle(c: str) -> str:
++    """The longest MOVABLE_TAILS / BINDING_TAILS particle string this chunk ends with ("" if none)."""
++    c = c.rstrip(INTERNAL_PUNCT)
++    for cand in sorted(MOVABLE_TAILS | BINDING_TAILS, key=len, reverse=True):
++        if c.endswith(cand) and len(c) > len(cand):
++            return cand
++    return ""
++
++
++def _units(chunks: list[str]) -> list[list[int]]:
++    """Group chunks into movable UNITS.
++
++    A chunk ending in の modifies the chunk after it — 「いすの」「上に」 is one phrase, and the
++    reordering that matters (「ねこがいすの上にいます」) moves the whole phrase, not its head. So the
++    の-chunk and what it modifies form one unit; everything else is a unit of its own.
++    """
++    units: list[list[int]] = []
++    i = 0
++    while i < len(chunks):
++        unit = [i]
++        while _tail_particle(chunks[unit[-1]]) in BINDING_TAILS and unit[-1] + 1 < len(chunks):
++            unit.append(unit[-1] + 1)
++        units.append(unit)
++        i = unit[-1] + 1
++    return units
++
++
++def scramble(chunks: list[str], max_movable: int = 4) -> tuple[list[str] | None, str]:
++    """(accepted orderings, reason) — `None` means REFUSE the item.
++
++    `accepted[0]` is always the canonical order. `reason` is a short machine-readable tag recorded
++    in the diff classification so every dropped item can be explained.
++    """
++    if len(chunks) < 3:
++        return None, "too-few-chunks"
++    units = _units(chunks)
++    canon = "".join(chunks)
++    if len(units) < 3:
++        return [canon], "fixed-order"
++    tails = [_tail_particle(chunks[u[-1]]) for u in units]
++    movable = [i for i in range(len(units) - 1) if tails[i] in MOVABLE_TAILS]
++    if not movable:
++        return [canon], "fixed-order"
++    seen = [tails[i] for i in movable]
++    if len(set(seen)) != len(seen):
++        # Two units marked the same way: swapping them exchanges their roles and changes the
++        # meaning. Nothing in the prompt says which meaning is wanted, so the item is ill-posed.
++        return None, "same-particle-ambiguous"
++    if len(movable) > max_movable:
++        return None, "too-many-movable"
++    texts = ["".join(chunks[j] for j in u) for u in units]
++    out: list[str] = []
++    for perm in permutations(movable):
++        arr = list(texts)
++        for slot, src in zip(movable, perm):
++            arr[slot] = texts[src]
++        s = "".join(arr)
++        if s not in out:
++            out.append(s)
++    out.remove(canon)
++    return [canon] + sorted(out), "scrambled"
+
+diff --git a/scripts/validate/test_exam_builders_w17.py b/scripts/validate/test_exam_builders_w17.py
+new file mode 100644
+index 00000000..b359fc44
+--- /dev/null
++++ b/scripts/validate/test_exam_builders_w17.py
+@@ -0,0 +1,193 @@
++#!/usr/bin/env python3
++"""W17 — unit tests for the exam-builder rules added by the A2 fix set.
++
++These are UNIT tests over the rule functions, not a validator over the tree: each rule is a property
++of the code, and asserting it against the live banks would only re-measure data that
++`validate_exam_level_gate.py` and `validate_exam_banks.py` already gate. Every check below is
++written against the exact defect the rule closes, with the finding named.
++
++  RULE A — option shape (`exam_rules.option_ok`). 103 N4 items printed a choice that is not a
++           Japanese form: a grammar-point LABEL (自動詞, 命令形), a leaked sense index (`ずっと ①`),
++           or a pattern whose 〜 slots were stripped instead of filled (`かか` from gram:ka-ka,
++           `とかとか`, `おになる`). Nine more printed the citation placeholder itself, because the
++           filter tested U+FF5E FULLWIDTH TILDE and the corrected forms use U+301C WAVE DASH.
++           (qa_sweep/exam_japanese_2.md S3; exam_bank_regen_review.md §4)
++
++  RULE B — reading-aware links (`exam_rules.reading_link_ok`). The n3 linker matched written form
++           and ignored reading, so 135 items name the wrong lexeme: 空/から on six *sky* sentences,
++           時/とき on the じ counter 26 times, 金/きん where the sentence says かね. A link is proved
++           by a token — or a contiguous run of tokens — that spells the headword AND reads the
++           record's kana. (qa_sweep/exam_japanese_3.md F4; W12's rule)
++
++  RULE C — bunsetsu tiles and `accepted[]` (`bunsetsu.chunk` / `bunsetsu.scramble`). 271 of 273 N5
++           並べ替え items exposed bound morphemes as draggable tiles (`まし`, `た`, `ん`), and 45
++           items across the three levels assembled into a second grammatical sentence that the app
++           marked wrong. Meaning-PRESERVING reorderings become `accepted[]`; meaning-CHANGING ones
++           (two tiles carrying the same particle) refuse the item.
++           (qa_sweep/exam_japanese_1.md F15, _2.md S4, _3.md F8)
++
++  RULE D — the level rule (`exam_rules.TaughtSets`). One implementation of the definition
++           `validate_exam_level_gate.py` measures, so the builder and the gate cannot disagree about
++           the same item. Checked against the real course export: the taught sets are non-empty,
++           monotonic across levels, and the kanji class covers Extension A (the builder's old
++           `"一" <= ch <= "鿿"` test did not).
++
++Exit 1 on any failure. Usage: test_exam_builders_w17.py
++"""
++from __future__ import annotations
++
++import sys
++from pathlib import Path
++
++sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
++ROOT = Path(__file__).resolve().parents[2]
++sys.path.append(str(ROOT / "scripts" / "export"))
++import bunsetsu                                                          # noqa: E402
++from exam_rules import (                                                 # noqa: E402
++    TaughtSets, has_kanji, kana_fold, option_ok, reading_link_ok,
++)
++
++
++def tok(surface: str, pos: str) -> dict:
++    return {"surface": surface, "pos": pos}
++
++
++def main() -> int:
++    fails: list[str] = []
++    n = 0
++
++    def check(name: str, cond: bool, detail: str = "") -> None:
++        nonlocal n
++        n += 1
++        print(f"  [{'PASS' if cond else 'FAIL'}] {name}{(' — ' + detail) if detail else ''}")
++        if not cond:
++            fails.append(name)
++
++    # ---- RULE A: option shape ----------------------------------------------------------------
++    check("A1 a real form is admissible", option_ok("かもしれない") and option_ok("ている"))
++    check("A2 grammar metalanguage is refused (gf:n4:3360 offered 命令形 as a fill-in)",
++          not option_ok("命令形") and not option_ok("自動詞") and not option_ok("受身形"))
++    check("A3 a leaked sense index is refused, space and circled numeral alike",
++          not option_ok("くらい ①") and not option_ok("ずっと ①"))
++    check("A4 a slot-stripped doubling is refused (かか from gram:ka-ka's forms[0])",
++          not option_ok("かか") and not option_ok("とかとか") and not option_ok("しし")
++          and not option_ok("でもでも"))
++    check("A5 BOTH tildes are refused — U+FF5E and U+301C (なん〜か shipped on 9 items)",
++          not option_ok("なん～か") and not option_ok("なん〜か"))
++    check("A6 the doubling rule does not eat a legitimate form that merely repeats a kana",
++          option_ok("ままに") and option_ok("なければ"))
++
++    # ---- RULE B: reading-aware links ----------------------------------------------------------
++    # 「なぜ空は青いのか？」 — the token reads そら; vocab:1245280 空/から is "empty".
++    sky_tokens = [("なぜ", "なぜ", "ナゼ"), ("空", "空", "ソラ"), ("は", "は", "ワ"),
++                  ("青い", "青い", "アオイ"), ("の", "の", "ノ"), ("か", "か", "カ")]
++    check("B1 空/そら does NOT prove the 空/から record",
++          not reading_link_ok(sky_tokens, "空", "から"))
++    check("B2 ... and DOES prove the 空/そら record",
++          reading_link_ok(sky_tokens, "空", "そら"))
++    clock = [("八", "八", "ハチ"), ("時", "時", "ジ"), ("に", "に", "ニ")]
++    check("B3 時 read じ (the o'clock counter) does not prove 時/とき — 26 items rested on this",
++          not reading_link_ok(clock, "時", "とき") and reading_link_ok(clock, "時", "じ"))
++    money = [("お", "お", "オ"), ("金", "金", "カネ"), ("を", "を", "ヲ")]
++    check("B4 金 read かね does not prove 金/きん", not reading_link_ok(money, "金", "きん"))
++    run = [("木", "木", "コ"), ("立", "立", "ダチ"), ("の", "の", "ノ")]
++    check("B5 a contiguous RUN of tokens can prove a multi-token headword",
++          reading_link_ok(run, "木立", "こだち"))
++    noread = [("時", "時", None)]
++    check("B6 a token with no reading proves nothing — 'no evidence' is not 'agreement'",
++          not reading_link_ok(noread, "時", "とき"))
++    check("B7 katakana and hiragana readings fold together", kana_fold("ソラ") == "そら")
++
++    # ---- RULE C: bunsetsu ---------------------------------------------------------------------
++    # 母は料理を作るのが上手です  ->  母は / 料理を / 作るのが / 上手です
++    toks = [tok("母", "noun"), tok("は", "particle"), tok("料理", "noun"), tok("を", "particle"),
++            tok("作る", "verb"), tok("の", "particle"), tok("が", "particle"),
++            tok("上手", "na-adjective"), tok("です", "auxiliary")]
++    ch = bunsetsu.chunk(toks)
++    check("C1 morphemes merge into bunsetsu (ははは is retired: 母 + は is ONE tile)",
++          ch == ["母は", "料理を", "作るのが", "上手です"], str(ch))
++    check("C2 an auxiliary never becomes its own tile (まし / た was a morphology drill)",
++          all(t not in (ch or []) for t in ("まし", "た", "は", "を")))
++
++    # いすの上にねこがいます -> いすの / 上に / ねこが / います ; に and が differ, so the swap is safe
++    t2 = [tok("いす", "noun"), tok("の", "particle"), tok("上", "noun"), tok("に", "particle"),
++          tok("ねこ", "noun"), tok("が", "particle"), tok("い", "verb"), tok("ます", "auxiliary")]
++    c2 = bunsetsu.chunk(t2)
++    acc, why = bunsetsu.scramble(c2)
++    check("C3 distinct case particles: the reordering is ACCEPTED, not marked wrong",
++          why == "scrambled" and acc[0] == "".join(c2)
++          and "ねこがいすの上にいます" in acc, f"{why} {acc}")
++    check("C4 a の-chunk travels with what it modifies (いすの / 上に never separate)",
++          all("いすの" in a.split("上に")[0] for a in acc), str(acc))
++
++    # 兄はギターがとても上手です — は and が are distinct, but 「ギターは兄が…」 flips the meaning.
++    # The rule that catches THAT class is the same-particle one; here is its live case:
++    t3 = [tok("これ", "pronoun"), tok("は", "particle"), tok("あっち", "pronoun"),
++          tok("の", "particle"), tok("より", "particle"), tok("安い", "i-adjective"),
++          tok("よ", "particle")]
++    c3 = bunsetsu.chunk(t3)
++    check("C5 a passage that chunks", c3 is not None, str(c3))
++    t4 = [tok("兄", "noun"), tok("は", "particle"), tok("弟", "noun"), tok("は", "particle"),
++          tok("元気", "na-adjective"), tok("です", "auxiliary")]
++    c4 = bunsetsu.chunk(t4)
++    acc4, why4 = bunsetsu.scramble(c4)
++    check("C6 two tiles marked the SAME way refuse the item — the swap changes the meaning "
++          "(so:n3:847 「これはあっちのより安いよ」 vs 「あっちのはこれより安いよ」)",
++          acc4 is None and why4 == "same-particle-ambiguous", f"{why4} {acc4}")
++    check("C7 a sentence that opens with a clitic is refused, not guessed at",
++          bunsetsu.chunk([tok("は", "particle"), tok("犬", "noun")]) is None)
++    t5 = [tok("犬", "noun"), tok("が", "particle"), tok("走る", "verb"), tok("。", "punctuation")]
++    check("C8 sentence-final punctuation is not a tile",
++          bunsetsu.chunk(t5) == ["犬が", "走る"], str(bunsetsu.chunk(t5)))
++    t6 = [tok("二", "numeral"), tok("、", "punctuation"), tok("三", "numeral"),
++          tok("人", "suffix"), tok("来る", "verb")]
++    check("C9 INTERNAL punctuation stays on its chunk — without 、 二三 reassembles as にさん",
++          bunsetsu.chunk(t6) == ["二、", "三人", "来る"], str(bunsetsu.chunk(t6)))
++    check("C10 every accepted ordering is a permutation of the same tiles",
++          all(sorted(_split(a, c2)) is not None for a in acc))
++
++    # ---- RULE D: the level rule ---------------------------------------------------------------
++    T = TaughtSets(ROOT)
++    check("D1 all three levels have a non-empty taught set",
++          all(T.by_level[l]["vocab"] and T.by_level[l]["kanji"] for l in ("n5", "n4", "n3")))
++    check("D2 the taught sets are monotonic — N5 ⊂ N4 ⊂ N3, which is what makes 'the last lesson "
++          "IS the level' true",
++          T.by_level["n5"]["kanji"] <= T.by_level["n4"]["kanji"] <= T.by_level["n3"]["kanji"]
++          and T.by_level["n5"]["vocab"] <= T.by_level["n4"]["vocab"] <= T.by_level["n3"]["vocab"])
++    check("D3 the kanji class covers Extension A and the compatibility block, which the builder's "
++          "old `\"一\" <= ch <= \"鿿\"` test did not",
++          has_kanji("㐂") and has_kanji("﨑") and has_kanji("食") and not has_kanji("かな"))
++    check("D4 a kanji nobody teaches is refused at every level",
++          not any(T.kanji_ok("嗚呼", l) for l in ("n5", "n4", "n3")))
++    check("D5 grammar refs normalize to slug space (items use the bare key, a cks holds the slug)",
++          T.grammar_ok("da-desu", "n5") == T.grammar_ok("gram:da-desu", "n5"))
++
++    print(f"\ntest_exam_builders_w17: {n} checks, {len(fails)} FAIL")
++    for f in fails:
++        print(f"  ! {f}")
++    if fails:
++        return 1
++    print("test_exam_builders_w17: ALL OK — options are Japanese, links are proved by reading, "
++          "tiles are bunsetsu with every safe ordering accepted, and the level rule is one function")
++    return 0
++
++
++def _split(s: str, chunks: list[str]):
++    """Every accepted ordering must decompose into the item's own tiles."""
++    rest = s
++    used = []
++    pool = list(chunks)
++    while rest:
++        for c in pool:
++            if rest.startswith(c):
++                used.append(c)
++                pool.remove(c)
++                rest = rest[len(c):]
++                break
++        else:
++            raise AssertionError(f"{s!r} is not a permutation of {chunks}")
++    return used
++
++
++if __name__ == "__main__":
++    sys.exit(main())
+
