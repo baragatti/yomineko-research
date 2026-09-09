@@ -1,0 +1,726 @@
+{
+ "unit": "W13b",
+ "generated_by": "scripts/assemble_layerb.py",
+ "derived_from": "research/derived/n3_mined/layerb_derived",
+ "authored_files": 55,
+ "authored_rows": 9479,
+ "verdict_entries": 9177,
+ "dead_batches": [
+  "tokens-from-rulings-02.json",
+  "tokens-from-rulings-03.json",
+  "tokens-from-rulings-05.json",
+  "tokens-from-rulings-06.json",
+  "tokens-from-rulings-08.json"
+ ],
+ "excluded_token_rows_said_nowhere_else": [
+  "tokens-from-rulings-02.json"
+ ],
+ "excluded_token_rows_said_nowhere_else_count": 59,
+ "warnings": [
+  "paragraphs-01.json: 2 verdict files under both filename patterns (paragraphs-01.json.verdict.json, paragraphs-01.verdict.json) — byte-identical, read once",
+  "paragraphs-02.json: 2 verdict files under both filename patterns (paragraphs-02.json.verdict.json, paragraphs-02.verdict.json) — byte-identical, read once",
+  "paragraphs-04.json: 2 verdict files under both filename patterns (paragraphs-04.json.verdict.json, paragraphs-04.verdict.json) — byte-identical, read once",
+  "paragraphs-12.json: 2 verdict files under both filename patterns (paragraphs-12.json.verdict.json, paragraphs-12.verdict.json) — byte-identical, read once",
+  "paragraphs-13.json: 2 verdict files under both filename patterns (paragraphs-13.json.verdict.json, paragraphs-13.verdict.json) — byte-identical, read once",
+  "paragraphs-19.json: 2 verdict files under both filename patterns (paragraphs-19.json.verdict.json, paragraphs-19.verdict.json) — byte-identical, read once",
+  "paragraphs-22.json: 2 verdict files under both filename patterns (paragraphs-22.json.verdict.json, paragraphs-22.verdict.json) — byte-identical, read once",
+  "particles-01.json: 2 verdict files under both filename patterns (particles-01.json.verdict.json, particles-01.verdict.json) — byte-identical, read once",
+  "particles-06.json: 2 verdict files under both filename patterns (particles-06.json.verdict.json, particles-06.verdict.json) — byte-identical, read once",
+  "particles-17.json: 2 verdict files under both filename patterns (particles-17.json.verdict.json, particles-17.verdict.json) — byte-identical, read once"
+ ],
+ "merge": {
+  "paragraphs:corrected": 265,
+  "paragraphs:verified": 3958,
+  "particles:accepted_with_side_fix": 15,
+  "particles:corrected": 58,
+  "particles:function_pt_corrected": 126,
+  "particles:verified": 3333,
+  "rulings:context_splits": 480,
+  "rulings:corrected": 53,
+  "rulings:verified": 1510,
+  "tokens:excluded_and_said_nowhere_else": 59,
+  "tokens:excluded_but_redundant_with_verified_ruling_split": 243,
+  "tokens:unverified_excluded": 302
+ },
+ "kinds": {
+  "token": {
+   "slots_total": 17057,
+   "derived_carried": 4536,
+   "filled_verified": 12166,
+   "filled_corrected": 239,
+   "still_empty": 116,
+   "empty_reasons": {
+    "residue token never authored (work list tokens-residue.json has no output file)": 116
+   }
+  },
+  "particle": {
+   "slots_total": 10257,
+   "derived_carried": 6866,
+   "filled_verified": 3333,
+   "filled_corrected": 58,
+   "still_empty": 0,
+   "empty_reasons": {}
+  },
+  "structure": {
+   "slots_total": 4223,
+   "derived_carried": 0,
+   "filled_verified": 3958,
+   "filled_corrected": 265,
+   "still_empty": 0,
+   "empty_reasons": {}
+  }
+ },
+ "slots": {
+  "particle:derived_carried": 6866,
+  "particle:filled_corrected": 58,
+  "particle:filled_verified": 3333,
+  "particle:slots": 10257,
+  "structure:filled_corrected": 265,
+  "structure:filled_verified": 3958,
+  "structure:slots": 4223,
+  "token:EMPTY": 116,
+  "token:author": 116,
+  "token:derived_carried": 4536,
+  "token:filled_corrected": 239,
+  "token:filled_verified": 12166,
+  "token:slots": 17057
+ },
+ "ingest_ready": false,
+ "required_slots": "token gloss on every content token, explanation on every particle, structure paragraph on every sentence — validate.py's dissection_tier 'full' contract, read from scripts/validate/validate.py",
+ "blocking_empty_required_slots": 116,
+ "blocking_examples": [
+  {
+   "kind": "token",
+   "key": "102407",
+   "position": 2,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "146131",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "148209",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "125826",
+   "position": 4,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "12074622",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "179923",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "12203997",
+   "position": 4,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "11783475",
+   "position": 10,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "191051",
+   "position": 5,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "189451",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "126412",
+   "position": 10,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "236740",
+   "position": 5,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "197738",
+   "position": 6,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "211772",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "102750",
+   "position": 2,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "108525",
+   "position": 8,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "184742",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "11193513",
+   "position": 7,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "10656601",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "1050563",
+   "position": 1,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "88740",
+   "position": 7,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "222882",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "214033",
+   "position": 4,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "96978",
+   "position": 8,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "125282",
+   "position": 4,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "140259",
+   "position": 7,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "211844",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "77353",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "4793166",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "10472541",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "120412",
+   "position": 13,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "208254",
+   "position": 5,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "2990907",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "126363",
+   "position": 4,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "205297",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "173047",
+   "position": 0,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "197169",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "75707",
+   "position": 1,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "87053",
+   "position": 3,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  },
+  {
+   "kind": "token",
+   "key": "157933",
+   "position": 14,
+   "reason": "residue token never authored (work list tokens-residue.json has no output file)"
+  }
+ ],
+ "outputs_read": [
+  {
+   "file": "paragraphs-01.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-01.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-02.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-02.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-03.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-03.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-04.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-04.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-05.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-05.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-06.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-06.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-07.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-07.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-08.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-08.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-09.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-09.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-10.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-10.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-11.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-11.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-12.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-12.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-13.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-13.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-14.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-14.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-15.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-15.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-16.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-16.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-17.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-17.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-18.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-18.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-19.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-19.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-20.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-20.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-21.json",
+   "kind": "paragraphs",
+   "rows": 200,
+   "verdict_file": "paragraphs-21.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "paragraphs-22.json",
+   "kind": "paragraphs",
+   "rows": 23,
+   "verdict_file": "paragraphs-22.verdict.json",
+   "verdict_entries": 23
+  },
+  {
+   "file": "particles-01.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-01.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-02.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-02.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-03.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-03.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-04.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-04.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-05.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-05.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-06.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-06.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-07.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-07.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-08.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-08.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-09.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-09.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-10.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-10.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-11.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-11.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-12.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-12.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-13.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-13.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-14.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-14.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-15.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-15.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-16.json",
+   "kind": "particles",
+   "rows": 200,
+   "verdict_file": "particles-16.json.verdict.json",
+   "verdict_entries": 200
+  },
+  {
+   "file": "particles-17.json",
+   "kind": "particles",
+   "rows": 191,
+   "verdict_file": "particles-17.verdict.json",
+   "verdict_entries": 191
+  },
+  {
+   "file": "rulings-01.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-01.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-02.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-02.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-03.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-03.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-04.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-04.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-05.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-05.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-06.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-06.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-07.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-07.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-08.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-08.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-09.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-09.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-10.json",
+   "kind": "rulings",
+   "rows": 150,
+   "verdict_file": "rulings-10.json.verdict.json",
+   "verdict_entries": 150
+  },
+  {
+   "file": "rulings-11.json",
+   "kind": "rulings",
+   "rows": 63,
+   "verdict_file": "rulings-11.json.verdict.json",
+   "verdict_entries": 63
+  },
+  {
+   "file": "tokens-from-rulings-02.json",
+   "kind": "tokens",
+   "rows": 59,
+   "verdict_file": null,
+   "verdict_entries": 0,
+   "dead": "no parseable verdict entries — every row excluded"
+  },
+  {
+   "file": "tokens-from-rulings-03.json",
+   "kind": "tokens",
+   "rows": 67,
+   "verdict_file": null,
+   "verdict_entries": 0,
+   "dead": "no parseable verdict entries — every row excluded"
+  },
+  {
+   "file": "tokens-from-rulings-05.json",
+   "kind": "tokens",
+   "rows": 66,
+   "verdict_file": null,
+   "verdict_entries": 0,
+   "dead": "no parseable verdict entries — every row excluded"
+  },
+  {
+   "file": "tokens-from-rulings-06.json",
+   "kind": "tokens",
+   "rows": 84,
+   "verdict_file": null,
+   "verdict_entries": 0,
+   "dead": "no parseable verdict entries — every row excluded"
+  },
+  {
+   "file": "tokens-from-rulings-08.json",
+   "kind": "tokens",
+   "rows": 26,
+   "verdict_file": null,
+   "verdict_entries": 0,
+   "dead": "no parseable verdict entries — every row excluded"
+  }
+ ],
+ "note": "A row whose verdict entry is absent is unverified and is never merged. `ingest_ready: false` means validate.py would reject the ingest: some required slot is still empty."
+}
