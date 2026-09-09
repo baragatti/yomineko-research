@@ -58,6 +58,10 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-03 (ap) — APP_PLAN revised to v3 (lean): same goal and milestones; one campaign at a
+> time, mechanical-first units, verify once, applies first; the ordered sequence with a cost tag per
+> unit is APP_PLAN §6 and the waste ledger §7. Still PAUSED; resume at §6 step 1 (W11).**
+
 > **2026-09-03 (ao) — W13 authoring recovered and committed; STILL PAUSED (owner: "just this for
 > now"). Nothing is in flight. Next on the lean track when resumed: W11, then the applies
 > (W15/W20/W21), W27 Fable 100-row sample, W13b → W13 apply → W12, W16–W18.**

@@ -1,6 +1,6 @@
 # APP_PLAN — from corpus to a complete pt-BR Japanese app
 
-Plan of record, 2026-09-01 (v2, reviewed). Sources: the nine readiness audits under
+Plan of record, 2026-09-03 (v3 — the lean revision of v2; same goal, same gates, less spend). Sources: the nine readiness audits under
 `research/reports/readiness/` (every number produced by a script over the data) and the owner
 decisions at the top of `PENDING.md`. STATE.md points here; progress is tracked in §3 by unit id.
 
@@ -8,6 +8,15 @@ decisions at the top of `PENDING.md`. STATE.md points here; progress is tracked 
 memorization (FSRS-6 or better), tests, exams and JLPT simulations, all in pt-BR. Two paths: the
 JLPT-level course (zero → N5 → N4 → N3) and a speak-as-fast-as-possible path. AI-authored now,
 teacher-validated later, aiming as close to 100% as possible.
+
+**v3 in one paragraph.** The goal and the milestones do not change. What changes is how the work is
+spent: lanes no longer run in parallel (that emptied 5-hour usage windows four times and killed
+agents mid-run), every unit is **mechanical first** (a script derives everything derivable and an
+author gets only the measured residue), verification never runs twice on the same table, the
+authored-but-unapplied tables go first because they are the cheapest points on the board, and
+the biggest remaining unit (W13b) is redesigned from a 4,223-sentence authoring campaign into a
+derivation plus a small authored residue. §1 carries the spend rules, §6 the single ordered
+sequence with a cost tag per unit, §7 the waste ledger that produced the rules.
 
 ---
 
@@ -29,10 +38,15 @@ teacher-validated later, aiming as close to 100% as possible.
 unlocks, `cumulative_known_set` derivable with zero violations), the exercise↔body bijection, SRS
 enrolment, the exemption files, the content contract, the 39-gate suite.
 
-**The finding that outranks the rest:** every repair writes the git-ignored `db/corpus.sqlite`;
-nothing proves the DB can be rebuilt from ingest + the tracked repair scripts, and the exam
-regeneration reads that DB. Until W01 lands, the corpus's durability rests on one file on one
-machine. Everything else waits behind W01.
+**Since v2 (2026-09-03):** M0 is done (the DB rebuilds from tracked scripts; 650 files ratcheted
+with causes), M1 is settled except homographs, eight duplicate pairs and the fourteen A9b merges;
+authored and verified but NOT applied: 286 passages (W15), 899 kanji exercises (W20), 700 needs
+edges (W21), 2,946 production keys (W27, sampled not verified), 4,223 N3 sentences (W13). By plan
+units: 13 of 47 done, 8 half; by effort about half of the finished base.
+
+**The finding that outranks the rest now:** the cheapest points left are apply scripts over tables
+already authored, and the most expensive unit left (W13b) is expensive only if it is authored
+rather than derived. v3 orders the work by that ratio.
 
 ---
 
@@ -53,6 +67,32 @@ machine. Everything else waits behind W01.
 - **Repairs go to both layers** where an authoring layer exists (DB + `research/derived/…`), and the
   exporter republishes; the committed JSON is the source of truth.
 
+**Spend rules (v3).** Each one exists because its absence cost real tokens (§7).
+
+- **Mechanical first.** Before any authoring campaign a script derives everything the registries,
+  the Dissector or the builders can produce, writes the residue as the work list, and the plan row
+  records the split (derived n / authored m). An author never receives what a script could write.
+- **One campaign at a time.** At most one Opus campaign runs; a second only if it is a script or a
+  single agent. Concurrency ≤ 12 agents. A campaign must fit one 5-hour window (≈ 40 Opus agents
+  at the observed cost) or it is split into resumable halves at a batch boundary.
+- **Never touch a running workflow's prompt text.** Any CTX edit invalidates every cached agent and
+  re-authors the whole campaign (W27, 2,946 cards twice). Fix post-processing in a separate
+  script that reads the journal instead.
+- **Assemble is a script, never an agent.** Verdicts keyed by the row's stable identity, never by
+  batch index; a dead verifier excludes its rows; the assembler consumes the workflow's final list
+  and re-checks Layer-A fields against the raw tables (W13's assembler is the template).
+- **Verify once.** One independent verifier per batch at authoring time — that is where mistakes
+  are caught and it is not negotiable. A table that already went through a verifier gets a Fable
+  sample before apply (30, widened to 100 on a failure), never a second verifier campaign.
+- **Effort by criterion.** Authors `high`. Verifiers `xhigh` only where the criterion is subtle
+  (translation fidelity, register); `medium` for mechanical criteria (token match, known-set).
+- **No audit without a consumer.** A readiness audit or QA sweep runs only when a unit in the next
+  milestone consumes its output. The next full sweep is after M2 lands, not before.
+- **Applies first.** An apply script over an authored table is the cheapest point in the plan; it
+  always precedes new authoring in the same lane.
+- **Crash protocol.** On a session-limit hit: inventory the disk and the journal, resume with
+  `resumeFromRunId`, never relaunch. Agents write deliverables to disk incrementally.
+
 ---
 
 ## 2. Milestones
@@ -68,8 +108,9 @@ machine. Everything else waits behind W01.
 | M6 | **Review loop live** | a named teacher approving N5 through the ledger while campaigns run on N3 (W06, W37–W39) |
 | M7 | Platform for a real app | user state, release identity, API contract, audio pipeline, attribution (W40–W44) |
 
-M0 and M1 are sequential. After M1, lanes A (course), B (SRS), C (speak), D (platform/review) run
-in parallel wherever they do not share files; the gate catches the interactions.
+M0 is done. Units run in the single order of §6 — one campaign at a time, lanes interleaved by
+cost and dependency rather than run side by side. Two units overlap only when at least one is a
+script or a single agent.
 
 ---
 
@@ -106,28 +147,28 @@ that proves it. **needs** = dependencies and decisions. Status column is the liv
 |---|---|---|---|---|---|
 | W12 | **Orthographic relink** — cheapest coverage in the project: lifts 568 N5/N4 records over ≥3 (N5 → 99.3%, N4 → 99.2%); the exporter fix restoring sentence_vocab recovers 343 cards' examples. | Opus agent | W05 ratchet drops | W05 | ☐ |
 | W13 | **N3 exemplification** — AUTHORED (2026-09-03): 4,197 real Tatoeba sentences + 26 generated, every row verified by an independent Opus verifier and re-checked against the raw tables (0 altered jp, 0 missing English pair); 1,511 of 1,638 targets covered by real sentences, 1,387 at the floor, 101 uncovered (97 vocab, 4 grammar), 170 verifier rejects and 5 unverified rows excluded. Artifact `research/derived/n3_mined/` (accepted / generated / residue), report `research/reports/w13_authoring_report.md`. **Apply is blocked on W13b** (Layer-B content the ingest requires) and needs: a unit tag instead of `stage:` on `ingest_mined_stages.py`, register normalization to the W31 vocabulary (authors used 7 values; plain-form narrative marked casual), generation for the 101 uncovered targets, then W12 relink so the grammar floor moves. Fable sample 30: pass. | Opus campaign | W05 floor reached for N3; Fable sample 30 | W05, W10 | ◐ (authored; apply after W13b) |
-| W13b | **Layer-B dissection for the mined N3 sentences** — per-token pt-BR glosses, particle explanations and a structure paragraph for the 4,223 W13 sentences, in the `research/derived/mined_layerb/batch-*.json` shape the ingest reads (the pipeline that produced the 324 speak-stage sentences: author + two independent reviewers per batch). Without it every ingested sentence violates the `dissection_tier: full` promise (2,756 validator errors on the first trial). | Opus campaign | `validate.py` green after a trial ingest of one batch on a DB copy; Fable sample 30 | W13 | ☐ |
+| W13b | **Layer-B for the mined N3 sentences — MECHANICAL FIRST.** The ingest reads `research/derived/mined_layerb/batch-*.json` (per-token gloss, per-particle explanation, structure paragraph). Derive before authoring, on a DB copy: (1) run the Dissector over the 4,223 sentences; (2) every token linked to a vocab record takes the pt-BR gloss of the sense its introducing lesson teaches — the registry already holds it; (3) every particle takes the templated explanation the bank already uses for that `function_type`; (4) only the residue is authored: tokens with no registry link and one short structure paragraph per sentence (translation_style.md). Measure the residue first and record the split in this row; expected ≥ 80% of tokens derived. One Opus verifier per batch on the authored residue only (`xhigh` for the paragraph, `medium` for glosses); Fable sample 30. Also inside this unit: a `--tag` flag on `ingest_mined_stages.py` (unit tag, never `stage:`), normalization of W13's seven register values to the D7 set (plain-form narrative → neutral), and the 101 generations for uncovered targets (spec §1.2: inside the cks, `ai_generated` + `needs_review`, one verifier). | script + Opus campaign (residue only) | one batch trial-ingested on a DB copy passes `validate.py`; Fable sample 30 | W13 | ☐ |
 | W14 | Lesson sentence re-selection: 116 lessons render none; 178 above-level links, 147 i+1 breaches (baseline frozen); pre-N5 survival words get `<vocab ref>` chips; orphan sweep (503 sentences). | Opus campaign | gating ratchet shrinks | W12, W13 | ☐ |
 | W15 | **A1 real passages**: 286 Layer-C passages, 3–6 connected sentences, level-gated to the gating lesson's known set, register-appropriate, independently verified; a coherence check (one topic, tense/pronoun continuity) becomes a validator. Embedded in 235 lessons. **Authoring ◐:** 286 written under research/derived/passages/, verifiers fixed 163 in place; ~13 fail max_new=0 for a reason that is NOT the passage — the gating lesson's grammar target is built on a word the lesson never unlocks (なる in n5-adjetivos-05, こと in n4-oracoes-relativas-02, 間 in n4-oracoes-relativas-03, なかなか in n4-potencial-04, 関する in n3-perspectiva-01, これ/それ in n5-desu-wa-04, and the ください→下さる lemma trap that makes てください unusable in every N5 passage). Those are course-data gaps for W21b (move/add the unlock in the teaching lesson) and one dissector rule (a surface-known word must not resolve to an unknown lemma). Apply step: Sudachi tokens, reading.tokens/uses rebuilt, then W16. | Opus campaign | `validate_readings` max_new=0, coherence gate; Fable sample 30 | W09 | ◐ authored |
 | W16 | Re-derive 286 `reading_comp` questions and re-blank `text_grammar` at token boundaries over the new passages; in-lesson reading boxes ask the comprehension question they already have; `reading.uses` documented as a snapshot. | Opus agent | exam rule I | W15 | ☐ |
-| W17 | **A2 builder fixes**: the nine + n3 linker reading match (135 items) + bunsetsu sentence_order (45) + homophone-set dedupe + level gate (W03) + 4 options + explanations on auto-graded items. Prototype diff vs current banks: zero unexplained changes. **Level rule (from W03):** select against the last lesson's cks — every kanji in stem/options/passage/script, the item's vocab, the source sentence's token vocab and grammar tags. W03 measured that 93% of today's 3,565 inappropriate items fail on kanji alone and that the level-clean pool is 10–100× the paper at every level (N5 orthography IS buildable: 177 level-clean words vs a floor of 15). **Design point to settle in W17, not silently:** the real JLPT prints furigana on above-level kanji at N5/N4; the builder may either select level-clean Japanese or emit a ruby form for untaught kanji, but then the item must CARRY that form and the gate must accept an item only when every untaught kanji is ruby-covered. Default: level-clean where the pool allows (all families per W03), ruby only for reading_comp passages. Then every ceiling in `exam_level_baseline.json` goes to 0 in the same commit, which turns sufficiency into a hard failure. | Opus campaign | W03 green at ceiling 0 on the regenerated banks; diff report; Fable sample 30 | W01, W03, W09, W16 | ☐ |
+| W17 | **A2 builder fixes**: the nine + n3 linker reading match (135 items) + bunsetsu sentence_order (45) + homophone-set dedupe + level gate (W03) + 4 options + explanations on auto-graded items. Prototype diff vs current banks: zero unexplained changes. **No per-item repair campaign on the current banks — the ~1,700 flagged items are regenerated by W18, never patched in place.** **Level rule (from W03):** select against the last lesson's cks — every kanji in stem/options/passage/script, the item's vocab, the source sentence's token vocab and grammar tags. W03 measured that 93% of today's 3,565 inappropriate items fail on kanji alone and that the level-clean pool is 10–100× the paper at every level (N5 orthography IS buildable: 177 level-clean words vs a floor of 15). **Design point to settle in W17, not silently:** the real JLPT prints furigana on above-level kanji at N5/N4; the builder may either select level-clean Japanese or emit a ruby form for untaught kanji, but then the item must CARRY that form and the gate must accept an item only when every untaught kanji is ruby-covered. Default: level-clean where the pool allows (all families per W03), ruby only for reading_comp passages. Then every ceiling in `exam_level_baseline.json` goes to 0 in the same commit, which turns sufficiency into a hard failure. | Opus agent (builder code), no authoring | W03 green at ceiling 0 on the regenerated banks; diff report; Fable sample 30 | W01, W03, W09, W16 | ☐ |
 | W18 | **Regenerate all 40 banks**; 118 removed items stay out; INDEX rewritten. | Opus agent | full gate | W17 | ☐ |
 | W19 | Simulator — DONE (prototype + design/exam_scoring.md): 得点区分 scoring with the house approximation labelled as such (linear map of raw section percent onto the official range; `scaled: null` and verdict `incomplete` for an unsat section, never 0); pass marks and sectional minima sourced to jlpt.jp + the HK administering body (read 2026-09-02) with the stated caveat that no publisher outside the administering network exists; `present()` for the 110 empty-question listening items; listening sections gated behind audio-present; study mode over the banks filtered to a lesson's cks (365 / 1,567 / 3,430 eligible items at the N5/N4/N3 end-of-level lessons); `sentence_order` accepts `accepted[]` when present; `ExamAttempt` in snake_case matching `exam_attempt.schema.json`. Typecheck, build, no-client-leak all clean; smoke-tested N5 and N3 papers. Capability routing and persistence remain with W26/D8. | Opus agent | prototype runs a scored paper; contracts | W18; D-scoring | ☑ |
-| W20 | **Per-item practice campaign**, kanji first (567 kanji, 1,946 vocab, 103 grammar absent from their own lesson); 4-option MCQs (493 of 676 offer 3); `reading` and `ordering` exercise types populated; handwriting per D5. **Kanji half authored ◐:** 899 verified exercises over 178 lessons in `research/derived/pending/practice_kanji_exercises.json` (the assembler consumed the workflow's verified list and excluded the 93 unverified — the behaviour W27's assembly lacked); schema-checked against the exercise contract; a simulated apply on a copy takes kanji absent to **0 at every level** (92/173/316 → 0) and practised overall 27.9% → 42.6% under `validate_practice_coverage`'s own rule. Apply step (after W09): insert into the DB exercise table + `research/derived/lessons/` + one `<exercise ref>` node per item in each body; drop five practice exemptions, keep three; then the vocab half (2,321 absent) and grammar (35). | Opus campaign | W04 ratchet → floor; Fable sample 30 | W04, W09 | ◐ kanji authored + simulated |
+| W20 | **Per-item practice campaign**, kanji first (567 kanji, 1,946 vocab, 103 grammar absent from their own lesson); 4-option MCQs (493 of 676 offer 3); `reading` and `ordering` exercise types populated; handwriting per D5. **Kanji half authored ◐:** 899 verified exercises over 178 lessons in `research/derived/pending/practice_kanji_exercises.json` (the assembler consumed the workflow's verified list and excluded the 93 unverified); schema-checked against the exercise contract; a simulated apply on a copy takes kanji absent to **0 at every level** (92/173/316 → 0) and practised overall 27.9% → 42.6% under `validate_practice_coverage`'s own rule. **Apply step (script, first):** insert into the DB exercise table + `research/derived/lessons/` + one `<exercise ref>` node per item in each body; drop five practice exemptions, keep three. **Vocab half (2,321) is mechanical first:** the existing exercise builder generates recognition items from bank sentences the lesson already renders, distractors drawn from the lesson's known set at the same POS; an author only where the builder finds no renderable sentence (measure first, expected < 20%); grammar (35) authored. Verifier on the authored residue only. | script, then Opus campaign (residue) | W04 ratchet → floor; Fable sample 30 | W04, W09 | ◐ kanji authored + simulated |
 | W21 | **A7 needs[]** — derivation DONE (`scripts/derive_needs.py`, `research/derived/needs_edges.json`): 7,912 raw → 700 direct edges, true transitive reduction, acyclic, 60 roots each with a reason. Apply step: write `needs[]` (lesson-typed, `{type:"lesson", ref, note}`) into the DB + authoring source and re-export; hand-author the pre-N5 kana chain (41 lessons have no derivable edge — the strand references only its own family); treat a depth-0 root deep in the course (11 review/kanji-exame lessons) as unplaceable in D2. **A7 furigana** on all 875 kanji `<jp>` spans with the validator's regex made kanji-implies-attribute. | Opus agent | course chain + lesson bodies gates | W09 | ◐ derived |
 | W21b | **Forward references (course-order debt).** 601 lesson→item uses point at an item taught LATER (kanji 360, vocab 251, grammar 27): 27 same-topic (move the unlock or the reference), 426 same-level cross-topic, 148 across levels (the frozen i+1 backlog). Ledger in `research/reports/w21_needs_report.md`. Campaign: fix by moving the unlock earlier where the earlier lesson can carry it, else rewrite the reference; the gating ratchet (check C/D) must shrink to 0 for same-topic and same-level. Also: `item_refs` on exercises exists in the authoring source and is empty everywhere — populating it is what makes W23's mistake index and W04's answer channel real. | Opus campaign | gating ratchet → 0 for same-topic/same-level | W09, W21 **Also:** a rendered-lesson gate for chip-plus-prose (an authored gloss beside a `<vocab ref>` must match the record's gloss — no gate catches it today; W09 found six); and `validate_index_rebuildable` should ignore `_Generated <date>_` lines the way schema-currency ignores the manifest date. | ☐ |
 | W22 | N3 dead end and features: `feat:jlpt-sim-n3` in the enum; a real N3 review topic; the 12 never-unlocked features given home lessons; conjugation-form unlocks so drills gate (0 of 322 cks carry any). | Opus agent | unlock ledger | W21 | ☐ |
 | W23 | Assessment: target-item refs on exercises (design-owned schema edit) for a mistake index; topic-level test entity (median 82 keyed items/topic); placement test over the item→lesson index. | Opus agent | contracts | W18, W20; D2 for placement | ☐ |
 | W24 | Capability layer: a vocabulary capability kind (34 N3 lessons map to nothing); can-do text and exam link on the schema. | Opus agent | `validate_capabilities` | W22 | ☐ |
-| W25 | N3 rebalance (median 18 new words/lesson vs 7; 0 of 101 lessons with 4+ examples) and N3 中文・長文 / 情報検索 sections. | Opus campaign | course + exam gates | W13, W15, W20; D11 | ☐ |
+| W25 | N3 rebalance (median 18 new words/lesson vs 7; 0 of 101 lessons with 4+ examples) and N3 中文・長文 / 情報検索 sections. **Not before W18 and the W13 apply** — the rebalance reads the exemplified N3 and the regenerated banks; doing it earlier does the work twice. | Opus campaign | course + exam gates | W13 apply, W15, W18, W20; D11 | ☐ |
 
 ### Lane B — memorization (M4)
 
 | id | unit | runner | done | needs | status |
 |---|---|---|---|---|---|
 | W26 | **User-state contracts** (logical) — DONE: seven runtime entities (`user` added: the scheduler block is per account), `card` (a version-tagged cache replayable from `review_log`), `review_log` keyed on card_id never the item, `lesson_progress`, `exam_attempt` ((user, level, attempt_no) is the seed), `skill_state`, `feature_state`; a declared `runtime` class in the manifest (`x-yomineko.class`), gated both ways and plant-proved; `build_manifest.ts_type` now resolves local `$defs` (two fields had silently become `unknown` in types.ts); D6 written as a dated decision in both design docs with the stale claims struck through, not deleted. No `deck` entity by design (a closed registry). Six srs_design.md claims contradicted by the data are listed in design/user_state.md. `validate_card_content.py` (W28) still to come. | Opus agent | contracts + `validate_card_content.py` | D6 default; D8 later | ☑ (cards gate pending) |
-| W27 | **Production answer keys** on every card (883 of 2,946 prompts ambiguous); the sense a card tests is its lesson's introducing sense; the 70 shared headwords to the teacher queue. **Authored ◐:** 2,946 rows in `research/derived/pending/card_production_keys.json` (0 still-ambiguous prompts, accept sets validated against the registry) — but the assembly was rebuilt from author files and the index-keyed verifier verdicts could be paired to only 5 of 30 batches, so every row is marked AUTHORED, not verified. **W27v:** a fresh verification pass keyed by (lesson, vocab) that applies corrections and sets `verified` per row; then the apply. | Opus campaign | card-content gate; Fable sample 30 | W08, W09, W26 | ◐ authored, re-verify pending |
-| W28 | Example sentence and cloze on every card (1,545 lack one; 343 from W12, rest from W13); per-card `card_types`; per-card tags; leech hook. | Opus agent | card-content gate | W12, W13, W26 | ☐ |
+| W27 | **Production answer keys** on every card (883 of 2,946 prompts ambiguous); the sense a card tests is its lesson's introducing sense; the 70 shared headwords to the teacher queue. **Authored ◐:** 2,946 rows in `research/derived/pending/card_production_keys.json` (0 still-ambiguous prompts, accept sets validated against the registry) — the index-keyed verifier verdicts could be paired to only 5 of 30 batches, so every row is marked AUTHORED, not verified. **Verification = one Fable 100-row sample keyed by (lesson, vocab), not a second verifier campaign** (re-verifying 2,946 rows with 30 agents costs what authoring cost). ≤ 2 failures in 100 → apply with `verified: "sampled"` per row and the sample recorded in the table; > 2 → one verifier pass on the failing class only. Then the apply script. | Fable sample + script | card-content gate | W08, W09, W26 | ◐ authored; sample pending |
+| W28 | Example sentence and cloze on every card (1,545 lack one; 343 from W12, rest from W13) — **mechanical:** the example is selected from the bank by the card's lesson known set, the same rule the lesson renderer uses; the cloze blanks the card's item at a token boundary; no authoring. Per-card `card_types`; per-card tags; leech hook. | script | card-content gate | W12, W13 apply, W26 | ☐ |
 | W29 | Kana cards one glyph per card (57 family cards for 211 glyphs today); listening cards after audio. | Opus agent | card-content gate | D6; W35 for listening | ☐ |
 | W30 | Speak-path cards into `deck:phrases` (72 units emit 0 today). | Opus agent | srs decks gate | D10 default; W27 | ☐ |
 
@@ -135,10 +176,10 @@ that proves it. **needs** = dependencies and decisions. Status column is the liv
 
 | id | unit | runner | done | needs | status |
 |---|---|---|---|---|---|
-| W31 | **A8 register**: field on `sentence` with the D7 value set; populate 5,889 (JMdict misc where present, authored elsewhere, `needs_review`); filter in the speak builder + blocklist mechanism (list is the owner's), applied to `drills[].examples` too. **Lessons untouched, proven by a byte-diff of course/**. | Opus campaign | register validator; course/ diff = 0; Fable sample 30 | D7 default | ☐ |
+| W31 | **A8 register**: field on `sentence` with the D7 value set; populate 5,889 **mechanically where a signal exists** — JMdict misc tags, W13's normalized authored values (4,223 rows), the register of the sentence's tagged grammar point where unambiguous, `です/ます` ending → polite — and author only the residue with no signal (383 measured), `needs_review`; filter in the speak builder + blocklist mechanism (list is the owner's), applied to `drills[].examples` too. **Lessons untouched, proven by a byte-diff of course/**. Partial table from the first attempt in `research/derived/pending/sentence_register.json` is input, not restarted. | script + Opus (residue) | register validator; course/ diff = 0; Fable sample 30 | D7 default | ◐ partial table |
 | W32 | R87 survival cores for the 11 stages without one; mine `arrival` (48 real candidates for 36 slots) and `health` (50) to parity; the ~16 canonical survival frames absent from the corpus, authored under D10. | Opus campaign | speak gate; Fable sample | W31; D10 default | ☐ |
 | W33 | Audio schema now: `audio_ref`/`audio_source` on sentence and per-sentence in speak_unit (schema_v2.md line 128 always specified it). | Opus agent | contracts | — | ☐ |
-| W34 | R78 strand validator (12/12 stages out of band) and rebalance; R83 spiral; semantic near-duplicate rule above R86; `vocab.freq_rank` exported; the path in `course/manifest.json` + the capability map; stage checkpoints. | Opus agent | new checks green | W32 | ☐ |
+| W34 | R78 strand validator, R83 spiral, semantic near-duplicate rule above R86 — **validators DONE** (`validate_speak_strands.py`, `validate_speak_spiral.py`, `validate_speak_duplicates.py` + baselines, in the suite). Open: the rebalance the strand validator measures (12/12 stages out of band), `vocab.freq_rank` exported, the path in `course/manifest.json` + the capability map, stage checkpoints. | Opus agent | new checks green at a lower ceiling | W32 | ◐ validators done |
 | W35 | Audio assets: 855 exam listening lines + 72 speak units + vocab; pronunciation QA. | owner pipeline + Opus QA | audio-present gates | **D3 BLOCKING** | ☐ |
 | W36 | Voice play mode contract: ASR target, scoring, per-attempt record, shadowing rendered. | Opus agent | contracts; prototype | **D3 BLOCKING** | ☐ |
 
@@ -196,7 +237,45 @@ anchor exists, adversarially checked AI-on-AI, sampled by Fable, held by the gat
 *approved* only through D4. W06 is deliberately in M0 so a teacher can start on N5 while Opus is
 still working on N3.
 
-## 6. Next five
+## 6. The sequence (v3) — one campaign at a time
 
-W01 → W02 → W03/W04/W05 (parallel) → W06 → W07, then Lane 1 in order. Each lands as its own commit
-with the gate green and this table updated.
+Cost tags: **S** = a script or one agent (minutes, < 0.2 M tokens); **M** = ≤ 15 agents, fits well
+inside a window (≈ 1–2 M tokens); **L** = a campaign of 30–40 agents, one full window (≈ 4–6 M
+tokens, W13 measured 5.1 M). Estimates, not promises; the plan row records the actual after landing.
+
+| # | unit | what runs | cost | why here |
+|---|---|---|---|---|
+| 1 | W11 | homographs (4 refs, resolver rule, 5 placements) + A5 family rebuild (scripts + validator) | M | identity must be still before anything regenerates |
+| 2 | W12 | orthographic relink + exporter fix (sentence_vocab) | S | cheapest coverage in the project: 568 records over the floor, 343 cards get examples |
+| 3 | W21 apply | write `needs[]` + the 41 hand-authored kana edges; furigana on 875 spans | S | authored table, script apply |
+| 4 | W15 apply + W16 | tokens, `reading.tokens/uses`, then 286 questions re-derived and blanks re-cut | S + M | authored table; W16 is builder code |
+| 5 | W20 kanji apply | 899 exercises into DB + lessons + bodies | S | authored, simulated, script apply |
+| 6 | W27 | Fable 100-row sample, then apply | S | replaces a 30-agent re-verify |
+| 7 | W13b | derive glosses/particles on a copy, measure residue, author residue + paragraphs, verify residue | M (was L) | the one remaining big unit, made small |
+| 8 | W13 apply | ingest with `--tag`, register normalized, 101 generations, W12 rerun for the grammar floor | S + S | N3 coverage moves from 8.5% to the floor |
+| 9 | W14 | lesson sentence re-selection, orphan sweep | M | needs 2 and 8 |
+| 10 | W17 → W18 | builder fixes, then regenerate all 40 banks | M + S | code, not authoring; retires ~1,700 flagged items at once |
+| 11 | W20 vocab + grammar | builder-generated items, authored residue | M | after the kanji apply proves the path |
+| 12 | W21b | forward references: move unlocks, rewrite the rest; `item_refs` populated | M | course-order debt; unblocks W15's 13 and W23 |
+| 13 | W22 → W24 → W23 | N3 dead end, capability kinds, assessment entities | S + S + M | small design-owned units; W23 placement waits on D2 |
+| 14 | W28 → W30 | card examples (script), kana cards, speak-path cards | S + S + S | mechanical |
+| 15 | W31 → W32 → W33 → W34 | register (mostly derived), survival cores, audio schema, strand rebalance | M + M + S + M | speak path v1 minus assets |
+| 16 | W37 → W40 apply → W38 rest | provenance backfill, locale parity + en backfill, teacher views | S + M + S | platform and review tooling |
+| 17 | W25 | N3 rebalance and sections | L | only after 8 and 10 |
+| — | W08b, W35, W36, W39, W42 rulings, W43, W44 | wait on A9b/D3/D4/D8/D9/D1 | — | nothing is spent until decided |
+
+Remaining spend if the tags hold: 1 L, 11 M, ~17 S ≈ 20–30 M tokens — roughly what the last week cost,
+for the rest of the base. Each unit still lands as its own commit with the gate green and this table
+updated; a unit that runs over its tag by 2× stops and is re-planned, not pushed through.
+
+## 7. Waste ledger
+
+What was actually wasted this run, and the §1 rule that now prevents it.
+
+| waste | cost | rule |
+|---|---|---|
+| W27 re-authored 2,946 cards because a CTX edit invalidated the cache; its verdicts were index-keyed and unpairable | one full campaign, and the table is still unverified | never edit a live workflow's prompt; key verdicts by identity; assemble by script |
+| ~35 concurrent Opus agents emptied four 5-hour windows; killed authors/verifiers/assemblers re-ran on resume | partial agents paid twice, four times | ≤ 12 concurrent, one campaign at a time, fit a window or split |
+| a JSON diff declared W09 clean; six rendered lessons carried wrong glosses | caught by a manual render; would have shipped | degradation checks render, they do not diff |
+| W13 planned as authoring + a full Layer-B authoring pass (4,223 sentences) | not spent — redesigned | mechanical first; measure the residue before authoring |
+| a 26-auditor QA sweep and nine readiness audits before anything consumed them | expensive but consumed — the gates and this plan | no audit without a consumer in the next milestone |
