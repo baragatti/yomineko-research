@@ -592,6 +592,29 @@ def export_sentences(con: sqlite3.Connection) -> int:
     SLen = get_all(con, "sentence", "en")
     TLen = get_all(con, "token", "en")
     PLen = get_all(con, "particle", "en")
+    # W12. The sentence->vocabulary edge, which this exporter used to drop on the floor.
+    #
+    # `sentence_vocab` is NOT a projection of `token.vocab_id` (build_sentence_vocab.py says so at
+    # length): it is the union of three passes — the dissector's per-token links, the 2026-06-15 run
+    # relinker, and the 2026-07-05 lemma tagger — and it knows 1,793 distinct vocabulary records
+    # where `tokens[].vocab` knows 1,449. Publishing only the token column cost 343 carded words
+    # their example, because a word Sudachi cuts in two (お+茶, 一+つ, それ+に) has no single token to
+    # hang a slug on and therefore vanished from the export entirely
+    # (research/reports/readiness/srs_fsrs.md G3).
+    #
+    # It is published WITH its provenance rather than as a bare list, because the three rules are not
+    # equally trustworthy: `run` and `lemma` rows were built without checking the reading, so 20.7%
+    # of them disagree with the record's dictionary reading (年 read ねん linked to 年/とし). A
+    # consumer choosing an example sentence for a card should prefer `reading_verified`; a consumer
+    # counting coverage should keep using `tokens[].vocab`, which is the only per-occurrence claim.
+    sent_vocab: dict[int, list] = {}
+    for sid_, vid_, rule_, ver_ in con.execute(
+            "SELECT sv.sentence_id, sv.vocab_id, sv.link_rule, sv.reading_verified "
+            "FROM sentence_vocab sv JOIN vocab v ON v.id = sv.vocab_id ORDER BY v.slug"):
+        slug_ = VOCAB_SLUG_BY_ID.get(vid_)
+        if slug_:
+            sent_vocab.setdefault(sid_, []).append(
+                {"ref": slug_, "link_rule": rule_, "reading_verified": bool(ver_)})
     records, index_rows = [], []
     cols = [d[0] for d in con.execute("SELECT * FROM sentence LIMIT 1").description]
     for row in con.execute("SELECT * FROM sentence ORDER BY slug"):  # stable identity (numeric id is volatile)
@@ -648,6 +671,8 @@ def export_sentences(con: sqlite3.Connection) -> int:
             "pattern": jloads(s["pattern_json"]),
             "clause_structure": s["clause_structure"],
             "tokens": tokens, "particles": particles, "grammar": grammar,
+            # W12: the sentence-level vocabulary edge (see the comment above export_sentences' loop).
+            "vocab": sent_vocab.get(sid, []),
         }
         records.append(rec)
         tr = SL.get((sid, "translation"))

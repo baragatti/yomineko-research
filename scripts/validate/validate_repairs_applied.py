@@ -1072,7 +1072,47 @@ def handle_lesson_ref_addresses(rows, sents, gram, table):
     return out
 
 
+def handle_orthographic_relinks(rows: list[dict], sents: dict, gram: dict, table: str) -> list[tuple]:
+    """W12. Every relink must be visible in the SHIPPED bank as `tokens[].vocab` on its anchor.
+
+    The row addresses a token SPAN by sentence slug and position, so the replay re-proves three things
+    and not just the presence of a slug: the span still holds the surfaces the row matched (a
+    re-dissection that moved the boundaries invalidates the match, it does not silently inherit it),
+    the anchor token carries the record, and the record is still the headword/kana the row named. The
+    sentence-level `vocab` edge is deliberately NOT what is asserted: it is a union of three
+    historical passes and would pass for links this campaign never made.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = (f"{table} row {i}: {r['sentence']} @{r['anchor_position']} "
+                f"{r['surface']} -> {r['vocab']}")
+        s = sents.get(r["sentence"])
+        if s is None:
+            out.append(("fail", C_NO_RECORD, addr, "the export carries no such sentence"))
+            continue
+        at_pos = {t.get("position"): t for t in (s.get("tokens") or [])
+                  if t.get("split_mode") == "C"}
+        span = [at_pos.get(p) for p in r["span"]]
+        if any(t is None for t in span):
+            out.append(("fail", C_NO_RECORD, addr,
+                        f"positions {r['span']} are not all C tokens of this sentence"))
+            continue
+        if [t.get("surface") for t in span] != r["span_surfaces"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"the span now reads {[t.get('surface') for t in span]!r}, the row matched "
+                        f"{r['span_surfaces']!r} — the dissection moved under the link"))
+            continue
+        anchor = at_pos[r["anchor_position"]]
+        if anchor.get("vocab") != r["vocab"]:
+            out.append(("fail", C_LINK_ABSENT, addr,
+                        f"the anchor token carries {anchor.get('vocab')!r}, not {r['vocab']!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    "orthographic_relinks.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
     "sentence_text_repairs.json": handle_sentence_text_repairs,
     "jargon_pass2_repairs.json": handle_jargon_pass2,

@@ -58,6 +58,11 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-09 (ar) — W12 DONE and committed (§6 step 2): 663 reading-verified relinks, 57 N5/N4
+> records over the sentence floor (the audit's 568 was a substring artefact — recorded), exporter now
+> ships sentence.vocab[] and 343 cards regained their example; lessons untouched. Next: §6 step 3,
+> W21 apply (needs[] + kana chain + furigana).**
+
 > **2026-09-09 (aq) — W11 DONE and committed (§6 step 1): homographs ruled (14 + a fifth wrong ref
 > the review found), resolver reading rule in code, 5 exemptions became unlocks, family layer rebuilt
 > 396 → 707 / 2,568 → 4,969 with a hard validator that failed on the old tree, W11c row-id refs

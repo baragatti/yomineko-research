@@ -533,6 +533,11 @@ export interface Sentence {
     }[];
   translation: LocaleText;
   translation_literal: LocaleText;
+  vocab: {
+      link_rule?: "lemma" | "ortho" | "run" | "token";
+      reading_verified?: boolean;
+      ref?: string;
+    }[];
 }
 
 /** The root of the situation-ordered path (Fala Primeiro): its stages and totals. */
