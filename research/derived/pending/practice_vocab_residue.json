@@ -1,0 +1,355 @@
+{
+  "why": "The (lesson, item) pairs no template in scripts/build_vocab_exercises.py could serve, with the reason class that stopped each one. This is the authored residue of the W20 vocab + grammar half: the measured work list a human or an Opus campaign consumes, and the only part of this unit that is not mechanical.",
+  "reason_classes": {
+    "no_cks_clean_sentence": "no bank sentence carries this item inside the lesson's cumulative_known_set (usually: no bank sentence carries it at all)",
+    "no_alignable_form_span": "a tagged sentence exists but no probe segment of the grammar record's forms/structure_pattern aligns to its token boundaries",
+    "no_probe_segment": "the grammar record has no multi-character form or structure_pattern to blank",
+    "no_distractor_pool": "fewer than three known records share the target's coarse POS with a different gloss",
+    "ambiguous_gloss_no_hint": "another record in the same known set carries the same first gloss and nothing in the record separates them",
+    "gloss_unusable_in_stem": "the record has no pt-BR gloss usable as a prompt stem",
+    "unbalanced_prose": "a filled template failed the prose contract (brackets, terminal punctuation, em dash)",
+    "duplicate_prompt_in_lesson": "the generated prompt+answer already exists in that lesson",
+    "template_does_not_credit": "the generated item did not close the pair under validate_practice_coverage's own predicate",
+    "key_form_outside_cks": "every written form of the record carries a kanji this lesson has not taught, or is not one Japanese run",
+    "no_vocab_record": "the unlock resolves to no exported vocab record",
+    "no_grammar_record": "the unlock resolves to no exported grammar record"
+  },
+  "generated_by": "scripts/build_vocab_exercises.py",
+  "count": 27,
+  "counts_by_reason": {
+    "no_alignable_form_span": 4,
+    "no_cks_clean_sentence": 20,
+    "no_probe_segment": 3
+  },
+  "counts_by_reason_and_kind": {
+    "grammar|no_alignable_form_span": 4,
+    "grammar|no_cks_clean_sentence": 20,
+    "grammar|no_probe_segment": 3
+  },
+  "pairs": [
+    {
+      "lesson": "les:n5-perguntas-04",
+      "level": "n5",
+      "topic": "top:n5-perguntas",
+      "path": "course/n5/topic-08-perguntas/lesson-04.json",
+      "kind": "grammar",
+      "ref": "gram:doushite",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-perguntas-04",
+      "level": "n5",
+      "topic": "top:n5-perguntas",
+      "path": "course/n5/topic-08-perguntas/lesson-04.json",
+      "kind": "grammar",
+      "ref": "gram:gp-30",
+      "reason": "no_alignable_form_span",
+      "tried": [
+        "no_alignable_form_span"
+      ]
+    },
+    {
+      "lesson": "les:n5-verbos-03",
+      "level": "n5",
+      "topic": "top:n5-verbos",
+      "path": "course/n5/topic-10-verbos/lesson-03.json",
+      "kind": "grammar",
+      "ref": "gram:gp-20",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-particulas-lugar-07",
+      "level": "n5",
+      "topic": "top:n5-particulas-lugar",
+      "path": "course/n5/topic-11-particulas-lugar/lesson-07.json",
+      "kind": "grammar",
+      "ref": "gram:gp-57",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-adjetivos-01",
+      "level": "n5",
+      "topic": "top:n5-adjetivos",
+      "path": "course/n5/topic-13-adjetivos/lesson-01.json",
+      "kind": "grammar",
+      "ref": "gram:na-adjectives",
+      "reason": "no_probe_segment",
+      "tried": [
+        "no_probe_segment"
+      ]
+    },
+    {
+      "lesson": "les:n5-adjetivos-07",
+      "level": "n5",
+      "topic": "top:n5-adjetivos",
+      "path": "course/n5/topic-13-adjetivos/lesson-07.json",
+      "kind": "grammar",
+      "ref": "gram:gp-23",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-comparacoes-02",
+      "level": "n5",
+      "topic": "top:n5-comparacoes",
+      "path": "course/n5/topic-14-comparacoes/lesson-02.json",
+      "kind": "grammar",
+      "ref": "gram:no-naka-de-a-ga-ichiban",
+      "reason": "no_probe_segment",
+      "tried": [
+        "no_probe_segment"
+      ]
+    },
+    {
+      "lesson": "les:n5-te-form-03",
+      "level": "n5",
+      "topic": "top:n5-te-form",
+      "path": "course/n5/topic-15-te-form/lesson-03.json",
+      "kind": "grammar",
+      "ref": "gram:te-iru",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-te-form-04",
+      "level": "n5",
+      "topic": "top:n5-te-form",
+      "path": "course/n5/topic-15-te-form/lesson-04.json",
+      "kind": "grammar",
+      "ref": "gram:gp-36",
+      "reason": "no_probe_segment",
+      "tried": [
+        "no_probe_segment"
+      ]
+    },
+    {
+      "lesson": "les:n5-te-form-04",
+      "level": "n5",
+      "topic": "top:n5-te-form",
+      "path": "course/n5/topic-15-te-form/lesson-04.json",
+      "kind": "grammar",
+      "ref": "gram:gp-37",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-te-form-05",
+      "level": "n5",
+      "topic": "top:n5-te-form",
+      "path": "course/n5/topic-15-te-form/lesson-05.json",
+      "kind": "grammar",
+      "ref": "gram:te-wa-ikenai",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-te-form-07",
+      "level": "n5",
+      "topic": "top:n5-te-form",
+      "path": "course/n5/topic-15-te-form/lesson-07.json",
+      "kind": "grammar",
+      "ref": "gram:nakute-wa-naranai",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-rotina-04",
+      "level": "n5",
+      "topic": "top:n5-rotina",
+      "path": "course/n5/topic-17-rotina/lesson-04.json",
+      "kind": "grammar",
+      "ref": "gram:gp-144",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-conectando-02",
+      "level": "n5",
+      "topic": "top:n5-conectando",
+      "path": "course/n5/topic-18-conectando/lesson-02.json",
+      "kind": "grammar",
+      "ref": "gram:keredo-mo",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-conectando-07",
+      "level": "n5",
+      "topic": "top:n5-conectando",
+      "path": "course/n5/topic-18-conectando/lesson-07.json",
+      "kind": "grammar",
+      "ref": "gram:gp-41",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n5-conectando-07",
+      "level": "n5",
+      "topic": "top:n5-conectando",
+      "path": "course/n5/topic-18-conectando/lesson-07.json",
+      "kind": "grammar",
+      "ref": "gram:kata",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n4-condicionais-08",
+      "level": "n4",
+      "topic": "top:n4-condicionais",
+      "path": "course/n4/topic-23-condicionais/lesson-08.json",
+      "kind": "grammar",
+      "ref": "gram:gp-91",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n4-condicionais-08",
+      "level": "n4",
+      "topic": "top:n4-condicionais",
+      "path": "course/n4/topic-23-condicionais/lesson-08.json",
+      "kind": "grammar",
+      "ref": "gram:gp-93",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n4-volitivo-01",
+      "level": "n4",
+      "topic": "top:n4-volitivo",
+      "path": "course/n4/topic-25-volitivo/lesson-01.json",
+      "kind": "grammar",
+      "ref": "gram:you-da",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n4-volitivo-04",
+      "level": "n4",
+      "topic": "top:n4-volitivo",
+      "path": "course/n4/topic-25-volitivo/lesson-04.json",
+      "kind": "grammar",
+      "ref": "gram:koto-ni-naru",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n4-transitividade-01",
+      "level": "n4",
+      "topic": "top:n4-transitividade",
+      "path": "course/n4/topic-26-transitividade/lesson-01.json",
+      "kind": "grammar",
+      "ref": "gram:tadoushi-jidoushi",
+      "reason": "no_alignable_form_span",
+      "tried": [
+        "no_alignable_form_span"
+      ]
+    },
+    {
+      "lesson": "les:n4-experiencia-03",
+      "level": "n4",
+      "topic": "top:n4-experiencia",
+      "path": "course/n4/topic-28-experiencia/lesson-03.json",
+      "kind": "grammar",
+      "ref": "gram:ni-ki-ga-tsuku",
+      "reason": "no_alignable_form_span",
+      "tried": [
+        "no_alignable_form_span"
+      ]
+    },
+    {
+      "lesson": "les:n4-experiencia-06",
+      "level": "n4",
+      "topic": "top:n4-experiencia",
+      "path": "course/n4/topic-28-experiencia/lesson-06.json",
+      "kind": "grammar",
+      "ref": "gram:sonna-ni",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n3-perspectiva-01",
+      "level": "n3",
+      "topic": "top:n3-perspectiva",
+      "path": "course/n3/topic-40-perspectiva/lesson-01.json",
+      "kind": "grammar",
+      "ref": "gram:n3-ni-kanshite",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n3-estado-02",
+      "level": "n3",
+      "topic": "top:n3-estado",
+      "path": "course/n3/topic-42-estado/lesson-02.json",
+      "kind": "grammar",
+      "ref": "gram:n3-ageru",
+      "reason": "no_alignable_form_span",
+      "tried": [
+        "no_alignable_form_span"
+      ]
+    },
+    {
+      "lesson": "les:n3-limites-01",
+      "level": "n3",
+      "topic": "top:n3-limites",
+      "path": "course/n3/topic-46-limites/lesson-01.json",
+      "kind": "grammar",
+      "ref": "gram:n3-kurai-wa-nai",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    },
+    {
+      "lesson": "les:n3-relato-02",
+      "level": "n3",
+      "topic": "top:n3-relato",
+      "path": "course/n3/topic-50-relato/lesson-02.json",
+      "kind": "grammar",
+      "ref": "gram:n3-you-ni-iu",
+      "reason": "no_cks_clean_sentence",
+      "tried": [
+        "no_cks_clean_sentence"
+      ]
+    }
+  ]
+}
