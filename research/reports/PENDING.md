@@ -225,6 +225,18 @@ Detail: scripts/export/pattern_forms.py (the matcher and its runnable proof); th
 - **`grp:suru-irregular` has 416 members** — every 〜する compound the course teaches. As a conjugation class it is correct; as a learner-facing family it is a list nobody would study. Options: cap the exported members to the verbs a lesson actually conjugates, split by topic, or demote it to a class flag on the vocab record and drop the family. Recommendation: demote — the class is already a record attribute; the family adds nothing a query could not answer.
 - **The practice-coverage ratchet cannot express an honestly grown denominator.** Promoting an exemption to a real unlock (W11a did five) makes the absolute count of un-drilled items worse while making the learner better off, so the unit had to author exercises just to hold the number. Recommendation: hold the ratchet as a RATE (un-drilled / unlocked) per (level, kind) with the absolute count reported, so regularising an exemption is neutral and only real regressions fail.
 
+### B-W37. Two provenance rulings (2026-09-10, from the W37 derivation)
+- **Builder-literal pt-BR strings (76 distinct: kana family labels, capability names).** They are
+  written by scripts, not by a model and not by a dataset. Options: Layer C with `created_by:
+  script` (they are pedagogy, and a curated `script` value in the enum makes them auditable), or
+  Layer B. Recommendation: C + `script`; the enum gains the value either way.
+- **Per-field layer shape for the 9,745 records that mix layers** (vocab: headword/kana A, gloss B;
+  kanji: readings A, meanings B, notes C). Recommendation: a `field_layers` map `{field: "A"|"B"|"C"}`
+  on the record, the same shape W40 settled for `translation_layer`; never a scalar that lies.
+- **Also for your eye:** 250 Layer-A kanji were stamped `created_by: ai` with `needs_review`
+  cleared by a script no longer tracked (P5b, 2026-06). The apply resets them from the ingest
+  table; if that script's intent was different, say so.
+
 ## C. Mechanical items — done by hand today
 
 - bank `言う` stored as ゆう on 5 source tokens (checked against the re-dissection gate first)
