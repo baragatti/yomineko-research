@@ -1,0 +1,4909 @@
+{
+ "unit": "n3-exemplification",
+ "phase": "W13b",
+ "source": "research/derived/n3_mined/residue.json :: uncovered_targets (101)",
+ "generated_at": "2026-09-10",
+ "method": "Every uncovered target was re-checked against raw_tatoeba_sentence on a scratch copy of db/corpus.sqlite before any generation: the target's registry surfaces were matched as SudachiPy (full dict, SplitMode.C) tokens with an agreeing reading and a POS compatible with the record, over sentences of 6-40 characters that carry a directly-linked English pair, keeping only rows whose content tokens sit inside the introducing lesson's cumulative_known_set apart from the target and at most one further word. Targets with a real hit are SELECTED (jp/en byte-exact from Layer A). The rest are GENERATED inside the same known set, 6-25 characters, no proper names, no trailing 。",
+ "counts": {
+  "uncovered_targets": 101,
+  "selected": 36,
+  "generated": 65,
+  "rows": 101,
+  "still_open": 0
+ },
+ "still_open": [],
+ "rows": [
+  {
+   "target": "vocab:1150450",
+   "tatoeba_id": 144817,
+   "jp": "親は子を愛する。",
+   "en": "Parents love their children.",
+   "pt": "Os pais amam os filhos.",
+   "pt_literal": "Quanto aos pais (は tópico), os filhos (を objeto direto) amam.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (16 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-01",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-144817",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "愛する",
+     "lemma": "愛する",
+     "reading": "あいする",
+     "pos": "動詞/一般",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1154770",
+   "tatoeba_id": 3430692,
+   "jp": "いい案があるかも。",
+   "en": "I think I have a pretty good idea.",
+   "pt": "Acho que tenho uma boa ideia.",
+   "pt_literal": "Boa ideia (が sujeito) existe, talvez (かも suposição).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (26 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-01",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-3430692",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "案",
+     "lemma": "案",
+     "reading": "あん",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1404320",
+   "tatoeba_id": 11814369,
+   "jp": "口で息をして。",
+   "en": "Breathe through your mouth.",
+   "pt": "Respira pela boca.",
+   "pt_literal": "Pela boca (で meio), a respiração (を objeto direto) faz (て pedido informal).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (73 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-03",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-11814369",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "息",
+     "lemma": "息",
+     "reading": "いき",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "gram:n3-nado",
+   "tatoeba_id": 9936514,
+   "jp": "レストランで働いたことなど一度もない。",
+   "en": "I've never worked in a restaurant.",
+   "pt": "Nunca na vida trabalhei em restaurante.",
+   "pt_literal": "Em restaurante (で lugar da ação), o fato de ter trabalhado e coisas do tipo (など exemplificação + tom de desdém), nem uma vez existe.",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (99 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-04",
+   "kind": "grammar",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-9936514",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "form": "～など"
+    }
+   ]
+  },
+  {
+   "target": "vocab:1242600",
+   "tatoeba_id": 100054,
+   "jp": "彼は報酬として金の時計をもらった。",
+   "en": "He was given a gold watch as a reward.",
+   "pt": "Ele ganhou um relógio de ouro como recompensa.",
+   "pt_literal": "Quanto a ele (は tópico), como recompensa (として papel/função), um relógio de ouro (の modificador + を objeto direto) recebeu.",
+   "register": "neutral",
+   "unknown_count": 1,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (9 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 1 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-100054",
+   "layer_a_unknown": [
+    "報酬"
+   ],
+   "match": [
+    {
+     "surface": "金",
+     "lemma": "金",
+     "reading": "きん",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1454500",
+   "tatoeba_id": 1133847,
+   "jp": "あり得るけど、多分ないな。",
+   "en": "It's possible, but not probable.",
+   "pt": "Pode até ser, mas provavelmente não.",
+   "pt_literal": "É capaz de existir (得る potencial), mas (けど contraste), provavelmente não existe (な ênfase falada).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (20 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-1133847",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "得る",
+     "lemma": "得る",
+     "reading": "うる",
+     "pos": "動詞/非自立可能",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1508300",
+   "tatoeba_id": 83524,
+   "jp": "柄にもないことを言うな。",
+   "en": "Don't speak out of line.",
+   "pt": "Não fala uma coisa que não combina nada com você.",
+   "pt_literal": "Coisa que nem ao próprio feitio (柄 + に destino + も nem) corresponde (を objeto direto), não diga (な proibição).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (39 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-83524",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "柄",
+     "lemma": "柄",
+     "reading": "がら",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:2147630",
+   "tatoeba_id": 235265,
+   "jp": "３日後に来てください。",
+   "en": "Please come in three days.",
+   "pt": "Volte daqui a três dias, por favor.",
+   "pt_literal": "Três dias depois (後 sufixo de posterioridade + に momento), venha (てください pedido educado).",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (136 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-235265",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "後",
+     "lemma": "後",
+     "reading": "ご",
+     "pos": "接尾辞/名詞的",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:2826528",
+   "tatoeba_id": 174243,
+   "jp": "御返事を御待ちしております。",
+   "en": "I'm looking forward to your reply.",
+   "pt": "Fico no aguardo da sua resposta.",
+   "pt_literal": "A sua resposta (御 prefixo honorífico + を objeto direto), estou esperando (お + radical + しております, humilde e polido).",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (2976 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-174243",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "御",
+     "lemma": "御",
+     "reading": "お",
+     "pos": "接頭辞/*",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:2859161",
+   "tatoeba_id": 9840099,
+   "jp": "自分のパソコンから警告音が鳴ってるの、聞こえた？",
+   "en": "Did you hear your computer beep?",
+   "pt": "Você ouviu o bipe de alerta do seu computador?",
+   "pt_literal": "Do próprio computador (から origem), o som de alerta (音 sufixo de som + が sujeito) está tocando, isso (の nominalizador), ouviu?",
+   "register": "casual",
+   "unknown_count": 1,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (2 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 1 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-9840099",
+   "layer_a_unknown": [
+    "警告"
+   ],
+   "match": [
+    {
+     "surface": "音",
+     "lemma": "音",
+     "reading": "おん",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1352170",
+   "tatoeba_id": 7967876,
+   "jp": "この地図上では僕はどこにいますか？",
+   "en": "Where am I on this map?",
+   "pt": "Onde eu estou neste mapa?",
+   "pt_literal": "Neste mapa (上 sufixo 'no plano de' + で lugar + は tópico), quanto a mim (は tópico), em que lugar (に localização) estou?",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (22 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-tempo-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-7967876",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "上",
+     "lemma": "上",
+     "reading": "じょう",
+     "pos": "接尾辞/名詞的",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:2830705",
+   "tatoeba_id": 12439920,
+   "jp": "身体は洗った？",
+   "en": "Did you wash yourself?",
+   "pt": "Você lavou o corpo?",
+   "pt_literal": "Quanto ao corpo (は tópico), lavou?",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (9 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-tempo-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-12439920",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "身体",
+     "lemma": "身体",
+     "reading": "しんたい",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1643510",
+   "tatoeba_id": 77329,
+   "jp": "老いも若きも戦争にいった。",
+   "en": "Young and old went to battle.",
+   "pt": "Velhos e jovens foram para a guerra.",
+   "pt_literal": "Tanto a velhice (も inclusão) quanto a juventude (も inclusão), para a guerra (に destino) foram.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (5 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-perspectiva-03",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-77329",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "老い",
+     "lemma": "老い",
+     "reading": "おい",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1580825",
+   "tatoeba_id": 11530592,
+   "jp": "数分はかかります。",
+   "en": "It's going to take a few minutes.",
+   "pt": "Vai levar alguns minutos.",
+   "pt_literal": "Quanto a alguns minutos (数 prefixo 'alguns' + は tópico), leva.",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (175 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-perspectiva-04",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-11530592",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "数",
+     "lemma": "数",
+     "reading": "すう",
+     "pos": "名詞/数詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1489350",
+   "tatoeba_id": 220393,
+   "jp": "この点を見るために、下の表を見なさい。",
+   "en": "To see this point, look at the table below.",
+   "pt": "Para entender este ponto, olhe a tabela abaixo.",
+   "pt_literal": "Este ponto (を objeto direto) ver, com essa finalidade (ために), a tabela de baixo (の modificador + を objeto direto) olhe (なさい ordem branda).",
+   "register": "formal",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (10 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-perspectiva-06",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-220393",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "表",
+     "lemma": "表",
+     "reading": "ひょう",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1550980",
+   "tatoeba_id": 78322,
+   "jp": "陸が見えてきた。",
+   "en": "Land came in sight.",
+   "pt": "A terra firme começou a aparecer.",
+   "pt_literal": "Terra firme (が sujeito) passou a ser vista (てくる mudança que se aproxima).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (8 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-perspectiva-07",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-78322",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "陸",
+     "lemma": "陸",
+     "reading": "りく",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1922780",
+   "tatoeba_id": 136764,
+   "jp": "誰にでも得手不得手がある。",
+   "en": "Everyone has their own strong and weak points.",
+   "pt": "Todo mundo tem seus pontos fortes e fracos.",
+   "pt_literal": "Para qualquer pessoa (に destino + でも 'seja quem for'), o que se domina e o que não se domina (不 prefixo de negação + が sujeito) existe.",
+   "register": "neutral",
+   "unknown_count": 1,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (9 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 1 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-causa-07",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-136764",
+   "layer_a_unknown": [
+    "得手"
+   ],
+   "match": [
+    {
+     "surface": "不",
+     "lemma": "不",
+     "reading": "ふ",
+     "pos": "接頭辞/*",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1494790",
+   "tatoeba_id": 85041,
+   "jp": "不平を言う理由は何も無い。",
+   "en": "There is no cause for complaint.",
+   "pt": "Não há motivo nenhum para reclamar.",
+   "pt_literal": "Quanto ao motivo de dizer queixa (不平 + を objeto direto ... は tópico), nada (何も) não existe.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (55 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-estado-07",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-85041",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "不平",
+     "lemma": "不平",
+     "reading": "ふへい",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1533340",
+   "tatoeba_id": 231320,
+   "jp": "あのシャツを着てみなさい。上質の綿でできています。",
+   "en": "Try on that shirt. It's made of fine cotton.",
+   "pt": "Experimenta aquela camisa. Ela é de algodão de boa qualidade.",
+   "pt_literal": "Aquela camisa (を objeto direto), veste e vê (てみる tentativa + なさい ordem branda). De algodão de boa qualidade (で material) está feita.",
+   "register": "polite",
+   "unknown_count": 1,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (4 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 1 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-estado-08",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-231320",
+   "layer_a_unknown": [
+    "上質"
+   ],
+   "match": [
+    {
+     "surface": "綿",
+     "lemma": "綿",
+     "reading": "わた",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1394250",
+   "tatoeba_id": 85570,
+   "jp": "美しいものは必ずしも善ではない。",
+   "en": "What is beautiful is not always good.",
+   "pt": "O que é belo nem sempre é bom.",
+   "pt_literal": "Quanto às coisas belas (は tópico), não necessariamente (必ずしも) o bem (善) é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (3 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-intencao-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-85570",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "善",
+     "lemma": "善",
+     "reading": "ぜん",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1394770",
+   "tatoeba_id": 140818,
+   "jp": "全学生はみんな図書館に入ることができる。",
+   "en": "All students have access to the library.",
+   "pt": "Todos os estudantes podem entrar na biblioteca.",
+   "pt_literal": "Quanto ao conjunto dos estudantes (全 prefixo 'todo' + は tópico), todos, na biblioteca (に destino) entrar, isso conseguem.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (13 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-intencao-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-140818",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "全",
+     "lemma": "全",
+     "reading": "ぜん",
+     "pos": "接頭辞/*",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1505650",
+   "tatoeba_id": 83649,
+   "jp": "文明の進歩がとても速い。",
+   "en": "The progress of civilization is very rapid.",
+   "pt": "O avanço da civilização é muito rápido.",
+   "pt_literal": "O avanço da civilização (の modificador + が sujeito) muito rápido é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (10 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-intencao-07",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-83649",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "文明",
+     "lemma": "文明",
+     "reading": "ぶんめい",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1919590",
+   "tatoeba_id": 542960,
+   "jp": "４級の漢字をどれだけ覚えていますか。",
+   "en": "How many grade four kanji have you memorised?",
+   "pt": "Quantos kanjis do nível 4 você já sabe de cor?",
+   "pt_literal": "Kanji de nível 4 (級 sufixo de nível + の modificador + を objeto direto), o quanto (どれだけ) está guardando na memória?",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (2 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-deveres-03",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-542960",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "級",
+     "lemma": "級",
+     "reading": "きゅう",
+     "pos": "接尾辞/名詞的",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1393350",
+   "tatoeba_id": 237381,
+   "jp": "彼らは川まで前進した。",
+   "en": "They advanced to the river.",
+   "pt": "Eles avançaram até o rio.",
+   "pt_literal": "Quanto a eles (は tópico), até o rio (まで limite), avançaram.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (13 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-deveres-04",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-237381",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "前進",
+     "lemma": "前進",
+     "reading": "ぜんしん",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1516930",
+   "tatoeba_id": 11049469,
+   "jp": "赤の方が好き。",
+   "en": "I prefer red.",
+   "pt": "Eu prefiro o vermelho.",
+   "pt_literal": "O lado do vermelho (方 'o de/o lado' + の modificador + が sujeito) gosto.",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (1432 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-deveres-06",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-11049469",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "方",
+     "lemma": "方",
+     "reading": "ほう",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1514950",
+   "tatoeba_id": 121394,
+   "jp": "薄暮れが迫った。",
+   "en": "The twilight came on.",
+   "pt": "O lusco-fusco se aproximava.",
+   "pt_literal": "O fim do dia ainda claro (薄 + 暮れ) (が sujeito) se aproximou.",
+   "register": "neutral",
+   "unknown_count": 1,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (1 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 1 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-desejos-01",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-121394",
+   "layer_a_unknown": [
+    "迫る"
+   ],
+   "match": [
+    {
+     "surface": "暮れ",
+     "lemma": "暮れ",
+     "reading": "くれ",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1949190",
+   "tatoeba_id": 155281,
+   "jp": "私は他に何もできない。",
+   "en": "I can't do anything else.",
+   "pt": "Eu não consigo fazer mais nada.",
+   "pt_literal": "Quanto a mim (は tópico), em outra coisa (他 + に destino), nada (何も) consigo fazer.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (121 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-limites-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-155281",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "他",
+     "lemma": "他",
+     "reading": "た",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:2083100",
+   "tatoeba_id": 10778312,
+   "jp": "一日が終わった。",
+   "en": "The day's over.",
+   "pt": "O dia acabou.",
+   "pt_literal": "Um dia (一 + 日 contador de dias + が sujeito) terminou.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (516 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-enfase-06",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-10778312",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "日",
+     "lemma": "日",
+     "reading": "にち",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1129240",
+   "tatoeba_id": 10157623,
+   "jp": "ママはどこ？",
+   "en": "Where is mom?",
+   "pt": "Cadê a mamãe?",
+   "pt_literal": "Quanto à mamãe (は tópico), onde?",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (76 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-enfase-07",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-10157623",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "ママ",
+     "lemma": "ママ",
+     "reading": "まま",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1290810",
+   "tatoeba_id": 8693841,
+   "jp": "彼は左右を見た。",
+   "en": "He looked left and right.",
+   "pt": "Ele olhou para os dois lados.",
+   "pt_literal": "Quanto a ele (は tópico), esquerda e direita (左右 + を objeto direto) olhou.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (176 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-concessao-04",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-8693841",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "左右",
+     "lemma": "左右",
+     "reading": "さゆう",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "gram:n3-moshikasuru-to-kamoshirenai",
+   "tatoeba_id": 193877,
+   "jp": "もしかすると明日雨が降るかもしれない。",
+   "en": "It might rain tomorrow.",
+   "pt": "Pode ser que chova amanhã.",
+   "pt_literal": "Se calhar (もしかすると), amanhã, chuva (が sujeito) cai, talvez (かもしれない conjectura).",
+   "register": "neutral",
+   "unknown_count": 1,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (2 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 1 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conjectura-01",
+   "kind": "grammar",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-193877",
+   "layer_a_unknown": [
+    "しれる"
+   ],
+   "match": [
+    {
+     "form": "もしかすると～かもしれない"
+    }
+   ]
+  },
+  {
+   "target": "vocab:1929950",
+   "tatoeba_id": 11851900,
+   "jp": "この詩、いいね。",
+   "en": "I like this poem.",
+   "pt": "Esse poema é bom, né?",
+   "pt_literal": "Este poema, bom (いい), né (ね busca de concordância).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (123 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conjectura-01",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-11851900",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "詩",
+     "lemma": "詩",
+     "reading": "し",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1581590",
+   "tatoeba_id": 137146,
+   "jp": "谷の間を川が流れている。",
+   "en": "A river runs down through the valley.",
+   "pt": "Um rio corre pelo meio do vale.",
+   "pt_literal": "Pelo vão do vale (谷 + の modificador + 間 + を percurso), um rio (が sujeito) está correndo.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (12 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conjectura-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-137146",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "谷",
+     "lemma": "谷",
+     "reading": "たに",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1531950",
+   "tatoeba_id": 185183,
+   "jp": "回れ右を命じる。",
+   "en": "I order you to turn right.",
+   "pt": "Ordeno meia-volta.",
+   "pt_literal": "Meia-volta (を objeto direto) ordeno.",
+   "register": "formal",
+   "unknown_count": 1,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (1 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 1 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-conjectura-07",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-185183",
+   "layer_a_unknown": [
+    "回れ右"
+   ],
+   "match": [
+    {
+     "surface": "命じる",
+     "lemma": "命じる",
+     "reading": "めいじる",
+     "pos": "動詞/一般",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1350290",
+   "tatoeba_id": 148288,
+   "jp": "収入が増えれば増えるほど、消費もいっそう多くなる。",
+   "en": "The more you earn, the more you spend.",
+   "pt": "Quanto mais a renda cresce, mais o consumo aumenta.",
+   "pt_literal": "Se a renda (が sujeito) aumenta, na medida em que aumenta (ば ... ほど proporção), o consumo também (も inclusão) fica ainda maior.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (9 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-estrutura-01",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-148288",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "消費",
+     "lemma": "消費",
+     "reading": "しょうひ",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1477840",
+   "tatoeba_id": 235434,
+   "jp": "２人は婚約を発表した。",
+   "en": "They have announced their engagement.",
+   "pt": "Os dois anunciaram o noivado.",
+   "pt_literal": "Quanto aos dois (は tópico), o noivado (を objeto direto) anunciaram.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": false,
+   "why": "SELECTED on re-check: the W13 miner found no candidate, but a wider search of raw_tatoeba_sentence (33 rows carry the target as a SudachiPy token with a matching reading and a compatible POS) yields this row. 6-40 chars, directly-linked English pair, 0 content token outside the lesson's cumulative_known_set. jp/en byte-exact from Layer A; only pt/pt_literal/register are authored here.",
+   "lesson": "les:n3-estrutura-05",
+   "kind": "vocab",
+   "mode": "selected",
+   "ai_generated": false,
+   "needs_review": true,
+   "key": "tat-235434",
+   "layer_a_unknown": [],
+   "match": [
+    {
+     "surface": "発表",
+     "lemma": "発表",
+     "reading": "はっぴょう",
+     "pos": "名詞/普通名詞",
+     "kana_only": false
+    }
+   ]
+  },
+  {
+   "target": "vocab:1000730",
+   "tatoeba_id": "",
+   "jp": "そんなことを言ってはいけない",
+   "en": "You must not say a thing like that.",
+   "pt": "Não pode falar uma coisa dessas.",
+   "pt_literal": "Coisa desse tipo (を objeto direto) dizer, quanto a isso (ては condição temática), não serve (いけない proibição).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Re-check found no real candidate: いけない never surfaces as one SudachiPy token (it splits into いけ + ない, and いけ resolves to 行ける), so no Tatoeba row can satisfy the token test for this record. Built from les:n3-conectores-04's cumulative_known_set only (そんな, こと, 言う); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conectores-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-8c60dda0dabf",
+   "cks_proof": {
+    "lesson": "les:n3-conectores-04",
+    "cks_vocab_size": 1405,
+    "cks_kanji_size": 303,
+    "target_matched": [
+     "いけない"
+    ],
+    "content_tokens": [
+     {
+      "token": "そんな",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1007130",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "こと",
+      "pos": "名詞",
+      "resolves_to": "vocab:1313580",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "言っ",
+      "pos": "動詞",
+      "resolves_to": "vocab:1587040",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "いけ",
+      "resolves_to": "vocab:1000730",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ない",
+      "resolves_to": "vocab:1000730",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1578790",
+   "tatoeba_id": "",
+   "jp": "駅行きのバスに乗ります",
+   "en": "I take the bus bound for the station.",
+   "pt": "Eu pego o ônibus que vai para a estação.",
+   "pt_literal": "Com destino à estação (行き sufixo de destino + の modificador), no ônibus (に destino do embarque) subo.",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: every Tatoeba row carrying 〜行き names a real city, and proper names are out. Built from les:n3-conectores-04's cumulative_known_set only (駅, バス, 乗る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conectores-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-4a0c3872a1fc",
+   "cks_proof": {
+    "lesson": "les:n3-conectores-04",
+    "cks_vocab_size": 1405,
+    "cks_kanji_size": 303,
+    "target_matched": [
+     "行き"
+    ],
+    "content_tokens": [
+     {
+      "token": "駅",
+      "pos": "名詞",
+      "resolves_to": "vocab:1175140",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "行き",
+      "resolves_to": "vocab:1578790",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "バス",
+      "pos": "名詞",
+      "resolves_to": "vocab:1098390",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "乗り",
+      "pos": "動詞",
+      "resolves_to": "vocab:1355120",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1155400",
+   "tatoeba_id": "",
+   "jp": "あの人は会社で高い位にいる",
+   "en": "That person holds a high rank at the company.",
+   "pt": "Aquela pessoa tem um cargo alto na empresa.",
+   "pt_literal": "Quanto àquela pessoa (は tópico), na empresa (で lugar), em posição alta (位 + に localização) está.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Re-check found 8 real rows, but every one uses 位 as くらい 'about/roughly' (どれ位, 同じ位), which is a different entry from this record's 'rank / grade / digit'. No row teaches the taught sense, so the target counts as zero-candidate. Built from les:n3-conectores-05's cumulative_known_set only (あの, 人, 会社, 高い, いる); 0 content tokens outside the set; 彼 avoided because its kanji is not taught yet; final 。 dropped.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-23be841a7d6e",
+   "cks_proof": {
+    "lesson": "les:n3-conectores-05",
+    "cks_vocab_size": 1426,
+    "cks_kanji_size": 305,
+    "target_matched": [
+     "位"
+    ],
+    "content_tokens": [
+     {
+      "token": "あの",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1000420",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "人",
+      "pos": "名詞",
+      "resolves_to": "vocab:1580640",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "会社",
+      "pos": "名詞",
+      "resolves_to": "vocab:1198550",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "高い",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1283190",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "位",
+      "resolves_to": "vocab:1155400",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "いる",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": [
+     "位"
+    ]
+   }
+  },
+  {
+   "target": "vocab:1245280",
+   "tatoeba_id": "",
+   "jp": "かばんの中は空だった",
+   "en": "The inside of the bag was empty.",
+   "pt": "A bolsa estava vazia por dentro.",
+   "pt_literal": "Quanto ao interior da bolsa (の modificador + は tópico), vazio (空) era.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: every pool hit for 空 read から is the particle から inside 今から / これから, never the noun. Built from les:n3-conectores-05's cumulative_known_set only (かばん, 中); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-7ac2a488ddab",
+   "cks_proof": {
+    "lesson": "les:n3-conectores-05",
+    "cks_vocab_size": 1426,
+    "cks_kanji_size": 305,
+    "target_matched": [
+     "空"
+    ],
+    "content_tokens": [
+     {
+      "token": "かばん",
+      "pos": "名詞",
+      "resolves_to": "vocab:1208910",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "中",
+      "pos": "名詞",
+      "resolves_to": "vocab:1457730",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "空",
+      "resolves_to": "vocab:1245280",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1308080",
+   "tatoeba_id": "",
+   "jp": "日曜日に市が立つ",
+   "en": "A market is held on Sunday.",
+   "pt": "Aos domingos tem feira.",
+   "pt_literal": "No domingo (に momento), a feira (市 + が sujeito) se levanta (立つ, verbo próprio de feira aberta).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: the only pool hit is the numeral いち inside いちど, not the noun 市. Built from les:n3-conectores-05's cumulative_known_set only (日曜日, 立つ); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-5eca9027d7b3",
+   "cks_proof": {
+    "lesson": "les:n3-conectores-05",
+    "cks_vocab_size": 1426,
+    "cks_kanji_size": 305,
+    "target_matched": [
+     "市"
+    ],
+    "content_tokens": [
+     {
+      "token": "日曜日",
+      "pos": "名詞",
+      "resolves_to": "vocab:1464900",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "市",
+      "resolves_to": "vocab:1308080",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "立つ",
+      "pos": "動詞",
+      "resolves_to": "vocab:1597040",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1352150",
+   "tatoeba_id": "",
+   "jp": "川の上から下まで歩いた",
+   "en": "I walked from the upper part of the river down to the lower part.",
+   "pt": "Andei da parte de cima do rio até a parte de baixo.",
+   "pt_literal": "Do curso superior do rio (の modificador + 上 + から ponto de partida) até o curso inferior (下 + まで limite), andei.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: every pool hit for 上 read かみ is a different word (紙, 髪, or the compound お父上). Built from les:n3-conectores-05's cumulative_known_set only (川, 下, 歩く); 0 content tokens outside the set; the pairing 上〜下 is what fixes the かみ/しも reading, and a reviewer should confirm the furigana; final 。 dropped.",
+   "lesson": "les:n3-conectores-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-70fc895a6281",
+   "cks_proof": {
+    "lesson": "les:n3-conectores-05",
+    "cks_vocab_size": 1426,
+    "cks_kanji_size": 305,
+    "target_matched": [
+     "上"
+    ],
+    "content_tokens": [
+     {
+      "token": "川",
+      "pos": "名詞",
+      "resolves_to": "vocab:1390020",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "上",
+      "resolves_to": "vocab:1352150",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "下",
+      "pos": "名詞",
+      "resolves_to": "vocab:1184140",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "歩い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1514320",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1582290",
+   "tatoeba_id": "",
+   "jp": "町の灯がきれいに見える",
+   "en": "The lights of the town look beautiful.",
+   "pt": "As luzes da cidade ficam lindas de ver.",
+   "pt_literal": "As luzes da cidade (の modificador + 灯 + が sujeito), de forma bonita (に modo adverbial), são vistas.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: both pool hits for 灯 read ひ are the kana ひ of おひさま / ひま, not the noun. Built from les:n3-conectores-07's cumulative_known_set only (町, きれい, 見える); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conectores-07",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-41f4c5632b0a",
+   "cks_proof": {
+    "lesson": "les:n3-conectores-07",
+    "cks_vocab_size": 1462,
+    "cks_kanji_size": 305,
+    "target_matched": [
+     "灯"
+    ],
+    "content_tokens": [
+     {
+      "token": "町",
+      "pos": "名詞",
+      "resolves_to": "vocab:1603990",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "灯",
+      "resolves_to": "vocab:1582290",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "きれい",
+      "pos": "形状詞",
+      "resolves_to": "vocab:1591900",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "見える",
+      "pos": "動詞",
+      "resolves_to": "vocab:1259140",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": [
+     "灯"
+    ]
+   }
+  },
+  {
+   "target": "vocab:1288940",
+   "tatoeba_id": "",
+   "jp": "今に分かるよ",
+   "en": "You'll understand before long.",
+   "pt": "Logo você vai entender.",
+   "pt_literal": "Em breve (今に), entende (よ ênfase informativa).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 今に never survives as a unit in the pool (Sudachi cuts 今 + に, and the row then fails the token test). Built from les:n3-tempo-01's cumulative_known_set only (分かる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-tempo-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-617ebc589017",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-01",
+    "cks_vocab_size": 1493,
+    "cks_kanji_size": 312,
+    "target_matched": [
+     "今に"
+    ],
+    "content_tokens": [
+     {
+      "token": "今",
+      "resolves_to": "vocab:1288940",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1288940",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "分かる",
+      "pos": "動詞",
+      "resolves_to": "vocab:1606560",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1288950",
+   "tatoeba_id": "",
+   "jp": "今にも電車が来る",
+   "en": "The train is about to arrive at any moment.",
+   "pt": "O trem está para chegar a qualquer momento.",
+   "pt_literal": "A qualquer instante (今にも), o trem (が sujeito) vem.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates for 今にも as a unit. Built from les:n3-tempo-01's cumulative_known_set only (電車, 来る); 0 content tokens outside the set; the usual 〜そうだ ending was dropped because そう is not in this lesson's known set; final 。 dropped.",
+   "lesson": "les:n3-tempo-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-3ab33f97e1b6",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-01",
+    "cks_vocab_size": 1493,
+    "cks_kanji_size": 312,
+    "target_matched": [
+     "今にも"
+    ],
+    "content_tokens": [
+     {
+      "token": "今",
+      "resolves_to": "vocab:1288950",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1288950",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1288950",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "電車",
+      "pos": "名詞",
+      "resolves_to": "vocab:1443530",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "来る",
+      "pos": "動詞",
+      "resolves_to": "vocab:1547720",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1609210",
+   "tatoeba_id": "",
+   "jp": "一度にたくさん食べないで",
+   "en": "Don't eat a lot all at once.",
+   "pt": "Não come tudo de uma vez só.",
+   "pt_literal": "De uma só vez (一度に), muito (たくさん) não coma (ないで pedido negativo brando).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates for 一度に as a unit. Built from les:n3-tempo-02's cumulative_known_set only (一度, たくさん, 食べる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-tempo-02",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-9ede389506d7",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-02",
+    "cks_vocab_size": 1506,
+    "cks_kanji_size": 318,
+    "target_matched": [
+     "一度に"
+    ],
+    "content_tokens": [
+     {
+      "token": "一度",
+      "resolves_to": "vocab:1609210",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1609210",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "たくさん",
+      "pos": "副詞",
+      "resolves_to": "vocab:1415870",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "食べ",
+      "pos": "動詞",
+      "resolves_to": "vocab:1358280",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1188880",
+   "tatoeba_id": "",
+   "jp": "いつまでも元気でいてね",
+   "en": "Stay well forever.",
+   "pt": "Se cuida sempre, viu?",
+   "pt_literal": "Para sempre (いつまでも), com saúde (元気 + で estado) continue (いて), tá (ね)?",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: いつまでも splits into いつ + まで + も, so no pool row passes the single-token test. Built from les:n3-tempo-04's cumulative_known_set only (元気, いる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-tempo-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-884d4ad8a039",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-04",
+    "cks_vocab_size": 1532,
+    "cks_kanji_size": 328,
+    "target_matched": [
+     "いつまでも"
+    ],
+    "content_tokens": [
+     {
+      "token": "いつ",
+      "resolves_to": "vocab:1188880",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "まで",
+      "resolves_to": "vocab:1188880",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1188880",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "元気",
+      "pos": "名詞",
+      "resolves_to": "vocab:1260720",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1410800",
+   "tatoeba_id": "",
+   "jp": "では、いただきます",
+   "en": "Well then, thank you for the meal.",
+   "pt": "Então tá, bom apetite.",
+   "pt_literal": "Sendo assim (では), recebo humildemente (いただきます, fórmula dita antes de comer).",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates for いただきます in the set formula sense inside the lesson's budget. Built from les:n3-tempo-04's cumulative_known_set only; 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-tempo-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-baf1ae13c6ee",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-04",
+    "cks_vocab_size": 1532,
+    "cks_kanji_size": 328,
+    "target_matched": [
+     "いただきます"
+    ],
+    "content_tokens": [
+     {
+      "token": "いただき",
+      "resolves_to": "vocab:1410800",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ます",
+      "resolves_to": "vocab:1410800",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1577130",
+   "tatoeba_id": "",
+   "jp": "いつでも来ていいよ",
+   "en": "You can come anytime.",
+   "pt": "Pode vir quando quiser.",
+   "pt_literal": "A qualquer hora (いつでも), vir e estar bem (ていい permissão), viu (よ)?",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: いつでも splits into いつ + でも. Built from les:n3-tempo-04's cumulative_known_set only (来る, いい); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-tempo-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-a2e6c06eccd6",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-04",
+    "cks_vocab_size": 1532,
+    "cks_kanji_size": 328,
+    "target_matched": [
+     "いつでも"
+    ],
+    "content_tokens": [
+     {
+      "token": "いつ",
+      "resolves_to": "vocab:1577130",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "で",
+      "resolves_to": "vocab:1577130",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1577130",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "来",
+      "pos": "動詞",
+      "resolves_to": "vocab:1547720",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "いい",
+      "pos": "形容詞",
+      "resolves_to": "vocab:2820690",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1355970",
+   "tatoeba_id": "",
+   "jp": "あの人は常に元気だ",
+   "en": "That person is always cheerful.",
+   "pt": "Aquela pessoa está sempre animada.",
+   "pt_literal": "Quanto àquela pessoa (は tópico), constantemente (常に), animada é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates for 常に inside the lesson's i+1 budget. Built from les:n3-tempo-06's cumulative_known_set only (あの, 人, 元気); 0 content tokens outside the set; 彼 avoided because its kanji is not taught yet; final 。 dropped.",
+   "lesson": "les:n3-tempo-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-10460328793b",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-06",
+    "cks_vocab_size": 1569,
+    "cks_kanji_size": 329,
+    "target_matched": [
+     "常に"
+    ],
+    "content_tokens": [
+     {
+      "token": "あの",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1000420",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "人",
+      "pos": "名詞",
+      "resolves_to": "vocab:1580640",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "常",
+      "resolves_to": "vocab:1355970",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1355970",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "元気",
+      "pos": "名詞",
+      "resolves_to": "vocab:1260720",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": [
+     "常"
+    ]
+   }
+  },
+  {
+   "target": "vocab:1207510",
+   "tatoeba_id": "",
+   "jp": "額に手を当ててみた",
+   "en": "I tried putting my hand on my forehead.",
+   "pt": "Eu experimentei pôr a mão na testa.",
+   "pt_literal": "Na testa (額 + に ponto de contato), a mão (を objeto direto) encostei e vi (てみる tentativa).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: every pool row with 額 either reads it がく ('amount of money') or blows the lesson's budget. Built from les:n3-tempo-07's cumulative_known_set only (手, 当てる, みる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-tempo-07",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-9954c1fa54ce",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-07",
+    "cks_vocab_size": 1588,
+    "cks_kanji_size": 329,
+    "target_matched": [
+     "額"
+    ],
+    "content_tokens": [
+     {
+      "token": "額",
+      "resolves_to": "vocab:1207510",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "手",
+      "pos": "名詞",
+      "resolves_to": "vocab:1327190",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "当て",
+      "pos": "動詞",
+      "resolves_to": "vocab:1448860",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "み",
+      "pos": "動詞",
+      "resolves_to": "vocab:1259290",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": [
+     "額"
+    ]
+   }
+  },
+  {
+   "target": "vocab:1546620",
+   "tatoeba_id": "",
+   "jp": "要するに、時間がないんだ",
+   "en": "In short, there is no time.",
+   "pt": "Resumindo, não tem tempo.",
+   "pt_literal": "Em suma (要するに), tempo (が sujeito) não existe (んだ explicação).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 要するに splits into 要する + に, and 要する resolves to a separate record. Built from les:n3-tempo-08's cumulative_known_set only (時間, ない); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-tempo-08",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-9301df2b9c43",
+   "cks_proof": {
+    "lesson": "les:n3-tempo-08",
+    "cks_vocab_size": 1606,
+    "cks_kanji_size": 329,
+    "target_matched": [
+     "要するに"
+    ],
+    "content_tokens": [
+     {
+      "token": "要する",
+      "resolves_to": "vocab:1546620",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1546620",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "時間",
+      "pos": "名詞",
+      "resolves_to": "vocab:1315920",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1348900",
+   "tatoeba_id": "",
+   "jp": "少しも寒くない",
+   "en": "It isn't cold in the least.",
+   "pt": "Não está nem um pouco frio.",
+   "pt_literal": "Nem um pouco (少しも, exige negação), frio não é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 少しも splits into 少し + も. Built from les:n3-perspectiva-04's cumulative_known_set only (少し, 寒い); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-perspectiva-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-f717dc24d27f",
+   "cks_proof": {
+    "lesson": "les:n3-perspectiva-04",
+    "cks_vocab_size": 1675,
+    "cks_kanji_size": 356,
+    "target_matched": [
+     "少しも"
+    ],
+    "content_tokens": [
+     {
+      "token": "少し",
+      "resolves_to": "vocab:1348900",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1348900",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "寒く",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1210360",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:2648780",
+   "tatoeba_id": "",
+   "jp": "この店には品が多い",
+   "en": "This shop has a lot of goods.",
+   "pt": "Essa loja tem muita mercadoria.",
+   "pt_literal": "Quanto a nesta loja (に lugar + は tópico), mercadoria (品 + が sujeito) é muita.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: every pool hit for 品 is the kana ひん of 一品 / 品物 compounds that fail the token test or blow the budget. Built from les:n3-perspectiva-06's cumulative_known_set only (この, 店, 多い); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-perspectiva-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-19fab9f90ef5",
+   "cks_proof": {
+    "lesson": "les:n3-perspectiva-06",
+    "cks_vocab_size": 1711,
+    "cks_kanji_size": 356,
+    "target_matched": [
+     "品"
+    ],
+    "content_tokens": [
+     {
+      "token": "この",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1578150",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "店",
+      "pos": "名詞",
+      "resolves_to": "vocab:1582120",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "品",
+      "resolves_to": "vocab:2648780",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "多い",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1407460",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1547710",
+   "tatoeba_id": "",
+   "jp": "来年の春に国へ帰る",
+   "en": "I am going back to my country next spring.",
+   "pt": "Na primavera que vem eu volto para o meu país.",
+   "pt_literal": "Da primavera do ano que vem (来 prefixo 'que vem' + の modificador + に momento), para o país (へ direção) volto.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: the prefix 来 only ever appears glued into 来年/来週/来月, so it never stands as its own token in the pool. The row shows the prefix inside 来年, which is how the learner will meet it. Built from les:n3-perspectiva-07's cumulative_known_set only (来年, 春, 国, 帰る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-perspectiva-07",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-96ac488a6dc9",
+   "cks_proof": {
+    "lesson": "les:n3-perspectiva-07",
+    "cks_vocab_size": 1729,
+    "cks_kanji_size": 356,
+    "target_matched": [
+     "来"
+    ],
+    "content_tokens": [
+     {
+      "token": "来年",
+      "resolves_to": "vocab:1547710",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "春",
+      "pos": "名詞",
+      "resolves_to": "vocab:1341000",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "国",
+      "pos": "名詞",
+      "resolves_to": "vocab:1592250",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "帰る",
+      "pos": "動詞",
+      "resolves_to": "vocab:1221270",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1420020",
+   "tatoeba_id": "",
+   "jp": "あの男の人は先生です",
+   "en": "That man is a teacher.",
+   "pt": "Aquele homem é professor.",
+   "pt_literal": "Quanto àquele homem (男の人 + は tópico), professor é.",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 男の人 always splits into 男 + の + 人, the exact failure the W13 verifiers rejected 170 rows for. Built from les:n3-causa-01's cumulative_known_set only (あの, 男, 人, 先生); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-causa-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-2e89ebd0b9b2",
+   "cks_proof": {
+    "lesson": "les:n3-causa-01",
+    "cks_vocab_size": 1743,
+    "cks_kanji_size": 361,
+    "target_matched": [
+     "男の人"
+    ],
+    "content_tokens": [
+     {
+      "token": "あの",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1000420",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "男",
+      "resolves_to": "vocab:1420020",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "の",
+      "resolves_to": "vocab:1420020",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "人",
+      "resolves_to": "vocab:1420020",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "先生",
+      "pos": "名詞",
+      "resolves_to": "vocab:1387990",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1309460",
+   "tatoeba_id": "",
+   "jp": "思わず大きな声が出た",
+   "en": "A loud voice came out of me without my meaning it.",
+   "pt": "Sem querer, saiu um grito.",
+   "pt_literal": "Involuntariamente (思わず), voz alta (が sujeito) saiu.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates for 思わず inside the lesson's budget. Built from les:n3-causa-02's cumulative_known_set only (大きな, 声, 出る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-causa-02",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-8319a8e44d21",
+   "cks_proof": {
+    "lesson": "les:n3-causa-02",
+    "cks_vocab_size": 1757,
+    "cks_kanji_size": 368,
+    "target_matched": [
+     "思わず"
+    ],
+    "content_tokens": [
+     {
+      "token": "思わ",
+      "resolves_to": "vocab:1309460",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ず",
+      "resolves_to": "vocab:1309460",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "大きな",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1412890",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "声",
+      "pos": "名詞",
+      "resolves_to": "vocab:1380440",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "出",
+      "pos": "動詞",
+      "resolves_to": "vocab:1338240",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1008430",
+   "tatoeba_id": "",
+   "jp": "ですから、早く行きましょう",
+   "en": "So let's go early.",
+   "pt": "Por isso, vamos logo.",
+   "pt_literal": "Por essa razão (ですから), cedo (早く) vamos (ましょう convite).",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: ですから splits into です + から, so it never matches as a conjunction token. Built from les:n3-causa-06's cumulative_known_set only (早い, 行く); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-causa-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-f09bb0145e33",
+   "cks_proof": {
+    "lesson": "les:n3-causa-06",
+    "cks_vocab_size": 1819,
+    "cks_kanji_size": 382,
+    "target_matched": [
+     "ですから"
+    ],
+    "content_tokens": [
+     {
+      "token": "です",
+      "resolves_to": "vocab:1008430",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "から",
+      "resolves_to": "vocab:1008430",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "早く",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1404975",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "行き",
+      "pos": "動詞",
+      "resolves_to": "vocab:1578850",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1487410",
+   "tatoeba_id": "",
+   "jp": "高い物が必ずしもいいものではない",
+   "en": "An expensive thing is not necessarily a good one.",
+   "pt": "Coisa cara não é necessariamente coisa boa.",
+   "pt_literal": "Coisa cara (が sujeito), não obrigatoriamente (必ずしも, exige negação), coisa boa não é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 必ずしも splits into 必ず + しも. Built from les:n3-estado-04's cumulative_known_set only (高い, 物, いい, もの); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-estado-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-04dd143aa595",
+   "cks_proof": {
+    "lesson": "les:n3-estado-04",
+    "cks_vocab_size": 1905,
+    "cks_kanji_size": 407,
+    "target_matched": [
+     "必ずしも"
+    ],
+    "content_tokens": [
+     {
+      "token": "高い",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1283190",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "物",
+      "pos": "名詞",
+      "resolves_to": "vocab:1502390",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "必ず",
+      "resolves_to": "vocab:1487410",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "しも",
+      "resolves_to": "vocab:1487410",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "いい",
+      "pos": "形容詞",
+      "resolves_to": "vocab:2820690",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "もの",
+      "pos": "名詞",
+      "resolves_to": "vocab:1502390",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1466950",
+   "tatoeba_id": "",
+   "jp": "どうしても行きたいんです",
+   "en": "I want to go no matter what.",
+   "pt": "Eu quero ir de qualquer jeito.",
+   "pt_literal": "Custe o que custar (どうしても), ir quero (んです explicação polida).",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: どうしても splits into どう + し + て + も. Built from les:n3-estado-06's cumulative_known_set only (行く); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-estado-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-d3b1807100a5",
+   "cks_proof": {
+    "lesson": "les:n3-estado-06",
+    "cks_vocab_size": 1941,
+    "cks_kanji_size": 409,
+    "target_matched": [
+     "どうしても"
+    ],
+    "content_tokens": [
+     {
+      "token": "どう",
+      "resolves_to": "vocab:1466950",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "し",
+      "resolves_to": "vocab:1466950",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "て",
+      "resolves_to": "vocab:1466950",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1466950",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "行き",
+      "pos": "動詞",
+      "resolves_to": "vocab:1578850",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1002970",
+   "tatoeba_id": "",
+   "jp": "明日は雨かもしれない",
+   "en": "It might rain tomorrow.",
+   "pt": "Amanhã pode ser que chova.",
+   "pt_literal": "Quanto a amanhã (は tópico), chuva talvez (かもしれない conjectura).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: かもしれない splits into か + も + しれ + ない, so the expression record never matches a single token. Built from les:n3-intencao-01's cumulative_known_set only (明日, 雨); 0 content tokens outside the set; 降る dropped because the kanji 降 is not taught yet; final 。 dropped.",
+   "lesson": "les:n3-intencao-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-c0358ac90d32",
+   "cks_proof": {
+    "lesson": "les:n3-intencao-01",
+    "cks_vocab_size": 1991,
+    "cks_kanji_size": 415,
+    "target_matched": [
+     "かもしれない"
+    ],
+    "content_tokens": [
+     {
+      "token": "明日",
+      "pos": "名詞",
+      "resolves_to": "vocab:1584660",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "雨",
+      "pos": "名詞",
+      "resolves_to": "vocab:1171900",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "か",
+      "resolves_to": "vocab:1002970",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1002970",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "しれ",
+      "resolves_to": "vocab:1002970",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ない",
+      "resolves_to": "vocab:1002970",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1008570",
+   "tatoeba_id": "",
+   "jp": "ところが、だれもいなかった",
+   "en": "However, nobody was there.",
+   "pt": "Só que não tinha ninguém.",
+   "pt_literal": "No entanto (ところが), ninguém (だれ + も com negação) não estava.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: ところが splits into ところ + が. Built from les:n3-intencao-06's cumulative_known_set only (だれ, いる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-intencao-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-48a579e56f54",
+   "cks_proof": {
+    "lesson": "les:n3-intencao-06",
+    "cks_vocab_size": 2066,
+    "cks_kanji_size": 435,
+    "target_matched": [
+     "ところが"
+    ],
+    "content_tokens": [
+     {
+      "token": "ところ",
+      "resolves_to": "vocab:1008570",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "が",
+      "resolves_to": "vocab:1008570",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "だれ",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1416830",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1189000",
+   "tatoeba_id": "",
+   "jp": "どこかで会いましたか",
+   "en": "Have we met somewhere?",
+   "pt": "A gente já se viu em algum lugar?",
+   "pt_literal": "Em algum lugar (どこか + で lugar da ação), encontramos?",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: どこか splits into どこ + か. Built from les:n3-intencao-06's cumulative_known_set only (会う); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-intencao-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-e7e5464992a3",
+   "cks_proof": {
+    "lesson": "les:n3-intencao-06",
+    "cks_vocab_size": 2066,
+    "cks_kanji_size": 435,
+    "target_matched": [
+     "どこか"
+    ],
+    "content_tokens": [
+     {
+      "token": "どこ",
+      "resolves_to": "vocab:1189000",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "か",
+      "resolves_to": "vocab:1189000",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "会い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1198180",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1343110",
+   "tatoeba_id": "",
+   "jp": "ところで、仕事はどうですか",
+   "en": "By the way, how is work?",
+   "pt": "A propósito, como vai o trabalho?",
+   "pt_literal": "Mudando de assunto (ところで), quanto ao trabalho (は tópico), como está?",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: ところで splits into ところ + で. Built from les:n3-intencao-06's cumulative_known_set only (仕事, どう); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-intencao-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-03ac75285d31",
+   "cks_proof": {
+    "lesson": "les:n3-intencao-06",
+    "cks_vocab_size": 2066,
+    "cks_kanji_size": 435,
+    "target_matched": [
+     "ところで"
+    ],
+    "content_tokens": [
+     {
+      "token": "ところ",
+      "resolves_to": "vocab:1343110",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "で",
+      "resolves_to": "vocab:1343110",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "仕事",
+      "pos": "名詞",
+      "resolves_to": "vocab:1304970",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "どう",
+      "pos": "副詞",
+      "resolves_to": "vocab:1451160",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1221740",
+   "tatoeba_id": "",
+   "jp": "この服が気に入りました",
+   "en": "I took a liking to these clothes.",
+   "pt": "Eu gostei dessa roupa.",
+   "pt_literal": "Esta roupa (が sujeito), entrou no gosto (気に入る, literalmente 'entrar no ânimo').",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 気に入る splits into 気 + に + 入る, so the expression record never matches a single token. Built from les:n3-deveres-01's cumulative_known_set only (この, 服, 気, 入る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-deveres-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-89e4943d32e5",
+   "cks_proof": {
+    "lesson": "les:n3-deveres-01",
+    "cks_vocab_size": 2102,
+    "cks_kanji_size": 439,
+    "target_matched": [
+     "気に入 (stem of 気に入る)"
+    ],
+    "content_tokens": [
+     {
+      "token": "この",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1578150",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "服",
+      "pos": "名詞",
+      "resolves_to": "vocab:1500940",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "気",
+      "resolves_to": "vocab:1221740",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1221740",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "入り",
+      "resolves_to": "vocab:1221740",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:2269050",
+   "tatoeba_id": "",
+   "jp": "急に人が多くなった",
+   "en": "Suddenly there were a lot of people.",
+   "pt": "De repente ficou cheio de gente.",
+   "pt_literal": "De repente (急に), gente (が sujeito) ficou muita.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 急に splits into 急 + に. Built from les:n3-deveres-02's cumulative_known_set only (人, 多い, なる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-deveres-02",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-bd141e644fc0",
+   "cks_proof": {
+    "lesson": "les:n3-deveres-02",
+    "cks_vocab_size": 2120,
+    "cks_kanji_size": 446,
+    "target_matched": [
+     "急に"
+    ],
+    "content_tokens": [
+     {
+      "token": "急",
+      "resolves_to": "vocab:2269050",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:2269050",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "人",
+      "pos": "名詞",
+      "resolves_to": "vocab:1580640",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "多く",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1407460",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "なっ",
+      "pos": "動詞",
+      "resolves_to": "vocab:1611000",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1234260",
+   "tatoeba_id": "",
+   "jp": "みんなと共に働きたい",
+   "en": "I want to work together with everyone.",
+   "pt": "Eu quero trabalhar junto com todo mundo.",
+   "pt_literal": "Com todos (と companhia + 共に junto), trabalhar quero.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 共に splits into 共 + に, and 共 alone resolves to a separate record. Built from les:n3-deveres-05's cumulative_known_set only (みんな, 働く); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-deveres-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-03c27c103a89",
+   "cks_proof": {
+    "lesson": "les:n3-deveres-05",
+    "cks_vocab_size": 2174,
+    "cks_kanji_size": 458,
+    "target_matched": [
+     "共に"
+    ],
+    "content_tokens": [
+     {
+      "token": "みんな",
+      "pos": "名詞",
+      "resolves_to": "vocab:1202150",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "共",
+      "resolves_to": "vocab:1234260",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1234260",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "働き",
+      "pos": "動詞",
+      "resolves_to": "vocab:1451150",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1509480",
+   "tatoeba_id": "",
+   "jp": "別に、何でもないよ",
+   "en": "Not really, it's nothing.",
+   "pt": "Nada de mais, não é nada não.",
+   "pt_literal": "Nada em especial (別に), coisa alguma não é (よ ênfase).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 別に splits into 別 + に. Built from les:n3-deveres-06's cumulative_known_set only (何, ない); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-deveres-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-ead76a768ab4",
+   "cks_proof": {
+    "lesson": "les:n3-deveres-06",
+    "cks_vocab_size": 2192,
+    "cks_kanji_size": 458,
+    "target_matched": [
+     "別に"
+    ],
+    "content_tokens": [
+     {
+      "token": "別",
+      "resolves_to": "vocab:1509480",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1509480",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "何",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1577100",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1252050",
+   "tatoeba_id": "",
+   "jp": "計五人が来ました",
+   "en": "A total of five people came.",
+   "pt": "Vieram cinco pessoas no total.",
+   "pt_literal": "No total (計 prefixo somatório) cinco pessoas (が sujeito) vieram.",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 計 only appears in the pool glued into 合計/時計 compounds. Built from les:n3-desejos-02's cumulative_known_set only (来る) plus a numeral; 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-02",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-48bb745b5c84",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-02",
+    "cks_vocab_size": 2227,
+    "cks_kanji_size": 466,
+    "target_matched": [
+     "計"
+    ],
+    "content_tokens": [
+     {
+      "token": "計",
+      "resolves_to": "vocab:1252050",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "来",
+      "pos": "動詞",
+      "resolves_to": "vocab:1547720",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1006930",
+   "tatoeba_id": "",
+   "jp": "そのうち分かるよ",
+   "en": "You'll find out before long.",
+   "pt": "Uma hora você descobre.",
+   "pt_literal": "Dentro em breve (そのうち), entende (よ ênfase informativa).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: そのうち splits into その + うち, and その alone resolves to a separate record outside the lesson's set. Built from les:n3-desejos-05's cumulative_known_set only (分かる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-ac706d716c7e",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-05",
+    "cks_vocab_size": 2258,
+    "cks_kanji_size": 485,
+    "target_matched": [
+     "そのうち"
+    ],
+    "content_tokens": [
+     {
+      "token": "その",
+      "resolves_to": "vocab:1006930",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "うち",
+      "resolves_to": "vocab:1006930",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "分かる",
+      "pos": "動詞",
+      "resolves_to": "vocab:1606560",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1007010",
+   "tatoeba_id": "",
+   "jp": "行く？それとも行かない？",
+   "en": "Are you going? Or not?",
+   "pt": "Você vai? Ou não vai?",
+   "pt_literal": "Vai? Ou então (それとも, oferece a alternativa), não vai?",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: それとも splits into それ + と + も, exactly the prefix collision that made W13 reject the それと rows. Built from les:n3-desejos-05's cumulative_known_set only (行く); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-85971f5e6f20",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-05",
+    "cks_vocab_size": 2258,
+    "cks_kanji_size": 485,
+    "target_matched": [
+     "それとも"
+    ],
+    "content_tokens": [
+     {
+      "token": "行く",
+      "pos": "動詞",
+      "resolves_to": "vocab:1578850",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "それ",
+      "resolves_to": "vocab:1007010",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "と",
+      "resolves_to": "vocab:1007010",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1007010",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "行か",
+      "pos": "動詞",
+      "resolves_to": "vocab:1578850",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1406060",
+   "tatoeba_id": "",
+   "jp": "それでも私は行きたい",
+   "en": "Even so, I want to go.",
+   "pt": "Mesmo assim eu quero ir.",
+   "pt_literal": "Ainda assim (それでも), quanto a mim (は tópico), ir quero.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: それでも splits into それ + で + も. Built from les:n3-desejos-05's cumulative_known_set only (私, 行く); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-13457c0fbd4c",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-05",
+    "cks_vocab_size": 2258,
+    "cks_kanji_size": 485,
+    "target_matched": [
+     "それでも"
+    ],
+    "content_tokens": [
+     {
+      "token": "それ",
+      "resolves_to": "vocab:1406060",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "で",
+      "resolves_to": "vocab:1406060",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1406060",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "私",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1311110",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "行き",
+      "pos": "動詞",
+      "resolves_to": "vocab:1578850",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1406090",
+   "tatoeba_id": "",
+   "jp": "そこで、私は考えを変えた",
+   "en": "So I changed my mind.",
+   "pt": "Foi aí que eu mudei de ideia.",
+   "pt_literal": "Diante disso (そこで), quanto a mim (は tópico), a ideia (を objeto direto) mudei.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: そこで splits into そこ + で, and the lexical そこ ('there') swallows every pool hit. Built from les:n3-desejos-05's cumulative_known_set only (私, 考え, 変える); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-5d87befce029",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-05",
+    "cks_vocab_size": 2258,
+    "cks_kanji_size": 485,
+    "target_matched": [
+     "そこで"
+    ],
+    "content_tokens": [
+     {
+      "token": "そこ",
+      "resolves_to": "vocab:1406090",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "で",
+      "resolves_to": "vocab:1406090",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "私",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1311110",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "考え",
+      "pos": "名詞",
+      "resolves_to": "vocab:1281000",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "変え",
+      "pos": "動詞",
+      "resolves_to": "vocab:1510650",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1008790",
+   "tatoeba_id": "",
+   "jp": "とんでもない、私は何もしていません",
+   "en": "Not at all, I haven't done anything.",
+   "pt": "Imagina, eu não fiz nada.",
+   "pt_literal": "De jeito nenhum (とんでもない, aqui como resposta), quanto a mim (は tópico), nada (何も) não estou fazendo.",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: とんでもない splits into とんでも + ない and とんでも resolves to nothing. Built from les:n3-desejos-06's cumulative_known_set only (私, 何, する); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-3cffd9cadbe7",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-06",
+    "cks_vocab_size": 2276,
+    "cks_kanji_size": 485,
+    "target_matched": [
+     "とんでもない"
+    ],
+    "content_tokens": [
+     {
+      "token": "とんでも",
+      "resolves_to": "vocab:1008790",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ない",
+      "resolves_to": "vocab:1008790",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "私",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1311110",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "何",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1577100",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "し",
+      "pos": "動詞",
+      "resolves_to": "vocab:1298670",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1009340",
+   "tatoeba_id": "",
+   "jp": "どんなに待っても来なかった",
+   "en": "No matter how long I waited, he never came.",
+   "pt": "Por mais que eu esperasse, não veio.",
+   "pt_literal": "Por mais que (どんなに), esperar mesmo assim (ても concessão), não veio.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: どんなに splits into どんな + に. Built from les:n3-desejos-06's cumulative_known_set only (待つ, 来る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-40417a6920af",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-06",
+    "cks_vocab_size": 2276,
+    "cks_kanji_size": 485,
+    "target_matched": [
+     "どんなに"
+    ],
+    "content_tokens": [
+     {
+      "token": "どんな",
+      "resolves_to": "vocab:1009340",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1009340",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "待っ",
+      "pos": "動詞",
+      "resolves_to": "vocab:1410590",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "来",
+      "pos": "動詞",
+      "resolves_to": "vocab:1547720",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1584105",
+   "tatoeba_id": "",
+   "jp": "方々に花がさいている",
+   "en": "Flowers are blooming here and there.",
+   "pt": "Tem flor desabrochando por toda parte.",
+   "pt_literal": "Em vários lugares (方々 + に localização), flores (が sujeito) estão florescendo.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates for 方々 read ほうぼう inside the lesson's budget. Built from les:n3-desejos-07's cumulative_known_set only (花, さく); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-desejos-07",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-dab1d936d62f",
+   "cks_proof": {
+    "lesson": "les:n3-desejos-07",
+    "cks_vocab_size": 2294,
+    "cks_kanji_size": 485,
+    "target_matched": [
+     "方々"
+    ],
+    "content_tokens": [
+     {
+      "token": "方々",
+      "resolves_to": "vocab:1584105",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "花",
+      "pos": "名詞",
+      "resolves_to": "vocab:1194500",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "さい",
+      "pos": "動詞",
+      "resolves_to": "vocab:1297210",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "いる",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "gram:n3-donna-ni-koto-ka",
+   "tatoeba_id": "",
+   "jp": "どんなに会いたかったことか",
+   "en": "How much I wanted to see you!",
+   "pt": "Como eu queria te ver!",
+   "pt_literal": "O quanto (どんなに), queria encontrar, que coisa (ことか fecha a exclamação).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: the pattern needs どんなに and ことか in the same clause, and no pool row pairs them inside the lesson's i+1 budget. Built from les:n3-limites-04's cumulative_known_set only (会う, こと); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-limites-04",
+   "kind": "grammar",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-7f7950a6349b",
+   "cks_proof": {
+    "lesson": "les:n3-limites-04",
+    "cks_vocab_size": 2348,
+    "cks_kanji_size": 511,
+    "target_matched": [
+     "どんなに～ことか"
+    ],
+    "content_tokens": [
+     {
+      "token": "どんな",
+      "resolves_to": "gram:n3-donna-ni-koto-ka",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "gram:n3-donna-ni-koto-ka",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "会い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1198180",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "こと",
+      "resolves_to": "gram:n3-donna-ni-koto-ka",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "か",
+      "resolves_to": "gram:n3-donna-ni-koto-ka",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1009410",
+   "tatoeba_id": "",
+   "jp": "なぜなら、時間がないからだ",
+   "en": "That's because there is no time.",
+   "pt": "Isso porque não tem tempo.",
+   "pt_literal": "Isso porque (なぜなら, abre a razão), tempo (が sujeito) não existe, é por isso (からだ fecha a razão).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: なぜなら splits into なぜ + なら. Built from les:n3-limites-06's cumulative_known_set only (時間, ない); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-limites-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-6238f7249749",
+   "cks_proof": {
+    "lesson": "les:n3-limites-06",
+    "cks_vocab_size": 2384,
+    "cks_kanji_size": 513,
+    "target_matched": [
+     "なぜなら"
+    ],
+    "content_tokens": [
+     {
+      "token": "なぜ",
+      "resolves_to": "vocab:1009410",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "なら",
+      "resolves_to": "vocab:1009410",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "時間",
+      "pos": "名詞",
+      "resolves_to": "vocab:1315920",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1188270",
+   "tatoeba_id": "",
+   "jp": "何か飲み物はありますか",
+   "en": "Is there something to drink?",
+   "pt": "Tem alguma coisa para beber?",
+   "pt_literal": "Alguma coisa (何か), quanto a bebida (は tópico), existe?",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 何か splits into 何 + か, and the pool hits on the kana なんか (a different particle). Built from les:n3-limites-06's cumulative_known_set only (飲み物, ある); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-limites-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-de2b7516143c",
+   "cks_proof": {
+    "lesson": "les:n3-limites-06",
+    "cks_vocab_size": 2384,
+    "cks_kanji_size": 513,
+    "target_matched": [
+     "何か"
+    ],
+    "content_tokens": [
+     {
+      "token": "何",
+      "resolves_to": "vocab:1188270",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "か",
+      "resolves_to": "vocab:1188270",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "飲み物",
+      "pos": "名詞",
+      "resolves_to": "vocab:1600430",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "あり",
+      "pos": "動詞",
+      "resolves_to": "vocab:1296400",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1188420",
+   "tatoeba_id": "",
+   "jp": "何とか間に合いました",
+   "en": "I made it in time somehow.",
+   "pt": "Deu para chegar a tempo, de algum jeito.",
+   "pt_literal": "De um jeito ou de outro (何とか), consegui chegar na hora (間に合う).",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 何とか splits into 何 + と + か. Built from les:n3-limites-06's cumulative_known_set only (間に合う); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-limites-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-c1dc4ac04cc7",
+   "cks_proof": {
+    "lesson": "les:n3-limites-06",
+    "cks_vocab_size": 2384,
+    "cks_kanji_size": 513,
+    "target_matched": [
+     "何とか"
+    ],
+    "content_tokens": [
+     {
+      "token": "何",
+      "resolves_to": "vocab:1188420",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "と",
+      "resolves_to": "vocab:1188420",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "か",
+      "resolves_to": "vocab:1188420",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "間に合い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1215260",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1188490",
+   "tatoeba_id": "",
+   "jp": "今日は何もしたくない",
+   "en": "I don't want to do anything today.",
+   "pt": "Hoje eu não quero fazer nada.",
+   "pt_literal": "Quanto a hoje (は tópico), nada (何も, exige negação) não quero fazer.",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 何も splits into 何 + も. Built from les:n3-limites-06's cumulative_known_set only (今日, する); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-limites-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-f2aa06143ce7",
+   "cks_proof": {
+    "lesson": "les:n3-limites-06",
+    "cks_vocab_size": 2384,
+    "cks_kanji_size": 513,
+    "target_matched": [
+     "何も"
+    ],
+    "content_tokens": [
+     {
+      "token": "今日",
+      "pos": "名詞",
+      "resolves_to": "vocab:1579110",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "何",
+      "resolves_to": "vocab:1188490",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1188490",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "し",
+      "pos": "動詞",
+      "resolves_to": "vocab:1298670",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1611020",
+   "tatoeba_id": "",
+   "jp": "なんで来なかったの？",
+   "en": "Why didn't you come?",
+   "pt": "Por que você não veio?",
+   "pt_literal": "Por qual motivo (なんで), não veio (の pede explicação)?",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: なんで splits into なん + で. Built from les:n3-limites-06's cumulative_known_set only (来る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-limites-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-3b2fee497b46",
+   "cks_proof": {
+    "lesson": "les:n3-limites-06",
+    "cks_vocab_size": 2384,
+    "cks_kanji_size": 513,
+    "target_matched": [
+     "なんで"
+    ],
+    "content_tokens": [
+     {
+      "token": "なん",
+      "resolves_to": "vocab:1611020",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "で",
+      "resolves_to": "vocab:1611020",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "来",
+      "pos": "動詞",
+      "resolves_to": "vocab:1547720",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1611030",
+   "tatoeba_id": "",
+   "jp": "なんでも好きな物を選んで",
+   "en": "Choose whatever you like.",
+   "pt": "Escolhe o que você quiser.",
+   "pt_literal": "Seja o que for (なんでも), a coisa de que gosta (を objeto direto), escolha (て pedido informal).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: なんでも splits into なん + で + も. Built from les:n3-limites-06's cumulative_known_set only (好き, 物, 選ぶ); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-limites-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-4dc48e6d9e51",
+   "cks_proof": {
+    "lesson": "les:n3-limites-06",
+    "cks_vocab_size": 2384,
+    "cks_kanji_size": 513,
+    "target_matched": [
+     "なんでも"
+    ],
+    "content_tokens": [
+     {
+      "token": "なん",
+      "resolves_to": "vocab:1611030",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "で",
+      "resolves_to": "vocab:1611030",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1611030",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "好き",
+      "pos": "形状詞",
+      "resolves_to": "vocab:1277450",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "物",
+      "pos": "名詞",
+      "resolves_to": "vocab:1502390",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "選ん",
+      "pos": "動詞",
+      "resolves_to": "vocab:1588730",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1004830",
+   "tatoeba_id": "",
+   "jp": "これらの本は全部読んだ",
+   "en": "I read all of these books.",
+   "pt": "Eu li todos esses livros.",
+   "pt_literal": "Quanto a estes livros (これら plural + の modificador + は tópico), tudo (全部) li.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: これら splits into これ + ら (a suffix), so it never matches as one token. Built from les:n3-enfase-04's cumulative_known_set only (本, 全部, 読む); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-enfase-04",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-39bf31d9bb7a",
+   "cks_proof": {
+    "lesson": "les:n3-enfase-04",
+    "cks_vocab_size": 2457,
+    "cks_kanji_size": 536,
+    "target_matched": [
+     "これら"
+    ],
+    "content_tokens": [
+     {
+      "token": "これ",
+      "resolves_to": "vocab:1004830",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ら",
+      "resolves_to": "vocab:1004830",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "本",
+      "pos": "名詞",
+      "resolves_to": "vocab:1522150",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "全部",
+      "pos": "名詞",
+      "resolves_to": "vocab:1396130",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "読ん",
+      "pos": "動詞",
+      "resolves_to": "vocab:1456360",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:2055530",
+   "tatoeba_id": "",
+   "jp": "だが、それは本当ではない",
+   "en": "But that is not true.",
+   "pt": "Mas isso não é verdade.",
+   "pt_literal": "Porém (だが), quanto a isso (は tópico), verdade não é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: だが splits into だ + が, which are an auxiliary and a particle, never a conjunction token. Built from les:n3-enfase-05's cumulative_known_set only (それ, 本当); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-enfase-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-36d7b3015417",
+   "cks_proof": {
+    "lesson": "les:n3-enfase-05",
+    "cks_vocab_size": 2475,
+    "cks_kanji_size": 537,
+    "target_matched": [
+     "だが"
+    ],
+    "content_tokens": [
+     {
+      "token": "だ",
+      "resolves_to": "vocab:2055530",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "が",
+      "resolves_to": "vocab:2055530",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "それ",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1006970",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "本当",
+      "pos": "名詞",
+      "resolves_to": "vocab:1523060",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1004890",
+   "tatoeba_id": "",
+   "jp": "こんなに寒い日は初めてだ",
+   "en": "This is the first time it's been this cold.",
+   "pt": "É a primeira vez que faz um frio desses.",
+   "pt_literal": "Quanto a dia frio assim (こんなに + は tópico), primeira vez é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: こんなに splits into こんな + に. Built from les:n3-concessao-01's cumulative_known_set only (寒い, 日, 初めて); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-concessao-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-c1531213a6b7",
+   "cks_proof": {
+    "lesson": "les:n3-concessao-01",
+    "cks_vocab_size": 2524,
+    "cks_kanji_size": 543,
+    "target_matched": [
+     "こんなに"
+    ],
+    "content_tokens": [
+     {
+      "token": "こんな",
+      "resolves_to": "vocab:1004890",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1004890",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "寒い",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1210360",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "日",
+      "pos": "名詞",
+      "resolves_to": "vocab:1463770",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "初めて",
+      "pos": "副詞",
+      "resolves_to": "vocab:1342550",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1005390",
+   "tatoeba_id": "",
+   "jp": "ざっと百人ぐらい来た",
+   "en": "Roughly a hundred people came.",
+   "pt": "Veio gente por alto, uns cem.",
+   "pt_literal": "Por alto (ざっと), cerca de cem pessoas (ぐらい aproximação) vieram.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: ざっと splits into ざっ + と. Built from les:n3-concessao-03's cumulative_known_set only (来る) plus a numeral; 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-concessao-03",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-288ed13a45d3",
+   "cks_proof": {
+    "lesson": "les:n3-concessao-03",
+    "cks_vocab_size": 2550,
+    "cks_kanji_size": 555,
+    "target_matched": [
+     "ざっと"
+    ],
+    "content_tokens": [
+     {
+      "token": "ざっ",
+      "resolves_to": "vocab:1005390",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "と",
+      "resolves_to": "vocab:1005390",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "来",
+      "pos": "動詞",
+      "resolves_to": "vocab:1547720",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1007370",
+   "tatoeba_id": "",
+   "jp": "だけど、まだ間に合うよ",
+   "en": "But there's still time.",
+   "pt": "Mas ainda dá tempo.",
+   "pt_literal": "Só que (だけど), ainda (まだ) dá para chegar na hora (よ ênfase).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: だけど splits into だ + けど. Built from les:n3-concessao-05's cumulative_known_set only (まだ, 間に合う); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-concessao-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-178322709097",
+   "cks_proof": {
+    "lesson": "les:n3-concessao-05",
+    "cks_vocab_size": 2582,
+    "cks_kanji_size": 564,
+    "target_matched": [
+     "だけど"
+    ],
+    "content_tokens": [
+     {
+      "token": "だ",
+      "resolves_to": "vocab:1007370",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "けど",
+      "resolves_to": "vocab:1007370",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "まだ",
+      "pos": "副詞",
+      "resolves_to": "vocab:1527110",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "間に合う",
+      "pos": "動詞",
+      "resolves_to": "vocab:1215260",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:2643970",
+   "tatoeba_id": "",
+   "jp": "だって、お金がないんだ",
+   "en": "But I don't have any money.",
+   "pt": "É que eu não tenho dinheiro.",
+   "pt_literal": "É que (だって, justifica-se), dinheiro (が sujeito) não existe (んだ explicação).",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: だって splits into だ + って. Built from les:n3-concessao-05's cumulative_known_set only (お金, ない); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-concessao-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-189e00550476",
+   "cks_proof": {
+    "lesson": "les:n3-concessao-05",
+    "cks_vocab_size": 2582,
+    "cks_kanji_size": 564,
+    "target_matched": [
+     "だって"
+    ],
+    "content_tokens": [
+     {
+      "token": "だ",
+      "resolves_to": "vocab:2643970",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "って",
+      "resolves_to": "vocab:2643970",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "お金",
+      "pos": "名詞",
+      "resolves_to": "vocab:1001820",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1320810",
+   "tatoeba_id": "",
+   "jp": "この木は秋に実をつける",
+   "en": "This tree bears fruit in autumn.",
+   "pt": "Essa árvore dá fruto no outono.",
+   "pt_literal": "Quanto a esta árvore (は tópico), no outono (に momento), fruto (実 + を objeto direto) põe.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: every pool hit for 実 read み is the kana み of 見る/〜てみる. Built from les:n3-concessao-07's cumulative_known_set only (この, 木, 秋, つける); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-concessao-07",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-241636dce7a0",
+   "cks_proof": {
+    "lesson": "les:n3-concessao-07",
+    "cks_vocab_size": 2618,
+    "cks_kanji_size": 564,
+    "target_matched": [
+     "実"
+    ],
+    "content_tokens": [
+     {
+      "token": "この",
+      "pos": "連体詞",
+      "resolves_to": "vocab:1578150",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "木",
+      "pos": "名詞",
+      "resolves_to": "vocab:1534520",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "秋",
+      "pos": "名詞",
+      "resolves_to": "vocab:1332650",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "実",
+      "resolves_to": "vocab:1320810",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "つける",
+      "pos": "動詞",
+      "resolves_to": "vocab:1610400",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1320830",
+   "tatoeba_id": "",
+   "jp": "実は、まだ話していない",
+   "en": "Actually, I haven't told them yet.",
+   "pt": "Na verdade, eu ainda não contei.",
+   "pt_literal": "A verdade é que (実は), ainda (まだ) não estou tendo falado.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 実は splits into 実 + は, so the adverb record never matches one token. Built from les:n3-conjectura-01's cumulative_known_set only (まだ, 話す); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conjectura-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-c7134fba488c",
+   "cks_proof": {
+    "lesson": "les:n3-conjectura-01",
+    "cks_vocab_size": 2636,
+    "cks_kanji_size": 568,
+    "target_matched": [
+     "実は"
+    ],
+    "content_tokens": [
+     {
+      "token": "実",
+      "resolves_to": "vocab:1320830",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "は",
+      "resolves_to": "vocab:1320830",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "まだ",
+      "pos": "副詞",
+      "resolves_to": "vocab:1527110",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "話し",
+      "pos": "動詞",
+      "resolves_to": "vocab:1562350",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "い",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:2820720",
+   "tatoeba_id": "",
+   "jp": "実におもしろい話だ",
+   "en": "It really is an interesting story.",
+   "pt": "É realmente uma história interessante.",
+   "pt_literal": "De fato (実に), história interessante é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 実に splits into 実 + に. Built from les:n3-conjectura-01's cumulative_known_set only (おもしろい, 話); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conjectura-01",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-1b63f3193f07",
+   "cks_proof": {
+    "lesson": "les:n3-conjectura-01",
+    "cks_vocab_size": 2636,
+    "cks_kanji_size": 568,
+    "target_matched": [
+     "実に"
+    ],
+    "content_tokens": [
+     {
+      "token": "実",
+      "resolves_to": "vocab:2820720",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:2820720",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "おもしろい",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1533580",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "話",
+      "pos": "名詞",
+      "resolves_to": "vocab:1600900",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1005480",
+   "tatoeba_id": "",
+   "jp": "しきりに時計を見ている",
+   "en": "He keeps looking at the clock.",
+   "pt": "Ele fica olhando o relógio sem parar.",
+   "pt_literal": "Insistentemente (しきりに), o relógio (を objeto direto) está olhando.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: しきりに splits into しきり + に and しきり resolves to nothing in the registry. Built from les:n3-conjectura-03's cumulative_known_set only (時計, 見る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conjectura-03",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-95ea64271abc",
+   "cks_proof": {
+    "lesson": "les:n3-conjectura-03",
+    "cks_vocab_size": 2669,
+    "cks_kanji_size": 577,
+    "target_matched": [
+     "しきりに"
+    ],
+    "content_tokens": [
+     {
+      "token": "しきり",
+      "resolves_to": "vocab:1005480",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1005480",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "時計",
+      "pos": "名詞",
+      "resolves_to": "vocab:1316140",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "見",
+      "pos": "動詞",
+      "resolves_to": "vocab:1259290",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "いる",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1005600",
+   "tatoeba_id": "",
+   "jp": "しまった、時間がない",
+   "en": "Oh no, there's no time.",
+   "pt": "Droga, não tem tempo.",
+   "pt_literal": "Ah, não (しまった, interjeição de erro percebido), tempo (が sujeito) não existe.",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: しまった as the interjection is indistinguishable from the auxiliary 〜てしまった in the pool, so every hit resolves to 仕舞う. Built from les:n3-conjectura-03's cumulative_known_set only (時間, ない); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conjectura-03",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-baca7e2c5649",
+   "cks_proof": {
+    "lesson": "les:n3-conjectura-03",
+    "cks_vocab_size": 2669,
+    "cks_kanji_size": 577,
+    "target_matched": [
+     "しまった"
+    ],
+    "content_tokens": [
+     {
+      "token": "しまっ",
+      "resolves_to": "vocab:1005600",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "た",
+      "resolves_to": "vocab:1005600",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "時間",
+      "pos": "名詞",
+      "resolves_to": "vocab:1315920",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "ない",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1529520",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1430690",
+   "tatoeba_id": "",
+   "jp": "先生に直に話した",
+   "en": "I spoke to the teacher in person.",
+   "pt": "Eu falei diretamente com o professor.",
+   "pt_literal": "Ao professor (に destino), pessoalmente (直に), falei.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 直に splits into 直 + に and 直 alone resolves to the separate record 直. Built from les:n3-conjectura-03's cumulative_known_set only (先生, 話す); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conjectura-03",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-09a4a8300a89",
+   "cks_proof": {
+    "lesson": "les:n3-conjectura-03",
+    "cks_vocab_size": 2669,
+    "cks_kanji_size": 577,
+    "target_matched": [
+     "直に"
+    ],
+    "content_tokens": [
+     {
+      "token": "先生",
+      "pos": "名詞",
+      "resolves_to": "vocab:1387990",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "直",
+      "resolves_to": "vocab:1430690",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1430690",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "話し",
+      "pos": "動詞",
+      "resolves_to": "vocab:1562350",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1211340",
+   "tatoeba_id": "",
+   "jp": "暑くてたまらない",
+   "en": "It's unbearably hot.",
+   "pt": "Está um calor insuportável.",
+   "pt_literal": "Estando quente (て causa), não se aguenta (たまらない).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: たまらない splits into たまら + ない and たまら resolves to 堪る. Built from les:n3-conjectura-05's cumulative_known_set only (暑い); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conjectura-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-c53c1dc43717",
+   "cks_proof": {
+    "lesson": "les:n3-conjectura-05",
+    "cks_vocab_size": 2690,
+    "cks_kanji_size": 592,
+    "target_matched": [
+     "たまらない"
+    ],
+    "content_tokens": [
+     {
+      "token": "暑く",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1343460",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "たまら",
+      "resolves_to": "vocab:1211340",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ない",
+      "resolves_to": "vocab:1211340",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1612000",
+   "tatoeba_id": "",
+   "jp": "めったに来ない人だ",
+   "en": "He's someone who hardly ever comes.",
+   "pt": "É uma pessoa que quase nunca aparece.",
+   "pt_literal": "Raramente (めったに, exige negação), pessoa que não vem é.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: めったに splits into めった + に and めった resolves to nothing. Built from les:n3-conjectura-07's cumulative_known_set only (来る, 人); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-conjectura-07",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-bcf6ad6deb78",
+   "cks_proof": {
+    "lesson": "les:n3-conjectura-07",
+    "cks_vocab_size": 2726,
+    "cks_kanji_size": 592,
+    "target_matched": [
+     "めったに"
+    ],
+    "content_tokens": [
+     {
+      "token": "めった",
+      "resolves_to": "vocab:1612000",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "vocab:1612000",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "来",
+      "pos": "動詞",
+      "resolves_to": "vocab:1547720",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "人",
+      "pos": "名詞",
+      "resolves_to": "vocab:1580640",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "gram:n3-you-ni-iu",
+   "tatoeba_id": "",
+   "jp": "弟に早く帰るように言う",
+   "en": "I tell my younger brother to come home early.",
+   "pt": "Eu mando meu irmão mais novo voltar cedo para casa.",
+   "pt_literal": "Ao irmão mais novo (に pessoa a quem se fala), voltar cedo, nesse sentido (ように) digo.",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: the pattern needs the literal ように言う, and every pool row inflects the verb (ように言った / ように言われた) or blows the lesson's budget. Built from les:n3-relato-02's cumulative_known_set only (弟, 早い, 帰る); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-relato-02",
+   "kind": "grammar",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-700a574fb45f",
+   "cks_proof": {
+    "lesson": "les:n3-relato-02",
+    "cks_vocab_size": 2759,
+    "cks_kanji_size": 599,
+    "target_matched": [
+     "～ように言う"
+    ],
+    "content_tokens": [
+     {
+      "token": "弟",
+      "pos": "名詞",
+      "resolves_to": "vocab:1581930",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "早く",
+      "pos": "形容詞",
+      "resolves_to": "vocab:1404975",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "帰る",
+      "pos": "動詞",
+      "resolves_to": "vocab:1221270",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "よう",
+      "resolves_to": "gram:n3-you-ni-iu",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "に",
+      "resolves_to": "gram:n3-you-ni-iu",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "言う",
+      "resolves_to": "gram:n3-you-ni-iu",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1610740",
+   "tatoeba_id": "",
+   "jp": "彼は知っているに違いない",
+   "en": "He must know.",
+   "pt": "Ele com certeza sabe.",
+   "pt_literal": "Quanto a ele (は tópico), está sabendo, não há como ser diferente (に違いない certeza).",
+   "register": "neutral",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 違いない splits into 違い + ない. Built from les:n3-relato-05's cumulative_known_set only (彼, 知る, いる); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-relato-05",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-3beb5841ff28",
+   "cks_proof": {
+    "lesson": "les:n3-relato-05",
+    "cks_vocab_size": 2797,
+    "cks_kanji_size": 618,
+    "target_matched": [
+     "違いない"
+    ],
+    "content_tokens": [
+     {
+      "token": "彼",
+      "pos": "代名詞",
+      "resolves_to": "vocab:1000580",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "知っ",
+      "pos": "動詞",
+      "resolves_to": "vocab:1420470",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "いる",
+      "pos": "動詞",
+      "resolves_to": "vocab:1577980",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "違い",
+      "resolves_to": "vocab:1610740",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "ない",
+      "resolves_to": "vocab:1610740",
+      "known": true,
+      "is_target": true
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1612050",
+   "tatoeba_id": "",
+   "jp": "もしも雨だったらどうする？",
+   "en": "What will you do if it happens to rain?",
+   "pt": "E se por acaso chover, você faz o quê?",
+   "pt_literal": "Se por acaso (もしも), fosse chuva (たら condição), como faz?",
+   "register": "casual",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: もしも splits into もし + も. Built from les:n3-relato-07's cumulative_known_set only (雨, どう, する); 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-relato-07",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-e6f0d765640f",
+   "cks_proof": {
+    "lesson": "les:n3-relato-07",
+    "cks_vocab_size": 2833,
+    "cks_kanji_size": 618,
+    "target_matched": [
+     "もしも"
+    ],
+    "content_tokens": [
+     {
+      "token": "もし",
+      "resolves_to": "vocab:1612050",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "も",
+      "resolves_to": "vocab:1612050",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "雨",
+      "pos": "名詞",
+      "resolves_to": "vocab:1171900",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "どう",
+      "pos": "副詞",
+      "resolves_to": "vocab:1451160",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "する",
+      "pos": "動詞",
+      "resolves_to": "vocab:1298670",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  },
+  {
+   "target": "vocab:1538100",
+   "tatoeba_id": "",
+   "jp": "駅まで約十分かかります",
+   "en": "It takes about ten minutes to the station.",
+   "pt": "Até a estação leva uns dez minutos.",
+   "pt_literal": "Até a estação (まで limite), aproximadamente (約 prefixo) dez minutos leva.",
+   "register": "polite",
+   "unknown_count": 0,
+   "generated": true,
+   "why": "GENERATED. Zero real candidates: 約 only appears in the pool as a prefix glued to a numeral inside rows that blow the lesson's budget. Built from les:n3-estrutura-06's cumulative_known_set only (駅, 分, かかる) plus a numeral; 0 content tokens outside the set; final 。 dropped.",
+   "lesson": "les:n3-estrutura-06",
+   "kind": "vocab",
+   "mode": "generated",
+   "ai_generated": true,
+   "needs_review": true,
+   "key": "gen-f89348411d83",
+   "cks_proof": {
+    "lesson": "les:n3-estrutura-06",
+    "cks_vocab_size": 2942,
+    "cks_kanji_size": 634,
+    "target_matched": [
+     "約"
+    ],
+    "content_tokens": [
+     {
+      "token": "駅",
+      "pos": "名詞",
+      "resolves_to": "vocab:1175140",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "約",
+      "resolves_to": "vocab:1538100",
+      "known": true,
+      "is_target": true
+     },
+     {
+      "token": "分",
+      "pos": "名詞",
+      "resolves_to": "vocab:1502840",
+      "known": true,
+      "is_target": false
+     },
+     {
+      "token": "かかり",
+      "pos": "動詞",
+      "resolves_to": "vocab:1609500",
+      "known": true,
+      "is_target": false
+     }
+    ],
+    "unknown": [],
+    "unknown_kanji_outside_target": [],
+    "target_kanji_not_yet_taught": []
+   }
+  }
+ ]
+}
