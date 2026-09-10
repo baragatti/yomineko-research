@@ -2,9 +2,9 @@
  "unit": "W13b",
  "generated_by": "scripts/assemble_layerb.py",
  "derived_from": "research/derived/n3_mined/layerb_derived",
- "authored_files": 56,
- "authored_rows": 9633,
- "verdict_entries": 9331,
+ "authored_files": 60,
+ "authored_rows": 9879,
+ "verdict_entries": 9577,
  "dead_batches": [
   "tokens-from-rulings-02.json",
   "tokens-from-rulings-03.json",
@@ -29,59 +29,59 @@
   "particles-17.json: 2 verdict files under both filename patterns (particles-17.json.verdict.json, particles-17.verdict.json) — byte-identical, read once"
  ],
  "merge": {
-  "paragraphs:corrected": 265,
-  "paragraphs:verified": 3958,
-  "particles:accepted_with_side_fix": 15,
+  "paragraphs:corrected": 266,
+  "paragraphs:verified": 4054,
+  "particles:accepted_with_side_fix": 81,
   "particles:corrected": 58,
-  "particles:function_pt_corrected": 126,
-  "particles:verified": 3333,
-  "rulings:context_splits": 480,
+  "particles:function_pt_corrected": 192,
+  "particles:verified": 3446,
+  "rulings:context_splits": 485,
   "rulings:corrected": 53,
-  "rulings:verified": 1510,
-  "tokens:corrected": 1,
+  "rulings:verified": 1524,
+  "tokens:corrected": 2,
   "tokens:excluded_and_said_nowhere_else": 59,
   "tokens:excluded_but_redundant_with_verified_ruling_split": 243,
   "tokens:unverified_excluded": 302,
-  "tokens:verified": 153
+  "tokens:verified": 174
  },
  "kinds": {
   "token": {
-   "slots_total": 17057,
-   "derived_carried": 4498,
-   "filled_verified": 12319,
-   "filled_corrected": 240,
+   "slots_total": 17416,
+   "derived_carried": 4539,
+   "filled_verified": 12635,
+   "filled_corrected": 242,
    "still_empty": 0,
    "empty_reasons": {}
   },
   "particle": {
-   "slots_total": 10257,
-   "derived_carried": 6866,
-   "filled_verified": 3333,
+   "slots_total": 10491,
+   "derived_carried": 6987,
+   "filled_verified": 3446,
    "filled_corrected": 58,
    "still_empty": 0,
    "empty_reasons": {}
   },
   "structure": {
-   "slots_total": 4223,
+   "slots_total": 4320,
    "derived_carried": 0,
-   "filled_verified": 3958,
-   "filled_corrected": 265,
+   "filled_verified": 4054,
+   "filled_corrected": 266,
    "still_empty": 0,
    "empty_reasons": {}
   }
  },
  "slots": {
-  "particle:derived_carried": 6866,
+  "particle:derived_carried": 6987,
   "particle:filled_corrected": 58,
-  "particle:filled_verified": 3333,
-  "particle:slots": 10257,
-  "structure:filled_corrected": 265,
-  "structure:filled_verified": 3958,
-  "structure:slots": 4223,
-  "token:derived_carried": 4498,
-  "token:filled_corrected": 240,
-  "token:filled_verified": 12319,
-  "token:slots": 17057
+  "particle:filled_verified": 3446,
+  "particle:slots": 10491,
+  "structure:filled_corrected": 266,
+  "structure:filled_verified": 4054,
+  "structure:slots": 4320,
+  "token:derived_carried": 4539,
+  "token:filled_corrected": 242,
+  "token:filled_verified": 12635,
+  "token:slots": 17416
  },
  "ingest_ready": true,
  "required_slots": "token gloss on every content token, explanation on every particle, structure paragraph on every sentence — validate.py's dissection_tier 'full' contract, read from scripts/validate/validate.py",
@@ -243,6 +243,13 @@
    "verdict_entries": 23
   },
   {
+   "file": "paragraphs-30.json",
+   "kind": "paragraphs",
+   "rows": 97,
+   "verdict_file": "paragraphs-30.verdict.json",
+   "verdict_entries": 97
+  },
+  {
    "file": "particles-01.json",
    "kind": "particles",
    "rows": 200,
@@ -362,6 +369,13 @@
    "verdict_entries": 191
   },
   {
+   "file": "particles-30.json",
+   "kind": "particles",
+   "rows": 113,
+   "verdict_file": "particles-30.verdict.json",
+   "verdict_entries": 113
+  },
+  {
    "file": "rulings-01.json",
    "kind": "rulings",
    "rows": 150,
@@ -439,6 +453,13 @@
    "verdict_entries": 63
   },
   {
+   "file": "rulings-30.json",
+   "kind": "rulings",
+   "rows": 14,
+   "verdict_file": "rulings-30.verdict.json",
+   "verdict_entries": 14
+  },
+  {
    "file": "tokens-from-rulings-02.json",
    "kind": "tokens",
    "rows": 59,
@@ -477,6 +498,13 @@
    "verdict_file": null,
    "verdict_entries": 0,
    "dead": "no parseable verdict entries — every row excluded"
+  },
+  {
+   "file": "tokens-residue-30.json",
+   "kind": "tokens",
+   "rows": 22,
+   "verdict_file": "tokens-residue-30.verdict.json",
+   "verdict_entries": 22
   },
   {
    "file": "tokens-residue.json",

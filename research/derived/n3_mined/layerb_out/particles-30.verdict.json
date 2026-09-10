@@ -1,0 +1,961 @@
+{
+ "unit": "W13b-extra",
+ "batch": 30,
+ "verified_by": "W13b batch-30 verifier (adversarial, independent of the author)",
+ "kind": "particles-verdict",
+ "source_authored": "research/derived/n3_mined/layerb_out/particles-30.json",
+ "source_work_list": "research/derived/n3_mined/layerb_work/extra-30.json",
+ "identity_note": "Identidade: key + position. Nenhuma explanation_pt foi rejeitada nem reescrita: as 113 explicacoes passam, toda citacao japonesa resolve na frase e o pt-BR esta limpo. Toda linha ok:false traz apenas corrected.function_pt, que o assembler le como accept_side_fix: aceita a explicacao como escrita e troca so o rotulo. O rotulo e o modal do bank para o PAR, que a work list ja avisava poder estar errado nesta ocorrencia; o autor o manteve em 111 das 113 linhas, contra ~38% de linhas relabeladas pelos autores de batches 01-29. So foram corrigidos os rotulos que nomeiam uma CATEGORIA gramatical diferente da que a ocorrencia tem (copula rotulada como caso, negacao total rotulada como adicao, limite espacial rotulado como temporal, formador de adverbio rotulado como destino ou citacao). Rotulos apenas imprecisos dentro da mesma categoria (で de meio, materia ou ambito sob 'lugar da acao'; に de destinatario sob 'destino/direcao') foram mantidos, porque batches 01-29 tambem os mantem e corrigi-los so aqui faria do batch-30 uma ilha.",
+ "count": 113,
+ "reviewed": 113,
+ "ok": 47,
+ "problems": 66,
+ "corrected_supplied": 66,
+ "rejected": 0,
+ "status": "COMPLETE",
+ "note": "Linhas ausentes desta lista NAO foram revisadas e nao podem ser tratadas como aprovadas. Toda linha autorada do arquivo-fonte esta presente aqui.",
+ "rows": [
+  {
+   "key": "100054",
+   "position": 3,
+   "surface": "と",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula esta presa a uma locucao fixa e nao exerce a funcao que o rotulo nomeia; a explicacao ja descreve a locucao, contradizendo o rotulo. Batches 01-29 relabelam este caso como 'X da locucao ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de citação' -> 'と da locução として (na condição de)'.",
+   "corrected": {
+    "function_pt": "と da locução として (na condição de)"
+   }
+  },
+  {
+   "key": "1133847",
+   "position": 2,
+   "surface": "けど",
+   "ok": true
+  },
+  {
+   "key": "1133847",
+   "position": 6,
+   "surface": "な",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao, e a explicacao o desmente na primeira linha: 'Este な nao proibe nada'. Deixar 'particula final de proibicao' ao lado de uma explicacao que nega a proibicao entrega ao aluno duas informacoes contraditorias na mesma linha. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula final de proibição' -> 'partícula final de constatação (comentário em voz alta)'.",
+   "corrected": {
+    "function_pt": "partícula final de constatação (comentário em voz alta)"
+   }
+  },
+  {
+   "key": "11814369",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "11814369",
+   "position": 5,
+   "surface": "て",
+   "ok": true
+  },
+  {
+   "key": "136764",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "136764",
+   "position": 3,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com interrogativo + でも a funcao e de GENERALIZACAO (seja qual for), nao de adicao; a explicacao ja diz que soma todos os casos possiveis. Batches 01-29 usam 'も da expressao でも (generalizacao)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も da expressão でも (generalização)'.",
+   "corrected": {
+    "function_pt": "も da expressão でも (generalização)"
+   }
+  },
+  {
+   "key": "140818",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "148288",
+   "position": 3,
+   "surface": "ば",
+   "ok": true
+  },
+  {
+   "key": "148288",
+   "position": 5,
+   "surface": "ほど",
+   "ok": true
+  },
+  {
+   "key": "148288",
+   "position": 8,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "155281",
+   "position": 3,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que forma o advérbio 他に ('além disso')'.",
+   "corrected": {
+    "function_pt": "に que forma o advérbio 他に ('além disso')"
+   }
+  },
+  {
+   "key": "155281",
+   "position": 5,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de negação total (何も)'.",
+   "corrected": {
+    "function_pt": "も de negação total (何も)"
+   }
+  },
+  {
+   "key": "193877",
+   "position": 1,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "193877",
+   "position": 3,
+   "surface": "と",
+   "ok": true
+  },
+  {
+   "key": "193877",
+   "position": 8,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "193877",
+   "position": 9,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe かもしれない (conjectura)'.",
+   "corrected": {
+    "function_pt": "も que compõe かもしれない (conjectura)"
+   }
+  },
+  {
+   "key": "220393",
+   "position": 5,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula esta presa a uma locucao fixa e nao exerce a funcao que o rotulo nomeia; a explicacao ja descreve a locucao, contradizendo o rotulo. Batches 01-29 relabelam este caso como 'X da locucao ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に de ために (finalidade)'.",
+   "corrected": {
+    "function_pt": "に de ために (finalidade)"
+   }
+  },
+  {
+   "key": "231320",
+   "position": 11,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "235265",
+   "position": 3,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este に marca TEMPO, nao destino nem direcao, e a explicacao ja diz 'a epoca / o dia / o momento em que'. Batches 01-29 usam 'particula de tempo (quando)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'partícula de tempo (quando)'.",
+   "corrected": {
+    "function_pt": "partícula de tempo (quando)"
+   }
+  },
+  {
+   "key": "237381",
+   "position": 4,
+   "surface": "まで",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui o limite e de ESPACO, nao de tempo, e a propria explicacao diz isso (o ponto final do percurso, ate onde o avanco chegou). Batches 01-29 usam 'limite espacial' para exatamente este caso, oito vezes. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'limite temporal ('até')' -> 'limite espacial ('até')'.",
+   "corrected": {
+    "function_pt": "limite espacial ('até')"
+   }
+  },
+  {
+   "key": "3430692",
+   "position": 4,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "3430692",
+   "position": 5,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe かも (conjectura abreviada)'.",
+   "corrected": {
+    "function_pt": "も que compõe かも (conjectura abreviada)"
+   }
+  },
+  {
+   "key": "542960",
+   "position": 6,
+   "surface": "だけ",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Em どれだけ o だけ nao limita ('apenas'); ele mede quantidade, como a propria explicacao diz. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'limitador 'apenas'' -> 'だけ que compõe どれだけ ('o quanto')'.",
+   "corrected": {
+    "function_pt": "だけ que compõe どれだけ ('o quanto')"
+   }
+  },
+  {
+   "key": "77329",
+   "position": 1,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "77329",
+   "position": 3,
+   "surface": "も",
+   "ok": true
+  },
+  {
+   "key": "77329",
+   "position": 5,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "7967876",
+   "position": 3,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "7967876",
+   "position": 4,
+   "surface": "は",
+   "ok": true
+  },
+  {
+   "key": "7967876",
+   "position": 8,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com いる/ある o に marca o LUGAR DE EXISTENCIA, nao um destino de movimento; a explicacao ja diz onde a pessoa ou coisa esta. 'particula de lugar de existencia' e a correcao mais frequente de batches 01-29. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'partícula de lugar de existência'.",
+   "corrected": {
+    "function_pt": "partícula de lugar de existência"
+   }
+  },
+  {
+   "key": "83524",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula esta presa a uma locucao fixa e nao exerce a funcao que o rotulo nomeia; a explicacao ja descreve a locucao, contradizendo o rotulo. Batches 01-29 relabelam este caso como 'X da locucao ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に da locução 柄にもない (fora do feitio)'.",
+   "corrected": {
+    "function_pt": "に da locução 柄にもない (fora do feitio)"
+   }
+  },
+  {
+   "key": "83524",
+   "position": 2,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de reforço dentro da negação (nem sequer)'.",
+   "corrected": {
+    "function_pt": "も de reforço dentro da negação (nem sequer)"
+   }
+  },
+  {
+   "key": "83524",
+   "position": 7,
+   "surface": "な",
+   "ok": true
+  },
+  {
+   "key": "85041",
+   "position": 6,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de negação total (何も)'.",
+   "corrected": {
+    "function_pt": "も de negação total (何も)"
+   }
+  },
+  {
+   "key": "85570",
+   "position": 4,
+   "surface": "しも",
+   "ok": true
+  },
+  {
+   "key": "85570",
+   "position": 6,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este で/は nao e particula de caso nem de topico: e a copula で (だ na forma て) dentro de では/ではない, como a explicacao ja diz. 'particula de lugar da acao' num で de copula e categoria errada, nao imprecisao. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe ではない (negação da cópula)'.",
+   "corrected": {
+    "function_pt": "で que compõe ではない (negação da cópula)"
+   }
+  },
+  {
+   "key": "85570",
+   "position": 7,
+   "surface": "は",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de tópico' -> 'は de reforço da negação (ではない)'.",
+   "corrected": {
+    "function_pt": "は de reforço da negação (ではない)"
+   }
+  },
+  {
+   "key": "9840099",
+   "position": 3,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "9840099",
+   "position": 9,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "9936514",
+   "position": 1,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "9936514",
+   "position": 5,
+   "surface": "など",
+   "ok": true
+  },
+  {
+   "key": "9936514",
+   "position": 7,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de negação total (一度も)'.",
+   "corrected": {
+    "function_pt": "も de negação total (一度も)"
+   }
+  },
+  {
+   "key": "gen-23be841a7d6e",
+   "position": 4,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "gen-23be841a7d6e",
+   "position": 7,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com いる/ある o に marca o LUGAR DE EXISTENCIA, nao um destino de movimento; a explicacao ja diz onde a pessoa ou coisa esta. 'particula de lugar de existencia' e a correcao mais frequente de batches 01-29. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'partícula de lugar de existência'.",
+   "corrected": {
+    "function_pt": "partícula de lugar de existência"
+   }
+  },
+  {
+   "key": "gen-10460328793b",
+   "position": 4,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que forma o advérbio 常に ('sempre')'.",
+   "corrected": {
+    "function_pt": "に que forma o advérbio 常に ('sempre')"
+   }
+  },
+  {
+   "key": "gen-a2e6c06eccd6",
+   "position": 1,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe いつでも ('a qualquer hora')'.",
+   "corrected": {
+    "function_pt": "で que compõe いつでも ('a qualquer hora')"
+   }
+  },
+  {
+   "key": "gen-a2e6c06eccd6",
+   "position": 2,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com interrogativo + でも a funcao e de GENERALIZACAO (seja qual for), nao de adicao; a explicacao ja diz que soma todos os casos possiveis. Batches 01-29 usam 'も da expressao でも (generalizacao)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も da expressão でも (generalização)'.",
+   "corrected": {
+    "function_pt": "も da expressão でも (generalização)"
+   }
+  },
+  {
+   "key": "gen-884d4ad8a039",
+   "position": 1,
+   "surface": "まで",
+   "ok": true
+  },
+  {
+   "key": "gen-884d4ad8a039",
+   "position": 2,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe いつまでも ('para sempre')'.",
+   "corrected": {
+    "function_pt": "も que compõe いつまでも ('para sempre')"
+   }
+  },
+  {
+   "key": "gen-89e4943d32e5",
+   "position": 4,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula esta presa a uma locucao fixa e nao exerce a funcao que o rotulo nomeia; a explicacao ja descreve a locucao, contradizendo o rotulo. Batches 01-29 relabelam este caso como 'X da locucao ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に da locução 気に入る (cair no gosto)'.",
+   "corrected": {
+    "function_pt": "に da locução 気に入る (cair no gosto)"
+   }
+  },
+  {
+   "key": "gen-241636dce7a0",
+   "position": 4,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este に marca TEMPO, nao destino nem direcao, e a explicacao ja diz 'a epoca / o dia / o momento em que'. Batches 01-29 usam 'particula de tempo (quando)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'partícula de tempo (quando)'.",
+   "corrected": {
+    "function_pt": "partícula de tempo (quando)"
+   }
+  },
+  {
+   "key": "gen-288ed13a45d3",
+   "position": 1,
+   "surface": "と",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de citação' -> 'partícula que forma advérbio de modo (ざっと)'.",
+   "corrected": {
+    "function_pt": "partícula que forma advérbio de modo (ざっと)"
+   }
+  },
+  {
+   "key": "gen-288ed13a45d3",
+   "position": 4,
+   "surface": "ぐらい",
+   "ok": true
+  },
+  {
+   "key": "gen-95ea64271abc",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que forma o advérbio しきりに ('sem parar')'.",
+   "corrected": {
+    "function_pt": "に que forma o advérbio しきりに ('sem parar')"
+   }
+  },
+  {
+   "key": "gen-5d87befce029",
+   "position": 1,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula e peca de um CONECTOR de frase, e a explicacao ja diz que ela monta o conector; o rotulo nomeia uma funcao de caso que a ocorrencia nao tem. Batches 01-29 relabelam os conectores desta familia. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe o conector そこで ('foi aí que')'.",
+   "corrected": {
+    "function_pt": "で que compõe o conector そこで ('foi aí que')"
+   }
+  },
+  {
+   "key": "gen-13457c0fbd4c",
+   "position": 1,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula e peca de um CONECTOR de frase, e a explicacao ja diz que ela monta o conector; o rotulo nomeia uma funcao de caso que a ocorrencia nao tem. Batches 01-29 relabelam os conectores desta familia. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe o conector それでも ('mesmo assim')'.",
+   "corrected": {
+    "function_pt": "で que compõe o conector それでも ('mesmo assim')"
+   }
+  },
+  {
+   "key": "gen-13457c0fbd4c",
+   "position": 2,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula e peca de um CONECTOR de frase, e a explicacao ja diz que ela monta o conector; o rotulo nomeia uma funcao de caso que a ocorrencia nao tem. Batches 01-29 relabelam os conectores desta familia. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe o conector それでも ('mesmo assim')'.",
+   "corrected": {
+    "function_pt": "も que compõe o conector それでも ('mesmo assim')"
+   }
+  },
+  {
+   "key": "gen-8c60dda0dabf",
+   "position": 5,
+   "surface": "は",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de tópico' -> 'は que compõe 〜てはいけない (proibição)'.",
+   "corrected": {
+    "function_pt": "は que compõe 〜てはいけない (proibição)"
+   }
+  },
+  {
+   "key": "gen-36d7b3015417",
+   "position": 1,
+   "surface": "が",
+   "ok": true
+  },
+  {
+   "key": "gen-36d7b3015417",
+   "position": 6,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este で/は nao e particula de caso nem de topico: e a copula で (だ na forma て) dentro de では/ではない, como a explicacao ja diz. 'particula de lugar da acao' num で de copula e categoria errada, nao imprecisao. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe ではない (negação da cópula)'.",
+   "corrected": {
+    "function_pt": "で que compõe ではない (negação da cópula)"
+   }
+  },
+  {
+   "key": "gen-36d7b3015417",
+   "position": 7,
+   "surface": "は",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de tópico' -> 'は de reforço da negação (ではない)'.",
+   "corrected": {
+    "function_pt": "は de reforço da negação (ではない)"
+   }
+  },
+  {
+   "key": "gen-178322709097",
+   "position": 1,
+   "surface": "けど",
+   "ok": true
+  },
+  {
+   "key": "gen-189e00550476",
+   "position": 1,
+   "surface": "って",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula e peca de um CONECTOR de frase, e a explicacao ja diz que ela monta o conector; o rotulo nomeia uma funcao de caso que a ocorrencia nao tem. Batches 01-29 relabelam os conectores desta familia. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'marcador de tópico coloquial' -> 'って que compõe だって (justificativa)'.",
+   "corrected": {
+    "function_pt": "って que compõe だって (justificativa)"
+   }
+  },
+  {
+   "key": "gen-189e00550476",
+   "position": 6,
+   "surface": "ん",
+   "ok": true
+  },
+  {
+   "key": "gen-f09bb0145e33",
+   "position": 1,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "gen-baf1ae13c6ee",
+   "position": 0,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este で/は nao e particula de caso nem de topico: e a copula で (だ na forma て) dentro de では/ではない, como a explicacao ja diz. 'particula de lugar da acao' num で de copula e categoria errada, nao imprecisao. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe a fórmula では (transição)'.",
+   "corrected": {
+    "function_pt": "で que compõe a fórmula では (transição)"
+   }
+  },
+  {
+   "key": "gen-baf1ae13c6ee",
+   "position": 1,
+   "surface": "は",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este で/は nao e particula de caso nem de topico: e a copula で (だ na forma て) dentro de では/ではない, como a explicacao ja diz. 'particula de lugar da acao' num で de copula e categoria errada, nao imprecisao. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de tópico' -> 'は que compõe a fórmula では (transição)'.",
+   "corrected": {
+    "function_pt": "は que compõe a fórmula では (transição)"
+   }
+  },
+  {
+   "key": "gen-48a579e56f54",
+   "position": 4,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de negação total (だれも)'.",
+   "corrected": {
+    "function_pt": "も de negação total (だれも)"
+   }
+  },
+  {
+   "key": "gen-03ac75285d31",
+   "position": 1,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula e peca de um CONECTOR de frase, e a explicacao ja diz que ela monta o conector; o rotulo nomeia uma funcao de caso que a ocorrencia nao tem. Batches 01-29 relabelam os conectores desta familia. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe o conector ところで (troca de assunto)'.",
+   "corrected": {
+    "function_pt": "で que compõe o conector ところで (troca de assunto)"
+   }
+  },
+  {
+   "key": "gen-3cffd9cadbe7",
+   "position": 6,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de negação total (何も)'.",
+   "corrected": {
+    "function_pt": "も de negação total (何も)"
+   }
+  },
+  {
+   "key": "gen-d3b1807100a5",
+   "position": 3,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe どうしても ('de qualquer jeito')'.",
+   "corrected": {
+    "function_pt": "も que compõe どうしても ('de qualquer jeito')"
+   }
+  },
+  {
+   "key": "gen-d3b1807100a5",
+   "position": 6,
+   "surface": "ん",
+   "ok": true
+  },
+  {
+   "key": "gen-e7e5464992a3",
+   "position": 1,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "gen-e7e5464992a3",
+   "position": 2,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "gen-40417a6920af",
+   "position": 4,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este も forma a concessiva 〜ても e nao acrescenta nada; a explicacao ja a descreve como concessao. Batches 01-29 usam 'particula concessiva (〜ても)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'partícula concessiva (〜ても)'.",
+   "corrected": {
+    "function_pt": "partícula concessiva (〜ても)"
+   }
+  },
+  {
+   "key": "gen-6238f7249749",
+   "position": 6,
+   "surface": "から",
+   "ok": true
+  },
+  {
+   "key": "gen-4dc48e6d9e51",
+   "position": 1,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe なんでも ('seja o que for')'.",
+   "corrected": {
+    "function_pt": "で que compõe なんでも ('seja o que for')"
+   }
+  },
+  {
+   "key": "gen-4dc48e6d9e51",
+   "position": 2,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com interrogativo + でも a funcao e de GENERALIZACAO (seja qual for), nao de adicao; a explicacao ja diz que soma todos os casos possiveis. Batches 01-29 usam 'も da expressao でも (generalizacao)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も da expressão でも (generalização)'.",
+   "corrected": {
+    "function_pt": "も da expressão でも (generalização)"
+   }
+  },
+  {
+   "key": "gen-4dc48e6d9e51",
+   "position": 8,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "gen-3b2fee497b46",
+   "position": 1,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe なんで ('por quê')'.",
+   "corrected": {
+    "function_pt": "で que compõe なんで ('por quê')"
+   }
+  },
+  {
+   "key": "gen-3b2fee497b46",
+   "position": 5,
+   "surface": "の",
+   "ok": true
+  },
+  {
+   "key": "gen-03c27c103a89",
+   "position": 1,
+   "surface": "と",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este と e comitativo, e a explicacao diz literalmente que marca みんな como a companhia. Batches 01-29 ja corrigiram este caso para 'particula de companhia'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de citação' -> 'partícula de companhia ('com')'.",
+   "corrected": {
+    "function_pt": "partícula de companhia ('com')"
+   }
+  },
+  {
+   "key": "gen-03c27c103a89",
+   "position": 3,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que forma o advérbio 共に ('junto')'.",
+   "corrected": {
+    "function_pt": "に que forma o advérbio 共に ('junto')"
+   }
+  },
+  {
+   "key": "gen-e6f0d765640f",
+   "position": 1,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe もしも ('se por acaso')'.",
+   "corrected": {
+    "function_pt": "も que compõe もしも ('se por acaso')"
+   }
+  },
+  {
+   "key": "gen-9ede389506d7",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que forma o advérbio 一度に ('de uma vez')'.",
+   "corrected": {
+    "function_pt": "に que forma o advérbio 一度に ('de uma vez')"
+   }
+  },
+  {
+   "key": "gen-9ede389506d7",
+   "position": 5,
+   "surface": "で",
+   "ok": true
+  },
+  {
+   "key": "gen-3ab33f97e1b6",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que compõe 今にも ('a qualquer instante')'.",
+   "corrected": {
+    "function_pt": "に que compõe 今にも ('a qualquer instante')"
+   }
+  },
+  {
+   "key": "gen-3ab33f97e1b6",
+   "position": 2,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe 今にも ('a qualquer instante')'.",
+   "corrected": {
+    "function_pt": "も que compõe 今にも ('a qualquer instante')"
+   }
+  },
+  {
+   "key": "gen-617ebc589017",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que forma 今に ('daqui a pouco')'.",
+   "corrected": {
+    "function_pt": "に que forma 今に ('daqui a pouco')"
+   }
+  },
+  {
+   "key": "gen-f2aa06143ce7",
+   "position": 3,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de negação total (何も)'.",
+   "corrected": {
+    "function_pt": "も de negação total (何も)"
+   }
+  },
+  {
+   "key": "gen-de2b7516143c",
+   "position": 1,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "gen-c1dc4ac04cc7",
+   "position": 1,
+   "surface": "と",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula esta presa a uma locucao fixa e nao exerce a funcao que o rotulo nomeia; a explicacao ja descreve a locucao, contradizendo o rotulo. Batches 01-29 relabelam este caso como 'X da locucao ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de citação' -> 'と da locução 何とか (de algum jeito)'.",
+   "corrected": {
+    "function_pt": "と da locução 何とか (de algum jeito)"
+   }
+  },
+  {
+   "key": "gen-c1dc4ac04cc7",
+   "position": 2,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "gen-09a4a8300a89",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "gen-ead76a768ab4",
+   "position": 4,
+   "surface": "で",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de lugar da ação' -> 'で que compõe 何でもない ('coisa nenhuma')'.",
+   "corrected": {
+    "function_pt": "で que compõe 何でもない ('coisa nenhuma')"
+   }
+  },
+  {
+   "key": "gen-ead76a768ab4",
+   "position": 5,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe 何でもない (negação total)'.",
+   "corrected": {
+    "function_pt": "も que compõe 何でもない (negação total)"
+   }
+  },
+  {
+   "key": "gen-1b63f3193f07",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui a particula fecha um radical e forma um ADVERBIO; nao ha destino, direcao nem citacao. A explicacao ja diz que forma o adverbio, contradizendo o rotulo. Batches 01-29 usam 'que forma o adverbio ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に que forma o advérbio 実に ('de fato')'.",
+   "corrected": {
+    "function_pt": "に que forma o advérbio 実に ('de fato')"
+   }
+  },
+  {
+   "key": "gen-f717dc24d27f",
+   "position": 1,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も de negação total (少しも)'.",
+   "corrected": {
+    "function_pt": "も de negação total (少しも)"
+   }
+  },
+  {
+   "key": "gen-700a574fb45f",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "gen-3beb5841ff28",
+   "position": 5,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula esta presa a uma locucao fixa e nao exerce a funcao que o rotulo nomeia; a explicacao ja descreve a locucao, contradizendo o rotulo. Batches 01-29 relabelam este caso como 'X da locucao ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に da locução に違いない (certeza)'.",
+   "corrected": {
+    "function_pt": "に da locução に違いない (certeza)"
+   }
+  },
+  {
+   "key": "gen-dab1d936d62f",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com いる/ある o に marca o LUGAR DE EXISTENCIA, nao um destino de movimento; a explicacao ja diz onde a pessoa ou coisa esta. 'particula de lugar de existencia' e a correcao mais frequente de batches 01-29. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'partícula de lugar de existência'.",
+   "corrected": {
+    "function_pt": "partícula de lugar de existência"
+   }
+  },
+  {
+   "key": "gen-5eca9027d7b3",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Este に marca TEMPO, nao destino nem direcao, e a explicacao ja diz 'a epoca / o dia / o momento em que'. Batches 01-29 usam 'particula de tempo (quando)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'partícula de tempo (quando)'.",
+   "corrected": {
+    "function_pt": "partícula de tempo (quando)"
+   }
+  },
+  {
+   "key": "gen-c0358ac90d32",
+   "position": 3,
+   "surface": "か",
+   "ok": true
+  },
+  {
+   "key": "gen-c0358ac90d32",
+   "position": 4,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. A particula e peca fixa de um bloco e nao carrega sozinha a funcao nomeada; a explicacao ja diz isso ('e peca fixa', 'completa X', 'monta X'). Batches 01-29 relabelam esta familia (ex.: 'particula que compoe 何でも'). A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe かもしれない (conjectura)'.",
+   "corrected": {
+    "function_pt": "も que compõe かもしれない (conjectura)"
+   }
+  },
+  {
+   "key": "gen-85971f5e6f20",
+   "position": 3,
+   "surface": "と",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula e peca de um CONECTOR de frase, e a explicacao ja diz que ela monta o conector; o rotulo nomeia uma funcao de caso que a ocorrencia nao tem. Batches 01-29 relabelam os conectores desta familia. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de citação' -> 'と que compõe o conector それとも ('ou então')'.",
+   "corrected": {
+    "function_pt": "と que compõe o conector それとも ('ou então')"
+   }
+  },
+  {
+   "key": "gen-85971f5e6f20",
+   "position": 4,
+   "surface": "も",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula e peca de um CONECTOR de frase, e a explicacao ja diz que ela monta o conector; o rotulo nomeia uma funcao de caso que a ocorrencia nao tem. Batches 01-29 relabelam os conectores desta familia. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de inclusão ('também')' -> 'も que compõe o conector それとも ('ou então')'.",
+   "corrected": {
+    "function_pt": "も que compõe o conector それとも ('ou então')"
+   }
+  },
+  {
+   "key": "gen-9301df2b9c43",
+   "position": 1,
+   "surface": "に",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Esta particula esta presa a uma locucao fixa e nao exerce a funcao que o rotulo nomeia; a explicacao ja descreve a locucao, contradizendo o rotulo. Batches 01-29 relabelam este caso como 'X da locucao ...'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de destino/direção' -> 'に da locução 要するに ('resumindo')'.",
+   "corrected": {
+    "function_pt": "に da locução 要するに ('resumindo')"
+   }
+  },
+  {
+   "key": "gen-9301df2b9c43",
+   "position": 6,
+   "surface": "ん",
+   "ok": true
+  },
+  {
+   "key": "gen-9954c1fa54ce",
+   "position": 1,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "gen-f89348411d83",
+   "position": 1,
+   "surface": "まで",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Aqui o limite e de ESPACO, nao de tempo, e a propria explicacao diz isso (o ponto final do percurso, ate onde o avanco chegou). Batches 01-29 usam 'limite espacial' para exatamente este caso, oito vezes. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'limite temporal ('até')' -> 'limite espacial ('até')'.",
+   "corrected": {
+    "function_pt": "limite espacial ('até')"
+   }
+  },
+  {
+   "key": "gen-4a0c3872a1fc",
+   "position": 4,
+   "surface": "に",
+   "ok": true
+  },
+  {
+   "key": "gen-04dd143aa595",
+   "position": 4,
+   "surface": "しも",
+   "ok": true
+  },
+  {
+   "key": "gen-04dd143aa595",
+   "position": 8,
+   "surface": "は",
+   "ok": false,
+   "problem": "Rotulo do bank mantido sem correcao. Com o predicado negado, a funcao aqui e de NEGACAO TOTAL, o oposto de 'tambem': a explicacao diz 'zera', 'apaga tudo', 'nem um'. Batches 01-29 usam 'も de negacao total (何も / 誰も / すこしも)'. A explanation_pt esta correta e foi aceita como escrita; so o rotulo muda: 'partícula de tópico' -> 'は de reforço da negação (ではない)'.",
+   "corrected": {
+    "function_pt": "は de reforço da negação (ではない)"
+   }
+  }
+ ]
+}
