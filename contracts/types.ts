@@ -556,7 +556,7 @@ export interface Sentence {
   translation: LocaleText;
   translation_literal: LocaleText;
   vocab: {
-      link_rule?: "lemma" | "ortho" | "run" | "token";
+      link_rule?: "lemma" | "ortho" | "run" | "token" | null;
       reading_verified?: boolean;
       ref?: string;
     }[];

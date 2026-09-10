@@ -58,6 +58,71 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-10 (av) — PAUSED by the owner mid-run. Committed here: the W13 APPLY (bank 5,889 → 10,112
+> sentences with full Layer-B, register on all, 128 grammar tags, N3 relink 439 links, W05 n3|vocab
+> below 1,571 → 162 / zero 1,461 → 57, gate green, full replay green; report
+> `research/reports/w13_apply_report.md`, 9 open items there). Fable 30-sentence read: pass.**
+>
+> **In flight when paused (files only, safe to resume or discard):**
+> - Workflow `w18b-paraphrase-usage` run `wf_a67eb7f0-b82` (author + verifier per batch → `research/derived/pending/authored_banks/`):
+>   resume with `Workflow({scriptPath: <session workflows/scripts/w18b-paraphrase-usage-wf_a67eb7f0-b82.js>, resumeFromRunId: 'wf_a67eb7f0-b82'})`;
+>   completed agents replay from cache. Assemble by script (pair verdicts by item id, apply `corrected`, drop rejects) like the rc half.
+> - One agent authoring the 50 withdrawn particle explanations → `research/derived/pending/particle_template_fixes.authored.json` (needs a verifier).
+>
+> **Next DB-writer steps, in order:** (1) second ingest run for the 97 late rows: derive their register
+> (`scripts/derive_sentence_register_v2.py` over `generated_uncovered_final.json`, add to the W31 table), then
+> the ingest command in w13_apply_report.md open item 1 (batch-30 is ingest-ready); (2) apply
+> `research/derived/pending/particle_template_fixes.json` (201 explanation + 50 authored rows; the 24 label
+> overrides of verified rows wait for sign-off) as a tracked repair on the ingested sentences; (3) W20 vocab
+> re-run (`scripts/build_vocab_exercises.py`, four rules from the sample) + apply; (4) W14; (5) W18: apply
+> `research/derived/patches/w17_builder.patch`, emit the 285 rc questions + the authored banks, regenerate
+> 40 banks, ceilings → 0, three decisions in the W18 row; (6) W21b → W22/W23/W24 applies (tables ready) →
+> W28–W30 (W29 table ready) → W34 → W37/W40 applies → W25. Owner items: PENDING A9b, B-W11, B-W37, D1–D16.
+
+> **2026-09-10 (aw) — W13 APPLIED (§6 step 8): the 4,223 mined N3 sentences are in the bank
+> (5,889 → 10,112), the N3 half of the W12 relink landed with a rule fix and a hold list, and
+> N3 exemplification goes from 8.5% to 96.4%. Gate green (all hard validators); full manifest
+> replay green and re-recorded (790/568/222, unchanged). NOT COMMITTED (the run was told to touch
+> no git state). Next DB writer: W32 apply (survival cores), still queued; W18 now unblocked.**
+>
+> - **The ingest.** `ingest_mined_stages.py` gained `--register-table` (it READS W31's table for
+>   `register`/`register_rule` and REFUSES a row that has none — a defaulted `neutral` passes the
+>   speak filter silently), `--provenance-source` (`sentence.source` = the campaign, `jp_source`
+>   stays the Layer-A origin), `--batches`, exact-key `sentence_grammar` tagging, and a pre-flight
+>   over every row before a single write. **`persist()` now takes `commit=False`**, so a Layer-B
+>   batch is ONE transaction — before this, "rollback" was a word with nothing behind it. 29 batches,
+>   4,223 ingested, 0 invariant failures, 0 rollbacks. 36,282 tokens, 10,257 particles, 128 grammar
+>   tags over 63 points.
+> - **Three defects the one-batch trial found**, all quoted in the report: `persist()` committing per
+>   sentence; `dissect._GEMINATE_FIRST = {"c": "t"}` spelling っ|ち two ways and breaking invariant I3
+>   on 3 rows (the map is now empty, which is also what the corpus already did in 30 sentences and 5
+>   token boundaries, and it restores replay fidelity for those 5); and **`validate.py --db <copy>`
+>   silently validating the REAL corpus** because `dbtarget.take_flag` REMOVES the flag and `dissect`
+>   consumed it first — `take_flag` now caches per flag.
+> - **The relink.** `apply_orthographic_relinks.py --scope n3 --table …_n3.json`: 476 derived, **439
+>   applied over 46 records, 29 lifted over the ≥3 floor**, **37 held** with the lesson↔sentence pair
+>   each would break. Fifth guard: a single particle/auxiliary token is claimed only when the kana
+>   form is two kana or more — keeps だけ/くらい/ばかり/ほど, refuses the bare one-kana で. **All four
+>   of check D's counters are exactly at the frozen baseline** (178 / 148 / 304 / 227, `D 0 FAIL`).
+> - **W05 ratchet re-recorded: n3|vocab below 1,571 → 162, zero 1,461 → 57; n3|grammar below 67 → 35,
+>   zero 17 → 1.** Nothing grew anywhere. Cards that can show an example 1,749 → **2,901 of 2,951**.
+> - **Three other ratchets moved with their cause written into the file:** register residue 76 → 130
+>   (the 54 `no-signal` mined rows), `integrity_audit` sentence-level ceiling 585 → 703, and five
+>   exam ceilings by 40 items — the last one measured, not guessed: strip the 439 relink links from
+>   the same export and `validate_exam_level_gate` is ALL OK, so W18's regeneration owns it.
+> - **The register table has no deferrals left**: regenerated with `--skip-w13`, all 10,112 rows are
+>   `set: bank` keyed by slug, `apply_sentence_register` reports 0 deferred, and 3 sentences changed
+>   value because the new grammar tags let the derivation see `n3-nanka`.
+> - **Lessons did not move**: 0 `.md` diffs, 322/322 byte-identical. Four lesson JSONs changed and the
+>   diff is `needs[]` only — check C4 requires the stored edges to equal what `build_needs_table.py`
+>   derives, so the table was re-derived and re-applied.
+> - Manifest **127 steps / 91 enabled**: 121 ingest, 122 relink `--scope n3`, 123 the three-row
+>   pt-BR diacritic repair (`w13_text_repairs.json`), 124 furigana, 125-127 families.
+> - Report: `research/reports/w13_apply_report.md` (per-batch counts, the hold list in full, the
+>   exam-cause measurement, 30 sentences rendered from the DB, 9 open items). **The 97
+>   uncovered-target rows in `batch-30.json` are NOT in** — they have no row in the register table,
+>   so the ingest refuses them; open item 1 says exactly what a second run needs.
+
 > **2026-09-10 (av) — W31 APPLIED (§6 step 7): `sentence.register` + `register_rule` live on all
 > 5,889 bank sentences, the speaking path filters on them, and the A8 census closes. Gate green
 > (62 hard validators, four new); full manifest replay green and re-recorded. NOT COMMITTED (the run

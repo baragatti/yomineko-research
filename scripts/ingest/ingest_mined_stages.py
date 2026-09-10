@@ -48,15 +48,43 @@ Layer-B batches are read from --layerb (default research/derived/mined_layerb/) 
 `key`, falling back to `str(tatoeba_id)` so the 324 already-authored batches, which predate the key,
 still load.
 
+W13 APPLY made four more changes, all of them about the ingest being safe to run 4,223 rows through:
+
+  * --register-table PATH  W31 (A8/D7) derived `register` + `register_rule` for these 4,223 rows
+                           BEFORE they were in the bank and filed them in the same exact-match table
+                           as the 5,889 banked ones, as asserted deferrals: `validate_repairs_applied.py`
+                           fails the moment one of their slugs appears in the export without the
+                           table's value. So the ingest READS the table rather than deriving a value
+                           of its own, and a row with no table entry is refused, not defaulted —
+                           a defaulted `neutral` passes the speaking-path filter silently, which is
+                           the failure that field exists to prevent.
+  * batch atomicity        persist() now takes commit=False, so a Layer-B batch is ONE transaction:
+                           if any sentence in it violates I1-I3 the whole batch rolls back and the
+                           run stops. Before this, persist() committed per sentence and "rollback"
+                           was a word with nothing behind it.
+  * --provenance-source    `sentence.source` is the CAMPAIGN (w13:n3-exemplification), not a second
+                           copy of `jp_source`. Where the Japanese came from is `jp_source`
+                           (tatoeba / ai-generated) and stays Layer A.
+  * grammar targets        a row whose `target`/`targets[]` names `gram:<key>` gets a
+                           `sentence_grammar` row for that point — the verifier already proved the
+                           form occurs in the sentence, and `validate_sentence_coverage.py` counts
+                           the grammar floor off exactly this edge. Resolution is EXACT on
+                           `grammar_point.key` only: persist_dissection.find_grammar()'s LIKE
+                           fallback would silently tag a different point. The pass is idempotent
+                           (INSERT OR IGNORE) and also runs over rows that were already banked, so a
+                           re-run repairs a partial one instead of skipping it.
+
 Usage: ingest_mined_stages.py [--apply] [--source PATH ...] [--layerb DIR] [--tag TAG] [--db PATH]
+       [--register-table PATH] [--provenance-source NAME] [--batches 1,2,3]
        (default is a dry run)
 
-DRY-RUN CAVEAT, found the hard way on the first run: persist_dissection.persist() COMMITS internally, so
-wrapping it in BEGIN/rollback here does not undo anything. The first "dry run" of this script wrote all
-324 rows. The check below is therefore a PRE-FLIGHT: without --apply it validates every record and
-reports what would happen, and refuses to call persist() at all. The invariant re-check still runs on
---apply and still aborts the remainder of the batch, but it cannot un-write rows already committed by an
-earlier persist() call, so the pre-flight is what protects the corpus, not the rollback.
+DRY-RUN CAVEAT, found the hard way on the first run: persist_dissection.persist() used to COMMIT
+internally, so wrapping it in BEGIN/rollback here did not undo anything and the first "dry run" of this
+script wrote all 324 rows. Two things now stand between that and the corpus. Without --apply this is a
+PRE-FLIGHT: every record is validated and reported and persist() is never called. With --apply, persist()
+is called with commit=False, so a Layer-B batch is one transaction and a batch whose invariants fail is
+rolled back whole and the run STOPS with the batches before it committed and the batches after it
+untouched -- re-running resumes, because an already-banked slug is skipped.
 """
 from __future__ import annotations
 import argparse, hashlib, json, sqlite3, sys
@@ -73,6 +101,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
 SRC = ROOT / "research" / "derived" / "mined_pt" / "_accepted.json"
 LAYERB = ROOT / "research" / "derived" / "mined_layerb"
+REGISTER_TABLE = ROOT / "research" / "derived" / "repairs" / "sentence_register.json"
 
 
 def sentence_key(row: dict) -> str:
@@ -110,6 +139,28 @@ def invariants(con: sqlite3.Connection, sid: int) -> list[str]:
     return bad
 
 
+def load_register_table(path: Path) -> dict[str, tuple]:
+    """{slug: (register, rule)} from research/derived/repairs/sentence_register.json.
+
+    The table addresses a row two ways and both are indexed here, because the table is regenerated
+    the day the ingest lands: BEFORE the ingest a W13 row's key is `tatoeba-<id>` / `gen-<hash>`
+    (set "w13", and the slug it will have is `sent:` + the key); AFTER it, the derivation re-emits
+    the same sentence as a plain bank row keyed by its slug. Indexing by slug makes the ingest read
+    the same value from either generation of the table.
+    """
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    out: dict[str, tuple] = {}
+    for r in doc["rows"]:
+        key = r["key"]
+        out[key if key.startswith("sent:") else "sent:" + key] = (r["register"], r["rule"])
+    return out
+
+
+def grammar_ids(con: sqlite3.Connection) -> dict[str, int]:
+    """{key: grammar_point id}, EXACT. No LIKE fallback: `n3-koto` must never tag `n3-koto-da`."""
+    return {k: i for i, k in con.execute("SELECT id, key FROM grammar_point")}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="write; default is dry-run")
@@ -119,12 +170,18 @@ def main() -> int:
     ap.add_argument("--tag", default=None,
                     help="unit tag written alongside 'mined'; default keeps the old stage:<stage>")
     ap.add_argument("--db", type=Path, default=None, help="target DB (default: db_target)")
+    ap.add_argument("--register-table", type=Path, default=REGISTER_TABLE,
+                    help="W31 exact-match register table; every ingested key must appear in it")
+    ap.add_argument("--provenance-source", default=None,
+                    help="sentence.source = the campaign (jp_source stays the Layer-A origin)")
+    ap.add_argument("--batches", default=None,
+                    help="comma-separated Layer-B batch numbers to ingest (default: all)")
     args = ap.parse_args()
     sources, db = args.source or [SRC], args.db or DB
     rows = []
     for src in sources:
         if not src.exists():
-            print(f"missing {src} — run the authoring workflow first")
+            print(f"missing {src} - run the authoring workflow first")
             return 1
         rows += [r for r in json.loads(src.read_text(encoding="utf-8"))["rows"]
                  if not r.get("reject")]
@@ -134,22 +191,41 @@ def main() -> int:
     from persist_dissection import persist
 
     # Layer-B dissection content, authored and reviewed separately. Every bank sentence is
-    # dissection_tier "full", which validate.py reads as a promise of a gloss on every content token, an
-    # explanation on every particle, and a structure paragraph. Ingesting without these is what produced
-    # 2,756 validator errors on the first trial run.
+    # dissection_tier "full", which validate.py reads as a promise of a gloss on every content token,
+    # an explanation on every particle, and a structure paragraph. Ingesting without these is what
+    # produced 2,756 validator errors on the first trial run.
+    #
+    # The batch a key came from is remembered, because the batch is the UNIT OF ATOMICITY below.
     layerb: dict[str, dict] = {}
+    batch_of: dict[str, str] = {}
     for f in sorted(args.layerb.glob("batch-*.json")):
         for s2 in json.loads(f.read_text(encoding="utf-8")).get("sentences", []):
             # `key` is W13b's; the 324 batches authored before it carry only tatoeba_id.
-            layerb[str(s2.get("key") or s2["tatoeba_id"])] = s2
-    print(f"{len(layerb)} sentences carry authored Layer-B dissection content")
+            k = str(s2.get("key") or s2["tatoeba_id"])
+            layerb[k] = s2
+            batch_of[k] = f.name
+    print(f"{len(layerb)} sentences carry authored Layer-B dissection content in "
+          f"{len(set(batch_of.values()))} batch file(s)")
+
+    want_batches = None
+    if args.batches:
+        nums = {int(x) for x in args.batches.replace(" ", "").split(",") if x}
+        want_batches = {f"batch-{n:02d}.json" for n in nums}
+        print(f"restricted to {sorted(want_batches)}")
+
+    registers = load_register_table(args.register_table)
+    print(f"{len(registers)} rows in the register table {args.register_table.name}")
+
     con = sqlite3.connect(db)
     raw = {i: t for i, t in con.execute("SELECT id,text FROM raw_tatoeba_sentence")}
     have = {s for s, in con.execute("SELECT slug FROM sentence")}
-    diss = Dissector(DB)
+    gids = grammar_ids(con)
+    diss = Dissector(db)
 
+    # ---- pre-flight over every row, before a single write ---------------------------------------
+    # Grouped by Layer-B batch, so the run is resumable and one bad batch stops the rest.
+    plan: dict[str, list[dict]] = {}
     stats, problems = Counter(), []
-    con.execute("BEGIN")
     for r in rows:
         tid, jp = r["tatoeba_id"], r["jp"]
         key = sentence_key(r)
@@ -158,74 +234,148 @@ def main() -> int:
         if not generated and raw.get(tid) != jp:
             # The Japanese is Layer A. If it does not match the source row byte-for-byte, someone
             # edited it, and we drop rather than ingest a silently-altered original. A generated row
-            # has no Layer-A original to compare against, so the guard does not apply to it — what
+            # has no Layer-A original to compare against, so the guard does not apply to it - what
             # protects those is `ai_generated` + `needs_review`, not this check.
             problems.append((slug, "jp does not match the raw Tatoeba row"))
             stats["jp-altered"] += 1
             continue
-        if slug in have:
-            stats["already-banked"] += 1
+        batch = batch_of.get(key)
+        if batch is None:
+            problems.append((slug, "no Layer-B batch carries this key - a full-tier sentence "
+                                   "without glosses/explanations/paragraph fails validate.py"))
+            stats["no-layerb"] += 1
             continue
-        lb = layerb.get(key, {})
-        # The English anchor is Layer A and belongs to the jp id, so read it from the source of truth
-        # rather than trusting it to survive the authoring round-trip. The pt-BR authoring schema
-        # ({tatoeba_id, jp, pt, pt_literal, register, reject, reject_reason}) has no `en` key, so
-        # `r.get("en")` silently returned None for all 324 rows of the first run and every one landed
-        # with no anchor -- see research/reports/en_anchor_backfill.md.
-        anchor = r.get("en") or (None if generated else (con.execute(
-            "SELECT text FROM raw_tatoeba_translation WHERE jp_id=? AND lang='eng' "
-            "ORDER BY trans_id LIMIT 1", (tid,)).fetchone() or (None,))[0])
-        rec = {
-            "slug": slug, "jp": jp, "en": anchor,
-            "pt": r.get("pt"), "pt_literal": r.get("pt_literal"),
-            "structure_explanation_pt": lb.get("structure_explanation_pt"),
-            # persist() keys these by token/particle POSITION, so they must be dicts, not lists.
-            "tokens": {t["position"]: t for t in lb.get("tokens", [])},
-            "particles": {q["position"]: q for q in lb.get("particles", [])},
-            # "ai-generated" is prepare_generated.py's value and covers 2,207 of the 2,213 gen rows
-            # already banked; matching it keeps one convention rather than adding a second.
-            "jp_source": "ai-generated" if generated else "tatoeba",
-            "ai_generated": 1 if generated else 0,
-            "tags": ["mined", args.tag or f"stage:{r.get('stage', '')}"],
-            "translation_confidence": 0.8,
-        }
-        if not args.apply:
-            # Pre-flight only. persist() commits internally, so calling it here would WRITE — which is
-            # exactly what the first run of this script did while claiming to be a dry run.
-            stats["would-ingest"] += 1
+        if want_batches is not None and batch not in want_batches:
+            stats["out-of-scope"] += 1
             continue
-        try:
-            sid = persist(con, diss, rec)
-        except Exception as e:                       # noqa: BLE001 - one bad row must not kill the run
-            problems.append((slug, f"persist failed: {e}"))
-            stats["persist-error"] += 1
+        if slug not in registers:
+            problems.append((slug, "no row in the register table - refusing to default a register"))
+            stats["no-register"] += 1
             continue
-        if sid == -1:
-            stats["content-blocklisted"] += 1
+        keys = sorted({t.split(":", 1)[1] for t in (r.get("targets")
+                                                    or ([r["target"]] if r.get("target") else []))
+                       if t.startswith("gram:")})
+        unknown = [k for k in keys if k not in gids]
+        if unknown:
+            problems.append((slug, f"grammar target(s) name no grammar_point: {unknown}"))
+            stats["grammar-unresolved"] += 1
             continue
-        bad = invariants(con, sid)
-        if bad:
-            problems.append((slug, "; ".join(bad)))
-            stats["invariant-violation"] += 1
-            continue
-        stats["ingested"] += 1
+        r["_key"], r["_slug"], r["_batch"] = key, slug, batch
+        r["_generated"], r["_grammar"] = generated, keys
+        plan.setdefault(batch, []).append(r)
 
-    if stats["invariant-violation"] or stats["jp-altered"]:
-        con.rollback()
-        print("ROLLED BACK — refusing a partial ingest:")
-        for s, w in problems[:20]:
+    if (stats["jp-altered"] or stats["no-layerb"] or stats["no-register"]
+            or stats["grammar-unresolved"]):
+        print("PRE-FLIGHT REFUSED - nothing was written:")
+        for s, w in problems[:25]:
             print(f"   {s}: {w}")
         print(f"   totals {dict(stats)}")
+        con.close()
         return 1
-    if args.apply:
+
+    print(f"pre-flight clean: {sum(len(v) for v in plan.values())} rows over {len(plan)} batches")
+    if not args.apply:
+        for b in sorted(plan):
+            n_new = sum(1 for r in plan[b] if r["_slug"] not in have)
+            stats["would-ingest"] += n_new
+            stats["already-banked"] += len(plan[b]) - n_new
+        print(f"ingest (dry-run, nothing written): {dict(stats)}")
+        con.close()
+        return 0
+
+    # ---- apply, one batch at a time, each batch ONE transaction ---------------------------------
+    per_batch: list[tuple[str, int]] = []
+    for batch in sorted(plan):
+        con.execute("BEGIN")
+        batch_ids, failed = [], []
+        for r in plan[batch]:
+            slug, key = r["_slug"], r["_key"]
+            if slug in have:
+                stats["already-banked"] += 1
+                continue
+            lb = layerb.get(key, {})
+            # The English anchor is Layer A and belongs to the jp id, so read it from the source of
+            # truth rather than trusting it to survive the authoring round-trip. The pt-BR authoring
+            # schema ({tatoeba_id, jp, pt, pt_literal, register, reject, reject_reason}) has no `en`
+            # key, so `r.get("en")` silently returned None for all 324 rows of the first run and
+            # every one landed with no anchor -- see research/reports/en_anchor_backfill.md.
+            anchor = r.get("en") or (None if r["_generated"] else (con.execute(
+                "SELECT text FROM raw_tatoeba_translation WHERE jp_id=? AND lang='eng' "
+                "ORDER BY trans_id LIMIT 1", (r["tatoeba_id"],)).fetchone() or (None,))[0])
+            rec = {
+                "slug": slug, "jp": r["jp"], "en": anchor,
+                "pt": r.get("pt"), "pt_literal": r.get("pt_literal"),
+                "structure_explanation_pt": lb.get("structure_explanation_pt"),
+                # persist() keys these by token/particle POSITION, so they must be dicts, not lists.
+                "tokens": {t["position"]: t for t in lb.get("tokens", [])},
+                "particles": {q["position"]: q for q in lb.get("particles", [])},
+                # "ai-generated" is prepare_generated.py's value and covers 2,207 of the 2,213 gen
+                # rows already banked; matching it keeps one convention rather than adding a second.
+                "jp_source": "ai-generated" if r["_generated"] else "tatoeba",
+                "source": args.provenance_source,
+                "ai_generated": 1 if r["_generated"] else 0,
+                "tags": ["mined", args.tag or f"stage:{r.get('stage', '')}"],
+                "translation_confidence": 0.8,
+                "grammar_keys": r["_grammar"],
+            }
+            try:
+                sid = persist(con, diss, rec, commit=False)
+            except Exception as e:                  # noqa: BLE001 - one bad row must not kill the run
+                failed.append((slug, f"persist failed: {e}"))
+                continue
+            if sid == -1:
+                stats["content-blocklisted"] += 1
+                continue
+            bad = invariants(con, sid)
+            if bad:
+                failed.append((slug, "; ".join(bad)))
+                continue
+            reg, rule = registers[slug]
+            # W31's value, placed. Nothing here decides a register.
+            con.execute("UPDATE sentence SET register=?, register_rule=? WHERE id=?",
+                        (reg, rule, sid))
+            batch_ids.append(sid)
+        if failed:
+            con.rollback()
+            print(f"ROLLED BACK {batch} ({len(batch_ids)} rows discarded) - refusing a partial "
+                  f"ingest:")
+            for s, w in failed[:20]:
+                print(f"   {s}: {w}")
+            print(f"   totals so far {dict(stats)}; batches done {per_batch}")
+            con.close()
+            return 1
         con.commit()
-    else:
-        con.rollback()
-    print(f"ingest ({'APPLIED' if args.apply else 'dry-run, rolled back'}): {dict(stats)}")
+        have |= {r["_slug"] for r in plan[batch]}
+        stats["ingested"] += len(batch_ids)
+        per_batch.append((batch, len(batch_ids)))
+        print(f"   {batch}: +{len(batch_ids)}")
+
+    # ---- idempotent grammar-tag + register pass, over EVERY planned row --------------------------
+    # persist() writes the grammar edges for the rows it created; this repeats the claim for rows an
+    # earlier partial run had already banked, so a re-run repairs instead of skipping.
+    sid_of = {s: i for s, i in con.execute("SELECT slug,id FROM sentence")}
+    tagged = 0
+    for batch in sorted(plan):
+        for r in plan[batch]:
+            sid = sid_of.get(r["_slug"])
+            if sid is None:
+                continue
+            for k in r["_grammar"]:
+                cur = con.execute("INSERT OR IGNORE INTO sentence_grammar "
+                                  "(sentence_id,grammar_id,usage_note_pt) VALUES (?,?,NULL)",
+                                  (sid, gids[k]))
+                tagged += cur.rowcount or 0
+            reg, rule = registers[r["_slug"]]
+            con.execute("UPDATE sentence SET register=?, register_rule=? WHERE id=?",
+                        (reg, rule, sid))
+    con.commit()
+    stats["grammar-tags-written"] = tagged
+
+    print(f"ingest (APPLIED): {dict(stats)}")
+    print(f"per batch: {per_batch}")
     for s, w in problems[:10]:
         print(f"   note {s}: {w}")
-    print("next: export_corpus.py, then build_speaking_path -> _checkpoints -> _practice, then "
-          "validate_all.py")
+    print("next: export_corpus.py, then validate_all.py")
     con.close()
     return 0
 

@@ -68,7 +68,19 @@ def find_grammar(con: sqlite3.Connection, term: str) -> int | None:
     return row[0] if row else None
 
 
-def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
+def persist(con: sqlite3.Connection, diss, rec: dict, commit: bool = True) -> int:
+    """Persist one dissected sentence. Returns the sentence id, or -1 when content-blocklisted.
+
+    `commit` (W13 apply): the historical behaviour is to COMMIT at the end of every sentence, which
+    made a batch un-rollbackable — `ingest_mined_stages.py` documents its first "dry run" writing 324
+    rows for exactly this reason. Passing commit=False leaves the transaction open so the CALLER owns
+    it and a batch that fails its structural invariants can be rolled back whole. The default is
+    unchanged, so `apply_escalated_sentences.py` and every other caller keep the old semantics.
+
+    `rec["source"]` (W13 apply): the provenance `source` used to be forced to `jp_source`, which
+    records where the JAPANESE came from and cannot also record which campaign brought the row in.
+    It now falls back to `jp_source` when absent, so nothing that does not set it changes.
+    """
     cur = con.cursor()
     slug = rec["slug"]
     if slug in BLOCKED_SLUGS or rec.get("jp") in BLOCKED_JP:
@@ -91,7 +103,8 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
          float(len(rec["jp"])),
          json.dumps(rec.get("tags", []), ensure_ascii=False),
          json.dumps(rec.get("new_items", []), ensure_ascii=False),
-         tier, int(rec.get("ai_generated", 0)), 0, rec["jp_source"], "ai", "B", 1))
+         tier, int(rec.get("ai_generated", 0)), 0, rec.get("source") or rec["jp_source"],
+         "ai", "B", 1))
     sid = cur.lastrowid
     # Layer-B localized content -> localized_text (neutral fields)
     set_text(con, "sentence", sid, "translation", rec.get("pt"), layer="B")
@@ -142,5 +155,6 @@ def persist(con: sqlite3.Connection, diss, rec: dict) -> int:
         if gid:
             cur.execute("INSERT OR IGNORE INTO sentence_grammar (sentence_id,grammar_id,usage_note_pt) "
                         "VALUES (?,?,?)", (sid, gid, rec.get("grammar_notes", {}).get(term)))
-    con.commit()
+    if commit:
+        con.commit()
     return sid

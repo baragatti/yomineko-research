@@ -11,8 +11,8 @@ _Acceptance #10. The four spec queries are run VERBATIM — every clause of the 
 ## Q2 — Every vocab item using the kun-reading た.べる of 食, with its dissected sentences.
 
 **2 rows.**
-- 食べる (vocab:1358280) — 101 dissected sentences
-- 食べ物 (vocab:1358340) — 5 dissected sentences
+- 食べる (vocab:1358280) — 126 dissected sentences
+- 食べ物 (vocab:1358340) — 13 dissected sentences
 
 PASS
 

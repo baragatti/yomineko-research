@@ -88,7 +88,7 @@ _Mostly affixes/counters/grammar-like/multiword; route to grammar or handle in P
 ---
 ## Sentence validation (§7)
 
-Validated 5889 sentences — **0 errors, 1283 warnings**, 4762 clean.
+Validated 10112 sentences — **0 errors, 1635 warnings**, 8669 clean.
 - sentence 6 `母は外出しています。`:
   - **warn**: sentence level n4 below max component level
 - sentence 10 `日曜日はのんびりしています。`:
@@ -116,6 +116,8 @@ Validated 5889 sentences — **0 errors, 1283 warnings**, 4762 clean.
   - **warn**: sentence level n5 below max component level
 - sentence 69 `一人で行かなくちゃ。`:
   - **warn**: sentence level n4 below max component level
+- sentence 71 `行かなくちゃいけないの？`:
+  - **warn**: sentence level n4 below max component level
 - sentence 76 `とりあえず、あたりさわりのない話をしておいたよ。`:
   - **warn**: lemma あたりさわり not in JMdict-common (may be in full)
 - sentence 78 `１万円でたりる？`:
@@ -126,6 +128,7 @@ Validated 5889 sentences — **0 errors, 1283 warnings**, 4762 clean.
 - sentence 82 `10ヶ国語を話せたらどんなにかっこいいだろう！`:
   - **warn**: lemma 10 not in JMdict-common (may be in full)
   - **warn**: lemma 話せる not in JMdict-common (may be in full)
+  - **warn**: sentence level n5 below max component level
 - sentence 84 `まあ、いいけど。`:
   - **warn**: sentence level n5 below max component level
 - sentence 90 `５月は４月のあとにくる。`:
@@ -214,5 +217,3 @@ Validated 5889 sentences — **0 errors, 1283 warnings**, 4762 clean.
   - **warn**: lemma 流動体 not in JMdict-common (may be in full)
 - sentence 470 `コンサートに行ければ、彼は喜ぶだろう。`:
   - **warn**: lemma 行ける not in JMdict-common (may be in full)
-- sentence 480 `都合のいいときいつでもいらっしゃい。`:
-  - **warn**: sentence level n4 below max component level

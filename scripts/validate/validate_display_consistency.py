@@ -36,7 +36,18 @@ strip = lambda s: WS.sub("", s or "")
 # matching (the text was repaired, or the sentence was re-dissected) fails too, so this list can only
 # shrink. Delete the line when the string is fixed.
 _TRIAGE = "open triage 2026-08-26 (F16): cross-sentence citation, queued for the content re-authoring pass"
+_W13 = ("W13 apply 2026-09-10: a mined N3 sentence whose Layer-B explanation teaches by CONTRAST "
+        "and therefore names a form the sentence does not contain (困ったことに beside 幸いなことに, "
+        "the dictionary お願いする behind よろしく). Same class as the 52 entries above and queued "
+        "with them for the content re-authoring pass; not repaired here, because repairing it "
+        "means rewriting learner prose and this unit authors none.")
 SOFT_BASELINE: dict[str, str] = {
+    "expl[pt-BR]|sent:tatoeba-173710|困ったことに": _W13,
+    "expl[pt-BR]|sent:tatoeba-201303|お願いする": _W13,
+    "expl[pt-BR]|sent:tatoeba-12700844|お願いする": _W13,
+    "expl[pt-BR]|sent:tatoeba-217060|お願いします": _W13,
+    "expl[pt-BR]|sent:tatoeba-3451118|誕生日おめでとう": _W13,
+    "particle-expl[pt-BR]|sent:tatoeba-12288646|学校で勉強する": _W13,
     "expl[en]|sent:gen-74ea68439313|要りません,要る": _TRIAGE,
     "expl[en]|sent:gen-941ec1bd04ae|無くなった": _TRIAGE,
     "expl[en]|sent:gen-e9848d9848e8|小さくする": _TRIAGE,

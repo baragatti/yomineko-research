@@ -59,7 +59,11 @@ DB = db_target(ROOT / "db" / "corpus.sqlite")
 # could never be re-run or audited. --data PATH still overrides.
 DATA = ROOT / "research" / "derived" / "repairs" / "sentence_text_repairs.json"
 
-FIELDS = {"structure_explanation", "translation_literal"}
+# W13 apply added `translation`: the same de-accenting defect the hygiene gate catches can land
+# in the learner-facing translation as easily as in the scaffold beside it, and three W13 rows
+# did exactly that (irmao/nao/questao). The field is a `localized_text` row on `sentence` like
+# the other two, so nothing else in this script changes.
+FIELDS = {"structure_explanation", "translation_literal", "translation"}
 LOCALES = {"pt-BR", "en"}
 
 

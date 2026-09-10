@@ -1,0 +1,9747 @@
+{
+ "what_this_is": "W12 orthographic relink. One row per (sentence, token span) that names a taught n3 vocabulary record under the >=3 sentence floor under a different orthography. Derived by scripts/apply_orthographic_relinks.py --derive from db/corpus.sqlite + the exported course tree; applied by the same script. Addressed by sentence SLUG and token POSITION, never by row id.",
+ "match_rule": "lemma (or surface) is a registered form of the record — headword, kana, vocab_form, or a JMdict kanji/kana element — AND the realized reading is a registered kana reading. Never a substring match.",
+ "scope": "taught vocab at n3 under the floor",
+ "derivation_counters": {
+  "kana-exact": 195,
+  "run-reading": 281,
+  "skip:all-function-words": 6004,
+  "skip:ambiguous-run": 319,
+  "skip:ambiguous-token": 21,
+  "skip:kana-run-not-uk": 31,
+  "skip:kana-token-not-uk": 1,
+  "skip:no-free-anchor": 2,
+  "skip:out-of-scope-run": 1304,
+  "skip:productive-kana-verb-run": 29,
+  "skip:run-starts-on-a-particle": 70614,
+  "held:i+1-budget": 37
+ },
+ "links_by_level": {
+  "n3": 439
+ },
+ "row_count": 439,
+ "held_count": 37,
+ "held": [
+  {
+   "sentence": "sent:gen-0114d50c684c",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:gen-59401317dba3",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 budget: les:n4-keigo-05 renders this sentence and its load goes 2 -> 3 against a budget of 2. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:gen-6c6ce0d2199b",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:gen-96ce440b58e0",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:gen-d3bba30db3a5",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 budget: les:n4-passiva-04 renders this sentence and its load goes 2 -> 3 against a budget of 2. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:gen-e9bb12279da1",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-10510923",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-1057336",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 budget: les:n5-particulas-lugar-03 renders this sentence and its load goes not listed -> 2 against a budget of 1. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-10588050",
+   "anchor_position": 2,
+   "span": [
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-10914902",
+   "anchor_position": 2,
+   "span": [
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-10914924",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "それ",
+    "で",
+    "も"
+   ],
+   "surface": "それでも",
+   "lemma": "それ+で+も",
+   "reading": "それでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1406060",
+   "headword": "其れでも",
+   "kana": "それでも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-10937074",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "それ",
+    "で",
+    "も"
+   ],
+   "surface": "それでも",
+   "lemma": "それ+で+も",
+   "reading": "それでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1406060",
+   "headword": "其れでも",
+   "kana": "それでも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-12653680",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "学"
+   ],
+   "surface": "学",
+   "lemma": "学",
+   "reading": "がく",
+   "pos": "noun",
+   "vocab": "vocab:1955900",
+   "headword": "学",
+   "kana": "がく",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-171272",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-174355",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-182472",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 budget: les:n4-forma-simples-07 renders this sentence and its load goes not listed -> 3 against a budget of 2. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-187786",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-2040918",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-227007",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-236769",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なぜ",
+    "なら"
+   ],
+   "surface": "なぜなら",
+   "lemma": "なぜ+だ",
+   "reading": "なぜなら",
+   "pos": "adverb+auxiliary",
+   "vocab": "vocab:1009410",
+   "headword": "何故なら",
+   "kana": "なぜなら",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-236843",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 budget: les:n4-keigo-02 renders this sentence and its load goes 2 -> 3 against a budget of 2. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-236843",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 budget: les:n4-keigo-02 renders this sentence and its load goes 2 -> 3 against a budget of 2. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-2431512",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "で"
+   ],
+   "surface": "何で",
+   "lemma": "何+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-2431512",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-2656832",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-2656834",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-5078",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 budget: les:n5-desu-wa-01 renders this sentence and its load goes not listed -> 2 against a budget of 1. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-5185663",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-778974",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 budget: les:n5-perguntas-04 renders this sentence and its load goes not listed -> 2 against a budget of 1. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-77936",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-82538",
+   "anchor_position": 3,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "行け",
+    "ない"
+   ],
+   "surface": "行けない",
+   "lemma": "行ける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 budget: les:n5-conectando-01 renders this sentence and its load goes 1 -> 2 against a budget of 1. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-8504285",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-8900817",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "で"
+   ],
+   "surface": "何で",
+   "lemma": "何+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-8938683",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-9966058",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-9974818",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact",
+   "hold_reason": "i+1 budget: les:n4-dar-receber-04 renders this sentence and its load goes not listed -> 3 against a budget of 2. Held for W14 (lesson sentence re-selection)."
+  },
+  {
+   "sentence": "sent:tatoeba-9979575",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading",
+   "hold_reason": "i+1 backlog: this link puts the FIRST unknown vocabulary item into a sentence a lesson renders, which grows validate_lesson_gating check D's `pairs_with_new_vocab` counter (frozen at 227 in research/reports/lesson_sentence_baseline.json). Held for W14 (lesson sentence re-selection)."
+  }
+ ],
+ "rows": [
+  {
+   "sentence": "sent:gen-03fb8ac00df5",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-05b0660b5549",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-079400c974bb",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-0877b1b2f764",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "気温"
+   ],
+   "surface": "気温",
+   "lemma": "気温",
+   "reading": "きおん",
+   "pos": "noun",
+   "vocab": "vocab:1221950",
+   "headword": "気温",
+   "kana": "きおん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-0a34fc285d38",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-0c84d2e09d40",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-0f0167c5732e",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-1204f5348d39",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-15d83169104c",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-1aa88419b848",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "気温"
+   ],
+   "surface": "気温",
+   "lemma": "気温",
+   "reading": "きおん",
+   "pos": "noun",
+   "vocab": "vocab:1221950",
+   "headword": "気温",
+   "kana": "きおん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-1ab712f1023e",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-1f6fd836c289",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-23b4f904b8d2",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-27b69f57c9ce",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-27ebf940717d",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-2c5e6adc5ce1",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-2d194443db15",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-2d1dcf054c6b",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-2d4d2149594f",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-2f6b42865629",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "黒板"
+   ],
+   "surface": "黒板",
+   "lemma": "黒板",
+   "reading": "こくばん",
+   "pos": "noun",
+   "vocab": "vocab:1288080",
+   "headword": "黒板",
+   "kana": "こくばん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-2fae8986ebe2",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-323a00b216dd",
+   "anchor_position": 6,
+   "span": [
+    6
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-33199acd7aa9",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-371d460aa64a",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-39b080d89070",
+   "anchor_position": 2,
+   "span": [
+    1,
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "男",
+    "の",
+    "人"
+   ],
+   "surface": "男の人",
+   "lemma": "男+の+人",
+   "reading": "おとこのひと",
+   "pos": "noun+particle+noun",
+   "vocab": "vocab:1420020",
+   "headword": "男の人",
+   "kana": "おとこのひと",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-3d755419af95",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-3e5bee898904",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-40d80648b601",
+   "anchor_position": 2,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "徐々",
+    "に"
+   ],
+   "surface": "徐々に",
+   "lemma": "徐々+に",
+   "reading": "じょじょに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1595480",
+   "headword": "徐々に",
+   "kana": "じょじょに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-4b81bb2c6fa6",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-4f7bae8254ea",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7,
+    8
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-532623825322",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-534270508bfe",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-54dd1d1ebf25",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-574302901ae7",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-574302901ae7",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-5a40072c8398",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-5afcbfd904ee",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-5d87d374250f",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-65c29928a685",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-66bf90ac383b",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "気温"
+   ],
+   "surface": "気温",
+   "lemma": "気温",
+   "reading": "きおん",
+   "pos": "noun",
+   "vocab": "vocab:1221950",
+   "headword": "気温",
+   "kana": "きおん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-6c476f645be5",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "タオル"
+   ],
+   "surface": "タオル",
+   "lemma": "タオル",
+   "reading": "たおる",
+   "pos": "noun",
+   "vocab": "vocab:1076170",
+   "headword": "タオル",
+   "kana": "タオル",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-71ba853b1fa6",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-79a9934fa972",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-7daeb06c4d8c",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-7ec5eebab7f9",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-7f5269c2e704",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-8905ecfa5023",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-898c75a786ee",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-8e31dc88cc14",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-909448ed583a",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-925c3634124e",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-93be20a51b9d",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-956243cc178c",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-99ac69b41a60",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-9bc68ba429b0",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-a0241d2a988e",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-a1ca586b348b",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-a62ef117391b",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-a662e03576ef",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "気温"
+   ],
+   "surface": "気温",
+   "lemma": "気温",
+   "reading": "きおん",
+   "pos": "noun",
+   "vocab": "vocab:1221950",
+   "headword": "気温",
+   "kana": "きおん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-b1de51c68b26",
+   "anchor_position": 2,
+   "span": [
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-b25ef26bffb2",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-b3a8a810d654",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-c18ff99f3216",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "気温"
+   ],
+   "surface": "気温",
+   "lemma": "気温",
+   "reading": "きおん",
+   "pos": "noun",
+   "vocab": "vocab:1221950",
+   "headword": "気温",
+   "kana": "きおん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-c43da4e362a6",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-c63e16ea70fa",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-cb73e9a42699",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-cb963867e5e4",
+   "anchor_position": 2,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "行け",
+    "ない"
+   ],
+   "surface": "行けない",
+   "lemma": "行ける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-d58ab4004378",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-e12e2080fb55",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-e12e2080fb55",
+   "anchor_position": 6,
+   "span": [
+    6
+   ],
+   "span_surfaces": [
+    "読み"
+   ],
+   "surface": "読み",
+   "lemma": "読み",
+   "reading": "よみ",
+   "pos": "noun",
+   "vocab": "vocab:1456130",
+   "headword": "読み",
+   "kana": "よみ",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-e3689d2b2fc4",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-e5a2ebb2f576",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-e6318f8e6b33",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "氏"
+   ],
+   "surface": "氏",
+   "lemma": "氏",
+   "reading": "し",
+   "pos": "suffix",
+   "vocab": "vocab:2101130",
+   "headword": "氏",
+   "kana": "し",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-e6f956627466",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-f48e05df2b74",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-f61dd9927146",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-f651850ced9a",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:gen-fa5b4860fc2e",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:gen-fd685d7120f8",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:jec-0603",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:jec-1326",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:jec-1398",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:jec-2805",
+   "anchor_position": 3,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "徐々",
+    "に"
+   ],
+   "surface": "徐々に",
+   "lemma": "徐々+に",
+   "reading": "じょじょに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1595480",
+   "headword": "徐々に",
+   "kana": "じょじょに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:jec-3881",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "飯"
+   ],
+   "surface": "飯",
+   "lemma": "飯",
+   "reading": "めし",
+   "pos": "noun",
+   "vocab": "vocab:1482010",
+   "headword": "飯",
+   "kana": "めし",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:jec-4985",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10025730",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1006974",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10117518",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10127367",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-1014812",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10148371",
+   "anchor_position": 7,
+   "span": [
+    7
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10157877",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10159953",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10169329",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-102931",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "全"
+   ],
+   "surface": "全",
+   "lemma": "全",
+   "reading": "ぜん",
+   "pos": "prefix",
+   "vocab": "vocab:1394770",
+   "headword": "全",
+   "kana": "ぜん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-103062",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-103366",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-103833",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10471329",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10492935",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10556983",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10589674",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10622618",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-106867",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10723299",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10725053",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10765950",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10773455",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10782616",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-108460",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10880227",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10906804",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "これ",
+    "ら"
+   ],
+   "surface": "これら",
+   "lemma": "これ+ら",
+   "reading": "これら",
+   "pos": "pronoun+suffix",
+   "vocab": "vocab:1004830",
+   "headword": "これ等",
+   "kana": "これら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10908739",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10910772",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10934582",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-109441",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-109454",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10952322",
+   "anchor_position": 6,
+   "span": [
+    6
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-10962344",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10979954",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1098413",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10987893",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "それ",
+    "で",
+    "も"
+   ],
+   "surface": "それでも",
+   "lemma": "それ+で+も",
+   "reading": "それでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1406060",
+   "headword": "其れでも",
+   "kana": "それでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-10996712",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "なん",
+    "で",
+    "も"
+   ],
+   "surface": "なんでも",
+   "lemma": "なん+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11001542",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11009578",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11022928",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-11024990",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11029885",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "節約"
+   ],
+   "surface": "節約",
+   "lemma": "節約",
+   "reading": "せつやく",
+   "pos": "noun",
+   "vocab": "vocab:1386350",
+   "headword": "節約",
+   "kana": "せつやく",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-11056158",
+   "anchor_position": 11,
+   "span": [
+    10,
+    11
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11056202",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-111460",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11173182",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "タオル"
+   ],
+   "surface": "タオル",
+   "lemma": "タオル",
+   "reading": "たおる",
+   "pos": "noun",
+   "vocab": "vocab:1076170",
+   "headword": "タオル",
+   "kana": "タオル",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-11471442",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11662087",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-11761196",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-118041",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-118464",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11883177",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1192382",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11926656",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-11956323",
+   "anchor_position": 2,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "どっ",
+    "か"
+   ],
+   "surface": "どっか",
+   "lemma": "どっ+か",
+   "reading": "どっか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-11960412",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-120747",
+   "anchor_position": 5,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "とんでも",
+    "ない"
+   ],
+   "surface": "とんでもない",
+   "lemma": "とんでも+ない",
+   "reading": "とんでもない",
+   "pos": "adverb+i-adjective",
+   "vocab": "vocab:1008790",
+   "headword": "とんでも無い",
+   "kana": "とんでもない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-121168",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-121505",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-121674",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "常",
+    "に"
+   ],
+   "surface": "常に",
+   "lemma": "常+に",
+   "reading": "つねに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1355970",
+   "headword": "常に",
+   "kana": "つねに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-124556",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いつ",
+    "で",
+    "も"
+   ],
+   "surface": "いつでも",
+   "lemma": "いつ+で+も",
+   "reading": "いつでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1577130",
+   "headword": "何時でも",
+   "kana": "いつでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-124653",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-125062",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-125913",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-125944",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-125967",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-126848",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "上"
+   ],
+   "surface": "上",
+   "lemma": "上",
+   "reading": "じょう",
+   "pos": "suffix",
+   "vocab": "vocab:1352170",
+   "headword": "上",
+   "kana": "じょう",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-126849",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "上"
+   ],
+   "surface": "上",
+   "lemma": "上",
+   "reading": "じょう",
+   "pos": "suffix",
+   "vocab": "vocab:1352170",
+   "headword": "上",
+   "kana": "じょう",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-126850",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "上"
+   ],
+   "surface": "上",
+   "lemma": "上",
+   "reading": "じょう",
+   "pos": "suffix",
+   "vocab": "vocab:1352170",
+   "headword": "上",
+   "kana": "じょう",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-12829733",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1323453",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-137629",
+   "anchor_position": 10,
+   "span": [
+    9,
+    10
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-137848",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-139686",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-140811",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "全"
+   ],
+   "surface": "全",
+   "lemma": "全",
+   "reading": "ぜん",
+   "pos": "prefix",
+   "vocab": "vocab:1394770",
+   "headword": "全",
+   "kana": "ぜん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-142116",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-142331",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "必ず",
+    "しも"
+   ],
+   "surface": "必ずしも",
+   "lemma": "必ず+しも",
+   "reading": "かならずしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1487410",
+   "headword": "必ずしも",
+   "kana": "かならずしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-142423",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-142480",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-142628",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-142988",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1431786",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-143557",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-143872",
+   "anchor_position": 10,
+   "span": [
+    9,
+    10
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-144419",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-144548",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-144643",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-144802",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1453928",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-145652",
+   "anchor_position": 10,
+   "span": [
+    9,
+    10
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-145925",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-146018",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-147576",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-148036",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-149148",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-149707",
+   "anchor_position": 10,
+   "span": [
+    9,
+    10,
+    11
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-151104",
+   "anchor_position": 11,
+   "span": [
+    10,
+    11
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1518094",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-152931",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "少し",
+    "も"
+   ],
+   "surface": "少しも",
+   "lemma": "少し+も",
+   "reading": "すこしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1348900",
+   "headword": "少しも",
+   "kana": "すこしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-156326",
+   "anchor_position": 12,
+   "span": [
+    12,
+    13
+   ],
+   "span_surfaces": [
+    "とんでも",
+    "ない"
+   ],
+   "surface": "とんでもない",
+   "lemma": "とんでも+ない",
+   "reading": "とんでもない",
+   "pos": "adverb+i-adjective",
+   "vocab": "vocab:1008790",
+   "headword": "とんでも無い",
+   "kana": "とんでもない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-156657",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "なぜ",
+    "なら"
+   ],
+   "surface": "なぜなら",
+   "lemma": "なぜ+だ",
+   "reading": "なぜなら",
+   "pos": "adverb+auxiliary",
+   "vocab": "vocab:1009410",
+   "headword": "何故なら",
+   "kana": "なぜなら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-158129",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-158445",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "一度",
+    "に"
+   ],
+   "surface": "一度に",
+   "lemma": "一度+に",
+   "reading": "いちどに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1609210",
+   "headword": "一度に",
+   "kana": "いちどに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-158845",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-159765",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "それ",
+    "で",
+    "も"
+   ],
+   "surface": "それでも",
+   "lemma": "それ+で+も",
+   "reading": "それでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1406060",
+   "headword": "其れでも",
+   "kana": "それでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-160444",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "そこ",
+    "で"
+   ],
+   "surface": "そこで",
+   "lemma": "そこ+で",
+   "reading": "そこで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1406090",
+   "headword": "其処で",
+   "kana": "そこで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1619859",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-163431",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-163525",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1643740",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-165585",
+   "anchor_position": 10,
+   "span": [
+    9,
+    10
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-170380",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-170660",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "小"
+   ],
+   "surface": "小",
+   "lemma": "小",
+   "reading": "しょう",
+   "pos": "prefix",
+   "vocab": "vocab:2083540",
+   "headword": "小",
+   "kana": "しょう",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-170835",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-172801",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-173369",
+   "anchor_position": 0,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "行け",
+    "ない"
+   ],
+   "surface": "行けない",
+   "lemma": "行ける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-174758",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-175757",
+   "anchor_position": 7,
+   "span": [
+    7
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-176510",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1768322",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "別",
+    "に"
+   ],
+   "surface": "別に",
+   "lemma": "別+だ",
+   "reading": "べつに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:1509480",
+   "headword": "別に",
+   "kana": "べつに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-177419",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "で"
+   ],
+   "surface": "何で",
+   "lemma": "何+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-179620",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-179724",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "金"
+   ],
+   "surface": "金",
+   "lemma": "金",
+   "reading": "きん",
+   "pos": "noun",
+   "vocab": "vocab:1242600",
+   "headword": "金",
+   "kana": "きん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-182115",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "とも",
+    "に"
+   ],
+   "surface": "ともに",
+   "lemma": "とも+に",
+   "reading": "ともに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1234260",
+   "headword": "共に",
+   "kana": "ともに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-182460",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-182469",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-182471",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-183109",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-184225",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-184333",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-184859",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187672",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187784",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187788",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187839",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187926",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187939",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187941",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-187941",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-188036",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-188096",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-188098",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-188146",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-188171",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-188552",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-189116",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-190560",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-190565",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-191491",
+   "anchor_position": 2,
+   "span": [
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-193223",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-193645",
+   "anchor_position": 13,
+   "span": [
+    12,
+    13
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-193774",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "もし",
+    "も"
+   ],
+   "surface": "もしも",
+   "lemma": "もし+も",
+   "reading": "もしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1612050",
+   "headword": "若しも",
+   "kana": "もしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-193781",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "もし",
+    "も"
+   ],
+   "surface": "もしも",
+   "lemma": "もし+も",
+   "reading": "もしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1612050",
+   "headword": "若しも",
+   "kana": "もしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-193784",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "もし",
+    "も"
+   ],
+   "surface": "もしも",
+   "lemma": "もし+も",
+   "reading": "もしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1612050",
+   "headword": "若しも",
+   "kana": "もしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-193787",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "もし",
+    "も"
+   ],
+   "surface": "もしも",
+   "lemma": "もし+も",
+   "reading": "もしも",
+   "pos": "adverb+particle",
+   "vocab": "vocab:1612050",
+   "headword": "若しも",
+   "kana": "もしも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-193809",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-195731",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "マイク"
+   ],
+   "surface": "マイク",
+   "lemma": "マイク",
+   "reading": "まいく",
+   "pos": "noun",
+   "vocab": "vocab:1126590",
+   "headword": "マイク",
+   "kana": "マイク",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-195773",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "マイク"
+   ],
+   "surface": "マイク",
+   "lemma": "マイク",
+   "reading": "まいく",
+   "pos": "noun",
+   "vocab": "vocab:1126590",
+   "headword": "マイク",
+   "kana": "マイク",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-195794",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "マイク"
+   ],
+   "surface": "マイク",
+   "lemma": "マイク",
+   "reading": "まいく",
+   "pos": "noun",
+   "vocab": "vocab:1126590",
+   "headword": "マイク",
+   "kana": "マイク",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-196441",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-196441",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-198114",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-198795",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-1992048",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-199220",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なぜ",
+    "なら"
+   ],
+   "surface": "なぜなら",
+   "lemma": "なぜ+だ",
+   "reading": "なぜなら",
+   "pos": "adverb+auxiliary",
+   "vocab": "vocab:1009410",
+   "headword": "何故なら",
+   "kana": "なぜなら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199229",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なぜ",
+    "なら"
+   ],
+   "surface": "なぜなら",
+   "lemma": "なぜ+だ",
+   "reading": "なぜなら",
+   "pos": "adverb+auxiliary",
+   "vocab": "vocab:1009410",
+   "headword": "何故なら",
+   "kana": "なぜなら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199286",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199498",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199499",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199501",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199506",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199507",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199509",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199554",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199566",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-199741",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-200839",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-200839",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-200872",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-200910",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-201024",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-201028",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-201345",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-202148",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "いつ",
+    "で",
+    "も"
+   ],
+   "surface": "いつでも",
+   "lemma": "いつ+で+も",
+   "reading": "いつでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1577130",
+   "headword": "何時でも",
+   "kana": "いつでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-202328",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-202328",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-2035113",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-203979",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-204963",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "上"
+   ],
+   "surface": "上",
+   "lemma": "上",
+   "reading": "じょう",
+   "pos": "suffix",
+   "vocab": "vocab:1352170",
+   "headword": "上",
+   "kana": "じょう",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-205579",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-2056748",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-206565",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "実",
+    "に"
+   ],
+   "surface": "実に",
+   "lemma": "実+に",
+   "reading": "じつに",
+   "pos": "noun+particle",
+   "vocab": "vocab:2820720",
+   "headword": "実に",
+   "kana": "じつに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-2069334",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-207431",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "そこ",
+    "で"
+   ],
+   "surface": "そこで",
+   "lemma": "そこ+で",
+   "reading": "そこで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1406090",
+   "headword": "其処で",
+   "kana": "そこで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-207432",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-208173",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-208382",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-2085672",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-208632",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-212580",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-213552",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "そこ",
+    "で"
+   ],
+   "surface": "そこで",
+   "lemma": "そこ+で",
+   "reading": "そこで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1406090",
+   "headword": "其処で",
+   "kana": "そこで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-213565",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "何",
+    "と",
+    "か"
+   ],
+   "surface": "何とか",
+   "lemma": "何+と+か",
+   "reading": "なんとか",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1188420",
+   "headword": "何とか",
+   "kana": "なんとか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-213958",
+   "anchor_position": 12,
+   "span": [
+    12,
+    13
+   ],
+   "span_surfaces": [
+    "行け",
+    "ない"
+   ],
+   "surface": "行けない",
+   "lemma": "行ける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-214606",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-216769",
+   "anchor_position": 2,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "お",
+    "昼"
+   ],
+   "surface": "お昼",
+   "lemma": "お+昼",
+   "reading": "おひる",
+   "pos": "prefix+noun",
+   "vocab": "vocab:1660100",
+   "headword": "お昼",
+   "kana": "おひる",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-217442",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-217698",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "これ",
+    "ら"
+   ],
+   "surface": "これら",
+   "lemma": "これ+ら",
+   "reading": "これら",
+   "pos": "pronoun+suffix",
+   "vocab": "vocab:1004830",
+   "headword": "これ等",
+   "kana": "これら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-217758",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "これ",
+    "ら"
+   ],
+   "surface": "これら",
+   "lemma": "これ+ら",
+   "reading": "これら",
+   "pos": "pronoun+suffix",
+   "vocab": "vocab:1004830",
+   "headword": "これ等",
+   "kana": "これら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-217908",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "これ",
+    "ら"
+   ],
+   "surface": "これら",
+   "lemma": "これ+ら",
+   "reading": "これら",
+   "pos": "pronoun+suffix",
+   "vocab": "vocab:1004830",
+   "headword": "これ等",
+   "kana": "これら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-218527",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-218719",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-2197773",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-219920",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-220102",
+   "anchor_position": 7,
+   "span": [
+    7
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-220938",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-221752",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "所",
+    "が"
+   ],
+   "surface": "所が",
+   "lemma": "所+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-222172",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-222609",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "分"
+   ],
+   "surface": "分",
+   "lemma": "分",
+   "reading": "ぶん",
+   "pos": "suffix",
+   "vocab": "vocab:1502860",
+   "headword": "分",
+   "kana": "ぶん",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-223628",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-224578",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-226505",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226507",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226511",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226635",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-226658",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226674",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226675",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226704",
+   "anchor_position": 6,
+   "span": [
+    6
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226776",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226794",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-226991",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227004",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227035",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227048",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227075",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227081",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227081",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-2270822",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227092",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227108",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227144",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-227400",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-228765",
+   "anchor_position": 2,
+   "span": [
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-228837",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "いつ",
+    "で",
+    "も"
+   ],
+   "surface": "いつでも",
+   "lemma": "いつ+で+も",
+   "reading": "いつでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1577130",
+   "headword": "何時でも",
+   "kana": "いつでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-229449",
+   "anchor_position": 7,
+   "span": [
+    7
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-229712",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-231355",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-231454",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-235716",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "１度",
+    "に"
+   ],
+   "surface": "１度に",
+   "lemma": "1度+に",
+   "reading": "いちどに",
+   "pos": "noun+particle",
+   "vocab": "vocab:1609210",
+   "headword": "一度に",
+   "kana": "いちどに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-236851",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-2508369",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-2552450",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-2586422",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-2985792",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-3045953",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-3357795",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-3360130",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-3366790",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-3409701",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-3409701",
+   "anchor_position": 7,
+   "span": [
+    7
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-3468510",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-347297",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+だ",
+   "reading": "なんで",
+   "pos": "pronoun+auxiliary",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-351848",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "急",
+    "に"
+   ],
+   "surface": "急に",
+   "lemma": "急+だ",
+   "reading": "きゅうに",
+   "pos": "noun+auxiliary",
+   "vocab": "vocab:2269050",
+   "headword": "急に",
+   "kana": "きゅうに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-3559186",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-3576118",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-400865",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-425538",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1,
+    2
+   ],
+   "span_surfaces": [
+    "それ",
+    "で",
+    "も"
+   ],
+   "surface": "それでも",
+   "lemma": "それ+で+も",
+   "reading": "それでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1406060",
+   "headword": "其れでも",
+   "kana": "それでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-4297184",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-4789",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-4827",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-4865267",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なぜ",
+    "なら"
+   ],
+   "surface": "なぜなら",
+   "lemma": "なぜ+だ",
+   "reading": "なぜなら",
+   "pos": "adverb+auxiliary",
+   "vocab": "vocab:1009410",
+   "headword": "何故なら",
+   "kana": "なぜなら",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-4905",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "で"
+   ],
+   "surface": "何で",
+   "lemma": "何+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-4934639",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-4939",
+   "anchor_position": 4,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-5011",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-5046",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-5126",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-5220",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-667998",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-6829974",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-74418",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "なん",
+    "で"
+   ],
+   "surface": "なんで",
+   "lemma": "なん+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-74914",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-74925",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-74954",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-7560861",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-75792",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なにか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-75827",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "そこ",
+    "で"
+   ],
+   "surface": "そこで",
+   "lemma": "そこ+で",
+   "reading": "そこで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1406090",
+   "headword": "其処で",
+   "kana": "そこで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-76406",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-76469",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-76532",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-7704572",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "こんな",
+    "に"
+   ],
+   "surface": "こんなに",
+   "lemma": "こんな+だ",
+   "reading": "こんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1004890",
+   "headword": "こんなに",
+   "kana": "こんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-78316",
+   "anchor_position": 5,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "行け",
+    "ない"
+   ],
+   "surface": "行けない",
+   "lemma": "行ける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-78565",
+   "anchor_position": 8,
+   "span": [
+    8
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-78588",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-78814",
+   "anchor_position": 0,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "要する",
+    "に"
+   ],
+   "surface": "要するに",
+   "lemma": "要する+に",
+   "reading": "ようするに",
+   "pos": "verb+particle",
+   "vocab": "vocab:1546620",
+   "headword": "要するに",
+   "kana": "ようするに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-78827",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "要する",
+    "に"
+   ],
+   "surface": "要するに",
+   "lemma": "要する+に",
+   "reading": "ようするに",
+   "pos": "verb+particle",
+   "vocab": "vocab:1546620",
+   "headword": "要するに",
+   "kana": "ようするに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-78970",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-79075",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-79093",
+   "anchor_position": 10,
+   "span": [
+    9,
+    10,
+    11
+   ],
+   "span_surfaces": [
+    "いつ",
+    "で",
+    "も"
+   ],
+   "surface": "いつでも",
+   "lemma": "いつ+で+も",
+   "reading": "いつでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1577130",
+   "headword": "何時でも",
+   "kana": "いつでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-79250",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どこ",
+    "か"
+   ],
+   "surface": "どこか",
+   "lemma": "どこ+か",
+   "reading": "どこか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-79313",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-79502",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-79826",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-80049",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-80521",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-80608",
+   "anchor_position": 6,
+   "span": [
+    6
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-80845",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-81064",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-82119",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-82481",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-82890",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-82890",
+   "anchor_position": 12,
+   "span": [
+    11,
+    12
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-83083",
+   "anchor_position": 2,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "お",
+    "昼"
+   ],
+   "surface": "お昼",
+   "lemma": "お+昼",
+   "reading": "おひる",
+   "pos": "prefix+noun",
+   "vocab": "vocab:1660100",
+   "headword": "お昼",
+   "kana": "おひる",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-83215",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-84165",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-84242",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-84610",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-84632",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なにも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-85077",
+   "anchor_position": 7,
+   "span": [
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-85221",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-8531386",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-85413",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "後"
+   ],
+   "surface": "後",
+   "lemma": "後",
+   "reading": "ご",
+   "pos": "suffix",
+   "vocab": "vocab:2147630",
+   "headword": "後",
+   "kana": "ご",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-8584149",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "か"
+   ],
+   "surface": "何か",
+   "lemma": "何+か",
+   "reading": "なんか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188270",
+   "headword": "何か",
+   "kana": "なにか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-8599926",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-87578",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-8775094",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-88015",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "ところ",
+    "が"
+   ],
+   "surface": "ところが",
+   "lemma": "ところ+が",
+   "reading": "ところが",
+   "pos": "noun+particle",
+   "vocab": "vocab:1008570",
+   "headword": "所が",
+   "kana": "ところが",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-8828086",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-8877776",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-8883784",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-8886173",
+   "anchor_position": 1,
+   "span": [
+    1
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-9092733",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9101504",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9145503",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "それ",
+    "と",
+    "も"
+   ],
+   "surface": "それとも",
+   "lemma": "それ+と+も",
+   "reading": "それとも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1007010",
+   "headword": "其れとも",
+   "kana": "それとも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9145789",
+   "anchor_position": 4,
+   "span": [
+    4
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-9171222",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "ところ",
+    "で"
+   ],
+   "surface": "ところで",
+   "lemma": "ところ+で",
+   "reading": "ところで",
+   "pos": "noun+particle",
+   "vocab": "vocab:1343110",
+   "headword": "所で",
+   "kana": "ところで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-91869",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "どんな",
+    "に"
+   ],
+   "surface": "どんなに",
+   "lemma": "どんな+だ",
+   "reading": "どんなに",
+   "pos": "na-adjective+auxiliary",
+   "vocab": "vocab:1009340",
+   "headword": "どんなに",
+   "kana": "どんなに",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9414585",
+   "anchor_position": 2,
+   "span": [
+    2
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-94524",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-95969",
+   "anchor_position": 8,
+   "span": [
+    7,
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "何",
+    "で",
+    "も"
+   ],
+   "surface": "何でも",
+   "lemma": "何+で+も",
+   "reading": "なんでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1611030",
+   "headword": "何でも",
+   "kana": "なんでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9770651",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9776833",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-9781663",
+   "anchor_position": 9,
+   "span": [
+    8,
+    9
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9808932",
+   "anchor_position": 3,
+   "span": [
+    2,
+    3
+   ],
+   "span_surfaces": [
+    "何",
+    "も"
+   ],
+   "surface": "何も",
+   "lemma": "何+も",
+   "reading": "なんも",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1188490",
+   "headword": "何も",
+   "kana": "なにも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-98124",
+   "anchor_position": 3,
+   "span": [
+    3,
+    4
+   ],
+   "span_surfaces": [
+    "お",
+    "昼"
+   ],
+   "surface": "お昼",
+   "lemma": "お+昼",
+   "reading": "おひる",
+   "pos": "prefix+noun",
+   "vocab": "vocab:1660100",
+   "headword": "お昼",
+   "kana": "おひる",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9812759",
+   "anchor_position": 5,
+   "span": [
+    5
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-98128",
+   "anchor_position": 3,
+   "span": [
+    3
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-9820465",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6,
+    7
+   ],
+   "span_surfaces": [
+    "いつ",
+    "で",
+    "も"
+   ],
+   "surface": "いつでも",
+   "lemma": "いつ+で+も",
+   "reading": "いつでも",
+   "pos": "pronoun+particle+particle",
+   "vocab": "vocab:1577130",
+   "headword": "何時でも",
+   "kana": "いつでも",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9949537",
+   "anchor_position": 5,
+   "span": [
+    4,
+    5
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-995531",
+   "anchor_position": 0,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "どっ",
+    "か"
+   ],
+   "surface": "どっか",
+   "lemma": "どっ+か",
+   "reading": "どっか",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1189000",
+   "headword": "何処か",
+   "kana": "どこか",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9969670",
+   "anchor_position": 0,
+   "span": [
+    0
+   ],
+   "span_surfaces": [
+    "お"
+   ],
+   "surface": "お",
+   "lemma": "お",
+   "reading": "お",
+   "pos": "prefix",
+   "vocab": "vocab:2826528",
+   "headword": "御",
+   "kana": "お",
+   "level": "n3",
+   "rule": "kana-exact"
+  },
+  {
+   "sentence": "sent:tatoeba-9971758",
+   "anchor_position": 1,
+   "span": [
+    0,
+    1
+   ],
+   "span_surfaces": [
+    "何",
+    "で"
+   ],
+   "surface": "何で",
+   "lemma": "何+で",
+   "reading": "なんで",
+   "pos": "pronoun+particle",
+   "vocab": "vocab:1611020",
+   "headword": "何で",
+   "kana": "なんで",
+   "level": "n3",
+   "rule": "run-reading"
+  },
+  {
+   "sentence": "sent:tatoeba-9983870",
+   "anchor_position": 6,
+   "span": [
+    5,
+    6
+   ],
+   "span_surfaces": [
+    "いけ",
+    "ない"
+   ],
+   "surface": "いけない",
+   "lemma": "いける+ない",
+   "reading": "いけない",
+   "pos": "verb+auxiliary",
+   "vocab": "vocab:1000730",
+   "headword": "行けない",
+   "kana": "いけない",
+   "level": "n3",
+   "rule": "run-reading"
+  }
+ ]
+}

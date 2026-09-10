@@ -1462,8 +1462,17 @@ def handle_sentence_register(rows, sents, gram, table):
 
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
+    # W13 apply: the N3 half of the same campaign, same rows, same handler. It is a SECOND
+    # table rather than more rows in the first because the replay order needs them apart -
+    # the N5/N4 links apply before the W13 ingest and the N3 links cannot, since none of
+    # their sentences exist at that point.
+    "orthographic_relinks_n3.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
     "sentence_text_repairs.json": handle_sentence_text_repairs,
+    # W13 apply: three de-accented pt-BR translations among the 4,223 mined rows
+    # (irmao/nao/questao). Same shape, same handler; a separate table because it applies
+    # AFTER the ingest, and sentence_text_repairs.json applies long before it.
+    "w13_text_repairs.json": handle_sentence_text_repairs,
     "jargon_pass2_repairs.json": handle_jargon_pass2,
     "translation_defect_repairs.json": handle_translation_defect,
     "translation_followups.json": handle_translation_followups,

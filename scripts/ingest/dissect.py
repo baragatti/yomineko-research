@@ -58,7 +58,22 @@ PARTICLE_FUNCTION_MAP = {
     "終助詞": "sentence-final", "準体助詞": "nominalizer", "並立助詞": "parallel",
 }
 # Hepburn gemination: doubling consonant borrowed from the following mora's initial.
-_GEMINATE_FIRST = {"c": "t"}  # ち/ちゃ… (chi/cha) geminate as っち = "tchi"
+#
+# W13 apply: this map used to remap "c" -> "t", i.e. traditional Hepburn's っち = "tchi". It was the
+# only place in the pipeline that believed that, and it broke invariant I3 (sentence romaji ==
+# concat(token romaji)) on every っ that ENDS a token before ち: 折っ|ちゃっ|た came out "ot"+"chat"
+# while the sentence line, which romanizes the whole corrected kana through jaconv, said "occhat".
+# Three of the 4,223 W13 rows hit it and the ingest correctly refused the batch.
+#
+# The corpus already had a convention and it is jaconv's: 30 bank sentences carry "cch" in their
+# stored sentence romaji (めっちゃ, サンドイッチ), a token-INTERNAL っち has always romanized "cch"
+# because jaconv sees the whole mora, and the five pre-existing っ|ch token boundaries in the bank
+# are stored "…c" + "ch…" as well. So the remap was not the corpus convention, it was a lone rule
+# that also made a replay rewrite those five tokens. Removing it makes the two romanizations agree,
+# changes no stored sentence romaji and no stored token romaji, and restores replay fidelity for the
+# five. Whether the WHOLE corpus should move to "tchi" is a romaji-convention decision for its own
+# unit, not something to settle inside a sentence ingest.
+_GEMINATE_FIRST: dict[str, str] = {}
 
 
 def hira(s: str) -> str:

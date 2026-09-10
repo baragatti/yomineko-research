@@ -1,0 +1,559 @@
+{
+ "unit": "W13b-authoring",
+ "kind": "authored replacements for the 50 particle rows the W13b audit withdrew (rule te-locution-withdraw)",
+ "authored_by": "particle template author (agent)",
+ "date": "2026-09-10",
+ "source_table": "research/derived/pending/particle_template_fixes.json",
+ "scope": "One row per withdrawn (key, position). Every one of these て tokens is the right half of a compound postposition (として / について / によって / にとって / に対して / に関して / に基づいて / から〜にかけて / を通して), not the conjunctive て the withdrawn template claimed. The explanation names the locution, gives the sense THIS sentence uses, and quotes the token the locution attaches to.",
+ "how_to_apply": {
+  "match_on": [
+   "key",
+   "position"
+  ],
+  "explanation_pt": "set to new_explanation; explanation_status becomes 'authored' (it was set to 'author' by the withdrawal)",
+  "function_pt": "set to new_function_pt; function_status becomes 'occurrence-rule'",
+  "note": "The audit table left function_pt_change as 'none' for these 50 rows, so the label is still the pair modal 'partícula conectiva (forma て)'. That label is as wrong as the withdrawn text was: these て are locution material. Applying new_function_pt overwrites no verified verdict, since all 50 carry function_status 'bank-modal'."
+ },
+ "fields": {
+  "locution": "the compound postposition this て closes (bookkeeping; not learner-facing)",
+  "new_function_pt": "replacement function_pt label, pt-BR",
+  "new_explanation": "replacement explanation_pt, pt-BR, one sentence",
+  "why": "authoring note, present only where the sense chosen is not the default reading of the locution"
+ },
+ "counts": {
+  "rows": 50,
+  "with_why": 16,
+  "by_locution": {
+   "として": 11,
+   "としても": 1,
+   "何としても": 1,
+   "について": 12,
+   "によって": 11,
+   "にとって": 7,
+   "に対して": 1,
+   "に関して": 1,
+   "に基づいて": 1,
+   "から〜にかけて": 3,
+   "を通して": 1
+  }
+ },
+ "needs_review": true,
+ "rows": [
+  {
+   "key": "199345",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "ナイフとして用いられている。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende ナイフ a 用いられている: o objeto está sendo empregado no papel de faca."
+  },
+  {
+   "key": "168895",
+   "position": 9,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "姉は大学の先生の助手として働いている。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende 助手 a 働いている: é no cargo de assistente que ela trabalha.",
+   "why": "O 働いて logo adiante é que traz o て de encadeamento, com いる; este primeiro て só fecha として."
+  },
+  {
+   "key": "90823",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼女は歌手として訓練を受けた。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende 歌手 a 訓練を受けた: foi como cantora que ela recebeu treinamento."
+  },
+  {
+   "key": "9695317",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "それはナイフとしても使用されます。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende ナイフ a 使用されます, e o も seguinte marca que esse é mais um dos usos possíveis.",
+   "why": "O も que vem depois se apoia em として já fechada e só acrescenta o uso; não é a としても de hipótese, que pediria uma oração antes, não um nome."
+  },
+  {
+   "key": "11977679",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "友達として好きよ。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende 友達 a 好き: o gostar aqui é o de amigo."
+  },
+  {
+   "key": "164924",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "私としては家にいたい。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na posição de, da parte de)",
+   "new_explanation": "て fecha a locução として (na posição de, da parte de) e prende 私 ao resto: por mim, eu ficaria em casa.",
+   "why": "O は logo depois se apoia em 私として já fechada e faz do ponto de vista o tema; ele não é a segunda oração que um て de encadeamento exigiria."
+  },
+  {
+   "key": "10655977",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は教師としては、可もなく不可もなくといったところです。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende 教師 ao resto: o julgamento que vem depois vale para esse papel, o de professor."
+  },
+  {
+   "key": "152088",
+   "position": 6,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "私個人の意見としてはその計画に反対だ。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na condição de)",
+   "new_explanation": "て fecha a locução として (na condição de) e prende 私個人の意見 ao resto: é enquanto opinião pessoal que vem a objeção ao plano."
+  },
+  {
+   "key": "106692",
+   "position": 7,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は傘を武器として使った。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende 武器 a 使った: o guarda-chuva foi usado como arma."
+  },
+  {
+   "key": "107702",
+   "position": 10,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は犬一匹だけを連れとして旅をした。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende 連れ ao resto: o cachorro foi a única companhia que ele levou."
+  },
+  {
+   "key": "100054",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は報酬として金の時計をもらった。",
+   "locution": "として",
+   "new_function_pt": "partícula fixa da locução 〜として (na qualidade de, como)",
+   "new_explanation": "て fecha a locução として (na qualidade de, como) e prende 報酬 a もらった: o relógio veio a título de recompensa."
+  },
+  {
+   "key": "193931",
+   "position": 8,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "もしあした雨が降ったとしてもピクニックに行きますか。",
+   "locution": "としても",
+   "new_function_pt": "partícula fixa da locução 〜としても (mesmo que, ainda que)",
+   "new_explanation": "て fecha a locução としても (mesmo que, ainda que) e prende 雨が降った ao resto: ainda que chova, o que se pergunta é se o piquenique acontece.",
+   "why": "Aqui として vem depois da oração 雨が降った, não de um nome, e com o も seguinte forma a concessão としても; não é o として de papel nem um て de encadeamento."
+  },
+  {
+   "key": "187768",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "何としても戦争は防がねばならない。",
+   "locution": "何としても",
+   "new_function_pt": "partícula fixa da locução 何としても (custe o que custar)",
+   "new_explanation": "て fecha a locução 何としても (custe o que custar) e prende 何 ao resto: impedir a guerra não é coisa negociável.",
+   "why": "何としても é bloco feito: o する daqui não significa 'fazer' e o て não encadeia nada, as três peças só valem juntas."
+  },
+  {
+   "key": "148254",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "宗教については何の意見も持っていない。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende 宗教 ao resto: religião é o tema em que não há opinião formada.",
+   "why": "O は logo depois se apoia em 宗教について já fechada e faz do assunto o tema; ele não indica que o て ligue duas orações."
+  },
+  {
+   "key": "178200",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "君の将来について真剣に話をしよう。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende 君の将来 ao resto: é sobre o seu futuro que se vai conversar."
+  },
+  {
+   "key": "112366",
+   "position": 6,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼はその問題について論文を書いた。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende その問題 ao resto: o artigo dele tem essa questão como tema."
+  },
+  {
+   "key": "97558",
+   "position": 6,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼らは愛情について話した。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende 愛情 a 話した: o assunto da conversa deles foi o afeto."
+  },
+  {
+   "key": "219920",
+   "position": 4,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "この分野について私は何も知らない。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende この分野 ao resto: é sobre essa área que não sei nada."
+  },
+  {
+   "key": "798449",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は音楽について語った。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende 音楽 a 語った: foi sobre música que ele falou."
+  },
+  {
+   "key": "143206",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "政治については語りたくない。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende 政治 ao resto: política é o assunto que o falante prefere evitar.",
+   "why": "O は logo depois fecha 政治について e marca o contraste; ele não é a segunda oração que um て de encadeamento pediria."
+  },
+  {
+   "key": "8509005",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "それについて明確にしたい。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende それ ao resto: o que se quer esclarecer é justamente esse ponto."
+  },
+  {
+   "key": "218737",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "これについて、自由に批評して下さい。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende これ ao resto: o comentário pedido tem isto como objeto.",
+   "why": "A frase tem outro て mais adiante, o de 批評して下さい, e é esse que encadeia de verdade; este primeiro só fecha について."
+  },
+  {
+   "key": "121674",
+   "position": 7,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "農民は常に天気について不満を言う。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende 天気 ao resto: a queixa constante dos agricultores tem o clima como tema."
+  },
+  {
+   "key": "9478154",
+   "position": 6,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "この記事って何についてなの？",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende 何 ao resto: o que se pergunta é justamente sobre o que a matéria trata.",
+   "why": "Aqui について fica no fim, antes da cópula, e o assunto é o próprio dado que falta; não sobra verbo nenhum depois para um て de encadeamento ligar."
+  },
+  {
+   "key": "208382",
+   "position": 4,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "その組織について何か聞いたことはありますか。",
+   "locution": "について",
+   "new_function_pt": "partícula fixa da locução 〜について (sobre, a respeito de)",
+   "new_explanation": "て fecha a locução について (sobre, a respeito de) e prende その組織 ao resto: é a respeito dessa organização que se pergunta se ouviu alguma coisa."
+  },
+  {
+   "key": "78371",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "理想は言葉によって表現される。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (por meio de)",
+   "new_explanation": "て fecha a locução によって (por meio de) e prende 言葉 a 表現される: os ideais tomam forma por meio da linguagem.",
+   "why": "A frase é passiva, mas 言葉 não age: aqui によって dá o meio, não o agente."
+  },
+  {
+   "key": "12453478",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "年によって違います。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (conforme, dependendo de)",
+   "new_explanation": "て fecha a locução によって (conforme, dependendo de) e prende 年 a 違います: o resultado não é o mesmo todo ano."
+  },
+  {
+   "key": "102896",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は祖母によって育てられた。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (agente da passiva)",
+   "new_explanation": "て fecha a locução によって (agente da passiva) e prende 祖母 a 育てられた: foi a avó quem o criou."
+  },
+  {
+   "key": "222882",
+   "position": 6,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "この音楽はバッハによって作曲された。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (agente da passiva)",
+   "new_explanation": "て fecha a locução によって (agente da passiva) e prende バッハ a 作曲された: foi Bach quem compôs essa música."
+  },
+  {
+   "key": "187284",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "価格は需要によって変わる。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (conforme, dependendo de)",
+   "new_explanation": "て fecha a locução によって (conforme, dependendo de) e prende 需要 a 変わる: o preço acompanha a demanda."
+  },
+  {
+   "key": "125046",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "天候は季節によって変わる。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (conforme, dependendo de)",
+   "new_explanation": "て fecha a locução によって (conforme, dependendo de) e prende 季節 a 変わる: as condições do tempo acompanham a estação do ano."
+  },
+  {
+   "key": "83744",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "物質は温度によって形を変える。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (conforme, dependendo de)",
+   "new_explanation": "て fecha a locução によって (conforme, dependendo de) e prende 温度 ao resto: a matéria muda de forma conforme a temperatura.",
+   "why": "O verbo 変える é transitivo e tem seu próprio objeto, 形; 温度 não é quem age, é o critério da variação."
+  },
+  {
+   "key": "144656",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "人によって意見が異なる。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (conforme, dependendo de)",
+   "new_explanation": "て fecha a locução によって (conforme, dependendo de) e prende 人 ao resto: de uma pessoa para outra a opinião muda."
+  },
+  {
+   "key": "173117",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "国によって習慣は異なる。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (conforme, dependendo de)",
+   "new_explanation": "て fecha a locução によって (conforme, dependendo de) e prende 国 ao resto: os costumes mudam de país para país."
+  },
+  {
+   "key": "210852",
+   "position": 12,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "その湖は自然のものではなく人工によって造られたものである。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (agente da passiva)",
+   "new_explanation": "て fecha a locução によって (agente da passiva) e prende 人工 a 造られた: o lago é obra do homem, não da natureza.",
+   "why": "人工 não é uma pessoa, mas ocupa o lugar do agente na passiva; o contraste com 自然のものではなく é o que fixa essa leitura."
+  },
+  {
+   "key": "230255",
+   "position": 6,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "アメリカでは州によって法律が違う。",
+   "locution": "によって",
+   "new_function_pt": "partícula fixa da locução 〜によって (conforme, dependendo de)",
+   "new_explanation": "て fecha a locução によって (conforme, dependendo de) e prende 州 ao resto: cada estado tem a sua própria legislação."
+  },
+  {
+   "key": "222168",
+   "position": 8,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "この結婚は彼の将来にとって有利になるだろう。",
+   "locution": "にとって",
+   "new_function_pt": "partícula fixa da locução 〜にとって (para, do ponto de vista de)",
+   "new_explanation": "て fecha a locução にとって (para, do ponto de vista de) e prende 彼の将来 ao resto: é para o futuro dele que o casamento sai vantajoso."
+  },
+  {
+   "key": "104699",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は社会にとって危険人物だ。",
+   "locution": "にとって",
+   "new_function_pt": "partícula fixa da locução 〜にとって (para, do ponto de vista de)",
+   "new_explanation": "て fecha a locução にとって (para, do ponto de vista de) e prende 社会 ao resto: é para a sociedade que ele representa perigo."
+  },
+  {
+   "key": "164772",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "私にとってそれは困難だ。",
+   "locution": "にとって",
+   "new_function_pt": "partícula fixa da locução 〜にとって (para, do ponto de vista de)",
+   "new_explanation": "て fecha a locução にとって (para, do ponto de vista de) e prende 私 ao resto: é do meu ponto de vista que aquilo é difícil."
+  },
+  {
+   "key": "164762",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "私にとって彼は王様のような人です。",
+   "locution": "にとって",
+   "new_function_pt": "partícula fixa da locução 〜にとって (para, do ponto de vista de)",
+   "new_explanation": "て fecha a locução にとって (para, do ponto de vista de) e prende 私 ao resto: quem o vê como um rei sou eu."
+  },
+  {
+   "key": "11995507",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "私にとって、特別な日でした。",
+   "locution": "にとって",
+   "new_function_pt": "partícula fixa da locução 〜にとって (para, do ponto de vista de)",
+   "new_explanation": "て fecha a locução にとって (para, do ponto de vista de) e prende 私 ao resto: para mim é que o dia foi especial."
+  },
+  {
+   "key": "4793402",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "食べ物は生物にとって必要なものです。",
+   "locution": "にとって",
+   "new_function_pt": "partícula fixa da locução 〜にとって (para, do ponto de vista de)",
+   "new_explanation": "て fecha a locução にとって (para, do ponto de vista de) e prende 生物 ao resto: é para os seres vivos que a comida é necessária."
+  },
+  {
+   "key": "178019",
+   "position": 7,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "君の友情は私にとってとても大切だ。",
+   "locution": "にとって",
+   "new_function_pt": "partícula fixa da locução 〜にとって (para, do ponto de vista de)",
+   "new_explanation": "て fecha a locução にとって (para, do ponto de vista de) e prende 私 ao resto: quem dá tanto valor a essa amizade sou eu."
+  },
+  {
+   "key": "148082",
+   "position": 6,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "住民たちは騒音に対して苦情を訴えた。",
+   "locution": "に対して",
+   "new_function_pt": "partícula fixa da locução 〜に対して (em relação a, contra)",
+   "new_explanation": "て fecha a locução に対して (em relação a, contra) e prende 騒音 ao resto: é contra o barulho que os moradores reclamaram.",
+   "why": "Com 苦情を訴える o alvo é adverso, então に対して aqui é 'contra', e não o 'para com' neutro."
+  },
+  {
+   "key": "105037",
+   "position": 8,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "彼は自分の家庭生活に関してとても秘密主義だ。",
+   "locution": "に関して",
+   "new_function_pt": "partícula fixa da locução 〜に関して (a respeito de, quanto a)",
+   "new_explanation": "て fecha a locução に関して (a respeito de, quanto a) e prende 自分の家庭生活 ao resto: quanto à vida em família, ele guarda tudo para si."
+  },
+  {
+   "key": "149811",
+   "position": 5,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "自分の主義に基づいて行動した。",
+   "locution": "に基づいて",
+   "new_function_pt": "partícula fixa da locução 〜に基づいて (com base em)",
+   "new_explanation": "て fecha a locução に基づいて (com base em) e prende 自分の主義 a 行動した: a conduta dele teve os próprios princípios como base.",
+   "why": "Diferente de um て de encadeamento, 基づいて não conta uma ação à parte: に基づいて é bloco fixo e só diz em que a ação se apoia."
+  },
+  {
+   "key": "4212797",
+   "position": 14,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "雨がよく降るのは、５月から８月にかけてです。",
+   "locution": "から〜にかけて",
+   "new_function_pt": "partícula fixa da locução 〜から〜にかけて (de um ponto a outro, ao longo do trecho)",
+   "new_explanation": "て fecha a locução から〜にかけて (de um ponto a outro, ao longo do trecho) e prende ８月 ao ５月から anterior: a chuva se concentra no período inteiro que vai de maio a agosto.",
+   "why": "にかけて encerra a frase antes da cópula です, então não sobra verbo seguinte para um て de encadeamento ligar."
+  },
+  {
+   "key": "10079807",
+   "position": 10,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "その役場は１８９５年から１８９７年にかけて建てられました。",
+   "locution": "から〜にかけて",
+   "new_function_pt": "partícula fixa da locução 〜から〜にかけて (de um ponto a outro, ao longo do trecho)",
+   "new_explanation": "て fecha a locução から〜にかけて (de um ponto a outro, ao longo do trecho) e prende １８９７年 ao １８９５年から anterior: a construção ocupou os dois anos inteiros, de 1895 a 1897."
+  },
+  {
+   "key": "393788",
+   "position": 8,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "このため、今夜から明日にかけて全般に曇りや雨の天気でしょう。",
+   "locution": "から〜にかけて",
+   "new_function_pt": "partícula fixa da locução 〜から〜にかけて (de um ponto a outro, ao longo do trecho)",
+   "new_explanation": "て fecha a locução から〜にかけて (de um ponto a outro, ao longo do trecho) e prende 明日 ao 今夜から anterior: a previsão cobre o trecho que vai desta noite até amanhã."
+  },
+  {
+   "key": "169401",
+   "position": 3,
+   "surface": "て",
+   "function_type": "conjunctive",
+   "jp": "山を通してトンネルを通した。",
+   "locution": "を通して",
+   "new_function_pt": "partícula fixa da locução 〜を通して (através de, atravessando)",
+   "new_explanation": "て fecha a locução を通して (através de, atravessando) e prende 山 ao resto: o túnel foi aberto atravessando a montanha.",
+   "why": "O mesmo verbo reaparece adiante em 通した, e é ele que carrega a ação; este primeiro 通して não é ação separada, é a metade direita da posposição を通して."
+  }
+ ]
+}

@@ -190,6 +190,13 @@ ACCENT_HOMOGRAPHS = {
     "maca", "macas",      # maca/macas = stretcher(s); also the de-accent of maçã/maçãs
     "manha", "manhas",    # manha = guile; also the de-accent of manhã/manhãs
     "crista", "cristas",  # crista = crest; also the de-accent of cristã/cristãs
+    # W13 apply: `duvida` is the 3rd-person present of DUVIDAR ("quem fala já duvida que…",
+    # "você duvida de mim") as well as the de-accent of the noun `dúvida`. Four W13 particle
+    # explanations and literals used the verb correctly and the gate demanded a wrong edit on all
+    # four. It is subtracted from LEGACY_ACCENT_WORDS below for that reason and no other; the noun
+    # is now caught only when the surrounding prose is checked by a human, which is the honest cost
+    # of a word-list rule that cannot see grammar.
+    "duvida", "duvidas",
 }
 # audit_lesson_hygiene.py's hand-written list. Kept as a floor so the corpus-derived lexicon can only
 # ADD to what the old gate caught, never subtract (several of these carry no ã/õ at all).
@@ -307,7 +314,10 @@ def build_accent_lexicon(rows: list[Row]) -> set[str]:
             if "ã" in w or "õ" in w:
                 nasal[w] += 1
     derived = {deaccent(w) for w, n in nasal.items() if n >= 3 and deaccent(w) != w}
-    return (derived - ACCENT_HOMOGRAPHS) | set(LEGACY_ACCENT_WORDS)
+    # ACCENT_HOMOGRAPHS wins over the legacy floor: a word that is genuinely spelt both ways cannot
+    # be a hard failure whichever list it came from, and leaving it in the floor means the gate
+    # demands an edit that makes the Portuguese wrong.
+    return ((derived | set(LEGACY_ACCENT_WORDS)) - ACCENT_HOMOGRAPHS)
 
 
 def main() -> int:

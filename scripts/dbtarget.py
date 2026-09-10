@@ -29,21 +29,35 @@ from pathlib import Path
 __all__ = ["db_target", "out_root", "build_date", "take_flag"]
 
 
+_TAKEN: dict[str, str] = {}
+
+
 def take_flag(flag: str, argv: list[str] | None = None) -> str | None:
     """Pull `--flag VALUE` / `--flag=VALUE` out of argv and return VALUE (None if absent).
 
     Removing it is the point: these scripts are called with their own argparse, and an undeclared
     `--db` would abort them. Only the first occurrence is honoured.
+
+    W13 apply: the value is also REMEMBERED, because removing it made the flag work for exactly one
+    caller per process. `scripts/validate/validate.py` imports `dissect`, which resolves its own
+    `db_target()` at module import and consumed the `--db`; by the time validate.py resolved its own,
+    argv no longer carried it, so `validate.py --db <copy>` silently validated the REAL corpus while
+    the Dissector read the copy — a trial run that cannot fail. Caching makes every db_target() /
+    out_root() in one process answer the same way, which is what every caller already assumed.
     """
+    if flag in _TAKEN:
+        return _TAKEN[flag]
     a = sys.argv if argv is None else argv
     for i, tok in enumerate(a):
         if tok == flag and i + 1 < len(a):
             val = a[i + 1]
             del a[i:i + 2]
+            _TAKEN[flag] = val
             return val
         if tok.startswith(flag + "="):
             val = tok[len(flag) + 1:]
             del a[i]
+            _TAKEN[flag] = val
             return val
     return None
 

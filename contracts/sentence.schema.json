@@ -5,7 +5,7 @@
   "description": "One fully dissected example sentence — the unit the whole corpus is built on. A sentence lives here ONCE and everything else references it by id.",
   "x-yomineko": {
     "entity": "sentence",
-    "records": 5889,
+    "records": 10112,
     "packing": "list",
     "glob": "corpus/sentences/bank.json",
     "stable_id_field": "slug",
@@ -475,12 +475,16 @@
         "type": "object",
         "properties": {
           "link_rule": {
-            "type": "string",
+            "type": [
+              "string",
+              "null"
+            ],
             "enum": [
               "lemma",
               "ortho",
               "run",
-              "token"
+              "token",
+              null
             ],
             "x-vocabulary": {
               "owner": "measured",

@@ -621,8 +621,13 @@ def main():
             "set == 'bank' address corpus/sentences/bank.json by slug and are APPLIED by "
             "scripts/apply_sentence_register.py; `rows` with set == 'w13' address sentences that "
             "are not in the bank yet (research/derived/n3_mined) and are DEFERRED to the W13 "
-            "ingest, which reads this table for the value rather than re-deriving one. Regenerate "
-            "with scripts/derive_sentence_register_v2.py; "
+            "ingest, which reads this table for the value rather than re-deriving one. SINCE THE "
+            "W13 APPLY (2026-09-10) there are no deferrals left: all 10,112 sentences are banked, "
+            "so the table is regenerated with `--skip-w13` and every row is `set: bank`, keyed by "
+            "slug. Running the derivation WITHOUT --skip-w13 now emits each mined sentence twice "
+            "(once as its bank slug and once as its pre-ingest w13 key) and the two rows can "
+            "disagree, because the bank row carries the sentence's real grammar tags and vocab "
+            "links while the w13 row only had its authoring targets. "
             "scripts/validate/validate_sentence_register.py re-derives on every gate run and fails "
             "on any stored value this table would no longer produce."),
         "applied_by": "scripts/apply_sentence_register.py",

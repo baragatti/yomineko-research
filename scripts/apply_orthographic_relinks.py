@@ -90,22 +90,69 @@ It deliberately does NOT call `persist_dissection.recompute_all_levels()`. That 
 separate reviewed decision with its own export diff — never a side effect of repairing a link. The
 same prohibition is written at the top of `build_sentence_vocab.py`.
 
-SCOPE: N5 AND N4
-----------------
-Only taught records at n5/n4 that sit under the ≥3 floor: 663 links over 63 records, 57 of which
-cross the floor. The same rules find 1,694 more links at N3 over 334 records and lift 101 of them, and they are deliberately left for W13, whose apply re-runs this
-derivation: at N3 the same pass links every で token to `vocab:2028980` (780 of them, the particle
-record the course files at N3), which pushes 33 more lesson↔sentence pairs over the frozen i+1 budget in
-`research/reports/lesson_sentence_baseline.json`. That is a real curriculum finding — an N5 lesson
-showing a word the course only teaches at N3 — and it belongs to the campaign that fixes N3, not to
-a mechanical relink. Scoped to N5/N4 the gating baseline moves by exactly one pair (see the report).
+FIFTH GUARD (W13 apply): NO BARE ONE-KANA FUNCTION WORD
+-------------------------------------------------------
+  bare function
+  word            a SINGLE token Sudachi tags a particle or an auxiliary is claimed only when the
+                  kana form it matches on is two kana or more. This is the same measure the
+                  `kana-function-word` rule already applies to a POS-mismatched link, extended to
+                  the single-token `kana-exact` rule, and it is what separates the two cases that
+                  look alike:
+
+                    だけ, ばかり, など, ほど — words a learner meets AS words, 2-4 kana, 88 links in
+                                              the applied N5/N4 table and every one of them wanted;
+                    で                      — one kana, the plain case particle, `vocab:2028980`,
+                                              which the course files at N3.
+
+                  Without it the N3 pass links EVERY で token in the bank (780 of them) to that
+                  record, and a bank sentence an N5 lesson renders then carries an N3 vocabulary
+                  reference: 33 more lesson<->sentence pairs over the frozen i+1 budget in
+                  `research/reports/lesson_sentence_baseline.json`. A one-kana particle spelled で is
+                  not an ORTHOGRAPHIC variant of anything -- it is spelled exactly as the record is,
+                  and the reason the dissector never linked it is that its per-token linker
+                  deliberately leaves case particles alone. Re-linking it is not this campaign's
+                  repair; it is a decision about whether particle occurrences count towards a
+                  vocabulary floor at all, which belongs to whoever sets the floor.
+
+SCOPE: N5 AND N4 (default), N3 UNDER --scope
+--------------------------------------------
+The default scope is the taught records at n5/n4 that sit under the >=3 sentence floor: 663 links over
+63 records, 57 of which cross the floor. `--scope n3 --table <path>` runs the SAME rules over the N3
+records, writing a second table, and that half was deliberately deferred by W12 to the W13 apply --
+both because the N3 pass must run AFTER the 4,223 mined N3 sentences are in the bank (it reads the
+current coverage to decide which records are short) and because W12 measured it linking every で to
+`vocab:2028980`, which the fifth guard above now refuses.
+
+Two tables rather than one because the REPLAY order needs them apart: the N5/N4 table applies before
+the W13 ingest (manifest step 114) and the N3 table cannot, since none of its sentences exist yet.
+
+THE HOLD LIST
+-------------
+`held[]` in the table carries rows the derivation produced and this campaign deliberately does NOT
+apply, each with its reason. It exists because a link is not free: a bank sentence that gains a
+vocabulary edge gains it for every lesson that RENDERS that sentence, and a lesson may only introduce
+so many unknown items above what it has taught (`validate_lesson_gating.py` check D, budgets 0/1/2/2
+by level, ceiling frozen in `research/reports/lesson_sentence_baseline.json`). Eleven N3 links pushed
+eleven lesson<->sentence pairs over that ceiling; they are held rather than applied, because raising
+the ceiling to make a mechanical relink fit would spend a curriculum guarantee on a link nobody asked
+for. They are not lost — they are listed, with the pair they would break, for the W14 lesson-sentence
+re-selection, which is the unit that decides which sentence a lesson shows.
+
+A hold is addressed by (sentence slug, vocab slug) and SURVIVES `--derive`: the flag re-reads the
+current table's `held[]` before it un-applies anything, so re-deriving cannot quietly re-admit a link
+a human held. Only `rows[]` is applied and only `rows[]` is what `validate_repairs_applied.py`
+asserts; `held[]` is documentation with an address.
 
 Idempotent: every write is `UPDATE … WHERE vocab_id IS NULL` or `INSERT OR IGNORE`, so a second run
 reports 0 changes. Run the exporters afterwards.
 
 Usage: apply_orthographic_relinks.py [--derive] [--check] [--db PATH] [--out-root PATH]
+                                    [--scope n5,n4|n3] [--table PATH]
        --derive  re-derives the table from the index and rewrites it (the rule, re-runnable)
        --check   verify only, write nothing
+       --scope   which record levels the derivation targets (default n5,n4)
+       --table   which tracked table to derive/apply (default research/derived/repairs/
+                 orthographic_relinks.json; the N3 half lives in orthographic_relinks_n3.json)
 """
 from __future__ import annotations
 
@@ -126,6 +173,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
 OUT = out_root(ROOT)
 TABLE = ROOT / "research" / "derived" / "repairs" / "orthographic_relinks.json"
+TABLE_N3 = ROOT / "research" / "derived" / "repairs" / "orthographic_relinks_n3.json"
 
 FLOOR = 3
 MAXW = 5                                   # longest span in tokens; relink_vocab.py's window
@@ -257,7 +305,8 @@ class Registry:
         return any(c.startswith("v") or c in INFLECTABLE_JM for c in self.pos.get(vid, ()))
 
 
-def taught_below_floor(con: sqlite3.Connection, reg: Registry, root: Path) -> dict[int, int]:
+def taught_below_floor(con: sqlite3.Connection, reg: Registry, root: Path,
+                       scope: tuple[str, ...] = SCOPE_LEVELS) -> dict[int, int]:
     """vocab row id -> its current sentence count, for taught n5/n4 records under the floor.
 
     TAUGHT is read from the exported course leaves, the same published slug space
@@ -274,7 +323,7 @@ def taught_below_floor(con: sqlite3.Connection, reg: Registry, root: Path) -> di
             if u.get("type") != "vocab":
                 continue
             vid = reg.by_slug.get(u.get("ref"))
-            if vid is None or reg.rec[vid]["level"] not in SCOPE_LEVELS:
+            if vid is None or reg.rec[vid]["level"] not in scope:
                 continue
             if len(cover[vid]) < FLOOR:
                 out[vid] = len(cover[vid])
@@ -282,9 +331,10 @@ def taught_below_floor(con: sqlite3.Connection, reg: Registry, root: Path) -> di
 
 
 # ---------------------------------------------------------------------------------------------
-def derive(con: sqlite3.Connection, root: Path) -> tuple[list[dict], dict[str, int]]:
+def derive(con: sqlite3.Connection, root: Path,
+           scope: tuple[str, ...] = SCOPE_LEVELS) -> tuple[list[dict], dict[str, int]]:
     reg = Registry(con)
-    targets = taught_below_floor(con, reg, root)
+    targets = taught_below_floor(con, reg, root, scope)
     tokens: dict[int, list[dict]] = defaultdict(list)
     for tid, sid, pos_i, surf, lemma, reading, tpos, vid in con.execute(
             "SELECT id,sentence_id,position,surface,lemma,reading,pos,vocab_id FROM token "
@@ -418,39 +468,62 @@ def derive(con: sqlite3.Connection, root: Path) -> tuple[list[dict], dict[str, i
                     and vid not in reg.uk):
                 stats["skip:kana-token-not-uk"] += 1
                 continue
+            # W13 apply, guard 5. A bare ONE-KANA function word is not an orthographic variant of
+            # anything -- it is spelled exactly as the record is. See the docstring: this keeps
+            # だけ / ばかり / など / ほど and refuses で.
+            if t["pos"] in FUNCTION_POS and not any(
+                    len(k) >= 2 and (R == k or spelling == k) for k in reg.readings.get(vid, ())):
+                stats["skip:bare-one-kana-function-word"] += 1
+                continue
             emit(sid, [t], vid, rule)
 
     rows.sort(key=lambda r: (r["sentence"], r["anchor_position"]))
     return rows, dict(sorted(stats.items()))
 
 
-def write_table(rows: list[dict], stats: dict) -> None:
+def write_table(rows: list[dict], stats: dict, table: Path = TABLE,
+                scope: tuple[str, ...] = SCOPE_LEVELS,
+                held: list[dict] | None = None) -> None:
     lifted = defaultdict(int)
     for r in rows:
         lifted[r["level"]] += 1
     doc = {
         "what_this_is": "W12 orthographic relink. One row per (sentence, token span) that names a "
-                        "taught n5/n4 vocabulary record under the >=3 sentence floor under a "
+                        f"taught {'/'.join(scope)} vocabulary record under the >=3 sentence "
+                        f"floor under a "
                         "different orthography. Derived by scripts/apply_orthographic_relinks.py "
                         "--derive from db/corpus.sqlite + the exported course tree; applied by the "
                         "same script. Addressed by sentence SLUG and token POSITION, never by row id.",
         "match_rule": "lemma (or surface) is a registered form of the record — headword, kana, "
                       "vocab_form, or a JMdict kanji/kana element — AND the realized reading is a "
                       "registered kana reading. Never a substring match.",
-        "scope": "taught vocab at n5/n4 under the floor; N3 is deliberately left to W13",
+        "scope": f"taught vocab at {'/'.join(scope)} under the floor",
         "derivation_counters": stats,
         "links_by_level": dict(sorted(lifted.items())),
         "row_count": len(rows),
+        "held_count": len(held or []),
+        "held": held or [],
         "rows": rows,
     }
-    TABLE.parent.mkdir(parents=True, exist_ok=True)
-    TABLE.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    table.parent.mkdir(parents=True, exist_ok=True)
+    table.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def load_table() -> list[dict]:
-    doc = json.loads(TABLE.read_text(encoding="utf-8"))
+def load_held(table: Path = TABLE) -> dict[tuple[str, str], str]:
+    """{(sentence slug, vocab slug): reason} — links derived but deliberately not applied.
+
+    Read BEFORE `--derive` un-applies anything, so a re-derivation cannot re-admit a held link.
+    """
+    if not table.is_file():
+        return {}
+    doc = json.loads(table.read_text(encoding="utf-8"))
+    return {(h["sentence"], h["vocab"]): h.get("hold_reason", "") for h in doc.get("held", [])}
+
+
+def load_table(table: Path = TABLE) -> list[dict]:
+    doc = json.loads(table.read_text(encoding="utf-8"))
     if doc.get("row_count") != len(doc["rows"]):
-        raise SystemExit(f"{TABLE.name}: row_count {doc.get('row_count')} != {len(doc['rows'])} rows")
+        raise SystemExit(f"{table.name}: row_count {doc.get('row_count')} != {len(doc['rows'])} rows")
     return doc["rows"]
 
 
@@ -578,21 +651,50 @@ def main() -> int:
     ap.add_argument("--derive", action="store_true",
                     help="un-apply the current table, re-derive it from the index, rewrite it")
     ap.add_argument("--check", action="store_true", help="verify only, write nothing")
+    ap.add_argument("--scope", default=",".join(SCOPE_LEVELS),
+                    help="record levels the derivation targets (default n5,n4)")
+    ap.add_argument("--table", type=Path, default=None,
+                    help="tracked table to derive/apply (default the n5/n4 one; --scope n3 "
+                         "defaults to orthographic_relinks_n3.json)")
     ap.add_argument("--db", default=None, help=argparse.SUPPRESS)
     args = ap.parse_args()
+    scope = tuple(x for x in args.scope.replace(" ", "").split(",") if x)
+    table = args.table or (TABLE_N3 if scope == ("n3",) else TABLE)
     db = Path(args.db) if args.db else DB
     con = sqlite3.connect(db)
     con.execute("PRAGMA foreign_keys=ON")
-    print(f"apply_orthographic_relinks: {db}")
+    print(f"apply_orthographic_relinks: {db} | scope {scope} | table {table.name}")
     if args.derive:
-        if TABLE.is_file():
-            undo(con, load_table())
-        rows, stats = derive(con, OUT)
-        write_table(rows, stats)
-        print(f"  derived {len(rows)} links -> {TABLE.relative_to(ROOT)}")
+        holds = load_held(table)          # read BEFORE undo: the hold list outlives the derivation
+        if table.is_file():
+            undo(con, load_table(table))
+        rows, stats = derive(con, OUT, scope)
+        kept, held, seen = [], [], set()
+        for r in rows:
+            reason = holds.get((r["sentence"], r["vocab"]))
+            if reason is None:
+                kept.append(r)
+            else:
+                held.append(dict(r, hold_reason=reason))
+                seen.add((r["sentence"], r["vocab"]))
+        # A hold the derivation does not produce TODAY is carried forward unchanged, never dropped.
+        # Dropping it silently un-holds the link the next time the derivation does produce it, which
+        # is exactly what happened once here: a run over a half-applied index found 206 candidates
+        # instead of 476 and rewrote a 37-entry hold list down to 6.
+        prior = {(h["sentence"], h["vocab"]): h for h in
+                 (json.loads(table.read_text(encoding="utf-8")).get("held") or [])
+                 } if table.is_file() else {}
+        for k, h in prior.items():
+            if k not in seen:
+                held.append(h)
+        held.sort(key=lambda h: (h["sentence"], h["anchor_position"]))
+        stats["held:i+1-budget"] = len(held)
+        write_table(kept, stats, table, scope, held)
+        print(f"  derived {len(kept)} links ({len(held)} held) -> {table.relative_to(ROOT)}")
         for k, v in stats.items():
             print(f"    {k}: {v}")
-    rows = load_table()
+        rows = kept
+    rows = load_table(table)
     changed = apply(con, rows, write=not args.check)
     if args.check:
         print(f"  --check: {changed} write(s) WOULD be made")

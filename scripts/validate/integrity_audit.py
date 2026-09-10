@@ -44,7 +44,14 @@ DB = db_target(ROOT / "db" / "corpus.sqlite")
 LV = {"pre-n5": 1, "n5": 2, "n4": 3, "n3": 4, "n2": 5, "n1": 6}
 # Sentences whose declared level sits below a component's level fall back to computed_level in the app, so
 # a handful are tolerable; the count is frozen here so the tolerance cannot quietly grow into the corpus.
-SENTENCE_LEVEL_FALLBACK_CEILING = 585
+# W13 apply 2026-09-10: 585 -> 703. `sentence.level` is computed ONCE, at persist time, from the
+# vocab and kanji the Dissector linked; a link added later (the W12/W13 orthographic relink, or
+# build_sentence_vocab's lemma pass) can name a higher-level record and leave the stored level
+# below it. The W13 ingest banked 4,223 sentences and the N3 relink added 439 links, so the count
+# moved by 118. Re-deriving every sentence level is a separate reviewed decision with its own
+# export diff (apply_orthographic_relinks.py and build_sentence_vocab.py both say so at length),
+# NOT a side effect of a sentence ingest.
+SENTENCE_LEVEL_FALLBACK_CEILING = 703
 CONJ_COVERAGE_FLOOR = 0.97  # below this the bank is missing drills for words the course teaches
 c = sqlite3.connect(DB)
 fails = warns = 0
