@@ -50,9 +50,61 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 325,
+  "cumulative_known_vocab": 326,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:5111:1479",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "値段",
+        "出る",
+        "意見"
+      ]
+    },
+    {
+      "id": "pp:n5:30",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "嫌い",
+        "来る",
+        "今日"
+      ]
+    },
+    {
+      "id": "kr:n3:1479",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "せんぱい",
+        "ぶたにく",
+        "へんこう"
+      ]
+    },
+    {
+      "id": "kr:n4:1327",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あした",
+        "どんな",
+        "じぶん"
+      ]
+    },
+    {
+      "id": "cf:n3:3705:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "駅",
+        "傘",
+        "間"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-sono-tame-ni",
     "gram:koto-ni-naru",
@@ -131,10 +183,10 @@
     "items": [
       "sent:tatoeba-10899638",
       "sent:tatoeba-10760527",
+      "sent:tatoeba-157990",
       "sent:tatoeba-184254",
       "sent:tatoeba-84568",
-      "sent:tatoeba-186900",
-      "sent:tatoeba-1046077"
+      "sent:tatoeba-186900"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -142,67 +194,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:5111:1479",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "値段",
-        "出る",
-        "意見"
-      ]
-    },
-    {
-      "id": "pp:n5:30",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "嫌い",
-        "来る",
-        "今日"
-      ]
-    },
-    {
-      "id": "kr:n3:1479",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せんぱい",
-        "おこなう",
-        "ぶたにく"
-      ]
-    },
-    {
-      "id": "kr:n4:1327",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あした",
-        "どんな",
-        "じぶん"
-      ]
-    },
-    {
-      "id": "cf:n3:4093:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "熱",
-        "箸",
-        "六"
-      ]
-    }
-  ]
+  }
 }

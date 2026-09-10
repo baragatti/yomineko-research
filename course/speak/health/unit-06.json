@@ -7,47 +7,97 @@
     "pt-BR": "Emergência e saúde, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-5147343",
+    "sent:tatoeba-212666",
+    "sent:tatoeba-198568",
     "sent:tatoeba-10901645",
     "sent:tatoeba-80616",
     "sent:tatoeba-121897",
-    "sent:tatoeba-83950",
-    "sent:tatoeba-85328"
+    "sent:tatoeba-83950"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1218380",
+    "vocab:1265070",
+    "vocab:1444680",
+    "vocab:1237410",
+    "vocab:1600280",
     "vocab:1006780",
     "vocab:1559380"
   ],
   "patterns": [
     "gram:naide-kudasai",
-    "gram:o-kudasai-2",
     "gram:n3-naide",
-    "gram:gp-149"
+    "gram:gp-149",
+    "gram:gp-12"
   ],
   "kanji_recognition": [
     "危",
-    "前",
-    "脳",
-    "半",
-    "分",
-    "行"
+    "橋",
+    "喉",
+    "熱",
+    "行",
+    "気"
   ],
   "shadowing": [
-    "sent:tatoeba-5147343",
+    "sent:tatoeba-212666",
+    "sent:tatoeba-198568",
     "sent:tatoeba-10901645",
     "sent:tatoeba-80616",
     "sent:tatoeba-121897",
-    "sent:tatoeba-83950",
-    "sent:tatoeba-85328"
+    "sent:tatoeba-83950"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 405,
+  "cumulative_known_vocab": 409,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:863",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n5:353",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かりる",
+        "だいぶ",
+        "あそぶ"
+      ]
+    },
+    {
+      "id": "cf:n3:4615:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "三",
+        "歳",
+        "外"
+      ]
+    },
+    {
+      "id": "cf:n3:4865:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "先",
+        "頃",
+        "私"
+      ]
+    },
+    {
+      "id": "kr:n4:1166",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "はっきり",
+        "もんだい",
+        "せんぱい"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-you-ni",
     "gram:you-ni-you-na"
@@ -59,15 +109,6 @@
         "sent:tatoeba-2006378",
         "sent:tatoeba-1200727",
         "sent:tatoeba-6704205"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:o-kudasai-2",
-      "examples": [
-        "sent:gen-0e95f64b542d",
-        "sent:gen-0114d50c684c",
-        "sent:gen-96ce440b58e0"
       ],
       "strand": "language-focused"
     },
@@ -88,37 +129,18 @@
         "sent:tatoeba-79091"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-11960481"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Minha mãe vai ao hospital de manhã.",
-      "answer_key": "母は午前中病院に行きます。",
-      "accepted_variants": [
-        "はははごぜんちゅうびょういんにいきます",
-        "はははごぜんちゅうびょういんにいきます。",
-        "ははわごぜんちゅうびょういんにいきます",
-        "ははわごぜんちゅうびょういんにいきます。",
-        "母は午前中病院に行きます",
-        "母は午前中病院に行きます。"
-      ],
-      "sentence": "sent:tatoeba-83003",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Minha garganta está ardendo e estou com um pouco de febre.",
-      "answer_key": "喉がひりひりして、ちょっと熱があるんです。",
-      "accepted_variants": [
-        "のどがひりひりして、ちょっとねつがあるんです",
-        "のどがひりひりして、ちょっとねつがあるんです。",
-        "喉がひりひりして、ちょっと熱があるんです",
-        "喉がひりひりして、ちょっと熱があるんです。"
-      ],
-      "sentence": "sent:tatoeba-198568",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "É verdade que, quando você passa o resfriado pra outra pessoa, você sara?",
       "answer_key": "風邪って人にうつすと治るってほんと？",
@@ -132,6 +154,38 @@
       "sentence": "sent:tatoeba-3454872",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Se você tivesse metade de um cérebro, seria perigoso!",
+      "answer_key": "お前は脳の半分があったら，危ない!",
+      "accepted_variants": [
+        "おまえはのうのはんぶんがあったら,あぶない",
+        "おまえはのうのはんぶんがあったら,あぶない!",
+        "おまえわのうのはんぶんがあったら,あぶない",
+        "おまえわのうのはんぶんがあったら,あぶない!",
+        "お前は脳の半分があったら,危ない",
+        "お前は脳の半分があったら,危ない!",
+        "お前は脳の半分があったら，危ない",
+        "お前は脳の半分があったら，危ない!"
+      ],
+      "sentence": "sent:tatoeba-5147343",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Direita, liberado~; esquerda, liberado~...; pronto. Tudo certo.",
+      "answer_key": "右よ～し、左よ～し・・・、よし。大丈夫。",
+      "accepted_variants": [
+        "みぎよ~し、ひだりよ~し・・・、よし。だいじょうぶ",
+        "みぎよ~し、ひだりよ~し・・・、よし。だいじょうぶ。",
+        "右よ~し、左よ~し・・・、よし。大丈夫",
+        "右よ~し、左よ~し・・・、よし。大丈夫。",
+        "右よ～し、左よ～し・・・、よし。大丈夫",
+        "右よ～し、左よ～し・・・、よし。大丈夫。"
+      ],
+      "sentence": "sent:tatoeba-74743",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -139,10 +193,10 @@
     "items": [
       "sent:jec-1326",
       "sent:tatoeba-10587764",
-      "sent:tatoeba-145552",
-      "sent:jec-3163",
+      "sent:tatoeba-203344",
       "sent:tatoeba-79502",
-      "sent:tatoeba-11270411"
+      "sent:tatoeba-11270411",
+      "sent:tatoeba-171774"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -150,62 +204,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 45,
-    "fluency": 16
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 17,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:863",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n5:33",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くうこう",
-        "まいにち",
-        "タクシー"
-      ]
-    },
-    {
-      "id": "kr:n5:353",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かりる",
-        "だいぶ",
-        "あそぶ"
-      ]
-    },
-    {
-      "id": "cf:n3:4615:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "三",
-        "其の",
-        "外"
-      ]
-    },
-    {
-      "id": "cf:n3:4865:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "先",
-        "頃",
-        "私"
-      ]
-    }
-  ]
+  }
 }

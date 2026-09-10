@@ -8,29 +8,28 @@
   },
   "say_now": [
     "sent:tatoeba-189285",
-    "sent:tatoeba-74693",
     "sent:tatoeba-172440",
     "sent:tatoeba-157990",
     "sent:tatoeba-79320",
-    "sent:jec-0320"
+    "sent:jec-0320",
+    "sent:tatoeba-184200"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1173720",
-    "vocab:1217730",
     "vocab:1328190",
     "vocab:1194500",
     "vocab:1156530",
-    "vocab:1593480",
+    "vocab:1416220",
     "vocab:1010150",
     "vocab:1289140",
     "vocab:1556370",
-    "vocab:1000940"
+    "vocab:1279590"
   ],
   "patterns": [
-    "gram:deshou",
-    "gram:mashou"
+    "gram:mashou",
+    "gram:gp-105"
   ],
   "kanji_recognition": [
     "映",
@@ -42,39 +41,81 @@
   ],
   "shadowing": [
     "sent:tatoeba-189285",
-    "sent:tatoeba-74693",
     "sent:tatoeba-172440",
     "sent:tatoeba-157990",
     "sent:tatoeba-79320",
-    "sent:jec-0320"
+    "sent:jec-0320",
+    "sent:tatoeba-184200"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 293,
+  "cumulative_known_vocab": 294,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:5245:1908",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "通り",
+        "仕事",
+        "来年"
+      ]
+    },
+    {
+      "id": "cf:n4:1793:1009",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "近く",
+        "買う",
+        "飲む"
+      ]
+    },
+    {
+      "id": "kr:n4:1009",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さいちゅう",
+        "しょくどう",
+        "レストラン"
+      ]
+    },
+    {
+      "id": "kr:n4:1065",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おぼえる",
+        "いちばん",
+        "メートル"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-you-ni-shimashou",
     "gram:gp-114",
-    "gram:gp-153",
-    "gram:gp-77"
+    "gram:n3-to-shite",
+    "gram:n3-you-ni"
   ],
   "drills": [
-    {
-      "pattern": "gram:deshou",
-      "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:mashou",
       "examples": [
         "sent:tatoeba-139208",
         "sent:tatoeba-173392",
-        "sent:tatoeba-200934"
+        "sent:tatoeba-198378"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-105",
+      "examples": [
+        "sent:tatoeba-218501",
+        "sent:tatoeba-188156",
+        "sent:tatoeba-189203"
       ],
       "strand": "language-focused"
     }
@@ -135,57 +176,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 23,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:5245:1908",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "通り",
-        "仕事",
-        "来年"
-      ]
-    },
-    {
-      "id": "kr:n4:1065",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おぼえる",
-        "いちばん",
-        "メートル"
-      ]
-    },
-    {
-      "id": "kr:n4:1166",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はっきり",
-        "もんだい",
-        "せんぱい"
-      ]
-    },
-    {
-      "id": "cf:n3:3586:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "頁",
-        "分",
-        "力"
-      ]
-    }
-  ]
+  }
 }

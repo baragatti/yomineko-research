@@ -1522,8 +1522,8 @@
      ]
     },
     "register[]": {
-     "present": 638,
-     "pct": 129.1,
+     "present": 637,
+     "pct": 128.9,
      "required": false,
      "types": [
       "string"
@@ -1926,6 +1926,53 @@
      ],
      "min": 0.6,
      "max": 0.85
+    },
+    "register": {
+     "present": 5889,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "null",
+      "string"
+     ],
+     "values": [
+      "archaic",
+      "casual",
+      "dialect",
+      "formal",
+      "neutral",
+      "polite",
+      "slang",
+      "vulgar"
+     ]
+    },
+    "register_rule": {
+     "present": 5889,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "bungo-inflection",
+      "casual-marker",
+      "classical-final",
+      "dialect-marker",
+      "grammar-register",
+      "jmdict-slang",
+      "keigo",
+      "no-signal",
+      "plain-predicate",
+      "polite-nonfinal",
+      "polite-predicate",
+      "polite-request",
+      "polite-request-nasai",
+      "polite-set-phrase",
+      "slang-lexeme",
+      "soft-final",
+      "vulgar-lexeme",
+      "written-copula"
+     ]
     },
     "romaji": {
      "present": 5889,
@@ -6205,8 +6252,8 @@
      "types": [
       "integer"
      ],
-     "min": 365,
-     "max": 365
+     "min": 366,
+     "max": 366
     },
     "totals.drills": {
      "present": 1,
@@ -6215,8 +6262,8 @@
      "types": [
       "integer"
      ],
-     "min": 255,
-     "max": 255
+     "min": 251,
+     "max": 251
     },
     "totals.fluency": {
      "present": 1,
@@ -6235,8 +6282,8 @@
      "types": [
       "integer"
      ],
-     "min": 169,
-     "max": 169
+     "min": 171,
+     "max": 171
     },
     "totals.patterns_kept": {
      "present": 1,
@@ -6245,8 +6292,8 @@
      "types": [
       "integer"
      ],
-     "min": 255,
-     "max": 255
+     "min": 251,
+     "max": 251
     },
     "totals.phrases": {
      "present": 1,
@@ -6275,8 +6322,8 @@
      "types": [
       "integer"
      ],
-     "min": 431,
-     "max": 431
+     "min": 430,
+     "max": 430
     },
     "totals.stages": {
      "present": 1,
@@ -6305,8 +6352,8 @@
      "types": [
       "integer"
      ],
-     "min": 581,
-     "max": 581
+     "min": 580,
+     "max": 580
     }
    }
   },
@@ -6425,16 +6472,16 @@
      ]
     },
     "checkpoint[].id": {
-     "present": 365,
-     "pct": 506.9,
+     "present": 366,
+     "pct": 508.3,
      "required": false,
      "types": [
       "string"
      ]
     },
     "checkpoint[].type": {
-     "present": 365,
-     "pct": 506.9,
+     "present": 366,
+     "pct": 508.3,
      "required": false,
      "types": [
       "string"
@@ -6447,8 +6494,8 @@
      ]
     },
     "checkpoint[].via": {
-     "present": 365,
-     "pct": 506.9,
+     "present": 366,
+     "pct": 508.3,
      "required": false,
      "types": [
       "string"
@@ -6493,7 +6540,7 @@
       "integer"
      ],
      "min": 0,
-     "max": 581
+     "max": 580
     },
     "drills": {
      "present": 72,
@@ -6504,32 +6551,32 @@
      ]
     },
     "drills[].examples": {
-     "present": 255,
-     "pct": 354.2,
+     "present": 251,
+     "pct": 348.6,
      "required": false,
      "types": [
       "array"
      ]
     },
     "drills[].examples[]": {
-     "present": 765,
-     "pct": 1062.5,
+     "present": 753,
+     "pct": 1045.8,
      "required": false,
      "types": [
       "string"
      ]
     },
     "drills[].pattern": {
-     "present": 255,
-     "pct": 354.2,
+     "present": 251,
+     "pct": 348.6,
      "required": false,
      "types": [
       "string"
      ]
     },
     "drills[].strand": {
-     "present": 255,
-     "pct": 354.2,
+     "present": 251,
+     "pct": 348.6,
      "required": false,
      "types": [
       "string"
@@ -6644,8 +6691,8 @@
      ]
     },
     "kanji_recognition[]": {
-     "present": 422,
-     "pct": 586.1,
+     "present": 423,
+     "pct": 587.5,
      "required": false,
      "types": [
       "string"
@@ -6689,8 +6736,8 @@
      ]
     },
     "patterns[]": {
-     "present": 255,
-     "pct": 354.2,
+     "present": 251,
+     "pct": 348.6,
      "required": false,
      "types": [
       "string"
@@ -6705,8 +6752,8 @@
      ]
     },
     "patterns_chunked[]": {
-     "present": 169,
-     "pct": 234.7,
+     "present": 171,
+     "pct": 237.5,
      "required": false,
      "types": [
       "string"
@@ -6729,8 +6776,8 @@
      ]
     },
     "production[].accepted_variants[]": {
-     "present": 1038,
-     "pct": 1441.7,
+     "present": 1052,
+     "pct": 1461.1,
      "required": false,
      "types": [
       "string"
@@ -6791,7 +6838,7 @@
      "types": [
       "integer"
      ],
-     "min": 5,
+     "min": 4,
      "max": 6
     },
     "say_now": {
@@ -6885,7 +6932,7 @@
       "integer"
      ],
      "min": 0,
-     "max": 29
+     "max": 35
     },
     "strand_counts.meaning-input": {
      "present": 72,
@@ -6923,7 +6970,7 @@
       "integer"
      ],
      "min": 0,
-     "max": 19
+     "max": 17
     },
     "strands.language-focused": {
      "present": 72,
@@ -6933,7 +6980,7 @@
       "integer"
      ],
      "min": 0,
-     "max": 58
+     "max": 62
     },
     "strands.meaning-input": {
      "present": 72,
@@ -6942,7 +6989,7 @@
      "types": [
       "integer"
      ],
-     "min": 24,
+     "min": 21,
      "max": 100
     },
     "strands.meaning-output": {
@@ -6953,7 +7000,7 @@
       "integer"
      ],
      "min": 0,
-     "max": 10
+     "max": 8
     },
     "title": {
      "present": 72,
@@ -6988,8 +7035,8 @@
      ]
     },
     "words[]": {
-     "present": 581,
-     "pct": 806.9,
+     "present": 580,
+     "pct": 805.6,
      "required": false,
      "types": [
       "string"
@@ -7126,7 +7173,7 @@
       "string"
      ],
      "values": [
-      "2026-09-09"
+      "2026-09-10"
      ]
     },
     "schema_version": {

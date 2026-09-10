@@ -12,7 +12,7 @@
     "sent:tatoeba-184333",
     "sent:tatoeba-77972",
     "sent:tatoeba-77973",
-    "sent:tatoeba-87071"
+    "sent:tatoeba-74894"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -21,13 +21,14 @@
     "vocab:1263490",
     "vocab:1206800",
     "vocab:1554010",
-    "vocab:1486530"
+    "vocab:2845606"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
     "gram:n3-to-iu-no-wa",
     "gram:n3-mitai-da",
-    "gram:n3-to-iu-no"
+    "gram:n3-to-iu-no",
+    "gram:deshou"
   ],
   "kanji_recognition": [
     "済",
@@ -43,15 +44,56 @@
     "sent:tatoeba-184333",
     "sent:tatoeba-77972",
     "sent:tatoeba-77973",
-    "sent:tatoeba-87071"
+    "sent:tatoeba-74894"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 581,
+  "cumulative_known_vocab": 580,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:5450:1591",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "料金",
+        "動く",
+        "寝る"
+      ]
+    },
+    {
+      "id": "cf:n3:266:1591",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "先輩",
+        "彼女",
+        "其れ"
+      ]
+    },
+    {
+      "id": "kr:n3:1393",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いっしょ",
+        "だんせい",
+        "へんこう"
+      ]
+    },
+    {
+      "id": "kr:n3:1591",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "シャワー",
+        "パソコン",
+        "しつもん"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:n3-mo",
     "gram:n3-tokoro-ga"
   ],
   "drills": [
@@ -86,8 +128,17 @@
       "pattern": "gram:n3-to-iu-no",
       "examples": [
         "sent:tatoeba-220804",
-        "sent:tatoeba-234151",
-        "sent:tatoeba-214502"
+        "sent:tatoeba-214502",
+        "sent:tatoeba-138773"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     }
@@ -143,7 +194,7 @@
       "sent:tatoeba-10901570",
       "sent:tatoeba-423387",
       "sent:tatoeba-127148",
-      "sent:tatoeba-120314"
+      "sent:tatoeba-123542"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -151,57 +202,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 30,
-    "meaning-output": 8,
-    "language-focused": 48,
-    "fluency": 15
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 19,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:5393:2639",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "新聞",
-        "休む",
-        "出席"
-      ]
-    },
-    {
-      "id": "cf:n3:5450:1591",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "料金",
-        "動く",
-        "寝る"
-      ]
-    },
-    {
-      "id": "kr:n3:1393",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いっしょ",
-        "だんせい",
-        "へんこう"
-      ]
-    },
-    {
-      "id": "kr:n3:1591",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "シャワー",
-        "パソコン",
-        "しつもん"
-      ]
-    }
-  ]
+  }
 }

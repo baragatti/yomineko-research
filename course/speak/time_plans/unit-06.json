@@ -7,52 +7,97 @@
     "pt-BR": "Quando, que horas, combinar, parte 6"
   },
   "say_now": [
+    "sent:tatoeba-143547",
+    "sent:tatoeba-80373",
     "sent:tatoeba-150509",
     "sent:tatoeba-83926",
     "sent:tatoeba-1190209",
-    "sent:tatoeba-161057",
-    "sent:tatoeba-174391",
-    "sent:tatoeba-1699768"
+    "sent:tatoeba-161057"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1512670",
+    "vocab:1337270",
     "vocab:1316140",
     "vocab:1579350",
     "vocab:1228650",
     "vocab:1174340",
-    "vocab:1268990",
-    "vocab:1310620"
+    "vocab:1372980",
+    "vocab:1310620",
+    "vocab:1529330"
   ],
   "patterns": [
     "gram:amari-nai",
     "gram:masen-ka",
-    "gram:gp-149",
-    "gram:darou",
-    "gram:gp-17"
+    "gram:gp-149"
   ],
   "kanji_recognition": [
+    "学",
     "間",
-    "計",
-    "止",
+    "強",
     "時",
-    "三",
-    "治"
+    "数",
+    "勉"
   ],
   "shadowing": [
+    "sent:tatoeba-143547",
+    "sent:tatoeba-80373",
     "sent:tatoeba-150509",
     "sent:tatoeba-83926",
     "sent:tatoeba-1190209",
-    "sent:tatoeba-161057",
-    "sent:tatoeba-174391",
-    "sent:tatoeba-1699768"
+    "sent:tatoeba-161057"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 363,
+  "cumulative_known_vocab": 367,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n5:3181:280",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "歯",
+        "線",
+        "頭"
+      ]
+    },
+    {
+      "id": "cf:n5:4180:280",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "二",
+        "魚",
+        "箸"
+      ]
+    },
+    {
+      "id": "kr:n4:1214",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あちこち",
+        "なるべく",
+        "かのじょ"
+      ]
+    },
+    {
+      "id": "kr:n4:1272",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かえる",
+        "おわり",
+        "しまる"
+      ]
+    }
+  ],
   "patterns_chunked": [
+    "gram:nakereba-naranai",
+    "gram:n3-ba-noni",
     "gram:n3-da-mono-da"
   ],
   "drills": [
@@ -68,9 +113,9 @@
     {
       "pattern": "gram:masen-ka",
       "examples": [
-        "sent:gen-4595bdeb6907",
         "sent:gen-24bb23e4256e",
-        "sent:gen-a94929c3a847"
+        "sent:gen-a94929c3a847",
+        "sent:tatoeba-172871"
       ],
       "strand": "language-focused"
     },
@@ -82,67 +127,47 @@
         "sent:tatoeba-79091"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:darou",
-      "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Faremos a entrega dentro de uma semana.",
-      "answer_key": "1週間以内にお届けします。",
+      "prompt_pt": "Falta só uma semana para as férias de verão.",
+      "answer_key": "夏休みまであとわずか一週間だ。",
       "accepted_variants": [
-        "1週間以内にお届けします",
-        "1週間以内にお届けします。",
-        "いっしゅうかんいないにおとどけします",
-        "いっしゅうかんいないにおとどけします。"
+        "なつやすみまであとわずかいっしゅうかんだ",
+        "なつやすみまであとわずかいっしゅうかんだ。",
+        "夏休みまであとわずか一週間だ",
+        "夏休みまであとわずか一週間だ。"
       ],
-      "sentence": "sent:tatoeba-190565",
+      "sentence": "sent:tatoeba-187165",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "A gente se encontra a cada três semanas.",
-      "answer_key": "３週間ごとに会ってます。",
+      "prompt_pt": "Falta uma semana para as férias de verão.",
+      "answer_key": "夏休みまで、あと一週間です。",
       "accepted_variants": [
-        "3週間ごとに会ってます",
-        "3週間ごとに会ってます。",
-        "さんしゅうかんごとにあってます",
-        "さんしゅうかんごとにあってます。",
-        "３週間ごとに会ってます",
-        "３週間ごとに会ってます。"
+        "なつやすみまで、あといっしゅうかんです",
+        "なつやすみまで、あといっしゅうかんです。",
+        "夏休みまで、あと一週間です",
+        "夏休みまで、あと一週間です。"
       ],
-      "sentence": "sent:tatoeba-10303648",
+      "sentence": "sent:tatoeba-11124523",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Hoje está ventando bastante, né?",
-      "answer_key": "今日はけっこう風が強いね。",
+      "prompt_pt": "Eu te devolvo aquele CD daqui a uma semana.",
+      "answer_key": "一週間後にそのＣＤを返すよ。",
       "accepted_variants": [
-        "きょうはけっこうかぜがつよいね",
-        "きょうはけっこうかぜがつよいね。",
-        "きょうわけっこうかぜがつよいね",
-        "きょうわけっこうかぜがつよいね。",
-        "今日はけっこう風が強いね",
-        "今日はけっこう風が強いね。"
+        "いっしゅうかんごにそのしーでぃーをかえすよ",
+        "いっしゅうかんごにそのしーでぃーをかえすよ。",
+        "一週間後にそのCDを返すよ",
+        "一週間後にそのCDを返すよ。",
+        "一週間後にそのＣＤを返すよ",
+        "一週間後にそのＣＤを返すよ。"
       ],
-      "sentence": "sent:tatoeba-536767",
+      "sentence": "sent:tatoeba-190560",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -150,12 +175,12 @@
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
+      "sent:tatoeba-123138",
+      "sent:tatoeba-536767",
       "sent:tatoeba-143418",
-      "sent:tatoeba-154767",
-      "sent:tatoeba-10014826",
-      "sent:tatoeba-79849",
-      "sent:tatoeba-80668",
-      "sent:tatoeba-2684823"
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362",
+      "sent:tatoeba-80068"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -163,62 +188,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3623",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3623:1300",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "どんな",
-        "食べる",
-        "コピー"
-      ]
-    },
-    {
-      "id": "cf:n5:3181:280",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "歯",
-        "線",
-        "頭"
-      ]
-    },
-    {
-      "id": "kr:n4:1272",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かえる",
-        "おわり",
-        "こわい"
-      ]
-    },
-    {
-      "id": "kr:n5:131",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とまる",
-        "つかう",
-        "うしろ"
-      ]
-    }
-  ]
+  }
 }

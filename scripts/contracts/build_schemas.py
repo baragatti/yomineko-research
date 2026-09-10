@@ -296,8 +296,34 @@ _exam_section = vocabulary(
      "paraphrase", "usage", "text_grammar", "reading_comp"],
     "design", "design/exam_simulator.md (the written-section table)",
     "Which exam section this item is drawn from.")
+# W31 (A8 / owner decision D7). Both of these MUST be declared rather than measured, and they are the
+# clearest example of why the rule exists: `epistolary` is a D7 value with zero sentences today (the
+# derivation measured that absence on purpose, so the speak filter can reject one on arrival), and
+# five of the 23 rule names fire on no bank sentence either. A measured enum would omit exactly those
+# and then fail the day the corpus finally carries one — an enum is broken by ADDING a value.
+_sentence_register = vocabulary(
+    ["neutral", "polite", "casual", "formal", "vulgar", "archaic", "epistolary", "dialect", "slang"],
+    "design", "design/schema_v2.md ('sentence.register — the D7 value set')",
+    "The register a learner would hear this whole utterance in, or null when no mechanical signal "
+    "fired. Null is NEVER rounded up to `neutral`: a defaulted neutral passes the speaking-path "
+    "filter silently, which is the failure the field exists to prevent.")
+# Nullability is measured (76 of 5,889 rows), so the generator wraps this in `anyOf: [<enum>, null]`
+# on its own; declaring `type: [string, null]` here as well only duplicates the null branch.
+_sentence_register_rule = vocabulary(
+    ["plain-predicate", "polite-predicate", "polite-request", "polite-request-nasai",
+     "polite-nonfinal", "polite-set-phrase", "soft-final", "casual-marker", "grammar-register",
+     "keigo", "written-copula", "bungo-inflection", "classical-final", "jmdict-arch", "jmdict-vulg",
+     "vulgar-lexeme", "rough-address", "jmdict-dialect", "dialect-marker", "jmdict-slang",
+     "slang-lexeme", "epistolary-formula", "no-signal"],
+    "design", "design/schema_v2.md ('sentence.register_rule')",
+    "Which rule decided `register`. Stored because a validator, a ratchet and the speaking-path "
+    "filter all branch on HOW the value was reached and cannot re-parse the Japanese to find out: "
+    "〜なさい is filed `polite` and kept out of the speaking path by this name, rather than by a "
+    "tenth D7 value that would cost every consumer.")
 
 _register({
+    "sentence.register": _sentence_register,
+    "sentence.register_rule": _sentence_register_rule,
     "lesson.exercises[].type": _exercise_type,
     "lesson.unlocks[].type": _unlock_type,
     "topic.lessons[].unlocks[].type": _unlock_type,

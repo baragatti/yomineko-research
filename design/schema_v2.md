@@ -129,10 +129,24 @@ audio_ref, audio_source, # tatoeba:<audioId> | tts:<voice> | none
 structure_explanation_pt,# Layer C
 difficulty,              # numeric (length, rare items, grammar load)
 tags[],                  # greetings|shopping|work|...
-register,                # ONE value from the set below (§B.register) — Layer B
-register_flags[],        # orthogonal content warnings, 0..n — Layer B
-register_confidence,     # 0..1
-register_evidence,       # one line: the token / JMdict tag / ending that decided it
+register,                # ONE value from the D7 set below, or NULL — Layer B     [STORED, W31]
+                         # neutral|polite|casual|formal|vulgar|archaic|epistolary|dialect|slang
+                         # NULL = no mechanical signal (129 of 10,112 derived rows; 75 of the
+                         # 5,889 in the bank). NEVER defaulted to `neutral`: a defaulted neutral
+                         # passes the speaking-path filter silently, which is the failure this
+                         # field exists to prevent. A NULL row carries needs_review instead.
+register_rule,           # locale-neutral enum naming the rule that decided it   [STORED, W31]
+                         #   plain-predicate | polite-predicate | polite-request |
+                         #   polite-request-nasai | polite-nonfinal | polite-set-phrase |
+                         #   soft-final | casual-marker | grammar-register | keigo |
+                         #   written-copula | bungo-inflection | classical-final |
+                         #   jmdict-arch | jmdict-vulg | vulgar-lexeme | rough-address |
+                         #   jmdict-dialect | dialect-marker | jmdict-slang | slang-lexeme |
+                         #   epistolary-formula | no-signal
+register_signals[],      # every signal seen, ordered; [0] is the deciding one   [design only]
+register_confidence,     # 0..1; exactly 0.0 iff register IS NULL                [design only]
+register_evidence,       # the one-line human string, == register_signals[0]     [design only]
+register_flags[],        # orthogonal content warnings, 0..n — Layer B           [design only]
 flags: ai_generated, needs_review, verified
 + provenance
 ```
@@ -166,6 +180,39 @@ language-AGNOSTIC"); the pt-BR label lives in the UI locale module, never here.
 outranks です／ます because it is what the listener reacts to; `polite` outranks `casual` because
 the です／ます frame sets the relationship.
 
+**The predicate is read off the LAST BUNSETSU** of each sentence unit, with SudachiPy
+(`dict="full"`, split mode C) — never by a suffix match on the string. です／ます anywhere other
+than the final bunsetsu is not politeness of the sentence (「彼は明日来ますと言った」 is `neutral`);
+the one exception is a sentence with no final predicate at all (〜ますように), rule
+`polite-nonfinal`.
+
+**Two calls the derivation surfaced, both settled (W31, APP_PLAN row W31):**
+
+- **〜なさい has no home in D7** — 134 rows (立ちなさい, １から１０まで数えなさい) are an *instructional*
+  imperative: derived from the honorific なさる so not `casual`, addressed downward so not `polite`
+  in any useful sense, not keigo so not `formal`. They stay filed `polite` under their own rule name
+  `polite-request-nasai`, and the speaking path excludes them **by rule name**. No tenth value: a
+  tenth value costs every consumer and only the speak filter cares.
+- **`である` stays `formal`** (84 rows), as the D7 table above already says. It is written-formal
+  rather than deference, and the filter's purpose is exactly to keep written-formal prose out of a
+  conversational drill, so the value earns its place. Rule name `written-copula`, so one grep moves
+  the class if the owner later wants it read as `neutral`.
+
+**`register_rule` exists because `register_evidence` is prose.** A validator, a ratchet and the
+speak filter all need to branch on *how* a value was reached — accept `polite-predicate` at face
+value, hold every `grammar-register` row for review, exclude `polite-request-nasai` from production
+— and none of them can re-parse a sentence to find out. It is a neutral English enum like every
+other mechanical enum in this schema (spec §1 "internals are language-AGNOSTIC").
+
+**Only `register` and `register_rule` are STORED today** (migration 017, `sentence.register` /
+`sentence.register_rule`, exported on every bank record). `register_signals[]`,
+`register_confidence`, `register_evidence` and `register_flags[]` are specified above and are not
+columns: the derivation computes signals and a confidence, and
+`research/derived/repairs/sentence_register.json` carries both per row, but nothing consumes them
+yet and an unread exported field is a contract cost with no reader. They become columns the day a
+consumer asks for them; the derivation already produces them, so that is an exporter change, not a
+re-derivation.
+
 **`register_flags[]` — orthogonal content warnings**, independent of the register and of each
 other. A sentence may carry none or several. They describe *content*, never politeness:
 
@@ -176,10 +223,14 @@ topicalised or generalised — 日本人は…, ドイツ人はとてもずる�
 
 **Layer and review.** `register` is **Layer B** — derived from Layer-A material (JMdict misc tags,
 Sudachi morphology) and machine-validated, never free authoring. The deterministic first pass is
-`scripts/derive_sentence_register.py`; anything it decides on absence of evidence, or on a
-grammar point's authored register, carries `register_confidence < 0.8` and `needs_review: true`
-for the LLM pass and the teacher queue. `register_evidence` must name the deciding token, tag or
-ending, so a reviewer can check the call without re-reading the sentence.
+`scripts/derive_sentence_register_v2.py` (the first attempt, `derive_sentence_register.py`, is kept
+for its JMdict misc map and for the agreement comparison); anything it decides on absence of
+evidence, or on a grammar point's authored register, carries `register_confidence < 0.8` and
+`needs_review: true` for the LLM pass and the teacher queue. `register_evidence` must name the
+deciding token, tag or ending, so a reviewer can check the call without re-reading the sentence.
+The derivation is deterministic and cheap (10,112 sentences in about a second), which is why
+`scripts/validate/validate_sentence_register.py` re-derives the whole bank on every gate run and
+fails on any stored value the tree no longer produces — the field cannot drift from its own rule.
 
 **The lessons never filter on it (A8, owner: "yes; must not impact the lessons").** `register` is
 consumed by the **speaking path only** — `scripts/export/build_speaking_path.py` and the drill,

@@ -10,9 +10,9 @@
     "sent:tatoeba-11706794",
     "sent:tatoeba-147605",
     "sent:tatoeba-81342",
+    "sent:tatoeba-214558",
     "sent:tatoeba-84089",
-    "sent:tatoeba-10056979",
-    "sent:tatoeba-157573"
+    "sent:tatoeba-10056979"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,10 +20,9 @@
     "vocab:1228260",
     "vocab:1341000",
     "vocab:1524700",
+    "vocab:1397300",
     "vocab:1244680",
     "vocab:1092820",
-    "vocab:1242350",
-    "vocab:1198880",
     "vocab:1222840",
     "vocab:1597150",
     "vocab:1009290"
@@ -31,10 +30,10 @@
   "patterns": [
     "gram:koto-ga-aru",
     "gram:n3-dakedo",
+    "gram:n3-rashii",
     "gram:gp-80",
     "gram:gp-12",
-    "gram:gp-25",
-    "gram:ni-suru"
+    "gram:gp-25"
   ],
   "kanji_recognition": [
     "吸",
@@ -48,15 +47,67 @@
     "sent:tatoeba-11706794",
     "sent:tatoeba-147605",
     "sent:tatoeba-81342",
+    "sent:tatoeba-214558",
     "sent:tatoeba-84089",
-    "sent:tatoeba-10056979",
-    "sent:tatoeba-157573"
+    "sent:tatoeba-10056979"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 435,
+  "cumulative_known_vocab": 437,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:259",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:822",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n4:817",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いちど",
+        "かぞく",
+        "にがい"
+      ]
+    },
+    {
+      "id": "kr:n4:891",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "びょういん",
+        "りょうしん",
+        "しゅっぱつ"
+      ]
+    },
+    {
+      "id": "cf:n3:5126:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "雪",
+        "口",
+        "心"
+      ]
+    },
+    {
+      "id": "cf:n3:5182:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "二",
+        "頃",
+        "昔"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
     {
@@ -78,6 +129,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:n3-rashii",
+      "examples": [
+        "sent:tatoeba-100541",
+        "sent:tatoeba-107636",
+        "sent:tatoeba-108826"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-80",
       "examples": [
         "sent:tatoeba-141431",
@@ -91,7 +151,7 @@
       "examples": [
         "sent:tatoeba-84959",
         "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
+        "sent:tatoeba-11960481"
       ],
       "strand": "language-focused"
     },
@@ -103,31 +163,9 @@
         "sent:tatoeba-8575496"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ni-suru",
-      "examples": [
-        "sent:gen-6bab4422cee3",
-        "sent:tatoeba-223815",
-        "sent:tatoeba-232235"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Por favor, tenha uma refeição maravilhosa.",
-      "answer_key": "すばらしい食事を経験下さい。",
-      "accepted_variants": [
-        "すばらしいしょくじをけいけんください",
-        "すばらしいしょくじをけいけんください。",
-        "すばらしい食事を経験下さい",
-        "すばらしい食事を経験下さい。"
-      ],
-      "sentence": "sent:tatoeba-214558",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "No fim das contas, é a experiência que faz a diferença.",
       "answer_key": "やはり経験がものを言います",
@@ -149,6 +187,21 @@
       "sentence": "sent:jec-0071",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Em casos assim, é a experiência que fala mais alto.",
+      "answer_key": "こういう場合には経験が物を言う。",
+      "accepted_variants": [
+        "こういうばあいにはけいけんがものをいう",
+        "こういうばあいにはけいけんがものをいう。",
+        "こういうばあいにわけいけんがものをゆう",
+        "こういうばあいにわけいけんがものをゆう。",
+        "こういう場合には経験が物を言う",
+        "こういう場合には経験が物を言う。"
+      ],
+      "sentence": "sent:tatoeba-225041",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -156,10 +209,10 @@
     "items": [
       "sent:tatoeba-5118",
       "sent:tatoeba-142423",
-      "sent:tatoeba-83003",
+      "sent:tatoeba-212666",
       "sent:jec-1326",
       "sent:tatoeba-10587764",
-      "sent:tatoeba-145552"
+      "sent:tatoeba-203344"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -167,62 +220,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 22,
     "meaning-output": 6,
-    "language-focused": 57,
-    "fluency": 12
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 28,
+    "language-focused": 33,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:822",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:463:1000",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "張る",
-        "無い",
-        "お礼"
-      ]
-    },
-    {
-      "id": "cf:n4:4657:1211",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "映画",
-        "毎日",
-        "送る"
-      ]
-    },
-    {
-      "id": "kr:n4:1000",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しごと",
-        "おわる",
-        "ようい"
-      ]
-    },
-    {
-      "id": "kr:n4:1211",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こうがい",
-        "おくれる",
-        "たずねる"
-      ]
-    }
-  ]
+  }
 }

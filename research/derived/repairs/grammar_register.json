@@ -1,0 +1,162 @@
+{
+ "unit": "W31",
+ "table": "grammar register — the registry errors the sentence-register derivation found",
+ "what_this_is": "research/reports/w31_derive_report.md §3.2 compared each sentence's DERIVED register against the register tagged on the grammar points that sentence illustrates. 746 rows disagreed; 701 of them are not defects (a point tagged `plain` describes the FORM the point attaches to, not the politeness of the sentence built on it). The remaining 27 rows come from 13 grammar points, and this table is the judgement on each: 8 repaired, 5 held with a reason.",
+ "the_rule_applied": "`grammar_point.register` states the register the point's OWN FORMS impose. A form that carries no politeness morphology imposes none, so it is `neutral`; a stylistic axis (colloquial vs literary) is not a politeness level and is kept beside `neutral` rather than replacing it.",
+ "layers": "this table is the authoring layer; scripts/apply_grammar_register_repairs.py writes db/corpus.sqlite (grammar_point.register and register_json) and scripts/export/export_corpus.py republishes corpus/grammar/*.json, which is canonical.",
+ "reads_downstream": "scripts/derive_sentence_register_v2.py reads corpus/grammar/*.json, so the sentence-register table is re-derived AFTER this table is applied and exported.",
+ "row_count": 8,
+ "rows": [
+  {
+   "key": "no-ga-jouzu",
+   "field": "register",
+   "old": [
+    "polite"
+   ],
+   "new": [
+    "neutral"
+   ],
+   "old_scalar": "polite",
+   "new_scalar": "neutral",
+   "why": "plain-form point tagged polite: its only form is のが上手, which carries no politeness morphology. The four bank sentences it tags end plain (マイクは日本語を話すのが上手だ)."
+  },
+  {
+   "key": "no-ga-suki",
+   "field": "register",
+   "old": [
+    "polite"
+   ],
+   "new": [
+    "neutral"
+   ],
+   "old_scalar": "polite",
+   "new_scalar": "neutral",
+   "why": "plain-form point tagged polite: the form is のが好き. Three bank sentences, all plain (ゴルフをするのが好き。)."
+  },
+  {
+   "key": "no-ga-heta",
+   "field": "register",
+   "old": [
+    "polite"
+   ],
+   "new": [
+    "neutral"
+   ],
+   "old_scalar": "polite",
+   "new_scalar": "neutral",
+   "why": "plain-form point tagged polite: the form is のが下手. Two bank sentences, one plain and one casual (あいつは教えるのが下手だよ。)."
+  },
+  {
+   "key": "gp-125",
+   "field": "register",
+   "old": [
+    "polite"
+   ],
+   "new": [
+    "neutral"
+   ],
+   "old_scalar": "polite",
+   "new_scalar": "neutral",
+   "why": "plain-form point tagged polite: the form is ようにいのる (〜ように祈る). Both bank sentences end plain (母の病気が早く治るように祈った)."
+  },
+  {
+   "key": "hazu-da",
+   "field": "register",
+   "old": [
+    "polite"
+   ],
+   "new": [
+    "neutral"
+   ],
+   "old_scalar": "polite",
+   "new_scalar": "neutral",
+   "why": "はず + copula: the politeness is the copula's and therefore the speaker's, not the point's. The tag came from the pattern being spelled ～はずです; the bank's own sentences end plain (４０近いはずだ。). Its sibling hazu-ga-nai is already tagged plain."
+  },
+  {
+   "key": "zehi",
+   "field": "register",
+   "old": [
+    "polite"
+   ],
+   "new": [
+    "neutral"
+   ],
+   "old_scalar": "neutral",
+   "new_scalar": "neutral",
+   "why": "ぜひ is an adverb and imposes no politeness level (ぜひそうしよう。). This row also repairs a self-contradiction: the scalar column already said neutral while register_json said polite."
+  },
+  {
+   "key": "gp-42",
+   "field": "register",
+   "old": [
+    "casual",
+    "colloquial"
+   ],
+   "new": [
+    "neutral"
+   ],
+   "old_scalar": "casual",
+   "new_scalar": "neutral",
+   "why": "けっこう tagged casual/colloquial, yet its own forms include けっこうです and all three bank sentences are polite refusals (いいえ、けっこうです。/ お水だけでけっこうです。)."
+  },
+  {
+   "key": "sakki",
+   "field": "register",
+   "old": [
+    "casual",
+    "colloquial"
+   ],
+   "new": [
+    "neutral",
+    "colloquial"
+   ],
+   "old_scalar": "casual",
+   "new_scalar": "neutral",
+   "why": "さっき is a time adverb: colloquial is a STYLE axis (against 先ほど), not a politeness level, and it occurs freely in です／ます speech (私は仕事でさっきつきました。). `colloquial` is kept and the politeness claim `casual` is dropped, which is what the sentence derivation reads."
+  }
+ ],
+ "held": [
+  {
+   "key": "o-go",
+   "register": [
+    "polite"
+   ],
+   "kept": true,
+   "why": "お／ご genuinely raises register in its honorific use (お名前, ご住所). The single conflicting row is お金, a lexicalised prefix, which is not evidence that the POINT is neutral."
+  },
+  {
+   "key": "temo-ii-desu",
+   "register": [
+    "polite"
+   ],
+   "kept": true,
+   "why": "the point's own form IS てもいいです, so `polite` describes it correctly. The conflicting row 遊びに行ってもいい？ is a plain てもいい sentence tagged with the polite-form point — a LINK defect, a different work item."
+  },
+  {
+   "key": "gp-109",
+   "register": [
+    "casual",
+    "colloquial"
+   ],
+   "kept": true,
+   "why": "forms are てくれない・てもらえない, the plain negative-question request, so `casual` describes them. The three conflicting sentences use てもらえますか, a polite form the record does not carry — a forms/link defect, a different work item."
+  },
+  {
+   "key": "tte",
+   "register": [
+    "casual",
+    "colloquial"
+   ],
+   "kept": true,
+   "why": "って is the colloquial quotative; it stays colloquial even inside a です frame (すしって何ですか). The sentence-level register field is what now carries the frame."
+  },
+  {
+   "key": "yo",
+   "register": [
+    "colloquial"
+   ],
+   "kept": true,
+   "why": "よ is a spoken-language particle and attaches to 敬体 and 常体 alike (お薬ができましたよ。). Same reasoning as って: the point's tag is about the particle, the sentence's register about the utterance."
+  }
+ ]
+}

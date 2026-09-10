@@ -11,8 +11,8 @@
     "sent:tatoeba-81654",
     "sent:tatoeba-80432",
     "sent:tatoeba-80745",
-    "sent:tatoeba-89607",
-    "sent:tatoeba-75789"
+    "sent:tatoeba-74941",
+    "sent:tatoeba-89607"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -20,15 +20,14 @@
     "vocab:1304200",
     "vocab:1598680",
     "vocab:1203800",
+    "vocab:2853889",
     "vocab:1006110",
-    "vocab:1349610",
     "vocab:1586210"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
     "gram:kamo-shirenai",
     "gram:hazu-ga-nai",
-    "gram:deshou",
     "gram:janai-dewa-nai"
   ],
   "kanji_recognition": [
@@ -44,16 +43,69 @@
     "sent:tatoeba-81654",
     "sent:tatoeba-80432",
     "sent:tatoeba-80745",
-    "sent:tatoeba-89607",
-    "sent:tatoeba-75789"
+    "sent:tatoeba-74941",
+    "sent:tatoeba-89607"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 530,
+  "cumulative_known_vocab": 526,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:13:1571",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "貰う",
+        "去年",
+        "半分"
+      ]
+    },
+    {
+      "id": "cf:n3:3488:1571",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "同じ",
+        "半分",
+        "苦労"
+      ]
+    },
+    {
+      "id": "pp:n3:1369",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "飲む",
+        "作る",
+        "時間"
+      ]
+    },
+    {
+      "id": "kr:n3:1369",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おえる",
+        "つづく",
+        "ひどい"
+      ]
+    },
+    {
+      "id": "kr:n3:1571",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きんようび",
+        "ファックス",
+        "りょうしん"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:te-kureru"
+    "gram:gp-36",
+    "gram:no-naka-de"
   ],
   "drills": [
     {
@@ -80,15 +132,6 @@
         "sent:tatoeba-11692639",
         "sent:tatoeba-81586",
         "sent:tatoeba-141784"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:deshou",
-      "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     },
@@ -161,67 +204,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:13:1571",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "自由",
-        "貰う",
-        "去年"
-      ]
-    },
-    {
-      "id": "cf:n3:3488:1571",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "同じ",
-        "半分",
-        "苦労"
-      ]
-    },
-    {
-      "id": "pp:n3:1369",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "午後",
-        "飲む",
-        "作る"
-      ]
-    },
-    {
-      "id": "kr:n3:1369",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おえる",
-        "ひどい",
-        "あがる"
-      ]
-    },
-    {
-      "id": "kr:n3:1571",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きんようび",
-        "ファックス",
-        "めしあがる"
-      ]
-    }
-  ]
+  }
 }

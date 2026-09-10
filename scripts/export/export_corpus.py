@@ -670,6 +670,17 @@ def export_sentences(con: sqlite3.Connection) -> int:
             # judged from the Japanese, which is why it is a sibling field and not folded into pattern.
             "pattern": jloads(s["pattern_json"]),
             "clause_structure": s["clause_structure"],
+            # W31 (A8 / D7). ONE register for the whole utterance, or null when no mechanical signal
+            # fired — null is never rounded up to `neutral`, because a defaulted neutral passes the
+            # speaking-path filter silently, which is the failure the field exists to prevent. Those
+            # rows carry provenance.needs_review instead. `register_rule` is the locale-neutral name
+            # of the rule that decided it, so a consumer (the speak filter, the validator, a ratchet)
+            # can branch on HOW the value was reached without re-reading the Japanese: 〜なさい is
+            # filed `polite` and kept out of the speaking path by its rule name, not by a tenth enum
+            # value. Layer B; derived by scripts/derive_sentence_register_v2.py and re-derived on
+            # every gate run by scripts/validate/validate_sentence_register.py.
+            "register": s["register"],
+            "register_rule": s["register_rule"],
             "tokens": tokens, "particles": particles, "grammar": grammar,
             # W12: the sentence-level vocabulary edge (see the comment above export_sentences' loop).
             "vocab": sent_vocab.get(sid, []),

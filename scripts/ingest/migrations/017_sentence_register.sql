@@ -1,0 +1,31 @@
+-- W31 (A8, owner decision D7) — the sentence-level `register` field.
+--
+-- Selection into the speaking path is mechanical (seed lemma + known set), so nothing could tell a
+-- polite request from a Bible verse: course/speak/ shipped 心熱けれど肉体は弱し as a production
+-- prompt and 痔があります in `health`. `vocab.register` is a word-level JMdict tag and exports null;
+-- `grammar_point.register` is a property of the POINT, not of an utterance. This is the missing
+-- sentence-level one, and design/schema_v2.md `sentence.register` is its specification.
+--
+-- `register` holds ONE value of the D7 set — neutral | polite | casual | formal | vulgar | archaic |
+-- epistolary | dialect | slang — or NULL. NULL means "no mechanical signal" and is deliberate: a
+-- residue sentence defaulted to `neutral` would pass the speak filter silently, which is the exact
+-- failure the field exists to prevent. Those rows carry needs_review = 1 instead.
+--
+-- `register_rule` names the rule that decided the value, as a locale-neutral enum
+-- (plain-predicate | polite-predicate | polite-request | polite-request-nasai | polite-nonfinal |
+-- polite-set-phrase | soft-final | casual-marker | grammar-register | keigo | written-copula |
+-- bungo-inflection | classical-final | jmdict-arch | jmdict-vulg | vulgar-lexeme | rough-address |
+-- jmdict-dialect | dialect-marker | jmdict-slang | slang-lexeme | epistolary-formula | no-signal).
+-- It exists because a validator, a ratchet and the speak filter all have to branch on HOW a value
+-- was reached and cannot re-read the Japanese to find out — 〜なさい is the case that forced it
+-- (D7 has no `instructional` value, so those 134 rows are filed `polite` and excluded from the
+-- speaking path BY RULE NAME rather than by a tenth enum value that would cost every consumer).
+--
+-- Both columns are Layer B: derived by scripts/derive_sentence_register_v2.py from Layer-A material
+-- (SudachiPy morphology, JMdict misc tags, the grammar registry) and machine-validated against a
+-- re-derivation by scripts/validate/validate_sentence_register.py on every gate run.
+--
+-- init_db.py treats "duplicate column name" as already-applied, so this is safe on the existing DB.
+
+ALTER TABLE sentence ADD COLUMN register TEXT;
+ALTER TABLE sentence ADD COLUMN register_rule TEXT;

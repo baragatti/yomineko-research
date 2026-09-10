@@ -50,9 +50,56 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 67,
+  "cumulative_known_vocab": 65,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:210",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:500:1123",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "会う",
+        "此れ",
+        "聞く"
+      ]
+    },
+    {
+      "id": "cf:n4:1447:1123",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "降る",
+        "高い",
+        "始め"
+      ]
+    },
+    {
+      "id": "kr:n4:1123",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ねだん",
+        "くるま",
+        "あまり"
+      ]
+    },
+    {
+      "id": "kr:n4:1178",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ねがう",
+        "よやく",
+        "あまり"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-59",
     "gram:gari",
@@ -123,7 +170,7 @@
       "sent:tatoeba-127122",
       "sent:tatoeba-9930561",
       "sent:tatoeba-5332",
-      "sent:gen-1d921e8b2ad3",
+      "sent:gen-a5ee7b945644",
       "sent:tatoeba-10901919",
       "sent:tatoeba-5057"
     ],
@@ -133,62 +180,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 30,
-    "meaning-output": 8,
-    "language-focused": 48,
-    "fluency": 15
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 19,
+    "language-focused": 24,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:210",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:500:1123",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "会う",
-        "此れ",
-        "半分"
-      ]
-    },
-    {
-      "id": "cf:n4:1447:1123",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "降る",
-        "高い",
-        "始め"
-      ]
-    },
-    {
-      "id": "kr:n4:1123",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ねだん",
-        "くるま",
-        "あまり"
-      ]
-    },
-    {
-      "id": "kr:n4:1178",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ねがう",
-        "よやく",
-        "あまり"
-      ]
-    }
-  ]
+  }
 }

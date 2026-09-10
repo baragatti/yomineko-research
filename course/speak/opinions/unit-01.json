@@ -50,9 +50,51 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 514,
+  "cumulative_known_vocab": 510,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:4260:2932",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "必要",
+        "送る",
+        "食堂"
+      ]
+    },
+    {
+      "id": "cf:n5:2809:71",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "終わる",
+        "初めて",
+        "木曜日"
+      ]
+    },
+    {
+      "id": "kr:n5:136",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "りょうしん",
+        "おもいだす",
+        "ありがとう"
+      ]
+    },
+    {
+      "id": "kr:n5:71",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "てがみ",
+        "むかし",
+        "しずか"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-mattaku-nai",
     "gram:hazu-ga-nai"
@@ -79,9 +121,9 @@
     {
       "pattern": "gram:gp-89",
       "examples": [
-        "sent:tatoeba-4855",
         "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
+        "sent:tatoeba-123036",
+        "sent:tatoeba-4855"
       ],
       "strand": "language-focused"
     },
@@ -125,17 +167,17 @@
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Amanhã talvez chova.",
-      "answer_key": "明日は雨かもしれない。",
+      "prompt_pt": "É melhor você cumprir a promessa.",
+      "answer_key": "約束は守った方がいい。",
       "accepted_variants": [
-        "あすはあめかもしれない",
-        "あすはあめかもしれない。",
-        "あすわあめかもしれない",
-        "あすわあめかもしれない。",
-        "明日は雨かもしれない",
-        "明日は雨かもしれない。"
+        "やくそくはまもったほうがいい",
+        "やくそくはまもったほうがいい。",
+        "やくそくわまもったほうがいい",
+        "やくそくわまもったほうがいい。",
+        "約束は守った方がいい",
+        "約束は守った方がいい。"
       ],
-      "sentence": "sent:tatoeba-2684823",
+      "sentence": "sent:tatoeba-79537",
       "kind": "on-topic",
       "strand": "meaning-output"
     }
@@ -143,12 +185,12 @@
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
+      "sent:tatoeba-84069",
+      "sent:tatoeba-214003",
       "sent:tatoeba-84229",
       "sent:tatoeba-224121",
       "sent:tatoeba-80049",
-      "sent:tatoeba-214616",
-      "sent:tatoeba-220381",
-      "sent:tatoeba-9969670"
+      "sent:tatoeba-121505"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -156,57 +198,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:4260:2932",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "必要",
-        "送る",
-        "食堂"
-      ]
-    },
-    {
-      "id": "cf:n5:2809:71",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "終わる",
-        "初めて",
-        "何時も"
-      ]
-    },
-    {
-      "id": "kr:n5:136",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "りょうしん",
-        "おもいだす",
-        "ありがとう"
-      ]
-    },
-    {
-      "id": "kr:n5:71",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "てがみ",
-        "むかし",
-        "しずか"
-      ]
-    }
-  ]
+  }
 }

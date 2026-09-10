@@ -226,6 +226,17 @@ def main() -> int:
     kana_count: Counter = Counter(v["kana"] for v in vocab_by_slug.values())
     key_to_slug = {g["key"]: g["slug"] for g in grammar.values() if g.get("key")}
 
+    # W31 (A8). The builders' own filter, imported rather than restated: a second copy of the rule
+    # here would drift from the one that actually selected, which is the failure mode
+    # design/speaking_path.md §5 keeps the stage seeds in the builder to avoid. The blocklist is read
+    # from the tree under test, so a plant fixture can carry its own.
+    sys.path.insert(0, str(root / "scripts" / "export"))
+    from speak_filter import SpeakFilter                                          # noqa: E402
+    speak_filter = SpeakFilter(
+        {s: (r.get("register"), r.get("register_rule")) for s, r in sentences.items()},
+        {s: r.get("jp", "") for s, r in sentences.items()},
+        blocklist=root / "design" / "speak_blocklist.json")
+
     course = json.loads((speak / "course.json").read_text(encoding="utf-8"))
     fails: list[str] = []
     warns: list[str] = []
@@ -559,6 +570,26 @@ def main() -> int:
                 rec = sentences.get(s)
                 if rec and not (rec.get("provenance") or {}).get("ai_generated"):
                     real_from_bank += 1
+
+            # ---- W31 (A8): the content filter, asserted on the SHIPPED units ---------------------
+            # The filter lives in the builders (scripts/export/speak_filter.py) and works on the
+            # candidate pool, which is the right place for it — an excluded sentence never takes a
+            # slot. This is the other half: a gate that reads what actually shipped, so the filter
+            # cannot be bypassed by a hand edit, a stale rebuild, or a future selector that forgets
+            # to call it. The three surfaces are exactly the three A8 names: `say_now`, `production`,
+            # and `drills[].examples`.
+            for surface, slugs in (("say_now", list(u["say_now"])),
+                                   ("production", [x["sentence"] for x in u.get("production") or []]),
+                                   ("drills[].examples", [e for d in (u.get("drills") or [])
+                                                          for e in d.get("examples") or []])):
+                for s in slugs:
+                    rec = sentences.get(s)
+                    if rec is None:
+                        continue          # a non-bank phrase is reported by its own check above
+                    why = speak_filter.reject_reason(s)
+                    if why:
+                        fails.append(f"{u['id']}: {surface} carries {s} — {why} "
+                                     f"({rec.get('jp', '')[:36]})")
             if len(u["say_now"]) < PHRASES_PER_UNIT:
                 shortfall.append({"stage": stage["slug"], "unit": u["id"],
                                   "got": len(u["say_now"]), "want": PHRASES_PER_UNIT})

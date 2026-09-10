@@ -8,56 +8,107 @@
   },
   "say_now": [
     "sent:tatoeba-4854",
-    "sent:tatoeba-183277",
     "sent:tatoeba-147431",
     "sent:tatoeba-146817",
     "sent:tatoeba-226794",
-    "sent:tatoeba-5109"
+    "sent:tatoeba-5109",
+    "sent:tatoeba-226013"
   ],
   "chunk_phrases": [
     "sent:tatoeba-4854"
   ],
   "untranslated": [],
   "words": [
-    "vocab:1221520",
     "vocab:1343950",
     "vocab:1348870",
     "vocab:1012620",
+    "vocab:1327720",
+    "vocab:1003430",
     "vocab:1448580",
-    "vocab:1587290",
     "vocab:1501660"
   ],
   "patterns": [
     "gram:n3-sete-kudasai",
     "gram:o-kudasai-2",
     "gram:te-kudasai",
-    "gram:gp-121"
+    "gram:kitto",
+    "gram:gp-121",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
-    "気",
     "書",
     "休",
     "少",
     "湯",
-    "沸"
+    "沸",
+    "話"
   ],
   "shadowing": [
     "sent:tatoeba-4854",
-    "sent:tatoeba-183277",
     "sent:tatoeba-147431",
     "sent:tatoeba-146817",
     "sent:tatoeba-226794",
-    "sent:tatoeba-5109"
+    "sent:tatoeba-5109",
+    "sent:tatoeba-226013"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 455,
+  "cumulative_known_vocab": 456,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:te-ita",
-    "gram:n3-kake"
+  "checkpoint": [
+    {
+      "id": "so:n3:2",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:2",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:1126:150",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "学校",
+        "泳ぐ",
+        "旅行"
+      ]
+    },
+    {
+      "id": "cf:n5:4414:326",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "部屋",
+        "眠い",
+        "関係"
+      ]
+    },
+    {
+      "id": "kr:n4:1101",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "やすむ",
+        "ごぜん",
+        "やっと"
+      ]
+    },
+    {
+      "id": "kr:n5:150",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かわ",
+        "ふね",
+        "よぶ"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:n3-sete-kudasai",
@@ -72,8 +123,8 @@
       "pattern": "gram:o-kudasai-2",
       "examples": [
         "sent:gen-0e95f64b542d",
-        "sent:gen-96ce440b58e0",
-        "sent:gen-0114d50c684c"
+        "sent:gen-0114d50c684c",
+        "sent:gen-96ce440b58e0"
       ],
       "strand": "language-focused"
     },
@@ -81,8 +132,17 @@
       "pattern": "gram:te-kudasai",
       "examples": [
         "sent:tatoeba-124708",
-        "sent:tatoeba-74723",
-        "sent:tatoeba-146189"
+        "sent:tatoeba-146189",
+        "sent:tatoeba-74723"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kitto",
+      "examples": [
+        "sent:tatoeba-225989",
+        "sent:tatoeba-80474",
+        "sent:tatoeba-226023"
       ],
       "strand": "language-focused"
     },
@@ -92,6 +152,15 @@
         "sent:gen-3612bfffc506",
         "sent:gen-db5a35aa9230",
         "sent:gen-1484a0acc3d0"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
       ],
       "strand": "language-focused"
     }
@@ -149,7 +218,7 @@
       "sent:tatoeba-228002",
       "sent:tatoeba-147605",
       "sent:tatoeba-11706794",
-      "sent:tatoeba-214558"
+      "sent:jec-0319"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -157,67 +226,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 31,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:2",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:2",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:5019:736",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "鼾",
-        "箸",
-        "千"
-      ]
-    },
-    {
-      "id": "cf:n4:1160:736",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "数",
-        "其の",
-        "誰"
-      ]
-    },
-    {
-      "id": "kr:n4:736",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ど",
-        "し",
-        "に"
-      ]
-    },
-    {
-      "id": "kr:n4:921",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しんぶん",
-        "けいけん",
-        "きょねん"
-      ]
-    }
-  ]
+  }
 }

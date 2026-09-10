@@ -170,6 +170,65 @@
       ],
       "additionalProperties": false
     },
+    "register": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "archaic",
+            "casual",
+            "dialect",
+            "epistolary",
+            "formal",
+            "neutral",
+            "polite",
+            "slang",
+            "vulgar"
+          ],
+          "description": "The register a learner would hear this whole utterance in, or null when no mechanical signal fired. Null is NEVER rounded up to `neutral`: a defaulted neutral passes the speaking-path filter silently, which is the failure the field exists to prevent. Vocabulary owner: design — design/schema_v2.md ('sentence.register — the D7 value set'). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": {
+            "owner": "design",
+            "source": "design/schema_v2.md ('sentence.register — the D7 value set')"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "register_rule": {
+      "type": "string",
+      "enum": [
+        "bungo-inflection",
+        "casual-marker",
+        "classical-final",
+        "dialect-marker",
+        "epistolary-formula",
+        "grammar-register",
+        "jmdict-arch",
+        "jmdict-dialect",
+        "jmdict-slang",
+        "jmdict-vulg",
+        "keigo",
+        "no-signal",
+        "plain-predicate",
+        "polite-nonfinal",
+        "polite-predicate",
+        "polite-request",
+        "polite-request-nasai",
+        "polite-set-phrase",
+        "rough-address",
+        "slang-lexeme",
+        "soft-final",
+        "vulgar-lexeme",
+        "written-copula"
+      ],
+      "description": "Which rule decided `register`. Stored because a validator, a ratchet and the speaking-path filter all branch on HOW the value was reached and cannot re-parse the Japanese to find out: 〜なさい is filed `polite` and kept out of the speaking path by this name, rather than by a tenth D7 value that would cost every consumer. Vocabulary owner: design — design/schema_v2.md ('sentence.register_rule'). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "design",
+        "source": "design/schema_v2.md ('sentence.register_rule')"
+      }
+    },
     "review_status": {
       "type": "array",
       "description": "Human review verdicts that are still LIVE for this record: each one's content hash still matches the text it approved. Written by the exporter from research/derived/review_ledger.json, never by hand — an entry whose text was rewritten afterwards is stale and exports nothing, and a review_status the ledger does not justify is a hard failure (scripts/validate/validate_review_ledger.py). Absent on a record nobody has reviewed, which is why it is never required. See design/review_ledger.md.",
@@ -450,6 +509,8 @@
     "particles",
     "pattern",
     "provenance",
+    "register",
+    "register_rule",
     "romaji",
     "slug",
     "structure_explanation",

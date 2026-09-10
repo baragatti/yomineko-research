@@ -27,7 +27,8 @@
     "vocab:1260490",
     "vocab:1585650",
     "vocab:1203650",
-    "vocab:1061820"
+    "vocab:1061820",
+    "vocab:1195960"
   ],
   "patterns": [
     "gram:temo-ii-desu",
@@ -54,9 +55,61 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 227,
+  "cumulative_known_vocab": 228,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:784",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:815",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4725:2453",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "船",
+        "家",
+        "犬"
+      ]
+    },
+    {
+      "id": "kr:n4:1057",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しょくじ",
+        "まいにち",
+        "いちばん"
+      ]
+    },
+    {
+      "id": "kr:n5:10",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ちかく",
+        "ねだん",
+        "ごはん"
+      ]
+    },
+    {
+      "id": "cf:n3:3449:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "夜",
+        "鍵",
+        "朝"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-you-to-omou"
   ],
@@ -158,9 +211,9 @@
       "sent:tatoeba-84142",
       "sent:tatoeba-158256",
       "sent:tatoeba-200926",
-      "sent:tatoeba-187339",
       "sent:tatoeba-157014",
-      "sent:tatoeba-141127"
+      "sent:tatoeba-141127",
+      "sent:tatoeba-193061"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -168,67 +221,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 34,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:784",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:815",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:4725:2453",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "船",
-        "家",
-        "犬"
-      ]
-    },
-    {
-      "id": "kr:n4:1057",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しょくじ",
-        "まいにち",
-        "いちばん"
-      ]
-    },
-    {
-      "id": "kr:n5:10",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ちかく",
-        "ねだん",
-        "ごはん"
-      ]
-    },
-    {
-      "id": "cf:n3:3449:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "夜",
-        "鍵",
-        "朝"
-      ]
-    }
-  ]
+  }
 }

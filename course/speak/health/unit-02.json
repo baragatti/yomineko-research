@@ -8,11 +8,11 @@
   },
   "say_now": [
     "sent:tatoeba-83934",
-    "sent:tatoeba-83953",
     "sent:tatoeba-90106",
     "sent:tatoeba-10263746",
     "sent:tatoeba-171774",
-    "sent:tatoeba-189575"
+    "sent:tatoeba-189575",
+    "sent:tatoeba-172775"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -25,12 +25,12 @@
     "vocab:1588120",
     "vocab:1169250",
     "vocab:1290800",
-    "vocab:1157090",
     "vocab:1305380"
   ],
   "patterns": [
-    "gram:gp-121",
-    "gram:gp-81"
+    "gram:totemo",
+    "gram:n3-temo",
+    "gram:gp-121"
   ],
   "kanji_recognition": [
     "意",
@@ -42,115 +42,17 @@
   ],
   "shadowing": [
     "sent:tatoeba-83934",
-    "sent:tatoeba-83953",
     "sent:tatoeba-90106",
     "sent:tatoeba-10263746",
     "sent:tatoeba-171774",
-    "sent:tatoeba-189575"
+    "sent:tatoeba-189575",
+    "sent:tatoeba-172775"
   ],
   "audio": "pending",
   "real_phrases": 6,
   "cumulative_known_vocab": 381,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:n3-you-ni",
-    "gram:nasai",
-    "gram:no-naka-de",
-    "gram:you-ni-you-na"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:gp-121",
-      "examples": [
-        "sent:gen-3612bfffc506",
-        "sent:gen-db5a35aa9230",
-        "sent:gen-1484a0acc3d0"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-81",
-      "examples": [
-        "sent:gen-20f9f43c9339",
-        "sent:gen-f416c28a18c3",
-        "sent:gen-68448be6940b"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "Você deveria se consultar com um médico, viu?",
-      "answer_key": "医者に診てもらうべきですよ。",
-      "accepted_variants": [
-        "いしゃにみてもらうべきですよ",
-        "いしゃにみてもらうべきですよ。",
-        "医者に診てもらうべきですよ",
-        "医者に診てもらうべきですよ。"
-      ],
-      "sentence": "sent:tatoeba-190902",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ele é incompetente como médico.",
-      "answer_key": "彼は医者として無能だ。",
-      "accepted_variants": [
-        "かれはいしゃとしてむのうだ",
-        "かれはいしゃとしてむのうだ。",
-        "かれわいしゃとしてむのうだ",
-        "かれわいしゃとしてむのうだ。",
-        "彼は医者として無能だ",
-        "彼は医者として無能だ。"
-      ],
-      "sentence": "sent:tatoeba-110066",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ele é famoso como médico.",
-      "answer_key": "彼は医者として有名だ。",
-      "accepted_variants": [
-        "かれはいしゃとしてゆうめいだ",
-        "かれはいしゃとしてゆうめいだ。",
-        "かれわいしゃとしてゆうめいだ",
-        "かれわいしゃとしてゆうめいだ。",
-        "彼は医者として有名だ",
-        "彼は医者として有名だ。"
-      ],
-      "sentence": "sent:tatoeba-110065",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
-    "items": [
-      "sent:tatoeba-1699768",
-      "sent:tatoeba-143418",
-      "sent:tatoeba-154767",
-      "sent:tatoeba-9777117",
-      "sent:tatoeba-80068",
-      "sent:tatoeba-152614"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "recap",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 20,
-    "fluency": 6
-  },
   "checkpoint": [
     {
       "id": "so:n3:760",
@@ -197,5 +99,111 @@
         "おとこ"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:n3-you-ni",
+    "gram:no-naka-de",
+    "gram:you-ni-you-na"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:gen-25da035589e0",
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-temo",
+      "examples": [
+        "sent:tatoeba-6015",
+        "sent:tatoeba-85028",
+        "sent:tatoeba-199554"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-121",
+      "examples": [
+        "sent:gen-3612bfffc506",
+        "sent:gen-db5a35aa9230",
+        "sent:gen-1484a0acc3d0"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Meu pai quer fazer de mim um médico.",
+      "answer_key": "父は私を医者にしたがっている。",
+      "accepted_variants": [
+        "ちちはわたしをいしゃにしたがっている",
+        "ちちはわたしをいしゃにしたがっている。",
+        "ちちわわたしをいしゃにしたがっている",
+        "ちちわわたしをいしゃにしたがっている。",
+        "父は私を医者にしたがっている",
+        "父は私を医者にしたがっている。"
+      ],
+      "sentence": "sent:tatoeba-84479",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Você deveria se consultar com um médico, viu?",
+      "answer_key": "医者に診てもらうべきですよ。",
+      "accepted_variants": [
+        "いしゃにみてもらうべきですよ",
+        "いしゃにみてもらうべきですよ。",
+        "医者に診てもらうべきですよ",
+        "医者に診てもらうべきですよ。"
+      ],
+      "sentence": "sent:tatoeba-190902",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ele é incompetente como médico.",
+      "answer_key": "彼は医者として無能だ。",
+      "accepted_variants": [
+        "かれはいしゃとしてむのうだ",
+        "かれはいしゃとしてむのうだ。",
+        "かれわいしゃとしてむのうだ",
+        "かれわいしゃとしてむのうだ。",
+        "彼は医者として無能だ",
+        "彼は医者として無能だ。"
+      ],
+      "sentence": "sent:tatoeba-110066",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
+    "items": [
+      "sent:tatoeba-123138",
+      "sent:tatoeba-536767",
+      "sent:tatoeba-143418",
+      "sent:tatoeba-9777117",
+      "sent:tatoeba-171531",
+      "sent:tatoeba-1037362"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "recap",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 26,
+    "fluency": 6
+  }
 }

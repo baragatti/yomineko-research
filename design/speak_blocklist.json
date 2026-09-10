@@ -1,0 +1,7 @@
+{
+  "what_this_is": "The speaking path's content blocklist. THE LIST IS THE OWNER'S (PENDING.md A8: 'I build the mechanism; the list is yours'), and it ships EMPTY on purpose — the register filter in scripts/export/speak_filter.py already excludes vulgar, slang, dialect, archaic, epistolary, formal and residue sentences by rule, and this file exists for the individual sentences a rule can never catch: a topic that is fine Japanese and wrong for a drill.",
+  "who_edits_it": "The owner, or a teacher during review. Never a campaign, never a script. Adding an entry is a content judgement about one sentence; if a whole CLASS of sentences belongs out, that is a register rule and belongs in speak_filter.py where it can be measured.",
+  "how_it_works": "Every entry needs a `why`. An entry matches by `sentence` (the exact bank slug, the precise form) or by `contains` (a substring of the Japanese, for a topic that recurs — 痔 keeps every sentence about haemorrhoids out of the health stage without listing them). A sentence that matches is never selected for say_now, production or drills[].examples, and the builder prints how many candidates each mechanism excluded, so the list's effect is always a measured number.",
+  "empty_is_valid": "With `entries` empty the filter runs and excludes nothing here; the register rules still apply. Deleting this file entirely is also valid and reads as an empty list.",
+  "entries": []
+}

@@ -11,8 +11,8 @@
     "sent:tatoeba-199229",
     "sent:tatoeba-229934",
     "sent:tatoeba-83999",
-    "sent:jec-4943",
-    "sent:tatoeba-79666"
+    "sent:tatoeba-79666",
+    "sent:tatoeba-11960481"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -21,15 +21,13 @@
     "vocab:1577120",
     "vocab:1019420",
     "vocab:1412770",
-    "vocab:1472270",
-    "vocab:1537150",
-    "vocab:1004500"
+    "vocab:1537150"
   ],
   "patterns": [
+    "gram:koto-ga-aru",
+    "gram:gp-12",
     "gram:gp-142",
-    "gram:gp-32",
-    "gram:gp-121",
-    "gram:nara"
+    "gram:gp-32"
   ],
   "kanji_recognition": [
     "行",
@@ -44,19 +42,84 @@
     "sent:tatoeba-199229",
     "sent:tatoeba-229934",
     "sent:tatoeba-83999",
-    "sent:jec-4943",
-    "sent:tatoeba-79666"
+    "sent:tatoeba-79666",
+    "sent:tatoeba-11960481"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 448,
+  "cumulative_known_vocab": 449,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:339",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:4997:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "何",
+        "日",
+        "誰"
+      ]
+    },
+    {
+      "id": "kr:n5:343",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "すう",
+        "かぜ",
+        "あに"
+      ]
+    },
+    {
+      "id": "cf:n3:5209:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "港",
+        "八",
+        "彼"
+      ]
+    },
+    {
+      "id": "kr:n4:1310",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "ガソリン",
+        "ちいさな",
+        "ひつよう"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-nazenara",
     "gram:gp-45"
   ],
   "drills": [
+    {
+      "pattern": "gram:koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-1897537",
+        "sent:tatoeba-235631",
+        "sent:tatoeba-433648"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-4835"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:gp-142",
       "examples": [
@@ -72,24 +135,6 @@
         "sent:tatoeba-85319",
         "sent:tatoeba-78700",
         "sent:tatoeba-4714"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-121",
-      "examples": [
-        "sent:gen-3612bfffc506",
-        "sent:gen-db5a35aa9230",
-        "sent:gen-1484a0acc3d0"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nara",
-      "examples": [
-        "sent:tatoeba-80337",
-        "sent:tatoeba-80586",
-        "sent:tatoeba-80338"
       ],
       "strand": "language-focused"
     }
@@ -141,8 +186,8 @@
     "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
     "items": [
       "sent:tatoeba-5217",
+      "sent:tatoeba-214558",
       "sent:tatoeba-5118",
-      "sent:tatoeba-13537670",
       "sent:tatoeba-143986",
       "sent:tatoeba-142423",
       "sent:tatoeba-121897"
@@ -153,62 +198,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 24,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:339",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:4997:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "何",
-        "日",
-        "誰"
-      ]
-    },
-    {
-      "id": "kr:n5:252",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "そんな",
-        "わかる",
-        "ねがう"
-      ]
-    },
-    {
-      "id": "kr:n5:343",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "すう",
-        "かぜ",
-        "あに"
-      ]
-    },
-    {
-      "id": "cf:n3:5182:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "市",
-        "二",
-        "頃"
-      ]
-    }
-  ]
+  }
 }

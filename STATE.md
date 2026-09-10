@@ -58,6 +58,48 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-10 (av) — W31 APPLIED (§6 step 7): `sentence.register` + `register_rule` live on all
+> 5,889 bank sentences, the speaking path filters on them, and the A8 census closes. Gate green
+> (62 hard validators, four new); full manifest replay green and re-recorded. NOT COMMITTED (the run
+> was told to touch no git state). Next DB writer: W32 apply (survival cores), which W31 was
+> blocking.**
+>
+> - **The field.** Migration 017; `register` is NULL-able and NULL is never rounded up to `neutral` —
+>   a defaulted neutral passes the speak filter silently, which is the failure the field exists to
+>   prevent. `register_rule` is stored beside it because a validator, a ratchet and the filter all
+>   branch on HOW a value was reached: 〜なさい stays filed `polite` and is kept out of the path by
+>   its RULE NAME, so D7 keeps nine values. Both enums are **declared** in `build_schemas.py`, not
+>   measured — `epistolary` and five rule names fire on no sentence today and a measured enum breaks
+>   the day one does.
+> - **Populated:** neutral 2,876 / polite 1,975 / casual 848 / formal 102 / archaic 6 / slang 4 /
+>   vulgar 1 / dialect 1 / **residue 76** (ratcheted per level, shrink-only). The 4,223 W13 rows live
+>   in the same table as **asserted deferrals**: the replay gate fails the moment their slug appears
+>   in the export without this table's value, so the W13 ingest has to read it rather than re-derive.
+> - **8 grammar-registry `register` errors repaired** (no-ga-suki/-jouzu/-heta, gp-125, hazu-da,
+>   zehi, gp-42, sakki), **5 held with reasons**. Ordering matters and is now gated: the derivation
+>   reads `corpus/grammar/*.json`, so a point re-tagged without re-deriving is caught by
+>   `validate_sentence_register.py`, which re-derives the whole bank on every gate run (≈1 s) and
+>   compares — the C4 contract, applied to register.
+> - **The filter (A8).** `scripts/export/speak_filter.py`, shared by both builders so `say_now`,
+>   `production` and `drills[].examples` cannot drift. 250 of 5,889 candidates excluded, 29 say_now
+>   phrases replaced, every one of the 72 units still full. **心熱けれど肉体は弱し is out of the
+>   production prompts.** Census: 645 items, **0 with no register, 0 marked** (was 383 signal-less).
+>   `design/speak_blocklist.json` ships EMPTY — the list is the owner's — and the mechanism is
+>   plant-proved empty, absent and with one entry.
+> - **Lessons did not move:** 0 lesson leaves changed; the only non-`course/speak` diff is seven
+>   generated-date lines. Manifest steps 119/120 (119 joined `--quick`), furigana → 121, families →
+>   122-124. Ratchets re-recorded with the cause in the report: speak strands/spiral/duplicates (the
+>   pool changed) and both rebuild baselines (`arrival` near-duplicates 13 → 14 is the one genuine
+>   quality cost).
+> - **W38 closed out too**: `test_review_apply.py` registered, `validate_review_views.py` written and
+>   plant-proved (9 plants), and the pending-table path moved `repairs/pending/` →
+>   `research/derived/pending/`. Finding: the eight committed review views were **already stale
+>   against HEAD**, so any sheet built from one would have been refused for stale anchors.
+> - Report: `research/reports/w31_apply_report.md` (counts per level, 34 sample sentences, the 8+5
+>   grammar rulings, 7 open items — the empty blocklist and its first candidate, the 76-row residue
+>   queue, two link/forms defects, `register_flags[]`, and the recurring calendar artefact in
+>   `validate_index_rebuildable` that STATE (an) already diagnosed).
+
 > **2026-09-09 (au) — W27 APPLIED (§6 step 6) and the replay regression (at) named is FIXED. All
 > 2,951 vocabulary production cards carry an answer key; `validate_card_content.py` is the 40th hard
 > validator. Gate green, full replay green and re-recorded. NOT COMMITTED (the run was told to touch

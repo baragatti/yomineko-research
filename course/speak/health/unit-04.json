@@ -8,61 +8,113 @@
   },
   "say_now": [
     "sent:tatoeba-192750",
-    "sent:tatoeba-203344",
-    "sent:tatoeba-74743",
+    "sent:tatoeba-83003",
+    "sent:tatoeba-85328",
     "sent:jec-3163",
-    "sent:tatoeba-5001",
-    "sent:tatoeba-145552"
+    "sent:tatoeba-85337",
+    "sent:tatoeba-203344"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1529390",
+    "vocab:1490220",
     "vocab:1414150",
     "vocab:1365040",
-    "vocab:1369940",
-    "vocab:2853889",
+    "vocab:1257540",
     "vocab:1407980",
-    "vocab:1171010",
+    "vocab:1269060",
     "vocab:1414920"
   ],
   "patterns": [
-    "gram:wa-dou-desu-ka",
+    "gram:gp-98",
     "gram:te-kuru",
-    "gram:gp-121",
-    "gram:tara",
-    "gram:da-desu",
-    "gram:gp-20"
+    "gram:gp-17",
+    "gram:gp-31",
+    "gram:ndesu",
+    "gram:n3-made"
   ],
   "kanji_recognition": [
     "気",
     "分",
     "眠",
-    "丈",
-    "大",
-    "夫"
+    "院",
+    "午",
+    "行"
   ],
   "shadowing": [
     "sent:tatoeba-192750",
-    "sent:tatoeba-203344",
-    "sent:tatoeba-74743",
+    "sent:tatoeba-83003",
+    "sent:tatoeba-85328",
     "sent:jec-3163",
-    "sent:tatoeba-5001",
-    "sent:tatoeba-145552"
+    "sent:tatoeba-85337",
+    "sent:tatoeba-203344"
   ],
   "audio": "pending",
   "real_phrases": 6,
   "cumulative_known_vocab": 396,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:183",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:947",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:2310:1325",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "今夜",
+        "言う",
+        "出る"
+      ]
+    },
+    {
+      "id": "cf:n4:2311:1325",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "関係",
+        "張る",
+        "住む"
+      ]
+    },
+    {
+      "id": "kr:n4:1325",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たてる",
+        "あした",
+        "すすむ"
+      ]
+    },
+    {
+      "id": "kr:n4:802",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はち",
+        "くる",
+        "たち"
+      ]
+    }
+  ],
   "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:wa-dou-desu-ka",
+      "pattern": "gram:gp-98",
       "examples": [
-        "sent:tatoeba-125116",
-        "sent:tatoeba-2436329",
-        "sent:tatoeba-4751207"
+        "sent:gen-f4a52d78b938",
+        "sent:gen-f384f4213f18",
+        "sent:gen-802fed6cb267"
       ],
       "strand": "language-focused"
     },
@@ -76,38 +128,38 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-121",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:gen-3612bfffc506",
-        "sent:gen-db5a35aa9230",
-        "sent:gen-1484a0acc3d0"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:tara",
+      "pattern": "gram:gp-31",
       "examples": [
-        "sent:tatoeba-4713",
-        "sent:tatoeba-4812",
-        "sent:tatoeba-4860"
+        "sent:tatoeba-778974",
+        "sent:tatoeba-1057336",
+        "sent:tatoeba-4789"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:ndesu",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:gen-d354f1465606",
+        "sent:tatoeba-80973",
+        "sent:gen-f83463ff3681"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-20",
+      "pattern": "gram:n3-made",
       "examples": [
-        "sent:tatoeba-77564",
-        "sent:tatoeba-95997",
-        "sent:tatoeba-198119"
+        "sent:tatoeba-77157",
+        "sent:tatoeba-82912",
+        "sent:tatoeba-79703"
       ],
       "strand": "language-focused"
     }
@@ -161,8 +213,8 @@
       "sent:tatoeba-79502",
       "sent:tatoeba-11270411",
       "sent:tatoeba-171774",
-      "sent:tatoeba-10263746",
-      "sent:tatoeba-1699768",
+      "sent:tatoeba-123138",
+      "sent:tatoeba-536767",
       "sent:tatoeba-143418"
     ],
     "seconds_target": 48,
@@ -171,67 +223,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 60,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 32,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:183",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:414",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:2310:1325",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "今夜",
-        "言う",
-        "出る"
-      ]
-    },
-    {
-      "id": "cf:n4:2311:1325",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "関係",
-        "計画",
-        "張る"
-      ]
-    },
-    {
-      "id": "kr:n4:1140",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "うしなう",
-        "たとえば",
-        "ばんごう"
-      ]
-    },
-    {
-      "id": "kr:n4:1325",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たてる",
-        "あした",
-        "すすむ"
-      ]
-    }
-  ]
+  }
 }

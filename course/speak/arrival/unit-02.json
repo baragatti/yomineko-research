@@ -10,9 +10,9 @@
     "sent:tatoeba-4971",
     "sent:tatoeba-219058",
     "sent:tatoeba-198378",
-    "sent:tatoeba-229458",
     "sent:tatoeba-78721",
-    "sent:tatoeba-1874351"
+    "sent:tatoeba-1874351",
+    "sent:tatoeba-10355885"
   ],
   "chunk_phrases": [
     "sent:tatoeba-4971"
@@ -21,44 +21,95 @@
   "words": [
     "vocab:1311110",
     "vocab:1578850",
-    "vocab:1259290",
     "vocab:1547720",
     "vocab:1315920",
+    "vocab:1591110",
     "vocab:1529520",
-    "vocab:1254760",
-    "vocab:1583250",
+    "vocab:1010080",
     "vocab:1584930"
   ],
   "patterns": [
-    "gram:mashou"
+    "gram:mashou",
+    "gram:gp-17"
   ],
   "kanji_recognition": [
     "私",
     "行",
-    "見",
     "来",
     "間",
-    "時"
+    "時",
+    "聞"
   ],
   "shadowing": [
     "sent:tatoeba-4971",
     "sent:tatoeba-219058",
     "sent:tatoeba-198378",
-    "sent:tatoeba-229458",
     "sent:tatoeba-78721",
-    "sent:tatoeba-1874351"
+    "sent:tatoeba-1874351",
+    "sent:tatoeba-10355885"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 9,
+  "cumulative_known_vocab": 8,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n4:3417",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3419",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:3348:286",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "聞く",
+        "はい",
+        "行く"
+      ]
+    },
+    {
+      "id": "cf:n5:1088:286",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "余り",
+        "聞く",
+        "行く"
+      ]
+    },
+    {
+      "id": "kr:n5:188",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はい",
+        "いく",
+        "ない"
+      ]
+    },
+    {
+      "id": "kr:n5:224",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ない",
+        "きく",
+        "はい"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-108",
-    "gram:gp-42",
     "gram:amari-nai",
-    "gram:n3-desu-kara",
-    "gram:n3-sei-de"
+    "gram:n3-sei-de",
+    "gram:nasai"
   ],
   "drills": [
     {
@@ -67,6 +118,15 @@
         "sent:tatoeba-139208",
         "sent:tatoeba-173392",
         "sent:tatoeba-197681"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-17",
+      "examples": [
+        "sent:tatoeba-124633",
+        "sent:tatoeba-144227",
+        "sent:tatoeba-80132"
       ],
       "strand": "language-focused"
     }
@@ -120,67 +180,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 34,
-    "meaning-output": 9,
-    "language-focused": 49,
-    "fluency": 9
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 57,
+    "fluency": 7
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 17,
+    "language-focused": 24,
     "fluency": 3
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3417",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:3348",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:3348:286",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "結構",
-        "行く",
-        "余り"
-      ]
-    },
-    {
-      "id": "cf:n5:1088:286",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "余り",
-        "行く",
-        "結構"
-      ]
-    },
-    {
-      "id": "kr:n5:224",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ない",
-        "みる",
-        "いく"
-      ]
-    },
-    {
-      "id": "kr:n5:231",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "じかん",
-        "いいえ",
-        "あまり"
-      ]
-    }
-  ]
+  }
 }

@@ -7,58 +7,106 @@
     "pt-BR": "Pedir, oferecer, agradecer com jeito, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-199509",
-    "sent:tatoeba-9812759",
-    "sent:tatoeba-201345",
-    "sent:tatoeba-222508",
+    "sent:tatoeba-74723",
     "sent:tatoeba-123791",
-    "sent:tatoeba-121505"
+    "sent:tatoeba-121505",
+    "sent:tatoeba-78723",
+    "sent:tatoeba-1490062",
+    "sent:tatoeba-76813"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1421970",
-    "vocab:1318720",
-    "vocab:1189130",
-    "vocab:1549660",
-    "vocab:1223660",
+    "vocab:1007660",
     "vocab:1451210",
     "vocab:1589730",
-    "vocab:1220800",
-    "vocab:1346370",
-    "vocab:1057850"
+    "vocab:1219510",
+    "vocab:1463520",
+    "vocab:1589500",
+    "vocab:1478750"
   ],
   "patterns": [
     "gram:naide-kudasai",
     "gram:o-kudasai-2",
     "gram:te-kudasai",
     "gram:n3-tsuide-ni",
-    "gram:n3-naide"
+    "gram:n3-naide",
+    "gram:totemo"
   ],
   "kanji_recognition": [
-    "起",
-    "遅",
-    "自",
-    "召",
-    "上",
-    "由"
+    "動",
+    "寄",
+    "買",
+    "物",
+    "来",
+    "肉"
   ],
   "shadowing": [
-    "sent:tatoeba-199509",
-    "sent:tatoeba-9812759",
-    "sent:tatoeba-201345",
-    "sent:tatoeba-222508",
+    "sent:tatoeba-74723",
     "sent:tatoeba-123791",
-    "sent:tatoeba-121505"
+    "sent:tatoeba-121505",
+    "sent:tatoeba-78723",
+    "sent:tatoeba-1490062",
+    "sent:tatoeba-76813"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 488,
+  "cumulative_known_vocab": 486,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:n3-donna-ni-temo"
+  "checkpoint": [
+    {
+      "id": "so:n3:832",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3529",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:5250:1257",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "家内",
+        "説明",
+        "何時"
+      ]
+    },
+    {
+      "id": "kr:n4:1257",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きれい",
+        "しまる",
+        "かない"
+      ]
+    },
+    {
+      "id": "kr:n4:1321",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かくにん",
+        "すずしい",
+        "ちいさな"
+      ]
+    },
+    {
+      "id": "cf:n3:5216:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "三",
+        "頃",
+        "米"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:naide-kudasai",
@@ -72,9 +120,9 @@
     {
       "pattern": "gram:o-kudasai-2",
       "examples": [
+        "sent:gen-0114d50c684c",
         "sent:gen-0e95f64b542d",
-        "sent:gen-96ce440b58e0",
-        "sent:gen-574302901ae7"
+        "sent:gen-96ce440b58e0"
       ],
       "strand": "language-focused"
     },
@@ -104,46 +152,56 @@
         "sent:tatoeba-80886"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:totemo",
+      "examples": [
+        "sent:gen-25da035589e0",
+        "sent:tatoeba-5074",
+        "sent:tatoeba-4947"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Por favor, não desligue o telefone.",
-      "answer_key": "電話を切らずにおいてください。",
+      "prompt_pt": "Eu gostaria de aproveitar esta oportunidade.",
+      "answer_key": "この機会を私は利用させていただきたい。",
       "accepted_variants": [
-        "でんわをきらずにおいてください",
-        "でんわをきらずにおいてください。",
-        "電話を切らずにおいてください",
-        "電話を切らずにおいてください。"
+        "このきかいをわたしはりようさせていただきたい",
+        "このきかいをわたしはりようさせていただきたい。",
+        "このきかいをわたしわりようさせていただきたい",
+        "このきかいをわたしわりようさせていただきたい。",
+        "この機会を私は利用させていただきたい",
+        "この機会を私は利用させていただきたい。"
       ],
-      "sentence": "sent:tatoeba-124654",
+      "sentence": "sent:tatoeba-222508",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Tenho um pedido a fazer. Será que eu poderia pedir um favor?",
-      "answer_key": "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？",
+      "prompt_pt": "Por favor, sirva-se à vontade.",
+      "answer_key": "どうぞお上がりください。",
       "accepted_variants": [
-        "たのみたいことがあります。ちょっとおねがいしてもよろしいでしょうか",
-        "たのみたいことがあります。ちょっとおねがいしてもよろしいでしょうか?",
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか",
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか?",
-        "頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？"
+        "どうぞおあがりください",
+        "どうぞおあがりください。",
+        "どうぞお上がりください",
+        "どうぞお上がりください。"
       ],
-      "sentence": "sent:tatoeba-78565",
+      "sentence": "sent:tatoeba-201345",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Por favor, escolha uma gravata que combine com este terno.",
-      "answer_key": "このスーツに合うネクタイを選んでください。",
+      "prompt_pt": "Por mais tarde que fique, me acorde, por favor.",
+      "answer_key": "どんなに遅くなっても起こしてください。",
       "accepted_variants": [
-        "このすーつにあうねくたいをえらんでください",
-        "このすーつにあうねくたいをえらんでください。",
-        "このスーツに合うネクタイを選んでください",
-        "このスーツに合うネクタイを選んでください。"
+        "どんなにおそくなってもおこしてください",
+        "どんなにおそくなってもおこしてください。",
+        "どんなに遅くなっても起こしてください",
+        "どんなに遅くなっても起こしてください。"
       ],
-      "sentence": "sent:tatoeba-223665",
+      "sentence": "sent:tatoeba-199509",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -151,12 +209,12 @@
   "fluency": {
     "prompt_pt": "Você precisa pedir um favor a alguém mais velho. Peça com jeito.",
     "items": [
-      "sent:tatoeba-188640",
+      "sent:tatoeba-223665",
       "sent:tatoeba-206210",
-      "sent:tatoeba-123440",
+      "sent:tatoeba-146817",
       "sent:tatoeba-147431",
       "sent:tatoeba-4854",
-      "sent:tatoeba-83999"
+      "sent:tatoeba-792555"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -164,57 +222,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 23,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 60,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 31,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n4:5250:1257",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "家内",
-        "説明",
-        "何時"
-      ]
-    },
-    {
-      "id": "kr:n4:1242",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ちから",
-        "やすむ",
-        "さげる"
-      ]
-    },
-    {
-      "id": "kr:n4:1257",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きれい",
-        "しまる",
-        "かない"
-      ]
-    },
-    {
-      "id": "cf:n3:5209:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "港",
-        "八",
-        "彼"
-      ]
-    }
-  ]
+  }
 }

@@ -99,6 +99,10 @@ SUITE = [
     # W06: the approval ledger and the export agree about who approved what. Empty ledger passes;
     # a review_status no live entry justifies does not.
     ("validate_review_ledger.py", "code"),       # approvals chain, anchors live, no unjustified stamp
+    # --- W38 teacher tooling. The queue and the ledger already had gates; the two halves the
+    # tooling report left unregistered are the VIEWS a teacher reads and the SHEETS they send back.
+    ("test_review_apply.py", "code"),            # sheet -> ledger + repair table, 9 behaviour cases
+    ("validate_review_views.py", "code"),        # views byte-identical; every filled sheet processed
     # W02 (G7): replays all six tracked repair tables against the export. Clean, no ratchet; the 7
     # superseded rows carry `superseded_by` markers this validator re-proves on every run.
     ("validate_repairs_applied.py", "code"),     # every repair row's `new` is what the export carries
@@ -142,6 +146,12 @@ SUITE = [
     ("validate_speak_strands.py", "code"),     # R78 budget per stage (ratchet: distance from band)
     ("validate_speak_spiral.py", "code"),      # R83 early seeds reaching stages 7-12 (ratchet: reach)
     ("validate_speak_duplicates.py", "code"),  # R86 hard + semantic near-duplicates (ratchet: pairs)
+    # ---- W31 (A8 / owner decision D7). `sentence.register` is the field the speaking path filters
+    # on, so it gets two gates: one that the value is exactly what the derivation produces on this
+    # tree (it cannot become hand-edited data), and one that the filter built on it actually holds
+    # over the three surfaces A8 names.
+    ("validate_sentence_register.py", "code"),  # stored == re-derived; enum; residue ratchet
+    ("test_speak_filter.py", "code"),           # the filter + the owner's blocklist, incl. empty
 ]
 
 

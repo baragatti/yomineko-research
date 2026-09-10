@@ -121,7 +121,24 @@ therefore schema: add `register` to `sentence` (values to be fixed in `design/sc
 populate it (JMdict misc tags cover part of it; the rest is authored), then the filter. Also left
 open by that campaign: idiom-frame misfires lemma matching cannot catch (いくら…ても still lands in
 the shopping stage) — a per-stage idiom stoplist is the suggested mechanism.
-Detail: `qa_sweep/speak_content_1.md`, `speak_content_2.md`.
+**CLOSED on the mechanism side (2026-09-10, W31 apply — `research/reports/w31_apply_report.md`).**
+`sentence.register` exists (migration 017, D7 values + `register_rule`), all 5,889 bank sentences
+carry it, and `scripts/export/speak_filter.py` filters `say_now`, `production` and
+`drills[].examples`: only `neutral`/`polite`/`casual` that clear the blocklist get in; vulgar, slang,
+dialect, archaic, epistolary, formal and the 76-sentence NULL residue are out by rule, and 〜なさい is
+out by its rule name rather than by a tenth D7 value. 心熱けれど肉体は弱し is no longer a production
+prompt. The census closes: of the same 645 say_now/production items, **0 now carry no register and 0
+carry a marked one**, against the 383 signal-less the census reported.
+**STILL YOURS, and deliberately empty:** `design/speak_blocklist.json`. The mechanism works with the
+list empty, with one entry by bank slug, or with one entry by substring of the Japanese (each needs a
+`why`), and `scripts/validate/test_speak_filter.py` proves all of those. One candidate this rebuild
+surfaced that no rule can catch: `sent:tatoeba-74723` 「どいてください」「やんのか？あんちゃん」, now in
+the `politeness` stage — it is `polite` by its final bunsetsu and is a street confrontation. Nothing
+was added.
+**Also still open:** the idiom stoplist above, and `register_flags[]` (insult / sexual / violence /
+stereotype / medical-intimate / proper-name) — specified in `design/schema_v2.md`, not stored, and
+the orthogonal content axis the blocklist is standing in for.
+Detail: `qa_sweep/speak_content_1.md`, `speak_content_2.md`, `w31_apply_report.md`.
 
 ### A9. 22 vocab records point at the wrong JMdict entry
 **Question.** Re-point in place, or deprecate-and-add?

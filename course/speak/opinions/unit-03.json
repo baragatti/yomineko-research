@@ -47,9 +47,51 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 524,
+  "cumulative_known_vocab": 520,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n4:3764:1348",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "少ない",
+        "手伝う",
+        "ホテル"
+      ]
+    },
+    {
+      "id": "cf:n4:3751:1348",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "買い物",
+        "集まる",
+        "女の子"
+      ]
+    },
+    {
+      "id": "kr:n3:1663",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まいあさ",
+        "けいけん",
+        "かんたん"
+      ]
+    },
+    {
+      "id": "kr:n4:1268",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いぬ",
+        "せん",
+        "かぜ"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-ni-kanshite",
     "gram:n3-to-shitara"
@@ -85,9 +127,9 @@
     {
       "pattern": "gram:masen-ka",
       "examples": [
-        "sent:gen-4595bdeb6907",
         "sent:gen-24bb23e4256e",
-        "sent:gen-a94929c3a847"
+        "sent:gen-a94929c3a847",
+        "sent:tatoeba-172871"
       ],
       "strand": "language-focused"
     }
@@ -142,8 +184,8 @@
       "sent:tatoeba-11692639",
       "sent:tatoeba-77555",
       "sent:tatoeba-77523",
-      "sent:tatoeba-84229",
-      "sent:tatoeba-224121"
+      "sent:tatoeba-84069",
+      "sent:tatoeba-214003"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -151,57 +193,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 30,
-    "meaning-output": 8,
-    "language-focused": 48,
-    "fluency": 15
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 19,
+    "language-focused": 23,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n4:3764:1348",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "少ない",
-        "手伝う",
-        "ホテル"
-      ]
-    },
-    {
-      "id": "cf:n4:3751:1348",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "買い物",
-        "女の子",
-        "小さい"
-      ]
-    },
-    {
-      "id": "kr:n3:1663",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "まいあさ",
-        "けいけん",
-        "りょうり"
-      ]
-    },
-    {
-      "id": "kr:n4:1268",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いぬ",
-        "せん",
-        "かぜ"
-      ]
-    }
-  ]
+  }
 }

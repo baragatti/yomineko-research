@@ -7,169 +7,58 @@
     "pt-BR": "Contar o que aconteceu, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-156748",
     "sent:tatoeba-5118",
     "sent:tatoeba-1897537",
     "sent:tatoeba-225041",
     "sent:jec-0071",
-    "sent:jec-0319",
-    "sent:tatoeba-214558"
+    "sent:jec-0319"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1378690",
     "vocab:1260720",
     "vocab:1576250",
     "vocab:1355810",
     "vocab:1251270",
-    "vocab:1397300",
     "vocab:2772770"
   ],
   "patterns": [
     "gram:ta-koto-ga-aru",
-    "gram:n3-rashii",
+    "gram:janai-dewa-nai",
     "gram:gp-12"
   ],
   "kanji_recognition": [
+    "昨",
+    "私",
+    "生",
+    "日",
     "気",
-    "元",
-    "行",
-    "旅",
-    "良",
-    "一"
+    "元"
   ],
   "shadowing": [
+    "sent:tatoeba-156748",
     "sent:tatoeba-5118",
     "sent:tatoeba-1897537",
     "sent:tatoeba-225041",
     "sent:jec-0071",
-    "sent:jec-0319",
-    "sent:tatoeba-214558"
+    "sent:jec-0319"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 425,
+  "cumulative_known_vocab": 428,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:koto-ga-aru",
-    "gram:n3-koto",
-    "gram:gp-19"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:ta-koto-ga-aru",
-      "examples": [
-        "sent:tatoeba-8842279",
-        "sent:gen-52a2e8482686",
-        "sent:tatoeba-9387697"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-rashii",
-      "examples": [
-        "sent:tatoeba-100541",
-        "sent:tatoeba-108826",
-        "sent:tatoeba-107636"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "O passaporte é importante durante a viagem.",
-      "answer_key": "パスポートは旅行中大切である。",
-      "accepted_variants": [
-        "ぱすぽーとはりょこうちゅうたいせつである",
-        "ぱすぽーとはりょこうちゅうたいせつである。",
-        "ぱすぽーとわりょこうちゅうたいせつである",
-        "ぱすぽーとわりょこうちゅうたいせつである。",
-        "パスポートは旅行中大切である",
-        "パスポートは旅行中大切である。"
-      ],
-      "sentence": "sent:tatoeba-198088",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu não nasci ontem.",
-      "answer_key": "私は昨日生まれたわけではない。",
-      "accepted_variants": [
-        "わたしはきのううまれたわけではない",
-        "わたしはきのううまれたわけではない。",
-        "わたしわきのううまれたわけでわない",
-        "わたしわきのううまれたわけでわない。",
-        "私は昨日生まれたわけではない",
-        "私は昨日生まれたわけではない。"
-      ],
-      "sentence": "sent:tatoeba-156748",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Você tem dinheiro suficiente para a viagem?",
-      "answer_key": "旅行に十分なお金がありますか。",
-      "accepted_variants": [
-        "りょこうにじゅうぶんなおかねがありますか",
-        "りょこうにじゅうぶんなおかねがありますか。",
-        "旅行に十分なお金がありますか",
-        "旅行に十分なお金がありますか。"
-      ],
-      "sentence": "sent:tatoeba-78171",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
-    "items": [
-      "sent:tatoeba-171398",
-      "sent:tatoeba-78158",
-      "sent:tatoeba-13537670",
-      "sent:tatoeba-143986",
-      "sent:tatoeba-121897",
-      "sent:tatoeba-10901645"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "situation",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 31,
-    "meaning-output": 8,
-    "language-focused": 46,
-    "fluency": 15
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 18,
-    "fluency": 6
-  },
   "checkpoint": [
-    {
-      "id": "so:n3:259",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
     {
       "id": "cf:n4:4843:896",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
+        "校長",
         "貴方",
-        "寝る",
-        "着く"
+        "寝る"
       ]
     },
     {
@@ -193,24 +82,122 @@
       ]
     },
     {
-      "id": "kr:n4:891",
+      "id": "kr:n4:896",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "おかあさん",
-        "びょういん",
-        "りょうしん"
-      ]
-    },
-    {
-      "id": "pp:n5:42",
-      "type": "paraphrase",
-      "via": "review",
-      "distractors": [
-        "素晴らしい",
-        "パーティー",
-        "レストラン"
+        "よやく",
+        "むかし",
+        "かえる"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:n3-wake-dewa-nai",
+    "gram:koto-ga-aru",
+    "gram:n3-koto"
+  ],
+  "drills": [
+    {
+      "pattern": "gram:ta-koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-8842279",
+        "sent:gen-52a2e8482686",
+        "sent:tatoeba-9387697"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-11960481"
+      ],
+      "strand": "language-focused"
+    }
+  ],
+  "production": [
+    {
+      "prompt_pt": "Você tem dinheiro suficiente para a viagem?",
+      "answer_key": "旅行に十分なお金がありますか。",
+      "accepted_variants": [
+        "りょこうにじゅうぶんなおかねがありますか",
+        "りょこうにじゅうぶんなおかねがありますか。",
+        "旅行に十分なお金がありますか",
+        "旅行に十分なお金がありますか。"
+      ],
+      "sentence": "sent:tatoeba-78171",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Vamos guardar este dinheiro para a viagem de verão.",
+      "answer_key": "このお金は夏の旅行にとっておこう。",
+      "accepted_variants": [
+        "このおかねはなつのりょこうにとっておこう",
+        "このおかねはなつのりょこうにとっておこう。",
+        "このおかねわなつのりょこうにとっておこう",
+        "このおかねわなつのりょこうにとっておこう。",
+        "このお金は夏の旅行にとっておこう",
+        "このお金は夏の旅行にとっておこう。"
+      ],
+      "sentence": "sent:tatoeba-223949",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Meu pai já foi duas vezes para a Austrália.",
+      "answer_key": "父はオーストラリアへ２度行ったことがある。",
+      "accepted_variants": [
+        "ちちはおーすとらりあへにどおこなったことがある",
+        "ちちはおーすとらりあへにどおこなったことがある。",
+        "ちちわおーすとらりあえにどおこなったことがある",
+        "ちちわおーすとらりあえにどおこなったことがある。",
+        "父はオーストラリアへ2度行ったことがある",
+        "父はオーストラリアへ2度行ったことがある。",
+        "父はオーストラリアへ２度行ったことがある",
+        "父はオーストラリアへ２度行ったことがある。"
+      ],
+      "sentence": "sent:tatoeba-84745",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Alguém perguntou como foi seu fim de semana. Conte, no passado.",
+    "items": [
+      "sent:tatoeba-171398",
+      "sent:tatoeba-78158",
+      "sent:tatoeba-13537670",
+      "sent:tatoeba-143986",
+      "sent:tatoeba-121897",
+      "sent:tatoeba-10901645"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "situation",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 22,
+    "fluency": 6
+  }
 }

@@ -7,16 +7,17 @@
     "pt-BR": "Conversa de verdade, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-11264620",
     "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
     "sent:tatoeba-120314",
     "sent:tatoeba-216263",
-    "sent:tatoeba-211899",
-    "sent:tatoeba-213957"
+    "sent:tatoeba-211899"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1002590",
     "vocab:1581930",
     "vocab:1218760",
     "vocab:1313960",
@@ -31,33 +32,79 @@
     "gram:n3-to-iu-no-wa",
     "gram:n3-mitai-da",
     "gram:n3-to-iu-no",
-    "gram:gp-73",
+    "gram:gp-76",
+    "gram:mitai-ni",
     "gram:n3-to-iu"
   ],
   "kanji_recognition": [
+    "父",
     "君",
     "弟",
     "彼",
     "喜",
-    "道",
-    "理"
+    "道"
   ],
   "shadowing": [
+    "sent:tatoeba-11264620",
     "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
     "sent:tatoeba-120314",
     "sent:tatoeba-216263",
-    "sent:tatoeba-211899",
-    "sent:tatoeba-213957"
+    "sent:tatoeba-211899"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 562,
+  "cumulative_known_vocab": 561,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:n3-wake-da"
+  "checkpoint": [
+    {
+      "id": "so:n5:3830",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:5538:1980",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "時計",
+        "洋杯",
+        "一人"
+      ]
+    },
+    {
+      "id": "cf:n5:3830:113",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "ステーキ",
+        "テーブル",
+        "パソコン"
+      ]
+    },
+    {
+      "id": "kr:n4:1081",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きっと",
+        "むかし",
+        "スーツ"
+      ]
+    },
+    {
+      "id": "kr:n4:713",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "とる",
+        "これ",
+        "みず"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:n3-to-iu-no-wa",
@@ -81,17 +128,26 @@
       "pattern": "gram:n3-to-iu-no",
       "examples": [
         "sent:tatoeba-220804",
-        "sent:tatoeba-234151",
-        "sent:tatoeba-138773"
+        "sent:tatoeba-138773",
+        "sent:tatoeba-214502"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-73",
+      "pattern": "gram:gp-76",
       "examples": [
-        "sent:tatoeba-3488178",
-        "sent:tatoeba-2171509",
-        "sent:tatoeba-127272"
+        "sent:tatoeba-11041688",
+        "sent:tatoeba-220740",
+        "sent:tatoeba-3458976"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:mitai-ni",
+      "examples": [
+        "sent:tatoeba-9846192",
+        "sent:tatoeba-11044901",
+        "sent:tatoeba-11516169"
       ],
       "strand": "language-focused"
     },
@@ -107,15 +163,15 @@
   ],
   "production": [
     {
-      "prompt_pt": "Quero virar piloto, igual ao meu pai.",
-      "answer_key": "お父さんみたいに、パイロットになりたい。",
+      "prompt_pt": "Mãe, desculpa por estar sempre te dando trabalho.",
+      "answer_key": "お母さん、いつも迷惑ばかりかけてごめんなさい。",
       "accepted_variants": [
-        "おとうさんみたいに、ぱいろっとになりたい",
-        "おとうさんみたいに、ぱいろっとになりたい。",
-        "お父さんみたいに、パイロットになりたい",
-        "お父さんみたいに、パイロットになりたい。"
+        "おかあさん、いつもめいわくばかりかけてごめんなさい",
+        "おかあさん、いつもめいわくばかりかけてごめんなさい。",
+        "お母さん、いつも迷惑ばかりかけてごめんなさい",
+        "お母さん、いつも迷惑ばかりかけてごめんなさい。"
       ],
-      "sentence": "sent:tatoeba-11264620",
+      "sentence": "sent:tatoeba-886104",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -164,57 +220,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 22,
+    "meaning-output": 6,
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 33,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:5538:1980",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "時計",
-        "洋杯",
-        "一人"
-      ]
-    },
-    {
-      "id": "kr:n4:1081",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "きっと",
-        "むかし",
-        "スーツ"
-      ]
-    },
-    {
-      "id": "kr:n4:713",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "とる",
-        "いか",
-        "これ"
-      ]
-    },
-    {
-      "id": "cf:n3:1277:1966",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "咖哩",
-        "食事",
-        "西洋"
-      ]
-    }
-  ]
+  }
 }

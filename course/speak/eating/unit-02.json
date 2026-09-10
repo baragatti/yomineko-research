@@ -28,7 +28,6 @@
     "vocab:1358550"
   ],
   "patterns": [
-    "gram:masen-ka",
     "gram:mashou",
     "gram:gp-149",
     "gram:gp-17"
@@ -51,29 +50,68 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 113,
+  "cumulative_known_vocab": 112,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n4:956",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:1510:64",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "家",
+        "人",
+        "私"
+      ]
+    },
+    {
+      "id": "cf:n5:2900:498",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "結構",
+        "会う",
+        "キロ"
+      ]
+    },
+    {
+      "id": "kr:n5:199",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つくる",
+        "じかん",
+        "はらう"
+      ]
+    },
+    {
+      "id": "kr:n5:270",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ごはん",
+        "はらう",
+        "わるい"
+      ]
+    }
+  ],
   "patterns_chunked": [
+    "gram:masen-ka",
     "gram:nagara",
     "gram:ndesu"
   ],
   "drills": [
     {
-      "pattern": "gram:masen-ka",
-      "examples": [
-        "sent:gen-4595bdeb6907",
-        "sent:gen-4e948f2f75b0",
-        "sent:tatoeba-172871"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:mashou",
       "examples": [
         "sent:tatoeba-139208",
         "sent:tatoeba-173392",
-        "sent:tatoeba-197681"
+        "sent:tatoeba-198378"
       ],
       "strand": "language-focused"
     },
@@ -145,8 +183,8 @@
       "sent:tatoeba-9240812",
       "sent:jec-1593",
       "sent:tatoeba-8748248",
-      "sent:tatoeba-3488181",
-      "sent:tatoeba-8687007"
+      "sent:tatoeba-229178",
+      "sent:jec-0436"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -154,62 +192,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:956",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:1510:64",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "家",
-        "人",
-        "私"
-      ]
-    },
-    {
-      "id": "cf:n5:2900:498",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "結構",
-        "会う",
-        "キロ"
-      ]
-    },
-    {
-      "id": "kr:n5:199",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "つくる",
-        "じかん",
-        "はらう"
-      ]
-    },
-    {
-      "id": "kr:n5:270",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いつも",
-        "ごはん",
-        "はらう"
-      ]
-    }
-  ]
+  }
 }

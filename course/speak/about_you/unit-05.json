@@ -53,9 +53,56 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 315,
+  "cumulative_known_vocab": 316,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:680",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n3:1521",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はいる",
+        "こんや",
+        "テレビ"
+      ]
+    },
+    {
+      "id": "kr:n4:1273",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "さいきん",
+        "せんぱい",
+        "ばんごう"
+      ]
+    },
+    {
+      "id": "cf:n3:3586:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "頁",
+        "達",
+        "分"
+      ]
+    },
+    {
+      "id": "cf:n3:3701:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "男",
+        "為",
+        "車"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-36",
     "gram:gp-120"
@@ -91,8 +138,8 @@
     {
       "pattern": "gram:n3-made",
       "examples": [
-        "sent:tatoeba-80520",
         "sent:tatoeba-82912",
+        "sent:tatoeba-77157",
         "sent:tatoeba-79703"
       ],
       "strand": "language-focused"
@@ -150,8 +197,8 @@
     "items": [
       "sent:tatoeba-11727272",
       "sent:tatoeba-142954",
+      "sent:tatoeba-184200",
       "sent:jec-0320",
-      "sent:tatoeba-157990",
       "sent:tatoeba-11386733",
       "sent:tatoeba-9553773"
     ],
@@ -161,62 +208,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:680",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n3:1521",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はいる",
-        "こんや",
-        "テレビ"
-      ]
-    },
-    {
-      "id": "kr:n4:1273",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さいきん",
-        "せんぱい",
-        "ばんごう"
-      ]
-    },
-    {
-      "id": "cf:n3:3701:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "男",
-        "為",
-        "車"
-      ]
-    },
-    {
-      "id": "cf:n3:3705:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "駅",
-        "傘",
-        "間"
-      ]
-    }
-  ]
+  }
 }

@@ -53,9 +53,51 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 304,
+  "cumulative_known_vocab": 305,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:197:2762",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "頁",
+        "六",
+        "港"
+      ]
+    },
+    {
+      "id": "cf:n4:5456:894",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "そんな",
+        "有難う",
+        "考える"
+      ]
+    },
+    {
+      "id": "kr:n3:1611",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たつ",
+        "だす",
+        "あっ"
+      ]
+    },
+    {
+      "id": "kr:n4:1089",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ころ",
+        "はこ",
+        "いち"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-45",
     "gram:n3-koto"
@@ -100,6 +142,21 @@
   ],
   "production": [
     {
+      "prompt_pt": "Os alunos foram chamados pelo diretor e se reuniram.",
+      "answer_key": "学生達は校長に呼ばれてあつまった。",
+      "accepted_variants": [
+        "がくせいたちはこうちょうによばれてあつまった",
+        "がくせいたちはこうちょうによばれてあつまった。",
+        "がくせいたちわこうちょうによばれてあつまった",
+        "がくせいたちわこうちょうによばれてあつまった。",
+        "学生達は校長に呼ばれてあつまった",
+        "学生達は校長に呼ばれてあつまった。"
+      ],
+      "sentence": "sent:tatoeba-184200",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
       "prompt_pt": "Ele diz com clareza a sua própria opinião para os professores e os amigos.",
       "answer_key": "彼が先生や友達にはっきり自分の意見を言う",
       "accepted_variants": [
@@ -125,32 +182,17 @@
       "sentence": "sent:tatoeba-79320",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Eu gosto de flores; por exemplo, gosto de rosas.",
-      "answer_key": "私は花が好きで、たとえばばらが好きだ。",
-      "accepted_variants": [
-        "わたしははながすきで、たとえばばらがすきだ",
-        "わたしははながすきで、たとえばばらがすきだ。",
-        "わたしわはながすきで、たとえばばらがすきだ",
-        "わたしわはながすきで、たとえばばらがすきだ。",
-        "私は花が好きで、たとえばばらが好きだ",
-        "私は花が好きで、たとえばばらが好きだ。"
-      ],
-      "sentence": "sent:tatoeba-157990",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta.",
     "items": [
+      "sent:tatoeba-157990",
       "sent:tatoeba-84568",
       "sent:tatoeba-186900",
       "sent:tatoeba-1046077",
       "sent:tatoeba-11953118",
-      "sent:tatoeba-82875",
-      "sent:tatoeba-10587984"
+      "sent:tatoeba-82875"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -158,57 +200,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 29,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:197:2762",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "頁",
-        "六",
-        "港"
-      ]
-    },
-    {
-      "id": "cf:n4:5456:894",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "何時も",
-        "そんな",
-        "有難う"
-      ]
-    },
-    {
-      "id": "kr:n3:1611",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たつ",
-        "だす",
-        "あっ"
-      ]
-    },
-    {
-      "id": "kr:n4:1089",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ころ",
-        "いか",
-        "はこ"
-      ]
-    }
-  ]
+  }
 }

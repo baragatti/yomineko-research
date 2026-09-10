@@ -12,7 +12,7 @@
     "sent:tatoeba-9938017",
     "sent:tatoeba-90133",
     "sent:tatoeba-10050266",
-    "sent:tatoeba-11264620"
+    "sent:tatoeba-886104"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -22,14 +22,16 @@
     "vocab:1080000",
     "vocab:1594060",
     "vocab:1172400",
-    "vocab:1002590"
+    "vocab:1002650",
+    "vocab:1532800",
+    "vocab:1188890"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
-    "gram:gp-76",
-    "gram:mitai-ni",
     "gram:ta-bakari",
-    "gram:janai-dewa-nai"
+    "gram:janai-dewa-nai",
+    "gram:n3-bakari",
+    "gram:n3-rashii"
   ],
   "kanji_recognition": [
     "気",
@@ -45,13 +47,75 @@
     "sent:tatoeba-9938017",
     "sent:tatoeba-90133",
     "sent:tatoeba-10050266",
-    "sent:tatoeba-11264620"
+    "sent:tatoeba-886104"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 553,
+  "cumulative_known_vocab": 551,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:5550:1966",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "珈琲",
+        "来る",
+        "寝る"
+      ]
+    },
+    {
+      "id": "cf:n3:1277:1966",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "咖哩",
+        "食事",
+        "西洋"
+      ]
+    },
+    {
+      "id": "pp:n4:717",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "負ける",
+        "兎も角",
+        "起こす"
+      ]
+    },
+    {
+      "id": "pp:n5:100",
+      "type": "paraphrase",
+      "via": "new-word",
+      "distractors": [
+        "昼",
+        "歳",
+        "箸"
+      ]
+    },
+    {
+      "id": "kr:n4:703",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ようい",
+        "かかり",
+        "うごく"
+      ]
+    },
+    {
+      "id": "kr:n4:717",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "でんぽう",
+        "たずねる",
+        "ちいさな"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-wake-ga-nai"
   ],
@@ -62,24 +126,6 @@
         "sent:tatoeba-156748",
         "sent:tatoeba-10901570",
         "sent:tatoeba-77972"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-76",
-      "examples": [
-        "sent:tatoeba-11041688",
-        "sent:tatoeba-220740",
-        "sent:tatoeba-3458976"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:mitai-ni",
-      "examples": [
-        "sent:tatoeba-9846192",
-        "sent:tatoeba-11044901",
-        "sent:tatoeba-11516169"
       ],
       "strand": "language-focused"
     },
@@ -98,6 +144,24 @@
         "sent:tatoeba-229343",
         "sent:tatoeba-228269",
         "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-bakari",
+      "examples": [
+        "sent:tatoeba-113980",
+        "sent:tatoeba-147558",
+        "sent:tatoeba-88247"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-rashii",
+      "examples": [
+        "sent:tatoeba-100541",
+        "sent:tatoeba-107636",
+        "sent:tatoeba-108826"
       ],
       "strand": "language-focused"
     }
@@ -151,8 +215,8 @@
       "sent:tatoeba-230514",
       "sent:tatoeba-235244",
       "sent:jec-0517",
-      "sent:tatoeba-4827",
       "sent:tatoeba-89607",
+      "sent:tatoeba-74941",
       "sent:tatoeba-78366"
     ],
     "seconds_target": 48,
@@ -161,72 +225,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n5:3830",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:5550:1966",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "珈琲",
-        "来る",
-        "寝る"
-      ]
-    },
-    {
-      "id": "cf:n5:3830:113",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "ステーキ",
-        "パソコン",
-        "美味しい"
-      ]
-    },
-    {
-      "id": "pp:n4:717",
-      "type": "paraphrase",
-      "via": "new-word",
-      "distractors": [
-        "負ける",
-        "兎も角",
-        "為さる"
-      ]
-    },
-    {
-      "id": "kr:n4:703",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ようい",
-        "かかり",
-        "うごく"
-      ]
-    },
-    {
-      "id": "kr:n4:717",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "でんぽう",
-        "たずねる",
-        "ちいさな"
-      ]
-    }
-  ]
+  }
 }

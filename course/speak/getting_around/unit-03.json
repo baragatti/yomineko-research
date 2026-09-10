@@ -50,9 +50,56 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 185,
+  "cumulative_known_vocab": 183,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:755",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2498:649",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "以前",
+        "何時",
+        "思う"
+      ]
+    },
+    {
+      "id": "cf:n5:2757:480",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "事",
+        "係",
+        "日"
+      ]
+    },
+    {
+      "id": "kr:n4:739",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "すすむ",
+        "はこぶ"
+      ]
+    },
+    {
+      "id": "kr:n5:155",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あの",
+        "いえ",
+        "よむ"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-sore-to",
     "gram:gp-36",
@@ -139,7 +186,7 @@
       "sent:tatoeba-4802",
       "sent:tatoeba-198139",
       "sent:tatoeba-201017",
-      "sent:tatoeba-191220",
+      "sent:tatoeba-162347",
       "sent:tatoeba-78125"
     ],
     "seconds_target": 48,
@@ -148,62 +195,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:755",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2498:649",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "致す",
-        "以前",
-        "何時"
-      ]
-    },
-    {
-      "id": "cf:n5:2757:480",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "事",
-        "係",
-        "日"
-      ]
-    },
-    {
-      "id": "kr:n4:739",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あまり",
-        "すすむ",
-        "はこぶ"
-      ]
-    },
-    {
-      "id": "kr:n5:155",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あの",
-        "いえ",
-        "よむ"
-      ]
-    }
-  ]
+  }
 }

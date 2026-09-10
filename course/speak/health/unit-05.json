@@ -7,96 +7,109 @@
     "pt-BR": "Emergência e saúde, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-85337",
+    "sent:tatoeba-5001",
     "sent:tatoeba-10587764",
     "sent:jec-1326",
-    "sent:tatoeba-3454872",
-    "sent:tatoeba-198568",
-    "sent:tatoeba-83003"
+    "sent:tatoeba-74743",
+    "sent:tatoeba-5147343",
+    "sent:tatoeba-3454872"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1257540",
+    "vocab:1369940",
     "vocab:1002610",
     "vocab:1228560",
+    "vocab:1171010",
+    "vocab:1479890",
     "vocab:1599400",
-    "vocab:1600280",
-    "vocab:1269060"
+    "vocab:1218380"
   ],
   "patterns": [
-    "gram:gp-98",
-    "gram:gp-12",
-    "gram:gp-17",
-    "gram:gp-31",
-    "gram:ndesu",
-    "gram:gp-121"
+    "gram:wa-dou-desu-ka",
+    "gram:gp-121",
+    "gram:tara",
+    "gram:da-desu",
+    "gram:gp-8"
   ],
   "kanji_recognition": [
-    "院",
-    "建",
-    "後",
-    "病",
-    "物",
-    "休"
+    "気",
+    "尋",
+    "彼",
+    "分",
+    "休",
+    "今"
   ],
   "shadowing": [
-    "sent:tatoeba-85337",
+    "sent:tatoeba-5001",
     "sent:tatoeba-10587764",
     "sent:jec-1326",
-    "sent:tatoeba-3454872",
-    "sent:tatoeba-198568",
-    "sent:tatoeba-83003"
+    "sent:tatoeba-74743",
+    "sent:tatoeba-5147343",
+    "sent:tatoeba-3454872"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 402,
+  "cumulative_known_vocab": 403,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
+  "checkpoint": [
+    {
+      "id": "so:n3:761",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:223:1315",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "歳",
+        "人",
+        "三"
+      ]
+    },
+    {
+      "id": "cf:n4:3802:1315",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "君",
+        "箸",
+        "程"
+      ]
+    },
+    {
+      "id": "kr:n4:1140",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "うしなう",
+        "たとえば",
+        "ばんごう"
+      ]
+    },
+    {
+      "id": "kr:n4:1315",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "タイプ",
+        "おおい",
+        "おれい"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:kyuu-ni"
+  ],
   "drills": [
     {
-      "pattern": "gram:gp-98",
+      "pattern": "gram:wa-dou-desu-ka",
       "examples": [
-        "sent:gen-f4a52d78b938",
-        "sent:gen-f384f4213f18",
-        "sent:gen-802fed6cb267"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-12",
-      "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-17",
-      "examples": [
-        "sent:tatoeba-124633",
-        "sent:tatoeba-172639",
-        "sent:tatoeba-144227"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-31",
-      "examples": [
-        "sent:tatoeba-778974",
-        "sent:tatoeba-1057336",
-        "sent:tatoeba-4789"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ndesu",
-      "examples": [
-        "sent:gen-d354f1465606",
-        "sent:tatoeba-80973",
-        "sent:gen-f83463ff3681"
+        "sent:tatoeba-125116",
+        "sent:tatoeba-2436329",
+        "sent:tatoeba-4751207"
       ],
       "strand": "language-focused"
     },
@@ -108,36 +121,61 @@
         "sent:gen-1484a0acc3d0"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tara",
+      "examples": [
+        "sent:tatoeba-4713",
+        "sent:tatoeba-4812",
+        "sent:tatoeba-4860"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:da-desu",
+      "examples": [
+        "sent:tatoeba-5332",
+        "sent:tatoeba-75192",
+        "sent:tatoeba-5057"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-8",
+      "examples": [
+        "sent:tatoeba-5320",
+        "sent:tatoeba-176635",
+        "sent:tatoeba-150175"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "O espírito está pronto, mas a carne é fraca.",
-      "answer_key": "心熱けれど肉体は弱し。",
+      "prompt_pt": "Provavelmente está tudo bem.",
+      "answer_key": "たぶん大丈夫だ。",
       "accepted_variants": [
-        "こころあつけれどにくたいはよわし",
-        "こころあつけれどにくたいはよわし。",
-        "こころあつけれどにくたいわよわし",
-        "こころあつけれどにくたいわよわし。",
-        "心熱けれど肉体は弱し",
-        "心熱けれど肉体は弱し。"
+        "たぶんだいじょうぶだ",
+        "たぶんだいじょうぶだ。",
+        "たぶん大丈夫だ",
+        "たぶん大丈夫だ。"
       ],
-      "sentence": "sent:tatoeba-145552",
+      "sentence": "sent:tatoeba-203344",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "\"Como você está se sentindo?\", ele perguntou.",
-      "answer_key": "「気分はどうですか」と彼は尋ねた。",
+      "prompt_pt": "O que é aquele prédio que fica atrás do hospital?",
+      "answer_key": "病院の後ろにあるあの建物はなんですか。",
       "accepted_variants": [
-        "「きぶんはどうですか」とかれはたずねた",
-        "「きぶんはどうですか」とかれはたずねた。",
-        "「きぶんわどうですか」とかれわたずねた",
-        "「きぶんわどうですか」とかれわたずねた。",
-        "「気分はどうですか」と彼は尋ねた",
-        "「気分はどうですか」と彼は尋ねた。"
+        "びょういんのうしろにあるあのたてものはなんですか",
+        "びょういんのうしろにあるあのたてものはなんですか。",
+        "びょういんのうしろにあるあのたてものわなんですか",
+        "びょういんのうしろにあるあのたてものわなんですか。",
+        "病院の後ろにあるあの建物はなんですか",
+        "病院の後ろにあるあの建物はなんですか。"
       ],
-      "sentence": "sent:tatoeba-5001",
+      "sentence": "sent:tatoeba-85337",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -157,11 +195,11 @@
   "fluency": {
     "prompt_pt": "Você não está bem. Explique o que está sentindo e peça ajuda.",
     "items": [
-      "sent:tatoeba-203344",
+      "sent:tatoeba-83003",
       "sent:tatoeba-226387",
+      "sent:tatoeba-10263746",
       "sent:tatoeba-90106",
       "sent:tatoeba-190902",
-      "sent:tatoeba-174391",
       "sent:tatoeba-1190209"
     ],
     "seconds_target": 48,
@@ -170,67 +208,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:761",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:947",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:223:1315",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "人",
-        "顔",
-        "三"
-      ]
-    },
-    {
-      "id": "cf:n4:3802:1315",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "君",
-        "箸",
-        "力"
-      ]
-    },
-    {
-      "id": "kr:n4:1315",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "タイプ",
-        "おおい",
-        "おれい"
-      ]
-    },
-    {
-      "id": "kr:n5:120",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "やすい",
-        "パート",
-        "かえり"
-      ]
-    }
-  ]
+  }
 }

@@ -33,6 +33,7 @@ import argparse, json, re, sqlite3, sys
 from collections import Counter
 from pathlib import Path
 from pattern_forms import form_key, matched_length  # noqa: E402  (same directory)
+from speak_filter import SpeakFilter                # noqa: E402  (same directory)
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
 import sys as _sys, pathlib as _pl  # noqa: E402
@@ -189,6 +190,18 @@ def main() -> int:
                    "chunk": is_chunk(jp)}
              for sid, slug, jp, lv, ai in con.execute(
                  "SELECT id,slug,jp,level,COALESCE(ai_generated,0) FROM sentence")}
+
+    # W31 (A8). THE CONTENT FILTER, applied to the candidate pool rather than to the finished units:
+    # a sentence this path may not teach must never be selected in the first place, so the slot goes
+    # to an admissible phrase instead of coming out short. Register + rule + the owner's blocklist,
+    # all of it in scripts/export/speak_filter.py so this builder and build_speaking_practice.py
+    # cannot drift apart. `register` is consumed by course/speak/ ONLY (design/schema_v2.md, A8:
+    # "must not impact the lessons") — nothing under course/ outside speak/ reads it.
+    _reg = {slug: (reg, rule) for slug, reg, rule in
+            con.execute("SELECT slug, register, register_rule FROM sentence")}
+    speak_filter = SpeakFilter(_reg, {s["slug"]: s["jp"] for s in sents.values()})
+    sents = {sid: s for sid, s in sents.items() if speak_filter.allows(s["slug"])}
+    print("  " + speak_filter.census())
 
     # A sentence's vocabulary comes from the DISSECTION (token.vocab_id), not from sentence_vocab.
     # sentence_vocab is substring-derived and therefore lies: すみません。is linked there to 住む AND

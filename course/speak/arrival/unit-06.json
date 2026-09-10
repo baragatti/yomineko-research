@@ -7,55 +7,104 @@
     "pt-BR": "Chegar e cumprimentar, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-80492",
     "sent:tatoeba-203979",
-    "sent:tatoeba-76482",
     "sent:tatoeba-5057",
     "sent:tatoeba-10901919",
-    "sent:gen-1d921e8b2ad3"
+    "sent:tatoeba-10901730",
+    "sent:gen-1d921e8b2ad3",
+    "sent:gen-a5ee7b945644"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1523060",
-    "vocab:1584660",
-    "vocab:1536350",
     "vocab:1530970",
-    "vocab:1479890",
     "vocab:1006970",
     "vocab:1582920",
     "vocab:1628530"
   ],
   "patterns": [
     "gram:gp-42",
+    "gram:gozaimasu",
     "gram:gp-149",
-    "gram:da-desu",
-    "gram:dake"
+    "gram:da-desu"
   ],
   "kanji_recognition": [
     "願",
-    "日",
-    "明",
-    "夜",
-    "約",
-    "予"
+    "無",
+    "理",
+    "間",
+    "当",
+    "本"
   ],
   "shadowing": [
-    "sent:tatoeba-80492",
     "sent:tatoeba-203979",
-    "sent:tatoeba-76482",
     "sent:tatoeba-5057",
     "sent:tatoeba-10901919",
-    "sent:gen-1d921e8b2ad3"
+    "sent:tatoeba-10901730",
+    "sent:gen-1d921e8b2ad3",
+    "sent:gen-a5ee7b945644"
   ],
   "audio": "pending",
-  "real_phrases": 5,
-  "cumulative_known_vocab": 48,
+  "real_phrases": 4,
+  "cumulative_known_vocab": 46,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:61",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:1063",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n5:257",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "みる",
+        "いく",
+        "ない"
+      ]
+    },
+    {
+      "id": "kr:n5:261",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "きく",
+        "いつ",
+        "ふる"
+      ]
+    },
+    {
+      "id": "cf:n3:5061:1921",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "聞く",
+        "始め",
+        "明日"
+      ]
+    },
+    {
+      "id": "cf:n3:5063:1921",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "無理",
+        "余り",
+        "結構"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-148",
-    "gram:gp-121"
+    "gram:sou-da-1"
   ],
   "drills": [
     {
@@ -64,6 +113,15 @@
         "sent:tatoeba-994640",
         "sent:tatoeba-227007",
         "sent:tatoeba-229458"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gozaimasu",
+      "examples": [
+        "sent:tatoeba-335372",
+        "sent:tatoeba-1576172",
+        "sent:tatoeba-8467948"
       ],
       "strand": "language-focused"
     },
@@ -79,36 +137,14 @@
     {
       "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-75188",
         "sent:tatoeba-4708",
-        "sent:tatoeba-4973"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:dake",
-      "examples": [
-        "sent:gen-10932a1910b5",
-        "sent:gen-fec0529a3037",
-        "sent:tatoeba-4767"
+        "sent:tatoeba-4973",
+        "sent:tatoeba-5332"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Mãe, desculpa por estar sempre te dando trabalho.",
-      "answer_key": "お母さん、いつも迷惑ばかりかけてごめんなさい。",
-      "accepted_variants": [
-        "おかあさん、いつもめいわくばかりかけてごめんなさい",
-        "おかあさん、いつもめいわくばかりかけてごめんなさい。",
-        "お母さん、いつも迷惑ばかりかけてごめんなさい",
-        "お母さん、いつも迷惑ばかりかけてごめんなさい。"
-      ],
-      "sentence": "sent:tatoeba-886104",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Muito obrigado por me lembrar da promessa.",
       "answer_key": "約束を思い出させてくれてどうもありがとう。",
@@ -134,17 +170,32 @@
       "sentence": "sent:tatoeba-11267683",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Não, por favor disque o número nove primeiro.",
+      "answer_key": "いいえ、はじめに９番におかけ下さい。",
+      "accepted_variants": [
+        "いいえ、はじめに9番におかけ下さい",
+        "いいえ、はじめに9番におかけ下さい。",
+        "いいえ、はじめにきゅうばんにおかけください",
+        "いいえ、はじめにきゅうばんにおかけください。",
+        "いいえ、はじめに９番におかけ下さい",
+        "いいえ、はじめに９番におかけ下さい。"
+      ],
+      "sentence": "sent:tatoeba-229449",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt_pt": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença. Em voz alta, sem ler.",
     "items": [
-      "sent:tatoeba-229460",
-      "sent:tatoeba-426889",
-      "sent:tatoeba-1532832",
       "sent:tatoeba-229425",
-      "sent:tatoeba-1874351",
-      "sent:tatoeba-4971"
+      "sent:tatoeba-335372",
+      "sent:tatoeba-426889",
+      "sent:tatoeba-1598216",
+      "sent:tatoeba-229460",
+      "sent:tatoeba-1874351"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -152,67 +203,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:61",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:1063",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "kr:n5:16",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "よやく",
-        "じかん",
-        "ねがう"
-      ]
-    },
-    {
-      "id": "kr:n5:257",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "みる",
-        "いく",
-        "ない"
-      ]
-    },
-    {
-      "id": "cf:n4:1111:1132",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "夜",
-        "事",
-        "係"
-      ]
-    },
-    {
-      "id": "cf:n4:1172:1132",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "私",
-        "係",
-        "夜"
-      ]
-    }
-  ]
+  }
 }

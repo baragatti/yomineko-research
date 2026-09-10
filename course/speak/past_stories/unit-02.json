@@ -9,23 +9,23 @@
   "say_now": [
     "sent:tatoeba-78177",
     "sent:tatoeba-171398",
+    "sent:tatoeba-235631",
+    "sent:tatoeba-84745",
     "sent:tatoeba-223949",
-    "sent:tatoeba-78171",
-    "sent:tatoeba-156748",
-    "sent:tatoeba-198088"
+    "sent:tatoeba-78171"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1602710",
     "vocab:1158880",
+    "vocab:1589060",
     "vocab:1191320",
     "vocab:1335080",
-    "vocab:1378690",
-    "vocab:1414340",
     "vocab:1401210"
   ],
   "patterns": [
+    "gram:ta-koto-ga-aru",
     "gram:ga-arimasu",
     "gram:te-kudasai"
   ],
@@ -40,23 +40,73 @@
   "shadowing": [
     "sent:tatoeba-78177",
     "sent:tatoeba-171398",
+    "sent:tatoeba-235631",
+    "sent:tatoeba-84745",
     "sent:tatoeba-223949",
-    "sent:tatoeba-78171",
-    "sent:tatoeba-156748",
-    "sent:tatoeba-198088"
+    "sent:tatoeba-78171"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 419,
+  "cumulative_known_vocab": 422,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n3:3784:2312",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "道",
+        "分",
+        "鍵"
+      ]
+    },
+    {
+      "id": "cf:n4:1452:1099",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "注意",
+        "一寸",
+        "自分"
+      ]
+    },
+    {
+      "id": "kr:n4:1099",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しゅうかん",
+        "りょうきん",
+        "しょうせつ"
+      ]
+    },
+    {
+      "id": "kr:n4:1296",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かのじょ",
+        "めざめる",
+        "ほんとう"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:n3-mattaku-nai",
-    "gram:n3-wake-dewa-nai",
+    "gram:koto-ga-aru",
     "gram:n3-ni-totte",
     "gram:n3-ni-tsuite"
   ],
   "drills": [
+    {
+      "pattern": "gram:ta-koto-ga-aru",
+      "examples": [
+        "sent:tatoeba-8842279",
+        "sent:gen-52a2e8482686",
+        "sent:tatoeba-9387697"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:ga-arimasu",
       "examples": [
@@ -70,8 +120,8 @@
       "pattern": "gram:te-kudasai",
       "examples": [
         "sent:tatoeba-124708",
-        "sent:tatoeba-74723",
-        "sent:tatoeba-146189"
+        "sent:tatoeba-146189",
+        "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
     }
@@ -127,9 +177,9 @@
       "sent:tatoeba-142423",
       "sent:jec-1326",
       "sent:tatoeba-10587764",
-      "sent:tatoeba-145552",
-      "sent:jec-3163",
-      "sent:tatoeba-79502"
+      "sent:tatoeba-203344",
+      "sent:tatoeba-79502",
+      "sent:tatoeba-11270411"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -137,62 +187,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 45,
-    "fluency": 16
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 17,
+    "language-focused": 22,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:981",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:1452:1099",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "注意",
-        "一寸",
-        "自分"
-      ]
-    },
-    {
-      "id": "cf:n4:2952:1099",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "正月",
-        "学校",
-        "言う"
-      ]
-    },
-    {
-      "id": "kr:n4:1099",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しゅうかん",
-        "りょうきん",
-        "しょうせつ"
-      ]
-    },
-    {
-      "id": "kr:n4:1296",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かのじょ",
-        "めざめる",
-        "ほんとう"
-      ]
-    }
-  ]
+  }
 }

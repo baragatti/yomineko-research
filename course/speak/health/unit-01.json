@@ -8,27 +8,24 @@
   },
   "say_now": [
     "sent:tatoeba-190909",
-    "sent:tatoeba-145398",
     "sent:tatoeba-190906",
     "sent:tatoeba-110065",
     "sent:tatoeba-110066",
-    "sent:tatoeba-190902"
+    "sent:tatoeba-190902",
+    "sent:tatoeba-84479"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1247250",
-    "vocab:1252090",
     "vocab:1159980",
     "vocab:1541620",
-    "vocab:1490220",
-    "vocab:1308090",
     "vocab:1241490",
     "vocab:1535910"
   ],
   "patterns": [
-    "gram:n3-beki-da",
-    "gram:gp-87"
+    "gram:garu-gatteiru",
+    "gram:n3-beki-da"
   ],
   "kanji_recognition": [
     "医",
@@ -40,39 +37,86 @@
   ],
   "shadowing": [
     "sent:tatoeba-190909",
-    "sent:tatoeba-145398",
     "sent:tatoeba-190906",
     "sent:tatoeba-110065",
     "sent:tatoeba-110066",
-    "sent:tatoeba-190902"
+    "sent:tatoeba-190902",
+    "sent:tatoeba-84479"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 371,
+  "cumulative_known_vocab": 372,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n4:3402",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "kr:n3:1746",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しんぶん",
+        "はじめる",
+        "テーブル"
+      ]
+    },
+    {
+      "id": "kr:n4:1219",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つく",
+        "よぶ",
+        "いえ"
+      ]
+    },
+    {
+      "id": "cf:n3:4234:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "人",
+        "男",
+        "目"
+      ]
+    },
+    {
+      "id": "cf:n3:4373:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "夜",
+        "本",
+        "丈"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-you-ni-iu",
     "gram:te-morau",
-    "gram:n3-to-shite",
-    "gram:n3-you-ni"
+    "gram:gp-36",
+    "gram:n3-to-shite"
   ],
   "drills": [
+    {
+      "pattern": "gram:garu-gatteiru",
+      "examples": [
+        "sent:gen-a0d367f9d037",
+        "sent:gen-2424c6ff626d",
+        "sent:gen-0ce029328959"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:n3-beki-da",
       "examples": [
         "sent:tatoeba-144981",
         "sent:tatoeba-149720",
         "sent:tatoeba-169806"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-87",
-      "examples": [
-        "sent:tatoeba-11390339",
-        "sent:tatoeba-11390341",
-        "sent:tatoeba-198201"
       ],
       "strand": "language-focused"
     }
@@ -106,18 +150,17 @@
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Será que vai melhorar à tarde?",
-      "answer_key": "午後には上がるだろうか？",
+      "prompt_pt": "Eu costumava nadar aqui todos os dias.",
+      "answer_key": "私はここで毎日泳いだものだ。",
       "accepted_variants": [
-        "ごごにはあがるだろうか",
-        "ごごにはあがるだろうか?",
-        "ごごにわあがるだろうか",
-        "ごごにわあがるだろうか?",
-        "午後には上がるだろうか",
-        "午後には上がるだろうか?",
-        "午後には上がるだろうか？"
+        "わたしはここでまいにちおよいだものだ",
+        "わたしはここでまいにちおよいだものだ。",
+        "わたしわここでまいにちおよいだものだ",
+        "わたしわここでまいにちおよいだものだ。",
+        "私はここで毎日泳いだものだ",
+        "私はここで毎日泳いだものだ。"
       ],
-      "sentence": "sent:tatoeba-1699768",
+      "sentence": "sent:tatoeba-161057",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -125,12 +168,12 @@
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
-      "sent:tatoeba-174391",
       "sent:tatoeba-1190209",
+      "sent:tatoeba-190560",
       "sent:tatoeba-10303648",
-      "sent:tatoeba-536767",
-      "sent:tatoeba-171531",
-      "sent:tatoeba-1037362"
+      "sent:tatoeba-154767",
+      "sent:tatoeba-152614",
+      "sent:tatoeba-10014826"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -138,57 +181,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 31,
-    "meaning-output": 8,
-    "language-focused": 46,
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 49,
     "fluency": 15
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 18,
+    "language-focused": 20,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n3:157:1430",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "船",
-        "数",
-        "其の"
-      ]
-    },
-    {
-      "id": "cf:n4:1299:1082",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "生産",
-        "叔父",
-        "いい"
-      ]
-    },
-    {
-      "id": "kr:n3:1746",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しんぶん",
-        "はじめる",
-        "がくせい"
-      ]
-    },
-    {
-      "id": "kr:n4:1082",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "せいさん",
-        "きんえん",
-        "いちばん"
-      ]
-    }
-  ]
+  }
 }

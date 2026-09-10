@@ -18,17 +18,14 @@
   "untranslated": [],
   "words": [
     "vocab:1422970",
+    "vocab:1010240",
     "vocab:1543240",
     "vocab:1602800",
     "vocab:1343100",
     "vocab:1012800",
     "vocab:1279990"
   ],
-  "patterns": [
-    "gram:ta-bakari",
-    "gram:n3-bakari",
-    "gram:n3-kurai"
-  ],
+  "patterns": [],
   "kanji_recognition": [
     "着",
     "港",
@@ -47,113 +44,9 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 191,
+  "cumulative_known_vocab": 190,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:n3-ta-tokoro",
-    "gram:tokoro",
-    "gram:yatto"
-  ],
-  "drills": [
-    {
-      "pattern": "gram:ta-bakari",
-      "examples": [
-        "sent:tatoeba-11009581",
-        "sent:tatoeba-9553773",
-        "sent:tatoeba-159565"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-bakari",
-      "examples": [
-        "sent:tatoeba-113980",
-        "sent:tatoeba-147558",
-        "sent:tatoeba-88247"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-kurai",
-      "examples": [
-        "sent:tatoeba-115111",
-        "sent:tatoeba-97215",
-        "sent:tatoeba-106368"
-      ],
-      "strand": "language-focused"
-    }
-  ],
-  "production": [
-    {
-      "prompt_pt": "As duas estradas se cruzam ali.",
-      "answer_key": "二本の道はそこでクロスしている。",
-      "accepted_variants": [
-        "にほんのみちはそこでくろすしている",
-        "にほんのみちはそこでくろすしている。",
-        "にほんのみちわそこでくろすしている",
-        "にほんのみちわそこでくろすしている。",
-        "二本の道はそこでクロスしている",
-        "二本の道はそこでクロスしている。"
-      ],
-      "sentence": "sent:tatoeba-75827",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Andar a pé deve ser mais rápido do que pegar um táxi.",
-      "answer_key": "タクシーよりも歩くほうがはやいだろう。",
-      "accepted_variants": [
-        "たくしーよりもあるくほうがはやいだろう",
-        "たくしーよりもあるくほうがはやいだろう。",
-        "タクシーよりも歩くほうがはやいだろう",
-        "タクシーよりも歩くほうがはやいだろう。"
-      ],
-      "sentence": "sent:tatoeba-203709",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Ontem esqueci o guarda-chuva no trem.",
-      "answer_key": "きのう電車に傘を忘れました。",
-      "accepted_variants": [
-        "きのうでんしゃにかさをわすれました",
-        "きのうでんしゃにかさをわすれました。",
-        "きのう電車に傘を忘れました",
-        "きのう電車に傘を忘れました。"
-      ],
-      "sentence": "sent:tatoeba-10899657",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    }
-  ],
-  "fluency": {
-    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
-    "items": [
-      "sent:tatoeba-10725053",
-      "sent:tatoeba-182700",
-      "sent:tatoeba-179327",
-      "sent:tatoeba-162318",
-      "sent:jec-2741",
-      "sent:tatoeba-162347"
-    ],
-    "seconds_target": 48,
-    "zero_new_tokens": true,
-    "kind": "situation",
-    "strand": "fluency"
-  },
-  "strands": {
-    "meaning-input": 31,
-    "meaning-output": 8,
-    "language-focused": 46,
-    "fluency": 15
-  },
-  "strand_counts": {
-    "meaning-input": 12,
-    "meaning-output": 3,
-    "language-focused": 18,
-    "fluency": 6
-  },
   "checkpoint": [
     {
       "id": "so:n3:483",
@@ -205,5 +98,84 @@
         "本"
       ]
     }
-  ]
+  ],
+  "patterns_chunked": [
+    "gram:n3-ta-tokoro",
+    "gram:ta-bakari",
+    "gram:n3-bakari",
+    "gram:n3-kurai",
+    "gram:tokoro",
+    "gram:yatto"
+  ],
+  "drills": [],
+  "production": [
+    {
+      "prompt_pt": "As duas estradas se cruzam ali.",
+      "answer_key": "二本の道はそこでクロスしている。",
+      "accepted_variants": [
+        "にほんのみちはそこでくろすしている",
+        "にほんのみちはそこでくろすしている。",
+        "にほんのみちわそこでくろすしている",
+        "にほんのみちわそこでくろすしている。",
+        "二本の道はそこでクロスしている",
+        "二本の道はそこでクロスしている。"
+      ],
+      "sentence": "sent:tatoeba-75827",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Andar a pé deve ser mais rápido do que pegar um táxi.",
+      "answer_key": "タクシーよりも歩くほうがはやいだろう。",
+      "accepted_variants": [
+        "たくしーよりもあるくほうがはやいだろう",
+        "たくしーよりもあるくほうがはやいだろう。",
+        "タクシーよりも歩くほうがはやいだろう",
+        "タクシーよりも歩くほうがはやいだろう。"
+      ],
+      "sentence": "sent:tatoeba-203709",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Ontem esqueci o guarda-chuva no trem.",
+      "answer_key": "きのう電車に傘を忘れました。",
+      "accepted_variants": [
+        "きのうでんしゃにかさをわすれました",
+        "きのうでんしゃにかさをわすれました。",
+        "きのう電車に傘を忘れました",
+        "きのう電車に傘を忘れました。"
+      ],
+      "sentence": "sent:tatoeba-10899657",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    }
+  ],
+  "fluency": {
+    "prompt_pt": "Você se perdeu perto da estação. Pergunte o caminho e confirme se entendeu.",
+    "items": [
+      "sent:tatoeba-10725053",
+      "sent:tatoeba-182700",
+      "sent:tatoeba-179327",
+      "sent:tatoeba-162318",
+      "sent:tatoeba-197915",
+      "sent:jec-2741"
+    ],
+    "seconds_target": 48,
+    "zero_new_tokens": true,
+    "kind": "situation",
+    "strand": "fluency"
+  },
+  "strands": {
+    "meaning-input": 30,
+    "meaning-output": 8,
+    "language-focused": 48,
+    "fluency": 15
+  },
+  "strand_counts": {
+    "meaning-input": 12,
+    "meaning-output": 3,
+    "language-focused": 19,
+    "fluency": 6
+  }
 }

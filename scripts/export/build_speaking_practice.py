@@ -55,11 +55,17 @@ SPEAK = ROOT / "course" / "speak"
 # would drift from the one that actually built the stages.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_speaking_path import STAGES  # noqa: E402
+from speak_filter import SpeakFilter    # noqa: E402  (same directory)
 STAGE_SEEDS: dict[str, tuple[str, ...]] = {s[0]: s[3] for s in STAGES}
 
-# Registers a phrase can carry that make it wrong to put in a traveller's mouth. Reported, never
-# filtered: what to do about them is an owner decision (PENDING.md A8), and a builder that silently
-# dropped them would make the size of the problem invisible.
+# Registers a phrase can carry that make it wrong to put in a traveller's mouth. Until W31 these
+# were reported and never filtered, because there was no sentence-level register to filter ON: the
+# only signal available was the register of the grammar points a sentence was tagged with, whose
+# vocabulary is neutral/polite/casual/formal, so archaic, epistolary and vulgar were UNRECORDABLE
+# rather than absent, and the census had to say so. `sentence.register` exists now (migration 017),
+# and the FILTER is scripts/export/speak_filter.py, shared with build_speaking_path.py so the two
+# selectors cannot drift. This set survives only as the census vocabulary, which is now reported
+# against real values.
 MARKED_REGISTERS = {"archaic", "classical", "epistolary", "literary", "vulgar", "written"}
 
 DRILLS_PER_PATTERN = 3        # R80/R81 minimum for a pattern to count as productive
@@ -141,8 +147,18 @@ def main() -> int:
     args = ap.parse_args()
     con = sqlite3.connect(DB)
 
-    sent = {sid: {"id": sid, "slug": slug, "jp": jp, "kana": kana} for sid, slug, jp, kana in
-            con.execute("SELECT id,slug,jp,kana FROM sentence")}
+    sent = {sid: {"id": sid, "slug": slug, "jp": jp, "kana": kana, "register": reg,
+                  "register_rule": rule}
+            for sid, slug, jp, kana, reg, rule in
+            con.execute("SELECT id,slug,jp,kana,register,register_rule FROM sentence")}
+    # W31 (A8). The same content filter build_speaking_path.py applies to say_now, applied here to
+    # the two selectors that builder never sees: `production` (R44, drawn from prior say_now, which
+    # is already filtered — asserted again rather than assumed, because an unchecked assumption
+    # about another script's output is how 92 of 213 production items came to reject the correctly
+    # spelled kana) and `drills[].examples`, whose candidates come from sentence_grammar and have
+    # never been through any filter at all.
+    speak_filter = SpeakFilter({s["slug"]: (s["register"], s["register_rule"]) for s in sent.values()},
+                               {s["slug"]: s["jp"] for s in sent.values()})
     # Orthographic kana: the reading of every token EXCEPT particles, which keep their surface, so
     # the topic は stays は instead of collapsing to its sound わ. See variants().
     _ortho: dict = {}
@@ -179,15 +195,11 @@ def main() -> int:
     for sid, surf, lem in con.execute(
             "SELECT sentence_id,surface,lemma FROM token WHERE split_mode='C'"):
         slem.setdefault(sid, set()).add(lem or surf)
-    # Register, wherever the corpus records one. There is no sentence-level register column today, so
-    # the only signal available is the register of the grammar points a sentence is tagged with.
-    gram_register = {gid: (reg or "") for gid, reg in
-                     con.execute("SELECT id,register FROM grammar_point")}
-    sent_register: dict[int, set[str]] = {}
-    for gid, sids in gram_sents.items():
-        r = gram_register.get(gid, "")
-        for sid in sids:
-            sent_register.setdefault(sid, set()).add(r)
+    # W31 removed the grammar-point stand-in that used to sit here. It read
+    # `grammar_point.register` and unioned it over every sentence tagged with that point, which is a
+    # property of the POINT and not of the utterance: it said `plain` about あれはキジです because
+    # です attaches to a plain-form pattern. `sentence.register` is the real field and it is read
+    # straight off the sentence row above.
 
     def stage_relevant(slug: str, stage_key: str) -> bool:
         """Is an already-known phrase about the situation this stage puts the learner in?"""
@@ -253,6 +265,8 @@ def main() -> int:
                     break
                 s = by_slug.get(slug)
                 if not s or not pt.get(s["id"]):
+                    continue
+                if not speak_filter.allows(slug):
                     continue
                 production.append({
                     "prompt_pt": pt[s["id"]],
@@ -326,6 +340,8 @@ def main() -> int:
                 for sid in gram_sents.get(gid, []):
                     if sid in unit_used or sent[sid]["slug"] in u["say_now"]:
                         continue
+                    if not speak_filter.allows(sent[sid]["slug"]):
+                        continue
                     if len(svocab.get(sid, set()) - known) <= DRILL_MAX_NEW:
                         cands.append(sid)
                 # fewest unknown words first, then shortest: the gentlest illustration of the pattern
@@ -365,13 +381,11 @@ def main() -> int:
             stats["patterns_chunked"] += len(chunked)
             for slug in set(u["say_now"]) | {x["sentence"] for x in production}:
                 s = by_slug.get(slug)
-                regs = sent_register.get(s["id"], set()) if s else set()
-                marked = regs & MARKED_REGISTERS
                 register_seen["items"] += 1
-                if marked:
-                    for r in marked:
-                        register_seen[r] += 1
-                elif not regs or regs == {""}:
+                reg = (s or {}).get("register")
+                if reg:
+                    register_seen[reg] += 1
+                else:
                     register_seen["unrecorded"] += 1
             if not args.dry_run:
                 p.write_text(json.dumps(u, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -390,18 +404,16 @@ def main() -> int:
     if demoted:
         print(f"  patterns demoted to chunks (fewer than {DRILLS_PER_PATTERN} known-set examples): "
               f"{len(demoted)}")
-    # Register census over say_now + production. Reported, never filtered — deciding what to do about a
-    # marked-register phrase is an owner call (PENDING.md A8), and this is the number that call needs.
-    marked = {k: v for k, v in register_seen.items()
-              if k in MARKED_REGISTERS}
+    # W31. The A8 census, now over the real field. The zeros below are MEASURED ABSENCES, not
+    # "unrecordable": every say_now/production item carries a register or the filter kept it out.
+    marked = {k: v for k, v in register_seen.items() if k in MARKED_REGISTERS}
     print(f"  register census: {register_seen['items']} say_now/production items, "
-          + (", ".join(f"{k}={v}" for k, v in sorted(marked.items())) if marked
-             else "0 archaic/epistolary/vulgar")
-          + f"; {register_seen['unrecorded']} carry no register signal at all. NOTE: the corpus has no "
-            f"sentence-level `register` field — the only signal available is the register of the "
-            f"grammar points a sentence is tagged with, whose vocabulary is "
-            f"neutral/polite/casual/formal, so archaic, epistolary and vulgar are currently "
-            f"UNRECORDABLE rather than absent.")
+          + (", ".join(f"{k}={v}" for k, v in sorted(register_seen.items())
+                       if k not in ("items", "unrecorded")) or "none carrying a register")
+          + f"; {register_seen['unrecorded']} with no register at all"
+          + (f"; MARKED {marked} — a marked register reaching a unit means the filter was bypassed"
+             if marked else "; 0 archaic/epistolary/vulgar/dialect/slang (measured, not unrecordable)"))
+    print("  " + speak_filter.census())
     con.close()
     return 0
 

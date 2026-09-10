@@ -8,10 +8,10 @@
   },
   "say_now": [
     "sent:tatoeba-160972",
-    "sent:tatoeba-229628",
     "sent:tatoeba-229723",
     "sent:tatoeba-229742",
     "sent:tatoeba-229731",
+    "sent:tatoeba-229736",
     "sent:jec-0436"
   ],
   "chunk_phrases": [],
@@ -22,6 +22,7 @@
     "vocab:1577100",
     "vocab:1473740",
     "vocab:1342550",
+    "vocab:1078630",
     "vocab:1148520"
   ],
   "patterns": [
@@ -38,17 +39,59 @@
   ],
   "shadowing": [
     "sent:tatoeba-160972",
-    "sent:tatoeba-229628",
     "sent:tatoeba-229723",
     "sent:tatoeba-229742",
     "sent:tatoeba-229731",
+    "sent:tatoeba-229736",
     "sent:jec-0436"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 73,
+  "cumulative_known_vocab": 72,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n5:1506:144",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "キロ",
+        "始め",
+        "結構"
+      ]
+    },
+    {
+      "id": "cf:n5:2435:473",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "係",
+        "夜",
+        "車"
+      ]
+    },
+    {
+      "id": "kr:n4:758",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ふる",
+        "それ",
+        "くる"
+      ]
+    },
+    {
+      "id": "kr:n5:144",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "この",
+        "はい",
+        "あう"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-68",
     "gram:gp-3",
@@ -124,11 +167,11 @@
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
       "sent:jec-2434",
-      "sent:tatoeba-190094",
       "sent:tatoeba-2123447",
       "sent:tatoeba-137848",
       "sent:tatoeba-84094",
-      "sent:tatoeba-229460"
+      "sent:gen-1d921e8b2ad3",
+      "sent:tatoeba-229425"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -136,57 +179,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 43,
-    "fluency": 16
+    "meaning-input": 29,
+    "meaning-output": 7,
+    "language-focused": 50,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 16,
+    "language-focused": 21,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n5:4336:473",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "話",
-        "彼",
-        "番"
-      ]
-    },
-    {
-      "id": "cf:n5:1506:144",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "キロ",
-        "始め",
-        "結構"
-      ]
-    },
-    {
-      "id": "kr:n4:758",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ふる",
-        "それ",
-        "くる"
-      ]
-    },
-    {
-      "id": "kr:n5:144",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "この",
-        "あう",
-        "ふる"
-      ]
-    }
-  ]
+  }
 }

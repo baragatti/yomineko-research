@@ -133,6 +133,30 @@ auditor grepping for `R85` finds exactly one definition. They are enforced in
    ません — いくら…ても is a different word wearing the same spelling); 円 was tried and promoted the
    foreign exchange desk (ドルは円に対して下がった). The plain words stay in the seed lexicon, where
    frequency ranks them like anything else.
+10. **The content filter — register by rule, plus the owner's blocklist** (A8, W31;
+    `scripts/export/speak_filter.py`, shared by both builders so `say_now`, `production` and
+    `drills[].examples` cannot drift apart). A sentence may be put in a learner's mouth only when
+    `sentence.register` is `neutral`, `polite` or `casual` **and** it clears the blocklist. Out by
+    rule: `vulgar`, `slang`, `dialect` (content and variety — a learner drilling a Kansai final does
+    not know they are doing it, which is the harm), `archaic` and `epistolary` (心熱けれど肉体は弱し
+    and 拝啓 are not things anyone says), `formal` (`written-copula` is expository prose, `keigo` is
+    recognition material and R44 fixes model → recognition → production), `register IS NULL` (the
+    residue — this is why the field is nullable: a residue sentence defaulted to `neutral` would pass
+    silently), and rule `polite-request-nasai` (〜なさい, filed `polite` because D7 has no
+    `instructional` value, excluded here by the name of the rule rather than by a tenth enum value
+    that would cost every consumer).
+
+    The filter runs on the CANDIDATE POOL, never on finished units: a sentence the path may not teach
+    must never take a slot, so the slot goes to an admissible phrase instead of coming out short.
+    Measured when it landed: 250 of 5,889 bank sentences excluded (formal 102, residue 76, なさい 60,
+    archaic 6, slang 4, vulgar 1, dialect 1), 29 of 432 `say_now` phrases replaced, every one of the
+    72 units still full at 6.
+
+    `design/speak_blocklist.json` ships **EMPTY and stays the owner's** (A8: "I build the mechanism;
+    the list is yours"). Entries match by bank slug or by a substring of the Japanese, each with a
+    `why`; the mechanism works with the list empty and with the file absent. A whole CLASS of
+    sentences belongs in the register rules above, where it can be measured — the blocklist is for
+    the individual sentence a rule can never catch.
 
 ### 3a. Ranking the already-known material (`production`, `fluency`)
 

@@ -48,9 +48,56 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 542,
+  "cumulative_known_vocab": 538,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:583",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:583:2731",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "車",
+        "夜",
+        "父"
+      ]
+    },
+    {
+      "id": "cf:n3:4077:1369",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "遅れる",
+        "ピアノ",
+        "シャツ"
+      ]
+    },
+    {
+      "id": "kr:n4:1312",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "しょうご",
+        "だいがく",
+        "ほんとう"
+      ]
+    },
+    {
+      "id": "kr:n4:1348",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "とどける",
+        "もんだい",
+        "コーヒー"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-45"
   ],
@@ -150,8 +197,8 @@
     "prompt_pt": "Perguntaram sua opinião. Diga o que você acha e por quê.",
     "items": [
       "sent:jec-0517",
-      "sent:tatoeba-4827",
       "sent:tatoeba-89607",
+      "sent:tatoeba-74941",
       "sent:tatoeba-78366",
       "sent:tatoeba-151044",
       "sent:tatoeba-5348453"
@@ -162,62 +209,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:583",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:583:2731",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "車",
-        "夜",
-        "父"
-      ]
-    },
-    {
-      "id": "cf:n3:4077:1369",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "遅れる",
-        "ピアノ",
-        "シャツ"
-      ]
-    },
-    {
-      "id": "kr:n4:1185",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "なに",
-        "ため",
-        "もう"
-      ]
-    },
-    {
-      "id": "kr:n4:1219",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "つく",
-        "よぶ",
-        "とる"
-      ]
-    }
-  ]
+  }
 }

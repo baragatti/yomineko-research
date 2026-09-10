@@ -12,7 +12,7 @@
     "sent:tatoeba-124791",
     "sent:tatoeba-198112",
     "sent:tatoeba-4939",
-    "sent:tatoeba-222010"
+    "sent:tatoeba-10614509"
   ],
   "chunk_phrases": [],
   "untranslated": [],
@@ -21,8 +21,8 @@
     "vocab:1402540",
     "vocab:1340000",
     "vocab:1206900",
-    "vocab:1266440",
-    "vocab:1592970"
+    "vocab:1432920",
+    "vocab:1405790"
   ],
   "patterns": [
     "gram:tara-ii-desu-ka",
@@ -44,13 +44,65 @@
     "sent:tatoeba-124791",
     "sent:tatoeba-198112",
     "sent:tatoeba-4939",
-    "sent:tatoeba-222010"
+    "sent:tatoeba-10614509"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 197,
+  "cumulative_known_vocab": 196,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:260",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3598",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:3598:2713",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "二",
+        "人",
+        "事"
+      ]
+    },
+    {
+      "id": "cf:n4:5027:1226",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "出る",
+        "最中",
+        "続く"
+      ]
+    },
+    {
+      "id": "kr:n4:1083",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "ちかく",
+        "つづく"
+      ]
+    },
+    {
+      "id": "kr:n4:1207",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くるま",
+        "はじめ",
+        "はらう"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:gp-36",
     "gram:gp-70"
@@ -77,9 +129,9 @@
     {
       "pattern": "gram:masen-ka",
       "examples": [
-        "sent:gen-4595bdeb6907",
         "sent:gen-a94929c3a847",
-        "sent:tatoeba-172871"
+        "sent:tatoeba-172871",
+        "sent:gen-4595bdeb6907"
       ],
       "strand": "language-focused"
     },
@@ -156,62 +208,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "meaning-input": 26,
+    "meaning-output": 6,
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 26,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3598",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:3598:2713",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "二",
-        "人",
-        "事"
-      ]
-    },
-    {
-      "id": "cf:n4:5027:1226",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "出る",
-        "最中",
-        "無い"
-      ]
-    },
-    {
-      "id": "kr:n4:1226",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "しょくどう",
-        "ひるごはん",
-        "さいちゅう"
-      ]
-    },
-    {
-      "id": "kr:n5:151",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けっして",
-        "めいわく",
-        "おくれる"
-      ]
-    }
-  ]
+  }
 }

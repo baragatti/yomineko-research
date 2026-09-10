@@ -2,7 +2,7 @@
  "quick": {
   "known": {
    "corpus/grammar/INDEX.md": {
-    "rebuilt_sha256": "50a23144d98dcb07e212ed2a6fc48c9ccb387b37aee533042d12294b36c2aabd",
+    "rebuilt_sha256": "9103b70742cd5ce4c3383bb0190e4c3bb71bc4a3bbf04060c8960219a2bba281",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n3.json": {
@@ -10,25 +10,25 @@
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n4.json": {
-    "rebuilt_sha256": "6f97444deedc3cef4824b4ca7b914804ace7a2eaba20cec59b0f13daaef3b112",
+    "rebuilt_sha256": "16f8a5291a6e8f8eda82f959a47dc9bc10388b1a35e5b9259363dc14bdded842",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    },
    "corpus/grammar/n5.json": {
-    "rebuilt_sha256": "820c5871589fc5ee8dab28c4cd6eddd2ea8fcece75b071478d00c9b435cb963f",
+    "rebuilt_sha256": "a7c5a61dda899bf1cc92970b7b39b930b6848aa6f6c8a6d7653b3b0f7a7fd2bd",
     "cause": "the --quick subset deliberately stops short of the sentence bank, so three inputs to this file are absent by construction: the `families` back-pointers (families phase), gram:te-form (created by apply_punchlist) and the em-dash cleanup clean_emdash.py does inside replay_all. On top of that the whole `en` locale is missing, which is the real defect: it comes from the translation pipeline under research/derived/tr/, and .gitignore excludes that tree"
    }
   },
-  "recorded_at": "2026-09-09"
+  "recorded_at": "2026-09-10"
  },
  "_why": "Files the rebuild does not reproduce byte-for-byte yet, per mode, each pinned to the bytes the rebuild currently produces. An entry may be deleted when the file starts matching; adding one needs a written cause. Each cause starts with a key from _causes — the diagnosis — followed by the measured difference for that file; a re-record keeps the cause an entry already carries, so those keys survive.",
  "full": {
   "known": {
    "corpus/INDEX.md": {
-    "rebuilt_sha256": "f8e495af6b50d4d9e42ceb903d858f128ccce44a3b0bceed93a4bbaa6abc45ce",
+    "rebuilt_sha256": "2699856975ee903b2ec469c036e9ec088437015b78cbc4d65a14c2ca3b2a74f0",
     "cause": "rollup — rebuilt 648 bytes vs committed 788; first difference at byte 558"
    },
    "corpus/families/INDEX.md": {
-    "rebuilt_sha256": "7d19c1e11fe87fbddb2e9395192ffc88a9c3e25183fb2efd9f6a856d7a37ee41",
+    "rebuilt_sha256": "56035ee819962cff417a0f98660c0bc81dc866d850ba084b84e00a28092124e4",
     "cause": "rollup — rebuilt 27,399 bytes vs committed 29,591; first difference at byte 236"
    },
    "corpus/families/families.json": {
@@ -40,7 +40,7 @@
     "cause": "rebuilt 4 bytes vs committed 2,400; first difference at byte 1"
    },
    "corpus/grammar/INDEX.md": {
-    "rebuilt_sha256": "bd46ab752edad384c7de07c263a4a669119c1be1869afe910add2a0704b44d4e",
+    "rebuilt_sha256": "a49601678469aa04103151dede682527a870815dac70983168f33a128a3bdae5",
     "cause": "rollup — rebuilt 23,840 bytes vs committed 24,329; first difference at byte 6,314"
    },
    "corpus/grammar/n3.json": {
@@ -48,15 +48,15 @@
     "cause": "tr-untracked — rebuilt 232,136 bytes vs committed 490,685; first difference at byte 20"
    },
    "corpus/grammar/n4.json": {
-    "rebuilt_sha256": "baf944c6699bbc5147e07fc096cabf0db6494f3297757dd32714be0ee534501f",
+    "rebuilt_sha256": "d4b3ee70753f190fbd579511a0b6bcbde10279a4d0f45b6b762cc97d97476984",
     "cause": "tr-untracked — rebuilt 698,709 bytes vs committed 990,712; first difference at byte 139"
    },
    "corpus/grammar/n5.json": {
-    "rebuilt_sha256": "474fef94b643616c3980d0ac07b66d4f38a6c9f19a0a2d4c68b408c4244f33ff",
+    "rebuilt_sha256": "fc38e9422cbfa8edecd0d6230c9b951e2f1dee33c54805a5293318a9399b0200",
     "cause": "tr-untracked — rebuilt 446,846 bytes vs committed 649,801; first difference at byte 204"
    },
    "corpus/kanji/INDEX.md": {
-    "rebuilt_sha256": "062b71615977ae0ba09379cc9c7bb7d6a74aceed6a5cca6b6271f26d5f5bc42e",
+    "rebuilt_sha256": "8b7df04cf9a6a3e8337c278cd22f87a999845e6a6d839701a72c0a509155dfa1",
     "cause": "rollup — rebuilt 100,740 bytes vs committed 102,239; first difference at byte 310"
    },
    "corpus/kanji/n1.json": {
@@ -88,15 +88,15 @@
     "cause": "readings-accumulated — rebuilt 482,072 bytes vs committed 869,964; first difference at byte 106"
    },
    "corpus/sentences/INDEX.md": {
-    "rebuilt_sha256": "29b4b3558074026c3f6e1a8401ef3eff45b75948eff24f9a8d122c53cee8a2a7",
+    "rebuilt_sha256": "8593268c51b76343a49f7bc3a0d4feada63014e66e4c0435740ed2b97fbfc8ae",
     "cause": "rollup — rebuilt 665,760 bytes vs committed 664,136; first difference at byte 424"
    },
    "corpus/sentences/bank.json": {
-    "rebuilt_sha256": "b80208bff5177513c44a25eb417abc419d7dd5c64163cc93fb02567d2a692d80",
+    "rebuilt_sha256": "76e7daf9474d76e406b6aaaca7ff585f627f272e039df2922034433a9dcb52b8",
     "cause": "tr-untracked — rebuilt 42,846,536 bytes vs committed 50,999,856; first difference at byte 267"
    },
    "corpus/vocab/INDEX.md": {
-    "rebuilt_sha256": "d82f78df869656e51da55a9c6b7c9a2f563cba1597f2d90a1ada614b8b091a43",
+    "rebuilt_sha256": "d8011b031533f5603d85e00ac44066adfad2a4d0e0e9bc6fa54061d4dc633e57",
     "cause": "rollup — rebuilt 416,879 bytes vs committed 422,378; first difference at byte 281"
    },
    "corpus/vocab/n1.json": {
@@ -120,15 +120,15 @@
     "cause": "reauthor-untracked — rebuilt 1,724,100 bytes vs committed 1,184,741; first difference at byte 956"
    },
    "course/INDEX.md": {
-    "rebuilt_sha256": "fb00ff3b4b3c69cfb8dc384e859dc651524964af239d9b739c65517a9aff35e2",
+    "rebuilt_sha256": "380e899818c458980e41a3b569a6e085279e4dacec8eca689444c99a99b45e29",
     "cause": "rollup — rebuilt 537 bytes vs committed 549; first difference at byte 365"
    },
    "course/manifest.json": {
-    "rebuilt_sha256": "4713ddaad87572e9c6b53a17059430ebfd23c8594b50605bb54a003be6259f22",
+    "rebuilt_sha256": "f60f842149a3f14ff7f145109e1cd02b26de93e5de5c1ed20ed3a75bbbd6ff47",
     "cause": "rollup — rebuilt 1,026 bytes vs committed 1,043; first difference at byte 191"
    },
    "course/n3/INDEX.md": {
-    "rebuilt_sha256": "d15d7069b11937b046c812249af12d2ebc3969174b38380af48637336910943d",
+    "rebuilt_sha256": "9bbbe8550f5ebeccc38b4e5dab3992d6c572732023f935aa4348cefb3d3110d8",
     "cause": "rollup — rebuilt 8,053 bytes vs committed 8,052; first difference at byte 22"
    },
    "course/n3/course.json": {
@@ -644,7 +644,7 @@
     "cause": "course-identity — rebuilt 104,114 bytes vs committed 104,138; first difference at byte 5,453"
    },
    "course/n4/INDEX.md": {
-    "rebuilt_sha256": "ee18df795998fce88ce3c7923ec59c59a97d04893d332a05ad68fa19519fef85",
+    "rebuilt_sha256": "c87fb25eade1d5df507a460ea07c25febc54b59ebebf307669f9e61f3daaa985",
     "cause": "rollup — rebuilt 6,681 bytes vs committed 7,390; first difference at byte 21"
    },
    "course/n4/course.json": {
@@ -1632,7 +1632,7 @@
     "cause": "course-identity — rebuilt 23,187 bytes vs committed 5,073; first difference at byte 613"
    },
    "course/n5/INDEX.md": {
-    "rebuilt_sha256": "d315091a9ab875e909fa40df06230e178d7dc179eab6ecdf26740d7b4166d6e4",
+    "rebuilt_sha256": "c0b5ff184f8c5c4db6e2e2a557d866facea8cc626144a82ea885b4347e4cdad5",
     "cause": "rollup — rebuilt 4,922 bytes vs committed 5,772; first difference at byte 21"
    },
    "course/n5/course.json": {
@@ -2256,7 +2256,7 @@
     "cause": "rollup — rebuilt 257,207 bytes vs committed 248,364; first difference at byte 89"
    },
    "course/pre-n5/INDEX.md": {
-    "rebuilt_sha256": "aa519e1ecb49be093ad2e7c68aeb8ecc560efd8011bc68e346f46557daeb79b3",
+    "rebuilt_sha256": "c4f79982cb775a6e45de470c70b3e4e7eeaa93a6646b6cc0a8d6081e225aef8d",
     "cause": "rollup — rebuilt 1,212 bytes vs committed 1,502; first difference at byte 20"
    },
    "course/pre-n5/course.json": {
@@ -2292,11 +2292,11 @@
     "cause": "course-identity — rebuilt 3,868 bytes vs committed 3,906; first difference at byte 100"
    },
    "course/vocab_disambiguation_review.json": {
-    "rebuilt_sha256": "7a9706e3050ada3eab29912c95fe092cf65a108b649fb4cdcf731642d511460f",
+    "rebuilt_sha256": "850091e8aaa86e8f38f4bd42d722c42e0db6479643efffba93d44c6aa4c000c3",
     "cause": "rollup — rebuilt 18,835 bytes vs committed 9,919; first difference at byte 516"
    }
   },
-  "recorded_at": "2026-09-09"
+  "recorded_at": "2026-09-10"
  },
  "_causes": {
   "reauthor-untracked": "The two license re-authoring steps (manifest 28 reauthor_kanji_apply.py, 29 reauthor_vocab_apply.py) replace the verbatim KANJIDIC2 / JMdict text with our own authored glosses. Their inputs live under research/derived/reauthor/, which .gitignore excludes, so a rebuild ships the upstream dictionary wording and the committed export ships the authored wording: senses, their pos/misc/field/register and both locales of every gloss differ. Run against a checkout that has those trees, both steps apply cleanly (2,131 kanji, 2,678 vocab).",

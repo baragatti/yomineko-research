@@ -1373,6 +1373,93 @@ def handle_card_production_keys(rows, sents, gram, table):
     return out
 
 
+def handle_grammar_register(rows, sents, gram, table):
+    """W31. A grammar point's `register` is the register its OWN FORMS impose.
+
+    The row carries `new` (the published list) and `new_scalar` (the column the speak builders still
+    read). Only the list reaches the export — `export_corpus.py` prefers `register_json` and falls
+    back to the scalar — so the list is what is asserted here, exactly and in order: the value set is
+    a small closed vocabulary and a reordering can only come from a different writer.
+
+    A point merged away (W08, owner decision A3) is RETIRED through the published redirect, the same
+    contract every other grammar handler uses: the redirect must resolve against this export or the
+    row fails.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        key = r["key"]
+        addr = f"{table} row {i}: {key} / register"
+        gate = retired_gate(key, gram, addr)
+        if gate:
+            out.append(gate)
+            continue
+        rec = gram.get(key)
+        if rec is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no grammar point {key!r} in the export"))
+            continue
+        got = rec.get("register")
+        if got is None:
+            out.append(("fail", C_NO_FIELD, addr, "the exported record carries no `register`"))
+            continue
+        if list(got) != list(r["new"]):
+            cls = C_NOT_APPLIED if list(got) == list(r["old"]) else C_VALUE_MISMATCH
+            out.append(("fail", cls, addr,
+                        f"register is {got!r}, the row's `new` is {r['new']!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
+def handle_sentence_register(rows, sents, gram, table):
+    """W31 (A8 / D7). Every sentence's published `register` and `register_rule` are the row's.
+
+    TWO KEY KINDS, and the difference is the whole point of the handler. A row with
+    `set == "bank"` names a bank slug and must be applied. A row with `set == "w13"` names a
+    sentence the bank does not carry yet (`tatoeba-<id>` / `gen-<sha1>`), and its slug-to-be is
+    `sent:` + the key — the hash scheme `scripts/ingest/prepare_generated.py` already uses.
+
+    A W13 row is a MARKED SKIP, and like every marking in this validator it is an assertion rather
+    than an excuse: the key must be W13-shaped (a bank slug can never quietly skip), and the moment
+    that slug appears in the export it stops being deferred and is asserted like any other row. So
+    the day the W13 ingest lands, a sentence that arrives without this table's value FAILS here —
+    which is exactly how W13 is made to read the table instead of re-deriving a value of its own.
+
+    `register` may legitimately be null (rule `no-signal`); null is compared as null and is never
+    treated as "absent", because rounding residue up to `neutral` is the failure the field exists
+    to prevent.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        key = r["key"]
+        addr = f"{table} row {i}: {key} / register"
+        rec = sents.get(key) or (sents.get("sent:" + key) if not key.startswith("sent:") else None)
+        if rec is None:
+            if r.get("set") == "w13" and not key.startswith("sent:"):
+                out.append(("skip", "", addr,
+                            f"deferred: {key!r} is a W13 row and `sent:{key}` is not in the bank "
+                            f"yet; the W13 ingest reads this table for the value. The moment that "
+                            f"slug exists this row is asserted like any other"))
+            else:
+                out.append(("fail", C_NO_RECORD, addr,
+                            f"no sentence {key!r} in the export, and the row is not a deferrable "
+                            f"W13 row (set={r.get('set')!r})"))
+            continue
+        if "register" not in rec or "register_rule" not in rec:
+            out.append(("fail", C_NO_FIELD, addr,
+                        "the exported sentence carries no register/register_rule field"))
+            continue
+        if rec["register"] != r["register"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"register is {rec['register']!r}, the row's is {r['register']!r}"))
+            continue
+        if rec["register_rule"] != r["rule"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"register_rule is {rec['register_rule']!r}, the row's is {r['rule']!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
     "lesson_ref_addresses.json": handle_lesson_ref_addresses,
@@ -1389,6 +1476,8 @@ REGISTRY = {
     "reading_passages.json": handle_reading_passages,
     "practice_kanji_exercises.json": handle_practice_exercises,
     "card_production_keys.json": handle_card_production_keys,
+    "grammar_register.json": handle_grammar_register,
+    "sentence_register.json": handle_sentence_register,
 }
 
 

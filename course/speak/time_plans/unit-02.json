@@ -7,79 +7,146 @@
     "pt-BR": "Quando, que horas, combinar, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-80460",
-    "sent:tatoeba-80452",
-    "sent:tatoeba-80474",
-    "sent:tatoeba-2684823",
-    "sent:tatoeba-80338",
-    "sent:tatoeba-80668"
+    "sent:tatoeba-234998",
+    "sent:tatoeba-79849",
+    "sent:tatoeba-10014826",
+    "sent:tatoeba-152614",
+    "sent:tatoeba-78591",
+    "sent:tatoeba-118653"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1171900",
-    "vocab:1003430"
+    "vocab:1255430",
+    "vocab:1307550",
+    "vocab:1310730",
+    "vocab:1294940",
+    "vocab:1316380",
+    "vocab:1554370"
   ],
   "patterns": [
     "gram:kamo-shirenai",
-    "gram:ka-shira",
-    "gram:darou"
+    "gram:mashou",
+    "gram:gp-142"
   ],
   "kanji_recognition": [
-    "雨",
+    "月",
+    "今",
     "日",
-    "明",
-    "家",
-    "降"
+    "始",
+    "題",
+    "問"
   ],
   "shadowing": [
-    "sent:tatoeba-80460",
-    "sent:tatoeba-80452",
-    "sent:tatoeba-80474",
-    "sent:tatoeba-2684823",
-    "sent:tatoeba-80338",
-    "sent:tatoeba-80668"
+    "sent:tatoeba-234998",
+    "sent:tatoeba-79849",
+    "sent:tatoeba-10014826",
+    "sent:tatoeba-152614",
+    "sent:tatoeba-78591",
+    "sent:tatoeba-118653"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 334,
+  "cumulative_known_vocab": 337,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n5:5462",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:4791:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "初めて",
+        "小さな",
+        "泊まる"
+      ]
+    },
+    {
+      "id": "cf:n4:4792:902",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "建てる",
+        "泊まる",
+        "覚える"
+      ]
+    },
+    {
+      "id": "kr:n5:162",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こと",
+        "はは",
+        "かず"
+      ]
+    },
+    {
+      "id": "kr:n5:268",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "みず",
+        "しぬ",
+        "あさ"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:n3-ba-noni",
-    "gram:kitto",
-    "gram:gp-120"
+    "gram:n3-ni-shite-wa",
+    "gram:gp-91",
+    "gram:hajimeru"
   ],
   "drills": [
     {
       "pattern": "gram:kamo-shirenai",
       "examples": [
+        "sent:tatoeba-2684823",
         "sent:tatoeba-218082",
-        "sent:tatoeba-188036",
-        "sent:tatoeba-152614"
+        "sent:tatoeba-188036"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ka-shira",
+      "pattern": "gram:mashou",
       "examples": [
-        "sent:tatoeba-11510681",
-        "sent:tatoeba-12296518",
-        "sent:tatoeba-11162294"
+        "sent:tatoeba-139208",
+        "sent:tatoeba-173392",
+        "sent:tatoeba-198378"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:darou",
+      "pattern": "gram:gp-142",
       "examples": [
-        "sent:tatoeba-84837",
-        "sent:tatoeba-81544",
-        "sent:tatoeba-85312"
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt_pt": "Será que amanhã vai chover?",
+      "answer_key": "明日は雨かしら。",
+      "accepted_variants": [
+        "あすはあめかしら",
+        "あすはあめかしら。",
+        "あすわあめかしら",
+        "あすわあめかしら。",
+        "明日は雨かしら",
+        "明日は雨かしら。"
+      ],
+      "sentence": "sent:tatoeba-80460",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt_pt": "Amanhã preciso me encontrar com você sobre isso.",
       "answer_key": "明日このことについてお目にかからなくてはと思います。",
@@ -107,21 +174,6 @@
       "sentence": "sent:tatoeba-78588",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt_pt": "Quando eu estava estudando matemática por cerca de uma hora, fiquei com sono.",
-      "answer_key": "数学を１時間ほど勉強していたら、眠くなった。",
-      "accepted_variants": [
-        "すうがくをいちじかんほどべんきょうしていたら、ねむくなった",
-        "すうがくをいちじかんほどべんきょうしていたら、ねむくなった。",
-        "数学を1時間ほど勉強していたら、眠くなった",
-        "数学を1時間ほど勉強していたら、眠くなった。",
-        "数学を１時間ほど勉強していたら、眠くなった",
-        "数学を１時間ほど勉強していたら、眠くなった。"
-      ],
-      "sentence": "sent:tatoeba-143547",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -140,57 +192,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 35,
-    "meaning-output": 9,
-    "language-focused": 38,
-    "fluency": 18
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 13,
+    "language-focused": 23,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n4:3854:811",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "物",
-        "度",
-        "一"
-      ]
-    },
-    {
-      "id": "cf:n5:3047:36",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "所",
-        "日",
-        "女"
-      ]
-    },
-    {
-      "id": "kr:n4:1101",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "やすむ",
-        "やっと",
-        "はなし"
-      ]
-    },
-    {
-      "id": "kr:n5:36",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "かた",
-        "いつ",
-        "あう"
-      ]
-    }
-  ]
+  }
 }

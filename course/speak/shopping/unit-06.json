@@ -47,9 +47,61 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 91,
+  "cumulative_known_vocab": 90,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n4:3369",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3495",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3369:846",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "間",
+        "時",
+        "何"
+      ]
+    },
+    {
+      "id": "cf:n4:3522:846",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "年",
+        "私",
+        "丈"
+      ]
+    },
+    {
+      "id": "kr:n4:740",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "けっして",
+        "どんどん",
+        "ワープロ"
+      ]
+    },
+    {
+      "id": "kr:n4:846",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "たかい",
+        "おれい",
+        "あした"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:nakereba-naranai",
     "gram:n3-n-datte",
@@ -112,12 +164,12 @@
   "fluency": {
     "prompt_pt": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra.",
     "items": [
-      "sent:tatoeba-3488181",
-      "sent:tatoeba-8687007",
-      "sent:tatoeba-205771",
       "sent:tatoeba-229178",
+      "sent:tatoeba-229742",
       "sent:tatoeba-229723",
-      "sent:tatoeba-229628"
+      "sent:tatoeba-160972",
+      "sent:tatoeba-233659",
+      "sent:tatoeba-2123447"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -125,67 +177,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 32,
-    "meaning-output": 8,
-    "language-focused": 43,
-    "fluency": 16
+    "meaning-input": 28,
+    "meaning-output": 7,
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 16,
+    "language-focused": 22,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3369",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n4:3495",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3369:846",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "間",
-        "時",
-        "何"
-      ]
-    },
-    {
-      "id": "cf:n4:3522:846",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "年",
-        "私",
-        "家"
-      ]
-    },
-    {
-      "id": "kr:n4:740",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "けっして",
-        "どんどん",
-        "ワープロ"
-      ]
-    },
-    {
-      "id": "kr:n4:846",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たかい",
-        "おれい",
-        "あした"
-      ]
-    }
-  ]
+  }
 }

@@ -7,70 +7,102 @@
     "pt-BR": "Comer e beber fora, parte 6"
   },
   "say_now": [
-    "sent:tatoeba-191220",
     "sent:tatoeba-147790",
     "sent:tatoeba-201917",
     "sent:tatoeba-162347",
     "sent:tatoeba-231327",
-    "sent:jec-2741"
+    "sent:jec-2741",
+    "sent:tatoeba-197915"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1432920",
     "vocab:1598550",
     "vocab:1203250",
     "vocab:1579080",
     "vocab:1275640",
+    "vocab:1355850",
     "vocab:1175570",
     "vocab:1257240",
     "vocab:1172660",
     "vocab:2019640",
-    "vocab:1155060",
-    "vocab:1421900",
+    "vocab:1333550",
     "vocab:1006830"
   ],
   "patterns": [
-    "gram:itashimasu",
     "gram:gp-62",
-    "gram:gp-32"
+    "gram:gp-32",
+    "gram:nara"
   ],
   "kanji_recognition": [
-    "以",
-    "下",
-    "注",
-    "通",
-    "文",
-    "出"
+    "出",
+    "食",
+    "前",
+    "外",
+    "中",
+    "嫌"
   ],
   "shadowing": [
-    "sent:tatoeba-191220",
     "sent:tatoeba-147790",
     "sent:tatoeba-201917",
     "sent:tatoeba-162347",
     "sent:tatoeba-231327",
-    "sent:jec-2741"
+    "sent:jec-2741",
+    "sent:tatoeba-197915"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 155,
+  "cumulative_known_vocab": 153,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n4:428:923",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "一番",
+        "此れ",
+        "知る"
+      ]
+    },
+    {
+      "id": "cf:n4:2062:923",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "無い",
+        "自分",
+        "殆ど"
+      ]
+    },
+    {
+      "id": "kr:n4:1308",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こんばん",
+        "おしえる",
+        "やくそく"
+      ]
+    },
+    {
+      "id": "kr:n5:203",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "かかり",
+        "ねだん",
+        "ながい"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:nakute-wa-naranai",
     "gram:no-naka-de",
     "gram:n3-kake"
   ],
   "drills": [
-    {
-      "pattern": "gram:itashimasu",
-      "examples": [
-        "sent:tatoeba-10982402",
-        "sent:tatoeba-126195",
-        "sent:tatoeba-9226991"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-62",
       "examples": [
@@ -86,6 +118,15 @@
         "sent:tatoeba-4714",
         "sent:tatoeba-85319",
         "sent:tatoeba-83696"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nara",
+      "examples": [
+        "sent:tatoeba-80586",
+        "sent:tatoeba-80337",
+        "sent:tatoeba-233819"
       ],
       "strand": "language-focused"
     }
@@ -139,9 +180,9 @@
       "sent:tatoeba-8775094",
       "sent:tatoeba-202470",
       "sent:tatoeba-10617667",
-      "sent:tatoeba-10657609",
-      "sent:tatoeba-226845",
-      "sent:tatoeba-226844"
+      "sent:tatoeba-1115376",
+      "sent:tatoeba-9240812",
+      "sent:jec-1593"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -149,62 +190,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 24,
+    "language-focused": 27,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:207",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2778:92",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "彼",
-        "何",
-        "私"
-      ]
-    },
-    {
-      "id": "cf:n5:3370:214",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "外",
-        "話",
-        "係"
-      ]
-    },
-    {
-      "id": "kr:n4:1083",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "たかい",
-        "よやく",
-        "ねがう"
-      ]
-    },
-    {
-      "id": "kr:n4:796",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はなし",
-        "ほしい",
-        "できる"
-      ]
-    }
-  ]
+  }
 }

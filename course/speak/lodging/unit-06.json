@@ -7,50 +7,92 @@
     "pt-BR": "Dormir e resolver problemas, parte 6"
   },
   "say_now": [
+    "sent:tatoeba-78967",
     "sent:tatoeba-77233",
     "sent:tatoeba-212614",
     "sent:tatoeba-78961",
     "sent:tatoeba-81665",
-    "sent:tatoeba-78968",
-    "sent:tatoeba-74574"
+    "sent:tatoeba-78968"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1511040",
     "vocab:1585310",
     "vocab:1115150",
     "vocab:1482290",
     "vocab:1612620",
-    "vocab:1326790",
-    "vocab:1575480"
+    "vocab:1326790"
   ],
   "patterns": [
     "gram:te-kudasai",
-    "gram:nikui",
+    "gram:gp-61",
     "gram:gp-12",
-    "gram:da-desu"
+    "gram:gp-17"
   ],
   "kanji_recognition": [
-    "時",
-    "半",
+    "更",
+    "変",
     "約",
     "予",
-    "六",
-    "等"
+    "時",
+    "半"
   ],
   "shadowing": [
+    "sent:tatoeba-78967",
     "sent:tatoeba-77233",
     "sent:tatoeba-212614",
     "sent:tatoeba-78961",
     "sent:tatoeba-81665",
-    "sent:tatoeba-78968",
-    "sent:tatoeba-74574"
+    "sent:tatoeba-78968"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 262,
+  "cumulative_known_vocab": 264,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "kr:n3:1381",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "ほとんど",
+        "すくない",
+        "まいにち"
+      ]
+    },
+    {
+      "id": "cf:n3:3572:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "何",
+        "線",
+        "頁"
+      ]
+    },
+    {
+      "id": "cf:n3:3585:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "事",
+        "物",
+        "誰"
+      ]
+    },
+    {
+      "id": "kr:n4:1226",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "しょくどう",
+        "ひるごはん",
+        "さいちゅう"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:te-ita",
     "gram:gp-121"
@@ -60,17 +102,17 @@
       "pattern": "gram:te-kudasai",
       "examples": [
         "sent:tatoeba-124708",
-        "sent:tatoeba-74723",
-        "sent:tatoeba-146189"
+        "sent:tatoeba-146189",
+        "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:nikui",
+      "pattern": "gram:gp-61",
       "examples": [
-        "sent:tatoeba-9458223",
-        "sent:tatoeba-10006818",
-        "sent:tatoeba-10094172"
+        "sent:tatoeba-164952",
+        "sent:tatoeba-182128",
+        "sent:tatoeba-148953"
       ],
       "strand": "language-focused"
     },
@@ -79,31 +121,33 @@
       "examples": [
         "sent:tatoeba-84959",
         "sent:tatoeba-78451",
-        "sent:tatoeba-97605"
+        "sent:tatoeba-11960481"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:da-desu",
+      "pattern": "gram:gp-17",
       "examples": [
-        "sent:tatoeba-5332",
-        "sent:tatoeba-75192",
-        "sent:tatoeba-5057"
+        "sent:tatoeba-124633",
+        "sent:tatoeba-172639",
+        "sent:tatoeba-144227"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Gostaria de alterar a minha reserva.",
-      "answer_key": "予約を変更したいのですが。",
+      "prompt_pt": "Tive que adiar em três dias a reserva do hotel em Roma.",
+      "answer_key": "ローマのホテルの予約を、３日ずらさなければならなくなった。",
       "accepted_variants": [
-        "よやくをへんこうしたいのですが",
-        "よやくをへんこうしたいのですが。",
-        "予約を変更したいのですが",
-        "予約を変更したいのですが。"
+        "ろーまのほてるのよやくを、みっかずらさなければならなくなった",
+        "ろーまのほてるのよやくを、みっかずらさなければならなくなった。",
+        "ローマのホテルの予約を、3日ずらさなければならなくなった",
+        "ローマのホテルの予約を、3日ずらさなければならなくなった。",
+        "ローマのホテルの予約を、３日ずらさなければならなくなった",
+        "ローマのホテルの予約を、３日ずらさなければならなくなった。"
       ],
-      "sentence": "sent:tatoeba-78967",
+      "sentence": "sent:tatoeba-76366",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -152,57 +196,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "language-focused": 53,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 24,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "kr:n3:1381",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "ほとんど",
-        "すくない",
-        "まいにち"
-      ]
-    },
-    {
-      "id": "cf:n3:3572:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "何",
-        "線",
-        "頁"
-      ]
-    },
-    {
-      "id": "cf:n3:3585:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "事",
-        "鼾",
-        "物"
-      ]
-    },
-    {
-      "id": "kr:n4:1240",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "しょくどう",
-        "あたらしい",
-        "さいちゅう"
-      ]
-    }
-  ]
+  }
 }

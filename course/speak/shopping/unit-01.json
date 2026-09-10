@@ -50,9 +50,61 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 56,
+  "cumulative_known_vocab": 54,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:520",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:564",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:3049:805",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "知る",
+        "見る",
+        "はい"
+      ]
+    },
+    {
+      "id": "cf:n4:3622:805",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "此れ",
+        "何時",
+        "長い"
+      ]
+    },
+    {
+      "id": "kr:n4:1287",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いくら",
+        "じかん",
+        "できる"
+      ]
+    },
+    {
+      "id": "kr:n4:805",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あまり",
+        "いくら",
+        "わたし"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-kesshite-nai",
     "gram:gp-3"
@@ -81,7 +133,7 @@
       "examples": [
         "sent:tatoeba-5057",
         "sent:tatoeba-74498",
-        "sent:tatoeba-75188"
+        "sent:tatoeba-4708"
       ],
       "strand": "language-focused"
     },
@@ -119,14 +171,13 @@
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Muito obrigado por aquele dia.",
-      "answer_key": "この間は本当にありがとう",
+      "prompt_pt": "Muito obrigado mesmo.",
+      "answer_key": "本当にありがとうございます",
       "accepted_variants": [
-        "このあいだはほんとうにありがとう",
-        "このあいだわほんとうにありがとう",
-        "この間は本当にありがとう"
+        "ほんとうにありがとうございます",
+        "本当にありがとうございます"
       ],
-      "sentence": "sent:gen-1d921e8b2ad3",
+      "sentence": "sent:gen-a5ee7b945644",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -134,12 +185,12 @@
   "fluency": {
     "prompt_pt": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar.",
     "items": [
-      "sent:tatoeba-335372",
+      "sent:gen-1d921e8b2ad3",
+      "sent:tatoeba-198378",
+      "sent:tatoeba-4971",
+      "sent:tatoeba-1532832",
       "sent:tatoeba-373351",
-      "sent:tatoeba-1598216",
-      "sent:tatoeba-229460",
-      "sent:tatoeba-229425",
-      "sent:tatoeba-1874351"
+      "sent:tatoeba-229425"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -147,67 +198,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 57,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 28,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:520",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:564",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3049:805",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "知る",
-        "見る",
-        "幾ら"
-      ]
-    },
-    {
-      "id": "cf:n4:3622:805",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "半分",
-        "迷惑",
-        "此れ"
-      ]
-    },
-    {
-      "id": "kr:n4:1287",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いくら",
-        "じかん",
-        "できる"
-      ]
-    },
-    {
-      "id": "kr:n4:805",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あまり",
-        "いくら",
-        "わたし"
-      ]
-    }
-  ]
+  }
 }

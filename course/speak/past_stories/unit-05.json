@@ -7,9 +7,9 @@
     "pt-BR": "Contar o que aconteceu, parte 5"
   },
   "say_now": [
+    "sent:tatoeba-157573",
     "sent:tatoeba-84567",
     "sent:tatoeba-5217",
-    "sent:tatoeba-170105",
     "sent:tatoeba-159016",
     "sent:tatoeba-228002",
     "sent:tatoeba-792555"
@@ -17,54 +17,103 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1242350",
+    "vocab:1198880",
     "vocab:1465720",
     "vocab:1451490",
-    "vocab:1172870",
     "vocab:1463930",
     "vocab:1001140",
     "vocab:1039140"
   ],
   "patterns": [
-    "gram:nasai",
     "gram:gp-121",
     "gram:da-desu",
-    "gram:gp-14"
+    "gram:gp-14",
+    "gram:toki",
+    "gram:wa-yori-desu"
   ],
   "kanji_recognition": [
-    "院",
-    "昨",
-    "日",
-    "入",
-    "父",
-    "園"
+    "会",
+    "楽",
+    "近",
+    "私",
+    "所",
+    "人"
   ],
   "shadowing": [
+    "sent:tatoeba-157573",
     "sent:tatoeba-84567",
     "sent:tatoeba-5217",
-    "sent:tatoeba-170105",
     "sent:tatoeba-159016",
     "sent:tatoeba-228002",
     "sent:tatoeba-792555"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 441,
+  "cumulative_known_vocab": 444,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:841",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:463:1000",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "張る",
+        "返す",
+        "咖哩"
+      ]
+    },
+    {
+      "id": "cf:n4:3562:1290",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "急ぐ",
+        "彼女",
+        "強い"
+      ]
+    },
+    {
+      "id": "kr:n4:1000",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "しごと",
+        "おわる",
+        "ようい"
+      ]
+    },
+    {
+      "id": "kr:n4:1211",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こうがい",
+        "おくれる",
+        "たずねる"
+      ]
+    },
+    {
+      "id": "pp:n5:42",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "素晴らしい",
+        "パーティー",
+        "レストラン"
+      ]
+    }
+  ],
   "patterns_chunked": [
-    "gram:gp-19",
-    "gram:gp-9"
+    "gram:gp-19"
   ],
   "drills": [
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-78287",
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78855"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-121",
       "examples": [
@@ -91,24 +140,27 @@
         "sent:tatoeba-76735"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:toki",
+      "examples": [
+        "sent:gen-ff96cd61eb0b",
+        "sent:gen-18f49dd92c9f",
+        "sent:gen-ebd7d352d5d4"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:wa-yori-desu",
+      "examples": [
+        "sent:gen-bb02a0ac267e",
+        "sent:gen-e97b8aeb1456",
+        "sent:gen-90ed9f56e125"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Tive uma conversa agradável com meu vizinho.",
-      "answer_key": "私は近所の人と楽しい会話をしました。",
-      "accepted_variants": [
-        "わたしはきんじょのひととたのしいかいわをしました",
-        "わたしはきんじょのひととたのしいかいわをしました。",
-        "わたしわきんじょのひととたのしいかいわをしました",
-        "わたしわきんじょのひととたのしいかいわをしました。",
-        "私は近所の人と楽しい会話をしました",
-        "私は近所の人と楽しい会話をしました。"
-      ],
-      "sentence": "sent:tatoeba-157573",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "\"Qual gravata você vai escolher?\" \"A que comprei ontem.\"",
       "answer_key": "「ネクタイどれにするの？」「昨日買ったの」",
@@ -135,6 +187,19 @@
       "sentence": "sent:tatoeba-84089",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Por favor, tenha uma refeição maravilhosa.",
+      "answer_key": "すばらしい食事を経験下さい。",
+      "accepted_variants": [
+        "すばらしいしょくじをけいけんください",
+        "すばらしいしょくじをけいけんください。",
+        "すばらしい食事を経験下さい",
+        "すばらしい食事を経験下さい。"
+      ],
+      "sentence": "sent:tatoeba-214558",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -142,10 +207,10 @@
     "items": [
       "sent:tatoeba-147605",
       "sent:tatoeba-11706794",
-      "sent:tatoeba-214558",
       "sent:jec-0319",
       "sent:tatoeba-171398",
-      "sent:tatoeba-78158"
+      "sent:tatoeba-78158",
+      "sent:tatoeba-13537670"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -153,62 +218,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 29,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:841",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3562:1290",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "急ぐ",
-        "彼女",
-        "強い"
-      ]
-    },
-    {
-      "id": "kr:n4:727",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "だいじょうぶ",
-        "がいこくじん",
-        "どうぶつえん"
-      ]
-    },
-    {
-      "id": "cf:n3:5126:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "雪",
-        "口",
-        "心"
-      ]
-    },
-    {
-      "id": "kr:n4:1094",
-      "type": "kanji_reading",
-      "via": "review",
-      "distractors": [
-        "ど",
-        "め",
-        "は"
-      ]
-    }
-  ]
+  }
 }

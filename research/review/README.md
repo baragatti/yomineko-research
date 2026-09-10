@@ -136,7 +136,7 @@ python scripts/review_apply.py --sheet research/review/sheets/n5-grammar-01.json
 * As **aprovações e rejeições** entram em `research/derived/review_ledger.json`. O exportador carimba
   `review_status` só nos registros cujo parecer continua válido (o hash ainda bate); quando o texto
   muda depois, o parecer aparece como *desatualizado* e volta para a fila. Nada expira por tempo.
-* As **edições** viram uma tabela em `research/derived/repairs/pending/<sheet_id>.json`, com o texto
+* As **edições** viram uma tabela em `research/derived/pending/<sheet_id>.json`, com o texto
   antigo e o novo lado a lado. **Ela não é aplicada na hora**: aplicar mexe no banco e é outro passo,
   feito por quem cuida da base. O comando aparece impresso no final da execução.
 * Rodar a mesma ficha duas vezes não duplica nada.

@@ -7,8 +7,8 @@
     "pt-BR": "Dizer o que você acha, parte 5"
   },
   "say_now": [
+    "sent:tatoeba-75789",
     "sent:tatoeba-4827",
-    "sent:tatoeba-75666",
     "sent:jec-0517",
     "sent:tatoeba-80630",
     "sent:tatoeba-79047",
@@ -17,8 +17,8 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1349610",
     "vocab:1101570",
-    "vocab:1007720",
     "vocab:1262530",
     "vocab:1376470",
     "vocab:1542790",
@@ -28,22 +28,20 @@
   "patterns": [
     "gram:kamo-shirenai",
     "gram:hazu-da",
-    "gram:n3-hazu-da",
-    "gram:nasai",
-    "gram:gp-115",
-    "gram:gp-120"
+    "gram:deshou",
+    "gram:n3-hazu-da"
   ],
   "kanji_recognition": [
-    "何",
-    "私",
-    "役",
-    "立",
-    "説",
-    "明"
+    "向",
+    "仕",
+    "招",
+    "待",
+    "彼",
+    "何"
   ],
   "shadowing": [
+    "sent:tatoeba-75789",
     "sent:tatoeba-4827",
-    "sent:tatoeba-75666",
     "sent:jec-0517",
     "sent:tatoeba-80630",
     "sent:tatoeba-79047",
@@ -51,10 +49,55 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 537,
+  "cumulative_known_vocab": 533,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [],
+  "checkpoint": [
+    {
+      "id": "kr:n3:1398",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "つかれる",
+        "まいにち",
+        "やくそく"
+      ]
+    },
+    {
+      "id": "kr:n4:779",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "コーヒー",
+        "ニュース",
+        "ゆうがた"
+      ]
+    },
+    {
+      "id": "cf:n3:36:1571",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "昨日",
+        "気分",
+        "勉強"
+      ]
+    },
+    {
+      "id": "cf:n3:3991:1369",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "どうぞ",
+        "嬉しい",
+        "真っ暗"
+      ]
+    }
+  ],
+  "patterns_chunked": [
+    "gram:te-kureru",
+    "gram:gp-36"
+  ],
   "drills": [
     {
       "pattern": "gram:kamo-shirenai",
@@ -75,6 +118,15 @@
       "strand": "language-focused"
     },
     {
+      "pattern": "gram:deshou",
+      "examples": [
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:n3-hazu-da",
       "examples": [
         "sent:tatoeba-8579878",
@@ -82,51 +134,9 @@
         "sent:tatoeba-3552030"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:nasai",
-      "examples": [
-        "sent:tatoeba-78287",
-        "sent:tatoeba-79943",
-        "sent:tatoeba-78855"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-115",
-      "examples": [
-        "sent:gen-7506a021dd5b",
-        "sent:gen-4c4eb1f80410",
-        "sent:tatoeba-123138"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-120",
-      "examples": [
-        "sent:tatoeba-193408",
-        "sent:gen-40a736aa4ac8",
-        "sent:gen-5bccb5134f4a"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt_pt": "Ele provavelmente está dando um jeito de ser convidado.",
-      "answer_key": "彼は、たぶん、招待してくれるように仕向けているでしょう。",
-      "accepted_variants": [
-        "かれは、たぶん、しょうたいしてくれるようにしむけているでしょう",
-        "かれは、たぶん、しょうたいしてくれるようにしむけているでしょう。",
-        "かれわ、たぶん、しょうたいしてくれるようにしむけているでしょう",
-        "かれわ、たぶん、しょうたいしてくれるようにしむけているでしょう。",
-        "彼は、たぶん、招待してくれるように仕向けているでしょう",
-        "彼は、たぶん、招待してくれるように仕向けているでしょう。"
-      ],
-      "sentence": "sent:tatoeba-75789",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt_pt": "Não é que ela concordasse totalmente comigo.",
       "answer_key": "彼女は私とすっかり同意見だったわけではない。",
@@ -139,6 +149,21 @@
         "彼女は私とすっかり同意見だったわけではない。"
       ],
       "sentence": "sent:tatoeba-89607",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt_pt": "Pode ser que a culpa não seja do meu irmão mais novo, mas também não é minha.",
+      "answer_key": "末弟は悪くないかもしれない、けれど私も悪くない。",
+      "accepted_variants": [
+        "まっていはわるくないかもしれない、けれどわたしもわるくない",
+        "まっていはわるくないかもしれない、けれどわたしもわるくない。",
+        "まっていわわるくないかもしれない、けれどわたしもわるくない",
+        "まっていわわるくないかもしれない、けれどわたしもわるくない。",
+        "末弟は悪くないかもしれない、けれど私も悪くない",
+        "末弟は悪くないかもしれない、けれど私も悪くない。"
+      ],
+      "sentence": "sent:tatoeba-74941",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -182,47 +207,5 @@
     "meaning-output": 3,
     "language-focused": 25,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "kr:n3:1398",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "つかれる",
-        "まいにち",
-        "やくそく"
-      ]
-    },
-    {
-      "id": "kr:n4:779",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "コーヒー",
-        "ニュース",
-        "ゆうがた"
-      ]
-    },
-    {
-      "id": "cf:n3:36:1571",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "致す",
-        "昨日",
-        "気分"
-      ]
-    },
-    {
-      "id": "cf:n3:3991:1369",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "どうぞ",
-        "嬉しい",
-        "真っ暗"
-      ]
-    }
-  ]
+  }
 }

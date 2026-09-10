@@ -7,64 +7,112 @@
     "pt-BR": "Quando, que horas, combinar, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767",
     "sent:tatoeba-10303648",
-    "sent:tatoeba-190565"
+    "sent:tatoeba-190565",
+    "sent:tatoeba-123138",
+    "sent:tatoeba-190560",
+    "sent:tatoeba-11124523",
+    "sent:tatoeba-187165"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1386500",
-    "vocab:1542160",
-    "vocab:1373860",
-    "vocab:1236070",
     "vocab:1333500",
-    "vocab:1438690",
-    "vocab:1499720",
+    "vocab:1512130",
+    "vocab:1191420",
     "vocab:1155180",
-    "vocab:1457210"
+    "vocab:1457210",
+    "vocab:1436510"
   ],
   "patterns": [
-    "gram:gp-42",
+    "gram:gp-115",
     "gram:gp-70",
-    "gram:owaru"
+    "gram:rareru",
+    "gram:n3-hodo",
+    "gram:n3-made",
+    "gram:kai"
   ],
   "kanji_recognition": [
-    "新",
-    "雪",
-    "日",
-    "聞",
-    "明",
-    "外"
+    "会",
+    "間",
+    "週",
+    "以",
+    "届",
+    "内"
   ],
   "shadowing": [
-    "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767",
     "sent:tatoeba-10303648",
-    "sent:tatoeba-190565"
+    "sent:tatoeba-190565",
+    "sent:tatoeba-123138",
+    "sent:tatoeba-190560",
+    "sent:tatoeba-11124523",
+    "sent:tatoeba-187165"
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 357,
+  "cumulative_known_vocab": 358,
   "layer": "C",
   "needs_review": true,
-  "patterns_chunked": [
-    "gram:gp-110",
-    "gram:n3-ni-yoreba",
-    "gram:sou-da-1"
+  "checkpoint": [
+    {
+      "id": "so:n4:1002",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:3444",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:3595:307",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "キロ",
+        "静か",
+        "此の"
+      ]
+    },
+    {
+      "id": "kr:n4:944",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いくら",
+        "てごろ",
+        "おなじ"
+      ]
+    },
+    {
+      "id": "kr:n5:145",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "いぜん",
+        "さげる",
+        "あるく"
+      ]
+    },
+    {
+      "id": "cf:n3:4093:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "熱",
+        "箸",
+        "六"
+      ]
+    }
   ],
+  "patterns_chunked": [],
   "drills": [
     {
-      "pattern": "gram:gp-42",
+      "pattern": "gram:gp-115",
       "examples": [
-        "sent:tatoeba-227007",
-        "sent:tatoeba-994640",
-        "sent:tatoeba-229458"
+        "sent:gen-7506a021dd5b",
+        "sent:gen-4c4eb1f80410",
+        "sent:gen-b5467a55ded1"
       ],
       "strand": "language-focused"
     },
@@ -78,54 +126,85 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:owaru",
+      "pattern": "gram:rareru",
       "examples": [
-        "sent:tatoeba-228649",
-        "sent:tatoeba-8727067",
-        "sent:tatoeba-10206436"
+        "sent:tatoeba-192185",
+        "sent:tatoeba-195054",
+        "sent:tatoeba-188098"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-hodo",
+      "examples": [
+        "sent:tatoeba-79954",
+        "sent:tatoeba-107679",
+        "sent:tatoeba-137933"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-made",
+      "examples": [
+        "sent:tatoeba-82912",
+        "sent:tatoeba-77157",
+        "sent:tatoeba-79703"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:kai",
+      "examples": [
+        "sent:tatoeba-194168",
+        "sent:tatoeba-194166",
+        "sent:tatoeba-188171"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
     {
-      "prompt_pt": "Se você continua todos os dias, isso vira força.",
-      "answer_key": "毎日続けると力になる。",
+      "prompt_pt": "Hoje está ventando bastante, né?",
+      "answer_key": "今日はけっこう風が強いね。",
       "accepted_variants": [
-        "まいにちつづけるとちからになる",
-        "まいにちつづけるとちからになる。",
-        "毎日続けると力になる",
-        "毎日続けると力になる。"
+        "きょうはけっこうかぜがつよいね",
+        "きょうはけっこうかぜがつよいね。",
+        "きょうわけっこうかぜがつよいね",
+        "きょうわけっこうかぜがつよいね。",
+        "今日はけっこう風が強いね",
+        "今日はけっこう風が強いね。"
       ],
-      "sentence": "sent:tatoeba-11013726",
+      "sentence": "sent:tatoeba-536767",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Como caminhamos por muito tempo, ficamos exaustos.",
-      "answer_key": "長い時間歩いたので疲れきった。",
+      "prompt_pt": "Quando será que o mundo vai acabar?",
+      "answer_key": "世界はいつ終わるのだろうか。",
       "accepted_variants": [
-        "ながいじかんあるいたのでつかれきった",
-        "ながいじかんあるいたのでつかれきった。",
-        "長い時間歩いたので疲れきった",
-        "長い時間歩いたので疲れきった。"
+        "せかいはいつおわるのだろうか",
+        "せかいはいつおわるのだろうか。",
+        "せかいわいつおわるのだろうか",
+        "せかいわいつおわるのだろうか。",
+        "世界はいつ終わるのだろうか",
+        "世界はいつ終わるのだろうか。"
       ],
-      "sentence": "sent:tatoeba-125943",
+      "sentence": "sent:tatoeba-143418",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
-      "prompt_pt": "Esperei mais de duas horas.",
-      "answer_key": "私は二時間以上も待った。",
+      "prompt_pt": "Como hoje o tempo estava bom, brincamos todos juntos lá fora.",
+      "answer_key": "今日は天気がよかったのでみんなで外で遊んだ。",
       "accepted_variants": [
-        "わたしはにじかんいじょうもまった",
-        "わたしはにじかんいじょうもまった。",
-        "わたしわにじかんいじょうもまった",
-        "わたしわにじかんいじょうもまった。",
-        "私は二時間以上も待った",
-        "私は二時間以上も待った。"
+        "きょうはてんきがよかったのでみんなでそとであそんだ",
+        "きょうはてんきがよかったのでみんなでそとであそんだ。",
+        "きょうわてんきがよかったのでみんなでそとであそんだ",
+        "きょうわてんきがよかったのでみんなでそとであそんだ。",
+        "今日は天気がよかったのでみんなで外で遊んだ",
+        "今日は天気がよかったのでみんなで外で遊んだ。"
       ],
-      "sentence": "sent:tatoeba-154767",
+      "sentence": "sent:tatoeba-171539",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -133,12 +212,12 @@
   "fluency": {
     "prompt_pt": "Um amigo quer marcar alguma coisa. Combine dia e horário.",
     "items": [
+      "sent:tatoeba-154767",
       "sent:tatoeba-9777117",
-      "sent:tatoeba-171531",
-      "sent:tatoeba-1037362",
-      "sent:tatoeba-80068",
-      "sent:tatoeba-152614",
-      "sent:tatoeba-80474"
+      "sent:tatoeba-10014826",
+      "sent:tatoeba-79849",
+      "sent:tatoeba-80460",
+      "sent:tatoeba-78588"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -146,67 +225,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 30,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n4:3427",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n5:3595",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3427:859",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "明日",
-        "趣味",
-        "何時"
-      ]
-    },
-    {
-      "id": "cf:n5:3595:307",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "キロ",
-        "静か",
-        "此の"
-      ]
-    },
-    {
-      "id": "kr:n4:859",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あたま",
-        "おえる",
-        "わるい"
-      ]
-    },
-    {
-      "id": "kr:n4:944",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いくら",
-        "てごろ",
-        "おなじ"
-      ]
-    }
-  ]
+  }
 }

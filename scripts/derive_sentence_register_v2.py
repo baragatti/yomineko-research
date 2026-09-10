@@ -9,18 +9,37 @@ each sentence unit - never by a suffix string match.
 import sys, os, json, re, hashlib, argparse, datetime
 sys.stdout.reconfigure(encoding="utf-8")
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(ROOT, "scripts"))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(REPO, "scripts"))
 from derive_sentence_register import build_jmdict_map, DIALECT_TAGS  # JMdict misc map + cache
 
 from sudachipy import dictionary, tokenizer
 
-BANK = os.path.join(ROOT, "corpus", "sentences", "bank.json")
-ACCEPTED = os.path.join(ROOT, "research", "derived", "n3_mined", "accepted.json")
-GENERATED = os.path.join(ROOT, "research", "derived", "n3_mined", "generated.json")
-GRAMMAR_DIR = os.path.join(ROOT, "corpus", "grammar")
-FIRST = os.path.join(ROOT, "research", "derived", "pending", "sentence_register.json")
-OUT = os.path.join(ROOT, "research", "derived", "pending", "sentence_register_derived.json")
+# W31 apply. The tree being read is a PARAMETER, not this file's own location:
+# scripts/validate/validate_sentence_register.py re-derives on the tree it is validating, and a
+# plant proof copies the whole thing into a fixture. A validator left reading the real repo passes
+# falsely (memory: validator-plant-proof-root), so every input below hangs off ROOT and ROOT is set
+# by --root. The JMdict zip is the one exception: it is a licensed dataset, not corpus content, and
+# it is always read from the repo.
+ROOT = REPO
+BANK = ACCEPTED = GENERATED = GRAMMAR_DIR = FIRST = OUT = None
+
+
+def set_root(root):
+    """Point every input at `root`. Called once from main(), before anything is read."""
+    global ROOT, BANK, ACCEPTED, GENERATED, GRAMMAR_DIR, FIRST, OUT
+    ROOT = os.path.abspath(root)
+    BANK = os.path.join(ROOT, "corpus", "sentences", "bank.json")
+    ACCEPTED = os.path.join(ROOT, "research", "derived", "n3_mined", "accepted.json")
+    GENERATED = os.path.join(ROOT, "research", "derived", "n3_mined", "generated.json")
+    GRAMMAR_DIR = os.path.join(ROOT, "corpus", "grammar")
+    FIRST = os.path.join(ROOT, "research", "derived", "pending", "sentence_register.json")
+    # W31 apply: the table moved pending/ -> repairs/ the day it was applied. `pending` means
+    # "authored, not applied" (STATE aj) and the replay gate owns `repairs/`.
+    OUT = os.path.join(ROOT, "research", "derived", "repairs", "sentence_register.json")
+
+
+set_root(REPO)
 
 D7 = ("neutral", "polite", "casual", "formal", "vulgar", "archaic", "epistolary", "dialect", "slang")
 PRECEDENCE = ("epistolary", "archaic", "vulgar", "dialect", "slang", "formal", "polite", "casual", "neutral")
@@ -482,9 +501,21 @@ def main():
     import tempfile
     ap.add_argument("--jmdict-cache", default=os.path.join(
         tempfile.gettempdir(), "yomineko_jmdict_misc.json"))
+    ap.add_argument("--root", default=REPO,
+                    help="tree to derive FROM (corpus/sentences, corpus/grammar, "
+                         "research/derived/n3_mined) and write the table into")
+    ap.add_argument("--out", default=None, help="write the table here instead of <root>/" +
+                    "research/derived/repairs/sentence_register.json")
+    ap.add_argument("--skip-w13", action="store_true",
+                    help="derive the bank only; the W13 rows need research/derived/n3_mined, which "
+                         "a fixture tree need not carry")
+    ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
+    set_root(args.root)
+    out_path = args.out or OUT
 
-    print("loading JMdict misc map ...", flush=True)
+    if not args.quiet:
+        print("loading JMdict misc map ...", flush=True)
     jm = build_jmdict_map(args.jmdict_cache)
     gram_reg = load_grammar_registers()
     tok = dictionary.Dictionary(dict="full").create()
@@ -502,8 +533,10 @@ def main():
                         "grammar": list(s.get("grammar") or []), "vocab_ids": sorted(set(vids)),
                         "authored": None,
                         "source": (s.get("provenance", {}).get("jp_source") or "?").split(":")[0]})
-    acc = json.load(open(ACCEPTED, encoding="utf-8"))["rows"]
-    gen = json.load(open(GENERATED, encoding="utf-8"))["rows"]
+    acc, gen = [], []
+    if not args.skip_w13:
+        acc = json.load(open(ACCEPTED, encoding="utf-8"))["rows"]
+        gen = json.load(open(GENERATED, encoding="utf-8"))["rows"]
     for r in acc:
         tg = r.get("targets") or []
         rows_in.append({"key": "tatoeba-%s" % r["tatoeba_id"], "set": "w13", "jp": r["jp"],
@@ -517,11 +550,13 @@ def main():
                         "grammar": [t for t in tg if t.startswith("gram:")],
                         "vocab_ids": [t.split(":", 1)[1] for t in tg if t.startswith("vocab:")],
                         "authored": r.get("register"), "source": "ai-generated"})
-    print("rows: %d (bank %d / w13 %d)" % (len(rows_in), len(bank), len(acc) + len(gen)), flush=True)
+    if not args.quiet:
+        print("rows: %d (bank %d / w13 %d)" % (len(rows_in), len(bank), len(acc) + len(gen)),
+              flush=True)
 
     out_rows, residue, conflicts = [], [], []
     for n, r in enumerate(rows_in):
-        if n % 2000 == 0:
+        if n % 2000 == 0 and not args.quiet:
             print("  %d ..." % n, flush=True)
         jp = r["jp"]
         toks = [Tok(m) for m in tok.tokenize(jp, MODE)]
@@ -559,7 +594,8 @@ def main():
         for c in cfl:
             conflicts.append(dict(c, key=r["key"], jp=jp, derived=reg, rule=rule))
 
-    first = {x["slug"]: x["new"] for x in json.load(open(FIRST, encoding="utf-8"))}
+    first = ({x["slug"]: x["new"] for x in json.load(open(FIRST, encoding="utf-8"))}
+             if os.path.exists(FIRST) else {})
     same = diff = 0
     disagreements = []
     for row in out_rows:
@@ -579,6 +615,17 @@ def main():
     payload = {
         "unit": "W31",
         "phase": "derivation (A8 sentence register)",
+        "table": "sentence register — the value and the rule that decided it, per sentence",
+        "what_this_is": (
+            "The exact-match table behind sentence.register / sentence.register_rule. `rows` with "
+            "set == 'bank' address corpus/sentences/bank.json by slug and are APPLIED by "
+            "scripts/apply_sentence_register.py; `rows` with set == 'w13' address sentences that "
+            "are not in the bank yet (research/derived/n3_mined) and are DEFERRED to the W13 "
+            "ingest, which reads this table for the value rather than re-deriving one. Regenerate "
+            "with scripts/derive_sentence_register_v2.py; "
+            "scripts/validate/validate_sentence_register.py re-derives on every gate run and fails "
+            "on any stored value this table would no longer produce."),
+        "applied_by": "scripts/apply_sentence_register.py",
         "generated_at": datetime.datetime.now().isoformat(timespec="seconds"),
         "generator": "scripts-equivalent derivation, SudachiPy dict=full split mode C",
         "sources": {"bank": "corpus/sentences/bank.json",
@@ -600,8 +647,13 @@ def main():
         "residue": residue,
         "conflicts": conflicts,
     }
-    json.dump(payload, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print("wrote", OUT)
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=1)
+        fh.write("\n")
+    print("wrote", out_path)
+    if args.quiet:
+        return
 
     from collections import Counter
     print("register:", Counter(r["register"] for r in out_rows).most_common())

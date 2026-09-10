@@ -12,7 +12,7 @@ CASES
                      exact address list the view offers
   2  approve         one approval becomes one ledger entry, anchored to `live_anchor`
   3  idempotent      the same sheet twice adds nothing the second time
-  4  edit            an edit becomes a repair row under research/derived/repairs/pending/ carrying
+  4  edit            an edit becomes a repair row under research/derived/pending/ carrying
                      the EXACT current text as `old`, and nothing enters the ledger
   5  reject          a rejection is a ledger entry with status `rejected` and the reason as its note
   6  stale hash      a record rewritten under the teacher refuses the WHOLE sheet: exit 2, ledger
@@ -43,7 +43,7 @@ from review_ledger import live_anchor  # noqa: E402
 
 REVIEW_APPLY = REPO / "scripts" / "review_apply.py"
 LEDGER_REL = "research/derived/review_ledger.json"
-PENDING_REL = "research/derived/repairs/pending"
+PENDING_REL = "research/derived/pending"
 EMPTY_LEDGER = {"schema_version": "1.0",
                 "note": "fixture ledger for test_review_apply.py", "entries": []}
 

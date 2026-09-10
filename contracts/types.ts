@@ -521,6 +521,8 @@ export interface Sentence {
     tier: string;
     translation_confidence: number;
   };
+  register: "archaic" | "casual" | "dialect" | "epistolary" | "formal" | "neutral" | "polite" | "slang" | "vulgar" | null;
+  register_rule: "bungo-inflection" | "casual-marker" | "classical-final" | "dialect-marker" | "epistolary-formula" | "grammar-register" | "jmdict-arch" | "jmdict-dialect" | "jmdict-slang" | "jmdict-vulg" | "keigo" | "no-signal" | "plain-predicate" | "polite-nonfinal" | "polite-predicate" | "polite-request" | "polite-request-nasai" | "polite-set-phrase" | "rough-address" | "slang-lexeme" | "soft-final" | "vulgar-lexeme" | "written-copula";
   review_status?: {
       field: string;
       locale?: string | null;

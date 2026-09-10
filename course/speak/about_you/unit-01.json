@@ -52,9 +52,56 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 274,
+  "cumulative_known_vocab": 276,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:677",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n5:2548:475",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "番号",
+        "必要",
+        "買う"
+      ]
+    },
+    {
+      "id": "cf:n5:4187:346",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "払う",
+        "何時",
+        "食堂"
+      ]
+    },
+    {
+      "id": "kr:n4:1329",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "あなた",
+        "ページ",
+        "くるま"
+      ]
+    },
+    {
+      "id": "kr:n5:195",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こども",
+        "さげる",
+        "たかい"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-wa-mochiron-mo",
     "gram:gp-36",
@@ -144,62 +191,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 27,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:677",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n5:2548:475",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "番号",
-        "必要",
-        "買う"
-      ]
-    },
-    {
-      "id": "cf:n5:4187:346",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "致す",
-        "払う",
-        "何時"
-      ]
-    },
-    {
-      "id": "kr:n4:1329",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "あなた",
-        "ページ",
-        "くるま"
-      ]
-    },
-    {
-      "id": "kr:n5:195",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "こども",
-        "さげる",
-        "たかい"
-      ]
-    }
-  ]
+  }
 }

@@ -48,9 +48,61 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 519,
+  "cumulative_known_vocab": 515,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "so:n3:132",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n3:196",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n4:2068:889",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "十分",
+        "行く",
+        "頼む"
+      ]
+    },
+    {
+      "id": "kr:n4:1104",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はじめて",
+        "ステーキ",
+        "けっこう"
+      ]
+    },
+    {
+      "id": "kr:n4:1106",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "おおきな",
+        "たのしい",
+        "さいきん"
+      ]
+    },
+    {
+      "id": "cf:n3:662:2453",
+      "type": "context_fill",
+      "via": "review",
+      "distractors": [
+        "頁",
+        "春",
+        "年"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-ni-oite"
   ],
@@ -76,9 +128,9 @@
     {
       "pattern": "gram:n3-ni-tsuite",
       "examples": [
-        "sent:tatoeba-77936",
         "sent:tatoeba-123701",
-        "sent:tatoeba-80136"
+        "sent:tatoeba-80136",
+        "sent:tatoeba-80608"
       ],
       "strand": "language-focused"
     },
@@ -86,8 +138,8 @@
       "pattern": "gram:n3-to-iu-no",
       "examples": [
         "sent:tatoeba-220804",
-        "sent:tatoeba-234151",
-        "sent:tatoeba-138773"
+        "sent:tatoeba-138773",
+        "sent:tatoeba-214502"
       ],
       "strand": "language-focused"
     },
@@ -152,9 +204,9 @@
       "sent:tatoeba-162311",
       "sent:tatoeba-81566",
       "sent:tatoeba-74350",
-      "sent:tatoeba-11561274",
-      "sent:tatoeba-76813",
-      "sent:tatoeba-1490062"
+      "sent:tatoeba-214616",
+      "sent:tatoeba-1490062",
+      "sent:tatoeba-78723"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -162,67 +214,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
-    "meaning-output": 7,
-    "language-focused": 50,
-    "fluency": 14
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 21,
+    "language-focused": 27,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "so:n3:132",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:196",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:2068:889",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "十分",
-        "行く",
-        "頼む"
-      ]
-    },
-    {
-      "id": "kr:n4:1104",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はじめて",
-        "ステーキ",
-        "けっこう"
-      ]
-    },
-    {
-      "id": "kr:n4:1106",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おおきな",
-        "たのしい",
-        "さいきん"
-      ]
-    },
-    {
-      "id": "cf:n3:5539:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "人",
-        "間",
-        "誰"
-      ]
-    }
-  ]
+  }
 }

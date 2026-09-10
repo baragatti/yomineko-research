@@ -42,15 +42,19 @@ THE FIVE THINGS THIS SCRIPT DOES, AND THE ONE IT REFUSES TO DO
     here is live by construction and can never be *unresolvable* (the ledger's one hard failure).
     Idempotent: re-running the same sheet adds nothing.
 (c) **Edits become an exact-match tracked repair table** under
-    `research/derived/repairs/pending/<sheet_id>.json`, in the `{entity, slug, field, locale, old,
+    `research/derived/pending/<sheet_id>.json`, in the `{entity, slug, field, locale, old,
     new, why}` shape every applier in this repo already reads (`apply_sentence_text_repairs.py`
     consumes it verbatim). It is **NOT applied**: applying is a DB-writer step, and this script
     never opens `db/corpus.sqlite`. The apply command is printed instead.
-    It lands in `repairs/pending/` rather than `repairs/` on purpose:
+    It lands in `research/derived/pending/` rather than `research/derived/repairs/` on purpose:
     `validate_repairs_applied.py` FAILS on any unregistered `*.json` directly under `repairs/`, and
     it asserts every row's `new` is already in the export. An unapplied table in that directory
-    would break the suite the moment it was written. Promoting it — move the file up one level and
-    register it — is the last step of the apply, not the first step of the review.
+    would break the suite the moment it was written. `pending/` is where this project already keeps
+    authored-but-unapplied tables (STATE aj: "pending (not-yet-applied) tables live in
+    research/derived/pending/, never in repairs/ — the replay gate owns repairs/"), and W38's own
+    report named the original `repairs/pending/` as the thing to fix. Promoting a table — move the
+    file into `repairs/` and register it in `validate_repairs_applied.py` — is the last step of the
+    apply, not the first step of the review.
 (d) **It never writes prose.** Every `new`, every `why`, every `note` comes from the sheet. The
     script writes structure, hashes and provenance; the words are the teacher's.
 (e) Unknown id, unresolvable address, a field claimed twice, an edit on a non-string field, a
@@ -63,7 +67,7 @@ ALSO
     --check                     parse, validate and report; write nothing.
 
 Reads:  corpus/**, course/**, contracts/manifest.json, the ledger.
-Writes: the ledger, and research/derived/repairs/pending/<sheet_id>.json. NEVER the database,
+Writes: the ledger, and research/derived/pending/<sheet_id>.json. NEVER the database,
         never an exporter output.
 """
 from __future__ import annotations
@@ -89,7 +93,7 @@ from review_ledger import (  # noqa: E402
 import build_review_views as views  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-PENDING_REL = "research/derived/repairs/pending"
+PENDING_REL = "research/derived/pending"
 SHEETS_REL = "research/review/sheets"
 SHEET_SCHEMA_VERSION = "1.0"
 VERDICT_KEYS = ("approve", "edit", "reject")

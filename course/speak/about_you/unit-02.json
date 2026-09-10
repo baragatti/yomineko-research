@@ -52,9 +52,51 @@
   ],
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 283,
+  "cumulative_known_vocab": 285,
   "layer": "C",
   "needs_review": true,
+  "checkpoint": [
+    {
+      "id": "cf:n5:14:115",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "所",
+        "水",
+        "間"
+      ]
+    },
+    {
+      "id": "cf:n5:2348:548",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "豚肉",
+        "家内",
+        "あっ"
+      ]
+    },
+    {
+      "id": "kr:n4:1208",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "くださる",
+        "りょこう",
+        "わすれる"
+      ]
+    },
+    {
+      "id": "kr:n5:115",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "なれる",
+        "ビール",
+        "うしろ"
+      ]
+    }
+  ],
   "patterns_chunked": [
     "gram:n3-wari-ni-wa"
   ],
@@ -89,9 +131,9 @@
     {
       "pattern": "gram:gp-89",
       "examples": [
-        "sent:tatoeba-4855",
         "sent:tatoeba-144038",
-        "sent:tatoeba-164675"
+        "sent:tatoeba-123036",
+        "sent:tatoeba-4855"
       ],
       "strand": "language-focused"
     },
@@ -166,57 +208,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
-    "fluency": 13
+    "meaning-input": 24,
+    "meaning-output": 6,
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 29,
     "fluency": 6
-  },
-  "checkpoint": [
-    {
-      "id": "cf:n5:14:115",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "所",
-        "水",
-        "間"
-      ]
-    },
-    {
-      "id": "cf:n5:2348:548",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "豚肉",
-        "半分",
-        "家内"
-      ]
-    },
-    {
-      "id": "kr:n4:1208",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "くださる",
-        "りょこう",
-        "わすれる"
-      ]
-    },
-    {
-      "id": "kr:n5:115",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "なれる",
-        "ビール",
-        "うしろ"
-      ]
-    }
-  ]
+  }
 }
