@@ -1,0 +1,60 @@
+{
+ "verdict_file": "research/derived/pending/authored_banks/authored-4.verdict.json",
+ "verdict_for_requested_path": "research/derived/pending/authored_banks/authored-usage-n4-01.json",
+ "path_status": "GONE at verification time. See drift.",
+ "adjudicated_file": "research/derived/pending/authored_banks/alt_batchC/authored-usage-n4-01.json",
+ "adjudicated_sha256": "ec14aa47cfafb73e3c92e109b3ff5ad2505f75d6c3f481b184bcbbd1d8f7cb64",
+ "earlier_take_sha256_also_reviewed": "bf0f2872b04f1bddc7fec889ad066213b81fe8dd6bec39b2f635da5abe78d69b",
+ "work_file": "research/derived/pending/authored_banks/work-usage-n4-01.json",
+ "work_file_sha256": "472f16142b367e91e99c59469b475a3f56c48096347359cbf34624e0ccc96105",
+ "rows_verified": 16,
+ "ok": 9,
+ "corrected": 7,
+ "rejected": 0,
+ "drift": [
+  "03:28 the named path held a 25-row take; 03:32:50 it was rewritten to 16 rows (sha bf0f2872...), which is what this verification started on.",
+  "03:38:04 the file was revised again in 4 rows and moved to alt_batchC/ as an ALTERNATE take (sha ec14aa47...); the named path no longer exists and no authored-work-usage-n4-01.json.json primary had appeared by the end of this run.",
+  "Verdicts are keyed by id and adjudicated against the surviving alt_batchC text. Rows us:n4:715, 946, 1082, 1084 differ between the two takes; the other 12 are byte-identical in both.",
+  "Both takes carry the SAME ids. A verdict keyed by id must not be applied to a third take's text: compare row_fingerprints before assembly."
+ ],
+ "resolved_between_takes": {
+  "us:n4:715": "the earlier take had 山の上から海が聞こえる, a second defensible key (海が聞こえる is natural Japanese, hearing the waves); the alternate replaces it with あの人の顔が聞こえる -> pass",
+  "us:n4:1084": "the earlier take had 下着をかけて新聞を読みます, a second defensible key (下着をかける = hang the laundry); the alternate replaces it with 下着を食べてから出かけます; only the 建つ defect remains",
+  "us:n4:946": "the earlier take had オーバーで手紙を書きました, weak because オーバーで can read as the na-adjective sense; the alternate uses オーバーを三ばい飲みました and あたらしいオーバーを食べました -> pass",
+  "us:n4:1082": "both takes carry 建つ; the alternate third wrong (計画に水を入れて飲みました) is stronger than the earlier 安い one, which was kept as acceptable-but-weak"
+ },
+ "row_fingerprints": {
+  "us:n4:852": "c270b0480ee82a3a",
+  "us:n4:1098": "a62d77bb48cbf0ea",
+  "us:n4:1348": "722676779f3af69d",
+  "us:n4:888": "5b623fc9f5bfb0b0",
+  "us:n4:958": "702c1f88fa25116d",
+  "us:n4:1082": "fbba309570bb2132",
+  "us:n4:715": "afad62d123185b2d",
+  "us:n4:946": "4ddf98820b9d575e",
+  "us:n4:997": "607492f7c7991cfb",
+  "us:n4:1226": "c87dde68f0fc1ddd",
+  "us:n4:1302": "ee28ca9c1d9949ac",
+  "us:n4:1297": "fd554a580f366d95",
+  "us:n4:1300": "710d10fa9b811fe4",
+  "us:n4:1084": "8edadeb86ce1beb1",
+  "us:n4:1170": "0881acbad43823ea",
+  "us:n4:923": "fb759d1141a15169"
+ },
+ "checks_run": [
+  "correct byte-exact against corpus/sentences/bank.json jp (16/16 exact)",
+  "source sentence level-clean: tokens[].vocab + grammar[] + kanji inside les:n4-kanji-exame-05 cumulative_known_set (16/16 clean)",
+  "kanji of target/correct/wrong inside level_allowed.kanji (0 violations)",
+  "words of every authored wrong sentence vs level_allowed.words, SudachiPy 0.6.11 + SudachiDict-full SplitMode.C (only 建つ falls outside)",
+  "target == work row hw, vocab slug, vid, id, level, layer, needs_review, 3 distinct wrongs, headword verbatim in each wrong, Japanese-only shape guard, no em dash, ai_generated copied from the stem sentence",
+  "option-format leak: end punctuation of key vs wrongs (2 leaks found)",
+  "single-key: every wrong sentence re-read looking for a reading that rescues it"
+ ],
+ "notes": [
+  "No DB write, no exporter, no builder, no git state change. db/corpus.sqlite was copied to scratch and the real tree was never opened for writing.",
+  "us:n4:852 key (雨の場合はその試合は中止となる) contains 中止, which is NOT in level_allowed.words; that token carries no vocab link, so the level gate passes it. Pool defect, not an authoring defect, and the key may not be edited. sent:tatoeba-186679 (火事の場合は…) is the cleaner pool option if W18 wants to re-select.",
+  "us:n4:1297 and us:n4:1170 key on sent:gen-* because every pool sentence for those two targets is generated; ai_generated true is copied correctly, so spec 1.2 is satisfied (no real sentence exists to select).",
+  "Bank-level, not per row: the wrong sentences reuse a handful of frames across items (駅の前に…が建っています / …を飲みました / …に乗って / …を食べました). A test-wise learner can eliminate a frame without knowing the word. Worth spreading the frames in a later pass.",
+  "us:n4:1098 and us:n4:715 keys (家が見える / 音楽が聞こえる) are much shorter than their wrongs (6 vs 9-13, 8 vs 10-14). Not decisive on its own, passed, flagged for the teacher review."
+ ]
+}

@@ -1,0 +1,421 @@
+{
+ "us:n4:852": {
+  "ok": false,
+  "problem": "Nivel (level_allowed.words): a frase errada 1 (駅の前に新しい場合が建ちました) usa 建つ. O conjunto do N4 ensina 建てる e 建物, nunca 建つ, entao a palavra fica fora do conjunto mesmo com o kanji 建 aprovado pelo gate. Trocada pelo transitivo 建てる, que preserva o mesmo mau uso. Chave e demais frases erradas aprovadas.",
+  "corrected": {
+   "id": "us:n4:852",
+   "level": "n4",
+   "target": "場合",
+   "correct": "雨の場合はその試合は中止となる。",
+   "wrong": [
+    "駅の前に新しい場合を建てました。",
+    "テーブルの上に場合が二つあります。",
+    "あしたは場合に行くつもりです。"
+   ],
+   "vocab": "vocab:1355810",
+   "vocab_id": 852,
+   "sentence": "sent:tatoeba-189577",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": "Só a primeira frase usa 場合 como circunstância; nas outras ele vira construção, objeto contável e destino.",
+   "provenance": {
+    "work_id": "wus:n4:02",
+    "stem_sentence": "sent:tatoeba-189577",
+    "sentences_used": [
+     "sent:tatoeba-189577"
+    ],
+    "options": [
+     {
+      "text": "雨の場合はその試合は中止となる。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-189577"
+     },
+     {
+      "text": "駅の前に新しい場合を建てました。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "テーブルの上に場合が二つあります。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "あしたは場合に行くつもりです。",
+      "role": "wrong",
+      "generated": true
+     }
+    ],
+    "kana": "ばあい",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "wrong sentences edited by the batch-4 verifier; correct/stem/ids untouched"
+   }
+  }
+ },
+ "us:n4:1098": {
+  "ok": true
+ },
+ "us:n4:1348": {
+  "ok": false,
+  "problem": "Nivel (level_allowed.words): a frase errada 1 (駅の前に大きい金持ちが建っています) usa 建つ. O conjunto do N4 ensina 建てる e 建物, nunca 建つ, entao a palavra fica fora do conjunto mesmo com o kanji 建 aprovado pelo gate. Trocada pelo transitivo 建てる, que preserva o mesmo mau uso. Chave e demais frases erradas aprovadas.",
+  "corrected": {
+   "id": "us:n4:1348",
+   "level": "n4",
+   "target": "金持ち",
+   "correct": "金持ちかもしれないがけちだ。",
+   "wrong": [
+    "駅の前に大きい金持ちを建てました。",
+    "今日の昼ごはんは金持ちにします。",
+    "兄は金持ちに乗って会社へ行きます。"
+   ],
+   "vocab": "vocab:1242970",
+   "vocab_id": 1348,
+   "sentence": "sent:tatoeba-179684",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": "Só a primeira frase usa 金持ち como pessoa; nas outras ele vira prédio, comida e meio de transporte.",
+   "provenance": {
+    "work_id": "wus:n4:06",
+    "stem_sentence": "sent:tatoeba-179684",
+    "sentences_used": [
+     "sent:tatoeba-179684"
+    ],
+    "options": [
+     {
+      "text": "金持ちかもしれないがけちだ。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-179684"
+     },
+     {
+      "text": "駅の前に大きい金持ちを建てました。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日の昼ごはんは金持ちにします。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は金持ちに乗って会社へ行きます。",
+      "role": "wrong",
+      "generated": true
+     }
+    ],
+    "kana": "かねもち",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "wrong sentences edited by the batch-4 verifier; correct/stem/ids untouched"
+   }
+  }
+ },
+ "us:n4:888": {
+  "ok": true
+ },
+ "us:n4:958": {
+  "ok": true
+ },
+ "us:n4:1082": {
+  "ok": false,
+  "problem": "Nivel (level_allowed.words): a frase errada 1 usa 建つ, fora do conjunto N4. Aqui a troca direta por 建てる NAO serve: 計画を建てる le-se けいかくをたてる, homofono de 計画を立てる, que e a colocacao correta e salvaria o distrator. Substituida por um mau uso com 着る, que nao tem leitura que o salve.",
+  "corrected": {
+   "id": "us:n4:1082",
+   "level": "n4",
+   "target": "計画",
+   "correct": "始める前に仕事の計画を立てなさい。",
+   "wrong": [
+    "寒いので計画を着て出かけました。",
+    "けさは計画とパンを食べました。",
+    "計画に水を入れて飲みました。"
+   ],
+   "vocab": "vocab:1252090",
+   "vocab_id": 1082,
+   "sentence": "sent:tatoeba-168944",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": "Só a primeira frase usa 計画 como plano; nas outras ele vira roupa, comida e recipiente.",
+   "provenance": {
+    "work_id": "wus:n4:10",
+    "stem_sentence": "sent:tatoeba-168944",
+    "sentences_used": [
+     "sent:tatoeba-168944"
+    ],
+    "options": [
+     {
+      "text": "始める前に仕事の計画を立てなさい。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-168944"
+     },
+     {
+      "text": "寒いので計画を着て出かけました。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "けさは計画とパンを食べました。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "計画に水を入れて飲みました。",
+      "role": "wrong",
+      "generated": true
+     }
+    ],
+    "kana": "けいかく",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "wrong sentences edited by the batch-4 verifier; correct/stem/ids untouched"
+   }
+  }
+ },
+ "us:n4:715": {
+  "ok": true
+ },
+ "us:n4:946": {
+  "ok": true
+ },
+ "us:n4:997": {
+  "ok": false,
+  "problem": "Duas respostas defensaveis. A frase errada 1 (今夜は白くて大きい車です) e topico e comentario normal em japones: ao combinar transporte, hoje a noite e o carro branco e grande. Um nativo aceita a frase, entao ela concorre com a chave. Substituida por 今夜を着て出かけました, que nao tem leitura possivel.",
+  "corrected": {
+   "id": "us:n4:997",
+   "level": "n4",
+   "target": "今夜",
+   "correct": "今夜うちにいてくれ。",
+   "wrong": [
+    "今夜を着て出かけました。",
+    "今夜を三つ買いました。",
+    "先週の今夜、友だちに会いました。"
+   ],
+   "vocab": "vocab:1289520",
+   "vocab_id": 997,
+   "sentence": "sent:tatoeba-171170",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": "Só a primeira frase usa 今夜 como o momento de hoje à noite; nas outras ele vira roupa, mercadoria e noite da semana passada.",
+   "provenance": {
+    "work_id": "wus:n4:16",
+    "stem_sentence": "sent:tatoeba-171170",
+    "sentences_used": [
+     "sent:tatoeba-171170"
+    ],
+    "options": [
+     {
+      "text": "今夜うちにいてくれ。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-171170"
+     },
+     {
+      "text": "今夜を着て出かけました。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今夜を三つ買いました。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "先週の今夜、友だちに会いました。",
+      "role": "wrong",
+      "generated": true
+     }
+    ],
+    "kana": "こんや",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "wrong sentences edited by the batch-4 verifier; correct/stem/ids untouched"
+   }
+  }
+ },
+ "us:n4:1226": {
+  "ok": true
+ },
+ "us:n4:1302": {
+  "ok": true
+ },
+ "us:n4:1297": {
+  "ok": false,
+  "problem": "Vazamento de formato: a chave vem de uma frase gerada do banco e nao termina em 。, enquanto as tres erradas terminam. A opcao certa fica identificavel sem ler japones. Corrigido tirando o 。 das tres erradas (design/translation_style.md: japones gerado nao leva 。). O conteudo esta aprovado. O mesmo padrao ja existe no banco commitado (us:n4:695, 696, 700), entao normalizar o banco inteiro e uma decisao de W18, nao deste item.",
+  "corrected": {
+   "id": "us:n4:1297",
+   "level": "n4",
+   "target": "ガソリンスタンド",
+   "correct": "近くにガソリンスタンドがありますか",
+   "wrong": [
+    "まいばんガソリンスタンドを食べます",
+    "ガソリンスタンドに乗って学校へ行きます",
+    "あついので、ガソリンスタンドをぬぎました"
+   ],
+   "vocab": "vocab:1040260",
+   "vocab_id": 1297,
+   "sentence": "sent:gen-e2b899655850",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": "Só a primeira frase trata a ガソリンスタンド como lugar; nas outras ela vira comida, veículo e roupa.",
+   "provenance": {
+    "work_id": "wus:n4:19",
+    "stem_sentence": "sent:gen-e2b899655850",
+    "sentences_used": [
+     "sent:gen-e2b899655850"
+    ],
+    "options": [
+     {
+      "text": "近くにガソリンスタンドがありますか",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-e2b899655850"
+     },
+     {
+      "text": "まいばんガソリンスタンドを食べます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "ガソリンスタンドに乗って学校へ行きます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "あついので、ガソリンスタンドをぬぎました",
+      "role": "wrong",
+      "generated": true
+     }
+    ],
+    "kana": "ガソリンスタンド",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "wrong sentences edited by the batch-4 verifier; correct/stem/ids untouched"
+   }
+  }
+ },
+ "us:n4:1300": {
+  "ok": true
+ },
+ "us:n4:1084": {
+  "ok": false,
+  "problem": "Nivel (level_allowed.words): a frase errada 3 (駅の前に高い下着が建っています) usa 建つ. O conjunto do N4 ensina 建てる e 建物, nunca 建つ, entao a palavra fica fora do conjunto mesmo com o kanji 建 aprovado pelo gate. Trocada pelo transitivo 建てる, que preserva o mesmo mau uso. Chave e demais frases erradas aprovadas.",
+  "corrected": {
+   "id": "us:n4:1084",
+   "level": "n4",
+   "target": "下着",
+   "correct": "下着は着けたままでいいですよ。",
+   "wrong": [
+    "下着を食べてから出かけます。",
+    "下着に水を入れて飲みました。",
+    "駅の前に高い下着を建てました。"
+   ],
+   "vocab": "vocab:1185930",
+   "vocab_id": 1084,
+   "sentence": "sent:tatoeba-188217",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": "Só a primeira frase veste o 下着; nas outras ele vira comida, recipiente e prédio.",
+   "provenance": {
+    "work_id": "wus:n4:22",
+    "stem_sentence": "sent:tatoeba-188217",
+    "sentences_used": [
+     "sent:tatoeba-188217"
+    ],
+    "options": [
+     {
+      "text": "下着は着けたままでいいですよ。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-188217"
+     },
+     {
+      "text": "下着を食べてから出かけます。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "下着に水を入れて飲みました。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "駅の前に高い下着を建てました。",
+      "role": "wrong",
+      "generated": true
+     }
+    ],
+    "kana": "したぎ",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "wrong sentences edited by the batch-4 verifier; correct/stem/ids untouched"
+   }
+  }
+ },
+ "us:n4:1170": {
+  "ok": false,
+  "problem": "Dois defeitos. (a) Vazamento de formato: a chave vem de frase gerada e nao termina em 。, as tres erradas terminam, o que marca a resposta certa sem ler japones. (b) Duas respostas defensaveis: 会場は私の妹です funciona como atribuicao de tarefa, do mesmo tipo de 受付は私の妹です (quem cuida do local e minha irma), leitura que um nativo faz sem esforco. Corrigido tirando o 。 e trocando a terceira errada.",
+  "corrected": {
+   "id": "us:n4:1170",
+   "level": "n4",
+   "target": "会場",
+   "correct": "コンサートの会場まで歩きました",
+   "wrong": [
+    "新しい会場を着て出かけます",
+    "お茶と会場を飲みました",
+    "会場を三つ食べました"
+   ],
+   "vocab": "vocab:1198660",
+   "vocab_id": 1170,
+   "sentence": "sent:gen-23a3b4d1912f",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": "Só a primeira frase usa 会場 como lugar do evento; nas outras ele vira roupa, bebida e comida.",
+   "provenance": {
+    "work_id": "wus:n4:23",
+    "stem_sentence": "sent:gen-23a3b4d1912f",
+    "sentences_used": [
+     "sent:gen-23a3b4d1912f"
+    ],
+    "options": [
+     {
+      "text": "コンサートの会場まで歩きました",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-23a3b4d1912f"
+     },
+     {
+      "text": "新しい会場を着て出かけます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "お茶と会場を飲みました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "会場を三つ食べました",
+      "role": "wrong",
+      "generated": true
+     }
+    ],
+    "kana": "かいじょう",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "wrong sentences edited by the batch-4 verifier; correct/stem/ids untouched"
+   }
+  }
+ },
+ "us:n4:923": {
+  "ok": true
+ }
+}

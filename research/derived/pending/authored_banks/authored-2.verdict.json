@@ -1,0 +1,277 @@
+{
+ "us:n5:317": {
+  "ok": true
+ },
+ "us:n5:649": {
+  "ok": true
+ },
+ "us:n5:286": {
+  "ok": true
+ },
+ "us:n5:373": {
+  "ok": true
+ },
+ "us:n5:670": {
+  "ok": true
+ },
+ "us:n5:620": {
+  "ok": false,
+  "problem": "A chave 「道はずっとのぼりだ。」 (sent:tatoeba-123591) imprime duas palavras fora do conjunto ensinado: ずっと e のぼり. Os dois tokens estão sem link de vocab no bank, por isso o level gate não os enxerga (ponto cego do gate: token sem `vocab` não é medido, exatamente a armadilha que o _README descreve). のぼり é o predicado da frase, então o aluno de N5 não consegue ler justamente a frase que deveria reconhecer como uso correto de 道. O mesmo work row oferecia uma alternativa 100% limpa no pool, sent:gen-111096b06663 「この道はまっすぐです」 (まっすぐ está em level_allowed.words; recomputado com SudachiPy: zero palavra desconhecida, zero kanji fora do nível). Custo da troca, declarado: a frase é ai_generated=true e vem etiquetada level=n4 no bank. A etiqueta não afeta o gate, que mede tokens[].vocab e grammar[] contra o conjunto ensinado, e a frase consta do pool limpo de N5 do próprio work file. As três wrong perdem o 。 para acompanhar a pontuação da nova chave; sem isso a chave viraria a única opção sem 。.",
+  "corrected": {
+   "id": "us:n5:620",
+   "level": "n5",
+   "target": "道",
+   "correct": "この道はまっすぐです",
+   "wrong": [
+    "いもうとがつくった道はおいしい",
+    "まいにち道を読んでいる",
+    "道はわたしのともだちです"
+   ],
+   "vocab": "vocab:1454080",
+   "vocab_id": 620,
+   "sentence": "sent:gen-111096b06663",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "道 é a rua ou o caminho por onde se anda, sentido da frase que diz que essa rua é reta, e um caminho não é comida, não é leitura e não é uma pessoa amiga."
+   },
+   "provenance": {
+    "work_id": "wus:n5:06",
+    "stem_sentence": "sent:gen-111096b06663",
+    "sentences_used": [
+     "sent:gen-111096b06663"
+    ],
+    "options": [
+     {
+      "text": "この道はまっすぐです",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-111096b06663"
+     },
+     {
+      "text": "いもうとがつくった道はおいしい",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "まいにち道を読んでいる",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "道はわたしのともだちです",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  }
+ },
+ "us:n5:68": {
+  "ok": false,
+  "problem": "wrong #1 「あの入り口はとてもやさしい」 repete a classe de defeito que já reprovou este vid: existe leitura aceitável. 〜にやさしい (人にやさしい, 環境にやさしい) é padrão vivo, e 「(お年寄りに)やさしい入り口」 descreve acesso sem barreiras; mesmo sem o に explícito a frase continua interpretável como 'aquela entrada é bem acessível', com 入り口 no sentido correto. Com isso voltam a existir duas opções defensáveis. A troca coloca um erro de categoria sem resgate (guardar a entrada dentro da bolsa), mantém 入り口 verbatim, todo kanji dentro do nível e o estilo sem 。 das demais opções deste item. As wrong #2 e #3 continuam válidas. PROCESSO, não perder: o vid 68 está em research/derived/reauthor/exam_authored/_flagged.json (chave n5_b2). Mesmo corrigida, a linha só entra se essa entrada for removida no mesmo commit, senão o builder a descarta em silêncio. A razão registrada 「入り口から外へ出てください。」 foi de fato respondida: aquela frase não aparece mais no item.",
+  "corrected": {
+   "id": "us:n5:68",
+   "level": "n5",
+   "target": "入り口",
+   "correct": "学校の入り口で会おう",
+   "wrong": [
+    "入り口をかばんに入れた",
+    "さむいので入り口をかぶった",
+    "入り口を三さつ読んだ"
+   ],
+   "vocab": "vocab:1582820",
+   "vocab_id": 68,
+   "sentence": "sent:gen-5c864f44379e",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(bank-correct)",
+   "explanation": {
+    "pt-BR": "入り口 é o lugar por onde se entra, que é onde os dois combinam de se encontrar, e uma entrada não cabe dentro de uma bolsa, não se veste na cabeça e não se lê em três volumes."
+   },
+   "provenance": {
+    "work_id": "wus:n5:07",
+    "stem_sentence": "sent:gen-5c864f44379e",
+    "sentences_used": [
+     "sent:gen-5c864f44379e"
+    ],
+    "options": [
+     {
+      "text": "学校の入り口で会おう",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-5c864f44379e"
+     },
+     {
+      "text": "入り口をかばんに入れた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "さむいので入り口をかぶった",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "入り口を三さつ読んだ",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  }
+ },
+ "us:n5:420": {
+  "ok": true
+ },
+ "us:n5:416": {
+  "ok": true
+ },
+ "us:n5:419": {
+  "ok": true
+ },
+ "us:n5:326": {
+  "ok": false,
+  "problem": "wrong #3 「千人ぐらいの人が少しいた。」 tem leitura de resgate e por isso o item fica com duas respostas defensáveis. 少し também mede DURAÇÃO junto de いる (「もう少しいて」 = 'fique mais um pouco'), então a frase se lê como 'umas mil pessoas ficaram um pouco de tempo', que é japonês correto. A intenção do autor era a contradição de quantidade (mil contra um pouco), e ela só aparece se o verbo não admitir a leitura durativa. Trocar いた por 来た fecha a saída: 来る é pontual, 「人が少し来た」 é a leitura de quantidade e nada mais, e a contradição com 千人ぐらい continua de pé. Forma simples 来た para acompanhar as outras três opções, todas em forma simples. Recomputado com SudachiPy: zero palavra fora de level_allowed.words, zero kanji fora do nível.",
+  "corrected": {
+   "id": "us:n5:326",
+   "level": "n5",
+   "target": "少し",
+   "correct": "少し休んだほうがいい。",
+   "wrong": [
+    "つくえの上に本が少し五さつある。",
+    "コップに少しな水を入れた。",
+    "千人ぐらいの人が少し来た。"
+   ],
+   "vocab": "vocab:1348870",
+   "vocab_id": 326,
+   "sentence": "sent:tatoeba-3495506",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "少し é o advérbio um pouco, que aqui mede o quanto se deve descansar, por isso não acompanha uma quantidade exata, não recebe な e não convive com mil pessoas."
+   },
+   "provenance": {
+    "work_id": "wus:n5:11",
+    "stem_sentence": "sent:tatoeba-3495506",
+    "sentences_used": [
+     "sent:tatoeba-3495506"
+    ],
+    "options": [
+     {
+      "text": "少し休んだほうがいい。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-3495506"
+     },
+     {
+      "text": "つくえの上に本が少し五さつある。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "コップに少しな水を入れた。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "千人ぐらいの人が少し来た。",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  }
+ },
+ "us:n5:672": {
+  "ok": true
+ },
+ "us:n5:671": {
+  "ok": false,
+  "problem": "A chave 「来週までごきげんよう。」 (sent:tatoeba-78634) imprime ごきげんよう, interjeição de registro antigo e formal que não está em level_allowed.words e cujo token também não tem link de vocab, então passa pelo gate sem ser medida. O mesmo work row oferecia 「また来週！」 (sent:tatoeba-195383): frase real (ai_generated=false), inteiramente dentro do conjunto ensinado e muito mais natural para N5. A troca preserva a preferência da spec §1.2 por frase real e resolve a palavra não ensinada. Assimetria que a troca introduz, declarada: a chave passa a terminar em ！ enquanto as três wrong terminam em 。, e fica bem mais curta (5 contra 9 a 12 caracteres). É diferença de pontuação e comprimento, não semântica, e o comprimento da chave neste arquivo já varia nos dois sentidos (5 chaves são a opção mais curta, 4 a mais longa), então não é um sinal com direção. Se o revisor preferir não mexer, a saída é manter a original e aceitar ごきげんよう impresso.",
+  "corrected": {
+   "id": "us:n5:671",
+   "level": "n5",
+   "target": "来週",
+   "correct": "また来週！",
+   "wrong": [
+    "来週、駅で先生に会った。",
+    "来週な日は休みだ。",
+    "来週はとても高い山だ。"
+   ],
+   "vocab": "vocab:1548010",
+   "vocab_id": 671,
+   "sentence": "sent:tatoeba-195383",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "来週 é a semana que vem, o que faz sentido numa despedida, enquanto o encontro na estação já aconteceu, o advérbio não recebe な e uma semana não é uma montanha alta."
+   },
+   "provenance": {
+    "work_id": "wus:n5:13",
+    "stem_sentence": "sent:tatoeba-195383",
+    "sentences_used": [
+     "sent:tatoeba-195383"
+    ],
+    "options": [
+     {
+      "text": "また来週！",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-195383"
+     },
+     {
+      "text": "来週、駅で先生に会った。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "来週な日は休みだ。",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "来週はとても高い山だ。",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  }
+ },
+ "us:n5:344": {
+  "ok": true
+ },
+ "us:n5:345": {
+  "ok": true
+ },
+ "us:n5:424": {
+  "ok": true
+ },
+ "us:n5:599": {
+  "ok": true
+ },
+ "us:n5:598": {
+  "ok": true
+ },
+ "us:n5:597": {
+  "ok": true
+ },
+ "us:n5:627": {
+  "ok": false,
+  "problem": "A chave 「まいにち テレビを 見る」 (sent:gen-97a9a63e32d1) é a ÚNICA das quatro opções que contém espaços, e ainda é a mais longa. O registro do bank guarda os espaços como tokens de whitespace, então a cópia verbatim está certa e o autor não errou: o defeito é do dado. Num item de quatro opções isso marca visualmente a resposta, já que as três wrong, escritas pelo autor, não têm espaço nenhum. O pool deste vid tem uma única frase, então não existe troca de chave possível. Correção: normalizar o jp de sent:gen-97a9a63e32d1 para 「まいにちテレビを見る」 e re-dissecar (79 dos 10.112 registros do bank têm espaço em jp, quase todos separando orações, não palavra a palavra como aqui); feito isso a linha passa sem nenhuma outra alteração, e o resto do item está correto: chave natural, três misusos inequívocos (rádio não se vê, 雨が見る pede 見える, música se ouve). Não envio `corrected` de propósito: qualquer texto que eu escrevesse quebraria a checagem byte-a-byte contra o bank atual. Alternativa, se ninguém for tocar no bank: descartar a linha."
+ },
+ "us:n5:498": {
+  "ok": true
+ },
+ "us:n5:637": {
+  "ok": true
+ }
+}

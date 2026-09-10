@@ -1,0 +1,263 @@
+{
+ "pp:n5:649": {
+  "ok": true
+ },
+ "pp:n5:286": {
+  "ok": false,
+  "problem": "Provenance defect. The key ひま is marked generated:true, but it is the kana form of the corpus record vocab:1577280 (暇/ひま, n5), so by the _README rule generated must be false with a from. The _README calls a wrong value here worse than a missing item, because the picker's real-first rule and the provenance validators read it. Content is sound: 時間がありますか to ひまがありますか is the standard 言い換え, the key is unique, the three distractors (お金 / 天気 / 電話) differ in meaning and not merely in register, no option shares a word or a kanji with the stem, and the stem plus every option are level-clean under SudachiPy against les:n5-kanji-exame-03.",
+  "corrected": {
+   "id": "pp:n5:286",
+   "level": "n5",
+   "stem": "時間がありますか。",
+   "target": "時間",
+   "correct": "ひま",
+   "distractors": [
+    "お金",
+    "天気",
+    "電話"
+   ],
+   "vocab": "vocab:1315920",
+   "vocab_id": 286,
+   "sentence": "sent:tatoeba-150639",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": "Perguntar 時間がありますか é perguntar se a pessoa tem um tempo livre, e ひま é exatamente esse tempo livre.",
+   "provenance": {
+    "work_id": "wpa:n5:03",
+    "stem_sentence": "sent:tatoeba-150639",
+    "sentences_used": [
+     "sent:tatoeba-150639"
+    ],
+    "options": [
+     {
+      "text": "ひま",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1577280"
+     },
+     {
+      "text": "お金",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1001820"
+     },
+     {
+      "text": "天気",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1438690"
+     },
+     {
+      "text": "電話",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1443840"
+     }
+    ],
+    "equivalent_source": "authored",
+    "kana": "じかん",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)"
+   }
+  }
+ },
+ "pp:n5:670": {
+  "ok": true
+ },
+ "pp:n5:620": {
+  "ok": false,
+  "problem": "The stem is out of level. 「道はずっとのぼりだ。」 prints ずっと (registry level n3, vocab:1006380) and のぼり (registry level n2, 上り, vocab:1352510). Both are vocab:null in the sentence dissection, which is why the W17 gate admitted the sentence: the gate reads tokens[].vocab and an unlinked token contributes nothing, exactly the hole the _README warns about. The bank record is also labelled level n4. No small edit repairs this, because the stem may not be edited and neither remaining candidate is usable: sent:tatoeba-123628 prints 小道 and 分かれる, and sent:gen-111096b06663 is AI-generated while real candidates exist. Recommend dropping the row and leaving 道 unauthored, which is what the earlier take did. The key itself (車が行くところ) is defensible and unique against 本を読むところ / 魚を買うところ / お金を出すところ."
+ },
+ "pp:n5:416": {
+  "ok": false,
+  "problem": "Solvable by shape. The key うちを出る is the only one of the four options carrying 出, the kanji the learner already sees in the target 出かける, so the item can be answered without knowing the word. Under SudachiPy mode A the stem's 出かける decomposes to 出 (dictionary form 出る) plus かける, so the key also shares a word with the stem and no distractor does. The corrected row swaps ごはんをつくる for お金を出す, which puts 出 on a second option and removes the visual giveaway; the residual 出かける / 出る morpheme overlap is intrinsic to this target-key pair and cannot be removed without giving up the precise key. Everything else holds: 「うちを出る前に食べなくてはならない。」 is natural and means the same, the three distractors are clearly different actions, and stem plus every option are level-clean.",
+  "corrected": {
+   "id": "pp:n5:416",
+   "level": "n5",
+   "stem": "出かける前に食べなくてはならない。",
+   "target": "出かける",
+   "correct": "うちを出る",
+   "distractors": [
+    "うちに入る",
+    "お金を出す",
+    "本を読む"
+   ],
+   "vocab": "vocab:1598550",
+   "vocab_id": 416,
+   "sentence": "sent:tatoeba-147790",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": "出かける é deixar a casa para ir a algum lugar, o mesmo movimento que うちを出る descreve.",
+   "provenance": {
+    "work_id": "wpa:n5:09",
+    "stem_sentence": "sent:tatoeba-147790",
+    "sentences_used": [
+     "sent:tatoeba-147790"
+    ],
+    "options": [
+     {
+      "text": "うちを出る",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "うちに入る",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "お金を出す",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "本を読む",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored",
+    "kana": "でかける",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "ごはんをつくる replaced by お金を出す: the key was the only option carrying 出, which let the item be solved by matching the kanji of 出かける. お金 / 出す / 本 / 読む are all taught N5 words and every kanji is in les:n5-kanji-exame-03."
+   }
+  }
+ },
+ "pp:n5:419": {
+  "ok": false,
+  "problem": "Solvable by shape, same defect. The key 外へ出るところ is the only option carrying 出, which the learner reads in the target 出口. The corrected row swaps 本を買うところ for お金を出すところ so that two options carry 出. 出口 has only AI-generated stem candidates in the pool, so ai_generated:true is correct and no spec 1.2 violation applies. Key uniqueness is fine: 中に入るところ is the opposite, and neither 電車をまつところ nor お金を出すところ is a second reading of 出口.",
+  "corrected": {
+   "id": "pp:n5:419",
+   "level": "n5",
+   "stem": "出口はどこですか",
+   "target": "出口",
+   "correct": "外へ出るところ",
+   "distractors": [
+    "中に入るところ",
+    "電車をまつところ",
+    "お金を出すところ"
+   ],
+   "vocab": "vocab:1338850",
+   "vocab_id": 419,
+   "sentence": "sent:gen-691d5e85faa9",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": "出口 é o ponto por onde se sai para fora, exatamente o que 外へ出るところ descreve.",
+   "provenance": {
+    "work_id": "wpa:n5:10",
+    "stem_sentence": "sent:gen-691d5e85faa9",
+    "sentences_used": [
+     "sent:gen-691d5e85faa9"
+    ],
+    "options": [
+     {
+      "text": "外へ出るところ",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "中に入るところ",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "電車をまつところ",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "お金を出すところ",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored",
+    "kana": "でぐち",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)",
+    "verifier_note": "本を買うところ replaced by お金を出すところ: the key was the only option carrying 出, so 出口 could be matched by shape alone. お金を出すところ is level-clean and is not a second reading of 出口."
+   }
+  }
+ },
+ "pp:n5:326": {
+  "ok": false,
+  "problem": "Provenance defect on three options. ちょっと (vocab:1163940, 一寸), たくさん (vocab:1415870, 沢山) and いつも (vocab:1188890, 何時も) are all marked generated:true although each is the kana form of a corpus vocab record; only もっと carries the correct generated:false plus from. The item itself is the cleanest in the batch: 少し to ちょっと is the canonical N5 言い換え, the key is unique, たくさん / もっと / いつも change the meaning rather than the register, and nothing is out of level.",
+  "corrected": {
+   "id": "pp:n5:326",
+   "level": "n5",
+   "stem": "少し休んだほうがいい。",
+   "target": "少し",
+   "correct": "ちょっと",
+   "distractors": [
+    "たくさん",
+    "もっと",
+    "いつも"
+   ],
+   "vocab": "vocab:1348870",
+   "vocab_id": 326,
+   "sentence": "sent:tatoeba-3495506",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": "少し e ちょっと marcam a mesma quantidade pequena, então 少し休む equivale a ちょっと休む.",
+   "provenance": {
+    "work_id": "wpa:n5:11",
+    "stem_sentence": "sent:tatoeba-3495506",
+    "sentences_used": [
+     "sent:tatoeba-3495506"
+    ],
+    "options": [
+     {
+      "text": "ちょっと",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1163940"
+     },
+     {
+      "text": "たくさん",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1415870"
+     },
+     {
+      "text": "もっと",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1012620"
+     },
+     {
+      "text": "いつも",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1188890"
+     }
+    ],
+    "equivalent_source": "authored",
+    "kana": "すこし",
+    "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)"
+   }
+  }
+ },
+ "pp:n5:672": {
+  "ok": true
+ },
+ "pp:n5:344": {
+  "ok": false,
+  "problem": "The stem prints a word outside the corpus entirely. 「先月インフルエンザにかかった。」 carries インフルエンザ, which is in no vocab registry file (n5 through n1) and is vocab:null in the dissection, so the level gate never sees it. wpa:n5:14 offers exactly one stem candidate, so there is nothing to select instead and the stem may not be edited; the row cannot be repaired at this stage. Recorded as a problem because the _README rule is that every printed word comes from level_allowed.words. A reviewer may reasonably waive it: the word is a transparent loanword for a pt-BR learner (glossed gripe / influenza in the dissection) and the item is answerable without it. The paraphrase content is sound, 先月 to 前の月 with つぎの月 / この月 / 休みの多い月 as distractors, one key, no leak, everything else level-clean."
+ },
+ "pp:n5:599": {
+  "ok": true
+ },
+ "pp:n5:598": {
+  "ok": true
+ },
+ "pp:n5:498": {
+  "ok": false,
+  "problem": "The stem prints an out-of-level word. 「スプーンでスープを飲む」 carries スープ, registry level n3 (vocab:1067040), vocab:null in the dissection and therefore invisible to the level gate; スプーン itself is taught (vocab:1072590, n5), so the gap is only on スープ. wpa:n5:21 offers exactly one stem candidate and it is AI-generated, so ai_generated:true is right and no real sentence was passed over, but there is also no second stem to select and the stem may not be edited. Same waiver argument as pp:n5:344 if the reviewer accepts a transparent loanword. The item otherwise holds up: 飲む to 口に入れる is licensed by the スプーンで frame, and 手にもつ / 目で見る / 外に出す are unambiguously different acts with no second key."
+ }
+}

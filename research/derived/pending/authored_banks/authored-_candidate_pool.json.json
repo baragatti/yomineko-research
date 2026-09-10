@@ -1,0 +1,4693 @@
+{
+ "work_file": "_candidate_pool.json",
+ "batch": "_candidate_pool.json",
+ "level": "n4",
+ "families": [
+  "paraphrase",
+  "usage"
+ ],
+ "stage": "W18b author (extension slice; nothing applied to corpus/, course/ or the DB)",
+ "slice": "the n4 candidates ranked 26+ in _candidate_pool.json, i.e. the ones the four work files do not carry; flagged vids skipped",
+ "sources": {
+  "pool": "research/derived/pending/authored_banks/_candidate_pool.json",
+  "level_allowed": "research/derived/pending/authored_banks/work-paraphrase-n4-01.json (level_allowed, les:n4-kanji-exame-05)",
+  "bank": "corpus/sentences/bank.json (working tree)"
+ },
+ "targets": 22,
+ "rows": [
+  {
+   "id": "pp:n4:1203",
+   "level": "n4",
+   "stem": "あなたがいると安心する",
+   "target": "安心",
+   "correct": "だいじょうぶだと思う",
+   "distractors": [
+    "あぶないと思う",
+    "いそがしいと思う",
+    "かなしいと思う"
+   ],
+   "vocab": "vocab:1153890",
+   "vocab_id": 1203,
+   "sentence": "sent:gen-56eab8c9f8b0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "安心する é sentir que está tudo bem e ficar tranquilo, e だいじょうぶだと思う é a única opção que guarda esse sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1203",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-56eab8c9f8b0",
+    "sentences_used": [
+     "sent:gen-56eab8c9f8b0"
+    ],
+    "options": [
+     {
+      "text": "だいじょうぶだと思う",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "あぶないと思う",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "いそがしいと思う",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "かなしいと思う",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1203",
+   "level": "n4",
+   "target": "安心",
+   "correct": "あなたがいると安心する",
+   "wrong": [
+    "店で安心を三つ買ってきた",
+    "妹は安心を着て学校へ行った",
+    "駅の前の安心で電車を待った"
+   ],
+   "vocab": "vocab:1153890",
+   "vocab_id": 1203,
+   "sentence": "sent:gen-56eab8c9f8b0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "安心 nomeia um estado de tranquilidade, não um objeto nem um lugar, então só 「あなたがいると安心する」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1203",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-56eab8c9f8b0",
+    "sentences_used": [
+     "sent:gen-56eab8c9f8b0"
+    ],
+    "options": [
+     {
+      "text": "あなたがいると安心する",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-56eab8c9f8b0"
+     },
+     {
+      "text": "店で安心を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は安心を着て学校へ行った",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "駅の前の安心で電車を待った",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1230",
+   "level": "n4",
+   "stem": "父は新聞社で働いている",
+   "target": "新聞社",
+   "correct": "新聞を作る会社",
+   "distractors": [
+    "新聞を売る店",
+    "本を借りる図書館",
+    "電車が止まる駅"
+   ],
+   "vocab": "vocab:1362400",
+   "vocab_id": 1230,
+   "sentence": "sent:gen-a649aa548490",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "新聞社 é a empresa que produz o jornal, e 新聞を作る会社 descreve exatamente esse lugar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1230",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-a649aa548490",
+    "sentences_used": [
+     "sent:gen-a649aa548490"
+    ],
+    "options": [
+     {
+      "text": "新聞を作る会社",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "新聞を売る店",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "本を借りる図書館",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "電車が止まる駅",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1230",
+   "level": "n4",
+   "target": "新聞社",
+   "correct": "父は新聞社で働いている",
+   "wrong": [
+    "毎朝、新聞社を読んでから出かける",
+    "店で新聞社を一つ買ってきました",
+    "かばんの中に新聞社を入れました"
+   ],
+   "vocab": "vocab:1362400",
+   "vocab_id": 1230,
+   "sentence": "sent:gen-a649aa548490",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "新聞社 é a empresa, não o jornal que se lê ou se compra, então só 「父は新聞社で働いている」 está certo."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1230",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-a649aa548490",
+    "sentences_used": [
+     "sent:gen-a649aa548490"
+    ],
+    "options": [
+     {
+      "text": "父は新聞社で働いている",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-a649aa548490"
+     },
+     {
+      "text": "毎朝、新聞社を読んでから出かける",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "店で新聞社を一つ買ってきました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "かばんの中に新聞社を入れました",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:848",
+   "level": "n4",
+   "stem": "今日はずっと気分がよい。",
+   "target": "気分",
+   "correct": "気持ち",
+   "distractors": [
+    "天気",
+    "電気",
+    "病気"
+   ],
+   "vocab": "vocab:1222590",
+   "vocab_id": 848,
+   "sentence": "sent:tatoeba-171774",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "気分 aqui é como a pessoa se sente por dentro, e 気持ち ocupa o mesmo lugar com o mesmo sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x848",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-171774",
+    "sentences_used": [
+     "sent:tatoeba-171774"
+    ],
+    "options": [
+     {
+      "text": "気持ち",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1591430"
+     },
+     {
+      "text": "天気",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1438690"
+     },
+     {
+      "text": "電気",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1443000"
+     },
+     {
+      "text": "病気",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1490230"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  {
+   "id": "us:n4:848",
+   "level": "n4",
+   "target": "気分",
+   "correct": "今日はずっと気分がよい。",
+   "wrong": [
+    "店の前で気分を三つ買いました",
+    "兄は新しい気分を着て出かけた",
+    "この気分は駅からとても近いです"
+   ],
+   "vocab": "vocab:1222590",
+   "vocab_id": 848,
+   "sentence": "sent:tatoeba-171774",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "気分 é a disposição de quem fala, e não algo que se compre, se vista ou fique perto de um lugar."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x848",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-171774",
+    "sentences_used": [
+     "sent:tatoeba-171774"
+    ],
+    "options": [
+     {
+      "text": "今日はずっと気分がよい。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-171774"
+     },
+     {
+      "text": "店の前で気分を三つ買いました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい気分を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この気分は駅からとても近いです",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:942",
+   "level": "n4",
+   "stem": "スーパーで食料品を買う",
+   "target": "食料品",
+   "correct": "食べ物",
+   "distractors": [
+    "飲み物",
+    "建物",
+    "乗り物"
+   ],
+   "vocab": "vocab:1358680",
+   "vocab_id": 942,
+   "sentence": "sent:gen-37dcc1bac82b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "食料品 são os itens de comida que se compram, e 食べ物 é a opção que guarda esse sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x942",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-37dcc1bac82b",
+    "sentences_used": [
+     "sent:gen-37dcc1bac82b"
+    ],
+    "options": [
+     {
+      "text": "食べ物",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1358340"
+     },
+     {
+      "text": "飲み物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1600430"
+     },
+     {
+      "text": "建物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1257540"
+     },
+     {
+      "text": "乗り物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1600530"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  {
+   "id": "us:n4:942",
+   "level": "n4",
+   "target": "食料品",
+   "correct": "スーパーで食料品を買う",
+   "wrong": [
+    "妹は食料品を着て出かけました",
+    "この食料品はとても親切な人です",
+    "毎朝食料品に乗って会社へ行きます"
+   ],
+   "vocab": "vocab:1358680",
+   "vocab_id": 942,
+   "sentence": "sent:gen-37dcc1bac82b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "食料品 são coisas que se comem, então só 「スーパーで食料品を買う」 põe a palavra num uso possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x942",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-37dcc1bac82b",
+    "sentences_used": [
+     "sent:gen-37dcc1bac82b"
+    ],
+    "options": [
+     {
+      "text": "スーパーで食料品を買う",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-37dcc1bac82b"
+     },
+     {
+      "text": "妹は食料品を着て出かけました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この食料品はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝食料品に乗って会社へ行きます",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1149",
+   "level": "n4",
+   "stem": "姉は今高校生です",
+   "target": "高校生",
+   "correct": "高校に通う学生",
+   "distractors": [
+    "大学に通う学生",
+    "小学校で教える先生",
+    "会社で働く人"
+   ],
+   "vocab": "vocab:1283510",
+   "vocab_id": 1149,
+   "sentence": "sent:gen-79ddad6d8628",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "高校生 é o aluno que estuda no ensino médio, e 高校に通う学生 descreve a mesma pessoa."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1149",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-79ddad6d8628",
+    "sentences_used": [
+     "sent:gen-79ddad6d8628"
+    ],
+    "options": [
+     {
+      "text": "高校に通う学生",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "大学に通う学生",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "小学校で教える先生",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "会社で働く人",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1149",
+   "level": "n4",
+   "target": "高校生",
+   "correct": "姉は今高校生です",
+   "wrong": [
+    "妹は高校生に住んでいます",
+    "毎朝高校生に行ってから学校へ行きます",
+    "今日の高校生はとてもいい天気です"
+   ],
+   "vocab": "vocab:1283510",
+   "vocab_id": 1149,
+   "sentence": "sent:gen-79ddad6d8628",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "高校生 é uma pessoa, então só 「姉は今高校生です」 usa a palavra de um jeito possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1149",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-79ddad6d8628",
+    "sentences_used": [
+     "sent:gen-79ddad6d8628"
+    ],
+    "options": [
+     {
+      "text": "姉は今高校生です",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-79ddad6d8628"
+     },
+     {
+      "text": "妹は高校生に住んでいます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝高校生に行ってから学校へ行きます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日の高校生はとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:870",
+   "level": "n4",
+   "stem": "パパは今日仕事が休みだ",
+   "target": "パパ",
+   "correct": "お父さん",
+   "distractors": [
+    "お母さん",
+    "先生",
+    "学生"
+   ],
+   "vocab": "vocab:1102140",
+   "vocab_id": 870,
+   "sentence": "sent:gen-1f82ed2bd892",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "パパ é o jeito carinhoso de dizer pai, e お父さん é a mesma pessoa dita de forma comum."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x870",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-1f82ed2bd892",
+    "sentences_used": [
+     "sent:gen-1f82ed2bd892"
+    ],
+    "options": [
+     {
+      "text": "お父さん",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1002590"
+     },
+     {
+      "text": "お母さん",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1002650"
+     },
+     {
+      "text": "先生",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1387990"
+     },
+     {
+      "text": "学生",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1206900"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  {
+   "id": "us:n4:870",
+   "level": "n4",
+   "target": "パパ",
+   "correct": "パパは今日仕事が休みだ",
+   "wrong": [
+    "妹はパパに住んでいます",
+    "学校までパパで行きました",
+    "今日のパパはとてもいい天気です"
+   ],
+   "vocab": "vocab:1102140",
+   "vocab_id": 870,
+   "sentence": "sent:gen-1f82ed2bd892",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "パパ é uma pessoa, o pai, então só 「パパは今日仕事が休みだ」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x870",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-1f82ed2bd892",
+    "sentences_used": [
+     "sent:gen-1f82ed2bd892"
+    ],
+    "options": [
+     {
+      "text": "パパは今日仕事が休みだ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-1f82ed2bd892"
+     },
+     {
+      "text": "妹はパパに住んでいます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校までパパで行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日のパパはとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:806",
+   "level": "n4",
+   "stem": "ごめんね。明日は朝からパートがあるのよ。",
+   "target": "パート",
+   "correct": "アルバイト",
+   "distractors": [
+    "試験",
+    "食事",
+    "旅行"
+   ],
+   "vocab": "vocab:1100810",
+   "vocab_id": 806,
+   "sentence": "sent:tatoeba-76720",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "Nessa frase パート é o trabalho de meio período, e アルバイト nomeia o mesmo tipo de trabalho."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x806",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-76720",
+    "sentences_used": [
+     "sent:tatoeba-76720"
+    ],
+    "options": [
+     {
+      "text": "アルバイト",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1019420"
+     },
+     {
+      "text": "試験",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1312350"
+     },
+     {
+      "text": "食事",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1358490"
+     },
+     {
+      "text": "旅行",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1553170"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  {
+   "id": "us:n4:806",
+   "level": "n4",
+   "target": "パート",
+   "correct": "ごめんね。明日は朝からパートがあるのよ。",
+   "wrong": [
+    "毎朝パートを飲んでから出かけます",
+    "学校までパートで行きました",
+    "このパートはとてもおいしいです"
+   ],
+   "vocab": "vocab:1100810",
+   "vocab_id": 806,
+   "sentence": "sent:tatoeba-76720",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "パート é um trabalho de algumas horas por dia, então só 「明日は朝からパートがあるのよ」 usa a palavra num contexto real."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x806",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-76720",
+    "sentences_used": [
+     "sent:tatoeba-76720"
+    ],
+    "options": [
+     {
+      "text": "ごめんね。明日は朝からパートがあるのよ。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-76720"
+     },
+     {
+      "text": "毎朝パートを飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校までパートで行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "このパートはとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:973",
+   "level": "n4",
+   "stem": "どの乗り物で行きますか",
+   "target": "乗り物",
+   "correct": "車や電車",
+   "distractors": [
+    "食べ物",
+    "飲み物",
+    "建物"
+   ],
+   "vocab": "vocab:1600530",
+   "vocab_id": 973,
+   "sentence": "sent:gen-8457e05a188e",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "乗り物 é aquilo em que a gente entra para se deslocar, e 車や電車 nomeia justamente esses meios."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x973",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-8457e05a188e",
+    "sentences_used": [
+     "sent:gen-8457e05a188e"
+    ],
+    "options": [
+     {
+      "text": "車や電車",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "食べ物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1358340"
+     },
+     {
+      "text": "飲み物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1600430"
+     },
+     {
+      "text": "建物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1257540"
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:973",
+   "level": "n4",
+   "target": "乗り物",
+   "correct": "どの乗り物で行きますか",
+   "wrong": [
+    "妹は新しい乗り物を着て出かけた",
+    "この乗り物はとてもおいしいです",
+    "この乗り物はとても親切な人です"
+   ],
+   "vocab": "vocab:1600530",
+   "vocab_id": 973,
+   "sentence": "sent:gen-8457e05a188e",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "乗り物 é aquilo em que se anda, então só 「どの乗り物で行きますか」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x973",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-8457e05a188e",
+    "sentences_used": [
+     "sent:gen-8457e05a188e"
+    ],
+    "options": [
+     {
+      "text": "どの乗り物で行きますか",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-8457e05a188e"
+     },
+     {
+      "text": "妹は新しい乗り物を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この乗り物はとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この乗り物はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1026",
+   "level": "n4",
+   "stem": "妹は今年大学に入学した",
+   "target": "入学",
+   "correct": "学校に入ること",
+   "distractors": [
+    "学校を出ること",
+    "学校を休むこと",
+    "学校で働くこと"
+   ],
+   "vocab": "vocab:1465850",
+   "vocab_id": 1026,
+   "sentence": "sent:gen-910b3a53d79c",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "入学 é o ato de começar a estudar numa escola, ou seja, 学校に入ること."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1026",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-910b3a53d79c",
+    "sentences_used": [
+     "sent:gen-910b3a53d79c"
+    ],
+    "options": [
+     {
+      "text": "学校に入ること",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "学校を出ること",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校を休むこと",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校で働くこと",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1026",
+   "level": "n4",
+   "target": "入学",
+   "correct": "妹は今年大学に入学した",
+   "wrong": [
+    "店で入学を三つ買ってきた",
+    "学校まで入学で行きました",
+    "妹は新しい入学を着て出かけた"
+   ],
+   "vocab": "vocab:1465850",
+   "vocab_id": 1026,
+   "sentence": "sent:gen-910b3a53d79c",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "入学 é uma ação, entrar numa escola, então só 「妹は今年大学に入学した」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1026",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-910b3a53d79c",
+    "sentences_used": [
+     "sent:gen-910b3a53d79c"
+    ],
+    "options": [
+     {
+      "text": "妹は今年大学に入学した",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-910b3a53d79c"
+     },
+     {
+      "text": "店で入学を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校まで入学で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は新しい入学を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:881",
+   "level": "n4",
+   "stem": "妹は小学校に通っている",
+   "target": "小学校",
+   "correct": "小さい子が行く学校",
+   "distractors": [
+    "大学生が行く学校",
+    "大人が働く会社",
+    "本を借りる図書館"
+   ],
+   "vocab": "vocab:1347870",
+   "vocab_id": 881,
+   "sentence": "sent:gen-47135eb3971b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "小学校 é a escola das crianças pequenas, e 小さい子が行く学校 descreve o mesmo lugar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x881",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-47135eb3971b",
+    "sentences_used": [
+     "sent:gen-47135eb3971b"
+    ],
+    "options": [
+     {
+      "text": "小さい子が行く学校",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "大学生が行く学校",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "大人が働く会社",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "本を借りる図書館",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:881",
+   "level": "n4",
+   "target": "小学校",
+   "correct": "妹は小学校に通っている",
+   "wrong": [
+    "店で小学校を三つ買ってきた",
+    "兄は新しい小学校を着て出かけた",
+    "毎朝小学校を飲んでから出かけます"
+   ],
+   "vocab": "vocab:1347870",
+   "vocab_id": 881,
+   "sentence": "sent:gen-47135eb3971b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "小学校 é um lugar, então só 「妹は小学校に通っている」 usa a palavra de um jeito possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x881",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-47135eb3971b",
+    "sentences_used": [
+     "sent:gen-47135eb3971b"
+    ],
+    "options": [
+     {
+      "text": "妹は小学校に通っている",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-47135eb3971b"
+     },
+     {
+      "text": "店で小学校を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい小学校を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝小学校を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:978",
+   "level": "n4",
+   "stem": "小鳥たちが森の中でさえずっていた。",
+   "target": "小鳥",
+   "correct": "小さい鳥",
+   "distractors": [
+    "大きい犬",
+    "白い花",
+    "古い車"
+   ],
+   "vocab": "vocab:1348530",
+   "vocab_id": 978,
+   "sentence": "sent:tatoeba-146917",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "小鳥 é literalmente um pássaro pequeno, e 小さい鳥 diz a mesma coisa com outras palavras."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x978",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-146917",
+    "sentences_used": [
+     "sent:tatoeba-146917"
+    ],
+    "options": [
+     {
+      "text": "小さい鳥",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "大きい犬",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "白い花",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "古い車",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:978",
+   "level": "n4",
+   "target": "小鳥",
+   "correct": "小鳥たちが森の中でさえずっていた。",
+   "wrong": [
+    "学校まで小鳥で行きました",
+    "毎朝小鳥を飲んでから出かけます",
+    "兄は新しい小鳥を着て出かけた"
+   ],
+   "vocab": "vocab:1348530",
+   "vocab_id": 978,
+   "sentence": "sent:tatoeba-146917",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "小鳥 é um animal, então só 「小鳥たちが森の中でさえずっていた」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x978",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-146917",
+    "sentences_used": [
+     "sent:tatoeba-146917"
+    ],
+    "options": [
+     {
+      "text": "小鳥たちが森の中でさえずっていた。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-146917"
+     },
+     {
+      "text": "学校まで小鳥で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝小鳥を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい小鳥を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:994",
+   "level": "n4",
+   "stem": "あの店の店員はとても親切だ",
+   "target": "店員",
+   "correct": "店で働く人",
+   "distractors": [
+    "店に来る人",
+    "店を作る人",
+    "店を出る人"
+   ],
+   "vocab": "vocab:1440670",
+   "vocab_id": 994,
+   "sentence": "sent:gen-2876ec0a4cc0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "店員 é quem atende trabalhando na loja, ou seja, 店で働く人."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x994",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-2876ec0a4cc0",
+    "sentences_used": [
+     "sent:gen-2876ec0a4cc0"
+    ],
+    "options": [
+     {
+      "text": "店で働く人",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "店に来る人",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "店を作る人",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "店を出る人",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:994",
+   "level": "n4",
+   "target": "店員",
+   "correct": "あの店の店員はとても親切だ",
+   "wrong": [
+    "駅の前の店員で電車を待った",
+    "毎朝店員に行ってから会社へ行きます",
+    "今日の店員はとてもいい天気です"
+   ],
+   "vocab": "vocab:1440670",
+   "vocab_id": 994,
+   "sentence": "sent:gen-2876ec0a4cc0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "店員 é uma pessoa, então só 「あの店の店員はとても親切だ」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x994",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-2876ec0a4cc0",
+    "sentences_used": [
+     "sent:gen-2876ec0a4cc0"
+    ],
+    "options": [
+     {
+      "text": "あの店の店員はとても親切だ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-2876ec0a4cc0"
+     },
+     {
+      "text": "駅の前の店員で電車を待った",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝店員に行ってから会社へ行きます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日の店員はとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1009",
+   "level": "n4",
+   "stem": "あの人が新しい校長です",
+   "target": "校長",
+   "correct": "学校でいちばん上の先生",
+   "distractors": [
+    "学校でいちばん新しい学生",
+    "学校の前で待っている人",
+    "学校で日本語を習う人"
+   ],
+   "vocab": "vocab:1279590",
+   "vocab_id": 1009,
+   "sentence": "sent:gen-afc2b20beefe",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "校長 é o professor que dirige a escola, isto é, o de posição mais alta dentro dela."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1009",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-afc2b20beefe",
+    "sentences_used": [
+     "sent:gen-afc2b20beefe"
+    ],
+    "options": [
+     {
+      "text": "学校でいちばん上の先生",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "学校でいちばん新しい学生",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校の前で待っている人",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校で日本語を習う人",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1009",
+   "level": "n4",
+   "target": "校長",
+   "correct": "あの人が新しい校長です",
+   "wrong": [
+    "妹は校長に住んでいます",
+    "駅の前の校長で電車を待った",
+    "今日の校長はとてもいい天気です"
+   ],
+   "vocab": "vocab:1279590",
+   "vocab_id": 1009,
+   "sentence": "sent:gen-afc2b20beefe",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "校長 é uma pessoa, então só 「あの人が新しい校長です」 usa a palavra de um jeito possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1009",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-afc2b20beefe",
+    "sentences_used": [
+     "sent:gen-afc2b20beefe"
+    ],
+    "options": [
+     {
+      "text": "あの人が新しい校長です",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-afc2b20beefe"
+     },
+     {
+      "text": "妹は校長に住んでいます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "駅の前の校長で電車を待った",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日の校長はとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:840",
+   "level": "n4",
+   "stem": "悪いけどほかに用事があるの。",
+   "target": "用事",
+   "correct": "しなければならない事",
+   "distractors": [
+    "食べたい物",
+    "行きたい所",
+    "読みたい本"
+   ],
+   "vocab": "vocab:1546300",
+   "vocab_id": 840,
+   "sentence": "sent:tatoeba-191501",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "用事 é aquilo que a pessoa precisa resolver, ou seja, algo que ela tem de fazer."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x840",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-191501",
+    "sentences_used": [
+     "sent:tatoeba-191501"
+    ],
+    "options": [
+     {
+      "text": "しなければならない事",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "食べたい物",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "行きたい所",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "読みたい本",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:840",
+   "level": "n4",
+   "target": "用事",
+   "correct": "悪いけどほかに用事があるの。",
+   "wrong": [
+    "店で用事を三つ買ってきた",
+    "この用事はとても親切な人です",
+    "兄は新しい用事を着て出かけた"
+   ],
+   "vocab": "vocab:1546300",
+   "vocab_id": 840,
+   "sentence": "sent:tatoeba-191501",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "用事 é algo a resolver, não um objeto nem o tempo, então só 「ほかに用事があるの」 está certo."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x840",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-191501",
+    "sentences_used": [
+     "sent:tatoeba-191501"
+    ],
+    "options": [
+     {
+      "text": "悪いけどほかに用事があるの。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-191501"
+     },
+     {
+      "text": "店で用事を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この用事はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい用事を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1252",
+   "level": "n4",
+   "stem": "先生は研究室にいます",
+   "target": "研究室",
+   "correct": "研究をする所",
+   "distractors": [
+    "料理を作る店",
+    "電車を待つ駅",
+    "本を借りる図書館"
+   ],
+   "vocab": "vocab:1258570",
+   "vocab_id": 1252,
+   "sentence": "sent:gen-abef3875344f",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "研究室 é a sala onde se faz pesquisa, e 研究をする所 nomeia o mesmo lugar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1252",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-abef3875344f",
+    "sentences_used": [
+     "sent:gen-abef3875344f"
+    ],
+    "options": [
+     {
+      "text": "研究をする所",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "料理を作る店",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "電車を待つ駅",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "本を借りる図書館",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1252",
+   "level": "n4",
+   "target": "研究室",
+   "correct": "先生は研究室にいます",
+   "wrong": [
+    "毎朝研究室を飲んでから出かけます",
+    "この研究室はとても親切な人です",
+    "店で研究室を三つ買ってきた"
+   ],
+   "vocab": "vocab:1258570",
+   "vocab_id": 1252,
+   "sentence": "sent:gen-abef3875344f",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "研究室 é um lugar, então só 「先生は研究室にいます」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1252",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-abef3875344f",
+    "sentences_used": [
+     "sent:gen-abef3875344f"
+    ],
+    "options": [
+     {
+      "text": "先生は研究室にいます",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-abef3875344f"
+     },
+     {
+      "text": "毎朝研究室を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この研究室はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "店で研究室を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1278",
+   "level": "n4",
+   "stem": "急げば間に合うよ",
+   "target": "間に合う",
+   "correct": "時間におくれない",
+   "distractors": [
+    "時間がかかる",
+    "時間を教える",
+    "時間がわかる"
+   ],
+   "vocab": "vocab:1215260",
+   "vocab_id": 1278,
+   "sentence": "sent:gen-4f5ce8074635",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "間に合う é chegar antes da hora combinada, ou seja, não se atrasar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1278",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-4f5ce8074635",
+    "sentences_used": [
+     "sent:gen-4f5ce8074635"
+    ],
+    "options": [
+     {
+      "text": "時間におくれない",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "時間がかかる",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "時間を教える",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "時間がわかる",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1278",
+   "level": "n4",
+   "target": "間に合う",
+   "correct": "急げば間に合うよ",
+   "wrong": [
+    "毎朝、水を間に合うから元気です",
+    "兄は新しい服を間に合うのが好きだ",
+    "妹は毎日ピアノを間に合うそうです"
+   ],
+   "vocab": "vocab:1215260",
+   "vocab_id": 1278,
+   "sentence": "sent:gen-4f5ce8074635",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "間に合う fala de chegar a tempo e nunca leva objeto com を, então só 「急げば間に合うよ」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1278",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-4f5ce8074635",
+    "sentences_used": [
+     "sent:gen-4f5ce8074635"
+    ],
+    "options": [
+     {
+      "text": "急げば間に合うよ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-4f5ce8074635"
+     },
+     {
+      "text": "毎朝、水を間に合うから元気です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい服を間に合うのが好きだ",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は毎日ピアノを間に合うそうです",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:859",
+   "level": "n4",
+   "stem": "世界はいつ終わるのだろうか。",
+   "target": "世界",
+   "correct": "みんなが住んでいる所",
+   "distractors": [
+    "兄が生まれた町",
+    "駅の前の広い道",
+    "北の方の高い山"
+   ],
+   "vocab": "vocab:1373860",
+   "vocab_id": 859,
+   "sentence": "sent:tatoeba-143418",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "世界 é o conjunto de tudo onde as pessoas vivem, e みんなが住んでいる所 diz o mesmo."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x859",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-143418",
+    "sentences_used": [
+     "sent:tatoeba-143418"
+    ],
+    "options": [
+     {
+      "text": "みんなが住んでいる所",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "兄が生まれた町",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "駅の前の広い道",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "北の方の高い山",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:859",
+   "level": "n4",
+   "target": "世界",
+   "correct": "世界はいつ終わるのだろうか。",
+   "wrong": [
+    "店で世界を三つ買ってきた",
+    "学校まで世界で行きました",
+    "兄は新しい世界を着て出かけた"
+   ],
+   "vocab": "vocab:1373860",
+   "vocab_id": 859,
+   "sentence": "sent:tatoeba-143418",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "世界 é o mundo inteiro, não uma mercadoria nem uma roupa, então só 「世界はいつ終わるのだろうか」 está certo."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x859",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-143418",
+    "sentences_used": [
+     "sent:tatoeba-143418"
+    ],
+    "options": [
+     {
+      "text": "世界はいつ終わるのだろうか。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-143418"
+     },
+     {
+      "text": "店で世界を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校まで世界で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい世界を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:807",
+   "level": "n4",
+   "stem": "この歌を聞くと私の中学校時代を思い出します。",
+   "target": "時代",
+   "correct": "ころ",
+   "distractors": [
+    "時間",
+    "教室",
+    "試験"
+   ],
+   "vocab": "vocab:1316300",
+   "vocab_id": 807,
+   "sentence": "sent:tatoeba-222763",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "中学校時代 é o período em que a pessoa estudou no ginásio, e ころ marca essa mesma época."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x807",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-222763",
+    "sentences_used": [
+     "sent:tatoeba-222763"
+    ],
+    "options": [
+     {
+      "text": "ころ",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1579080"
+     },
+     {
+      "text": "時間",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1315920"
+     },
+     {
+      "text": "教室",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1237150"
+     },
+     {
+      "text": "試験",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1312350"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  {
+   "id": "us:n4:807",
+   "level": "n4",
+   "target": "時代",
+   "correct": "この歌を聞くと私の中学校時代を思い出します。",
+   "wrong": [
+    "店で時代を三つ買ってきた",
+    "この時代はとてもおいしいです",
+    "毎朝時代を飲んでから出かけます"
+   ],
+   "vocab": "vocab:1316300",
+   "vocab_id": 807,
+   "sentence": "sent:tatoeba-222763",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "時代 é um período de tempo, então só 「私の中学校時代を思い出します」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x807",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-222763",
+    "sentences_used": [
+     "sent:tatoeba-222763"
+    ],
+    "options": [
+     {
+      "text": "この歌を聞くと私の中学校時代を思い出します。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-222763"
+     },
+     {
+      "text": "店で時代を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この時代はとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝時代を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1290",
+   "level": "n4",
+   "stem": "入院しなくてもいいです。",
+   "target": "入院",
+   "correct": "病院に入ること",
+   "distractors": [
+    "病院を出ること",
+    "学校に入ること",
+    "薬を飲むこと"
+   ],
+   "vocab": "vocab:1465720",
+   "vocab_id": 1290,
+   "sentence": "sent:tatoeba-122086",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "入院 é ficar internado, ou seja, entrar no hospital para tratamento."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1290",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-122086",
+    "sentences_used": [
+     "sent:tatoeba-122086"
+    ],
+    "options": [
+     {
+      "text": "病院に入ること",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "病院を出ること",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校に入ること",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "薬を飲むこと",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1290",
+   "level": "n4",
+   "target": "入院",
+   "correct": "入院しなくてもいいです。",
+   "wrong": [
+    "店で入院を三つ買ってきた",
+    "学校まで入院で行きました",
+    "兄は新しい入院を着て出かけた"
+   ],
+   "vocab": "vocab:1465720",
+   "vocab_id": 1290,
+   "sentence": "sent:tatoeba-122086",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "入院 é a ação de dar entrada no hospital, então só 「入院しなくてもいいです」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1290",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-122086",
+    "sentences_used": [
+     "sent:tatoeba-122086"
+    ],
+    "options": [
+     {
+      "text": "入院しなくてもいいです。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-122086"
+     },
+     {
+      "text": "店で入院を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校まで入院で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい入院を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1257",
+   "level": "n4",
+   "stem": "動物はでたらめに動くように見える。",
+   "target": "動く",
+   "correct": "走ったり歩いたりする",
+   "distractors": [
+    "食べたり飲んだりする",
+    "話したり書いたりする",
+    "作ったり売ったりする"
+   ],
+   "vocab": "vocab:1451210",
+   "vocab_id": 1257,
+   "sentence": "sent:tatoeba-123754",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "動く é mudar de lugar com o corpo, e 走ったり歩いたりする descreve exatamente esse movimento."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1257",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-123754",
+    "sentences_used": [
+     "sent:tatoeba-123754"
+    ],
+    "options": [
+     {
+      "text": "走ったり歩いたりする",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "食べたり飲んだりする",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "話したり書いたりする",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "作ったり売ったりする",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1257",
+   "level": "n4",
+   "target": "動く",
+   "correct": "動物はでたらめに動くように見える。",
+   "wrong": [
+    "妹は先生に日本語を動くつもりです",
+    "毎朝、コーヒーを動くのが好きです",
+    "兄は新しい歌を動くのがとても上手です"
+   ],
+   "vocab": "vocab:1451210",
+   "vocab_id": 1257,
+   "sentence": "sent:tatoeba-123754",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "動く é intransitivo e fala de sair do lugar, então só 「動物はでたらめに動くように見える」 o usa corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1257",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-123754",
+    "sentences_used": [
+     "sent:tatoeba-123754"
+    ],
+    "options": [
+     {
+      "text": "動物はでたらめに動くように見える。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-123754"
+     },
+     {
+      "text": "妹は先生に日本語を動くつもりです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝、コーヒーを動くのが好きです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい歌を動くのがとても上手です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1197",
+   "level": "n4",
+   "stem": "運動しないと太るよ",
+   "target": "太る",
+   "correct": "体が重くなる",
+   "distractors": [
+    "体が軽くなる",
+    "気分が悪くなる",
+    "時間が長くなる"
+   ],
+   "vocab": "vocab:1408220",
+   "vocab_id": 1197,
+   "sentence": "sent:gen-59e54bfec5dd",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "太る é ganhar peso, e 体が重くなる descreve o mesmo resultado no corpo."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1197",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-59e54bfec5dd",
+    "sentences_used": [
+     "sent:gen-59e54bfec5dd"
+    ],
+    "options": [
+     {
+      "text": "体が重くなる",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "体が軽くなる",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "気分が悪くなる",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "時間が長くなる",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1197",
+   "level": "n4",
+   "target": "太る",
+   "correct": "運動しないと太るよ",
+   "wrong": [
+    "毎朝、コーヒーを太るのが好きです",
+    "妹は新しい服を太る店に行きました",
+    "兄は日本語を太るために学校へ行く"
+   ],
+   "vocab": "vocab:1408220",
+   "vocab_id": 1197,
+   "sentence": "sent:gen-59e54bfec5dd",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "太る fala do corpo ganhar peso e não aceita objeto com を, então só 「運動しないと太るよ」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1197",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-59e54bfec5dd",
+    "sentences_used": [
+     "sent:gen-59e54bfec5dd"
+    ],
+    "options": [
+     {
+      "text": "運動しないと太るよ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-59e54bfec5dd"
+     },
+     {
+      "text": "毎朝、コーヒーを太るのが好きです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は新しい服を太る店に行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は日本語を太るために学校へ行く",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "pp:n4:1243",
+   "level": "n4",
+   "stem": "運転の仕方は、親が教えてくれたんだ。",
+   "target": "仕方",
+   "correct": "やり方",
+   "distractors": [
+    "気持ち",
+    "時間",
+    "お金"
+   ],
+   "vocab": "vocab:1594110",
+   "vocab_id": 1243,
+   "sentence": "sent:tatoeba-11735124",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "仕方 é o modo de fazer alguma coisa, e やり方 é a palavra do dia a dia com esse mesmo sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1243",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-11735124",
+    "sentences_used": [
+     "sent:tatoeba-11735124"
+    ],
+    "options": [
+     {
+      "text": "やり方",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "気持ち",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1591430"
+     },
+     {
+      "text": "時間",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1315920"
+     },
+     {
+      "text": "お金",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1001820"
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  {
+   "id": "us:n4:1243",
+   "level": "n4",
+   "target": "仕方",
+   "correct": "運転の仕方は、親が教えてくれたんだ。",
+   "wrong": [
+    "店で仕方を三つ買ってきた",
+    "この仕方はとてもおいしいです",
+    "兄は新しい仕方を着て出かけた"
+   ],
+   "vocab": "vocab:1594110",
+   "vocab_id": 1243,
+   "sentence": "sent:tatoeba-11735124",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "仕方 é a maneira de fazer algo, então só 「運転の仕方は、親が教えてくれた」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1243",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-11735124",
+    "sentences_used": [
+     "sent:tatoeba-11735124"
+    ],
+    "options": [
+     {
+      "text": "運転の仕方は、親が教えてくれたんだ。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-11735124"
+     },
+     {
+      "text": "店で仕方を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この仕方はとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい仕方を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  }
+ ],
+ "items": {
+  "pp:n4:1203": {
+   "id": "pp:n4:1203",
+   "level": "n4",
+   "stem": "あなたがいると安心する",
+   "target": "安心",
+   "correct": "だいじょうぶだと思う",
+   "distractors": [
+    "あぶないと思う",
+    "いそがしいと思う",
+    "かなしいと思う"
+   ],
+   "vocab": "vocab:1153890",
+   "vocab_id": 1203,
+   "sentence": "sent:gen-56eab8c9f8b0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "安心する é sentir que está tudo bem e ficar tranquilo, e だいじょうぶだと思う é a única opção que guarda esse sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1203",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-56eab8c9f8b0",
+    "sentences_used": [
+     "sent:gen-56eab8c9f8b0"
+    ],
+    "options": [
+     {
+      "text": "だいじょうぶだと思う",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "あぶないと思う",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "いそがしいと思う",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "かなしいと思う",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1203": {
+   "id": "us:n4:1203",
+   "level": "n4",
+   "target": "安心",
+   "correct": "あなたがいると安心する",
+   "wrong": [
+    "店で安心を三つ買ってきた",
+    "妹は安心を着て学校へ行った",
+    "駅の前の安心で電車を待った"
+   ],
+   "vocab": "vocab:1153890",
+   "vocab_id": 1203,
+   "sentence": "sent:gen-56eab8c9f8b0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "安心 nomeia um estado de tranquilidade, não um objeto nem um lugar, então só 「あなたがいると安心する」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1203",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-56eab8c9f8b0",
+    "sentences_used": [
+     "sent:gen-56eab8c9f8b0"
+    ],
+    "options": [
+     {
+      "text": "あなたがいると安心する",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-56eab8c9f8b0"
+     },
+     {
+      "text": "店で安心を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は安心を着て学校へ行った",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "駅の前の安心で電車を待った",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1230": {
+   "id": "pp:n4:1230",
+   "level": "n4",
+   "stem": "父は新聞社で働いている",
+   "target": "新聞社",
+   "correct": "新聞を作る会社",
+   "distractors": [
+    "新聞を売る店",
+    "本を借りる図書館",
+    "電車が止まる駅"
+   ],
+   "vocab": "vocab:1362400",
+   "vocab_id": 1230,
+   "sentence": "sent:gen-a649aa548490",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "新聞社 é a empresa que produz o jornal, e 新聞を作る会社 descreve exatamente esse lugar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1230",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-a649aa548490",
+    "sentences_used": [
+     "sent:gen-a649aa548490"
+    ],
+    "options": [
+     {
+      "text": "新聞を作る会社",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "新聞を売る店",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "本を借りる図書館",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "電車が止まる駅",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1230": {
+   "id": "us:n4:1230",
+   "level": "n4",
+   "target": "新聞社",
+   "correct": "父は新聞社で働いている",
+   "wrong": [
+    "毎朝、新聞社を読んでから出かける",
+    "店で新聞社を一つ買ってきました",
+    "かばんの中に新聞社を入れました"
+   ],
+   "vocab": "vocab:1362400",
+   "vocab_id": 1230,
+   "sentence": "sent:gen-a649aa548490",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "新聞社 é a empresa, não o jornal que se lê ou se compra, então só 「父は新聞社で働いている」 está certo."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1230",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-a649aa548490",
+    "sentences_used": [
+     "sent:gen-a649aa548490"
+    ],
+    "options": [
+     {
+      "text": "父は新聞社で働いている",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-a649aa548490"
+     },
+     {
+      "text": "毎朝、新聞社を読んでから出かける",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "店で新聞社を一つ買ってきました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "かばんの中に新聞社を入れました",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:848": {
+   "id": "pp:n4:848",
+   "level": "n4",
+   "stem": "今日はずっと気分がよい。",
+   "target": "気分",
+   "correct": "気持ち",
+   "distractors": [
+    "天気",
+    "電気",
+    "病気"
+   ],
+   "vocab": "vocab:1222590",
+   "vocab_id": 848,
+   "sentence": "sent:tatoeba-171774",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "気分 aqui é como a pessoa se sente por dentro, e 気持ち ocupa o mesmo lugar com o mesmo sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x848",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-171774",
+    "sentences_used": [
+     "sent:tatoeba-171774"
+    ],
+    "options": [
+     {
+      "text": "気持ち",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1591430"
+     },
+     {
+      "text": "天気",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1438690"
+     },
+     {
+      "text": "電気",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1443000"
+     },
+     {
+      "text": "病気",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1490230"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  "us:n4:848": {
+   "id": "us:n4:848",
+   "level": "n4",
+   "target": "気分",
+   "correct": "今日はずっと気分がよい。",
+   "wrong": [
+    "店の前で気分を三つ買いました",
+    "兄は新しい気分を着て出かけた",
+    "この気分は駅からとても近いです"
+   ],
+   "vocab": "vocab:1222590",
+   "vocab_id": 848,
+   "sentence": "sent:tatoeba-171774",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "気分 é a disposição de quem fala, e não algo que se compre, se vista ou fique perto de um lugar."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x848",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-171774",
+    "sentences_used": [
+     "sent:tatoeba-171774"
+    ],
+    "options": [
+     {
+      "text": "今日はずっと気分がよい。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-171774"
+     },
+     {
+      "text": "店の前で気分を三つ買いました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい気分を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この気分は駅からとても近いです",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:942": {
+   "id": "pp:n4:942",
+   "level": "n4",
+   "stem": "スーパーで食料品を買う",
+   "target": "食料品",
+   "correct": "食べ物",
+   "distractors": [
+    "飲み物",
+    "建物",
+    "乗り物"
+   ],
+   "vocab": "vocab:1358680",
+   "vocab_id": 942,
+   "sentence": "sent:gen-37dcc1bac82b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "食料品 são os itens de comida que se compram, e 食べ物 é a opção que guarda esse sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x942",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-37dcc1bac82b",
+    "sentences_used": [
+     "sent:gen-37dcc1bac82b"
+    ],
+    "options": [
+     {
+      "text": "食べ物",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1358340"
+     },
+     {
+      "text": "飲み物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1600430"
+     },
+     {
+      "text": "建物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1257540"
+     },
+     {
+      "text": "乗り物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1600530"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  "us:n4:942": {
+   "id": "us:n4:942",
+   "level": "n4",
+   "target": "食料品",
+   "correct": "スーパーで食料品を買う",
+   "wrong": [
+    "妹は食料品を着て出かけました",
+    "この食料品はとても親切な人です",
+    "毎朝食料品に乗って会社へ行きます"
+   ],
+   "vocab": "vocab:1358680",
+   "vocab_id": 942,
+   "sentence": "sent:gen-37dcc1bac82b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "食料品 são coisas que se comem, então só 「スーパーで食料品を買う」 põe a palavra num uso possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x942",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-37dcc1bac82b",
+    "sentences_used": [
+     "sent:gen-37dcc1bac82b"
+    ],
+    "options": [
+     {
+      "text": "スーパーで食料品を買う",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-37dcc1bac82b"
+     },
+     {
+      "text": "妹は食料品を着て出かけました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この食料品はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝食料品に乗って会社へ行きます",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1149": {
+   "id": "pp:n4:1149",
+   "level": "n4",
+   "stem": "姉は今高校生です",
+   "target": "高校生",
+   "correct": "高校に通う学生",
+   "distractors": [
+    "大学に通う学生",
+    "小学校で教える先生",
+    "会社で働く人"
+   ],
+   "vocab": "vocab:1283510",
+   "vocab_id": 1149,
+   "sentence": "sent:gen-79ddad6d8628",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "高校生 é o aluno que estuda no ensino médio, e 高校に通う学生 descreve a mesma pessoa."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1149",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-79ddad6d8628",
+    "sentences_used": [
+     "sent:gen-79ddad6d8628"
+    ],
+    "options": [
+     {
+      "text": "高校に通う学生",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "大学に通う学生",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "小学校で教える先生",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "会社で働く人",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1149": {
+   "id": "us:n4:1149",
+   "level": "n4",
+   "target": "高校生",
+   "correct": "姉は今高校生です",
+   "wrong": [
+    "妹は高校生に住んでいます",
+    "毎朝高校生に行ってから学校へ行きます",
+    "今日の高校生はとてもいい天気です"
+   ],
+   "vocab": "vocab:1283510",
+   "vocab_id": 1149,
+   "sentence": "sent:gen-79ddad6d8628",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "高校生 é uma pessoa, então só 「姉は今高校生です」 usa a palavra de um jeito possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1149",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-79ddad6d8628",
+    "sentences_used": [
+     "sent:gen-79ddad6d8628"
+    ],
+    "options": [
+     {
+      "text": "姉は今高校生です",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-79ddad6d8628"
+     },
+     {
+      "text": "妹は高校生に住んでいます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝高校生に行ってから学校へ行きます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日の高校生はとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:870": {
+   "id": "pp:n4:870",
+   "level": "n4",
+   "stem": "パパは今日仕事が休みだ",
+   "target": "パパ",
+   "correct": "お父さん",
+   "distractors": [
+    "お母さん",
+    "先生",
+    "学生"
+   ],
+   "vocab": "vocab:1102140",
+   "vocab_id": 870,
+   "sentence": "sent:gen-1f82ed2bd892",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "パパ é o jeito carinhoso de dizer pai, e お父さん é a mesma pessoa dita de forma comum."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x870",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-1f82ed2bd892",
+    "sentences_used": [
+     "sent:gen-1f82ed2bd892"
+    ],
+    "options": [
+     {
+      "text": "お父さん",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1002590"
+     },
+     {
+      "text": "お母さん",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1002650"
+     },
+     {
+      "text": "先生",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1387990"
+     },
+     {
+      "text": "学生",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1206900"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  "us:n4:870": {
+   "id": "us:n4:870",
+   "level": "n4",
+   "target": "パパ",
+   "correct": "パパは今日仕事が休みだ",
+   "wrong": [
+    "妹はパパに住んでいます",
+    "学校までパパで行きました",
+    "今日のパパはとてもいい天気です"
+   ],
+   "vocab": "vocab:1102140",
+   "vocab_id": 870,
+   "sentence": "sent:gen-1f82ed2bd892",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "パパ é uma pessoa, o pai, então só 「パパは今日仕事が休みだ」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x870",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-1f82ed2bd892",
+    "sentences_used": [
+     "sent:gen-1f82ed2bd892"
+    ],
+    "options": [
+     {
+      "text": "パパは今日仕事が休みだ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-1f82ed2bd892"
+     },
+     {
+      "text": "妹はパパに住んでいます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校までパパで行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日のパパはとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:806": {
+   "id": "pp:n4:806",
+   "level": "n4",
+   "stem": "ごめんね。明日は朝からパートがあるのよ。",
+   "target": "パート",
+   "correct": "アルバイト",
+   "distractors": [
+    "試験",
+    "食事",
+    "旅行"
+   ],
+   "vocab": "vocab:1100810",
+   "vocab_id": 806,
+   "sentence": "sent:tatoeba-76720",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "Nessa frase パート é o trabalho de meio período, e アルバイト nomeia o mesmo tipo de trabalho."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x806",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-76720",
+    "sentences_used": [
+     "sent:tatoeba-76720"
+    ],
+    "options": [
+     {
+      "text": "アルバイト",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1019420"
+     },
+     {
+      "text": "試験",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1312350"
+     },
+     {
+      "text": "食事",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1358490"
+     },
+     {
+      "text": "旅行",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1553170"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  "us:n4:806": {
+   "id": "us:n4:806",
+   "level": "n4",
+   "target": "パート",
+   "correct": "ごめんね。明日は朝からパートがあるのよ。",
+   "wrong": [
+    "毎朝パートを飲んでから出かけます",
+    "学校までパートで行きました",
+    "このパートはとてもおいしいです"
+   ],
+   "vocab": "vocab:1100810",
+   "vocab_id": 806,
+   "sentence": "sent:tatoeba-76720",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "パート é um trabalho de algumas horas por dia, então só 「明日は朝からパートがあるのよ」 usa a palavra num contexto real."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x806",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-76720",
+    "sentences_used": [
+     "sent:tatoeba-76720"
+    ],
+    "options": [
+     {
+      "text": "ごめんね。明日は朝からパートがあるのよ。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-76720"
+     },
+     {
+      "text": "毎朝パートを飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校までパートで行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "このパートはとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:973": {
+   "id": "pp:n4:973",
+   "level": "n4",
+   "stem": "どの乗り物で行きますか",
+   "target": "乗り物",
+   "correct": "車や電車",
+   "distractors": [
+    "食べ物",
+    "飲み物",
+    "建物"
+   ],
+   "vocab": "vocab:1600530",
+   "vocab_id": 973,
+   "sentence": "sent:gen-8457e05a188e",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "乗り物 é aquilo em que a gente entra para se deslocar, e 車や電車 nomeia justamente esses meios."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x973",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-8457e05a188e",
+    "sentences_used": [
+     "sent:gen-8457e05a188e"
+    ],
+    "options": [
+     {
+      "text": "車や電車",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "食べ物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1358340"
+     },
+     {
+      "text": "飲み物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1600430"
+     },
+     {
+      "text": "建物",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1257540"
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:973": {
+   "id": "us:n4:973",
+   "level": "n4",
+   "target": "乗り物",
+   "correct": "どの乗り物で行きますか",
+   "wrong": [
+    "妹は新しい乗り物を着て出かけた",
+    "この乗り物はとてもおいしいです",
+    "この乗り物はとても親切な人です"
+   ],
+   "vocab": "vocab:1600530",
+   "vocab_id": 973,
+   "sentence": "sent:gen-8457e05a188e",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "乗り物 é aquilo em que se anda, então só 「どの乗り物で行きますか」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x973",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-8457e05a188e",
+    "sentences_used": [
+     "sent:gen-8457e05a188e"
+    ],
+    "options": [
+     {
+      "text": "どの乗り物で行きますか",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-8457e05a188e"
+     },
+     {
+      "text": "妹は新しい乗り物を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この乗り物はとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この乗り物はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1026": {
+   "id": "pp:n4:1026",
+   "level": "n4",
+   "stem": "妹は今年大学に入学した",
+   "target": "入学",
+   "correct": "学校に入ること",
+   "distractors": [
+    "学校を出ること",
+    "学校を休むこと",
+    "学校で働くこと"
+   ],
+   "vocab": "vocab:1465850",
+   "vocab_id": 1026,
+   "sentence": "sent:gen-910b3a53d79c",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "入学 é o ato de começar a estudar numa escola, ou seja, 学校に入ること."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1026",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-910b3a53d79c",
+    "sentences_used": [
+     "sent:gen-910b3a53d79c"
+    ],
+    "options": [
+     {
+      "text": "学校に入ること",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "学校を出ること",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校を休むこと",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校で働くこと",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1026": {
+   "id": "us:n4:1026",
+   "level": "n4",
+   "target": "入学",
+   "correct": "妹は今年大学に入学した",
+   "wrong": [
+    "店で入学を三つ買ってきた",
+    "学校まで入学で行きました",
+    "妹は新しい入学を着て出かけた"
+   ],
+   "vocab": "vocab:1465850",
+   "vocab_id": 1026,
+   "sentence": "sent:gen-910b3a53d79c",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "入学 é uma ação, entrar numa escola, então só 「妹は今年大学に入学した」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1026",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-910b3a53d79c",
+    "sentences_used": [
+     "sent:gen-910b3a53d79c"
+    ],
+    "options": [
+     {
+      "text": "妹は今年大学に入学した",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-910b3a53d79c"
+     },
+     {
+      "text": "店で入学を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校まで入学で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は新しい入学を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:881": {
+   "id": "pp:n4:881",
+   "level": "n4",
+   "stem": "妹は小学校に通っている",
+   "target": "小学校",
+   "correct": "小さい子が行く学校",
+   "distractors": [
+    "大学生が行く学校",
+    "大人が働く会社",
+    "本を借りる図書館"
+   ],
+   "vocab": "vocab:1347870",
+   "vocab_id": 881,
+   "sentence": "sent:gen-47135eb3971b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "小学校 é a escola das crianças pequenas, e 小さい子が行く学校 descreve o mesmo lugar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x881",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-47135eb3971b",
+    "sentences_used": [
+     "sent:gen-47135eb3971b"
+    ],
+    "options": [
+     {
+      "text": "小さい子が行く学校",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "大学生が行く学校",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "大人が働く会社",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "本を借りる図書館",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:881": {
+   "id": "us:n4:881",
+   "level": "n4",
+   "target": "小学校",
+   "correct": "妹は小学校に通っている",
+   "wrong": [
+    "店で小学校を三つ買ってきた",
+    "兄は新しい小学校を着て出かけた",
+    "毎朝小学校を飲んでから出かけます"
+   ],
+   "vocab": "vocab:1347870",
+   "vocab_id": 881,
+   "sentence": "sent:gen-47135eb3971b",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "小学校 é um lugar, então só 「妹は小学校に通っている」 usa a palavra de um jeito possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x881",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-47135eb3971b",
+    "sentences_used": [
+     "sent:gen-47135eb3971b"
+    ],
+    "options": [
+     {
+      "text": "妹は小学校に通っている",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-47135eb3971b"
+     },
+     {
+      "text": "店で小学校を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい小学校を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝小学校を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:978": {
+   "id": "pp:n4:978",
+   "level": "n4",
+   "stem": "小鳥たちが森の中でさえずっていた。",
+   "target": "小鳥",
+   "correct": "小さい鳥",
+   "distractors": [
+    "大きい犬",
+    "白い花",
+    "古い車"
+   ],
+   "vocab": "vocab:1348530",
+   "vocab_id": 978,
+   "sentence": "sent:tatoeba-146917",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "小鳥 é literalmente um pássaro pequeno, e 小さい鳥 diz a mesma coisa com outras palavras."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x978",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-146917",
+    "sentences_used": [
+     "sent:tatoeba-146917"
+    ],
+    "options": [
+     {
+      "text": "小さい鳥",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "大きい犬",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "白い花",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "古い車",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:978": {
+   "id": "us:n4:978",
+   "level": "n4",
+   "target": "小鳥",
+   "correct": "小鳥たちが森の中でさえずっていた。",
+   "wrong": [
+    "学校まで小鳥で行きました",
+    "毎朝小鳥を飲んでから出かけます",
+    "兄は新しい小鳥を着て出かけた"
+   ],
+   "vocab": "vocab:1348530",
+   "vocab_id": 978,
+   "sentence": "sent:tatoeba-146917",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "小鳥 é um animal, então só 「小鳥たちが森の中でさえずっていた」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x978",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-146917",
+    "sentences_used": [
+     "sent:tatoeba-146917"
+    ],
+    "options": [
+     {
+      "text": "小鳥たちが森の中でさえずっていた。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-146917"
+     },
+     {
+      "text": "学校まで小鳥で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝小鳥を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい小鳥を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:994": {
+   "id": "pp:n4:994",
+   "level": "n4",
+   "stem": "あの店の店員はとても親切だ",
+   "target": "店員",
+   "correct": "店で働く人",
+   "distractors": [
+    "店に来る人",
+    "店を作る人",
+    "店を出る人"
+   ],
+   "vocab": "vocab:1440670",
+   "vocab_id": 994,
+   "sentence": "sent:gen-2876ec0a4cc0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "店員 é quem atende trabalhando na loja, ou seja, 店で働く人."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x994",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-2876ec0a4cc0",
+    "sentences_used": [
+     "sent:gen-2876ec0a4cc0"
+    ],
+    "options": [
+     {
+      "text": "店で働く人",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "店に来る人",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "店を作る人",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "店を出る人",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:994": {
+   "id": "us:n4:994",
+   "level": "n4",
+   "target": "店員",
+   "correct": "あの店の店員はとても親切だ",
+   "wrong": [
+    "駅の前の店員で電車を待った",
+    "毎朝店員に行ってから会社へ行きます",
+    "今日の店員はとてもいい天気です"
+   ],
+   "vocab": "vocab:1440670",
+   "vocab_id": 994,
+   "sentence": "sent:gen-2876ec0a4cc0",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "店員 é uma pessoa, então só 「あの店の店員はとても親切だ」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x994",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-2876ec0a4cc0",
+    "sentences_used": [
+     "sent:gen-2876ec0a4cc0"
+    ],
+    "options": [
+     {
+      "text": "あの店の店員はとても親切だ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-2876ec0a4cc0"
+     },
+     {
+      "text": "駅の前の店員で電車を待った",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝店員に行ってから会社へ行きます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日の店員はとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1009": {
+   "id": "pp:n4:1009",
+   "level": "n4",
+   "stem": "あの人が新しい校長です",
+   "target": "校長",
+   "correct": "学校でいちばん上の先生",
+   "distractors": [
+    "学校でいちばん新しい学生",
+    "学校の前で待っている人",
+    "学校で日本語を習う人"
+   ],
+   "vocab": "vocab:1279590",
+   "vocab_id": 1009,
+   "sentence": "sent:gen-afc2b20beefe",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "校長 é o professor que dirige a escola, isto é, o de posição mais alta dentro dela."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1009",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-afc2b20beefe",
+    "sentences_used": [
+     "sent:gen-afc2b20beefe"
+    ],
+    "options": [
+     {
+      "text": "学校でいちばん上の先生",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "学校でいちばん新しい学生",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校の前で待っている人",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校で日本語を習う人",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1009": {
+   "id": "us:n4:1009",
+   "level": "n4",
+   "target": "校長",
+   "correct": "あの人が新しい校長です",
+   "wrong": [
+    "妹は校長に住んでいます",
+    "駅の前の校長で電車を待った",
+    "今日の校長はとてもいい天気です"
+   ],
+   "vocab": "vocab:1279590",
+   "vocab_id": 1009,
+   "sentence": "sent:gen-afc2b20beefe",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "校長 é uma pessoa, então só 「あの人が新しい校長です」 usa a palavra de um jeito possível."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1009",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-afc2b20beefe",
+    "sentences_used": [
+     "sent:gen-afc2b20beefe"
+    ],
+    "options": [
+     {
+      "text": "あの人が新しい校長です",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-afc2b20beefe"
+     },
+     {
+      "text": "妹は校長に住んでいます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "駅の前の校長で電車を待った",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "今日の校長はとてもいい天気です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:840": {
+   "id": "pp:n4:840",
+   "level": "n4",
+   "stem": "悪いけどほかに用事があるの。",
+   "target": "用事",
+   "correct": "しなければならない事",
+   "distractors": [
+    "食べたい物",
+    "行きたい所",
+    "読みたい本"
+   ],
+   "vocab": "vocab:1546300",
+   "vocab_id": 840,
+   "sentence": "sent:tatoeba-191501",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "用事 é aquilo que a pessoa precisa resolver, ou seja, algo que ela tem de fazer."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x840",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-191501",
+    "sentences_used": [
+     "sent:tatoeba-191501"
+    ],
+    "options": [
+     {
+      "text": "しなければならない事",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "食べたい物",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "行きたい所",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "読みたい本",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:840": {
+   "id": "us:n4:840",
+   "level": "n4",
+   "target": "用事",
+   "correct": "悪いけどほかに用事があるの。",
+   "wrong": [
+    "店で用事を三つ買ってきた",
+    "この用事はとても親切な人です",
+    "兄は新しい用事を着て出かけた"
+   ],
+   "vocab": "vocab:1546300",
+   "vocab_id": 840,
+   "sentence": "sent:tatoeba-191501",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "用事 é algo a resolver, não um objeto nem o tempo, então só 「ほかに用事があるの」 está certo."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x840",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-191501",
+    "sentences_used": [
+     "sent:tatoeba-191501"
+    ],
+    "options": [
+     {
+      "text": "悪いけどほかに用事があるの。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-191501"
+     },
+     {
+      "text": "店で用事を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この用事はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい用事を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1252": {
+   "id": "pp:n4:1252",
+   "level": "n4",
+   "stem": "先生は研究室にいます",
+   "target": "研究室",
+   "correct": "研究をする所",
+   "distractors": [
+    "料理を作る店",
+    "電車を待つ駅",
+    "本を借りる図書館"
+   ],
+   "vocab": "vocab:1258570",
+   "vocab_id": 1252,
+   "sentence": "sent:gen-abef3875344f",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "研究室 é a sala onde se faz pesquisa, e 研究をする所 nomeia o mesmo lugar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1252",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-abef3875344f",
+    "sentences_used": [
+     "sent:gen-abef3875344f"
+    ],
+    "options": [
+     {
+      "text": "研究をする所",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "料理を作る店",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "電車を待つ駅",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "本を借りる図書館",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1252": {
+   "id": "us:n4:1252",
+   "level": "n4",
+   "target": "研究室",
+   "correct": "先生は研究室にいます",
+   "wrong": [
+    "毎朝研究室を飲んでから出かけます",
+    "この研究室はとても親切な人です",
+    "店で研究室を三つ買ってきた"
+   ],
+   "vocab": "vocab:1258570",
+   "vocab_id": 1252,
+   "sentence": "sent:gen-abef3875344f",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "研究室 é um lugar, então só 「先生は研究室にいます」 usa a palavra como ela existe."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1252",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-abef3875344f",
+    "sentences_used": [
+     "sent:gen-abef3875344f"
+    ],
+    "options": [
+     {
+      "text": "先生は研究室にいます",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-abef3875344f"
+     },
+     {
+      "text": "毎朝研究室を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この研究室はとても親切な人です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "店で研究室を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1278": {
+   "id": "pp:n4:1278",
+   "level": "n4",
+   "stem": "急げば間に合うよ",
+   "target": "間に合う",
+   "correct": "時間におくれない",
+   "distractors": [
+    "時間がかかる",
+    "時間を教える",
+    "時間がわかる"
+   ],
+   "vocab": "vocab:1215260",
+   "vocab_id": 1278,
+   "sentence": "sent:gen-4f5ce8074635",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "間に合う é chegar antes da hora combinada, ou seja, não se atrasar."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1278",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-4f5ce8074635",
+    "sentences_used": [
+     "sent:gen-4f5ce8074635"
+    ],
+    "options": [
+     {
+      "text": "時間におくれない",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "時間がかかる",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "時間を教える",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "時間がわかる",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1278": {
+   "id": "us:n4:1278",
+   "level": "n4",
+   "target": "間に合う",
+   "correct": "急げば間に合うよ",
+   "wrong": [
+    "毎朝、水を間に合うから元気です",
+    "兄は新しい服を間に合うのが好きだ",
+    "妹は毎日ピアノを間に合うそうです"
+   ],
+   "vocab": "vocab:1215260",
+   "vocab_id": 1278,
+   "sentence": "sent:gen-4f5ce8074635",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "間に合う fala de chegar a tempo e nunca leva objeto com を, então só 「急げば間に合うよ」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1278",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-4f5ce8074635",
+    "sentences_used": [
+     "sent:gen-4f5ce8074635"
+    ],
+    "options": [
+     {
+      "text": "急げば間に合うよ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-4f5ce8074635"
+     },
+     {
+      "text": "毎朝、水を間に合うから元気です",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい服を間に合うのが好きだ",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は毎日ピアノを間に合うそうです",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:859": {
+   "id": "pp:n4:859",
+   "level": "n4",
+   "stem": "世界はいつ終わるのだろうか。",
+   "target": "世界",
+   "correct": "みんなが住んでいる所",
+   "distractors": [
+    "兄が生まれた町",
+    "駅の前の広い道",
+    "北の方の高い山"
+   ],
+   "vocab": "vocab:1373860",
+   "vocab_id": 859,
+   "sentence": "sent:tatoeba-143418",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "世界 é o conjunto de tudo onde as pessoas vivem, e みんなが住んでいる所 diz o mesmo."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x859",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-143418",
+    "sentences_used": [
+     "sent:tatoeba-143418"
+    ],
+    "options": [
+     {
+      "text": "みんなが住んでいる所",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "兄が生まれた町",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "駅の前の広い道",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "北の方の高い山",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:859": {
+   "id": "us:n4:859",
+   "level": "n4",
+   "target": "世界",
+   "correct": "世界はいつ終わるのだろうか。",
+   "wrong": [
+    "店で世界を三つ買ってきた",
+    "学校まで世界で行きました",
+    "兄は新しい世界を着て出かけた"
+   ],
+   "vocab": "vocab:1373860",
+   "vocab_id": 859,
+   "sentence": "sent:tatoeba-143418",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "世界 é o mundo inteiro, não uma mercadoria nem uma roupa, então só 「世界はいつ終わるのだろうか」 está certo."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x859",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-143418",
+    "sentences_used": [
+     "sent:tatoeba-143418"
+    ],
+    "options": [
+     {
+      "text": "世界はいつ終わるのだろうか。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-143418"
+     },
+     {
+      "text": "店で世界を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校まで世界で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい世界を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:807": {
+   "id": "pp:n4:807",
+   "level": "n4",
+   "stem": "この歌を聞くと私の中学校時代を思い出します。",
+   "target": "時代",
+   "correct": "ころ",
+   "distractors": [
+    "時間",
+    "教室",
+    "試験"
+   ],
+   "vocab": "vocab:1316300",
+   "vocab_id": 807,
+   "sentence": "sent:tatoeba-222763",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "中学校時代 é o período em que a pessoa estudou no ginásio, e ころ marca essa mesma época."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x807",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-222763",
+    "sentences_used": [
+     "sent:tatoeba-222763"
+    ],
+    "options": [
+     {
+      "text": "ころ",
+      "role": "correct",
+      "generated": false,
+      "from": "vocab:1579080"
+     },
+     {
+      "text": "時間",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1315920"
+     },
+     {
+      "text": "教室",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1237150"
+     },
+     {
+      "text": "試験",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1312350"
+     }
+    ],
+    "equivalent_source": "vocab-record"
+   }
+  },
+  "us:n4:807": {
+   "id": "us:n4:807",
+   "level": "n4",
+   "target": "時代",
+   "correct": "この歌を聞くと私の中学校時代を思い出します。",
+   "wrong": [
+    "店で時代を三つ買ってきた",
+    "この時代はとてもおいしいです",
+    "毎朝時代を飲んでから出かけます"
+   ],
+   "vocab": "vocab:1316300",
+   "vocab_id": 807,
+   "sentence": "sent:tatoeba-222763",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "時代 é um período de tempo, então só 「私の中学校時代を思い出します」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x807",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-222763",
+    "sentences_used": [
+     "sent:tatoeba-222763"
+    ],
+    "options": [
+     {
+      "text": "この歌を聞くと私の中学校時代を思い出します。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-222763"
+     },
+     {
+      "text": "店で時代を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この時代はとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝時代を飲んでから出かけます",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1290": {
+   "id": "pp:n4:1290",
+   "level": "n4",
+   "stem": "入院しなくてもいいです。",
+   "target": "入院",
+   "correct": "病院に入ること",
+   "distractors": [
+    "病院を出ること",
+    "学校に入ること",
+    "薬を飲むこと"
+   ],
+   "vocab": "vocab:1465720",
+   "vocab_id": 1290,
+   "sentence": "sent:tatoeba-122086",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "入院 é ficar internado, ou seja, entrar no hospital para tratamento."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1290",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-122086",
+    "sentences_used": [
+     "sent:tatoeba-122086"
+    ],
+    "options": [
+     {
+      "text": "病院に入ること",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "病院を出ること",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "学校に入ること",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "薬を飲むこと",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1290": {
+   "id": "us:n4:1290",
+   "level": "n4",
+   "target": "入院",
+   "correct": "入院しなくてもいいです。",
+   "wrong": [
+    "店で入院を三つ買ってきた",
+    "学校まで入院で行きました",
+    "兄は新しい入院を着て出かけた"
+   ],
+   "vocab": "vocab:1465720",
+   "vocab_id": 1290,
+   "sentence": "sent:tatoeba-122086",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "入院 é a ação de dar entrada no hospital, então só 「入院しなくてもいいです」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1290",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-122086",
+    "sentences_used": [
+     "sent:tatoeba-122086"
+    ],
+    "options": [
+     {
+      "text": "入院しなくてもいいです。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-122086"
+     },
+     {
+      "text": "店で入院を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "学校まで入院で行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい入院を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1257": {
+   "id": "pp:n4:1257",
+   "level": "n4",
+   "stem": "動物はでたらめに動くように見える。",
+   "target": "動く",
+   "correct": "走ったり歩いたりする",
+   "distractors": [
+    "食べたり飲んだりする",
+    "話したり書いたりする",
+    "作ったり売ったりする"
+   ],
+   "vocab": "vocab:1451210",
+   "vocab_id": 1257,
+   "sentence": "sent:tatoeba-123754",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "動く é mudar de lugar com o corpo, e 走ったり歩いたりする descreve exatamente esse movimento."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1257",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-123754",
+    "sentences_used": [
+     "sent:tatoeba-123754"
+    ],
+    "options": [
+     {
+      "text": "走ったり歩いたりする",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "食べたり飲んだりする",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "話したり書いたりする",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "作ったり売ったりする",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1257": {
+   "id": "us:n4:1257",
+   "level": "n4",
+   "target": "動く",
+   "correct": "動物はでたらめに動くように見える。",
+   "wrong": [
+    "妹は先生に日本語を動くつもりです",
+    "毎朝、コーヒーを動くのが好きです",
+    "兄は新しい歌を動くのがとても上手です"
+   ],
+   "vocab": "vocab:1451210",
+   "vocab_id": 1257,
+   "sentence": "sent:tatoeba-123754",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "動く é intransitivo e fala de sair do lugar, então só 「動物はでたらめに動くように見える」 o usa corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1257",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-123754",
+    "sentences_used": [
+     "sent:tatoeba-123754"
+    ],
+    "options": [
+     {
+      "text": "動物はでたらめに動くように見える。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-123754"
+     },
+     {
+      "text": "妹は先生に日本語を動くつもりです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "毎朝、コーヒーを動くのが好きです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい歌を動くのがとても上手です",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1197": {
+   "id": "pp:n4:1197",
+   "level": "n4",
+   "stem": "運動しないと太るよ",
+   "target": "太る",
+   "correct": "体が重くなる",
+   "distractors": [
+    "体が軽くなる",
+    "気分が悪くなる",
+    "時間が長くなる"
+   ],
+   "vocab": "vocab:1408220",
+   "vocab_id": 1197,
+   "sentence": "sent:gen-59e54bfec5dd",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "太る é ganhar peso, e 体が重くなる descreve o mesmo resultado no corpo."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1197",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-59e54bfec5dd",
+    "sentences_used": [
+     "sent:gen-59e54bfec5dd"
+    ],
+    "options": [
+     {
+      "text": "体が重くなる",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "体が軽くなる",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "気分が悪くなる",
+      "role": "distractor",
+      "generated": true
+     },
+     {
+      "text": "時間が長くなる",
+      "role": "distractor",
+      "generated": true
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1197": {
+   "id": "us:n4:1197",
+   "level": "n4",
+   "target": "太る",
+   "correct": "運動しないと太るよ",
+   "wrong": [
+    "毎朝、コーヒーを太るのが好きです",
+    "妹は新しい服を太る店に行きました",
+    "兄は日本語を太るために学校へ行く"
+   ],
+   "vocab": "vocab:1408220",
+   "vocab_id": 1197,
+   "sentence": "sent:gen-59e54bfec5dd",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": true,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "太る fala do corpo ganhar peso e não aceita objeto com を, então só 「運動しないと太るよ」 está correto."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1197",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:gen-59e54bfec5dd",
+    "sentences_used": [
+     "sent:gen-59e54bfec5dd"
+    ],
+    "options": [
+     {
+      "text": "運動しないと太るよ",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:gen-59e54bfec5dd"
+     },
+     {
+      "text": "毎朝、コーヒーを太るのが好きです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "妹は新しい服を太る店に行きました",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は日本語を太るために学校へ行く",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  },
+  "pp:n4:1243": {
+   "id": "pp:n4:1243",
+   "level": "n4",
+   "stem": "運転の仕方は、親が教えてくれたんだ。",
+   "target": "仕方",
+   "correct": "やり方",
+   "distractors": [
+    "気持ち",
+    "時間",
+    "お金"
+   ],
+   "vocab": "vocab:1594110",
+   "vocab_id": 1243,
+   "sentence": "sent:tatoeba-11735124",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified",
+   "explanation": {
+    "pt-BR": "仕方 é o modo de fazer alguma coisa, e やり方 é a palavra do dia a dia com esse mesmo sentido."
+   },
+   "provenance": {
+    "work_id": "wpa:n4:x1243",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-11735124",
+    "sentences_used": [
+     "sent:tatoeba-11735124"
+    ],
+    "options": [
+     {
+      "text": "やり方",
+      "role": "correct",
+      "generated": true
+     },
+     {
+      "text": "気持ち",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1591430"
+     },
+     {
+      "text": "時間",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1315920"
+     },
+     {
+      "text": "お金",
+      "role": "distractor",
+      "generated": false,
+      "from": "vocab:1001820"
+     }
+    ],
+    "equivalent_source": "authored"
+   }
+  },
+  "us:n4:1243": {
+   "id": "us:n4:1243",
+   "level": "n4",
+   "target": "仕方",
+   "correct": "運転の仕方は、親が教えてくれたんだ。",
+   "wrong": [
+    "店で仕方を三つ買ってきた",
+    "この仕方はとてもおいしいです",
+    "兄は新しい仕方を着て出かけた"
+   ],
+   "vocab": "vocab:1594110",
+   "vocab_id": 1243,
+   "sentence": "sent:tatoeba-11735124",
+   "layer": "C",
+   "needs_review": true,
+   "ai_generated": false,
+   "source": "authored+verified(real-correct)",
+   "explanation": {
+    "pt-BR": "仕方 é a maneira de fazer algo, então só 「運転の仕方は、親が教えてくれた」 usa a palavra corretamente."
+   },
+   "provenance": {
+    "work_id": "wus:n4:x1243",
+    "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+    "stem_sentence": "sent:tatoeba-11735124",
+    "sentences_used": [
+     "sent:tatoeba-11735124"
+    ],
+    "options": [
+     {
+      "text": "運転の仕方は、親が教えてくれたんだ。",
+      "role": "correct",
+      "generated": false,
+      "from": "sent:tatoeba-11735124"
+     },
+     {
+      "text": "店で仕方を三つ買ってきた",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "この仕方はとてもおいしいです",
+      "role": "wrong",
+      "generated": true
+     },
+     {
+      "text": "兄は新しい仕方を着て出かけた",
+      "role": "wrong",
+      "generated": true
+     }
+    ]
+   }
+  }
+ }
+}

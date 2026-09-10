@@ -1,0 +1,623 @@
+{
+ "file": "authored-_candidate_pool.json.json",
+ "work_file": "_candidate_pool.json",
+ "batch": "_candidate_pool.json",
+ "level": "n4",
+ "reviewed": 44,
+ "verdicts": {
+  "pp:n4:978": {
+   "ok": false,
+   "problem": "Stem not level-clean on the WORD dimension: the stem turns on さえずる, which has NO record in corpus/vocab at all, so it cannot be in any cumulative_known_set and an N4 learner meets an unknown predicate in the learner-visible Japanese. The level gate misses it because the dissection leaves さえずっ unlinked (no tokens[].vocab) - exactly the blind spot the SudachiPy word recount exists to catch. No re-selection available: of the six 小鳥 bank sentences only sent:gen-17c441cf6fea is gate-clean and it carries えさ (餌, vocab:1173340, n3, untaught); the other four fail the kanji/vocab gate. Secondary defect: the key 小さい鳥 reprints BOTH kanji of the target 小鳥 while no distractor shares either, so the item is answerable with zero vocabulary knowledge. If the stem is ever replaced, distractors 大きい鳥 / 小さい犬 / 白い花 (all taught) would make it discriminate on meaning."
+  },
+  "us:n4:978": {
+   "ok": false,
+   "problem": "Same stem defect as pp:n4:978: the correct option is the only level-clean 小鳥 sentence that carries the headword, and its predicate さえずる is absent from corpus/vocab entirely, so the option the learner must recognise as correct usage contains an untaught word. It also carries the punctuation tell (the key is the only option ending in 。), which alone would be a fix rather than a reject."
+  },
+  "pp:n4:1257": {
+   "ok": false,
+   "problem": "Stem not level-clean on the WORD dimension: it contains でたらめ (出鱈目, vocab:1339630, n2), not in the end-of-N4 cumulative_known_set. The token is unlinked in the dissection, so the level gate cannot see it. Not fixable by re-selection: of the fourteen 動く bank sentences only sent:tatoeba-172698 and sent:tatoeba-910460 are both gate-clean and free of untaught words, and neither prints 動く verbatim, so neither can carry this paraphrase stem."
+  },
+  "us:n4:1257": {
+   "ok": false,
+   "problem": "Two defects. (1) The correct option is the same でたらめ sentence as pp:n4:1257 and no level-clean alternative prints 動く. (2) wrong[0] prints 日本語, whose head 日本 (vocab:1582710, n3) is NOT in the end-of-N4 taught set, so the option is built from an untaught word written in taught kanji - the exact failure _README.md names (Stay inside words). It also carries the punctuation tell."
+  },
+  "pp:n4:1009": {
+   "ok": false,
+   "problem": "distractors[2] printed 日本語, whose head 日本 (vocab:1582710, n3) is not in the end-of-N4 cumulative_known_set. All three kanji are taught, so the level gate passes the option and the learner still meets an untaught word (_README.md: an option built from an untaught word written in taught kanji passes the gate and still fails the learner). Swapped for 英語 (vocab:1174420, n5, taught); the distractor keeps its role, its length and its 学校 parallel.",
+   "corrected": {
+    "id": "pp:n4:1009",
+    "level": "n4",
+    "stem": "あの人が新しい校長です",
+    "target": "校長",
+    "correct": "学校でいちばん上の先生",
+    "distractors": [
+     "学校でいちばん新しい学生",
+     "学校の前で待っている人",
+     "学校で英語を習う人"
+    ],
+    "vocab": "vocab:1279590",
+    "vocab_id": 1009,
+    "sentence": "sent:gen-afc2b20beefe",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": true,
+    "source": "authored+verified",
+    "explanation": {
+     "pt-BR": "校長 é o professor que dirige a escola, isto é, o de posição mais alta dentro dela."
+    },
+    "provenance": {
+     "work_id": "wpa:n4:x1009",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:gen-afc2b20beefe",
+     "sentences_used": [
+      "sent:gen-afc2b20beefe"
+     ],
+     "options": [
+      {
+       "text": "学校でいちばん上の先生",
+       "role": "correct",
+       "generated": true
+      },
+      {
+       "text": "学校でいちばん新しい学生",
+       "role": "distractor",
+       "generated": true
+      },
+      {
+       "text": "学校の前で待っている人",
+       "role": "distractor",
+       "generated": true
+      },
+      {
+       "text": "学校で英語を習う人",
+       "role": "distractor",
+       "generated": true
+      }
+     ],
+     "equivalent_source": "authored"
+    }
+   }
+  },
+  "us:n4:1197": {
+   "ok": false,
+   "problem": "wrong[2] printed 日本語; 日本 (vocab:1582710, n3) is untaught at N4, so the option is built from an untaught word written in taught kanji. Swapped for 英語 (vocab:1174420, n5, taught). The misuse (transitive を with the intransitive 太る) is unchanged and still unambiguously wrong. No punctuation change: this key is a generated sentence with no 。, so all four options already match.",
+   "corrected": {
+    "id": "us:n4:1197",
+    "level": "n4",
+    "target": "太る",
+    "correct": "運動しないと太るよ",
+    "wrong": [
+     "毎朝、コーヒーを太るのが好きです",
+     "妹は新しい服を太る店に行きました",
+     "兄は英語を太るために学校へ行く"
+    ],
+    "vocab": "vocab:1408220",
+    "vocab_id": 1197,
+    "sentence": "sent:gen-59e54bfec5dd",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": true,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "太る fala do corpo ganhar peso e não aceita objeto com を, então só 「運動しないと太るよ」 está correto."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x1197",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:gen-59e54bfec5dd",
+     "sentences_used": [
+      "sent:gen-59e54bfec5dd"
+     ],
+     "options": [
+      {
+       "text": "運動しないと太るよ",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:gen-59e54bfec5dd"
+      },
+      {
+       "text": "毎朝、コーヒーを太るのが好きです",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "妹は新しい服を太る店に行きました",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "兄は英語を太るために学校へ行く",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "us:n4:806": {
+   "ok": false,
+   "problem": "Two defects. (1) wrong[2] 「このパートはとてもおいしいです」 has a rescuing reading: colloquial おいしい in the sense lucrative / a sweet deal collocates precisely with part-time work (おいしいバイト, おいしい仕事), so a native reads it as this part-time job pays really well - acceptable Japanese, and the item then has two defensible answers. This is the class _README.md rejects (「土曜日にパーティーを開けます」). Replaced with 「妹はパートを着て学校へ行きました。」, which no reading rescues. (2) The key is the ONLY option ending in 。, so the item is answerable without reading any Japanese; all 182 shipped usage items terminate every wrong sentence in 。 and none has this tell. Recorded, not fixed: the stem also carries ごめん (御免, vocab:1270670, n2, untaught, level agreement 1/3) and is a two-sentence option, but the only other level-clean パート sentence (sent:tatoeba-210043) uses the section sense the vocab record does not carry.",
+   "corrected": {
+    "id": "us:n4:806",
+    "level": "n4",
+    "target": "パート",
+    "correct": "ごめんね。明日は朝からパートがあるのよ。",
+    "wrong": [
+     "毎朝パートを飲んでから出かけます。",
+     "学校までパートで行きました。",
+     "妹はパートを着て学校へ行きました。"
+    ],
+    "vocab": "vocab:1100810",
+    "vocab_id": 806,
+    "sentence": "sent:tatoeba-76720",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": false,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "パート é um trabalho de algumas horas por dia, então só 「明日は朝からパートがあるのよ」 usa a palavra num contexto real."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x806",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:tatoeba-76720",
+     "sentences_used": [
+      "sent:tatoeba-76720"
+     ],
+     "options": [
+      {
+       "text": "ごめんね。明日は朝からパートがあるのよ。",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:tatoeba-76720"
+      },
+      {
+       "text": "毎朝パートを飲んでから出かけます。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "学校までパートで行きました。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "妹はパートを着て学校へ行きました。",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "us:n4:807": {
+   "ok": false,
+   "problem": "Two defects. (1) wrong[1] 「この時代はとてもおいしいです」 has a rescuing reading: おいしい時代 in the lucrative-era sense is attested colloquial Japanese, so the sentence is not unambiguously a misuse. Replaced with 「かばんの中に時代を入れました。」 (かばん = 鞄, vocab:1208910, n5, taught; 入れる vocab:1465610, n5), which nothing rescues. (2) The key is the only option ending in 。 - see us:n4:806. Both fixed.",
+   "corrected": {
+    "id": "us:n4:807",
+    "level": "n4",
+    "target": "時代",
+    "correct": "この歌を聞くと私の中学校時代を思い出します。",
+    "wrong": [
+     "店で時代を三つ買ってきた。",
+     "かばんの中に時代を入れました。",
+     "毎朝時代を飲んでから出かけます。"
+    ],
+    "vocab": "vocab:1316300",
+    "vocab_id": 807,
+    "sentence": "sent:tatoeba-222763",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": false,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "時代 é um período de tempo, então só 「私の中学校時代を思い出します」 usa a palavra corretamente."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x807",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:tatoeba-222763",
+     "sentences_used": [
+      "sent:tatoeba-222763"
+     ],
+     "options": [
+      {
+       "text": "この歌を聞くと私の中学校時代を思い出します。",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:tatoeba-222763"
+      },
+      {
+       "text": "店で時代を三つ買ってきた。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "かばんの中に時代を入れました。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "毎朝時代を飲んでから出かけます。",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "us:n4:1243": {
+   "ok": false,
+   "problem": "Two defects. (1) wrong[1] 「この仕方はとてもおいしいです」 rides the same おいしい = lucrative idiom (おいしいやり方 / おいしい話), so a native can read it as an acceptable sentence. Replaced with 「妹は仕方に住んでいます。」. (2) The key is the only option ending in 。 - see us:n4:806. Both fixed. Recorded, not a defect: in the twin pp:n4:1243 the key やり方 shares 方 with the target 仕方 while no distractor does, but both morphemes are taught (やる vocab:1012980 n5, 方 vocab:1516925 n5) and the shape occurs in 5/50 shipped n4, 7/49 n5 and 17/64 n3 paraphrase items, so it is bank-normal.",
+   "corrected": {
+    "id": "us:n4:1243",
+    "level": "n4",
+    "target": "仕方",
+    "correct": "運転の仕方は、親が教えてくれたんだ。",
+    "wrong": [
+     "店で仕方を三つ買ってきた。",
+     "妹は仕方に住んでいます。",
+     "兄は新しい仕方を着て出かけた。"
+    ],
+    "vocab": "vocab:1594110",
+    "vocab_id": 1243,
+    "sentence": "sent:tatoeba-11735124",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": false,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "仕方 é a maneira de fazer algo, então só 「運転の仕方は、親が教えてくれた」 usa a palavra corretamente."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x1243",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:tatoeba-11735124",
+     "sentences_used": [
+      "sent:tatoeba-11735124"
+     ],
+     "options": [
+      {
+       "text": "運転の仕方は、親が教えてくれたんだ。",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:tatoeba-11735124"
+      },
+      {
+       "text": "店で仕方を三つ買ってきた。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "妹は仕方に住んでいます。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "兄は新しい仕方を着て出かけた。",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "us:n4:840": {
+   "ok": false,
+   "problem": "The key is the ONLY option ending in 。 (it is the real bank sentence, verbatim; the three wrong sentences are authored without it), so the item is answerable without reading any Japanese. None of the 182 shipped usage items has this tell - every authored wrong sentence there ends in 。. Fixed by terminating the three wrong sentences; the key is untouched and stays byte-exact with bank.json. This deliberately overrides design/translation_style.md line 23 (Generated Japanese sentences must NOT end with 。) for exam options, where option parity outranks it and where the shipped banks already resolve it the same way.",
+   "corrected": {
+    "id": "us:n4:840",
+    "level": "n4",
+    "target": "用事",
+    "correct": "悪いけどほかに用事があるの。",
+    "wrong": [
+     "店で用事を三つ買ってきた。",
+     "この用事はとても親切な人です。",
+     "兄は新しい用事を着て出かけた。"
+    ],
+    "vocab": "vocab:1546300",
+    "vocab_id": 840,
+    "sentence": "sent:tatoeba-191501",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": false,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "用事 é algo a resolver, não um objeto nem o tempo, então só 「ほかに用事があるの」 está certo."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x840",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:tatoeba-191501",
+     "sentences_used": [
+      "sent:tatoeba-191501"
+     ],
+     "options": [
+      {
+       "text": "悪いけどほかに用事があるの。",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:tatoeba-191501"
+      },
+      {
+       "text": "店で用事を三つ買ってきた。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "この用事はとても親切な人です。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "兄は新しい用事を着て出かけた。",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "us:n4:848": {
+   "ok": false,
+   "problem": "The key is the ONLY option ending in 。 (it is the real bank sentence, verbatim; the three wrong sentences are authored without it), so the item is answerable without reading any Japanese. None of the 182 shipped usage items has this tell - every authored wrong sentence there ends in 。. Fixed by terminating the three wrong sentences; the key is untouched and stays byte-exact with bank.json. This deliberately overrides design/translation_style.md line 23 (Generated Japanese sentences must NOT end with 。) for exam options, where option parity outranks it and where the shipped banks already resolve it the same way. Recorded, not fixed: the stem carries ずっと (vocab:1006380, n3, level agreement 1/3, single source), untaught at N4. Both alternatives are worse - sent:tatoeba-172775 carries ゆったり (no vocab record at all) and sent:tatoeba-189575 is already the stem of cf:n4:3876:848, the context_fill item whose key IS 気分, so swapping would hand that answer away.",
+   "corrected": {
+    "id": "us:n4:848",
+    "level": "n4",
+    "target": "気分",
+    "correct": "今日はずっと気分がよい。",
+    "wrong": [
+     "店の前で気分を三つ買いました。",
+     "兄は新しい気分を着て出かけた。",
+     "この気分は駅からとても近いです。"
+    ],
+    "vocab": "vocab:1222590",
+    "vocab_id": 848,
+    "sentence": "sent:tatoeba-171774",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": false,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "気分 é a disposição de quem fala, e não algo que se compre, se vista ou fique perto de um lugar."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x848",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:tatoeba-171774",
+     "sentences_used": [
+      "sent:tatoeba-171774"
+     ],
+     "options": [
+      {
+       "text": "今日はずっと気分がよい。",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:tatoeba-171774"
+      },
+      {
+       "text": "店の前で気分を三つ買いました。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "兄は新しい気分を着て出かけた。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "この気分は駅からとても近いです。",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "us:n4:859": {
+   "ok": false,
+   "problem": "The key is the ONLY option ending in 。 (it is the real bank sentence, verbatim; the three wrong sentences are authored without it), so the item is answerable without reading any Japanese. None of the 182 shipped usage items has this tell - every authored wrong sentence there ends in 。. Fixed by terminating the three wrong sentences; the key is untouched and stays byte-exact with bank.json. This deliberately overrides design/translation_style.md line 23 (Generated Japanese sentences must NOT end with 。) for exam options, where option parity outranks it and where the shipped banks already resolve it the same way.",
+   "corrected": {
+    "id": "us:n4:859",
+    "level": "n4",
+    "target": "世界",
+    "correct": "世界はいつ終わるのだろうか。",
+    "wrong": [
+     "店で世界を三つ買ってきた。",
+     "学校まで世界で行きました。",
+     "兄は新しい世界を着て出かけた。"
+    ],
+    "vocab": "vocab:1373860",
+    "vocab_id": 859,
+    "sentence": "sent:tatoeba-143418",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": false,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "世界 é o mundo inteiro, não uma mercadoria nem uma roupa, então só 「世界はいつ終わるのだろうか」 está certo."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x859",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:tatoeba-143418",
+     "sentences_used": [
+      "sent:tatoeba-143418"
+     ],
+     "options": [
+      {
+       "text": "世界はいつ終わるのだろうか。",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:tatoeba-143418"
+      },
+      {
+       "text": "店で世界を三つ買ってきた。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "学校まで世界で行きました。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "兄は新しい世界を着て出かけた。",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "us:n4:1290": {
+   "ok": false,
+   "problem": "The key is the ONLY option ending in 。 (it is the real bank sentence, verbatim; the three wrong sentences are authored without it), so the item is answerable without reading any Japanese. None of the 182 shipped usage items has this tell - every authored wrong sentence there ends in 。. Fixed by terminating the three wrong sentences; the key is untouched and stays byte-exact with bank.json. This deliberately overrides design/translation_style.md line 23 (Generated Japanese sentences must NOT end with 。) for exam options, where option parity outranks it and where the shipped banks already resolve it the same way.",
+   "corrected": {
+    "id": "us:n4:1290",
+    "level": "n4",
+    "target": "入院",
+    "correct": "入院しなくてもいいです。",
+    "wrong": [
+     "店で入院を三つ買ってきた。",
+     "学校まで入院で行きました。",
+     "兄は新しい入院を着て出かけた。"
+    ],
+    "vocab": "vocab:1465720",
+    "vocab_id": 1290,
+    "sentence": "sent:tatoeba-122086",
+    "layer": "C",
+    "needs_review": true,
+    "ai_generated": false,
+    "source": "authored+verified(real-correct)",
+    "explanation": {
+     "pt-BR": "入院 é a ação de dar entrada no hospital, então só 「入院しなくてもいいです」 está correto."
+    },
+    "provenance": {
+     "work_id": "wus:n4:x1290",
+     "batch": "_candidate_pool.json (n4 extension slice, ranks 26+)",
+     "stem_sentence": "sent:tatoeba-122086",
+     "sentences_used": [
+      "sent:tatoeba-122086"
+     ],
+     "options": [
+      {
+       "text": "入院しなくてもいいです。",
+       "role": "correct",
+       "generated": false,
+       "from": "sent:tatoeba-122086"
+      },
+      {
+       "text": "店で入院を三つ買ってきた。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "学校まで入院で行きました。",
+       "role": "wrong",
+       "generated": true
+      },
+      {
+       "text": "兄は新しい入院を着て出かけた。",
+       "role": "wrong",
+       "generated": true
+      }
+     ]
+    }
+   }
+  },
+  "pp:n4:1203": {
+   "ok": true
+  },
+  "us:n4:1203": {
+   "ok": true
+  },
+  "pp:n4:1230": {
+   "ok": true
+  },
+  "us:n4:1230": {
+   "ok": true
+  },
+  "pp:n4:848": {
+   "ok": true
+  },
+  "pp:n4:942": {
+   "ok": true
+  },
+  "us:n4:942": {
+   "ok": true
+  },
+  "pp:n4:1149": {
+   "ok": true
+  },
+  "us:n4:1149": {
+   "ok": true
+  },
+  "pp:n4:870": {
+   "ok": true
+  },
+  "us:n4:870": {
+   "ok": true
+  },
+  "pp:n4:806": {
+   "ok": true
+  },
+  "pp:n4:973": {
+   "ok": true
+  },
+  "us:n4:973": {
+   "ok": true
+  },
+  "pp:n4:1026": {
+   "ok": true
+  },
+  "us:n4:1026": {
+   "ok": true
+  },
+  "pp:n4:881": {
+   "ok": true
+  },
+  "us:n4:881": {
+   "ok": true
+  },
+  "pp:n4:994": {
+   "ok": true
+  },
+  "us:n4:994": {
+   "ok": true
+  },
+  "us:n4:1009": {
+   "ok": true
+  },
+  "pp:n4:840": {
+   "ok": true
+  },
+  "pp:n4:1252": {
+   "ok": true
+  },
+  "us:n4:1252": {
+   "ok": true
+  },
+  "pp:n4:1278": {
+   "ok": true
+  },
+  "us:n4:1278": {
+   "ok": true
+  },
+  "pp:n4:859": {
+   "ok": true
+  },
+  "pp:n4:807": {
+   "ok": true
+  },
+  "pp:n4:1290": {
+   "ok": true
+  },
+  "pp:n4:1197": {
+   "ok": true
+  },
+  "pp:n4:1243": {
+   "ok": true
+  }
+ }
+}

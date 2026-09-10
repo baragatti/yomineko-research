@@ -1,0 +1,1141 @@
+{
+  "work_file": "work-usage-n5-01.json",
+  "family": "usage",
+  "level": "n5",
+  "stage": "W18b authoring: rows authored from the prepare work file, pending verification",
+  "authored_utc": "2026-09-10",
+  "candidates_in_work_file": 22,
+  "rows_authored": 22,
+  "deficit_to_floor": 0,
+  "notes": [
+    "Every `correct` is a bank sentence copied verbatim from its pool_sentences entry; no key was written by the author (spec 1.2 select over generate).",
+    "All 66 wrong-usage sentences are authored; each carries the headword verbatim and every printed kanji is inside level_allowed.kanji.",
+    "`explanation` is a locale-object {\"pt-BR\": ...} per design/i18n.md; the builder has no explanation field yet (see _README.md, 'Open for W18').",
+    "us:n5:68 (入り口, vid 68) is listed in research/derived/reauthor/exam_authored/_flagged.json (n5_b2). It is re-authored here against the recorded reason and MUST NOT ship unless that entry is removed in the same commit.",
+    "rows_authored 22 of 22 candidates; the n5 usage deficit is 0 (the real N5 paper has no 用法 section), so this file is depth for study mode."
+  ],
+  "rows": [
+    {
+      "id": "us:n5:317",
+      "level": "n5",
+      "target": "人",
+      "correct": "学校に人がいる。",
+      "wrong": [
+        "つくえの上に人がおいてある。",
+        "にわに人がにひきいる。",
+        "うちのねこは白い人だ。"
+      ],
+      "vocab": "vocab:1580640",
+      "vocab_id": 317,
+      "sentence": "sent:tatoeba-6828196",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "人 é a palavra para pessoa e só a frase da escola a usa nesse sentido, porque nas outras ela vira um objeto posto sobre a mesa, é contada com o sufixo de animais e serve para descrever um gato."
+      },
+      "provenance": {
+        "work_id": "wus:n5:01",
+        "stem_sentence": "sent:tatoeba-6828196",
+        "sentences_used": [
+          "sent:tatoeba-6828196"
+        ],
+        "options": [
+          {
+            "text": "学校に人がいる。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-6828196"
+          },
+          {
+            "text": "つくえの上に人がおいてある。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "にわに人がにひきいる。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "うちのねこは白い人だ。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:649",
+      "level": "n5",
+      "target": "休み",
+      "correct": "もっと休みをとったほうがいい。",
+      "wrong": [
+        "まどから休みが入ってくる。",
+        "休みを飲むとげんきになる。",
+        "休みは白くて大きいいぬだ。"
+      ],
+      "vocab": "vocab:1227500",
+      "vocab_id": 649,
+      "sentence": "sent:tatoeba-3366998",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "休み é o substantivo que nomeia a folga ou o descanso, sentido que aparece só na frase de tirar mais folga, já que descanso não entra pela janela, não se bebe e não é um cachorro."
+      },
+      "provenance": {
+        "work_id": "wus:n5:02",
+        "stem_sentence": "sent:tatoeba-3366998",
+        "sentences_used": [
+          "sent:tatoeba-3366998"
+        ],
+        "options": [
+          {
+            "text": "もっと休みをとったほうがいい。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-3366998"
+          },
+          {
+            "text": "まどから休みが入ってくる。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "休みを飲むとげんきになる。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "休みは白くて大きいいぬだ。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:286",
+      "level": "n5",
+      "target": "時間",
+      "correct": "出かける時間になった。",
+      "wrong": [
+        "あしたの時間は雨でしょう。",
+        "じゅぎょうは九時間からはじまる。",
+        "かばんの中に時間を入れた。"
+      ],
+      "vocab": "vocab:1315920",
+      "vocab_id": 286,
+      "sentence": "sent:tatoeba-147804",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "時間 é a hora marcada ou a duração, sentido da frase em que chegou a hora de sair, porque previsão do tempo pede 天気, o horário de início pede 九時 e tempo não cabe dentro de uma bolsa."
+      },
+      "provenance": {
+        "work_id": "wus:n5:03",
+        "stem_sentence": "sent:tatoeba-147804",
+        "sentences_used": [
+          "sent:tatoeba-147804"
+        ],
+        "options": [
+          {
+            "text": "出かける時間になった。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-147804"
+          },
+          {
+            "text": "あしたの時間は雨でしょう。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "じゅぎょうは九時間からはじまる。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "かばんの中に時間を入れた。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:373",
+      "level": "n5",
+      "target": "出す",
+      "correct": "おじは気前よく金を出す。",
+      "wrong": [
+        "電車は八時に駅を出す。",
+        "あついのでまどを出す。",
+        "まいあさ、はやく目を出す。"
+      ],
+      "vocab": "vocab:1338180",
+      "vocab_id": 373,
+      "sentence": "sent:tatoeba-227715",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "出す é transitivo e significa pôr algo para fora ou desembolsar, que é o que o tio faz com o dinheiro, enquanto partir da estação pede 出る, abrir a janela pede 開ける e acordar pede 目をさます."
+      },
+      "provenance": {
+        "work_id": "wus:n5:04",
+        "stem_sentence": "sent:tatoeba-227715",
+        "sentences_used": [
+          "sent:tatoeba-227715"
+        ],
+        "options": [
+          {
+            "text": "おじは気前よく金を出す。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-227715"
+          },
+          {
+            "text": "電車は八時に駅を出す。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "あついのでまどを出す。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "まいあさ、はやく目を出す。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:670",
+      "level": "n5",
+      "target": "来月",
+      "correct": "来月には子どもが生まれるんだよ。",
+      "wrong": [
+        "来月、わたしは学校へ行きました。",
+        "あの女の子の名前は来月です。",
+        "来月はあまくておいしかった。"
+      ],
+      "vocab": "vocab:1547900",
+      "vocab_id": 670,
+      "sentence": "sent:tatoeba-8988166",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "来月 aponta para o mês que ainda vem, por isso só combina com o bebê que vai nascer, já que a ida à escola está no passado, um mês não é nome de pessoa e não tem sabor."
+      },
+      "provenance": {
+        "work_id": "wus:n5:05",
+        "stem_sentence": "sent:tatoeba-8988166",
+        "sentences_used": [
+          "sent:tatoeba-8988166"
+        ],
+        "options": [
+          {
+            "text": "来月には子どもが生まれるんだよ。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-8988166"
+          },
+          {
+            "text": "来月、わたしは学校へ行きました。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "あの女の子の名前は来月です。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "来月はあまくておいしかった。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:620",
+      "level": "n5",
+      "target": "道",
+      "correct": "道はずっとのぼりだ。",
+      "wrong": [
+        "いもうとがつくった道はおいしい。",
+        "まいにち道を読んでいる。",
+        "道はわたしのともだちです。"
+      ],
+      "vocab": "vocab:1454080",
+      "vocab_id": 620,
+      "sentence": "sent:tatoeba-123591",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "道 é a rua ou o caminho por onde se anda, sentido da frase da subida, e um caminho não é comida, não é leitura e não é uma pessoa amiga."
+      },
+      "provenance": {
+        "work_id": "wus:n5:06",
+        "stem_sentence": "sent:tatoeba-123591",
+        "sentences_used": [
+          "sent:tatoeba-123591"
+        ],
+        "options": [
+          {
+            "text": "道はずっとのぼりだ。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-123591"
+          },
+          {
+            "text": "いもうとがつくった道はおいしい。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "まいにち道を読んでいる。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "道はわたしのともだちです。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:68",
+      "level": "n5",
+      "target": "入り口",
+      "correct": "学校の入り口で会おう",
+      "wrong": [
+        "あの入り口はとてもやさしい",
+        "さむいので入り口をかぶった",
+        "入り口を三さつ読んだ"
+      ],
+      "vocab": "vocab:1582820",
+      "vocab_id": 68,
+      "sentence": "sent:gen-5c864f44379e",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": true,
+      "source": "authored+verified(bank-correct)",
+      "explanation": {
+        "pt-BR": "入り口 é o lugar por onde se entra, que é onde os dois combinam de se encontrar, e uma entrada não é gentil, não se veste na cabeça e não se lê em três volumes."
+      },
+      "provenance": {
+        "work_id": "wus:n5:07",
+        "stem_sentence": "sent:gen-5c864f44379e",
+        "sentences_used": [
+          "sent:gen-5c864f44379e"
+        ],
+        "options": [
+          {
+            "text": "学校の入り口で会おう",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:gen-5c864f44379e"
+          },
+          {
+            "text": "あの入り口はとてもやさしい",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "さむいので入り口をかぶった",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "入り口を三さつ読んだ",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:420",
+      "level": "n5",
+      "target": "テスト",
+      "correct": "どんなテストですか。",
+      "wrong": [
+        "テストに道を聞いた。",
+        "あついので、テストをぬいだ。",
+        "テストはとてもおいしかった。"
+      ],
+      "vocab": "vocab:1079760",
+      "vocab_id": 420,
+      "sentence": "sent:tatoeba-199569",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "テスト é a prova ou o teste, sentido da pergunta sobre que tipo de prova é, já que uma prova não indica o caminho, não se tira do corpo como roupa e não tem gosto."
+      },
+      "provenance": {
+        "work_id": "wus:n5:08",
+        "stem_sentence": "sent:tatoeba-199569",
+        "sentences_used": [
+          "sent:tatoeba-199569"
+        ],
+        "options": [
+          {
+            "text": "どんなテストですか。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-199569"
+          },
+          {
+            "text": "テストに道を聞いた。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "あついので、テストをぬいだ。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "テストはとてもおいしかった。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:416",
+      "level": "n5",
+      "target": "出かける",
+      "correct": "出かける前に食べなくてはならない。",
+      "wrong": [
+        "先生にしゅくだいを出かける。",
+        "かぜをひいたので、うちで出かける。",
+        "電車が駅を出かける。"
+      ],
+      "vocab": "vocab:1598550",
+      "vocab_id": 416,
+      "sentence": "sent:tatoeba-147790",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "出かける é intransitivo e significa sair de casa, como na frase de comer antes de sair, enquanto entregar a tarefa pede 出す, ficar em casa contradiz o próprio verbo e o trem que parte da estação pede 出る."
+      },
+      "provenance": {
+        "work_id": "wus:n5:09",
+        "stem_sentence": "sent:tatoeba-147790",
+        "sentences_used": [
+          "sent:tatoeba-147790"
+        ],
+        "options": [
+          {
+            "text": "出かける前に食べなくてはならない。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-147790"
+          },
+          {
+            "text": "先生にしゅくだいを出かける。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "かぜをひいたので、うちで出かける。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "電車が駅を出かける。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:419",
+      "level": "n5",
+      "target": "出口",
+      "correct": "あの出口から出ましょう",
+      "wrong": [
+        "出口を三ばい飲んだ",
+        "この出口はあまくておいしい",
+        "出口がいたいので、びょういんへ行く"
+      ],
+      "vocab": "vocab:1338850",
+      "vocab_id": 419,
+      "sentence": "sent:gen-c3c28b60e4e7",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": true,
+      "source": "authored+verified(bank-correct)",
+      "explanation": {
+        "pt-BR": "出口 é o lugar por onde se sai, que é o que os dois vão usar, e uma saída não se bebe em copos, não tem gosto doce e não dói."
+      },
+      "provenance": {
+        "work_id": "wus:n5:10",
+        "stem_sentence": "sent:gen-c3c28b60e4e7",
+        "sentences_used": [
+          "sent:gen-c3c28b60e4e7"
+        ],
+        "options": [
+          {
+            "text": "あの出口から出ましょう",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:gen-c3c28b60e4e7"
+          },
+          {
+            "text": "出口を三ばい飲んだ",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "この出口はあまくておいしい",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "出口がいたいので、びょういんへ行く",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:326",
+      "level": "n5",
+      "target": "少し",
+      "correct": "少し休んだほうがいい。",
+      "wrong": [
+        "つくえの上に本が少し五さつある。",
+        "コップに少しな水を入れた。",
+        "千人ぐらいの人が少しいた。"
+      ],
+      "vocab": "vocab:1348870",
+      "vocab_id": 326,
+      "sentence": "sent:tatoeba-3495506",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "少し é o advérbio um pouco, que aqui mede o quanto se deve descansar, por isso não acompanha uma quantidade exata, não recebe な e não convive com mil pessoas."
+      },
+      "provenance": {
+        "work_id": "wus:n5:11",
+        "stem_sentence": "sent:tatoeba-3495506",
+        "sentences_used": [
+          "sent:tatoeba-3495506"
+        ],
+        "options": [
+          {
+            "text": "少し休んだほうがいい。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-3495506"
+          },
+          {
+            "text": "つくえの上に本が少し五さつある。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "コップに少しな水を入れた。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "千人ぐらいの人が少しいた。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:672",
+      "level": "n5",
+      "target": "来年",
+      "correct": "デパートで来年のカレンダーを買いました。",
+      "wrong": [
+        "来年、わたしは学校を休みました。",
+        "来年へ行って、ともだちに会った。",
+        "来年を三つ買ってきた。"
+      ],
+      "vocab": "vocab:1548220",
+      "vocab_id": 672,
+      "sentence": "sent:tatoeba-10899741",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "来年 é o ano que ainda vem, sentido do calendário comprado na loja de departamentos, e por isso não combina com uma falta já ocorrida, não é lugar para onde se vai nem mercadoria contada em três."
+      },
+      "provenance": {
+        "work_id": "wus:n5:12",
+        "stem_sentence": "sent:tatoeba-10899741",
+        "sentences_used": [
+          "sent:tatoeba-10899741"
+        ],
+        "options": [
+          {
+            "text": "デパートで来年のカレンダーを買いました。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-10899741"
+          },
+          {
+            "text": "来年、わたしは学校を休みました。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "来年へ行って、ともだちに会った。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "来年を三つ買ってきた。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:671",
+      "level": "n5",
+      "target": "来週",
+      "correct": "来週までごきげんよう。",
+      "wrong": [
+        "来週、駅で先生に会った。",
+        "来週な日は休みだ。",
+        "来週はとても高い山だ。"
+      ],
+      "vocab": "vocab:1548010",
+      "vocab_id": 671,
+      "sentence": "sent:tatoeba-78634",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "来週 é a semana que vem, o que faz sentido numa despedida, enquanto o encontro na estação já aconteceu, o advérbio não recebe な e uma semana não é uma montanha alta."
+      },
+      "provenance": {
+        "work_id": "wus:n5:13",
+        "stem_sentence": "sent:tatoeba-78634",
+        "sentences_used": [
+          "sent:tatoeba-78634"
+        ],
+        "options": [
+          {
+            "text": "来週までごきげんよう。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-78634"
+          },
+          {
+            "text": "来週、駅で先生に会った。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "来週な日は休みだ。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "来週はとても高い山だ。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:344",
+      "level": "n5",
+      "target": "先月",
+      "correct": "先月インフルエンザにかかった。",
+      "wrong": [
+        "あしたから先月がはじまります。",
+        "先月をコップに入れて飲んだ。",
+        "先月は雨がふるでしょう。"
+      ],
+      "vocab": "vocab:1387500",
+      "vocab_id": 344,
+      "sentence": "sent:tatoeba-141890",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "先月 aponta para o mês que já passou, como na gripe que a pessoa pegou, e por isso não começa amanhã, não se bebe num copo e não entra numa previsão de chuva."
+      },
+      "provenance": {
+        "work_id": "wus:n5:14",
+        "stem_sentence": "sent:tatoeba-141890",
+        "sentences_used": [
+          "sent:tatoeba-141890"
+        ],
+        "options": [
+          {
+            "text": "先月インフルエンザにかかった。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-141890"
+          },
+          {
+            "text": "あしたから先月がはじまります。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "先月をコップに入れて飲んだ。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "先月は雨がふるでしょう。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:345",
+      "level": "n5",
+      "target": "先週",
+      "correct": "母は先週インフルエンザにかかりました。",
+      "wrong": [
+        "先週、これから駅へ行きます。",
+        "先週はとてもあまくておいしかった。",
+        "あの人の名前は先週だと聞きました。"
+      ],
+      "vocab": "vocab:1387870",
+      "vocab_id": 345,
+      "sentence": "sent:tatoeba-82900",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "先週 é a semana passada, quando a mãe pegou gripe, e por isso não convive com これから, não tem sabor e não é nome de gente."
+      },
+      "provenance": {
+        "work_id": "wus:n5:15",
+        "stem_sentence": "sent:tatoeba-82900",
+        "sentences_used": [
+          "sent:tatoeba-82900"
+        ],
+        "options": [
+          {
+            "text": "母は先週インフルエンザにかかりました。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-82900"
+          },
+          {
+            "text": "先週、これから駅へ行きます。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "先週はとてもあまくておいしかった。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "あの人の名前は先週だと聞きました。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:424",
+      "level": "n5",
+      "target": "出る",
+      "correct": "どこから出るんですか。",
+      "wrong": [
+        "ともだちにてがみを出る。",
+        "今日の出るは八時です。",
+        "くすりを出ると、よくなる。"
+      ],
+      "vocab": "vocab:1338240",
+      "vocab_id": 424,
+      "sentence": "sent:tatoeba-201017",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "出る é intransitivo e quer dizer sair de um lugar, como na pergunta sobre de onde algo parte, já que enviar uma carta pede 出す, o verbo não vira substantivo depois de の e remédio se toma."
+      },
+      "provenance": {
+        "work_id": "wus:n5:16",
+        "stem_sentence": "sent:tatoeba-201017",
+        "sentences_used": [
+          "sent:tatoeba-201017"
+        ],
+        "options": [
+          {
+            "text": "どこから出るんですか。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-201017"
+          },
+          {
+            "text": "ともだちにてがみを出る。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "今日の出るは八時です。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "くすりを出ると、よくなる。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:599",
+      "level": "n5",
+      "target": "毎年",
+      "correct": "毎年ここに来なきゃ。",
+      "wrong": [
+        "毎年、きのう学校を休んだ。",
+        "毎年なパーティーはたのしい。",
+        "毎年をかばんに入れた。"
+      ],
+      "vocab": "vocab:1584360",
+      "vocab_id": 599,
+      "sentence": "sent:tatoeba-81248",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "毎年 marca o que se repete todo ano, o que combina com a visita anual, e por isso não convive com um dia único como ontem, não recebe な e não cabe dentro de uma bolsa."
+      },
+      "provenance": {
+        "work_id": "wus:n5:17",
+        "stem_sentence": "sent:tatoeba-81248",
+        "sentences_used": [
+          "sent:tatoeba-81248"
+        ],
+        "options": [
+          {
+            "text": "毎年ここに来なきゃ。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-81248"
+          },
+          {
+            "text": "毎年、きのう学校を休んだ。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "毎年なパーティーはたのしい。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "毎年をかばんに入れた。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:598",
+      "level": "n5",
+      "target": "毎日",
+      "correct": "母は毎日うちにいます。",
+      "wrong": [
+        "毎日、あしたテストがあります。",
+        "毎日を三つ買ってきた。",
+        "毎日をかぶって学校へ行く。"
+      ],
+      "vocab": "vocab:1524720",
+      "vocab_id": 598,
+      "sentence": "sent:tatoeba-82855",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "毎日 marca o que acontece todos os dias, como a mãe que fica em casa, e por isso não combina com um evento único de amanhã, não se compra em três unidades e não se veste para ir à escola."
+      },
+      "provenance": {
+        "work_id": "wus:n5:18",
+        "stem_sentence": "sent:tatoeba-82855",
+        "sentences_used": [
+          "sent:tatoeba-82855"
+        ],
+        "options": [
+          {
+            "text": "母は毎日うちにいます。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-82855"
+          },
+          {
+            "text": "毎日、あしたテストがあります。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "毎日を三つ買ってきた。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "毎日をかぶって学校へ行く。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:597",
+      "level": "n5",
+      "target": "毎週",
+      "correct": "毎週おばあさんに会いに行く",
+      "wrong": [
+        "毎週、きのうプールでおよいだ",
+        "毎週をつくえの上においた",
+        "毎週はとてもあまくておいしい"
+      ],
+      "vocab": "vocab:1524690",
+      "vocab_id": 597,
+      "sentence": "sent:gen-cc2358448d74",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": true,
+      "source": "authored+verified(bank-correct)",
+      "explanation": {
+        "pt-BR": "毎週 marca a repetição semanal da visita à avó, e por isso não descreve o que aconteceu só ontem, não é objeto que se apoie na mesa e não tem sabor."
+      },
+      "provenance": {
+        "work_id": "wus:n5:19",
+        "stem_sentence": "sent:gen-cc2358448d74",
+        "sentences_used": [
+          "sent:gen-cc2358448d74"
+        ],
+        "options": [
+          {
+            "text": "毎週おばあさんに会いに行く",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:gen-cc2358448d74"
+          },
+          {
+            "text": "毎週、きのうプールでおよいだ",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "毎週をつくえの上においた",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "毎週はとてもあまくておいしい",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:627",
+      "level": "n5",
+      "target": "見る",
+      "correct": "まいにち テレビを 見る",
+      "wrong": [
+        "ラジオでニュースを見る",
+        "まどから雨が見る",
+        "耳でおんがくを見る"
+      ],
+      "vocab": "vocab:1259290",
+      "vocab_id": 627,
+      "sentence": "sent:gen-97a9a63e32d1",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": true,
+      "source": "authored+verified(bank-correct)",
+      "explanation": {
+        "pt-BR": "見る é ver ou assistir com os olhos, como a televisão de todo dia, enquanto o rádio se ouve, a chuva vista pela janela pede 見える e música se escuta com o ouvido."
+      },
+      "provenance": {
+        "work_id": "wus:n5:20",
+        "stem_sentence": "sent:gen-97a9a63e32d1",
+        "sentences_used": [
+          "sent:gen-97a9a63e32d1"
+        ],
+        "options": [
+          {
+            "text": "まいにち テレビを 見る",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:gen-97a9a63e32d1"
+          },
+          {
+            "text": "ラジオでニュースを見る",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "まどから雨が見る",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "耳でおんがくを見る",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:498",
+      "level": "n5",
+      "target": "飲む",
+      "correct": "スプーンでスープを飲む",
+      "wrong": [
+        "ひるごはんにパンを飲む",
+        "新しい本を飲むのがすきだ",
+        "まいにち、うたを飲む"
+      ],
+      "vocab": "vocab:1169870",
+      "vocab_id": 498,
+      "sentence": "sent:gen-feaa39d1331f",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": true,
+      "source": "authored+verified(bank-correct)",
+      "explanation": {
+        "pt-BR": "飲む é engolir líquido, como a sopa tomada com a colher, então pão se come, livro se lê e canção se canta."
+      },
+      "provenance": {
+        "work_id": "wus:n5:21",
+        "stem_sentence": "sent:gen-feaa39d1331f",
+        "sentences_used": [
+          "sent:gen-feaa39d1331f"
+        ],
+        "options": [
+          {
+            "text": "スプーンでスープを飲む",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:gen-feaa39d1331f"
+          },
+          {
+            "text": "ひるごはんにパンを飲む",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "新しい本を飲むのがすきだ",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "まいにち、うたを飲む",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "us:n5:637",
+      "level": "n5",
+      "target": "もう",
+      "correct": "もう行かなくてはならない。",
+      "wrong": [
+        "この本のもうはとてもおもしろい。",
+        "もうがまどの外にいる。",
+        "もうまだごはんを食べていない。"
+      ],
+      "vocab": "vocab:1012480",
+      "vocab_id": 637,
+      "sentence": "sent:tatoeba-194209",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": {
+        "pt-BR": "もう indica que algo já chegou ao ponto de acontecer, como na hora de ir embora, e por isso não funciona como substantivo, não nomeia ninguém e não convive com まだ."
+      },
+      "provenance": {
+        "work_id": "wus:n5:22",
+        "stem_sentence": "sent:tatoeba-194209",
+        "sentences_used": [
+          "sent:tatoeba-194209"
+        ],
+        "options": [
+          {
+            "text": "もう行かなくてはならない。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-194209"
+          },
+          {
+            "text": "この本のもうはとてもおもしろい。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "もうがまどの外にいる。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "もうまだごはんを食べていない。",
+            "role": "wrong",
+            "generated": true
+          }
+        ]
+      }
+    }
+  ]
+}

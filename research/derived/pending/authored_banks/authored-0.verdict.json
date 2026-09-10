@@ -1,0 +1,449 @@
+{
+  "pp:n5:649": {
+    "ok": true
+  },
+  "pp:n5:286": {
+    "ok": true
+  },
+  "pp:n5:670": {
+    "ok": true
+  },
+  "pp:n5:620": {
+    "ok": true
+  },
+  "pp:n5:416": {
+    "ok": true,
+    "note": "key 「うちを出る」 is the only option sharing a character (出) with the stem 出かける; kept because the shipped banks use the same definitional shape (pp:n3:1571 外出 -> 出かけて)."
+  },
+  "pp:n5:419": {
+    "ok": true,
+    "note": "key 「外へ出るところ」 uniquely shares 出 with the stem/target 出口; precedented by the shipped pp:n5:87 映画館 -> 映画を見るところ."
+  },
+  "pp:n5:326": {
+    "ok": true
+  },
+  "pp:n5:672": {
+    "ok": true
+  },
+  "pp:n5:344": {
+    "ok": true
+  },
+  "pp:n5:599": {
+    "ok": true
+  },
+  "pp:n5:598": {
+    "ok": true
+  },
+  "pp:n5:498": {
+    "ok": true
+  },
+  "us:n5:649": {
+    "ok": false,
+    "problem": "single-key: wrong[3] 「休みに水を入れて飲みました。」 is rescued by the ordinary temporal reading of 休みに (\"during my day off I poured water and drank it\"), which uses 休み in its own core sense and needs no special context, so the item has two acceptable options. Corrected: that option is replaced by 「休みは白くて大きいです。」 (n5-clean, 休み verbatim, no reading rescues it); the pt-BR explanation is re-worded to match.",
+    "corrected": {
+      "id": "us:n5:649",
+      "level": "n5",
+      "target": "休み",
+      "correct": "今日は休みじゃなかったの？",
+      "wrong": [
+        "毎日、パンと休みを食べます。",
+        "休みで手をあらいます。",
+        "休みは白くて大きいです。"
+      ],
+      "vocab": "vocab:1227500",
+      "vocab_id": 649,
+      "sentence": "sent:tatoeba-12049582",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": "Só a primeira frase usa 休み como folga; nas outras ela vira comida, vira instrumento para lavar as mãos e vira um objeto branco e grande.",
+      "provenance": {
+        "work_id": "wus:n5:02",
+        "stem_sentence": "sent:tatoeba-12049582",
+        "sentences_used": [
+          "sent:tatoeba-12049582"
+        ],
+        "options": [
+          {
+            "text": "今日は休みじゃなかったの？",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-12049582"
+          },
+          {
+            "text": "毎日、パンと休みを食べます。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "休みで手をあらいます。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "休みは白くて大きいです。",
+            "role": "wrong",
+            "generated": true
+          }
+        ],
+        "kana": "やすみ",
+        "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)"
+      }
+    }
+  },
+  "us:n5:286": {
+    "ok": true,
+    "note": "wrong[2] 「あの時間は駅の前です。」 is the うなぎ shape [time]は[place]です, which a meeting-planning context can rescue. Kept: the shipped banks use exactly this shape (us:n5:8 「今日の秋は雨です。」, us:n4:774 「明日の地震は雨のち曇りです。」)."
+  },
+  "us:n5:670": {
+    "ok": true,
+    "note": "日本 is not in level_allowed.words at either level, but its bank token carries no vocab link and it occurs in level-clean pool sentences, so it does not break the gate."
+  },
+  "us:n5:620": {
+    "ok": true
+  },
+  "us:n5:416": {
+    "ok": true,
+    "note": "つもり is absent from the n5 word list but gram:tsumori IS in the n5 taught grammar set; same for とき / gram:toki at n4 (pp:n4:852)."
+  },
+  "us:n5:419": {
+    "ok": true
+  },
+  "us:n5:326": {
+    "ok": true
+  },
+  "us:n5:672": {
+    "ok": true,
+    "note": "友だち is the kana-mixed spelling of the taught 友達 (達 is untaught at both levels); the bank links it to vocab:1540170 in level-clean sentences."
+  },
+  "us:n5:344": {
+    "ok": true
+  },
+  "us:n5:599": {
+    "ok": true,
+    "note": "wrong[1] 「毎年は白くて大きい花です。」 same うなぎ shape; kept on the same precedent."
+  },
+  "us:n5:598": {
+    "ok": true,
+    "note": "wrong[1] 「毎日はおいしい魚です。」 is the 今日はカレーです うなぎ pattern; kept on the same precedent as us:n5:286."
+  },
+  "us:n5:498": {
+    "ok": true
+  },
+  "pp:n4:852": {
+    "ok": true
+  },
+  "pp:n4:1098": {
+    "ok": true,
+    "note": "key 「見ることができる」 uniquely shares 見 with the stem 家が見える; precedented (pp:n4:746 発音 -> 音の出し方). 見える/見ることができる is the standard N4 equivalence."
+  },
+  "pp:n4:1348": {
+    "ok": true
+  },
+  "pp:n4:888": {
+    "ok": true
+  },
+  "pp:n4:958": {
+    "ok": true
+  },
+  "pp:n4:1082": {
+    "ok": true
+  },
+  "pp:n4:715": {
+    "ok": false,
+    "problem": "journal collision, not a text defect. The row itself is sound and level-clean, but vid 715 already has a row in research/derived/reauthor/exam_authored/input_n4.json (example 「何か聞こえる？」, ex_slug sent:tatoeba-9979575) and a payload in authored_n4_b1.json (paraphrase correct 音がする). scripts/export/build_authored_banks.py mints stem AND sentence from input_n4's example/ex_slug, so appending this row would ship the OLD stem, not 「音楽が聞こえる。」/sent:tatoeba-188299. Promote only by REPLACING both journal entries in the same commit; otherwise drop the row. (Recorded skip cause, now verified: the builder's `any(f['hw'] not in s for s in uw)` guard rejected vid 715 because authored_n4_b1's three usage_wrong sentences carry 聞こえます/聞こえた/聞こえて and never 聞こえる verbatim, and that guard is joint, so it killed the paraphrase twin too. This take does fix that cause.)",
+    "note": "key 「聞くことができる」 uniquely shares 聞 with the stem; same precedent. Its option set mirrors pp:n4:1098, so the two should not be drawn onto the same paper."
+  },
+  "pp:n4:946": {
+    "ok": true
+  },
+  "pp:n4:997": {
+    "ok": true
+  },
+  "pp:n4:1226": {
+    "ok": true,
+    "note": "key 出かける uniquely shares 出 with the stem 出発します."
+  },
+  "pp:n4:1302": {
+    "ok": true
+  },
+  "pp:n4:1297": {
+    "ok": true,
+    "note": "key 「ガソリンを売る店」 repeats ガソリン from the stem; same shape as the shipped pp:n5:87. Note that the shipped pp:n4:700 keys the bare word ガソリン to 車の燃料, so a paper can draw both; not a collision (different vids), but a reviewer should see it."
+  },
+  "pp:n4:1300": {
+    "ok": true
+  },
+  "pp:n4:1084": {
+    "ok": true
+  },
+  "pp:n4:1170": {
+    "ok": true
+  },
+  "pp:n4:923": {
+    "ok": true,
+    "note": "key 所 is a proper substring of the target 場所 and is the only option sharing stem material; precedented by the shipped pp:n4:732 お宅 -> ご自宅. Writing the four options in kana (ところ/じかん/つごう/きもち) would remove the orthographic tell if a reviewer wants it gone."
+  },
+  "us:n4:852": {
+    "ok": false,
+    "problem": "known-words: wrong[1] 「駅の前に新しい場合が建ちました。」 is built on 建つ, which is NOT in the n4 level_allowed.words (the list carries only 建てる, 建物, 二階建て) and appears in zero level-clean bank sentences; 建 passes the kanji gate, so this is exactly the taught-kanji/untaught-word leak _README.md warns about. Corrected with the taught transitive 建てる.",
+    "corrected": {
+      "id": "us:n4:852",
+      "level": "n4",
+      "target": "場合",
+      "correct": "雨の場合はその試合は中止となる。",
+      "wrong": [
+        "駅の前に新しい場合を建てました。",
+        "テーブルの上に場合が二つあります。",
+        "あしたは場合に行くつもりです。"
+      ],
+      "vocab": "vocab:1355810",
+      "vocab_id": 852,
+      "sentence": "sent:tatoeba-189577",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": "Só a primeira frase usa 場合 como circunstância; nas outras ele vira construção, objeto contável e destino.",
+      "provenance": {
+        "work_id": "wus:n4:02",
+        "stem_sentence": "sent:tatoeba-189577",
+        "sentences_used": [
+          "sent:tatoeba-189577"
+        ],
+        "options": [
+          {
+            "text": "雨の場合はその試合は中止となる。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-189577"
+          },
+          {
+            "text": "駅の前に新しい場合を建てました。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "テーブルの上に場合が二つあります。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "あしたは場合に行くつもりです。",
+            "role": "wrong",
+            "generated": true
+          }
+        ],
+        "kana": "ばあい",
+        "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)"
+      }
+    },
+    "note": "wrong[2] 「テーブルの上に場合が二つあります。」 leans on a real collocation (場合が二つあります); only the locative テーブルの上に makes it wrong. Adequate, but it is the weakest of the three."
+  },
+  "us:n4:1098": {
+    "ok": true
+  },
+  "us:n4:1348": {
+    "ok": false,
+    "problem": "known-words: wrong[1] 「駅の前に大きい金持ちが建っています。」 uses 建つ, absent from the n4 level_allowed.words (only 建てる / 建物 / 二階建て) and from every level-clean bank sentence. Corrected with the taught transitive 建てる.",
+    "corrected": {
+      "id": "us:n4:1348",
+      "level": "n4",
+      "target": "金持ち",
+      "correct": "金持ちかもしれないがけちだ。",
+      "wrong": [
+        "駅の前に大きい金持ちを建てました。",
+        "今日の昼ごはんは金持ちにします。",
+        "兄は金持ちに乗って会社へ行きます。"
+      ],
+      "vocab": "vocab:1242970",
+      "vocab_id": 1348,
+      "sentence": "sent:tatoeba-179684",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": "Só a primeira frase usa 金持ち como pessoa; nas outras ele vira prédio, comida e meio de transporte.",
+      "provenance": {
+        "work_id": "wus:n4:06",
+        "stem_sentence": "sent:tatoeba-179684",
+        "sentences_used": [
+          "sent:tatoeba-179684"
+        ],
+        "options": [
+          {
+            "text": "金持ちかもしれないがけちだ。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-179684"
+          },
+          {
+            "text": "駅の前に大きい金持ちを建てました。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "今日の昼ごはんは金持ちにします。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "兄は金持ちに乗って会社へ行きます。",
+            "role": "wrong",
+            "generated": true
+          }
+        ],
+        "kana": "かねもち",
+        "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)"
+      }
+    }
+  },
+  "us:n4:888": {
+    "ok": true
+  },
+  "us:n4:958": {
+    "ok": true
+  },
+  "us:n4:1082": {
+    "ok": false,
+    "problem": "known-words: wrong[1] 「駅の前に高い計画が建っています。」 uses 建つ, absent from the n4 level_allowed.words and from every level-clean bank sentence. Corrected with 建てる.",
+    "corrected": {
+      "id": "us:n4:1082",
+      "level": "n4",
+      "target": "計画",
+      "correct": "始める前に仕事の計画を立てなさい。",
+      "wrong": [
+        "駅の前に高い計画を建てました。",
+        "けさは計画とパンを食べました。",
+        "計画に水を入れて飲みました。"
+      ],
+      "vocab": "vocab:1252090",
+      "vocab_id": 1082,
+      "sentence": "sent:tatoeba-168944",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": "Só a primeira frase usa 計画 como plano; nas outras ele vira prédio, comida e recipiente.",
+      "provenance": {
+        "work_id": "wus:n4:10",
+        "stem_sentence": "sent:tatoeba-168944",
+        "sentences_used": [
+          "sent:tatoeba-168944"
+        ],
+        "options": [
+          {
+            "text": "始める前に仕事の計画を立てなさい。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-168944"
+          },
+          {
+            "text": "駅の前に高い計画を建てました。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "けさは計画とパンを食べました。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "計画に水を入れて飲みました。",
+            "role": "wrong",
+            "generated": true
+          }
+        ],
+        "kana": "けいかく",
+        "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)"
+      }
+    }
+  },
+  "us:n4:715": {
+    "ok": false,
+    "problem": "journal collision, not a text defect. Same cause as pp:n4:715: vid 715 already sits in input_n4.json with example 「何か聞こえる？」/sent:tatoeba-9979575 and in authored_n4_b1.json with usage_wrong 「毎晩ラジオを聞こえます。」/「駅への道を交番で聞こえた。」/「いいにおいが聞こえてきた。」 none of which contains 聞こえる verbatim, which is why build_authored_banks.py skipped the vid and why both n4 banks have no :715 item. This take's three wrong sentences DO carry 聞こえる verbatim and are otherwise sound, but promoting the row requires REPLACING the input_n4 row and the authored_n4_b1 payload in the same commit, never appending."
+  },
+  "us:n4:946": {
+    "ok": true,
+    "note": "wrong[1] 「オーバーを三ばい飲みました。」 reads as either 三杯 or 三倍 (both are n4 words, neither kanji is taught); wrong under both readings, so it stands."
+  },
+  "us:n4:997": {
+    "ok": true,
+    "note": "wrong[1] 「今夜は白くて大きい車です。」 same うなぎ shape; kept. wrong[3] 「先週の今夜、…」 is the strongest option in the batch."
+  },
+  "us:n4:1226": {
+    "ok": true
+  },
+  "us:n4:1302": {
+    "ok": true
+  },
+  "us:n4:1297": {
+    "ok": true
+  },
+  "us:n4:1300": {
+    "ok": true,
+    "note": "all three wrong options are the same error type (を + the intransitive 上がる). Correct, but monotonous; a reviewer may want one of another kind."
+  },
+  "us:n4:1084": {
+    "ok": false,
+    "problem": "known-words: wrong[3] 「駅の前に高い下着が建っています。」 uses 建つ, absent from the n4 level_allowed.words and from every level-clean bank sentence. Corrected with 建てる.",
+    "corrected": {
+      "id": "us:n4:1084",
+      "level": "n4",
+      "target": "下着",
+      "correct": "下着は着けたままでいいですよ。",
+      "wrong": [
+        "下着を食べてから出かけます。",
+        "下着に水を入れて飲みました。",
+        "駅の前に高い下着を建てました。"
+      ],
+      "vocab": "vocab:1185930",
+      "vocab_id": 1084,
+      "sentence": "sent:tatoeba-188217",
+      "layer": "C",
+      "needs_review": true,
+      "ai_generated": false,
+      "source": "authored+verified(real-correct)",
+      "explanation": "Só a primeira frase veste o 下着; nas outras ele vira comida, recipiente e prédio.",
+      "provenance": {
+        "work_id": "wus:n4:22",
+        "stem_sentence": "sent:tatoeba-188217",
+        "sentences_used": [
+          "sent:tatoeba-188217"
+        ],
+        "options": [
+          {
+            "text": "下着は着けたままでいいですよ。",
+            "role": "correct",
+            "generated": false,
+            "from": "sent:tatoeba-188217"
+          },
+          {
+            "text": "下着を食べてから出かけます。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "下着に水を入れて飲みました。",
+            "role": "wrong",
+            "generated": true
+          },
+          {
+            "text": "駅の前に高い下着を建てました。",
+            "role": "wrong",
+            "generated": true
+          }
+        ],
+        "kana": "したぎ",
+        "explanation_field_note": "explanation is not in the builder row shape yet (_README.md, Open for W18)"
+      }
+    }
+  },
+  "us:n4:1170": {
+    "ok": true
+  },
+  "us:n4:923": {
+    "ok": true
+  }
+}
