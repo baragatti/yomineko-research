@@ -1,0 +1,573 @@
+{
+  "file": "authored-11.json",
+  "work_file": "work-11.json",
+  "level": "n3",
+  "reviewed": 26,
+  "counts": {
+    "ok": 23,
+    "corrected": 3,
+    "rejected": 0
+  },
+  "verdicts": [
+    {
+      "passage": "read:n3-intencao-07-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-01-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-02-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-03-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-04-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-04-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-05-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-05-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": false,
+      "verdict": "fix",
+      "failed": [
+        "single-key",
+        "answerable-from-passage"
+      ],
+      "problem": "Two of the four options say the same thing: チームを出る and すぐにやめる both mean giving up, which collapses the item into a two-way choice (give up vs try again) and leaves the key guessable without reading, since it is then the only constructive option. チームを出る is also a weak collocation (チームをやめる would be the natural one, and it would duplicate option 3 outright). Fix: replace option 1 with べつのやりかたをさがす。, a second constructive action the text never mentions (sentence 1 says only 万一失敗しても、もう一度がんばります), and adjust the explanation to match. The key stays at index 2; P1/P2/P3/P4, the level-kanji rule and the about index were recomputed on the corrected row and pass.",
+      "corrected": {
+        "passage": "read:n3-limites-05-02",
+        "question_index": 0,
+        "stem": "失敗したとき、この人はどうすると言っていますか。",
+        "options": [
+          "だれかにたのむ。",
+          "べつのやりかたをさがす。",
+          "もう一度やってみる。",
+          "すぐにやめる。"
+        ],
+        "key": 2,
+        "explanation": "A frase 1 diz que, mesmo que ele fracasse, vai se esforçar mais uma vez. Passar a tarefa para alguém, procurar outro jeito de fazer e desistir na hora são reações que o texto nunca menciona.",
+        "about": [
+          1
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-limites-06-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": false,
+      "verdict": "fix",
+      "failed": [
+        "pt-BR"
+      ],
+      "problem": "The explanation refutes a distractor the item does not contain: it says the empty pot is a consequence of the empty kitchen and not its cause, but option 2 claims 昨日、なべを作りすぎたから (that he cooked too much nabe yesterday), which the passage never says. Option 0 (disliking the walk to the nearby store) is left without a refutation of its own as well. Stem, key and options are correct; only the explanation has to say why each distractor fails. Fix: explanation rewritten, nothing else changes.",
+      "corrected": {
+        "passage": "read:n3-limites-06-01",
+        "question_index": 0,
+        "stem": "どうして台所には何もないのですか。",
+        "options": [
+          "近くの店まで歩くのがきらいだから。",
+          "昨日、買い物に行かなかったから。",
+          "昨日、なべを作りすぎたから。",
+          "朝から雨がふって、店がしまっていたから。"
+        ],
+        "key": 1,
+        "explanation": "A frase 2 abre com \"é que\" e dá a causa: ontem ele teve preguiça de ir às compras, e por isso hoje não há nada na cozinha. O texto não diz que ele não gosta de andar até a loja nem que tenha cozinhado demais ontem, e a chuva é o cenário de hoje, não o motivo: a loja continua aberta, tanto que ele decide ir a pé até lá.",
+        "about": [
+          2
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-limites-06-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-07-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-limites-07-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-01-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-02-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-03-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-04-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-04-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-05-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-05-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-06-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-06-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-07-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-perspectiva-07-02",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-relato-01-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": false,
+      "verdict": "fix",
+      "failed": [
+        "natural-jp"
+      ],
+      "problem": "The stem is not natural Japanese: 幸せとはどんなものかもしれないと書いていますか stacks かもしれない on top of the interrogative か of どんなもの, and かもしれない does not attach to an embedded question (compare the passage's own sentence 3, 静かな時間のことかもしれない, where the modal takes a proposition, not a question). Fix: この人は、幸せとはどんなものだと書いていますか。 The kanji are the same ones the original stem already used, P1 still anchors on 幸せ and 書い, and the options, the key and the explanation stay as they are.",
+      "corrected": {
+        "passage": "read:n3-relato-01-01",
+        "question_index": 0,
+        "stem": "この人は、幸せとはどんなものだと書いていますか。",
+        "options": [
+          "山の中の小さな村で育つこと。",
+          "むかしの本をたくさん読むこと。",
+          "本の中にあったような、しずかな時間。",
+          "たくさんの人といっしょにすごす時間。"
+        ],
+        "key": 2,
+        "explanation": "A frase 3 diz que a felicidade talvez seja um tempo quieto \"desses\", apontando para a cena tranquila descrita na frase 2. Estar com muita gente é o oposto disso, crescer no vilarejo é a história de quem escreveu o livro, e ler muitos livros antigos não aparece no texto.",
+        "about": [
+          2,
+          3
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-relato-02-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    },
+    {
+      "passage": "read:n3-relato-03-01",
+      "question_index": 0,
+      "rules_checked": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "level",
+        "single-key",
+        "answerable-from-passage",
+        "not-scannable",
+        "natural-jp",
+        "pt-BR"
+      ],
+      "ok": true,
+      "verdict": "pass",
+      "failed": []
+    }
+  ],
+  "summary": "26 reading_comp questions verified against work-11.json. Each question was answered from its passage alone before the key was read; every stem and option was re-tokenised with SudachiPy on a scratch copy of the DB and checked against the gating lesson's cumulative_known_set (P2/P3) and against the n3 level kanji set (les:n3-revisao-01, 634 kanji). P1, P4, option shape, about-index validity and the provenance flags were recomputed with the builder's own rules. 23 pass unchanged; 3 carry a corrected row (one unnatural stem, one distractor pair that collapsed into a single idea, one explanation that refuted a distractor the item does not contain). No rejections: every key is the single defensible answer to its stem."
+}

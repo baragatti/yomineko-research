@@ -1,0 +1,230 @@
+{
+  "file": "authored-06.json",
+  "work_file": "work-06.json",
+  "level": "n4",
+  "reviewed": 22,
+  "counts": {
+    "ok": 19,
+    "corrected": 3,
+    "rejected": 0
+  },
+  "keyed_by": [
+    "passage",
+    "question_index"
+  ],
+  "rules_checked": [
+    "P1 aboutness",
+    "P2 known-set kanji (gating lesson)",
+    "P3 known-set words",
+    "P4 not scannable",
+    "level kanji (les:n4-kanji-exame-05)",
+    "single defensible key",
+    "no general-knowledge answer",
+    "natural Japanese",
+    "pt-BR explanation",
+    "shape guard"
+  ],
+  "method": "Every stem and option retokenized with SudachiPy (dict full, split mode C) against the gating lesson's cumulative_known_set in work-06.json plus the passage text; kanji checked against both the gating lesson's set (P2) and level_kanji_allowed (W17 level rule). Each question was then answered from the passage alone before the authored key was looked at.",
+  "verdicts": [
+    {
+      "passage": "read:n4-revisao-02-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-revisao-03-01",
+      "question_index": 0,
+      "ok": false,
+      "verdict": "fix",
+      "problem": "A explicação chama a quinta frase (それでも、今度はうまく行くはずです。) de fecho do texto, mas o texto tem seis frases e a última é 明日、先生にお聞きします。 A própria explicação se contradiz logo depois, ao chamar essa sexta frase de \"a última frase\" na refutação da opção 3. Item (enunciado, opções, gabarito) está correto; só a explicação erra a posição da frase.",
+      "corrected": {
+        "passage": "read:n4-revisao-03-01",
+        "question_index": 0,
+        "stem": "来週の試験について、この人はどう思っていますか。",
+        "options": [
+          "問題が少ないと思っています。",
+          "今度はうまく行くと思っています。",
+          "先生に聞かなくてもいいと思っています。",
+          "母に勉強させたいと思っています。"
+        ],
+        "key": 1,
+        "explanation": "A quinta frase dá a virada, com um \"mesmo assim\": apesar da prova cheia de questões e da cobrança em casa, ele acha que dessa vez vai dar certo. A opção 1 inverte o que ele ouviu, que a prova tem muita questão; a opção 3 contraria a última frase, em que ele diz que vai perguntar ao professor; e na opção 4 quem faz alguém estudar é a mãe, não ele.",
+        "about": [
+          0,
+          4,
+          5
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n4-suposicao-01-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-suposicao-02-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-suposicao-03-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-suposicao-04-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-suposicao-05-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-suposicao-06-01",
+      "question_index": 0,
+      "ok": false,
+      "verdict": "fix",
+      "problem": "O enunciado pergunta どんな料理でしたか e a opção 3 (子どもがすきなあまい花です。) responde com uma flor, não com um prato. É eliminável pela categoria, sem ler o texto, e o conteúdo (criança gostar de flor doce) não sai de lugar nenhum do texto. Troquei essa opção por um distrator do mesmo formato que erra só o sabor (あまくない、むかし風の料理です。), contradito pela quinta frase, e ajustei a explicação. Gabarito e demais opções inalterados.",
+      "corrected": {
+        "passage": "read:n4-suposicao-06-01",
+        "question_index": 0,
+        "stem": "この人の母が作っていた料理は、どんな料理でしたか。",
+        "options": [
+          "少しあまい、むかし風の料理です。",
+          "花のにおいがする料理です。",
+          "あまくない、むかし風の料理です。",
+          "外で食べるための料理です。"
+        ],
+        "key": 0,
+        "explanation": "A resposta junta duas frases: a segunda diz que era comida à moda antiga e a quinta diz que tinha um gostinho meio doce. O cheiro bom da primeira frase vem da cozinha, não das flores (opção 2), que são as que o pessoal ia ver na rua. A opção 3 acerta o estilo antigo, mas nega o gostinho doce que a quinta frase registra, e nada no texto diz que a comida foi feita para comer fora (opção 4).",
+        "about": [
+          1,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n4-suposicao-07-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-suposicao-08-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-transitividade-01-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-transitividade-02-01",
+      "question_index": 0,
+      "ok": false,
+      "verdict": "fix",
+      "problem": "O enunciado pergunta 駅で電車がとまったあと、どうなりましたか, e a opção 4 (この人はかばんからてがみを出しました。) é justamente o que a última frase narra DEPOIS de o trem parar. Pela letra do enunciado ela também é defensável, e a refutação da explicação (\"a carta só é tirada da bolsa na última frase\") reforça o problema em vez de resolvê-lo. Troquei あと por とき, que fecha a pergunta no momento da parada; a opção 1 continua sendo a única resposta. とき está coberto pelo known set da lição gating (gram:toki consta em known_sets[\"les:n4-transitividade-02\"].grammar), e o enunciado continua satisfazendo P1 por 電車 e とまっ.",
+      "corrected": {
+        "passage": "read:n4-transitividade-02-01",
+        "question_index": 0,
+        "stem": "駅で電車がとまったとき、どうなりましたか。",
+        "options": [
+          "人が電車から出て来ました。",
+          "ドアがしまりました。",
+          "つよいかぜが入って来ました。",
+          "この人はかばんからてがみを出しました。"
+        ],
+        "key": 0,
+        "explanation": "A quarta frase diz que, quando o trem parou na estação, as pessoas saíram. As outras três coisas acontecem em outros momentos: o vento e a porta ainda em casa, de manhã (opções 2 e 3), e a carta só sai da bolsa depois disso, na última frase (opção 4).",
+        "about": [
+          1,
+          3,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n4-transitividade-03-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-transitividade-04-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-transitividade-05-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-volitivo-01-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-volitivo-02-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-volitivo-03-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-volitivo-04-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-volitivo-05-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-volitivo-06-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    },
+    {
+      "passage": "read:n4-volitivo-07-01",
+      "question_index": 0,
+      "ok": true,
+      "verdict": "pass"
+    }
+  ],
+  "notes": [
+    "Checagem mecânica das 22 linhas originais: 0 violação da regra de nível (les:n4-kanji-exame-05), 0 violação de P2 (kanji fora do cumulative_known_set da lição gating), 0 violação de P3, P1 satisfeito em todas, 0 falha de P4, 4 opções distintas e `about` válido em todas. Além do exigido, retokenizei enunciado e opções e nenhuma palavra de conteúdo (inclusive as só em kana) ficou fora do cumulative_known_set + texto: 0 pendência em 22 linhas.",
+    "Padrão observado, não tratado como defeito: em 7 itens de どうして o gabarito é a oração causal do texto com a conjunção trocada (ので/から → からです) ou com uma palavra a menos, p.ex. read:n4-volitivo-04-01 (texto 電車で行くより体にいいと思ったからです。 / opção 電車より体にいいと思ったからです。) e read:n4-volitivo-01-01 (texto お金がないから、 / opção お金がないからです。). Nenhum viola P4 como o builder o define (opção inteira idêntica a um trecho do texto) e em todos os casos é preciso ligar a oração causal à consequência certa entre outros itens do mesmo plano, mas quem procurar a única ocorrência de から/からです no texto acerta sem compreender. Se a casa quiser endurecer P4 para trecho quase idêntico, a decisão vale para o corpus inteiro e não deve ser tomada linha a linha por um verificador; por isso passei esses itens e registro aqui.",
+    "Duas explicações passam com ressalva de redação, sem correção: em read:n4-suposicao-07-01 a refutação da opção 3 (秋になると、山に行きたくなくなります。) se apoia na roupa de inverno no outono, quando o refutador direto é 休みの日はいつも山に行きたがる; em read:n4-volitivo-05-01 a explicação diz que a quarta frase \"marca causa e efeito\", quando 〜てから marca sequência e a causa é inferida. Em nenhum dos dois o gabarito ou a eliminação dos distratores muda."
+  ],
+  "summary": "22 questões verificadas contra o texto do work-06.json, uma por passagem. Respondi cada uma pelo texto antes de olhar o gabarito: os 22 gabaritos batem com o meu e em nenhuma encontrei segunda opção defensável depois das correções abaixo, resposta possível por conhecimento de mundo ou opção idêntica a um trecho do texto. 19 passam como estão; 3 saem com correção: read:n4-revisao-03-01 (explicação chama de fecho do texto a quinta de seis frases e se contradiz na frase seguinte), read:n4-suposicao-06-01 (uma das opções responde 「どんな料理」 com uma flor, eliminável pela categoria) e read:n4-transitividade-02-01 (enunciado com あと torna defensável o distrator que narra justamente o que acontece depois; troquei por とき). Nenhuma rejeição: em todos os três casos o gabarito estava certo e uma edição pequena resolve. Todas as linhas corrigidas foram revalidadas: 0 violação de nível/P2/P3/P4, P1 ok, sem travessão na explicação, flags ai_generated=false e needs_review=true preservadas."
+}

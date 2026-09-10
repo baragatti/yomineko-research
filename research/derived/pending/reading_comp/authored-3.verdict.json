@@ -1,0 +1,295 @@
+{
+ "file": "authored-03.json",
+ "work_file": "work-03.json",
+ "level": "n4",
+ "reviewed": 23,
+ "counts": {
+  "ok": 16,
+  "corrected": 7,
+  "rejected": 0
+ },
+ "keyed_by": [
+  "passage",
+  "question_index"
+ ],
+ "rules_checked": [
+  "P1 aboutness",
+  "P2 gating-lesson kanji",
+  "P3 gating-lesson words",
+  "P4 not scannable",
+  "W17 level kanji (les:n4-kanji-exame-05, 290 kanji)",
+  "grammar inside the gating lesson's cumulative_known_set",
+  "single defensible key",
+  "answerable only from the passage",
+  "natural Japanese",
+  "pt-BR explanation correct",
+  "row shape / provenance flags"
+ ],
+ "method": "Every question was answered from the passage alone before the authored key was read. P1/P2/P3/P4, the W17 level-kanji rule and the row shape were recomputed with SudachiPy through scripts/ingest/known_set.py (PassageGate + load_known_sets) against a COPY of db/corpus.sqlite in scratch and the committed course/ tree; grammar was checked separately, since no rc guard checks it, by resolving each stem construction to its corpus/grammar record and testing that record against the gating lesson's cumulative_known_set. Every corrected row was put back through the same checks and passes all of them. Nothing in the repo was modified except this verdict file.",
+ "verdicts": [
+  {
+   "passage": "read:n4-aspecto-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-aspecto-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-aspecto-03-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "explanation: the refutation of distractor 2 (学校のじゅぎょうが早く終わったから) asserts a fact the passage does not state — \"a aula acabou no horário\". Sentence 3 only says 今日のじゅぎょうが終わってから、家に帰った; nothing about the class ending on time or early. The item itself (key 1, レポートを家にわすれたから, sentence 1 + だから in sentence 4) is correct and unambiguous; only the pt-BR explanation needs the unstated claim removed.",
+   "corrected": {
+    "passage": "read:n4-aspecto-03-01",
+    "question_index": 0,
+    "stem": "レポートを先生に出すのが明日になったのは、どうしてですか。",
+    "options": [
+     "レポートを書き終わらなかったから",
+     "レポートを家にわすれたから",
+     "学校のじゅぎょうが早く終わったから",
+     "先生が学校にいなかったから"
+    ],
+    "key": 1,
+    "explanation": "A frase 1 conta que ele acabou deixando o relatório em casa, e a frase 4 emenda que por isso a entrega ficou para amanhã. Ele terminou de escrever na noite anterior (frase 0), o texto só diz que ele voltou para casa depois que as aulas acabaram, sem falar em acabar mais cedo (frase 3), e em nenhum momento diz que o professor faltou.",
+    "about": [
+     1,
+     4
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-aspecto-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-aspecto-05-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "option shape: the key (もう作ってあって、テーブルの上にあります, 19 chars) is the only two-clause option and is 1.6x the longest distractor (12/8/8), so the item is winnable by the \"longest, most detailed option\" heuristic without reading — the same surface solvability W17's longshot rule polices from the distractor side. The Japanese is also redundant (作ってあって … あります states the resultative twice). The key content is right (sentences 1-2); trimming to もうテーブルの上にあります keeps it correct (テーブルの上においてあります), still contradicts これから作ります / 三時ごろ作ります / おとうとがもう食べました, and balances the four lengths at 8/13/12/8.",
+   "corrected": {
+    "passage": "read:n4-aspecto-05-01",
+    "question_index": 0,
+    "stem": "ごはんについて、正しいものはどれですか。",
+    "options": [
+     "これから作ります",
+     "もうテーブルの上にあります",
+     "おとうとがもう食べました",
+     "三時ごろ作ります"
+    ],
+    "key": 1,
+    "explanation": "As frases 1 e 2 dizem que a comida acabou de ser feita e já está em cima da mesa. Não há nada sobre preparar depois, o irmão mais novo está lendo no quarto e não comeu, e as três horas são o horário da volta (frase 5), não do preparo.",
+    "about": [
+     1,
+     2
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-aspecto-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-aspecto-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-causativa-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-causativa-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-causativa-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-condicionais-01-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "level (grammar): the stem 天気がよくても、雨がふっても hinges on concessive 〜ても, which this corpus registers as gram:n3-temo — an N3 point taught in NO n4 lesson. les:n4-condicionais-01 teaches only 〜てもいいです (permission) and 〜なくてもいい, and the passage itself never uses ても (it is a たら passage). The whole item depends on parsing a construction the learner has not met; P2/P3 miss it because ても is kana. Restated with かならず (vocab:1487400, taught here) the question is identical in logic — which activity is unconditional — and uses only taught material.",
+   "corrected": {
+    "passage": "read:n4-condicionais-01-01",
+    "question_index": 0,
+    "stem": "明日、この人がかならずすることはどれですか。",
+    "options": [
+     "川の水に足を入れること",
+     "駅で友だちに会うこと",
+     "うちで新しい本を読むこと",
+     "午後にうちで休むこと"
+    ],
+    "key": 1,
+    "explanation": "A frase 1 marca o encontro com o amigo na estação sem nenhuma condição, então é o que acontece de qualquer jeito. O rio (frases 2 e 3) depende de o tempo estar bom e o livro em casa (frase 4) depende de chuva. Descansar em casa à tarde não aparece no texto.",
+    "about": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-condicionais-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-condicionais-03-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "level (grammar + word): the stem's 〜ためには is untaught twice over. There is no 〜ために grammar point at N5 or N4 in corpus/grammar (only gram:n3-sono-tame-ni, at N3), and the word ため (vocab:1157080, n4) is not in les:n4-condicionais-03's cumulative_known_set — it survives P3 only through the kana-only carve-out. Rebuilt with 〜たいとき (gram:toki, taught) plus どうすれば (gram:ba, taught at this lesson), the stem asks exactly the same thing with nothing above the lesson.",
+   "corrected": {
+    "passage": "read:n4-condicionais-03-01",
+    "question_index": 0,
+    "stem": "新しいことばをおぼえたいとき、どうすればいいと言っていますか。",
+    "options": [
+     "電車の中で読む",
+     "たくさん書く",
+     "先生に聞く",
+     "毎日休まない"
+    ],
+    "key": 1,
+    "explanation": "A frase 2 diz exatamente isso: palavra nova, escrevendo bastante, você acaba decorando. Perguntar ao professor serve para a palavra que você não entende (frase 1), ler no trem é a saída para quem não tem tempo (frase 3) e não faltar é sobre ficar melhor no ano que vem (frase 4).",
+    "about": [
+     2
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-condicionais-04-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "level (grammar): the stem's 〜のに is gram:noni — an N4 point that no lesson in this batch unlocks, les:n4-condicionais-04 included (checked against every gating lesson's cumulative_known_set). The concessive is load-bearing: drop it and distractor 3 (天気をよく見ること) becomes defensible, since he also did not check the weather yesterday. Restated with けれども (gram:keredo-mo, taught) the contrast survives and the key stays unique.",
+   "corrected": {
+    "passage": "read:n4-condicionais-04-01",
+    "question_index": 0,
+    "stem": "きのう、この人がしたかったけれども、できなかったことは何ですか。",
+    "options": [
+     "山へ行くこと",
+     "しゃしんをたくさんとること",
+     "かさを買うこと",
+     "天気をよく見ること"
+    ],
+    "key": 1,
+    "explanation": "A frase 1 diz que, se o tempo estivesse bom, ele queria ter tirado um monte de foto, e a frase 2 explica que choveu desde cedo. À montanha ele foi (frase 0), o guarda-chuva ele queria ter levado e não comprado (frase 3), e conferir o tempo é plano para a próxima vez (frase 4).",
+    "about": [
+     1,
+     2
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-condicionais-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-condicionais-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-condicionais-07-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "level (words) in the key and in the stem: the key prints へんじ (vocab:1512220, n4), which is NOT in les:n4-condicionais-07's cumulative_known_set (that record enters only at topic-30, les:n4-aspecto-01) and does NOT appear in the passage — the passage's own request verb is おしえて. The stem's おねがいして is the same defect: おねがい / お願いします resolve to vocab:1217900 / vocab:1001720 (n3 / n2), taught in no lesson of this batch. Both slip past P3 as kana-only carve-outs, so the learner is asked to choose an option whose head noun they have never met. Rewritten on the passage's own vocabulary — たのむ (vocab:1548370, n5, taught) in the stem and おしえる (vocab:1236900, n5, taught, and the passage's own word) in the key. Key, distractors, evidence sentence and answer logic are unchanged.",
+   "corrected": {
+    "passage": "read:n4-condicionais-07-01",
+    "question_index": 0,
+    "stem": "この人が今日中にたのんでいることは、何ですか。",
+    "options": [
+     "電話かメールでおしえること",
+     "駅の前の店でコーヒーを飲むこと",
+     "パートの友だちをよぶこと",
+     "今日、駅の前の店へ行くこと"
+    ],
+    "key": 0,
+    "explanation": "A última frase pede que a pessoa avise ainda hoje, por telefone ou por e-mail, tanto faz. O café na loja e o encontro são para a folga desta semana (frases 0 a 2), e quem quer chamar a amiga do trabalho de meio período é o próprio autor (frase 3).",
+    "about": [
+     4
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-condicionais-08-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "explanation: \"o horário ele avisa depois (frase 3), ou seja, já sabe\" asserts something the text does not — 何時に来るかは、あとで言います says he will announce it later, not that he already knows it. The item is sound (only 何人来るか is marked まだ分かりません, and the second verbatim option 何時に来るか is what keeps P4 from firing), but the explanation should refute the distractor from what the text says instead of from an invented inference.",
+   "corrected": {
+    "passage": "read:n4-condicionais-08-01",
+    "question_index": 0,
+    "stem": "パーティーについて、この人がまだ分からないことは何ですか。",
+    "options": [
+     "いつするか",
+     "何人来るか",
+     "どこでするか",
+     "何時に来るか"
+    ],
+    "key": 1,
+    "explanation": "A frase 1 diz com todas as letras que ele ainda não sabe quantas pessoas vêm. O dia e o lugar já estão definidos na frase 0, e o horário é justamente o que ele promete avisar depois (frase 3), ou seja, não é o que está em aberto.",
+    "about": [
+     0,
+     1,
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-conectores-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-conectores-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-conectores-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-conectores-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-conectores-05-01",
+   "question_index": 0,
+   "ok": true
+  }
+ ],
+ "summary": "23 reviewed at n4: 16 pass as authored, 7 need a small fix (a full corrected row is supplied for each), 0 rejected. No key is wrong and no question has a second defensible answer: every stem is answerable from its passage and from nothing else, and no key is reachable by scanning a verbatim span (in read:n4-condicionais-08-01 a distractor is printed verbatim alongside the key, which is what keeps P4 from firing). Zero kanji violations: all 23 rows are clean against both the gating lesson's cumulative_known_set and the level-end set of les:n4-kanji-exame-05. The fixes are 3 above-level grammar constructions in stems (gram:n3-temo, gram:noni, and a 〜ために that has no N5/N4 record at all), 1 above-level word pair in a key and its stem (へんじ / おねがい), 1 option-length giveaway, and 2 pt-BR explanations that refute a distractor with a fact the passage does not state.",
+ "batch_notes": [
+  "SYSTEMATIC, NOT REJECTED — 〜について is gram:n3-ni-tsuite (N3) and is the rubric in 5 stems (aspecto-05, condicionais-08, conectores-01/02/03). It is left standing because the WORD ついて (vocab:1854750, n4) is in every gating lesson's cumulative_known_set here and 〜について、正しいものはどれですか is the standard 内容一致 rubric. Making the exam rubric strictly level-clean is a bank-wide decision (it will hit every work file), not a defect of these items.",
+  "CARVE-OUTS RELIED ON — こと (vocab:1313580, n4) is not in the topic-23 condicionais known sets and reaches the options through the kana-only carve-out; the nominalizer itself is taught (gram:koto), so this is the documented design/reading_practice.md §3 case, not a finding. Same for とき (vocab:1315840, n3) with gram:toki taught.",
+  "COURSE-DATA GAP worth filing separately: there is no 〜ために / 〜ためには grammar record at N5 or N4 (corpus/grammar has only gram:n3-sono-tame-ni), and concessive 〜ても sits at N3 (gram:n3-temo) while N4 teaches only 〜てもいいです / 〜なくてもいい. Both are standard N4 syllabus items, so authors will keep tripping on them.",
+  "KEY-INDEX SKEW (harmless downstream): of the 23 authored rows, 8 key index 0, 14 key index 1, 1 keys index 2 and none keys index 3. build_reading_comp_bank.py stores correct/distractors as separate fields rather than an index, so the printed order is the app's and this cannot leak into a paper — recorded only so a later author does not read the pattern as intentional.",
+  "The 7 corrected rows keep `about`, `ai_generated: false` and `needs_review: true` exactly as authored; 4 of them change only the stem, 1 only the options, 2 only the explanation, and read:n4-condicionais-07-01 changes stem + one option + explanation."
+ ]
+}

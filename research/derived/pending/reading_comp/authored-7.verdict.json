@@ -1,0 +1,210 @@
+{
+ "file": "authored-07.json",
+ "work_file": "work-07.json",
+ "level": "n3",
+ "reviewed": 26,
+ "keyed_by": [
+  "passage",
+  "question_index"
+ ],
+ "entry_shape": {
+  "ok": "bool; true = pass as authored",
+  "problem": "present only when ok=false",
+  "corrected": "full replacement row, present when a small edit fixes it; absent means reject"
+ },
+ "counts": {
+  "ok": 24,
+  "corrected": 2,
+  "rejected": 0
+ },
+ "rules_checked": [
+  "P1 aboutness",
+  "P2 gating-lesson kanji",
+  "P3 gating-lesson words",
+  "P4 not scannable",
+  "W17 level kanji",
+  "single defensible key",
+  "answerable only from the passage",
+  "natural Japanese",
+  "pt-BR explanation"
+ ],
+ "verdicts": [
+  {
+   "passage": "read:n3-causa-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-05-02",
+   "question_index": 0,
+   "ok": false,
+   "problem": "A explicação pt-BR afirma um dado que o texto não tem: diz 「ela não conhecia o jeito novo」, mas nem o japonês nem o translation_pt marcam o gênero de quem narra (só 「私」 e 「私が作った表」). A pergunta, a chave e os distratores estão certos; a correção troca 「ela」 por 「quem escreve」 e desfaz o 「a uma hora do texto」. Nenhum campo japonês muda.",
+   "corrected": {
+    "passage": "read:n3-causa-05-02",
+    "question_index": 0,
+    "stem": "この人が作った表の数字が合わなかったのは、どうしてですか。",
+    "options": [
+     "田中さんに聞かなかったから。",
+     "一時間しか時間がなかったから。",
+     "数字が大きすぎたから。",
+     "新しいほうほうを知らなかったから。"
+    ],
+    "key": 3,
+    "explanation": "A quarta frase diz exatamente isso: quem escreve não conhecia o jeito novo de fazer, e por causa disso os números saíram errados; a hora que aparece no texto é o tempo que o colega levou para corrigir, e não estão ali nem a falta de uma pergunta nem números grandes demais.",
+    "about": [
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   },
+   "recheck": {
+    "mechanical_flags": [],
+    "clean": true
+   }
+  },
+  {
+   "passage": "read:n3-causa-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-06-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-07-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-causa-08-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Japonês da alternativa correta pouco natural: 「外国のお金のねだんが毎日変わるから。」 usa ねだん (値段), que em japonês é o preço de uma mercadoria, para falar do valor do dinheiro; o natural seria 価値/レート, que estão fora do nível. O próprio texto resolve isso sem ねだん (「外国のお金は毎日変わるので」). Como a alternativa correta é o que o aluno lê como modelo de japonês, a correção troca 「外国のお金のねだんが」 por 「外国のお金が」. A chave, os distratores, a explicação e os kanji não mudam; segue sem span verbatim (o texto traz は…ので, a opção が…から).",
+   "corrected": {
+    "passage": "read:n3-causa-08-01",
+    "question_index": 0,
+    "stem": "この人は、どうしてりょうがえを来週にするのですか。",
+    "options": [
+     "外国のお金が毎日変わるから。",
+     "今日は駅に行けなかったから。",
+     "来週、外国の大学が休みになるから。",
+     "きっぷをまだ買っていないから。"
+    ],
+    "key": 0,
+    "explanation": "A quarta frase diz que o dinheiro estrangeiro muda de valor todo dia e que por isso o câmbio fica para a semana que vem; ele esteve na estação hoje, o texto não fala em férias da universidade e a passagem cara é uma lembrança de outra vez.",
+    "about": [
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   },
+   "recheck": {
+    "mechanical_flags": [],
+    "clean": true
+   }
+  },
+  {
+   "passage": "read:n3-causa-08-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-05-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-06-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-concessao-07-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-conectores-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-conectores-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-conectores-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-conectores-04-01",
+   "question_index": 0,
+   "ok": true
+  }
+ ],
+ "summary": "26 de 26 perguntas revistas, uma por passagem, todas com chave unica e defensavel a partir do texto. Nenhuma e respondivel por conhecimento geral e nenhuma tem a chave como unico span verbatim do texto (P4). Recalculado com SudachiPy: 0 kanji fora de level_kanji_allowed, 0 kanji fora do cumulative_known_set da licao que abre a passagem, 0 palavra de opcao fora do cks + passagem, P1 satisfeito em 26/26, forma/4 opcoes/about validos em 26/26, ai_generated=false e needs_review=true em 26/26. 24 passam como estao; 2 recebem correcao minima (japones da chave em read:n3-causa-08-01; genero inventado na explicacao pt-BR de read:n3-causa-05-02), ambas revalidadas limpas. Nenhuma rejeicao. Observacao agregada, sem defeito por item: a chave e a opcao mais longa e sozinha nesse comprimento em 12 dos 26 itens - acima do acaso, vale reequilibrar num passe editorial."
+}

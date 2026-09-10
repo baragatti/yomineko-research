@@ -1,0 +1,161 @@
+{
+  "file": "authored-10.json",
+  "work_file": "work-10.json",
+  "level": "n3",
+  "reviewed": 26,
+  "verdicts": [
+    {
+      "passage": "read:n3-estado-05-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estado-06-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estado-06-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estado-07-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estado-07-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estado-08-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estado-08-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-01-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-02-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-03-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-04-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-04-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-05-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "Explicação pt-BR com erro factual: afirma que o texto já responde \"onde ele foi descoberto\". A passagem só diz 「新しい薬が発見されたと発表された」 e nunca dá o lugar da descoberta (nem どこ nem qualquer local aparece no texto). A chave (2) continua certa e única, porque a 5ª frase enuncia o desejo dele; só a justificativa dos distratores está errada. Correção: manter stem, opções, key e about; reescrever a explicação para dizer que o texto dá a duração da pesquisa (dez anos) e que o local da descoberta e o número de jornalistas não aparecem no texto.",
+      "corrected": {
+        "passage": "read:n3-estrutura-05-01",
+        "question_index": 0,
+        "stem": "この人がいちばん知りたいことは何ですか。",
+        "options": [
+          "発表の日に記者が何人集まったか",
+          "その薬がどこで発見されたか",
+          "その薬が町の病院でいつ使われるか",
+          "研究が何年も続けられたかどうか"
+        ],
+        "key": 2,
+        "explanation": "A quinta frase diz com todas as letras o que ele quer saber: quando o remédio vai ser usado no hospital da cidade. O tempo de pesquisa o texto já conta, dez anos. Onde o remédio foi descoberto e quantos jornalistas apareceram o texto nem chega a dizer, e nada indica que seja isso que ele esteja querendo saber.",
+        "about": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-estrutura-05-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-06-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-estrutura-06-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-01-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-02-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-03-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-04-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-04-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-05-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-05-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-06-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-06-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-intencao-07-01",
+      "question_index": 0,
+      "ok": true
+    }
+  ],
+  "summary": "26 questões verificadas de forma adversarial. Portões mecânicos do build_reading_comp_bank.py (P1 aboutness, P2 kanji do cumulative_known_set da lição gatilho, P3 palavras do known set via known_set.PassageGate/SudachiPy sobre cópia da DB, P4 não escaneável) e a regra de nível W17 (level_kanji_allowed, 634 kanji de les:n3-revisao-01): 26/26 limpos, zero violações. Cada questão foi respondida a partir da passagem sozinha: 26 chaves corretas, nenhuma ambígua, nenhum segundo distrator defensável. 1 problema: a explicação de read:n3-estrutura-05-01 afirma um fato que o texto não traz; corrigida sem tocar em stem/opções/key. 25 ok, 1 corrigida, 0 rejeitadas."
+}

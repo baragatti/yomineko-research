@@ -1,0 +1,13 @@
+{
+  "file": "authored-_README.md.json",
+  "work_file": "_README.md",
+  "reviewed": 0,
+  "verdicts": [],
+  "rows": [],
+  "summary": "Nothing to verify. The batch-0 argument resolved to research/derived/pending/reading_comp/_README.md, which is this directory's Markdown documentation, not a work file: it does not parse as JSON, has no `passages` array and no `questions_required`. The authoring agent correctly produced authored-_README.md.json with `rows: []` and an explanatory note instead of inventing questions. With zero authored rows there is no (passage, question_index) key to judge, so this verdict file is intentionally empty: 0 reviewed, 0 pass, 0 fix, 0 reject. Per the assembly rule in _README.md, an empty verdict list contributes nothing to the ingest batch and passes nothing implicitly.",
+  "batch_enumeration_warning": "The orchestrator appears to enumerate this directory by glob, so `_README.md` sorted in as batch 0 and every real work file is shifted by one. The 286 reading_comp questions live in work-01.json .. work-12.json (n5 22+21, n4 23+23+23+22, n3 26+26+26+26+26+22 = 286 passages, one question each). No authored-01..authored-12 files exist yet and no other verdict files exist, so the entire set of 286 is still unauthored. Whoever fixes the enumeration should filter to work-*.json and confirm that the off-by-one did not drop work-12.json off the end of the batch range.",
+  "verdict_entry_shape_if_rows_existed": {
+    "keyed_by": ["passage", "question_index"],
+    "fields": ["ok", "problem?", "corrected?"]
+  }
+}

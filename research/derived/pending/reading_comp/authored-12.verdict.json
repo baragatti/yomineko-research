@@ -1,0 +1,292 @@
+{
+  "file": "authored-12.json",
+  "work_file": "work-12.json",
+  "level": "n3",
+  "reviewed": 22,
+  "verdicts": [
+    {
+      "passage": "read:n3-relato-04-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-relato-04-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-relato-05-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-relato-05-02",
+      "question_index": 0,
+      "ok": false,
+      "problem": "MINOR, explanation only. The key is right and unique and every gate passes. The explanation leaves distractor 1 (男子だけのチームではないと分かったから) unrefuted, and that is the most tempting of the three: the passage does say 男子だけのチームではないらしい, so a learner who misses the らしい reads it as something he 分かった. _README.md requires the explanation to say why each distractor fails.",
+      "corrected": {
+        "passage": "read:n3-relato-05-02",
+        "question_index": 0,
+        "stem": "この人が「間違いない」と思ったのは、どうしてですか。",
+        "options": [
+          "となりのクラスの人に話を聞いたから",
+          "男子だけのチームではないと分かったから",
+          "毎朝、教室から音が聞こえてくるから",
+          "ダンスのチームを見に行ってみたから"
+        ],
+        "key": 2,
+        "explanation": "A quarta frase dá o motivo: toda manhã dá para ouvir som vindo da sala do subsolo. Ouvir falar é justamente o que ele chama de boato na frase anterior, não ser um time só de meninos é outra coisa que ele apenas supõe, e a visita da última frase ainda não aconteceu.",
+        "about": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-relato-06-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-relato-06-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-relato-07-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-relato-07-02",
+      "question_index": 0,
+      "ok": false,
+      "problem": "Stem attributes to direct speech something the passage marks as hearsay. The passage puts two things in the brother's mouth with と言っていた (来月、学校に申し込む / みんなで海へ行こう) and marks the summer deadline with らしい (目的は夏までに取ることらしい). Asking 'ani wa ... to itte imasu ka' therefore points at content the brother is never quoted as saying, and it does so in the one lesson (les:n3-relato-07) whose subject is exactly そうだ / らしい / と言っていた. It also makes distractor 1 (来月のはじめまで) more tempting than it should be, since 来月 IS inside a と言っていた. The key (夏) stays uniquely correct, so this is a stem repair, not a re-authoring. The corrected stem drops the false attribution and mirrors the passage's own frame 目的は…取ること; re-checked clean on level/P1/P2/P3/P4, and its P1 footing gets stronger (目的, 取る, こと, めん all verbatim in the passage, against めん / 言っ before).",
+      "corrected": {
+        "passage": "read:n3-relato-07-02",
+        "question_index": 0,
+        "stem": "兄の目的は、いつまでにめんきょを取ることですか。",
+        "options": [
+          "夏になるまで",
+          "来月のはじめまで",
+          "学校に申し込む前",
+          "みんなで海へ行った後"
+        ],
+        "key": 0,
+        "explanation": "A terceira frase diz que a meta é conseguir a carteira até o verão. O mês que vem é quando ele se inscreve na autoescola, e a praia só vem depois, se der tudo certo.",
+        "about": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-revisao-01-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-01-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "MINOR, explanation only. The key is right and unique and every gate passes. The explanation leaves distractor 2 (雨がふっても六時までにぜんぶ終わると考えている) unrefuted, and it is the one distractor a learner can defend by lifting 六時までにぜんぶ終わります verbatim out of the last sentence. The explanation has to say that the six o'clock line is not a thought about the rain at all.",
+      "corrected": {
+        "passage": "read:n3-tempo-01-01",
+        "question_index": 0,
+        "stem": "明日の雨について、この人はどう考えていますか。",
+        "options": [
+          "雨がふる前に家に帰りたいと思っている",
+          "雨がふってから買い物に行くつもりだ",
+          "雨がふっても六時までにぜんぶ終わると考えている",
+          "雨がふってから、そうじをしておきたいと思っている"
+        ],
+        "key": 0,
+        "explanation": "A segunda frase diz que ele pretende voltar antes que comece a chover. As compras são logo de manhã e a limpeza é para deixar pronta enquanto ainda está claro, ou seja, nenhuma das duas espera a chuva chegar, e o horário das seis é só quando ele termina tudo, sem nenhuma ligação com o tempo.",
+        "about": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-tempo-02-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "MINOR, explanation only. The key is right and unique and every gate passes. The explanation leaves distractor 3 (夜から朝にかけての間だけ) unrefuted, and 夜から朝にかけて is printed verbatim in the first sentence, so it is exactly the span a scanning learner would grab.",
+      "corrected": {
+        "passage": "read:n3-tempo-02-01",
+        "question_index": 0,
+        "stem": "この人がかさを持って出かけるのは、いつですか。",
+        "options": [
+          "雨がふる日だけ",
+          "今週の月曜日から金曜日まで",
+          "明日、買い物に行く時だけ",
+          "夜から朝にかけての間だけ"
+        ],
+        "key": 1,
+        "explanation": "A última frase diz que esta semana, de segunda a sexta, ele sai de casa com o guarda-chuva. Pegar o ônibus é que depende de chover, as compras de amanhã são só um desses dias, e da noite até de manhã é o período da chuva, não o do guarda-chuva.",
+        "about": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-tempo-03-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "MINOR, explanation only. The key is right and unique and every gate passes. The explanation refutes only distractor 3 (家に着いた後) and says nothing about 0 (会社に着いた時) or 1 (みんなが仕事を始めた時), both lifted from the first two sentences. _README.md requires the explanation to say why each distractor fails.",
+      "corrected": {
+        "passage": "read:n3-tempo-03-01",
+        "question_index": 0,
+        "stem": "この人が仕事の意味が分かったのは、どんな時ですか。",
+        "options": [
+          "会社に着いた時",
+          "みんなが仕事を始めた時",
+          "社長と話をした後",
+          "家に着いた後"
+        ],
+        "key": 2,
+        "explanation": "A terceira frase diz que foi só depois de encontrar o diretor e conversar que ele entendeu o sentido do trabalho. Chegar à empresa às dez e encontrar todo mundo já trabalhando são só o começo do dia, e ao chegar em casa o que ele percebeu foi outra coisa, que o dia tinha sido longo.",
+        "about": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-tempo-04-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-04-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-05-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-05-02",
+      "question_index": 0,
+      "ok": false,
+      "problem": "MINOR, explanation only. The key is right and unique and every gate passes. The explanation leaves distractor 2 (新しいことばを五つ書けるようになったこと) unrefuted, and it is drawn straight from the last sentence, which a learner can read as another thing he got better at.",
+      "corrected": {
+        "passage": "read:n3-tempo-05-02",
+        "question_index": 0,
+        "stem": "この人が進歩だと思っているのは、どんなことですか。",
+        "options": [
+          "人の前で大きい声で話せるようになったこと",
+          "言えなかったことを思い出せるようになったこと",
+          "新しいことばを五つ書けるようになったこと",
+          "前より早く読めるようになったこと"
+        ],
+        "key": 3,
+        "explanation": "A frase que diz que isso é progresso vem logo depois de ele contar que hoje lê mais rápido do que antes. Falar em voz alta e lembrar do que não conseguiu dizer são justamente as dificuldades que ele descreve em seguida, e escrever cinco palavras novas é a tarefa de hoje, não algo que ele apresente como avanço.",
+        "about": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-tempo-06-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "MINOR, explanation only. The key is right and unique and every gate passes. The explanation leaves distractor 3 (つぎつぎに仕事をする時間) unrefuted. It misreads 毎日がつぎつぎにすぎていく, where what goes by one after another is the days, not the tasks, and the explanation should say so.",
+      "corrected": {
+        "passage": "read:n3-tempo-06-01",
+        "question_index": 0,
+        "stem": "夜、つかれが出ても、この人がつねに大切にしたいと思っているのは何ですか。",
+        "options": [
+          "家族といっしょにいる時間",
+          "その日のよていを考える時間",
+          "近くの道を一人で歩く時間",
+          "つぎつぎに仕事をする時間"
+        ],
+        "key": 0,
+        "explanation": "A terceira frase diz que, mesmo com o cansaço da noite, ele quer cuidar sempre do convívio com a família. Pensar no que tem para fazer é coisa da manhã, o passeio de sábado é justamente de mãos dadas com o filho, não sozinho, e o que passa um atrás do outro no texto são os dias, não as tarefas do trabalho.",
+        "about": [
+          1,
+          2,
+          3
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n3-tempo-06-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-07-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-07-02",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-08-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n3-tempo-08-02",
+      "question_index": 0,
+      "ok": true
+    }
+  ],
+  "summary": "22 reviewed: 15 pass clean, 7 fix (a full corrected row is supplied for each), 0 reject. Every row was re-checked against its OWN gating lesson with SudachiPy on a COPY of db/corpus.sqlite (scripts/ingest/known_set.py PassageGate, plus the work file's known_sets and level_kanji_allowed): all 22 pass the shape guard, the W17 level-kanji rule, P1 aboutness, P2 gating-lesson kanji, P3 gating-lesson words and P4 not-scannable, with 0 violations, and no correct answer is printed verbatim in its passage. The checker was plant-tested BEFORE it was trusted (untaught kanji, untaught words written entirely in taught kanji, a stem with no lexical footing, and a verbatim correct answer were each caught), so a clean result here is a real result and not a silent no-op. Each question was then answered from the passage alone before its key was read: all 22 keys are correct and uniquely defensible, none is answerable from general knowledge, and none is answerable by scanning a verbatim span. One content fix, read:n3-relato-07-02, where the stem asked what the brother SAID about a fact the passage marks with a hearsay/inference ending, inside the very lesson that teaches that distinction. Six explanation-only fixes where the pt-BR left an attractive distractor unrefuted, against _README.md's rule that the explanation say why each distractor fails; the Japanese in those six is untouched. Every corrected row is a complete row and was re-run through the same gates clean.",
+  "method": {
+    "db": "copy of db/corpus.sqlite in scratch via YOMINEKO_DB; the real DB was never opened for writing",
+    "gates": [
+      "shape",
+      "level_kanji_allowed",
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "about-indices",
+      "provenance-flags",
+      "key-answered-independently",
+      "single-defensible-key",
+      "not-scannable",
+      "natural-japanese",
+      "pt-BR-explanation"
+    ],
+    "plant_test": "passed"
+  }
+}

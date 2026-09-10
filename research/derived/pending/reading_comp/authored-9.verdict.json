@@ -1,0 +1,188 @@
+{
+ "file": "authored-09.json",
+ "work_file": "work-09.json",
+ "level": "n3",
+ "reviewed": 26,
+ "ok": 24,
+ "corrected": 2,
+ "rejected": 0,
+ "keyed_by": [
+  "passage",
+  "question_index"
+ ],
+ "method": "Cada pergunta foi respondida do zero a partir da passagem antes de olhar a chave. Depois, checagem mecânica com o gate do próprio builder (scripts/ingest/known_set.PassageGate + load_known_sets sobre course/, SudachiPy dict=full, cópia read-only do db em scratch): P1 aboutness, P2 kanji do cumulative_known_set da lição de gating, P3 palavras de conteúdo das alternativas dentro do mesmo known set, P4 não escaneável, shape guard (só japonês, sem travessão, fim em か。), regra de nível W17 sobre level_kanji_allowed (634 kanji, les:n3-revisao-01), 4 alternativas distintas, key no intervalo, about com índices existentes, ai_generated false e needs_review true. As 26 linhas passam em todos esses testes; as duas linhas marcadas ok:false falham em julgamento humano, não no gate, e as correções foram passadas pelo mesmo gate.",
+ "verdicts": [
+  {
+   "passage": "read:n3-desejos-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-desejos-07-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-deveres-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-deveres-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-deveres-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-deveres-04-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "A explicação pt-BR erra a alternativa que está refutando. Ela diz \"O texto diz o oposto da segunda opção, já que houve treino e duas vitórias\", mas treino e duas vitórias refutam a QUARTA alternativa (れんしゅうをしていなかったので、一回も勝てなかった); a segunda é a das máquinas, refutada só no fim da frase. A pergunta, a chave e as quatro alternativas estão corretas e passam P1-P4, o gate de kanji da lição e a regra de nível; o defeito é só o rótulo posicional errado, que confunde quem revisa. corrected traz a mesma linha com a explicação reescrita, refutando as alternativas na ordem em que são impressas.",
+   "corrected": {
+    "passage": "read:n3-deveres-04-01",
+    "question_index": 0,
+    "stem": "会社の試合について、正しいものはどれですか。",
+    "options": [
+     "れんしゅうをしていたので、みんなの力が上がっていた",
+     "きかいを調べていたので、試合を見に行けなかった",
+     "走るのがはやい人が少なくて、一回だけ勝った",
+     "れんしゅうをしていなかったので、一回も勝てなかった"
+    ],
+    "key": 0,
+    "explanation": "A quarta frase explica o resultado: como tinham treinado bastante, o nível do time inteiro havia subido. As máquinas foram revisadas de manhã, e isso não impediu a ida aos jogos à tarde; gente que corre rápido havia muita, não pouca, e o time ganhou duas vezes, não uma; e dizer que não houve treino nem vitória inverte o que o texto conta.",
+    "about": [
+     2,
+     3,
+     4
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n3-deveres-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-deveres-05-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-deveres-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-deveres-06-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-05-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-06-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-enfase-07-02",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Segunda alternativa defensável. O distrator \"あまいまめを食べなかった\" é uma negativa que o texto não afirma nem nega: 全く知らない人と、あまいまめを食べた não tem sujeito explícito, então ou o sujeito é quem narra (e daí se infere justamente que o irmão não comeu, tornando o distrator verdadeiro) ou, por continuidade do tópico 弟は da frase anterior, é o irmão (e aí o distrator é falso). Nos dois casos a alternativa deixa de ser seguramente incorreta, e a própria explicação autoral (\"quem come o doce de feijão é quem narra, junto com um desconhecido\") é o argumento a favor dela. A chave, 父のまねがとても上手だった, continua certa e explícita na frase 3. corrected troca esse distrator por 知らない人と歌を歌った, uma afirmação positiva que recombina dois elementos do texto (o desconhecido da frase 4 e o canto da frase 3) e que nenhuma leitura sustenta; verificado no mesmo gate: P1-P4, kanji da lição les:n3-enfase-07 e lista de nível, todos limpos. about passa a [2, 3] porque o novo distrator se apoia também na frase 4.",
+   "corrected": {
+    "passage": "read:n3-enfase-07-02",
+    "question_index": 0,
+    "stem": "おまつりの夜の弟について、正しいものはどれですか。",
+    "options": [
+     "父といっしょに歌をならった",
+     "父のまねがとても上手だった",
+     "知らない人と歌を歌った",
+     "写真をたくさんとった"
+    ],
+    "key": 1,
+    "explanation": "A terceira frase diz que o irmão mais novo imita o pai tão bem que parecia o próprio pai cantando. Ninguém aprende música com o pai; quem fica com o desconhecido é quem narra, e para comer doce de feijão, não para cantar; e a foto aparece só na comparação com a cor do céu.",
+    "about": [
+     2,
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n3-estado-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-estado-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-estado-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-estado-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-estado-04-02",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n3-estado-05-01",
+   "question_index": 0,
+   "ok": true
+  }
+ ],
+ "summary": "26 revisadas: 24 ok, 2 com corrected, 0 rejeitadas sem conserto. Nenhuma violação de kanji (nível ou lição), nenhuma falha de P1/P2/P3/P4, nenhuma alternativa repetida, nenhum item respondível só por varredura verbatim (em nenhuma das 26 a chave aparece literal na passagem) nem por conhecimento de mundo. read:n3-deveres-04-01 tem explicação pt-BR que aponta a alternativa errada ao refutar; read:n3-enfase-07-02 tem um distrator inferível como verdadeiro por causa do sujeito omitido na frase 4. Ambos vão com a linha completa em corrected."
+}

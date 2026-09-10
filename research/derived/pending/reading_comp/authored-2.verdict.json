@@ -1,0 +1,250 @@
+{
+ "file": "authored-02.json",
+ "work_file": "work-02.json",
+ "level": "n5",
+ "reviewed": 21,
+ "counts": {
+  "ok": 16,
+  "corrected": 5,
+  "rejected": 0
+ },
+ "rules_checked": [
+  "P1",
+  "P2",
+  "P3",
+  "P4",
+  "level",
+  "single-key",
+  "not-scannable",
+  "natural-jp",
+  "pt-BR"
+ ],
+ "method": "Every stem and option set was recomputed against its passage with SudachiPy through scripts/ingest/known_set.py (PassageGate) on a scratch COPY of db/corpus.sqlite, using the gating lesson's cumulative_known_set from the exported course leaves and the builder's own P1/P2/P3/P4 code paths from scripts/export/build_reading_comp_bank.py. Every question was answered from the passage text alone before the authored key was read. The five corrected rows were re-run through the same checks and pass P1, P2/P3, P4, the level rule and the shape guard.",
+ "verdicts": [
+  {
+   "passage": "read:n5-particulas-lugar-05-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "Key うみ is the only destination tied to ごぜん ([1]); the other three options are all destinations the passage names, so the learner has to attach the right time to the right place instead of string-matching. P4 clear, three distractors printed verbatim."
+  },
+  {
+   "passage": "read:n5-particulas-lugar-06-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "あね appears only at [2] (cinema) and [4] (shopping); each distractor pairs one correct item with one あね-less activity, so there is no second key."
+  },
+  {
+   "passage": "read:n5-particulas-lugar-07-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "Perspective flip あげる to もらう over [2] and [4]; both items reach いもうと, so えだけ and くつだけ are each half right and かばん is absent. Sound."
+  },
+  {
+   "passage": "read:n5-particulas-lugar-08-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "Negative item resolved by [2] bought against [3] 見ます only. All four options are printed verbatim, so P4 and the orthography-giveaway rule are both clear."
+  },
+  {
+   "passage": "read:n5-passado-04-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "Only [3] expresses a wish; the photo is past, the work is finished and the train is never wished for. Key unique."
+  },
+  {
+   "passage": "read:n5-passado-05-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "The pt-BR explanation asserts something false about the passage: nem estacao nem casa entram na cena, but the house does appear, at [4] いぬといえにかえった. The station is genuinely absent; the house is not. Stem, options and key are correct.",
+   "corrected": {
+    "passage": "read:n5-passado-05-01",
+    "question_index": 0,
+    "stem": "おとこの人がいたのは、どこですか。",
+    "options": [
+     "こうえんの中",
+     "こうえんのそと",
+     "えきのまえ",
+     "いえの中"
+    ],
+    "key": 1,
+    "explanation": "A segunda frase coloca o homem do lado de fora do parque; o interior do parque aparece só na proibição que ele faz, a estação não é citada em momento nenhum e a casa entra só no fim, quando os dois voltam.",
+    "about": [
+     1
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-perguntas-04-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Longshot distractor / form giveaway: the stem asks だれとだれ (who and who), which demands a pair, so option 3 おじだけ names one person and is eliminable on form alone, without reading the passage. The key and the explanation are correct. Minimal fix: drop とだれ from the stem so that all four options are coherent answers.",
+   "corrected": {
+    "passage": "read:n5-perguntas-04-01",
+    "question_index": 0,
+    "stem": "いしゃは、だれですか。",
+    "options": [
+     "おじとおばあさん",
+     "おくさんとおばあさん",
+     "おじとおくさん",
+     "おじだけ"
+    ],
+    "key": 2,
+    "explanation": "A última fala confirma que o tio e a esposa dele são os dois médicos; a avó aparece só como dona da casa, e parar no tio sozinho ignora a resposta final.",
+    "about": [
+     2,
+     5
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-perguntas-05-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Ambiguous key. カメラをもっている reads first as who has it on them, and that is speaker B, who is carrying the camera bag ([1] これはカメラのかばんです); the passage only settles OWNERSHIP ([5] いいえ、あにのです). Option 0 あなた is therefore defensible against the intended key あに. The stem is also far above the gating lesson: les:n5-perguntas-05 (26 grammar points, a copula-only stage whose own passage contains no verb and no を) teaches neither を nor 〜ている. Recasting the stem as a possession question removes both problems and matches the passage's own wording.",
+   "corrected": {
+    "passage": "read:n5-perguntas-05-01",
+    "question_index": 0,
+    "stem": "カメラは、だれのですか。",
+    "options": [
+     "あなた",
+     "あね",
+     "ともだち",
+     "あに"
+    ],
+    "key": 3,
+    "explanation": "Na última troca a pessoa nega que a câmera seja dela e diz que é do irmão mais velho; irmã e amigo não aparecem no diálogo.",
+    "about": [
+     4,
+     5
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-perguntas-06-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "The A-or-B turn [2] and its answer [3] settle it; がっこう is printed too, so the learner has to read the reply rather than spot a place name."
+  },
+  {
+   "passage": "read:n5-rotina-03-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "All four time slots are real events in the text and two options are printed verbatim, so the learner has to attach かおをあらう to the right slot."
+  },
+  {
+   "passage": "read:n5-rotina-04-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "そこで at [3] resolves to the department store; the morning activities are at home and nothing is bought anywhere in the text."
+  },
+  {
+   "passage": "read:n5-te-form-03-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "はは at [2] is the only person in the passage, and the option says おかあさん, so the item is not a surface match. Key unique."
+  },
+  {
+   "passage": "read:n5-te-form-04-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "Four relative clauses, all printed verbatim, one labelled 学生 at [2]; the name-writers are five people the text never labels, so there is no second key. Exactly the lesson's own grammar point."
+  },
+  {
+   "passage": "read:n5-te-form-05-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "[4] is the only てはいけません in the notice; 名前を書く is なくてもいい, optional rather than forbidden, which is the intended trap and is correctly explained."
+  },
+  {
+   "passage": "read:n5-te-form-06-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "[2] gives both halves, 出さないで and かばんに入れて; option 0 is the exact opposite and neither わたす option is in the text."
+  },
+  {
+   "passage": "read:n5-te-form-07-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "Genuine inference item: the reason is [0] read against the obligation in [1]. 九時 is the study limit, not a departure, and the notebook is not lost."
+  },
+  {
+   "passage": "read:n5-te-form-08-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "[2] 一人で answers だれと in the standard JLPT way; no companion is named anywhere in the note."
+  },
+  {
+   "passage": "read:n5-verbos-03-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "The pt-BR explanation asserts something false about the passage: A ultima frase e a unica que fala de casa, but [4] いぬといえへかえります also names the house, and the row's own `about` cites it. Stem, options and key are correct.",
+   "corrected": {
+    "passage": "read:n5-verbos-03-01",
+    "question_index": 0,
+    "stem": "いえにかえってからするのは、どれですか。",
+    "options": [
+     "いぬとあそぶこと",
+     "こうえんをあるくこと",
+     "シャワーをあびること",
+     "さんぽに行くこと"
+    ],
+    "key": 2,
+    "explanation": "A volta para casa está na penúltima frase e o banho na última; brincar com o cachorro, caminhar e passear acontecem todos no parque, antes disso.",
+    "about": [
+     4,
+     5
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-verbos-04-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "The order in the text is homework, composition, homework ends, then the walk, so only しゅくだいのあと holds; breakfast is absent."
+  },
+  {
+   "passage": "read:n5-verbos-05-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Aspect the passage does not state, written in a form the lesson has not taught. The passage says おんなのこがうたをうたいます (non-past), while the stem asks しているのは and all four options are 〜ています, asserting a progressive the text never marks; and les:n5-verbos-05 (Existencia com が: ある e いる, 38 grammar points) has no gram:te-iru in its cumulative known set, which first appears at les:n5-te-form-03, several modules later. The original also pairs a 〜のは stem with finite 〜ます options, which do not compose. Recasting stem and options in plain form plus こと fixes all three and keeps P4 clear: うたをうたいます is a verbatim span of the passage, so a 〜ます option set would be dropped by P4, while うたをうたうこと is not. Key, distractor logic and explanation are correct and unchanged.",
+   "corrected": {
+    "passage": "read:n5-verbos-05-01",
+    "question_index": 0,
+    "stem": "おんなのこがするのは、どれですか。",
+    "options": [
+     "いぬとあそぶこと",
+     "うたをうたうこと",
+     "きを見ること",
+     "こうえんをあるくこと"
+    ],
+    "key": 1,
+    "explanation": "A quarta frase atribui o canto à menina; o cachorro e a árvore aparecem só como coisas que existem no parque, sem ninguém interagindo com eles.",
+    "about": [
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-verbos-06-01",
+   "question_index": 0,
+   "ok": true,
+   "note": "The two ください requests are [1] and [5]; the magazine and the fruit are what gets bought, not what is asked of the mother."
+  }
+ ],
+ "summary": "21 reviewed: 16 pass, 5 carry a supplied correction, 0 unsalvageable. All 21 already clear the four coded builder rules, the W17 level rule (every kanji in every stem and option is inside les:n5-kanji-exame-03's 103), the shape guard and the provenance flags, and all 21 keys are answerable from the passage; exactly one key (perguntas-05) is ambiguous. The five corrections are two Japanese defects (perguntas-05's ambiguous もっている key, verbos-05's progressive aspect the passage does not state), one distractor eliminable on form alone (perguntas-04, だれとだれ against おじだけ), and two pt-BR explanations that assert something false about their own passage (passado-05 and verbos-03 both deny a house the text names).",
+ "notes_for_the_campaign": [
+  "The cumulative_known_set GRAMMAR lists cannot serve as a gate and were deliberately not used as one here. The applied passages themselves routinely use grammar outside their gating lesson's list: the les:n5-verbos-03 passage uses へ, に, で and と while that lesson's set contains none of them, and the les:n5-passado-04 passage uses the て-form and 〜たい while that set contains neither. Only kanji and vocab are modelled. verbos-05 was flagged anyway because there the untaught form (〜ている, first taught at les:n5-te-form-03) also misstates the passage's aspect, which is a content defect rather than a sequencing one.",
+  "だけ appears in the options of particulas-lugar-07, perguntas-04 and verbos-06 without being in those lessons' grammar lists or in their passages, and こと as a nominaliser is in no lesson's vocab set in this file, passing only through the kana carve-out (rotina-04, te-form-05, verbos-03, and the verbos-05 correction). Both are house habits of the batch rather than per-row errors, and both are invisible to the builder.",
+  "Seven items are cloze-shaped: the stem restates one passage sentence with the answer replaced by a question word (particulas-lugar-05, particulas-lugar-08, passado-05, perguntas-06, rotina-03, te-form-04, and perguntas-05 after correction). None is rejectable, because in each one at least one distractor is also printed verbatim, so the learner has to pick the right sentence rather than match a single string. It is still the weakest shape in the batch and worth watching at N4/N3, where longer passages can carry inference."
+ ]
+}

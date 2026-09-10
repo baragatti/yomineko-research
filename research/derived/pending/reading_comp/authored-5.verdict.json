@@ -1,0 +1,205 @@
+{
+ "file": "authored-05.json",
+ "work_file": "work-05.json",
+ "level": "n4",
+ "reviewed": 23,
+ "counts": {
+  "ok": 19,
+  "corrected": 3,
+  "rejected": 1
+ },
+ "rules_checked": [
+  "answer-from-passage",
+  "single-defensible-key",
+  "not-answerable-without-reading",
+  "not-scannable (P4 + near-verbatim lift)",
+  "P1 aboutness",
+  "P2 gating-lesson kanji",
+  "P3 gating-lesson words (SudachiPy full dict, mode C)",
+  "W17 level kanji (les:n4-kanji-exame-05, 290)",
+  "gating-lesson grammar of stem/options",
+  "natural Japanese",
+  "pt-BR explanation correctness",
+  "option shape / 4 distinct / key range / about indices / provenance flags"
+ ],
+ "verdicts": [
+  {
+   "passage": "read:n4-keigo-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-keigo-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-obrigacao-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-obrigacao-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-obrigacao-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-obrigacao-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-obrigacao-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-02-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "A chave (3) esta certa e o texto a sustenta ([2] にちようびは休みだ + [3] だから、行くのはあしたがいい), mas o distrator 1 「友だちがあしたしか行けないから」 usa duas construcoes que a licao-porta ainda nao ensinou: a forma potencial 行ける (gram:gp-115, gram:rareru e gram:koto-ga-dekiru NAO estao no cumulative_known_set de les:n4-oracoes-relativas-02, que tem 173 pontos; a forma potencial so entra no topico potencial, que vem depois — les:n4-potencial-01 tem 208) e 〜しか〜ない (gram:gp-100 / gram:gp-118 tambem ausentes). Alem disso 行ける nao resolve como registro dentro do known set (so existe vocab:1578850 行く) e a forma nao aparece na passagem, entao P3 falha na letra. Correcao: trocar so o distrator 1 por 「友だちはあしたが休みだから」 — mesma armadilha (reaproveita 休み com outro sujeito), so gramatica ja ensinada, e as quatro opcoes ficam com 13 caracteres cada.",
+   "corrected": {
+    "passage": "read:n4-oracoes-relativas-02-01",
+    "question_index": 0,
+    "stem": "どうしてあした「みなみ」に行きますか。",
+    "options": [
+     "あしたは店が新しくなるから",
+     "友だちはあしたが休みだから",
+     "駅の前でコーヒーを買うから",
+     "にちようびは店が休みだから"
+    ],
+    "key": 3,
+    "explanation": "A terceira e a quarta frase andam juntas: como aos domingos o lugar fecha, o melhor dia é amanhã. A loja já é nova desde que abriu, o texto não diz nada sobre a folga do amigo, e a ideia é tomar o café lá, não comprar na estação.",
+    "about": [
+     2,
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-03-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Rejeitado: a questao se resolve por varredura, sem leitura. A chave 「それをやってみる」 e a frase [0] 「自分でもそれをやってみます」 menos a flexao polida, e o proprio enunciado entrega o gancho (自分で + 何をする), de modo que basta localizar 自分で na passagem e copiar o resto; nenhum dos tres distratores tem qualquer apoio textual — que e exatamente o modo de falha que P4 existe para barrar (o teste literal de substring passa so porque みます vira みる). Somando: a resposta e semanticamente vazia, porque それ nao tem antecedente em lugar nenhum da passagem, entao 'o que ele diz que vai fazer' e 'aquilo'. Nao ofereco `corrected`: a passagem sao quatro frases avulsas do banco (fazer aquilo, talvez chova, estou fazendo aquilo agora, tem guia em japones), sem relacao entre si para perguntar, e P1 ainda obriga o enunciado a reutilizar um conteudo de >=2 caracteres da passagem (自分 / 日本語 / ガイド / ところ), o que empurra qualquer reformulacao de volta para o mesmo lift. Recomendacao: tirar esta passagem do banco de reading_comp ou trocar a passagem-base."
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-05-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "A chave esta certa, mas o item e resolvivel por varredura. 「安くてしずかな店」 e a frase [1] 「安くて、しずかな店がいいですと言われました」 letra por letra, com a virgula como unica diferenca — o teste de substring de P4 passa por causa dela, o leitor humano nao ve diferenca nenhuma. E os tres distratores nao tem apoio nenhum no texto: 高い e 人が多い nao aparecem em lugar algum da passagem, entao a unica opcao com pegada textual e justamente a certa, que e o modo de falha descrito em P4. (Compare com as linhas que passam: em potencial-02 as quatro opcoes sao trechos literais e em oracoes-relativas-01 as quatro sao quase-trechos, e ai a discriminacao continua real.) Correcao: manter enunciado e posicao da chave e fechar o 2x2 em preco x movimento, com a chave passando a exigir o elo [1] しずかな -> [3] よるも人が少ない; nenhuma das quatro opcoes fica literal e os comprimentos ficam pareados (11/9/11/9).",
+   "corrected": {
+    "passage": "read:n4-oracoes-relativas-05-01",
+    "question_index": 0,
+    "stem": "友だちは、どんな店がいいと言いましたか。",
+    "options": [
+     "安くて、人が多くない店",
+     "安くて、人が多い店",
+     "高くて、人が多くない店",
+     "高くて、人が多い店"
+    ],
+    "key": 0,
+    "explanation": "A resposta do amigo está na segunda frase: barato e tranquilo. A quarta frase mostra o que é ser tranquilo ali — mesmo à noite tem pouca gente no lugar. As outras três erram o preço, o movimento ou os dois: o texto nunca fala em lugar caro nem em lugar cheio.",
+    "about": [
+     0,
+     1,
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-oracoes-relativas-07-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Enunciado, opcoes e chave estao corretos ([5] 「その店で買った本を読んでから行きます」), e o item passa em P1/P2/P3/P4 e na regra de nivel. O defeito esta na explicacao pt-BR: 'O livro do pai só estava à venda ali' afirma uma exclusividade que o texto nao da — [1] diz 「父がよく読む本も、その店にありました」, ou seja, o livro do pai TAMBEM estava naquela loja. E, alem de ser falsa sobre o texto, essa frase nao e o motivo pelo qual o distrator 1 falha: ele falha porque a pessoa comprou um livro, e nao o do pai. Correcao: so a explicacao; enunciado, opcoes, chave e `about` ficam identicos.",
+   "corrected": {
+    "passage": "read:n4-oracoes-relativas-07-01",
+    "question_index": 0,
+    "stem": "この人は会に行く前に、何をしますか。",
+    "options": [
+     "店で買った本を読みます",
+     "父がよく読む本を買います",
+     "先生の話を聞きます",
+     "ともだちといえで会います"
+    ],
+    "key": 0,
+    "explanation": "A última frase diz que ele vai depois de ler o livro que comprou naquela loja. O livro que o pai costuma ler também estava lá, mas não foi esse que ele comprou; a fala da professora acontece durante o encontro, e o amigo apenas disse que também vai.",
+    "about": [
+     4,
+     5
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n4-passiva-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-passiva-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-passiva-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-passiva-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-potencial-01-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-potencial-02-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-potencial-03-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-potencial-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n4-revisao-01-01",
+   "question_index": 0,
+   "ok": true
+  }
+ ],
+ "summary": "23 questoes revistas contra as passagens de work-05.json (n4, uma por passagem). 19 passam sem alteracao; 2 recebem `corrected` por defeito de conteudo (oracoes-relativas-02: distrator com forma potencial e 〜しか〜ない, ambos ainda nao ensinados na licao-porta; oracoes-relativas-05: a chave e a unica opcao com pegada textual e o item se resolve por varredura); 1 recebe `corrected` so na explicacao pt-BR (oracoes-relativas-07: afirmava exclusividade que o texto nao da); 1 e rejeitado sem conserto (oracoes-relativas-03: a chave e um lift quase literal de [0] e semanticamente vazia, porque それ nao tem antecedente, e a passagem, quatro frases avulsas, nao sustenta nenhum item que exija leitura). Verificacao mecanica: forma, 4 opcoes distintas, indice da chave, indices de `about`, ai_generated=false e needs_review=true corretos nas 23; zero kanji fora de level_kanji_allowed (290) e zero fora do cumulative_known_set da licao-porta nas 23; P1 satisfeita nas 23; P4 (substring) nao dispara em nenhuma. As tres linhas corrigidas foram re-checadas mecanicamente e passam em tudo. Observacao para quem montar o lote: em 3 linhas aprovadas (potencial-02, revisao-01, oracoes-relativas-06) a chave e um trecho literal da passagem, mas ali os distratores tambem sao, entao a discriminacao continua exigindo leitura."
+}

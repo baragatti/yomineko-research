@@ -1,0 +1,224 @@
+{
+  "file": "authored-04.json",
+  "work_file": "work-04.json",
+  "level": "n4",
+  "reviewed": 23,
+  "ok": 19,
+  "corrected": 4,
+  "rejected": 0,
+  "keyed_by": [
+    "passage",
+    "question_index"
+  ],
+  "rules_checked": [
+    "P1-aboutness",
+    "P2-gating-lesson-kanji",
+    "P3-gating-lesson-words",
+    "P4-not-scannable",
+    "W17-level-kanji",
+    "shape/Japanese-only/em-dash",
+    "single-defensible-key",
+    "answerable-from-passage-alone",
+    "natural-Japanese",
+    "pt-BR-explanation"
+  ],
+  "method": "Every question was answered from the passage text alone before the authored key was read. P1/P2/P3/P4 and the W17 level rule were recomputed with SudachiPy through scripts/ingest/known_set.py (PassageGate + load_known_sets) against a COPY of db/corpus.sqlite in scratch and the exported course/ tree; the option/stem gate is the same option_problems([stem, correct, *distractors], gating_lesson_cks) that scripts/export/build_reading_comp_bank.py applies. All 23 authored rows pass every mechanical gate; all 4 corrected rows were re-run through the same gate and are clean. Nothing was written to corpus/, course/, db/ or git.",
+  "verdicts": [
+    {
+      "passage": "read:n4-conectores-06-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-conectores-07-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "pt-BR clarity, not a content error. The explanation says \"a chuva e assunto da oracao\": \"oracao\" is the right word for いのる (prayer) but, inside a Japanese-course explanation, it reads first as the grammatical term \"clause\" (design/translation_style.md asks for natural, unambiguous pt-BR). Stem, options and key are correct and unchanged; only the explanation is reworded to \"nao chover e o que ela pede quando reza\".",
+      "corrected": {
+        "passage": "read:n4-conectores-07-01",
+        "question_index": 0,
+        "stem": "この人が時計を二つ用意したのは、どうしてですか。",
+        "options": [
+          "雨がふらないようにするためです。",
+          "朝おくれないようにするためです。",
+          "早くねるようにするためです。",
+          "山へ早く行くためです。"
+        ],
+        "key": 1,
+        "explanation": "A quarta frase liga os dois relógios ao medo de se atrasar de manhã; não chover é o que ela pede quando reza, dormir cedo foi recomendação da mãe e o horário da subida à montanha não aparece.",
+        "about": [
+          3
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n4-dar-receber-01-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-dar-receber-02-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-dar-receber-03-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-dar-receber-04-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-experiencia-01-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-experiencia-02-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-experiencia-03-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-experiencia-04-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-experiencia-05-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "The explanation does not say why distractor 0 (電車が来ないからです) fails, and the _README.md field rule requires it to say why EACH distractor fails. It covers option 1 (\"o texto afirma o contrario sobre a velocidade\") and option 3 (\"e de carro, nao de trem, que a manha fica cheia\") but never addresses the claim that no train comes -- which the passage refutes only implicitly (電車のほうがはやいですが、駅までとおいです presupposes the train runs). Stem, options and key are correct and unchanged; the explanation gains the missing clause.",
+      "corrected": {
+        "passage": "read:n4-experiencia-05-01",
+        "question_index": 0,
+        "stem": "この人はどうして毎日バスで会社に通っていますか。",
+        "options": [
+          "電車が来ないからです。",
+          "バスのほうがはやいからです。",
+          "駅までとおいからです。",
+          "朝は電車が多いからです。"
+        ],
+        "key": 2,
+        "explanation": "A quinta frase diz que o trem é mais rápido, mas que a estação fica longe, e a última tira daí a conclusão do ônibus; o texto afirma o contrário sobre a velocidade, nunca diz que o trem deixa de passar, e é de carro, não de trem, que a manhã fica cheia.",
+        "about": [
+          4,
+          5
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n4-experiencia-06-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-forma-simples-01-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-forma-simples-02-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-forma-simples-03-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-forma-simples-04-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-forma-simples-05-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-forma-simples-06-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-forma-simples-07-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-keigo-01-01",
+      "question_index": 0,
+      "ok": true
+    },
+    {
+      "passage": "read:n4-keigo-02-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "The KEY misstates the passage. 「いそいでのりかえましたが、まにあいませんでした」 says the writer DID make the transfer (のりかえました) and still arrived late, so まにあう here targets the appointment, not the connecting train. The key as printed, 「電車がこんでいて、のりかえにまにあわなかったからです」, asserts のりかえに間に合わなかった = he missed the connection, which the passage contradicts. It is still the only choosable option (the other three are plainly false), so the item is not ambiguous -- but a key that contradicts the text cannot ship. Corrected to 「電車がこんでいて、のりかえてもまにあわなかったからです。」 (concessive, matching が), and the explanation's \"a baldeacao nao deu tempo\" to \"mesmo correndo para fazer a baldeacao, nao deu tempo\". No new kanji or words; re-checked P1-P4 + level: clean.",
+      "corrected": {
+        "passage": "read:n4-keigo-02-01",
+        "question_index": 0,
+        "stem": "この人はどうしておそくなりましたか。",
+        "options": [
+          "朝おきるのがおそくて、うちを出るのがおくれたからです。",
+          "電車がこんでいて、のりかえてもまにあわなかったからです。",
+          "仕事がおわらなくて、会社を出るのがおそくなったからです。",
+          "電車が来なくて、駅でずっと待っていたからです。"
+        ],
+        "key": 1,
+        "explanation": "A segunda e a terceira frases explicam o atraso: o trem estava lotado e, mesmo correndo para fazer a baldeação, não deu tempo; o texto não fala em acordar tarde, em trabalho atrasado nem em trem que não passou.",
+        "about": [
+          1,
+          2
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n4-keigo-03-01",
+      "question_index": 0,
+      "ok": false,
+      "problem": "Answerable by scanning, without reading. The stem asks 何と何 and the passage's only X-と-Y span is 魚と肉 (sentence 3). Of the four options only the key had BOTH members present in the passage: パン and ごはん occur nowhere in the text, and コーヒー occurs but is paired with パン. A learner who cannot read a word of it matches characters and lands on the key. (Builder P4 does not catch this: it fires only on a whole option string appearing verbatim, and 「魚と肉です。」 is not verbatim -- the passage has 魚と肉があります.) Fixed by giving one distractor the same character coverage as the key: 肉とコーヒーです。 -- now scanning leaves options 0 and 1 tied and the item actually tests the お食事 / お飲み物 distinction the passage teaches. Also drops the second パン-only option. Re-checked P1-P4 + level: clean.",
+      "corrected": {
+        "passage": "read:n4-keigo-03-01",
+        "question_index": 0,
+        "stem": "この店のお食事は、何と何ですか。",
+        "options": [
+          "魚と肉です。",
+          "肉とコーヒーです。",
+          "魚とごはんです。",
+          "パンとコーヒーです。"
+        ],
+        "key": 0,
+        "explanation": "A quarta frase apresenta os pratos do lugar: peixe e carne. O café aparece só depois, e como bebida, então não entra na resposta; pão e arroz não são oferecidos em momento nenhum.",
+        "about": [
+          2,
+          3,
+          4
+        ],
+        "ai_generated": false,
+        "needs_review": true
+      }
+    },
+    {
+      "passage": "read:n4-keigo-04-01",
+      "question_index": 0,
+      "ok": true
+    }
+  ],
+  "summary": "23 reviewed: 19 pass, 4 fixed, 0 rejected. Mechanically the batch is spotless -- 23/23 clean on P1, P2, P3, P4, the W17 level-kanji rule and every shape guard, and every explanation's ordinal sentence reference (\"a quarta frase\") matches its own `about` index. The four fixes are: one key that contradicts its passage (keigo-02, のりかえにまにあわなかった against 「いそいでのりかえましたが」), one item solvable by character-matching alone (keigo-03, 魚と肉 the only option pair present in the text), one explanation that leaves a distractor unaddressed (experiencia-05, 電車が来ない), and one pt-BR word choice that collides with grammar metalanguage (conectores-07, \"oracao\" for いのる). Each carries a full corrected row; no row needed re-authoring from scratch. Two quality observations recorded but NOT failed, since neither makes a key wrong, ambiguous or guessable: in experiencia-04 two distractors denote the same referent (米から作ったパン and 白いパン are the same bread, per 「米からできたパンは白くて」), which lets a careful reader eliminate both -- the passage names only three objects, so every replacement tried collapsed the same way or made a distractor partly true; and in forma-simples-02 the key 「店の人がもっていました」 is the only option not built on the 〜にありました frame the どこ stem sets up. Both are construction inefficiencies, not errors, and are left for the teacher review pass."
+}

@@ -1,0 +1,193 @@
+{
+ "file": "authored-01.json",
+ "work_file": "work-01.json",
+ "reviewed": 22,
+ "ok": 19,
+ "corrected": 3,
+ "rejected": 0,
+ "rules_checked": [
+  "P1",
+  "P2",
+  "P3",
+  "P4",
+  "level",
+  "giveaway",
+  "single-key",
+  "answered-independently",
+  "natural-jp",
+  "pt-BR"
+ ],
+ "method": "Cada pergunta foi respondida do zero a partir do passage antes de olhar a chave. Depois: P1/P2/P3/P4 recomputados com SudachiPy através de scripts/ingest/known_set.py (PassageGate) sobre uma CÓPIA do db/corpus.sqlite, com os cumulative_known_set lidos de course/; a regra de nível conferida contra level_kanji_allowed (les:n5-kanji-exame-03, 103 kanji); e a regra W17 de giveaway implementada como 'a chave não pode ser a única opção cujas palavras de conteúdo aparecem no passage'. Nenhuma linha violou P1/P2/P3/P4 nem a regra de nível.",
+ "verdicts": [
+  {
+   "passage": "read:n5-adjetivos-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-adjetivos-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-adjetivos-06-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Explicação pt-BR afirma um fato falso sobre o texto: diz que a frase 3 'é a única que fala do irmão mais velho', mas a frase 4 também fala dele (あにとテレビでスポーツを見て…). A pergunta, a chave (key=2, スポーツ/うた, frase [2]) e os três distratores estão corretos; só a explicação precisa de ajuste.",
+   "corrected": {
+    "passage": "read:n5-adjetivos-06-01",
+    "question_index": 0,
+    "stem": "あにがすきなものと、きらいなものはなんですか。",
+    "options": [
+     "すきなのはおんがくで、きらいなのはテレビです。",
+     "すきなのはテレビで、きらいなのはおんがくです。",
+     "すきなのはスポーツで、きらいなのはうたです。",
+     "すきなのはうたで、きらいなのはスポーツです。"
+    ],
+    "key": 2,
+    "explanation": "A frase 3 é a que conta os gostos do irmão mais velho: ele gosta de esporte e detesta canções. As outras opções invertem esse par ou colocam nele os gostos de quem narra, que são os das frases 1 e 2.",
+    "about": [
+     2
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-adjetivos-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-adjetivos-08-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-comparacoes-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-comparacoes-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-comparacoes-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-conectando-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-conectando-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-conectando-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-conectando-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-convites-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-convites-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-convites-06-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "Regra W17 de entrega (giveaway): セーター é a ÚNICA das quatro opções cuja palavra aparece no texto — ぼうし, かさ e くつ não ocorrem em lugar nenhum. Dá para acertar varrendo o passage atrás de qual dos quatro substantivos está impresso, sem ler a frase 5. A chave está certa; o conjunto de opções é que entrega a resposta.",
+   "corrected": {
+    "passage": "read:n5-convites-06-01",
+    "question_index": 0,
+    "stem": "この人は、かばんのほかになにがほしいですか。",
+    "options": [
+     "かばんです。",
+     "かさです。",
+     "セーターです。",
+     "くつです。"
+    ],
+    "key": 2,
+    "explanation": "A frase 5 diz que, na verdade, além da bolsa a pessoa também quer um suéter. A bolsa está no texto, mas a pergunta é justamente o que ela quer fora a bolsa, então essa opção não serve; guarda-chuva e sapato não aparecem em momento nenhum.",
+    "about": [
+     1,
+     4
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-desu-wa-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-desu-wa-05-01",
+   "question_index": 0,
+   "ok": false,
+   "problem": "O enunciado inventa しゃしん: a palavra não aparece no passage (que só tem これ/それ/あれ + nomes de parentesco) e vocab:1321900 写真 NÃO está no cumulative_known_set de les:n5-desu-wa-05 — passa no P3 apenas pela isenção de palavra só em kana. Além disso 「それ」のしゃしんは、だれですか。 não é japonês idiomático ('a foto do それ'). A chave (key=0, おばあさん, frases [2,3]) e os distratores estão corretos.",
+   "corrected": {
+    "passage": "read:n5-desu-wa-05-01",
+    "question_index": 0,
+    "stem": "「それ」は、だれですか。",
+    "options": [
+     "おばあさんです。",
+     "おかあさんです。",
+     "おじいさんです。",
+     "おとうさんです。"
+    ],
+    "key": 0,
+    "explanation": "A pergunta com sore aparece na frase 3 e é corrigida na frase 4: não é a mãe, é a avó. Kore é que é a mãe (frases 1 e 2), are é o avô (frases 5 e 6), e o pai não entra na conversa.",
+    "about": [
+     2,
+     3
+    ],
+    "ai_generated": false,
+    "needs_review": true
+   }
+  },
+  {
+   "passage": "read:n5-numeros-tempo-04-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-numeros-tempo-05-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-numeros-tempo-06-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-numeros-tempo-07-01",
+   "question_index": 0,
+   "ok": true
+  },
+  {
+   "passage": "read:n5-particulas-lugar-04-01",
+   "question_index": 0,
+   "ok": true
+  }
+ ],
+ "summary": "22 revisadas: 19 ok, 3 com correção sugerida, 0 rejeitadas. Todas as 22 chaves estão corretas e sem segunda opção defensável, e nenhuma é respondível por conhecimento geral. Os três problemas são: uma explicação pt-BR com uma afirmação falsa sobre o texto (adjetivos-06), um conjunto de opções que entrega a resposta por varredura porque só a chave usa uma palavra impressa no passage (convites-06) e um enunciado que introduz しゃしん, palavra ausente do passage e fora do known set da lição, em fraseado não idiomático (desu-wa-05). Cada `corrected` é a linha inteira, já reprovada nos mesmos checks mecânicos: as três passam limpas."
+}
