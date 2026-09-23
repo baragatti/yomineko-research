@@ -183,3 +183,48 @@ and it belongs with the grader, not in the corpus. The corpus's job is to state 
 correct, and `scripts/validate/validate_card_content.py` gates exactly that: a non-empty prompt, an
 `accept` that contains the record's headword or its kana, and nothing in it that is not a form of that
 record.
+
+## 9. The card's example and cloze: `srs.introduces_cards[].example` (W28, 2026-09-23)
+
+§8 gave a `production` card its cue and answer key. No card said which sentence shows its item in
+use, and the `cloze` kind had no stored span at all, so a review screen would have had to pick a
+sentence at runtime with no known-set rule. This section adds the slot.
+
+```json
+{"deck": "deck:vocab-n3", "item": "vocab:1502480", "card_types": ["recognition", "production"],
+ "production_key": {"...": "§8"},
+ "example": {"sentence": "sent:...", "cloze": {"start": 2, "end": 4, "answer": "物語"}}}
+```
+
+| field | type | meaning |
+|---|---|---|
+| `sentence` | `string` (`sent:` slug) | The bank sentence the card shows. |
+| `cloze.start`, `cloze.end` | `integer` | Code-point offsets into that sentence's `jp`. Both sit on Sudachi C-unit token boundaries. |
+| `cloze.answer` | `string` | `jp[start:end]`: stored so a drifted sentence is caught instead of blanking the wrong characters. Japanese, so locale-invariant (no i18n row: the slot carries no learner-facing text of its own; the sentence's translation lives on the sentence). |
+
+**Selected, never authored.** `scripts/derive_card_examples.py` picks the sentence with the rule the
+lesson renderer already applies to every sentence a lesson shows (`validate_lesson_gating` check D,
+through `derive_lesson_sentences.fit`), evaluated at the card's own lesson: model-text register, a
+pt-BR translation, graded at or below the lesson's level, at most the level's i+1 budget of unknown
+kanji + words (pre-N5 0, N5 1, N4 2, N3 2), no unlinked content token; or any sentence the lesson
+itself renders. Ranked: rendered by the lesson, then i+0 before i+1, then fewer unknowns, then real
+over generated (spec 1.2), then shorter.
+
+**What the span blanks.** vocab: the card's own token (reading and sense must fit the record),
+extended over its inflection to the whole form. grammar: a form of the point (from `forms[]` /
+`structure_pattern`), in a sentence tagged with it or, failing that, one that spells it. kanji: the
+whole word that carries the character (so a kanji cloze asks for the word, not the glyph alone).
+
+**Optional by measurement.** 2,242 of 4,136 cards carry one (vocab 1,256 / 2,951, grammar 404 / 494,
+kanji 582 / 634, kana 0 / 57). Kana family cards are five glyphs, not a word, and get none by design.
+The large vocab gap is the rule working: for 1,603 cards every sentence carrying the word is graded
+above the lesson that introduces it (the bank grades 3,405 of 10,209 sentences N2/N1 and 473 N5).
+W13's "2,901 of 2,951 can show one" counted any bank sentence regardless of level. Filling the gap is
+a bank-growth or a rule decision (for example, judging the example against the known set of a later
+review point instead of the introducing lesson), not something a selector should do quietly.
+`scripts/validate/validate_card_content.py` check F gates the slot and ratchets the cards without one.
+
+Stored in the index as `card_example(lesson_id, item, ...)` (migration 018), written by
+`scripts/apply_card_examples.py` from the exact-match table `research/derived/repairs/card_examples.json`,
+joined onto the card at export. Keyed on the card, (lesson, item), for §8's reason: the known set a
+sentence is judged against is the introducing lesson's.

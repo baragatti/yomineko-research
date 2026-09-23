@@ -432,6 +432,14 @@ export interface Lesson {
     introduces_cards: {
         card_types?: unknown[];
         deck?: "deck:grammar-n3" | "deck:grammar-n4" | "deck:grammar-n5" | "deck:kana-hiragana" | "deck:kana-katakana" | "deck:kanji-n3" | "deck:kanji-n4" | "deck:kanji-n5" | "deck:phrases" | "deck:vocab-n3" | "deck:vocab-n4" | "deck:vocab-n5";
+        example?: {
+          sentence: string;
+          cloze: {
+            start: number;
+            end: number;
+            answer: string;
+          };
+        };
         item?: string;
         production_key?: {
           prompt: LocaleText;

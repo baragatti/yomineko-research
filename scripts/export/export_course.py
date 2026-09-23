@@ -309,9 +309,32 @@ def _production_keys(con) -> dict[tuple[int, str], dict]:
     return _PROD_KEYS
 
 
+_EXAMPLES: dict[tuple[int, str], dict] | None = None
+
+
+def _card_examples(con) -> dict[tuple[int, str], dict]:
+    """W28. (lesson_id, item) -> the card's example sentence and cloze span, or {} if the table is absent.
+
+    Selected from the bank by `scripts/derive_card_examples.py` (the lesson renderer's display rule at
+    the card's lesson), written by `scripts/apply_card_examples.py` into `card_example` (migration
+    018). design/srs_design.md §9.
+    """
+    global _EXAMPLES
+    if _EXAMPLES is None:
+        if not con.execute("SELECT name FROM sqlite_master WHERE name='card_example'").fetchone():
+            _EXAMPLES = {}
+            return _EXAMPLES
+        _EXAMPLES = {
+            (lid, item): {"sentence": sent, "cloze": {"start": a, "end": b, "answer": ans}}
+            for lid, item, sent, a, b, ans in con.execute(
+                "SELECT lesson_id,item,sentence,cloze_start,cloze_end,cloze_answer FROM card_example")}
+    return _EXAMPLES
+
+
 def _srs_cards(con, lesson_id: int, unlocks: list, level: str) -> list:
     """Derive the FSRS cards a lesson enrolls from its item unlocks (deck by skill; card types per deck)."""
     keys = _production_keys(con)
+    examples = _card_examples(con)
     cards = []
     for u in unlocks:
         deck = enums.deck_for(u["type"], u["ref"], level)
@@ -324,6 +347,9 @@ def _srs_cards(con, lesson_id: int, unlocks: list, level: str) -> list:
             # therefore optional in the contract, by measurement.
             if key and "production" in card["card_types"]:
                 card["production_key"] = key
+            ex = examples.get((lesson_id, u["ref"]))
+            if ex:
+                card["example"] = ex
             cards.append(card)
     return cards
 

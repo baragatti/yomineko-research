@@ -36,6 +36,12 @@ Over the EXPORTED course tree (`course/**/lesson-*.json`), never the DB:
   E  Structural: `prompt` is a locale object whose keys are a subset of the declared locales and
      which carries `pt-BR` (design/i18n.md R5); `sense_index`, when present, points at a real sense
      of the record; `accept` has no duplicates and no blank entries.
+  F  (W28) Where a card carries an `example`: the sentence is in the bank; `cloze.answer` is exactly
+     `jp[start:end]` (a drifted sentence is caught, not blanked wrong); both ends sit on C-unit token
+     boundaries; the span holds the item (the card's own vocab token, the kanji's character, or for
+     grammar a form of the point or a sentence tagged with it); the sentence is not graded above the
+     lesson unless the lesson renders it; a kana family card carries none. Cards with no example
+     are ratcheted per namespace (NO_EXAMPLE_RATCHET). design/srs_design.md §9.
 
 Empty input FAILS (scripts/validate/README.md, Conventions): a run that found no lesson, no card or
 no production card has certified nothing, and the floors sit well below today's counts.
@@ -74,12 +80,31 @@ Plant 1 is caught by the RATCHET rather than by a per-card message, which is the
 no key is not a defect in general (1,185 grammar/kanji/kana cards have none and are held), it is a
 defect when the count for that namespace grows.
 
+PLANT PROOF, check F (recorded 2026-09-23, W28; same method, fresh fixture per plant):
+
+  control          exit=0  [OK] 4136 card(s) over 322 lesson(s); 2951 production key(s) checked;
+                           2242 example(s) checked
+  F1-no-example    exit=1  ratchet: vocab: 1696 card(s) with no example, ratchet is 1695
+  F2-ghost         exit=1  les:n3-conectores-01 / vocab:1013980: example sentence 'sent:nope' is not
+                           in the bank
+  F3-drift         exit=1  ... cloze answer 'X' is not jp[0:7] ('アイスクリーム'): the sentence drifted
+  F4-cut-token     exit=1  ... cloze span 1-7 ('イスクリーム') cuts through a token
+  F5-wrong-token   exit=1  ... cloze span 'を' does not hold the card's own token
+  F6-kanji-off     exit=1  les:n3-conectores-01 / kanji:定: cloze span 'が' does not carry the character
+  F7-gram-off      exit=1  les:n3-conectores-01 / gram:n3-sore-to: cloze span '明日' is not a form of
+                           the point and the sentence is not tagged
+  F8-above-level   exit=1  les:n5-desu-wa-01 / vocab:1223615: example sentence is graded n1, above
+                           the lesson's n5, and the lesson does not render it
+  F9-kana-example  exit=1  les:pre-n5-hiragana-01 / kana:hiragana-a: a kana family card carries an
+                           example: five glyphs, not a word
+
 Usage: validate_card_content.py [--root PATH] [--all]
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import unicodedata
 from pathlib import Path
@@ -97,10 +122,83 @@ LOCALES = {"pt-BR", "en"}
 # must stay there; grammar, kanji and kana are W28-and-later work and are held at today's counts.
 # A number may only shrink. Raising one is a decision, not a fix.
 UNKEYED_RATCHET = {"vocab": 0, "gram": 494, "kanji": 634, "kana": 57}
+# W28, check F. Cards with no `example`, per namespace, as derived on 2026-09-23. Most are not a
+# defect of the card: every bank sentence carrying the word is graded above the introducing lesson's
+# level (research/reports/w28_card_examples_report.md). Kana family cards are five glyphs, not a
+# word, and have none by design. May only shrink.
+NO_EXAMPLE_RATCHET = {"vocab": 1695, "gram": 90, "kanji": 52, "kana": 57}
+MIN_EXAMPLES = 2_000
+LEVEL_ORDER = ("pre-n5", "n5", "n4", "n3", "n2", "n1")
+SENT_TAG_RX = re.compile(r'<sentence\s+ref="([^"]+)"')
 
 
 def nfkc(s: str) -> str:
     return unicodedata.normalize("NFKC", s)
+
+
+def token_bounds(sent: dict) -> tuple[dict[int, dict], set[int]] | None:
+    """Starts (-> token) and ends of the C-unit tokens tiled over `jp`; None if they do not tile.
+
+    The same walk as `build_vocab_exercises.token_spans`, kept inline so a plant fixture needs no
+    second file: split_mode A rows are sub-units of the C token that follows them.
+    """
+    jp = sent.get("jp") or ""
+    starts: dict[int, dict] = {}
+    ends: set[int] = set()
+    i = 0
+    for t in sent.get("tokens") or []:
+        surf = t.get("surface") or ""
+        if not surf or t.get("split_mode") == "A":
+            continue
+        j = jp.find(surf, i)
+        if j < 0:
+            return None
+        starts[j] = t
+        ends.add(j + len(surf))
+        i = j + len(surf)
+    return starts, ends
+
+
+def check_example(ex: dict, ns: str, item: str, rec: dict, lesson: dict, bank: dict) -> str | None:
+    """Check F: the example exists, is showable at this lesson, and its cloze blanks the item."""
+    if not isinstance(ex, dict) or not isinstance(ex.get("cloze"), dict):
+        return "example is not {sentence, cloze}"
+    if ns == "kana":
+        return "a kana family card carries an example: five glyphs, not a word"
+    sent = bank.get(ex.get("sentence"))
+    if sent is None:
+        return f"example sentence {ex.get('sentence')!r} is not in the bank"
+    jp = sent.get("jp") or ""
+    c = ex["cloze"]
+    a, b, ans = c.get("start"), c.get("end"), c.get("answer")
+    if not (isinstance(a, int) and isinstance(b, int) and 0 <= a < b <= len(jp)):
+        return f"cloze span {a!r}-{b!r} is not inside the sentence ({len(jp)} chars)"
+    if jp[a:b] != ans:
+        return f"cloze answer {ans!r} is not jp[{a}:{b}] ({jp[a:b]!r}): the sentence drifted"
+    bounds = token_bounds(sent)
+    if bounds is None:
+        return "the sentence's tokens do not tile its text, so no span can be aligned"
+    starts, ends = bounds
+    if a not in starts or b not in ends:
+        return f"cloze span {a}-{b} ({ans!r}) cuts through a token"
+    if ns == "vocab" and not any(t.get("vocab") == item for s, t in starts.items() if a <= s < b):
+        return f"cloze span {ans!r} does not hold the card's own token"
+    if ns == "kanji" and item.split(":", 1)[1] not in ans:
+        return f"cloze span {ans!r} does not carry the character"
+    if ns == "gram":
+        tagged = item.split(":", 1)[1] in (sent.get("grammar") or [])
+        forms = [f.get("form") or "" for f in rec.get("forms") or [] if isinstance(f, dict)]
+        forms.append(rec.get("structure_pattern") or "")
+        if not tagged and not any(ans in f for f in forms):
+            return f"cloze span {ans!r} is not a form of the point and the sentence is not tagged"
+    rendered = set(SENT_TAG_RX.findall(lesson.get("body") or "")) | set(lesson.get("sentence_refs") or [])
+    for e in lesson.get("exercises") or []:
+        rendered |= set(e.get("sentence_refs") or [])
+    slv, llv = sent.get("level"), lesson.get("level")
+    if ex["sentence"] not in rendered and slv in LEVEL_ORDER and llv in LEVEL_ORDER \
+            and LEVEL_ORDER.index(slv) > LEVEL_ORDER.index(llv):
+        return f"example sentence is graded {slv}, above the lesson's {llv}, and the lesson does not render it"
+    return None
 
 
 def die(msg: str) -> None:
@@ -207,9 +305,16 @@ def main() -> int:
             f"against a registry that is not there")
     retired = load_retired(root)
 
-    fails: dict[str, list[str]] = {k: [] for k in "ABCDE"}
-    n_cards = n_prod = n_keys = 0
+    bank_path = root / "corpus" / "sentences" / "bank.json"
+    bank = {s["slug"]: s for s in json.loads(bank_path.read_text(encoding="utf-8"))} \
+        if bank_path.exists() else {}
+    if not bank:
+        die(f"no sentence bank at {bank_path} — an example cannot be checked against nothing")
+
+    fails: dict[str, list[str]] = {k: [] for k in "ABCDEF"}
+    n_cards = n_prod = n_keys = n_examples = 0
     unkeyed: dict[str, int] = {}
+    no_example: dict[str, int] = {}
 
     for L in lessons:
         lid = L["id"]
@@ -234,6 +339,16 @@ def main() -> int:
             if rec is None:
                 fails["A"].append(f"{addr}: does not resolve to a record in corpus/{ns}")
                 continue
+
+            # ---- F: the example sentence and its cloze span (W28) ------------------------------
+            ex = card.get("example")
+            if ex is None:
+                no_example[ns] = no_example.get(ns, 0) + 1
+            else:
+                n_examples += 1
+                why = check_example(ex, ns, item, rec, L, bank)
+                if why:
+                    fails["F"].append(f"{addr}: {why}")
 
             key = card.get("production_key")
             kinds = card.get("card_types") or []
@@ -301,8 +416,17 @@ def main() -> int:
     if n_keys < MIN_KEYS:
         die(f"{n_keys} production key(s), floor is {MIN_KEYS} — a run that found no keys would "
             f"pass every content check by having nothing to check")
+    if n_examples < MIN_EXAMPLES:
+        die(f"{n_examples} card example(s), floor is {MIN_EXAMPLES}")
 
     ratchet_fail = []
+    for ns in sorted(set(no_example) | set(NO_EXAMPLE_RATCHET)):
+        got, allowed = no_example.get(ns, 0), NO_EXAMPLE_RATCHET.get(ns)
+        if allowed is None:
+            ratchet_fail.append(f"{ns}: {got} card(s) with no example and no ratchet entry")
+        elif got > allowed:
+            ratchet_fail.append(f"{ns}: {got} card(s) with no example, ratchet is {allowed} — a card "
+                                f"that lost its example is a regression")
     for ns, allowed in UNKEYED_RATCHET.items():
         got = unkeyed.get(ns, 0)
         if got > allowed:
@@ -317,12 +441,14 @@ def main() -> int:
           f"{n_keys} key(s) checked")
     for ns, allowed in sorted(UNKEYED_RATCHET.items()):
         print(f"  unkeyed {ns:<6} {unkeyed.get(ns, 0):>4} / ratchet {allowed}")
+    for ns, allowed in sorted(NO_EXAMPLE_RATCHET.items()):
+        print(f"  no example {ns:<6} {no_example.get(ns, 0):>4} / ratchet {allowed}")
     if not total:
         print(f"[OK] {n_cards} card(s) over {len(lessons)} lesson(s); {n_keys} production key(s) "
-              f"checked")
+              f"checked; {n_examples} example(s) checked")
         return 0
     print(f"[FAIL] {total} problem(s)")
-    for check in "ABCDE":
+    for check in "ABCDEF":
         rows = fails[check]
         if not rows:
             continue

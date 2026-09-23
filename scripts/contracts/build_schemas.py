@@ -395,6 +395,46 @@ _register({
         "required": ["prompt", "accept", "verified", "verified_by"],
         "additionalProperties": False,
     },
+    # W28. The sentence a card shows its item in, and the span a cloze blanks. Selected, not
+    # authored (scripts/derive_card_examples.py: the lesson renderer's display rule at the card's
+    # lesson). One object for the same reason as production_key: infer_shapes stops at this depth.
+    # scripts/validate/validate_card_content.py check F enforces what a schema cannot (the sentence
+    # carries the item; the span is the item's own token, on token boundaries).
+    "lesson.srs.introduces_cards[].example": {
+        "type": "object",
+        "description": (
+            "The example sentence this card shows its item in, and the cloze span over it. Selected "
+            "from the bank by the lesson renderer's own display rule at the card's lesson (i+1 "
+            "within the level budget, at or below the level), never authored. Optional by "
+            "measurement: a card whose item no admissible sentence carries has none, and "
+            "validate_card_content.py ratchets that count. See design/srs_design.md §9."),
+        "properties": {
+            "sentence": {
+                "type": "string",
+                "pattern": "^sent:",
+                "description": "The bank sentence (corpus/sentences/bank.json slug).",
+            },
+            "cloze": {
+                "type": "object",
+                "description": "The span a cloze blanks: code-point offsets into the sentence's "
+                               "`jp`, on Sudachi token boundaries, covering the card's item (the "
+                               "word's whole inflected form, the grammar point's form, or the word "
+                               "that carries the kanji).",
+                "properties": {
+                    "start": {"type": "integer", "minimum": 0},
+                    "end": {"type": "integer", "minimum": 1},
+                    "answer": {"type": "string", "minLength": 1,
+                               "description": "`jp[start:end]`, stored so a drifted sentence is "
+                                              "caught instead of blanking the wrong characters. "
+                                              "Japanese, locale-invariant."},
+                },
+                "required": ["start", "end", "answer"],
+                "additionalProperties": False,
+            },
+        },
+        "required": ["sentence", "cloze"],
+        "additionalProperties": False,
+    },
     "grammar.register[]": _grammar_register,
     "grammar.caution": vocabulary(
         ["none", "rough", "offensive", "sensitive"],

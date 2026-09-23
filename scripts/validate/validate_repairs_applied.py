@@ -1341,6 +1341,38 @@ def handle_practice_exercises(rows, sents, gram, table):
     return out
 
 
+def handle_card_examples(rows, sents, gram, table):
+    """W28. Every row's card ships with EXACTLY the row's example sentence and cloze span.
+
+    Selected, not authored (scripts/derive_card_examples.py), but exact-match all the same: the
+    export must be built from this table, and a card whose example moved without the table moving
+    is a derivation nobody re-ran.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} / {r['item']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        cards = [c for c in (lesson.get("srs") or {}).get("introduces_cards") or []
+                 if c.get("item") == r["item"]]
+        if len(cards) != 1:
+            out.append(("fail", C_NO_RECORD, addr,
+                        f"the lesson declares {len(cards)} card(s) for {r['item']}, expected 1"))
+            continue
+        ex = cards[0].get("example")
+        if not ex:
+            out.append(("fail", C_NOT_APPLIED, addr, "the card carries no example"))
+            continue
+        if ex != {"sentence": r["sentence"], "cloze": r["cloze"]}:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"example is {ex!r}, the row's is "
+                                                         f"{r['sentence']} {r['cloze']!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 def handle_card_production_keys(rows, sents, gram, table):
     """W27. Every production card must carry EXACTLY the key the table names, in the shipped export.
 
@@ -1710,6 +1742,8 @@ def handle_w24_capabilities(rows, sents, gram, table):
 
 
 REGISTRY = {
+    # W28: each SRS card's example sentence + cloze span (selected from the bank, not authored).
+    "card_examples.json": handle_card_examples,
     # W24: the authored half of the capability layer (can_do, evidence, quotes, curated lessons).
     "w24_capabilities.json": handle_w24_capabilities,
     # W22: never-unlocked features + conjugation-form unlocks (C4-W22).

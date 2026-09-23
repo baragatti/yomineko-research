@@ -318,6 +318,47 @@
                   "source": "design/unlock_enums.json#deck"
                 }
               },
+              "example": {
+                "type": "object",
+                "description": "The example sentence this card shows its item in, and the cloze span over it. Selected from the bank by the lesson renderer's own display rule at the card's lesson (i+1 within the level budget, at or below the level), never authored. Optional by measurement: a card whose item no admissible sentence carries has none, and validate_card_content.py ratchets that count. See design/srs_design.md §9.",
+                "properties": {
+                  "sentence": {
+                    "type": "string",
+                    "pattern": "^sent:",
+                    "description": "The bank sentence (corpus/sentences/bank.json slug)."
+                  },
+                  "cloze": {
+                    "type": "object",
+                    "description": "The span a cloze blanks: code-point offsets into the sentence's `jp`, on Sudachi token boundaries, covering the card's item (the word's whole inflected form, the grammar point's form, or the word that carries the kanji).",
+                    "properties": {
+                      "start": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "end": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "answer": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "`jp[start:end]`, stored so a drifted sentence is caught instead of blanking the wrong characters. Japanese, locale-invariant."
+                      }
+                    },
+                    "required": [
+                      "start",
+                      "end",
+                      "answer"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "sentence",
+                  "cloze"
+                ],
+                "additionalProperties": false
+              },
               "item": {
                 "type": "string"
               },
