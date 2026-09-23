@@ -140,7 +140,7 @@ of the target (`kana:…`, `vocab:…`, `kanji:…`, `gram:…`, `sent:…`, `co
 **`feature`** — app capabilities unlocked progressively (gated behind the lesson that first needs them):
 `feat:srs-reviews` · `feat:kana-input` · `feat:furigana-toggle` · `feat:romaji-toggle` · `feat:kanji-lookup` ·
 `feat:handwriting-input` · `feat:conjugation-drill` · `feat:particle-drill` · `feat:phrase-builder` ·
-`feat:listening` · `feat:voice-mode` · `feat:jlpt-sim-n5` · `feat:jlpt-sim-n4` · `feat:find-correct-kanji` ·
+`feat:listening` · `feat:voice-mode` · `feat:jlpt-sim-n5` · `feat:jlpt-sim-n4` · `feat:jlpt-sim-n3` · `feat:find-correct-kanji` ·
 `feat:find-correct-particle` · `feat:visual-novel`. (Each feature corresponds to a product-vision capability in
 [`product_roadmap.md`](product_roadmap.md) — some roadmap deliverable rows bundle several features — and turns
 on at the first lesson that uses it.)

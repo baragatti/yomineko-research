@@ -2,7 +2,7 @@
 
 _Gerado por `scripts/export/build_review_views.py` a partir do export (`corpus/` + `course/`), entidade `speak_unit`. **Não edite este arquivo** — ele é regerado e conferido byte a byte. Para registrar um parecer, preencha uma ficha: `research/review/README.md`._
 
-_Build `8b0868aff0aa` de 2026-09-23 (`contracts/manifest.json`)._
+_Build `75b88a32d32f` de 2026-09-23 (`contracts/manifest.json`)._
 
 **72 registro(s) · 144 endereço(s) de parecer · 72 marcado(s) `needs_review` no export.**
 

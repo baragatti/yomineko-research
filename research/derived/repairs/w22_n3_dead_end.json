@@ -1,0 +1,1687 @@
+{
+  "what_this_is": "W22 apply table: the never-unlocked app features and the conjugation-form unlocks, one row per lesson unlock. Applied by scripts/apply_w22_unlocks.py into BOTH layers (lesson_unlocks + research/derived/lessons/<slug>.json); replayed by scripts/validate/validate_repairs_applied.py (every row is in the shipped lesson and no other lesson carries the same unlock).",
+  "derived_by": "scripts/derive_w22_unlocks.py (re-derived 2026-09-23 on the tree after W21b/W14/W20; the 2026-09-10 derivation is research/reports/w22_derivation_report.md)",
+  "apply_order": [
+    "features",
+    "home_lessons",
+    "form_unlocks"
+  ],
+  "row_count": 35,
+  "rows": [
+    {
+      "section": "features",
+      "lesson": "les:n3-revisao-01",
+      "type": "feature",
+      "ref": "feat:jlpt-sim-n3",
+      "rule": "R1",
+      "course_index": 321,
+      "evidence": "`les:n3-revisao-01` is the last of the 1 lesson(s) of `top:n3-revisao` today; siblings: feat:jlpt-sim-n5 @ les:n5-revisao-03 (3/3), feat:jlpt-sim-n4 @ les:n4-revisao-03 (3/3)",
+      "target_when_authored": "les:n3-revisao-03"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:pre-n5-orientacao-01",
+      "type": "feature",
+      "ref": "feat:romaji-toggle",
+      "rule": "H1",
+      "course_index": 0,
+      "detector": "a <romaji> element in the body",
+      "evidence": "<romaji>a</romaji>"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:pre-n5-sons-03",
+      "type": "feature",
+      "ref": "feat:furigana-toggle",
+      "rule": "H1",
+      "course_index": 4,
+      "detector": "a <jp reading> span over a kanji base",
+      "evidence": "<jp reading=\"はし\">箸</jp>"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:pre-n5-hiragana-01",
+      "type": "feature",
+      "ref": "feat:kana-input",
+      "rule": "H1",
+      "course_index": 5,
+      "detector": "a production exercise whose answer key is kana-only",
+      "evidence": "ex:pre-n5-hiragana-01-4"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:n5-desu-wa-01",
+      "type": "feature",
+      "ref": "feat:find-correct-particle",
+      "rule": "H1",
+      "course_index": 41,
+      "detector": "a particle_choice exercise",
+      "evidence": "ex:n5-desu-wa-01-2"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:n5-desu-wa-01",
+      "type": "feature",
+      "ref": "feat:phrase-builder",
+      "rule": "H1",
+      "course_index": 41,
+      "detector": "a sentence_build exercise",
+      "evidence": "ex:n5-desu-wa-01-4"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:n5-desu-wa-03",
+      "type": "feature",
+      "ref": "feat:find-correct-kanji",
+      "rule": "H1",
+      "course_index": 43,
+      "detector": "an MCQ whose choices are all single kanji",
+      "evidence": "ex:n5-desu-wa-03-21"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:n5-desu-wa-04",
+      "type": "feature",
+      "ref": "feat:particle-drill",
+      "rule": "H1",
+      "course_index": 44,
+      "detector": "the cks holds >=2 members of grp:particles-core",
+      "evidence": "gram:mo, gram:wa-topic-marker"
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:n5-numeros-tempo-01",
+      "type": "feature",
+      "ref": "feat:kanji-lookup",
+      "rule": "H1",
+      "course_index": 52,
+      "detector": "a <kanji ref> chip",
+      "evidence": "<kanji ref=\"kanji:一\""
+    },
+    {
+      "section": "home_lessons",
+      "lesson": "les:n5-kanji-exame-01",
+      "type": "feature",
+      "ref": "feat:handwriting-input",
+      "rule": "H1",
+      "course_index": 122,
+      "detector": "a <stroke ref> element (stroke-order DISPLAY; 0 handwriting exercises exist)",
+      "evidence": "<stroke ref=\"kanji:会\""
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-desu-wa-04",
+      "type": "conjugation-form",
+      "ref": "conj:dictionary",
+      "rule": "F-a",
+      "course_index": 44,
+      "evidence": "grammar `gram:no` is BUILT ON this form (formation_steps op `to-dictionary`)",
+      "home_teach_true": "les:n5-verbos-01",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 0,
+      "candidates": {
+        "F-a": {
+          "course_index": 44,
+          "lesson": "les:n5-desu-wa-04",
+          "topic": "top:n5-desu-wa",
+          "evidence": "grammar `gram:no` is BUILT ON this form (formation_steps op `to-dictionary`)"
+        },
+        "F-b": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "grammar `gram:gp-6` IS this form (structure_pattern る-Verb (Dictionary) matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "conjugation-bank surfaces printed: 4 distinct in <jp> spans (見る, 起きる, 閉める, 開ける), 1 in answer keys (食べる)"
+        },
+        "F-d": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('forma de dicion')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-verbos-01",
+      "type": "conjugation-form",
+      "ref": "conj:masu",
+      "rule": "F-b",
+      "course_index": 61,
+      "evidence": "grammar `gram:gp-8` IS this form (structure_pattern ます matched the form_anchor_table)",
+      "home_teach_true": "les:n5-verbos-01",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 884,
+      "candidates": {
+        "F-b": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "grammar `gram:gp-8` IS this form (structure_pattern ます matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "conjugation-bank surfaces printed: 4 distinct in <jp> spans (見ます, 起きます, 閉めます, 開けます), 3 in answer keys (見ます, 起きます, 開けます)"
+        },
+        "F-d": {
+          "course_index": 120,
+          "lesson": "les:n5-revisao-02",
+          "topic": "top:n5-revisao",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('〜ます')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-verbos-01",
+      "type": "conjugation-form",
+      "ref": "conj:nai",
+      "rule": "F-a",
+      "course_index": 61,
+      "evidence": "grammar `gram:gp-6` is BUILT ON this form (formation_steps op `to-nai-stem`)",
+      "home_teach_true": "les:n5-adjetivos-03",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 1156,
+      "candidates": {
+        "F-a": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "grammar `gram:gp-6` is BUILT ON this form (formation_steps op `to-nai-stem`)"
+        },
+        "F-c": {
+          "course_index": 82,
+          "lesson": "les:n5-adjetivos-03",
+          "topic": "top:n5-adjetivos",
+          "evidence": "conjugation-bank surfaces printed: 13 distinct in <jp> spans (ない, 危なくない, 多くない, 少なくない), 5 in answer keys (ない, 忙しくない, 狭くない, 痛くない)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-verbos-01",
+      "type": "conjugation-form",
+      "ref": "conj:polite",
+      "rule": "F-d",
+      "course_index": 61,
+      "evidence": "the lesson's own pt-BR metadata cites the form ('forma polida')",
+      "home_teach_true": "les:n5-verbos-01",
+      "home_teach_true_rule": "F-d",
+      "drill_items": 272,
+      "candidates": {
+        "F-c": {
+          "course_index": 80,
+          "lesson": "les:n5-adjetivos-01",
+          "topic": "top:n5-adjetivos",
+          "evidence": "conjugation-bank surfaces printed: 2 distinct in <jp> spans (大きいです, 青いです), 2 in answer keys (小さいです, 青いです)"
+        },
+        "F-d": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('forma polida')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-verbos-01",
+      "type": "conjugation-form",
+      "ref": "conj:stem",
+      "rule": "F-a",
+      "course_index": 61,
+      "evidence": "grammar `gram:gp-8` is BUILT ON this form (formation_steps op `to-masu-stem`)",
+      "home_teach_true": null,
+      "home_teach_true_rule": null,
+      "drill_items": 0,
+      "candidates": {
+        "F-a": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "grammar `gram:gp-8` is BUILT ON this form (formation_steps op `to-masu-stem`)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-verbos-01",
+      "type": "conjugation-form",
+      "ref": "conj:ta",
+      "rule": "F-a",
+      "course_index": 61,
+      "evidence": "grammar `gram:gp-6` is BUILT ON this form (formation_steps op `to-ta-form`)",
+      "home_teach_true": "les:n5-comparacoes-05",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 1156,
+      "candidates": {
+        "F-a": {
+          "course_index": 61,
+          "lesson": "les:n5-verbos-01",
+          "topic": "top:n5-verbos",
+          "evidence": "grammar `gram:gp-6` is BUILT ON this form (formation_steps op `to-ta-form`)"
+        },
+        "F-c": {
+          "course_index": 92,
+          "lesson": "les:n5-comparacoes-05",
+          "topic": "top:n5-comparacoes",
+          "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (並べた, 寝た, 話した), 1 in answer keys (寝た)"
+        },
+        "F-d": {
+          "course_index": 97,
+          "lesson": "les:n5-te-form-04",
+          "topic": "top:n5-te-form",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('forma た')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-particulas-lugar-07",
+      "type": "conjugation-form",
+      "ref": "conj:te",
+      "rule": "F-a",
+      "course_index": 73,
+      "evidence": "grammar `gram:gp-55` is BUILT ON this form (formation_steps op `to-te-form`)",
+      "home_teach_true": "les:n5-te-form-01",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 1156,
+      "candidates": {
+        "F-a": {
+          "course_index": 73,
+          "lesson": "les:n5-particulas-lugar-07",
+          "topic": "top:n5-particulas-lugar",
+          "evidence": "grammar `gram:gp-55` is BUILT ON this form (formation_steps op `to-te-form`)"
+        },
+        "F-b": {
+          "course_index": 94,
+          "lesson": "les:n5-te-form-01",
+          "topic": "top:n5-te-form",
+          "evidence": "grammar `gram:gp-26` IS this form (structure_pattern Verb + て matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 94,
+          "lesson": "les:n5-te-form-01",
+          "topic": "top:n5-te-form",
+          "evidence": "conjugation-bank surfaces printed: 5 distinct in <jp> spans (乗って, 出て, 来て, 行って), 3 in answer keys (乗って, 出て, 書いて)"
+        },
+        "F-d": {
+          "course_index": 94,
+          "lesson": "les:n5-te-form-01",
+          "topic": "top:n5-te-form",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('forma て')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-particulas-lugar-08",
+      "type": "conjugation-form",
+      "ref": "conj:attributive",
+      "rule": "F-a",
+      "course_index": 74,
+      "evidence": "grammar `gram:dake` is BUILT ON this form (formation_steps op `to-attributive`)",
+      "home_teach_true": "les:n5-passado-03",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 168,
+      "candidates": {
+        "F-a": {
+          "course_index": 74,
+          "lesson": "les:n5-particulas-lugar-08",
+          "topic": "top:n5-particulas-lugar",
+          "evidence": "grammar `gram:dake` is BUILT ON this form (formation_steps op `to-attributive`)"
+        },
+        "F-c": {
+          "course_index": 77,
+          "lesson": "les:n5-passado-03",
+          "topic": "top:n5-passado",
+          "evidence": "conjugation-bank surfaces printed: 2 distinct in <jp> spans (大きい, 高い), 2 in answer keys (大きい, 高い)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-passado-02",
+      "type": "conjugation-form",
+      "ref": "conj:nakatta",
+      "rule": "F-c",
+      "course_index": 76,
+      "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (なかった, 使わなかった, 着かなかった), 2 in answer keys (なかった, 使わなかった)",
+      "home_teach_true": "les:n5-passado-02",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 1156,
+      "candidates": {
+        "F-c": {
+          "course_index": 76,
+          "lesson": "les:n5-passado-02",
+          "topic": "top:n5-passado",
+          "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (なかった, 使わなかった, 着かなかった), 2 in answer keys (なかった, 使わなかった)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-passado-03",
+      "type": "conjugation-form",
+      "ref": "conj:adverbial",
+      "rule": "F-a",
+      "course_index": 77,
+      "evidence": "grammar `gram:i-adjectives` is BUILT ON this form (formation_steps op `to-adverbial`)",
+      "home_teach_true": "les:n5-adjetivos-02",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 272,
+      "candidates": {
+        "F-a": {
+          "course_index": 77,
+          "lesson": "les:n5-passado-03",
+          "topic": "top:n5-passado",
+          "evidence": "grammar `gram:i-adjectives` is BUILT ON this form (formation_steps op `to-adverbial`)"
+        },
+        "F-c": {
+          "course_index": 81,
+          "lesson": "les:n5-adjetivos-02",
+          "topic": "top:n5-adjetivos",
+          "evidence": "conjugation-bank surfaces printed: 1 distinct in <jp> spans (本当に), 2 in answer keys (よく, 本当に)"
+        },
+        "F-d": {
+          "course_index": 84,
+          "lesson": "les:n5-adjetivos-05",
+          "topic": "top:n5-adjetivos",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('forma adverbial')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-adjetivos-03",
+      "type": "conjugation-form",
+      "ref": "conj:polite-negative",
+      "rule": "F-c",
+      "course_index": 82,
+      "evidence": "conjugation-bank surfaces printed: 1 distinct in <jp> spans (忙しくないです), 2 in answer keys (汚くないです, 痛くないです)",
+      "home_teach_true": "les:n5-adjetivos-03",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 272,
+      "candidates": {
+        "F-c": {
+          "course_index": 82,
+          "lesson": "les:n5-adjetivos-03",
+          "topic": "top:n5-adjetivos",
+          "evidence": "conjugation-bank surfaces printed: 1 distinct in <jp> spans (忙しくないです), 2 in answer keys (汚くないです, 痛くないです)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-te-form-05",
+      "type": "conjugation-form",
+      "ref": "conj:negative-te",
+      "rule": "F-c",
+      "course_index": 98,
+      "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (なくて, 弾かなくて, 来なくて), 2 in answer keys (なくて, 来なくて)",
+      "home_teach_true": "les:n5-te-form-05",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 884,
+      "candidates": {
+        "F-c": {
+          "course_index": 98,
+          "lesson": "les:n5-te-form-05",
+          "topic": "top:n5-te-form",
+          "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (なくて, 弾かなくて, 来なくて), 2 in answer keys (なくて, 来なくて)"
+        },
+        "F-d": {
+          "course_index": 98,
+          "lesson": "les:n5-te-form-05",
+          "topic": "top:n5-te-form",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('〜なくて')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-te-form-05",
+      "type": "conjugation-form",
+      "ref": "conj:prohibitive",
+      "rule": "F-b",
+      "course_index": 98,
+      "evidence": "grammar `gram:te-wa-ikenai` IS this form (structure_pattern てはいけない matched the form_anchor_table)",
+      "home_teach_true": "les:n5-te-form-05",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 0,
+      "candidates": {
+        "F-b": {
+          "course_index": 98,
+          "lesson": "les:n5-te-form-05",
+          "topic": "top:n5-te-form",
+          "evidence": "grammar `gram:te-wa-ikenai` IS this form (structure_pattern てはいけない matched the form_anchor_table)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-convites-01",
+      "type": "conjugation-form",
+      "ref": "conj:masen",
+      "rule": "F-c",
+      "course_index": 102,
+      "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (休みません, 行きません, 食べません), 2 in answer keys (行きません, 食べません)",
+      "home_teach_true": "les:n5-convites-01",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 884,
+      "candidates": {
+        "F-c": {
+          "course_index": 102,
+          "lesson": "les:n5-convites-01",
+          "topic": "top:n5-convites",
+          "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (休みません, 行きません, 食べません), 2 in answer keys (行きません, 食べません)"
+        },
+        "F-d": {
+          "course_index": 102,
+          "lesson": "les:n5-convites-01",
+          "topic": "top:n5-convites",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('〜ません')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-convites-02",
+      "type": "conjugation-form",
+      "ref": "conj:volitional",
+      "rule": "F-c",
+      "course_index": 103,
+      "evidence": "conjugation-bank surfaces printed: 2 distinct in <jp> spans (行きましょう, 食べましょう), 2 in answer keys (行きましょう, 食べましょう)",
+      "home_teach_true": "les:n5-convites-02",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 1768,
+      "candidates": {
+        "F-a": {
+          "course_index": 151,
+          "lesson": "les:n4-volitivo-01",
+          "topic": "top:n4-volitivo",
+          "evidence": "grammar `gram:gp-147` is BUILT ON this form (formation_steps op `to-volitional`)"
+        },
+        "F-b": {
+          "course_index": 151,
+          "lesson": "les:n4-volitivo-01",
+          "topic": "top:n4-volitivo",
+          "evidence": "grammar `gram:ikou-kei-volitional-form` IS this form (structure_pattern 意向形 （いこうけい） matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 103,
+          "lesson": "les:n5-convites-02",
+          "topic": "top:n5-convites",
+          "evidence": "conjugation-bank surfaces printed: 2 distinct in <jp> spans (行きましょう, 食べましょう), 2 in answer keys (行きましょう, 食べましょう)"
+        },
+        "F-d": {
+          "course_index": 151,
+          "lesson": "les:n4-volitivo-01",
+          "topic": "top:n4-volitivo",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('forma volitiva')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-revisao-02",
+      "type": "conjugation-form",
+      "ref": "conj:masendeshita",
+      "rule": "F-d",
+      "course_index": 120,
+      "evidence": "the lesson's own pt-BR metadata cites the form ('〜ませんでした')",
+      "home_teach_true": "les:n5-revisao-02",
+      "home_teach_true_rule": "F-d",
+      "drill_items": 884,
+      "candidates": {
+        "F-d": {
+          "course_index": 120,
+          "lesson": "les:n5-revisao-02",
+          "topic": "top:n5-revisao",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('〜ませんでした')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-revisao-02",
+      "type": "conjugation-form",
+      "ref": "conj:mashita",
+      "rule": "F-d",
+      "course_index": 120,
+      "evidence": "the lesson's own pt-BR metadata cites the form ('〜ました')",
+      "home_teach_true": "les:n5-revisao-02",
+      "home_teach_true_rule": "F-d",
+      "drill_items": 884,
+      "candidates": {
+        "F-c": {
+          "course_index": 154,
+          "lesson": "les:n4-volitivo-04",
+          "topic": "top:n4-volitivo",
+          "evidence": "conjugation-bank surfaces printed: 0 distinct in <jp> spans (), 2 in answer keys (しました, 買いました)"
+        },
+        "F-d": {
+          "course_index": 120,
+          "lesson": "les:n5-revisao-02",
+          "topic": "top:n5-revisao",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('〜ました')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n5-revisao-02",
+      "type": "conjugation-form",
+      "ref": "conj:polite-past",
+      "rule": "F-c",
+      "course_index": 120,
+      "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (よかったです, 静かでした, 高かったです), 1 in answer keys (高かったです)",
+      "home_teach_true": "les:n5-revisao-02",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 272,
+      "candidates": {
+        "F-c": {
+          "course_index": 120,
+          "lesson": "les:n5-revisao-02",
+          "topic": "top:n5-revisao",
+          "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (よかったです, 静かでした, 高かったです), 1 in answer keys (高かったです)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n4-oracoes-relativas-07",
+      "type": "conjugation-form",
+      "ref": "conj:potential",
+      "rule": "F-a",
+      "course_index": 138,
+      "evidence": "grammar `gram:you-ni-you-na` is BUILT ON this form (formation_steps op `to-potential`)",
+      "home_teach_true": "les:n4-condicionais-01",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 882,
+      "candidates": {
+        "F-a": {
+          "course_index": 138,
+          "lesson": "les:n4-oracoes-relativas-07",
+          "topic": "top:n4-oracoes-relativas",
+          "evidence": "grammar `gram:you-ni-you-na` is BUILT ON this form (formation_steps op `to-potential`)"
+        },
+        "F-b": {
+          "course_index": 147,
+          "lesson": "les:n4-potencial-01",
+          "topic": "top:n4-potencial",
+          "evidence": "grammar `gram:gp-115` IS this form (structure_pattern れる・られる (Potential) matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 139,
+          "lesson": "les:n4-condicionais-01",
+          "topic": "top:n4-condicionais",
+          "evidence": "conjugation-bank surfaces printed: 1 distinct in <jp> spans (遊べる), 2 in answer keys (止める, 遊べる)"
+        },
+        "F-d": {
+          "course_index": 147,
+          "lesson": "les:n4-potencial-01",
+          "topic": "top:n4-potencial",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('forma potencial')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n4-condicionais-01",
+      "type": "conjugation-form",
+      "ref": "conj:conditional-tara",
+      "rule": "F-b",
+      "course_index": 139,
+      "evidence": "grammar `gram:gp-60` IS this form (structure_pattern ～たら matched the form_anchor_table)",
+      "home_teach_true": "les:n4-condicionais-01",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 884,
+      "candidates": {
+        "F-b": {
+          "course_index": 139,
+          "lesson": "les:n4-condicionais-01",
+          "topic": "top:n4-condicionais",
+          "evidence": "grammar `gram:gp-60` IS this form (structure_pattern ～たら matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 139,
+          "lesson": "les:n4-condicionais-01",
+          "topic": "top:n4-condicionais",
+          "evidence": "conjugation-bank surfaces printed: 9 distinct in <jp> spans (出たら, 寄ったら, 思ったら, 止めたら), 6 in answer keys (したら, 帰ったら, 着いたら, 終わったら)"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n4-condicionais-03",
+      "type": "conjugation-form",
+      "ref": "conj:conditional-ba",
+      "rule": "F-a",
+      "course_index": 141,
+      "evidence": "grammar `gram:ba` is BUILT ON this form (formation_steps op `to-conditional-ba`)",
+      "home_teach_true": "les:n4-condicionais-03",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 1156,
+      "candidates": {
+        "F-a": {
+          "course_index": 141,
+          "lesson": "les:n4-condicionais-03",
+          "topic": "top:n4-condicionais",
+          "evidence": "grammar `gram:ba` is BUILT ON this form (formation_steps op `to-conditional-ba`)"
+        },
+        "F-b": {
+          "course_index": 141,
+          "lesson": "les:n4-condicionais-03",
+          "topic": "top:n4-condicionais",
+          "evidence": "grammar `gram:ba` IS this form (structure_pattern ～ば matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 141,
+          "lesson": "les:n4-condicionais-03",
+          "topic": "top:n4-condicionais",
+          "evidence": "conjugation-bank surfaces printed: 6 distinct in <jp> spans (安ければ, 怖ければ, 急げば, 投げれば), 5 in answer keys (安ければ, 怖ければ, 急げば, 押せば)"
+        },
+        "F-d": {
+          "course_index": 141,
+          "lesson": "les:n4-condicionais-03",
+          "topic": "top:n4-condicionais",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('condicional 〜ば')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n4-potencial-01",
+      "type": "conjugation-form",
+      "ref": "conj:passive",
+      "rule": "F-a",
+      "course_index": 147,
+      "evidence": "grammar `gram:rareru` is BUILT ON this form (formation_steps op `to-passive`)",
+      "home_teach_true": "les:n4-potencial-01",
+      "home_teach_true_rule": "F-c",
+      "drill_items": 882,
+      "candidates": {
+        "F-a": {
+          "course_index": 147,
+          "lesson": "les:n4-potencial-01",
+          "topic": "top:n4-potencial",
+          "evidence": "grammar `gram:rareru` is BUILT ON this form (formation_steps op `to-passive`)"
+        },
+        "F-b": {
+          "course_index": 193,
+          "lesson": "les:n4-passiva-01",
+          "topic": "top:n4-passiva",
+          "evidence": "grammar `gram:ukemi-kei` IS this form (structure_pattern 受身形（うけみけい） matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 147,
+          "lesson": "les:n4-potencial-01",
+          "topic": "top:n4-potencial",
+          "evidence": "conjugation-bank surfaces printed: 7 distinct in <jp> spans (作られる, 捨てられる, 決められる, 痩せられる), 2 in answer keys (借りられる, 見られる)"
+        },
+        "F-d": {
+          "course_index": 193,
+          "lesson": "les:n4-passiva-01",
+          "topic": "top:n4-passiva",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('voz passiva')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n4-volitivo-06",
+      "type": "conjugation-form",
+      "ref": "conj:imperative",
+      "rule": "F-b",
+      "course_index": 156,
+      "evidence": "grammar `gram:gp-127` IS this form (structure_pattern 命令形 matched the form_anchor_table)",
+      "home_teach_true": "les:n4-volitivo-06",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 884,
+      "candidates": {
+        "F-b": {
+          "course_index": 156,
+          "lesson": "les:n4-volitivo-06",
+          "topic": "top:n4-volitivo",
+          "evidence": "grammar `gram:gp-127` IS this form (structure_pattern 命令形 matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 156,
+          "lesson": "les:n4-volitivo-06",
+          "topic": "top:n4-volitivo",
+          "evidence": "conjugation-bank surfaces printed: 1 distinct in <jp> spans (しろ), 2 in answer keys (しろ, 開け)"
+        },
+        "F-d": {
+          "course_index": 156,
+          "lesson": "les:n4-volitivo-06",
+          "topic": "top:n4-volitivo",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('命令形')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n4-causativa-01",
+      "type": "conjugation-form",
+      "ref": "conj:causative",
+      "rule": "F-a",
+      "course_index": 197,
+      "evidence": "grammar `gram:gp-105` is BUILT ON this form (formation_steps op `to-causative`)",
+      "home_teach_true": "les:n4-causativa-01",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 884,
+      "candidates": {
+        "F-a": {
+          "course_index": 197,
+          "lesson": "les:n4-causativa-01",
+          "topic": "top:n4-causativa",
+          "evidence": "grammar `gram:gp-105` is BUILT ON this form (formation_steps op `to-causative`)"
+        },
+        "F-b": {
+          "course_index": 197,
+          "lesson": "les:n4-causativa-01",
+          "topic": "top:n4-causativa",
+          "evidence": "grammar `gram:saseru` IS this form (structure_pattern ～させる matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 197,
+          "lesson": "les:n4-causativa-01",
+          "topic": "top:n4-causativa",
+          "evidence": "conjugation-bank surfaces printed: 9 distinct in <jp> spans (させる, 動かせる, 勝たせる, 思い出させる), 3 in answer keys (させる, 勝たせる, 考えさせる)"
+        },
+        "F-d": {
+          "course_index": 197,
+          "lesson": "les:n4-causativa-01",
+          "topic": "top:n4-causativa",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('causativa')"
+        }
+      }
+    },
+    {
+      "section": "form_unlocks",
+      "lesson": "les:n4-causativa-03",
+      "type": "conjugation-form",
+      "ref": "conj:causative-passive",
+      "rule": "F-b",
+      "course_index": 199,
+      "evidence": "grammar `gram:saserareru` IS this form (structure_pattern ～させられる matched the form_anchor_table)",
+      "home_teach_true": "les:n4-causativa-03",
+      "home_teach_true_rule": "F-b",
+      "drill_items": 884,
+      "candidates": {
+        "F-b": {
+          "course_index": 199,
+          "lesson": "les:n4-causativa-03",
+          "topic": "top:n4-causativa",
+          "evidence": "grammar `gram:saserareru` IS this form (structure_pattern ～させられる matched the form_anchor_table)"
+        },
+        "F-c": {
+          "course_index": 199,
+          "lesson": "les:n4-causativa-03",
+          "topic": "top:n4-causativa",
+          "evidence": "conjugation-bank surfaces printed: 3 distinct in <jp> spans (させられる, 怒らせられる, 食べさせられる), 0 in answer keys ()"
+        },
+        "F-d": {
+          "course_index": 199,
+          "lesson": "les:n4-causativa-03",
+          "topic": "top:n4-causativa",
+          "evidence": "the lesson's own pt-BR metadata cites the form ('〜させられる')"
+        }
+      }
+    }
+  ],
+  "features": {
+    "rule": "R1 (read off the two existing siblings, not invented): `feat:jlpt-sim-<level>` is unlocked by the LAST lesson of that level's `top:<level>-revisao` topic — n5 by `les:n5-revisao-03` (3 of 3), n4 by `les:n4-revisao-03` (3 of 3). It is NOT the last lesson of the level: `top:n5-kanji-exame` and `top:n4-kanji-exame` come after the review topic and unlock no feature. N3 has no kanji-exame topic, so for N3 the last review lesson is also the last lesson of the course.",
+    "sibling_scan": "The only level-suffixed family in `design/unlock_enums.json#feature` is `jlpt-sim-*`, which has n5 and n4 and lacks n3. Every other level-suffixed enum family (`deck:vocab-*`, `deck:kanji-*`, `deck:grammar-*`) already has its n3 member, so `feat:jlpt-sim-n3` is the single missing sibling.",
+    "evidence": [
+      {
+        "level": "n5",
+        "review_topic": "top:n5-revisao",
+        "review_lesson_count": 3,
+        "last_review_lesson_today": "les:n5-revisao-03",
+        "unlocked_by_today": "les:n5-revisao-03"
+      },
+      {
+        "level": "n4",
+        "review_topic": "top:n4-revisao",
+        "review_lesson_count": 3,
+        "last_review_lesson_today": "les:n4-revisao-03",
+        "unlocked_by_today": "les:n4-revisao-03"
+      },
+      {
+        "level": "n3",
+        "review_topic": "top:n3-revisao",
+        "review_lesson_count": 1,
+        "last_review_lesson_today": "les:n3-revisao-01",
+        "unlocked_by_today": null
+      }
+    ],
+    "enum_additions": [
+      {
+        "file": "design/unlock_enums.json",
+        "path": "#/feature",
+        "add": "jlpt-sim-n3",
+        "insert_after": "jlpt-sim-n4",
+        "mirrors": [
+          "contracts/lesson.schema.json#/…/feature_unlocks/items/enum",
+          "contracts/user_state/feature_state.schema.json#/properties/feature/enum",
+          "contracts/types.ts (regenerated)",
+          "design/courseware_architecture.md §5 feature list"
+        ],
+        "reason": "`prototype/app/lib/exam.server.ts` declares LEVELS = [n5,n4,n3] and all 14 N3 exam banks exist, so the simulator can already run an N3 paper; only the unlock vocabulary is missing."
+      }
+    ],
+    "applied_to_today": "les:n3-revisao-01",
+    "why_not_revisao_03": "`les:n3-revisao-03` does not exist and cannot without authored prose (title, body, objectives, exercises). R1 names the LAST lesson of `top:n3-revisao`, which today is `les:n3-revisao-01`; when -02/-03 are authored the row's lesson becomes `target_when_authored`."
+  },
+  "home_lessons": {
+    "rule": "H1 — the home lesson is the FIRST lesson in course order whose own published JSON already uses the feature, decided by a per-feature detector over body + exercises + unlocks (each detector is one line and is listed per row, so a validator replays it). This is the rule `design/courseware_architecture.md` §5 already states in prose: a feature 'turns on at the first lesson that uses it'.\nH2 — else the first lesson of the topic the feature registry names. **H2 fires for nothing**: neither `design/unlock_enums.json#feature` nor `design/courseware_architecture.md` §5 nor `design/product_roadmap.md` §A names a topic for any feature, so the branch has no input. It is kept in the rule statement so a later registry that does name topics slots in without a rule change.\nH3 — else residue for the owner.",
+    "residue": [
+      {
+        "feature": "feat:listening",
+        "rule": "H3",
+        "reason": "no lesson body or exercise anywhere in the 322 uses it"
+      },
+      {
+        "feature": "feat:voice-mode",
+        "rule": "H3",
+        "reason": "no lesson body or exercise anywhere in the 322 uses it"
+      },
+      {
+        "feature": "feat:visual-novel",
+        "rule": "H3",
+        "reason": "no lesson body or exercise anywhere in the 322 uses it"
+      }
+    ],
+    "flags": [
+      {
+        "feature": "feat:handwriting-input",
+        "issue": "H1 fires on a DISPLAY signal (`<stroke ref>` at `les:n5-kanji-exame-01`, course index 122), not on handwriting INPUT — there are 0 handwriting exercises in the 322 lessons. Meanwhile the SRS starts scheduling handwriting cards at course index 5 (`les:pre-n5-hiragana-01`, `kana:hiragana-a`), 117 lessons earlier; 691 handwriting card instances are still exported.",
+        "card_based_candidate": {
+          "lesson": "les:pre-n5-hiragana-01",
+          "topic": "top:pre-n5-hiragana",
+          "course_index": 5,
+          "signal": "the first unlock whose deck card_types include `handwriting`",
+          "sample": "kana:hiragana-a"
+        },
+        "owner_decision": "APP_PLAN §4 D5 default is 'retire the 691 cards until a widget exists'. If the cards are retired, take the H1 answer (index 122, display only). If they stay, the home must be the card-based candidate (index 5) or the course schedules reviews for a mode it never turns on."
+      }
+    ],
+    "counts": {
+      "features_in_enum": 17,
+      "unlocked_before_w22": 4,
+      "homed_by_H1": 9,
+      "homed_by_H2": 0,
+      "residue_H3": 3,
+      "unlocked_after_w22": 14
+    },
+    "handwriting_home_taken": "H1 (display, les:n5-kanji-exame-01) per APP_PLAN D5's default (retire the 691 handwriting cards until a widget exists). The cards are still exported today; retiring them is W20/D5's, not W22's."
+  },
+  "review_topic": {
+    "rule": "R3 — the shape is read off `top:n5-revisao` and `top:n4-revisao`, which are identical in every structural respect: 3 lessons; each recapitulates one CONTIGUOUS block of the level's teaching topics (n5: 7-8 / 9-13 / 14-18; n4: 21-23 / 24-30 / 31-35) in order; `needs` is a straight chain (lesson 1 needs the level's last teaching lesson, 2 needs 1, 3 needs 2); zero item unlocks on any of the three; the third and last unlocks `feat:jlpt-sim-<level>`; 6 exercises typed [recognition, recognition, cloze, cloze, sentence_build, production] (n5-revisao-01 carries 7, swapping the two cloze for two particle_choice); 4-5 objectives; body 5.9k-8.3k chars; and the bodies render NO `<vocab/kanji/gram>` chips at all — every Japanese example is a bare `<jp>` span. Which topics fall in which block is a THEMATIC choice in both existing levels and is not recoverable as a formula (n5 splits 2/5/5 topics, n4 3/7/5), so the block boundary below is chosen by the one mechanical criterion available — the 3-way contiguous partition of N3's 14 teaching topics that minimises the spread of lesson counts — and is flagged for the owner to override thematically.",
+    "block_partition_cost_lessons_max_minus_min": 4,
+    "block_sizes_lessons": [
+      31,
+      35,
+      34
+    ],
+    "topic_patch": {
+      "id": "top:n3-revisao",
+      "lesson_count_today": 1,
+      "lesson_count_proposed": 3,
+      "objectives_today": [],
+      "objectives": "to_author (n5/n4 review topics carry exactly 1)"
+    },
+    "residue": [
+      {
+        "issue": "`les:n3-revisao-01` is the only review lesson in the whole course that unlocks items: 4 N3 vocab (vocab:1107060 ピン, vocab:1512360 便, vocab:1435080 停留所, vocab:1605680 郵便 — transport/mail words with nothing to do with review). The n5/n4 review lessons unlock nothing. This derivation LEAVES them on `les:n3-revisao-01`, because moving them changes published unlock ownership and the introduce-once ledger, which is not W22's to change.",
+        "owner_decision": "relocate the 4 to a topic that teaches them, or accept the exception"
+      }
+    ],
+    "status": "to_author: nothing in this section is applied to lessons; it is the authoring brief, re-read from the current tree (refs corrected: the 2026-09-10 file wrote `gram:gram:<key>` for every retest ref)",
+    "lessons": [
+      {
+        "id": "les:n3-revisao-01",
+        "order": 1,
+        "exists_today": true,
+        "keep_existing_unlocks": [
+          {
+            "type": "vocab",
+            "ref": "vocab:1107060"
+          },
+          {
+            "type": "vocab",
+            "ref": "vocab:1512360"
+          },
+          {
+            "type": "vocab",
+            "ref": "vocab:1435080"
+          },
+          {
+            "type": "vocab",
+            "ref": "vocab:1605680"
+          }
+        ],
+        "needs": [
+          {
+            "type": "lesson",
+            "ref": "les:n3-estrutura-06"
+          }
+        ],
+        "to_author": [
+          "title",
+          "description",
+          "objectives",
+          "body",
+          "exercise prompts/answers"
+        ],
+        "retest_topics": [
+          "top:n3-conectores",
+          "top:n3-tempo",
+          "top:n3-perspectiva",
+          "top:n3-causa"
+        ],
+        "retest_topic_lesson_counts": [
+          8,
+          8,
+          7,
+          8
+        ],
+        "retest_grammar_count": 38,
+        "retest_grammar_anchor_refs": [
+          "gram:n3-sono-ue",
+          "gram:n3-made",
+          "gram:n3-ni-kanshite",
+          "gram:n3-okagede"
+        ],
+        "retest_grammar_refs": [
+          "gram:n3-sono-ue",
+          "gram:n3-sore-to",
+          "gram:n3-sore-tomo",
+          "gram:n3-dakedo",
+          "gram:n3-tokorode",
+          "gram:n3-tsumari",
+          "gram:n3-desu-kara",
+          "gram:n3-nazenara",
+          "gram:n3-nado",
+          "gram:n3-nanka",
+          "gram:n3-made",
+          "gram:n3-saichuu-ni",
+          "gram:n3-uchi-ni",
+          "gram:n3-kara-ni-kakete",
+          "gram:n3-tabi-ni",
+          "gram:n3-tsuide-ni",
+          "gram:n3-ta-tokoro",
+          "gram:n3-ta-totan",
+          "gram:n3-te-hajimete",
+          "gram:n3-kiri",
+          "gram:n3-tokoro-datta",
+          "gram:n3-ni-kanshite",
+          "gram:n3-ni-oite",
+          "gram:n3-ni-tsuite",
+          "gram:n3-ni-taishite",
+          "gram:n3-ni-totte",
+          "gram:n3-ni-yoreba",
+          "gram:n3-ni-kawatte",
+          "gram:n3-ni-kurabete",
+          "gram:n3-okagede",
+          "gram:n3-sei-de",
+          "gram:n3-ni-yotte",
+          "gram:n3-sono-kekka",
+          "gram:n3-sono-tame-ni",
+          "gram:n3-to-iu-no",
+          "gram:n3-wake-da",
+          "gram:n3-da-mono-da",
+          "gram:n3-nda-mon"
+        ],
+        "exercise_plan": [
+          {
+            "ord": 1,
+            "type": "recognition",
+            "target_ref": "gram:n3-sono-ue",
+            "target_topic": "top:n3-conectores",
+            "target_exists": true
+          },
+          {
+            "ord": 2,
+            "type": "recognition",
+            "target_ref": "gram:n3-made",
+            "target_topic": "top:n3-tempo",
+            "target_exists": true
+          },
+          {
+            "ord": 3,
+            "type": "cloze",
+            "target_ref": "gram:n3-ni-kanshite",
+            "target_topic": "top:n3-perspectiva",
+            "target_exists": true
+          },
+          {
+            "ord": 4,
+            "type": "cloze",
+            "target_ref": "gram:n3-okagede",
+            "target_topic": "top:n3-causa",
+            "target_exists": true
+          },
+          {
+            "ord": 5,
+            "type": "sentence_build",
+            "target_ref": "gram:n3-sono-ue",
+            "target_topic": "top:n3-conectores",
+            "target_exists": true
+          },
+          {
+            "ord": 6,
+            "type": "production",
+            "target_ref": "gram:n3-made",
+            "target_topic": "top:n3-tempo",
+            "target_exists": true
+          }
+        ],
+        "unlocks": [
+          {
+            "type": "vocab",
+            "ref": "vocab:1107060"
+          },
+          {
+            "type": "vocab",
+            "ref": "vocab:1512360"
+          },
+          {
+            "type": "vocab",
+            "ref": "vocab:1435080"
+          },
+          {
+            "type": "vocab",
+            "ref": "vocab:1605680"
+          }
+        ],
+        "feature_unlocks": []
+      },
+      {
+        "id": "les:n3-revisao-02",
+        "order": 2,
+        "exists_today": false,
+        "keep_existing_unlocks": [],
+        "needs": [
+          {
+            "type": "lesson",
+            "ref": "les:n3-revisao-01"
+          }
+        ],
+        "to_author": [
+          "title",
+          "description",
+          "objectives",
+          "body",
+          "exercise prompts/answers"
+        ],
+        "retest_topics": [
+          "top:n3-estado",
+          "top:n3-intencao",
+          "top:n3-deveres",
+          "top:n3-desejos",
+          "top:n3-limites"
+        ],
+        "retest_topic_lesson_counts": [
+          8,
+          7,
+          6,
+          7,
+          7
+        ],
+        "retest_grammar_count": 52,
+        "retest_grammar_anchor_refs": [
+          "gram:n3-kake",
+          "gram:n3-uto-shita",
+          "gram:n3-te-goran",
+          "gram:n3-masu-you-ni",
+          "gram:n3-kurai"
+        ],
+        "retest_grammar_refs": [
+          "gram:n3-kake",
+          "gram:n3-tate",
+          "gram:n3-te-iru",
+          "gram:n3-ageru",
+          "gram:n3-chatta",
+          "gram:n3-kirenai",
+          "gram:n3-mama",
+          "gram:n3-naide",
+          "gram:n3-zu-ni",
+          "gram:n3-ppai",
+          "gram:n3-ppanashi",
+          "gram:n3-toori",
+          "gram:n3-uto-shita",
+          "gram:n3-you-to-omou",
+          "gram:n3-you-to-shinai",
+          "gram:n3-koto-ni-natte-iru",
+          "gram:n3-koto-ni-shite-iru",
+          "gram:n3-tsumori-deshita",
+          "gram:n3-you-ni",
+          "gram:n3-you-ni-2",
+          "gram:n3-you-ni-3",
+          "gram:n3-you-ni-natta",
+          "gram:n3-you-ni-shimashou",
+          "gram:n3-te-goran",
+          "gram:n3-te-miru",
+          "gram:n3-toku",
+          "gram:n3-beki-da",
+          "gram:n3-koto-da",
+          "gram:n3-koto-wa-nai",
+          "gram:n3-nai-koto-wa-nai",
+          "gram:n3-sete-kudasai",
+          "gram:n3-wake-ni-wa-ikanai",
+          "gram:n3-masu-you-ni",
+          "gram:n3-te-hoshii",
+          "gram:n3-to-ii-naa",
+          "gram:n3-moshi-tanara",
+          "gram:n3-moshimo-nara",
+          "gram:n3-to-shitara",
+          "gram:n3-moshi-temo",
+          "gram:n3-nai-to",
+          "gram:n3-ba-noni",
+          "gram:n3-ba-yokatta",
+          "gram:n3-kurai",
+          "gram:n3-kurai-wa-nai",
+          "gram:n3-sa",
+          "gram:n3-bakari",
+          "gram:n3-dake-shika",
+          "gram:n3-shika-nai",
+          "gram:n3-ba-hodo",
+          "gram:n3-hodo",
+          "gram:n3-donna-ni-koto-ka",
+          "gram:n3-kanarazushimo-towa-kagiranai"
+        ],
+        "exercise_plan": [
+          {
+            "ord": 1,
+            "type": "recognition",
+            "target_ref": "gram:n3-kake",
+            "target_topic": "top:n3-estado",
+            "target_exists": true
+          },
+          {
+            "ord": 2,
+            "type": "recognition",
+            "target_ref": "gram:n3-uto-shita",
+            "target_topic": "top:n3-intencao",
+            "target_exists": true
+          },
+          {
+            "ord": 3,
+            "type": "cloze",
+            "target_ref": "gram:n3-te-goran",
+            "target_topic": "top:n3-deveres",
+            "target_exists": true
+          },
+          {
+            "ord": 4,
+            "type": "cloze",
+            "target_ref": "gram:n3-masu-you-ni",
+            "target_topic": "top:n3-desejos",
+            "target_exists": true
+          },
+          {
+            "ord": 5,
+            "type": "sentence_build",
+            "target_ref": "gram:n3-kurai",
+            "target_topic": "top:n3-limites",
+            "target_exists": true
+          },
+          {
+            "ord": 6,
+            "type": "production",
+            "target_ref": "gram:n3-kake",
+            "target_topic": "top:n3-estado",
+            "target_exists": true
+          }
+        ],
+        "unlocks": [],
+        "feature_unlocks": []
+      },
+      {
+        "id": "les:n3-revisao-03",
+        "order": 3,
+        "exists_today": false,
+        "keep_existing_unlocks": [],
+        "needs": [
+          {
+            "type": "lesson",
+            "ref": "les:n3-revisao-02"
+          }
+        ],
+        "to_author": [
+          "title",
+          "description",
+          "objectives",
+          "body",
+          "exercise prompts/answers"
+        ],
+        "retest_topics": [
+          "top:n3-enfase",
+          "top:n3-concessao",
+          "top:n3-conjectura",
+          "top:n3-relato",
+          "top:n3-estrutura"
+        ],
+        "retest_topic_lesson_counts": [
+          7,
+          7,
+          7,
+          7,
+          6
+        ],
+        "retest_grammar_count": 42,
+        "retest_grammar_anchor_refs": [
+          "gram:n3-koso",
+          "gram:n3-donna-ni-temo",
+          "gram:n3-kanaa",
+          "gram:n3-to-iu",
+          "gram:n3-no"
+        ],
+        "retest_grammar_refs": [
+          "gram:n3-koso",
+          "gram:n3-metta-ni-nai-2",
+          "gram:n3-sae",
+          "gram:n3-mo",
+          "gram:n3-wa-mochiron-mo",
+          "gram:n3-kesshite-nai",
+          "gram:n3-mattaku-nai",
+          "gram:n3-sukoshimo-nai",
+          "gram:n3-metta-ni-nai",
+          "gram:n3-donna-ni-temo",
+          "gram:n3-tatoe-temo",
+          "gram:n3-temo",
+          "gram:n3-kawari-ni",
+          "gram:n3-koto-wa-ga",
+          "gram:n3-kuse-ni",
+          "gram:n3-to-ittemo",
+          "gram:n3-to-iu-yori",
+          "gram:n3-tokoro-ga",
+          "gram:n3-ni-shite-wa",
+          "gram:n3-ni-shitemo",
+          "gram:n3-wari-ni-wa",
+          "gram:n3-kanaa",
+          "gram:n3-moshikasuru-to-kamoshirenai",
+          "gram:n3-hazu-da",
+          "gram:n3-wake-dewa-nai",
+          "gram:n3-wake-ga-nai",
+          "gram:n3-maru-de-you",
+          "gram:n3-mitai-da",
+          "gram:n3-furi-wo-suru",
+          "gram:n3-to-iu",
+          "gram:n3-to-iu-no-wa",
+          "gram:n3-to-iu-to",
+          "gram:n3-te-kureto",
+          "gram:n3-to-iu-koto-da",
+          "gram:n3-you-ni-iu",
+          "gram:n3-n-datte",
+          "gram:n3-rashii",
+          "gram:n3-kke",
+          "gram:n3-to-shite",
+          "gram:n3-no",
+          "gram:n3-koto",
+          "gram:n3-rareta"
+        ],
+        "exercise_plan": [
+          {
+            "ord": 1,
+            "type": "recognition",
+            "target_ref": "gram:n3-koso",
+            "target_topic": "top:n3-enfase",
+            "target_exists": true
+          },
+          {
+            "ord": 2,
+            "type": "recognition",
+            "target_ref": "gram:n3-donna-ni-temo",
+            "target_topic": "top:n3-concessao",
+            "target_exists": true
+          },
+          {
+            "ord": 3,
+            "type": "cloze",
+            "target_ref": "gram:n3-kanaa",
+            "target_topic": "top:n3-conjectura",
+            "target_exists": true
+          },
+          {
+            "ord": 4,
+            "type": "cloze",
+            "target_ref": "gram:n3-to-iu",
+            "target_topic": "top:n3-relato",
+            "target_exists": true
+          },
+          {
+            "ord": 5,
+            "type": "sentence_build",
+            "target_ref": "gram:n3-no",
+            "target_topic": "top:n3-estrutura",
+            "target_exists": true
+          },
+          {
+            "ord": 6,
+            "type": "production",
+            "target_ref": "gram:n3-koso",
+            "target_topic": "top:n3-enfase",
+            "target_exists": true
+          }
+        ],
+        "unlocks": [],
+        "feature_unlocks": [
+          "feat:jlpt-sim-n3"
+        ]
+      }
+    ],
+    "to_author": [
+      "les:n3-revisao-01: rewrite to block 1 (title, description, 4-5 objectives, body, 6 exercises per exercise_plan)",
+      "les:n3-revisao-02, les:n3-revisao-03: create (all fields); on creation move feat:jlpt-sim-n3 from les:n3-revisao-01 to les:n3-revisao-03 (one row of this table)",
+      "top:n3-revisao: 1 objective (the n5/n4 review topics carry exactly 1)",
+      "needs chain (revisao-01 <- les:n3-estrutura-06, 02 <- 01, 03 <- 02): lands with the lessons through scripts/build_needs_table.py's review-chain rule; `needs` is 100% derived (validate_lesson_gating C4), so it is not hand-added here",
+      "owner: the 4 N3 vocab unlocks on les:n3-revisao-01 (relocate or accept)"
+    ]
+  },
+  "form_unlocks": {
+    "form_anchor_table": {
+      "te": [
+        "^[〜～]?て$",
+        "^Verb \\+ て$",
+        "^て形"
+      ],
+      "masu": [
+        "^[〜～]?ます$",
+        "ます形"
+      ],
+      "nai": [
+        "^[〜～]?ない$",
+        "ない形"
+      ],
+      "ta": [
+        "^[〜～]?た$",
+        "た形"
+      ],
+      "dictionary": [
+        "辞書形",
+        "\\(Dictionary\\)$"
+      ],
+      "potential": [
+        "可能形",
+        "\\(Potential\\)"
+      ],
+      "passive": [
+        "受身形"
+      ],
+      "causative": [
+        "使役形",
+        "^[〜～]?させる$",
+        "^[〜～]?せる・させる$"
+      ],
+      "causative-passive": [
+        "使役受身",
+        "^[〜～]?させられる$"
+      ],
+      "volitional": [
+        "意向形"
+      ],
+      "imperative": [
+        "命令形"
+      ],
+      "prohibitive": [
+        "禁止形",
+        "^[〜～]?てはいけない$"
+      ],
+      "conditional-ba": [
+        "^[〜～]?ば$",
+        "仮定形"
+      ],
+      "conditional-tara": [
+        "^[〜～]?たら$"
+      ],
+      "stem": [
+        "連用形",
+        "ます stem"
+      ]
+    },
+    "metadata_marker_table": {
+      "masu": [
+        "[〜～]ます(?![せんかしょ])"
+      ],
+      "masen": [
+        "[〜～]ません(?!でした)"
+      ],
+      "mashita": [
+        "[〜～]ました"
+      ],
+      "masendeshita": [
+        "[〜～]ませんでした"
+      ],
+      "te": [
+        "forma て"
+      ],
+      "nai": [
+        "forma ない"
+      ],
+      "ta": [
+        "forma た"
+      ],
+      "nakatta": [
+        "[〜～]なかった"
+      ],
+      "potential": [
+        "forma potencial",
+        "可能形"
+      ],
+      "volitional": [
+        "forma volitiva",
+        "意向形"
+      ],
+      "passive": [
+        "voz passiva",
+        "受身形"
+      ],
+      "causative": [
+        "causativa",
+        "使役形"
+      ],
+      "causative-passive": [
+        "[〜～]させられる",
+        "causativo-passiv"
+      ],
+      "imperative": [
+        "forma imperativa",
+        "命令形"
+      ],
+      "prohibitive": [
+        "禁止形"
+      ],
+      "conditional-ba": [
+        "condicional [〜～]?ば"
+      ],
+      "conditional-tara": [
+        "condicional [〜～]?たら"
+      ],
+      "dictionary": [
+        "forma de dicion",
+        "辞書形"
+      ],
+      "stem": [
+        "連用形"
+      ],
+      "provisional": [
+        "仮定形"
+      ],
+      "attributive": [
+        "連体形",
+        "forma atributiva"
+      ],
+      "adverbial": [
+        "forma adverbial"
+      ],
+      "negative-te": [
+        "[〜～]なくて"
+      ],
+      "polite": [
+        "forma polida"
+      ],
+      "polite-negative": [
+        "polida negativa"
+      ],
+      "polite-past": [
+        "polida no passado"
+      ]
+    },
+    "bank_form_to_enum": {
+      "dictionary": "dictionary",
+      "masu": "masu",
+      "te": "te",
+      "past": "ta",
+      "negative": "nai",
+      "past_negative": "nakatta",
+      "masu_negative": "masen",
+      "masu_past": "mashita",
+      "masu_past_negative": "masendeshita",
+      "potential": "potential",
+      "passive": "passive",
+      "causative": "causative",
+      "causative_passive": "causative-passive",
+      "volitional": "volitional",
+      "volitional_polite": "volitional",
+      "imperative": "imperative",
+      "conditional_ba": "conditional-ba",
+      "conditional_tara": "conditional-tara",
+      "attributive": "attributive",
+      "adverbial": "adverbial",
+      "negative_te": "negative-te",
+      "polite": "polite",
+      "polite_negative": "polite-negative",
+      "polite_past": "polite-past"
+    },
+    "formation_op_to_enum": {
+      "to-dictionary": "dictionary",
+      "to-te-form": "te",
+      "to-ta-form": "ta",
+      "to-nai-stem": "nai",
+      "to-masu-stem": "stem",
+      "to-potential": "potential",
+      "to-conditional-ba": "conditional-ba",
+      "to-passive": "passive",
+      "to-volitional": "volitional",
+      "to-causative": "causative",
+      "to-attributive": "attributive",
+      "to-adverbial": "adverbial"
+    },
+    "enum_additions": [
+      {
+        "file": "design/unlock_enums.json",
+        "path": "#/conjugation_form",
+        "add": [
+          "attributive",
+          "adverbial",
+          "negative-te",
+          "polite",
+          "polite-negative",
+          "polite-past"
+        ],
+        "reason": "the deterministic conjugation bank and the 18,524-item drill bank use 23 form keys; six of them have no value in the 20-value enum, so 2,140 drills (11.6%) could never be gated: attributive 168, adverbial 272, negative_te 884, polite 272, polite_negative 272, polite_past 272. `to-attributive` (85 formation steps) and `to-adverbial` (24) are also unmappable without them.",
+        "owner_decision": true
+      },
+      {
+        "file": "design/unlock_enums.json",
+        "path": "#/conjugation_form",
+        "retire": [
+          "provisional"
+        ],
+        "reason": "仮定形 (provisional) IS the ば form, which the enum already carries as `conditional-ba`. No grammar point, no conjugation-bank entry and no lesson distinguishes them; `provisional` is the one enum value with zero producers.",
+        "owner_decision": true
+      }
+    ],
+    "mode": {
+      "chosen": "gate-sound",
+      "gate-sound": "home = the EARLIEST candidate of the four channels. This is what the `rows` and `per_lesson` fields below hold. It guarantees the invariant the rest of the gate already enforces — no lesson may consume an item it has not been given — because F-a is by definition the first lesson that consumes the form. Cost: for the 7 forms listed in `built_on_before_named`, the unlock lands on a lesson that USES the form without teaching it.",
+      "teach-true": "home = the earliest TEACHING candidate (F-b/F-c/F-d), carried on every row as `home_teach_true`. Pedagogically cleaner, but it opens exactly 7 new gating violations — the grammar points listed in `built_on_before_named` would then be built on a form the learner does not yet hold. Choosing this mode means moving those points or their lessons first (that is W21b's forward-reference campaign), not just flipping a field."
+    },
+    "no_srs_side_effect": "`design/unlock_enums.json#item_to_deck` maps kana-family / vocab / kanji / grammar / phrase to decks and does NOT map conjugation-form, so these 25 unlocks enrol zero new FSRS cards and `srs.introduces_cards` is unchanged on all 322 lessons. They also add no `needs` edges, so `validate_lesson_gating` check C is untouched.",
+    "rule": "F — for each conjugation form, compute up to four candidate lessons over the published export and take the EARLIEST; that lesson unlocks `conj:<form>` (introduce-once), and every later lesson inherits it through the running union, so no `cumulative_known_set` can shrink by construction.\n  F-a required-as-base: the earliest lesson unlocking a grammar point whose `formation_steps` carries `op:\"to-<form>\"` — the point is BUILT ON the form, so the learner must already have it. This is a hard gating deadline, the same semantics `validate_lesson_gating` already enforces for vocab/kanji/grammar refs.\n  F-b identity anchor: the earliest lesson unlocking a grammar point that IS the form, matched by the 15-row `form_anchor_table` below against `structure_pattern` (e.g. 命令形, 受身形, 意向形, 〜たら, 〜ば).\n  F-c corroborated surface: the earliest lesson whose body prints, inside a `<jp>` span, the DETERMINISTIC conjugation-bank surface of that form for >=3 distinct words already in the lesson's own cks (or >=2 such words inside its exercise answer keys). The >=3 threshold is what separates 'this lesson teaches the form' from 'this lesson happened to print one word that is in it' — at >=1 the imperative lands at `les:n5-verbos-02` on a single 閉めろ.\n  F-d metadata citation: the earliest lesson whose own pt-BR title/description/objectives cite the form.\n  Verb/adjective class comes from W11's `conjugation_class` families (grp:godan 311, grp:ichidan 156, grp:suru-irregular 416, grp:kuru-irregular 1, grp:i-adj 105, grp:na-adj 178); the conjugation bank carries the same class on every entry, which is what makes the F-c surfaces deterministic rather than guessed.\n  F-c as re-derived 2026-09-23 counts DISTINCT SURFACES (homograph siblings いい/良い print one よければ), extends the maximal-match guard across words (ある's ない inside 来ない does not count), and ignores an answer key that IS a bare headword for the dictionary form (a W20 vocabulary drill, not a form). On the 2026-09-10 tree this reproduces all 25 homes and the drill numbers exactly; without it the W20 drills would pull conditional-ba 69 lessons early (to les:n5-particulas-lugar-06).",
+    "residue": [
+      {
+        "form": "provisional",
+        "ref": "conj:provisional",
+        "rule": "F-residue",
+        "resolution": "retired from the enum (duplicate of conditional-ba)"
+      }
+    ],
+    "built_on_before_named": [
+      {
+        "form": "dictionary",
+        "required_as_base_at": "les:n5-desu-wa-04",
+        "required_index": 44,
+        "first_taught_at": "les:n5-verbos-01",
+        "taught_index": 61,
+        "gap_lessons": 17
+      },
+      {
+        "form": "nai",
+        "required_as_base_at": "les:n5-verbos-01",
+        "required_index": 61,
+        "first_taught_at": "les:n5-adjetivos-03",
+        "taught_index": 82,
+        "gap_lessons": 21
+      },
+      {
+        "form": "ta",
+        "required_as_base_at": "les:n5-verbos-01",
+        "required_index": 61,
+        "first_taught_at": "les:n5-comparacoes-05",
+        "taught_index": 92,
+        "gap_lessons": 31
+      },
+      {
+        "form": "te",
+        "required_as_base_at": "les:n5-particulas-lugar-07",
+        "required_index": 73,
+        "first_taught_at": "les:n5-te-form-01",
+        "taught_index": 94,
+        "gap_lessons": 21
+      },
+      {
+        "form": "attributive",
+        "required_as_base_at": "les:n5-particulas-lugar-08",
+        "required_index": 74,
+        "first_taught_at": "les:n5-passado-03",
+        "taught_index": 77,
+        "gap_lessons": 3
+      },
+      {
+        "form": "adverbial",
+        "required_as_base_at": "les:n5-passado-03",
+        "required_index": 77,
+        "first_taught_at": "les:n5-adjetivos-02",
+        "taught_index": 81,
+        "gap_lessons": 4
+      },
+      {
+        "form": "potential",
+        "required_as_base_at": "les:n4-oracoes-relativas-07",
+        "required_index": 138,
+        "first_taught_at": "les:n4-condicionais-01",
+        "taught_index": 139,
+        "gap_lessons": 1
+      }
+    ],
+    "simulation": {
+      "conjugation_drills": 18524,
+      "drills_reachable_before": 0,
+      "drills_reachable_after": 18524,
+      "drills_gated_by_form_not_word": 2777,
+      "lessons_that_gain_a_form_unlock": 18,
+      "final_cks_conjugation_form": 25
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://yomineko.dev/contracts/user_state/feature_state.schema.json",
   "title": "feature_state",
-  "description": "One row per (user, app feature) over the sixteen features declared in design/unlock_enums.json#feature. RUNTIME class: minted per learner, never committed to this repo. Separates being ALLOWED to use a feature from having it turned ON, because furigana-toggle and romaji-toggle are settings and one boolean cannot hold both facts. See design/user_state.md §9.",
+  "description": "One row per (user, app feature) over the seventeen features declared in design/unlock_enums.json#feature. RUNTIME class: minted per learner, never committed to this repo. Separates being ALLOWED to use a feature from having it turned ON, because furigana-toggle and romaji-toggle are settings and one boolean cannot hold both facts. See design/user_state.md §9.",
   "x-yomineko": {
     "entity": "feature_state",
     "class": "runtime",
@@ -11,7 +11,7 @@
     "stable_id_field": null,
     "natural_key": ["user_id", "feature"],
     "key_namespace": null,
-    "note": "`source` is not decoration: only 4 of the 16 features are unlocked by any lesson today (srs-reviews, conjugation-drill, jlpt-sim-n5, jlpt-sim-n4, one lesson each), and needs[] is empty on all 322 lessons. A model with `lesson` as the only source would make the other twelve permanently unreachable and would encode today's gap as the contract."
+    "note": "`source` is not decoration: 14 of the 17 features are unlocked by a lesson since W22 (one lesson each), but listening, voice-mode and visual-novel have no lesson that uses them (no audio, ASR or VN artifact exists). A model with `lesson` as the only source would make those three permanently unreachable and would encode today's gap as the contract."
   },
   "type": "object",
   "properties": {
@@ -20,7 +20,7 @@
       "type": "string",
       "enum": [
         "feat:conjugation-drill", "feat:find-correct-kanji", "feat:find-correct-particle",
-        "feat:furigana-toggle", "feat:handwriting-input", "feat:jlpt-sim-n4", "feat:jlpt-sim-n5",
+        "feat:furigana-toggle", "feat:handwriting-input", "feat:jlpt-sim-n3", "feat:jlpt-sim-n4", "feat:jlpt-sim-n5",
         "feat:kana-input", "feat:kanji-lookup", "feat:listening", "feat:particle-drill",
         "feat:phrase-builder", "feat:romaji-toggle", "feat:srs-reviews", "feat:visual-novel",
         "feat:voice-mode"

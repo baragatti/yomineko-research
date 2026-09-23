@@ -21,7 +21,10 @@
       "type": "object",
       "properties": {
         "conjugation-form": {
-          "type": "array"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "grammar": {
           "type": "array",
@@ -147,6 +150,7 @@
           "feat:find-correct-particle",
           "feat:furigana-toggle",
           "feat:handwriting-input",
+          "feat:jlpt-sim-n3",
           "feat:jlpt-sim-n4",
           "feat:jlpt-sim-n5",
           "feat:kana-input",

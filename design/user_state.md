@@ -274,12 +274,12 @@ that document remains the vocabulary owner.
 | `source` | `lesson` \| `default` \| `entitlement` \| `admin` | Vocabulary owner: this document. |
 | `enabled` | boolean | The learner's own toggle, separate from the unlock. `furigana-toggle` and `romaji-toggle` are settings; being *allowed* to toggle and being *toggled on* are different facts and one boolean cannot hold both. |
 
-`source` is not decoration. **Only 4 of the 16 features are unlocked by any lesson today** —
-`srs-reviews`, `conjugation-drill`, `jlpt-sim-n5`, `jlpt-sim-n4`, one lesson each; the other twelve are
-reachable by no path in the course (readiness `platform_contract_i18n` G9, and `needs[]` is empty on all
-322 lessons). A model with only `lesson` as a source would make those twelve permanently unreachable
-and would encode today's gap as the contract. W-unit **G9** backfills the unlock graph; until it does,
-`default` is how a feature can be on.
+`source` is not decoration. Before W22 only 4 of the 16 features were unlocked by any lesson
+(readiness `platform_contract_i18n` G9). **Since W22 (2026-09-23) 14 of the 17 are**, one lesson each
+(`research/derived/repairs/w22_n3_dead_end.json`); `listening`, `voice-mode` and `visual-novel` are
+used by no lesson because no audio, ASR or visual-novel artifact exists (owner decision D3). A model
+with only `lesson` as a source would make those three permanently unreachable and would encode
+today's gap as the contract; until they get a home, `default` is how a feature can be on.
 
 ## 10. Reconciling `srs_design.md` and `learning_science.md` R75 against the exported data — decision D6
 

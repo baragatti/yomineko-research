@@ -1651,7 +1651,37 @@ def handle_lesson_sentences(rows, sents, gram, table):
     return out
 
 
+def handle_w22_unlocks(rows, sents, gram, table):
+    """W22. Each additive unlock (feature or conjugation form) is in the SHIPPED lesson's `unlocks`
+    (features also in `feature_unlocks`) and no other lesson carries it: introduce-once."""
+    holders: dict[tuple[str, str], list[str]] = defaultdict(list)
+    for lid, rec in LESSONS.items():
+        for u in rec.get("unlocks") or []:
+            if u.get("type") in ("feature", "conjugation-form"):
+                holders[(u["type"], u["ref"])].append(lid)
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} {r['ref']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        where = holders.get((r["type"], r["ref"]), [])
+        if r["lesson"] not in where:
+            out.append(("fail", C_NOT_APPLIED, addr, f"{r['ref']} is not in the lesson's unlocks"))
+        elif r["type"] == "feature" and r["ref"] not in (lesson.get("feature_unlocks") or []):
+            out.append(("fail", C_NOT_APPLIED, addr, f"{r['ref']} is not in feature_unlocks"))
+        elif len(where) > 1:
+            out.append(("fail", C_NOT_APPLIED, addr, f"{r['ref']} is also unlocked by "
+                                                     f"{sorted(set(where) - {r['lesson']})}"))
+        else:
+            out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # W22: never-unlocked features + conjugation-form unlocks (C4-W22).
+    "w22_n3_dead_end.json": handle_w22_unlocks,
     # W14: lesson sentence re-selection (adds, in-place swaps, removals, pre-N5 chips).
     "lesson_sentences.json": handle_lesson_sentences,
     # W21b: the 280 forward-reference moves (unlock + card + travelling exercises).

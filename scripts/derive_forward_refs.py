@@ -355,7 +355,11 @@ def run(work: Path, FX_BEFORE: Path, FX_AFTER: Path, SNAP: Path, OUT: Path) -> i
                          "use_span": [{"channel": "held-passage (W15)", "via": rd, "surface": surf, "note": why}],
                          "source": "w15-hold", "forward": bool(M and pos[M] > pos[L])})
 
-    w22 = json.loads((REPO / "research/derived/pending/w22_n3_dead_end.json").read_text(encoding="utf-8"))["form_unlocks"]
+    # W22 applied (C4-W22): the table moved to repairs/ and its rows are one list across sections
+    _w22 = json.loads((REPO / "research/derived/repairs/w22_n3_dead_end.json").read_text(encoding="utf-8"))
+    w22 = {"built_on_before_named": _w22["form_unlocks"]["built_on_before_named"],
+           "rows": [{**r, "form": r["ref"].split(":", 1)[1]} for r in _w22["rows"]
+                    if r["section"] == "form_unlocks"]}
     w22_rows = []
     for b in w22["built_on_before_named"]:
         row = next(r for r in w22["rows"] if r["form"] == b["form"])

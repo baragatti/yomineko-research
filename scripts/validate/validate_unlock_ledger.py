@@ -51,9 +51,10 @@ ITEM_REGISTRIES: dict[str, tuple[str, str]] = {
     "grammar": ("corpus/grammar/*.json", "gram"),
     "kana-family": ("corpus/kana/families.json", "kana"),
 }
-# item unlocks are the ones that become SRS cards; feature/srs-deck unlocks do not
-NON_ITEM_TYPES = {"feature", "srs-deck"}
-NON_ITEM_PREFIX = {"feature": "feat", "srs-deck": "deck"}
+# item unlocks are the ones that become SRS cards; feature/srs-deck/conjugation-form unlocks do not
+# (item_to_deck maps no deck for a form; W22 gives every form one introducing lesson)
+NON_ITEM_TYPES = {"feature", "srs-deck", "conjugation-form"}
+NON_ITEM_PREFIX = {"feature": "feat", "srs-deck": "deck", "conjugation-form": "conj"}
 TOPIC_NUM = re.compile(r"topic-(\d+)")
 
 
@@ -102,7 +103,8 @@ def main() -> int:
 
     enums = json.loads((root / "design" / "unlock_enums.json").read_text(encoding="utf-8"))
     known_types = set(enums["unlock_type"])
-    non_item_members = {"feature": set(enums["feature"]), "srs-deck": set(enums["deck"])}
+    non_item_members = {"feature": set(enums["feature"]), "srs-deck": set(enums["deck"]),
+                        "conjugation-form": set(enums["conjugation_form"])}
 
     reg = load_registries(root)
     lessons = load_lessons(root, level_order)

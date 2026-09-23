@@ -367,7 +367,7 @@ export interface Kanji {
 export interface Lesson {
   body: string;
   cumulative_known_set: {
-    "conjugation-form": unknown[];
+    "conjugation-form": string[];
     grammar: string[];
     "kana-family": string[];
     kanji: string[];
@@ -392,7 +392,7 @@ export interface Lesson {
       sentence_refs?: string[];
       type?: "cloze" | "handwriting" | "listening" | "matching" | "ordering" | "particle_choice" | "production" | "reading" | "recognition" | "sentence_build";
     }[];
-  feature_unlocks: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode"[];
+  feature_unlocks: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n3" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode"[];
   id: StableId;
   level: Level;
   needs: {
@@ -830,10 +830,10 @@ export interface ExamAttempt {
   passed?: boolean | null;
 }
 
-/** One row per (user, app feature) over the sixteen features declared in design/unlock_enums.json#feature. RUNTIME class: minted per learner, never committed to this repo. Separates being ALLOWED to use a feature from having it turned ON, because furigana-toggle and romaji-toggle are settings and one boolean cannot hold both facts. See design/user_state.md §9. */
+/** One row per (user, app feature) over the seventeen features declared in design/unlock_enums.json#feature. RUNTIME class: minted per learner, never committed to this repo. Separates being ALLOWED to use a feature from having it turned ON, because furigana-toggle and romaji-toggle are settings and one boolean cannot hold both facts. See design/user_state.md §9. */
 export interface FeatureState {
   user_id: StableId;
-  feature: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode";
+  feature: "feat:conjugation-drill" | "feat:find-correct-kanji" | "feat:find-correct-particle" | "feat:furigana-toggle" | "feat:handwriting-input" | "feat:jlpt-sim-n3" | "feat:jlpt-sim-n4" | "feat:jlpt-sim-n5" | "feat:kana-input" | "feat:kanji-lookup" | "feat:listening" | "feat:particle-drill" | "feat:phrase-builder" | "feat:romaji-toggle" | "feat:srs-reviews" | "feat:visual-novel" | "feat:voice-mode";
   unlocked: boolean;
   unlocked_at?: string | null;
   unlocked_by?: StableId | null;

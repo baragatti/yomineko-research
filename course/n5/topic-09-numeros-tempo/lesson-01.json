@@ -30,6 +30,10 @@
   ],
   "unlocks": [
     {
+      "type": "feature",
+      "ref": "feat:kanji-lookup"
+    },
+    {
       "type": "kanji",
       "ref": "kanji:一"
     },
@@ -62,7 +66,9 @@
       "ref": "vocab:1579470"
     }
   ],
-  "feature_unlocks": [],
+  "feature_unlocks": [
+    "feat:kanji-lookup"
+  ],
   "srs": {
     "introduces_cards": [
       {
@@ -525,7 +531,9 @@
       "gram:gp-49",
       "gram:ka-ka"
     ],
-    "conjugation-form": [],
+    "conjugation-form": [
+      "conj:dictionary"
+    ],
     "phrase": []
   },
   "sentence_refs": [],
