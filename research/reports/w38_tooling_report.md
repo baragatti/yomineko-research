@@ -165,6 +165,8 @@ the queue lands as permanently **stale**. The views sidestep this by deriving ev
 `live_anchor` itself, but the queue is what a teacher reads first. Fixing it means either teaching
 `live_anchor` those virtual fields (the `dissection` precedent) or narrowing the queue's targets —
 a small unit, and it belongs before a named teacher starts quoting queue hashes.
+**Fixed 2026-09-23 (C11-W38fix, `w38fix_address_report.md`):** the first option, through one shared
+`review_queue.projection()`; `validate_review_ledger.py` check 6 now pins it.
 
 ---
 

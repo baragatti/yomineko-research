@@ -127,7 +127,7 @@ import sys
 import unicodedata
 from dataclasses import dataclass, field as dc_field
 from pathlib import Path
-from typing import Any, Iterable, Iterator, Sequence
+from typing import Any, Callable, Iterable, Iterator, Sequence
 
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 
@@ -569,6 +569,58 @@ def dissection_payload(rec: dict[str, Any], locale: str) -> list[object]:
     return _dissection_payload(rec, locale)
 
 
+# --------------------------------------------------------------------------------------------------
+# projected targets: one definition shared by the queue and by review_ledger.live_anchor
+# --------------------------------------------------------------------------------------------------
+# A target is PROJECTED when its hash is not taken over a stored locale-object value or a stored
+# field as a whole. The queue hashes a per-locale slice (grammar `forms`, lesson `objectives`, speak
+# `production` / `fluency`) or a synthetic address (exam `item`, lesson `exercise:<id>`, sentence
+# `dissection`). The ledger must recompute the SAME payload, or an approval a teacher copies out of
+# the queue is either unresolvable or permanently stale (research/reports/w38_tooling_report.md §3).
+# So both sides call `projection()` below; nobody restates a payload.
+def _forms_payload(rec: dict[str, Any], locale: str) -> list[object]:
+    forms = [{"form": f.get("form"), "meaning": (f.get("meaning") or {}).get(locale)}
+             for f in rec.get("forms") or () if isinstance(f, dict)]
+    return forms if any(f["meaning"] for f in forms) else []
+
+
+def _objectives_payload(rec: dict[str, Any], locale: str) -> list[object]:
+    return [o.get(locale) for o in rec.get("objectives") or ()
+            if isinstance(o, dict) and o.get(locale)]
+
+
+def _production_payload(rec: dict[str, Any], locale: str) -> list[object]:
+    # W40 made the speak prompts locale objects (`prompt: {"pt-BR": ...}`); the aggregate keeps its
+    # old internal key `prompt_pt`, so it exists for pt-BR only.
+    if locale != "pt-BR":
+        return []
+    return [{"prompt_pt": (p.get("prompt") or {}).get("pt-BR"), "answer_key": p.get("answer_key")}
+            for p in rec.get("production") or () if isinstance(p, dict)]
+
+
+def _fluency_payload(rec: dict[str, Any], locale: str) -> str:
+    text = ((rec.get("fluency") or {}).get("prompt") or {}).get(locale)
+    return text if isinstance(text, str) and text.strip() else ""
+
+
+EXAM_BOOKKEEPING = frozenset({"id", "level", "layer", "needs_review", "ai_generated", "source",
+                              "sentence", "vocab", "vocab_id", "grammar", "grammar_id", "kanji",
+                              "kanji_id", "reading_ref", STAMP_KEY})
+
+
+def _exam_item_payload(rec: dict[str, Any], _locale: str) -> dict[str, object]:
+    """The item as a unit (stem + key + options). Locale-objects are their own targets."""
+    return {k: v for k, v in rec.items() if k not in EXAM_BOOKKEEPING and not is_locale_object(v)}
+
+
+def _exercise_payload(rec: dict[str, Any], ex_id: str) -> dict[str, object]:
+    for ex in rec.get("exercises") or ():
+        if isinstance(ex, dict) and ex.get("id") == ex_id:
+            return {k: ex.get(k) for k in ("type", "prompt", "answer", "explanation",
+                                           "sentence_refs")}
+    return {}
+
+
 def _dissection_payload(rec: dict[str, Any], locale: str) -> list[object]:
     payload: list[object] = []
     for tok in rec.get("tokens") or ():
@@ -586,6 +638,34 @@ def _dissection_payload(rec: dict[str, Any], locale: str) -> list[object]:
         if any(part.values()):
             payload.append({"particle": par.get("particle"), **part})
     return payload
+
+
+PROJECTORS: dict[str, Callable[[dict[str, Any], str], object]] = {
+    "dissection": _dissection_payload,
+    "item": _exam_item_payload,
+    "forms": _forms_payload,
+    "objectives": _objectives_payload,
+    "production": _production_payload,
+    "fluency": _fluency_payload,
+}
+# Not stored on the record under that name: always projected. The other PROJECTORS keys ARE stored
+# fields, projected only when the address names a locale; without one, live_anchor hashes the whole
+# stored field (the address build_review_views.py prints for grammar `forms`).
+VIRTUAL_FIELDS = ("dissection", "item")
+EXERCISE_PREFIX = "exercise:"
+
+
+def is_projected(field_name: str, locale: str | None) -> bool:
+    if field_name in VIRTUAL_FIELDS or field_name.startswith(EXERCISE_PREFIX):
+        return True
+    return field_name in PROJECTORS and locale is not None
+
+
+def projection(rec: dict[str, Any], field_name: str, locale: str | None) -> object:
+    """The payload a projected target hashes (call only when `is_projected`). Empty = no target."""
+    if field_name.startswith(EXERCISE_PREFIX):
+        return _exercise_payload(rec, field_name[len(EXERCISE_PREFIX):])
+    return PROJECTORS[field_name](rec, locale or "pt-BR")
 
 
 def collect_grammar(root: Path) -> Iterator[Row]:
@@ -607,10 +687,7 @@ def collect_grammar(root: Path) -> Iterator[Row]:
             for fname in ("label", "explanation", "formation", "nuance"):
                 add_locale_targets(row, fname, rec.get(fname))
             for locale in ("pt-BR", "en"):
-                forms = [{"form": f.get("form"), "meaning": (f.get("meaning") or {}).get(locale)}
-                         for f in rec.get("forms") or () if isinstance(f, dict)]
-                if any(f["meaning"] for f in forms):
-                    add_aggregate_target(row, "forms", forms, locale)
+                add_aggregate_target(row, "forms", projection(rec, "forms", locale), locale)
             row.record_hash = sha_record(rec)
             yield row
 
@@ -640,11 +717,6 @@ def collect_readings(root: Path) -> Iterator[Row]:
             yield row
 
 
-EXAM_BOOKKEEPING = frozenset({"id", "level", "layer", "needs_review", "ai_generated", "source",
-                              "sentence", "vocab", "vocab_id", "grammar", "grammar_id", "kanji",
-                              "kanji_id", "reading_ref"})
-
-
 def collect_exam_items(root: Path) -> Iterator[Row]:
     for path in sorted((root / "corpus" / "exam_banks").glob("*.json")):
         if path.name == "removed_items.json":
@@ -669,13 +741,8 @@ def collect_exam_items(root: Path) -> Iterator[Row]:
             )
             # One target for the item as a unit (stem + key + options), plus a target for any
             # locale-object the bank type happens to carry (explanations differ per section).
-            add_aggregate_target(
-                row, "item",
-                {k: v for k, v in rec.items()
-                 if k not in EXAM_BOOKKEEPING and not is_locale_object(v)},
-                "ja",
-                preview=str(rec.get("stem") or ""),
-            )
+            add_aggregate_target(row, "item", projection(rec, "item", "ja"), "ja",
+                                 preview=str(rec.get("stem") or ""))
             for key, value in rec.items():
                 if is_locale_object(value):
                     add_locale_targets(row, key, value)
@@ -703,23 +770,22 @@ def collect_lessons(root: Path) -> Iterator[Row]:
         for fname in ("title", "description"):
             add_locale_targets(row, fname, rec.get(fname))
         for locale in ("pt-BR", "en"):
-            objectives = [o.get(locale) for o in rec.get("objectives") or ()
-                          if isinstance(o, dict) and o.get(locale)]
-            if objectives:
+            objectives = projection(rec, "objectives", locale)
+            if isinstance(objectives, list) and objectives:
                 add_aggregate_target(row, "objectives", objectives, locale,
-                                     preview=objectives[0] if locale == "pt-BR" else "")
+                                     preview=str(objectives[0]) if locale == "pt-BR" else "")
+        # Hashed like any stored plain field (sha_json), which is what live_anchor recomputes.
         body = rec.get("body")
         if isinstance(body, str) and body.strip():
-            row.targets.append(Target("body", "pt-BR", sha(body), one_line(body, TARGET_PREVIEW_CHARS)))
+            add_aggregate_target(row, "body", body, "pt-BR", preview=body)
         # Per-exercise targets: the exercise ids already exist, so a teacher can approve one drill
         # without blessing the four beside it.
         for ex in rec.get("exercises") or ():
             if not isinstance(ex, dict) or not ex.get("id"):
                 continue
-            payload = {k: ex.get(k) for k in ("type", "prompt", "answer", "explanation",
-                                              "sentence_refs")}
+            fname = f"{EXERCISE_PREFIX}{ex['id']}"
             add_aggregate_target(
-                row, f"exercise:{ex['id']}", payload, "pt-BR",
+                row, fname, projection(rec, fname, "pt-BR"), "pt-BR",
                 preview=str((ex.get("prompt") or {}).get("pt-BR", ex.get("id", ""))),
             )
         row.record_hash = sha_record(rec)
@@ -742,17 +808,12 @@ def collect_speak(root: Path) -> Iterator[Row]:
             preview=one_line((rec.get("title") or {}).get("pt-BR", rec.get("id", ""))),
         )
         add_locale_targets(row, "title", rec.get("title"))
-        # W40 made the speak prompts locale objects (`prompt: {"pt-BR": ...}`); the aggregate keeps
-        # its old internal key so a content hash taken before the rename still matches.
-        production = [{"prompt_pt": (p.get("prompt") or {}).get("pt-BR"), "answer_key": p.get("answer_key")}
-                      for p in rec.get("production") or () if isinstance(p, dict)]
-        if production:
+        production = projection(rec, "production", "pt-BR")
+        if isinstance(production, list) and production:
             add_aggregate_target(row, "production", production, "pt-BR",
                                  preview=str(production[0].get("prompt_pt") or ""))
-        fluency_prompt = ((rec.get("fluency") or {}).get("prompt") or {}).get("pt-BR")
-        if isinstance(fluency_prompt, str) and fluency_prompt.strip():
-            row.targets.append(Target("fluency", "pt-BR", sha(fluency_prompt),
-                                      one_line(fluency_prompt, TARGET_PREVIEW_CHARS)))
+        fluency_prompt = projection(rec, "fluency", "pt-BR")
+        add_aggregate_target(row, "fluency", fluency_prompt, "pt-BR", preview=str(fluency_prompt))
         row.record_hash = sha_record(rec)
         row.extra = {"stage": rec.get("stage")} if rec.get("stage") else {}
         yield row

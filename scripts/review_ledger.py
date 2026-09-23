@@ -31,7 +31,10 @@ functions rather than restating them:
     field "*"                     -> sha_record(record)  - the record minus its own review_status stamp
     locale-object field + locale  -> sha(text)           - matches add_locale_targets()
     anything else                 -> sha_json(value)     - matches add_aggregate_target()
-    "dissection"                  -> sha_json(the per-locale dissection payload the queue builds)
+    projected field (+ locale)    -> sha_json(review_queue.projection(record, field, locale)):
+        virtual, any locale: "dissection", exam "item", lesson "exercise:<id>"
+        stored, locale named: grammar "forms", lesson "objectives", speak "production" / "fluency"
+        (the same fields with NO locale hash the whole stored value, as "anything else" above)
 
 `sha_record` excludes the exporter's `review_status` stamp on purpose. Without that exclusion a
 whole-record approval would invalidate itself the moment the exporter wrote the approval into the
@@ -65,9 +68,11 @@ from dbtarget import take_flag  # noqa: E402
 from review_queue import (  # noqa: E402
     APPROVING_STATUSES,
     REJECTING_STATUSES,
-    dissection_payload,
+    VIRTUAL_FIELDS,
     hashes_join,
     is_locale_object,
+    is_projected,
+    projection,
     sha,
     sha_json,
     sha_record,
@@ -81,9 +86,8 @@ RECORD_FIELD = "*"
 # ledger shapes it was tested against, while this is the shape we WRITE, and a writer with six
 # spellings of "yes" is a writer nobody can audit. design/review_ledger.md owns this vocabulary.
 STATUSES = ("approved", "rejected")
-# Fields the queue offers as review targets that are not stored under that name on the record. The
-# dissection is 50k+ localized strings reviewed as one artefact, per locale (review_queue.py).
-VIRTUAL_FIELDS = ("dissection",)
+# VIRTUAL_FIELDS (imported above) are the queue targets not stored under that name on the record;
+# `exercise:<id>` addresses are virtual too. review_queue.py owns both definitions.
 HEX = frozenset("0123456789abcdefABCDEF")
 
 
@@ -226,11 +230,11 @@ def live_anchor(record: dict[str, Any], field: str, locale: str | None) -> tuple
     """
     if field == RECORD_FIELD:
         return sha_record(record), "record"
-    if field == "dissection":
-        payload = dissection_payload(record, locale or "pt-BR")
-        if not payload:
-            return None, f"the record has no dissection in locale {locale or 'pt-BR'!r}"
-        return sha_json(payload), "dissection"
+    if is_projected(field, locale):
+        payload = projection(record, field, locale)
+        if payload in (None, [], {}, ""):
+            return None, f"the record has no {field!r} content in locale {locale or 'pt-BR'!r}"
+        return sha_json(payload), "projection"
     if field not in record:
         return None, f"the record has no field {field!r}"
     value = record[field]

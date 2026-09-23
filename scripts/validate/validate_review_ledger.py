@@ -32,6 +32,11 @@ WHAT IT CHECKS
   5  NO CONTRADICTION. Two entries that address the same (slug, field, locale) with the same anchor
      and different verdicts FAIL: the export cannot stamp both, and picking one would be a coin toss.
 
+  6  THE QUEUE AND THE LEDGER AGREE. Every target scripts/review_queue.py offers on a record the export
+     can address must be resolved by live_anchor to the SAME hash. Otherwise an approval a teacher
+     copies out of the queue is either unresolvable (fails check 2) or born stale. Both sides share
+     review_queue.projection() for the per-locale and synthetic targets (W38 report §3).
+
 An EMPTY ledger passes with 0 entries — that is the correct state before a teacher has started, and
 the file existing while empty is what makes "nobody has reviewed this" a checkable claim. The file
 NOT existing fails.
@@ -60,6 +65,7 @@ from dbtarget import take_flag  # noqa: E402
 from review_ledger import (  # noqa: E402
     LEDGER_REL, STAMP_KEY, hashes_join, live_anchor, read_entries,
 )
+from review_queue import COLLECTORS  # noqa: E402
 
 MAX_REPORT = 20
 STAMP_FIELDS = ("field", "locale", "status", "reviewed_by", "approved_at", "content_hash")
@@ -212,8 +218,32 @@ def main() -> int:
                     f"export was not regenerated. The ledger is the source of truth; the export is a "
                     f"projection of it.")
 
+    # ---- 6: every queue target is an address the ledger resolves, to the queue's own hash ---------
+    queue_targets = 0
+    queue_unaddressable: Counter = Counter()
+    for collect in COLLECTORS:
+        for row in collect(root):
+            found = index.get(row.id)
+            if found is None:
+                queue_unaddressable[row.entity] += 1
+                continue
+            for target in row.targets:
+                queue_targets += 1
+                anchor, how = live_anchor(found[2], target.field, target.locale)
+                if anchor is None or not hashes_join(anchor, target.content_hash):
+                    fails.append(
+                        f"review_queue offers {row.id} · {target.field} [{target.locale or '*'}] "
+                        f"hashed `{target.content_hash[:12]}`, and live_anchor "
+                        f"{'resolves it to `' + anchor[:12] + '`' if anchor else 'cannot resolve it (' + how + ')'}"
+                        f" - an approval copied from the queue would be "
+                        f"{'born stale' if anchor else 'a hard failure of check 2'}")
+
     # ---- report ----------------------------------------------------------------------------------
     print("============== REVIEW LEDGER GATE ==============")
+    print(f"  queue agreement: {queue_targets:,} review_queue target(s) re-anchored by live_anchor")
+    if queue_unaddressable:
+        print("  queue rows with no address in the export (their approvals cannot chain; advisory): "
+              + ", ".join(f"{k} {v}" for k, v in sorted(queue_unaddressable.items())))
     print(f"  ledger: {shown_ledger} — {len(entries)} entr(y/ies) over {len(index):,} addressable "
           f"records in {n_files} file(s)")
     print(f"  live {len(live)} · stale {len(stale)} · stamps in the export {stamped_total} on "

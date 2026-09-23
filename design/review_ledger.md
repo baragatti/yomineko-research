@@ -65,7 +65,8 @@ restating them, so the queue's `--subtract` join and the exporter's stamp can ne
 | what is approved | the anchor |
 |---|---|
 | one locale of a locale-object field | `sha(text)` — NFC, then sha256 |
-| an aggregate (`jp`, `dissection`, a form table) | `sha_json(value)` — canonical JSON, then sha256 |
+| a stored field that is not a locale-object (`jp`, lesson `body`, a whole `forms` table) | `sha_json(value)` — canonical JSON, then sha256 |
+| a projected target: virtual (`dissection`, exam `item`, lesson `exercise:<id>`) or a per-locale slice of a stored field (`forms`, `objectives`, `production`, `fluency` with a `locale`) | `sha_json(review_queue.projection(record, field, locale))` — one payload builder shared by the queue and the ledger; `validate_review_ledger.py` check 6 re-anchors every queue target |
 | the whole record (`field: "*"`) | `sha_record(record)` |
 
 `sha_record` hashes the record **minus its own `review_status` stamp**. Without that exclusion, writing
