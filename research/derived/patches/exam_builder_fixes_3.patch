@@ -1,12 +1,12 @@
 diff --git a/scripts/export/build_exam_banks.py b/scripts/export/build_exam_banks.py
-index fbcd67c..a049540 100644
+index 994bdb5..100e001 100644
 --- a/scripts/export/build_exam_banks.py
 +++ b/scripts/export/build_exam_banks.py
-@@ -91,6 +91,12 @@ of those findings; each is marked with the finding it closes.
-      「（　）？」 keyed なぜ is answered as well by なあ or まで. Measured, not guessed — 0 leaves
-      those, 1 leaves inversions (「キツイ（　）。」 with これ), 3 halves n5_grammar_form.
-      Report: research/reports/exam_builder_fixes_2.md.
-+ 20  18 AND 19 FOR `cf`. The stem needs MIN_STEM_CONTENT content tokens: 「（　）だけ来た」 keyed 一人
+@@ -96,6 +96,12 @@ of those findings; each is marked with the finding it closes.
+      moves no item; it pins the rule should the cks ever widen. W24's "72 of 1,953" joined bank slugs
+      to the DB's `vocab:<headword>` unlock refs; against the export all 1,953 test a taught word.
+      Report: research/reports/exam_taught_word_rule.md.
++ 21  18 AND 19 FOR `cf`. The stem needs MIN_STEM_CONTENT content tokens: 「（　）だけ来た」 keyed 一人
 +     is answered as well by 先月. A word distractor is refused when (a) it makes the stem a sentence
 +     the bank or raw_tatoeba_sentence has, (b) the bank or Tatoeba shows it between the same
 +     neighbours as the blank (`word_frames`): 「いい（　）だけど」 keyed 人 offered 男, or (c) it
@@ -15,7 +15,7 @@ index fbcd67c..a049540 100644
  
  RUN ORDER (W18): the authored, listening and reading_comp builders first, this one LAST — the
  INDEX below is a glob over every bank file, so a bank written after it leaves a stale row.
-@@ -101,6 +107,7 @@ only the exporter resolves to `vocab:<jmdict_id>`. Run `export_course.py` before
+@@ -106,6 +112,7 @@ only the exporter resolves to `vocab:<jmdict_id>`. Run `export_course.py` before
  """
  from __future__ import annotations
  import argparse, hashlib, json, sqlite3, sys
@@ -23,11 +23,11 @@ index fbcd67c..a049540 100644
  from pathlib import Path
  sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
  # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
-@@ -213,6 +220,48 @@ def content_tokens(ms, at: int, end: int) -> int:
+@@ -218,6 +225,48 @@ def content_tokens(ms, at: int, end: int) -> int:
                 and m.part_of_speech()[0] not in FUNCTION_POS)
  
  
-+# Fix 20: SudachiPy subclasses that name a semantic group, not just a syntax. Members of one group stand
++# Fix 21: SudachiPy subclasses that name a semantic group, not just a syntax. Members of one group stand
 +# in for each other wherever the group can stand: 「（　）だけ来た」 keyed 一人 is answered as well by
 +# 先月, 「りんごを（　）買った」 keyed 五つ by 九つ or 毎年. The stem cannot rule a same-group
 +# distractor out, so it is refused. Common nouns and verbs carry no such group and are left to the
@@ -41,7 +41,7 @@ index fbcd67c..a049540 100644
 +
 +
 +def open_group(ms, at: int, end: int) -> str | None:
-+    """Fix 20: the open group of the word printed at [at, end) of a tokenized text, read in place (千
++    """Fix 21: the open group of the word printed at [at, end) of a tokenized text, read in place (千
 +    alone is a name, in 千人 a numeral), or None when it has none or does not stand as its own tokens."""
 +    span = [m for m in ms if m.begin() >= at and m.end() <= end]
 +    if not span or span[0].begin() != at or span[-1].end() != end:
@@ -51,7 +51,7 @@ index fbcd67c..a049540 100644
 +
 +
 +def word_frames(ms: list, i: int) -> list[tuple[str, str, str, str]]:
-+    """Fix 20: token i's frame on each side that has a content word, by normalized form: (content word
++    """Fix 21: token i's frame on each side that has a content word, by normalized form: (content word
 +    before, the particles between, w) and (w, the particles between, content word after)."""
 +    out = []
 +    j = i + 1
@@ -72,11 +72,11 @@ index fbcd67c..a049540 100644
  def hiragana_tail(s: str) -> str:
      i = len(s)
      while i > 0 and 0x3041 <= ord(s[i - 1]) <= 0x309F:
-@@ -472,6 +521,32 @@ def main() -> int:
+@@ -477,6 +526,32 @@ def main() -> int:
          return (x not in pre + post and not shape & slot_seen.get(x, set())
                  and stem_key(pre + x + post) not in bank_keys)
  
-+    # Fix 20: the same rule for context_fill, where the options are words. A word distractor is refused
++    # Fix 21: the same rule for context_fill, where the options are words. A word distractor is refused
 +    # when it makes the stem a sentence the bank or Tatoeba has; when the bank or Tatoeba shows it
 +    # between the same neighbours as the blank (`word_frames`, every side that has a content word):
 +    # 「いい（　）だけど」 keyed 人 offered 男; or when it shares the key's open group (`open_group`).
@@ -105,7 +105,7 @@ index fbcd67c..a049540 100644
      # ---- the taught, level-clean vocabulary pool ----------------------------------------------
      # A word may be the ANSWER or a DISTRACTOR at a level only when the course has taught the record
      # and every kanji it prints. This is the pool W03 measured (177 level-clean N5 words against an
-@@ -604,6 +679,12 @@ def main() -> int:
+@@ -615,6 +690,12 @@ def main() -> int:
                                          for t in toks_c.get(sid, [])], v["hw"], v["kana"]):
                      drop("context_fill", "reading-does-not-agree")
                      continue        # qa F4: 空/から on a *sky* sentence, 時/とき on a clock reading
@@ -113,17 +113,17 @@ index fbcd67c..a049540 100644
 +                end = at + len(v["hw"])
 +                ms = tk.tokenize(jp, _MODE_C)
 +                if content_tokens(ms, at, end) < MIN_STEM_CONTENT:
-+                    drop("context_fill", "stem-too-short")          # fix 20 (19 for cf)
++                    drop("context_fill", "stem-too-short")          # fix 21 (19 for cf)
 +                    continue
                  # W18: two sentences that differ only in the blanked word print the SAME question
                  # with two keys (どのくらい（　） keyed 大きい and 高い); whichever the learner picks,
                  # one item marks it wrong. The first stem wins; the sentence tries its next word.
-@@ -621,7 +702,11 @@ def main() -> int:
+@@ -632,7 +713,11 @@ def main() -> int:
                      cands.append((abs(len(w["hw"]) - len(v["hw"])) * 10
                                    + (0 if w["lex"] == v["lex"] else 20), w["hw"]))
                  cands.sort(key=lambda t: (t[0], spread(f"{sid}:{v['hw']}", t[1])))
 -                dh = pick_distractors(cands, v["hw"])
-+                # fix 20: walk the same order, keeping only what the stem rules out.
++                # fix 21: walk the same order, keeping only what the stem rules out.
 +                base = pick_distractors(cands, v["hw"], want=len(cands))
 +                group = open_group(ms, at, end)
 +                dh = list(islice((x for x in base
@@ -131,7 +131,7 @@ index fbcd67c..a049540 100644
                  if len(dh) == 3:
                      cf_stems.add(stem_key(jp.replace(v["hw"], "（　）", 1)))
                      cf.append({"id": f"cf:{lvl}:{sid}:{vid}", "level": lvl,
-@@ -631,7 +716,8 @@ def main() -> int:
+@@ -642,7 +727,8 @@ def main() -> int:
                                 "layer": "B", "ai_generated": bool(ai), "needs_review": bool(ai),
                                 "source": "sentence+vocab"})
                  else:

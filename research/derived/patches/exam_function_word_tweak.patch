@@ -1,0 +1,24 @@
+diff --git a/scripts/export/build_exam_banks.py b/scripts/export/build_exam_banks.py
+index 100e001..bdd80bc 100644
+--- a/scripts/export/build_exam_banks.py
++++ b/scripts/export/build_exam_banks.py
+@@ -187,6 +187,10 @@ def boundary_occurrence(text: str, form: str, starts: set, ends: set) -> int:
+ # Fix 19: POS that carry no context of their own. A stem is only as informative as the content words
+ # printed around its blank; 「（　）？」 keyed なぜ has none, and する / もう / まだ fit it as well.
+ FUNCTION_POS = {"助詞", "助動詞", "補助記号", "記号", "空白"}
++# Prefixes, prenominals and conjunctions give a stem no context either: お（　）だけ keyed 水, どの（　）が
++# 安い keyed 店, また話し（　）だ keyed 中 each count only one real content word. The stem counter only;
++# `word_frames` keeps FUNCTION_POS, since a prenominal (その試合) is a real frame neighbour.
++STEM_FUNCTION_POS = FUNCTION_POS | {"接頭辞", "連体詞", "接続詞"}
+ MIN_STEM_CONTENT = 2
+ # Conjugation types whose 未然形 and 連用形 print the same string (食べ, し, 来, 入れられ).
+ SAME_MIZEN_RENYOU = ("上一段", "下一段", "カ行変格", "サ行変格",
+@@ -222,7 +226,7 @@ def slot_shape(ms, at: int) -> frozenset[str]:
+ def content_tokens(ms, at: int, end: int) -> int:
+     """Fix 19: content tokens printed outside the blank [at, end)."""
+     return sum(1 for m in ms if (m.end() <= at or m.begin() >= end)
+-               and m.part_of_speech()[0] not in FUNCTION_POS)
++               and m.part_of_speech()[0] not in STEM_FUNCTION_POS)
+ 
+ 
+ # Fix 21: SudachiPy subclasses that name a semantic group, not just a syntax. Members of one group stand
