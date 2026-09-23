@@ -294,7 +294,10 @@ def main() -> int:
     grammar = [{"id": gid, "slug": slug, "key": key, "label": lab or "", "level": lv or "",
                 "register": reg or "", "forms": [f for f in jload(forms) if isinstance(f, str)]}
                for gid, slug, key, lab, lv, reg, forms in con.execute(
-                   "SELECT id,slug,key,label_pt,level,register,forms_json FROM grammar_point")]
+                   # W08b V2: a merged-away row keeps its forms, and form ties break by key, so a
+                   # kept loser would win a unit pattern and publish an address the registry dropped.
+                   "SELECT id,slug,key,label_pt,level,register,forms_json FROM grammar_point "
+                   "WHERE deprecated_by IS NULL")]
 
     known: set[int] = set()
     course: list[dict] = []

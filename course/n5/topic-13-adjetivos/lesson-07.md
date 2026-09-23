@@ -7,7 +7,7 @@
 - Dizer que se gosta de FAZER algo com 〜のが好きです
 - Dizer que se é bom (じょうず) ou ruim (へた) em uma atividade com 〜のが上手/下手です
 
-**Introduz:** gramática [gp-23, gp-54, no-ga-jouzu, no-ga-suki] · vocabulário [料理] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-23, no-ga-jouzu, no-ga-suki] · vocabulário [料理] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-10883885`, `sent:tatoeba-1128926`, `sent:gen-74bce4b40079`
 
@@ -36,7 +36,7 @@ Aqui a frase nominalizada é maior: ハトにえさをやる ("dar comida aos po
 A tentação é usar を ("gosto de ler" soa como objeto em português). Resista: com 好き o que você gosta é sempre が. O を que você vê na frase pertence ao verbo de dentro (本を読む), não ao 好き.
 
 #### 〜のが上手/下手です: ser bom ou ruim em fazer algo
-O mesmíssimo mecanismo serve para falar de habilidade. Troque 好き por 上手 ("habilidoso, bom em") ou por 下手 ("sem jeito, ruim em"). A construção no-ga-jouzu, registrada também como gp-54, segue a mesma fórmula: [verbo na forma de dicionário] の が 上手です.
+O mesmíssimo mecanismo serve para falar de habilidade. Troque 好き por 上手 ("habilidoso, bom em") ou por 下手 ("sem jeito, ruim em"). A construção no-ga-jouzu, registrada também como no-ga-jouzu, segue a mesma fórmula: [verbo na forma de dicionário] の が 上手です.
 > 🗣 ははは りょうりを つくるのが じょうずです — Minha mãe é boa em cozinhar.
 Decompondo: 母 é "(minha) mãe" e leva o tópico は (por isso aparece o trio ははは: はは mais a partícula は); 料理 é "culinária/comida" com を; o verbo 作る ("fazer/preparar") é nominalizado por の e marcado por が; 上手です encerra. Em pt-BR natural: "minha mãe é boa em cozinhar".
 

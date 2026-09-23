@@ -14,7 +14,7 @@ _Generated 2026-09-23. `label`/`governing_rule` = locale-objects (pt-BR)._
 | grp:suru-irregular | conjugation_class | Verbo irregular する | 416 |
 | grp:kuru-irregular | conjugation_class | Verbo irregular 来る | 1 |
 | grp:counters | function_set | Contadores (助数詞) | 16 |
-| grp:gram-n3-causa | topic_set | Gramática: Causa, razão e consequência | 9 |
+| grp:gram-n3-causa | topic_set | Gramática: Causa, razão e consequência | 8 |
 | grp:gram-n3-concessao | topic_set | Gramática: Concessão e contraste | 12 |
 | grp:gram-n3-conectores | topic_set | Gramática: Conectores e organização do discurso | 10 |
 | grp:gram-n3-conjectura | topic_set | Gramática: Conjectura, aparência e probabilidade | 8 |
@@ -28,26 +28,26 @@ _Generated 2026-09-23. `label`/`governing_rule` = locale-objects (pt-BR)._
 | grp:gram-n3-perspectiva | topic_set | Gramática: Perspectiva, escopo e comparação | 8 |
 | grp:gram-n3-relato | topic_set | Gramática: Relato, citação e definição | 10 |
 | grp:gram-n3-tempo | topic_set | Gramática: Tempo, simultaneidade e sequência | 11 |
-| grp:gram-n4-aspecto | topic_set | Gramática: Tentar, preparar, completar | 22 |
+| grp:gram-n4-aspecto | topic_set | Gramática: Tentar, preparar, completar | 21 |
 | grp:gram-n4-causativa | topic_set | Gramática: Causativa e causativa-passiva | 4 |
-| grp:gram-n4-condicionais | topic_set | Gramática: Condicionais (たら/ば/と/なら) | 22 |
+| grp:gram-n4-condicionais | topic_set | Gramática: Condicionais (たら/ば/と/なら) | 21 |
 | grp:gram-n4-conectores | topic_set | Gramática: Conectores avançados | 22 |
 | grp:gram-n4-dar-receber | topic_set | Gramática: Dar e receber | 8 |
 | grp:gram-n4-experiencia | topic_set | Gramática: Experiência e mudança | 21 |
-| grp:gram-n4-forma-simples | topic_set | Gramática: Forma simples e registro casual | 18 |
+| grp:gram-n4-forma-simples | topic_set | Gramática: Forma simples e registro casual | 17 |
 | grp:gram-n4-keigo | topic_set | Gramática: Keigo básico | 13 |
 | grp:gram-n4-obrigacao | topic_set | Gramática: Obrigação e permissão | 7 |
 | grp:gram-n4-oracoes-relativas | topic_set | Gramática: Orações relativas | 16 |
 | grp:gram-n4-passiva | topic_set | Gramática: Voz passiva | 9 |
 | grp:gram-n4-potencial | topic_set | Gramática: Potencial | 6 |
-| grp:gram-n4-suposicao | topic_set | Gramática: Aparência e suposição | 27 |
+| grp:gram-n4-suposicao | topic_set | Gramática: Aparência e suposição | 26 |
 | grp:gram-n4-transitividade | topic_set | Gramática: Transitivos × intransitivos | 2 |
 | grp:gram-n4-volitivo | topic_set | Gramática: Volitivo e intenção | 15 |
-| grp:gram-n5-adjetivos | topic_set | Gramática: Adjetivos い e な | 19 |
-| grp:gram-n5-comparacoes | topic_set | Gramática: Comparações, desejos e preferências | 12 |
+| grp:gram-n5-adjetivos | topic_set | Gramática: Adjetivos い e な | 18 |
+| grp:gram-n5-comparacoes | topic_set | Gramática: Comparações, desejos e preferências | 11 |
 | grp:gram-n5-conectando | topic_set | Gramática: Conectando ideias e opiniões | 19 |
 | grp:gram-n5-convites | topic_set | Gramática: Convites, sugestões e habilidade | 6 |
-| grp:gram-n5-desu-wa | topic_set | Gramática: Frases básicas: o tópico は e o copula です | 13 |
+| grp:gram-n5-desu-wa | topic_set | Gramática: Frases básicas: o tópico は e o copula です | 12 |
 | grp:gram-n5-numeros-tempo | topic_set | Gramática: Números, horas e datas | 2 |
 | grp:gram-n5-particulas-lugar | topic_set | Gramática: Lugar, tempo e direção: で/に/へ/と | 17 |
 | grp:gram-n5-passado | topic_set | Gramática: Passado polido e nuances | 7 |

@@ -161,6 +161,17 @@ def grammar_ids(con: sqlite3.Connection) -> dict[str, int]:
     return {k: i for i, k in con.execute("SELECT id, key FROM grammar_point")}
 
 
+def grammar_redirects(con: sqlite3.Connection) -> dict[str, str]:
+    """{merged-away key: survivor key} (grammar_point.deprecated_by, W08/W08b). A target naming a
+    loser tags its survivor: this step replays AFTER migrate_grammar_merge.py and re-asserts every
+    planned row's edges, so an unresolved loser key would re-link the retired record."""
+    cols = {r[1] for r in con.execute("PRAGMA table_info(grammar_point)")}
+    if "deprecated_by" not in cols:
+        return {}
+    return {k: d.split(":", 1)[-1] for k, d in con.execute(
+        "SELECT key, deprecated_by FROM grammar_point WHERE deprecated_by IS NOT NULL")}
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="write; default is dry-run")
@@ -220,6 +231,7 @@ def main() -> int:
     raw = {i: t for i, t in con.execute("SELECT id,text FROM raw_tatoeba_sentence")}
     have = {s for s, in con.execute("SELECT slug FROM sentence")}
     gids = grammar_ids(con)
+    redirects = grammar_redirects(con)
     diss = Dissector(db)
 
     # ---- pre-flight over every row, before a single write ---------------------------------------
@@ -252,9 +264,9 @@ def main() -> int:
             problems.append((slug, "no row in the register table - refusing to default a register"))
             stats["no-register"] += 1
             continue
-        keys = sorted({t.split(":", 1)[1] for t in (r.get("targets")
-                                                    or ([r["target"]] if r.get("target") else []))
-                       if t.startswith("gram:")})
+        keys = sorted({redirects.get(k, k) for k in {
+            t.split(":", 1)[1] for t in (r.get("targets") or ([r["target"]] if r.get("target") else []))
+            if t.startswith("gram:")}})
         unknown = [k for k in keys if k not in gids]
         if unknown:
             problems.append((slug, f"grammar target(s) name no grammar_point: {unknown}"))

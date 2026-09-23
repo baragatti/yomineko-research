@@ -50,7 +50,6 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | gp-30 | なぜ | n5 | authored |
 | gp-31 | なんで | n5 | authored |
 | gp-32 | だった・でした | n5 | authored |
-| gp-33 | じゃない | n5 | authored |
 | gp-34 | じゃなかった | n5 | authored |
 | gp-35 | い-Adjective くなかった | n5 | authored |
 | gp-36 | Verb［た・ている］+ Noun | n5 | authored |
@@ -65,7 +64,6 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | gp-44 | くらい ① | n5 | authored |
 | gp-45 | ～になる・～くなる | n5 | authored |
 | gp-46 | のなかで～がいちばん～ | n5 | authored |
-| gp-47 | より～のほうが | n5 | authored |
 | gp-48 | なにか・なにも | n5 | authored |
 | gp-49 | 誰か・どこか・誰も・どこも | n5 | authored |
 | gp-5 | いい | n5 | authored |
@@ -73,7 +71,6 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | gp-51 | ないほうがいい | n5 | authored |
 | gp-52 | なくちゃ・なきゃ | n5 | authored |
 | gp-53 | ～のがへたです | n5 | authored |
-| gp-54 | ～のがじょうずです | n5 | authored |
 | gp-55 | あげる | n5 | authored |
 | gp-56 | くれる | n5 | authored |
 | gp-57 | もらう | n5 | authored |
@@ -170,7 +167,6 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | gari | がり | n4 | authored |
 | garu-gatteiru | がる / がっている | n4 | authored |
 | gozaimasu | ございます | n4 | authored |
-| gp-100 | Noun/Quantity + しか〜ない | n4 | authored |
 | gp-101 | ～は～の一つだ | n4 | authored |
 | gp-102 | ～ない～はない | n4 | authored |
 | gp-103 | すこしも～ない | n4 | authored |
@@ -214,12 +210,9 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | gp-148 | ～てすみません | n4 | authored |
 | gp-149 | ません | n4 | authored |
 | gp-150 | ～れば | n4 | authored |
-| gp-151 | ～てしまう | n4 | authored |
 | gp-153 | ～のような | n4 | authored |
-| gp-154 | ～のように | n4 | authored |
 | gp-58 | だんだん | n4 | authored |
 | gp-59 | どんどん | n4 | authored |
-| gp-60 | ～たら | n4 | authored |
 | gp-61 | だが・ですが | n4 | authored |
 | gp-62 | なくて | n4 | authored |
 | gp-63 | Verb［れる・られる］ | n4 | authored |
@@ -421,7 +414,6 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | n3-naide | ～ないで | n3 | authored |
 | n3-nanka | ～なんか | n3 | authored |
 | n3-nazenara | なぜなら～から(だ) | n3 | authored |
-| n3-nda-mon | ～んだもん | n3 | authored |
 | n3-ni-kanshite | ～に関して | n3 | authored |
 | n3-ni-kawatte | ～にかわって | n3 | authored |
 | n3-ni-kurabete | ～に比べて | n3 | authored |
@@ -499,4 +491,4 @@ _Generated 2026-09-23. `label`/`explanation`/`formation`/`nuance` are locale-obj
 | n3-you-to-shinai | ～ようとしない | n3 | authored |
 | n3-zu-ni | ～ずに | n3 | authored |
 
-**Deprecated:** 2 record(s) merged into another and dropped from the lists above; `../grammar_deprecated.json` maps each old slug to its survivor.
+**Deprecated:** 10 record(s) merged into another and dropped from the lists above; `../grammar_deprecated.json` maps each old slug to its survivor.

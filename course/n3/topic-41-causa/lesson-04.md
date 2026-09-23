@@ -7,14 +7,14 @@
 - Usar a variante coloquial ～んだもん na fala íntima
 - Reconhecer que o registro é informal e evitá-lo em contextos formais
 
-**Introduz:** gramática [n3-da-mono-da, n3-nda-mon] · vocabulário [会合, 回復, 外交, 外出, 快適, 抱える, 改善, 替える, 画家, 解釈, 開始, 飼う, 香り] · kanji [争 必 歳 泳 演 能 談] · kana [—]
+**Introduz:** gramática [n3-da-mono-da] · vocabulário [会合, 回復, 外交, 外出, 快適, 抱える, 改善, 替える, 画家, 解釈, 開始, 飼う, 香り] · kanji [争 必 歳 泳 演 能 談] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-161057`, `sent:tatoeba-10107238`
 
 ---
 
 ### Justificar com manha: ～(ん)だもの e ～んだもん
-Nem toda justificativa é neutra. Quando a gente quer se defender com um tom emotivo, quase de birra ou de carinho, o japonês tem n3-da-mono-da e sua variante mais falada n3-nda-mon. Pense no nosso "ué, mas é porque..." ou "aí é que tá".
+Nem toda justificativa é neutra. Quando a gente quer se defender com um tom emotivo, quase de birra ou de carinho, o japonês tem n3-da-mono-da e sua variante mais falada n3-da-mono-da. Pense no nosso "ué, mas é porque..." ou "aí é que tá".
 
 #### ～(ん)だもの: é que..., afinal...
 O n3-da-mono-da apresenta uma razão de forma subjetiva e meio queixosa, como quem se desculpa ou se defende. Tem carga emocional e soa pessoal, quase infantil ou afetivo.
@@ -23,7 +23,7 @@ O n3-da-mono-da apresenta uma razão de forma subjetiva e meio queixosa, como qu
 Para dar o motivo no meio da frase, use a forma simples + ものだから (na fala, もんだから). Ex.: 疲れていたものだから、先に帰った ("é que eu estava cansado, então fui embora antes"). Repare que んだもの fecha a frase e não recebe から.
 
 #### ～んだもん: a versão ainda mais coloquial
-O n3-nda-mon é a mesma ideia, só que もの encolhe para もん. Soa ainda mais coloquial, manhoso, quase de criança que justifica uma travessura.
+O n3-da-mono-da é a mesma ideia, só que もの encolhe para もん. Soa ainda mais coloquial, manhoso, quase de criança que justifica uma travessura.
 だって知らなかったんだもん quer dizer "é que eu não sabia, oras!". A construção é idêntica: forma simples + んだもん (substantivo e adjetivo-na pedem な antes: なんだもん).
 
 > **[warning]**

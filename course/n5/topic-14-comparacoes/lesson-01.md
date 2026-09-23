@@ -8,7 +8,7 @@
 - Montar as quatro variações de ordem mais comuns (は…より…です, より…ほうが, のほうが…より, より…のほうが)
 - Usar adjetivos-い (高い, 小さい, 近い, 遠い, 長い, 強い, 冷たい) para descrever a comparação
 
-**Introduz:** gramática [gp-140, gp-47, wa-yori-desu, yori-hou-ga] · vocabulário [バス, 報, 多分, 大変, 強い, 早い, 楽しい, 次, 温い, 茶色, 詰らない, 近い, 長い, 隣] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-140, wa-yori-desu, yori-hou-ga] · vocabulário [バス, 報, 多分, 大変, 強い, 早い, 楽しい, 次, 温い, 茶色, 詰らない, 近い, 長い, 隣] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-dc17b084b7de`, `sent:gen-ead8371d038a`, `sent:gen-326ea97de1a1`
 
@@ -38,7 +38,7 @@ Quatro moldes cobrem "A é mais X que B", mas em apenas três ordens: o segundo 
 - は…より…です (wa-yori-desu): o jeito polido e básico. 電車はバスより速いです = "O trem é mais rápido que o ônibus."
 - より…のほうが (yori-hou-ga): começa pelo "do que". バスより電車のほうが速い.
 - のほうが…より (gp-140): começa pelo lado que ganha. 電車のほうがバスより速い.
-- より…のほうが, agora para preferir (gp-47): a mesma ordem do segundo item, agora com sentido de escolha, "prefiro B a A". 電車よりバスのほうが安い = "O ônibus é mais barato que o trem."
+- より…のほうが, agora para preferir (yori-hou-ga): a mesma ordem do segundo item, agora com sentido de escolha, "prefiro B a A". 電車よりバスのほうが安い = "O ônibus é mais barato que o trem."
 
 > **[l1-advantage]**
 Em português você muda a frase inteira para inverter ("o trem é mais rápido que o ônibus" / "o ônibus é mais lento que o trem"). Em japonês basta deslocar os blocos: as partículas より e のほうが dizem sozinhas quem é quem, então a ordem fica livre.

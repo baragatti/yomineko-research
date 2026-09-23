@@ -71,18 +71,18 @@
     },
     "getting_around|fluency": {
       "n": 36,
-      "pct": 12.5,
-      "dist": 17.5
+      "pct": 12.4,
+      "dist": 17.6
     },
     "getting_around|language-focused": {
-      "n": 163,
-      "pct": 56.4,
-      "dist": 31.4
+      "n": 165,
+      "pct": 56.7,
+      "dist": 31.7
     },
     "getting_around|meaning-input": {
       "n": 72,
-      "pct": 24.9,
-      "dist": 9.9
+      "pct": 24.7,
+      "dist": 9.7
     },
     "getting_around|meaning-output": {
       "n": 18,
@@ -231,25 +231,26 @@
     },
     "time_plans|fluency": {
       "n": 36,
-      "pct": 12.9,
-      "dist": 17.1
+      "pct": 12.7,
+      "dist": 17.3
     },
     "time_plans|language-focused": {
-      "n": 154,
-      "pct": 55.0,
-      "dist": 30.0
+      "n": 158,
+      "pct": 55.6,
+      "dist": 30.6
     },
     "time_plans|meaning-input": {
       "n": 72,
-      "pct": 25.7,
-      "dist": 10.7
+      "pct": 25.4,
+      "dist": 10.4
     },
     "time_plans|meaning-output": {
       "n": 18,
-      "pct": 6.4,
-      "dist": 23.6
+      "pct": 6.3,
+      "dist": 23.7
     }
   },
   "w18_cause": "Re-recorded by W18 (2026-09-23). The exam banks were regenerated under the level rule, so build_speaking_checkpoints.py re-selected every unit checkpoint from the new banks: 366 -> 364 items, per unit +-1 or 2, which moves 18 (stage, strand) distances by 0.1 to 0.7 points in either direction (the other pairs shrank). No phrase, drill, fluency or production item changed. The same commit fixed the stale histograms at the root: build_speaking_checkpoints.py now keeps strand_counts in step with the checkpoints it writes.",
-  "w32_cause": "Re-recorded by W32 (2026-09-23). Two causes, measured apart. (1) DRIFT: the committed path was built before the W13 ingest grew the bank 5,889 -> 10,209, so the HEAD builder run on today's index already moves this ratchet (HEAD builder, no W32 change: near-duplicate pairs 24 -> 26 with 4 FAIL, spiral 13 FAIL, strands 28 FAIL). (2) W32: survival cores live in 9 stages (only the terms whose own sentence is banked) plus one phrase per survival term per stage; on top of the drift it lowers near-duplicates 26 -> 21, spiral FAILs 13 -> 12, strand FAILs 28 -> 25. Every number in research/reports/w32_w30_apply_report.md."
+  "w32_cause": "Re-recorded by W32 (2026-09-23). Two causes, measured apart. (1) DRIFT: the committed path was built before the W13 ingest grew the bank 5,889 -> 10,209, so the HEAD builder run on today's index already moves this ratchet (HEAD builder, no W32 change: near-duplicate pairs 24 -> 26 with 4 FAIL, spiral 13 FAIL, strands 28 FAIL). (2) W32: survival cores live in 9 stages (only the terms whose own sentence is banked) plus one phrase per survival term per stage; on top of the drift it lowers near-duplicates 26 -> 21, spiral FAILs 13 -> 12, strand FAILs 28 -> 25. Every number in research/reports/w32_w30_apply_report.md.",
+  "w08b_cause": "Re-recorded by W08b (C12, 2026-09-23). The eight grammar merges plus guard V2 (build_speaking_path.py skips merged-away rows): a kept loser used to win form ties by key and publish a retired address as a unit pattern. Rebuilt, getting_around unit-06 drills n3-da-mono-da where it chunked n3-nda-mon, time_plans unit-03 drills gp-77 and gp-67 where it chunked gp-154/gp-77, and real_talk units 01/05 swap gp-33 for their next pattern. 5 (stage, strand) distances grew by 0.1 to 0.6 points (getting_around|fluency, getting_around|language-focused, time_plans|fluency, time_plans|language-focused, time_plans|meaning-output), 2 shrank; no stage left or entered the band."
 }

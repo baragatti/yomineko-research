@@ -28,7 +28,9 @@
     "vocab:1163940"
   ],
   "patterns": [
-    "gram:gp-149"
+    "gram:gp-77",
+    "gram:gp-149",
+    "gram:gp-67"
   ],
   "kanji_recognition": [
     "起",
@@ -150,19 +152,35 @@
     }
   ],
   "patterns_chunked": [
-    "gram:gp-154",
-    "gram:gp-77",
     "gram:n3-you-ni",
     "gram:you-ni-you-na",
     "gram:n3-sae"
   ],
   "drills": [
     {
+      "pattern": "gram:gp-77",
+      "examples": [
+        "sent:tatoeba-160307",
+        "sent:tatoeba-87011",
+        "sent:tatoeba-141734"
+      ],
+      "strand": "language-focused"
+    },
+    {
       "pattern": "gram:gp-149",
       "examples": [
         "sent:tatoeba-4856",
         "sent:tatoeba-83623",
         "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-67",
+      "examples": [
+        "sent:tatoeba-195381",
+        "sent:gen-c30bb4ed15da",
+        "sent:gen-ca040b3caaf1"
       ],
       "strand": "language-focused"
     }
@@ -236,15 +254,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 27,
     "fluency": 6
   }
 }

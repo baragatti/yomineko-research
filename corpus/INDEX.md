@@ -6,7 +6,7 @@ _Generated 2026-09-23 from `db/corpus.sqlite` (regenerable index). **These JSON/
 |--------|-------|---:|---:|
 | kanji | `corpus/kanji/<level>.json` | 103 | 177 |
 | vocab | `corpus/vocab/<level>.json` | 705 | 653 |
-| grammar | `corpus/grammar/<level>.json` | 150 | 212 |
+| grammar | `corpus/grammar/<level>.json` | 147 | 208 |
 | sentences | `corpus/sentences/bank.json` | 10209 | (dissected) |
 | families | `corpus/families/families.json` | 709 | (cross-level) |
 | conjugations | `corpus/conjugations/<level>.json` | 213 | 295 |

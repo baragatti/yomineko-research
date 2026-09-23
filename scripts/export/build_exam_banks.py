@@ -331,12 +331,14 @@ def main() -> int:
         return out
 
     gp = {gid: (key, lvl, forms, label) for gid, key, lvl, forms, label in con.execute(
-        "SELECT id,key,level,forms_json,COALESCE(label_pt,'') FROM grammar_point ORDER BY id")}
+        "SELECT id,key,level,forms_json,COALESCE(label_pt,'') FROM grammar_point "
+        "WHERE deprecated_by IS NULL ORDER BY id")}
     gforms = []            # (level, key, form)
     gkey_of_form: dict[tuple[str, str], str] = {}   # (level, form) -> the grammar key that owns it
+    # W08b: merged-away rows keep their forms; a regeneration must not re-issue items on them.
     for key, lvl, forms in con.execute(
             "SELECT key,level,forms_json FROM grammar_point "
-            "WHERE level IN ('n5','n4','n3') ORDER BY key"):
+            "WHERE level IN ('n5','n4','n3') AND deprecated_by IS NULL ORDER BY key"):
         for fm in form_strs(forms):
             gforms.append((lvl, key, fm))
             gkey_of_form.setdefault((lvl, fm), key)

@@ -2,7 +2,7 @@
 
 _Gerado por `scripts/export/build_review_views.py` a partir do export (`corpus/` + `course/`), entidade `speak_unit`. **Não edite este arquivo** — ele é regerado e conferido byte a byte. Para registrar um parecer, preencha uma ficha: `research/review/README.md`._
 
-_Build `bfe56179b669` de 2026-09-23 (`contracts/manifest.json`)._
+_Build `f9de8e2ce45a` de 2026-09-23 (`contracts/manifest.json`)._
 
 **72 registro(s) · 144 endereço(s) de parecer · 72 marcado(s) `needs_review` no export.**
 
@@ -820,7 +820,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 6
 
-### `*` · camada C · hash `35f33eb111003191`
+### `*` · camada C · hash `bfc5adf7b573e881`
 
 _Ledger:_ —
 
@@ -1330,7 +1330,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 3
 
-### `*` · camada C · hash `6acc28d6f1ca9ced`
+### `*` · camada C · hash `ec47e14bc72f8137`
 
 _Ledger:_ —
 
@@ -1738,7 +1738,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 3
 
-### `*` · camada C · hash `ea90f1b84791becb`
+### `*` · camada C · hash `0d8401710b71fd14`
 
 _Ledger:_ —
 
@@ -2248,7 +2248,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 6
 
-### `*` · camada C · hash `0c001c54d2b7f105`
+### `*` · camada C · hash `86dea646e31cf448`
 
 _Ledger:_ —
 
@@ -2282,7 +2282,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 1
 
-### `*` · camada C · hash `564d0c6512895692`
+### `*` · camada C · hash `b8b0cdf6354f3f72`
 
 _Ledger:_ —
 
@@ -2316,7 +2316,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 2
 
-### `*` · camada C · hash `79fe1b459f9f64a7`
+### `*` · camada C · hash `eb27fc547e0da79d`
 
 _Ledger:_ —
 
@@ -2384,7 +2384,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 4
 
-### `*` · camada C · hash `709f7fb38644e82a`
+### `*` · camada C · hash `5d0423f41bcc2133`
 
 _Ledger:_ —
 
@@ -2418,7 +2418,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 5
 
-### `*` · camada C · hash `3fd138a00776a677`
+### `*` · camada C · hash `fba8901bccf6cf8b`
 
 _Ledger:_ —
 
@@ -2452,7 +2452,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 6
 
-### `*` · camada C · hash `4f71f672b7de562f`
+### `*` · camada C · hash `8587dfa63772f89d`
 
 _Ledger:_ —
 

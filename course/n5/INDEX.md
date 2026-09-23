@@ -4,14 +4,14 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
-| 7 | Frases básicas: o tópico は e o copula です | identificação | 73 | 8 | 13 |
+| 7 | Frases básicas: o tópico は e o copula です | identificação | 73 | 8 | 12 |
 | 8 | Perguntas e demonstrativos | perguntar | 82 | 17 | 16 |
 | 9 | Números, horas e datas | tempo/dinheiro | 60 | 13 | 2 |
 | 10 | Verbos: dicionário + ます; partículas を e が | ações | 79 | 7 | 10 |
 | 11 | Lugar, tempo e direção: で/に/へ/と | lugar | 62 | 6 | 17 |
 | 12 | Passado polido e nuances | passado | 46 | 5 | 7 |
-| 13 | Adjetivos い e な | descrever | 64 | 6 | 19 |
-| 14 | Comparações, desejos e preferências | preferências | 44 | 6 | 12 |
+| 13 | Adjetivos い e な | descrever | 64 | 6 | 18 |
+| 14 | Comparações, desejos e preferências | preferências | 44 | 6 | 11 |
 | 15 | A forma て e seus usos | conectar ações | 51 | 4 | 19 |
 | 16 | Convites, sugestões e habilidade | interação | 44 | 2 | 6 |
 | 17 | Rotina, frequência e advérbios | rotina | 42 | 3 | 10 |
@@ -24,7 +24,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 7. Frases básicas: o tópico は e o copula です
 - **kanji** (8): 何 分 来 時 人 聞 入 金
 - **vocab** (73, amostra): お巡りさん、お金、会社、円、医者、外国人、女、幾つ、幾ら、椅子、歌、男、絵、英語、貴方
-- **gramática** (13): da-desu, ka, wa-topic-marker, gp-2, gp-3, gp-4, gp-30, gp-33, janai-dewa-nai, gp-31, mo, no
+- **gramática** (12): da-desu, ka, wa-topic-marker, gp-2, gp-3, gp-4, gp-30, janai-dewa-nai, gp-31, mo, no, o-go
 
 ### 8. Perguntas e demonstrativos
 - **kanji** (17): 千 見 新 木 中 先 生 車 電 本 読 天 学 校 気 出 食
@@ -54,12 +54,12 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 13. Adjetivos い e な
 - **kanji** (6): 小 外 八 子 名 手
 - **vocab** (64, amostra): 元気、小さい、白、白い、綺麗、美味しい、色々、赤、赤い、青、青い、静か、黄色、黄色い、黒
-- **gramática** (19): na-adjectives, totemo, gp-5, temo-ii-desu, gp-24, gp-35, deshou, gp-141, gp-142, gp-45, naru, gp-21
+- **gramática** (18): na-adjectives, totemo, gp-5, temo-ii-desu, gp-24, gp-35, deshou, gp-141, gp-142, gp-45, naru, gp-21
 
 ### 14. Comparações, desejos e preferências
 - **kanji** (6): 山 女 七 北 午 百
 - **vocab** (44, amostra): バス、報、多分、大変、強い、早い、楽しい、次、温い、茶色、詰らない、近い、長い、隣、中
-- **gramática** (12): gp-140, gp-47, wa-yori-desu, yori-hou-ga, gp-46, ichiban, no-naka-de-a-ga-ichiban, ni-suru, wa-dou-desu-ka, ga-hoshii, tai, sugiru
+- **gramática** (11): gp-140, wa-yori-desu, yori-hou-ga, gp-46, ichiban, no-naka-de-a-ga-ichiban, ni-suru, wa-dou-desu-ka, ga-hoshii, tai, sugiru
 
 ### 15. A forma て e seus usos
 - **kanji** (4): 川 書 半 男

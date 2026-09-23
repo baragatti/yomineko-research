@@ -99,7 +99,12 @@ def main() -> int:
         if cur == r["new"] and scalar == r["new_scalar"]:
             already += 1
             continue
-        if cur != r["old"] or scalar != r["old_scalar"]:
+        # `replay_old` (W08b, row 0): the value a from-scratch replay meets because the grammar merge
+        # runs before this step there; the row repairs it identically. See the row's replay_old_why.
+        expected = {(json.dumps(r["old"]), r["old_scalar"])}
+        if "replay_old" in r:
+            expected.add((json.dumps(r["replay_old"]), r["replay_old_scalar"]))
+        if (json.dumps(cur), scalar) not in expected:
             note = (f"{key}: stored register is {scalar!r}/{cur!r}, the row's `old` is "
                     f"{r['old_scalar']!r}/{r['old']!r}")
             if live:

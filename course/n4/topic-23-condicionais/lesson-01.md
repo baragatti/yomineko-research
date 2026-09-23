@@ -8,7 +8,7 @@
 - Montar frases A→B do cotidiano: condição com たら na primeira oração, resultado na segunda
 - Reconhecer os kanji 体 (corpo) e 力 (força)
 
-**Introduz:** gramática [gp-60, tara, tara-ii-desu-ka] · vocabulário [止める, だから, 力, 寄る, 残念, 決まる, 開く] · kanji [体 着] · kana [—]
+**Introduz:** gramática [tara, tara-ii-desu-ka] · vocabulário [止める, だから, 力, 寄る, 残念, 決まる, 開く] · kanji [体 着] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:gen-5d330e502fe3`, `sent:gen-54d978e882ca`, `sent:gen-4f79637ba175`, `sent:tatoeba-4713`
 
@@ -18,7 +18,7 @@
 Chegou a hora de falar de hipóteses: "se chover…", "quando eu chegar em casa…". O japonês tem quatro condicionais, mas vamos começar pela mais útil e coloquial de todas: tara. Ela é a sua melhor amiga porque cobre dois sentidos de uma vez só: "se" (uma hipótese) e "quando / depois que" (algo que vai acontecer numa sequência no tempo). A ideia é sempre a mesma: a primeira oração traz a condição (o evento ou situação que precisa acontecer primeiro), e a segunda traz o resultado (o que acontece depois que a condição se cumpre).
 
 #### Como se forma: é só o passado + ら
-Aqui mora a boa notícia. Você já sabe a forma casual de passado dos verbos (a forma た). Para fazer gp-60, é só acrescentar ら no fim dela. Nada de regra nova de conjugação.
+Aqui mora a boa notícia. Você já sabe a forma casual de passado dos verbos (a forma た). Para fazer tara, é só acrescentar ら no fim dela. Nada de regra nova de conjugação.
 - 降る (cair, chover) → passado 降った → 降ったら ("se/quando chover").
 - 終わる (terminar) → passado 終わった → 終わったら ("quando terminar").
 - 着く (chegar) → passado 着いた → 着いたら ("quando chegar").

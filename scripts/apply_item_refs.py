@@ -56,6 +56,23 @@ def main() -> int:
         return 0
 
     in_index = {s for (s,) in con.execute("SELECT slug FROM exercise")}
+    # W08b: a ref to a merged-away grammar point resolves to its survivor at apply time, the rule
+    # migrate_grammar_merge.py applies to the live rows (dropped when the exercise already names the
+    # survivor). A replay runs this step AFTER the merge, and the table is historical evidence that
+    # keeps the addresses it was derived with.
+    redirect = dict(con.execute(
+        "SELECT slug, deprecated_by FROM grammar_point WHERE deprecated_by IS NOT NULL"))
+
+    def resolve(refs: list[dict]) -> list[dict]:
+        own = {(e["type"], e["ref"]) for e in refs if e["ref"] not in redirect}
+        out, seen = [], set()
+        for e in refs:
+            t = redirect.get(e["ref"], e["ref"]) if e["type"] == "grammar" else e["ref"]
+            if (e["type"], t) in seen or (t != e["ref"] and (e["type"], t) in own):
+                continue
+            seen.add((e["type"], t))
+            out.append({**e, "ref": t})
+        return out
     have: dict[str, set[tuple]] = {}
     for ex, t, ref, role, by in con.execute(
             "SELECT exercise, item_type, ref, role, derived_by FROM exercise_item_ref"):
@@ -70,8 +87,8 @@ def main() -> int:
             msg = f"{r['exercise']} ({r['lesson']}): no such exercise in the index"
             (problems if LIVE_INDEX else skipped).append(msg)
             continue
-        want[r["exercise"]] = r["item_refs"]
-        rows = {(e["type"], e["ref"], e["role"], e["derived_by"]) for e in r["item_refs"]}
+        want[r["exercise"]] = resolve(r["item_refs"])
+        rows = {(e["type"], e["ref"], e["role"], e["derived_by"]) for e in want[r["exercise"]]}
         cur = have.get(r["exercise"])
         if cur == rows:
             continue

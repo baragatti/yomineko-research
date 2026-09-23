@@ -4,4 +4,4 @@ The FIXED capability list the daily skill-SRS schedules against (roadmap C/D). E
 
 - registry: 125 capabilities (grammar 72, script 3, vocabulary 44, phonology 2, exam-readiness 3, study-method 1)
 - lesson_map: 322 lessons
-- exam_link: 118 capabilities, 767 rows
+- exam_link: 118 capabilities, 768 rows

@@ -7,7 +7,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 | 38 | Conectores e organização do discurso | discurso | 130 | 17 | 10 |
 | 39 | Tempo, simultaneidade e sequência | tempo | 128 | 24 | 11 |
 | 40 | Perspectiva, escopo e comparação | referência | 124 | 28 | 8 |
-| 41 | Causa, razão e consequência | causa | 125 | 29 | 9 |
+| 41 | Causa, razão e consequência | causa | 125 | 29 | 8 |
 | 42 | Estado, modo e ação inacabada | estado | 124 | 27 | 12 |
 | 43 | Intenção, propósito e decisão | intenção | 107 | 26 | 11 |
 | 44 | Conselho, obrigação e permissão | deveres | 107 | 23 | 9 |
@@ -40,7 +40,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 41. Causa, razão e consequência
 - **kanji** (29): 官 昨 次 求 論 係 増 変 情 感 投 果 示 両 君 喜 容 式 打 直
 - **vocab** (125, amostra): お喋り、丘、劣る、収める、奥、幼い、恐らく、恐れる、恐ろしい、汚染、男の人、穏やか、贈る、起こる、お前
-- **gramática** (9): n3-okagede, n3-sei-de, n3-ni-yotte, n3-sono-kekka, n3-sono-tame-ni, n3-to-iu-no, n3-wake-da, n3-da-mono-da, n3-nda-mon
+- **gramática** (8): n3-okagede, n3-sei-de, n3-ni-yotte, n3-sono-kekka, n3-sono-tame-ni, n3-to-iu-no, n3-wake-da, n3-da-mono-da
 
 ### 42. Estado, modo e ação inacabada
 - **kanji** (27): 位 局 格 流 疑 置 過 与 供 常 放 状 球 職 付 割 役 構 由 費

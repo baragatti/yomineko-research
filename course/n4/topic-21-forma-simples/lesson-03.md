@@ -8,7 +8,7 @@
 - Aplicar o padrão a quantidades e números (千円しかない = 'só tenho mil ienes')
 - Reconhecer e usar advérbios de quantidade como 殆ど e 大抵
 
-**Introduz:** gramática [gp-100, gp-118] · vocabulário [到頭, 壊す, 大抵, 必ず, 折る, 拾う, 止む, 殆ど, 沸く, 焼く, 盗む, 踏む] · kanji [地 待] · kana [—]
+**Introduz:** gramática [gp-118] · vocabulário [到頭, 壊す, 大抵, 必ず, 折る, 拾う, 止む, 殆ど, 沸く, 焼く, 盗む, 踏む] · kanji [地 待] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-4849`, `sent:tatoeba-172845`, `sent:tatoeba-2464847`, `sent:tatoeba-179727`
 
@@ -29,7 +29,7 @@ Em português usamos "só" com verbo afirmativo ("eu só tenho isso"). Em japon�
 Aqui temos 今 ("agora"), depois しか, e ない, o que dá literalmente "fora agora, não há" e equivale ao nosso "é agora ou nunca". Note como しか normalmente substitui partículas como は, が ou を: a gente não diz 今がしか, só 今しか.
 
 #### Com números e quantidades: "só mil ienes"
-O mesmo recurso serve para quantidades, e isso é tão comum que tem até um nome próprio, gp-100. Você gruda しか〜ない num número ou medida para dizer que aquela quantia é pequena ou insuficiente:
+O mesmo recurso serve para quantidades, e isso é tão comum que tem até um nome próprio, gp-118. Você gruda しか〜ない num número ou medida para dizer que aquela quantia é pequena ou insuficiente:
 > 🗣 あと1日しかない。 — Só resta um dia.
 As peças aqui são あと ("restante"), 1日 ("um dia"), depois しか e ない: "só resta um dia". O tom é de pouco, de que o tempo está acabando.
 > 🗣 金は少ししかない。 — Eu só tenho pouco dinheiro.

@@ -4,17 +4,17 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 
 | # | tópico | tema | vocab | kanji | gramática |
 |--:|--------|------|------:|------:|----------:|
-| 21 | Forma simples e registro casual | registro | 64 | 24 | 18 |
+| 21 | Forma simples e registro casual | registro | 64 | 24 | 17 |
 | 22 | Orações relativas | descrever | 59 | 21 | 16 |
-| 23 | Condicionais (たら/ば/と/なら) | hipóteses | 52 | 23 | 22 |
+| 23 | Condicionais (たら/ば/と/なら) | hipóteses | 52 | 23 | 21 |
 | 24 | Potencial | capacidade | 44 | 15 | 6 |
 | 25 | Volitivo e intenção | intenção | 46 | 12 | 15 |
 | 26 | Transitivos × intransitivos | pares verbais | 43 | 7 | 2 |
 | 27 | Dar e receber | favores | 41 | 9 | 8 |
 | 28 | Experiência e mudança | experiência | 40 | 13 | 21 |
 | 29 | Obrigação e permissão | deveres | 36 | 9 | 7 |
-| 30 | Tentar, preparar, completar | aspecto | 39 | 5 | 22 |
-| 31 | Aparência e suposição | inferir | 38 | 5 | 27 |
+| 30 | Tentar, preparar, completar | aspecto | 39 | 5 | 21 |
+| 31 | Aparência e suposição | inferir | 38 | 5 | 26 |
 | 32 | Voz passiva | passiva | 37 | 7 | 9 |
 | 33 | Causativa e causativa-passiva | causar | 36 | 8 | 4 |
 | 34 | Keigo básico | formalidade | 35 | 0 | 13 |
@@ -27,7 +27,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 21. Forma simples e registro casual
 - **kanji** (24): 員 方 明 終 者 事 同 料 春 理 自 地 待 朝 発 起 場 思 業 私
 - **vocab** (64, amostra): ステレオ、テキスト、会、僕、別、大学生、失礼、床屋、心配、意見、気、漫画、うん、オートバイ、ガソリン
-- **gramática** (18): ka-shira, kai, kana, dewa-nai-ka, gp-129, janai-ka, gp-100, gp-118, gp-68, koro-goro, gp-94, sa
+- **gramática** (17): ka-shira, kai, kana, dewa-nai-ka, gp-129, janai-ka, gp-118, gp-68, koro-goro, gp-94, sa, yori
 
 ### 22. Orações relativas
 - **kanji** (21): 力 好 物 通 問 知 動 夏 夜 字 漢 開 題 作 夕 京 歌 意 止 注
@@ -37,7 +37,7 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 23. Condicionais (たら/ば/と/なら)
 - **kanji** (23): 体 着 帰 度 用 合 強 無 不 茶 公 家 主 持 楽 運 悪 田 答 以
 - **vocab** (52, amostra): 止める、だから、力、寄る、残念、決まる、開く、受ける、成るべく、気分、無理、用事、間違える、頑張る、動物園
-- **gramática** (22): gp-60, tara, tara-ii-desu-ka, gp-146, tara-dou, ba, gp-150, gp-120, gp-138, gp-82, nara, baai-wa
+- **gramática** (21): tara, tara-ii-desu-ka, gp-146, tara-dou, ba, gp-150, gp-120, gp-138, gp-82, nara, baai-wa, dake-de
 
 ### 24. Potencial
 - **kanji** (15): 借 心 正 海 世 教 文 界 英 走 野 音 仕 近 院
@@ -72,12 +72,12 @@ _Gerado 2026-09-23. Colocação P4 (1ª passada); lições autoradas em P6 refer
 ### 30. Tentar, preparar, completar
 - **kanji** (5): 赤 歩 図 室 説
 - **vocab** (39, amostra): 伝える、其れで、尋ねる、帰り、返事、送る、それ程、儘、滑る、騒ぐ、プレゼント、具合、卒業、妻、負ける
-- **gramática** (22): dasu, hajimeru, te-kuru, te-iku, te-ita, tsuzukeru, gp-151, owaru, te-shimau-chau, gp-65, te-miru, te-oku
+- **gramática** (21): dasu, hajimeru, te-kuru, te-iku, te-ita, tsuzukeru, owaru, te-shimau-chau, gp-65, te-miru, te-oku, gp-72
 
 ### 31. Aparência e suposição
 - **kanji** (5): 秋 犬 色 黒 館
 - **vocab** (38, amostra): ご存知、息子、承知、文学、日記、訳、講義、高校、高校生、世、亜細亜、割合、寺、普通、田舎
-- **gramática** (27): gp-136, sou-da-1, to-iwarete-iru, to-kiita, gp-110, rashii, gp-76, mitai-da, mitai-na, mitai-ni, gp-153, gp-154
+- **gramática** (26): gp-136, sou-da-1, to-iwarete-iru, to-kiita, gp-110, rashii, gp-76, mitai-da, mitai-na, mitai-ni, gp-153, gp-77
 
 ### 32. Voz passiva
 - **kanji** (7): 曜 服 堂 習 肉 旅 洋

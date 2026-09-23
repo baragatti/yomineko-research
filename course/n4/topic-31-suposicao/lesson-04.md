@@ -8,7 +8,7 @@
 - Reconhecer o par coloquial vs. formal: みたい ↔ のよう
 - Usar 〜のように para indicar modo, como em いつものように ('como de costume')
 
-**Introduz:** gramática [gp-153, gp-154, gp-77] · vocabulário [下がる, 合う, 最も, 最後] · kanji [—] · kana [—]
+**Introduz:** gramática [gp-153, gp-77] · vocabulário [下がる, 合う, 最も, 最後] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-218631`, `sent:tatoeba-141991`, `sent:tatoeba-160307`
 
@@ -31,7 +31,7 @@ Aqui お茶 ("chá") é o termo de comparação e 味 ("gosto, sabor") é o subs
 Em português a comparação muda de lugar conforme a frase ("um gosto de chá", "uma pessoa angelical"). Em japonês a fórmula é sempre a mesma: のような grudado antes do substantivo. Uma só estrutura cobre todos os casos.
 
 #### 〜のように: antes de verbo ou adjetivo
-Quando a comparação descreve como uma ação acontece ou de que jeito algo é, usamos gp-154. Ela modifica um verbo ou um adjetivo: "como", "do jeito que", "feito".
+Quando a comparação descreve como uma ação acontece ou de que jeito algo é, usamos gp-77. Ela modifica um verbo ou um adjetivo: "como", "do jeito que", "feito".
 > 🗣 雪のように白い。 — Branco como neve.
 Aqui 白い ("branco") é um adjetivo, então usamos のように: "branco como neve". Compare com o caso do substantivo: のような味 (qualifica o nome 味) vs. のように白い (modifica o adjetivo 白い).
 

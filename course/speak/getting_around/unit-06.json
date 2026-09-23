@@ -32,6 +32,7 @@
     "vocab:1240810"
   ],
   "patterns": [
+    "gram:n3-da-mono-da",
     "gram:da-desu",
     "gram:gp-39",
     "gram:gp-8",
@@ -147,10 +148,18 @@
     }
   ],
   "patterns_chunked": [
-    "gram:n3-nda-mon",
     "gram:gp-14"
   ],
   "drills": [
+    {
+      "pattern": "gram:n3-da-mono-da",
+      "examples": [
+        "sent:tatoeba-203576",
+        "sent:tatoeba-10107238",
+        "sent:tatoeba-143461"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:da-desu",
       "examples": [
@@ -257,15 +266,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
+    "meaning-input": 22,
     "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 31,
+    "language-focused": 33,
     "fluency": 6
   }
 }

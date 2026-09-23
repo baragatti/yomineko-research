@@ -987,6 +987,13 @@ def handle_level_evidence(rows, sents, gram, table):
     for i, r in enumerate(rows):
         address = r["address"]
         addr = f"{table} row {i}: {address}.level_agreement+level_confidence"
+        # W08b V1: a grammar record merged away retires through the published redirect, the contract
+        # every other grammar handler already keeps; without it the row fails "no levelled record".
+        if r.get("entity") == "grammar":
+            gate = retired_gate(address.split(":", 1)[-1], gram, addr)
+            if gate:
+                out.append(gate)
+                continue
         found = LEVELLED.get(address)
         if found is None:
             out.append(("fail", C_NO_RECORD, addr,
@@ -1355,6 +1362,13 @@ def handle_card_examples(rows, sents, gram, table):
         if lesson is None:
             out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
             continue
+        # W08b: the card of a merged-away grammar point went with its unlock; the survivor's own card
+        # (its own row here) carries the example. Retired through the redirect, not transferred.
+        if r["item"].startswith("gram:"):
+            gate = retired_gate(r["item"].split(":", 1)[1], gram, addr)
+            if gate:
+                out.append(gate)
+                continue
         cards = [c for c in (lesson.get("srs") or {}).get("introduces_cards") or []
                  if c.get("item") == r["item"]]
         if len(cards) != 1:
@@ -1871,6 +1885,89 @@ def handle_en_backfill(rows, sents, gram, table):
     return out
 
 
+def resolve_item_refs(refs: list[dict], gram: dict) -> list[dict]:
+    """A row's item_refs as the export must carry them once merged-away grammar keys resolve.
+
+    W08b: a ref to a loser moves to its survivor, the same rule migrate_grammar_merge.py and
+    apply_item_refs.py apply — dropped when the exercise already names the survivor, whose own entry
+    wins. Sorted by (type, ref) like export_course._item_refs. A broken redirect is left unresolved,
+    so the mismatch fails the row.
+    """
+    def target(e: dict) -> str:
+        if e.get("type") != "grammar":
+            return e["ref"]
+        key = e["ref"].split(":", 1)[-1]
+        cls, survivor = redirect_target(key, gram)
+        return e["ref"] if cls or not survivor else f"gram:{survivor}"
+    own = {(e["type"], e["ref"]) for e in refs if target(e) == e["ref"]}
+    out, seen = [], set()
+    for e in refs:
+        t = target(e)
+        if (e["type"], t) in seen or (t != e["ref"] and (e["type"], t) in own):
+            continue
+        seen.add((e["type"], t))
+        out.append({**e, "ref": t})
+    return sorted(out, key=lambda e: (e["type"], e["ref"]))
+
+
+def handle_w08b_merges(rows, sents, gram, table):
+    """W08b (owner decision A3). Four row kinds, each replayed against the export:
+
+      merge      the loser left the registry and corpus/grammar_deprecated.json redirects it to the
+                 survivor, which is published;
+      pre-merge  R1/R2 repaired a LOSER before the merge; the loser is retired, so the row retires
+                 with it (a pre-merge row whose record is still published means the merge never ran);
+      exam-item  the item's `grammar` is the survivor (E1);
+      prose      the survivor publishes exactly the reconciled pt-BR text.
+    """
+    banks: dict[str, dict] = {}
+    out = []
+    for i, r in enumerate(rows):
+        kind = r.get("kind")
+        if kind == "merge":
+            addr = f"{table} row {i}: merge {r['loser']} -> {r['winner']}"
+            cls, survivor = redirect_target(r["loser"], gram)
+            if cls:
+                out.append(("fail", cls, addr, survivor))
+            elif survivor != r["winner"]:
+                out.append(("fail", C_MERGED_REDIRECT, addr,
+                            f"corpus/grammar_deprecated.json redirects it to {survivor or 'nothing'!r}"))
+            elif r["loser"] in gram:
+                out.append(("fail", C_NOT_APPLIED, addr, "the loser is still in the exported registry"))
+            else:
+                out.append(("ok", "", addr, "redirect resolves"))
+        elif kind == "pre-merge":
+            addr = f"{table} row {i}: {r['id']} {r['key']}.{r.get('column') or r.get('field')}"
+            out.append(retired_gate(r["key"], gram, addr)
+                       or ("fail", C_NOT_APPLIED, addr, "the loser is still published: the merge this "
+                                                        "repair prepared never ran"))
+        elif kind == "exam-item":
+            addr = f"{table} row {i}: {r['file']} {r['id']}.grammar"
+            f = EXPORT_ROOT["root"] / r["file"]
+            if r["file"] not in banks:
+                banks[r["file"]] = ({it.get("id"): it for it in json.loads(f.read_text(encoding="utf-8"))}
+                                    if f.is_file() else {})
+            it = banks[r["file"]].get(r["id"])
+            if it is None:
+                out.append(("fail", C_NO_RECORD, addr, "no such item in the bank"))
+            elif it.get("grammar") != r["new"]:
+                out.append(("fail", C_NOT_APPLIED if it.get("grammar") == r["old"] else C_VALUE_MISMATCH,
+                            addr, f"grammar is {it.get('grammar')!r}"))
+            else:
+                out.append(("ok", "", addr, "exact"))
+        elif kind == "prose":
+            addr = f"{table} row {i}: {r['key']}.{r['field']}[{r['locale']}]"
+            g = gram.get(r["key"])
+            if g is None:
+                out.append(("fail", C_NO_RECORD, addr, "no such grammar point in the export"))
+                continue
+            ok, cls, note = check_text(g, r["field"], r["locale"], r["old"], r["new"], span_ok=False)
+            out.append(("ok", "", addr, note) if ok else ("fail", cls, addr, f"export carries {note}"))
+        else:
+            out.append(("fail", C_VALUE_MISMATCH, f"{table} row {i}", f"unknown row kind {kind!r}"))
+    return out
+
+
 def handle_item_refs(rows, sents, gram, table):
     """W23. Each exercise ships with EXACTLY the row's `item_refs` (type, ref, role, derived_by, order),
     in the lesson the row names. Derived, not authored (scripts/derive_item_refs.py), exact-match all
@@ -1888,16 +1985,19 @@ def handle_item_refs(rows, sents, gram, table):
             out.append(("fail", C_VALUE_MISMATCH, addr, f"exercise lives in {lid}, the row says {r['lesson']}"))
             continue
         got = ex.get("item_refs")
+        want = resolve_item_refs(r["item_refs"], gram)
         if not got:
             out.append(("fail", C_NOT_APPLIED, addr, "the exercise carries no item_refs"))
-        elif got != r["item_refs"]:
-            out.append(("fail", C_VALUE_MISMATCH, addr, f"item_refs {got!r} != the row's {r['item_refs']!r}"))
+        elif got != want:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"item_refs {got!r} != the row's {want!r}"))
         else:
             out.append(("ok", "", addr, "exact"))
     return out
 
 
 REGISTRY = {
+    # W08b: eight grammar merges + their pre-merge repairs, exam-item re-points and reconciled prose.
+    "w08b_merges.json": handle_w08b_merges,
     # W23: every lesson exercise's item_refs (what it tests), derived by rule.
     "item_refs.json": handle_item_refs,
     # W37: record provenance + per-field layers on the ten entities that carried none.

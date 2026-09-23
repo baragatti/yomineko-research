@@ -8,14 +8,14 @@
 - Usar 〜てしまう no sentido de algo indesejado, acidental ou lamentável
 - Reconhecer e usar a contração coloquial 〜ちゃう／〜じゃう no lugar de 〜てしまう／〜でしまう
 
-**Introduz:** gramática [gp-151, owaru, te-shimau-chau] · vocabulário [プレゼント, 具合, 卒業, 妻, 負ける] · kanji [—] · kana [—]
+**Introduz:** gramática [owaru, te-shimau-chau] · vocabulário [プレゼント, 具合, 卒業, 妻, 負ける] · kanji [—] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-228649`, `sent:tatoeba-150664`, `sent:tatoeba-234345`, `sent:tatoeba-9191453`
 
 ---
 
 ### Terminar e concluir: 〜終わる e 〜てしまう／〜ちゃう
-Você já viu como marcar o começo e o meio de uma ação. Agora fechamos o ciclo com o fim. Há duas formas de dizer que uma ação chegou ao fim, e elas não são sinônimas:owaru diz que a atividade simplesmente acabou, enquanto gp-151 acrescenta um tempero, ou "de vez", ou "sem querer". Vamos ver as duas.
+Você já viu como marcar o começo e o meio de uma ação. Agora fechamos o ciclo com o fim. Há duas formas de dizer que uma ação chegou ao fim, e elas não são sinônimas:owaru diz que a atividade simplesmente acabou, enquanto te-shimau-chau acrescenta um tempero, ou "de vez", ou "sem querer". Vamos ver as duas.
 
 #### 〜終わる: terminar de fazer
 Cole 終わる na raiz de outro verbo (a parte que sobra quando você tira o ます) e você diz "terminar de [fazer]". É o fim limpo e neutro de uma atividade que tem duração:
@@ -27,7 +27,7 @@ Repare que 終わる também funciona sozinho, sem se colar a nada, com o sentid
 Aqui の no fim só deixa a pergunta mais leve e natural na fala. A ideia é "quando isso acaba?".
 
 #### 〜てしまう, sentido 1: concluir por completo
-Pegue a forma て do verbo e acrescente しまう.gp-151 tem dois sentidos, e o primeiro é o de conclusão total: a ação foi (ou será) levada até o fim, "de vez", sem deixar nada pela metade.
+Pegue a forma て do verbo e acrescente しまう.te-shimau-chau tem dois sentidos, e o primeiro é o de conclusão total: a ação foi (ou será) levada até o fim, "de vez", sem deixar nada pela metade.
 - 宿題をしてしまった= terminei toda a lição (não sobrou nada).
 - この本を読んでしまう= vou ler este livro até o fim.
 

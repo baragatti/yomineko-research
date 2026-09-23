@@ -7,14 +7,14 @@
 - Negar identidade com じゃない (casual) e ではありません (polido)
 - Reconhecer que não há artigos e que a partícula vem depois da palavra
 
-**Introduz:** gramática [gp-30, gp-33, janai-dewa-nai] · vocabulário [お弁当, お腹, お菓子, 上着, 何故, 何時, 内, 映画, 映画館, 朝ごはん, 無い, 物, 足, 鉛筆, 雨, 頭, 顔, 飴, ５日] · kanji [時] · kana [—]
+**Introduz:** gramática [gp-30, janai-dewa-nai] · vocabulário [お弁当, お腹, お菓子, 上着, 何故, 何時, 内, 映画, 映画館, 朝ごはん, 無い, 物, 足, 鉛筆, 雨, 頭, 顔, 飴, ５日] · kanji [時] · kana [—]
 
 **Frases (por ID, do banco dissecado):** `sent:tatoeba-778977`, `sent:tatoeba-536769`, `sent:tatoeba-229628`, `sent:tatoeba-5059`
 
 ---
 
 ### Perguntar e negar
-Você já sabe afirmar com です: 雨です ("é chuva / está chovendo"). Nesta lição você aprende a virar isso de cabeça para baixo: fazer uma pergunta de sim ou não com ka e dizer que algo não é com gp-33.
+Você já sabe afirmar com です: 雨です ("é chuva / está chovendo"). Nesta lição você aprende a virar isso de cabeça para baixo: fazer uma pergunta de sim ou não com ka e dizer que algo não é com janai-dewa-nai.
 
 #### A partícula か: o ponto de interrogação falado
 Para transformar uma afirmação em pergunta, basta acrescentar か no fim. Nada de inverter palavras como em outras línguas: a frase fica igual, só ganha か no final. A ordem das palavras não muda em nada, e é por isso que essa é uma das estruturas mais fáceis de aprender em japonês.
@@ -27,7 +27,7 @@ Aqui なぜ é "por quê" e か fecha a pergunta. Repare como か também aparec
 No japonês polido com か, em geral não se usa o "?" escrito: o próprio か já marca a pergunta. Em conversa casual, porém, você verá o "?" com frequência, como nos exemplos do dia a dia.
 
 #### Negar com じゃない e ではない
-Para dizer que algo não é, troque a cópula afirmativa pela negativa. A forma casual é gp-33; a forma completa e mais formal é janai-dewa-nai. As três opções abaixo significam a mesma coisa; o que muda é só o quanto a fala soa formal.
+Para dizer que algo não é, troque a cópula afirmativa pela negativa. A forma casual é janai-dewa-nai; a forma completa e mais formal é janai-dewa-nai. As três opções abaixo significam a mesma coisa; o que muda é só o quanto a fala soa formal.
 - Casual: 雨じゃない ("não é chuva").
 - Formal/escrita: 雨ではない ("não é chuva").
 - Polido (fala educada): 雨ではありません ("não é chuva").

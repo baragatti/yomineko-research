@@ -11,8 +11,12 @@
    "why": "KEEP BOTH — passive vs potential. The collision is manufactured by a wrong gp-115.forms[0]. §2.3."
   },
   {
-   "pair": "gram:gp-100 / gram:gp-118  {しかない}",
-   "why": "UNTRIAGED — no evidence pass has been run. §3.4."
+   "pair": "gram:gp-153 / gram:gp-77  {のような}",
+   "why": "UNTRIAGED — the third record in les:n4-suposicao-04, a subset of gp-77; found by W08b, not in its eight."
+  },
+  {
+   "pair": "gram:no-ga-suki / gram:gp-23",
+   "why": "UNTRIAGED — les:n5-adjetivos-07 calls them 'the same construction registered under two keys'; found by the W08b lesson-body pass, not in its eight."
   },
   {
    "pair": "gram:gp-103 / gram:n3-sukoshimo-nai  {すこしもない}",
@@ -174,7 +178,1079 @@
     "lesson_body_addresses_repointed": {},
     "cumulative_known_set_lessons": 0
    }
+  },
+  {
+   "loser": "gram:gp-100",
+   "loser_key": "gp-100",
+   "winner": "gram:gp-118",
+   "winner_key": "gp-118",
+   "verdict": "MERGE",
+   "why": "W08b U1. Same rule 〜しか〜ない, same form {しかない}, same topic, same family, ONE lesson (les:n4-forma-simples-03) unlocks both. Both gp-N with a topic-fallback capability, so level agreement decides: gp-118 2/2, gp-100 1/1.",
+   "appended": {
+    "register_json": "[\"plain\", \"polite\"]",
+    "references_json": "{\"label_en\": \"しかない\", \"also_known_as\": [\"しか〜ない\"], \"level_sources\": {\"bunpro\": \"n4\", \"tanos\": \"n4\"}}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['しかない'] ⊆ ['しかない'])",
+    "register_json: appended ['polite'] -> ['plain', 'polite']",
+    "usage_contexts_json: loser adds nothing (['spoken', 'written'] ⊆ ['spoken', 'written'])",
+    "nuance_tags_json: loser adds nothing (['emphasis'] ⊆ ['emphasis'])",
+    "level_sources: loser adds nothing",
+    "refs: also_known_as += ['しか〜ない'], level_sources += {}",
+    "formation_steps: every loser variant already has a survivor variant with the same (base, step chain)",
+    "localized form_meanings/en: every form the loser glossed is glossed by the survivor (['しかない']); the wording differs and is salvaged",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['しかない']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "structure_pattern",
+     "value": "Noun/Quantity + しか〜ない",
+     "why": "survivor has its own value; picking between them is authoring"
+    },
+    {
+     "field": "steps_unavailable",
+     "value": "Discontinuous two-site pattern. しか attaches to the limited noun or quantity, but the obligatory negation lands on a DIFFERENT word, the predicate (日本語しか話せない, 一人しか来なかった), and the op set only appends to a single base, so no sequence can force the nai-form onto the separate predicate. A noun-only variant emits the bare fragment 学生しか with no negative constraint attached, licensing exactly the 千円しかある the record's own nuance forbids (\"Não use しか com verbo afirmativo\"); a verb-only variant emits 書かない / 食べない / しない / こない, generic negation carrying none of this point's material. The duplicate record gram:gp-118 is steps_unavailable on the same argument. No steps are emitted.",
+     "why": "survivor has its own value; picking between them is authoring"
+    },
+    {
+     "field": "explanation/en",
+     "value": "〜しか with a negative verb expresses \"only / just,\" with the tone that the quantity or option is small or insufficient. Even with the verb in the negative, the overall meaning is positive-restrictive: 千円しかない means \"I only have a thousand yen\" (and that's little). It always comes in a pair: しか on the limited part and the verb ending in 〜ない. Ex.: 日本語しか話せない (\"I only speak Japanese\"), 一人しか来なかった (\"only one person came\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "〜しか com um verbo negativo expressa \"somente / apenas\", com o tom de que a quantidade ou a opção é pequena ou insuficiente. Mesmo com o verbo na negativa, o sentido geral é positivo-restritivo: 千円しかない significa \"só tenho mil ienes\" (e isso é pouco). Vem sempre em par: しか na parte limitada e o verbo terminando em 〜ない. Ex.: 日本語しか話せない (\"só falo japonês\"), 一人しか来なかった (\"só veio uma pessoa\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/en",
+     "value": "{\"しかない\": \"only / just (with a tone of \\\"so little\\\")\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"しかない\": \"só / apenas (com tom de pouco)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/en",
+     "value": "[Quantity/noun/etc.] + しか + verb in the negative form. With numbers: 二つしかない ('there are only two'). しか replaces the particles は/が/を (一人しか来ない, not 一人がしか), but it combines with に/で/から (ここにしかない = 'it only exists here'; 駅からしか行けない). The verb is obligatorily negative: 〜ない, 〜ません, 〜なかった.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "[Quantidade/substantivo/etc.] + しか + verbo na forma negativa. Com números: 二つしかない (\"só tem dois\"). しか substitui as partículas は/が/を (一人しか来ない, não 一人がしか), mas combina-se com に/で/から (ここにしかない = \"só existe aqui\"; 駅からしか行けない). O verbo é obrigatoriamente negativo: 〜ない, 〜ません, 〜なかった.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "only/just with negative (〜しか〜ない)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "apenas/só com negativo (〜しか〜ない)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "Compare with だけ ('only'), which is neutral and takes an affirmative verb (千円だけある = 'I have exactly a thousand yen,' no judgment), while しか〜ない carries the idea of 'only this and nothing more, it's not much.' The big trap for Portuguese speakers: the verb must stay negative even if in Portuguese the sentence is affirmative ('I only have' → しかない, not しかある). Don't use しか with an affirmative verb. Neutral register, fitting speech and writing.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "Compare com だけ (\"apenas\"), que é neutro e leva verbo afirmativo (千円だけある = \"tenho exatamente mil ienes\", sem julgamento), enquanto しか〜ない carrega a ideia de \"só isso e nada mais, é pouco\". A grande armadilha para quem fala português: o verbo precisa ficar negativo mesmo que em português a frase seja afirmativa (\"só tenho\" → しかない, não しかある). Não use しか com verbo afirmativo. Registro neutro, serve para fala e escrita.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 5,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     70
+    ],
+    "exercise_item_repointed": 0,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [],
+    "exercise_item_ref_dropped_as_duplicate": [
+     "ex:n3-deveres-03-5",
+     "ex:n3-intencao-01-1",
+     "ex:n3-intencao-04-4",
+     "ex:n3-relato-02-1",
+     "ex:n3limites-02-1",
+     "ex:n4-conectores-04-4",
+     "ex:n4-forma-simples-03-1",
+     "ex:n4-forma-simples-03-2",
+     "ex:n4-forma-simples-03-3",
+     "ex:n4-forma-simples-03-4",
+     "ex:n4-forma-simples-03-5"
+    ],
+    "lesson_body_addresses_repointed": {
+     "les:n4-forma-simples-03": 2
+    },
+    "cumulative_known_set_lessons": 195
+   }
+  },
+  {
+   "loser": "gram:gp-54",
+   "loser_key": "gp-54",
+   "winner": "gram:no-ga-jouzu",
+   "winner_key": "no-ga-jouzu",
+   "verdict": "MERGE",
+   "why": "W08b D2. 〜のが上手 registered twice (gp-54 spells 上手 in kana), same topic, same family, ONE lesson (les:n5-adjetivos-07). Survivor: semantic slug and capability. Needs R2 first (copula out of the form, register neutral).",
+   "appended": {
+    "forms_json": "[\"のが上手\", \"のがじょうず\"]",
+    "usage_contexts_json": "[\"spoken\", \"written\"]",
+    "level_sources": "{\"jlptsensei\": \"n5\", \"bunpro\": \"n5\", \"tanos\": \"n5\"}",
+    "level_agreement": "3/3",
+    "level_confidence": 1.0,
+    "references_json": "{\"label_en\": \"no ga jouzu\", \"also_known_as\": [\"no ga jouzu\", \"のがじょうず\"], \"level_sources\": {\"jlptsensei\": \"n5\", \"bunpro\": \"n5\", \"tanos\": \"n5\"}}",
+    "formation_steps_json": "{\"variants\": [{\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-dictionary\"}, {\"op\": \"append\", \"token\": \"のが上手\"}], \"example\": \"書くのが上手\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"が上手\"}], \"example\": \"テニスが上手\"}, {\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-dictionary\"}, {\"op\": \"append\", \"token\": \"のがじょうず\"}], \"example\": \"歌を歌うのがじょうず\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"がじょうず\"}], \"example\": \"日本語がじょうず\"}]}"
+   },
+   "appended_localized": [
+    {
+     "field": "form_meanings",
+     "locale": "en",
+     "value": "{\"のが上手\": \"to be good at doing (〜のが上手)\", \"のがじょうず\": \"to be good at (doing something)\"}",
+     "is_list": 1,
+     "layer": "B",
+     "mode": "merge-map",
+     "why": "forms ['のがじょうず'] had no survivor gloss"
+    },
+    {
+     "field": "form_meanings",
+     "locale": "pt-BR",
+     "value": "{\"のが上手\": \"ser bom em fazer (〜のが上手)\", \"のがじょうず\": \"ser bom em (fazer algo)\"}",
+     "is_list": 1,
+     "layer": "B",
+     "mode": "merge-map",
+     "why": "forms ['のがじょうず'] had no survivor gloss"
+    }
+   ],
+   "covered": [
+    "forms_json: appended ['のがじょうず'] -> ['のが上手', 'のがじょうず']",
+    "register_json: loser adds nothing (['neutral'] ⊆ ['neutral'])",
+    "usage_contexts_json: appended ['written'] -> ['spoken', 'written']",
+    "nuance_tags_json: loser adds nothing ([] ⊆ [])",
+    "level_sources: merged {'bunpro': 'n5', 'tanos': 'n5'} -> {'jlptsensei': 'n5', 'bunpro': 'n5', 'tanos': 'n5'}; level_agreement '1/1' -> '3/3'",
+    "refs: also_known_as += ['のがじょうず'], level_sources += {'bunpro': 'n5', 'tanos': 'n5'}",
+    "formation_steps: appended 2 variant(s) ['歌を歌うのがじょうず', '日本語がじょうず'] (signature = base + step chain; `example` is not part of it, so two variants differing only in the example word stay one rule)",
+    "structure_pattern: '～のがじょうず' is already inside survivor 'のが上手（のがじょうず）'"
+   ],
+   "salvage": [
+    {
+     "field": "explanation/en",
+     "value": "Says that someone is good, skilled, or talented at an activity. じょうず (上手) means \"skilled, good at something\". The の nominalizes the verb (turns the action into a \"thing\") and が marks the activity the person excels at. The same structure works for its opposite, へた (下手, \"bad at something\"). E.g.: 彼は歌を歌うのがじょうずです = \"He sings well / is good at singing\".",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "Diz que alguém é bom, habilidoso ou tem talento para uma atividade. じょうず (上手) significa \"habilidoso, bom em algo\". O の nominaliza o verbo (transforma a ação em \"coisa\") e が marca a atividade em que a pessoa se destaca. A mesma estrutura vale para o oposto, へた (下手, \"ruim em algo\"). Ex.: 彼は歌を歌うのがじょうずです = \"Ele canta bem / é bom em cantar\".",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/en",
+     "value": "[dictionary-form verb] + のが + じょうずです. Verb in dictionary form + の + が + じょうず + です. Na + noun version: じょうずな; casual: じょうずだ. When the focus is a noun/direct activity, you use noun + が + じょうずです (日本語がじょうずです = 'speaks Japanese well').",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "[verbo no dicionário] + のが + じょうずです. Verbo na forma de dicionário + の + が + じょうず + です. Versão na+substantivo: じょうずな; casual: じょうずだ. Quando o foco é um substantivo/atividade direta, usa-se 名詞 + が + じょうずです (日本語がじょうずです = \"fala bem japonês\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "to be good at doing something (〜のがじょうずです)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "ser bom em fazer algo (〜のがじょうずです)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "Important cultural trap: do NOT use じょうず to praise yourself, because it sounds arrogant; about yourself prefer とくいです ('it's my strong suit'). じょうず is great for praising others. Again, with a verb の is mandatory before が, and the ability is marked by が (not を). Don't confuse it with できる ('to be able to / know how to'), which indicates capability, while じょうず indicates the quality of execution.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "Armadilha cultural importante: NÃO use じょうず para se elogiar, porque soa arrogante; sobre si mesmo prefira とくいです (\"é o meu forte\"). じょうず é ótimo para elogiar os outros. De novo, com verbo o の é obrigatório antes de が, e a habilidade é marcada por が (não を). Não confunda com できる (\"conseguir/saber fazer\"), que indica capacidade, enquanto じょうず indica a qualidade da execução.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 6,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [
+     "sent:gen-74bce4b40079",
+     "sent:gen-1ea65c87d885",
+     "sent:gen-4ec770164246",
+     "sent:gen-93e74d38add6",
+     "sent:gen-2b5d3c022a66"
+    ],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     64
+    ],
+    "exercise_item_repointed": 1,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [
+     "ex:n5-adjetivos-07-5"
+    ],
+    "exercise_item_ref_dropped_as_duplicate": [],
+    "lesson_body_addresses_repointed": {
+     "les:n5-adjetivos-07": 2
+    },
+    "cumulative_known_set_lessons": 236
+   }
+  },
+  {
+   "loser": "gram:gp-47",
+   "loser_key": "gp-47",
+   "winner": "gram:yori-hou-ga",
+   "winner_key": "yori-hou-ga",
+   "verdict": "MERGE",
+   "why": "W08b D4. One comparative pattern より〜(の)ほうが; the two records differ only by the optional の. Same topic, family and lesson (les:n5-comparacoes-01). Survivor carries formation_steps, so guard G1 keeps gp-47's steps_unavailable off it.",
+   "appended": {
+    "forms_json": "[\"よりほうが\", \"よりのほうが\"]",
+    "level_sources": "{\"jlptsensei\": \"n5\", \"bunpro\": \"n5\"}",
+    "level_agreement": "2/2",
+    "level_confidence": 1.0,
+    "references_json": "{\"label_en\": \"yori ~hou ga\", \"also_known_as\": [\"yori ~hou ga\", \"よりのほうが\"], \"level_sources\": {\"jlptsensei\": \"n5\", \"bunpro\": \"n5\"}}"
+   },
+   "appended_localized": [
+    {
+     "field": "form_meanings",
+     "locale": "en",
+     "value": "{\"よりほうが\": \"X is more ~ than Y\", \"よりのほうが\": \"compared to A, B is more... / I prefer B to A\"}",
+     "is_list": 1,
+     "layer": "B",
+     "mode": "merge-map",
+     "why": "forms ['よりのほうが'] had no survivor gloss"
+    },
+    {
+     "field": "form_meanings",
+     "locale": "pt-BR",
+     "value": "{\"よりほうが\": \"X é mais ~ que Y\", \"よりのほうが\": \"comparado a A, B é mais... / prefiro B a A\"}",
+     "is_list": 1,
+     "layer": "B",
+     "mode": "merge-map",
+     "why": "forms ['よりのほうが'] had no survivor gloss"
+    }
+   ],
+   "covered": [
+    "forms_json: appended ['よりのほうが'] -> ['よりほうが', 'よりのほうが']",
+    "register_json: loser adds nothing (['plain'] ⊆ ['plain'])",
+    "usage_contexts_json: loser adds nothing (['spoken', 'written'] ⊆ ['spoken', 'written'])",
+    "nuance_tags_json: loser adds nothing (['comparison'] ⊆ ['comparison'])",
+    "level_sources: merged {'bunpro': 'n5'} -> {'jlptsensei': 'n5', 'bunpro': 'n5'}; level_agreement '1/1' -> '2/2'",
+    "refs: also_known_as += ['よりのほうが'], level_sources += {'bunpro': 'n5'}",
+    "formation_steps: every loser variant already has a survivor variant with the same (base, step chain)"
+   ],
+   "salvage": [
+    {
+     "field": "structure_pattern",
+     "value": "より～のほうが",
+     "why": "survivor has its own value; picking between them is authoring"
+    },
+    {
+     "field": "steps_unavailable",
+     "value": "Two-slot comparison frame, not a derivation from one base. The record's formation is [A] + より + [B] + のほうが + [predicate], with the order of A and B reversible and each slot carrying its own fixed particle. One ordered chain from a single base cannot represent two independent nominal slots.",
+     "why": "survivor carries formation_steps; a steps_unavailable reason beside them contradicts them"
+    },
+    {
+     "field": "explanation/en",
+     "value": "Comparison pattern between two elements: \"compared to A, B is more...\" or \"I prefer B to A\". The particle より marks the term of comparison (the \"than\") and 〜のほうが marks the favored side (\"the side of B\"). E.g.: コーヒーより おちゃの ほうが すきです = \"I like tea more than coffee\".",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "Padrão de comparação entre dois elementos: \"comparado a A, B é mais...\" ou \"prefiro B a A\". A partícula より marca o termo de comparação (o \"do que\") e 〜のほうが marca o lado favorecido (\"o lado de B\"). Ex.: コーヒーより おちゃの ほうが すきです = \"Gosto mais de chá do que de café\".",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/en",
+     "value": "A + より + B + のほうが + adjective/verb. Ex.: でんしゃより バスの ほうが やすいです = 'The bus is cheaper than the train'. The order can be reversed: B のほうが A より〜 also works. With nouns you use のほうが; ほう (方) means 'side/direction'.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "A + より + B + のほうが + adjetivo/verbo. Ex.: でんしゃより バスの ほうが やすいです = \"O ônibus é mais barato que o trem\". A ordem pode inverter: B のほうが A より〜 também vale. Com substantivos usa-se のほうが; ほう (方) significa \"lado/direção\".",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "comparative \"I prefer / it's more\" (より〜のほうが)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "comparativo \"prefiro / é mais\" (より〜のほうが)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "In Portuguese we say 'cheaper THAN,' but in Japanese より attaches to A and there's no separate word for 'more': the comparative sense arises from the pair より...のほうが. Don't confuse より (point of comparison) with から (origin/starting point). The order is flexible, but each term's particle is fixed: より on A, のほうが on B.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "Em português dizemos \"mais barato QUE\", mas em japonês o より gruda em A e não existe uma palavra separada para \"mais\": o sentido comparativo nasce do conjunto より...のほうが. Não confunda より (ponto de comparação) com から (origem/ponto de partida). A ordem é flexível, mas a partícula de cada termo é fixa: より em A, のほうが em B.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 4,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [
+     "sent:gen-6da9d528f71b",
+     "sent:gen-8d5973124521",
+     "sent:gen-15f024acc430",
+     "sent:gen-c29d2924646e",
+     "sent:gen-befb20ea6cc3"
+    ],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     65
+    ],
+    "exercise_item_repointed": 0,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [],
+    "exercise_item_ref_dropped_as_duplicate": [
+     "ex:n5-comparacoes-01-1",
+     "ex:n5-comparacoes-01-6",
+     "ex:n5-revisao-03-4"
+    ],
+    "lesson_body_addresses_repointed": {
+     "les:n5-comparacoes-01": 2
+    },
+    "cumulative_known_set_lessons": 234
+   }
+  },
+  {
+   "loser": "gram:gp-154",
+   "loser_key": "gp-154",
+   "winner": "gram:gp-77",
+   "winner_key": "gp-77",
+   "verdict": "MERGE",
+   "why": "W08b D5. gp-154 {のように} is the adverbial half of gp-77 {のように, のような}: a clean superset. Same topic, family and lesson (les:n4-suposicao-04). gp-153 {のような}, the other half, is NOT in this pair (untriaged).",
+   "appended": {
+    "register_json": "[\"formal\", \"written\", \"plain\"]",
+    "usage_contexts_json": "[\"written\", \"formal-email\", \"literary\", \"spoken\"]",
+    "level_sources": "{\"bunpro\": \"n4\", \"tanos\": \"n4\"}",
+    "level_agreement": "2/2",
+    "level_confidence": 1.0,
+    "references_json": "{\"label_en\": \"のようにのような\", \"also_known_as\": [\"のように\"], \"level_sources\": {\"bunpro\": \"n4\", \"tanos\": \"n4\"}}",
+    "formation_steps_json": "{\"variants\": [{\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"のような\"}], \"example\": \"氷のような\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"のように\"}], \"example\": \"鳥のように\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"のようだ\"}], \"example\": \"氷のようだ\"}, {\"base\": \"clause\", \"steps\": [{\"base\": \"clause\", \"op\": \"none\"}, {\"op\": \"append\", \"token\": \"ように\"}], \"example\": \"約束したように\"}, {\"base\": \"clause\", \"steps\": [{\"base\": \"clause\", \"op\": \"to-attributive\"}, {\"op\": \"append\", \"token\": \"ように\"}], \"example\": \"先生が言ったように\"}]}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['のように'] ⊆ ['のように', 'のような'])",
+    "register_json: appended ['plain'] -> ['formal', 'written', 'plain']",
+    "usage_contexts_json: appended ['spoken'] -> ['written', 'formal-email', 'literary', 'spoken']",
+    "nuance_tags_json: loser adds nothing (['comparison'] ⊆ ['comparison', 'conjecture'])",
+    "level_sources: merged {'tanos': 'n4'} -> {'bunpro': 'n4', 'tanos': 'n4'}; level_agreement '1/1' -> '2/2'",
+    "refs: also_known_as += ['のように'], level_sources += {'tanos': 'n4'}",
+    "formation_steps: appended 1 variant(s) ['先生が言ったように'] (signature = base + step chain; `example` is not part of it, so two variants differing only in the example word stay one rule)",
+    "structure_pattern: '～のように' is already inside survivor 'のように・のような'",
+    "localized form_meanings/en: every form the loser glossed is glossed by the survivor (['のように']); the wording differs and is salvaged",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['のように']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "register",
+     "value": "neutral",
+     "why": "survivor has its own value; picking between them is authoring"
+    },
+    {
+     "field": "explanation/en",
+     "value": "〜のように expresses comparison or manner, saying that an action happens \"like\" or \"in the manner of\" something, and it modifies a verb or adjective. Equivalent to \"like,\" \"the way that,\" \"as\" (鳥のように飛ぶ = \"to fly like a bird\"; 思ったように = \"as I thought\"). It is the adverbial version of のような.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "〜のように expressa comparação ou modo, dizendo que uma ação acontece \"como\" ou \"à maneira de\" algo, e modifica um verbo ou adjetivo. Equivale a \"como\", \"do jeito que\", \"feito\" (鳥のように飛ぶ = \"voar como um pássaro\"; 思ったように = \"como eu pensava\"). É a versão adverbial de のような.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/en",
+     "value": "{\"のように\": \"like / the way that (before a verb/adjective)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"のように\": \"como / do jeito que (antes de verbo/adjetivo)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/en",
+     "value": "Noun + のように + verb/adjective. It also comes from よう (\"appearance\"), here with に, the adverbial ending (as with な-adjectives: 静かに). From a clause, [clause] + ように is used (先生が言ったように = \"as the teacher said\"). There is also 〜のように〜ない for \"not as much as\" / denying the resemblance.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "Substantivo + のように + verbo/adjetivo. Também vem de よう (\"aparência\"), aqui com に, a terminação adverbial (como nos adjetivos-な: 静かに). A partir de uma frase, usa-se [frase] + ように (先生が言ったように = \"como o professor disse\"). Existe também 〜のように〜ない para \"não tanto quanto\" / negar a semelhança.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "〜のように (like / in the manner of, adverb)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "〜のように (como / da maneira de, advérbio)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "The choice between のように and のような depends only on what follows: verb/adjective → のように; noun → のような. Don't confuse it with 〜ように (without の) of purpose ('so that...') after verbs, which is a different function. For Brazilians, avoid translating everything as 'como'; when the idea is 'just like such-and-such,' のように is the natural way.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "A escolha entre のように e のような depende só do que vem depois: verbo/adjetivo → のように; substantivo → のような. Não confunda com 〜ように (sem の) de finalidade (\"para que...\") depois de verbos, que é outra função. Para brasileiros, evite traduzir tudo por \"como\"; quando a ideia é \"igual a tal coisa\", のように é o caminho natural.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 5,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     80
+    ],
+    "exercise_item_repointed": 2,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [
+     "ex:n4-suposicao-04-3",
+     "ex:n4-suposicao-04-4"
+    ],
+    "exercise_item_ref_dropped_as_duplicate": [
+     "ex:n3-relato-04-2"
+    ],
+    "lesson_body_addresses_repointed": {
+     "les:n4-suposicao-04": 2
+    },
+    "cumulative_known_set_lessons": 134
+   }
+  },
+  {
+   "loser": "gram:gp-60",
+   "loser_key": "gp-60",
+   "winner": "gram:tara",
+   "winner_key": "tara",
+   "verdict": "MERGE",
+   "why": "W08b D6. Same point 〜たら; gp-60's five formation variants are tara's five and only its forms[0] was the broken 'ら' (fixed by R1 first). Same topic, family and lesson (les:n4-condicionais-01). Survivor: 3/3, semantic slug and capability.",
+   "appended": {},
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['たら'] ⊆ ['たら'])",
+    "register_json: loser adds nothing (['plain'] ⊆ ['plain', 'colloquial'])",
+    "usage_contexts_json: loser adds nothing (['spoken', 'written'] ⊆ ['spoken', 'written', 'casual-friends'])",
+    "nuance_tags_json: loser adds nothing (['condition'] ⊆ ['condition'])",
+    "level_sources: loser adds nothing",
+    "refs: loser adds nothing",
+    "formation_steps: every loser variant already has a survivor variant with the same (base, step chain)",
+    "localized form_meanings/en: every form the loser glossed is glossed by the survivor (['たら']); the wording differs and is salvaged",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['たら']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "explanation/en",
+     "value": "The form 〜たら is the most flexible conditional in Japanese: it means \"if...\" or \"when...\". It presents a condition or event that, once met, leads to a result or a following action (雨が降ったら、行きません = \"if it rains / when it rains, I won't go\"). It can express both hypotheses and sequences in time (\"after something happens\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "A forma 〜たら é o condicional mais flexível do japonês: significa \"se...\" ou \"quando...\". Apresenta uma condição ou evento que, uma vez cumprido, leva a um resultado ou a uma ação seguinte (雨が降ったら、行きません = \"se chover / quando chover, não vou\"). Pode expressar tanto hipóteses quanto sequências no tempo (\"depois que algo acontecer\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/en",
+     "value": "{\"たら\": \"if... / when... (conditional 〜たら)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"たら\": \"se... / quando... (condicional 〜たら)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/en",
+     "value": "It is formed from the informal past form (た-form) + ら. Verbs: 食べた → 食べたら; 行った → 行ったら. い-adjectives: 安い → 安かった → 安かったら. な-adjectives and nouns: 静か → 静かだった → 静かだったら; 学生 → 学生だったら. The negative uses 〜なかったら (行かなかったら = \"if one does not go\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "Forma-se a partir da forma passada informal (forma た) + ら. Verbos: 食べた → 食べたら; 行った → 行ったら. Adjetivos-い: 安い → 安かった → 安かったら. Adjetivos-な e substantivos: 静か → 静かだった → 静かだったら; 学生 → 学生だったら. A negativa usa 〜なかったら (行かなかったら = \"se não for\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "～たら (conditional/when, 〜ら)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "～たら (condicional/quando, 〜ら)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "It's the everyday conditional, the most natural in speech. Note: although it comes from the past form, 〜たら does NOT indicate past tense; the tense comes from the sentence's main verb. Unlike Portuguese 'se,' 〜たら often means 'when' (something certain to happen), so context decides the translation. Don't confuse it with 〜と (automatic/natural condition) or with 〜ば (more formal/theoretical).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "É o condicional do dia a dia, o mais natural na fala. Cuidado: apesar de vir da forma passada, 〜たら NÃO indica passado; o tempo vem do verbo principal da frase. Diferente do \"se\" português, 〜たら muitas vezes significa \"quando\" (algo certo de acontecer), então o contexto decide a tradução. Não confunda com 〜と (condição automática/natural) nem com 〜ば (mais formal/teórico).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 5,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [
+     "sent:gen-69b7492c8d64",
+     "sent:gen-5d330e502fe3",
+     "sent:gen-ce09dc4b0e2b",
+     "sent:gen-54d978e882ca",
+     "sent:gen-4f79637ba175"
+    ],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     72
+    ],
+    "exercise_item_repointed": 1,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [
+     "ex:n4-condicionais-01-2"
+    ],
+    "exercise_item_ref_dropped_as_duplicate": [
+     "ex:n4-condicionais-01-1",
+     "ex:n4-condicionais-01-4",
+     "ex:n4-condicionais-01-5",
+     "ex:n4-condicionais-02-6",
+     "ex:n4-revisao-01-5"
+    ],
+    "lesson_body_addresses_repointed": {
+     "les:n4-condicionais-01": 2
+    },
+    "cumulative_known_set_lessons": 183
+   }
+  },
+  {
+   "loser": "gram:gp-151",
+   "loser_key": "gp-151",
+   "winner": "gram:te-shimau-chau",
+   "winner_key": "te-shimau-chau",
+   "verdict": "MERGE",
+   "why": "W08b D7. gp-151 {てしまう} is a subset of te-shimau-chau {てしまう, ちゃう}; 4 of its 7 sentences already carry the survivor. Same topic, family and lesson (les:n4-aspecto-03).",
+   "appended": {
+    "level_sources": "{\"jlptsensei\": \"n4\", \"bunpro\": \"n4\", \"tanos\": \"n4\"}",
+    "level_agreement": "3/3",
+    "level_confidence": 1.0,
+    "references_json": "{\"label_en\": \"te shimau / chau\", \"also_known_as\": [\"てしまう・ちゃう\", \"te shimau / chau\", \"てしまう\"], \"level_sources\": {\"jlptsensei\": \"n4\", \"bunpro\": \"n4\", \"tanos\": \"n4\"}}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['てしまう'] ⊆ ['てしまう', 'ちゃう'])",
+    "register_json: loser adds nothing (['plain'] ⊆ ['plain', 'casual', 'colloquial'])",
+    "usage_contexts_json: loser adds nothing (['spoken', 'written', 'casual-friends'] ⊆ ['spoken', 'written', 'casual-friends'])",
+    "nuance_tags_json: loser adds nothing (['completion'] ⊆ ['completion'])",
+    "level_sources: merged {'tanos': 'n4'} -> {'jlptsensei': 'n4', 'bunpro': 'n4', 'tanos': 'n4'}; level_agreement '2/2' -> '3/3'",
+    "refs: also_known_as += ['てしまう'], level_sources += {'tanos': 'n4'}",
+    "formation_steps: every loser variant already has a survivor variant with the same (base, step chain)",
+    "structure_pattern: '～てしまう' is already inside survivor 'てしまう / ちゃう'",
+    "localized form_meanings/en: every form the loser glossed is glossed by the survivor (['てしまう']); the wording differs and is salvaged",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['てしまう']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "explanation/en",
+     "value": "〜てしまう attaches to the て form of the verb and has two senses. The first is one of total completion: the action was (or will be) entirely finished, with the idea of \"to finish off / completely\" (宿題をしてしまった = \"I finished the whole assignment\"). The second is one of regret or accident: something happened and shouldn't have (財布をなくしてしまった = \"I ended up losing my wallet\"). Context and tone decide which sense applies.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "〜てしまう liga-se à forma て do verbo e tem dois sentidos. O primeiro é de conclusão total: a ação foi (ou será) terminada por completo, com a ideia de \"acabar de vez\" (宿題をしてしまった = \"terminei toda a lição\"). O segundo é de arrependimento ou acidente: algo aconteceu e não devia ter acontecido (財布をなくしてしまった = \"acabei perdendo a carteira\"). O contexto e o tom decidem qual sentido vale.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/en",
+     "value": "{\"てしまう\": \"to finish off / to end up doing (unintentionally)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"てしまう\": \"concluir de vez / acabar fazendo (sem querer)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/en",
+     "value": "Verb in て-form + しまう, which conjugates normally: 〜てしまう (present), 〜てしまった (past), 〜てしまいます (polite). Verbs ending in で take でしまう (飲んで → 飲んでしまう). In casual speech there are very common contractions: 〜てしまう → 〜ちゃう (食べちゃう) and 〜でしまう → 〜じゃう (飲んじゃう).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "Verbo na forma て + しまう, que se conjuga normalmente: 〜てしまう (presente), 〜てしまった (passado), 〜てしまいます (polido). Verbos que terminam em で usam でしまう (飲んで → 飲んでしまう). Na fala casual há contrações muito comuns: 〜てしまう → 〜ちゃう (食べちゃう) e 〜でしまう → 〜じゃう (飲んじゃう).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "〜てしまう (to finish / to do unintentionally)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "〜てしまう (concluir / fazer sem querer)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "Trap for Brazilians: don't always translate it as 'to finish.' When the sense is accidental or regretful, 〜ちゃう sounds very natural and somewhat emotional, similar to 'I ended up doing' or 'I went and did it.' The contraction ちゃう/じゃう is for informal conversation only; in formal situations use 〜てしまいました. On its own, しまう means 'to put away,' but as an auxiliary after the て-form it loses that literal sense.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "Armadilha para brasileiros: não traduza sempre como \"terminar\". Quando o sentido é de acidente ou arrependimento, 〜ちゃう soa muito natural e meio emotivo, parecido com \"acabei fazendo\" ou \"fui e fiz\". A contração ちゃう/じゃう é só de conversa informal; em situação formal use 〜てしまいました. Sozinho, しまう significa \"guardar\", mas como auxiliar depois da forma て ele perde esse sentido literal.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 3,
+    "sentence_grammar_dropped_as_duplicate": 4,
+    "sentence_tags_rewritten": [],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     79
+    ],
+    "exercise_item_repointed": 1,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [
+     "ex:n4-aspecto-03-2"
+    ],
+    "exercise_item_ref_dropped_as_duplicate": [],
+    "lesson_body_addresses_repointed": {
+     "les:n4-aspecto-03": 3
+    },
+    "cumulative_known_set_lessons": 142
+   }
+  },
+  {
+   "loser": "gram:gp-33",
+   "loser_key": "gp-33",
+   "winner": "gram:janai-dewa-nai",
+   "winner_key": "janai-dewa-nai",
+   "verdict": "MERGE",
+   "why": "W08b D8. gp-33 {じゃない} is a subset of janai-dewa-nai {じゃない, ではない}, the A1 shape one level down. Same topic, family and lesson (les:n5-desu-wa-03).",
+   "appended": {
+    "nuance_tags_json": "[\"emphasis\"]",
+    "level_sources": "{\"jlptsensei\": \"n5\", \"bunpro\": \"n5\"}",
+    "level_agreement": "2/2",
+    "level_confidence": 1.0,
+    "references_json": "{\"label_en\": \"janai / dewa nai\", \"also_known_as\": [\"janai / dewa nai\", \"じゃない\"], \"level_sources\": {\"jlptsensei\": \"n5\", \"bunpro\": \"n5\"}}",
+    "formation_steps_json": "{\"variants\": [{\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"じゃない\"}], \"example\": \"先生じゃない\"}, {\"base\": \"na-adjective\", \"steps\": [{\"base\": \"na-adjective\", \"op\": \"append\", \"token\": \"じゃない\"}], \"example\": \"静かじゃない\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"ではない\"}], \"example\": \"先生ではない\"}, {\"base\": \"na-adjective\", \"steps\": [{\"base\": \"na-adjective\", \"op\": \"append\", \"token\": \"ではない\"}], \"example\": \"静かではない\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"none\"}, {\"op\": \"append\", \"token\": \"じゃない\"}], \"example\": \"学生じゃない\"}, {\"base\": \"na-adjective\", \"steps\": [{\"base\": \"na-adjective\", \"op\": \"none\"}, {\"op\": \"append\", \"token\": \"じゃない\"}], \"example\": \"静かじゃない\"}]}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: loser adds nothing (['じゃない'] ⊆ ['じゃない', 'ではない'])",
+    "register_json: loser adds nothing (['casual'] ⊆ ['plain', 'casual'])",
+    "usage_contexts_json: loser adds nothing (['spoken', 'casual-friends'] ⊆ ['spoken', 'casual-friends', 'written'])",
+    "nuance_tags_json: appended ['emphasis'] -> ['emphasis']",
+    "level_sources: merged {'bunpro': 'n5'} -> {'jlptsensei': 'n5', 'bunpro': 'n5'}; level_agreement '1/1' -> '2/2'",
+    "refs: also_known_as += ['じゃない'], level_sources += {'bunpro': 'n5'}",
+    "formation_steps: appended 2 variant(s) ['学生じゃない', '静かじゃない'] (signature = base + step chain; `example` is not part of it, so two variants differing only in the example word stay one rule)",
+    "structure_pattern: 'じゃない' is already inside survivor 'じゃない・ではない'",
+    "register: 'casual' carried by the survivor's register list",
+    "localized form_meanings/en: every form the loser glossed is glossed by the survivor (['じゃない']); the wording differs and is salvaged",
+    "localized form_meanings/pt-BR: every form the loser glossed is glossed by the survivor (['じゃない']); the wording differs and is salvaged"
+   ],
+   "salvage": [
+    {
+     "field": "explanation/en",
+     "value": "じゃない is the negation of the copula \"to be\" in the present: \"is not\" / \"isn't\". It serves to negate nouns and な-adjectives: 学生じゃない = \"I'm not a student\"; 静かじゃない = \"it's not quiet\". It's the casual form; the full/polite version is じゃありません or ではありません. In speech, じゃない with rising intonation also becomes a confirmation question (\"isn't it?\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "じゃない é a negação da cópula \"ser/estar\" no presente: \"não é\" / \"não está\". Serve para negar substantivos e adjetivos-な: 学生じゃない = \"não sou estudante\"; 静かじゃない = \"não é silencioso\". É a forma casual; a versão completa/educada é じゃありません ou ではありません. Na fala, じゃない com entonação subindo também vira uma pergunta de confirmação (\"não é?\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "form_meanings/en",
+     "value": "{\"じゃない\": \"is not / are not (casual)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "form_meanings/pt-BR",
+     "value": "{\"じゃない\": \"não é / não está (casual)\"}",
+     "why": "same form keys, different wording"
+    },
+    {
+     "field": "formation/en",
+     "value": "[noun / na-adjective] ＋ じゃない (casual). More formal versions: ＋ じゃありません／ではありません. じゃ is a colloquial contraction of では, so じゃない = ではない (more written/formal). The past is じゃなかった ('was not') / じゃありませんでした. Do not use it with an i-adjective: its negative is ～くない (高くない 'is not expensive').",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "[substantivo / adjetivo-な] ＋ じゃない (casual). Versões mais formais: ＋ じゃありません／ではありません. じゃ é uma contração coloquial de では, então じゃない = ではない (mais escrito/formal). O passado é じゃなかった (\"não era\") / じゃありませんでした. Não use com adjetivo-い: a negativa dele é ～くない (高くない \"não é caro\").",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "is not (じゃない)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "não é / não está (じゃない)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "It catches Brazilians on two points. Trap 1: don't apply じゃない to an i-adjective (×高いじゃない → 高くない). Trap 2: with rising intonation, 〜じゃない becomes 'right? / isn't it?,' confirming something, and stops being a plain negation (おいしいじゃない！ 'Wow, this is delicious, right!'). In formal writing and exams, prefer ではない／ではありません; じゃない sounds conversational.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "Pega o brasileiro em dois pontos. Armadilha 1: não aplique じゃない a adjetivo-い (×高いじゃない → 高くない). Armadilha 2: com entonação ascendente, ～じゃない vira \"né? / não é mesmo?\", confirmando algo, e deixa de ser negação simples (おいしいじゃない！ \"Mas que delícia, né!\"). Em texto formal e provas, prefira ではない／ではありません; じゃない soa de conversa.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 7,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [
+     "sent:gen-8ee16ccc288c",
+     "sent:gen-c8e36c94f4e2",
+     "sent:gen-d3462a8eb391"
+    ],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     59
+    ],
+    "exercise_item_repointed": 1,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [
+     "ex:n5-desu-wa-03-3"
+    ],
+    "exercise_item_ref_dropped_as_duplicate": [
+     "ex:n5-revisao-01-2",
+     "ex:n5-revisao-02-6"
+    ],
+    "lesson_body_addresses_repointed": {
+     "les:n5-desu-wa-03": 3
+    },
+    "cumulative_known_set_lessons": 279
+   }
+  },
+  {
+   "loser": "gram:n3-nda-mon",
+   "loser_key": "n3-nda-mon",
+   "winner": "gram:n3-da-mono-da",
+   "winner_key": "n3-da-mono-da",
+   "verdict": "MERGE",
+   "why": "W08b D10. {～んだもん} is the もん variant of n3-da-mono-da {～(ん)だもの}, whose own label already reads ～(ん)だもの / ～だもん. Same topic, family and lesson (les:n3-causa-04).",
+   "appended": {
+    "forms_json": "[\"～(ん)だもの\", \"～んだもん\"]",
+    "nuance_tags_json": "[\"cause\", \"emphasis\"]",
+    "formation_steps_json": "{\"variants\": [{\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-dictionary\"}, {\"op\": \"append\", \"token\": \"んだもの\"}], \"example\": \"書くんだもの\"}, {\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-ta-form\"}, {\"op\": \"append\", \"token\": \"んだもの\"}], \"example\": \"疲れたんだもの\"}, {\"base\": \"i-adjective\", \"steps\": [{\"base\": \"i-adjective\", \"op\": \"append\", \"token\": \"んだもの\"}], \"example\": \"忙しいんだもの\"}, {\"base\": \"na-adjective\", \"steps\": [{\"base\": \"na-adjective\", \"op\": \"append\", \"token\": \"なんだもの\"}], \"example\": \"静かなんだもの\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"なんだもの\"}], \"example\": \"学生なんだもの\"}, {\"base\": \"verb\", \"steps\": [{\"base\": \"verb\", \"op\": \"to-dictionary\"}, {\"op\": \"append\", \"token\": \"んだもん\"}], \"example\": \"書くんだもん\"}, {\"base\": \"i-adjective\", \"steps\": [{\"base\": \"i-adjective\", \"op\": \"append\", \"token\": \"んだもん\"}], \"example\": \"高いんだもん\"}, {\"base\": \"na-adjective\", \"steps\": [{\"base\": \"na-adjective\", \"op\": \"append\", \"token\": \"なんだもん\"}], \"example\": \"静かなんだもん\"}, {\"base\": \"noun\", \"steps\": [{\"base\": \"noun\", \"op\": \"append\", \"token\": \"なんだもん\"}], \"example\": \"学生なんだもん\"}]}"
+   },
+   "appended_localized": [],
+   "covered": [
+    "forms_json: appended ['～んだもん'] -> ['～(ん)だもの', '～んだもん']",
+    "register_json: loser adds nothing (['casual', 'colloquial'] ⊆ ['casual', 'colloquial'])",
+    "usage_contexts_json: loser adds nothing (['spoken', 'casual-friends'] ⊆ ['spoken', 'casual-friends'])",
+    "nuance_tags_json: appended ['emphasis'] -> ['cause', 'emphasis']",
+    "level_sources: loser adds nothing",
+    "refs: loser adds nothing",
+    "formation_steps: appended 4 variant(s) ['書くんだもん', '高いんだもん', '静かなんだもん', '学生なんだもん'] (signature = base + step chain; `example` is not part of it, so two variants differing only in the example word stay one rule)"
+   ],
+   "salvage": [
+    {
+     "field": "structure_pattern",
+     "value": "～んだもん",
+     "why": "survivor has its own value; picking between them is authoring"
+    },
+    {
+     "field": "explanation/en",
+     "value": "Gives a justification or excuse in an emotional, childish, almost whiny way. It translates as 'it's just that...', 'it's because...', or 'well, it's that...'. The speaker defends or explains something by appealing to emotion, like a child justifying a bit of mischief.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "explanation/pt-BR",
+     "value": "Dá uma justificativa ou desculpa de forma emotiva e infantilizada, quase manhosa. Traduz-se como 'é que...', 'é porque...' ou 'ué, é que...'. O falante se defende ou explica algo apelando para o emocional, como uma criança que justifica uma travessura.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/en",
+     "value": "Verb in casual form + んだもん. い-adjective + んだもん. な-adjective + な + んだもん. Noun + な + んだもん. Variants: もの (more formal/feminine) and もん (more colloquial).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "formation/pt-BR",
+     "value": "Verbo na forma casual + んだもん. Adjetivo-i + んだもん. Adjetivo-na + な + んだもん. Substantivo + な + んだもん. Variantes: もの (mais formal/feminina) e もん (mais coloquial).",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/en",
+     "value": "it's because / it's that (whiningly) (んだもん)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "label/pt-BR",
+     "value": "é que / é porque (em tom de manha) (んだもん)",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/en",
+     "value": "Very informal tone, common among children, couples, and close friends; it sounds out of place in a serious or professional context. PT trap: it is not a neutral 'because' like から; it carries sulkiness, charm, or self-defense, so reserve it for relaxed, intimate situations.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    },
+    {
+     "field": "nuance/pt-BR",
+     "value": "Tom muito informal, comum entre crianças, casais e amigos próximos; soa deslocado num contexto sério ou profissional. Armadilha PT: não é um 'porque' neutro como から; carrega birra, charme ou autodefesa, então reserve para situações descontraídas e íntimas.",
+     "why": "learner-facing prose; both records are authored, and gluing them is authoring, not migration"
+    }
+   ],
+   "refused": [],
+   "edges": {
+    "sentence_grammar_repointed": 3,
+    "sentence_grammar_dropped_as_duplicate": 0,
+    "sentence_tags_rewritten": [
+     "sent:tatoeba-10107238",
+     "sent:tatoeba-10459619"
+    ],
+    "lesson_unlocks_dropped_as_duplicate": 1,
+    "lesson_unlocks_repointed": 0,
+    "lesson_introduces_dropped_as_duplicate": 1,
+    "lesson_introduces_repointed": 0,
+    "family_member_repointed": [],
+    "family_member_dropped_as_duplicate": [
+     397
+    ],
+    "exercise_item_repointed": 0,
+    "exercise_item_dropped_as_duplicate": 0,
+    "exercise_item_ref_repointed": [
+     "ex:causa-04-1",
+     "ex:causa-04-2",
+     "ex:causa-04-4",
+     "ex:causa-04-5"
+    ],
+    "exercise_item_ref_dropped_as_duplicate": [],
+    "lesson_body_addresses_repointed": {
+     "les:n3-causa-04": 2
+    },
+    "cumulative_known_set_lessons": 75
+   }
   }
  ],
- "authoring_source": []
+ "authoring_source": [
+  {
+   "file": "research/derived/lessons/n3-causa-04.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:n3-nda-mon (gram:n3-da-mono-da already there)",
+    "exercises[0].item_refs: gram:n3-nda-mon -> gram:n3-da-mono-da",
+    "exercises[1].item_refs: gram:n3-nda-mon -> gram:n3-da-mono-da",
+    "exercises[3].item_refs: gram:n3-nda-mon -> gram:n3-da-mono-da",
+    "exercises[4].item_refs: gram:n3-nda-mon -> gram:n3-da-mono-da",
+    "body: 2x ref=\"gram:n3-nda-mon\" -> \"gram:n3-da-mono-da\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n3-deveres-03.json",
+   "actions": [
+    "exercises[4].item_refs: dropped duplicate gram:gp-100"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n3-intencao-01.json",
+   "actions": [
+    "exercises[0].item_refs: dropped duplicate gram:gp-100"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n3-intencao-04.json",
+   "actions": [
+    "exercises[3].item_refs: dropped duplicate gram:gp-100"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n3-limites-02.json",
+   "actions": [
+    "exercises[0].item_refs: dropped duplicate gram:gp-100"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n3-relato-02.json",
+   "actions": [
+    "exercises[0].item_refs: dropped duplicate gram:gp-100"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n3-relato-04.json",
+   "actions": [
+    "exercises[1].item_refs: dropped duplicate gram:gp-154"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n4-aspecto-03.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-151 (gram:te-shimau-chau already there)",
+    "exercises[1].item_refs: gram:gp-151 -> gram:te-shimau-chau",
+    "body: 3x ref=\"gram:gp-151\" -> \"gram:te-shimau-chau\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n4-condicionais-01.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-60 (gram:tara already there)",
+    "exercises[0].item_refs: dropped duplicate gram:gp-60",
+    "exercises[1].item_refs: gram:gp-60 -> gram:tara",
+    "exercises[3].item_refs: dropped duplicate gram:gp-60",
+    "exercises[4].item_refs: dropped duplicate gram:gp-60",
+    "exercises[9].item_refs: dropped duplicate gram:gp-60",
+    "body: 2x ref=\"gram:gp-60\" -> \"gram:tara\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n4-conectores-04.json",
+   "actions": [
+    "exercises[3].item_refs: dropped duplicate gram:gp-100"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n4-forma-simples-03.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-100 (gram:gp-118 already there)",
+    "exercises[0].item_refs: dropped duplicate gram:gp-100",
+    "exercises[1].item_refs: dropped duplicate gram:gp-100",
+    "exercises[2].item_refs: dropped duplicate gram:gp-100",
+    "exercises[3].item_refs: dropped duplicate gram:gp-100",
+    "exercises[4].item_refs: dropped duplicate gram:gp-100",
+    "body: 2x ref=\"gram:gp-100\" -> \"gram:gp-118\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n4-revisao-01.json",
+   "actions": [
+    "exercises[4].item_refs: dropped duplicate gram:gp-60"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n4-suposicao-04.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-154 (gram:gp-77 already there)",
+    "exercises[2].item_refs: gram:gp-154 -> gram:gp-77",
+    "exercises[3].item_refs: gram:gp-154 -> gram:gp-77",
+    "body: 2x ref=\"gram:gp-154\" -> \"gram:gp-77\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n5-adjetivos-07.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-54 (gram:no-ga-jouzu already there)",
+    "exercises[4].item_refs: gram:gp-54 -> gram:no-ga-jouzu",
+    "body: 2x ref=\"gram:gp-54\" -> \"gram:no-ga-jouzu\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n5-comparacoes-01.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-47 (gram:yori-hou-ga already there)",
+    "exercises[0].item_refs: dropped duplicate gram:gp-47",
+    "exercises[5].item_refs: dropped duplicate gram:gp-47",
+    "body: 2x ref=\"gram:gp-47\" -> \"gram:yori-hou-ga\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n5-desu-wa-03.json",
+   "actions": [
+    "unlocks: dropped duplicate gram:gp-33 (gram:janai-dewa-nai already there)",
+    "exercises[2].item_refs: gram:gp-33 -> gram:janai-dewa-nai",
+    "body: 3x ref=\"gram:gp-33\" -> \"gram:janai-dewa-nai\""
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n5-revisao-01.json",
+   "actions": [
+    "exercises[1].item_refs: dropped duplicate gram:gp-33"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n5-revisao-02.json",
+   "actions": [
+    "exercises[5].item_refs: dropped duplicate gram:gp-33"
+   ]
+  },
+  {
+   "file": "research/derived/lessons/n5-revisao-03.json",
+   "actions": [
+    "exercises[3].item_refs: dropped duplicate gram:gp-47"
+   ]
+  }
+ ],
+ "exam_banks": [
+  {
+   "file": "corpus/exam_banks/n3_grammar_form.json",
+   "actions": [
+    "1 item(s) n3-nda-mon -> n3-da-mono-da: ['gf:n3:5140']"
+   ]
+  },
+  {
+   "file": "corpus/exam_banks/n4_grammar_form.json",
+   "actions": [
+    "5 item(s) gp-100 -> gp-118: ['gf:n4:3409', 'gf:n4:3410', 'gf:n4:3411', 'gf:n4:3412', 'gf:n4:3413']",
+    "4 item(s) gp-154 -> gp-77: ['gf:n4:3540', 'gf:n4:3541', 'gf:n4:3542', 'gf:n4:3544']",
+    "3 item(s) gp-151 -> te-shimau-chau: ['gf:n4:3532', 'gf:n4:3533', 'gf:n4:3534']"
+   ]
+  },
+  {
+   "file": "corpus/exam_banks/n5_grammar_form.json",
+   "actions": [
+    "4 item(s) gp-33 -> janai-dewa-nai: ['gf:n5:4308', 'gf:n5:4309', 'gf:n5:4310', 'gf:n5:4311']"
+   ]
+  }
+ ]
 }

@@ -14,6 +14,13 @@ different points whose collision is manufactured by a wrong `forms[0]`; `gp-100`
 `gp-103`/`n3-sukoshimo-nai` and the three `ように` records are UNTRIAGED. This script merges only
 what the report proved, and says so loudly for everything it declines (see MERGES / DECLINED).
 
+W08b (2026-09-23) added eight more pairs (gp-100/gp-118 among them, triaged since), from the tracked
+table research/derived/repairs/w08b_merges.json, and four things the first two merges never met:
+guard G1 (a loser's steps_unavailable is never copied beside the survivor's formation steps), W23's
+`exercise_item_ref` table and its `gram:<key>` item_refs in the authoring source, the exam banks (E1:
+`rewrite_exam_banks()`), and a ledger that accumulates across runs instead of being rewritten from the
+last one.
+
 WHAT "NO CONTENT LOSS" MEANS HERE, CONCRETELY
 ---------------------------------------------
 1. **Nothing is deleted.** The loser's `grammar_point` row stays, with every field it had, and gains
@@ -103,7 +110,7 @@ sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
 _sys_scripts = next(p for p in Path(__file__).resolve().parents if p.name == "scripts")
 sys.path.append(str(_sys_scripts))
-from dbtarget import db_target, take_flag  # noqa: E402
+from dbtarget import db_target, out_root, take_flag  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 # True only when this run targets db/corpus.sqlite. `expect` below is a drift check on THAT graph;
@@ -150,6 +157,98 @@ MERGES: list[dict] = [
                    "exercise_item_dup": 0, "grammar_related": 0,
                    "cumulative_known_set": 157},
     },
+    # ---- W08b (2026-09-23): eight more pairs, each unlocked by ONE lesson (two SRS cards for one
+    # pattern). Derived and verified in research/derived/repairs/w08b_merges.json; `expect` re-measured
+    # on the live index at C12 (every block equal to the derivation's). gp-54 and gp-60 run AFTER
+    # scripts/apply_w08b_merges.py --phase pre (manifest step 110), or the survivor inherits their
+    # defect; the survivors' reconciled prose lands after this step (--phase prose).
+    {
+        "loser": "gp-100", "winner": "gp-118", "verdict": "MERGE",
+        "why": ("W08b U1. Same rule 〜しか〜ない, same form {しかない}, same topic, same family, ONE lesson "
+                "(les:n4-forma-simples-03) unlocks both. Both gp-N with a topic-fallback capability, so "
+                "level agreement decides: gp-118 2/2, gp-100 1/1."),
+        "expect": {"sentence_grammar": 5, "sentence_grammar_overlap": 0, "sentence_tags": 0,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 0, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 195},
+    },
+    {
+        "loser": "gp-54", "winner": "no-ga-jouzu", "verdict": "MERGE",
+        "why": ("W08b D2. 〜のが上手 registered twice (gp-54 spells 上手 in kana), same topic, same family, "
+                "ONE lesson (les:n5-adjetivos-07). Survivor: semantic slug and capability. Needs R2 "
+                "first (copula out of the form, register neutral)."),
+        "expect": {"sentence_grammar": 6, "sentence_grammar_overlap": 0, "sentence_tags": 5,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 1, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 236},
+    },
+    {
+        "loser": "gp-47", "winner": "yori-hou-ga", "verdict": "MERGE",
+        "why": ("W08b D4. One comparative pattern より〜(の)ほうが; the two records differ only by the "
+                "optional の. Same topic, family and lesson (les:n5-comparacoes-01). Survivor carries "
+                "formation_steps, so guard G1 keeps gp-47's steps_unavailable off it."),
+        "expect": {"sentence_grammar": 4, "sentence_grammar_overlap": 0, "sentence_tags": 5,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 0, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 234},
+    },
+    {
+        "loser": "gp-154", "winner": "gp-77", "verdict": "MERGE",
+        "why": ("W08b D5. gp-154 {のように} is the adverbial half of gp-77 {のように, のような}: a clean "
+                "superset. Same topic, family and lesson (les:n4-suposicao-04). gp-153 {のような}, the "
+                "other half, is NOT in this pair (untriaged)."),
+        "expect": {"sentence_grammar": 5, "sentence_grammar_overlap": 0, "sentence_tags": 0,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 2, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 134},
+    },
+    {
+        "loser": "gp-60", "winner": "tara", "verdict": "MERGE",
+        "why": ("W08b D6. Same point 〜たら; gp-60's five formation variants are tara's five and only "
+                "its forms[0] was the broken 'ら' (fixed by R1 first). Same topic, family and lesson "
+                "(les:n4-condicionais-01). Survivor: 3/3, semantic slug and capability."),
+        "expect": {"sentence_grammar": 5, "sentence_grammar_overlap": 0, "sentence_tags": 5,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 1, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 183},
+    },
+    {
+        "loser": "gp-151", "winner": "te-shimau-chau", "verdict": "MERGE",
+        "why": ("W08b D7. gp-151 {てしまう} is a subset of te-shimau-chau {てしまう, ちゃう}; 4 of its 7 "
+                "sentences already carry the survivor. Same topic, family and lesson "
+                "(les:n4-aspecto-03)."),
+        "expect": {"sentence_grammar": 7, "sentence_grammar_overlap": 4, "sentence_tags": 0,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 1, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 142},
+    },
+    {
+        "loser": "gp-33", "winner": "janai-dewa-nai", "verdict": "MERGE",
+        "why": ("W08b D8. gp-33 {じゃない} is a subset of janai-dewa-nai {じゃない, ではない}, the A1 shape "
+                "one level down. Same topic, family and lesson (les:n5-desu-wa-03)."),
+        "expect": {"sentence_grammar": 7, "sentence_grammar_overlap": 0, "sentence_tags": 3,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 1, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 279},
+    },
+    {
+        "loser": "n3-nda-mon", "winner": "n3-da-mono-da", "verdict": "MERGE",
+        "why": ("W08b D10. {～んだもん} is the もん variant of n3-da-mono-da {～(ん)だもの}, whose own "
+                "label already reads ～(ん)だもの / ～だもん. Same topic, family and lesson "
+                "(les:n3-causa-04)."),
+        "expect": {"sentence_grammar": 3, "sentence_grammar_overlap": 0, "sentence_tags": 2,
+                   "lesson_unlocks": 1, "lesson_unlocks_dup": 1, "lesson_introduces": 1,
+                   "lesson_introduces_dup": 1, "lesson_needs": 0, "family_member": 1,
+                   "family_member_dup": 1, "exercise_item": 0, "exercise_item_dup": 0,
+                   "grammar_related": 0, "cumulative_known_set": 75},
+    },
 ]
 
 # Collisions this script deliberately does NOT merge. Printed on every run so the residue stays visible.
@@ -159,7 +258,12 @@ DECLINED: list[tuple[str, str]] = [
      "wrong forms[] on gp-36, not one point. §2.2."),
     ("gram:gp-63 / gram:gp-115",
      "KEEP BOTH — passive vs potential. The collision is manufactured by a wrong gp-115.forms[0]. §2.3."),
-    ("gram:gp-100 / gram:gp-118  {しかない}", "UNTRIAGED — no evidence pass has been run. §3.4."),
+    ("gram:gp-153 / gram:gp-77  {のような}",
+     "UNTRIAGED — the third record in les:n4-suposicao-04, a subset of gp-77; found by W08b, not in "
+     "its eight."),
+    ("gram:no-ga-suki / gram:gp-23",
+     "UNTRIAGED — les:n5-adjetivos-07 calls them 'the same construction registered under two keys'; "
+     "found by the W08b lesson-body pass, not in its eight."),
     ("gram:gp-103 / gram:n3-sukoshimo-nai  {すこしもない}",
      "UNTRIAGED — cross-level near-duplicate; merging across N4/N3 is an owner decision. §3.4."),
     ("gram:n3-you-ni / n3-you-ni-2 / n3-you-ni-3  {～ように}",
@@ -368,6 +472,13 @@ def diff_content(con: sqlite3.Connection, L: sqlite3.Row, W: sqlite3.Row) -> dic
         lv, wv = L[col], W[col]
         if lv in (None, "") or lv == wv:
             continue
+        # W08b G1: a withheld-steps reason beside the survivor's own formation steps contradicts them
+        # (the survivor would publish steps AND "steps cannot exist"), and validate_grammar_formation
+        # check 3 only catches a WITHHELD reason, so nothing would fail. Salvage it instead.
+        if col == "steps_unavailable" and wvars:
+            out["salvage"].append({"field": col, "value": lv, "why": "survivor carries formation_steps; "
+                                   "a steps_unavailable reason beside them contradicts them"})
+            continue
         if wv in (None, ""):
             out["append"][col] = lv
             out["covered"].append(f"{col}: survivor was empty; copied loser value {lv!r}")
@@ -487,6 +598,15 @@ def plan_edges(con: sqlite3.Connection, L: sqlite3.Row, W: sqlite3.Row) -> dict:
         "SELECT exercise_id FROM exercise_item WHERE member_type='grammar' AND member_id=?", (lid,))]
     p["exercise_item"] = {"repoint": [x for x in me if x not in we],
                           "drop_dup": [x for x in me if x in we]}
+
+    # W23's exercise_item_ref (migration 019) keys on the published slug, not the row id.
+    p["exercise_item_ref"] = {"repoint": [], "drop_dup": []}
+    if con.execute("SELECT name FROM sqlite_master WHERE name='exercise_item_ref'").fetchone():
+        wx = {r[0] for r in con.execute(
+            "SELECT exercise FROM exercise_item_ref WHERE item_type='grammar' AND ref=?", (wslug,))}
+        for (ex,) in con.execute(
+                "SELECT exercise FROM exercise_item_ref WHERE item_type='grammar' AND ref=?", (lslug,)):
+            p["exercise_item_ref"]["drop_dup" if ex in wx else "repoint"].append(ex)
 
     rel_out = [(r[0], r[1]) for r in con.execute(
         "SELECT related_grammar_id, relation FROM grammar_related WHERE grammar_id=?", (lid,))]
@@ -616,6 +736,12 @@ def apply_edges(con: sqlite3.Connection, L: sqlite3.Row, W: sqlite3.Row, plan: d
     for eid in plan["exercise_item"]["repoint"]:
         con.execute("UPDATE exercise_item SET member_id=? WHERE exercise_id=? AND "
                     "member_type='grammar' AND member_id=?", (wid, eid, lid))
+    for ex in plan["exercise_item_ref"]["drop_dup"]:
+        con.execute("DELETE FROM exercise_item_ref WHERE exercise=? AND item_type='grammar' AND ref=?",
+                    (ex, lslug))
+    for ex in plan["exercise_item_ref"]["repoint"]:
+        con.execute("UPDATE exercise_item_ref SET ref=? WHERE exercise=? AND item_type='grammar' "
+                    "AND ref=?", (wslug, ex, lslug))
     for other, relation in plan["grammar_related"]["out"]:
         con.execute("DELETE FROM grammar_related WHERE grammar_id=? AND related_grammar_id=? AND "
                     "relation=?", (lid, other, relation))
@@ -677,16 +803,20 @@ def rewrite_authoring(root: Path, merges: list[dict], apply: bool) -> list[dict]
                 refs = ex.get("item_refs")
                 if not isinstance(refs, list):
                     continue
-                has_w = any(isinstance(r, dict) and r.get("ref") == wk for r in refs)
+                # Two address shapes: the bare key (pre-W23 authored refs) and the published slug
+                # `gram:<key>` W23's apply_item_refs.py writes. Each is re-pointed in its own shape.
+                has_w = any(isinstance(r, dict) and r.get("ref") in (wk, wslug) for r in refs)
                 kept = []
                 for r in refs:
-                    if isinstance(r, dict) and r.get("ref") == lk and r.get("type") == "grammar":
+                    if (isinstance(r, dict) and r.get("ref") in (lk, lslug)
+                            and r.get("type") == "grammar"):
                         if has_w:
-                            acts.append(f"exercises[{n}].item_refs: dropped duplicate {lk}")
+                            acts.append(f"exercises[{n}].item_refs: dropped duplicate {r['ref']}")
                             continue
-                        r = {**r, "ref": wk}
+                        to = wslug if r["ref"] == lslug else wk
+                        acts.append(f"exercises[{n}].item_refs: {r['ref']} -> {to}")
+                        r = {**r, "ref": to}
                         has_w = True
-                        acts.append(f"exercises[{n}].item_refs: {lk} -> {wk}")
                     kept.append(r)
                 ex["item_refs"] = kept
 
@@ -722,6 +852,44 @@ def rewrite_authoring(root: Path, merges: list[dict], apply: bool) -> list[dict]
     return changes
 
 
+def rewrite_exam_banks(root: Path, merges: list[dict], apply: bool) -> list[dict]:
+    """W08b E1: exam items whose `grammar` names a loser key -> the survivor key.
+
+    validate_exam_banks check D requires every item's `grammar` to resolve in corpus/grammar, and the
+    banks are a built artifact the exporters do not rewrite. Item ids embed the sentence, not the
+    grammar, so they stay stable; each item's `correct` is a form the survivor carries after the merge.
+    A byte-level replace of the one `"grammar": "<loser>"` pair keeps the file's own formatting, and
+    the count is checked against the parsed items so nothing else can match.
+    """
+    changes: list[dict] = []
+    banks = root / "corpus" / "exam_banks"
+    if not banks.is_dir():
+        print(f"  ! no {banks} — exam banks not rewritten")
+        return changes
+    lmap = {m["loser"]: m["winner"] for m in merges}
+    for path in sorted(banks.glob("*.json")):
+        raw = path.read_text(encoding="utf-8")
+        new = raw
+        acts: list[str] = []
+        items = json.loads(raw)
+        items = items if isinstance(items, list) else []
+        for lk, wk in lmap.items():
+            needle = f'"grammar": "{lk}"'
+            n = new.count(needle)
+            ids = [it.get("id") for it in items if isinstance(it, dict) and it.get("grammar") == lk]
+            if n != len(ids):
+                die(f"{path.name}: {n} textual {needle!r} vs {len(ids)} items — refusing a replace "
+                    f"that could touch something other than an item's grammar field")
+            if n:
+                new = new.replace(needle, f'"grammar": "{wk}"')
+                acts.append(f"{n} item(s) {lk} -> {wk}: {ids}")
+        if acts:
+            changes.append({"file": path.relative_to(root).as_posix(), "actions": acts})
+            if apply:
+                path.write_bytes(new.encode("utf-8"))
+    return changes
+
+
 # ==================================================================================================
 def is_applied(con: sqlite3.Connection, m: dict) -> bool:
     if not has_column(con, "grammar_point", "deprecated_by"):
@@ -735,7 +903,9 @@ def main() -> int:
     dbpath = db_target(ROOT / "db" / "corpus.sqlite")
     LIVE_INDEX = Path(dbpath).resolve() == (ROOT / "db" / "corpus.sqlite").resolve()
     root_override = take_flag("--root")
-    root = Path(root_override) if root_override else ROOT
+    # A replay (rebuild_index.py) sets $YOMINEKO_OUT_ROOT to a work root seeded with the lessons, so
+    # the file rewrites follow it there instead of touching the repo.
+    root = Path(root_override) if root_override else out_root(ROOT)
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--apply", action="store_true", help="write the merge (default: dry run)")
     ap.add_argument("--check", action="store_true", help="verify the merge is applied; exit 1 if not")
@@ -777,6 +947,10 @@ def main() -> int:
             n = con.execute("SELECT COUNT(*) FROM lesson_unlocks WHERE ref=?", (L["slug"],)).fetchone()[0]
             if n:
                 bad.append(f"{m['loser']}: {n} lesson_unlocks row(s) still point at {L['slug']}")
+            xr = plan_edges(con, L, W)["exercise_item_ref"]
+            n = len(xr["repoint"]) + len(xr["drop_dup"])
+            if n:
+                bad.append(f"{m['loser']}: {n} exercise_item_ref row(s) still point at {L['slug']}")
             n = con.execute("SELECT COUNT(*) FROM sentence WHERE tags LIKE ?",
                             (f'%"{m["loser"]}"%',)).fetchone()[0]
             if n:
@@ -792,6 +966,8 @@ def main() -> int:
         stray = rewrite_authoring(root, MERGES, apply=False)
         for c in stray:
             bad.append(f"authoring source not migrated: {c['file']} — {c['actions']}")
+        for c in rewrite_exam_banks(root, MERGES, apply=False):
+            bad.append(f"exam bank not migrated: {c['file']} — {c['actions']}")
         if bad:
             print("NOT APPLIED:")
             for b in bad:
@@ -823,6 +999,7 @@ def main() -> int:
         # the old values, where "one loader+export cycle would have reintroduced them". So a re-run
         # still re-proves (and, with --apply, heals) research/derived/lessons/ before it exits.
         stray = rewrite_authoring(root, MERGES, apply=args.apply)
+        stray += rewrite_exam_banks(root, MERGES, apply=args.apply)
         for c in stray:
             print(f"  authoring {c['file']}")
             for a in c["actions"]:
@@ -908,6 +1085,8 @@ def main() -> int:
               f"drop-as-duplicate {[f[0] for f in plan['family_member']['drop_dup']]}")
         print(f"     exercise_item     repoint {len(plan['exercise_item']['repoint'])}, "
               f"drop-as-duplicate {len(plan['exercise_item']['drop_dup'])}")
+        print(f"     exercise_item_ref repoint {len(plan['exercise_item_ref']['repoint'])}, "
+              f"drop-as-duplicate {len(plan['exercise_item_ref']['drop_dup'])}")
         print(f"     grammar_related   out {len(plan['grammar_related']['out'])}, "
               f"in {len(plan['grammar_related']['in'])}")
         cks_plan = plan["cumulative_known_set"]
@@ -938,6 +1117,8 @@ def main() -> int:
                 "family_member_dropped_as_duplicate": [f[0] for f in plan["family_member"]["drop_dup"]],
                 "exercise_item_repointed": len(plan["exercise_item"]["repoint"]),
                 "exercise_item_dropped_as_duplicate": len(plan["exercise_item"]["drop_dup"]),
+                "exercise_item_ref_repointed": plan["exercise_item_ref"]["repoint"],
+                "exercise_item_ref_dropped_as_duplicate": plan["exercise_item_ref"]["drop_dup"],
                 "lesson_body_addresses_repointed": {b[4]: b[5] for b in plan["lesson_bodies"]},
                 "cumulative_known_set_lessons": len(plan["cumulative_known_set"]),
             },
@@ -985,11 +1166,13 @@ def main() -> int:
 
     print("=" * 98)
     changes = rewrite_authoring(root, MERGES, apply=args.apply)
-    for c in changes:
-        print(f"  authoring {c['file']}")
+    bank_changes = rewrite_exam_banks(root, MERGES, apply=args.apply)
+    for c in changes + bank_changes:
+        print(f"  rewrite {c['file']}")
         for a in c["actions"]:
             print(f"      {a}")
     ledger["authoring_source"] = changes
+    ledger["exam_banks"] = bank_changes
 
     if args.apply:
         con.commit()
@@ -999,7 +1182,17 @@ def main() -> int:
         if LIVE_INDEX:
             out = root / LEDGER
             out.parent.mkdir(parents=True, exist_ok=True)
-            out.write_text(json.dumps(ledger, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+            # W08b: the ledger ACCUMULATES. This run only sees the merges it applied, and rewriting the
+            # file from them alone would erase the entries of every earlier run (W08's two).
+            if out.is_file():
+                prev = json.loads(out.read_text(encoding="utf-8"))
+                mine = {e["loser_key"] for e in ledger["merges"]}
+                ledger["merges"] = [e for e in prev.get("merges", []) if e["loser_key"] not in mine] \
+                    + ledger["merges"]
+                for k in ("authoring_source", "exam_banks"):
+                    ledger[k] = (prev.get(k) or []) + ledger[k]
+            out.write_text(json.dumps(ledger, ensure_ascii=False, indent=1) + "\n", encoding="utf-8",
+                           newline="\n")
             print(f"\nledger: {LEDGER}")
         else:
             print(f"\nledger: {LEDGER} left as committed (replay target, not the live index)")

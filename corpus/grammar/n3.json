@@ -556,6 +556,10 @@
       {
         "form": "～(ん)だもの",
         "meaning": null
+      },
+      {
+        "form": "～んだもん",
+        "meaning": null
       }
     ],
     "structure_pattern": "～(ん)だもの",
@@ -571,11 +575,11 @@
       "hanabira": "n3"
     },
     "explanation": {
-      "pt-BR": "Apresenta uma razão ou justificativa em tom subjetivo e meio queixoso, como quem se desculpa ou se defende: 'é que...', 'afinal...', 'mas é porque...'. Tem carga emocional e soa pessoal, quase infantil ou afetivo, sendo comum acrescentar から ('porque... afinal'). Na fala cotidiana aparece muito como だもん.",
+      "pt-BR": "Apresenta uma razão ou justificativa em tom subjetivo e meio queixoso, quase manhoso, como quem se desculpa ou se defende: \"é que...\", \"é porque...\", \"afinal...\", \"mas é porque...\", \"ué, é que...\". Tem carga emocional e soa pessoal, quase infantil ou afetivo, como uma criança que justifica uma travessura, e é comum acrescentar から (\"porque... afinal\"). Na fala cotidiana aparece muito como だもん.",
       "en": "Presents a reason or justification in a subjective and somewhat whiny tone, like someone apologizing or defending themselves: 'it's just that...,' 'after all...,' 'but it's because....' It has emotional weight and sounds personal, almost childlike or affectionate, and it's common to add から ('because... after all'). In everyday speech it often appears as だもん."
     },
     "formation": {
-      "pt-BR": "Frase em forma simples + もの, em geral com ん antes para dar tom explicativo: verbo/adjetivo-i + んだもの (疲れたんだもの); adjetivo-na/substantivo + なんだもの (忙しい é adjetivo-i, então 忙しいんだもの). Frequentemente fecha com から: ～んだものだから.",
+      "pt-BR": "Frase em forma simples + もの, em geral com ん antes para dar tom explicativo: verbo/adjetivo-i + んだもの (疲れたんだもの); adjetivo-na/substantivo + なんだもの (cuidado: 忙しい é adjetivo-i, então fica 忙しいんだもの, sem な). A mesma montagem vale com もん no lugar de もの: verbo na forma casual ou adjetivo-i + んだもん; adjetivo-na ou substantivo + な + んだもん. もの soa mais formal e feminina; もん, mais coloquial. Frequentemente fecha com から: ～んだものだから.",
       "en": "Clause in plain form + もの, usually with ん before it to give an explanatory tone: verb/い-adjective + んだもの (疲れたんだもの); な-adjective/noun + なんだもの (忙しい is an い-adjective, so 忙しいんだもの). It frequently closes with から: 〜んだものだから."
     },
     "formation_steps": {
@@ -640,11 +644,59 @@
             }
           ],
           "example": "学生なんだもの"
+        },
+        {
+          "base": "verb",
+          "steps": [
+            {
+              "base": "verb",
+              "op": "to-dictionary"
+            },
+            {
+              "op": "append",
+              "token": "んだもん"
+            }
+          ],
+          "example": "書くんだもん"
+        },
+        {
+          "base": "i-adjective",
+          "steps": [
+            {
+              "base": "i-adjective",
+              "op": "append",
+              "token": "んだもん"
+            }
+          ],
+          "example": "高いんだもん"
+        },
+        {
+          "base": "na-adjective",
+          "steps": [
+            {
+              "base": "na-adjective",
+              "op": "append",
+              "token": "なんだもん"
+            }
+          ],
+          "example": "静かなんだもん"
+        },
+        {
+          "base": "noun",
+          "steps": [
+            {
+              "base": "noun",
+              "op": "append",
+              "token": "なんだもん"
+            }
+          ],
+          "example": "学生なんだもん"
         }
       ]
     },
     "nuance_tags": [
-      "cause"
+      "cause",
+      "emphasis"
     ],
     "usage_contexts": [
       "spoken",
@@ -652,7 +704,7 @@
     ],
     "steps_unavailable": null,
     "nuance": {
-      "pt-BR": "Registro bem informal e emotivo; だもん é a contração corriqueira, usada por qualquer falante, enquanto だもの (e ですもの) soa mais marcado e carrega o tom feminino e infantil, então evite os dois em situações formais ou de trabalho. Armadilha PT: não é uma justificativa neutra como から sozinho; carrega um tom de birra, desculpa ou apelo afetivo, como o 'aí é que tá' ou 'ué, mas é porque...' do português falado.",
+      "pt-BR": "Registro bem informal e emotivo; だもん é a contração corriqueira, usada por qualquer falante, enquanto だもの (e ですもの) soa mais marcado e carrega o tom feminino e infantil, então evite os dois em situações formais ou de trabalho. Armadilha PT: não é uma justificativa neutra como から sozinho; carrega um tom de birra, desculpa ou apelo afetivo, como o 'aí é que tá' ou 'ué, mas é porque...' do português falado. É comum entre crianças, casais e amigos próximos, e pode soar também como charme ou autodefesa; reserve para situações descontraídas e íntimas.",
       "en": "Very informal and emotional register; だもん is the everyday contraction, used by any speaker, while だもの (and ですもの) sounds more marked and carries the feminine, childlike tone, so avoid both in formal or work situations. PT trap: it is not a neutral justification like から alone; it carries a tone of sulking, excuse, or emotional appeal, like the 'that's the thing' or 'well, it's because...' of spoken Portuguese."
     },
     "related": [],
@@ -4592,111 +4644,6 @@
     "needs_review": true,
     "families": [
       "grp:gram-n3-conectores"
-    ]
-  },
-  {
-    "id": 491,
-    "slug": "gram:n3-nda-mon",
-    "key": "n3-nda-mon",
-    "label": {
-      "pt-BR": "é que / é porque (em tom de manha) (んだもん)",
-      "en": "it's because / it's that (whiningly) (んだもん)"
-    },
-    "forms": [
-      {
-        "form": "～んだもん",
-        "meaning": null
-      }
-    ],
-    "structure_pattern": "～んだもん",
-    "register": [
-      "casual",
-      "colloquial"
-    ],
-    "caution": null,
-    "level": "n3",
-    "level_confidence": 0.34,
-    "level_agreement": "1/3",
-    "level_sources": {
-      "hanabira": "n3"
-    },
-    "explanation": {
-      "pt-BR": "Dá uma justificativa ou desculpa de forma emotiva e infantilizada, quase manhosa. Traduz-se como 'é que...', 'é porque...' ou 'ué, é que...'. O falante se defende ou explica algo apelando para o emocional, como uma criança que justifica uma travessura.",
-      "en": "Gives a justification or excuse in an emotional, childish, almost whiny way. It translates as 'it's just that...', 'it's because...', or 'well, it's that...'. The speaker defends or explains something by appealing to emotion, like a child justifying a bit of mischief."
-    },
-    "formation": {
-      "pt-BR": "Verbo na forma casual + んだもん. Adjetivo-i + んだもん. Adjetivo-na + な + んだもん. Substantivo + な + んだもん. Variantes: もの (mais formal/feminina) e もん (mais coloquial).",
-      "en": "Verb in casual form + んだもん. い-adjective + んだもん. な-adjective + な + んだもん. Noun + な + んだもん. Variants: もの (more formal/feminine) and もん (more colloquial)."
-    },
-    "formation_steps": {
-      "variants": [
-        {
-          "base": "verb",
-          "steps": [
-            {
-              "base": "verb",
-              "op": "to-dictionary"
-            },
-            {
-              "op": "append",
-              "token": "んだもん"
-            }
-          ],
-          "example": "書くんだもん"
-        },
-        {
-          "base": "i-adjective",
-          "steps": [
-            {
-              "base": "i-adjective",
-              "op": "append",
-              "token": "んだもん"
-            }
-          ],
-          "example": "高いんだもん"
-        },
-        {
-          "base": "na-adjective",
-          "steps": [
-            {
-              "base": "na-adjective",
-              "op": "append",
-              "token": "なんだもん"
-            }
-          ],
-          "example": "静かなんだもん"
-        },
-        {
-          "base": "noun",
-          "steps": [
-            {
-              "base": "noun",
-              "op": "append",
-              "token": "なんだもん"
-            }
-          ],
-          "example": "学生なんだもん"
-        }
-      ]
-    },
-    "nuance_tags": [
-      "cause",
-      "emphasis"
-    ],
-    "usage_contexts": [
-      "spoken",
-      "casual-friends"
-    ],
-    "steps_unavailable": null,
-    "nuance": {
-      "pt-BR": "Tom muito informal, comum entre crianças, casais e amigos próximos; soa deslocado num contexto sério ou profissional. Armadilha PT: não é um 'porque' neutro como から; carrega birra, charme ou autodefesa, então reserve para situações descontraídas e íntimas.",
-      "en": "Very informal tone, common among children, couples, and close friends; it sounds out of place in a serious or professional context. PT trap: it is not a neutral 'because' like から; it carries sulkiness, charm, or self-defense, so reserve it for relaxed, intimate situations."
-    },
-    "related": [],
-    "refs": null,
-    "needs_review": true,
-    "families": [
-      "grp:gram-n3-causa"
     ]
   },
   {
