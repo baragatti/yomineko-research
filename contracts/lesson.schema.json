@@ -107,6 +107,65 @@
           "id": {
             "$ref": "common.schema.json#/$defs/StableId"
           },
+          "item_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "derived_by": {
+                  "type": "string",
+                  "enum": [
+                    "answer",
+                    "authored",
+                    "cited-sentence",
+                    "kana",
+                    "markup",
+                    "prompt-unlocks",
+                    "table:practice_kanji_exercises",
+                    "table:practice_vocab_exercises"
+                  ],
+                  "description": "Which rule produced this entry (scripts/derive_item_refs.py). A `table:` value means the row carried its own target; `authored` means an author wrote it. Stored because a derived ref is good evidence and not a fact: validate_item_refs.py check E re-derives every rule-made entry. Vocabulary owner: design — design/assessment.md#21-the-field. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                  "x-vocabulary": {
+                    "owner": "design",
+                    "source": "design/assessment.md#21-the-field"
+                  }
+                },
+                "ref": {
+                  "$ref": "common.schema.json#/$defs/IdRef",
+                  "pattern": "^(vocab|kanji|gram|kana|conj|phrase):",
+                  "description": "The item, by published stable id: `vocab:` slugs (never headwords), `kanji:`, `gram:`, and `kana:` at either granularity (family or glyph)."
+                },
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "context",
+                    "target"
+                  ],
+                  "description": "`target` is what the question asks and what a wrong answer is evidence about (the mistake index, the topic-test assembler and the placement probe key on it). `context` is present-but-incidental and contracted-and-empty today. Vocabulary owner: design — design/assessment.md#2-item_refs-what-an-exercise-tests. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                  "x-vocabulary": {
+                    "owner": "design",
+                    "source": "design/assessment.md#2-item_refs-what-an-exercise-tests"
+                  }
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "conjugation-form",
+                    "grammar",
+                    "kana",
+                    "kanji",
+                    "phrase",
+                    "vocab"
+                  ],
+                  "description": "Which registry `ref` addresses. unlock_type minus {kanji-family, feature, srs-deck}, with the family form renamed `kana` because a test target may be one glyph (design/assessment.md §2.3). Vocabulary owner: design — design/unlock_enums.json#item_ref_type. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+                  "x-vocabulary": {
+                    "owner": "design",
+                    "source": "design/unlock_enums.json#item_ref_type"
+                  }
+                }
+              }
+            }
+          },
           "prompt": {
             "$ref": "common.schema.json#/$defs/LocaleText"
           },

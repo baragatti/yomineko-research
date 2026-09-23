@@ -344,8 +344,13 @@ def write_validation(kinfo: dict, vinfo: dict, tiers: int) -> None:
               "Sample (first 80):_", ""]
     for src, hw, lvl in um[:80]:
         lines.append(f"- [{src}/{lvl}] {hw}")
-    VALID.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    log(f"  wrote {VALID.relative_to(ROOT)}")
+    # A replay against a scratch DB must not rewrite the committed report (found C10-W23: every full
+    # validate_index_rebuildable run dirtied reports/validation.md).
+    if Path(DB).resolve() == (ROOT / "db" / "corpus.sqlite").resolve():
+        VALID.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        log(f"  wrote {VALID.relative_to(ROOT)}")
+    else:
+        log(f"  {VALID.relative_to(ROOT)} left as committed (replay target, not the live index)")
 
 
 def main() -> int:

@@ -1871,7 +1871,35 @@ def handle_en_backfill(rows, sents, gram, table):
     return out
 
 
+def handle_item_refs(rows, sents, gram, table):
+    """W23. Each exercise ships with EXACTLY the row's `item_refs` (type, ref, role, derived_by, order),
+    in the lesson the row names. Derived, not authored (scripts/derive_item_refs.py), exact-match all
+    the same: an export whose refs moved without the table moving is a derivation nobody re-ran."""
+    where = {ex["id"]: (lid, ex) for lid, les in LESSONS.items() for ex in les.get("exercises") or []}
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['exercise']}"
+        hit = where.get(r["exercise"])
+        if hit is None:
+            out.append(("fail", C_NO_RECORD, addr, "no such exercise in the exported course"))
+            continue
+        lid, ex = hit
+        if lid != r["lesson"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"exercise lives in {lid}, the row says {r['lesson']}"))
+            continue
+        got = ex.get("item_refs")
+        if not got:
+            out.append(("fail", C_NOT_APPLIED, addr, "the exercise carries no item_refs"))
+        elif got != r["item_refs"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"item_refs {got!r} != the row's {r['item_refs']!r}"))
+        else:
+            out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # W23: every lesson exercise's item_refs (what it tests), derived by rule.
+    "item_refs.json": handle_item_refs,
     # W37: record provenance + per-field layers on the ten entities that carried none.
     "provenance_backfill.json": handle_provenance_backfill,
     # W40: the derivable half of the en backfill (translation memory + JMdict joins + kana template).

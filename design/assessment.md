@@ -16,6 +16,27 @@ and the new `contracts/topic_test.schema.json` are written by that unit, from §
 **Where this document and the manifest, the enums or `user_state.md` disagree, they win and this file
 is the bug** — the same rule `api_contract.md` opens with.
 
+> **APPLIED 2026-09-23 (C10-W23, `research/reports/w23_apply_report.md`).** Re-measured on the
+> post-W18/W20 tree; where the apply departs from the text below, the apply is the record:
+> - **Rule 0b `authored`.** 556 exercises already carried authored `item_refs` in the authoring source
+>   (bare `{type, ref}`, loaded into `exercise_item`, never exported), which this document measured as
+>   "empty everywhere". They win over the matchers, resolved to the one published id in the lesson's
+>   known set (553 exercises; 3 refs name nothing and stay in the source verbatim). The matchers agree
+>   with them on 391 of 578 refs, so the author's word is kept.
+> - **Numbers.** 4,746 exercises: 4,701 with a target (5,858 refs), 24 exempt, 21 residue
+>   (`research/derived/pending/item_refs_residue.json`); table recovery 3,172 / 3,373. 49 topic tests,
+>   13,199 pool entries; item_lesson_index places 4,970 of the 5,141 regenerated exam items.
+> - **Storage.** A new `exercise_item_ref` table (migration 019, keyed on the exercise slug) instead of
+>   two columns on `exercise_item`, which keys on registry row ids and cannot hold a `kana:` ref.
+> - **Files.** `course/topic_tests.json` (one list) instead of `course/tests/*.json`
+>   (`validate_course_chain` refuses a non-level directory under `course/`).
+> - **Form floors.** `min_production` / `min_constructed` are 1 where the pool holds that form, else 0:
+>   five topics (kana x2, saudações, kanji-exame x2) teach no cloze or sentence_build. No minting (§3.3
+>   source 3) was needed.
+> - **Not applied.** `exam_item.item_refs` (§2.6) was not emitted by W18 and is still open; the
+>   `leech_state` sentence of `user_state.md` §3 is still unedited; D2 stays the owner's, default (c)
+>   marked on `assessment_attempt`, not enforced.
+
 **Language.** Design prose and every identifier, key and enum value are neutral English
 ([`i18n.md`](i18n.md)). Only learner-facing strings are pt-BR, and the examples below show them as
 `LocaleText` objects.

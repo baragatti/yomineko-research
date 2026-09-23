@@ -425,6 +425,12 @@ export interface Lesson {
       };
       explanation?: LocaleText;
       id?: StableId;
+      item_refs?: {
+          derived_by?: "answer" | "authored" | "cited-sentence" | "kana" | "markup" | "prompt-unlocks" | "table:practice_kanji_exercises" | "table:practice_vocab_exercises";
+          ref?: StableId;
+          role?: "context" | "target";
+          type?: "conjugation-form" | "grammar" | "kana" | "kanji" | "phrase" | "vocab";
+        }[];
       prompt?: LocaleText;
       sentence_refs?: string[];
       type?: "cloze" | "handwriting" | "listening" | "matching" | "ordering" | "particle_choice" | "production" | "reading" | "recognition" | "sentence_build";
@@ -823,6 +829,64 @@ export interface Topic {
   title: LocaleText;
 }
 
+/** The blueprint for one topic's checkpoint test: the pool it draws from, the size and mix rules the draw obeys, and the pass rule. NOT a fixed question list — a sitting samples the pool with the attempt seed, so a retake is fresh. Layer C: size, mix and pass mark are pedagogy and every record carries needs_review. Built by scripts/export/build_topic_tests.py; see design/assessment.md §3. */
+export interface TopicTest {
+  slug: StableId;
+  topic: StableId;
+  level: Level;
+  title: LocaleText;
+  scope: {
+    kind: "own" | "range";
+    from_topic: StableId | null;
+    items: StableId[];
+  };
+  size: number;
+  mix: {
+    by_kind: Record<string, unknown>;
+    min_production: number;
+    min_constructed: number;
+  };
+  pool: {
+      ref: StableId;
+      source: "exam_bank" | "lesson_exercise" | "minted_cloze";
+      form: "cloze" | "handwriting" | "listening" | "matching" | "ordering" | "particle_choice" | "production" | "reading" | "recognition" | "sentence_build";
+      item_refs: unknown[];
+    }[];
+  pass_rule: {
+    criterion: "TOPIC_PASS_V1";
+    total: number;
+    per_kind_minimum: number;
+    min_items_per_kind_for_minimum: number;
+  };
+  layer: Layer;
+  needs_review: boolean;
+}
+
+/** One sat assessment that is not a JLPT simulation paper: a topic test or a placement probe. Seeded and reproducible like exam_attempt, but level-less in its address, because a placement probe spans levels by construction. The per-item answers live in exercise_attempt rows carrying context.ref = this attempt_id. RUNTIME class: minted per learner, never committed to this repo. See design/assessment.md §5.4. */
+export interface AssessmentAttempt {
+  attempt_id: StableId;
+  user_id: StableId;
+  kind: "placement" | "topic_test";
+  blueprint?: StableId | null;
+  seed: string;
+  seed_algorithm: string;
+  started_at: string;
+  submitted_at?: string | null;
+  items: StableId[];
+  raw?: number | null;
+  possible?: number | null;
+  by_kind?: Record<string, unknown> | null;
+  criterion?: "TOPIC_PASS_V1" | null;
+  passed?: boolean | null;
+  placement?: {
+    cleared_topic: StableId | null;
+    entry_lesson: StableId;
+    skipped_lessons: number;
+    cards_seeded: boolean;
+    policy: "PLACEMENT_V1";
+  };
+}
+
 /** One memory fact a learner is scheduled on: one row per (user, unlocked item, card kind). Minted when the lesson that unlocks the item is completed, from that lesson's srs.introduces_cards[] entry fanned out one row per card_type — 4,133 cards over 322 lessons, 9,453 card instances, no item enrolled twice anywhere. RUNTIME class: minted per learner, never committed to this repo. This record is a version-tagged DERIVED CACHE: every scheduling field on it can be recomputed by replaying the card's review_log rows, which is what makes an FSRS version bump or a re-optimized weight vector a replay rather than a migration. See design/user_state.md §5. */
 export interface Card {
   card_id: StableId;
@@ -886,6 +950,29 @@ export interface ExamAttempt {
     sectional_minima_met: boolean;
   };
   passed?: boolean | null;
+}
+
+/** One graded answer to a COURSEWARE question — a lesson exercise, a topic-test item, a placement probe item, a drill item or an exam item. APPEND-ONLY: never updated, never deleted. This is the mistake index's source table (design/assessment.md §4.3) and it is deliberately NOT review_log: an exercise answer never writes a review_log row and never mutates a card's scheduling fields (§4.2), because review_log is the FSRS optimizer's only training set and an exercise answer is binary, usually not due, and targets 1..n items rather than one card. RUNTIME class: minted per learner, never committed to this repo. */
+export interface ExerciseAttempt {
+  attempt_id: StableId;
+  user_id: StableId;
+  question: StableId;
+  question_form: "cloze" | "handwriting" | "listening" | "matching" | "ordering" | "particle_choice" | "production" | "reading" | "recognition" | "sentence_build";
+  item_refs: {
+      type: "conjugation-form" | "grammar" | "kana" | "kanji" | "phrase" | "vocab";
+      ref: StableId;
+      role: "context" | "target";
+    }[];
+  context: {
+    kind: "drill" | "exam" | "lesson" | "placement" | "topic_test";
+    ref: StableId | null;
+  };
+  answered_at: string;
+  correct: boolean;
+  answer_given?: string | null;
+  response_ms?: number | null;
+  graded_by: "client" | "server";
+  client_key?: string | null;
 }
 
 /** One row per (user, app feature) over the seventeen features declared in design/unlock_enums.json#feature. RUNTIME class: minted per learner, never committed to this repo. Separates being ALLOWED to use a feature from having it turned ON, because furigana-toggle and romaji-toggle are settings and one boolean cannot hold both facts. See design/user_state.md §9. */

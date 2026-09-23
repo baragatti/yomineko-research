@@ -24,6 +24,15 @@
     "feature"
   ],
   "_need_type_doc": "= unlock_type minus {srs-deck} plus {lesson}. You depend on items/features/prior-lessons, never on a deck.",
+  "item_ref_type": [
+    "vocab",
+    "kanji",
+    "grammar",
+    "kana",
+    "conjugation-form",
+    "phrase"
+  ],
+  "_item_ref_type_doc": "W23 (design/assessment.md §2.3). What an exercise's item_refs[] entry addresses. = unlock_type minus {kanji-family, feature, srs-deck} (an exercise tests an item, never a grouping, a feature or a deck), with kana-family renamed `kana` because a test target may be one GLYPH (kana:hiragana-お) as well as a family (kana:hiragana-a), the ruling card.item carries under D6.",
   "feature": [
     "srs-reviews",
     "kana-input",

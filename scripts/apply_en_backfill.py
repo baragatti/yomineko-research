@@ -31,6 +31,11 @@ from dbtarget import db_target  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
+# Off the live index (a replay) a row whose anchor is not what the live index held - the pt-BR moved,
+# the sentence or the token slot is absent - is reported and skipped rather than refused: a replay
+# re-dissects the generated sentences (sent:gen-*) and their token roles can differ, so two rows' pt-BR
+# anchors do not exist there. The live index still refuses. Found by the C10-W23 checkpoint replay.
+LIVE_INDEX = Path(DB).resolve() == (ROOT / "db" / "corpus.sqlite").resolve()
 TABLE = ROOT / "research" / "derived" / "repairs" / "en_backfill_derived.json"
 LOCATOR = re.compile(r"^(tokens|particles)\[(\d+)\]$")
 # the exporter's orders (scripts/export/export_corpus.py export_sentences)
@@ -52,6 +57,8 @@ def main() -> int:
 
     ids_cache: dict[tuple[int, str], list[int]] = {}
     problems: list[str] = []
+    skipped: list[str] = []
+    anchor_miss = problems.append if LIVE_INDEX else skipped.append
     written = done = builder = 0
     for r in rows:
         if r["db"] is None:
@@ -61,19 +68,19 @@ def main() -> int:
         m = LOCATOR.match(r["locator"] or "")
         sid = sid_of.get(r["id"])
         if not m or sid is None:
-            problems.append(f"{addr}: no such sentence / unsupported locator")
+            anchor_miss(f"{addr}: no such sentence / unsupported locator")
             continue
         coll, i = m.group(1), int(m.group(2))
         etype, q = ORDER[coll]
         ids = ids_cache.setdefault((sid, coll), [x for (x,) in con.execute(q, (sid,))])
         if i >= len(ids) or etype != r["db"]["entity_type"]:
-            problems.append(f"{addr}: locator does not resolve")
+            anchor_miss(f"{addr}: locator does not resolve")
             continue
         eid, field = ids[i], r["db"]["field"]
         pt = con.execute("SELECT value, is_list FROM localized_text WHERE entity_type=? AND entity_id=? "
                          "AND field=? AND locale='pt-BR'", (etype, eid, field)).fetchone()
         if pt is None or pt[0] != r["pt"]:
-            problems.append(f"{addr}: pt-BR moved ({pt[0] if pt else None!r} vs {r['pt']!r})")
+            anchor_miss(f"{addr}: pt-BR moved ({pt[0] if pt else None!r} vs {r['pt']!r})")
             continue
         en = con.execute("SELECT value FROM localized_text WHERE entity_type=? AND entity_id=? "
                          "AND field=? AND locale='en'", (etype, eid, field)).fetchone()
@@ -93,7 +100,10 @@ def main() -> int:
     con.close()
     verb = "would write" if args.check else "wrote"
     print(f"apply_en_backfill: {len(rows)} row(s): {verb} {written}, {done} already applied, "
-          f"{builder} builder-literal (kana)")
+          f"{builder} builder-literal (kana)"
+          + (f"; {len(skipped)} row(s) whose anchor this replay index lacks, skipped" if skipped else ""))
+    for s in skipped[:5]:
+        print(f"  [replay] {s}")
     for p in problems[:15]:
         print(f"  ! {p}")
     if problems:

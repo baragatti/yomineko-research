@@ -33,6 +33,12 @@ from dbtarget import db_target  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = db_target(ROOT / "db" / "corpus.sqlite")
+# A replay (validate_index_rebuildable) builds a DB where some of the rows this table addresses were
+# never written: the rebuild sets topic objectives on 35 of 52 topics (add_objectives.py), so 73
+# `localized_text.layer` rows have no index row at all. Off the live index an ABSENT row is reported
+# and skipped, the rule apply_card_examples.py / apply_item_refs.py follow; a row that exists and holds
+# the wrong value still refuses everywhere. Found by the C10-W23 checkpoint replay.
+LIVE_INDEX = Path(DB).resolve() == (ROOT / "db" / "corpus.sqlite").resolve()
 TABLE = ROOT / "research" / "derived" / "repairs" / "provenance_backfill.json"
 NOTE_EXISTS = ("EXISTS (SELECT 1 FROM localized_text l WHERE l.entity_type='kanji_reading' "
                "AND l.entity_id=kanji_reading.id AND l.field='note')")
@@ -50,6 +56,7 @@ def main() -> int:
         return 0
 
     problems: list[str] = []
+    skipped: list[str] = []
     written = done = 0
     for r in doc["index_repairs"]:
         k = r["kind"]
@@ -86,7 +93,9 @@ def main() -> int:
             problems.append(f"unknown repair kind {k!r}")
             continue
         got = con.execute(*sel).fetchall()
-        if len(got) != 1:
+        if not got and not LIVE_INDEX:
+            skipped.append(f"{k} {r['slug']} {r.get('field') or ''}: no index row on this replay")
+        elif len(got) != 1:
             problems.append(f"{k} {r['slug']}: {len(got)} index row(s), expected 1")
         elif got[0][0] == r["to"]:
             done += 1
@@ -102,7 +111,10 @@ def main() -> int:
     con.close()
     verb = "would write" if args.check else "wrote"
     print(f"apply_provenance_backfill: {len(doc['index_repairs'])} index repair(s): {verb} {written}, "
-          f"{done} already applied; {len(doc['rows'])} export row(s) for the validator")
+          f"{done} already applied; {len(doc['rows'])} export row(s) for the validator"
+          + (f"; {len(skipped)} row(s) absent from this replay index, skipped" if skipped else ""))
+    for s in skipped[:5]:
+        print(f"  [replay] {s}")
     for p in problems[:15]:
         print(f"  ! {p}")
     if problems:

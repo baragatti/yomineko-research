@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/exercise_attempt.schema.json",
+  "title": "exercise_attempt",
+  "description": "One graded answer to a COURSEWARE question — a lesson exercise, a topic-test item, a placement probe item, a drill item or an exam item. APPEND-ONLY: never updated, never deleted. This is the mistake index's source table (design/assessment.md §4.3) and it is deliberately NOT review_log: an exercise answer never writes a review_log row and never mutates a card's scheduling fields (§4.2), because review_log is the FSRS optimizer's only training set and an exercise answer is binary, usually not due, and targets 1..n items rather than one card. RUNTIME class: minted per learner, never committed to this repo.",
+  "x-yomineko": {
+    "entity": "exercise_attempt",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/assessment.md#4-exercise_attempt-and-the-mistake_index-view",
+    "stable_id_field": "attempt_id",
+    "key_namespace": ["xat"],
+    "note": "item_refs is COPIED from the question as served, not read through it at query time. The courseware is versioned and a repaired exercise may retarget; a mistake index that re-reads today's refs would rewrite what the learner was actually asked. The copy is bounded (median 1 entry) and it is what makes the index replayable. The mistake_index is a VIEW over this entity (WEAKNESS_V1, design/assessment.md §4.3; reference implementation in scripts/validate/test_assessment_fixtures.py), never a table."
+  },
+  "type": "object",
+  "properties": {
+    "attempt_id": {
+      "$ref": "../common.schema.json#/$defs/StableId",
+      "pattern": "^xat:[A-Za-z0-9_-]+$",
+      "description": "`xat:<opaque>`. Opaque and unordered on purpose — ordering belongs to answered_at, not to a key.",
+      "examples": ["xat:9c1e0b"]
+    },
+    "user_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^usr:[A-Za-z0-9_-]+$" },
+    "question": {
+      "$ref": "../common.schema.json#/$defs/IdRef",
+      "description": "The question as served, by stable id: `ex:` for a lesson or topic-test exercise, an exam-bank item id, a `conj:`/`role:` drill item id."
+    },
+    "question_form": {
+      "type": "string",
+      "enum": ["cloze", "handwriting", "listening", "matching", "ordering", "particle_choice", "production", "reading", "recognition", "sentence_build"],
+      "description": "The form actually shown. Stored so a miss rate can be split by form — missing a production item and missing a 4-option recognition item are not the same evidence. Vocabulary owner: design — design/lesson_schema.md ('Exercise records', the ten `type` values).",
+      "x-vocabulary": { "owner": "design", "source": "design/lesson_schema.md ('Exercise records', the ten `type` values)" }
+    },
+    "item_refs": {
+      "type": "array",
+      "minItems": 0,
+      "description": "The question's item_refs AS SERVED, copied not referenced (see x-yomineko.note). Same entry shape as common#/$defs/ItemRef minus derived_by. Empty only for a question that legitimately targets no corpus item — the pre-N5 method items in course/item_ref_exemptions.json.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string", "enum": ["conjugation-form", "grammar", "kana", "kanji", "phrase", "vocab"] },
+          "ref": { "$ref": "../common.schema.json#/$defs/IdRef" },
+          "role": { "type": "string", "enum": ["context", "target"] }
+        },
+        "required": ["type", "ref", "role"],
+        "additionalProperties": false
+      }
+    },
+    "context": {
+      "type": "object",
+      "description": "Which surface asked. `ref` is the lesson, the assessment attempt or the exam attempt the question was served in; null for a free practice-hub drill, which belongs to no sitting.",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["drill", "exam", "lesson", "placement", "topic_test"],
+          "description": "Vocabulary owner: design — design/assessment.md#44-the-schema-fragment. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+          "x-vocabulary": { "owner": "design", "source": "design/assessment.md#44-the-schema-fragment" }
+        },
+        "ref": {
+          "anyOf": [{ "$ref": "../common.schema.json#/$defs/StableId" }, { "type": "null" }],
+          "description": "`les:` for a lesson, `asm:` for a topic test or a placement sitting, `att:` for an exam paper, null for a drill."
+        }
+      },
+      "required": ["kind", "ref"],
+      "additionalProperties": false
+    },
+    "answered_at": { "type": "string", "format": "date-time" },
+    "correct": { "type": "boolean" },
+    "answer_given": { "type": ["string", "null"], "description": "What the learner submitted, as submitted. Null when the question was skipped or timed out." },
+    "response_ms": { "type": ["integer", "null"], "minimum": 0 },
+    "graded_by": {
+      "type": "string",
+      "enum": ["client", "server"],
+      "description": "Where the verdict came from. Lesson exercises grade client-side today from data the SSR HTML carries; anything scored must grade server-side against a withheld key, the way the exam simulator already does. Storing it means the mistake index can exclude client verdicts if the app ever needs to. Vocabulary owner: design — design/assessment.md#44-the-schema-fragment.",
+      "x-vocabulary": { "owner": "design", "source": "design/assessment.md#44-the-schema-fragment" }
+    },
+    "client_key": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "description": "The idempotency key the client supplied. A dropped connection during an answer must not double-count it (api_contract.md §8, 'every write is idempotent under a client-supplied key')."
+    }
+  },
+  "required": ["attempt_id", "user_id", "question", "question_form", "item_refs", "context", "answered_at", "correct", "graded_by"],
+  "additionalProperties": false
+}

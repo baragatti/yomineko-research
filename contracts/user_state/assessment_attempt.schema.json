@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yomineko.dev/contracts/user_state/assessment_attempt.schema.json",
+  "title": "assessment_attempt",
+  "description": "One sat assessment that is not a JLPT simulation paper: a topic test or a placement probe. Seeded and reproducible like exam_attempt, but level-less in its address, because a placement probe spans levels by construction. The per-item answers live in exercise_attempt rows carrying context.ref = this attempt_id. RUNTIME class: minted per learner, never committed to this repo. See design/assessment.md §5.4.",
+  "x-yomineko": {
+    "entity": "assessment_attempt",
+    "class": "runtime",
+    "hand_authored": true,
+    "design": "design/assessment.md#54-assessment_attempt-the-sitting-record-for-both",
+    "stable_id_field": "attempt_id",
+    "key_namespace": ["asm"],
+    "note": "Placement is owner decision D2, still PENDING. The default marked in design/assessment.md §5.3 is (c) (seed placed-out cards as `new`, tagged `placed-out`, under a separate cap); it is recorded per sitting in placement.cards_seeded and NOT enforced anywhere: (a) and (c) differ by that one boolean, so either answer is a re-run, not a migration."
+  },
+  "type": "object",
+  "properties": {
+    "attempt_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^asm:[A-Za-z0-9_-]+-[0-9]+$", "examples": ["asm:7f3a91-12"] },
+    "user_id": { "$ref": "../common.schema.json#/$defs/StableId", "pattern": "^usr:[A-Za-z0-9_-]+$" },
+    "kind": {
+      "type": "string",
+      "enum": ["placement", "topic_test"],
+      "description": "Vocabulary owner: design — design/assessment.md#54-assessment_attempt-the-sitting-record-for-both.",
+      "x-vocabulary": { "owner": "design", "source": "design/assessment.md#54-assessment_attempt-the-sitting-record-for-both" }
+    },
+    "blueprint": {
+      "anyOf": [{ "$ref": "../common.schema.json#/$defs/IdRef", "pattern": "^test:" }, { "type": "null" }],
+      "description": "The topic_test this sitting drew from. Null for a placement probe, which draws across many."
+    },
+    "seed": { "type": "string", "minLength": 1, "description": "The canonical serialization handed to the RNG, stored rather than recomputed — the exam_attempt rule, for the same reason." },
+    "seed_algorithm": { "type": "string", "pattern": "^(test|probe)-v[0-9]+$" },
+    "started_at": { "type": "string", "format": "date-time" },
+    "submitted_at": { "type": ["string", "null"], "format": "date-time" },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "../common.schema.json#/$defs/IdRef" },
+      "description": "The questions served, in presentation order. Answers are NOT here — they are exercise_attempt rows with context.ref = this attempt_id (design/assessment.md §4.5)."
+    },
+    "raw": { "type": ["integer", "null"], "minimum": 0 },
+    "possible": { "type": ["integer", "null"], "minimum": 0 },
+    "by_kind": {
+      "type": ["object", "null"],
+      "propertyNames": { "enum": ["conjugation-form", "grammar", "kana", "kanji", "phrase", "vocab"] },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "raw": { "type": "integer", "minimum": 0 },
+          "possible": { "type": "integer", "minimum": 0 },
+          "minimum_met": { "type": ["boolean", "null"], "description": "Null when the mix placed fewer than pass_rule.min_items_per_kind_for_minimum questions in this kind — a minimum over two questions is a coin flip, so it is not reported as met." }
+        },
+        "required": ["raw", "possible", "minimum_met"],
+        "additionalProperties": false
+      }
+    },
+    "criterion": {
+      "anyOf": [{ "type": "string", "enum": ["TOPIC_PASS_V1"] }, { "type": "null" }],
+      "description": "Which pass block was applied, copied from the blueprint at sitting time so a later edit to the blueprint cannot retroactively change a verdict. Null for a placement probe, which has no pass/fail.",
+      "x-vocabulary": { "owner": "design", "source": "design/assessment.md#33-scope-size-mix-pass" }
+    },
+    "passed": {
+      "type": ["boolean", "null"],
+      "description": "Null while unsubmitted, and null for kind `placement`, which places rather than passes. A pass is the total AND every applicable per-kind minimum, never the total alone."
+    },
+    "placement": {
+      "type": ["object", "null"],
+      "description": "The outcome of a placement probe. Null for a topic test. Every field records a decision that must be undoable (design/assessment.md §5.2 step 6).",
+      "properties": {
+        "cleared_topic": { "anyOf": [{ "$ref": "../common.schema.json#/$defs/IdRef", "pattern": "^top:" }, { "type": "null" }], "description": "The deepest topic the probe cleared. Null when the learner cleared none — a true beginner, who enters at the first lesson." },
+        "entry_lesson": { "$ref": "../common.schema.json#/$defs/IdRef", "pattern": "^les:", "description": "Where the learner starts, after the needs[] walk-back of §5.2 step 3." },
+        "skipped_lessons": { "type": "integer", "minimum": 0, "description": "How many lessons were marked completed without being sat. Stored because it is the number a support request is about." },
+        "cards_seeded": { "type": "boolean", "description": "Which D2(ii) answer this placement ran under. FALSE = option (a); TRUE = option (c), the marked default, and the cards it minted carry the `placed-out` tag. Recording it per attempt is what makes the policy reversible and auditable rather than inferred." },
+        "policy": {
+          "type": "string",
+          "enum": ["PLACEMENT_V1"],
+          "description": "Names the parameter block: topic granularity, 6 adaptive rounds of 5 items, clear at >=4/5, needs[] walk-back, skipped lessons completed with mastery `unknown`. A changed rule is a NEW value, never a redefinition — the MASTERY_V1 device. PENDING owner decision D2.",
+          "x-vocabulary": { "owner": "design", "source": "design/assessment.md#53-d2-the-options-and-the-default" }
+        }
+      },
+      "required": ["cleared_topic", "entry_lesson", "skipped_lessons", "cards_seeded", "policy"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["attempt_id", "user_id", "kind", "seed", "seed_algorithm", "started_at", "items"],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "topic_test" } }, "required": ["kind"] },
+      "then": { "properties": { "blueprint": { "type": "string" }, "placement": { "type": "null" } }, "required": ["blueprint"] },
+      "else": { "properties": { "blueprint": { "type": "null" }, "passed": { "type": "null" }, "criterion": { "type": "null" } }, "required": ["placement"] }
+    }
+  ]
+}

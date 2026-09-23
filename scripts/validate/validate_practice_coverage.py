@@ -427,6 +427,11 @@ def main() -> int:
             prompt = ex.get("prompt")
             if prompt is not None:
                 marked_refs |= set(TARGET_REF_RX.findall(json.dumps(prompt, ensure_ascii=False)))
+            # W23: the exercise's own declared targets (lesson.exercises[].item_refs, gated by
+            # validate_item_refs.py) are explicit markup too. The containment rules below are
+            # unchanged, so this can only find practice they missed, never lose any.
+            marked_refs |= {e["ref"] for e in ex.get("item_refs") or []
+                            if isinstance(e, dict) and e.get("role") == "target" and e.get("ref")}
             ex_cited = {s for s in (ex.get("sentence_refs") or [])
                         if isinstance(s, str) and s in sentences}
             cited |= ex_cited

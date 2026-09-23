@@ -162,6 +162,37 @@
       "type": "array",
       "items": { "$ref": "#/$defs/StableId" },
       "description": "A set of cross-references. A field named after an entity (`grammar`, `kanji`, `vocab`) holds references; a count of the same thing is named `*_count` so the two can never be confused by a consumer."
+    },
+    "ItemRef": {
+      "type": "object",
+      "description": "W23 (design/assessment.md §2.5). One item a question TESTS, by published stable id. The one shared definition, so the three places that carry it cannot drift: topic_test.pool[].item_refs $refs it directly; lesson.exercises[].item_refs is generated with the same keys and additionally REQUIRES derived_by (a corpus record says which rule made it); exercise_attempt.item_refs drops derived_by (a learner's answer does not re-record how the courseware decided what it asked).",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["conjugation-form", "grammar", "kana", "kanji", "phrase", "vocab"],
+          "description": "Which registry `ref` addresses. Vocabulary owner: design — design/unlock_enums.json#item_ref_type.",
+          "x-vocabulary": { "owner": "design", "source": "design/unlock_enums.json#item_ref_type" }
+        },
+        "ref": {
+          "$ref": "#/$defs/IdRef",
+          "pattern": "^(vocab|kanji|gram|kana|conj|phrase):",
+          "description": "The item. `kana:` at either granularity: the family (kana:hiragana-a) or the glyph (kana:hiragana-お)."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["context", "target"],
+          "description": "`target` = a wrong answer is evidence about this item; `context` = present, not asked. Vocabulary owner: design — design/assessment.md#2-item_refs-what-an-exercise-tests.",
+          "x-vocabulary": { "owner": "design", "source": "design/assessment.md#2-item_refs-what-an-exercise-tests" }
+        },
+        "derived_by": {
+          "type": "string",
+          "enum": ["answer", "authored", "cited-sentence", "kana", "markup", "prompt-unlocks", "table:practice_kanji_exercises", "table:practice_vocab_exercises"],
+          "description": "Which rule produced the entry (scripts/derive_item_refs.py). Vocabulary owner: design — design/assessment.md#21-the-field.",
+          "x-vocabulary": { "owner": "design", "source": "design/assessment.md#21-the-field" }
+        }
+      },
+      "required": ["type", "ref", "role"],
+      "additionalProperties": false
     }
   }
 }

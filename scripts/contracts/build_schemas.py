@@ -75,12 +75,17 @@ COMMON = "common.schema.json"
 #                      measure and a regeneration would narrow it to `{}` exactly as it would a
 #                      runtime entity. Unlike those it lives in contracts/ flat, because it ships
 #                      with the data rather than being minted per learner.
+#   BLUEPRINT        — W23's topic_test (design/assessment.md §3.4). Content with committed records, but
+#                      a blueprint whose size / mix / pass rule are declared pedagogy, not a measured
+#                      shape, and whose pool entries share common#/$defs/ItemRef.
 HANDWRITTEN_MAPS = {"capability_lesson_map", "kana_family"}
 RUNTIME_DIR = "user_state"
-RUNTIME = {"card", "exam_attempt", "feature_state", "lesson_progress", "review_log",
-           "skill_state", "user"}
+# W23 added exercise_attempt + assessment_attempt (design/assessment.md §4.4 / §5.4).
+RUNTIME = {"assessment_attempt", "card", "exam_attempt", "exercise_attempt", "feature_state",
+           "lesson_progress", "review_log", "skill_state", "user"}
 LEDGER = {"review_ledger"}
-HANDWRITTEN = HANDWRITTEN_MAPS | RUNTIME | LEDGER
+BLUEPRINT = {"topic_test"}
+HANDWRITTEN = HANDWRITTEN_MAPS | RUNTIME | LEDGER | BLUEPRINT
 
 
 def schema_path(entity: str) -> Path:
@@ -330,7 +335,35 @@ _sentence_register_rule = vocabulary(
     "〜なさい is filed `polite` and kept out of the speaking path by this name, rather than by a "
     "tenth D7 value that would cost every consumer.")
 
+# W23 (design/assessment.md §2.5). What an exercise TESTS. Registered as LEAF paths: infer_shapes walks
+# `exercises[].item_refs[].<key>`, and emit() only applies a hand-owned shape to a node with no children.
+_item_ref_type = design("item_ref_type", "design/unlock_enums.json#item_ref_type",
+                        "Which registry `ref` addresses. unlock_type minus {kanji-family, feature, "
+                        "srs-deck}, with the family form renamed `kana` because a test target may be one "
+                        "glyph (design/assessment.md §2.3).")
+_item_ref_role = vocabulary(
+    ["context", "target"], "design", "design/assessment.md#2-item_refs-what-an-exercise-tests",
+    "`target` is what the question asks and what a wrong answer is evidence about (the mistake index, "
+    "the topic-test assembler and the placement probe key on it). `context` is present-but-incidental "
+    "and contracted-and-empty today.")
+_item_ref_derived_by = vocabulary(
+    ["answer", "authored", "cited-sentence", "kana", "markup", "prompt-unlocks",
+     "table:practice_kanji_exercises", "table:practice_vocab_exercises"],
+    "design", "design/assessment.md#21-the-field",
+    "Which rule produced this entry (scripts/derive_item_refs.py). A `table:` value means the row "
+    "carried its own target; `authored` means an author wrote it. Stored because a derived ref is good "
+    "evidence and not a fact: validate_item_refs.py check E re-derives every rule-made entry.")
+
 _register({
+    "lesson.exercises[].item_refs[].type": _item_ref_type,
+    "lesson.exercises[].item_refs[].role": _item_ref_role,
+    "lesson.exercises[].item_refs[].derived_by": _item_ref_derived_by,
+    "lesson.exercises[].item_refs[].ref": {
+        "$ref": "common.schema.json#/$defs/IdRef",
+        "pattern": "^(vocab|kanji|gram|kana|conj|phrase):",
+        "description": "The item, by published stable id: `vocab:` slugs (never headwords), `kanji:`, "
+                       "`gram:`, and `kana:` at either granularity (family or glyph).",
+    },
     "sentence.register": _sentence_register,
     "sentence.register_rule": _sentence_register_rule,
     "lesson.exercises[].type": _exercise_type,
@@ -1037,7 +1070,7 @@ def main() -> int:
         extra = f", {b} shape branches" if b else ""
         print(f"  {e:22} {p:>3} properties, {r:>3} required{extra}")
     print(f"\n{len(written)} schemas -> contracts/  ({len(HANDWRITTEN)} hand-authored, untouched: "
-          f"{', '.join(sorted(HANDWRITTEN_MAPS | LEDGER))} + {len(RUNTIME)} runtime under "
+          f"{', '.join(sorted(HANDWRITTEN_MAPS | LEDGER | BLUEPRINT))} + {len(RUNTIME)} runtime under "
           f"contracts/{RUNTIME_DIR}/)")
     return 0
 

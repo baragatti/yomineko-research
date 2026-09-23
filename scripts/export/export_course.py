@@ -334,6 +334,28 @@ def _card_examples(con) -> dict[tuple[int, str], dict]:
     return _EXAMPLES
 
 
+_ITEM_REFS: dict[str, list[dict]] | None = None
+
+
+def _item_refs(con) -> dict[str, list[dict]]:
+    """W23. exercise slug -> its `item_refs` (design/assessment.md §2), sorted by (type, ref).
+
+    Derived by `scripts/derive_item_refs.py`, written by `scripts/apply_item_refs.py` into
+    `exercise_item_ref` (migration 019). Sorted here so the export is order-stable (the W11 lesson:
+    SQLite row order permuted 283 files with zero content change).
+    """
+    global _ITEM_REFS
+    if _ITEM_REFS is None:
+        _ITEM_REFS = {}
+        if con.execute("SELECT name FROM sqlite_master WHERE name='exercise_item_ref'").fetchone():
+            for ex, t, ref, role, by in con.execute(
+                    "SELECT exercise, item_type, ref, role, derived_by FROM exercise_item_ref "
+                    "ORDER BY exercise, item_type, ref"):
+                _ITEM_REFS.setdefault(ex, []).append(
+                    {"type": t, "ref": ref, "role": role, "derived_by": by})
+    return _ITEM_REFS
+
+
 def _srs_cards(con, lesson_id: int, unlocks: list, level: str) -> list:
     """Derive the FSRS cards a lesson enrolls from its item unlocks (deck by skill; card types per deck)."""
     keys = _production_keys(con)
@@ -415,7 +437,8 @@ def export_lessons(con: sqlite3.Connection, stubs: dict) -> int:
                               "prompt": {LOC: get_text(con, "exercise", e["id"], "prompt")},
                               "answer": json.loads(e["answer"]) if e["answer"] else None,
                               "explanation": {LOC: get_text(con, "exercise", e["id"], "explanation")},
-                              "sentence_refs": erefs})
+                              "sentence_refs": erefs,
+                              "item_refs": _item_refs(con).get(e["slug"], [])})
         title = get_text(con, "lesson", L["id"], "title")
         description = get_text(con, "lesson", L["id"], "description")
         objectives = get_text(con, "lesson", L["id"], "objectives") or []

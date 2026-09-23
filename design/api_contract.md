@@ -200,6 +200,7 @@ and `?expand=` (§6.4) is how a client asks for the referenced records in one ro
 | `course` | — | `GET /v1/courses/{id}` | `id` → `mod:pre-n5` | `course.schema.json` |
 | `topic` | `GET /v1/courses/{id}/topics` | `GET /v1/topics/{id}` | `id` → `top:…` | `topic.schema.json` |
 | `lesson` | `GET /v1/topics/{id}/lessons` | `GET /v1/lessons/{id}` | `id` → `les:…` | `lesson.schema.json` |
+| `topic_test` | — | `GET /v1/topics/{id}/test` (§8.1) | `slug` → `test:…` | `topic_test.schema.json` |
 | `speak_path` | `GET /v1/speak` | — (packing `single`) | `id` → `course:…` | `speak_path.schema.json` |
 | `speak_unit` | `GET /v1/speak/stages/{slug}/units` | `GET /v1/speak/units/{id}` | `id` → `speak:…` | `speak_unit.schema.json` |
 
@@ -303,7 +304,7 @@ the prototype already enforces by keeping the banks server-only, and
 
 ## 8. User-state routes — logical only
 
-The 7 `runtime` entities in the manifest have `files: null` and `records: null` because their records
+The 9 `runtime` entities in the manifest (the two W23 assessment ones are routed in §8.1) have `files: null` and `records: null` because their records
 are minted per learner. [`design/user_state.md`](user_state.md) is the authority for their fields;
 this section is only their route shape. **Storage is D8/W43** — nothing here picks a database.
 
@@ -338,6 +339,35 @@ Cross-layer routes read runtime and content together and are named here so no on
 address space for them: `GET /v1/me/queue` (due cards, expanded to their corpus items),
 `GET /v1/me/lessons/{id}` (progress + the lesson), `GET /v1/me/skills` (`skill_state` joined to
 `capability`).
+
+### 8.1 Assessment routes (W23, `design/assessment.md` §6)
+
+W23 added two runtime entities (`exercise_attempt`, `assessment_attempt`; 9 runtime in all), one
+content entity (`topic_test`, `course/topic_tests.json`) and one generated map
+(`course/item_lesson_index.json`). Placement stays owner decision **D2**: the routes below carry the
+default marked there, (c), as a request flag, and nothing enforces it.
+
+| route | returns | notes |
+|---|---|---|
+| `GET /v1/topics/{id}/test` | `topic_test.schema.json` | the blueprint. **Answer keys withheld**: the §7.3 rule applies to `pool[]` exactly as it does to a bank |
+| `GET /v1/index/item-lessons` | the generated map | `packing: map`; ETag from the entity hash like any other |
+| `POST /v1/topics/{id}/test/attempts` | `assessment_attempt` + the drawn items without keys | `POST` because sampling mints an attempt; the underlying data stays read-only |
+| `POST /v1/me/assessments/{attempt_id}/answers` | per-item verdict + `explanation` | grades server-side against the withheld key and appends the `exercise_attempt` row. Idempotent under `client_key` |
+| `POST /v1/me/assessments/{attempt_id}/submit` | the scored attempt | fills `raw`, `possible`, `by_kind`, `passed` |
+| `GET /v1/me/assessments`, `GET /v1/me/assessments/{attempt_id}` | `assessment_attempt` | |
+| `POST /v1/me/placement` | a placement `assessment_attempt` and its first probe round | one in progress per learner |
+| `POST /v1/me/placement/{attempt_id}/answers` | the verdict **and the next round**, or the outcome | adaptive: the server owns the search |
+| `POST /v1/me/placement/{attempt_id}/apply` | the written `lesson_progress` rows and the cards minted | the one route that acts on D2(ii); body `{ "seed_cards": true \| false }`, defaulting to (c). **Reversible** by `DELETE` on the same path |
+| `GET /v1/me/mistakes` | the `mistake_index` view | filters `?state=weak`, `?type=`, `?level=`, `?limit=`; each row carries its denominator and the card fields beside, never inside, the score |
+| `GET /v1/me/mistakes/{item}` | one item's attempts, its lesson (`introduced_by`) and its card | the remediation route |
+| `POST /v1/me/exercise-attempts` | the graded row | lesson exercises and free drills, which belong to no sitting |
+
+- **`item_refs` is served.** It is not an answer key; it is what a client needs to render "this
+  question is about 食べる".
+- **The FSRS firewall.** No route here writes `review_log` or moves a card's scheduling fields
+  (`assessment.md` §4.2); `scripts/validate/test_assessment_fixtures.py` pins it.
+- **`mistake_index` is a view** (`WEAKNESS_V1`), so it has no ETag of its own: `Cache-Control:
+  no-store`.
 
 ---
 

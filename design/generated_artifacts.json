@@ -48,6 +48,18 @@
     {
       "path": "corpus/exam_banks/removed_items.json",
       "reason": "Quarantine log of the 93 exam items withdrawn by scripts/contracts/migrate_exam_banks_p7.py, kept in full so nothing is silently lost. The exam_item glob (corpus/exam_banks/n[0-9]_*.json) excludes it on purpose: these items are NOT published to learners."
+    },
+    {
+      "path": "course/item_lesson_index.json",
+      "reason": "W23 (design/assessment.md §5.1). A generated map {question id -> the lesson that first makes it answerable}, written by scripts/export/build_item_lesson_index.py from lesson.unlocks + reading.gated_to_lesson + the sentence bank. A cache in the class of course/outline.json, not a record set: it publishes no content of its own, and validate_placement_index.py fails unless it re-derives byte for byte."
+    },
+    {
+      "path": "course/item_ref_exemptions.json",
+      "reason": "W23 exemption ledger read by validate_item_refs.py checks C and D: the lesson exercises that legitimately target no corpus item (course method and phonology), each with its reason. Validator bookkeeping, not corpus content; an entry for an exercise that gains a target FAILS."
+    },
+    {
+      "path": "course/test_exemptions.json",
+      "reason": "W23 exemption ledger read by validate_topic_tests.py check A: the topics that get no topic_test because they unlock no item, each with its reason. Validator bookkeeping, not corpus content; an exempt topic that starts teaching items FAILS."
     }
   ]
 }

@@ -993,10 +993,16 @@ def main() -> int:
 
     if args.apply:
         con.commit()
-        out = root / LEDGER
-        out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(json.dumps(ledger, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-        print(f"\nledger: {LEDGER}")
+        # A replay (validate_index_rebuildable) must not rewrite the committed ledger from a scratch
+        # DB: it re-ran the merge against an already-migrated tree and re-wrote the salvage texts in
+        # their post-repair wording. Same rule migrate_vocab_repoint.py got in C7-W29; found C10-W23.
+        if LIVE_INDEX:
+            out = root / LEDGER
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps(ledger, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+            print(f"\nledger: {LEDGER}")
+        else:
+            print(f"\nledger: {LEDGER} left as committed (replay target, not the live index)")
         print("applied. Re-export corpus/ and course/: export_corpus.py drops the deprecated rows "
               "from the published registry and writes the redirect to corpus/grammar_deprecated.json "
               "(registered in design/generated_artifacts.json); build_capabilities.py drops the "

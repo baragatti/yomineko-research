@@ -106,7 +106,20 @@
         "correct": "no negativo"
       },
       "explanation": "しか exige o verbo no negativo (ない), mas o sentido geral da frase é positivo-limitado: 'só / apenas'. Ex.: 待つしかない = 'só resta esperar'.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:gp-100",
+          "role": "target",
+          "derived_by": "prompt-unlocks"
+        },
+        {
+          "type": "grammar",
+          "ref": "gram:gp-118",
+          "role": "target",
+          "derived_by": "prompt-unlocks"
+        }
+      ],
       "sentence_refs": []
     },
     {
@@ -118,7 +131,26 @@
         "full": "待つしかない"
       },
       "explanation": "待つ ('esperar') + しか + ない ('não há'). O ない é o negativo obrigatório; a frase quer dizer 'a única opção é esperar'. Não traduza 'não esperar'; o negativo japonês vira afirmativo limitado em pt-BR.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:gp-100",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "grammar",
+          "ref": "gram:gp-118",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:待",
+          "role": "target",
+          "derived_by": "prompt-unlocks"
+        }
+      ],
       "sentence_refs": []
     },
     {
@@ -134,7 +166,20 @@
         "correct": "しか"
       },
       "explanation": "しか combina com o negativo (ない) para marcar escassez: 千円しかない = 'só tenho mil ienes (e é pouco)'. だけ NÃO usa verbo negativo, então não cabe aqui.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:gp-100",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "grammar",
+          "ref": "gram:gp-118",
+          "role": "target",
+          "derived_by": "answer"
+        }
+      ],
       "sentence_refs": []
     },
     {
@@ -151,7 +196,20 @@
         "text": "あと1日しかない。"
       },
       "explanation": "あと ('restante') + 1日 ('um dia') + しか + ない. O padrão [quantidade] + しか + verbo negativo dá o tom de pouco: 'só resta um dia'.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:gp-100",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "grammar",
+          "ref": "gram:gp-118",
+          "role": "target",
+          "derived_by": "answer"
+        }
+      ],
       "sentence_refs": []
     },
     {
@@ -168,7 +226,20 @@
         ]
       },
       "explanation": "今 ('agora') + しか + ない. しか substitui partículas como は/が, então não se diz 今がしか; só 今しか. O negativo ない fecha o sentido 'é agora ou nunca'.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:gp-100",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "grammar",
+          "ref": "gram:gp-118",
+          "role": "target",
+          "derived_by": "answer"
+        }
+      ],
       "sentence_refs": []
     },
     {
@@ -186,7 +257,14 @@
       },
       "explanation": "地 tem duas leituras sino-japonesas: チ, a comum, que abre ちず (mapa) e ちかてつ (metrô), e ジ, presa a poucas palavras. ト é a leitura do 土 que aparece dentro dele, e não vale para 地.",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "kanji",
+          "ref": "kanji:地",
+          "role": "target",
+          "derived_by": "table:practice_kanji_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-7",
@@ -200,7 +278,14 @@
       },
       "explanation": "地 é a terra como lugar e região. Ele leva o radical 土 (terra) do lado esquerdo, e é daí que vem a confusão: 土 sozinho é o solo, o chão.",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "kanji",
+          "ref": "kanji:地",
+          "role": "target",
+          "derived_by": "table:practice_kanji_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-experiencia-01-9",
@@ -217,7 +302,14 @@
       },
       "explanation": "待 é esperar. Ele anda com um bando parecidíssimo: 持 é segurar, 特 é especial e 時 é hora. Todos repetem o mesmo bloco à direita; o que muda é a peça da esquerda.",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "kanji",
+          "ref": "kanji:待",
+          "role": "target",
+          "derived_by": "table:practice_kanji_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-8",
@@ -234,7 +326,14 @@
       },
       "explanation": "とうとう significa finalmente, afinal. As outras opções são かならず (sem falta, com certeza), ほとんど (quase, na maior parte) e よく (bem).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1449890",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-9",
@@ -251,7 +350,14 @@
       },
       "explanation": "こわす significa quebrar, destruir. As outras opções são やく (assar, grelhar), ぬすむ (roubar, furtar) e ひろう (pegar (do chão), apanhar).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1199890",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-10",
@@ -268,7 +374,14 @@
       },
       "explanation": "たいてい significa geralmente, na maioria das vezes. As outras opções são りっぱ (esplêndido, admirável), ゆうめい (famoso, conhecido) e だめ (ruim, inútil).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1414580",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-11",
@@ -285,7 +398,14 @@
       },
       "explanation": "かならず significa sem falta, com certeza. As outras opções são とうとう (finalmente, afinal), まだ (ainda) e よく (bem).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1487400",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-12",
@@ -302,7 +422,14 @@
       },
       "explanation": "おる significa dobrar, curvar. As outras opções são やむ (parar (chuva, vento), cessar), わすれる (esquecer) e ふむ (pisar (em), pisar).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1385910",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-13",
@@ -319,7 +446,14 @@
       },
       "explanation": "ひろう significa pegar (do chão), apanhar. As outras opções são こわす (quebrar, destruir), おこる (ficar bravo, ficar com raiva) e ふく (soprar (vento)).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1332570",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-14",
@@ -336,7 +470,14 @@
       },
       "explanation": "やむ significa parar (chuva, vento), cessar. As outras opções são おる (dobrar, curvar), ふむ (pisar (em), pisar) e まがる (virar, dobrar (uma esquina)).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1310640",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-15",
@@ -353,7 +494,14 @@
       },
       "explanation": "ほとんど significa quase, na maior parte. As outras opções são とうとう (finalmente, afinal), かならず (sem falta, com certeza) e また (de novo, novamente).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1522050",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-16",
@@ -370,7 +518,14 @@
       },
       "explanation": "わく significa ferver, entrar em ebulição. As outras opções são なる (tocar (sino, campainha), soar), やく (assar, grelhar) e こまる (ter problemas, ficar em apuros).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1606680",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-17",
@@ -387,7 +542,14 @@
       },
       "explanation": "やく significa assar, grelhar. As outras opções são わく (ferver, entrar em ebulição), よぶ (chamar, convocar) e わたす (entregar, passar (algo a alguém)).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1350600",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-18",
@@ -404,7 +566,14 @@
       },
       "explanation": "ぬすむ significa roubar, furtar. As outras opções são こわす (quebrar, destruir), よぶ (chamar, convocar) e すわる (sentar, sentar-se).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1448440",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-forma-simples-03-19",
@@ -421,7 +590,14 @@
       },
       "explanation": "ふむ significa pisar (em), pisar. As outras opções são わすれる (esquecer), わく (ferver, entrar em ebulição) e ひく (puxar).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1450270",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     }
   ],
   "reading_refs": [

@@ -66,7 +66,14 @@
         "correct": "何とかしろ！"
       },
       "explanation": "何とかしろ usa o 命令形 (する → しろ): é o imperativo cru, seco e brusco. 〜なさい é firme mas gentil, ～てください é um pedido educado, e 〜ようと思う apenas expressa intenção, não ordem.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:gp-127",
+          "role": "target",
+          "derived_by": "prompt-unlocks"
+        }
+      ],
       "sentence_refs": [
         "sent:tatoeba-187788"
       ]
@@ -80,7 +87,20 @@
         "full": "勉強しなさい。"
       },
       "explanation": "〜なさい usa a base ます do verbo. する vira し, então 勉強する → 勉強し + なさい = 勉強しなさい. É o tom clássico de professor/pai: firme, porém não grosseiro.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:nasai",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:勉",
+          "role": "target",
+          "derived_by": "prompt-unlocks"
+        }
+      ],
       "sentence_refs": [
         "sent:tatoeba-83322"
       ]
@@ -99,7 +119,26 @@
         "correct": "待ってください"
       },
       "explanation": "Com desconhecidos e clientes, ～てください é o registro neutro e educado. 待て (命令形) soa agressivo; 待ちなさい (〜なさい) só caberia com quem está abaixo de você (filho/aluno), nunca com um cliente.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:te-kudasai",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "grammar",
+          "ref": "gram:tte",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "kanji",
+          "ref": "kanji:待",
+          "role": "target",
+          "derived_by": "answer"
+        }
+      ],
       "sentence_refs": []
     },
     {
@@ -116,7 +155,14 @@
         "text": "目を開けなさい。"
       },
       "explanation": "開ける é do grupo 2: base ます = 開け, mais なさい = 開けなさい. O objeto 目 leva a partícula を. Resultado: 目を開けなさい, exatamente o tom de quem tem autoridade falando com quem está abaixo.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:nasai",
+          "role": "target",
+          "derived_by": "answer"
+        }
+      ],
       "sentence_refs": [
         "sent:tatoeba-79943"
       ]
@@ -135,7 +181,20 @@
         ]
       },
       "explanation": "漬ける é grupo 2: base ます = 漬け, mais なさい = 漬けなさい. A coisa que se mergulha leva を (野菜を) e o lugar onde se mergulha leva に (水に). Tom de autoridade gentil, perfeito para um chef instruindo o aprendiz.",
-      "item_refs": [],
+      "item_refs": [
+        {
+          "type": "grammar",
+          "ref": "gram:nasai",
+          "role": "target",
+          "derived_by": "answer"
+        },
+        {
+          "type": "vocab",
+          "ref": "vocab:1433680",
+          "role": "target",
+          "derived_by": "prompt-unlocks"
+        }
+      ],
       "sentence_refs": []
     },
     {
@@ -151,7 +210,14 @@
       },
       "explanation": "勉 é 'empenho' e traz 力 (força) embaixo; ao lado de 強 (forte) forma 勉強, o estudo como esforço. É a palavra que vira verbo com する.",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "kanji",
+          "ref": "kanji:勉",
+          "role": "target",
+          "derived_by": "table:practice_kanji_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-volitivo-06-6",
@@ -168,7 +234,14 @@
       },
       "explanation": "つける significa mergulhar, deixar de molho. As outras opções são なく (chorar), しまう (acabar (fazendo), fazer por completo (muitas vezes com pesar)) e かむ (morder, mastigar).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1433680",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     },
     {
       "slug": "ex:n4-volitivo-06-7",
@@ -185,7 +258,14 @@
       },
       "explanation": "あかんぼう significa bebê, neném. As outras opções são ばしょ (lugar, local), れんらく (contato, comunicação) e メートル (metro (unidade de comprimento)).",
       "sentence_refs": [],
-      "item_refs": []
+      "item_refs": [
+        {
+          "type": "vocab",
+          "ref": "vocab:1383310",
+          "role": "target",
+          "derived_by": "table:practice_vocab_exercises"
+        }
+      ]
     }
   ],
   "reading_refs": [

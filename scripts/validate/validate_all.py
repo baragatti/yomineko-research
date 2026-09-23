@@ -159,6 +159,13 @@ SUITE = [
     # over the three surfaces A8 names.
     ("validate_sentence_register.py", "code"),  # stored == re-derived; enum; residue ratchet
     ("test_speak_filter.py", "code"),           # the filter + the owner's blocklist, incl. empty
+    # ---- W23 (design/assessment.md). What an exercise tests, the topic tests built on it, the
+    # placement index, and the runtime invariants of the two attempt entities. Each plant-proved on a
+    # copied tree (research/reports/w23_apply_report.md).
+    ("validate_item_refs.py", "code"),         # refs resolve, gated, re-derived; residue ratchet
+    ("validate_topic_tests.py", "code"),       # scope/size/mix/pool/pass; byte-identical rebuild
+    ("validate_placement_index.py", "code"),   # item -> lesson map re-derives; coverage floor
+    ("test_assessment_fixtures.py", "code"),   # FSRS firewall, counters, WEAKNESS_V1, placement
 ]
 
 
