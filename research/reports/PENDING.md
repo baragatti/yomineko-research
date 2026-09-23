@@ -267,6 +267,23 @@ a second locale is scheduled. (c) Drop `en` from pedagogy fields entirely.
 **Recommendation.** (b). The parity validator still guards every field that has English, and the
 residue list is tracked so the day a second locale starts, the work list already exists.
 
+### B-W25. N3 pacing (D11) — measured proposal ready (2026-09-23)
+**Finding.** N3 vocabulary was dealt to lessons in **gojuon order**, not by theme or grammar: 91 of 101
+N3 lessons draw at least half their words from one initial kana. The words of a real sentence sit a
+median 32 lessons apart, so only 304 of 1,596 N3 words have three readable examples at the lesson
+that teaches them, and 36 lessons never use one of their own new words in the grammar explanation.
+Median 17 new words per lesson (N4: 7); the deck cap already spreads N3 over 160+ days.
+**Recommendation (option B).** Grammar lessons keep at most 8 words they actually use; the other
+~1,170 words are regrouped by theme into vocabulary lessons of at most 10. Close only the part of
+the ~750-word band gap the 情報検索 section needs; the rest waits for D12 (level evidence).
+Detail, options A/B/C with measured consequences and cost: `research/reports/w25_proposal.md`.
+
+### B-W21b. Four forward-reference rewrites rejected by the verifier
+Rows 2, 6 and 7 of `research/derived/pending/w21b_rewrites.json` would remove the only practice of
+items W21b moved into those lessons (gp-48 何か is perguntas-06's headline grammar); row 4 needs
+gram:gp-31 returned to les:n5-perguntas-04. Options: re-author the exercise, or move the unlocks
+back. Eleven usable rows apply in the writer chain.
+
 ## C. Mechanical items — done by hand today
 
 - bank `言う` stored as ゆう on 5 source tokens (checked against the re-dissection gate first)
