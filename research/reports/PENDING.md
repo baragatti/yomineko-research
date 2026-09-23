@@ -285,6 +285,19 @@ items W21b moved into those lessons (gp-48 何か is perguntas-06's headline gra
 gram:gp-31 returned to les:n5-perguntas-04. Options: re-author the exercise, or move the unlocks
 back. Eleven usable rows apply in the writer chain.
 
+### B-W28. Example sentences on SRS cards: how far above the card's level? (2026-09-23)
+**Finding.** W28 restricted a card's example to sentences at or below its lesson's level, so only
+1,256 of 2,951 vocab cards carry one (N5: 163 of 688). Measured on a snapshot:
+| rule | vocab cards with an example | total cards |
+|---|---|---|
+| current (at or below the level) | 1,256 | 2,242 of 4,290 |
+| A: up to one level above | 1,810 (N5 272) | 2,858 |
+| B: any level, at most 2 unknown words | 2,718 (N5 635) | 3,794 |
+B pulls N1 sentences onto N5 and pre-N5 cards (up to 6 unknown kanji). **Recommendation: A.** Cards are
+reviewed weeks after the lesson, the translation is shown, and A's picks stay within the next level's
+budget. Both tables are ready (`research/derived/pending/card_examples_option_a.json`, `_option_b.json`,
+report `research/reports/card_examples_bw28.md`); either applies with the existing script.
+
 ## C. Mechanical items — done by hand today
 
 - bank `言う` stored as ゆう on 5 source tokens (checked against the re-dissection gate first)

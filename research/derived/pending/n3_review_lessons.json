@@ -1,0 +1,921 @@
+{
+ "what_this_is": "W22 §3 authoring: the three N3 review lessons (top:n3-revisao), in the shape of top:n5-revisao / top:n4-revisao (3 lessons, one contiguous block each, recap prose per topic, 6 exercises typed recognition,recognition,cloze,cloze,sentence_build,production, no body chips, no new item unlocks). Layer C, needs_review. Pending: not applied.",
+ "topic_patch": {
+  "id": "top:n3-revisao",
+  "objectives": [
+   "Consolidar o N3 e checar os can-do"
+  ],
+  "lesson_count": 3
+ },
+ "apply_notes": [
+  "feat:jlpt-sim-n3 moves from les:n3-revisao-01 to les:n3-revisao-03 (one row of research/derived/repairs/w22_n3_dead_end.json).",
+  "les:n3-revisao-01 keeps its 4 vocab unlocks (vocab:1107060 ピン, 1512360 便, 1435080 停留所, 1605680 郵便) per the brief's keep_existing_unlocks; they are no longer shown in the body or drilled by its exercises (their SRS cards carry their own example sentences). OWNER DECISION still open: relocate them or accept the exception.",
+  "needs: the chain given here is the brief's; `needs` is derived (build_needs_table.py review-chain rule, C4), so the apply should re-derive rather than copy it.",
+  "item_refs: each exercise carries its W22 anchor as derived_by=authored; derive_item_refs.py adds the rest.",
+  "les:n3-revisao-01 keeps the <reading ref=\"read:n3-revisao-01-01\"/> block it already carries (the passage is gated to this lesson); the old 7 exercises and 2 sentence cards of revisao-01 are replaced.",
+  "Every full Japanese sentence in bodies and exercises is an existing corpus/sentences/bank.json row whose vocab and kanji are inside the review cumulative_known_set (checked by the builder); one is a pre-existing ai_generated bank row (sent:gen-3a480b34e861, already needs_review). Other <jp> spans are grammar-form fragments from the corpus/grammar/n3.json records."
+ ],
+ "lessons": [
+  {
+   "slug": "les:n3-revisao-01",
+   "topic": "top:n3-revisao",
+   "order": 1,
+   "schema_version": "1.0",
+   "title": "Revisão N3; Conectores, tempo, perspectiva e causa",
+   "description": "Primeira parada de revisão do N3: os conectores que costuram o discurso, as formas que situam a ação no tempo, as expressões de tema e ponto de vista, e o par causa e consequência (おかげで, せいで, わけだ).",
+   "objectives": [
+    "Escolher o conector certo para somar, contrastar, reformular, mudar de assunto ou justificar",
+    "Situar uma ação no tempo com うちに, 最中に, まで, たびに, ついでに e ところだった",
+    "Delimitar tema, ponto de vista e fonte com について, に関して, にとって, によれば e に対して",
+    "Atribuir uma causa com a carga certa (おかげで ou せいで) e tirar conclusões com わけだ",
+    "Reconhecer as armadilhas mais comuns para falantes de português nesses quatro blocos"
+   ],
+   "needs": [
+    {
+     "type": "lesson",
+     "ref": "les:n3-estrutura-06",
+     "note": "É a última lição do bloco que esta revisão cobre."
+    }
+   ],
+   "unlocks": [
+    {
+     "type": "vocab",
+     "ref": "vocab:1107060"
+    },
+    {
+     "type": "vocab",
+     "ref": "vocab:1512360"
+    },
+    {
+     "type": "vocab",
+     "ref": "vocab:1435080"
+    },
+    {
+     "type": "vocab",
+     "ref": "vocab:1605680"
+    }
+   ],
+   "feature_unlocks": [],
+   "sentence_refs": [],
+   "body": "<heading level=\"2\"><text>Revisão N3: conectores, tempo, perspectiva e causa</text></heading>\n\n<p><text>Esta é a primeira de três paradas para revisar o N3. Nada de matéria nova aqui: a ideia é juntar o que os quatro primeiros tópicos ensinaram, lembrar o contraste que separa cada forma da vizinha e rever as armadilhas de quem fala português. Leia com calma e marque o que ainda treme.</text></p>\n\n<heading level=\"3\"><text>1. Conectores: para onde vai a próxima frase</text></heading>\n\n<p><text>Os conectores abrem a segunda frase e avisam o ouvinte para onde o raciocínio vai. Para </text><text weight=\"bold\">somar</text><text>, </text><jp>その上</jp><text> reforça o primeiro ponto na mesma direção: </text><jp>この靴は値段が高いし、その上、小さすぎる。</jp><text> (\"este sapato é caro e, ainda por cima, é pequeno demais\"). </text><jp>それと</jp><text> acrescenta mais um item em tom de conversa. Para </text><text weight=\"bold\">escolher</text><text>, </text><jp>それとも</jp><text> abre uma alternativa: </text><jp>１３って言った？それとも３０？</jp><text> (\"você disse 13? Ou foi 30?\").</text></p>\n\n<p><text>Para </text><text weight=\"bold\">virar</text><text> a frase, </text><jp>だけど</jp><text> contrasta, </text><jp>つまり</jp><text> reformula (</text><jp>つまりどういうこと？</jp><text>, \"ou seja, o que isso quer dizer?\") e </text><jp>ところで</jp><text> muda de assunto. Para </text><text weight=\"bold\">justificar</text><text>, </text><jp>ですから</jp><text> é a versão educada de </text><jp>から</jp><text>, e </text><jp>なぜなら</jp><text> abre uma frase só para dar o motivo, fechando com </text><jp>から</jp><text>. Para dar </text><text weight=\"bold\">exemplos</text><text> sem fechar a lista, </text><jp>など</jp><text> é neutro e </text><jp>なんか</jp><text> é coloquial, às vezes com tom de desdém.</text></p>\n\n<note type=\"l1-pitfall\"><p><jp>それと</jp><text> soma, </text><jp>それとも</jp><text> oferece uma escolha: é uma sílaba de diferença e o sentido muda por completo. E </text><jp>その上</jp><text> só junta coisas da mesma polaridade, duas vantagens ou dois problemas, nunca uma de cada.</text></p></note>\n\n<heading level=\"3\"><text>2. Tempo: a janela, o instante e o quase</text></heading>\n\n<p><jp>うちに</jp><text> manda aproveitar enquanto a condição dura: </text><jp>朝のうちに電話するよ。</jp><text> (\"eu te ligo de manhã, viu\"). </text><jp>最中に</jp><text> marca o meio de uma ação em curso, quase sempre com uma interrupção: </text><jp>お話の最中にすみません。</jp><text> (\"desculpe interromper a conversa de vocês\"). </text><jp>まで</jp><text> é o limite de algo contínuo, como em </text><jp>夜までいて花火を見ていこうよ。</jp><text> (\"vamos ficar até a noite e ver os fogos de artifício!\"), e </text><jp>までに</jp><text> é prazo para algo pontual.</text></p>\n\n<p><text>Para espalhar a ação no tempo, </text><jp>から～にかけて</jp><text> cobre uma faixa sem limites exatos (</text><jp>雨がよく降るのは、５月から８月にかけてです。</jp><text>), </text><jp>たびに</jp><text> liga uma reação a cada repetição (</text><jp>発言するたびにボロが出る。</jp><text>) e </text><jp>ついでに</jp><text> faz uma segunda coisa de carona na primeira (</text><jp>ついでに手紙だしてきてよ。</jp><text>, \"já que você vai sair, aproveita e posta a carta\").</text></p>\n\n<p><text>E para o instante: </text><jp>たとたん</jp><text> é o \"assim que\" abrupto, seguido de algo inesperado; </text><jp>たところ</jp><text> liga uma ação à descoberta que veio logo depois; </text><jp>てはじめて</jp><text> é a percepção que só chega depois (</text><jp>９時になってはじめて彼は帰ってきた。</jp><text>, \"ele só voltou pra casa quando deu nove horas\"). Para fechar, </text><jp>きり</jp><text> diz que desde aquele ponto nada mudou, e </text><jp>ところだった</jp><text> conta o que quase aconteceu.</text></p>\n\n<note type=\"l1-pitfall\"><p><text>Em português a gente diz \"quase fui atropelado\", no passado. Em japonês o verbo antes de </text><jp>ところだった</jp><text> fica na forma de dicionário, e só o </text><jp>ところだった</jp><text> carrega o passado.</text></p></note>\n\n<heading level=\"3\"><text>3. Perspectiva: sobre o quê, para quem, segundo quem</text></heading>\n\n<p><jp>について</jp><text> marca o assunto no dia a dia (</text><jp>料理について何か質問がありますか。</jp><text>, \"você tem alguma pergunta sobre a comida?\"), </text><jp>に関して</jp><text> faz o mesmo num tom mais formal e </text><jp>において</jp><text> é a versão escrita de </text><jp>で</jp><text> para lugar, tempo ou âmbito (</text><jp>この点においてはあなたには同意できません。</jp><text>).</text></p>\n\n<p><jp>にとって</jp><text> marca o ponto de vista de quem acha algo importante ou difícil: </text><jp>私にとってのるかそるかだった。</jp><text> (\"para mim, era tudo ou nada\"). </text><jp>によれば</jp><text> aponta a fonte, e a frase costuma fechar com </text><jp>そうだ</jp><text> ou </text><jp>でしょう</jp><text>: </text><jp>天気予報によればあすは雪だ。</jp><text> (\"segundo a previsão do tempo, amanhã vai nevar\"). </text><jp>に対して</jp><text> dirige uma atitude a um alvo ou contrasta duas coisas (</text><jp>ドルは円に対して下がった。</jp><text>). Por fim, </text><jp>にかわって</jp><text> é agir no lugar de alguém, e </text><jp>に比べて</jp><text> compara duas coisas.</text></p>\n\n<note type=\"l1-pitfall\"><p><text>O \"para\" do português serve para tudo, mas </text><jp>にとって</jp><text> vale só para ponto de vista: quem recebe algo leva </text><jp>に</jp><text>, e finalidade é </text><jp>ために</jp><text>. E atenção à ordem em </text><jp>に比べて</jp><text>: a referência (o nosso \"do que\") vem antes, ao contrário do português.</text></p></note>\n\n<heading level=\"3\"><text>4. Causa e consequência</text></heading>\n\n<p><jp>おかげで</jp><text> dá crédito a um resultado bom, com tom de gratidão: </text><jp>みんなのおかげで立ち直れた。</jp><text> (\"consegui me reerguer graças a todos\"). </text><jp>せいで</jp><text> joga a culpa num resultado ruim: </text><jp>あなたのせいではありません。</jp><text> (\"a culpa não é sua\").</text></p>\n\n<p><text>No registro formal, </text><jp>によって</jp><text> marca agente, meio ou variação (</text><jp>ドアはジムによって開けられます。</jp><text>, \"a porta é aberta pelo Jim\"); </text><jp>その結果</jp><text> encadeia o desfecho factual e </text><jp>そのために</jp><text> marca a finalidade buscada. Para explicar, </text><jp>というのだ</jp><text> justifica com ênfase e </text><jp>わけだ</jp><text> tira a conclusão lógica, o \"agora faz sentido\": </text><jp>道理で、君が喜ぶわけだ。</jp><text> (\"com razão você está tão feliz\"). No registro íntimo, </text><jp>(ん)だもの</jp><text> e </text><jp>んだもん</jp><text> dão a justificativa com manha: </text><jp>私はあんたのお姉ちゃんだもん。</jp></p>\n\n<note type=\"l1-pitfall\"><p><text>Em português \"por causa de\" serve para o bom e para o ruim. Em japonês, trocar </text><jp>おかげで</jp><text> por </text><jp>せいで</jp><text> muda toda a carga da frase, então escolha de propósito.</text></p></note>\n\n<heading level=\"3\"><text>Resumindo os quatro blocos</text></heading>\n\n<list ordered=\"false\">\n <item><text>Conectores: </text><jp>その上</jp><text> e </text><jp>それと</jp><text> somam, </text><jp>それとも</jp><text> oferece escolha, </text><jp>つまり</jp><text> reformula, </text><jp>ところで</jp><text> muda de assunto, </text><jp>なぜなら</jp><text> justifica.</text></item>\n <item><text>Tempo: </text><jp>うちに</jp><text> (enquanto dura), </text><jp>最中に</jp><text> (bem no meio), </text><jp>まで</jp><text> (até, contínuo), </text><jp>たびに</jp><text> (toda vez), </text><jp>ところだった</jp><text> (quase).</text></item>\n <item><text>Perspectiva: </text><jp>について</jp><text> e </text><jp>に関して</jp><text> (tema), </text><jp>にとって</jp><text> (ponto de vista), </text><jp>によれば</jp><text> (fonte), </text><jp>に対して</jp><text> (alvo ou contraste).</text></item>\n <item><text>Causa: </text><jp>おかげで</jp><text> (resultado bom), </text><jp>せいで</jp><text> (resultado ruim), </text><jp>わけだ</jp><text> (conclusão lógica), </text><jp>んだもん</jp><text> (justificativa com manha).</text></item>\n</list>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n3-revisao-01-1\"/>\n<exercise ref=\"ex:n3-revisao-01-2\"/>\n<exercise ref=\"ex:n3-revisao-01-3\"/>\n<exercise ref=\"ex:n3-revisao-01-4\"/>\n<exercise ref=\"ex:n3-revisao-01-5\"/>\n<exercise ref=\"ex:n3-revisao-01-6\"/><heading level=\"3\"><text>Leitura</text></heading><reading ref=\"read:n3-revisao-01-01\"/><checklist>\n <check><text>Escolho entre その上, それと e それとも sem confundir soma com alternativa.</text></check>\n <check><text>Situo uma ação no tempo com うちに, 最中に e まで, e sei que までに é prazo.</text></check>\n <check><text>Uso について, に関して, にとって, によれば e に対して conforme o tema, o ponto de vista ou a fonte.</text></check>\n <check><text>Escolho おかげで ou せいで pela carga do resultado e reconheço わけだ como conclusão lógica.</text></check>\n</checklist>",
+   "exercises": [
+    {
+     "slug": "ex:n3-revisao-01-1",
+     "type": "recognition",
+     "prompt": "Na frase この靴は値段が高いし、＿、小さすぎる。 (\"Este sapato é caro e, ainda por cima, é pequeno demais.\"), qual conector soma um segundo problema ao primeiro, na mesma direção?",
+     "answer": {
+      "choices": [
+       "その上",
+       "それとも",
+       "ところで",
+       "つまり"
+      ],
+      "correct": "その上"
+     },
+     "explanation": "その上 soma um ponto que reforça o primeiro (aqui, dois defeitos do sapato). それとも abriria uma escolha, ところで mudaria de assunto e つまり reformularia o que já foi dito.",
+     "sentence_refs": [
+      "sent:tatoeba-222251"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-sono-ue",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-01-2",
+     "type": "recognition",
+     "prompt": "話は三時＿だらだらと続いた。 (\"A conversa se arrastou até as três horas.\") A conversa durou o tempo todo, até esse ponto. Qual forma completa a frase?",
+     "answer": {
+      "choices": [
+       "まで",
+       "までに",
+       "うちに",
+       "最中に"
+      ],
+      "correct": "まで"
+     },
+     "explanation": "まで marca o limite de algo contínuo: a conversa foi até as três sem parar. までに seria prazo para algo pontual, うちに é aproveitar enquanto a condição dura e 最中に é bem no meio de uma ação.",
+     "sentence_refs": [
+      "sent:tatoeba-77157"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-made",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-01-3",
+     "type": "cloze",
+     "prompt": "Complete com a expressão formal de tema (\"a respeito de\"): その件＿＿あなたに同意しません。 (\"Não concordo com você a respeito desse assunto.\")",
+     "answer": {
+      "text": "に関して",
+      "full": "その件に関してあなたに同意しません。"
+     },
+     "explanation": "に関して marca o assunto em tom mais formal que について. Aqui ele delimita sobre o que é a discordância.",
+     "sentence_refs": [
+      "sent:tatoeba-211071"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-ni-kanshite",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-01-4",
+     "type": "cloze",
+     "prompt": "Complete dando crédito ao que causou um resultado bom: 木の＿＿＿＿雨にぬれずにすんだ。 (\"Graças às árvores, acabei não me molhando na chuva.\")",
+     "answer": {
+      "text": "おかげで",
+      "full": "木のおかげで雨にぬれずにすんだ。"
+     },
+     "explanation": "O resultado é bom (não se molhar), então a causa leva おかげで. せいで seria para um resultado ruim.",
+     "sentence_refs": [
+      "sent:tatoeba-80133"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-okagede",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-01-5",
+     "type": "sentence_build",
+     "prompt": "Monte \"E ainda por cima começou a chover.\" com as peças: [降り出している] [その上] [雨が]",
+     "answer": {
+      "order": [
+       "その上",
+       "雨が",
+       "降り出している"
+      ],
+      "text": "その上雨が降り出している。"
+     },
+     "explanation": "その上 abre a frase e soma mais um problema ao que já tinha sido dito; depois vem o sujeito 雨が e o verbo 降り出している (\"começou a chover\").",
+     "sentence_refs": [
+      "sent:tatoeba-208980"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-sono-ue",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-01-6",
+     "type": "production",
+     "prompt": "Diga em japonês \"Espere até amanhã de manhã.\" usando 明日の朝 (あしたのあさ) e a ordem 待ちなさい.",
+     "answer": {
+      "text": "明日の朝まで待ちなさい",
+      "accept": [
+       "明日の朝まで待ちなさい",
+       "明日の朝まで待ちなさい。",
+       "あしたの朝まで待ちなさい",
+       "あしたのあさまでまちなさい"
+      ]
+     },
+     "explanation": "A espera dura sem parar até um ponto, então o limite leva まで: 明日の朝まで. までに pediria algo pontual feito antes do prazo, o que não é o caso de esperar.",
+     "sentence_refs": [
+      "sent:tatoeba-80520"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-made",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    }
+   ],
+   "reading_refs": [
+    "read:n3-revisao-01-01"
+   ],
+   "layer": "C",
+   "created_by": "ai",
+   "needs_review": true
+  },
+  {
+   "slug": "les:n3-revisao-02",
+   "topic": "top:n3-revisao",
+   "order": 2,
+   "schema_version": "1.0",
+   "title": "Revisão N3; Estado, intenção, deveres, desejos e limites",
+   "description": "Segunda parada de revisão do N3: onde a ação está (かけ, まま, っぱなし), intenção e decisão (ようとした, ことにしている), conselhos e deveres (べきだ, わけにはいかない), desejos e hipóteses (てほしい, としたら, ばよかった) e limites de grau (くらい, しかない, ほど).",
+   "objectives": [
+    "Descrever o estado de uma ação com ている, かけ, たて, まま, ないで/ずに e っぱなし",
+    "Expressar intenção, tentativa e decisão com ようと思う, ようとした, ことにしている, ことになっている e ように",
+    "Aconselhar e falar de dever e permissão com てみる, ことだ, べきだ, せてください e わけにはいかない",
+    "Formular desejos, hipóteses e arrependimentos com てほしい, ますように, としたら, ないと e ばよかった",
+    "Medir grau e limite com くらい, しかない, ばかり e ば～ほど"
+   ],
+   "needs": [
+    {
+     "type": "lesson",
+     "ref": "les:n3-revisao-01",
+     "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou."
+    }
+   ],
+   "unlocks": [],
+   "feature_unlocks": [],
+   "sentence_refs": [],
+   "body": "<heading level=\"2\"><text>Revisão N3: estado, intenção, deveres, desejos e limites</text></heading>\n\n<p><text>Segunda parada. Os cinco tópicos daqui giram em torno de uma pergunta: em que pé está a ação, e o que a pessoa quer, deve ou consegue fazer com ela. Nada novo, só pôr em ordem o que você já viu e lembrar onde cada forma se separa da vizinha.</text></p>\n\n<heading level=\"3\"><text>1. Estado: onde a ação está</text></heading>\n\n<p><jp>ている</jp><text> mostra a ação em andamento ou o estado que ficou: </text><jp>両親は歳を取っている。</jp><text> (\"meus pais já estão velhos\"). </text><jp>かけ</jp><text> é o que começou e não terminou; </text><jp>たて</jp><text> é o recém-feito, fresquinho. Para concluir (ou não): </text><jp>上げる</jp><text> leva a ação até o fim com esforço, </text><jp>切れない</jp><text> diz que não dá conta de terminar (</text><jp>彼は使い切れないほどのお金持ちだ。</jp><text>) e </text><jp>ちゃった</jp><text> é o \"acabei fazendo\", muitas vezes com arrependimento (</text><jp>もうやっちゃったよ。</jp><text>).</text></p>\n\n<p><text>Para o modo: </text><jp>ないで</jp><text> e </text><jp>ずに</jp><text> são \"sem fazer\", o segundo mais formal;</text><jp>まま</jp><text> é o estado que continua sem mudar: </text><jp>ヒーターをつけたまま外出した。</jp><text> (\"saí de casa com o aquecedor ligado\"). </text><jp>っぱなし</jp><text> é deixar largado, com ar de descuido; </text><jp>でいっぱい</jp><text> é \"cheio de\" e </text><jp>とおり</jp><text> é \"exatamente como\".</text></p>\n\n<note type=\"l1-pitfall\"><p><jp>食べかけ</jp><text> não é \"estava comendo\" (isso seria </text><jp>食べている</jp><text>): é a comida largada pela metade. E </text><jp>まま</jp><text> é neutro, enquanto </text><jp>っぱなし</jp><text> costuma soar como crítica ao desleixo.</text></p></note>\n\n<heading level=\"3\"><text>2. Intenção e decisão</text></heading>\n\n<p><text>A forma volitiva ganhou um segundo emprego: </text><jp>ようと思う</jp><text> é \"pretendo, acho que vou\"; </text><jp>ようとした</jp><text> relata uma tentativa, quase sempre frustrada (</text><jp>ダイエットしようとした。</jp><text>, \"eu tentei emagrecer\"); e </text><jp>ようとしない</jp><text> descreve alguém que não dá sinal de fazer algo.</text></p>\n\n<p><text>No eixo da decisão, </text><jp>つもりでした</jp><text> é o plano do passado que não saiu (</text><jp>私はアメリカで医学を学ぶつもりでした。</jp><text>). </text><jp>ことにしている</jp><text> é uma regra que você mesmo se impôs (</text><jp>私は毎朝走ることにしている。</jp><text>, \"eu tenho o hábito de correr toda manhã\") e </text><jp>ことになっている</jp><text> é uma regra externa, já combinada.</text></p>\n\n<p><jp>ように</jp><text> tem três usos: finalidade (\"para que\", com verbos que você não controla direto), modo (\"do jeito que\") e comparação, com </text><jp>のように</jp><text>. Na prática, </text><jp>ようにしましょう</jp><text> convida a um esforço contínuo e </text><jp>ようになった</jp><text> marca uma mudança gradual: </text><jp>子供がやっと歩けるようになった。</jp><text> (\"a criança finalmente passou a conseguir andar\").</text></p>\n\n<note type=\"l1-pitfall\"><p><text>Decisão minha ou do grupo? </text><jp>ことにしている</jp><text> é um hábito que eu escolhi; </text><jp>ことになっている</jp><text> é uma norma que veio de fora. E para uma capacidade perdida o japonês usa </text><jp>なくなった</jp><text>, não </text><jp>ようになった</jp><text> no negativo.</text></p></note>\n\n<heading level=\"3\"><text>3. Tentar, aconselhar e dever</text></heading>\n\n<p><jp>てみる</jp><text> é tentar e ver no que dá (</text><jp>直してみるよ。</jp><text>, \"vou tentar consertar\"); </text><jp>てごらん</jp><text> incentiva alguém com carinho (</text><jp>見つけてごらん。</jp><text>, \"tenta achar\"); </text><jp>とく</jp><text> é a contração falada de </text><jp>ておく</jp><text>, deixar feito de antemão.</text></p>\n\n<p><text>Para orientar alguém: </text><jp>ことだ</jp><text> dá o conselho geral, </text><jp>ことはない</jp><text> tranquiliza dizendo que não precisa, e </text><jp>べきだ</jp><text> afirma o que se deve fazer por princípio (</text><jp>真実を言うべきだ。</jp><text>, \"você deve dizer a verdade\"). </text><jp>せてください</jp><text> pede permissão para você mesmo agir, </text><jp>わけにはいかない</jp><text> diz que algo não dá por dever ou pressão (</text><jp>負け犬になるわけにはいかない。</jp><text>) e </text><jp>ないことはない</jp><text> admite, com reservas, que até dá.</text></p>\n\n<note type=\"tip\"><p><jp>てごらん</jp><text> é afetuoso e vem de cima para baixo: um adulto com uma criança, um professor com um aluno. De um inferior para um superior, soa estranho.</text></p></note>\n\n<heading level=\"3\"><text>4. Desejos, hipóteses e arrependimentos</text></heading>\n\n<p><text>Desejo voltado para fora: </text><jp>てほしい</jp><text> é querer que outra pessoa faça (</text><jp>手伝ってほしいですか。</jp><text>, \"você quer que eu ajude?\"), </text><jp>といいなあ</jp><text> é o \"tomara\" cheio de sentimento e </text><jp>ますように</jp><text> é o voto de torcida: </text><jp>早く良くなりますように。</jp><text> (\"espero que você melhore logo\").</text></p>\n\n<p><text>Para hipóteses, </text><jp>としたら</jp><text> parte de uma suposição e foca na conclusão (</text><jp>もしできるとしたら、どうする？</jp><text>), </text><jp>もしも～なら</jp><text> é a suposição enfática e </text><jp>もし～たなら</jp><text> marca a hipótese com um </text><jp>た</jp><text> que não é de tempo. </text><jp>ないと</jp><text> aponta a consequência ruim de não fazer (</text><jp>勉強しないと試験に落ちるよ。</jp><text>) e </text><jp>もし～ても</jp><text> é o \"mesmo que\", em que o resultado não muda.</text></p>\n\n<p><text>Para o arrependimento, </text><jp>ば～のに</jp><text> é o \"se ao menos\" (</text><jp>雨がやめばいいのにな。</jp><text>, \"quem dera parasse de chover\") e </text><jp>ばよかった</jp><text> é o \"eu devia ter\" (</text><jp>バレエ続けてればよかった。</jp><text>).</text></p>\n\n<note type=\"l1-pitfall\"><p><text>O </text><jp>よかった</jp><text> de </text><jp>ばよかった</jp><text> é lamento, não alívio. E no desejo com </text><jp>てほしい</jp><text>, a pessoa de quem você espera a ação leva </text><jp>に</jp><text>, sem um \"que\" separado como no português.</text></p></note>\n\n<heading level=\"3\"><text>5. Limites e grau</text></heading>\n\n<p><jp>くらい</jp><text> mede quantidade ou intensidade (</text><jp>彼は４０歳くらいです。</jp><text>, \"ele tem uns quarenta anos\"), </text><jp>くらいは～ない</jp><text> cobra um mínimo e o sufixo </text><jp>さ</jp><text> transforma adjetivo em substantivo de grau. Para exclusividade, </text><jp>しかない</jp><text> diz que não há outra opção (</text><jp>働くしかない。</jp><text>), </text><jp>だけしか</jp><text> dobra a ênfase do \"só\" e </text><jp>ばかり</jp><text> critica o excesso (</text><jp>彼らは不平ばかり言う。</jp><text>).</text></p>\n\n<p><text>Para proporção, </text><jp>ば～ほど</jp><text> é \"quanto mais..., mais...\" (</text><jp>早ければ早いほどいい。</jp><text>) e </text><jp>ほど</jp><text> compara graus. Por fim, </text><jp>どんなに～ことか</jp><text> exclama com emoção e </text><jp>必ずしも～とは限らない</jp><text> relativiza: </text><jp>いつも勝てるとは限らないよ。</jp><text> (\"você nem sempre vai ganhar\").</text></p>\n\n<note type=\"l1-pitfall\"><p><jp>しかない</jp><text> tem forma negativa, mas sentido de exclusividade. Não traduza por um \"só\" neutro: o tom é de \"não tem outro jeito\".</text></p></note>\n\n<heading level=\"3\"><text>Resumindo os cinco blocos</text></heading>\n\n<list ordered=\"false\">\n <item><text>Estado: </text><jp>ている</jp><text> (andamento ou resultado), </text><jp>かけ</jp><text> (pela metade), </text><jp>まま</jp><text> (sem mudar), </text><jp>っぱなし</jp><text> (largado).</text></item>\n <item><text>Intenção: </text><jp>ようとした</jp><text> (tentei), </text><jp>ことにしている</jp><text> (regra minha), </text><jp>ことになっている</jp><text> (regra de fora), </text><jp>ようになった</jp><text> (passou a).</text></item>\n <item><text>Deveres: </text><jp>てみる</jp><text> (tentar), </text><jp>べきだ</jp><text> (dever), </text><jp>ことはない</jp><text> (não precisa), </text><jp>わけにはいかない</jp><text> (não dá).</text></item>\n <item><text>Desejos: </text><jp>てほしい</jp><text>, </text><jp>ますように</jp><text>, </text><jp>としたら</jp><text>, </text><jp>ばよかった</jp><text>.</text></item>\n <item><text>Limites: </text><jp>くらい</jp><text> (cerca de), </text><jp>しかない</jp><text> (só resta), </text><jp>ばかり</jp><text> (só isso, com crítica), </text><jp>ば～ほど</jp><text> (quanto mais, mais).</text></item>\n</list>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n3-revisao-02-1\"/>\n<exercise ref=\"ex:n3-revisao-02-2\"/>\n<exercise ref=\"ex:n3-revisao-02-3\"/>\n<exercise ref=\"ex:n3-revisao-02-4\"/>\n<exercise ref=\"ex:n3-revisao-02-5\"/>\n<exercise ref=\"ex:n3-revisao-02-6\"/>\n\n<checklist>\n <check><text>Digo em que pé está a ação com ている, かけ, まま e っぱなし.</text></check>\n <check><text>Separo tentativa (ようとした), hábito meu (ことにしている) e regra de fora (ことになっている).</text></check>\n <check><text>Aconselho e falo de dever com てみる, べきだ, ことはない e わけにはいかない.</text></check>\n <check><text>Expresso desejo e arrependimento com てほしい, ますように e ばよかった.</text></check>\n <check><text>Meço grau e limite com くらい, しかない, ばかり e ば～ほど.</text></check>\n</checklist>",
+   "exercises": [
+    {
+     "slug": "ex:n3-revisao-02-1",
+     "type": "recognition",
+     "prompt": "Na frase 夜が明けかけてきた。 (\"O dia está começando a clarear.\"), o que 〜かけ indica?",
+     "answer": {
+      "choices": [
+       "Uma ação que começou, mas ainda não terminou",
+       "Uma ação que acabou de ser concluída e está fresquinha",
+       "Uma ação largada do jeito que ficou, por descuido",
+       "Um plano do passado que não se concretizou"
+      ],
+      "correct": "Uma ação que começou, mas ainda não terminou"
+     },
+     "explanation": "〜かけ marca o que começou e não terminou: o dia começou a clarear, mas ainda não clareou por completo. O recém-feito seria 〜たて, o largado por descuido seria 〜っぱなし e o plano frustrado seria 〜つもりでした.",
+     "sentence_refs": [
+      "sent:tatoeba-79761"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-kake",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-02-2",
+     "type": "recognition",
+     "prompt": "私はその子をなだめ＿＿＿。 (\"Eu tentei acalmar aquela criança.\") Qual final relata a tentativa?",
+     "answer": {
+      "choices": [
+       "ようとした",
+       "ようと思う",
+       "ようとしない",
+       "ることにしている"
+      ],
+      "correct": "ようとした"
+     },
+     "explanation": "ようとした relata uma tentativa, quase sempre sem sucesso. ようと思う seria uma intenção (\"acho que vou\"), ようとしない descreveria alguém que não dá sinal de fazer, e ることにしている seria um hábito que a pessoa se impôs.",
+     "sentence_refs": [
+      "sent:tatoeba-160132"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-uto-shita",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-02-3",
+     "type": "cloze",
+     "prompt": "Um adulto incentiva uma criança com carinho: 手を見せ＿＿＿＿。 (\"Mostra as mãos.\")",
+     "answer": {
+      "text": "てごらん",
+      "full": "手を見せてごらん。"
+     },
+     "explanation": "てごらん é o convite afetuoso para a pessoa experimentar fazer algo, típico de adulto com criança. Com um superior, soaria estranho.",
+     "sentence_refs": [
+      "sent:tatoeba-8764399"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-te-goran",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-02-4",
+     "type": "cloze",
+     "prompt": "Complete o voto de ano-novo: 新年もよい年であり＿＿＿＿＿。 (\"Que o ano-novo também seja um bom ano.\")",
+     "answer": {
+      "text": "ますように",
+      "full": "新年もよい年でありますように。"
+     },
+     "explanation": "ますように é o desejo de torcida, quase uma prece: o falante não controla o resultado, só deseja que ele aconteça.",
+     "sentence_refs": [
+      "sent:tatoeba-145193"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-masu-you-ni",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-02-5",
+     "type": "sentence_build",
+     "prompt": "Monte \"Eles têm mais ou menos a mesma idade.\" com as peças: [年だ] [くらいの] [彼らは] [同じ]",
+     "answer": {
+      "order": [
+       "彼らは",
+       "同じ",
+       "くらいの",
+       "年だ"
+      ],
+      "text": "彼らは同じくらいの年だ。"
+     },
+     "explanation": "くらい mede de forma aproximada: 同じくらい é \"mais ou menos igual\", e o の liga essa medida ao substantivo 年.",
+     "sentence_refs": [
+      "sent:tatoeba-97215"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-kurai",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-02-6",
+     "type": "production",
+     "prompt": "Diga em japonês \"Esse livro eu ainda não terminei de ler.\" usando この本, まだ e 読みかけ, fechando com です.",
+     "answer": {
+      "text": "この本はまだ読みかけです",
+      "accept": [
+       "この本はまだ読みかけです",
+       "この本はまだ読みかけです。",
+       "このほんはまだよみかけです"
+      ]
+     },
+     "explanation": "読みかけ é o livro lido pela metade: a leitura começou e não terminou. Não é 読んでいる (\"estou lendo\"), que falaria da ação em andamento.",
+     "sentence_refs": [
+      "sent:gen-3a480b34e861"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-kake",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    }
+   ],
+   "reading_refs": [],
+   "layer": "C",
+   "created_by": "ai",
+   "needs_review": true
+  },
+  {
+   "slug": "les:n3-revisao-03",
+   "topic": "top:n3-revisao",
+   "order": 3,
+   "schema_version": "1.0",
+   "title": "Revisão N3; Ênfase, concessão, conjectura, relato e estrutura",
+   "description": "Fecho do N3: ênfase (こそ, さえ, 決して～ない), concessão (ても, くせに, わりには), conjectura (かなあ, はずだ, みたいだ), relato (という, らしい, んだって) e a estrutura da frase (の, こと, られた). Desbloqueia o simulado JLPT N3.",
+   "objectives": [
+    "Pôr ênfase com こそ e さえ e reforçar a negação com 決して, まったく, すこしも e めったに",
+    "Fazer concessões com ても, たとえ～ても, どんなに～ても, くせに, というより e わりには",
+    "Graduar a certeza com かなあ, かもしれない, はずだ, わけがない e みたいだ",
+    "Relatar e citar com という, ように言う, ということだ, らしい e んだって",
+    "Ligar e transformar frases com の, こと e a passiva no passado られた"
+   ],
+   "needs": [
+    {
+     "type": "lesson",
+     "ref": "les:n3-revisao-02",
+     "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou."
+    }
+   ],
+   "unlocks": [
+    {
+     "type": "feature",
+     "ref": "feat:jlpt-sim-n3"
+    }
+   ],
+   "feature_unlocks": [
+    "feat:jlpt-sim-n3"
+   ],
+   "sentence_refs": [],
+   "body": "<heading level=\"2\"><text>Revisão N3: ênfase, concessão, conjectura, relato e estrutura</text></heading>\n\n<p><text>Última parada antes do simulado. Estes cinco tópicos tratam da atitude de quem fala: o que ele destaca, o que admite, do que tem certeza, o que ouviu dizer e como amarra tudo numa frase só. Revise sem pressa e anote o que ainda confunde.</text></p>\n\n<heading level=\"3\"><text>1. Ênfase: holofote e negação total</text></heading>\n\n<p><jp>こそ</jp><text> põe o holofote na palavra anterior, o \"esse sim\": </text><jp>今こそ行動する時だ。</jp><text> (\"agora é que é a hora de agir\"). </text><jp>さえ</jp><text> aponta o caso extremo, \"até mesmo\", e com </text><jp>ば</jp><text> vira \"basta que\": </text><jp>めったにないこの機会を利用しさえすれば良い。</jp><text> (\"basta você aproveitar esta oportunidade rara\"). Para somar com escalada, </text><jp>ばかりか～も</jp><text> é \"não só... como também\" (</text><jp>彼女は美人であるばかりか気立てもいい。</jp><text>) e </text><jp>はもちろん～も</jp><text> põe o óbvio primeiro (</text><jp>学生はもちろん先生も来た。</jp><text>).</text></p>\n\n<p><text>Para levar a negação ao extremo: </text><jp>すこしも～ない</jp><text> (\"nem um pouco\"), </text><jp>まったく～ない</jp><text> (\"de jeito nenhum\", </text><jp>不平はまったくない。</jp><text>) e </text><jp>決して～ない</jp><text> (\"jamais\", </text><jp>値段は決して高くない。</jp><text>). </text><jp>めったに～ない</jp><text> é \"quase nunca\": </text><jp>めったに勉強しない。</jp><text> (\"eu raramente estudo\").</text></p>\n\n<note type=\"l1-pitfall\"><p><text>Como no nosso \"não vi nada\", o advérbio anda junto com um verbo negativo: </text><jp>決して</jp><text>, </text><jp>まったく</jp><text> e </text><jp>めったに</jp><text> sozinhos não negam nada, o predicado precisa estar no negativo.</text></p></note>\n\n<heading level=\"3\"><text>2. Concessão: o resultado não muda</text></heading>\n\n<p><jp>ても</jp><text> é \"mesmo que\"; </text><jp>たとえ～ても</jp><text> reforça (\"nem que\") e </text><jp>どんなに～ても</jp><text> gradua (\"por mais que\"): </text><jp>どんなに長い日にも必ず終わりがある。</jp><text> (\"por mais longo que seja o dia, ele sempre tem um fim\"). Nos três, aconteça o que acontecer, o resultado não muda.</text></p>\n\n<p><jp>かわりに</jp><text> troca uma coisa por outra (</text><jp>私は勉強するかわりにテレビを見た。</jp><text>); </text><jp>くせに</jp><text> é o \"apesar de\" com crítica (</text><jp>自分でもわかってるくせに。</jp><text>); </text><jp>ことは～が</jp><text> admite a parte boa antes do porém. </text><jp>というより</jp><text> escolhe o rótulo mais certeiro (</text><jp>彼は学者というよりは教師だ。</jp><text>), </text><jp>といっても</jp><text> freia o exagero (</text><jp>先生といってもいろいろある。</jp><text>) e </text><jp>ところが</jp><text> traz um desfecho inesperado.</text></p>\n\n<p><text>Contra uma expectativa: </text><jp>にしては</jp><text> tem base concreta (</text><jp>７月にしては今日はすずしい。</jp><text>, \"para julho, hoje está fresco\"), </text><jp>にしても</jp><text> é \"mesmo que\" e </text><jp>わりには</jp><text> foca na desproporção (</text><jp>彼女は年のわりには若く見える。</jp><text>, \"ela parece jovem para a idade que tem\").</text></p>\n\n<note type=\"l1-pitfall\"><p><jp>くせに</jp><text> não é um \"apesar de\" neutro: ele sempre traz crítica ou desdém pela pessoa de quem se fala.</text></p></note>\n\n<heading level=\"3\"><text>3. Conjectura: quanta certeza você tem</text></heading>\n\n<p><jp>かなあ</jp><text> é a dúvida pensada em voz alta (</text><jp>そうだったかなあ。</jp><text>, \"será que era assim mesmo?\"); </text><jp>もしかすると～かもしれない</jp><text> cerca a frase de probabilidade (</text><jp>もしかすると明日雨が降るかもしれない。</jp><text>). </text><jp>はずだ</jp><text> é a expectativa racional (</text><jp>知ってるはずだ。</jp><text>), </text><jp>わけがない</jp><text> nega de forma categórica (</text><jp>あるわけがない。</jp><text>) e </text><jp>わけではない</jp><text> nega só em parte: </text><jp>両方とも好きなわけではない。</jp><text> (\"não é que eu goste dos dois\").</text></p>\n\n<p><text>Para a aparência, </text><jp>みたいだ</jp><text> é a versão falada de </text><jp>ようだ</jp><text> (</text><jp>夢みたいだ。</jp><text>, \"parece um sonho\"), </text><jp>まるで～よう</jp><text> compara com intensidade (</text><jp>まるで夢を見ているようだよ。</jp><text>) e </text><jp>ふりをする</jp><text> é fingir de propósito (</text><jp>知らぬふりをするな。</jp><text>, \"não finja que não sabe\").</text></p>\n\n<note type=\"l1-pitfall\"><p><jp>わけがない</jp><text> (\"não tem como\") e </text><jp>わけではない</jp><text> (\"não é bem que\") mudam numa partícula, mas um fecha a porta e o outro só relativiza.</text></p></note>\n\n<heading level=\"3\"><text>4. Relato: o que se diz e o que se ouviu</text></heading>\n\n<p><jp>という</jp><text> nomeia e rotula (</text><jp>物には限界というものがある。</jp><text>, \"tudo tem o seu limite\"), </text><jp>というのは</jp><text> define (</text><jp>幸福というのは何ですか。</jp><text>, \"o que é a felicidade?\") e </text><jp>というと</jp><text> puxa a associação típica de um tema.</text></p>\n\n<p><text>Para relatar pedidos, </text><jp>ように言う</jp><text> manda alguém fazer, </text><jp>てくれと</jp><text> cita um pedido direto (</text><jp>彼は金を貸してくれと頼んだ。</jp><text>) e </text><jp>ということだ</jp><text> relata ou conclui (</text><jp>要するに彼らは若すぎるということだ。</jp><text>). Para boatos, </text><jp>らしい</jp><text> é neutro (</text><jp>彼は病気らしい。</jp><text>) e </text><jp>んだって</jp><text> é bem casual (</text><jp>家を買ったんだってね。</jp><text>, \"soube que você comprou uma casa, né\"). Fechando o tópico, </text><jp>として</jp><text> dá o papel (</text><jp>彼は医者として有名だ。</jp><text>) e </text><jp>っけ</jp><text> tenta resgatar algo da memória (</text><jp>薬飲んだっけ？</jp><text>).</text></p>\n\n<note type=\"tip\"><p><jp>んだって</jp><text> e </text><jp>っけ</jp><text> deixam a conversa com amigos natural. Com alguém de cerimônia, </text><jp>らしい</jp><text> é a escolha neutra para repassar o que você ouviu.</text></p></note>\n\n<heading level=\"3\"><text>5. Estrutura: ligar e transformar</text></heading>\n\n<p><jp>の</jp><text> cola dois substantivos (posse, origem, qualidade) e nem sempre vira \"de\": </text><jp>彼のことを知らない。</jp><text> (\"não conheço ele\"). </text><jp>こと</jp><text> transforma um verbo em algo que funciona como substantivo, mais abstrato que </text><jp>の</jp><text>: </text><jp>料理することは面白い。</jp><text> (\"cozinhar é interessante\"). E </text><jp>られた</jp><text> é a passiva no passado, com o agente em </text><jp>に</jp><text>: </text><jp>彼は弟と間違えられた。</jp><text> (\"ele foi confundido com o irmão mais novo\").</text></p>\n\n<note type=\"l1-pitfall\"><p><text>A mesma forma </text><jp>られる</jp><text> serve para a passiva, o potencial e o honorífico. Quem decide é o contexto: se o sujeito sofre a ação, é passiva.</text></p></note>\n\n<heading level=\"3\"><text>Resumindo os cinco blocos</text></heading>\n\n<list ordered=\"false\">\n <item><text>Ênfase: </text><jp>こそ</jp><text> (esse sim), </text><jp>さえ</jp><text> (até mesmo), </text><jp>決して～ない</jp><text> e </text><jp>まったく～ない</jp><text> (negação total).</text></item>\n <item><text>Concessão: </text><jp>ても</jp><text> e </text><jp>どんなに～ても</jp><text> (o resultado não muda), </text><jp>くせに</jp><text> (com crítica), </text><jp>わりには</jp><text> (desproporção).</text></item>\n <item><text>Conjectura: </text><jp>かなあ</jp><text> (dúvida), </text><jp>はずだ</jp><text> (expectativa), </text><jp>わけがない</jp><text> (impossível), </text><jp>みたいだ</jp><text> (aparência).</text></item>\n <item><text>Relato: </text><jp>という</jp><text> (nomear), </text><jp>ということだ</jp><text> (relatar), </text><jp>らしい</jp><text> e </text><jp>んだって</jp><text> (boato).</text></item>\n <item><text>Estrutura: </text><jp>の</jp><text> (liga substantivos), </text><jp>こと</jp><text> (nominaliza), </text><jp>られた</jp><text> (passiva no passado).</text></item>\n</list>\n\n<heading level=\"3\"><text>Hora de praticar</text></heading>\n<exercise ref=\"ex:n3-revisao-03-1\"/>\n<exercise ref=\"ex:n3-revisao-03-2\"/>\n<exercise ref=\"ex:n3-revisao-03-3\"/>\n<exercise ref=\"ex:n3-revisao-03-4\"/>\n<exercise ref=\"ex:n3-revisao-03-5\"/>\n<exercise ref=\"ex:n3-revisao-03-6\"/>\n\n<checklist>\n <check><text>Ponho ênfase com こそ e さえ e reforço a negação com 決して, まったく e めったに.</text></check>\n <check><text>Faço concessões com ても, どんなに～ても, くせに e わりには.</text></check>\n <check><text>Gradúo a certeza com かなあ, はずだ, わけがない e みたいだ.</text></check>\n <check><text>Relato e cito com という, ということだ, らしい e んだって.</text></check>\n <check><text>Ligo e transformo frases com の, こと e a passiva られた.</text></check>\n</checklist>",
+   "exercises": [
+    {
+     "slug": "ex:n3-revisao-03-1",
+     "type": "recognition",
+     "prompt": "君＿＿私が探していた人だ。 (\"É você mesmo a pessoa que eu estava procurando.\") Qual partícula põe o holofote em 君?",
+     "answer": {
+      "choices": [
+       "こそ",
+       "さえ",
+       "なんか",
+       "ばかり"
+      ],
+      "correct": "こそ"
+     },
+     "explanation": "こそ destaca a palavra anterior: \"é você, e ninguém mais\". さえ apontaria um caso extremo (\"até mesmo\"), なんか diminuiria a pessoa e ばかり diria \"só\", com tom de excesso.",
+     "sentence_refs": [
+      "sent:tatoeba-178837"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-koso",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-03-2",
+     "type": "recognition",
+     "prompt": "彼女はどんなに忙しくても毎日絵を書く。 (\"Por mais ocupada que ela esteja, pinta todo dia.\") O que どんなに〜ても expressa nessa frase?",
+     "answer": {
+      "choices": [
+       "Por mais que a condição aumente, o resultado não muda",
+       "Quanto mais ocupada ela fica, mais ela pinta",
+       "Ela pinta em vez de trabalhar",
+       "Ela finge que está ocupada"
+      ],
+      "correct": "Por mais que a condição aumente, o resultado não muda"
+     },
+     "explanation": "どんなに〜ても é a concessão de grau: não importa o quanto ela esteja ocupada, ela pinta todo dia. \"Quanto mais..., mais...\" seria ば〜ほど, \"em vez de\" seria かわりに e fingir seria ふりをする.",
+     "sentence_refs": [
+      "sent:tatoeba-91869"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-donna-ni-temo",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-03-3",
+     "type": "cloze",
+     "prompt": "Você olha o céu e pensa em voz alta: 天気が持つ＿＿＿。 (\"Será que o tempo vai aguentar?\")",
+     "answer": {
+      "text": "かなあ",
+      "full": "天気が持つかなあ。"
+     },
+     "explanation": "かなあ é a dúvida do próprio falante, dita quase para si mesmo: \"será que...\".",
+     "sentence_refs": [
+      "sent:tatoeba-1063425"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-kanaa",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-03-4",
+     "type": "cloze",
+     "prompt": "Complete para repassar um boato: 彼は病気だ＿＿＿うわさだ。 (\"Corre o boato de que ele está doente.\")",
+     "answer": {
+      "text": "という",
+      "full": "彼は病気だといううわさだ。"
+     },
+     "explanation": "という liga o conteúdo (彼は病気だ) ao rótulo que o resume (うわさ, \"boato\"): \"o boato de que...\".",
+     "sentence_refs": [
+      "sent:tatoeba-100592"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-to-iu",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-03-5",
+     "type": "sentence_build",
+     "prompt": "Monte \"Um dia você vai me esquecer.\" com as peças: [忘れちゃうわ] [私の] [いつか] [ことは]",
+     "answer": {
+      "order": [
+       "いつか",
+       "私の",
+       "ことは",
+       "忘れちゃうわ"
+      ],
+      "text": "いつか私のことは忘れちゃうわ。"
+     },
+     "explanation": "私のこと é \"eu\" como assunto: o の liga 私 a こと, e o conjunto vira o tópico com は. É o mesmo encaixe de 彼のことを知らない.",
+     "sentence_refs": [
+      "sent:tatoeba-5008"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-no",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    },
+    {
+     "slug": "ex:n3-revisao-03-6",
+     "type": "production",
+     "prompt": "Alguém se apresenta dizendo はじめまして. Responda em japonês \"O prazer é meu. Muito prazer.\", devolvendo a gentileza com こそ.",
+     "answer": {
+      "text": "こちらこそ、はじめまして",
+      "accept": [
+       "こちらこそ、はじめまして",
+       "こちらこそ、はじめまして。",
+       "こちらこそはじめまして",
+       "こちらこそ はじめまして"
+      ]
+     },
+     "explanation": "こちらこそ põe o holofote em \"deste lado\": \"eu é que digo isso\". É a resposta natural a uma gentileza.",
+     "sentence_refs": [
+      "sent:tatoeba-11021618"
+     ],
+     "item_refs": [
+      {
+       "type": "grammar",
+       "ref": "gram:n3-koso",
+       "role": "target",
+       "derived_by": "authored"
+      }
+     ]
+    }
+   ],
+   "reading_refs": [],
+   "layer": "C",
+   "created_by": "ai",
+   "needs_review": true
+  }
+ ],
+ "sources": {
+  "brief": "research/derived/repairs/w22_n3_dead_end.json#review_topic (W22 §3), research/reports/w22_apply_report.md",
+  "shape_models": [
+   "course/n4/topic-36-revisao/lesson-0{1,2,3}.json",
+   "research/derived/lessons/n4-revisao-01.json",
+   "course/n5/topic-19-revisao/"
+  ],
+  "facts_from": [
+   "course/n3/topic-38..51 lesson descriptions and grammar unlocks",
+   "corpus/grammar/n3.json (label / explanation / nuance)"
+  ],
+  "cumulative_known_set": "course/n3/topic-52-revisao/lesson-01.json (HEAD); revisao-02/03 know a superset",
+  "sentences": "corpus/sentences/bank.json (HEAD)",
+  "per_lesson": {
+   "les:n3-revisao-01": {
+    "reviews_topics": [
+     "top:n3-conectores",
+     "top:n3-tempo",
+     "top:n3-perspectiva",
+     "top:n3-causa"
+    ],
+    "taught_in": {
+     "top:n3-conectores": [
+      "les:n3-conectores-01",
+      "les:n3-conectores-02",
+      "les:n3-conectores-03",
+      "les:n3-conectores-04"
+     ],
+     "top:n3-tempo": [
+      "les:n3-tempo-01",
+      "les:n3-tempo-02",
+      "les:n3-tempo-03",
+      "les:n3-tempo-04"
+     ],
+     "top:n3-perspectiva": [
+      "les:n3-perspectiva-01",
+      "les:n3-perspectiva-02",
+      "les:n3-perspectiva-03"
+     ],
+     "top:n3-causa": [
+      "les:n3-causa-01",
+      "les:n3-causa-02",
+      "les:n3-causa-03",
+      "les:n3-causa-04"
+     ]
+    },
+    "exercise_plan_followed": [
+     {
+      "ord": 1,
+      "type": "recognition",
+      "target_ref": "gram:n3-sono-ue",
+      "exercise": "ex:n3-revisao-01-1",
+      "sentence": "sent:tatoeba-222251"
+     },
+     {
+      "ord": 2,
+      "type": "recognition",
+      "target_ref": "gram:n3-made",
+      "exercise": "ex:n3-revisao-01-2",
+      "sentence": "sent:tatoeba-77157"
+     },
+     {
+      "ord": 3,
+      "type": "cloze",
+      "target_ref": "gram:n3-ni-kanshite",
+      "exercise": "ex:n3-revisao-01-3",
+      "sentence": "sent:tatoeba-211071"
+     },
+     {
+      "ord": 4,
+      "type": "cloze",
+      "target_ref": "gram:n3-okagede",
+      "exercise": "ex:n3-revisao-01-4",
+      "sentence": "sent:tatoeba-80133"
+     },
+     {
+      "ord": 5,
+      "type": "sentence_build",
+      "target_ref": "gram:n3-sono-ue",
+      "exercise": "ex:n3-revisao-01-5",
+      "sentence": "sent:tatoeba-208980"
+     },
+     {
+      "ord": 6,
+      "type": "production",
+      "target_ref": "gram:n3-made",
+      "exercise": "ex:n3-revisao-01-6",
+      "sentence": "sent:tatoeba-80520"
+     }
+    ],
+    "body_sentences": [
+     "sent:tatoeba-10107238",
+     "sent:tatoeba-10914932",
+     "sent:tatoeba-11022968",
+     "sent:tatoeba-11027663",
+     "sent:tatoeba-11032323",
+     "sent:tatoeba-123542",
+     "sent:tatoeba-125083",
+     "sent:tatoeba-164771",
+     "sent:tatoeba-199683",
+     "sent:tatoeba-201846",
+     "sent:tatoeba-2043892",
+     "sent:tatoeba-220401",
+     "sent:tatoeba-222251",
+     "sent:tatoeba-226507",
+     "sent:tatoeba-234911",
+     "sent:tatoeba-4212797",
+     "sent:tatoeba-77936",
+     "sent:tatoeba-79703",
+     "sent:tatoeba-8938683",
+     "sent:tatoeba-9032501"
+    ]
+   },
+   "les:n3-revisao-02": {
+    "reviews_topics": [
+     "top:n3-estado",
+     "top:n3-intencao",
+     "top:n3-deveres",
+     "top:n3-desejos",
+     "top:n3-limites"
+    ],
+    "taught_in": {
+     "top:n3-estado": [
+      "les:n3-estado-01",
+      "les:n3-estado-02",
+      "les:n3-estado-03",
+      "les:n3-estado-04"
+     ],
+     "top:n3-intencao": [
+      "les:n3-intencao-01",
+      "les:n3-intencao-02",
+      "les:n3-intencao-03",
+      "les:n3-intencao-04"
+     ],
+     "top:n3-deveres": [
+      "les:n3-deveres-01",
+      "les:n3-deveres-02",
+      "les:n3-deveres-03"
+     ],
+     "top:n3-desejos": [
+      "les:n3-desejos-01",
+      "les:n3-desejos-02",
+      "les:n3-desejos-03",
+      "les:n3-desejos-04"
+     ],
+     "top:n3-limites": [
+      "les:n3-limites-01",
+      "les:n3-limites-02",
+      "les:n3-limites-03",
+      "les:n3-limites-04"
+     ]
+    },
+    "exercise_plan_followed": [
+     {
+      "ord": 1,
+      "type": "recognition",
+      "target_ref": "gram:n3-kake",
+      "exercise": "ex:n3-revisao-02-1",
+      "sentence": "sent:tatoeba-79761"
+     },
+     {
+      "ord": 2,
+      "type": "recognition",
+      "target_ref": "gram:n3-uto-shita",
+      "exercise": "ex:n3-revisao-02-2",
+      "sentence": "sent:tatoeba-160132"
+     },
+     {
+      "ord": 3,
+      "type": "cloze",
+      "target_ref": "gram:n3-te-goran",
+      "exercise": "ex:n3-revisao-02-3",
+      "sentence": "sent:tatoeba-8764399"
+     },
+     {
+      "ord": 4,
+      "type": "cloze",
+      "target_ref": "gram:n3-masu-you-ni",
+      "exercise": "ex:n3-revisao-02-4",
+      "sentence": "sent:tatoeba-145193"
+     },
+     {
+      "ord": 5,
+      "type": "sentence_build",
+      "target_ref": "gram:n3-kurai",
+      "exercise": "ex:n3-revisao-02-5",
+      "sentence": "sent:tatoeba-97215"
+     },
+     {
+      "ord": 6,
+      "type": "production",
+      "target_ref": "gram:n3-kake",
+      "exercise": "ex:n3-revisao-02-6",
+      "sentence": "sent:gen-3a480b34e861"
+     }
+    ],
+    "body_sentences": [
+     "sent:tatoeba-10013076",
+     "sent:tatoeba-10151326",
+     "sent:tatoeba-106592",
+     "sent:tatoeba-1119969",
+     "sent:tatoeba-115111",
+     "sent:tatoeba-11733143",
+     "sent:tatoeba-139697",
+     "sent:tatoeba-144981",
+     "sent:tatoeba-148499",
+     "sent:tatoeba-1490005",
+     "sent:tatoeba-152735",
+     "sent:tatoeba-189824",
+     "sent:tatoeba-197683",
+     "sent:tatoeba-237354",
+     "sent:tatoeba-3179585",
+     "sent:tatoeba-4793305",
+     "sent:tatoeba-78016",
+     "sent:tatoeba-8075115",
+     "sent:tatoeba-83323",
+     "sent:tatoeba-84279",
+     "sent:tatoeba-9208382",
+     "sent:tatoeba-96219",
+     "sent:tatoeba-9752027"
+    ]
+   },
+   "les:n3-revisao-03": {
+    "reviews_topics": [
+     "top:n3-enfase",
+     "top:n3-concessao",
+     "top:n3-conjectura",
+     "top:n3-relato",
+     "top:n3-estrutura"
+    ],
+    "taught_in": {
+     "top:n3-enfase": [
+      "les:n3-enfase-01",
+      "les:n3-enfase-02",
+      "les:n3-enfase-03",
+      "les:n3-enfase-04"
+     ],
+     "top:n3-concessao": [
+      "les:n3-concessao-01",
+      "les:n3-concessao-02",
+      "les:n3-concessao-03",
+      "les:n3-concessao-04"
+     ],
+     "top:n3-conjectura": [
+      "les:n3-conjectura-01",
+      "les:n3-conjectura-02",
+      "les:n3-conjectura-03",
+      "les:n3-conjectura-04"
+     ],
+     "top:n3-relato": [
+      "les:n3-relato-01",
+      "les:n3-relato-02",
+      "les:n3-relato-03",
+      "les:n3-relato-04"
+     ],
+     "top:n3-estrutura": [
+      "les:n3-estrutura-01",
+      "les:n3-estrutura-02",
+      "les:n3-estrutura-03"
+     ]
+    },
+    "exercise_plan_followed": [
+     {
+      "ord": 1,
+      "type": "recognition",
+      "target_ref": "gram:n3-koso",
+      "exercise": "ex:n3-revisao-03-1",
+      "sentence": "sent:tatoeba-178837"
+     },
+     {
+      "ord": 2,
+      "type": "recognition",
+      "target_ref": "gram:n3-donna-ni-temo",
+      "exercise": "ex:n3-revisao-03-2",
+      "sentence": "sent:tatoeba-91869"
+     },
+     {
+      "ord": 3,
+      "type": "cloze",
+      "target_ref": "gram:n3-kanaa",
+      "exercise": "ex:n3-revisao-03-3",
+      "sentence": "sent:tatoeba-1063425"
+     },
+     {
+      "ord": 4,
+      "type": "cloze",
+      "target_ref": "gram:n3-to-iu",
+      "exercise": "ex:n3-revisao-03-4",
+      "sentence": "sent:tatoeba-100592"
+     },
+     {
+      "ord": 5,
+      "type": "sentence_build",
+      "target_ref": "gram:n3-no",
+      "exercise": "ex:n3-revisao-03-5",
+      "sentence": "sent:tatoeba-5008"
+     },
+     {
+      "ord": 6,
+      "type": "production",
+      "target_ref": "gram:n3-koso",
+      "exercise": "ex:n3-revisao-03-6",
+      "sentence": "sent:tatoeba-11021618"
+     }
+    ],
+    "body_sentences": [
+     "sent:tatoeba-100541",
+     "sent:tatoeba-101981",
+     "sent:tatoeba-108845",
+     "sent:tatoeba-110065",
+     "sent:tatoeba-11016226",
+     "sent:tatoeba-11270411",
+     "sent:tatoeba-127076",
+     "sent:tatoeba-127122",
+     "sent:tatoeba-141760",
+     "sent:tatoeba-152898",
+     "sent:tatoeba-158843",
+     "sent:tatoeba-172857",
+     "sent:tatoeba-184254",
+     "sent:tatoeba-193877",
+     "sent:tatoeba-194622",
+     "sent:tatoeba-199506",
+     "sent:tatoeba-2190027",
+     "sent:tatoeba-2233241",
+     "sent:tatoeba-234998",
+     "sent:tatoeba-423387",
+     "sent:tatoeba-5324",
+     "sent:tatoeba-76060",
+     "sent:tatoeba-77944",
+     "sent:tatoeba-77972",
+     "sent:tatoeba-78814",
+     "sent:tatoeba-80952",
+     "sent:tatoeba-83833",
+     "sent:tatoeba-85043",
+     "sent:tatoeba-8579878",
+     "sent:tatoeba-8663699",
+     "sent:tatoeba-87071",
+     "sent:tatoeba-87583",
+     "sent:tatoeba-9240812"
+    ]
+   }
+  }
+ }
+}

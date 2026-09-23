@@ -1,0 +1,1090 @@
+{
+  "pick|les:n5-numeros-tempo-01|sent:gen-471f8a1f1149": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-04|sent:gen-b12efce38196": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-04|sent:gen-9b5915e843b7": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-06|sent:tatoeba-10901831": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-06|sent:gen-4425f10db1d8": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-06|sent:gen-bace6a9dbb78": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-07|sent:gen-3bc478ee743a": {
+    "ok": false,
+    "problem": "Generated while a real i+0 sentence carrying the same target exists: tatoeba 8631611 ブラジルは大きな国だ。 (だ = gram:da-desu, known; 大きな and kanji 大 known; ブラジル kana-only, unlinked; carries kanji:国). Also 3455659 / 8631613. Spec 1.2 and the table's own rule put generation last.",
+    "corrected": {
+      "source_kind": "tatoeba-raw",
+      "tatoeba_id": 8631611,
+      "slug_after_ingest": "sent:tatoeba-8631611",
+      "jp": "ブラジルは大きな国だ。",
+      "pt-BR": "O Brasil é um país grande.",
+      "translation_source": "authored here (Layer B, from the Tatoeba English: Brazil is a big country.)",
+      "carries": [
+        "kanji:国"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "sentence_level_estimate": "n5",
+      "ai_generated": false,
+      "needs_review": true,
+      "needs_ingest": "not in the bank: needs a dissection pass before the link can be applied"
+    }
+  },
+  "pick|les:n5-numeros-tempo-07|sent:gen-f93acdb4cc60": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-07|sent:gen-2105b55af049": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-08|sent:tatoeba-223699": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-08|sent:tatoeba-879005": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-08|sent:gen-a1d97f777e57": {
+    "ok": false,
+    "problem": "Generated while the bank already holds the real sentence sent:tatoeba-5066 シャワーはどこですか。 (pt-BR 'Onde fica o chuveiro?'): every token is n5 and inside this lesson's known set; it is graded n4 only because the sentence-level run links attach は to vocab:1546550 (葉, n4) and vocab:1313000 (歯). A mislabelled real sentence should be regraded and selected, not replaced by a generated one.",
+    "corrected": {
+      "source_kind": "bank",
+      "slug": "sent:tatoeba-5066",
+      "jp": "シャワーはどこですか。",
+      "pt-BR": "Onde fica o chuveiro?",
+      "translation_source": "bank",
+      "carries": [
+        "vocab:1061820"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "ai_generated": false,
+      "needs_review": true,
+      "needs_fix": "drop the spurious run links vocab:1546550 / vocab:1313000 and recompute sentence.level (expected n5)"
+    }
+  },
+  "pick|les:n5-numeros-tempo-09|sent:tatoeba-218088": {
+    "ok": true
+  },
+  "pick|les:n5-numeros-tempo-09|sent:gen-51cb6418ff14": {
+    "ok": false,
+    "problem": "The generated えきはどこですか is the kana copy of real tatoeba 188894 駅はどこですか。, a valid named i+1 here: the only gap is kanji 駅 (registry level n5, taught in les:n5-kanji-exame-03), inside a known word, load 1 = the N5 budget, sentence stays n5. The table's rule allows generation only where no real i+0 or i+1 sentence exists.",
+    "corrected": {
+      "source_kind": "tatoeba-raw",
+      "tatoeba_id": 188894,
+      "slug_after_ingest": "sent:tatoeba-188894",
+      "jp": "駅はどこですか。",
+      "pt-BR": "Onde fica a estação?",
+      "translation_source": "authored here (Layer B, from the Tatoeba English: Where is the station?)",
+      "carries": [
+        "vocab:1175140"
+      ],
+      "real": true,
+      "fit": "i+1",
+      "unknown": [
+        {
+          "kanji": "駅",
+          "taught_in": "les:n5-kanji-exame-03"
+        }
+      ],
+      "sentence_level_estimate": "n5",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-numeros-tempo-09|sent:gen-60a62bfb7a62": {
+    "ok": false,
+    "problem": "Generated while a real i+0 sentence exists for こちら in exactly the use the lesson prose names (introducing someone): tatoeba 224200 こちらカーティスさんです。 (カーティス kana-only; the bank leaves the suffix さん unlinked). Also 11853655 こちらのリンゴはおいくらですか？.",
+    "corrected": {
+      "source_kind": "tatoeba-raw",
+      "tatoeba_id": 224200,
+      "slug_after_ingest": "sent:tatoeba-224200",
+      "jp": "こちらカーティスさんです。",
+      "pt-BR": "Esta é a senhora Curtis.",
+      "translation_source": "authored here (Layer B, from the Tatoeba English: This is Miss Curtis.)",
+      "carries": [
+        "vocab:1004500"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "sentence_level_estimate": "n5",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-convites-06|sent:gen-556db7c50a8b": {
+    "ok": true
+  },
+  "pick|les:n5-convites-06|sent:gen-74dd8aa290f5": {
+    "ok": true
+  },
+  "pick|les:n5-convites-06|sent:gen-5cf5d333bb64": {
+    "ok": false,
+    "problem": "Kanji 辺 is registered at n2 and sentence.level = max(level of linked kanji/vocab), so the dissected sentence is graded n2: above the lesson (W14 step 1 and check D fail). The i+1 claim ('load 1 = the N5 budget', level estimate n5) ignores the level half of the rule. The real この辺にホテルはありますか。 has the same n2 kanji, so neither is in rule with 辺 written in kanji.",
+    "corrected": {
+      "source_kind": "generated",
+      "generated_key": "sent:gen-5cf5d333bb64",
+      "jp": "このへんにえきはありますか",
+      "pt-BR": "Tem alguma estação por aqui?",
+      "carries": [
+        "vocab:1512070"
+      ],
+      "real": false,
+      "fit": "i+0",
+      "sentence_level_estimate": "n5",
+      "needs_ingest": "the dissection must link へん to vocab:1512070 (辺), not 変",
+      "ai_generated": true,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-conectando-07|sent:tatoeba-184425": {
+    "ok": false,
+    "problem": "The known-set proof silently drops the ２ token. The bank leaves digits unlinked (8 in sent:tatoeba-11795596, 10 in sent:tatoeba-2469096), and sentence_ok counts an unlinked non-kana content token as a failure, so the i+0 claim holds only if ingest links ２ to vocab:1461140 (二, known since les:n5-comparacoes-04). A real i+0 alternative without the digit exists: tatoeba 12316576.",
+    "corrected": {
+      "source_kind": "tatoeba-raw",
+      "tatoeba_id": 184425,
+      "slug_after_ingest": "sent:tatoeba-184425",
+      "jp": "学校は２キロ先にある。",
+      "pt-BR": "A escola fica dois quilômetros mais à frente.",
+      "carries": [
+        "vocab:1042610"
+      ],
+      "fit": "i+0",
+      "needs_ingest": "link the ２ token to vocab:1461140 (二); left unlinked it fails sentence_ok",
+      "alternate": {
+        "tatoeba_id": 12316576,
+        "jp": "ベルリンまで何キロですか？",
+        "pt-BR": "Quantos quilômetros são até Berlim?",
+        "carries": [
+          "vocab:1042610"
+        ],
+        "fit": "i+0"
+      },
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-conectando-07|sent:gen-aed10738045e": {
+    "ok": false,
+    "problem": "vocab:1157170 (する) is registered n4 on a single source (jlptvocabapi, 1/1) and sentence.level is max(level of linked vocab/kanji), so every dissected sentence containing する is graded n4: after the dissection this sentence is n4, above the N5 lesson, so it fails W14 step 1 / check D even once する is unlocked. sentence_level_estimate 'n5' is wrong. The pick needs the level regrade as well as unlock-suru (no real たり sentence is in budget: the bank ones also carry 飲/曜/音 or run-link noise).",
+    "corrected": {
+      "source_kind": "generated",
+      "generated_key": "sent:gen-aed10738045e",
+      "jp": "休みの日はテレビを見たり、おんがくを聞いたりします",
+      "pt-BR": "Nos dias de folga, eu vejo TV, ouço música, essas coisas.",
+      "carries": [
+        "gram:gp-41"
+      ],
+      "fit": "i+1 (i+0 after unlock-suru)",
+      "sentence_level_estimate": "n4 until vocab:1157170 is regraded to n5",
+      "requires": [
+        "unlock vocab:1157170 in les:n5-verbos-04",
+        "regrade vocab:1157170 to n5 (する is N5 in the standard lists; one source says n4)"
+      ],
+      "ai_generated": true,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-conectando-07|sent:gen-ff6d2f83c849": {
+    "ok": false,
+    "problem": "(1) The proof maps ください to vocab:1184270 (下さい), but its stated method (Sudachi mode C, normalised form) yields 下さる = vocab:1184280 (n4, unknown here), and the bank links ください to 下さる (the very mislink the held links flag): ingested as is, the sentence is i+1 and graded n4. (2) A real sentence of the same shape exists, tatoeba 224779 ここからレストランまでのいきかたを書いてください。 (いきかた in kana, レストラン and kanji 書 known, same ください caveat), so generation was not the last resort.",
+    "corrected": {
+      "source_kind": "tatoeba-raw",
+      "tatoeba_id": 224779,
+      "slug_after_ingest": "sent:tatoeba-224779",
+      "jp": "ここからレストランまでのいきかたを書いてください。",
+      "pt-BR": "Por favor, escreva como se chega daqui até o restaurante.",
+      "translation_source": "authored here (Layer B, from the Tatoeba English: Could you write me directions to the restaurant?)",
+      "carries": [
+        "gram:kata"
+      ],
+      "real": true,
+      "fit": "i+0 once ください is linked to vocab:1184270",
+      "needs_ingest": "link ください to vocab:1184270 (下さい), not vocab:1184280 (下さる)",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-revisao-01|sent:tatoeba-5332": {
+    "ok": true
+  },
+  "pick|les:n5-revisao-01|sent:gen-2f1c4475a858": {
+    "ok": false,
+    "problem": "An ai-generated bank row picked while real in-rule rows cover more targets: sent:tatoeba-1596597 なぜ聞くの？ carries gram:gp-30 and gram:no (two targets vs one). Spec 1.2 and the W14 ranking (cover, then real) both prefer it.",
+    "corrected": {
+      "source_kind": "bank",
+      "slug": "sent:tatoeba-1596597",
+      "jp": "なぜ聞くの？",
+      "pt-BR": "Por que você (me) pergunta?",
+      "translation_source": "bank",
+      "carries": [
+        "gram:gp-30",
+        "gram:no"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-revisao-01|sent:tatoeba-234396": {
+    "ok": true
+  },
+  "pick|les:n5-revisao-02|sent:tatoeba-10954021": {
+    "ok": true
+  },
+  "pick|les:n5-revisao-02|sent:tatoeba-230319": {
+    "ok": true
+  },
+  "pick|les:n5-revisao-02|sent:gen-59bccb81087b": {
+    "ok": false,
+    "problem": "An ai-generated bank row (one target, gp-28) picked while a real in-rule row carries three: sent:tatoeba-150639 時間がありますか。 (gram:ga, gram:ga-arimasu, gram:gp-8).",
+    "corrected": {
+      "source_kind": "bank",
+      "slug": "sent:tatoeba-150639",
+      "jp": "時間がありますか。",
+      "pt-BR": "Você tem um tempo?",
+      "translation_source": "bank",
+      "carries": [
+        "gram:ga",
+        "gram:ga-arimasu",
+        "gram:gp-8"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-revisao-03|sent:tatoeba-2242416": {
+    "ok": false,
+    "problem": "carries is empty: its only grammar tag, gram:temo-ii-desu (les:n5-adjetivos-02), belongs to the topics n5-revisao-02 reviews, not to topics 14-18. It exemplifies nothing this review targets.",
+    "corrected": {
+      "source_kind": "bank",
+      "slug": "sent:tatoeba-13126479",
+      "jp": "りんごがほしいですか？",
+      "pt-BR": "Você quer maçã?",
+      "translation_source": "bank",
+      "carries": [
+        "gram:ga-hoshii"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-revisao-03|sent:gen-24bb23e4256e": {
+    "ok": false,
+    "problem": "An ai-generated bank row (one target) picked while real in-rule rows carry two: sent:tatoeba-216787 さっさと行ったほうがいい。 (gram:gp-50, gram:hou-ga-ii).",
+    "corrected": {
+      "source_kind": "bank",
+      "slug": "sent:tatoeba-216787",
+      "jp": "さっさと行ったほうがいい。",
+      "pt-BR": "É melhor a gente ir logo.",
+      "translation_source": "bank",
+      "carries": [
+        "gram:gp-50",
+        "gram:hou-ga-ii"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n5-revisao-03|sent:tatoeba-200577": {
+    "ok": false,
+    "problem": "carries is empty: gram:i-adjectives and gram:ne are taught in les:n5-passado-03 (topic 12, reviewed by n5-revisao-02). The table's own alternate carries a real target.",
+    "corrected": {
+      "source_kind": "bank",
+      "slug": "sent:tatoeba-528350",
+      "jp": "もう行かなきゃ！",
+      "pt-BR": "Já tenho que ir!",
+      "translation_source": "bank",
+      "carries": [
+        "gram:gp-52"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n4-revisao-01|sent:tatoeba-194168": {
+    "ok": true
+  },
+  "pick|les:n4-revisao-01|sent:tatoeba-8618076": {
+    "ok": false,
+    "problem": "carries is empty: its only tag is gram:te-hoshii (les:n4-dar-receber-03, topic 27, reviewed by n4-revisao-02) and no relative-clause tag exists on it, so 'exemplifies oração relativa' is not backed by the data.",
+    "corrected": {
+      "source_kind": "bank",
+      "slug": "sent:tatoeba-4860",
+      "jp": "もう何をしたらいいか分からない。",
+      "pt-BR": "Já não sei mais o que fazer.",
+      "translation_source": "bank",
+      "carries": [
+        "gram:tara",
+        "gram:tara-ii-desu-ka"
+      ],
+      "real": true,
+      "fit": "i+0",
+      "ai_generated": false,
+      "needs_review": true
+    }
+  },
+  "pick|les:n4-revisao-01|sent:tatoeba-80337": {
+    "ok": true
+  },
+  "pick|les:n4-revisao-02|sent:tatoeba-11801342": {
+    "ok": true
+  },
+  "pick|les:n4-revisao-02|sent:tatoeba-78721": {
+    "ok": true
+  },
+  "pick|les:n4-revisao-02|sent:tatoeba-10774565": {
+    "ok": true
+  },
+  "pick|les:n4-revisao-03|sent:tatoeba-2684823": {
+    "ok": true
+  },
+  "pick|les:n4-revisao-03|sent:tatoeba-143650": {
+    "ok": true
+  },
+  "pick|les:n4-revisao-03|sent:tatoeba-3957479": {
+    "ok": true
+  },
+  "held|les:n5-desu-wa-04|sent:tatoeba-85538": {
+    "ok": true
+  },
+  "held|les:n5-desu-wa-05|sent:gen-08415ea48aef": {
+    "ok": true
+  },
+  "held|les:n5-perguntas-01|sent:tatoeba-5055": {
+    "ok": true
+  },
+  "held|les:n5-perguntas-03|sent:gen-4e9dec6558f5": {
+    "ok": true
+  },
+  "held|les:n5-perguntas-03|sent:gen-40220286d0b2": {
+    "ok": true
+  },
+  "held|les:n5-perguntas-06|sent:gen-54dd1d1ebf25": {
+    "ok": true
+  },
+  "held|les:n5-verbos-02|sent:gen-867d5c2e8dc3": {
+    "ok": true
+  },
+  "held|les:n5-verbos-02|sent:tatoeba-174533": {
+    "ok": true
+  },
+  "held|les:n5-verbos-03|sent:tatoeba-122195": {
+    "ok": true
+  },
+  "held|les:n5-verbos-04|sent:tatoeba-81225": {
+    "ok": false,
+    "problem": "fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence. unlock-suru lowers the load to 1 (晩) but the link stays flagged above level (sentence n3; vocab:1157170 (する) is registered n4 on a single source (jlptvocabapi, 1/1) and sentence.level is max(level of linked vocab/kanji), so every dissected sentence containing する is graded n4).",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "also_fix": [
+        "unlock-suru",
+        "regrade vocab:1157170 to n5"
+      ],
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored."
+    }
+  },
+  "held|les:n5-verbos-05|sent:tatoeba-11795596": {
+    "ok": true
+  },
+  "held|les:n5-verbos-06|sent:tatoeba-143718": {
+    "ok": false,
+    "problem": "The link is flagged only as above level (n4 label, load 1 = budget 1). sentence.level is computed once at persist time from the linked records, so relinking ください to vocab:1184270 does not by itself clear check D; the fix must also recompute the level.",
+    "corrected": {
+      "fix": "relink-token",
+      "also_fix": [
+        "recompute sentence.level after the relink (expected n5)"
+      ],
+      "fix_note": "Relink the ください token from vocab:1184280 (下さる, n4) to vocab:1184270 (下さい, known since les:pre-n5-saudacoes-01) and recompute sentence.level; the link then passes check D with no edit to the lesson."
+    }
+  },
+  "held|les:n5-particulas-lugar-02|sent:tatoeba-78451": {
+    "ok": true
+  },
+  "held|les:n5-particulas-lugar-05|sent:tatoeba-182700": {
+    "ok": false,
+    "problem": "The gloss shows the headword 積もり, whose kanji 積 the learner has not met, for a word the sentence writes in kana; つもり is also the grammar point gram:tsumori, taught later (les:n5-conectando-06). The unlinked 中 of 休み中 (non-kana, counted by sentence_ok) is not addressed. fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "gloss_pt": "つもり = \"intenção, plano\" (〜つもりです: pretender fazer algo); 休み中 = \"durante as férias\".",
+      "also_fix": [
+        "link the 中 token of 休み中 to vocab:1620400 (中, ちゅう, known since les:n5-numeros-tempo-04)"
+      ],
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored."
+    }
+  },
+  "held|les:n5-particulas-lugar-07|sent:tatoeba-11059892": {
+    "ok": false,
+    "problem": "unlock-suru does not clear this link: it is flagged for its n4 level label (load 1 = budget 1), which unlocking does not change, and its grammar tag gram:te-ageru is taught in les:n4-dar-receber-01, a forward reference sentence_ok rejects. It also carries none of the lesson's unlocks (old_carries_lesson_unlock is empty). An on-topic bank sentence exists: sent:tatoeba-178709 このカメラあげるよ。 carries gram:gp-55, every token n5 and known; its n4 label comes only from the sentence-level run link vocab:1605810.",
+    "corrected": {
+      "fix": "replace",
+      "replacement": {
+        "slug": "sent:tatoeba-178709",
+        "jp": "このカメラあげるよ。",
+        "pt": "Eu te dou esta câmera.",
+        "carries": [
+          "gram:gp-55"
+        ],
+        "fit": "i+0",
+        "needs_fix": "drop the run link vocab:1605810 and recompute sentence.level (expected n5)"
+      },
+      "fix_note": "Swap the tag (same show/mode) in the Mais exemplos block; no prose quotes the old sentence."
+    }
+  },
+  "held|les:n5-particulas-lugar-07|sent:tatoeba-145739": {
+    "ok": false,
+    "problem": "The relink target for くれる is vocab:1269130 (呉れる), which is registered n1 and is not in this lesson's known set (no N5 lesson unlocks it), so the relink swaps one unknown word for another and raises the sentence to n1. fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "also_fix": [
+        "relink くれる to vocab:1269130 (呉れる)",
+        "unlock vocab:1269130 in les:n5-particulas-lugar-07, where くれる (gram:gp-56) is taught, and regrade it (registry n1)"
+      ],
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored."
+    }
+  },
+  "held|les:n5-particulas-lugar-08|sent:gen-2293f3cce26e": {
+    "ok": true
+  },
+  "held|les:n5-passado-01|sent:tatoeba-83696": {
+    "ok": true
+  },
+  "held|les:n5-adjetivos-02|sent:tatoeba-81558": {
+    "ok": true
+  },
+  "held|les:n5-adjetivos-02|sent:tatoeba-77848": {
+    "ok": true
+  },
+  "held|les:n5-adjetivos-03|sent:tatoeba-158129": {
+    "ok": false,
+    "problem": "The gloss '何 (なに) = \"o que\"' misleads inside 何も食べたくない, where 何も + negative means 'nada'; the second gap exists only because the particle も is mislinked to vocab:1188490 (何も).",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "gloss_pt": "何も (なにも) + negativo = \"nada\"."
+    }
+  },
+  "held|les:n5-adjetivos-05|sent:tatoeba-78454": {
+    "ok": false,
+    "problem": "fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence. An N1-graded sentence is kept as the lesson's only example although an i+0 sentence carrying what it shows is trivial to author, as done for the 14 add-lessons.",
+    "corrected": {
+      "fix": "replace",
+      "replacement": {
+        "generated_key": "to assign",
+        "jp": "あしたは雨になるでしょう",
+        "pt": "Amanhã deve chover.",
+        "carries": [
+          "gram:deshou",
+          "gram:naru"
+        ],
+        "fit": "i+0",
+        "sentence_level_estimate": "n5",
+        "ai_generated": true,
+        "needs_review": true
+      },
+      "fix_note": "Only sentence of the lesson, in an example block; no in-rule bank sentence carries deshou/naru, so author one and swap the tag."
+    }
+  },
+  "held|les:n5-adjetivos-06|sent:tatoeba-4852": {
+    "ok": true
+  },
+  "held|les:n5-adjetivos-07|sent:tatoeba-10883885": {
+    "ok": true
+  },
+  "held|les:n5-adjetivos-07|sent:tatoeba-1128926": {
+    "ok": true
+  },
+  "held|les:n5-adjetivos-08|sent:tatoeba-99645": {
+    "ok": false,
+    "problem": "fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence. Load 3 against a budget of 1, while on-topic bank rows exist: sent:gen-100750b3cf00 いもうとは およぐのが へたです carries gram:gp-53 and vocab:1185200 with load 0; its n4 label comes only from the run link vocab:1546550 (葉, for は).",
+    "corrected": {
+      "fix": "replace",
+      "replacement": {
+        "slug": "sent:gen-100750b3cf00",
+        "jp": "いもうとは およぐのが へたです",
+        "pt": "Minha irmã mais nova é ruim em nadar.",
+        "carries": [
+          "gram:gp-53",
+          "vocab:1185200"
+        ],
+        "fit": "i+0",
+        "needs_fix": "drop the run link vocab:1546550 and recompute sentence.level (expected n5)"
+      },
+      "fix_note": "Only sentence of the lesson, in an example block; swap the tag after regrading."
+    }
+  },
+  "held|les:n5-comparacoes-01|sent:gen-dc17b084b7de": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-01|sent:gen-ead8371d038a": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-01|sent:gen-326ea97de1a1": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-02|sent:gen-f7cec4b420ec": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-02|sent:gen-c94b958f1ed1": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-02|sent:tatoeba-223501": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-03|sent:tatoeba-223815": {
+    "ok": false,
+    "problem": "unlock-suru does not clear this link: it is flagged only for its n4 level label (load 1 = budget 1), and vocab:1157170 (する) is registered n4 on a single source (jlptvocabapi, 1/1) and sentence.level is max(level of linked vocab/kanji), so every dissected sentence containing する is graded n4. The claim 'makes this link i+0 with no edit' is true of the load, not of the check that flags it.",
+    "corrected": {
+      "fix": "unlock-suru",
+      "also_fix": [
+        "regrade vocab:1157170 to n5",
+        "recompute sentence.level (expected n5)"
+      ],
+      "fix_note": "Unlock する in les:n5-verbos-04 and regrade it to n5; with the level recomputed the link passes check D with no edit to the lesson."
+    }
+  },
+  "held|les:n5-comparacoes-03|sent:tatoeba-125116": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-05|sent:tatoeba-84964": {
+    "ok": true
+  },
+  "held|les:n5-comparacoes-06|sent:tatoeba-3073523": {
+    "ok": true
+  },
+  "held|les:n5-te-form-01|sent:tatoeba-124708": {
+    "ok": false,
+    "problem": "Flagged only as above level (n4 label, load 1 = budget 1); relinking ください does not recompute sentence.level, which is computed once at persist time.",
+    "corrected": {
+      "fix": "relink-token",
+      "also_fix": [
+        "recompute sentence.level after the relink (expected n5)"
+      ],
+      "fix_note": "Relink ください to vocab:1184270 (下さい) and recompute sentence.level; the prose around it stays true."
+    }
+  },
+  "held|les:n5-te-form-01|sent:tatoeba-146189": {
+    "ok": true
+  },
+  "held|les:n5-te-form-03|sent:tatoeba-85522": {
+    "ok": true
+  },
+  "held|les:n5-te-form-03|sent:gen-8bc9ce5df658": {
+    "ok": true
+  },
+  "held|les:n5-te-form-03|sent:gen-47206ec62227": {
+    "ok": false,
+    "problem": "Gloss incomplete: 冷やし is an unlinked content token whose kanji 冷 is unknown (冷やす, 'gelar'), and the gloss only covers 冷蔵庫.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "gloss_pt": "冷蔵庫 (れいぞうこ): os kanji 冷蔵庫 ainda não foram ensinados, leia pela furigana; 冷やす (ひやす) = \"gelar, pôr para esfriar\"."
+    }
+  },
+  "held|les:n5-te-form-04|sent:tatoeba-5107": {
+    "ok": false,
+    "problem": "fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence. The sentence carries none of the lesson's unlocks (old_carries_lesson_unlock is empty, no grammar tags): the lesson teaches relative clauses (gram:gp-36, gram:gp-37) and 疲れているんだ has none, so keeping it leaves the lesson with an off-topic N3 example.",
+    "corrected": {
+      "fix": "replace",
+      "replacement": {
+        "generated_key": "to assign",
+        "jp": "あそこにいる人はだれですか",
+        "pt": "Quem é aquela pessoa ali?",
+        "carries": [
+          "gram:gp-36"
+        ],
+        "fit": "i+0",
+        "sentence_level_estimate": "n5",
+        "ai_generated": true,
+        "needs_review": true,
+        "note": "relative clause by construction (verbo + substantivo); all words known since topic 07-10"
+      },
+      "fix_note": "Only sentence of the lesson and off-topic; swap for an authored in-rule example."
+    }
+  },
+  "held|les:n5-te-form-06|sent:tatoeba-125387": {
+    "ok": true
+  },
+  "held|les:n5-te-form-06|sent:gen-f1c08a8693dc": {
+    "ok": true
+  },
+  "held|les:n5-convites-01|sent:tatoeba-774809": {
+    "ok": true
+  },
+  "held|les:n5-convites-01|sent:tatoeba-190532": {
+    "ok": true
+  },
+  "held|les:n5-rotina-03|sent:gen-1ae4a3cf896d": {
+    "ok": true
+  },
+  "held|les:n5-rotina-03|sent:gen-ac0e695fa395": {
+    "ok": true
+  },
+  "held|les:n5-rotina-04|sent:tatoeba-211003": {
+    "ok": false,
+    "problem": "fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence. The gloss covers 犬 only; かみつく (kana, not in the registry) is unknown to the learner.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "also_fix": [
+        "unlock-suru",
+        "regrade vocab:1157170 to n5"
+      ],
+      "gloss_pt": "犬 (いぬ): o kanji 犬 ainda não foi ensinado, leia pela furigana; かみつく = \"morder\".",
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored."
+    }
+  },
+  "held|les:n5-rotina-04|sent:tatoeba-1170360": {
+    "ok": false,
+    "problem": "Gloss incomplete: 見下し is an unlinked content token (見下す, not in the known set) and is not glossed. fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence. An on-topic real たり sentence exists, sent:tatoeba-213845 そうですね、テレビを見たりしますね。, in rule once する is unlocked and the level recomputed.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "also_fix": [
+        "unlock-suru",
+        "regrade vocab:1157170 to n5"
+      ],
+      "gloss_pt": "他人 (たにん) = \"outras pessoas\"; 見下す (みくだす) = \"menosprezar\"; 〜するな = \"não faça\".",
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored. Better: after unlock-suru and a level recompute, swap for sent:tatoeba-213845."
+    }
+  },
+  "held|les:n5-conectando-01|sent:tatoeba-82538": {
+    "ok": true
+  },
+  "held|les:n5-conectando-03|sent:tatoeba-2469096": {
+    "ok": true
+  },
+  "held|les:n5-conectando-04|sent:gen-d354f1465606": {
+    "ok": true
+  },
+  "held|les:n5-conectando-05|sent:tatoeba-214854": {
+    "ok": true
+  },
+  "held|les:n5-conectando-05|sent:tatoeba-4888": {
+    "ok": true
+  },
+  "held|les:n5-conectando-06|sent:tatoeba-137646": {
+    "ok": false,
+    "problem": "つもり is this lesson's own grammar point (gram:tsumori, les:n5-conectando-06) but its vocab record vocab:1382980 is unlocked only in les:n4-forma-simples-06: the same unlock gap as する, missed. The gloss shows the headword 積もり with untaught kanji. fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "also_fix": [
+        "unlock-suru",
+        "regrade vocab:1157170 to n5",
+        "unlock vocab:1382980 (つもり) in les:n5-conectando-06"
+      ],
+      "gloss_pt": "つもり = \"intenção, plano\" (é o 〜つもり desta lição).",
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored."
+    }
+  },
+  "held|les:n5-conectando-06|sent:tatoeba-3460693": {
+    "ok": false,
+    "problem": "こと is part of this lesson's own pattern 〜たことがある (gram:ta-koto-ga-aru, les:n5-conectando-06) but vocab:1313580 is unlocked only in les:n4-oracoes-relativas-01: an unlock gap, not a word to gloss. The gloss '事 (こと) = \"coisa, fato\"' shows untaught kanji 事 and misdescribes the こと of the pattern. fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "also_fix": [
+        "unlock vocab:1313580 (こと) in les:n5-conectando-06"
+      ],
+      "gloss_pt": "〜たことがある = \"já ter feito\" (o molde desta lição).",
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored."
+    }
+  },
+  "held|les:n4-forma-simples-01|sent:gen-f626c3374153": {
+    "ok": true
+  },
+  "held|les:n4-forma-simples-01|sent:gen-a57fa0b2f6c3": {
+    "ok": true
+  },
+  "held|les:n4-forma-simples-02|sent:gen-238f14601cdc": {
+    "ok": true
+  },
+  "held|les:n4-forma-simples-04|sent:gen-86b281bbdbef": {
+    "ok": true
+  },
+  "held|les:n4-forma-simples-04|sent:gen-e00af1726629": {
+    "ok": true
+  },
+  "held|les:n4-forma-simples-05|sent:tatoeba-105626": {
+    "ok": true
+  },
+  "held|les:n4-forma-simples-05|sent:gen-2cb2ddc513fb": {
+    "ok": true
+  },
+  "held|les:n4-forma-simples-06|sent:gen-6de90943b937": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-01|sent:gen-82ddc26749ff": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-01|sent:tatoeba-155677": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-03|sent:gen-aab58020a36f": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-03|sent:gen-c5f31a4dfcad": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-04|sent:gen-b2c4b3ced962": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-06|sent:tatoeba-217663": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-07|sent:tatoeba-78536": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-07|sent:tatoeba-83950": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-07|sent:gen-344b2dbc4a13": {
+    "ok": true
+  },
+  "held|les:n4-oracoes-relativas-07|sent:gen-71eeebb22ba7": {
+    "ok": true
+  },
+  "held|les:n4-condicionais-01|sent:gen-5d330e502fe3": {
+    "ok": true
+  },
+  "held|les:n4-condicionais-01|sent:gen-54d978e882ca": {
+    "ok": true
+  },
+  "held|les:n4-condicionais-02|sent:tatoeba-200926": {
+    "ok": true
+  },
+  "held|les:n4-condicionais-03|sent:gen-46f095053830": {
+    "ok": true
+  },
+  "held|les:n4-condicionais-04|sent:tatoeba-80898": {
+    "ok": false,
+    "problem": "keep-no-gloss rests on 'every word and kanji is in the known set; only the level label is above', which is false: 無茶 is an unlinked non-kana content word outside the known set (sentence_ok counts it). The prose already explains 無茶しなければ ('se eu não tivesse exagerado'), so keeping it is fine, for that reason.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "gloss_pt": null,
+      "fix_note": "The prose explains 無茶しなければ; 無茶 (むちゃ) is an unlinked word outside the known set, not a label-only case. Keep as a gated exception."
+    }
+  },
+  "held|les:n4-condicionais-05|sent:gen-acbd1be494f0": {
+    "ok": true
+  },
+  "held|les:n4-condicionais-07|sent:gen-2eb864ff10da": {
+    "ok": true
+  },
+  "held|les:n4-potencial-04|sent:gen-b347563062a8": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-03|sent:tatoeba-5049": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-03|sent:tatoeba-3313205": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-03|sent:tatoeba-146821": {
+    "ok": false,
+    "problem": "The replace breaks the prose: the paragraph right after the tag reads 'Aqui aparece 横になる (\"deitar-se\"); a forma estendida 〜ていようと思う dá a ideia de \"vou ficar deitado um pouco\"', and the replacement もっとお金をためようと思うんだ has neither 横になる nor 〜ていようと思う. quoted_in_prose missed it. The replacement also carries ためよう, an unlinked verb the learner has not met.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "replacement": null,
+      "gloss_pt": "横 (よこ): o kanji 横 ainda não foi ensinado, leia pela furigana.",
+      "fix_note": "The prose right after the tag explains 横になる and 〜ていようと思う in this sentence; keep it (load 1 within budget 2, above level only) as a gated exception."
+    }
+  },
+  "held|les:n4-volitivo-04|sent:tatoeba-11669238": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-04|sent:tatoeba-84326": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-04|sent:tatoeba-9489164": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-05|sent:tatoeba-10465367": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-05|sent:tatoeba-8939546": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-07|sent:gen-e4c675e9ca2d": {
+    "ok": true
+  },
+  "held|les:n4-volitivo-07|sent:gen-c1a790a4c31e": {
+    "ok": true
+  },
+  "held|les:n4-transitividade-01|sent:gen-867d5c2e8dc3": {
+    "ok": true
+  },
+  "held|les:n4-transitividade-01|sent:gen-f490f11e55b3": {
+    "ok": true
+  },
+  "held|les:n4-dar-receber-02|sent:tatoeba-118469": {
+    "ok": true
+  },
+  "held|les:n4-dar-receber-02|sent:tatoeba-9178394": {
+    "ok": true
+  },
+  "held|les:n4-experiencia-01|sent:gen-f1534c9baa43": {
+    "ok": true
+  },
+  "held|les:n4-experiencia-03|sent:gen-9bc0cee86eab": {
+    "ok": true
+  },
+  "held|les:n4-experiencia-04|sent:gen-585a1fd61d9e": {
+    "ok": true
+  },
+  "held|les:n4-experiencia-04|sent:gen-83a69c5a49f1": {
+    "ok": true
+  },
+  "held|les:n4-experiencia-05|sent:gen-2d1dcf054c6b": {
+    "ok": true
+  },
+  "held|les:n4-obrigacao-01|sent:tatoeba-1272425": {
+    "ok": true
+  },
+  "held|les:n4-obrigacao-01|sent:tatoeba-1046077": {
+    "ok": true
+  },
+  "held|les:n4-obrigacao-01|sent:tatoeba-187898": {
+    "ok": true
+  },
+  "held|les:n4-obrigacao-02|sent:tatoeba-2591977": {
+    "ok": true
+  },
+  "held|les:n4-obrigacao-02|sent:tatoeba-2040883": {
+    "ok": true
+  },
+  "held|les:n4-obrigacao-02|sent:tatoeba-1417711": {
+    "ok": true
+  },
+  "held|les:n4-aspecto-01|sent:gen-1f6fd836c289": {
+    "ok": true
+  },
+  "held|les:n4-aspecto-02|sent:tatoeba-12462035": {
+    "ok": true
+  },
+  "held|les:n4-aspecto-02|sent:tatoeba-7298759": {
+    "ok": true
+  },
+  "held|les:n4-aspecto-02|sent:gen-fd3b6a8cb10e": {
+    "ok": true
+  },
+  "held|les:n4-aspecto-04|sent:gen-509ae5ead73c": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-01|sent:gen-aaabebd8cac1": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-01|sent:tatoeba-106462": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-03|sent:gen-7ec782cb2980": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-03|sent:tatoeba-9846192": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-04|sent:tatoeba-141991": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-05|sent:gen-f1b038704e1c": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-06|sent:gen-3c81102a6182": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-06|sent:gen-f2f39d1b820e": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-07|sent:tatoeba-148753": {
+    "ok": true
+  },
+  "held|les:n4-suposicao-08|sent:tatoeba-11692639": {
+    "ok": true
+  },
+  "held|les:n4-passiva-01|sent:gen-3de9af165938": {
+    "ok": true
+  },
+  "held|les:n4-passiva-02|sent:gen-552e95412e88": {
+    "ok": true
+  },
+  "held|les:n4-passiva-02|sent:tatoeba-112448": {
+    "ok": true
+  },
+  "held|les:n4-passiva-02|sent:tatoeba-221717": {
+    "ok": true
+  },
+  "held|les:n4-passiva-03|sent:tatoeba-9478237": {
+    "ok": true
+  },
+  "held|les:n4-passiva-04|sent:gen-d3bba30db3a5": {
+    "ok": true
+  },
+  "held|les:n4-passiva-04|sent:gen-2be04a058c05": {
+    "ok": true
+  },
+  "held|les:n4-passiva-04|sent:gen-9054c26d99b8": {
+    "ok": true
+  },
+  "held|les:n4-causativa-03|sent:tatoeba-118746": {
+    "ok": true
+  },
+  "held|les:n4-causativa-03|sent:tatoeba-119009": {
+    "ok": true
+  },
+  "held|les:n4-causativa-03|sent:tatoeba-230979": {
+    "ok": true
+  },
+  "held|les:n4-keigo-01|sent:tatoeba-174190": {
+    "ok": true
+  },
+  "held|les:n4-keigo-02|sent:tatoeba-126710": {
+    "ok": true
+  },
+  "held|les:n4-keigo-02|sent:tatoeba-236843": {
+    "ok": true
+  },
+  "held|les:n4-keigo-02|sent:tatoeba-171272": {
+    "ok": false,
+    "problem": "The prose around it says '会えなくて é a forma て de \"não poder encontrar\"', but the sentence has the humble お会いできなくて; the gloss covers only 今晩, so the prose and the sentence disagree for the learner.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "gloss_pt": "今晩 (こんばん): o kanji 晩 ainda não foi ensinado, leia pela furigana; お会いできなくて é a forma humilde de 会えなくて (\"não poder encontrar\")."
+    }
+  },
+  "held|les:n4-keigo-05|sent:gen-59401317dba3": {
+    "ok": true
+  },
+  "held|les:n4-keigo-05|sent:gen-6c6ce0d2199b": {
+    "ok": true
+  },
+  "held|les:n4-conectores-01|sent:gen-375933b32579": {
+    "ok": true
+  },
+  "held|les:n4-conectores-01|sent:gen-b01569f986d3": {
+    "ok": true
+  },
+  "held|les:n4-conectores-02|sent:gen-2983acf2a91a": {
+    "ok": true
+  },
+  "held|les:n4-conectores-02|sent:gen-04b97adbf861": {
+    "ok": true
+  },
+  "held|les:n4-conectores-02|sent:gen-9e22bc1d7301": {
+    "ok": true
+  },
+  "held|les:n4-conectores-03|sent:gen-5ed199f650d0": {
+    "ok": true
+  },
+  "held|les:n4-conectores-03|sent:gen-63960c1a9b9f": {
+    "ok": true
+  },
+  "held|les:n4-conectores-04|sent:tatoeba-225929": {
+    "ok": true
+  },
+  "held|les:n4-conectores-04|sent:gen-1bce6041e175": {
+    "ok": true
+  },
+  "held|les:n4-conectores-06|sent:tatoeba-83211": {
+    "ok": true
+  },
+  "held|les:n4-conectores-07|sent:tatoeba-80880": {
+    "ok": true
+  },
+  "held|les:n4-conectores-07|sent:gen-e41bdeadc5f1": {
+    "ok": true
+  },
+  "held|les:n3-tempo-03|sent:tatoeba-187075": {
+    "ok": false,
+    "problem": "Not prose-bound: the tag follows 'Hora de praticar / Resolva e confira cada explicação.' and the exercise tags; no prose introduces or quotes it (quoted_in_prose is empty), W14's in_example_block only missed it because the heading is not a sentence heading. The lesson also shows sent:tatoeba-188870, in rule, so removing this link does not empty the lesson.",
+    "corrected": {
+      "fix": "remove",
+      "fix_note": "No prose references it and the lesson keeps sent:tatoeba-188870; drop the tag (W14 op remove)."
+    }
+  },
+  "held|les:n3-perspectiva-03|sent:tatoeba-11013866": {
+    "ok": false,
+    "problem": "fix_note is false: the link sits in a 'Mais exemplos'/'Exemplos do banco' block with no prose around it (quoted_in_prose is empty); it is held only because removing it would leave the lesson with no sentence. gloss_pt is null although the learner meets 上がりまくった (〜まくる, N2-level) and ペース with no explanation anywhere in the lesson.",
+    "corrected": {
+      "fix": "keep-with-gloss",
+      "gloss_pt": "上がりまくった: 〜まくる = \"fazer sem parar, pra valer\"; ペース = \"ritmo\".",
+      "fix_note": "Held because it is the lesson's only sentence (example block, no prose quotes it) and no in-rule bank sentence carries what it shows. Keep as a gated exception with the gloss; replace when an in-rule sentence is authored."
+    }
+  },
+  "lesson|les:n5-numeros-tempo-01": {
+    "ok": false,
+    "problem": "Only one pick for up to three slots, and real named-i+1 candidates carrying other targets were not offered, not even as alternates: tatoeba 3024513 一人いくらですか？ (kanji:一; only gap the word 一人, n5; sentence n5).",
+    "corrected": {
+      "add_pick": {
+        "source_kind": "tatoeba-raw",
+        "tatoeba_id": 3024513,
+        "jp": "一人いくらですか？",
+        "pt-BR": "Quanto é por pessoa?",
+        "carries": [
+          "kanji:一"
+        ],
+        "fit": "i+1",
+        "unknown": [
+          {
+            "vocab": "vocab:1576150",
+            "headword": "一人"
+          }
+        ],
+        "real": true,
+        "ai_generated": false,
+        "needs_review": true
+      }
+    }
+  },
+  "lesson|les:n5-numeros-tempo-04": {
+    "ok": false,
+    "problem": "A real i+0 sentence carrying an unlock was missed while both picks are generated: tatoeba 203991 ダイエット中です。 carries vocab:1620400 (中, ちゅう); ダイエット is kana-only and unlinked, kanji 中 is known. The finding 'the rest are generated' is therefore wrong for this lesson.",
+    "corrected": {
+      "add_pick": {
+        "source_kind": "tatoeba-raw",
+        "tatoeba_id": 203991,
+        "jp": "ダイエット中です。",
+        "pt-BR": "Estou de dieta.",
+        "carries": [
+          "vocab:1620400"
+        ],
+        "fit": "i+0",
+        "real": true,
+        "ai_generated": false,
+        "needs_review": true
+      }
+    }
+  },
+  "finding|0": {
+    "ok": true
+  },
+  "finding|1": {
+    "ok": false,
+    "problem": "True that all 18 review picks are bank rows, but 3 carry none of the review's targets (sent:tatoeba-2242416, sent:tatoeba-200577, sent:tatoeba-8618076) and 3 are ai-generated rows chosen over real in-rule rows that cover more targets.",
+    "corrected": "Re-pick per the pick verdicts: every review pick carries at least one target; real rows first."
+  },
+  "finding|2": {
+    "ok": false,
+    "problem": "Incomplete. vocab:1157170 (する) is registered n4 on a single source (jlptvocabapi, 1/1) and sentence.level is max(level of linked vocab/kanji), so every dissected sentence containing する is graded n4, so unlocking it clears none of the flagged N5 links whose failure is the level label (sent:tatoeba-223815, sent:tatoeba-11059892) and the たり pick would be graded n4. The same unlock gap exists for つもり (vocab:1382980; gram:tsumori in les:n5-conectando-06), こと (vocab:1313580; 〜たことがある, same lesson), 過ぎる (vocab:1195970; gram:sugiru in les:n5-comparacoes-06) and くれる (vocab:1269130, registered n1; gram:gp-56 in les:n5-particulas-lugar-07).",
+    "corrected": "Unlock する in les:n5-verbos-04 AND regrade vocab:1157170 to n5, then recompute sentence levels; apply the same unlock to the four records listed."
+  },
+  "finding|3": {
+    "ok": false,
+    "problem": "Relinking alone does not clear the two relink-only links: both are flagged only for their n4 level label (load 1 = budget 1) and sentence.level is computed once at persist time. For the くれる case the target 呉れる (vocab:1269130) is n1 and not known, so the relink does not remove the gap.",
+    "corrected": "Relink, then recompute sentence.level; for くれる also unlock and regrade vocab:1269130."
+  },
+  "finding|4": {
+    "ok": false,
+    "problem": "Real candidates were missed: les:n5-numeros-tempo-04 (tatoeba 203991 ダイエット中です。, i+0), -07 (tatoeba 8631611 ブラジルは大きな国だ。, i+0), -08 (bank sent:tatoeba-5066 シャワーはどこですか。, n4 only through spurious run links) and -09 (tatoeba 224200 こちらカーティスさんです。, i+0; tatoeba 188894 駅はどこですか。, i+1), plus tatoeba 224779 for gram:kata in les:n5-conectando-07.",
+    "corrected": "Real picks exist in 7 of the 8 item lessons once these are selected (all but les:n5-convites-06); generated sentences remain only for さとう/しお, しょうゆ, 写真, 雑誌, 十, 歳, 大, 吹く, 降る, へん and たり."
+  }
+}

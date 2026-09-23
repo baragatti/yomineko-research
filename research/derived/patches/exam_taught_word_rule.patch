@@ -1,0 +1,73 @@
+diff --git a/scripts/export/build_exam_banks.py b/scripts/export/build_exam_banks.py
+index e8de6be..c5db073 100644
+--- a/scripts/export/build_exam_banks.py
++++ b/scripts/export/build_exam_banks.py
+@@ -91,6 +91,11 @@ of those findings; each is marked with the finding it closes.
+      「（　）？」 keyed なぜ is answered as well by なあ or まで. Measured, not guessed — 0 leaves
+      those, 1 leaves inversions (「キツイ（　）。」 with これ), 3 halves n5_grammar_form.
+      Report: research/reports/exam_builder_fixes_2.md.
++ 20  A TAUGHT WORD UNDER TEST. `kanji_reading` / `orthography` key on a word some lesson up to the
++     level unlocks (`exam_rules.TaughtSets.word_taught`). Today the cks vocab IS that union, so this
++     moves no item; it pins the rule should the cks ever widen. W24's "72 of 1,953" joined bank slugs
++     to the DB's `vocab:<headword>` unlock refs; against the export all 1,953 test a taught word.
++     Report: research/reports/exam_taught_word_rule.md.
+ 
+ RUN ORDER (W18): the authored, listening and reading_comp builders first, this one LAST — the
+ INDEX below is a glob over every bank file, so a bank written after it leaves a stale row.
+@@ -489,9 +494,15 @@ def main() -> int:
+         # ---- kanji_reading + orthography -----------------------------------------------------
+         # W17 fix 12: one item per printed STEM. 背 was two kanji_reading items keyed せ and せい;
+         # あつい was three orthography items keyed 暑い / 熱い / 厚い over an identical option set.
++        # Fix 20: the word under test is one a lesson teaches; distractors still come from the whole
++        # level-clean pool, which is what the learner may meet.
+         by_hw: dict[str, list[dict]] = {}
+         by_kana: dict[str, list[dict]] = {}
+         for v in lv_vocab:
++            if not taught.word_taught(v["slug"], lvl):
++                drop("kanji_reading", "target-word-not-taught")
++                drop("orthography", "target-word-not-taught")
++                continue
+             by_hw.setdefault(v["hw"], []).append(v)
+             by_kana.setdefault(v["kana"], []).append(v)
+         kr_groups = sorted((group_order(g, lvl) for g in by_hw.values()),
+diff --git a/scripts/export/exam_rules.py b/scripts/export/exam_rules.py
+index c5d8b41..5ca1e2b 100644
+--- a/scripts/export/exam_rules.py
++++ b/scripts/export/exam_rules.py
+@@ -82,9 +82,16 @@ class TaughtSets:
+     def __init__(self, root: Path) -> None:
+         self.by_level: dict[str, dict[str, set[str]]] = {}
+         self.kanji_chars: dict[str, set[str]] = {}
++        # Words a lesson TEACHES (a `vocab` unlock, exported refs), cumulative up to each level. Equal
++        # to the cks vocab today (712 / 1,355 / 2,951); kept separate so a wider cks cannot let an
++        # untaught word become the word under test.
++        self.words: dict[str, set[str]] = {}
++        unlocked: set[str] = set()
+         for module in MODULE_ORDER:
+             les = self._module_lessons(root, module)
++            unlocked |= {u["ref"] for r in les for u in r[4] if u.get("type") == "vocab"}
+             if module in LEVELS:
++                self.words[module] = set(unlocked)
+                 if not les:
+                     raise SystemExit(
+                         f"exam_rules: course/{module} has no lessons, so the taught set for {module} "
+@@ -111,7 +118,8 @@ class TaughtSets:
+             for lf in sorted(tdir.glob("lesson-*.json")):
+                 les = json.loads(lf.read_text(encoding="utf-8"))
+                 out.append((int(topic.get("order", 0)), int(les.get("order", 0)),
+-                            les.get("id", lf.name), les.get("cumulative_known_set") or {}))
++                            les.get("id", lf.name), les.get("cumulative_known_set") or {},
++                            les.get("unlocks") or []))
+         out.sort(key=lambda r: (r[0], r[1]))
+         return out
+ 
+@@ -128,6 +136,9 @@ class TaughtSets:
+     def grammar_ok(self, ref: str, lvl: str) -> bool:
+         return gram_slug(ref) in self.by_level[lvl]["grammar"]
+ 
++    def word_taught(self, slug: str, lvl: str) -> bool:
++        return slug in self.words[lvl]
++
+ 
+ # --------------------------------------------------------------------------------------------
+ # 2. the reading-aware link
