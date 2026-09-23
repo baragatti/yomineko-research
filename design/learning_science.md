@@ -638,6 +638,9 @@ not stimulus vs retrieval.)*
   field per capability (Layer C, `needs_review: true`) or point at `speaking_path.md` stages, which are
   already can-do framed.
   *Why:* the rule as first drafted cited a file that cannot supply its own example. Confidence high.
+  *Status (W24, 2026-09-23):* DONE for capabilities. All 125 carry `can_do` + `can_do_evidence`
+  (`recognition | production`, what R67 reads) + `can_do_derived_from`; checked by
+  `validate_capabilities.py` (a)-(c).
 
 - **R67 [enforceable] DON'T** surface an unqualified "você já consegue…" unless backed by ≥1 PRODUCTION
   event; recognition-only FSRS state licenses only "você já reconhece…". Auditor test:

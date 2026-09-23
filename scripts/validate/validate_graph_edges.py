@@ -22,9 +22,9 @@ perfectly and was false about what it pointed at:
        and 16 families hold members at a level their own `spans_levels` does not declare.
   G04  the family layer had no inbound edge in either direction; the export now writes a `families`
        back-pointer on vocab / kanji / grammar, and this checks the two directions agree.
-  G11  56 of 322 lessons carry no capability. 14 of those are principled; the other 42 unlock
-       vocabulary the capability registry cannot express. Both live in an exemptions file with a
-       written reason, so the gap is data rather than silence.
+  G11  every lesson maps to a capability, or carries a written reason in an exemptions file so the
+       gap is data rather than silence. W24 (vocabulary, phonology, exam-readiness and study-method
+       kinds) mapped the last 56, so the file is empty and a new entry must be a real exception.
   G18  322 `vocab.kanji` entries name characters outside the leveled registry. Real, expected, and a
        dead link for any consumer that renders a kanji chip per character — so they are enumerated in
        design/unregistered_kanji_chars.json instead of being tolerated by a blanket skip.

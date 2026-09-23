@@ -1679,7 +1679,39 @@ def handle_w22_unlocks(rows, sents, gram, table):
     return out
 
 
+CAPABILITIES: dict[str, dict] = {}
+CAP_LESSON_MAP: dict[str, list] = {}
+
+
+def handle_w24_capabilities(rows, sents, gram, table):
+    """W24. Each authored capability row is what the SHIPPED registry carries: same kind and level, the
+    can_do text, its evidence level and its quoted objectives verbatim; a curated `name` / `lessons` is
+    published too, and every curated lesson maps to the capability in lesson_map.json."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['id']}"
+        cap = CAPABILITIES.get(r["id"])
+        if cap is None:
+            out.append(("fail", C_NO_RECORD, addr, "no such capability in corpus/capabilities/registry.json"))
+            continue
+        keys = ["kind", "level", "can_do", "can_do_evidence", "can_do_derived_from"] + \
+               [k for k in ("name",) if k in r]
+        bad = next((k for k in keys if cap.get(k) != r[k]), None)
+        if bad:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"registry {bad} differs from the table"))
+            continue
+        stray = [les for les in r.get("lessons") or []
+                 if les not in (cap.get("lessons") or []) or r["id"] not in CAP_LESSON_MAP.get(les, [])]
+        if stray:
+            out.append(("fail", C_NOT_APPLIED, addr, f"curated lesson(s) not mapped: {stray[:3]}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # W24: the authored half of the capability layer (can_do, evidence, quotes, curated lessons).
+    "w24_capabilities.json": handle_w24_capabilities,
     # W22: never-unlocked features + conjugation-form unlocks (C4-W22).
     "w22_n3_dead_end.json": handle_w22_unlocks,
     # W14: lesson sentence re-selection (adds, in-place swaps, removals, pre-N5 chips).
@@ -1766,6 +1798,11 @@ def main() -> int:
             f"homograph rulings cannot be replayed against a course tree that is not there")
     print(f"        {len(LESSONS)} lesson leaves, {len(EXEMPT['coverage'])} coverage + "
           f"{len(EXEMPT['gating'])} gating exemptions (homograph-ruling replay)")
+
+    capd = root / "corpus" / "capabilities"
+    if (capd / "registry.json").exists():
+        CAPABILITIES.update({c["id"]: c for c in json.loads((capd / "registry.json").read_text(encoding="utf-8"))})
+        CAP_LESSON_MAP.update(json.loads((capd / "lesson_map.json").read_text(encoding="utf-8")))
 
     READINGS.update(load_readings_export(root))
     if len(READINGS) < MIN_READINGS:

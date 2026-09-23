@@ -145,6 +145,25 @@ of the target (`kana:…`, `vocab:…`, `kanji:…`, `gram:…`, `sent:…`, `co
 [`product_roadmap.md`](product_roadmap.md) — some roadmap deliverable rows bundle several features — and turns
 on at the first lesson that uses it.)
 
+**capability `kind`** (W24; owner of the `capability.kind` vocabulary in `contracts/capability.schema.json`).
+A capability (`corpus/capabilities/registry.json`) is something a learner can DO once its lessons are done;
+every lesson maps to at least one (`lesson_map.json`, no exemptions):
+| value | how lessons reach it | `can_do_evidence` |
+|-------|----------------------|-------------------|
+| `grammar` | a `grammar` unlock: curated groups in `build_capabilities.CAPS`, introducing-topic fallback | production |
+| `script` | `kana-family` / `kanji` unlocks; `cap:romaji-reading` is curated | recognition |
+| `vocabulary` | a `vocab` unlock -> `cap:vocab:<topic>`, the topic of the FIRST lesson that unlocks the word | recognition |
+| `phonology` | curated: the pre-N5 sound, pronunciation and orientation lessons (segments / mora) | production |
+| `exam-readiness` | every lesson of `top:<level>-revisao` -> `cap:exam-readiness-<level>` | production |
+| `study-method` | curated: the course-orientation lesson | recognition |
+
+Each capability carries `can_do` (one first-person pt-BR sentence, Layer C, `needs_review`), the lesson
+objectives it was written from quoted verbatim in `can_do_derived_from`, `lessons` (the inverse of the map)
+and `exam_link` (per bank section, the items whose own grammar / vocab / reading / sentence ref reaches it;
+an `exam-readiness` capability links the whole paper instead). The authored half lives in
+`research/derived/repairs/w24_capabilities.json`; the builder refuses a derived capability with no row there.
+Widening the kind enum is an edit here and in `scripts/contracts/build_schemas.py`, never a side effect.
+
 **`need_type`** = `unlock_type` **minus** `srs-deck`, **plus** `lesson` (`les:<id>`). You depend on
 items / features / prior-lessons, never on a deck.
 

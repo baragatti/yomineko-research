@@ -19,8 +19,23 @@ export type Layer = "A" | "B" | "C";
 
 /** Something a learner can DO once a set of lessons is complete. The bridge between the syllabus and the exam. */
 export interface Capability {
+  can_do: LocaleText;
+  can_do_derived_from: {
+      lesson?: string;
+      objective?: string;
+    }[];
+  can_do_evidence: "production" | "recognition";
+  exam_link: {
+      bank?: string;
+      items?: number;
+      level?: Level;
+      section?: "context_fill" | "grammar_form" | "kanji_reading" | "listening_gist" | "listening_point" | "listening_reply" | "listening_say" | "listening_task" | "orthography" | "paraphrase" | "reading_comp" | "sentence_order" | "text_grammar" | "usage";
+      via?: "item-provenance" | "paper";
+    }[];
   grammar_keys: string[];
   id: StableId;
+  kind: "exam-readiness" | "grammar" | "phonology" | "script" | "study-method" | "vocabulary";
+  lessons: string[];
   level: Level;
   name: LocaleText;
   review_status?: {

@@ -5,7 +5,7 @@
   "description": "Something a learner can DO once a set of lessons is complete. The bridge between the syllabus and the exam.",
   "x-yomineko": {
     "entity": "capability",
-    "records": 74,
+    "records": 125,
     "packing": "list",
     "glob": "corpus/capabilities/registry.json",
     "stable_id_field": "id",
@@ -14,6 +14,91 @@
   },
   "type": "object",
   "properties": {
+    "can_do": {
+      "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "can_do_derived_from": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "lesson": {
+            "type": "string"
+          },
+          "objective": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "can_do_evidence": {
+      "type": "string",
+      "enum": [
+        "production",
+        "recognition"
+      ],
+      "description": "The weakest evidence that licenses asserting `can_do` to a learner: a recognition-only capability is phrased 'você já reconhece', never 'você já consegue'. Vocabulary owner: design — design/learning_science.md R67. Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "design",
+        "source": "design/learning_science.md R67"
+      }
+    },
+    "exam_link": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "bank": {
+            "type": "string"
+          },
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "level": {
+            "$ref": "common.schema.json#/$defs/Level"
+          },
+          "section": {
+            "type": "string",
+            "enum": [
+              "context_fill",
+              "grammar_form",
+              "kanji_reading",
+              "listening_gist",
+              "listening_point",
+              "listening_reply",
+              "listening_say",
+              "listening_task",
+              "orthography",
+              "paraphrase",
+              "reading_comp",
+              "sentence_order",
+              "text_grammar",
+              "usage"
+            ],
+            "description": "The exam section (bank type) this row counts items in. Vocabulary owner: design — design/exam_simulator.md (the paper table). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "design",
+              "source": "design/exam_simulator.md (the paper table)"
+            }
+          },
+          "via": {
+            "type": "string",
+            "enum": [
+              "item-provenance",
+              "paper"
+            ],
+            "description": "item-provenance = bank items whose own grammar / vocab / reading / sentence ref reaches this capability, counted; paper = the whole-paper link of an exam-readiness capability, where `items` is the section's item count per paper. Vocabulary owner: producer — scripts/export/build_capabilities.py (exam_link). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+            "x-vocabulary": {
+              "owner": "producer",
+              "source": "scripts/export/build_capabilities.py (exam_link)"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
     "grammar_keys": {
       "type": "array",
       "items": {
@@ -22,6 +107,28 @@
     },
     "id": {
       "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "exam-readiness",
+        "grammar",
+        "phonology",
+        "script",
+        "study-method",
+        "vocabulary"
+      ],
+      "description": "What sort of thing the learner can do. Neutral English, not localized. Vocabulary owner: design — design/courseware_architecture.md (capability kinds). Widening it is an edit there, never a side effect of regenerating this schema from the data.",
+      "x-vocabulary": {
+        "owner": "design",
+        "source": "design/courseware_architecture.md (capability kinds)"
+      }
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
@@ -92,8 +199,14 @@
   },
   "additionalProperties": false,
   "required": [
+    "can_do",
+    "can_do_derived_from",
+    "can_do_evidence",
+    "exam_link",
     "grammar_keys",
     "id",
+    "kind",
+    "lessons",
     "level",
     "name"
   ]

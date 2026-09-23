@@ -445,6 +445,27 @@ _register({
         "type": "string",
         "description": "The four options, sorted so the position of the right answer carries no "
                        "information; the app shuffles per attempt."},
+    # W24. The capability layer: what sort of thing the learner can do, what evidence licenses saying
+    # so (learning_science R67), and where the exam banks assess it.
+    "capability.kind": vocabulary(
+        ["grammar", "script", "vocabulary", "phonology", "exam-readiness", "study-method"],
+        "design", "design/courseware_architecture.md (capability kinds)",
+        "What sort of thing the learner can do. Neutral English, not localized."),
+    "capability.can_do_evidence": vocabulary(
+        ["recognition", "production"], "design", "design/learning_science.md R67",
+        "The weakest evidence that licenses asserting `can_do` to a learner: a recognition-only "
+        "capability is phrased 'você já reconhece', never 'você já consegue'."),
+    "capability.exam_link[].section": vocabulary(
+        ["kanji_reading", "orthography", "context_fill", "grammar_form", "sentence_order", "paraphrase",
+         "usage", "text_grammar", "reading_comp", "listening_task", "listening_point", "listening_gist",
+         "listening_say", "listening_reply"],
+        "design", "design/exam_simulator.md (the paper table)",
+        "The exam section (bank type) this row counts items in."),
+    "capability.exam_link[].via": vocabulary(
+        ["item-provenance", "paper"], "producer", "scripts/export/build_capabilities.py (exam_link)",
+        "item-provenance = bank items whose own grammar / vocab / reading / sentence ref reaches this "
+        "capability, counted; paper = the whole-paper link of an exam-readiness capability, where "
+        "`items` is the section's item count per paper."),
     "speak_unit.checkpoint[].type": _exam_section,
     "speak_unit.drills[].strand": _strand,
     "speak_unit.production[].strand": _strand,

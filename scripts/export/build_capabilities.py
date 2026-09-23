@@ -4,9 +4,20 @@ learner unlocks (te-form, particles, conditionals, keigo…) — the fixed list 
 schedules against. Deterministic: each capability lists its grammar keys explicitly; any grammar key not in a
 curated group falls back to a capability derived from its INTRODUCING TOPIC (theme bucket), so every grammar
 point maps somewhere stable. Lessons additionally emit kana/kanji recognition capabilities from their unlocks.
+
+W24 adds a `kind` to every capability and four more kinds (design/courseware_architecture.md):
+  vocabulary      cap:vocab:<topic> for every vocab unlock, the topic of the FIRST lesson that unlocks the word
+  phonology/study curated lesson lists, read from the authoring table
+  script          + cap:romaji-reading (curated, same table)
+  exam-readiness  every lesson of top:<level>-revisao -> cap:exam-readiness-<level>
+and three fields: `can_do` (Layer C, authored), `lessons` (inverse of lesson_map) and `exam_link` (derived
+from the exam banks' own item provenance, or the whole paper for exam-readiness). The authored half lives in
+research/derived/repairs/w24_capabilities.json; a derived capability with no authored row, or a can_do quote
+that is not an objective of a lesson the capability claims, is a hard failure, never a silent drop.
 Output: corpus/capabilities/registry.json + lesson_map.json. Usage: build_capabilities.py"""
 from __future__ import annotations
-import json, sqlite3, sys
+import json, re, sqlite3, sys
+from collections import defaultdict
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
 # W01: honour --db / $YOMINEKO_DB so a rebuild can target a scratch DB (scripts/dbtarget.py).
@@ -38,7 +49,9 @@ CAPS: dict[str, tuple[str, str, list[str]]] = {
     "invitation-volitional": ("Convites e forma volitiva", "n5", ["masen-ka", "mashou", "mashouka", "ikou-kei-volitional-form", "you-to-omou", "n3-you-to-omou", "n3-you-to-shinai", "n3-uto-shita", "tsumori", "yotei-da", "n3-tsumori-deshita"]),
     "requests-commands": ("Pedidos e ordens", "n5", ["o-kudasai", "o-kudasai-2", "kata", "nasai", "n3-te-goran", "n3-te-kureto", "n3-sete-kudasai", "sasete-kudasai", "te-itadakemasen-ka"]),
     "obligation": ("Obrigação e proibição", "n5", ["naito-ikenai", "nakucha", "nakute-wa-ikenai", "nakute-wa-naranai", "cha-ikenai-ja-ikenai", "naku-temo-ii", "nakereba-ikenai", "nakereba-naranai", "n3-beki-da", "n3-wake-ni-wa-ikanai"]),
-    "permission": ("Permissão 〜てもいい", "n5", ["temo-ii-desu", "to-ittemo-ii"]),
+    # W24: `temo-ii-desu` is claimed by te-form first (setdefault), so this group only ever holds
+    # to-ittemo-ii. The name says what it owns; moving the key out of te-form is an owner call.
+    "permission": ("Atenuação com と言ってもいい", "n5", ["temo-ii-desu", "to-ittemo-ii"]),
     "existence-having": ("Existência e posse", "n5", ["ga-arimasu", "ga-imasu"]),
     "movement-purpose": ("Movimento com propósito 〜に行く", "n5", ["ni-iku"]),
     "become-change": ("Mudança de estado なる/〜くする/〜にする", "n5", ["naru", "ni-suru", "ku-suru", "you-ni-naru", "n3-you-ni-natta", "koto-ni-naru", "koto-ni-suru", "n3-koto-ni-natte-iru", "n3-koto-ni-shite-iru"]),
@@ -70,6 +83,36 @@ CAPS: dict[str, tuple[str, str, list[str]]] = {
 KANA_CAP = ("kana-reading", "Leitura de kana (hiragana/katakana)", "pre-n5")
 KANJI_CAP = ("kanji-recognition", "Reconhecimento de kanji", "n5")
 
+AUTHORED = ROOT / "research" / "derived" / "repairs" / "w24_capabilities.json"
+PAPER_DOC = ROOT / "design" / "exam_simulator.md"
+BANKS = ROOT / "corpus" / "exam_banks"
+KINDS = ("grammar", "script", "vocabulary", "phonology", "exam-readiness", "study-method")
+EVIDENCE = ("recognition", "production")
+KANJI_SECTIONS = {"kanji_reading", "orthography"}
+_PAPER_ROW = re.compile(r"^\|\s*([a-z_]+)\s*\([^)]*\)\s*\|\s*(\d+)\*?\s*\|\s*(\d+)\*?\s*\|\s*(\d+)\*?\s*\|")
+
+
+def paper_spec(doc: Path = PAPER_DOC) -> dict[str, dict[str, int]]:
+    """section -> {level: items per paper}, parsed from the 'Paper structure' table of exam_simulator.md."""
+    out: dict[str, dict[str, int]] = {}
+    for line in doc.read_text(encoding="utf-8").splitlines():
+        m = _PAPER_ROW.match(line)
+        if m:
+            out[m.group(1)] = {"n5": int(m.group(2)), "n4": int(m.group(3)), "n3": int(m.group(4))}
+    if not out:
+        raise SystemExit(f"build_capabilities: no paper table parsed from {doc}")
+    return out
+
+
+def lesson_objectives(con: sqlite3.Connection) -> dict[str, list[str]]:
+    """lesson slug -> its pt-BR objectives, as the exporter publishes them."""
+    out = {}
+    for slug, val in con.execute(
+            "SELECT l.slug, lt.value FROM lesson l JOIN localized_text lt ON lt.entity_type='lesson' "
+            "AND lt.entity_id=l.id AND lt.field='objectives' AND lt.locale='pt-BR'"):
+        out[slug] = json.loads(val) if val else []
+    return out
+
 
 def main() -> int:
     con = sqlite3.connect(DB)
@@ -98,26 +141,57 @@ def main() -> int:
         key2cap[k] = cap
         topic_of.setdefault(cap, (tslug, lvl))
 
+    def title_of(tslug: str) -> str | None:
+        r = con.execute("SELECT lt.value FROM topic t JOIN localized_text lt ON lt.entity_type='topic' "
+                        "AND lt.entity_id=t.id AND lt.field='title' WHERE t.slug=?", (tslug,)).fetchone()
+        return r[0] if r else None
+
     registry = []
     for cap, (name, lvl, _) in CAPS.items():
         keys = sorted(k for k, c in key2cap.items() if c == cap and k in gkeys)
         if keys:
-            registry.append({"id": f"cap:{cap}", "name": {"pt-BR": name}, "level": lvl, "grammar_keys": keys})
+            registry.append({"id": f"cap:{cap}", "kind": "grammar", "name": {"pt-BR": name}, "level": lvl,
+                             "grammar_keys": keys})
     for cap, (tslug, lvl) in sorted(topic_of.items()):
         keys = sorted(k for k, c in key2cap.items() if c == cap)
-        title = con.execute("SELECT lt.value FROM topic t JOIN localized_text lt ON lt.entity_type='topic' "
-                            "AND lt.entity_id=t.id AND lt.field='title' WHERE t.slug=?",
-                            (f"top:{tslug}",)).fetchone()
-        registry.append({"id": f"cap:{cap}", "name": {"pt-BR": (title[0] if title else tslug)},
-                         "level": lvl, "grammar_keys": keys})
-    registry.append({"id": f"cap:{KANA_CAP[0]}", "name": {"pt-BR": KANA_CAP[1]}, "level": KANA_CAP[2], "grammar_keys": []})
-    registry.append({"id": f"cap:{KANJI_CAP[0]}", "name": {"pt-BR": KANJI_CAP[1]}, "level": KANJI_CAP[2], "grammar_keys": []})
+        registry.append({"id": f"cap:{cap}", "kind": "grammar",
+                         "name": {"pt-BR": title_of(f"top:{tslug}") or tslug}, "level": lvl, "grammar_keys": keys})
+    for c, kind in ((KANA_CAP, "script"), (KANJI_CAP, "script")):
+        registry.append({"id": f"cap:{c[0]}", "kind": kind, "name": {"pt-BR": c[1]}, "level": c[2],
+                         "grammar_keys": []})
 
-    # lesson map: capabilities INTRODUCED by each lesson (from its unlocks)
-    lesson_map = {}
-    for lid, slug in con.execute("SELECT id,slug FROM lesson"):
-        caps = set()
-        for typ, ref in con.execute("SELECT unlock_type,ref FROM lesson_unlocks WHERE lesson_id=?", (lid,)):
+    # ---- W24: the authored half (can_do + curated lesson lists) ----------------------------------
+    authored = {r["id"]: r for r in json.loads(AUTHORED.read_text(encoding="utf-8"))["rows"]}
+    for r in authored.values():
+        if "lessons" in r:          # curated kinds: phonology, study-method, cap:romaji-reading
+            registry.append({"id": r["id"], "kind": r["kind"], "name": r["name"], "level": r["level"],
+                             "grammar_keys": []})
+
+    # course order, so "the lesson that unlocks the word" is the FIRST one when a word is unlocked twice
+    lessons = con.execute(
+        "SELECT l.id, l.slug, t.slug, m.level FROM lesson l JOIN topic t ON t.id=l.topic_id "
+        "JOIN course_module m ON m.id=t.module_id ORDER BY m.ord, t.ord, l.ord").fetchall()
+    topic_level = {t: lvl for _, _, t, lvl in lessons}
+    vocab_topic: dict[str, str] = {}
+    unlocks: dict[int, list[tuple[str, str]]] = defaultdict(list)
+    for lid, typ, ref in con.execute("SELECT lesson_id, unlock_type, ref FROM lesson_unlocks"):
+        unlocks[lid].append((typ, ref))
+    for lid, _, tslug, _ in lessons:
+        for typ, ref in unlocks[lid]:
+            if typ == "vocab":
+                vocab_topic.setdefault(ref, tslug)
+    vocab_cap = {ref: "cap:vocab:" + t.split(":", 1)[1] for ref, t in vocab_topic.items()}
+
+    # lesson map: capabilities INTRODUCED by each lesson (from its unlocks), plus the W24 rules
+    curated: dict[str, set[str]] = defaultdict(set)
+    for r in authored.values():
+        for les in r.get("lessons") or []:
+            curated[les].add(r["id"])
+    lesson_map: dict[str, list[str]] = {}
+    vocab_caps: dict[str, str] = {}          # cap id -> topic slug
+    for lid, slug, tslug, _ in lessons:
+        caps = set(curated.get(slug, ()))
+        for typ, ref in unlocks[lid]:
             if typ == "grammar":
                 k = ref.split(":", 1)[1]
                 if k in key2cap:
@@ -126,20 +200,123 @@ def main() -> int:
                 caps.add(f"cap:{KANA_CAP[0]}")
             elif typ == "kanji":
                 caps.add(f"cap:{KANJI_CAP[0]}")
+            elif typ == "vocab":
+                caps.add(vocab_cap[ref])
+                vocab_caps[vocab_cap[ref]] = vocab_topic[ref]
+        m = re.fullmatch(r"top:(n\d)-revisao", tslug)
+        if m:
+            caps.add(f"cap:exam-readiness-{m.group(1)}")
         if caps:
             lesson_map[slug] = sorted(caps)
+    for cid, tslug in sorted(vocab_caps.items()):
+        registry.append({"id": cid, "kind": "vocabulary",
+                         "name": {"pt-BR": f"Vocabulário: {title_of(tslug) or tslug}"},
+                         "level": topic_level[tslug], "grammar_keys": []})
+    for cid in sorted({c for caps in lesson_map.values() for c in caps if c.startswith("cap:exam-readiness-")}):
+        registry.append({"id": cid, "kind": "exam-readiness", "name": authored[cid]["name"] if cid in authored
+                         else {"pt-BR": cid}, "level": cid.rsplit("-", 1)[1], "grammar_keys": []})
+
+    # ---- lessons[] (inverse map) + can_do, refusing anything the table cannot back ----------------
+    by_cap: dict[str, list[str]] = defaultdict(list)
+    for slug, caps in lesson_map.items():
+        for c in caps:
+            by_cap[c].append(slug)
+    objectives = lesson_objectives(con)
+    fails: list[str] = []
+    ids = {c["id"] for c in registry}
+    for cid in sorted(set(authored) - ids):
+        fails.append(f"{cid}: authored row but the build derives no such capability")
+    for cap in registry:
+        cid = cap["id"]
+        cap["lessons"] = sorted(by_cap.get(cid, []))
+        a = authored.get(cid)
+        if a is None:
+            fails.append(f"{cid}: derived capability with no can_do row in {AUTHORED.name}")
+            continue
+        if a["kind"] != cap["kind"] or a["level"] != cap["level"]:
+            fails.append(f"{cid}: table says {a['kind']}/{a['level']}, build derives {cap['kind']}/{cap['level']}")
+        for q in a["can_do_derived_from"]:
+            if q["lesson"] not in cap["lessons"]:
+                fails.append(f"{cid}: can_do quotes {q['lesson']}, which the capability does not claim")
+            elif q["objective"] not in objectives.get(q["lesson"], []):
+                fails.append(f"{cid}: {q['lesson']} has no objective {q['objective']!r}")
+        cap["can_do"] = a["can_do"]
+        cap["can_do_evidence"] = a["can_do_evidence"]
+        cap["can_do_derived_from"] = a["can_do_derived_from"]
+    unmapped = [s for _, s, _, _ in lessons if s not in lesson_map]
+    if unmapped:
+        fails.append(f"{len(unmapped)} lessons map to no capability: {unmapped[:5]}")
+
+    # ---- exam_link: each bank item's own provenance -> capabilities ------------------------------
+    paper = paper_spec()
+    sent_keys: dict[str, list[str]] = defaultdict(list)
+    for s, k in con.execute("SELECT s.slug, g.key FROM sentence_grammar sg JOIN sentence s ON s.id=sg.sentence_id "
+                            "JOIN grammar_point g ON g.id=sg.grammar_id"):
+        sent_keys[s].append(k)
+    read_lesson = dict(con.execute("SELECT slug, gated_to_lesson FROM reading"))
+    hits: dict[str, dict[tuple[str, str], int]] = defaultdict(lambda: defaultdict(int))
+    unlinked = 0
+    for bank in sorted(BANKS.glob("n[0-9]_*.json")):
+        level, section = bank.stem.split("_", 1)
+        doc = json.loads(bank.read_text(encoding="utf-8"))
+        for it in (doc if isinstance(doc, list) else doc["items"]):
+            caps: set[str] = set()
+            if it.get("grammar") in key2cap:
+                caps.add(f"cap:{key2cap[it['grammar']]}")
+            if it.get("vocab") in vocab_cap:
+                caps.add(vocab_cap[it["vocab"]])
+                if section in KANJI_SECTIONS:
+                    caps.add(f"cap:{KANJI_CAP[0]}")
+            if it.get("reading"):
+                caps.update(lesson_map.get(read_lesson.get(it["reading"]) or "", []))
+            if not caps:
+                caps = {f"cap:{key2cap[k]}" for k in sent_keys.get(it.get("sentence") or "", []) if k in key2cap}
+            caps = {c for c in caps if not c.startswith("cap:exam-readiness-")}
+            unlinked += not caps
+            for c in caps:
+                hits[c][(level, section)] += 1
+    for cap in registry:
+        cid = cap["id"]
+        if cap["kind"] == "exam-readiness":
+            lvl = cap["level"]
+            rows = [(lvl, sec, n, "paper") for sec, per in paper.items() if (n := per.get(lvl, 0)) > 0
+                    and (BANKS / f"{lvl}_{sec}.json").exists()]
+        else:
+            rows = [(lvl, sec, n, "item-provenance") for (lvl, sec), n in hits.get(cid, {}).items()]
+        cap["exam_link"] = [{"level": lvl, "section": sec, "bank": f"corpus/exam_banks/{lvl}_{sec}.json",
+                             "items": n, "via": via} for lvl, sec, n, via in sorted(rows)]
+
+    for f in fails[:20]:
+        print("  FAIL", f)
+    if fails:
+        print(f"build_capabilities: {len(fails)} failure(s); nothing written")
+        return 1
 
     (OUT / "registry.json").write_text(json.dumps(registry, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "lesson_map.json").write_text(json.dumps(lesson_map, ensure_ascii=False, indent=1), encoding="utf-8")
+    kinds = defaultdict(int)
+    for c in registry:
+        kinds[c["kind"]] += 1
+    linked = sum(1 for c in registry if c["exam_link"])
     (OUT / "INDEX.md").write_text(
         "# corpus/capabilities — language-feature registry (our format)\n\n"
-        "The FIXED capability list the daily skill-SRS schedules against (roadmap C/D). Each capability maps "
-        "explicit grammar keys (curated groups; topic-bucket fallback so every grammar point is covered) plus "
-        "kana-reading / kanji-recognition. `lesson_map.json` = capabilities each lesson INTRODUCES (derived "
-        "from its unlocks). Layer C, needs_review.\n\n"
-        f"- registry: {len(registry)} capabilities\n- lesson_map: {len(lesson_map)} lessons\n", encoding="utf-8")
+        "The FIXED capability list the daily skill-SRS schedules against (roadmap C/D). Each capability has a "
+        "`kind` (design/courseware_architecture.md): grammar groups map explicit grammar keys (curated groups; "
+        "topic-bucket fallback so every grammar point is covered); script, vocabulary, phonology, "
+        "exam-readiness and study-method capabilities carry none. `can_do` is the first-person pt-BR "
+        "statement (Layer C, needs_review) with the lesson objectives it was written from quoted in "
+        "`can_do_derived_from`; `exam_link` says where the exam banks assess it. `lesson_map.json` = "
+        "capabilities each lesson INTRODUCES (derived from its unlocks plus the W24 rules), and every lesson "
+        "is in it.\n\n"
+        f"- registry: {len(registry)} capabilities ("
+        + ", ".join(f"{k} {kinds[k]}" for k in KINDS) + ")\n"
+        f"- lesson_map: {len(lesson_map)} lessons\n"
+        f"- exam_link: {linked} capabilities, {sum(len(c['exam_link']) for c in registry)} rows\n",
+        encoding="utf-8")
     unmatched = [k for k in gkeys if k not in key2cap]
-    print(f"capabilities: {len(registry)} | lessons mapped: {len(lesson_map)} | unmatched grammar: {len(unmatched)}")
+    print(f"capabilities: {len(registry)} | lessons mapped: {len(lesson_map)} | unmatched grammar: "
+          f"{len(unmatched)} | exam_link rows: {sum(len(c['exam_link']) for c in registry)} on {linked} caps | "
+          f"bank items linked to nothing: {unlinked}")
     con.close()
     return 0
 

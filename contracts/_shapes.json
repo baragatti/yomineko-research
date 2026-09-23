@@ -3625,10 +3625,137 @@
    "files": [
     "corpus/capabilities/registry.json"
    ],
-   "records": 74,
+   "records": 125,
    "fields": {
+    "can_do": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "object"
+     ]
+    },
+    "can_do.pt-BR": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ]
+    },
+    "can_do_derived_from": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "can_do_derived_from[].lesson": {
+     "present": 222,
+     "pct": 177.6,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "can_do_derived_from[].objective": {
+     "present": 222,
+     "pct": 177.6,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "can_do_evidence": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "production",
+      "recognition"
+     ]
+    },
+    "exam_link": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "exam_link[].bank": {
+     "present": 767,
+     "pct": 613.6,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
+    "exam_link[].items": {
+     "present": 767,
+     "pct": 613.6,
+     "required": false,
+     "types": [
+      "integer"
+     ],
+     "min": 1,
+     "max": 85
+    },
+    "exam_link[].level": {
+     "present": 767,
+     "pct": 613.6,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "n3",
+      "n4",
+      "n5"
+     ]
+    },
+    "exam_link[].section": {
+     "present": 767,
+     "pct": 613.6,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "context_fill",
+      "grammar_form",
+      "kanji_reading",
+      "listening_gist",
+      "listening_point",
+      "listening_reply",
+      "listening_say",
+      "listening_task",
+      "orthography",
+      "paraphrase",
+      "reading_comp",
+      "sentence_order",
+      "text_grammar",
+      "usage"
+     ]
+    },
+    "exam_link[].via": {
+     "present": 767,
+     "pct": 613.6,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "item-provenance",
+      "paper"
+     ]
+    },
     "grammar_keys": {
-     "present": 74,
+     "present": 125,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3637,22 +3764,54 @@
     },
     "grammar_keys[]": {
      "present": 494,
-     "pct": 667.6,
+     "pct": 395.2,
      "required": false,
      "types": [
       "string"
      ]
     },
     "id": {
-     "present": 74,
+     "present": 125,
      "pct": 100.0,
      "required": true,
      "types": [
       "string"
      ]
     },
+    "kind": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "exam-readiness",
+      "grammar",
+      "phonology",
+      "script",
+      "study-method",
+      "vocabulary"
+     ]
+    },
+    "lessons": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "array"
+     ]
+    },
+    "lessons[]": {
+     "present": 852,
+     "pct": 681.6,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
     "level": {
-     "present": 74,
+     "present": 125,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3666,7 +3825,7 @@
      ]
     },
     "name": {
-     "present": 74,
+     "present": 125,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3674,7 +3833,7 @@
      ]
     },
     "name.pt-BR": {
-     "present": 74,
+     "present": 125,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3689,10 +3848,10 @@
    "files": [
     "corpus/capabilities/lesson_map.json"
    ],
-   "records": 266,
+   "records": 322,
    "fields": {
     "[value]": {
-     "present": 266,
+     "present": 322,
      "pct": 100.0,
      "required": true,
      "types": [
@@ -3700,8 +3859,8 @@
      ]
     },
     "[value][]": {
-     "present": 565,
-     "pct": 212.4,
+     "present": 852,
+     "pct": 264.6,
      "required": false,
      "types": [
       "string"
