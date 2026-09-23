@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [会 口 古 多 安 少 店] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-0fd66f70d270`, `sent:gen-e7e5464992a3`, `sent:tatoeba-173912`
 
 ---
 
@@ -29,6 +29,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 店
 
 #### 手
+
+#### Mais exemplos
+> 🗣 どの店が安いですか — Qual loja é barata?
+> 🗣 どこかで会いましたか — A gente já se viu em algum lugar?
+> 🗣 口を出すな。 — Não se meta.
 - Reconheço o kanji 会 e sei onde conferir suas leituras.
 - Reconheço o kanji 口 e sei onde conferir suas leituras.
 - Reconheço o kanji 古 e sei onde conferir suas leituras.

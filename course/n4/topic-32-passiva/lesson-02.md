@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-137] · vocabulário [先輩, 召し上がる, 将来, 御, 拝見, 文化, 最初, 習慣] · kanji [堂 習 肉] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-552e95412e88`, `sent:tatoeba-112448`, `sent:tatoeba-221717`, `sent:tatoeba-994752`
+**Frases (por ID, do banco dissecado):** `sent:gen-552e95412e88`, `sent:tatoeba-112448`, `sent:tatoeba-221717`
 
 ---
 
@@ -63,9 +63,6 @@ Quatro kanji desta vez, ligados a hábitos, lugares e comida.
 - 飲 = "beber" (leituras: のむ, イン). À esquerda 飠 (comida); à direita alguém de boca aberta: abrir a boca para beber. Forma 飲む ("beber").
 
 #### Hora de praticar
-
-#### Mais exemplos
-> 🗣 真夜中が幽霊のうろつく時間だとされている。 — Diz-se que a meia-noite é a hora em que os fantasmas perambulam.
 
 #### Leitura
 > 📖 この国の学校では、そうじも大切なべんきょうだとされている。学生が自分で教室をきれいにするしゅうかんがある。これは、みんなで使うばしょを大事にする気持ちをそだてるとされている。先生からも、そうじの時間は大切だと言われた。わたしも、しょうらいこの気持ちをわすれないようにしたい。 — Nas escolas deste país, considera-se que a limpeza também é um aprendizado importante. Existe o costume de os próprios alunos deixarem a sala de aula limpa. Diz-se que isso cria o cuidado com o espaço que todo mundo usa. O professor também me disse que a hora da limpeza é importante. Eu também quero fazer o possível para não esquecer esse cuidado no futuro.

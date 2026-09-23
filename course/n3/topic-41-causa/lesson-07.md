@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [不, 不可, 不安, 不幸, 不思議, 不自由, 含む, 夫婦, 服装, 武器, 無, 無事, 笛, 節, 袋, 風景] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10070063`, `sent:tatoeba-100485`
 
 ---
 
@@ -49,6 +49,10 @@ Por último, um grupo concreto de substantivos.
 Repare em 含む, um verbo bem útil, e em 夫婦 para falar de um casal.
 この値段は税金を含んでいる (Este preço inclui os impostos.)
 あの夫婦は毎朝山の風景を見に行く (Aquele casal vai ver a paisagem da montanha toda manhã.)
+
+#### Mais exemplos
+> 🗣 無事でよかった。 — Ainda bem que você está bem.
+> 🗣 彼は不安になった。 — Ele ficou inquieto.
 
 #### Hora de praticar
 

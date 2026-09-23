@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [issho-ni, masen-ka] · vocabulário [フォーク, プール, ホテル, 休む, 前, 昼ご飯, 豚肉, 部屋] · kanji [西] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-774809`, `sent:gen-24bb23e4256e`, `sent:tatoeba-190532`, `sent:tatoeba-190548`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-774809`, `sent:gen-24bb23e4256e`, `sent:tatoeba-190532`
 
 ---
 
@@ -57,7 +57,6 @@ Dois kanji deste bloco de vocabulário:
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 一緒に行きます。 — Eu vou junto.
 - Sei usar 一緒に ("juntos") antes do verbo para indicar ação em conjunto.
 - Consigo convidar com 〜ませんか, trocando ます por ませんか.
 - Monto convites no molde 一緒に + verbo + ませんか.

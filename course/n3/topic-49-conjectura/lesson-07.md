@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [メモ, 名人, 命じる, 命令, 夢中, 寧ろ, 明確, 滅多に, 無料, 無視, 無駄, 結ぶ, 胸, 芽, 虫歯, 迷惑, 面, 飯] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-217558`, `sent:tatoeba-106641`, `sent:tatoeba-80702`
 
 ---
 
@@ -62,6 +62,11 @@ A expressão 迷惑をかける (めいわくをかける, "causar incômodo a a
 
 > **[l1-pitfall]**
 滅多に (めったに) só funciona com verbo negativo: 滅多に行かない ("quase nunca vou"). Não diga 滅多に行く. É como o nosso "raramente", que pede a ideia de "não acontecer".
+
+#### Mais exemplos
+> 🗣 これ無料です。 — Isso aqui é de graça.
+> 🗣 彼は仕事に夢中だ。 — Ele vive absorto no trabalho.
+> 🗣 明確な返事が欲しい。 — Quero uma resposta clara.
 
 #### Hora de praticar
 

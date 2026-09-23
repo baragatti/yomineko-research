@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [demo, shikashi, sore-kara, soshite] · vocabulário [レストラン, 廊下, 横, 然うして, 郵便局, 風呂] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-10588050`, `sent:tatoeba-2469096`, `sent:tatoeba-85538`, `sent:tatoeba-213512`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10588050`, `sent:tatoeba-2469096`, `sent:tatoeba-213512`
 
 ---
 
@@ -62,7 +62,6 @@ Encadeando tudo:郵便局に行きます。それから、レストランで食�
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 美人でもある。 — Ela também é bonita.
 > 🗣 そして何時間もいっしょに話したからです。 — E porque conversamos juntos por horas a fio.
 - Uso でも para marcar contraste no comecinho da frase, no tom do dia a dia.
 - Sei que しかし é o "porém/contudo" mais formal, igual em sentido a でも.

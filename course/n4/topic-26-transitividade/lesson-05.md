@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [すっかり, 以内, 形, 技術, 法律, 用意, 筈] · kanji [特 計] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-95ea64271abc`, `sent:tatoeba-78865`
 
 ---
 
@@ -46,6 +46,10 @@ Três substantivos que aparecem muito em textos do dia a dia e em notícias:
 #### Os kanji da lição
 計 significa plano, medir, calcular (leituras: kei, haka-ru). Tem o radical de palavra (言) ao lado de 十 ("dez"): imagine alguém contando em voz alta para fazer um plano. Aparece em 計画("plano, projeto"), bem perto do nosso 予定.
 特 significa especial (leitura toku). À esquerda está o radical de "boi" (牛) e à direita 寺 ("templo"): pense num boi reservado só para o templo, separado por ser especial. Vive em 特に("especialmente") e 特別("especial").
+
+#### Mais exemplos
+> 🗣 しきりに時計を見ている — Ele fica olhando o relógio sem parar.
+> 🗣 用意はいいかい。 — Você está pronto?
 
 #### Hora de praticar
 

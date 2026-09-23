@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-you-ni-natta, n3-you-ni-shimashou] · vocabulário [傷, 効く, 可哀想, 可愛らしい, 岸, 患者, 技師, 期間, 機械, 機関, 生地, 記事, 記者] · kanji [備 助 労 育 訪] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-123214`, `sent:tatoeba-237354`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-237354`
 
 ---
 
@@ -53,7 +53,6 @@ Mudanças acontecem com profissões, saúde e o que a gente lê. Guarde este gru
 Note que 助 e 労 compartilham o mesmo radical de "força". Quando um kanji novo trouxer um componente que você já conhece, ancore nele: é assim que a memória de kanji vira rede, não lista solta.
 
 #### Exemplos do banco
-> 🗣 内訳はどのようにしましょう？ — Como você gostaria do detalhamento?
 > 🗣 子供がやっと歩けるようになった。 — A criança finalmente passou a conseguir andar.
 
 #### Hora de praticar

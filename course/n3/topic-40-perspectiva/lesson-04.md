@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [数, スキー, スケート, スタイル, スタンド, スター, スープ, 優れる, 勧める, 姿, 少しも, 救う, 数, 数字, 末, 睡眠, 筋, 進める, 過ごす] · kanji [対 部] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11563854`, `sent:tatoeba-11058268`, `sent:tatoeba-11530592`
 
 ---
 
@@ -54,6 +54,11 @@ Um lote de katakana, vários do mundo esportivo.
 #### Os kanji 対 e 部
 - 対 - em relação a, oposto, par. Aparece em 反対 ('oposição') e em placares (3 対 1).
 - 部 - seção, parte, departamento. Como em 部屋 ('quarto') e 全部 ('tudo').
+
+#### Mais exemplos
+> 🗣 スキーできる？ — Você sabe esquiar?
+> 🗣 全部受け取った？ — Recebeu tudo?
+> 🗣 数分はかかります。 — Vai levar alguns minutos.
 
 #### Hora de praticar
 

@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [バッグ, 働き, 放す, 畑, 発展, 発明, 発行, 発表, 発見, 発車, 発達, 罰する, 羽, 肌, 裸, 話し合う, 離す, 離れる] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-101695`, `sent:tatoeba-197966`, `sent:tatoeba-235434`
 
 ---
 
@@ -63,6 +63,11 @@ Por fim, palavras ligadas ao corpo e à natureza, mais dois pares traiçoeiros: 
 
 > **[l1-pitfall]**
 Cuidado com 離す e 放す: as duas se leem はなす, mas 離す é separar/afastar (criar distância entre duas coisas) e 放す é soltar/largar (deixar algo ir, como um animal). O kanji 離 reaparece em 離れる (estar afastado), então use o sentido da frase para escolher certo.
+
+#### Mais exemplos
+> 🗣 彼は頭の働きが早い。 — Ele tem raciocínio rápido.
+> 🗣 バッグを盗まれました。 — Roubaram a minha bolsa.
+> 🗣 ２人は婚約を発表した。 — Os dois anunciaram o noivado.
 
 #### Hora de praticar
 

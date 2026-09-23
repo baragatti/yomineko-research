@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [irassharu, nasaru] · vocabulário [娘, 安全, 看護師, 花見, 見物, 警察, 集まる] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-9120405`, `sent:tatoeba-4865678`, `sent:tatoeba-187583`, `sent:tatoeba-85325`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-9120405`, `sent:tatoeba-4865678`, `sent:tatoeba-187583`, `sent:tatoeba-193408`
 
 ---
 
@@ -60,7 +60,7 @@ O erro mais comum do brasileiro é usar いらっしゃる ou なさる para si 
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 病気が全快なさるように。 — Que o senhor se recupere completamente.
+> 🗣 もし来られたら来なさい。 — Se puder vir, venha.
 
 #### Leitura
 > 📖 先生、いらっしゃいませ。今日は、お一人でいらっしゃいますか。お食事は、何になさいますか。魚と肉があります。お飲み物は、コーヒーになさいますか。では、こちらで少しお待ちください。 — Professor, seja bem-vindo. Hoje o senhor veio sozinho? O que o senhor vai querer comer? Temos peixe e carne. De bebida, o senhor prefere café? Então aguarde um pouquinho aqui, por favor.

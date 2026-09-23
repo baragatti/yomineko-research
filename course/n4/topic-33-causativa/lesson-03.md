@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [saserareru] · vocabulário [けれど, 両方, 代わり, 仰る, 優しい, 眠い, 砂, 背中, 船, 虫, 首, 髭] · kanji [冬 昼] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-118746`, `sent:tatoeba-119009`, `sent:tatoeba-230979`, `sent:tatoeba-117383`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-118746`, `sent:tatoeba-119009`, `sent:tatoeba-230979`
 
 ---
 
@@ -62,9 +62,6 @@ Quatro caracteres concretos para fixar agora.
 - 犬"cão" (leitura いぬ). Mnemônico: é o kanji de "grande" (大) com um pinguinho, como a coleira do 犬.
 
 #### Hora de praticar
-
-#### Mais exemplos
-> 🗣 彼の行動にはいつもびっくりさせられる。 — O comportamento dele sempre me surpreende.
 
 #### Leitura
 > 📖 今日は音楽の教室で、先生に何度も歌わせられました。その後、いすを二時間も運ばせられました。早く帰りたかったですが、先生に長く待たせられました。家に着いた時は、もう夜の十時でした。でも、あの歌はすきなので、明日もまた行きます。 — Hoje, na sala de música, o professor me fez cantar várias vezes. Depois disso, ainda me obrigou a carregar cadeiras por duas horas. Eu queria ir embora cedo, mas o professor me deixou esperando um tempão. Quando cheguei em casa, já eram dez da noite. Mesmo assim, gosto daquela música, então amanhã eu vou de novo.

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [二つ, 二人, 分, 枚, 毎年, 毎月, 毎朝, 毎週, ２日] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-4334054e97c0`
 
 ---
 
@@ -53,6 +53,9 @@ Não misture as três contagens.二つ conta objetos em geral;二人 conta pesso
 
 #### Juntando tudo
 Pense num convite real: "Toda semana (毎週) eu vou nadar; nós dois (二人) podemos ir juntos, são uns dez minutos (分) de caminhada, e eu já tenho duas entradas (枚) para o dia 2 (２日)." Cada palavra desta lição cabe naturalmente numa frase de combinado.
+
+#### Mais exemplos
+> 🗣 コップが二つあります — Tem dois copos.
 
 #### Hora de praticar
 

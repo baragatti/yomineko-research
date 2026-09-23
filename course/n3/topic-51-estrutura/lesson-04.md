@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ちゃんと, チャンス, 中古, 中央, 中学, 中止, 地区, 地平線, 地方, 地球, 注, 父親, 知事, 知能, 知識, 茶, 遅刻, 駐車] · kanji [幾 猫] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-9700901`, `sent:tatoeba-2445753`, `sent:tatoeba-8591155`
 
 ---
 
@@ -69,6 +69,11 @@ Aproveite o tema desta lição para guardar dois kanji que não estão nas palav
 - 幾 - quanto, quantos, alguns.
 家の前で猫が眠っていた (Um gato dormia na frente de casa.)
 幾つかの地区で祭りが行われた (Festivais foram realizados em alguns distritos.)
+
+#### Mais exemplos
+> 🗣 猫が苦手なの。 — Não me dou bem com gato.
+> 🗣 茶が好きです。 — Eu gosto de chá.
+> 🗣 遅刻するなよ！ — Não vai se atrasar!
 
 #### Hora de praticar
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [方々, ホーム, ボーイ, ボート, ボール, 仏, 保存, 保母, 保証, 吠える, 埃, 微笑む, 歩道, 炎, 訪問, 誇り, 頬, 骨] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-94661`, `sent:tatoeba-123466`, `sent:tatoeba-158947`
 
 ---
 
@@ -54,6 +54,11 @@ Para encerrar, elementos da natureza e algumas palavras em katakana.
 Repare em 炎 para descrever fogo e em ホーム no contexto de estação de trem.
 ろうそくの炎が揺れている (A chama da vela está tremendo.)
 電車がホームに到着した (O trem chegou à plataforma.)
+
+#### Mais exemplos
+> 🗣 彼女のほおは赤かった。 — As bochechas dela estavam vermelhas.
+> 🗣 特急のホームは何番ですか。 — Qual é o número da plataforma do expresso?
+> 🗣 私はボーイに、私のスーツケースを部屋まで運ばせた。 — Pedi para o camareiro levar minhas malas até o quarto.
 
 #### Hora de praticar
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [de, naide] · vocabulário [後, タクシー, 出す, 又, 掃除, 洗濯, 立つ, 達, 頼む] · kanji [後] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-778974`, `sent:tatoeba-195443`, `sent:tatoeba-1057336`, `sent:tatoeba-125387`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-778974`, `sent:tatoeba-195443`, `sent:tatoeba-1057336`
 
 ---
 
@@ -71,7 +71,6 @@ Não confunda os dois で: o desta lição (lugar/meio da ação) é uma partíc
 
 #### Mais exemplos
 > 🗣 でもなんで？ — Mas por quê?
-> 🗣 諦めないで。 — Não desiste!
 - Marco com で o lugar onde uma ação acontece (学校で勉強する).
 - Sei escolher entre で (ação) e に (existência) olhando o verbo.
 - Uso で para o meio de transporte (タクシーで行く).

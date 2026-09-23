@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [辛い, で, デート, 出会い, 出会う, 出来事, 定期, 抵抗, 提出, 提案, 敵, 梅雨, 程度, 積もる, 連れ, 適する, 釣り] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-202521`, `sent:tatoeba-11030940`, `sent:tatoeba-12065675`
 
 ---
 
@@ -71,6 +71,11 @@ Falta apresentar uma palavra-ferramenta e fechar o vocabulário da lição.
 - で (で) - em, no, na (marca o lugar onde uma ação acontece).
 海で釣りをするのが好きだ (Gosto de pescar no mar.)
 Repare que で aqui marca onde a ação acontece (no mar), e a frase ainda usa 釣り, a pescaria. Com isso, você já viu as dezessete palavras desta lição.
+
+#### Mais exemplos
+> 🗣 つらい仕事だった。 — Foi um trabalho pesado.
+> 🗣 で、どうしたいの？ — E aí, o que você quer fazer?
+> 🗣 今夜はデートなんだ。 — Hoje à noite eu tenho um encontro.
 
 #### Hora de praticar
 

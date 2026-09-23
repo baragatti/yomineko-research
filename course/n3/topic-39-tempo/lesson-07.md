@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [額, ぴったり, ビデオ, ピクニック, 一言, 人ごみ, 否定, 引っ張る, 必死, 悲劇, 日付, 比較, 等しい, 美人, 膝, 轢く, 非常, 額, 飛行] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-190645`, `sent:tatoeba-91660`, `sent:tatoeba-10513268`
 
 ---
 
@@ -52,6 +52,11 @@ Para fechar, verbos de ação, palavras de tempo e alguns empréstimos do kataka
 雨が降らないうちにピクニックを済ませよう (Vamos terminar o piquenique antes que comece a chover.)
 この服はサイズがぴったりだ (Esta roupa fica com o tamanho perfeito.)
 子供が手を引っ張って離さなかった (A criança ficou puxando minha mão sem soltar.)
+
+#### Mais exemplos
+> 🗣 一言言いたい。 — Quero dizer uma coisa.
+> 🗣 彼女はピクニックに行った。 — Ela foi a um piquenique.
+> 🗣 このビデオ、すごくいいね。 — Esse vídeo é muito bom, né.
 
 #### Hora de praticar
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [綿, ワイン, 僅か, 分ける, 別れ, 割る, 悪口, 態と, 我々, 我儘, 湾, 笑い, 脇, 話題, 論じる, 論争, 論文, 輪] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10934582`, `sent:tatoeba-8729104`, `sent:tatoeba-8596589`
 
 ---
 
@@ -51,6 +51,11 @@ Cuidado: 分ける (わける) é separar em partes/grupos; 割る (わる) é q
 
 > **[l1-pitfall]**
 Cuidado: 態と (わざと, de propósito) tem som parecido com わざわざ ('dar-se ao trabalho de'), mas o sentido é bem diferente. わざと é fazer algo de caso pensado, muitas vezes com má intenção; わざわざ é fazer um esforço especial, em geral por gentileza.
+
+#### Mais exemplos
+> 🗣 ここでお別れだ。 — Aqui a gente se despede.
+> 🗣 ワインはいかが？ — Aceita um vinho?
+> 🗣 お金を分けよう。 — Vamos dividir o dinheiro.
 
 #### Hora de praticar
 

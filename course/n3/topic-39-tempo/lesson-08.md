@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ヨット, 予期, 予測, 予算, 夜中, 容易, 曜日, 様子, 横切る, 欧羅巴, 止す, 用心, 要するに, 要求, 要点, 要素, 酔う, 陽気] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1113284`, `sent:tatoeba-11870716`, `sent:tatoeba-78854`
 
 ---
 
@@ -48,6 +48,11 @@ Dica: muitas dessas palavras começam com 要 (よう, 'necessário, essencial')
 
 > **[l1-pitfall]**
 Cuidado: 酔う (よう, ficar bêbado) é o verbo, mas você verá muito 様 e 要 com a mesma leitura よう. O contexto separa: 酔う é o que acontece depois de beber demais.
+
+#### Mais exemplos
+> 🗣 今は夜中の２時だよ。 — Agora são duas da madrugada.
+> 🗣 ヨーロッパから来たの？ — Você veio da Europa?
+> 🗣 用心しすぎることはない。 — Nunca é demais tomar cuidado.
 
 #### Hora de praticar
 

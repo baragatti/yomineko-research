@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ハンサム, バン, ビール, 判断, 原, 反抗, 場面, 幅, 母親, 灯, 犯人, 犯罪, 省く, 範囲, 腹, 被害, 販売, 針] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-111225`, `sent:tatoeba-231277`
 
 ---
 
@@ -61,6 +61,10 @@ Para fechar, um grupo de palavras mais abstratas, úteis para falar de extensão
 
 > **[tip]**
 O par 腹 (はら, barriga) e 原 (はら, campo) é um bom exemplo de como o kanji desfaz a ambiguidade que existiria só no som. Quando você ouvir はら numa frase, é o contexto que diz qual dos dois é; quando ler, o kanji já entrega a resposta.
+
+#### Mais exemplos
+> 🗣 彼はハンサムで頭もよい。 — Ele é bonito e inteligente.
+> 🗣 あのハンサムな男の子を見て。 — Olha aquele menino bonito.
 
 #### Hora de praticar
 

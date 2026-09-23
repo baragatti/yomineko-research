@@ -2,8 +2,8 @@
  "generated_for": "W01 — DB rebuildability (research/reports/APP_PLAN.md)",
  "what_this_is": "Every script that has ever written db/corpus.sqlite, in the order a rebuild must run them. scripts/rebuild_index.py executes this list against a fresh DB; scripts/validate/validate_index_rebuildable.py exports the result and diffs it against the committed corpus/ and course/ trees. Order is the order the steps must run, which is NOT always the order they landed: first_commit records when each one first appeared so the history stays auditable. A step with enabled=false cannot run today; note says why.",
  "db_is_not_the_source_of_truth": "corpus/ and course/ JSON are canonical (CLAUDE.md). This manifest exists so the git-ignored index behind them is reconstructible, not so it becomes authoritative.",
- "step_count": 135,
- "enabled_count": 99,
+ "step_count": 136,
+ "enabled_count": 100,
  "steps": [
   {
    "n": 1,
@@ -2137,6 +2137,21 @@
   },
   {
    "n": 133,
+   "phase": "repair",
+   "quick_family": null,
+   "script": "scripts/apply_lesson_sentences.py",
+   "args": [],
+   "enabled": true,
+   "first_commit": null,
+   "first_commit_date": "2026-09-23",
+   "writes": [
+    "localized_text",
+    "lesson_sentence"
+   ],
+   "note": "W14 lesson sentence re-selection. Applies research/derived/repairs/lesson_sentences.json (derived by scripts/derive_lesson_sentences.py from the exported tree; no sentence or prose authored): 61 lessons that rendered no sentence get a 'Mais exemplos' block (170 bank sentences, i+0, at or below the lesson level, each carrying an item the lesson unlocks); 8 check-D breaches inside example blocks are swapped in place and 22 removed (8 emptied example headings dropped); 24 pre-N5 survival words get their <vocab ref> chip; 154 breaching links are held as residue in the table. BOTH layers: the pt-BR body in localized_text + lesson_sentence here, and research/derived/lessons/<slug>.json. On a replay the sources already carry the rows except the kanji-exame lessons that step 33 regenerates, which this step writes again. needs[] follows through lesson_needs.json (step 116). Families stay last."
+  },
+  {
+   "n": 134,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/build_families.py",
@@ -2151,7 +2166,7 @@
    "note": "W11b: RECOMPUTES the class families (six conjugation/adjective classes + counters) over the levels course_module declares taught, instead of the old `if COUNT(*) FROM family > 0: skip` guard that made it a permanent no-op after its first run. Owner decision D14 also retires the 51 materialized kanji_component families here (family.deprecated_by = 'kanji.components'): they were a cache of the store kanji.components is exported from, 0 of 51 still matched it, and design/schema_v2.md answers the component query from that store directly. MOVED from step 37 in the pre-W11b numbering to after the lesson chain: the family layer is now derived from lesson_unlocks, which replay_all.py (load_lessons) does not populate until step 37 and which steps 90, 110, 111, 112 and 113 then correct. Built at 37 it would have derived every topic-bound family from an empty ledger."
   },
   {
-   "n": 134,
+   "n": 135,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/build_families_full.py",
@@ -2166,7 +2181,7 @@
    "note": "W11b: RECOMPUTES the topic-bound families from the LIVE unlock ledger (lesson_unlocks) instead of the frozen grammar_point.introducing_topic_id snapshot that put 272 of 364 grammar memberships in the wrong family, and drops the hardcoded `level IN ('n5','n4')` in favour of course_module.level. Renames the two types that lied about themselves: function_set -> topic_set and semantic_field -> topic_residual (the slugs, which are published addresses, do not change). Must run after the lesson chain and after the three identity migrations, for the same reason as the step before it."
   },
   {
-   "n": 135,
+   "n": 136,
    "phase": "families",
    "quick_family": null,
    "script": "scripts/ingest/fix_contrasts.py",

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [オーバー, ジャム, ステーキ, 消しゴム, 火, 石, 細かい, 鏡, 食料品] · kanji [品] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-0c8f5d6ae7f9`, `sent:gen-6a4d2520dba6`
 
 ---
 
@@ -53,6 +53,10 @@ O adjetivo 細かい (pequeno, miúdo) aparece bastante em casa: para falar de �
 #### Kanji da lição
 品 significa mercadoria, artigo (e também refinamento, dignidade). Leituras: しな (kun) e ヒン (on). Repare na forma: são três caixinhas (口) empilhadas, como artigos amontoados numa prateleira. Você o vê em 食料品 (しょくりょうひん), os "artigos de alimentação".
 火 significa fogo, chama. Leituras: ひ (kun) e カ (on). A forma lembra uma fogueira com fagulhas saltando dos dois lados, ou uma pessoa de braços abertos no calor. Você o vê sozinho em 火 (ひ, fogo) e também em 火曜日 (terça-feira), onde aparece com a leitura on.
+
+#### Mais exemplos
+> 🗣 毎週食料品を買いに行く — Toda semana vou comprar mantimentos.
+> 🗣 新しいオーバーを買った — Comprei um sobretudo novo.
 
 #### Hora de praticar
 

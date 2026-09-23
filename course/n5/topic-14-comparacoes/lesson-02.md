@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-46, ichiban, no-naka-de-a-ga-ichiban] · vocabulário [中, 何, 時々, 等, 習う, 賑やか, 近く] · kanji [山] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-f7cec4b420ec`, `sent:gen-c94b958f1ed1`, `sent:tatoeba-223501`, `sent:tatoeba-203016`
+**Frases (por ID, do banco dissecado):** `sent:gen-f7cec4b420ec`, `sent:gen-c94b958f1ed1`, `sent:tatoeba-223501`
 
 ---
 
@@ -69,7 +69,6 @@ Dois kanji de traçado simples e muito usados aparecem aqui.
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 チェスを一番どうですか。 — Que tal uma partida de xadrez?
 - Coloco 一番 antes do adjetivo/verbo para dizer "o mais...".
 - Monto a moldura X の中で A が 一番 ___ ("dentre X, A é o número um").
 - Sei que o vencedor leva が, não は.

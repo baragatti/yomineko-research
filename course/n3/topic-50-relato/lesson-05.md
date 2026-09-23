@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ダンス, チーズ, チーム, 単なる, 単に, 単純, 団体, 地, 地下, 地位, 地域, 担当, 男子, 知恵, 誕生, 近頃, 違い, 違いない] · kanji [偉 偶] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-159773`, `sent:tatoeba-1191939`, `sent:tatoeba-8661292`
 
 ---
 
@@ -66,6 +66,11 @@ Os dois kanji desta lição compartilham o radical de "pessoa" (亻) à esquerda
 
 > **[tip]**
 Os dois se parecem à primeira vista, mas o lado direito é bem diferente. Associe 偶 ao "encontro por acaso" de 偶々 e 偉 à pessoa "grande, admirável" de 偉い. Assim você não troca um pelo outro na hora de ler.
+
+#### Mais exemplos
+> 🗣 それは単なる偶然だと思う。 — Acho que foi só coincidência.
+> 🗣 違いがわからない。 — Não vejo diferença.
+> 🗣 チーズが食べたいな。 — Tô a fim de comer queijo.
 
 #### Hora de praticar
 

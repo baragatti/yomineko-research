@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [厄介, 家賃, 宿, 屋根, 役, 役割, 文句, 模様, 物事, 物語, 物音, 破る, 稍, 約, 者, 軈て, 辞める, 雇う] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3480313`, `sent:tatoeba-140582`, `sent:tatoeba-193127`
 
 ---
 
@@ -59,6 +59,11 @@ Três palavras parecidas no som, mas com sentidos distintos:
 
 > **[l1-pitfall]**
 Não troque 辞める (やめる, "demitir-se, largar o emprego") por 止める (やめる, "parar de fazer algo"). Soam idênticos, mas 辞める é sair de um cargo e 止める é parar de fazer alguma coisa (たばこをやめる, "parar de fumar"). Já 破る (やぶる) é outro verbo, "romper/rasgar". O contexto decide.
+
+#### Mais exemplos
+> 🗣 私、辞めます。 — Eu peço demissão.
+> 🗣 早い者勝ちですよ。 — Quem chega primeiro leva.
+> 🗣 やがて月が見え始めた。 — Logo a lua começou a aparecer.
 
 #### Hora de praticar
 

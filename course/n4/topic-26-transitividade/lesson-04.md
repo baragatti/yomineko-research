@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [下宿, 乗り物, 小鳥, 旅館, 案内, 森, 海岸, 通う, 運転] · kanji [住 台 広] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11803240`, `sent:gen-8cb731ddeb28`
 
 ---
 
@@ -58,6 +58,10 @@ Cinco kanji ligados a viagem, tempo e moradia:
 - 台: pedestal, suporte; e o contador de máquinas e veículos. Conte um 乗り物 com 一台 ("um veículo").
 - 広: largo, amplo, espaçoso. Um 海岸 aberto é 広い (largo). Memória: um teto (广) cobrindo um espaço grande.
 - 住: morar, residir, habitar. Quem fica num 下宿 usa 住む (morar). Memória: uma "pessoa" (亻) parada num lugar fixo.
+
+#### Mais exemplos
+> 🗣 もっと広いアパート借りたいわ。 — Eu queria alugar um apartamento mais espaçoso.
+> 🗣 車が三台止まっている — Tem três carros estacionados.
 
 #### Hora de praticar
 

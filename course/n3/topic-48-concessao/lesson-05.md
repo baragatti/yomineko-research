@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [たっぷり, だけど, だって, 仮令, 助ける, 叩く, 只, 多少, 宅, 宝, 戦い, 戦う, 直ちに, 確かめる, 立場, 経つ, 縦, 達する] · kanji [晩] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-150585`, `sent:tatoeba-1323423`, `sent:tatoeba-162459`
 
 ---
 
@@ -54,6 +54,11 @@ Palavras coloquiais e de quantidade.
 #### Kanji novos
 O kanji 晩 ('anoitecer, noite') aparece em 今晩 ('esta noite') e 晩御飯 ('jantar'). Tem o sol (日) à esquerda, já se pondo.
 O kanji 寒 ('frio') aparece em 寒い ('frio') e 寒気 ('ar frio, frio intenso'; com a leitura さむけ, 寒気 significa 'calafrio'). Imagine alguém encolhido dentro de casa no inverno.
+
+#### Mais exemplos
+> 🗣 時間はたっぷりある。 — Tempo é o que não falta.
+> 🗣 多少のお金はあるよ。 — Eu tenho um dinheirinho, sim.
+> 🗣 私の立場になってくれ。 — Se põe no meu lugar.
 
 #### Hora de praticar
 

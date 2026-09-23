@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-14, gp-15, gp-16] · vocabulário [クラス, 傘, 兄弟, 其の, 学校, 学生, 家庭, 家族, 教室, 新聞, 木, 此の, 靴, 靴下, 鞄] · kanji [新 木] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-74036`, `sent:tatoeba-80099`
+**Frases (por ID, do banco dissecado):** `sent:gen-ac706d716c7e`
 
 ---
 
@@ -51,8 +51,7 @@ Pratique também com estas palavras do dia a dia. Repare que algumas são bem pr
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 この新聞はロハだ。 — Este jornal é de graça.
-> 🗣 木はその実で分かる。 — A árvore se reconhece pelo seu fruto.
+> 🗣 そのうち分かるよ — Uma hora você descobre.
 - Sei usar この + nome para algo perto de mim.
 - Sei usar その + nome para algo perto de quem ouve.
 - Sei usar あの + nome para algo longe dos dois.

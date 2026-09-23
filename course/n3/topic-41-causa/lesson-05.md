@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ずっと, スピーチ, 世紀, 全て, 即ち, 性, 性格, 所為, 既に, 正, 正確, 済ませる, 生, 税金, 素敵, 請求, 鋭い, 頭痛] · kanji [内] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-205852`, `sent:tatoeba-142966`, `sent:tatoeba-103257`
 
 ---
 
@@ -53,6 +53,11 @@ Marcadores de discurso e palavras de transação.
 #### Os kanji 合 e 内
 - 合 - unir, juntar, encaixar. Aparece em 試合 ('partida') e 合う ('combinar').
 - 内 - dentro, interior, entre. Como em 内 (うち, 'dentro') e 案内 ('guiar').
+
+#### Mais exemplos
+> 🗣 それが全てです。 — É só isso.
+> 🗣 正確には何時ですか。 — Que horas são exatamente?
+> 🗣 彼は生の魚を食べない。 — Ele não come peixe cru.
 
 #### Hora de praticar
 

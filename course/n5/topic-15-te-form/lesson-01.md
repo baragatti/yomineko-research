@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-26, te-form, te-kudasai] · vocabulário [鼻] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-124708`, `sent:tatoeba-146189`, `sent:tatoeba-85522`, `sent:tatoeba-74924`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-124708`, `sent:tatoeba-146189`, `sent:tatoeba-74924`
 
 ---
 
@@ -39,7 +39,6 @@ Não traduza ください como um imperativo seco ("faça!"). Em japonês, te-ku
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 鼻がつまっています。 — Estou com o nariz entupido.
 > 🗣 よし、かかってこい！ — Beleza, pode vir!
 - Sei formar a forma て dos três grupos de verbos.
 - Consigo fazer um pedido educado com 〜てください.

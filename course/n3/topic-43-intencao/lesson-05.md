@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [セット, 世間, 全, 全員, 咳, 善, 専攻, 石油, 石炭, 積極的, 節約, 絶対, 絶滅, 設備, 設計, 説, 責める, 責任] · kanji [戦 経] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-140822`, `sent:tatoeba-107984`, `sent:tatoeba-140818`
 
 ---
 
@@ -58,6 +58,11 @@ Três palavras lidas ぜん, fáceis de confundir.
 #### Os kanji 戦 e 経
 - 戦 - guerra, batalha, combate. Como em 戦争 ('guerra') e 戦う ('lutar').
 - 経 - passar por, decorrer; também 'sutra' e 'longitude'. Como em 経済 ('economia') e 経つ ('passar o tempo').
+
+#### Mais exemplos
+> 🗣 全員出席です。 — Está todo mundo presente.
+> 🗣 彼は経験不足だ。 — Ele tem pouca experiência.
+> 🗣 全学生はみんな図書館に入ることができる。 — Todos os estudantes podem entrar na biblioteca.
 
 #### Hora de praticar
 

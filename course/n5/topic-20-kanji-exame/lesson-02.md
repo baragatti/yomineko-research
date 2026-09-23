@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [目 社 空 立 耳 花 言] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1522678`, `sent:tatoeba-2390157`, `sent:gen-7ac2a488ddab`
 
 ---
 
@@ -29,6 +29,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 花
 
 #### 言
+
+#### Mais exemplos
+> 🗣 なんか言った？ — Você disse alguma coisa?
+> 🗣 かわいい花のワッペンをつけた女の子を見た。 — Vi uma menina que usava um emblema bordado com uma florzinha fofa.
+> 🗣 かばんの中は空だった — A bolsa estava vazia por dentro.
 - Reconheço o kanji 新 e sei onde conferir suas leituras.
 - Reconheço o kanji 目 e sei onde conferir suas leituras.
 - Reconheço o kanji 社 e sei onde conferir suas leituras.

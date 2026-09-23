@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [制度, 制限, 成人, 成功, 成績, 成長, 政府, 整理, 正式, 清潔, 生命, 生物, 精々, 精神, 製品, 製造, 贅沢, 青年] · kanji [回 選] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3496864`, `sent:tatoeba-103362`, `sent:tatoeba-4793402`
 
 ---
 
@@ -55,6 +55,11 @@ Repare na diferença entre 成人 (せいじん, 'adulto' no sentido legal, maio
 #### Os kanji 回 e 選
 - 回 - vez, girar, rodada. Como em 一回 ('uma vez') e 回る ('girar').
 - 選 - eleger, selecionar, escolher. Como em 選ぶ ('escolher') e 選手 ('atleta').
+
+#### Mais exemplos
+> 🗣 数字を一つ選んで。 — Escolhe um número.
+> 🗣 彼は成長して医者になった。 — Ele cresceu e virou médico.
+> 🗣 食べ物は生物にとって必要なものです。 — A comida é necessária para os seres vivos.
 
 #### Hora de praticar
 

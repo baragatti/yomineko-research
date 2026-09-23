@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-uto-shita, n3-you-to-omou, n3-you-to-shinai] · vocabulário [かも知れない, 勘, 感じ, 感じる, 感動, 感情, 感覚, 期待, 機嫌, 科目, 考え, 記憶, 関心, 髪の毛] · kanji [念 想 残 然 追 限] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-4959`, `sent:tatoeba-8075115`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-8075115`
 
 ---
 
@@ -71,7 +71,6 @@ Os mnemônicos acima são só uma rampa de entrada. Você fixa de verdade revend
 Armadilha PT: em 行こう e 寝よう, o final おう/よう traz uma vogal longa: segure o "o" por DOIS tempos (duas palmas), não fale mais forte. E não deixe o reflexo brasileiro levantar esse "o" para "u": é i-ko-o, com "o" limpo até o fim, nunca um "ikou" que vira "iku".
 
 #### Exemplos do banco
-> 🗣 まず新しいサイトの概説をしようと思う。 — Primeiro, estou pensando em fazer um esboço geral do meu site novo.
 > 🗣 ダイエットしようとした。 — Eu tentei emagrecer.
 
 #### Hora de praticar

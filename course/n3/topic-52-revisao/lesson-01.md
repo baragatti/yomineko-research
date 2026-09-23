@@ -8,7 +8,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ピン, 便, 停留所, 郵便] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-9174400`, `sent:tatoeba-79044`
 
 ---
 
@@ -31,6 +31,10 @@ Para arredondar o N3, guarde mais algumas palavras úteis do dia a dia.
 - 便 (びん) - correspondência, remessa; também um voo (na contagem de voos e remessas).
 - 停留所 (ていりゅうじょ) - ponto de ônibus, parada.
 - ピン (ピン) - alfinete, pino.
+
+#### Mais exemplos
+> 🗣 どの便に乗ってたの？ — Você veio em qual voo?
+> 🗣 夕方の便はありますか。 — Tem voo no fim da tarde?
 
 #### Hora de praticar
 

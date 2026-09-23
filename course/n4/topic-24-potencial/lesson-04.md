@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [nakanaka-nai] · vocabulário [どんどん, 中々, 再来月, 最近, 無くなる, 終わり, 適当] · kanji [仕 近 院] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-9958167b70aa`, `sent:gen-b8b898fb9c68`, `sent:gen-b347563062a8`, `sent:tatoeba-10808987`
+**Frases (por ID, do banco dissecado):** `sent:gen-9958167b70aa`, `sent:gen-b8b898fb9c68`, `sent:gen-b347563062a8`, `sent:gen-a29d9c125b32`
 
 ---
 
@@ -61,7 +61,7 @@ Esse なかなか〜ない é ótimo socialmente: ele deixa você expressar irri
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 最近は仕事がなかなかないんだよ。 — Ultimamente, emprego é difícil de achar, viu.
+> 🗣 この店はとても近い — Esta loja é bem pertinho.
 
 #### Leitura
 > 📖 毎日かんじをべんきょうしていますが、なかなかおぼえられません。新しいことばはどんどん多くなります。さらいげつ、テストがあります。時間がなかなか作れなくて、少しこまっています。でも、毎日ノートに書いています。 — Estudo kanji todo dia, mas custo a decorar. As palavras novas vão aumentando cada vez mais. Daqui a dois meses tem uma prova. Não consigo de jeito nenhum arrumar tempo, e isso me deixa meio aflita. Mesmo assim, escrevo no caderno todo dia.

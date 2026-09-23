@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [ga, ga-arimasu, ga-imasu, gp-6, gp-8] · vocabulário [時, テレビ, 上げる, 六, 掛ける, 教える, 朝, 毎日, 浴びる, 消える, 生まれる, 着る, 答える, 締める, 覚える, 起きる, 閉める, 開ける, 降りる] · kanji [六] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-e8f19f968193`, `sent:gen-97a9a63e32d1`, `sent:tatoeba-150175`, `sent:tatoeba-11795596`
+**Frases (por ID, do banco dissecado):** `sent:gen-e8f19f968193`, `sent:gen-97a9a63e32d1`, `sent:tatoeba-150175`
 
 ---
 
@@ -74,7 +74,6 @@ O verbo 見る traz o seu primeiro kanji de ação.
 
 #### Mais exemplos
 > 🗣 痔があります。 — Tenho hemorroidas.
-> 🗣 8人孫がいます。 — Nós temos oito netos.
 - Reconheço um verbo る (ichidan) pelo som -i ou -e antes do る.
 - Sei formar a forma polida: tiro o る e ponho ます.
 - Conheço verbos da rotina como 見る, 起きる, 開ける e 閉める.

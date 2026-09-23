@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [日, にっこり, 人気, 人間, 値, 入場, 布, 抜く, 抜ける, 握る, 日中, 日光, 日常, 日曜, 根, 願い, 願う] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-354160`, `sent:tatoeba-11792763`, `sent:tatoeba-108834`
 
 ---
 
@@ -53,6 +53,11 @@ Mais um par de verbos com a mesma raiz e papéis opostos.
 
 > **[culture]**
 日光 (にっこう) também é o nome de uma cidade famosa pelos templos e pela natureza, ao norte de Tóquio. Quando alguém fala em ir a 日光, repare no contexto: pode ser "a luz do sol" ou o passeio turístico.
+
+#### Mais exemplos
+> 🗣 君は人間だ。 — Você é um ser humano.
+> 🗣 日中は仕事をしてます。 — Durante o dia eu trabalho.
+> 🗣 彼は学生に人気が有る。 — Ele faz sucesso com os alunos.
 
 #### Hora de praticar
 

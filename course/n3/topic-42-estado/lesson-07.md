@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [打つ, 不図, 不平, 不正, 不足, 再び, 双子, 夫人, 婦人, 普段, 物価, 物理, 物質, 筆, 縁, 舞台, 部分, 防ぐ] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-163199`, `sent:tatoeba-105721`, `sent:tatoeba-11825846`
 
 ---
 
@@ -53,6 +53,11 @@ Para fechar, pessoas e alguns verbos.
 夫人 e 婦人 têm a mesma leitura (ふじん), mas significados diferentes: 夫人 é a esposa de alguém (a senhora fulana de tal), enquanto 婦人 é mulher em geral. O contexto resolve a dúvida.
 ふと空を見上げたら、二つの虹があった (Quando olhei para o céu sem querer, havia dois arco-íris.)
 手を洗って風邪を防ぎましょう (Vamos lavar as mãos para prevenir o resfriado.)
+
+#### Mais exemplos
+> 🗣 私の説明不足でした。 — Faltou explicação da minha parte.
+> 🗣 彼は私の頭をぶった。 — Ele me bateu na cabeça.
+> 🗣 この部分が分かんなかった。 — Não entendi essa parte.
 
 #### Hora de praticar
 

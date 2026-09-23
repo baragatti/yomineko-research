@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [太 引 弱 所 暗] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-a73dc2a88ae1`, `sent:gen-d25e7679df42`, `sent:tatoeba-74968`
 
 ---
 
@@ -29,6 +29,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 暑
 
 #### 暗
+
+#### Mais exemplos
+> 🗣 この字引はとても古い — Este dicionário é muito velho.
+> 🗣 太いうどんが好きです — Gosto de udon grosso.
+> 🗣 外が暗くなってきた。 — Está ficando escuro lá fora.
 - Reconheço o kanji 太 e sei onde conferir suas leituras.
 - Reconheço o kanji 好 e sei onde conferir suas leituras.
 - Reconheço o kanji 寒 e sei onde conferir suas leituras.

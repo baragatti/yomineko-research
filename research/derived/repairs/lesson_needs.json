@@ -3,10 +3,10 @@
  "what_this_is": "Every `needs[]` entry the courseware carries, as {lesson, ref, origin, note}. `origin` derived = copied from scripts/derive_needs.py on the current tree; kana-chain / review-chain = added by the two rules stated in this script's docstring, because those lessons reference nothing a derivation could see. `note` is learner-facing pt-BR produced by a fixed template per reason class, never free prose.",
  "applied_by": "scripts/apply_lesson_needs.py",
  "counts": {
-  "rows": 741,
-  "derived": 697,
+  "rows": 736,
+  "derived": 693,
   "kana_chain": 40,
-  "review_chain": 4,
+  "review_chain": 3,
   "lessons_with_needs": 318,
   "roots": 4
  },
@@ -16,7 +16,7 @@
   "les:n5-numeros-tempo-09",
   "les:pre-n5-orientacao-01"
  ],
- "row_count": 741,
+ "row_count": 736,
  "rows": [
   {
    "lesson": "les:pre-n5-orientacao-02",
@@ -405,11 +405,11 @@
   },
   {
    "lesson": "les:n5-perguntas-02",
-   "ref": "les:n5-desu-wa-04",
+   "ref": "les:n5-desu-wa-03",
    "origin": "derived",
-   "note": "Apresenta o kanji 聞, que aparece nesta lição.",
+   "note": "Apresenta a palavra 内 (うち), que aparece nesta lição.",
    "driving_refs": [
-    "kanji:聞"
+    "vocab:1457730"
    ],
    "channels": "body-sentence/lesson-sentence-refs"
   },
@@ -476,16 +476,6 @@
   },
   {
    "lesson": "les:n5-perguntas-06",
-   "ref": "les:n5-perguntas-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 中, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:中"
-   ],
-   "channels": "body-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n5-perguntas-06",
    "ref": "les:n5-perguntas-04",
    "origin": "derived",
    "note": "Apresenta as palavras 珈琲 (コーヒー) e 牛乳 (ぎゅうにゅう), que aparecem nesta lição.",
@@ -528,12 +518,11 @@
   },
   {
    "lesson": "les:n5-numeros-tempo-03",
-   "ref": "les:n5-perguntas-06",
+   "ref": "les:n5-perguntas-04",
    "origin": "derived",
-   "note": "Apresenta o kanji 食 e a palavra 食べる (たべる), que aparecem nesta lição.",
+   "note": "Apresenta o kanji 本, que aparece nesta lição.",
    "driving_refs": [
-    "kanji:食",
-    "vocab:1358280"
+    "kanji:本"
    ],
    "channels": "body-sentence/lesson-sentence-refs"
   },
@@ -838,6 +827,16 @@
     "vocab:1467640"
    ],
    "channels": "body-chip/body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-03",
+   "ref": "les:n5-perguntas-03",
+   "origin": "derived",
+   "note": "Apresenta o kanji 生, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:生"
+   ],
+   "channels": "body-chip"
   },
   {
    "lesson": "les:n5-particulas-lugar-03",
@@ -1350,11 +1349,10 @@
    "lesson": "les:n5-te-form-02",
    "ref": "les:n5-te-form-01",
    "origin": "derived",
-   "note": "Apresenta a palavra 鼻 (はな), e os pontos de gramática Verb + て e 〜て, que aparecem nesta lição.",
+   "note": "Apresenta os pontos de gramática Verb + て e 〜て, que aparecem nesta lição.",
    "driving_refs": [
     "gram:gp-26",
-    "gram:te-form",
-    "vocab:1486720"
+    "gram:te-form"
    ],
    "channels": "body-chip/body-sentence/lesson-sentence-refs"
   },
@@ -1575,11 +1573,12 @@
    "lesson": "les:n5-convites-05",
    "ref": "les:n5-comparacoes-04",
    "origin": "derived",
-   "note": "Apresenta o kanji 七, que aparece nesta lição.",
+   "note": "Apresenta o kanji 七 e a palavra 二 (に), que aparecem nesta lição.",
    "driving_refs": [
-    "kanji:七"
+    "kanji:七",
+    "vocab:1461140"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n5-convites-05",
@@ -1912,31 +1911,73 @@
   },
   {
    "lesson": "les:n5-kanji-exame-01",
-   "ref": "les:n5-adjetivos-08",
+   "ref": "les:n5-passado-05",
    "origin": "derived",
-   "note": "Apresenta o kanji 手, que aparece nesta lição.",
+   "note": "Apresenta o ponto de gramática な, que aparece nesta lição.",
    "driving_refs": [
-    "kanji:手"
+    "gram:na"
    ],
-   "channels": "body-chip"
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n5-kanji-exame-01",
+   "ref": "les:n5-rotina-01",
+   "origin": "derived",
+   "note": "Apresenta a palavra 店 (みせ), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1582120"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n5-kanji-exame-01",
+   "ref": "les:n5-rotina-03",
+   "origin": "derived",
+   "note": "Apresenta a palavra 安い (やすい), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1153670"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n5-kanji-exame-02",
-   "ref": "les:n5-perguntas-02",
+   "ref": "les:n5-te-form-03",
    "origin": "derived",
-   "note": "Apresenta o kanji 新, que aparece nesta lição.",
+   "note": "Apresenta a palavra 花 (はな), que aparece nesta lição.",
    "driving_refs": [
-    "kanji:新"
+    "vocab:1194500"
    ],
-   "channels": "body-chip"
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n5-kanji-exame-02",
+   "ref": "les:n5-conectando-01",
+   "origin": "derived",
+   "note": "Apresenta a palavra 何 (なん), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:2846738"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n5-kanji-exame-03",
-   "ref": "les:n5-kanji-exame-02",
-   "origin": "review-chain",
-   "note": "Vem logo antes nesta mesma sequência de revisão; esta lição continua de onde ela parou.",
-   "driving_refs": [],
-   "channels": ""
+   "ref": "les:n5-particulas-lugar-05",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática に/へ, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:ni-e"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n5-kanji-exame-03",
+   "ref": "les:n5-comparacoes-02",
+   "origin": "derived",
+   "note": "Apresenta a palavra 何 (なに), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1577100"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n4-forma-simples-01",
@@ -2010,28 +2051,6 @@
   },
   {
    "lesson": "les:n4-forma-simples-03",
-   "ref": "les:n5-rotina-01",
-   "origin": "derived",
-   "note": "Apresenta as palavras 待つ (まつ) e 店 (みせ), que aparecem nesta lição.",
-   "driving_refs": [
-    "vocab:1410590",
-    "vocab:1582120"
-   ],
-   "channels": "body-reading/body-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n4-forma-simples-03",
-   "ref": "les:n5-rotina-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 母 e a palavra 安い (やすい), que aparecem nesta lição.",
-   "driving_refs": [
-    "kanji:母",
-    "vocab:1153670"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n4-forma-simples-03",
    "ref": "les:n5-kanji-exame-01",
    "origin": "derived",
    "note": "Apresenta os kanji 安, 少 e 店, que aparecem nesta lição.",
@@ -2064,63 +2083,11 @@
   },
   {
    "lesson": "les:n4-forma-simples-05",
-   "ref": "les:n5-passado-05",
-   "origin": "derived",
-   "note": "Apresenta a palavra 出来る (できる), que aparece nesta lição.",
-   "driving_refs": [
-    "vocab:1340450"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n4-forma-simples-05",
-   "ref": "les:n5-comparacoes-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 山, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:山"
-   ],
-   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n4-forma-simples-05",
-   "ref": "les:n5-rotina-01",
-   "origin": "derived",
-   "note": "Apresenta as palavras 山 (やま) e 店 (みせ), que aparecem nesta lição.",
-   "driving_refs": [
-    "vocab:1302680",
-    "vocab:1582120"
-   ],
-   "channels": "body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n4-forma-simples-05",
    "ref": "les:n5-rotina-02",
    "origin": "derived",
    "note": "Apresenta a palavra 皆 (みな), que aparece nesta lição.",
    "driving_refs": [
     "vocab:1202150"
-   ],
-   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n4-forma-simples-05",
-   "ref": "les:n5-rotina-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 母 e a palavra 安い (やすい), que aparecem nesta lição.",
-   "driving_refs": [
-    "kanji:母",
-    "vocab:1153670"
-   ],
-   "channels": "body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n4-forma-simples-05",
-   "ref": "les:n5-conectando-01",
-   "origin": "derived",
-   "note": "Apresenta a palavra 私 (わたし), que aparece nesta lição.",
-   "driving_refs": [
-    "vocab:1311110"
    ],
    "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
@@ -2382,13 +2349,13 @@
   },
   {
    "lesson": "les:n4-condicionais-03",
-   "ref": "les:n4-condicionais-02",
+   "ref": "les:n4-oracoes-relativas-04",
    "origin": "derived",
-   "note": "Apresenta a palavra 無理 (むり), que aparece nesta lição.",
+   "note": "Apresenta o kanji 作, que aparece nesta lição.",
    "driving_refs": [
-    "vocab:1530970"
+    "kanji:作"
    ],
-   "channels": "body-sentence/lesson-sentence-refs"
+   "channels": "body-chip"
   },
   {
    "lesson": "les:n4-condicionais-04",
@@ -2400,6 +2367,16 @@
     "vocab:1382980"
    ],
    "channels": "body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n4-condicionais-04",
+   "ref": "les:n4-condicionais-02",
+   "origin": "derived",
+   "note": "Apresenta o kanji 度, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:度"
+   ],
+   "channels": "body-reading"
   },
   {
    "lesson": "les:n4-condicionais-04",
@@ -2421,6 +2398,17 @@
     "vocab:1546300"
    ],
    "channels": "body-reading"
+  },
+  {
+   "lesson": "les:n4-condicionais-06",
+   "ref": "les:n4-oracoes-relativas-07",
+   "origin": "derived",
+   "note": "Apresenta o kanji 止 e a palavra 為る (する), que aparecem nesta lição.",
+   "driving_refs": [
+    "kanji:止",
+    "vocab:1157170"
+   ],
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n4-condicionais-06",
@@ -2829,11 +2817,12 @@
    "lesson": "les:n4-transitividade-04",
    "ref": "les:n4-potencial-01",
    "origin": "derived",
-   "note": "Apresenta o kanji 海, que aparece nesta lição.",
+   "note": "Apresenta os kanji 借 e 海, que aparecem nesta lição.",
    "driving_refs": [
+    "kanji:借",
     "kanji:海"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n4-transitividade-04",
@@ -3146,16 +3135,6 @@
     "kanji:勉"
    ],
    "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n4-obrigacao-02",
-   "ref": "les:n4-transitividade-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 死, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:死"
-   ],
-   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n4-obrigacao-02",
@@ -3498,6 +3477,16 @@
    "note": "Apresenta o kanji 茶, que aparece nesta lição.",
    "driving_refs": [
     "kanji:茶"
+   ],
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n4-suposicao-01",
+   "ref": "les:n4-transitividade-03",
+   "origin": "derived",
+   "note": "Apresenta o kanji 死, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:死"
    ],
    "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
@@ -3998,6 +3987,16 @@
   },
   {
    "lesson": "les:n4-keigo-03",
+   "ref": "les:n4-condicionais-04",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática もし, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:gp-120"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n4-keigo-03",
    "ref": "les:n4-keigo-01",
    "origin": "derived",
    "note": "Apresenta a palavra 食事 (しょくじ), que aparece nesta lição.",
@@ -4331,13 +4330,13 @@
   },
   {
    "lesson": "les:n4-kanji-exame-01",
-   "ref": "les:n4-condicionais-03",
+   "ref": "les:n4-suposicao-03",
    "origin": "derived",
-   "note": "Apresenta o kanji 合, que aparece nesta lição.",
+   "note": "Apresenta a palavra 光 (ひかり), que aparece nesta lição.",
    "driving_refs": [
-    "kanji:合"
+    "vocab:1272780"
    ],
-   "channels": "body-chip"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n4-kanji-exame-02",
@@ -4351,6 +4350,17 @@
   },
   {
    "lesson": "les:n4-kanji-exame-03",
+   "ref": "les:n4-aspecto-06",
+   "origin": "derived",
+   "note": "Apresenta as palavras 産業 (さんぎょう) e 市民 (しみん), que aparecem nesta lição.",
+   "driving_refs": [
+    "vocab:1303770",
+    "vocab:1308690"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n4-kanji-exame-03",
    "ref": "les:n4-conectores-01",
    "origin": "derived",
    "note": "Apresenta o kanji 洗, que aparece nesta lição.",
@@ -4358,6 +4368,16 @@
     "kanji:洗"
    ],
    "channels": "body-chip"
+  },
+  {
+   "lesson": "les:n4-kanji-exame-03",
+   "ref": "les:n4-kanji-exame-01",
+   "origin": "derived",
+   "note": "Apresenta o kanji 声, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:声"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n4-kanji-exame-04",
@@ -4378,6 +4398,26 @@
     "kanji:説"
    ],
    "channels": "body-chip"
+  },
+  {
+   "lesson": "les:n4-kanji-exame-05",
+   "ref": "les:n4-causativa-03",
+   "origin": "derived",
+   "note": "Apresenta a palavra 首 (くび), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1592270"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n4-kanji-exame-05",
+   "ref": "les:n4-conectores-01",
+   "origin": "derived",
+   "note": "Apresenta o kanji 洗, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:洗"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n4-kanji-exame-05",
@@ -4528,7 +4568,7 @@
    "driving_refs": [
     "kanji:昼"
    ],
-   "channels": "body-reading/exercise-sentence"
+   "channels": "body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-conectores-07",
@@ -4570,37 +4610,17 @@
    "driving_refs": [
     "kanji:彼"
    ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-conectores-08",
-   "ref": "les:n4-aspecto-04",
+   "ref": "les:n3-conectores-04",
    "origin": "derived",
-   "note": "Apresenta a palavra 考える (かんがえる), que aparece nesta lição.",
+   "note": "Apresenta o kanji 最, que aparece nesta lição.",
    "driving_refs": [
-    "vocab:1281020"
+    "kanji:最"
    ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-conectores-08",
-   "ref": "les:n3-conectores-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 当, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:当"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-conectores-08",
-   "ref": "les:n3-conectores-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 彼, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:彼"
-   ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-tempo-01",
@@ -4694,16 +4714,6 @@
   },
   {
    "lesson": "les:n3-tempo-04",
-   "ref": "les:n4-kanji-exame-01",
-   "origin": "derived",
-   "note": "Apresenta o kanji 乗, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:乗"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-tempo-04",
    "ref": "les:n4-kanji-exame-03",
    "origin": "derived",
    "note": "Apresenta o kanji 産, que aparece nesta lição.",
@@ -4744,31 +4754,11 @@
   },
   {
    "lesson": "les:n3-tempo-05",
-   "ref": "les:n4-experiencia-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 身, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:身"
-   ],
-   "channels": "body-reading/exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-tempo-05",
    "ref": "les:n4-suposicao-01",
    "origin": "derived",
    "note": "Apresenta a palavra 高校 (こうこう), que aparece nesta lição.",
    "driving_refs": [
     "vocab:1283500"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-tempo-05",
-   "ref": "les:n4-kanji-exame-01",
-   "origin": "derived",
-   "note": "Apresenta o kanji 声, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:声"
    ],
    "channels": "body-reading"
   },
@@ -4790,7 +4780,17 @@
    "driving_refs": [
     "kanji:進"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-tempo-05",
+   "ref": "les:n3-conectores-03",
+   "origin": "derived",
+   "note": "Apresenta o kanji 彼, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:彼"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-tempo-06",
@@ -4810,7 +4810,7 @@
    "driving_refs": [
     "kanji:続"
    ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-tempo-07",
@@ -4850,7 +4850,7 @@
    "driving_refs": [
     "kanji:彼"
    ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-tempo-08",
@@ -4924,44 +4924,13 @@
   },
   {
    "lesson": "les:n3-perspectiva-04",
-   "ref": "les:n4-causativa-01",
+   "ref": "les:n3-perspectiva-01",
    "origin": "derived",
-   "note": "Apresenta o kanji 兄, que aparece nesta lição.",
+   "note": "Apresenta a palavra 受け取る (うけとる), que aparece nesta lição.",
    "driving_refs": [
-    "kanji:兄"
+    "vocab:1329650"
    ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-perspectiva-04",
-   "ref": "les:n4-causativa-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 冬, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:冬"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-perspectiva-04",
-   "ref": "les:n4-kanji-exame-04",
-   "origin": "derived",
-   "note": "Apresenta os kanji 進 e 遠, que aparecem nesta lição.",
-   "driving_refs": [
-    "kanji:進",
-    "kanji:遠"
-   ],
-   "channels": "body-reading/exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-perspectiva-04",
-   "ref": "les:n3-conectores-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 彼, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:彼"
-   ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-perspectiva-05",
@@ -5005,14 +4974,13 @@
   },
   {
    "lesson": "les:n3-perspectiva-07",
-   "ref": "les:n3-perspectiva-01",
+   "ref": "les:n3-perspectiva-03",
    "origin": "derived",
-   "note": "Apresenta os kanji 予 e 活, que aparecem nesta lição.",
+   "note": "Apresenta o kanji 利, que aparece nesta lição.",
    "driving_refs": [
-    "kanji:予",
-    "kanji:活"
+    "kanji:利"
    ],
-   "channels": "body-reading"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-perspectiva-07",
@@ -5138,7 +5106,7 @@
     "kanji:直",
     "kanji:確"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-causa-06",
@@ -5212,13 +5180,13 @@
   },
   {
    "lesson": "les:n3-causa-08",
-   "ref": "les:n3-perspectiva-01",
+   "ref": "les:n3-perspectiva-04",
    "origin": "derived",
-   "note": "Apresenta o kanji 活, que aparece nesta lição.",
+   "note": "Apresenta o kanji 部, que aparece nesta lição.",
    "driving_refs": [
-    "kanji:活"
+    "kanji:部"
    ],
-   "channels": "body-reading"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-causa-08",
@@ -5451,7 +5419,7 @@
    "driving_refs": [
     "kanji:部"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-estado-07",
@@ -5484,16 +5452,6 @@
     "vocab:1499490"
    ],
    "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-intencao-01",
-   "ref": "les:n4-aspecto-07",
-   "origin": "derived",
-   "note": "Apresenta o kanji 説, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:説"
-   ],
-   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-intencao-01",
@@ -5537,6 +5495,16 @@
   },
   {
    "lesson": "les:n3-intencao-03",
+   "ref": "les:n3-estado-01",
+   "origin": "derived",
+   "note": "Apresenta o kanji 過, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:過"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-intencao-03",
    "ref": "les:n3-estado-08",
    "origin": "derived",
    "note": "Apresenta a palavra 分ける (わける), que aparece nesta lição.",
@@ -5547,13 +5515,13 @@
   },
   {
    "lesson": "les:n3-intencao-04",
-   "ref": "les:n3-causa-05",
+   "ref": "les:n3-causa-02",
    "origin": "derived",
-   "note": "Apresenta o kanji 内, que aparece nesta lição.",
+   "note": "Apresenta o kanji 変, que aparece nesta lição.",
    "driving_refs": [
-    "kanji:内"
+    "kanji:変"
    ],
-   "channels": "body-sentence/lesson-sentence-refs"
+   "channels": "body-reading"
   },
   {
    "lesson": "les:n3-intencao-04",
@@ -5587,6 +5555,16 @@
   },
   {
    "lesson": "les:n3-intencao-05",
+   "ref": "les:n3-estado-07",
+   "origin": "derived",
+   "note": "Apresenta a palavra 不足 (ふそく), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1493700"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-intencao-05",
    "ref": "les:n3-intencao-01",
    "origin": "derived",
    "note": "Apresenta a palavra 考え (かんがえ), que aparece nesta lição.",
@@ -5596,24 +5574,24 @@
    "channels": "body-reading"
   },
   {
-   "lesson": "les:n3-intencao-06",
-   "ref": "les:n3-estado-01",
+   "lesson": "les:n3-intencao-05",
+   "ref": "les:n3-intencao-02",
    "origin": "derived",
-   "note": "Apresenta o kanji 過, que aparece nesta lição.",
+   "note": "Apresenta o kanji 席, que aparece nesta lição.",
    "driving_refs": [
-    "kanji:過"
+    "kanji:席"
    ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-intencao-06",
-   "ref": "les:n3-intencao-02",
+   "ref": "les:n3-perspectiva-07",
    "origin": "derived",
-   "note": "Apresenta o kanji 配, que aparece nesta lição.",
+   "note": "Apresenta a palavra 楽 (らく), que aparece nesta lição.",
    "driving_refs": [
-    "kanji:配"
+    "vocab:1207230"
    ],
-   "channels": "body-reading"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-intencao-06",
@@ -5637,23 +5615,13 @@
   },
   {
    "lesson": "les:n3-intencao-07",
-   "ref": "les:n3-perspectiva-03",
+   "ref": "les:n3-intencao-06",
    "origin": "derived",
-   "note": "Apresenta o kanji 利, que aparece nesta lição.",
+   "note": "Apresenta a palavra 得意 (とくい), que aparece nesta lição.",
    "driving_refs": [
-    "kanji:利"
+    "vocab:1454510"
    ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-intencao-07",
-   "ref": "les:n3-causa-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 変, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:変"
-   ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-deveres-01",
@@ -5727,6 +5695,16 @@
   },
   {
    "lesson": "les:n3-deveres-04",
+   "ref": "les:n3-conectores-06",
+   "origin": "derived",
+   "note": "Apresenta a palavra 調子 (ちょうし), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1429170"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-deveres-04",
    "ref": "les:n3-estado-05",
    "origin": "derived",
    "note": "Apresenta o kanji 回, que aparece nesta lição.",
@@ -5764,7 +5742,7 @@
     "kanji:向",
     "kanji:告"
    ],
-   "channels": "body-reading/exercise-sentence"
+   "channels": "body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-deveres-06",
@@ -5774,7 +5752,17 @@
    "driving_refs": [
     "kanji:変"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-deveres-06",
+   "ref": "les:n3-estado-01",
+   "origin": "derived",
+   "note": "Apresenta a palavra 確実 (かくじつ), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1205830"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-desejos-01",
@@ -5929,16 +5917,6 @@
   },
   {
    "lesson": "les:n3-desejos-05",
-   "ref": "les:n3-deveres-01",
-   "origin": "derived",
-   "note": "Apresenta o kanji 葉, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:葉"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-desejos-05",
    "ref": "les:n3-deveres-03",
    "origin": "derived",
    "note": "Apresenta o kanji 美, que aparece nesta lição.",
@@ -5948,6 +5926,26 @@
    "channels": "exercise-sentence"
   },
   {
+   "lesson": "les:n3-desejos-05",
+   "ref": "les:n3-desejos-01",
+   "origin": "derived",
+   "note": "Apresenta o kanji 良, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:良"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-desejos-05",
+   "ref": "les:n3-desejos-02",
+   "origin": "derived",
+   "note": "Apresenta a palavra 景気 (けいき), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1250830"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
    "lesson": "les:n3-desejos-06",
    "ref": "les:n3-estado-01",
    "origin": "derived",
@@ -5955,7 +5953,7 @@
    "driving_refs": [
     "kanji:流"
    ],
-   "channels": "body-reading/exercise-sentence"
+   "channels": "body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-desejos-06",
@@ -5966,6 +5964,16 @@
     "kanji:良"
    ],
    "channels": "exercise-sentence"
+  },
+  {
+   "lesson": "les:n3-desejos-07",
+   "ref": "les:n3-intencao-02",
+   "origin": "derived",
+   "note": "Apresenta o kanji 番, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:番"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-desejos-07",
@@ -6039,26 +6047,6 @@
   },
   {
    "lesson": "les:n3-limites-03",
-   "ref": "les:n3-conectores-06",
-   "origin": "derived",
-   "note": "Apresenta a palavra 調子 (ちょうし), que aparece nesta lição.",
-   "driving_refs": [
-    "vocab:1429170"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-limites-03",
-   "ref": "les:n3-intencao-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 配, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:配"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-limites-03",
    "ref": "les:n3-intencao-07",
    "origin": "derived",
    "note": "Apresenta a palavra 文 (ぶん), que aparece nesta lição.",
@@ -6121,11 +6109,12 @@
    "lesson": "les:n3-limites-05",
    "ref": "les:n3-deveres-02",
    "origin": "derived",
-   "note": "Apresenta o kanji 失, que aparece nesta lição.",
+   "note": "Apresenta os kanji 失 e 負, que aparecem nesta lição.",
    "driving_refs": [
-    "kanji:失"
+    "kanji:失",
+    "kanji:負"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-limites-05",
@@ -6149,21 +6138,21 @@
   },
   {
    "lesson": "les:n3-limites-06",
+   "ref": "les:n3-conectores-06",
+   "origin": "derived",
+   "note": "Apresenta a palavra 注文 (ちゅうもん), que aparece nesta lição.",
+   "driving_refs": [
+    "vocab:1426650"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-limites-06",
    "ref": "les:n3-perspectiva-07",
    "origin": "derived",
    "note": "Apresenta a palavra 楽 (らく), que aparece nesta lição.",
    "driving_refs": [
     "vocab:1207230"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-limites-06",
-   "ref": "les:n3-causa-01",
-   "origin": "derived",
-   "note": "Apresenta o kanji 昨, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:昨"
    ],
    "channels": "body-reading"
   },
@@ -6176,6 +6165,16 @@
     "vocab:1006380"
    ],
    "channels": "body-reading"
+  },
+  {
+   "lesson": "les:n3-limites-06",
+   "ref": "les:n3-limites-02",
+   "origin": "derived",
+   "note": "Apresenta o kanji 苦, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:苦"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-limites-07",
@@ -6206,16 +6205,6 @@
     "kanji:園"
    ],
    "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-enfase-01",
-   "ref": "les:n3-conectores-06",
-   "origin": "derived",
-   "note": "Apresenta a palavra 通過 (つうか), que aparece nesta lição.",
-   "driving_refs": [
-    "vocab:1433070"
-   ],
-   "channels": "exercise-sentence"
   },
   {
    "lesson": "les:n3-enfase-01",
@@ -6350,17 +6339,6 @@
   },
   {
    "lesson": "les:n3-enfase-05",
-   "ref": "les:n3-conectores-06",
-   "origin": "derived",
-   "note": "Apresenta as palavras 調子 (ちょうし) e 頂上 (ちょうじょう), que aparecem nesta lição.",
-   "driving_refs": [
-    "vocab:1429170",
-    "vocab:1430220"
-   ],
-   "channels": "exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-enfase-05",
    "ref": "les:n3-limites-05",
    "origin": "derived",
    "note": "Apresenta a palavra 対する (たいする), que aparece nesta lição.",
@@ -6373,11 +6351,12 @@
    "lesson": "les:n3-enfase-05",
    "ref": "les:n3-limites-07",
    "origin": "derived",
-   "note": "Apresenta a palavra 真逆 (まさか), que aparece nesta lição.",
+   "note": "Apresenta as palavras 真逆 (まさか) e 本物 (ほんもの), que aparecem nesta lição.",
    "driving_refs": [
-    "vocab:1363540"
+    "vocab:1363540",
+    "vocab:1523180"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-enfase-06",
@@ -6447,17 +6426,7 @@
    "driving_refs": [
     "kanji:違"
    ],
-   "channels": "exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-enfase-07",
-   "ref": "les:n3-deveres-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 守, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:守"
-   ],
-   "channels": "body-reading"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-enfase-07",
@@ -6467,7 +6436,17 @@
    "driving_refs": [
     "kanji:満"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-enfase-07",
+   "ref": "les:n3-enfase-03",
+   "origin": "derived",
+   "note": "Apresenta o ponto de gramática まったく～ない, que aparece nesta lição.",
+   "driving_refs": [
+    "gram:n3-mattaku-nai"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-concessao-01",
@@ -6583,16 +6562,6 @@
   },
   {
    "lesson": "les:n3-concessao-04",
-   "ref": "les:n3-deveres-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 若, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:若"
-   ],
-   "channels": "body-sentence/lesson-sentence-refs"
-  },
-  {
-   "lesson": "les:n3-concessao-04",
    "ref": "les:n3-enfase-07",
    "origin": "derived",
    "note": "Apresenta a palavra 間違い (まちがい), que aparece nesta lição.",
@@ -6677,13 +6646,24 @@
   },
   {
    "lesson": "les:n3-concessao-06",
+   "ref": "les:n3-enfase-03",
+   "origin": "derived",
+   "note": "Apresenta o kanji 熱, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:熱"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-concessao-06",
    "ref": "les:n3-enfase-06",
    "origin": "derived",
-   "note": "Apresenta a palavra 日曜 (にちよう), que aparece nesta lição.",
+   "note": "Apresenta as palavras 人間 (にんげん) e 日曜 (にちよう), que aparecem nesta lição.",
    "driving_refs": [
+    "vocab:1366770",
     "vocab:1464880"
    ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-concessao-06",
@@ -6734,16 +6714,6 @@
     "kanji:幸"
    ],
    "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-conjectura-02",
-   "ref": "les:n3-enfase-03",
-   "origin": "derived",
-   "note": "Apresenta o kanji 妻, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:妻"
-   ],
-   "channels": "exercise-sentence"
   },
   {
    "lesson": "les:n3-conjectura-02",
@@ -6834,7 +6804,7 @@
    "driving_refs": [
     "kanji:頼"
    ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-conjectura-05",
@@ -6845,16 +6815,6 @@
     "kanji:束"
    ],
    "channels": "exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-conjectura-06",
-   "ref": "les:n3-intencao-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 配, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:配"
-   ],
-   "channels": "body-reading/exercise-sentence"
   },
   {
    "lesson": "les:n3-conjectura-06",
@@ -6869,23 +6829,13 @@
   },
   {
    "lesson": "les:n3-conjectura-06",
-   "ref": "les:n3-desejos-02",
+   "ref": "les:n3-enfase-06",
    "origin": "derived",
-   "note": "Apresenta o kanji 値, que aparece nesta lição.",
+   "note": "Apresenta a palavra 日曜 (にちよう), que aparece nesta lição.",
    "driving_refs": [
-    "kanji:値"
+    "vocab:1464880"
    ],
-   "channels": "exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-conjectura-06",
-   "ref": "les:n3-desejos-04",
-   "origin": "derived",
-   "note": "Apresenta o kanji 達, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:達"
-   ],
-   "channels": "body-reading/exercise-sentence"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-conjectura-07",
@@ -6909,13 +6859,13 @@
   },
   {
    "lesson": "les:n3-conjectura-07",
-   "ref": "les:n3-enfase-03",
+   "ref": "les:n3-enfase-02",
    "origin": "derived",
-   "note": "Apresenta o kanji 熱, que aparece nesta lição.",
+   "note": "Apresenta o kanji 返, que aparece nesta lição.",
    "driving_refs": [
-    "kanji:熱"
+    "kanji:返"
    ],
-   "channels": "body-reading"
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-conjectura-07",
@@ -6935,7 +6885,17 @@
    "driving_refs": [
     "kanji:夢"
    ],
-   "channels": "exercise-sentence"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-conjectura-07",
+   "ref": "les:n3-conjectura-04",
+   "origin": "derived",
+   "note": "Apresenta o kanji 欲, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:欲"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-relato-01",
@@ -7112,21 +7072,12 @@
    "lesson": "les:n3-relato-06",
    "ref": "les:n3-relato-03",
    "origin": "derived",
-   "note": "Apresenta a palavra 週 (しゅう), que aparece nesta lição.",
+   "note": "Apresenta o kanji 盗 e a palavra 週 (しゅう), que aparecem nesta lição.",
    "driving_refs": [
+    "kanji:盗",
     "vocab:1333450"
    ],
-   "channels": "exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-relato-07",
-   "ref": "les:n3-enfase-02",
-   "origin": "derived",
-   "note": "Apresenta o kanji 込, que aparece nesta lição.",
-   "driving_refs": [
-    "kanji:込"
-   ],
-   "channels": "body-reading"
+   "channels": "body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-relato-07",
@@ -7136,7 +7087,7 @@
    "driving_refs": [
     "kanji:倒"
    ],
-   "channels": "body-reading/exercise-sentence"
+   "channels": "body-reading/body-sentence/exercise-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-relato-07",
@@ -7197,16 +7148,6 @@
     "vocab:1330790"
    ],
    "channels": "exercise-sentence"
-  },
-  {
-   "lesson": "les:n3-estrutura-02",
-   "ref": "les:n3-intencao-06",
-   "origin": "derived",
-   "note": "Apresenta a palavra 得意 (とくい), que aparece nesta lição.",
-   "driving_refs": [
-    "vocab:1454510"
-   ],
-   "channels": "body-reading"
   },
   {
    "lesson": "les:n3-estrutura-02",
@@ -7290,23 +7231,13 @@
   },
   {
    "lesson": "les:n3-estrutura-04",
-   "ref": "les:n3-intencao-06",
-   "origin": "derived",
-   "note": "Apresenta a palavra 時 (とき), que aparece nesta lição.",
-   "driving_refs": [
-    "vocab:1315840"
-   ],
-   "channels": "body-reading"
-  },
-  {
-   "lesson": "les:n3-estrutura-04",
    "ref": "les:n3-concessao-03",
    "origin": "derived",
    "note": "Apresenta o kanji 遅, que aparece nesta lição.",
    "driving_refs": [
     "kanji:遅"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-estrutura-04",
@@ -7326,7 +7257,7 @@
    "driving_refs": [
     "kanji:刻"
    ],
-   "channels": "body-reading"
+   "channels": "body-reading/body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-estrutura-04",
@@ -7370,6 +7301,17 @@
   },
   {
    "lesson": "les:n3-estrutura-05",
+   "ref": "les:n3-concessao-02",
+   "origin": "derived",
+   "note": "Apresenta o kanji 婚 e a palavra 婚約 (こんやく), que aparecem nesta lição.",
+   "driving_refs": [
+    "kanji:婚",
+    "vocab:1289710"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
+  },
+  {
+   "lesson": "les:n3-estrutura-05",
    "ref": "les:n3-concessao-03",
    "origin": "derived",
    "note": "Apresenta os kanji 精 e 遅, que aparecem nesta lição.",
@@ -7388,6 +7330,16 @@
     "kanji:願"
    ],
    "channels": "body-reading"
+  },
+  {
+   "lesson": "les:n3-estrutura-05",
+   "ref": "les:n3-relato-03",
+   "origin": "derived",
+   "note": "Apresenta o kanji 盗, que aparece nesta lição.",
+   "driving_refs": [
+    "kanji:盗"
+   ],
+   "channels": "body-sentence/lesson-sentence-refs"
   },
   {
    "lesson": "les:n3-estrutura-06",

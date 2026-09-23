@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [上, スイッチ, 人物, 人類, 信用, 信頼, 出版, 図, 審判, 巣, 心理, 慎重, 推薦, 水準, 親友, 身体, 身長, 進歩] · kanji [連] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-89350`, `sent:tatoeba-5845226`, `sent:tatoeba-103510`
 
 ---
 
@@ -54,6 +54,11 @@ Para completar, palavras de avaliação e alguns substantivos de uma sílaba.
 Dois kanji que voltarão muito em palavras de N3:
 - 民 - povo, cidadão, nação. Aparece em palavras como 国民 (povo de um país).
 - 連 - levar junto, conectar, unir. A ideia é a de ligar coisas ou pessoas em sequência.
+
+#### Mais exemplos
+> 🗣 彼女は私の親友です。 — Ela é minha melhor amiga.
+> 🗣 彼女は進歩している。 — Ela está progredindo.
+> 🗣 彼は図を使って説明した。 — Ele explicou usando diagramas.
 
 #### Hora de praticar
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [パス, パスポート, 博士, 博物館, 吐く, 外す, 始まり, 履く, 拍手, 旗, 激しい, 爆発, 破産, 端, 莫大, 計る, 鋏, 馬鹿] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-12383635`, `sent:tatoeba-156472`, `sent:tatoeba-198080`
 
 ---
 
@@ -52,6 +52,11 @@ Por fim, palavras que descrevem acontecimentos e coisas concretas. Algumas são 
 その事件がすべての始まりだった (Aquele incidente foi a origem de tudo.)
 博物館で見た絵は莫大な価値があるそうだ (Dizem que o quadro que vi no museu tem um valor imenso.)
 空港でパスポートを見せてくれと言われた (No aeroporto me pediram que mostrasse o passaporte.)
+
+#### Mais exemplos
+> 🗣 テストは全てパスした。 — Passei em todas as provas.
+> 🗣 私は紙をはさみで切った。 — Cortei o papel com a tesoura.
+> 🗣 パスポートを盗まれました。 — Roubaram meu passaporte.
 
 #### Hora de praticar
 

@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [村 林 森 民 池 産 県] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-b03779e69124`, `sent:gen-b350a3581169`, `sent:gen-6b30d25a09cc`
 
 ---
 
@@ -29,6 +29,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 産
 
 #### 県
+
+#### Mais exemplos
+> 🗣 市民の声を大切にしたい — Quero valorizar a voz dos cidadãos.
+> 🗣 家の後ろに小さい林がある — Atrás de casa tem um bosque pequeno.
+> 🗣 新しい産業が町を元気にしました — A nova indústria deu vida nova à cidade.
 - Reconheço o kanji 村 e sei onde conferir suas leituras.
 - Reconheço o kanji 林 e sei onde conferir suas leituras.
 - Reconheço o kanji 森 e sei onde conferir suas leituras.

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ライター, ラケット, 世の中, 予報, 予防, 余分, 余裕, 利口, 利益, 喜び, 嫁, 宜しく, 来, 楽, 理解, 読み, 陸, 離婚] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-13220997`, `sent:tatoeba-105625`, `sent:tatoeba-5955901`
 
 ---
 
@@ -48,6 +48,11 @@ Cuidado: 楽 (らく) é 'conforto, sossego', mas o MESMO kanji lido がく sign
 
 > **[l1-pitfall]**
 Cuidado: ライター (raitaa) pode ser 'escritor' (writer) OU 'isqueiro' (lighter), dependendo do contexto. Aqui é o sentido de escritor; mas, na prática, só o assunto da frase desfaz a dúvida.
+
+#### Mais exemplos
+> 🗣 理解できません。 — Não consigo entender.
+> 🗣 彼は私より利口だ。 — Ele é mais esperto que eu.
+> 🗣 楽にしてください。 — Fique à vontade.
 
 #### Hora de praticar
 

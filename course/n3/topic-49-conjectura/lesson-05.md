@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [度, 他人, 便り, 偶々, 単位, 単語, 堪らない, 度々, 旅, 束, 段, 玉, 種, 試し, 試す, 谷, 頼る, 黙る] · kanji [靴 髪] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1335017`, `sent:tatoeba-8873483`, `sent:tatoeba-83333`
 
 ---
 
@@ -53,6 +53,11 @@ Verbos sobre experimentar e depender.
 #### Kanji novos
 O kanji 髪 ('cabelo') aparece em 髪 ('cabelo') e 髪の毛 ('fio de cabelo'). Em cima tem o radical de cabelos longos, como uma cabeleira solta.
 O kanji 靴 ('sapato, calçado') aparece em 靴 ('sapato') e 靴下 ('meia'). Tem o radical de couro (革) à esquerda, material clássico dos sapatos.
+
+#### Mais exemplos
+> 🗣 彼に頼るな。 — Não conta com ele.
+> 🗣 いい旅だったよ。 — Foi uma viagem boa.
+> 🗣 便りをください。 — Manda notícias.
 
 #### Hora de praticar
 

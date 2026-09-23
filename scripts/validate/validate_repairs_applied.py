@@ -1614,7 +1614,46 @@ def handle_forward_refs(rows, sents, gram, table):
     return out
 
 
+def handle_lesson_sentences(rows, sents, gram, table):
+    """W14. Each re-selection row must be visible in the SHIPPED lesson.
+
+    add / replace: the new sentence is in the lesson's published `sentence_refs` (the exporter
+    derives that list from the body, so this is "the body renders it") and resolves in the bank;
+    replace / remove: the old one is no longer rendered; drop-heading: the empty example heading is
+    gone; chip: the `<vocab ref>` chip is in the body and the bare `<jp>` list item is not.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} {r['op']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        refs = set(lesson.get("sentence_refs") or [])
+        body = lesson.get("body") or ""
+        ins = r.get("sentences") or ([r["sentence_in"]] if r.get("sentence_in") else [])
+        bad = ""
+        for s in ins:
+            if s not in sents:
+                bad = f"{s} is not in the sentence bank"
+            elif s not in refs:
+                bad = f"{s} is not rendered by the lesson"
+        if not bad and r["op"] in ("replace", "remove") and r["sentence_out"] in refs:
+            bad = f"{r['sentence_out']} is still rendered"
+        if not bad and r["op"] == "drop-heading" and r["from"] in body:
+            bad = "the emptied example heading is still in the body"
+        if not bad and r["op"] == "chip" and (r["to"] not in body or r["from"] in body):
+            bad = f"the chip for {r['item']} is not in place of the bare list item"
+        if bad:
+            out.append(("fail", C_NOT_APPLIED, addr, bad))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # W14: lesson sentence re-selection (adds, in-place swaps, removals, pre-N5 chips).
+    "lesson_sentences.json": handle_lesson_sentences,
     # W21b: the 280 forward-reference moves (unlock + card + travelling exercises).
     "w21b_forward_refs.json": handle_forward_refs,
     "orthographic_relinks.json": handle_orthographic_relinks,

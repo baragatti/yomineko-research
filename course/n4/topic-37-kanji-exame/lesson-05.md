@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [献花] · kanji [門 顔 首] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-ed0ee2e0c0d7`, `sent:gen-3c5de8b6a7de`, `sent:gen-026c8d50ec35`
 
 ---
 
@@ -24,6 +24,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 
 #### Palavra extra do exame
 献花: oferenda de flores, usada em cerimônias de memorial. Palavra extra deste tópico, fora da lista básica do N4; toque para ver leituras e exemplos.
+
+#### Mais exemplos
+> 🗣 あの大きい門はとても古いです — Aquele portão grande é muito antigo.
+> 🗣 朝、顔を洗う — De manhã, lavo o rosto.
+> 🗣 キリンの首はとても長い — O pescoço da girafa é muito comprido.
 - Reconheço o kanji 門 e sei onde conferir suas leituras.
 - Reconheço o kanji 頭 e sei onde conferir suas leituras.
 - Reconheço o kanji 顔 e sei onde conferir suas leituras.

@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gp-136, sou-da-1, to-iwarete-iru, to-kiita] · vocabulário [ご存知, 息子, 承知, 文学, 日記, 訳, 講義, 高校, 高校生] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-aaabebd8cac1`, `sent:tatoeba-106462`, `sent:gen-45b2abe7f46e`, `sent:tatoeba-104331`
+**Frases (por ID, do banco dissecado):** `sent:gen-aaabebd8cac1`, `sent:tatoeba-106462`, `sent:gen-45b2abe7f46e`
 
 ---
 
@@ -63,9 +63,6 @@ Palavras úteis para falar de fontes de informação (estudo, leitura, ouvir diz
 Mnemônico de forma: à esquerda fica o radical de fio/linha 糸 (papel antigo era feito de fibras), e à direita 氏 ("clã/família"). Pense: "as fibras da família viram papel". Não confunda com 字 (じ, "letra"): a letra é o que se escreve no papel.
 
 #### Hora de praticar
-
-#### Mais exemplos
-> 🗣 彼は重病だと言われている。 — Dizem que ele está gravemente doente.
 
 #### Leitura
 > 📖 駅の前に新しい店ができたそうです。パンがとてもおいしいと聞きました。味もいいし、安いそうです。あの店は、この町で有名だと言われています。朝は人が多いと聞きました。今度の休みに行ってみませんか。 — Dizem que abriu uma loja nova em frente à estação. Ouvi dizer que o pão é muito bom. Dizem que o sabor é bom e que também é barato. Falam que essa loja é famosa aqui na cidade. Ouvi dizer que de manhã a loja fica cheia. Vamos lá na próxima folga?

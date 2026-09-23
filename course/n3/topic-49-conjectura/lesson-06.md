@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [後, のんびり, ノック, ハイキング, バイオリン, パイプ, パイロット, パーセント, 伸ばす, 伸びる, 俳優, 場, 墓, 望み, 望む, 灰, 述べる, 配達] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-198544`, `sent:tatoeba-111766`, `sent:tatoeba-122186`
 
 ---
 
@@ -56,6 +56,11 @@ Para fechar, um conjunto de substantivos comuns: lugar, porcentagem, profissões
 
 > **[tip]**
 Repare como muitas dessas palavras começam com o som はい: 灰 (はい, cinza), 配達 (はいたつ, entrega) e 俳優 (はいゆう, ator). São palavras totalmente diferentes, então preste atenção ao kanji e ao restante da leitura para não confundir uma com a outra.
+
+#### Mais exemplos
+> 🗣 のんびり行こう。 — Vamos com calma.
+> 🗣 彼はドアをノックした。 — Ele bateu na porta.
+> 🗣 日曜に配達していますか。 — Vocês entregam aos domingos?
 
 #### Hora de praticar
 

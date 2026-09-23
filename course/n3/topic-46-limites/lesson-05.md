@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [他, 代金, 体温, 体育, 大, 大した, 大会, 大使, 大気, 大臣, 存在, 対, 対する, 対象, 尊重, 滞在, 田, 退屈, 題] · kanji [煙 祖] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-235275`, `sent:tatoeba-2744726`, `sent:tatoeba-11851944`
 
 ---
 
@@ -53,6 +53,11 @@ Palavras sobre figuras importantes e ocasiões de peso.
 #### Kanji novos
 O kanji 祖 ('ancestral, antepassado, fundador') aparece em 祖父 ('avô') e 祖母 ('avó'). O radical de altar e divindade à esquerda lembra a reverência aos antepassados.
 O kanji 煙 ('fumaça, fumo') aparece em 煙 ('fumaça') e 煙草 ('cigarro'). Tem o radical de fogo (火) à esquerda: onde há fogo, há fumaça.
+
+#### Mais exemplos
+> 🗣 ３対１で負けた。 — Perdemos de 3 a 1.
+> 🗣 大したことじゃないよ。 — Não é nada de mais.
+> 🗣 姉は大の子供好きなんです。 — Minha irmã adora criança.
 
 #### Hora de praticar
 

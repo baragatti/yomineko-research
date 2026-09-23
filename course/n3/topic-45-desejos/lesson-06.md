@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [とんでも無い, どんなに, トンネル, ドレス, 仲, 仲間, 内容, 努力, 半ば, 取れる, 名, 尚, 泥, 流す, 流れ, 流れる, 眺め, 眺める] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-196248`, `sent:tatoeba-220822`, `sent:tatoeba-8888553`
 
 ---
 
@@ -52,6 +52,11 @@ Um belo par de verbos com seus substantivos derivados.
 
 > **[tip]**
 とんでもない tem duas caras: pode criticar algo absurdo ("que ultraje!") ou ser um "imagina, de jeito nenhum!" educado, quando alguém te agradece ou se desculpa. O tom de voz decide qual é.
+
+#### Mais exemplos
+> 🗣 ボタンが取れた。 — O botão caiu.
+> 🗣 この川の流れは急だ。 — A correnteza desse rio é forte.
+> 🗣 トイレの水を流します。 — Dou descarga no banheiro.
 
 #### Hora de praticar
 

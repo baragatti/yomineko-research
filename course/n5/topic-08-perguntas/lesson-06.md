@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-48, gp-49, ka-ka] · vocabulário [いい, 出かける, 喫茶店, 食べる] · kanji [出 食] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-54dd1d1ebf25`, `sent:gen-c737b9f8b9da`, `sent:tatoeba-201028`, `sent:gen-532623825322`
+**Frases (por ID, do banco dissecado):** `sent:gen-54dd1d1ebf25`, `sent:gen-c737b9f8b9da`, `sent:tatoeba-201028`
 
 ---
 
@@ -49,9 +49,6 @@ O か da escolha também combina com as palavras interrogativas que você viu no
 Em どこかに出かけるの？, o どこか ("algum lugar") mostra o mesmo か de "indefinido" da primeira parte da lição. 出かける significa "sair (de casa)".
 
 #### Hora de praticar
-
-#### Mais exemplos
-> 🗣 かばんの中に何かありますか — Tem alguma coisa dentro da bolsa?
 
 #### Leitura
 > 📖 あなたのきょうだいはおにいさんですか、おねえさんですか。あねです。おねえさんはがっこうですか、うちですか。うちです。おねえさんはコーヒーですか、ぎゅうにゅうですか。ぎゅうにゅうです。 — Você tem um irmão mais velho ou uma irmã mais velha? Uma irmã mais velha. Sua irmã está na escola ou está em casa? Está em casa. E para a sua irmã: café ou leite? Leite.

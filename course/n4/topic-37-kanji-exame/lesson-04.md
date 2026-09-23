@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [短 軽 進 遠] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-5055`, `sent:tatoeba-889775`, `sent:tatoeba-10073519`
 
 ---
 
@@ -29,6 +29,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 遠
 
 #### 都
+
+#### Mais exemplos
+> 🗣 ここから遠いの？ — É longe daqui?
+> 🗣 そのスカート、短すぎない？ — Essa saia não está curta demais?
+> 🗣 あいつ、ほんと口が軽いからな。 — É que aquele cara tem a língua bem solta, né.
 - Reconheço o kanji 短 e sei onde conferir suas leituras.
 - Reconheço o kanji 菜 e sei onde conferir suas leituras.
 - Reconheço o kanji 薬 e sei onde conferir suas leituras.

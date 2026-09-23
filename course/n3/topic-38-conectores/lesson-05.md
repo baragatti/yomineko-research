@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [位, 金, 空, 市, 上, 得る, 柄, 何れ, 下, 後, 御, 音, クラシック, クリーム, グラス, グランド, 今日は, 偖, 得る, 柄, 金] · kanji [政 議] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-400865`, `sent:tatoeba-179726`, `sent:tatoeba-2197772`
 
 ---
 
@@ -54,6 +54,11 @@ E os dois kanji desta lição, ambos ligados a governo e debate:
 - 政 - política, governo, administração.
 - 議 - deliberação, debate, consulta.
 夜はクラシックを聞きながらグラスでワインを飲む (À noite, bebo vinho na taça enquanto ouço música clássica.)
+
+#### Mais exemplos
+> 🗣 こんにちは、お元気ですか。 — Olá, tudo bem com você?
+> 🗣 金は少しある。 — Tenho um pouco de dinheiro.
+> 🗣 さて、何しようか？ — Bom, o que a gente faz?
 
 #### Hora de praticar
 

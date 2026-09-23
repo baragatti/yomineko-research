@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [間, ぼんやり, まあ, マイク, マスター, マーケット, 任せる, 堀, 増す, 孫, 幕, 本人, 本物, 正に, 真逆, 負け, 貧しい, 迷子] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-759305`, `sent:tatoeba-995147`, `sent:tatoeba-207048`
 
 ---
 
@@ -57,6 +57,11 @@ Cuidado para não trocar 本人 (a pessoa em si) por 本物 (a coisa verdadeira)
 
 > **[tip]**
 Repare no contraste sonoro entre 正に (まさに, "exatamente") e 真逆 (まさか, "não acredito!"). Só muda uma sílaba (に / か), mas o sentido vira do avesso. Aqui 真逆 é lido まさか (leitura irregular); esses mesmos kanji também se leem まぎゃく, com o sentido de "exatamente o oposto".
+
+#### Mais exemplos
+> 🗣 まぁ、いいや。 — Ah, deixa pra lá.
+> 🗣 君に任せるよ。 — Deixo por sua conta.
+> 🗣 その品物は本物だ。 — Essa mercadoria é autêntica.
 
 #### Hora de praticar
 

@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [乗 低 便 働 光 区 声] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-8319a8e44d21`, `sent:tatoeba-146189`, `sent:gen-2ac1da0599a1`
 
 ---
 
@@ -29,6 +29,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 合
 
 #### 声
+
+#### Mais exemplos
+> 🗣 思わず大きな声が出た — Sem querer, saiu um grito.
+> 🗣 乗ってください。 — Por favor, entre (no veículo).
+> 🗣 朝の光がとても明るいです — A luz da manhã é muito clara.
 - Reconheço o kanji 乗 e sei onde conferir suas leituras.
 - Reconheço o kanji 低 e sei onde conferir suas leituras.
 - Reconheço o kanji 便 e sei onde conferir suas leituras.

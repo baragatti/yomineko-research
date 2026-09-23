@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [そっくり, そっと, その内, ソファ, 備える, 其のまま, 其れでも, 其れとも, 其れ其れ, 其処で, 尊敬, 損, 損害, 粗末, 組織, 育つ, 袖] · kanji [景 貧] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-7558237`, `sent:tatoeba-10659654`, `sent:tatoeba-86143`
 
 ---
 
@@ -54,6 +54,11 @@ Palavras sobre estruturar, perder e estimar.
 #### Kanji novos
 O kanji 景 ('paisagem, cenário, vista') aparece em 景色 ('paisagem') e 風景 ('cenário'). Pense no sol (日) iluminando a vista lá em cima.
 O kanji 貧 ('pobreza, pobre') aparece em 貧乏 ('pobreza') e 貧しい ('pobre'). Em cima ele tem 'dividir' (分) sobre 'concha, dinheiro' (貝): dividir o pouco que se tem.
+
+#### Mais exemplos
+> 🗣 景気が良い。 — A economia vai bem.
+> 🗣 ソファーの上だよ。 — Tá em cima do sofá.
+> 🗣 彼女をそっとしておこう。 — Vamos deixar ela em paz.
 
 #### Hora de praticar
 

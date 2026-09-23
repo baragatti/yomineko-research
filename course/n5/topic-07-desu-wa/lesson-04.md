@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-31, mo, no] · vocabulário [お兄さん, お姉さん, お母さん, お父さん, 兄, 叔父, 大きな, 妹, 姉, 弟, 有る, 聞く] · kanji [人 聞] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-1596597`, `sent:tatoeba-85538`, `sent:tatoeba-1057336`, `sent:tatoeba-4789`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1596597`, `sent:tatoeba-85538`, `sent:tatoeba-1057336`
 
 ---
 
@@ -65,7 +65,6 @@ Bônus de vocabulário:大きな(おおきな) quer dizer "grande" e vem antes d
 
 #### Mais exemplos
 > 🗣 でもなんで？ — Mas por quê?
-> 🗣 なんで聞くの？ — Por que você pergunta?
 
 #### Leitura
 > 📖 あのかぎはあなたのですか。いいえ、あれはあにのかぎです。あっ、あのえんぴつもおにいさんのですか。いいえ、えんぴつはおとうとのです。あのいすもおとうとのです。 — Aquela chave é sua? Não, aquela é a chave do meu irmão mais velho. Ah, aquele lápis também é do seu irmão? Não, o lápis é do meu irmão mais novo. Aquela cadeira ali também é dele.

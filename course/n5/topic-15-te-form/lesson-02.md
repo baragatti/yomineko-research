@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [te-de] · vocabulário [働く, 初めて, 始まる, 始め, 歯, 話] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-167591`, `sent:tatoeba-74924`, `sent:tatoeba-85522`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-167591`, `sent:tatoeba-74924`
 
 ---
 
@@ -53,7 +53,6 @@ Em かかってこい, o かかって é uma forma て colada a 来い: a mesma 
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 鼻がつまっています。 — Estou com o nariz entupido.
 - Consigo encadear duas ações com a forma て ("faço X e depois Y").
 - Sei ligar adjetivos-い com くて e substantivos/adjetivos-な com で.
 - Reconheço o kanji 先 e sua ideia de "antes / à frente".

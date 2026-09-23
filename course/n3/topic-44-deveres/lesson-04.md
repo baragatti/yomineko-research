@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [センター, 先日, 全体, 全国, 前者, 前進, 増加, 底, 想像, 操作, 相当, 相続, 装置, 象, 速度, 選手, 選択, 騒音] · kanji [商 調] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-8665720`, `sent:tatoeba-11296169`, `sent:tatoeba-220520`
 
 ---
 
@@ -54,6 +54,11 @@ Por fim, palavras sobre crescer, operar aparelhos e medir o quanto algo se move.
 #### Kanji novos
 O kanji 調 ('ajustar, tom, investigar') aparece em 調子 ('estado, ritmo') e 調査 ('investigação'). Pense em afinar e ajustar até ficar no tom certo.
 O kanji 商 ('comércio, negociar, comerciante') aparece em 商人 ('comerciante') e 商品 ('mercadoria'). Imagine uma boca que pechincha embaixo da barraca da feira.
+
+#### Mais exemplos
+> 🗣 車の調子が悪い。 — O carro não está funcionando bem.
+> 🗣 先日はすみませんでした。 — Desculpe pelo outro dia.
+> 🗣 この町の人口は増加している。 — A população desta cidade está crescendo.
 
 #### Hora de praticar
 

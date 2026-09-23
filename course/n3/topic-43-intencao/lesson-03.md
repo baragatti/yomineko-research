@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [n3-you-ni, n3-you-ni-2, n3-you-ni-3] · vocabulário [刈る, 完了, 完全, 完成, 気候, 気温, 皮, 缶, 観光, 観客, 観察, 革] · kanji [害 消 石 神 術 警 違] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-83924`, `sent:tatoeba-84519`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-123801`
 
 ---
 
@@ -62,8 +62,7 @@ Armadilha PT: a comparação com substantivo pede のように, não só よう�
 Armadilha PT: palavras como 観光 (かんこう) têm DUAS coisas de duração ao mesmo tempo: o ん é uma batida inteira (ka-N-ko-o, não "kõ"), e o こう final é vogal longa (segure o "o" por dois tempos). Bata palma: ka-n-ko-o, quatro tempos iguais, sem martelar nenhum.
 
 #### Exemplos do banco
-> 🗣 風邪引かないようにコートを着た。 — Vesti um casaco para não pegar resfriado.
-> 🗣 父は私に改心するように言った。 — Meu pai me disse para mudar de atitude.
+> 🗣 働き過ぎないように。 — Não vá trabalhar demais.
 
 #### Hora de praticar
 

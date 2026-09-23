@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [naa] · vocabulário [でも, どうぞ, 丁度, 冷たい, 動物, 度, 飛ぶ, 鳥, 鶏肉] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-3488338`, `sent:tatoeba-229334`, `sent:tatoeba-77673`, `sent:tatoeba-203366`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3488338`, `sent:tatoeba-229334`, `sent:tatoeba-226045`, `sent:tatoeba-203366`
 
 ---
 
@@ -66,7 +66,7 @@ Dá para juntar tudo: 高かったなあ = "nossa, como foi caro...". O なあ t
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 冷たいなあ。 — Que frieza...
+> 🗣 キツイなあ。 — Nossa, que duro...
 > 🗣 タフだなあ。 — Nossa, que durão...
 
 #### Leitura

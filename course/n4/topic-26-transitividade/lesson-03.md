@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [お土産, お嬢さん, お祝い, ご主人, アナウンサー, 公務員, 寂しい, 招待, 珍しい] · kanji [死] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-208758`, `sent:gen-f027694e7aca`
 
 ---
 
@@ -50,6 +50,10 @@ Dois kanji entram aqui, ambos com traçado curto e muito frequentes.
 
 > **[warning]**
 O kanji 死 tem peso emocional forte. Evite usá-lo de forma leve ou em brincadeiras: em japonês, falar de 死 exige tato, assim como em português evitamos certos termos sobre a morte.
+
+#### Mais exemplos
+> 🗣 その人は死にかけていた。 — Aquela pessoa estava morrendo.
+> 🗣 アナウンサーになりたい — Quero ser apresentador.
 
 #### Hora de praticar
 

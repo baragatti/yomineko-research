@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ノー, 乗せる, 年中, 年代, 年間, 年齢, 残す, 残り, 熱中, 熱帯, 能, 能力, 農家, 農業, 農民, 野, 除く, 鼠] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-149081`, `sent:tatoeba-169143`, `sent:tatoeba-144358`
 
 ---
 
@@ -55,6 +55,11 @@ Para fechar, quatro itens muito práticos: deixar para trás, o que sobra, pôr 
 忙しいかわりに、仕事を子供の世代に残すことができる (Em troca de viver ocupado, posso deixar o negócio para a geração dos meus filhos.)
 残りの野菜を全部皿に乗せて、傷んだところだけ除いた (Coloquei todo o resto dos legumes no prato e removi só as partes estragadas.)
 Repare como, no exemplo acima, 残り (o substantivo "resto") e 残す (o verbo "deixar") vêm da mesma raiz, mas têm funções diferentes na frase.
+
+#### Mais exemplos
+> 🗣 車に乗せてあげよう。 — Vou te dar uma carona.
+> 🗣 仕事に熱中しなさい。 — Se dedique de verdade ao trabalho.
+> 🗣 人間には話す能力がある。 — O ser humano tem a capacidade de falar.
 
 #### Hora de praticar
 

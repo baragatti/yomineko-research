@@ -7,7 +7,7 @@
 
 **Introduz:** gramática [—] · vocabulário [—] · kanji [買 足 週 道 飲 駅 魚] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:gen-71f6de6cf2be`, `sent:tatoeba-2633467`, `sent:tatoeba-187532`
 
 ---
 
@@ -27,6 +27,11 @@ Estes kanji fazem parte do conjunto esperado no exame deste nível. Alguns você
 #### 駅
 
 #### 魚
+
+#### Mais exemplos
+> 🗣 みかんを五つ買った — Comprei cinco mexericas.
+> 🗣 何飲みたい？ — O que você quer beber?
+> 🗣 何駅に行くのですか。 — Para qual estação você vai?
 - Reconheço o kanji 買 e sei onde conferir suas leituras.
 - Reconheço o kanji 足 e sei onde conferir suas leituras.
 - Reconheço o kanji 週 e sei onde conferir suas leituras.

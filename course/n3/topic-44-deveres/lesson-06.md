@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [方, ベルト, ベンチ, 冒険, 別に, 報告, 変化, 変更, 宝石, 弁当, 方向, 方法, 棒, 法, 減らす, 減る, 番瀝青, 豊富] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-2973587`, `sent:tatoeba-82756`, `sent:tatoeba-1690218`
 
 ---
 
@@ -54,6 +54,11 @@ Para fechar, coisas concretas que você vê por aí.
 Repare em 弁当, parte essencial do dia japonês, e em 冒険 para histórias.
 公園のベンチで弁当を食べた (Comi a marmita no banco do parque.)
 その宝石はとても高そうだ (Aquela joia parece bem cara.)
+
+#### Mais exemplos
+> 🗣 社会が変化している。 — A sociedade está mudando.
+> 🗣 報告によれば彼は生きているそうだ。 — Segundo o relatório, ele está vivo.
+> 🗣 この方法は確実だ。 — Este método é garantido.
 
 #### Hora de praticar
 

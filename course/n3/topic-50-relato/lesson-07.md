@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [メンバー, 元, 免許, 基づく, 戻す, 文字, 木曜, 毛布, 求める, 燃える, 用いる, 申し訳, 申し込む, 目標, 目的, 綿, 若しも, 面倒] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3507482`, `sent:tatoeba-11973248`, `sent:tatoeba-88110`
 
 ---
 
@@ -58,6 +58,11 @@ Duas palavras muito próximas que vale separar:
 - 元 (もと) - origem, fonte, começo; também "ex-" (元社長 = ex-presidente).
 - 若しも (もしも) - se, caso, supondo que (versão enfática de もし).
 若しも雨が降ったら中止です (Se por acaso chover, fica cancelado.)
+
+#### Mais exemplos
+> 🗣 元の場所に戻して。 — Põe de volta no lugar.
+> 🗣 この文字は何と読む？ — Como se lê este caractere?
+> 🗣 彼女は息子の面倒をみた。 — Ela cuidou do filho.
 
 #### Hora de praticar
 

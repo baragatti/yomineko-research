@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [ba, gp-150] · vocabulário [動物園, 怖い, 急ぐ, 投げる, 捕まえる, 故障, 触る, 逃げる, 間に合う] · kanji [合 強 無] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-a6fc1781b5e9`, `sent:gen-4f5ce8074635`, `sent:gen-46f095053830`, `sent:tatoeba-80881`
+**Frases (por ID, do banco dissecado):** `sent:gen-a6fc1781b5e9`, `sent:gen-4f5ce8074635`, `sent:gen-46f095053830`, `sent:tatoeba-77141`
 
 ---
 
@@ -53,7 +53,7 @@ O condicional 〜ば é o coração de muitos provérbios. Um clássico:塵も�
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 無理も通れば道理となる。 — Se até o irracional passa a vingar, ele acaba virando a regra.
+> 🗣 話上手もいれば、聞き上手もいる。 — Há quem fale bem, assim como há quem saiba ouvir bem.
 
 #### Leitura
 > 📖 毎日少しべんきょうすれば、はやく上手になります。分からないことばがあれば、先生に聞けばいいです。新しいことばは、たくさん書けばおぼえます。時間がなければ、電車の中で読んでもいいです。休まなければ、来年はもっと上手になります。 — Se você estudar um pouquinho todo dia, logo fica bom nisso. Se aparecer uma palavra que você não entende, é só perguntar ao professor. Palavra nova, se você escrever bastante, acaba decorando. Se não tiver tempo, dá para ler no trem mesmo. Se você não faltar nenhum dia, no ano que vem vai estar bem melhor.

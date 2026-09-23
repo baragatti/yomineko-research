@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [ga-hitsuyou] · vocabulário [サンダル, 下着, 引き出し, 押入れ, 通り, 随分, 電灯] · kanji [銀] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-1272425`, `sent:tatoeba-1046077`, `sent:tatoeba-187898`, `sent:tatoeba-1006944`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1272425`, `sent:tatoeba-1046077`, `sent:tatoeba-187898`
 
 ---
 
@@ -59,9 +59,6 @@ Dois kanji para acrescentar à coleção, ligados a lugares onde a gente precisa
 Como 必要 já significa "necessário", você não precisa conjugar verbo algum. Uma só palavra resolve o que em português pede o verbo "precisar" inteiro com suas terminações. Menos regras, mais frases.
 
 #### Hora de praticar
-
-#### Mais exemplos
-> 🗣 ナイフが必要だ。 — Preciso de uma faca.
 
 #### Leitura
 > 📖 来月、友だちと北海道へ行きます。その前に、大きいかばんがひつようです。お金もひつようですから、今週はアルバイトをします。母に、何がひつようかと聞かれました。あたたかいコートとくつがひつようだとこたえました。 — No mês que vem eu vou para Hokkaido com uns amigos. Antes disso, preciso de uma mala grande. Também preciso de dinheiro, então essa semana vou fazer um bico. Minha mãe me perguntou do que eu precisava. Respondi que precisava de um casaco quentinho e de sapatos.

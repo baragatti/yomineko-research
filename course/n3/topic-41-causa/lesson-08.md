@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ロケット, 両替, 例, 冷静, 列, 列車, 労働, 料金, 流行, 率, 理想, 留学, 礼, 礼儀, 老人, 連想, 連続, 量] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-198033`, `sent:tatoeba-77960`
 
 ---
 
@@ -48,6 +48,10 @@ Cuidado: 例 tem duas leituras comuns. Sozinho, como nesta lição, é れい ('
 
 > **[tip]**
 Dica: 礼 (れい) e 例 (れい) soam idênticos mas se escrevem diferente. 礼 tem o radical de 'rito' à esquerda e fala de cortesia; 例 tem o radical de 'pessoa' e fala de exemplo.
+
+#### Mais exemplos
+> 🗣 バス料金はいくらですか。 — Quanto custa a passagem de ônibus?
+> 🗣 料金は部屋につけておいていただけますか。 — Poderia colocar na conta do quarto?
 
 #### Hora de praticar
 

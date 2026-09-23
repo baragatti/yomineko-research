@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ミス, ミルク, 向い, 向く, 向ける, 味方, 土産, 妙, 実, 未来, 満ちる, 見事, 見舞い, 見送り, 認める, 身, 迎え, 魅力] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-2106183`, `sent:tatoeba-78806`, `sent:tatoeba-11030947`
 
 ---
 
@@ -55,6 +55,11 @@ Quatro verbos que mostram para onde algo se volta ou como percebemos algo (mais 
 
 > **[l1-pitfall]**
 O par 向く / 向ける é um clássico de transitivo e intransitivo. 向く (むく) é "eu me viro" (sozinho): 右を向く (virar-se para a direita). 向ける (むける) é "eu viro algo": 顔を向ける (virar o rosto). Quem age sobre um objeto usa 向ける.
+
+#### Mais exemplos
+> 🗣 ミルクをください。 — Um leite, por favor.
+> 🗣 要求は認められた。 — O pedido foi aceito.
+> 🗣 どっちの味方なの？ — Você tá do lado de quem?
 
 #### Hora de praticar
 

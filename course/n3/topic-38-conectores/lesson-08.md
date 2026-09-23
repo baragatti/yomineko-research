@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ゆっくり, ユーモア, 優勝, 優秀, 勇気, 友人, 友情, 唯一, 夜明け, 床, 愉快, 有利, 有効, 有能, 許す, 譲る, 豊か] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11994070`, `sent:tatoeba-110489`, `sent:tatoeba-2298758`
 
 ---
 
@@ -47,6 +47,11 @@ Cuidado: 優秀 (ゆうしゅう, excelente) e 優勝 (ゆうしょう, conquist
 
 > **[tip]**
 Dica: ユーモア (humor, graça) tem quatro batidas: ユ-ー-モ-ア, e o ー alonga a vogal anterior, contando como uma batida inteira. Não confunda com a ideia de 'estar de bom humor', que em japonês fica mais para 機嫌がいい.
+
+#### Mais exemplos
+> 🗣 ゆっくり見てね。 — Vê com calma, tá?
+> 🗣 彼はユーモアがない。 — Ele não tem senso de humor.
+> 🗣 最近古い友人に会った。 — Encontrei um velho amigo esses dias.
 
 #### Hora de praticar
 

@@ -10,7 +10,7 @@
 
 **Introduz:** gramática [gari, garu-gatteiru, gp-75, tagaru] · vocabulário [手伝う] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-8900817`, `sent:tatoeba-148753`, `sent:gen-a0d367f9d037`, `sent:tatoeba-127148`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-8900817`, `sent:tatoeba-148753`, `sent:gen-a0d367f9d037`
 
 ---
 
@@ -49,9 +49,6 @@ Com o mesmo radical がり, mas agora como substantivo, você descreve um traço
 - 下さる(くださる): dar/conceder (forma respeitosa, quando alguém de cima te dá algo).
 - 見つける(みつける): encontrar, achar, flagrar alguém.
 - そんなに(そんなに): tanto assim, tão (ex.:何でそんなに隠したがるの？= "por que quer tanto esconder isso?").
-
-#### Mais exemplos
-> 🗣 男性は男らしく見せたがる。 — Os homens querem parecer masculinos.
 
 #### Leitura
 > 📖 わたしのともだちは、さむがりだ。秋なのに、もうふゆのふくを着たがっている。でも、外に出るのがすきで、休みの日はいつも山に行きたがる。わたしが「今日は、さむいよ」と言っても、元気に歩いていく。ふゆの山でみんながさむがるのに、ともだちだけは元気だ。 — Meu amigo é friorento. Ainda é outono e ele já quer usar roupa de inverno. Mas ele gosta de sair e, nos dias de folga, sempre quer ir para a montanha. Mesmo quando eu falo "Hoje está frio", ele sai andando animado. No inverno, na montanha, todo mundo sente frio, e só meu amigo continua animado.

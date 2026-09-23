@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [—] · vocabulário [注ぐ, 付き合い, 付ける, 勤め, 包み, 土, 就く, 常に, 捕まる, 掴む, 次々, 注ぐ, 疲れ, 続き, 繋ぐ, 罪, 翼, 詰める] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-3023119`, `sent:tatoeba-12037561`
 
 ---
 
@@ -62,6 +62,10 @@ Para fechar, alguns verbos do dia a dia e substantivos concretos que aparecem co
 
 > **[tip]**
 Dica de memória. Repare que quase todas essas palavras compartilham o som inicial tsu. Agrupá-las por significado (prender, trabalhar, suceder, servir) ajuda bem mais a memória do que decorá-las soltas e fora de contexto.
+
+#### Mais exemplos
+> 🗣 手つないでもいい？ — Posso dar a mão?
+> 🗣 続きは明日にしよう。 — A gente continua amanhã.
 
 #### Hora de praticar
 Resolva os exercícios abaixo e confira cada explicação com atenção.

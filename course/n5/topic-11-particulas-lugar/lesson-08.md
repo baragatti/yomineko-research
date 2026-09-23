@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [dake, made, to, ya] · vocabulário [ペン, 丈, 机] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-2293f3cce26e`, `sent:tatoeba-187788`, `sent:tatoeba-139686`
+**Frases (por ID, do banco dissecado):** `sent:gen-2293f3cce26e`
 
 ---
 
@@ -54,10 +54,6 @@ A peça-chave é があります("há / existe", aqui no sentido de "ter"):が m
 #### Mais um item para o seu repertório
 - 幾つ: quantos? (quantidade).
 - 幾ら: quanto custa? / quanto?.
-
-#### Mais exemplos
-> 🗣 何とかしろ！ — Dê um jeito nisso!
-> 🗣 何とか入れた。 — Consegui entrar de algum jeito.
 
 #### Leitura
 > 📖 きょうはごごまでだいがくのじゅぎょうがあります。それから、えきまで行きます。えきでぎゅうにゅうとたまごとくだものをかいます。しんぶんやざっしも見ます。きょうはそれだけです。 — Hoje tenho aula na faculdade até a tarde. Depois disso vou até a estação. Na estação compro leite, ovos e frutas. Também dou uma olhada em jornais e revistas, entre outras coisas. Hoje é só isso.

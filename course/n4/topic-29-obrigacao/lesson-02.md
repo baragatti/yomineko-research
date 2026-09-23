@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [hitsuyou-ga-aru] · vocabulário [変える, 変わる, 支度, 正しい, 済む, 為, 経済, 計画] · kanji [試 験] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-2591977`, `sent:tatoeba-2040883`, `sent:tatoeba-1417711`, `sent:tatoeba-2633439`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-2591977`, `sent:tatoeba-2040883`, `sent:tatoeba-1417711`
 
 ---
 
@@ -64,9 +64,6 @@ Palavras que combinam direto com este padrão, porque planejar e preparar é jus
 仕 "servir, ofício" (し・つか-える). É 人 (pessoa) mais 士 (homem de função): a pessoa que serve / trabalha. Vive em 仕事 ("trabalho"), justo o tipo de coisa que cria necessidades a cumprir.
 
 #### Hora de praticar
-
-#### Mais exemplos
-> 🗣 なぜ死ぬ必要があるんですか？ — Por que é necessário morrer?
 
 #### Leitura
 > 📖 来週、学校で試験があります。学生は、八時までに来るひつようがあります。えんぴつと時計は、自分で持ってくるひつようがあります。名前は、始めに書くひつようがあります。分からないことがあったら、先生に聞いてください。試験のあとは、しずかに学校を出てください。 — Semana que vem tem prova na escola. Os alunos precisam chegar até as oito. Lápis e relógio, cada um precisa trazer o seu. O nome precisa ser escrito logo no começo. Se tiver alguma coisa que você não entender, pergunte para o professor. Depois da prova, saia da escola em silêncio.

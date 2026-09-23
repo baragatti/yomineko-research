@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [時, 何処か, 図書, 年月, 得意, 所が, 所で, 毒, 特徴, 独特, 独立, 独身, 登山, 解く, 解ける, 読書, 都会, 都市] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-77923`, `sent:tatoeba-11910391`, `sent:tatoeba-184140`
 
 ---
 
@@ -53,6 +53,11 @@ Um par clássico de transitivo e intransitivo, com a mesma raiz.
 
 > **[l1-pitfall]**
 Não confunda ところが com ところで. ところが introduz um contraste inesperado ("mas eis que..."); ところで muda de assunto ("a propósito..."). A vogal final muda tudo.
+
+#### Mais exemplos
+> 🗣 料理は得意です。 — Eu cozinho bem.
+> 🗣 この問題は解きにくい。 — Este problema é difícil de resolver.
+> 🗣 楽にその問題が解けた。 — Consegui resolver aquele problema sem esforço.
 
 #### Hora de praticar
 

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [トップ, トラック, トランプ, ドライブ, ドラマ, 兎に角, 共に, 友, 土地, 土曜, 届く, 年寄り, 突然, 虎, 閉じる, 飛ばす, 飛び出す] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-200449`, `sent:tatoeba-199712`, `sent:tatoeba-175365`
 
 ---
 
@@ -54,6 +54,11 @@ Três expressões fáceis de confundir, todas ligadas a tempo e modo.
 
 > **[l1-pitfall]**
 Não troque 突然 (advérbio solto: "de repente") por 途端. 途端 sempre vem grudado a uma ação no passado: 〜た途端 = "no instante em que (fiz)". Sozinho, 途端 não funciona.
+
+#### Mais exemplos
+> 🗣 とにかく始めよう。 — Enfim, vamos começar.
+> 🗣 トランプをしましょう。 — Vamos jogar baralho.
+> 🗣 犬がトラックにひかれた。 — Um cachorro foi atropelado por um caminhão.
 
 #### Hora de praticar
 

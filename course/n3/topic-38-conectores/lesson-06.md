@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [中心, 昼食, 注文, 注目, 直接, 著者, 調子, 調査, 貯金, 通じる, 通信, 通学, 通行, 通過, 遂に, 長大, 長期, 頂上] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-234308`, `sent:tatoeba-3362247`, `sent:tatoeba-161397`
 
 ---
 
@@ -53,6 +53,11 @@ O kanji 通 (passar, atravessar) gera um grupo coeso de palavras. Veja como o se
 
 > **[tip]**
 Quase toda palavra com 通 carrega a ideia de 'algo que passa': 通過 (passar por), 通学 (passar todo dia até a escola), 通信 (a informação que passa de um lado a outro). Guardar o sentido do kanji vale por cinco palavras.
+
+#### Mais exemplos
+> 🗣 あとで注文します。 — Eu peço mais tarde.
+> 🗣 昼食はどうだった？ — E o almoço, como foi?
+> 🗣 いつもバス通学です。 — Eu sempre vou de ônibus para a escola.
 
 #### Hora de praticar
 

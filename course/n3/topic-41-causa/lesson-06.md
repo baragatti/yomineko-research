@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ですから, テント, デモ, 伝統, 典型, 哲学, 天候, 徹夜, 徹底, 手伝い, 手品, 手間, 適切, 適度, 適用, 鉄, 鉄道, 電子] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-11897917`, `sent:tatoeba-145930`
 
 ---
 
@@ -55,6 +55,10 @@ Para fechar, um grupo de palavras avulsas muito usadas no dia a dia.
 
 > **[l1-pitfall]**
 ですから é a versão educada de だから (portanto). Use ですから com pessoas a quem você trata com respeito; だから fica para a conversa informal. O sentido é o mesmo: muda só o registro.
+
+#### Mais exemplos
+> 🗣 手品が大好きなんだ。 — Eu adoro mágica.
+> 🗣 食べるのにどうしてそんなに手間がかかるのか。 — Por que você demora tanto pra comer?
 
 #### Hora de praticar
 

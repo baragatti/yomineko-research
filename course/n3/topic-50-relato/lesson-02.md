@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-te-kureto, n3-to-iu-koto-da, n3-you-ni-iu] · vocabulário [主張, 乗客, 使用, 修正, 借金, 収入, 奨学金, 就職, 重大, 重視, 障害, 集中, 集団, 需要, 順番, 順調] · kanji [御 慣 折 誤] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-141613`, `sent:tatoeba-2233241`
+**Frases (por ID, do banco dissecado):** `sent:gen-700a574fb45f`, `sent:tatoeba-2233241`
 
 ---
 
@@ -79,7 +79,7 @@ O kanji 御 é o honorífico (lido お ou ご) que deixa palavras mais polidas, 
 Os mnemônicos são só a porta de entrada. A fixação real vem de reencontrar esses kanji nos exercícios e nas próximas lições, em intervalos crescentes.
 
 #### Exemplos do banco
-> 🗣 先生は私たちに毎日教室を掃除するように言う。 — O professor manda a gente limpar a sala de aula todos os dias.
+> 🗣 弟に早く帰るように言う — Eu mando meu irmão mais novo voltar cedo para casa.
 > 🗣 彼は金を貸してくれと頼んだ。 — Ele pediu dinheiro emprestado.
 
 #### Hora de praticar

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [分, ブレーキ, プラス, プラン, プロ, 不利, 不満, 分析, 分野, 塀, 平和, 平均, 振る, 文, 文明, 触れる, 雰囲気, 震える] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10798004`, `sent:tatoeba-2692844`, `sent:tatoeba-76719`
 
 ---
 
@@ -51,6 +51,11 @@ Para encerrar, verbos de movimento e palavras de estado geral.
 Repare em 雰囲気, uma palavra muito comum, e em 震える para sensações físicas.
 この店の雰囲気がとても好きだ (Gosto muito do clima desta loja.)
 寒くて手が震えている (Está tão frio que minha mão está tremendo.)
+
+#### Mais exemplos
+> 🗣 これは文ですか？ — Isso é uma frase?
+> 🗣 ブレーキをかけろ！ — Pisa no freio!
+> 🗣 これが一番得意な分野です。 — Essa é a área em que eu sou melhor.
 
 #### Hora de praticar
 

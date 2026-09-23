@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [党, 到着, 動詞, 同一, 同僚, 同化, 同時, 同様, 問い, 塔, 天然, 如何しても, 当時, 投票, 答案, 通す, 道徳, 道路] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-1278112`, `sent:tatoeba-369374`, `sent:tatoeba-124047`
 
 ---
 
@@ -55,6 +55,11 @@ Estas palavras se parecem na escrita e na ideia de "igualdade", mas têm usos di
 
 > **[l1-pitfall]**
 Cuidado: どうしても pode parecer "de qualquer jeito" no sentido de descaso, mas é o contrário. Ele reforça empenho ("a todo custo") ou, com verbo negativo, total impossibilidade ("de jeito nenhum consigo").
+
+#### Mais exemplos
+> 🗣 私は彼を部屋に通した。 — Eu levei ele até a sala.
+> 🗣 妹と出発が同時でしたか。 — Você saiu ao mesmo tempo que a minha irmã mais nova?
+> 🗣 当時彼はアメリカにいた。 — Naquela época ele estava nos Estados Unidos.
 
 #### Hora de praticar
 

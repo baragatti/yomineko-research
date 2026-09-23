@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [表, 品, 一人一人, 品, 平等, 広がる, 微妙, 批判, 批評, 瓶, 秒, 秘密, 紐, 表情, 表現, 表面, 評価, 評判, 費用] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-149882`, `sent:tatoeba-201100`
 
 ---
 
@@ -51,6 +51,10 @@ Por fim, um grupo variado de substantivos comuns.
 Repare em 一人一人 (ひとりひとり) destacando cada indivíduo, e em 瓶 (びん) numa fala do dia a dia.
 先生は生徒一人一人について話した (A professora falou sobre cada aluno individualmente.)
 この瓶は空だけど、捨てないでね (Esta garrafa está vazia, mas não jogue fora, viu?)
+
+#### Mais exemplos
+> 🗣 自分の気持ちを表現できない。 — Não consigo expressar o que eu sinto.
+> 🗣 どう表現すればいいでしょうか。 — Como eu poderia dizer isso?
 
 #### Hora de praticar
 

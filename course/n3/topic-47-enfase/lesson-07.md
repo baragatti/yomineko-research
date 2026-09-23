@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [ママ, 万一, 丸, 丸で, 全く, 回す, 回り, 守る, 招く, 松, 満足, 益々, 真っ赤, 真似, 祭り, 豆, 間違い] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-81074`, `sent:tatoeba-1325188`, `sent:tatoeba-85043`
 
 ---
 
@@ -52,6 +52,11 @@ Não confunda 全く (まったく, "completamente") com 丸で (まるで, "com
 
 > **[tip]**
 守る (まもる) cobre dois sentidos que em português separamos: "proteger" (alguém do perigo) e "cumprir" (uma regra ou promessa). Pelo contexto fica claro: 子供を守る = proteger a criança; ルールを守る = cumprir as regras.
+
+#### Mais exemplos
+> 🗣 満足そうですね。 — Você parece satisfeito.
+> 🗣 間違い電話だった。 — Foi engano.
+> 🗣 不平はまったくない。 — Não tenho queixa nenhuma.
 
 #### Hora de praticar
 

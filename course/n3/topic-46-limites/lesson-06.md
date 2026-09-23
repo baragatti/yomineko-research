@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [似合う, 何か, 何で, 何でも, 何とか, 何も, 何故なら, 怠ける, 悩む, 成る, 波, 涙, 無し, 納得, 縄, 苦手, 謎, 鍋] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-187672`, `sent:tatoeba-11883177`, `sent:tatoeba-109745`
 
 ---
 
@@ -53,6 +53,11 @@ Este grupo gira em torno de ausência e totalidade, tema central do tópico de l
 
 > **[l1-pitfall]**
 Atenção ao par 何も e 何でも. 何も só faz sentido com verbo negativo ("nada"); 何でも vai com verbo afirmativo ("qualquer coisa"). Trocar um pelo outro inverte o sentido da frase.
+
+#### Mais exemplos
+> 🗣 何も意思がない。 — Não tenho intenção nenhuma.
+> 🗣 何か注文しよう。 — Vamos pedir alguma coisa.
+> 🗣 彼は英語が苦手だ。 — Ele é ruim em inglês.
 
 #### Hora de praticar
 

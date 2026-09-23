@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [—] · vocabulário [だが, タイプライター, タオル, ダイヤ, 互い, 代理, 代表, 倒す, 大半, 大戦, 大統領, 大部分, 大陸, 太陽, 平ら, 態度, 逮捕] · kanji [頂] · kana [—]
 
-**Frases (por ID, do banco dissecado):** —
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-8532817`, `sent:tatoeba-223579`, `sent:tatoeba-98447`
 
 ---
 
@@ -53,6 +53,11 @@ Um jeito mais firme de dizer 'mas'.
 #### Kanji novos
 O kanji 耳 ('orelha, ouvido') aparece em 耳 ('orelha') e 耳鼻科 ('otorrinolaringologia'). O desenho lembra o formato de uma orelha.
 O kanji 頂 ('topo, cume; receber') aparece em 頂上 ('cume, topo') e em 頂く ('receber', humilde). O radical de cabeça à direita ajuda a lembrar do ponto mais alto.
+
+#### Mais exemplos
+> 🗣 タオルとって！ — Me passa uma toalha!
+> 🗣 このダイヤは本物ですか。 — Esse diamante é de verdade?
+> 🗣 彼らの大部分は女性だった。 — A maioria deles era mulher.
 
 #### Hora de praticar
 

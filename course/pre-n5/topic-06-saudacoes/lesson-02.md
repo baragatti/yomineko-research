@@ -24,8 +24,8 @@ Numa conversa de verdade, você não fica só falando: você responde e reage. E
 ええ e いいえ são fáceis de confundir na escrita:ええ tem dois kana iguais ("sim"), e いいえ começa com dois い mais um え("não"). Leia em voz alta para fixar.
 
 #### Reações na hora da conversa
-- なるほど(naruhodo): entendi; faz sentido. Você solta isso quando a outra pessoa explica algo e a ficha cai. Mostra que você está acompanhando.
-- ああ(aa): ah!; oh!. Um suspiro de quem se lembrou de algo ou entendeu. Tom relaxado, alongado.
+- 成る程(naruhodo): entendi; faz sentido. Você solta isso quando a outra pessoa explica algo e a ficha cai. Mostra que você está acompanhando.
+- 嗚呼(aa): ah!; oh!. Um suspiro de quem se lembrou de algo ou entendeu. Tom relaxado, alongado.
 - あっ(a'): ah!; opa!. Curto e cortado, é a reação de surpresa: você percebeu algo de repente, como quando deixa cair uma coisa.
 - そんな(sonna): desse tipo; "que isso!". Sozinha, é uma reação de espanto ou modéstia, tipo "que isso!", "não diga!". Também significa "desse tipo" dentro de frases maiores.
 
@@ -34,7 +34,7 @@ Cuidado com ああ e あっ: parecem iguais, mas o som muda tudo.ああ é a vog
 
 #### Marcar o tempo e encerrar
 - もう(mou): já; agora; (não) mais. Use para "já" ("já acabou?") e, com negativa, para "não mais" ("não quero mais"). É curtinho e aparece o tempo todo.
-- それでは(soredewa): bem então; pois então. Marca uma transição ou um fecho educado: "bem então, vamos lá", "pois então, até logo". Ótimo para encerrar uma conversa com elegância.
+- 其れでは(soredewa): bem então; pois então. Marca uma transição ou um fecho educado: "bem então, vamos lá", "pois então, até logo". Ótimo para encerrar uma conversa com elegância.
 
 > **[culture]**
 No dia a dia, muita gente encurta それでは para では ou para o bem informal じゃあ(tipo "então, falou!"). Por enquanto, fique com それでは, que serve em qualquer situação.

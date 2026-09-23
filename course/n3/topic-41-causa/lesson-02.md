@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [n3-ni-yotte, n3-sono-kekka, n3-sono-tame-ni] · vocabulário [お前, お昼, オフィス, 下ろす, 主に, 凡そ, 及ぼす, 帯, 御目出度う, 思い出, 思わず, 泳ぎ, 溺れる, 結果, 鬼] · kanji [係 増 変 情 感 投 果 示] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-201846`, `sent:tatoeba-211124`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-201846`, `sent:gen-08f855cb0a2c`
 
 ---
 
@@ -51,7 +51,7 @@ O pronome お前 é bruto e íntimo. O japonês prefere omitir o sujeito sempre 
 
 #### Exemplos do banco
 > 🗣 ドアはジムによって開けられます。 — A porta é aberta pelo Jim.
-> 🗣 その結果はどうなのか。 — E o resultado disso, como foi?
+> 🗣 毎朝果物を食べます — Eu como fruta toda manhã.
 
 #### Hora de praticar
 

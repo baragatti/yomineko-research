@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-43] · vocabulário [子供, 沢山, 生徒, 背, 自分] · kanji [話 語] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-122326`, `sent:tatoeba-112055`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-122326`
 
 ---
 
@@ -58,7 +58,6 @@ Mnemônico de forma: 人 parece duas perninhas, uma apoiando a outra, como algu�
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 彼はたくさん食べる。 — Ele come muito.
 - Uso たくさん para "muito/muitos" em quantidade.
 - Sei que たくさん é quantidade e とても é intensidade.
 - Falo de pessoas e grupos com 人, 子供 e 生徒.
