@@ -742,12 +742,14 @@ def collect_speak(root: Path) -> Iterator[Row]:
             preview=one_line((rec.get("title") or {}).get("pt-BR", rec.get("id", ""))),
         )
         add_locale_targets(row, "title", rec.get("title"))
-        production = [{"prompt_pt": p.get("prompt_pt"), "answer_key": p.get("answer_key")}
+        # W40 made the speak prompts locale objects (`prompt: {"pt-BR": ...}`); the aggregate keeps
+        # its old internal key so a content hash taken before the rename still matches.
+        production = [{"prompt_pt": (p.get("prompt") or {}).get("pt-BR"), "answer_key": p.get("answer_key")}
                       for p in rec.get("production") or () if isinstance(p, dict)]
         if production:
             add_aggregate_target(row, "production", production, "pt-BR",
                                  preview=str(production[0].get("prompt_pt") or ""))
-        fluency_prompt = (rec.get("fluency") or {}).get("prompt_pt")
+        fluency_prompt = ((rec.get("fluency") or {}).get("prompt") or {}).get("pt-BR")
         if isinstance(fluency_prompt, str) and fluency_prompt.strip():
             row.targets.append(Target("fluency", "pt-BR", sha(fluency_prompt),
                                       one_line(fluency_prompt, TARGET_PREVIEW_CHARS)))

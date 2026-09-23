@@ -1,6 +1,6 @@
 # Corpus — Conjugation bank (deterministic, Layer A)
 
-_Generated 2026-09-02. Rule-based conjugations for the exercise bank; each form has surface/kana/romaji. Form keys are neutral enums._
+_Generated 2026-09-23. Rule-based conjugations for the exercise bank; each form has surface/kana/romaji. Form keys are neutral enums._
 
 | level | items | verbs | adjectives |
 |-------|------:|------:|-----------:|

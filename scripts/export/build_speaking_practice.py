@@ -269,7 +269,7 @@ def main() -> int:
                 if not speak_filter.allows(slug):
                     continue
                 production.append({
-                    "prompt_pt": pt[s["id"]],
+                    "prompt": {"pt-BR": pt[s["id"]]},
                     "answer_key": s["jp"],
                     "accepted_variants": variants(s["jp"], s.get("kana"), s.get("kana_written")),
                     "sentence": slug,
@@ -321,7 +321,7 @@ def main() -> int:
             # the PROMPT stops lying — a recap block says it is a recap.
             is_recap = bool(fluency_items) and not any(i in stage_phrases for i in fluency_items)
             fluency = {
-                "prompt_pt": (RECAP_PROMPT if is_recap else SITUATIONS.get(key, "")),
+                "prompt": {"pt-BR": (RECAP_PROMPT if is_recap else SITUATIONS.get(key, ""))},
                 "items": fluency_items,
                 "seconds_target": SECONDS_PER_ITEM * len(fluency_items),
                 "zero_new_tokens": True,

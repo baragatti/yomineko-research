@@ -86,9 +86,9 @@ CJK = re.compile(r"[぀-ヿ㐀-䶿一-鿿]")
 # The only field paths in a speak unit permitted to hold Japanese text. Anything else holding kana or
 # kanji is corpus content embedded where a stable ID belongs (design/speaking_path.md §1).
 EMBED_ALLOWLIST = {
-    "title.pt-BR", "production[].prompt_pt", "production[].answer_key",
+    "title.pt-BR", "production[].prompt.pt-BR", "production[].answer_key",
     "production[].accepted_variants[]", "checkpoint[].distractors[]",
-    "fluency.prompt_pt", "kanji_recognition[]",
+    "fluency.prompt.pt-BR", "kanji_recognition[]",
 }
 # checkpoint type -> the exam-bank id prefix it must carry.
 TYPE_PREFIX = {"context_fill": "cf", "kanji_reading": "kr", "sentence_order": "so",
@@ -311,7 +311,7 @@ def main() -> int:
                 # R45: an ungraded production item cannot be counted, so refuse to ship one.
                 if not pr.get("answer_key") or not pr.get("accepted_variants"):
                     fails.append(f"{u['id']}: production item without answer_key/accepted_variants (R45)")
-                if not pr.get("prompt_pt"):
+                if not (pr.get("prompt") or {}).get("pt-BR"):
                     fails.append(f"{u['id']}: production item without a pt-BR prompt (R45)")
                 # R44: production may never be an item's FIRST retrieval, so its sentence must have
                 # been modelled in an EARLIER unit.
@@ -321,7 +321,7 @@ def main() -> int:
 
             fl = u.get("fluency")
             if fl:
-                if not fl.get("prompt_pt"):
+                if not (fl.get("prompt") or {}).get("pt-BR"):
                     fails.append(f"{u['id']}: fluency block without a situational prompt (R79b)")
                 if not fl.get("seconds_target"):
                     fails.append(f"{u['id']}: fluency block without a speed target (R79c)")
@@ -392,8 +392,8 @@ def main() -> int:
                 if pr.get("answer_key") != src["jp"]:
                     fails.append(f"{u['id']}: production answer_key drifted from {pr['sentence']} "
                                  f"({pr.get('answer_key')!r} vs {src['jp']!r})")
-                if pr.get("prompt_pt") != (src.get("translation") or {}).get("pt-BR"):
-                    fails.append(f"{u['id']}: production prompt_pt drifted from {pr['sentence']}'s "
+                if (pr.get("prompt") or {}).get("pt-BR") != (src.get("translation") or {}).get("pt-BR"):
+                    fails.append(f"{u['id']}: production prompt drifted from {pr['sentence']}'s "
                                  f"pt-BR translation")
                 variants = pr.get("accepted_variants") or []
                 if len(set(variants)) != len(variants):

@@ -93,6 +93,10 @@ def ts_type(node: dict, depth: int = 0, defs: dict | None = None, seen: frozense
             return "Record<string, unknown> | null"
         if tail in ("needs_review", "ai_generated"):
             return "boolean"
+        if tail == "created_by":
+            return '"dataset" | "ai" | "script"'
+        if tail in ("field_layers", "FieldLayers", "LocaleLayerMap"):
+            return "Record<string, Layer>"
         if tail == "source":
             return "string"
         if tail == "level_confidence":

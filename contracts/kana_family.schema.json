@@ -79,9 +79,14 @@
             "required": ["id", "char", "romaji"],
             "additionalProperties": false
           }
-        }
+        },
+        "source": { "$ref": "common.schema.json#/$defs/Provenance/properties/source" },
+        "created_by": { "$ref": "common.schema.json#/$defs/Provenance/properties/created_by" },
+        "layer": { "$ref": "common.schema.json#/$defs/Layer" },
+        "field_layers": { "$ref": "common.schema.json#/$defs/Provenance/properties/field_layers" },
+        "needs_review": { "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review" }
       },
-      "required": ["id", "label", "row", "type", "order", "members"],
+      "required": ["id", "label", "row", "type", "order", "members", "source", "created_by", "layer", "field_layers", "needs_review"],
       "additionalProperties": false
     }
   }

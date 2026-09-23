@@ -548,7 +548,7 @@ def ctx_speak(rec: dict[str, Any], ctx: Ctx) -> list[str]:
                    f"{(sentence.get('translation') or {}).get('pt-BR', '')}")
     for prod in rec.get("production") or ():
         if isinstance(prod, dict):
-            out.append(f"- produção: {prod.get('prompt_pt')} → {prod.get('answer_key')}")
+            out.append(f"- produção: {(prod.get('prompt') or {}).get('pt-BR')} → {prod.get('answer_key')}")
     return out
 
 

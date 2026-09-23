@@ -37,6 +37,17 @@
       "string"
      ]
     },
+    "created_by": {
+     "present": 2131,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "dataset"
+     ]
+    },
     "example_sentences": {
      "present": 2131,
      "pct": 100.0,
@@ -135,6 +146,58 @@
       "string"
      ]
     },
+    "field_layers": {
+     "present": 2131,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "object"
+     ]
+    },
+    "field_layers.example_words[].gloss": {
+     "present": 1826,
+     "pct": 85.7,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "B"
+     ]
+    },
+    "field_layers.irregular_note": {
+     "present": 99,
+     "pct": 4.6,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
+     ]
+    },
+    "field_layers.meanings": {
+     "present": 2131,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "B"
+     ]
+    },
+    "field_layers.readings[].note": {
+     "present": 630,
+     "pct": 29.6,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
+     ]
+    },
     "freq_rank": {
      "present": 2131,
      "pct": 100.0,
@@ -199,6 +262,17 @@
      "required": true,
      "types": [
       "string"
+     ]
+    },
+    "layer": {
+     "present": 2131,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "A"
      ]
     },
     "level": {
@@ -381,12 +455,12 @@
       "string"
      ]
     },
-    "notes": {
+    "needs_review": {
      "present": 2131,
      "pct": 100.0,
      "required": true,
      "types": [
-      "null"
+      "boolean"
      ]
     },
     "radical_char": {
@@ -527,6 +601,14 @@
       "string"
      ]
     },
+    "source": {
+     "present": 2131,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ]
+    },
     "strokes": {
      "present": 2131,
      "pct": 100.0,
@@ -580,6 +662,17 @@
       "boolean"
      ]
     },
+    "created_by": {
+     "present": 7401,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "dataset"
+     ]
+    },
     "families": {
      "present": 7401,
      "pct": 100.0,
@@ -594,6 +687,36 @@
      "required": false,
      "types": [
       "string"
+     ]
+    },
+    "field_layers": {
+     "present": 7401,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "object"
+     ]
+    },
+    "field_layers.notes": {
+     "present": 1,
+     "pct": 0.0,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "B"
+     ]
+    },
+    "field_layers.senses[].gloss": {
+     "present": 7401,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "B"
      ]
     },
     "forms": {
@@ -684,6 +807,17 @@
      "required": false,
      "types": [
       "string"
+     ]
+    },
+    "layer": {
+     "present": 7401,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "A"
      ]
     },
     "level": {
@@ -1017,6 +1151,14 @@
      ]
     },
     "slug": {
+     "present": 7401,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ]
+    },
+    "source": {
      "present": 7401,
      "pct": 100.0,
      "required": true,
@@ -1720,8 +1862,8 @@
      ]
     },
     "particles[].explanation.en": {
-     "present": 13186,
-     "pct": 129.2,
+     "present": 13451,
+     "pct": 131.8,
      "required": false,
      "types": [
       "string"
@@ -1745,8 +1887,8 @@
      ]
     },
     "particles[].function.en": {
-     "present": 13184,
-     "pct": 129.1,
+     "present": 22957,
+     "pct": 224.9,
      "required": false,
      "types": [
       "string"
@@ -2048,8 +2190,8 @@
      ]
     },
     "tokens[].conjugation_note.en": {
-     "present": 13501,
-     "pct": 132.2,
+     "present": 13506,
+     "pct": 132.3,
      "required": false,
      "types": [
       "string"
@@ -2073,8 +2215,8 @@
      ]
     },
     "tokens[].gloss.en": {
-     "present": 26799,
-     "pct": 262.5,
+     "present": 41954,
+     "pct": 411.0,
      "required": false,
      "types": [
       "string"
@@ -2236,8 +2378,8 @@
      ]
     },
     "tokens[].role.en": {
-     "present": 26768,
-     "pct": 262.2,
+     "present": 27669,
+     "pct": 271.0,
      "required": false,
      "types": [
       "string"
@@ -2324,6 +2466,26 @@
       "string"
      ]
     },
+    "translation_layer": {
+     "present": 10191,
+     "pct": 99.8,
+     "required": false,
+     "types": [
+      "object"
+     ]
+    },
+    "translation_layer.en": {
+     "present": 10191,
+     "pct": 99.8,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "A",
+      "B"
+     ]
+    },
     "translation_literal": {
      "present": 10209,
      "pct": 100.0,
@@ -2406,14 +2568,6 @@
      ],
      "values": [
       "ai"
-     ]
-    },
-    "description": {
-     "present": 709,
-     "pct": 100.0,
-     "required": true,
-     "types": [
-      "null"
      ]
     },
     "governing_rule": {
@@ -2542,14 +2696,6 @@
       "grammar",
       "kanji",
       "vocab"
-     ]
-    },
-    "members[].note": {
-     "present": 4969,
-     "pct": 700.8,
-     "required": false,
-     "types": [
-      "null"
      ]
     },
     "members[].ref": {
@@ -2759,6 +2905,17 @@
       "string"
      ]
     },
+    "created_by": {
+     "present": 1157,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "script"
+     ]
+    },
     "headword": {
      "present": 1157,
      "pct": 100.0,
@@ -2787,6 +2944,17 @@
       "verb"
      ]
     },
+    "layer": {
+     "present": 1157,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "A"
+     ]
+    },
     "level": {
      "present": 1157,
      "pct": 100.0,
@@ -2806,6 +2974,17 @@
      "required": true,
      "types": [
       "string"
+     ]
+    },
+    "source": {
+     "present": 1157,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "derived:conjugation-rules"
      ]
     },
     "vocab_id": {
@@ -2837,6 +3016,17 @@
       "string"
      ]
     },
+    "created_by": {
+     "present": 211,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "script"
+     ]
+    },
     "family": {
      "present": 211,
      "pct": 100.0,
@@ -2853,12 +3043,39 @@
       "object"
      ]
     },
+    "family_label.en": {
+     "present": 210,
+     "pct": 99.5,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
     "family_label.pt-BR": {
      "present": 211,
      "pct": 100.0,
      "required": true,
      "types": [
       "string"
+     ]
+    },
+    "field_layers": {
+     "present": 211,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "object"
+     ]
+    },
+    "field_layers.family_label": {
+     "present": 211,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
      ]
     },
     "id": {
@@ -2869,12 +3086,42 @@
       "string"
      ]
     },
+    "layer": {
+     "present": 211,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "A"
+     ]
+    },
+    "needs_review": {
+     "present": 211,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "boolean"
+     ]
+    },
     "romaji": {
      "present": 211,
      "pct": 100.0,
      "required": true,
      "types": [
       "string"
+     ]
+    },
+    "source": {
+     "present": 211,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "unicode-gojuon"
      ]
     },
     "type": {
@@ -2911,6 +3158,36 @@
       "array"
      ]
     },
+    "[value][].created_by": {
+     "present": 57,
+     "pct": 2850.0,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "script"
+     ]
+    },
+    "[value][].field_layers": {
+     "present": 57,
+     "pct": 2850.0,
+     "required": false,
+     "types": [
+      "object"
+     ]
+    },
+    "[value][].field_layers.label": {
+     "present": 57,
+     "pct": 2850.0,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
+     ]
+    },
     "[value][].id": {
      "present": 57,
      "pct": 2850.0,
@@ -2927,12 +3204,31 @@
       "object"
      ]
     },
+    "[value][].label.en": {
+     "present": 56,
+     "pct": 2800.0,
+     "required": false,
+     "types": [
+      "string"
+     ]
+    },
     "[value][].label.pt-BR": {
      "present": 57,
      "pct": 2850.0,
      "required": false,
      "types": [
       "string"
+     ]
+    },
+    "[value][].layer": {
+     "present": 57,
+     "pct": 2850.0,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "A"
      ]
     },
     "[value][].members": {
@@ -2967,6 +3263,14 @@
       "string"
      ]
     },
+    "[value][].needs_review": {
+     "present": 57,
+     "pct": 2850.0,
+     "required": false,
+     "types": [
+      "boolean"
+     ]
+    },
     "[value][].order": {
      "present": 57,
      "pct": 2850.0,
@@ -2983,6 +3287,17 @@
      "required": false,
      "types": [
       "string"
+     ]
+    },
+    "[value][].source": {
+     "present": 57,
+     "pct": 2850.0,
+     "required": false,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "unicode-gojuon"
      ]
     },
     "[value][].type": {
@@ -3679,6 +3994,17 @@
       "recognition"
      ]
     },
+    "created_by": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "ai"
+     ]
+    },
     "exam_link": {
      "present": 125,
      "pct": 100.0,
@@ -3794,6 +4120,17 @@
       "vocabulary"
      ]
     },
+    "layer": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
+     ]
+    },
     "lessons": {
      "present": 125,
      "pct": 100.0,
@@ -3838,6 +4175,25 @@
      "required": true,
      "types": [
       "string"
+     ]
+    },
+    "needs_review": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "boolean"
+     ]
+    },
+    "source": {
+     "present": 125,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "capability-registry"
      ]
     }
    }
@@ -4856,6 +5212,17 @@
    ],
    "records": 4,
    "fields": {
+    "created_by": {
+     "present": 4,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "ai"
+     ]
+    },
     "id": {
      "present": 4,
      "pct": 100.0,
@@ -4870,6 +5237,17 @@
       "mod:pre-n5"
      ]
     },
+    "layer": {
+     "present": 4,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
+     ]
+    },
     "level": {
      "present": 4,
      "pct": 100.0,
@@ -4882,6 +5260,14 @@
       "n4",
       "n5",
       "pre-n5"
+     ]
+    },
+    "needs_review": {
+     "present": 4,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "boolean"
      ]
     },
     "order": {
@@ -4914,6 +5300,17 @@
       "Do zero absoluto: ler e escrever os dois silabários (kana), pronunciar com ritmo de mora e se virar em saudações e apresentações.",
       "Módulo N3: consolidação da gramática intermediária, leitura ampliada e vocabulário do dia a dia expandido. Conteúdo bônus além do núcleo N5→N4.",
       "Usar a forma simples e o registro casual, orações relativas, condicionais, potencial, dar-e-receber, voz passiva/causativa e keigo básico (suficiente para trabalho e vida no Japão.)"
+     ]
+    },
+    "source": {
+     "present": 4,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "outline"
      ]
     },
     "title": {
@@ -5105,6 +5502,17 @@
    ],
    "records": 52,
    "fields": {
+    "created_by": {
+     "present": 52,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "ai"
+     ]
+    },
     "family_ids": {
      "present": 52,
      "pct": 100.0,
@@ -5127,6 +5535,17 @@
      "required": true,
      "types": [
       "string"
+     ]
+    },
+    "layer": {
+     "present": 52,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
      ]
     },
     "lessons": {
@@ -5276,6 +5695,14 @@
       "pre-n5"
      ]
     },
+    "needs_review": {
+     "present": 52,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "boolean"
+     ]
+    },
     "objectives": {
      "present": 52,
      "pct": 100.0,
@@ -5301,6 +5728,18 @@
      ],
      "min": 1,
      "max": 52
+    },
+    "source": {
+     "present": 52,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "jlpt-align",
+      "outline"
+     ]
     },
     "theme": {
      "present": 52,
@@ -6821,7 +7260,15 @@
       "situation"
      ]
     },
-    "fluency.prompt_pt": {
+    "fluency.prompt": {
+     "present": 71,
+     "pct": 98.6,
+     "required": false,
+     "types": [
+      "object"
+     ]
+    },
+    "fluency.prompt.pt-BR": {
      "present": 71,
      "pct": 98.6,
      "required": false,
@@ -7003,7 +7450,15 @@
       "same-stage"
      ]
     },
-    "production[].prompt_pt": {
+    "production[].prompt": {
+     "present": 213,
+     "pct": 295.8,
+     "required": false,
+     "types": [
+      "object"
+     ]
+    },
+    "production[].prompt.pt-BR": {
      "present": 213,
      "pct": 295.8,
      "required": false,
@@ -7353,6 +7808,17 @@
      "min": 6,
      "max": 17
     },
+    "created_by": {
+     "present": 1,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "script"
+     ]
+    },
     "enums_ref": {
      "present": 1,
      "pct": 100.0,
@@ -7375,6 +7841,25 @@
       "2026-09-23"
      ]
     },
+    "layer": {
+     "present": 1,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "C"
+     ]
+    },
+    "needs_review": {
+     "present": 1,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "boolean"
+     ]
+    },
     "schema_version": {
      "present": 1,
      "pct": 100.0,
@@ -7384,6 +7869,17 @@
      ],
      "values": [
       "1.0"
+     ]
+    },
+    "source": {
+     "present": 1,
+     "pct": 100.0,
+     "required": true,
+     "types": [
+      "string"
+     ],
+     "values": [
+      "derived:course-chain"
      ]
     }
    }

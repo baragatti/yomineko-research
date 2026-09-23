@@ -1,0 +1,18 @@
+{
+ "note": "Ratchet for scripts/validate/validate_locale_parity.py rule R1 (design/i18n.md). Per required scope row: how many instances may still lack an `en`. Measured at the W40 apply (2026-09-23), after the derivable half (26,365 rows) landed; the remainder is the authoring residue in research/derived/pending/en_backfill_residue.json (owner decision B-W40). May only shrink: lower an entry when its field improves, delete it at 0.",
+ "measured": "2026-09-23",
+ "misses": {
+  "kana.family_label": 1,
+  "kana_family.label": 1,
+  "kanji.irregular_note": 99,
+  "kanji.readings[].note": 3679,
+  "sentence.particles[].explanation": 11224,
+  "sentence.particles[].function": 1713,
+  "sentence.structure_explanation": 4650,
+  "sentence.tokens[].conjugation_note": 430,
+  "sentence.tokens[].gloss": 3841,
+  "sentence.tokens[].role": 895,
+  "sentence.translation_literal": 4650,
+  "vocab.notes": 1
+ }
+}

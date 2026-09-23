@@ -14,6 +14,9 @@
   },
   "type": "object",
   "properties": {
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "family_ids": {
       "type": "array",
       "items": {
@@ -22,6 +25,9 @@
     },
     "id": {
       "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
     },
     "lessons": {
       "type": "array",
@@ -108,6 +114,9 @@
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
     },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
+    },
     "objectives": {
       "type": "array",
       "items": {
@@ -178,6 +187,9 @@
         "additionalProperties": false
       }
     },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
     "theme": {
       "type": "string",
       "description": "Free thematic label for the topic. No declared taxonomy."
@@ -188,12 +200,16 @@
   },
   "additionalProperties": false,
   "required": [
+    "created_by",
     "family_ids",
     "id",
+    "layer",
     "lessons",
     "level",
+    "needs_review",
     "objectives",
     "order",
+    "source",
     "theme",
     "title"
   ]

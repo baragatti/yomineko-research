@@ -25,6 +25,7 @@ export interface Capability {
       objective?: string;
     }[];
   can_do_evidence: "production" | "recognition";
+  created_by: "dataset" | "ai" | "script";
   exam_link: {
       bank?: string;
       items?: number;
@@ -35,9 +36,11 @@ export interface Capability {
   grammar_keys: string[];
   id: StableId;
   kind: "exam-readiness" | "grammar" | "phonology" | "script" | "study-method" | "vocabulary";
+  layer: Layer;
   lessons: string[];
   level: Level;
   name: LocaleText;
+  needs_review: boolean;
   review_status?: {
       field: string;
       locale?: string | null;
@@ -46,6 +49,7 @@ export interface Capability {
       approved_at: string;
       content_hash: string;
     }[];
+  source: string;
 }
 
 /** Which capabilities each lesson contributes to. A keyed collection rather than a record list: the lesson id IS the key, so there is no id field inside the value. Hand-authored — a map's contract is about its key space and value shape, which the record-shape generator has no idiom for. */
@@ -60,9 +64,11 @@ export interface Conjugation {
       romaji?: string;
       surface?: string;
     }[];
+  created_by: "dataset" | "ai" | "script";
   headword: string;
   kana: string;
   kind: "adjective" | "verb";
+  layer: Layer;
   level: Level;
   review_status?: {
       field: string;
@@ -73,13 +79,17 @@ export interface Conjugation {
       content_hash: string;
     }[];
   slug: StableId;
+  source: string;
   vocab_id: number;
 }
 
 /** A course root for one level: its ordered topics and the overview shown before the first lesson. */
 export interface Course {
+  created_by: "dataset" | "ai" | "script";
   id: StableId;
+  layer: Layer;
   level: Level;
+  needs_review: boolean;
   order: number;
   overview: LocaleText;
   review_status?: {
@@ -90,6 +100,7 @@ export interface Course {
       approved_at: string;
       content_hash: string;
     }[];
+  source: string;
   title: LocaleText;
   topics: {
       id?: StableId;
@@ -117,8 +128,11 @@ export interface CourseManifest {
       title?: LocaleText;
       topic_count?: number;
     }[];
+  created_by: "dataset" | "ai" | "script";
   enums_ref: string;
   generated: string;
+  layer: Layer;
+  needs_review: boolean;
   review_status?: {
       field: string;
       locale?: string | null;
@@ -128,6 +142,7 @@ export interface CourseManifest {
       content_hash: string;
     }[];
   schema_version: string;
+  source: string;
 }
 
 /** One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. The id prefix names the section, and each section has its own required shape. */
@@ -224,8 +239,7 @@ export interface ExerciseRole {
 
 /** A group of items that behave alike (a conjugation class, a particle set, a semantic field), with the rule that governs the group. */
 export interface Family {
-  created_by: "ai";
-  description?: LocaleText | null;
+  created_by: "dataset" | "ai" | "script";
   governing_rule: LocaleText;
   id: number;
   importance_rank: number;
@@ -236,7 +250,6 @@ export interface Family {
       intra_order?: number;
       is_core?: boolean;
       member_type?: "grammar" | "kanji" | "vocab";
-      note?: LocaleText | null;
       ref?: string;
       slug?: StableId;
     }[];
@@ -310,9 +323,13 @@ export interface Grammar {
 /** One hiragana or katakana character and the family it belongs to. */
 export interface Kana {
   char: string;
+  created_by: "dataset" | "ai" | "script";
   family: string;
   family_label: LocaleText;
+  field_layers: Record<string, Layer>;
   id: StableId;
+  layer: Layer;
+  needs_review: boolean;
   review_status?: {
       field: string;
       locale?: string | null;
@@ -322,6 +339,7 @@ export interface Kana {
       content_hash: string;
     }[];
   romaji: string;
+  source: string;
   type: "base" | "dakuten" | "handakuten" | "long-vowel" | "sokuon" | "yoon";
 }
 
@@ -332,6 +350,7 @@ export type KanaFamily = Record<string, unknown>;
 export interface Kanji {
   character: string;
   components: string[];
+  created_by: "dataset" | "ai" | "script";
   example_sentences: string[];
   example_words: {
       gloss?: LocaleTextList;
@@ -341,18 +360,20 @@ export interface Kanji {
       vocab_id?: number;
     }[];
   families: string[];
+  field_layers: Record<string, Layer>;
   freq_rank: number | null;
   grade: number;
   id: number;
   irregular_note: LocaleText | null;
   kangxi_radical: number;
   kanjivg_ref: string;
+  layer: Layer;
   level: Level;
   level_agreement: string | null;
   level_confidence: number | null;
   level_sources: Record<string, unknown> | null;
   meanings: LocaleTextList;
-  notes?: LocaleText | null;
+  needs_review: boolean;
   radical_char: string;
   readings: {
       common?: boolean;
@@ -374,6 +395,7 @@ export interface Kanji {
       content_hash: string;
     }[];
   slug: StableId;
+  source: string;
   strokes: number;
   unicode: string;
 }
@@ -579,6 +601,7 @@ export interface Sentence {
       vocab_id?: number | null;
     }[];
   translation: LocaleText;
+  translation_layer?: Record<string, Layer>;
   translation_literal: LocaleText;
   vocab: {
       link_rule?: "lemma" | "ortho" | "run" | "token" | null;
@@ -648,7 +671,7 @@ export interface SpeakUnit {
   fluency: {
     items?: string[];
     kind?: "recap" | "situation";
-    prompt_pt?: string;
+    prompt?: LocaleText;
     seconds_target?: number;
     strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";
     zero_new_tokens?: boolean;
@@ -664,7 +687,7 @@ export interface SpeakUnit {
       accepted_variants?: string[];
       answer_key?: string;
       kind?: "on-topic" | "review" | "same-stage";
-      prompt_pt?: string;
+      prompt?: LocaleText;
       sentence?: string;
       strand?: "fluency" | "language-focused" | "meaning-input" | "meaning-output";
     }[];
@@ -755,8 +778,10 @@ export interface StrokeOrder {
 
 /** A block of lessons that closes one theme, and the items it unlocks. */
 export interface Topic {
+  created_by: "dataset" | "ai" | "script";
   family_ids: StableId[];
   id: StableId;
+  layer: Layer;
   lessons: {
       description?: LocaleText;
       id?: StableId;
@@ -774,6 +799,7 @@ export interface Topic {
         }[];
     }[];
   level: Level;
+  needs_review: boolean;
   objectives: LocaleText[];
   order: number;
   review_status?: {
@@ -784,6 +810,7 @@ export interface Topic {
       approved_at: string;
       content_hash: string;
     }[];
+  source: string;
   theme: string;
   title: LocaleText;
 }
@@ -946,7 +973,9 @@ export interface User {
 export interface Vocab {
   adj_class: "i_adj" | "na_adj" | null;
   common: boolean;
+  created_by: "dataset" | "ai" | "script";
   families: string[];
+  field_layers: Record<string, Layer>;
   forms: {
       form?: string;
       is_common?: boolean;
@@ -958,6 +987,7 @@ export interface Vocab {
   jmdict_ref: string;
   kana: string;
   kanji: string[];
+  layer: Layer;
   level: Level;
   level_agreement: string | null;
   level_confidence: number | null;
@@ -988,5 +1018,6 @@ export interface Vocab {
       register?: "archaic" | "colloquial" | "familiar" | "honorific" | "humble" | "polite" | "slang" | "vulgar"[] | null;
     }[];
   slug: StableId;
+  source: string;
   verb_class: "godan" | "ichidan" | "kuru_irregular" | "suru_irregular" | null;
 }

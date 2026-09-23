@@ -215,6 +215,9 @@ REF_BY_NAME = {
     "needs_review": "Provenance/properties/needs_review",
     "ai_generated": "Provenance/properties/ai_generated",
     "source": "Provenance/properties/source",
+    # W37: a curated enum (dataset | ai | script) declared once in common.schema.json. Left measured it
+    # would pin each entity to the values it happens to carry today (family: ["ai"], kanji: ["dataset"]).
+    "created_by": "Provenance/properties/created_by",
 }
 # Same idea, but these win even when the node has children: `level_sources` is an OPEN map whose keys
 # are whichever community lists were consulted (spec §1.5 expects that set to grow), so its measured
@@ -222,7 +225,13 @@ REF_BY_NAME = {
 # (Pointed at LevelTag's own property rather than straight at $defs/LevelSources — which is where that
 # property points — so build_manifest.py's ts_type() still recognises the tail and keeps emitting a real
 # TypeScript type for the field instead of `unknown`.)
-REF_BY_NAME_WITH_CHILDREN = {"level_sources": "LevelTag/properties/level_sources"}
+REF_BY_NAME_WITH_CHILDREN = {
+    "level_sources": "LevelTag/properties/level_sources",
+    # W37 / W40: open maps keyed by field path / locale, so their measured keys (`meanings`, `en`)
+    # must never become a closed property list: a new mixing field or a new locale is data.
+    "field_layers": "Provenance/properties/field_layers",
+    "translation_layer": "LocaleLayerMap",
+}
 
 # Fields whose value is the record's own public address.
 ID_FIELDS = {"slug", "id"}
@@ -354,9 +363,9 @@ _register({
             "prompt": {
                 "$ref": "common.schema.json#/$defs/LocaleText",
                 "description": "What the learner is shown. A locale object, never a bare "
-                               "`prompt_pt`: design/i18n.md records the PT-suffixed bare string on "
-                               "speak_unit as a contract violation and this field must not repeat "
-                               "it.",
+                               "`prompt_pt`: design/i18n.md recorded the PT-suffixed bare string on "
+                               "speak_unit as a contract violation (converted to `prompt` in W40) "
+                               "and this field must not repeat it.",
             },
             "accept": {
                 "type": "array",

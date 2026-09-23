@@ -141,6 +141,35 @@ def loc(pt=None, en=None):
     return o or None
 
 
+def lt_layer(con: sqlite3.Connection, etype: str, eid: int, field: str) -> str | None:
+    """The stored per-field layer of a record's pt-BR text (localized_text.layer), None if absent."""
+    r = con.execute("SELECT layer FROM localized_text WHERE entity_type=? AND entity_id=? AND field=? "
+                    "AND locale=?", (etype, eid, field, LOC)).fetchone()
+    return r[0] if r else None
+
+
+def reading_note_layer(con: sqlite3.Connection, kid: int) -> str | None:
+    r = con.execute("SELECT MIN(l.layer) FROM kanji_reading kr JOIN localized_text l ON "
+                    "l.entity_type='kanji_reading' AND l.entity_id=kr.id AND l.field='note' "
+                    "AND l.locale=? WHERE kr.kanji_id=?", (LOC, kid)).fetchone()
+    return r[0] if r else None
+
+
+def sense_gloss_layer(con: sqlite3.Connection, vid: int) -> str | None:
+    r = con.execute("SELECT MIN(l.layer) FROM vocab_sense s JOIN localized_text l ON "
+                    "l.entity_type='vocab_sense' AND l.entity_id=s.id AND l.field='gloss' "
+                    "AND l.locale=? WHERE s.vocab_id=?", (LOC, vid)).fetchone()
+    return r[0] if r else None
+
+
+def field_layers_of(*pairs: tuple[str | None, str], root: str) -> dict | None:
+    """W37 `field_layers`: {field path: layer} for the fields whose layer differs from the record's
+    root layer. Absent (None) when the root layer is the whole truth. Paths are shape paths:
+    every sub-record of a collection shares the layer, so `readings[].note` is stated once."""
+    out = {path: lay for lay, path in pairs if lay and lay != root}
+    return out or None
+
+
 def register_of(misc):
     if not misc:
         return None
@@ -182,11 +211,11 @@ def export_kanji(con: sqlite3.Connection) -> dict:
         records = []
         for k in con.execute(
             "SELECT id,slug,character,strokes,grade,freq_rank,unicode_cp,kanjivg_ref,kangxi_radical,radical_char,"
-            "meanings_en,level,level_confidence,level_agreement,level_sources "
+            "meanings_en,level,level_confidence,level_agreement,level_sources,source,created_by,layer "
             "FROM kanji WHERE level=? ORDER BY freq_rank IS NULL, freq_rank", (lvl,)
         ):
             (kid, slug, ch, strokes, grade, freq, cp, kvg, radical, rchar, men,
-             level, lconf, lagree, lsrc) = k
+             level, lconf, lagree, lsrc, ksrc, kby, klayer) = k
             # nanori are rare name-readings (KANJIDIC2) — kept for fidelity, flagged low-priority so the
             # UI can de-emphasize/hide them (this is what jisho does).
             # Per-reading enrichment (roadmap D): `note` is a pt-BR line on what the reading means and
@@ -244,13 +273,25 @@ def export_kanji(con: sqlite3.Connection) -> dict:
                 "strokes": strokes, "grade": grade, "freq_rank": freq, "unicode": cp,
                 "kanjivg_ref": kvg, "kangxi_radical": radical, "radical_char": rchar,
                 "meanings": loc(pt=L.get((kid, "meanings")), en=jloads(men)),
-                "notes": loc(pt=L.get((kid, "notes"))),
                 "readings": readings, "irregular_note": loc(pt=irr_note[0]) if irr_note else None,
                 "components": components,
                 "example_words": example_words, "example_sentences": example_sentences,
                 # Back-pointer into the family layer, so a family is reachable FROM its members
                 # (spec 1.7); without it all 396 families were graph orphans.
                 "families": FAMILY_OF.get(("kanji", kid), []),
+                # W37. The KANJIDIC2 record is Layer A; the fields hanging on it are not, and
+                # `field_layers` says which (APP_PLAN D13: per field where a record mixes layers).
+                # The pt-BR meanings are B, the example-word glosses are a copy of vocab's B gloss,
+                # the reading notes and the irregular note are C. `needs_review` at the root covers
+                # the one root-level C field (irregular_note); the reading notes carry their own flag.
+                "source": ksrc, "created_by": kby, "layer": klayer,
+                "field_layers": field_layers_of(
+                    (lt_layer(con, "kanji", kid, "meanings"), "meanings"),
+                    ("B" if any(w["gloss"] for w in example_words) else None, "example_words[].gloss"),
+                    (reading_note_layer(con, kid), "readings[].note"),
+                    (lt_layer(con, "kanji", kid, "irregular_note"), "irregular_note"),
+                    root=klayer),
+                "needs_review": irr_note is not None,
             }
             records.append(rec)
             men_pt = (L.get((kid, "meanings")) or jloads(men) or [])[:3]
@@ -276,11 +317,11 @@ def export_vocab(con: sqlite3.Connection) -> dict:
         records = []
         for v in con.execute(
             "SELECT id,slug,headword,kana,romaji,lexeme_type,verb_class,adj_class,common,jmdict_ref,"
-            "level,level_confidence,level_agreement,level_sources FROM vocab WHERE level=? "
-            "ORDER BY headword", (lvl,)
+            "level,level_confidence,level_agreement,level_sources,source,created_by,layer FROM vocab "
+            "WHERE level=? ORDER BY headword", (lvl,)
         ):
             (vid, slug, hw, kana, romaji, lex, vclass, aclass, common, jref,
-             level, lconf, lagree, lsrc) = v
+             level, lconf, lagree, lsrc, vsrc, vby, vlayer) = v
             senses = []
             for s in con.execute(
                     "SELECT id,sense_order,pos,field_tags,misc_tags,gloss_en,needs_review "
@@ -316,6 +357,12 @@ def export_vocab(con: sqlite3.Connection) -> dict:
                 "notes": loc(pt=VL.get((vid, "notes"))), "pitch": pitch, "forms": forms,
                 "senses": senses, "kanji": kanji,
                 "families": FAMILY_OF.get(("vocab", vid), []),
+                # W37. The JMdict record is Layer A; its pt-BR glosses (and the one pt-BR note) are B.
+                "source": vsrc, "created_by": vby, "layer": vlayer,
+                "field_layers": field_layers_of(
+                    (sense_gloss_layer(con, vid), "senses[].gloss"),
+                    (lt_layer(con, "vocab", vid, "notes"), "notes"),
+                    root=vlayer),
             }
             records.append(rec)
             g0 = senses[0]["gloss"] if senses else None
@@ -511,10 +558,10 @@ def export_families(con: sqlite3.Connection) -> int:
         fid, slug, ftype, rank, spans, needs_review, src, created_by, layer = f
         members = []
         for m in con.execute(
-            "SELECT member_type,member_id,intra_order,is_core,note_pt FROM family_member "
+            "SELECT member_type,member_id,intra_order,is_core FROM family_member "
             "WHERE family_id=? ORDER BY intra_order", (fid,)
         ):
-            mtype, mid, order, core, note = m
+            mtype, mid, order, core = m
             # `ref` stays the human-readable form (headword/character/key); `slug` is the ADDRESS.
             # 73 of the 1,652 vocab member refs are headwords shared by more than one record, so the
             # display form alone cannot be resolved; the slug can.
@@ -526,12 +573,12 @@ def export_families(con: sqlite3.Connection) -> int:
                 row = con.execute("SELECT key, slug FROM grammar_point WHERE id=?", (mid,)).fetchone()
             members.append({"member_type": mtype, "ref": row[0] if row else None,
                             "slug": row[1] if row else None,
-                            "id": mid, "intra_order": order, "is_core": bool(core),
-                            "note": loc(pt=note)})
+                            "id": mid, "intra_order": order, "is_core": bool(core)})
+        # W40: `description` and `members[].note` were declared LocaleText and null on every record
+        # (no localized_text row, no note_pt value); deleted rather than kept as dead scope rows.
         records.append({
             "id": fid, "slug": slug, "type": ftype,
             "label": loc(pt=L.get((fid, "label")), en=Len.get((fid, "label"))),
-            "description": loc(pt=L.get((fid, "description")), en=Len.get((fid, "description"))),
             "importance_rank": rank,
             "governing_rule": loc(pt=L.get((fid, "governing_rule")), en=Len.get((fid, "governing_rule"))),
             # spans_levels is DERIVED from the members, not read from the stored column: 16 families
@@ -559,7 +606,7 @@ def export_families(con: sqlite3.Connection) -> int:
         index_rows.append((slug, ftype, lbl, len(members)))
     jw(CORPUS / "families" / "families.json", records)
     lines = ["# Corpus — Families / groups", "",
-             f"_Generated {build_date()}. `label`/`description`/`governing_rule` = locale-objects "
+             f"_Generated {build_date()}. `label`/`governing_rule` = locale-objects "
              f"({LOC})._", "",
              "| family | type | label | #members |", "|--------|------|-------|---------:|"]
     for slug, ftype, label, n in index_rows:
@@ -655,6 +702,12 @@ def export_sentences(con: sqlite3.Connection) -> int:
             # whenever the sentence set changes) and is consumed by nothing — intentionally NOT exported.
             "slug": s["slug"], "jp": s["jp"], "kana": s["kana"], "romaji": s["romaji"],
             "translation": loc(pt=SL.get((sid, "translation")), en=s["en"] or SLen.get((sid, "translation"))),
+            # W40 (decision D-shape): the one field path whose en mixes layers. The sentence.en
+            # column is the Tatoeba/JEC anchor (A); a localized_text en is derived (B). Read apart,
+            # anchor first; omitted when there is no en at all (the 18 named exemptions).
+            **({"translation_layer": {"en": "A"}} if (s["en"] or "").strip()
+               else {"translation_layer": {"en": "B"}} if SLen.get((sid, "translation"))
+               else {}),
             "translation_literal": loc(pt=SL.get((sid, "translation_literal")), en=SLen.get((sid, "translation_literal"))),
             "level": s["level"],
             "provenance": {"jp_source": s["jp_source"], "pt_source": s["pt_source"],

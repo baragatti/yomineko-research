@@ -23,6 +23,9 @@
         "type": "string"
       }
     },
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "example_sentences": {
       "type": "array",
       "items": {
@@ -60,6 +63,9 @@
         "type": "string"
       }
     },
+    "field_layers": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/field_layers"
+    },
     "freq_rank": {
       "type": [
         "integer",
@@ -92,6 +98,9 @@
     "kanjivg_ref": {
       "type": "string"
     },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
     },
@@ -107,16 +116,8 @@
     "meanings": {
       "$ref": "common.schema.json#/$defs/LocaleTextList"
     },
-    "notes": {
-      "anyOf": [
-        {
-          "$ref": "common.schema.json#/$defs/LocaleText"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "description": "Authorable Layer-C prose. Empty on every record today; typed as the locale object it will hold rather than pinned to null."
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
     },
     "radical_char": {
       "type": "string"
@@ -257,6 +258,9 @@
     "slug": {
       "$ref": "common.schema.json#/$defs/StableId"
     },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
     "strokes": {
       "type": "integer",
       "minimum": 0
@@ -269,23 +273,28 @@
   "required": [
     "character",
     "components",
+    "created_by",
     "example_sentences",
     "example_words",
     "families",
+    "field_layers",
     "freq_rank",
     "grade",
     "id",
     "irregular_note",
     "kangxi_radical",
     "kanjivg_ref",
+    "layer",
     "level",
     "level_agreement",
     "level_confidence",
     "level_sources",
     "meanings",
+    "needs_review",
     "radical_char",
     "readings",
     "slug",
+    "source",
     "strokes",
     "unicode"
   ]

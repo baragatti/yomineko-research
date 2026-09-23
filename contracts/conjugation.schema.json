@@ -82,6 +82,9 @@
         "additionalProperties": false
       }
     },
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "headword": {
       "type": "string"
     },
@@ -99,6 +102,9 @@
         "owner": "producer",
         "source": "scripts/ingest/conjugate.py (VERB_FORMS vs ADJ_FORMS)"
       }
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
     },
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
@@ -166,6 +172,9 @@
     "slug": {
       "$ref": "common.schema.json#/$defs/StableId"
     },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
     "vocab_id": {
       "type": "integer",
       "minimum": 0
@@ -175,11 +184,14 @@
   "required": [
     "class",
     "conjugations",
+    "created_by",
     "headword",
     "kana",
     "kind",
+    "layer",
     "level",
     "slug",
+    "source",
     "vocab_id"
   ]
 }

@@ -17,14 +17,26 @@
     "char": {
       "type": "string"
     },
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "family": {
       "type": "string"
     },
     "family_label": {
       "$ref": "common.schema.json#/$defs/LocaleText"
     },
+    "field_layers": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/field_layers"
+    },
     "id": {
       "$ref": "common.schema.json#/$defs/StableId"
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
     },
     "review_status": {
       "type": "array",
@@ -89,6 +101,9 @@
     "romaji": {
       "type": "string"
     },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
     "type": {
       "type": "string",
       "enum": [
@@ -109,10 +124,15 @@
   "additionalProperties": false,
   "required": [
     "char",
+    "created_by",
     "family",
     "family_label",
+    "field_layers",
     "id",
+    "layer",
+    "needs_review",
     "romaji",
+    "source",
     "type"
   ]
 }

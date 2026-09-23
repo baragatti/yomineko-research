@@ -95,6 +95,10 @@ SUITE = [
                                                  # deprecated audit_lesson_hygiene.py, which read a
                                                  # stale staging dir — F5/STRUCT-08)
     ("validate_provenance_json.py", "code"),     # layer/source/ai_generated/needs_review semantics
+    # W40: design/i18n.md's scope tables as a gate: required en (ratcheted by
+    # research/reports/locale_parity_baseline.json), stale / undeclared rows, locale shape,
+    # translation_layer integrity, exemption liveness. Plant-proved on a copied tree (w40 apply report).
+    ("validate_locale_parity.py", "code"),       # required-en ratchet + R3-R7
     # W05: the >=3-sentences-per-word / >=5-per-grammar claim, over the EXPORT, as a gate. It was
     # two advisory lines in completeness_audit.py over db/corpus.sqlite for four phases; those two
     # lines now point here. Per-(level, kind) ratchet — growth fails.

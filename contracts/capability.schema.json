@@ -44,6 +44,9 @@
         "source": "design/learning_science.md R67"
       }
     },
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "exam_link": {
       "type": "array",
       "items": {
@@ -124,6 +127,9 @@
         "source": "design/courseware_architecture.md (capability kinds)"
       }
     },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
     "lessons": {
       "type": "array",
       "items": {
@@ -135,6 +141,9 @@
     },
     "name": {
       "$ref": "common.schema.json#/$defs/LocaleText"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
     },
     "review_status": {
       "type": "array",
@@ -195,6 +204,9 @@
         ],
         "additionalProperties": false
       }
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
     }
   },
   "additionalProperties": false,
@@ -202,12 +214,16 @@
     "can_do",
     "can_do_derived_from",
     "can_do_evidence",
+    "created_by",
     "exam_link",
     "grammar_keys",
     "id",
     "kind",
+    "layer",
     "lessons",
     "level",
-    "name"
+    "name",
+    "needs_review",
+    "source"
   ]
 }

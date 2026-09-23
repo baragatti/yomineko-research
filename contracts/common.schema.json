@@ -61,6 +61,22 @@
       "description": "Provenance layer (spec §1.1). A = authoritative, straight from an open dataset, zero AI, trustworthy blind. B = derived by AI and then machine-validated against A. C = pedagogy: AI-authored, research-grounded, and never trustworthy without a human teacher's sign-off. A reviewer must be able to audit C selectively and skip A entirely, which is only possible if the layer is recorded per record."
     },
 
+    "FieldLayers": {
+      "type": "object",
+      "description": "W37 (APP_PLAN D13: layer per field where a record mixes layers). Maps a field path of this record to that field's layer where it differs from the record's root `layer`: `{\"meanings\": \"B\", \"readings[].note\": \"C\"}` under a root `layer: \"A\"`. Paths are shape paths, `[]` for a collection: every sub-record of a collection shares the layer. The layer is that of the field's authored locale content (pt-BR); the layer of an `en` is the constant in design/i18n.md's scope table, or `translation_layer` where it varies per record. Absent means the root layer is the whole truth. A Layer-C field makes its record (or, for a collection path, its sub-records) carry needs_review. Shape pending owner sign-off (PENDING B-W37); reversible.",
+      "propertyNames": { "pattern": "^[a-z_]+(\\[\\])?(\\.[a-z_]+(\\[\\])?)*$" },
+      "additionalProperties": { "$ref": "#/$defs/Layer" },
+      "minProperties": 1
+    },
+
+    "LocaleLayerMap": {
+      "type": "object",
+      "description": "Per-locale provenance for the sibling LocaleText field named by dropping `_layer` (W40, decision D-shape; today only sentence.translation_layer). Present only where a field's layer varies per record; where it is constant for a field path, the constant is recorded in design/i18n.md's locale scope table instead of being repeated in every record. A key here MUST have a matching key in the sibling LocaleText, and `C` never appears (a translation is evidence or a sibling, never pedagogy; validate_locale_parity.py R6).",
+      "propertyNames": { "$ref": "#/$defs/Locale" },
+      "additionalProperties": { "$ref": "#/$defs/Layer" },
+      "minProperties": 1
+    },
+
     "Locale": {
       "type": "string",
       "pattern": "^[a-z]{2}(-[A-Za-z0-9]+)?$",
@@ -70,7 +86,7 @@
 
     "Provenance": {
       "type": "object",
-      "description": "Where a record came from and how far it can be trusted. These keys are OPTIONAL and unevenly adopted: most entities carry none of them at the record root (kanji, vocab, family, conjugation, kana, capability, course, topic and the stroke sets do not), `sentence` carries ai_generated/needs_review nested under its own `provenance` object, `lesson` carries needs_review alone, and reading plus the two generated exercise families carry source+layer+needs_review together. contracts/manifest.json lists what each entity actually has. Where a key does appear it means this and nothing else — that uniformity is what is enforced, not the presence.",
+      "description": "Where a record came from and how far it can be trusted (spec §1.1: every record carries a source and belongs to one layer). The rule is enforced per entity by scripts/validate/validate_provenance_json.py: an entity pinned in its REQUIRED_PROVENANCE must carry the pinned keys on every record (since W37: exam_item, kanji, vocab, conjugation, kana, kana_family, capability, topic, course, course_manifest), an entity listed in NO_PROVENANCE is exempt with its reason (review_ledger, capability_lesson_map), and every other entity is held to what its own records carry. Not yet pinned (W37b): sentence (ai_generated/needs_review nested under its own `provenance` object), grammar, lesson, the stroke sets and the speaking path. Where a record mixes layers, `field_layers` names the fields that differ from the root layer. Where a key appears it means this and nothing else.",
       "properties": {
         "source": {
           "type": "string",
@@ -78,6 +94,12 @@
           "description": "The dataset or derivation that produced this record. Free text scoped to its entity (a stroke record says `kanjialive`, an exam item says `sentence+vocab`), because the meaningful vocabulary differs per family."
         },
         "layer": { "$ref": "#/$defs/Layer" },
+        "created_by": {
+          "type": "string",
+          "enum": ["dataset", "ai", "script"],
+          "description": "Who wrote the record root. `dataset`: an open dataset (KANJIDIC2, JMdict, Tatoeba...) wrote it and it is Layer A. `ai`: a model authored it. `script`: a deterministic builder computed it (a conjugation from rules, a gojuon row, a course-chain projection). A curated vocabulary, not a measured one: a new value is a decision recorded here. It describes the record ROOT; a field authored differently is stated in `field_layers`."
+        },
+        "field_layers": { "$ref": "#/$defs/FieldLayers" },
         "needs_review": {
           "type": "boolean",
           "description": "A human teacher has not signed this off yet. ALWAYS true for Layer C (spec §1.1). Must be a real boolean: it was once written as 1/0 in four families, and a consumer comparing against `true` read those as reviewed."

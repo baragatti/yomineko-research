@@ -136,8 +136,8 @@
             "source": "contracts/_shapes.json — no design document or producer owns this field, and the observed set is small, closed and free of prose, ids and paths."
           }
         },
-        "prompt_pt": {
-          "type": "string"
+        "prompt": {
+          "$ref": "common.schema.json#/$defs/LocaleText"
         },
         "seconds_target": {
           "type": "integer",
@@ -220,8 +220,8 @@
               "source": "contracts/_shapes.json — no design document or producer owns this field, and the observed set is small, closed and free of prose, ids and paths."
             }
           },
-          "prompt_pt": {
-            "type": "string"
+          "prompt": {
+            "$ref": "common.schema.json#/$defs/LocaleText"
           },
           "sentence": {
             "type": "string"

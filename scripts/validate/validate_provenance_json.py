@@ -54,6 +54,12 @@ exported rather than the day someone remembers to add it here.
      expectation is INFERRED, exactly as it is at the root, so a new nested flag is covered the
      day it is exported rather than the day someone remembers to add it here.
 
+  h) W37. `created_by` is one of dataset / ai / script. `field_layers` (layer per field where a record
+     mixes layers, APP_PLAN D13) holds A/B/C values that differ from the root layer, names only
+     fields the record carries, and a Layer-C field makes its carriers need review (rule b, one
+     level down). A record the gate cannot read as an object is a failure, not an empty record;
+     entities without provenance by decision are listed in NO_PROVENANCE and asserted to carry none.
+
 Reads the exported JSON only. Never db/corpus.sqlite.
 Exit 1 on any failure. Usage: validate_provenance_json.py [--root PATH] [--list]
 """
@@ -71,15 +77,34 @@ REPO = Path(__file__).resolve().parents[2]
 MIGRATION = REPO / "scripts" / "contracts" / "migrate_exam_banks_p7.py"
 
 MAX_REPORT = 15
-FIELDS = ("layer", "source", "needs_review", "ai_generated")
+FIELDS = ("layer", "source", "created_by", "needs_review", "ai_generated")
 BOOL_FIELDS = ("needs_review", "ai_generated")
 LAYERS = {"A", "B", "C"}
+# W37: a curated vocabulary (contracts/common.schema.json Provenance.created_by), never measured.
+CREATED_BY = {"dataset", "ai", "script"}
 
 # Entities whose provenance set is PINNED rather than inferred. Pinning matters where a whole file
 # could lose a field at once: inference would then read the absence as "this entity does not carry it".
+_A_ROOT = ("source", "layer", "created_by")
+_C_ROOT = ("source", "layer", "created_by", "needs_review")
 REQUIRED_PROVENANCE: dict[str, tuple[str, ...]] = {
     # Spec §1.1 applied to the exam banks, which is what the 2026-08 migration backfilled.
     "exam_item": ("source", "layer", "ai_generated", "needs_review"),
+    # W37: the ten entities that carried none; the index held most of it and the exporter dropped it.
+    # A Layer-C root also pins needs_review (rule b makes it true).
+    "kanji": _A_ROOT, "vocab": _A_ROOT, "conjugation": _A_ROOT, "kana": _A_ROOT, "kana_family": _A_ROOT,
+    "capability": _C_ROOT, "topic": _C_ROOT, "course": _C_ROOT, "course_manifest": _C_ROOT,
+}
+
+# Content entities that carry NO provenance by decision. The gate asserts they carry none (a record
+# that grows a flag here is a new claim nobody reviewed) and never reads them as empty records.
+NO_PROVENANCE: dict[str, str] = {
+    "review_ledger": "the W06 approval sidecar records human verdicts ABOUT other records; it is not "
+                     "corpus content, and a layer of its own would make the approval mechanism claim to "
+                     "be the thing it audits (W37 report §6.3)",
+    "capability_lesson_map": "a derived projection: each value is the list of capability ids a lesson "
+                             "introduces, a join of two records that both carry provenance (capability, "
+                             "lesson); duplicating it onto the join adds noise, not truth (W37 §7.2)",
 }
 
 # Entities where a provenance field is legitimately present on some records and absent on others.
@@ -127,7 +152,15 @@ def records_of(path: Path, packing: str, rel: str):
         yield rel, data
     elif packing == "map":
         for k, v in data.items():
-            yield f"{rel}[{k}]", v if isinstance(v, dict) else {}
+            if isinstance(v, list) and v and all(isinstance(x, dict) for x in v):
+                # W37: a map of object lists (kana_family: script -> its families). The objects are
+                # the records; reading the list as one empty record checked nothing on 57 of them.
+                for i, x in enumerate(v):
+                    yield f"{rel}[{k}][{x.get('id') or i}]", x
+            else:
+                # A non-object value is yielded AS IS, so main() can refuse it instead of silently
+                # counting it as an empty record (the pre-W37 behaviour on 266 + 2 records).
+                yield f"{rel}[{k}]", v
     else:
         for i, rec in enumerate(data):
             if not isinstance(rec, dict):
@@ -192,12 +225,32 @@ def main() -> int:
             continue
         seen: list[tuple[str, dict]] = []
         declared: set[str] = set()
+        exempt = NO_PROVENANCE.get(entity)
+        n_exempt = 0
         for path in sorted(root.glob(glob)):
             rel = path.relative_to(root).as_posix()
             for locator, rec in records_of(path, packing, rel):
+                if exempt:
+                    # W37: exempt by decision, so assert the decision holds: no provenance at all.
+                    n_exempt += 1
+                    if isinstance(rec, dict) and prov_view(rec):
+                        fails.append(f"{entity}: {locator}: carries {sorted(prov_view(rec))} but the "
+                                     f"entity is in NO_PROVENANCE ({exempt[:60]}...)")
+                    continue
+                if not isinstance(rec, dict):
+                    # W37 gate change 4: a record the gate cannot read is a failure, never an empty
+                    # record that silently passes every rule.
+                    fails.append(f"{entity}: {locator}: record is a {type(rec).__name__}, not an object; "
+                                 f"its provenance cannot be checked (reshape it or add the entity to "
+                                 f"NO_PROVENANCE with the reason)")
+                    continue
                 view = prov_view(rec)
                 seen.append((locator, rec))
                 declared |= {q for q, _ in view.values()}
+        if exempt:
+            total_records += n_exempt
+            rows.append((entity, n_exempt, 0, 0, 0, 0, 0, 0, 0))
+            continue
         if not seen:
             continue
 
@@ -285,6 +338,45 @@ def main() -> int:
             if "layer" in get and get["layer"] not in LAYERS:
                 n_layer += 1
                 fails.append(f"{entity}: {locator}: layer {get['layer']!r} is not one of A/B/C")
+            # W37 gate change 5: created_by is a curated enum, checked here, not measured.
+            if "created_by" in get and get["created_by"] not in CREATED_BY:
+                n_layer += 1
+                fails.append(f"{entity}: {locator}: created_by {get['created_by']!r} is not one of "
+                             f"{sorted(CREATED_BY)}")
+            # W37 gate change 3: rule (b) extended to the per-field layers. A Layer-C field under a
+            # Layer-A root is still pedagogy, so the record (for a root field) or every sub-record
+            # carrying the field (for a `coll[].field` path) must be flagged; and every path must
+            # name a field the record actually carries, or the map is a stale claim.
+            fl = rec.get("field_layers")
+            if fl is not None:
+                if not isinstance(fl, dict) or not fl:
+                    n_layer += 1
+                    fails.append(f"{entity}: {locator}: field_layers must be a non-empty object")
+                    fl = {}
+                for fpath, lay in fl.items():
+                    if lay not in LAYERS:
+                        n_layer += 1
+                        fails.append(f"{entity}: {locator}: field_layers[{fpath!r}] = {lay!r} is not A/B/C")
+                        continue
+                    if lay == get.get("layer"):
+                        n_layer += 1
+                        fails.append(f"{entity}: {locator}: field_layers[{fpath!r}] repeats the root layer")
+                    coll, sep, sub_f = fpath.partition("[].")
+                    if sep:
+                        carriers = [s for s in rec.get(coll) or [] if isinstance(s, dict)
+                                    and s.get(sub_f) is not None]
+                        unflagged = [s for s in carriers if s.get("needs_review") is not True]
+                    else:
+                        carriers = [rec] if rec.get(fpath.rstrip("[]")) not in (None, [], {}) else []
+                        unflagged = carriers if get.get("needs_review") is not True else []
+                    if not carriers:
+                        n_layer += 1
+                        fails.append(f"{entity}: {locator}: field_layers names {fpath!r}, which the "
+                                     f"record does not carry")
+                    elif lay == "C" and unflagged:
+                        n_c += 1
+                        fails.append(f"{entity}: {locator}: field_layers[{fpath!r}] is C but "
+                                     f"{len(unflagged)} carrier(s) lack needs_review true")
             for f in sorted(expected - set(get)):
                 n_missing += 1
                 where = qualify.get(f, f)
@@ -337,6 +429,9 @@ def main() -> int:
     for entity, optouts in PARTIAL_PROVENANCE.items():
         if entity not in {r[0] for r in rows}:
             fails.append(f"PARTIAL_PROVENANCE names entity {entity!r}, which exported no records")
+    for entity in NO_PROVENANCE:
+        if entity not in {r[0] for r in rows}:
+            fails.append(f"NO_PROVENANCE names entity {entity!r}, which exported no records")
 
     print("============== PROVENANCE GATE ==============")
     print(f"  {'entity':22} {'records':>7} {'nested':>7} {'flagged':>8} {'ai&!rev':>8} "

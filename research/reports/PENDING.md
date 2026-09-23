@@ -253,6 +253,7 @@ Detail: scripts/export/pattern_forms.py (the matcher and its runnable proof); th
 - **Also for your eye:** 250 Layer-A kanji were stamped `created_by: ai` with `needs_review`
   cleared by a script no longer tracked (P5b, 2026-06). The apply resets them from the ingest
   table; if that script's intent was different, say so.
+- **Applied with the defaults (2026-09-23, C8):** builder literals are Layer C (`created_by: script` on kana, whose labels sit in `field_layers`); `field_layers` is the shape; the 250 kanji now read `created_by: dataset`. Their DB `needs_review` stays 0 and the kanji root flag now means only "a root Layer-C field (irregular_note) awaits review"; whether the 250 meanings return to unreviewed is still yours. All three are reversible by an exporter edit.
 
 ### B-W40. English for Layer-B/C pedagogy: author ~20,300 strings now, or defer (2026-09-23)
 **Finding.** The i18n design made `en` required on every localized field. Re-measured, the gap is

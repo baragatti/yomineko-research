@@ -292,6 +292,11 @@ def main() -> int:
         print(f"build_capabilities: {len(fails)} failure(s); nothing written")
         return 1
 
+    # W37. A capability is course semantics (a syllabus grouping plus an authored can_do), Layer C, so
+    # it is flagged for a teacher. lesson_map.json is a join of this registry with the lesson unlocks
+    # and carries no provenance of its own (validate_provenance_json NO_PROVENANCE says why).
+    for cap in registry:
+        cap.update({"source": "capability-registry", "created_by": "ai", "layer": "C", "needs_review": True})
     (OUT / "registry.json").write_text(json.dumps(registry, ensure_ascii=False, indent=1), encoding="utf-8")
     (OUT / "lesson_map.json").write_text(json.dumps(lesson_map, ensure_ascii=False, indent=1), encoding="utf-8")
     kinds = defaultdict(int)

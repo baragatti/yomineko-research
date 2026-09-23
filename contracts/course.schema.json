@@ -14,11 +14,20 @@
   },
   "type": "object",
   "properties": {
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "id": {
       "$ref": "common.schema.json#/$defs/StableId"
     },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
     },
     "order": {
       "type": "integer",
@@ -87,6 +96,9 @@
         "additionalProperties": false
       }
     },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
     "title": {
       "$ref": "common.schema.json#/$defs/LocaleText"
     },
@@ -143,10 +155,14 @@
   },
   "additionalProperties": false,
   "required": [
+    "created_by",
     "id",
+    "layer",
     "level",
+    "needs_review",
     "order",
     "overview",
+    "source",
     "title",
     "topics"
   ]

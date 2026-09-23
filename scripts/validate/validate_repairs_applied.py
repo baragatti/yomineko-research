@@ -1783,7 +1783,99 @@ def handle_w24_capabilities(rows, sents, gram, table):
     return out
 
 
+EXPORT_ROOT: dict[str, Path] = {}
+_PROV_RECORDS: dict[str, dict[str, dict]] = {}
+
+
+def prov_records(entity: str) -> dict[str, dict]:
+    """The exported records of one manifest entity, keyed by public address (slug / id, or the file
+    for a single-record file). A map-packed entity whose values are lists of objects (kana_family) is
+    keyed by the objects' own ids."""
+    if not _PROV_RECORDS:
+        root = EXPORT_ROOT["root"]
+        for ent in json.loads((root / "contracts" / "manifest.json").read_text(encoding="utf-8"))["entities"]:
+            if not ent.get("files"):
+                continue
+            out: dict[str, dict] = {}
+            for p in sorted(root.glob(ent["files"])):
+                data = json.loads(p.read_text(encoding="utf-8"))
+                if ent.get("packing") == "single":
+                    recs = [data]
+                elif ent.get("packing") == "map":
+                    recs = [x for v in data.values() for x in (v if isinstance(v, list) else [v])]
+                else:
+                    recs = data
+                for r in recs:
+                    if isinstance(r, dict):
+                        out[str(r.get("slug") or r.get("id") or p.relative_to(root).as_posix())] = r
+            _PROV_RECORDS[ent["entity"]] = out
+    return _PROV_RECORDS.get(entity, {})
+
+
+def handle_provenance_backfill(rows, sents, gram, table):
+    """W37. The export publishes exactly the derived provenance: a record row (`field: null`) is the
+    record root's layer / source / created_by (and needs_review where the row carries one); a field
+    row is one `field_layers` entry. Derived from the index by scripts/derive_provenance_backfill.py,
+    so a disagreement means an exporter path went quiet or the index moved."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['entity']} {r['id']} / {r['field'] or '(record)'}"
+        rec = prov_records(r["entity"]).get(r["id"])
+        if rec is None:
+            out.append(("fail", C_NO_RECORD, addr, "no such record in the export"))
+            continue
+        if r["field"] is None:
+            keys = ["layer", "source", "created_by"] + (["needs_review"] if "needs_review" in r else [])
+            bad = next((k for k in keys if rec.get(k) != r[k]), None)
+            if bad:
+                out.append(("fail", C_NO_FIELD if bad not in rec else C_VALUE_MISMATCH, addr,
+                            f"{bad} is {rec.get(bad)!r}, the row's is {r[bad]!r}"))
+                continue
+        else:
+            got = (rec.get("field_layers") or {}).get(r["field"])
+            if got != r["layer"]:
+                out.append(("fail", C_NO_FIELD if got is None else C_VALUE_MISMATCH, addr,
+                            f"field_layers[{r['field']!r}] is {got!r}, the row's is {r['layer']!r}"))
+                continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
+def handle_en_backfill(rows, sents, gram, table):
+    """W40 (derivable half). Each derived `en` is published on the export locale object the row
+    addresses, beside the pt-BR it was derived from. Sentence rows go through localized_text
+    (scripts/apply_en_backfill.py); kana rows are the build_kana.py template."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['id']} {r['locator'] or ''}.{r['field']}"
+        if r["entity"] == "sentence":
+            rec = sents.get(r["id"])
+            coll, _, idx = (r["locator"] or "").partition("[")
+            sub = None
+            if rec is not None and idx:
+                items = rec.get(coll) or []
+                j = int(idx.rstrip("]"))
+                sub = items[j] if j < len(items) else None
+            obj = (sub or {}).get(r["field"].split("].")[-1]) if sub is not None else None
+        else:
+            rec = prov_records(r["entity"]).get(r["id"])
+            obj = (rec or {}).get(r["field"])
+        if rec is None or not isinstance(obj, dict):
+            out.append(("fail", C_NO_RECORD, addr, "the addressed locale object is not in the export"))
+            continue
+        if obj.get("pt-BR") != r["pt"] or obj.get("en") != r["en"]:
+            cls = C_NOT_APPLIED if "en" not in obj else C_VALUE_MISMATCH
+            out.append(("fail", cls, addr, f"export is {obj!r}, the row's is pt {r['pt']!r} / en {r['en']!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
+    # W37: record provenance + per-field layers on the ten entities that carried none.
+    "provenance_backfill.json": handle_provenance_backfill,
+    # W40: the derivable half of the en backfill (translation memory + JMdict joins + kana template).
+    "en_backfill_derived.json": handle_en_backfill,
     # W29: kana cards one glyph per card (57 family cards -> 211 glyph cards, derived keys).
     "kana_cards.json": handle_kana_cards,
     # W28: each SRS card's example sentence + cloze span (selected from the bank, not authored).
@@ -1865,6 +1957,7 @@ def main() -> int:
     if len(present) < MIN_TABLES:
         die(f"{len(present)} repair tables, floor is {MIN_TABLES}")
 
+    EXPORT_ROOT["root"] = root
     sents, gram, ncourse = load_export(root)
     print(f"export: {len(sents)} sentences, {len(gram)} grammar points, {ncourse} course files "
           f"(root {root})")

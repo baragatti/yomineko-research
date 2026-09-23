@@ -37,7 +37,8 @@ def main() -> int:
     shi_id = shi[0] if shi else None
     # 1) vocab row
     cur.execute("UPDATE vocab SET headword='看護師', kana='かんごし', romaji='kangoshi', "
-                "slug='vocab:1928100', jmdict_ref='1928100', notes_pt=?, needs_review=1 WHERE id=?", (NOTE, vid))
+                "slug='vocab:1928100', jmdict_ref='1928100', source='jmdict:1928100', notes_pt=?, "
+                "needs_review=1 WHERE id=?", (NOTE, vid))  # W37: source follows the entry it now is
     # notes (export reads localized_text entity_type='vocab', field='notes')
     cur.execute("DELETE FROM localized_text WHERE entity_type='vocab' AND entity_id=? AND field='notes'", (vid,))
     cur.execute("INSERT INTO localized_text (entity_type,entity_id,field,locale,value,is_list,layer) "

@@ -54,6 +54,8 @@ def main() -> int:
                 "vocab_id": vid, "slug": slug, "headword": hw, "kana": kana, "level": lvl,
                 "kind": kind, "class": vclass or aclass,
                 "conjugations": [{"form": k, **forms[k]} for k in order if k in forms],
+                # W37: computed by rule from a Layer-A record, so the forms are Layer A too.
+                "source": "derived:conjugation-rules", "created_by": "script", "layer": "A",
             })
         OUT.mkdir(parents=True, exist_ok=True)
         (OUT / f"{lvl}.json").write_text(

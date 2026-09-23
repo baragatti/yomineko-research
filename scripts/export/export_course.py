@@ -549,6 +549,10 @@ def _topic_family_ids(con) -> dict:
 def export_manifest(con, outline, stubs) -> None:
     """Emit the required-layer manifest tiers: course/manifest.json -> <level>/course.json -> topic.json."""
     fam_ids = _topic_family_ids(con)
+    # W37: the provenance the index has always held on topic / course_module, published.
+    prov = {r[0]: {"source": r[1], "created_by": r[2], "layer": r[3], "needs_review": bool(r[4])}
+            for r in con.execute("SELECT slug,source,created_by,layer,needs_review FROM topic UNION ALL "
+                                 "SELECT slug,source,created_by,layer,needs_review FROM course_module")}
     courses = []
     for mod in outline:
         lvl = mod["level"]
@@ -567,19 +571,22 @@ def export_manifest(con, outline, stubs) -> None:
                 (td / "topic.json").write_text(json.dumps(
                     {"id": tslug, "order": tord, "level": lvl, "title": {LOC: t["title"]}, "theme": t["theme"],
                      "objectives": [{LOC: o} for o in t["objectives"]],
-                     "family_ids": fam_ids.get(tslug, []), "lessons": lst},
+                     "family_ids": fam_ids.get(tslug, []), "lessons": lst, **prov[tslug]},
                     ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         (COURSE / lvl).mkdir(parents=True, exist_ok=True)
         (COURSE / lvl / "course.json").write_text(json.dumps(
             {"id": mod["slug"], "level": lvl, "order": mod["order"], "title": {LOC: mod["title"]},
-             "overview": {LOC: mod["overview"]}, "topics": course_topics},
+             "overview": {LOC: mod["overview"]}, "topics": course_topics, **prov[mod["slug"]]},
             ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         courses.append({"id": mod["slug"], "level": lvl, "order": mod["order"], "title": {LOC: mod["title"]},
                         "path": f"{lvl}/course.json", "topic_count": len(mod["topics"]),
                         "lesson_count": mod_lessons})
     (COURSE / "manifest.json").write_text(json.dumps(
         {"schema_version": "1.0", "generated": _dt_today, "courses": courses,
-         "enums_ref": "design/unlock_enums.json"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+         "enums_ref": "design/unlock_enums.json",
+         # W37: a projection of the course chain; its titles are copies of the Layer-C module titles.
+         "source": "derived:course-chain", "created_by": "script", "layer": "C", "needs_review": True},
+        ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def main() -> int:

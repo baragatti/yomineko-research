@@ -36,11 +36,17 @@
     "common": {
       "type": "boolean"
     },
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "families": {
       "type": "array",
       "items": {
         "type": "string"
       }
+    },
+    "field_layers": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/field_layers"
     },
     "forms": {
       "type": "array",
@@ -81,6 +87,9 @@
       "items": {
         "type": "string"
       }
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
     },
     "level": {
       "$ref": "common.schema.json#/$defs/Level"
@@ -289,6 +298,9 @@
     "slug": {
       "$ref": "common.schema.json#/$defs/StableId"
     },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
+    },
     "verb_class": {
       "anyOf": [
         {
@@ -315,13 +327,16 @@
   "required": [
     "adj_class",
     "common",
+    "created_by",
     "families",
+    "field_layers",
     "forms",
     "headword",
     "id",
     "jmdict_ref",
     "kana",
     "kanji",
+    "layer",
     "level",
     "level_agreement",
     "level_confidence",
@@ -333,6 +348,7 @@
     "romaji",
     "senses",
     "slug",
+    "source",
     "verb_class"
   ]
 }

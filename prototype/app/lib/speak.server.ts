@@ -18,8 +18,8 @@ interface RawUnit {
   words: string[]; patterns: string[]; kanji_recognition: string[];
   checkpoint?: RawCheckpoint[];
   drills?: { pattern: string; examples: string[] }[];
-  production?: { prompt_pt: string; answer_key: string; accepted_variants: string[]; sentence: string }[];
-  fluency?: { prompt_pt: string; items: string[]; seconds_target: number } | null;
+  production?: { prompt: Record<string, string>; answer_key: string; accepted_variants: string[]; sentence: string }[];
+  fluency?: { prompt: Record<string, string>; items: string[]; seconds_target: number } | null;
   strands?: Record<string, number>;
   real_phrases: number; cumulative_known_vocab: number;
 }
@@ -85,7 +85,7 @@ export function gradeProduction(stageKey: string, order: number, answers: Record
     // accepted_variants already covers punctuation/spacing; strip() is the last-resort comparison so a
     // learner is never failed for a mark their IME did not produce.
     const ok = !!given && (p.accepted_variants.includes(given) || strip(given) === strip(p.answer_key));
-    return { key: `p${i + 1}`, promptPt: p.prompt_pt, given, expected: p.answer_key, correct: ok };
+    return { key: `p${i + 1}`, promptPt: p.prompt["pt-BR"] ?? "", given, expected: p.answer_key, correct: ok };
   });
   return { total: out.length, right: out.filter((x) => x.correct).length, items: out };
 }
@@ -211,9 +211,9 @@ export function getUnit(stageKey: string, order: number): SpeakUnit | null {
       examples: d.examples.map(phrase).filter(Boolean) as { jp: string; pt: string }[],
     })),
     // The answer key is deliberately NOT in this payload; only the pt-BR prompt crosses the wire.
-    production: (u.production ?? []).map((p, i) => ({ key: `p${i + 1}`, promptPt: p.prompt_pt })),
+    production: (u.production ?? []).map((p, i) => ({ key: `p${i + 1}`, promptPt: p.prompt["pt-BR"] ?? "" })),
     fluency: u.fluency
-      ? { promptPt: u.fluency.prompt_pt, seconds: u.fluency.seconds_target,
+      ? { promptPt: u.fluency.prompt["pt-BR"] ?? "", seconds: u.fluency.seconds_target,
           items: u.fluency.items.map(phrase).filter(Boolean) as { jp: string; pt: string }[] }
       : null,
     strands: u.strands ?? {},

@@ -60,6 +60,13 @@ YOON = [
 ]
 
 
+# W37. The gojūon records are Layer A (a linguistic fact, computed here by rule). The family label is
+# pt-BR prose this builder writes, the course's own name for a teaching group: Layer C under the
+# W37 §6.1 ruling (default; owner sign-off pending as PENDING B-W37), so the record is flagged.
+PROVENANCE = {"source": "unicode-gojuon", "created_by": "script", "layer": "A",
+              "field_layers": {"family_label": "C"}, "needs_review": True}
+
+
 def to_kata(hira: str) -> str:
     return "".join(chr(ord(c) + 0x60) if "ぁ" <= c <= "ゖ" else c for c in hira)
 
@@ -101,6 +108,12 @@ def main() -> int:
     for script, row, lbl, ktype, order, members in build_rows():
         fid = f"kana:{script}-{row}"
         label = f"Família do {lbl}" if ktype in ("base", "dakuten", "handakuten", "yoon") else lbl
+        # W40: the en is the same template over the neutral row name (research/derived/repairs/
+        # en_backfill_derived.json, rule kana-family-template); the sokuon label has no Portuguese
+        # in it, so its en is the label itself. The chouon label has no en yet (W40 residue).
+        label_en = (f"{lbl} family" if ktype in ("base", "dakuten", "handakuten", "yoon")
+                    else lbl if ktype == "sokuon" else None)
+        label_obj = {"pt-BR": label, **({"en": label_en} if label_en else {})}
         cur.execute("INSERT INTO kana_family (id, script, row, label_pt, kana_type, ord) VALUES (?,?,?,?,?,?)",
                     (fid, script, row, label, ktype, order))
         fam_members = []
@@ -110,10 +123,11 @@ def main() -> int:
                         "VALUES (?,?,?,?,?,?,?)", (kid, char, script, rom, fid, ktype, order * 10 + i))
             fam_members.append({"id": kid, "char": char, "romaji": rom})
             kana_json[script].append({"id": kid, "char": char, "romaji": rom, "family": fid,
-                                      "family_label": {"pt-BR": label}, "type": ktype})
+                                      "family_label": label_obj, "type": ktype, **PROVENANCE})
             nk += 1
-        fam_json[script].append({"id": fid, "label": {"pt-BR": label}, "row": row, "type": ktype,
-                                 "order": order, "members": fam_members})
+        fam_json[script].append({"id": fid, "label": label_obj, "row": row, "type": ktype,
+                                 "order": order, "members": fam_members,
+                                 **{**PROVENANCE, "field_layers": {"label": "C"}}})
     con.commit()
     OUT.mkdir(parents=True, exist_ok=True)
     for script in ("hiragana", "katakana"):

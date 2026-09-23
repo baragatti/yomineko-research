@@ -368,7 +368,7 @@
                 "properties": {
                   "prompt": {
                     "$ref": "common.schema.json#/$defs/LocaleText",
-                    "description": "What the learner is shown. A locale object, never a bare `prompt_pt`: design/i18n.md records the PT-suffixed bare string on speak_unit as a contract violation and this field must not repeat it."
+                    "description": "What the learner is shown. A locale object, never a bare `prompt_pt`: design/i18n.md recorded the PT-suffixed bare string on speak_unit as a contract violation (converted to `prompt` in W40) and this field must not repeat it."
                   },
                   "accept": {
                     "type": "array",

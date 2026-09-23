@@ -50,6 +50,9 @@
         "additionalProperties": false
       }
     },
+    "created_by": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/created_by"
+    },
     "enums_ref": {
       "type": "string"
     },
@@ -58,6 +61,12 @@
       "format": "date",
       "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
       "description": "The date this artifact was exported. Was once enumed to the day it happened to be built, which failed the gate on every later export."
+    },
+    "layer": {
+      "$ref": "common.schema.json#/$defs/Layer"
+    },
+    "needs_review": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/needs_review"
     },
     "review_status": {
       "type": "array",
@@ -123,13 +132,20 @@
       "type": "string",
       "pattern": "^\\d+\\.\\d+$",
       "description": "MAJOR.MINOR of the record format. A version field exists to be bumped; an enum over the current value means it never can be."
+    },
+    "source": {
+      "$ref": "common.schema.json#/$defs/Provenance/properties/source"
     }
   },
   "additionalProperties": false,
   "required": [
     "courses",
+    "created_by",
     "enums_ref",
     "generated",
-    "schema_version"
+    "layer",
+    "needs_review",
+    "schema_version",
+    "source"
   ]
 }
