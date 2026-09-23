@@ -1,0 +1,2782 @@
+{
+ "what_this_is": "Every auto-built exam item at HEAD 8b0868af whose distractor set holds an option that is as right as the key, with the equivalence table that catches them and the builder patch that refuses them (research/derived/patches/exam_equivalence_filter.patch).",
+ "status": "pending: nothing applied. Applying = `git apply` the patch, then rebuild the banks in W18 order (authored, listening, reading_comp, then build_exam_banks.py last) and re-run the bank gates.",
+ "generated": "2026-09-23",
+ "layer": "C",
+ "ai_generated": true,
+ "needs_review": true,
+ "measured_on": "banks read from git HEAD 8b0868af; builder run in a scratch tree (git archive HEAD scripts design course) over an sqlite backup of db/corpus.sqlite taken 2026-09-23",
+ "summary": {
+  "flagged_items": 16,
+  "flagged_by_class": {
+   "about": 2,
+   "like-adnominal": 2,
+   "interval": 1,
+   "obligation": 7,
+   "invitation": 1,
+   "how-much": 1,
+   "spelling-reads-as-stem": 1,
+   "shared-sense-0-gloss": 1
+  },
+  "flagged_per_bank": {
+   "n3_grammar_form": 2,
+   "n3_orthography": 1,
+   "n4_context_fill": 1,
+   "n4_grammar_form": 10,
+   "n5_grammar_form": 2
+  },
+  "context_underdetermined_items": 78,
+  "context_underdetermined_high_confidence": 51,
+  "gf_blanks_cut_mid_word": 10
+ },
+ "per_bank": {
+  "n3_context_fill": {
+   "items": 400,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n3_grammar_form": {
+   "items": 300,
+   "scanned": true,
+   "flagged": 2,
+   "context_underdetermined": 25
+  },
+  "n3_kanji_reading": {
+   "items": 400,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n3_listening_gist": {
+   "items": 9,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n3_listening_point": {
+   "items": 18,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n3_listening_reply": {
+   "items": 27,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n3_listening_say": {
+   "items": 12,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n3_listening_task": {
+   "items": 18,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n3_orthography": {
+   "items": 400,
+   "scanned": true,
+   "flagged": 1,
+   "context_underdetermined": 0
+  },
+  "n3_paraphrase": {
+   "items": 28,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n3_reading_comp": {
+   "items": 152,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n3_sentence_order": {
+   "items": 300,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "auto-built, no distractors (graded against accepted[])"
+  },
+  "n3_text_grammar": {
+   "items": 122,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n3_usage": {
+   "items": 33,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n4_context_fill": {
+   "items": 400,
+   "scanned": true,
+   "flagged": 1,
+   "context_underdetermined": 0
+  },
+  "n4_grammar_form": {
+   "items": 300,
+   "scanned": true,
+   "flagged": 10,
+   "context_underdetermined": 29
+  },
+  "n4_kanji_reading": {
+   "items": 400,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n4_listening_point": {
+   "items": 21,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n4_listening_reply": {
+   "items": 24,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n4_listening_say": {
+   "items": 15,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n4_listening_task": {
+   "items": 24,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n4_orthography": {
+   "items": 400,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n4_paraphrase": {
+   "items": 15,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n4_reading_comp": {
+   "items": 90,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n4_sentence_order": {
+   "items": 300,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "auto-built, no distractors (graded against accepted[])"
+  },
+  "n4_text_grammar": {
+   "items": 74,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 2
+  },
+  "n4_usage": {
+   "items": 14,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n5_context_fill": {
+   "items": 155,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n5_grammar_form": {
+   "items": 114,
+   "scanned": true,
+   "flagged": 2,
+   "context_underdetermined": 19
+  },
+  "n5_kanji_reading": {
+   "items": 176,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n5_listening_point": {
+   "items": 18,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n5_listening_reply": {
+   "items": 17,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n5_listening_say": {
+   "items": 15,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n5_listening_task": {
+   "items": 21,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n5_orthography": {
+   "items": 177,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 0
+  },
+  "n5_paraphrase": {
+   "items": 9,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n5_reading_comp": {
+   "items": 43,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  },
+  "n5_sentence_order": {
+   "items": 58,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "auto-built, no distractors (graded against accepted[])"
+  },
+  "n5_text_grammar": {
+   "items": 34,
+   "scanned": true,
+   "flagged": 0,
+   "context_underdetermined": 3
+  },
+  "n5_usage": {
+   "items": 8,
+   "scanned": false,
+   "flagged": 0,
+   "context_underdetermined": 0,
+   "note": "authored bank (Layer C, adversarially verified), not auto-built: out of scope"
+  }
+ },
+ "flagged": [
+  {
+   "id": "gf:n3:5071",
+   "bank": "n3_grammar_form",
+   "family": "grammar_form",
+   "grammar": "n3-ni-tsuite",
+   "stem": "同じ事がほかの多くの人（　）も言える。",
+   "correct": "について",
+   "distractor": "に関して",
+   "class": "about",
+   "sentence_with_key": "同じ事がほかの多くの人についても言える。",
+   "sentence_with_distractor": "同じ事がほかの多くの人に関しても言える。",
+   "why": "gf:n3:5071 ...人（　）も言える keyed について offered に関して, and gf:n3:5095 それ（　）は同意しかねます the other way round.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n3:5095",
+   "bank": "n3_grammar_form",
+   "family": "grammar_form",
+   "grammar": "n3-ni-kanshite",
+   "stem": "それ（　）は同意しかねます。",
+   "correct": "に関して",
+   "distractor": "について",
+   "class": "about",
+   "sentence_with_key": "それに関しては同意しかねます。",
+   "sentence_with_distractor": "それについては同意しかねます。",
+   "why": "gf:n3:5071 ...人（　）も言える keyed について offered に関して, and gf:n3:5095 それ（　）は同意しかねます the other way round.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3535",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "gp-153",
+   "stem": "これはお茶（　）味だ。",
+   "correct": "のような",
+   "distractor": "みたいな",
+   "class": "like-adnominal",
+   "sentence_with_key": "これはお茶のような味だ。",
+   "sentence_with_distractor": "これはお茶みたいな味だ。",
+   "why": "Noun + のような and noun + みたいな are the formal and colloquial spellings of one pattern: お茶のような味 = お茶みたいな味.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3536",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "gp-153",
+   "stem": "その魚はさけ（　）味だった。",
+   "correct": "のような",
+   "distractor": "みたいな",
+   "class": "like-adnominal",
+   "sentence_with_key": "その魚はさけのような味だった。",
+   "sentence_with_distractor": "その魚はさけみたいな味だった。",
+   "why": "Noun + のような and noun + みたいな are the formal and colloquial spellings of one pattern: お茶のような味 = お茶みたいな味.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3597",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "gp-70",
+   "stem": "この時計は１５分（　）なる。",
+   "correct": "ごとに",
+   "distractor": "おきに",
+   "class": "interval",
+   "sentence_with_key": "この時計は１５分ごとになる。",
+   "sentence_with_distractor": "この時計は１５分おきになる。",
+   "why": "15分ごとに = 15分おきに. With days or rows they differ (一日おき = every other day), so the class is limited to minutes, seconds and hours.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3845",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "nakereba-ikenai",
+   "stem": "待た（　）。",
+   "correct": "なければいけない",
+   "distractor": "なければならない",
+   "class": "obligation",
+   "sentence_with_key": "待たなければいけない。",
+   "sentence_with_distractor": "待たなければならない。",
+   "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3846",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "nakereba-ikenai",
+   "stem": "家に帰ら（　）。",
+   "correct": "なければいけない",
+   "distractor": "なければならない",
+   "class": "obligation",
+   "sentence_with_key": "家に帰らなければいけない。",
+   "sentence_with_distractor": "家に帰らなければならない。",
+   "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3847",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "nakereba-ikenai",
+   "stem": "私は食べ（　）。",
+   "correct": "なければいけない",
+   "distractor": "なければならない",
+   "class": "obligation",
+   "sentence_with_key": "私は食べなければいけない。",
+   "sentence_with_distractor": "私は食べなければならない。",
+   "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3848",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "nakereba-ikenai",
+   "stem": "私は飲ま（　）。",
+   "correct": "なければいけない",
+   "distractor": "なければならない",
+   "class": "obligation",
+   "sentence_with_key": "私は飲まなければいけない。",
+   "sentence_with_distractor": "私は飲まなければならない。",
+   "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3850",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "nakereba-naranai",
+   "stem": "買い物に行か（　）。",
+   "correct": "なければならない",
+   "distractor": "なければいけない",
+   "class": "obligation",
+   "sentence_with_key": "買い物に行かなければならない。",
+   "sentence_with_distractor": "買い物に行かなければいけない。",
+   "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3852",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "nakereba-naranai",
+   "stem": "少し買い物をし（　）。",
+   "correct": "なければならない",
+   "distractor": "なければいけない",
+   "class": "obligation",
+   "sentence_with_key": "少し買い物をしなければならない。",
+   "sentence_with_distractor": "少し買い物をしなければいけない。",
+   "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n4:3853",
+   "bank": "n4_grammar_form",
+   "family": "grammar_form",
+   "grammar": "nakereba-naranai",
+   "stem": "時間を大切にし（　）。",
+   "correct": "なければならない",
+   "distractor": "なければいけない",
+   "class": "obligation",
+   "sentence_with_key": "時間を大切にしなければならない。",
+   "sentence_with_distractor": "時間を大切にしなければいけない。",
+   "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n5:63",
+   "bank": "n5_grammar_form",
+   "family": "grammar_form",
+   "grammar": "mashou",
+   "stem": "行き（　）。",
+   "correct": "ましょう",
+   "distractor": "ませんか",
+   "class": "invitation",
+   "sentence_with_key": "行きましょう。",
+   "sentence_with_distractor": "行きませんか。",
+   "why": "gf:n5:63 「行き（　）。」 keyed ましょう offered ませんか: with nothing else in the stem both are the invitation.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "gf:n5:4328",
+   "bank": "n5_grammar_form",
+   "family": "grammar_form",
+   "grammar": "gp-38",
+   "stem": "（　）くらい？",
+   "correct": "どれ",
+   "distractor": "どの",
+   "class": "how-much",
+   "sentence_with_key": "どれくらい？",
+   "sentence_with_distractor": "どのくらい？",
+   "why": "どれくらい = どのくらい. Before any other word only one of them fits.",
+   "fixed_by": "design/exam_equivalents.json via exam_rules.interchangeable"
+  },
+  {
+   "id": "or:n3:1553",
+   "bank": "n3_orthography",
+   "stem": "おん",
+   "correct": "音",
+   "distractor": "御",
+   "signals": [
+    "spelling"
+   ],
+   "key_gloss_pt": "som",
+   "distractor_gloss_pt": [
+    "prefixo honorífico (antes de substantivos)",
+    "prefixo honorífico (cortesia, respeito)"
+   ],
+   "key_gloss_en": "sound",
+   "distractor_gloss_en": [
+    "honorific prefix (before nouns)",
+    "honorific prefix (politeness, respect)"
+   ],
+   "family": "orthography",
+   "class": "spelling-reads-as-stem",
+   "why": "JMdict gives 御 the reading おん (honorific prefix), so 御 is a correct spelling of the printed おん. No vocab record with headword 御 carries おん, which is why hw_readings missed it.",
+   "fixed_by": "JMdict readings join hw_readings"
+  },
+  {
+   "id": "cf:n4:1:601",
+   "bank": "n4_context_fill",
+   "stem": "（　）に行ってください。",
+   "correct": "前",
+   "distractor": "先",
+   "signals": [
+    "overlap"
+   ],
+   "key_gloss_pt": "frente",
+   "distractor_gloss_pt": [
+    "agora há pouco",
+    "à frente"
+   ],
+   "key_gloss_en": "front",
+   "distractor_gloss_en": [
+    "a moment ago",
+    "ahead"
+   ],
+   "family": "context_fill",
+   "class": "shared-sense-0-gloss",
+   "why": "先 (さき) sense 0 'à frente / ahead' is 前's sense 0 'frente / à frente'; 先に行ってください ('go on ahead, please') is as natural as 前に行ってください. The option string 先 was drawn from the さっき record, whose gloss does not overlap, so the check has to be by printed spelling.",
+   "fixed_by": "cf candidate sharing a sense-0 gloss (by printed spelling) is skipped",
+   "sentence_with_key": "前に行ってください。",
+   "sentence_with_distractor": "先に行ってください。"
+  }
+ ],
+ "equivalence_table": {
+  "what_this_is": "Grammar forms that are interchangeable in the same blank. build_exam_banks.py never offers a member of a class as a distractor when the key is another member of the same class and the class context matches: gf:n4:3535 「これはお茶（　）味だ。」 keyed のような offered みたいな, which is just as correct. Read by scripts/export/exam_rules.py (load_equivalents / interchangeable).",
+  "layer": "C",
+  "needs_review": true,
+  "rule": "Two options are interchangeable when both are in one class's `forms` and the class context holds. `before` (optional) is a regex that must match the END of the text before the blank; `after` (optional) is a regex that must match the START of the text after it. A class with no context applies everywhere. Classes list exact option strings; a form reaches the option pool only through grammar_point.forms_json, so a member that no level attests is inert until it is.",
+  "evidence_key": {
+   "meaning": "the owning points' en form_meanings are identical once the register tag (formal / colloquial / casual / polite) is stripped",
+   "label": "the owning point's own label names the two spellings, e.g. '(後で / あとで)'",
+   "merge": "a W08 / W08b merge ledger pair (research/derived/grammar_merge_ledger.json, research/derived/pending/w08b_merges.json)",
+   "registry": "different points whose en form_meanings state the same function; quoted in `why`"
+  },
+  "classes": [
+   {
+    "id": "like-adnominal",
+    "forms": [
+     "のような",
+     "みたいな"
+    ],
+    "evidence": [
+     "meaning: gp-77 のような / gp-76 みたいな / gp-153 のような = 'like / similar to (before a noun)'",
+     "merge: W08b D5 (gp-154 -> gp-77); found_not_in_scope: gp-153 is a subset of gp-77",
+     "registry: mitai-na 'that seems like / like a... (+ noun)'"
+    ],
+    "why": "Noun + のような and noun + みたいな are the formal and colloquial spellings of one pattern: お茶のような味 = お茶みたいな味."
+   },
+   {
+    "id": "like-adverbial",
+    "forms": [
+     "のように",
+     "みたいに"
+    ],
+    "evidence": [
+     "registry: gp-77 のように 'like / just as (before a verb/adjective, formal)', gp-76 みたいに 'like / the way of (before a verb/adjective, colloquial)', mitai-ni 'like / as (+ verb/adjective)'",
+     "merge: W08b D5 (gp-154 のように -> gp-77)"
+    ],
+    "why": "The adverbial half of the same pair: 先生のように話す = 先生みたいに話す."
+   },
+   {
+    "id": "seem-after-noun",
+    "forms": [
+     "みたい",
+     "みたいだ",
+     "らしい"
+    ],
+    "evidence": [
+     "registry: mitai-da みたい 'it seems like / like (informal)', n3-mitai-da 'seems / gives the impression of', rashii 'it seems that / typical of', n3-rashii 'seems that / from what they say'"
+    ],
+    "why": "All three attach to a bare noun, a na-stem or a plain clause: 病気みたい / 病気らしい."
+   },
+   {
+    "id": "seem-after-clause",
+    "forms": [
+     "ようだ",
+     "みたい",
+     "みたいだ",
+     "らしい"
+    ],
+    "before": "[いうくぐすつぬぶむるた]",
+    "evidence": [
+     "registry: you-da 'it seems / it looks like (conjecture from evidence)' beside the three above"
+    ],
+    "why": "After a plain verb or i-adjective ようだ joins them (来るようだ = 来るみたいだ = 来るらしい). After a bare noun it needs の, so it is a real wrong answer there and the class does not apply."
+   },
+   {
+    "id": "conjecture",
+    "forms": [
+     "でしょう",
+     "だろう"
+    ],
+    "evidence": [
+     "meaning: deshou / darou = 'probably, must be; right?' (polite / casual)"
+    ],
+    "why": "Register pair of one conjecture."
+   },
+   {
+    "id": "te-shimau",
+    "forms": [
+     "てしまう",
+     "ちゃう"
+    ],
+    "evidence": [
+     "registry: te-shimau-chau forms {てしまう, ちゃう}, ちゃう = 'contracted, casual version of てしまう'",
+     "merge: W08b D7 (gp-151 てしまう -> te-shimau-chau)"
+    ],
+    "why": "Contraction of the same auxiliary."
+   },
+   {
+    "id": "te-shimatta",
+    "forms": [
+     "てしまった",
+     "ちゃった"
+    ],
+    "evidence": [
+     "registry: n3-chatta 'ended up doing / did by accident (～ちゃった / ～じゃった)'"
+    ],
+    "why": "Past of the same contraction. てしまう vs ちゃった differ in tense and are not in one class."
+   },
+   {
+    "id": "de-shimau",
+    "forms": [
+     "でしまう",
+     "じゃう"
+    ],
+    "evidence": [
+     "registry: te-shimau-chau formation (〜でしまう → 〜じゃう)"
+    ],
+    "why": "Voiced allomorph pair."
+   },
+   {
+    "id": "de-shimatta",
+    "forms": [
+     "でしまった",
+     "じゃった"
+    ],
+    "evidence": [
+     "label: n3-chatta (～ちゃった / ～じゃった)"
+    ],
+    "why": "Voiced allomorph pair, past."
+   },
+   {
+    "id": "te-iru",
+    "forms": [
+     "ている",
+     "てる"
+    ],
+    "evidence": [
+     "registry: te-iru / n3-te-iru 'to be doing'; the contraction is attested in bank sentences (話してる, 知ってる)"
+    ],
+    "why": "い-drop contraction."
+   },
+   {
+    "id": "te-ita",
+    "forms": [
+     "ていた",
+     "てた"
+    ],
+    "evidence": [
+     "registry: te-ita 'was doing (past continuous)'"
+    ],
+    "why": "い-drop contraction, past."
+   },
+   {
+    "id": "te-imasu",
+    "forms": [
+     "ています",
+     "てます"
+    ],
+    "evidence": [
+     "registry: te-iru"
+    ],
+    "why": "い-drop contraction, polite."
+   },
+   {
+    "id": "te-oku",
+    "forms": [
+     "ておく",
+     "とく"
+    ],
+    "evidence": [
+     "label: n3-toku '(とく / どく, contraction of ておく)'",
+     "registry: te-oku 'to do in advance / just in case'"
+    ],
+    "why": "Contraction of the same auxiliary: 考えておく = 考えとく."
+   },
+   {
+    "id": "te-oita",
+    "forms": [
+     "ておいた",
+     "といた"
+    ],
+    "evidence": [
+     "label: n3-toku"
+    ],
+    "why": "Same, past."
+   },
+   {
+    "id": "obligation",
+    "forms": [
+     "なければならない",
+     "なければいけない",
+     "なくてはならない",
+     "なくてはいけない",
+     "ないといけない",
+     "なくちゃいけない",
+     "なきゃいけない",
+     "なきゃならない"
+    ],
+    "evidence": [
+     "registry: nakereba-ikenai 'to have to do / obligation', nakereba-naranai 'to have to do / obligation (more formal/general)', naito-ikenai 'to have to / to need to do', nakute-wa-ikenai 'to have to / cannot fail to do', nakute-wa-naranai 'to have to / it's necessary (formal)', gp-145 'to have to do (informal)'"
+    ],
+    "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない."
+   },
+   {
+    "id": "obligation-final",
+    "forms": [
+     "なければならない",
+     "なければいけない",
+     "なくてはならない",
+     "なくてはいけない",
+     "ないといけない",
+     "なくちゃいけない",
+     "なきゃいけない",
+     "なきゃならない",
+     "なきゃ",
+     "なくちゃ",
+     "ないと"
+    ],
+    "after": "(?:よね|[よねなわぞさ])?(?:[。．！!？?」』）)]|$)",
+    "evidence": [
+     "meaning: gp-52 なきゃ / なくちゃ = 'I have to / I need to (do)'",
+     "registry: nakucha 'I have to (casual contraction)', gp-117 ないと 'I have to / if not... (casual)', n3-nai-to 'if you don't... / you have to'"
+    ],
+    "why": "The clipped forms mean 'have to' only at the end of a sentence; mid-sentence なきゃ / ないと are conditionals ('if not'), so the class is limited to a sentence-final blank."
+   },
+   {
+    "id": "prohibition",
+    "forms": [
+     "てはいけない",
+     "てはいけません",
+     "ちゃいけない",
+     "ちゃいけません",
+     "てはだめ",
+     "ちゃだめ"
+    ],
+    "evidence": [
+     "registry: te-wa-ikenai 'cannot / it is forbidden', gp-139 てはいけません 'cannot, it is forbidden (polite)', cha-ikenai-ja-ikenai ちゃいけない 'cannot (do) (casual)'"
+    ],
+    "why": "Register and contraction variants of one prohibition."
+   },
+   {
+    "id": "prohibition-voiced",
+    "forms": [
+     "ではいけない",
+     "ではいけません",
+     "じゃいけない",
+     "じゃいけません"
+    ],
+    "evidence": [
+     "registry: cha-ikenai-ja-ikenai じゃいけない 'cannot (do) (casual, after a voiced sound)'"
+    ],
+    "why": "Voiced allomorph of the class above."
+   },
+   {
+    "id": "explanatory",
+    "forms": [
+     "のです",
+     "んです"
+    ],
+    "evidence": [
+     "registry: gp-17 {んです, のです} 'it's that... (speech, polite / formal/written)', ndesu んです"
+    ],
+    "why": "gp-17 owns both, but ndesu owns んです alone, so the same-point rule does not see the pair."
+   },
+   {
+    "id": "explanatory-plain",
+    "forms": [
+     "のだ",
+     "んだ"
+    ],
+    "evidence": [
+     "registry: gp-17 / ndesu"
+    ],
+    "why": "Plain form of the pair above."
+   },
+   {
+    "id": "explanatory-softened",
+    "forms": [
+     "んだけど",
+     "んですが",
+     "のですが",
+     "のだけど"
+    ],
+    "evidence": [
+     "meaning: gp-116 んだけど / んですが = 'it's that... (explanatory)'"
+    ],
+    "why": "Register pair of one softener."
+   },
+   {
+    "id": "neg-copula",
+    "forms": [
+     "じゃない",
+     "ではない"
+    ],
+    "evidence": [
+     "registry: janai-dewa-nai {じゃない, ではない}",
+     "merge: W08b D8 (gp-33 じゃない -> janai-dewa-nai)"
+    ],
+    "why": "Colloquial and formal spellings of one negation."
+   },
+   {
+    "id": "neg-copula-past",
+    "forms": [
+     "じゃなかった",
+     "ではなかった"
+    ],
+    "evidence": [
+     "registry: gp-34 じゃなかった 'was not / were not (casual)'"
+    ],
+    "why": "Same, past."
+   },
+   {
+    "id": "neg-copula-polite",
+    "forms": [
+     "じゃありません",
+     "ではありません"
+    ],
+    "evidence": [
+     "registry: janai-dewa-nai formation"
+    ],
+    "why": "Same, polite."
+   },
+   {
+    "id": "tag-question",
+    "forms": [
+     "じゃないか",
+     "ではないか"
+    ],
+    "evidence": [
+     "registry: janai-ka 'isn't it? / right? / what a...!', dewa-nai-ka 'isn't it though? / don't you think? (emphasis)'"
+    ],
+    "why": "Two points, one pattern in two registers."
+   },
+   {
+    "id": "copula-past",
+    "forms": [
+     "だった",
+     "でした"
+    ],
+    "evidence": [
+     "meaning: gp-32 だった / でした = 'was / were'"
+    ],
+    "why": "Register pair."
+   },
+   {
+    "id": "copula-humble",
+    "forms": [
+     "でございます",
+     "です"
+    ],
+    "before": "[^い]",
+    "evidence": [
+     "registry: de-gozaimasu 'to be / it is (very courteous)', da-desu です 'to be (polite)'",
+     "merge: W08 gp -> da-desu"
+    ],
+    "why": "After a noun both are right (サービスです = サービスでございます). After an i-adjective でございます is wrong, so the class stops there."
+   },
+   {
+    "id": "but-clause",
+    "forms": [
+     "けど",
+     "けれど",
+     "けれども"
+    ],
+    "evidence": [
+     "registry: kedo 'but / however / although (colloquial)', keredo-mo 'but / however / nevertheless (more formal)', gp-25 けど"
+    ],
+    "why": "Register variants after a clause."
+   },
+   {
+    "id": "but-copula",
+    "forms": [
+     "だけど",
+     "だけれど",
+     "だけれども",
+     "だが",
+     "ですが",
+     "ですけど",
+     "ですけれども"
+    ],
+    "evidence": [
+     "meaning: gp-61 だが / ですが = 'but / however'",
+     "label: n3-dakedo (だけど / けど)",
+     "registry: gp-25 だけど 'but / only that (after a noun or na-adjective)'"
+    ],
+    "why": "All attach after a noun, a na-stem or ん: 知ってたらよかったんだけど = ...んだが."
+   },
+   {
+    "id": "but-sentence-initial",
+    "forms": [
+     "でも",
+     "だけど",
+     "けど",
+     "けれども",
+     "しかし",
+     "だが",
+     "ですが"
+    ],
+    "before": "(?:^|[。！!？?」』\\n])\\s*",
+    "evidence": [
+     "registry: demo 'but, however', shikashi 'however / nevertheless', n3-dakedo 'but / it's just that / even so', keredo-mo, gp-61"
+    ],
+    "why": "At the start of a sentence they are all the conjunction 'but'. Mid-sentence でも is 'even' and けど follows a clause, so the class is limited to sentence-initial blanks (gf:n5:4278 ...んだ（　） keyed けど with でも offered stays a valid item)."
+   },
+   {
+    "id": "reason",
+    "forms": [
+     "から",
+     "ので"
+    ],
+    "before": "(?:ます|ました|です|でした|ません|ませんでした|ない|なかった|たい|かった)",
+    "evidence": [
+     "registry: kara 'because / from (cause or starting point)', node 'because / since (reason)'"
+    ],
+    "why": "Interchangeable only as REASON after a predicate. から is also 'from' (それから, 東京から) and ので needs な after a noun, so the class is limited to predicate endings it can recognise without a parser."
+   },
+   {
+    "id": "interval",
+    "forms": [
+     "ごとに",
+     "おきに"
+    ],
+    "before": "(?:分|秒|時間)",
+    "evidence": [
+     "registry: gp-70 ごとに 'each / per / for each', oki-ni おきに 'every ~ / every X'"
+    ],
+    "why": "15分ごとに = 15分おきに. With days or rows they differ (一日おき = every other day), so the class is limited to minutes, seconds and hours."
+   },
+   {
+    "id": "how-much",
+    "forms": [
+     "どれ",
+     "どの"
+    ],
+    "after": "[くぐ]らい",
+    "evidence": [
+     "registry: gp-38 どれ 'which? (pronoun)', gp-40 どの 'which / what ...? (before a noun)'",
+     "label: n3-kurai (くらい / ぐらい)"
+    ],
+    "why": "どれくらい = どのくらい. Before any other word only one of them fits."
+   },
+   {
+    "id": "approx",
+    "forms": [
+     "くらい",
+     "ぐらい"
+    ],
+    "evidence": [
+     "label: n3-kurai (くらい / ぐらい)",
+     "label: gp-44 くらい / ぐらい"
+    ],
+    "why": "Free variants."
+   },
+   {
+    "id": "approx-time",
+    "forms": [
+     "ごろ",
+     "ころ",
+     "頃"
+    ],
+    "evidence": [
+     "label: koro-goro (頃 ころ / ごろ)",
+     "registry: gp-68 ごろ 'around / about (approximate time)'"
+    ],
+    "why": "Spellings of one suffix."
+   },
+   {
+    "id": "wonder",
+    "forms": [
+     "かな",
+     "かしら",
+     "かなあ"
+    ],
+    "evidence": [
+     "registry: kana 'I wonder if...? / who knows (casual, gender-neutral)', ka-shira 'I wonder if...? (soft, traditionally feminine)', n3-kanaa 'I wonder / who knows'"
+    ],
+    "why": "Three registers of one sentence-final."
+   },
+   {
+    "id": "hard-to",
+    "forms": [
+     "にくい",
+     "づらい"
+    ],
+    "evidence": [
+     "registry: nikui 'hard to do', zurai 'hard/troublesome to do'"
+    ],
+    "why": "Both follow the masu-stem: 読みにくい = 読みづらい."
+   },
+   {
+    "id": "about",
+    "forms": [
+     "について",
+     "に関して"
+    ],
+    "evidence": [
+     "registry: n3-ni-tsuite 'about / regarding', n3-ni-kanshite 'with regard to / as for'"
+    ],
+    "why": "gf:n3:5071 ...人（　）も言える keyed について offered に関して, and gf:n3:5095 それ（　）は同意しかねます the other way round."
+   },
+   {
+    "id": "according-to",
+    "forms": [
+     "によれば",
+     "によると"
+    ],
+    "evidence": [
+     "registry: n3-ni-yoreba 'according to / based on'"
+    ],
+    "why": "Conditional-form variants of one hearsay source marker."
+   },
+   {
+    "id": "without",
+    "forms": [
+     "ないで",
+     "ずに"
+    ],
+    "before": "[^しせ]",
+    "after": "(?!ください|下さい)",
+    "evidence": [
+     "registry: naide 'without doing / instead of doing', n3-naide 'without doing (something)', n3-zu-ni 'without doing (something) / without'"
+    ],
+    "why": "Same slot on the same nai-stem, except する (しないで / せずに: the stem letter differs, so the other form is wrong there) and ないでください (a request, not 'without')."
+   },
+   {
+    "id": "invitation",
+    "forms": [
+     "ましょう",
+     "ませんか"
+    ],
+    "after": "(?:[。．！!]|$)",
+    "evidence": [
+     "registry: mashou 'let's (do something)', masen-ka 'won't you...? (polite invitation)'"
+    ],
+    "why": "gf:n5:63 「行き（　）。」 keyed ましょう offered ませんか: with nothing else in the stem both are the invitation."
+   },
+   {
+    "id": "suggestion",
+    "forms": [
+     "たらどうですか",
+     "たらどう",
+     "たらどうか"
+    ],
+    "after": "(?:[。．！!？?]|$)",
+    "evidence": [
+     "registry: gp-146 たらどうですか 'how about...? / why don't you...?', tara-dou たらどう 'how about...? (suggestion)'"
+    ],
+    "why": "Register pair, sentence-final only (…たらどう（　）ですか would print ですか twice)."
+   },
+   {
+    "id": "why",
+    "forms": [
+     "なぜ",
+     "どうして",
+     "なんで"
+    ],
+    "evidence": [
+     "registry: gp-30 なぜ 'why (neutral to formal)', doushite 'why?', gp-31 なんで 'why (colloquial)'"
+    ],
+    "why": "Three registers of 'why'."
+   },
+   {
+    "id": "hope",
+    "forms": [
+     "といい",
+     "といいです",
+     "といいな",
+     "といいなあ"
+    ],
+    "after": "(?:[。．！!]|$)",
+    "evidence": [
+     "registry: gp-82 といいです 'I hope that / let's hope that (polite)', n3-to-ii-naa といいなあ 'I hope that / I wish that'"
+    ],
+    "why": "Register variants of one wish, sentence-final only (といいなあ does not take ね / よ after it)."
+   },
+   {
+    "id": "just-did",
+    "forms": [
+     "たばかり",
+     "たところ"
+    ],
+    "after": "(?:だ|です|で|なの)",
+    "evidence": [
+     "registry: ta-bakari 'to have just done', ta-tokoro 'to have just done (〜たところだ)'"
+    ],
+    "why": "今着いたばかりだ = 今着いたところだ. Before a comma たところ is 'upon doing' (n3-ta-tokoro) and the class does not apply."
+   },
+   {
+    "id": "favour",
+    "forms": [
+     "てあげる",
+     "てやる"
+    ],
+    "evidence": [
+     "registry: te-ageru 'to do a favor for someone', te-yaru 'to do something for someone of equal or lower status'"
+    ],
+    "why": "Register pair."
+   },
+   {
+    "id": "then",
+    "forms": [
+     "そして",
+     "それから"
+    ],
+    "before": "(?:^|[。！!？?」』\\n])\\s*",
+    "evidence": [
+     "registry: soshite 'and / and then', sore-kara 'and after that / and moreover'"
+    ],
+    "why": "Sentence-initial sequencing connectors."
+   },
+   {
+    "id": "ortho-atode",
+    "forms": [
+     "後で",
+     "あとで"
+    ],
+    "evidence": [
+     "label: ato-de (後で / あとで)"
+    ],
+    "why": "One word, two scripts."
+   },
+   {
+    "id": "ortho-aida",
+    "forms": [
+     "間",
+     "あいだ"
+    ],
+    "evidence": [
+     "label: aida (間 / あいだ)"
+    ],
+    "why": "One word, two scripts."
+   },
+   {
+    "id": "ortho-aidani",
+    "forms": [
+     "間に",
+     "あいだに"
+    ],
+    "evidence": [
+     "label: aida-ni (間に / あいだに)"
+    ],
+    "why": "One word, two scripts."
+   },
+   {
+    "id": "ortho-ichiban",
+    "forms": [
+     "一番",
+     "いちばん"
+    ],
+    "evidence": [
+     "label: ichiban (一番 / いちばん)"
+    ],
+    "why": "One word, two scripts."
+   },
+   {
+    "id": "ortho-issho",
+    "forms": [
+     "一緒に",
+     "いっしょに"
+    ],
+    "evidence": [
+     "label: issho-ni (一緒に / いっしょに)"
+    ],
+    "why": "One word, two scripts."
+   },
+   {
+    "id": "ortho-maeni",
+    "forms": [
+     "前に",
+     "まえに"
+    ],
+    "evidence": [
+     "label: mae-ni (〜まえに / 前に)"
+    ],
+    "why": "One word, two scripts."
+   },
+   {
+    "id": "ortho-baai",
+    "forms": [
+     "場合は",
+     "ばあいは"
+    ],
+    "evidence": [
+     "label: baai-wa (場合は / ばあいは)"
+    ],
+    "why": "One word, two scripts."
+   },
+   {
+    "id": "ortho-mirareru",
+    "forms": [
+     "が見られる",
+     "がみられる"
+    ],
+    "evidence": [
+     "label: gp-132 (〜が見られる/がみられる)"
+    ],
+    "why": "One word, two scripts."
+   }
+  ]
+ },
+ "derivation": {
+  "method": "Candidates came from the grammar registry, then each class was checked against the 944 gf/tg items. Mechanical signals (scratch derive.py): (1) en form_meanings identical once the register tag is stripped; (2) spellings named in a point's own label; (3) W08 / W08b merge pairs. Classes with no mechanical signal quote the owning points' form_meanings in `evidence`. A context (`before` / `after`) was added wherever a naive class would have flagged a valid item, e.g. でも is 'but' only sentence-initially (gf:n5:4278 ...んだ（　） keyed けど, でも offered, stays valid).",
+  "same_meaning_modulo_register": [
+   [
+    "だが",
+    "ですが",
+    "gp-61"
+   ],
+   [
+    "なきゃ",
+    "なくちゃ",
+    "gp-52"
+   ],
+   [
+    "んだけど",
+    "んですが",
+    "gp-116"
+   ],
+   [
+    "のような",
+    "みたいな",
+    "gp-153 / gp-76 / gp-77"
+   ],
+   [
+    "だろう",
+    "でしょう",
+    "darou / deshou"
+   ],
+   [
+    "だ",
+    "です",
+    "da-desu / wa-yori-desu"
+   ],
+   [
+    "だった",
+    "でした",
+    "gp-32"
+   ]
+  ],
+  "label_alternations": [
+   [
+    "後で",
+    "あとで"
+   ],
+   [
+    "間",
+    "あいだ"
+   ],
+   [
+    "間に",
+    "あいだに"
+   ],
+   [
+    "一番",
+    "いちばん"
+   ],
+   [
+    "一緒に",
+    "いっしょに"
+   ],
+   [
+    "前に",
+    "まえに"
+   ],
+   [
+    "場合は",
+    "ばあいは"
+   ],
+   [
+    "が見られる",
+    "がみられる"
+   ],
+   [
+    "頃",
+    "ころ",
+    "ごろ"
+   ],
+   [
+    "くらい",
+    "ぐらい"
+   ],
+   [
+    "だけど",
+    "けど"
+   ],
+   [
+    "ちゃった",
+    "じゃった"
+   ],
+   [
+    "とく",
+    "どく"
+   ],
+   [
+    "とおり",
+    "どおり"
+   ],
+   [
+    "おう",
+    "よう"
+   ]
+  ],
+  "label_alternations_not_used": "ちゃった/じゃった, とく/どく, とおり/どおり, おう/よう and になる/くなる are allomorphs chosen by the preceding sound, never both right in one blank, so they are not classes (じゃった pairs with でしまった instead).",
+  "merge_pairs": [
+   [
+    "gp",
+    "da-desu"
+   ],
+   [
+    "gp-152",
+    "te-hoshii"
+   ],
+   [
+    "gp-100",
+    "gp-118"
+   ],
+   [
+    "gp-54",
+    "no-ga-jouzu"
+   ],
+   [
+    "gp-47",
+    "yori-hou-ga"
+   ],
+   [
+    "gp-154",
+    "gp-77"
+   ],
+   [
+    "gp-60",
+    "tara"
+   ],
+   [
+    "gp-151",
+    "te-shimau-chau"
+   ],
+   [
+    "gp-33",
+    "janai-dewa-nai"
+   ],
+   [
+    "n3-nda-mon",
+    "n3-da-mono-da"
+   ]
+  ],
+  "merge_pairs_note": "A merge pair shares a key after the merge, so the same-point rule already covers it; the ledgers mattered for the classes they expose across points (gp-77 / gp-76 / gp-153 like-forms, te-shimau-chau's ちゃう)."
+ },
+ "vocab_scan": {
+  "method": "kr: distractor is a JMdict or vocab_form reading of the printed stem. or: distractor spelling reads as the printed kana in JMdict, or is another spelling of the key's own entry. cf: distractor (by printed spelling, every record) shares a pt-BR sense-0 gloss with the key, or is another spelling of the key's entry. Equal first gloss (pt-BR or en) was flagged in every family.",
+  "defects": 2,
+  "informational_not_defects": [
+   {
+    "id": "kr:n3:1369",
+    "bank": "n3_kanji_reading",
+    "stem": "明かり",
+    "correct": "あかり",
+    "distractor": "ひかり",
+    "signals": [
+     "gloss-pt",
+     "gloss-en"
+    ],
+    "key_gloss_pt": "luz",
+    "distractor_gloss_pt": [
+     "luz"
+    ],
+    "key_gloss_en": "light",
+    "distractor_gloss_en": [
+     "light"
+    ],
+    "verdict": "not a second answer: ひかり (光) and 明かり share the gloss 'luz / light', but 明かり cannot be read ひかり: a same-meaning reading is the kind of distractor a reading item wants."
+   },
+   {
+    "id": "kr:n3:961",
+    "bank": "n3_kanji_reading",
+    "stem": "運転",
+    "correct": "うんてん",
+    "distractor": "ほうこう",
+    "signals": [
+     "gloss-pt"
+    ],
+    "key_gloss_pt": "direção",
+    "distractor_gloss_pt": [
+     "direção"
+    ],
+    "key_gloss_en": "driving (a vehicle)",
+    "distractor_gloss_en": [
+     "direction"
+    ],
+    "verdict": "not a second answer: pt-BR 'direção' is both 運転 (driving) and 方向 (direction); the en glosses differ and 運転 is never read ほうこう."
+   },
+   {
+    "id": "kr:n3:1105",
+    "bank": "n3_kanji_reading",
+    "stem": "折れる",
+    "correct": "おれる",
+    "distractor": "われる",
+    "signals": [
+     "gloss-pt",
+     "gloss-en"
+    ],
+    "key_gloss_pt": "quebrar",
+    "distractor_gloss_pt": [
+     "quebrar"
+    ],
+    "key_gloss_en": "to break",
+    "distractor_gloss_en": [
+     "to break"
+    ],
+    "verdict": "not a second answer: われる (割れる) and 折れる both gloss 'quebrar / to break', but 折れる is never read われる."
+   },
+   {
+    "id": "or:n4:1226",
+    "bank": "n4_orthography",
+    "stem": "しゅっぱつ",
+    "correct": "出発",
+    "distractor": "試合",
+    "signals": [
+     "gloss-pt"
+    ],
+    "key_gloss_pt": "partida",
+    "distractor_gloss_pt": [
+     "partida"
+    ],
+    "key_gloss_en": "departure",
+    "distractor_gloss_en": [
+     "match"
+    ],
+    "verdict": "not a second answer: pt-BR 'partida' is both 出発 (departure) and 試合 (match); 試合 is never spelled しゅっぱつ."
+   },
+   {
+    "id": "kr:n5:97",
+    "bank": "n5_kanji_reading",
+    "stem": "大きい",
+    "correct": "おおきい",
+    "distractor": "おおきな",
+    "signals": [
+     "gloss-pt",
+     "gloss-en"
+    ],
+    "key_gloss_pt": "grande",
+    "distractor_gloss_pt": [
+     "grande"
+    ],
+    "key_gloss_en": "big",
+    "distractor_gloss_en": [
+     "big"
+    ],
+    "verdict": "not a second answer: 大きな is a different word (adnominal); おおきな does not read 大きい and its tail な does not match the printed い."
+   }
+  ],
+  "limits": "cf was not read item by item: a semantic fit with no gloss overlap would not surface here."
+ },
+ "context_underdetermined": {
+  "what": "Not equivalents, so the table cannot and should not catch them: the distractor means something else, but the stem gives no context that rules it out (gf:n5:4292 is the bare stem 「（　）？」). Judged by one reader while reading every gf/tg item; the teacher loop decides. Mechanical levers, not in this patch: a minimum of stem content outside the blank; refusing a distractor that attaches to the same stem shape as the key (た/て-forms after a する or ichidan stem, e.g. gf:n4:3509-3513 たらいいですか vs たらどうですか).",
+  "items": [
+   {
+    "id": "gf:n3:4963",
+    "bank": "n3_grammar_form",
+    "correct": "その上",
+    "distractors_that_fit": [
+     "なんか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "その上雨が降り出している。",
+    "sentences_with_distractor": [
+     "なんか雨が降り出している。"
+    ]
+   },
+   {
+    "id": "gf:n3:5007",
+    "bank": "n3_grammar_form",
+    "correct": "なんか",
+    "distractors_that_fit": [
+     "つまり"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "なんかおかしくない？",
+    "sentences_with_distractor": [
+     "つまりおかしくない？"
+    ]
+   },
+   {
+    "id": "gf:n3:4157",
+    "bank": "n3_grammar_form",
+    "correct": "くせに",
+    "distractors_that_fit": [
+     "かなあ"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "自分でもわかってるくせに。",
+    "sentences_with_distractor": [
+     "自分でもわかってるかなあ。"
+    ]
+   },
+   {
+    "id": "gf:n3:5052",
+    "bank": "n3_grammar_form",
+    "correct": "ところだった",
+    "distractors_that_fit": [
+     "つもりでした",
+     "わけではない"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "彼女は家を出るところだった。",
+    "sentences_with_distractor": [
+     "彼女は家を出るつもりでした。",
+     "彼女は家を出るわけではない。"
+    ]
+   },
+   {
+    "id": "gf:n3:5172",
+    "bank": "n3_grammar_form",
+    "correct": "っぱなし",
+    "distractors_that_fit": [
+     "ちゃった"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "くしゃみしっぱなし。",
+    "sentences_with_distractor": [
+     "くしゃみしちゃった。"
+    ]
+   },
+   {
+    "id": "gf:n3:5173",
+    "bank": "n3_grammar_form",
+    "correct": "っぱなし",
+    "distractors_that_fit": [
+     "たところ"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "電気つけっぱなしだよ。",
+    "sentences_with_distractor": [
+     "電気つけたところだよ。"
+    ]
+   },
+   {
+    "id": "gf:n3:5209",
+    "bank": "n3_grammar_form",
+    "correct": "ことにしている",
+    "distractors_that_fit": [
+     "ようになった"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "私は六時に起きることにしている。",
+    "sentences_with_distractor": [
+     "私は六時に起きるようになった。"
+    ]
+   },
+   {
+    "id": "gf:n3:5210",
+    "bank": "n3_grammar_form",
+    "correct": "ことにしている",
+    "distractors_that_fit": [
+     "わけにはいかない"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "私は朝早く起きることにしている。",
+    "sentences_with_distractor": [
+     "私は朝早く起きるわけにはいかない。"
+    ]
+   },
+   {
+    "id": "gf:n3:5212",
+    "bank": "n3_grammar_form",
+    "correct": "ことになっている",
+    "distractors_that_fit": [
+     "わけにはいかない"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "私は今夜話すことになっている。",
+    "sentences_with_distractor": [
+     "私は今夜話すわけにはいかない。"
+    ]
+   },
+   {
+    "id": "gf:n3:5213",
+    "bank": "n3_grammar_form",
+    "correct": "ことになっている",
+    "distractors_that_fit": [
+     "ようにしましょう",
+     "わけにはいかない"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "５時に駅で会うことになっている。",
+    "sentences_with_distractor": [
+     "５時に駅で会うようにしましょう。",
+     "５時に駅で会うわけにはいかない。"
+    ]
+   },
+   {
+    "id": "gf:n3:5216",
+    "bank": "n3_grammar_form",
+    "correct": "ことになっている",
+    "distractors_that_fit": [
+     "ようにしましょう"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "私たちは明日７時に会うことになっている。",
+    "sentences_with_distractor": [
+     "私たちは明日７時に会うようにしましょう。"
+    ]
+   },
+   {
+    "id": "gf:n3:5217",
+    "bank": "n3_grammar_form",
+    "correct": "つもりでした",
+    "distractors_that_fit": [
+     "ようになった"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "私はアメリカで医学を学ぶつもりでした。",
+    "sentences_with_distractor": [
+     "私はアメリカで医学を学ぶようになった。"
+    ]
+   },
+   {
+    "id": "gf:n3:5229",
+    "bank": "n3_grammar_form",
+    "correct": "ようにしましょう",
+    "distractors_that_fit": [
+     "ことになっている"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "問題点からそれないようにしましょう。",
+    "sentences_with_distractor": [
+     "問題点からそれないことになっている。"
+    ]
+   },
+   {
+    "id": "gf:n3:5245",
+    "bank": "n3_grammar_form",
+    "correct": "ようにしましょう",
+    "distractors_that_fit": [
+     "ことになっている",
+     "わけにはいかない"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "今後、あなたの仕事を手伝うようにしましょう。",
+    "sentences_with_distractor": [
+     "今後、あなたの仕事を手伝うことになっている。",
+     "今後、あなたの仕事を手伝うわけにはいかない。"
+    ]
+   },
+   {
+    "id": "gf:n3:5248",
+    "bank": "n3_grammar_form",
+    "correct": "ようになった",
+    "distractors_that_fit": [
+     "わけではない"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "その子は早くから話せるようになった。",
+    "sentences_with_distractor": [
+     "その子は早くから話せるわけではない。"
+    ]
+   },
+   {
+    "id": "gf:n3:5250",
+    "bank": "n3_grammar_form",
+    "correct": "ようになった",
+    "distractors_that_fit": [
+     "わけではない"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "スペックを上げたらサクサク動くようになった。",
+    "sentences_with_distractor": [
+     "スペックを上げたらサクサク動くわけではない。"
+    ]
+   },
+   {
+    "id": "gf:n3:5257",
+    "bank": "n3_grammar_form",
+    "correct": "ことはない",
+    "distractors_that_fit": [
+     "といいなあ"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "止まることはない。",
+    "sentences_with_distractor": [
+     "止まるといいなあ。"
+    ]
+   },
+   {
+    "id": "gf:n3:5266",
+    "bank": "n3_grammar_form",
+    "correct": "てごらん",
+    "distractors_that_fit": [
+     "てほしい",
+     "ちゃった"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "見つけてごらん。",
+    "sentences_with_distractor": [
+     "見つけてほしい。",
+     "見つけちゃった。"
+    ]
+   },
+   {
+    "id": "gf:n3:5267",
+    "bank": "n3_grammar_form",
+    "correct": "てごらん",
+    "distractors_that_fit": [
+     "てほしい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "手を見せてごらん。",
+    "sentences_with_distractor": [
+     "手を見せてほしい。"
+    ]
+   },
+   {
+    "id": "gf:n3:5278",
+    "bank": "n3_grammar_form",
+    "correct": "べきだ",
+    "distractors_that_fit": [
+     "ように"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "真実を言うべきだ。",
+    "sentences_with_distractor": [
+     "真実を言うように。"
+    ]
+   },
+   {
+    "id": "gf:n3:5279",
+    "bank": "n3_grammar_form",
+    "correct": "べきだ",
+    "distractors_that_fit": [
+     "ように"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "自分自身を知るべきだ。",
+    "sentences_with_distractor": [
+     "自分自身を知るように。"
+    ]
+   },
+   {
+    "id": "gf:n3:5284",
+    "bank": "n3_grammar_form",
+    "correct": "てみる",
+    "distractors_that_fit": [
+     "ている"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "考え直してみるわ。",
+    "sentences_with_distractor": [
+     "考え直しているわ。"
+    ]
+   },
+   {
+    "id": "gf:n3:5482",
+    "bank": "n3_grammar_form",
+    "correct": "はずだ",
+    "distractors_that_fit": [
+     "わけだ"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "ここにいるはずだ。",
+    "sentences_with_distractor": [
+     "ここにいるわけだ。"
+    ]
+   },
+   {
+    "id": "gf:n3:5483",
+    "bank": "n3_grammar_form",
+    "correct": "はずだ",
+    "distractors_that_fit": [
+     "くせに"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "失せろと言ったはずだ。",
+    "sentences_with_distractor": [
+     "失せろと言ったくせに。"
+    ]
+   },
+   {
+    "id": "gf:n3:5496",
+    "bank": "n3_grammar_form",
+    "correct": "みたいだ",
+    "distractors_that_fit": [
+     "んだって"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "済んだみたいだね。",
+    "sentences_with_distractor": [
+     "済んだんだってね。"
+    ]
+   },
+   {
+    "id": "gf:n4:3353",
+    "bank": "n4_grammar_form",
+    "correct": "後で",
+    "distractors_that_fit": [
+     "まず"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "後で考えとく。",
+    "sentences_with_distractor": [
+     "まず考えとく。"
+    ]
+   },
+   {
+    "id": "gf:n4:3362",
+    "bank": "n4_grammar_form",
+    "correct": "ばかり",
+    "distractors_that_fit": [
+     "みたい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "父は帰国したばかりだ。",
+    "sentences_with_distractor": [
+     "父は帰国したみたいだ。"
+    ]
+   },
+   {
+    "id": "gf:n4:3410",
+    "bank": "n4_grammar_form",
+    "correct": "しかない",
+    "distractors_that_fit": [
+     "んですが"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "やるしかない。",
+    "sentences_with_distractor": [
+     "やるんですが。"
+    ]
+   },
+   {
+    "id": "gf:n4:3509",
+    "bank": "n4_grammar_form",
+    "correct": "たらどうですか",
+    "distractors_that_fit": [
+     "たらいいですか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "もう帰ったらどうですか。",
+    "sentences_with_distractor": [
+     "もう帰ったらいいですか。"
+    ]
+   },
+   {
+    "id": "gf:n4:3510",
+    "bank": "n4_grammar_form",
+    "correct": "たらどうですか",
+    "distractors_that_fit": [
+     "たらいいですか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "映画に行ったらどうですか。",
+    "sentences_with_distractor": [
+     "映画に行ったらいいですか。"
+    ]
+   },
+   {
+    "id": "gf:n4:3511",
+    "bank": "n4_grammar_form",
+    "correct": "たらどうですか",
+    "distractors_that_fit": [
+     "たらいいですか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "すぐに出発したらどうですか。",
+    "sentences_with_distractor": [
+     "すぐに出発したらいいですか。"
+    ]
+   },
+   {
+    "id": "gf:n4:3512",
+    "bank": "n4_grammar_form",
+    "correct": "たらどうですか",
+    "distractors_that_fit": [
+     "たらいいですか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "明日ゴルフをしたらどうですか。",
+    "sentences_with_distractor": [
+     "明日ゴルフをしたらいいですか。"
+    ]
+   },
+   {
+    "id": "gf:n4:3513",
+    "bank": "n4_grammar_form",
+    "correct": "たらどうですか",
+    "distractors_that_fit": [
+     "たらいいですか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "パーティーを開いたらどうですか。",
+    "sentences_with_distractor": [
+     "パーティーを開いたらいいですか。"
+    ]
+   },
+   {
+    "id": "gf:n4:3522",
+    "bank": "n4_grammar_form",
+    "correct": "ません",
+    "distractors_that_fit": [
+     "ちゃう"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "力が出ません。",
+    "sentences_with_distractor": [
+     "力が出ちゃう。"
+    ]
+   },
+   {
+    "id": "gf:n4:3524",
+    "bank": "n4_grammar_form",
+    "correct": "ません",
+    "distractors_that_fit": [
+     "づらい",
+     "ちゃう"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "聞こえませんよ。",
+    "sentences_with_distractor": [
+     "聞こえづらいよ。",
+     "聞こえちゃうよ。"
+    ]
+   },
+   {
+    "id": "gf:n4:3567",
+    "bank": "n4_grammar_form",
+    "correct": "られる",
+    "distractors_that_fit": [
+     "ていた"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "手に入れられると思いますよ。",
+    "sentences_with_distractor": [
+     "手に入れていたと思いますよ。"
+    ]
+   },
+   {
+    "id": "gf:n4:3572",
+    "bank": "n4_grammar_form",
+    "correct": "なおす",
+    "distractors_that_fit": [
+     "させる"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "私は４時に電話をかけなおすつもりです。",
+    "sentences_with_distractor": [
+     "私は４時に電話をかけさせるつもりです。"
+    ]
+   },
+   {
+    "id": "gf:n4:3659",
+    "bank": "n4_grammar_form",
+    "correct": "見える",
+    "distractors_that_fit": [
+     "みたい"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "花火が見える！",
+    "sentences_with_distractor": [
+     "花火がみたい！"
+    ]
+   },
+   {
+    "id": "gf:n4:3701",
+    "bank": "n4_grammar_form",
+    "correct": "だいたい",
+    "distractors_that_fit": [
+     "ほとんど"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "だいたい６時です。",
+    "sentences_with_distractor": [
+     "ほとんど６時です。"
+    ]
+   },
+   {
+    "id": "gf:n4:3705",
+    "bank": "n4_grammar_form",
+    "correct": "だいたい",
+    "distractors_that_fit": [
+     "なるべく"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "だいたい８時に家に着きます。",
+    "sentences_with_distractor": [
+     "なるべく８時に家に着きます。"
+    ]
+   },
+   {
+    "id": "gf:n4:3723",
+    "bank": "n4_grammar_form",
+    "correct": "はずです",
+    "distractors_that_fit": [
+     "そうです",
+     "んだけど"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "家に帰りなさいと言ったはずです。",
+    "sentences_with_distractor": [
+     "家に帰りなさいと言ったそうです。",
+     "家に帰りなさいと言ったんだけど。"
+    ]
+   },
+   {
+    "id": "gf:n4:3728",
+    "bank": "n4_grammar_form",
+    "correct": "はずがない",
+    "distractors_that_fit": [
+     "のだろうか",
+     "といいです"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "これは本物のダイヤであるはずがない。",
+    "sentences_with_distractor": [
+     "これは本物のダイヤであるのだろうか。",
+     "これは本物のダイヤであるといいです。"
+    ]
+   },
+   {
+    "id": "gf:n4:3776",
+    "bank": "n4_grammar_form",
+    "correct": "きっと",
+    "distractors_that_fit": [
+     "やっと"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "きっと万事うまくいく。",
+    "sentences_with_distractor": [
+     "やっと万事うまくいく。"
+    ]
+   },
+   {
+    "id": "gf:n4:3785",
+    "bank": "n4_grammar_form",
+    "correct": "ことがある",
+    "distractors_that_fit": [
+     "のだろうか"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "私はそれを見たことがある。",
+    "sentences_with_distractor": [
+     "私はそれを見たのだろうか。"
+    ]
+   },
+   {
+    "id": "gf:n4:3787",
+    "bank": "n4_grammar_form",
+    "correct": "ことがある",
+    "distractors_that_fit": [
+     "のだろうか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "いびきをかいたことがある？",
+    "sentences_with_distractor": [
+     "いびきをかいたのだろうか？"
+    ]
+   },
+   {
+    "id": "gf:n4:3791",
+    "bank": "n4_grammar_form",
+    "correct": "ことができる",
+    "distractors_that_fit": [
+     "かもしれない"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "私は少し英語を話すことができる。",
+    "sentences_with_distractor": [
+     "私は少し英語を話すかもしれない。"
+    ]
+   },
+   {
+    "id": "gf:n4:3847",
+    "bank": "n4_grammar_form",
+    "correct": "なければいけない",
+    "distractors_that_fit": [
+     "たらどうですか",
+     "させてください"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "私は食べなければいけない。",
+    "sentences_with_distractor": [
+     "私は食べたらどうですか。",
+     "私は食べさせてください。"
+    ]
+   },
+   {
+    "id": "gf:n4:3852",
+    "bank": "n4_grammar_form",
+    "correct": "なければならない",
+    "distractors_that_fit": [
+     "たらどうですか",
+     "たらいいですか"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "少し買い物をしなければならない。",
+    "sentences_with_distractor": [
+     "少し買い物をしたらどうですか。",
+     "少し買い物をしたらいいですか。"
+    ]
+   },
+   {
+    "id": "gf:n4:3857",
+    "bank": "n4_grammar_form",
+    "correct": "なら",
+    "distractors_that_fit": [
+     "など"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "明日の朝なら空いています。",
+    "sentences_with_distractor": [
+     "明日の朝など空いています。"
+    ]
+   },
+   {
+    "id": "gf:n4:3858",
+    "bank": "n4_grammar_form",
+    "correct": "なさい",
+    "distractors_that_fit": [
+     "ません"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "立ちなさい。",
+    "sentences_with_distractor": [
+     "立ちません。"
+    ]
+   },
+   {
+    "id": "gf:n4:3860",
+    "bank": "n4_grammar_form",
+    "correct": "なさい",
+    "distractors_that_fit": [
+     "ておく"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "勉強しなさい。",
+    "sentences_with_distractor": [
+     "勉強しておく。"
+    ]
+   },
+   {
+    "id": "gf:n4:3861",
+    "bank": "n4_grammar_form",
+    "correct": "なさい",
+    "distractors_that_fit": [
+     "にくい",
+     "づらい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "目を開けなさい。",
+    "sentences_with_distractor": [
+     "目を開けにくい。",
+     "目を開けづらい。"
+    ]
+   },
+   {
+    "id": "gf:n4:3873",
+    "bank": "n4_grammar_form",
+    "correct": "にくい",
+    "distractors_that_fit": [
+     "やすい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "答えにくい質問だな。",
+    "sentences_with_distractor": [
+     "答えやすい質問だな。"
+    ]
+   },
+   {
+    "id": "gf:n4:3875",
+    "bank": "n4_grammar_form",
+    "correct": "にくい",
+    "distractors_that_fit": [
+     "ないと"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "この質問は答えにくいな。",
+    "sentences_with_distractor": [
+     "この質問は答えないとな。"
+    ]
+   },
+   {
+    "id": "tg:n4:n4-oracoes-relativas-06-01",
+    "bank": "n4_text_grammar",
+    "correct": "ません",
+    "distractors_that_fit": [
+     "にくい"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "来週、友だちと山へ行くかどうか、まだ分かりません。",
+    "sentences_with_distractor": [
+     "来週、友だちと山へ行くかどうか、まだ分かりにくい。"
+    ]
+   },
+   {
+    "id": "tg:n4:n4-conectores-03-01",
+    "bank": "n4_text_grammar",
+    "correct": "たとえば",
+    "distractors_that_fit": [
+     "だいたい"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "たとえば、駅の前の店のパンは安くておいしいです。",
+    "sentences_with_distractor": [
+     "だいたい、駅の前の店のパンは安くておいしいです。"
+    ]
+   },
+   {
+    "id": "gf:n5:54",
+    "bank": "n5_grammar_form",
+    "correct": "たほうがいい",
+    "distractors_that_fit": [
+     "てもいいです"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "さっさと行ったほうがいい。",
+    "sentences_with_distractor": [
+     "さっさと行ってもいいです。"
+    ]
+   },
+   {
+    "id": "gf:n5:60",
+    "bank": "n5_grammar_form",
+    "correct": "なあ",
+    "distractors_that_fit": [
+     "です"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "キツイなあ。",
+    "sentences_with_distractor": [
+     "キツイです。"
+    ]
+   },
+   {
+    "id": "gf:n5:83",
+    "bank": "n5_grammar_form",
+    "correct": "てもいいです",
+    "distractors_that_fit": [
+     "ちゃいけない"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "話してもいいですか。",
+    "sentences_with_distractor": [
+     "話しちゃいけないか。"
+    ]
+   },
+   {
+    "id": "gf:n5:2422",
+    "bank": "n5_grammar_form",
+    "correct": "どの",
+    "distractors_that_fit": [
+     "この"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "どの人があなたの先生ですか",
+    "sentences_with_distractor": [
+     "この人があなたの先生ですか"
+    ]
+   },
+   {
+    "id": "gf:n5:2501",
+    "bank": "n5_grammar_form",
+    "correct": "もう",
+    "distractors_that_fit": [
+     "その"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "もうお金がありません",
+    "sentences_with_distractor": [
+     "そのお金がありません"
+    ]
+   },
+   {
+    "id": "gf:n5:4205",
+    "bank": "n5_grammar_form",
+    "correct": "がいる",
+    "distractors_that_fit": [
+     "になる"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "人がいる。",
+    "sentences_with_distractor": [
+     "人になる。"
+    ]
+   },
+   {
+    "id": "gf:n5:4206",
+    "bank": "n5_grammar_form",
+    "correct": "がいる",
+    "distractors_that_fit": [
+     "になる",
+     "だけど"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "ネコがいる。",
+    "sentences_with_distractor": [
+     "ネコになる。",
+     "ネコだけど。"
+    ]
+   },
+   {
+    "id": "gf:n5:4292",
+    "bank": "n5_grammar_form",
+    "correct": "なぜ",
+    "distractors_that_fit": [
+     "する",
+     "もう",
+     "まだ"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "なぜ？",
+    "sentences_with_distractor": [
+     "する？",
+     "もう？",
+     "まだ？"
+    ]
+   },
+   {
+    "id": "gf:n5:4293",
+    "bank": "n5_grammar_form",
+    "correct": "なぜ",
+    "distractors_that_fit": [
+     "あれ",
+     "これ"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "なぜか？",
+    "sentences_with_distractor": [
+     "あれか？",
+     "これか？"
+    ]
+   },
+   {
+    "id": "gf:n5:4294",
+    "bank": "n5_grammar_form",
+    "correct": "なぜ",
+    "distractors_that_fit": [
+     "もう"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "なぜ聞くの？",
+    "sentences_with_distractor": [
+     "もう聞くの？"
+    ]
+   },
+   {
+    "id": "gf:n5:4296",
+    "bank": "n5_grammar_form",
+    "correct": "なぜ",
+    "distractors_that_fit": [
+     "あれ",
+     "まだ"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "なぜなんだろう。",
+    "sentences_with_distractor": [
+     "あれなんだろう。",
+     "まだなんだろう。"
+    ]
+   },
+   {
+    "id": "gf:n5:4330",
+    "bank": "n5_grammar_form",
+    "correct": "どれ",
+    "distractors_that_fit": [
+     "あれ"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "グリーンまでどれくらい？",
+    "sentences_with_distractor": [
+     "グリーンまであれくらい？"
+    ]
+   },
+   {
+    "id": "gf:n5:4331",
+    "bank": "n5_grammar_form",
+    "correct": "どれ",
+    "distractors_that_fit": [
+     "あの",
+     "その"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "どれくらいかかるのかしら。",
+    "sentences_with_distractor": [
+     "あのくらいかかるのかしら。",
+     "そのくらいかかるのかしら。"
+    ]
+   },
+   {
+    "id": "gf:n5:4382",
+    "bank": "n5_grammar_form",
+    "correct": "たほうがいい",
+    "distractors_that_fit": [
+     "てもいいです"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "もっと休みをとったほうがいい。",
+    "sentences_with_distractor": [
+     "もっと休みをとってもいいです。"
+    ]
+   },
+   {
+    "id": "gf:n5:4477",
+    "bank": "n5_grammar_form",
+    "correct": "ないといけない",
+    "distractors_that_fit": [
+     "ないほうがいい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "行かないといけないの？",
+    "sentences_with_distractor": [
+     "行かないほうがいいの？"
+    ]
+   },
+   {
+    "id": "gf:n5:4481",
+    "bank": "n5_grammar_form",
+    "correct": "ないといけない",
+    "distractors_that_fit": [
+     "ないほうがいい"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "何で学校に行かないといけないの？",
+    "sentences_with_distractor": [
+     "何で学校に行かないほうがいいの？"
+    ]
+   },
+   {
+    "id": "gf:n5:4591",
+    "bank": "n5_grammar_form",
+    "correct": "てもいいです",
+    "distractors_that_fit": [
+     "たほうがいい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "出てもいいですか。",
+    "sentences_with_distractor": [
+     "出たほうがいいか。"
+    ]
+   },
+   {
+    "id": "gf:n5:4593",
+    "bank": "n5_grammar_form",
+    "correct": "てもいいです",
+    "distractors_that_fit": [
+     "たほうがいい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "入ってもいいですか？",
+    "sentences_with_distractor": [
+     "入ったほうがいいか？"
+    ]
+   },
+   {
+    "id": "gf:n5:4595",
+    "bank": "n5_grammar_form",
+    "correct": "てもいいです",
+    "distractors_that_fit": [
+     "たほうがいい",
+     "なくてもいい"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "外に出てもいいですか？",
+    "sentences_with_distractor": [
+     "外に出たほうがいいか？",
+     "外に出なくてもいいか？"
+    ]
+   },
+   {
+    "id": "tg:n5:n5-perguntas-04-01",
+    "bank": "n5_text_grammar",
+    "correct": "あの",
+    "distractors_that_fit": [
+     "その"
+    ],
+    "confidence": "high",
+    "sentence_with_key": "あのかたはおじです。",
+    "sentences_with_distractor": [
+     "そのかたはおじです。"
+    ]
+   },
+   {
+    "id": "tg:n5:n5-te-form-05-01",
+    "bank": "n5_text_grammar",
+    "correct": "てはいけません",
+    "distractors_that_fit": [
+     "ないほうがいい"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "じゅぎょうの時間は、ここに来てはいけません。",
+    "sentences_with_distractor": [
+     "じゅぎょうの時間は、ここに来ないほうがいい。"
+    ]
+   },
+   {
+    "id": "tg:n5:n5-conectando-05-01",
+    "bank": "n5_text_grammar",
+    "correct": "ないほうがいい",
+    "distractors_that_fit": [
+     "ないといけない"
+    ],
+    "confidence": "low",
+    "sentence_with_key": "あたらしいようふくはきないほうがいいです。",
+    "sentences_with_distractor": [
+     "あたらしいようふくはきないといけないです。"
+    ]
+   }
+  ]
+ },
+ "residual_after_fix": [
+  {
+   "id": "gf:n4:3853",
+   "note": "The fix removes なければいけない; the next candidate is たらどうですか, and 「時間を大切にしたらどうですか。」 is a natural suggestion. Same context-underdetermined class as gf:n4:3852 (pre-existing): after a する / ichidan stem both the nai-stem forms and the た-forms attach.",
+   "distractors_after_fix": [
+    "させてください",
+    "と言ってもいい",
+    "たらどうですか"
+   ]
+  }
+ ],
+ "out_of_scope": {
+  "gf_blanks_cut_mid_word": {
+   "what": "grammar_form has no token-boundary guard (W16 gave one to text_grammar only). Listed: the blanked form ends inside a SudachiPy mode-C token, i.e. the answer runs on into the printed text: あなたの（　）す keyed おかげで (おかげです), 昨日来る（　）ったのに keyed べきだ (べきだった).",
+   "count": 10,
+   "items": [
+    {
+     "id": "gf:n3:5100",
+     "stem": "あなたの（　）す。",
+     "correct": "おかげで",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n3:5102",
+     "stem": "私がいるのは父の（　）す。",
+     "correct": "おかげで",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n3:5106",
+     "stem": "ごめんなさい。私の（　）す。",
+     "correct": "せいで",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n3:5108",
+     "stem": "風が強いのはビル風の（　）す。",
+     "correct": "せいで",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n3:5280",
+     "stem": "昨日来る（　）ったのに。",
+     "correct": "べきだ",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n3:5281",
+     "stem": "昨夜早めにねる（　）った。",
+     "correct": "べきだ",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n3:5282",
+     "stem": "私はその本を読む（　）った。",
+     "correct": "べきだ",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n4:3608",
+     "stem": "バスは発車す（　）った。",
+     "correct": "るところだ",
+     "starts_mid_token": true
+    },
+    {
+     "id": "gf:n4:3885",
+     "stem": "電話を発明した（　）れですか。",
+     "correct": "のはだ",
+     "starts_mid_token": false
+    },
+    {
+     "id": "gf:n4:3886",
+     "stem": "あなたが今ある（　）れのおかげなのですか。",
+     "correct": "のはだ",
+     "starts_mid_token": false
+    }
+   ],
+   "start_mid_token_only": {
+    "count": 39,
+    "note": "the blank starts inside a token but ends on a boundary: mostly the intended stem + suffix shape (親切にしてや（れば）, ダイエットしよ（うとした）), a few word-internal (ど（のような）, 仕（上げる）). Not listed item by item.",
+    "ids": [
+     "gf:n3:5140",
+     "gf:n3:5159",
+     "gf:n3:5160",
+     "gf:n3:5161",
+     "gf:n3:5195",
+     "gf:n3:5196",
+     "gf:n3:5197",
+     "gf:n3:5201",
+     "gf:n3:5202",
+     "gf:n3:5203",
+     "gf:n3:5204",
+     "gf:n3:5205",
+     "gf:n3:5206",
+     "gf:n3:5218",
+     "gf:n3:5219",
+     "gf:n3:5220",
+     "gf:n3:5224",
+     "gf:n3:5226",
+     "gf:n4:3402",
+     "gf:n4:3404",
+     "gf:n4:3414",
+     "gf:n4:3444",
+     "gf:n4:3514",
+     "gf:n4:3515",
+     "gf:n4:3516",
+     "gf:n4:3528",
+     "gf:n4:3529",
+     "gf:n4:3530",
+     "gf:n4:3531",
+     "gf:n4:3539",
+     "gf:n4:3540",
+     "gf:n4:3587",
+     "gf:n4:3588",
+     "gf:n4:3605",
+     "gf:n4:3619",
+     "gf:n4:3634",
+     "gf:n4:3643",
+     "gf:n4:3798",
+     "gf:n4:3900"
+    ]
+   }
+  }
+ },
+ "scratch_run": {
+  "parity": "unpatched HEAD builder over the snapshot reproduces all 18 HEAD auto-built banks item for item (0 differences)",
+  "delta": {
+   "n3_grammar_form": [
+    "gf:n3:5071",
+    "gf:n3:5095"
+   ],
+   "n3_orthography": [
+    "or:n3:1553"
+   ],
+   "n4_context_fill": [
+    "cf:n4:1:601"
+   ],
+   "n4_grammar_form": [
+    "gf:n4:3535",
+    "gf:n4:3536",
+    "gf:n4:3597",
+    "gf:n4:3845",
+    "gf:n4:3846",
+    "gf:n4:3847",
+    "gf:n4:3848",
+    "gf:n4:3850",
+    "gf:n4:3852",
+    "gf:n4:3853"
+   ],
+   "n5_grammar_form": [
+    "gf:n5:4328",
+    "gf:n5:63"
+   ]
+  },
+  "items_changed": 16,
+  "items_added_or_removed": 0,
+  "bank_order_unchanged": true,
+  "changed_equals_flagged": true,
+  "new_distractors": {
+   "gf:n3:5071": [
+    "ところで",
+    "かわりに",
+    "だけしか"
+   ],
+   "gf:n3:5095": [
+    "にとって",
+    "切れない",
+    "てほしい"
+   ],
+   "or:n3:1553": [
+    "会",
+    "歯",
+    "楽"
+   ],
+   "cf:n4:1:601": [
+    "心",
+    "間",
+    "鳥"
+   ],
+   "gf:n4:3535": [
+    "たばかり",
+    "はずです",
+    "たとえば"
+   ],
+   "gf:n4:3536": [
+    "そんなに",
+    "のように",
+    "に見える"
+   ],
+   "gf:n4:3597": [
+    "または",
+    "の中で",
+    "がする"
+   ],
+   "gf:n4:3845": [
+    "させてください",
+    "たらどうですか",
+    "と言ってもいい"
+   ],
+   "gf:n4:3846": [
+    "たらいいですか",
+    "させてください",
+    "と言ってもいい"
+   ],
+   "gf:n4:3847": [
+    "たらどうですか",
+    "させてください",
+    "と言ってもいい"
+   ],
+   "gf:n4:3848": [
+    "たらいいですか",
+    "させてください",
+    "と言ってもいい"
+   ],
+   "gf:n4:3850": [
+    "と言ってもいい",
+    "たらいいですか",
+    "させてください"
+   ],
+   "gf:n4:3852": [
+    "たらどうですか",
+    "たらいいですか",
+    "と言ってもいい"
+   ],
+   "gf:n4:3853": [
+    "させてください",
+    "と言ってもいい",
+    "たらどうですか"
+   ],
+   "gf:n5:4328": [
+    "なあ",
+    "ます",
+    "そこ"
+   ],
+   "gf:n5:63": [
+    "じゃない",
+    "たくさん",
+    "でしょう"
+   ]
+  }
+ }
+}

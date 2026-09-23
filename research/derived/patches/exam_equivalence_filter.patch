@@ -1,0 +1,289 @@
+diff --git a/scripts/export/build_exam_banks.py b/scripts/export/build_exam_banks.py
+index afcb1bc..8b80a71 100644
+--- a/scripts/export/build_exam_banks.py
++++ b/scripts/export/build_exam_banks.py
+@@ -73,6 +73,14 @@ of those findings; each is marked with the finding it closes.
+      way `validate_exam_stem_collisions.py` normalizes it, is already an item at this level: two
+      sentences that differ only in the blanked word printed どのくらい（　） keyed 大きい and 高い.
+ 
++ 17  NO SECOND RIGHT ANSWER. A distractor that is as right as the key is refused. Grammar forms by the
++     classes in design/exam_equivalents.json (`exam_rules.interchangeable`): gf:n4:3535 keyed のような
++     offered みたいな, seven N4 items keyed なければいけない offered なければならない or the reverse.
++     Vocab by the record itself: every JMdict reading of a spelling joins `hw_readings` (or:n3:1553
++     printed おん keyed 音 and offered 御, which also reads おん), and a `cf` candidate that shares a
++     sense-0 gloss with the key is skipped (「（　）に行ってください。」 keyed 前 offered 先).
++     Report: research/derived/pending/exam_equivalent_distractors.json.
++
+ RUN ORDER (W18): the authored, listening and reading_comp builders first, this one LAST — the
+ INDEX below is a glob over every bank file, so a bank written after it leaves a stale row.
+ 
+@@ -90,7 +98,8 @@ _sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.n
+ _sys.path.append(str(_pl.Path(__file__).resolve().parent))
+ from dbtarget import db_target  # noqa: E402
+ from exam_rules import (  # noqa: E402
+-    KANJI_RE, TaughtSets, has_kanji, kana_fold, option_ok, reading_link_ok,
++    KANJI_RE, TaughtSets, has_kanji, interchangeable, kana_fold, load_equivalents, option_ok,
++    reading_link_ok,
+ )
+ import bunsetsu  # noqa: E402
+ _sys.path.append(str(_pl.Path(__file__).resolve().parents[1] / "validate"))
+@@ -235,6 +244,7 @@ def main() -> int:
+ 
+     # ---- the level rule (W03), from the course export -----------------------------------------
+     taught = TaughtSets(root)
++    equiv = load_equivalents()
+ 
+     vocab = [dict(zip(("id", "slug", "hw", "kana", "lex", "lvl", "common", "freq"), r))
+              for r in con.execute(
+@@ -247,6 +257,16 @@ def main() -> int:
+     hw_readings: dict[str, set[str]] = {}
+     for v in vocab:
+         hw_readings.setdefault(v["hw"], set()).add(v["kana"])
++    # Fix 17: and every reading JMdict gives the spelling, including readings no record here keeps —
++    # 御 reads おん, and or:n3:1553 offered it against the key 音 for the stem おん.
++    if con.execute("SELECT name FROM sqlite_master WHERE name='raw_jmdict_entry'").fetchone():
++        for (data,) in con.execute("SELECT data FROM raw_jmdict_entry ORDER BY ent_seq"):
++            e = json.loads(data)
++            for r in e.get("kana", []):
++                applies = r.get("appliesToKanji") or ["*"]
++                for k in e.get("kanji", []):
++                    if "*" in applies or k["text"] in applies:
++                        hw_readings.setdefault(k["text"], set()).add(r["text"])
+ 
+     # pt-BR text for the derived `explanation` (fix 15) comes from `localized_text`, the locale
+     # module (design/i18n.md) — NOT from the legacy `*_pt` columns. `sentence.pt` is NULL on all
+@@ -255,6 +275,7 @@ def main() -> int:
+     # repeated the answer.
+     LOC = "pt-BR"
+     gloss: dict[int, str] = {}          # vocab row id -> first gloss of sense 0
++    gloss_set: dict[int, set[str]] = {}  # vocab row id -> every gloss of that sense (fix 17)
+     for vid, val in con.execute(
+             "SELECT vs.vocab_id, lt.value FROM vocab_sense vs "
+             "JOIN localized_text lt ON lt.entity_type='vocab_sense' AND lt.entity_id=vs.id "
+@@ -268,6 +289,12 @@ def main() -> int:
+             g = []
+         if g:
+             gloss[vid] = str(g[0])
++            gloss_set[vid] = {str(x).strip().lower() for x in g}
++    # ... keyed by the PRINTED spelling: 先 is both さき ('à frente') and さっき ('agora há pouco'), and
++    # the learner reads the string, not the record the builder happened to draw it from.
++    gloss_of_hw: dict[str, set[str]] = {}
++    for v in vocab:
++        gloss_of_hw.setdefault(v["hw"], set()).update(gloss_set.get(v["id"], ()))
+     # grammar: the per-FORM meaning where the record has one, else the point's own label.
+     form_meaning: dict[str, str] = {}   # grammar key -> {form: meaning}
+     glabel: dict[str, str] = {}
+@@ -506,6 +533,10 @@ def main() -> int:
+                 for w in lv_vocab:
+                     if w["id"] == v["id"] or w["hw"] in jp:
+                         continue
++                    # fix 17: a word sharing a sense-0 gloss with the key fits the same blank —
++                    # 「（　）に行ってください。」 keyed 前 offered 先 (both 'à frente').
++                    if gloss_of_hw.get(w["hw"], set()) & gloss_set.get(v["id"], set()):
++                        continue
+                     cands.append((abs(len(w["hw"]) - len(v["hw"])) * 10
+                                   + (0 if w["lex"] == v["lex"] else 20), w["hw"]))
+                 cands.sort(key=lambda t: (t[0], spread(f"{sid}:{v['hw']}", t[1])))
+@@ -565,8 +596,11 @@ def main() -> int:
+                 # W17 fix 14: never offer another form of the SAME grammar point as a wrong answer —
+                 # んです was keyed with のです offered, and じゃない with ではない, on a point whose own
+                 # key is `janai-dewa-nai`.
++                # fix 17: nor a form that is as right as the key in this blank (のような / みたいな).
++                pre, post = jp.split(fm, 1)
+                 dis = [x for x in lv_forms
+-                       if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key]
++                       if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key
++                       and not interchangeable(fm, x, pre, post, equiv)]
+                 dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{sid}:{fm}", x)))
+                 if len(dis) >= 3:
+                     gf_stems.add(stem_key(jp.replace(fm, "（　）", 1)))
+@@ -656,7 +690,8 @@ def main() -> int:
+                 drop("text_grammar", "form-owner-grammar-above-level")
+                 continue
+             dis = [x for x in tg_forms
+-                   if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key]
++                   if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key
++                   and not interchangeable(fm, x, jp[:at], jp[at + len(fm):], equiv)]
+             dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{slug}:{fm}", x)))
+             if len(dis) >= 3:
+                 tg.append({"id": f"tg:{lvl}:{slug.split(':',1)[1]}", "level": lvl,
+diff --git a/scripts/export/exam_rules.py b/scripts/export/exam_rules.py
+index 7209d6c..c5d8b41 100644
+--- a/scripts/export/exam_rules.py
++++ b/scripts/export/exam_rules.py
+@@ -24,6 +24,8 @@ other about the same item. Those questions are:
+      (`よりほうが`, `とかとか`, `おになる`) as one of the four choices, which silently makes the item
+      3-option (qa_sweep/exam_japanese_2.md S3/F07).
+ 
++  4. **Would a distractor also be right?** — `interchangeable`, over design/exam_equivalents.json.
++
+ Imported by both builders; no side effects, no I/O beyond the course tree it is handed.
+ """
+ from __future__ import annotations
+@@ -203,3 +205,42 @@ def option_ok(form: str) -> bool:
+     if len(form) % 2 == 0 and form[: len(form) // 2] == form[len(form) // 2:]:
+         return False
+     return True
++
++
++# --------------------------------------------------------------------------------------------
++# 4. two options that are the same answer
++# --------------------------------------------------------------------------------------------
++# gf:n4:3535 「これはお茶（　）味だ。」 keyed のような and offered みたいな; gf:n4:3845 keyed
++# なければいけない and offered なければならない. The same-point rule (fix 14) cannot see these: the
++# forms belong to different grammar points. The classes live in design/exam_equivalents.json.
++EQUIVALENTS = Path(__file__).resolve().parents[2] / "design" / "exam_equivalents.json"
++
++
++def load_equivalents(path: Path = EQUIVALENTS) -> list[tuple[set[str], re.Pattern | None, re.Pattern | None]]:
++    out = []
++    for c in json.loads(path.read_text(encoding="utf-8"))["classes"]:
++        before = re.compile("(?:" + c["before"] + r")\Z") if c.get("before") else None
++        after = re.compile(c["after"]) if c.get("after") else None
++        out.append((set(c["forms"]), before, after))
++    return out
++
++
++def interchangeable(a: str, b: str, before: str, after: str, classes) -> bool:
++    """True when `b` printed in the blank would be as right as `a`: both in one class and the class
++    context (the text around the blank) holds."""
++    return any(a in forms and b in forms and a != b
++               and (bre is None or bre.search(before)) and (are is None or are.match(after))
++               for forms, bre, are in classes)
++
++
++if __name__ == "__main__":
++    eq = load_equivalents()
++    assert interchangeable("のような", "みたいな", "これはお茶", "味だ。", eq)
++    assert interchangeable("なければいけない", "なければならない", "待た", "。", eq)
++    assert interchangeable("どれ", "どの", "", "くらい？", eq) and not interchangeable("どれ", "どの", "", "が安い？", eq)
++    assert interchangeable("ごとに", "おきに", "この時計は１５分", "なる。", eq)
++    assert not interchangeable("おきに", "ごとに", "一行", "書け。", eq)          # every other row != every row
++    assert not interchangeable("けど", "でも", "ちょっと話があるんだ", "。", eq)   # でも is only 'but' sentence-initially
++    assert not interchangeable("ずに", "ないで", "私は外出せ", "家にいた。", eq)   # せ + ないで is not a word
++    assert not interchangeable("なきゃ", "ないと", "勉強し", "試験に落ちる。", eq)  # mid-sentence ないと is 'if not'
++    print("exam_rules: equivalence self-check ok")
+diff --git a/design/exam_equivalents.json b/design/exam_equivalents.json
+new file mode 100644
+index 0000000..170ec1f
+--- /dev/null
++++ b/design/exam_equivalents.json
+@@ -0,0 +1,118 @@
++{
++  "what_this_is": "Grammar forms that are interchangeable in the same blank. build_exam_banks.py never offers a member of a class as a distractor when the key is another member of the same class and the class context matches: gf:n4:3535 「これはお茶（　）味だ。」 keyed のような offered みたいな, which is just as correct. Read by scripts/export/exam_rules.py (load_equivalents / interchangeable).",
++  "layer": "C",
++  "needs_review": true,
++  "rule": "Two options are interchangeable when both are in one class's `forms` and the class context holds. `before` (optional) is a regex that must match the END of the text before the blank; `after` (optional) is a regex that must match the START of the text after it. A class with no context applies everywhere. Classes list exact option strings; a form reaches the option pool only through grammar_point.forms_json, so a member that no level attests is inert until it is.",
++  "evidence_key": {
++    "meaning": "the owning points' en form_meanings are identical once the register tag (formal / colloquial / casual / polite) is stripped",
++    "label": "the owning point's own label names the two spellings, e.g. '(後で / あとで)'",
++    "merge": "a W08 / W08b merge ledger pair (research/derived/grammar_merge_ledger.json, research/derived/pending/w08b_merges.json)",
++    "registry": "different points whose en form_meanings state the same function; quoted in `why`"
++  },
++  "classes": [
++    {"id": "like-adnominal", "forms": ["のような", "みたいな"],
++     "evidence": ["meaning: gp-77 のような / gp-76 みたいな / gp-153 のような = 'like / similar to (before a noun)'", "merge: W08b D5 (gp-154 -> gp-77); found_not_in_scope: gp-153 is a subset of gp-77", "registry: mitai-na 'that seems like / like a... (+ noun)'"],
++     "why": "Noun + のような and noun + みたいな are the formal and colloquial spellings of one pattern: お茶のような味 = お茶みたいな味."},
++    {"id": "like-adverbial", "forms": ["のように", "みたいに"],
++     "evidence": ["registry: gp-77 のように 'like / just as (before a verb/adjective, formal)', gp-76 みたいに 'like / the way of (before a verb/adjective, colloquial)', mitai-ni 'like / as (+ verb/adjective)'", "merge: W08b D5 (gp-154 のように -> gp-77)"],
++     "why": "The adverbial half of the same pair: 先生のように話す = 先生みたいに話す."},
++    {"id": "seem-after-noun", "forms": ["みたい", "みたいだ", "らしい"],
++     "evidence": ["registry: mitai-da みたい 'it seems like / like (informal)', n3-mitai-da 'seems / gives the impression of', rashii 'it seems that / typical of', n3-rashii 'seems that / from what they say'"],
++     "why": "All three attach to a bare noun, a na-stem or a plain clause: 病気みたい / 病気らしい."},
++    {"id": "seem-after-clause", "forms": ["ようだ", "みたい", "みたいだ", "らしい"], "before": "[いうくぐすつぬぶむるた]",
++     "evidence": ["registry: you-da 'it seems / it looks like (conjecture from evidence)' beside the three above"],
++     "why": "After a plain verb or i-adjective ようだ joins them (来るようだ = 来るみたいだ = 来るらしい). After a bare noun it needs の, so it is a real wrong answer there and the class does not apply."},
++    {"id": "conjecture", "forms": ["でしょう", "だろう"],
++     "evidence": ["meaning: deshou / darou = 'probably, must be; right?' (polite / casual)"],
++     "why": "Register pair of one conjecture."},
++    {"id": "te-shimau", "forms": ["てしまう", "ちゃう"],
++     "evidence": ["registry: te-shimau-chau forms {てしまう, ちゃう}, ちゃう = 'contracted, casual version of てしまう'", "merge: W08b D7 (gp-151 てしまう -> te-shimau-chau)"],
++     "why": "Contraction of the same auxiliary."},
++    {"id": "te-shimatta", "forms": ["てしまった", "ちゃった"],
++     "evidence": ["registry: n3-chatta 'ended up doing / did by accident (～ちゃった / ～じゃった)'"],
++     "why": "Past of the same contraction. てしまう vs ちゃった differ in tense and are not in one class."},
++    {"id": "de-shimau", "forms": ["でしまう", "じゃう"], "evidence": ["registry: te-shimau-chau formation (〜でしまう → 〜じゃう)"], "why": "Voiced allomorph pair."},
++    {"id": "de-shimatta", "forms": ["でしまった", "じゃった"], "evidence": ["label: n3-chatta (～ちゃった / ～じゃった)"], "why": "Voiced allomorph pair, past."},
++    {"id": "te-iru", "forms": ["ている", "てる"], "evidence": ["registry: te-iru / n3-te-iru 'to be doing'; the contraction is attested in bank sentences (話してる, 知ってる)"], "why": "い-drop contraction."},
++    {"id": "te-ita", "forms": ["ていた", "てた"], "evidence": ["registry: te-ita 'was doing (past continuous)'"], "why": "い-drop contraction, past."},
++    {"id": "te-imasu", "forms": ["ています", "てます"], "evidence": ["registry: te-iru"], "why": "い-drop contraction, polite."},
++    {"id": "te-oku", "forms": ["ておく", "とく"], "evidence": ["label: n3-toku '(とく / どく, contraction of ておく)'", "registry: te-oku 'to do in advance / just in case'"], "why": "Contraction of the same auxiliary: 考えておく = 考えとく."},
++    {"id": "te-oita", "forms": ["ておいた", "といた"], "evidence": ["label: n3-toku"], "why": "Same, past."},
++    {"id": "obligation", "forms": ["なければならない", "なければいけない", "なくてはならない", "なくてはいけない", "ないといけない", "なくちゃいけない", "なきゃいけない", "なきゃならない"],
++     "evidence": ["registry: nakereba-ikenai 'to have to do / obligation', nakereba-naranai 'to have to do / obligation (more formal/general)', naito-ikenai 'to have to / to need to do', nakute-wa-ikenai 'to have to / cannot fail to do', nakute-wa-naranai 'to have to / it's necessary (formal)', gp-145 'to have to do (informal)'"],
++     "why": "Six registered spellings of one obligation. gf:n4:3845 「待た（　）。」 keyed なければいけない offered なければならない."},
++    {"id": "obligation-final", "forms": ["なければならない", "なければいけない", "なくてはならない", "なくてはいけない", "ないといけない", "なくちゃいけない", "なきゃいけない", "なきゃならない", "なきゃ", "なくちゃ", "ないと"],
++     "after": "(?:よね|[よねなわぞさ])?(?:[。．！!？?」』）)]|$)",
++     "evidence": ["meaning: gp-52 なきゃ / なくちゃ = 'I have to / I need to (do)'", "registry: nakucha 'I have to (casual contraction)', gp-117 ないと 'I have to / if not... (casual)', n3-nai-to 'if you don't... / you have to'"],
++     "why": "The clipped forms mean 'have to' only at the end of a sentence; mid-sentence なきゃ / ないと are conditionals ('if not'), so the class is limited to a sentence-final blank."},
++    {"id": "prohibition", "forms": ["てはいけない", "てはいけません", "ちゃいけない", "ちゃいけません", "てはだめ", "ちゃだめ"],
++     "evidence": ["registry: te-wa-ikenai 'cannot / it is forbidden', gp-139 てはいけません 'cannot, it is forbidden (polite)', cha-ikenai-ja-ikenai ちゃいけない 'cannot (do) (casual)'"],
++     "why": "Register and contraction variants of one prohibition."},
++    {"id": "prohibition-voiced", "forms": ["ではいけない", "ではいけません", "じゃいけない", "じゃいけません"], "evidence": ["registry: cha-ikenai-ja-ikenai じゃいけない 'cannot (do) (casual, after a voiced sound)'"], "why": "Voiced allomorph of the class above."},
++    {"id": "explanatory", "forms": ["のです", "んです"], "evidence": ["registry: gp-17 {んです, のです} 'it's that... (speech, polite / formal/written)', ndesu んです"], "why": "gp-17 owns both, but ndesu owns んです alone, so the same-point rule does not see the pair."},
++    {"id": "explanatory-plain", "forms": ["のだ", "んだ"], "evidence": ["registry: gp-17 / ndesu"], "why": "Plain form of the pair above."},
++    {"id": "explanatory-softened", "forms": ["んだけど", "んですが", "のですが", "のだけど"], "evidence": ["meaning: gp-116 んだけど / んですが = 'it's that... (explanatory)'"], "why": "Register pair of one softener."},
++    {"id": "neg-copula", "forms": ["じゃない", "ではない"], "evidence": ["registry: janai-dewa-nai {じゃない, ではない}", "merge: W08b D8 (gp-33 じゃない -> janai-dewa-nai)"], "why": "Colloquial and formal spellings of one negation."},
++    {"id": "neg-copula-past", "forms": ["じゃなかった", "ではなかった"], "evidence": ["registry: gp-34 じゃなかった 'was not / were not (casual)'"], "why": "Same, past."},
++    {"id": "neg-copula-polite", "forms": ["じゃありません", "ではありません"], "evidence": ["registry: janai-dewa-nai formation"], "why": "Same, polite."},
++    {"id": "tag-question", "forms": ["じゃないか", "ではないか"], "evidence": ["registry: janai-ka 'isn't it? / right? / what a...!', dewa-nai-ka 'isn't it though? / don't you think? (emphasis)'"], "why": "Two points, one pattern in two registers."},
++    {"id": "copula-past", "forms": ["だった", "でした"], "evidence": ["meaning: gp-32 だった / でした = 'was / were'"], "why": "Register pair."},
++    {"id": "copula-humble", "forms": ["でございます", "です"], "before": "[^い]",
++     "evidence": ["registry: de-gozaimasu 'to be / it is (very courteous)', da-desu です 'to be (polite)'", "merge: W08 gp -> da-desu"],
++     "why": "After a noun both are right (サービスです = サービスでございます). After an i-adjective でございます is wrong, so the class stops there."},
++    {"id": "but-clause", "forms": ["けど", "けれど", "けれども"], "evidence": ["registry: kedo 'but / however / although (colloquial)', keredo-mo 'but / however / nevertheless (more formal)', gp-25 けど"], "why": "Register variants after a clause."},
++    {"id": "but-copula", "forms": ["だけど", "だけれど", "だけれども", "だが", "ですが", "ですけど", "ですけれども"],
++     "evidence": ["meaning: gp-61 だが / ですが = 'but / however'", "label: n3-dakedo (だけど / けど)", "registry: gp-25 だけど 'but / only that (after a noun or na-adjective)'"],
++     "why": "All attach after a noun, a na-stem or ん: 知ってたらよかったんだけど = ...んだが."},
++    {"id": "but-sentence-initial", "forms": ["でも", "だけど", "けど", "けれども", "しかし", "だが", "ですが"], "before": "(?:^|[。！!？?」』\\n])\\s*",
++     "evidence": ["registry: demo 'but, however', shikashi 'however / nevertheless', n3-dakedo 'but / it's just that / even so', keredo-mo, gp-61"],
++     "why": "At the start of a sentence they are all the conjunction 'but'. Mid-sentence でも is 'even' and けど follows a clause, so the class is limited to sentence-initial blanks (gf:n5:4278 ...んだ（　） keyed けど with でも offered stays a valid item)."},
++    {"id": "reason", "forms": ["から", "ので"], "before": "(?:ます|ました|です|でした|ません|ませんでした|ない|なかった|たい|かった)",
++     "evidence": ["registry: kara 'because / from (cause or starting point)', node 'because / since (reason)'"],
++     "why": "Interchangeable only as REASON after a predicate. から is also 'from' (それから, 東京から) and ので needs な after a noun, so the class is limited to predicate endings it can recognise without a parser."},
++    {"id": "interval", "forms": ["ごとに", "おきに"], "before": "(?:分|秒|時間)",
++     "evidence": ["registry: gp-70 ごとに 'each / per / for each', oki-ni おきに 'every ~ / every X'"],
++     "why": "15分ごとに = 15分おきに. With days or rows they differ (一日おき = every other day), so the class is limited to minutes, seconds and hours."},
++    {"id": "how-much", "forms": ["どれ", "どの"], "after": "[くぐ]らい",
++     "evidence": ["registry: gp-38 どれ 'which? (pronoun)', gp-40 どの 'which / what ...? (before a noun)'", "label: n3-kurai (くらい / ぐらい)"],
++     "why": "どれくらい = どのくらい. Before any other word only one of them fits."},
++    {"id": "approx", "forms": ["くらい", "ぐらい"], "evidence": ["label: n3-kurai (くらい / ぐらい)", "label: gp-44 くらい / ぐらい"], "why": "Free variants."},
++    {"id": "approx-time", "forms": ["ごろ", "ころ", "頃"], "evidence": ["label: koro-goro (頃 ころ / ごろ)", "registry: gp-68 ごろ 'around / about (approximate time)'"], "why": "Spellings of one suffix."},
++    {"id": "wonder", "forms": ["かな", "かしら", "かなあ"],
++     "evidence": ["registry: kana 'I wonder if...? / who knows (casual, gender-neutral)', ka-shira 'I wonder if...? (soft, traditionally feminine)', n3-kanaa 'I wonder / who knows'"],
++     "why": "Three registers of one sentence-final."},
++    {"id": "hard-to", "forms": ["にくい", "づらい"], "evidence": ["registry: nikui 'hard to do', zurai 'hard/troublesome to do'"], "why": "Both follow the masu-stem: 読みにくい = 読みづらい."},
++    {"id": "about", "forms": ["について", "に関して"],
++     "evidence": ["registry: n3-ni-tsuite 'about / regarding', n3-ni-kanshite 'with regard to / as for'"],
++     "why": "gf:n3:5071 ...人（　）も言える keyed について offered に関して, and gf:n3:5095 それ（　）は同意しかねます the other way round."},
++    {"id": "according-to", "forms": ["によれば", "によると"], "evidence": ["registry: n3-ni-yoreba 'according to / based on'"], "why": "Conditional-form variants of one hearsay source marker."},
++    {"id": "without", "forms": ["ないで", "ずに"], "before": "[^しせ]", "after": "(?!ください|下さい)",
++     "evidence": ["registry: naide 'without doing / instead of doing', n3-naide 'without doing (something)', n3-zu-ni 'without doing (something) / without'"],
++     "why": "Same slot on the same nai-stem, except する (しないで / せずに: the stem letter differs, so the other form is wrong there) and ないでください (a request, not 'without')."},
++    {"id": "invitation", "forms": ["ましょう", "ませんか"], "after": "(?:[。．！!]|$)",
++     "evidence": ["registry: mashou 'let's (do something)', masen-ka 'won't you...? (polite invitation)'"],
++     "why": "gf:n5:63 「行き（　）。」 keyed ましょう offered ませんか: with nothing else in the stem both are the invitation."},
++    {"id": "suggestion", "forms": ["たらどうですか", "たらどう", "たらどうか"], "after": "(?:[。．！!？?]|$)",
++     "evidence": ["registry: gp-146 たらどうですか 'how about...? / why don't you...?', tara-dou たらどう 'how about...? (suggestion)'"],
++     "why": "Register pair, sentence-final only (…たらどう（　）ですか would print ですか twice)."},
++    {"id": "why", "forms": ["なぜ", "どうして", "なんで"], "evidence": ["registry: gp-30 なぜ 'why (neutral to formal)', doushite 'why?', gp-31 なんで 'why (colloquial)'"], "why": "Three registers of 'why'."},
++    {"id": "hope", "forms": ["といい", "といいです", "といいな", "といいなあ"], "after": "(?:[。．！!]|$)",
++     "evidence": ["registry: gp-82 といいです 'I hope that / let's hope that (polite)', n3-to-ii-naa といいなあ 'I hope that / I wish that'"],
++     "why": "Register variants of one wish, sentence-final only (といいなあ does not take ね / よ after it)."},
++    {"id": "just-did", "forms": ["たばかり", "たところ"], "after": "(?:だ|です|で|なの)",
++     "evidence": ["registry: ta-bakari 'to have just done', ta-tokoro 'to have just done (〜たところだ)'"],
++     "why": "今着いたばかりだ = 今着いたところだ. Before a comma たところ is 'upon doing' (n3-ta-tokoro) and the class does not apply."},
++    {"id": "favour", "forms": ["てあげる", "てやる"], "evidence": ["registry: te-ageru 'to do a favor for someone', te-yaru 'to do something for someone of equal or lower status'"], "why": "Register pair."},
++    {"id": "then", "forms": ["そして", "それから"], "before": "(?:^|[。！!？?」』\\n])\\s*",
++     "evidence": ["registry: soshite 'and / and then', sore-kara 'and after that / and moreover'"],
++     "why": "Sentence-initial sequencing connectors."},
++    {"id": "ortho-atode", "forms": ["後で", "あとで"], "evidence": ["label: ato-de (後で / あとで)"], "why": "One word, two scripts."},
++    {"id": "ortho-aida", "forms": ["間", "あいだ"], "evidence": ["label: aida (間 / あいだ)"], "why": "One word, two scripts."},
++    {"id": "ortho-aidani", "forms": ["間に", "あいだに"], "evidence": ["label: aida-ni (間に / あいだに)"], "why": "One word, two scripts."},
++    {"id": "ortho-ichiban", "forms": ["一番", "いちばん"], "evidence": ["label: ichiban (一番 / いちばん)"], "why": "One word, two scripts."},
++    {"id": "ortho-issho", "forms": ["一緒に", "いっしょに"], "evidence": ["label: issho-ni (一緒に / いっしょに)"], "why": "One word, two scripts."},
++    {"id": "ortho-maeni", "forms": ["前に", "まえに"], "evidence": ["label: mae-ni (〜まえに / 前に)"], "why": "One word, two scripts."},
++    {"id": "ortho-baai", "forms": ["場合は", "ばあいは"], "evidence": ["label: baai-wa (場合は / ばあいは)"], "why": "One word, two scripts."},
++    {"id": "ortho-mirareru", "forms": ["が見られる", "がみられる"], "evidence": ["label: gp-132 (〜が見られる/がみられる)"], "why": "One word, two scripts."}
++  ]
++}
