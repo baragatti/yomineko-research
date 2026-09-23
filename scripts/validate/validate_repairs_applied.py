@@ -1981,7 +1981,10 @@ def handle_w08b_merges(rows, sents, gram, table):
                 banks[r["file"]] = ({it.get("id"): it for it in json.loads(f.read_text(encoding="utf-8"))}
                                     if f.is_file() else {})
             it = banks[r["file"]].get(r["id"])
-            if it is None:
+            if it is None and r.get("retired_by"):
+                # P1-exam-fixes: a later builder rule dropped the item; the row names that rule.
+                out.append(("skip", "", addr, f"item retired by {r['retired_by']}: {r['retired_why']}"))
+            elif it is None:
                 out.append(("fail", C_NO_RECORD, addr, "no such item in the bank"))
             elif it.get("grammar") != r["new"]:
                 out.append(("fail", C_NOT_APPLIED if it.get("grammar") == r["old"] else C_VALUE_MISMATCH,

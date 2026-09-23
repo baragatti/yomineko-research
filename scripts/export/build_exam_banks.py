@@ -73,6 +73,30 @@ of those findings; each is marked with the finding it closes.
      way `validate_exam_stem_collisions.py` normalizes it, is already an item at this level: two
      sentences that differ only in the blanked word printed どのくらい（　） keyed 大きい and 高い.
 
+ 17  NO SECOND RIGHT ANSWER. A distractor that is as right as the key is refused. Grammar forms by the
+     classes in design/exam_equivalents.json (`exam_rules.interchangeable`): gf:n4:3535 keyed のような
+     offered みたいな, seven N4 items keyed なければいけない offered なければならない or the reverse.
+     Vocab by the record itself: every JMdict reading of a spelling joins `hw_readings` (or:n3:1553
+     printed おん keyed 音 and offered 御, which also reads おん), and a `cf` candidate that shares a
+     sense-0 gloss with the key is skipped (「（　）に行ってください。」 keyed 前 offered 先).
+     Report: research/derived/pending/exam_equivalent_distractors.json.
+
+ 18  THE STEM MUST RULE THE DISTRACTOR OUT. A wrong answer that makes the stem a fine sentence is a
+     second key even when it means something else: 「もう帰っ（　）。」 keyed たらどうですか offered
+     たらいいですか. `gf` / `tg` refuse a distractor that (a) turns the stem into a bank sentence or
+     (b) the corpus shows in the same slot — attached, token-aligned, to a word of the same POS and
+     conjugation form (`slot_shape`). What is left does not attach there. `gf` also blanks at
+     SudachiPy token boundaries only (W16's rule): 「あなたの（　）す。」 keyed おかげで.
+ 19  ENOUGH STEM TO JUDGE BY. A `gf` stem needs MIN_STEM_CONTENT content tokens outside the blank:
+     「（　）？」 keyed なぜ is answered as well by なあ or まで. Measured, not guessed — 0 leaves
+     those, 1 leaves inversions (「キツイ（　）。」 with これ), 3 halves n5_grammar_form.
+     Report: research/reports/exam_builder_fixes_2.md.
+ 20  A TAUGHT WORD UNDER TEST. `kanji_reading` / `orthography` key on a word some lesson up to the
+     level unlocks (`exam_rules.TaughtSets.word_taught`). Today the cks vocab IS that union, so this
+     moves no item; it pins the rule should the cks ever widen. W24's "72 of 1,953" joined bank slugs
+     to the DB's `vocab:<headword>` unlock refs; against the export all 1,953 test a taught word.
+     Report: research/reports/exam_taught_word_rule.md.
+
 RUN ORDER (W18): the authored, listening and reading_comp builders first, this one LAST — the
 INDEX below is a glob over every bank file, so a bank written after it leaves a stale row.
 
@@ -90,7 +114,8 @@ _sys.path.append(str(next(p for p in _pl.Path(__file__).resolve().parents if p.n
 _sys.path.append(str(_pl.Path(__file__).resolve().parent))
 from dbtarget import db_target  # noqa: E402
 from exam_rules import (  # noqa: E402
-    KANJI_RE, TaughtSets, has_kanji, kana_fold, option_ok, reading_link_ok,
+    KANJI_RE, TaughtSets, has_kanji, interchangeable, kana_fold, load_equivalents, option_ok,
+    reading_link_ok,
 )
 import bunsetsu  # noqa: E402
 _sys.path.append(str(_pl.Path(__file__).resolve().parents[1] / "validate"))
@@ -150,6 +175,47 @@ def boundary_occurrence(text: str, form: str, starts: set, ends: set) -> int:
             return i
         i = text.find(form, i + 1)
     return -1
+
+
+# Fix 19: POS that carry no context of their own. A stem is only as informative as the content words
+# printed around its blank; 「（　）？」 keyed なぜ has none, and する / もう / まだ fit it as well.
+FUNCTION_POS = {"助詞", "助動詞", "補助記号", "記号", "空白"}
+MIN_STEM_CONTENT = 2
+# Conjugation types whose 未然形 and 連用形 print the same string (食べ, し, 来, 入れられ).
+SAME_MIZEN_RENYOU = ("上一段", "下一段", "カ行変格", "サ行変格",
+                     "助動詞-レル", "助動詞-ラレル", "助動詞-セル", "助動詞-サセル")
+
+
+def slot_shape(ms, at: int) -> frozenset[str]:
+    """Fix 18: what a form printed at offset `at` of a tokenized text attaches to — the POS and
+    conjugation form of the token ending there, `|` at the text edge or after punctuation.
+
+    SudachiPy tags a conjugated word by what FOLLOWS it; the learner reads the string. So a string
+    that can be several forms is all of them: 言う is 終止形 before べき and 連体形 before ように, and
+    入れ is 未然形 before られる and 連用形 before ていた. 動詞 and 助動詞 are one class (an auxiliary
+    conjugates like the verb it extends) and every 連用形 variant is one (帰り, 帰っ). Coarser only
+    ever refuses more distractors, never admits one."""
+    m = next((m for m in ms if m.end() == at), None)
+    if m is None or m.part_of_speech()[0] in ("補助記号", "記号", "空白"):
+        return frozenset({"|"})
+    p = m.part_of_speech()
+    pos = "用言" if p[0] in ("動詞", "助動詞") else p[0]
+    c = p[5].split("-")[0]
+    if c == "*":
+        return frozenset({pos})
+    if c in ("終止形", "連体形"):
+        cs = ("終止形", "連体形")
+    elif c in ("未然形", "連用形") and p[4].startswith(SAME_MIZEN_RENYOU):
+        cs = ("未然形", "連用形")
+    else:
+        cs = (c,)
+    return frozenset(f"{pos}/{x}" for x in cs)
+
+
+def content_tokens(ms, at: int, end: int) -> int:
+    """Fix 19: content tokens printed outside the blank [at, end)."""
+    return sum(1 for m in ms if (m.end() <= at or m.begin() >= end)
+               and m.part_of_speech()[0] not in FUNCTION_POS)
 
 
 def hiragana_tail(s: str) -> str:
@@ -235,6 +301,7 @@ def main() -> int:
 
     # ---- the level rule (W03), from the course export -----------------------------------------
     taught = TaughtSets(root)
+    equiv = load_equivalents()
 
     vocab = [dict(zip(("id", "slug", "hw", "kana", "lex", "lvl", "common", "freq"), r))
              for r in con.execute(
@@ -247,6 +314,16 @@ def main() -> int:
     hw_readings: dict[str, set[str]] = {}
     for v in vocab:
         hw_readings.setdefault(v["hw"], set()).add(v["kana"])
+    # Fix 17: and every reading JMdict gives the spelling, including readings no record here keeps —
+    # 御 reads おん, and or:n3:1553 offered it against the key 音 for the stem おん.
+    if con.execute("SELECT name FROM sqlite_master WHERE name='raw_jmdict_entry'").fetchone():
+        for (data,) in con.execute("SELECT data FROM raw_jmdict_entry ORDER BY ent_seq"):
+            e = json.loads(data)
+            for r in e.get("kana", []):
+                applies = r.get("appliesToKanji") or ["*"]
+                for k in e.get("kanji", []):
+                    if "*" in applies or k["text"] in applies:
+                        hw_readings.setdefault(k["text"], set()).add(r["text"])
 
     # pt-BR text for the derived `explanation` (fix 15) comes from `localized_text`, the locale
     # module (design/i18n.md) — NOT from the legacy `*_pt` columns. `sentence.pt` is NULL on all
@@ -255,6 +332,7 @@ def main() -> int:
     # repeated the answer.
     LOC = "pt-BR"
     gloss: dict[int, str] = {}          # vocab row id -> first gloss of sense 0
+    gloss_set: dict[int, set[str]] = {}  # vocab row id -> every gloss of that sense (fix 17)
     for vid, val in con.execute(
             "SELECT vs.vocab_id, lt.value FROM vocab_sense vs "
             "JOIN localized_text lt ON lt.entity_type='vocab_sense' AND lt.entity_id=vs.id "
@@ -268,6 +346,12 @@ def main() -> int:
             g = []
         if g:
             gloss[vid] = str(g[0])
+            gloss_set[vid] = {str(x).strip().lower() for x in g}
+    # ... keyed by the PRINTED spelling: 先 is both さき ('à frente') and さっき ('agora há pouco'), and
+    # the learner reads the string, not the record the builder happened to draw it from.
+    gloss_of_hw: dict[str, set[str]] = {}
+    for v in vocab:
+        gloss_of_hw.setdefault(v["hw"], set()).update(gloss_set.get(v["id"], ()))
     # grammar: the per-FORM meaning where the record has one, else the point's own label.
     form_meaning: dict[str, str] = {}   # grammar key -> {form: meaning}
     glabel: dict[str, str] = {}
@@ -366,6 +450,33 @@ def main() -> int:
         blob = "\n".join(corpus_text)
         attested[lvl] = {fm for (l2, _k, fm) in gforms if l2 == lvl and fm in blob}
 
+    # Fix 18: where each form is ATTESTED — every slot shape it fills, token-aligned, anywhere in the
+    # bank or the readings (grammaticality does not depend on the level) — and every bank sentence, so
+    # a distractor that makes the stem a real sentence, or that the corpus shows in the same slot as
+    # the key, is refused: 「もう帰っ（　）。」 keyed たらどうですか offered たらいいですか.
+    tk = _tok()
+    all_forms = {fm for _l, _k, fm in gforms}
+    slot_seen: dict[str, set[str]] = {}
+    for text in [s[1] for s in sents.values()] + [r[2] for r in readings]:
+        here = [x for x in all_forms if x in text]
+        if not here:
+            continue
+        ms = tk.tokenize(text, _MODE_C)
+        starts, ends = token_spans(tk, _MODE_C, text)
+        for x in here:
+            i = text.find(x)
+            while i != -1:
+                if i in starts and i + len(x) in ends:
+                    slot_seen.setdefault(x, set()).update(slot_shape(ms, i))
+                i = text.find(x, i + 1)
+    bank_keys = {stem_key(s[1]) for s in sents.values()}
+
+    def admissible(x: str, shape: frozenset[str], pre: str, post: str) -> bool:
+        # `x not in pre + post` is validate_exam_banks check C, which `x not in jp` misses when the
+        # blank itself splits the distractor: が（　）います offered がいます.
+        return (x not in pre + post and not shape & slot_seen.get(x, set())
+                and stem_key(pre + x + post) not in bank_keys)
+
     # ---- the taught, level-clean vocabulary pool ----------------------------------------------
     # A word may be the ANSWER or a DISTRACTOR at a level only when the course has taught the record
     # and every kanji it prints. This is the pool W03 measured (177 level-clean N5 words against an
@@ -385,9 +496,15 @@ def main() -> int:
         # ---- kanji_reading + orthography -----------------------------------------------------
         # W17 fix 12: one item per printed STEM. 背 was two kanji_reading items keyed せ and せい;
         # あつい was three orthography items keyed 暑い / 熱い / 厚い over an identical option set.
+        # Fix 20: the word under test is one a lesson teaches; distractors still come from the whole
+        # level-clean pool, which is what the learner may meet.
         by_hw: dict[str, list[dict]] = {}
         by_kana: dict[str, list[dict]] = {}
         for v in lv_vocab:
+            if not taught.word_taught(v["slug"], lvl):
+                drop("kanji_reading", "target-word-not-taught")
+                drop("orthography", "target-word-not-taught")
+                continue
             by_hw.setdefault(v["hw"], []).append(v)
             by_kana.setdefault(v["kana"], []).append(v)
         kr_groups = sorted((group_order(g, lvl) for g in by_hw.values()),
@@ -508,6 +625,10 @@ def main() -> int:
                 for w in lv_vocab:
                     if w["id"] == v["id"] or w["hw"] in jp:
                         continue
+                    # fix 17: a word sharing a sense-0 gloss with the key fits the same blank —
+                    # 「（　）に行ってください。」 keyed 前 offered 先 (both 'à frente').
+                    if gloss_of_hw.get(w["hw"], set()) & gloss_set.get(v["id"], set()):
+                        continue
                     cands.append((abs(len(w["hw"]) - len(v["hw"])) * 10
                                   + (0 if w["lex"] == v["lex"] else 20), w["hw"]))
                 cands.sort(key=lambda t: (t[0], spread(f"{sid}:{v['hw']}", t[1])))
@@ -554,10 +675,20 @@ def main() -> int:
                     continue
                 # EB-05 for gf: the blanked form must occur EXACTLY ONCE, or the stem prints its own
                 # answer further along.
-                fm = next((x for x in form_strs(forms)
-                           if x in lv_forms and jp.count(x) == 1), None)
-                if not fm:
+                single = [x for x in form_strs(forms) if x in lv_forms and jp.count(x) == 1]
+                if not single:
                     drop("grammar_form", "no-single-occurrence-form")
+                    continue
+                # fix 18: W16's token-boundary rule, which text_grammar already had. 「あなたの（　）す。」
+                # keyed おかげで left the answer's own す printed after the blank.
+                starts, ends = token_spans(tk, _MODE_C, jp)
+                fm = next((x for x in single if boundary_occurrence(jp, x, starts, ends) >= 0), None)
+                if not fm:
+                    drop("grammar_form", "blank-cuts-a-word")
+                    continue
+                at, ms = jp.index(fm), tk.tokenize(jp, _MODE_C)
+                if content_tokens(ms, at, at + len(fm)) < MIN_STEM_CONTENT:
+                    drop("grammar_form", "stem-too-short")          # fix 19
                     continue
                 if stem_key(jp.replace(fm, "（　）", 1)) in gf_stems:
                     drop("grammar_form", "duplicate-printed-stem")   # W18, as in context_fill
@@ -567,8 +698,14 @@ def main() -> int:
                 # W17 fix 14: never offer another form of the SAME grammar point as a wrong answer —
                 # んです was keyed with のです offered, and じゃない with ではない, on a point whose own
                 # key is `janai-dewa-nai`.
-                dis = [x for x in lv_forms
-                       if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key]
+                # fix 17: nor a form that is as right as the key in this blank (のような / みたいな).
+                pre, post = jp.split(fm, 1)
+                base = [x for x in lv_forms
+                        if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key
+                        and not interchangeable(fm, x, pre, post, equiv)]
+                # fix 18: and never a form that fits the slot as the corpus shows it used.
+                shape = slot_shape(ms, at)
+                dis = [x for x in base if admissible(x, shape, pre, post)]
                 dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{sid}:{fm}", x)))
                 if len(dis) >= 3:
                     gf_stems.add(stem_key(jp.replace(fm, "（　）", 1)))
@@ -579,7 +716,8 @@ def main() -> int:
                                "layer": "B", "ai_generated": bool(ai), "needs_review": bool(ai),
                                "source": "sentence+grammar"})
                 else:
-                    drop("grammar_form", "no-clean-distractor-set")
+                    drop("grammar_form", "no-admissible-distractor" if len(base) >= 3
+                         else "no-clean-distractor-set")
                 break
 
         # ---- sentence_order ------------------------------------------------------------------
@@ -657,8 +795,11 @@ def main() -> int:
             if key and not taught.grammar_ok(key, lvl):
                 drop("text_grammar", "form-owner-grammar-above-level")
                 continue
-            dis = [x for x in tg_forms
-                   if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key]
+            base = [x for x in tg_forms
+                    if x != fm and x not in jp and gkey_of_form.get((lvl, x)) != key
+                    and not interchangeable(fm, x, jp[:at], jp[at + len(fm):], equiv)]
+            shape = slot_shape(tk.tokenize(jp, _MODE_C), at)      # fix 18
+            dis = [x for x in base if admissible(x, shape, jp[:at], jp[at + len(fm):])]
             dis.sort(key=lambda x: (abs(len(x) - len(fm)), spread(f"{slug}:{fm}", x)))
             if len(dis) >= 3:
                 tg.append({"id": f"tg:{lvl}:{slug.split(':',1)[1]}", "level": lvl,
@@ -677,7 +818,8 @@ def main() -> int:
                 if not key:
                     tg[-1].pop("grammar")
             else:
-                drop("text_grammar", "no-clean-distractor-set")
+                drop("text_grammar", "no-admissible-distractor" if len(base) >= 3
+                     else "no-clean-distractor-set")
 
         for name, items in (("kanji_reading", kr), ("orthography", ort), ("context_fill", cf),
                             ("grammar_form", gf), ("sentence_order", so), ("text_grammar", tg)):

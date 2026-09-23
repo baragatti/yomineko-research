@@ -131,7 +131,11 @@ UNKEYED_RATCHET = {"vocab": 0, "gram": 494, "kanji": 634, "kana": 0}
 # defect of the card: every bank sentence carrying the word is graded above the introducing lesson's
 # level (research/reports/w28_card_examples_report.md). Kana cards are a glyph, not a word, carry
 # none by design (check F rejects one) and are not counted here (W29). May only shrink.
-NO_EXAMPLE_RATCHET = {"vocab": 1695, "gram": 90, "kanji": 52}
+# P1-exam-fixes (2026-09-23), re-recorded with cause: vocab 1695 -> 1696, kanji 52 -> 53. C13's prose
+# rewrite of les:n5-numeros-tempo-03 stopped rendering sent:tatoeba-122326, and the W28 rule found no
+# other sentence for たくさん (vocab:1415870) or 語 there (gp-43 too; gram stays at 90 because the
+# eight W08b losers left the denominator). research/reports/p1_exam_fixes_report.md.
+NO_EXAMPLE_RATCHET = {"vocab": 1696, "gram": 90, "kanji": 53}
 MIN_EXAMPLES = 2_000
 LEVEL_ORDER = ("pre-n5", "n5", "n4", "n3", "n2", "n1")
 SENT_TAG_RX = re.compile(r'<sentence\s+ref="([^"]+)"')

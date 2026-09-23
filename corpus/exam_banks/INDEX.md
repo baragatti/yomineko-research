@@ -31,10 +31,10 @@ Every deterministic item is selected against its level's taught set (the `cumula
 - `n4_paraphrase.json` — 15 items
 - `n4_reading_comp.json` — 90 items
 - `n4_sentence_order.json` — 300 items
-- `n4_text_grammar.json` — 74 items
+- `n4_text_grammar.json` — 75 items
 - `n4_usage.json` — 14 items
 - `n5_context_fill.json` — 155 items
-- `n5_grammar_form.json` — 114 items
+- `n5_grammar_form.json` — 75 items
 - `n5_kanji_reading.json` — 176 items
 - `n5_listening_point.json` — 18 items
 - `n5_listening_reply.json` — 17 items

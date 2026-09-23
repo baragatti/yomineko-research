@@ -23,7 +23,10 @@ sys.path.insert(0, str(HERE.parent / "export"))
 import build_item_lesson_index as bili  # noqa: E402
 
 DEFAULT_ROOT = HERE.parents[1]
-EXAM_FLOOR = 4970
+# P1-exam-fixes (2026-09-23), re-recorded with cause: 4970 -> 4932. The builder rules dropped 39
+# n5 grammar_form items and the rebuild added 1 n4 text_grammar item (5141 -> 5103 items); the
+# unplaced count is unchanged at 171. research/reports/p1_exam_fixes_report.md.
+EXAM_FLOOR = 4932
 MIN_EXERCISES = 2000
 
 

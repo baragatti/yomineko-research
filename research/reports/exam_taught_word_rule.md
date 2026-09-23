@@ -1,6 +1,6 @@
 # Exam taught-word rule: kanji_reading / orthography test a word a lesson teaches
 
-Status: **pending, nothing applied.** Patch `research/derived/patches/exam_taught_word_rule.patch`
+Status: **APPLIED 2026-09-23 by P1-exam-fixes** (`research/reports/p1_exam_fixes_report.md`). Patch `research/derived/patches/exam_taught_word_rule.patch`
 applies after `exam_equivalence_filter.patch` and `exam_builder_fixes_2.patch` (checked in that order
 on a `git archive HEAD` tree) and touches `scripts/export/build_exam_banks.py` (fix 20) and
 `scripts/export/exam_rules.py` (`TaughtSets.words`, `TaughtSets.word_taught`). Measured 2026-09-23 on

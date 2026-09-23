@@ -24,6 +24,8 @@ other about the same item. Those questions are:
      (`よりほうが`, `とかとか`, `おになる`) as one of the four choices, which silently makes the item
      3-option (qa_sweep/exam_japanese_2.md S3/F07).
 
+  4. **Would a distractor also be right?** — `interchangeable`, over design/exam_equivalents.json.
+
 Imported by both builders; no side effects, no I/O beyond the course tree it is handed.
 """
 from __future__ import annotations
@@ -80,9 +82,16 @@ class TaughtSets:
     def __init__(self, root: Path) -> None:
         self.by_level: dict[str, dict[str, set[str]]] = {}
         self.kanji_chars: dict[str, set[str]] = {}
+        # Words a lesson TEACHES (a `vocab` unlock, exported refs), cumulative up to each level. Equal
+        # to the cks vocab today (712 / 1,355 / 2,951); kept separate so a wider cks cannot let an
+        # untaught word become the word under test.
+        self.words: dict[str, set[str]] = {}
+        unlocked: set[str] = set()
         for module in MODULE_ORDER:
             les = self._module_lessons(root, module)
+            unlocked |= {u["ref"] for r in les for u in r[4] if u.get("type") == "vocab"}
             if module in LEVELS:
+                self.words[module] = set(unlocked)
                 if not les:
                     raise SystemExit(
                         f"exam_rules: course/{module} has no lessons, so the taught set for {module} "
@@ -109,7 +118,8 @@ class TaughtSets:
             for lf in sorted(tdir.glob("lesson-*.json")):
                 les = json.loads(lf.read_text(encoding="utf-8"))
                 out.append((int(topic.get("order", 0)), int(les.get("order", 0)),
-                            les.get("id", lf.name), les.get("cumulative_known_set") or {}))
+                            les.get("id", lf.name), les.get("cumulative_known_set") or {},
+                            les.get("unlocks") or []))
         out.sort(key=lambda r: (r[0], r[1]))
         return out
 
@@ -125,6 +135,9 @@ class TaughtSets:
 
     def grammar_ok(self, ref: str, lvl: str) -> bool:
         return gram_slug(ref) in self.by_level[lvl]["grammar"]
+
+    def word_taught(self, slug: str, lvl: str) -> bool:
+        return slug in self.words[lvl]
 
 
 # --------------------------------------------------------------------------------------------
@@ -203,3 +216,42 @@ def option_ok(form: str) -> bool:
     if len(form) % 2 == 0 and form[: len(form) // 2] == form[len(form) // 2:]:
         return False
     return True
+
+
+# --------------------------------------------------------------------------------------------
+# 4. two options that are the same answer
+# --------------------------------------------------------------------------------------------
+# gf:n4:3535 「これはお茶（　）味だ。」 keyed のような and offered みたいな; gf:n4:3845 keyed
+# なければいけない and offered なければならない. The same-point rule (fix 14) cannot see these: the
+# forms belong to different grammar points. The classes live in design/exam_equivalents.json.
+EQUIVALENTS = Path(__file__).resolve().parents[2] / "design" / "exam_equivalents.json"
+
+
+def load_equivalents(path: Path = EQUIVALENTS) -> list[tuple[set[str], re.Pattern | None, re.Pattern | None]]:
+    out = []
+    for c in json.loads(path.read_text(encoding="utf-8"))["classes"]:
+        before = re.compile("(?:" + c["before"] + r")\Z") if c.get("before") else None
+        after = re.compile(c["after"]) if c.get("after") else None
+        out.append((set(c["forms"]), before, after))
+    return out
+
+
+def interchangeable(a: str, b: str, before: str, after: str, classes) -> bool:
+    """True when `b` printed in the blank would be as right as `a`: both in one class and the class
+    context (the text around the blank) holds."""
+    return any(a in forms and b in forms and a != b
+               and (bre is None or bre.search(before)) and (are is None or are.match(after))
+               for forms, bre, are in classes)
+
+
+if __name__ == "__main__":
+    eq = load_equivalents()
+    assert interchangeable("のような", "みたいな", "これはお茶", "味だ。", eq)
+    assert interchangeable("なければいけない", "なければならない", "待た", "。", eq)
+    assert interchangeable("どれ", "どの", "", "くらい？", eq) and not interchangeable("どれ", "どの", "", "が安い？", eq)
+    assert interchangeable("ごとに", "おきに", "この時計は１５分", "なる。", eq)
+    assert not interchangeable("おきに", "ごとに", "一行", "書け。", eq)          # every other row != every row
+    assert not interchangeable("けど", "でも", "ちょっと話があるんだ", "。", eq)   # でも is only 'but' sentence-initially
+    assert not interchangeable("ずに", "ないで", "私は外出せ", "家にいた。", eq)   # せ + ないで is not a word
+    assert not interchangeable("なきゃ", "ないと", "勉強し", "試験に落ちる。", eq)  # mid-sentence ないと is 'if not'
+    print("exam_rules: equivalence self-check ok")

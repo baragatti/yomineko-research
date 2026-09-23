@@ -1,6 +1,6 @@
 # Exam builder fixes 2: token-bounded gf blanks, context-sufficient distractors
 
-Status: **pending, nothing applied.** Patch `research/derived/patches/exam_builder_fixes_2.patch`
+Status: **APPLIED 2026-09-23 by P1-exam-fixes** (`research/reports/p1_exam_fixes_report.md`). Patch `research/derived/patches/exam_builder_fixes_2.patch`
 applies on top of `research/derived/patches/exam_equivalence_filter.patch` (patch 1) and touches one
 file, `scripts/export/build_exam_banks.py`. Measured 2026-09-23 in a scratch tree (`git archive HEAD`)
 over an sqlite backup of `db/corpus.sqlite`. Findings being closed:
