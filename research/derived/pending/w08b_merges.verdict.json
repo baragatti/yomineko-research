@@ -1,0 +1,106 @@
+{
+  "what_this_is": "Adversarial verification of research/derived/pending/w08b_merges.json reconciled_prose (24 pt-BR texts). Checks: (1) no fact from either original lost, (2) nothing added, (3) Japanese correct (refuting inherited errors too), (4) natural pt-BR, no em dash, one text, (5) verbatim spans of repair rows 105/210 intact and loser facts still present.",
+  "verified": "2026-09-23",
+  "inputs_confirmed": "all 24 survivor_original and loser_original strings are byte-identical to corpus/grammar/{n3,n4,n5}.json pt-BR today; no em/en dash in any new text; repair rows 105 and 210 new == the stored survivor_original.",
+  "summary": {
+    "checked": 24,
+    "ok": 15,
+    "corrected": 9,
+    "rejected": 0,
+    "note": "No fact lost in any of the 24. Every correction fixes a claim about Japanese (most inherited from an original) or a glued seam; only yori-hou-ga#formation adds content (the adjetivo-な + な rule), to replace a wrong generalization. The en side of each survivor must be re-derived from the corrected pt-BR."
+  },
+  "verdicts": {
+    "gp-118#explanation": {
+      "ok": false,
+      "problem": "(3) \"o verbo terminando em 〜ない\" (from the loser) is contradicted two sentences later by 一人しか来なかった, which ends in なかった; (4) \"e isso é pouco\" was glued inside the \"literalmente\" parenthesis, so it reads as part of the literal gloss. Also \"no negativo\" now said twice in a row. No fact dropped by the fix.",
+      "corrected": "しか〜ない expressa \"só\", \"somente\", \"apenas\", \"nada além de\", sempre com sentido de limitação ou escassez: a quantidade ou a opção é pequena ou insuficiente (\"não tem mais do que isso\"). Vem sempre em par: しか na parte limitada e o verbo no negativo (〜ない, 〜なかった). Repare que, mesmo assim, o sentido da frase é positivo-limitado. Por exemplo: 千円しかない = \"só tenho mil ienes\", e isso é pouco (literalmente \"não tenho a não ser mil ienes\"). Outros exemplos: 日本語しか話せない (\"só falo japonês\"), 一人しか来なかった (\"só veio uma pessoa\")."
+    },
+    "gp-118#formation": {
+      "ok": true
+    },
+    "gp-118#nuance": {
+      "ok": false,
+      "problem": "(3) loser gloss 千円だけある = \"tenho exatamente mil ienes\" misreads だけ: it is \"só/apenas\" without judgment, not \"exatamente\" (precise amount); (4) the appended tail reads glued: \"Com だけ, 千円だけある\" doubles だけ, and \"Isso vale para qualquer verbo\" follows the だけ sentence so \"isso\" points at だけ, then re-states the しかある ban the verbatim span already gives. Verbatim span of repair row 105 kept intact; loser facts (だけ sem julgamento, regra geral, registro neutro fala/escrita) all still present.",
+      "corrected": "A maior armadilha para brasileiros: o verbo precisa estar no negativo mesmo a frase tendo sentido \"positivo\" (\"só\"). Compare com だけ, que também é \"só\" mas usa verbo afirmativo (千円だけある) e é neutro; já しか〜ない carrega um tom de \"é pouco / é insuficiente / só isso e nada mais\". Não diga 千円しかある (está errado; tem que ser 千円しかない). Já 千円だけある quer dizer \"tenho só mil ienes\", sem nenhum julgamento sobre ser pouco. E a regra do negativo vale para qualquer verbo, não só ある: não use しか com verbo afirmativo. Registro neutro, serve para fala e escrita.",
+      "verbatim_check": "repair row 105 'new' is the leading span, byte-identical (also in 'corrected'); every loser fact is carried in the appended tail of this same field."
+    },
+    "no-ga-jouzu#explanation": {
+      "ok": true
+    },
+    "no-ga-jouzu#formation": {
+      "ok": true
+    },
+    "no-ga-jouzu#nuance": {
+      "ok": true
+    },
+    "yori-hou-ga#explanation": {
+      "ok": true
+    },
+    "yori-hou-ga#formation": {
+      "ok": false,
+      "problem": "(3) inherited from the survivor: \"com verbos e adjetivos, ほう vem direto\" is wrong for adjetivos-な, which need な (静かなほう); a learner would build *静かほう. The fix narrows to adjetivos-い and states the な rule (this one clause is new content, added only to correct the claim).",
+      "corrected": "Padrão completo: [B] より [A] のほうが [adjetivo/predicado], ou [A] のほうが [B] より [adjetivo/predicado]; trocar a ordem não muda o sentido. Ex.: でんしゃよりバスのほうがやすいです = \"O ônibus é mais barato que o trem\". Com substantivos usa-se の antes de ほう (車のほう); com verbos e adjetivos-い, ほう vem direto (行くほうがいい, 安いほうがいい), e adjetivos-な levam な antes (静かなほう). ほう（方）significa \"o lado/a direção\"."
+    },
+    "yori-hou-ga#nuance": {
+      "ok": false,
+      "problem": "(3) inherited from the survivor: \"Em japonês não existe palavra separada para 'mais'\" is false (もっと is N5 vocabulary; the point is that the comparative sentence does not NEED one), and \"partículas より/ほう\" calls ほう a particle (it is a noun, 方, as the formation field itself says); same slip in \"a partícula de cada termo é fixa: ... のほうが\". Fix reuses the loser's own wording (\"o sentido comparativo nasce do conjunto より...のほうが\").",
+      "corrected": "A grande armadilha para brasileiros é a ordem inversa: em より, o termo que vem ANTES da partícula é o \"do que\" (o inferior), o oposto da nossa intuição com \"que\". Em 電車より車 = \"carro mais que trem\", não \"trem mais que carro\". Em japonês a comparação não precisa de uma palavra para \"mais\" (como em \"mais rápido\"): o sentido comparativo vem todo do conjunto より...のほうが. A ordem dos blocos é flexível, mas a marca de cada termo é fixa: より no termo comparado, のほうが no lado que ganha. Não confunda より (ponto de comparação) com から (origem/ponto de partida). Para perguntas use どちらのほうが (\"qual dos dois é mais...?\")."
+    },
+    "gp-77#explanation": {
+      "ok": false,
+      "problem": "(3) 先生が言ったように and 思ったように (the latter the loser's example \"of 〜のように\") are verb + ように with NO の; listed in one \"Ex.\" run after the のような/のように rule they teach *言ったのように. Fix labels them with the survivor formation's own rule (depois de verbo, sem の). No fact dropped.",
+      "corrected": "のよう é a forma de comparação e semelhança usada em registro mais formal e na escrita, equivalente a \"como\", \"semelhante a\", \"tal qual\", \"à maneira de\". のような vem antes de substantivo (qualifica) e のように, a versão adverbial, antes de verbo/adjetivo (modo: \"do jeito que\", \"feito\"). Ex.: 雪のように白い = \"branco como a neve\"; 鳥のように飛ぶ = \"voar como um pássaro\". Depois de verbo, a forma é ように, sem o の: 先生が言ったように = \"como o professor disse\"; 思ったように = \"como eu pensava\". Pode também marcar exemplo (\"como, por exemplo\") e conjectura (\"parece que\")."
+    },
+    "gp-77#formation": {
+      "ok": true
+    },
+    "gp-77#nuance": {
+      "ok": false,
+      "problem": "(3) inherited from the survivor: \"のように também aparece em pedidos suaves e instruções (〜のようにしてください 'faça de modo que...')\" misattributes the purpose/effort 〜ようにしてください (verb + ように, no の: 遅れないようにしてください) to のように; with a noun, 〜のようにしてください only means \"faça como X\", which \"como\" covers. After the merge it now sits right after \"não confunda com o 〜ように sem の de finalidade\", so the text contradicts itself. Fix moves the soft-request/\"faça de modo que\" fact onto the ように it belongs to; \"o contrário também vale\" keeps its antecedent.",
+      "corrected": "Não esqueça o の entre o substantivo e よう: é justamente o que distingue a versão formal (山のような = \"como uma montanha\") da coloquial (山みたいな, sem の). Para lusófonos, atenção à divisão な／に, igual à de みたい: a escolha depende só do que vem depois (substantivo → のような; verbo/adjetivo → のように). Não confunda com o 〜ように sem の, depois de verbos: é outra função, que indica finalidade (\"para que...\") e aparece em pedidos suaves e instruções (〜ようにしてください, \"faça de modo que...\"), um sentido que o nosso simples \"como\" não cobre. E o contrário também vale: nem todo \"como\" do português vira のように; ele é o caminho natural quando a ideia é \"igual a tal coisa\"."
+    },
+    "tara#explanation": {
+      "ok": true
+    },
+    "tara#formation": {
+      "ok": true
+    },
+    "tara#nuance": {
+      "ok": false,
+      "problem": "(3) inherited from the survivor: \"Diferente de 〜と ... e de 〜ば, o 〜たら admite pedido, convite ou ordem\" overstates ば: ば takes a request when its clause is a state (よければ、来てください; 時間があれば、来てください are everyday Japanese). Fix keeps the contrast but says ば is more restricted, not barred.",
+      "corrected": "É o condicional do dia a dia, o mais natural na fala. Diferente de 〜と (condição automática/natural), e com bem menos restrição que 〜ば (mais formal/teórico), o 〜たら admite pedido, convite ou ordem na segunda oração (家に着いたら、電話してください). Para quem fala português, a armadilha é a ordem das orações: a condição vem sempre primeiro. E o tempo verbal de たら é \"passado\" só na forma, não no sentido: ele se refere ao momento em que a condição se cumprir, e o tempo da frase vem do verbo principal. Diferente do \"se\" português, 〜たら muitas vezes significa \"quando\" (algo certo de acontecer), então o contexto decide a tradução. O nível de polidez fica na oração final."
+    },
+    "te-shimau-chau#explanation": {
+      "ok": true
+    },
+    "te-shimau-chau#formation": {
+      "ok": true
+    },
+    "te-shimau-chau#nuance": {
+      "ok": true
+    },
+    "janai-dewa-nai#explanation": {
+      "ok": true
+    },
+    "janai-dewa-nai#formation": {
+      "ok": true
+    },
+    "janai-dewa-nai#nuance": {
+      "ok": false,
+      "problem": "(3) inherited from the loser: おいしいじゃない！ is the exclamative じゃない (falling intonation, \"mas que delícia!\"), not the rising-intonation confirmation question じゃない?; the merged sentence presents the exclamation as an example of \"entonação ascendente\". Fix separates the two non-negation uses; every fact kept.",
+      "corrected": "Pega o brasileiro em dois pontos. Primeiro: essa negação é só para substantivos e adjetivos な; os adjetivos い têm a própria negação (高くない, nunca 高いじゃない). Segundo: じゃない nem sempre é negação simples. Com entonação ascendente, じゃない? vira pergunta de confirmação informal (\"né? / não é mesmo?\"), e numa exclamação reforça o que se constatou; nesses usos ele pode vir até depois de adjetivo い (おいしいじゃない！ \"Mas que delícia, né!\"). Em contextos formais, escritos ou em provas, prefira ではない/ではありません; じゃない soa de conversa e pode parecer brusco com superiores."
+    },
+    "n3-da-mono-da#explanation": {
+      "ok": true
+    },
+    "n3-da-mono-da#formation": {
+      "ok": false,
+      "problem": "(3) inherited from the survivor: under the \"adjetivo-na/substantivo + なんだもの\" slot the only example is the i-adjective 忙しい, unlabeled as a warning, so it reads as a na-adjective example; (4) glued: \"Na versão mais coloquial, もの vira もん\" and \"もん a mais coloquial\" say the same thing twice, and \"formal/feminina\" is a slash in prose. Fix makes the 忙しい aside an explicit caution and merges the two register sentences; all facts from both originals kept.",
+      "corrected": "Frase em forma simples + もの, em geral com ん antes para dar tom explicativo: verbo/adjetivo-i + んだもの (疲れたんだもの); adjetivo-na/substantivo + なんだもの (cuidado: 忙しい é adjetivo-i, então fica 忙しいんだもの, sem な). A mesma montagem vale com もん no lugar de もの: verbo na forma casual ou adjetivo-i + んだもん; adjetivo-na ou substantivo + な + んだもん. もの soa mais formal e feminina; もん, mais coloquial. Frequentemente fecha com から: ～んだものだから."
+    },
+    "n3-da-mono-da#nuance": {
+      "ok": true,
+      "verbatim_check": "repair row 210 'new' is the leading span, byte-identical; every loser fact is carried in the appended tail of this same field."
+    }
+  }
+}
