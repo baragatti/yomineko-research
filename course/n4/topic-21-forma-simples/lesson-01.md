@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [ka-shira, kai, kana] · vocabulário [ステレオ, テキスト, 会, 僕, 別, 大学生, 失礼, 床屋, 心配, 意見, 気, 漫画] · kanji [員 方 明 終 者] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-f626c3374153`, `sent:gen-a57fa0b2f6c3`, `sent:tatoeba-80460`, `sent:tatoeba-194168`
+**Frases (por ID, do banco dissecado):** `sent:gen-f626c3374153`, `sent:tatoeba-80460`, `sent:tatoeba-194168`
 
 ---
 
@@ -20,7 +20,7 @@ Bem-vindo(a) ao registro casual do japonês. Aqui a frase não muda de estrutura
 A partícula kana marca dúvida ou um pensamento solto, como nosso "será que...?", "hein...?", "quem sabe...". É a opção casual e neutra de gênero: homens e mulheres usam. Você só gruda かな no fim de uma frase na forma simples (sem です/ます).
 > 🗣 明日は晴れるかな — Será que amanhã vai fazer sol?
 Aqui 晴れる é "fazer sol / abrir o tempo" e かな põe a frase em modo reflexão: literalmente "amanhã vai fazer sol... será?". É você falando consigo, sem cobrar resposta de ninguém.
-> 🗣 彼はもう来たかな — Será que ele já chegou?
+彼はもう来たかな ("Será que ele já chegou?"; 彼 = "ele")
 Repare que 来た é a forma simples do passado de "vir". Com かな, vira "será que ele já chegou?". Note também o molde típico: verbo na forma simples +かな.
 
 > **[tip]**
@@ -75,7 +75,7 @@ Junte tudo:僕の漫画どこかな("onde será que está o meu mangá?"),心配
 ### 2. (recognition) Você está sozinho(a) e pensa: "será que ele já chegou?" (sem perguntar a ninguém). Qual partícula encaixa?
 - **Resposta:** `{"choices": ["かな", "かい", "か"], "correct": "かな"}`
 - かな marca um pensamento em voz alta, sem cobrar resposta de ninguém. かい e か perguntam ao OUTRO e esperam resposta.
-- frases: `sent:gen-a57fa0b2f6c3`
+
 
 ### 3. (cloze) Um avô pergunta ao neto, em tom carinhoso, "já terminou?". Complete: もう終わった＿？
 - **Resposta:** `{"text": "かい", "full": "もう終わったかい？"}`

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-2, gp-3, gp-4] · vocabulário [お手洗い, お風呂, アパート, エレベーター, 何処, 入り口, 其れ, 分かる, 家, 尾, 彼, 彼の, 彼処, 彼方, 来る, 池, 海, 犬, 色, 階段] · kanji [何 分 来] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-229628`, `sent:tatoeba-4802`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-4802`
 
 ---
 
@@ -24,7 +24,7 @@ Pense num mapa: これ é a sua mão; それ é a mão da pessoa com quem você 
 
 #### Longe dos dois: あれ
 Quando o objeto está distante de você e da outra pessoa, é gp-4. Olhe a pergunta mais comum do dia a dia, totalmente casual:
-> 🗣 あれ何？ — O que é aquilo?
+あれ何？ ("O que é aquilo?")
 Aqui あれ aponta para algo lá longe e 何 quer dizer "o quê". Note duas coisas que vão te acompanhar o curso inteiro: não existe artigo ("o", "a") em japonês, e não tem cópula nesta frase casual. A estrutura é só あれ seguido de 何 e da entonação de pergunta, nada mais. A versão completa e polida seria あれは何ですか ("o que é aquilo?").
 
 > **[l1-pitfall]**
@@ -77,7 +77,7 @@ A mesma lógica こ・そ・あ também vale para LUGARES. Aqui estão os "primo
 ### 1. (recognition) Você quer apontar para uma coisa que está longe de você E da pessoa com quem fala. Qual pronome usar?
 - **Resposta:** `{"choices": ["これ", "それ", "あれ"], "correct": "あれ"}`
 - あれ = 'aquilo', algo distante tanto de quem fala quanto de quem ouve. これ é perto de quem fala; それ é perto de quem ouve.
-- frases: `sent:tatoeba-229628`
+
 
 ### 2. (recognition) A pessoa com quem você conversa está segurando um livro na mão dela. Para dizer 'isso (que você tem)', qual pronome usar?
 - **Resposta:** `{"choices": ["これ", "それ", "あれ"], "correct": "それ"}`
@@ -87,7 +87,7 @@ A mesma lógica こ・そ・あ também vale para LUGARES. Aqui estão os "primo
 ### 3. (cloze) Complete a pergunta casual apontando para algo lá longe: ＿何？ ('O que é aquilo?')
 - **Resposta:** `{"text": "あれ", "full": "あれ何？"}`
 - あれ何？ aponta para algo distante dos dois falantes. É a versão casual de あれは何ですか.
-- frases: `sent:tatoeba-229628`
+
 
 ### 4. (sentence_build) Monte a frase 'Aquilo é um cachorro.' com as peças: [です] [あれ] [犬] [は]
 - **Resposta:** `{"order": ["あれ", "は", "犬", "です"], "text": "あれは犬です。"}`

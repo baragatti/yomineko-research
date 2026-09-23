@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [doushite, gp-29] · vocabulário [体, 咖哩, 声, 本, 果物, 牛乳, 牛肉, 珈琲, 紅茶, 薬, 読む, 誰, 警官, 風邪] · kanji [本 読] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:gen-0fdafb9f86e8`, `sent:tatoeba-778976`, `sent:tatoeba-778974`, `sent:tatoeba-778977`
+**Frases (por ID, do banco dissecado):** `sent:gen-0fdafb9f86e8`, `sent:tatoeba-778976`, `sent:tatoeba-778977`
 
 ---
 
@@ -35,7 +35,7 @@ Japonês tem três palavras para "por quê", e a diferença não é de significa
 - gp-31(coloquial): bem informal, de conversa entre amigos.
 Sozinhas, todas podem virar a pergunta inteira:
 > 🗣 なぜ？ — Por quê?
-> 🗣 なんで？ — Por quê?
+なんで？ ("Por quê?", na conversa)
 Ou seja:なぜ e なんで traduzem o mesmo "Por quê?", mas なぜ soa mais escrito e なんで soa mais de bate-papo. Numa prova ou e-mail, prefira gp-30 ou doushite; com amigos,gp-31 cai bem.
 
 > **[l1-advantage]**
@@ -88,7 +88,7 @@ Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tip
 ### 2. (recognition) Entre amigos, de forma bem casual, qual 'por quê' soa mais natural?
 - **Resposta:** `{"choices": ["なぜ", "なんで", "どうやって"], "correct": "なんで"}`
 - なんで é o 'por quê' coloquial, de conversa do dia a dia. なぜ é mais formal/escrito e どうやって significa 'como/de que forma'.
-- frases: `sent:tatoeba-778974`
+
 
 ### 3. (recognition) Qual palavra significa 'quem'?
 - **Resposta:** `{"choices": ["誰 (だれ)", "どこ", "なぜ"], "correct": "誰 (だれ)"}`
@@ -98,7 +98,7 @@ Repare em 風邪(かぜ, resfriado) e 体(からだ, corpo): juntos rendem o tip
 ### 4. (sentence_build) Monte a pergunta 'Por que você faltou à escola?' (tom coloquial) com as peças: [学校を] [なんで] [休んだの]
 - **Resposta:** `{"order": ["なんで", "学校を", "休んだの"], "text": "なんで学校を休んだの"}`
 - なんで (por quê, coloquial) abre a pergunta; 学校を休んだの = 'faltou à escola'. O tom casual combina com なんで e com a partícula final の.
-- frases: `sent:tatoeba-778974`
+
 
 ### 5. (production) Pergunte 'Quem é aquele policial?' usando 誰 e a palavra para policial (警官 / けいかん).
 - **Resposta:** `{"text": "あの警官は誰ですか", "accept": ["あの警官は誰ですか", "あの警官はだれですか", "あのけいかんは誰ですか", "あのけいかんはだれですか"]}`

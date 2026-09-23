@@ -1,0 +1,4198 @@
+{
+ "what_this_is": "W21 furigana residue (C13): the `reading` attribute on the lesson-body <jp> spans scripts/build_furigana_table.py refused. Adds an attribute only.",
+ "applied_by": "scripts/apply_lesson_body_spans.py --table furigana_residue.json",
+ "assembled_from": "research/derived/pending/furigana_residue.json (authored, Layer C) + research/derived/pending/furigana_residue.verdict.json (independent verifier)",
+ "fold_rule": "verdict keyed by the row's stable identity: ok -> the authored text; corrected -> the verifier's text (authored text kept as authored_*); rejected -> `held`, never applied",
+ "layer": "C",
+ "ai_generated": true,
+ "needs_review": true,
+ "apply_contract": "per lesson, in table order, per span: body.count(from) == count, then body = body.replace(from, to). A span whose `from` is gone (and whose `to` is present, when non-empty) is already applied. Both layers: research/derived/lessons/<slug>.json body and localized_text(lesson, body, pt-BR).",
+ "authored_header": {
+  "generated_by": "scratchpad pauth/furigana_residue/build.py (authoring pass over the W21 residue)",
+  "layer": "C",
+  "needs_review": true,
+  "method": "Input: research/derived/repairs/lesson_furigana.json `residue` (W21, keyed by lesson+surface), lesson text read from git HEAD. (1) MECHANICAL: a span that is a radical/component character (亻 氵 宀 ...) takes kanjialive `rad_name_ja` for its radical form (supplement/Kangxi/positional-PUA character mapped explicitly); a lone kanji the prose prints as a component of another kanji takes the kanjialive name for the matching position (言 left = ごんべん, 日 left = ひへん, 金 left = かねへん, 食 left = しょくへん, else the standalone radical name). (2) CONTEXT: every other span takes the reading its own lesson fixes: kana printed beside it, a sibling span already carrying the reading, the gloss, the lesson title, the bank kana of the sentence it explains, or (kanji-exame checklists) the reading the lesson's own exercises drill, stem form like the sibling checks. Digits are spelled in kana because READING_OK excludes them. (3) Rows the context cannot settle to ONE reading per (lesson, surface) stay in `undecided` with the reason. Radical names cannot align against the Layer-A kanji registry (the characters are not in it) and 明日/風邪/下手 are 熟字訓 that kanji_align refuses: the apply needs a kanjialive-source and a whole-word allowance for those rows rather than silently skipping them. Layer C, needs_review: true; pending, not applied.",
+  "counts": {
+   "residue_rows": 217,
+   "residue_spans": 264,
+   "decided_rows": 208,
+   "decided_spans": 253,
+   "undecided_rows": 9,
+   "undecided_spans": 11,
+   "by_rule_rows": {
+    "context": 117,
+    "kanjialive": 91
+   },
+   "by_rule_spans": {
+    "kanjialive": 95,
+    "context": 158
+   },
+   "residue_spans_by_cause": {
+    "alignment_refused": 9,
+    "homograph": 98,
+    "lesson_homograph": 19,
+    "lone_kanji_multi_reading": 51,
+    "not_in_kanji_registry": 74,
+    "sudachi_registry_conflict": 13
+   },
+   "decided_spans_by_cause": {
+    "alignment_refused": 9,
+    "homograph": 96,
+    "lesson_homograph": 17,
+    "lone_kanji_multi_reading": 46,
+    "not_in_kanji_registry": 73,
+    "sudachi_registry_conflict": 12
+   },
+   "needs_whole_word_alignment_allowance": [
+    "les:n4-oracoes-relativas-04 明日",
+    "les:n5-adjetivos-07 下手",
+    "les:n5-adjetivos-08 下手",
+    "les:n5-perguntas-04 風邪"
+   ]
+  }
+ },
+ "verdict_summary": {
+  "checked": 217,
+  "ok": 207,
+  "corrected": 9,
+  "rejected": 1,
+  "note": "One decided row is wrong: 夂 under 夏 is なつあし, not のまた. Eight of the nine undecided rows are settled here; two of them (何 in n4-condicionais-08, 人 in n5-numeros-tempo-02) need a reading per occurrence, so `corrected` is a list in document order and the apply must key them by occurrence. 来 in n5-verbos-03 is rejected: it should be exempt from furigana. Confirmed by data: kanji-exame readings match the lessons' exercises (乗 の, 低 ひく, 働 はたら, 合 あい, 太 ふと, 好 す, 引 ひ, 暗 くら, 民 みん, 産 さん, 短 みじか, 軽 かる, 進 すす, 門 もん, 古 ふる, 多 おお, 安 やす, 社 しゃ, 立 た, 言 い, 買 か, 飲 の); bank kana confirm 開きそうにない/開く ひらく, 一千万円 いっせんまんえん, 一年前くらい前に, 来たことがあるの きた; kanjialive confirms 巾 はば (市) and かねへん (銀). READING_OK accepts the space, 〜 and ？ carried by 各 の 駅, 〜の中で and 明日の予定は？."
+ },
+ "row_count": 216,
+ "rows": [
+  {
+   "lesson": "les:n3-conectores-01",
+   "surface": "その上",
+   "occurrences": 3,
+   "residue_cause": "homograph",
+   "reading": "そのうえ",
+   "rule": "context",
+   "evidence": "same lesson prints その上、料理もおいしい as そのうえりょうりもおいしい, glossed 'e ainda por cima'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 0,
+   "spans": [
+    {
+     "from": "<jp>その上</jp>",
+     "to": "<jp reading=\"そのうえ\">その上</jp>",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conectores-01",
+   "surface": "宀",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "うかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼧ (U+2F27) rad_name_ja=うかんむり, meaning 'roof, house', position かんむり, radical of 27 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 1,
+   "spans": [
+    {
+     "from": "<jp>宀</jp>",
+     "to": "<jp reading=\"うかんむり\">宀</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conectores-01",
+   "surface": "安",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "あん",
+   "rule": "context",
+   "evidence": "component of 案 glossed 'tranquilo' (the アン sense of 安心/安定); the lesson prints 安定 あんてい beside it",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 2,
+   "spans": [
+    {
+     "from": "<jp>安</jp>",
+     "to": "<jp reading=\"あん\">安</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conectores-03",
+   "surface": "宀",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "うかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼧ (U+2F27) rad_name_ja=うかんむり, meaning 'roof, house', position かんむり, radical of 27 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 3,
+   "spans": [
+    {
+     "from": "<jp>宀</jp>",
+     "to": "<jp reading=\"うかんむり\">宀</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conectores-03",
+   "surface": "息",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "いき",
+   "rule": "context",
+   "evidence": "prose gives the kana outright: '息 ( いき , fôlego)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 4,
+   "spans": [
+    {
+     "from": "<jp>息</jp>",
+     "to": "<jp reading=\"いき\">息</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conectores-03",
+   "surface": "氵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "さんずい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺡ (U+2EA1) rad_name_ja=さんずい, meaning 'water', position へん, radical of 60 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 5,
+   "spans": [
+    {
+     "from": "<jp>氵</jp>",
+     "to": "<jp reading=\"さんずい\">氵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conectores-03",
+   "surface": "門",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "もんがまえ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾨ (U+2FA8) rad_name_ja=もんがまえ, meaning 'gate, door', position かまえ, もんがまえ, radical of 8 kanji; 'O radical externo e o portão (門)' in 関: the enclosing radical",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 6,
+   "spans": [
+    {
+     "from": "<jp>門</jp>",
+     "to": "<jp reading=\"もんがまえ\">門</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-01",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 7,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-01",
+   "surface": "氵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "さんずい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺡ (U+2EA1) rad_name_ja=さんずい, meaning 'water', position へん, radical of 60 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 8,
+   "spans": [
+    {
+     "from": "<jp>氵</jp>",
+     "to": "<jp reading=\"さんずい\">氵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-01",
+   "surface": "直",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "ちょく",
+   "rule": "context",
+   "evidence": "component of 置 glossed 'reto': the ちょく of 直線/直接; neither じか nor じき carries that gloss",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 9,
+   "spans": [
+    {
+     "from": "<jp>直</jp>",
+     "to": "<jp reading=\"ちょく\">直</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-01",
+   "surface": "立",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "たつ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽴ (U+2F74) rad_name_ja=たつ, meaning 'to stand', radical of 4 kanji; right half of 位, glossed 'ficar de pé'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 10,
+   "spans": [
+    {
+     "from": "<jp>立</jp>",
+     "to": "<jp reading=\"たつ\">立</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-01",
+   "surface": "罒",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "あみがしら",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺫ (U+2EAB) rad_name_ja=あみがしら, meaning 'net', position かんむり, radical of 1 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 11,
+   "spans": [
+    {
+     "from": "<jp>罒</jp>",
+     "to": "<jp reading=\"あみがしら\">罒</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-01",
+   "surface": "辶",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "しんにょう",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⻌ (U+2ECC) rad_name_ja=しんにょう, meaning 'road, walk, to advance', position にょう, radical of 31 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 12,
+   "spans": [
+    {
+     "from": "<jp>辶</jp>",
+     "to": "<jp reading=\"しんにょう\">辶</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-02",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 13,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-02",
+   "surface": "攵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "ぼくづくり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺙ (U+2E99) rad_name_ja=ぼくづくり, meaning 'activity, to strike, hit', position つくり, radical of 14 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 14,
+   "spans": [
+    {
+     "from": "<jp>攵</jp>",
+     "to": "<jp reading=\"ぼくづくり\">攵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-03",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 15,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-03",
+   "surface": "刂",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "りっとう",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺉ (U+2E89) rad_name_ja=りっとう, meaning 'knife, sword', position つくり, radical of 16 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 16,
+   "spans": [
+    {
+     "from": "<jp>刂</jp>",
+     "to": "<jp reading=\"りっとう\">刂</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-03",
+   "surface": "彳",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "ぎょうにんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼻ (U+2F3B) rad_name_ja=ぎょうにんべん, meaning 'step, stride, street, to go', position へん, radical of 14 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 17,
+   "spans": [
+    {
+     "from": "<jp>彳</jp>",
+     "to": "<jp reading=\"ぎょうにんべん\">彳</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-04",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 18,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-estado-04",
+   "surface": "言",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ごんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical  (U+E704) rad_name_ja=ごんべん, meaning 'words, to speak, say', position へん, radical of 36 kanji; 'À esquerda a palavra (言)' in 説: the left-side radical",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 19,
+   "spans": [
+    {
+     "from": "<jp>言</jp>",
+     "to": "<jp reading=\"ごんべん\">言</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-01",
+   "surface": "禾",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "のぎへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽲ (U+2F72) rad_name_ja=のぎへん, meaning 'grain', position へん, radical of 13 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 20,
+   "spans": [
+    {
+     "from": "<jp>禾</jp>",
+     "to": "<jp reading=\"のぎへん\">禾</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-01",
+   "surface": "艹",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "くさかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺾ (U+2EBE) rad_name_ja=くさかんむり, meaning 'grass', position かんむり, radical of 21 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 21,
+   "spans": [
+    {
+     "from": "<jp>艹</jp>",
+     "to": "<jp reading=\"くさかんむり\">艹</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-01",
+   "surface": "頁",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "おおがい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾴ (U+2FB4) rad_name_ja=おおがい, meaning 'head, page', position つくり, radical of 12 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 22,
+   "spans": [
+    {
+     "from": "<jp>頁</jp>",
+     "to": "<jp reading=\"おおがい\">頁</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-02",
+   "surface": "宀",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "うかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼧ (U+2F27) rad_name_ja=うかんむり, meaning 'roof, house', position かんむり, radical of 27 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 23,
+   "spans": [
+    {
+     "from": "<jp>宀</jp>",
+     "to": "<jp reading=\"うかんむり\">宀</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-02",
+   "surface": "艹",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "くさかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺾ (U+2EBE) rad_name_ja=くさかんむり, meaning 'grass', position かんむり, radical of 21 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 24,
+   "spans": [
+    {
+     "from": "<jp>艹</jp>",
+     "to": "<jp reading=\"くさかんむり\">艹</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-02",
+   "surface": "辶",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "しんにょう",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⻌ (U+2ECC) rad_name_ja=しんにょう, meaning 'road, walk, to advance', position にょう, radical of 31 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 25,
+   "spans": [
+    {
+     "from": "<jp>辶</jp>",
+     "to": "<jp reading=\"しんにょう\">辶</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-03",
+   "surface": "氵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "さんずい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺡ (U+2EA1) rad_name_ja=さんずい, meaning 'water', position へん, radical of 60 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 26,
+   "spans": [
+    {
+     "from": "<jp>氵</jp>",
+     "to": "<jp reading=\"さんずい\">氵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-03",
+   "surface": "礻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "しめすへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺭ (U+2EAD) rad_name_ja=しめすへん, meaning 'altar, festival, religious service', position へん, radical of 7 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 27,
+   "spans": [
+    {
+     "from": "<jp>礻</jp>",
+     "to": "<jp reading=\"しめすへん\">礻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-deveres-03",
+   "surface": "艹",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "くさかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺾ (U+2EBE) rad_name_ja=くさかんむり, meaning 'grass', position かんむり, radical of 21 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 28,
+   "spans": [
+    {
+     "from": "<jp>艹</jp>",
+     "to": "<jp reading=\"くさかんむり\">艹</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-02",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 29,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-02",
+   "surface": "直",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "ちょく",
+   "rule": "context",
+   "evidence": "component of 値 glossed 'reto/direto': the ちょく of 直接 (direto)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 30,
+   "spans": [
+    {
+     "from": "<jp>直</jp>",
+     "to": "<jp reading=\"ちょく\">直</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-02",
+   "surface": "言",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ごんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical  (U+E704) rad_name_ja=ごんべん, meaning 'words, to speak, say', position へん, radical of 36 kanji; 'Tem a palavra (言) à esquerda' in 識: the left-side radical",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 31,
+   "spans": [
+    {
+     "from": "<jp>言</jp>",
+     "to": "<jp reading=\"ごんべん\">言</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-02",
+   "surface": "金",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "きん",
+   "rule": "context",
+   "evidence": "'o kanji 金 (ouro/dinheiro) aparece em vários' and every listed word reads it きん: 金額 きんがく, 金銭, 金融, 金庫, 金属, 金曜",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 32,
+   "spans": [
+    {
+     "from": "<jp>金</jp>",
+     "to": "<jp reading=\"きん\">金</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-03",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 33,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-03",
+   "surface": "示",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "しめす",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽰ (U+2F70) rad_name_ja=しめす, meaning 'altar, festival, religious service', radical of 4 kanji; 'Embaixo está 示 (altar, sinal divino)' in 禁: bottom component",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 34,
+   "spans": [
+    {
+     "from": "<jp>示</jp>",
+     "to": "<jp reading=\"しめす\">示</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-04",
+   "surface": "師",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "し",
+   "rule": "context",
+   "evidence": "'Bom gancho para fixar 師' after 師走 (しわす), where 師 = し; also 教師/医師",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 35,
+   "spans": [
+    {
+     "from": "<jp>師</jp>",
+     "to": "<jp reading=\"し\">師</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-04",
+   "surface": "氵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "さんずい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺡ (U+2EA1) rad_name_ja=さんずい, meaning 'water', position へん, radical of 60 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 36,
+   "spans": [
+    {
+     "from": "<jp>氵</jp>",
+     "to": "<jp reading=\"さんずい\">氵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-01",
+   "surface": "冫",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にすい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼎ (U+2F0E) rad_name_ja=にすい, meaning 'ice', position へん, radical of 3 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 37,
+   "spans": [
+    {
+     "from": "<jp>冫</jp>",
+     "to": "<jp reading=\"にすい\">冫</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-02",
+   "surface": "入",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "いる",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼊ (U+2F0A) rad_name_ja=いる, meaning 'to enter', radical of 1 kanji; 'com 入 (entrar) dentro' of 込: inner component",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 38,
+   "spans": [
+    {
+     "from": "<jp>入</jp>",
+     "to": "<jp reading=\"いる\">入</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-02",
+   "surface": "辶",
+   "occurrences": 2,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "しんにょう",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⻌ (U+2ECC) rad_name_ja=しんにょう, meaning 'road, walk, to advance', position にょう, radical of 31 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 39,
+   "spans": [
+    {
+     "from": "<jp>辶</jp>",
+     "to": "<jp reading=\"しんにょう\">辶</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-02",
+   "surface": "頁",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "おおがい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾴ (U+2FB4) rad_name_ja=おおがい, meaning 'head, page', position つくり, radical of 12 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 40,
+   "spans": [
+    {
+     "from": "<jp>頁</jp>",
+     "to": "<jp reading=\"おおがい\">頁</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-03",
+   "surface": "宀",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "うかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼧ (U+2F27) rad_name_ja=うかんむり, meaning 'roof, house', position かんむり, radical of 27 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 41,
+   "spans": [
+    {
+     "from": "<jp>宀</jp>",
+     "to": "<jp reading=\"うかんむり\">宀</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-03",
+   "surface": "灬",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "れっか",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺣ (U+2EA3) rad_name_ja=れっか, meaning 'fire', position あし, radical of 7 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 42,
+   "spans": [
+    {
+     "from": "<jp>灬</jp>",
+     "to": "<jp reading=\"れっか\">灬</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-03",
+   "surface": "艹",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "くさかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺾ (U+2EBE) rad_name_ja=くさかんむり, meaning 'grass', position かんむり, radical of 21 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 43,
+   "spans": [
+    {
+     "from": "<jp>艹</jp>",
+     "to": "<jp reading=\"くさかんむり\">艹</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-04",
+   "surface": "扌",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "てへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺘ (U+2E98) rad_name_ja=てへん, meaning 'hand', position へん, radical of 39 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 44,
+   "spans": [
+    {
+     "from": "<jp>扌</jp>",
+     "to": "<jp reading=\"てへん\">扌</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-enfase-04",
+   "surface": "諺",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "ことわざ",
+   "rule": "context",
+   "evidence": "'Um provérbio (諺) famoso': the word ことわざ; not a radical, the registry simply lacks the kanji",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 45,
+   "spans": [
+    {
+     "from": "<jp>諺</jp>",
+     "to": "<jp reading=\"ことわざ\">諺</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-concessao-01",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 46,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-concessao-01",
+   "surface": "扌",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "てへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺘ (U+2E98) rad_name_ja=てへん, meaning 'hand', position へん, radical of 39 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 47,
+   "spans": [
+    {
+     "from": "<jp>扌</jp>",
+     "to": "<jp reading=\"てへん\">扌</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-concessao-02",
+   "surface": "扌",
+   "occurrences": 2,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "てへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺘ (U+2E98) rad_name_ja=てへん, meaning 'hand', position へん, radical of 39 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 48,
+   "spans": [
+    {
+     "from": "<jp>扌</jp>",
+     "to": "<jp reading=\"てへん\">扌</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-concessao-02",
+   "surface": "罒",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "あみがしら",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺫ (U+2EAB) rad_name_ja=あみがしら, meaning 'net', position かんむり, radical of 1 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 49,
+   "spans": [
+    {
+     "from": "<jp>罒</jp>",
+     "to": "<jp reading=\"あみがしら\">罒</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-concessao-03",
+   "surface": "氵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "さんずい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺡ (U+2EA1) rad_name_ja=さんずい, meaning 'water', position へん, radical of 60 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 50,
+   "spans": [
+    {
+     "from": "<jp>氵</jp>",
+     "to": "<jp reading=\"さんずい\">氵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-concessao-03",
+   "surface": "辶",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "しんにょう",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⻌ (U+2ECC) rad_name_ja=しんにょう, meaning 'road, walk, to advance', position にょう, radical of 31 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 51,
+   "spans": [
+    {
+     "from": "<jp>辶</jp>",
+     "to": "<jp reading=\"しんにょう\">辶</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conjectura-01",
+   "surface": "夕",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ゆうべ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼣ (U+2F23) rad_name_ja=ゆうべ, meaning 'evening', radical of 5 kanji; 'embaixo a noite (夕)' in 夢: bottom component",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 52,
+   "spans": [
+    {
+     "from": "<jp>夕</jp>",
+     "to": "<jp reading=\"ゆうべ\">夕</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conjectura-01",
+   "surface": "頁",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "おおがい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾴ (U+2FB4) rad_name_ja=おおがい, meaning 'head, page', position つくり, radical of 12 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 53,
+   "spans": [
+    {
+     "from": "<jp>頁</jp>",
+     "to": "<jp reading=\"おおがい\">頁</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-conjectura-02",
+   "surface": "支",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "し",
+   "rule": "context",
+   "evidence": "'a família de 支 (sustentar, ramificar)' lists 支配 しはい, 支給 しきゅう, 支出 ししゅつ, 支店 してん, 支払う しはらう: all し",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 54,
+   "spans": [
+    {
+     "from": "<jp>支</jp>",
+     "to": "<jp reading=\"し\">支</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-01",
+   "surface": "日",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "ひ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽇ (U+2F47) rad_name_ja=ひ, meaning 'sun, day, time', radical of 18 kanji; 'Pense no sol (日) lá embaixo' in 昔: bottom component, glossed sol",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 55,
+   "spans": [
+    {
+     "from": "<jp>日</jp>",
+     "to": "<jp reading=\"ひ\">日</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-02",
+   "surface": "ように言う",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "ようにいう",
+   "rule": "context",
+   "evidence": "grammar-pattern name 'relatar pedidos: ように言う'; standard furigana いう (registry); Sudachi's ゆう is the spoken pronunciation, not the reading",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 56,
+   "spans": [
+    {
+     "from": "<jp>ように言う</jp>",
+     "to": "<jp reading=\"ようにいう\">ように言う</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-02",
+   "surface": "忄",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "りっしんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺖ (U+2E96) rad_name_ja=りっしんべん, meaning 'heart, mind, spirit', position へん, radical of 10 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 57,
+   "spans": [
+    {
+     "from": "<jp>忄</jp>",
+     "to": "<jp reading=\"りっしんべん\">忄</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-02",
+   "surface": "扌",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "てへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺘ (U+2E98) rad_name_ja=てへん, meaning 'hand', position へん, radical of 39 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 58,
+   "spans": [
+    {
+     "from": "<jp>扌</jp>",
+     "to": "<jp reading=\"てへん\">扌</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-02",
+   "surface": "言",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ごんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical  (U+E704) rad_name_ja=ごんべん, meaning 'words, to speak, say', position へん, radical of 36 kanji; 'À esquerda o radical da palavra (言)' in 誤: the left-side radical",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 59,
+   "spans": [
+    {
+     "from": "<jp>言</jp>",
+     "to": "<jp reading=\"ごんべん\">言</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-03",
+   "surface": "宀",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "うかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼧ (U+2F27) rad_name_ja=うかんむり, meaning 'roof, house', position かんむり, radical of 27 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 60,
+   "spans": [
+    {
+     "from": "<jp>宀</jp>",
+     "to": "<jp reading=\"うかんむり\">宀</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-03",
+   "surface": "日",
+   "occurrences": 3,
+   "residue_cause": "lesson_homograph",
+   "reading": "ひへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical  (U+E708) rad_name_ja=ひへん, meaning 'sun, day, time', position へん, radical of 12 kanji; all 3 occurrences are the left-side sun radical of 晴/暗 ('À esquerda o sol', 'compartilham o radical do sol à esquerda')",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 61,
+   "spans": [
+    {
+     "from": "<jp>日</jp>",
+     "to": "<jp reading=\"ひへん\">日</jp>",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-03",
+   "surface": "氵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "さんずい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺡ (U+2EA1) rad_name_ja=さんずい, meaning 'water', position へん, radical of 60 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 62,
+   "spans": [
+    {
+     "from": "<jp>氵</jp>",
+     "to": "<jp reading=\"さんずい\">氵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-03",
+   "surface": "音",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "おと",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾳ (U+2FB3) rad_name_ja=おと, meaning 'sound, noise', radical of 2 kanji; 'à direita o som (音)' in 暗: component glossed som",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 63,
+   "spans": [
+    {
+     "from": "<jp>音</jp>",
+     "to": "<jp reading=\"おと\">音</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-04",
+   "surface": "扌",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "てへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺘ (U+2E98) rad_name_ja=てへん, meaning 'hand', position へん, radical of 39 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 64,
+   "spans": [
+    {
+     "from": "<jp>扌</jp>",
+     "to": "<jp reading=\"てへん\">扌</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-04",
+   "surface": "日",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "ひ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽇ (U+2F47) rad_name_ja=ひ, meaning 'sun, day, time', radical of 18 kanji; 'tem o sol (日) embaixo da grama' in 暮: component glossed sol",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 65,
+   "spans": [
+    {
+     "from": "<jp>日</jp>",
+     "to": "<jp reading=\"ひ\">日</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-04",
+   "surface": "止",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "とめる",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽌ (U+2F4C) rad_name_ja=とめる, meaning 'to stop', radical of 6 kanji; 'em cima o radical de parar (止)' in 歯: prose names it a radical",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 66,
+   "spans": [
+    {
+     "from": "<jp>止</jp>",
+     "to": "<jp reading=\"とめる\">止</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-04",
+   "surface": "氵",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "さんずい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺡ (U+2EA1) rad_name_ja=さんずい, meaning 'water', position へん, radical of 60 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 67,
+   "spans": [
+    {
+     "from": "<jp>氵</jp>",
+     "to": "<jp reading=\"さんずい\">氵</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-relato-04",
+   "surface": "礻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "しめすへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺭ (U+2EAD) rad_name_ja=しめすへん, meaning 'altar, festival, religious service', position へん, radical of 7 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 68,
+   "spans": [
+    {
+     "from": "<jp>礻</jp>",
+     "to": "<jp reading=\"しめすへん\">礻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-forma-simples-02",
+   "surface": "冂",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "けいがまえ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼌ (U+2F0C) rad_name_ja=けいがまえ, meaning 'to enclose', position かまえ, けいがまえ, radical of 4 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 69,
+   "spans": [
+    {
+     "from": "<jp>冂</jp>",
+     "to": "<jp reading=\"けいがまえ\">冂</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-forma-simples-04",
+   "surface": "六時ごろ",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ろくじごろ",
+   "rule": "context",
+   "evidence": "glossed 'Às seis ... mais ou menos'; the next span 六時間ぐらい is printed ろくじかんぐらい",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 70,
+   "spans": [
+    {
+     "from": "<jp>六時ごろ</jp>",
+     "to": "<jp reading=\"ろくじごろ\">六時ごろ</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-forma-simples-06",
+   "surface": "運",
+   "occurrences": 2,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "うん",
+   "rule": "context",
+   "evidence": "both occurrences: 'O 運 (sorte)', the noun うん; the note contrasts it with 運転手 うんてんしゅ",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 71,
+   "spans": [
+    {
+     "from": "<jp>運</jp>",
+     "to": "<jp reading=\"うん\">運</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-forma-simples-07",
+   "surface": "何か",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "なにか",
+   "rule": "context",
+   "evidence": "'Aqui 何か é alguma coisa'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 72,
+   "spans": [
+    {
+     "from": "<jp>何か</jp>",
+     "to": "<jp reading=\"なにか\">何か</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-02",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 73,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-02",
+   "surface": "里",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "さと",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾥ (U+2FA5) rad_name_ja=さと, meaning 'village, (3.93 km)', radical of 3 kanji; 'ao lado de aldeia (里)' in 理: component glossed aldeia",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 74,
+   "spans": [
+    {
+     "from": "<jp>里</jp>",
+     "to": "<jp reading=\"さと\">里</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-02",
+   "surface": "門",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "もんがまえ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾨ (U+2FA8) rad_name_ja=もんがまえ, meaning 'gate, door', position かまえ, もんがまえ, radical of 8 kanji; 'dentro de um portão (門)' in 問: the enclosing component",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 75,
+   "spans": [
+    {
+     "from": "<jp>門</jp>",
+     "to": "<jp reading=\"もんがまえ\">門</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-03",
+   "surface": "間",
+   "occurrences": 4,
+   "residue_cause": "homograph",
+   "reading": "あいだ",
+   "rule": "context",
+   "evidence": "lesson title 'Períodos de tempo: 間 e 間に' and its heading '間に (あいだに)'; 間 = 'o tempo todo'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 76,
+   "spans": [
+    {
+     "from": "<jp>間</jp>",
+     "to": "<jp reading=\"あいだ\">間</jp>",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-03",
+   "surface": "間に",
+   "occurrences": 4,
+   "residue_cause": "homograph",
+   "reading": "あいだに",
+   "rule": "context",
+   "evidence": "heading '間に (あいだに)'; 'um evento único dentro do intervalo'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 77,
+   "spans": [
+    {
+     "from": "<jp>間に</jp>",
+     "to": "<jp reading=\"あいだに\">間に</jp>",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-04",
+   "surface": "後で",
+   "occurrences": 7,
+   "residue_cause": "homograph",
+   "reading": "あとで",
+   "rule": "context",
+   "evidence": "same lesson prints 後でやって as あとでやって and ご飯を食べた後で as ごはんをたべたあとで",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 78,
+   "spans": [
+    {
+     "from": "<jp>後で</jp>",
+     "to": "<jp reading=\"あとで\">後で</jp>",
+     "count": 7
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-04",
+   "surface": "明日",
+   "occurrences": 1,
+   "residue_cause": "alignment_refused",
+   "reading": "あした",
+   "rule": "context",
+   "evidence": "glossed 'amanhã' and the same lesson prints <jp reading=\"あした\">明日</jp>; kanji_align refuses it as 熟字訓, so the apply needs a whole-word (group ruby) allowance",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 79,
+   "spans": [
+    {
+     "from": "<jp>明日</jp>",
+     "to": "<jp reading=\"あした\">明日</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-04",
+   "surface": "間",
+   "occurrences": 3,
+   "residue_cause": "homograph",
+   "reading": "あいだ",
+   "rule": "context",
+   "evidence": "lesson title '...: ているあいだに e 後で'; 間 = 'o tempo todo, em paralelo'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 80,
+   "spans": [
+    {
+     "from": "<jp>間</jp>",
+     "to": "<jp reading=\"あいだ\">間</jp>",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-04",
+   "surface": "間に",
+   "occurrences": 9,
+   "residue_cause": "homograph",
+   "reading": "あいだに",
+   "rule": "context",
+   "evidence": "lesson title 'ているあいだに' spells the reading; 間に = 'em algum momento dentro de um período'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 81,
+   "spans": [
+    {
+     "from": "<jp>間に</jp>",
+     "to": "<jp reading=\"あいだに\">間に</jp>",
+     "count": 9
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-06",
+   "surface": "の一つ",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "のひとつ",
+   "rule": "context",
+   "evidence": "glossed 'um/uma de' after 私の好きな歌",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 82,
+   "spans": [
+    {
+     "from": "<jp>の一つ</jp>",
+     "to": "<jp reading=\"のひとつ\">の一つ</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-07",
+   "surface": "各",
+   "occurrences": 4,
+   "residue_cause": "homograph",
+   "reading": "かく",
+   "rule": "context",
+   "evidence": "the prefix 'cada'; same lesson prints 各階 かくかい and 各駅 かくえき",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 83,
+   "spans": [
+    {
+     "from": "<jp>各</jp>",
+     "to": "<jp reading=\"かく\">各</jp>",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-oracoes-relativas-07",
+   "surface": "各 の 駅",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "かく の えき",
+   "rule": "context",
+   "evidence": "the wrong form contrasted with 各駅 (printed かくえき); spaces kept to mirror the surface",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 84,
+   "spans": [
+    {
+     "from": "<jp>各 の 駅</jp>",
+     "to": "<jp reading=\"かく の えき\">各 の 駅</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-01",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 85,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-02",
+   "surface": "何",
+   "occurrences": 2,
+   "residue_cause": "lesson_homograph",
+   "reading": "なに",
+   "rule": "context",
+   "evidence": "both occurrences glossed 'o quê'; the example is 何を食べたらいいですか (なにを)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 86,
+   "spans": [
+    {
+     "from": "<jp>何</jp>",
+     "to": "<jp reading=\"なに\">何</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-03",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 87,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-04",
+   "surface": "音",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "おと",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾳ (U+2FB3) rad_name_ja=おと, meaning 'sound, noise', radical of 2 kanji; 'em cima há o som (音)' in 意: component glossed som",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 88,
+   "spans": [
+    {
+     "from": "<jp>音</jp>",
+     "to": "<jp reading=\"おと\">音</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-05",
+   "surface": "頁",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "おおがい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾴ (U+2FB4) rad_name_ja=おおがい, meaning 'head, page', position つくり, radical of 12 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 89,
+   "spans": [
+    {
+     "from": "<jp>頁</jp>",
+     "to": "<jp reading=\"おおがい\">頁</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-08",
+   "surface": "以",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "い",
+   "rule": "context",
+   "evidence": "'以 (a partir de) inclui o próprio valor': the 以 of 以上/以下 (いじょう/いか)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 90,
+   "spans": [
+    {
+     "from": "<jp>以</jp>",
+     "to": "<jp reading=\"い\">以</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-08",
+   "surface": "何か",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "なにか",
+   "rule": "context",
+   "evidence": "'a mesma lógica do だれか / 何か': alguma coisa",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 91,
+   "spans": [
+    {
+     "from": "<jp>何か</jp>",
+     "to": "<jp reading=\"なにか\">何か</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-potencial-03",
+   "surface": "夕",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ゆうべ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼣ (U+2F23) rad_name_ja=ゆうべ, meaning 'evening', radical of 5 kanji; 'São dois 夕 (entardecer) empilhados' in 多: component",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 92,
+   "spans": [
+    {
+     "from": "<jp>夕</jp>",
+     "to": "<jp reading=\"ゆうべ\">夕</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-potencial-03",
+   "surface": "宀",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "うかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼧ (U+2F27) rad_name_ja=うかんむり, meaning 'roof, house', position かんむり, radical of 27 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 93,
+   "spans": [
+    {
+     "from": "<jp>宀</jp>",
+     "to": "<jp reading=\"うかんむり\">宀</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-potencial-03",
+   "surface": "里",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "さと",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾥ (U+2FA5) rad_name_ja=さと, meaning 'village, (3.93 km)', radical of 3 kanji; 'Tem o componente 里 (vila)' in 野",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 94,
+   "spans": [
+    {
+     "from": "<jp>里</jp>",
+     "to": "<jp reading=\"さと\">里</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-volitivo-01",
+   "surface": "刂",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "りっとう",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺉ (U+2E89) rad_name_ja=りっとう, meaning 'knife, sword', position つくり, radical of 16 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 95,
+   "spans": [
+    {
+     "from": "<jp>刂</jp>",
+     "to": "<jp reading=\"りっとう\">刂</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-volitivo-03",
+   "surface": "毎",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "まい",
+   "rule": "context",
+   "evidence": "component of 海 glossed 'cada': the prefix まい",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 96,
+   "spans": [
+    {
+     "from": "<jp>毎</jp>",
+     "to": "<jp reading=\"まい\">毎</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-volitivo-04",
+   "surface": "明日の予定は？",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "あしたのよていは？",
+   "rule": "context",
+   "evidence": "glossed casual 'os planos pra amanhã?', 'bem natural na fala': あした (registry), not Sudachi's formal あす; 予定 printed よてい beside it",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 97,
+   "spans": [
+    {
+     "from": "<jp>明日の予定は？</jp>",
+     "to": "<jp reading=\"あしたのよていは？\">明日の予定は？</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-volitivo-05",
+   "surface": "使",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "つか",
+   "rule": "context",
+   "evidence": "'encaixa o 使 direto': the 使 of 日本語を使うようにする, printed つかう",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 98,
+   "spans": [
+    {
+     "from": "<jp>使</jp>",
+     "to": "<jp reading=\"つか\">使</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-transitividade-01",
+   "surface": "ドアを開く",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ドアをあく",
+   "rule": "context",
+   "evidence": "the prose calls this 開く the INTRANSITIVE verb ('objeto com を mais verbo intransitivo soa errado'): あく; katakana kept as surface",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 99,
+   "spans": [
+    {
+     "from": "<jp>ドアを開く</jp>",
+     "to": "<jp reading=\"ドアをあく\">ドアを開く</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-transitividade-03",
+   "surface": "禾",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "のぎへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽲ (U+2F72) rad_name_ja=のぎへん, meaning 'grain', position へん, radical of 13 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 100,
+   "spans": [
+    {
+     "from": "<jp>禾</jp>",
+     "to": "<jp reading=\"のぎへん\">禾</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-transitividade-04",
+   "surface": "亻",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "にんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⺅ (U+2E85) rad_name_ja=にんべん, meaning 'person', position へん, radical of 55 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 101,
+   "spans": [
+    {
+     "from": "<jp>亻</jp>",
+     "to": "<jp reading=\"にんべん\">亻</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-transitividade-04",
+   "surface": "广",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "まだれ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼴ (U+2F34) rad_name_ja=まだれ, meaning 'slanting roof', position たれ, radical of 12 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 102,
+   "spans": [
+    {
+     "from": "<jp>广</jp>",
+     "to": "<jp reading=\"まだれ\">广</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-dar-receber-02",
+   "surface": "彼に",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "かれに",
+   "rule": "context",
+   "evidence": "glossed 'vou pedir para ele vir'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 103,
+   "spans": [
+    {
+     "from": "<jp>彼に</jp>",
+     "to": "<jp reading=\"かれに\">彼に</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-dar-receber-03",
+   "surface": "来てほしい",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "きてほしい",
+   "rule": "context",
+   "evidence": "same note prints 来てほしいんだ as きてほしいんだ",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 104,
+   "spans": [
+    {
+     "from": "<jp>来てほしい</jp>",
+     "to": "<jp reading=\"きてほしい\">来てほしい</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-dar-receber-04",
+   "surface": "工",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "たくみ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼯ (U+2F2F) rad_name_ja=たくみ, meaning 'work, carpenter, skill', radical of 3 kanji; 'embaixo 工 (ofício)' in 空: bottom component",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 105,
+   "spans": [
+    {
+     "from": "<jp>工</jp>",
+     "to": "<jp reading=\"たくみ\">工</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-dar-receber-04",
+   "surface": "来て",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "きて",
+   "rule": "context",
+   "evidence": "'来て (て-forma de vir)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 106,
+   "spans": [
+    {
+     "from": "<jp>来て</jp>",
+     "to": "<jp reading=\"きて\">来て</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-experiencia-03",
+   "surface": "来たことがあるの",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "きたことがあるの",
+   "rule": "context",
+   "evidence": "same sentence prints 来 as き; glossed 'você já veio aqui antes?'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 107,
+   "spans": [
+    {
+     "from": "<jp>来たことがあるの</jp>",
+     "to": "<jp reading=\"きたことがあるの\">来たことがあるの</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-experiencia-04",
+   "surface": "米",
+   "occurrences": 2,
+   "residue_cause": "lesson_homograph",
+   "reading": "こめ",
+   "rule": "context",
+   "evidence": "both occurrences name the rice kanji ('um pé de arroz', 'O arroz é tão central que 米...'); lesson topic is materials (米から作る)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 108,
+   "spans": [
+    {
+     "from": "<jp>米</jp>",
+     "to": "<jp reading=\"こめ\">米</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-experiencia-04",
+   "surface": "米から",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "こめから",
+   "rule": "context",
+   "evidence": "'o saquê feito justamente 米から': from rice",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 109,
+   "spans": [
+    {
+     "from": "<jp>米から</jp>",
+     "to": "<jp reading=\"こめから\">米から</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-experiencia-04",
+   "surface": "米から作る",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "こめからつくる",
+   "rule": "context",
+   "evidence": "'<vocab 米> (arroz) é a matéria-prima ... 米から作る, feito a partir do arroz'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 110,
+   "spans": [
+    {
+     "from": "<jp>米から作る</jp>",
+     "to": "<jp reading=\"こめからつくる\">米から作る</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-experiencia-05",
+   "surface": "化",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "か",
+   "rule": "context",
+   "evidence": "the suffix -化 ('-izar'), shown in 自動化する printed じどうかする",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 111,
+   "spans": [
+    {
+     "from": "<jp>化</jp>",
+     "to": "<jp reading=\"か\">化</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-experiencia-06",
+   "surface": "悪くない",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "わるくない",
+   "rule": "context",
+   "evidence": "same passage prints 悪く as わるく",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 112,
+   "spans": [
+    {
+     "from": "<jp>悪くない</jp>",
+     "to": "<jp reading=\"わるくない\">悪くない</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-obrigacao-01",
+   "surface": "亠",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "なべぶた",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼇ (U+2F07) rad_name_ja=なべぶた, meaning 'lid, top', position かんむり, radical of 3 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 113,
+   "spans": [
+    {
+     "from": "<jp>亠</jp>",
+     "to": "<jp reading=\"なべぶた\">亠</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-obrigacao-01",
+   "surface": "何が必要ですか",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "なにがひつようですか",
+   "rule": "context",
+   "evidence": "'basta pôr 何 (なに) no lugar do X', printed なに just before",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 114,
+   "spans": [
+    {
+     "from": "<jp>何が必要ですか</jp>",
+     "to": "<jp reading=\"なにがひつようですか\">何が必要ですか</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-obrigacao-01",
+   "surface": "巾",
+   "occurrences": 1,
+   "residue_cause": "alignment_refused",
+   "reading": "はば",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼱ (U+2F31) rad_name_ja=はば, meaning 'cloth', radical of 9 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 115,
+   "spans": [
+    {
+     "from": "<jp>巾</jp>",
+     "to": "<jp reading=\"はば\">巾</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-obrigacao-01",
+   "surface": "艮",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "こん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾉ (U+2F89) rad_name_ja=こん, meaning 'boundary', radical of 1 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 116,
+   "spans": [
+    {
+     "from": "<jp>艮</jp>",
+     "to": "<jp reading=\"こん\">艮</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-obrigacao-01",
+   "surface": "金",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "かねへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical  (U+E717) rad_name_ja=かねへん, meaning 'metal, gold, mineral', position へん, radical of 11 kanji; 'à esquerda fica 金 (metal/ouro)' in 銀: the left-side radical",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 117,
+   "spans": [
+    {
+     "from": "<jp>金</jp>",
+     "to": "<jp reading=\"かねへん\">金</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-obrigacao-04",
+   "surface": "5時までに帰る",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ごじまでにかえる",
+   "rule": "context",
+   "evidence": "glossed 'volto até as 5'; digits cannot enter a reading (READING_OK), so 5 is spelled ご",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 118,
+   "spans": [
+    {
+     "from": "<jp>5時までに帰る</jp>",
+     "to": "<jp reading=\"ごじまでにかえる\">5時までに帰る</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-obrigacao-04",
+   "surface": "5時まで待つ",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ごじまでまつ",
+   "rule": "context",
+   "evidence": "glossed 'espero até as 5'; digit spelled ご",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 119,
+   "spans": [
+    {
+     "from": "<jp>5時まで待つ</jp>",
+     "to": "<jp reading=\"ごじまでまつ\">5時まで待つ</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-aspecto-03",
+   "surface": "亜",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "あ",
+   "rule": "context",
+   "evidence": "top component of 悪 (あく); 亜 has no gloss, and あ is the only reading it takes in common words (亜熱帯)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 120,
+   "spans": [
+    {
+     "from": "<jp>亜</jp>",
+     "to": "<jp reading=\"あ\">亜</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-aspecto-06",
+   "surface": "やっと着いた",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "やっとついた",
+   "rule": "context",
+   "evidence": "glossed 'enfim chegamos, depois de uma viagem'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 121,
+   "spans": [
+    {
+     "from": "<jp>やっと着いた</jp>",
+     "to": "<jp reading=\"やっとついた\">やっと着いた</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-03",
+   "surface": "君",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "きみ",
+   "rule": "context",
+   "evidence": "glossed 'você'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 122,
+   "spans": [
+    {
+     "from": "<jp>君</jp>",
+     "to": "<jp reading=\"きみ\">君</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-04",
+   "surface": "天使みたいな人",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "てんしみたいなひと",
+   "rule": "context",
+   "evidence": "contrasted with 天使のような人 printed てんしのようなひと",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 123,
+   "spans": [
+    {
+     "from": "<jp>天使みたいな人</jp>",
+     "to": "<jp reading=\"てんしみたいなひと\">天使みたいな人</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-05",
+   "surface": "開きそうにない",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ひらきそうにない",
+   "rule": "context",
+   "evidence": "explains sent:tatoeba-3496750, whose bank kana is ひらきそうにないわ",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 124,
+   "spans": [
+    {
+     "from": "<jp>開きそうにない</jp>",
+     "to": "<jp reading=\"ひらきそうにない\">開きそうにない</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-05",
+   "surface": "開く",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "ひらく",
+   "rule": "context",
+   "evidence": "'O verbo 開く (abrir) perde o ます': the verb of sent:tatoeba-3496750, bank kana ひらきそうにないわ",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 125,
+   "spans": [
+    {
+     "from": "<jp>開く</jp>",
+     "to": "<jp reading=\"ひらく\">開く</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-05",
+   "surface": "雨が降ったそうだ",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "あめがふったそうだ",
+   "rule": "context",
+   "evidence": "glossed 'dizem que choveu'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 126,
+   "spans": [
+    {
+     "from": "<jp>雨が降ったそうだ</jp>",
+     "to": "<jp reading=\"あめがふったそうだ\">雨が降ったそうだ</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-05",
+   "surface": "雨が降ったとみえて",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "あめがふったとみえて",
+   "rule": "context",
+   "evidence": "glossed 'pelo visto choveu'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 127,
+   "spans": [
+    {
+     "from": "<jp>雨が降ったとみえて</jp>",
+     "to": "<jp reading=\"あめがふったとみえて\">雨が降ったとみえて</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-05",
+   "surface": "食",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "しょくへん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⻟ (U+2EDF) rad_name_ja=しょくへん, meaning 'food, to eat', position へん, radical of 5 kanji; 'À esquerda fica 食 (comer/comida)' in 館: the left-side radical",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 128,
+   "spans": [
+    {
+     "from": "<jp>食</jp>",
+     "to": "<jp reading=\"しょくへん\">食</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-06",
+   "surface": "音が",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "おとが",
+   "rule": "context",
+   "evidence": "'o som é o sujeito de する'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 129,
+   "spans": [
+    {
+     "from": "<jp>音が</jp>",
+     "to": "<jp reading=\"おとが\">音が</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-suposicao-06",
+   "surface": "音を",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "おとを",
+   "rule": "context",
+   "evidence": "contrast with 音が: 'ouço um som'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 130,
+   "spans": [
+    {
+     "from": "<jp>音を</jp>",
+     "to": "<jp reading=\"おとを\">音を</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-passiva-01",
+   "surface": "夂",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "なつあし",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼡ (U+2F21) rad_name_ja=のまた, meaning 'to follow', radical of 1 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "corrected",
+   "authored_from": "decided",
+   "authored_row": 131,
+   "authored_reading": "のまた",
+   "spans": [
+    {
+     "from": "<jp>夂</jp>",
+     "to": "<jp reading=\"なつあし\">夂</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-causativa-02",
+   "surface": "私に",
+   "occurrences": 2,
+   "residue_cause": "homograph",
+   "reading": "わたしに",
+   "rule": "context",
+   "evidence": "same lesson prints 私に話させてください as わたしにはなさせてください; glossed 'a mim'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 132,
+   "spans": [
+    {
+     "from": "<jp>私に</jp>",
+     "to": "<jp reading=\"わたしに\">私に</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-causativa-03",
+   "surface": "彼には",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "かれには",
+   "rule": "context",
+   "evidence": "glossed 'por ele'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 133,
+   "spans": [
+    {
+     "from": "<jp>彼には</jp>",
+     "to": "<jp reading=\"かれには\">彼には</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-causativa-03",
+   "surface": "彼に怒らせられる",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "かれにおこらせられる",
+   "rule": "context",
+   "evidence": "'ele (彼に) é a causa'; 怒る read おこる as in 怒らせる",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 134,
+   "spans": [
+    {
+     "from": "<jp>彼に怒らせられる</jp>",
+     "to": "<jp reading=\"かれにおこらせられる\">彼に怒らせられる</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-conectores-07",
+   "surface": "ように言う",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "ようにいう",
+   "rule": "context",
+   "evidence": "grammar-pattern name 'relatar um pedido/ordem'; standard furigana いう (registry), not the spoken ゆう",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 135,
+   "spans": [
+    {
+     "from": "<jp>ように言う</jp>",
+     "to": "<jp reading=\"ようにいう\">ように言う</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-01",
+   "surface": "乗",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "の",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -1/-2 drill 乗る のる, 乗り物 のりもの",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 136,
+   "spans": [
+    {
+     "from": "<jp>乗</jp>",
+     "to": "<jp reading=\"の\">乗</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-01",
+   "surface": "低",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ひく",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -3/-4 drill 低い ひくい",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 137,
+   "spans": [
+    {
+     "from": "<jp>低</jp>",
+     "to": "<jp reading=\"ひく\">低</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-01",
+   "surface": "働",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "はたら",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -7/-8 drill 働く はたらく ('usa a leitura nativa はたら')",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 138,
+   "spans": [
+    {
+     "from": "<jp>働</jp>",
+     "to": "<jp reading=\"はたら\">働</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-01",
+   "surface": "合",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "あい",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -13 answers 'o kanji 合 se lê: あい' (試合, 場合)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 139,
+   "spans": [
+    {
+     "from": "<jp>合</jp>",
+     "to": "<jp reading=\"あい\">合</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-02",
+   "surface": "太",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ふと",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -1/-9 drill 太い ふとい, 太る ふとる",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 140,
+   "spans": [
+    {
+     "from": "<jp>太</jp>",
+     "to": "<jp reading=\"ふと\">太</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-02",
+   "surface": "好",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "す",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -9 drills 好き すき",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 141,
+   "spans": [
+    {
+     "from": "<jp>好</jp>",
+     "to": "<jp reading=\"す\">好</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-02",
+   "surface": "引",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ひ",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -4/-9 drill 引く ひく, 引き出し ひきだし",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 142,
+   "spans": [
+    {
+     "from": "<jp>引</jp>",
+     "to": "<jp reading=\"ひ\">引</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-02",
+   "surface": "暗",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "くら",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -8 drills 暗い くらい",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 143,
+   "spans": [
+    {
+     "from": "<jp>暗</jp>",
+     "to": "<jp reading=\"くら\">暗</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-03",
+   "surface": "民",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "みん",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -4: 'A leitura on ミン aparece em 市民'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 144,
+   "spans": [
+    {
+     "from": "<jp>民</jp>",
+     "to": "<jp reading=\"みん\">民</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-03",
+   "surface": "産",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "さん",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -7 drills 産業 (さんぎょう), 産 = 'produzir'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 145,
+   "spans": [
+    {
+     "from": "<jp>産</jp>",
+     "to": "<jp reading=\"さん\">産</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-04",
+   "surface": "短",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "みじか",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -2: 'O kanji guarda みじか' (短い)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 146,
+   "spans": [
+    {
+     "from": "<jp>短</jp>",
+     "to": "<jp reading=\"みじか\">短</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-04",
+   "surface": "軽",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "かる",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -10 drills 軽い かるい",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 147,
+   "spans": [
+    {
+     "from": "<jp>軽</jp>",
+     "to": "<jp reading=\"かる\">軽</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-04",
+   "surface": "進",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "すす",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -12: 'O kanji guarda すす' (進む)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 148,
+   "spans": [
+    {
+     "from": "<jp>進</jp>",
+     "to": "<jp reading=\"すす\">進</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-05",
+   "surface": "門",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "もん",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -1: 'se lê もん quando aparece sozinho'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 149,
+   "spans": [
+    {
+     "from": "<jp>門</jp>",
+     "to": "<jp reading=\"もん\">門</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-desu-wa-01",
+   "surface": "私",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "わたし",
+   "rule": "context",
+   "evidence": "the は-topic pitfall '私 + は' illustrates 私は医者です; わたし is the everyday pronoun the lesson teaches",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 150,
+   "spans": [
+    {
+     "from": "<jp>私</jp>",
+     "to": "<jp reading=\"わたし\">私</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-desu-wa-02",
+   "surface": "何",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "なに",
+   "rule": "context",
+   "evidence": "'あれ seguido de 何 e da entonação de pergunta': the bare casual question あれ、何? is なに (なん only before d/t/n)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 151,
+   "spans": [
+    {
+     "from": "<jp>何</jp>",
+     "to": "<jp reading=\"なに\">何</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "誰",
+   "occurrences": 2,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "だれ",
+   "rule": "context",
+   "evidence": "lesson 'Quem e por quê: 誰・どうして・なぜ・なんで'; 誰 = quem",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 152,
+   "spans": [
+    {
+     "from": "<jp>誰</jp>",
+     "to": "<jp reading=\"だれ\">誰</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "誰が",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "だれが",
+   "rule": "context",
+   "evidence": "'誰が = quem (fez)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 153,
+   "spans": [
+    {
+     "from": "<jp>誰が</jp>",
+     "to": "<jp reading=\"だれが\">誰が</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "誰と",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "だれと",
+   "rule": "context",
+   "evidence": "'誰と = com quem'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 154,
+   "spans": [
+    {
+     "from": "<jp>誰と</jp>",
+     "to": "<jp reading=\"だれと\">誰と</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "誰に",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "だれに",
+   "rule": "context",
+   "evidence": "'誰に = a quem / para quem'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 155,
+   "spans": [
+    {
+     "from": "<jp>誰に</jp>",
+     "to": "<jp reading=\"だれに\">誰に</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "誰の",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "だれの",
+   "rule": "context",
+   "evidence": "'誰の = de quem'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 156,
+   "spans": [
+    {
+     "from": "<jp>誰の</jp>",
+     "to": "<jp reading=\"だれの\">誰の</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "誰は",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "だれは",
+   "rule": "context",
+   "evidence": "'誰は está errado' (the particle pitfall)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 157,
+   "spans": [
+    {
+     "from": "<jp>誰は</jp>",
+     "to": "<jp reading=\"だれは\">誰は</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "風",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "かぜ",
+   "rule": "context",
+   "evidence": "'かぜ tem duas grafias em kanji: 風 é vento'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 158,
+   "spans": [
+    {
+     "from": "<jp>風</jp>",
+     "to": "<jp reading=\"かぜ\">風</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-04",
+   "surface": "風邪",
+   "occurrences": 1,
+   "residue_cause": "alignment_refused",
+   "reading": "かぜ",
+   "rule": "context",
+   "evidence": "'風邪 é resfriado', the other spelling of かぜ; kanji_align refuses it as 熟字訓, so the apply needs a whole-word allowance",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 159,
+   "spans": [
+    {
+     "from": "<jp>風邪</jp>",
+     "to": "<jp reading=\"かぜ\">風邪</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-perguntas-06",
+   "surface": "何",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "なに",
+   "rule": "context",
+   "evidence": "'o か grudado em 何 dá o sentido de alguma coisa': the 何 of 何か食べたいです, printed なにか",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 160,
+   "spans": [
+    {
+     "from": "<jp>何</jp>",
+     "to": "<jp reading=\"なに\">何</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-01",
+   "surface": "一",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "いち",
+   "rule": "context",
+   "evidence": "'Veja a leitura on de cada dígito ... 1 一 ( ichi )'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 161,
+   "spans": [
+    {
+     "from": "<jp>一</jp>",
+     "to": "<jp reading=\"いち\">一</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-02",
+   "surface": "一千万円くらい",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "いっせんまんえんくらい",
+   "rule": "context",
+   "evidence": "glossed 'uns dez milhões de ienes'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 162,
+   "spans": [
+    {
+     "from": "<jp>一千万円くらい</jp>",
+     "to": "<jp reading=\"いっせんまんえんくらい\">一千万円くらい</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-02",
+   "surface": "千人くらい",
+   "occurrences": 2,
+   "residue_cause": "homograph",
+   "reading": "せんにんくらい",
+   "rule": "context",
+   "evidence": "both occurrences glossed 'umas mil pessoas'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 163,
+   "spans": [
+    {
+     "from": "<jp>千人くらい</jp>",
+     "to": "<jp reading=\"せんにんくらい\">千人くらい</jp>",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-05",
+   "surface": "一年前くらい前に",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "いちねんまえくらいまえに",
+   "rule": "context",
+   "evidence": "glossed 'por volta de um ano atrás'; the corrected form beside it is printed いちねんまえくらいにきました",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 164,
+   "spans": [
+    {
+     "from": "<jp>一年前くらい前に</jp>",
+     "to": "<jp reading=\"いちねんまえくらいまえに\">一年前くらい前に</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-07",
+   "surface": "囗",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "くにがまえ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼞ (U+2F1E) rad_name_ja=くにがまえ, meaning 'border, territorial boundaries', position かまえ, くにがまえ, radical of 10 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 165,
+   "spans": [
+    {
+     "from": "<jp>囗</jp>",
+     "to": "<jp reading=\"くにがまえ\">囗</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-09",
+   "surface": "自",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "じ",
+   "rule": "context",
+   "evidence": "'os dois transportes compartilham o 自 (por si próprio)': the じ of 自転車/自動車",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 166,
+   "spans": [
+    {
+     "from": "<jp>自</jp>",
+     "to": "<jp reading=\"じ\">自</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-verbos-01",
+   "surface": "儿",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "ひとあし",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼉ (U+2F09) rad_name_ja=ひとあし, meaning 'human legs', position あし, radical of 9 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 167,
+   "spans": [
+    {
+     "from": "<jp>儿</jp>",
+     "to": "<jp reading=\"ひとあし\">儿</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-verbos-02",
+   "surface": "本",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ほん",
+   "rule": "context",
+   "evidence": "'vem 本 (o objeto)': あした本をかう, buy a book",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 168,
+   "spans": [
+    {
+     "from": "<jp>本</jp>",
+     "to": "<jp reading=\"ほん\">本</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-verbos-03",
+   "surface": "長",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ちょう",
+   "rule": "context",
+   "evidence": "'O kanji 長 com o sentido de líder aparece em cargos: 社長 (しゃちょう)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 169,
+   "spans": [
+    {
+     "from": "<jp>長</jp>",
+     "to": "<jp reading=\"ちょう\">長</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-verbos-04",
+   "surface": "1万円をする",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "いちまんえんをする",
+   "rule": "context",
+   "evidence": "the wrong form of このかばんは1万円する, printed ...いちまんえんする; digit spelled いち",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 170,
+   "spans": [
+    {
+     "from": "<jp>1万円をする</jp>",
+     "to": "<jp reading=\"いちまんえんをする\">1万円をする</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-01",
+   "surface": "いすの上に",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "いすのうえに",
+   "rule": "context",
+   "evidence": "'olha o 上 (うえ): em cima ... いすの上に (em cima da cadeira)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 171,
+   "spans": [
+    {
+     "from": "<jp>いすの上に</jp>",
+     "to": "<jp reading=\"いすのうえに\">いすの上に</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-01",
+   "surface": "一",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "いち",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼀ (U+2F00) rad_name_ja=いち, meaning 'one, horizontal stroke', radical of 12 kanji; 'uma linha do chão (一)' in the 上 shape mnemonic: component",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 172,
+   "spans": [
+    {
+     "from": "<jp>一</jp>",
+     "to": "<jp reading=\"いち\">一</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-02",
+   "surface": "日",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ひ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⽇ (U+2F47) rad_name_ja=ひ, meaning 'sun, day, time', radical of 18 kanji; 'dentro dele mora o 日 (sol)' in 間: inner component glossed sol",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 173,
+   "spans": [
+    {
+     "from": "<jp>日</jp>",
+     "to": "<jp reading=\"ひ\">日</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-02",
+   "surface": "門",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "もんがまえ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⾨ (U+2FA8) rad_name_ja=もんがまえ, meaning 'gate, door', position かまえ, もんがまえ, radical of 8 kanji; 'o componente de fora é 門 (um portão de duas folhas)' in 間",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 174,
+   "spans": [
+    {
+     "from": "<jp>門</jp>",
+     "to": "<jp reading=\"もんがまえ\">門</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-03",
+   "surface": "後で",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "あとで",
+   "rule": "context",
+   "evidence": "'o で que aparece no fim de なんで ou 後で': the adverb 'depois'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 175,
+   "spans": [
+    {
+     "from": "<jp>後で</jp>",
+     "to": "<jp reading=\"あとで\">後で</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-05",
+   "surface": "先",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "せん",
+   "rule": "context",
+   "evidence": "'o 先 traz a ideia de anterior' in the 先月 (せんげつ) family printed beside it",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 176,
+   "spans": [
+    {
+     "from": "<jp>先</jp>",
+     "to": "<jp reading=\"せん\">先</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-06",
+   "surface": "午",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "ご",
+   "rule": "context",
+   "evidence": "same lesson prints <jp reading=\"ご\">午</jp> ('meio-dia') in the same contrast, and 午後 ごご",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 177,
+   "spans": [
+    {
+     "from": "<jp>午</jp>",
+     "to": "<jp reading=\"ご\">午</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-06",
+   "surface": "日",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ひ",
+   "rule": "context",
+   "evidence": "'Outra palavra que termina em 日 (dia)': the noun ひ (it voices to び inside 誕生日/曜日)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 178,
+   "spans": [
+    {
+     "from": "<jp>日</jp>",
+     "to": "<jp reading=\"ひ\">日</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-particulas-lugar-06",
+   "surface": "金",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "きん",
+   "rule": "context",
+   "evidence": "listed among the element kanji of the weekdays ('ouro/metal'); the 金 of 金曜日 きんようび",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 179,
+   "spans": [
+    {
+     "from": "<jp>金</jp>",
+     "to": "<jp reading=\"きん\">金</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-passado-01",
+   "surface": "来る日も来る日も",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "くるひもくるひも",
+   "rule": "context",
+   "evidence": "the idiom 'dia após dia'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 180,
+   "spans": [
+    {
+     "from": "<jp>来る日も来る日も</jp>",
+     "to": "<jp reading=\"くるひもくるひも\">来る日も来る日も</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-passado-02",
+   "surface": "着くじゃなかった",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "つくじゃなかった",
+   "rule": "context",
+   "evidence": "'Não cheguei' contrasted with 着かなかった printed つかなかった",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 181,
+   "spans": [
+    {
+     "from": "<jp>着くじゃなかった</jp>",
+     "to": "<jp reading=\"つくじゃなかった\">着くじゃなかった</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-passado-05",
+   "surface": "冖",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "わかんむり",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼍ (U+2F0D) rad_name_ja=わかんむり, meaning 'cover, crown', position かんむり, radical of 2 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 182,
+   "spans": [
+    {
+     "from": "<jp>冖</jp>",
+     "to": "<jp reading=\"わかんむり\">冖</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-passado-05",
+   "surface": "子",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "こ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼦ (U+2F26) rad_name_ja=こ, meaning 'child, son', radical of 5 kanji; 'o componente 子 (filho/criança)' in 学",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 183,
+   "spans": [
+    {
+     "from": "<jp>子</jp>",
+     "to": "<jp reading=\"こ\">子</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-adjetivos-02",
+   "surface": "良",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "よ",
+   "rule": "context",
+   "evidence": "'escreve-se com o kanji 良 e a raiz よ: 良かった (よかった)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 184,
+   "spans": [
+    {
+     "from": "<jp>良</jp>",
+     "to": "<jp reading=\"よ\">良</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-adjetivos-06",
+   "surface": "冂",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "けいがまえ",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼌ (U+2F0C) rad_name_ja=けいがまえ, meaning 'to enclose', position かまえ, けいがまえ, radical of 4 kanji; radical/component printed inside a kanji decomposition",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 185,
+   "spans": [
+    {
+     "from": "<jp>冂</jp>",
+     "to": "<jp reading=\"けいがまえ\">冂</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-adjetivos-07",
+   "surface": "下手",
+   "occurrences": 5,
+   "residue_cause": "alignment_refused",
+   "reading": "へた",
+   "rule": "context",
+   "evidence": "all 5 occurrences: 料理を作るのが下手です is printed ...へたです; sibling lesson title 'のが下手 (へた)'; kanji_align refuses 熟字訓, apply needs a whole-word allowance",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 186,
+   "spans": [
+    {
+     "from": "<jp>下手</jp>",
+     "to": "<jp reading=\"へた\">下手</jp>",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-adjetivos-07",
+   "surface": "本を読む",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ほんをよむ",
+   "rule": "context",
+   "evidence": "'o を pertence ao verbo de dentro (本を読む)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 187,
+   "spans": [
+    {
+     "from": "<jp>本を読む</jp>",
+     "to": "<jp reading=\"ほんをよむ\">本を読む</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-adjetivos-08",
+   "surface": "下手",
+   "occurrences": 1,
+   "residue_cause": "alignment_refused",
+   "reading": "へた",
+   "rule": "context",
+   "evidence": "lesson title 'Ser ruim em uma atividade: のが下手 (へた)'; kanji_align refuses 熟字訓, apply needs a whole-word allowance",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 188,
+   "spans": [
+    {
+     "from": "<jp>下手</jp>",
+     "to": "<jp reading=\"へた\">下手</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-comparacoes-02",
+   "surface": "〜の中で",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "〜のなかで",
+   "rule": "context",
+   "evidence": "'A peça (なか) quer dizer dentro/interior, e 〜の中で delimita o conjunto'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 189,
+   "spans": [
+    {
+     "from": "<jp>〜の中で</jp>",
+     "to": "<jp reading=\"〜のなかで\">〜の中で</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-comparacoes-02",
+   "surface": "の中で",
+   "occurrences": 3,
+   "residue_cause": "homograph",
+   "reading": "のなかで",
+   "rule": "context",
+   "evidence": "all 3 occurrences are the superlative frame 'dentre as...', the なか gloss printed beside it",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 190,
+   "spans": [
+    {
+     "from": "<jp>の中で</jp>",
+     "to": "<jp reading=\"のなかで\">の中で</jp>",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-comparacoes-02",
+   "surface": "中",
+   "occurrences": 1,
+   "residue_cause": "lesson_homograph",
+   "reading": "なか",
+   "rule": "context",
+   "evidence": "'うち no lugar de 中': the 中 of の中で (なか)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 191,
+   "spans": [
+    {
+     "from": "<jp>中</jp>",
+     "to": "<jp reading=\"なか\">中</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-convites-05",
+   "surface": "毎",
+   "occurrences": 3,
+   "residue_cause": "homograph",
+   "reading": "まい",
+   "rule": "context",
+   "evidence": "'o bloco 毎 ( まい ) significa todo/cada': prose gives the kana",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 192,
+   "spans": [
+    {
+     "from": "<jp>毎</jp>",
+     "to": "<jp reading=\"まい\">毎</jp>",
+     "count": 3
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-convites-06",
+   "surface": "雨が降る",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "あめがふる",
+   "rule": "context",
+   "evidence": "same passage prints 雨が降る as あめがふる, glossed 'vai chover'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 193,
+   "spans": [
+    {
+     "from": "<jp>雨が降る</jp>",
+     "to": "<jp reading=\"あめがふる\">雨が降る</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-rotina-04",
+   "surface": "3日",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "みっか",
+   "rule": "context",
+   "evidence": "'3日 é <vocab ３日> (みっか), e não a leitura regular'; digit spelled out",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 194,
+   "spans": [
+    {
+     "from": "<jp>3日</jp>",
+     "to": "<jp reading=\"みっか\">3日</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-rotina-04",
+   "surface": "大",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "だい",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical ⼤ (U+2F24) rad_name_ja=だい, meaning 'large, big', radical of 10 kanji; '天 é a pessoa 大 (braços abertos) com um traço por cima': component of 天",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 195,
+   "spans": [
+    {
+     "from": "<jp>大</jp>",
+     "to": "<jp reading=\"だい\">大</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-rotina-04",
+   "surface": "本を読んだり音楽を聞いたり",
+   "occurrences": 1,
+   "residue_cause": "homograph",
+   "reading": "ほんをよんだりおんがくをきいたり",
+   "rule": "context",
+   "evidence": "the たり-list example 'ler livros, ouvir música'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 196,
+   "spans": [
+    {
+     "from": "<jp>本を読んだり音楽を聞いたり</jp>",
+     "to": "<jp reading=\"ほんをよんだりおんがくをきいたり\">本を読んだり音楽を聞いたり</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-conectando-07",
+   "surface": "売",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "う",
+   "rule": "context",
+   "evidence": "right component of 読 glossed 'vender' = 売る (うる); stem form, as the course's lone-kanji spans do (暑 あつ)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 197,
+   "spans": [
+    {
+     "from": "<jp>売</jp>",
+     "to": "<jp reading=\"う\">売</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-conectando-07",
+   "surface": "言",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "ごんべん",
+   "rule": "kanjialive",
+   "evidence": "kanjialive radical  (U+E704) rad_name_ja=ごんべん, meaning 'words, to speak, say', position へん, radical of 36 kanji; 'À esquerda está o radical 言 (palavra/dizer)' in 読",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 198,
+   "spans": [
+    {
+     "from": "<jp>言</jp>",
+     "to": "<jp reading=\"ごんべん\">言</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-01",
+   "surface": "古",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "ふる",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -5: 'a leitura nativa ふる mais o okurigana い'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 199,
+   "spans": [
+    {
+     "from": "<jp>古</jp>",
+     "to": "<jp reading=\"ふる\">古</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-01",
+   "surface": "多",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "おお",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -7 drills 多い (おおい)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 200,
+   "spans": [
+    {
+     "from": "<jp>多</jp>",
+     "to": "<jp reading=\"おお\">多</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-01",
+   "surface": "安",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "やす",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -9: 'a leitura nativa やす mais o okurigana い'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 201,
+   "spans": [
+    {
+     "from": "<jp>安</jp>",
+     "to": "<jp reading=\"やす\">安</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-02",
+   "surface": "社",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "しゃ",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -3: 'A leitura on de 社 é シャ' (会社)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 202,
+   "spans": [
+    {
+     "from": "<jp>社</jp>",
+     "to": "<jp reading=\"しゃ\">社</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-02",
+   "surface": "立",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "た",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -5/-9 drill 立つ たつ",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 203,
+   "spans": [
+    {
+     "from": "<jp>立</jp>",
+     "to": "<jp reading=\"た\">立</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-02",
+   "surface": "言",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "い",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -8 drills 言う いう",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 204,
+   "spans": [
+    {
+     "from": "<jp>言</jp>",
+     "to": "<jp reading=\"い\">言</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-03",
+   "surface": "買",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "か",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -1/-8: 'A leitura kun está em 買う (かう)'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 205,
+   "spans": [
+    {
+     "from": "<jp>買</jp>",
+     "to": "<jp reading=\"か\">買</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-kanji-exame-03",
+   "surface": "飲",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "の",
+   "rule": "context",
+   "evidence": "kanji-exame checklist 'Reconheço o kanji X e sei onde conferir suas leituras'; sibling checks carry the drilled word's kanji reading (暑 あつ, 森 もり, 便 びん, 区 く); ex -5/-9: '飲む, com a leitura kun のむ'",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 206,
+   "spans": [
+    {
+     "from": "<jp>飲</jp>",
+     "to": "<jp reading=\"の\">飲</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:pre-n5-saudacoes-03",
+   "surface": "日本について",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": "にほんについて",
+   "rule": "context",
+   "evidence": "glossed 'sobre o Japão'; registry にほん, the reading the course uses for 日本 throughout (Sudachi's にっぽん is the marked variant)",
+   "verdict": "ok",
+   "authored_from": "decided",
+   "authored_row": 207,
+   "spans": [
+    {
+     "from": "<jp>日本について</jp>",
+     "to": "<jp reading=\"にほんについて\">日本について</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-03",
+   "surface": "也",
+   "occurrences": 1,
+   "residue_cause": "not_in_kanji_registry",
+   "reading": "や",
+   "rule": "verifier",
+   "evidence": "Undecided row (no reading). 也 is printed as the right component of 他 with no gloss; its only modern reading is the on'yomi や (なり is classical), and nothing in the lesson points elsewhere.",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 0,
+   "spans": [
+    {
+     "from": "<jp>也</jp>",
+     "to": "<jp reading=\"や\">也</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n3-desejos-04",
+   "surface": "走",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "はし",
+   "rule": "verifier",
+   "evidence": "Undecided row (no reading). The prose glosses the pair as 'até o mestre corre', so this 走 is the 'correr' of 走る (N5 vocab, はしる); the course writes a lone verb kanji with its stem (暑 あつ, 売 う, 使 つか). そう carries no 'correr' word the learner knows, and わす belongs only to the whole 師走.",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 1,
+   "spans": [
+    {
+     "from": "<jp>走</jp>",
+     "to": "<jp reading=\"はし\">走</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-condicionais-08",
+   "surface": "何",
+   "occurrences": 2,
+   "residue_cause": "lesson_homograph",
+   "reading": [
+    "なに",
+    "なん"
+   ],
+   "rule": "verifier",
+   "evidence": "Undecided row: the two occurrences need different readings, so one (lesson, surface) reading cannot be right. In document order: '何を食べるか決めていない ... (何 = o quê)' is なに; 'Molde: 何 [contador] か' is なん (the same passage prints 何[なん] and 何人[なんにん]). `corrected` lists them per occurrence; the apply must key this row by occurrence, not by surface.",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 2,
+   "spans": [
+    {
+     "from": "<jp>何</jp><text> =",
+     "to": "<jp reading=\"なに\">何</jp><text> =",
+     "count": 1
+    },
+    {
+     "from": "<jp>何</jp>",
+     "to": "<jp reading=\"なん\">何</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-volitivo-01",
+   "surface": "老",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "おいかんむり",
+   "rule": "verifier",
+   "evidence": "Undecided row; the builder's refusal is refuted. 'o radical de 老 em cima' names radical 125 (老, top form 耂), which kanjialive gives as 考's radical ⺹ おいかんむり, position かんむり. Printing the full form and reading it with the positional radical name is exactly what this same table does for 言→ごんべん, 金→かねへん, 食→しょくへん, so no prose change is needed.",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 3,
+   "spans": [
+    {
+     "from": "<jp>老</jp>",
+     "to": "<jp reading=\"おいかんむり\">老</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-02",
+   "surface": "寒",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "さむ",
+   "rule": "verifier",
+   "evidence": "Undecided row (no reading). No exercise drills 寒, so take the sibling-check convention (the reading of the kanji's basic word, stem form: 暑 あつ, 太 ふと): 寒い さむい is N5 vocab in the registry.",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 4,
+   "spans": [
+    {
+     "from": "<jp>寒</jp>",
+     "to": "<jp reading=\"さむ\">寒</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-03",
+   "surface": "洗",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "あら",
+   "rule": "verifier",
+   "evidence": "Undecided row (no reading). No exercise drills 洗; sibling-check convention gives the stem of its basic word 洗う あらう (N5 vocab in the registry; n3-relato-04 prints 洗う[あらう] for the same kanji).",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 5,
+   "spans": [
+    {
+     "from": "<jp>洗</jp>",
+     "to": "<jp reading=\"あら\">洗</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n4-kanji-exame-04",
+   "surface": "菜",
+   "occurrences": 1,
+   "residue_cause": "lone_kanji_multi_reading",
+   "reading": "さい",
+   "rule": "verifier",
+   "evidence": "Undecided row (no reading). No exercise drills 菜; its basic word for this level is 野菜 やさい (N5 vocab in the registry), so the kanji's reading there is さい. な (菜の花) is not in the learner's vocabulary.",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 6,
+   "spans": [
+    {
+     "from": "<jp>菜</jp>",
+     "to": "<jp reading=\"さい\">菜</jp>",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "lesson": "les:n5-numeros-tempo-02",
+   "surface": "人",
+   "occurrences": 2,
+   "residue_cause": "homograph",
+   "reading": [
+    "にん",
+    "ひと"
+   ],
+   "rule": "verifier",
+   "evidence": "Undecided row: the two occurrences need different readings. The bank sentence sent:tatoeba-141433 is 千人くらいの人がいた (kana せんにんくらいのひとがいた). In document order: 'o contador é 人 (pessoas), preso a 千' is にん; 'O の liga 千人くらい ao substantivo 人' is ひと. `corrected` lists them per occurrence; the apply must key this row by occurrence.",
+   "verdict": "corrected",
+   "authored_from": "undecided",
+   "authored_row": 7,
+   "spans": [
+    {
+     "from": "<jp>人</jp><text> ",
+     "to": "<jp reading=\"にん\">人</jp><text> ",
+     "count": 1
+    },
+    {
+     "from": "<jp>人</jp>",
+     "to": "<jp reading=\"ひと\">人</jp>",
+     "count": 1
+    }
+   ]
+  }
+ ],
+ "held": [
+  {
+   "lesson": "les:n5-verbos-03",
+   "span": "来",
+   "occurrences": 1,
+   "residue_cause": "sudachi_registry_conflict",
+   "reading": null,
+   "rule": null,
+   "why": "the prose says the reading varies on purpose: 'o kanji 来 é sempre o mesmo, mas a leitura passeia por ku / ki / ko'; any single furigana contradicts it",
+   "verdict": "rejected",
+   "problem": "No furigana is correct here: the sentence is about the reading varying ('o kanji 来 é sempre o mesmo, mas a leitura passeia por ku / ko / ki'), so any single ruby contradicts it. Exempt this one span from the furigana requirement rather than give it a reading."
+  }
+ ]
+}

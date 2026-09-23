@@ -85,7 +85,7 @@ JPATTR = re.compile(r'(\w+)="([^"]*)"')
 # spans no registry could settle (a radical printed inside a decomposition, a homograph the
 # lesson itself does not disambiguate, a reading Sudachi and the registry disagree on). Each is
 # listed with BOTH candidates in that table. The count may only shrink.
-FURIGANA_RESIDUE_RATCHET = 264
+FURIGANA_RESIDUE_RATCHET = 1   # C13: 263 of the 264 settled (repairs/furigana_residue.json); 来 in n5-verbos-03 held
 TAGS = re.compile(r"<[^>]+>")
 HIRA = re.compile(r"[ぁ-ん]")            # deliberately excludes ー and katakana
 KANJI = re.compile(r"[一-鿿々〆]")

@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [de, naide] · vocabulário [後, タクシー, 出す, 又, 掃除, 洗濯, 立つ, 達, 頼む] · kanji [後] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-778974`, `sent:tatoeba-195443`, `sent:tatoeba-1057336`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-195443`
 
 ---
 
@@ -59,7 +59,7 @@ Para memorizar o traçado, imagine um broto saindo do chão: uma plantinha com f
 
 #### で em outros papéis (frases reais)
 O で é tão versátil que aparece também em expressões fixas do dia a dia, fora do uso de lugar da ação. Veja duas que os japoneses dizem o tempo todo, só para você reconhecer o kana:
-> 🗣 なんで？ — Por quê?
+なんで？ ("Por quê?")
 Aqui なんで é "por quê?" bem casual: なん ("o quê") + で. Não é o で de lugar, mas mostra como esse mesmo som vive em muitas estruturas.
 > 🗣 また後で。 — Até mais tarde.
 Nesta despedida, o で de 後で ("mais tarde") marca um ponto no tempo, não um lugar. Guarde また後で como um "até mais" pronto para usar.
@@ -70,7 +70,6 @@ Não confunda os dois で: o desta lição (lugar/meio da ação) é uma partíc
 #### Hora de praticar
 
 #### Mais exemplos
-> 🗣 でもなんで？ — Mas por quê?
 - Marco com で o lugar onde uma ação acontece (学校で勉強する).
 - Sei escolher entre で (ação) e に (existência) olhando o verbo.
 - Uso で para o meio de transporte (タクシーで行く).

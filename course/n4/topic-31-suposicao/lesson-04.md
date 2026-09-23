@@ -31,7 +31,7 @@ Aqui お茶 ("chá") é o termo de comparação e 味 ("gosto, sabor") é o subs
 Em português a comparação muda de lugar conforme a frase ("um gosto de chá", "uma pessoa angelical"). Em japonês a fórmula é sempre a mesma: のような grudado antes do substantivo. Uma só estrutura cobre todos os casos.
 
 #### 〜のように: antes de verbo ou adjetivo
-Quando a comparação descreve como uma ação acontece ou de que jeito algo é, usamos gp-77. Ela modifica um verbo ou um adjetivo: "como", "do jeito que", "feito".
+Quando a comparação descreve como uma ação acontece ou de que jeito algo é, usamos a forma のように de gp-77. Ela modifica um verbo ou um adjetivo: "como", "do jeito que", "feito".
 > 🗣 雪のように白い。 — Branco como neve.
 Aqui 白い ("branco") é um adjetivo, então usamos のように: "branco como neve". Compare com o caso do substantivo: のような味 (qualifica o nome 味) vs. のように白い (modifica o adjetivo 白い).
 
@@ -68,9 +68,8 @@ Os dois juntam-se à gramática de hoje: 鳥のように走る ("correr como um 
 
 #### Leitura
 > 📖 今朝の空は春のように青かった。私はいつものように駅まで歩いた。駅の前で、小さな子どもが歌のようなこえで話していた。その子は元気で、かぜのように走って行った。私も春のような気持ちで、しずかに会社へ歩いて行った。 — O céu desta manhã estava azul como o de primavera. Fui a pé até a estação, como sempre. Na frente da estação, uma criança pequena falava com uma voz que parecia música. A criança estava cheia de energia e saiu correndo como o vento. Eu também segui andando quieto até o trabalho, com um ânimo de primavera.
-- Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério).
+- Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério) e uso 〜のように antes de verbo/adjetivo (modo: "do jeito que / como").
 - Uso 〜のような antes de substantivo (qualifica: "um... como").
-- Uso 〜のように antes de verbo/adjetivo (modo: "do jeito que / como").
 - Reconheço いつものように / そのように como "como de costume / dessa forma".
 - Leio o kanji 歩 (ある〜く / ホ, "andar, passo").
 - Leio o kanji 走 (はし〜る, "correr").

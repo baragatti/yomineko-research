@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-24] · vocabulário [危ない, 多い, 少ない, 忙しい, 悪い, 明るい, 暗い, 汚い, 煩い, 狭い, 痛い, 遅い] · kanji [—] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-135763`, `sent:tatoeba-158129`, `sent:tatoeba-5210`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-135763`, `sent:tatoeba-5210`
 
 ---
 
@@ -58,7 +58,6 @@ O くない também é ótimo para avaliar (com diplomacia) pessoas, lugares e c
 Veja o くない em frases que japoneses realmente dizem. A primeira vem do adjetivo 悪い ("mau, ruim"): tirando o い e pondo くない, vira 悪くない ("não é mau"). O なあ no fim é só um suspiro de admiração, tipo "hein!".
 > 🗣 ちくしょう！わるくないなあ！ — Droga! Não é nada mau!
 Curiosidade útil: a terminação たい ("querer fazer"), que você verá adiante, também termina em い e se nega exatamente igual. 食べたい ("querer comer") vira 食べたくない ("não querer comer"). A mesma regra de hoje serve para ela.
-> 🗣 何も食べたくない。 — Não quero comer nada.
 Mais um do mesmo tipo: 行きたい ("querer ir") → 行きたくない ("não querer ir"). Não se preocupe em produzir essas frases agora; só repare como o くない aparece sempre que há um い no fim.
 > 🗣 学校へ行きたくない。 — Não quero ir para a escola.
 

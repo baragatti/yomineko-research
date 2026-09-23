@@ -44,7 +44,7 @@ O tempo "se vai de vez":たって vem de 経つ(o tempo passar). O てしまう 
 Clássico: o ônibus 行ってしまう, vai embora, e não dá mais para alcançar. O lamento está embutido no てしまう.
 
 #### 〜ちゃう／〜じゃう: a contração da fala
-Na conversa do dia a dia,てしまう quase sempre vira te-shimau-chau. A regra é mecânica:てしまう encolhe para ちゃう, e でしまう(dos verbos cuja forma て é で) vira じゃう.
+Na conversa do dia a dia,てしまう quase sempre aparece contraído. A regra é mecânica:てしまう encolhe para ちゃう, e でしまう(dos verbos cuja forma て é で) vira じゃう.
 - 食べてしまう→食べちゃう
 - 飲んでしまう→飲んじゃう
 > 🗣 お金が入るそばから、すぐ使ってしまうんだ。 — Assim que o dinheiro entra, eu já gasto tudo.
@@ -73,8 +73,7 @@ Juntando tudo:夕べ具合が悪くなってしまった= ontem à noite acabei 
 #### Leitura
 > 📖 きのうの夜、やっとレポートを書き終わった。でも今朝、そのレポートを家にわすれてしまった。学校でかばんを開けたときに、やっとわかった。今日のじゅぎょうが終わってから、家に帰った。だから、先生に出すのは明日になってしまった。 — Ontem à noite eu finalmente terminei de escrever o relatório. Mas hoje de manhã acabei deixando esse mesmo relatório em casa. Só me toquei quando abri a mochila na escola. Depois que as aulas de hoje acabaram, voltei em casa. Então entregar para o professor acabou ficando para amanhã.
 - Sei colar 〜終わる na raiz de um verbo para dizer "terminar de fazer".
-- Reconheço os dois sentidos de 〜てしまう: concluir de vez e fazer sem querer.
-- Sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.
+- Reconheço os dois sentidos de 〜てしまう (concluir de vez e fazer sem querer) e sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.
 - Reconheço 夜 (noite) e 悪 (mau), e ligo 悪 a 具合が悪い.
 
 ---

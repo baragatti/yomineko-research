@@ -14,7 +14,7 @@
 ---
 
 ### Justificar com manha: ～(ん)だもの e ～んだもん
-Nem toda justificativa é neutra. Quando a gente quer se defender com um tom emotivo, quase de birra ou de carinho, o japonês tem n3-da-mono-da e sua variante mais falada n3-da-mono-da. Pense no nosso "ué, mas é porque..." ou "aí é que tá".
+Nem toda justificativa é neutra. Quando a gente quer se defender com um tom emotivo, quase de birra ou de carinho, o japonês tem n3-da-mono-da, que na fala mais solta vira んだもん. Pense no nosso "ué, mas é porque..." ou "aí é que tá".
 
 #### ～(ん)だもの: é que..., afinal...
 O n3-da-mono-da apresenta uma razão de forma subjetiva e meio queixosa, como quem se desculpa ou se defende. Tem carga emocional e soa pessoal, quase infantil ou afetivo.
@@ -23,7 +23,7 @@ O n3-da-mono-da apresenta uma razão de forma subjetiva e meio queixosa, como qu
 Para dar o motivo no meio da frase, use a forma simples + ものだから (na fala, もんだから). Ex.: 疲れていたものだから、先に帰った ("é que eu estava cansado, então fui embora antes"). Repare que んだもの fecha a frase e não recebe から.
 
 #### ～んだもん: a versão ainda mais coloquial
-O n3-da-mono-da é a mesma ideia, só que もの encolhe para もん. Soa ainda mais coloquial, manhoso, quase de criança que justifica uma travessura.
+O んだもん é a mesma ideia, só que もの encolhe para もん. Soa ainda mais coloquial, manhoso, quase de criança que justifica uma travessura.
 だって知らなかったんだもん quer dizer "é que eu não sabia, oras!". A construção é idêntica: forma simples + んだもん (substantivo e adjetivo-na pedem な antes: なんだもん).
 
 > **[warning]**
@@ -52,8 +52,7 @@ Repare como o registro carrega significado. O mesmo motivo ("estou cansado") pod
 
 #### Leitura
 > 📖 悪いけど、今日は行けない。朝から頭が重いんだもん。薬を飲んだけど、まだ治らないんだもの。明日の会合は大事だから、今日は休むね。気にしないで、明日は元気になるんだもん。また後で電話するね。 — Foi mal, hoje eu não consigo ir. É que minha cabeça está pesada desde a manhã. Tomei remédio, mas é que ainda não passou. A reunião de amanhã é importante, então hoje eu descanso. Não esquenta, amanhã eu já estou bem de novo. Depois eu te ligo.
-- Sei justificar algo de forma emotiva com ～(ん)だもの.
-- Uso a variante coloquial ～んだもん na fala íntima.
+- Sei justificar algo de forma emotiva com ～(ん)だもの e uso a variante coloquial ～んだもん na fala íntima.
 - Reconheço que o registro é informal e o evito em contextos formais.
 
 ---

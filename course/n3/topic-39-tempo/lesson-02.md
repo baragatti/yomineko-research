@@ -11,7 +11,7 @@
 
 **Introduz:** gramática [n3-kara-ni-kakete, n3-tabi-ni, n3-tsuide-ni] · vocabulário [一家, 一層, 一度に, 一方, 一時, 一生, 一種, 一致, 一般, 位置, 市場, 従兄弟, 移動] · kanji [加 取 和 平 期 機] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-11022968`, `sent:tatoeba-10914932`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-10914932`
 
 ---
 
@@ -65,7 +65,6 @@ O 和 ('harmonia/estilo japonês') junta 'arroz' (禾) e 'boca' (口): comida na
 
 ### Hora de praticar
 Resolva os exercícios; confira a explicação de cada um.
-> 🗣 発言するたびにボロが出る。 — Toda vez que ele abre a boca, expõe suas próprias falhas.
 > 🗣 ついでに手紙だしてきてよ。 — Já que você vai sair, aproveita e posta a carta, vai.
 
 #### Leitura

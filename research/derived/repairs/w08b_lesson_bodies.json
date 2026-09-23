@@ -1,0 +1,406 @@
+{
+ "what_this_is": "W08b lesson bodies (C13): the eight lessons that unlocked both records of a W08b merge pair now teach one point. Exact-substring replacements measured on the post-merge body; every example and fact kept.",
+ "applied_by": "scripts/apply_lesson_body_spans.py --table w08b_lesson_bodies.json",
+ "assembled_from": "research/derived/pending/w08b_lesson_bodies.json (authored, Layer C) + research/derived/pending/w08b_lesson_bodies.verdict.json (independent verifier)",
+ "fold_rule": "verdict keyed by the row's stable identity: ok -> the authored text; corrected -> the verifier's text (authored text kept as authored_*); rejected -> `held`, never applied",
+ "layer": "C",
+ "ai_generated": true,
+ "needs_review": true,
+ "apply_contract": "per lesson, in table order, per span: body.count(from) == count, then body = body.replace(from, to). A span whose `from` is gone (and whose `to` is present, when non-empty) is already applied. Both layers: research/derived/lessons/<slug>.json body and localized_text(lesson, body, pt-BR).",
+ "authored_header": {
+  "what_this_is": "W08b lesson-body edits: the eight lessons that each unlock both records of a W08b merge pair teach the pair as two points (two chips described as different things, two checklist rows, one list entry repeating another). Each row is a minimal exact-substring replacement so the lesson teaches ONE point; every example sentence, jp example and fact is kept.",
+  "status": "pending: nothing applied. Spans are measured on the POST-MERGE body, so apply after migrate_grammar_merge.py has rewritten the loser addresses (and after w08b_merges.json reconciled_prose), never before.",
+  "generated": "2026-09-23",
+  "layer": "C",
+  "ai_generated": true,
+  "needs_review": true,
+  "source": "research/derived/pending/w08b_merges.json (merges[].loser/winner); lesson bodies read at git HEAD 97550c2a (working tree identical for all eight)",
+  "apply_contract": "Per lesson, in row order: body.count(old_span) == 1, then body = body.replace(old_span, new_span). Rows of one lesson never overlap (checked sequentially). Apply to research/derived/lessons/<slug>.json body and to the DB localized_text(lesson, body, pt-BR) the same way the merge rewrote them; if old_span is absent, stop: the body moved.",
+  "counts": {
+   "lessons": 8,
+   "rows": 18,
+   "rows_by_pair": {
+    "U1": 2,
+    "D2": 2,
+    "D4": 4,
+    "D5": 2,
+    "D6": 1,
+    "D7": 2,
+    "D8": 2,
+    "D10": 3
+   },
+   "per_lesson": {
+    "n4-forma-simples-03": {
+     "pre_len": 7037,
+     "post_len": 6953,
+     "rows": 2,
+     "survivor_refs_before": 4,
+     "survivor_refs_after": 3
+    },
+    "n5-adjetivos-07": {
+     "pre_len": 8259,
+     "post_len": 8121,
+     "rows": 2,
+     "survivor_refs_before": 4,
+     "survivor_refs_after": 2
+    },
+    "n5-comparacoes-01": {
+     "pre_len": 8724,
+     "post_len": 8436,
+     "rows": 4,
+     "survivor_refs_before": 7,
+     "survivor_refs_after": 5
+    },
+    "n4-suposicao-04": {
+     "pre_len": 7619,
+     "post_len": 7607,
+     "rows": 2,
+     "survivor_refs_before": 4,
+     "survivor_refs_after": 3
+    },
+    "n4-condicionais-01": {
+     "pre_len": 7734,
+     "post_len": 7683,
+     "rows": 1,
+     "survivor_refs_before": 4,
+     "survivor_refs_after": 3
+    },
+    "n4-aspecto-03": {
+     "pre_len": 7870,
+     "post_len": 7775,
+     "rows": 2,
+     "survivor_refs_before": 5,
+     "survivor_refs_after": 3
+    },
+    "n5-desu-wa-03": {
+     "pre_len": 6722,
+     "post_len": 6672,
+     "rows": 2,
+     "survivor_refs_before": 5,
+     "survivor_refs_after": 3
+    },
+    "n3-causa-04": {
+     "pre_len": 5015,
+     "post_len": 4945,
+     "rows": 3,
+     "survivor_refs_before": 4,
+     "survivor_refs_after": 2
+    }
+   }
+  },
+  "method": [
+   "Found each lesson as the one whose unlocks carry both gram:<loser> and gram:<winner> at HEAD: exactly one per pair.",
+   "Built the post-merge body by the exact rewrite migrate_grammar_merge.plan_lesson_bodies performs (ref=\"gram:<loser>\" and item-ref=\"gram:<loser>\" -> survivor), then read every place the loser used to sit.",
+   "Edited only where the merged body now presents one record as two: a chip described as a different thing than the same chip elsewhere (U1, D2, D5, D7, D8, D10), a list entry repeating another (D4), and the checklist, where each former record had its own row with the same item-ref after the merge (all eight; merged into one row keeping every clause).",
+   "Kept form subsections (ちゃう／じゃう in D7, んだもん in D10, sentido 1/2 in D7, quantities in U1) as subsections of one point: they teach forms and uses, not a second record.",
+   "Self-check (scratch build.py): every old_span occurs exactly once in the post-merge body and still once after the lesson's earlier rows; no loser key in any span; no em/en dash in new text; scripts/validate/validate_lessons.LessonParser reports no error on the edited body that it did not already report on the unedited one."
+  ],
+  "found_not_in_scope": [
+   "les:n5-adjetivos-07 teaches no-ga-suki and gp-23 as 'the same construction registered under two keys' (body: 'as duas chaves descrevem exatamente a mesma construção'): same duplicate-identity class as W08b, not in its eight.",
+   "les:n4-suposicao-04 keeps gp-153 {のような} as its own chip and checklist row beside gp-77 {のように, のような}: already reported in w08b_merges.json found_not_in_scope; its body lines were left untouched.",
+   "les:n5-comparacoes-01 opening paragraph labels the particle より with the gram:yori-hou-ga chip (pre-existing, unchanged)."
+  ]
+ },
+ "verdict_summary": {
+  "checked": 18,
+  "ok": 16,
+  "corrected": 2,
+  "rejected": 0
+ },
+ "row_count": 18,
+ "rows": [
+  {
+   "lesson": "les:n4-forma-simples-03",
+   "pair": "U1",
+   "loser": "gp-100",
+   "survivor": "gp-118",
+   "spans": [
+    {
+     "from": "<p><text>O mesmo recurso serve para </text><text weight=\"bold\">quantidades</text><text>, e isso é tão comum que tem até um nome próprio, </text><grammar ref=\"gram:gp-118\"/><text>. Você gruda </text>",
+     "to": "<p><text>O mesmo </text><grammar ref=\"gram:gp-118\"/><text> serve para </text><text weight=\"bold\">quantidades</text><text>, e esse uso é muito comum. Você gruda </text>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 0,
+   "why": "After the merge the chip is the same record as the opening one, so 'it even has its own name, [chip]' presents one point as two and is false. Same fact kept: the pattern applies to quantities and that use is very common."
+  },
+  {
+   "lesson": "les:n4-forma-simples-03",
+   "pair": "U1",
+   "loser": "gp-100",
+   "survivor": "gp-118",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:gp-118\"><text>Sei dizer \"só / apenas\" com しか e o verbo no negativo.</text></check>\n <check item-ref=\"gram:gp-118\"><text>Aplico しか〜ない a números e quantidades (千円しかない).</text></check>",
+     "to": "<check item-ref=\"gram:gp-118\"><text>Sei dizer \"só / apenas\" com しか e o verbo no negativo, inclusive com números e quantidades (千円しかない).</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 1,
+   "why": "Two checklist rows for one record (one was gp-100's). One row, both facts kept."
+  },
+  {
+   "lesson": "les:n5-adjetivos-07",
+   "pair": "D2",
+   "loser": "gp-54",
+   "survivor": "no-ga-jouzu",
+   "spans": [
+    {
+     "from": "<grammar ref=\"gram:no-ga-jouzu\"/><text>, registrada também como </text><grammar ref=\"gram:no-ga-jouzu\"/><text>, segue a mesma fórmula",
+     "to": "<grammar ref=\"gram:no-ga-jouzu\"/><text> segue a mesma fórmula",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 2,
+   "why": "'registered also as [chip]' named gp-54 as a second record; after the merge it points at itself. Registry trivia, not a learner fact: dropped."
+  },
+  {
+   "lesson": "les:n5-adjetivos-07",
+   "pair": "D2",
+   "loser": "gp-54",
+   "survivor": "no-ga-jouzu",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:no-ga-jouzu\"><text>Consigo dizer que alguém é bom em uma atividade com 〜のが上手です.</text></check>\n <check item-ref=\"gram:no-ga-jouzu\"><text>Sei trocar 上手 por 下手 para dizer que alguém é ruim em algo, e que 上手 é para elogiar os outros.</text></check>",
+     "to": "<check item-ref=\"gram:no-ga-jouzu\"><text>Consigo dizer que alguém é bom em uma atividade com 〜のが上手です, sei trocar 上手 por 下手 para dizer que alguém é ruim em algo e lembro que 上手 é para elogiar os outros.</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "corrected",
+   "authored_row": 3,
+   "why": "Two checklist rows for one record (one was gp-54's). One row, all three facts kept.",
+   "authored_to": "<check item-ref=\"gram:no-ga-jouzu\"><text>Consigo dizer que alguém é bom em uma atividade com 〜のが上手です, sei trocar 上手 por 下手 para dizer que é ruim e lembro que 上手 é para elogiar os outros.</text></check>",
+   "verifier_problem": "(2)/(3) The merged row shortened 'para dizer que alguém é ruim em algo' to 'para dizer que é ruim', which drops what 下手 is about (a person's lack of skill AT something) and reads as 'to say that it is bad', i.e. the activity; 下手 is 'sem jeito, ruim em', not 'ruim' in quality. Fix restores the original clause verbatim; the other two facts and the single row are kept."
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "pair": "D4",
+   "loser": "gp-47",
+   "survivor": "yori-hou-ga",
+   "spans": [
+    {
+     "from": "e treinar os quatro moldes mais comuns.",
+     "to": "e treinar os três moldes mais comuns.",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 4,
+   "why": "The fourth mold was gp-47, the same より…のほうが as the second; after the merge the lesson has three."
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "pair": "D4",
+   "loser": "gp-47",
+   "survivor": "yori-hou-ga",
+   "spans": [
+    {
+     "from": "<heading level=\"3\"><text>Quatro moldes, três ordens</text></heading>\n<p><text>Quatro moldes cobrem \"A é mais X que B\", mas em apenas três ordens: o segundo e o quarto repetem a mesma ordem, com usos diferentes. Guarde-os como um só conjunto.",
+     "to": "<heading level=\"3\"><text>Três moldes, três ordens</text></heading>\n<p><text>Três moldes cobrem \"A é mais X que B\", um para cada ordem. Guarde-os como um só conjunto.",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 5,
+   "why": "Heading and lead counted the duplicate as a separate mold; the 'same order, different use' fact moves into the merged list item below."
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "pair": "D4",
+   "loser": "gp-47",
+   "survivor": "yori-hou-ga",
+   "spans": [
+    {
+     "from": " <item><text weight=\"bold\">より…のほうが</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): começa pelo \"do que\". </text><jp reading=\"ばすよりでんしゃのほうがはやい\">バスより電車のほうが速い</jp><text>.</text></item>\n <item><text weight=\"bold\">のほうが…より</text><text> (</text><grammar ref=\"gram:gp-140\"/><text>): começa pelo lado que ganha. </text><jp reading=\"でんしゃのほうがばすよりはやい\">電車のほうがバスより速い</jp><text>.</text></item>\n <item><text weight=\"bold\">より…のほうが, agora para preferir</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): a mesma ordem do segundo item, agora com sentido de escolha, \"prefiro B a A\". </text><jp reading=\"でんしゃよりばすのほうがやすい\">電車よりバスのほうが安い</jp><text> = \"O ônibus é mais barato que o trem.\"</text></item>",
+     "to": " <item><text weight=\"bold\">より…のほうが</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): começa pelo \"do que\". </text><jp reading=\"ばすよりでんしゃのほうがはやい\">バスより電車のほうが速い</jp><text>. A mesma ordem também expressa preferência, \"prefiro B a A\", quando termina em </text><jp reading=\"すき\">好き</jp><text> ou </text><jp>いい</jp><text>. Com outro adjetivo, ela só diz em que B ganha: </text><jp reading=\"でんしゃよりばすのほうがやすい\">電車よりバスのほうが安い</jp><text> = \"O ônibus é mais barato que o trem.\"</text></item>\n <item><text weight=\"bold\">のほうが…より</text><text> (</text><grammar ref=\"gram:gp-140\"/><text>): começa pelo lado que ganha. </text><jp reading=\"でんしゃのほうがばすよりはやい\">電車のほうがバスより速い</jp><text>.</text></item>",
+     "count": 1
+    }
+   ],
+   "verdict": "corrected",
+   "authored_row": 6,
+   "why": "The 4th list entry (gp-47's) was the 2nd entry again with a preference reading. Folded into the 2nd; both example sentences and the 'prefiro B a A' reading kept. The gp-140 entry between them is unchanged.",
+   "authored_to": " <item><text weight=\"bold\">より…のほうが</text><text> (</text><grammar ref=\"gram:yori-hou-ga\"/><text>): começa pelo \"do que\". </text><jp reading=\"ばすよりでんしゃのほうがはやい\">バスより電車のほうが速い</jp><text>. A mesma ordem também expressa escolha, \"prefiro B a A\": </text><jp reading=\"でんしゃよりばすのほうがやすい\">電車よりバスのほうが安い</jp><text> = \"O ônibus é mais barato que o trem.\"</text></item>\n <item><text weight=\"bold\">のほうが…より</text><text> (</text><grammar ref=\"gram:gp-140\"/><text>): começa pelo lado que ganha. </text><jp reading=\"でんしゃのほうがばすよりはやい\">電車のほうがバスより速い</jp><text>.</text></item>",
+   "verifier_problem": "(3) Carried from gp-47's list entry but now stated outright: 'A mesma ordem também expressa escolha, \"prefiro B a A\":' introduces 電車よりバスのほうが安い as the preference example, and its own gloss ('O ônibus é mais barato que o trem') is a plain comparison, not a preference. より…のほうが says 'prefiro B a A' only when it ends in 好き or いい (gp-47's own record example was コーヒーよりお茶のほうが好きです). Fix names 好き/いい as the preference ending (both already in the cumulative known set at this lesson) and keeps the 安い sentence as the plain comparison it is. No example or fact dropped; the gp-140 entry is untouched."
+  },
+  {
+   "lesson": "les:n5-comparacoes-01",
+   "pair": "D4",
+   "loser": "gp-47",
+   "survivor": "yori-hou-ga",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:yori-hou-ga\"><text>Marco o termo \"do que\" com より e o lado que ganha com のほうが.</text></check>\n <check item-ref=\"gram:wa-yori-desu\"><text>Monto a comparação polida は…より…です.</text></check>\n <check item-ref=\"gram:gp-140\"><text>Sei inverter os blocos (のほうが…より) sem mudar o sentido.</text></check>\n <check item-ref=\"gram:yori-hou-ga\"><text>Uso より…のほうが para dizer \"B é mais / prefiro B\".</text></check>",
+     "to": "<check item-ref=\"gram:yori-hou-ga\"><text>Marco o termo \"do que\" com より e o lado que ganha com のほうが, e uso より…のほうが para dizer \"B é mais / prefiro B\".</text></check>\n <check item-ref=\"gram:wa-yori-desu\"><text>Monto a comparação polida は…より…です.</text></check>\n <check item-ref=\"gram:gp-140\"><text>Sei inverter os blocos (のほうが…より) sem mudar o sentido.</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 7,
+   "why": "Two checklist rows for one record (the 4th was gp-47's). Merged into the first; the two rows between are unchanged."
+  },
+  {
+   "lesson": "les:n4-suposicao-04",
+   "pair": "D5",
+   "loser": "gp-154",
+   "survivor": "gp-77",
+   "spans": [
+    {
+     "from": "<text> algo é, usamos </text><grammar ref=\"gram:gp-77\"/><text>. Ela modifica um verbo ou um adjetivo",
+     "to": "<text> algo é, usamos a forma </text><jp>のように</jp><text> de </text><grammar ref=\"gram:gp-77\"/><text>. Ela modifica um verbo ou um adjetivo",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 8,
+   "why": "The chip was gp-154 ({のように}); after the merge it is gp-77, the whole のよう point the intro already introduced. Named as that point's adverbial form, not a new point."
+  },
+  {
+   "lesson": "les:n4-suposicao-04",
+   "pair": "D5",
+   "loser": "gp-154",
+   "survivor": "gp-77",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério).</text></check>\n <check item-ref=\"gram:gp-153\"><text>Uso 〜のような antes de substantivo (qualifica: \"um... como\").</text></check>\n <check item-ref=\"gram:gp-77\"><text>Uso 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>",
+     "to": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério) e uso 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>\n <check item-ref=\"gram:gp-153\"><text>Uso 〜のような antes de substantivo (qualifica: \"um... como\").</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 9,
+   "why": "Two checklist rows for one record (the のように row was gp-154's). Merged into the first; the gp-153 row is untouched (gp-153 is out of W08b's scope)."
+  },
+  {
+   "lesson": "les:n4-condicionais-01",
+   "pair": "D6",
+   "loser": "gp-60",
+   "survivor": "tara",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:tara\"><text>Sei formar 〜たら: pego a forma de passado casual (た) e acrescento ら.</text></check>\n <check item-ref=\"gram:tara\"><text>Uso 〜たら tanto para \"se\" (hipótese) quanto para \"quando / depois que\" (sequência no tempo).</text></check>",
+     "to": "<check item-ref=\"gram:tara\"><text>Sei formar 〜たら (pego a forma de passado casual た e acrescento ら) e usá-lo tanto para \"se\" (hipótese) quanto para \"quando / depois que\" (sequência no tempo).</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 10,
+   "why": "Two checklist rows for one record (the formation row was gp-60's). One row, both facts kept. The prose already teaches formation and use as one point; no other edit needed."
+  },
+  {
+   "lesson": "les:n4-aspecto-03",
+   "pair": "D7",
+   "loser": "gp-151",
+   "survivor": "te-shimau-chau",
+   "spans": [
+    {
+     "from": "<text> quase sempre vira </text><grammar ref=\"gram:te-shimau-chau\"/><text>. A regra é mecânica:</text>",
+     "to": "<text> quase sempre aparece contraído. A regra é mecânica:</text>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 11,
+   "why": "After the merge the chip is the same record as てしまう itself, so 'てしまう becomes [chip]' reads as a second point. The next sentence already gives the contraction (ちゃう／じゃう)."
+  },
+  {
+   "lesson": "les:n4-aspecto-03",
+   "pair": "D7",
+   "loser": "gp-151",
+   "survivor": "te-shimau-chau",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:te-shimau-chau\"><text>Reconheço os dois sentidos de 〜てしまう: concluir de vez e fazer sem querer.</text></check>\n <check item-ref=\"gram:te-shimau-chau\"><text>Sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.</text></check>",
+     "to": "<check item-ref=\"gram:te-shimau-chau\"><text>Reconheço os dois sentidos de 〜てしまう (concluir de vez e fazer sem querer) e sei que na fala 〜てしまう vira 〜ちゃう e 〜でしまう vira 〜じゃう.</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 12,
+   "why": "Two checklist rows for one record (the meanings row was gp-151's). One row, both facts kept."
+  },
+  {
+   "lesson": "les:n5-desu-wa-03",
+   "pair": "D8",
+   "loser": "gp-33",
+   "survivor": "janai-dewa-nai",
+   "spans": [
+    {
+     "from": "<text>, troque a cópula afirmativa pela negativa. A forma casual é </text><grammar ref=\"gram:janai-dewa-nai\"/><text>; a forma completa e mais formal é </text><grammar ref=\"gram:janai-dewa-nai\"/><text>. As três opções",
+     "to": "<text>, troque a cópula afirmativa pela negativa, </text><grammar ref=\"gram:janai-dewa-nai\"/><text>. A forma casual é </text><jp>じゃない</jp><text>; a forma completa e mais formal é </text><jp>ではない</jp><text>. As três opções",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 13,
+   "why": "The two chips were gp-33 (じゃない) and janai-dewa-nai (ではない); after the merge both are the same record, so the sentence would name one chip as both 'the casual form' and 'the formal form'. One chip for the point, the two spellings as plain jp."
+  },
+  {
+   "lesson": "les:n5-desu-wa-03",
+   "pair": "D8",
+   "loser": "gp-33",
+   "survivor": "janai-dewa-nai",
+   "spans": [
+    {
+     "from": "<check item-ref=\"gram:janai-dewa-nai\"><text>Sei negar de forma casual com じゃない.</text></check>\n <check item-ref=\"gram:janai-dewa-nai\"><text>Sei a diferença entre じゃない (casual) e ではない・ではありません (formal/polido).</text></check>",
+     "to": "<check item-ref=\"gram:janai-dewa-nai\"><text>Sei negar de forma casual com じゃない e entendo a diferença entre じゃない (casual) e ではない・ではありません (formal/polido).</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 14,
+   "why": "Two checklist rows for one record (the casual row was gp-33's). One row, both facts kept."
+  },
+  {
+   "lesson": "les:n3-causa-04",
+   "pair": "D10",
+   "loser": "n3-nda-mon",
+   "survivor": "n3-da-mono-da",
+   "spans": [
+    {
+     "from": ", o japonês tem </text><grammar ref=\"gram:n3-da-mono-da\"/><text> e sua variante mais falada </text><grammar ref=\"gram:n3-da-mono-da\"/><text>. Pense",
+     "to": ", o japonês tem </text><grammar ref=\"gram:n3-da-mono-da\"/><text>, que na fala mais solta vira </text><jp>んだもん</jp><text>. Pense",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 15,
+   "why": "After the merge 'X and its more spoken variant X' names one chip twice. The variant (んだもん) is kept, as a spelling of the same point."
+  },
+  {
+   "lesson": "les:n3-causa-04",
+   "pair": "D10",
+   "loser": "n3-nda-mon",
+   "survivor": "n3-da-mono-da",
+   "spans": [
+    {
+     "from": "<p><text>O </text><grammar ref=\"gram:n3-da-mono-da\"/><text> é a mesma ideia, só que </text>",
+     "to": "<p><text>O </text><jp>んだもん</jp><text> é a mesma ideia, só que </text>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 16,
+   "why": "This chip was n3-nda-mon; after the merge it is the record the section above already teaches, so 'X is the same idea as X'. The section stays as the colloquial-form subsection of one point."
+  },
+  {
+   "lesson": "les:n3-causa-04",
+   "pair": "D10",
+   "loser": "n3-nda-mon",
+   "survivor": "n3-da-mono-da",
+   "spans": [
+    {
+     "from": "<check><text>Sei justificar algo de forma emotiva com ～(ん)だもの.</text></check>\n <check><text>Uso a variante coloquial ～んだもん na fala íntima.</text></check>",
+     "to": "<check><text>Sei justificar algo de forma emotiva com ～(ん)だもの e uso a variante coloquial ～んだもん na fala íntima.</text></check>",
+     "count": 1
+    }
+   ],
+   "verdict": "ok",
+   "authored_row": 17,
+   "why": "One row per former record; one row now, both facts kept."
+  }
+ ],
+ "held": []
+}

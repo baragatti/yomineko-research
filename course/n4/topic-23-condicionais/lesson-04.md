@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-120, gp-138] · vocabulário [丁寧, 嘘, 恥ずかしい, 申し上げる] · kanji [不 茶] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-193408`, `sent:tatoeba-2718657`, `sent:tatoeba-3179644`, `sent:tatoeba-80898`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-2718657`, `sent:tatoeba-3179644`, `sent:tatoeba-80898`
 
 ---
 
@@ -18,7 +18,7 @@ Você já sabe montar condicionais com たら, ば, と e なら. Nesta lição 
 
 #### もし: o aviso de "se"
 O advérbio gp-120 significa "se" e aparece no começo da frase como uma plaquinha: "atenção, o que vem aí é hipótese". O detalhe importante é que もし não constrói a condicional sozinho. Quem faz o trabalho gramatical de "se" continua sendo a terminação do verbo ou adjetivo (〜たら, 〜ば, 〜なら). Por isso もし é opcional: ele só reforça o tom hipotético, sinalizando para quem ouve que a frase descreve uma situação imaginada, não um fato.
-> 🗣 もし来られたら来なさい。 — Se puder vir, venha.
+もし来られたら来なさい。 ("Se puder vir, venha."; 来なさい é um "venha" em tom de orientação, de pai ou professor)
 Repare: もし abre a frase, e o "se" de verdade está em 来られたら ("se puder vir", forma potencial + たら). Você poderia tirar o もし e a frase continuaria correta, só um pouco menos enfática.
 
 > **[tip]**
@@ -66,7 +66,7 @@ O par 不 + 意 forma 不意 ("de repente, inesperado"); "sem que a mente espera
 ### 1. (recognition) O advérbio もし serve para quê numa frase como もし雨なら行きません?
 - **Resposta:** `{"choices": ["Construir sozinho a condicional, dispensando 〜たら/〜ば", "Anunciar logo no começo que vem uma hipótese (o 'se' real fica na terminação do verbo)", "Marcar o fim da frase, como ponto final"], "correct": "Anunciar logo no começo que vem uma hipótese (o 'se' real fica na terminação do verbo)"}`
 - もし é só um aviso de hipótese; quem faz o trabalho gramatical de 'se' é a terminação (〜なら, 〜たら, 〜ば). Por isso もし é opcional: 雨なら行きません também está certo.
-- frases: `sent:tatoeba-193408`
+
 
 ### 2. (cloze) Complete o arrependimento 'eu devia ter vindo de casaco': コート着てくれ＿よかった。
 - **Resposta:** `{"text": "ば", "full": "コート着てくればよかった"}`

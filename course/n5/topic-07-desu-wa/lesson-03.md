@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-30, janai-dewa-nai] · vocabulário [お弁当, お腹, お菓子, 上着, 何故, 何時, 内, 映画, 映画館, 朝ごはん, 無い, 物, 足, 鉛筆, 雨, 頭, 顔, 飴, ５日] · kanji [時] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-778977`, `sent:tatoeba-536769`, `sent:tatoeba-229628`, `sent:tatoeba-5059`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-778977`, `sent:tatoeba-536769`, `sent:tatoeba-5059`
 
 ---
 
@@ -27,7 +27,7 @@ Aqui なぜ é "por quê" e か fecha a pergunta. Repare como か também aparec
 No japonês polido com か, em geral não se usa o "?" escrito: o próprio か já marca a pergunta. Em conversa casual, porém, você verá o "?" com frequência, como nos exemplos do dia a dia.
 
 #### Negar com じゃない e ではない
-Para dizer que algo não é, troque a cópula afirmativa pela negativa. A forma casual é janai-dewa-nai; a forma completa e mais formal é janai-dewa-nai. As três opções abaixo significam a mesma coisa; o que muda é só o quanto a fala soa formal.
+Para dizer que algo não é, troque a cópula afirmativa pela negativa, janai-dewa-nai. A forma casual é じゃない; a forma completa e mais formal é ではない. As três opções abaixo significam a mesma coisa; o que muda é só o quanto a fala soa formal.
 - Casual: 雨じゃない ("não é chuva").
 - Formal/escrita: 雨ではない ("não é chuva").
 - Polido (fala educada): 雨ではありません ("não é chuva").
@@ -39,7 +39,7 @@ Pense assim: じゃ é só a contração falada de では. じゃない = bate-p
 
 #### Perguntar e negar juntos
 Você pode combinar os dois. Aponte para algo distante e pergunte com a estrutura casual:
-> 🗣 あれ何？ — O que é aquilo?
+あれ何？ ("O que é aquilo?")
 Literalmente "aquilo, o quê?". No dia a dia, japoneses cortam o です e o か; a entonação de pergunta basta. A versão polida completa seria あれは何ですか.
 
 > **[l1-pitfall]**
@@ -70,8 +70,7 @@ E ainda:
 #### Mais exemplos
 > 🗣 何時ですか。 — Que horas são?
 - Consigo virar uma afirmação em pergunta acrescentando か no fim.
-- Sei negar de forma casual com じゃない.
-- Sei a diferença entre じゃない (casual) e ではない・ではありません (formal/polido).
+- Sei negar de forma casual com じゃない e entendo a diferença entre じゃない (casual) e ではない・ではありません (formal/polido).
 - Lembro que não há artigos e que a partícula vem depois da palavra.
 
 ---
@@ -100,7 +99,7 @@ E ainda:
 ### 5. (sentence_build) Monte a pergunta casual 'O que é aquilo?' com as peças: [何] [あれ]
 - **Resposta:** `{"order": ["あれ", "何"], "text": "あれ何"}`
 - No casual, あれ (aquilo) vem primeiro e 何 (o quê) fecha a pergunta pela entonação, sem です/か: あれ何 (versão polida: あれは何ですか).
-- frases: `sent:tatoeba-229628`
+
 
 ### 6. (production) Pergunte de forma POLIDA 'É chuva?' (use 雨 + です + か).
 - **Resposta:** `{"text": "雨ですか", "accept": ["雨ですか", "あめですか", "雨ですか。", "雨ですか？"]}`

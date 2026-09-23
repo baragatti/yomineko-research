@@ -1702,6 +1702,39 @@ def handle_forward_refs(rows, sents, gram, table):
     return out
 
 
+def handle_lesson_body_spans(rows, sents, gram, table):
+    """C13 (W08b lesson bodies, W21b rewrites, W21 furigana residue). Every span of a row is in the
+    SHIPPED body in its new form: `from` gone (unless `to` itself contains it), a non-empty `to`
+    present; every exercise edit is what the shipped exercise carries (`sentence_refs`)."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        body = lesson.get("body") or ""
+        bad = ""
+        for s in r["spans"]:
+            if s["from"] not in s["to"] and s["from"] in body:
+                bad = f"the old span is still in the body: {s['from'][:80]!r}"
+            elif s["to"] and body.count(s["to"]) < 1:
+                bad = f"the new span is not in the body: {s['to'][:80]!r}"
+            if bad:
+                break
+        exs = {e.get("id"): e for e in lesson.get("exercises") or []}
+        for e in r.get("exercise_edits") or []:
+            if bad:
+                break
+            got = (exs.get(e["exercise"]) or {}).get(e["field"])
+            if e["exercise"] not in exs:
+                bad = f"exercise {e['exercise']} is not in the lesson"
+            elif sorted(got or []) != sorted(e["new"]):
+                bad = f"{e['exercise']}.{e['field']} = {got!r}, the row's new is {e['new']!r}"
+        out.append(("fail", C_NOT_APPLIED, addr, bad) if bad else ("ok", "", addr, "exact"))
+    return out
+
+
 def handle_lesson_sentences(rows, sents, gram, table):
     """W14. Each re-selection row must be visible in the SHIPPED lesson.
 
@@ -1996,6 +2029,10 @@ def handle_item_refs(rows, sents, gram, table):
 
 
 REGISTRY = {
+    # C13: verified lesson-body span tables (W08b one-point bodies, W21b rewrites, furigana residue).
+    "w08b_lesson_bodies.json": handle_lesson_body_spans,
+    "w21b_rewrites.json": handle_lesson_body_spans,
+    "furigana_residue.json": handle_lesson_body_spans,
     # W08b: eight grammar merges + their pre-merge repairs, exam-item re-points and reconciled prose.
     "w08b_merges.json": handle_w08b_merges,
     # W23: every lesson exercise's item_refs (what it tests), derived by rule.

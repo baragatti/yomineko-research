@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-43] · vocabulário [子供, 沢山, 生徒, 背, 自分] · kanji [話 語] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-122326`
+**Frases (por ID, do banco dissecado):** —
 
 ---
 
@@ -43,7 +43,7 @@ Cuidado: em português um "ter/haver" só serve para tudo ("tem muita gente", "t
 
 #### Exemplo real
 Repare em たくさん com pessoas numa frase que japoneses realmente dizem. Aqui アメリカ人 é "americano(s)", 日本語 é "língua japonesa", e 話せる é "conseguir falar".
-> 🗣 日本語を話せるアメリカ人がたくさんいる。 — Há muitos americanos que sabem falar japonês.
+日本語を話せるアメリカ人がたくさんいる。 ("Há muitos americanos que sabem falar japonês."; 話 = "falar", 語 = "língua")
 Ao pé da letra: "americanos que conseguem falar japonês existem em grande quantidade". O たくさん mede o NÚMERO de americanos, e いる é "existir" para pessoas. Note também que アメリカ人 termina em 人: o nosso kanji de hoje.
 
 #### Kanji: 人 (pessoa)

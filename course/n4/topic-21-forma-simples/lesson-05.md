@@ -9,7 +9,7 @@
 
 **Introduz:** gramática [gp-94, sa, yori] · vocabulário [お宅, 上がる, 以外, 区, 売り場, 屋上, 思う, 比べる, 表, 郊外, 驚く] · kanji [場 思 業 私] · kana [—]
 
-**Frases (por ID, do banco dissecado):** `sent:tatoeba-105626`, `sent:tatoeba-76098`, `sent:gen-2cb2ddc513fb`, `sent:gen-5b0f0ae6501d`
+**Frases (por ID, do banco dissecado):** `sent:tatoeba-76098`, `sent:gen-2cb2ddc513fb`, `sent:gen-5b0f0ae6501d`
 
 ---
 
@@ -18,7 +18,7 @@ Esta lição junta três ferramentas que servem para relacionar ou transformar i
 
 #### より: a partícula "do que"
 A partícula より gruda depois do termo que serve de base na comparação, o nosso "do que". Veja numa frase real:
-> 🗣 彼は私より年少だ。 — Ele é mais novo do que eu.
+彼は私より年少だ。 ("Ele é mais novo do que eu."; 彼 = "ele")
 Aqui 私より diz "do que eu", e 年少("mais jovem") completa: "ele é mais novo do que eu". Repare numa coisa que economiza regra: o japonês não tem uma palavra solta para "mais". A ideia de "mais novo" já nasce da estrutura, e o adjetivo fica na forma normal, sem nada na frente.
 
 > **[l1-pitfall]**
@@ -73,7 +73,7 @@ O kanji 場 significa lugar, localização. À esquerda o radical de "terra"; à
 ### 1. (recognition) Na frase 彼は私より年少だ ('ele é mais novo do que eu'), o que a partícula より marca?
 - **Resposta:** `{"choices": ["O termo de comparação, a base 'do que' (aqui 私 = eu)", "O termo que ganha, o que é mais novo (彼 = ele)", "O adjetivo da comparação"], "correct": "O termo de comparação, a base 'do que' (aqui 私 = eu)"}`
 - より gruda no termo que serve de base, o nosso 'do que'. Em 私より é 'do que eu'; quem é mais novo (彼) não leva より. Lembre: não existe um 'mais' avulso, a ideia comparativa nasce da estrutura.
-- frases: `sent:tatoeba-105626`
+
 
 ### 2. (cloze) Transforme o adjetivo em substantivo de grau para dizer 'a altura desta montanha': この山の高＿に驚いた。
 - **Resposta:** `{"text": "さ", "full": "この山の高さに驚いた"}`

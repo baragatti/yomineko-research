@@ -29,7 +29,7 @@ Em português usamos "só" com verbo afirmativo ("eu só tenho isso"). Em japon�
 Aqui temos 今 ("agora"), depois しか, e ない, o que dá literalmente "fora agora, não há" e equivale ao nosso "é agora ou nunca". Note como しか normalmente substitui partículas como は, が ou を: a gente não diz 今がしか, só 今しか.
 
 #### Com números e quantidades: "só mil ienes"
-O mesmo recurso serve para quantidades, e isso é tão comum que tem até um nome próprio, gp-118. Você gruda しか〜ない num número ou medida para dizer que aquela quantia é pequena ou insuficiente:
+O mesmo gp-118 serve para quantidades, e esse uso é muito comum. Você gruda しか〜ない num número ou medida para dizer que aquela quantia é pequena ou insuficiente:
 > 🗣 あと1日しかない。 — Só resta um dia.
 As peças aqui são あと ("restante"), 1日 ("um dia"), depois しか e ない: "só resta um dia". O tom é de pouco, de que o tempo está acabando.
 > 🗣 金は少ししかない。 — Eu só tenho pouco dinheiro.
@@ -65,8 +65,7 @@ Juntando tudo: 新しい傘は千円しかしなかった = "o guarda-chuva novo
 
 #### Leitura
 > 📖 あたらしいくつがほしい。でも、さいふの中に千円しかない。あの店の安い日は、あと二日しかない。あしたは学校がやすみだから、あさ店へ行く。でも、くつは三千円だから、母にたのむしかない。 — Quero um sapato novo. Mas só tenho mil ienes na carteira. Os dias de desconto daquela loja são só mais dois. Amanhã não tem aula, então vou à loja de manhã. Mas o sapato custa três mil ienes, então só me resta pedir para a minha mãe.
-- Sei dizer "só / apenas" com しか e o verbo no negativo.
-- Aplico しか〜ない a números e quantidades (千円しかない).
+- Sei dizer "só / apenas" com しか e o verbo no negativo, inclusive com números e quantidades (千円しかない).
 - Lembro que しか pede o negativo, mas o sentido é positivo-limitado.
 - Reconheço os kanji 地 ("solo") e 新 ("novo").
 
