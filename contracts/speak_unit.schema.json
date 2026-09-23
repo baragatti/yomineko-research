@@ -325,6 +325,32 @@
         "type": "string"
       }
     },
+    "srs": {
+      "type": "object",
+      "properties": {
+        "introduces_cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "card_types": {
+                "type": "array"
+              },
+              "deck": {
+                "$ref": "common.schema.json#/$defs/IdRef"
+              },
+              "item": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "introduces_cards"
+      ],
+      "additionalProperties": false
+    },
     "stage": {
       "$ref": "common.schema.json#/$defs/IdRef"
     },
@@ -417,6 +443,7 @@
     "say_now",
     "schema_version",
     "shadowing",
+    "srs",
     "stage",
     "strand_counts",
     "strands",

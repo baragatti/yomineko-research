@@ -8,49 +8,96 @@
   },
   "say_now": [
     "sent:tatoeba-10899775",
+    "sent:tatoeba-200661",
+    "sent:tatoeba-182254",
     "sent:tatoeba-171644",
     "sent:tatoeba-172639",
-    "sent:tatoeba-11009755",
-    "sent:tatoeba-226844",
-    "sent:tatoeba-226845"
+    "sent:tatoeba-11009755"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1012480",
+    "vocab:1008630",
     "vocab:1579110",
     "vocab:1288850",
     "vocab:1562350",
-    "vocab:1169870",
     "vocab:1151260",
     "vocab:1578010",
+    "vocab:1486650",
+    "vocab:1231690",
     "vocab:1426250",
     "vocab:1358550"
   ],
   "patterns": [
-    "gram:mashou",
-    "gram:gp-149",
-    "gram:gp-17"
+    "gram:gp-17",
+    "gram:n3-temo"
   ],
   "kanji_recognition": [
     "食",
     "昼",
     "堂",
-    "悪",
-    "魚",
-    "今"
+    "去",
+    "作",
+    "年"
   ],
   "shadowing": [
     "sent:tatoeba-10899775",
+    "sent:tatoeba-200661",
+    "sent:tatoeba-182254",
     "sent:tatoeba-171644",
     "sent:tatoeba-172639",
-    "sent:tatoeba-11009755",
-    "sent:tatoeba-226844",
-    "sent:tatoeba-226845"
+    "sent:tatoeba-11009755"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10899775",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-200661",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-182254",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-171644",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-172639",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11009755",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 112,
+  "cumulative_known_vocab": 125,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -70,18 +117,18 @@
       "via": "phrase",
       "distractors": [
         "知る",
-        "何時",
-        "此れ"
+        "会計",
+        "何時"
       ]
     },
     {
-      "id": "cf:n4:956:199",
+      "id": "cf:n4:930:202",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "行く",
-        "話す",
-        "パン"
+        "程度",
+        "用意",
+        "幾ら"
       ]
     },
     {
@@ -91,68 +138,47 @@
       "distractors": [
         "のむ",
         "かれ",
-        "よる"
+        "みず"
       ]
     },
     {
-      "id": "kr:n4:199",
+      "id": "kr:n3:95",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "さげる",
-        "ねがう",
-        "じかん"
+        "あらわす",
+        "おくれる",
+        "せんせい"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:masen-ka",
     "gram:nagara",
-    "gram:ndesu"
+    "gram:ndesu",
+    "gram:totemo",
+    "gram:gp-121"
   ],
   "drills": [
     {
-      "pattern": "gram:mashou",
-      "examples": [
-        "sent:tatoeba-139208",
-        "sent:tatoeba-173392",
-        "sent:tatoeba-198378"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-149",
-      "examples": [
-        "sent:tatoeba-4856",
-        "sent:tatoeba-77812",
-        "sent:tatoeba-83623"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:gp-17",
       "examples": [
+        "sent:tatoeba-80132",
         "sent:tatoeba-124633",
-        "sent:tatoeba-144227",
-        "sent:tatoeba-80132"
+        "sent:tatoeba-144227"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-temo",
+      "examples": [
+        "sent:tatoeba-173357",
+        "sent:tatoeba-85028",
+        "sent:tatoeba-6015"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Está muito gostoso!"
-      },
-      "answer_key": "とてもおいしいよ。",
-      "accepted_variants": [
-        "とてもおいしいよ",
-        "とてもおいしいよ。"
-      ],
-      "sentence": "sent:tatoeba-200661",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Por que ninguém quer comer o que eu fiz?"
@@ -185,30 +211,45 @@
       "sentence": "sent:tatoeba-79093",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Eu gosto de beber água mineral natural."
+      },
+      "answer_key": "天然のミネラルウォーターを飲むのが好きです。",
+      "accepted_variants": [
+        "てんねんのみねらるうぉーたーをのむのがすきです",
+        "てんねんのみねらるうぉーたーをのむのがすきです。",
+        "天然のミネラルウォーターを飲むのが好きです",
+        "天然のミネラルウォーターを飲むのが好きです。"
+      ],
+      "sentence": "sent:tatoeba-13795168",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
     "prompt": {
-      "pt-BR": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
+      "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-1115376",
-      "sent:tatoeba-9240812",
-      "sent:jec-1593",
       "sent:tatoeba-8748248",
+      "sent:tatoeba-121802",
+      "sent:tatoeba-112261",
       "sent:tatoeba-229178",
-      "sent:jec-0436"
+      "sent:tatoeba-218479",
+      "sent:tatoeba-229723"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
-    "kind": "situation",
+    "kind": "recap",
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,

@@ -41,7 +41,7 @@
     "item": {
       "$ref": "../common.schema.json#/$defs/IdRef",
       "pattern": "^(vocab|kanji|gram|kana|sent):",
-      "description": "The corpus record this card tests, by published stable id. `vocab:` ids are SLUGS (`vocab:1580640`), never headwords — a headword is not an address, 93 of them are shared by 193 records. `kana:` is accepted at BOTH granularities: the family form `kana:hiragana-a` (57 cards today) and the glyph form `kana:hiragana-あ` (211 glyph records already exist and validate_srs_decks already accepts them). W29 migrates 57 -> 211 under decision D6; the contract has to hold across that migration, so it validates both. `sent:` becomes reachable when deck:phrases is populated (W30)."
+      "description": "The corpus record this card tests, by published stable id. `vocab:` ids are SLUGS (`vocab:1580640`), never headwords — a headword is not an address, 93 of them are shared by 193 records. `kana:` is accepted at BOTH granularities: the family form `kana:hiragana-a` (57 cards today) and the glyph form `kana:hiragana-あ` (211 glyph records already exist and validate_srs_decks already accepts them). W29 migrates 57 -> 211 under decision D6; the contract has to hold across that migration, so it validates both. `sent:` is the deck:phrases item, minted by the speak units (W30, 432 cards)."
     },
     "kind": {
       "type": "string",
@@ -56,8 +56,8 @@
     },
     "introduced_by": {
       "$ref": "../common.schema.json#/$defs/IdRef",
-      "pattern": "^les:",
-      "description": "The lesson whose srs.introduces_cards[] minted this card. It is also the route a leech takes back to remediation, which is the only reason the app can answer \"where did I learn this\"."
+      "pattern": "^(les|speak):",
+      "description": "The lesson (`les:`) or speak unit (`speak:`, W30: its say_now phrases in deck:phrases) whose srs.introduces_cards[] minted this card. It is also the route a leech takes back to remediation, which is the only reason the app can answer \"where did I learn this\"."
     },
     "state": {
       "type": "string",

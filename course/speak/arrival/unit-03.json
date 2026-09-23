@@ -7,51 +7,97 @@
     "pt-BR": "Chegar e cumprimentar, parte 3"
   },
   "say_now": [
+    "sent:tatoeba-10355885",
     "sent:tatoeba-171272",
     "sent:tatoeba-125944",
     "sent:tatoeba-226507",
-    "sent:tatoeba-125913",
-    "sent:tatoeba-125967",
-    "sent:tatoeba-11831400"
+    "sent:tatoeba-13259054",
+    "sent:tatoeba-125913"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1591110",
     "vocab:1198180",
     "vocab:1313580",
     "vocab:1600900",
+    "vocab:1387990",
     "vocab:1410590",
-    "vocab:1281020",
-    "vocab:1215230",
     "vocab:1429750",
     "vocab:1340450",
     "vocab:1289470",
-    "vocab:1579210"
+    "vocab:1579210",
+    "vocab:1289400"
   ],
   "patterns": [
-    "gram:gp-108",
     "gram:gp-149",
     "gram:gp-32"
   ],
   "kanji_recognition": [
+    "聞",
     "会",
     "今",
     "晩",
     "事",
-    "待",
-    "長"
+    "待"
   ],
   "shadowing": [
+    "sent:tatoeba-10355885",
     "sent:tatoeba-171272",
     "sent:tatoeba-125944",
     "sent:tatoeba-226507",
-    "sent:tatoeba-125913",
-    "sent:tatoeba-125967",
-    "sent:tatoeba-11831400"
+    "sent:tatoeba-13259054",
+    "sent:tatoeba-125913"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10355885",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-171272",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-125944",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-226507",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-13259054",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-125913",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 18,
+  "cumulative_known_vocab": 20,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -62,7 +108,7 @@
       "distractors": [
         "私",
         "事",
-        "間"
+        "無い"
       ]
     },
     {
@@ -71,18 +117,18 @@
       "via": "new-word",
       "distractors": [
         "事",
-        "間",
-        "私"
+        "私",
+        "行く"
       ]
     },
     {
-      "id": "kr:n3:1240",
+      "id": "kr:n3:188",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "さいちゅう",
-        "こんばん",
-        "わたし"
+        "ない",
+        "あう",
+        "はい"
       ]
     },
     {
@@ -97,20 +143,12 @@
     }
   ],
   "patterns_chunked": [
+    "gram:gp-108",
     "gram:gp-148",
     "gram:n3-saichuu-ni",
     "gram:gp-62"
   ],
   "drills": [
-    {
-      "pattern": "gram:gp-108",
-      "examples": [
-        "sent:tatoeba-78721",
-        "sent:tatoeba-10355885",
-        "sent:tatoeba-11858059"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:gp-149",
       "examples": [
@@ -131,21 +169,6 @@
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Obrigado por me escutar."
-      },
-      "answer_key": "聞いてくれてありがとう。",
-      "accepted_variants": [
-        "きいてくれてありがとう",
-        "きいてくれてありがとう。",
-        "聞いてくれてありがとう",
-        "聞いてくれてありがとう。"
-      ],
-      "sentence": "sent:tatoeba-10355885",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Desculpe. É que não tenho muito tempo."
@@ -175,6 +198,21 @@
       "sentence": "sent:tatoeba-78721",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Sim, vamos."
+      },
+      "answer_key": "はい、行きましょう。",
+      "accepted_variants": [
+        "はい、いきましょう",
+        "はい、いきましょう。",
+        "はい、行きましょう",
+        "はい、行きましょう。"
+      ],
+      "sentence": "sent:tatoeba-198378",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -182,12 +220,12 @@
       "pt-BR": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença. Em voz alta, sem ler."
     },
     "items": [
-      "sent:tatoeba-198378",
       "sent:tatoeba-4971",
       "sent:tatoeba-335372",
       "sent:tatoeba-426889",
       "sent:tatoeba-1532832",
-      "sent:tatoeba-373351"
+      "sent:tatoeba-373351",
+      "sent:tatoeba-1598216"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -195,15 +233,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 25,
     "fluency": 6
   }
 }

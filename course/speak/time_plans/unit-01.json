@@ -7,9 +7,9 @@
     "pt-BR": "Quando, que horas, combinar, parte 1"
   },
   "say_now": [
-    "sent:tatoeba-196300",
-    "sent:tatoeba-196299",
-    "sent:tatoeba-79537",
+    "sent:tatoeba-11171012",
+    "sent:tatoeba-185449",
+    "sent:tatoeba-91869",
     "sent:tatoeba-78588",
     "sent:tatoeba-80608",
     "sent:tatoeba-80460"
@@ -17,84 +17,134 @@
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1521400",
-    "vocab:1516925",
+    "vocab:1523060",
+    "vocab:1343950",
     "vocab:1604890",
     "vocab:1171900",
-    "vocab:1327120"
+    "vocab:1519290",
+    "vocab:1202270",
+    "vocab:1548220",
+    "vocab:1194290",
+    "vocab:1584640"
   ],
   "patterns": [
     "gram:deshou",
     "gram:gp-62",
-    "gram:gp-98",
-    "gram:ka-shira"
+    "gram:gp-89"
   ],
   "kanji_recognition": [
-    "会",
-    "父",
-    "休",
+    "火",
+    "後",
     "日",
     "明",
-    "守"
+    "曜",
+    "会"
   ],
   "shadowing": [
-    "sent:tatoeba-196300",
-    "sent:tatoeba-196299",
-    "sent:tatoeba-79537",
+    "sent:tatoeba-11171012",
+    "sent:tatoeba-185449",
+    "sent:tatoeba-91869",
     "sent:tatoeba-78588",
     "sent:tatoeba-80608",
     "sent:tatoeba-80460"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11171012",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-185449",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-91869",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78588",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-80608",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-80460",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 331,
+  "cumulative_known_vocab": 385,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n4:3645:396",
+      "id": "cf:n4:856:14",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "歯",
-        "庭",
-        "船"
+        "入れる",
+        "こんな",
+        "トイレ"
       ]
     },
     {
-      "id": "cf:n4:3647:649",
+      "id": "cf:n3:517:150",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "もう",
-        "好き",
-        "用意"
+        "困る",
+        "時間",
+        "今夜"
       ]
     },
     {
-      "id": "kr:n3:36",
+      "id": "kr:n3:14",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "のむ",
-        "あう",
-        "はし"
+        "けっして",
+        "せいかく",
+        "でんとう"
       ]
     },
     {
-      "id": "kr:n4:159",
+      "id": "kr:n3:150",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "あう",
-        "ほん",
-        "かわ"
+        "ぎむ",
+        "よい",
+        "きく"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-ni-tsuite",
-    "gram:n3-koto"
+    "gram:n3-donna-ni-temo",
+    "gram:n3-te-hajimete",
+    "gram:n3-ni-tsuite"
   ],
   "drills": [
     {
@@ -116,59 +166,16 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-98",
+      "pattern": "gram:gp-89",
       "examples": [
-        "sent:gen-f4a52d78b938",
-        "sent:gen-f384f4213f18",
-        "sent:gen-802fed6cb267"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:ka-shira",
-      "examples": [
-        "sent:tatoeba-11510681",
-        "sent:tatoeba-12296518",
-        "sent:tatoeba-11162294"
+        "sent:tatoeba-144038",
+        "sent:tatoeba-4855",
+        "sent:tatoeba-164675"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Até amanhã eu já devo ter terminado o trabalho."
-      },
-      "answer_key": "明日までには仕事をやり終えているでしょう。",
-      "accepted_variants": [
-        "あすまでにはしごとをやりおえているでしょう",
-        "あすまでにはしごとをやりおえているでしょう。",
-        "あすまでにわしごとをやりおえているでしょう",
-        "あすまでにわしごとをやりおえているでしょう。",
-        "明日までには仕事をやり終えているでしょう",
-        "明日までには仕事をやり終えているでしょう。"
-      ],
-      "sentence": "sent:tatoeba-80379",
-      "kind": "on-topic",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "No Ano-Novo, a gente passa bastante tempo com a família."
-      },
-      "answer_key": "正月は家族と過ごす時間が長いのです。",
-      "accepted_variants": [
-        "しょうがつはかぞくとすごすじかんがながいのです",
-        "しょうがつはかぞくとすごすじかんがながいのです。",
-        "しょうがつわかぞくとすごすじかんがながいのです",
-        "しょうがつわかぞくとすごすじかんがながいのです。",
-        "正月は家族と過ごす時間が長いのです",
-        "正月は家族と過ごす時間が長いのです。"
-      ],
-      "sentence": "sent:tatoeba-142954",
-      "kind": "on-topic",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Hoje passou na TV uma reportagem sobre o trabalho dos seguranças."
@@ -182,6 +189,40 @@
       "sentence": "sent:jec-4753",
       "kind": "on-topic",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo."
+      },
+      "answer_key": "最近あまり寝ていないので今日は早く寝ようと思う。",
+      "accepted_variants": [
+        "さいきんあまりねていないのできょうははやくねようとおもう",
+        "さいきんあまりねていないのできょうははやくねようとおもう。",
+        "さいきんあまりねていないのできょうわはやくねようとおもう",
+        "さいきんあまりねていないのできょうわはやくねようとおもう。",
+        "最近あまり寝ていないので今日は早く寝ようと思う",
+        "最近あまり寝ていないので今日は早く寝ようと思う。"
+      ],
+      "sentence": "sent:tatoeba-13059182",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Meu irmão mais velho toma banho de chuveiro todos os dias."
+      },
+      "answer_key": "兄は毎日シャワーを浴びます。",
+      "accepted_variants": [
+        "あにはまいにちしゃわーをあびます",
+        "あにはまいにちしゃわーをあびます。",
+        "あにわまいにちしゃわーをあびます",
+        "あにわまいにちしゃわーをあびます。",
+        "兄は毎日シャワーを浴びます",
+        "兄は毎日シャワーを浴びます。"
+      ],
+      "sentence": "sent:tatoeba-10723441",
+      "kind": "on-topic",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -189,12 +230,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:jec-1876",
-      "sent:tatoeba-163381",
-      "sent:tatoeba-113170",
-      "sent:tatoeba-163367",
-      "sent:tatoeba-10899831",
-      "sent:tatoeba-1590863"
+      "sent:tatoeba-117935",
+      "sent:tatoeba-10983265",
+      "sent:tatoeba-8868835",
+      "sent:tatoeba-173057",
+      "sent:tatoeba-184200",
+      "sent:tatoeba-157990"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -202,15 +243,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 53,
+    "language-focused": 54,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 25,
     "fluency": 6
   }
 }

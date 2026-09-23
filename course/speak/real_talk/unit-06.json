@@ -8,60 +8,96 @@
   },
   "say_now": [
     "sent:tatoeba-10153751",
-    "sent:tatoeba-234789",
     "sent:tatoeba-184333",
+    "sent:tatoeba-11173182",
     "sent:tatoeba-77972",
     "sent:tatoeba-77973",
-    "sent:tatoeba-74894"
+    "sent:tatoeba-80010"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1295070",
-    "vocab:1263490",
     "vocab:1206800",
+    "vocab:1591900",
     "vocab:1554010",
-    "vocab:2845606"
+    "vocab:1206070",
+    "vocab:1076170"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
-    "gram:n3-to-iu-no-wa",
     "gram:n3-mitai-da",
-    "gram:n3-to-iu-no",
-    "gram:deshou"
+    "gram:hazu-da",
+    "gram:janai-dewa-nai"
   ],
   "kanji_recognition": [
     "済",
-    "何",
-    "表",
     "学",
     "者",
-    "好"
+    "好",
+    "方",
+    "両"
   ],
   "shadowing": [
     "sent:tatoeba-10153751",
-    "sent:tatoeba-234789",
     "sent:tatoeba-184333",
+    "sent:tatoeba-11173182",
     "sent:tatoeba-77972",
     "sent:tatoeba-77973",
-    "sent:tatoeba-74894"
+    "sent:tatoeba-80010"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10153751",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-184333",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11173182",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-77972",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-77973",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-80010",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 580,
+  "cumulative_known_vocab": 700,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "kr:n3:1393",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "いっしょ",
-        "だんせい",
-        "へんこう"
-      ]
-    },
     {
       "id": "kr:n3:1591",
       "type": "kanji_reading",
@@ -73,27 +109,38 @@
       ]
     },
     {
-      "id": "cf:n3:135:580",
+      "id": "cf:n3:157:21",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "二人",
-        "地図",
-        "事件"
+        "尋ねる",
+        "真っ暗",
+        "泊まる"
       ]
     },
     {
-      "id": "cf:n3:14:115",
+      "id": "cf:n3:165:256",
       "type": "context_fill",
       "via": "review",
       "distractors": [
-        "度",
-        "話",
-        "頃"
+        "試し",
+        "学生",
+        "何方"
+      ]
+    },
+    {
+      "id": "kr:n3:1388",
+      "type": "kanji_reading",
+      "via": "review",
+      "distractors": [
+        "ていあん",
+        "あらわす",
+        "ひつよう"
       ]
     }
   ],
   "patterns_chunked": [
+    "gram:n3-mo",
     "gram:n3-tokoro-ga"
   ],
   "drills": [
@@ -107,15 +154,6 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-to-iu-no-wa",
-      "examples": [
-        "sent:tatoeba-423387",
-        "sent:tatoeba-142020",
-        "sent:tatoeba-168168"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:n3-mitai-da",
       "examples": [
         "sent:tatoeba-80952",
@@ -125,25 +163,42 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-to-iu-no",
+      "pattern": "gram:hazu-da",
       "examples": [
-        "sent:tatoeba-220804",
-        "sent:tatoeba-214502",
-        "sent:tatoeba-138773"
+        "sent:tatoeba-235244",
+        "sent:tatoeba-519050",
+        "sent:tatoeba-198131"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:deshou",
+      "pattern": "gram:janai-dewa-nai",
       "examples": [
-        "sent:tatoeba-98793",
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454"
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "O mundo não gira em torno de você, viu."
+      },
+      "answer_key": "世界は君を中心に回っているわけではないんだよ。",
+      "accepted_variants": [
+        "せかいはきみをちゅうしんにまわっているわけではないんだよ",
+        "せかいはきみをちゅうしんにまわっているわけではないんだよ。",
+        "せかいわきみをちゅうしんにまわっているわけでわないんだよ",
+        "せかいわきみをちゅうしんにまわっているわけでわないんだよ。",
+        "世界は君を中心に回っているわけではないんだよ",
+        "世界は君を中心に回っているわけではないんだよ。"
+      ],
+      "sentence": "sent:tatoeba-5287",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "A esposa dele parece ser estrangeira."
@@ -163,31 +218,16 @@
     },
     {
       "prompt": {
-        "pt-BR": "Não parece que é outono, hein."
+        "pt-BR": "Deve ter uma nascente por aqui."
       },
-      "answer_key": "秋じゃないみたいだな。",
+      "answer_key": "この辺に泉があるはずだ。",
       "accepted_variants": [
-        "あきじゃないみたいだな",
-        "あきじゃないみたいだな。",
-        "秋じゃないみたいだな",
-        "秋じゃないみたいだな。"
+        "このへんにいずみがあるはずだ",
+        "このへんにいずみがあるはずだ。",
+        "この辺に泉があるはずだ",
+        "この辺に泉があるはずだ。"
       ],
-      "sentence": "sent:tatoeba-8988161",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão."
-      },
-      "answer_key": "絵心がないから、風景を正確に写せるわけがない。",
-      "accepted_variants": [
-        "えごころがないから、ふうけいをせいかくにうつせるわけがない",
-        "えごころがないから、ふうけいをせいかくにうつせるわけがない。",
-        "絵心がないから、風景を正確に写せるわけがない",
-        "絵心がないから、風景を正確に写せるわけがない。"
-      ],
-      "sentence": "sent:tatoeba-12776411",
+      "sentence": "sent:tatoeba-11264636",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -197,12 +237,12 @@
       "pt-BR": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa."
     },
     "items": [
+      "sent:tatoeba-8988161",
+      "sent:tatoeba-12776411",
       "sent:tatoeba-142020",
       "sent:tatoeba-214502",
       "sent:tatoeba-10901570",
-      "sent:tatoeba-423387",
-      "sent:tatoeba-127148",
-      "sent:tatoeba-123542"
+      "sent:tatoeba-120314"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -210,15 +250,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 54,
+    "language-focused": 53,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 24,
     "fluency": 6
   }
 }

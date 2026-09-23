@@ -8,145 +8,165 @@
   },
   "say_now": [
     "sent:tatoeba-10557770",
+    "sent:tatoeba-97583",
     "sent:tatoeba-10657609",
-    "sent:tatoeba-145934",
-    "sent:tatoeba-412068",
-    "sent:tatoeba-5329",
-    "sent:tatoeba-236798"
+    "sent:tatoeba-204265",
+    "sent:tatoeba-145930",
+    "sent:tatoeba-145934"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1463770",
+    "vocab:1516925",
     "vocab:1007130",
     "vocab:1456360",
-    "vocab:1258330",
-    "vocab:1540170",
-    "vocab:1163400",
-    "vocab:1371260",
+    "vocab:1291800",
     "vocab:1348910",
-    "vocab:2796520"
+    "vocab:1157760",
+    "vocab:1327410",
+    "vocab:1179320"
   ],
   "patterns": [
-    "gram:gp-149"
+    "gram:gp-149",
+    "gram:nagara"
   ],
   "kanji_recognition": [
     "飲",
     "少",
     "水",
     "日",
-    "食",
-    "読"
+    "奥",
+    "座"
   ],
   "shadowing": [
     "sent:tatoeba-10557770",
+    "sent:tatoeba-97583",
     "sent:tatoeba-10657609",
-    "sent:tatoeba-145934",
-    "sent:tatoeba-412068",
-    "sent:tatoeba-5329",
-    "sent:tatoeba-236798"
+    "sent:tatoeba-204265",
+    "sent:tatoeba-145930",
+    "sent:tatoeba-145934"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10557770",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-97583",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10657609",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-204265",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-145930",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-145934",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 121,
+  "cumulative_known_vocab": 134,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "so:n4:3429",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
     {
       "id": "cf:n3:693:617",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "犬",
+        "皆",
         "私",
         "夜"
       ]
     },
     {
-      "id": "cf:n4:3429:63",
+      "id": "cf:n4:693:617",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "間",
-        "丈",
-        "魚"
+        "話",
+        "方",
+        "何"
       ]
     },
     {
-      "id": "kr:n3:60",
+      "id": "kr:n4:159",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "こんばん",
-        "すくない",
-        "ほんとう"
+        "あう",
+        "みず",
+        "くる"
       ]
     },
     {
-      "id": "kr:n3:63",
+      "id": "kr:n4:324",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "これ",
-        "やる",
-        "こと"
+        "はじめて",
+        "うけつけ",
+        "おしえる"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-110",
     "gram:sonna-ni",
-    "gram:gp-36",
-    "gram:gp-89",
-    "gram:gp-98"
+    "gram:doushite",
+    "gram:gp-87",
+    "gram:gp-89"
   ],
   "drills": [
     {
       "pattern": "gram:gp-149",
       "examples": [
         "sent:tatoeba-4856",
-        "sent:tatoeba-77812",
-        "sent:tatoeba-83623"
+        "sent:tatoeba-83623",
+        "sent:tatoeba-79091"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nagara",
+      "examples": [
+        "sent:tatoeba-83210",
+        "sent:tatoeba-11009755",
+        "sent:tatoeba-226844"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Vamos conversar enquanto tomamos um chá."
-      },
-      "answer_key": "お茶を飲みながら話しましょう。",
-      "accepted_variants": [
-        "おちゃをのみながらはなしましょう",
-        "おちゃをのみながらはなしましょう。",
-        "お茶を飲みながら話しましょう",
-        "お茶を飲みながら話しましょう。"
-      ],
-      "sentence": "sent:tatoeba-226845",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Que tal conversarmos enquanto tomamos um chá?"
-      },
-      "answer_key": "お茶を飲みながら話しませんか。",
-      "accepted_variants": [
-        "おちゃをのみながらはなしませんか",
-        "おちゃをのみながらはなしませんか。",
-        "お茶を飲みながら話しませんか",
-        "お茶を飲みながら話しませんか。"
-      ],
-      "sentence": "sent:tatoeba-226844",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "Não pode falar enquanto come!"
@@ -161,6 +181,40 @@
       "sentence": "sent:tatoeba-11009755",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "É que agora não estou a fim de comer."
+      },
+      "answer_key": "今は食べたくないんです。",
+      "accepted_variants": [
+        "いまはたべたくないんです",
+        "いまはたべたくないんです。",
+        "いまわたべたくないんです",
+        "いまわたべたくないんです。",
+        "今は食べたくないんです",
+        "今は食べたくないんです。"
+      ],
+      "sentence": "sent:tatoeba-172639",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Hoje os peixes não estão mordendo a isca."
+      },
+      "answer_key": "今日は魚の食いが悪い。",
+      "accepted_variants": [
+        "きょうはさかなのくいがわるい",
+        "きょうはさかなのくいがわるい。",
+        "きょうわさかなのくいがわるい",
+        "きょうわさかなのくいがわるい。",
+        "今日は魚の食いが悪い",
+        "今日は魚の食いが悪い。"
+      ],
+      "sentence": "sent:tatoeba-171644",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -168,12 +222,12 @@
       "pt-BR": "Você sentou num restaurante. Peça o que quer comer e beber, e diga se está bom."
     },
     "items": [
-      "sent:tatoeba-172639",
-      "sent:tatoeba-171644",
-      "sent:tatoeba-10899775",
+      "sent:tatoeba-182254",
       "sent:tatoeba-200661",
-      "sent:tatoeba-76061",
-      "sent:tatoeba-149750"
+      "sent:tatoeba-10899775",
+      "sent:tatoeba-13795168",
+      "sent:tatoeba-159773",
+      "sent:tatoeba-204523"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -181,15 +235,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 27,
     "meaning-output": 7,
-    "language-focused": 50,
+    "language-focused": 52,
     "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 23,
     "fluency": 6
   }
 }

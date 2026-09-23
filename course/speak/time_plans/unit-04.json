@@ -7,48 +7,97 @@
     "pt-BR": "Quando, que horas, combinar, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-11013726",
+    "sent:tatoeba-4905",
+    "sent:tatoeba-171514",
     "sent:tatoeba-80417",
+    "sent:tatoeba-12508743",
     "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767"
+    "sent:tatoeba-171539"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1405800",
+    "vocab:1386460",
+    "vocab:1484920",
     "vocab:1386500",
     "vocab:1542160",
-    "vocab:1373860",
-    "vocab:1236070",
+    "vocab:1203250",
     "vocab:1438690",
-    "vocab:1499720"
+    "vocab:1362360",
+    "vocab:1343460",
+    "vocab:1310460",
+    "vocab:1372800"
   ],
   "patterns": [
-    "gram:gp-42",
-    "gram:owaru",
-    "gram:to-omou"
+    "gram:n3-n-datte",
+    "gram:to-omou",
+    "gram:gp-142"
   ],
   "kanji_recognition": [
-    "続",
-    "日",
-    "毎",
-    "力",
-    "思",
-    "雪"
+    "何",
+    "間",
+    "君",
+    "時",
+    "説",
+    "明"
   ],
   "shadowing": [
-    "sent:tatoeba-11013726",
+    "sent:tatoeba-4905",
+    "sent:tatoeba-171514",
     "sent:tatoeba-80417",
+    "sent:tatoeba-12508743",
     "sent:tatoeba-145155",
-    "sent:tatoeba-171539",
-    "sent:tatoeba-143418",
-    "sent:tatoeba-536767"
+    "sent:tatoeba-171539"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-4905",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-171514",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-80417",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-12508743",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-145155",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-171539",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 352,
+  "cumulative_known_vocab": 414,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -57,29 +106,29 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "近い",
-        "飲む",
-        "会う"
+        "何方",
+        "天然",
+        "飲む"
       ]
     },
     {
-      "id": "cf:n4:3427:133",
+      "id": "cf:n3:696:23",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "始める",
-        "新しい",
-        "積もり"
+        "近く",
+        "支店",
+        "言う"
       ]
     },
     {
-      "id": "kr:n3:157",
+      "id": "kr:n3:1074",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はこ",
-        "あさ",
-        "レジ"
+        "じかん",
+        "きょう",
+        "つれる"
       ]
     },
     {
@@ -87,33 +136,34 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "うしろ",
+        "やめる",
         "おおい",
         "あける"
+      ]
+    },
+    {
+      "id": "pp:n5:326",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "クリーム",
+        "成るべく",
+        "思い出す"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-110",
     "gram:n3-ni-yoreba",
-    "gram:sou-da-1"
+    "gram:sou-da-1",
+    "gram:gp-45"
   ],
   "drills": [
     {
-      "pattern": "gram:gp-42",
+      "pattern": "gram:n3-n-datte",
       "examples": [
-        "sent:tatoeba-227007",
-        "sent:tatoeba-994640",
-        "sent:tatoeba-229458"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:owaru",
-      "examples": [
-        "sent:tatoeba-228649",
-        "sent:tatoeba-8727067",
-        "sent:tatoeba-10206436"
+        "sent:tatoeba-9240812",
+        "sent:tatoeba-11016376",
+        "sent:tatoeba-234696"
       ],
       "strand": "language-focused"
     },
@@ -123,6 +173,15 @@
         "sent:tatoeba-199355",
         "sent:tatoeba-187786",
         "sent:tatoeba-160737"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-142",
+      "examples": [
+        "sent:tatoeba-78454",
+        "sent:tatoeba-137678",
+        "sent:tatoeba-83221"
       ],
       "strand": "language-focused"
     }
@@ -145,6 +204,21 @@
     },
     {
       "prompt": {
+        "pt-BR": "Algum dia vou correr de novo como o vento."
+      },
+      "answer_key": "またいつか風のように走るんだ。",
+      "accepted_variants": [
+        "またいつかかぜのようにはしるんだ",
+        "またいつかかぜのようにはしるんだ。",
+        "またいつか風のように走るんだ",
+        "またいつか風のように走るんだ。"
+      ],
+      "sentence": "sent:tatoeba-4930",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
         "pt-BR": "Esperei mais de duas horas."
       },
       "answer_key": "私は二時間以上も待った。",
@@ -159,23 +233,6 @@
       "sentence": "sent:tatoeba-154767",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Hoje estou com um pouco de dor de cabeça."
-      },
-      "answer_key": "今日はちょっと頭が痛いの。",
-      "accepted_variants": [
-        "きょうはちょっとあたまがいたいの",
-        "きょうはちょっとあたまがいたいの。",
-        "きょうわちょっとあたまがいたいの",
-        "きょうわちょっとあたまがいたいの。",
-        "今日はちょっと頭が痛いの",
-        "今日はちょっと頭が痛いの。"
-      ],
-      "sentence": "sent:tatoeba-9777117",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -183,12 +240,12 @@
       "pt-BR": "Um amigo quer marcar alguma coisa. Combine dia e horário."
     },
     "items": [
+      "sent:tatoeba-9777117",
       "sent:tatoeba-171531",
       "sent:tatoeba-1037362",
       "sent:tatoeba-80068",
       "sent:tatoeba-152614",
-      "sent:tatoeba-79537",
-      "sent:tatoeba-196299"
+      "sent:tatoeba-185449"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -196,15 +253,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
-    "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "meaning-input": 25,
+    "meaning-output": 6,
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 27,
     "fluency": 6
   }
 }

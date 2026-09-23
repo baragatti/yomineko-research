@@ -112,18 +112,22 @@ STAGES: list[tuple[str, str, str, tuple[str, ...]]] = [
       "会社", "友達", "兄弟")),
     ("time_plans", "Quando, que horas, combinar", "n5/n4",
      ("明日", "今日", "時間", "曜日", "約束", "会う", "いつ", "週間", "来年", "予定", "午後",
-      "午前", "毎日")),
+      "午前", "毎日",
+      # W32: a live survival term no seed above selects (R87 re-ranks candidates, never creates them)
+      "は火曜日です")),
     ("health", "Emergência e saúde", "n4",
      ("痛い", "病院", "薬", "医者", "熱", "大丈夫", "助ける", "危ない", "怪我", "気分", "風邪")),
     ("past_stories", "Contar o que aconteceu", "n4",
      ("昨日", "初めて", "経験", "旅行", "楽しい", "去年", "ことがある", "思い出")),
     ("politeness", "Pedir, oferecer, agradecer com jeito", "n4",
-     ("いただく", "くださる", "よろしい", "申し訳", "恐れ入る", "お世話", "ございます", "伺う")),
+     ("いただく", "くださる", "よろしい", "申し訳", "恐れ入る", "お世話", "ございます", "伺う",
+      "お願いできますか")),
     ("opinions", "Dizer o que você acha", "n4/n3",
      ("と思う", "だから", "たぶん", "かもしれない", "方がいい", "はず", "理由", "意見",
-      "賛成", "反対")),
+      "賛成", "反対", "ないと思います")),
     ("real_talk", "Conversa de verdade", "n3",
-     ("らしい", "のに", "ながら", "わけ", "みたい", "そうだ", "というのは", "ばかり", "はず")),
+     ("らしい", "のに", "ながら", "わけ", "みたい", "そうだ", "というのは", "ばかり", "はず",
+      "ばよかったのに")),
 ]
 
 # R87 (§3.7) SURVIVAL CORE. Frequency is the SECONDARY axis and §2 already says scenario wins when they
@@ -142,9 +146,28 @@ STAGES: list[tuple[str, str, str, tuple[str, ...]]] = [
 # wearing the same spelling. 円 was tried too and promoted the foreign exchange desk
 # (ドルは円に対して下がった). The survival core is the phrase a stage exists to teach, so it is written
 # as one; the plain words stay in `seeds` above, where frequency ranks them like anything else.
+#
+# W32 authored a core for the other eleven stages (research/derived/pending/speak_survival_cores.json,
+# one `survival_term` per row, each checked to select its own row). Only the terms whose OWN sentence is
+# banked are live here: 9 of the 71 rows. The other 62 wait for their sentences to be ingested
+# (research/derived/pending/w32_layerb_derived.json lists the Layer-B residue that blocks it), because
+# a term without its row promotes whatever else in the bank happens to carry it. Measured when all 71
+# terms were switched on at once: near-duplicate pairs 24 -> 35 (real_talk 1 -> 8 on
+# `みたいですね` / `らしいですね` look-alikes), the R83 spiral shrank in 9 places, and 24 R78 strand
+# ratchets moved the wrong way. Two terms also need re-spelling before they go live, because this
+# matcher cannot reach them: `今何時` and `お勘定` are 3 characters (lemma only) and Sudachi splits
+# them (今|何時, お|勘定); `今何時か` and the lemma `勘定` do reach their rows.
 SURVIVAL_SEEDS: dict[str, tuple[str, ...]] = {
     "shopping": ("いくらですか", "いくらぐらい", "これをください", "それをください", "あれをください",
                  "値段", "会計", "レジ"),
+    "eating": ("お水をください",),
+    "getting_around": ("どのくらいかかり",),
+    "about_you": ("ご出身は",),
+    "time_plans": ("は火曜日です",),
+    "health": ("助けてください",),
+    "politeness": ("お願いできますか",),
+    "opinions": ("ないと思います",),
+    "real_talk": ("ながら話し", "ばよかったのに"),
 }
 
 # Set expressions the analyzer mis-lemmatises, because they are frozen forms rather than live grammar:
@@ -259,7 +282,11 @@ def main() -> int:
     for sid, kid in con.execute("SELECT sentence_id,kanji_id FROM sentence_kanji"):
         if sid in sents:
             sk.setdefault(sid, []).append(kid)
-    kanji = {kid: ch for kid, ch in con.execute("SELECT id,character FROM kanji")}
+    # Only the levelled kanji are exported (corpus/kanji, 2,131 of the 10,384 index rows), so only
+    # they can be a `kanji_recognition` ref: the first rebuild over the W13 bank listed 鞄, 喧 and 嘩,
+    # which resolve to nothing in the export (validate_graph_edges reference_integrity).
+    kanji = {kid: ch for kid, ch in con.execute(
+        "SELECT id,character FROM kanji WHERE level IS NOT NULL")}
     # sentence.pt is empty for all 5,565 rows; the pt-BR translation lives in localized_text.
     ptx = {sid: val for sid, val in con.execute(
         "SELECT entity_id,value FROM localized_text WHERE entity_type='sentence' "
@@ -289,6 +316,16 @@ def main() -> int:
                  if sid not in used and seed_hit(sid, s["jp"], seeds)]
         stage_src: list[tuple[str, int]] = []      # R85: (source, id) of this stage's picks
         stage_units: list[dict] = []
+        # R87, one phrase per survival term per stage. A term names ONE act; once the stage has taught
+        # it, further sentences carrying the same term rank like anything else. Without this the
+        # survival bucket packs every look-alike into the opening unit: W32's `ながら話し` put
+        # お茶を飲みながら話しましょう and お茶を飲みながら話しませんか side by side, and real_talk's
+        # near-duplicate pairs went 1 -> 7.
+        covered: set[str] = set()
+
+        def terms_of(s: dict) -> set[str]:
+            lems = slem.get(s["id"], ())
+            return {k for k in survival if k in lems or (len(k) >= 4 and k in s["jp"])}
 
         for u in range(1, UNITS_PER_STAGE + 1):
             # re-rank every unit: "new" is relative to the CURRENT known set, which just grew
@@ -311,7 +348,7 @@ def main() -> int:
                 #   3 = teaches nothing new -> filler, only if a unit cannot be filled otherwise
                 if s["chunk"]:
                     bucket = 0
-                elif seed_hit(s["id"], s["jp"], survival):
+                elif terms_of(s) - covered:
                     bucket = 1
                 else:
                     bucket = 2 if new else 3
@@ -329,12 +366,16 @@ def main() -> int:
             picked, new_ids = [], []
             local: set[int] = set()
             local_text: set[str] = set()
-            for _, s, new in scored:
+            unit_terms: set[str] = set()
+            for key, s, new in scored:
                 if len(picked) >= PHRASES_PER_UNIT:
                     break
                 text = PUNCT_RE.sub("", s["jp"])
                 if text in local_text:
                     continue                                   # R86, within this unit
+                fresh = terms_of(s) - covered - unit_terms if key[1] == 1 else set()
+                if key[1] == 1 and not fresh:
+                    continue                                   # R87: act already taught here
                 # R85: refuse a fifth phrase out of the same contiguous run of source ids.
                 m = SRC_RE.match(s["slug"])
                 if m:
@@ -349,6 +390,7 @@ def main() -> int:
                 if len(still) > MAX_NEW:
                     continue
                 picked.append(s)
+                unit_terms |= fresh
                 local.update(still)
                 local_text.add(text)
                 if m:
@@ -358,12 +400,16 @@ def main() -> int:
                 break
             # A unit that introduces nothing and teaches no set phrase is the stage telling us it is
             # exhausted. Emitting it would pad the path with review disguised as progress.
-            if not local and not any(s["chunk"] for s in picked):
+            # A survival phrase (R87) is not padding: it is the act the stage exists to teach, and a
+            # late stage can open on survival phrases built only from known words (real_talk came out
+            # with 0 units when its W32 core went live, because of exactly that).
+            if not local and not unit_terms and not any(s["chunk"] for s in picked):
                 break
             for s in picked:
                 used.add(s["id"])
                 used_text.add(PUNCT_RE.sub("", s["jp"]))
             known.update(local)
+            covered |= unit_terms
 
             # A form must be at least 2 characters to count as a pattern. Single-kana forms (く, に,
             # ら, し, さ) occur in almost every Japanese sentence, so matching on them attached the same
@@ -438,6 +484,12 @@ def main() -> int:
                 # say what it holds. The recognition-only policy is unchanged and still correct.
                 "kanji_recognition": sign[:KANJI_PER_UNIT],
                 "shadowing": [s["slug"] for s in picked],
+                # W30 (D10): every phrase the unit teaches is one deck:phrases card. `production` needs
+                # the pt-BR translation as its prompt, so an untranslated phrase gets no card;
+                # `listening` needs a recording and joins when `audio` stops being "pending".
+                "srs": {"introduces_cards": [
+                    {"deck": "deck:phrases", "item": s["slug"], "card_types": ["production"]}
+                    for s in picked if ptx.get(s["id"])]},
                 "audio": "pending",
                 "real_phrases": sum(1 for s in picked if not s["ai"]),
                 "cumulative_known_vocab": len(known),
@@ -450,8 +502,10 @@ def main() -> int:
 
         if len(stage_units) < UNITS_PER_STAGE:
             shortfall.append({"stage": slug, "units": len(stage_units), "want": UNITS_PER_STAGE})
+        # R87 published, so validate_speaking_path.py can check the core reached the opening unit
+        # from the export alone.
         course.append({"slug": f"speak:{slug}", "order": ord_, "title": {"pt-BR": title},
-                       "approx_band": band, "units": stage_units})
+                       "approx_band": band, "survival_core": list(survival), "units": stage_units})
 
     total_u = sum(len(s["units"]) for s in course)
     total_p = sum(len(u["say_now"]) for s in course for u in s["units"])

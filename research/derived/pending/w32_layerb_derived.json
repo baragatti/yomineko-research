@@ -1,0 +1,3836 @@
+{
+ "unit": "W32",
+ "kind": "derived (mechanical) Layer-B for the unbanked survival-core rows + register re-check",
+ "generated_by": "scripts/derive_w32_layerb.py",
+ "inputs": [
+  "research/derived/pending/speak_survival_cores.json",
+  "research/derived/mined_layerb_n3/batch-*.json (verified rulings, reused)"
+ ],
+ "status": "NOT ingestable: every row carries residue (structure paragraph + translation_literal are never derived); the authoring pass fills `residue`, then scripts/ingest/ingest_mined_stages.py ingests",
+ "counts": {
+  "particle:author": 25,
+  "particle:template": 71,
+  "sentences": 62,
+  "skipped:already-banked": 9,
+  "token:ambiguous-verify": 9,
+  "token:unique-accept": 29,
+  "token:verified": 120
+ },
+ "residue_counts": {
+  "particle:explanation": 25,
+  "structure_explanation_pt": 62,
+  "token:ambiguous-verify": 9,
+  "translation_literal": 62
+ },
+ "ingest_ready": 0,
+ "register_check": {
+  "rows": 71,
+  "agrees_with_table": 71,
+  "allowed_by_today_filter": 71,
+  "disagreements": [],
+  "rejected": []
+ },
+ "sentences": [
+  {
+   "key": "9699149",
+   "slug": "sent:tatoeba-9699149",
+   "stage": "arrival",
+   "function": "greet-on-first-meeting",
+   "jp": "はじめまして。",
+   "en": "Nice to meet you.",
+   "pt": "Muito prazer.",
+   "tatoeba_id": "9699149",
+   "generated": false,
+   "clause_structure_predicted": "coordinate",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "はじめ",
+     "lemma": "はじめる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "começar, iniciar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#2:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "806267",
+   "slug": "sent:tatoeba-806267",
+   "stage": "arrival",
+   "function": "close-an-introduction",
+   "jp": "よろしくお願いします。",
+   "en": "Thank you in advance.",
+   "pt": "Desde já, obrigado.",
+   "tatoeba_id": "806267",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "よろしく",
+     "lemma": "よろしく",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "conto com você"
+    },
+    {
+     "position": 2,
+     "surface": "願い",
+     "lemma": "願う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "pedir, solicitar"
+    },
+    {
+     "position": 3,
+     "surface": "し",
+     "lemma": "する",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "fazer"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "12889995",
+   "slug": "sent:tatoeba-12889995",
+   "stage": "arrival",
+   "function": "ask-someones-name",
+   "jp": "お名前は何ですか？",
+   "en": "What is your name?",
+   "pt": "Como você se chama?",
+   "tatoeba_id": "12889995",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 1,
+     "surface": "名前",
+     "lemma": "名前",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "nome"
+    },
+    {
+     "position": 3,
+     "surface": "何",
+     "lemma": "何",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "o que"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta お名前 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "349070",
+   "slug": "sent:tatoeba-349070",
+   "stage": "arrival",
+   "function": "signal-non-comprehension",
+   "jp": "分かりません。",
+   "en": "I don't understand.",
+   "pt": "Não entendi.",
+   "tatoeba_id": "349070",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "分かり",
+     "lemma": "分かる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "entender, saber"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "214165",
+   "slug": "sent:tatoeba-214165",
+   "stage": "arrival",
+   "function": "ask-for-repetition",
+   "jp": "もう一度お願いします。",
+   "en": "I beg your pardon?",
+   "pt": "Mais uma vez, por favor.",
+   "tatoeba_id": "214165",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "もう一度",
+     "lemma": "もう一度",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "mais uma vez"
+    },
+    {
+     "position": 2,
+     "surface": "願い",
+     "lemma": "願う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "pedir, solicitar"
+    },
+    {
+     "position": 3,
+     "surface": "し",
+     "lemma": "する",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "fazer"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "8795518",
+   "slug": "sent:tatoeba-8795518",
+   "stage": "arrival",
+   "function": "ask-for-slower-speech",
+   "jp": "ゆっくり話してください。",
+   "en": "Please speak slowly.",
+   "pt": "Fale devagar, por favor.",
+   "tatoeba_id": "8795518",
+   "generated": false,
+   "clause_structure_predicted": "imperative",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "ゆっくり",
+     "lemma": "ゆっくり",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "devagar; com calma"
+    },
+    {
+     "position": 1,
+     "surface": "話し",
+     "lemma": "話す",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "falar, conversar"
+    },
+    {
+     "position": 3,
+     "surface": "ください",
+     "lemma": "くださる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "por favor (faça)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga 話す ao que vem depois (くださる) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "12890046",
+   "slug": "sent:tatoeba-12890046",
+   "stage": "eating",
+   "function": "ask-for-the-menu",
+   "jp": "メニューをください。",
+   "en": "Menu, please!",
+   "pt": "O cardápio, por favor.",
+   "tatoeba_id": "12890046",
+   "generated": false,
+   "clause_structure_predicted": "imperative",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "メニュー",
+     "lemma": "メニュー",
+     "pos": "noun",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "cardápio"
+    },
+    {
+     "position": 2,
+     "surface": "ください",
+     "lemma": "くださる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "por favor (faça)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca メニュー como o objeto direto de くださる, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#0:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "188145",
+   "slug": "sent:tatoeba-188145",
+   "stage": "eating",
+   "function": "ask-what-is-good",
+   "jp": "何がおいしいですか。",
+   "en": "What do you suggest?",
+   "pt": "O que é gostoso aqui?",
+   "tatoeba_id": "188145",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "何",
+     "lemma": "何",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "o que"
+    },
+    {
+     "position": 2,
+     "surface": "おいしい",
+     "lemma": "おいしい",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "gostoso, saboroso"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca 何 como o sujeito de おいしい, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "3452051",
+   "slug": "sent:tatoeba-3452051",
+   "stage": "eating",
+   "function": "ask-for-the-bill",
+   "jp": "お勘定お願いします。",
+   "en": "Check, please.",
+   "pt": "A conta, por favor.",
+   "tatoeba_id": "3452051",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 1,
+     "surface": "勘定",
+     "lemma": "勘定",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "conta (a pagar)"
+    },
+    {
+     "position": 3,
+     "surface": "願い",
+     "lemma": "願う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "pedir, solicitar"
+    },
+    {
+     "position": 4,
+     "surface": "し",
+     "lemma": "する",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "fazer"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "226787",
+   "slug": "sent:tatoeba-226787",
+   "stage": "eating",
+   "function": "state-a-dietary-restriction",
+   "jp": "お肉は食べられません。",
+   "en": "I can't eat meat.",
+   "pt": "Eu não como carne.",
+   "tatoeba_id": "226787",
+   "generated": false,
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 1,
+     "surface": "肉",
+     "lemma": "肉",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "carne"
+    },
+    {
+     "position": 3,
+     "surface": "食べ",
+     "lemma": "食べる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "comer"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta お肉 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "137275",
+   "slug": "sent:tatoeba-137275",
+   "stage": "eating",
+   "function": "compliment-the-food",
+   "jp": "大変おいしいですよ。",
+   "en": "It's really good.",
+   "pt": "Está muito bom mesmo.",
+   "tatoeba_id": "137275",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "大変",
+     "lemma": "大変",
+     "pos": "adverb",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "muito, tremendamente"
+    },
+    {
+     "position": 1,
+     "surface": "おいしい",
+     "lemma": "おいしい",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "gostoso, saboroso"
+    }
+   ],
+   "particles": [
+    {
+     "position": 3,
+     "particle": "よ",
+     "function_type": "sentence-final",
+     "function_pt": "partícula final de ênfase",
+     "function_status": "bank-modal",
+     "explanation_pt": "よ no fim passa a informação ao ouvinte com ênfase, como quem diz 'olha' ou 'viu'.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "3549484",
+   "slug": "sent:tatoeba-3549484",
+   "stage": "eating",
+   "function": "ask-for-an-english-menu",
+   "jp": "英語のメニューはありますか？",
+   "en": "Do you have a menu in English?",
+   "pt": "Vocês têm cardápio em inglês?",
+   "tatoeba_id": "3549484",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "英語",
+     "lemma": "英語",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "inglês (idioma)"
+    },
+    {
+     "position": 2,
+     "surface": "メニュー",
+     "lemma": "メニュー",
+     "pos": "noun",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "cardápio"
+    },
+    {
+     "position": 4,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": "の liga 英語 a メニュー e junta os dois num bloco só, em que メニュー é o núcleo e 英語 o modificador.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta メニュー como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 6,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#2:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "188894",
+   "slug": "sent:tatoeba-188894",
+   "stage": "getting_around",
+   "function": "ask-where-something-is",
+   "jp": "駅はどこですか。",
+   "en": "Where is the railroad station?",
+   "pt": "Onde fica a estação?",
+   "tatoeba_id": "188894",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "駅",
+     "lemma": "駅",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "estação"
+    },
+    {
+     "position": 2,
+     "surface": "どこ",
+     "lemma": "どこ",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "onde"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 駅 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "201726",
+   "slug": "sent:tatoeba-201726",
+   "stage": "getting_around",
+   "function": "ask-where-the-toilet-is",
+   "jp": "トイレはどこですか。",
+   "en": "Where is the bathroom?",
+   "pt": "Onde fica o banheiro?",
+   "tatoeba_id": "201726",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "トイレ",
+     "lemma": "トイレ",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "banheiro"
+    },
+    {
+     "position": 2,
+     "surface": "どこ",
+     "lemma": "どこ",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "onde"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta トイレ como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "142095",
+   "slug": "sent:tatoeba-142095",
+   "stage": "getting_around",
+   "function": "ask-where-to-buy-a-ticket",
+   "jp": "切符はどこで買うのですか。",
+   "en": "Where can I get a ticket?",
+   "pt": "Onde eu compro a passagem?",
+   "tatoeba_id": "142095",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "切符",
+     "lemma": "切符",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "bilhete, passagem"
+    },
+    {
+     "position": 2,
+     "surface": "どこ",
+     "lemma": "どこ",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "onde"
+    },
+    {
+     "position": 4,
+     "surface": "買う",
+     "lemma": "買う",
+     "pos": "verb",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "comprar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 切符 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "で",
+     "function_type": "case",
+     "function_pt": "partícula de lugar da ação",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "の",
+     "function_type": "nominalizer",
+     "function_pt": "nominalizador",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 7,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#3:explanation",
+    "particle#5:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "200960",
+   "slug": "sent:tatoeba-200960",
+   "stage": "getting_around",
+   "function": "ask-where-to-change-trains",
+   "jp": "どこで乗り換えるのでしょうか。",
+   "en": "Where do I have to change trains?",
+   "pt": "Onde eu troco de trem?",
+   "tatoeba_id": "200960",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "どこ",
+     "lemma": "どこ",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "onde"
+    },
+    {
+     "position": 2,
+     "surface": "乗り換える",
+     "lemma": "乗り換える",
+     "pos": "verb",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "trocar de (trem/transporte), baldear"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "で",
+     "function_type": "case",
+     "function_pt": "partícula de lugar da ação",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 3,
+     "particle": "の",
+     "function_type": "nominalizer",
+     "function_pt": "nominalizador",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation",
+    "particle#3:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "223341",
+   "slug": "sent:tatoeba-223341",
+   "stage": "getting_around",
+   "function": "check-a-vehicles-destination",
+   "jp": "このバスは美術館まで行きますか。",
+   "en": "Does this bus go to the museum?",
+   "pt": "Este ônibus vai até o museu?",
+   "tatoeba_id": "223341",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "この",
+     "lemma": "この",
+     "pos": "adnominal",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "este, esse"
+    },
+    {
+     "position": 1,
+     "surface": "バス",
+     "lemma": "バス",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "ônibus"
+    },
+    {
+     "position": 3,
+     "surface": "美術館",
+     "lemma": "美術館",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "museu de arte"
+    },
+    {
+     "position": 5,
+     "surface": "行き",
+     "lemma": "行く",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ir"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta このバス como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "まで",
+     "function_type": "adverbial",
+     "function_pt": "まで de limite espacial ('até')",
+     "function_status": "occurrence-rule",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 7,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#4:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "203703",
+   "slug": "sent:tatoeba-203703",
+   "stage": "getting_around",
+   "function": "ask-for-a-taxi",
+   "jp": "タクシーを呼んで下さい。",
+   "en": "Please call a taxi for me.",
+   "pt": "Chame um táxi, por favor.",
+   "tatoeba_id": "203703",
+   "generated": false,
+   "clause_structure_predicted": "imperative",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "タクシー",
+     "lemma": "タクシー",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "táxi"
+    },
+    {
+     "position": 2,
+     "surface": "呼ん",
+     "lemma": "呼ぶ",
+     "pos": "verb",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "chamar"
+    },
+    {
+     "position": 4,
+     "surface": "下さい",
+     "lemma": "下さる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "por favor (faça)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca タクシー como o objeto direto de 呼ぶ, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "で",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#3:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "2213120",
+   "slug": "sent:tatoeba-2213120",
+   "stage": "lodging",
+   "function": "state-you-have-a-reservation",
+   "jp": "予約してあります。",
+   "en": "I have a reservation.",
+   "pt": "Eu tenho uma reserva.",
+   "tatoeba_id": "2213120",
+   "generated": false,
+   "clause_structure_predicted": "coordinate",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "予約",
+     "lemma": "予約",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "reserva"
+    },
+    {
+     "position": 1,
+     "surface": "し",
+     "lemma": "する",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "fazer"
+    },
+    {
+     "position": 3,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga する ao que vem depois (ある) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "235430",
+   "slug": "sent:tatoeba-235430",
+   "stage": "lodging",
+   "function": "ask-if-there-is-a-room",
+   "jp": "２人部屋はありますか。",
+   "en": "Do you have a double room?",
+   "pt": "Vocês têm quarto para duas pessoas?",
+   "tatoeba_id": "235430",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "２人",
+     "lemma": "2人",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "duas pessoas"
+    },
+    {
+     "position": 1,
+     "surface": "部屋",
+     "lemma": "部屋",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quarto, cômodo"
+    },
+    {
+     "position": 3,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 部屋 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "11795598",
+   "slug": "sent:tatoeba-11795598",
+   "stage": "lodging",
+   "function": "ask-to-see-the-room",
+   "jp": "部屋を見てみたいです。",
+   "en": "I'd like to see the room.",
+   "pt": "Eu queria ver o quarto.",
+   "tatoeba_id": "11795598",
+   "generated": false,
+   "clause_structure_predicted": "coordinate",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "部屋",
+     "lemma": "部屋",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quarto, cômodo"
+    },
+    {
+     "position": 2,
+     "surface": "見",
+     "lemma": "見る",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ver, olhar"
+    },
+    {
+     "position": 4,
+     "surface": "み",
+     "lemma": "みる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "experimentar, tentar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca 部屋 como o objeto direto de 見る, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga 見る ao que vem depois (みる) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "193308",
+   "slug": "sent:tatoeba-193308",
+   "stage": "lodging",
+   "function": "ask-for-a-cheaper-room",
+   "jp": "もっと安い部屋はありますか。",
+   "en": "Do you have a cheaper room?",
+   "pt": "Tem um quarto mais barato?",
+   "tatoeba_id": "193308",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "もっと",
+     "lemma": "もっと",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "mais"
+    },
+    {
+     "position": 1,
+     "surface": "安い",
+     "lemma": "安い",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "barato"
+    },
+    {
+     "position": 2,
+     "surface": "部屋",
+     "lemma": "部屋",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quarto, cômodo"
+    },
+    {
+     "position": 4,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 3,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta もっと安い部屋 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 6,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "226801",
+   "slug": "sent:tatoeba-226801",
+   "stage": "lodging",
+   "function": "report-a-room-problem",
+   "jp": "お湯が出ません。",
+   "en": "The hot water isn't running.",
+   "pt": "Não está saindo água quente.",
+   "tatoeba_id": "226801",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 1,
+     "surface": "湯",
+     "lemma": "湯",
+     "pos": "noun",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "água quente"
+    },
+    {
+     "position": 3,
+     "surface": "出",
+     "lemma": "出る",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "sair"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca お湯 como o sujeito de 出る, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#1:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "10647148",
+   "slug": "sent:tatoeba-10647148",
+   "stage": "lodging",
+   "function": "report-a-lost-document",
+   "jp": "パスポートをなくしました。",
+   "en": "I've lost my passport.",
+   "pt": "Eu perdi meu passaporte.",
+   "tatoeba_id": "10647148",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "パスポート",
+     "lemma": "パスポート",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "passaporte"
+    },
+    {
+     "position": 2,
+     "surface": "なくし",
+     "lemma": "なくす",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "perder, extraviar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca パスポート como o objeto direto de なくす, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "186534",
+   "slug": "sent:tatoeba-186534",
+   "stage": "lodging",
+   "function": "ask-to-leave-luggage",
+   "jp": "荷物を預かって欲しいのですが。",
+   "en": "Would you keep this baggage, please?",
+   "pt": "Vocês podem guardar minha bagagem?",
+   "tatoeba_id": "186534",
+   "generated": false,
+   "clause_structure_predicted": "coordinate",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "荷物",
+     "lemma": "荷物",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "bagagem"
+    },
+    {
+     "position": 2,
+     "surface": "預かっ",
+     "lemma": "預かる",
+     "pos": "verb",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "registry",
+     "gloss_pt": "tomar conta de; guardar (para alguém); ficar com (algo de outra pessoa)"
+    },
+    {
+     "position": 4,
+     "surface": "欲しい",
+     "lemma": "欲しい",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "querer, desejar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca 荷物 como o objeto direto de 預かる, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga 預かる ao que vem depois (欲しい) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "の",
+     "function_type": "nominalizer",
+     "function_pt": "nominalizador",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 7,
+     "particle": "が",
+     "function_type": "conjunctive",
+     "function_pt": "conjunção adversativa ('mas')",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#2:ambiguous-verify",
+    "particle#5:explanation",
+    "particle#7:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "176088",
+   "slug": "sent:tatoeba-176088",
+   "stage": "lodging",
+   "function": "call-the-police",
+   "jp": "警察を呼んで下さい。",
+   "en": "Please call the police.",
+   "pt": "Chame a polícia, por favor.",
+   "tatoeba_id": "176088",
+   "generated": false,
+   "clause_structure_predicted": "imperative",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "警察",
+     "lemma": "警察",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "polícia"
+    },
+    {
+     "position": 2,
+     "surface": "呼ん",
+     "lemma": "呼ぶ",
+     "pos": "verb",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "chamar"
+    },
+    {
+     "position": 4,
+     "surface": "下さい",
+     "lemma": "下さる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "por favor (faça)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca 警察 como o objeto direto de 呼ぶ, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "で",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#3:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "227125",
+   "slug": "sent:tatoeba-227125",
+   "stage": "about_you",
+   "function": "ask-what-someone-does",
+   "jp": "お仕事は何ですか。",
+   "en": "What do you do?",
+   "pt": "Você trabalha com o quê?",
+   "tatoeba_id": "227125",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 1,
+     "surface": "仕事",
+     "lemma": "仕事",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "trabalho, serviço"
+    },
+    {
+     "position": 3,
+     "surface": "何",
+     "lemma": "何",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "o que"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta お仕事 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "186941",
+   "slug": "sent:tatoeba-186941",
+   "stage": "about_you",
+   "function": "state-family-size",
+   "jp": "家族は４人です。",
+   "en": "We are a family of four.",
+   "pt": "Minha família tem quatro pessoas.",
+   "tatoeba_id": "186941",
+   "generated": false,
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "家族",
+     "lemma": "家族",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "família"
+    },
+    {
+     "position": 2,
+     "surface": "４",
+     "lemma": "4",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "quatro"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 家族 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "154700",
+   "slug": "sent:tatoeba-154700",
+   "stage": "about_you",
+   "function": "state-what-you-like",
+   "jp": "私は日本の料理が好きです。",
+   "en": "I like Japanese dishes.",
+   "pt": "Eu gosto de comida japonesa.",
+   "tatoeba_id": "154700",
+   "generated": false,
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "私",
+     "lemma": "私",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "eu"
+    },
+    {
+     "position": 2,
+     "surface": "日本",
+     "lemma": "日本",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "Japão"
+    },
+    {
+     "position": 4,
+     "surface": "料理",
+     "lemma": "料理",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "comida, culinária"
+    },
+    {
+     "position": 6,
+     "surface": "好き",
+     "lemma": "好き",
+     "pos": "na-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "gostar de, preferido"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 私 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "の",
+     "function_type": "case",
+     "function_pt": "partícula de ligação/posse",
+     "function_status": "bank-modal",
+     "explanation_pt": "の liga 日本 a 料理 e junta os dois num bloco só, em que 料理 é o núcleo e 日本 o modificador.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca 料理 como o sujeito de 好き, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "124907",
+   "slug": "sent:tatoeba-124907",
+   "stage": "about_you",
+   "function": "state-where-you-live",
+   "jp": "田舎に住んでいます。",
+   "en": "I live in the country.",
+   "pt": "Eu moro no interior.",
+   "tatoeba_id": "124907",
+   "generated": false,
+   "clause_structure_predicted": "coordinate",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "田舎",
+     "lemma": "田舎",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "campo, interior, zona rural"
+    },
+    {
+     "position": 2,
+     "surface": "住ん",
+     "lemma": "住む",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "morar, residir"
+    },
+    {
+     "position": 4,
+     "surface": "い",
+     "lemma": "いる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "estar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "に",
+     "function_type": "case",
+     "function_pt": "partícula de destino/direção",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 3,
+     "particle": "で",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation",
+    "particle#3:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "237476",
+   "slug": "sent:tatoeba-237476",
+   "stage": "about_you",
+   "function": "ask-about-family",
+   "jp": "ご家族はいますか。",
+   "en": "Do you have a family?",
+   "pt": "Você tem família?",
+   "tatoeba_id": "237476",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 1,
+     "surface": "家族",
+     "lemma": "家族",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "família"
+    },
+    {
+     "position": 3,
+     "surface": "い",
+     "lemma": "いる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "estar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta ご家族 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "172526",
+   "slug": "sent:tatoeba-172526",
+   "stage": "time_plans",
+   "function": "ask-the-time",
+   "jp": "今何時か分かりますか。",
+   "en": "Have you got the time?",
+   "pt": "Você sabe que horas são?",
+   "tatoeba_id": "172526",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "今",
+     "lemma": "今",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "agora"
+    },
+    {
+     "position": 1,
+     "surface": "何時",
+     "lemma": "何時",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "que horas"
+    },
+    {
+     "position": 3,
+     "surface": "分かり",
+     "lemma": "分かる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "entender, saber"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "か",
+     "function_type": "adverbial",
+     "function_pt": "partícula de indefinição",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#2:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "189309",
+   "slug": "sent:tatoeba-189309",
+   "stage": "time_plans",
+   "function": "ask-when-something-starts",
+   "jp": "映画は何時からですか。",
+   "en": "When does the movie start?",
+   "pt": "O filme começa a que horas?",
+   "tatoeba_id": "189309",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "映画",
+     "lemma": "映画",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "filme, cinema"
+    },
+    {
+     "position": 2,
+     "surface": "何時",
+     "lemma": "何時",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "que horas"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 映画 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "から",
+     "function_type": "case",
+     "function_pt": "partícula de origem/ponto de partida",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#3:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "1171888",
+   "slug": "sent:tatoeba-1171888",
+   "stage": "time_plans",
+   "function": "ask-until-when-something-is-open",
+   "jp": "何時まで開いてますか。",
+   "en": "How late are you open?",
+   "pt": "Fica aberto até que horas?",
+   "tatoeba_id": "1171888",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "何時",
+     "lemma": "何時",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "registry",
+     "gloss_pt": "quando"
+    },
+    {
+     "position": 2,
+     "surface": "開い",
+     "lemma": "開く",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "abrir, abrir-se"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "まで",
+     "function_type": "adverbial",
+     "function_pt": "limite temporal ('até')",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "80332",
+   "slug": "sent:tatoeba-80332",
+   "stage": "time_plans",
+   "function": "propose-a-meeting",
+   "jp": "明日駅で会いましょう。",
+   "en": "I'll meet you down at the station tomorrow.",
+   "pt": "Amanhã a gente se encontra na estação.",
+   "tatoeba_id": "80332",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "明日",
+     "lemma": "明日",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "amanhã"
+    },
+    {
+     "position": 1,
+     "surface": "駅",
+     "lemma": "駅",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "estação"
+    },
+    {
+     "position": 3,
+     "surface": "会い",
+     "lemma": "会う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "encontrar-se com"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "で",
+     "function_type": "case",
+     "function_pt": "partícula de lugar da ação",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#2:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "235793",
+   "slug": "sent:tatoeba-235793",
+   "stage": "time_plans",
+   "function": "agree-on-an-hour",
+   "jp": "１時に会いましょう。",
+   "en": "Let's meet at one o'clock.",
+   "pt": "Vamos nos encontrar à uma hora.",
+   "tatoeba_id": "235793",
+   "generated": false,
+   "clause_structure_predicted": "subordinate-time",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "１",
+     "lemma": "1",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "um"
+    },
+    {
+     "position": 1,
+     "surface": "時",
+     "lemma": "時",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "hora, momento"
+    },
+    {
+     "position": 3,
+     "surface": "会い",
+     "lemma": "会う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "encontrar-se com"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "に",
+     "function_type": "case",
+     "function_pt": "partícula de destino/direção",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#2:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "190738",
+   "slug": "sent:tatoeba-190738",
+   "stage": "health",
+   "function": "ask-for-a-doctor",
+   "jp": "医者を呼んで下さい。",
+   "en": "Please call me a doctor.",
+   "pt": "Chame um médico, por favor.",
+   "tatoeba_id": "190738",
+   "generated": false,
+   "clause_structure_predicted": "imperative",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "医者",
+     "lemma": "医者",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "médico"
+    },
+    {
+     "position": 2,
+     "surface": "呼ん",
+     "lemma": "呼ぶ",
+     "pos": "verb",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "chamar"
+    },
+    {
+     "position": 4,
+     "surface": "下さい",
+     "lemma": "下さる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "por favor (faça)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca 医者 como o objeto direto de 呼ぶ, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 3,
+     "particle": "で",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#3:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "752231",
+   "slug": "sent:tatoeba-752231",
+   "stage": "health",
+   "function": "say-you-feel-unwell",
+   "jp": "気分が悪いです。",
+   "en": "I don't feel so good.",
+   "pt": "Estou passando mal.",
+   "tatoeba_id": "752231",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "気分",
+     "lemma": "気分",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "humor; disposição"
+    },
+    {
+     "position": 2,
+     "surface": "悪い",
+     "lemma": "悪い",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ruim, mau"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca 気分 como o sujeito de 悪い, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "10008425",
+   "slug": "sent:tatoeba-10008425",
+   "stage": "health",
+   "function": "say-where-it-hurts",
+   "jp": "お腹が痛いです。",
+   "en": "My stomach hurts.",
+   "pt": "Está doendo a barriga.",
+   "tatoeba_id": "10008425",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "お腹",
+     "lemma": "お腹",
+     "pos": "noun",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "barriga / estômago"
+    },
+    {
+     "position": 2,
+     "surface": "痛い",
+     "lemma": "痛い",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "dolorido, que dói"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca お腹 como o sujeito de 痛い, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#0:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "10647294",
+   "slug": "sent:tatoeba-10647294",
+   "stage": "health",
+   "function": "ask-where-the-hospital-is",
+   "jp": "一番近い病院はどこですか？",
+   "en": "Where's the nearest hospital?",
+   "pt": "Onde fica o hospital mais perto?",
+   "tatoeba_id": "10647294",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "一番",
+     "lemma": "一番",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "o mais, número um"
+    },
+    {
+     "position": 1,
+     "surface": "近い",
+     "lemma": "近い",
+     "pos": "i-adjective",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "perto"
+    },
+    {
+     "position": 2,
+     "surface": "病院",
+     "lemma": "病院",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "hospital"
+    },
+    {
+     "position": 4,
+     "surface": "どこ",
+     "lemma": "どこ",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "onde"
+    }
+   ],
+   "particles": [
+    {
+     "position": 3,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 一番近い病院 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 6,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#1:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "200568",
+   "slug": "sent:tatoeba-200568",
+   "stage": "health",
+   "function": "say-you-have-a-fever",
+   "jp": "とても熱があります。",
+   "en": "I feel very feverish.",
+   "pt": "Estou com muita febre.",
+   "tatoeba_id": "200568",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "とても",
+     "lemma": "とても",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "muito"
+    },
+    {
+     "position": 1,
+     "surface": "熱",
+     "lemma": "熱",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "febre"
+    },
+    {
+     "position": 3,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca 熱 como o sujeito de ある, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "gen-1c83f478ab11",
+   "slug": "sent:gen-1c83f478ab11",
+   "stage": "health",
+   "function": "ask-for-medicine",
+   "jp": "薬をください",
+   "en": "Some medicine, please.",
+   "pt": "Um remédio, por favor.",
+   "tatoeba_id": null,
+   "generated": true,
+   "clause_structure_predicted": "imperative",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "薬",
+     "lemma": "薬",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "remédio"
+    },
+    {
+     "position": 2,
+     "surface": "ください",
+     "lemma": "くださる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "por favor (faça)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca 薬 como o objeto direto de くださる, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "4751193",
+   "slug": "sent:tatoeba-4751193",
+   "stage": "past_stories",
+   "function": "ask-how-something-went",
+   "jp": "旅行どうでしたか？",
+   "en": "How was your trip?",
+   "pt": "Como foi a viagem?",
+   "tatoeba_id": "4751193",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "旅行",
+     "lemma": "旅行",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "viagem"
+    },
+    {
+     "position": 1,
+     "surface": "どう",
+     "lemma": "どう",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "como, de que jeito"
+    }
+   ],
+   "particles": [
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "122452",
+   "slug": "sent:tatoeba-122452",
+   "stage": "past_stories",
+   "function": "ask-if-it-is-a-first-time",
+   "jp": "日本は初めてですか。",
+   "en": "Is this your first visit to Japan?",
+   "pt": "É a sua primeira vez no Japão?",
+   "tatoeba_id": "122452",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "日本",
+     "lemma": "日本",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "Japão"
+    },
+    {
+     "position": 2,
+     "surface": "初めて",
+     "lemma": "初めて",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "pela primeira vez"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 日本 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "5207944",
+   "slug": "sent:tatoeba-5207944",
+   "stage": "past_stories",
+   "function": "say-you-enjoyed-it",
+   "jp": "楽しかった。",
+   "en": "I had a good time.",
+   "pt": "Foi muito bom.",
+   "tatoeba_id": "5207944",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "楽しかっ",
+     "lemma": "楽しい",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "agradável, divertido"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "921333",
+   "slug": "sent:tatoeba-921333",
+   "stage": "past_stories",
+   "function": "say-you-have-done-something",
+   "jp": "外国に行ったことがあります。",
+   "en": "I have been abroad.",
+   "pt": "Eu já viajei para fora.",
+   "tatoeba_id": "921333",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "外国",
+     "lemma": "外国",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "exterior, país estrangeiro"
+    },
+    {
+     "position": 2,
+     "surface": "行っ",
+     "lemma": "行く",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ir"
+    },
+    {
+     "position": 4,
+     "surface": "こと",
+     "lemma": "こと",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "coisa, fato"
+    },
+    {
+     "position": 6,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "に",
+     "function_type": "case",
+     "function_pt": "partícula de destino/direção",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca 行ったこと como o sujeito de ある, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "122877",
+   "slug": "sent:tatoeba-122877",
+   "stage": "past_stories",
+   "function": "ask-if-someone-has-done-something",
+   "jp": "日光へ行ったことがありますか。",
+   "en": "Have you ever been to Nikko?",
+   "pt": "Você já foi a Nikko?",
+   "tatoeba_id": "122877",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "日光",
+     "lemma": "日光",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "luz do sol; raios de sol"
+    },
+    {
+     "position": 2,
+     "surface": "行っ",
+     "lemma": "行く",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "ir"
+    },
+    {
+     "position": 4,
+     "surface": "こと",
+     "lemma": "こと",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "coisa, fato"
+    },
+    {
+     "position": 6,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "へ",
+     "function_type": "case",
+     "function_pt": "partícula de direção/destino",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca 行ったこと como o sujeito de ある, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 8,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "169967",
+   "slug": "sent:tatoeba-169967",
+   "stage": "past_stories",
+   "function": "describe-a-past-state",
+   "jp": "昨日は暑かった。",
+   "en": "It was hot yesterday.",
+   "pt": "Ontem estava quente.",
+   "tatoeba_id": "169967",
+   "generated": false,
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "昨日",
+     "lemma": "昨日",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "ontem"
+    },
+    {
+     "position": 2,
+     "surface": "暑かっ",
+     "lemma": "暑い",
+     "pos": "i-adjective",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "quente, calorento (clima)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 昨日 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "13117666",
+   "slug": "sent:tatoeba-13117666",
+   "stage": "politeness",
+   "function": "apologise-formally",
+   "jp": "申し訳ありません。",
+   "en": "Please forgive me.",
+   "pt": "Sinto muito mesmo.",
+   "tatoeba_id": "13117666",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "申し訳",
+     "lemma": "申し訳",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "desculpa; justificativa"
+    },
+    {
+     "position": 1,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "226989",
+   "slug": "sent:tatoeba-226989",
+   "stage": "politeness",
+   "function": "take-leave-politely",
+   "jp": "お先に失礼します。",
+   "en": "I'm leaving first.",
+   "pt": "Com licença, vou indo.",
+   "tatoeba_id": "226989",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 1,
+     "surface": "先",
+     "lemma": "先",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "adiante, à frente"
+    },
+    {
+     "position": 3,
+     "surface": "失礼",
+     "lemma": "失礼",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "falta de educação, descortesia"
+    },
+    {
+     "position": 4,
+     "surface": "し",
+     "lemma": "する",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "fazer"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "に",
+     "function_type": "case",
+     "function_pt": "partícula de destino/direção",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#2:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "11041808",
+   "slug": "sent:tatoeba-11041808",
+   "stage": "politeness",
+   "function": "accept-something-humbly",
+   "jp": "これをいただきます。",
+   "en": "I'll take this.",
+   "pt": "Vou levar este.",
+   "tatoeba_id": "11041808",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "これ",
+     "lemma": "これ",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "isto"
+    },
+    {
+     "position": 2,
+     "surface": "いただき",
+     "lemma": "いただく",
+     "pos": "verb",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "receber (humilde)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "を",
+     "function_type": "case",
+     "function_pt": "marcador de objeto direto",
+     "function_status": "bank-modal",
+     "explanation_pt": "を marca これ como o objeto direto de いただく, ou seja, aquilo sobre o que a ação recai.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#2:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "122101",
+   "slug": "sent:tatoeba-122101",
+   "stage": "politeness",
+   "function": "ask-permission-politely",
+   "jp": "入ってもよろしいですか。",
+   "en": "Might I come in?",
+   "pt": "Posso entrar?",
+   "tatoeba_id": "122101",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "入っ",
+     "lemma": "入る",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "entrar"
+    },
+    {
+     "position": 3,
+     "surface": "よろしい",
+     "lemma": "よろしい",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "bom, aceitável (cortês)"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga 入る ao que vem depois (も) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 2,
+     "particle": "も",
+     "function_type": "binding",
+     "function_pt": "partícula de inclusão ('também')",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 5,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#2:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "126707",
+   "slug": "sent:tatoeba-126707",
+   "stage": "politeness",
+   "function": "apologise-for-being-late",
+   "jp": "遅れて申し訳ありません。",
+   "en": "Please pardon me for coming late.",
+   "pt": "Desculpe pelo atraso.",
+   "tatoeba_id": "126707",
+   "generated": false,
+   "clause_structure_predicted": "coordinate",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "遅れ",
+     "lemma": "遅れる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "atrasar-se"
+    },
+    {
+     "position": 2,
+     "surface": "申し訳",
+     "lemma": "申し訳",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "desculpa; justificativa"
+    },
+    {
+     "position": 3,
+     "surface": "あり",
+     "lemma": "ある",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "existir, haver"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "て",
+     "function_type": "conjunctive",
+     "function_pt": "partícula conectiva (forma て)",
+     "function_status": "bank-modal",
+     "explanation_pt": "て liga 遅れる ao que vem depois (申し訳) e encadeia os dois dentro da mesma frase.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "1271480",
+   "slug": "sent:tatoeba-1271480",
+   "stage": "opinions",
+   "function": "ask-for-an-opinion",
+   "jp": "どう思いますか。",
+   "en": "What do you think?",
+   "pt": "O que você acha?",
+   "tatoeba_id": "1271480",
+   "generated": false,
+   "clause_structure_predicted": "question",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "どう",
+     "lemma": "どう",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "como, de que jeito"
+    },
+    {
+     "position": 1,
+     "surface": "思い",
+     "lemma": "思う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "achar, pensar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 3,
+     "particle": "か",
+     "function_type": "sentence-final",
+     "function_pt": "partícula interrogativa",
+     "function_status": "bank-modal",
+     "explanation_pt": "か no fim transforma a frase em pergunta.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "3583428",
+   "slug": "sent:tatoeba-3583428",
+   "stage": "opinions",
+   "function": "disagree-with-someone",
+   "jp": "私は反対です。",
+   "en": "I oppose it.",
+   "pt": "Eu sou contra.",
+   "tatoeba_id": "3583428",
+   "generated": false,
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "私",
+     "lemma": "私",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "eu"
+    },
+    {
+     "position": 2,
+     "surface": "反対",
+     "lemma": "反対",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "oposição"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 私 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "160449",
+   "slug": "sent:tatoeba-160449",
+   "stage": "opinions",
+   "function": "state-an-opinion",
+   "jp": "私はそう思います。",
+   "en": "I think so.",
+   "pt": "Eu acho que sim.",
+   "tatoeba_id": "160449",
+   "generated": false,
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "私",
+     "lemma": "私",
+     "pos": "pronoun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "eu"
+    },
+    {
+     "position": 2,
+     "surface": "そう",
+     "lemma": "そう",
+     "pos": "adverb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "assim, desse jeito"
+    },
+    {
+     "position": 3,
+     "surface": "思い",
+     "lemma": "思う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "achar, pensar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 私 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "11870768",
+   "slug": "sent:tatoeba-11870768",
+   "stage": "opinions",
+   "function": "give-advice",
+   "jp": "その方がいいと思う。",
+   "en": "I think it's better that way.",
+   "pt": "Acho melhor assim.",
+   "tatoeba_id": "11870768",
+   "generated": false,
+   "clause_structure_predicted": "quote",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "その",
+     "lemma": "その",
+     "pos": "adnominal",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "esse, aquele"
+    },
+    {
+     "position": 1,
+     "surface": "方",
+     "lemma": "方",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "lado, direção"
+    },
+    {
+     "position": 3,
+     "surface": "いい",
+     "lemma": "いい",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "bom"
+    },
+    {
+     "position": 5,
+     "surface": "思う",
+     "lemma": "思う",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "achar, pensar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 2,
+     "particle": "が",
+     "function_type": "case",
+     "function_pt": "partícula de sujeito",
+     "function_status": "bank-modal",
+     "explanation_pt": "が marca その方 como o sujeito de いい, isto é, quem faz ou de quem se diz o que o predicado exprime.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 4,
+     "particle": "と",
+     "function_type": "case",
+     "function_pt": "partícula de citação",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#4:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "8724557",
+   "slug": "sent:tatoeba-8724557",
+   "stage": "opinions",
+   "function": "hedge-a-statement",
+   "jp": "たぶん遅れる。",
+   "en": "I may be late.",
+   "pt": "Talvez eu me atrase.",
+   "tatoeba_id": "8724557",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "たぶん",
+     "lemma": "たぶん",
+     "pos": "adverb",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "provavelmente, talvez"
+    },
+    {
+     "position": 1,
+     "surface": "遅れる",
+     "lemma": "遅れる",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "atrasar-se"
+    }
+   ],
+   "particles": [],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#0:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "171474",
+   "slug": "sent:tatoeba-171474",
+   "stage": "real_talk",
+   "function": "report-hearsay",
+   "jp": "今日もよい天気らしいですね。",
+   "en": "Looks like another nice day.",
+   "pt": "Dizem que hoje também vai fazer tempo bom.",
+   "tatoeba_id": "171474",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "今日",
+     "lemma": "今日",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "hoje"
+    },
+    {
+     "position": 2,
+     "surface": "よい",
+     "lemma": "よい",
+     "pos": "i-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "bom"
+    },
+    {
+     "position": 3,
+     "surface": "天気",
+     "lemma": "天気",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "tempo, clima"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "も",
+     "function_type": "binding",
+     "function_pt": "partícula de inclusão ('também')",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    },
+    {
+     "position": 6,
+     "particle": "ね",
+     "function_type": "sentence-final",
+     "function_pt": "partícula final de concordância",
+     "function_status": "bank-modal",
+     "explanation_pt": "ね no fim suaviza a afirmação e pede a concordância de quem ouve, como o nosso 'né?'.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#1:explanation"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "1059956",
+   "slug": "sent:tatoeba-1059956",
+   "stage": "real_talk",
+   "function": "comment-on-how-someone-looks",
+   "jp": "忙しそうですね。",
+   "en": "You look busy.",
+   "pt": "Você parece ocupado.",
+   "tatoeba_id": "1059956",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "忙し",
+     "lemma": "忙しい",
+     "pos": "i-adjective",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "ocupado"
+    },
+    {
+     "position": 1,
+     "surface": "そう",
+     "lemma": "そう",
+     "pos": "na-adjective",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "parece que, prestes a"
+    }
+   ],
+   "particles": [
+    {
+     "position": 3,
+     "particle": "ね",
+     "function_type": "sentence-final",
+     "function_pt": "partícula final de concordância",
+     "function_status": "bank-modal",
+     "explanation_pt": "ね no fim suaviza a afirmação e pede a concordância de quem ouve, como o nosso 'né?'.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "3385029",
+   "slug": "sent:tatoeba-3385029",
+   "stage": "real_talk",
+   "function": "compare-to-something",
+   "jp": "警官みたいですね。",
+   "en": "You look like a cop.",
+   "pt": "Você parece um policial.",
+   "tatoeba_id": "3385029",
+   "generated": false,
+   "clause_structure_predicted": "simple",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "警官",
+     "lemma": "警官",
+     "pos": "noun",
+     "gloss_status": "unique-accept",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "policial"
+    },
+    {
+     "position": 1,
+     "surface": "みたい",
+     "lemma": "みたい",
+     "pos": "na-adjective",
+     "gloss_status": "ambiguous-verify",
+     "gloss_origin": "bank-modal",
+     "gloss_pt": "parecido com / como"
+    }
+   ],
+   "particles": [
+    {
+     "position": 3,
+     "particle": "ね",
+     "function_type": "sentence-final",
+     "function_pt": "partícula final de concordância",
+     "function_status": "bank-modal",
+     "explanation_pt": "ね no fim suaviza a afirmação e pede a concordância de quem ouve, como o nosso 'né?'.",
+     "explanation_status": "template"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "token#1:ambiguous-verify"
+   ],
+   "ingest_ready": false
+  },
+  {
+   "key": "77494",
+   "slug": "sent:tatoeba-77494",
+   "stage": "real_talk",
+   "function": "say-something-just-happened",
+   "jp": "列車は今着いたばかりです。",
+   "en": "The train has just arrived here.",
+   "pt": "O trem acabou de chegar.",
+   "tatoeba_id": "77494",
+   "generated": false,
+   "clause_structure_predicted": "topic-comment",
+   "tokens": [
+    {
+     "position": 0,
+     "surface": "列車",
+     "lemma": "列車",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "trem"
+    },
+    {
+     "position": 2,
+     "surface": "今",
+     "lemma": "今",
+     "pos": "noun",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "agora"
+    },
+    {
+     "position": 3,
+     "surface": "着い",
+     "lemma": "着く",
+     "pos": "verb",
+     "gloss_status": "verified",
+     "gloss_origin": "ruling",
+     "gloss_pt": "chegar"
+    }
+   ],
+   "particles": [
+    {
+     "position": 1,
+     "particle": "は",
+     "function_type": "binding",
+     "function_pt": "partícula de tópico",
+     "function_status": "bank-modal",
+     "explanation_pt": "は apresenta 列車 como o tópico da frase, ou seja, o assunto sobre o qual se faz a afirmação seguinte.",
+     "explanation_status": "template"
+    },
+    {
+     "position": 5,
+     "particle": "ばかり",
+     "function_type": "adverbial",
+     "function_pt": "componente de 〜たばかり ('acabar de')",
+     "function_status": "bank-modal",
+     "explanation_pt": null,
+     "explanation_status": "author"
+    }
+   ],
+   "translation_literal": null,
+   "structure_explanation_pt": null,
+   "structure_status": "author",
+   "residue": [
+    "structure_explanation_pt",
+    "translation_literal",
+    "particle#5:explanation"
+   ],
+   "ingest_ready": false
+  }
+ ]
+}

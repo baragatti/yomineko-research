@@ -9,28 +9,26 @@
   "say_now": [
     "sent:tatoeba-229458",
     "sent:tatoeba-229425",
-    "sent:tatoeba-80492",
     "sent:tatoeba-229449",
-    "sent:tatoeba-11267683",
-    "sent:tatoeba-79526"
+    "sent:tatoeba-126710",
+    "sent:tatoeba-10801949",
+    "sent:tatoeba-1014812"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1259290",
     "vocab:1420470",
-    "vocab:1584660",
     "vocab:1184280",
-    "vocab:1536350",
-    "vocab:1320760",
-    "vocab:1538130",
+    "vocab:1589040",
+    "vocab:1217950",
     "vocab:1206050",
     "vocab:1188760",
-    "vocab:1309260",
     "vocab:2022640",
     "vocab:1254760",
+    "vocab:1474820",
+    "vocab:1198430",
     "vocab:1342540",
-    "vocab:1586820",
     "vocab:1007340"
   ],
   "patterns": [],
@@ -38,18 +36,64 @@
     "見",
     "覚",
     "知",
-    "願",
-    "日",
-    "明"
+    "下",
+    "番",
+    "遅"
   ],
   "shadowing": [
     "sent:tatoeba-229458",
     "sent:tatoeba-229425",
-    "sent:tatoeba-80492",
     "sent:tatoeba-229449",
-    "sent:tatoeba-11267683",
-    "sent:tatoeba-79526"
+    "sent:tatoeba-126710",
+    "sent:tatoeba-10801949",
+    "sent:tatoeba-1014812"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-229458",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-229425",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-229449",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-126710",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10801949",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1014812",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
   "cumulative_known_vocab": 41,
@@ -67,23 +111,33 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n3:525:1209",
+      "id": "cf:n3:180:512",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "待つ",
-        "会う",
-        "願う"
+        "無い",
+        "余り",
+        "来る"
       ]
     },
     {
-      "id": "cf:n4:1105:668",
+      "id": "cf:n3:411:512",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "丈",
-        "間",
-        "話"
+        "聞く",
+        "拍手",
+        "降る"
+      ]
+    },
+    {
+      "id": "kr:n3:1194",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "こんばん",
+        "くださる",
+        "はくしゅ"
       ]
     },
     {
@@ -92,18 +146,8 @@
       "via": "new-word",
       "distractors": [
         "けっこう",
-        "しつもん",
+        "かいけい",
         "くださる"
-      ]
-    },
-    {
-      "id": "kr:n3:1396",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "さいちゅう",
-        "かんがえる",
-        "おもいだす"
       ]
     }
   ],
@@ -119,46 +163,44 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "O número do quarto, por favor."
+        "pt-BR": "O prazer é meu. Muito prazer."
       },
-      "answer_key": "部屋番号をお願いします。",
+      "answer_key": "こちらこそ、はじめまして。",
       "accepted_variants": [
-        "へやばんごうをおねがいします",
-        "へやばんごうをおねがいします。",
-        "部屋番号をお願いします",
-        "部屋番号をお願いします。"
+        "こちらこそ、はじめまして",
+        "こちらこそ、はじめまして。"
       ],
-      "sentence": "sent:tatoeba-84087",
+      "sentence": "sent:tatoeba-11021618",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "O setor de reservas, por favor."
+        "pt-BR": "Não, não chove muito."
       },
-      "answer_key": "予約係をお願いします。",
+      "answer_key": "いいえ、あまり降りません。",
       "accepted_variants": [
-        "よやくかかりをおねがいします",
-        "よやくかかりをおねがいします。",
-        "予約係をお願いします",
-        "予約係をお願いします。"
+        "いいえ、あまりふりません",
+        "いいえ、あまりふりません。",
+        "いいえ、あまり降りません",
+        "いいえ、あまり降りません。"
       ],
-      "sentence": "sent:tatoeba-78964",
+      "sentence": "sent:tatoeba-229460",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Desculpe pelo atraso."
+        "pt-BR": "Obrigado por me avisar."
       },
-      "answer_key": "遅れてすみません。",
+      "answer_key": "教えてくれてありがとう。",
       "accepted_variants": [
-        "おくれてすみません",
-        "おくれてすみません。",
-        "遅れてすみません",
-        "遅れてすみません。"
+        "おしえてくれてありがとう",
+        "おしえてくれてありがとう。",
+        "教えてくれてありがとう",
+        "教えてくれてありがとう。"
       ],
-      "sentence": "sent:tatoeba-126710",
+      "sentence": "sent:tatoeba-8579832",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -168,9 +210,9 @@
       "pt-BR": "Você acabou de desembarcar. Cumprimente, agradeça e peça licença. Em voz alta, sem ler."
     },
     "items": [
-      "sent:tatoeba-229460",
-      "sent:tatoeba-1532832",
+      "sent:tatoeba-13259054",
       "sent:tatoeba-373351",
+      "sent:tatoeba-1598216",
       "sent:tatoeba-1874351",
       "sent:tatoeba-198378",
       "sent:tatoeba-4971"
@@ -181,15 +223,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
-    "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "meaning-input": 26,
+    "meaning-output": 7,
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 25,
     "fluency": 6
   }
 }

@@ -22,7 +22,11 @@ Seven rules, per card in lesson.srs.introduces_cards:
      material it does not teach. A kana glyph card is checked through its family (W29, D6).
   6. the deck's declared level equals the ITEM's own corpus level. Kana decks are exempt: kana
      families carry no level.
-  7. no (deck, item) pair repeats inside one lesson (double enrolment; SRS-DUP-CARDS).
+  7. no (deck, item) pair repeats inside one lesson (double enrolment; SRS-DUP-CARDS), and no
+     sentence is a deck:phrases card twice anywhere on the speak path.
+  8. (W30) every speak unit (course/speak/*/unit-*.json) cards each translated say_now phrase into
+     deck:phrases. For a speak unit rule 5 reads say_now as "what it teaches", and rule 2 lets it
+     drop `listening` exactly while the unit's audio is "pending" (nothing to play yet).
 
 Rule 6 has an optional exemption file, course/srs_deck_exemptions.json — a JSON list of
 {lesson, deck, item, reason}. It is NOT seeded: today rule 6 fails 23 times on front-loaded
@@ -181,10 +185,17 @@ def main() -> int:
         _d = json.loads(_lf.read_text(encoding="utf-8"))
         lesson_level_of[_d.get("id") or _lf.name] = _d.get("level")
 
-    for lf in lessons:
+    # W30: the speak units enrol their say_now phrases into deck:phrases. A unit has no `unlocks`;
+    # what it teaches is its say_now list, so that is what rule 5 checks against.
+    speak_units = sorted(root.glob("course/speak/*/unit-*.json"))
+    phrase_owner: dict[str, str] = {}     # rule 7, path-wide: one sentence, one phrase card
+
+    for lf in lessons + speak_units:
         d = json.loads(lf.read_text(encoding="utf-8"))
         lid = d.get("id") or lf.name
-        unlock_refs = {u.get("ref") for u in (d.get("unlocks") or [])}
+        is_speak = lf in speak_units
+        unlock_refs = (set(d.get("say_now") or []) if is_speak
+                       else {u.get("ref") for u in (d.get("unlocks") or [])})
         srs = d.get("srs") or {}
         introduces = srs.get("introduces_cards")
         if introduces is None:
@@ -224,6 +235,12 @@ def main() -> int:
                     if kana_chars[item] in stroked:
                         fail("2-card-types", f"{lid}: {deck}/{item} drops handwriting but "
                                              f"corpus/strokes/kana.json has its stroke order")
+                elif is_speak and dropped == ["listening"]:
+                    # W30: a listening card with no recording renders nothing. Allowed exactly while
+                    # the unit says its audio is pending (the G7 voice-over pass).
+                    if d.get("audio") != "pending":
+                        fail("2-card-types", f"{lid}: {deck}/{item} drops listening but the unit "
+                                             f"has audio ({d.get('audio')!r})")
                 else:
                     fail("2-card-types", f"{lid}: {deck}/{item} drops {dropped} with no reason the "
                                          f"corpus can state")
@@ -285,6 +302,16 @@ def main() -> int:
             if (deck, item) in seen:
                 fail("7-duplicate", f"{lid}: ({deck}, {item}) enrolled twice")
             seen.add((deck, item))
+            if skill == "phrase":
+                if item in phrase_owner:
+                    fail("7-duplicate", f"{lid}: {item} is already a phrase card of {phrase_owner[item]}")
+                phrase_owner.setdefault(item, lid)
+        # 8 (W30) — a speak unit cards every phrase it can: each say_now phrase with a pt-BR
+        # translation (the production prompt) carries a deck:phrases card.
+        if is_speak:
+            carded = {c.get("item") for c in introduces if isinstance(c, dict)}
+            for s in sorted(set(d.get("say_now") or []) - set(d.get("untranslated") or []) - carded):
+                fail("8-speak-coverage", f"{lid}: say_now phrase {s} has no deck:phrases card")
 
     for key, reason in sorted(exemptions.items()):
         if key in used_exemptions:
@@ -298,7 +325,8 @@ def main() -> int:
     if len(fails) > len(shown):
         print(f"  ... {len(fails) - len(shown)} more (re-run with --list)")
     rules = ", ".join(f"{k}={v}" for k, v in sorted(by_rule.items())) or "none"
-    print(f"\nvalidate_srs_decks: {cards} cards over {len(lessons)} lessons, {len(registry)} decks, "
+    print(f"\nvalidate_srs_decks: {cards} cards over {len(lessons)} lessons + {len(speak_units)} speak "
+          f"units ({len(phrase_owner)} deck:phrases), {len(registry)} decks, "
           f"{len(levels)} corpus records + {len(kana_ids)} kana ids, {len(fails)} FAIL by rule {{{rules}}}")
     return 1 if fails else 0
 

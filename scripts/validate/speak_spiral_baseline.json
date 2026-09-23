@@ -4,44 +4,45 @@
   "denominators": {
     "say_now": 216,
     "fluency": 216,
-    "drills": 474
+    "drills": 420
   },
   "floors": {
     "about_you": {
-      "say_now": 3,
-      "fluency": 12,
-      "drills": 11,
-      "late_units": 13
+      "say_now": 6,
+      "fluency": 18,
+      "drills": 8,
+      "late_units": 16
     },
     "arrival": {
       "say_now": 1,
       "fluency": 0,
       "drills": 8,
-      "late_units": 7
+      "late_units": 6
     },
     "eating": {
-      "say_now": 5,
-      "fluency": 8,
-      "drills": 20,
-      "late_units": 21
+      "say_now": 2,
+      "fluency": 5,
+      "drills": 4,
+      "late_units": 8
     },
     "getting_around": {
       "say_now": 4,
-      "fluency": 5,
+      "fluency": 4,
       "drills": 10,
       "late_units": 13
     },
     "lodging": {
-      "say_now": 3,
-      "fluency": 1,
+      "say_now": 2,
+      "fluency": 0,
       "drills": 1,
-      "late_units": 4
+      "late_units": 3
     },
     "shopping": {
-      "say_now": 12,
-      "fluency": 9,
-      "drills": 39,
-      "late_units": 28
+      "say_now": 14,
+      "fluency": 20,
+      "drills": 38,
+      "late_units": 29
     }
-  }
+  },
+  "w32_cause": "Re-recorded by W32 (2026-09-23). Two causes, measured apart. (1) DRIFT: the committed path was built before the W13 ingest grew the bank 5,889 -> 10,209, so the HEAD builder run on today's index already moves this ratchet (HEAD builder, no W32 change: near-duplicate pairs 24 -> 26 with 4 FAIL, spiral 13 FAIL, strands 28 FAIL). (2) W32: survival cores live in 9 stages (only the terms whose own sentence is banked) plus one phrase per survival term per stage; on top of the drift it lowers near-duplicates 26 -> 21, spiral FAILs 13 -> 12, strand FAILs 28 -> 25. Every number in research/reports/w32_w30_apply_report.md."
 }

@@ -194,6 +194,24 @@ def sentence_vocab(sent: dict, vocab_by_int: dict, kana_count: Counter) -> set[s
     return out
 
 
+def survival_hit(sent: dict | None, terms: list[str]) -> bool:
+    """build_speaking_path.seed_hit over the export: a term is a token LEMMA, or a substring of the
+    sentence when it has 4+ characters."""
+    if not sent or not terms:
+        return False
+    lems = {tk.get("lemma") or tk.get("surface") for tk in sent.get("tokens") or []
+            if tk.get("split_mode", "C") == "C"}
+    jp = sent.get("jp", "")
+    return any(t in lems or (len(t) >= 4 and t in jp) for t in terms)
+
+
+# R87 hard gate, second half: every stage declares a survival core. These stages have none live yet
+# because their W32 rows are not banked (research/derived/pending/w32_layerb_derived.json holds the
+# Layer-B residue that blocks the ingest). The list may only shrink: a listed stage that now declares a
+# core is a FAIL, so the entry is removed the day its core goes live.
+SURVIVAL_CORE_PENDING = {"arrival", "lodging", "past_stories"}
+
+
 def embed_paths(node: object, path: str, found: dict[str, int]) -> None:
     """Every field path in a unit that holds Japanese text, with how many strings it holds."""
     if isinstance(node, str):
@@ -265,9 +283,27 @@ def main() -> int:
     tag_misses = 0
     copula_only = 0
 
+    r87_open = 0
     for stage in course["stages"]:
         slug = stage["slug"].split(":", 1)[1]
         stage_units = 0
+        # ---- R87 (design/speaking_path.md §5): the survival core is declared AND reaches the
+        # opening unit. Sorting a core ahead of frequency is not enough on its own: a term with no
+        # affordable sentence under the i+1 budget silently does nothing.
+        core = stage.get("survival_core") or []
+        if not core and slug not in SURVIVAL_CORE_PENDING:
+            fails.append(f"{stage['slug']}: declares no survival core (R87)")
+        if core and slug in SURVIVAL_CORE_PENDING:
+            fails.append(f"{stage['slug']}: declares a survival core but is still listed in "
+                         f"SURVIVAL_CORE_PENDING; remove it from the list")
+        if core and stage["unit_ids"]:
+            first = speak / slug / f"unit-{int(stage['unit_ids'][0].rsplit('-', 1)[1]):02d}.json"
+            opening = json.loads(first.read_text(encoding="utf-8")) if first.exists() else {}
+            if any(survival_hit(sentences.get(s), core) for s in opening.get("say_now", [])):
+                r87_open += 1
+            else:
+                fails.append(f"{stage['slug']}: opening unit carries no phrase matching its survival "
+                             f"core {core[:4]} (R87)")
         for uid in stage["unit_ids"]:
             n = int(uid.rsplit("-", 1)[1])
             p = speak / slug / f"unit-{n:02d}.json"
@@ -295,8 +331,12 @@ def main() -> int:
 
             if not u["say_now"]:
                 fails.append(f"{u['id']}: no phrases")
-            if not u["words"] and not u["chunk_phrases"]:
-                fails.append(f"{u['id']}: introduces nothing and teaches no set phrase (padding)")
+            # A survival-core phrase (R87) is the act the stage exists for, not padding, even when a
+            # late stage builds it entirely from known words.
+            if (not u["words"] and not u["chunk_phrases"]
+                    and not any(survival_hit(sentences.get(s), core) for s in u["say_now"])):
+                fails.append(f"{u['id']}: introduces nothing, teaches no set phrase and no survival "
+                             f"phrase (padding)")
             if u["cumulative_known_vocab"] < last_known:
                 fails.append(f"{u['id']}: known set shrank "
                              f"({last_known} -> {u['cumulative_known_vocab']})")
@@ -643,6 +683,8 @@ def main() -> int:
     adv.append(f"grammar tags: {tag_misses} (phrase, tag) pairs the unit teaching the phrase never "
                f"names; {copula_only} drilled patterns justified only by a copula or polite ending")
     adv.append("embedded corpus text: " + ", ".join(f"{k}={v}" for k, v in sorted(embeds.items())))
+    adv.append(f"R87: {r87_open}/{len(course['stages'])} stages open on a survival phrase; core pending "
+               f"its W32 ingest: {', '.join(sorted(SURVIVAL_CORE_PENDING)) or 'none'}")
 
     for line in adv:
         print(f"  [adv]  {line}")

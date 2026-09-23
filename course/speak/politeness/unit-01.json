@@ -8,108 +8,166 @@
   },
   "say_now": [
     "sent:tatoeba-4854",
-    "sent:tatoeba-147431",
-    "sent:tatoeba-146817",
-    "sent:tatoeba-226794",
-    "sent:tatoeba-5109",
-    "sent:tatoeba-226013"
+    "sent:tatoeba-78970",
+    "sent:tatoeba-78628",
+    "sent:tatoeba-7136366",
+    "sent:tatoeba-1148656",
+    "sent:tatoeba-146860"
   ],
   "chunk_phrases": [
     "sent:tatoeba-4854"
   ],
   "untranslated": [],
   "words": [
-    "vocab:1343950",
-    "vocab:1348870",
-    "vocab:1012620",
-    "vocab:1327720",
-    "vocab:1003430",
-    "vocab:1448580",
-    "vocab:1501660"
+    "vocab:1326980",
+    "vocab:1378860",
+    "vocab:1172830",
+    "vocab:1576900",
+    "vocab:1347750",
+    "vocab:1548010",
+    "vocab:1508070",
+    "vocab:1361110",
+    "vocab:1070650",
+    "vocab:1224880"
   ],
   "patterns": [
+    "gram:sasete-kudasai",
     "gram:n3-sete-kudasai",
     "gram:o-kudasai-2",
     "gram:te-kudasai",
-    "gram:kitto",
-    "gram:gp-121",
-    "gram:gp-8"
+    "gram:deshou",
+    "gram:n3-temo"
   ],
   "kanji_recognition": [
-    "書",
+    "願",
+    "約",
+    "予",
     "休",
-    "少",
-    "湯",
-    "沸",
-    "話"
+    "取",
+    "週"
   ],
   "shadowing": [
     "sent:tatoeba-4854",
-    "sent:tatoeba-147431",
-    "sent:tatoeba-146817",
-    "sent:tatoeba-226794",
-    "sent:tatoeba-5109",
-    "sent:tatoeba-226013"
+    "sent:tatoeba-78970",
+    "sent:tatoeba-78628",
+    "sent:tatoeba-7136366",
+    "sent:tatoeba-1148656",
+    "sent:tatoeba-146860"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-4854",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78970",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78628",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-7136366",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1148656",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-146860",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 456,
+  "cumulative_known_vocab": 552,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:517:150",
-      "type": "context_fill",
-      "via": "new-word",
-      "distractors": [
-        "時間",
-        "郊外",
-        "番号"
-      ]
+      "id": "so:n3:569",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "so:n4:569",
+      "type": "sentence_order",
+      "via": "phrase"
     },
     {
       "id": "cf:n3:569:326",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "番号",
-        "本当",
-        "勿論"
+        "乗る",
+        "金融",
+        "困る"
       ]
     },
     {
-      "id": "pp:n5:326",
-      "type": "paraphrase",
-      "via": "new-word",
+      "id": "cf:n4:569:326",
+      "type": "context_fill",
+      "via": "phrase",
       "distractors": [
-        "アパート",
-        "ワープロ",
-        "成るべく"
+        "好き",
+        "筋肉",
+        "同一"
       ]
     },
     {
-      "id": "kr:n3:150",
+      "id": "kr:n3:961",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ため",
-        "よい",
-        "きく"
+        "ぐうぜん",
+        "しつもん",
+        "けんせつ"
       ]
     },
     {
-      "id": "kr:n4:150",
+      "id": "kr:n4:1100",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "せん",
-        "ひく",
-        "はな"
+        "はち",
+        "きく",
+        "よる"
       ]
     }
   ],
   "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:sasete-kudasai",
+      "examples": [
+        "sent:tatoeba-3957479",
+        "sent:tatoeba-2045915",
+        "sent:tatoeba-164807"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:n3-sete-kudasai",
       "examples": [
@@ -123,44 +181,35 @@
       "pattern": "gram:o-kudasai-2",
       "examples": [
         "sent:gen-0e95f64b542d",
-        "sent:gen-0114d50c684c",
-        "sent:gen-96ce440b58e0"
+        "sent:gen-96ce440b58e0",
+        "sent:gen-0114d50c684c"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:te-kudasai",
       "examples": [
-        "sent:tatoeba-124708",
         "sent:tatoeba-146189",
-        "sent:tatoeba-74723"
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:kitto",
+      "pattern": "gram:deshou",
       "examples": [
-        "sent:tatoeba-225989",
-        "sent:tatoeba-80474",
-        "sent:tatoeba-226023"
+        "sent:tatoeba-98793",
+        "sent:tatoeba-79089",
+        "sent:tatoeba-78454"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-121",
+      "pattern": "gram:n3-temo",
       "examples": [
-        "sent:gen-3612bfffc506",
-        "sent:gen-db5a35aa9230",
-        "sent:gen-1484a0acc3d0"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-5320",
-        "sent:tatoeba-176635",
-        "sent:tatoeba-150175"
+        "sent:tatoeba-173357",
+        "sent:tatoeba-6015",
+        "sent:tatoeba-85028"
       ],
       "strand": "language-focused"
     }
@@ -185,33 +234,31 @@
     },
     {
       "prompt": {
-        "pt-BR": "Como é perigoso, por favor não vá para lá."
+        "pt-BR": "Me ajuda, por favor."
       },
-      "answer_key": "危ないので、そちらへ行かないでください。",
+      "answer_key": "助けてください。",
       "accepted_variants": [
-        "あぶないので、そちらえいかないでください",
-        "あぶないので、そちらえいかないでください。",
-        "あぶないので、そちらへいかないでください",
-        "あぶないので、そちらへいかないでください。",
-        "危ないので、そちらへ行かないでください",
-        "危ないので、そちらへ行かないでください。"
+        "たすけてください",
+        "たすけてください。",
+        "助けてください",
+        "助けてください。"
       ],
-      "sentence": "sent:tatoeba-10901645",
+      "sentence": "sent:tatoeba-1039551",
       "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Por favor, cancele a minha reserva."
+        "pt-BR": "Me dê água, por favor."
       },
-      "answer_key": "予約を取り消してください。",
+      "answer_key": "お水をください。",
       "accepted_variants": [
-        "よやくをとりけしてください",
-        "よやくをとりけしてください。",
-        "予約を取り消してください",
-        "予約を取り消してください。"
+        "おみずをください",
+        "おみずをください。",
+        "お水をください",
+        "お水をください。"
       ],
-      "sentence": "sent:tatoeba-78968",
+      "sentence": "sent:tatoeba-227004",
       "kind": "on-topic",
       "strand": "meaning-output"
     }
@@ -221,12 +268,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-83999",
-      "sent:tatoeba-792555",
-      "sent:tatoeba-228002",
-      "sent:tatoeba-147605",
-      "sent:tatoeba-11706794",
-      "sent:jec-0319"
+      "sent:tatoeba-107984",
+      "sent:tatoeba-1590863",
+      "sent:tatoeba-8842226",
+      "sent:tatoeba-214558",
+      "sent:tatoeba-12275994",
+      "sent:tatoeba-156822"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -234,15 +281,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 23,
-    "meaning-output": 6,
-    "language-focused": 60,
-    "fluency": 12
+    "meaning-input": 22,
+    "meaning-output": 5,
+    "language-focused": 62,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 34,
     "fluency": 6
   }
 }

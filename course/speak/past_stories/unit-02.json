@@ -7,47 +7,100 @@
     "pt-BR": "Contar o que aconteceu, parte 2"
   },
   "say_now": [
+    "sent:tatoeba-88740",
     "sent:tatoeba-78177",
+    "sent:tatoeba-156822",
     "sent:tatoeba-171398",
-    "sent:tatoeba-235631",
-    "sent:tatoeba-84745",
-    "sent:tatoeba-223949",
-    "sent:tatoeba-78171"
+    "sent:tatoeba-228002",
+    "sent:tatoeba-235631"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1415000",
     "vocab:1602710",
+    "vocab:1588760",
     "vocab:1158880",
+    "vocab:1582120",
     "vocab:1589060",
-    "vocab:1191320",
-    "vocab:1335080",
-    "vocab:1401210"
+    "vocab:1175570",
+    "vocab:1579130",
+    "vocab:1401210",
+    "vocab:1549470",
+    "vocab:1001140",
+    "vocab:1485450"
   ],
   "patterns": [
     "gram:ta-koto-ga-aru",
-    "gram:ga-arimasu",
-    "gram:te-kudasai"
+    "gram:koto-ga-aru",
+    "gram:te-kudasai",
+    "gram:gp-12"
   ],
   "kanji_recognition": [
+    "経",
     "行",
-    "親",
-    "相",
-    "談",
-    "旅",
-    "両"
+    "質",
+    "初",
+    "女",
+    "神"
   ],
   "shadowing": [
+    "sent:tatoeba-88740",
     "sent:tatoeba-78177",
+    "sent:tatoeba-156822",
     "sent:tatoeba-171398",
-    "sent:tatoeba-235631",
-    "sent:tatoeba-84745",
-    "sent:tatoeba-223949",
-    "sent:tatoeba-78171"
+    "sent:tatoeba-228002",
+    "sent:tatoeba-235631"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-88740",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78177",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-156822",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-171398",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-228002",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-235631",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 422,
+  "cumulative_known_vocab": 510,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -57,23 +110,23 @@
       "via": "phrase"
     },
     {
-      "id": "cf:n3:233:1099",
+      "id": "cf:n3:713:254",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "何処",
-        "意見",
-        "好き"
+        "相談",
+        "何故",
+        "天然"
       ]
     },
     {
-      "id": "cf:n4:3498:1099",
+      "id": "cf:n3:78:92",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "幾ら",
-        "遊ぶ",
-        "此の"
+        "後",
+        "兄",
+        "底"
       ]
     },
     {
@@ -81,26 +134,25 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "どんどん",
-        "しょくじ",
-        "タクシー"
+        "タクシー",
+        "こくさい",
+        "サービス"
       ]
     },
     {
-      "id": "kr:n4:1099",
+      "id": "kr:n3:92",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しゅうかん",
-        "りょうきん",
-        "しょうせつ"
+        "みせ",
+        "はち",
+        "もつ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:koto-ga-aru",
-    "gram:n3-ni-totte",
-    "gram:n3-ni-tsuite"
+    "gram:n3-ni-tsuite",
+    "gram:te-ita"
   ],
   "drills": [
     {
@@ -108,62 +160,39 @@
       "examples": [
         "sent:tatoeba-8842279",
         "sent:gen-52a2e8482686",
-        "sent:tatoeba-9387697"
+        "sent:gen-c39fca7e5ee6"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:ga-arimasu",
+      "pattern": "gram:koto-ga-aru",
       "examples": [
-        "sent:tatoeba-150175",
-        "sent:tatoeba-150639",
-        "sent:tatoeba-122353"
+        "sent:tatoeba-1897537",
+        "sent:tatoeba-433648",
+        "sent:tatoeba-4836736"
       ],
       "strand": "language-focused"
     },
     {
       "pattern": "gram:te-kudasai",
       "examples": [
-        "sent:tatoeba-124708",
         "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
         "sent:tatoeba-5109"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-12",
+      "examples": [
+        "sent:tatoeba-84959",
+        "sent:tatoeba-78451",
+        "sent:tatoeba-11960481"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
-    {
-      "prompt": {
-        "pt-BR": "Viajar é divertido."
-      },
-      "answer_key": "旅行は楽しい。",
-      "accepted_variants": [
-        "りょこうはたのしい",
-        "りょこうはたのしい。",
-        "りょこうわたのしい",
-        "りょこうわたのしい。",
-        "旅行は楽しい",
-        "旅行は楽しい。"
-      ],
-      "sentence": "sent:tatoeba-78158",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "É muito divertido."
-      },
-      "answer_key": "とても楽しい。",
-      "accepted_variants": [
-        "とてもたのしい",
-        "とてもたのしい。",
-        "とても楽しい",
-        "とても楽しい。"
-      ],
-      "sentence": "sent:tatoeba-13537670",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
     {
       "prompt": {
         "pt-BR": "A vida é divertida."
@@ -180,6 +209,38 @@
       "sentence": "sent:tatoeba-143986",
       "kind": "same-stage",
       "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "A viagem foi como você esperava?"
+      },
+      "answer_key": "旅行は期待通りでしたか。",
+      "accepted_variants": [
+        "りょこうはきたいとおりでしたか",
+        "りょこうはきたいとおりでしたか。",
+        "りょこうわきたいとおりでしたか",
+        "りょこうわきたいとおりでしたか。",
+        "旅行は期待通りでしたか",
+        "旅行は期待通りでしたか。"
+      ],
+      "sentence": "sent:tatoeba-78156",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "As lembranças de antigamente me vieram de repente à mente."
+      },
+      "answer_key": "昔の思い出が急に心に浮かんだ。",
+      "accepted_variants": [
+        "むかしのおもいでがきゅうにこころにうかんだ",
+        "むかしのおもいでがきゅうにこころにうかんだ。",
+        "昔の思い出が急に心に浮かんだ",
+        "昔の思い出が急に心に浮かんだ。"
+      ],
+      "sentence": "sent:tatoeba-142423",
+      "kind": "same-stage",
+      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -187,12 +248,12 @@
       "pt-BR": "Alguém perguntou como foi seu fim de semana. Conte, no passado."
     },
     "items": [
-      "sent:tatoeba-142423",
-      "sent:jec-1326",
-      "sent:tatoeba-10587764",
+      "sent:tatoeba-170021",
+      "sent:tatoeba-106778",
+      "sent:tatoeba-11890833",
       "sent:tatoeba-203344",
-      "sent:tatoeba-79502",
-      "sent:tatoeba-11270411"
+      "sent:tatoeba-124065",
+      "sent:tatoeba-183591"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -200,15 +261,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 28,
-    "meaning-output": 7,
-    "language-focused": 51,
-    "fluency": 14
+    "meaning-input": 23,
+    "meaning-output": 6,
+    "language-focused": 60,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 31,
     "fluency": 6
   }
 }

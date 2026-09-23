@@ -7,73 +7,121 @@
     "pt-BR": "Falar de você, parte 2"
   },
   "say_now": [
+    "sent:tatoeba-84568",
     "sent:tatoeba-9553773",
     "sent:tatoeba-11386733",
-    "sent:tatoeba-236934",
-    "sent:jec-4753",
-    "sent:tatoeba-104573",
-    "sent:jec-1094"
+    "sent:tatoeba-99645",
+    "sent:tatoeba-80771",
+    "sent:tatoeba-141544"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1579260",
     "vocab:1221270",
     "vocab:1419990",
-    "vocab:1576150",
-    "vocab:1080510",
-    "vocab:1324300",
-    "vocab:1198550",
-    "vocab:1516750",
-    "vocab:1388410",
-    "vocab:1527110"
+    "vocab:1531710",
+    "vocab:1266440",
+    "vocab:1227560",
+    "vocab:1185200"
   ],
   "patterns": [
     "gram:ta-bakari",
     "gram:no-ga-suki",
     "gram:n3-bakari",
-    "gram:gp-89",
-    "gram:totemo"
+    "gram:dake"
   ],
   "kanji_recognition": [
-    "帰",
+    "休",
+    "昨",
     "仕",
     "事",
-    "好",
-    "男",
-    "一"
+    "日",
+    "父"
   ],
   "shadowing": [
+    "sent:tatoeba-84568",
     "sent:tatoeba-9553773",
     "sent:tatoeba-11386733",
-    "sent:tatoeba-236934",
-    "sent:jec-4753",
-    "sent:tatoeba-104573",
-    "sent:jec-1094"
+    "sent:tatoeba-99645",
+    "sent:tatoeba-80771",
+    "sent:tatoeba-141544"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-84568",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9553773",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11386733",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-99645",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-80771",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-141544",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 285,
+  "cumulative_known_vocab": 330,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:16:475",
+      "id": "so:n3:677",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
+      "id": "cf:n3:120:574",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "暗い",
-        "食事",
-        "明日"
+        "聞く",
+        "一緒",
+        "暗い"
       ]
     },
     {
-      "id": "cf:n4:16:475",
+      "id": "cf:n3:14:115",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "必要",
-        "豚肉",
-        "幾ら"
+        "生",
+        "話",
+        "豆"
       ]
     },
     {
@@ -81,32 +129,33 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ばしょ",
-        "みなと",
-        "つもり"
+        "しまう",
+        "きんし",
+        "おえる"
       ]
     },
     {
-      "id": "kr:n3:141",
+      "id": "kr:n3:146",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ちいさな",
-        "おいしい",
-        "コーヒー"
+        "ほしい",
+        "きのう",
+        "さかな"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-wari-ni-wa"
+    "gram:no-ga-heta",
+    "gram:te-ita"
   ],
   "drills": [
     {
       "pattern": "gram:ta-bakari",
       "examples": [
         "sent:tatoeba-11009581",
-        "sent:tatoeba-208529",
-        "sent:tatoeba-9722237"
+        "sent:tatoeba-9722237",
+        "sent:tatoeba-159565"
       ],
       "strand": "language-focused"
     },
@@ -122,27 +171,18 @@
     {
       "pattern": "gram:n3-bakari",
       "examples": [
-        "sent:tatoeba-113980",
         "sent:tatoeba-147558",
-        "sent:tatoeba-88247"
+        "sent:tatoeba-88247",
+        "sent:tatoeba-96219"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-89",
+      "pattern": "gram:dake",
       "examples": [
-        "sent:tatoeba-144038",
-        "sent:tatoeba-123036",
-        "sent:tatoeba-4855"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:totemo",
-      "examples": [
-        "sent:tatoeba-5074",
-        "sent:tatoeba-4947",
-        "sent:tatoeba-5092"
+        "sent:gen-fec0529a3037",
+        "sent:tatoeba-4767",
+        "sent:tatoeba-5057"
       ],
       "strand": "language-focused"
     }
@@ -150,50 +190,48 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "O professor chamou todos os alunos pelo nome."
+        "pt-BR": "Você gosta mais de inglês ou de japonês?"
       },
-      "answer_key": "先生は生徒みんなを名前で呼んだ。",
+      "answer_key": "あなたは英語と国語どちらが好きですか。",
       "accepted_variants": [
-        "せんせいはせいとみんなをなまえでよんだ",
-        "せんせいはせいとみんなをなまえでよんだ。",
-        "せんせいわせいとみんなをなまえでよんだ",
-        "せんせいわせいとみんなをなまえでよんだ。",
-        "先生は生徒みんなを名前で呼んだ",
-        "先生は生徒みんなを名前で呼んだ。"
+        "あなたはえいごとこくごどちらがすきですか",
+        "あなたはえいごとこくごどちらがすきですか。",
+        "あなたは英語と国語どちらが好きですか",
+        "あなたは英語と国語どちらが好きですか。",
+        "あなたわえいごとこくごどちらがすきですか",
+        "あなたわえいごとこくごどちらがすきですか。"
       ],
-      "sentence": "sent:tatoeba-141544",
+      "sentence": "sent:tatoeba-232281",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Não só os alunos, como também o professor veio."
+        "pt-BR": "Preciso de um emprego."
       },
-      "answer_key": "学生はもちろん先生も来た。",
+      "answer_key": "仕事が必要だ。",
       "accepted_variants": [
-        "がくせいはもちろんせんせいもきた",
-        "がくせいはもちろんせんせいもきた。",
-        "がくせいわもちろんせんせいもきた",
-        "がくせいわもちろんせんせいもきた。",
-        "学生はもちろん先生も来た",
-        "学生はもちろん先生も来た。"
+        "しごとがひつようだ",
+        "しごとがひつようだ。",
+        "仕事が必要だ",
+        "仕事が必要だ。"
       ],
-      "sentence": "sent:tatoeba-184254",
+      "sentence": "sent:tatoeba-1046077",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Até uma criancinha sabe esse nome."
+        "pt-BR": "Cada um de nós tem o seu próprio hobby."
       },
-      "answer_key": "小さな子どもでもその名前を知っている。",
+      "answer_key": "私たち一人一人が自分の趣味を持っています。",
       "accepted_variants": [
-        "ちいさなこどもでもそのなまえをしっている",
-        "ちいさなこどもでもそのなまえをしっている。",
-        "小さな子どもでもその名前を知っている",
-        "小さな子どもでもその名前を知っている。"
+        "わたしたちひとりひとりがじぶんのしゅみをもっています",
+        "わたしたちひとりひとりがじぶんのしゅみをもっています。",
+        "私たち一人一人が自分の趣味を持っています",
+        "私たち一人一人が自分の趣味を持っています。"
       ],
-      "sentence": "sent:tatoeba-147013",
+      "sentence": "sent:tatoeba-164979",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -203,12 +241,12 @@
       "pt-BR": "Alguém puxou assunto com você. Diga quem você é, de onde vem e do que gosta."
     },
     "items": [
-      "sent:tatoeba-84568",
-      "sent:tatoeba-186900",
-      "sent:tatoeba-1046077",
-      "sent:tatoeba-11953118",
-      "sent:tatoeba-82875",
-      "sent:tatoeba-10723441"
+      "sent:jec-0320",
+      "sent:tatoeba-210316",
+      "sent:tatoeba-5060",
+      "sent:tatoeba-8787906",
+      "sent:tatoeba-3313203",
+      "sent:tatoeba-77964"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -216,15 +254,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 26,
     "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "language-focused": 55,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 26,
     "fluency": 6
   }
 }

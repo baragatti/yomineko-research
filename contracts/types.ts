@@ -632,6 +632,7 @@ export interface SpeakPath {
       approx_band?: string;
       order?: number;
       slug?: StableId;
+      survival_core?: string[];
       title?: LocaleText;
       unit_count?: number;
       unit_ids?: string[];
@@ -703,6 +704,13 @@ export interface SpeakUnit {
   say_now: string[];
   schema_version: string;
   shadowing: string[];
+  srs: {
+    introduces_cards: {
+        card_types?: unknown[];
+        deck?: StableId;
+        item?: string;
+      }[];
+  };
   stage: StableId;
   strand_counts: {
     fluency: number;

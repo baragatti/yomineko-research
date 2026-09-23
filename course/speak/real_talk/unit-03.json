@@ -7,17 +7,16 @@
     "pt-BR": "Conversa de verdade, parte 3"
   },
   "say_now": [
-    "sent:tatoeba-11264620",
     "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
     "sent:tatoeba-120314",
     "sent:tatoeba-216263",
-    "sent:tatoeba-211899"
+    "sent:tatoeba-211899",
+    "sent:tatoeba-213957"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1002590",
     "vocab:1581930",
     "vocab:1218760",
     "vocab:1313960",
@@ -32,29 +31,74 @@
     "gram:n3-to-iu-no-wa",
     "gram:n3-mitai-da",
     "gram:n3-to-iu-no",
-    "gram:gp-76",
-    "gram:mitai-ni",
+    "gram:gp-73",
     "gram:n3-to-iu"
   ],
   "kanji_recognition": [
-    "父",
     "君",
     "弟",
     "彼",
     "喜",
-    "道"
+    "道",
+    "理"
   ],
   "shadowing": [
-    "sent:tatoeba-11264620",
     "sent:tatoeba-1227292",
     "sent:tatoeba-123542",
     "sent:tatoeba-120314",
     "sent:tatoeba-216263",
-    "sent:tatoeba-211899"
+    "sent:tatoeba-211899",
+    "sent:tatoeba-213957"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1227292",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-123542",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-120314",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-216263",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-211899",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-213957",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 561,
+  "cumulative_known_vocab": 674,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -64,8 +108,8 @@
       "via": "phrase",
       "distractors": [
         "箱",
-        "君",
-        "先"
+        "下",
+        "生"
       ]
     },
     {
@@ -73,19 +117,9 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
+        "下",
         "犬",
-        "雨",
-        "次"
-      ]
-    },
-    {
-      "id": "kr:n3:113",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "おんなのこ",
-        "しょくどう",
-        "りょうしん"
+        "雨"
       ]
     },
     {
@@ -97,16 +131,28 @@
         "かんけい",
         "はじめる"
       ]
+    },
+    {
+      "id": "kr:n3:713",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はる",
+        "べつ",
+        "ぐん"
+      ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:n3-wake-da"
+  ],
   "drills": [
     {
       "pattern": "gram:n3-to-iu-no-wa",
       "examples": [
+        "sent:tatoeba-423387",
         "sent:tatoeba-168168",
-        "sent:tatoeba-119734",
-        "sent:tatoeba-423387"
+        "sent:tatoeba-119734"
       ],
       "strand": "language-focused"
     },
@@ -129,20 +175,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-76",
+      "pattern": "gram:gp-73",
       "examples": [
-        "sent:tatoeba-11041688",
-        "sent:tatoeba-220740",
-        "sent:tatoeba-3458976"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:mitai-ni",
-      "examples": [
-        "sent:tatoeba-9846192",
-        "sent:tatoeba-11044901",
-        "sent:tatoeba-11516169"
+        "sent:tatoeba-2171509",
+        "sent:tatoeba-127272",
+        "sent:tatoeba-11980988"
       ],
       "strand": "language-focused"
     },
@@ -157,6 +194,21 @@
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "Quero virar piloto, igual ao meu pai."
+      },
+      "answer_key": "お父さんみたいに、パイロットになりたい。",
+      "accepted_variants": [
+        "おとうさんみたいに、ぱいろっとになりたい",
+        "おとうさんみたいに、ぱいろっとになりたい。",
+        "お父さんみたいに、パイロットになりたい",
+        "お父さんみたいに、パイロットになりたい。"
+      ],
+      "sentence": "sent:tatoeba-11264620",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "Mãe, desculpa por estar sempre te dando trabalho."
@@ -186,23 +238,6 @@
       "sentence": "sent:tatoeba-10050266",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Parece que ela está feliz."
-      },
-      "answer_key": "彼女は幸せらしい。",
-      "accepted_variants": [
-        "かのじょはしあわせらしい",
-        "かのじょはしあわせらしい。",
-        "かのじょわしあわせらしい",
-        "かのじょわしあわせらしい。",
-        "彼女は幸せらしい",
-        "彼女は幸せらしい。"
-      ],
-      "sentence": "sent:tatoeba-90133",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -210,12 +245,12 @@
       "pt-BR": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa."
     },
     "items": [
+      "sent:tatoeba-90133",
       "sent:tatoeba-9938017",
+      "sent:tatoeba-1331104",
       "sent:tatoeba-80952",
-      "sent:tatoeba-79019",
-      "sent:tatoeba-79047",
-      "sent:tatoeba-80630",
-      "sent:tatoeba-80432"
+      "sent:jec-0517",
+      "sent:tatoeba-89607"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -223,15 +258,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 58,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 32,
+    "language-focused": 29,
     "fluency": 6
   }
 }

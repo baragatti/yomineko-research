@@ -7,72 +7,118 @@
     "pt-BR": "Conversa de verdade, parte 2"
   },
   "say_now": [
-    "sent:jec-4908",
     "sent:tatoeba-78052",
     "sent:tatoeba-9938017",
     "sent:tatoeba-90133",
     "sent:tatoeba-10050266",
-    "sent:tatoeba-886104"
+    "sent:tatoeba-886104",
+    "sent:tatoeba-11264620"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1487400",
     "vocab:1378520",
     "vocab:1080000",
     "vocab:1594060",
     "vocab:1172400",
     "vocab:1002650",
+    "vocab:1002590",
     "vocab:1532800",
     "vocab:1188890"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
+    "gram:n3-wake-ga-nai",
+    "gram:gp-76",
     "gram:ta-bakari",
-    "gram:janai-dewa-nai",
-    "gram:n3-bakari",
-    "gram:n3-rashii"
+    "gram:janai-dewa-nai"
   ],
   "kanji_recognition": [
-    "気",
-    "症",
-    "同",
-    "発",
-    "必",
-    "病"
+    "親",
+    "生",
+    "両",
+    "始",
+    "幸",
+    "女"
   ],
   "shadowing": [
-    "sent:jec-4908",
     "sent:tatoeba-78052",
     "sent:tatoeba-9938017",
     "sent:tatoeba-90133",
     "sent:tatoeba-10050266",
-    "sent:tatoeba-886104"
+    "sent:tatoeba-886104",
+    "sent:tatoeba-11264620"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78052",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9938017",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-90133",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10050266",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-886104",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11264620",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 551,
+  "cumulative_known_vocab": 665,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:280:717",
+      "id": "cf:n3:738:113",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "失礼",
-        "部屋",
-        "帰り"
+        "一人一人",
+        "パソコン",
+        "出かける"
       ]
     },
     {
-      "id": "cf:n4:774:100",
+      "id": "cf:n4:738:113",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "彼方此方",
-        "出かける",
-        "ステレオ"
+        "ステレオ",
+        "パソコン",
+        "レポート"
       ]
     },
     {
@@ -80,24 +126,24 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "りょうきん",
-        "ひるごはん",
-        "びょういん"
+        "おそろしい",
+        "じゅぎょう",
+        "りょうきん"
       ]
     },
     {
-      "id": "kr:n3:62",
+      "id": "kr:n3:113",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しまる",
-        "かかり",
-        "なまえ"
+        "げつようび",
+        "あたたかい",
+        "おんなのこ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-wake-ga-nai"
+    "gram:mitai-ni"
   ],
   "drills": [
     {
@@ -106,6 +152,24 @@
         "sent:tatoeba-156748",
         "sent:tatoeba-10901570",
         "sent:tatoeba-77972"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-wake-ga-nai",
+      "examples": [
+        "sent:tatoeba-10181528",
+        "sent:tatoeba-4900568",
+        "sent:tatoeba-2190027"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-76",
+      "examples": [
+        "sent:tatoeba-11041688",
+        "sent:tatoeba-12698746",
+        "sent:tatoeba-220740"
       ],
       "strand": "language-focused"
     },
@@ -126,27 +190,24 @@
         "sent:tatoeba-227828"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-bakari",
-      "examples": [
-        "sent:tatoeba-113980",
-        "sent:tatoeba-147558",
-        "sent:tatoeba-88247"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-rashii",
-      "examples": [
-        "sent:tatoeba-100541",
-        "sent:tatoeba-107636",
-        "sent:tatoeba-108826"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "Nem todo mundo por aí é gente boa."
+      },
+      "answer_key": "世の中、親切な人ばかりじゃない。",
+      "accepted_variants": [
+        "よのなか、しんせつなひとばかりじゃない",
+        "よのなか、しんせつなひとばかりじゃない。",
+        "世の中、親切な人ばかりじゃない",
+        "世の中、親切な人ばかりじゃない。"
+      ],
+      "sentence": "sent:tatoeba-1331104",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "Parece um sonho."
@@ -164,33 +225,18 @@
     },
     {
       "prompt": {
-        "pt-BR": "Não posso deixar você fazer uma coisa dessas."
+        "pt-BR": "Sendo assim, não posso ir com você."
       },
-      "answer_key": "お前にそんなこと、させるわけにはいかないよ。",
+      "answer_key": "そういうわけだから、私は君と一緒に行けないのだ。",
       "accepted_variants": [
-        "おまえにそんなこと、させるわけにはいかないよ",
-        "おまえにそんなこと、させるわけにはいかないよ。",
-        "おまえにそんなこと、させるわけにわいかないよ",
-        "おまえにそんなこと、させるわけにわいかないよ。",
-        "お前にそんなこと、させるわけにはいかないよ",
-        "お前にそんなこと、させるわけにはいかないよ。"
+        "そういうわけだから、わたしはきみといっしょにいけないのだ",
+        "そういうわけだから、わたしはきみといっしょにいけないのだ。",
+        "そういうわけだから、わたしわきみといっしょにいけないのだ",
+        "そういうわけだから、わたしわきみといっしょにいけないのだ。",
+        "そういうわけだから、私は君と一緒に行けないのだ",
+        "そういうわけだから、私は君と一緒に行けないのだ。"
       ],
-      "sentence": "sent:tatoeba-10274623",
-      "kind": "same-stage",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Bom, afinal o Japão também viveu fechado para o mundo, né."
-      },
-      "answer_key": "まぁ、日本も鎖国していたわけだしなあ。",
-      "accepted_variants": [
-        "まぁ、にっぽんもさこくしていたわけだしなあ",
-        "まぁ、にっぽんもさこくしていたわけだしなあ。",
-        "まぁ、日本も鎖国していたわけだしなあ",
-        "まぁ、日本も鎖国していたわけだしなあ。"
-      ],
-      "sentence": "sent:tatoeba-76419",
+      "sentence": "sent:tatoeba-213958",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -201,11 +247,11 @@
     },
     "items": [
       "sent:tatoeba-230514",
+      "sent:tatoeba-83210",
       "sent:tatoeba-235244",
-      "sent:jec-0517",
-      "sent:tatoeba-89607",
-      "sent:tatoeba-74941",
-      "sent:tatoeba-78366"
+      "sent:tatoeba-185295",
+      "sent:tatoeba-80432",
+      "sent:tatoeba-185718"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -215,7 +261,7 @@
   "strands": {
     "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 59,
+    "language-focused": 57,
     "fluency": 12
   },
   "strand_counts": {

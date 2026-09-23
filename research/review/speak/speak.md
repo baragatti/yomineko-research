@@ -2,7 +2,7 @@
 
 _Gerado por `scripts/export/build_review_views.py` a partir do export (`corpus/` + `course/`), entidade `speak_unit`. **Não edite este arquivo** — ele é regerado e conferido byte a byte. Para registrar um parecer, preencha uma ficha: `research/review/README.md`._
 
-_Build `a6089528c6c9` de 2026-09-23 (`contracts/manifest.json`)._
+_Build `f2d886869018` de 2026-09-23 (`contracts/manifest.json`)._
 
 **72 registro(s) · 144 endereço(s) de parecer · 72 marcado(s) `needs_review` no export.**
 
@@ -38,7 +38,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 1
 
-### `*` · camada C · hash `7442c88c205e7e2f`
+### `*` · camada C · hash `654d071273717bee`
 
 _Ledger:_ —
 
@@ -56,10 +56,10 @@ _Ledger:_ —
 
 - `sent:tatoeba-4971` ありがとうございます！ — Muito obrigado(a)!
 - `sent:tatoeba-219058` ごめんなさい。私のせいです。 — Desculpe. A culpa é minha.
+- `sent:tatoeba-9840102` 私を雇ってくれてありがとう。 — Obrigado por me contratar.
 - `sent:tatoeba-198378` はい、行きましょう。 — Sim, vamos.
 - `sent:tatoeba-78721` 来てくれてありがとう。 — Obrigado por ter vindo.
 - `sent:tatoeba-1874351` ごめんなさい。時間があまりないんです。 — Desculpe. É que não tenho muito tempo.
-- `sent:tatoeba-10355885` 聞いてくれてありがとう。 — Obrigado por me escutar.
 - produção: Bom dia! → おはようございます。
 - produção: Desculpe. → すみません。
 - produção: Tchau! → さようなら！
@@ -72,7 +72,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 2
 
-### `*` · camada C · hash `418acfd228b8722a`
+### `*` · camada C · hash `a1c4c149fa6e7495`
 
 _Ledger:_ —
 
@@ -88,15 +88,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-10355885` 聞いてくれてありがとう。 — Obrigado por me escutar.
 - `sent:tatoeba-171272` 今晩お会いできなくてすみません。 — Desculpe por não poder me encontrar com você hoje à noite.
 - `sent:tatoeba-125944` 長い事お待たせしてすみません。 — Desculpe por tê-lo feito esperar tanto tempo.
 - `sent:tatoeba-226507` お話の最中にすみません。 — Desculpe interromper a conversa de vocês.
+- `sent:tatoeba-13259054` 先生、こんにちは。 — Olá, professor!
 - `sent:tatoeba-125913` 長くお待たせしてすみませんでした。 — Desculpe por tê-lo feito esperar tanto tempo.
-- `sent:tatoeba-125967` 長い間、お待たせしてすみませんでした。 — Desculpe por tê-lo feito esperar tanto tempo.
-- `sent:tatoeba-11831400` 考えてくれてありがとう。 — Obrigado por pensar nisso.
-- produção: Obrigado por me escutar. → 聞いてくれてありがとう。
 - produção: Desculpe. É que não tenho muito tempo. → ごめんなさい。時間があまりないんです。
 - produção: Obrigado por ter vindo. → 来てくれてありがとう。
+- produção: Sim, vamos. → はい、行きましょう。
 
 </details>
 
@@ -106,7 +106,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 3
 
-### `*` · camada C · hash `504610b92685b9ef`
+### `*` · camada C · hash `6358e65e24b7f18b`
 
 _Ledger:_ —
 
@@ -122,15 +122,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-11831400` 考えてくれてありがとう。 — Obrigado por pensar nisso.
+- `sent:tatoeba-231454` こんなに長い間待たせてすみません。 — Desculpe por tê-lo feito esperar por tanto tempo.
+- `sent:tatoeba-125967` 長い間、お待たせしてすみませんでした。 — Desculpe por tê-lo feito esperar tanto tempo.
 - `sent:tatoeba-8579832` 教えてくれてありがとう。 — Obrigado por me avisar.
 - `sent:tatoeba-229460` いいえ、あまり降りません。 — Não, não chove muito.
-- `sent:tatoeba-231454` こんなに長い間待たせてすみません。 — Desculpe por tê-lo feito esperar por tanto tempo.
-- `sent:tatoeba-126710` 遅れてすみません。 — Desculpe pelo atraso.
-- `sent:tatoeba-78964` 予約係をお願いします。 — O setor de reservas, por favor.
-- `sent:tatoeba-84087` 部屋番号をお願いします。 — O número do quarto, por favor.
-- produção: Obrigado por pensar nisso. → 考えてくれてありがとう。
-- produção: Desculpe por tê-lo feito esperar tanto tempo. → 長い間、お待たせしてすみませんでした。
+- `sent:tatoeba-11021618` こちらこそ、はじめまして。 — O prazer é meu. Muito prazer.
 - produção: Desculpe por tê-lo feito esperar tanto tempo. → 長くお待たせしてすみませんでした。
+- produção: Olá, professor! → 先生、こんにちは。
+- produção: Desculpe interromper a conversa de vocês. → お話の最中にすみません。
 
 </details>
 
@@ -140,7 +140,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 4
 
-### `*` · camada C · hash `4eea2dce7b67bd23`
+### `*` · camada C · hash `988938ca1cbd9856`
 
 _Ledger:_ —
 
@@ -158,13 +158,13 @@ _Ledger:_ —
 
 - `sent:tatoeba-229458` いいえ、けっこうです。見ているだけですから。 — Não, obrigado. É que estou só olhando.
 - `sent:tatoeba-229425` いいえ、知らないです。いつか覚えなければ。 — Não, eu não sei. Algum dia preciso aprender.
-- `sent:tatoeba-80492` 明日の夜のディナーの予約をお願いします。 — Eu gostaria de fazer uma reserva para o jantar de amanhã à noite.
 - `sent:tatoeba-229449` いいえ、はじめに９番におかけ下さい。 — Não, por favor disque o número nove primeiro.
-- `sent:tatoeba-11267683` 質問攻めにしてすみませんでした。 — Desculpe por tê-lo bombardeado com tantas perguntas.
-- `sent:tatoeba-79526` 約束を思い出させてくれてどうもありがとう。 — Muito obrigado por me lembrar da promessa.
-- produção: O número do quarto, por favor. → 部屋番号をお願いします。
-- produção: O setor de reservas, por favor. → 予約係をお願いします。
-- produção: Desculpe pelo atraso. → 遅れてすみません。
+- `sent:tatoeba-126710` 遅れてすみません。 — Desculpe pelo atraso.
+- `sent:tatoeba-10801949` 拍手をお願いします。 — Uma salva de palmas, por favor.
+- `sent:tatoeba-1014812` お会計お願いします。 — A conta, por favor.
+- produção: O prazer é meu. Muito prazer. → こちらこそ、はじめまして。
+- produção: Não, não chove muito. → いいえ、あまり降りません。
+- produção: Obrigado por me avisar. → 教えてくれてありがとう。
 
 </details>
 
@@ -174,7 +174,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 5
 
-### `*` · camada C · hash `cf8eef2dc47bb5ea`
+### `*` · camada C · hash `a8c3ebfe4b3e836d`
 
 _Ledger:_ —
 
@@ -190,15 +190,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-80492` 明日の夜のディナーの予約をお願いします。 — Eu gostaria de fazer uma reserva para o jantar de amanhã à noite.
+- `sent:tatoeba-11267683` 質問攻めにしてすみませんでした。 — Desculpe por tê-lo bombardeado com tantas perguntas.
+- `sent:tatoeba-79526` 約束を思い出させてくれてどうもありがとう。 — Muito obrigado por me lembrar da promessa.
+- `sent:tatoeba-13885289` 皆さん、こんにちは。 — Boa tarde a todos.
+- `sent:tatoeba-400865` こんにちは、お元気ですか。 — Olá, tudo bem com você?
 - `sent:tatoeba-203979` たいそうご無理をお願いしてすみません。 — Desculpe por lhe pedir um favor tão grande e trabalhoso.
-- `sent:tatoeba-5057` ありがとう、それだけだよ。 — Obrigado, é só isso.
-- `sent:tatoeba-10901919` ありがとう。これでけっこうです。 — Obrigado. Assim está bom.
-- `sent:tatoeba-10901730` はい、そうです。 — Sim, é isso.
-- `sent:gen-1d921e8b2ad3` この間は本当にありがとう — Muito obrigado por aquele dia.
-- `sent:gen-a5ee7b945644` 本当にありがとうございます — Muito obrigado mesmo.
-- produção: Muito obrigado por me lembrar da promessa. → 約束を思い出させてくれてどうもありがとう。
-- produção: Desculpe por tê-lo bombardeado com tantas perguntas. → 質問攻めにしてすみませんでした。
-- produção: Não, por favor disque o número nove primeiro. → いいえ、はじめに９番におかけ下さい。
+- produção: A conta, por favor. → お会計お願いします。
+- produção: Uma salva de palmas, por favor. → 拍手をお願いします。
+- produção: Desculpe pelo atraso. → 遅れてすみません。
 
 </details>
 
@@ -208,7 +208,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 6
 
-### `*` · camada C · hash `927480e9c20c976e`
+### `*` · camada C · hash `943edf575b89c11d`
 
 _Ledger:_ —
 
@@ -227,12 +227,12 @@ _Ledger:_ —
 - `sent:tatoeba-5332` いくらですか？ — Quanto custa?
 - `sent:tatoeba-9930561` それをください。 — Me dê isso, por favor.
 - `sent:tatoeba-127122` 値段は決して高くない。 — O preço não é nada caro.
-- `sent:tatoeba-84094` 部屋代はいくらですか？ — Quanto custa o quarto?
 - `sent:tatoeba-137848` 代金はレジでお払い下さい。 — O pagamento deve ser feito no caixa, por favor.
-- `sent:tatoeba-2123447` 値段を下げるべきだと思います。 — Eu acho que devíamos baixar o preço.
-- produção: Obrigado. Assim está bom. → ありがとう。これでけっこうです。
-- produção: Obrigado, é só isso. → ありがとう、それだけだよ。
-- produção: Muito obrigado mesmo. → 本当にありがとうございます
+- `sent:tatoeba-9408530` 左が受付で、右が会計です。 — À esquerda fica a recepção e à direita, o caixa.
+- `sent:tatoeba-3598838` あれは毒だ。 — Aquilo é veneno.
+- produção: A conta, por favor. → お会計お願いします。
+- produção: Desculpe por lhe pedir um favor tão grande e trabalhoso. → たいそうご無理をお願いしてすみません。
+- produção: Olá, tudo bem com você? → こんにちは、お元気ですか。
 
 </details>
 
@@ -242,7 +242,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 1
 
-### `*` · camada C · hash `907b1669ae2f440c`
+### `*` · camada C · hash `3eb32e510c9d4867`
 
 _Ledger:_ —
 
@@ -258,15 +258,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-220250` この豚肉は１キロいくらですか。 — Quanto custa um quilo desta carne de porco?
 - `sent:tatoeba-190094` 一番高い車はいくらぐらいですか。 — Quanto custa, mais ou menos, o carro mais caro?
-- `sent:jec-2434` どんどんガソリンの値段が上がります — O preço da gasolina não para de subir.
-- `sent:tatoeba-233659` あなたに払うのか、レジで払うのか。 — Eu pago a você ou pago no caixa?
-- `sent:tatoeba-185332` 会計はお帰りのレジでおねがいします。 — O pagamento, por favor, faça no caixa da saída.
-- `sent:tatoeba-145755` 食料品の値段はすぐに下がるでしょうね。 — Os preços dos alimentos vão cair logo, não é?
-- produção: Eu acho que devíamos baixar o preço. → 値段を下げるべきだと思います。
+- `sent:jec-0436` 彼が初めてそれを見た — Ele viu aquilo pela primeira vez.
+- `sent:tatoeba-109210` 彼は暇なときにそれをやった。 — Ele fez isso quando estava livre.
+- `sent:tatoeba-112260` 彼はそれからどうなりましたか。 — E ele, o que aconteceu com ele depois disso?
+- `sent:tatoeba-205912` それから彼はメガネをはずした。 — Depois disso, ele tirou os óculos.
+- `sent:tatoeba-119330` 彼が料金を払わなかったので水道を止められた。 — Como ele não pagou a conta, cortaram a água dele.
+- produção: Aquilo é veneno. → あれは毒だ。
+- produção: À esquerda fica a recepção e à direita, o caixa. → 左が受付で、右が会計です。
 - produção: O pagamento deve ser feito no caixa, por favor. → 代金はレジでお払い下さい。
-- produção: Quanto custa o quarto? → 部屋代はいくらですか？
 
 </details>
 
@@ -276,7 +276,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 2
 
-### `*` · camada C · hash `a9712ca8ee75371e`
+### `*` · camada C · hash `f8daa6ee36cd19ad`
 
 _Ledger:_ —
 
@@ -292,15 +292,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-160972` 私はこのワープロを手ごろな値段で買った。 — Eu comprei este processador de texto por um preço acessível.
+- `sent:tatoeba-87935` 彼女は知能の程度が高い。 — O nível de inteligência dela é alto.
+- `sent:tatoeba-204910` それは彼女の性格の表れだ。 — Isso é um reflexo da personalidade dela.
+- `sent:tatoeba-13713986` それは彼女の期待の現れです。 — Isso é uma demonstração das expectativas dela.
+- `sent:tatoeba-205962` それ以来彼女に会っていません。 — Não a vejo desde então.
 - `sent:tatoeba-229723` あれは何ですか。 — O que é aquilo?
-- `sent:tatoeba-229742` あれはキジです。 — Aquilo é um faisão.
-- `sent:tatoeba-229731` あれはネコですか。 — Aquilo é um gato?
-- `sent:tatoeba-229736` あれはテーブルです。 — Aquilo é uma mesa.
-- `sent:jec-0436` 彼が初めてそれを見た — Ele viu aquilo pela primeira vez.
-- produção: Os preços dos alimentos vão cair logo, não é? → 食料品の値段はすぐに下がるでしょうね。
-- produção: O pagamento, por favor, faça no caixa da saída. → 会計はお帰りのレジでおねがいします。
-- produção: Eu pago a você ou pago no caixa? → あなたに払うのか、レジで払うのか。
+- `sent:tatoeba-218479` これは何を表しますか。 — O que isso representa?
+- produção: Como ele não pagou a conta, cortaram a água dele. → 彼が料金を払わなかったので水道を止められた。
+- produção: Depois disso, ele tirou os óculos. → それから彼はメガネをはずした。
+- produção: E ele, o que aconteceu com ele depois disso? → 彼はそれからどうなりましたか。
 
 </details>
 
@@ -310,7 +310,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 3
 
-### `*` · camada C · hash `6a0682a494b8ca27`
+### `*` · camada C · hash `b81b7267e59f15b0`
 
 _Ledger:_ —
 
@@ -332,9 +332,9 @@ _Ledger:_ —
 - `sent:tatoeba-2941029` あれ、私何言おうとしたんだっけ？ — Ué, o que mesmo que eu ia dizer?
 - `sent:tatoeba-229178` いくらお礼を言っても言い切れない。 — Por mais que eu agradeça, nunca será o bastante.
 - `sent:tatoeba-205771` それでは、あなたは来ないということですか。 — Então isso quer dizer que você não vem?
-- produção: Ele viu aquilo pela primeira vez. → 彼が初めてそれを見た
-- produção: Aquilo é uma mesa. → あれはテーブルです。
-- produção: Aquilo é um gato? → あれはネコですか。
+- produção: O que isso representa? → これは何を表しますか。
+- produção: O que é aquilo? → あれは何ですか。
+- produção: Não a vejo desde então. → それ以来彼女に会っていません。
 
 </details>
 
@@ -344,7 +344,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 4
 
-### `*` · camada C · hash `b1aa84de17a871bc`
+### `*` · camada C · hash `4816215182ce4871`
 
 _Ledger:_ —
 
@@ -360,12 +360,12 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-112261` 彼はそれができる唯一の人です。 — Ele é a única pessoa que consegue fazer isso.
+- `sent:tatoeba-121802` 年上の人には敬意を払うべきだ。 — A gente deve respeitar quem é mais velho.
 - `sent:tatoeba-199394` どんな人でもそれをすることができる。 — Qualquer pessoa consegue fazer isso.
-- `sent:tatoeba-8687007` それでいい？ — Assim está bom?
-- `sent:tatoeba-3488181` それでいいよ。 — Assim está bom.
-- `sent:tatoeba-8748248` これ、食べなくてもいい？ — Tudo bem se eu não comer isto?
-- `sent:tatoeba-4562312` それをしないほうがいいよ！ — É melhor não fazer isso!
-- `sent:tatoeba-199061` なるべく安いほうがいいです。 — De preferência, o mais barato possível.
+- `sent:tatoeba-76098` 思ったより安くあがった。 — Saiu mais barato do que eu pensava.
+- `sent:tatoeba-204523` それを聞いて気の毒に思う。 — Sinto muito por saber disso.
+- `sent:tatoeba-159773` それは単なる偶然だと思う。 — Acho que foi só coincidência.
 - produção: Então isso quer dizer que você não vem? → それでは、あなたは来ないということですか。
 - produção: Por mais que eu agradeça, nunca será o bastante. → いくらお礼を言っても言い切れない。
 - produção: Ué, o que mesmo que eu ia dizer? → あれ、私何言おうとしたんだっけ？
@@ -378,7 +378,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 5
 
-### `*` · camada C · hash `9e54fdef8ea70e48`
+### `*` · camada C · hash `ec7af4d28d85dac3`
 
 _Ledger:_ —
 
@@ -394,15 +394,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-74146` それが高1の時だから17年が経ちました。 — Isso foi no primeiro ano do ensino médio, então já se passaram 17 anos.
-- `sent:tatoeba-149750` 自分の力だけでそれをできる。 — Consigo fazer isso só com as minhas próprias forças.
-- `sent:tatoeba-76061` 自分でもそれをやってみます。 — Eu também vou tentar fazer isso por conta própria.
-- `sent:tatoeba-149971` 自分でそれをしなければならない。 — Você tem que fazer isso sozinho.
-- `sent:jec-1593` 彼が郊外に家を買った — Ele comprou uma casa no subúrbio.
-- `sent:tatoeba-9240812` 家を買ったんだってね。 — Soube que você comprou uma casa, né.
-- produção: De preferência, o mais barato possível. → なるべく安いほうがいいです。
-- produção: É melhor não fazer isso! → それをしないほうがいいよ！
-- produção: Tudo bem se eu não comer isto? → これ、食べなくてもいい？
+- `sent:tatoeba-219445` この木は高いがあの木は更に高い。 — Esta árvore é alta, mas aquela é ainda mais.
+- `sent:tatoeba-8687007` それでいい？ — Assim está bom?
+- `sent:tatoeba-3488181` それでいいよ。 — Assim está bom.
+- `sent:tatoeba-8748248` これ、食べなくてもいい？ — Tudo bem se eu não comer isto?
+- `sent:tatoeba-4562312` それをしないほうがいいよ！ — É melhor não fazer isso!
+- `sent:tatoeba-199061` なるべく安いほうがいいです。 — De preferência, o mais barato possível.
+- produção: Acho que foi só coincidência. → それは単なる偶然だと思う。
+- produção: Sinto muito por saber disso. → それを聞いて気の毒に思う。
+- produção: Saiu mais barato do que eu pensava. → 思ったより安くあがった。
 
 </details>
 
@@ -412,7 +412,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 6
 
-### `*` · camada C · hash `737944ce738aa567`
+### `*` · camada C · hash `04341e1a8a7e1d7b`
 
 _Ledger:_ —
 
@@ -428,15 +428,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-182409` 救出されてはじめて、彼女は食べた。 — Só depois de ser resgatada é que ela comeu.
-- `sent:tatoeba-1115376` あのレストランは何時に閉まるの？ — A que horas aquele restaurante fecha?
+- `sent:tatoeba-227004` お水をください。 — Me dê água, por favor.
 - `sent:tatoeba-10364750` ご飯とパン、どっちが好き？ — Arroz ou pão, de qual você gosta mais?
+- `sent:tatoeba-160973` このレストランの雰囲気が好き。 — Gosto do ambiente desse restaurante.
+- `sent:tatoeba-13795168` 天然のミネラルウォーターを飲むのが好きです。 — Eu gosto de beber água mineral natural.
 - `sent:tatoeba-79093` 夕食の用意はできているから、いつでも食べたいときに食べられるよ。 — O jantar já está pronto, então a gente pode comer na hora que quiser.
 - `sent:tatoeba-9819543` どうして誰も私が作ったものを食べようとしないの？ — Por que ninguém quer comer o que eu fiz?
-- `sent:tatoeba-200661` とてもおいしいよ。 — Está muito gostoso!
 - produção: Tudo bem se eu não comer isto? → これ、食べなくてもいい？
-- produção: Soube que você comprou uma casa, né. → 家を買ったんだってね。
-- produção: Ele comprou uma casa no subúrbio. → 彼が郊外に家を買った
+- produção: De preferência, o mais barato possível. → なるべく安いほうがいいです。
+- produção: É melhor não fazer isso! → それをしないほうがいいよ！
 
 </details>
 
@@ -446,7 +446,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 1
 
-### `*` · camada C · hash `2b2ce70b18886c8f`
+### `*` · camada C · hash `6fc34da07e4d4537`
 
 _Ledger:_ —
 
@@ -463,14 +463,14 @@ _Ledger:_ —
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
 - `sent:tatoeba-10899775` わたしはもう食堂で昼ごはんを食べました。 — Eu já almocei no refeitório.
+- `sent:tatoeba-200661` とてもおいしいよ。 — Está muito gostoso!
+- `sent:tatoeba-182254` 去年トマトを作ったがとてもおいしかった。 — No ano passado eu plantei tomates, e ficaram muito gostosos.
 - `sent:tatoeba-171644` 今日は魚の食いが悪い。 — Hoje os peixes não estão mordendo a isca.
 - `sent:tatoeba-172639` 今は食べたくないんです。 — É que agora não estou a fim de comer.
 - `sent:tatoeba-11009755` 食べながら話しちゃダメだよ。 — Não pode falar enquanto come!
-- `sent:tatoeba-226844` お茶を飲みながら話しませんか。 — Que tal conversarmos enquanto tomamos um chá?
-- `sent:tatoeba-226845` お茶を飲みながら話しましょう。 — Vamos conversar enquanto tomamos um chá.
-- produção: Está muito gostoso! → とてもおいしいよ。
 - produção: Por que ninguém quer comer o que eu fiz? → どうして誰も私が作ったものを食べようとしないの？
 - produção: O jantar já está pronto, então a gente pode comer na hora que quiser. → 夕食の用意はできているから、いつでも食べたいときに食べられるよ。
+- produção: Eu gosto de beber água mineral natural. → 天然のミネラルウォーターを飲むのが好きです。
 
 </details>
 
@@ -480,7 +480,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 2
 
-### `*` · camada C · hash `e38639be466a6021`
+### `*` · camada C · hash `b375822d06ff6747`
 
 _Ledger:_ —
 
@@ -497,14 +497,14 @@ _Ledger:_ —
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
 - `sent:tatoeba-10557770` １日に水を少なくとも３リットルは飲みます。 — Bebo pelo menos três litros de água por dia.
+- `sent:tatoeba-97583` 彼らはレストランの奥の方に座った。 — Eles sentaram no fundo do restaurante.
 - `sent:tatoeba-10657609` そんなに食べないの！ — Não come tanto assim!
+- `sent:tatoeba-204265` そんなに食べるのは異常だ。 — Comer tanto assim é anormal.
+- `sent:tatoeba-145930` 食べるのにどうしてそんなに手間がかかるのか。 — Por que você demora tanto pra comer?
 - `sent:tatoeba-145934` 食べながら読んではいけません。 — Não se deve ler enquanto come.
-- `sent:tatoeba-412068` 生の魚を食べる犬なんているのだろうか？ — Será que existe mesmo cachorro que come peixe cru?
-- `sent:tatoeba-5329` 私は友達とビールを飲みに行った。 — Fui tomar uma cerveja com uns amigos.
-- `sent:tatoeba-236798` 今晩あなたと一緒にレストランにいけません。 — Hoje à noite não posso ir ao restaurante com você.
-- produção: Vamos conversar enquanto tomamos um chá. → お茶を飲みながら話しましょう。
-- produção: Que tal conversarmos enquanto tomamos um chá? → お茶を飲みながら話しませんか。
 - produção: Não pode falar enquanto come! → 食べながら話しちゃダメだよ。
+- produção: É que agora não estou a fim de comer. → 今は食べたくないんです。
+- produção: Hoje os peixes não estão mordendo a isca. → 今日は魚の食いが悪い。
 
 </details>
 
@@ -514,7 +514,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 3
 
-### `*` · camada C · hash `d0bf6ee8d4217d77`
+### `*` · camada C · hash `9577b7a1e733becc`
 
 _Ledger:_ —
 
@@ -530,15 +530,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-179391` 空気と人間との関係は水と魚との関係と同じだ。 — A relação entre o ar e o ser humano é igual à relação entre a água e o peixe.
-- `sent:tatoeba-10092041` 水を出しっぱなしにしないで。 — Não deixe a água correndo.
-- `sent:tatoeba-83083` 母はお昼に私が食べたいものを出してくれた。 — No almoço, minha mãe serviu o que eu queria comer.
-- `sent:tatoeba-10617667` 食べてから寝たよ。 — A gente comeu e depois foi dormir.
-- `sent:tatoeba-83169` 母が作ってくれた食事をおいしく食べた。 — A gente comeu com gosto a comida que minha mãe fez.
-- `sent:tatoeba-187939` 何か食べるものがほしい。 — Quero algo para comer.
-- produção: Hoje à noite não posso ir ao restaurante com você. → 今晩あなたと一緒にレストランにいけません。
-- produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
-- produção: Será que existe mesmo cachorro que come peixe cru? → 生の魚を食べる犬なんているのだろうか？
+- `sent:tatoeba-143649` 水道の水が勢いよく出ている。 — A água da torneira está saindo com força.
+- `sent:tatoeba-185915` 我々は魚を生で食べる。 — Nós comemos peixe cru.
+- `sent:tatoeba-224297` ここは食べ物もおいしいし、サービスもよい。 — Aqui a comida é gostosa e o atendimento também é bom.
+- `sent:tatoeba-157292` 私は犬に肉を与えた。 — Eu dei carne para o meu cachorro.
+- `sent:tatoeba-412068` 生の魚を食べる犬なんているのだろうか？ — Será que existe mesmo cachorro que come peixe cru?
+- `sent:tatoeba-5329` 私は友達とビールを飲みに行った。 — Fui tomar uma cerveja com uns amigos.
+- produção: Não se deve ler enquanto come. → 食べながら読んではいけません。
+- produção: Por que você demora tanto pra comer? → 食べるのにどうしてそんなに手間がかかるのか。
+- produção: Comer tanto assim é anormal. → そんなに食べるのは異常だ。
 
 </details>
 
@@ -548,7 +548,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 4
 
-### `*` · camada C · hash `95023f84a448ba77`
+### `*` · camada C · hash `8f8c75c9e38370b7`
 
 _Ledger:_ —
 
@@ -564,15 +564,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-202470` ディナーはたいがいコーヒーで終わる。 — O jantar quase sempre termina com um café.
-- `sent:tatoeba-137747` 大きなカヌーが水をきって進んでいた。 — Uma grande canoa avançava cortando a água.
-- `sent:tatoeba-8775094` お箸で食べるのは難しいですか？ — É difícil comer com hashis?
-- `sent:tatoeba-5220` 毎日お昼ご飯を作っているよ。 — Eu faço o almoço todo dia, viu.
-- `sent:tatoeba-13440729` 注文を受けてから作るのが受注生産です。 — Produção sob encomenda é fabricar só depois de receber o pedido.
-- `sent:tatoeba-78125` 旅行中はほとんど米は食べられなかった。 — Durante a viagem, a gente quase não conseguiu comer arroz.
-- produção: Quero algo para comer. → 何か食べるものがほしい。
-- produção: A gente comeu com gosto a comida que minha mãe fez. → 母が作ってくれた食事をおいしく食べた。
-- produção: A gente comeu e depois foi dormir. → 食べてから寝たよ。
+- `sent:tatoeba-197249` ビンの底には水が少し残っていた。 — Tinha um pouco de água no fundo da garrafa.
+- `sent:tatoeba-236798` 今晩あなたと一緒にレストランにいけません。 — Hoje à noite não posso ir ao restaurante com você.
+- `sent:tatoeba-9936514` レストランで働いたことなど一度もない。 — Nunca na vida trabalhei em restaurante.
+- `sent:tatoeba-179391` 空気と人間との関係は水と魚との関係と同じだ。 — A relação entre o ar e o ser humano é igual à relação entre a água e o peixe.
+- `sent:tatoeba-10092041` 水を出しっぱなしにしないで。 — Não deixe a água correndo.
+- `sent:tatoeba-83083` 母はお昼に私が食べたいものを出してくれた。 — No almoço, minha mãe serviu o que eu queria comer.
+- produção: Fui tomar uma cerveja com uns amigos. → 私は友達とビールを飲みに行った。
+- produção: Será que existe mesmo cachorro que come peixe cru? → 生の魚を食べる犬なんているのだろうか？
+- produção: Eu dei carne para o meu cachorro. → 私は犬に肉を与えた。
 
 </details>
 
@@ -582,7 +582,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 5
 
-### `*` · camada C · hash `4e7e9a96722cc8c7`
+### `*` · camada C · hash `b2cac18b0dcff89d`
 
 _Ledger:_ —
 
@@ -598,15 +598,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-147790` 出かける前に食べなくてはならない。 — Preciso comer antes de sair.
-- `sent:tatoeba-201917` テントの中ではなくて外で食べよう。 — Vamos comer lá fora em vez de dentro da barraca.
-- `sent:tatoeba-162347` 私は、そのころビールが嫌いだった。 — Naquela época, eu não gostava de cerveja.
-- `sent:tatoeba-231327` あの頃はコーヒー１杯が２００円だったよ。 — Naquela época, uma xícara de café custava 200 ienes, viu.
-- `sent:jec-2741` 彼がせっせと彼女の口に水を運んだ — Ele levava água com afinco até a boca dela.
-- `sent:tatoeba-197915` パブはビールを飲みに人々が集まる場所だ。 — O pub é um lugar onde as pessoas se reúnem para beber cerveja.
-- produção: Durante a viagem, a gente quase não conseguiu comer arroz. → 旅行中はほとんど米は食べられなかった。
-- produção: Produção sob encomenda é fabricar só depois de receber o pedido. → 注文を受けてから作るのが受注生産です。
-- produção: Eu faço o almoço todo dia, viu. → 毎日お昼ご飯を作っているよ。
+- `sent:tatoeba-225298` ケーキを食べてしまったら手に残らない。 — Depois que você comer todo o bolo, não sobra nada nas mãos.
+- `sent:tatoeba-10617667` 食べてから寝たよ。 — A gente comeu e depois foi dormir.
+- `sent:tatoeba-8729106` コーヒーにクリームを入れますか？ — Quer creme no café?
+- `sent:tatoeba-10335372` この魚、骨が多いね。 — Esse peixe tem muita espinha, né?
+- `sent:tatoeba-144724` 辛くて刺激の多いものは食べないように。 — Evite comer coisas apimentadas e muito fortes.
+- `sent:tatoeba-187939` 何か食べるものがほしい。 — Quero algo para comer.
+- produção: No almoço, minha mãe serviu o que eu queria comer. → 母はお昼に私が食べたいものを出してくれた。
+- produção: Não deixe a água correndo. → 水を出しっぱなしにしないで。
+- produção: A relação entre o ar e o ser humano é igual à relação entre a água e o peixe. → 空気と人間との関係は水と魚との関係と同じだ。
 
 </details>
 
@@ -616,7 +616,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 6
 
-### `*` · camada C · hash `d19681ef304accb7`
+### `*` · camada C · hash `2963b8e961118bdb`
 
 _Ledger:_ —
 
@@ -632,15 +632,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-154919` 私は電車の中で読む本がほしい。 — Eu quero um livro para ler no trem.
-- `sent:tatoeba-206708` その本には１ページおきに地図がのっている。 — Nesse livro, há um mapa a cada duas páginas.
-- `sent:tatoeba-162318` 私は、バスで学校に行く。 — Eu vou para a escola de ônibus.
-- `sent:tatoeba-201017` どこから出るんですか。 — De onde (ele/isso) parte?
-- `sent:tatoeba-198139` バスは１５分ごとにでます。 — O ônibus sai a cada quinze minutos.
-- `sent:tatoeba-198125` バスはどのくらい前に出ましたか。 — Há quanto tempo o ônibus saiu?
-- produção: O pub é um lugar onde as pessoas se reúnem para beber cerveja. → パブはビールを飲みに人々が集まる場所だ。
-- produção: Ele levava água com afinco até a boca dela. → 彼がせっせと彼女の口に水を運んだ
-- produção: Naquela época, uma xícara de café custava 200 ienes, viu. → あの頃はコーヒー１杯が２００円だったよ。
+- `sent:tatoeba-198204` バスでどのくらいかかりますか。 — Quanto tempo leva de ônibus?
+- `sent:tatoeba-201024` どこかは今五時だろう。 — Em algum lugar agora devem ser cinco horas.
+- `sent:tatoeba-234972` ７時までに着きたいんだけど。 — É que eu queria chegar até as 7 horas...
+- `sent:tatoeba-235139` ５時に駅で会うことになっている。 — Está combinado que vou encontrá-lo às cinco na estação.
+- `sent:tatoeba-10910772` ３時に駅に行かなくちゃいけないんだよ。 — Eu tenho que ir até a estação às três horas.
+- `sent:tatoeba-187008` 家は互いに近くにある。 — As casas ficam perto umas das outras.
+- produção: À esquerda fica a recepção e à direita, o caixa. → 左が受付で、右が会計です。
+- produção: Quero algo para comer. → 何か食べるものがほしい。
+- produção: Evite comer coisas apimentadas e muito fortes. → 辛くて刺激の多いものは食べないように。
 
 </details>
 
@@ -650,7 +650,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 1
 
-### `*` · camada C · hash `f70558eb3fbc430a`
+### `*` · camada C · hash `80619195ccf0b18a`
 
 _Ledger:_ —
 
@@ -666,15 +666,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-154919` 私は電車の中で読む本がほしい。 — Eu quero um livro para ler no trem.
+- `sent:tatoeba-7967876` この地図上では僕はどこにいますか？ — Onde eu estou neste mapa?
 - `sent:tatoeba-84645` 父は以前はバスで仕事に行ったものだ。 — Meu pai costumava ir de ônibus para o trabalho.
-- `sent:tatoeba-4802` それがどこから来たのか分からなかった。 — Eu não sabia de onde aquilo tinha vindo.
-- `sent:tatoeba-5115` 電話はどこでできる？ — Onde dá para telefonar?
-- `sent:tatoeba-227716` おじは学校の近くに住んでいる。 — Meu tio mora perto da escola.
-- `sent:tatoeba-188877` 駅へはどのように行けばよいですか。 — Como faço para chegar à estação?
-- `sent:tatoeba-179327` 空港まで父を迎えに行きました。 — Fui ao aeroporto buscar meu pai.
-- produção: Há quanto tempo o ônibus saiu? → バスはどのくらい前に出ましたか。
-- produção: O ônibus sai a cada quinze minutos. → バスは１５分ごとにでます。
-- produção: De onde (ele/isso) parte? → どこから出るんですか。
+- `sent:tatoeba-11589793` この引用はどこから持ってきたの？ — De onde você tirou essa citação?
+- `sent:tatoeba-188944` 駅で弁当を買った。 — Comprei uma marmita na estação.
+- `sent:tatoeba-3595182` そのドレスどこで買ったの？ — Onde você comprou esse vestido?
+- produção: As casas ficam perto umas das outras. → 家は互いに近くにある。
+- produção: Eu tenho que ir até a estação às três horas. → ３時に駅に行かなくちゃいけないんだよ。
+- produção: Está combinado que vou encontrá-lo às cinco na estação. → ５時に駅で会うことになっている。
 
 </details>
 
@@ -684,7 +684,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 2
 
-### `*` · camada C · hash `8977d81e583de8dd`
+### `*` · camada C · hash `65ffe4107df20190`
 
 _Ledger:_ —
 
@@ -700,15 +700,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-182700` 休み中にどこへいくつもりですか。 — Aonde você pretende ir durante as férias?
-- `sent:tatoeba-10725053` 電車で行くつもりなの？それとも車？ — Você pretende ir de trem? Ou de carro?
-- `sent:tatoeba-4786026` 電車のなかに傘を忘れてきた。 — Esqueci o guarda-chuva no trem.
-- `sent:tatoeba-10899657` きのう電車に傘を忘れました。 — Ontem esqueci o guarda-chuva no trem.
-- `sent:tatoeba-203709` タクシーよりも歩くほうがはやいだろう。 — Andar a pé deve ser mais rápido do que pegar um táxi.
-- `sent:tatoeba-75827` 二本の道はそこでクロスしている。 — As duas estradas se cruzam ali.
-- produção: Fui ao aeroporto buscar meu pai. → 空港まで父を迎えに行きました。
-- produção: Como faço para chegar à estação? → 駅へはどのように行けばよいですか。
-- produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
+- `sent:tatoeba-3081092` この橋は2年前に建設された。 — Esta ponte foi construída há dois anos.
+- `sent:tatoeba-222302` この近くに日本の銀行の支店はありますか。 — Tem alguma agência de banco japonês aqui perto?
+- `sent:tatoeba-189917` 右の鼻に豆が入ってしまいました。 — Entrou uma ervilha na minha narina direita.
+- `sent:tatoeba-162318` 私は、バスで学校に行く。 — Eu vou para a escola de ônibus.
+- `sent:tatoeba-227716` おじは学校の近くに住んでいる。 — Meu tio mora perto da escola.
+- `sent:tatoeba-1170898` 私が学校に着いた時には、その競技は終わってしまっていた。 — Quando eu cheguei na escola, a prova já tinha acabado.
+- produção: Onde você comprou esse vestido? → そのドレスどこで買ったの？
+- produção: Comprei uma marmita na estação. → 駅で弁当を買った。
+- produção: De onde você tirou essa citação? → この引用はどこから持ってきたの？
 
 </details>
 
@@ -718,7 +718,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 3
 
-### `*` · camada C · hash `182e4d63d3d3ddb3`
+### `*` · camada C · hash `a00947c2ecc6df9b`
 
 _Ledger:_ —
 
@@ -734,15 +734,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-193061` やっと着いた。 — Finalmente chegamos.
-- `sent:tatoeba-141127` 船は港に着いた。 — O navio chegou ao porto.
-- `sent:tatoeba-11545589` 今着いたところよ。 — Acabei de chegar agora.
-- `sent:tatoeba-157014` 私は今着いたばかりだ。 — Eu acabei de chegar agora.
-- `sent:tatoeba-187339` 何日くらいで着きますか。 — Em quantos dias mais ou menos chego lá?
-- `sent:tatoeba-84766` 父は５時に駅に着く予定だ。 — Meu pai tem previsão de chegar à estação às cinco horas.
-- produção: As duas estradas se cruzam ali. → 二本の道はそこでクロスしている。
-- produção: Andar a pé deve ser mais rápido do que pegar um táxi. → タクシーよりも歩くほうがはやいだろう。
-- produção: Ontem esqueci o guarda-chuva no trem. → きのう電車に傘を忘れました。
+- `sent:tatoeba-10349168` 川には新しい橋が建設されています。 — Está sendo construída uma ponte nova sobre o rio.
+- `sent:tatoeba-4802` それがどこから来たのか分からなかった。 — Eu não sabia de onde aquilo tinha vindo.
+- `sent:tatoeba-5115` 電話はどこでできる？ — Onde dá para telefonar?
+- `sent:tatoeba-182700` 休み中にどこへいくつもりですか。 — Aonde você pretende ir durante as férias?
+- `sent:tatoeba-10725053` 電車で行くつもりなの？それとも車？ — Você pretende ir de trem? Ou de carro?
+- `sent:tatoeba-4786026` 電車のなかに傘を忘れてきた。 — Esqueci o guarda-chuva no trem.
+- produção: Quando eu cheguei na escola, a prova já tinha acabado. → 私が学校に着いた時には、その競技は終わってしまっていた。
+- produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
+- produção: Eu vou para a escola de ônibus. → 私は、バスで学校に行く。
 
 </details>
 
@@ -752,7 +752,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 4
 
-### `*` · camada C · hash `132f6d05ca56f485`
+### `*` · camada C · hash `9090a761bc15680f`
 
 _Ledger:_ —
 
@@ -768,15 +768,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-200926` どこに座ったらいいですか。 — Onde eu devo me sentar?
-- `sent:tatoeba-158256` 私は駅までずっと走った。 — Eu corri o caminho inteiro até a estação.
-- `sent:tatoeba-124791` 電車は３０分ごとに走っている。 — O trem circula a cada 30 minutos.
-- `sent:tatoeba-198112` バスは今出発したところだ。 — O ônibus acabou de sair agora.
-- `sent:tatoeba-4939` 「以前にどこかで会ったことがありませんか」とその学生はたずねた。 — "Será que já não nos encontramos em algum lugar antes?", perguntou o estudante.
-- `sent:tatoeba-10614509` この通りは、空港に続いています。 — Esta rua leva ao aeroporto.
-- produção: Meu pai tem previsão de chegar à estação às cinco horas. → 父は５時に駅に着く予定だ。
-- produção: Em quantos dias mais ou menos chego lá? → 何日くらいで着きますか。
-- produção: Eu acabei de chegar agora. → 私は今着いたばかりだ。
+- `sent:tatoeba-158721` 私はもっとよく聞こえるように近くへ移動した。 — Cheguei mais perto para ouvir melhor.
+- `sent:tatoeba-203709` タクシーよりも歩くほうがはやいだろう。 — Andar a pé deve ser mais rápido do que pegar um táxi.
+- `sent:tatoeba-198114` バスは五分後に発車します。 — O ônibus sai em cinco minutos.
+- `sent:tatoeba-230210` アメリカの首都はどこですか。 — Qual é a capital dos Estados Unidos?
+- `sent:tatoeba-75827` 二本の道はそこでクロスしている。 — As duas estradas se cruzam ali.
+- `sent:tatoeba-198075` バスよりむしろ歩きたい。 — Prefiro ir a pé a pegar ônibus.
+- produção: Esqueci o guarda-chuva no trem. → 電車のなかに傘を忘れてきた。
+- produção: Você pretende ir de trem? Ou de carro? → 電車で行くつもりなの？それとも車？
+- produção: Aonde você pretende ir durante as férias? → 休み中にどこへいくつもりですか。
 
 </details>
 
@@ -786,7 +786,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 5
 
-### `*` · camada C · hash `04c89bf7611c7a03`
+### `*` · camada C · hash `7652a99ca75a93ea`
 
 _Ledger:_ —
 
@@ -802,15 +802,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-222010` この交差点は何と呼ばれていますか。 — Como se chama este cruzamento?
-- `sent:tatoeba-126861` 地図の青い線は川を表す。 — As linhas azuis no mapa representam os rios.
-- `sent:tatoeba-141381` 川の近くにテントを張った。 — Armamos a barraca perto do rio.
-- `sent:tatoeba-234850` ＦＡＸで地図を送っていただけませんか。 — Você poderia me enviar o mapa por fax?
-- `sent:jec-0673` あっという間に４０度近くまで熱が出た — Num piscar de olhos, a febre subiu para quase 40 graus.
-- `sent:tatoeba-137633` 大学は駅から遠いんです。 — A universidade fica longe da estação.
-- produção: Esta rua leva ao aeroporto. → この通りは、空港に続いています。
-- produção: "Será que já não nos encontramos em algum lugar antes?", perguntou o estudante. → 「以前にどこかで会ったことがありませんか」とその学生はたずねた。
-- produção: O ônibus acabou de sair agora. → バスは今出発したところだ。
+- `sent:tatoeba-109862` 彼は一分の差で電車に乗り遅れた。 — Ele perdeu o trem por um minuto.
+- `sent:tatoeba-203721` タクシーに乗るのは私には贅沢だ。 — Andar de táxi é luxo para mim.
+- `sent:tatoeba-11075598` トムは電車に乗り遅れたのかも。まだ来てないんだもん。 — O Tom deve ter perdido o trem. É que ele ainda não chegou.
+- `sent:tatoeba-184538` 角を曲がって大きなトラックがやってきた。 — Dobrando a esquina, um caminhão grande veio chegando.
+- `sent:tatoeba-1806283` 空港行きの次の電車は二番ホームから出ます。 — O próximo trem para o aeroporto sai da plataforma dois.
+- `sent:tatoeba-200910` どこの会社にお勤めですか。 — Em que empresa você trabalha?
+- produção: Prefiro ir a pé a pegar ônibus. → バスよりむしろ歩きたい。
+- produção: As duas estradas se cruzam ali. → 二本の道はそこでクロスしている。
+- produção: Qual é a capital dos Estados Unidos? → アメリカの首都はどこですか。
 
 </details>
 
@@ -820,7 +820,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 6
 
-### `*` · camada C · hash `d683832ddf4d441b`
+### `*` · camada C · hash `35f33eb111003191`
 
 _Ledger:_ —
 
@@ -836,15 +836,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-109884` 彼は一日中ベッドで寝てばかりいた。 — Ele ficou só dormindo na cama o dia inteiro.
 - `sent:tatoeba-84462` 父は部屋にいます。 — Meu pai está no quarto.
+- `sent:tatoeba-140621` 素敵な部屋ですね。 — Que quarto lindo, né?
 - `sent:tatoeba-84142` 部屋は真っ暗だった。 — O quarto estava totalmente escuro.
 - `sent:tatoeba-84163` 部屋の中は暗かった。 — Estava escuro dentro do quarto.
 - `sent:tatoeba-84222` 部屋には家具がない。 — Não tem nenhum móvel no quarto.
-- `sent:tatoeba-84158` 部屋の電気がつかない。 — A luz do quarto não acende.
+- `sent:tatoeba-224322` ここは快適な部屋だ。 — Este quarto é confortável.
 - produção: A gente comeu e depois foi dormir. → 食べてから寝たよ。
 - produção: Eu gostaria de fazer uma reserva para o jantar de amanhã à noite. → 明日の夜のディナーの予約をお願いします。
-- produção: O setor de reservas, por favor. → 予約係をお願いします。
+- produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
 
 </details>
 
@@ -854,7 +854,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 1
 
-### `*` · camada C · hash `43b103b3bcaec796`
+### `*` · camada C · hash `9d059b034cfd5a4b`
 
 _Ledger:_ —
 
@@ -870,13 +870,13 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-84227` 部屋にはほとんど子供がいなかった。 — Quase não havia crianças no quarto.
+- `sent:tatoeba-152777` 私は妹と共同で部屋を使っている。 — Divido o quarto com a minha irmã mais nova.
 - `sent:tatoeba-126245` 朝、シャワーを使ってもいいですか。 — De manhã, posso tomar banho de chuveiro?
-- `sent:tatoeba-4562257` ホテルには外国人が多い。 — No hotel há muitos estrangeiros.
-- `sent:jec-4320` 彼がホテルを朝、４時過ぎに出発する — Ele sai do hotel de manhã, depois das quatro.
-- `sent:tatoeba-13059182` 最近あまり寝ていないので今日は早く寝ようと思う。 — Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo.
-- `sent:tatoeba-218592` これはその箱をあける鍵です。 — Esta é a chave que abre essa caixa.
-- `sent:tatoeba-74415` この部屋の本は私の物ではありません。 — Os livros deste quarto não são meus.
-- produção: A luz do quarto não acende. → 部屋の電気がつかない。
+- `sent:tatoeba-170376` 妻が寝た後、書斎で仕事をした。 — Depois que minha esposa foi dormir, trabalhei no escritório.
+- `sent:tatoeba-92305` 彼女はその部屋の中央に立っていた。 — Ela estava em pé no meio da sala.
+- `sent:tatoeba-86878` 彼女は部屋に美しい家具を備えた。 — Ela mobiliou o quarto com móveis bonitos.
+- produção: Este quarto é confortável. → ここは快適な部屋だ。
 - produção: Não tem nenhum móvel no quarto. → 部屋には家具がない。
 - produção: Estava escuro dentro do quarto. → 部屋の中は暗かった。
 
@@ -888,7 +888,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 2
 
-### `*` · camada C · hash `747879269b18ec51`
+### `*` · camada C · hash `f2ca1b9e21cb4bbc`
 
 _Ledger:_ —
 
@@ -904,15 +904,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-78606` 来年ここに新しいホテルが建てられるだろう。 — Ano que vem devem construir um hotel novo aqui.
-- `sent:tatoeba-77964` 料金の手ごろなホテルを見つけて下さい。 — Por favor, ache um hotel com preço acessível.
-- `sent:tatoeba-3313203` 今夜は早めに寝ようと思う。 — Estou pensando em dormir mais cedo hoje à noite.
 - `sent:tatoeba-10723441` 兄は毎日シャワーを浴びます。 — Meu irmão mais velho toma banho de chuveiro todos os dias.
-- `sent:tatoeba-76532` トイレをお借りしていい？ — Posso usar o banheiro?
-- `sent:tatoeba-84383` 父は部屋にも庭にも見当たらなかった。 — Meu pai não estava nem no quarto nem no jardim.
-- produção: Os livros deste quarto não são meus. → この部屋の本は私の物ではありません。
-- produção: Esta é a chave que abre essa caixa. → これはその箱をあける鍵です。
-- produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
+- `sent:tatoeba-121988` 猫が部屋から飛び出した。 — Um gato saiu disparado do quarto.
+- `sent:jec-4320` 彼がホテルを朝、４時過ぎに出発する — Ele sai do hotel de manhã, depois das quatro.
+- `sent:tatoeba-13059182` 最近あまり寝ていないので今日は早く寝ようと思う。 — Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo.
+- `sent:tatoeba-109884` 彼は一日中ベッドで寝てばかりいた。 — Ele ficou só dormindo na cama o dia inteiro.
+- `sent:tatoeba-101820` 彼は怒って部屋を飛び出した。 — Ele saiu do quarto furioso.
+- produção: Ela mobiliou o quarto com móveis bonitos. → 彼女は部屋に美しい家具を備えた。
+- produção: Ela estava em pé no meio da sala. → 彼女はその部屋の中央に立っていた。
+- produção: Depois que minha esposa foi dormir, trabalhei no escritório. → 妻が寝た後、書斎で仕事をした。
 
 </details>
 
@@ -922,7 +922,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 3
 
-### `*` · camada C · hash `c751e75b1e5cb045`
+### `*` · camada C · hash `0fc643722e66e06c`
 
 _Ledger:_ —
 
@@ -938,15 +938,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-121103` 彼があんな安ホテルに泊まるなんておかしい。 — É estranho que ele se hospede num hotel tão baratinho assim.
-- `sent:tatoeba-79903` 目覚めると、見慣れない部屋にいた。 — Quando acordei, estava num quarto que eu não conhecia.
-- `sent:tatoeba-10587984` 先にトイレ行ってから行くから。 — Vou primeiro no banheiro e depois eu vou, tá?
-- `sent:tatoeba-82875` 母は彼を私の部屋につれてきた。 — Minha mãe trouxe ele para o meu quarto.
-- `sent:tatoeba-12324657` 泊まるホテルが見つからなかったから野宿した。 — Como não consegui achar um hotel para ficar, dormi ao relento.
-- `sent:tatoeba-78975` 予約は確認されています。 — A reserva está confirmada.
-- produção: Meu pai não estava nem no quarto nem no jardim. → 父は部屋にも庭にも見当たらなかった。
-- produção: Posso usar o banheiro? → トイレをお借りしていい？
-- produção: Meu irmão mais velho toma banho de chuveiro todos os dias. → 兄は毎日シャワーを浴びます。
+- `sent:tatoeba-212601` そのホテルは言葉で表現できないほど豪華だった。 — Aquele hotel era luxuoso além do que dá para descrever.
+- `sent:tatoeba-77964` 料金の手ごろなホテルを見つけて下さい。 — Por favor, ache um hotel com preço acessível.
+- `sent:tatoeba-218592` これはその箱をあける鍵です。 — Esta é a chave que abre essa caixa.
+- `sent:tatoeba-74415` この部屋の本は私の物ではありません。 — Os livros deste quarto não são meus.
+- `sent:tatoeba-74765` 仲間がすべて寝ていた。 — Meus companheiros estavam todos dormindo.
+- `sent:tatoeba-3313203` 今夜は早めに寝ようと思う。 — Estou pensando em dormir mais cedo hoje à noite.
+- produção: Ele saiu do quarto furioso. → 彼は怒って部屋を飛び出した。
+- produção: Ele ficou só dormindo na cama o dia inteiro. → 彼は一日中ベッドで寝てばかりいた。
+- produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
 
 </details>
 
@@ -956,7 +956,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 4
 
-### `*` · camada C · hash `14b5251998e9e35e`
+### `*` · camada C · hash `1aac1b6d28bde28f`
 
 _Ledger:_ —
 
@@ -972,15 +972,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-145652` 寝る前に歯をみがかなくてはいけないですよ。 — Você tem que escovar os dentes antes de dormir, viu.
-- `sent:tatoeba-11953118` トイレは、階段の後ろです。 — O banheiro fica atrás da escada.
-- `sent:tatoeba-10171288` コーヒーを飲むとトイレが近くなるんだ。 — Quando tomo café, fico com vontade de ir ao banheiro logo.
-- `sent:tatoeba-10990458` お風呂にせっけんがありません。 — Não tem sabonete no banheiro.
-- `sent:tatoeba-204702` それらは西洋の風呂よりずっといいです。 — Eles são muito melhores que os banhos ocidentais.
-- `sent:tatoeba-76366` ローマのホテルの予約を、３日ずらさなければならなくなった。 — Tive que adiar em três dias a reserva do hotel em Roma.
-- produção: A reserva está confirmada. → 予約は確認されています。
-- produção: Como não consegui achar um hotel para ficar, dormi ao relento. → 泊まるホテルが見つからなかったから野宿した。
-- produção: Minha mãe trouxe ele para o meu quarto. → 母は彼を私の部屋につれてきた。
+- `sent:tatoeba-8787906` ドアは全部鍵が掛かってる？ — As portas estão todas trancadas?
+- `sent:tatoeba-171033` 困ったことに今晩泊まる宿がありません。 — O problema é que não temos onde dormir hoje à noite.
+- `sent:tatoeba-11556335` 冬は毛布を2枚かけて寝ます。 — No inverno eu durmo com dois cobertores.
+- `sent:tatoeba-76532` トイレをお借りしていい？ — Posso usar o banheiro?
+- `sent:tatoeba-84383` 父は部屋にも庭にも見当たらなかった。 — Meu pai não estava nem no quarto nem no jardim.
+- `sent:tatoeba-121103` 彼があんな安ホテルに泊まるなんておかしい。 — É estranho que ele se hospede num hotel tão baratinho assim.
+- produção: Estou pensando em dormir mais cedo hoje à noite. → 今夜は早めに寝ようと思う。
+- produção: Meus companheiros estavam todos dormindo. → 仲間がすべて寝ていた。
+- produção: Os livros deste quarto não são meus. → この部屋の本は私の物ではありません。
 
 </details>
 
@@ -990,7 +990,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 5
 
-### `*` · camada C · hash `7a3b729cdd3e4364`
+### `*` · camada C · hash `0d0b90ea5b736d9a`
 
 _Ledger:_ —
 
@@ -1006,15 +1006,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-78967` 予約を変更したいのですが。 — Gostaria de alterar a minha reserva.
-- `sent:tatoeba-77233` 六時半に予約しています。 — Tenho reserva para as seis e meia.
-- `sent:tatoeba-212614` そのホテルにはプールやテニスコート等がある。 — Esse hotel tem piscina, quadra de tênis e coisas do tipo.
-- `sent:tatoeba-78961` 予約番号は１００３です。 — O número da reserva é 1003.
-- `sent:tatoeba-81665` 本が部屋のあちこちに散らばっていた。 — Tinha livros espalhados por todo o quarto.
-- `sent:tatoeba-78968` 予約を取り消してください。 — Por favor, cancele a minha reserva.
-- produção: Tive que adiar em três dias a reserva do hotel em Roma. → ローマのホテルの予約を、３日ずらさなければならなくなった。
-- produção: Eles são muito melhores que os banhos ocidentais. → それらは西洋の風呂よりずっといいです。
-- produção: Não tem sabonete no banheiro. → お風呂にせっけんがありません。
+- `sent:tatoeba-11072023` このトイレは生徒使用禁止です。 — Este banheiro é proibido para alunos.
+- `sent:tatoeba-79903` 目覚めると、見慣れない部屋にいた。 — Quando acordei, estava num quarto que eu não conhecia.
+- `sent:tatoeba-1429078` テントの中で寝るのには慣れてるよ。 — Já estou acostumado a dormir de barraca.
+- `sent:tatoeba-10587984` 先にトイレ行ってから行くから。 — Vou primeiro no banheiro e depois eu vou, tá?
+- `sent:tatoeba-82875` 母は彼を私の部屋につれてきた。 — Minha mãe trouxe ele para o meu quarto.
+- `sent:tatoeba-158947` 私はボーイに、私のスーツケースを部屋まで運ばせた。 — Pedi para o camareiro levar minhas malas até o quarto.
+- produção: É estranho que ele se hospede num hotel tão baratinho assim. → 彼があんな安ホテルに泊まるなんておかしい。
+- produção: Meu pai não estava nem no quarto nem no jardim. → 父は部屋にも庭にも見当たらなかった。
+- produção: Posso usar o banheiro? → トイレをお借りしていい？
 
 </details>
 
@@ -1024,7 +1024,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 6
 
-### `*` · camada C · hash `faebe8a8f425a4d6`
+### `*` · camada C · hash `bb513fe95e14e5df`
 
 _Ledger:_ —
 
@@ -1040,15 +1040,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-5060` ご出身はどちらですか。 — De onde você é?
+- `sent:tatoeba-210316` その仕事を終えるのは君の義務だ。 — Terminar esse trabalho é dever seu.
+- `sent:jec-0320` 彼が先生や友達にはっきり自分の意見を言う — Ele diz com clareza a sua própria opinião para os professores e os amigos.
+- `sent:tatoeba-164979` 私たち一人一人が自分の趣味を持っています。 — Cada um de nós tem o seu próprio hobby.
 - `sent:tatoeba-1046077` 仕事が必要だ。 — Preciso de um emprego.
-- `sent:tatoeba-186900` 家内のパートの仕事で少々余分な金が入る。 — Com o trabalho de meio período da minha esposa, entra um pouco de dinheiro extra.
-- `sent:tatoeba-84568` 父は昨日仕事を休んだ。 — Meu pai faltou no trabalho ontem.
-- `sent:tatoeba-147013` 小さな子どもでもその名前を知っている。 — Até uma criancinha sabe esse nome.
-- `sent:tatoeba-184254` 学生はもちろん先生も来た。 — Não só os alunos, como também o professor veio.
-- `sent:tatoeba-141544` 先生は生徒みんなを名前で呼んだ。 — O professor chamou todos os alunos pelo nome.
-- produção: "Será que já não nos encontramos em algum lugar antes?", perguntou o estudante. → 「以前にどこかで会ったことがありませんか」とその学生はたずねた。
+- `sent:tatoeba-232281` あなたは英語と国語どちらが好きですか。 — Você gosta mais de inglês ou de japonês?
+- produção: Depois que minha esposa foi dormir, trabalhei no escritório. → 妻が寝た後、書斎で仕事をした。
+- produção: Em que empresa você trabalha? → どこの会社にお勤めですか。
 - produção: Meu tio mora perto da escola. → おじは学校の近くに住んでいる。
-- produção: Meu pai costumava ir de ônibus para o trabalho. → 父は以前はバスで仕事に行ったものだ。
 
 </details>
 
@@ -1058,7 +1058,7 @@ _Ledger:_ —
 
 > Falar de você, parte 1
 
-### `*` · camada C · hash `cb2f840ada46fa6a`
+### `*` · camada C · hash `61202a43724b5dff`
 
 _Ledger:_ —
 
@@ -1074,15 +1074,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-84568` 父は昨日仕事を休んだ。 — Meu pai faltou no trabalho ontem.
 - `sent:tatoeba-9553773` 仕事から帰ったばかりよ。 — Acabei de chegar do trabalho.
 - `sent:tatoeba-11386733` 男はしゃべるのが好き。 — Homem gosta de conversar.
-- `sent:tatoeba-236934` このあたりにはそんな名前の人は一人もいない。 — Por aqui não há nem uma única pessoa com esse nome.
-- `sent:jec-4753` ＳＰの仕事の様子が今日テレビで放送されました — Hoje passou na TV uma reportagem sobre o trabalho dos seguranças.
-- `sent:tatoeba-104573` 彼は若いわりにはとてもいい仕事をした。 — Para alguém tão jovem, ele fez um trabalho muito bom.
-- `sent:jec-1094` 先輩がまだ会社にいました — O veterano ainda estava na empresa.
-- produção: O professor chamou todos os alunos pelo nome. → 先生は生徒みんなを名前で呼んだ。
-- produção: Não só os alunos, como também o professor veio. → 学生はもちろん先生も来た。
-- produção: Até uma criancinha sabe esse nome. → 小さな子どもでもその名前を知っている。
+- `sent:tatoeba-99645` 彼は名前を覚えるのが下手だ。 — Ele é ruim de gravar nomes.
+- `sent:tatoeba-80771` 名前を教えていただけますか。 — Você poderia me dizer o seu nome, por favor?
+- `sent:tatoeba-141544` 先生は生徒みんなを名前で呼んだ。 — O professor chamou todos os alunos pelo nome.
+- produção: Você gosta mais de inglês ou de japonês? → あなたは英語と国語どちらが好きですか。
+- produção: Preciso de um emprego. → 仕事が必要だ。
+- produção: Cada um de nós tem o seu próprio hobby. → 私たち一人一人が自分の趣味を持っています。
 
 </details>
 
@@ -1092,7 +1092,7 @@ _Ledger:_ —
 
 > Falar de você, parte 2
 
-### `*` · camada C · hash `e9917573a9b4932d`
+### `*` · camada C · hash `adff24fb71dd8b0a`
 
 _Ledger:_ —
 
@@ -1108,15 +1108,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-189285` 映画作りは人をわくわくさせる仕事だ。 — Fazer filme é um trabalho que deixa as pessoas empolgadas.
-- `sent:tatoeba-172440` 今後、あなたの仕事を手伝うようにしましょう。 — De agora em diante, vou procurar ajudar você no trabalho.
-- `sent:tatoeba-157990` 私は花が好きで、たとえばばらが好きだ。 — Eu gosto de flores; por exemplo, gosto de rosas.
-- `sent:tatoeba-79320` 友達として私は意見を言った。 — Como amigo, eu dei a minha opinião.
-- `sent:jec-0320` 彼が先生や友達にはっきり自分の意見を言う — Ele diz com clareza a sua própria opinião para os professores e os amigos.
-- `sent:tatoeba-184200` 学生達は校長に呼ばれてあつまった。 — Os alunos foram chamados pelo diretor e se reuniram.
-- produção: O veterano ainda estava na empresa. → 先輩がまだ会社にいました
-- produção: Para alguém tão jovem, ele fez um trabalho muito bom. → 彼は若いわりにはとてもいい仕事をした。
-- produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
+- `sent:tatoeba-9855987` 友達の大半はもう結婚してるよ。 — A maioria dos meus amigos já casou.
+- `sent:tatoeba-236934` このあたりにはそんな名前の人は一人もいない。 — Por aqui não há nem uma única pessoa com esse nome.
+- `sent:tatoeba-12476202` この国で仕事に就くのは難しいよ。 — Neste país é difícil arrumar emprego.
+- `sent:tatoeba-222670` この会社はテレビを製造しています。 — Esta empresa fabrica televisores.
+- `sent:jec-4753` ＳＰの仕事の様子が今日テレビで放送されました — Hoje passou na TV uma reportagem sobre o trabalho dos seguranças.
+- `sent:tatoeba-104573` 彼は若いわりにはとてもいい仕事をした。 — Para alguém tão jovem, ele fez um trabalho muito bom.
+- produção: O professor chamou todos os alunos pelo nome. → 先生は生徒みんなを名前で呼んだ。
+- produção: Você poderia me dizer o seu nome, por favor? → 名前を教えていただけますか。
+- produção: Ele é ruim de gravar nomes. → 彼は名前を覚えるのが下手だ。
 
 </details>
 
@@ -1126,7 +1126,7 @@ _Ledger:_ —
 
 > Falar de você, parte 3
 
-### `*` · camada C · hash `e74575ed5c510218`
+### `*` · camada C · hash `b4d6939f31a1d830`
 
 _Ledger:_ —
 
@@ -1142,15 +1142,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-142954` 正月は家族と過ごす時間が長いのです。 — No Ano-Novo, a gente passa bastante tempo com a família.
-- `sent:tatoeba-11727272` 「辛いものって、好き？」「大好き」 — "Comida picante, você gosta?" "Adoro."
-- `sent:tatoeba-233401` あなたの学生生活も間もなく終わりになる。 — A sua vida de estudante também vai chegar ao fim em breve.
-- `sent:tatoeba-164626` 私には外国人の友達が２人います。 — Eu tenho dois amigos estrangeiros.
-- `sent:tatoeba-11005020` 店の下調べのため会社帰りに寄ることにした。 — Decidi passar na loja na volta do trabalho para dar uma olhada antes.
-- `sent:tatoeba-84216` 部屋には数人の学生がいた。 — Havia vários estudantes no quarto.
-- produção: Os alunos foram chamados pelo diretor e se reuniram. → 学生達は校長に呼ばれてあつまった。
-- produção: Ele diz com clareza a sua própria opinião para os professores e os amigos. → 彼が先生や友達にはっきり自分の意見を言う
-- produção: Como amigo, eu dei a minha opinião. → 友達として私は意見を言った。
+- `sent:tatoeba-189285` 映画作りは人をわくわくさせる仕事だ。 — Fazer filme é um trabalho que deixa as pessoas empolgadas.
+- `sent:tatoeba-102734` 彼は息子に仕事を譲ることに決めました。 — Ele decidiu passar os negócios para o filho.
+- `sent:tatoeba-179712` 金より銀の指輪の方が好きです。 — Eu gosto mais de anel de prata do que de ouro.
+- `sent:tatoeba-13172379` お前は学生か？ — Cê é estudante?
+- `sent:tatoeba-78188` 旅行することが好きですか。 — Você gosta de viajar?
+- `sent:tatoeba-109051` 彼は会社の費用で旅行した。 — Ele viajou com as despesas pagas pela empresa.
+- produção: Para alguém tão jovem, ele fez um trabalho muito bom. → 彼は若いわりにはとてもいい仕事をした。
+- produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
+- produção: Esta empresa fabrica televisores. → この会社はテレビを製造しています。
 
 </details>
 
@@ -1160,7 +1160,7 @@ _Ledger:_ —
 
 > Falar de você, parte 4
 
-### `*` · camada C · hash `ee6f33107343a8a6`
+### `*` · camada C · hash `0505d31742b656e7`
 
 _Ledger:_ —
 
@@ -1176,15 +1176,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-10760527` 仕事、探してるんだって？ — Soube que você está procurando emprego, é verdade?
-- `sent:tatoeba-10899638` きのう友達におもしろいニュースを聞きました。 — Ontem fiquei sabendo de uma notícia interessante com um amigo.
-- `sent:tatoeba-217273` コンピューターならその仕事を簡単にできる。 — Se for um computador, dá pra fazer esse trabalho com facilidade.
-- `sent:tatoeba-80379` 明日までには仕事をやり終えているでしょう。 — Até amanhã eu já devo ter terminado o trabalho.
-- `sent:tatoeba-1590863` 去年より今年のクラスには学生が少ない。 — Este ano há menos alunos na turma do que no ano passado.
-- `sent:tatoeba-10899831` 先生は学生に新聞のコピーを渡しました。 — O professor entregou ao aluno uma cópia do jornal.
-- produção: Havia vários estudantes no quarto. → 部屋には数人の学生がいた。
-- produção: Decidi passar na loja na volta do trabalho para dar uma olhada antes. → 店の下調べのため会社帰りに寄ることにした。
-- produção: Eu tenho dois amigos estrangeiros. → 私には外国人の友達が２人います。
+- `sent:tatoeba-113727` 彼はこの町の出身です。 — Ele é desta cidade.
+- `sent:tatoeba-172440` 今後、あなたの仕事を手伝うようにしましょう。 — De agora em diante, vou procurar ajudar você no trabalho.
+- `sent:tatoeba-10050538` 夫は大抵８時には仕事に出かけます。 — Meu marido geralmente sai para o trabalho às 8 horas.
+- `sent:tatoeba-199410` どんな種類の花が好きですか。 — De que tipo de flor você gosta?
+- `sent:tatoeba-157990` 私は花が好きで、たとえばばらが好きだ。 — Eu gosto de flores; por exemplo, gosto de rosas.
+- `sent:tatoeba-120412` 彼が言うには、消防の仕事というのは大忙しか全く暇かのいずれかだそうだ。 — Segundo ele, o trabalho de bombeiro ou é correria total ou é tempo parado.
+- produção: Ele viajou com as despesas pagas pela empresa. → 彼は会社の費用で旅行した。
+- produção: Você gosta de viajar? → 旅行することが好きですか。
+- produção: Cê é estudante? → お前は学生か？
 
 </details>
 
@@ -1194,7 +1194,7 @@ _Ledger:_ —
 
 > Falar de você, parte 5
 
-### `*` · camada C · hash `a8f5e00dc38e309e`
+### `*` · camada C · hash `32d16c93ea609caf`
 
 _Ledger:_ —
 
@@ -1210,15 +1210,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-11021418` きれいで静かなアパートに住んでいます。 — Eu moro num apartamento bonito e silencioso.
-- `sent:tatoeba-163367` 私の趣味は小説を読むことです。 — Meu hobby é ler romances.
-- `sent:tatoeba-113170` 彼はそのために仕事を失った。 — Por causa disso, ele perdeu o emprego.
-- `sent:tatoeba-212988` そのために仕事を失うことになるかもしれない。 — Por causa disso, talvez eu acabe perdendo o emprego.
-- `sent:tatoeba-163381` 私の趣味はピアノを弾くことです。 — Meu hobby é tocar piano.
-- `sent:jec-1876` 姉さんタイプの女の人が好きだ — Eu gosto de mulheres do tipo 'irmã mais velha'.
-- produção: O professor entregou ao aluno uma cópia do jornal. → 先生は学生に新聞のコピーを渡しました。
-- produção: Este ano há menos alunos na turma do que no ano passado. → 去年より今年のクラスには学生が少ない。
-- produção: Até amanhã eu já devo ter terminado o trabalho. → 明日までには仕事をやり終えているでしょう。
+- `sent:tatoeba-184200` 学生達は校長に呼ばれてあつまった。 — Os alunos foram chamados pelo diretor e se reuniram.
+- `sent:tatoeba-173057` 国際金融で仕事を続けるつもりです。 — Pretendo seguir trabalhando em finanças internacionais.
+- `sent:tatoeba-110612` 彼はもう一年仕事を続ける契約をした。 — Ele assinou contrato para continuar mais um ano no trabalho.
+- `sent:tatoeba-8868835` これは家族の伝統です。 — Isso é uma tradição de família.
+- `sent:tatoeba-10983265` 家族にお土産を買います。 — Vou comprar lembrancinhas para a família.
+- `sent:tatoeba-117935` 彼の家族は小麦農家だった。 — A família dele plantava trigo.
+- produção: Segundo ele, o trabalho de bombeiro ou é correria total ou é tempo parado. → 彼が言うには、消防の仕事というのは大忙しか全く暇かのいずれかだそうだ。
+- produção: Eu gosto de flores; por exemplo, gosto de rosas. → 私は花が好きで、たとえばばらが好きだ。
+- produção: De que tipo de flor você gosta? → どんな種類の花が好きですか。
 
 </details>
 
@@ -1228,7 +1228,7 @@ _Ledger:_ —
 
 > Falar de você, parte 6
 
-### `*` · camada C · hash `fb17d23aee149829`
+### `*` · camada C · hash `1a52f448aaa350bf`
 
 _Ledger:_ —
 
@@ -1244,15 +1244,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-196300` ぼくは父に会いたい。 — Eu quero ver meu pai.
-- `sent:tatoeba-196299` ぼくは明日休みなんだ。 — Amanhã é minha folga.
-- `sent:tatoeba-79537` 約束は守った方がいい。 — É melhor você cumprir a promessa.
+- `sent:tatoeba-11171012` 明後日は火曜日です。 — Depois de amanhã é terça-feira.
+- `sent:tatoeba-185449` 会ってはじめて本当に人柄がわかるものだ。 — É só depois de conhecer alguém que você entende de verdade como a pessoa é.
+- `sent:tatoeba-91869` 彼女はどんなに忙しくても毎日絵を書く。 — Por mais ocupada que ela esteja, pinta todo dia.
 - `sent:tatoeba-78588` 来年はお目にかかれるでしょう。 — Ano que vem eu devo ter a oportunidade de encontrá-lo.
 - `sent:tatoeba-80608` 明日このことについてお目にかからなくてはと思います。 — Amanhã preciso me encontrar com você sobre isso.
 - `sent:tatoeba-80460` 明日は雨かしら。 — Será que amanhã vai chover?
-- produção: Até amanhã eu já devo ter terminado o trabalho. → 明日までには仕事をやり終えているでしょう。
-- produção: No Ano-Novo, a gente passa bastante tempo com a família. → 正月は家族と過ごす時間が長いのです。
 - produção: Hoje passou na TV uma reportagem sobre o trabalho dos seguranças. → ＳＰの仕事の様子が今日テレビで放送されました
+- produção: Como ando dormindo pouco ultimamente, hoje pretendo dormir cedo. → 最近あまり寝ていないので今日は早く寝ようと思う。
+- produção: Meu irmão mais velho toma banho de chuveiro todos os dias. → 兄は毎日シャワーを浴びます。
 
 </details>
 
@@ -1262,7 +1262,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 1
 
-### `*` · camada C · hash `02fe8b44de0e2338`
+### `*` · camada C · hash `2b54073844b3fb96`
 
 _Ledger:_ —
 
@@ -1279,11 +1279,11 @@ _Ledger:_ —
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
 - `sent:tatoeba-234998` ７月にしては今日はすずしい。 — Para julho, hoje está fresco.
-- `sent:tatoeba-79849` 問題はいつ始めるかだ。 — A questão é quando começar.
-- `sent:tatoeba-10014826` いつ始めるつもりですか？ — Quando você pretende começar?
+- `sent:tatoeba-209504` その手紙の日付はいつですか。 — Qual é a data dessa carta?
+- `sent:tatoeba-100542` 彼は病気の友を毎日見舞いに来る。 — Ele vem visitar o amigo doente todo dia.
 - `sent:tatoeba-152614` 私は明日死ぬかもしれない。 — Eu talvez morra amanhã.
 - `sent:tatoeba-78591` 来年で１７歳になるんだ。 — Ano que vem eu faço 17 anos.
-- `sent:tatoeba-118653` 彼に会うのはこの次にしましょう。 — Encontrar com ele a gente deixa para a próxima vez.
+- `sent:tatoeba-80068` 木村さんという人にパーティーで会ったよ。 — Conheci uma pessoa chamada Kimura na festa.
 - produção: Será que amanhã vai chover? → 明日は雨かしら。
 - produção: Amanhã preciso me encontrar com você sobre isso. → 明日このことについてお目にかからなくてはと思います。
 - produção: Ano que vem eu devo ter a oportunidade de encontrá-lo. → 来年はお目にかかれるでしょう。
@@ -1296,7 +1296,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 2
 
-### `*` · camada C · hash `4988b88e5c5f2ad4`
+### `*` · camada C · hash `4748240e6f25f9ea`
 
 _Ledger:_ —
 
@@ -1312,13 +1312,13 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-80068` 木村さんという人にパーティーで会ったよ。 — Conheci uma pessoa chamada Kimura na festa.
 - `sent:tatoeba-1037362` 「いつ起きるの？」「朝八時だよ」 — "Quando você acorda?" "Às oito da manhã."
 - `sent:tatoeba-171531` 今日は頭がさえません。 — Hoje minha cabeça não está funcionando bem.
 - `sent:tatoeba-9777117` 今日はちょっと頭が痛いの。 — Hoje estou com um pouco de dor de cabeça.
 - `sent:tatoeba-154767` 私は二時間以上も待った。 — Esperei mais de duas horas.
+- `sent:tatoeba-4930` またいつか風のように走るんだ。 — Algum dia vou correr de novo como o vento.
 - `sent:tatoeba-125943` 長い時間歩いたので疲れきった。 — Como caminhamos por muito tempo, ficamos exaustos.
-- produção: Encontrar com ele a gente deixa para a próxima vez. → 彼に会うのはこの次にしましょう。
+- produção: Conheci uma pessoa chamada Kimura na festa. → 木村さんという人にパーティーで会ったよ。
 - produção: Ano que vem eu faço 17 anos. → 来年で１７歳になるんだ。
 - produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
 
@@ -1330,7 +1330,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 3
 
-### `*` · camada C · hash `57c9355b4e99f891`
+### `*` · camada C · hash `6acc28d6f1ca9ced`
 
 _Ledger:_ —
 
@@ -1346,15 +1346,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-11013726` 毎日続けると力になる。 — Se você continua todos os dias, isso vira força.
+- `sent:tatoeba-4905` 何でうまくいかないか君に説明するにはずいぶん時間がかかりそうだ。 — Explicar para você por que não vai dar certo ia levar um tempão.
+- `sent:tatoeba-171514` 今日は非常に暑い。 — Hoje está muito quente.
 - `sent:tatoeba-80417` 明日は雪になると思う。 — Acho que amanhã vai nevar.
+- `sent:tatoeba-12508743` 明日は雪になるんだって。 — Ouvi dizer que amanhã vai nevar.
 - `sent:tatoeba-145155` 新聞によれば明日は雪だそうです。 — Segundo o jornal, amanhã vai nevar.
 - `sent:tatoeba-171539` 今日は天気がよかったのでみんなで外で遊んだ。 — Como hoje o tempo estava bom, brincamos todos juntos lá fora.
-- `sent:tatoeba-143418` 世界はいつ終わるのだろうか。 — Quando será que o mundo vai acabar?
-- `sent:tatoeba-536767` 今日はけっこう風が強いね。 — Hoje está ventando bastante, né?
 - produção: Como caminhamos por muito tempo, ficamos exaustos. → 長い時間歩いたので疲れきった。
+- produção: Algum dia vou correr de novo como o vento. → またいつか風のように走るんだ。
 - produção: Esperei mais de duas horas. → 私は二時間以上も待った。
-- produção: Hoje estou com um pouco de dor de cabeça. → 今日はちょっと頭が痛いの。
 
 </details>
 
@@ -1364,7 +1364,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 4
 
-### `*` · camada C · hash `3fb001f119eda7fa`
+### `*` · camada C · hash `1bfef9c97b58f9ac`
 
 _Ledger:_ —
 
@@ -1380,15 +1380,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-10303648` ３週間ごとに会ってます。 — A gente se encontra a cada três semanas.
-- `sent:tatoeba-190565` 1週間以内にお届けします。 — Faremos a entrega dentro de uma semana.
-- `sent:tatoeba-123138` 二週間ほど借りられるかい。 — Dá pra pegar emprestado por umas duas semanas?
-- `sent:tatoeba-190560` 一週間後にそのＣＤを返すよ。 — Eu te devolvo aquele CD daqui a uma semana.
-- `sent:tatoeba-11124523` 夏休みまで、あと一週間です。 — Falta uma semana para as férias de verão.
-- `sent:tatoeba-187165` 夏休みまであとわずか一週間だ。 — Falta só uma semana para as férias de verão.
-- produção: Hoje está ventando bastante, né? → 今日はけっこう風が強いね。
-- produção: Quando será que o mundo vai acabar? → 世界はいつ終わるのだろうか。
+- `sent:tatoeba-11169134` 今日は二人欠席です。 — Hoje faltaram dois.
+- `sent:tatoeba-2298758` 最近古い友人に会った。 — Encontrei um velho amigo esses dias.
+- `sent:tatoeba-80364` 明日も大学へ行くつもりだよ。 — Amanhã também pretendo ir à universidade.
+- `sent:tatoeba-143418` 世界はいつ終わるのだろうか。 — Quando será que o mundo vai acabar?
+- `sent:tatoeba-11991839` もし明日世界が終わるとしたらどうする？ — Se o mundo fosse acabar amanhã, o que você faria?
+- `sent:tatoeba-536767` 今日はけっこう風が強いね。 — Hoje está ventando bastante, né?
 - produção: Como hoje o tempo estava bom, brincamos todos juntos lá fora. → 今日は天気がよかったのでみんなで外で遊んだ。
+- produção: Segundo o jornal, amanhã vai nevar. → 新聞によれば明日は雪だそうです。
+- produção: Ouvi dizer que amanhã vai nevar. → 明日は雪になるんだって。
 
 </details>
 
@@ -1398,7 +1398,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 5
 
-### `*` · camada C · hash `b7aa46333ebf942e`
+### `*` · camada C · hash `1c818025fd194c82`
 
 _Ledger:_ —
 
@@ -1414,15 +1414,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-143547` 数学を１時間ほど勉強していたら、眠くなった。 — Quando eu estava estudando matemática por cerca de uma hora, fiquei com sono.
-- `sent:tatoeba-80373` 明日までに宿題をしなければならない。 — Tenho que fazer a lição de casa até amanhã.
-- `sent:tatoeba-150509` 時計が止まって、時間がわからなくなった。 — O relógio parou e eu fiquei sem saber as horas.
-- `sent:tatoeba-83926` インフルエンザを治すのに三週間かかりました。 — Levei três semanas para me curar da gripe.
-- `sent:tatoeba-1190209` 時間があまりないんです。急いでもらえませんか。 — É que não tenho muito tempo. Você poderia se apressar?
-- `sent:tatoeba-161057` 私はここで毎日泳いだものだ。 — Eu costumava nadar aqui todos os dias.
-- produção: Falta só uma semana para as férias de verão. → 夏休みまであとわずか一週間だ。
-- produção: Falta uma semana para as férias de verão. → 夏休みまで、あと一週間です。
-- produção: Eu te devolvo aquele CD daqui a uma semana. → 一週間後にそのＣＤを返すよ。
+- `sent:tatoeba-185452` 会えば必ず喧嘩する。 — Toda vez que se encontram, brigam.
+- `sent:tatoeba-171800` 今日はかなり寒い。 — Hoje está bem frio.
+- `sent:tatoeba-171813` 今日はいっそう寒い。 — Hoje está ainda mais frio.
+- `sent:tatoeba-1144222` 今日は恐ろしく寒い。 — Hoje está um frio terrível.
+- `sent:tatoeba-10303648` ３週間ごとに会ってます。 — A gente se encontra a cada três semanas.
+- `sent:tatoeba-222131` この券は２週間有効です。 — Este cupom vale por duas semanas.
+- produção: Hoje está ventando bastante, né? → 今日はけっこう風が強いね。
+- produção: Se o mundo fosse acabar amanhã, o que você faria? → もし明日世界が終わるとしたらどうする？
+- produção: Quando será que o mundo vai acabar? → 世界はいつ終わるのだろうか。
 
 </details>
 
@@ -1432,7 +1432,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 6
 
-### `*` · camada C · hash `c8eee4179ea7f446`
+### `*` · camada C · hash `8b48058031fa7eb7`
 
 _Ledger:_ —
 
@@ -1448,15 +1448,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-190909` 医者なら誰でも君に禁煙するように言うだろう。 — Qualquer médico vai mandar você parar de fumar.
+- `sent:tatoeba-1039551` 助けてください。 — Me ajuda, por favor.
 - `sent:tatoeba-190906` 医者にかかるべきだ。 — Você devia consultar um médico.
 - `sent:tatoeba-110065` 彼は医者として有名だ。 — Ele é famoso como médico.
 - `sent:tatoeba-110066` 彼は医者として無能だ。 — Ele é incompetente como médico.
-- `sent:tatoeba-190902` 医者に診てもらうべきですよ。 — Você deveria se consultar com um médico, viu?
-- `sent:tatoeba-84479` 父は私を医者にしたがっている。 — Meu pai quer fazer de mim um médico.
+- `sent:tatoeba-231218` あの医者は患者に優しい。 — Aquele médico é gentil com os pacientes.
+- `sent:tatoeba-103362` 彼は成長して医者になった。 — Ele cresceu e virou médico.
 - produção: Hoje estou com um pouco de dor de cabeça. → 今日はちょっと頭が痛いの。
-- produção: Num piscar de olhos, a febre subiu para quase 40 graus. → あっという間に４０度近くまで熱が出た
-- produção: Eu costumava nadar aqui todos os dias. → 私はここで毎日泳いだものだ。
+- produção: Este cupom vale por duas semanas. → この券は２週間有効です。
+- produção: A gente se encontra a cada três semanas. → ３週間ごとに会ってます。
 
 </details>
 
@@ -1466,7 +1466,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 1
 
-### `*` · camada C · hash `beb690fc045cef8e`
+### `*` · camada C · hash `7e159d0690fc8251`
 
 _Ledger:_ —
 
@@ -1482,14 +1482,14 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-10266474` 意識が戻ると、私は病院にいた。 — Quando voltei a mim, eu estava no hospital.
 - `sent:tatoeba-83934` 風邪を引かないように注意しよう。 — Vamos tomar cuidado para não pegar resfriado.
+- `sent:jec-0673` あっという間に４０度近くまで熱が出た — Num piscar de olhos, a febre subiu para quase 40 graus.
 - `sent:tatoeba-90106` 彼女は行ってしまった。ぼくは泣きたい気分だ。 — Ela foi embora. Estou com vontade de chorar.
-- `sent:tatoeba-10263746` 左の足が痛いです。 — Meu pé esquerdo está doendo.
-- `sent:tatoeba-171774` 今日はずっと気分がよい。 — Hoje estou me sentindo muito melhor.
-- `sent:tatoeba-189575` 雨の中で歌いたい気分だ。 — Estou com vontade de cantar na chuva.
-- `sent:tatoeba-172775` 今とてもゆったりした気分だ。 — Agora estou me sentindo bem relaxado.
-- produção: Meu pai quer fazer de mim um médico. → 父は私を医者にしたがっている。
-- produção: Você deveria se consultar com um médico, viu? → 医者に診てもらうべきですよ。
+- `sent:tatoeba-223742` この頃、気分が優れないんだ。 — Ultimamente não tenho me sentido bem.
+- `sent:tatoeba-137996` 僕は体育の授業中に怪我をした。 — Me machuquei na aula de educação física.
+- produção: Ele cresceu e virou médico. → 彼は成長して医者になった。
+- produção: Aquele médico é gentil com os pacientes. → あの医者は患者に優しい。
 - produção: Ele é incompetente como médico. → 彼は医者として無能だ。
 
 </details>
@@ -1500,7 +1500,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 2
 
-### `*` · camada C · hash `048e3a7c46361260`
+### `*` · camada C · hash `bdc83cbb7ce204c6`
 
 _Ledger:_ —
 
@@ -1517,14 +1517,14 @@ _Ledger:_ —
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
 - `sent:tatoeba-83924` 風邪引かないようにコートを着た。 — Vesti um casaco para não pegar resfriado.
+- `sent:tatoeba-10263746` 左の足が痛いです。 — Meu pé esquerdo está doendo.
+- `sent:tatoeba-137964` 体中の筋肉が痛いです。 — Estou com dor muscular no corpo inteiro.
+- `sent:tatoeba-179256` 靴が痛くてとてもつらい。 — O sapato está me machucando, tá bem sofrido.
+- `sent:tatoeba-79499` 薬が効いた。 — O remédio fez efeito.
 - `sent:tatoeba-11270411` 薬飲んだっけ？ — Será que eu já tomei o remédio?
-- `sent:tatoeba-79502` お薬ができましたよ。 — O seu remédio ficou pronto, viu?
-- `sent:tatoeba-226387` かぜをひいたらこの薬を飲むんだよ。 — Se você ficar resfriado, tome este remédio, viu?
-- `sent:tatoeba-214052` せきがひどかったので、苦い薬を飲んだ。 — A tosse estava terrível, então tomei um remédio amargo.
-- `sent:tatoeba-203287` たまには気分を変えて外食をしよう。 — De vez em quando, vamos mudar de ares e comer fora.
-- produção: Agora estou me sentindo bem relaxado. → 今とてもゆったりした気分だ。
-- produção: Estou com vontade de cantar na chuva. → 雨の中で歌いたい気分だ。
-- produção: Hoje estou me sentindo muito melhor. → 今日はずっと気分がよい。
+- produção: Me machuquei na aula de educação física. → 僕は体育の授業中に怪我をした。
+- produção: Ultimamente não tenho me sentido bem. → この頃、気分が優れないんだ。
+- produção: Ela foi embora. Estou com vontade de chorar. → 彼女は行ってしまった。ぼくは泣きたい気分だ。
 
 </details>
 
@@ -1534,7 +1534,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 3
 
-### `*` · camada C · hash `d4c53861ab66b6f7`
+### `*` · camada C · hash `a0f73120a10046a6`
 
 _Ledger:_ —
 
@@ -1550,15 +1550,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-189575` 雨の中で歌いたい気分だ。 — Estou com vontade de cantar na chuva.
+- `sent:tatoeba-203287` たまには気分を変えて外食をしよう。 — De vez em quando, vamos mudar de ares e comer fora.
 - `sent:tatoeba-192750` よく眠ったらだいぶ気分がよくなった。 — Depois que dormi bem, me senti bem melhor.
-- `sent:tatoeba-83003` 母は午前中病院に行きます。 — Minha mãe vai ao hospital de manhã.
-- `sent:tatoeba-85328` 病院まで１０マイルもある。 — Daqui até o hospital são nada menos que dez milhas.
-- `sent:jec-3163` 親はすぐにこどもを病院に連れてくる — Os pais levam os filhos ao hospital logo de cara.
-- `sent:tatoeba-85337` 病院の後ろにあるあの建物はなんですか。 — O que é aquele prédio que fica atrás do hospital?
-- `sent:tatoeba-203344` たぶん大丈夫だ。 — Provavelmente está tudo bem.
-- produção: De vez em quando, vamos mudar de ares e comer fora. → たまには気分を変えて外食をしよう。
-- produção: A tosse estava terrível, então tomei um remédio amargo. → せきがひどかったので、苦い薬を飲んだ。
-- produção: Se você ficar resfriado, tome este remédio, viu? → かぜをひいたらこの薬を飲むんだよ。
+- `sent:tatoeba-125242` 鉄は熱をよく伝える。 — O ferro conduz bem o calor.
+- `sent:tatoeba-183591` 危なく車にひかれるところだった。 — Por pouco não fui atropelado por um carro.
+- `sent:tatoeba-2205072` 家から遠くないところにあるのは軍の病院です。 — O que fica perto de casa é um hospital militar.
+- produção: Será que eu já tomei o remédio? → 薬飲んだっけ？
+- produção: O remédio fez efeito. → 薬が効いた。
+- produção: O sapato está me machucando, tá bem sofrido. → 靴が痛くてとてもつらい。
 
 </details>
 
@@ -1568,7 +1568,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 4
 
-### `*` · camada C · hash `11593b32d81e9d4c`
+### `*` · camada C · hash `ce2d9b9043deb259`
 
 _Ledger:_ —
 
@@ -1584,15 +1584,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-5001` 「気分はどうですか」と彼は尋ねた。 — "Como você está se sentindo?", ele perguntou.
-- `sent:tatoeba-10587764` お腹が痛いので今日は休みます。 — Estou com dor de barriga, então hoje vou faltar.
-- `sent:jec-1326` 急に子どもが熱を出した — De repente a criança teve febre.
+- `sent:tatoeba-124065` 当時は女の医者は多くなかった。 — Naquela época não havia muitas médicas.
+- `sent:tatoeba-203344` たぶん大丈夫だ。 — Provavelmente está tudo bem.
+- `sent:tatoeba-11890833` 現金でも大丈夫ですか？ — Pode ser em dinheiro?
+- `sent:tatoeba-8619639` どちらにしても大丈夫だよ。 — De qualquer jeito está tudo bem.
+- `sent:tatoeba-8743355` これ、生で食べても大丈夫？ — Dá pra comer isso cru?
 - `sent:tatoeba-74743` 右よ～し、左よ～し・・・、よし。大丈夫。 — Direita, liberado~; esquerda, liberado~...; pronto. Tudo certo.
-- `sent:tatoeba-5147343` お前は脳の半分があったら，危ない! — Se você tivesse metade de um cérebro, seria perigoso!
-- `sent:tatoeba-3454872` 風邪って人にうつすと治るってほんと？ — É verdade que, quando você passa o resfriado pra outra pessoa, você sara?
-- produção: Provavelmente está tudo bem. → たぶん大丈夫だ。
-- produção: O que é aquele prédio que fica atrás do hospital? → 病院の後ろにあるあの建物はなんですか。
-- produção: Os pais levam os filhos ao hospital logo de cara. → 親はすぐにこどもを病院に連れてくる
+- produção: O que fica perto de casa é um hospital militar. → 家から遠くないところにあるのは軍の病院です。
+- produção: Por pouco não fui atropelado por um carro. → 危なく車にひかれるところだった。
+- produção: O ferro conduz bem o calor. → 鉄は熱をよく伝える。
 
 </details>
 
@@ -1602,7 +1602,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 5
 
-### `*` · camada C · hash `dfb1b2aa1b7174e0`
+### `*` · camada C · hash `7cc02323b1e9520a`
 
 _Ledger:_ —
 
@@ -1618,15 +1618,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-212666` そのふるい橋をわたるのは危ない。 — Atravessar aquela ponte velha é perigoso.
-- `sent:tatoeba-198568` 喉がひりひりして、ちょっと熱があるんです。 — Minha garganta está ardendo e estou com um pouco de febre.
-- `sent:tatoeba-10901645` 危ないので、そちらへ行かないでください。 — Como é perigoso, por favor não vá para lá.
-- `sent:tatoeba-80616` 明日から５連休だから、みんなルンルン気分だね。 — Amanhã começa um feriadão de cinco dias, então todo mundo tá animado, né?
-- `sent:tatoeba-121897` 熱が上がった。 — A febre subiu.
-- `sent:tatoeba-83950` 風邪をひきませんように。 — Tomara que você não pegue um resfriado.
-- produção: É verdade que, quando você passa o resfriado pra outra pessoa, você sara? → 風邪って人にうつすと治るってほんと？
-- produção: Se você tivesse metade de um cérebro, seria perigoso! → お前は脳の半分があったら，危ない!
+- `sent:tatoeba-88015` 彼女は大丈夫だと言った。ところが実際はひどいけがをしていた。 — Ela disse que estava bem. Só que, na verdade, tinha se machucado feio.
+- `sent:jec-3163` 親はすぐにこどもを病院に連れてくる — Os pais levam os filhos ao hospital logo de cara.
+- `sent:tatoeba-186727` 火は非常に危ない。 — O fogo é muito perigoso.
+- `sent:tatoeba-11195054` この薬は男性にのみ効果があります。 — Este remédio só faz efeito em homens.
+- `sent:tatoeba-5001` 「気分はどうですか」と彼は尋ねた。 — "Como você está se sentindo?", ele perguntou.
+- `sent:tatoeba-85337` 病院の後ろにあるあの建物はなんですか。 — O que é aquele prédio que fica atrás do hospital?
 - produção: Direita, liberado~; esquerda, liberado~...; pronto. Tudo certo. → 右よ～し、左よ～し・・・、よし。大丈夫。
+- produção: Dá pra comer isso cru? → これ、生で食べても大丈夫？
+- produção: De qualquer jeito está tudo bem. → どちらにしても大丈夫だよ。
 
 </details>
 
@@ -1636,7 +1636,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 6
 
-### `*` · camada C · hash `0d0c4866e316ec4e`
+### `*` · camada C · hash `063c778e759a1d33`
 
 _Ledger:_ —
 
@@ -1652,15 +1652,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-85300` 病気のせいで私は旅行に行けなかった。 — Não consegui viajar por causa de uma doença.
-- `sent:tatoeba-78186` 旅行でこのガイドブックが役に立つかもしれませんよ。 — Esse guia pode ser útil na sua viagem, viu?
+- `sent:tatoeba-199229` なぜなら私は昨日長い間勉強したからです。 — Isso porque ontem eu estudei por muito tempo.
+- `sent:tatoeba-106778` 彼は昨日手術を受けた。 — Ele fez a cirurgia ontem.
+- `sent:tatoeba-170021` 昨日の嵐で建物は被害を受けた。 — Os prédios foram danificados pela tempestade de ontem.
 - `sent:tatoeba-142423` 昔の思い出が急に心に浮かんだ。 — As lembranças de antigamente me vieram de repente à mente.
+- `sent:tatoeba-78156` 旅行は期待通りでしたか。 — A viagem foi como você esperava?
 - `sent:tatoeba-143986` 人生は楽しい。 — A vida é divertida.
-- `sent:tatoeba-13537670` とても楽しい。 — É muito divertido.
-- `sent:tatoeba-78158` 旅行は楽しい。 — Viajar é divertido.
-- produção: Este ano há menos alunos na turma do que no ano passado. → 去年より今年のクラスには学生が少ない。
+- produção: Ele viajou com as despesas pagas pela empresa. → 彼は会社の費用で旅行した。
+- produção: Você gosta de viajar? → 旅行することが好きですか。
 - produção: Meu pai faltou no trabalho ontem. → 父は昨日仕事を休んだ。
-- produção: Durante a viagem, a gente quase não conseguiu comer arroz. → 旅行中はほとんど米は食べられなかった。
 
 </details>
 
@@ -1670,7 +1670,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 1
 
-### `*` · camada C · hash `b3d225afab679341`
+### `*` · camada C · hash `8d83d53ef156248d`
 
 _Ledger:_ —
 
@@ -1686,15 +1686,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-88740` 彼女は初めての飛行にたいへん神経質になっていた。 — Ela estava muito nervosa com o primeiro voo.
 - `sent:tatoeba-78177` 旅行についてはご両親と相談してください。 — Converse com os seus pais sobre a viagem, por favor.
+- `sent:tatoeba-156822` 私は昨日２０万円の利益を得た。 — Ontem eu tive 200 mil ienes de lucro.
 - `sent:tatoeba-171398` 今年のファッションは去年とはまったく違う。 — A moda deste ano é completamente diferente da do ano passado.
+- `sent:tatoeba-228002` 「この店は初めて？」「ええ、初めてです」 — "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez."
 - `sent:tatoeba-235631` ２、３度行ったことがある。 — Já fui lá duas ou três vezes.
-- `sent:tatoeba-84745` 父はオーストラリアへ２度行ったことがある。 — Meu pai já foi duas vezes para a Austrália.
-- `sent:tatoeba-223949` このお金は夏の旅行にとっておこう。 — Vamos guardar este dinheiro para a viagem de verão.
-- `sent:tatoeba-78171` 旅行に十分なお金がありますか。 — Você tem dinheiro suficiente para a viagem?
-- produção: Viajar é divertido. → 旅行は楽しい。
-- produção: É muito divertido. → とても楽しい。
 - produção: A vida é divertida. → 人生は楽しい。
+- produção: A viagem foi como você esperava? → 旅行は期待通りでしたか。
+- produção: As lembranças de antigamente me vieram de repente à mente. → 昔の思い出が急に心に浮かんだ。
 
 </details>
 
@@ -1704,7 +1704,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 2
 
-### `*` · camada C · hash `641ff28a39bc9536`
+### `*` · camada C · hash `8fbf3d906bc402c1`
 
 _Ledger:_ —
 
@@ -1720,15 +1720,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-144504` 人は経験から学ぶ。 — A gente aprende com a experiência.
+- `sent:tatoeba-157654` 私は去年の夏の冒険を覚えている。 — Eu lembro da aventura do verão passado.
+- `sent:tatoeba-223949` このお金は夏の旅行にとっておこう。 — Vamos guardar este dinheiro para a viagem de verão.
+- `sent:tatoeba-12275994` 去年の夏の出来事は忘れられないよ。 — Não consigo esquecer o que aconteceu no verão passado.
+- `sent:tatoeba-78171` 旅行に十分なお金がありますか。 — Você tem dinheiro suficiente para a viagem?
 - `sent:tatoeba-156748` 私は昨日生まれたわけではない。 — Eu não nasci ontem.
-- `sent:tatoeba-5118` 元気？旅行は良かった？ — Tudo bem? A viagem foi boa?
-- `sent:tatoeba-1897537` 一度会ったことがある。 — Já o encontrei uma vez.
-- `sent:tatoeba-225041` こういう場合には経験が物を言う。 — Em casos assim, é a experiência que fala mais alto.
-- `sent:jec-0071` 誰もが経験をする — Todo mundo passa por isso.
-- `sent:jec-0319` やはり経験がものを言います — No fim das contas, é a experiência que faz a diferença.
-- produção: Você tem dinheiro suficiente para a viagem? → 旅行に十分なお金がありますか。
-- produção: Vamos guardar este dinheiro para a viagem de verão. → このお金は夏の旅行にとっておこう。
-- produção: Meu pai já foi duas vezes para a Austrália. → 父はオーストラリアへ２度行ったことがある。
+- produção: Já fui lá duas ou três vezes. → ２、３度行ったことがある。
+- produção: "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez." → 「この店は初めて？」「ええ、初めてです」
+- produção: A moda deste ano é completamente diferente da do ano passado. → 今年のファッションは去年とはまったく違う。
 
 </details>
 
@@ -1738,7 +1738,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 3
 
-### `*` · camada C · hash `0cc2318130937b4a`
+### `*` · camada C · hash `ea90f1b84791becb`
 
 _Ledger:_ —
 
@@ -1754,15 +1754,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-11706794` タバコを吸うのって、これが初めて。 — É a primeira vez que eu fumo.
-- `sent:tatoeba-147605` 春は楽しい季節だ。 — A primavera é uma estação agradável.
-- `sent:tatoeba-81342` 毎朝とても楽しそうだけど。 — Mas você parece tão feliz toda manhã...
 - `sent:tatoeba-214558` すばらしい食事を経験下さい。 — Por favor, tenha uma refeição maravilhosa.
-- `sent:tatoeba-84089` 部屋探しは苦労することがある。 — Às vezes dá trabalho achar um lugar para morar.
-- `sent:tatoeba-10056979` 「ネクタイどれにするの？」「昨日買ったの」 — "Qual gravata você vai escolher?" "A que comprei ontem."
-- produção: No fim das contas, é a experiência que faz a diferença. → やはり経験がものを言います
-- produção: Todo mundo passa por isso. → 誰もが経験をする
-- produção: Em casos assim, é a experiência que fala mais alto. → こういう場合には経験が物を言う。
+- `sent:tatoeba-8842226` 楽しく過ごしてる？ — Está se divertindo?
+- `sent:tatoeba-1590863` 去年より今年のクラスには学生が少ない。 — Este ano há menos alunos na turma do que no ano passado.
+- `sent:tatoeba-225041` こういう場合には経験が物を言う。 — Em casos assim, é a experiência que fala mais alto.
+- `sent:tatoeba-78126` 旅行中の天気はどうだったかとビルにたずねた。 — Perguntei pro Bill como tinha sido o clima durante a viagem.
+- `sent:tatoeba-11706794` タバコを吸うのって、これが初めて。 — É a primeira vez que eu fumo.
+- produção: Eu não nasci ontem. → 私は昨日生まれたわけではない。
+- produção: Você tem dinheiro suficiente para a viagem? → 旅行に十分なお金がありますか。
+- produção: Não consigo esquecer o que aconteceu no verão passado. → 去年の夏の出来事は忘れられないよ。
 
 </details>
 
@@ -1772,7 +1772,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 4
 
-### `*` · camada C · hash `f7cad927c89fbd6a`
+### `*` · camada C · hash `40e7e3eb53f66b08`
 
 _Ledger:_ —
 
@@ -1788,15 +1788,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-157573` 私は近所の人と楽しい会話をしました。 — Tive uma conversa agradável com meu vizinho.
-- `sent:tatoeba-84567` 父は昨日入院しました。 — Meu pai foi internado ontem.
-- `sent:tatoeba-5217` 昨日動物園に行った。 — Ontem eu fui ao zoológico.
-- `sent:tatoeba-159016` 私はふつう旅行するときは日記をつける。 — Eu costumo escrever um diário quando viajo.
-- `sent:tatoeba-228002` 「この店は初めて？」「ええ、初めてです」 — "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez."
-- `sent:tatoeba-792555` カレーを初めて作りました。 — Fiz curry pela primeira vez.
-- produção: "Qual gravata você vai escolher?" "A que comprei ontem." → 「ネクタイどれにするの？」「昨日買ったの」
-- produção: Às vezes dá trabalho achar um lugar para morar. → 部屋探しは苦労することがある。
-- produção: Por favor, tenha uma refeição maravilhosa. → すばらしい食事を経験下さい。
+- `sent:tatoeba-147605` 春は楽しい季節だ。 — A primavera é uma estação agradável.
+- `sent:tatoeba-173656` 幸福とお金とが同一視されることがある。 — Às vezes felicidade e dinheiro são tratados como a mesma coisa.
+- `sent:tatoeba-81342` 毎朝とても楽しそうだけど。 — Mas você parece tão feliz toda manhã...
+- `sent:tatoeba-110451` 彼はヨーロッパへ旅行した。 — Ele viajou para a Europa.
+- `sent:tatoeba-102240` 彼は知識も経験も持っている。 — Ele tem conhecimento e experiência.
+- `sent:tatoeba-84089` 部屋探しは苦労することがある。 — Às vezes dá trabalho achar um lugar para morar.
+- produção: É a primeira vez que eu fumo. → タバコを吸うのって、これが初めて。
+- produção: Perguntei pro Bill como tinha sido o clima durante a viagem. → 旅行中の天気はどうだったかとビルにたずねた。
+- produção: Em casos assim, é a experiência que fala mais alto. → こういう場合には経験が物を言う。
 
 </details>
 
@@ -1806,7 +1806,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 5
 
-### `*` · camada C · hash `85069ac47faa76e2`
+### `*` · camada C · hash `d8529c37a67d36f6`
 
 _Ledger:_ —
 
@@ -1822,15 +1822,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-1783174` その旅行には千ドルから二千ドルかかります。 — Essa viagem custa de mil a dois mil dólares.
-- `sent:tatoeba-199229` なぜなら私は昨日長い間勉強したからです。 — Isso porque ontem eu estudei por muito tempo.
-- `sent:tatoeba-229934` アルバイトはいい経験になるの。 — Um trabalho de meio período vira uma boa experiência, sabe.
-- `sent:tatoeba-83999` 風やら雨やらで旅行は台無しだった。 — Entre o vento e a chuva, a viagem foi por água abaixo.
-- `sent:tatoeba-79666` 夜明けになって初めて彼は寝ついた。 — Ele só pegou no sono quando amanheceu.
-- `sent:tatoeba-11960481` やることがあるんだ。 — É que eu tenho coisas pra fazer.
-- produção: Fiz curry pela primeira vez. → カレーを初めて作りました。
-- produção: "É a primeira vez que você vem a esta loja?" "Sim, é a primeira vez." → 「この店は初めて？」「ええ、初めてです」
-- produção: Eu costumo escrever um diário quando viajo. → 私はふつう旅行するときは日記をつける。
+- `sent:tatoeba-107984` 彼は経験不足だ。 — Ele tem pouca experiência.
+- `sent:tatoeba-10056979` 「ネクタイどれにするの？」「昨日買ったの」 — "Qual gravata você vai escolher?" "A que comprei ontem."
+- `sent:tatoeba-156735` 私は昨日彼を訪問した。 — Ontem eu fiz uma visita a ele.
+- `sent:tatoeba-157573` 私は近所の人と楽しい会話をしました。 — Tive uma conversa agradável com meu vizinho.
+- `sent:tatoeba-2486229` 私は昨日論文を提出した。 — Eu entreguei o artigo ontem.
+- `sent:tatoeba-156782` 昨日レポートを提出したんだ。 — Entreguei o relatório ontem.
+- produção: Às vezes dá trabalho achar um lugar para morar. → 部屋探しは苦労することがある。
+- produção: Ele tem conhecimento e experiência. → 彼は知識も経験も持っている。
+- produção: Ele viajou para a Europa. → 彼はヨーロッパへ旅行した。
 
 </details>
 
@@ -1840,7 +1840,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 6
 
-### `*` · camada C · hash `497615df129c6c0f`
+### `*` · camada C · hash `29f3013d3998d0e8`
 
 _Ledger:_ —
 
@@ -1857,14 +1857,14 @@ _Ledger:_ —
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
 - `sent:tatoeba-4854` おめでとうございます。 — Parabéns!
-- `sent:tatoeba-147431` 書いてくださいますか。 — Você poderia escrever isso, por favor?
-- `sent:tatoeba-146817` 少し休ませてください。 — Me deixa descansar um pouco.
-- `sent:tatoeba-226794` お湯を少し沸かしてください。 — Por favor, ferva um pouco de água.
-- `sent:tatoeba-5109` もっとゆっくり話してください！ — Fale mais devagar, por favor!
-- `sent:tatoeba-226013` きっと手紙くださいね。 — Não deixe de me escrever, viu?
+- `sent:tatoeba-78970` 予約をお願いできますか。 — Posso fazer uma reserva?
+- `sent:tatoeba-78628` 来週休みを取ってもよろしいでしょうか。 — Seria possível eu tirar folga na semana que vem?
+- `sent:tatoeba-7136366` 平和に生活させてください。 — Me deixa viver em paz.
+- `sent:tatoeba-1148656` 慎重に運転してください。 — Dirija com cuidado, por favor.
+- `sent:tatoeba-146860` 少しステレオの音を小さくしてください。 — Abaixa um pouco o volume do som, por favor.
 - produção: Converse com os seus pais sobre a viagem, por favor. → 旅行についてはご両親と相談してください。
-- produção: Como é perigoso, por favor não vá para lá. → 危ないので、そちらへ行かないでください。
-- produção: Por favor, cancele a minha reserva. → 予約を取り消してください。
+- produção: Me ajuda, por favor. → 助けてください。
+- produção: Me dê água, por favor. → お水をください。
 
 </details>
 
@@ -1874,7 +1874,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 1
 
-### `*` · camada C · hash `97c85a6534dbf4b4`
+### `*` · camada C · hash `36286f4c1520304d`
 
 _Ledger:_ —
 
@@ -1890,15 +1890,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-78628` 来週休みを取ってもよろしいでしょうか。 — Seria possível eu tirar folga na semana que vem?
-- `sent:tatoeba-146189` 乗ってください。 — Por favor, entre (no veículo).
-- `sent:tatoeba-147801` 出かける前に、ドアにかぎをかけてください。 — Por favor, tranque a porta antes de sair.
-- `sent:tatoeba-1882978` 説明させてください。 — Deixe-me explicar.
-- `sent:tatoeba-146860` 少しステレオの音を小さくしてください。 — Abaixa um pouco o volume do som, por favor.
+- `sent:tatoeba-13146440` 教科書を開いてください。 — Abram o livro, por favor.
+- `sent:tatoeba-141924` 舌を見せてください。 — Mostre a língua, por favor.
+- `sent:tatoeba-9851514` 傷を見せてください。 — Me mostra o machucado, por favor.
 - `sent:tatoeba-206210` その緑のシャツを見せてください。 — Por favor, me mostre aquela camisa verde.
-- produção: Não deixe de me escrever, viu? → きっと手紙くださいね。
-- produção: Fale mais devagar, por favor! → もっとゆっくり話してください！
-- produção: Por favor, ferva um pouco de água. → お湯を少し沸かしてください。
+- `sent:tatoeba-223665` このスーツに合うネクタイを選んでください。 — Por favor, escolha uma gravata que combine com este terno.
+- `sent:tatoeba-8991113` 紙の下の部分に名前を書いてください。 — Escreva seu nome na parte de baixo da folha.
+- produção: Abaixa um pouco o volume do som, por favor. → 少しステレオの音を小さくしてください。
+- produção: Dirija com cuidado, por favor. → 慎重に運転してください。
+- produção: Me deixa viver em paz. → 平和に生活させてください。
 
 </details>
 
@@ -1908,7 +1908,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 2
 
-### `*` · camada C · hash `0836623dddbf1592`
+### `*` · camada C · hash `5cf52d2d0225bc59`
 
 _Ledger:_ —
 
@@ -1924,15 +1924,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-223665` このスーツに合うネクタイを選んでください。 — Por favor, escolha uma gravata que combine com este terno.
+- `sent:tatoeba-184096` 鞄を座席の下に置いてください。 — Coloque a bolsa embaixo do assento, por favor.
+- `sent:tatoeba-2397851` 背の順に並んでください。 — Fiquem em fila por altura, por favor.
 - `sent:tatoeba-78565` 頼みたいことがあります。ちょっとお願いしてもよろしいでしょうか？ — Tenho um pedido a fazer. Será que eu poderia pedir um favor?
+- `sent:tatoeba-10125641` 最後のチャンスをください。 — Me dá uma última chance, por favor.
 - `sent:tatoeba-124654` 電話を切らずにおいてください。 — Por favor, não desligue o telefone.
 - `sent:tatoeba-199509` どんなに遅くなっても起こしてください。 — Por mais tarde que fique, me acorde, por favor.
-- `sent:tatoeba-201345` どうぞお上がりください。 — Por favor, sirva-se à vontade.
-- `sent:tatoeba-222508` この機会を私は利用させていただきたい。 — Eu gostaria de aproveitar esta oportunidade.
+- produção: Escreva seu nome na parte de baixo da folha. → 紙の下の部分に名前を書いてください。
+- produção: Por favor, escolha uma gravata que combine com este terno. → このスーツに合うネクタイを選んでください。
 - produção: Por favor, me mostre aquela camisa verde. → その緑のシャツを見せてください。
-- produção: Abaixa um pouco o volume do som, por favor. → 少しステレオの音を小さくしてください。
-- produção: Deixe-me explicar. → 説明させてください。
 
 </details>
 
@@ -1942,7 +1942,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 3
 
-### `*` · camada C · hash `50e4033c79b67c21`
+### `*` · camada C · hash `ee9542bf461fb593`
 
 _Ledger:_ —
 
@@ -1958,15 +1958,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-74723` 「どいてください」「やんのか？あんちゃん」 — "Saia da frente, por favor." "Quer brigar, garotão?"
-- `sent:tatoeba-123791` 動かないでください。 — Por favor, não se mexa.
-- `sent:tatoeba-121505` 買い物ついでにでもお寄りください。 — Dê uma passada aqui qualquer dia, aproveitando quando for fazer compras.
-- `sent:tatoeba-78723` 来てくださればとてもうれしい。 — Eu ficaria muito feliz se você viesse.
-- `sent:tatoeba-1490062` 肉を半㌔ください。 — Meio quilo de carne, por favor.
-- `sent:tatoeba-76813` お子さんが車をおりたらすぐに車を出してください。 — Assim que a criança descer do carro, por favor saia com o carro imediatamente.
-- produção: Eu gostaria de aproveitar esta oportunidade. → この機会を私は利用させていただきたい。
-- produção: Por favor, sirva-se à vontade. → どうぞお上がりください。
+- `sent:tatoeba-149694` 自由に意見を述べてください。 — Fique à vontade para dar a sua opinião.
+- `sent:tatoeba-83404` 別の例をあげてください。 — Dê outro exemplo, por favor.
+- `sent:tatoeba-226013` きっと手紙くださいね。 — Não deixe de me escrever, viu?
+- `sent:tatoeba-211561` その机を左へ移動してください。 — Por favor, mova aquela mesa para a esquerda.
+- `sent:tatoeba-9614704` 私の耳を引っ張らないでください。 — Por favor, não puxe a minha orelha.
+- `sent:tatoeba-201255` どうぞ通してください。 — Com licença, deixa eu passar.
 - produção: Por mais tarde que fique, me acorde, por favor. → どんなに遅くなっても起こしてください。
+- produção: Por favor, não desligue o telefone. → 電話を切らずにおいてください。
+- produção: Me dá uma última chance, por favor. → 最後のチャンスをください。
 
 </details>
 
@@ -1976,7 +1976,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 4
 
-### `*` · camada C · hash `ee5af457c6a2f273`
+### `*` · camada C · hash `b478550af80c14d8`
 
 _Ledger:_ —
 
@@ -1992,15 +1992,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-149583` 失礼してもよろしいですか。 — Com licença, posso me retirar?
-- `sent:tatoeba-220381` この電報をすぐに打っていただきたい。 — Eu gostaria que você enviasse este telegrama imediatamente.
-- `sent:tatoeba-214616` ステーキは中位で焼いてください。 — Por favor, faça o bife ao ponto.
-- `sent:tatoeba-80049` 木曜日よりむしろ金曜日においでいただきたい。 — Eu preferiria que você viesse na sexta-feira, e não na quinta.
-- `sent:tatoeba-224121` コップ１杯の水をください。 — Me dê um copo de água, por favor.
-- `sent:tatoeba-8672817` 一日または二日ください。 — Me dê um ou dois dias, por favor.
-- produção: Assim que a criança descer do carro, por favor saia com o carro imediatamente. → お子さんが車をおりたらすぐに車を出してください。
-- produção: Meio quilo de carne, por favor. → 肉を半㌔ください。
-- produção: Eu ficaria muito feliz se você viesse. → 来てくださればとてもうれしい。
+- `sent:tatoeba-222508` この機会を私は利用させていただきたい。 — Eu gostaria de aproveitar esta oportunidade.
+- `sent:tatoeba-74723` 「どいてください」「やんのか？あんちゃん」 — "Saia da frente, por favor." "Quer brigar, garotão?"
+- `sent:tatoeba-9966137` ぜひご参加ください。 — Participe, por favor!
+- `sent:tatoeba-123791` 動かないでください。 — Por favor, não se mexa.
+- `sent:tatoeba-10079908` 月曜日に我々にまた加わってください。 — Junte-se a nós de novo na segunda-feira.
+- `sent:tatoeba-121505` 買い物ついでにでもお寄りください。 — Dê uma passada aqui qualquer dia, aproveitando quando for fazer compras.
+- produção: Com licença, deixa eu passar. → どうぞ通してください。
+- produção: Por favor, não puxe a minha orelha. → 私の耳を引っ張らないでください。
+- produção: Por favor, mova aquela mesa para a esquerda. → その机を左へ移動してください。
 
 </details>
 
@@ -2010,7 +2010,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 5
 
-### `*` · camada C · hash `8c1b907c6e91aa31`
+### `*` · camada C · hash `aa41fdb3cfe85bf3`
 
 _Ledger:_ —
 
@@ -2026,15 +2026,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-84229` 部屋にはノックなしで入らないでください。 — Por favor, não entre no quarto sem bater.
-- `sent:tatoeba-147768` 出るか入るかどちらかにしてください。 — Decida-se: ou sai, ou entra.
-- `sent:tatoeba-229187` いくつか質問させてください。 — Deixe-me fazer algumas perguntas.
-- `sent:tatoeba-214003` ぜひ来てください。 — Venha, por favor, sem falta!
-- `sent:tatoeba-8989567` 来週、ぜひ夕食をご馳走させてください。 — Na próxima semana, por favor, deixe-me oferecer o jantar a você.
-- `sent:tatoeba-84069` 封筒をください。 — Me dá um envelope, por favor.
-- produção: Me dê um ou dois dias, por favor. → 一日または二日ください。
-- produção: Me dê um copo de água, por favor. → コップ１杯の水をください。
-- produção: Eu preferiria que você viesse na sexta-feira, e não na quinta. → 木曜日よりむしろ金曜日においでいただきたい。
+- `sent:tatoeba-78723` 来てくださればとてもうれしい。 — Eu ficaria muito feliz se você viesse.
+- `sent:tatoeba-76813` お子さんが車をおりたらすぐに車を出してください。 — Assim que a criança descer do carro, por favor saia com o carro imediatamente.
+- `sent:tatoeba-146018` 状況をお知らせください。 — Me avise como está a situação.
+- `sent:tatoeba-196449` ボールを投げてください。 — Joga a bola, por favor.
+- `sent:tatoeba-10901624` あたたかい服装で来てください。 — Venha com roupa quentinha.
+- `sent:tatoeba-170894` 砂糖とクリームを少し入れてください。 — Põe um pouco de açúcar e creme, por favor.
+- produção: Dê uma passada aqui qualquer dia, aproveitando quando for fazer compras. → 買い物ついでにでもお寄りください。
+- produção: Junte-se a nós de novo na segunda-feira. → 月曜日に我々にまた加わってください。
+- produção: Por favor, não se mexa. → 動かないでください。
 
 </details>
 
@@ -2044,7 +2044,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 6
 
-### `*` · camada C · hash `5dc3390e9b57df7b`
+### `*` · camada C · hash `8252c5de61ea45f2`
 
 _Ledger:_ —
 
@@ -2060,15 +2060,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-74350` わびをいれるなら早い方がいいだろう。 — Se for pedir desculpas, quanto antes melhor.
+- `sent:tatoeba-78713` 彼は来ないと思います。 — Acho que ele não vem.
+- `sent:tatoeba-211242` その計画は住民の反対にあった。 — O projeto encontrou a oposição dos moradores.
+- `sent:tatoeba-152088` 私個人の意見としてはその計画に反対だ。 — Na minha opinião pessoal, sou contra esse plano.
 - `sent:tatoeba-81566` 本当さ。信じた方がいいぜ。 — É sério. Pode acreditar.
-- `sent:tatoeba-162311` まったく同意見です。 — Sou exatamente da mesma opinião.
 - `sent:tatoeba-209394` その女の子がそんなことをしたはずがない。 — É impossível que aquela menina tenha feito uma coisa dessas.
 - `sent:tatoeba-77523` 列車は６時到着のはずだった。 — O trem era pra chegar às seis.
-- `sent:tatoeba-77555` 列車に乗り遅れたのかもしれない。 — Ele pode ter perdido o trem.
+- produção: Fique à vontade para dar a sua opinião. → 自由に意見を述べてください。
 - produção: Provavelmente está tudo bem. → たぶん大丈夫だ。
 - produção: Eu talvez morra amanhã. → 私は明日死ぬかもしれない。
-- produção: É melhor você cumprir a promessa. → 約束は守った方がいい。
 
 </details>
 
@@ -2078,7 +2078,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 1
 
-### `*` · camada C · hash `f62be3cdb63a0399`
+### `*` · camada C · hash `9c3c6d2c23ef2316`
 
 _Ledger:_ —
 
@@ -2094,15 +2094,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-78959` 余りよい考えではないと思いますが。 — Acho que não é uma ideia lá muito boa, mas...
 - `sent:tatoeba-11692639` 正しいはずがないよ。 — Não tem como estar certo!
 - `sent:tatoeba-118153` 彼の意見は大体において正しい。 — A opinião dele está, no geral, correta.
 - `sent:tatoeba-119734` 彼が正しいというのは私の意見です。 — Que ele tem razão é a minha opinião.
 - `sent:tatoeba-5348453` これについては、私は正しいはずです。 — Sobre isto, eu devo estar certo.
 - `sent:tatoeba-151044` 試合に負けたはずがない。 — Não é possível que eles tenham perdido a partida.
-- `sent:tatoeba-78366` 理由がわかりかねます。 — Não consigo compreender o motivo.
-- produção: Ele pode ter perdido o trem. → 列車に乗り遅れたのかもしれない。
 - produção: O trem era pra chegar às seis. → 列車は６時到着のはずだった。
 - produção: É impossível que aquela menina tenha feito uma coisa dessas. → その女の子がそんなことをしたはずがない。
+- produção: É sério. Pode acreditar. → 本当さ。信じた方がいいぜ。
 
 </details>
 
@@ -2112,7 +2112,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 2
 
-### `*` · camada C · hash `ef3c9c9da1b924ec`
+### `*` · camada C · hash `9574276b0e878c5e`
 
 _Ledger:_ —
 
@@ -2128,15 +2128,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-75043` そんなの、身体にとっていいはずがないじゃありませんか。 — Isso não pode fazer bem para a saúde, não é mesmo?
-- `sent:tatoeba-219422` この問題に関しては３つの意見がある。 — A respeito dessa questão, há três opiniões.
-- `sent:tatoeba-82992` 母は私がアルバイトをすることに反対なの。 — Minha mãe é contra eu fazer um trabalho de meio período.
-- `sent:tatoeba-225064` こういうわけで私はあなたに反対なのです。 — É por isso que eu sou contra você.
-- `sent:tatoeba-197441` ひょっとしたら勝つかもしれない。 — Pode ser que eu ganhe, por sorte.
-- `sent:tatoeba-179684` 金持ちかもしれないがけちだ。 — Ele pode até ser rico, mas é pão-duro.
-- produção: Não consigo compreender o motivo. → 理由がわかりかねます。
+- `sent:tatoeba-80053` 木曜までには結果が分かるはずだ。 — Até quinta o resultado deve sair.
+- `sent:tatoeba-86311` 彼女は理由を簡単に述べた。 — Ela expôs os motivos de forma resumida.
+- `sent:tatoeba-153687` 私は彼らの賛成を求めた。 — Pedi a aprovação deles.
+- `sent:tatoeba-78366` 理由がわかりかねます。 — Não consigo compreender o motivo.
+- `sent:tatoeba-85041` 不平を言う理由は何も無い。 — Não há motivo nenhum para reclamar.
+- `sent:tatoeba-79537` 約束は守った方がいい。 — É melhor você cumprir a promessa.
 - produção: Não é possível que eles tenham perdido a partida. → 試合に負けたはずがない。
 - produção: Sobre isto, eu devo estar certo. → これについては、私は正しいはずです。
+- produção: Que ele tem razão é a minha opinião. → 彼が正しいというのは私の意見です。
 
 </details>
 
@@ -2146,7 +2146,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 3
 
-### `*` · camada C · hash `8dd259cfec11a27e`
+### `*` · camada C · hash `4f0a03e68bfd813f`
 
 _Ledger:_ —
 
@@ -2162,15 +2162,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-5070` 賛成です。 — Concordo.
-- `sent:tatoeba-81654` 本の中で彼が言っていることにあなたは賛成ですか。 — Você concorda com o que ele diz no livro?
-- `sent:tatoeba-80432` 明日は時々にわか雨が降るかもしれない。 — Amanhã pode ter pancada de chuva de vez em quando.
-- `sent:tatoeba-80745` 明かりがついているのだから、彼らが外出したはずがない。 — A luz está acesa, então não tem como eles terem saído.
-- `sent:tatoeba-74941` 末弟は悪くないかもしれない、けれど私も悪くない。 — Pode ser que a culpa não seja do meu irmão mais novo, mas também não é minha.
-- `sent:tatoeba-89607` 彼女は私とすっかり同意見だったわけではない。 — Não é que ela concordasse totalmente comigo.
-- produção: Ele pode até ser rico, mas é pão-duro. → 金持ちかもしれないがけちだ。
-- produção: Pode ser que eu ganhe, por sorte. → ひょっとしたら勝つかもしれない。
-- produção: É por isso que eu sou contra você. → こういうわけで私はあなたに反対なのです。
+- `sent:tatoeba-634127` そういう場合は、試しに予算を立てた方がいいでしょう。 — Num caso desses, o melhor é montar um orçamento pra experimentar.
+- `sent:tatoeba-219422` この問題に関しては３つの意見がある。 — A respeito dessa questão, há três opiniões.
+- `sent:tatoeba-197441` ひょっとしたら勝つかもしれない。 — Pode ser que eu ganhe, por sorte.
+- `sent:tatoeba-179684` 金持ちかもしれないがけちだ。 — Ele pode até ser rico, mas é pão-duro.
+- `sent:tatoeba-207696` その提案は反対を受けた。 — A proposta enfrentou oposição.
+- `sent:tatoeba-212988` そのために仕事を失うことになるかもしれない。 — Por causa disso, talvez eu acabe perdendo o emprego.
+- produção: É melhor você cumprir a promessa. → 約束は守った方がいい。
+- produção: Não há motivo nenhum para reclamar. → 不平を言う理由は何も無い。
+- produção: Não consigo compreender o motivo. → 理由がわかりかねます。
 
 </details>
 
@@ -2180,7 +2180,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 4
 
-### `*` · camada C · hash `5e7cfa451618c554`
+### `*` · camada C · hash `227361d323ab08c9`
 
 _Ledger:_ —
 
@@ -2196,15 +2196,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-75789` 彼は、たぶん、招待してくれるように仕向けているでしょう。 — Ele provavelmente está dando um jeito de ser convidado.
 - `sent:tatoeba-4827` 私のパソコンは何かの役に立つはずだ。 — Meu computador tem que servir para alguma coisa.
-- `sent:jec-0517` 厳しい意見が多い — Tem muita opinião crítica.
-- `sent:tatoeba-80630` 明日あるいは晴れるかもしれない。 — Pode ser que amanhã faça sol.
-- `sent:tatoeba-79047` 夕方には雪がふるかもしれないよ。 — Pode ser que neve no fim da tarde, viu.
-- `sent:tatoeba-77481` 列車は正午に到着するはずです。 — O trem deve chegar ao meio-dia.
-- produção: Não é que ela concordasse totalmente comigo. → 彼女は私とすっかり同意見だったわけではない。
-- produção: Pode ser que a culpa não seja do meu irmão mais novo, mas também não é minha. → 末弟は悪くないかもしれない、けれど私も悪くない。
-- produção: A luz está acesa, então não tem como eles terem saído. → 明かりがついているのだから、彼らが外出したはずがない。
+- `sent:tatoeba-185718` 我々は戦争に反対だ。 — Nós somos contra a guerra.
+- `sent:tatoeba-80432` 明日は時々にわか雨が降るかもしれない。 — Amanhã pode ter pancada de chuva de vez em quando.
+- `sent:tatoeba-80745` 明かりがついているのだから、彼らが外出したはずがない。 — A luz está acesa, então não tem como eles terem saído.
+- `sent:tatoeba-105908` 彼は私の意見に従った。 — Ele seguiu a minha opinião.
+- `sent:tatoeba-74941` 末弟は悪くないかもしれない、けれど私も悪くない。 — Pode ser que a culpa não seja do meu irmão mais novo, mas também não é minha.
+- produção: Por causa disso, talvez eu acabe perdendo o emprego. → そのために仕事を失うことになるかもしれない。
+- produção: A proposta enfrentou oposição. → その提案は反対を受けた。
+- produção: Ele pode até ser rico, mas é pão-duro. → 金持ちかもしれないがけちだ。
 
 </details>
 
@@ -2214,7 +2214,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 5
 
-### `*` · camada C · hash `7447f4c791d2aff9`
+### `*` · camada C · hash `7fb27b279ddca2c2`
 
 _Ledger:_ —
 
@@ -2230,15 +2230,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-75200` 徒歩５分以内に着くはずです。 — Você deve chegar lá em menos de cinco minutos a pé.
-- `sent:tatoeba-80335` 明日雨になるかもしれないがともかく私たちは出かけるつもりだ。 — Pode ser que chova amanhã, mas a gente vai sair de qualquer jeito.
-- `sent:tatoeba-79019` 予習を始めた方がいいですよ。 — É melhor você começar a estudar a matéria antes da aula, viu?
-- `sent:tatoeba-78026` 両親は、末っ子をえこひいきするかもしれない。 — Os pais podem acabar favorecendo o filho mais novo.
-- `sent:tatoeba-4891` 一週間でどれほどのことが学べるか、自分でもびっくりするはずだよ！ — Você vai se surpreender com o tanto que dá para aprender em uma semana!
+- `sent:tatoeba-89607` 彼女は私とすっかり同意見だったわけではない。 — Não é que ela concordasse totalmente comigo.
+- `sent:tatoeba-75789` 彼は、たぶん、招待してくれるように仕向けているでしょう。 — Ele provavelmente está dando um jeito de ser convidado.
+- `sent:tatoeba-185295` 会合は来週木曜に開かれるはずです。 — A reunião deve acontecer na quinta que vem.
+- `sent:jec-0517` 厳しい意見が多い — Tem muita opinião crítica.
 - `sent:tatoeba-235244` ４０近いはずだ。 — Ele deve ter quase 40 anos.
-- produção: O trem deve chegar ao meio-dia. → 列車は正午に到着するはずです。
-- produção: Pode ser que neve no fim da tarde, viu. → 夕方には雪がふるかもしれないよ。
-- produção: Pode ser que amanhã faça sol. → 明日あるいは晴れるかもしれない。
+- `sent:tatoeba-195794` マイクがそんなことをしたはずがない。 — Não é possível que o Mike tenha feito uma coisa dessas.
+- produção: Pode ser que a culpa não seja do meu irmão mais novo, mas também não é minha. → 末弟は悪くないかもしれない、けれど私も悪くない。
+- produção: Ele seguiu a minha opinião. → 彼は私の意見に従った。
+- produção: A luz está acesa, então não tem como eles terem saído. → 明かりがついているのだから、彼らが外出したはずがない。
 
 </details>
 
@@ -2248,7 +2248,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 6
 
-### `*` · camada C · hash `8fb1c439892c68bd`
+### `*` · camada C · hash `0c001c54d2b7f105`
 
 _Ledger:_ —
 
@@ -2264,15 +2264,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
+- `sent:tatoeba-2718657` 電話すればよかったのに。 — Você devia ter ligado.
+- `sent:tatoeba-83210` 歩きながら話しましょう。 — Vamos conversar enquanto caminhamos.
 - `sent:tatoeba-230514` あの二人はよりを戻したらしい。 — Parece que aqueles dois reataram o namoro.
-- `sent:tatoeba-235190` ５０００円ばかりもっている。 — Tenho uns 5.000 ienes.
-- `sent:tatoeba-115333` 彼は１００ドルばかりかそれ以上持っている。 — Ele tem nada menos que cem dólares, e até mais.
-- `sent:tatoeba-76419` まぁ、日本も鎖国していたわけだしなあ。 — Bom, afinal o Japão também viveu fechado para o mundo, né.
-- `sent:tatoeba-10274623` お前にそんなこと、させるわけにはいかないよ。 — Não posso deixar você fazer uma coisa dessas.
+- `sent:tatoeba-213958` そういうわけだから、私は君と一緒に行けないのだ。 — Sendo assim, não posso ir com você.
 - `sent:tatoeba-80952` 夢みたいだ。 — Parece um sonho.
+- `sent:tatoeba-1331104` 世の中、親切な人ばかりじゃない。 — Nem todo mundo por aí é gente boa.
+- produção: Não é possível que o Mike tenha feito uma coisa dessas. → マイクがそんなことをしたはずがない。
 - produção: Ele deve ter quase 40 anos. → ４０近いはずだ。
-- produção: Você vai se surpreender com o tanto que dá para aprender em uma semana! → 一週間でどれほどのことが学べるか、自分でもびっくりするはずだよ！
-- produção: Você deve chegar lá em menos de cinco minutos a pé. → 徒歩５分以内に着くはずです。
+- produção: A reunião deve acontecer na quinta que vem. → 会合は来週木曜に開かれるはずです。
 
 </details>
 
@@ -2282,7 +2282,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 1
 
-### `*` · camada C · hash `5bfc55bebc764a57`
+### `*` · camada C · hash `564d0c6512895692`
 
 _Ledger:_ —
 
@@ -2298,15 +2298,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:jec-4908` 必ず同じ病気を発症するわけではない — Isso não quer dizer que vão necessariamente desenvolver a mesma doença.
 - `sent:tatoeba-78052` 両親とも生きているわけではない。 — Não é que meus dois pais estejam vivos.
 - `sent:tatoeba-9938017` テニスは始めたばかりなんだよ。 — Eu acabei de começar a jogar tênis.
 - `sent:tatoeba-90133` 彼女は幸せらしい。 — Parece que ela está feliz.
 - `sent:tatoeba-10050266` 彼女が嘘をつくわけがない。 — Não tem como ela contar uma mentira.
 - `sent:tatoeba-886104` お母さん、いつも迷惑ばかりかけてごめんなさい。 — Mãe, desculpa por estar sempre te dando trabalho.
+- `sent:tatoeba-11264620` お父さんみたいに、パイロットになりたい。 — Quero virar piloto, igual ao meu pai.
+- produção: Nem todo mundo por aí é gente boa. → 世の中、親切な人ばかりじゃない。
 - produção: Parece um sonho. → 夢みたいだ。
-- produção: Não posso deixar você fazer uma coisa dessas. → お前にそんなこと、させるわけにはいかないよ。
-- produção: Bom, afinal o Japão também viveu fechado para o mundo, né. → まぁ、日本も鎖国していたわけだしなあ。
+- produção: Sendo assim, não posso ir com você. → そういうわけだから、私は君と一緒に行けないのだ。
 
 </details>
 
@@ -2316,7 +2316,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 2
 
-### `*` · camada C · hash `21423675d6ea7813`
+### `*` · camada C · hash `79fe1b459f9f64a7`
 
 _Ledger:_ —
 
@@ -2332,15 +2332,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-11264620` お父さんみたいに、パイロットになりたい。 — Quero virar piloto, igual ao meu pai.
 - `sent:tatoeba-1227292` 彼はまるで君の弟みたいだよ。 — Ele parece até o seu irmão mais novo.
 - `sent:tatoeba-123542` 道理で、君が喜ぶわけだ。 — Com razão você está tão feliz.
 - `sent:tatoeba-120314` 彼が支配人だというのは事実でない。 — Não é verdade que ele seja o gerente.
 - `sent:tatoeba-216263` しかしながら、高すぎる。 — No entanto, é caro demais.
 - `sent:tatoeba-211899` その会は特に出席がよいわけではなかった。 — A reunião não teve uma presença especialmente boa.
+- `sent:tatoeba-213957` そういうわけだから私は出席できなかったのです。 — Sendo assim, eu não pude comparecer.
+- produção: Quero virar piloto, igual ao meu pai. → お父さんみたいに、パイロットになりたい。
 - produção: Mãe, desculpa por estar sempre te dando trabalho. → お母さん、いつも迷惑ばかりかけてごめんなさい。
 - produção: Não tem como ela contar uma mentira. → 彼女が嘘をつくわけがない。
-- produção: Parece que ela está feliz. → 彼女は幸せらしい。
 
 </details>
 
@@ -2350,7 +2350,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 3
 
-### `*` · camada C · hash `d847db2cf1266373`
+### `*` · camada C · hash `63b3d399d243b644`
 
 _Ledger:_ —
 
@@ -2368,13 +2368,13 @@ _Ledger:_ —
 
 - `sent:tatoeba-143985` 人生は楽しみや遊びばかりでない。 — A vida não é só diversão e brincadeira.
 - `sent:tatoeba-172198` 今度来た先生は、先生というより友達みたいだ。 — O professor novo é mais um amigo do que um professor.
-- `sent:tatoeba-186754` 火にあたりながらすわっていた。 — Ficávamos sentados nos aquecendo perto do fogo.
 - `sent:tatoeba-169225` 残念ながら今日はこれで終わりにします。 — Infelizmente, por hoje vamos encerrar por aqui.
-- `sent:tatoeba-127148` 男性は男らしく見せたがる。 — Os homens querem parecer masculinos.
-- `sent:tatoeba-423387` 幸福というのは何ですか。 — O que é a felicidade?
+- `sent:tatoeba-10901570` 事件は終わったわけではない。 — Não é que o caso tenha acabado.
+- `sent:tatoeba-214502` スペシャルというのはどんな味ですか。 — Como é o sabor do especial?
+- `sent:tatoeba-142020` 雪が青いというのは誤りだ。 — Dizer que a neve é azul é um erro.
+- produção: Sendo assim, eu não pude comparecer. → そういうわけだから私は出席できなかったのです。
 - produção: A reunião não teve uma presença especialmente boa. → その会は特に出席がよいわけではなかった。
 - produção: No entanto, é caro demais. → しかしながら、高すぎる。
-- produção: Não é verdade que ele seja o gerente. → 彼が支配人だというのは事実でない。
 
 </details>
 
@@ -2384,7 +2384,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 4
 
-### `*` · camada C · hash `4005ea427df27a0d`
+### `*` · camada C · hash `709f7fb38644e82a`
 
 _Ledger:_ —
 
@@ -2400,15 +2400,15 @@ _Ledger:_ —
 
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
-- `sent:tatoeba-10901570` 事件は終わったわけではない。 — Não é que o caso tenha acabado.
-- `sent:tatoeba-214502` スペシャルというのはどんな味ですか。 — Como é o sabor do especial?
-- `sent:tatoeba-142020` 雪が青いというのは誤りだ。 — Dizer que a neve é azul é um erro.
 - `sent:tatoeba-12776411` 絵心がないから、風景を正確に写せるわけがない。 — Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão.
 - `sent:tatoeba-8988161` 秋じゃないみたいだな。 — Não parece que é outono, hein.
+- `sent:tatoeba-175375` 権利ばかり主張する人が多い。 — Tem muita gente que só reivindica direito.
+- `sent:tatoeba-11264636` この辺に泉があるはずだ。 — Deve ter uma nascente por aqui.
 - `sent:tatoeba-118031` 彼の奥さんは外国人らしい。 — A esposa dele parece ser estrangeira.
-- produção: O que é a felicidade? → 幸福というのは何ですか。
-- produção: Os homens querem parecer masculinos. → 男性は男らしく見せたがる。
-- produção: Infelizmente, por hoje vamos encerrar por aqui. → 残念ながら今日はこれで終わりにします。
+- `sent:tatoeba-5287` 世界は君を中心に回っているわけではないんだよ。 — O mundo não gira em torno de você, viu.
+- produção: Dizer que a neve é azul é um erro. → 雪が青いというのは誤りだ。
+- produção: Como é o sabor do especial? → スペシャルというのはどんな味ですか。
+- produção: Não é que o caso tenha acabado. → 事件は終わったわけではない。
 
 </details>
 
@@ -2418,7 +2418,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 5
 
-### `*` · camada C · hash `f6342867189f29d7`
+### `*` · camada C · hash `3fd138a00776a677`
 
 _Ledger:_ —
 
@@ -2435,14 +2435,14 @@ _Ledger:_ —
 <details><summary>Contexto (não é alvo de parecer)</summary>
 
 - `sent:tatoeba-10153751` 済んだみたいだね。 — Parece que você já terminou, né?
-- `sent:tatoeba-234789` ＵＮというのは何を表わしていますか。 — O que significa "UN"?
 - `sent:tatoeba-184333` 学者らしいところがある。 — Ele tem um quê de acadêmico.
+- `sent:tatoeba-11173182` そのタオルはきれいなはずです。 — Essa toalha deve estar limpa.
 - `sent:tatoeba-77972` 両方とも好きなわけではない。 — Não é que eu goste dos dois.
 - `sent:tatoeba-77973` 両方とも好きというわけではない。 — Não é que eu goste dos dois.
-- `sent:tatoeba-74894` コンタクトを入れるというのはいかがでしょう？ — Que tal usar lentes de contato?
+- `sent:tatoeba-80010` 目が覚めているときばかりか眠っているときにもそれが必要だ。 — A gente precisa disso tanto acordado quanto dormindo.
+- produção: O mundo não gira em torno de você, viu. → 世界は君を中心に回っているわけではないんだよ。
 - produção: A esposa dele parece ser estrangeira. → 彼の奥さんは外国人らしい。
-- produção: Não parece que é outono, hein. → 秋じゃないみたいだな。
-- produção: Como não tenho talento para desenho, não tem como eu retratar a paisagem com precisão. → 絵心がないから、風景を正確に写せるわけがない。
+- produção: Deve ter uma nascente por aqui. → この辺に泉があるはずだ。
 
 </details>
 
@@ -2452,7 +2452,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 6
 
-### `*` · camada C · hash `29854841d94c9270`
+### `*` · camada C · hash `4f71f672b7de562f`
 
 _Ledger:_ —
 

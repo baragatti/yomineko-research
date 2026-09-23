@@ -9,28 +9,31 @@
   "say_now": [
     "sent:tatoeba-143985",
     "sent:tatoeba-172198",
-    "sent:tatoeba-186754",
     "sent:tatoeba-169225",
-    "sent:tatoeba-127148",
-    "sent:tatoeba-423387"
+    "sent:tatoeba-10901570",
+    "sent:tatoeba-214502",
+    "sent:tatoeba-142020"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1207250",
     "vocab:1289370",
-    "vocab:1193610",
     "vocab:1304680",
-    "vocab:1420160",
-    "vocab:1278400",
+    "vocab:1313830",
+    "vocab:1526960",
+    "vocab:1381390",
+    "vocab:1271290",
+    "vocab:1589590",
     "vocab:1542070"
   ],
   "patterns": [
+    "gram:n3-wake-dewa-nai",
     "gram:n3-to-iu-no-wa",
+    "gram:n3-to-iu-yori",
     "gram:n3-mitai-da",
     "gram:n3-to-iu-no",
-    "gram:n3-bakari",
-    "gram:n3-to-iu"
+    "gram:janai-dewa-nai"
   ],
   "kanji_recognition": [
     "楽",
@@ -43,14 +46,60 @@
   "shadowing": [
     "sent:tatoeba-143985",
     "sent:tatoeba-172198",
-    "sent:tatoeba-186754",
     "sent:tatoeba-169225",
-    "sent:tatoeba-127148",
-    "sent:tatoeba-423387"
+    "sent:tatoeba-10901570",
+    "sent:tatoeba-214502",
+    "sent:tatoeba-142020"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-143985",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-172198",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-169225",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10901570",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-214502",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-142020",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 568,
+  "cumulative_known_vocab": 683,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -69,9 +118,9 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "焼く",
         "今年",
-        "青い"
+        "青い",
+        "更に"
       ]
     },
     {
@@ -81,7 +130,17 @@
       "distractors": [
         "来る",
         "辛い",
-        "バス"
+        "首都"
+      ]
+    },
+    {
+      "id": "kr:n3:1006",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "まだ",
+        "ねこ",
+        "ぎん"
       ]
     },
     {
@@ -90,31 +149,37 @@
       "via": "new-word",
       "distractors": [
         "そんな",
-        "こころ",
-        "わたす"
-      ]
-    },
-    {
-      "id": "kr:n4:1326",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "うしなう",
-        "でんしゃ",
-        "ともかく"
+        "もどる",
+        "こころ"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:n3-to-iu-yori"
-  ],
+  "patterns_chunked": [],
   "drills": [
+    {
+      "pattern": "gram:n3-wake-dewa-nai",
+      "examples": [
+        "sent:tatoeba-156748",
+        "sent:tatoeba-77972",
+        "sent:tatoeba-77973"
+      ],
+      "strand": "language-focused"
+    },
     {
       "pattern": "gram:n3-to-iu-no-wa",
       "examples": [
+        "sent:tatoeba-423387",
         "sent:tatoeba-168168",
-        "sent:tatoeba-119734",
-        "sent:tatoeba-120314"
+        "sent:tatoeba-119734"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-to-iu-yori",
+      "examples": [
+        "sent:tatoeba-87097",
+        "sent:tatoeba-101234",
+        "sent:tatoeba-11001542"
       ],
       "strand": "language-focused"
     },
@@ -132,30 +197,38 @@
       "examples": [
         "sent:tatoeba-220804",
         "sent:tatoeba-138773",
-        "sent:tatoeba-214502"
+        "sent:tatoeba-234789"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-bakari",
+      "pattern": "gram:janai-dewa-nai",
       "examples": [
-        "sent:tatoeba-113980",
-        "sent:tatoeba-147558",
-        "sent:tatoeba-88247"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-to-iu",
-      "examples": [
-        "sent:tatoeba-194344",
-        "sent:tatoeba-229142",
-        "sent:tatoeba-88068"
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "Sendo assim, eu não pude comparecer."
+      },
+      "answer_key": "そういうわけだから私は出席できなかったのです。",
+      "accepted_variants": [
+        "そういうわけだからわたしはしゅっせきできなかったのです",
+        "そういうわけだからわたしはしゅっせきできなかったのです。",
+        "そういうわけだからわたしわしゅっせきできなかったのです",
+        "そういうわけだからわたしわしゅっせきできなかったのです。",
+        "そういうわけだから私は出席できなかったのです",
+        "そういうわけだから私は出席できなかったのです。"
+      ],
+      "sentence": "sent:tatoeba-213957",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "A reunião não teve uma presença especialmente boa."
@@ -187,23 +260,6 @@
       "sentence": "sent:tatoeba-216263",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Não é verdade que ele seja o gerente."
-      },
-      "answer_key": "彼が支配人だというのは事実でない。",
-      "accepted_variants": [
-        "かれがしはいにんだというのはじじつでない",
-        "かれがしはいにんだというのはじじつでない。",
-        "かれがしはいにんだというのわじじつでない",
-        "かれがしはいにんだというのわじじつでない。",
-        "彼が支配人だというのは事実でない",
-        "彼が支配人だというのは事実でない。"
-      ],
-      "sentence": "sent:tatoeba-120314",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -211,12 +267,12 @@
       "pt-BR": "Você está numa conversa solta. Reaja, comente e conte o que ouviu de outra pessoa."
     },
     "items": [
+      "sent:tatoeba-120314",
       "sent:tatoeba-123542",
       "sent:tatoeba-1227292",
       "sent:tatoeba-10050266",
-      "sent:tatoeba-90133",
       "sent:tatoeba-230514",
-      "sent:tatoeba-235244"
+      "sent:tatoeba-83210"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -224,15 +280,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 22,
     "meaning-output": 6,
-    "language-focused": 58,
-    "fluency": 12
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 29,
+    "language-focused": 33,
     "fluency": 6
   }
 }

@@ -7,49 +7,94 @@
     "pt-BR": "Quando, que horas, combinar, parte 3"
   },
   "say_now": [
-    "sent:tatoeba-80068",
     "sent:tatoeba-1037362",
     "sent:tatoeba-171531",
     "sent:tatoeba-9777117",
     "sent:tatoeba-154767",
+    "sent:tatoeba-4930",
     "sent:tatoeba-125943"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1100760",
     "vocab:1223640",
     "vocab:1582310",
     "vocab:1155120",
+    "vocab:1402540",
     "vocab:1483740",
+    "vocab:1499720",
     "vocab:1432680",
     "vocab:1583090",
     "vocab:1163940"
   ],
   "patterns": [
-    "gram:n3-to-iu",
-    "gram:gp-149",
-    "gram:node"
+    "gram:gp-149"
   ],
   "kanji_recognition": [
-    "会",
-    "人",
-    "村",
-    "木",
     "起",
-    "時"
+    "時",
+    "朝",
+    "八",
+    "今",
+    "頭"
   ],
   "shadowing": [
-    "sent:tatoeba-80068",
     "sent:tatoeba-1037362",
     "sent:tatoeba-171531",
     "sent:tatoeba-9777117",
     "sent:tatoeba-154767",
+    "sent:tatoeba-4930",
     "sent:tatoeba-125943"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1037362",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-171531",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9777117",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-154767",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-4930",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-125943",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 345,
+  "cumulative_known_vocab": 404,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -69,8 +114,8 @@
       "via": "phrase",
       "distractors": [
         "降る",
-        "空港",
-        "新聞"
+        "勢い",
+        "大半"
       ]
     },
     {
@@ -78,9 +123,9 @@
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
+        "後",
         "何",
-        "数",
-        "間"
+        "底"
       ]
     },
     {
@@ -88,7 +133,7 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "コピー",
+        "けいい",
         "こども",
         "なれる"
       ]
@@ -98,40 +143,26 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ガソリン",
-        "まっくら",
-        "はじめる"
+        "すいどう",
+        "あらわれ",
+        "はくしゅ"
       ]
     }
   ],
   "patterns_chunked": [
+    "gram:gp-154",
+    "gram:gp-77",
+    "gram:n3-you-ni",
+    "gram:you-ni-you-na",
     "gram:n3-sae"
   ],
   "drills": [
     {
-      "pattern": "gram:n3-to-iu",
-      "examples": [
-        "sent:tatoeba-194344",
-        "sent:tatoeba-229142",
-        "sent:tatoeba-88068"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:gp-149",
       "examples": [
-        "sent:tatoeba-77812",
         "sent:tatoeba-4856",
+        "sent:tatoeba-83623",
         "sent:tatoeba-79091"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:node",
-      "examples": [
-        "sent:tatoeba-85318",
-        "sent:tatoeba-82538",
-        "sent:gen-82b26ffb3d46"
       ],
       "strand": "language-focused"
     }
@@ -139,18 +170,16 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Encontrar com ele a gente deixa para a próxima vez."
+        "pt-BR": "Conheci uma pessoa chamada Kimura na festa."
       },
-      "answer_key": "彼に会うのはこの次にしましょう。",
+      "answer_key": "木村さんという人にパーティーで会ったよ。",
       "accepted_variants": [
-        "かれにあうのはこのつぎにしましょう",
-        "かれにあうのはこのつぎにしましょう。",
-        "かれにあうのわこのつぎにしましょう",
-        "かれにあうのわこのつぎにしましょう。",
-        "彼に会うのはこの次にしましょう",
-        "彼に会うのはこの次にしましょう。"
+        "きむらさんというひとにぱーてぃーであったよ",
+        "きむらさんというひとにぱーてぃーであったよ。",
+        "木村さんという人にパーティーで会ったよ",
+        "木村さんという人にパーティーで会ったよ。"
       ],
-      "sentence": "sent:tatoeba-118653",
+      "sentence": "sent:tatoeba-80068",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -194,12 +223,12 @@
       "pt-BR": "Um amigo quer marcar alguma coisa. Combine dia e horário."
     },
     "items": [
-      "sent:tatoeba-10014826",
-      "sent:tatoeba-79849",
+      "sent:tatoeba-100542",
+      "sent:tatoeba-209504",
       "sent:tatoeba-80460",
-      "sent:tatoeba-78588",
-      "sent:jec-1876",
-      "sent:tatoeba-163381"
+      "sent:tatoeba-117935",
+      "sent:tatoeba-10983265",
+      "sent:tatoeba-8868835"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -207,15 +236,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
-    "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "meaning-input": 27,
+    "meaning-output": 7,
+    "language-focused": 52,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 23,
     "fluency": 6
   }
 }

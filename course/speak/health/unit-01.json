@@ -7,71 +7,114 @@
     "pt-BR": "Emergência e saúde, parte 1"
   },
   "say_now": [
-    "sent:tatoeba-190909",
+    "sent:tatoeba-1039551",
     "sent:tatoeba-190906",
     "sent:tatoeba-110065",
     "sent:tatoeba-110066",
-    "sent:tatoeba-190902",
-    "sent:tatoeba-84479"
+    "sent:tatoeba-231218",
+    "sent:tatoeba-103362"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1247250",
     "vocab:1159980",
+    "vocab:1344410",
     "vocab:1541620",
-    "vocab:1241490",
-    "vocab:1535910"
+    "vocab:1539040",
+    "vocab:1212210",
+    "vocab:1375790"
   ],
   "patterns": [
-    "gram:garu-gatteiru",
-    "gram:n3-beki-da"
+    "gram:te-kudasai",
+    "gram:n3-beki-da",
+    "gram:gp-87"
   ],
   "kanji_recognition": [
+    "助",
     "医",
-    "煙",
-    "禁",
-    "君",
-    "言",
-    "者"
+    "者",
+    "彼",
+    "名",
+    "有"
   ],
   "shadowing": [
-    "sent:tatoeba-190909",
+    "sent:tatoeba-1039551",
     "sent:tatoeba-190906",
     "sent:tatoeba-110065",
     "sent:tatoeba-110066",
-    "sent:tatoeba-190902",
-    "sent:tatoeba-84479"
+    "sent:tatoeba-231218",
+    "sent:tatoeba-103362"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1039551",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-190906",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-110065",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-110066",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-231218",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-103362",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 372,
+  "cumulative_known_vocab": 437,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
-    {
-      "id": "so:n4:3402",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3402:51",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "今晩",
-        "張る",
-        "予定"
-      ]
-    },
     {
       "id": "cf:n4:3662:51",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
+        "病気",
         "来る",
-        "送る",
         "先生"
+      ]
+    },
+    {
+      "id": "cf:n4:3402:51",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "今晩",
+        "意見",
+        "新聞"
       ]
     },
     {
@@ -79,9 +122,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "かりる",
-        "てんき",
-        "いそぐ"
+        "してん",
+        "みやげ",
+        "かりる"
       ]
     },
     {
@@ -89,25 +132,24 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "パート",
-        "いそぐ",
-        "おえる"
+        "きんし",
+        "もっと",
+        "ぜんぶ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-you-ni-iu",
-    "gram:te-morau",
-    "gram:gp-36",
-    "gram:n3-to-shite"
+    "gram:n3-to-shite",
+    "gram:gp-121",
+    "gram:gp-16"
   ],
   "drills": [
     {
-      "pattern": "gram:garu-gatteiru",
+      "pattern": "gram:te-kudasai",
       "examples": [
-        "sent:gen-a0d367f9d037",
-        "sent:gen-2424c6ff626d",
-        "sent:gen-0ce029328959"
+        "sent:tatoeba-146189",
+        "sent:tatoeba-124708",
+        "sent:tatoeba-5109"
       ],
       "strand": "language-focused"
     },
@@ -117,6 +159,15 @@
         "sent:tatoeba-144981",
         "sent:tatoeba-149720",
         "sent:tatoeba-169806"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-87",
+      "examples": [
+        "sent:tatoeba-11390339",
+        "sent:tatoeba-11390341",
+        "sent:tatoeba-198201"
       ],
       "strand": "language-focused"
     }
@@ -141,32 +192,37 @@
     },
     {
       "prompt": {
-        "pt-BR": "Num piscar de olhos, a febre subiu para quase 40 graus."
+        "pt-BR": "Este cupom vale por duas semanas."
       },
-      "answer_key": "あっという間に４０度近くまで熱が出た",
+      "answer_key": "この券は２週間有効です。",
       "accepted_variants": [
-        "あっというまによんじゅうどちかくまでねつがでた",
-        "あっという間に40度近くまで熱が出た",
-        "あっという間に４０度近くまで熱が出た"
+        "このけんはにしゅうかんゆうこうです",
+        "このけんはにしゅうかんゆうこうです。",
+        "このけんわにしゅうかんゆうこうです",
+        "このけんわにしゅうかんゆうこうです。",
+        "この券は2週間有効です",
+        "この券は2週間有効です。",
+        "この券は２週間有効です",
+        "この券は２週間有効です。"
       ],
-      "sentence": "sent:jec-0673",
-      "kind": "on-topic",
+      "sentence": "sent:tatoeba-222131",
+      "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Eu costumava nadar aqui todos os dias."
+        "pt-BR": "A gente se encontra a cada três semanas."
       },
-      "answer_key": "私はここで毎日泳いだものだ。",
+      "answer_key": "３週間ごとに会ってます。",
       "accepted_variants": [
-        "わたしはここでまいにちおよいだものだ",
-        "わたしはここでまいにちおよいだものだ。",
-        "わたしわここでまいにちおよいだものだ",
-        "わたしわここでまいにちおよいだものだ。",
-        "私はここで毎日泳いだものだ",
-        "私はここで毎日泳いだものだ。"
+        "3週間ごとに会ってます",
+        "3週間ごとに会ってます。",
+        "さんしゅうかんごとにあってます",
+        "さんしゅうかんごとにあってます。",
+        "３週間ごとに会ってます",
+        "３週間ごとに会ってます。"
       ],
-      "sentence": "sent:tatoeba-161057",
+      "sentence": "sent:tatoeba-10303648",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -176,12 +232,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-1190209",
-      "sent:tatoeba-190560",
-      "sent:tatoeba-10303648",
-      "sent:tatoeba-154767",
-      "sent:tatoeba-152614",
-      "sent:tatoeba-10014826"
+      "sent:tatoeba-1144222",
+      "sent:tatoeba-171813",
+      "sent:tatoeba-171800",
+      "sent:tatoeba-536767",
+      "sent:tatoeba-143418",
+      "sent:tatoeba-171514"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -189,15 +245,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 29,
+    "meaning-input": 28,
     "meaning-output": 7,
-    "language-focused": 49,
-    "fluency": 15
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 20,
+    "language-focused": 22,
     "fluency": 6
   }
 }

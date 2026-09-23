@@ -10,47 +10,95 @@
     "sent:tatoeba-5332",
     "sent:tatoeba-9930561",
     "sent:tatoeba-127122",
-    "sent:tatoeba-84094",
     "sent:tatoeba-137848",
-    "sent:tatoeba-2123447"
+    "sent:tatoeba-9408530",
+    "sent:tatoeba-3598838"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1589350",
+    "vocab:1000580",
     "vocab:1283190",
     "vocab:1254130",
     "vocab:1501620",
     "vocab:1600160",
-    "vocab:1184170",
+    "vocab:1171010",
+    "vocab:1290800",
+    "vocab:1455500",
     "vocab:1219980",
-    "vocab:1145130"
+    "vocab:1145130",
+    "vocab:1588060",
+    "vocab:1006970"
   ],
   "patterns": [
     "gram:o-kudasai",
-    "gram:n3-beki-da",
-    "gram:da-desu",
-    "gram:gp-8"
+    "gram:da-desu"
   ],
   "kanji_recognition": [
     "決",
     "高",
     "段",
     "値",
-    "屋",
-    "代"
+    "下",
+    "金"
   ],
   "shadowing": [
     "sent:tatoeba-5332",
     "sent:tatoeba-9930561",
     "sent:tatoeba-127122",
-    "sent:tatoeba-84094",
     "sent:tatoeba-137848",
-    "sent:tatoeba-2123447"
+    "sent:tatoeba-9408530",
+    "sent:tatoeba-3598838"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-5332",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9930561",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-127122",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-137848",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9408530",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-3598838",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 54,
+  "cumulative_known_vocab": 62,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -62,21 +110,31 @@
     {
       "id": "cf:n3:520:1188",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
         "来る",
         "幾ら",
-        "質問"
+        "元気"
       ]
     },
     {
-      "id": "cf:n3:436:805",
+      "id": "cf:n3:724:545",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "此の",
-        "始め",
-        "待つ"
+        "毒",
+        "話",
+        "夜"
+      ]
+    },
+    {
+      "id": "kr:n3:41",
+      "type": "kanji_reading",
+      "via": "new-word",
+      "distractors": [
+        "はい",
+        "みな",
+        "だけ"
       ]
     },
     {
@@ -88,21 +146,13 @@
         "できる",
         "あいだ"
       ]
-    },
-    {
-      "id": "kr:n3:805",
-      "type": "kanji_reading",
-      "via": "new-word",
-      "distractors": [
-        "はじめ",
-        "ながい",
-        "かかり"
-      ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-kesshite-nai",
-    "gram:gp-3"
+    "gram:gp-3",
+    "gram:gp-4",
+    "gram:wa-yori-desu"
   ],
   "drills": [
     {
@@ -115,29 +165,11 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:n3-beki-da",
-      "examples": [
-        "sent:tatoeba-149720",
-        "sent:tatoeba-144981",
-        "sent:tatoeba-169806"
-      ],
-      "strand": "language-focused"
-    },
-    {
       "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-5057",
-        "sent:tatoeba-74498",
-        "sent:tatoeba-4708"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:gp-8",
-      "examples": [
-        "sent:tatoeba-150175",
-        "sent:tatoeba-11795596",
-        "sent:tatoeba-5320"
+        "sent:tatoeba-4708",
+        "sent:tatoeba-4973",
+        "sent:tatoeba-5078"
       ],
       "strand": "language-focused"
     }
@@ -145,40 +177,46 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Obrigado. Assim está bom."
+        "pt-BR": "A conta, por favor."
       },
-      "answer_key": "ありがとう。これでけっこうです。",
+      "answer_key": "お会計お願いします。",
       "accepted_variants": [
-        "ありがとう。これでけっこうです",
-        "ありがとう。これでけっこうです。"
+        "おかいけいおねがいします",
+        "おかいけいおねがいします。",
+        "お会計お願いします",
+        "お会計お願いします。"
       ],
-      "sentence": "sent:tatoeba-10901919",
+      "sentence": "sent:tatoeba-1014812",
       "kind": "on-topic",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Obrigado, é só isso."
+        "pt-BR": "Desculpe por lhe pedir um favor tão grande e trabalhoso."
       },
-      "answer_key": "ありがとう、それだけだよ。",
+      "answer_key": "たいそうご無理をお願いしてすみません。",
       "accepted_variants": [
-        "ありがとう、それだけだよ",
-        "ありがとう、それだけだよ。"
+        "たいそうごむりをおねがいしてすみません",
+        "たいそうごむりをおねがいしてすみません。",
+        "たいそうご無理をお願いしてすみません",
+        "たいそうご無理をお願いしてすみません。"
       ],
-      "sentence": "sent:tatoeba-5057",
-      "kind": "on-topic",
+      "sentence": "sent:tatoeba-203979",
+      "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Muito obrigado mesmo."
+        "pt-BR": "Olá, tudo bem com você?"
       },
-      "answer_key": "本当にありがとうございます",
+      "answer_key": "こんにちは、お元気ですか。",
       "accepted_variants": [
-        "ほんとうにありがとうございます",
-        "本当にありがとうございます"
+        "こんにちは、おげんきですか",
+        "こんにちは、おげんきですか。",
+        "こんにちは、お元気ですか",
+        "こんにちは、お元気ですか。"
       ],
-      "sentence": "sent:gen-a5ee7b945644",
+      "sentence": "sent:tatoeba-400865",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -188,12 +226,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:gen-1d921e8b2ad3",
+      "sent:tatoeba-13885289",
+      "sent:tatoeba-13259054",
+      "sent:tatoeba-1874351",
       "sent:tatoeba-198378",
       "sent:tatoeba-4971",
-      "sent:tatoeba-1532832",
-      "sent:tatoeba-373351",
-      "sent:tatoeba-229425"
+      "sent:tatoeba-373351"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -201,9 +239,9 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 24,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 57,
+    "language-focused": 56,
     "fluency": 12
   },
   "strand_counts": {

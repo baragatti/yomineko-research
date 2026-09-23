@@ -27,8 +27,8 @@ Both paths stay. This is for the learner with a trip in eight weeks; the JLPT pa
 learner with an exam in December.
 
 **"Every stage is a usable stopping point" is the goal, not yet a measured property of what ships** —
-the same correction §5 already carries about the survival cores. Eleven of the twelve stages declare
-no survival core (§5); no stage is inside R78's strand budget (§6a); `arrival` teaches four ways to
+the same correction §5 already carries about the survival cores. Three of the twelve stages still declare
+no live survival core (§5); no stage is inside R78's strand budget (§6a); `arrival` teaches four ways to
 apologise for a delay and two ways to say good morning (§6b), and is never said again after week one
 (§6c). What the ordering *does* satisfy is the constraint the sentence is really about: no stage
 depends on a later one, which is what makes stopping possible. The three sections below measure the
@@ -247,13 +247,24 @@ Approximate JLPT bands are shown for orientation only — **the path never gates
 | 12 | Conversa de verdade | `real_talk` | らしい そうです ば たら のに ながら わけ | N3 |
 
 Full seed lexicons live in the builder, not here, so they stay executable rather than drifting from the
-prose. **The survival cores of R87 do not exist per stage yet.** `SURVIVAL_SEEDS` in
-`scripts/export/build_speaking_path.py` holds exactly **one** entry — `shopping`, with 8 terms
-(いくらですか / いくらぐらい / これをください / それをください / あれをください / 値段 / 会計 / レジ)
-— and the other **eleven stages have none**, so in those eleven the frequency axis still decides the
-whole stage, which is the failure R87 was written to stop. Reading this section as "each stage declares
-its core, the list just lives in code" is wrong; writing the eleven missing cores is a queued unit
-(readiness G2). The R87 example itself is only half-fixed: `shopping` now leads with a price question,
+prose. **The survival cores of R87 are live in 9 of 12 stages (W32 apply, 2026-09-23).** W32 authored
+a core for all eleven stages that had none (`research/derived/pending/speak_survival_cores.json`, 71
+rows, one term per speech act), but a term goes live in `SURVIVAL_SEEDS` only once its OWN sentence is
+banked: 9 of the 71 are, and the other 62 wait on an ingest their Layer-B residue blocks
+(`research/derived/pending/w32_layerb_derived.json`: structure paragraph and literal translation on all
+62, 25 particle explanations, 9 ambiguous glosses). A term without its row promotes whatever else
+carries it, which is measurably worse (all 71 live at once: near-duplicate pairs 24 -> 35). So today
+`shopping` keeps its 8 terms, eight more stages have 1 or 2 each, and `arrival`, `lodging` and
+`past_stories` have none. Each term teaches its act ONCE per stage: after the first phrase carrying a
+term is placed, later sentences with the same term rank like anything else. It is a hard gate
+(`validate_speaking_path.py`): every stage declares a core unless it is listed as pending its ingest
+(a list that may only shrink), and every declared core reaches the stage's opening unit (9/9).
+
+**SRS (W30, decision D10).** Every unit enrols its say_now phrases in `deck:phrases` through
+`srs.introduces_cards`, the same shape a lesson uses (`{deck, item: sent:…, card_types}`): 432 cards,
+one per phrase, none enrolled twice on the path. `production` only for now (prompt = the pt-BR
+translation, answer = the phrase); `listening` joins when a unit's `audio` stops being `"pending"`.
+A card's `introduced_by` is then the `speak:` unit id. `validate_srs_decks.py` rules 2, 5, 7 and 8. The R87 example itself is only half-fixed: `shopping` now leads with a price question,
 but あれはキジです (`sent:tatoeba-229742`, "that is a pheasant") is **still shipped** in
 `speak:shopping-03` (checked in the export, 2026-09-02).
 

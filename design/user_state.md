@@ -140,10 +140,10 @@ over 322 lessons, 9,453 card instances, no item enrolled twice anywhere (`srs_fs
 | `card_id` | see §2 | |
 | `user_id` | `usr:` id | Redundant with the key's first two segments, stored for indexing. |
 | `deck` | `deck:` id | `design/unlock_enums.json#deck`. A deck's `level` is a **curriculum position, not a JLPT claim** about its contents. |
-| `item` | corpus `StableId` | `vocab:` / `kanji:` / `gram:` / `kana:` today; `sent:` when `deck:phrases` is populated (W30). |
+| `item` | corpus `StableId` | `vocab:` / `kanji:` / `gram:` / `kana:` from lessons; `sent:` in `deck:phrases`, minted by the speak units (W30). |
 | `kind` | `recognition` \| `production` \| `listening` \| `handwriting` \| `cloze` | `design/unlock_enums.json#card_type`. |
 | `cloze_target` | `<sentence id>#<token index>`, required when `kind = cloze` | **Required, not optional.** Re-picking the sentence at review time silently changes the fact being tested, and a card whose content moves is not one memory fact — its difficulty and stability estimates become noise. 496 cloze cards exist; 17 grammar points have no sentence to blank and must be authored before those cards can render (W28). |
-| `introduced_by` | `les:` id | Which lesson minted it. The route a leech takes back to remediation. |
+| `introduced_by` | `les:` or `speak:` id | Which lesson, or which speak unit (W30), minted it. The route a leech takes back to remediation. |
 | `state` | `new` \| `learning` \| `review` \| `relearning` | FSRS-6 card state. Neutral English; the learner-facing labels are pt-BR content, not enum values. |
 | `step` | integer, nullable | Position in the learning/relearning steps. Null outside those states. |
 | `stability` | number > 0, nullable | *S*, in days. Null while `state = new`. |

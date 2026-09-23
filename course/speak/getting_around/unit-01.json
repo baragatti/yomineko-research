@@ -7,111 +7,170 @@
     "pt-BR": "Chegar aonde você quer, parte 1"
   },
   "say_now": [
-    "sent:tatoeba-154919",
-    "sent:tatoeba-206708",
-    "sent:tatoeba-162318",
-    "sent:tatoeba-201017",
-    "sent:tatoeba-198139",
-    "sent:tatoeba-198125"
+    "sent:tatoeba-198204",
+    "sent:tatoeba-201024",
+    "sent:tatoeba-234972",
+    "sent:tatoeba-235139",
+    "sent:tatoeba-10910772",
+    "sent:tatoeba-187008"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1522150",
-    "vocab:1206730",
-    "vocab:1338240",
-    "vocab:1502840",
+    "vocab:2020680",
+    "vocab:1191730",
     "vocab:1098390",
-    "vocab:1443530",
-    "vocab:1421290",
-    "vocab:1577140",
-    "vocab:1120410"
+    "vocab:1422970",
+    "vocab:1175140",
+    "vocab:1242160",
+    "vocab:1268770",
+    "vocab:1268060",
+    "vocab:1577140"
   ],
   "patterns": [
-    "gram:ga-hoshii"
+    "gram:gp-116",
+    "gram:gp-52",
+    "gram:nakucha"
   ],
   "kanji_recognition": [
-    "私",
-    "車",
-    "中",
-    "電",
-    "読",
-    "本"
+    "五",
+    "今",
+    "時",
+    "着",
+    "駅",
+    "会"
   ],
   "shadowing": [
-    "sent:tatoeba-154919",
-    "sent:tatoeba-206708",
-    "sent:tatoeba-162318",
-    "sent:tatoeba-201017",
-    "sent:tatoeba-198139",
-    "sent:tatoeba-198125"
+    "sent:tatoeba-198204",
+    "sent:tatoeba-201024",
+    "sent:tatoeba-234972",
+    "sent:tatoeba-235139",
+    "sent:tatoeba-10910772",
+    "sent:tatoeba-187008"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-198204",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-201024",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-234972",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-235139",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10910772",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-187008",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 162,
+  "cumulative_known_vocab": 178,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n4:3596",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n4:3596:571",
+      "id": "cf:n4:3449:283",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "夜",
-        "彼",
-        "昼"
+        "駅",
+        "手",
+        "毒"
       ]
     },
     {
-      "id": "cf:n4:829:395",
+      "id": "cf:n3:198:45",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "会う",
-        "此の",
-        "今日"
+        "今",
+        "日",
+        "事"
       ]
     },
     {
-      "id": "kr:n3:163",
+      "id": "kr:n3:45",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "でかける",
-        "はじめて",
-        "おいしい"
+        "ほね",
+        "ない",
+        "えき"
       ]
     },
     {
-      "id": "kr:n4:163",
+      "id": "kr:n3:90",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "コーヒー",
-        "おぼえる",
-        "けっして"
+        "よい",
+        "きく",
+        "いつ"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-kurai",
-    "gram:gp-36",
-    "gram:gp-70",
-    "gram:no-naka-de",
-    "gram:oki-ni"
+    "gram:n3-koto-ni-natte-iru",
+    "gram:gp-145",
+    "gram:cha-ikenai-ja-ikenai"
   ],
   "drills": [
     {
-      "pattern": "gram:ga-hoshii",
+      "pattern": "gram:gp-116",
       "examples": [
-        "sent:tatoeba-1484951",
-        "sent:tatoeba-13126478",
-        "sent:tatoeba-149136"
+        "sent:tatoeba-8575501",
+        "sent:tatoeba-8596851",
+        "sent:tatoeba-143720"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:gp-52",
+      "examples": [
+        "sent:tatoeba-8753239",
+        "sent:tatoeba-12483339",
+        "sent:tatoeba-528350"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:nakucha",
+      "examples": [
+        "sent:tatoeba-2095014",
+        "sent:tatoeba-194211",
+        "sent:tatoeba-3555506"
       ],
       "strand": "language-focused"
     }
@@ -119,50 +178,48 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "O pub é um lugar onde as pessoas se reúnem para beber cerveja."
+        "pt-BR": "À esquerda fica a recepção e à direita, o caixa."
       },
-      "answer_key": "パブはビールを飲みに人々が集まる場所だ。",
+      "answer_key": "左が受付で、右が会計です。",
       "accepted_variants": [
-        "ぱぶはびーるをのみにひとびとがあつまるばしょだ",
-        "ぱぶはびーるをのみにひとびとがあつまるばしょだ。",
-        "ぱぶわびーるをのみにひとびとがあつまるばしょだ",
-        "ぱぶわびーるをのみにひとびとがあつまるばしょだ。",
-        "パブはビールを飲みに人々が集まる場所だ",
-        "パブはビールを飲みに人々が集まる場所だ。"
+        "ひだりがうけつけで、みぎがかいけいです",
+        "ひだりがうけつけで、みぎがかいけいです。",
+        "左が受付で、右が会計です",
+        "左が受付で、右が会計です。"
       ],
-      "sentence": "sent:tatoeba-197915",
+      "sentence": "sent:tatoeba-9408530",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "Quero algo para comer."
+      },
+      "answer_key": "何か食べるものがほしい。",
+      "accepted_variants": [
+        "なんかたべるものがほしい",
+        "なんかたべるものがほしい。",
+        "何か食べるものがほしい",
+        "何か食べるものがほしい。"
+      ],
+      "sentence": "sent:tatoeba-187939",
       "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Ele levava água com afinco até a boca dela."
+        "pt-BR": "Evite comer coisas apimentadas e muito fortes."
       },
-      "answer_key": "彼がせっせと彼女の口に水を運んだ",
+      "answer_key": "辛くて刺激の多いものは食べないように。",
       "accepted_variants": [
-        "かれがせっせとかのじょのくちにみずをはこんだ",
-        "彼がせっせと彼女の口に水を運んだ"
+        "つらくてしげきのおおいものはたべないように",
+        "つらくてしげきのおおいものはたべないように。",
+        "つらくてしげきのおおいものわたべないように",
+        "つらくてしげきのおおいものわたべないように。",
+        "辛くて刺激の多いものは食べないように",
+        "辛くて刺激の多いものは食べないように。"
       ],
-      "sentence": "sent:jec-2741",
-      "kind": "review",
-      "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Naquela época, uma xícara de café custava 200 ienes, viu."
-      },
-      "answer_key": "あの頃はコーヒー１杯が２００円だったよ。",
-      "accepted_variants": [
-        "あのころはこーひーいっぱいがにひゃくえんだったよ",
-        "あのころはこーひーいっぱいがにひゃくえんだったよ。",
-        "あのころわこーひーいっぱいがにひゃくえんだったよ",
-        "あのころわこーひーいっぱいがにひゃくえんだったよ。",
-        "あの頃はコーヒー1杯が200円だったよ",
-        "あの頃はコーヒー1杯が200円だったよ。",
-        "あの頃はコーヒー１杯が２００円だったよ",
-        "あの頃はコーヒー１杯が２００円だったよ。"
-      ],
-      "sentence": "sent:tatoeba-231327",
+      "sentence": "sent:tatoeba-144724",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -172,12 +229,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-162347",
-      "sent:tatoeba-78125",
-      "sent:tatoeba-13440729",
+      "sent:tatoeba-8729106",
+      "sent:tatoeba-10617667",
+      "sent:tatoeba-225298",
       "sent:tatoeba-179391",
-      "sent:tatoeba-5329",
-      "sent:tatoeba-172639"
+      "sent:tatoeba-185915",
+      "sent:tatoeba-204265"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -185,15 +242,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 26,
     "meaning-output": 7,
-    "language-focused": 52,
-    "fluency": 14
+    "language-focused": 54,
+    "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 22,
+    "language-focused": 25,
     "fluency": 6
   }
 }

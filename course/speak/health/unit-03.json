@@ -8,94 +8,137 @@
   },
   "say_now": [
     "sent:tatoeba-83924",
-    "sent:tatoeba-11270411",
-    "sent:tatoeba-79502",
-    "sent:tatoeba-226387",
-    "sent:tatoeba-214052",
-    "sent:tatoeba-203287"
+    "sent:tatoeba-10263746",
+    "sent:tatoeba-137964",
+    "sent:tatoeba-179256",
+    "sent:tatoeba-79499",
+    "sent:tatoeba-11270411"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
     "vocab:1423000",
+    "vocab:1404630",
+    "vocab:1409140",
+    "vocab:1246700",
     "vocab:1538160",
-    "vocab:1510650",
     "vocab:2842174",
-    "vocab:1634500",
-    "vocab:1244310",
-    "vocab:1602060"
+    "vocab:1365860",
+    "vocab:1591100",
+    "vocab:1241810"
   ],
   "patterns": [
+    "gram:totemo",
     "gram:n3-kke",
-    "gram:gp-121",
-    "gram:kana",
-    "gram:tara"
+    "gram:n3-temo",
+    "gram:kana"
   ],
   "kanji_recognition": [
     "引",
     "邪",
     "着",
     "風",
-    "飲",
-    "薬"
+    "左",
+    "足"
   ],
   "shadowing": [
     "sent:tatoeba-83924",
-    "sent:tatoeba-11270411",
-    "sent:tatoeba-79502",
-    "sent:tatoeba-226387",
-    "sent:tatoeba-214052",
-    "sent:tatoeba-203287"
+    "sent:tatoeba-10263746",
+    "sent:tatoeba-137964",
+    "sent:tatoeba-179256",
+    "sent:tatoeba-79499",
+    "sent:tatoeba-11270411"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-83924",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10263746",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-137964",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-179256",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-79499",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11270411",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 388,
+  "cumulative_known_vocab": 462,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:130",
-      "type": "sentence_order",
-      "via": "phrase"
+      "id": "cf:n3:760:15",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "時",
+        "庭",
+        "国"
+      ]
     },
     {
       "id": "cf:n3:130:211",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
+        "差",
         "月",
-        "係",
         "足"
       ]
     },
     {
-      "id": "cf:n3:184:848",
-      "type": "context_fill",
-      "via": "phrase",
-      "distractors": [
-        "寄る",
-        "有名",
-        "見る"
-      ]
-    },
-    {
-      "id": "kr:n3:1075",
+      "id": "kr:n3:15",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "みなと",
-        "おえる",
-        "こんな"
+        "すき",
+        "もう",
+        "つき"
       ]
     },
     {
-      "id": "kr:n4:205",
+      "id": "kr:n3:174",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ふん",
-        "えき",
-        "ほど"
+        "しまう",
+        "きのう",
+        "ゆずる"
       ]
     }
   ],
@@ -105,20 +148,29 @@
   ],
   "drills": [
     {
-      "pattern": "gram:n3-kke",
+      "pattern": "gram:totemo",
       "examples": [
-        "sent:tatoeba-11831595",
-        "sent:tatoeba-10913720",
-        "sent:tatoeba-423650"
+        "sent:tatoeba-5092",
+        "sent:gen-2b1fccae756f",
+        "sent:tatoeba-5074"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-121",
+      "pattern": "gram:n3-kke",
       "examples": [
-        "sent:gen-3612bfffc506",
-        "sent:gen-db5a35aa9230",
-        "sent:gen-1484a0acc3d0"
+        "sent:tatoeba-11831595",
+        "sent:tatoeba-10913720",
+        "sent:tatoeba-150277"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-temo",
+      "examples": [
+        "sent:tatoeba-173357",
+        "sent:tatoeba-6015",
+        "sent:tatoeba-85028"
       ],
       "strand": "language-focused"
     },
@@ -130,62 +182,55 @@
         "sent:gen-72c52ba4dd08"
       ],
       "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:tara",
-      "examples": [
-        "sent:tatoeba-4713",
-        "sent:tatoeba-4812",
-        "sent:tatoeba-4860"
-      ],
-      "strand": "language-focused"
     }
   ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "Agora estou me sentindo bem relaxado."
+        "pt-BR": "Me machuquei na aula de educação física."
       },
-      "answer_key": "今とてもゆったりした気分だ。",
+      "answer_key": "僕は体育の授業中に怪我をした。",
       "accepted_variants": [
-        "いまとてもゆったりしたきぶんだ",
-        "いまとてもゆったりしたきぶんだ。",
-        "今とてもゆったりした気分だ",
-        "今とてもゆったりした気分だ。"
+        "ぼくはたいいくのじゅぎょうちゅうにけがをした",
+        "ぼくはたいいくのじゅぎょうちゅうにけがをした。",
+        "ぼくわたいいくのじゅぎょうちゅうにけがをした",
+        "ぼくわたいいくのじゅぎょうちゅうにけがをした。",
+        "僕は体育の授業中に怪我をした",
+        "僕は体育の授業中に怪我をした。"
       ],
-      "sentence": "sent:tatoeba-172775",
+      "sentence": "sent:tatoeba-137996",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Estou com vontade de cantar na chuva."
+        "pt-BR": "Ultimamente não tenho me sentido bem."
       },
-      "answer_key": "雨の中で歌いたい気分だ。",
+      "answer_key": "この頃、気分が優れないんだ。",
       "accepted_variants": [
-        "あめのなかでうたいたいきぶんだ",
-        "あめのなかでうたいたいきぶんだ。",
-        "雨の中で歌いたい気分だ",
-        "雨の中で歌いたい気分だ。"
+        "このころ、きぶんがすぐれないんだ",
+        "このころ、きぶんがすぐれないんだ。",
+        "この頃、気分が優れないんだ",
+        "この頃、気分が優れないんだ。"
       ],
-      "sentence": "sent:tatoeba-189575",
+      "sentence": "sent:tatoeba-223742",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Hoje estou me sentindo muito melhor."
+        "pt-BR": "Ela foi embora. Estou com vontade de chorar."
       },
-      "answer_key": "今日はずっと気分がよい。",
+      "answer_key": "彼女は行ってしまった。ぼくは泣きたい気分だ。",
       "accepted_variants": [
-        "きょうはずっときぶんがよい",
-        "きょうはずっときぶんがよい。",
-        "きょうわずっときぶんがよい",
-        "きょうわずっときぶんがよい。",
-        "今日はずっと気分がよい",
-        "今日はずっと気分がよい。"
+        "かのじょはいってしまった。ぼくはなきたいきぶんだ",
+        "かのじょはいってしまった。ぼくはなきたいきぶんだ。",
+        "かのじょわいってしまった。ぼくわなきたいきぶんだ",
+        "かのじょわいってしまった。ぼくわなきたいきぶんだ。",
+        "彼女は行ってしまった。ぼくは泣きたい気分だ",
+        "彼女は行ってしまった。ぼくは泣きたい気分だ。"
       ],
-      "sentence": "sent:tatoeba-171774",
+      "sentence": "sent:tatoeba-90106",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -195,12 +240,12 @@
       "pt-BR": "Você não está bem. Explique o que está sentindo e peça ajuda."
     },
     "items": [
-      "sent:tatoeba-10263746",
-      "sent:tatoeba-90106",
-      "sent:tatoeba-190902",
-      "sent:tatoeba-1190209",
-      "sent:tatoeba-190560",
-      "sent:tatoeba-10303648"
+      "sent:jec-0673",
+      "sent:tatoeba-231218",
+      "sent:tatoeba-1144222",
+      "sent:tatoeba-171813",
+      "sent:tatoeba-171800",
+      "sent:tatoeba-536767"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -216,7 +261,7 @@
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 27,
     "fluency": 6
   }
 }

@@ -20,6 +20,7 @@
     "vocab:1587040",
     "vocab:1536010",
     "vocab:1001820",
+    "vocab:1223615",
     "vocab:1270810"
   ],
   "patterns": [],
@@ -39,9 +40,55 @@
     "sent:tatoeba-229178",
     "sent:tatoeba-205771"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10094172",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-8938683",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-79848",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-2941029",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-229178",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-205771",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 76,
+  "cumulative_known_vocab": 86,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -52,7 +99,7 @@
       "distractors": [
         "一番",
         "最中",
-        "払う"
+        "受付"
       ]
     },
     {
@@ -61,8 +108,8 @@
       "via": "new-word",
       "distractors": [
         "時間",
-        "其れ",
-        "払う"
+        "期待",
+        "其れ"
       ]
     },
     {
@@ -80,9 +127,9 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
+        "どく",
         "いく",
-        "なに",
-        "むり"
+        "なに"
       ]
     }
   ],
@@ -98,48 +145,50 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Ele viu aquilo pela primeira vez."
+        "pt-BR": "O que isso representa?"
       },
-      "answer_key": "彼が初めてそれを見た",
+      "answer_key": "これは何を表しますか。",
       "accepted_variants": [
-        "かれがはじめてそれをみた",
-        "彼が初めてそれを見た"
+        "これはなんをあらわしますか",
+        "これはなんをあらわしますか。",
+        "これは何を表しますか",
+        "これは何を表しますか。",
+        "これわなんをあらわしますか",
+        "これわなんをあらわしますか。"
       ],
-      "sentence": "sent:jec-0436",
+      "sentence": "sent:tatoeba-218479",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Aquilo é uma mesa."
+        "pt-BR": "O que é aquilo?"
       },
-      "answer_key": "あれはテーブルです。",
+      "answer_key": "あれは何ですか。",
       "accepted_variants": [
-        "あれはてーぶるです",
-        "あれはてーぶるです。",
-        "あれはテーブルです",
-        "あれはテーブルです。",
-        "あれわてーぶるです",
-        "あれわてーぶるです。"
+        "あれはなんですか",
+        "あれはなんですか。",
+        "あれは何ですか",
+        "あれは何ですか。",
+        "あれわなんですか",
+        "あれわなんですか。"
       ],
-      "sentence": "sent:tatoeba-229736",
+      "sentence": "sent:tatoeba-229723",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Aquilo é um gato?"
+        "pt-BR": "Não a vejo desde então."
       },
-      "answer_key": "あれはネコですか。",
+      "answer_key": "それ以来彼女に会っていません。",
       "accepted_variants": [
-        "あれはねこですか",
-        "あれはねこですか。",
-        "あれはネコですか",
-        "あれはネコですか。",
-        "あれわねこですか",
-        "あれわねこですか。"
+        "それいらいかのじょにあっていません",
+        "それいらいかのじょにあっていません。",
+        "それ以来彼女に会っていません",
+        "それ以来彼女に会っていません。"
       ],
-      "sentence": "sent:tatoeba-229731",
+      "sentence": "sent:tatoeba-205962",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -149,10 +198,10 @@
       "pt-BR": "Você está numa loja com uma coisa na mão. Pergunte o preço e feche a compra."
     },
     "items": [
-      "sent:tatoeba-229742",
-      "sent:tatoeba-229723",
-      "sent:tatoeba-160972",
-      "sent:tatoeba-233659",
+      "sent:tatoeba-13713986",
+      "sent:tatoeba-204910",
+      "sent:tatoeba-87935",
+      "sent:tatoeba-119330",
       "sent:tatoeba-127122",
       "sent:tatoeba-9930561"
     ],
@@ -170,7 +219,7 @@
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 14,
+    "language-focused": 15,
     "fluency": 6
   }
 }

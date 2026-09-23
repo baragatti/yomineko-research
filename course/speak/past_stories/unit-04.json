@@ -7,122 +7,155 @@
     "pt-BR": "Contar o que aconteceu, parte 4"
   },
   "say_now": [
-    "sent:tatoeba-11706794",
-    "sent:tatoeba-147605",
-    "sent:tatoeba-81342",
     "sent:tatoeba-214558",
-    "sent:tatoeba-84089",
-    "sent:tatoeba-10056979"
+    "sent:tatoeba-8842226",
+    "sent:tatoeba-1590863",
+    "sent:tatoeba-225041",
+    "sent:tatoeba-78126",
+    "sent:tatoeba-11706794"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1358490",
+    "vocab:1196000",
+    "vocab:1044070",
+    "vocab:1355810",
+    "vocab:1106010",
     "vocab:1228260",
-    "vocab:1341000",
-    "vocab:1524700",
     "vocab:1397300",
-    "vocab:1244680",
-    "vocab:1092820",
-    "vocab:1222840",
-    "vocab:1597150",
-    "vocab:1009290"
+    "vocab:1597150"
   ],
   "patterns": [
-    "gram:koto-ga-aru",
-    "gram:n3-dakedo",
     "gram:n3-rashii",
-    "gram:gp-80",
-    "gram:gp-12",
-    "gram:gp-25"
+    "gram:gp-32",
+    "gram:yori",
+    "gram:gp-2",
+    "gram:tte"
   ],
   "kanji_recognition": [
-    "吸",
-    "初",
-    "楽",
-    "季",
-    "春",
-    "節"
+    "下",
+    "経",
+    "験",
+    "事",
+    "食",
+    "過"
   ],
   "shadowing": [
-    "sent:tatoeba-11706794",
-    "sent:tatoeba-147605",
-    "sent:tatoeba-81342",
     "sent:tatoeba-214558",
-    "sent:tatoeba-84089",
-    "sent:tatoeba-10056979"
+    "sent:tatoeba-8842226",
+    "sent:tatoeba-1590863",
+    "sent:tatoeba-225041",
+    "sent:tatoeba-78126",
+    "sent:tatoeba-11706794"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-214558",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-8842226",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1590863",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-225041",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78126",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11706794",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 437,
+  "cumulative_known_vocab": 525,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
+    {
+      "id": "so:n3:185",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
     {
       "id": "so:n3:259",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "cf:n3:729:195",
+      "id": "cf:n3:673:151",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "何れ",
-        "予約",
-        "急ぐ"
+        "大学",
+        "移動",
+        "大変"
       ]
     },
     {
-      "id": "cf:n4:846:595",
+      "id": "cf:n4:673:151",
       "type": "context_fill",
-      "via": "new-word",
+      "via": "phrase",
       "distractors": [
-        "風邪",
-        "後ろ",
-        "無い"
+        "去年",
+        "いい",
+        "大半"
       ]
     },
     {
-      "id": "kr:n4:460",
+      "id": "kr:n4:1302",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ねる",
-        "まつ",
-        "おや"
+        "われわれ",
+        "たてもの",
+        "うまれる"
       ]
     },
     {
-      "id": "kr:n5:460",
+      "id": "kr:n3:1394",
       "type": "kanji_reading",
-      "via": "new-word",
+      "via": "review",
       "distractors": [
-        "おじ",
-        "でる",
-        "ろく"
+        "まったく",
+        "しつもん",
+        "せいぞう"
       ]
     }
   ],
-  "patterns_chunked": [],
+  "patterns_chunked": [
+    "gram:gp-121"
+  ],
   "drills": [
-    {
-      "pattern": "gram:koto-ga-aru",
-      "examples": [
-        "sent:tatoeba-1897537",
-        "sent:tatoeba-235631",
-        "sent:tatoeba-433648"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-dakedo",
-      "examples": [
-        "sent:tatoeba-3366905",
-        "sent:tatoeba-8575497",
-        "sent:tatoeba-171648"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:n3-rashii",
       "examples": [
@@ -133,29 +166,38 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-80",
+      "pattern": "gram:gp-32",
       "examples": [
-        "sent:tatoeba-141431",
-        "sent:tatoeba-189474",
-        "sent:tatoeba-215746"
+        "sent:tatoeba-85319",
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-12",
+      "pattern": "gram:yori",
       "examples": [
-        "sent:tatoeba-84959",
-        "sent:tatoeba-78451",
-        "sent:tatoeba-11960481"
+        "sent:tatoeba-105626",
+        "sent:tatoeba-76098",
+        "sent:tatoeba-173719"
       ],
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:gp-25",
+      "pattern": "gram:gp-2",
       "examples": [
-        "sent:tatoeba-229345",
-        "sent:tatoeba-8575514",
-        "sent:tatoeba-8575496"
+        "sent:tatoeba-171784",
+        "sent:tatoeba-171787",
+        "sent:tatoeba-171788"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:tte",
+      "examples": [
+        "sent:gen-fee342a8016b",
+        "sent:gen-48c455d520ba",
+        "sent:gen-5412a2ccf468"
       ],
       "strand": "language-focused"
     }
@@ -163,44 +205,50 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "No fim das contas, é a experiência que faz a diferença."
+        "pt-BR": "Eu não nasci ontem."
       },
-      "answer_key": "やはり経験がものを言います",
+      "answer_key": "私は昨日生まれたわけではない。",
       "accepted_variants": [
-        "やはりけいけんがものをいいます",
-        "やはり経験がものを言います"
+        "わたしはきのううまれたわけではない",
+        "わたしはきのううまれたわけではない。",
+        "わたしわきのううまれたわけでわない",
+        "わたしわきのううまれたわけでわない。",
+        "私は昨日生まれたわけではない",
+        "私は昨日生まれたわけではない。"
       ],
-      "sentence": "sent:jec-0319",
+      "sentence": "sent:tatoeba-156748",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Todo mundo passa por isso."
+        "pt-BR": "Você tem dinheiro suficiente para a viagem?"
       },
-      "answer_key": "誰もが経験をする",
+      "answer_key": "旅行に十分なお金がありますか。",
       "accepted_variants": [
-        "だれもがけいけんをする",
-        "誰もが経験をする"
+        "りょこうにじゅうぶんなおかねがありますか",
+        "りょこうにじゅうぶんなおかねがありますか。",
+        "旅行に十分なお金がありますか",
+        "旅行に十分なお金がありますか。"
       ],
-      "sentence": "sent:jec-0071",
+      "sentence": "sent:tatoeba-78171",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Em casos assim, é a experiência que fala mais alto."
+        "pt-BR": "Não consigo esquecer o que aconteceu no verão passado."
       },
-      "answer_key": "こういう場合には経験が物を言う。",
+      "answer_key": "去年の夏の出来事は忘れられないよ。",
       "accepted_variants": [
-        "こういうばあいにはけいけんがものをいう",
-        "こういうばあいにはけいけんがものをいう。",
-        "こういうばあいにわけいけんがものをゆう",
-        "こういうばあいにわけいけんがものをゆう。",
-        "こういう場合には経験が物を言う",
-        "こういう場合には経験が物を言う。"
+        "きょねんのなつのできごとはわすれられないよ",
+        "きょねんのなつのできごとはわすれられないよ。",
+        "きょねんのなつのできごとわわすれられないよ",
+        "きょねんのなつのできごとわわすれられないよ。",
+        "去年の夏の出来事は忘れられないよ",
+        "去年の夏の出来事は忘れられないよ。"
       ],
-      "sentence": "sent:tatoeba-225041",
+      "sentence": "sent:tatoeba-12275994",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -210,12 +258,12 @@
       "pt-BR": "Alguém perguntou como foi seu fim de semana. Conte, no passado."
     },
     "items": [
-      "sent:tatoeba-5118",
-      "sent:tatoeba-142423",
-      "sent:tatoeba-212666",
-      "sent:jec-1326",
-      "sent:tatoeba-10587764",
-      "sent:tatoeba-203344"
+      "sent:tatoeba-144504",
+      "sent:tatoeba-228002",
+      "sent:tatoeba-171398",
+      "sent:tatoeba-170021",
+      "sent:tatoeba-106778",
+      "sent:tatoeba-11890833"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -223,15 +271,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 22,
+    "meaning-input": 24,
     "meaning-output": 6,
-    "language-focused": 61,
-    "fluency": 11
+    "language-focused": 59,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 32,
+    "language-focused": 30,
     "fluency": 6
   }
 }

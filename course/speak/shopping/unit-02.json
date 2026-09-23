@@ -7,118 +7,162 @@
     "pt-BR": "Isto, aquilo, quanto custa, parte 2"
   },
   "say_now": [
-    "sent:tatoeba-220250",
     "sent:tatoeba-190094",
-    "sent:jec-2434",
-    "sent:tatoeba-233659",
-    "sent:tatoeba-185332",
-    "sent:tatoeba-145755"
+    "sent:jec-0436",
+    "sent:tatoeba-109210",
+    "sent:tatoeba-112260",
+    "sent:tatoeba-205912",
+    "sent:tatoeba-119330"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
+    "vocab:1483070",
     "vocab:1323080",
     "vocab:1165970",
-    "vocab:1352290",
-    "vocab:1042610",
-    "vocab:1184160",
-    "vocab:1223615",
-    "vocab:1009320",
-    "vocab:1221250",
-    "vocab:1040250",
-    "vocab:1457440",
-    "vocab:1358680"
+    "vocab:1342550",
+    "vocab:1310680",
+    "vocab:1577280",
+    "vocab:1577670",
+    "vocab:1371920",
+    "vocab:1012980"
   ],
   "patterns": [
-    "gram:deshou"
+    "gram:da-desu"
   ],
   "kanji_recognition": [
-    "豚",
-    "肉",
     "一",
     "高",
     "車",
-    "番"
+    "番",
+    "見",
+    "初"
   ],
   "shadowing": [
-    "sent:tatoeba-220250",
     "sent:tatoeba-190094",
-    "sent:jec-2434",
-    "sent:tatoeba-233659",
-    "sent:tatoeba-185332",
-    "sent:tatoeba-145755"
+    "sent:jec-0436",
+    "sent:tatoeba-109210",
+    "sent:tatoeba-112260",
+    "sent:tatoeba-205912",
+    "sent:tatoeba-119330"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-190094",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:jec-0436",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-109210",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-112260",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-205912",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-119330",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 65,
+  "cumulative_known_vocab": 71,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "so:n3:210",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "so:n3:500",
-      "type": "sentence_order",
-      "via": "phrase"
-    },
-    {
-      "id": "cf:n3:210:942",
+      "id": "cf:n3:415:758",
       "type": "context_fill",
       "via": "phrase",
       "distractors": [
-        "いいえ",
-        "下さる",
-        "考える"
+        "夜",
+        "事",
+        "皆"
       ]
     },
     {
-      "id": "cf:n3:500:1123",
+      "id": "cf:n3:265:758",
       "type": "context_fill",
-      "via": "phrase",
+      "via": "new-word",
       "distractors": [
-        "始め",
-        "最中",
-        "余り"
+        "右",
+        "車",
+        "番"
       ]
     },
     {
-      "id": "kr:n3:1123",
+      "id": "kr:n3:57",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はなし",
-        "こんな",
-        "あがる"
+        "くださる",
+        "せんせい",
+        "おぼえる"
       ]
     },
     {
-      "id": "kr:n3:1300",
+      "id": "kr:n4:225",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "はらう",
-        "はなし",
-        "さがる"
+        "ひだり",
+        "こちら",
+        "たかい"
+      ]
+    },
+    {
+      "id": "pp:n5:286",
+      "type": "paraphrase",
+      "via": "review",
+      "distractors": [
+        "見る",
+        "願う",
+        "値段"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:gp-59",
-    "gram:gari",
-    "gram:garu-gatteiru",
+    "gram:sore-kara",
+    "gram:n3-rareta",
     "gram:gp-121",
-    "gram:gp-75"
+    "gram:gp-3",
+    "gram:ichiban"
   ],
   "drills": [
     {
-      "pattern": "gram:deshou",
+      "pattern": "gram:da-desu",
       "examples": [
-        "sent:tatoeba-79089",
-        "sent:tatoeba-78454",
-        "sent:tatoeba-98793"
+        "sent:tatoeba-5332",
+        "sent:tatoeba-5057",
+        "sent:tatoeba-4708"
       ],
       "strand": "language-focused"
     }
@@ -126,16 +170,33 @@
   "production": [
     {
       "prompt": {
-        "pt-BR": "Eu acho que devíamos baixar o preço."
+        "pt-BR": "Aquilo é veneno."
       },
-      "answer_key": "値段を下げるべきだと思います。",
+      "answer_key": "あれは毒だ。",
       "accepted_variants": [
-        "ねだんをさげるべきだとおもいます",
-        "ねだんをさげるべきだとおもいます。",
-        "値段を下げるべきだと思います",
-        "値段を下げるべきだと思います。"
+        "あれはどくだ",
+        "あれはどくだ。",
+        "あれは毒だ",
+        "あれは毒だ。",
+        "あれわどくだ",
+        "あれわどくだ。"
       ],
-      "sentence": "sent:tatoeba-2123447",
+      "sentence": "sent:tatoeba-3598838",
+      "kind": "same-stage",
+      "strand": "meaning-output"
+    },
+    {
+      "prompt": {
+        "pt-BR": "À esquerda fica a recepção e à direita, o caixa."
+      },
+      "answer_key": "左が受付で、右が会計です。",
+      "accepted_variants": [
+        "ひだりがうけつけで、みぎがかいけいです",
+        "ひだりがうけつけで、みぎがかいけいです。",
+        "左が受付で、右が会計です",
+        "左が受付で、右が会計です。"
+      ],
+      "sentence": "sent:tatoeba-9408530",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
@@ -155,24 +216,6 @@
       "sentence": "sent:tatoeba-137848",
       "kind": "same-stage",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "Quanto custa o quarto?"
-      },
-      "answer_key": "部屋代はいくらですか？",
-      "accepted_variants": [
-        "へやだいはいくらですか",
-        "へやだいはいくらですか?",
-        "へやだいわいくらですか",
-        "へやだいわいくらですか?",
-        "部屋代はいくらですか",
-        "部屋代はいくらですか?",
-        "部屋代はいくらですか？"
-      ],
-      "sentence": "sent:tatoeba-84094",
-      "kind": "same-stage",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -183,9 +226,9 @@
       "sent:tatoeba-127122",
       "sent:tatoeba-9930561",
       "sent:tatoeba-5332",
-      "sent:gen-a5ee7b945644",
-      "sent:tatoeba-10901919",
-      "sent:tatoeba-5057"
+      "sent:tatoeba-229425",
+      "sent:tatoeba-11021618",
+      "sent:tatoeba-229460"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -193,15 +236,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 27,
+    "meaning-input": 28,
     "meaning-output": 7,
-    "language-focused": 53,
-    "fluency": 13
+    "language-focused": 51,
+    "fluency": 14
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 22,
     "fluency": 6
   }
 }

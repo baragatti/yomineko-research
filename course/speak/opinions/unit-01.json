@@ -7,61 +7,108 @@
     "pt-BR": "Dizer o que você acha, parte 1"
   },
   "say_now": [
-    "sent:tatoeba-74350",
+    "sent:tatoeba-78713",
+    "sent:tatoeba-211242",
+    "sent:tatoeba-152088",
     "sent:tatoeba-81566",
-    "sent:tatoeba-162311",
     "sent:tatoeba-209394",
-    "sent:tatoeba-77523",
-    "sent:tatoeba-77555"
+    "sent:tatoeba-77523"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1465610",
+    "vocab:1252090",
     "vocab:1359070",
-    "vocab:1394800",
     "vocab:1344970",
     "vocab:1558370",
+    "vocab:1480670",
     "vocab:1449870",
-    "vocab:1562670",
+    "vocab:1264770",
+    "vocab:1334210",
     "vocab:1476430"
   ],
   "patterns": [
-    "gram:kamo-shirenai",
     "gram:n3-hazu-da",
+    "gram:n3-to-shite",
     "gram:gp-89",
-    "gram:darou"
+    "gram:gp-32"
   ],
   "kanji_recognition": [
-    "早",
-    "方",
-    "信",
-    "当",
-    "本",
-    "意"
+    "思",
+    "彼",
+    "来",
+    "画",
+    "計",
+    "住"
   ],
   "shadowing": [
-    "sent:tatoeba-74350",
+    "sent:tatoeba-78713",
+    "sent:tatoeba-211242",
+    "sent:tatoeba-152088",
     "sent:tatoeba-81566",
-    "sent:tatoeba-162311",
     "sent:tatoeba-209394",
-    "sent:tatoeba-77523",
-    "sent:tatoeba-77555"
+    "sent:tatoeba-77523"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78713",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-211242",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-152088",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-81566",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-209394",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-77523",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 510,
+  "cumulative_known_vocab": 616,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
     {
-      "id": "cf:n3:700:71",
+      "id": "cf:n3:251:1082",
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "借りる",
-        "終わり",
-        "ホテル"
+        "中央",
+        "乗る",
+        "近く"
       ]
     },
     {
@@ -79,42 +126,42 @@
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "にゅういん",
-        "れんきゅう",
-        "かんがえる"
+        "かんがえる",
+        "りょうしん",
+        "じゅうぶん"
       ]
     },
     {
-      "id": "kr:n3:71",
+      "id": "kr:n4:1082",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "こんな",
-        "トイレ",
-        "プール"
+        "たてもの",
+        "せいかく",
+        "はんたい"
       ]
     }
   ],
   "patterns_chunked": [
-    "gram:n3-mattaku-nai",
-    "gram:hazu-ga-nai"
+    "gram:hazu-ga-nai",
+    "gram:n3-nai-to"
   ],
   "drills": [
-    {
-      "pattern": "gram:kamo-shirenai",
-      "examples": [
-        "sent:tatoeba-2684823",
-        "sent:tatoeba-188036",
-        "sent:tatoeba-152614"
-      ],
-      "strand": "language-focused"
-    },
     {
       "pattern": "gram:n3-hazu-da",
       "examples": [
         "sent:tatoeba-8579878",
         "sent:tatoeba-10631706",
         "sent:tatoeba-3552030"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-to-shite",
+      "examples": [
+        "sent:tatoeba-11977679",
+        "sent:tatoeba-110065",
+        "sent:tatoeba-110066"
       ],
       "strand": "language-focused"
     },
@@ -128,16 +175,31 @@
       "strand": "language-focused"
     },
     {
-      "pattern": "gram:darou",
+      "pattern": "gram:gp-32",
       "examples": [
-        "sent:tatoeba-80452",
-        "sent:tatoeba-85312",
-        "sent:tatoeba-84837"
+        "sent:tatoeba-85319",
+        "sent:tatoeba-78700",
+        "sent:tatoeba-4714"
       ],
       "strand": "language-focused"
     }
   ],
   "production": [
+    {
+      "prompt": {
+        "pt-BR": "Fique à vontade para dar a sua opinião."
+      },
+      "answer_key": "自由に意見を述べてください。",
+      "accepted_variants": [
+        "じゆうにいけんをのべてください",
+        "じゆうにいけんをのべてください。",
+        "自由に意見を述べてください",
+        "自由に意見を述べてください。"
+      ],
+      "sentence": "sent:tatoeba-149694",
+      "kind": "on-topic",
+      "strand": "meaning-output"
+    },
     {
       "prompt": {
         "pt-BR": "Provavelmente está tudo bem."
@@ -169,23 +231,6 @@
       "sentence": "sent:tatoeba-152614",
       "kind": "on-topic",
       "strand": "meaning-output"
-    },
-    {
-      "prompt": {
-        "pt-BR": "É melhor você cumprir a promessa."
-      },
-      "answer_key": "約束は守った方がいい。",
-      "accepted_variants": [
-        "やくそくはまもったほうがいい",
-        "やくそくはまもったほうがいい。",
-        "やくそくわまもったほうがいい",
-        "やくそくわまもったほうがいい。",
-        "約束は守った方がいい",
-        "約束は守った方がいい。"
-      ],
-      "sentence": "sent:tatoeba-79537",
-      "kind": "on-topic",
-      "strand": "meaning-output"
     }
   ],
   "fluency": {
@@ -193,12 +238,12 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-84069",
-      "sent:tatoeba-214003",
-      "sent:tatoeba-84229",
-      "sent:tatoeba-224121",
-      "sent:tatoeba-80049",
-      "sent:tatoeba-121505"
+      "sent:tatoeba-170894",
+      "sent:tatoeba-10901624",
+      "sent:tatoeba-196449",
+      "sent:tatoeba-78723",
+      "sent:tatoeba-123791",
+      "sent:tatoeba-226013"
     ],
     "seconds_target": 48,
     "zero_new_tokens": true,
@@ -206,15 +251,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 26,
+    "meaning-input": 25,
     "meaning-output": 6,
-    "language-focused": 55,
-    "fluency": 13
+    "language-focused": 56,
+    "fluency": 12
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 26,
+    "language-focused": 27,
     "fluency": 6
   }
 }

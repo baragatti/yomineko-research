@@ -9,10 +9,10 @@
   "say_now": [
     "sent:tatoeba-4971",
     "sent:tatoeba-219058",
+    "sent:tatoeba-9840102",
     "sent:tatoeba-198378",
     "sent:tatoeba-78721",
-    "sent:tatoeba-1874351",
-    "sent:tatoeba-10355885"
+    "sent:tatoeba-1874351"
   ],
   "chunk_phrases": [
     "sent:tatoeba-4971"
@@ -23,10 +23,11 @@
     "vocab:1578850",
     "vocab:1547720",
     "vocab:1315920",
-    "vocab:1591110",
     "vocab:1529520",
     "vocab:1010080",
-    "vocab:1584930"
+    "vocab:1605570",
+    "vocab:1584930",
+    "vocab:1586820"
   ],
   "patterns": [
     "gram:mashou",
@@ -34,23 +35,69 @@
   ],
   "kanji_recognition": [
     "私",
+    "雇",
     "行",
     "来",
     "間",
-    "時",
-    "聞"
+    "時"
   ],
   "shadowing": [
     "sent:tatoeba-4971",
     "sent:tatoeba-219058",
+    "sent:tatoeba-9840102",
     "sent:tatoeba-198378",
     "sent:tatoeba-78721",
-    "sent:tatoeba-1874351",
-    "sent:tatoeba-10355885"
+    "sent:tatoeba-1874351"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-4971",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-219058",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9840102",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-198378",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-78721",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-1874351",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 8,
+  "cumulative_known_vocab": 9,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -65,7 +112,7 @@
       "via": "phrase",
       "distractors": [
         "無い",
-        "聞く",
+        "雇う",
         "行く"
       ]
     },
@@ -74,19 +121,19 @@
       "type": "context_fill",
       "via": "new-word",
       "distractors": [
-        "聞く",
+        "雇う",
         "時間",
         "はい"
       ]
     },
     {
-      "id": "kr:n3:188",
+      "id": "kr:n3:1396",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ない",
-        "はい",
-        "いく"
+        "やとう",
+        "わたし",
+        "あまり"
       ]
     },
     {
@@ -95,8 +142,8 @@
       "via": "new-word",
       "distractors": [
         "わたし",
-        "じかん",
-        "ない"
+        "やとう",
+        "じかん"
       ]
     }
   ],
@@ -191,7 +238,7 @@
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 23,
+    "language-focused": 24,
     "fluency": 3
   }
 }

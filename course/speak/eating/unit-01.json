@@ -7,50 +7,97 @@
     "pt-BR": "Comer e beber fora, parte 1"
   },
   "say_now": [
-    "sent:tatoeba-182409",
-    "sent:tatoeba-1115376",
+    "sent:tatoeba-227004",
     "sent:tatoeba-10364750",
+    "sent:tatoeba-160973",
+    "sent:tatoeba-13795168",
     "sent:tatoeba-79093",
-    "sent:tatoeba-9819543",
-    "sent:tatoeba-200661"
+    "sent:tatoeba-9819543"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1483150",
-    "vocab:1000420",
     "vocab:1277450",
     "vocab:1315840",
     "vocab:1416830",
-    "vocab:1008630",
+    "vocab:1169870",
     "vocab:1597890",
+    "vocab:1371260",
     "vocab:1103090",
     "vocab:1145310",
-    "vocab:1486650",
     "vocab:1546220",
-    "vocab:1436560",
-    "vocab:1270590"
+    "vocab:1270590",
+    "vocab:1505070",
+    "vocab:1439580"
   ],
-  "patterns": [],
+  "patterns": [
+    "gram:o-kudasai"
+  ],
   "kanji_recognition": [
-    "救",
-    "出",
-    "女",
-    "食",
-    "彼",
-    "何"
+    "水",
+    "好",
+    "飯",
+    "囲",
+    "気",
+    "雰"
   ],
   "shadowing": [
-    "sent:tatoeba-182409",
-    "sent:tatoeba-1115376",
+    "sent:tatoeba-227004",
     "sent:tatoeba-10364750",
+    "sent:tatoeba-160973",
+    "sent:tatoeba-13795168",
     "sent:tatoeba-79093",
-    "sent:tatoeba-9819543",
-    "sent:tatoeba-200661"
+    "sent:tatoeba-9819543"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-227004",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-10364750",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-160973",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-13795168",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-79093",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-9819543",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 103,
+  "cumulative_known_vocab": 114,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -70,8 +117,8 @@
       "via": "phrase",
       "distractors": [
         "いい",
-        "貴方",
-        "質問"
+        "受付",
+        "貴方"
       ]
     },
     {
@@ -81,39 +128,48 @@
       "distractors": [
         "行く",
         "結構",
-        "豚肉"
+        "値段"
       ]
     },
     {
-      "id": "kr:n3:1131",
+      "id": "kr:n4:258",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ほんとう",
-        "くださる",
-        "もんだい"
+        "けいい",
+        "あまり",
+        "あがる"
       ]
     },
     {
-      "id": "kr:n3:31",
+      "id": "kr:n4:322",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "かう",
-        "こと",
-        "いく"
+        "まつ",
+        "だけ",
+        "やる"
       ]
     }
   ],
   "patterns_chunked": [
     "gram:n3-you-to-shinai",
-    "gram:n3-te-hajimete",
+    "gram:o-kudasai-2",
     "gram:doushite",
-    "gram:gp-36",
-    "gram:gp-115",
-    "gram:rareru"
+    "gram:no-ga-suki",
+    "gram:gp-36"
   ],
-  "drills": [],
+  "drills": [
+    {
+      "pattern": "gram:o-kudasai",
+      "examples": [
+        "sent:tatoeba-150556",
+        "sent:tatoeba-9930561",
+        "sent:tatoeba-197657"
+      ],
+      "strand": "language-focused"
+    }
+  ],
   "production": [
     {
       "prompt": {
@@ -133,29 +189,30 @@
     },
     {
       "prompt": {
-        "pt-BR": "Soube que você comprou uma casa, né."
+        "pt-BR": "De preferência, o mais barato possível."
       },
-      "answer_key": "家を買ったんだってね。",
+      "answer_key": "なるべく安いほうがいいです。",
       "accepted_variants": [
-        "いえをかったんだってね",
-        "いえをかったんだってね。",
-        "家を買ったんだってね",
-        "家を買ったんだってね。"
+        "なるべくやすいほうがいいです",
+        "なるべくやすいほうがいいです。",
+        "なるべく安いほうがいいです",
+        "なるべく安いほうがいいです。"
       ],
-      "sentence": "sent:tatoeba-9240812",
+      "sentence": "sent:tatoeba-199061",
       "kind": "review",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Ele comprou uma casa no subúrbio."
+        "pt-BR": "É melhor não fazer isso!"
       },
-      "answer_key": "彼が郊外に家を買った",
+      "answer_key": "それをしないほうがいいよ！",
       "accepted_variants": [
-        "かれがこうがいにいえをかった",
-        "彼が郊外に家を買った"
+        "それをしないほうがいいよ",
+        "それをしないほうがいいよ!",
+        "それをしないほうがいいよ！"
       ],
-      "sentence": "sent:jec-1593",
+      "sentence": "sent:tatoeba-4562312",
       "kind": "review",
       "strand": "meaning-output"
     }
@@ -165,9 +222,9 @@
       "pt-BR": "Antes de começar a nova situação, repasse em voz alta o que você já sabe dizer. Vá o mais rápido que conseguir, sem travar."
     },
     "items": [
-      "sent:tatoeba-76061",
-      "sent:tatoeba-149750",
-      "sent:tatoeba-74146",
+      "sent:tatoeba-159773",
+      "sent:tatoeba-204523",
+      "sent:tatoeba-76098",
       "sent:tatoeba-79848",
       "sent:tatoeba-8938683",
       "sent:tatoeba-10094172"
@@ -179,14 +236,14 @@
   },
   "strands": {
     "meaning-input": 26,
-    "meaning-output": 7,
-    "language-focused": 54,
+    "meaning-output": 6,
+    "language-focused": 55,
     "fluency": 13
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 25,
+    "language-focused": 26,
     "fluency": 6
   }
 }

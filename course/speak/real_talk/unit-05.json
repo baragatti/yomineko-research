@@ -7,50 +7,101 @@
     "pt-BR": "Conversa de verdade, parte 5"
   },
   "say_now": [
-    "sent:tatoeba-10901570",
-    "sent:tatoeba-214502",
-    "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
     "sent:tatoeba-8988161",
-    "sent:tatoeba-118031"
+    "sent:tatoeba-175375",
+    "sent:tatoeba-11264636",
+    "sent:tatoeba-118031",
+    "sent:tatoeba-5287"
   ],
   "chunk_phrases": [],
   "untranslated": [],
   "words": [
-    "vocab:1313830",
-    "vocab:1526960",
-    "vocab:1271290",
     "vocab:1376760",
     "vocab:1332650",
+    "vocab:1325910",
+    "vocab:1512070",
     "vocab:1179330",
-    "vocab:1499830"
+    "vocab:1604300",
+    "vocab:1203650",
+    "vocab:1258200",
+    "vocab:1424550",
+    "vocab:1499830",
+    "vocab:1390780"
   ],
   "patterns": [
     "gram:n3-wake-dewa-nai",
-    "gram:n3-to-iu-no-wa",
     "gram:n3-wake-ga-nai",
     "gram:n3-mitai-da",
-    "gram:gp-33"
+    "gram:gp-33",
+    "gram:janai-dewa-nai",
+    "gram:n3-bakari"
   ],
   "kanji_recognition": [
-    "件",
-    "事",
-    "終",
-    "味",
-    "誤",
-    "青"
+    "絵",
+    "確",
+    "景",
+    "写",
+    "心",
+    "正"
   ],
   "shadowing": [
-    "sent:tatoeba-10901570",
-    "sent:tatoeba-214502",
-    "sent:tatoeba-142020",
     "sent:tatoeba-12776411",
     "sent:tatoeba-8988161",
-    "sent:tatoeba-118031"
+    "sent:tatoeba-175375",
+    "sent:tatoeba-11264636",
+    "sent:tatoeba-118031",
+    "sent:tatoeba-5287"
   ],
+  "srs": {
+    "introduces_cards": [
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-12776411",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-8988161",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-175375",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-11264636",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-118031",
+        "card_types": [
+          "production"
+        ]
+      },
+      {
+        "deck": "deck:phrases",
+        "item": "sent:tatoeba-5287",
+        "card_types": [
+          "production"
+        ]
+      }
+    ]
+  },
   "audio": "pending",
   "real_phrases": 6,
-  "cumulative_known_vocab": 575,
+  "cumulative_known_vocab": 694,
   "layer": "C",
   "needs_review": true,
   "checkpoint": [
@@ -75,45 +126,34 @@
       ]
     },
     {
-      "id": "kr:n3:1006",
+      "id": "kr:n3:140",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "まだ",
-        "はん",
-        "ぜひ"
+        "きょうかしょ",
+        "じょうきょう",
+        "ひとりひとり"
       ]
     },
     {
-      "id": "kr:n3:1388",
+      "id": "kr:n3:8",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "ひつよう",
-        "いただく",
-        "らいねん"
+        "もし",
+        "やる",
+        "いつ"
       ]
     }
   ],
-  "patterns_chunked": [
-    "gram:n3-to-iu-no"
-  ],
+  "patterns_chunked": [],
   "drills": [
     {
       "pattern": "gram:n3-wake-dewa-nai",
       "examples": [
+        "sent:tatoeba-10901570",
         "sent:tatoeba-156748",
-        "sent:tatoeba-77972",
-        "sent:tatoeba-77973"
-      ],
-      "strand": "language-focused"
-    },
-    {
-      "pattern": "gram:n3-to-iu-no-wa",
-      "examples": [
-        "sent:tatoeba-423387",
-        "sent:tatoeba-168168",
-        "sent:tatoeba-119734"
+        "sent:tatoeba-77972"
       ],
       "strand": "language-focused"
     },
@@ -122,7 +162,7 @@
       "examples": [
         "sent:tatoeba-10181528",
         "sent:tatoeba-10050266",
-        "sent:tatoeba-2190027"
+        "sent:tatoeba-4900568"
       ],
       "strand": "language-focused"
     },
@@ -143,57 +183,75 @@
         "sent:tatoeba-536769"
       ],
       "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:janai-dewa-nai",
+      "examples": [
+        "sent:tatoeba-229343",
+        "sent:tatoeba-228269",
+        "sent:tatoeba-227828"
+      ],
+      "strand": "language-focused"
+    },
+    {
+      "pattern": "gram:n3-bakari",
+      "examples": [
+        "sent:tatoeba-96219",
+        "sent:tatoeba-113980",
+        "sent:tatoeba-147558"
+      ],
+      "strand": "language-focused"
     }
   ],
   "production": [
     {
       "prompt": {
-        "pt-BR": "O que é a felicidade?"
+        "pt-BR": "Dizer que a neve é azul é um erro."
       },
-      "answer_key": "幸福というのは何ですか。",
+      "answer_key": "雪が青いというのは誤りだ。",
       "accepted_variants": [
-        "こうふくというのはなんですか",
-        "こうふくというのはなんですか。",
-        "こうふくというのわなんですか",
-        "こうふくというのわなんですか。",
-        "幸福というのは何ですか",
-        "幸福というのは何ですか。"
+        "ゆきがあおいというのはあやまりだ",
+        "ゆきがあおいというのはあやまりだ。",
+        "ゆきがあおいというのわあやまりだ",
+        "ゆきがあおいというのわあやまりだ。",
+        "雪が青いというのは誤りだ",
+        "雪が青いというのは誤りだ。"
       ],
-      "sentence": "sent:tatoeba-423387",
+      "sentence": "sent:tatoeba-142020",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Os homens querem parecer masculinos."
+        "pt-BR": "Como é o sabor do especial?"
       },
-      "answer_key": "男性は男らしく見せたがる。",
+      "answer_key": "スペシャルというのはどんな味ですか。",
       "accepted_variants": [
-        "だんせいはおとこらしくみせたがる",
-        "だんせいはおとこらしくみせたがる。",
-        "だんせいわおとこらしくみせたがる",
-        "だんせいわおとこらしくみせたがる。",
-        "男性は男らしく見せたがる",
-        "男性は男らしく見せたがる。"
+        "すぺしゃるというのはどんなあじですか",
+        "すぺしゃるというのはどんなあじですか。",
+        "すぺしゃるというのわどんなあじですか",
+        "すぺしゃるというのわどんなあじですか。",
+        "スペシャルというのはどんな味ですか",
+        "スペシャルというのはどんな味ですか。"
       ],
-      "sentence": "sent:tatoeba-127148",
+      "sentence": "sent:tatoeba-214502",
       "kind": "same-stage",
       "strand": "meaning-output"
     },
     {
       "prompt": {
-        "pt-BR": "Infelizmente, por hoje vamos encerrar por aqui."
+        "pt-BR": "Não é que o caso tenha acabado."
       },
-      "answer_key": "残念ながら今日はこれで終わりにします。",
+      "answer_key": "事件は終わったわけではない。",
       "accepted_variants": [
-        "ざんねんながらきょうはこれでおわりにします",
-        "ざんねんながらきょうはこれでおわりにします。",
-        "ざんねんながらきょうわこれでおわりにします",
-        "ざんねんながらきょうわこれでおわりにします。",
-        "残念ながら今日はこれで終わりにします",
-        "残念ながら今日はこれで終わりにします。"
+        "じけんはおわったわけではない",
+        "じけんはおわったわけではない。",
+        "じけんわおわったわけでわない",
+        "じけんわおわったわけでわない。",
+        "事件は終わったわけではない",
+        "事件は終わったわけではない。"
       ],
-      "sentence": "sent:tatoeba-169225",
+      "sentence": "sent:tatoeba-10901570",
       "kind": "same-stage",
       "strand": "meaning-output"
     }
@@ -207,7 +265,7 @@
       "sent:tatoeba-143985",
       "sent:tatoeba-211899",
       "sent:tatoeba-216263",
-      "sent:tatoeba-120314",
+      "sent:tatoeba-90133",
       "sent:tatoeba-9938017"
     ],
     "seconds_target": 48,
@@ -216,15 +274,15 @@
     "strand": "fluency"
   },
   "strands": {
-    "meaning-input": 25,
+    "meaning-input": 22,
     "meaning-output": 6,
-    "language-focused": 56,
-    "fluency": 12
+    "language-focused": 61,
+    "fluency": 11
   },
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 27,
+    "language-focused": 33,
     "fluency": 6
   }
 }
