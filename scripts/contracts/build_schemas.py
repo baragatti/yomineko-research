@@ -344,11 +344,12 @@ _register({
         "type": "object",
         "description": (
             "The answer key for a `production` card: what the learner is asked and what a grader "
-            "must accept. Present only on production cards, and today only on the 2,951 vocabulary "
-            "ones — grammar, kanji and kana production cards are later work, which is why this is "
-            "optional by measurement rather than by exception. Authored, never derived: the card "
-            "SET comes from the unlock ledger, the card's CONTENT does not. See design/srs_design.md "
-            "§8 and scripts/validate/validate_card_content.py."),
+            "must accept. Present only on production cards: the 2,951 vocabulary ones (authored) "
+            "and the 211 kana glyph ones (W29, derived by template from the Layer-A kana record); "
+            "grammar and kanji production cards are later work, which is why this is optional by "
+            "measurement rather than by exception. The card SET comes from the unlock ledger, the "
+            "card's CONTENT does not. See design/srs_design.md §8 and "
+            "scripts/validate/validate_card_content.py."),
         "properties": {
             "prompt": {
                 "$ref": "common.schema.json#/$defs/LocaleText",
@@ -379,11 +380,14 @@ _register({
             },
             "verified": {
                 "type": "string",
-                "enum": ["sampled"],
+                "enum": ["sampled", "derived"],
                 "description": "How the key was checked. `sampled` is a claim about the TABLE — "
                                "one verifier per batch at authoring time, then a random sample read "
                                "against the records before apply (APP_PLAN §1 \"verify once\") "
-                               "— never a claim that a human read this row.",
+                               "— never a claim that a human read this row. `derived` (W29, kana) "
+                               "means no author and no sample: a deterministic template "
+                               "substitution over Layer-A records, checked by the card-content "
+                               "gate.",
                 "x-vocabulary": {"owner": "design", "source": "design/srs_design.md#8"},
             },
             "verified_by": {

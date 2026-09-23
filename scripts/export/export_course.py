@@ -300,9 +300,12 @@ def _production_keys(con) -> dict[tuple[int, str], dict]:
                 "SELECT name FROM sqlite_master WHERE name='card_production_key'").fetchone():
             _PROD_KEYS = {}
             return _PROD_KEYS
+        # W29: a kana glyph key has no sense_index (a kana record has no senses[]), so the field is
+        # omitted rather than published as null.
         _PROD_KEYS = {
             (lid, item): {"prompt": {LOC: prompt}, "accept": json.loads(accept),
-                          "sense_index": sense, "verified": verified, "verified_by": by}
+                          **({"sense_index": sense} if sense is not None else {}),
+                          "verified": verified, "verified_by": by}
             for lid, item, prompt, accept, sense, verified, by in con.execute(
                 "SELECT lesson_id,item,prompt_pt,accept_json,sense_index,verified,verified_by "
                 "FROM card_production_key")}
@@ -338,16 +341,29 @@ def _srs_cards(con, lesson_id: int, unlocks: list, level: str) -> list:
     cards = []
     for u in unlocks:
         deck = enums.deck_for(u["type"], u["ref"], level)
-        if deck and deck in enums.DECK_REGISTRY:
-            card = {"deck": deck, "item": u["ref"],
-                    "card_types": enums.DECK_REGISTRY[deck]["card_types"]}
-            key = keys.get((lesson_id, u["ref"]))
+        if not (deck and deck in enums.DECK_REGISTRY):
+            continue
+        kinds = enums.DECK_REGISTRY[deck]["card_types"]
+        if u["type"] == "kana-family":
+            # W29 (decision D6): one card per GLYPH, not per family. The family stays the unlock ref
+            # (glyphs are not independently unlockable, design/unlock_enums.json#_kana_ref_note);
+            # its members fan out in registry order. `handwriting` only where the glyph has a stroke
+            # record: a handwriting card with nothing to trace renders nothing.
+            items = [(gid, [k for k in kinds if k != "handwriting" or has_strokes])
+                     for gid, has_strokes in con.execute(
+                         "SELECT k.id, s.char IS NOT NULL FROM kana k LEFT JOIN kana_stroke s "
+                         "ON s.char = k.char WHERE k.family_id = ? ORDER BY k.ord", (u["ref"],))]
+        else:
+            items = [(u["ref"], kinds)]
+        for item, ctypes in items:
+            card = {"deck": deck, "item": item, "card_types": ctypes}
+            key = keys.get((lesson_id, item))
             # Only a `production` card can carry one, and only some do yet — recognition, cloze,
             # handwriting and listening render the record itself and need no key. The field is
             # therefore optional in the contract, by measurement.
             if key and "production" in card["card_types"]:
                 card["production_key"] = key
-            ex = examples.get((lesson_id, u["ref"]))
+            ex = examples.get((lesson_id, item))
             if ex:
                 card["example"] = ex
             cards.append(card)

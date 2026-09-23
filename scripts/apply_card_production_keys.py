@@ -172,8 +172,11 @@ def main() -> int:
 
     # A key whose card is gone is a stale row, not a spare: it would export nowhere and it would make
     # the exact-match replay disagree with the index. Report it; --replace clears it.
+    # Kana glyph keys belong to research/derived/repairs/kana_cards.json (W29, apply_kana_cards.py),
+    # which owns their orphan check; this table only answers for the vocabulary keys.
     keys_in_db = {(lid, item) for lid, item in
-                  con.execute("SELECT lesson_id, item FROM card_production_key")}
+                  con.execute("SELECT lesson_id, item FROM card_production_key "
+                              "WHERE item NOT LIKE 'kana:%'")}
     want_keys = {(lid_by_slug[r["lesson"]], r["item"]) for r in doc["rows"]
                  if r["lesson"] in lid_by_slug}
     orphans = sorted(keys_in_db - want_keys)

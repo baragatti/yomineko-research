@@ -98,6 +98,10 @@ PLANT PROOF, check F (recorded 2026-09-23, W28; same method, fresh fixture per p
   F9-kana-example  exit=1  les:pre-n5-hiragana-01 / kana:hiragana-a: a kana family card carries an
                            example: five glyphs, not a word
 
+W29 (2026-09-23): check C has a kana branch (a glyph key accepts exactly its `char`), the kana
+unkeyed ratchet is 0 and kana cards leave the no-example ratchet. Plant-proved with the deck and
+ledger changes, 20/20 caught: research/reports/w29_apply_report.md §3.
+
 Usage: validate_card_content.py [--root PATH] [--all]
 """
 from __future__ import annotations
@@ -121,12 +125,13 @@ LOCALES = {"pt-BR", "en"}
 # Per-namespace ratchet for check B: production cards that carry no key yet. Vocabulary is at 0 and
 # must stay there; grammar, kanji and kana are W28-and-later work and are held at today's counts.
 # A number may only shrink. Raising one is a decision, not a fix.
-UNKEYED_RATCHET = {"vocab": 0, "gram": 494, "kanji": 634, "kana": 57}
+# W29: kana 57 -> 0. Every kana card is a glyph card with a derived key (repairs/kana_cards.json).
+UNKEYED_RATCHET = {"vocab": 0, "gram": 494, "kanji": 634, "kana": 0}
 # W28, check F. Cards with no `example`, per namespace, as derived on 2026-09-23. Most are not a
 # defect of the card: every bank sentence carrying the word is graded above the introducing lesson's
-# level (research/reports/w28_card_examples_report.md). Kana family cards are five glyphs, not a
-# word, and have none by design. May only shrink.
-NO_EXAMPLE_RATCHET = {"vocab": 1695, "gram": 90, "kanji": 52, "kana": 57}
+# level (research/reports/w28_card_examples_report.md). Kana cards are a glyph, not a word, carry
+# none by design (check F rejects one) and are not counted here (W29). May only shrink.
+NO_EXAMPLE_RATCHET = {"vocab": 1695, "gram": 90, "kanji": 52}
 MIN_EXAMPLES = 2_000
 LEVEL_ORDER = ("pre-n5", "n5", "n4", "n3", "n2", "n1")
 SENT_TAG_RX = re.compile(r'<sentence\s+ref="([^"]+)"')
@@ -164,7 +169,7 @@ def check_example(ex: dict, ns: str, item: str, rec: dict, lesson: dict, bank: d
     if not isinstance(ex, dict) or not isinstance(ex.get("cloze"), dict):
         return "example is not {sentence, cloze}"
     if ns == "kana":
-        return "a kana family card carries an example: five glyphs, not a word"
+        return "a kana card carries an example: a glyph, not a word"
     sent = bank.get(ex.get("sentence"))
     if sent is None:
         return f"example sentence {ex.get('sentence')!r} is not in the bank"
@@ -343,7 +348,10 @@ def main() -> int:
             # ---- F: the example sentence and its cloze span (W28) ------------------------------
             ex = card.get("example")
             if ex is None:
-                no_example[ns] = no_example.get(ns, 0) + 1
+                # Kana cards carry none by design (check F rejects one), so they are not a gap to
+                # ratchet: W29 turned 57 family cards into 211 glyph cards without losing anything.
+                if ns != "kana":
+                    no_example[ns] = no_example.get(ns, 0) + 1
             else:
                 n_examples += 1
                 why = check_example(ex, ns, item, rec, L, bank)
@@ -397,10 +405,19 @@ def main() -> int:
                                       f"({len(senses)} sense(s))")
                     continue
             # ---- C: the accept set is this record's, and admits its own name -----------------
-            forms = {f.get("form") for f in (rec.get("forms") or []) if isinstance(f, dict)}
-            forms = {f for f in forms if isinstance(f, str)}
+            if ns == "kana":
+                # W29: a kana record has no headword, kana or forms[]; its name IS its glyph, and
+                # that one surface is all a grader may take. A family record has no `char`, so a
+                # key on a family card gets an empty form set and fails, which is right: W29
+                # retired family cards.
+                ch = rec.get("char")
+                forms = {ch} if isinstance(ch, str) and ch else set()
+                head = kana = ch
+            else:
+                forms = {f.get("form") for f in (rec.get("forms") or []) if isinstance(f, dict)}
+                forms = {f for f in forms if isinstance(f, str)}
+                head, kana = rec.get("headword"), rec.get("kana")
             nforms = {nfkc(f) for f in forms}
-            head, kana = rec.get("headword"), rec.get("kana")
             if head not in accept and kana not in accept:
                 fails["C"].append(f"{addr}: accepts neither the headword {head!r} nor the kana "
                                   f"{kana!r} ({accept!r})")

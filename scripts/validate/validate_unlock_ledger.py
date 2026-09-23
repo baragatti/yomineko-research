@@ -28,7 +28,8 @@ Checks (all hard unless marked REPORT):
      failure, so the held-back list cannot rot                                   [STRUCT-03]
   E  cross-level teaching may only run EARLIER than a record's own level, never later (REPORT: the
      full (kind, registry_level, teaching_level) table; REPORT: records outside the taught levels)
-  F  srs.introduces_cards names exactly the lesson's item unlocks, each card once
+  F  srs.introduces_cards names exactly the lesson's item unlocks, each card once (a kana glyph card
+     counts as its family, W29)
   G  course/vocab_disambiguation_review.json is honest: count matches, every chosen/candidate slug
      resolves, chosen is one of its own candidates, a row that says it affects an unlock really is
      unlocked there, and no row's chosen collides with a sibling the same lesson already teaches
@@ -108,6 +109,10 @@ def main() -> int:
 
     reg = load_registries(root)
     lessons = load_lessons(root, level_order)
+    glyph_family = {m["id"]: fam["id"]
+                    for group in json.loads((root / "corpus" / "kana" / "families.json")
+                                            .read_text(encoding="utf-8")).values()
+                    for fam in group for m in fam.get("members") or []}
 
     fails: list[str] = []
     unlocked_by: dict[tuple[str, str], list[str]] = collections.defaultdict(list)
@@ -152,9 +157,15 @@ def main() -> int:
             if n > 1:
                 fails.append(f"B {lid}: unlocks {utype} {ref} {n}x — two refs resolved onto one record")
         # -- F: SRS cards are derived from item unlocks, so they must mirror them exactly
+        # W29 (D6): a kana glyph card projects onto its family, the unlock ref; the duplicate check
+        # runs on the glyph ids, before projection, so the fanned-out family is not a duplicate.
         cards = lesson.get("srs", {}).get("introduces_cards", [])
-        card_items = [c.get("item") for c in cards]
-        dup_cards = [i for i, n in collections.Counter(card_items).items() if n > 1]
+        raw_items = [c.get("item") for c in cards]
+        dup_cards = [i for i, n in collections.Counter(raw_items).items() if n > 1]
+        card_items = [glyph_family.get(i, i) for i in raw_items]
+        short = sorted(g for g, f in glyph_family.items() if f in item_refs and g not in raw_items)
+        if short:
+            fails.append(f"F {lid}: kana family unlocked but glyph card(s) missing: {short[:3]}")
         if dup_cards:
             fails.append(f"F {lid}: srs.introduces_cards lists {sorted(dup_cards)[:3]} more than once")
         if set(card_items) != set(item_refs):

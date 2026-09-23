@@ -445,7 +445,7 @@ export interface Lesson {
           prompt: LocaleText;
           accept: string[];
           sense_index?: number;
-          verified: "sampled";
+          verified: "sampled" | "derived";
           verified_by: string;
         };
       }[];

@@ -1433,6 +1433,48 @@ def handle_card_production_keys(rows, sents, gram, table):
     return out
 
 
+def handle_kana_cards(rows, sents, gram, table):
+    """W29 (D6). Every glyph row ships as EXACTLY one card in its lesson, with the row's deck, kinds
+    and answer key, and the family card it replaces is gone from that lesson.
+
+    Derived, not authored (template substitution over Layer-A kana records), but exact-match all the
+    same: the card kinds come from the exporter's fan-out (registry minus `handwriting` where no
+    stroke record exists) and the key from the table, so a disagreement means one of the two moved.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['lesson']} / {r['item']}"
+        lesson = LESSONS.get(r["lesson"])
+        if lesson is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no lesson {r['lesson']} in the export"))
+            continue
+        cards = (lesson.get("srs") or {}).get("introduces_cards") or []
+        mine = [c for c in cards if c.get("item") == r["item"]]
+        if len(mine) != 1:
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        f"the lesson declares {len(mine)} card(s) for {r['item']}, expected 1"))
+            continue
+        card = mine[0]
+        if any(c.get("item") == r["replaces_card"]["item"] for c in cards):
+            out.append(("fail", C_NOT_APPLIED, addr,
+                        f"the family card {r['replaces_card']['item']} is still issued"))
+            continue
+        if card.get("deck") != r["deck"] or card.get("card_types") != r["card_types"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"card is {card.get('deck')}/{card.get('card_types')!r}, the row's is "
+                        f"{r['deck']}/{r['card_types']!r}"))
+            continue
+        k = r["production_key"]
+        want = {"prompt": k["prompt"], "accept": k["accept"], "verified": k["verified"],
+                "verified_by": k["verified_by"]}
+        if card.get("production_key") != want:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"production_key is {card.get('production_key')!r}, the row's is {want!r}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 def handle_grammar_register(rows, sents, gram, table):
     """W31. A grammar point's `register` is the register its OWN FORMS impose.
 
@@ -1742,6 +1784,8 @@ def handle_w24_capabilities(rows, sents, gram, table):
 
 
 REGISTRY = {
+    # W29: kana cards one glyph per card (57 family cards -> 211 glyph cards, derived keys).
+    "kana_cards.json": handle_kana_cards,
     # W28: each SRS card's example sentence + cloze span (selected from the bank, not authored).
     "card_examples.json": handle_card_examples,
     # W24: the authored half of the capability layer (can_do, evidence, quotes, curated lessons).

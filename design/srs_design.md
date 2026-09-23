@@ -133,6 +133,15 @@ loader and the validators already import.
 5. `daily_new_cap` default is **10**.
 6. `review_log` is keyed on `card_id`, never on the item.
 
+**Applied 2026-09-23 (W29).** The 57 family cards are now 211 glyph cards. The family stays the
+unlock ref; `export_course._srs_cards` fans each `kana-family` unlock out to its member glyphs in
+registry order, recognition + production on all 211, handwriting on the 145 glyphs
+`corpus/strokes/kana.json` holds (the 66 yōon have no stroke record). Each production card carries a
+derived key (`verified: "derived"`, `research/derived/repairs/kana_cards.json`). The table's
+`migration[]` is item 3 made machine-readable: 57 family card ids retire, 567 glyph card ids start
+cold, `carry_fsrs_state: false`, review_log rows are kept as orphans. 22 family handwriting cards
+retire with no successor of that kind.
+
 **What is still the teacher's call, and is not settled here.** Whether kana *should* be in FSRS is a
 pedagogy question; D6 is the owner's engineering default so that W29 can proceed and the app is not
 blocked on it. If the teacher review reverses it, the change is deleting rows from
@@ -163,7 +172,7 @@ schema that fixes it, and the decision that goes with it.
 | `prompt` | `LocaleText` | What the learner is asked. A locale object, never a bare `prompt_pt`: `design/i18n.md` already records the PT-suffixed bare string on `speak_unit` as a contract violation and this field must not repeat it. |
 | `accept` | `string[]` | Every Japanese surface a grader must take. Japanese is the material under test, so it is locale-invariant and stays a bare array — the same ruling `design/i18n.md` gives `exam_item.answer`. |
 | `sense_index` | `integer` | Which `senses[]` entry of the item the prompt glosses, so a reviewer can check the cue against the record instead of against their memory. |
-| `verified` | `string` | How the key was checked. `"sampled"` is a claim about the TABLE, not the row. |
+| `verified` | `string` | How the key was checked. `"sampled"` is a claim about the TABLE, not the row. `"derived"` (W29, kana only): no author and no sample, a template substitution over the Layer-A kana record. |
 | `verified_by` | `string` | The report that carries the evidence. |
 
 **Why on the card and not on the vocabulary record.** A card is (lesson, item, kind). The sense a

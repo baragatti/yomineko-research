@@ -1,7 +1,7 @@
 {
   "why": "W29. The 57 kana cards are filed at FAMILY granularity (kana:hiragana-a = あいうえお), so one FSRS card carries up to five independent memory facts and the scheduler cannot tell which glyph the learner missed. Decision D6 (APP_PLAN §4, design/srs_design.md §7) keeps kana in FSRS and mandates one glyph per card. This table is the 211-row replacement plus the retirement map the review_log replay needs.",
   "definition": "One row per kana glyph. `lesson` is the pre-N5 lesson whose family card covered the glyph, derived from family membership in corpus/kana/families.json (first lesson wins). `card_types` is recognition + production always, plus handwriting only where corpus/strokes/kana.json holds the glyph. `production_key` is the W27 shape (design/srs_design.md §8) with no `sense_index`, because a kana record has no senses[]. `card_ids` are the user-free tail of the composed card_id of design/user_state.md §2 (`{user_id}:` + this value).",
-  "status": "PENDING (derivation only). No lesson, contract or validator is edited by W29; research/reports/w29_kana_cards_report.md §5 lists what the apply unit must change.",
+  "status": "APPLIED 2026-09-23 (C7-W29) by scripts/apply_kana_cards.py: the 211 keys into card_production_key; the card set is the export_course._srs_cards fan-out of each kana-family unlock. Exact-match replayed by validate_repairs_applied.py (handle_kana_cards). Report: research/reports/w29_apply_report.md.",
   "decision": "D6: kana stays in FSRS, one glyph per card (APP_PLAN §4; design/srs_design.md §7).",
   "generated_by": "W29 kana card derivation (research/reports/w29_kana_cards_report.md §2)",
   "layer": "B (deterministic template substitution over Layer-A kana records; no AI)",

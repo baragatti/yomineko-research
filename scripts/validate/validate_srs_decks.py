@@ -13,12 +13,13 @@ index, not the source of truth).
 
 Seven rules, per card in lesson.srs.introduces_cards:
   1. deck is in the `deck` enum AND in `deck_registry` (design/unlock_enums.json).
-  2. card_types is non-empty and exactly the registry's list for that deck.
+  2. card_types is non-empty and within the registry's list for that deck; a missing kind fails
+     unless it is `handwriting` on a kana glyph with no stroke record (W29).
   3. the item's namespace matches the deck's skill (vocab->vocab:, kanji->kanji:, grammar->gram:,
      kana->kana:, phrase->sent:).
   4. the item resolves in the exported corpus.
   5. the item is one of that lesson's own unlocks[].ref — a lesson may not schedule review for
-     material it does not teach.
+     material it does not teach. A kana glyph card is checked through its family (W29, D6).
   6. the deck's declared level equals the ITEM's own corpus level. Kana decks are exempt: kana
      families carry no level.
   7. no (deck, item) pair repeats inside one lesson (double enrolment; SRS-DUP-CARDS).
@@ -77,6 +78,32 @@ def load_kana_ids(root: Path) -> set[str]:
     return ids
 
 
+def load_glyph_family(root: Path) -> dict[str, str]:
+    """W29: glyph id -> its family id. Glyphs are not unlock refs (design/unlock_enums.json
+    #_kana_ref_note); a glyph card is taught by the lesson that unlocks its family."""
+    out: dict[str, str] = {}
+    fam_path = root / "corpus" / "kana" / "families.json"
+    if fam_path.exists():
+        for group in json.loads(fam_path.read_text(encoding="utf-8")).values():
+            for fam in group:
+                for m in fam.get("members") or []:
+                    out[m["id"]] = fam["id"]
+    return out
+
+
+def load_kana_chars(root: Path) -> tuple[dict[str, str], set[str]]:
+    """W29: glyph id -> char, and the chars corpus/strokes/kana.json holds a stroke record for."""
+    chars: dict[str, str] = {}
+    for name in ("hiragana.json", "katakana.json"):
+        p = root / "corpus" / "kana" / name
+        if p.exists():
+            for g in json.loads(p.read_text(encoding="utf-8")):
+                chars[g["id"]] = g.get("char")
+    sp = root / "corpus" / "strokes" / "kana.json"
+    stroked = {s.get("char") for s in json.loads(sp.read_text(encoding="utf-8"))} if sp.exists() else set()
+    return chars, stroked
+
+
 def load_exemptions(root: Path) -> tuple[dict[tuple[str, str, str], str], list[str]]:
     """course/srs_deck_exemptions.json -> {(lesson, deck, item): reason}, plus structural errors."""
     path = root / "course" / "srs_deck_exemptions.json"
@@ -113,6 +140,8 @@ def main() -> int:
 
     levels = load_levels(root)
     kana_ids = load_kana_ids(root)
+    glyph_family = load_glyph_family(root)
+    kana_chars, stroked = load_kana_chars(root)
     if not levels or not kana_ids:
         print(f"validate_srs_decks: corpus registries under {root} are empty "
               f"({len(levels)} slugs, {len(kana_ids)} kana ids) — nothing to validate against")
@@ -182,10 +211,22 @@ def main() -> int:
                 fail("1-deck-registry", f"{lid}: deck {deck} has no deck_registry entry")
                 continue
 
-            # 2 — card_types exactly the registry's
+            # 2 — card_types: the registry's list is the deck's MAXIMUM (W29). Empty fails, a kind
+            # outside the list fails, and a missing kind fails unless it is exactly `handwriting` on
+            # a kana glyph that corpus/strokes/kana.json has no stroke record for. Positive, not an
+            # exemption list: dropping handwriting from a glyph that HAS strokes still fails.
             want = set(meta.get("card_types") or [])
-            if not isinstance(ctypes, list) or not ctypes or set(ctypes) != want:
+            if not isinstance(ctypes, list) or not ctypes or not set(ctypes) <= want:
                 fail("2-card-types", f"{lid}: {deck}/{item} card_types {ctypes!r} != registry {sorted(want)}")
+            elif set(ctypes) != want:
+                dropped = sorted(want - set(ctypes))
+                if meta.get("skill") == "kana" and dropped == ["handwriting"] and item in kana_chars:
+                    if kana_chars[item] in stroked:
+                        fail("2-card-types", f"{lid}: {deck}/{item} drops handwriting but "
+                                             f"corpus/strokes/kana.json has its stroke order")
+                else:
+                    fail("2-card-types", f"{lid}: {deck}/{item} drops {dropped} with no reason the "
+                                         f"corpus can state")
 
             # 3 — namespace agrees with the deck's skill
             skill = meta.get("skill")
@@ -231,8 +272,13 @@ def main() -> int:
                     fail("6-level", f"{lid}: {item} is level {item_level} but {deck} is a "
                                     f"{meta.get('level')} deck")
 
-            # 5 — the lesson teaches what it schedules
-            if item not in unlock_refs:
+            # 5 — the lesson teaches what it schedules. A kana glyph is taught through its family
+            # (W29): the family is the unlock ref, the glyph is the card.
+            if item in glyph_family:
+                if glyph_family[item] not in unlock_refs:
+                    fail("5-not-unlocked", f"{lid}: card {item} is not among the lesson's unlocks "
+                                           f"(family {glyph_family[item]})")
+            elif item not in unlock_refs:
                 fail("5-not-unlocked", f"{lid}: card {item} is not among the lesson's unlocks")
 
             # 7 — no double enrolment

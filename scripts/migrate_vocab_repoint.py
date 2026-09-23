@@ -1319,7 +1319,7 @@ def main() -> int:
         # Keep the durable ledger honest even when the re-points themselves are already applied:
         # these two passes can land on a later run than the addresses did.
         lp = root / LEDGER
-        if args.apply and lp.exists():
+        if args.apply and lp.exists() and LIVE_INDEX:
             led = jloads(lp.read_text(encoding="utf-8"), {}) or {}
             led["prose_fixes"] = ledger_prose()
             led["kanji_example_rule"] = KEX_RULE
@@ -1462,6 +1462,12 @@ def main() -> int:
     if left:
         die(f"old slugs still resolve after the write: {left}")
 
+    # The ledger is the durable record of the LIVE migration. A replay (validate_index_rebuildable)
+    # re-runs this on a scratch DB against the already-migrated tree, finds nothing left in the exam
+    # banks, and used to overwrite the committed ledger without its exam_banks section.
+    if not LIVE_INDEX:
+        print(f"\napplied {len(todo)} re-point(s); replay target, {LEDGER} left as committed")
+        return 0
     lp = root / LEDGER
     lp.parent.mkdir(parents=True, exist_ok=True)
     lp.write_text(json.dumps(ledger, ensure_ascii=False, indent=2) + "\n",
