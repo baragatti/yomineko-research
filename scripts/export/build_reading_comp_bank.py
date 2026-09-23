@@ -57,6 +57,7 @@ from known_set import PassageGate, load_known_sets, is_kana_only  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "research" / "derived" / "reauthor" / "exam_authored"
+RC_TABLE = SRC / "rc_questions_w18b.json"
 OUT = ROOT / "corpus" / "exam_banks"
 # full-width Latin (Ａ-ｚ) allowed: real bank sentences contain initialisms like ＦＡＱ/ＯＫ
 JP_OK = re.compile(r"^[ぁ-んァ-ヶー一-鿿々〆0-9０-９Ａ-Ｚａ-ｚ、。！？!?（）()・「」\s]+$")
@@ -81,6 +82,23 @@ def option_problems(strings: list[str], ks, gate) -> str:
             u = res.unknown_vocab[0]
             return f"untaught word {u['surface']} ({u['slug']}, {u['level']})"
     return ""
+
+
+def authored_items() -> list[dict]:
+    """W18. The 内容一致 questions authored over the REAL passages (W18b campaign, author + one
+    independent verifier per batch: 286 authored, 285 accepted, 44 corrected, 1 rejected). One
+    question per passage. The pre-W15 journal (`authored_rc_*.json`) is kept as history and no
+    longer read: 250 of its questions were written about concatenations W15 replaced, and the one
+    passage the W18b verifier left uncovered (read:n4-oracoes-relativas-03-01) fails P1 and P2/P3
+    with its old question too (measured by W18)."""
+    d = json.loads(RC_TABLE.read_text(encoding="utf-8"))
+    out = []
+    for r in d["rows"]:
+        opts = [o.strip() for o in r["options"]]
+        out.append({"slug": r["passage"], "question": r["stem"], "correct": opts[r["key"]],
+                    "distractors": [o for i, o in enumerate(opts) if i != r["key"]],
+                    "explanation": (r.get("explanation") or "").strip()})
+    return out
 
 
 def question_is_about(question: str, passage: str, gate) -> list[str]:
@@ -126,56 +144,55 @@ def main() -> int:
     skipped: list = []
     why = Counter()
 
-    for bf in sorted(SRC.glob("authored_rc_*.json")):
-        d = json.loads(bf.read_text(encoding="utf-8"))
-        for it in (d.get("items", []) if isinstance(d, dict) else d):
-            slug = it.get("slug", "")
-            rd = readings.get(slug)
-            lvl = rd["level"] if rd else None
-            q = (it.get("question") or "").strip()
-            corr = (it.get("correct") or "").strip()
-            dis = [x.strip() for x in (it.get("distractors") or [])]
-            probs = []
-            if slug in flagged or not lvl:
-                probs.append("flagged/unknown-reading")
-            if not q or not q.endswith(("か。", "か", "？", "。")) or not JP_OK.match(q):
-                probs.append("question invalid")
-            if not corr or corr in dis or len(set(dis)) != 3 or not all(JP_OK.match(x) for x in [corr] + dis):
-                probs.append("option set invalid")
-            if any("—" in x for x in [q, corr] + dis):
-                probs.append("em dash")
-            if rd and not probs:
-                passage = rd["jp"]
-                ks = known.get(rd["lesson"])
-                if ks is None:
-                    probs.append(f"gating lesson {rd['lesson']} is not exported")
-                else:
-                    # P1 — the question has to be about THIS text
-                    if not question_is_about(q, passage, gate):
-                        probs.append("P1 no content word of the question occurs in the passage")
-                    # P2 + P3 — every option readable at this point in the course
-                    bad = option_problems([q, corr, *dis], ks, gate)
-                    if bad:
-                        probs.append(f"P2/P3 {bad}")
-                        if lvl in level_end and not option_problems([q, corr, *dis], level_end[lvl], gate):
-                            why["P2/P3 would pass under W17 level-end cks"] += 1
-                    # P4 — not answerable by string search
-                    if corr in passage and not any(x in passage for x in dis):
-                        probs.append("P4 the correct answer is the only option printed in the passage")
-            if probs:
-                why.update(p.split(" ")[0] for p in probs if not p.startswith("P2/P3 would"))
-                skipped.append((slug, ";".join(probs)))
-                continue
-            banks[lvl].append({"id": f"rc:{lvl}:{slug.split(':', 1)[1]}", "level": lvl, "reading": slug,
-                               "question": q, "correct": corr, "distractors": dis,
-                               "layer": "C", "needs_review": True, "source": "authored+verified",
-                               # `ai_generated` on an exam item means "the JAPANESE the learner
-                               # reads was model-generated". A reading_comp question is authored
-                               # from a human-written passage, so it is false — the derivation
-                               # table validate_provenance_json.py enforces (rc -> false). It used
-                               # to be stamped afterwards by migrate_exam_banks_p7.py, which is
-                               # disabled in the rebuild manifest, so the builder emits it.
-                               "ai_generated": False})
+    for it in authored_items():
+        slug = it.get("slug", "")
+        rd = readings.get(slug)
+        lvl = rd["level"] if rd else None
+        q = (it.get("question") or "").strip()
+        corr = (it.get("correct") or "").strip()
+        dis = [x.strip() for x in (it.get("distractors") or [])]
+        probs = []
+        if slug in flagged or not lvl:
+            probs.append("flagged/unknown-reading")
+        if not q or not q.endswith(("か。", "か", "？", "。")) or not JP_OK.match(q):
+            probs.append("question invalid")
+        if not corr or corr in dis or len(set(dis)) != 3 or not all(JP_OK.match(x) for x in [corr] + dis):
+            probs.append("option set invalid")
+        if any("—" in x for x in [q, corr, it.get("explanation", "")] + dis):
+            probs.append("em dash")
+        if rd and not probs:
+            passage = rd["jp"]
+            ks = known.get(rd["lesson"])
+            if ks is None:
+                probs.append(f"gating lesson {rd['lesson']} is not exported")
+            else:
+                # P1 — the question has to be about THIS text
+                if not question_is_about(q, passage, gate):
+                    probs.append("P1 no content word of the question occurs in the passage")
+                # P2 + P3 — every option readable at this point in the course
+                bad = option_problems([q, corr, *dis], ks, gate)
+                if bad:
+                    probs.append(f"P2/P3 {bad}")
+                    if lvl in level_end and not option_problems([q, corr, *dis], level_end[lvl], gate):
+                        why["P2/P3 would pass under W17 level-end cks"] += 1
+                # P4 — not answerable by string search
+                if corr in passage and not any(x in passage for x in dis):
+                    probs.append("P4 the correct answer is the only option printed in the passage")
+        if probs:
+            why.update(p.split(" ")[0] for p in probs if not p.startswith("P2/P3 would"))
+            skipped.append((slug, ";".join(probs)))
+            continue
+        banks[lvl].append({"id": f"rc:{lvl}:{slug.split(':', 1)[1]}", "level": lvl, "reading": slug,
+                           "question": q, "correct": corr, "distractors": dis,
+                           **({"explanation": {"pt-BR": it["explanation"]}} if it.get("explanation") else {}),
+                           "layer": "C", "needs_review": True, "source": "authored+verified",
+                           # `ai_generated` on an exam item means "the JAPANESE the learner
+                           # reads was model-generated". A reading_comp question is authored
+                           # from a human-written passage, so it is false — the derivation
+                           # table validate_provenance_json.py enforces (rc -> false). It used
+                           # to be stamped afterwards by migrate_exam_banks_p7.py, which is
+                           # disabled in the rebuild manifest, so the builder emits it.
+                           "ai_generated": False})
     counts = {}
     for lvl, items in banks.items():
         if items:

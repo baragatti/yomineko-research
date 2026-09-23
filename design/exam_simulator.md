@@ -1,8 +1,11 @@
 # JLPT exam simulator — picker algorithm spec (v1, 2026-07-05)
 
-> Data = `corpus/exam_banks/{level}_{type}.json` (**6,048 items across 40 bank files**, counted from the
-> files on 2026-09-02; the doc said 4,359 until then, and `corpus/exam_banks/removed_items.json` holds a
-> further 118 withdrawn items that are deliberately not in any bank). All derived from verified corpus
+> Data = `corpus/exam_banks/{level}_{type}.json` (**5,141 items across 40 bank files**, counted from the
+> files on 2026-09-23 after the W18 regeneration; 6,081 before it, 4,359 in the first version of this doc).
+> `corpus/exam_banks/removed_items.json` is the withdrawal ledger of **129** ids (this doc said 118): W18
+> marked each one, 66 returned repaired and 63 stay out, kept out by builder rules rather than by the file.
+> Every non-listening item is level-appropriate: its Japanese is inside the taught set at the end of its
+> level (`validate_exam_level_gate.py`, ceiling 0 for those nine families). All derived from verified corpus
 > facts, validated by `validate_exam_banks.py`. The APP implements this picker at runtime; the corpus run
 > ships data + this spec only. Real JLPT papers are © JEES — this mirrors only the (non-copyrightable) FORMAT.
 

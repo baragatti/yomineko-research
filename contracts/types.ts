@@ -117,11 +117,13 @@ export interface CourseManifest {
 
 /** One JLPT-style practice question, drawn from the corpus so every item is also findable in a lesson. The id prefix names the section, and each section has its own required shape. */
 export interface ExamItem {
+  accepted?: string[];
   ai_generated: boolean;
   answer?: string;
   audio?: string;
   correct?: string;
   distractors?: string[];
+  explanation?: LocaleText;
   grammar?: string;
   id: StableId;
   layer: Layer;
@@ -436,10 +438,10 @@ export interface Lesson {
 /** A short reading passage gated to a lesson, with its tokens and translation. */
 export interface Reading {
   ai_generated: boolean;
-  comprehension: {
-    about_current_text: boolean;
+  comprehension?: {
+    about_current_text?: boolean;
     correct?: string;
-    item: string;
+    item?: string;
     options?: string[];
     question?: string;
   };

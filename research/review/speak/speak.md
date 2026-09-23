@@ -2,7 +2,7 @@
 
 _Gerado por `scripts/export/build_review_views.py` a partir do export (`corpus/` + `course/`), entidade `speak_unit`. **Não edite este arquivo** — ele é regerado e conferido byte a byte. Para registrar um parecer, preencha uma ficha: `research/review/README.md`._
 
-_Build `97550c2a02b7` de 2026-09-23 (`contracts/manifest.json`)._
+_Build `ea0d70b3df81` de 2026-09-23 (`contracts/manifest.json`)._
 
 **72 registro(s) · 144 endereço(s) de parecer · 72 marcado(s) `needs_review` no export.**
 
@@ -72,7 +72,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 2
 
-### `*` · camada C · hash `c451015506aea085`
+### `*` · camada C · hash `b36ed4595c6da962`
 
 _Ledger:_ —
 
@@ -106,7 +106,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 3
 
-### `*` · camada C · hash `d96416736dbf37b2`
+### `*` · camada C · hash `c140989d58838e2e`
 
 _Ledger:_ —
 
@@ -140,7 +140,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 4
 
-### `*` · camada C · hash `f5d4817a0c4c328b`
+### `*` · camada C · hash `c2aa0393e76dda6d`
 
 _Ledger:_ —
 
@@ -174,7 +174,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 5
 
-### `*` · camada C · hash `3b8cae6728759b65`
+### `*` · camada C · hash `74b25bd66e082a53`
 
 _Ledger:_ —
 
@@ -208,7 +208,7 @@ _Ledger:_ —
 
 > Chegar e cumprimentar, parte 6
 
-### `*` · camada C · hash `c4311ec55bf2f21a`
+### `*` · camada C · hash `f82215aaff02fe1b`
 
 _Ledger:_ —
 
@@ -242,7 +242,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 1
 
-### `*` · camada C · hash `320e6288416cef78`
+### `*` · camada C · hash `ad537abeb3f84df9`
 
 _Ledger:_ —
 
@@ -276,7 +276,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 2
 
-### `*` · camada C · hash `7b2b6fbf720dca61`
+### `*` · camada C · hash `2cdc02e34685b1a1`
 
 _Ledger:_ —
 
@@ -310,7 +310,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 3
 
-### `*` · camada C · hash `058b20082b556e73`
+### `*` · camada C · hash `e722b0b26dd5110a`
 
 _Ledger:_ —
 
@@ -344,7 +344,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 4
 
-### `*` · camada C · hash `c31c60c388a484d3`
+### `*` · camada C · hash `288af2c34f5dbeef`
 
 _Ledger:_ —
 
@@ -378,7 +378,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 5
 
-### `*` · camada C · hash `aef1d41d9eda5418`
+### `*` · camada C · hash `12888e970fb809db`
 
 _Ledger:_ —
 
@@ -412,7 +412,7 @@ _Ledger:_ —
 
 > Isto, aquilo, quanto custa, parte 6
 
-### `*` · camada C · hash `df4b5372065c8047`
+### `*` · camada C · hash `e8d3a8d4a9c8bdfc`
 
 _Ledger:_ —
 
@@ -446,7 +446,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 1
 
-### `*` · camada C · hash `b47b459c864d4cb7`
+### `*` · camada C · hash `9c19009a43b21d46`
 
 _Ledger:_ —
 
@@ -480,7 +480,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 2
 
-### `*` · camada C · hash `f943906caf95e0d0`
+### `*` · camada C · hash `ebcd828997ad568b`
 
 _Ledger:_ —
 
@@ -514,7 +514,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 3
 
-### `*` · camada C · hash `a805108c9f4b8bcd`
+### `*` · camada C · hash `3db02e813aec6c0b`
 
 _Ledger:_ —
 
@@ -548,7 +548,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 4
 
-### `*` · camada C · hash `4b23b205a54814f3`
+### `*` · camada C · hash `16997e80d84653f1`
 
 _Ledger:_ —
 
@@ -582,7 +582,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 5
 
-### `*` · camada C · hash `6318032d85d4cc61`
+### `*` · camada C · hash `36273689f58a0246`
 
 _Ledger:_ —
 
@@ -616,7 +616,7 @@ _Ledger:_ —
 
 > Comer e beber fora, parte 6
 
-### `*` · camada C · hash `29c9860ba462184f`
+### `*` · camada C · hash `2ed6ad0602a73080`
 
 _Ledger:_ —
 
@@ -650,7 +650,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 1
 
-### `*` · camada C · hash `605ac8740cd86976`
+### `*` · camada C · hash `94a546b6a1e513f4`
 
 _Ledger:_ —
 
@@ -684,7 +684,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 2
 
-### `*` · camada C · hash `6233f11fee74c694`
+### `*` · camada C · hash `dab9865e7eba329d`
 
 _Ledger:_ —
 
@@ -718,7 +718,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 3
 
-### `*` · camada C · hash `4df17e04396bea6d`
+### `*` · camada C · hash `f53d21232edcc3cb`
 
 _Ledger:_ —
 
@@ -752,7 +752,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 4
 
-### `*` · camada C · hash `0b3fffb026e45f86`
+### `*` · camada C · hash `22bd86520efe98e0`
 
 _Ledger:_ —
 
@@ -786,7 +786,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 5
 
-### `*` · camada C · hash `5cdd167f4f33aea2`
+### `*` · camada C · hash `c3886e1c98baebac`
 
 _Ledger:_ —
 
@@ -820,7 +820,7 @@ _Ledger:_ —
 
 > Chegar aonde você quer, parte 6
 
-### `*` · camada C · hash `6065cfb5185df56d`
+### `*` · camada C · hash `aa24f0612e603f12`
 
 _Ledger:_ —
 
@@ -854,7 +854,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 1
 
-### `*` · camada C · hash `ca6fc67528ff3dfa`
+### `*` · camada C · hash `7115ad757bb95c9f`
 
 _Ledger:_ —
 
@@ -888,7 +888,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 2
 
-### `*` · camada C · hash `48e36271d9bfae9b`
+### `*` · camada C · hash `6f98ff8dc25223c5`
 
 _Ledger:_ —
 
@@ -922,7 +922,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 3
 
-### `*` · camada C · hash `0d210e51a955195d`
+### `*` · camada C · hash `895f94e24e161224`
 
 _Ledger:_ —
 
@@ -956,7 +956,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 4
 
-### `*` · camada C · hash `ce4c67761fa4a6bf`
+### `*` · camada C · hash `9746fe8b2256695f`
 
 _Ledger:_ —
 
@@ -990,7 +990,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 5
 
-### `*` · camada C · hash `a3a0db7e1066e440`
+### `*` · camada C · hash `24d966354439061c`
 
 _Ledger:_ —
 
@@ -1024,7 +1024,7 @@ _Ledger:_ —
 
 > Dormir e resolver problemas, parte 6
 
-### `*` · camada C · hash `1a72b5ab9a29f0cd`
+### `*` · camada C · hash `3e3f716919484fe6`
 
 _Ledger:_ —
 
@@ -1058,7 +1058,7 @@ _Ledger:_ —
 
 > Falar de você, parte 1
 
-### `*` · camada C · hash `b73edb56fbe5ec87`
+### `*` · camada C · hash `ba30abd1d3a59550`
 
 _Ledger:_ —
 
@@ -1092,7 +1092,7 @@ _Ledger:_ —
 
 > Falar de você, parte 2
 
-### `*` · camada C · hash `0b1ae0797ab95c2b`
+### `*` · camada C · hash `b866565b358de80d`
 
 _Ledger:_ —
 
@@ -1126,7 +1126,7 @@ _Ledger:_ —
 
 > Falar de você, parte 3
 
-### `*` · camada C · hash `d37964e65535e4fd`
+### `*` · camada C · hash `0678e3d3afd5f83e`
 
 _Ledger:_ —
 
@@ -1160,7 +1160,7 @@ _Ledger:_ —
 
 > Falar de você, parte 4
 
-### `*` · camada C · hash `444de49334f98b0a`
+### `*` · camada C · hash `68bff2571b0af4ba`
 
 _Ledger:_ —
 
@@ -1194,7 +1194,7 @@ _Ledger:_ —
 
 > Falar de você, parte 5
 
-### `*` · camada C · hash `85065a9e0347f251`
+### `*` · camada C · hash `3b3fd4ed12a3d0f9`
 
 _Ledger:_ —
 
@@ -1228,7 +1228,7 @@ _Ledger:_ —
 
 > Falar de você, parte 6
 
-### `*` · camada C · hash `b53e696d216014ca`
+### `*` · camada C · hash `75c17aec748117c4`
 
 _Ledger:_ —
 
@@ -1262,7 +1262,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 1
 
-### `*` · camada C · hash `2892594881c3d017`
+### `*` · camada C · hash `a9fc9d449b775aec`
 
 _Ledger:_ —
 
@@ -1296,7 +1296,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 2
 
-### `*` · camada C · hash `c456c90e5e56ed40`
+### `*` · camada C · hash `0195a872df3f6a72`
 
 _Ledger:_ —
 
@@ -1330,7 +1330,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 3
 
-### `*` · camada C · hash `87780a880db50af3`
+### `*` · camada C · hash `6866f1c4283940f4`
 
 _Ledger:_ —
 
@@ -1364,7 +1364,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 4
 
-### `*` · camada C · hash `1f903188942c1ed6`
+### `*` · camada C · hash `888353a753bfdbcb`
 
 _Ledger:_ —
 
@@ -1398,7 +1398,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 5
 
-### `*` · camada C · hash `09e05b1cb279ca03`
+### `*` · camada C · hash `af522d8f8a7a153e`
 
 _Ledger:_ —
 
@@ -1432,7 +1432,7 @@ _Ledger:_ —
 
 > Quando, que horas, combinar, parte 6
 
-### `*` · camada C · hash `b75a520261904949`
+### `*` · camada C · hash `a07a7fe3485b83ad`
 
 _Ledger:_ —
 
@@ -1466,7 +1466,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 1
 
-### `*` · camada C · hash `bd903d25d8059f64`
+### `*` · camada C · hash `295bb3ec9b91f8a2`
 
 _Ledger:_ —
 
@@ -1500,7 +1500,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 2
 
-### `*` · camada C · hash `ec772e55fefd8113`
+### `*` · camada C · hash `3f3bf225dc6e9a6c`
 
 _Ledger:_ —
 
@@ -1534,7 +1534,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 3
 
-### `*` · camada C · hash `c2d6d851ecb079ea`
+### `*` · camada C · hash `03e4af43470c8bcb`
 
 _Ledger:_ —
 
@@ -1568,7 +1568,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 4
 
-### `*` · camada C · hash `c6810074d4f81cb6`
+### `*` · camada C · hash `d8abefbce86787db`
 
 _Ledger:_ —
 
@@ -1602,7 +1602,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 5
 
-### `*` · camada C · hash `5bf604671b0db04a`
+### `*` · camada C · hash `525f55cc75766c8d`
 
 _Ledger:_ —
 
@@ -1636,7 +1636,7 @@ _Ledger:_ —
 
 > Emergência e saúde, parte 6
 
-### `*` · camada C · hash `e6c9f54807485795`
+### `*` · camada C · hash `ba106e4e17d199a8`
 
 _Ledger:_ —
 
@@ -1670,7 +1670,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 1
 
-### `*` · camada C · hash `44ac87b68e83520b`
+### `*` · camada C · hash `bb2c0e32fffc4cd6`
 
 _Ledger:_ —
 
@@ -1704,7 +1704,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 2
 
-### `*` · camada C · hash `903a339a542fd82b`
+### `*` · camada C · hash `e40b312a9b9730d7`
 
 _Ledger:_ —
 
@@ -1738,7 +1738,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 3
 
-### `*` · camada C · hash `66de5facf144c93b`
+### `*` · camada C · hash `a89b25762e8445e0`
 
 _Ledger:_ —
 
@@ -1772,7 +1772,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 4
 
-### `*` · camada C · hash `e5c4bb2cfccee667`
+### `*` · camada C · hash `bec43562b630b186`
 
 _Ledger:_ —
 
@@ -1806,7 +1806,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 5
 
-### `*` · camada C · hash `faacaba573fd3758`
+### `*` · camada C · hash `727231b9a6ce508a`
 
 _Ledger:_ —
 
@@ -1840,7 +1840,7 @@ _Ledger:_ —
 
 > Contar o que aconteceu, parte 6
 
-### `*` · camada C · hash `1dfee674c1fa71bb`
+### `*` · camada C · hash `2f20c6a8fd9cc3fd`
 
 _Ledger:_ —
 
@@ -1874,7 +1874,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 1
 
-### `*` · camada C · hash `4f8f6c78758aee01`
+### `*` · camada C · hash `f7c8e4873a1f236e`
 
 _Ledger:_ —
 
@@ -1908,7 +1908,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 2
 
-### `*` · camada C · hash `bb2a20da667279b7`
+### `*` · camada C · hash `01e096cd4fd6e6cc`
 
 _Ledger:_ —
 
@@ -1942,7 +1942,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 3
 
-### `*` · camada C · hash `f7d795e8279b607f`
+### `*` · camada C · hash `1de5615dd3be4afc`
 
 _Ledger:_ —
 
@@ -1976,7 +1976,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 4
 
-### `*` · camada C · hash `012801a5b45abaac`
+### `*` · camada C · hash `9e36e1accec48929`
 
 _Ledger:_ —
 
@@ -2010,7 +2010,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 5
 
-### `*` · camada C · hash `4e028ac80abe763d`
+### `*` · camada C · hash `0fbff37ed25244b8`
 
 _Ledger:_ —
 
@@ -2044,7 +2044,7 @@ _Ledger:_ —
 
 > Pedir, oferecer, agradecer com jeito, parte 6
 
-### `*` · camada C · hash `1729f0d23f1ced45`
+### `*` · camada C · hash `1a117f02c29151dc`
 
 _Ledger:_ —
 
@@ -2078,7 +2078,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 1
 
-### `*` · camada C · hash `080c8ee9cb7abe18`
+### `*` · camada C · hash `7401772af2af0e7d`
 
 _Ledger:_ —
 
@@ -2112,7 +2112,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 2
 
-### `*` · camada C · hash `659cd0f6f00de72c`
+### `*` · camada C · hash `ab41fdb553c534a9`
 
 _Ledger:_ —
 
@@ -2146,7 +2146,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 3
 
-### `*` · camada C · hash `d8aa40b768d7f666`
+### `*` · camada C · hash `9c656db3e168172f`
 
 _Ledger:_ —
 
@@ -2180,7 +2180,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 4
 
-### `*` · camada C · hash `ee71d243dafb41cf`
+### `*` · camada C · hash `10aba0cc6248abb6`
 
 _Ledger:_ —
 
@@ -2214,7 +2214,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 5
 
-### `*` · camada C · hash `b1d8e52359266371`
+### `*` · camada C · hash `f5aafa0416ec0b1d`
 
 _Ledger:_ —
 
@@ -2248,7 +2248,7 @@ _Ledger:_ —
 
 > Dizer o que você acha, parte 6
 
-### `*` · camada C · hash `c065168812669f04`
+### `*` · camada C · hash `915edb738b4218d5`
 
 _Ledger:_ —
 
@@ -2282,7 +2282,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 1
 
-### `*` · camada C · hash `abc17ac1f5cd9bce`
+### `*` · camada C · hash `260e29a53616c707`
 
 _Ledger:_ —
 
@@ -2316,7 +2316,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 2
 
-### `*` · camada C · hash `71fab8e9184af381`
+### `*` · camada C · hash `2a426ac496b8c6ed`
 
 _Ledger:_ —
 
@@ -2350,7 +2350,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 3
 
-### `*` · camada C · hash `a233e92fb4460ef2`
+### `*` · camada C · hash `b374c467c37bea09`
 
 _Ledger:_ —
 
@@ -2384,7 +2384,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 4
 
-### `*` · camada C · hash `e00f8f98b82d65b7`
+### `*` · camada C · hash `6a12d4927a24124f`
 
 _Ledger:_ —
 
@@ -2418,7 +2418,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 5
 
-### `*` · camada C · hash `09ab79c17b4ac9c0`
+### `*` · camada C · hash `f02679a2993f640c`
 
 _Ledger:_ —
 
@@ -2452,7 +2452,7 @@ _Ledger:_ —
 
 > Conversa de verdade, parte 6
 
-### `*` · camada C · hash `1f8a59b2e5bd8100`
+### `*` · camada C · hash `3a041d245e37355f`
 
 _Ledger:_ —
 

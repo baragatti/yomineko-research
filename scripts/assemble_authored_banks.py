@@ -8,7 +8,7 @@ from pathlib import Path  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC, PATCH = ROOT / "research/derived/pending/authored_banks", ROOT / "research/derived/patches/w17_builder.patch"
-OUT, REPORT = SRC.parent / "authored_banks_final.json", ROOT / "research/reports/w18b_authored_assembly.md"
+OUT, REPORT = ROOT / "research/derived/reauthor/exam_authored/pp_us_w18b.json", ROOT / "research/reports/w18b_authored_assembly.md"
 TAKES = ("primary", "alt_batchC")  # _MANIFEST: an alternate row only replaces a primary that did not survive
 FAM, TAIL = {"pp": "paraphrase", "us": "usage"}, ("vocab", "vocab_id", "sentence", "layer", "needs_review", "ai_generated")
 SHAPE = {"paraphrase": ("id", "level", "stem", "target", "correct", "distractors", *TAIL, "source"),  # the builder's order
@@ -130,7 +130,7 @@ def main() -> None:
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", "utf-8")
     print("every need met:", met := all(len(s["selected"]) == s["need"] for s in selected.values()), json.dumps(counts["excluded"]))
     md = [f"# W18b: authored paraphrase / usage assembly\n\nBy `scripts/assemble_authored_banks.py` on committed tree `{head[:12]}`"
-          " (W17 patch applied to a scratch copy). Output: `research/derived/pending/authored_banks_final.json`.\n",
+          " (W17 patch applied to a scratch copy). Output: `research/derived/reauthor/exam_authored/pp_us_w18b.json` (W18 moved it there when it applied it).\n",
           "## Inventory\n\n| authored file | take | rows | sha256 |\n|---|---|---:|---|",
           *[f"| `{f}` | {x['take']} | {x['rows']} | `{x['sha256'][:12]}` |" for f, x in files.items()],
           "\n| verdict file | adjudicated take | bound by | ids | ok | corrected | rejected |\n|---|---|---|---:|---:|---:|---:|",

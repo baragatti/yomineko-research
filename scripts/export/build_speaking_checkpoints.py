@@ -205,6 +205,12 @@ def main() -> int:
                 picked.append(entry)
             used_ids.update(x["id"] for x in picked)
 
+            # W18: `strand_counts` counts checkpoints as language-focused components
+            # (validate_speak_strands), and this is the last writer of the unit, so it keeps the
+            # histogram in step when a bank regeneration changes how many items a unit gets.
+            sc = u.get("strand_counts")
+            if isinstance(sc, dict) and "language-focused" in sc:
+                sc["language-focused"] += len(picked) - len(u.get("checkpoint") or [])
             u["checkpoint"] = picked
             stats.update(x["type"] for x in picked)
             stats.update([f"via:{x['via']}" for x in picked])

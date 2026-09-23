@@ -4,7 +4,15 @@
 deterministic HARD guards: JP-only text (full-width Latin ok), speaker registry, per-sub turn bounds and
 option counts, distinct options, correct not among distractors, no em dash, reply prompts BYTE-EQUAL to
 their real bank sentence. Items are Layer C needs_review, audio "pending" (voiced later; scripts double as
-review-mode transcripts). Usage: build_listening_bank.py [--flagged '{"n5_task":[{"ref":"3",...}]}']"""
+review-mode transcripts).
+
+W17. `source` was the one provenance field this builder never wrote — the 239 listening items were the
+only items in the whole tree with no `source` at all, and the disabled `migrate_exam_banks_p7.py` filled
+it in afterwards from its DEFAULT_SOURCE table. `contracts/exam_item.schema.json` REQUIRES it, so a
+regeneration without this line publishes 239 contract violations. `--out DIR` writes elsewhere than
+corpus/exam_banks so a prototype run touches nothing under corpus/.
+W18. Withdrawals live in research/derived/reauthor/exam_authored/_flagged_listen.json (default).
+Usage: build_listening_bank.py [--flagged '{"n5_task":[{"ref":"3",...}]}'] [--out DIR]"""
 from __future__ import annotations
 import argparse, json, re, sys
 from pathlib import Path
@@ -55,10 +63,21 @@ def check(it, sub, prompt_jp):
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--flagged", default="{}")
+    # W18. Same defect W17 fixed in build_authored_banks.py: a withdrawal passed only on the command
+    # line comes back on the next rebuild. The tracked table is the default; `--flagged {}` builds
+    # without it.
+    ap.add_argument("--flagged", default=None)
+    ap.add_argument("--out", default=None,
+                    help="write the banks here instead of corpus/exam_banks (prototype mode)")
     args = ap.parse_args()
+    out_dir = Path(args.out) if args.out else OUT
+    out_dir.mkdir(parents=True, exist_ok=True)
+    raw = args.flagged
+    if raw is None:
+        fp = SRC / "_flagged_listen.json"
+        raw = fp.read_text(encoding="utf-8") if fp.is_file() else "{}"
     flagged: dict = {}
-    for key, v in json.loads(args.flagged).items():
+    for key, v in json.loads(raw).items():
         flagged[key] = {str(b["ref"]) if isinstance(b, dict) else str(b) for b in v}
     counts, skipped = {}, []
     for lvl, sub in BATCHES:
@@ -81,12 +100,13 @@ def main() -> int:
                    else f"{PREFIX[sub]}:{lvl}:{int(it['n']):03d}")
             rec = {"id": iid, "level": lvl, "script": it["script"], "question": (it.get("question") or ""),
                    "correct": it["correct"].strip(), "distractors": [x.strip() for x in it["distractors"]],
-                   "audio": "pending", "layer": "C", "needs_review": True, "ai_generated": True}
+                   "audio": "pending", "layer": "C", "needs_review": True, "ai_generated": True,
+                   "source": "listening-script"}
             if sub == "reply":
                 rec["sentence"] = it["slug"]
             items.append(rec)
         if items:
-            (OUT / f"{lvl}_listening_{sub}.json").write_text(
+            (out_dir / f"{lvl}_listening_{sub}.json").write_text(
                 json.dumps(items, ensure_ascii=False), encoding="utf-8")
         counts[key] = len(items)
     print("listening banks:", counts)

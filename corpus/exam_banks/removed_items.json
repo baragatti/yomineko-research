@@ -1,5 +1,5 @@
 {
- "why": "Items removed from the committed banks by scripts/contracts/migrate_exam_banks_p7.py, kept here in full so nothing is silently lost. They are eligible to return when the banks are regenerated with the fixed builder.",
+ "why": "Items removed from the committed banks by scripts/contracts/migrate_exam_banks_p7.py and later repairs, kept here in full so nothing is silently lost. W18 (2026-09-23) regenerated every bank with the W17 builder and marked each entry: `w18` says whether the id returned repaired or stays out. 66 returned, 63 stay out; the builder, not this file, keeps them out.",
  "count": 129,
  "items": [
   {
@@ -19,7 +19,8 @@
     "vocab_id": 1587,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -38,7 +39,8 @@
     "vocab_id": 2453,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -57,7 +59,8 @@
     "vocab_id": 2525,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -76,7 +79,8 @@
     "vocab_id": 2525,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -95,7 +99,8 @@
     "vocab_id": 2525,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -114,7 +119,8 @@
     "vocab_id": 1553,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -133,7 +139,8 @@
     "vocab_id": 2480,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -152,7 +159,8 @@
     "vocab_id": 2525,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -171,7 +179,8 @@
     "vocab_id": 2525,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -190,7 +199,8 @@
     "vocab_id": 2525,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_context_fill.json",
@@ -209,7 +219,8 @@
     "vocab_id": 2525,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -226,7 +237,8 @@
     ],
     "reading": "read:n3-causa-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -243,7 +255,8 @@
     ],
     "reading": "read:n3-causa-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -260,7 +273,8 @@
     ],
     "reading": "read:n3-causa-05-02",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -277,7 +291,8 @@
     ],
     "reading": "read:n3-causa-06-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -294,7 +309,8 @@
     ],
     "reading": "read:n3-concessao-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -311,7 +327,8 @@
     ],
     "reading": "read:n3-concessao-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -328,7 +345,8 @@
     ],
     "reading": "read:n3-concessao-05-02",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -345,7 +363,8 @@
     ],
     "reading": "read:n3-conectores-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -362,7 +381,8 @@
     ],
     "reading": "read:n3-conectores-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -379,7 +399,8 @@
     ],
     "reading": "read:n3-conectores-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -396,7 +417,8 @@
     ],
     "reading": "read:n3-conjectura-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -413,7 +435,8 @@
     ],
     "reading": "read:n3-desejos-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -430,7 +453,8 @@
     ],
     "reading": "read:n3-desejos-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -447,7 +471,8 @@
     ],
     "reading": "read:n3-deveres-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -464,7 +489,8 @@
     ],
     "reading": "read:n3-deveres-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -481,7 +507,8 @@
     ],
     "reading": "read:n3-deveres-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -498,7 +525,8 @@
     ],
     "reading": "read:n3-enfase-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -515,7 +543,8 @@
     ],
     "reading": "read:n3-enfase-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -532,7 +561,8 @@
     ],
     "reading": "read:n3-estado-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -549,7 +579,8 @@
     ],
     "reading": "read:n3-estado-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -566,7 +597,8 @@
     ],
     "reading": "read:n3-estado-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -583,7 +615,8 @@
     ],
     "reading": "read:n3-estado-06-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -600,7 +633,8 @@
     ],
     "reading": "read:n3-estado-08-02",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -617,7 +651,8 @@
     ],
     "reading": "read:n3-estrutura-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -634,7 +669,8 @@
     ],
     "reading": "read:n3-estrutura-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -651,7 +687,8 @@
     ],
     "reading": "read:n3-estrutura-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -668,7 +705,8 @@
     ],
     "reading": "read:n3-intencao-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -685,7 +723,8 @@
     ],
     "reading": "read:n3-intencao-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -702,7 +741,8 @@
     ],
     "reading": "read:n3-intencao-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -719,7 +759,8 @@
     ],
     "reading": "read:n3-intencao-07-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -736,7 +777,8 @@
     ],
     "reading": "read:n3-limites-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -753,7 +795,8 @@
     ],
     "reading": "read:n3-limites-04-02",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -770,7 +813,8 @@
     ],
     "reading": "read:n3-limites-06-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -787,7 +831,8 @@
     ],
     "reading": "read:n3-perspectiva-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -804,7 +849,8 @@
     ],
     "reading": "read:n3-perspectiva-04-02",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -821,7 +867,8 @@
     ],
     "reading": "read:n3-perspectiva-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -838,7 +885,8 @@
     ],
     "reading": "read:n3-perspectiva-06-02",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -855,7 +903,8 @@
     ],
     "reading": "read:n3-relato-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -872,7 +921,8 @@
     ],
     "reading": "read:n3-relato-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -889,7 +939,8 @@
     ],
     "reading": "read:n3-relato-04-02",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -906,7 +957,8 @@
     ],
     "reading": "read:n3-relato-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -923,7 +975,8 @@
     ],
     "reading": "read:n3-tempo-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n3_text_grammar.json",
@@ -940,7 +993,8 @@
     ],
     "reading": "read:n3-tempo-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_context_fill.json",
@@ -959,7 +1013,8 @@
     "vocab_id": 726,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_context_fill.json",
@@ -978,7 +1033,8 @@
     "vocab_id": 736,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_grammar_form.json",
@@ -997,7 +1053,8 @@
     "grammar": "koto",
     "ai_generated": false,
     "source": "sentence+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1014,7 +1071,8 @@
     ],
     "reading": "read:n4-aspecto-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1031,7 +1089,8 @@
     ],
     "reading": "read:n4-aspecto-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1048,7 +1107,8 @@
     ],
     "reading": "read:n4-aspecto-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1065,7 +1125,8 @@
     ],
     "reading": "read:n4-aspecto-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1082,7 +1143,8 @@
     ],
     "reading": "read:n4-aspecto-06-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1099,7 +1161,8 @@
     ],
     "reading": "read:n4-causativa-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1116,7 +1179,8 @@
     ],
     "reading": "read:n4-condicionais-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1133,7 +1197,8 @@
     ],
     "reading": "read:n4-condicionais-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1150,7 +1215,8 @@
     ],
     "reading": "read:n4-conectores-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1167,7 +1233,8 @@
     ],
     "reading": "read:n4-conectores-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1184,7 +1251,8 @@
     ],
     "reading": "read:n4-conectores-06-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1201,7 +1269,8 @@
     ],
     "reading": "read:n4-dar-receber-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1218,7 +1287,8 @@
     ],
     "reading": "read:n4-dar-receber-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1235,7 +1305,8 @@
     ],
     "reading": "read:n4-experiencia-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1252,7 +1323,8 @@
     ],
     "reading": "read:n4-experiencia-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1269,7 +1341,8 @@
     ],
     "reading": "read:n4-experiencia-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1286,7 +1359,8 @@
     ],
     "reading": "read:n4-forma-simples-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1303,7 +1377,8 @@
     ],
     "reading": "read:n4-forma-simples-03-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1320,7 +1395,8 @@
     ],
     "reading": "read:n4-forma-simples-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1337,7 +1413,8 @@
     ],
     "reading": "read:n4-forma-simples-07-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1354,7 +1431,8 @@
     ],
     "reading": "read:n4-keigo-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1371,7 +1449,8 @@
     ],
     "reading": "read:n4-keigo-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1388,7 +1467,8 @@
     ],
     "reading": "read:n4-keigo-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1405,7 +1485,8 @@
     ],
     "reading": "read:n4-passiva-01-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1422,7 +1503,8 @@
     ],
     "reading": "read:n4-revisao-02-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -1439,7 +1521,8 @@
     ],
     "reading": "read:n4-suposicao-08-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n5_context_fill.json",
@@ -1458,7 +1541,8 @@
     "vocab_id": 317,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_context_fill.json",
@@ -1477,7 +1561,8 @@
     "vocab_id": 310,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_context_fill.json",
@@ -1496,7 +1581,8 @@
     "vocab_id": 620,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_context_fill.json",
@@ -1515,7 +1601,8 @@
     "vocab_id": 317,
     "ai_generated": false,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_context_fill.json",
@@ -1534,7 +1621,8 @@
     "vocab_id": 618,
     "ai_generated": true,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_context_fill.json",
@@ -1553,7 +1641,8 @@
     "vocab_id": 591,
     "ai_generated": true,
     "source": "sentence+vocab"
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_text_grammar.json",
@@ -1570,7 +1659,8 @@
     ],
     "reading": "read:n5-convites-06-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n5_text_grammar.json",
@@ -1587,7 +1677,8 @@
     ],
     "reading": "read:n5-particulas-lugar-05-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n5_text_grammar.json",
@@ -1604,7 +1695,8 @@
     ],
     "reading": "read:n5-passado-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n5_text_grammar.json",
@@ -1621,7 +1713,8 @@
     ],
     "reading": "read:n5-rotina-04-01",
     "source": "reading+grammar"
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n5_orthography.json",
@@ -1642,7 +1735,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1663,7 +1757,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1684,7 +1779,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1705,7 +1801,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n5_orthography.json",
@@ -1726,7 +1823,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1747,7 +1845,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1768,7 +1867,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1789,7 +1889,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1810,7 +1911,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1831,7 +1933,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1852,7 +1955,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1873,7 +1977,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1894,7 +1999,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1915,7 +2021,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1936,7 +2043,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1957,7 +2065,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1978,7 +2087,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -1999,7 +2109,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -2020,7 +2131,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n5_orthography.json",
@@ -2041,7 +2153,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -2062,7 +2175,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_sentence_order.json",
@@ -2086,7 +2200,8 @@
     "source": "sentence-tokens",
     "layer": "B",
     "needs_review": false
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in pieces and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_sentence_order.json",
@@ -2107,7 +2222,8 @@
     "source": "sentence-tokens",
     "layer": "B",
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n3_text_grammar.json",
@@ -2127,7 +2243,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "returned repaired: the regenerated item under this id differs in stem, correct and passes every validate_exam_banks check (C: the stem does not print its answer outside the blank) and the level gate"
   },
   {
    "file": "n4_text_grammar.json",
@@ -2147,7 +2264,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_context_fill.json",
@@ -2169,7 +2287,8 @@
     "vocab": "vocab:1172610",
     "layer": "B",
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_kanji_reading.json",
@@ -2190,7 +2309,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_kanji_reading.json",
@@ -2211,7 +2331,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_orthography.json",
@@ -2232,7 +2353,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_orthography.json",
@@ -2253,7 +2375,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_paraphrase.json",
@@ -2276,7 +2399,8 @@
     "source": "authored+verified",
     "vocab": "vocab:1172610",
     "ai_generated": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n4_usage.json",
@@ -2298,7 +2422,8 @@
     "source": "authored+verified(real-correct)",
     "vocab": "vocab:1172610",
     "ai_generated": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_kanji_reading.json",
@@ -2319,7 +2444,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_kanji_reading.json",
@@ -2340,7 +2466,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -2361,7 +2488,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   },
   {
    "file": "n5_orthography.json",
@@ -2382,7 +2510,8 @@
     "layer": "B",
     "ai_generated": false,
     "needs_review": false
-   }
+   },
+   "w18": "stays out: the W18 regeneration (W17 builder) does not emit this id; the rule that withdrew it is now a builder rule, so no rebuild re-admits it"
   }
  ]
 }

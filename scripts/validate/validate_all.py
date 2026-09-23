@@ -48,6 +48,9 @@ SUITE = [
     # SudachiPy token boundaries (the old `jp.replace(form, …)` cut inside a word in 59 of the 286
     # passages), and a reading_comp item is checked against the passage it is printed under.
     ("test_exam_builders.py", "code"),
+    # W17 rules (level rule, reading-aware link, option shape, bunsetsu tiles), 28 unit checks; W18
+    # made them the shipped builders, so the tests join the suite with them.
+    ("test_exam_builders_w17.py", "code"),
     ("validate_display_consistency.py", "code"),
     ("validate_groundtruth.py", "code"),
     ("validate_strokes.py", "code"),

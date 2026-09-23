@@ -58,48 +58,53 @@
   "needs_review": true,
   "checkpoint": [
     {
+      "id": "so:n3:156",
+      "type": "sentence_order",
+      "via": "phrase"
+    },
+    {
       "id": "so:n3:238",
       "type": "sentence_order",
       "via": "phrase"
     },
     {
-      "id": "kr:n4:1185",
+      "id": "cf:n3:238:1185",
+      "type": "context_fill",
+      "via": "phrase",
+      "distractors": [
+        "正月",
+        "入院",
+        "多分"
+      ]
+    },
+    {
+      "id": "cf:n3:155:755",
+      "type": "context_fill",
+      "via": "new-word",
+      "distractors": [
+        "思う",
+        "着る",
+        "必要"
+      ]
+    },
+    {
+      "id": "kr:n3:110",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "なに",
-        "ため",
-        "もう"
+        "ひだり",
+        "ホテル",
+        "おもう"
       ]
     },
     {
-      "id": "kr:n4:755",
+      "id": "kr:n3:1185",
       "type": "kanji_reading",
       "via": "new-word",
       "distractors": [
-        "しゅみ",
-        "ちかく",
-        "いくら"
-      ]
-    },
-    {
-      "id": "cf:n3:5211:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "庭",
-        "兄",
-        "親"
-      ]
-    },
-    {
-      "id": "cf:n3:5213:2453",
-      "type": "context_fill",
-      "via": "review",
-      "distractors": [
-        "年",
-        "熱",
-        "力"
+        "ちず",
+        "みず",
+        "みる"
       ]
     }
   ],
@@ -210,7 +215,7 @@
   "strand_counts": {
     "meaning-input": 12,
     "meaning-output": 3,
-    "language-focused": 30,
+    "language-focused": 31,
     "fluency": 6
   }
 }

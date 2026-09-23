@@ -1251,6 +1251,34 @@ def handle_reading_passages(rows, sents, gram, table):
     return out
 
 
+def handle_reading_comprehension(rows, sents, gram, table):
+    """W18. Every flipped box must point at its row's question, say it is about the current text,
+    and carry the question the exporter resolved from the rc bank. A flag set with no question
+    behind it would render nothing, which is exactly the state the flip exists to end."""
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']} ({r['lesson']})"
+        rec = READINGS.get(r["slug"])
+        if rec is None:
+            out.append(("fail", C_NO_RECORD, addr, f"no exported reading {r['slug']}"))
+            continue
+        c = rec.get("comprehension") or {}
+        if r["new"]["item"] is None:        # withdrawn: the box must point at nothing
+            out.append(("ok", "", addr, "exact") if not c else
+                       ("fail", C_NOT_APPLIED, addr, f"the box still points at {c.get('item')!r}"))
+            continue
+        if c.get("item") != r["item"]:
+            out.append(("fail", C_VALUE_MISMATCH, addr, f"the box points at {c.get('item')!r}"))
+        elif c.get("about_current_text") is not True:
+            out.append(("fail", C_NOT_APPLIED, addr, "about_current_text is still false"))
+        elif not (c.get("question") and c.get("correct") and len(c.get("options") or []) == 4):
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"no question resolved from the rc bank for {r['item']}"))
+        else:
+            out.append(("ok", "", addr, "exact"))
+    return out
+
+
 def handle_practice_exercises(rows, sents, gram, table):
     """W20. Every authored kanji exercise must BE in the lesson that unlocks the kanji, and rendered.
 
@@ -1614,6 +1642,8 @@ REGISTRY = {
     "lesson_needs.json": handle_lesson_needs,
     "lesson_furigana.json": handle_lesson_furigana,
     "reading_passages.json": handle_reading_passages,
+    # W18: the reading boxes ask their W18b comprehension question (flag flipped back on).
+    "reading_comprehension.json": handle_reading_comprehension,
     "practice_kanji_exercises.json": handle_practice_exercises,
     # C1-W20v: the vocab + grammar half (plus W21b's pending kanji drills), same row shape.
     "practice_vocab_exercises.json": handle_practice_exercises,

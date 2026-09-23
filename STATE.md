@@ -58,6 +58,8 @@ appearance and reuse only.
 
 ## ▶ RESUME HERE
 
+> **2026-09-23 (C2-W18, checkpoint) — all 40 exam banks REGENERATED, committed.** W17 patch applied; 6,081 -> 5,141 items; the nine non-listening families at level ceiling 0 (27 ceilings -> 0; listening 175 still over, W18b). reading_comp = the 285 W18b questions, pp/us = W18b's 42 rows + the level rule. Decisions: journal (now tracked) carries the 3 listening repairs; `_flagged_listen.json` withdraws lr:n5:tatoeba-213565; ledger 66 returned / 63 out. Reading boxes asking 4 -> 285 (step 132; families 133-135). Stem collisions 94 -> 0. Speaking checkpoints 366 -> 364 (strand ratchet re-recorded with cause). 0 lesson files changed. Open: Fable sample 30, one rc passage without a question. Report `research/reports/w18_regeneration_report.md`.
+
 > **2026-09-23 (aw) — PAUSED by the owner after chain unit U2. Everything committed and pushed; tree clean.**
 >
 > Landed this run: W13 finish (bank 10,209), 74 + 201 particle fixes, late N3 relink (19 applied, 29 held
