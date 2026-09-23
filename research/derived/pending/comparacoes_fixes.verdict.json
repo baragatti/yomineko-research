@@ -1,0 +1,114 @@
+{
+ "what_this_is": "Adversarial verification of research/derived/pending/comparacoes_fixes.json: the 3 edit rows for les:n5-comparacoes-01 and the gp-153 triage (D5b merge row, measured counts, E1 items, lesson body, 3 reconciled pt-BR texts).",
+ "verified": "2026-09-23",
+ "key_format": "edits: '<lesson>|<old_span>' (as in w08b_lesson_bodies.verdict.json); gp153 parts: 'gp153|<part>'. 'corrected' is the replacement new_span / text, or an object where the part is not a single string.",
+ "inputs_confirmed": "les:n5-comparacoes-01 and les:n4-suposicao-04 bodies at git HEAD b845dfdf are byte-identical to the working tree and to localized_text(lesson, body, pt-BR) in a fresh backup of db/corpus.sqlite. Post-merge bodies rebuilt with the exact migrate_grammar_merge.plan_lesson_bodies rewrite; W08b rows applied in order (input and verdict-corrected variants). gp-153/gp-77/gp-154 rows, edges and content diffs measured on the backup and on a copy with D5 applied (diff_content appends + apply_edges + deprecated_by).",
+ "summary": {
+  "checked": 10,
+  "ok": 4,
+  "corrected": 6,
+  "rejected": 0
+ },
+ "verdicts": {
+  "les:n5-comparacoes-01|Repare que, em todos, </text><jp>より</jp><text> continua colado no termo menor e </text><jp>のほうが</jp><text> no lado que ganha; o que muda é só por onde a frase começa.": {
+   "row": 0,
+   "ok": false,
+   "problem": "(3) Half-fixed. The new lead names two differences between the molds (the winner takes は in the first, のほうが in the other two) and then keeps the original tail 'o que muda é só por onde a frase começa', which the same sentence has just contradicted. It is also false on its own terms: は…より…です and のほうが…より both begin with the winning side (電車は／電車のほうが … バスより), so between them the start does NOT change; only the marker does. The 'only the start changes' claim holds for the last two molds only. Fix keeps both markers and scopes 'only the start' to those two. Measured: old_span count 1 in HEAD, in the post-merge body and after W08b rows 4-7 (both the input rows and the verdict-corrected row 6); LessonParser 0 errors before and after, with this correction too.",
+   "corrected": "Repare que, em todos, </text><jp>より</jp><text> continua colado no termo menor. O lado que ganha leva </text><jp>は</jp><text> no primeiro e </text><jp>のほうが</jp><text> nos outros dois, que só diferem por onde a frase começa."
+  },
+  "les:n5-comparacoes-01|o japonês </text><text weight=\"bold\">não tem</text><text> uma palavra solta para \"mais\".": {
+   "row": 1,
+   "ok": true,
+   "note": "count 1 at every stage; 'a comparação não precisa de uma palavra para \"mais\"' is true (もっと exists and is optional); natural pt-BR; bold kept on the negated verb; parser clean."
+  },
+  "les:n5-comparacoes-01|e que não há um \"mais\" avulso.": {
+   "row": 2,
+   "ok": true,
+   "note": "count 1 at every stage; matches the corrected paragraph; natural pt-BR."
+  },
+  "gp153|merges_row|gram:gp-153->gram:gp-77": {
+   "ok": true,
+   "note": "Duplicate test re-derived on a fresh snapshot of db/corpus.sqlite (HEAD b845dfdf): forms ['のような'] ⊆ gp-77 ['のように','のような'] and structure_pattern '～のような' inside 'のように・のような'; nuance_tags ['comparison'] ⊆ ['comparison','conjecture']; introducing_topic_id 30 on both; family grp:gram-n4-suposicao on both; lesson_unlocks: les:n4-suposicao-04 is the only unlocker of each; no other live record shares the form. Survivor gp-77 (superset forms and variants) is right. `expect` re-measured with migrate_grammar_merge.plan_edges both BEFORE and AFTER applying D5 (content + apply_edges) on a copy: every one of the 14 counts equals the row's expect in both states (sentence_grammar 5 = 3535-3539, exercise_item 1 = 80585, lesson body addresses 2, cumulative_known_set 134). D5's own expect also re-measures exactly. No loser fact lost: forms, nuance tags, register_json, usage contexts and level sources are carried or appended; register 'neutral' and all prose/form_meanings/label are salvaged; nothing refused."
+  },
+  "gp153|measured.content": {
+   "ok": false,
+   "problem": "`appended` lists the diff measured BEFORE D5 (5 appends). The row runs after D5, and D5 already appends the identical register_json 'plain', usage_contexts 'spoken' and level_sources 'tanos' (1/1 -> 2/2). Measured post-D5, this merge writes only two things. Report-only error; expect is unaffected.",
+   "corrected": {
+    "appended_post_d5": [
+     "references_json.also_known_as: ['のように'] -> ['のように', 'のような']",
+     "formation_steps_json += clause variant [to-attributive, append ような] (子供が遊んでいるような)"
+    ],
+    "covered_by_d5": [
+     "register_json += plain",
+     "usage_contexts_json += spoken",
+     "level_sources += tanos (level_agreement 1/1 -> 2/2)"
+    ]
+   }
+  },
+  "gp153|lesson_body|les:n4-suposicao-04": {
+   "ok": false,
+   "problem": "Blocking. (a) The apply_contract puts D5b into MERGES right after D5, i.e. the same migration run, so the post-merge body already reads item-ref=\"gram:gp-77\" where W08b row 9's old_span expects item-ref=\"gram:gp-153\": measured, W08b row 8 count 1, W08b row 9 count 0, and the W08b body apply stops ('if old_span is absent, stop'). (b) Deferring the body ('NOT in this file') ships exactly the defect class W08b fixed in its eight lessons: after the re-point, 'A forma [gp-77] qualifica o substantivo que vem logo depois' describes the whole のよう point as only its adnominal form while the のように section names the same chip, and the checklist carries two (same run: three) rows with item-ref gram:gp-77. Also 'same open item as the 8 W08b bodies' is inaccurate: those eight have span rows (w08b_lesson_bodies.json).",
+   "corrected": {
+    "same_run_with_d5": {
+     "apply_after": "D5 and D5b address rewrites, then W08b row 8",
+     "rows": [
+      {
+       "old_span": "<p><text>A forma </text><grammar ref=\"gram:gp-77\"/><text> qualifica o substantivo que vem logo depois.",
+       "new_span": "<p><text>A forma </text><jp>のような</jp><text> de </text><grammar ref=\"gram:gp-77\"/><text> qualifica o substantivo que vem logo depois.",
+       "why": "After the merge the chip is the whole のよう point (gp-77), so 'A forma [gp-77] qualifica o substantivo' says the whole point is only the adnominal form, while the のように section names the same chip. Same fix W08b row 8 made for のように."
+      },
+      {
+       "replaces": "w08b_lesson_bodies.json row 9 (les:n4-suposicao-04, D5 checklist)",
+       "old_span": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério).</text></check>\n <check item-ref=\"gram:gp-77\"><text>Uso 〜のような antes de substantivo (qualifica: \"um... como\").</text></check>\n <check item-ref=\"gram:gp-77\"><text>Uso 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>",
+       "new_span": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério), uso 〜のような antes de substantivo (qualifica: \"um... como\") e 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>",
+       "why": "Three checklist rows for one record once D5 and D5b both re-point to gp-77. One row, all three facts kept."
+      }
+     ],
+     "measured": "each old_span count 1 in order; LessonParser 0 errors; 1 checklist row for gram:gp-77; no gp-153 left in the body"
+    },
+    "separate_later_run": {
+     "apply_after": "D5, W08b rows 8-9 as they are, then D5b's address rewrite",
+     "rows": [
+      {
+       "old_span": "<p><text>A forma </text><grammar ref=\"gram:gp-77\"/><text> qualifica o substantivo que vem logo depois.",
+       "new_span": "<p><text>A forma </text><jp>のような</jp><text> de </text><grammar ref=\"gram:gp-77\"/><text> qualifica o substantivo que vem logo depois.",
+       "why": "After the merge the chip is the whole のよう point (gp-77), so 'A forma [gp-77] qualifica o substantivo' says the whole point is only the adnominal form, while the のように section names the same chip. Same fix W08b row 8 made for のように."
+      },
+      {
+       "old_span": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério) e uso 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>\n <check item-ref=\"gram:gp-77\"><text>Uso 〜のような antes de substantivo (qualifica: \"um... como\").</text></check>",
+       "new_span": "<check item-ref=\"gram:gp-77\"><text>Sei que のよう é a versão formal/escrita de みたい (mesma comparação, tom mais sério), uso 〜のような antes de substantivo (qualifica: \"um... como\") e 〜のように antes de verbo/adjetivo (modo: \"do jeito que / como\").</text></check>"
+      }
+     ],
+     "measured": "each old_span count 1 in order; LessonParser 0 errors; same final body as same_run_with_d5"
+    }
+   }
+  },
+  "gp153|E1_items": {
+   "ok": true,
+   "note": "gf:n4:3535-3539 exist in corpus/exam_banks/n4_grammar_form.json at HEAD and in the working tree with grammar gp-153 and correct のような (a gp-77 form); W08b E1 has 17 items, so 22 is right; cap:topic:n4-suposicao lists gp-153 and gp-154 beside gp-77. See found_not_in_scope for gf:n4:3539 (どのような)."
+  },
+  "gp153|reconciled_prose|gp-77#explanation/pt-BR": {
+   "ok": false,
+   "problem": "(3) Built on D5's UNcorrected `new` (survivor_original is byte-identical to w08b_merges.json D5 explanation.new). w08b_merges.verdict.json corrected that text because it lists 先生が言ったように and 思ったように (verb + ように, no の) in one 'Ex.' run right after the のような/のように rule, which teaches *言ったのように. This row replaces D5's text, so it would undo that correction. (4) 'vem antes de substantivo e qualifica o substantivo que vem logo depois' says the same thing twice. Fix = the verdict-corrected D5 text plus the loser's facts (qualifica o substantivo, \"um... como\", \"do tipo de\", \"igual a\", 天使のような人). No fact dropped.",
+   "corrected": "のよう é a forma de comparação e semelhança usada em registro mais formal e na escrita, equivalente a \"como\", \"semelhante a\", \"tal qual\", \"à maneira de\". のような vem antes de substantivo e o qualifica (\"um... como\", \"do tipo de\", \"igual a\"); のように, a versão adverbial, vem antes de verbo/adjetivo (modo: \"do jeito que\", \"feito\"). Ex.: 天使のような人 = \"uma pessoa angelical / como um anjo\"; 雪のように白い = \"branco como a neve\"; 鳥のように飛ぶ = \"voar como um pássaro\". Depois de verbo, a forma é ように, sem o の: 先生が言ったように = \"como o professor disse\"; 思ったように = \"como eu pensava\". Pode também marcar exemplo (\"como, por exemplo\") e conjectura (\"parece que\")."
+  },
+  "gp153|reconciled_prose|gp-77#formation/pt-BR": {
+   "ok": false,
+   "problem": "(3) This row rewrites the clause sentence and now hangs ような on it too, keeping the inherited 'Depois de verbo/oração na forma simples, usa-se direto よう sem の'. For a noun or adjetivo-な predicate the plain form is wrong (*学生だような, *静かだような; it is 学生のような, 静かなような), which is why gp-153's and gp-154's own formation_steps use to-attributive; the loser itself said 'frase verbal'. Every example given is a verb clause, so the fix scopes the sentence to 'verbo na forma simples'. Everything else is kept (loser facts all present: よう = \"aparência, semelhança\", な atributiva como nos adjetivos-な, [frase] + ような with 子供が遊んでいるような声).",
+   "corrected": "Substantivo + の + よう: のような + substantivo (氷のような手 \"mãos como gelo\"); のように + verbo/adjetivo (鳥のように歌う \"cantar como um pássaro\"). よう quer dizer \"aparência, semelhança\"; o な é a terminação atributiva e o に a adverbial, as mesmas dos adjetivos-な (静かな／静かに). Depois de verbo na forma simples, usa-se direto よう, sem の: ような antes de substantivo (子供が遊んでいるような声 \"uma voz como a de crianças brincando\") e ように antes de verbo/adjetivo (約束したように \"como prometido\"; 先生が言ったように \"como o professor disse\"). No fim da frase: 〜のようだ／のようです. Existe também 〜のように〜ない, para \"não tanto quanto\" ou para negar a semelhança."
+  },
+  "gp153|reconciled_prose|gp-77#nuance/pt-BR": {
+   "ok": false,
+   "problem": "(3) Built on D5's UNcorrected `new`: keeps 'のように também aparece em pedidos suaves e instruções (〜のようにしてください \"faça de modo que...\")', which w08b_merges.verdict.json refuted (the soft request is verb + ようにしてください, no の: 遅れないようにしてください) and which sits right after 'não confunda com o 〜ように sem の', so the text contradicts itself. Replacing D5's text would undo that correction. (1) The loser's 'não entra a partícula を' was dropped; it is a true caution and costs four words, so it is kept. Fix = the verdict-corrected D5 nuance plus the loser's facts (adjetivos-な 静かな人 / 静かに話す, no を nor \"ser\" between the nouns, 〜のごとき).",
+   "corrected": "Não esqueça o の entre o substantivo e よう: é justamente o que distingue a versão formal (山のような = \"como uma montanha\") da coloquial (山みたいな, sem の). Para lusófonos, atenção à divisão な／に, igual à de みたい e à dos adjetivos-な (静かな人 / 静かに話す): a escolha depende só do que vem depois (substantivo → のような; verbo/adjetivo → のように). E no meio não entra を nem verbo \"ser\": é só substantivo + のような + substantivo. Não confunda com o 〜ように sem の, depois de verbos: é outra função, que indica finalidade (\"para que...\") e aparece em pedidos suaves e instruções (〜ようにしてください, \"faça de modo que...\"), um sentido que o nosso simples \"como\" não cobre. E o contrário também vale: nem todo \"como\" do português vira のように; ele é o caminho natural quando a ideia é \"igual a tal coisa\". Na escrita bem formal, のような pode aparecer como 〜のごとき."
+  }
+ },
+ "found_not_in_scope": [
+  "les:n5-comparacoes-01, W08b row 5 text: heading 'Três moldes, três ordens' and lead 'um para cada ordem'. By the lesson's own definition of ordem (section 'A ordem é flexível': which block comes first), は…より…です and のほうが…より share one order (winner first), so there are two orders, not three.",
+  "les:n5-comparacoes-01 opening paragraph: 'O japonês resolve toda comparação entre duas coisas com duas pecinhas: より ... e ほうが' and 'o par のほうが … より, que cobre qualquer comparação': same false generalization as edit 0 (は…より…です has no ほうが).",
+  "les:n5-comparacoes-01 l1-advantage note: 'as partículas より e のほうが' calls のほうが a particle; ほう is a noun (方), the same slip w08b_merges.verdict.json fixed in yori-hou-ga#nuance.",
+  "gf:n4:3539 / sent:tatoeba-200376 'どのようなスポーツをなさいますか' is interrogative どのような ('que tipo de'), not the comparison のような; the item explanation 'como / parecido com (antes de substantivo)' is wrong for it. The merge carries the mis-tag from gp-153 to gp-77 unchanged (pre-existing, owner call).",
+  "Working tree only (uncommitted writer-chain change): corpus/exam_banks/n4_grammar_form.json gf:n4:3535 and gf:n4:3536 now list みたいな as a distractor, which is also grammatical in お茶（みたいな）味 / さけ（みたいな）味: two correct answers.",
+  "w24_capabilities.json and reading_comp/work-03..12.json name gp-153: W08b ordering_dependencies (resolve through the grammar redirect) must cover this ninth loser too."
+ ]
+}

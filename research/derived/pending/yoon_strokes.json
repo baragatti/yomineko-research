@@ -1,0 +1,3541 @@
+{
+ "why": "W29 follow-up (research/reports/w29_kana_cards_report.md §5 R2, the 'alternative that removes R2'). The 66 yoon glyphs have no record in corpus/strokes/kana.json, so W29 drops their handwriting card. Every yoon is a base glyph plus a small ya/yu/yo, and both components already have strokesvg records. Composing them gives every kana glyph stroke data, so all 211 glyph cards keep recognition, production and handwriting.",
+ "definition": "One row per yoon glyph, in exactly the corpus/strokes/kana.json record shape {char, kind, viewbox, strokes, shadows, source, license}, sorted like the exporter (kind, char). Stroke order = the base glyph's strokes in their own order, then the small glyph's. The base keeps its coordinates. The small glyph is the registry's own small-form record (already drawn by the font at small size, sitting low in its em cell) translated one advance (+1024 x, 0 y) into the next cell, which is how a digraph is written: two cells, the small kana at the lower right of the base. No scaling is applied, because the small-form data exists for all six of ゃゅょャュョ. viewbox is therefore 0 0 2048 1024 (two em cells).",
+ "status": "PENDING (derivation only). Nothing in corpus/, db/ or the exporter is written. Apply = (1) land the composition as a tracked DB writer: extend scripts/ingest/strokesvg_kana.py, where the っ/ッ derivation already lives, or add a script registered in research/derived/rebuild_manifest.json after step 6; (2) write the 66 rows into kana_stroke with layer set explicitly, since the column defaults to 'A' and the っ/ッ derived rows carry 'A' today, so pick one layer policy for all 68 derived rows; (3) re-export. corpus/strokes/kana.json then goes 162 -> 228 records, and the counts in ATTRIBUTION.md (strokesvg section) and design/sources.md must read 160 parsed + 68 derived, with the derived line naming the 66 yoon composites beside っ/ッ.",
+ "generated_by": "scripts/derive_yoon_strokes.py (mechanical composition, no AI, no hand edits); the apply must land the same composition as a tracked DB writer (status step 1)",
+ "layer": "B (deterministic transform over Layer-A strokesvg records; ai_generated false)",
+ "provenance": {
+  "input": "corpus/strokes/kana.json @ git HEAD",
+  "input_sha256": "3e3a1e8e5cc8329213af674bfc54a36c995e9e5b5a7be9d8938643b716ab139d",
+  "glyph_list": "corpus/kana/hiragana.json + corpus/kana/katakana.json @ git HEAD, type == 'yoon'",
+  "upstream": "zhengkyl/strokesvg dist/**/*.svg, parsed by scripts/ingest/strokesvg_kana.py",
+  "per_row": "derivation[] names both component records and the dist SVG each came from"
+ },
+ "license": {
+  "value": "OFL-1.1+MIT (carried unchanged from both components)",
+  "note": "The kana SVGs of strokesvg are derived from the Klee One font and governed by SIL OFL 1.1 (research/datasets/strokesvg/LICENSE NOTICE; ATTRIBUTION.md 'strokesvg / Klee One'; research/reports/w42_attribution_report.md §1.1). Under the conservative reading ATTRIBUTION.md adopts (whether derived centerline data counts as Font Software is an owner legal call), a composite of two such records is a further Modified Version of the Font Software: OFL condition 5 keeps it under OFL 1.1, and the shipped app must carry the full OFL text plus both copyright lines (© 2024 Kyle; © 2020 The Klee Project Authors). No Reserved Font Name is declared, so no renaming duty. It is never sold by itself (condition 1)."
+ },
+ "measurements": {
+  "small_ink_bbox_in_own_cell": {
+   "ゃ": [
+    184,
+    364,
+    807,
+    967
+   ],
+   "ゅ": [
+    235,
+    346,
+    808,
+    985
+   ],
+   "ょ": [
+    266,
+    349,
+    749,
+    950
+   ],
+   "ャ": [
+    216,
+    367,
+    784,
+    967
+   ],
+   "ュ": [
+    211,
+    509,
+    811,
+    890
+   ],
+   "ョ": [
+    266,
+    474,
+    736,
+    911
+   ]
+  },
+  "small_vs_full_pairs": [
+   {
+    "small": "ぁ",
+    "full": "あ",
+    "w_ratio": 0.762,
+    "h_ratio": 0.758,
+    "small_ink_bbox": [
+     233,
+     315,
+     784,
+     990
+    ],
+    "full_ink_bbox": [
+     157,
+     97,
+     880,
+     988
+    ]
+   },
+   {
+    "small": "ぃ",
+    "full": "い",
+    "w_ratio": 0.757,
+    "h_ratio": 0.756,
+    "small_ink_bbox": [
+     239,
+     457,
+     821,
+     910
+    ],
+    "full_ink_bbox": [
+     147,
+     252,
+     916,
+     851
+    ]
+   },
+   {
+    "small": "ぅ",
+    "full": "う",
+    "w_ratio": 0.79,
+    "h_ratio": 0.758,
+    "small_ink_bbox": [
+     299,
+     327,
+     686,
+     963
+    ],
+    "full_ink_bbox": [
+     249,
+     130,
+     739,
+     969
+    ]
+   },
+   {
+    "small": "ぇ",
+    "full": "え",
+    "w_ratio": 0.759,
+    "h_ratio": 0.76,
+    "small_ink_bbox": [
+     247,
+     346,
+     782,
+     949
+    ],
+    "full_ink_bbox": [
+     166,
+     142,
+     871,
+     935
+    ]
+   },
+   {
+    "small": "ぉ",
+    "full": "お",
+    "w_ratio": 0.758,
+    "h_ratio": 0.765,
+    "small_ink_bbox": [
+     241,
+     337,
+     777,
+     942
+    ],
+    "full_ink_bbox": [
+     157,
+     137,
+     864,
+     928
+    ]
+   },
+   {
+    "small": "ゃ",
+    "full": "や",
+    "w_ratio": 0.762,
+    "h_ratio": 0.756,
+    "small_ink_bbox": [
+     184,
+     364,
+     807,
+     967
+    ],
+    "full_ink_bbox": [
+     88,
+     142,
+     906,
+     940
+    ]
+   },
+   {
+    "small": "ゅ",
+    "full": "ゆ",
+    "w_ratio": 0.773,
+    "h_ratio": 0.763,
+    "small_ink_bbox": [
+     235,
+     346,
+     808,
+     985
+    ],
+    "full_ink_bbox": [
+     151,
+     133,
+     892,
+     971
+    ]
+   },
+   {
+    "small": "ょ",
+    "full": "よ",
+    "w_ratio": 0.78,
+    "h_ratio": 0.776,
+    "small_ink_bbox": [
+     266,
+     349,
+     749,
+     950
+    ],
+    "full_ink_bbox": [
+     197,
+     144,
+     816,
+     918
+    ]
+   },
+   {
+    "small": "ァ",
+    "full": "ア",
+    "w_ratio": 0.818,
+    "h_ratio": 0.776,
+    "small_ink_bbox": [
+     228,
+     379,
+     798,
+     957
+    ],
+    "full_ink_bbox": [
+     167,
+     203,
+     864,
+     948
+    ]
+   },
+   {
+    "small": "ィ",
+    "full": "イ",
+    "w_ratio": 0.774,
+    "h_ratio": 0.771,
+    "small_ink_bbox": [
+     205,
+     339,
+     731,
+     958
+    ],
+    "full_ink_bbox": [
+     119,
+     159,
+     799,
+     962
+    ]
+   },
+   {
+    "small": "ゥ",
+    "full": "ウ",
+    "w_ratio": 0.771,
+    "h_ratio": 0.767,
+    "small_ink_bbox": [
+     290,
+     314,
+     779,
+     957
+    ],
+    "full_ink_bbox": [
+     219,
+     126,
+     853,
+     964
+    ]
+   },
+   {
+    "small": "ェ",
+    "full": "エ",
+    "w_ratio": 0.772,
+    "h_ratio": 0.771,
+    "small_ink_bbox": [
+     216,
+     489,
+     827,
+     897
+    ],
+    "full_ink_bbox": [
+     125,
+     282,
+     916,
+     811
+    ]
+   },
+   {
+    "small": "ォ",
+    "full": "オ",
+    "w_ratio": 0.781,
+    "h_ratio": 0.768,
+    "small_ink_bbox": [
+     240,
+     335,
+     815,
+     946
+    ],
+    "full_ink_bbox": [
+     153,
+     155,
+     889,
+     951
+    ]
+   },
+   {
+    "small": "ャ",
+    "full": "ヤ",
+    "w_ratio": 0.777,
+    "h_ratio": 0.768,
+    "small_ink_bbox": [
+     216,
+     367,
+     784,
+     967
+    ],
+    "full_ink_bbox": [
+     136,
+     187,
+     867,
+     968
+    ]
+   },
+   {
+    "small": "ュ",
+    "full": "ユ",
+    "w_ratio": 0.773,
+    "h_ratio": 0.776,
+    "small_ink_bbox": [
+     211,
+     509,
+     811,
+     890
+    ],
+    "full_ink_bbox": [
+     124,
+     319,
+     900,
+     810
+    ]
+   },
+   {
+    "small": "ョ",
+    "full": "ヨ",
+    "w_ratio": 0.77,
+    "h_ratio": 0.772,
+    "small_ink_bbox": [
+     266,
+     474,
+     736,
+     911
+    ],
+    "full_ink_bbox": [
+     172,
+     265,
+     782,
+     831
+    ]
+   }
+  ],
+  "median_small_full_ratio": 0.771,
+  "note": "Ink bboxes from shadow outlines (hull incl. control points). They confirm the registry's small forms are already scaled (~the median ratio) and bottom-placed by the font, so composing them unscaled reproduces the font's own digraph layout; the ratio would only be needed if a small record were missing, and none is."
+ },
+ "counts": {
+  "rows": 66,
+  "hiragana": 33,
+  "katakana": 33,
+  "components_missing_stroke_data": 0
+ },
+ "derivation": [
+  {
+   "char": "きゃ",
+   "glyph_id": "kana:hiragana-きゃ",
+   "base": "き",
+   "small": "ゃ",
+   "base_strokes": 4,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/き.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "きゅ",
+   "glyph_id": "kana:hiragana-きゅ",
+   "base": "き",
+   "small": "ゅ",
+   "base_strokes": 4,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/き.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "きょ",
+   "glyph_id": "kana:hiragana-きょ",
+   "base": "き",
+   "small": "ょ",
+   "base_strokes": 4,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/き.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ぎゃ",
+   "glyph_id": "kana:hiragana-ぎゃ",
+   "base": "ぎ",
+   "small": "ゃ",
+   "base_strokes": 6,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ぎ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ぎゅ",
+   "glyph_id": "kana:hiragana-ぎゅ",
+   "base": "ぎ",
+   "small": "ゅ",
+   "base_strokes": 6,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ぎ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ぎょ",
+   "glyph_id": "kana:hiragana-ぎょ",
+   "base": "ぎ",
+   "small": "ょ",
+   "base_strokes": 6,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ぎ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "しゃ",
+   "glyph_id": "kana:hiragana-しゃ",
+   "base": "し",
+   "small": "ゃ",
+   "base_strokes": 1,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/し.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "しゅ",
+   "glyph_id": "kana:hiragana-しゅ",
+   "base": "し",
+   "small": "ゅ",
+   "base_strokes": 1,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/し.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "しょ",
+   "glyph_id": "kana:hiragana-しょ",
+   "base": "し",
+   "small": "ょ",
+   "base_strokes": 1,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/し.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "じゃ",
+   "glyph_id": "kana:hiragana-じゃ",
+   "base": "じ",
+   "small": "ゃ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/じ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "じゅ",
+   "glyph_id": "kana:hiragana-じゅ",
+   "base": "じ",
+   "small": "ゅ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/じ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "じょ",
+   "glyph_id": "kana:hiragana-じょ",
+   "base": "じ",
+   "small": "ょ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/じ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ちゃ",
+   "glyph_id": "kana:hiragana-ちゃ",
+   "base": "ち",
+   "small": "ゃ",
+   "base_strokes": 2,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ち.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ちゅ",
+   "glyph_id": "kana:hiragana-ちゅ",
+   "base": "ち",
+   "small": "ゅ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ち.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ちょ",
+   "glyph_id": "kana:hiragana-ちょ",
+   "base": "ち",
+   "small": "ょ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ち.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "にゃ",
+   "glyph_id": "kana:hiragana-にゃ",
+   "base": "に",
+   "small": "ゃ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/に.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "にゅ",
+   "glyph_id": "kana:hiragana-にゅ",
+   "base": "に",
+   "small": "ゅ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/に.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "にょ",
+   "glyph_id": "kana:hiragana-にょ",
+   "base": "に",
+   "small": "ょ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/に.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ひゃ",
+   "glyph_id": "kana:hiragana-ひゃ",
+   "base": "ひ",
+   "small": "ゃ",
+   "base_strokes": 1,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ひ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ひゅ",
+   "glyph_id": "kana:hiragana-ひゅ",
+   "base": "ひ",
+   "small": "ゅ",
+   "base_strokes": 1,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ひ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ひょ",
+   "glyph_id": "kana:hiragana-ひょ",
+   "base": "ひ",
+   "small": "ょ",
+   "base_strokes": 1,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ひ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "びゃ",
+   "glyph_id": "kana:hiragana-びゃ",
+   "base": "び",
+   "small": "ゃ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/び.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "びゅ",
+   "glyph_id": "kana:hiragana-びゅ",
+   "base": "び",
+   "small": "ゅ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/び.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "びょ",
+   "glyph_id": "kana:hiragana-びょ",
+   "base": "び",
+   "small": "ょ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/び.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ぴゃ",
+   "glyph_id": "kana:hiragana-ぴゃ",
+   "base": "ぴ",
+   "small": "ゃ",
+   "base_strokes": 2,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ぴ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ぴゅ",
+   "glyph_id": "kana:hiragana-ぴゅ",
+   "base": "ぴ",
+   "small": "ゅ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ぴ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ぴょ",
+   "glyph_id": "kana:hiragana-ぴょ",
+   "base": "ぴ",
+   "small": "ょ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/ぴ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "みゃ",
+   "glyph_id": "kana:hiragana-みゃ",
+   "base": "み",
+   "small": "ゃ",
+   "base_strokes": 2,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/み.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "みゅ",
+   "glyph_id": "kana:hiragana-みゅ",
+   "base": "み",
+   "small": "ゅ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/み.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "みょ",
+   "glyph_id": "kana:hiragana-みょ",
+   "base": "み",
+   "small": "ょ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/み.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "りゃ",
+   "glyph_id": "kana:hiragana-りゃ",
+   "base": "り",
+   "small": "ゃ",
+   "base_strokes": 2,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/り.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゃ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "りゅ",
+   "glyph_id": "kana:hiragana-りゅ",
+   "base": "り",
+   "small": "ゅ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/り.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ゅ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "りょ",
+   "glyph_id": "kana:hiragana-りょ",
+   "base": "り",
+   "small": "ょ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/hiragana/り.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/hiragana/ょ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "キャ",
+   "glyph_id": "kana:katakana-キャ",
+   "base": "キ",
+   "small": "ャ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/キ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "キュ",
+   "glyph_id": "kana:katakana-キュ",
+   "base": "キ",
+   "small": "ュ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/キ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "キョ",
+   "glyph_id": "kana:katakana-キョ",
+   "base": "キ",
+   "small": "ョ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/キ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ギャ",
+   "glyph_id": "kana:katakana-ギャ",
+   "base": "ギ",
+   "small": "ャ",
+   "base_strokes": 5,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ギ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ギュ",
+   "glyph_id": "kana:katakana-ギュ",
+   "base": "ギ",
+   "small": "ュ",
+   "base_strokes": 5,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ギ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ギョ",
+   "glyph_id": "kana:katakana-ギョ",
+   "base": "ギ",
+   "small": "ョ",
+   "base_strokes": 5,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ギ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "シャ",
+   "glyph_id": "kana:katakana-シャ",
+   "base": "シ",
+   "small": "ャ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/シ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "シュ",
+   "glyph_id": "kana:katakana-シュ",
+   "base": "シ",
+   "small": "ュ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/シ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ショ",
+   "glyph_id": "kana:katakana-ショ",
+   "base": "シ",
+   "small": "ョ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/シ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ジャ",
+   "glyph_id": "kana:katakana-ジャ",
+   "base": "ジ",
+   "small": "ャ",
+   "base_strokes": 5,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ジ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ジュ",
+   "glyph_id": "kana:katakana-ジュ",
+   "base": "ジ",
+   "small": "ュ",
+   "base_strokes": 5,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ジ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ジョ",
+   "glyph_id": "kana:katakana-ジョ",
+   "base": "ジ",
+   "small": "ョ",
+   "base_strokes": 5,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ジ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "チャ",
+   "glyph_id": "kana:katakana-チャ",
+   "base": "チ",
+   "small": "ャ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/チ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "チュ",
+   "glyph_id": "kana:katakana-チュ",
+   "base": "チ",
+   "small": "ュ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/チ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "チョ",
+   "glyph_id": "kana:katakana-チョ",
+   "base": "チ",
+   "small": "ョ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/チ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ニャ",
+   "glyph_id": "kana:katakana-ニャ",
+   "base": "ニ",
+   "small": "ャ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ニ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ニュ",
+   "glyph_id": "kana:katakana-ニュ",
+   "base": "ニ",
+   "small": "ュ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ニ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ニョ",
+   "glyph_id": "kana:katakana-ニョ",
+   "base": "ニ",
+   "small": "ョ",
+   "base_strokes": 2,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ニ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ヒャ",
+   "glyph_id": "kana:katakana-ヒャ",
+   "base": "ヒ",
+   "small": "ャ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ヒ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ヒュ",
+   "glyph_id": "kana:katakana-ヒュ",
+   "base": "ヒ",
+   "small": "ュ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ヒ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ヒョ",
+   "glyph_id": "kana:katakana-ヒョ",
+   "base": "ヒ",
+   "small": "ョ",
+   "base_strokes": 2,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ヒ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ビャ",
+   "glyph_id": "kana:katakana-ビャ",
+   "base": "ビ",
+   "small": "ャ",
+   "base_strokes": 4,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ビ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ビュ",
+   "glyph_id": "kana:katakana-ビュ",
+   "base": "ビ",
+   "small": "ュ",
+   "base_strokes": 4,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ビ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ビョ",
+   "glyph_id": "kana:katakana-ビョ",
+   "base": "ビ",
+   "small": "ョ",
+   "base_strokes": 4,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ビ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ピャ",
+   "glyph_id": "kana:katakana-ピャ",
+   "base": "ピ",
+   "small": "ャ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ピ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ピュ",
+   "glyph_id": "kana:katakana-ピュ",
+   "base": "ピ",
+   "small": "ュ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ピ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ピョ",
+   "glyph_id": "kana:katakana-ピョ",
+   "base": "ピ",
+   "small": "ョ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ピ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ミャ",
+   "glyph_id": "kana:katakana-ミャ",
+   "base": "ミ",
+   "small": "ャ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ミ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ミュ",
+   "glyph_id": "kana:katakana-ミュ",
+   "base": "ミ",
+   "small": "ュ",
+   "base_strokes": 3,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ミ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "ミョ",
+   "glyph_id": "kana:katakana-ミョ",
+   "base": "ミ",
+   "small": "ョ",
+   "base_strokes": 3,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/ミ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "リャ",
+   "glyph_id": "kana:katakana-リャ",
+   "base": "リ",
+   "small": "ャ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/リ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ャ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "リュ",
+   "glyph_id": "kana:katakana-リュ",
+   "base": "リ",
+   "small": "ュ",
+   "base_strokes": 2,
+   "small_strokes": 2,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/リ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ュ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  },
+  {
+   "char": "リョ",
+   "glyph_id": "kana:katakana-リョ",
+   "base": "リ",
+   "small": "ョ",
+   "base_strokes": 2,
+   "small_strokes": 3,
+   "small_offset": [
+    1024,
+    0
+   ],
+   "base_source_file": "research/datasets/strokesvg/dist/katakana/リ.svg",
+   "small_source_file": "research/datasets/strokesvg/dist/katakana/ョ.svg",
+   "base_registry_source": "strokesvg",
+   "small_registry_source": "strokesvg"
+  }
+ ],
+ "row_count": 66,
+ "rows": [
+  {
+   "char": "きゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M142 394l538-121",
+    "M247 541l478-99",
+    "M347 65c225 466 510 585 336 592l-79 3",
+    "M258 603s-23 198 167 266c54 19 156 40 156 40",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M670 230h-4q-11 1-17 8-4 4-13 7l-121 27-57 15q-90 21-175 49a122 122 0 0 1-53 5l-9-1-9 1q-7 1-7 8l8 16q9 11 25 22a58 58 0 0 0 51 7l32-11a2869 2869 0 0 1 163-46l60-14 163-32q31-6 31-20 0-13-12-22-11-10-28-13-15-6-28-6"
+    ],
+    [
+     "M555 460q-69 17-117 23-45 7-81 7h-12l-10-1q-14 1-20 7-4 5-4 11 0 14 22 23 21 11 81 11a464 464 0 0 0 132-18l42-10 59-14q75-20 107-33 31-14 31-24 0-9-14-22-13-14-40-14l-11 1q-11 0-15 6l-14 10-24 7-53 14z"
+    ],
+    [
+     "M515 272l-82-140q-7-5-31-5l-27 2q-15 2-15 12 0 8 7 11t13 8q13 11 21 23l57 104 26 50 35 62 36 61 33 53 65 104q-51 3-74 7-24 3-24 14t25 16l46 12 73 14h10q11-2 20-10 9-9 9-22 0-7-4-15l-8-15a1378 1378 0 0 1-79-119l-33-55-35-60-35-61z"
+    ],
+    [
+     "M584 944l10 1 9 1q14 0 23-6 9-5 9-16l-5-18q-4-15-19-29-13-16-41-16-39-1-88-16-48-17-94-42-45-26-78-54-11-11-17-23-6-13-7-25-2-33-19-33-2 0-12 9-9 9-9 36 0 20 11 51 11 30 45 54 68 47 134 77 67 29 148 49"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of き + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "きゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M142 394l538-121",
+    "M247 541l478-99",
+    "M347 65c225 466 510 585 336 592l-79 3",
+    "M258 603s-23 198 167 266c54 19 156 40 156 40",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M670 230h-4q-11 1-17 8-4 4-13 7l-121 27-57 15q-90 21-175 49a122 122 0 0 1-53 5l-9-1-9 1q-7 1-7 8l8 16q9 11 25 22a58 58 0 0 0 51 7l32-11a2869 2869 0 0 1 163-46l60-14 163-32q31-6 31-20 0-13-12-22-11-10-28-13-15-6-28-6"
+    ],
+    [
+     "M555 460q-69 17-117 23-45 7-81 7h-12l-10-1q-14 1-20 7-4 5-4 11 0 14 22 23 21 11 81 11a464 464 0 0 0 132-18l42-10 59-14q75-20 107-33 31-14 31-24 0-9-14-22-13-14-40-14l-11 1q-11 0-15 6l-14 10-24 7-53 14z"
+    ],
+    [
+     "M515 272l-82-140q-7-5-31-5l-27 2q-15 2-15 12 0 8 7 11t13 8q13 11 21 23l57 104 26 50 35 62 36 61 33 53 65 104q-51 3-74 7-24 3-24 14t25 16l46 12 73 14h10q11-2 20-10 9-9 9-22 0-7-4-15l-8-15a1378 1378 0 0 1-79-119l-33-55-35-60-35-61z"
+    ],
+    [
+     "M584 944l10 1 9 1q14 0 23-6 9-5 9-16l-5-18q-4-15-19-29-13-16-41-16-39-1-88-16-48-17-94-42-45-26-78-54-11-11-17-23-6-13-7-25-2-33-19-33-2 0-12 9-9 9-9 36 0 20 11 51 11 30 45 54 68 47 134 77 67 29 148 49"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of き + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "きょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M142 394l538-121",
+    "M247 541l478-99",
+    "M347 65c225 466 510 585 336 592l-79 3",
+    "M258 603s-23 198 167 266c54 19 156 40 156 40",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M670 230h-4q-11 1-17 8-4 4-13 7l-121 27-57 15q-90 21-175 49a122 122 0 0 1-53 5l-9-1-9 1q-7 1-7 8l8 16q9 11 25 22a58 58 0 0 0 51 7l32-11a2869 2869 0 0 1 163-46l60-14 163-32q31-6 31-20 0-13-12-22-11-10-28-13-15-6-28-6"
+    ],
+    [
+     "M555 460q-69 17-117 23-45 7-81 7h-12l-10-1q-14 1-20 7-4 5-4 11 0 14 22 23 21 11 81 11a464 464 0 0 0 132-18l42-10 59-14q75-20 107-33 31-14 31-24 0-9-14-22-13-14-40-14l-11 1q-11 0-15 6l-14 10-24 7-53 14z"
+    ],
+    [
+     "M515 272l-82-140q-7-5-31-5l-27 2q-15 2-15 12 0 8 7 11t13 8q13 11 21 23l57 104 26 50 35 62 36 61 33 53 65 104q-51 3-74 7-24 3-24 14t25 16l46 12 73 14h10q11-2 20-10 9-9 9-22 0-7-4-15l-8-15a1378 1378 0 0 1-79-119l-33-55-35-60-35-61z"
+    ],
+    [
+     "M584 944l10 1 9 1q14 0 23-6 9-5 9-16l-5-18q-4-15-19-29-13-16-41-16-39-1-88-16-48-17-94-42-45-26-78-54-11-11-17-23-6-13-7-25-2-33-19-33-2 0-12 9-9 9-9 36 0 20 11 51 11 30 45 54 68 47 134 77 67 29 148 49"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of き + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ぎゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M142 394l538-121",
+    "M247 541l478-99",
+    "M347 65c225 466 510 585 336 592l-79 3",
+    "M258 603s-23 198 167 266c54 19 156 40 156 40",
+    "M690 99l127 135",
+    "M771 43l128 132",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M670 230h-4q-11 1-17 8-4 4-13 7l-121 27-57 15q-90 21-175 49a122 122 0 0 1-53 5l-9-1-9 1q-7 1-7 8l8 16q9 11 25 22a58 58 0 0 0 51 7l32-11a2869 2869 0 0 1 163-46l60-14 163-32q31-6 31-20 0-13-12-22-11-10-28-13-15-6-28-6"
+    ],
+    [
+     "M555 460q-69 17-117 23-45 7-81 7h-12l-10-1q-14 1-20 7-4 5-4 11 0 14 22 23 21 11 81 11a464 464 0 0 0 132-18l42-10 59-14q75-20 107-33 31-14 31-24 0-9-14-22-13-14-40-14l-11 1q-11 0-15 6l-14 10-24 7-53 14z"
+    ],
+    [
+     "M515 272l-82-140q-7-5-31-5l-27 2q-15 2-15 12 0 8 7 11t13 8q13 11 21 23l57 104 26 50 35 62 36 61 33 53 65 104q-51 3-74 7-24 3-24 14t25 16l46 12 73 14h10q11-2 20-10 9-9 9-22 0-7-4-15l-8-15a1378 1378 0 0 1-79-119l-33-55-35-60-35-61z"
+    ],
+    [
+     "M584 944l10 1 9 1q14 0 23-6 9-5 9-16l-5-18q-4-15-19-29-13-16-41-16-39-1-88-16-48-17-94-42-45-26-78-54-11-11-17-23-6-13-7-25-2-33-19-33-2 0-12 9-9 9-9 36 0 20 11 51 11 30 45 54 68 47 134 77 67 29 148 49"
+    ],
+    [
+     "M842 284q9 0 19-10 11-10 11-24 0-9-14-26-13-17-33-35-18-18-33-30l-19-17q-5-5-14-5-10 0-20 8-8 9-8 19 0 7 7 13 18 16 42 44 26 28 43 53 6 10 19 10"
+    ],
+    [
+     "M940 217l5-10q3-6 3-13 0-9-14-26t-35-37q-20-19-39-33-18-13-27-13-11 0-18 8-7 7-7 17 0 8 7 14 12 10 30 30l33 36 22 28q8 9 18 9 7 0 13-3z"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ぎ + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ぎゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M142 394l538-121",
+    "M247 541l478-99",
+    "M347 65c225 466 510 585 336 592l-79 3",
+    "M258 603s-23 198 167 266c54 19 156 40 156 40",
+    "M690 99l127 135",
+    "M771 43l128 132",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M670 230h-4q-11 1-17 8-4 4-13 7l-121 27-57 15q-90 21-175 49a122 122 0 0 1-53 5l-9-1-9 1q-7 1-7 8l8 16q9 11 25 22a58 58 0 0 0 51 7l32-11a2869 2869 0 0 1 163-46l60-14 163-32q31-6 31-20 0-13-12-22-11-10-28-13-15-6-28-6"
+    ],
+    [
+     "M555 460q-69 17-117 23-45 7-81 7h-12l-10-1q-14 1-20 7-4 5-4 11 0 14 22 23 21 11 81 11a464 464 0 0 0 132-18l42-10 59-14q75-20 107-33 31-14 31-24 0-9-14-22-13-14-40-14l-11 1q-11 0-15 6l-14 10-24 7-53 14z"
+    ],
+    [
+     "M515 272l-82-140q-7-5-31-5l-27 2q-15 2-15 12 0 8 7 11t13 8q13 11 21 23l57 104 26 50 35 62 36 61 33 53 65 104q-51 3-74 7-24 3-24 14t25 16l46 12 73 14h10q11-2 20-10 9-9 9-22 0-7-4-15l-8-15a1378 1378 0 0 1-79-119l-33-55-35-60-35-61z"
+    ],
+    [
+     "M584 944l10 1 9 1q14 0 23-6 9-5 9-16l-5-18q-4-15-19-29-13-16-41-16-39-1-88-16-48-17-94-42-45-26-78-54-11-11-17-23-6-13-7-25-2-33-19-33-2 0-12 9-9 9-9 36 0 20 11 51 11 30 45 54 68 47 134 77 67 29 148 49"
+    ],
+    [
+     "M842 284q9 0 19-10 11-10 11-24 0-9-14-26-13-17-33-35-18-18-33-30l-19-17q-5-5-14-5-10 0-20 8-8 9-8 19 0 7 7 13 18 16 42 44 26 28 43 53 6 10 19 10"
+    ],
+    [
+     "M940 217l5-10q3-6 3-13 0-9-14-26t-35-37q-20-19-39-33-18-13-27-13-11 0-18 8-7 7-7 17 0 8 7 14 12 10 30 30l33 36 22 28q8 9 18 9 7 0 13-3z"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ぎ + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ぎょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M142 394l538-121",
+    "M247 541l478-99",
+    "M347 65c225 466 510 585 336 592l-79 3",
+    "M258 603s-23 198 167 266c54 19 156 40 156 40",
+    "M690 99l127 135",
+    "M771 43l128 132",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M670 230h-4q-11 1-17 8-4 4-13 7l-121 27-57 15q-90 21-175 49a122 122 0 0 1-53 5l-9-1-9 1q-7 1-7 8l8 16q9 11 25 22a58 58 0 0 0 51 7l32-11a2869 2869 0 0 1 163-46l60-14 163-32q31-6 31-20 0-13-12-22-11-10-28-13-15-6-28-6"
+    ],
+    [
+     "M555 460q-69 17-117 23-45 7-81 7h-12l-10-1q-14 1-20 7-4 5-4 11 0 14 22 23 21 11 81 11a464 464 0 0 0 132-18l42-10 59-14q75-20 107-33 31-14 31-24 0-9-14-22-13-14-40-14l-11 1q-11 0-15 6l-14 10-24 7-53 14z"
+    ],
+    [
+     "M515 272l-82-140q-7-5-31-5l-27 2q-15 2-15 12 0 8 7 11t13 8q13 11 21 23l57 104 26 50 35 62 36 61 33 53 65 104q-51 3-74 7-24 3-24 14t25 16l46 12 73 14h10q11-2 20-10 9-9 9-22 0-7-4-15l-8-15a1378 1378 0 0 1-79-119l-33-55-35-60-35-61z"
+    ],
+    [
+     "M584 944l10 1 9 1q14 0 23-6 9-5 9-16l-5-18q-4-15-19-29-13-16-41-16-39-1-88-16-48-17-94-42-45-26-78-54-11-11-17-23-6-13-7-25-2-33-19-33-2 0-12 9-9 9-9 36 0 20 11 51 11 30 45 54 68 47 134 77 67 29 148 49"
+    ],
+    [
+     "M842 284q9 0 19-10 11-10 11-24 0-9-14-26-13-17-33-35-18-18-33-30l-19-17q-5-5-14-5-10 0-20 8-8 9-8 19 0 7 7 13 18 16 42 44 26 28 43 53 6 10 19 10"
+    ],
+    [
+     "M940 217l5-10q3-6 3-13 0-9-14-26t-35-37q-20-19-39-33-18-13-27-13-11 0-18 8-7 7-7 17 0 8 7 14 12 10 30 30l33 36 22 28q8 9 18 9 7 0 13-3z"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ぎ + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "しゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M223 124c171-13 48 421 90 648 34 189 330 141 517-10",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M500 860h-11q-47 0-81-17-35-18-55-61-18-43-18-119v-5q0-64 7-172l17-260 1-11 1-11q0-21-16-29t-34-9l-19-2q-16 0-20 5l-1 3q0 7 10 18 10 12 10 37v6l-10 164-8 150-4 116q0 52 9 100 9 47 32 84 24 37 67 58 43 22 111 22 65 0 121-18 57-16 102-43 46-26 79-54 32-29 50-51 17-24 17-34 0-9-8-9-12 0-39 22-35 31-87 58-52 26-111 44-58 16-112 18"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of し + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "しゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M223 124c171-13 48 421 90 648 34 189 330 141 517-10",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M500 860h-11q-47 0-81-17-35-18-55-61-18-43-18-119v-5q0-64 7-172l17-260 1-11 1-11q0-21-16-29t-34-9l-19-2q-16 0-20 5l-1 3q0 7 10 18 10 12 10 37v6l-10 164-8 150-4 116q0 52 9 100 9 47 32 84 24 37 67 58 43 22 111 22 65 0 121-18 57-16 102-43 46-26 79-54 32-29 50-51 17-24 17-34 0-9-8-9-12 0-39 22-35 31-87 58-52 26-111 44-58 16-112 18"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of し + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "しょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M223 124c171-13 48 421 90 648 34 189 330 141 517-10",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M500 860h-11q-47 0-81-17-35-18-55-61-18-43-18-119v-5q0-64 7-172l17-260 1-11 1-11q0-21-16-29t-34-9l-19-2q-16 0-20 5l-1 3q0 7 10 18 10 12 10 37v6l-10 164-8 150-4 116q0 52 9 100 9 47 32 84 24 37 67 58 43 22 111 22 65 0 121-18 57-16 102-43 46-26 79-54 32-29 50-51 17-24 17-34 0-9-8-9-12 0-39 22-35 31-87 58-52 26-111 44-58 16-112 18"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of し + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "じゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M223 124c171-13 48 421 90 648 34 189 330 141 517-10",
+    "M534 226l132 155",
+    "M619 169l142 154",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M500 860h-11q-47 0-81-17-35-18-55-61-18-43-18-119v-5q0-64 7-172l17-260 1-11 1-11q0-21-16-29t-34-9l-19-2q-16 0-20 5l-1 3q0 7 10 18 10 12 10 37v6l-10 164-8 150-4 116q0 52 9 100 9 47 32 84 24 37 67 58 43 22 111 22 65 0 121-18 57-16 102-43 46-26 79-54 32-29 50-51 17-24 17-34 0-9-8-9-12 0-39 22-35 31-87 58-52 26-111 44-58 16-112 18"
+    ],
+    [
+     "M719 401q0-12-5-18l-22-26-34-39q-18-21-35-35-17-16-25-16-10 0-20 9t-10 20q0 8 6 14 11 9 29 32 19 22 36 45l27 36q8 12 19 12 8 0 21-7 13-8 13-27"
+    ],
+    [
+     "M813 345q0-9-16-31-17-21-40-45-23-23-43-40-21-17-30-17-12 0-21 9-10 9-10 20 0 8 5 12 10 8 24 25l31 33 28 34q13 14 17 22 8 11 21 11 18 0 26-12 8-14 8-21"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of じ + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "じゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M223 124c171-13 48 421 90 648 34 189 330 141 517-10",
+    "M534 226l132 155",
+    "M619 169l142 154",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M500 860h-11q-47 0-81-17-35-18-55-61-18-43-18-119v-5q0-64 7-172l17-260 1-11 1-11q0-21-16-29t-34-9l-19-2q-16 0-20 5l-1 3q0 7 10 18 10 12 10 37v6l-10 164-8 150-4 116q0 52 9 100 9 47 32 84 24 37 67 58 43 22 111 22 65 0 121-18 57-16 102-43 46-26 79-54 32-29 50-51 17-24 17-34 0-9-8-9-12 0-39 22-35 31-87 58-52 26-111 44-58 16-112 18"
+    ],
+    [
+     "M719 401q0-12-5-18l-22-26-34-39q-18-21-35-35-17-16-25-16-10 0-20 9t-10 20q0 8 6 14 11 9 29 32 19 22 36 45l27 36q8 12 19 12 8 0 21-7 13-8 13-27"
+    ],
+    [
+     "M813 345q0-9-16-31-17-21-40-45-23-23-43-40-21-17-30-17-12 0-21 9-10 9-10 20 0 8 5 12 10 8 24 25l31 33 28 34q13 14 17 22 8 11 21 11 18 0 26-12 8-14 8-21"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of じ + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "じょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M223 124c171-13 48 421 90 648 34 189 330 141 517-10",
+    "M534 226l132 155",
+    "M619 169l142 154",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M500 860h-11q-47 0-81-17-35-18-55-61-18-43-18-119v-5q0-64 7-172l17-260 1-11 1-11q0-21-16-29t-34-9l-19-2q-16 0-20 5l-1 3q0 7 10 18 10 12 10 37v6l-10 164-8 150-4 116q0 52 9 100 9 47 32 84 24 37 67 58 43 22 111 22 65 0 121-18 57-16 102-43 46-26 79-54 32-29 50-51 17-24 17-34 0-9-8-9-12 0-39 22-35 31-87 58-52 26-111 44-58 16-112 18"
+    ],
+    [
+     "M719 401q0-12-5-18l-22-26-34-39q-18-21-35-35-17-16-25-16-10 0-20 9t-10 20q0 8 6 14 11 9 29 32 19 22 36 45l27 36q8 12 19 12 8 0 21-7 13-8 13-27"
+    ],
+    [
+     "M813 345q0-9-16-31-17-21-40-45-23-23-43-40-21-17-30-17-12 0-21 9-10 9-10 20 0 8 5 12 10 8 24 25l31 33 28 34q13 14 17 22 8 11 21 11 18 0 26-12 8-14 8-21"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of じ + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ちゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M101 357l504-14",
+    "M320 69c179 96-18 468-18 642 395-235 501-111 491-3S643 900 469 926",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M657 318zq0-14-21-24-19-10-36-10l-3 1h-3a54 54 0 0 0-22 8q-12 8-58 18-45 11-99 20l-64 10-133 18h-10l-22-4-10-2-8 2-1 4q0 7 9 21 9 13 24 24 14 12 28 12h13l28-5 75-13 63-10 137-26q51-9 74-16 25-7 32-13t7-14"
+    ],
+    [
+     "M415 330a2449 2449 0 0 1 30-174q0-18-15-26-13-9-30-12l-19-3q-10 0-13 5l-1 2v1q0 5 4 9l6 9q3 7 3 16v4l-29 179-7 57-26 207-8 92q0 26 17 34 16 7 23 7 10 0 24-9l58-46q33-26 78-47a320 320 0 0 1 138-32q46 0 79 18 34 17 37 52v6l1 5q0 46-33 84-32 37-83 65-51 27-107 48-57 20-106 34-27 10-27 19v2l1 2q1 6 13 6l38-5q33-4 80-15t98-29q51-19 95-46 45-28 73-66 29-39 29-90l-3-34q-12-54-61-81-48-30-116-29-71 0-143 28t-139 76l7-71 11-95 15-100z"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ち + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ちゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M101 357l504-14",
+    "M320 69c179 96-18 468-18 642 395-235 501-111 491-3S643 900 469 926",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M657 318zq0-14-21-24-19-10-36-10l-3 1h-3a54 54 0 0 0-22 8q-12 8-58 18-45 11-99 20l-64 10-133 18h-10l-22-4-10-2-8 2-1 4q0 7 9 21 9 13 24 24 14 12 28 12h13l28-5 75-13 63-10 137-26q51-9 74-16 25-7 32-13t7-14"
+    ],
+    [
+     "M415 330a2449 2449 0 0 1 30-174q0-18-15-26-13-9-30-12l-19-3q-10 0-13 5l-1 2v1q0 5 4 9l6 9q3 7 3 16v4l-29 179-7 57-26 207-8 92q0 26 17 34 16 7 23 7 10 0 24-9l58-46q33-26 78-47a320 320 0 0 1 138-32q46 0 79 18 34 17 37 52v6l1 5q0 46-33 84-32 37-83 65-51 27-107 48-57 20-106 34-27 10-27 19v2l1 2q1 6 13 6l38-5q33-4 80-15t98-29q51-19 95-46 45-28 73-66 29-39 29-90l-3-34q-12-54-61-81-48-30-116-29-71 0-143 28t-139 76l7-71 11-95 15-100z"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ち + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ちょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M101 357l504-14",
+    "M320 69c179 96-18 468-18 642 395-235 501-111 491-3S643 900 469 926",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M657 318zq0-14-21-24-19-10-36-10l-3 1h-3a54 54 0 0 0-22 8q-12 8-58 18-45 11-99 20l-64 10-133 18h-10l-22-4-10-2-8 2-1 4q0 7 9 21 9 13 24 24 14 12 28 12h13l28-5 75-13 63-10 137-26q51-9 74-16 25-7 32-13t7-14"
+    ],
+    [
+     "M415 330a2449 2449 0 0 1 30-174q0-18-15-26-13-9-30-12l-19-3q-10 0-13 5l-1 2v1q0 5 4 9l6 9q3 7 3 16v4l-29 179-7 57-26 207-8 92q0 26 17 34 16 7 23 7 10 0 24-9l58-46q33-26 78-47a320 320 0 0 1 138-32q46 0 79 18 34 17 37 52v6l1 5q0 46-33 84-32 37-83 65-51 27-107 48-57 20-106 34-27 10-27 19v2l1 2q1 6 13 6l38-5q33-4 80-15t98-29q51-19 95-46 45-28 73-66 29-39 29-90l-3-34q-12-54-61-81-48-30-116-29-71 0-143 28t-139 76l7-71 11-95 15-100z"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ち + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "にゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M195 134c184 89-80 519 26 743l97-202",
+    "M371 366l388-68",
+    "M438 580c22 235 373 238 373 238",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M243 227v6l-12 93-15 120q-7 66-12 134-5 66-5 127 0 71 6 111 6 39 15 56 10 17 21 21 10 3 17 3 9 0 17-4 9-5 13-16l7-28 12-50 14-60 12-51 7-30q4-12 4-23 0-15-8-15-9 0-20 22l-14 27-22 41q-12 21-21 41l-1-20v-22q0-50 4-111l12-126 17-124 16-104 2-12 1-12q0-15-13-22-12-8-28-10l-20-3q-15 0-17 7v2q0 4 4 9 4 4 5 9l1 8z"
+    ],
+    [
+     "M776 255h-3q-12 0-41 4l-63 9q-36 5-73 14-37 8-68 17-30 8-48 17-44 24-44 35 0 7 20 7l18-1 25-4q25-5 65-10l85-9 84-6q39-3 62-3 11 0 16-9 6-8 6-18 0-14-10-28t-31-15"
+    ],
+    [
+     "M804 838h14q29-2 37-5 9-5 12-20v-3l1-3q0-12-9-22t-19-16-16-8h-4l-13 2-13 1h-3q-22-1-63-7-40-6-87-19-47-12-88-30-40-20-60-48-16-19-28-19-9 0-9 13 0 12 7 29 14 38 53 68 40 28 91 48 52 19 105 29 52 10 92 10"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of に + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "にゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M195 134c184 89-80 519 26 743l97-202",
+    "M371 366l388-68",
+    "M438 580c22 235 373 238 373 238",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M243 227v6l-12 93-15 120q-7 66-12 134-5 66-5 127 0 71 6 111 6 39 15 56 10 17 21 21 10 3 17 3 9 0 17-4 9-5 13-16l7-28 12-50 14-60 12-51 7-30q4-12 4-23 0-15-8-15-9 0-20 22l-14 27-22 41q-12 21-21 41l-1-20v-22q0-50 4-111l12-126 17-124 16-104 2-12 1-12q0-15-13-22-12-8-28-10l-20-3q-15 0-17 7v2q0 4 4 9 4 4 5 9l1 8z"
+    ],
+    [
+     "M776 255h-3q-12 0-41 4l-63 9q-36 5-73 14-37 8-68 17-30 8-48 17-44 24-44 35 0 7 20 7l18-1 25-4q25-5 65-10l85-9 84-6q39-3 62-3 11 0 16-9 6-8 6-18 0-14-10-28t-31-15"
+    ],
+    [
+     "M804 838h14q29-2 37-5 9-5 12-20v-3l1-3q0-12-9-22t-19-16-16-8h-4l-13 2-13 1h-3q-22-1-63-7-40-6-87-19-47-12-88-30-40-20-60-48-16-19-28-19-9 0-9 13 0 12 7 29 14 38 53 68 40 28 91 48 52 19 105 29 52 10 92 10"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of に + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "にょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M195 134c184 89-80 519 26 743l97-202",
+    "M371 366l388-68",
+    "M438 580c22 235 373 238 373 238",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M243 227v6l-12 93-15 120q-7 66-12 134-5 66-5 127 0 71 6 111 6 39 15 56 10 17 21 21 10 3 17 3 9 0 17-4 9-5 13-16l7-28 12-50 14-60 12-51 7-30q4-12 4-23 0-15-8-15-9 0-20 22l-14 27-22 41q-12 21-21 41l-1-20v-22q0-50 4-111l12-126 17-124 16-104 2-12 1-12q0-15-13-22-12-8-28-10l-20-3q-15 0-17 7v2q0 4 4 9 4 4 5 9l1 8z"
+    ],
+    [
+     "M776 255h-3q-12 0-41 4l-63 9q-36 5-73 14-37 8-68 17-30 8-48 17-44 24-44 35 0 7 20 7l18-1 25-4q25-5 65-10l85-9 84-6q39-3 62-3 11 0 16-9 6-8 6-18 0-14-10-28t-31-15"
+    ],
+    [
+     "M804 838h14q29-2 37-5 9-5 12-20v-3l1-3q0-12-9-22t-19-16-16-8h-4l-13 2-13 1h-3q-22-1-63-7-40-6-87-19-47-12-88-30-40-20-60-48-16-19-28-19-9 0-9 13 0 12 7 29 14 38 53 68 40 28 91 48 52 19 105 29 52 10 92 10"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of に + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ひゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ひ + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ひゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ひ + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ひょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ひ + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "びゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M731 171l136 121",
+    "M804 114l136 122",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M912 332l4-9q3-6 3-11 0-7-6-15t-24-26l-40-34q-22-19-36-27-5-4-13-4-10 0-19 8-8 8-8 18 0 9 7 15 17 12 42 37 26 23 48 50 6 6 11 8l10 2q7 0 12-4z"
+    ],
+    [
+     "M965 284q19 0 23-13 4-12 4-17 0-14-21-34-22-19-81-65-7-7-17-7t-19 9q-8 8-8 18 0 8 7 14l44 38q27 24 49 48 8 9 19 9"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of び + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "びゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M731 171l136 121",
+    "M804 114l136 122",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M912 332l4-9q3-6 3-11 0-7-6-15t-24-26l-40-34q-22-19-36-27-5-4-13-4-10 0-19 8-8 8-8 18 0 9 7 15 17 12 42 37 26 23 48 50 6 6 11 8l10 2q7 0 12-4z"
+    ],
+    [
+     "M965 284q19 0 23-13 4-12 4-17 0-14-21-34-22-19-81-65-7-7-17-7t-19 9q-8 8-8 18 0 8 7 14l44 38q27 24 49 48 8 9 19 9"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of び + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "びょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M731 171l136 121",
+    "M804 114l136 122",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M912 332l4-9q3-6 3-11 0-7-6-15t-24-26l-40-34q-22-19-36-27-5-4-13-4-10 0-19 8-8 8-8 18 0 9 7 15 17 12 42 37 26 23 48 50 6 6 11 8l10 2q7 0 12-4z"
+    ],
+    [
+     "M965 284q19 0 23-13 4-12 4-17 0-14-21-34-22-19-81-65-7-7-17-7t-19 9q-8 8-8 18 0 8 7 14l44 38q27 24 49 48 8 9 19 9"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of び + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ぴゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M907 103c-140 88-175 192-11 241 84 26 116-127 23-122",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M889 175q-41 0-70 29a96 96 0 0 0-28 70 98 98 0 0 0 98 100q42 0 70-29 30-29 29-71 1-42-29-70a96 96 0 0 0-70-29m0 46q21 0 38 16 16 15 16 37 0 21-16 38a52 52 0 0 1-38 17q-22 0-37-17a56 56 0 0 1-15-38q0-22 15-37 15-16 37-16"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ぴ + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ぴゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M907 103c-140 88-175 192-11 241 84 26 116-127 23-122",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M889 175q-41 0-70 29a96 96 0 0 0-28 70 98 98 0 0 0 98 100q42 0 70-29 30-29 29-71 1-42-29-70a96 96 0 0 0-70-29m0 46q21 0 38 16 16 15 16 37 0 21-16 38a52 52 0 0 1-38 17q-22 0-37-17a56 56 0 0 1-15-38q0-22 15-37 15-16 37-16"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ぴ + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ぴょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M109 286c158-45 229-64 369-123 39 43-454 507-148 706 189 123 334-390 358-612l146 390",
+    "M907 103c-140 88-175 192-11 241 84 26 116-127 23-122",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M720 434q26 125 61 197 36 71 65 71 14 0 23-15 10-15 10-32 0-14-8-23-6-9-13-15-22-19-39-54-16-36-28-79-13-43-21-86l-11-76-6-53q-1-15-12-20-9-6-20-6-26 0-31 12-5 11-5 19v13l1 14q0 8-6 42t-20 83q-12 49-31 105-19 57-44 112-26 55-59 101-32 46-72 73-39 28-85 28-10 0-25-8-15-9-31-28-14-21-25-56-10-37-10-94 0-55 16-114 16-60 46-117t71-107q42-51 92-85 13-11 13-22 0-12-14-25-15-13-29-13-8 0-16 6-8 7-34 17l-61 19-71 19-67 14-3 1h-4l-18-2q-10-3-17-3l-7 2q-3 3-3 8 0 9 8 21 8 10 18 19l14 11q8 3 15 3 11 0 36-6l60-15q32-9 60-20-49 54-88 118t-62 133q-21 69-21 139t18 126q20 57 56 90 36 32 85 32 55 0 101-27 47-29 85-77 39-49 70-111 30-61 53-128t40-131"
+    ],
+    [
+     "M889 175q-41 0-70 29a96 96 0 0 0-28 70 98 98 0 0 0 98 100q42 0 70-29 30-29 29-71 1-42-29-70a96 96 0 0 0-70-29m0 46q21 0 38 16 16 15 16 37 0 21-16 38a52 52 0 0 1-38 17q-22 0-37-17a56 56 0 0 1-15-38q0-22 15-37 15-16 37-16"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ぴ + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "みゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M199 217c122 76 244-52 344-51-55 120-146 412-227 550 0 0-142 215-164 27-15-137 245-212 729-22 M610 1137c-142-26-208 138-301 173 7-131-17-436 7-594 0 0-142 215-164 27-15-137 245-212 729-22",
+    "M656 406c233 114-85 515-85 515",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M524 175q-8 0-13 3l-126 36-85 17-28-3-8 2-1 4q1 7 10 22 11 13 26 25 15 11 25 11 11 0 29-7l140-42-149 321-27 58-39 70q-21 34-46 60a78 78 0 0 1-50 26q-3 0-11-7-7-7-7-22c1-17-55-21-56-3q0 20 7 39 7 20 22 35t41 18h8q14 0 33-7 21-5 46-26 27-21 58-66t64-121l25-55 20-45 80-171a2056 2056 0 0 1 68-135q0-18-20-27-18-9-36-10",
+     "M344 564q-81 8-133 39t-78 71-25 72c-1 32 56 25 56 3v-5l1-5q4-24 25-50 22-26 56-44 33-20 71-23 41-5 70-4 80 2 152 17a1117 1117 0 0 1 193 55c66 22 76 31 164 63q9 4 18 4 13 0 17-8 5-10 5-21-1-11-6-22-4-13-16-21-6-4-14-6l-12-3-39-16q-35-14-92-31l-62-20q-62-17-135-30t-148-16c-21 0-34-1-68 1"
+    ],
+    [
+     ""
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of み + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "みゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M199 217c122 76 244-52 344-51-55 120-146 412-227 550 0 0-142 215-164 27-15-137 245-212 729-22 M610 1137c-142-26-208 138-301 173 7-131-17-436 7-594 0 0-142 215-164 27-15-137 245-212 729-22",
+    "M656 406c233 114-85 515-85 515",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M524 175q-8 0-13 3l-126 36-85 17-28-3-8 2-1 4q1 7 10 22 11 13 26 25 15 11 25 11 11 0 29-7l140-42-149 321-27 58-39 70q-21 34-46 60a78 78 0 0 1-50 26q-3 0-11-7-7-7-7-22c1-17-55-21-56-3q0 20 7 39 7 20 22 35t41 18h8q14 0 33-7 21-5 46-26 27-21 58-66t64-121l25-55 20-45 80-171a2056 2056 0 0 1 68-135q0-18-20-27-18-9-36-10",
+     "M344 564q-81 8-133 39t-78 71-25 72c-1 32 56 25 56 3v-5l1-5q4-24 25-50 22-26 56-44 33-20 71-23 41-5 70-4 80 2 152 17a1117 1117 0 0 1 193 55c66 22 76 31 164 63q9 4 18 4 13 0 17-8 5-10 5-21-1-11-6-22-4-13-16-21-6-4-14-6l-12-3-39-16q-35-14-92-31l-62-20q-62-17-135-30t-148-16c-21 0-34-1-68 1"
+    ],
+    [
+     ""
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of み + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "みょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M199 217c122 76 244-52 344-51-55 120-146 412-227 550 0 0-142 215-164 27-15-137 245-212 729-22 M610 1137c-142-26-208 138-301 173 7-131-17-436 7-594 0 0-142 215-164 27-15-137 245-212 729-22",
+    "M656 406c233 114-85 515-85 515",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M524 175q-8 0-13 3l-126 36-85 17-28-3-8 2-1 4q1 7 10 22 11 13 26 25 15 11 25 11 11 0 29-7l140-42-149 321-27 58-39 70q-21 34-46 60a78 78 0 0 1-50 26q-3 0-11-7-7-7-7-22c1-17-55-21-56-3q0 20 7 39 7 20 22 35t41 18h8q14 0 33-7 21-5 46-26 27-21 58-66t64-121l25-55 20-45 80-171a2056 2056 0 0 1 68-135q0-18-20-27-18-9-36-10",
+     "M344 564q-81 8-133 39t-78 71-25 72c-1 32 56 25 56 3v-5l1-5q4-24 25-50 22-26 56-44 33-20 71-23 41-5 70-4 80 2 152 17a1117 1117 0 0 1 193 55c66 22 76 31 164 63q9 4 18 4 13 0 17-8 5-10 5-21-1-11-6-22-4-13-16-21-6-4-14-6l-12-3-39-16q-35-14-92-31l-62-20q-62-17-135-30t-148-16c-21 0-34-1-68 1"
+    ],
+    [
+     ""
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of み + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "りゃ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M270 105c171 107-26 379 62 530l91-141",
+    "M556 95c243 173 74 795-122 821",
+    "M1153 682s526 -232 616 -143c89 89 -107 183 -194 156",
+    "M1446 307l157 120 -63 53",
+    "M1286 345l246 565"
+   ],
+   "shadows": [
+    [
+     "M330 197v2l-8 71-9 99q-4 53-4 105 0 90 15 138 14 48 45 48 11 0 20-6 10-6 11-16l8-37 11-49 13-47 9-30q6-15 6-24 0-12-8-12-5 0-11 7l-18 26-37 58-1-21v-25q0-58 6-132 7-73 17-144l1-8 1-9q0-17-17-25-16-8-34-11l-19-3q-12 0-14 6v2q0 6 9 16 8 9 8 21"
+    ],
+    [
+     "M597 147v3q0 7 10 15t13 21l8 119q3 55 3 107 0 44-2 87l-5 84q-4 50-25 100-20 49-51 93-30 44-65 79-33 35-65 55-35 22-35 33 0 4 7 4 16 0 48-14 33-14 74-43t80-72 65-99q28-57 34-128 5-48 6-87l2-77q0-56-4-114l-10-136q0-14-10-26-9-13-54-13-21 0-24 9"
+    ],
+    [
+     "M1772 584v5q0 28 -26 49a173 173 0 0 1 -90 34 949 949 0 0 1 -118 -3h-6q-13 0 -13 8 0 11 24 20a410 410 0 0 0 121 23q55 0 91 -21 38 -20 56 -50 20 -30 20 -58v-6l-1 -7q-4 -46 -40 -70 -36 -25 -94 -25 -75 1 -187 43a3291 3291 0 0 0 -262 106l-11 1h-9l-7 -1q-9 0 -12 8v2q0 8 10 17l14 14q16 14 30 14 7 0 13 -3l15 -8 43 -21c121 -53 172 -73 244 -97q65 -21 117 -21 32 0 53 10t25 37"
+    ],
+    [
+     "M1608 488q7 -11 7 -20 0 -8 -17 -25 -15 -17 -37 -35 -23 -19 -42 -31 -21 -13 -30 -13 -13 0 -20 10l-5 11q0 8 16 18 17 12 31 26l26 28q-14 4 -26 4l-22 2c-10 1 -19 14 3 22q14 6 33 9l38 5c17 0 33 6 45 -11"
+    ],
+    [
+     "M1396 493l-20 -60q-5 -18 -13 -23 -7 -6 -26 -6 -41 0 -41 13 0 8 12 16 12 7 16 19l21 61a4720 4720 0 0 0 121 320l32 67q5 9 5 18l7 20q6 12 17 20 10 9 21 9 27 0 27 -25l-3 -18 -7 -15 -6 -10q-16 -29 -36 -75l-42 -101q-45 -114 -85 -230"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of り + ゃ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "りゅ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M270 105c171 107-26 379 62 530l91-141",
+    "M556 95c243 173 74 795-122 821",
+    "M1255 400c53 153 -13 282 47 450 53 -279 368 -479 479 -314 125 186 -229 360 -252 265",
+    "M1560 280c102 280 -11 652 -11 652"
+   ],
+   "shadows": [
+    [
+     "M330 197v2l-8 71-9 99q-4 53-4 105 0 90 15 138 14 48 45 48 11 0 20-6 10-6 11-16l8-37 11-49 13-47 9-30q6-15 6-24 0-12-8-12-5 0-11 7l-18 26-37 58-1-21v-25q0-58 6-132 7-73 17-144l1-8 1-9q0-17-17-25-16-8-34-11l-19-3q-12 0-14 6v2q0 6 9 16 8 9 8 21"
+    ],
+    [
+     "M597 147v3q0 7 10 15t13 21l8 119q3 55 3 107 0 44-2 87l-5 84q-4 50-25 100-20 49-51 93-30 44-65 79-33 35-65 55-35 22-35 33 0 4 7 4 16 0 48-14 33-14 74-43t80-72 65-99q28-57 34-128 5-48 6-87l2-77q0-56-4-114l-10-136q0-14-10-26-9-13-54-13-21 0-24 9"
+    ],
+    [
+     "M1475 520q-49 31 -78 61 -31 32 -59 84l-2 -123v-31q0 -21 -12 -32 -12 -10 -28 -12l-24 -3q-12 0 -12 4 -1 9 6 14 6 6 10 15 4 8 4 17v23a1974 1974 0 0 0 16 267q6 40 12 63 6 20 23 20 12 0 23 -10 11 -11 11 -27 0 -10 -7 -26 -6 -15 -8 -44v-4q0 -20 14 -53 15 -34 43 -71a395 395 0 0 1 272 -150h2q35 0 63 26t28 71v2q-1 45 -25 85 -24 39 -57 69c-72 65 -130 74 -140 47 -6 -16 -17 -56 -34 -59q-7 2 -10 17l-1 30q0 12 5 31 6 19 17 34c17 21 68 36 151 -18a383 383 0 0 0 131 -145q23 -46 23 -97t-23 -82q-22 -32 -59 -47 -36 -16 -80 -16c-38 0 -114 17 -195 70"
+    ],
+    [
+     "M1568 346q-18 0 -19 5v2q1 6 7 13 9 4 14 13 5 5 6 30 5 85 3 171l-1 75v61l-1 32q0 27 -3 48a426 426 0 0 1 -40 142q-5 11 -14 21 -9 12 -9 19 0 6 7 7t22 -10q16 -9 34 -35c9 -12 54 -85 59 -207q3 -48 3 -134c0 -138 -2 -199 -6 -221q-3 -21 -18 -26a177 177 0 0 0 -44 -6"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of り + ゅ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "りょ",
+   "kind": "hiragana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M270 105c171 107-26 379 62 530l91-141",
+    "M556 95c243 173 74 795-122 821",
+    "M1491 557l220 -20",
+    "M1508 283c77 404 85 641 -82 641 -261 0 -63 -277 286 -20M414 805h953c69 -24 192 -13 345 99"
+   ],
+   "shadows": [
+    [
+     "M330 197v2l-8 71-9 99q-4 53-4 105 0 90 15 138 14 48 45 48 11 0 20-6 10-6 11-16l8-37 11-49 13-47 9-30q6-15 6-24 0-12-8-12-5 0-11 7l-18 26-37 58-1-21v-25q0-58 6-132 7-73 17-144l1-8 1-9q0-17-17-25-16-8-34-11l-19-3q-12 0-14 6v2q0 6 9 16 8 9 8 21"
+    ],
+    [
+     "M597 147v3q0 7 10 15t13 21l8 119q3 55 3 107 0 44-2 87l-5 84q-4 50-25 100-20 49-51 93-30 44-65 79-33 35-65 55-35 22-35 33 0 4 7 4 16 0 48-14 33-14 74-43t80-72 65-99q28-57 34-128 5-48 6-87l2-77q0-56-4-114l-10-136q0-14-10-26-9-13-54-13-21 0-24 9"
+    ],
+    [
+     "M1589 577h4a378 378 0 0 0 81 -10l80 -16q19 -5 19 -21 -3 -17 -20 -23 -15 -8 -33 -8 -16 1 -26 7 -10 4 -31 8a768 768 0 0 1 -79 11c-43 3 -33 52 5 52"
+    ],
+    [
+     "M1513 349q-12 0 -16 7v2q0 6 6 12l14 14 3 3 2 4 1 5 1 6 3 121a4576 4576 0 0 1 6 201c2 57 7 126 -54 155q-27 10 -54 12 -27 0 -52 -9 -24 -9 -23 -24c0 -3 1 -18 22 -24q21 -8 43 -8h10c15 1 27 -47 0 -47q-67 0 -102 25 -33 24 -33 52 0 34 32 62 33 27 98 27 58 -1 98 -21c86 -48 74 -139 71 -222l-7 -261 -1 -41q0 -22 -6 -31 -6 -10 -24 -14z",
+     "M1425 779c-21 0 -20 47 0 47l33 3a570 570 0 0 1 263 114q13 7 21 7 13 0 19 -12 7 -11 7 -24 1 -14 -8 -21 -20 -15 -67 -41c-57 -33 -159 -73 -268 -73"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of り + ょ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "キャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M124 422l593-55",
+    "M89 654l749-98",
+    "M401 98l234 812",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M540 415l195-45q23-8 29-14t6-14v-2q-1-11-12-17-10-8-25-11-14-3-23-4l-3 1h-4a834 834 0 0 1-176 47l-64 14-209 41-24 3-15-2q-8-3-12-2l-6 1q-6 0-6 9 0 6 9 18 8 12 21 23 13 10 28 10l31-4a3012 3012 0 0 0 195-39z"
+    ],
+    [
+     "M518 623l64-14a3739 3739 0 0 1 278-46l14-3q19-6 19-22v-6q-3-11-23-22-18-12-32-12-10 0-19 5l-16 5a3257 3257 0 0 0-234 43l-64 13a9930 9930 0 0 0-297 68 77 77 0 0 1-29 1q-7-2-13-2l-7 1q-5 3-5 7 0 8 10 20 11 14 23 25 15 11 27 11 15 0 34-6a8782 8782 0 0 1 270-66"
+    ],
+    [
+     "M518 623l59 271 1 18q0 9 3 17l6 11q6 10 15 18 9 9 21 9l14-8q11-6 11-34l-1-6-3-19-30-139-32-152-13-58-29-136-13-59q-6-36-17-78l-16-79q-5-17-17-26t-46-9q-12 0-21 3t-10 8v2q0 8 7 11 6 4 14 16t11 23l31 143 12 58 30 136z"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of キ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "キュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M124 422l593-55",
+    "M89 654l749-98",
+    "M401 98l234 812",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M540 415l195-45q23-8 29-14t6-14v-2q-1-11-12-17-10-8-25-11-14-3-23-4l-3 1h-4a834 834 0 0 1-176 47l-64 14-209 41-24 3-15-2q-8-3-12-2l-6 1q-6 0-6 9 0 6 9 18 8 12 21 23 13 10 28 10l31-4a3012 3012 0 0 0 195-39z"
+    ],
+    [
+     "M518 623l64-14a3739 3739 0 0 1 278-46l14-3q19-6 19-22v-6q-3-11-23-22-18-12-32-12-10 0-19 5l-16 5a3257 3257 0 0 0-234 43l-64 13a9930 9930 0 0 0-297 68 77 77 0 0 1-29 1q-7-2-13-2l-7 1q-5 3-5 7 0 8 10 20 11 14 23 25 15 11 27 11 15 0 34-6a8782 8782 0 0 1 270-66"
+    ],
+    [
+     "M518 623l59 271 1 18q0 9 3 17l6 11q6 10 15 18 9 9 21 9l14-8q11-6 11-34l-1-6-3-19-30-139-32-152-13-58-29-136-13-59q-6-36-17-78l-16-79q-5-17-17-26t-46-9q-12 0-21 3t-10 8v2q0 8 7 11 6 4 14 16t11 23l31 143 12 58 30 136z"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of キ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "キョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M124 422l593-55",
+    "M89 654l749-98",
+    "M401 98l234 812",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M540 415l195-45q23-8 29-14t6-14v-2q-1-11-12-17-10-8-25-11-14-3-23-4l-3 1h-4a834 834 0 0 1-176 47l-64 14-209 41-24 3-15-2q-8-3-12-2l-6 1q-6 0-6 9 0 6 9 18 8 12 21 23 13 10 28 10l31-4a3012 3012 0 0 0 195-39z"
+    ],
+    [
+     "M518 623l64-14a3739 3739 0 0 1 278-46l14-3q19-6 19-22v-6q-3-11-23-22-18-12-32-12-10 0-19 5l-16 5a3257 3257 0 0 0-234 43l-64 13a9930 9930 0 0 0-297 68 77 77 0 0 1-29 1q-7-2-13-2l-7 1q-5 3-5 7 0 8 10 20 11 14 23 25 15 11 27 11 15 0 34-6a8782 8782 0 0 1 270-66"
+    ],
+    [
+     "M518 623l59 271 1 18q0 9 3 17l6 11q6 10 15 18 9 9 21 9l14-8q11-6 11-34l-1-6-3-19-30-139-32-152-13-58-29-136-13-59q-6-36-17-78l-16-79q-5-17-17-26t-46-9q-12 0-21 3t-10 8v2q0 8 7 11 6 4 14 16t11 23l31 143 12 58 30 136z"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of キ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ギャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M124 422l593-55",
+    "M89 654l749-98",
+    "M401 98l234 812",
+    "M719 171l124 136",
+    "M796 120l128 129",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M540 415l195-45q23-8 29-14t6-14v-2q-1-11-12-17-10-8-25-11-14-3-23-4l-3 1h-4a834 834 0 0 1-176 47l-64 14-209 41-24 3-15-2q-8-3-12-2l-6 1q-6 0-6 9 0 6 9 18 8 12 21 23 13 10 28 10l31-4a3012 3012 0 0 0 195-39z"
+    ],
+    [
+     "M518 623l64-14a3739 3739 0 0 1 278-46l14-3q19-6 19-22v-6q-3-11-23-22-18-12-32-12-10 0-19 5l-16 5a3257 3257 0 0 0-234 43l-64 13a9930 9930 0 0 0-297 68 77 77 0 0 1-29 1q-7-2-13-2l-7 1q-5 3-5 7 0 8 10 20 11 14 23 25 15 11 27 11 15 0 34-6a8782 8782 0 0 1 270-66"
+    ],
+    [
+     "M518 623l59 271 1 18q0 9 3 17l6 11q6 10 15 18 9 9 21 9l14-8q11-6 11-34l-1-6-3-19-30-139-32-152-13-58-29-136-13-59q-6-36-17-78l-16-79q-5-17-17-26t-46-9q-12 0-21 3t-10 8v2q0 8 7 11 6 4 14 16t11 23l31 143 12 58 30 136z"
+    ],
+    [
+     "M899 324q0-9-13-24l-30-33q-17-18-34-33l-23-20q-8-5-14-5-10 0-18 9-7 8-7 19 0 8 6 14 11 9 27 27 16 17 31 36 17 19 25 33 6 9 17 9 18 0 25-11 8-11 8-21"
+    ],
+    [
+     "M946 300q15 0 23-9t8-24q0-8-15-25-15-19-35-37-21-20-39-33-19-13-26-13-10 0-19 9-8 8-8 18 0 8 7 14 23 18 45 43l41 49q7 8 18 8"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ギ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ギュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M124 422l593-55",
+    "M89 654l749-98",
+    "M401 98l234 812",
+    "M719 171l124 136",
+    "M796 120l128 129",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M540 415l195-45q23-8 29-14t6-14v-2q-1-11-12-17-10-8-25-11-14-3-23-4l-3 1h-4a834 834 0 0 1-176 47l-64 14-209 41-24 3-15-2q-8-3-12-2l-6 1q-6 0-6 9 0 6 9 18 8 12 21 23 13 10 28 10l31-4a3012 3012 0 0 0 195-39z"
+    ],
+    [
+     "M518 623l64-14a3739 3739 0 0 1 278-46l14-3q19-6 19-22v-6q-3-11-23-22-18-12-32-12-10 0-19 5l-16 5a3257 3257 0 0 0-234 43l-64 13a9930 9930 0 0 0-297 68 77 77 0 0 1-29 1q-7-2-13-2l-7 1q-5 3-5 7 0 8 10 20 11 14 23 25 15 11 27 11 15 0 34-6a8782 8782 0 0 1 270-66"
+    ],
+    [
+     "M518 623l59 271 1 18q0 9 3 17l6 11q6 10 15 18 9 9 21 9l14-8q11-6 11-34l-1-6-3-19-30-139-32-152-13-58-29-136-13-59q-6-36-17-78l-16-79q-5-17-17-26t-46-9q-12 0-21 3t-10 8v2q0 8 7 11 6 4 14 16t11 23l31 143 12 58 30 136z"
+    ],
+    [
+     "M899 324q0-9-13-24l-30-33q-17-18-34-33l-23-20q-8-5-14-5-10 0-18 9-7 8-7 19 0 8 6 14 11 9 27 27 16 17 31 36 17 19 25 33 6 9 17 9 18 0 25-11 8-11 8-21"
+    ],
+    [
+     "M946 300q15 0 23-9t8-24q0-8-15-25-15-19-35-37-21-20-39-33-19-13-26-13-10 0-19 9-8 8-8 18 0 8 7 14 23 18 45 43l41 49q7 8 18 8"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ギ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ギョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M124 422l593-55",
+    "M89 654l749-98",
+    "M401 98l234 812",
+    "M719 171l124 136",
+    "M796 120l128 129",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M540 415l195-45q23-8 29-14t6-14v-2q-1-11-12-17-10-8-25-11-14-3-23-4l-3 1h-4a834 834 0 0 1-176 47l-64 14-209 41-24 3-15-2q-8-3-12-2l-6 1q-6 0-6 9 0 6 9 18 8 12 21 23 13 10 28 10l31-4a3012 3012 0 0 0 195-39z"
+    ],
+    [
+     "M518 623l64-14a3739 3739 0 0 1 278-46l14-3q19-6 19-22v-6q-3-11-23-22-18-12-32-12-10 0-19 5l-16 5a3257 3257 0 0 0-234 43l-64 13a9930 9930 0 0 0-297 68 77 77 0 0 1-29 1q-7-2-13-2l-7 1q-5 3-5 7 0 8 10 20 11 14 23 25 15 11 27 11 15 0 34-6a8782 8782 0 0 1 270-66"
+    ],
+    [
+     "M518 623l59 271 1 18q0 9 3 17l6 11q6 10 15 18 9 9 21 9l14-8q11-6 11-34l-1-6-3-19-30-139-32-152-13-58-29-136-13-59q-6-36-17-78l-16-79q-5-17-17-26t-46-9q-12 0-21 3t-10 8v2q0 8 7 11 6 4 14 16t11 23l31 143 12 58 30 136z"
+    ],
+    [
+     "M899 324q0-9-13-24l-30-33q-17-18-34-33l-23-20q-8-5-14-5-10 0-18 9-7 8-7 19 0 8 6 14 11 9 27 27 16 17 31 36 17 19 25 33 6 9 17 9 18 0 25-11 8-11 8-21"
+    ],
+    [
+     "M946 300q15 0 23-9t8-24q0-8-15-25-15-19-35-37-21-20-39-33-19-13-26-13-10 0-19 9-8 8-8 18 0 8 7 14 23 18 45 43l41 49q7 8 18 8"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ギ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "シャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M196 218l254 114",
+    "M94 420l263 96",
+    "M151 810c251 145 772-398 772-398",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M476 378q16 0 25-17 10-16 10-27 0-16-15-26-16-11-47-25-32-15-68-27l-63-22q-26-9-34-9-13 0-20 8-6 8-9 16l-3 10q0 16 21 24 26 8 61 23 36 15 69 32 34 16 55 33 10 7 18 7"
+    ],
+    [
+     "M399 490q-20-11-55-23l-71-23q-35-11-61-17l-29-7q-9 0-20 12-10 12-10 25 0 9 7 14l18 7q56 17 102 36 46 18 87 40 12 5 18 5 14 0 22-9 7-10 9-21l2-10q0-16-19-29"
+    ],
+    [
+     "M255 867l13 11q7 3 15 3t15-2 18-7q110-44 204-103 95-59 171-124 77-64 131-123 55-58 83-100 30-43 30-57 0-11-8-11-15 0-40 30-18 20-61 62-42 41-102 93-60 51-132 102-71 51-147 93-75 42-149 65-16 6-39 6h-7l-6-1-7-1h-7q-12 0-12 7 0 5 11 25 13 19 26 32"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of シ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "シュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M196 218l254 114",
+    "M94 420l263 96",
+    "M151 810c251 145 772-398 772-398",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M476 378q16 0 25-17 10-16 10-27 0-16-15-26-16-11-47-25-32-15-68-27l-63-22q-26-9-34-9-13 0-20 8-6 8-9 16l-3 10q0 16 21 24 26 8 61 23 36 15 69 32 34 16 55 33 10 7 18 7"
+    ],
+    [
+     "M399 490q-20-11-55-23l-71-23q-35-11-61-17l-29-7q-9 0-20 12-10 12-10 25 0 9 7 14l18 7q56 17 102 36 46 18 87 40 12 5 18 5 14 0 22-9 7-10 9-21l2-10q0-16-19-29"
+    ],
+    [
+     "M255 867l13 11q7 3 15 3t15-2 18-7q110-44 204-103 95-59 171-124 77-64 131-123 55-58 83-100 30-43 30-57 0-11-8-11-15 0-40 30-18 20-61 62-42 41-102 93-60 51-132 102-71 51-147 93-75 42-149 65-16 6-39 6h-7l-6-1-7-1h-7q-12 0-12 7 0 5 11 25 13 19 26 32"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of シ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ショ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M196 218l254 114",
+    "M94 420l263 96",
+    "M151 810c251 145 772-398 772-398",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M476 378q16 0 25-17 10-16 10-27 0-16-15-26-16-11-47-25-32-15-68-27l-63-22q-26-9-34-9-13 0-20 8-6 8-9 16l-3 10q0 16 21 24 26 8 61 23 36 15 69 32 34 16 55 33 10 7 18 7"
+    ],
+    [
+     "M399 490q-20-11-55-23l-71-23q-35-11-61-17l-29-7q-9 0-20 12-10 12-10 25 0 9 7 14l18 7q56 17 102 36 46 18 87 40 12 5 18 5 14 0 22-9 7-10 9-21l2-10q0-16-19-29"
+    ],
+    [
+     "M255 867l13 11q7 3 15 3t15-2 18-7q110-44 204-103 95-59 171-124 77-64 131-123 55-58 83-100 30-43 30-57 0-11-8-11-15 0-40 30-18 20-61 62-42 41-102 93-60 51-132 102-71 51-147 93-75 42-149 65-16 6-39 6h-7l-6-1-7-1h-7q-12 0-12 7 0 5 11 25 13 19 26 32"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of シ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ジャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M196 218l254 114",
+    "M94 420l263 96",
+    "M151 810c251 145 772-398 772-398",
+    "M721 131l127 135",
+    "M797 82l127 128",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M476 378q16 0 25-17 10-16 10-27 0-16-15-26-16-11-47-25-32-15-68-27l-63-22q-26-9-34-9-13 0-20 8-6 8-9 16l-3 10q0 16 21 24 26 8 61 23 36 15 69 32 34 16 55 33 10 7 18 7"
+    ],
+    [
+     "M399 490q-20-11-55-23l-71-23q-35-11-61-17l-29-7q-9 0-20 12-10 12-10 25 0 9 7 14l18 7q56 17 102 36 46 18 87 40 12 5 18 5 14 0 22-9 7-10 9-21l2-10q0-16-19-29"
+    ],
+    [
+     "M255 867l13 11q7 3 15 3t15-2 18-7q110-44 204-103 95-59 171-124 77-64 131-123 55-58 83-100 30-43 30-57 0-11-8-11-15 0-40 30-18 20-61 62-42 41-102 93-60 51-132 102-71 51-147 93-75 42-149 65-16 6-39 6h-7l-6-1-7-1h-7q-12 0-12 7 0 5 11 25 13 19 26 32"
+    ],
+    [
+     "M902 284q0-6-2-10-5-9-20-25-15-18-33-36t-34-31-25-13q-10 0-18 8-7 8-7 19 0 8 6 14l27 28q16 16 31 34 17 18 25 33 6 11 17 11 19 0 26-11 7-12 7-21"
+    ],
+    [
+     "M978 230q0-9-15-26-16-19-37-38-21-20-39-33t-24-13q-10 0-18 8t-8 17 7 16q15 12 32 30l30 35 22 27q7 8 18 8t22-8 10-23"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ジ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ジュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M196 218l254 114",
+    "M94 420l263 96",
+    "M151 810c251 145 772-398 772-398",
+    "M721 131l127 135",
+    "M797 82l127 128",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M476 378q16 0 25-17 10-16 10-27 0-16-15-26-16-11-47-25-32-15-68-27l-63-22q-26-9-34-9-13 0-20 8-6 8-9 16l-3 10q0 16 21 24 26 8 61 23 36 15 69 32 34 16 55 33 10 7 18 7"
+    ],
+    [
+     "M399 490q-20-11-55-23l-71-23q-35-11-61-17l-29-7q-9 0-20 12-10 12-10 25 0 9 7 14l18 7q56 17 102 36 46 18 87 40 12 5 18 5 14 0 22-9 7-10 9-21l2-10q0-16-19-29"
+    ],
+    [
+     "M255 867l13 11q7 3 15 3t15-2 18-7q110-44 204-103 95-59 171-124 77-64 131-123 55-58 83-100 30-43 30-57 0-11-8-11-15 0-40 30-18 20-61 62-42 41-102 93-60 51-132 102-71 51-147 93-75 42-149 65-16 6-39 6h-7l-6-1-7-1h-7q-12 0-12 7 0 5 11 25 13 19 26 32"
+    ],
+    [
+     "M902 284q0-6-2-10-5-9-20-25-15-18-33-36t-34-31-25-13q-10 0-18 8-7 8-7 19 0 8 6 14l27 28q16 16 31 34 17 18 25 33 6 11 17 11 19 0 26-11 7-12 7-21"
+    ],
+    [
+     "M978 230q0-9-15-26-16-19-37-38-21-20-39-33t-24-13q-10 0-18 8t-8 17 7 16q15 12 32 30l30 35 22 27q7 8 18 8t22-8 10-23"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ジ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ジョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M196 218l254 114",
+    "M94 420l263 96",
+    "M151 810c251 145 772-398 772-398",
+    "M721 131l127 135",
+    "M797 82l127 128",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M476 378q16 0 25-17 10-16 10-27 0-16-15-26-16-11-47-25-32-15-68-27l-63-22q-26-9-34-9-13 0-20 8-6 8-9 16l-3 10q0 16 21 24 26 8 61 23 36 15 69 32 34 16 55 33 10 7 18 7"
+    ],
+    [
+     "M399 490q-20-11-55-23l-71-23q-35-11-61-17l-29-7q-9 0-20 12-10 12-10 25 0 9 7 14l18 7q56 17 102 36 46 18 87 40 12 5 18 5 14 0 22-9 7-10 9-21l2-10q0-16-19-29"
+    ],
+    [
+     "M255 867l13 11q7 3 15 3t15-2 18-7q110-44 204-103 95-59 171-124 77-64 131-123 55-58 83-100 30-43 30-57 0-11-8-11-15 0-40 30-18 20-61 62-42 41-102 93-60 51-132 102-71 51-147 93-75 42-149 65-16 6-39 6h-7l-6-1-7-1h-7q-12 0-12 7 0 5 11 25 13 19 26 32"
+    ],
+    [
+     "M902 284q0-6-2-10-5-9-20-25-15-18-33-36t-34-31-25-13q-10 0-18 8-7 8-7 19 0 8 6 14l27 28q16 16 31 34 17 18 25 33 6 11 17 11 19 0 26-11 7-12 7-21"
+    ],
+    [
+     "M978 230q0-9-15-26-16-19-37-38-21-20-39-33t-24-13q-10 0-18 8t-8 17 7 16q15 12 32 30l30 35 22 27q7 8 18 8t22-8 10-23"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ジ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "チャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M684 89c75 206-388 263-388 263",
+    "M59 505l802-7",
+    "M528 215c84 379-21 588-229 720",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M581 290l81-31 43-21q13-10 16-15l3-8q0-10-11-25t-26-27q-15-12-28-12l-5 1q-3 0-4 11v5q1 7-2 12-1 6-9 9-37 24-90 48a1897 1897 0 0 1-278 97q-34 8-34 22 0 10 21 10 12 0 39-5a1883 1883 0 0 0 142-30l75-20z"
+    ],
+    [
+     "M916 481v-5q0-14-20-25-20-13-32-14h-4q-8 0-16 4-8 3-17 3a2280 2280 0 0 0-234 15l-71 7a11404 11404 0 0 0-338 36h-15l-16-3q-10-4-17-4h-3q-8 0-8 10 0 5 6 19 7 15 20 28 12 12 29 12l11-1 14-2 137-17q82-10 175-19l72-6a5767 5767 0 0 1 295-14q33 0 32-24"
+    ],
+    [
+     "M594 414l-3-86q-1-30-10-38c-32-25-94 0-67 21q3 3 4 10l2 15a1298 1298 0 0 1-3 189q-16 147-81 240-63 93-168 159-24 16-24 23 0 2 2 5 5 6 12 5l14-3q9-2 17-6 140-67 212-172 73-105 88-257 6-52 5-105"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of チ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "チュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M684 89c75 206-388 263-388 263",
+    "M59 505l802-7",
+    "M528 215c84 379-21 588-229 720",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M581 290l81-31 43-21q13-10 16-15l3-8q0-10-11-25t-26-27q-15-12-28-12l-5 1q-3 0-4 11v5q1 7-2 12-1 6-9 9-37 24-90 48a1897 1897 0 0 1-278 97q-34 8-34 22 0 10 21 10 12 0 39-5a1883 1883 0 0 0 142-30l75-20z"
+    ],
+    [
+     "M916 481v-5q0-14-20-25-20-13-32-14h-4q-8 0-16 4-8 3-17 3a2280 2280 0 0 0-234 15l-71 7a11404 11404 0 0 0-338 36h-15l-16-3q-10-4-17-4h-3q-8 0-8 10 0 5 6 19 7 15 20 28 12 12 29 12l11-1 14-2 137-17q82-10 175-19l72-6a5767 5767 0 0 1 295-14q33 0 32-24"
+    ],
+    [
+     "M594 414l-3-86q-1-30-10-38c-32-25-94 0-67 21q3 3 4 10l2 15a1298 1298 0 0 1-3 189q-16 147-81 240-63 93-168 159-24 16-24 23 0 2 2 5 5 6 12 5l14-3q9-2 17-6 140-67 212-172 73-105 88-257 6-52 5-105"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of チ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "チョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M684 89c75 206-388 263-388 263",
+    "M59 505l802-7",
+    "M528 215c84 379-21 588-229 720",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M581 290l81-31 43-21q13-10 16-15l3-8q0-10-11-25t-26-27q-15-12-28-12l-5 1q-3 0-4 11v5q1 7-2 12-1 6-9 9-37 24-90 48a1897 1897 0 0 1-278 97q-34 8-34 22 0 10 21 10 12 0 39-5a1883 1883 0 0 0 142-30l75-20z"
+    ],
+    [
+     "M916 481v-5q0-14-20-25-20-13-32-14h-4q-8 0-16 4-8 3-17 3a2280 2280 0 0 0-234 15l-71 7a11404 11404 0 0 0-338 36h-15l-16-3q-10-4-17-4h-3q-8 0-8 10 0 5 6 19 7 15 20 28 12 12 29 12l11-1 14-2 137-17q82-10 175-19l72-6a5767 5767 0 0 1 295-14q33 0 32-24"
+    ],
+    [
+     "M594 414l-3-86q-1-30-10-38c-32-25-94 0-67 21q3 3 4 10l2 15a1298 1298 0 0 1-3 189q-16 147-81 240-63 93-168 159-24 16-24 23 0 2 2 5 5 6 12 5l14-3q9-2 17-6 140-67 212-172 73-105 88-257 6-52 5-105"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of チ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ニャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M186 377l508 1",
+    "M61 715l773-1",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M752 365v-3q-1-17-24-29-21-14-41-14-6 0-12 4-5 3-18 6l-52 10-80 11-85 10-72 9-38 4h-14q-21 0-33-3t-19-3l-7 2q-4 4-4 8 0 11 11 26t20 23q6 7 13 9l14 2h7l8-1 120-12 138-16 123-19q23-4 33-9 12-5 12-15"
+    ],
+    [
+     "M892 702v-3q-1-10-19-25-17-17-37-19h-3q-10 0-18 3-8 4-16 4-156 1-313 16l-296 30h-8q-13 0-24-2-11-4-19-4-6 0-9 4-3 3-3 9 0 3 7 18 8 15 22 28 13 13 31 13h12l14-2q76-11 179-20 104-11 222-17 120-6 242-6 36 0 36-27"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ニ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ニュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M186 377l508 1",
+    "M61 715l773-1",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M752 365v-3q-1-17-24-29-21-14-41-14-6 0-12 4-5 3-18 6l-52 10-80 11-85 10-72 9-38 4h-14q-21 0-33-3t-19-3l-7 2q-4 4-4 8 0 11 11 26t20 23q6 7 13 9l14 2h7l8-1 120-12 138-16 123-19q23-4 33-9 12-5 12-15"
+    ],
+    [
+     "M892 702v-3q-1-10-19-25-17-17-37-19h-3q-10 0-18 3-8 4-16 4-156 1-313 16l-296 30h-8q-13 0-24-2-11-4-19-4-6 0-9 4-3 3-3 9 0 3 7 18 8 15 22 28 13 13 31 13h12l14-2q76-11 179-20 104-11 222-17 120-6 242-6 36 0 36-27"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ニ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ニョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M186 377l508 1",
+    "M61 715l773-1",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M752 365v-3q-1-17-24-29-21-14-41-14-6 0-12 4-5 3-18 6l-52 10-80 11-85 10-72 9-38 4h-14q-21 0-33-3t-19-3l-7 2q-4 4-4 8 0 11 11 26t20 23q6 7 13 9l14 2h7l8-1 120-12 138-16 123-19q23-4 33-9 12-5 12-15"
+    ],
+    [
+     "M892 702v-3q-1-10-19-25-17-17-37-19h-3q-10 0-18 3-8 4-16 4-156 1-313 16l-296 30h-8q-13 0-24-2-11-4-19-4-6 0-9 4-3 3-3 9 0 3 7 18 8 15 22 28 13 13 31 13h12l14-2q76-11 179-20 104-11 222-17 120-6 242-6 36 0 36-27"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ニ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ヒャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ヒ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ヒュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ヒ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ヒョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ヒ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ビャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M689 205l126 132",
+    "M764 154l126 128",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M868 358q0-6-3-10-2-5-16-21-13-17-33-36-18-20-36-34-17-14-26-14-11 0-19 9-7 8-7 17t5 13q21 17 46 47 26 29 39 51 7 10 17 10 11 0 22-9t11-23"
+    ],
+    [
+     "M913 336q9 0 20-8 11-9 11-25 0-4-5-13-4-9-26-31-20-21-70-60-5-5-15-5t-19 8q-8 7-8 16 0 7 6 13 23 20 49 49 27 27 38 45 8 11 19 11"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ビ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ビュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M689 205l126 132",
+    "M764 154l126 128",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M868 358q0-6-3-10-2-5-16-21-13-17-33-36-18-20-36-34-17-14-26-14-11 0-19 9-7 8-7 17t5 13q21 17 46 47 26 29 39 51 7 10 17 10 11 0 22-9t11-23"
+    ],
+    [
+     "M913 336q9 0 20-8 11-9 11-25 0-4-5-13-4-9-26-31-20-21-70-60-5-5-15-5t-19 8q-8 7-8 16 0 7 6 13 23 20 49 49 27 27 38 45 8 11 19 11"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ビ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ビョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M689 205l126 132",
+    "M764 154l126 128",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M868 358q0-6-3-10-2-5-16-21-13-17-33-36-18-20-36-34-17-14-26-14-11 0-19 9-7 8-7 17t5 13q21 17 46 47 26 29 39 51 7 10 17 10 11 0 22-9t11-23"
+    ],
+    [
+     "M913 336q9 0 20-8 11-9 11-25 0-4-5-13-4-9-26-31-20-21-70-60-5-5-15-5t-19 8q-8 7-8 16 0 7 6 13 23 20 49 49 27 27 38 45 8 11 19 11"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ビ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ピャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M777 109s-160 312 47 233c151-56 20-143 20-143",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M827 168q-40-1-69 29a96 96 0 0 0-29 70 98 98 0 0 0 98 100q42 0 71-29 29-30 29-71 0-42-29-70a96 96 0 0 0-71-29m0 46q22 0 38 15 17 16 17 38 0 21-17 38a52 52 0 0 1-38 17q-21 0-36-17a56 56 0 0 1-16-38q0-22 16-38 15-15 36-15"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ピ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ピュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M777 109s-160 312 47 233c151-56 20-143 20-143",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M827 168q-40-1-69 29a96 96 0 0 0-29 70 98 98 0 0 0 98 100q42 0 71-29 29-30 29-71 0-42-29-70a96 96 0 0 0-71-29m0 46q22 0 38 15 17 16 17 38 0 21-17 38a52 52 0 0 1-38 17q-21 0-36-17a56 56 0 0 1-16-38q0-22 16-38 15-15 36-15"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ピ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ピョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M238 584l463-197",
+    "M271 147C394 825 85 860 756 862",
+    "M777 109s-160 312 47 233c151-56 20-143 20-143",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M702 327h-3q-6 1-7 10l-3 17q-1 9-12 15a1837 1837 0 0 1-233 112q-60 26-110 44c-67 24-22 54-1 48q39-10 94-27a3615 3615 0 0 0 220-80q52-22 88-42 27-15 27-30 0-8-11-23-10-17-25-30-14-14-24-14"
+    ],
+    [
+     "M337 408l5-145v-11q0-10-4-19-4-8-20-12l-48-9q-11 0-14 5l-1 4q0 6 5 13l9 14q3 4 3 12l1 15-3 113-5 279q0 71 15 116 13 45 46 69 31 24 87 33 55 8 135 8a1924 1924 0 0 0 239-16l18-7q10-3 10-17 0-12-10-24-9-11-23-19-13-8-24-8l-14 2-11 2a1091 1091 0 0 1-213 18q-69 0-108-9-38-10-56-31-16-20-20-53t-4-81v-37z"
+    ],
+    [
+     "M827 168q-40-1-69 29a96 96 0 0 0-29 70 98 98 0 0 0 98 100q42 0 71-29 29-30 29-71 0-42-29-70a96 96 0 0 0-71-29m0 46q22 0 38 15 17 16 17 38 0 21-17 38a52 52 0 0 1-38 17q-21 0-36-17a56 56 0 0 1-16-38q0-22 16-38 15-15 36-15"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ピ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ミャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M254 227l409 111",
+    "M258 438l356 111",
+    "M210 653l494 205",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M340 278a2313 2313 0 0 1 233 57q60 17 109 40 7 3 13 3 9 0 19-7 10-9 10-34 0-18-16-27-62-30-158-51t-200-38q-15-4-26 8-6 9-8 18l-1 12q0 10 7 13z"
+    ],
+    [
+     "M645 590q15 0 21-8 6-10 7-20l2-12q0-17-16-26-30-17-74-30-44-15-89-26a1613 1613 0 0 0-150-33c-6 0-27 3-27 36q1 11 7 14 6 4 17 7a1692 1692 0 0 1 288 95z"
+    ],
+    [
+     "M269 682l-2 7v6q0 17 21 23 40 12 96 33 56 20 118 46 62 24 119 52 57 27 99 52 6 3 11 3 11 0 22-10t11-34q0-9-3-17-3-9-11-14-45-27-104-52-58-25-119-47-60-22-112-38l-84-25-35-10q-17 0-27 25"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ミ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ミュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M254 227l409 111",
+    "M258 438l356 111",
+    "M210 653l494 205",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M340 278a2313 2313 0 0 1 233 57q60 17 109 40 7 3 13 3 9 0 19-7 10-9 10-34 0-18-16-27-62-30-158-51t-200-38q-15-4-26 8-6 9-8 18l-1 12q0 10 7 13z"
+    ],
+    [
+     "M645 590q15 0 21-8 6-10 7-20l2-12q0-17-16-26-30-17-74-30-44-15-89-26a1613 1613 0 0 0-150-33c-6 0-27 3-27 36q1 11 7 14 6 4 17 7a1692 1692 0 0 1 288 95z"
+    ],
+    [
+     "M269 682l-2 7v6q0 17 21 23 40 12 96 33 56 20 118 46 62 24 119 52 57 27 99 52 6 3 11 3 11 0 22-10t11-34q0-9-3-17-3-9-11-14-45-27-104-52-58-25-119-47-60-22-112-38l-84-25-35-10q-17 0-27 25"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ミ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "ミョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M254 227l409 111",
+    "M258 438l356 111",
+    "M210 653l494 205",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M340 278a2313 2313 0 0 1 233 57q60 17 109 40 7 3 13 3 9 0 19-7 10-9 10-34 0-18-16-27-62-30-158-51t-200-38q-15-4-26 8-6 9-8 18l-1 12q0 10 7 13z"
+    ],
+    [
+     "M645 590q15 0 21-8 6-10 7-20l2-12q0-17-16-26-30-17-74-30-44-15-89-26a1613 1613 0 0 0-150-33c-6 0-27 3-27 36q1 11 7 14 6 4 17 7a1692 1692 0 0 1 288 95z"
+    ],
+    [
+     "M269 682l-2 7v6q0 17 21 23 40 12 96 33 56 20 118 46 62 24 119 52 57 27 99 52 6 3 11 3 11 0 22-10t11-34q0-9-3-17-3-9-11-14-45-27-104-52-58-25-119-47-60-22-112-38l-84-25-35-10q-17 0-27 25"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of ミ + ョ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "リャ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M342 120l28 459",
+    "M618 92c188 633-226 857-226 857",
+    "M1176 619c343 -44 481 -184 620 -172L1640 646",
+    "M1368 302l30 95 163 510"
+   ],
+   "shadows": [
+    [
+     "M373 641h5q13-2 20-17 8-16 8-32V471l1-92 1-82v-63q0-11-4-22-3-11-16-18-13-9-45-9-22 0-26 9v2q0 8 11 20 11 11 11 31v27l-1 57v71l-1 72v85l-2 13-1 14v4l5 18q4 13 12 23 9 10 22 10"
+    ],
+    [
+     "M703 408v-32l-1-80q0-42-2-82v-8q0-16-5-25-4-9-24-16-22-7-43-7l-14 2q-6 1-7 5v2q0 8 9 19 11 12 12 36 2 35 2 72l1 70q0 123-17 211-16 88-49 151-31 62-81 113-48 49-112 97-35 28-35 39 0 5 8 5 14 0 43-15 83-43 142-94 60-51 97-115 38-65 56-150 18-86 20-198"
+    ],
+    [
+     "M1703 525a1194 1194 0 0 1 -85 137q-15 18 -15 29 0 9 9 8 11 1 32 -17 20 -17 44 -44a1647 1647 0 0 0 120 -151l-3 -11q-3 -7 -16 -16 -12 -9 -27 -9l-7 1 -62 19 -96 28 -235 68 -89 22 -8 -1 -11 -1q-9 0 -12 4l-2 4 8 15q9 12 23 23t29 11l13 -2 38 -10q175 -55 352 -107"
+    ],
+    [
+     "M1527 901l1 13q0 11 2 15l8 11q6 9 15 17 10 10 21 10l12 -3q6 -4 8 -13 3 -8 3 -17l-2 -18 -10 -35q-8 -32 -22 -80L1446 380q-7 -11 -26 -11l-26 -1q-19 -1 -25 5 -4 4 -4 7 0 7 8 13 9 6 17 14l5 11 4 13z"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of リ + ャ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "リュ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M342 120l28 459",
+    "M618 92c188 633-226 857-226 857",
+    "M1259 556l406 -57 -35 273",
+    "M1169 851l604 -17"
+   ],
+   "shadows": [
+    [
+     "M373 641h5q13-2 20-17 8-16 8-32V471l1-92 1-82v-63q0-11-4-22-3-11-16-18-13-9-45-9-22 0-26 9v2q0 8 11 20 11 11 11 31v27l-1 57v71l-1 72v85l-2 13-1 14v4l5 18q4 13 12 23 9 10 22 10"
+    ],
+    [
+     "M703 408v-32l-1-80q0-42-2-82v-8q0-16-5-25-4-9-24-16-22-7-43-7l-14 2q-6 1-7 5v2q0 8 9 19 11 12 12 36 2 35 2 72l1 70q0 123-17 211-16 88-49 151-31 62-81 113-48 49-112 97-35 28-35 39 0 5 8 5 14 0 43-15 83-43 142-94 60-51 97-115 38-65 56-150 18-86 20-198"
+    ],
+    [
+     "M1660 804l35 -232 3 -11 3 -14q0 -18 -17 -28 -16 -10 -30 -10h-3l-178 20 -84 10 -26 -2c-17 -4 -18 -7 -28 -7q-11 1 -12 11 0 6 7 20 9 13 20 25 12 10 25 10 67 -5 133 -13l122 -15 -12 83 -21 157c-5 39 58 30 63 -4"
+    ],
+    [
+     "M1835 837v-2q-1 -13 -18 -26a56 56 0 0 0 -36 -14q-6 0 -12 2l-10 3a4760 4760 0 0 0 -376 24l-86 9h-19l-7 -2 -13 -3q-6 -3 -13 -3 -8 0 -9 4l-1 6q0 6 6 20 7 13 20 25 12 10 29 10h8a6328 6328 0 0 1 496 -34q21 0 31 -3 10 -4 10 -16"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of リ + ュ)",
+   "license": "OFL-1.1+MIT"
+  },
+  {
+   "char": "リョ",
+   "kind": "katakana",
+   "viewbox": "0 0 2048 1024",
+   "strokes": [
+    "M342 120l28 459",
+    "M618 92c188 633-226 857-226 857",
+    "M1260 519l459 -52 -45 328",
+    "M1268 685l371 -20",
+    "M1223 874l446 -14"
+   ],
+   "shadows": [
+    [
+     "M373 641h5q13-2 20-17 8-16 8-32V471l1-92 1-82v-63q0-11-4-22-3-11-16-18-13-9-45-9-22 0-26 9v2q0 8 11 20 11 11 11 31v27l-1 57v71l-1 72v85l-2 13-1 14v4l5 18q4 13 12 23 9 10 22 10"
+    ],
+    [
+     "M703 408v-32l-1-80q0-42-2-82v-8q0-16-5-25-4-9-24-16-22-7-43-7l-14 2q-6 1-7 5v2q0 8 9 19 11 12 12 36 2 35 2 72l1 70q0 123-17 211-16 88-49 151-31 62-81 113-48 49-112 97-35 28-35 39 0 5 8 5 14 0 43-15 83-43 142-94 60-51 97-115 38-65 56-150 18-86 20-198"
+    ],
+    [
+     "M1646 831c-4 42 57 28 61 -3l12 -82 38 -225q3 -4 3 -12 0 -14 -15 -24c-10 -6 -22 -11 -28 -10q-37 5 -76 9l-185 17c-66 4 -73 7 -79 7 -17 0 -25 -7 -41 -7 -12 0 -15 2 -5 24q8 14 18 26c9 11 18 16 46 10l59 -6 163 -14 71 -6z"
+    ],
+    [
+     "M1665 694c46 -4 48 -61 8 -55a4656 4656 0 0 1 -279 26h-8c-15 1 -33 -5 -44 -6q-8 -1 -8 8l4 16q5 12 15 25 10 12 28 12h8z"
+    ],
+    [
+     "M1646 831q-28 5 -69 7l-164 13 -59 4q-21 2 -40 -5l-14 -2 -6 1q-3 3 -4 8l6 16q6 14 18 26 11 12 26 11l71 -5a4575 4575 0 0 0 229 -18l54 -4 25 -4q14 -5 14 -20 0 -7 -9 -16 -7 -10 -17 -15c-14 -3 -28 -2 -61 3"
+    ]
+   ],
+   "source": "strokesvg (derived: composite of リ + ョ)",
+   "license": "OFL-1.1+MIT"
+  }
+ ]
+}

@@ -1,0 +1,287 @@
+{
+ "what_this_is": "Adversarial verification of research/derived/pending/yoon_strokes.json: all 66 composite rows plus the header claims. Inputs were read at git HEAD (corpus/strokes/kana.json, corpus/kana/hiragana.json, corpus/kana/katakana.json) and from a read-only DB snapshot.",
+ "verified": "2026-09-23",
+ "key": "row char, the kana_stroke primary key and the corpus/strokes/kana.json record key (glyph id = kana:<kind>-<char>).",
+ "method": [
+  "Components: char[0] is an i-row base of the row's own script (きぎしじちにひびぴみり / キギシジチニヒビピミリ), char[1] is that script's small ya/yu/yo; both records exist in the HEAD registry with the same kind; derivation[] agrees (base, small, counts, offset, glyph_id, registry source) and both dist SVGs exist on disk.",
+  "Count and order: len(strokes) = base + small for every row, and every component matches the school stroke count (き4 ぎ6 し1 じ3 ち2 に3 ひ1 び3 ぴ2 み2 り2 ゃ3 ゅ2 ょ2; キ3 ギ5 シ3 ジ5 チ3 ニ2 ヒ2 ビ4 ピ3 ミ3 リ2 ャ2 ュ2 ョ3). The first n strokes and shadows are byte-identical to the base record; the rest follow in the small record's own order.",
+  "Translation, two independent ways: (a) a separately written path absolutizer shows every small stroke and shadow equals the registry path shifted exactly +1024 x, 0 y (arcs, H/V, implicit linetos included); (b) resvg rasters of each composite path equal the registry path drawn inside translate(1024 0).",
+  "Placement: raster ink bbox of the small part = the registry small record's own bbox + 1024 for every row; it starts right of the base ink (base ink never passes x=992, small ink never before x=1208), its top is below the base's top, its bottom sits at y 892..984, and it is 0.76..0.78 of the full-size や/ゆ/よ/ヤ/ユ/ヨ, the same ratio as the other small kana (ぁぃぅぇぉ ァィゥェォ). The header's measurement numbers reproduce.",
+  "Schema: keys and key order equal the registry record; types match; viewbox '0 0 2048 1024' passes validate_strokes A4; every stroke starts with M (A2); shadows align 1:1 (A3); rows sorted (kind, char) like export_strokes.py; source string follows the っ/ッ derived pattern; license OFL-1.1+MIT on both components.",
+  "Coverage: after apply, all 211 glyphs of corpus/kana have a stroke record (the header's 211 claim holds). provenance.input_sha256 equals HEAD corpus/strokes/kana.json.",
+  "Consumer: the prototype's app/routes/kana.tsx already composes combos at runtime the same way (viewbox 0 0 2048 1024, +1024 per-stroke offset, natural small-kana size), so the baked rows render identically there.",
+  "Renders: 10 random rows (seed 20260923) drawn to SVG in the verifier's scratch dir with start points and per-stroke coordinate ranges, plus a clipped contact sheet of all 66; every glyph reads correctly."
+ ],
+ "renders": {
+  "dir": "scratchpad small/yoon_verify (session scratch)",
+  "files": [
+   "render_hiragana_304d_3085.svg",
+   "render_hiragana_3061_3085.svg",
+   "render_hiragana_306b_3083.svg",
+   "render_hiragana_3073_3087.svg",
+   "render_hiragana_3074_3087.svg",
+   "render_hiragana_308a_3085.svg",
+   "render_katakana_30ae_30e5.svg",
+   "render_katakana_30b8_30e7.svg",
+   "render_katakana_30cb_30e7.svg",
+   "render_katakana_30ea_30e5.svg"
+  ]
+ },
+ "summary": {
+  "checked": 75,
+  "ok": 72,
+  "corrected": 3,
+  "rejected": 0,
+  "note": "All 66 rows are correct. 11 ょ rows carry a note on inherited off-cell construction geometry that the per-sub-path clip hides. Three header fields need correcting before apply: the status text (wrong layer precedent, and no durable writer so a DB rebuild would drop the rows), generated_by (untracked scratch script) and license.note (states as fact what ATTRIBUTION.md leaves to the owner). Also inherited, not introduced here: the み record's stroke 2 has an empty shadow, so it draws unclipped (8 other registry records do too: ぉ お ず ば ぱ ぼ ぽ む)."
+ },
+ "header": {
+  "why": {
+   "ok": true
+  },
+  "definition": {
+   "ok": true
+  },
+  "counts": {
+   "ok": true
+  },
+  "provenance": {
+   "ok": true
+  },
+  "measurements": {
+   "ok": true
+  },
+  "layer": {
+   "ok": true,
+   "note": "B is defensible for a deterministic derivation, but the っ/ッ derived rows sit at layer 'A' in kana_stroke; see status."
+  },
+  "status": {
+   "ok": false,
+   "problem": "Two gaps. (1) 'layer B, the っ/ッ precedent' is false: kana_stroke has 162 rows, all layer 'A', including っ/ッ, because the ingest's derived INSERT omits layer and the column defaults to 'A'. An apply that copies that INSERT would also land these 66 rows as 'A'. (2) 'insert these 66 rows ... and re-export' has no durable writer: scripts/rebuild_index.py replays only research/derived/rebuild_manifest.json, where the っ/ッ derivation survives because it lives inside scripts/ingest/strokesvg_kana.py (step 6). A bare insert would be lost on the next rebuild, and the next export would shrink kana.json back to 162.",
+   "corrected": "PENDING (derivation only). Nothing in corpus/, db/ or the exporter is written. Apply = (1) land the composition as a tracked DB writer: extend scripts/ingest/strokesvg_kana.py, where the っ/ッ derivation already lives, or add a script registered in research/derived/rebuild_manifest.json after step 6; (2) write the 66 rows into kana_stroke with layer set explicitly, since the column defaults to 'A' and the っ/ッ derived rows carry 'A' today, so pick one layer policy for all 68 derived rows; (3) re-export. corpus/strokes/kana.json then goes 162 -> 228 records, and the counts in ATTRIBUTION.md (strokesvg section) and design/sources.md must read 160 parsed + 68 derived, with the derived line naming the 66 yoon composites beside っ/ッ."
+  },
+  "generated_by": {
+   "ok": false,
+   "problem": "Points to a session-scratch script (scratchpad yoon_strokes/build.py) that is not in the repo, so the derivation cannot be re-run by the rebuild chain or audited later.",
+   "corrected": "The tracked writer from status step (1), mechanical composition, no AI, no hand edits. The scratch build.py only produced this pending file."
+  },
+  "license": {
+   "ok": false,
+   "problem": "value is right, and so are the cited facts (OFL 1.1 from the NOTICE, both copyright lines, no Reserved Font Name, conditions 1 and 5). But the note says the composite 'is a further Modified Version of the Font Software' as settled fact. ATTRIBUTION.md adopts that only as the conservative reading and marks whether derived centerline data counts as Font Software as an owner legal call.",
+   "corrected": {
+    "value": "OFL-1.1+MIT (carried unchanged from both components)",
+    "note": "The kana SVGs of strokesvg are derived from the Klee One font and governed by SIL OFL 1.1 (research/datasets/strokesvg/LICENSE NOTICE; ATTRIBUTION.md 'strokesvg / Klee One'; research/reports/w42_attribution_report.md §1.1). Under the conservative reading ATTRIBUTION.md adopts (whether derived centerline data counts as Font Software is an owner legal call), a composite of two such records is a further Modified Version of the Font Software: OFL condition 5 keeps it under OFL 1.1, and the shipped app must carry the full OFL text plus both copyright lines (© 2024 Kyle; © 2020 The Klee Project Authors). No Reserved Font Name is declared, so no renaming duty. It is never sold by itself (condition 1)."
+   }
+  }
+ },
+ "verdicts": {
+  "きゃ": {
+   "ok": true
+  },
+  "きゅ": {
+   "ok": true
+  },
+  "きょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "ぎゃ": {
+   "ok": true
+  },
+  "ぎゅ": {
+   "ok": true
+  },
+  "ぎょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "しゃ": {
+   "ok": true
+  },
+  "しゅ": {
+   "ok": true
+  },
+  "しょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "じゃ": {
+   "ok": true
+  },
+  "じゅ": {
+   "ok": true
+  },
+  "じょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "ちゃ": {
+   "ok": true
+  },
+  "ちゅ": {
+   "ok": true
+  },
+  "ちょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "にゃ": {
+   "ok": true
+  },
+  "にゅ": {
+   "ok": true
+  },
+  "にょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "ひゃ": {
+   "ok": true
+  },
+  "ひゅ": {
+   "ok": true
+  },
+  "ひょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "びゃ": {
+   "ok": true
+  },
+  "びゅ": {
+   "ok": true
+  },
+  "びょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "ぴゃ": {
+   "ok": true
+  },
+  "ぴゅ": {
+   "ok": true
+  },
+  "ぴょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "みゃ": {
+   "ok": true
+  },
+  "みゅ": {
+   "ok": true
+  },
+  "みょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "りゃ": {
+   "ok": true
+  },
+  "りゅ": {
+   "ok": true
+  },
+  "りょ": {
+   "ok": true,
+   "note": "Inherited construction geometry, not a composition error: stroke 2 of ょ has a second sub-path, a lead-in that starts at x=-610 in the source cell (outside its viewport). Translated +1024 it starts at x=414 and runs along y=805 through the base glyph's cell to x=1367. With the per-sub-path shadow clip (the builder preview and the prototype KanaStrokes both use it) it paints 0 px in the base cell; an unclipped consumer would draw it across the base glyph (~5,300 px at 512x256). The clip is therefore part of the render contract for these 11 rows. Its length sets the stroke's animation window, so it must not be trimmed."
+  },
+  "キャ": {
+   "ok": true
+  },
+  "キュ": {
+   "ok": true
+  },
+  "キョ": {
+   "ok": true
+  },
+  "ギャ": {
+   "ok": true
+  },
+  "ギュ": {
+   "ok": true
+  },
+  "ギョ": {
+   "ok": true
+  },
+  "シャ": {
+   "ok": true
+  },
+  "シュ": {
+   "ok": true
+  },
+  "ショ": {
+   "ok": true
+  },
+  "ジャ": {
+   "ok": true
+  },
+  "ジュ": {
+   "ok": true
+  },
+  "ジョ": {
+   "ok": true
+  },
+  "チャ": {
+   "ok": true
+  },
+  "チュ": {
+   "ok": true
+  },
+  "チョ": {
+   "ok": true
+  },
+  "ニャ": {
+   "ok": true
+  },
+  "ニュ": {
+   "ok": true
+  },
+  "ニョ": {
+   "ok": true
+  },
+  "ヒャ": {
+   "ok": true
+  },
+  "ヒュ": {
+   "ok": true
+  },
+  "ヒョ": {
+   "ok": true
+  },
+  "ビャ": {
+   "ok": true
+  },
+  "ビュ": {
+   "ok": true
+  },
+  "ビョ": {
+   "ok": true
+  },
+  "ピャ": {
+   "ok": true
+  },
+  "ピュ": {
+   "ok": true
+  },
+  "ピョ": {
+   "ok": true
+  },
+  "ミャ": {
+   "ok": true
+  },
+  "ミュ": {
+   "ok": true
+  },
+  "ミョ": {
+   "ok": true
+  },
+  "リャ": {
+   "ok": true
+  },
+  "リュ": {
+   "ok": true
+  },
+  "リョ": {
+   "ok": true
+  }
+ }
+}
