@@ -1460,6 +1460,43 @@ def handle_sentence_register(rows, sents, gram, table):
     return out
 
 
+def handle_particle_template_fixes(rows, sents, gram, table):
+    """W13 finish. A re-chunked particle explanation must be what the SHIPPED bank carries.
+
+    The export publishes `particles[]` without a position, so the row's address is re-proved from
+    the token side: the C token at the row's position must still be the particle's surface (a
+    re-dissection that moved it invalidates the row), a particle of that surface must carry
+    `new_explanation` verbatim, and no particle of the sentence may still carry `old_explanation`.
+    """
+    out = []
+    for i, r in enumerate(rows):
+        addr = f"{table} row {i}: {r['slug']} @{r['position']} {r['surface']} / explanation"
+        s = sents.get(r["slug"])
+        if s is None:
+            out.append(("fail", C_NO_RECORD, addr, "the export carries no such sentence"))
+            continue
+        tok = next((t for t in s.get("tokens") or [] if t.get("split_mode") == "C"
+                    and t.get("position") == r["position"]), None)
+        if tok is None or tok.get("surface") != r["surface"]:
+            out.append(("fail", C_NO_RECORD, addr,
+                        f"C token {r['position']} is {tok and tok.get('surface')!r}, not "
+                        f"{r['surface']!r} - the dissection moved under the row"))
+            continue
+        texts = [(p.get("explanation") or {}).get("pt-BR") for p in s.get("particles") or []]
+        same = [(p.get("explanation") or {}).get("pt-BR") for p in s.get("particles") or []
+                if p.get("particle") == r["surface"]]
+        if r["old_explanation"] in texts:
+            out.append(("fail", C_NOT_APPLIED, addr, "a particle still carries `old_explanation`"))
+            continue
+        if r["new_explanation"] not in same:
+            out.append(("fail", C_VALUE_MISMATCH, addr,
+                        f"no {r['surface']} particle carries `new_explanation`; export has "
+                        f"{same!r:.200}"))
+            continue
+        out.append(("ok", "", addr, "exact"))
+    return out
+
+
 REGISTRY = {
     "orthographic_relinks.json": handle_orthographic_relinks,
     # W13 apply: the N3 half of the same campaign, same rows, same handler. It is a SECOND
@@ -1487,6 +1524,9 @@ REGISTRY = {
     "card_production_keys.json": handle_card_production_keys,
     "grammar_register.json": handle_grammar_register,
     "sentence_register.json": handle_sentence_register,
+    # W13 finish: the 201 mechanical explanation re-chunks of the W13b template audit (the
+    # withdraw rows and the verified-label overrides stay in pending/ and are not here).
+    "particle_template_fixes.json": handle_particle_template_fixes,
 }
 
 

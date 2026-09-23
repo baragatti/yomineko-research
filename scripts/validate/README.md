@@ -128,7 +128,7 @@ steps into a scratch DB (about 85 s, most of it `replay_all.py` re-dissecting th
 `export_corpus.py`, `export_course.py` and `export_readings.py` against it, and diffs the 790 files
 they write.
 
-**Steps 112-121 are replayed by the FULL mode only, and cannot join `--quick` (W11c, measured; W15's `apply_reading_passages.py` joined them at step 116, W20's `apply_practice_exercises.py` at step 117, W27's `apply_card_production_keys.py` at step 118, and W31's `apply_grammar_register_repairs.py` / `apply_sentence_register.py` at 119 and 120, which pushed the furigana step to 121 and the family builders to 122-124 — families stay last).**
+**Steps 112-121 are replayed by the FULL mode only, and cannot join `--quick` (W11c, measured; W15's `apply_reading_passages.py` joined them at step 116, W20's `apply_practice_exercises.py` at step 117, W27's `apply_card_production_keys.py` at step 118, and W31's `apply_grammar_register_repairs.py` / `apply_sentence_register.py` at 119 and 120, which pushed the furigana step to 121 and the family builders to 122-124; W13's ingest / N3 relink / text repairs at 121-123 and the W13 finish's second ingest (batch 30) and particle-template repair at 124-125 put furigana at 126 and the family builders at 127-129 — families stay last).**
 `--quick` reconstructs the grammar family alone, so its scratch index has no `lesson` and no
 `vocab` rows: run under that step set, `apply_lesson_ref_addresses.py` and
 `apply_homograph_rulings.py` refuse every row ("no such lesson") and exit non-zero, and the three

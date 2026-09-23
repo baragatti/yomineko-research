@@ -509,6 +509,13 @@ def main():
     ap.add_argument("--skip-w13", action="store_true",
                     help="derive the bank only; the W13 rows need research/derived/n3_mined, which "
                          "a fixture tree need not carry")
+    ap.add_argument("--w13-source", action="append", default=None,
+                    help="W13 rows file(s) to derive as `set: w13` (repeatable; default accepted.json "
+                         "+ generated.json). A row keys `tatoeba-<id>` unless it is `generated` (or "
+                         "has no Tatoeba id), then `gen-<sha1(jp)[:12]>` - the ingest's own "
+                         "sentence_key(). W13 finish: the 97 late rows of "
+                         "generated_uncovered_final.json are a mixed file, so the key is decided "
+                         "per row, not per file")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
     set_root(args.root)
@@ -533,26 +540,23 @@ def main():
                         "grammar": list(s.get("grammar") or []), "vocab_ids": sorted(set(vids)),
                         "authored": None,
                         "source": (s.get("provenance", {}).get("jp_source") or "?").split(":")[0]})
-    acc, gen = [], []
-    if not args.skip_w13:
-        acc = json.load(open(ACCEPTED, encoding="utf-8"))["rows"]
-        gen = json.load(open(GENERATED, encoding="utf-8"))["rows"]
-    for r in acc:
-        tg = r.get("targets") or []
-        rows_in.append({"key": "tatoeba-%s" % r["tatoeba_id"], "set": "w13", "jp": r["jp"],
-                        "level": "n3", "grammar": [t for t in tg if t.startswith("gram:")],
-                        "vocab_ids": [t.split(":", 1)[1] for t in tg if t.startswith("vocab:")],
-                        "authored": r.get("register"), "source": "tatoeba"})
-    for r in gen:
-        tg = r.get("targets") or []
-        key = "gen-" + hashlib.sha1(r["jp"].encode("utf-8")).hexdigest()[:12]
+    w13_sources = [] if args.skip_w13 else (args.w13_source or [ACCEPTED, GENERATED])
+    w13 = []
+    for src in w13_sources:
+        w13 += json.load(open(src, encoding="utf-8"))["rows"]
+    for r in w13:
+        # `targets[]` on accepted/generated.json, a single `target` on the late file.
+        tg = r.get("targets") or ([r["target"]] if r.get("target") else [])
+        real = not r.get("generated") and r.get("tatoeba_id") not in (None, "")
+        key = ("tatoeba-%s" % r["tatoeba_id"] if real
+               else "gen-" + hashlib.sha1(r["jp"].encode("utf-8")).hexdigest()[:12])
         rows_in.append({"key": key, "set": "w13", "jp": r["jp"], "level": "n3",
                         "grammar": [t for t in tg if t.startswith("gram:")],
                         "vocab_ids": [t.split(":", 1)[1] for t in tg if t.startswith("vocab:")],
-                        "authored": r.get("register"), "source": "ai-generated"})
+                        "authored": r.get("register"),
+                        "source": "tatoeba" if real else "ai-generated"})
     if not args.quiet:
-        print("rows: %d (bank %d / w13 %d)" % (len(rows_in), len(bank), len(acc) + len(gen)),
-              flush=True)
+        print("rows: %d (bank %d / w13 %d)" % (len(rows_in), len(bank), len(w13)), flush=True)
 
     out_rows, residue, conflicts = [], [], []
     for n, r in enumerate(rows_in):
